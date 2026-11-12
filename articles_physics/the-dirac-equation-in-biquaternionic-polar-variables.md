@@ -1,6 +1,8 @@
-# __The Polar Form of the Dirac Equation in Biquaternionic Form__
+# __The Dirac Equation in Biquaternionic Polar Variables__
 
 ## Introduction
+
+This article writes the biquaternionic Dirac equation in the polar variables. The word keeps all four factors: the boost and the rotor are both non-trivial, and the equation does not close to two equations. The logarithmic derivative separates into four coupled brackets — scale, phase, boost connection, rotor connection — which the equation constrains and does not close. Those four brackets are the spin-fluid equations — continuity, guidance, velocity transport, spin transport — and they are the biquaternionic form of the spin fluid of Takabayasi and Holland, not the two-equation Madelung fluid of the scalar case. What the word settles exactly is the plane-wave case: the momentum is the phase gradient, $\tilde K_{\Phi}=\tilde\nabla_\Phi\theta_{\mathrm{pha}}$; the velocity is the boost, $\tilde V_{\Phi}=ic\tilde U_{\Psi,\mathrm b}^{-2}$; the mass term is the four-vector factor, $\tilde\Xi_{0}^{L}=-\mathcal B_{\Psi}\tilde\Xi_{0}^{R}$ with $\mathcal B_{\Psi}=\tilde U_{\Psi,\mathrm b}^{-2}$; and the mass shell is the frame's unitarity, $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_m^{2}$. The current is $\rho\tilde V_{\Phi}$ and the spin is $\rho(\hbar/2)i\hat s$ with $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$: the current reads the scale and the boost, the spin reads the scale and the rotor, and neither reads the phase. The general solution in free space is the Fourier superposition of plane-wave modes, and the word re-reads each mode. What the word fails on is the $N$-degenerate set, which is strictly larger than the nodal set. The sign $\varepsilon=\pm1$ is part of the word's data, and on the spectrally degenerate sector $\Sigma_{10}$ the rigidity constraint $\cosh(\theta_{\mathrm{rpd}}/2)\cos(\theta_{\mathrm{axr}}/2)=\varepsilon$ ties the two angles.
 
 The Dirac equation of this corpus is one element of $\mathbb{B}$ acting on another by left multiplication. *The Dirac Equation in Biquaternionic Form* writes it as the chiral pair
 
@@ -19,20 +21,22 @@ $$
 \qquad
 \tilde U_{\Psi,\mathrm b}=\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr),
 \qquad
-\tilde u_{\mathrm r}=\exp\Bigl(\frac{\theta}{2}\vec u_{\mathrm r}\Bigr),
+\tilde u_{\mathrm r}=\exp\Bigl(\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\Bigr),
 $$
 
-Here $\theta_{\mathrm{pha}}$ is the phase of the polar form: it is the argument of the central complex scalar, a real angle taken modulo a full turn, and the exponential that carries it is $\exp(i\theta_{\mathrm{pha}})$.
+Here $\theta_{\mathrm{pha}}$ is the word's angle: a real angle in $(-\pi/2,\pi/2]$, the argument of the central factor $e^{i\theta_{\mathrm{pha}}}$, with $\theta_{\mathrm{rpd}}\ge0$ the rapidity of the boost and $\theta_{\mathrm{axr}}\in[0,2\pi]$ the angle of the rotor.
 
 The four factors are a positive real scale, a central angle, a Hermitian positive boost and a real rotor.
+
 **The boost factor is not a phase, and the evaluation shows why.** With $\vec u_{\mathrm b}^2=-e_t$ the argument squares to $\bigl(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\bigr)^2=+\tfrac{\theta_{\mathrm{rpd}}^2}{4}\,e_t$, positive, so the series sums to the hyperbolic pair
 
 $$
 \tilde U_{\Psi,\mathrm b}=\cosh\frac{\theta_{\mathrm{rpd}}}{2}\,e_t+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b} .
 $$
 
-The scalar part is real and at least one, so the factor grows instead of turning; only the bivector part carries the $i$. The rotor is the opposite case: no $i$ stands in front of it, $\vec u_{\mathrm r}^2=-e_t$ makes the argument square negative, and $\tilde u_{\mathrm r}=\cos\tfrac{\theta}{2}\,e_t+\sin\tfrac{\theta}{2}\,\vec u_{\mathrm r}$ has modulus one. Reading $\exp(i\theta\vec u)$ as an imaginary quantity is the error the two signs separate.
- The word has eight real parameters against the element's eight real components, and on its domain it is a bijection: it adds no object and drops no datum.
+The scalar part is real and at least one, so the factor grows instead of turning; only the bivector part carries the $i$. The rotor is the opposite case: no $i$ stands in front of it, $\vec u_{\mathrm r}^2=-e_t$ makes the argument square negative, and $\tilde u_{\mathrm r}=\cos\tfrac{\theta_{\mathrm{axr}}}{2}\,e_t+\sin\tfrac{\theta_{\mathrm{axr}}}{2}\,\vec u_{\mathrm r}$ has modulus one. Reading $\exp(i\theta_{\mathrm{axr}}\vec u)$ as an imaginary quantity is the error the two signs separate.
+
+The word has eight real parameters against the element's eight real components, and on its domain it is a bijection: it adds no object and drops no datum.
 
 **The domain is the whole of the first qualification of this article.** In the corpus's vocabulary, an element is $N$-regular when $N\neq0$ and $N$-degenerate when $N=0$, and $N$ is the determinant (*The Meaning of N-Regularity and Degeneracy*). The word is a parametrisation of the group of units, so
 
@@ -59,7 +63,7 @@ What the article establishes is short, and each item is one sentence:
 
 The last item repays care, and it is stated in §*Where the Word Ends*.
 
-## The Field and the Word
+## The Field and Its Word
 
 ### One Element, Two Parts
 
@@ -84,9 +88,17 @@ The four factors and their types are those of *The Polar Decomposition of an N-R
 | 1 | $r$ | $r>0$ | real central scale |
 | 2 | $e^{i\theta_{\mathrm{pha}}}$ | $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ | central phase |
 | 3 | $\tilde U_{\Psi,\mathrm b}=\cosh\frac{\theta_{\mathrm{rpd}}}{2}e_t+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | $\theta_{\mathrm{rpd}}\ge0$, $\vec u_{\mathrm b}$ a real unit vector | Hermitian positive, $N=1$ |
-| 4 | $\tilde u_{\mathrm r}=\cos\frac{\theta}{2}e_t+\sin\frac{\theta}{2}\vec u_{\mathrm r}$ | $\theta\in[0,2\pi]$, $\vec u_{\mathrm r}$ a real unit vector | real unit quaternion, $N=1$ |
+| 4 | $\tilde u_{\mathrm r}=\cos\frac{\theta_{\mathrm{axr}}}{2}e_t+\sin\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ | $\theta_{\mathrm{axr}}\in[0,2\pi]$, $\vec u_{\mathrm r}$ a real unit vector | real unit quaternion, $N=1$ |
 
 The count closes. The scale is one real number, the angle one, the boost a rapidity and a unit axis, three, and the rotor an angle and a unit axis, three. That is $1+1+3+3=8$ against four complex coefficients.
+
+**The sign is part of the word.** The scale and the phase are one modulus, $\Rho=r\,e^{i\theta_{\mathrm{pha}}}$, and $\Rho$ is the principal square root of the quaternionic norm $N(\tilde\Xi)=\langle\tilde\Xi\rangle_{\natural}$, the root with non-negative real part and, on the imaginary axis, non-negative imaginary part. The sign $\varepsilon=\Xi_t/\Rho=\pm1$, with $\Xi_t=\mathrm{Sc}\,\tilde\Xi$ the scalar coefficient of the field, is the branch, and it is data of the word and not an ambiguity of the notation: the element and the branch together fix the four factors. On the spectrally degenerate sector $\Sigma_{10}$ ($N\neq0$, $B^{2}=0$) the branch ties the two angles by the rigidity constraint
+
+$$
+\boxed{\;\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta_{\mathrm{axr}}}{2}=\varepsilon\;}
+$$
+
+with the two axes orthogonal on the Jordan part of the sector. In fluid language the constraint is a locking of velocity and spin: on $\Sigma_{10}$ the rapidity of the frame and the angle of the rotor cannot be chosen independently, so the velocity and the spin direction of the fluid are tied to one another. The general spin-fluid literature treats the two as independent variables, and this locking is a feature of the degenerate sector that has no counterpart there. The constraint is specific to $\Sigma_{10}$ and does not hold on the general $N$-regular element: it says that on that sector the boost and the rotor cannot be chosen independently, and that the word of a degenerate-spectrum field is a two-angle family and not a four-angle one.
 
 **The boost is the square root of the frame.** Squaring it gives
 
@@ -164,10 +176,12 @@ The four brackets are of four different types, and that is the content of the di
 
 | term | type | zero when |
 | --- | --- | --- |
-| $\tfrac12\partial_\mu\ln\rho$ | real central scalar | the density is constant |
+| $\tfrac12\partial_\mu\ln r^{2}$ | real central scalar | the density is constant |
 | $i\partial_\mu\theta_{\mathrm{pha}}$ | central imaginary | the angle is constant |
 | $\tilde u_{\mathrm r}^{-1}(\tilde U_{\Psi,\mathrm b}^{-1}\partial_\mu\tilde U_{\Psi,\mathrm b})\tilde u_{\mathrm r}$ | Hermitian | the boost is constant |
 | $\tilde u_{\mathrm r}^{-1}\partial_\mu\tilde u_{\mathrm r}$ | real vector part | the rotor is constant |
+
+**The four brackets are the spin-fluid equations.** In the fluid reading each bracket is one transport law: the scale bracket is the continuity equation for $\rho$, the phase bracket is the guidance equation, $\vec p=\hbar\nabla\theta_{\mathrm{pha}}$, the boost connection is the transport of the velocity, and the rotor connection is the transport of the spin direction $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$. That is the structure of the spin fluid of Takabayasi and Holland, written in the algebra's letters: continuity, guidance, velocity transport and spin transport. It is not the Madelung fluid, which has the first two and no spin, and which closes because there the equation is second order in one central function. Here the four are coupled and the equation constrains them without closing them.
 
 A plane wave is the case in which the last three vanish: the frame is constant and the density is constant, so the derivative is the phase term alone. Then $\partial_\mu\tilde\Xi=i(\partial_\mu\theta_{\mathrm{pha}})\tilde\Xi$, and the equation becomes algebraic in the frame. That is why a plane wave can be solved exactly and why the general case cannot be read off it.
 
@@ -258,9 +272,9 @@ That is why the plane-wave system closes. The relation $\tilde K_{\Phi}\tilde K_
 
 The four brackets of the logarithmic derivative are fixed in a plane wave and free in a general field, and the polar form does not close the general case by itself.
 
-The reason is structural. The pair relates two parts by a central coefficient, and the word is one word for the whole element. Substituting it produces a coupled system for the four brackets, with no canonical rule that fixes one bracket from another. What the polar form settles is therefore the plane-wave case exactly and the general case partially. Exactly: the momentum is the phase gradient, the velocity is the boost, the mass is the four-vector factor, the mass shell is the frame's unitarity. Partially: the density and the two frame directions are what the equation constrains, and the connection terms are what a general solution supplies.
+The reason is structural. The pair relates two parts by a central coefficient, and the word is one word for the whole element. Substituting it produces a coupled system for the four brackets, with no canonical rule that fixes one bracket from another. The absence of closure is not a defect of the algebra: it is the underdetermination of the spin-fluid formulation, where the Dirac equation does not single out a spin-transport equation and different choices of that equation give different minimal systems. The biquaternionic form fixes one arrangement of that family, the one in which the spin is carried by the rotor and the velocity by the boost, and it is the arrangement the factors make natural rather than a choice imposed from outside. What the polar form settles is therefore the plane-wave case exactly and the general case partially. Exactly: the momentum is the phase gradient, the velocity is the boost, the mass is the four-vector factor, the mass shell is the frame's unitarity. Partially: the density and the two frame directions are what the equation constrains, and the connection terms are what a general solution supplies.
 
-The scalar companion closes its general case because there the equation is second order in one central function and separates into two real equations. Here the equation is first order in an element, and the separation into four brackets is the closest the algebra comes to a closed system.
+A second-order equation in one central function closes: it separates into two real equations. This equation is first order in an element, and the separation into four brackets is the closest the algebra comes to a closed system.
 
 ## The Current and the Spin
 
@@ -319,8 +333,8 @@ So the frame separates the eight parameters into two triples with a shared scale
 
 | observable | reads | does not read |
 | --- | --- | --- |
-| $\tilde J_{\Phi}$ | $\rho$, $\theta_{\mathrm{rpd}}$, $\vec u_{\mathrm b}$ | $\theta_{\mathrm{pha}}$, $\theta_{\mathrm{pha}}$, $\vec u_{\mathrm r}$ |
-| $\tilde S_{\Psi,\mathrm{sp}}$ | $\rho$, $\theta_{\mathrm{pha}}$, $\vec u_{\mathrm r}$ | $\theta_{\mathrm{pha}}$, $\theta_{\mathrm{rpd}}$, $\vec u_{\mathrm b}$ |
+| $\tilde J_{\Phi}$ | $\rho$, $\theta_{\mathrm{rpd}}$, $\vec u_{\mathrm b}$ | $\theta_{\mathrm{pha}}$, $\theta_{\mathrm{axr}}$, $\vec u_{\mathrm r}$ |
+| $\tilde S_{\Psi,\mathrm{sp}}$ | $\rho$, $\theta_{\mathrm{axr}}$, $\vec u_{\mathrm r}$ | $\theta_{\mathrm{pha}}$, $\theta_{\mathrm{rpd}}$, $\vec u_{\mathrm b}$ |
 | $\langle\tilde\Xi\rangle_{\natural}$ | $\rho$, $2\theta_{\mathrm{pha}}$ | the two frames |
 
 The angle therefore lives in exactly one place, the argument of the quaternionic norm. Nothing in the current and nothing in the spin reads it, which is why the angle can be moved between the factors of the word without consequence. That is the precise sense in which the field carries an angle no bilinear of the algebra sees.
@@ -407,7 +421,7 @@ The rotor is the spin frame, so the spin's motion is the rotor's motion. In a ma
 
 The polar form states the same ordering in one sentence. The current is the scale and the boost, the spin is the scale and the rotor, and the eikonal is the phase, which is central. A central element commutes with the spin frame, so the leading order cannot act on the spin: the spin cannot enter at leading order for the reason that the leading order is central.
 
-## What the Polar Form Does and Does Not Add
+## What the Polar Word Does and Does Not Add
 
 The objection has to be stated before it is answered. The decomposition is not new. It is the Yvon–Takabayasi–Hestenes decomposition of a field of this type into a density, an angle and a Lorentz frame, and the split of the frame into a boost and a rotation is the polar decomposition of a Lorentz transformation. No solution is added and no number changes.
 
@@ -433,7 +447,7 @@ What the polar form does **not** add is the point of this article. It adjoins no
 
 4. **The two-sided form.** The parent writes a second form of the equation in which the mass acts on the right, $\tilde\Xi_{R}\mapsto\tilde\Xi_{R}\,i\vec v$, and the letters then name the two values. What the polar form is in that display is not written. There the two parts are on the cone by the proposition of §*One Element, Two Parts*, so the word would be stated for the sum and not for the parts, and the reading of the frame in that display is open.
 
-5. **The general field.** The four brackets are constrained by the pair but not closed by it. Whether a second structure — a transport equation for the rotor, of the kind the classical-spin literature carries — closes them is not settled.
+5. **The general field.** The four brackets are constrained by the pair but not closed by it. Whether a second structure — a transport equation for the rotor, of the kind the classical-spin literature carries — closes them is not settled, and the spin-fluid literature leaves the same freedom: the choice of that equation is not unique, which is why the non-closure here is a property of the formulation and not of the algebra.
 
 ## Summary
 
@@ -443,7 +457,7 @@ The field is one element and the two letters of the pair name its two parts. The
 
 The two norms separate. The quaternionic norm is $\langle\tilde\Xi\rangle_{\natural}=\rho e^{2i\theta_{\mathrm{pha}}}$ and the Hermitian norm is $\langle\tilde\Xi\rangle_{*}=\gamma\rho$, the difference being that the star conjugation fixes the Hermitian boost while the natural conjugation inverts it and leaves the central $i$ alone. The density is the modulus of the first and it is the Lorentz scalar; the Hermitian norm is its time-dilated image. The norm's argument is twice the word's angle, and the doubling is the factor of two behind zitterbewegung.
 
-The derivative of the word separates into four brackets: a scale term, a phase term, a boost connection and a rotor connection. The phase term is the four-momentum, $\tilde\nabla_\Phi\theta_{\mathrm{pha}}=\tilde K_{\Phi}$; the boost is the four-velocity, $\tilde V_{\Phi}=ic\tilde U_{\Psi,\mathrm b}^{-2}=\gamma(ic\,e_t+\vec v)$ with $\vec v=c\tanh\theta_{\mathrm{rpd}}\vec u_{\mathrm b}$ and $\gamma=\cosh\theta_{\mathrm{rpd}}$. The inverse square appears because a four-vector is bilinear in the field. Its natural norm is $-c^{2}$, so the word's velocity is a unit timelike element for every field.
+The derivative of the word separates into four brackets: a scale term, a phase term, a boost connection and a rotor connection. Read as fluid laws they are continuity, guidance, velocity transport and spin transport: a spin fluid, not a Madelung fluid. The phase term is the four-momentum, $\tilde\nabla_\Phi\theta_{\mathrm{pha}}=\tilde K_{\Phi}$; the boost is the four-velocity, $\tilde V_{\Phi}=ic\tilde U_{\Psi,\mathrm b}^{-2}=\gamma(ic\,e_t+\vec v)$ with $\vec v=c\tanh\theta_{\mathrm{rpd}}\vec u_{\mathrm b}$ and $\gamma=\cosh\theta_{\mathrm{rpd}}$. The inverse square appears because a four-vector is bilinear in the field. Its natural norm is $-c^{2}$, so the word's velocity is a unit timelike element for every field.
 
 The mass term is a frame factor, and its scale is the scalar $k_m$. In polar variables the pair reads $\tilde\Xi_{0}^{L}=-\mathcal B_{\Psi}\tilde\Xi_{0}^{R}$ with $\mathcal B_{\Psi}=\tilde U_{\Psi,\mathrm b}^{-2}$, because $k_m$ cancels against the momentum it multiplies; at rest the factor is the identity and the relation is the plain sign. The factor has unit norm, so the scalar reappears in the mass shell, $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_m^{2}$, which is the frame's unitarity and not a fourth equation. Both sentences are readings of the chart, and the invariant is $k_m$.
 
@@ -466,8 +480,10 @@ The word fails on the zero divisors and nowhere else, that is on the $N$-degener
 | $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The polar word |
 | $r>0$, $\rho=r^{2}$ | Scale and density; real and central |
 | $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ | The word's angle; the norm's argument is $2\theta_{\mathrm{pha}}$ |
+| $\Xi_t=\mathrm{Sc}\,\tilde\Xi$ | Scalar coefficient of the field; the single complex number of the central case |
+| $\Rho=r\,e^{i\theta_{\mathrm{pha}}}$, $\varepsilon=\Xi_t/\Rho=\pm1$ | Modulus of the norm (principal square root of $\langle\tilde\Xi\rangle_{\natural}$) and its branch; on $\Sigma_{10}$, $\cosh(\theta_{\mathrm{rpd}}/2)\cos(\theta_{\mathrm{axr}}/2)=\varepsilon$ |
 | $\tilde U_{\Psi,\mathrm b}=\exp(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})$ | Boost; Hermitian positive, $N=1$; rapidity $\theta_{\mathrm{rpd}}\ge0$, unit axis $\vec u_{\mathrm b}$; $\tilde U_{\Psi,\mathrm b}^{2}=\mathcal B_{\Psi}^{-1}$ |
-| $\tilde u_{\mathrm r}$ | Rotor; real unit quaternion, $N=1$; angle $\theta$, unit axis $\vec u_{\mathrm r}$ |
+| $\tilde u_{\mathrm r}$ | Rotor; real unit quaternion, $N=1$; angle $\theta_{\mathrm{axr}}$, unit axis $\vec u_{\mathrm r}$ |
 | $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ | Quaternionic norm; on the field $\rho e^{2i\theta_{\mathrm{pha}}}$ |
 | $\langle\tilde Q\rangle_{*}=\operatorname{Sc}(\tilde Q\tilde Q^{*})$ | Hermitian norm; on the field $\gamma\rho$ |
 | $\gamma=\cosh\theta_{\mathrm{rpd}}$ | Lorentz factor of the frame |
@@ -486,6 +502,10 @@ The word fails on the zero divisors and nowhere else, that is on the $N$-degener
 - Takehiko Takabayasi, "Relativistic hydrodynamics of the Dirac matter," *Progress of Theoretical Physics Supplement* **4** (1957) 1–80, for the eight-parameter polar variables of the spin-$\tfrac12$ field, which this article reads as the word of the algebra. The scalar companion's pair is the spin-$0$ case of the same programme.
 - David Hestenes, *Space-Time Algebra* (Gordon and Breach, 1966; second edition Birkhäuser, 2015), for the decomposition of the field into density, angle and rotor, and for the reading of the Dirac equation as a condition on that rotor.
 - Jacques Yvon, "Équations matricielles du champ spinoriel," *Journal de Physique et le Radium* **1** (1940) 18–26, for the bilinears whose argument is the angle this article writes $2\theta_{\mathrm{pha}}$.
-- Peter R. Holland, *The Quantum Theory of Motion* (Cambridge University Press, 1993), for the relativistic polar variables, the spin transport they carry, and the difficulties recorded in §*Open Questions*.
+- Peter R. Holland, *The Quantum Theory of Motion* (Cambridge University Press, 1993), especially §9, for the relativistic spin fluid, the spin-transport equation it must carry, and the difficulties recorded in §*Open Questions*.
+- David Bohm and Basil J. Hiley, *The Undivided Universe* (Routledge, 1993), for the Bohmian reading of the guidance equation, which is the phase bracket here.
+- Luca Fabbri, *Dirac Theory in Hydrodynamic Form* (2023), for the non-uniqueness of the spin-fluid system: the Dirac equation admits no single closed set of fluid equations, so the non-closure recorded in §*What the General Field Leaves Open* is a property of the formulation and not of the algebra.
 - Walter Greiner, *Relativistic Quantum Mechanics: Wave Equations* (Springer, 1990), for the Dirac equation, its current and the structure the pair reproduces.
 - Claude Daviau, "Équations de Dirac et de Maxwell en algèbre de Clifford," *Annales de la Fondation Louis de Broglie* **39** (2014), for a field read as an element with eight real parameters, which is the count this article uses.
+
+- The companion articles: [The Schrödinger Equation in Biquaternionic Polar Variables](the-schrodinger-equation-in-biquaternionic-polar-variables.html), for the same word applied to the non-relativistic equation; [The Klein–Gordon Equation in Biquaternionic Polar Variables](the-klein-gordon-equation-in-biquaternionic-polar-variables.html), for the same word applied to the scalar relativistic equation; [The Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html), for the word; [Exponential Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion](../articles_maths/exponential-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html), for the exponential form; [Exponential Polar Decomposition of an N-Regular, Spectrally Degenerate Biquaternion](../articles_maths/exponential-polar-decomposition-of-an-n-regular-spectrally-degenerate-biquaternion.html), for the sign $\varepsilon$ and the rigidity constraint of $\Sigma_{10}$; and [The Meaning of N-Regularity and Degeneracy](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for $N$, the units and the cone.

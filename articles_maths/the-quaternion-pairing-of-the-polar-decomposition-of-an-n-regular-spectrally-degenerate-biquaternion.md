@@ -57,16 +57,16 @@ The construction is partial. The factorisation exists on all of $\Sigma_{10}$; t
 The word of the sector is rigid:
 
 $$
-\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta}{2}=\varepsilon,
+\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta_{\mathrm{axr}}}{2}=\varepsilon,
 \qquad
-\sinh\frac{\theta_{\mathrm{rpd}}}{2}\sin\frac{\theta}{2}\,\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}=0.
+\sinh\frac{\theta_{\mathrm{rpd}}}{2}\sin\frac{\theta_{\mathrm{axr}}}{2}\,\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}=0.
 $$
 
-On the Jordan part the second equation gives $\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}=0$, and the first gives $|\cos\frac{\theta}{2}|=1/\cosh\frac{\theta_{\mathrm{rpd}}}{2}$ with $\varepsilon=\operatorname{sgn}\cos\frac{\theta}{2}$. The pairing reads these relations on its two factors:
+On the Jordan part the second equation gives $\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}=0$, and the first gives $|\cos\frac{\theta_{\mathrm{axr}}}{2}|=1/\cosh\frac{\theta_{\mathrm{rpd}}}{2}$ with $\varepsilon=\operatorname{sgn}\cos\frac{\theta_{\mathrm{axr}}}{2}$. The pairing reads these relations on its two factors:
 
 | Pairing datum | Word datum | Sector condition |
 |---|---|---|
-| $\tilde q=r\tilde u_{\mathrm r}$ | $r,\theta,\vec u_{\mathrm r}$ | $\lvert\tilde q\rvert=r>0$ |
+| $\tilde q=r\tilde u_{\mathrm r}$ | $r,\theta_{\mathrm{axr}},\vec u_{\mathrm r}$ | $\lvert\tilde q\rvert=r>0$ |
 | $\operatorname{Sc}\tilde{Ξ}=\theta_{\mathrm{pha}}$ | $\theta_{\mathrm{pha}}$ | none beyond the branch |
 | $\operatorname{Vect}\tilde{Ξ}=\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}'$ | $\theta_{\mathrm{rpd}},\vec u_{\mathrm b}$ | $\vec u_{\mathrm b}'\perp\vec u_{\mathrm r}$ |
 | $\cos\tilde{Ξ}=\cos\theta_{\mathrm{pha}}\cosh\frac{\theta_{\mathrm{rpd}}}{2}-\sin\theta_{\mathrm{pha}}\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}'$ | the phase and the boost | $\operatorname{Sc}\cos\tilde{Ξ}=\cos\theta_{\mathrm{pha}}\cosh\frac{\theta_{\mathrm{rpd}}}{2}$ |
@@ -77,7 +77,7 @@ $$
 \cosh\frac{\theta_{\mathrm{rpd}}}{2}\,\operatorname{Sc}\tilde u_{\mathrm r}=\varepsilon.
 $$
 
-This is the same wall as $\operatorname{Sc}\tilde U=\pm1$, read in the pairing: $\operatorname{Sc}\tilde u_{\mathrm r}=\cos\frac{\theta}{2}$.
+This is the same wall as $\operatorname{Sc}\tilde U=\pm1$, read in the pairing: $\operatorname{Sc}\tilde u_{\mathrm r}=\cos\frac{\theta_{\mathrm{axr}}}{2}$.
 
 ## Worked Example
 
@@ -87,7 +87,7 @@ $$
 \tilde Q=e_t+\vec e_x+i\vec e_y.
 $$
 
-The polar data are $r=1$, $\theta_{\mathrm{pha}}=0$, $\theta_{\mathrm{rpd}}=2\operatorname{arcosh}\sqrt2$, $\theta=\frac{\pi}{2}$,
+The polar data are $r=1$, $\theta_{\mathrm{pha}}=0$, $\theta_{\mathrm{rpd}}=2\operatorname{arcosh}\sqrt2$, $\theta_{\mathrm{axr}}=\frac{\pi}{2}$,
 
 $$
 \vec u_{\mathrm b}=\frac{\vec e_y+\vec e_z}{\sqrt2},
@@ -142,7 +142,7 @@ $$
 =\tanh\beta\,\vec u,
 $$
 
-as the construction requires. The modulus and the vector part of the exponent are orthogonal, $\tilde q\perp\operatorname{Vect}\tilde{Ξ}$. The scalar part of $\cos\tilde{Ξ}$ is $\cosh\beta=\sqrt2$, and the rotor has $\operatorname{Sc}\tilde u_{\mathrm r}=\cos\frac{\theta}{2}=1/\sqrt2$; their product is the rigidity value $\varepsilon=1$.
+as the construction requires. The modulus and the vector part of the exponent are orthogonal, $\tilde q\perp\operatorname{Vect}\tilde{Ξ}$. The scalar part of $\cos\tilde{Ξ}$ is $\cosh\beta=\sqrt2$, and the rotor has $\operatorname{Sc}\tilde u_{\mathrm r}=\cos\frac{\theta_{\mathrm{axr}}}{2}=1/\sqrt2$; their product is the rigidity value $\varepsilon=1$.
 
 ## Comparison with the Regular Sector
 
@@ -181,7 +181,7 @@ The pairing is therefore the same regrouping on both sides of the wall. The wall
 | $\Rho=r e^{i\theta_{\mathrm{pha}}}$ | the modulus |
 | $\tilde U=\varepsilon(e_t+\vec\Upsilon)$ | the unit factor |
 | $\tilde U_{\mathrm b},\tilde u_{\mathrm r}$ | the positive factor and the rotor |
-| $\theta_{\mathrm{rpd}},\theta$ | the rapidity and the rotor angle |
+| $\theta_{\mathrm{rpd}},\theta_{\mathrm{axr}}$ | the rapidity and the rotor angle |
 | $\vec u_{\mathrm b},\vec u_{\mathrm r}$ | the orthogonal axes of the Jordan part |
 | $\vec u_{\mathrm b}'=\tilde u_{\mathrm r}^{-1}\vec u_{\mathrm b}\tilde u_{\mathrm r}$ | the conjugated boost axis |
 | $\tilde q=r\tilde u_{\mathrm r}$ | the quaternion modulus |

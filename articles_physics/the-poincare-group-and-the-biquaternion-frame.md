@@ -48,9 +48,9 @@ Three families of rotors are distinguished by the subspace they occupy. A pure b
 $$
 \tilde U_{\Psi,\mathrm b}=\cosh\frac{\theta_{\mathrm{rpd}}}{2}+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b},
 $$
-is Hermitian, hence lies in $\mathbb{B}_{\Psi}$, and is unit-norm. A pure spatial rotation about $\vec u_{\mathrm r}\in\mathbb{B}_{H}$ by angle $\theta$,
+is Hermitian, hence lies in $\mathbb{B}_{\Psi}$, and is unit-norm. A pure spatial rotation about $\vec u_{\mathrm r}\in\mathbb{B}_{H}$ by angle $\theta_{\mathrm{axr}}$,
 $$
-\tilde u_{\mathrm r}=\cos\frac{\theta}{2}+\sin\frac{\theta}{2}\,\vec u_{\mathrm r},
+\tilde u_{\mathrm r}=\cos\frac{\theta_{\mathrm{axr}}}{2}+\sin\frac{\theta_{\mathrm{axr}}}{2}\,\vec u_{\mathrm r},
 $$
 is a unit real quaternion, lying in $\mathbb{B}_{H}$. A general rotor has the Cartan decomposition $\tilde U_{\mathrm{lor}}=\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ into a boost and a rotation. The boosts are closed under inverse but not under multiplication: the product of two non-collinear boosts is a boost times a rotation, the Thomas–Wigner rotation, whose angle and axis are derived in the parent article. What matters here is only that all of these transformations are algebraic in the rotor and linear in the four-vector they act on.
 
@@ -145,7 +145,7 @@ $$
 \qquad
 \tilde U_{\Psi,\mathrm b}=\cosh(0.45)+i\sinh(0.45)\,\vec e_x,
 $$
-a rotation about $\vec e_z$ by $\theta=0.8$ and a boost along $\vec e_x$ by rapidity $\theta_{\mathrm{rpd}}=0.9$, and with displacements
+a rotation about $\vec e_z$ by $\theta_{\mathrm{axr}}=0.8$ and a boost along $\vec e_x$ by rapidity $\theta_{\mathrm{rpd}}=0.9$, and with displacements
 $$
 \tilde{R}_{\Phi,0,1}=0.5\,i\,e_t+0.7\,\vec e_x,\qquad
 \tilde{R}_{\Phi,0,2}=-0.3\,i\,e_t+0.6\,\vec e_y .
@@ -243,7 +243,7 @@ What the frame captures is the connected homogeneous group and its action; what 
 | $\tilde{Q}\mapsto\tilde U_{\mathrm{lor}}\tilde{Q}\tilde U_{\mathrm{lor}}{}^{*}$ | Rotor conjugation (four-vector action) |
 | $\mathrm{Ad}:SL(2,\mathbb{C})\to SO^+(1,3)$ | Two-to-one covering homomorphism, kernel $\{\pm e_t\}$ |
 | $\tilde U_{\Psi,\mathrm b}=\cosh\frac{\theta_{\mathrm{rpd}}}{2}+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | Boost rotor (Hermitian, in $\mathbb{B}_{\Psi}$) |
-| $\tilde u_{\mathrm r}=\cos\frac{\theta}{2}+\sin\frac{\theta}{2}\vec u_{\mathrm r}$ | Rotation rotor (unit real quaternion) |
+| $\tilde u_{\mathrm r}=\cos\frac{\theta_{\mathrm{axr}}}{2}+\sin\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ | Rotation rotor (unit real quaternion) |
 | $\tilde{V}_{\Phi}=\gamma(ic\,e_t+\vec v)$, $\tilde U_{\Psi,\mathrm b}=\sqrt{-\frac{i}{c}\tilde{V}_{\Phi}^{\natural}}$ | Four-velocity and its frame rotor |
 | $\tilde{R}_{\Phi,0}\in\mathbb{B}_{\Phi}$ | Translation (displacement) |
 | $(\tilde U_{\mathrm{lor}},\tilde{R}_{\Phi,0})$ | Poincaré transformation, acting by $\tilde{Q}\mapsto\tilde U_{\mathrm{lor}}\tilde{Q}\tilde U_{\mathrm{lor}}{}^{*}+\tilde{R}_{\Phi,0}$ |

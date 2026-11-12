@@ -73,7 +73,7 @@ $$
 = \cos\!\Big(c\,k_m\,r'_{t}\Big)e_t - \sin\!\Big(c\,k_m\,r'_{t}\Big)(ie_t),
 $$
 
-where the right-hand side uses only $i^2=-1$ and $e_t=1$: expanding the exponential, $\exp(-i\theta)=e_t-i\theta e_t-\tfrac12\theta^2e_t+\cdots$ and collecting the real and imaginary parts gives the cosine and the sine. Here $e_t\in\mathbb{B}_{\Psi}$ and $ie_t\in\mathbb{B}_{\Phi}$ (an imaginary scalar is anti-Hermitian). The rest-energy phase is central, and because $i\,\mathbb{B}_{\Psi} = \mathbb{B}_{\Phi}$ it is a rotation between the sectors at angular frequency $ck_{m_e}$: it takes the $\mathbb{B}_{\Psi}$ direction $e_t$ toward the $\mathbb{B}_{\Phi}$ direction $ie_t$ and back. The mass sets this scale — the frequency is $ck_{m_e}$ — through the mass shell. This is the sense in which the electron's mass, in the framework, *is* the rate of the rotation between the material and informational subspaces.
+where the right-hand side uses only $i^2=-1$ and $e_t=1$: expanding the exponential, $\exp(-i\theta_{\mathrm{rst}})=e_t-i\theta_{\mathrm{rst}}e_t-\tfrac12\theta_{\mathrm{rst}}^2e_t+\cdots$ with $\theta_{\mathrm{rst}}=c\,k_{m_e}r'_t$ and collecting the real and imaginary parts gives the cosine and the sine. Here $e_t\in\mathbb{B}_{\Psi}$ and $ie_t\in\mathbb{B}_{\Phi}$ (an imaginary scalar is anti-Hermitian). The rest-energy phase is central, and because $i\,\mathbb{B}_{\Psi} = \mathbb{B}_{\Phi}$ it is a rotation between the sectors at angular frequency $ck_{m_e}$: it takes the $\mathbb{B}_{\Psi}$ direction $e_t$ toward the $\mathbb{B}_{\Phi}$ direction $ie_t$ and back. The mass sets this scale — the frequency is $ck_{m_e}$ — through the mass shell. This is the sense in which the electron's mass, in the framework, *is* the rate of the rotation between the material and informational subspaces.
 
 **What is not derived.** The value $m_e = 9.1093837015\times10^{-31}$ kg, or equivalently $m_ec^2 = 0.510998950$ MeV, is not a consequence of the algebra or of the equation; it is a parameter. The framework is scale-free until $m_e$ is supplied, and every electron scale below — the Compton length, the Zitterbewegung frequency — is set by the supplied value, not produced by the structure.
 
@@ -238,7 +238,7 @@ Two facts about products carry the whole structure, and they are stated in words
 | Coulomb field $\tilde{F}\in\mathbb{B}_{\Psi}$ | Derived (from Maxwell) | point-charge solution; purely imaginary vector |
 | Mass term couples the two chirality values, off-diagonally | Derived | the two-value split; the off-diagonal pair |
 | Two-sided single-equation form | Derived (dictionary) | the real-linear dictionary $F\in\mathbb{B}$; a change of representation, not of physics |
-| Rest-energy phase rotates sectors at $ck_{m_e}$ | Derived | $\exp(-i\theta) = \cos\theta\,e_t - \sin\theta\,(ie_t)$ |
+| Rest-energy phase rotates sectors at $ck_{m_e}$ | Derived | $\exp(-i\theta_{\mathrm{rst}}) = \cos\theta_{\mathrm{rst}}\,e_t - \sin\theta_{\mathrm{rst}}\,(ie_t)$ |
 | Zitterbewegung frequency and amplitude | Derived | two-branch interference; $2c\,k_{t}^{\prime}$, $\dfrac{1}{2\,k_{m_e}}$ |
 | Mass value $m_e$ | Represented | parameter of the equation |
 | Charge value $e$, sign convention, quantisation | Represented | minimal coupling; no derivation in the framework |

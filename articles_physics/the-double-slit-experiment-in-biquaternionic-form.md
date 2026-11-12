@@ -48,7 +48,7 @@ $$
 
 Two observations about where the objects live belong here, because later sections use them.
 
-- **The relative phase is central.** $\delta = \theta_{\mathrm{pha},1} - \theta_{\mathrm{pha},2}$ is a real number, and $i\,\delta \in \mathbb{B}_{C} \cap \mathbb{B}_{\Phi}$ lies along the $i r'_t$ direction, the same axis on which the path-integral article locates the phase exponent and the Feynman-propagator article locates $i\epsilon$. The argument of the complex number $\exp(i\delta)$ is supplied by the central imaginary; a non-central root would supply a different kind of argument, and the section on the phase root examines what that changes.
+- **The relative phase is central.** $\delta = \theta_{\mathrm{pha},1} - \theta_{\mathrm{pha},2}$ is a real number, and $i\,\delta \in \mathbb{B}_{C} \cap \mathbb{B}_{\Phi}$ lies along the $i r'_t$ direction, the same axis on which the path-integral article locates the phase exponent and the Feynman-propagator article locates $i\epsilon$. The argument of the complex number $\exp(i\theta_{\mathrm{pha}})$ is supplied by the central imaginary; a non-central root would supply a different kind of argument, and the section on the phase root examines what that changes.
 - **The scalar amplitude carries no spin.** $K$ is a complex scalar times $e_t$; it is not an element of $\mathbb{B}_{\Psi}$ and not a spinor. For a spin-independent beam this is the whole amplitude, and the pattern it produces is a statement about the centre $\mathbb{B}_{C}$. When the two routes can be distinguished by spin, the amplitude is a spinor and the cross term acquires a spin overlap; that is the subject of the later section on spinor-valued routes.
 
 ## The Fringe Pattern

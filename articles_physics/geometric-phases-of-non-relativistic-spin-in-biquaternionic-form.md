@@ -157,22 +157,22 @@ $$
 \tilde\Pi = \frac{\tilde{Ξ}\tilde{Ξ}^{\dagger}}{\mathrm{Tr}(\tilde{Ξ}^{\dagger}\tilde{Ξ})},
 $$
 
-and a spinor phase $\tilde{Ξ}\mapsto \exp(i\alpha)\tilde{Ξ}$ cancels between $\tilde{Ξ}$ and $\tilde{Ξ}^{\dagger}$. So the state that the Bloch ball records is exactly the object in which the geometric phase is absent. This is the same observation the Berry article makes about the Berry connection — $\mathrm{Tr}(\tilde\Pi\partial/\partial R_\mu\tilde\Pi) = 0$ identically — and it applies verbatim to the AA phase: the phase lives in the spinor, which is the lift of the Bloch vector to the double cover.
+and a spinor phase $\tilde{Ξ}\mapsto \exp(i\theta_{\mathrm{cen}})\tilde{Ξ}$ cancels between $\tilde{Ξ}$ and $\tilde{Ξ}^{\dagger}$. So the state that the Bloch ball records is exactly the object in which the geometric phase is absent. This is the same observation the Berry article makes about the Berry connection — $\mathrm{Tr}(\tilde\Pi\partial/\partial R_\mu\tilde\Pi) = 0$ identically — and it applies verbatim to the AA phase: the phase lives in the spinor, which is the lift of the Bloch vector to the double cover.
 
 ### The Rotor and Its Two Faces
 
 The evolution over a closed loop of the state is, in the algebra, the product of a rotor and a central phase,
 
 $$
-\boxed{\;\tilde{U} = \exp(i\alpha)\,\tilde{u},
+\boxed{\;\tilde{U} = \exp(i\theta_{\mathrm{cen}})\,\tilde{u},
 \qquad
 \tilde{u} = \exp(-\frac{1}{2}\theta_{\mathrm{blc}}\,\vec u_x) = \cos\frac{\theta_{\mathrm{blc}}}{2}\,e_t - \sin\frac{\theta_{\mathrm{blc}}}{2}\,\vec u_x\;},
 $$
 
-for some axis $\vec u_x$, where $\theta_{\mathrm{blc}}$ is the angle through which the Bloch vector is turned and $\exp(i\alpha)$ carries the dynamical part $\exp(-\frac{i}{\hbar\,c}\int\langle\tilde H_\Psi\rangle  dr'_t)$. The two faces are:
+for some axis $\vec u_x$, where $\theta_{\mathrm{blc}}$ is the angle through which the Bloch vector is turned and $\exp(i\theta_{\mathrm{cen}})$ carries the dynamical part $\exp(-\frac{i}{\hbar\,c}\int\langle\tilde H_\Psi\rangle  dr'_t)$. The two faces are:
 
 - the **rotor** $\tilde{u}\in\mathbb{B}_{H}$, which rotates the Bloch vector and is observable through the orientation of the state;
-- the **central phase** $\exp(i\alpha)\in\mathbb{B}_{C}$, which multiplies the spinor and is observable only through interference with another amplitude.
+- the **central phase** $\exp(i\theta_{\mathrm{cen}})\in\mathbb{B}_{C}$, which multiplies the spinor and is observable only through interference with another amplitude.
 
 The AA phase is the statement that the spinor phase and the geometry of the loop are locked together for a spin-1/2: the geometric phase is one half of the oriented solid angle swept by the Bloch vector, $\gamma_{\mathrm{geo}} = -\tfrac12\theta_{\mathrm{sol}}{}_{\mathrm{sgn}}$. For the equator loop the swept solid angle has magnitude $2\pi$ and the phase is $\pi$ — one half of the full turn of the vector, which is why the spinor returns only to minus itself after one period. In general the relation between the geometric phase and the holonomy is a lift of an $SO(3)$ element to $SU(2)$, and the factor $\tfrac12$ is the statement that the lift is two-to-one.
 
@@ -184,7 +184,7 @@ $$
 \arg\langle\tilde{Ξ}_{1}|\tilde{Ξ}_{2}\rangle = \arg\,\mathrm{Tr}\!\left(\tilde{Ξ}_{1}^{\dagger}\tilde{Ξ}_{2}\right),
 $$
 
-and it is gauge-covariant: a rephasing $\tilde{Ξ}_{a}\mapsto \exp(i\alpha_a)\tilde{Ξ}_{a}$ shifts the connection by a total derivative, exactly as in the Berry article. The gauge freedom of the geometric phase is the freedom to rephase the spinor at each point of the path, and the curvature is the gauge-invariant content.
+and it is gauge-covariant: a rephasing $\tilde{Ξ}_{a}\mapsto \exp(i\theta_{\mathrm{cen}}_a)\tilde{Ξ}_{a}$ shifts the connection by a total derivative, exactly as in the Berry article. The gauge freedom of the geometric phase is the freedom to rephase the spinor at each point of the path, and the curvature is the gauge-invariant content.
 
 ## The Rotating Field at Arbitrary Rate
 

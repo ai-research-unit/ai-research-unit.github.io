@@ -14,7 +14,7 @@ $$
 
 **and the whole of the model is the statement that they are two, that only one of them carries the entropy current of [The Local Entropy Current](the-local-entropy-current.html), and that they exchange momentum.**
 
-**The condensation is what makes the split necessary.** The polar form of [The Polar Form of the Klein–Gordon Equation in Biquaternionic Form](the-polar-form-of-the-klein-gordon-equation-in-biquaternionic-form.html) describes a state with one flow and one rotor; a thermal state has, in addition, the excitations that the thermal circle supports, and those excitations carry the entropy and obey the dissipative equations. **The two-fluid model is therefore not a new theory but the statement that the field's state has two pieces whose hydrodynamics differ**, and the article's job is to write the two pieces and their coupling in the corpus's letters.
+**The condensation is what makes the split necessary.** The polar form of [The Klein–Gordon Equation in Biquaternionic Polar Variables](the-klein-gordon-equation-in-biquaternionic-polar-variables.html) describes a state with one flow and one rotor; a thermal state has, in addition, the excitations that the thermal circle supports, and those excitations carry the entropy and obey the dissipative equations. **The two-fluid model is therefore not a new theory but the statement that the field's state has two pieces whose hydrodynamics differ**, and the article's job is to write the two pieces and their coupling in the corpus's letters.
 
 **The zero-temperature limit is the article's check.** At $T\to0$ the normal density vanishes, the entropy density vanishes with it, the normal flow becomes undefined because there is nothing to carry it, and the equations reduce exactly to the polar-form article's. **That limit is shown explicitly and in full, because a two-fluid model that does not reduce to the one-fluid model is not a model of the same substance.**
 
@@ -95,7 +95,7 @@ $$
 
 ### The condensate's flow is a gradient
 
-**The condensate's flow is the gradient of the phase, and this is the polar form's statement quoted.** From [The Polar Form of the Klein–Gordon Equation in Biquaternionic Form](the-polar-form-of-the-klein-gordon-equation-in-biquaternionic-form.html), with the phase $S_{\tilde\Xi}$ of the field,
+**The condensate's flow is the gradient of the phase, and this is the polar form's statement quoted.** From [The Klein–Gordon Equation in Biquaternionic Polar Variables](the-klein-gordon-equation-in-biquaternionic-polar-variables.html), with the phase $S_{\tilde\Xi}$ of the field,
 
 $$
 m\,v_{\Phi,\mathrm{sup},\mu}=\partial_\mu S_{\tilde\Xi}+\hbar\,\chi_{\mu},
@@ -230,7 +230,7 @@ in the element spelling of §*The two stress equations*, which is the form the a
 
 **Third, the flow.** $\tilde V_{\Phi,\mathrm{nrm}}$ becomes undefined — its defining density is zero, so the element it is built from is the zero element divided by zero — and the only surviving flow is the condensate's, $\tilde V_{\Phi,\mathrm{sup}}$, whose equation is the polar form's own with the quantum stress as its energy-momentum. **The undefined normal flow is the correct limit and not a defect**: a component with no density has no velocity, and the article says so rather than letting the reader divide.
 
-**Fourth, the entropy current.** $\tilde J_{\Phi,\mathrm{ent}}\to0$, the second law reads $0\ge0$, and the state is the pure state whose fluid [The Polar Form of the Klein–Gordon Equation in Biquaternionic Form](the-polar-form-of-the-klein-gordon-equation-in-biquaternionic-form.html) builds. **All four displays together are the statement that the $T\to0$ limit of the two-fluid model is the one-fluid model of the polar form**, and the limit is exact and not asymptotic because every term that disappears carries a positive power of $\rho_{\mathrm{num,nrm}}$ or of the fraction.
+**Fourth, the entropy current.** $\tilde J_{\Phi,\mathrm{ent}}\to0$, the second law reads $0\ge0$, and the state is the pure state whose fluid [The Klein–Gordon Equation in Biquaternionic Polar Variables](the-klein-gordon-equation-in-biquaternionic-polar-variables.html) builds. **All four displays together are the statement that the $T\to0$ limit of the two-fluid model is the one-fluid model of the polar form**, and the limit is exact and not asymptotic because every term that disappears carries a positive power of $\rho_{\mathrm{num,nrm}}$ or of the fraction.
 
 ### The limit's subtlety
 

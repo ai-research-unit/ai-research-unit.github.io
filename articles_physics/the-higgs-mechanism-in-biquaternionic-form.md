@@ -28,9 +28,9 @@ $$
 \tilde{Ξ}(\tilde{Q}) = \xi(\tilde{Q})\,e_t \;\in\; \mathbb{B}_{C}, \qquad \xi \in \mathbb{C},
 $$
 
-which the gauge principle article identifies as the realization of the global symmetry that survives a mass: under the constant phase $\xi\mapsto \exp(i\alpha)\xi$ the massive Klein–Gordon equation is invariant, because its mass term is linear in the field. This is the scalar the Higgs mechanism uses. It is **complex**, and we say so explicitly: a real scalar would be neutral under the central phase and could not break a $\mathrm{U}(1)$ at all. The framework does supply a complex scalar, so no real-scalar assumption is forced here; the real case is mentioned only where it differs.
+which the gauge principle article identifies as the realization of the global symmetry that survives a mass: under the constant phase $\xi\mapsto \exp(i\theta_{\mathrm{cen}})\xi$ the massive Klein–Gordon equation is invariant, because its mass term is linear in the field. This is the scalar the Higgs mechanism uses. It is **complex**, and we say so explicitly: a real scalar would be neutral under the central phase and could not break a $\mathrm{U}(1)$ at all. The framework does supply a complex scalar, so no real-scalar assumption is forced here; the real case is mentioned only where it differs.
 
-**The symmetry.** The global symmetry is the $*$-unitary part of the centre, $\xi\mapsto\lambda\xi$ with $\lambda = \exp(i\alpha)$ central. Localizing it means $\lambda(\tilde{Q}) = \exp(i\theta_{\mathrm{gau}}\tilde{Q})$ with $\Gamma$ a real scalar function, and it forces the connection,
+**The symmetry.** The global symmetry is the $*$-unitary part of the centre, $\xi\mapsto\lambda\xi$ with $\lambda = \exp(i\theta_{\mathrm{cen}})$ central. Localizing it means $\lambda(\tilde{Q}) = \exp(i\theta_{\mathrm{gau}}\tilde{Q})$ with $\Gamma$ a real scalar function, and it forces the connection,
 
 $$
 \tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma, \qquad
@@ -74,7 +74,7 @@ $$
 
 Two features of this minimum are the whole content of "spontaneous" symmetry breaking.
 
-**1. The vacuum is not unique.** Every point of the circle $|\xi| = v/\sqrt{2}$ minimizes $V$. The action is invariant under the central phase $\xi\mapsto \exp(i\alpha)\xi$, but no single minimum is: the phase rotates the vacuum into a different, equally good vacuum. A symmetry that is a symmetry of the action but not of the chosen vacuum is said to be **spontaneously broken**. This is a statement about the pair (action, vacuum), not about the action alone.
+**1. The vacuum is not unique.** Every point of the circle $|\xi| = v/\sqrt{2}$ minimizes $V$. The action is invariant under the central phase $\xi\mapsto \exp(i\theta_{\mathrm{cen}})\xi$, but no single minimum is: the phase rotates the vacuum into a different, equally good vacuum. A symmetry that is a symmetry of the action but not of the chosen vacuum is said to be **spontaneously broken**. This is a statement about the pair (action, vacuum), not about the action alone.
 
 **2. The vacuum is a scalar with a constant magnitude.** Write
 
@@ -157,15 +157,15 @@ the middle expression being the $i r'_t$ form of the biquaternion norm and the l
 
 The mass term above was obtained in the gauge in which $\xi$ is real and constant — the tree-level vacuum. In a generic gauge the scalar still has its angular mode $\vartheta_{\mathrm{fld}}$, and it is worth seeing where it goes. The answer is the second half of the mechanism.
 
-**The phase is a gauge direction.** The parametrization $\xi = \frac{1}{\sqrt{2}}(v+h)\exp(i\theta/v)$ exhibits the phase as a field. But a phase rotation is precisely a gauge transformation: choosing
+**The phase is a gauge direction.** The parametrization $\xi = \frac{1}{\sqrt{2}}(v+h)\exp(i\theta_{\mathrm{fld}}/v)$ exhibits the phase as a field. But a phase rotation is precisely a gauge transformation: choosing
 
 $$
-\Gamma(\tilde{Q}) = -\,\frac{\hbar}{ϙ\,v}\,\theta(\tilde{Q})
+\Gamma(\tilde{Q}) = -\,\frac{\hbar}{ϙ\,v}\,\theta_{\mathrm{fld}}(\tilde{Q})
 $$
 
 gives $\xi\mapsto  \exp(i\theta_{\mathrm{gau}})\xi = \exp(-i\vartheta_{\mathrm{fld}}/v)\xi = \frac{1}{\sqrt{2}}(v+h)$, which is real — the angular field is removed. This choice is the **unitary gauge** for this abelian model. In it the scalar is a single real field $h$, and the potential gives it the mass $m_h^2 = 2\beta v^2$.
 
-**Where the phase went.** The gauge transformation that removes $\theta$ also shifts the connection,
+**Where the phase went.** The gauge transformation that removes $\theta_{\mathrm{fld}}$ also shifts the connection,
 
 $$
 A_{2,\mu} = A_\mu - \partial/\partial R_\mu\,\Gamma = A_\mu +\frac{\hbar}{ϙ\,v}\,\partial/\partial R_\mu\,\vartheta_{\mathrm{fld}} ,
@@ -184,7 +184,7 @@ so the combination $A_\mu +\frac{\hbar}{ϙ\,v}\partial/\partial R_\mu\,\vartheta
 *After (broken phase, $\langle|\xi|\rangle = v/\sqrt{2}$):*
 
 - The scalar has $1$ real physical component, the radial mode $h$, which is massive.
-- The phase mode $\theta$ is not an independent physical field; it is the longitudinal polarization of the gauge field.
+- The phase mode $\theta_{\mathrm{fld}}$ is not an independent physical field; it is the longitudinal polarization of the gauge field.
 - The gauge field is massive. A massive vector has no residual gauge symmetry, so its $4$ components are all physical up to the equation of motion, giving $3$ polarizations: $2$ transverse and $1$ longitudinal.
 - Total: $1 + 3 = 4$.
 
@@ -304,7 +304,7 @@ One gap is left visible and is not closed. The framework's scalar lies in the ce
 | $V(\xi^*\xi) = \beta(\xi^*\xi - v^2/2)^2$ | Scalar potential; $\beta > 0$ is the quartic coupling |
 | $\beta$ | Quartic self-coupling of the scalar (distinct from the phase $\lambda$) |
 | $h$ | Radial (Higgs) mode, $m_h^2 = 2\beta v^2$ |
-| $\theta$ | Angular (would-be Goldstone) mode |
+| $\theta_{\mathrm{fld}}$ | Angular (would-be Goldstone) mode, the phase $\theta_{\mathrm{fld}}/v$ |
 | $\varepsilon=(1,-1,-1,-1)$ | coordinate signs for contractions |
 | $\mathcal{L}_\text{scalar} = -\sum_{\mu,\nu}g_{\mu\nu}(D_\mu\xi)^*(D_\nu\xi) - V$ | Gauge-invariant scalar Lagrangian |
 | $-\sum_{\mu,\nu} g_{\mu\nu}(D_\mu\xi)^*(D_\nu\xi)\big|_\text{vac} = -\frac{ϙ^{2}\,v^{2}}{2\,\hbar^{2}}\mathrm{Sc}(\tilde{A}_{\Phi}^{\natural}\tilde{A}_{\Phi})_{\natural}$ | Kinetic term at the vacuum = mass term |

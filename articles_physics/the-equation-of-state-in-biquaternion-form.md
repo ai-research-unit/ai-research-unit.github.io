@@ -191,7 +191,7 @@ $$
 p_{\mathrm{eff}}=p_{\mathrm{qnt}}=\rho_{\mathrm{num}}Q_{\mathrm{qnt}},
 $$
 
-which is the pressure of the state that [The Polar Form of the Klein–Gordon Equation in Biquaternionic Form](the-polar-form-of-the-klein-gordon-equation-in-biquaternionic-form.html) describes. **The pure state is therefore the $T=0$ limit of this equation of state and not a different theory**, and [The Two-Fluid Model in Biquaternionic Form](the-two-fluid-model-in-biquaternionic-form.html) uses exactly this statement to identify its condensate.
+which is the pressure of the state that [The Klein–Gordon Equation in Biquaternionic Polar Variables](the-klein-gordon-equation-in-biquaternionic-polar-variables.html) describes. **The pure state is therefore the $T=0$ limit of this equation of state and not a different theory**, and [The Two-Fluid Model in Biquaternionic Form](the-two-fluid-model-in-biquaternionic-form.html) uses exactly this statement to identify its condensate.
 
 ### The three requirements, checked
 
@@ -278,4 +278,4 @@ The named caution is that $p_{\mathrm{qnt}}$ is the scalar part of the quantum s
 - E. Madelung, "Quantentheorie in hydrodynamischer Form," *Zeitschrift für Physik* **40** (1926) 322–326, for the quantum potential and the quantum pressure.
 - D. Bohm, "A suggested interpretation of the quantum theory in terms of 'hidden' variables I," *Physical Review* **85** (1952) 166–179, for the quantum potential's role in the trajectory picture.
 - T. Takabayasi, "On the formulation of quantum mechanics associated with classical pictures," *Progress of Theoretical Physics* **8** (1952) 143–182, for the hydrodynamic reading of the quantum pressure.
-- The companion articles: [The Local Thermal State of a Fluid](the-local-thermal-state-of-a-fluid.html), [The Local Thermal Structure: k_B as the Scale of Imaginary Time](the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html), [The Local Entropy Current](the-local-entropy-current.html), and [The Polar Form of the Klein–Gordon Equation in Biquaternionic Form](the-polar-form-of-the-klein-gordon-equation-in-biquaternionic-form.html).
+- The companion articles: [The Local Thermal State of a Fluid](the-local-thermal-state-of-a-fluid.html), [The Local Thermal Structure: k_B as the Scale of Imaginary Time](the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html), [The Local Entropy Current](the-local-entropy-current.html), and [The Klein–Gordon Equation in Biquaternionic Polar Variables](the-klein-gordon-equation-in-biquaternionic-polar-variables.html).

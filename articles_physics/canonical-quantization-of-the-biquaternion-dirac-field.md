@@ -315,15 +315,15 @@ $$
 =i\frac{E_{\vec p}}{c}\big(\tilde{Ξ}i\vec e_x\big)\vec e_x-i\sum_\eta p_\eta\vec e_\eta\big(\tilde{Ξ}i\vec e_x\big)\vec e_y-mc\,\big(\tilde{Ξ}i\vec e_x\big).
 $$
 
-Multiplying by the two phases and adding, with $\theta=\vec p\cdot\vec r_{12}$,
+Multiplying by the two phases and adding, with $\theta_{\mathrm{pwp}}=\vec p\cdot\vec r_{12}$,
 
 $$
-\sum_r\Big[\tilde{Ξ}_{+}^{(r)}\mathrm{Sc}\big(\tilde{Ξ}_{+}^{(r)*}\tilde{Ξ}\big)e^{+i\theta}
-+\tilde{Ξ}_{-}^{(r)}\mathrm{Sc}\big(\tilde{Ξ}_{-}^{(r)*}\tilde{Ξ}\big)e^{-i\theta}\Big]
-=2\cos\theta\,\Big[i\frac{E_{\vec p}}{c}\big(\tilde{Ξ}i\vec e_x\big)\vec e_x-i\sum_\eta p_\eta\vec e_\eta\big(\tilde{Ξ}i\vec e_x\big)\vec e_y\Big]+2im\sin\theta\,\big(\tilde{Ξ}\,i\vec e_x\big),
+\sum_r\Big[\tilde{Ξ}_{+}^{(r)}\mathrm{Sc}\big(\tilde{Ξ}_{+}^{(r)*}\tilde{Ξ}\big)e^{+i\theta_{\mathrm{pwp}}}
++\tilde{Ξ}_{-}^{(r)}\mathrm{Sc}\big(\tilde{Ξ}_{-}^{(r)*}\tilde{Ξ}\big)e^{-i\theta_{\mathrm{pwp}}}\Big]
+=2\cos\theta_{\mathrm{pwp}}\,\Big[i\frac{E_{\vec p}}{c}\big(\tilde{Ξ}i\vec e_x\big)\vec e_x-i\sum_\eta p_\eta\vec e_\eta\big(\tilde{Ξ}i\vec e_x\big)\vec e_y\Big]+2im\sin\theta_{\mathrm{pwp}}\,\big(\tilde{Ξ}\,i\vec e_x\big),
 $$
 
-the four terms grouping as $e^{+i\theta}$ times the action with $+mc$ and $e^{-i\theta}$ times the action with $-mc$. Each piece now has a definite parity in $\vec p$: the time part of the action contributes $i\frac{E_{\vec p}}{c}(\tilde{Ξ} i\vec e_x)\vec e_x=\frac{E_{\vec p}}{c}\tilde{Ξ}$, because $i\vec e_x\cdot i\vec e_x=i^2\vec e_x^2=e_t$, and it is even, since $E_{\vec p}$ and the units are; the spatial part $-i\sum_\eta p_\eta\vec e_\eta(\tilde{Ξ} i\vec e_x)\vec e_y$ and the mass term $2im\sin\theta(\tilde{Ξ} i\vec e_x)$ are odd. The even part is $2E_{\vec p}\cos\theta$ times the identity and, after division by $2E_{\vec p}$, integrates to $\delta^{(3)}(\vec r_{12})$; the odd parts vanish under symmetric integration. Hence the equal-time relation holds. The cancellation of the odd terms is exactly what the opposite phases of the two branches accomplish; had both phases been equal, the cross terms would have survived and the canonical relation would have failed.
+the four terms grouping as $e^{+i\theta_{\mathrm{pwp}}}$ times the action with $+mc$ and $e^{-i\theta_{\mathrm{pwp}}}$ times the action with $-mc$. Each piece now has a definite parity in $\vec p$: the time part of the action contributes $i\frac{E_{\vec p}}{c}(\tilde{Ξ} i\vec e_x)\vec e_x=\frac{E_{\vec p}}{c}\tilde{Ξ}$, because $i\vec e_x\cdot i\vec e_x=i^2\vec e_x^2=e_t$, and it is even, since $E_{\vec p}$ and the units are; the spatial part $-i\sum_\eta p_\eta\vec e_\eta(\tilde{Ξ} i\vec e_x)\vec e_y$ and the mass term $2im\sin\theta_{\mathrm{pwp}}(\tilde{Ξ} i\vec e_x)$ are odd. The even part is $2E_{\vec p}\cos\theta_{\mathrm{pwp}}$ times the identity and, after division by $2E_{\vec p}$, integrates to $\delta^{(3)}(\vec r_{12})$; the odd parts vanish under symmetric integration. Hence the equal-time relation holds. The cancellation of the odd terms is exactly what the opposite phases of the two branches accomplish; had both phases been equal, the cross terms would have survived and the canonical relation would have failed.
 
 ### The Fock Space and Pauli Exclusion
 

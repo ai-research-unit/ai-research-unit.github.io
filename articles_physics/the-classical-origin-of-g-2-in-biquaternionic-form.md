@@ -43,7 +43,7 @@ $$
 
 with the intrinsic moment's informational-sector representative $\mu_\eta\,i\vec e_\eta\in\mathbb{B}_{\Psi}$ available when the moment is paired with the spin observable. The gyromagnetic relation is therefore a scalar proportionality between two elements of the *same* vector slot, and in the algebra the question of $g$ is the question of what fixes that scalar.
 
-Two couplings must be compared. The electromagnetic coupling is through the central phase: an element of the algebra of charge $ϙ$ transforms as $\tilde{Ξ}\to \exp(i\alpha)\tilde{Ξ}$ under a gauge phase, and the phase lives in the centre of the algebra, shared by both sectors. The rotational coupling is through the rotor: an element transforms by left multiplication by a unit real quaternion,
+Two couplings must be compared. The electromagnetic coupling is through the central phase: an element of the algebra of charge $ϙ$ transforms as $\tilde{Ξ}\to \exp(i\theta_{\mathrm{gau}})\tilde{Ξ}$ under a gauge phase, and the phase lives in the centre of the algebra, shared by both sectors. The rotational coupling is through the rotor: an element transforms by left multiplication by a unit real quaternion,
 
 $$
 \tilde{Ξ} \;\longmapsto\; \tilde u(\theta,\vec u)\,\tilde{Ξ},

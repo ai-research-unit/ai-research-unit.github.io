@@ -48,7 +48,7 @@ replaces the four complex coefficients of the point by **eight real parameters**
 
 One structural fact governs the whole series, so it is worth isolating. **The scalar unit $i$ is central**: it commutes with every element of $\mathbb{B}$, because it belongs to the $\mathbb{C}$ factor of the tensor product, while the quaternion units belong to the $\mathbb{H}$ factor. Multiplication by a *central* phase $\exp(i\theta_{\mathrm{pha}})$ therefore commutes with every operator constructed from the algebra — in particular with the biquaternionic gradient $\tilde\nabla_\Phi$ — and this is why the central phase is the algebra's natural continuous symmetry. The articles on Noether's theorem and the gauge principle rest on it.
 
-**The central phase is carried by the first coordinate.** The phase is the unit complex number $\lambda=\exp(i\theta)$ multiplying $e_t$, and it acts on an element by left multiplication, $\tilde Q\mapsto\lambda e_t\tilde Q=\lambda\tilde Q$. On the coefficients this is $Q_t\mapsto\lambda Q_t$ and, with the same $\lambda$, $Q_x\mapsto\lambda Q_x$, $Q_y\mapsto\lambda Q_y$, $Q_z\mapsto\lambda Q_z$. **The first line is the definition**: the phase acts on $Q_t$, the coefficient of $e_t$, the first coordinate of the element, and there it rotates the two parameters $q_t$ and $q'_t$ of the centre $\mathbb{B}_{C}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$. The other three coordinates follow, with the same $\lambda$, because the multiplication is $\mathbb{C}$-linear and $e_t$ is the unit. **The action is therefore fixed by its value on one coordinate**, and there is no second choice to make. The element carries one complex structure, $J=L_{ie_t}$, of which the phase is the exponential, $\lambda e_t=\exp(i\theta J)$; a second complex structure exists in the double $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}$ and in no element of $\mathbb{B}$.
+**The central phase is carried by the first coordinate.** The phase is the unit complex number $\lambda=\exp(i\theta_{\mathrm{cen}})$ multiplying $e_t$, and it acts on an element by left multiplication, $\tilde Q\mapsto\lambda e_t\tilde Q=\lambda\tilde Q$. On the coefficients this is $Q_t\mapsto\lambda Q_t$ and, with the same $\lambda$, $Q_x\mapsto\lambda Q_x$, $Q_y\mapsto\lambda Q_y$, $Q_z\mapsto\lambda Q_z$. **The first line is the definition**: the phase acts on $Q_t$, the coefficient of $e_t$, the first coordinate of the element, and there it rotates the two parameters $q_t$ and $q'_t$ of the centre $\mathbb{B}_{C}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$. The other three coordinates follow, with the same $\lambda$, because the multiplication is $\mathbb{C}$-linear and $e_t$ is the unit. **The action is therefore fixed by its value on one coordinate**, and there is no second choice to make. The element carries one complex structure, $J=L_{ie_t}$, of which the phase is the exponential, $\lambda e_t=\exp(i\theta_{\mathrm{cen}} J)$; a second complex structure exists in the double $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}$ and in no element of $\mathbb{B}$.
 
 **A statement about the phase is a statement about the first coordinate and its forced extension.** It is never a statement about one summand of a decomposition of the carrier. The words *on one half*, *on the other half* and *on both halves* are not written of the phase, because the element is not a sum of halves.
 
@@ -163,9 +163,9 @@ with the four coefficients in one unit, $R_t = h_t + ir'_t$, so $r_\mu$ multipli
 
 ## The Angle
 
-**An angle is real, and it is written $\theta$.** The central phase is $\exp(i\theta J)$, so the $i$ belongs to the exponential and not to the angle. The glyph $\theta$ carries a real number, and a subscript names which angle it is: $\theta_{\mathrm{rpd}}$ the rapidity, $\theta_{\mathrm{rat}}$ the rotation angle of an evolution. One glyph, one case, and no second letter spent on the imaginary reading.
+**An angle is real, and it is written $\theta$.** The central phase is $\exp(i\theta_{\mathrm{cen}} J)$, so the $i$ belongs to the exponential and not to the angle. The glyph $\theta$ carries a real number, and a subscript names which angle it is: $\theta_{\mathrm{rpd}}$ the rapidity, $\theta_{\mathrm{rat}}$ the rotation angle of an evolution. One glyph, one case, and no second letter spent on the imaginary reading.
 
-**The central phase is the real argument.** $\lambda e_t=\exp(i\theta J)$ with $\theta$ real and $J=L_{ie_t}$: the phase turns the centre by a real angle, and the rotor of a rotation is the same argument at half the angle, $\tilde u_{\mathrm r}=\cos(\theta/2)e_t+\sin(\theta/2)\vec u_{\mathrm r}$.
+**The central phase is the real argument.** $\lambda e_t=\exp(i\theta_{\mathrm{cen}} J)$ with $\theta$ real and $J=L_{ie_t}$: the phase turns the centre by a real angle, and the rotor of a rotation is the same argument at half the angle, $\tilde u_{\mathrm r}=\cos(\theta/2)e_t+\sin(\theta/2)\vec u_{\mathrm r}$.
 
 **The boost factor is the imaginary argument.** The four-vector element carries $\mathcal B_{\Psi}$ with $\tilde U_{\Psi,\mathrm b}^{-2}=\cosh\theta_{\mathrm{rpd}}\,e_t-i\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}$, which is $\exp(\vec U\theta)$ at the imaginary argument $\theta=-i\theta_{\mathrm{rpd}}$. The rapidity takes the angle's letter with the caret `rpd`, so that no second letter is spent on it. The sign carries the direction of the boost and the magnitude is the rapidity. A purely imaginary angle is written $i\theta_{\mathrm{rpd}}$ where it is used, and the $\theta_{\mathrm{rpd}}$ inside stays real.
 
@@ -176,6 +176,8 @@ $$
 $$
 
 The formula does not change between the rotation and the boost; only the value put in the slot changes.
+
+**The rotor's angle is $\theta_{\mathrm{axr}}$.** For the word's rotor, $\tilde u_{\mathrm r}=\exp(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r})$, the label names the rotation angle about the arbitrary axis $\vec u_{\mathrm r}$. Where an element is written in the parent's expansion $\cos\theta+\sin\theta\,\vec u$, the angle in the slot is the half-angle and the rotation is through $2\theta$; those occurrences keep a locally defined $\theta$ and say so.
 
 **The letter carries no second role.** The roles that once shared it have glyphs of their own: the involution and the orbit map are $\mathrm{J}$; the curvature is $\Omega$; the two-sided operator is $\mathrm{Sd}$; the Heaviside step is $\mathrm{H}_{\mathrm{hvs}}$; the generalised angle of a congruence is $\vartheta_{\mathrm{cng}}$. A subscript on $\theta$ names the angular coordinate itself: $p_\theta$ is the momentum conjugate to it.
 
@@ -408,7 +410,7 @@ The angle is real and is one letter: $\theta$, with a subscript naming it, the $
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | The biquaternion algebra, isomorphic to $M_2(\mathbb{C})$ |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\eta^2 = -e_t$ |
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
-| $\lambda e_t=\exp(i\theta J)$ | The central phase, carried by the first coordinate $Q_t$ and extended to the four by $\mathbb{C}$-linearity |
+| $\lambda e_t=\exp(i\theta_{\mathrm{cen}} J)$ | The central phase, carried by the first coordinate $Q_t$ and extended to the four by $\mathbb{C}$-linearity |
 | $\theta$; $i\theta_{\mathrm{rpd}}$ | The angle, real, with a subscript naming it; a purely imaginary angle is written $i\theta$ at the point of use and the $\theta$ inside stays real — the central phase is the real argument and the boost the imaginary one (§*The Angle*) |
 | $J=L_{ie_t}$ | The one complex structure of $\mathbb{B}$, of which the phase is the exponential |
 | $S_+(\vec u)\oplus S_-(\vec u)$ | The polarization, the two planes; a frame datum, not a pair of halves |

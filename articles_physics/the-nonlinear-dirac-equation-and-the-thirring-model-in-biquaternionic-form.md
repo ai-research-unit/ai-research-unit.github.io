@@ -190,7 +190,7 @@ The Lorentz-type column is the classification of the sources, recorded here and 
 
 ### The Interaction Is Bosonic, So the Central Phase Passes Through It
 
-A bilinear of the field is even in the field and carries zero fermion number. A product of two bilinears is even as well, so every interaction term in this article is invariant under the central phase $Q\mapsto e^{i\alpha}Q$: the phase meets an even number of fields and cancels. The invariance is what makes the vector symmetry exact in all three models, and it holds at the level of the algebra and not only after the Lagrangian is written.
+A bilinear of the field is even in the field and carries zero fermion number. A product of two bilinears is even as well, so every interaction term in this article is invariant under the central phase $Q\mapsto e^{i\theta_{\mathrm{cen}}}Q$: the phase meets an even number of fields and cancels. The invariance is what makes the vector symmetry exact in all three models, and it holds at the level of the algebra and not only after the Lagrangian is written.
 
 The axial rotation is the one that does not pass. Under $Q\mapsto Q\exp(\alpha\vec e_z)$ the scalar and pseudoscalar densities rotate into one another, and the mass term, which is a single density, is not invariant. The interaction terms that are invariant under it are the ones built from the invariant combination $S_{\mathrm d}^2+P_5^2$.
 

@@ -21,14 +21,14 @@ as *Instantons and Solitons in Biquaternionic Form* recomputed from the componen
 $$
 Ϙ=\frac{1}{8\pi^2}\int\mathrm{Tr}\bigl(F\wedge F\bigr)\in\mathbb Z ,
 \qquad
-S_\theta=\frac{\theta}{32\pi^2}\int \sum_{\mu,\nu}F_{\mu\nu}F_{\mathrm{dual},\mu\nu} ,
+S_\theta=\frac{\theta_{\mathrm{vac}}}{32\pi^2}\int \sum_{\mu,\nu}F_{\mu\nu}F_{\mathrm{dual},\mu\nu} ,
 \qquad
 F_{\mathrm{dual},\mu\nu}=\tfrac12\sum_{\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}F_{\rho\sigma} ,
 $$
 
 with all indices summed in the $i r'_t$ convention as in the companion gauge articles. A quantisation statement carries the factor $\frac{1}{\hbar}$ beside the charge product. The trace $\mathrm{Tr}$ is the matrix trace on the gauge factor, distinguished from the trace of an element of the algebra, and it is taken in the fundamental representation with $\mathrm{Tr}(T^aT^b)=\tfrac12\delta^{ab}$; that normalization is what makes $Ϙ$ an integer.
 
-Two things follow, and the article states them separately. The framework **supplies** the theta term's density and its discrete periodicity; it **does not supply** the value of $\theta$, because $\theta$ is a parameter labelling the vacuum and not an output of a complexified classical algebra. The strong CP problem is the statement that the observed near-vanishing of the physical theta parameter is not explained by the framework — or by the Standard Model without additional structure. This is reported as the boundary of what the algebra can address.
+Two things follow, and the article states them separately. The framework **supplies** the theta term's density and its discrete periodicity; it **does not supply** the value of $\theta_{\mathrm{vac}}$, because $\theta_{\mathrm{vac}}$ is a parameter labelling the vacuum and not an output of a complexified classical algebra. The strong CP problem is the statement that the observed near-vanishing of the physical theta parameter is not explained by the framework — or by the Standard Model without additional structure. This is reported as the boundary of what the algebra can address.
 
 **Notation.** The imaginary unit is the central $i$, with $i^2=-1$; it commutes with the four units, so wherever two central units meet in a product they are reduced before the display is read. Every field equation of this article is written with the **biquaternionic gradient** $\tilde\nabla_\Phi$ of *Operator and Calculus Conventions*, an element of the algebra whose coefficients are derivatives; it acts from the left, its conjugate is $(\tilde\nabla_\Phi)^{\natural}$, and the **d'Alembertian** $\Box_\Phi$ is its quaternionic norm. The derivative on the material sector, the time coefficient included, is that article's.
 
@@ -53,11 +53,11 @@ both acting from the left, and each half satisfies $\Box_\Phi\tilde{Ξ}=k_m^{2}\
 The theta term of a non-abelian gauge theory is
 
 $$
-\boxed{\;S_\theta=\frac{\theta}{32\pi^2}\int d^4r\,\sum_{\mu,\nu,a}F_{\mu\nu a}F_{\mathrm{dual},\mu\nu a}
-=\frac{\theta}{8\pi^2}\int\mathrm{Tr}\bigl(F\wedge F\bigr)\;},
+\boxed{\;S_\theta=\frac{\theta_{\mathrm{vac}}}{32\pi^2}\int d^4r\,\sum_{\mu,\nu,a}F_{\mu\nu a}F_{\mathrm{dual},\mu\nu a}
+=\frac{\theta_{\mathrm{vac}}}{8\pi^2}\int\mathrm{Tr}\bigl(F\wedge F\bigr)\;},
 $$
 
-so that $S_\theta=\theta\,Ϙ$ with the charge normalisation used here, since $\int\sum_{\mu,\nu,a}F_{\mu\nu a}F_{\mathrm{dual},\mu\nu a}=4\int\mathrm{Tr}(F\wedge F)=32\pi^2Ϙ$. It is a total derivative,
+so that $S_\theta=\theta_{\mathrm{vac}}\,Ϙ$ with the charge normalisation used here, since $\int\sum_{\mu,\nu,a}F_{\mu\nu a}F_{\mathrm{dual},\mu\nu a}=4\int\mathrm{Tr}(F\wedge F)=32\pi^2Ϙ$. It is a total derivative,
 
 $$
 \sum_{\mu,\nu,a}F_{\mu\nu a}F_{\mathrm{dual},\mu\nu a}
@@ -82,8 +82,8 @@ $$
 so the theta term of the abelian theory is
 
 $$
-S_\theta^{\text{ab}}=\frac{\theta}{32\pi^2}\int d^4r\,\frac{4i}{c}I_2
-=\frac{i\theta}{8\pi^2 c}\int d^4r\,I_2 .
+S_\theta^{\text{ab}}=\frac{\theta_{\mathrm{vac}}}{32\pi^2}\int d^4r\,\frac{4i}{c}I_2
+=\frac{i\theta_{\mathrm{vac}}}{8\pi^2 c}\int d^4r\,I_2 .
 $$
 
 The theta term is thus the integral of the framework's own parity-odd invariant, with the factor $i$ that the $i r'_t$ convention attaches to it. This is the genuine affirmative content of the article: in the abelian sector the CP-odd term is not an object the framework lacks; it is $I_2$, already present in *The Field-Strength Biquaternion and Its Invariants*.
@@ -96,38 +96,38 @@ $$
 
 and the theta density is a component of the norm of one element. The reading needs no array: the entries of $F_{\mu\nu}$ and the four coefficients of $\tilde F$ carry the same number, and the second carries it as the imaginary component of $\langle\tilde F\rangle_{\natural}$, the norm of the field element.
 
-**Parity.** Under parity $\vec E\mapsto-\vec E$ and $\vec B\mapsto+\vec B$, and under time reversal $\vec E\mapsto+\vec E$ and $\vec B\mapsto-\vec B$, so $I_2=\vec E\cdot\vec B\mapsto-I_2$ in both cases. Under either transformation the theta action changes sign, $S_\theta\mapsto-S_\theta$. A term linear in a parity-odd density with a real coefficient $\theta$ is therefore not invariant under parity unless $\theta=0$ or $\theta=\pi$ (mod $2\pi$), where the theta weight $\exp(i\theta Ϙ)$ is real for every integer $Ϙ$. For generic $\theta$ the theory violates $P$ and $T$, and by CPT it violates $CP$. The statement is purely algebraic in the abelian sector: the framework has one parity-even and one parity-odd derivative-free invariant, and the theta term is the integral of the odd one.
+**Parity.** Under parity $\vec E\mapsto-\vec E$ and $\vec B\mapsto+\vec B$, and under time reversal $\vec E\mapsto+\vec E$ and $\vec B\mapsto-\vec B$, so $I_2=\vec E\cdot\vec B\mapsto-I_2$ in both cases. Under either transformation the theta action changes sign, $S_\theta\mapsto-S_\theta$. A term linear in a parity-odd density with a real coefficient $\theta_{\mathrm{vac}}$ is therefore not invariant under parity unless $\theta_{\mathrm{vac}}=0$ or $\theta_{\mathrm{vac}}=\pi$ (mod $2\pi$), where the theta weight $\exp(i\theta_{\mathrm{vac}} Ϙ)$ is real for every integer $Ϙ$. For generic $\theta_{\mathrm{vac}}$ the theory violates $P$ and $T$, and by CPT it violates $CP$. The statement is purely algebraic in the abelian sector: the framework has one parity-even and one parity-odd derivative-free invariant, and the theta term is the integral of the odd one.
 
 ## Periodicity and the Theta Vacuum
 
 The theta dependence enters the partition function through the instanton sum of *The Semiclassical Expansion and the Instanton Gas in Biquaternionic Form*,
 
 $$
-Z(\theta)=\sum_{Ϙ\in\mathbb Z}\exp(iϘ\theta)Z_Ϙ ,
+Z(\theta_{\mathrm{vac}})=\sum_{Ϙ\in\mathbb Z}\exp(iϘ\theta_{\mathrm{vac}})Z_Ϙ ,
 $$
 
 and the integrality of the topological charge $Ϙ$ makes the partition function periodic,
 
 $$
-Z(\theta+2\pi)=\sum_Ϙ \exp(iϘ(\theta+2\pi))Z_Ϙ=\sum_Ϙ \exp(iϘ\theta)Z_Ϙ=Z(\theta),
+Z(\theta_{\mathrm{vac}}+2\pi)=\sum_Ϙ \exp(iϘ(\theta_{\mathrm{vac}}+2\pi))Z_Ϙ=\sum_Ϙ \exp(iϘ\theta_{\mathrm{vac}})Z_Ϙ=Z(\theta_{\mathrm{vac}}),
 $$
 
-which was verified to machine precision on an explicit finite instanton sum in that article. The periodicity has two interpretations. Physically, $\theta$ and $\theta+2\pi$ label the same vacuum, so the angle is defined modulo $2\pi$ and the inequivalent vacua lie on a circle. Algebraically, the periodicity is the statement that the $T$ generator of the modular group, $T:\theta\to\theta+2\pi$, is a symmetry; it is the generator that *Electric–Magnetic Duality and the Modular Group in Biquaternionic Form* identified as the one requiring the integral topological charge. The periodicity is therefore not a property of the algebra but of the sum over the algebra's instanton sectors: it comes from $Ϙ\in\mathbb Z$, which comes from $\pi_3(SU(2))=\mathbb Z$ and hence from the Hopf total space.
+which was verified to machine precision on an explicit finite instanton sum in that article. The periodicity has two interpretations. Physically, $\theta_{\mathrm{vac}}$ and $\theta_{\mathrm{vac}}+2\pi$ label the same vacuum, so the angle is defined modulo $2\pi$ and the inequivalent vacua lie on a circle. Algebraically, the periodicity is the statement that the $T$ generator of the modular group, $T:\theta_{\mathrm{vac}}\to\theta_{\mathrm{vac}}+2\pi$, is a symmetry; it is the generator that *Electric–Magnetic Duality and the Modular Group in Biquaternionic Form* identified as the one requiring the integral topological charge. The periodicity is therefore not a property of the algebra but of the sum over the algebra's instanton sectors: it comes from $Ϙ\in\mathbb Z$, which comes from $\pi_3(SU(2))=\mathbb Z$ and hence from the Hopf total space.
 
 The small-$\theta_{\mathrm{vac}}$ dependence of the vacuum energy is the same as in the semiclassical article,
 
 $$
-\mathcal E(\theta)=\mathcal E_0-2K\cos\theta\,\exp(-8\pi^2/g^2)+\cdots ,
+\mathcal E(\theta_{\mathrm{vac}})=\mathcal E_0-2K\cos\theta_{\mathrm{vac}}\,\exp(-8\pi^2/g^2)+\cdots ,
 $$
 
-so the vacuum is CP-conserving at $\theta=0$ and $\theta=\pi$, and CP-violating elsewhere. The special value $\theta=\pi$ is the boundary between the two, and it is a genuine CP-conserving point because $\exp(iϘ\pi)=(-1)^Ϙ$ is real.
+so the vacuum is CP-conserving at $\theta_{\mathrm{vac}}=0$ and $\theta_{\mathrm{vac}}=\pi$, and CP-violating elsewhere. The special value $\theta_{\mathrm{vac}}=\pi$ is the boundary between the two, and it is a genuine CP-conserving point because $\exp(iϘ\pi)=(-1)^Ϙ$ is real.
 
 ## Strong CP and the Value of Theta
 
 The strong CP problem is the following. The theta term of quantum chromodynamics is not forbidden by any symmetry of the Standard Model, so its coefficient is expected to be of order unity; but the theta term violates CP, and CP violation in the strong sector is bounded by the electric dipole moment of the neutron. The physical, renormalisation-invariant parameter is
 
 $$
-\boxed{\;\bar\theta=\theta+\arg\det M_q\;},
+\boxed{\;\bar\theta=\theta_{\mathrm{vac}}+\arg\det M_q\;},
 $$
 
 the sum of the gauge theta angle and the phase of the quark mass matrix (a chiral rotation of the quark fields shifts both, keeping $\bar\theta$ invariant), and the experimental bound on the neutron electric dipole moment requires
@@ -138,48 +138,48 @@ $$
 
 The problem is not that $\bar\theta$ is nonzero but that it is unnaturally small: the framework, like the Standard Model without additional structure, contains no reason for it to vanish. The standard dynamical solution is the Peccei–Quinn mechanism, in which $\bar\theta$ is promoted to a field whose potential is minimised at zero; the pseudo-Goldstone boson of that mechanism is the axion, which belongs to the spin-zero programme of the corpus and is not developed here.
 
-**What the framework does and does not say.** The framework supplies the theta term's density, its parity-odd character as the invariant $I_2$, its periodicity and its role in the vacuum. It does not supply the value of $\theta$, because $\theta$ is not an element of the algebra: it is a coefficient in the action, and the algebra is a complexified classical structure with no action principle of its own. The strong CP problem is therefore a question the framework *poses* in its own language — why is the coefficient of the parity-odd invariant $I_2$ so small? — without answering it. Any answer must come from the dynamics, and in this corpus the dynamics of a scalar that could relax the coefficient is the axion programme, which is outside this subcategory. The honest statement is that the algebra's contribution is the identification of the CP-odd term with a known invariant, and that the resolution of strong CP is imported from beyond the algebra.
+**What the framework does and does not say.** The framework supplies the theta term's density, its parity-odd character as the invariant $I_2$, its periodicity and its role in the vacuum. It does not supply the value of $\theta_{\mathrm{vac}}$, because $\theta_{\mathrm{vac}}$ is not an element of the algebra: it is a coefficient in the action, and the algebra is a complexified classical structure with no action principle of its own. The strong CP problem is therefore a question the framework *poses* in its own language — why is the coefficient of the parity-odd invariant $I_2$ so small? — without answering it. Any answer must come from the dynamics, and in this corpus the dynamics of a scalar that could relax the coefficient is the axion programme, which is outside this subcategory. The honest statement is that the algebra's contribution is the identification of the CP-odd term with a known invariant, and that the resolution of strong CP is imported from beyond the algebra.
 
 ## The Chiral Rotation and the Invariance of the Physical Parameter
 
-The reason $\bar\theta$ and not $\theta$ is the physical parameter is the anomaly. The common axial rotation of the quark fields multiplies the two parts named by the subscript by opposite central phases,
+The reason $\bar\theta$ and not $\theta_{\mathrm{vac}}$ is the physical parameter is the anomaly. The common axial rotation of the quark fields multiplies the two parts named by the subscript by opposite central phases,
 
 $$
-\tilde{Ξ}_{L}\longmapsto \exp(-i\alpha)\tilde{Ξ}_{L} ,
+\tilde{Ξ}_{L}\longmapsto \exp(-i\theta_{\mathrm{axr}})\tilde{Ξ}_{L} ,
 \qquad
-\tilde{Ξ}_{R}\longmapsto \exp(+i\alpha)\tilde{Ξ}_{R} .
+\tilde{Ξ}_{R}\longmapsto \exp(+i\theta_{\mathrm{axr}})\tilde{Ξ}_{R} .
 $$
 
-Both multipliers have modulus one, so the rotation is periodic in $\alpha$: it is a rotation and not a boost. The two lines are one operation read on the two values; the field is one element, and the rotation multiplies each of its parts by its own phase.
+Both multipliers have modulus one, so the rotation is periodic in $\theta_{\mathrm{axr}}$: it is a rotation and not a boost. The two lines are one operation read on the two values; the field is one element, and the rotation multiplies each of its parts by its own phase.
 
 **The mass, and the phase it takes.** The mass is the term that relates the two parts: in the chiral pair it is the only term that joins them, and it is a central coefficient, so it keeps the value of each part and moves no value across. The two parts are rotated in opposite senses, so a term that joins them takes twice the phase. With $M_q$ the quark mass matrix — a flavour-space matrix, imported from the Standard Model and not a display of the algebra — the rotation gives
 
 $$
-M_q\;\longmapsto\;\exp(2i\alpha)M_q ,
+M_q\;\longmapsto\;\exp(2i\theta_{\mathrm{axr}})M_q ,
 \qquad
-\arg\det M_q\;\longmapsto\;\arg\det M_q+2N_f\alpha ,
+\arg\det M_q\;\longmapsto\;\arg\det M_q+2N_f\theta_{\mathrm{axr}} ,
 $$
 
 for $N_f$ flavours. The classical action is invariant under this rotation for massless quarks, but the fermionic measure is not: the Jacobian of the rotation is non-trivial, and the anomaly shifts the theta angle by the compensating amount,
 
 $$
-\theta\;\longmapsto\;\theta-2N_f\alpha .
+\theta_{\mathrm{vac}}\;\longmapsto\;\theta_{\mathrm{vac}}-2N_f\theta_{\mathrm{axr}} .
 $$
 
 The two shifts are opposite, and their sum is invariant:
 
 $$
-\bar\theta=\theta+\arg\det M_q
-\;\longmapsto\;\bigl(\theta-2N_f\alpha\bigr)+\bigl(\arg\det M_q+2N_f\alpha\bigr)=\bar\theta .
+\bar\theta=\theta_{\mathrm{vac}}+\arg\det M_q
+\;\longmapsto\;\bigl(\theta_{\mathrm{vac}}-2N_f\theta_{\mathrm{axr}}\bigr)+\bigl(\arg\det M_q+2N_f\theta_{\mathrm{axr}}\bigr)=\bar\theta .
 $$
 
-This is why $\bar\theta$ is the renormalisation-invariant physical parameter, and why a theory with $\theta=0$ and complex masses is equivalent to one with $\theta\ne0$ and real masses: the rotation moves the phase between the two terms without changing the physics. The invariance is the standard anomaly argument; the measure's non-invariance belongs to the spin-half programme of the corpus, where the anomalous divergence and the Jacobian are computed, and it is not re-derived here.
+This is why $\bar\theta$ is the renormalisation-invariant physical parameter, and why a theory with $\theta_{\mathrm{vac}}=0$ and complex masses is equivalent to one with $\theta_{\mathrm{vac}}\ne0$ and real masses: the rotation moves the phase between the two terms without changing the physics. The invariance is the standard anomaly argument; the measure's non-invariance belongs to the spin-half programme of the corpus, where the anomalous divergence and the Jacobian are computed, and it is not re-derived here.
 
-**What the framework contributes.** The axial rotation is the pair of opposite phases on the two values, and the mass is the term that couples them. The algebra makes the structure visible — two values, one coupling, one phase difference — and it costs no further object: no grading, no second unit and no side enters the description. A central phase is the contrast that matters. It multiplies the two values alike, so it cannot move one against the other, and only a rotation in opposite senses can move the mass phase against the theta phase. The shift of $\theta$ is therefore a rotation of the two values against each other, and the invariance of $\bar\theta$ is the statement that the physics depends only on the product of the theta phase and the mass-matrix phase. The anomaly that makes the rotation non-trivial for the measure is imported from the quantum theory.
+**What the framework contributes.** The axial rotation is the pair of opposite phases on the two values, and the mass is the term that couples them. The algebra makes the structure visible — two values, one coupling, one phase difference — and it costs no further object: no grading, no second unit and no side enters the description. A central phase is the contrast that matters. It multiplies the two values alike, so it cannot move one against the other, and only a rotation in opposite senses can move the mass phase against the theta phase. The shift of $\theta_{\mathrm{vac}}$ is therefore a rotation of the two values against each other, and the invariance of $\bar\theta$ is the statement that the physics depends only on the product of the theta phase and the mass-matrix phase. The anomaly that makes the rotation non-trivial for the measure is imported from the quantum theory.
 
 ## Summary
 
-The theta term $S_\theta=\frac{\theta}{32\pi^2}\int \sum_{\mu,\nu}F_{\mu\nu}F_{\mathrm{dual},\mu\nu}$ is the integral of a total derivative, hence depends only on the instanton number, and in the abelian sector its density is proportional to the framework's parity-odd invariant $I_2=\vec E\cdot\vec B$:
+The theta term $S_\theta=\frac{\theta_{\mathrm{vac}}}{32\pi^2}\int \sum_{\mu,\nu}F_{\mu\nu}F_{\mathrm{dual},\mu\nu}$ is the integral of a total derivative, hence depends only on the instanton number, and in the abelian sector its density is proportional to the framework's parity-odd invariant $I_2=\vec E\cdot\vec B$:
 
 $$
 \sum_{\mu,\nu}F_{\mu\nu}F_{\mathrm{dual},\mu\nu}=\frac{4i}{c}\,I_2 \quad(\text{Lorentzian}),
@@ -189,9 +189,9 @@ $$
 I_2=-\tfrac12\,\mathrm{Im}\,\langle\tilde F\rangle_{\natural}\ \ (\text{vacuum}).
 $$
 
-Because it is the integral of a parity-odd density, the theta term violates $P$ and $T$ unless $\theta=0$ or $\pi$. The theta dependence enters through the instanton sum $Z(\theta)=\sum_Ϙ\exp(iϘ\theta)Z_Ϙ$ and is periodic with period $2\pi$, verified to machine precision; the periodicity is the $T$ generator of the modular group and originates in the integrality of the topological charge.
+Because it is the integral of a parity-odd density, the theta term violates $P$ and $T$ unless $\theta_{\mathrm{vac}}=0$ or $\pi$. The theta dependence enters through the instanton sum $Z(\theta_{\mathrm{vac}})=\sum_Ϙ\exp(iϘ\theta_{\mathrm{vac}})Z_Ϙ$ and is periodic with period $2\pi$, verified to machine precision; the periodicity is the $T$ generator of the modular group and originates in the integrality of the topological charge.
 
-The physical theta parameter is $\bar\theta=\theta+\arg\det M_q$, and the neutron electric dipole moment bounds it by $|\bar\theta|\lesssim10^{-10}$, which is the strong CP problem: the framework, like the Standard Model without additional structure, gives no reason for the near-vanishing. The framework supplies the CP-odd density as the invariant $I_2$, read as the imaginary component of the norm of the field element, and supplies the periodicity and the vacuum structure, but it does not supply the value of $\theta$, which is a coefficient in the action and not an element of the algebra; the resolution is imported.
+The physical theta parameter is $\bar\theta=\theta_{\mathrm{vac}}+\arg\det M_q$, and the neutron electric dipole moment bounds it by $|\bar\theta|\lesssim10^{-10}$, which is the strong CP problem: the framework, like the Standard Model without additional structure, gives no reason for the near-vanishing. The framework supplies the CP-odd density as the invariant $I_2$, read as the imaginary component of the norm of the field element, and supplies the periodicity and the vacuum structure, but it does not supply the value of $\theta_{\mathrm{vac}}$, which is a coefficient in the action and not an element of the algebra; the resolution is imported.
 
 The field content is carried by the gradient and by the chirality subscript: the gradient acts from the left, the mass is the one term that relates the two parts, and the massive equation is the chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$, since $\tilde\nabla^2$ is not scalar.
 
@@ -203,13 +203,13 @@ The field content is carried by the gradient and by the chirality subscript: the
 | $\tilde F$ | Field strength, the one fixed field of *Algebra and Element Conventions*; an element, not the tensor $F_{\mu\nu}$ |
 | $I_1=\vec E^2-c^2\vec B^2$ | First invariant (parity-even, scalar) |
 | $I_2=\vec E\cdot\vec B$ | Second invariant (parity-odd); the theta density; in vacuum $I_2=-\tfrac12\mathrm{Im}\langle\tilde F\rangle_{\natural}$ |
-| $\theta$ | Theta angle; coefficient of the topological term |
-| $S_\theta=\frac{\theta}{32\pi^2}\int\sum_{\mu,\nu}F_{\mu\nu}F_{\mathrm{dual},\mu\nu}$ | Theta term of the action |
+| $\theta_{\mathrm{vac}}$ | Theta angle; coefficient of the topological term |
+| $S_\theta=\frac{\theta_{\mathrm{vac}}}{32\pi^2}\int\sum_{\mu,\nu}F_{\mu\nu}F_{\mathrm{dual},\mu\nu}$ | Theta term of the action |
 | $F_{\mathrm{dual},\mu\nu}=\frac12\sum_{\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}F_{\rho\sigma}$ | Hodge dual field strength |
 | $Ϙ=\frac{1}{8\pi^2}\int\mathrm{Tr}(F\wedge F)$ | Topological charge, $Ϙ\in\mathbb Z$ |
 | $J_{\mathrm{CS},\mu}$ | Chern–Simons current, $\sum_{\mu,\nu}F_{\mu\nu}F_{\mathrm{dual},\mu\nu}=\langle\tilde\nabla_\Phi,\tilde J_{\Phi,\mathrm{CS}}\rangle_{\natural}$ |
-| $Z(\theta)=\sum_Ϙ \exp(iϘ\theta)Z_Ϙ$ | Theta-dependent partition function, period $2\pi$ |
-| $\bar\theta=\theta+\arg\det M_q$ | Physical CP-violating parameter |
+| $Z(\theta_{\mathrm{vac}})=\sum_Ϙ \exp(iϘ\theta_{\mathrm{vac}})Z_Ϙ$ | Theta-dependent partition function, period $2\pi$ |
+| $\bar\theta=\theta_{\mathrm{vac}}+\arg\det M_q$ | Physical CP-violating parameter |
 | $M_q$ | Quark mass matrix in flavour space (imported); not a display of the algebra |
 | $\tilde\nabla_\Phi$ | The biquaternionic gradient of *Operator and Calculus Conventions*; an element with derivative coefficients, acting from the left |
 | $(\tilde\nabla_\Phi)^{\natural}$ | Its quaternion conjugate |

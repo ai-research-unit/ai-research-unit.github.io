@@ -405,15 +405,15 @@ The squared modulus is the probability of the transition, and the argument is th
 Under a central phase on each spinor,
 
 $$
-\tilde{Ξ}_{1}\mapsto e^{i\alpha_1}\tilde{Ξ}_{1},
+\tilde{Ξ}_{1}\mapsto e^{i\theta_{\mathrm{pha},1}}\tilde{Ξ}_{1},
 \qquad
-\tilde{Ξ}_{2}\mapsto e^{i\alpha_2}\tilde{Ξ}_{2},
+\tilde{Ξ}_{2}\mapsto e^{i\theta_{\mathrm{pha},2}}\tilde{Ξ}_{2},
 $$
 
 the amplitude transforms as
 
 $$
-A\mapsto e^{i(\alpha_1-\alpha_2)}A .
+A\mapsto e^{i(\theta_{\mathrm{pha},1}-\theta_{\mathrm{pha},2})}A .
 $$
 
 The modulus is invariant and the argument shifts by the relative phase. The phase of a pair is therefore gauge dependent: it depends on the two representatives, and only the modulus is a function of the two rays.
@@ -443,7 +443,7 @@ $$
 \langle\tilde{Ξ}_{n},\tilde{Ξ}_{1}\rangle_{*}\Bigr).
 $$
 
-Under a change of representative the factors shift by the telescoping phases $\alpha_{\eta}-\alpha_{k+1}$, and the product is unchanged. The loop phase is gauge invariant, and it is the Pancharatnam phase of the circuit. The connection is the imaginary part of the overlap with the derivative, its curvature is minus half the area form of the sphere, and the holonomy is minus one half of the enclosed solid angle:
+Under a change of representative the factors shift by the telescoping phases $\theta_{\mathrm{pha},\eta}-\theta_{\mathrm{pha},k+1}$, and the product is unchanged. The loop phase is gauge invariant, and it is the Pancharatnam phase of the circuit. The connection is the imaginary part of the overlap with the derivative, its curvature is minus half the area form of the sphere, and the holonomy is minus one half of the enclosed solid angle:
 
 $$
 \Gamma=-\tfrac{1}{2}\Omega .

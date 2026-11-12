@@ -22,7 +22,7 @@ The canonical commutation relation is not a statement about quantumness. It is a
 
 **The relation.** For self-adjoint $Q$ and $P$ on a Hilbert space $\mathcal{H}$, the relation and its bounded form are
 $$
-[Q,P]=i\,\hbar\,I,\qquad  \exp(i\alpha Q)\exp(i\beta P)=\exp(-i\,\hbar\,\alpha\,\beta)\exp(i\beta P)\exp(i\alpha Q).
+[Q,P]=i\,\hbar\,I,\qquad  \exp(i\theta_{\mathrm{wyl},Q} Q)\exp(i\theta_{\mathrm{wyl},P} P)=\exp(-i\,\hbar\,\theta_{\mathrm{wyl},Q}\,\theta_{\mathrm{wyl},P})\exp(i\theta_{\mathrm{wyl},P} P)\exp(i\theta_{\mathrm{wyl},Q} Q).
 $$
 The second is the **Weyl form**, and it is not a rewriting of the first. The passage from one to the other is exponentiation, which for operators needs the Baker–Campbell–Hausdorff formula, and that formula needs bounded arguments. The relation forces unbounded ones, as shown below, so the exponentiated form is reached only under extra domain assumptions, and pairs exist that satisfy the first relation and not the second. The Stone–von Neumann theorem is therefore a theorem about the **Weyl** form: uniqueness is stated where the condition is well posed, and it is not a statement about the commutator form at all.
 
@@ -143,7 +143,7 @@ The commutator is an **operator**, not a scalar: this is the Weyl (clock-and-shi
 $$
 X^jZ^k=\omega^{jk}Z^kX^j,\qquad \omega=\exp(2\pi i/N),
 $$
-which is the Weyl law with the parameters in $\mathbb{Z}/N$: the exponent $2\pi jk/N$ replaces the scalar phase $-\hbar\,\alpha\,\beta$ that the real parameters $\alpha$ and $\beta$ supply. The distinction is not pedantry, because the real Weyl form already differs from the commutator form, as the second section showed; the discrete form differs again. The discrete relation is not the real one sampled on a lattice: the parameter group is finite, the phase is a root of unity rather than a real number, and the resulting structure is the finite Heisenberg group, whose representation theory is a different subject from the Stone–von Neumann classification of the real case.
+which is the Weyl law with the parameters in $\mathbb{Z}/N$: the exponent $2\pi jk/N$ replaces the scalar phase $-\hbar\,\theta_{\mathrm{wyl},Q}\,\theta_{\mathrm{wyl},P}$ that the real parameters $\theta_{\mathrm{wyl},Q}$ and $\theta_{\mathrm{wyl},P}$ supply. The distinction is not pedantry, because the real Weyl form already differs from the commutator form, as the second section showed; the discrete form differs again. The discrete relation is not the real one sampled on a lattice: the parameter group is finite, the phase is a root of unity rather than a real number, and the resulting structure is the finite Heisenberg group, whose representation theory is a different subject from the Stone–von Neumann classification of the real case.
 
 **What it is not.** The finite pair does not satisfy the canonical relation and does not approach it in norm: the spectrum of the clock lies on the unit circle and stays of modulus one for every $N$, so no strong limit to an unbounded position exists without a rescaling that the algebra does not supply. The passage from the pair to the relation is a deformation, not a limit in the topology of the algebra. The finite pair is therefore not evidence that the framework nearly satisfies the relation; it is a **different relation**, available on a finite carrier, with a phase in place of the scalar.
 
@@ -242,7 +242,7 @@ The biquaternion framework and the canonical commutation relation are **independ
 | $[Q,P]=i\,\hbar\,I$ | Canonical commutation relation |
 | $\pi_\eta=p_\eta-ϙA_\eta$ | Mechanical momentum |
 | $[\pi_j,\pi_\eta]=i\,\hbar\,ϙ\varepsilon_{j\eta l}B_l$ | Field-strength commutator; a central multiple of $e_t$, hence an element of $\mathbb{B}$ |
-| $\exp(i\alpha Q)\exp(i\beta P)=\exp(-i\,\hbar\,\alpha\,\beta)\exp(i\beta P)\exp(i\alpha Q)$ | Weyl form of the relation |
+| $\exp(i\theta_{\mathrm{wyl},Q} Q)\exp(i\theta_{\mathrm{wyl},P} P)=\exp(-i\,\hbar\,\theta_{\mathrm{wyl},Q}\,\theta_{\mathrm{wyl},P})\exp(i\theta_{\mathrm{wyl},P} P)\exp(i\theta_{\mathrm{wyl},Q} Q)$ | Weyl form of the relation |
 | $[Q,P^n]=i\,\hbar\,nP^{n-1}$ | the identity behind the boundedness obstruction; the case $m=1$ of McCoy's formula |
 | $\lVert Q\rVert$, $\lVert P\rVert$ | operator norms |
 | $\delta A=A-\langle A\rangle$, $(\delta A)^2=\langle\delta A^2\rangle$ | centred observable and its variance in a state |

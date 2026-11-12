@@ -112,7 +112,7 @@ $$
 and a pure spatial rotation is the real quaternion
 
 $$
-\tilde u_{\mathrm r}=\cos\frac{\theta}{2}+\sin\frac{\theta}{2}\,\vec u_{\mathrm r}.
+\tilde u_{\mathrm r}=\cos\frac{\theta_{\mathrm{axr}}}{2}+\sin\frac{\theta_{\mathrm{axr}}}{2}\,\vec u_{\mathrm r}.
 $$
 
 The positivity of $\tilde U_{\Psi,\mathrm b}$ removes the sign ambiguity: $\tilde U_{\Psi,\mathrm b}$ and $-\tilde U_{\Psi,\mathrm b}$ are both Hermitian of unit norm, and only the positive one is the boost factor. The letter $\tilde U_{\mathrm{lor}}$ names the general Lorentz rotor, $\tilde U_{\Psi,\mathrm b}$ the boost factor and $\tilde u_{\mathrm r}$ the rotation factor. The sector is a **representation space** of the Lorentz group, and the rotor acts on it from outside: a boost rotor lies in $\mathbb{B}_{\Psi}$, a rotation rotor in $\mathbb{B}_{H}$, and only a general rotor uses the whole algebra.

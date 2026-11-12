@@ -14,7 +14,7 @@ whose integrand is built from the biquaternion norm of the displacement biquater
 
 **Two kinds of symmetry.** A relativistic action has
 
-- **internal** symmetries, which do not move the spacetime point — here the central phase $\tilde{Ξ}\mapsto \exp(i\alpha)\tilde{Ξ}$ of a complex biquaternion field, the symmetry whose localization is the gauge principle; and
+- **internal** symmetries, which do not move the spacetime point — here the central phase $\tilde{Ξ}\mapsto \exp(i\theta_{\mathrm{cen}})\tilde{Ξ}$ of a complex biquaternion field, the symmetry whose localization is the gauge principle; and
 - **spacetime** symmetries, the Poincaré transformations — four translations $\tilde R_\Phi\mapsto\tilde R_\Phi+\tilde{R}_{\Phi,0}$ and six Lorentz transformations $\tilde R_\Phi\mapsto\tilde U\tilde R_\Phi\tilde U^{*}$. Translation invariance gives the conserved four-momentum; Lorentz invariance gives the conserved angular momentum.
 
 The internal case produces a current biquaternion $\tilde{J}_{\Phi}\in\mathbb{B}_{\Phi}$ with $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi})=0$ on shell, the framework form of $\sum_\mu\partial J_\mu/\partial R_\mu = 0$. The spacetime case produces an energy–momentum current and an angular-momentum bivector.
@@ -104,20 +104,20 @@ For a spacetime symmetry, the same construction applied to a transformation that
 Multiplication by a central phase,
 
 $$
-\tilde{Ξ}\ \longmapsto\ \exp(i\alpha)\tilde{Ξ},
-\qquad \alpha\in\mathbb{R},
+\tilde{Ξ}\ \longmapsto\ \exp(i\theta_{\mathrm{cen}})\tilde{Ξ},
+\qquad \theta_{\mathrm{cen}}\in\mathbb{R},
 $$
 
-leaves both terms of $\mathcal{L}$ unchanged, because $\exp(i\alpha)$ is central and $\tilde{Ξ}^{*}\mapsto \exp(-i\alpha)\tilde{Ξ}^{*}$: the two phase factors in $((\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}^{*})(\tilde\nabla_\Phi\tilde{Ξ})$ cancel, and $\tilde{Ξ}^{*}\tilde{Ξ}$ is invariant. The symmetry therefore holds for the **massive** field as well as the massless one, because the mass term depends on $\tilde{Ξ}$ only through the invariant $\tilde{Ξ}^{*}\tilde{Ξ}$ — a fact used again below.
+leaves both terms of $\mathcal{L}$ unchanged, because $\exp(i\theta_{\mathrm{cen}})$ is central and $\tilde{Ξ}^{*}\mapsto \exp(-i\theta_{\mathrm{cen}})\tilde{Ξ}^{*}$: the two phase factors in $((\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}^{*})(\tilde\nabla_\Phi\tilde{Ξ})$ cancel, and $\tilde{Ξ}^{*}\tilde{Ξ}$ is invariant. The symmetry therefore holds for the **massive** field as well as the massless one, because the mass term depends on $\tilde{Ξ}$ only through the invariant $\tilde{Ξ}^{*}\tilde{Ξ}$ — a fact used again below.
 
-For the infinitesimal variation $\delta\tilde{Ξ} = i\alpha\tilde{Ξ}$, $\delta\tilde{Ξ}^{*} = -i\alpha\tilde{Ξ}^{*}$, Noether's construction gives
+For the infinitesimal variation $\delta\tilde{Ξ} = i\theta_{\mathrm{cen}}\tilde{Ξ}$, $\delta\tilde{Ξ}^{*} = -i\theta_{\mathrm{cen}}\tilde{Ξ}^{*}$, Noether's construction gives
 
 $$
 J_\nu = \frac{\partial\mathcal{L}}{\partial(\partial\xi_{\mathrm{scl}}/\partial R_\nu)}\,\delta\xi_{\mathrm{scl}} + \frac{\partial\mathcal{L}}{\partial(\partial{\xi_{\mathrm{scl}}}^{*}/\partial R_\nu)}\,\delta{\xi_{\mathrm{scl}}}^{*}
-= i\alpha\left(\frac{\partial{\xi_{\mathrm{scl}}}^{*}}{\partial R_\nu}\,\xi_{\mathrm{scl}} - \frac{\partial\xi_{\mathrm{scl}}}{\partial R_\nu}\,{\xi_{\mathrm{scl}}}^{*}\right),
+= i\theta_{\mathrm{cen}}\left(\frac{\partial{\xi_{\mathrm{scl}}}^{*}}{\partial R_\nu}\,\xi_{\mathrm{scl}} - \frac{\partial\xi_{\mathrm{scl}}}{\partial R_\nu}\,{\xi_{\mathrm{scl}}}^{*}\right),
 $$
 
-the second equality from $\partial\mathcal{L}/\partial(\partial\xi_{\mathrm{scl}}/\partial R_\nu) = +\partial{\xi_{\mathrm{scl}}}^{*}/\partial R_\nu$ and its conjugate, which is what the Lagrangian above supplies. Setting $\alpha = 1$ and packaging the four components,
+the second equality from $\partial\mathcal{L}/\partial(\partial\xi_{\mathrm{scl}}/\partial R_\nu) = +\partial{\xi_{\mathrm{scl}}}^{*}/\partial R_\nu$ and its conjugate, which is what the Lagrangian above supplies. Setting $\theta_{\mathrm{cen}} = 1$ and packaging the four components,
 
 $$
 \boxed{\ \tilde{J}_{\Phi} = i\left[(\tilde\nabla_\Phi\tilde{Ξ}^{*})\tilde{Ξ} - \tilde{Ξ}^{*}(\tilde\nabla_\Phi\tilde{Ξ})\right] = \sum_\nu J_\nu e_\nu\ }
@@ -238,12 +238,12 @@ $$
 using $\vec e_z\vec e_x=\vec e_y$, and this vanishes only at $m=0$. The same statement without the units on show: the axial rotation multiplies each part by a phase opposite to the other's, and on the algebra it is a right multiplication,
 
 $$
-\tilde{Ξ}\ \longmapsto\ \tilde{Ξ}\,(\cos\alpha+\sin\alpha\,\vec e_z),
+\tilde{Ξ}\ \longmapsto\ \tilde{Ξ}\,(\cos\theta_{\mathrm{axr}}+\sin\theta_{\mathrm{axr}}\,\vec e_z),
 $$
 
-which multiplies $\tilde{Ξ}_{L}$ by $\exp(-i\alpha)$ and $\tilde{Ξ}_{R}$ by $\exp(+i\alpha)$, because right multiplication by $\vec e_z$ acts on the two parts as $-i$ and $+i$. That is why the axial current carries the unit $\vec e_z$ and not a separate object.
+which multiplies $\tilde{Ξ}_{L}$ by $\exp(-i\theta_{\mathrm{axr}})$ and $\tilde{Ξ}_{R}$ by $\exp(+i\theta_{\mathrm{axr}})$, because right multiplication by $\vec e_z$ acts on the two parts as $-i$ and $+i$. That is why the axial current carries the unit $\vec e_z$ and not a separate object.
 
-**What the mass breaks, and what it does not.** What the mass term breaks is the **axial** rotation, not the phase. The mass term is $-mi\bar{\tilde{Ξ}}\vec e_z$: one right factor $\vec e_z$ between the field and its conjugate. It is invariant under the central phase, which multiplies the field by a central scalar and leaves every unit alone, so both sides of the equation take the same phase and it is carried to itself; and it is not invariant under the axial rotation, which replaces that right factor by $\cos\alpha\,\vec e_z-\sin\alpha\,e_t$, since $\vec e_z\vec e_z=-e_t$. In the biquaternion reading the mass couples the two parts off the diagonal, so it breaks exactly the rotation that moves them against each other, and not the central $\mathrm{U}(1)$ that the algebra canonically carries. The previously recorded obstruction belonged to the retired antilinear single-field equation; the gauge principle article's corresponding section is revised on the same grounds.
+**What the mass breaks, and what it does not.** What the mass term breaks is the **axial** rotation, not the phase. The mass term is $-mi\bar{\tilde{Ξ}}\vec e_z$: one right factor $\vec e_z$ between the field and its conjugate. It is invariant under the central phase, which multiplies the field by a central scalar and leaves every unit alone, so both sides of the equation take the same phase and it is carried to itself; and it is not invariant under the axial rotation, which replaces that right factor by $\cos\theta_{\mathrm{axr}}\,\vec e_z-\sin\theta_{\mathrm{axr}}\,e_t$, since $\vec e_z\vec e_z=-e_t$. In the biquaternion reading the mass couples the two parts off the diagonal, so it breaks exactly the rotation that moves them against each other, and not the central $\mathrm{U}(1)$ that the algebra canonically carries. The previously recorded obstruction belonged to the retired antilinear single-field equation; the gauge principle article's corresponding section is revised on the same grounds.
 
 ## Translation Invariance and the Conserved Four-Momentum
 
@@ -428,7 +428,7 @@ expresses the symmetry of the energy–momentum tensor together with the conserv
 
 3. **Scale and conformal symmetry.** The massless Klein–Gordon and Maxwell actions have more symmetries than the Poincaré group. Do they have biquaternion Noether currents, and does the tracelessness of the electromagnetic energy–momentum tensor — established in the energy–momentum exercise — express one of them?
 
-4. **The axial current and the two parts.** With the linear mass term the vector phase current is conserved for the massive field, so the open question is the axial one. The divergence identity $\sum_\mu\partial j_{5\mu}/\partial R_\mu = 2im\,\mathrm{Sc}(\tilde{Ξ}^*\tilde{Ξ}\vec e_y)$ holds for the chiral pair, and its biquaternion reading is that the mass couples the two parts off the diagonal. Is there a Noether derivation that starts from the axial rotation $\tilde{Ξ}\mapsto\tilde{Ξ}(\cos\alpha+\sin\alpha\vec e_z)$ rather than from the pair — and does the central-element structure supply anything analogous to the would-be Goldstone statement?
+4. **The axial current and the two parts.** With the linear mass term the vector phase current is conserved for the massive field, so the open question is the axial one. The divergence identity $\sum_\mu\partial j_{5\mu}/\partial R_\mu = 2im\,\mathrm{Sc}(\tilde{Ξ}^*\tilde{Ξ}\vec e_y)$ holds for the chiral pair, and its biquaternion reading is that the mass couples the two parts off the diagonal. Is there a Noether derivation that starts from the axial rotation $\tilde{Ξ}\mapsto\tilde{Ξ}(\cos\theta_{\mathrm{axr}}+\sin\theta_{\mathrm{axr}}\vec e_z)$ rather than from the pair — and does the central-element structure supply anything analogous to the would-be Goldstone statement?
 
 5. **The current of the complexified theory.** In the complexified biquaternion theory of the Maxwell article, the source and potential are fully complex. Does the central-phase current acquire components outside $\mathbb{B}_{\Phi}$, and are they conserved?
 
@@ -510,7 +510,7 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 
 ## Summary
 
-Noether's theorem in biquaternionic form joins the two ends that *Relativistic Mechanics in Biquaternionic Form* states separately, the free-particle action and the conserved four-current, by deriving the second from the first. The theorem has two forms. For an **internal** symmetry, that of the central phase $\tilde{Ξ}\mapsto \exp(i\alpha)\tilde{Ξ}$ of the complex biquaternion scalar field, the derived current is
+Noether's theorem in biquaternionic form joins the two ends that *Relativistic Mechanics in Biquaternionic Form* states separately, the free-particle action and the conserved four-current, by deriving the second from the first. The theorem has two forms. For an **internal** symmetry, that of the central phase $\tilde{Ξ}\mapsto \exp(i\theta_{\mathrm{cen}})\tilde{Ξ}$ of the complex biquaternion scalar field, the derived current is
 
 $$
 \tilde{J}_{\Phi} = i\left[(\tilde\nabla_\Phi\tilde{Ξ}^{*})\tilde{Ξ} - \tilde{Ξ}^{*}(\tilde\nabla_\Phi\tilde{Ξ})\right] = \sum_\nu J_\nu e_\nu,

@@ -501,7 +501,7 @@ The table compares the three relation articles; in the split-complex column, $\s
 |---|---|---|---|
 | Eigenvalues | $\lambda_\pm=q\pm q'$ | $\lambda_\pm=Q_{\blacktriangle}\pm Q_{\blacktriangledown}$ | $\lambda_\pm=Q_t\pm i\bigl(Q_x^2+Q_y^2+Q_z^2\bigr)^{1/2}$ |
 | Eigenprojections | fixed $\Pi_\pm$ | fixed $\Pi_\pm$ | variable $\tilde\Pi_\pm$ |
-| Polar parameters | $r,\theta_{\mathrm{hpa}},\epsilon$ | $\rho,\theta_{\mathrm{hpa}},\theta_{\mathrm{pha}},\theta_{\mathrm{phb}}$ | $r,\theta_{\mathrm{pha}},\psi,\theta,\vec u_{\mathrm b},\vec u_{\mathrm r}$ |
+| Polar parameters | $r,\theta_{\mathrm{hpa}},\epsilon$ | $\rho,\theta_{\mathrm{hpa}},\theta_{\mathrm{pha}},\theta_{\mathrm{phb}}$ | $r,\theta_{\mathrm{pha}},\psi,\theta_{\mathrm{axr}},\vec u_{\mathrm b},\vec u_{\mathrm r}$ |
 | Eigenvalues from polar data | $\sigma_\pm r e^{\pm\theta_{\mathrm{hpa}}}$ | $\rho e^{i\theta_{\mathrm{pha}}}e^{\pm(\theta_{\mathrm{hpa}}+i\theta_{\mathrm{phb}})}$ | $r e^{i\theta_{\mathrm{pha}}}\bigl(U_t\pm i(\vec U\cdot\vec U)^{1/2}\bigr)$ |
 | Polar factors from spectrum | $r$, $\epsilon=\sigma_+\Pi_++\sigma_-\Pi_-$, $e^{\theta_{\mathrm{hpa}} j}=e^{\theta_{\mathrm{hpa}}}\Pi_++e^{-\theta_{\mathrm{hpa}}}\Pi_-$ | $\breve r=\rho_+\Pi_++\rho_-\Pi_-$, $u=e^{i\theta_+}\Pi_++e^{i\theta_-}\Pi_-$ | $\tilde U=\dfrac{\lambda_+}{r e^{i\theta_{\mathrm{pha}}}}\tilde\Pi_++\dfrac{\lambda_-}{r e^{i\theta_{\mathrm{pha}}}}\tilde\Pi_-$, $\tilde U_{\mathrm b}=(\tilde U\tilde U^*)^{1/2}$, $\tilde u_{\mathrm r}=\tilde U_{\mathrm b}^{-1}\tilde U$ |
 | Discrete data | $\epsilon\in(\mathbb{Z}/2)^2$ | lattice $\Lambda$ in $(\theta_{\mathrm{pha}},\theta_{\mathrm{phb}})$ | none |

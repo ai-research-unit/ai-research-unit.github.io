@@ -149,7 +149,7 @@ $$
 \frac{E^{2}}{c^{2}}-\lvert\vec p\rvert^{2}=m^{2}c^{2}+2m\,Q_{\mathrm{qnt}},
 $$
 
-quoted from [The Polar Form of the Klein–Gordon Equation in Biquaternionic Form](the-polar-form-of-the-klein-gordon-equation-in-biquaternionic-form.html). **The quantum potential appears in the mass shell and not in the production**, and that placement is the content of the polar-form article's derivation: the correction is what the flow has to satisfy, not what the flow leaks.
+quoted from [The Klein–Gordon Equation in Biquaternionic Polar Variables](the-klein-gordon-equation-in-biquaternionic-polar-variables.html). **The quantum potential appears in the mass shell and not in the production**, and that placement is the content of the polar-form article's derivation: the correction is what the flow has to satisfy, not what the flow leaks.
 
 **The negative statement, made positive.** The quantum term changes which flows conserve the stress; it does not change how much entropy a given flow produces. **A fluid whose density has a gradient is a fluid whose flow must obey a modified mass shell, and once it does, its stress is conserved and its entropy is constant.** That is the whole of the framework's statement about the quantum part of the second law, and it is a statement about the constraint and not about dissipation.
 

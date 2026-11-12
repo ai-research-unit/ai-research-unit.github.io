@@ -198,7 +198,7 @@ the **Schwinger term**. The sign and the coefficient are the canonical commutato
 
 **Vertex operators.** The bosonized fermion is an exponential of the boson field, the **vertex operator**
 $$
-:\!\exp\bigl(i\beta\xi_{\mathrm{scl},L,R}\bigr)\!:,
+:\!\exp\bigl(i\theta_{\mathrm{cen}}\xi_{\mathrm{scl},L,R}\bigr)\!:,
 \qquad
 \mathsf{d}_{\mathrm{ch}}(\beta)=\frac{\beta^{2}}{8\pi},
 \qquad
@@ -206,7 +206,7 @@ $$
 $$
 where $\xi_{\mathrm{scl},L}$ and $\xi_{\mathrm{scl},R}$ are the two halves of $\xi_{\mathrm{scl}}=\xi_{\mathrm{scl},L}+\xi_{\mathrm{scl},R}$, $\mathsf{d}_{\mathrm{ch}}$ is the dimension of a vertex built on one half and $\mathcal{W}_{\mathrm{dim}}$ the dimension of a vertex built on the full field. The two differ by the factor two of the half-propagator: $\langle\xi_{\mathrm{scl},L}\xi_{\mathrm{scl},L}\rangle$ carries half of $\langle\xi_{\mathrm{scl}}\xi_{\mathrm{scl}}\rangle$, so a half-vertex of coupling $\beta$ has half the dimension of a full one. The arithmetic was verified, and one coupling supplies both values: $\beta=2\sqrt\pi$ gives $\mathsf{d}_{\mathrm{ch}}(2\sqrt\pi)=\tfrac12$, the dimension of a free fermion field, and $\mathcal{W}_{\mathrm{dim}}(2\sqrt\pi)=1$, the dimension of the mass operator $\cos(2\sqrt\pi\,\xi_{\mathrm{scl}})$, whose exponential halves are the products of the two half-vertices, one from each half, $e^{i2\sqrt\pi\xi_{\mathrm{scl},L}}e^{i2\sqrt\pi\xi_{\mathrm{scl},R}}=e^{i2\sqrt\pi\xi_{\mathrm{scl}}}$. The fermion and the perturbation that gives it a mass are therefore the same vertex at the same coupling, read on one half or on the pair; no second coupling is needed. This is the clearest form of the equivalence: the fermion is the vertex with the fermion's dimension, and the mass is the vertex with the mass's dimension.
 
-**The framework's interpretation of a vertex.** The operator $:\!\exp(i\beta\xi_{\mathrm{scl}})\!:$ is built from the **exponential of a central field**: $\xi_{\mathrm{scl}}$ is central, so the vertex operator is the exponential of a central element, and it is the only kind of local operator the bosonic side has. The fermion on the other side is an **anticommuting element** of the algebra. The equivalence therefore identifies a central exponential with an anticommuting element, and the identification is not an isomorphism of the two algebras as they stand: the boson's field commutes with itself and the fermion's anticommutes, and the anticommutation is the statistics statement, carried on the bosonic side by the cocycle of the vertex algebra, whose coefficient is the same anomaly as before. Read this way, the bosonization dictionary is a map between **a commuting object and an anticommuting one**, made an isomorphism of operator algebras by the vertex algebra's central extension. This is the algebraic content of the equivalence and it is worth stating plainly, because it shows the dictionary's non-triviality: an associative central exponential and an anticommuting element are not the same object, and only the extension makes them equivalent.
+**The framework's interpretation of a vertex.** The operator $:\!\exp(i\theta_{\mathrm{cen}}\xi_{\mathrm{scl}})\!:$ is built from the **exponential of a central field**: $\xi_{\mathrm{scl}}$ is central, so the vertex operator is the exponential of a central element, and it is the only kind of local operator the bosonic side has. The fermion on the other side is an **anticommuting element** of the algebra. The equivalence therefore identifies a central exponential with an anticommuting element, and the identification is not an isomorphism of the two algebras as they stand: the boson's field commutes with itself and the fermion's anticommutes, and the anticommutation is the statistics statement, carried on the bosonic side by the cocycle of the vertex algebra, whose coefficient is the same anomaly as before. Read this way, the bosonization dictionary is a map between **a commuting object and an anticommuting one**, made an isomorphism of operator algebras by the vertex algebra's central extension. This is the algebraic content of the equivalence and it is worth stating plainly, because it shows the dictionary's non-triviality: an associative central exponential and an anticommuting element are not the same object, and only the extension makes them equivalent.
 
 **Sugawara.** The bosonic stress tensor is the Sugawara form of the current of the previous subsection. Written with the dictionary's $j_t$ and $j_x$, the traceless symmetric combination is
 $$
@@ -373,7 +373,7 @@ and the framework's contribution is to name the two sides: the fermion is an ele
 | $\theta_{\mathrm{cen}}$ | Phase of the mass, $m=|m|e^{i\theta_{\mathrm{cen}}}$; also the $\theta_{\mathrm{vac}}$-vacuum angle |
 | $\Box$ | The d'Alembertian (*Operator and Calculus Conventions*); the boson's free equation is $\Box\xi_{\mathrm{scl}}=0$ |
 | $\beta=2\sqrt\pi$ | Sine-Gordon coupling |
-| $:\!\exp(i\beta\xi_{\mathrm{scl}})\!:$ | Vertex operator; dimension $\beta^2/4\pi$ on the full field and $\beta^2/8\pi$ on one half |
+| $:\!\exp(i\theta_{\mathrm{cen}}\xi_{\mathrm{scl}})\!:$ | Vertex operator; dimension $\theta_{\mathrm{cen}}^2/4\pi$ on the full field and $\theta_{\mathrm{cen}}^2/8\pi$ on one half |
 | $T_{\mu\nu}$ | Stress tensor of the boson |
 | $c$ | Central charge; $c=1$ for a Dirac fermion or a real boson |
 

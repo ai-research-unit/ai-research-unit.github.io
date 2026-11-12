@@ -170,13 +170,13 @@ $$
 
 has norm one and matrix $\operatorname{diag}(e^{\eta/2},e^{-\eta/2})$. The two-sided operator has eigenvalues $e^{\eta},1,1,e^{-\eta}$: the two middle eigenvalues are the transverse directions, which the boost fixes; the longitudinal pair is squared. The element stores half the rapidity, because it acts on the spinor; the congruence stores the full rapidity, because it acts on the four-vector.
 
-The rotation rotor of angle $\theta$ about $\vec e_z$,
+The rotation rotor of angle $\theta_{\mathrm{rat}}$ about $\vec e_z$,
 
 $$
-\tilde R_\theta=\cos\tfrac{\theta}{2}\,e_t+\sin\tfrac{\theta}{2}\,\vec e_z,
+\tilde R_\theta=\cos\tfrac{\theta_{\mathrm{rat}}}{2}\,e_t+\sin\tfrac{\theta_{\mathrm{rat}}}{2}\,\vec e_z,
 $$
 
-has matrix eigenvalues $e^{\pm i\theta/2}$ and two-sided operator eigenvalues $e^{\pm i\theta}$ beside two ones. At $\theta=2\pi$ the element eigenvalues are $-1$ and the operator eigenvalues are $1$: the spinor returns with a sign, the vector returns unchanged. The factor two is the double cover.
+has matrix eigenvalues $e^{\pm i\theta_{\mathrm{rat}}/2}$ and two-sided operator eigenvalues $e^{\pm i\theta_{\mathrm{rat}}}$ beside two ones. At $\theta_{\mathrm{rat}}=2\pi$ the element eigenvalues are $-1$ and the operator eigenvalues are $1$: the spinor returns with a sign, the vector returns unchanged. The factor two is the double cover.
 
 The boundary is that the reading requires a diagonalisable element matrix and a pure boost or rotation. On the cone one eigenvalue vanishes; on its trace-zero part the two collide at zero and the reading stops. For a general Lorentz element no single rapidity exists; the polar decomposition separates the boost from the rotation.
 
@@ -327,7 +327,7 @@ A $2\times2$ matrix has two scalar invariants, its determinant and its trace, an
 | --- | --- | --- | --- |
 | $\mathsf M_2(\tilde{Ϛ}_{\Psi})$ | $\tfrac14(1-r^{2})$ | $\tfrac12(1\pm r)$ | mixedness; the purity is affine in the determinant |
 | $\mathsf M_2(\tilde B_\eta)$ | $1$ | $e^{\pm\eta/2}$ | half the rapidity |
-| $\mathsf M_2(\tilde R_\theta)$ | $1$ | $e^{\pm i\theta/2}$ | half the angle |
+| $\mathsf M_2(\tilde R_\theta)$ | $1$ | $e^{\pm i\theta_{\mathrm{rat}}/2}$ | half the angle |
 | $\varsigma\varsigma^{\dagger}$ | $0$ | $1,0$ | a pure state; the fibre is the phase |
 
 The determinant is a **scale**, the eigenvalue ratio a **shape**, and the phase the one datum the map to the ray forgets. The three are independent. A state matrix has a determinant and a real eigenvalue ratio; the ratio is a population ratio and not a rapidity, because the state is Hermitian and is not a Lorentz frame element. A boost matrix has a rapidity and determinant one, because it is a unit. A unit spinor has a phase and a pure-state image of determinant zero, because the map to the ray is rank one.
@@ -384,7 +384,7 @@ The correspondence does not say that nature is complex, and it does not derive t
 | $\det\mathsf M_2(\tilde{Ϛ}_{\Psi})=\tfrac14(1-r^{2})$ | the mixedness |
 | $S_L=2\det\mathsf M_2(\tilde{Ϛ}_{\Psi})$ | the linear entropy |
 | $\tilde B_\eta$ | the boost rotor of rapidity $\eta$ |
-| $\tilde R_\theta$ | the rotation rotor of angle $\theta$ |
+| $\tilde R_\theta$ | the rotation rotor of angle $\theta_{\mathrm{rat}}$ |
 | $\varsigma$ | a unit spinor of $S\cong\mathbb C^2$ |
 | $\pi(\varsigma)=\varsigma\varsigma^{\dagger}$ | the Hopf map to the Bloch sphere |
 | $\gamma=-\tfrac12\Omega$ | the Pancharatnam phase |

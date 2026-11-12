@@ -82,7 +82,7 @@ $$
 \vec e_{\eta,b}=\tilde u\,\vec e_\eta\,\tilde u^{*},
 $$
 
-obtained by rotating the space axes by the rotor. The rotor for a rotation by angle $\theta_{\mathrm{axr}}$ about $\vec u$ is $\\tilde u=\\cos\\frac\\theta_{\\mathrm{axr}}2+\\sin\\frac\\theta_{\\mathrm{axr}}2\\vec u$, and at $\theta_{\mathrm{axr}}=2\pi$ it is $\tilde u=-e_t$: the orientation has returned but the rotor has not. This sign is the spinor sign, and it is a genuine feature of the description, not an artefact; it is what distinguishes a rotor from an orientation matrix. The body axes rotate by $+\theta_{\mathrm{axr}}$, in the sense of the standard definition $d\vec e_\eta/dr'_t=\vec\omega\times \vec e_\eta$; the logarithmic derivatives of the following section use that sign.
+obtained by rotating the space axes by the rotor. The rotor for a rotation by angle $\theta_{\mathrm{axr}}$ about $\vec u$ is $\tilde u=\cos\tfrac{\theta_{\mathrm{axr}}}{2}+\sin\tfrac{\theta_{\mathrm{axr}}}{2}\vec u$, and at $\theta_{\mathrm{axr}}=2\pi$ it is $\tilde u=-e_t$: the orientation has returned but the rotor has not. This sign is the spinor sign, and it is a genuine feature of the description, not an artefact; it is what distinguishes a rotor from an orientation matrix. The body axes rotate by $+\theta_{\mathrm{axr}}$, in the sense of the standard definition $d\vec e_\eta/dr'_t=\vec\omega\times \vec e_\eta$; the logarithmic derivatives of the following section use that sign.
 
 ### Composition and Inverses
 

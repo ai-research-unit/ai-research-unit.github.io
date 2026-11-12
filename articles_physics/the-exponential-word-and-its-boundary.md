@@ -13,19 +13,19 @@ $$
 \qquad
 \tilde B=\exp\left(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\right),
 \qquad
-\tilde u_{\mathrm r}=\exp\left(\frac{\theta}{2}\vec u_{\mathrm r}\right),
+\tilde u_{\mathrm r}=\exp\left(\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\right),
 $$
 
 Here $\theta_{\mathrm{pha}}$ is the phase of the polar form: it is the argument of the central complex scalar, a real angle taken modulo a full turn, and the exponential that carries it is $\exp(i\theta_{\mathrm{pha}})$.
 
-with $r>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd}}\ge0$, $\theta\in[0,2\pi]$, and $\vec u_{\mathrm b},\vec u_{\mathrm r}$ unit real pure quaternions, the roots of $-e_t$. The axis sphere is the set of such $\vec u$.
+with $r>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd}}\ge0$, $\theta_{\mathrm{axr}}\in[0,2\pi]$, and $\vec u_{\mathrm b},\vec u_{\mathrm r}$ unit real pure quaternions, the roots of $-e_t$. The axis sphere is the set of such $\vec u$.
 **The boost factor is not a phase, and the evaluation shows why.** With $\vec u_{\mathrm b}^2=-e_t$ the argument squares to $\bigl(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\bigr)^2=+\tfrac{\theta_{\mathrm{rpd}}^2}{4}\,e_t$, positive, so the series sums to the hyperbolic pair
 
 $$
 \tilde U_{\Psi,\mathrm b}=\cosh\frac{\theta_{\mathrm{rpd}}}{2}\,e_t+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b} .
 $$
 
-The scalar part is real and at least one, so the factor grows instead of turning; only the bivector part carries the $i$. The rotor is the opposite case: no $i$ stands in front of it, $\vec u_{\mathrm r}^2=-e_t$ makes the argument square negative, and $\tilde u_{\mathrm r}=\cos\tfrac{\theta}{2}\,e_t+\sin\tfrac{\theta}{2}\,\vec u_{\mathrm r}$ has modulus one. Reading $\exp(i\theta\vec u)$ as an imaginary quantity is the error the two signs separate.
+The scalar part is real and at least one, so the factor grows instead of turning; only the bivector part carries the $i$. The rotor is the opposite case: no $i$ stands in front of it, $\vec u_{\mathrm r}^2=-e_t$ makes the argument square negative, and $\tilde u_{\mathrm r}=\cos\tfrac{\theta_{\mathrm{axr}}}{2}\,e_t+\sin\tfrac{\theta_{\mathrm{axr}}}{2}\,\vec u_{\mathrm r}$ has modulus one. Reading $\exp(i\theta_{\mathrm{axr}}\vec u)$ as an imaginary quantity is the error the two signs separate.
  The norm is $\langle\tilde Q\rangle_{\natural}=r^2e^{2i\theta_{\mathrm{pha}}}$, and the element is a unit exactly when $r\neq0$.
 
 ## The Results It Uses
@@ -48,9 +48,9 @@ The four factors and their ranges are collected in one table.
 | 1 | $r$ | scale | — | $r>0$ | $1$ | dilation by $r^2$ |
 | 2 | $e^{i\theta_{\mathrm{pha}}}$ | central phase | $i\theta_{\mathrm{pha}}$ | $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ | $1$ | multiplication by a scalar |
 | 3 | $\tilde B=e^{i\theta_{\mathrm{rpd}}\vec u_{\mathrm b}/2}$ | boost | $i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | $\theta_{\mathrm{rpd}}\ge0$ | $3$ | congruence by $\tilde B$ |
-| 4 | $\tilde u_{\mathrm r}=e^{\theta\vec u_{\mathrm r}/2}$ | rotor | $\frac{\theta}{2}\vec u_{\mathrm r}$ | $\theta\in[0,2\pi]$ | $3$ | conjugation by $\tilde u_{\mathrm r}$ |
+| 4 | $\tilde u_{\mathrm r}=e^{\theta_{\mathrm{axr}}\vec u_{\mathrm r}/2}$ | rotor | $\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ | $\theta_{\mathrm{axr}}\in[0,2\pi]$ | $3$ | conjugation by $\tilde u_{\mathrm r}$ |
 
-The parameters count $1+1+3+3=8$, the real dimension of $\mathbb{B}$. The map from the parameter space to the units is surjective. It is not injective: the boost axis is undefined at $\theta_{\mathrm{rpd}}=0$, the rotor axis is undefined at $\theta=0$, and the phase branch identifies the two square roots of the norm. Apart from those degeneracies, the word is unique once the branch is fixed.
+The parameters count $1+1+3+3=8$, the real dimension of $\mathbb{B}$. The map from the parameter space to the units is surjective. It is not injective: the boost axis is undefined at $\theta_{\mathrm{rpd}}=0$, the rotor axis is undefined at $\theta_{\mathrm{axr}}=0$, and the phase branch identifies the two square roots of the norm. Apart from those degeneracies, the word is unique once the branch is fixed.
 
 The word is a **section of the word map**, not a section of the exponential. It cuts the fibre of the parameter-to-element map to one point, up to the axis degeneracies. It does not cut the fibre of the exponential: the four exponents sum to the formal exponent, and that sum is not a logarithm.
 
@@ -60,7 +60,7 @@ The word carries two exponential factors, and they have opposite characters.
 
 | factor | exponent | angle | family | periodic | trace of the factor |
 | --- | --- | --- | --- | --- | --- |
-| rotor $\tilde u_{\mathrm r}$ | $\frac{\theta}{2}\vec u_{\mathrm r}$ | real | $SU(2)$ | $\theta\sim\theta+4\pi$ | $2\cos\frac{\theta}{2}$ |
+| rotor $\tilde u_{\mathrm r}$ | $\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ | real | $SU(2)$ | $\theta_{\mathrm{axr}}\sim\theta_{\mathrm{axr}}+4\pi$ | $2\cos\frac{\theta_{\mathrm{axr}}}{2}$ |
 | boost $\tilde B$ | $i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | imaginary | Hermitian positive | none | $2\cosh\frac{\theta_{\mathrm{rpd}}}{2}$ |
 
 The rotor is compact: its angle is real, its exponential is periodic, and its trace oscillates between $-2$ and $2$. The boost is non-compact: its angle is imaginary, its exponential is monotone, and its trace grows. The two are the compact rotations and the non-compact boosts inside the complex group of units.
@@ -74,7 +74,7 @@ The product is a general unit, and the two regimes coexist in it. The central ph
 The formal exponent is the sum of the four exponents,
 
 $$
-\tilde Q_{\log}=\ln r+i\theta_{\mathrm{pha}}+i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}+\frac{\theta}{2}\vec u_{\mathrm r}.
+\tilde Q_{\log}=\ln r+i\theta_{\mathrm{pha}}+i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}+\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}.
 $$
 
 It is the element that the quaternion case would call the logarithm. Here it is not one:
@@ -84,7 +84,7 @@ $$
 \qquad\text{unless}\qquad
 [\vec u_{\mathrm b},\vec u_{\mathrm r}]=0
 \quad\text{or}\quad
-\theta_{\mathrm{rpd}}\theta=0\;}.
+\theta_{\mathrm{rpd}}\theta_{\mathrm{axr}}=0\;}.
 $$
 
 The defect is the Baker–Campbell–Hausdorff correction. To first order,
@@ -94,11 +94,11 @@ $$
 =\tilde H_\Psi+\tilde\Theta+\frac12[\tilde H_\Psi,\tilde\Theta]+\cdots,
 $$
 
-and for $\tilde H_\Psi=i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ and $\tilde\Theta=\frac{\theta}{2}\vec u_{\mathrm r}$ the first correction is
+and for $\tilde H_\Psi=i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ and $\tilde\Theta=\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ the first correction is
 
 $$
 \frac12[\tilde H_\Psi,\tilde\Theta]
-=\frac{i\theta_{\mathrm{rpd}}\theta}{4}\,\vec u_{\mathrm b}\times\vec u_{\mathrm r},
+=\frac{i\theta_{\mathrm{rpd}}\theta_{\mathrm{axr}}}{4}\,\vec u_{\mathrm b}\times\vec u_{\mathrm r},
 $$
 
 which is again a boost. The sum of a boost exponent and a rotor exponent is corrected by another boost, and the true logarithm is not the sum of the four exponents.
@@ -106,8 +106,8 @@ which is again a boost. The sum of a boost exponent and a rotor exponent is corr
 | Case | Defect | Why |
 | --- | --- | --- |
 | axes parallel or antiparallel | zero | the exponents commute |
-| $\theta_{\mathrm{rpd}}=0$ or $\theta=0$ | zero | one factor is the identity |
-| general axes, $\theta_{\mathrm{rpd}}\theta\neq0$ | nonzero | the commutator is a boost |
+| $\theta_{\mathrm{rpd}}=0$ or $\theta_{\mathrm{axr}}=0$ | zero | one factor is the identity |
+| general axes, $\theta_{\mathrm{rpd}}\theta_{\mathrm{axr}}\neq0$ | nonzero | the commutator is a boost |
 
 The defect is not a rounding effect. It is the statement that the word is not a homomorphism: the product of two words is not the word of the product, and the four parameters of a product are not the sums of the four parameters of the factors. The word is a parametrization, and the group law in those parameters carries the correction.
 
@@ -116,12 +116,12 @@ The defect is not a rounding effect. It is the statement that the word is not a 
 When the two axes coincide, the exponents commute and the defect vanishes. The word is then a single exponential,
 
 $$
-\tilde Q=r e^{i\theta_{\mathrm{pha}}}\exp\left(\vec u\left(\frac{\theta}{2}+i\frac{\theta_{\mathrm{rpd}}}{2}\right)\right),
+\tilde Q=r e^{i\theta_{\mathrm{pha}}}\exp\left(\vec u\left(\frac{\theta_{\mathrm{axr}}}{2}+i\frac{\theta_{\mathrm{rpd}}}{2}\right)\right),
 \qquad
 \vec u_{\mathrm b}=\vec u_{\mathrm r}=\vec u,
 $$
 
-and the exponent is a complex angle on one axis. Its real part is the stored rotation angle and its imaginary part is the stored rapidity. This is the Hamilton angle of the element, up to the factor of two: the word stores $\theta/2$ and $\theta_{\mathrm{rpd}}/2$, while the four-vector factor carries $\theta$ and $\theta_{\mathrm{rpd}}$, as the conventions article warns.
+and the exponent is a complex angle on one axis. Its real part is the stored rotation angle and its imaginary part is the stored rapidity. This is the Hamilton angle of the element, up to the factor of two: the word stores $\theta_{\mathrm{axr}}/2$ and $\theta_{\mathrm{rpd}}/2$, while the four-vector factor carries $\theta_{\mathrm{axr}}$ and $\theta_{\mathrm{rpd}}$, as the conventions article warns.
 
 When the axes differ, no single complex angle on a real axis exists. The sum of the two exponents is not a logarithm, and the element needs both axes as well as the two angles. A complex angle on a fixed real axis is two real parameters and the axis is two more; the unit group is six-dimensional, so a general element needs a second axis. The single complex angle covers the aligned four-dimensional submanifold, not the group.
 
@@ -255,7 +255,7 @@ The algebra supplies no rate, no dynamics and no massless particle. It supplies 
 - The formal exponent is the sum of the four exponents, and its exponential is not the element; the defect is the Baker–Campbell–Hausdorff correction, whose first term is a boost.
 - The defect vanishes when the boost and rotor axes commute or when one of the two parameters vanishes.
 - The rotor is the compact factor and the boost the non-compact one; the word is their product, and the element itself is neither compact nor non-compact.
-- On aligned axes the word is one exponential with a complex angle $\theta/2+i\theta_{\mathrm{rpd}}/2$, the Hamilton angle up to the factor of two; on skew axes no single complex angle on a **real** axis exists, while the element is still one exponential on a complex axis.
+- On aligned axes the word is one exponential with a complex angle $\theta_{\mathrm{axr}}/2+i\theta_{\mathrm{rpd}}/2$, the Hamilton angle up to the factor of two; on skew axes no single complex angle on a **real** axis exists, while the element is still one exponential on a complex axis.
 - The defect is the non-additivity of generators, the same structure as the Wigner rotation and the field-strength commutator, but it is not a coupling and not a dynamics.
 - The word is defined off the zero-divisor cone; on the cone the scale collapses and the rapidity diverges.
 - The cone has two strata: the idempotent stratum, a complex multiple of a minimal idempotent, and the nilpotent stratum, a square-zero lightlike displacement.
@@ -271,9 +271,9 @@ The algebra supplies no rate, no dynamics and no massless particle. It supplies 
 | $r$ | the positive scale, $r=\lvert N\rvert^{1/2}$ |
 | $\theta_{\mathrm{pha}}$ | the central phase, $\theta_{\mathrm{pha}}=\tfrac12\arg N\in(-\pi/2,\pi/2]$ |
 | $\tilde B=e^{i\theta_{\mathrm{rpd}}\vec u_{\mathrm b}/2}$ | the Hermitian positive boost factor |
-| $\tilde u_{\mathrm r}=e^{\theta\vec u_{\mathrm r}/2}$ | the unit real quaternion rotor |
+| $\tilde u_{\mathrm r}=e^{\theta_{\mathrm{axr}}\vec u_{\mathrm r}/2}$ | the unit real quaternion rotor |
 | $\vec u_{\mathrm b}$, $\vec u_{\mathrm r}$ | the boost and rotor axes, unit real pure quaternions |
-| $\theta_{\mathrm{rpd}}$, $\theta$ | the stored rapidity and the rotation angle |
+| $\theta_{\mathrm{rpd}}$, $\theta_{\mathrm{axr}}$ | the stored rapidity and the rotation angle |
 | $\tilde Q_{\log}$ | the formal exponent, the sum of the four exponents |
 | $\tilde\Pi=\tfrac12(e_t+\vec{Ζ})$ | a minimal idempotent, $\vec{Ζ}^2=e_t$ |
 | $N$ | a nonzero nilpotent, $N^2=0$ |

@@ -62,7 +62,7 @@ $$
 F \longrightarrow F_2 = (1+\alpha)e_tF ,
 $$
 
-with $\alpha$ an arbitrary infinitesimal function of $x$ and $r'_t$, named in the paper *a biquaternionic gauge transformation of the first kind* and identified with $(\exp(i\alpha)F)$ to first order. Substituting into $\mathrm{Lag}$ gives $\delta \mathrm{Lag} = F^*\cdot(\nabla(\alpha e_tF))$, which the paper expands as
+with $\theta_{\mathrm{gau}}$ an arbitrary infinitesimal function of $x$ and $r'_t$, named in the paper *a biquaternionic gauge transformation of the first kind* and identified with $(\exp(i\theta_{\mathrm{gau}})F)$ to first order. Substituting into $\mathrm{Lag}$ gives $\delta \mathrm{Lag} = F^*\cdot(\nabla(\theta_{\mathrm{gau}} e_tF))$, which the paper expands as
 
 $$
 \delta \mathrm{Lag} = F^*\cdot(\nabla\alpha)F + \alpha\,(\nabla F) ,
@@ -98,7 +98,7 @@ $$
 \vec N\mapsto \exp(-i\theta_{\mathrm{dua}})\vec N ,
 $$
 
-the duality rotation, which at $\theta_{\mathrm{dua}}=\pi/2$ is the classical exchange of electricity and magnetism. With the magnetic field quoted in units of $\vec E/c$, the source's $F = \vec E+i\vec B$ is precisely $\vec N=\vec E+ic\vec B$, and the source's transformation $F\to \exp(i\alpha)F$ is $\vec N\to \exp(i\alpha)\vec N$, that is, the duality rotation with $\theta_{\mathrm{dua}}=-\alpha$. The rotation mixes the two Lorentz invariants $\vec E\cdot\vec B$ and $\vec E^2-c^2\vec B^2$, leaving the energy density invariant; the corpus's field-strength article computes exactly this, and the computation is reproduced here as a check on the identification.
+the duality rotation, which at $\theta_{\mathrm{dua}}=\pi/2$ is the classical exchange of electricity and magnetism. With the magnetic field quoted in units of $\vec E/c$, the source's $F = \vec E+i\vec B$ is precisely $\vec N=\vec E+ic\vec B$, and the source's transformation $F\to \exp(i\theta_{\mathrm{gau}})F$ is $\vec N\to \exp(i\theta_{\mathrm{gau}})\vec N$, that is, the duality rotation with $\theta_{\mathrm{dua}}=-\theta_{\mathrm{gau}}$. The rotation mixes the two Lorentz invariants $\vec E\cdot\vec B$ and $\vec E^2-c^2\vec B^2$, leaving the energy density invariant; the corpus's field-strength article computes exactly this, and the computation is reproduced here as a check on the identification.
 
 Here $\theta_{\mathrm{dua}}$ is the duality angle: the Riemann--Silberstein vector $\vec E+i\,c\vec B$ is complex, and the angle is its argument, so it is real.
 
@@ -113,7 +113,7 @@ $$
 and $\vec E^2+c^2\vec B^2$ is unchanged, as it must be since it is the length of $\vec N$.
 
 **A remark on $(1+\alpha)$.**
-The transformation is written $(1+\alpha)e_tF$, which to first order is $\exp(\alpha)F$, and the paper identifies this with $\exp(i\alpha)F$. The two agree only when $\alpha$ is purely imaginary. A real infinitesimal $\alpha$ produces the common scaling $\vec E\to(1+\alpha)\vec E$, $\vec B\to(1+\alpha)\vec B$, which is also a symmetry of the source-free equations — the equations are linear and homogeneous — but which is a dilation rather than a duality rotation. The corpus's duality rotation requires the parameter that multiplies $F$ to be a phase, so the imaginary interpretation is the one that makes the paper's own identification correct.
+The transformation is written $(1+\theta_{\mathrm{gau}})e_tF$, which to first order is $\exp(\theta_{\mathrm{gau}})F$, and the paper identifies this with $\exp(i\theta_{\mathrm{gau}})F$. The two agree only when $\theta_{\mathrm{gau}}$ is purely imaginary. A real infinitesimal $\theta_{\mathrm{gau}}$ produces the common scaling $\vec E\to(1+\theta_{\mathrm{gau}})\vec E$, $\vec B\to(1+\theta_{\mathrm{gau}})\vec B$, which is also a symmetry of the source-free equations — the equations are linear and homogeneous — but which is a dilation rather than a duality rotation. The corpus's duality rotation requires the parameter that multiplies $F$ to be a phase, so the imaginary interpretation is the one that makes the paper's own identification correct.
 
 ## The Two Kinds
 
@@ -132,12 +132,12 @@ The consequence for the source's argument is direct. The paper's transformation 
 
 There is a sharper objection than the naming, and it can be checked directly: with $\alpha$ varying, the transformation does not preserve the equation it is applied to.
 
-In the corpus's variables the source-free equations are $i\partial/\partial r'_t\,\vec N=c\,\mathrm{rot}\,\vec N$ and $\mathrm{div}\,\vec N=0$, with $\vec N=\vec E+ic\vec B$. Under $\vec N\mapsto \exp(i\alpha)\vec N$ with $\alpha$ a function of the coordinates, the two sides acquire the extra contributions
+In the corpus's variables the source-free equations are $i\partial/\partial r'_t\,\vec N=c\,\mathrm{rot}\,\vec N$ and $\mathrm{div}\,\vec N=0$, with $\vec N=\vec E+ic\vec B$. Under $\vec N\mapsto \exp(i\theta_{\mathrm{gau}})\vec N$ with $\theta_{\mathrm{gau}}$ a function of the coordinates, the two sides acquire the extra contributions
 
 $$
-i\partial/\partial r'_t\bigl(\exp(i\alpha)\vec N\bigr) = \exp(i\alpha)\bigl(i\partial/\partial r'_t\,\vec N - (\partial/\partial r'_t\,\alpha)\vec N\bigr),
+i\partial/\partial r'_t\bigl(\exp(i\theta_{\mathrm{gau}})\vec N\bigr) = \exp(i\theta_{\mathrm{gau}})\bigl(i\partial/\partial r'_t\,\vec N - (\partial/\partial r'_t\,\theta_{\mathrm{gau}})\vec N\bigr),
 \qquad
-c\,\mathrm{rot}\bigl(\exp(i\alpha)\vec N\bigr) = \exp(i\alpha)\bigl(c\,\mathrm{rot}\,\vec N + ic\,(\nabla\alpha)\times\vec N\bigr),
+c\,\mathrm{rot}\bigl(\exp(i\theta_{\mathrm{gau}})\vec N\bigr) = \exp(i\theta_{\mathrm{gau}})\bigl(c\,\mathrm{rot}\,\vec N + ic\,(\nabla\theta_{\mathrm{gau}})\times\vec N\bigr),
 $$
 
 so the equation is preserved only when $-(\partial/\partial r'_t\,\alpha)\vec N = ic\,(\nabla\alpha)\times\vec N$, which is not an identity. For constant $\alpha$ every derivative of $\alpha$ vanishes and the equation is preserved, which is the rigid duality rotation; for a position-dependent $\alpha$ it is not.
@@ -176,7 +176,7 @@ Three points of the printed algebra are internally inconsistent, and each is rep
 
 ## Summary
 
-Tanişli's EPL paper writes the source-free Maxwell equations as $\nabla F=0$ with $F=\vec E+i\vec B$, gives the first-order density $\mathrm{Lag}=F^*\cdot\nabla F$, and derives the Poynting theorem from the local transformation $F\to(1+\alpha)F$ with $\alpha$ a function of $x$ and $r'_t$. The transformation is the corpus's duality rotation: $F$ is the Riemann–Silberstein vector in dimensionless units, and $\exp(i\alpha)F$ rotates $\vec E$ and $\vec B$ into one another, leaving $\vec E^2+\vec B^2$ invariant and rotating the pair $(I_1,2cI_2)$ by $2\alpha$, checked to $8.9\times10^{-16}$. The naming is reversed against Weyl: a transformation depending on an arbitrary function is of the **second kind**, and the second kind yields a differential identity rather than a conservation law, which is the content of Noether's second theorem and the subject of *Noether's Two Theorems*. The transformation is also not a symmetry for position-dependent $\alpha$: the equation $i\partial/\partial r'_t\,\vec N=c\,\mathrm{rot}\,\vec N$ acquires the extra terms $-(\partial/\partial r'_t\,\alpha)\vec N$ and $ic\,(\nabla\alpha)\times\vec N$, which do not cancel, and the residual grows from the finite-difference floor to half the field magnitude. The paper's "$F^*\cdot(\nabla F)=0$" is a contraction of the field equation, and its expansion using the curl equations is the Poynting identity — the standard consequence of the field equations, whose origin in the corpus is translation invariance by Noether's first theorem. Three internal inconsistencies of the printed algebra are recorded: the product rule against the basis rule, the sign of the imaginary part of $F$, and the sign of the second block of the expansion.
+Tanişli's EPL paper writes the source-free Maxwell equations as $\nabla F=0$ with $F=\vec E+i\vec B$, gives the first-order density $\mathrm{Lag}=F^*\cdot\nabla F$, and derives the Poynting theorem from the local transformation $F\to(1+\theta_{\mathrm{gau}})F$ with $\theta_{\mathrm{gau}}$ a function of $x$ and $r'_t$. The transformation is the corpus's duality rotation: $F$ is the Riemann–Silberstein vector in dimensionless units, and $\exp(i\theta_{\mathrm{gau}})F$ rotates $\vec E$ and $\vec B$ into one another, leaving $\vec E^2+\vec B^2$ invariant and rotating the pair $(I_1,2cI_2)$ by $2\theta_{\mathrm{gau}}$, checked to $8.9\times10^{-16}$. The naming is reversed against Weyl: a transformation depending on an arbitrary function is of the **second kind**, and the second kind yields a differential identity rather than a conservation law, which is the content of Noether's second theorem and the subject of *Noether's Two Theorems*. The transformation is also not a symmetry for position-dependent $\theta_{\mathrm{gau}}$: the equation $i\partial/\partial r'_t\,\vec N=c\,\mathrm{rot}\,\vec N$ acquires the extra terms $-(\partial/\partial r'_t\,\theta_{\mathrm{gau}})\vec N$ and $ic\,(\nabla\theta_{\mathrm{gau}})\times\vec N$, which do not cancel, and the residual grows from the finite-difference floor to half the field magnitude. The paper's "$F^*\cdot(\nabla F)=0$" is a contraction of the field equation, and its expansion using the curl equations is the Poynting identity — the standard consequence of the field equations, whose origin in the corpus is translation invariance by Noether's first theorem. Three internal inconsistencies of the printed algebra are recorded: the product rule against the basis rule, the sign of the imaginary part of $F$, and the sign of the second block of the expansion.
 
 ## Summary of Notation
 

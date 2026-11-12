@@ -166,7 +166,7 @@ $$
 \vec B \mapsto \vec B\cos\alpha - \vec E\sin\alpha,
 $$
 
-equivalently under $\vec N\mapsto \exp(-i\alpha)\vec N$ with $\vec N = \vec E + ic\vec B$, and that this is a symmetry of the **polarisation space**, rotating the polarisation axes about the wave vector. In four-dimensional notation the transformation is
+equivalently under $\vec N\mapsto \exp(-i\theta_{\mathrm{dua}})\vec N$ with $\vec N = \vec E + ic\vec B$, and that this is a symmetry of the **polarisation space**, rotating the polarisation axes about the wave vector. In four-dimensional notation the transformation is
 
 $$
 F_{2,\mu\nu} = F_{\mu\nu}\cos\alpha - \tilde F_{\mu\nu}\sin\alpha,

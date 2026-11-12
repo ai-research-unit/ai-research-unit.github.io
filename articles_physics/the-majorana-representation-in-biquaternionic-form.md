@@ -55,7 +55,7 @@ The relation was checked numerically: for $(\theta,\theta_{\mathrm{azm}}) = (0.7
 
 ### The Two-to-One Map
 
-The passage from spinor to star discards the overall phase: $\tilde{Ξ}\mapsto \exp(i\alpha)\tilde{Ξ}$ leaves $\varkappa_{\mathrm{stg}}$ unchanged, hence leaves $\vec u_x$ and the idempotent unchanged. This is the same loss that the geometric-phase articles record: the idempotent carries no phase. The star is therefore blind to the geometric phase, and a closed loop of the star — a closed curve of the Bloch vector — leaves the state in the same idempotent while the spinor returns with the phase $-\tfrac12\Omega_{\mathrm{sgn}}$. The Majorana star is the shadow of the spinor on the sphere, and the phase is what the shadow does not record.
+The passage from spinor to star discards the overall phase: $\tilde{Ξ}\mapsto \exp(i\theta_{\mathrm{cen}})\tilde{Ξ}$ leaves $\varkappa_{\mathrm{stg}}$ unchanged, hence leaves $\vec u_x$ and the idempotent unchanged. This is the same loss that the geometric-phase articles record: the idempotent carries no phase. The star is therefore blind to the geometric phase, and a closed loop of the star — a closed curve of the Bloch vector — leaves the state in the same idempotent while the spinor returns with the phase $-\tfrac12\Omega_{\mathrm{sgn}}$. The Majorana star is the shadow of the spinor on the sphere, and the phase is what the shadow does not record.
 
 ## The Majorana Polynomial
 

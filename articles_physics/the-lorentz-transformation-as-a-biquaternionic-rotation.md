@@ -46,7 +46,7 @@ This is the precise sense in which the Lorentz transformation is a rotation: it 
 
 The statement "the Lorentz transformation is a rotation" requires care, because we are working over the complex numbers. The key points:
 
-**1. The rotation angle is imaginary.** A boost is a rotation by an **imaginary angle** in a plane that mixes the time direction with a spatial direction. To see this, consider the spatial rotation rotor in the plane $(x_0, x_1)$ by angle $\theta$: it is $\cos\frac{\theta}{2} + \sin\frac{\theta}{2}\,\vec u_{01}$, where $\vec u_{01}$ is the unit bivector for the $(x_0, x_1)$ plane. Substituting $\theta = i\theta_{\mathrm{rpd}}$ (imaginary angle) gives $\cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{01}$, which is the **boost** rotor in the $(x_0, x_1)$ plane. The boost is therefore a rotation by an imaginary angle, and the parameter $\theta_{\mathrm{rpd}}$ (the rapidity) is the "imaginary angle" of the rotation.
+**1. The rotation angle is imaginary.** A boost is a rotation by an **imaginary angle** in a plane that mixes the time direction with a spatial direction. To see this, consider the spatial rotation rotor in the plane $(x_0, x_1)$ by angle $\theta_{\mathrm{axr}}$: it is $\cos\frac{\theta_{\mathrm{axr}}}{2} + \sin\frac{\theta_{\mathrm{axr}}}{2}\,\vec u_{01}$, where $\vec u_{01}$ is the unit bivector for the $(x_0, x_1)$ plane. Substituting $\theta_{\mathrm{axr}} = i\theta_{\mathrm{rpd}}$ (imaginary angle) gives $\cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{01}$, which is the **boost** rotor in the $(x_0, x_1)$ plane. The boost is therefore a rotation by an imaginary angle, and the parameter $\theta_{\mathrm{rpd}}$ (the rapidity) is the "imaginary angle" of the rotation.
 
 **2. The bilinear form is complex.** The quantity preserved by the rotation is the general plain bilinear form $(x_0)^2 + (x_1)^2 + (x_2)^2 + (x_3)^2$, which is the biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$. On the real slice, this form can be negative (timelike intervals), positive (spacelike intervals), or zero (null intervals).
 
@@ -115,7 +115,7 @@ The key feature of the boost biquaternion is that the vector part is **purely im
 
 Compare:
 
-- **Spatial rotation** about an axis $\vec u_{\mathrm r}$ by angle $\theta$: the rotor is $\tilde u_{\mathrm r} = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\vec u_{\mathrm r}$, with a **real** vector part.
+- **Spatial rotation** about an axis $\vec u_{\mathrm r}$ by angle $\theta_{\mathrm{axr}}$: the rotor is $\tilde u_{\mathrm r} = \cos\frac{\theta_{\mathrm{axr}}}{2} + \sin\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$, with a **real** vector part.
 - **Boost** along a direction $\vec u_{\mathrm b}$ with rapidity $\theta_{\mathrm{rpd}}$: the rotor is $\tilde U_{\Psi,\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$, with a **purely imaginary** vector part.
 
 Both are rotors in the sense of geometric algebra, both satisfy the unit-norm condition, and both act by conjugation. The difference is the **sign** of the vector part squared:
@@ -315,7 +315,7 @@ which under the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$ is the group $SL(
 
 **Pure boosts** are the **Hermitian** elements of $SL(2,\mathbb{C})$: those satisfying $\tilde U_{\Psi,\mathrm b}^{*} = \tilde U_{\Psi,\mathrm b}$. They do **not** form a subgroup of $SL(2,\mathbb{C})$, because the product of two non-collinear boosts is generally a boost plus a spatial rotation (the Thomas–Wigner rotation), which is not Hermitian. So the set of pure boosts is a symmetric submanifold of $SL(2,\mathbb{C})$, but not a group.
 
-**Pure spatial rotations** are the elements with **real vector part** (i.e., lying in $\mathbb{B}_{H}$, the real quaternion subalgebra), satisfying $\tilde u_{\mathrm r} = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\vec u_{\mathrm r}$ with $\vec u_{\mathrm r}^2 = -e_t$. These form the subgroup $SU(2) \subset SL(2,\mathbb{C})$.
+**Pure spatial rotations** are the elements with **real vector part** (i.e., lying in $\mathbb{B}_{H}$, the real quaternion subalgebra), satisfying $\tilde u_{\mathrm r} = \cos\frac{\theta_{\mathrm{axr}}}{2} + \sin\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ with $\vec u_{\mathrm r}^2 = -e_t$. These form the subgroup $SU(2) \subset SL(2,\mathbb{C})$.
 
 The general Lorentz transformation is the product of a boost and a rotation, and corresponds to a general element of $SL(2,\mathbb{C})$.
 

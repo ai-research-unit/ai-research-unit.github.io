@@ -52,7 +52,7 @@ The statement is exact and is worth one paragraph, because it is what makes the 
 A unit-norm biquaternion is a Lorentz rotor. The general Lorentz rotor is $\tilde U_{\mathrm{lor}}=\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; its two factors are the boost and the rotation,
 $$
 \tilde U_{\Psi,\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2}\,e_t + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b} \quad(\text{boost}), \qquad
-\tilde u_{\mathrm r} = \cos\frac{\theta}{2}\,e_t + \sin\frac{\theta}{2}\,\vec u_{\mathrm r} \quad(\text{rotation}),
+\tilde u_{\mathrm r} = \cos\frac{\theta_{\mathrm{axr}}}{2}\,e_t + \sin\frac{\theta_{\mathrm{axr}}}{2}\,\vec u_{\mathrm r} \quad(\text{rotation}),
 $$
 and the unit-norm condition is $\langle\tilde U_{\mathrm{lor}}\rangle_{\natural} = 1$, hence $\tilde U_{\mathrm{lor}}{}^{-1} = \tilde U_{\mathrm{lor}}{}^{\natural}$, so the unit-norm elements form $SL(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group. The same element acts on the two sectors by different formulas:
 

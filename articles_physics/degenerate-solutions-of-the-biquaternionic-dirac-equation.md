@@ -2,7 +2,7 @@
 
 ## Introduction
 
-*The Polar Form of the Dirac Equation in Biquaternionic Form* reads the Dirac equation through the polar word of the field, and that word exists exactly on the $N$-regular elements. Its domain is the open set $N\neq0$ and its boundary is the cone $N=0$. This article takes the boundary as its subject. It asks what a solution of the Dirac equation looks like when the norm of the field vanishes at a point, and what the equation has to say about such a field.
+*The Dirac Equation in Biquaternionic Polar Variables* reads the Dirac equation through the polar word of the field, and that word exists exactly on the $N$-regular elements. Its domain is the open set $N\neq0$ and its boundary is the cone $N=0$. This article takes the boundary as its subject. It asks what a solution of the Dirac equation looks like when the norm of the field vanishes at a point, and what the equation has to say about such a field.
 
 Three results organise the answer, and each corrects a guess that comes naturally.
 
@@ -424,7 +424,7 @@ The letters $L$ and $R$ are the pair's two components and are fixed by the equat
 ## Further Reading
 
 - *The Dirac Equation in Biquaternionic Form*, for the chiral pair, the one-sided and two-sided forms, and the argument that the pair's letters name two components and not two values. This article takes the equation from there and adds no term to it.
-- *The Polar Form of the Dirac Equation in Biquaternionic Form*, for the word whose domain this article leaves, and for the two families of fields on the cone, the parts of definite value and the one-sided plane waves.
+- *The Dirac Equation in Biquaternionic Polar Variables*, for the word whose domain this article leaves, and for the two families of fields on the cone, the parts of definite value and the one-sided plane waves.
 - *The Meaning of N Regularity and Degeneracy*, for the cone, its two strata, its two sectors, and the component forms of $\Sigma_{01}$ and $\Sigma_{00}$ that this article restates.
 - *Operator Chirality on the Biquaternion Algebra*, for the operator label, for the decomposition by a declared traceless unit, and for the list of objects that are offered as a home for chirality and are not one.
 - David Hestenes, *Space-Time Algebra* (Gordon and Breach, 1966; second edition Birkhäuser, 2015), for the null fields of the algebra and the reading of a degenerate spinor as a direction without a frame.

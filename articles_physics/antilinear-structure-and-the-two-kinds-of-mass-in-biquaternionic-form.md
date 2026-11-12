@@ -152,7 +152,7 @@ $$
 
 the second line because $\vec e_y^{*}=-\vec e_y$ and $\vec e_y^{2}=-e_t$, so the two conjugations and the two units cancel in pairs. The section *Two Real Structures, on Two Different Spaces* keeps the operation apart from the algebra's $\flat$.
 
-The first pairs $\tilde{Ξ}_{L}$ with $\tilde{Ξ}_{R}$ and is **linear**; it conserves fermion number and is invariant under the continuous phase $\tilde{Ξ}\mapsto \exp(i\alpha)\tilde{Ξ}$. The second pairs $\tilde{Ξ}_{L}$ with its charge conjugate $\tilde{Ξ}_{L}^c$, a field produced from $\tilde{Ξ}_{L}$ by the antilinear map $\mathcal{C}$; it changes fermion number by two units, and it is not invariant under the continuous phase — which is exactly why it can be written only for a field that is not protected by a conserved charge.
+The first pairs $\tilde{Ξ}_{L}$ with $\tilde{Ξ}_{R}$ and is **linear**; it conserves fermion number and is invariant under the continuous phase $\tilde{Ξ}\mapsto \exp(i\theta_{\mathrm{cen}})\tilde{Ξ}$. The second pairs $\tilde{Ξ}_{L}$ with its charge conjugate $\tilde{Ξ}_{L}^c$, a field produced from $\tilde{Ξ}_{L}$ by the antilinear map $\mathcal{C}$; it changes fermion number by two units, and it is not invariant under the continuous phase — which is exactly why it can be written only for a field that is not protected by a conserved charge.
 
 | | Dirac mass | Majorana mass |
 |---|---|---|
@@ -287,15 +287,15 @@ a double cover of $SO(1,3)\times \mathrm{U}(1)$: the spin group extended by a ce
 
 Here $\theta_{\mathrm{cen}}$ is the central phase: it is the argument of a unit complex number, so it is real.
 
-**Which fields can carry it.** A field can be rotated by the central phase and remain a field of its own type only when its defining condition survives the rotation. The module imposes no condition, and $\tilde{Ξ}\mapsto \exp(i\alpha)\tilde{Ξ}$ is a symmetry of the free equation, so the Dirac field — with linearly independent parts of the two values — carries the $\mathrm{U}(1)$ and is charged. The Majorana field is the fixed-point set of the module's antilinear real structure, $\tilde{Ξ} = \mathcal{C}[\tilde{Ξ}]$, and $\mathcal{C}$ is conjugate-linear, so
+**Which fields can carry it.** A field can be rotated by the central phase and remain a field of its own type only when its defining condition survives the rotation. The module imposes no condition, and $\tilde{Ξ}\mapsto \exp(i\theta_{\mathrm{cen}})\tilde{Ξ}$ is a symmetry of the free equation, so the Dirac field — with linearly independent parts of the two values — carries the $\mathrm{U}(1)$ and is charged. The Majorana field is the fixed-point set of the module's antilinear real structure, $\tilde{Ξ} = \mathcal{C}[\tilde{Ξ}]$, and $\mathcal{C}$ is conjugate-linear, so
 
 $$
 \tilde{Ξ} = \mathcal{C}[\tilde{Ξ}]
 \quad\Longrightarrow\quad
-\exp(i\alpha)\tilde{Ξ} = \exp(-i\alpha)\,\mathcal{C}[\tilde{Ξ}].
+\exp(i\theta_{\mathrm{cen}})\tilde{Ξ} = \exp(-i\theta_{\mathrm{cen}})\,\mathcal{C}[\tilde{Ξ}].
 $$
 
-The condition is preserved only for $\exp(2i\alpha) = 1$, that is $\alpha = 0,\pi$: the continuous phase does not act, and the Majorana field is **blind to the central $\mathrm{U}(1)$** — electrically neutral. The **ELKO** field, of Lounesto class $5$, is neutral for the same reason: it is an eigenvector of the same antilinear operator, with eigenvalue $+1$ or $-1$, so the phase acts on it only as a sign at best. The three cases therefore stand as: Dirac charged, Majorana and ELKO neutral.
+The condition is preserved only for $\exp(2i\theta_{\mathrm{cen}}) = 1$, that is $\theta_{\mathrm{cen}} = 0,\pi$: the continuous phase does not act, and the Majorana field is **blind to the central $\mathrm{U}(1)$** — electrically neutral. The **ELKO** field, of Lounesto class $5$, is neutral for the same reason: it is an eigenvector of the same antilinear operator, with eigenvalue $+1$ or $-1$, so the phase acts on it only as a sign at best. The three cases therefore stand as: Dirac charged, Majorana and ELKO neutral.
 
 It matters for the previous section *which* of the article's two real structures does the work. It is the **module's** $\mathcal{C}$ — the fixed-point condition that halves the field — and not the algebra's $\flat$. The distinction between them is thus not bookkeeping; it decides which fields can carry a charge. The minimal-coupling article reaches the same obstruction from the other side, finding that a mass term pairing the field with its conjugate would retain only $\lambda = \pm 1$ of the phase.
 

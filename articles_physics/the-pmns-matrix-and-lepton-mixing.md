@@ -56,16 +56,16 @@ So the number of PMNS parameters depends on the neutrino's nature: six for Major
 $$
 U_{\mathrm{PMNS}}=
 \begin{pmatrix}
-c_{12}c_{13} & s_{12}c_{13} & s_{13}e^{-i\delta}\
--s_{12}c_{23}-c_{12}s_{23}s_{13}e^{i\delta} & c_{12}c_{23}-s_{12}s_{23}s_{13}e^{i\delta} & s_{23}c_{13}\
-s_{12}s_{23}-c_{12}c_{23}s_{13}e^{i\delta} & -c_{12}s_{23}-s_{12}c_{23}s_{13}e^{i\delta} & c_{23}c_{13}
+c_{12}c_{13} & s_{12}c_{13} & s_{13}e^{-i\theta_{\mathrm{cpk}}}\
+-s_{12}c_{23}-c_{12}s_{23}s_{13}e^{i\theta_{\mathrm{cpk}}} & c_{12}c_{23}-s_{12}s_{23}s_{13}e^{i\theta_{\mathrm{cpk}}} & s_{23}c_{13}\
+s_{12}s_{23}-c_{12}c_{23}s_{13}e^{i\theta_{\mathrm{cpk}}} & -c_{12}s_{23}-s_{12}c_{23}s_{13}e^{i\theta_{\mathrm{cpk}}} & c_{23}c_{13}
 \end{pmatrix}
-\times\mathrm{diag}\!\left(1,e^{i\alpha_{21}/2},e^{i\alpha_{31}/2}\right) .
+\times\mathrm{diag}\!\left(1,e^{i\theta_{\mathrm{mjr},21}/2},e^{i\theta_{\mathrm{mjr},31}/2}\right) .
 $$
 
-The three angles are written as $s_{ij}=\sin\theta_{ij}$, $c_{ij}=\cos\theta_{ij}$; the Dirac phase $\delta$ sits in one place and only one; and the two Majorana phases $\alpha_{21}$, $\alpha_{31}$ multiply the second and third columns. The factor $\mathrm{diag}(1,\cdot,\cdot)$ is what makes the last two phases unobservable in oscillation and observable in $\beta\beta_{0\nu}$.
+The three angles are written as $s_{ij}=\sin\theta_{ij}$, $c_{ij}=\cos\theta_{ij}$; the Dirac phase $\delta$ sits in one place and only one; and the two Majorana phases $\theta_{\mathrm{mjr},21}$, $\theta_{\mathrm{mjr},31}$ multiply the second and third columns. The factor $\mathrm{diag}(1,\cdot,\cdot)$ is what makes the last two phases unobservable in oscillation and observable in $\beta\beta_{0\nu}$.
 
-**A convention that matters.** The Majorana-phase normalisation is not universal: some texts write $e^{i\alpha}$ rather than $e^{i\alpha/2}$, which shifts every quoted $\alpha$ by a factor of two. This article uses the half-angle form and says so, and any comparison with a table elsewhere must check which is in use. The same discipline that [the parton-model article](the-parton-model-and-deep-inelastic-scattering.html) imposed on the plus prescription applies here: the convention belongs in the display, not in a footnote.
+**A convention that matters.** The Majorana-phase normalisation is not universal: some texts write $e^{i\theta_{\mathrm{mjr}}}$ rather than $e^{i\theta_{\mathrm{mjr}}/2}$, which shifts every quoted $\alpha$ by a factor of two. This article uses the half-angle form and says so, and any comparison with a table elsewhere must check which is in use. The same discipline that [the parton-model article](the-parton-model-and-deep-inelastic-scattering.html) imposed on the plus prescription applies here: the convention belongs in the display, not in a footnote.
 
 ## The Measured Values
 
@@ -242,7 +242,7 @@ The masses follow from the differences alone once the lightest is fixed, which i
 
 **The statement.** The two extra phases multiply the second and third columns of $U$. Every oscillation probability is a product $U_{\alpha i}U^{*}_{\beta i}U^{*}_{\alpha j}U_{\beta j}$, which is invariant under multiplying column $i$ by a phase and taking the conjugate from column $j$: the phases cancel between a column and its complex conjugate. So **the Majorana phases are invisible in oscillation**, exactly and at every order.
 
-**The check.** Recomputing the matrix with $\alpha_{21}=180^\circ$ and $\alpha_{31}=90^\circ$ changes no magnitude at all — the phases have unit modulus and enter each probability as $e^{i\phi}e^{-i\phi}$ — and leaves the Jarlskog invariant at $-0.0262$ *exactly*, not to a stated number of figures, because $J$ does not involve $\alpha_{21}$ or $\alpha_{31}$: their columns enter it with their conjugates. That is not an approximation; it is a symmetry of the observables, and the arithmetic to confirm it is a multiplication by $1$.
+**The check.** Recomputing the matrix with $\theta_{\mathrm{mjr},21}=180^\circ$ and $\theta_{\mathrm{mjr},31}=90^\circ$ changes no magnitude at all — the phases have unit modulus and enter each probability as $e^{i\theta_{\mathrm{pha}}}e^{-i\theta_{\mathrm{pha}}}$ — and leaves the Jarlskog invariant at $-0.0262$ *exactly*, not to a stated number of figures, because $J$ does not involve $\theta_{\mathrm{mjr},21}$ or $\theta_{\mathrm{mjr},31}$: their columns enter it with their conjugates. That is not an approximation; it is a symmetry of the observables, and the arithmetic to confirm it is a multiplication by $1$.
 
 **Where they are visible.** In any amplitude that is not of the form $UU^{\dagger}$, and the canonical one is neutrinoless double beta decay, whose rate is proportional to
 
@@ -250,7 +250,7 @@ $$
 \lvert m_{\beta\beta}\rvert=\left\lvert\sum_i U_{ei}^2\,m_i\right\rvert ,
 $$
 
-with the squares. The squares do not cancel the column phases; they add them, so the rate depends on $\alpha_{21}$ and $\alpha_{31}$ through interference between the three terms.
+with the squares. The squares do not cancel the column phases; they add them, so the rate depends on $\theta_{\mathrm{mjr},21}$ and $\theta_{\mathrm{mjr},31}$ through interference between the three terms.
 
 **Why the range matters more than the value.** For the normal ordering the three terms nearly cancel whatever the phases do, and $\lvert m_{\beta\beta}\rvert$ lies between $1.4$ and $3.7$ meV — an order of magnitude below any planned experiment. For the inverted ordering the first two terms add coherently and the range is $19$–$49$ meV, within reach. So a positive signal at $20$ meV would say two things at once: the neutrino is Majorana, and the ordering is inverted. A null result at $20$ meV would say the ordering is normal or the neutrino is Dirac, and would not distinguish those.
 
@@ -338,7 +338,7 @@ The framework supplies the arena and transcribes the rest: no mechanism for the 
 | $\theta_{13}$ | Reactor angle, $8.58^\circ$ |
 | $\theta_{23}$ | Atmospheric angle, $49.0^\circ$ |
 | $\delta$ | Dirac CP phase, $\approx-128^\circ$ ($-2.23$ rad) |
-| $\alpha_{21}$, $\alpha_{31}$ | Majorana phases, in the half-angle convention |
+| $\theta_{\mathrm{mjr},21}$, $\theta_{\mathrm{mjr},31}$ | Majorana phases, in the half-angle convention |
 | $s_{ij}$, $c_{ij}$ | $\sin\theta_{ij}$, $\cos\theta_{ij}$ |
 | $J$ | Jarlskog invariant, $-0.0262$ at the fit phase |
 | $\delta m^2_{21}$ | $7.42\times10^{-5}$ eV$^2$ |

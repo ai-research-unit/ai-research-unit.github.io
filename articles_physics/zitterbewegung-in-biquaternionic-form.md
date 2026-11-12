@@ -187,7 +187,7 @@ The following table separates the claims.
 | The trembling is an interference of $\pm$-frequency branches, frequency $2c\,k_{t}^{\prime}$ | Established; the standard result, recomputed here |
 | Rest-frame frequency $2c\,k_m$, amplitude $\dfrac{1}{2\,k_m}$ | Established; checked numerically above |
 | The real structure $\flat$ acts with opposite signs on $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ | Established; it is the sector action of the conjugation |
-| The rest-energy phase rotates the sectors at $c\,k_m$ | Established; with $\theta=r'_t\,k_m$, $\exp(-i\theta) = \cos\theta\,e_t - \sin\theta\,(ie_t)$ |
+| The rest-energy phase rotates the sectors at $c\,k_m$ | Established; with $\theta_{\mathrm{rst}}=r'_t\,k_m$, $\exp(-i\theta_{\mathrm{rst}}) = \cos\theta_{\mathrm{rst}}\,e_t - \sin\theta_{\mathrm{rst}}\,(ie_t)$ |
 | The Zitterbewegung phase is the square of the free-evolution phase | Established; hence the frequency is doubled |
 | $\pm$-energy parts **are** the $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ sectors | False as an identity; the energy sign is fixed by a map that multiplies on the right, the sector by a conjugation of the value |
 | The $\mathbb{B}_{\Psi}/\mathbb{B}_{\Phi}$ split does work beyond relabelling the Hermitian decomposition | Not established; the interference is between energy branches, which are not the sectors |

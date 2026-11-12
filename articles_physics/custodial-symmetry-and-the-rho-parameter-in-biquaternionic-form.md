@@ -51,7 +51,7 @@ $$
 so that the electroweak group acts on the left and the hypercharge acts on the right,
 
 $$
-H \;\longmapsto\; \exp\bigl(i\sum_a\alpha_a T_{La}\bigr)\,H\,\exp(\,i\beta T_3^{R}) ,
+H \;\longmapsto\; \exp\bigl(i\sum_a\theta_{\mathrm{gau},a} T_{La}\bigr)\,H\,\exp(\,i\theta_{\mathrm{gau},R} T_3^{R}) ,
 \qquad
 T_{La} = \frac{\tau_a}{2},\quad T_3^R = \frac{\tau_3}{2} .
 $$

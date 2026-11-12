@@ -129,9 +129,9 @@ and the Majorana field is the fixed space of such a conjugation: a carrier of ha
 
 **The phase is not available.** The fixed space of an antilinear conjugation is not closed under multiplication by a phase. For a real $\alpha$ one has
 $$
-\mathcal{C}\bigl(e^{i\alpha}\tilde{Ξ}\bigr)=e^{-i\alpha}\,\mathcal{C}(\tilde{Ξ}) ,
+\mathcal{C}\bigl(e^{i\theta_{\mathrm{cen}}}\tilde{Ξ}\bigr)=e^{-i\theta_{\mathrm{cen}}}\,\mathcal{C}(\tilde{Ξ}) ,
 $$
-so $e^{i\alpha}\tilde{Ξ}$ lies in the fixed space only when $\alpha$ is a multiple of $\pi$; at $\alpha=\pi$ it lies in it, with the opposite sign. A field that equals its conjugate therefore carries no continuous phase, and a continuous phase is what a conserved charge is. The neutrality of the Majorana field is a property of the conjugation, and the algebra is not made smaller to obtain it.
+so $e^{i\theta_{\mathrm{cen}}}\tilde{Ξ}$ lies in the fixed space only when $\theta_{\mathrm{cen}}$ is a multiple of $\pi$; at $\theta_{\mathrm{cen}}=\pi$ it lies in it, with the opposite sign. A field that equals its conjugate therefore carries no continuous phase, and a continuous phase is what a conserved charge is. The neutrality of the Majorana field is a property of the conjugation, and the algebra is not made smaller to obtain it.
 
 **One field and not two.** The two eigenspaces of a conjugation are of the same size and are exchanged by $i$; the fixed space is not one member of a pair of fields. The reading of the two eigenspaces as the two signs of a charge-conjugation eigenvalue belongs to the companion articles, where that operator is constructed; on the algebra the two eigenspaces are one space and its rotation by $i$, and the equation of the display above does not distinguish them.
 

@@ -239,25 +239,25 @@ so the exponential is $*$-unitary, $\tilde U\tilde U^{*}=e_t$, and conjugation b
 *Relations between the Biquaternion Exponential and the Fourier Kernel* gives the general law, and it is the sharpest statement available. For $\tilde Q=Q_te_t+\vec Q$, $B^2=(\vec Q,\vec Q)$ and $\rho=\vec Q/B$,
 
 $$
-\bigl\langle e^{\theta\tilde Q}\bigr\rangle_*
-=\bigl\lvert e^{\theta Q_t}\bigr\rvert^{2}
-\left(\lvert\cos(B\theta)\rvert^{2}+\lvert\sin(B\theta)\rvert^{2}\lVert\rho\rVert^{2}\right),
+\bigl\langle e^{\theta_{\mathrm{evo}}\tilde Q}\bigr\rangle_*
+=\bigl\lvert e^{\theta_{\mathrm{evo}} Q_t}\bigr\rvert^{2}
+\left(\lvert\cos(B\theta_{\mathrm{evo}})\rvert^{2}+\lvert\sin(B\theta_{\mathrm{evo}})\rvert^{2}\lVert\rho\rVert^{2}\right),
 \qquad
 \lVert\rho\rVert^{2}\ge1,
 $$
 
-with equality exactly when $\tilde Q$ is normal. Only three numbers reach the norm, and they do different jobs: $\operatorname{Re}Q_t$ is a **rate**, $\operatorname{Im}B$ is an envelope rate, and $\lVert\rho\rVert^2$ is an **amplitude**, never a rate. That article puts it in one line: "a decay is a negative real part of $Q_t$ in the convention $e^{+\theta\tilde Q}$". The qualification is the whole point.
+with equality exactly when $\tilde Q$ is normal. Only three numbers reach the norm, and they do different jobs: $\operatorname{Re}Q_t$ is a **rate**, $\operatorname{Im}B$ is an envelope rate, and $\lVert\rho\rVert^2$ is an **amplitude**, never a rate. That article puts it in one line: "a decay is a negative real part of $Q_t$ in the convention $e^{+\theta_{\mathrm{evo}}\tilde Q}$". The qualification is the whole point.
 
-Neither sector puts anything in the rate slot. For anti-Hermitian $\tilde Q$, $Q_t$ is purely imaginary and $\vec Q$ is real, so $\operatorname{Re}Q_t=0$ and $\rho$ is a real unit vector: the norm is exactly $1$ for every $\theta$. For Hermitian $\tilde H_\Psi$, its scalar coefficient is real but the corpus's flow carries the factor $-i$, $\exp(-\frac{i\,\theta\,\tilde H_\Psi}{\hbar})$, and that factor moves the real scalar into the frequency slot: the norm is again exactly $1$. Checked on a hundred elements each, to $1.2\times10^{-14}$ and $5.6\times10^{-15}$. The factor of $i$ is therefore not decoration; it is what makes a real scalar a frequency rather than a rate, and removing it changes the physics from oscillation to dilation.
+Neither sector puts anything in the rate slot. For anti-Hermitian $\tilde Q$, $Q_t$ is purely imaginary and $\vec Q$ is real, so $\operatorname{Re}Q_t=0$ and $\rho$ is a real unit vector: the norm is exactly $1$ for every $\theta_{\mathrm{evo}}$. For Hermitian $\tilde H_\Psi$, its scalar coefficient is real but the corpus's flow carries the factor $-i$, $\exp(-\frac{i\,\theta_{\mathrm{evo}}\,\tilde H_\Psi}{\hbar})$, and that factor moves the real scalar into the frequency slot: the norm is again exactly $1$. Checked on a hundred elements each, to $1.2\times10^{-14}$ and $5.6\times10^{-15}$. The factor of $i$ is therefore not decoration; it is what makes a real scalar a frequency rather than a rate, and removing it changes the physics from oscillation to dilation.
 
 One case is worth stating, because it is the exception that fixes the rule: a single element can shrink the norm. Exponentiated without the $i$, a Hermitian element gives
 
 $$
-\bigl\langle e^{\theta\tilde H_\Psi}\bigr\rangle_*
-=e^{2\theta h_t}\cosh\bigl(2\lvert\vec h_\Psi\rvert\theta\bigr),
+\bigl\langle e^{\theta_{\mathrm{evo}}\tilde H_\Psi}\bigr\rangle_*
+=e^{2\theta_{\mathrm{evo}} h_t}\cosh\bigl(2\lvert\vec h_\Psi\rvert\theta_{\mathrm{evo}}\bigr),
 $$
 
-checked to $8.7\times10^{-16}$. The forward branch grows or decays at rate $2(R_t+\lvert\vec r\rvert)$, and it decays when $R_t<-\lvert\vec r\rvert$; the backward branch grows at rate $2(\lvert\vec r\rvert-R_t)$, which is positive for every Hermitian element. So such a flow falls in one direction of $\theta$ and diverges in the other: it has an arrow of time built into a single element, which is precisely why it cannot serve as a reversible law. No dynamics in the corpus uses it — the state-vector equation always carries the $-i$. A shrinking element and a falling probability are different events.
+checked to $8.7\times10^{-16}$. The forward branch grows or decays at rate $2(R_t+\lvert\vec r\rvert)$, and it decays when $R_t<-\lvert\vec r\rvert$; the backward branch grows at rate $2(\lvert\vec r\rvert-R_t)$, which is positive for every Hermitian element. So such a flow falls in one direction of $\theta_{\mathrm{evo}}$ and diverges in the other: it has an arrow of time built into a single element, which is precisely why it cannot serve as a reversible law. No dynamics in the corpus uses it — the state-vector equation always carries the $-i$. A shrinking element and a falling probability are different events.
 
 One level up, the question is about maps rather than elements. *The Exponential, the Logarithm and the Generator* records that an irreversible completely positive trace-preserving map is a sum of at least two conjugations, so it is not a single element and has no algebraic generator. When such a map has a generator, the generator is a superoperator on states, not an element of $\mathbb{B}$. A falling probability has no address in the algebra at all. The question "is $\mathbb{B}_{\Phi}$ lossy?" accordingly has no yes-or-no answer, because the predicate does not apply to elements.
 

@@ -230,12 +230,12 @@ The structural statement is the same one the whole article turns on, seen in the
 Although no oscillator lives in $\mathbb{B}$, the Fock space does carry the standard bosonic structures, and two of them touch the framework's phases. For one mode the **coherent state** is
 
 $$
-|\alpha\rangle=\exp(-|\alpha|^2/2)\sum_{n\ge0}\frac{\alpha^n}{\sqrt{n!}}\,|n\rangle,
+|\theta_{\mathrm{cen}}\rangle=\exp(-|\theta_{\mathrm{cen}}|^2/2)\sum_{n\ge0}\frac{\theta_{\mathrm{cen}}^n}{\sqrt{n!}}\,|n\rangle,
 \qquad
-a_{\mathrm{fop}}|\alpha\rangle=\alpha|\alpha\rangle,
+a_{\mathrm{fop}}|\theta_{\mathrm{cen}}\rangle=\theta_{\mathrm{cen}}|\theta_{\mathrm{cen}}\rangle,
 $$
 
-and the **displacement** $D(\alpha)=\exp(\alpha a_{\mathrm{fop}}^{\dagger}-\alpha^*a_{\mathrm{fop}})$ generates it from the vacuum. The central $\mathrm{U}(1)$ acts on the Fock space through $U_{\mathrm{fop},\alpha_0}=\exp(i\alpha_0Ϙ_{\mathrm{fop}})$, the same generator as in the companion field article, and since $[Ϙ_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=+a_{\mathrm{fop}}^{\dagger}$ the coherent state is carried to $|\alpha\rangle\mapsto|\exp(i\alpha_0)\alpha\rangle$; the coherent states are thus the orbit of the vacuum under the semidirect product of the displacement and phase groups, and the charge is the generator of the phase. The biquaternion content here is only that the phase is central: it multiplies the state by a central $*$-unitary and does not rotate any spinor index. There is no native displacement operator in $\mathbb{B}$, for the same trace reason, and the coherent-state construction is imported with the module.
+and the **displacement** $D(\theta_{\mathrm{cen}})=\exp(\theta_{\mathrm{cen}} a_{\mathrm{fop}}^{\dagger}-\theta_{\mathrm{cen}}^*a_{\mathrm{fop}})$ generates it from the vacuum. The central $\mathrm{U}(1)$ acts on the Fock space through $U_{\mathrm{fop},\theta_{\mathrm{cen},0}}=\exp(i\theta_{\mathrm{cen},0}Ϙ_{\mathrm{fop}})$, the same generator as in the companion field article, and since $[Ϙ_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=+a_{\mathrm{fop}}^{\dagger}$ the coherent state is carried to $|\theta_{\mathrm{cen}}\rangle\mapsto|\exp(i\theta_{\mathrm{cen},0})\theta_{\mathrm{cen}}\rangle$; the coherent states are thus the orbit of the vacuum under the semidirect product of the displacement and phase groups, and the charge is the generator of the phase. The biquaternion content here is only that the phase is central: it multiplies the state by a central $*$-unitary and does not rotate any spinor index. There is no native displacement operator in $\mathbb{B}$, for the same trace reason, and the coherent-state construction is imported with the module.
 
 ## What Is Standard and What Is Open
 
@@ -276,8 +276,8 @@ The state space carries two gradings, an $\mathbb{N}$-grading by total number an
 | $\mathrm{Tr}([\tilde Q_2,\tilde Q_1])=0$, $\mathrm{Tr}(e_t)=2$ | Trace identity; no bosonic mode in $\mathbb{B}$ |
 | $\tfrac12(e_t+i\vec e_z)$, $\tfrac12(e_t-i\vec e_z)$ | Fermionic vacuum and occupied idempotents (contrast case) |
 | $\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi)=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})$ | Trace reading at normalisation (Born rule), for finite truncations |
-| $D(\alpha)=\exp(\alpha a_{\mathrm{fop}}^{\dagger}-\alpha^*a_{\mathrm{fop}})$, $\vert\alpha\rangle$ | Displacement operator and coherent state |
-| $U_{\mathrm{fop},\alpha}=\exp(i\alpha Ϙ_{\mathrm{fop}})$, $\vert\alpha\rangle\mapsto\vert \exp(+i\alpha)\alpha\rangle$ | Central $\mathrm{U}(1)$ phase |
+| $D(\theta_{\mathrm{cen}})=\exp(\theta_{\mathrm{cen}} a_{\mathrm{fop}}^{\dagger}-\theta_{\mathrm{cen}}^*a_{\mathrm{fop}})$, $\vert\theta_{\mathrm{cen}}\rangle$ | Displacement operator and coherent state |
+| $U_{\mathrm{fop},\theta_{\mathrm{cen}}}=\exp(i\theta_{\mathrm{cen}} Ϙ_{\mathrm{fop}})$, $\vert\theta_{\mathrm{cen}}\rangle\mapsto\vert \exp(+i\theta_{\mathrm{cen}})\theta_{\mathrm{cen}}\rangle$ | Central $\mathrm{U}(1)$ phase |
 
 ## Further Reading
 

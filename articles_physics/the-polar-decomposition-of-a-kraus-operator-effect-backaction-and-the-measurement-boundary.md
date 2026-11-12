@@ -128,7 +128,7 @@ Trace preservation of a one-Kraus channel is not the same as trace preservation 
 
 ### The Word Off the Cone
 
-Off the null cone the two polar factors refine into the four factors of the polar word. With $\tilde U_{\Psi,\mathrm b}=\exp\bigl(i\tfrac{\theta_{\mathrm{rpd},w}}{2}\vec u_{\mathrm b}\bigr)$ a positive Hermitian boost and $\tilde u_{\mathrm r}=\exp\bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\bigr)$ a unit real quaternion,
+Off the null cone the two polar factors refine into the four factors of the polar word. With $\tilde U_{\Psi,\mathrm b}=\exp\bigl(i\tfrac{\theta_{\mathrm{rpd},w}}{2}\vec u_{\mathrm b}\bigr)$ a positive Hermitian boost and $\tilde u_{\mathrm r}=\exp\bigl(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\bigr)$ a unit real quaternion,
 
 $$
 \tilde M_{\mathrm{kraus}}=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
@@ -147,7 +147,7 @@ The grouping is the Cartan one: the scale sits with the boost and the phase with
 | scale | $r$ | $r>0$ | $1$ | $\tilde M_{\mathrm{kraus},H}$ |
 | phase | $e^{i\theta_{\mathrm{pha}}}$ | $\theta_{\mathrm{pha}}\in[0,2\pi)$ | $1$ | $\tilde M_{\mathrm{kraus},0}$ |
 | boost | $\tilde U_{\Psi,\mathrm b}$ | $\theta_{\mathrm{rpd},w}\ge0$, unit $\vec u_{\mathrm b}$ | $3$ | $\tilde M_{\mathrm{kraus},H}$ |
-| rotor | $\tilde u_{\mathrm r}$ | $\theta\in[0,2\pi)$, unit $\vec u_{\mathrm r}$ | $3$ | $\tilde M_{\mathrm{kraus},0}$ |
+| rotor | $\tilde u_{\mathrm r}$ | $\theta_{\mathrm{axr}}\in[0,2\pi)$, unit $\vec u_{\mathrm r}$ | $3$ | $\tilde M_{\mathrm{kraus},0}$ |
 
 ### The Effect in the Word
 
@@ -169,7 +169,7 @@ Its eigenvector for the larger eigenvalue is $\tilde u_{\mathrm r}^{-1}\vec u_{\
 
 ### The Boost as a Bias
 
-The rotor and the boost are not the same kind of factor. On a state $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r)$ the rotor acts by conjugation, which fixes the scalar part and rotates the Bloch vector by $\theta$ about $\vec u_{\mathrm r}$: the trace is one, the radius is unchanged, and the state stays on its sphere.
+The rotor and the boost are not the same kind of factor. On a state $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r)$ the rotor acts by conjugation, which fixes the scalar part and rotates the Bloch vector by $\theta_{\mathrm{axr}}$ about $\vec u_{\mathrm r}$: the trace is one, the radius is unchanged, and the state stays on its sphere.
 
 The boost changes the trace, mixes the scalar and parallel parts, and leaves the transverse part alone. Writing $\tilde{Ϛ}_{\Psi}=a e_t+i\vec b$ with $a=\tfrac12$ and $\vec b=\tfrac12\vec r$,
 
@@ -295,7 +295,7 @@ The order is fixed by the word: the $*$-unitary factor acts first, then the posi
 
 ### A Worked Unsharp Outcome
 
-Take the strength $\tilde{H}_{\Psi,0}=\tfrac{1+\eta}{2}e_t+\tfrac{\eta-1}{2}i\vec e_z=0.8e_t-0.2i\vec e_z$ with $\eta=0.6$ and eigenvalues $0.6$ and $1$, and the $*$-unitary backaction $\tilde Q_{\mathrm{ba}}=\cos\tfrac{\theta}{2}e_t+\sin\tfrac{\theta}{2}\vec e_x=0.866025404e_t+0.5\vec e_x$ with $\theta=\pi/3$. Set $\tilde M_{\mathrm{kraus}}=\tilde Q_{\mathrm{ba}}\tilde{H}_{\Psi,0}$. The polar factors are
+Take the strength $\tilde{H}_{\Psi,0}=\tfrac{1+\eta}{2}e_t+\tfrac{\eta-1}{2}i\vec e_z=0.8e_t-0.2i\vec e_z$ with $\eta=0.6$ and eigenvalues $0.6$ and $1$, and the $*$-unitary backaction $\tilde Q_{\mathrm{ba}}=\cos\tfrac{\theta_{\mathrm{axr}}}{2}e_t+\sin\tfrac{\theta_{\mathrm{axr}}}{2}\vec e_x=0.866025404e_t+0.5\vec e_x$ with $\theta_{\mathrm{axr}}=\pi/3$. Set $\tilde M_{\mathrm{kraus}}=\tilde Q_{\mathrm{ba}}\tilde{H}_{\Psi,0}$. The polar factors are
 
 $$
 \tilde M_{\mathrm{kraus},H}=\tilde Q_{\mathrm{ba}}\tilde{H}_{\Psi,0}\tilde Q_{\mathrm{ba}}^{*}=0.8e_t+0.173205081i\vec e_y-0.1i\vec e_z,\qquad
@@ -403,7 +403,7 @@ The channel-level statement is the correction that the polar programme makes to 
 | $\tilde M_{\mathrm{kraus},0}=\tilde M_{\mathrm{kraus},H}^{+}\tilde M_{\mathrm{kraus}}$ | partial-isometry (backaction) factor |
 | $\tilde M_{\mathrm{kraus},H}^{+}$ | Moore–Penrose inverse |
 | $\tilde E_{\Psi}=\tilde M_{\mathrm{kraus}}^{*}\tilde M_{\mathrm{kraus}}=\tilde M_{\mathrm{kraus},0}^{*}\tilde M_{\mathrm{kraus},H}^{2}\tilde M_{\mathrm{kraus},0}$ | effect of the outcome |
-| $r,\theta_{\mathrm{pha}},\theta_{\mathrm{rpd},w},\theta$ | scale, central phase, word rapidity, rotor angle |
+| $r,\theta_{\mathrm{pha}},\theta_{\mathrm{rpd},w},\theta_{\mathrm{axr}}$ | scale, central phase, word rapidity, rotor angle |
 | $\tilde U_{\Psi,\mathrm b},\tilde u_{\mathrm r}$ | positive Hermitian boost, unit real quaternion rotor |
 | $\tilde\Pi=\tfrac12(e_t+i\vec u)$ | rank-one Hermitian idempotent, $\vec u$ a real unit vector |
 | $\tilde\Pi_{\mathrm i}=\tilde M_{\mathrm{kraus},0}^{*}\tilde M_{\mathrm{kraus},0}$, $\tilde\Pi_{\mathrm f}=\tilde M_{\mathrm{kraus},0}\tilde M_{\mathrm{kraus},0}^{*}$ | initial and final projections of $\tilde M_{\mathrm{kraus},0}$ |

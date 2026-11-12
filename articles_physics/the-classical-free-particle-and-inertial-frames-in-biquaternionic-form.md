@@ -140,10 +140,10 @@ $$
 A **pure spatial rotation** has a rotor in the real-quaternion subalgebra,
 
 $$
-R = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\,\vec u_{\mathrm r} \in \mathbb{B}_{H} ,
+R = \cos\frac{\theta_{\mathrm{axr}}}{2} + \sin\frac{\theta_{\mathrm{axr}}}{2}\,\vec u_{\mathrm r} \in \mathbb{B}_{H} ,
 $$
 
-which is $*$-unitary, $R^{-1} = R^{\natural} = R^{*}$, and acts on the vector part by $R(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)R^{*}$, rotating $r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ by the angle $\theta$ about the axis $\vec u_{\mathrm r}$. A general Lorentz transformation has its rotor in the full algebra. The classification is that of the companion article *The Lorentz Transformation as a Biquaternionic Rotation*, and the action of the real-quaternion rotors on the vector part is the same adjoint action that the companion article *The Reflection and the Rotation in Biquaternionic Form* develops.
+which is $*$-unitary, $R^{-1} = R^{\natural} = R^{*}$, and acts on the vector part by $R(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)R^{*}$, rotating $r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ by the angle $\theta_{\mathrm{axr}}$ about the axis $\vec u_{\mathrm r}$. A general Lorentz transformation has its rotor in the full algebra. The classification is that of the companion article *The Lorentz Transformation as a Biquaternionic Rotation*, and the action of the real-quaternion rotors on the vector part is the same adjoint action that the companion article *The Reflection and the Rotation in Biquaternionic Form* develops.
 
 ### The Relativity Principle
 
@@ -299,7 +299,7 @@ The free particle occupies only the material sector, carries no internal vector,
 | $\tilde U_{\mathrm{lor}} \in \mathbb{B}$, $\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{\natural} = e_t$ | Lorentz rotor; frame transformation |
 | $\tilde R_\Phi \mapsto \tilde U_{\mathrm{lor}}\tilde R_\Phi\tilde U_{\mathrm{lor}}{}^{*}$ | Rotor conjugation (frame change) |
 | $\tilde U_{\Psi,\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | Boost rotor, in $\mathbb{B}_{\Psi}$; $\tanh\theta_{\mathrm{rpd}} = V/c$ |
-| $R = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\vec u_{\mathrm r}$ | Rotation rotor, in $\mathbb{B}_{H}$ |
+| $R = \cos\frac{\theta_{\mathrm{axr}}}{2} + \sin\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ | Rotation rotor, in $\mathbb{B}_{H}$ |
 | $\langle\tilde R_\Phi\rangle_{\natural} = \tilde R_\Phi\tilde{R}_\Phi^{\natural}$ | Biquaternion norm; invariant interval on $\mathbb{B}_{\Phi}$ |
 | $r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z - \tfrac{\vec V}{c}r'_t$ | Galilean shear (non-relativistic limit) |
 | $SL(2,\mathbb{C})$ | Unit-norm biquaternions, the Lorentz group |

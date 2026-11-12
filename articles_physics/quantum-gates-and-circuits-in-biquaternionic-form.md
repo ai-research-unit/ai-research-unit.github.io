@@ -125,14 +125,14 @@ $$
 
 a proper rotation of $\mathbb{R}^3$. The scalar part of the state is fixed, the norm $|\vec r|$ is preserved, and with it the purity $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}^2) = \tfrac{1}{2}(1 + |\vec r|^2)$ and the spectrum $\lambda_\pm = \tfrac{1}{2}(1\pm|\vec r|)$. A gate rotates the Bloch ball rigidly; it never contracts it.
 
-**Rotation gates.** The unit real quaternion with axis $\vec u_{\mathrm r}$ and angle $\theta$,
+**Rotation gates.** The unit real quaternion with axis $\vec u_{\mathrm r}$ and angle $\theta_{\mathrm{axr}}$,
 
 $$
-\tilde u_{\mathrm r}(\theta) = \cos\frac{\theta}{2}\,e_t + \sin\frac{\theta}{2}\,\vec u_{\mathrm r},
+\tilde u_{\mathrm r}(\theta_{\mathrm{axr}}) = \cos\frac{\theta_{\mathrm{axr}}}{2}\,e_t + \sin\frac{\theta_{\mathrm{axr}}}{2}\,\vec u_{\mathrm r},
 \qquad \vec u_{\mathrm r}^2 = -e_t ,
 $$
 
-acts on the Bloch vector as the rotation by $\theta$ about $\vec u_{\mathrm r}$ (the Rodrigues formula). The half-angle is the double cover: $\tilde u_{\mathrm r}(\theta + 2\pi) = -\tilde u_{\mathrm r}(\theta)$, which is the same rotation and, since $-e_t$ is a central phase, the same gate. The general gate is $\exp(i\theta_{\mathrm{pha}})\tilde u_{\mathrm r}(\theta)$, and modulo the phase it is a rotation.
+acts on the Bloch vector as the rotation by $\theta_{\mathrm{axr}}$ about $\vec u_{\mathrm r}$ (the Rodrigues formula). The half-angle is the double cover: $\tilde u_{\mathrm r}(\theta_{\mathrm{axr}} + 2\pi) = -\tilde u_{\mathrm r}(\theta_{\mathrm{axr}})$, which is the same rotation and, since $-e_t$ is a central phase, the same gate. The general gate is $\exp(i\theta_{\mathrm{pha}})\tilde u_{\mathrm r}(\theta_{\mathrm{axr}})$, and modulo the phase it is a rotation.
 
 ### Involutions: The Hermitian Unitaries
 
@@ -158,7 +158,7 @@ Under the isomorphism $\vec e_\eta \mapsto -i\sigma_\eta$, the image of $i \vec 
 | $H$ (Hadamard) | $\tilde Q_{\mathrm{Had}} = \dfrac{i}{\sqrt{2}}\left(\vec e_x+\vec e_z\right)$ | $\dfrac{1}{\sqrt{2}}\begin{pmatrix}1&1\\1&-1\end{pmatrix}$ | $(r_3,-r_2,r_1)$ |
 | $S$ (phase) | $\tilde Q_{\mathrm{ph}} = \dfrac{1}{\sqrt{2}}\left(e_t+\vec e_z\right)$ | $\operatorname{diag}(\exp(-i\pi/4),\exp(i\pi/4))$ | $(-r_2,r_1,r_3)$ |
 | $T$ ($\pi/8$) | $\tilde Q_{T} = \cos\dfrac{\pi}{8}e_t + \sin\dfrac{\pi}{8}\vec e_z$ | $\operatorname{diag}(\exp(-i\pi/8),\exp(i\pi/8))$ | rotation by $\pi/4$ about $\vec e_z$ |
-| $R_{\vec u_{\mathrm r}}(\theta)$ | $\cos\dfrac{\theta}{2}e_t + \sin\dfrac{\theta}{2}\vec u_{\mathrm r}$ | $\exp(-i\theta\,\vec u_{\mathrm r}\cdot\boldsymbol{\sigma}/2)$ | rotation by $\theta$ about $\vec u_{\mathrm r}$ |
+| $R_{\vec u_{\mathrm r}}(\theta_{\mathrm{axr}})$ | $\cos\dfrac{\theta_{\mathrm{axr}}}{2}e_t + \sin\dfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ | $\exp(-i\theta_{\mathrm{axr}}\,\vec u_{\mathrm r}\cdot\boldsymbol{\sigma}/2)$ | rotation by $\theta_{\mathrm{axr}}$ about $\vec u_{\mathrm r}$ |
 
 The matrix column is the image under $\mathbb{B}\cong M_2(\mathbb{C})$. For $S$ and $T$ the displayed matrices are $\operatorname{diag}(\exp(-i\pi/4),\exp(i\pi/4))$ and $\operatorname{diag}(\exp(-i\pi/8),\exp(i\pi/8))$, which are the standard $S$ and $T$ up to the central phases $\exp(i\pi/4)$ and $\exp(i\pi/8)$; the biquaternion representatives shown are exact, and their matrix images differ from the standard matrices by those phases. This is the representative-dependence noted above.
 
@@ -490,7 +490,7 @@ The channel set is convex, with the gates among its extreme points; the companio
 
 A gate in the biquaternion framework is a **$*$-unitary element** $\tilde Q\in\mathbb{B}$ with $\tilde Q\tilde Q^{*} = e_t$, acting on a state $\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$ by **rotor conjugation** $\tilde{Ϛ}_{\Psi}\mapsto\tilde Q\tilde{Ϛ}_{\Psi}\tilde Q^{*}$. This is exactly the class of channels of Kraus rank one, and exactly the reversible, purity-preserving state maps. The gate group is $\mathrm{U}(2) = \mathrm{U}(1)\cdot SU(2)$: every gate is a central phase times a rotation, and the phase is unobservable, so the effective group is $PU(2)\cong SO(3)$ acting on the Bloch ball. The condition $\tilde Q\tilde Q^{*} = e_t$ is **not** the unit-norm condition $\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{\natural} = e_t$ of the Lorentz rotors: a boost is a rotor on $\mathbb{B}_{\Phi}$ but not a gate on $\mathbb{B}_{\Psi}$.
 
-The standard single-qubit gate set has explicit representatives: the Pauli gates are $\tilde Q_x=i\vec e_x$, $\tilde Q_y=i\vec e_y$, $\tilde Q_z=i\vec e_z$; the Hadamard is $\tilde Q_{\mathrm{Had}}=\tfrac{i}{\sqrt2}(\vec e_x+\vec e_z)$; the phase and $T$ gates are the rotations $\tfrac{1}{\sqrt2}(e_t+\vec e_z)$ and $\cos\tfrac{\pi}{8}e_t+\sin\tfrac{\pi}{8}\vec e_z$; a general gate is $\exp(i\theta_{\mathrm{pha}})(\cos\tfrac{\theta}{2}e_t+\sin\tfrac{\theta}{2}\vec u_{\mathrm r})$. Apart from the identity gate, the Hermitian gates are the $\pi$-rotations $\pm i\vec u_{\mathrm r}$; the Pauli and Hadamard gates are of this type, the phase and $T$ gates are not.
+The standard single-qubit gate set has explicit representatives: the Pauli gates are $\tilde Q_x=i\vec e_x$, $\tilde Q_y=i\vec e_y$, $\tilde Q_z=i\vec e_z$; the Hadamard is $\tilde Q_{\mathrm{Had}}=\tfrac{i}{\sqrt2}(\vec e_x+\vec e_z)$; the phase and $T$ gates are the rotations $\tfrac{1}{\sqrt2}(e_t+\vec e_z)$ and $\cos\tfrac{\pi}{8}e_t+\sin\tfrac{\pi}{8}\vec e_z$; a general gate is $\exp(i\theta_{\mathrm{pha}})(\cos\tfrac{\theta_{\mathrm{axr}}}{2}e_t+\sin\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r})$. Apart from the identity gate, the Hermitian gates are the $\pi$-rotations $\pm i\vec u_{\mathrm r}$; the Pauli and Hadamard gates are of this type, the phase and $T$ gates are not.
 
 **Composition** is the algebra product: applying $\tilde Q_{\mathrm{gate},1}$ then $\tilde Q_{\mathrm{gate},2}$ gives $\tilde Q_{\mathrm{gate},2}\tilde Q_{\mathrm{gate},1}$, and the whole circuit is a single element whose action is a single conjugation. The Pauli group is the sixteen-element set $\{\pm e_t,\pm ie_t,\pm \vec e_\eta,\pm i\vec e_\eta\}$, and the Clifford group is its normaliser in the gate group; $H$ and $S$ generate it, and its image in $PU(2)$ is the octahedral rotation group of order $24$.
 
@@ -518,7 +518,7 @@ The **contrast with the irreversible channels** is the Kraus-rank dichotomy. A c
 | $\tilde Q_x=i\vec e_x,\ \tilde Q_y=i\vec e_y,\ \tilde Q_z=i\vec e_z$ | Pauli gates |
 | $\tilde Q_{\mathrm{Had}}=\tfrac{i}{\sqrt2}(\vec e_x+\vec e_z)$ | Hadamard gate |
 | $\tilde Q_{\mathrm{ph}}=\tfrac{1}{\sqrt2}(e_t+\vec e_z),\ \tilde Q_{T}=\cos\tfrac{\pi}{8}e_t+\sin\tfrac{\pi}{8}\vec e_z$ | Phase and $T$ gates |
-| $\tilde u_{\mathrm r}(\theta)=\cos\tfrac{\theta}{2}e_t+\sin\tfrac{\theta}{2}\vec u_{\mathrm r}$ | General rotation gate |
+| $\tilde u_{\mathrm r}(\theta_{\mathrm{axr}})=\cos\tfrac{\theta_{\mathrm{axr}}}{2}e_t+\sin\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ | General rotation gate |
 | $\mathcal{P}=\{\pm e_t,\pm ie_t,\pm \vec e_\eta,\pm i\vec e_\eta\}$ | Pauli group (16 elements) |
 | $\tilde{Q}_{\tilde Q}=\tilde\Pi_1\otimes e_t+\tilde\Pi_2\otimes\tilde Q$ | Controlled gate |
 | $\mathrm{CNOT}=\tilde\Pi_1(\vec u_z)\otimes e_t+\tilde\Pi_2(\vec u_z)\otimes(i\vec e_x)$ | Controlled-$X$ |

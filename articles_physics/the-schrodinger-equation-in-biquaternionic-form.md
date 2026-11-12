@@ -137,7 +137,7 @@ $$
 \tilde\Xi(r'_t)=\Xi_t(r'_t)\,e_t,
 $$
 
-is called **central**, and for it $\tilde H_\Psi\tilde\Xi=h_t\Xi_t\,e_t$ exactly when $\vec h_\Psi=0$: the equation then reduces to the ordinary one-component equation for $\Xi_t$. The remaining six real parameters are the field's rotor and boost, and *The Polar Form of the Schrödinger Equation in Biquaternionic Form* reads them.
+is called **central**, and for it $\tilde H_\Psi\tilde\Xi=h_t\Xi_t\,e_t$ exactly when $\vec h_\Psi=0$: the equation then reduces to the ordinary one-component equation for $\Xi_t$. The remaining six real parameters are the field's rotor and boost, and *The Schrödinger Equation in Biquaternionic Polar Variables* reads them.
 
 **Why not $\mathbb{B}_{\Psi}$.** The temptation is to let the state $\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$ of the companion article serve as the field. The equation rules it out, and the reason is closure. The field is multiplied on the left by every Hermitian element, because the Hamiltonian is arbitrary, so the carrier must be closed under left multiplication by $\mathbb{B}_{\Psi}$. The sector is not closed under its own products: $(i\vec e_x)(i\vec e_y)=-\vec e_z\in\mathbb{B}_{\Phi}$, so a field confined to $\mathbb{B}_{\Psi}$ is multiplied out of it by its own equation. Every element of $\mathbb{B}$ is a sum of a Hermitian and an anti-Hermitian part,
 

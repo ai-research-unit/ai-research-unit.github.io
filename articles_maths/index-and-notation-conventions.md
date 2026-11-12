@@ -234,7 +234,7 @@ The table is an index of labels and not a list of tokens: a label names an objec
 | Label | Names |
 |---|---|
 | $\theta_{\mathrm{axc}}$ | the axicon angle of a Bessel beam |
-| $\theta_{\mathrm{axr}}$ | the rotation angle about an arbitrary axis |
+| $\theta_{\mathrm{axr}}$ | the rotation angle of a rotor about an arbitrary axis |
 | $\theta_{\mathrm{axs}}$ | the rotation angle about $\vec u_y$ in the Majorana chart |
 | $\theta_{\mathrm{azm}}$ | the azimuthal angle |
 | $\theta_{\mathrm{blc}}$ | the angle the Bloch vector turns |

@@ -16,11 +16,11 @@ The polar decomposition writes an element of non-vanishing norm as four factors,
 
 $$
 \tilde Q=\Rho\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
-=r\exp(i\theta_{\mathrm{pha}})\exp\Bigl(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\exp\Bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\Bigr),
+=r\exp(i\theta_{\mathrm{pha}})\exp\Bigl(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\exp\Bigl(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\Bigr),
 \qquad \Rho=r\exp(i\theta_{\mathrm{pha}}),
 $$
 
-the four being the scale $r>0$, the central phase $\exp(i\theta_{\mathrm{pha}})$ collected in $\Rho$, the Hermitian positive boost $\tilde U_{\mathrm b}$ of rapidity $\theta_{\mathrm{rpd}}\ge0$ about the real unit axis $\vec u_{\mathrm b}$, and the rotor $\tilde u_{\mathrm r}$ of angle $\theta\in[0,2\pi]$ about the real unit axis $\vec u_{\mathrm r}$. This article reads the two-sided operator one factor at a time and answers one question: **what does each factor do to the operator?** The answer is read one factor at a time, and the phase does nothing.
+the four being the scale $r>0$, the central phase $\exp(i\theta_{\mathrm{pha}})$ collected in $\Rho$, the Hermitian positive boost $\tilde U_{\mathrm b}$ of rapidity $\theta_{\mathrm{rpd}}\ge0$ about the real unit axis $\vec u_{\mathrm b}$, and the rotor $\tilde u_{\mathrm r}$ of angle $\theta_{\mathrm{axr}}\in[0,2\pi]$ about the real unit axis $\vec u_{\mathrm r}$. This article reads the two-sided operator one factor at a time and answers one question: **what does each factor do to the operator?** The answer is read one factor at a time, and the phase does nothing.
 
 The article is the vector-side companion of *The Polar Decomposition of an N-Regular Biquaternion*, §*The Operator Reading: the Twist*. There the same word acts by left multiplication on the spinor module and all four factors are visible: the scale and the phase form the twist $\chi(\Rho)=\Rho$, and the boost and the rotor form the norm-one operator. Here the action is the two-sided operator on the algebra, the phase is invisible, and the boost and the rotor are the only factors that act on a vector by a Lorentz transformation. The one-sided companion is *N-Regular, Spectrally Regular Operators Acting on One Side*: there the same word is read through a single left or right multiplication, the phase is visible, and the two real forms $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ are exchanged at $\theta_{\mathrm{pha}}=\tfrac{\pi}{2}$. The exponent reading of the two slots is in *The Two-Sided Exponential of an N-Regular, Spectrally Regular Biquaternion*.
 
@@ -56,10 +56,10 @@ $$
 \tilde Q=\Rho\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},\qquad
 \Rho=r\exp(i\theta_{\mathrm{pha}}),\qquad
 \tilde U_{\mathrm b}=\exp\Bigl(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr),\qquad
-\tilde u_{\mathrm r}=\exp\Bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\Bigr),
+\tilde u_{\mathrm r}=\exp\Bigl(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\Bigr),
 $$
 
-with $r>0$, $\theta_{\mathrm{pha}}\in\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right]$, $\theta_{\mathrm{rpd}}\ge0$, $\theta\in[0,2\pi]$, and $\vec u_{\mathrm b},\vec u_{\mathrm r}$ real unit vectors. The modulus is $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}$ on the principal branch, so $r=\lvert\Rho\rvert$ and $\theta_{\mathrm{pha}}=\tfrac12\arg \langle\tilde Q\rangle_{\natural}$. The factors satisfy
+with $r>0$, $\theta_{\mathrm{pha}}\in\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right]$, $\theta_{\mathrm{rpd}}\ge0$, $\theta_{\mathrm{axr}}\in[0,2\pi]$, and $\vec u_{\mathrm b},\vec u_{\mathrm r}$ real unit vectors. The modulus is $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}$ on the principal branch, so $r=\lvert\Rho\rvert$ and $\theta_{\mathrm{pha}}=\tfrac12\arg \langle\tilde Q\rangle_{\natural}$. The factors satisfy
 
 $$
 \Rho^{*}=\bar\Rho,\qquad \tilde U_{\mathrm b}^{*}=\tilde U_{\mathrm b},\qquad \tilde u_{\mathrm r}^{*}=\tilde u_{\mathrm r}^{\natural}=\tilde u_{\mathrm r}^{-1},\qquad \langle\tilde U_{\mathrm b}\rangle_{\natural}=\langle\tilde u_{\mathrm r}\rangle_{\natural}=1 .
@@ -299,9 +299,9 @@ with $B_+=B_-^{-1}$. Each preserves its form, $B_\pm^{T}G_\pm B_\pm=G_\pm$, wher
 The rotor is
 
 $$
-\tilde u_{\mathrm r}=\exp\Bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\Bigr)
-=\cos\tfrac{\theta}{2}\,e_t+\sin\tfrac{\theta}{2}\,\vec u_{\mathrm r},
-\qquad \theta\in[0,2\pi],\qquad \lvert\vec u_{\mathrm r}\rvert=1 .
+\tilde u_{\mathrm r}=\exp\Bigl(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\Bigr)
+=\cos\tfrac{\theta_{\mathrm{axr}}}{2}\,e_t+\sin\tfrac{\theta_{\mathrm{axr}}}{2}\,\vec u_{\mathrm r},
+\qquad \theta_{\mathrm{axr}}\in[0,2\pi],\qquad \lvert\vec u_{\mathrm r}\rvert=1 .
 $$
 
 It is a real quaternion, of norm one, and $*$-unitary,
@@ -321,21 +321,21 @@ $$
 The two-sided operator is a conjugation by an invertible element, hence an algebra automorphism. On a general element $\tilde X=X_te_t+\vec X$ it fixes the scalar part and rotates the vector part,
 
 $$
-\mathrm{Sd}_{\tilde u_{\mathrm r}}(\tilde X)=X_te_t+\mathsf R(\theta,\vec u_{\mathrm r})\,\vec X,
+\mathrm{Sd}_{\tilde u_{\mathrm r}}(\tilde X)=X_te_t+\mathsf R(\theta_{\mathrm{axr}},\vec u_{\mathrm r})\,\vec X,
 $$
 
 where $\mathsf R$ is the Rodrigues rotation
 
 $$
-\mathsf R(\theta,\vec u_{\mathrm r})=I_3+\sin\theta\,[\vec u_{\mathrm r}]_\times+(1-\cos\theta)\,[\vec u_{\mathrm r}]_\times^{2},
+\mathsf R(\theta_{\mathrm{axr}},\vec u_{\mathrm r})=I_3+\sin\theta_{\mathrm{axr}}\,[\vec u_{\mathrm r}]_\times+(1-\cos\theta_{\mathrm{axr}})\,[\vec u_{\mathrm r}]_\times^{2},
 $$
 
 or, on a vector $\vec X$,
 
 $$
-\mathsf R(\theta,\vec u_{\mathrm r})\,\vec X
-=\vec X\cos\theta+(\vec u_{\mathrm r}\times\vec X)\sin\theta
-+\vec u_{\mathrm r}(\vec u_{\mathrm r}\cdot\vec X)(1-\cos\theta).
+\mathsf R(\theta_{\mathrm{axr}},\vec u_{\mathrm r})\,\vec X
+=\vec X\cos\theta_{\mathrm{axr}}+(\vec u_{\mathrm r}\times\vec X)\sin\theta_{\mathrm{axr}}
++\vec u_{\mathrm r}(\vec u_{\mathrm r}\cdot\vec X)(1-\cos\theta_{\mathrm{axr}}).
 $$
 
 On $\mathbb{B}_{\Phi}$ the rotor fixes the time direction $ie_t$ and rotates $\vec b$; on $\mathbb{B}_{\Psi}$ it fixes $e_t$ and rotates $i\vec b$. The formula is the same on the two sectors because $i$ is central.
@@ -476,7 +476,7 @@ $$
 \mathrm{Sd}_{\exp(i\theta_{\mathrm{pha}})}=\mathrm{id}.
 $$
 
-The scale dilates by $r^{2}$. The phase cancels: the whole $U(1)$-orbit of an element has one two-sided operator, because the phase is central and $*$-unitary. The boost is a congruence by the Hermitian positive $\tilde U_{\mathrm b}$, and the rotor is an inner automorphism; on the norm-one slice they produce the rapidity $\theta_{\mathrm{rpd}}$ and the rotation of angle $\theta$. The norm scales by $\lvert\langle\tilde Q\rangle_{\natural}\rvert^{2}$, so the two-sided operator is an isometry on the unit-norm slice.
+The scale dilates by $r^{2}$. The phase cancels: the whole $U(1)$-orbit of an element has one two-sided operator, because the phase is central and $*$-unitary. The boost is a congruence by the Hermitian positive $\tilde U_{\mathrm b}$, and the rotor is an inner automorphism; on the norm-one slice they produce the rapidity $\theta_{\mathrm{rpd}}$ and the rotation of angle $\theta_{\mathrm{axr}}$. The norm scales by $\lvert\langle\tilde Q\rangle_{\natural}\rvert^{2}$, so the two-sided operator is an isometry on the unit-norm slice.
 
 The spectral form of the pairing is the product formula. The left and right slots commute, and their eigenvalues are $\lambda_\pm$ and $\bar\lambda_\pm$. The spectrum of the two-sided operator is
 $$
@@ -506,7 +506,7 @@ The phase is the one factor that the two-sided operator does not see. It is visi
 | $P=\exp(i\theta_{\mathrm{pha}})$ | the central phase factor |
 | $r>0$, $\theta_{\mathrm{pha}}\in\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right]$ | the scale and the phase angle |
 | $\tilde U_{\mathrm b}=\exp(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})$ | the Hermitian positive unit-norm boost |
-| $\tilde u_{\mathrm r}=\exp(\tfrac{\theta}{2}\vec u_{\mathrm r})$ | the unit real quaternion rotor |
+| $\tilde u_{\mathrm r}=\exp(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r})$ | the unit real quaternion rotor |
 | $\lambda_\pm=Q_t\pm iB$, $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$ | the two eigenvalues of $L_{\tilde Q}$, and of $R_{\tilde Q}$ |
 | $\lambda_i\bar\lambda_j$ | the four eigenvalues of the two-sided operator in its common eigenbasis |
 | $\Delta=\operatorname{diag}(\lambda_+,\lambda_-)$ | the matrix of $\tilde Q$ in the eigenbasis matrix model |
@@ -514,9 +514,9 @@ The phase is the one factor that the two-sided operator does not see. It is visi
 | $\rho,\bar\rho$ | the defining representation on $S$ and its conjugate |
 | $\mathsf M^{\tilde Q}$ | the eigenbasis matrix model, not the Pauli model $\mathsf M_2$ |
 | $\tilde\Pi_\pm$, $S_\pm=\mathbb{B}\tilde\Pi_\pm$ | the eigenprojections and the two left ideals of the one-sided reading (Peirce index) |
-| $\theta_{\mathrm{rpd}}\ge0$, $\theta\in[0,2\pi]$ | the rapidity and the rotation angle |
+| $\theta_{\mathrm{rpd}}\ge0$, $\theta_{\mathrm{axr}}\in[0,2\pi]$ | the rapidity and the rotation angle |
 | $B_\pm$ | the $4\times4$ matrices of the boost on $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ |
-| $\mathsf R(\theta,\vec u_{\mathrm r})$ | the Rodrigues rotation matrix of the rotor |
+| $\mathsf R(\theta_{\mathrm{axr}},\vec u_{\mathrm r})$ | the Rodrigues rotation matrix of the rotor |
 | $G_\pm$ | the matrices of the norm on the two sectors, $G_+=\operatorname{diag}(1,-1,-1,-1)$ and $G_-=-G_+$ |
 | $CO^{+}(1,3)$ | the linear conformal Lorentz group, the image of the two-sided operator |
 | $U(1)$ | the kernel of the two-sided operator, the central unit circle |

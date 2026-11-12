@@ -249,10 +249,10 @@ The reduction also identifies the coupling's meaning: $\kappa=g\,g_{\mathrm t}Ϙ
 A complex central scalar field carries the transformation
 
 $$
-\tilde{Ξ}\ \longrightarrow\ \exp(i\alpha)\,\tilde{Ξ}, \qquad \alpha\in\mathbb{R},
+\tilde{Ξ}\ \longrightarrow\ \exp(i\theta_{\mathrm{cen}})\,\tilde{Ξ}, \qquad \theta_{\mathrm{cen}}\in\mathbb{R},
 $$
 
-which acts on the single complex component by multiplication. Because $i$ is central, $\exp(i\alpha)$ commutes with every element of $\mathbb{B}$ and in particular with the gradient, so the transformation is a symmetry of the field equation for constant $\alpha$. This is the framework's **central phase**, the natural continuous symmetry of the algebra; for the central scalar field it is literally a global $\mathrm{U}(1)$ acting on the scalar line, and it is the reason the scalar field can carry a charge at all.
+which acts on the single complex component by multiplication. Because $i$ is central, $\exp(i\theta_{\mathrm{cen}})$ commutes with every element of $\mathbb{B}$ and in particular with the gradient, so the transformation is a symmetry of the field equation for constant $\theta_{\mathrm{cen}}$. This is the framework's **central phase**, the natural continuous symmetry of the algebra; for the central scalar field it is literally a global $\mathrm{U}(1)$ acting on the scalar line, and it is the reason the scalar field can carry a charge at all.
 
 ### The Conserved Current
 
@@ -359,7 +359,7 @@ $$
 
 whose massless limit $E=-\kappa/r$ is exactly the inverse-square central potential of the sibling article *The Relativistic Central Force Problem in Biquaternionic Form*. The force is central because the field's value space is the rotationally invariant subspace, so $[\vec r,\vec F]=0$, the angular momentum $\vec L=\tfrac12[\vec r,\vec p]$ is conserved, and the orbit is the precessing conic of that article in the massless case.
 
-The complex field carries the algebra's central phase $\tilde{Ξ}\mapsto \exp(i\alpha)\tilde{Ξ}$, with conserved current $\tilde J_{\Phi}=\tfrac{i}{2}(\xi^*\tilde\nabla_\Phi\xi-\xi\,\tilde\nabla_\Phi\xi^*)$. A central scalar field has one component and no internal vector direction, so it has no spin, no vector potential and no intrinsic magnetic moment: the absence of intrinsic magnetism is a consequence of the field's living in the centre, and it is the field-theoretic content of the spin-zero subcategory.
+The complex field carries the algebra's central phase $\tilde{Ξ}\mapsto \exp(i\theta_{\mathrm{cen}})\tilde{Ξ}$, with conserved current $\tilde J_{\Phi}=\tfrac{i}{2}(\xi^*\tilde\nabla_\Phi\xi-\xi\,\tilde\nabla_\Phi\xi^*)$. A central scalar field has one component and no internal vector direction, so it has no spin, no vector potential and no intrinsic magnetic moment: the absence of intrinsic magnetism is a consequence of the field's living in the centre, and it is the field-theoretic content of the spin-zero subcategory.
 
 ## Summary of Notation
 

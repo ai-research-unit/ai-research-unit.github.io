@@ -11,19 +11,19 @@ $$
 \qquad
 \tilde U_{\Psi,\mathrm b}=\exp\left(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\right),
 \qquad
-\tilde u_{\mathrm r}=\exp\left(\frac{\theta}{2}\vec u_{\mathrm r}\right),
+\tilde u_{\mathrm r}=\exp\left(\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\right),
 $$
 
 Here $\theta_{\mathrm{pha}}$ is the phase of the polar form: it is the argument of the central complex scalar, a real angle taken modulo a full turn, and the exponential that carries it is $\exp(i\theta_{\mathrm{pha}})$.
 
-with $r>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd}}\ge0$, $\theta\in[0,2\pi]$, and $\vec u_{\mathrm b},\vec u_{\mathrm r}$ unit real pure quaternions. The norm is $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$
+with $r>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd}}\ge0$, $\theta_{\mathrm{axr}}\in[0,2\pi]$, and $\vec u_{\mathrm b},\vec u_{\mathrm r}$ unit real pure quaternions. The norm is $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$
 **The boost factor is not a phase, and the evaluation shows why.** With $\vec u_{\mathrm b}^2=-e_t$ the argument squares to $\bigl(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\bigr)^2=+\tfrac{\theta_{\mathrm{rpd}}^2}{4}\,e_t$, positive, so the series sums to the hyperbolic pair
 
 $$
 \tilde U_{\Psi,\mathrm b}=\cosh\frac{\theta_{\mathrm{rpd}}}{2}\,e_t+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b} .
 $$
 
-The scalar part is real and at least one, so the factor grows instead of turning; only the bivector part carries the $i$. The rotor is the opposite case: no $i$ stands in front of it, $\vec u_{\mathrm r}^2=-e_t$ makes the argument square negative, and $\tilde u_{\mathrm r}=\cos\tfrac{\theta}{2}\,e_t+\sin\tfrac{\theta}{2}\,\vec u_{\mathrm r}$ has modulus one. Reading $\exp(i\theta\vec u)$ as an imaginary quantity is the error the two signs separate.
+The scalar part is real and at least one, so the factor grows instead of turning; only the bivector part carries the $i$. The rotor is the opposite case: no $i$ stands in front of it, $\vec u_{\mathrm r}^2=-e_t$ makes the argument square negative, and $\tilde u_{\mathrm r}=\cos\tfrac{\theta_{\mathrm{axr}}}{2}\,e_t+\sin\tfrac{\theta_{\mathrm{axr}}}{2}\,\vec u_{\mathrm r}$ has modulus one. Reading $\exp(i\theta_{\mathrm{axr}}\vec u)$ as an imaginary quantity is the error the two signs separate.
 , and the element is a unit exactly when $r\neq0$. The material four-momentum is
 
 $$
@@ -57,7 +57,7 @@ The four factors carry the eight real parameters of the algebra.
 | 1 | $r$ | scale | — | $r>0$ | $1$ |
 | 2 | $e^{i\theta_{\mathrm{pha}}}$ | central phase | $i\theta_{\mathrm{pha}}$ | $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ | $1$ |
 | 3 | $\tilde U_{\Psi,\mathrm b}$ | boost | $i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | $\theta_{\mathrm{rpd}}\ge0$ | $3$ |
-| 4 | $\tilde u_{\mathrm r}$ | rotor | $\frac{\theta}{2}\vec u_{\mathrm r}$ | $\theta\in[0,2\pi]$ | $3$ |
+| 4 | $\tilde u_{\mathrm r}$ | rotor | $\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ | $\theta_{\mathrm{axr}}\in[0,2\pi]$ | $3$ |
 
 The norm of the word is
 
@@ -246,7 +246,7 @@ The physical reading of the path dependence is that the massless limit is not a 
 The element has a limit and the generator does not. The formal exponent of the word is
 
 $$
-\tilde Q_{\log}(\theta_{\mathrm{rpd}})=\ln r+i\theta_{\mathrm{pha}}+i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}+\frac{\theta}{2}\vec u_{\mathrm r},
+\tilde Q_{\log}(\theta_{\mathrm{rpd}})=\ln r+i\theta_{\mathrm{pha}}+i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}+\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r},
 $$
 
 with $\ln r=\ln R-\theta_{\mathrm{rpd}}/2\to-\infty$ and $\theta_{\mathrm{rpd}}/2\to+\infty$. The true logarithm differs from it by the BCH correction, a boost of order $\theta_{\mathrm{rpd}}$ that changes the coefficient of the divergence and not its presence (*The Exponential Word and Its Boundary*). The two divergent terms cancel in the element, because the boost's growth and the scale's collapse are the same exponential, but they do not cancel in the exponent. The generator of the boundary value does not exist.
@@ -302,7 +302,7 @@ For the material momentum the data are $r=mc$, $\varkappa_{\mathrm{phs}}=i$, $\v
 | $\tilde Q=r e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | the polar word |
 | $r>0$, $\varkappa_{\mathrm{phs}}=e^{i\theta_{\mathrm{pha}}}$ | the scale and the central phase |
 | $\tilde U_{\Psi,\mathrm b}=e^{i\theta_{\mathrm{rpd}}\vec u_{\mathrm b}/2}$ | the boost factor at word rapidity $\theta_{\mathrm{rpd}}$ and axis $\vec u_{\mathrm b}$ |
-| $\tilde u_{\mathrm r}=e^{\theta\vec u_{\mathrm r}/2}$ | the rotor of angle $\theta$ |
+| $\tilde u_{\mathrm r}=e^{\theta_{\mathrm{axr}}\vec u_{\mathrm r}/2}$ | the rotor of angle $\theta_{\mathrm{axr}}$ |
 | $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ | the biquaternion norm |
 | $L=\frac{R\varkappa_{\mathrm{phs}}}{2}(e_t+i\vec u_{\mathrm b})\tilde u_{\mathrm r}$ | the boundary value |
 | $\tilde u_{\mathrm r}=a e_t+b\vec u_{\mathrm b}+\tilde u_\perp$ | the rotor in the frame of the boost |

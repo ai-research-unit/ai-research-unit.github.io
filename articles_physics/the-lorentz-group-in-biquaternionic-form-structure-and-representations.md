@@ -44,10 +44,10 @@ $$
 =\cosh\frac{\theta_{\mathrm{rpd}}}{2}+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b},
 \qquad \tanh\theta_{\mathrm{rpd}}=\frac{v_b}{c},
 $$
-where $v_b=|\vec v_b|$ is the speed of the boosted frame. It is Hermitian, $\tilde U_{\Psi,\mathrm b}^{*}=\tilde U_{\Psi,\mathrm b}$, hence lies in $\mathbb{B}_{\Psi}$, and it has unit norm; with the positivity required by the polar word it is the boost factor of a general rotor. A **pure spatial rotation** about $\vec u_{\mathrm r}\in\mathbb{B}_{H}$ by angle $\theta$ is
+where $v_b=|\vec v_b|$ is the speed of the boosted frame. It is Hermitian, $\tilde U_{\Psi,\mathrm b}^{*}=\tilde U_{\Psi,\mathrm b}$, hence lies in $\mathbb{B}_{\Psi}$, and it has unit norm; with the positivity required by the polar word it is the boost factor of a general rotor. A **pure spatial rotation** about $\vec u_{\mathrm r}\in\mathbb{B}_{H}$ by angle $\theta_{\mathrm{axr}}$ is
 $$
-\tilde u_{\mathrm r}=\exp\!\left(\frac{\theta}{2}\,\vec u_{\mathrm r}\right)
-=\cos\frac{\theta}{2}+\sin\frac{\theta}{2}\,\vec u_{\mathrm r},
+\tilde u_{\mathrm r}=\exp\!\left(\frac{\theta_{\mathrm{axr}}}{2}\,\vec u_{\mathrm r}\right)
+=\cos\frac{\theta_{\mathrm{axr}}}{2}+\sin\frac{\theta_{\mathrm{axr}}}{2}\,\vec u_{\mathrm r},
 $$
 a real quaternion of unit norm, lying in $\mathbb{B}_{H}$. The distinction between the two is exactly the factor of $i$ in the vector part: $(\vec u_{\mathrm r})^2=-e_t$ for a rotation, $(i\vec u_{\mathrm b})^2=+e_t$ for a boost.
 
@@ -71,7 +71,7 @@ The identity is $e_t$, and the inverse is the quaternion conjugate,
 $$
 \tilde U_{\mathrm{lor}}{}^{-1}=\tilde U_{\mathrm{lor}}{}^{\natural},
 $$
-since $\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{\natural}=\tilde U_{\mathrm{lor}}{}^{\natural}\tilde U_{\mathrm{lor}}=\langle\tilde U_{\mathrm{lor}}\rangle_{\natural}=e_t$; the biquaternion norm of a biquaternion is central, so the two-sided inverse is the quaternion conjugate. For a boost this gives $\tilde U_{\Psi,\mathrm b}(\vec u_{\mathrm b},\theta_{\mathrm{rpd}})^{-1}=\tilde U_{\Psi,\mathrm b}(\vec u_{\mathrm b},-\theta_{\mathrm{rpd}})=\tilde U_{\Psi,\mathrm b}^{\natural}$, and for a rotation $\tilde u_{\mathrm r}(\vec u_{\mathrm r},\theta)^{-1}=\tilde u_{\mathrm r}(\vec u_{\mathrm r},-\theta)$.
+since $\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{\natural}=\tilde U_{\mathrm{lor}}{}^{\natural}\tilde U_{\mathrm{lor}}=\langle\tilde U_{\mathrm{lor}}\rangle_{\natural}=e_t$; the biquaternion norm of a biquaternion is central, so the two-sided inverse is the quaternion conjugate. For a boost this gives $\tilde U_{\Psi,\mathrm b}(\vec u_{\mathrm b},\theta_{\mathrm{rpd}})^{-1}=\tilde U_{\Psi,\mathrm b}(\vec u_{\mathrm b},-\theta_{\mathrm{rpd}})=\tilde U_{\Psi,\mathrm b}^{\natural}$, and for a rotation $\tilde u_{\mathrm r}(\vec u_{\mathrm r},\theta_{\mathrm{axr}})^{-1}=\tilde u_{\mathrm r}(\vec u_{\mathrm r},-\theta_{\mathrm{axr}})$.
 
 **Dimension and topology.** As a real Lie group, $SL(2,\mathbb{C})$ has real dimension $6$ (complex dimension $3$); its maximal compact subgroup is $SU(2)$, the rotation group. It is connected and simply connected. These facts belong to the companion articles on the exponential and on biquaternion topology; the relevant consequence is used below.
 
@@ -143,7 +143,7 @@ $$
 \tilde U_{\mathrm{lor},1}\tilde U_{\mathrm{lor},2}=\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
 \qquad \tilde U_{\Psi,\mathrm b}\in\mathcal{B},\quad \tilde u_{\mathrm r}\in SU(2).
 $$
-The factor $\tilde U_{\Psi,\mathrm b}$ is a boost; the factor $\tilde u_{\mathrm r}$ is the **Thomas–Wigner rotation**. If $\theta\in[0,\pi]$ is the angle between the two boost directions, the rotation angle $\theta_{\mathrm{wgn}}$ is determined by
+The factor $\tilde U_{\Psi,\mathrm b}$ is a boost; the factor $\tilde u_{\mathrm r}$ is the **Thomas–Wigner rotation**. If $\theta_{\mathrm{axr}}\in[0,\pi]$ is the angle between the two boost directions, the rotation angle $\theta_{\mathrm{wgn}}$ is determined by
 $$
 \boxed{\ \tan\frac{\theta_{\mathrm{wgn}}}{2}
 =\frac{\sinh\frac{\theta_{\mathrm{rpd},1}}{2}\,\sinh\frac{\theta_{\mathrm{rpd},2}}{2}\,\sin\theta}
@@ -449,7 +449,7 @@ The group that carries the transformations is represented as follows. The group 
 | $\tilde{Q}\mapsto\tilde U_{\mathrm{lor}}\tilde{Q}\tilde U_{\mathrm{lor}}{}^{*}$ | Rotor conjugation (four-vector action) |
 | $\mathrm{Ad}:SL(2,\mathbb{C})\to SO^+(1,3)$ | Two-to-one covering homomorphism, kernel $\{\pm e_t\}$ |
 | $\\tilde U_{\\Psi,\\mathrm b}=\\cosh\\frac\\theta_{\\mathrm{rpd}}2+i\\sinh\\frac\\theta_{\\mathrm{rpd}}2\\vec u_{\\mathrm b}$ | Boost rotor (Hermitian positive, in $\mathbb{B}_{\Psi}$) |
-| $\tilde u_{\mathrm r}=\cos\frac\theta2+\sin\frac\theta2\vec u_{\mathrm r}$ | Rotation rotor (unit real quaternion, in $SU(2)$) |
+| $\tilde u_{\mathrm r}=\cos\tfrac{\theta_{\mathrm{axr}}}{2}+\sin\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ | Rotation rotor (unit real quaternion, in $SU(2)$) |
 | $\theta_{\mathrm{rpd}}$ | Rapidity, $\tanh\theta_{\mathrm{rpd}}=v_b/c$ |
 | $\theta_{\mathrm{wgn}}$ | Thomas–Wigner rotation angle |
 | $\tilde U_{\mathrm{lor}}=\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | Cartan (polar) decomposition: boost times rotation |

@@ -36,7 +36,7 @@ The findings are the following, and they are separated at the outset in the corp
 
 ## The Invariant Potential and Its Symmetry
 
-The scalar sector of the framework is a single complex central field, and its symmetry is the $*$-unitary part of the centre. The general renormalizable potential that is invariant under the central phase $\xi\mapsto \exp(i\alpha)\xi$ and real as a density is an arbitrary function of the invariant $\rho = \xi^*\xi = \mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})$,
+The scalar sector of the framework is a single complex central field, and its symmetry is the $*$-unitary part of the centre. The general renormalizable potential that is invariant under the central phase $\xi\mapsto \exp(i\theta_{\mathrm{cen}})\xi$ and real as a density is an arbitrary function of the invariant $\rho = \xi^*\xi = \mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})$,
 
 $$
 V(\tilde{Ξ}) = V(\rho), \qquad \rho = \mathrm{Sc}\!\left(\tilde{Ξ}^{*}\tilde{Ξ}\right) = |\xi|^2 ,
@@ -62,7 +62,7 @@ v_0 = \frac{v}{\sqrt2} ,
 \lambda = 4\beta ,
 $$
 
-so that the physical vacuum value $|\xi| = v_0$ is the same number in both. Writing $\xi = \tfrac{1}{\sqrt2}(\sqrt2\,v_0 + h)\exp(i\theta/(\sqrt2 v_0))$ with $h, \theta$ real gives the radial mass
+so that the physical vacuum value $|\xi| = v_0$ is the same number in both. Writing $\xi = \tfrac{1}{\sqrt2}(\sqrt2\,v_0 + h)\exp(i\theta_{\mathrm{fld}}/(\sqrt2 v_0))$ with $h, \theta_{\mathrm{fld}}$ real gives the radial mass
 
 $$
 m_h^2 = \left.\frac{d^2V_0}{dh^2}\right|_{h=0} = \lambda v_0^2 ,
@@ -94,10 +94,10 @@ V_\text{eff}(\xi_c) = -\frac{\Gamma[\xi_c]}{\text{vol}},
 \frac{\partial^2 V_\text{eff}}{\partial \xi_c\,\partial \xi_c^*} \ge 0 \ \Longleftrightarrow\ \text{stability}.
 $$
 
-Two consequences of the definition are used repeatedly below. The first is that the effective potential inherits the symmetry of the action: because the action is invariant under $\xi_c \mapsto \exp(i\alpha)\xi_c$, so is $\Gamma$, and therefore $V_\text{eff}$ is a function of the invariant $\rho_c = \xi_c^*\xi_c$ alone,
+Two consequences of the definition are used repeatedly below. The first is that the effective potential inherits the symmetry of the action: because the action is invariant under $\xi_c \mapsto \exp(i\theta_{\mathrm{cen}})\xi_c$, so is $\Gamma$, and therefore $V_\text{eff}$ is a function of the invariant $\rho_c = \xi_c^*\xi_c$ alone,
 
 $$
-\frac{\partial V_\text{eff}}{\partial \alpha}\Big|_{\xi_c = \exp(i\alpha)\sqrt{\rho_c}} = 0
+\frac{\partial V_\text{eff}}{\partial \theta_{\mathrm{cen}}}\Big|_{\xi_c = \exp(i\theta_{\mathrm{cen}})\sqrt{\rho_c}} = 0
 \qquad\Longrightarrow\qquad
 V_\text{eff}(\xi_c) = \mathcal{V}_\text{eff}(\rho_c).
 $$

@@ -14,7 +14,7 @@
 ## Further Reading
 
 - *The Schrödinger Equation in Biquaternionic Form*, for the equation whose action this is, its solution and its carrier.
-- *The Polar Form of the Schrödinger Equation in Biquaternionic Form*, for the word of the field, the two norms, and the pair that A's Hamiltonian reproduces.
+- *The Schrödinger Equation in Biquaternionic Polar Variables*, for the word of the field, the two norms, and the pair that A's Hamiltonian reproduces.
 - *The Schrödinger Path Integral in Biquaternionic Form*, for the sum over path phases, an independent construction with its own objects.
 - *Lagrangian and Hamiltonian Mechanics in Biquaternionic Form*, for the action, the Legendre transform and the phase-space biquaternion in the non-quantum setting.
 - *The Symplectic Form and the Biquaternion Norm Cone*, for the symplectic structure that A's boundary term reproduces on the space of fields.

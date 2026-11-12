@@ -163,7 +163,7 @@ which is (minus) the second cumulant of the charge per unit volume. Because the 
 
 **The $\theta_{\mathrm{vac}}$ term in the effective action.** Equivalently, the effective action acquires the term
 $$
-\Gamma_\theta_{\mathrm{vac}} = -i\log Z(\theta_{\mathrm{vac}}) \supset \frac{\theta^2}{2}\,\xi\,V
+\Gamma_{\theta_{\mathrm{vac}}} = -i\log Z(\theta_{\mathrm{vac}}) \supset \frac{\theta_{\mathrm{vac}}^2}{2}\,\xi\,V
 $$
 at small $\theta_{\mathrm{vac}}$, so that a nonzero $\xi$ is what makes $\theta_{\mathrm{vac}}$ a physical parameter with observable consequences. This is standard and is the quantity that enters, for instance, the mass of the would-be Goldstone boson of the axial symmetry in the presence of the anomaly; that application belongs to the particle-physics category and is not pursued here.
 

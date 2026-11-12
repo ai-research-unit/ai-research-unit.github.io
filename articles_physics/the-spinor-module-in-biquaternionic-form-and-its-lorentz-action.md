@@ -75,7 +75,7 @@ The subgroups relevant to the series sit inside it as follows.
 | Element | Characterization | Sector |
 |---|---|---|
 | Pure boost $\tilde U_{\Psi,\mathrm b}=\cosh\frac{\zeta}{2}\,e_t+i\sinh\frac{\zeta}{2}\vec u_{\mathrm b}$ | Hermitian, norm one | $\mathbb{B}_{\Psi}$ |
-| Pure rotation $\tilde u_{\mathrm r}=\cos\frac{\theta}{2}\,e_t+\sin\frac{\theta}{2}\vec u_{\mathrm r}$ | Real quaternion, norm one | $\mathbb{B}_{H}$ |
+| Pure rotation $\tilde u_{\mathrm r}=\cos\frac{\theta_{\mathrm{axr}}}{2}\,e_t+\sin\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ | Real quaternion, norm one | $\mathbb{B}_{H}$ |
 | General $\tilde U_{\mathrm{lor}}=\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | Norm one | $\mathbb{B}$ |
 
 A boost is Hermitian and satisfies $\tilde U_{\Psi,\mathrm b}^{*}=\tilde U_{\Psi,\mathrm b}$; boosts do not form a subgroup, because the product of two non-collinear boosts is a boost and a rotation. A rotation is a real quaternion, and the rotations form the subgroup $SU(2)=SL(2,\mathbb{C})\cap U(2)$.
@@ -126,14 +126,14 @@ No two-sided action appears. That is the defining feature of the module: one fac
 A boost along the direction $\vec u_{\mathrm b}$ with rapidity $\zeta$ is the exponential of its generator, because the generator squares to the unit:
 
 $$
-\tilde U_{\Psi,\mathrm b}=\exp\Bigl(\frac{\zeta}{2}\,i\vec u_{\mathrm b}\Bigr),
+\tilde U_{\Psi,\mathrm b}=\exp\Bigl(i\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}\Bigr),
 \qquad (i\vec u_{\mathrm b})^2=e_t .
 $$
 
-A rotation about $\vec u_{\mathrm r}$ by the angle $\theta$ is the exponential of its generator, because that generator squares to minus the unit:
+A rotation about $\vec u_{\mathrm r}$ by the angle $\theta_{\mathrm{axr}}$ is the exponential of its generator, because that generator squares to minus the unit:
 
 $$
-\tilde u_{\mathrm r}=\exp\Bigl(\frac{\theta}{2}\,\vec u_{\mathrm r}\Bigr),
+\tilde u_{\mathrm r}=\exp\Bigl(\frac{\theta_{\mathrm{axr}}}{2}\,\vec u_{\mathrm r}\Bigr),
 \qquad \vec u_{\mathrm r}^{\,2}=-e_t .
 $$
 

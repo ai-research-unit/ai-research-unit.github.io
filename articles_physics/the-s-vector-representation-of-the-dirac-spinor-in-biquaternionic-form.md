@@ -377,29 +377,29 @@ $$
 \sum_\lambda c_5{}_{\lambda\mu}g_{\lambda\nu} = -\sum_\lambda g_{\mu\lambda}c_5{}_{\lambda\nu},
 $$
 
-so its eigenvalues are $+1$ and $-1$, the two parts are orthogonal, and $e^{-i\alpha c_5}$ is an isometry of the quadratic form. It mixes $G_0$ with $G_3$ and $G_1$ with $G_2$; it does not separate time from space, and the action is basis-dependent, the values above being a representative of the chirality rather than the chirality itself.
+so its eigenvalues are $+1$ and $-1$, the two parts are orthogonal, and $e^{-i\theta_{\mathrm{axr}} c_5}$ is an isometry of the quadratic form. It mixes $G_0$ with $G_3$ and $G_1$ with $G_2$; it does not separate time from space, and the action is basis-dependent, the values above being a representative of the chirality rather than the chirality itself.
 
 The last two of these properties are what make the *chiral-type* rotation
 
 $$
-M(\alpha)_{\mu\nu} = \delta_{\mu\nu}\cos\alpha - i c_5{}_{\mu\nu}\sin\alpha = \bigl(\exp(-i\alpha c_5)\bigr)_{\mu\nu}
+M(\theta_{\mathrm{axr}})_{\mu\nu} = \delta_{\mu\nu}\cos\theta_{\mathrm{axr}} - i c_5{}_{\mu\nu}\sin\theta_{\mathrm{axr}} = \bigl(\exp(-i\theta_{\mathrm{axr}} c_5)\bigr)_{\mu\nu}
 $$
 
 an isometry of the quadratic form $q(G)=G_\mu g_{\mu\nu}G_\nu$: the $g$-antisymmetry makes the cross terms cancel, and $c_5^2=1$ makes the diagonal terms add to $g$, so $M^{\mathsf T}gM=g$. Because $c_5^2=1$ it also obeys the De Moivre theorem,
 
 $$
-\bigl(\cos\alpha - i c_5\sin\alpha\bigr)^n = \cos n\alpha - i c_5\sin n\alpha .
+\bigl(\cos\theta_{\mathrm{axr}} - i c_5\sin\theta_{\mathrm{axr}}\bigr)^n = \cos n\theta_{\mathrm{axr}} - i c_5\sin n\theta_{\mathrm{axr}} .
 $$
 
-The mass term $k_m\tilde{Ξ}^{\dagger}C_0\tilde{Ξ} = -\tfrac{k_m}{2}(G^*G^* + GG) = +\tfrac{k_m}{2}\bigl[q(G)+q(G^*)\bigr]$ is invariant under $M(\alpha)$ for that reason, and it is *not* invariant under the ordinary phase $G_\mu\mapsto e^{i\alpha}G_\mu$, which multiplies $q$ by $e^{2i\alpha}$.
+The mass term $k_m\tilde{Ξ}^{\dagger}C_0\tilde{Ξ} = -\tfrac{k_m}{2}(G^*G^* + GG) = +\tfrac{k_m}{2}\bigl[q(G)+q(G^*)\bigr]$ is invariant under $M(\theta_{\mathrm{axr}})$ for that reason, and it is *not* invariant under the ordinary phase $G_\mu\mapsto e^{i\theta_{\mathrm{axr}}}G_\mu$, which multiplies $q$ by $e^{2i\theta_{\mathrm{axr}}}$.
 
-The source identifies $M(\alpha)$ with the image of the field's vector $\mathrm{U}(1)$, $\tilde{Ξ}\mapsto\tilde{Ξ}\exp(i\alpha)$. The dictionary is narrower than that. The exact correspondence runs through the *chiral* transformation: $\tilde{Ξ}\mapsto\exp(-ia\Gamma)\tilde{Ξ}$ becomes the ordinary phase $G_\mu\mapsto e^{ia}G_\mu$, and $\tilde{Ξ}\mapsto\exp(ia\Gamma)\tilde{Ξ}$ becomes $G_\mu\mapsto e^{-ia}G_\mu$. The vector phase does not act diagonally on $G$ at all. Since $v^{\dagger}C_0\,iC_\mu\tilde{Ξ}$ and $\tilde{Ξ}^{\dagger}C_0\,iC_\mu v$ are conjugate up to sign, $B_\mu$ is the real part of $X_\mu:=v^{\dagger}C_0\,iC_\mu\tilde{Ξ}$, and the phase sends
+The source identifies $M(\theta_{\mathrm{axr}})$ with the image of the field's vector $\mathrm{U}(1)$, $\tilde{Ξ}\mapsto\tilde{Ξ}\exp(i\theta_{\mathrm{axr}})$. The dictionary is narrower than that. The exact correspondence runs through the *chiral* transformation: $\tilde{Ξ}\mapsto\exp(-ia\Gamma)\tilde{Ξ}$ becomes the ordinary phase $G_\mu\mapsto e^{ia}G_\mu$, and $\tilde{Ξ}\mapsto\exp(ia\Gamma)\tilde{Ξ}$ becomes $G_\mu\mapsto e^{-ia}G_\mu$. The vector phase does not act diagonally on $G$ at all. Since $v^{\dagger}C_0\,iC_\mu\tilde{Ξ}$ and $\tilde{Ξ}^{\dagger}C_0\,iC_\mu v$ are conjugate up to sign, $B_\mu$ is the real part of $X_\mu:=v^{\dagger}C_0\,iC_\mu\tilde{Ξ}$, and the phase sends
 
 $$
-B_\mu \mapsto B_\mu\cos\alpha - \mathrm{Im}(X_\mu)\sin\alpha,
+B_\mu \mapsto B_\mu\cos\theta_{\mathrm{axr}} - \mathrm{Im}(X_\mu)\sin\theta_{\mathrm{axr}},
 $$
 
-with $N_\mu$ treated the same way through $Z_\mu:=\tilde{Ξ}^{\dagger}C_0\,iC_\mu u$: a mixing of the two parts, not a rotation of each. So $M(\alpha)$ is the transformation the mass form invites, and it is the one to use in the algebra, but it is not the image of a symmetry of the field.
+with $N_\mu$ treated the same way through $Z_\mu:=\tilde{Ξ}^{\dagger}C_0\,iC_\mu u$: a mixing of the two parts, not a rotation of each. So $M(\theta_{\mathrm{axr}})$ is the transformation the mass form invites, and it is the one to use in the algebra, but it is not the image of a symmetry of the field.
 
 ## The Dual Transformation and the Two Parts
 
@@ -459,7 +459,7 @@ $\gamma_5$ is the reference-frame representative of the chirality: the ordered p
 
 The field of four-dimensional Minkowski space decomposes into two parts, and each part is a **real four-vector**: $\tilde{Ξ}_{1} = \mathcal{R}(B^\flat)v$ and $\tilde{Ξ}_{2} = \mathcal{R}(N^\flat)u$ with real $B_\mu, N_\mu$, where $B^\flat_\nu=\sum_\mu g_{\mu\nu}B_\mu$ and $N^\flat_\nu=\sum_\mu g_{\mu\nu}N_\mu$. The combined object $G_\mu = B_\mu + iN_\mu$ is an **s-vector**, and the map $\tilde{Ξ} \leftrightarrow G$ is a linear equivalence. It rests on a trinomial unit basis — a timelike unit vector $u_\mu$, a spacelike unit vector $j_\mu$, and two neutral elements $u, v$ — the neutral elements of Chevalley. The composition law $c_{\mu\nu\lambda} = ({r'_{t}}_{\mu\nu\lambda\rho} - i\varepsilon_{\mu\nu\lambda\rho})k_\rho$ built from the four-index traces $r'_t$ and $\varepsilon$ is associative, has $k$ as its unit, and satisfies the normed condition $(G\cdot G)(H\cdot H) = (G\otimes H)\cdot(G\otimes H)$; its realisation is the quaternion algebra read with $e_0=k$ and $e_\eta=i\vec e_\eta$, so that $e_\eta^2=e_t$ and $e_xe_y=i e_z$. The Dirac bilinears become $G$-$G^*$ bilinears with the structure constants $c$ and $\check c$, and the order-three map $A\mapsto B\mapsto N\mapsto A$ permutes the vector and the two parts while leaving the trilinear form invariant — the *ding* construction, the four-dimensional analogue of Cartan's triality, with the biquaternion algebra in place of the octonions.
 
-The Dirac Lagrangian becomes bosonic: a quadratic kinetic term in $G$ with the $\check c$ structure constants, and a mass term $m(G^*G^* + GG)$ that couples $G$ to $G^*$ — the mass that relates the two parts of the field in another guise. The massive equation becomes the pair of §The Chiral Pair, or equivalently the self-dual pair $G_{\mu\nu} = \tfrac{i}{2}\varepsilon_{\mu\nu\lambda\rho}G_{\lambda\rho}$, $\sum_\mu\epsilon_\mu\bigl(\partial/\partial x_\mu G_\mu + imj_\mu G^{*}_{\mu}\bigr) = 0$, with the antisymmetric part of the two-form $H_{\mu\nu} = G^*_\lambda\check c_{\lambda\mu\nu}$ anti-self-dual. Because $(c_5)^2=1$ and $c_5$ is $g$-antisymmetric, the chiral-type rotation $G\mapsto(\cos\alpha-ic_5\sin\alpha)G$ is an isometry of the quadratic form, obeys the De Moivre theorem, and leaves the mass term invariant; the chiral transformation of the field, by contrast, is an ordinary $\mathrm{U}(1)$ phase of $G$. The dual map $B \mapsto N$, $N \mapsto -B$, $m \mapsto -m$ leaves the theory invariant.
+The Dirac Lagrangian becomes bosonic: a quadratic kinetic term in $G$ with the $\check c$ structure constants, and a mass term $m(G^*G^* + GG)$ that couples $G$ to $G^*$ — the mass that relates the two parts of the field in another guise. The massive equation becomes the pair of §The Chiral Pair, or equivalently the self-dual pair $G_{\mu\nu} = \tfrac{i}{2}\varepsilon_{\mu\nu\lambda\rho}G_{\lambda\rho}$, $\sum_\mu\epsilon_\mu\bigl(\partial/\partial x_\mu G_\mu + imj_\mu G^{*}_{\mu}\bigr) = 0$, with the antisymmetric part of the two-form $H_{\mu\nu} = G^*_\lambda\check c_{\lambda\mu\nu}$ anti-self-dual. Because $(c_5)^2=1$ and $c_5$ is $g$-antisymmetric, the chiral-type rotation $G\mapsto(\cos\theta_{\mathrm{axr}}-ic_5\sin\theta_{\mathrm{axr}})G$ is an isometry of the quadratic form, obeys the De Moivre theorem, and leaves the mass term invariant; the chiral transformation of the field, by contrast, is an ordinary $\mathrm{U}(1)$ phase of $G$. The dual map $B \mapsto N$, $N \mapsto -B$, $m \mapsto -m$ leaves the theory invariant.
 
 What the construction supplies is a dictionary; what it does not supply is covariance or new physics. The neutral elements $u_\mu$ and $j_\mu$ are a preferred frame. They are not determined by the metric; the contractions $\sum_\mu\epsilon_\mu c_{\mu\mu\lambda}=4u_\lambda$ and $\sum_\mu\epsilon_\mu\check c_{\mu\mu\lambda}=-4j_\lambda$ return them from the structure constants, so the frame is the algebra's own, but it is still a frame, and the corpus records the question as open. The triality map is not a symmetry; it maps one description to another description of the same theory.
 

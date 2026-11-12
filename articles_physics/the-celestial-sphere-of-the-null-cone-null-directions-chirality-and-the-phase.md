@@ -54,7 +54,7 @@ $$
 \tilde{\Pi}_\zeta = \zeta\,\zeta^{\dagger}, \qquad \zeta \in \mathbb{C}^2,
 $$
 
-with $\tilde{\Pi}_\zeta$ of rank one exactly when $\zeta\neq0$, and idempotent when $\zeta$ is normalised. The sign is the direction of time: a future-pointing null element gives a positive-semidefinite matrix and a past-pointing one gives its negative, so the two orbits of the sphere are the two signs, and the positive case is the one the spinor-helicity factorisation uses (*Helicity in Biquaternionic Form*). The **direction** of $\tilde{\Pi}_\zeta$ depends on the spinor only through its **ray**: replacing $\zeta$ by $\exp(i\alpha)\zeta$ multiplies $\zeta\zeta^{\dagger}$ by $\exp(i\alpha)\exp(-i\alpha) = 1$ and leaves the element unchanged, so the direction is a **spinor up to a phase**, and
+with $\tilde{\Pi}_\zeta$ of rank one exactly when $\zeta\neq0$, and idempotent when $\zeta$ is normalised. The sign is the direction of time: a future-pointing null element gives a positive-semidefinite matrix and a past-pointing one gives its negative, so the two orbits of the sphere are the two signs, and the positive case is the one the spinor-helicity factorisation uses (*Helicity in Biquaternionic Form*). The **direction** of $\tilde{\Pi}_\zeta$ depends on the spinor only through its **ray**: replacing $\zeta$ by $\exp(i\theta_{\mathrm{cen}})\zeta$ multiplies $\zeta\zeta^{\dagger}$ by $\exp(i\theta_{\mathrm{cen}})\exp(-i\theta_{\mathrm{cen}}) = 1$ and leaves the element unchanged, so the direction is a **spinor up to a phase**, and
 
 $$
 \mathcal{C} \;\cong\; \mathbb{C}\mathbb{P}^1 \;\cong\; S^2.
@@ -64,10 +64,10 @@ This is the standard identification of the Riemann sphere with the celestial sph
 
 ## The Little Group and the Phase
 
-A null direction is fixed by a subgroup of the Lorentz group, its **little group**, and the little group is what attaches the phase to the point. On the spinor $\zeta$ the direction is invariant under the phase $\zeta\mapsto \exp(i\alpha)\zeta$, which is the compact $\mathrm{U}(1)$ part of the little group; a massless field of **helicity** $h$ transforms under that phase by
+A null direction is fixed by a subgroup of the Lorentz group, its **little group**, and the little group is what attaches the phase to the point. On the spinor $\zeta$ the direction is invariant under the phase $\zeta\mapsto \exp(i\theta_{\mathrm{cen}})\zeta$, which is the compact $\mathrm{U}(1)$ part of the little group; a massless field of **helicity** $h$ transforms under that phase by
 
 $$
-\zeta \;\longmapsto\; \exp(i\alpha)\zeta, \qquad \text{the field} \;\longmapsto\; \exp(i h\alpha)\,\text{the field},
+\zeta \;\longmapsto\; \exp(i\theta_{\mathrm{cen}})\zeta, \qquad \text{the field} \;\longmapsto\; \exp(i h\theta_{\mathrm{cen}})\,\text{the field},
 $$
 
 so the helicity is the **weight** of the central $\mathrm{U}(1)$ carried at the point of the sphere. The full statement of the little group, the two helicities of the photon and the weights of the massless amplitudes, are *Helicity in Biquaternionic Form*; the bundle the phase describes, the unit spinors over the sphere with fibre a circle, is the Hopf fibration of the algebra, and it is *The Hopf Fibration and the Biquaternion Gauge Bundle*. What the celestial sphere supplies here is only the **base**: the point of $S^2$ at which the phase sits.
@@ -99,7 +99,7 @@ The null cone of the biquaternion norm is the zero-divisor cone, and on the mate
 | $\mathbb{B}_{\Phi}$ | the material sector, $\tilde R_\Phi = i r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ |
 | $\mathcal{C} \cong S^2$ | the celestial sphere, the null directions up to scale |
 | $\mathbb{P}^1\times\mathbb{P}^1$ | the Segre quadric, the projective complex null cone, the two chiral spheres |
-| $\zeta \in \mathbb{C}^2$ | the spinor; the direction is its ray, $\zeta\mapsto \exp(i\alpha)\zeta$ |
+| $\zeta \in \mathbb{C}^2$ | the spinor; the direction is its ray, $\zeta\mapsto \exp(i\theta_{\mathrm{cen}})\zeta$ |
 | $\tilde{\Pi}_\zeta = \zeta\zeta^{\dagger}$ | a positive rank-one Hermitian element, hence null; idempotent for unit $\zeta$ |
 | $h$ | the helicity, the weight of the little-group $\mathrm{U}(1)$ |
 | $\mathbb{C}\mathbb{P}^1 \cong S^2$ | the sphere in spinor coordinates |

@@ -1,6 +1,8 @@
-# __The Polar Form of the Schrödinger Equation in Biquaternionic Form__
+# __The Schrödinger Equation in Biquaternionic Polar Variables__
 
 ## Introduction
+
+This article writes the biquaternionic Schrödinger equation in the polar variables of the $N$-regular element. The general element's word has all four factors: the field's rapidity is a constant of the motion and the axis of the field's own boost precesses (§*The Equation in Polar Variables*), so the boost is not trivial in general. The central class is the separate case, in which the word collapses to $r\,e^{i\theta_{\mathrm{pha}}}\,\varepsilon e_t$ and the equation separates into two exact real equations: a continuity equation for $\rho=r^{2}$ and a quantum Hamilton–Jacobi equation with quantum potential $Q=-\hbar^{2}\Delta_\Phi r/(2mr)$. That is Madelung's pair, exact and not an approximation, away from the nodal set. The general solution of the constant-element case is the propagator $\tilde Q(t')\tilde\Xi(0)$, and the polar word is the lens on it; the central collapse is the Madelung reading of that lens.
 
 The Schrödinger equation of this corpus is one element of $\mathbb{B}$ acting on another by left multiplication. *The Schrödinger Equation in Biquaternionic Form* writes it as
 
@@ -12,6 +14,8 @@ $$
 
 and states what the equation does not need: no column, no minimal left ideal, no projector, no idempotent, no declared axis, no matrix array in the body of the equation. The field is one element, the operator is one element, and the multiplication is the algebra's own.
 
+**Two settings, and they are not the same equation.** In §*The Equation in Polar Variables* the Hamiltonian is a constant element, $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ with $h_t$ and $\vec h_\Psi$ fixed numbers, so the equation is an ordinary differential equation in $t'$ and its solution is the closed form $\tilde Q(t')=\exp(-i\tilde H_\Psi t'/\hbar)$. In §*The Central Field* the Hamiltonian is the standard operator, $\tilde H_\Psi=\hat H\,e_t$ with $\hat H=-\hbar^{2}\Delta_\Phi/2m+V$, so the equation is the ordinary Schrödinger equation, a partial differential equation, and its solution is not a finite product of exponentials. The first setting is where the flow of the word is read, and it closes because a constant element supplies two numbers. The second is where Madelung's pair is read, and it closes because a central field supplies one scale and one phase. Nothing below transfers a result from one setting to the other.
+
 This article substitutes a parametrisation of that one element into that one equation and reads what comes out. The parametrisation is the polar word of *The Polar Decomposition of an N-Regular Biquaternion*, in the exponential form it takes in *Exponential Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion*:
 
 $$
@@ -19,10 +23,10 @@ $$
 \qquad
 \tilde U_{\Psi,\mathrm b}=\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr),
 \qquad
-\tilde u_{\mathrm r}=\exp\Bigl(\frac{\theta_{\mathrm r}}{2}\vec u_{\mathrm r}\Bigr).
+\tilde u_{\mathrm r}=\exp\Bigl(\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\Bigr).
 $$
 
-The four factors are a positive real scale, a central angle, a Hermitian positive boost and a real rotor. The word has eight real parameters against the element's eight real components, and on its domain it is a bijection: it adds no object and drops no datum. The rotor's angle $\theta_{\mathrm r}$ is the angle of the spatial rotation the rotor performs, so the factor $\tfrac12$ in its exponential is the half-angle of a quaternion and not a physical factor.
+The four factors are a positive real scale, a central angle, a Hermitian positive boost and a real rotor. The word has eight real parameters against the element's eight real components, and on its domain it is a bijection: it adds no object and drops no datum. The rotor's angle $\theta_{\mathrm{axr}}$ is the angle of the spatial rotation the rotor performs, so the factor $\tfrac12$ in its exponential is the half-angle of a quaternion and not a physical factor.
 
 **The domain is the whole of the qualification of this article.** In the corpus's vocabulary an element is $N$-regular when $N\neq0$ and $N$-degenerate when $N=0$, and $N$ is the determinant (*The Meaning of N-Regularity and Degeneracy*). The word is a parametrisation of the group of units, so
 
@@ -32,7 +36,7 @@ $$
 
 and it fails on every $N$-degenerate element. There is no third case and no extension of the word to $N=0$.
 
-**That condition is weaker here than in the two companion articles, and the difference is the whole of the structure.** For the Dirac field the word fails on the one-sided fields, and those are not exotic: a field of definite value lies on the cone at every amplitude. For the Schrödinger field the cone is a set of measure zero and it is not the carrier: a generic element of $\mathbb{B}$ is a unit, and the flow preserves the cone, so a field is a unit at every event or at none (§*The Domain*). Nothing has to be excluded in advance and no carrier has to be declared. The polar form of this equation is therefore a parametrisation of the field itself, with no ideal, no projector and no axis behind it.
+**The condition is the whole of the qualification, and it is weak.** The cone is a set of measure zero and it is not the carrier: a generic element of $\mathbb{B}$ is a unit, and the flow preserves the cone, so a field is a unit at every event or at none (§*The Domain*). Nothing has to be excluded in advance and no carrier has to be declared. The polar word of this equation is therefore a parametrisation of the field itself, with no ideal, no projector and no axis behind it.
 
 **Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary; $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre; $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ are the anti-Hermitian and Hermitian fixed subspaces; $\natural$ is quaternion conjugation and $*$ the Hermitian one; $\mathrm{Sc}$ is the coefficient of $e_t$ and $\mathrm{Tr}=2\,\mathrm{Sc}$. Time is written $t'$ and the parent's material length is $r'_t=c\,t'$, so $\partial/\partial r'_t=c^{-1}\partial/\partial t'$ and the parent's $i\hbar c\,\partial/\partial r'_t$ is $i\hbar\,\partial/\partial t'$; the two forms are used interchangeably and $\hbar$ is written explicitly in both.
 
@@ -51,7 +55,7 @@ What the article establishes is short, and each item is one sentence:
 - the field's own scale and rapidity are constants of the motion, and nothing else is: the flow moves six of the eight parameters, and the two it leaves are the two that unitarity fixes;
 - every direction the field carries, the axis of its own boost included, precesses about the Hamiltonian's own axis at twice the half-gap;
 - the density is the Hermitian norm and reads the scale and the boost, while the quaternionic norm reads the scale and the phase;
-- the word of a central field is a scale, a phase and a sign, and Madelung's pair is exactly that case.
+- the word of a central field is a scale, a phase and a sign, and Madelung's pair is exactly that case, but the class is invariant only under a central Hamiltonian, so the pair is the evolution of that class and not of a general field.
 
 ## The Field and Its Word
 
@@ -82,7 +86,7 @@ $$
 a central element that reads the scale and the phase and nothing else; and the Hermitian norm is
 
 $$
-\rho=\mathrm{Tr}\bigl(\tilde\Xi^{\dagger}\tilde\Xi\bigr)=2\,\mathrm{Sc}\bigl(\tilde\Xi\tilde\Xi^{*}\bigr)=2r^{2}\cosh\theta_{\mathrm{rpd},w},
+\rho=\mathrm{Tr}\bigl(\tilde\Xi^{\dagger}\tilde\Xi\bigr)=2\,\mathrm{Sc}\bigl(\tilde\Xi\tilde\Xi^{*}\bigr)=2r^{2}\cosh\theta_{\mathrm{rpd}},
 $$
 
 a positive real number that reads the scale and the boost and nothing else. Both were checked on a hundred random elements, to $10^{-7}$ relative. Neither norm sees the rotor, and the reason is structural: the rotor is real and unitary, so it cancels in both.
@@ -103,11 +107,33 @@ and $\langle\tilde Q\rangle_{\natural}$ is a unit of the centre at every $t'$. H
 
 **The cone is not the nodal set.** A central field vanishes exactly when its single complex coefficient does, and that is a point of the cone but not the whole of it: the cone is a proper algebraic subset of the algebra and not a level set of a single coefficient, and a field can be off the cone while one of its coefficients vanishes. What fails on the cone is the parametrisation and never the equation: the equation is one element times one element, and it makes sense on zero divisors as well.
 
-## The Flow of the Word
+## The Equation in Polar Variables
+
+### The four brackets of the logarithmic derivative
+
+The word is put into the equation by one differentiation. Every factor of $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ is differentiated once, and the result is
+
+$$
+\partial_{t'}\tilde\Xi=\tilde\Xi\left[\tfrac12\partial_{t'}\ln r^{2}+i\partial_{t'}\theta_{\mathrm{pha}}
++\tilde u_{\mathrm r}^{-1}\bigl(\tilde U_{\Psi,\mathrm b}^{-1}\partial_{t'}\tilde U_{\Psi,\mathrm b}\bigr)\tilde u_{\mathrm r}
++\tilde u_{\mathrm r}^{-1}\partial_{t'}\tilde u_{\mathrm r}\right],
+$$
+
+so that the equation $i\hbar\,\partial_{t'}\tilde\Xi=\tilde H_\Psi\tilde\Xi$ becomes
+
+$$
+i\hbar\left[\tfrac12\partial_{t'}\ln r^{2}+i\partial_{t'}\theta_{\mathrm{pha}}
++\tilde u_{\mathrm r}^{-1}\bigl(\tilde U_{\Psi,\mathrm b}^{-1}\partial_{t'}\tilde U_{\Psi,\mathrm b}\bigr)\tilde u_{\mathrm r}
++\tilde u_{\mathrm r}^{-1}\partial_{t'}\tilde u_{\mathrm r}\right]=\tilde\Xi^{-1}\tilde H_\Psi\tilde\Xi .
+$$
+
+The four brackets are a real scale term, a central imaginary phase term, a Hermitian boost connection and a real-vector rotor connection; the right-hand side is the Hamiltonian conjugated by the field. The identity is exact and no term is dropped. Because the equation is first order in time, the four brackets are not four equations to be solved: they are the four parts of one element, and they fix the rates of the eight parameters once $\tilde\Xi^{-1}\tilde H_\Psi\tilde\Xi$ is known.
+
+**The reductions.** On a central field the boost is $e_t$ and the rotor is $\varepsilon e_t$, so the third and fourth brackets vanish and the first two remain; that is the pair of §*The Central Field*. On a general field all four are present, and the flow they describe is the subject of this section.
 
 ### The propagator is a phase times a rotor
 
-The parent's solution is
+The parent's solution, for a Hamiltonian that is a constant element, is
 
 $$
 \tilde Q(t')=\exp\Bigl(-i\frac{\tilde H_\Psi t'}{\hbar}\Bigr)
@@ -119,12 +145,12 @@ $$
 where $\vec u_\Psi=\vec h_\Psi/|\vec h_\Psi|$ when $\vec h_\Psi\neq0$, and the constant is $\hbar$ alone because the variable is the time $t'$ and not the material length $r'_t=c\,t'$. Its word was computed in a hundred random cases:
 
 $$
-\boxed{\;\tilde Q(t')=e^{i\theta_{\mathrm{pha},Q}}\tilde u_Q,\qquad r_Q=1,\qquad \tilde U_{\Psi,\mathrm b,Q}=e_t,\qquad \theta_{\mathrm{pha},Q}=-\frac{h_t t'}{\hbar},\qquad \theta_{\mathrm r,Q}=\frac{2|\vec h_\Psi|t'}{\hbar},\;}
+\boxed{\;\tilde Q(t')=e^{i\theta_{\mathrm{pha},Q}}\tilde u_Q,\qquad r_Q=1,\qquad \tilde U_{\Psi,\mathrm b,Q}=e_t,\qquad \theta_{\mathrm{pha},Q}=-\frac{h_t t'}{\hbar},\qquad \theta_{\mathrm{axr},Q}=\frac{2|\vec h_\Psi|t'}{\hbar},\;}
 $$
 
-so the propagator's word has four of its eight parameters frozen, at every time and for every Hamiltonian. The scale is one and the boost is the identity for one reason: $\tilde Q\tilde Q^{*}=e_t$, because the two factors of the parent's closed form are a central phase and a real rotor and nothing else. The Hermitian part of the propagator is therefore trivial and its word has nothing to read from it. What remains is the central phase and the rotor, which is the parent's real unit quaternion with its half-angle made explicit.
+so the propagator's word is frozen in the scale and the rapidity, at $1$ and $0$, carries no data in the boost's axis, and takes the rotor's axis from the Hamiltonian: only the phase and the rotor's angle run. The scale is one and the boost is the identity for one reason: $\tilde Q\tilde Q^{*}=e_t$, because the two factors of the parent's closed form are a central phase and a real rotor and nothing else. The Hermitian part of the propagator is therefore trivial and its word has nothing to read from it. What remains is the central phase and the rotor, which is the parent's real unit quaternion with its half-angle made explicit.
 
-**The factor of two is the word's, not the parent's.** The parent writes $\cos\theta\,e_t+\sin\theta\,\vec u_\Psi$ with $\theta=|\vec h_\Psi|t'/\hbar$. That quaternion is a rotation through $2\theta$ about $\vec u_\Psi$, so its rotor angle is $\theta_{\mathrm r}=2\theta=2|\vec h_\Psi|t'/\hbar$. No factor has been inserted: the same element is read once as a half-angle and once as an angle. The two readings agree to $10^{-6}$ in a hundred random cases.
+**The factor of two is the word's, not the parent's.** The parent writes $\cos\theta\,e_t+\sin\theta\,\vec u_\Psi$ with $\theta=|\vec h_\Psi|t'/\hbar$. That quaternion is a rotation through $2\theta$ about $\vec u_\Psi$, so its rotor angle is $\theta_{\mathrm{axr}}=2\theta=2|\vec h_\Psi|t'/\hbar$. No factor has been inserted: the same element is read once as a half-angle and once as an angle. The two readings agree to $10^{-6}$ in a hundred random cases.
 
 ### The field's scale and rapidity are constants
 
@@ -163,7 +189,7 @@ checked against a finite difference to $10^{-5}$. The boost axis runs at the gap
 
 The eigenvalues of the symbol are the two numbers $h_t-|\vec h_\Psi|$ and $h_t+|\vec h_\Psi|$, each twice, and both statements below are readings of the word against them.
 
-**The phase runs at the mean.** Differentiating $\theta_{\mathrm{pha}}+\theta_{\mathrm{pha},Q}$ gives
+**The phase runs at the mean.** The phase of the evolved field is $\theta_{\mathrm{pha}}(0)+\theta_{\mathrm{pha},Q}(t')$, so
 
 $$
 \frac{d\theta_{\mathrm{pha}}}{dt'}=-\frac{h_t}{\hbar},
@@ -177,7 +203,7 @@ $$
 \frac{d\hat s}{dt'}=\frac{2}{\hbar}\,\vec h_\Psi\times\hat s,
 $$
 
-checked to $2\times10^{-2}$ relative in a hundred random cases. The angular velocity is $2|\vec h_\Psi|/\hbar$, which is the gap between the eigenvalues and not half of it, because a direction turns at twice the half-angle. In the word's own parameter the half-angle runs at half the gap: $d\theta_{\mathrm r}/dt'=2|\vec h_\Psi|/\hbar$ for the rotor angle, that is $|\vec h_\Psi|/\hbar$ for its half. The boost's axis is one more direction carried in this way, and its precession obeys the same law (§*The field's scale and rapidity are constants*).
+checked to $2\times10^{-2}$ relative in a hundred random cases. The angular velocity is $2|\vec h_\Psi|/\hbar$, which is the gap between the eigenvalues and not half of it, because a direction turns at twice the half-angle. In the word's own parameter the half-angle runs at half the gap: $d\theta_{\mathrm{axr}}/dt'=2|\vec h_\Psi|/\hbar$ for the rotor angle, that is $|\vec h_\Psi|/\hbar$ for its half. The boost's axis is one more direction carried in this way, and its precession obeys the same law (§*The field's scale and rapidity are constants*).
 
 **The two rates are therefore the mean and the half-gap, and there are no others.** The Hamiltonian supplies two numbers, the mean and the gap, and the word has exactly two frequencies to spend them on: the central phase runs at the mean, and the rotor's angle at the gap with its half-angle at half the gap. What remains in the word adds no third frequency. The scale and the rapidity are frozen, and the two axes are not frozen but carried: the rotor's axis and the boost's axis precess at the gap, which is the rate the rotor already has.
 
@@ -204,10 +230,10 @@ checked to $10^{-6}$ in a hundred random cases. The field returns to minus itsel
 A field is **central** when it is a complex multiple of $e_t$, $\tilde\Xi=\Xi_t\,e_t$. Its word degenerates, and the degeneration was checked on a hundred random central fields:
 
 $$
-r=|\Xi_t|,\qquad \tilde U_{\Psi,\mathrm b}=e_t,\qquad \tilde u_{\mathrm r}=\pm e_t,\qquad \theta_{\mathrm{pha}}\equiv\arg\Xi_t\ (\mathrm{mod}\ \pi),
+r=|\Xi_t|,\qquad \Rho=\pm\Xi_t,\qquad \varepsilon=\frac{\Xi_t}{\Rho}=\pm1,\qquad \tilde U_{\Psi,\mathrm b}=e_t,\qquad \tilde u_{\mathrm r}=\varepsilon e_t,\qquad \theta_{\mathrm{pha}}=\arg\Rho,
 $$
 
-the sign of the rotor carrying the half-turn branch of the angle. A central field's word is therefore a scale, a phase and a sign, and three of the four factors have collapsed. This is exactly Madelung's pair, with $A=r$ and $S=\hbar\theta_{\mathrm{pha}}$.
+where $\Rho$ is the principal square root of $N=\Xi_t^{2}$ and $\varepsilon$ its branch. The sign of the rotor is the sign of the modulus: the half-turn branch of the angle is carried by $\varepsilon$ and not by a free choice. A central field's word is therefore a scale, a phase and a sign, and three of the four factors have collapsed. This is exactly Madelung's pair, with $A=r$ and $S=\hbar\theta_{\mathrm{pha}}$.
 
 **The central class is not invariant under a general Hamiltonian.** If $\vec h_\Psi\neq0$ then $\tilde H_\Psi\tilde\Xi$ has a vector part, so a central field is carried off the centre at once; the class is invariant exactly when the Hamiltonian is central. Checked in a hundred random cases, with no exception.
 
@@ -215,55 +241,61 @@ the sign of the rotor carrying the half-turn branch of the angle. A central fiel
 
 ### The exact pair
 
-For a central field the equation is the ordinary one-component equation, and the word's two real functions satisfy a pair that is exact and not an approximation. Write $\tilde\Xi=A\,\exp(i\theta_{\mathrm{act}})e_t$ and $\tilde H_\Psi=V\,e_t$; substituting into the equation and separating the real and the imaginary parts gives
-
-Throughout this article $\theta_{\mathrm{act}}:=\mathrm{Re}\,S/\hbar$ is the angle of the action: it is real whenever the action is real, and it is the angle the wave form carries. The weight $\kappa_{\mathrm{act}}:=-\mathrm{Im}\,S/\hbar$ accompanies it, zero for a real action and positive for a decaying amplitude, so that $\exp(iS/\hbar)=\exp(i\theta_{\mathrm{act}})\exp(-\kappa_{\mathrm{act}})$. A complex action carries both factors; a real action carries the angle alone.
+For a central field the equation is the ordinary one-component equation, and the word's two real functions satisfy a pair that is exact and not an approximation. Write $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_t$ and $\tilde H_\Psi=V\,e_t$, with $S=\hbar\theta_{\mathrm{pha}}$ the action. Substituting into the equation and separating the real and the imaginary parts gives
 
 $$
 \boxed{\;\frac{\partial S}{\partial t'}+\frac{|\vec\nabla_\Phi S|^{2}}{2m}+V+Q=0,\qquad
-\frac{\partial A^{2}}{\partial t'}+\vec\nabla_\Phi\cdot\Bigl(A^{2}\frac{\vec\nabla_\Phi S}{m}\Bigr)=0,\;}
+\frac{\partial r^{2}}{\partial t'}+\vec\nabla_\Phi\cdot\Bigl(r^{2}\frac{\vec\nabla_\Phi S}{m}\Bigr)=0,\;}
 $$
 
 with the quantum potential
 
 $$
-Q=-\frac{\hbar^{2}}{2m}\frac{\Delta_\Phi A}{A}.
+Q=-\frac{\hbar^{2}}{2m}\frac{\Delta_\Phi r}{r}.
 $$
 
-The first is a Hamilton–Jacobi equation with one extra term; the second is a continuity equation. Both were checked on exact solutions rather than on random functions: the free Gaussian packet at three carrier momenta gave a relative residual of $10^{-7}$, and generic amplitudes and actions gave $10^{-8}$.
+The first is a Hamilton–Jacobi equation with one extra term, and the second is a continuity equation for the density $\rho=r^{2}$. Together they are the standard Madelung fluid: the first is the guidance equation of the de Broglie–Bohm reading, with $Q$ the term that separates it from classical Hamilton–Jacobi, and the second is the conservation of the density along the guidance flow. Takabayasi read the same pair as a hydrodynamical formulation and Bohm as a trajectory theory; the polar word is the biquaternionic reading of it.
 
-**The operator is the Laplacian and not the d'Alembertian.** This is the one place where the Schrödinger case differs from the Dirac and Klein–Gordon companions: the equation is first order in time and second order in space, so the quantum potential carries $\Delta_\Phi$ and not $\Box$. The polar identity is otherwise the same identity.
+The operator in the quantum potential is the Laplacian and not the d'Alembertian: the equation is first order in time and second order in space, so the second derivative in $Q$ is the spatial one and the temporal derivative never enters it.
 
-**The pair is equivalent to the equation, and neither half is an approximation.** The real part says that the phase's gradient is the momentum; the imaginary part says that the density is conserved. Together they are the equation, with nothing dropped.
+The pair is equivalent to the equation, and neither half is an approximation: the real part says that the phase's gradient is the momentum, the imaginary part says that the density is conserved.
+
+Both were checked on exact solutions rather than on random functions: the free Gaussian packet at three carrier momenta gave a relative residual of $10^{-7}$, and generic amplitudes and actions gave $10^{-8}$.
 
 ### The current and the transport equation
 
 The density and the current are the two halves of the continuity equation:
 
 $$
-\rho=A^{2},\qquad
-\vec j=A^{2}\frac{\vec\nabla_\Phi S}{m}=\rho\,\vec v,
+\rho=r^{2},\qquad
+\vec j=r^{2}\frac{\vec\nabla_\Phi S}{m}=\rho\,\vec v,
 \qquad
 \frac{\partial\rho}{\partial t'}+\vec\nabla_\Phi\cdot\vec j=0.
 $$
 
-The velocity is the boost's content in the central case, where the boost has collapsed: $\vec v=\vec\nabla_\Phi S/m$ is the field's phase gradient over the mass. In the general field the current reads the scale and the boost, and the rotor contributes nothing, exactly as the two norms say.
+The velocity is the phase gradient over the mass, and not the word's boost: on a central field the boost has collapsed to $e_t$ and carries nothing, so $\vec v=\vec\nabla_\Phi S/m$ is the whole of the velocity.
 
-**The density is a probability density and the current is its flux.** $\rho$ is positive by construction, because it is $\mathrm{Tr}(\tilde\Xi^{\dagger}\tilde\Xi)$ and $\tilde\Xi^{\dagger}\tilde\Xi$ is positive in the Hermitian form; the equation preserves it, as checked to $10^{-8}$ in a hundred random evolutions of a general field.
+**The flow is irrotational.** The velocity is a gradient, so its curl vanishes wherever the action is twice differentiable,
+$$
+\vec\nabla_\Phi\times\vec v=\frac{1}{m}\vec\nabla_\Phi\times\vec\nabla_\Phi S=0,
+$$
+and the circulation around any closed loop that does not enclose a node is zero. That is the irrotationality of Madelung's fluid, and it is a property of the phase and not of the algebra. The exception is a nodal line: the action is multivalued there and the circulation need not vanish, which is the quantised circulation of *The Nodal Set and Quantized Circulation*. In the general field the current reads the scale and the boost, and the rotor contributes nothing, exactly as the two norms say.
+
+**The density is a probability density and the current is its flux.** $\rho$ is positive by construction, because it is $\mathrm{Tr}(\tilde\Xi^{\dagger}\tilde\Xi)$ and $\tilde\Xi^{\dagger}\tilde\Xi$ is positive in the Hermitian form; the equation preserves it, as checked to $10^{-8}$ in a hundred random evolutions of a general field. The definiteness is a consequence of the order of the equation: here the density is a norm and not the temporal slot of a current, so it has no sign to lose, while a second-order equation's density is the temporal slot of its current and its sign is the sign of the energy.
 
 ### Why there is no mass shell
 
-The Dirac and Klein–Gordon companions end with a mass-shell condition: the word's boost is a boost exactly when the four-momentum is on the shell, and off the shell the boost is not unitary. There is no analogue here, and the absence is not a defect of the analysis.
+A second-order equation carries a mass shell: its four-momentum obeys $\langle\tilde K_\Phi\rangle_{\natural}=-k_m^{2}$ and the word's boost is a boost exactly on that set. A first-order equation carries none, and the absence is not a defect of the analysis.
 
 **The reason is the order of the equation.** The Schrödinger equation is first order in time, so the symbol has no second time derivative to constrain, and the dispersion relation is a definition of the frequency rather than a constraint on the field. The propagator's word carries no boost at all, and the field's word carries one whose rapidity the flow cannot change, so there is nothing for a shell condition to be a condition on.
 
 **What replaces it is the pair.** The two real equations of the previous section are an unconstrained system: one Hamilton–Jacobi equation that defines the phase and one continuity equation that defines the density, with the quantum potential carrying the only second derivative. Nothing is required of the initial data beyond the two functions.
 
-## What the Polar Form Does and Does Not Add
+## What the Polar Word Does and Does Not Add
 
 **The equation, no; the coordinates, yes.** Nothing here predicts anything the parent does not. What the polar form adds is a set of coordinates in which the flow is a statement about two numbers, the phase and the rotor's angle, and their two rates.
 
-**The domain is settled, and it is not a carrier.** The word exists exactly on the units, the units are generic in this algebra, and the flow preserves them. Unlike the Dirac case there is no class of fields excluded in advance, and unlike the Klein–Gordon case there is no nodal set that coincides with the cone. The polar form of this equation is total on the fields that occur.
+**The domain is settled, and it is not a carrier.** The word exists exactly on the units, the units are generic in this algebra, and the flow preserves them. The excluded set is the cone, a real set of measure zero, and it is not the nodal set: on a central field the two coincide, on a general field the cone is far larger than the node, and only the node is where the density vanishes. The polar word of this equation is therefore total on the generic field.
 
 **The frozen parameters are the statement of unitarity.** Of the propagator's four factors, the scale and the boost are frozen; the two that remain are the two that a unitary element can carry when the Hamiltonian is fixed. The field's word freezes the same two quantities, its scale and its rapidity, while its phase and its two axes turn. The count is two in both cases, and it needs no proof beyond the word's definition.
 
@@ -287,11 +319,11 @@ The Dirac and Klein–Gordon companions end with a mass-shell condition: the wor
 
 The Schrödinger equation is one element of $\mathbb{B}$ acting on another by left multiplication, and the polar word of the second element is substituted into it. The word exists exactly on the units of the algebra, which is the complement of the zero-divisor cone; a generic field is a unit and the flow preserves the cone, so the word exists for all time or for none.
 
-The propagator's word is a central phase times a rotor, with scale $1$ and boost $e_t$ frozen: four of the eight parameters cannot move. The field's own scale and rapidity are constants of the motion, and they are the only two: the phase and the rotor's angle run, the rotor's axis and the boost's axis precess at the gap, and the flow moves six of the eight parameters. The phase runs at minus the mean of the Hamiltonian's two eigenvalues and the rotor's half-angle at half their gap; a direction the field carries runs at the gap, $d\hat s/dt'=2\vec h_\Psi\times\hat s/\hbar$.
+The propagator's word is a central phase times a rotor, with the scale frozen at $1$, the rapidity at $0$ and the boost's axis carrying no data: only the phase and the rotor's angle move. The field's own scale and rapidity are constants of the motion, and they are the only two: the phase and the rotor's angle run, the rotor's axis and the boost's axis precess at the gap, and the flow moves six of the eight parameters. The phase runs at minus the mean of the Hamiltonian's two eigenvalues and the rotor's half-angle at half their gap; a direction the field carries runs at the gap, $d\hat s/dt'=2\vec h_\Psi\times\hat s/\hbar$.
 
-The two norms read different factors: the quaternionic norm is $r^{2}e^{2i\theta_{\mathrm{pha}}}$ and reads the scale and the phase, and the Hermitian norm is $2r^{2}\cosh\theta_{\mathrm{rpd},w}$ and reads the scale and the boost. Neither reads the rotor.
+The two norms read different factors: the quaternionic norm is $r^{2}e^{2i\theta_{\mathrm{pha}}}$ and reads the scale and the phase, and the Hermitian norm is $2r^{2}\cosh\theta_{\mathrm{rpd}}$ and reads the scale and the boost. Neither reads the rotor.
 
-A central field's word collapses to a scale, a phase and a sign, and that case is exactly Madelung's: the Hamilton–Jacobi equation with the quantum potential $Q=-\hbar^{2}\Delta_\Phi A/(2mA)$ and the continuity equation for $A^{2}$. The pair is exact, the operator is the Laplacian, and there is no mass shell, because the equation is first order in time.
+A central field's word collapses to a scale, a phase and a sign, and that case is exactly Madelung's: the Hamilton–Jacobi equation with the quantum potential $Q=-\hbar^{2}\Delta_\Phi r/(2mr)$ and the continuity equation for $r^{2}$. The pair is exact, the operator is the Laplacian, and there is no mass shell, because the equation is first order in time.
 
 ## Summary of Notation
 
@@ -312,20 +344,27 @@ A central field's word collapses to a scale, a phase and a sign, and that case i
 | $r>0$ | The scale |
 | $\theta_{\mathrm{pha}}$ | The central angle |
 | $\theta_{\mathrm{rpd}},\ \vec u_{\mathrm b}$ | Rapidity and axis of the boost |
-| $\theta_{\mathrm r},\ \vec u_{\mathrm r}$ | Angle and axis of the rotor |
+| $\theta_{\mathrm{axr}},\ \vec u_{\mathrm r}$ | Angle and axis of the rotor |
+| $\Xi_t$ | The scalar coefficient of the field; on a central field the whole field |
+| $\Rho=r\,e^{i\theta_{\mathrm{pha}}}$ | Modulus of the norm; the principal square root of $\langle\tilde\Xi\rangle_{\natural}$ |
+| $\varepsilon=\Xi_t/\Rho=\pm1$ | Branch of the modulus; on a central field the rotor is $\varepsilon e_t$ |
 | $\tilde Q(t')=\exp(-i\tilde H_\Psi t'/\hbar)=e^{i\theta_{\mathrm{pha},Q}}\tilde u_Q$ | The propagator and its word |
 | $\theta=\lvert\vec h_\Psi\rvert t'/\hbar$ | The parent's angle; the rotor's half-angle |
 | $\tilde u_Q=\cos\theta\,e_t+\sin\theta\,\vec u_\Psi$ | The propagator's rotor |
 | $\rho=\mathrm{Tr}(\tilde\Xi^{\dagger}\tilde\Xi)$ | Density (Hermitian norm) |
-| $Q=-\hbar^{2}\Delta_\Phi A/(2mA)$ | Quantum potential |
+| $Q=-\hbar^{2}\Delta_\Phi r/(2mr)$ | Quantum potential |
 | $L_{\mathrm{axf}}(\tilde H_\Psi)$ | Axis-free $4\times4$ array of the symbol |
 
 ## Further Reading
 
-- *The Schrödinger Equation in Biquaternionic Form*, for the equation, its solution and the axis-free array.
-- *The Polar Decomposition of an N-Regular Biquaternion*, for the word and its factors.
-- *Exponential Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion*, for the exponential form used here.
-- *The Meaning of N-Regularity and Degeneracy*, for $N$, the units and the cone.
-- *The Polar Form of the Dirac Equation in Biquaternionic Form* and *The Polar Form of the Klein–Gordon Equation in Biquaternionic Form*, for the same construction in the two relativistic cases.
-- *The WKB Approximation in Biquaternionic Form*, for the pair read as the first term of a series.
-- *Why AXF Matrices instead of Pauli and Gamma Matrices*, for why the body of the equation carries elements and not arrays.
+- [The Schrödinger Equation in Biquaternionic Form](the-schrodinger-equation-in-biquaternionic-form.html), for the equation, its solution and the axis-free array.
+- [The Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html), for the word and its factors.
+- [Exponential Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion](../articles_maths/exponential-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html), for the exponential form used here.
+- [The Meaning of N-Regularity and Degeneracy](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for $N$, the units and the cone.
+- [The Dirac Equation in Biquaternionic Polar Variables](the-dirac-equation-in-biquaternionic-polar-variables.html) and [The Klein–Gordon Equation in Biquaternionic Polar Variables](the-klein-gordon-equation-in-biquaternionic-polar-variables.html), for the same word applied to the two relativistic equations.
+- [The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form](the-wkb-approximation-and-the-hamilton-jacobi-equation-in-biquaternionic-form.html), for the pair read as the first term of a series.
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for why the body of the equation carries elements and not arrays.
+- Erwin Madelung, "Quantentheorie in hydrodynamischer Form," *Zeitschrift für Physik* **40** (1927) 322–326, for the continuity equation and the Hamilton–Jacobi equation of a scalar wave.
+- Takehiko Takabayasi, "On the formulation of quantum mechanics associated with classical pictures," *Progress of Theoretical Physics* **8** (1952) 143–182, for the same pair read as a hydrodynamical formulation.
+- David Bohm, "A suggested interpretation of the quantum theory in terms of hidden variables," *Physical Review* **85** (1952) 166–193, for the quantum potential and the guidance equation it defines.
+- [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html), for the exception at a nodal line, where the action is multivalued and the circulation is quantised.

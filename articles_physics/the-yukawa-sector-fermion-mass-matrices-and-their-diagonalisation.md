@@ -184,12 +184,12 @@ It is unitary, being a product of unitaries. It is the only place where the misa
 **The count, from the matrix.** A $3\times3$ unitary matrix carries nine real parameters: three angles and six phases. Rephasing the six quark fields,
 
 $$
-u_{L,a}\mapsto e^{i\alpha_a}u_{L,a} ,
+u_{L,a}\mapsto e^{i\theta_{\mathrm{pha},a}}u_{L,a} ,
 \qquad
-d_{L,a}\mapsto e^{i\beta_a}d_{L,a} ,
+d_{L,a}\mapsto e^{i\theta_{\mathrm{pha},a}}d_{L,a} ,
 $$
 
-changes $V_{ab}\mapsto e^{-i\alpha_a}V_{ab}e^{i\beta_b}$, and one overall phase is unobservable because it leaves $V$ unchanged. So five of the six phases can be removed, and
+changes $V_{ab}\mapsto e^{-i\theta_{\mathrm{pha},a}}V_{ab}e^{i\theta_{\mathrm{pha},b}}$, and one overall phase is unobservable because it leaves $V$ unchanged. So five of the six phases can be removed, and
 
 $$
 9-5=4 :
@@ -201,9 +201,9 @@ three angles and one phase. The subtraction is the same $2N-1=5$ that article 1 
 
 $$
 V=\begin{pmatrix}
-c_{12}c_{13} & s_{12}c_{13} & s_{13}e^{-i\delta}\
--s_{12}c_{23}-c_{12}s_{23}s_{13}e^{i\delta} & c_{12}c_{23}-s_{12}s_{23}s_{13}e^{i\delta} & s_{23}c_{13}\
-s_{12}s_{23}-c_{12}c_{23}s_{13}e^{i\delta} & -c_{12}s_{23}-s_{12}c_{23}s_{13}e^{i\delta} & c_{23}c_{13}
+c_{12}c_{13} & s_{12}c_{13} & s_{13}e^{-i\theta_{\mathrm{cpk}}}\
+-s_{12}c_{23}-c_{12}s_{23}s_{13}e^{i\theta_{\mathrm{cpk}}} & c_{12}c_{23}-s_{12}s_{23}s_{13}e^{i\theta_{\mathrm{cpk}}} & s_{23}c_{13}\
+s_{12}s_{23}-c_{12}c_{23}s_{13}e^{i\theta_{\mathrm{cpk}}} & -c_{12}s_{23}-s_{12}c_{23}s_{13}e^{i\theta_{\mathrm{cpk}}} & c_{23}c_{13}
 \end{pmatrix},
 $$
 

@@ -187,17 +187,17 @@ of components $(q_t,q_x,q_y,q_z) = \left(\tfrac{i}{2},0,0,-\tfrac12\right)$ and 
 
 ## Problem 6: The Double Cover on a Concrete Rotation
 
-Take a rotation about $\vec e_z$ by angle $\theta$, with rotor $\tilde u_{\mathrm r}(\theta)$.
+Take a rotation about $\vec e_z$ by angle $\theta_{\mathrm{axr}}$, with rotor $\tilde u_{\mathrm r}(\theta_{\mathrm{axr}})$.
 
-**On the field.** At $\theta = 2\pi$ the rotor is $\tilde u_{\mathrm r}(2\pi) = \cos\pi\,e_t = -e_t$, so the left multiplication sends every field to its negative, $\tilde{Ξ}\mapsto-\tilde{Ξ}$, which is not the identity. At $\theta = 4\pi$ the rotor is $\tilde u_{\mathrm r}(4\pi) = \cos 2\pi\,e_t = e_t$, and the field returns to itself.
+**On the field.** At $\theta_{\mathrm{axr}} = 2\pi$ the rotor is $\tilde u_{\mathrm r}(2\pi) = \cos\pi\,e_t = -e_t$, so the left multiplication sends every field to its negative, $\tilde{Ξ}\mapsto-\tilde{Ξ}$, which is not the identity. At $\theta_{\mathrm{axr}} = 4\pi$ the rotor is $\tilde u_{\mathrm r}(4\pi) = \cos 2\pi\,e_t = e_t$, and the field returns to itself.
 
-**On the four-vector.** The four-vector action is the two-sided operator with the rotor. At $\theta = 2\pi$,
+**On the four-vector.** The four-vector action is the two-sided operator with the rotor. At $\theta_{\mathrm{axr}} = 2\pi$,
 
 $$
 (-e_t)\,V\,(-e_t)^{*} = (-e_t)\,V\,(-e_t) = e_t\,V\,e_t = V,
 $$
 
-using $(-e_t)^{*} = -e_t$. So a $2\pi$ rotation acts as the identity on every four-vector, identically and not approximately. At $\theta = 4\pi$ the rotor is $e_t$ and both actions are the identity.
+using $(-e_t)^{*} = -e_t$. So a $2\pi$ rotation acts as the identity on every four-vector, identically and not approximately. At $\theta_{\mathrm{axr}} = 4\pi$ the rotor is $e_t$ and both actions are the identity.
 
 **The general statement.** The two behaviours are the two entries of the parent's table:
 
@@ -246,7 +246,7 @@ The solutions have the expected limits.
 
 - **Rapidity limits.** As $\theta_{\mathrm{rpd}}\to0$ both parts become indistinguishable, reflecting that the chiral splitting is a property of the full Lorentz group, not of its compact subgroup; for large $\theta_{\mathrm{rpd}}$ the parts diverge exponentially, one part stretched by $\exp(\theta_{\mathrm{rpd}}/2)$ and the other contracted by $\exp(-\theta_{\mathrm{rpd}}/2)$.
 - **$v = \pm w$ (one element):** $H = \pm ww^{*}$ has vanishing norm, so $V$ is null. For a generic pair, $V$ is timelike or spacelike according to the sign of $\langle V\rangle_{\natural} = -h_t^2+\vec h_\Psi^2$.
-- **$\theta = 2\pi$ versus $4\pi$:** the field picks up $-1$ at $2\pi$ and returns at $4\pi$, while the four-vector is unchanged at both — the double cover in its simplest instance.
+- **$\theta_{\mathrm{axr}} = 2\pi$ versus $4\pi$:** the field picks up $-1$ at $2\pi$ and returns at $4\pi$, while the four-vector is unchanged at both — the double cover in its simplest instance.
 
 ## What the Solutions Illustrate
 
@@ -362,7 +362,7 @@ Seven problems were solved. (1) The subscript takes two values and there are exa
 | $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | The d'Alembertian, the quaternionic norm of the gradient |
 | $D_3=\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ | Three-dimensional Cauchy–Riemann operator of the two-sided equation |
 | $\tilde U_{\Psi,\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2}\,e_t+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b}$ | Boost rotor ($\mathbb{B}_{\Psi}$) |
-| $\tilde u_{\mathrm r} = \cos\frac{\theta}{2}\,e_t+\sin\frac{\theta}{2}\,\vec u_{\mathrm r}$ | Rotation rotor ($\mathbb{B}_{H}$) |
+| $\tilde u_{\mathrm r} = \cos\frac{\theta_{\mathrm{axr}}}{2}\,e_t+\sin\frac{\theta_{\mathrm{axr}}}{2}\,\vec u_{\mathrm r}$ | Rotation rotor ($\mathbb{B}_{H}$) |
 | $\bar{\tilde U}=(\tilde U^{*})^{-1}$ | The conjugate action for a unit element |
 | $H = \tfrac12(wv^{*}+vw^{*})$, $V = iH$ | Hermitian part and four-vector from a pair of elements |
 | $SL(2,\mathbb{C})$, $\pi$ | Unit elements; double cover of $SO^{+}(1,3)$ |

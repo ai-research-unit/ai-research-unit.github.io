@@ -154,7 +154,7 @@ The series writes one polar word and reads it in three bracketings. The word, it
 
 $$
 \tilde Q=r\,\exp(i\theta_{\mathrm{pha}})\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
-\qquad r>0,\qquad \theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}],\qquad \theta_{\mathrm{rpd},w}\ge0,\qquad \theta\in[0,2\pi],
+\qquad r>0,\qquad \theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}],\qquad \theta_{\mathrm{rpd},w}\ge0,\qquad \theta_{\mathrm{axr}}\in[0,2\pi],
 $$
 
 Here $\theta_{\mathrm{pha}}$ is the phase of the polar form: it is the argument of the central complex scalar, a real angle taken modulo a full turn, and the exponential that carries it is $\exp(i\theta_{\mathrm{pha}})$.
@@ -166,7 +166,7 @@ with the factors of the table. The order is forced: the scale and the phase are 
 | 1 | scale | $r$ | $r>0$ | real central scalar | dilation by $r^2$ |
 | 2 | central phase | $\exp(i\theta_{\mathrm{pha}})$ | $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ | central unit | scalar multiplication |
 | 3 | boost | $\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd},w})=\cosh\frac{\theta_{\mathrm{rpd},w}}{2}e_t+i\sinh\frac{\theta_{\mathrm{rpd},w}}{2}\vec u_{\mathrm b}$ | $\theta_{\mathrm{rpd},w}\ge0$, $\vec u_{\mathrm b}$ a unit real vector | Hermitian positive, $\det=1$ | congruence $X\mapsto\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd},w})X\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd},w})^{*}$ |
-| 4 | rotor | $\tilde u_{\mathrm r}=\cos\frac{\theta}{2}e_t+\sin\frac{\theta}{2}\vec u_{\mathrm r}$ | $\theta\in[0,2\pi]$, $\vec u_{\mathrm r}$ a unit real vector | real unit quaternion | conjugation $X\mapsto\tilde u_{\mathrm r}X\tilde u_{\mathrm r}^{*}$ |
+| 4 | rotor | $\tilde u_{\mathrm r}=\cos\frac{\theta_{\mathrm{axr}}}{2}e_t+\sin\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ | $\theta_{\mathrm{axr}}\in[0,2\pi]$, $\vec u_{\mathrm r}$ a unit real vector | real unit quaternion | conjugation $X\mapsto\tilde u_{\mathrm r}X\tilde u_{\mathrm r}^{*}$ |
 
 **The word is not the exponential.** The four factors are a section of the word map, not of the exponential map; the two coincide only when the exponents commute. The defect is the Baker–Campbell–Hausdorff term, and it is recorded in *The Exponential Word and Its Boundary*.
 
