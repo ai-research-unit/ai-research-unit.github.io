@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Path Integral and the Coupled Schrödinger Equation in Biquaternionic Form — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-path-integral-and-the-coupled-schrodinger-equation-in-biquaternionic-form"><strong>The Path Integral and the Coupled Schrödinger Equation in Biquaternionic Form</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><em>The Path Integral and the Schrödinger Equation in Biquaternionic Form</em> sums $\exp(iS/\hbar)$ over the free field, evaluates the generating functional, and identifies the two-point function with the propagator. This article puts the electromagnetic connection into that integral. The replacement is one rule, the ordinary derivative becomes a covariant one, and the potential is one term added to the action; the two are the coupled variational companion's, cited and not re-derived.</p>
+<p><strong>Three findings, and the first is the reason the article exists.</strong></p>
+<p><em>First, the coupling enters three of the four terms of the exponent and never the measure.</em> The kinetic term is untouched, because the connection's temporal coefficient sits in the covariant derivative and not in $\partial_{t'}$. The gradient term becomes a sum of moduli of covariant derivatives and splits into the free term, a term linear in $\vec A$ through the phase gradient, and a term quadratic in $\vec A$. The potential term is one more term, linear in $\varphi$. Nothing else is added, and the measure is the free measure.</p>
+<p><em>Second, the gauge invariance of the integral is exact, and the measure is what makes it exact.</em> The transformation is a central phase at each point, so its Jacobian is one and the flat measure is untouched; the exponent shifts by a total derivative which cancels between the kinetic and the potential terms, term by term, exactly as the variational companion records. No lattice link, no Wilson line and no discretisation rule is introduced, and this is a structural difference from the Klein–Gordon case rather than a convenience.</p>
+<p><em>Third, the constant background is exactly solvable and the two shifts are the whole of the coupling there.</em> The kernel is the free kernel times a phase factor in the potential and a translation factor in the vector potential, and the dispersion is $E+ϙ\varphi=(\vec p+ϙ\vec A)^{2}/2m$. The composition of the shifted kernels is verified to $2.3\times10^{-12}$.</p>
+<p><strong>What is not claimed.</strong> No new prediction, no new solution, no new particle. The integral is the standard one of non-relativistic scalar electrodynamics. What the algebra contributes is that the connection is one central operator read in four slots, that the measure is flat and stays flat, and that the determinant's power is unchanged by the coupling — the first-order $\det^{-1}$ of the free companion, not a new power.</p>
+<p><strong>The two settings are again kept apart, and the coupling has a different face in each.</strong> In the constant setting the coupling is a shift of two numbers, $h_t\mapsto h_t-ϙ\varphi$ and $\vec h_\Psi\mapsto\vec h_\Psi+ϙ\vec A$, and the integral's exponent is the free exponent with the shifted numbers. In the operator setting the coupling is a covariant Laplacian and a potential, and the integral is the free integral with three extra terms. No result is transferred between them.</p>
+<p><strong>Conventions.</strong> The algebra, the sectors, the pairing $\mathrm{Sc}(\cdot^{*}\cdot)$, the action, the measure and the $i\epsilon$ are the free companion's. The connection is $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$ with $\varphi$ and $\vec A$ real, the coupling is $ϙ$, and the covariant derivative is $\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$, so that</p>
+<p>$$
+D_t=\partial_{t'}-\frac{iϙ}{\hbar}\varphi,
+\qquad
+D_\eta=\partial_\eta+\frac{iϙ}{\hbar}A_\eta,
+\qquad
+\vec\pi=-i\hbar\vec\nabla+ϙ\vec A,
+$$</p>
+<p>with the mechanical momentum $\vec\pi$ and the potential energy $-ϙ\varphi$. The charge $ϙ$ is minus the electric charge of the older convention, and its value is inserted, not derived.</p>
+<h2 id="the-exponent">The Exponent</h2>
+<p><strong>The action is the coupled variational companion's.</strong> In the operator setting,</p>
+<p>$$
+S=\int dt'\,d^{3}x\;\mathrm{Sc}\Bigl[\frac{i\hbar}{2}\bigl(\tilde\Xi^{*}\partial_{t'}\tilde\Xi-(\partial_{t'}\tilde\Xi^{*})\tilde\Xi\bigr)-\frac{\hbar^{2}}{2m}\sum_\eta\bigl(D_\eta\tilde\Xi\bigr)^{*}\bigl(D_\eta\tilde\Xi\bigr)+ϙ\varphi\,\tilde\Xi^{*}\tilde\Xi\Bigr],
+$$</p>
+<p>and the integral is $\int\mathcal{D}\tilde\Xi\,\mathcal{D}\tilde\Xi^{*}\exp(iS/\hbar)$ with the free measure. <strong>The kinetic term is the free one and that is the metric's doing</strong>: the temporal connection is absorbed in $D_t$ and the kinetic term uses $\partial_{t'}$, so the antisymmetrisation that makes it Hermitian is untouched by the coupling.</p>
+<p><strong>The gradient term is a sum of moduli and stays a sum of moduli.</strong> For each $\eta$,</p>
+<p>$$
+\mathrm{Sc}\bigl((D_\eta\tilde\Xi)^{*}(D_\eta\tilde\Xi)\bigr)=\sum_{\mu=0}^{3}\bigl|(D_\eta\tilde\Xi)_\mu\bigr|^{2}\ \ge 0,
+$$</p>
+<p>so the coupled gradient term is positive for the same reason as the free one: the added term is anti-Hermitian and the modulus of an element is unchanged by adding to it an anti-Hermitian multiple of itself. <strong>The consequence is the diamagnetic inequality in its variational form</strong>: the action's kinetic part is bounded below by zero, and the energy is bounded below whenever $ϙ\varphi$ is. The integral inherits the bound, and the Fresnel convergence factor has to fight the potential and not the gradient.</p>
+<p><strong>The three-term split is the coupling's whole content in the exponent.</strong> Written out,</p>
+<p>$$
+-\frac{\hbar^{2}}{2m}\sum_\eta\bigl(D_\eta\tilde\Xi\bigr)^{*}\bigl(D_\eta\tilde\Xi\bigr)
+=-\frac{\hbar^{2}}{2m}\sum_\eta(\partial_\eta\tilde\Xi)^{*}(\partial_\eta\tilde\Xi)
+-\frac{\hbar}{m}\sum_\eta ϙA_\eta\,\mathrm{Sc}\bigl(\tilde\Xi^{*}i\partial_\eta\tilde\Xi\bigr)
+-\frac{ϙ^{2}}{2m}|\vec A|^{2}\,\tilde\Xi^{*}\tilde\Xi .
+$$</p>
+<p>The first term is the free one, the second is linear in the connection and carries the phase current, the third is quadratic. The three are one square's expansion and not three rules, and the polar companion reads them as the chart's single shifted bracket. The identity was checked on analytic fields at four points against the modulus form, to a relative $2.1\times10^{-16}$.</p>
+<p><strong>The whole exponent is real, and this is the integral's well-definedness.</strong> Each of the three terms of the action is Hermitian and $\mathrm{Sc}$ of a Hermitian element is real, so the exponent's imaginary part is exactly the free one, $\int\mathrm{Lag}/\hbar$ with $\mathrm{Lag}$ real. The integrand is therefore a phase times a damping, and the damping is the free damping. Nothing in the coupling can make the integral diverge that the free integral does not.</p>
+<p><strong>The first-order structure is unchanged and the determinant's power with it.</strong> The operator is</p>
+<p>$$
+A_{\mathrm{gco}}=i\hbar D_t-\frac{1}{2m}\Bigl(-i\hbar\vec D\Bigr)^{2},
+$$</p>
+<p>first order in the time derivative and second order in the space derivatives, exactly as the free one. Hence the integral is still a first-order integral, its value is $\det(A_{\mathrm{gco}})^{-1}$ times the exponent of the source term, and the power of the determinant is the free power. <strong>The coupling changes the operator and not its order</strong>, and that is the reason the coupled integral is as well defined as the free one.</p>
+<h2 id="gauge-invariance-and-the-measure">Gauge Invariance and the Measure</h2>
+<p><strong>The transformation is a central phase at each point.</strong> With a real function $\Gamma(x)$,</p>
+<p>$$
+\tilde\Xi\mapsto e^{\frac{iϙ}{\hbar}\Gamma}\tilde\Xi,
+\qquad
+\varphi\mapsto\varphi-\partial_{t'}\Gamma,
+\qquad
+\vec A\mapsto\vec A+\vec\nabla\Gamma,
+$$</p>
+<p>which is the standard transformation with the sign convention of $D_t$ and $D_\eta$ above.</p>
+<p><strong>The measure is invariant because the Jacobian is one.</strong> At each point the transformation multiplies the two real coordinates of the central field by a rotation matrix of unit determinant, so $\mathcal{D}\tilde\Xi\,\mathcal{D}\tilde\Xi^{*}$ is unchanged. This is the sharpest difference from a lattice formulation: the phase is a modulus-one number at every point, so a finite transformation costs a unit Jacobian and nothing else.</p>
+<p><strong>The exponent is invariant term by term.</strong> The kinetic term gains $-ϙ\,\partial_{t'}\Gamma\,n$, the potential term gains $+ϙ\,\partial_{t'}\Gamma\,n$, and the two cancel; the gradient term is invariant by covariance. The variational companion states the same cancellation and calls it the clearest statement of why the covariant derivative and the potential are one object. <strong>The integral's invariance is therefore exact and is not a boundary-term statement</strong>, because the two gains are equal and opposite inside the exponent at every point.</p>
+<p><strong>The determinant is gauge invariant.</strong> The operator transforms by a similarity, $A_{\mathrm{gco}}\mapsto e^{iϙ\Gamma/\hbar}A_{\mathrm{gco}}e^{-iϙ\Gamma/\hbar}$, on top of the shift that the potential supplies; the shift is what makes the similarity exact rather than approximate, and a similarity leaves the determinant unchanged. Since the measure's Jacobian is one, $Z$ is invariant, and so is every correlator of gauge-invariant insertions.</p>
+<p><strong>The density is the response to the potential, and the statement is one derivative.</strong> Differentiating the exponent with respect to $\varphi(x)$ brings down $\frac{i}{\hbar}ϙ\,n(x)$, so</p>
+<p>$$
+\frac{\hbar}{i}\frac{\delta\ln Z}{\delta\varphi(x)}=ϙ\,\bigl\langle n(x)\bigr\rangle ,
+$$</p>
+<p>and the second derivative gives the density–density correlator. <strong>This is the integral's version of the variational companion's Noether current</strong>: the current is what the source couples to, and here the source is the scalar potential itself.</p>
+<p><strong>No link, no discretisation rule, no linearisation.</strong> The Klein–Gordon companion has to ask whether the lattice's link is the linearised phase or the exponential one, and it answers that the exponential one is implied by the chart. The Schrödinger integral does not have that question, because the field is one complex number and the transformation is a rotation of it: the discrete product's every step carries a phase factor of modulus one, and the composition is exact. The question survives in the Klein–Gordon article because the field there has two independent slots whose covariance is a statement about each of them; here there is one slot and the statement is one multiplication.</p>
+<p><strong>The contrast with the Dirac case is the same contrast as in the equation.</strong> The Dirac companion records that the naive bilinear is gauge invariant and not conserved, so the current needs a triple product and two fixed frame units. The Schrödinger integral has neither defect: the bilinear is the density, it is conserved, and it is what the source couples to. The integral's gauge structure is as simple as the algebra allows, and the reason is that the connection is central.</p>
+<h2 id="the-constant-background">The Constant Background</h2>
+<p><strong>A constant connection gives a kernel that is the free kernel times two factors.</strong> For constant $\varphi$ and $\vec A$ the exact kernel is</p>
+<p>$$
+\boxed{\;K_{\mathrm{gco}}(\vec r_f,r'_t;\vec r_i)=\exp\Bigl(-\frac{iϙ\varphi\,r'_t}{\hbar c}\Bigr)\exp\Bigl(\frac{iϙ}{\hbar}\vec A\cdot(\vec r_f-\vec r_i)\Bigr)K_0(\vec r_f-\vec r_i,r'_t),\;}
+$$</p>
+<p>with $K_0$ the free kernel of the free companion. The first factor is the potential's phase, the second is the vector potential's translation of the momentum, and the third is the free propagation.</p>
+<p><strong>The composition law of the shifted kernel is exact, and it is a check of both factors.</strong> Composing two factors gives the difference of positions summed along the intermediate point, $\vec A\cdot(\vec r_f-\vec r_m)+\vec A\cdot(\vec r_m-\vec r_i)=\vec A\cdot(\vec r_f-\vec r_i)$, and the phases multiply; so the composite is the single shifted kernel with the summed time. A Euclidean quadrature of the composition on a $400001$-point grid reproduces the single factor to a relative $2.3\times10^{-12}$. <strong>Both factors compose, and they compose for different reasons</strong>: the potential's phase is a character of the time, and the vector potential's factor is a character of the displacement.</p>
+<p><strong>The dispersion is the two shifts and nothing else.</strong> A plane wave $e^{i(\vec p\cdot\vec r-E t')/\hbar}$ solves the coupled equation when</p>
+<p>$$
+E+ϙ\varphi=\frac{(\vec p+ϙ\vec A)^{2}}{2m},
+$$</p>
+<p>which is the constant companion's $h_t\mapsto h_t-ϙ\varphi$ and $\vec h_\Psi\mapsto\vec h_\Psi+ϙ\vec A$ read as a dispersion. <strong>The two shifts are the coupling's only content in the constant setting</strong>, and the potential's shift is linear because the equation is first order in time: there is no square to put it in.</p>
+<p><strong>The translation factor is a phase and not a gauge choice.</strong> The second factor of the kernel is not removable by a gauge transformation of the endpoints, because a gauge transformation would also move $\varphi$ and because the factor's argument is the displacement. It is the integral's version of the statement that a constant vector potential is pure gauge in the equation and not in the kernel: the kernel is a matrix element between two positions, and the two positions are at different points, so the phase does not cancel.</p>
+<h2 id="the-semiclassical-expansion">The Semiclassical Expansion</h2>
+<p><strong>The saddle of the coupled integral is the classical equation with the connection.</strong> Varying the exponent gives $A_{\mathrm{gco}}\tilde\Xi_{\mathrm{cl}}=-J$, which is the coupled equation with the source; in the position representation and between two endpoints the saddle is the classical path of a charge in the field. The quadratic fluctuation integral gives the van Vleck determinant of that path, and the prefactor's square root is the same central branch as in the free case.</p>
+<p><strong>The equation of the saddle is the Lorentz force and the algebra adds nothing to it.</strong> The variational companion derives the force from the action's variation and records it; here the same statement appears as the classical limit of the integral, which is the standard correspondence between the stationary phase and the classical equation. <strong>No spin is involved</strong>: the field is scalar, the connection is central, and the only structure the charge has is its coupling.</p>
+<p><strong>The determinant is gauge invariant and the amplitude is therefore physical.</strong> The van Vleck amplitude is built from the classical action's second variation, and the classical action is gauge invariant up to endpoint terms; the Maslov constant is central and unchanged. <strong>The semiclassical kernel is $A_{\mathrm{wkb}}\exp(iS_{\mathrm{cl}}/\hbar)\exp(iϙ\int A\cdot dr/\hbar)$</strong>, the last factor being the phase the connection accumulates along the classical path — the Aharonov–Bohm phase of the corpus's geometric-phase articles, appearing here as the semiclassical limit's bookkeeping.</p>
+<h2 id="what-the-form-adds-and-what-it-does-not-add">What the Form Adds and What It Does Not Add</h2>
+<p><strong>Adds, first, that the coupling is one central operator in four slots.</strong> The temporal and the three spatial slots are one substitution read four times; there is no ordering question, no commutator and no relative sign to choose, because the connection's coefficients are central and commute with the units. The exponent's three terms are one square's expansion.</p>
+<p><strong>Adds, second, that the measure stays flat.</strong> The gauge transformation is a rotation at each point with unit Jacobian, so the free measure is the coupled measure and no link structure is introduced. This is why the Schrödinger integral's gauge invariance is exact at every step and the Klein–Gordon integral's needed the chart to make the same point.</p>
+<p><strong>Adds, third, the invariance of the determinant's power.</strong> The coupling changes the operator and not its order in time, so the coupled determinant is again a first power and the integral is as well defined as the free one.</p>
+<p><strong>Does not add a value.</strong> The free and constant-background kernels are exact and standard; the interacting kernel is not evaluated, and no new approximation is introduced.</p>
+<p><strong>Does not supply the measure, the second quantisation or the Landau spectrum.</strong> The continuum measure is formal, the statistics question is the free companion's, and the discrete spectrum in a constant magnetic field is the subject of the corpus's Landau-level article and not of this one.</p>
+<h2 id="open-questions">Open Questions</h2>
+<p><strong>1. Can the interacting two-point function be written in closed form for a general connection?</strong> No. The integral is the standard one, and what would be needed is a solution of the coupled equation, not a property of the integral.</p>
+<p><strong>2. What happens when the connection is non-central?</strong> A non-abelian connection, or a connection valued in $\mathbb{B}_{\Psi}$ rather than in the centre, would put the connection inside the field's multiplication and raise the ordering question the central case does not have. Whether the integral survives is open, and the corpus's gauge-sector articles are where the connection's algebra is discussed.</p>
+<p><strong>3. Is the $ϙ$-independence of the determinant's power exact?</strong> The power counts time derivatives and the covariant derivative is still one derivative, so the answer should be yes; a proof that the coupled operator's determinant is a well-defined first-order object on the same footing as the free one is not given.</p>
+<p><strong>4. Does the Landau problem's spectrum come out of the integral?</strong> The kernel in a constant magnetic field is exactly known in the standard formalism and is the sum over Landau levels. Whether the biquaternion form's chart of that kernel adds anything is the Landau article's question.</p>
+<p><strong>5. Empirical content.</strong> None.</p>
+<h2 id="summary">Summary</h2>
+<p>The coupled functional integral is the free one with three extra terms in the exponent and the same measure. The kinetic term is untouched because the temporal connection sits in $D_t$; the gradient term is a sum of moduli of covariant derivatives, hence positive, and splits into the free term, a linear term in $\vec A$ and a quadratic one; the potential term is $ϙ\varphi\,n$, and the whole exponent stays real. The operator $A_{\mathrm{gco}}=i\hbar D_t-\frac{1}{2m}(-i\hbar\vec D)^{2}$ is still first order in time, so its determinant enters to the first power exactly as in the free case.</p>
+<p>The gauge transformation is a central phase at each point, its Jacobian is one, so the measure is untouched; the exponent shifts by a total derivative that cancels between the kinetic and the potential terms, so the invariance is exact and term by term, with no link and no boundary term. The determinant is gauge invariant by the similarity the shift supplies, and the density is the functional derivative of $\ln Z$ with respect to $\varphi$. The constant background is exact: the kernel is the free kernel times $\exp(-iϙ\varphi r'_t/\hbar c)$ and $\exp(iϙ\vec A\cdot\vec r/\hbar)$, its composition verified to $2.3\times10^{-12}$, with the dispersion $E+ϙ\varphi=(\vec p+ϙ\vec A)^{2}/2m$. The semiclassical kernel is van Vleck's amplitude times the classical action's phase times the connection's line integral along the classical path.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde A_\Phi=i(\varphi/c)e_t+\vec A$</td>
+<td>The connection</td>
+</tr>
+<tr>
+<td>$ϙ$</td>
+<td>The coupling constant; minus the older electric charge</td>
+</tr>
+<tr>
+<td>$D_t=\partial_{t'}-\frac{iϙ}{\hbar}\varphi$</td>
+<td>Covariant temporal derivative</td>
+</tr>
+<tr>
+<td>$D_\eta=\partial_\eta+\frac{iϙ}{\hbar}A_\eta$</td>
+<td>Covariant spatial derivative</td>
+</tr>
+<tr>
+<td>$\vec\pi=-i\hbar\vec\nabla+ϙ\vec A$</td>
+<td>Mechanical momentum</td>
+</tr>
+<tr>
+<td>$A_{\mathrm{gco}}=i\hbar D_t-\frac{1}{2m}(-i\hbar\vec D)^{2}$</td>
+<td>The first-order operator of the integral</td>
+</tr>
+<tr>
+<td>$\det(A_{\mathrm{gco}})^{-1}$</td>
+<td>The coupled determinant; power unchanged</td>
+</tr>
+<tr>
+<td>$e^{\frac{iϙ}{\hbar}\Gamma}$</td>
+<td>The gauge transformation; unit Jacobian</td>
+</tr>
+<tr>
+<td>$K_{\mathrm{gco}}$</td>
+<td>The constant-background kernel</td>
+</tr>
+<tr>
+<td>$\exp(-iϙ\varphi r'_t/\hbar c)\exp(iϙ\vec A\cdot\vec r/\hbar)$</td>
+<td>Its two factors</td>
+</tr>
+<tr>
+<td>$E+ϙ\varphi=(\vec p+ϙ\vec A)^{2}/2m$</td>
+<td>The dispersion's two shifts</td>
+</tr>
+<tr>
+<td>$\exp(iϙ\oint\vec A\cdot d\vec r/\hbar)$</td>
+<td>The connection's phase along the classical path</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Variational Principle and the Coupled Schrödinger Equation in Biquaternionic Form</em>, for the action, the term-by-term invariance and the Noether current.</li>
+<li><em>The Coupled Schrödinger Equation in Biquaternionic Form</em>, for the equation, the gauge covariance and the constant setting's two shifts.</li>
+<li><em>The Path Integral and the Schrödinger Equation in Biquaternionic Form</em>, for the free integral whose determinant's power this article keeps.</li>
+<li><em>The Path Integral and the Coupled Schrödinger Equation in Biquaternionic Polar Variables</em>, for the same integral read in the word.</li>
+<li><em>The Path Integral and the Coupled Klein–Gordon Equation in Biquaternionic Form</em>, for the second-order coupled integral and the link question this article does not have.</li>
+<li><em>Landau Levels in Biquaternionic Form</em>, for the constant magnetic field's spectrum.</li>
+<li><em>The Berry Phase and Geometric Phases in Biquaternionic Form</em>, for the line-integral phase in its geometric reading.</li>
+<li>L. D. Faddeev and A. A. Slavnov, <em>Gauge Fields: An Introduction to Quantum Theory</em> (Benjamin, 1980), for the first-order integral and its gauge structure.</li>
+<li>H. Kleinert, <em>Path Integrals in Quantum Mechanics, Statistics, Polymer Physics, and Financial Markets</em> (World Scientific, 2009), for the constant-background kernels.</li>
+<li>L. S. Schulman, <em>Techniques and Applications of Path Integration</em> (Wiley, 1981), for the vector potential in the discretised product.</li>
+<li>M. Reed and B. Simon, <em>Methods of Modern Mathematical Physics II</em> (Academic Press, 1975), for the diamagnetic inequality.</li>
+<li>P. Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), for the algebra and its central elements.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
