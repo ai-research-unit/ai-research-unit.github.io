@@ -149,7 +149,7 @@ $$
 \langle\tilde\Xi'\rangle_{*}=r^{2}\Bigl(\cosh\theta_{\mathrm{rpd}}\cosh\phi+\sinh\theta_{\mathrm{rpd}}\sinh\phi\cos\chi\Bigr),
 $$
 
-which is $\gamma_\phi\bigl(u^{0}+\beta_\phi\,\vec u_{\phi}\cdot\vec u\bigr)$ for the four-velocity $u^{\mu}=(\cosh\theta_{\mathrm{rpd}},\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b})$, scaled by $r^{2}$. **The two special cases are the memorable ones**: for a boost along the flow, $\langle\tilde\Xi'\rangle_{*}=r^{2}\cosh(\theta_{\mathrm{rpd}}+\phi)$, the rapidity adding; for a boost perpendicular to it, $\langle\tilde\Xi'\rangle_{*}=r^{2}\cosh\theta_{\mathrm{rpd}}\cosh\phi$, the two Lorentz factors multiplying. *Proof and residuals: §*Appendix: The Algebra*, §*The Boost Composition*.*
+which is $\gamma_\phi\bigl(u_{t}+\beta_\phi\,\vec u_{\phi}\cdot\vec u\bigr)$ for the four-velocity $u_{\mu}=(\cosh\theta_{\mathrm{rpd}},\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b})$, its temporal component first and all indices low, scaled by $r^{2}$. **The two special cases are the memorable ones**: for a boost along the flow, $\langle\tilde\Xi'\rangle_{*}=r^{2}\cosh(\theta_{\mathrm{rpd}}+\phi)$, the rapidity adding; for a boost perpendicular to it, $\langle\tilde\Xi'\rangle_{*}=r^{2}\cosh\theta_{\mathrm{rpd}}\cosh\phi$, the two Lorentz factors multiplying. *Proof and residuals: §*Appendix: The Algebra*, §*The Boost Composition*.*
 
 **So the ratio is the flow's Lorentz factor and transforms as one.** $\langle\tilde\Xi\rangle_{*}/\lvert N\rvert=\cosh\theta_{\mathrm{rpd}}$ is the time component of the four-velocity, and the sentence "the Euclidean size is the coordinate density" is the statement that a coordinate density is a time component. **$\lvert N\rvert$ is a scalar of the theory; $\langle\cdot\rangle_{*}$ is not**, and the phrase "the field's size" is therefore misleading wherever it appears in the block: the field has no Lorentz-invariant **Euclidean** size, it has an invariant modulus and a frame-dependent time component.
 
@@ -407,7 +407,7 @@ $$
 \frac{\langle\tilde U_{\mathrm b}\tilde\Xi\rangle_{*}}{r^{2}}=(c_hc_\phi+s_hs_\phi\cos\chi)^{2}+s_h^{2}s_\phi^{2}\sin^{2}\chi+\bigl(c_h^{2}s_\phi^{2}+s_h^{2}c_\phi^{2}+2c_hs_hc_\phi s_\phi\cos\chi\bigr).
 $$
 
-Adding the $\cos^{2}\chi$ and $\sin^{2}\chi$ terms, the first and third pieces give $c_h^{2}(c_\phi^{2}+s_\phi^{2})+s_h^{2}(c_\phi^{2}+s_\phi^{2})=(c_h^{2}+s_h^{2})\cosh\phi$, and the two cross terms give $4c_hs_hc_\phi s_\phi\cos\chi$. With $c_h^{2}+s_h^{2}=\cosh\theta_{\mathrm{rpd}}$ and $2c_hs_h=\sinh\theta_{\mathrm{rpd}}$, $2c_\phi s_\phi=\sinh\phi$, the total is $\cosh\theta_{\mathrm{rpd}}\cosh\phi+\sinh\theta_{\mathrm{rpd}}\sinh\phi\cos\chi$. **That is the time component of $u^{\mu}=(\cosh\theta_{\mathrm{rpd}},\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b})$ under a boost of rapidity $\phi$ about $\vec u_{\phi}$**, multiplied by $r^{2}$.
+Adding the $\cos^{2}\chi$ and $\sin^{2}\chi$ terms, the first and third pieces give $c_h^{2}(c_\phi^{2}+s_\phi^{2})+s_h^{2}(c_\phi^{2}+s_\phi^{2})=(c_h^{2}+s_h^{2})\cosh\phi$, and the two cross terms give $4c_hs_hc_\phi s_\phi\cos\chi$. With $c_h^{2}+s_h^{2}=\cosh\theta_{\mathrm{rpd}}$ and $2c_hs_h=\sinh\theta_{\mathrm{rpd}}$, $2c_\phi s_\phi=\sinh\phi$, the total is $\cosh\theta_{\mathrm{rpd}}\cosh\phi+\sinh\theta_{\mathrm{rpd}}\sinh\phi\cos\chi$. **That is the time component of $u_{\mu}=(\cosh\theta_{\mathrm{rpd}},\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b})$ under a boost of rapidity $\phi$ about $\vec u_{\phi}$**, multiplied by $r^{2}$.
 
 ### The Scalar Part of the Current
 

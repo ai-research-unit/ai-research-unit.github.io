@@ -15,7 +15,7 @@
 
 **The article is a reading and not a derivation.** The covariant pair is [The Coupled Schrödinger Equation in Biquaternionic Polar Variables](the-coupled-schrodinger-equation-in-biquaternionic-polar-variables.html), §*The Central Field in the Operator Setting*: the covariant continuity equation, the covariant Hamilton–Jacobi equation, and the statement that the quantum potential is unchanged. This article takes them and asks what the object is in fluid words.
 
-**Conventions.** The free companion's, and the coupled polar article's for the connection: $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$ with $\varphi$ and $\vec A$ real, the coupling $\varkappa$ being minus the electric charge, so that $\vec\pi=-i\hbar\nabla+\varkappa\vec A$ and the potential energy enters as $-\varkappa\varphi$. Time is $t'$, the density is $\rho_{\mathrm{num}}=r^{2}$, the action is $S=\hbar\theta_{\mathrm{pha}}$, and the quantum potential is $Q=-\hbar^{2}\Delta r/(2mr)$. The gauge transformation is $\lambda=\exp(i\varkappa\Gamma/\hbar)$ with $\Gamma$ real.
+**Conventions.** The free companion's, and the coupled polar article's for the connection: $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$ with $\varphi$ and $\vec A$ real, the coupling $\varkappa$ being minus the electric charge, so that $\vec\pi=-i\hbar\nabla-q\vec A$ and the potential energy enters as $-\varkappa\varphi$. Time is $t'$, the density is $\rho_{\mathrm{num}}=r^{2}$, the action is $S=\hbar\theta_{\mathrm{pha}}$, and the quantum potential is $Q=-\hbar^{2}\Delta r/(2mr)$. The gauge transformation is $\lambda=\exp(i\varkappa\Gamma/\hbar)$ with $\Gamma$ real.
 
 ## The Word Collapses, and the Connection Joins the Phase
 
@@ -34,7 +34,7 @@ $$
 **The two gauge-invariant combinations are the kinetic momentum and the kinetic energy.**
 
 $$
-\vec\pi=\hbar\nabla\theta_{\mathrm{pha}}+\varkappa\vec A=\nabla S+\varkappa\vec A,
+\vec\pi=\hbar\nabla\theta_{\mathrm{pha}}-q\vec A=\nabla S-q\vec A,
 \qquad
 \mathcal E=-\hbar\,\partial_{t'}\theta_{\mathrm{pha}}+\varkappa\varphi .
 $$
@@ -46,8 +46,8 @@ Both are invariant term by term: the phase's gradient shifts by $\varkappa\nabla
 **The substitution is the free one with the kinetic momentum in place of the gradient.**
 
 $$
-\boxed{\;\frac{\partial S}{\partial t'}+\frac{\lvert\nabla S+\varkappa\vec A\rvert^{2}}{2m}-\varkappa\varphi+Q=0,\qquad
-\frac{\partial\rho_{\mathrm{num}}}{\partial t'}+\nabla\cdot\Bigl(\rho_{\mathrm{num}}\frac{\nabla S+\varkappa\vec A}{m}\Bigr)=0,\;}
+\boxed{\;\frac{\partial S}{\partial t'}+\frac{\lvert\nabla S-q\vec A\rvert^{2}}{2m}-\varkappa\varphi+Q=0,\qquad
+\frac{\partial\rho_{\mathrm{num}}}{\partial t'}+\nabla\cdot\Bigl(\rho_{\mathrm{num}}\frac{\nabla S-q\vec A}{m}\Bigr)=0,\;}
 $$
 
 with $Q$ exactly the free article's. The two changes in the Hamilton–Jacobi equation are the kinetic momentum in the kinetic term and the potential energy; the change in the continuity equation is the kinetic velocity in place of the canonical one. There is no third change, and the absence of a third is the type argument of the previous section read on the pair.
@@ -63,7 +63,7 @@ with $Q$ exactly the free article's. The two changes in the Hamilton–Jacobi eq
 $$
 \vec p_{\mathrm{can}}=\nabla S,
 \qquad
-\vec\pi=\nabla S+\varkappa\vec A,
+\vec\pi=\nabla S-q\vec A,
 \qquad
 \vec v=\frac{\vec\pi}{m},
 \qquad
@@ -135,7 +135,7 @@ $$
 \Phi_{B}=\oint\vec A\cdot\mathrm{d}\vec l=\int_{\Sigma}\vec B\cdot\mathrm{d}\vec S,
 $$
 
-with $n$ the winding of the phase. The derivation is one line: $\vec v=(\nabla S+\varkappa\vec A)/m$, the phase is single valued on the field so its gradient integrates to $2\pi\hbar n$, and the potential integrates to the flux. With $\varkappa$ the negative of the electric charge this is $(2\pi\hbar n-q\Phi_{B})/m$, the standard statement that a magnetic flux shifts every circulation quantum.
+with $n$ the winding of the phase. The derivation is one line: $\vec v=(\nabla S-q\vec A)/m$, the phase is single valued on the field so its gradient integrates to $2\pi\hbar n$, and the potential integrates to the flux. With $\varkappa$ the negative of the electric charge this is $(2\pi\hbar n-q\Phi_{B})/m$, the standard statement that a magnetic flux shifts every circulation quantum.
 
 **So the flux shifts the circulation and does not quantise it.** The kinetic circulation is a multiple of $2\pi\hbar/m$ exactly when $\varkappa\Phi_{B}$ is one too — in particular where $\vec B$ vanishes on a spanning surface — and otherwise it takes the flux's value and is not a multiple of anything. The canonical circulation, being $\nabla S$'s, is a multiple always.
 
@@ -157,7 +157,7 @@ and the force it produces is the second term of the Euler equation and not the f
 
 **One sheet remains one sheet.** The density is a norm, the equation is first order in time, and there is no sign to lose and no antiparticle in the data. The charged Klein–Gordon fluid has two sheets and its charge density changes sign with the energy; here the charge density is $\varkappa\rho_{\mathrm{num}}$, its sign is the coupling's, and it is the same at every event of a solution.
 
-**In the constant setting the coupling is a rigid displacement.** With a constant Hamiltonian and a constant connection the coupled flow is the free flow with $h_{t}\to h_{t}-\varkappa\varphi$ and $\vec h_{\Psi}\to\vec h_{\Psi}+\varkappa\vec A$: the phase advances at minus the mean of the shifted pair, every carried direction precesses at the shifted gap, and the scale and the rapidity stay frozen. The polar companion states it, and in fluid terms it is that a constant potential shifts the frequency and a constant vector potential rotates the axis of the precession, with no change to the density.
+**In the constant setting the coupling is a rigid displacement.** With a constant Hamiltonian and a constant connection the coupled flow is the free flow with $h_{t}\to h_{t}-\varkappa\varphi$ and $\vec h_{\Psi}\to\vec h_{\Psi}-q\vec A$: the phase advances at minus the mean of the shifted pair, every carried direction precesses at the shifted gap, and the scale and the rapidity stay frozen. The polar companion states it, and in fluid terms it is that a constant potential shifts the frequency and a constant vector potential rotates the axis of the precession, with no change to the density.
 
 ## The Ladder
 
@@ -187,7 +187,7 @@ and the force it produces is the second term of the Euler equation and not the f
 
 The connection is a central imaginary number in every slot, so it joins the phase bracket and no other; the scale, the density, the quantum potential and the quantum stress are untouched.
 
-The pair is the free pair on two invariants: the kinetic momentum $\vec\pi=\nabla S+\varkappa\vec A$ in the continuity equation and in the kinetic term, and $-\varkappa\varphi$ in the potential, with $Q$ exactly the free quantum potential.
+The pair is the free pair on two invariants: the kinetic momentum $\vec\pi=\nabla S-q\vec A$ in the continuity equation and in the kinetic term, and $-\varkappa\varphi$ in the potential, with $Q$ exactly the free quantum potential.
 
 There are two momenta and one velocity. The canonical momentum is a gradient and the canonical flow is irrotational; the kinetic momentum is a gradient plus a potential, and the velocity is the second over the mass.
 
@@ -212,7 +212,7 @@ The stress identity, the absence of an equation of state and the non-dissipativi
 | $\varphi$, $\vec A$ | Scalar and vector potentials |
 | $S=\hbar\theta_{\mathrm{pha}}$ | Action; gauge dependent |
 | $\vec p_{\mathrm{can}}=\nabla S$ | Canonical momentum; a gradient |
-| $\vec\pi=\nabla S+\varkappa\vec A$ | Kinetic momentum; gauge invariant |
+| $\vec\pi=\nabla S-q\vec A$ | Kinetic momentum; gauge invariant |
 | $\vec v=\vec\pi/m$ | Velocity; gauge invariant |
 | $\mathcal E=-\hbar\partial_{t'}\theta_{\mathrm{pha}}+\varkappa\varphi$ | Kinetic energy; gauge invariant |
 | $\rho_{\mathrm{num}}=r^{2}$ | Density; gauge invariant |

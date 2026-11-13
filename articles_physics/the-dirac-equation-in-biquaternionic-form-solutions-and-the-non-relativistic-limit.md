@@ -230,7 +230,7 @@ with $\vec B=\nabla\times\vec A$. The first term is the symmetrized sum, $\tfrac
 With $E\to i\,\hbar\,c\partial/\partial r'_t$ and the rest energy factored out by $\tilde{Ξ}=e^{-ir'_t/(c/k_m)}\tilde{Ξ}'$, the equation becomes the **Pauli equation** for the large part:
 
 $$
-\boxed{\;i\,\hbar\,c\frac{\partial\tilde{Ξ}'}{\partial  r'_t}=\left[\frac{(\vec p-ϙ\vec A)^{2}}{2\,m}+ϙΞ-\frac{\hbar\,ϙ}{2\,m}\,i\vec B\right]\tilde{Ξ}'\;}
+\boxed{\;i\,\hbar\,c\frac{\partial\tilde{Ξ}'}{\partial  r'_t}=\left[\frac{(\vec p-q\vec A)^{2}}{2\,m}+ϙΞ-\frac{\hbar\,ϙ}{2\,m}\,i\vec B\right]\tilde{Ξ}'\;}
 $$
 
 The first two terms are the ordinary non-relativistic Hamiltonian of a charged particle, and the third is the spin–magnetic coupling. The unknown is one element of two complex dimensions.
@@ -336,7 +336,7 @@ The bilinears are traces of products. The scalar and the pseudoscalar are the re
 
 In the non-relativistic limit the split by the timelike unit separates the large and the small part, the elimination of the small part is exact to the order kept, and the square of the odd part of the action produces the Pauli equation
 
-$$i\,\hbar\,c\frac{\partial\tilde{Ξ}'}{\partial  r'_t}=\left[\frac{(\vec p-ϙ\vec A)^{2}}{2\,m}+ϙΞ-\frac{\hbar\,ϙ}{2\,m}\,i\vec B\right]\tilde{Ξ}'
+$$i\,\hbar\,c\frac{\partial\tilde{Ξ}'}{\partial  r'_t}=\left[\frac{(\vec p-q\vec A)^{2}}{2\,m}+ϙΞ-\frac{\hbar\,ϙ}{2\,m}\,i\vec B\right]\tilde{Ξ}'
 $$
 
 on one element. The coefficient $1/2m$ of the spin term is the one that $\vec\mu=g\frac{ϙ}{2m}\vec S$ requires with $g=2$, so the gyromagnetic factor and the spin–magnetic coupling are consequences of the mass term of the equation and not separate postulates. In the massless limit the pair decouples, each value keeps one helicity, and chirality is locked to helicity.
@@ -367,7 +367,7 @@ on one element. The coefficient $1/2m$ of the spin term is the one that $\vec\mu
 | $j_0,\ \vec j$, $\tilde J_{\Phi}=ic\,j_0e_t+\vec j$ | Vector current and its material-sector form |
 | $\vec S=\frac{\hbar}{2}i\vec e_\eta$, $\vec\mu=g\frac{ϙ}{2m}\vec S$ | Spin and magnetic moment |
 | $ϙ$ | Charge of the field under minimal coupling |
-| $\vec\pi=\vec p-ϙ\vec A$, $\vec B=\nabla\times\vec A$ | Kinetic momentum and magnetic field |
+| $\vec\pi=\vec p-q\vec A$, $\vec B=\nabla\times\vec A$ | Kinetic momentum and magnetic field |
 | $g=2$ | Gyromagnetic factor in the non-relativistic limit |
 
 ## Further Reading

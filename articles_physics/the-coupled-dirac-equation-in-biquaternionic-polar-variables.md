@@ -28,7 +28,7 @@ Here $\tilde A_\Phi=A_te_t+\sum_\eta A_\eta\vec e_\eta$ is the potential biquate
 
 *First, the coupling enters the logarithmic derivative as one added four-vector.* Because each component of the connection is a central scalar, $\frac{iϙ}{\hbar}\tilde A_\Phi$ passes through $\tilde\Xi^{-1}$ and joins the four brackets without disturbing their types. It lands in the phase bracket and in the boost bracket and in neither of the other two.
 
-*Second, the shift is the classical substitution, in one object.* The scalar potential and the vector potential are the temporal and spatial slots of one element, so $E\mapsto E+ϙ\phi$ and $\vec p\mapsto\vec p+ϙ\vec A$ are not two substitutions. They are the addition of $\frac{ϙ}{\hbar}\tilde A_\Phi$ to the covariant wavevector, and the algebra states them with one sign.
+*Second, the shift is the classical substitution, in one object.* The scalar potential and the vector potential are the temporal and spatial slots of one element, so $E\mapsto E+ϙ\phi$ and $\vec p\mapsto\vec p-q\vec A$ are not two substitutions. They are the addition of $\frac{ϙ}{\hbar}\tilde A_\Phi$ to the covariant wavevector, and the algebra states them with one sign.
 
 *Third, the spin transport is what the chart does and does not show.* The connection is central per component, so it multiplies the word and cannot rotate either frame factor. The rotor's own rate is the mass term's and the coupling leaves it alone. What the background does to the spin is indirect and is recorded as the chart's limit.
 
@@ -104,7 +104,7 @@ Slot by slot this is
 $$
 \hbar c\,\kappa_t=E+ϙ cA_t,
 \qquad
-\hbar\vec\kappa=\vec p+ϙ\vec A,
+\hbar\vec\kappa=\vec p-q\vec A,
 $$
 
 where $\kappa_t$ and $\vec\kappa$ are the components of the covariant wavevector. **The whole of the classical substitution is one addition**, because the scalar and vector potentials are the temporal and spatial slots of one element of $\mathbb{B}_\Phi$. No second rule is needed and no sign can be chosen independently.
@@ -148,7 +148,7 @@ $$
 and in canonical components it is
 
 $$
-\Bigl(\frac{E+ϙcA_t}{\hbar c}\Bigr)^{2}-\Bigl|\frac{\vec p+ϙ\vec A}{\hbar}\Bigr|^{2}=-k_m^{2}.
+\Bigl(\frac{E+ϙcA_t}{\hbar c}\Bigr)^{2}-\Bigl|\frac{\vec p-q\vec A}{\hbar}\Bigr|^{2}=-k_m^{2}.
 $$
 
 **The same translated hyperboloid as in the element form.** The radius is $k_m$ and the potential moves the centre. A constant potential therefore shifts every level and opens no gap, and the polar reason is the one-line reason of the element form: a shift of a variable cannot change a radius.
@@ -245,7 +245,7 @@ The coupled Dirac equation in polar variables is the pair $\tilde\nabla_{\mathrm
 
 The coupling enters the logarithmic derivative as one added element, $\frac{iϙ}{\hbar}\tilde A_\Phi$. Because that element is central per component, it lands in the phase bracket and in the boost bracket and in neither of the other two. The scale and the rotor are untouched by type, not by accident.
 
-The phase bracket carries the momentum, and the coupling shifts it: $\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{ϙ}{\hbar}\tilde A_\Phi$, which is $E\mapsto E+ϙcA_t$ and $\vec p\mapsto\vec p+ϙ\vec A$ in the slots. One element, one sign, no independent choice.
+The phase bracket carries the momentum, and the coupling shifts it: $\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{ϙ}{\hbar}\tilde A_\Phi$, which is $E\mapsto E+ϙcA_t$ and $\vec p\mapsto\vec p-q\vec A$ in the slots. One element, one sign, no independent choice.
 
 The boost bracket carries the velocity, and the boost is named by the covariant wavevector, so the velocity is the kinetic one and the canonical wavevector is the covariant one less the potential. The mass shell is $\kappa_t^{2}-|\vec\kappa|^{2}=-k_m^{2}$, a translated hyperboloid of unchanged radius: no constant potential opens a gap.
 

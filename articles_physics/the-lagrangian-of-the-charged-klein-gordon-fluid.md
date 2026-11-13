@@ -6,7 +6,7 @@
 
 **Three results.**
 
-*First, the action is written in gauge-invariant variables, so its gauge invariance is not a symmetry but a redundancy already quotiented out.* The free action's phase $S_{\tilde\Xi}$ and the potentials appear only in the combination $\partial_\mu S_{\tilde\Xi}+ϙ A_\mu$. The action is therefore a functional of $r$ and that combination alone, and no shift of either moves it. At the first-order rung the invariance had to be checked term by term inside two brackets; here the bracket is one object and the checking is a definition.
+*First, the action is written in gauge-invariant variables, so its gauge invariance is not a symmetry but a redundancy already quotiented out.* The free action's phase $S_{\tilde\Xi}$ and the potentials appear only in the combination $\partial_\mu S_{\tilde\Xi}-q A_\mu$. The action is therefore a functional of $r$ and that combination alone, and no shift of either moves it. At the first-order rung the invariance had to be checked term by term inside two brackets; here the bracket is one object and the checking is a definition.
 
 *Second, the mass shell is unchanged in form and the whole of the coupling is in the velocity.* The variation of the density returns $\sum_\mu V_{\Phi,\mu}V_{\Phi,\mu}=-c^{2}-2Q_{\mathrm{qnt}}/m$, the free display verbatim, with $V$ the mechanical velocity. The connection's spatial part enters the velocity and not the shell: the shell's right-hand side carries the density and the d'Alembertian, and the coupling cannot reach either.
 
@@ -23,14 +23,14 @@
 $$
 \boxed{\;\mathcal L_{\mathrm{fl}}=-\frac{m\rho_{\mathrm{num}}}{2}\Bigl[\sum_\mu V_{\Phi,\mu}V_{\Phi,\mu}+c^{2}\Bigr]-\frac{\hbar^{2}}{2m}\sum_\mu(\partial_\mu r)^{2},
 \qquad
-V_{\Phi,\mu}=\frac{\partial_\mu S_{\tilde\Xi}+ϙ A_\mu}{m}\;}
+V_{\Phi,\mu}=\frac{\partial_\mu S_{\tilde\Xi}-q A_\mu}{m}\;}
 $$
 
 **The structure is the free article's and the identity is exact.** Compare the two displays: the dust term, the coefficient $m\rho_{\mathrm{num}}/2$, the $c^{2}$, the gradient energy with its $\hbar^{2}/2m$ — every symbol is the free one. What is different is that $V$ is no longer a pure gradient, and the whole of the coupling is in that one word.
 
 **The coupling could not have entered anywhere else, and the reason is the type argument in its shortest form.** The connection is a central element of $\mathbb{B}_\Phi$, so it multiplies the phase factor of the word and commutes past the amplitude. A term built from $r$ and its derivatives therefore cannot contain $\tilde A_\Phi$ at all. In the action that is the second term: **the gradient energy is the unique term the coupling cannot reach, and it is the whole of the quantum sector.**
 
-**The action has two arguments and they are the two gauge-invariant data of the fluid.** Write them as $r$ and $W_\mu=(\partial_\mu S_{\tilde\Xi}+ϙ A_\mu)/m$. Then $\mathcal L_{\mathrm{fl}}=\mathcal L_{\mathrm{fl}}[r,\partial_\mu r,W_\mu]$, and no other combination of the word's data survives a gauge transformation. **The free action's two arguments were $r$ and $S_{\tilde\Xi}$; the charged action's are $r$ and $W$**, and the change of variable is the whole of the coupling.
+**The action has two arguments and they are the two gauge-invariant data of the fluid.** Write them as $r$ and $W_\mu=(\partial_\mu S_{\tilde\Xi}-q A_\mu)/m$. Then $\mathcal L_{\mathrm{fl}}=\mathcal L_{\mathrm{fl}}[r,\partial_\mu r,W_\mu]$, and no other combination of the word's data survives a gauge transformation. **The free action's two arguments were $r$ and $S_{\tilde\Xi}$; the charged action's are $r$ and $W$**, and the change of variable is the whole of the coupling.
 
 ## The Two Variations
 
@@ -72,7 +72,7 @@ which is the block's boxed law. **The sign is fixed by the substitution's time s
 
 ## The Vorticity Is the Field Strength
 
-**The velocity's curl is the curl of a potential, so the vorticity is an identity about the variables.** With $V_\mu=(\partial_\mu S_{\tilde\Xi}+ϙ A_\mu)/m$,
+**The velocity's curl is the curl of a potential, so the vorticity is an identity about the variables.** With $V_\mu=(\partial_\mu S_{\tilde\Xi}-q A_\mu)/m$,
 
 $$
 \omega_{\mu\nu}=\partial_\mu V_\nu-\partial_\nu V_\mu=\frac{ϙ}{m}F_{\mu\nu}.
@@ -82,7 +82,7 @@ $$
 
 **This is the sharpest difference between the two charged rungs.** At the first order the velocity is $\vec\pi/m$ and its curl is a three-vector, $ϙ\vec B/m$, so the vorticity's rank is two at most. Here the velocity is a four-vector and its curl is a two-form on four dimensions, so the rank is four exactly when $\vec E\cdot\vec B\ne0$ — the block's ladder, and the action's explanation of it: **a three-vector potential cannot make a four-dimensional two-form, and a four-vector one can.**
 
-**The Clebsch cost is the field's and not the fluid's.** A rotational fluid written in Eulerian variables needs the pair $(\alpha_{\mathrm{clb}},\beta_{\mathrm{clb}})$, as [The Clebsch Potentials and the Rank of the Vorticity](the-clebsch-potentials-and-the-rank-of-the-vorticity.html) states. Here the pair's part is played by the connection: the velocity is $\partial S_{\tilde\Xi}/m+ϙ A_\mu/m$, one vector standing where the Clebsch form wants two scalars, and its own equation is Maxwell's, which the matter action does not contain. **The fluid's rotation is not a new degree of freedom because it is already the field's**, and the equality of the rank with the field's rank is the same statement.
+**The Clebsch cost is the field's and not the fluid's.** A rotational fluid written in Eulerian variables needs the pair $(\alpha_{\mathrm{clb}},\beta_{\mathrm{clb}})$, as [The Clebsch Potentials and the Rank of the Vorticity](the-clebsch-potentials-and-the-rank-of-the-vorticity.html) states. Here the pair's part is played by the connection: the velocity is $\partial S_{\tilde\Xi}/m-q A_\mu/m$, one vector standing where the Clebsch form wants two scalars, and its own equation is Maxwell's, which the matter action does not contain. **The fluid's rotation is not a new degree of freedom because it is already the field's**, and the equality of the rank with the field's rank is the same statement.
 
 ## Gauge Invariance as a Redundancy
 
@@ -122,7 +122,7 @@ $$
 
 ## Summary
 
-**The action.** $\mathcal L_{\mathrm{fl}}=-\frac{m\rho_{\mathrm{num}}}{2}[\sum_\mu V_{\Phi,\mu}V_{\Phi,\mu}+c^{2}]-\frac{\hbar^{2}}{2m}\sum_\mu(\partial_\mu r)^{2}$, with $V_\mu=(\partial_\mu S+ϙ A_\mu)/m$: the free action in a new variable.
+**The action.** $\mathcal L_{\mathrm{fl}}=-\frac{m\rho_{\mathrm{num}}}{2}[\sum_\mu V_{\Phi,\mu}V_{\Phi,\mu}+c^{2}]-\frac{\hbar^{2}}{2m}\sum_\mu(\partial_\mu r)^{2}$, with $V_\mu=(\partial_\mu S-q A_\mu)/m$: the free action in a new variable.
 
 **The variations.** The phase gives $\partial_\mu(\rho_{\mathrm{num}}V_{\Phi,\mu})=0$; the amplitude gives the free shell verbatim; the gradient of the second is $\mathrm{d}\vec p^{\mathrm{mech}}/\mathrm{d}t=-ϙ(\vec E+\vec v\times\vec B)-\gamma^{-1}\nabla Q_{\mathrm{qnt}}$.
 
@@ -140,7 +140,7 @@ $$
 | $ϙ$ | Coupling; minus the electric charge, $q=-ϙ$ |
 | $\tilde A_\Phi=i a'_t e_t+\vec A$ | The connection; $a'_t=\varphi$ |
 | $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$ | Phase; gauge dependent |
-| $W_\mu=(\partial_\mu S_{\tilde\Xi}+ϙ A_\mu)/m$ | Mechanical four-velocity; the action's second argument |
+| $W_\mu=(\partial_\mu S_{\tilde\Xi}-q A_\mu)/m$ | Mechanical four-velocity; the action's second argument |
 | $\tilde P^{\mathrm{mech}}_\Phi=\tilde P_\Phi+ϙ\tilde A_\Phi$ | Mechanical momentum; $m\tilde V_\Phi$ |
 | $\rho_{\mathrm{num}}=r^{2}$ | Proper density; gauge invariant |
 | $\rho_{\mathrm{chg}}=\gamma\rho_{\mathrm{num}}$ | Charge density; the current's temporal component over $c$ |

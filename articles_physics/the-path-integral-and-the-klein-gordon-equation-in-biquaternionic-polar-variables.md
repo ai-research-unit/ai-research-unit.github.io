@@ -211,7 +211,7 @@ The placement table is the reading. The scale sits in the measure and in the exp
 | $g_{ab}$ | The parameter metric of the polar variational companion; $g_{rr}=1$, $g_{\theta\theta}=r^{2}$ on the centre |
 | $S_{\mathrm{Madelung}}$ | The variational companion's polar action; the weight is $\exp(\tfrac{i}{2}S_{\mathrm{Madelung}})$ |
 | $\Box_\Phi r=r\bigl[k_m^{2}-(\partial_{r'_t}\theta_{\mathrm{pha}})^{2}+\lvert\nabla\theta_{\mathrm{pha}}\rvert^{2}\bigr]$ | The amplitude equation; the scale's saddle |
-| $\partial_\mu(\rho_{\mathrm{num}}\partial^{\mu}\theta_{\mathrm{pha}})=0$ | The transport equation; the angle's saddle |
+| $\sum_\mu\partial_\mu(\rho_{\mathrm{num}}\partial_\mu\theta_{\mathrm{pha}})=0$ | The transport equation; the angle's saddle |
 | $\rho_{\mathrm{num}}=r^{2}$ | The density |
 | $S_{E}$ | The Euclidean bracket; four squares |
 | $k_m=mc/\hbar$ | The mass parameter |

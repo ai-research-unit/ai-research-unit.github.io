@@ -6,7 +6,7 @@
 
 **The article's second result is that the loop invariant's two factors are not on the same footing in the momentum decomposition.** The charged fluid's loop invariant is a Lorentz transformation times a phase; at a mode the frame is constant, so the Lorentz factor is the identity and the invariant is the phase alone. **The product $\mathbb{C}^{*}\times SL(2,\mathbb{C})$ is therefore an inter-mode object: one factor is the diagonal's and the other is not**, and no single mode exhibits both.
 
-**The third result is that the force is inter-mode.** A mode's label is a constant, so a mode does not accelerate and the Lorentz force vanishes at a mode identically. The force $ϙF^{\mu\nu}J_\nu$ is the statement about how the label responds to a curvature, and a curvature is exactly what a mode's connection does not have.
+**The third result is that the force is inter-mode.** A mode's label is a constant, so a mode does not accelerate and the Lorentz force vanishes at a mode identically. The force $ϙ\sum_\nu F_{\mu\nu}J_\nu$ is the statement about how the label responds to a curvature, and a curvature is exactly what a mode's connection does not have.
 
 **Position in the block.** This is the charged companion of [The Fourier Transform and the Spin Fluid](the-fourier-transform-and-the-spin-fluid.html) and the Fourier companion of [The Charged Spin Fluid: The Force Takes the Charge and the Spin Does Not](the-charged-spin-fluid.html). The charged Schrödinger rung's Fourier article makes the same curvature argument with no frame, and §*The Four Rungs' One Invariant* says what the four share.
 
@@ -95,7 +95,7 @@ $$
 a^\mu=u^\nu\partial_\nu u^\mu=0 .
 $$
 
-**Therefore the Lorentz force vanishes at a mode identically, and the force is an inter-mode object.** The companion's momentum balance $\partial_\nu T^{\mu\nu}=ϙF^{\mu\nu}J_\nu+$ the free spin term is an equation between quantities that a mode holds constant, so at a mode it reads $0=0$. **What it constrains is the off-diagonal part of the field**, and the article's claim is that the phrase "the force takes the charge and the spin does not" is, in the momentum space, the statement that the label is shifted and the rotor is not.
+**Therefore the Lorentz force vanishes at a mode identically, and the force is an inter-mode object.** The companion's momentum balance $\sum_\nu\partial_\nu T_{\mu\nu}=ϙ\sum_\nu F_{\mu\nu}J_\nu+$ the free spin term is an equation between quantities that a mode holds constant, so at a mode it reads $0=0$. **What it constrains is the off-diagonal part of the field**, and the article's claim is that the phrase "the force takes the charge and the spin does not" is, in the momentum space, the statement that the label is shifted and the rotor is not.
 
 **The two halves of the phrase are therefore of different kinds.** "The force takes the charge" is a statement about the label: the charge is a coefficient of the potential, the potential shifts the label, and the label is the frame, so the force moves the velocity. "The spin does not" is a statement about the carrier: the rotor is not in the label, so nothing that acts on the label can move it. **One half is dynamics and the other is bookkeeping**, and the momentum-space reading separates them for the first time.
 

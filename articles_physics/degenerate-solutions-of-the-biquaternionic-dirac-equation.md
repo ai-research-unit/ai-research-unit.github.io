@@ -308,7 +308,7 @@ $$
 \tilde F^{2}=\Bigl[\lvert\vec V\rvert^{2}-\lvert\vec W\rvert^{2}+2i\,\vec V\cdot\vec W\Bigr]e_t ,
 $$
 
-so the field is a nilpotent exactly when the two real vectors are perpendicular with equal lengths, which is the radiative field with both invariants zero. The second is the lightlike displacement, the algebraic form of a direction that erases itself in one composition.
+so the field is a nilpotent exactly when the two real vectors are perpendicular with equal lengths, which is the radiative field with both invariants zero. The second is the complex isotropic model of a null direction, the algebraic form of a direction whose representative erases itself in one composition; a real lightlike displacement has $Q_t=ict\neq0$ and $B^2=\lvert\vec r\rvert^2\neq0$ away from the origin, so it lies in $\Sigma_{01}$ and not here.
 
 The sector has a plane and no weight. Its one complex invariant is the direction of the nilpotent, and a direction is what a null line carries. That is the difference in one sentence: $\Sigma_{01}$ keeps a plane and a complex number, and $\Sigma_{00}$ keeps a plane and no number.
 

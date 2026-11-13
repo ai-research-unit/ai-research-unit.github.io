@@ -77,6 +77,45 @@ Two further physical qualifications belong to the carrier, not to the table.
 - **The massless spin-$1$ count is two.** $V$ has three states. For a massless field the longitudinal state is removed by gauge invariance, leaving the two helicities of the photon and the gluon. The algebra supplies the triplet; the massless restriction is a separate input.
 - **The weak chirality is not the Peirce index.** $S_+$ and $S_-$ are isomorphic as left modules, so the left action does not distinguish them. The chirality of the weak interaction is the basis operator $\mathsf{V}_{\mathrm{vol}}=-iR_{\vec e_z}$, not the copy index.
 
+## The Carriers of the Field Equations
+
+The spin fixes the dimension of the carrier. It fixes more: it fixes **which subspace may hold the solution of the equation of that spin**. An equation is an operator, the operator acts on a subspace or it does not, and the three carriers are distinguished by the multiplier that the operator uses: a central scalar, a left multiplier, or a frame change.
+
+| equation | field | spin | carrier | the operator preserves it by |
+|---|---|---|---|---|
+| Klein–Gordon | $\tilde\Xi$ | $0$ | $\mathbb{B}_{C}$ | being a central real scalar |
+| Dirac | $\tilde\Xi_L$, $\tilde\Xi_R$ | $\tfrac12$ | $S_+$, $S_-$ | multiplying on the left |
+| Proca | $\tilde A_\Phi$ | $1$ | $\mathbb{B}_\Phi$ (potential), $V_{\mathbb{R}}$ (spin) | the two-sided action, and centrality in each slot |
+
+**The rule is one line per row.** A subspace $W$ carries the solutions of an equation when the equation's operator maps $W$ into itself for every field in $W$. The Klein–Gordon operator $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ is a central real scalar, so it commutes with every element and preserves every complex subspace, the centre included. The Dirac operator is the gradient itself, an element multiplying on the left, so it preserves exactly the left ideals; $S_\pm$ are the minimal ones, and left multiplication by **any** element of $\mathbb{B}$ is absorbed by them. The Proca potential is an element of the material sector and the Proca operator is built from one material gradient, so the sector is preserved by the two-sided action and by real central multiplication.
+
+**The three carriers are then the three answers to one question.** Which subspaces of $\mathbb{B}$ are closed under the operator of the equation? The centre for a central operator, a left ideal for a left multiplier, a real form for a two-sided action. That is the same three-fold list as the table of §*The Three Elementary Carriers*, reached from the dynamics rather than from the representation theory, and the two routes agree.
+
+**The material sector and the spin-one carrier differ by one dimension, and the difference is the constraint.** The traceless part $V$ is the carrier of the spin, with three states. The potential is a four-vector and needs its time slot, so its carrier is
+
+$$
+\mathbb{B}_\Phi=V_{\mathbb{R}}\oplus\mathbb{R}\,(i e_t),
+\qquad
+\dim_\mathbb{R}\mathbb{B}_\Phi=\dim_\mathbb{R}V_{\mathbb{R}}+1 .
+$$
+
+The Lorenz condition removes the added line, and the carrier that survives is the real form of $V$. So the potential is written in a space one dimension larger than the spin requires, and the constraint is what removes the excess. The field strength $\tilde F$ is pure, hence already in $V$.
+
+**No subspace of the material sector is a left ideal.** The proof is one line and it uses the sector swap. If $W\subseteq\mathbb{B}_\Phi$ were a non-zero left ideal, then $iW\subseteq W$ because $i$ is central and lies in $\mathbb{B}$; but $i\mathbb{B}_\Phi=\mathbb{B}_\Psi$, so $iW\subseteq\mathbb{B}_\Psi$; hence $iW\subseteq\mathbb{B}_\Phi\cap\mathbb{B}_\Psi=\{0\}$ and $W=\{0\}$, a contradiction. A spin-$\tfrac12$ field therefore cannot be confined to the material sector, whatever the frame.
+
+**The carriers meet the sectors in a fixed pattern, and the pattern is the reason the corpus keeps asking which sector a field is in.**
+
+| carrier | $\cap\,\mathbb{B}_\Phi$ | $\cap\,\mathbb{B}_\Psi$ |
+|---|---|---|
+| $\mathbb{B}_{C}$ | $1$ real, $i\mathbb{R}e_t$ | $1$ real, $\mathbb{R}e_t$ |
+| $S_\pm$ | $1$ real | $3$ real |
+| $V$ | $3$ real | $0$ |
+| $\mathbb{B}_\Phi$ | $4$ real | $0$ |
+
+The scalar carrier is split evenly between the sectors and the central $i$ exchanges its two halves, so "the scalar field is material" is a choice of phase. The spinor carrier is three-quarters informational, which is where the spin operators live. The vector carrier is entirely material, and only there do the carrier decomposition and the sector decomposition coincide.
+
+**What each carrier costs, stated once.** The centre costs nothing to close and costs the phase: it is complex, so a charge survives, but it is one complex dimensional and a scalar field in it has no internal index. The minimal left ideal costs the frame's third unit, from which $\tilde\Pi_\pm$ is derived, and it is the only carrier that survives an arbitrary coupling. The material sector costs the complex structure: it is a real form, so a continuous phase destroys it, and the charged vector theory doubles its parameters. These three costs are the subject of *The Carrier of the Klein–Gordon Field*, *The Carrier of the Dirac Field* and *The Carrier of the Proca Field*.
+
 ## The Results It Uses
 
 | Mathematical Content | Source Mathematical Article |
@@ -431,6 +470,8 @@ The same carrier carries a second structure from the plain sesquilinear product:
 
 The algebra also splits into two minimal left ideals, the second column $\mathbb{B}\tilde\Pi_-=\mathbb{C}\{\tilde\Pi_-,\vec\Upsilon_x\}$, module-isomorphic to $S$ through right multiplication by $\vec\Upsilon_x$ and Hilbert-orthogonal to it. The copy-flip coupling is the pair of right multiplications by the two nilpotents, off-diagonal and column-changing; it is not the chiral mass. The natural generators are null, the induced maps are isometries, and the nilpotence is a choice of generator and not an invariant. The complement is not the dual, not a second representation and not a sector. Three complements must be kept apart: the module and Hilbert complements coincide, the algebra's-own-form complement $S^{\perp_B}=\mathbb{C}\{\vec\Upsilon_y,\tilde\Pi_-\}$ is a third subspace, and the coincidence of the first two is conditional on the Hermiticity of the vacuum idempotent.
 
+The same three carriers are the three carriers of the field equations, and the spin fixes which one holds the solutions. The Klein–Gordon operator is a central real scalar and the scalar field is carried by $\mathbb{B}_{C}$; the Dirac operator multiplies on the left and the spinor is carried by the minimal left ideals $S_\pm$; the Proca operator is built from one material gradient and the vector potential is carried by $\mathbb{B}_\Phi$, with the traceless part $V$ carrying the spin itself and the constraint removing the time slot that separates the two. No non-zero subspace of the material sector is a left ideal, because $i$ is central and exchanges the sectors, so a spin-$\tfrac12$ field cannot be confined to it.
+
 ## Summary of Notation
 
 | symbol | meaning |
@@ -454,8 +495,12 @@ The algebra also splits into two minimal left ideals, the second column $\mathbb
 ## Further Reading
 
 - [The Peirce Decomposition](../articles_maths/the-peirce-decomposition-of-the-biquaternion-algebra.html), for the corners, the matrix units and the minimal ideals.
+- [The Carrier of the Klein–Gordon Field](the-carrier-of-the-klein-gordon-field.html), for the centre as the carrier of the spin-zero equation.
+- [The Carrier of the Dirac Field](the-carrier-of-the-dirac-field.html), for the minimal left ideal as the carrier of the spin-one-half equation.
+- [The Carrier of the Proca Field](the-carrier-of-the-proca-field.html), for the material sector as the carrier of the spin-one equation, and the traceless part as the carrier of the spin.
+- [The Three Elementary Carriers and the Four Sectors of Regularity and Degeneracy](the-three-elementary-carriers-and-the-four-sectors-of-regularity-and-degeneracy.html), for the reach of each carrier in the partition by the two invariants.
 - [The Category of Modules](../articles_maths/the-category-of-modules.html), for simplicity, the endomorphism ring and the regular module.
-- [Higher Spin from Tensor Products](higher-spin-from-tensor-products-why-the-biquaternion-algebra-admits-only-spin-zero-and-one-half.html), for the spins beyond the elementary list.
+- [Higher Spin from Tensor Products](higher-spin-from-tensor-products-the-three-carriers-and-the-absence-of-a-fourth.html), for the spins beyond the elementary list.
 - [The Column Ideals of a Matrix Ring: One Idempotent and \(n-1\) Nilpotents](../articles_maths/the-column-ideals-of-a-matrix-ring-one-idempotent-and-n-1-nilpotents.html), for the structural count of the basis.
 - [The Canonical Hermitian Form on the Regular Module of the Biquaternion Algebra](../articles_maths/the-canonical-hermitian-form-on-the-regular-module-of-the-biquaternion-algebra.html), for the positive definite form and its Gram matrix.
 - [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the probability structure.

@@ -26,7 +26,7 @@ D_t=\partial_{t'}-\frac{iϙ}{\hbar}\varphi,
 D_\eta=\partial_\eta+\frac{iϙ}{\hbar}A_\eta ,
 $$
 
-with the mechanical momentum $\vec\pi=-i\hbar\vec\nabla+ϙ\vec A$ and the potential energy $-ϙ\varphi$. The Proca potential is written $\tilde A$ when the distinction from the connection matters, and $\tilde A_\Phi$ is reserved for the connection.
+with the mechanical momentum $\vec\pi=-i\hbar\vec\nabla-q\vec A$ and the potential energy $-ϙ\varphi$. The Proca potential is written $\tilde A$ when the distinction from the connection matters, and $\tilde A_\Phi$ is reserved for the connection.
 
 ## The Carrier and the Measure
 
@@ -143,7 +143,7 @@ exactly as in the free case with the covariant operators in place. **The longitu
 
 **The measure is invariant and the invariance is exact at every step.** The transformation multiplies the two real components of each complex slot by a rotation of unit determinant, so the flat measure on eight components is unchanged. **No link, no discretisation rule and no Faddeev–Popov determinant is needed**, and the reason is the same as in the coupled scalar case: a central phase at each point costs a unit Jacobian and nothing else.
 
-**The current's conservation is an identity of the measure and not only of the equation.** Since the transformation is exact and the measure is invariant, $\partial_\mu j^{\mu}=0$ follows from the integral without using the equation of motion. **The mass term does not spoil this**, because the mass term is phase-invariant; what the mass term does spoil is the *ordinary* Lorenz condition, which is a different statement and is the previous section's subject.
+**The current's conservation is an identity of the measure and not only of the equation.** Since the transformation is exact and the measure is invariant, $\sum_\mu\partial_\mu j_\mu=0$ follows from the integral without using the equation of motion. **The mass term does not spoil this**, because the mass term is phase-invariant; what the mass term does spoil is the *ordinary* Lorenz condition, which is a different statement and is the previous section's subject.
 
 **A complex source is now permitted, and the response is the kernel's column.** The source $\tilde J$ may be any element of $\mathbb{B}$, so the two-point function is a bivector and the free article's "the source is anti-Hermitian" restriction is gone. **The carrier's enlargement is what the charge is**, in the integral as in the equation.
 

@@ -62,6 +62,50 @@ $$
 
 The scalar line is closed, of complex dimension one; the Jordan part is open and dense, of complex dimension three. They meet only in the limit $\vec\Upsilon\to0$.
 
+## The Material Case
+
+**The material part of the region is one line, and the rest of the region is not material at all.** §*The Region* notes that the real slice meets the region only on the scalar line. The sector statement is stronger: for $\tilde Q=i\,q'_t\,e_t+\vec r$ with real coefficients,
+
+$$
+B^{2}=\lvert\vec r\rvert^{2},
+$$
+
+so $B^{2}=0$ forces $\vec r=0$, and
+
+$$
+\Sigma_{10}\cap\mathbb{B}_{\Phi}
+=\bigl\{i\,q'_t\,e_t\ :\ q'_t\in\mathbb{R}^{\times}\bigr\},
+$$
+
+the punctured scalar line, of real dimension one inside a region of real dimension six. **The Jordan part is the complement, and it is empty for matter**: the vector square is a sum of three real squares on the sector, hence a definite form, and a definite form has no non-zero isotropic vector. A complex isotropic vector is not a limit of real ones, so no material momentum is defective, however it was composed or boosted.
+
+**The rest frame is a scalar operator, and that is stronger than a repeated eigenvalue.** With $q'_t=mc$ the element is $\tilde P_\Phi=i\,mc\,e_t$, its eigenvalue is $imc$ twice, and the eigenspace of $L_{\tilde P_\Phi}$ is the whole algebra, of dimension four. A repeated eigenvalue with a four-dimensional eigenspace means the operator is a scalar: it commutes with every frame, so **the frame is not a function of the momentum at rest**, and every direction is equally available. That is the content of the name *rest frame*, sharper than the non-uniqueness of the two-term writing, which follows from it.
+
+**What the sector therefore cannot show.** No defective material momentum, hence no Jordan chain, no response linear in a perturbation and no double pole: the inverse on the scalar line is $Q_t^{-1}e_t$ with no nilpotent term, and a small perturbation of a rest momentum splits the eigenvalue into two ordinary modes. **The exceptional point is a property of the complexified algebra**, and the rest frame is the entire material share of the region.
+
+## The First Carrier: The Centre
+
+**The punctured centre is exactly the semisimple face of the region.** On $\mathbb{B}_{C}$ the vector square vanishes identically and the norm is $N=q^{2}$, which is non-zero for every $q\neq0$. Hence
+
+$$
+\Sigma_{10}\cap\mathbb{B}_{C}=\mathbb{B}_{C}\setminus\{0\}
+=\Sigma_{10}^{\mathrm{s}},
+$$
+
+the scalar line, and the identification is two-sided: the region's scalar face *is* the first carrier, and the region's Jordan face $\{q e_t+\vec\Upsilon\}$ is disjoint from it, since $\vec\Upsilon\neq0$ is not central. **So the region's two faces separate along the carrier**, and the carrier holds the semisimple one and none of the defective one.
+
+**Every member is a scalar operator.** Left multiplication by $q e_t$ is $q$ times the identity, so the eigenspace is the whole algebra, of dimension four. The region's property that every basis is an eigenbasis is here the strongest case of it: the operator does not merely admit every basis, it is blind to all of them.
+
+**The eigenvalue is complex for almost every member.** $N=q^{2}$ is real on two lines of the carrier only, $q\in\mathbb{R}$ and $q\in i\mathbb{R}$, so a general member is a rest frame whose single eigenvalue has a real and an imaginary part. The mass shell $N=-m^{2}c^{2}$ selects $q=\pm imc$, which is the material line $i\mathbb{R}e_t$; the informational line selects the other sign. **Off the two lines the sector name *rest frame* is a name for the operator and not for a mass**, since the quantity the region calls $N$ has a phase.
+
+## The Second Carrier: The Minimal Left Ideal
+
+**The region is empty on the ideal.** $N=0$ at every point of $S_{\pm}$, and the region requires $N\neq0$; no addition or multiplication inside the carrier repairs this, since $N$ is multiplicative and vanishes on every member. So no value of a spin-half field is at rest, and the rest frame of a massive spinor belongs to the sum $S_{+}+S_{-}=\mathbb{B}$ and to neither summand.
+
+**The consequence is the sharp form of the mass being off-diagonal.** A massive spinor at rest has a rest frame, and the frame is a property of the element $\tilde\Xi=\tilde\Xi_{L}+\tilde\Xi_{R}$; each value is null in that frame as in every frame, and the mass is the cross term between them. **No frame puts the mass on a value**: the value is null in every frame and the mass is the cross term in every frame, and that is a statement about the carrier and not about the frame.
+
+**Neither face of the region is on the ideal.** $\Sigma_{10}$ contains no member of $S_{\pm}$, so the exceptional point is as far from the carrier as the rest frame is. The defective face needs a complex isotropic vector, which is a vector part, and the ideal's vector part is not free: it is tied to the scalar part by $B^{2}=-q_t^{2}$. **A defect of the second carrier is not a defect of the spectrum but a vanishing of the rung**, and it is the nilpotent line of $\Sigma_{00}$, treated in *The N-Degenerate, Spectrally Degenerate Sector: The Vacuum and the Nilpotent Ladder*.
+
 ## The Scalar Line: The Rest Frame
 
 ### The Element
@@ -75,7 +119,7 @@ $$
 \quad\text{for every }\tilde X.
 $$
 
-It is semisimple, with minimal polynomial $X-Q_t$, not $(X-Q_t)^2$. The spectral idempotent is $e_t$ itself, and it is unique; the two-term refinement is not. Every orthogonal pair $\tilde\Pi_1+\tilde\Pi_2=e_t$ gives
+It is semisimple, with minimal polynomial $X-Q_t$, not $(X-Q_t)^2$. §*The First Carrier: The Centre* identifies this line with the centre, so the line is a carrier of the algebra and not a slice chosen inside the region. The spectral idempotent is $e_t$ itself, and it is unique; the two-term refinement is not. Every orthogonal pair $\tilde\Pi_1+\tilde\Pi_2=e_t$ gives
 
 $$
 \tilde Q=Q_t\tilde\Pi_1+Q_t\tilde\Pi_2,
@@ -237,6 +281,8 @@ No dynamics is supplied. The region says what the element is at an instant; it d
 - The real material slice meets the region on the scalar line only; the Jordan part is a complexified regime.
 - The region is the boundary of the two-mode region at $B=0$; the element has a limit, the eigenbasis does not.
 - The region supplies no dynamics, no phase transition and no particle count.
+- On the material sector the region is the punctured scalar line: the Jordan part is excluded because $B^{2}$ is definite there, so the exceptional point is a complexified regime and the rest frame is a scalar operator with a four-dimensional eigenspace.
+- The scalar line of the region is exactly the centre of the algebra, and the region is empty on both minimal left ideals: no value of a spinor is at rest, and the rest frame belongs to the sum.
 
 ## Summary of Notation
 
@@ -250,12 +296,14 @@ No dynamics is supplied. The region says what the element is at an instant; it d
 | $N=Q_t^2$ | the norm on the region |
 | $\tilde Q^{-1}=Q_t^{-1}e_t-Q_t^{-2}\vec\Upsilon$ | the inverse on the Jordan part |
 | $L_{\tilde Q}$ | left multiplication, the operator reading |
+| $i\,q'_t\,e_t+\vec r$ | a material element, $q'_t\in\mathbb{R}$, $\vec r\in\mathbb{R}^{3}$ |
 
 ## Further Reading
 
-- [The Four Regimes of an Element: Mass and Motion](the-four-regimes-of-an-element-mass-and-motion.html), for the partition and the other three regions.
+- [The Three Elementary Carriers and the Four Sectors of Regularity and Degeneracy](the-three-elementary-carriers-and-the-four-sectors-of-regularity-and-degeneracy.html), for the partition and the other three regions.
 - [The Spectral Reading of a Four-Vector](the-spectral-reading-of-a-four-vector.html), for the rest frame and the Doppler pair.
 - [The N-Regular, Spectrally Regular Sector: Mass in Motion](the-n-regular-spectrally-regular-sector-mass-in-motion.html), for the region whose boundary this is.
 - [The N-Degenerate, Spectrally Degenerate Sector: The Vacuum and the Nilpotent Ladder](the-n-degenerate-spectrally-degenerate-sector-the-vacuum-and-the-nilpotent-ladder.html), for the nilpotents, the other defective regime.
 - [The Exponential, the Logarithm and the Generator](the-exponential-the-logarithm-and-the-generator.html), for the logarithm and the boundary.
 - [The Polar Decomposition and Its Three Pairings](the-polar-decomposition-and-its-three-pairings.html), for the word at the degenerate boundary.
+- [Spin and the Three Elementary Carriers](spin-and-the-three-elementary-carriers.html), for the three carriers whose reach this article uses.

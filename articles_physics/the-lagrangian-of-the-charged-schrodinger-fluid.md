@@ -6,7 +6,7 @@
 
 **Three results.**
 
-*First, the minimal substitution acts inside the brackets and nowhere else.* The two replacements are $\partial_{t'}S\mapsto\partial_{t'}S-ϙ\varphi$ and $\nabla S\mapsto\nabla S+ϙ\vec A$, and they are the two slots of one object: the four-derivative of the phase. The gradient energy is untouched.
+*First, the minimal substitution acts inside the brackets and nowhere else.* The two replacements are $\partial_{t'}S\mapsto\partial_{t'}S-ϙ\varphi$ and $\nabla S\mapsto\nabla S-q\vec A$, and they are the two slots of one object: the four-derivative of the phase. The gradient energy is untouched.
 
 *Second, the Lagrangian density is gauge invariant term by term, and not up to a total derivative.* The shift of the phase and the shift of the potential cancel inside each bracket, so no boundary term is needed and the invariance is exact in the density.
 
@@ -18,7 +18,7 @@
 
 ## The Action in the Fluid Variables
 
-**The free action's two slots are the two places the connection can go, and it goes to both.** With $S=\hbar\theta_{\mathrm{pha}}$ and $\vec\pi=\nabla S+ϙ\vec A$,
+**The free action's two slots are the two places the connection can go, and it goes to both.** With $S=\hbar\theta_{\mathrm{pha}}$ and $\vec\pi=\nabla S-q\vec A$,
 
 $$
 \boxed{\;\mathcal L_{\mathrm{fl}}=-\rho_{\mathrm{num}}\Bigl(\partial_{t'}S-ϙ\varphi+\frac{\vec\pi^{2}}{2m}\Bigr)-\frac{\hbar^{2}}{2m}(\nabla r)^{2}\;}
@@ -88,7 +88,7 @@ $$
 \partial_{t'}S-ϙ\varphi\longmapsto\partial_{t'}S+ϙ\partial_{t'}\Gamma-ϙ\varphi-ϙ\partial_{t'}\Gamma=\partial_{t'}S-ϙ\varphi,
 $$
 
-and under $\vec A\mapsto\vec A-\nabla\Gamma$ the combination $\nabla S+ϙ\vec A$ is fixed by the same cancellation. The amplitude and the gradient energy do not move. So every term of $\mathcal L_{\mathrm{fl}}$ is separately invariant, and the action is invariant without a boundary term.
+and under $\vec A\mapsto\vec A-\nabla\Gamma$ the combination $\nabla S-q\vec A$ is fixed by the same cancellation. The amplitude and the gradient energy do not move. So every term of $\mathcal L_{\mathrm{fl}}$ is separately invariant, and the action is invariant without a boundary term.
 
 **The invariance is stronger than the free article's and it is a different kind.** The free action is invariant under a constant shift of the phase, which is a global symmetry with a Noether current. This one is invariant under a *local* shift, which is a redundancy and not a symmetry: the current it implies is the charge current, and its conservation is an identity rather than a consequence of the equations. **A local invariance gives no conserved quantity beyond the one the global subgroup gives**, and the global subgroup here is the constant shift, whose current is $ϙ\rho_{\mathrm{num}}$ — the charge density.
 
@@ -110,7 +110,7 @@ and under $\vec A\mapsto\vec A-\nabla\Gamma$ the combination $\nabla S+ϙ\vec A$
 
 ## Summary
 
-**The action.** $\mathcal L_{\mathrm{fl}}=-\rho_{\mathrm{num}}(\partial_{t'}S-ϙ\varphi+\vec\pi^{2}/2m)-\frac{\hbar^{2}}{2m}(\nabla r)^{2}$, with $\vec\pi=\nabla S+ϙ\vec A$.
+**The action.** $\mathcal L_{\mathrm{fl}}=-\rho_{\mathrm{num}}(\partial_{t'}S-ϙ\varphi+\vec\pi^{2}/2m)-\frac{\hbar^{2}}{2m}(\nabla r)^{2}$, with $\vec\pi=\nabla S-q\vec A$.
 
 **The variations.** The phase gives continuity with $\vec j=\rho_{\mathrm{num}}\vec v$; the amplitude gives $\mathcal E=\vec\pi^{2}/2m+Q$; the gradient of the second is $\mathrm{D}\vec\pi/\mathrm{D}t=-ϙ(\vec E+\vec v\times\vec B)-\nabla Q$, which is the standard Lorentz force for $q=-ϙ$.
 
@@ -129,7 +129,7 @@ and under $\vec A\mapsto\vec A-\nabla\Gamma$ the combination $\nabla S+ϙ\vec A$
 | $\varphi$, $\vec A$ | Scalar and vector potentials; gauge dependent |
 | $S=\hbar\theta_{\mathrm{pha}}$ | Phase; gauge dependent |
 | $\partial_{t'}S-ϙ\varphi$ | Time slot of the covariant derivative; the kinetic energy's negative |
-| $\vec\pi=\nabla S+ϙ\vec A$ | Kinetic momentum; gauge invariant |
+| $\vec\pi=\nabla S-q\vec A$ | Kinetic momentum; gauge invariant |
 | $\vec v=\vec\pi/m$ | Velocity; gauge invariant |
 | $\mathcal E=-\partial_{t'}S+ϙ\varphi$ | Kinetic energy; gauge invariant |
 | $\rho_{\mathrm{num}}=r^{2}$ | Density; gauge invariant |

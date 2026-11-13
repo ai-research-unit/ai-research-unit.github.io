@@ -87,9 +87,9 @@ the **centre** of the algebra. The result was confirmed independently by solving
 
 The algebraic statement is therefore exact: **the elements of $\mathbb{B}$ that are invariant under the conjugation action of the rotation subgroup are precisely the central elements.** The traceless part transforms instead as the adjoint action, so under rotations the algebra separates into the centre, which is spin $0$, and the traceless part, which is spin $1$, while the carrier of states carries spin $\tfrac{1}{2}$. A spin-$0$ field has no alternative but the centre.
 
-### The Centre Is a Subalgebra, Not a Carrier
+### The Centre Is a Subalgebra and Not a Module
 
-It matters that the centre is a subalgebra and not a carrier, because that is what separates the scalar from the state structurally. The centre is closed under multiplication, because central elements commute and their product is again central,
+It matters that the centre is a subalgebra and not a module, because that is what separates the scalar from the state structurally. The centre is not outside the carrier structure: it is the spin-$0$ carrier, and its carrier is the adjoint action, under which it is fixed pointwise. What it is not is a module, and the next paragraphs show why. The centre is closed under multiplication, because central elements commute and their product is again central,
 
 $$
 (Q_te_t)(R_te_t)=(Q_tR_t)e_t\in\mathbb{B}_{C},
@@ -113,7 +113,7 @@ The distinction has a second, more elementary face. A state that carries a pure 
 
 The carrier of states cannot host a spin-$0$ field for three reasons, one for each object involved: the carrier, the algebra, and the product of two states.
 
-### No One-Dimensional Carrier
+### No One-Dimensional Module
 
 Suppose a one-dimensional subspace is carried into itself by every left multiplication. Choose a nonzero $\tilde{Ξ}$ in it. Then $\tilde{Q}\tilde{Ξ}=\lambda(\tilde{Q})\tilde{Ξ}$ for every $\tilde{Q}$, with $\lambda(\tilde{Q})$ a complex number. The map $\lambda$ is multiplicative, $\lambda(\tilde{Q}_1\tilde{Q}_2)=\lambda(\tilde{Q}_1)\lambda(\tilde{Q}_2)$, and $\lambda(e_t)=1$. From $\vec e_\eta^2=-e_t$,
 
@@ -127,7 +127,7 @@ $$
 \lambda(\vec e_x)\lambda(\vec e_y)=\lambda(\vec e_z).
 $$
 
-The product of two numbers each equal to $\pm i$ is $\pm1$, while $\lambda(\vec e_z)$ is $\pm i$. The equation has no solution, and no one-dimensional carrier exists. The check was repeated over all eight sign choices, with no nonzero solution.
+The product of two numbers each equal to $\pm i$ is $\pm1$, while $\lambda(\vec e_z)$ is $\pm i$. The equation has no solution, and no one-dimensional module exists. The check was repeated over all eight sign choices, with no nonzero solution.
 
 The consequence is immediate. A scalar field carries the trivial action: the algebra does nothing to its value. If that value were a carrier of the left action, the carrier would be one-dimensional and invariant. No such subspace exists. The value of a scalar is therefore not a value of the state action. The carrier is not "the carrier with spin $0$" as against "the carrier with spin $\tfrac{1}{2}$": every carrier of the left action is at least two-dimensional and carries spin $\tfrac{1}{2}$. The spin-$0$ value has to be found outside the carrier.
 

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The polar parent has a table of what the chart shows and what it hides, and one row of that table is wrong.** *The Coupled Klein–Gordon Equation in Biquaternionic Polar Variables* writes, at §*What the Chart Shows and What It Hides*, that "$\tilde F$ does not appear in the pair at all", and calls this "the sharpest statement of what a coordinate system can and cannot show". The chart does show the field strength: its own §*The Current, the Vorticity and the Flux* computes $\nabla\times(\vec p+ϙ\vec A)=ϙ\vec B$ exactly. What the chart cannot show is the fork between the two coupled equations, and that is a different property with a different reason.
+**The polar parent has a table of what the chart shows and what it hides, and one row of that table is wrong.** *The Coupled Klein–Gordon Equation in Biquaternionic Polar Variables* writes, at §*What the Chart Shows and What It Hides*, that "$\tilde F$ does not appear in the pair at all", and calls this "the sharpest statement of what a coordinate system can and cannot show". The chart does show the field strength: its own §*The Current, the Vorticity and the Flux* computes $\nabla\times(\vec p-q\vec A)=ϙ\vec B$ exactly. What the chart cannot show is the fork between the two coupled equations, and that is a different property with a different reason.
 
 **The reason is that the chart's bracket is one charge squared.** The polar form's second-order object is a modulus squared, $\mathrm{Sc}\big[(\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi)^{*}\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi\big]$, and a modulus squared differentiates to one covariant derivative composed with its own adjoint. That is the squared reading of the covariant square, with the same charge in both factors. **The paired reading needs two opposite charges once each**, and a modulus cannot supply two charges: it has one.
 
@@ -26,7 +26,7 @@ $$
 \tilde K_\Phi=ik_t'e_t+\vec k_\Phi .
 $$
 
-**The bookkeeping is quoted once.** $c_\mu=\frac{iϙ}{\hbar}A_\mu$ gives $c_t=-\frac{ϙa_t'}{\hbar}$ real and $c_\eta=i\frac{ϙ}{\hbar}A_\eta$ imaginary; the free slot symbols are $\sigma_t=-k_t'$ real and $\sigma_\eta=i\kappa_\eta$ imaginary; and the mechanical four-momentum is $\tilde P^{\mathrm{mech}}_\Phi=\tilde P_\Phi+ϙ\tilde A_\Phi$, whose temporal slot is $E+ϙc\,a_t'$ and whose spatial slots are $\vec p+ϙ\vec A$.
+**The bookkeeping is quoted once.** $c_\mu=\frac{iϙ}{\hbar}A_\mu$ gives $c_t=-\frac{ϙa_t'}{\hbar}$ real and $c_\eta=i\frac{ϙ}{\hbar}A_\eta$ imaginary; the free slot symbols are $\sigma_t=-k_t'$ real and $\sigma_\eta=i\kappa_\eta$ imaginary; and the mechanical four-momentum is $\tilde P^{\mathrm{mech}}_\Phi=\tilde P_\Phi+ϙ\tilde A_\Phi$, whose temporal slot is $E+ϙc\,a_t'$ and whose spatial slots are $\vec p-q\vec A$.
 
 **The denials, restated once.** The transform does not carry a material-sector field to an informational-sector one. A symbol exists only at constant coefficients. **And a Legendre transform is not a Fourier transform**: the polar variational parent's four momenta are conjugates to the field's own parameters at each event, so they are not wave numbers, and nothing below reads them as one. This is the only place the third denial is stated.
 
@@ -63,17 +63,17 @@ which is the squared reading. **The chart is the chart of the squared equation a
 
 ## The Chart Shows the Field Strength as a Curl
 
-**The vorticity is the parent's and it is exact.** The mechanical flow is $\vec p+ϙ\vec A$, its curl is $\nabla\times\vec p+ϙ\nabla\times\vec A=ϙ\vec B$ because $\vec p=\nabla S$ is a gradient, and the parent prints this without approximation. Measured on a $256^{2}$ grid with a periodic vector potential of field strength up to $3.200$, the largest discrepancy between $\nabla\times(\vec p+ϙ\vec A)$ and $ϙ\vec B$ is $1.1\times10^{-13}$, while the curl of $\vec p$ alone is $7.8\times10^{-14}$.
+**The vorticity is the parent's and it is exact.** The mechanical flow is $\vec p-q\vec A$, its curl is $\nabla\times\vec p-q\nabla\times\vec A=-q\vec B$, which is $ϙ\vec B$ with $q=-ϙ$ and $\vec p=\nabla S$ a gradient, and the parent prints this without approximation. Measured on a $256^{2}$ grid with a periodic vector potential of field strength up to $3.200$, the largest discrepancy between $\nabla\times(\vec p-q\vec A)$ and $ϙ\vec B$ is $1.1\times10^{-13}$, while the curl of $\vec p$ alone is $7.8\times10^{-14}$.
 
 **So the field strength is the chart's most visible object, not its most hidden one.** A curl of a vector field is exactly what a chart carrying a density and a phase can compute, and the parent's own section computes it. **The row of the table that says $\tilde F$ does not appear is the row to correct**, and the correction is not a nicety: it is the difference between a chart that is blind to curvature and a chart that is blind to a cross term.
 
 **Visibility and discrimination are different properties, and the article keeps them apart.** The chart shows $\tilde F$ because $\tilde F$ is a derivative; the chart cannot show the fork because the fork is an antisymmetrisation. **A coordinate system can be good at one and bad at the other**, and this one is.
 
-**The circulation statement is the same statement integrated.** $\oint(\vec p+ϙ\vec A)\cdot\mathrm{d}\vec l=2\pi\hbar n+ϙ\Phi_B$ is the curl's integral form, and it is exact for the same reason. **The chart's best statements are all of this shape**, which is why the parent's §*The Current, the Vorticity and the Flux* is the section where the chart is strongest.
+**The circulation statement is the same statement integrated.** $\oint(\vec p-q\vec A)\cdot\mathrm{d}\vec l=2\pi\hbar n+ϙ\Phi_B$ is the curl's integral form, and it is exact for the same reason. **The chart's best statements are all of this shape**, which is why the parent's §*The Current, the Vorticity and the Flux* is the section where the chart is strongest.
 
 ## The Polar Variable Is the Mechanical One
 
-**The chart's wave number is the mechanical momentum and not the canonical one.** The parent's substitution is $\partial_{r_t'}S_{\tilde\Xi}\mapsto\partial_{r_t'}S_{\tilde\Xi}-ϙa_t'$ and $\nabla S_{\tilde\Xi}\mapsto\nabla S_{\tilde\Xi}+ϙ\vec A$, so the variable the transform pairs with the coordinate is $\tilde K_{\Phi,\mathrm{gco}}$ and not $\tilde K_\Phi$. **A chart whose variable already contains the potential has diagonalised the potential away**, and what it diagonalises is the reading whose shell is free in that variable.
+**The chart's wave number is the mechanical momentum and not the canonical one.** The parent's substitution is $\partial_{r_t'}S_{\tilde\Xi}\mapsto\partial_{r_t'}S_{\tilde\Xi}-ϙa_t'$ and $\nabla S_{\tilde\Xi}\mapsto\nabla S_{\tilde\Xi}-q\vec A$, so the variable the transform pairs with the coordinate is $\tilde K_{\Phi,\mathrm{gco}}$ and not $\tilde K_\Phi$. **A chart whose variable already contains the potential has diagonalised the potential away**, and what it diagonalises is the reading whose shell is free in that variable.
 
 **The squared reading is exactly free in the mechanical variable.** The shell $(k_t'-c_t)^{2}=\lvert\vec\kappa\rvert^{2}+k_m^{2}$ becomes $k_t'^{\mathrm{mech}\,2}=\lvert\vec\kappa^{\mathrm{mech}}\rvert^{2}+k_m^{2}$ with $k_t'^{\mathrm{mech}}=k_t'-c_t$ and $\vec\kappa^{\mathrm{mech}}=\vec\kappa+\vec a$. Measured at $k_t'=2.770584$, the mechanical value is $3.080584$ and the residual is $0.0$. **The chart's free-looking dispersion is the squared reading's, exactly.**
 
@@ -113,7 +113,7 @@ which is the squared reading. **The chart is the chart of the squared equation a
 
 The chart's second-order object is a modulus squared, and a modulus squared differentiates to one covariant derivative composed with its own adjoint: the squared reading, with the same charge in both factors. The paired reading needs two opposite charges once each, and a modulus is symmetric in its factors, so the chart cannot write it. **The chart is the chart of the squared equation**, and the fork between the two readings is invisible to it because the fork is an antisymmetrisation.
 
-The parent's table has one row to correct. The chart does not hide the field strength: its own vorticity section computes $\nabla\times(\vec p+ϙ\vec A)=ϙ\vec B$ exactly, and measured on a $256^{2}$ grid with a periodic potential the discrepancy is $1.1\times10^{-13}$ against a field strength of $3.200$. **The chart shows $\tilde F$ because $\tilde F$ is a derivative, and it cannot show the fork because the fork is an antisymmetrisation**; a chart can be good at one and bad at the other.
+The parent's table has one row to correct. The chart does not hide the field strength: its own vorticity section computes $\nabla\times(\vec p-q\vec A)=ϙ\vec B$ exactly, and measured on a $256^{2}$ grid with a periodic potential the discrepancy is $1.1\times10^{-13}$ against a field strength of $3.200$. **The chart shows $\tilde F$ because $\tilde F$ is a derivative, and it cannot show the fork because the fork is an antisymmetrisation**; a chart can be good at one and bad at the other.
 
 The chart's variable is the mechanical momentum, and in it the squared reading is exactly free: at $k_t'=2.770584$ the mechanical value is $3.080584$ with residual $0.0$, while the paired reading keeps a residual of $-1.909962$, which is $2c_t$ times the mechanical frequency. **So the chart does not merely prefer one reading; it puts that reading in free form** and leaves the other with a term linear in the energy.
 
@@ -129,7 +129,7 @@ What the chart is silent on, it is silent on for one reason: its functionals are
 | $\tilde\nabla_{\mathrm{gco},\mu}^{2}\tilde\Xi$ | The operator $S_{\mathrm{p}}$ produces: the squared reading |
 | $c_\mu=\frac{iϙ}{\hbar}A_\mu$ | The per-slot coefficient; $c_t$ real, $c_\eta$ imaginary |
 | $\tilde P^{\mathrm{mech}}_\Phi=\tilde P_\Phi+ϙ\tilde A_\Phi$ | The mechanical four-momentum; the chart's variable |
-| $\nabla\times(\vec p+ϙ\vec A)=ϙ\vec B$ | The vorticity: the field strength the chart shows |
+| $\nabla\times(\vec p-q\vec A)=ϙ\vec B$ | The vorticity: the field strength the chart shows |
 | $k_t'^{\mathrm{mech}}=k_t'-c_t$ | The mechanical frequency; the squared shell is free in it |
 | $2c_t(c_t-k_t')$ | The cross term the chart cannot carry |
 

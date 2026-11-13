@@ -602,7 +602,7 @@ The article is a taxonomy, not a derivation. It does not derive the BRST transfo
 
 The taxonomy covers the corpus's uses of $X^2=0$; it does not claim to exhaust the mathematical uses of square-zero elements. The de Rham differential, the boundary operator of a chain complex and the Koszul differential are further differentials; they fall under the differential row and add nothing to the classification beyond a further example. The article does not treat them.
 
-The article adds no dynamics, no mass, no coupling and no empirical prediction. It gives the nilpotent, the ladder and the pairing, but no field content: a field is a collection of modes, and the qutrit is outside $\mathbb{B}$. The lattice interpretations are topological and model-dependent; the algebra is not a lattice. The WKB interpretation is leading order; the exact solution, the caustics and the tunneling lie outside it. The contraction is a limit, not a process. The physical interpretations it compares are the corpus's, and the comparison does not make them more or less empirical. The sharpest limit is the distinction of §*The Excluded Case: The Physical Null Momentum*: the physical null momentum is a zero divisor with a nonzero square, and the nilpotent is a pure displacement with a zero square.
+The article adds no dynamics, no mass, no coupling and no empirical prediction. It gives the nilpotent, the ladder and the pairing, but no field content: a field is a collection of modes, and the qutrit is outside $\mathbb{B}$. The lattice interpretations are topological and model-dependent; the algebra is not a lattice. The WKB interpretation is leading order; the exact solution, the caustics and the tunneling lie outside it. The contraction is a limit, not a process. The physical interpretations it compares are the corpus's, and the comparison does not make them more or less empirical. The sharpest limit is the distinction of §*The Excluded Case: The Physical Null Momentum*: the physical null momentum is a zero divisor with a nonzero square, and the nilpotent is the complex isotropic model of a null direction, with a zero square.
 
 ## The Legacy Pauli Gamma Formulation
 
@@ -784,7 +784,7 @@ The classification is a map, not a derivation. It adds no physics, and it leaves
 - [The Dirac Sea, Hole Theory and Antimatter in Biquaternionic Form](the-dirac-sea-hole-theory-and-antimatter-in-biquaternionic-form.html)
 - [The Jordan–Wigner Transformation in Biquaternionic Form](the-jordan-wigner-transformation-in-biquaternionic-form.html)
 - [Grassmann Coherent States in Biquaternionic Form](grassmann-coherent-states-in-biquaternionic-form.html)
-- [The Non-Quantum Limit of the Free Schrödinger Equation](the-non-quantum-limit-of-the-free-schrodinger-equation.html)
+- [The Non-Quantum Limit and the Schrödinger Equation in Biquaternionic Polar Variables](the-non-quantum-limit-and-the-schrodinger-equation-in-biquaternionic-polar-variables.html)
 - [Dirac Matter: Graphene, Dirac Cones and Topological Insulators in Biquaternionic Form](dirac-matter-graphene-dirac-cones-and-topological-insulators-in-biquaternionic-form.html)
 - [Fermion Doubling and the Nielsen–Ninomiya Theorem in Biquaternionic Form](fermion-doubling-and-the-nielsen-ninomiya-theorem-in-biquaternionic-form.html)
 - [The Wick Theorem in Biquaternionic Form](the-wick-theorem-in-biquaternionic-form.html)

@@ -154,17 +154,17 @@ $$
 the left string read in the order of the factors and the right string in reverse, and the trace is additive over sums of actions. With $Ξ^{t}=Ξ_t$ and $Ξ^{\eta}=-Ξ_\eta$, the three trace combinations are
 
 $$
-L_t:=\operatorname{tr}\bigl[Ξ^{\mu} D(p_1)Ξ^{\nu} D(p_3)\bigr]\,
+L_t:=\operatorname{tr}\bigl[Ξ_{\mu} D(p_1)Ξ_{\nu} D(p_3)\bigr]\,
 \operatorname{tr}\bigl[Ξ_\mu D(p_2)Ξ_\nu D(p_4)\bigr],
 $$
 
 $$
-L_u:=\operatorname{tr}\bigl[Ξ^{\mu} D(p_2)Ξ^{\nu} D(p_3)\bigr]\,
+L_u:=\operatorname{tr}\bigl[Ξ_{\mu} D(p_2)Ξ_{\nu} D(p_3)\bigr]\,
 \operatorname{tr}\bigl[Ξ_\mu D(p_1)Ξ_\nu D(p_4)\bigr],
 $$
 
 $$
-L_{tu}:=\operatorname{tr}\bigl[D(p_3)Ξ^{\mu} D(p_1)Ξ^{\nu} D(p_4)Ξ_\mu D(p_2)Ξ_\nu\bigr],
+L_{tu}:=\operatorname{tr}\bigl[D(p_3)Ξ_{\mu} D(p_1)Ξ_{\nu} D(p_4)Ξ_{\mu} D(p_2)Ξ_{\nu}\bigr],
 $$
 
 with the sum over the two repeated Lorentz indices, and the trace of an odd number of insertions vanishes. Then

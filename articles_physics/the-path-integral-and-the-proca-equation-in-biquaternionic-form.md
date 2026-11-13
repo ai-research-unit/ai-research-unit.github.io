@@ -131,7 +131,7 @@ and the four eigenvalues of the mixed operator are $-k_m^{2}$ once, along $k$, a
 $$
 P^{-1}=\frac{P_T}{\Box_\Phi-k_m^{2}}-\frac{P_L}{k_m^{2}}
 \;\;\xrightarrow{\ \text{momentum}\ }\;\;
-\frac{g^{\mu\nu}-k^{\mu}k^{\nu}/k_m^{2}}{k^{2}-k_m^{2}+i\epsilon},
+\frac{g_{\mu\nu}-k_\mu k_\nu/k_m^{2}}{k^{2}-k_m^{2}+i\epsilon},
 $$
 
 which is the standard Proca propagator. Both displayed forms were checked against each other on six random momenta, agreeing to $4.4\times10^{-16}$ after the indices are raised, and the projector form inverts the operator to $1.2\times10^{-14}$. **The $1/k_m^{2}$ in the numerator of the longitudinal part is where the mass appears in the propagator, and it is the whole of the difference from a scalar.**
@@ -225,7 +225,7 @@ so the Lorenz condition holds exactly when the source is conserved. **The constr
 
 ## Summary
 
-The Proca functional integral is an ordinary Gaussian over the anti-Hermitian configurations, with the flat measure and no insertion. Its operator is $P=\Box_\Phi-k_m^{2}-\tilde\nabla_\Phi D$, and the two canonical first-order operators of the algebra give the exact split $P=(\Box_\Phi-k_m^{2})P_T-k_m^{2}P_L$ with $P_L=\tilde\nabla_\Phi\Box_\Phi^{-1}D$ of rank one and $P_T$ of rank three. The determinant is $(\Box_\Phi-k_m^{2})^{3}(-k_m^{2})$, verified to $4.7\times10^{-15}$ in momentum space, and the inverse is $(g^{\mu\nu}-k^{\mu}k^{\nu}/k_m^{2})/(k^{2}-k_m^{2}+i\epsilon)$, which is the standard Proca propagator.
+The Proca functional integral is an ordinary Gaussian over the anti-Hermitian configurations, with the flat measure and no insertion. Its operator is $P=\Box_\Phi-k_m^{2}-\tilde\nabla_\Phi D$, and the two canonical first-order operators of the algebra give the exact split $P=(\Box_\Phi-k_m^{2})P_T-k_m^{2}P_L$ with $P_L=\tilde\nabla_\Phi\Box_\Phi^{-1}D$ of rank one and $P_T$ of rank three. The determinant is $(\Box_\Phi-k_m^{2})^{3}(-k_m^{2})$, verified to $4.7\times10^{-15}$ in momentum space, and the inverse is $(g_{\mu\nu}-k_\mu k_\nu/k_m^{2})/(k^{2}-k_m^{2}+i\epsilon)$, its indices low like every other, which is the standard Proca propagator.
 
 The exponent three is the three polarizations, and the single factor is the ghost. The ghost's eigenvalue is $-k_m^{2}$ with no derivative in it, so the ghost's contribution is a constant times a phase and cancels in every normalised correlator; in the Euclidean section the eigenvalues are $m^{2}$ and $p^{2}+m^{2}$ and both are positive. The one-loop effective action is three times a scalar's. At $k_m=0$ the longitudinal eigenvalue vanishes, the integral becomes the gauge volume, and the Faddeev–Popov construction is what the Maxwell integral needs and the Proca one does not; the massless limit exists on conserved sources only, with the longitudinal term growing as $1/k_m^{2}$ for a non-conserved one.
 
@@ -243,7 +243,7 @@ The saddle is the classical field, whose transverse part propagates and whose lo
 | $P_L=\tilde\nabla_\Phi\Box_\Phi^{-1}D$, $P_T=1-P_L$ | Longitudinal and transverse projectors; ranks 1 and 3 |
 | $P=(\Box_\Phi-k_m^{2})P_T-k_m^{2}P_L$ | The exact split |
 | $\det P=(\Box_\Phi-k_m^{2})^{3}(-k_m^{2})$ | The determinant; the cube is the polarization count |
-| $\frac{g^{\mu\nu}-k^{\mu}k^{\nu}/k_m^{2}}{k^{2}-k_m^{2}+i\epsilon}$ | The propagator; the standard Proca form |
+| $\frac{g_{\mu\nu}-k_\mu k_\nu/k_m^{2}}{k^{2}-k_m^{2}+i\epsilon}$ | The propagator; the standard Proca form, indices low |
 | $-k_m^{2}$ | The longitudinal eigenvalue; the ghost |
 | $m^{2}$, $p^{2}+m^{2}$ | The Euclidean eigenvalues; both positive |
 | $\tilde J_\Phi P^{-1}\tilde J_\Phi$ | The source's image; the longitudinal term is $1/k_m^{2}$ |

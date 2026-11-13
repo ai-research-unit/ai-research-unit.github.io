@@ -15,7 +15,7 @@
 The charged companion's: $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$ with $\varphi$ and $\vec A$ real, the coupling $\varkappa$ being minus the electric charge, the covariant derivative $\partial_\mu+\frac{i\varkappa}{\hbar}A_\mu$, and the gauge transformation $\lambda=\exp(i\varkappa\Gamma/\hbar)$ with $\Gamma$ real. The field is central, $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$, and the two invariants are
 
 $$
-\vec\pi=\hbar\nabla\theta_{\mathrm{pha}}+\varkappa\vec A=\nabla S+\varkappa\vec A,
+\vec\pi=\hbar\nabla\theta_{\mathrm{pha}}-q\vec A=\nabla S-q\vec A,
 \qquad
 \mathcal E=-\hbar\,\partial_{t'}\theta_{\mathrm{pha}}+\varkappa\varphi,
 \qquad
@@ -29,9 +29,9 @@ The transform's symbol rule is the free companion's. The curvature is $\vec B=\n
 **A constant connection leaves the mode a mode.** Take $\tilde A_\Phi$ constant, so that $\vec B=0$ and $\varphi$ is constant. A plane wave $\tilde\Xi=a\,e^{i(\vec k\cdot\vec r-\omega t')}e_t$ is a solution with the label
 
 $$
-\vec\pi=\hbar\vec k+\varkappa\vec A,
+\vec\pi=\hbar\vec k-q\vec A,
 \qquad
-\vec v=\frac{\hbar\vec k+\varkappa\vec A}{m},
+\vec v=\frac{\hbar\vec k-q\vec A}{m},
 \qquad
 \nabla\times\vec v=0 ,
 $$
@@ -53,7 +53,7 @@ so the canonical label is the free one and the kinetic label is the free one plu
 **The identity is one line and the check is exact.**
 
 $$
-\nabla\times\vec v=\frac{1}{m}\nabla\times\bigl(\hbar\nabla\theta_{\mathrm{pha}}+\varkappa\vec A\bigr)=\frac{\varkappa}{m}\vec B ,
+\nabla\times\vec v=\frac{1}{m}\nabla\times\bigl(\hbar\nabla\theta_{\mathrm{pha}}-q\vec A\bigr)=\frac{\varkappa}{m}\vec B ,
 $$
 
 since the curl of a gradient vanishes wherever the phase is twice differentiable. On one hundred events with a uniform field $\vec B=0.6\vec e_z$ and a phase carrying a cross term, the residual was $5.0\times10^{-16}$.
@@ -121,7 +121,7 @@ $$
 
 ## Summary
 
-The charged Schrödinger fluid's velocity is $(\hbar\nabla\theta_{\mathrm{pha}}+\varkappa\vec A)/m$ and its vorticity is $\varkappa\vec B/m$ exactly, with residual $5.0\times10^{-16}$ on one hundred events and the curl of a gradient vanishing identically.
+The charged Schrödinger fluid's velocity is $(\hbar\nabla\theta_{\mathrm{pha}}-q\vec A)/m$ and its vorticity is $\varkappa\vec B/m$ exactly, with residual $5.0\times10^{-16}$ on one hundred events and the curl of a gradient vanishing identically.
 
 A constant connection is a multiplier, carries no curvature, mixes no modes and is a pure gradient, so a mode of a flat connection is a free mode with a translated label and zero vorticity, checked at $2.5\times10^{-16}$.
 
@@ -139,7 +139,7 @@ The field has two supports, the free shell in the canonical variable and the tra
 |---|---|
 | $\varkappa$ | The coupling; minus the electric charge |
 | $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$ | The connection |
-| $\vec\pi=\hbar\nabla\theta_{\mathrm{pha}}+\varkappa\vec A$ | The kinetic momentum |
+| $\vec\pi=\hbar\nabla\theta_{\mathrm{pha}}-q\vec A$ | The kinetic momentum |
 | $\mathcal E=-\hbar\partial_{t'}\theta_{\mathrm{pha}}+\varkappa\varphi$ | The kinetic energy |
 | $\vec v=\vec\pi/m$ | The velocity |
 | $\vec B=\nabla\times\vec A$, $\vec E=-\nabla\varphi-\partial_{t'}\vec A$ | The field strength |

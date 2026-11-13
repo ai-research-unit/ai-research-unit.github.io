@@ -8,7 +8,7 @@
 
 **The third finding is that the symbol is a model of the bracket and not the bracket itself.** The bracket is a number at each time; the symbol is that number read at a fixed frequency. Where the bracket is constant the model is exact, and the constant background is exactly that case. Where the bracket varies the symbol does not exist, and the transform spreads: the effective number of modes of a chirped unit is $5.80$ at a chirp rate of $1$ and $26.53$ at a rate of $4$, against $1.00$ for a pure tone.
 
-**The fourth finding is that the two invariants are not functionals of the symbol.** $\vec\pi=\hbar\nabla\theta_{\mathrm{pha}}+ϙ\vec A$ and $\mathcal E=-\hbar\partial_{t'}\theta_{\mathrm{pha}}+ϙ\varphi$ are properties of the field at each point. The symbol is one function of $(\omega,\vec k)$, and it is the same function for every superposition. **Two superpositions of the same two modes have the same symbol and different mean $\vec\pi$**: $1.700$ against $2.500$ in the example below.
+**The fourth finding is that the two invariants are not functionals of the symbol.** $\vec\pi=\hbar\nabla\theta_{\mathrm{pha}}-q\vec A$ and $\mathcal E=-\hbar\partial_{t'}\theta_{\mathrm{pha}}+ϙ\varphi$ are properties of the field at each point. The symbol is one function of $(\omega,\vec k)$, and it is the same function for every superposition. **Two superpositions of the same two modes have the same symbol and different mean $\vec\pi$**: $1.700$ against $2.500$ in the example below.
 
 **The fifth finding is that the constant background is the exact case.** The phase is linear in $\varphi$ and quadratic in $\vec A$, with no higher term, because the background is constant. **So the "semiclassical" phase is exact here**, and the article says plainly that there is no small parameter to expand in.
 
@@ -23,7 +23,7 @@ The chart, its word and its norms are those of *The Schrödinger Equation in Biq
 **The two invariants.** With $\theta=\theta_{\mathrm{pha}}$,
 
 $$
-\vec\pi=\hbar\nabla\theta_{\mathrm{pha}}+ϙ\vec A,
+\vec\pi=\hbar\nabla\theta_{\mathrm{pha}}-q\vec A,
 \qquad
 \mathcal E=-\hbar\,\partial_{t'}\theta_{\mathrm{pha}}+ϙ\varphi .
 $$
@@ -72,7 +72,7 @@ a real number added to a real number. **The connection occupies the phase type a
 
 **The bracket is a number at each time.** $\partial_{t'}\theta_{\mathrm{pha}}$ is a function of $t'$, and its product with $\hbar$ is the local frequency of the field. **The symbol is that number read at one frequency**, and the reading is faithful only when the number does not vary.
 
-**The exact case is the constant bracket.** For a plane wave the bracket is constant, the symbol exists, and the equation reduces to the algebraic relation $\hbar\omega+ϙ\varphi=\lvert\hbar\vec k+ϙ\vec A\rvert^{2}/(2m)$. **Nothing is approximated**, and the reduction is exact because the coefficient is constant.
+**The exact case is the constant bracket.** For a plane wave the bracket is constant, the symbol exists, and the equation reduces to the algebraic relation $\hbar\omega+ϙ\varphi=\lvert\hbar\vec k-q\vec A\rvert^{2}/(2m)$. **Nothing is approximated**, and the reduction is exact because the coefficient is constant.
 
 **The varying case has no symbol.** A unit whose phase is $\theta=\omega_0t'+\tfrac12\alpha t'^{2}$ has a bracket $\omega_0+\alpha t'$ that varies, and its transform is not supported at one frequency. On a grid of sixty-four points the effective number of modes $1/\sum_jp_j^{2}$ was $1.00$ for an integer tone, $5.64$ at $\alpha=1$ and $26.20$ at $\alpha=4$. **The spread grows with the chirp and the symbol does not exist for any of them.**
 
@@ -84,19 +84,19 @@ a real number added to a real number. **The connection occupies the phase type a
 
 ## The Eigenvalue Pair With the Two Shifts
 
-**The eigenvalues.** In the constant setting the shifted Hamiltonian is $\tilde H^{\mathrm{gco}}_\Psi=(h_t-ϙ\varphi)e_t+i(\vec h_\Psi+ϙ\vec A)$, so the two eigenvalues are
+**The eigenvalues.** In the constant setting the shifted Hamiltonian is $\tilde H^{\mathrm{gco}}_\Psi=(h_t-ϙ\varphi)e_t+i(\vec h_\Psi-q\vec A)$, so the two eigenvalues are
 
 $$
-h_t-ϙ\varphi\pm\lvert\vec h_\Psi+ϙ\vec A\rvert ,
+h_t-ϙ\varphi\pm\lvert\vec h_\Psi-q\vec A\rvert ,
 $$
 
 each twice. **The scalar potential translates the pair and the vector potential changes its spacing**, exactly as the element-form companion computes.
 
-**The two rates in the chart's letters.** The phase runs at $-\big(h_t-ϙ\varphi\big)/\hbar$ and the rotor's angle at $2\lvert\vec h_\Psi+ϙ\vec A\rvert/\hbar$. **The two shifted numbers are the two rates**, and the chart's names for them are the mean and the gap.
+**The two rates in the chart's letters.** The phase runs at $-\big(h_t-ϙ\varphi\big)/\hbar$ and the rotor's angle at $2\lvert\vec h_\Psi-q\vec A\rvert/\hbar$. **The two shifted numbers are the two rates**, and the chart's names for them are the mean and the gap.
 
 **The numbers.** With $\lvert\vec h_\Psi\rvert=0.616441$ the free gap is $1.232882$; with $ϙ\vec A=(0.35,0.25,0)$ it is $1.503329$; with $ϙ\varphi=0.4$ alone it stays $1.232882$ and the phase's rate moves by $-0.400000$. **The gap is a vector-potential effect and the translation is a scalar-potential effect.**
 
-**The invariant reading.** The two eigenvalues are $\mathcal E_0\pm\lvert\vec\pi_0\rvert$ for a mode, with $\mathcal E_0=\hbar\omega+ϙ\varphi$ and $\vec\pi_0=\hbar\vec k+ϙ\vec A$. **So the pair is a function of the two invariants**, and the chart's two rates are functions of the two invariants. **Gauge transformations move neither.**
+**The invariant reading.** The two eigenvalues are $\mathcal E_0\pm\lvert\vec\pi_0\rvert$ for a mode, with $\mathcal E_0=\hbar\omega+ϙ\varphi$ and $\vec\pi_0=\hbar\vec k-q\vec A$. **So the pair is a function of the two invariants**, and the chart's two rates are functions of the two invariants. **Gauge transformations move neither.**
 
 **What the pair does not carry.** It does not carry the rotor's axis, which the vector potential shifts. **The gap is read and the axis is frame data**, exactly as in the free polar companion.
 
@@ -110,9 +110,9 @@ each twice. **The scalar potential translates the pair and the vector potential 
 
 **Where the invariants live.** They live in the field and in its word, and their integrals are the Noether charges. **The transform diagonalises the charges and does not determine the invariants**, and that asymmetry is the polar chart's rendering of the difference between a label and a value.
 
-**The gauge covariance of the invariants.** Under a gauge transformation the phase's gradient shifts by $-\nabla\Gamma$ and $\vec A$ by $+\nabla\Gamma$... in the parent's sign convention $\vec A\mapsto\vec A-\nabla\Gamma$ and $\theta\mapsto\theta+ϙ\Gamma/\hbar$, so $\hbar\nabla\theta+ϙ\vec A$ is invariant. **Both invariants are gauge invariant and both are field-dependent**, and the pair of properties is what a symbol cannot have.
+**The gauge covariance of the invariants.** Under a gauge transformation the phase's gradient shifts by $-\nabla\Gamma$ and $\vec A$ by $+\nabla\Gamma$... in the parent's sign convention $\vec A\mapsto\vec A-\nabla\Gamma$ and $\theta\mapsto\theta+ϙ\Gamma/\hbar$, so $\hbar\nabla\theta-q\vec A$ is invariant. **Both invariants are gauge invariant and both are field-dependent**, and the pair of properties is what a symbol cannot have.
 
-**A caution about $\vec k$.** The symbol's argument $\vec k$ is the transform's label and not the field's mechanical momentum. They agree on a single plane wave and disagree on every superposition. **Reading $\hbar\vec k+\varrho\vec A$ as the field's momentum is the error this section exists to prevent.**
+**A caution about $\vec k$.** The symbol's argument $\vec k$ is the transform's label and not the field's mechanical momentum. They agree on a single plane wave and disagree on every superposition. **Reading $\hbar\vec k-q\vec A$ as the field's momentum is the error this section exists to prevent.**
 
 ## The Constant Background Is the Exact Case
 
@@ -166,7 +166,7 @@ so it is linear in $\varphi$, linear and quadratic in $\vec A$, and has no highe
 
 The transform and the gauge transformation are both central multiplications, so they commute: the transform of a gauge-transformed field is the gauge-transformed transform, exactly, with no link variable. The covariant bracket adds the real number $ϙ\varphi$ to the phase's rate and leaves the other three brackets of the chart untouched. **That is the frequency-space form of the statement that a central connection can only reach the phase.**
 
-The symbol is a model of the bracket: faithful where the bracket is constant, absent where it varies. The effective number of modes of a chirped unit was $1.00$, $5.80$ and $26.53$ at chirp rates $0$, $1$ and $4$, so the spread is the measure of the failure. The eigenvalues are $h_t-ϙ\varphi\pm\lvert\vec h_\Psi+ϙ\vec A\rvert$, and the gap moves from $1.232882$ to $1.503329$ with the quoted vector potential while a scalar potential of $0.4$ leaves it at $1.232882$ and moves the rate by $-0.400000$.
+The symbol is a model of the bracket: faithful where the bracket is constant, absent where it varies. The effective number of modes of a chirped unit was $1.00$, $5.80$ and $26.53$ at chirp rates $0$, $1$ and $4$, so the spread is the measure of the failure. The eigenvalues are $h_t-ϙ\varphi\pm\lvert\vec h_\Psi-q\vec A\rvert$, and the gap moves from $1.232882$ to $1.503329$ with the quoted vector potential while a scalar potential of $0.4$ leaves it at $1.232882$ and moves the rate by $-0.400000$.
 
 The invariants $\vec\pi$ and $\mathcal E$ are gauge invariant and field dependent, so they are not functionals of the symbol: two superpositions of the same two modes share the symbol and have mean mechanical momenta $1.700$ and $2.500$. And the constant background is the exact case: the phase is linear in $\varphi$ and quadratic in $\vec A$ with no higher term, and the symbol is independent of the amplitude to $4.5\times10^{-14}$, so no amplitude–potential cross term can exist.
 
@@ -178,7 +178,7 @@ The invariants $\vec\pi$ and $\mathcal E$ are gauge invariant and field dependen
 | $e^{-i\theta_{\mathrm{pwp}}}$ | The transform's kernel; central, one coordinate |
 | $\hbar\omega+ϙ\varphi$ | The covariant frequency; the invariant $\mathcal E$ on a mode |
 | $\hbar k_\eta+ϙ A_\eta$ | The mechanical momentum; the invariant $\vec\pi$ on a mode |
-| $h_t-ϙ\varphi\pm\lvert\vec h_\Psi+ϙ\vec A\rvert$ | The eigenvalue pair; the translation and the gap |
+| $h_t-ϙ\varphi\pm\lvert\vec h_\Psi-q\vec A\rvert$ | The eigenvalue pair; the translation and the gap |
 | $1.232882$, $1.503329$ | The gap free and with $ϙ\vec A=(0.35,0.25,0)$ |
 | $1.00$, $5.64$, $26.20$ | Effective mode counts of a chirped unit at rates $0$, $1$, $4$ |
 | $1.700$, $2.500$ | Mean mechanical momenta of two superpositions of the same two modes |

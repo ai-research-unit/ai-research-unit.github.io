@@ -87,7 +87,7 @@ so the interaction is a term linear in the potential multiplying the free phase 
 
 $$
 S_{\mathrm{central}}=\int\mathrm{d}^{4}x\;\Bigl\{\bigl(\partial_{r'_t}r\bigr)^{2}-\lvert\nabla r\rvert^{2}
-+\frac{\rho_{\mathrm{num}}}{\hbar^{2}}\Bigl[\bigl(\partial_{r'_t}S_{\tilde\Xi}-ϙ a'_t\bigr)^{2}-\bigl\lvert\nabla S_{\tilde\Xi}+ϙ\vec A\bigr\rvert^{2}\Bigr]-k_m^{2}\rho_{\mathrm{num}}\Bigr\},
++\frac{\rho_{\mathrm{num}}}{\hbar^{2}}\Bigl[\bigl(\partial_{r'_t}S_{\tilde\Xi}-ϙ a'_t\bigr)^{2}-\bigl\lvert\nabla S_{\tilde\Xi}-q\vec A\bigr\rvert^{2}\Bigr]-k_m^{2}\rho_{\mathrm{num}}\Bigr\},
 $$
 
 which is Madelung's action with the mechanical four-momentum. The free polar article cites Madelung (1927) and Takabayasi (1952) for the $\vec A=0$ case; the coupled case is the standard Madelung action of a charged scalar, and the article does not claim it as new. What the biquaternionic form supplies is the *derivation*: the action is not postulated as a hydrodynamic functional but obtained by substituting the word into the element action, so the two functions are the field's scale and the field's phase and not auxiliary variables.
@@ -95,14 +95,14 @@ which is Madelung's action with the mechanical four-momentum. The free polar art
 **The equations.** Varying $\theta_{\mathrm{pha}}$ — equivalently $S_{\tilde\Xi}$ — gives
 
 $$
-\nabla\cdot\Bigl(\rho_{\mathrm{num}}\bigl(\nabla S_{\tilde\Xi}+ϙ\vec A\bigr)\Bigr)
+\nabla\cdot\Bigl(\rho_{\mathrm{num}}\bigl(\nabla S_{\tilde\Xi}-q\vec A\bigr)\Bigr)
 -\frac{\partial}{\partial r'_t}\Bigl(\rho_{\mathrm{num}}\bigl(\partial_{r'_t}S_{\tilde\Xi}-ϙ a'_t\bigr)\Bigr)=0,
 $$
 
 which is the transport equation; varying $r$ gives
 
 $$
-\bigl(\partial_{r'_t}S_{\tilde\Xi}-ϙa'_t\bigr)^{2}-\bigl\lvert\nabla S_{\tilde\Xi}+ϙ\vec A\bigr\rvert^{2}
+\bigl(\partial_{r'_t}S_{\tilde\Xi}-ϙa'_t\bigr)^{2}-\bigl\lvert\nabla S_{\tilde\Xi}-q\vec A\bigr\rvert^{2}
 =m^{2}c^{2}-\hbar^{2}\frac{\Box_\Phi r}{r},
 $$
 
@@ -130,22 +130,22 @@ with $E=-\hbar c\,\partial_{r'_t}\theta_{\mathrm{pha}}$, which is the free polar
 
 **The sign.** On the negative-frequency branch $E$ is negative, the bracket can change sign where the potential is large, and the charge density follows. So the potential shifts the boundary between the two signs but does not remove the sign change; the free article's two defects are one defect, and the coupling does not address it. The positive definiteness of $\rho_{\mathrm{num}}$ is a statement about the number density and not about the charge.
 
-**The gauge invariance.** Under $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+ϙ\Lambda/\hbar$ and $A_\mu\mapsto A_\mu-\partial_\mu\Lambda$, the bracket $\partial_{r'_t}S_{\tilde\Xi}-ϙa'_t$ is invariant, the bracket $\nabla S_{\tilde\Xi}+ϙ\vec A$ is invariant, and the charge is invariant. The invariance is a two-line computation in the chart, and it is the same statement as the element companion's cancellation between the two terms of a bilinear. The chart's version is the sharper one for the charge, because the charge is one product and the cancellation is inside one bracket.
+**The gauge invariance.** Under $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+ϙ\Lambda/\hbar$ and $A_\mu\mapsto A_\mu-\partial_\mu\Lambda$, the bracket $\partial_{r'_t}S_{\tilde\Xi}-ϙa'_t$ is invariant, the bracket $\nabla S_{\tilde\Xi}-q\vec A$ is invariant, and the charge is invariant. The invariance is a two-line computation in the chart, and it is the same statement as the element companion's cancellation between the two terms of a bilinear. The chart's version is the sharper one for the charge, because the charge is one product and the cancellation is inside one bracket.
 
 **What the pairing of the two branches gives.** Complex conjugation sends $\theta_{\mathrm{pha}}\to-\theta_{\mathrm{pha}}$ and leaves the connection alone; the charge changes sign and the action is unchanged, because the action is even in $\partial\theta$ except for the linear interaction term, and that term changes sign with the phase. So the conjugate branch is the antiparticle's chart, with the opposite charge and the same mass shell, and the potential's contribution to the charge reverses with it. The statement is the free article's, and the coupling's only addition is that the potential enters the charge.
 
 ## The Vorticity and the Flux
 
-**The action's statement.** The chart's current is $\vec j_{\mathrm{mech}}=\frac{\rho_{\mathrm{num}}}{m}(\nabla S_{\tilde\Xi}+ϙ\vec A)$, and its vorticity is the curl of a gradient plus the curl of the potential. Varying the action in the phase gives the transport equation, and the transport equation is the statement that this current is divergenceless; so the action knows the current and not its curl. The curl is a consequence of the current's definition and not of the equation:
+**The action's statement.** The chart's current is $\vec j_{\mathrm{mech}}=\frac{\rho_{\mathrm{num}}}{m}(\nabla S_{\tilde\Xi}-q\vec A)$, and its vorticity is the curl of a gradient plus the curl of the potential. Varying the action in the phase gives the transport equation, and the transport equation is the statement that this current is divergenceless; so the action knows the current and not its curl. The curl is a consequence of the current's definition and not of the equation:
 
 $$
-\nabla\times\bigl(\nabla S_{\tilde\Xi}+ϙ\vec A\bigr)=ϙ\vec B .
+\nabla\times\bigl(\nabla S_{\tilde\Xi}-q\vec A\bigr)=ϙ\vec B .
 $$
 
 **The circulation.** Integrating along a closed loop,
 
 $$
-\oint\bigl(\nabla S_{\tilde\Xi}+ϙ\vec A\bigr)\cdot\mathrm{d}\vec l=2\pi\hbar\,n+ϙ\Phi_B ,
+\oint\bigl(\nabla S_{\tilde\Xi}-q\vec A\bigr)\cdot\mathrm{d}\vec l=2\pi\hbar\,n+ϙ\Phi_B ,
 $$
 
 with $n$ the winding of the phase and $\Phi_B$ the flux enclosed. So the mechanical circulation is quantized up to the flux, and the chart's exact statement of the Aharonov–Bohm structure is that the flux enters the phase's bookkeeping and not the field's.
@@ -210,7 +210,7 @@ The connection's additive term is real in the temporal slot and central imaginar
 
 $$
 S_{\mathrm{central}}=\int\mathrm{d}^{4}x\;\Bigl\{-(\partial_{r'_t}r)^{2}+\lvert\nabla r\rvert^{2}
-+\frac{\rho_{\mathrm{num}}}{\hbar^{2}}\bigl[(\partial_{r'_t}S_{\tilde\Xi}-ϙa'_t)^{2}-\lvert\nabla S_{\tilde\Xi}+ϙ\vec A\rvert^{2}\bigr]-k_m^{2}\rho_{\mathrm{num}}\Bigr\},
++\frac{\rho_{\mathrm{num}}}{\hbar^{2}}\bigl[(\partial_{r'_t}S_{\tilde\Xi}-ϙa'_t)^{2}-\lvert\nabla S_{\tilde\Xi}-q\vec A\rvert^{2}\bigr]-k_m^{2}\rho_{\mathrm{num}}\Bigr\},
 $$
 
 and its two equations are the transport equation and the amplitude equation of the polar companion. The interaction is a linear term in the potential times the free phase rate plus a quadratic term with no phase, and the quadratic term is what gauge invariance requires. The kinetic matrix's rank is unchanged, so no constraint appears and no multiplier is needed; the eight-parameter chart's exactness by the invertible Jacobian is the free article's and survives. The vorticity of the mechanical current is $ϙ\vec B$ and its circulation is $2\pi\hbar n+ϙ\Phi_B$.
@@ -228,9 +228,9 @@ and its two equations are the transport equation and the amplitude equation of t
 | $r^{2}\cosh\theta_{\mathrm{rpd}}=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$ | The frame density |
 | $\tilde A_\Phi=i a'_t e_t+\vec A$ | The connection; $a'_t,\vec A$ real |
 | $ϙ$ | The coupling |
-| $\partial_{r'_t}S_{\tilde\Xi}-ϙa'_t$, $\nabla S_{\tilde\Xi}+ϙ\vec A$ | The mechanical four-momentum |
+| $\partial_{r'_t}S_{\tilde\Xi}-ϙa'_t$, $\nabla S_{\tilde\Xi}-q\vec A$ | The mechanical four-momentum |
 | $Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\Box_\Phi r/r$ | The quantum potential; unchanged |
-| $\vec j_{\mathrm{mech}}=\frac{\rho_{\mathrm{num}}}{m}(\nabla S_{\tilde\Xi}+ϙ\vec A)$ | The mechanical current; $\nabla\times=\varrho\vec B$ |
+| $\vec j_{\mathrm{mech}}=\frac{\rho_{\mathrm{num}}}{m}(\nabla S_{\tilde\Xi}-q\vec A)$ | The mechanical current; $\nabla\times=\varrho\vec B$ |
 | $2\pi\hbar n+ϙ\Phi_B$ | The mechanical circulation |
 | $k_m=mc/\hbar$ | The mass wave number |
 

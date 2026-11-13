@@ -86,7 +86,7 @@ $$
 \tilde K_\Phi=\tilde K_{\Phi,\mathrm{gco}}-\frac{ϙ}{\hbar}\tilde A_\Phi .
 $$
 
-**In one sentence: the boost in the word is the one the covariant wavevector names, so the velocity is kinetic and the potential sits entirely in the canonical wavevector.** The classical statement is $\vec p_{\mathrm{kin}}=\vec p_{\mathrm{can}}+ϙ\vec A$; the chart's statement is that the two wavevectors differ by one element and that the mass-shell identity is applied to the second.
+**In one sentence: the boost in the word is the one the covariant wavevector names, so the velocity is kinetic and the potential sits entirely in the canonical wavevector.** The classical statement is $\vec p_{\mathrm{kin}}=\vec p_{\mathrm{can}}-q\vec A$; the chart's statement is that the two wavevectors differ by one element and that the mass-shell identity is applied to the second.
 
 **The velocity is a unit for every field, and this is where the spin fluid parts company with the scalar one.** Because the boost is a unit by construction and the density is a separate factor,
 
@@ -100,7 +100,7 @@ and the reason is that the velocity is not the momentum over the mass but the fr
 **The mass shell in canonical components is the translated hyperboloid.** Expanding the identity,
 
 $$
-\Bigl(\frac{E+ϙcA_t}{\hbar c}\Bigr)^{2}-\Bigl|\frac{\vec p+ϙ\vec A}{\hbar}\Bigr|^{2}=-k_m^{2},
+\Bigl(\frac{E+ϙcA_t}{\hbar c}\Bigr)^{2}-\Bigl|\frac{\vec p-q\vec A}{\hbar}\Bigr|^{2}=-k_m^{2},
 $$
 
 so the radius is $k_m$ and the potential moves the centre: a constant potential shifts every level and opens no gap. **The polar reason is one line**: a shift of a variable cannot change a radius. The fluid reason is equally short: a shift of the momentum cannot change the frame.
@@ -193,7 +193,7 @@ which is the density times the velocity and nothing else. The Gordon decompositi
 $$
 J^\mu=J^\mu_{\mathrm{conv}}+J^\mu_{\mathrm{mag}},
 \qquad
-J^\mu_{\mathrm{mag}}=\partial_\nu\bigl(\text{the spin bilinear}\bigr)^{\nu\mu},
+J_{\mathrm{mag},\mu}=\sum_\nu\partial_\nu\bigl(\text{the spin bilinear}\bigr)_{\nu\mu},
 $$
 
 and the second is conserved by antisymmetry alone and carries no total charge.
@@ -209,7 +209,7 @@ and the second is conserved by antisymmetry alone and carries no total charge.
 **The coupling adds a force and no torque, and the two statements have different reasons.** The momentum balance of the free article is that the divergence of the stress is the divergence of the spin's antisymmetric part. With the coupling it is
 
 $$
-\partial_\nu T^{\mu\nu}=-ϙF^{\mu\nu}J_\nu+(\text{the free article's spin term}),
+\sum_\nu\partial_\nu T_{\mu\nu}=-ϙ\sum_\nu F_{\mu\nu}J_\nu+(\text{the free article's spin term}),
 $$
 
 so the field acts on the charge current and the spin term is the free one's. **The force is longitudinal in the sense that it acts where the charge flows; the torque is the antisymmetric part of the stress and the field has no term in it**, because a torque would have to be written in the rotor bracket and the connection cannot write there.
@@ -244,7 +244,7 @@ so the field acts on the charge current and the spin term is the free one's. **T
 8. **The loop invariant is a Lorentz transformation times a phase.** Nothing about it is quantised, and the scalar's $h/m$ is the central factor of the transformation.
 9. **The Gordon split survives.** The convection part is the chart's current; the bound magnetisation current has no explicit dependence on the connection.
 10. **The spin direction is gauge invariant and coupling-blind.** $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$; the chart shows no rotor torque, and the Larmor precession is second order, through the frame.
-11. **The coupling adds a force and not a torque.** $\partial_\nu T^{\mu\nu}=-ϙF^{\mu\nu}J_\nu+$ the free article's spin term, and the second is unchanged.
+11. **The coupling adds a force and not a torque.** $\sum_\nu\partial_\nu T_{\mu\nu}=-ϙ\sum_\nu F_{\mu\nu}J_\nu+$ the free article's spin term, and the second is unchanged.
 12. **The degenerate set is $r=0$ and the closure is still underdetermined.** The charge does not supply the missing spin-transport law, and the reason is that the missing law lives in the bracket the connection cannot reach.
 
 ## The Three Charged Fluids
@@ -307,7 +307,7 @@ The velocity is the kinetic one: the boost is named by the covariant wavevector,
 
 The vorticity is the frame's logarithmic derivative and contains no connection. Its proper part is rank two for every solution, and its raw derivative reaches rank four through the acceleration; it is not $ϙF/m$, and the sum of the two is a two-form of a different kind. It is closed by Maurer–Cartan flatness and obeys no transport law.
 
-The loop invariant is a Lorentz transformation times a phase, and nothing about it is quantised. The Gordon split survives, and the bound magnetisation current has no explicit dependence on the connection. The coupling adds a force and no torque: $\partial_\nu T^{\mu\nu}=ϙF^{\mu\nu}J_\nu+$ the free spin term.
+The loop invariant is a Lorentz transformation times a phase, and nothing about it is quantised. The Gordon split survives, and the bound magnetisation current has no explicit dependence on the connection. The coupling adds a force and no torque: $\sum_\nu\partial_\nu T_{\mu\nu}=ϙ\sum_\nu F_{\mu\nu}J_\nu+$ the free spin term.
 
 The spin direction is gauge invariant and coupling-blind, and the Larmor precession is second order, through the frame. The free article's three open items — no vorticity transport, no closure, no spin dynamics in a background — survive, and the charge does not close them.
 

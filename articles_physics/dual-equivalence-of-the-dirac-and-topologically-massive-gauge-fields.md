@@ -126,7 +126,7 @@ $$
 $$
 and substituting back returns the Dirac Lagrangian, now with $A_\mu=0$ and $G_\mu=G^\mu-j_\mu\xi$. Varying $G_\nu$ gives
 $$
-(m-a)G^\mu=\tfrac{i}{2}F_{\lambda\nu}\check c^{*\nu\lambda\mu}-i\,p^{\mu\nu}_+\partial\xi^*/\partial x_\nu ,
+(m-a)G_\mu=\tfrac{i}{2}\sum_\nu F_{\lambda\nu}\check c^{*}_{\nu\lambda\mu}-i\sum_\nu p_{+,\mu\nu}\,\partial\xi^*/\partial x_\nu ,
 $$
 and substituting this back leaves
 $$
@@ -135,7 +135,7 @@ $$
 &-\tfrac{1}{2(m-a)}\sum_{\mu,\nu,\lambda}\epsilon_\mu\epsilon_\nu\epsilon_\lambda\bigl(\partial\xi/\partial x_\mu\bigr)\check c_{\mu\nu\lambda}F_{\nu\lambda}+\text{(scalar sector)}+\text{c.c.}+\partial Z_2^\mu/\partial x_\mu .
 \end{aligned}
 $$
-The abbreviation *scalar sector* stands for the source's two terms in $\xi$ alone, $\tfrac{1}{2(m-a)}\partial\xi/\partial x_\mu\,p^{\mu\nu}_+\partial\xi^*/\partial x_\nu$ and $\tfrac i2\xi^*j^\mu\tilde\nabla^{-a}_\mu\xi$, which the elimination carries through unchanged; the potential $B$ is in the axial gauge $B_\nu j^\nu=0$. On the spin manifold, where the fields depend on the three coordinates of the slice orthogonal to $j$ and $j^\nu\partial B_\mu/\partial x_\nu=j^\nu\partial\xi/\partial x_\nu=0$, and at $a=0$, the two mixing terms — the $B^*\check cF$ term at the end of the first line and the $(\partial\xi)\check cF$ term that opens the second — combine into a surface term, and the Lagrangian reduces to
+The abbreviation *scalar sector* stands for the source's two terms in $\xi$ alone, $\tfrac{1}{2(m-a)}\sum_{\mu,\nu}\partial\xi/\partial x_\mu\,p_{+,\mu\nu}\,\partial\xi^*/\partial x_\nu$ and $\tfrac i2\sum_\mu\xi^*j_\mu\tilde\nabla^{-a}_\mu\xi$, which the elimination carries through unchanged; the potential $B$ is in the axial gauge $\sum_\nu B_\nu j_\nu=0$. On the spin manifold, where the fields depend on the three coordinates of the slice orthogonal to $j$ and $\sum_\nu j_\nu\partial B_\mu/\partial x_\nu=\sum_\nu j_\nu\partial\xi/\partial x_\nu=0$, and at $a=0$, the two mixing terms — the $B^*\check cF$ term at the end of the first line and the $(\partial\xi)\check cF$ term that opens the second — combine into a surface term, and the Lagrangian reduces to
 $$
 \boxed{\;\mathcal{L}_G=-\tfrac{1}{4m}\sum_{\mu,\lambda}\epsilon_\mu\epsilon_\lambda F_{\mu\lambda}F_{\mu\lambda}+\tfrac14\sum_{\mu,\nu,\lambda}\epsilon_\mu\epsilon_\nu\epsilon_\lambda\,\check\varepsilon_{\nu\mu\lambda}\,B^*_\nu F_{\mu\lambda}+\text{(scalar sector)}+\text{c.c.}\;}
 $$
@@ -190,7 +190,7 @@ $$
 is not antisymmetric. It splits into a symmetric and an antisymmetric part, $H_{\mu\nu}=H_{(\mu\nu)}+H_{[\mu\nu]}$, and the two parts have different characters:
 $$
 H_{(\mu\nu)}=-\xi^*\epsilon_\mu\delta_{\mu\nu},\qquad
-H_{[\mu\nu]}=-\tfrac{i}{2}\sum_{\lambda,\rho}\varepsilon_{\mu\nu}{}^{\lambda\rho}\,H_{[\lambda\rho]},
+H_{[\mu\nu]}=-\tfrac{i}{2}\sum_{\lambda,\rho}\varepsilon_{\mu\nu\lambda\rho}\,H_{[\lambda\rho]},
 \qquad \xi^*=G^*\cdot j .
 $$
 The symmetric part is pure trace: it is the signed scalar $\xi^*$ times the diagonal weight, $\epsilon_\mu\delta_{\mu\nu}$ with no sum on $\mu$, and nothing else. The weight enters there with no other tensor. The antisymmetric part is **anti-self-dual**. The symbol carries two lower and two upper indices, because $\varepsilon_{\mu\nu\lambda\rho}H_{[\lambda\rho]}$ with all four indices down is not the Hodge dual under the weighted pairing; with the split the identity is closed on $H_{[\mu\nu]}$ itself.

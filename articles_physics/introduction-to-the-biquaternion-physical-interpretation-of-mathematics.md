@@ -112,7 +112,7 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 - [The Polarized Module of the Biquaternion Algebra](../articles_maths/the-polarized-module-of-the-biquaternion-algebra.html)
 - [The Category of Modules](../articles_maths/the-category-of-modules.html)
 - [The Unpolarized Module of the Biquaternion Algebra](../articles_maths/the-unpolarized-module-of-the-biquaternion-algebra.html)
-- [Angular Momentum and Spin in the Biquaternion Algebra](../articles_maths/angular-momentum-and-spin-in-the-biquaternion-algebra.html)
+- [Spin and the Three Elementary Carriers in the Biquaternion Algebra](../articles_maths/spin-and-the-three-elementary-carriers-in-the-biquaternion-algebra.html)
 
 #### The Element
 

@@ -2,15 +2,15 @@
 
 ## Introduction
 
-**The block has two charts and each has a domain.** The fluid chart reads a field $\tilde\Xi(X)$ as a scale, a phase, a boost and a rotor, and it fails where the value is a zero divisor, $N(\tilde\Xi)=0$. The Fourier chart reads a mode by its label $\tilde K_\Phi$ and writes a propagator, and it fails where the symbol has no inverse. **These are two failures in two spaces, and the spaces are the reason the comparison needs care.** The value cone is a set of fields at an event and the pole set a set of labels; they are not subsets of any one space, so neither "disjoint" nor "equal" is a set-theoretic statement about the pair. **What is true is sharper and made of two separate facts**: for $k_m\neq0$ no null label lies on the pole set, and at $k_m=0$ the pole set *is* the label cone. The two failures are then joined not by an intersection but by the containment proved in §*One Factorisation, Two Failures*, which is a statement about the kernel rather than about the label. This article is about the one parameter value at which that join exists.
+**This article separates two statements about mass that are easy to run together, and the earlier version of this article ran them together.** The first is about a fluid that exists. The second is about what is left when the fluid's own variables have gone to zero or to infinity. **They are not the same statement, and the difference is not a matter of emphasis: in the first the fluid equations hold everywhere, and in the second there is no fluid at all.**
 
-**The parameter is the mass, and it is the only one.** The pole set is the level set $N(\tilde K_\Phi)=-k_m^{2}$ of the label's norm and the label's null cone is the level set $0$; the two are level sets spaced by the value $k_m^{2}$, not displaced from one another, and they coincide exactly at $k_m=0$. **The mass's role here is neither a field nor a coordinate**: it enters the scalar symbol explicitly and it enters the pole set explicitly, but in this article it does no work except to fix the spacing of the two level sets. **It is the number that decides whether the two failures can be met at once**, and the massless fluid is the case where that number is zero.
+**At every positive mass the fluid is fully defined.** The four-factor word exists because every value has a nonzero norm; the density is the field's own scale, $\rho_{\mathrm{num}}=r^{2}$; the four-velocity is a unit at a mode and departs from the unit by $2Q_{\mathrm{qnt}}/m$ otherwise; the quantum potential, the quantum stress and the acceleration are finite at that $m$; and the first-order symbol is invertible. **Nothing in that regime is a limit and nothing in it is singular**, and no section of this article changes any of it.
 
-**The claim to be examined is that at that corner both charts fail on one and the same wave.** The claim is right and it needs a proof, not a sentence: what makes the two failures one is that **the kernel of the symbol, at a null label, is a right ideal whose every element lies on the value cone.** The set that survives the label chart's failure is a subset of the set on which the value chart fails. That containment is the theorem of this article, and it is why the corner is inhabited rather than empty.
+**At zero mass, on the label cone, the fluid description stops.** The word has no value, the logarithm does not exist, the generator diverges, the inverse does not exist, and the density, the quantum potential and the stress are either zero or divergent there. **What remains is a direction, an intensity and the sign of the energy**: a null current, not a fluid. **Calling that object a fluid at zero density is a manner of speaking, and the earlier version of this article used it as though the cone were an inhabited state of the fluid.**
 
-**Two corrections come with it, and both are owed to the earlier article.** First, "one wave" is one *class*. At a given null label the kernel is four real dimensional — two complex — so the solutions at that label are a family and not a single wave; and the family is chiral, in the sense that the mirror label annihilates the mirror idempotent and each label annihilates only its own. Second, the earlier article's sentence that "the symbol is a non-zero zero divisor, left multiplication by it has rank four of eight" is true at the first-order rung and false at the scalar one: the scalar symbol is a single number, so at $k_m=0$ on the cone it vanishes outright and the rank lost is eight of eight. **The corner is one place, and what each rung loses there is the rung's own business.**
+**Between the two regimes the passage is a limit, and the limit can be counted.** Two families are involved and they approach two different sets: a four-momentum, whose invariant mass $m^{2}c^{2}$ vanishes as its speed reaches $c$, and a field, whose density does not move while its quantum layer diverges as $1/m$. **Both counts are made of values of a fluid that exists at that mass**, which is what distinguishes this article's subject from a fluid on the cone.
 
-**What this article adds to the block.** The two integrals were compared rung by rung and the two cones separated; the massless limit was taken as a boundary value of the polar word; the cone was described as the wall of invertibility. **None of those states the containment.** Here it is stated, proved from the multiplicativity of $N$, and checked numerically: the surviving amplitudes are null, so the two charts fail on one object because that object is one factorisation. The vocabulary is also fixed: the corpus already uses "one-sided" for the Dirac chiral pair, so the wave of this article is the **null wave**, not the one-sided one.
+**What is proved here** is that at $k_m=0$ the label's null cone and the pole set are one level set, and that the two charts' failures are one object because the kernel of a null symbol is a right ideal every element of which has zero norm. **The containment is the theorem; the approach is its physical reading; the absence of a fluid at the cone is its consequence.**
 
 ## Conventions and Notation
 
@@ -34,7 +34,9 @@ which is the single number the propagator inverts, and which equals $-N(\tilde K
 
 The first-order rung has the algebra-valued symbol $\Sigma(\tilde K_\Phi)$, an element of the algebra to be left-multiplied. **For the massless case $\Sigma(\tilde K_\Phi)=\tilde K_\Phi$ and the equation is the Weyl one.** For the massive case this article evaluates nothing: the only property used is that the symbol is invertible wherever the label is off the pole set, and **the rung table of §*What Each Rung Loses* records that property and no formula**. Stating the massive symbol in closed form would require committing to a chiral convention that the corner does not test, and the corner is the only case examined here. **The distinction matters at the corner and is the subject of §*What Each Rung Loses*.**
 
-**The null label and the projector.** A null label along $\vec e_z$ is $\tilde K_\Phi=k\bigl(ie_t+\vec e_z\bigr)$ with $k\neq0$ real, whose norm is $N=-k^{2}+k^{2}=0$. The projector $\tilde\Pi=\tfrac12\bigl(e_t+i\vec e_z\bigr)$ and $\tilde\Pi_{-}=\tfrac12\bigl(e_t-i\vec e_z\bigr)$. Both are **idempotent**, $\tilde\Pi^{2}=\tilde\Pi$, both have $N(\tilde\Pi)=0$, and both have Euclidean size $\tfrac12$. **They are the two helicities of a null direction, and they are the simplest nonzero elements of the value cone.**
+**The null label and the projector.** The only spatial axis this article uses is $\vec u$, a unit real pure quaternion, and it is **the direction of the null momentum and not a choice of notation**: for the physical family $\vec u=-\vec u_p$, with $\vec u_p=\vec k_\Phi/\lvert\vec k_\Phi\rvert$. A null label along it is $\tilde K_\Phi=k\bigl(ie_t+\vec u\bigr)$ with $k\neq0$ real, whose norm is $N=-k^{2}+k^{2}=0$. The projector $\tilde\Pi=\tfrac12\bigl(e_t+i\vec u\bigr)$ and $\tilde\Pi_{-}=\tfrac12\bigl(e_t-i\vec u\bigr)$. Both are **idempotent**, $\tilde\Pi^{2}=\tilde\Pi$, both have $N(\tilde\Pi)=0$, and both have Euclidean size $\tfrac12$. **They are the two helicities of a null direction, and they are the simplest nonzero elements of the value cone.**
+
+**Why the axis is named and not written as a basis unit.** Every identity below is built from $e_t$, from $\vec u$ and from the two relations $\vec u^{2}=-e_t$ and $e_t\vec u=\vec u e_t=\vec u$, which hold for **every** unit real $\vec u$. Under the automorphism $u\mapsto sus^{-1}$ for a unit versor $s$ each identity therefore returns itself with $\vec u$ replaced, so none of them privileges a spatial direction. **A display that wrote the same formulas with an unmarked basis unit would state a fact about the page and not about the algebra**, and the test applied here is the one in [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html) §*The Test Is Covariance*. The direction is the momentum's, it is carried by an object of the sentence, and the reader can rotate it.
 
 **Units and conventions.** All statements are algebraic and hold at one event or at one label; none is an equation of motion. **No claim is made that a massless field of Nature is a null wave**; the conditional is examined, not the physics.
 
@@ -77,9 +79,106 @@ $$
 
 **The last row is the point of the table.** A label on the cone with a nonzero mass has an invertible symbol: the label chart does not fail there at all. **The cone is where the label chart fails only when the mass is zero**, and the failure of the value chart has nothing to do with the label, so the coincidence of the two is a property of one parameter value and not of the algebra.
 
+## The Two Families That Approach Two Different Sets
+
+**"Massless" names two different things in this block, and the earlier version of this article ran them together.** The first is a four-momentum whose invariant mass has gone to zero. The second is a field whose equation has lost its mass term. **They approach different sets, they carry different fluid data, and only the first has a density that vanishes.**
+
+| the family | family one: the four-momentum | family two: the field |
+| --- | --- | --- |
+| what is varied | $m$, at fixed energy $E$ | $m$, at fixed density and fixed shape |
+| the element | $\tilde P_\Phi$, with $r=mc$ | $\tilde\Xi$, with $r$ the field's own scale |
+| the set it approaches | the label cone, since $N(\tilde P_\Phi)=-m^{2}c^{2}\to0$ | none: $N(\tilde\Xi)$ does not contain $m$ |
+| $\rho_{\mathrm{num}}$ | $m^{2}c^{2}\to0$ | fixed by the field |
+| $\gamma=E/(mc^{2})$ | $\to\infty$ | $\to\infty$ |
+| $Q_{\mathrm{qnt}}$ | $\propto1/m$ | $\propto1/m$ |
+| what the fluid loses | the rest frame | the quantum layer |
+
+**The fourth row is the correction the reader is owed.** The field does not thin as its mass vanishes: $\rho_{\mathrm{num}}=r^{2}$ is the field's own scale, and the mass is a parameter of the equation and not of the value. **A fixed field keeps its density at every mass**, and what the vanishing mass destroys is the quantum layer, not the density.
+
+### The Momentum's Approach, and the Frame That Pays
+
+**Family one at fixed energy, with $c=1$.** Every row is a momentum at the mass it names, and no row is a limit:
+
+| $m$ | $\lvert N(\tilde P_\Phi)\rvert=m^{2}$ | $1/\lvert N\rvert$ | $\gamma=E/m$ | $\lvert\vec v\rvert/c$ |
+| --- | --- | --- | --- | --- |
+| $1$ | $1$ | $1$ | $1$ | $0$ |
+| $0.3$ | $0.09$ | $11.111$ | $3.333$ | $0.953939$ |
+| $0.1$ | $0.01$ | $100$ | $10$ | $0.994987$ |
+| $0.01$ | $10^{-4}$ | $10^{4}$ | $100$ | $0.999950$ |
+
+**The columns are one fact read four times**: the invariant mass squared, its reciprocal, the frame factor that pays for it, and the speed that follows. **The density of this family is not a number of anything**: $\lvert N(\tilde P_\Phi)\rvert=m^{2}c^{2}$ is the invariant mass, and its vanishing is the statement that there is no rest frame, not that a medium has emptied.
+
+**The speed rises from below and the rise is a square root.** At fixed energy, $\lvert\vec v\rvert/c=\sqrt{1-m^{2}c^{4}/E^{2}}$, which is $0$ at $m=E/c^{2}$, $0.995$ at a tenth of it and $0.99995$ at a hundredth. **The last decade of mass is the only one in which the speed is measurably below $c$**, so the corner is not a place a massive momentum visits; it is a limit it recedes towards.
+
+### The Field's Approach, and the Quantum Layer
+
+**Family two holds the field fixed and varies the mass, and the mass appears in exactly one place: as $1/m$ in the quantum potential.** Since $\Box_\Phi r/r$ is a functional of the shape alone,
+
+$$
+Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\frac{\Box_\Phi r}{r}\ \propto\ \frac{1}{m},
+\qquad
+p_{\mathrm{qnt}}=\rho_{\mathrm{num}}Q_{\mathrm{qnt}}\ \propto\ \frac{1}{m},
+$$
+
+and the quantum stress $\sigma^{Q}_{ij}$ carries the same factor. **So the whole quantum layer of a fixed field diverges as the mass vanishes.** Checked on the two-mode superposition $\rho_{\mathrm{num}}=1+\eta^{2}+2\eta\cos(\Delta k\,x)$ with $\eta=0.2$, $\Delta k=1$ and $\hbar=1$:
+
+| $m$ | $Q_{\mathrm{qnt}}$ | $mQ_{\mathrm{qnt}}$ |
+| --- | --- | --- |
+| $1$ | $-0.010417$ | $-0.010417$ |
+| $0.5$ | $-0.020833$ | $-0.010417$ |
+| $0.25$ | $-0.041667$ | $-0.010417$ |
+
+**The third column is constant, and that constancy is the $1/m$ law.** Halving the mass doubles the potential, and no refinement of the arithmetic changes the exponent.
+
+**The force is the exception, and it is the whole of the physics.** The acceleration law is $\mathrm{d}\vec p/\mathrm{d}t=-\gamma^{-1}\nabla Q_{\mathrm{qnt}}$, and $\gamma^{-1}=m/E$ cancels the $1/m$:
+
+$$
+\frac{\mathrm{d}\vec p}{\mathrm{d}t}=\frac{\hbar^{2}}{2E}\,\nabla\Bigl(\frac{\Box_\Phi r}{r}\Bigr),
+$$
+
+**which contains no mass at all.** At fixed energy the rate of momentum transfer is the same at every mass: **the Bohm potential diverges and the Bohm force does not.** A reader who quotes "$Q_{\mathrm{qnt}}$ diverges" as the statement that the guidance fails near the wall has quoted the potential and not the force.
+
+**The velocity defect is the fastest divergence in the block.** Since $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}-2Q_{\mathrm{qnt}}/m$ and $Q_{\mathrm{qnt}}\propto1/m$, the defect grows as $1/m^{2}$: $-0.021$ at $m=1$, $-0.083$ at $m=0.5$ and $-0.333$ at $m=0.25$, a factor four for each halving. **So the velocity is a unit only at a mode, and its departure from the unit is the quantity that fails first.**
+
+### What the Approach Does, Said in Fluid Words
+
+- **The fluid does not thin.** The density is the field's own scale, and the mass does not enter it.
+- **The frame degrades.** The rest frame exists at every $m>0$, costs a factor $\gamma\propto1/m$, and has no value at $m=0$.
+- **The quantum layer goes first.** $Q_{\mathrm{qnt}}$, $p_{\mathrm{qnt}}$ and $\sigma^{Q}_{ij}$ diverge as $1/m$: the Bohm reading needs a mass, and a massless equation supplies none.
+- **The guidance is last and it does not go.** The momentum rate is mass-free, so a massless field still pushes.
+- **The momentum's frame goes, and nothing else about it does.** The direction, the intensity and the sign are untouched.
+
+## At Zero Mass the Fluid Description Stops
+
+**Set $m=0$ and every quantity above stops being a value of a fluid.** Each item, and its reason:
+
+| what stops | why |
+| --- | --- |
+| the density as a fluid density | $\rho_{\mathrm{num}}=0$ at every event, and $\gamma$ has no value, so there is no rest volume to divide by |
+| $Q_{\mathrm{qnt}}$, $p_{\mathrm{qnt}}$, $\sigma^{Q}_{ij}$ | $1/m$ against a fixed field |
+| $\gamma$, and with it the rest frame | $E/(mc^{2})$ at $m=0$ |
+| the three-velocity | its limit is $c$, and there is no frame in which to measure it |
+| the four-factor word | $N=0$ |
+| the logarithm and the generator | $\ln r\to-\infty$ against a divergent rapidity |
+| the inverse | $\tilde Q^{\natural}/N$ at $N=0$ |
+
+**The first row decides the question, and it is not a limit.** At $m=0$ the amplitude is not driven to zero by a path: it is forced into the kernel of a null symbol, and the kernel is the right ideal $\tilde\Pi\mathbb{B}$, every element of which has $N=0$. **The field is null because the equation says so at $m=0$, not because a family of fields shrank.**
+
+**What survives is three data and none of them is a density**: a unit direction $\vec u$, an intensity $\lvert\varkappa\rvert^{2}$, and the sign of the energy. That is the data of a current,
+
+$$
+j^{\mu}=\frac{c}{2}\lvert\varkappa\rvert^{2}\bigl(1,\vec u\bigr),
+$$
+
+**so the object at the corner is a null current, and the word "fluid" is a shorthand that stops being true at $m=0$.** A current has a direction and a flux and no state; a fluid has a state, a stress and a quantum potential, and none of those exists here.
+
+**The earlier version of this article printed a $\gamma$ and a $\lvert\vec v\rvert$ among the quantities of the corner.** Both are family one's, they are limits and not values, and the table has been corrected. **The correction is the whole difference between a fluid approaching a wall and the wall itself.**
+
+**This is neither a failure of the reading nor a defect of the algebra.** $\rho_{\mathrm{num}}$, $Q_{\mathrm{qnt}}$ and $\sigma^{Q}_{ij}$ are functions of $r$ and of $m$, and at the corner $r=0$ and $m=0$: a quantity whose definition divides by either has no value there. **No change of chart produces a fluid where the fluid's own variables have gone**, which is why the corner is examined here as the end of a limit and not as a state.
+
 ## The Label Chart at Zero Mass
 
-**At $k_m=0$ and on the cone, the first-order symbol is a null element, and left multiplication by a null element is not invertible in a measured way.** With $\tilde K_\Phi=ik e_t+k\vec e_z$ for a null label of frequency $k$,
+**At $k_m=0$ and on the cone, the first-order symbol is a null element, and left multiplication by a null element is not invertible in a measured way.** With $\tilde K_\Phi=ik e_t+k\vec u$ for a null label of frequency $k$,
 
 $$
 N(\tilde K_\Phi)=0,\qquad \tilde K_\Phi\neq0,\qquad \operatorname{rank}L_{\tilde K_\Phi}=4\ \text{of}\ 8,
@@ -87,7 +186,7 @@ $$
 
 where $L_{\tilde Q}$ is left multiplication by $\tilde Q$ as a real linear map on the eight real coordinates. **Half the space is annihilated and half is not**, and that is the precise sense in which a null symbol fails: not by vanishing, but by halving.
 
-**The kernel is a right ideal and it is named by an idempotent.** For the label $\tilde K_\Phi=k(ie_t+\vec e_z)$,
+**The kernel is a right ideal and it is named by an idempotent.** For the label $\tilde K_\Phi=k(ie_t+\vec u)$,
 
 $$
 \tilde K_\Phi\tilde\Pi=0,\qquad \tilde K_\Phi\tilde\Pi_{-}=\tilde K_\Phi\neq0,
@@ -167,12 +266,14 @@ $$
 
 | quantity | the null wave |
 | --- | --- |
-| $N(\tilde\Xi(X))$ | $0$ at every event |
+| $N(\tilde\Xi(X))$ | $0$ at every event, forced by the kernel |
 | $\langle\tilde\Xi\rangle_{*}$ | $\tfrac12\lvert\varkappa\rvert^{2}$, constant |
 | $\rho_{\mathrm{num}}$ | $0$ |
 | $j^{0}$ | $\tfrac{c}{2}\lvert\varkappa\rvert^{2}$ |
 | $\gamma$ | no value |
-| $\lvert\vec v\rvert$ | $c$ in the limit |
+| $\lvert\vec v\rvert$ | no value |
+
+**The first four rows are values and the last two are not, and the split is the whole table.** The pair $(\rho_{\mathrm{num}},\langle\tilde\Xi\rangle_{*})$ is defined at the corner, which is why the corner is describable at all; every ratio that divides by $r$ is not, which is why the corner is not a state of the fluid. **The two rows that are not values are family one's, and they were printed here in an earlier version as though they were.**
 
 **The wave does not move its own state, up to the overall phase.** The amplitude is a fixed projector, so every value of the field is that projector up to a phase and a scale: **the only thing that changes along the world line is the phase $e^{i\theta}$**, and a change of phase changes nothing that this article measures, since $N$ and $\langle\cdot\rangle_{*}$ are both invariant under it. That is the algebraic content of a mode with no rest frame.
 
@@ -202,15 +303,15 @@ $$
 
 | label | amplitude | $\tilde K_\Phi\tilde\Xi_0$ |
 | --- | --- | --- |
-| $k(ie_t+\vec e_z)$ | $\tfrac12(e_t+i\vec e_z)$ | $0$ |
-| $k(ie_t-\vec e_z)$ | $\tfrac12(e_t-i\vec e_z)$ | $0$ |
-| $k(ie_t+\vec e_z)$ | $\tfrac12(e_t-i\vec e_z)$ | $=\tilde K_\Phi\neq0$ |
-| $k(ie_t-\vec e_z)$ | $\tfrac12(e_t+i\vec e_z)$ | $=\tilde K_\Phi\neq0$ |
+| $k(ie_t+\vec u)$ | $\tfrac12(e_t+i\vec u)$ | $0$ |
+| $k(ie_t-\vec u)$ | $\tfrac12(e_t-i\vec u)$ | $0$ |
+| $k(ie_t+\vec u)$ | $\tfrac12(e_t-i\vec u)$ | $=\tilde K_\Phi\neq0$ |
+| $k(ie_t-\vec u)$ | $\tfrac12(e_t+i\vec u)$ | $=\tilde K_\Phi\neq0$ |
 
-**The mirror comparison is exact and worth stating as an identity.** Since $\tilde\Pi_{-}=\tfrac12(e_t-i\vec e_z)$,
+**The mirror comparison is exact and worth stating as an identity.** Since $\tilde\Pi_{-}=\tfrac12(e_t-i\vec u)$,
 
 $$
-2ik\,\tilde\Pi_{-}=ik\bigl(e_t-i\vec e_z\bigr)=k\bigl(ie_t+\vec e_z\bigr)=\tilde K_\Phi ,
+2ik\,\tilde\Pi_{-}=ik\bigl(e_t-i\vec u\bigr)=k\bigl(ie_t+\vec u\bigr)=\tilde K_\Phi ,
 $$
 
 so the entry $2ik\tilde\Pi_{-}$ in the earlier sentence is $\tilde K_\Phi$ itself, and the mirror projector passes the symbol through unchanged.
@@ -239,7 +340,11 @@ so the entry $2ik\tilde\Pi_{-}$ in the earlier sentence is $\tilde K_\Phi$ itsel
 
 **The helicities are two and the family is four-dimensional.** Neither count is a physical degeneracy statement; both are dimensions of real vector spaces, computed from the algebra.
 
+**The cone is not a state of the fluid.** Every entry of §*The Two Families That Approach Two Different Sets* is the value of a fluid at the mass it names. The cone has no density per rest volume, no quantum potential and no word, and the object there is a null current. **"Massless fluid" is a shorthand for "the limit of a fluid" and not a name for a thing on the cone.**
+
 ## Summary
+
+**Two statements and one limit.** At every positive mass the fluid exists in full; at zero mass on the cone it does not, and what the corner holds is a null current with a direction, an intensity and a sign. **The mass carries the first into the second, and the passage is a limit and not a value.**
 
 **The two failures are level sets of one function $k_m^{2}$ apart.** The fluid chart fails on the value cone $N(\tilde\Xi)=0$; the Fourier chart fails on the pole set $N(\tilde K_\Phi)=-k_m^{2}$; the mass is the height between them and $k_m=0$ is the one value at which they are one set.
 
@@ -265,8 +370,12 @@ so the entry $2ik\tilde\Pi_{-}$ in the earlier sentence is $\tilde K_\Phi$ itsel
 | $\mathcal N(\tilde K_\Phi)$ | the scalar symbol (script $\mathcal N$), $k_t'^{2}-\lvert\vec k_\Phi\rvert^{2}-k_m^{2}$, equal to $-N-k_m^{2}$ |
 | $\Sigma(\tilde K_\Phi)$ | the algebra-valued symbol of the first-order rung |
 | $L_{\tilde Q}$ | left multiplication by $\tilde Q$ as a real map on eight coordinates |
-| $\tilde\Pi$, $\tilde\Pi_{-}$ | $\tfrac12(e_t\pm i\vec e_z)$, idempotents on the value cone |
+| $\tilde\Pi$, $\tilde\Pi_{-}$ | $\tfrac12(e_t\pm i\vec u)$, idempotents on the value cone |
 | $\varkappa$ | the complex amplitude of the null wave |
+| $\vec u$ | the unit direction of the null momentum, $-\vec u_p$; the only spatial axis used, named so that every statement rotates |
+| $\vec u_p=\vec k_\Phi/\lvert\vec k_\Phi\rvert$ | the direction of the momentum |
+| $\gamma=E/(mc^{2})$ | the time-dilation factor; finite at $m>0$, absent at the cone |
+| $j^{\mu}$ | the current; $\tfrac{c}{2}\lvert\varkappa\rvert^{2}(1,\vec u)$ at the corner |
 | $\rho_{\mathrm{num}}=\lvert N\rvert$ | the proper density, the invariant length over $c$ |
 | $j^{0}=c\langle\tilde\Xi\rangle_{*}$ | the current's time component |
 
@@ -288,21 +397,21 @@ $$
 
 ### The Idempotents and the Annihilation
 
-**Claim.** $\tilde\Pi=\tfrac12(e_t+i\vec e_z)$ satisfies $\tilde\Pi^{2}=\tilde\Pi$, $N(\tilde\Pi)=0$, $\langle\tilde\Pi\rangle_{*}=\tfrac12$, and $\tilde K_\Phi\tilde\Pi=0$ for the null label $\tilde K_\Phi=k(ie_t+\vec e_z)$ with $k\neq0$ real.
+**Claim.** $\tilde\Pi=\tfrac12(e_t+i\vec u)$ satisfies $\tilde\Pi^{2}=\tilde\Pi$, $N(\tilde\Pi)=0$, $\langle\tilde\Pi\rangle_{*}=\tfrac12$, and $\tilde K_\Phi\tilde\Pi=0$ for the null label $\tilde K_\Phi=k(ie_t+\vec u)$ with $k\neq0$ real.
 
 *Proof.* **The square.** Expand term by term, keeping the two cross terms and the two squares separate:
 
 $$
-(e_t+i\vec e_z)^{2}=e_t^{2}+i e_t\vec e_z+i\vec e_z e_t+i^{2}\vec e_z^{2}=e_t+i\vec e_z+i\vec e_z+e_t=2e_t+2i\vec e_z ,
+(e_t+i\vec u)^{2}=e_t^{2}+i e_t\vec u+i\vec u e_t+i^{2}\vec u^{2}=e_t+i\vec u+i\vec u+e_t=2e_t+2i\vec u ,
 $$
 
-using $e_t^{2}=e_t$, $e_t\vec e_z=\vec e_z e_t=\vec e_z$, $\vec e_z^{2}=-e_t$ and therefore $i^{2}\vec e_z^{2}=(-1)(-e_t)=+e_t$. **The sign there is the place an expansion goes wrong**: $i^{2}\vec e_z^{2}$ is $+\vec e_t$ and not $-\vec e_t$, and it is what makes the two $e_t$ terms add rather than cancel. The result is $2(e_t+i\vec e_z)$, so halving gives $\tilde\Pi^{2}=\tilde\Pi$. **The norm** is $N(\tilde\Pi)=\tfrac14\bigl(1^{2}+i^{2}\bigr)=0$ and **the size** is $\tfrac14(1+1)=\tfrac12$. **The annihilation** is the product
+using $e_t^{2}=e_t$, $e_t\vec u=\vec u e_t=\vec u$, $\vec u^{2}=-e_t$ and therefore $i^{2}\vec u^{2}=(-1)(-e_t)=+e_t$. **The sign there is the place an expansion goes wrong**: $i^{2}\vec u^{2}$ is $+\vec e_t$ and not $-\vec e_t$, and it is what makes the two $e_t$ terms add rather than cancel. The result is $2(e_t+i\vec u)$, so halving gives $\tilde\Pi^{2}=\tilde\Pi$. **The norm** is $N(\tilde\Pi)=\tfrac14\bigl(1^{2}+i^{2}\bigr)=0$ and **the size** is $\tfrac14(1+1)=\tfrac12$. **The annihilation** is the product
 
 $$
-(ie_t+\vec e_z)(e_t+i\vec e_z)=ie_t^{2}+i^{2}e_t\vec e_z+\vec e_z e_t+i\vec e_z^{2}=ie_t-\vec e_z+\vec e_z-ie_t=0 ,
+(ie_t+\vec u)(e_t+i\vec u)=ie_t^{2}+i^{2}e_t\vec u+\vec u e_t+i\vec u^{2}=ie_t-\vec u+\vec u-ie_t=0 ,
 $$
 
-using $e_t\vec e_z=\vec e_z$, $\vec e_z e_t=\vec e_z$ and $i^{2}\vec e_z^{2}=(-1)(-e_t)=e_t$. **Every term cancels pairwise and no null condition is used**: the product is zero for the factorisation $k(ie_t+\vec e_z)$ at any $k$, and the label's nullity is what makes that factorisation the label of a massless mode. **The mirror** is $(ie_t+\vec e_z)(e_t-i\vec e_z)=ie_t+\vec e_z+\vec e_z+ie_t=2(ie_t+\vec e_z)$, so $\tilde K_\Phi\tilde\Pi_{-}=\tilde K_\Phi$ and the mirror projector is in the kernel of nothing.
+using $e_t\vec u=\vec u$, $\vec u e_t=\vec u$ and $i^{2}\vec u^{2}=(-1)(-e_t)=e_t$. **Every term cancels pairwise and no null condition is used**: the product is zero for the factorisation $k(ie_t+\vec u)$ at any $k$, and the label's nullity is what makes that factorisation the label of a massless mode. **The mirror** is $(ie_t+\vec u)(e_t-i\vec u)=ie_t+\vec u+\vec u+ie_t=2(ie_t+\vec u)$, so $\tilde K_\Phi\tilde\Pi_{-}=\tilde K_\Phi$ and the mirror projector is in the kernel of nothing.
 
 ### The Containment
 

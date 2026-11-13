@@ -8,7 +8,7 @@
 
 **The second finding is that the Legendre slope is untouched.** $\partial\sigma/\partial\omega=\hbar$ with or without the connection, because the connection does not depend on the frequency. The slope in the four-wavevector's temporal slot is $\hbar c$. **The map from frequency to time is invertible in every coupled case**, and the variational problem is unconstrained.
 
-**The third finding is that the energy is minus the symbol at zero frequency.** For a mode of unit norm, $E=\frac{1}{2m}\lvert\hbar\vec k+ϙ\vec A\rvert^{2}-ϙ\varphi=-\sigma_{\mathrm{gco}}(0,\vec k)$, verified over one hundred draws with zero residual. **The symbol is the action's density, and the energy is that density with the frequency set to zero and the sign flipped**, which is the standard sign of a Lagrangian's Legendre transform.
+**The third finding is that the energy is minus the symbol at zero frequency.** For a mode of unit norm, $E=\frac{1}{2m}\lvert\hbar\vec k-q\vec A\rvert^{2}-ϙ\varphi=-\sigma_{\mathrm{gco}}(0,\vec k)$, verified over one hundred draws with zero residual. **The symbol is the action's density, and the energy is that density with the frequency set to zero and the sign flipped**, which is the standard sign of a Lagrangian's Legendre transform.
 
 **The fourth finding is that the symbol is gauge invariant in the invariant coordinates.** A gauge transformation shifts $\varphi$ and $\vec A$, and the same transformation shifts the frequency and the wave vector of a mode. The two shifts cancel in the symbol, verified to $8.9\times10^{-16}$. **So the symbol is a function of $\mathcal E$ and $\vec\pi$ and not of the four ingredients separately**, and the two slots' opposite signs are exactly what makes the cancellation work.
 
@@ -41,7 +41,7 @@ $$
 =\big\langle\tilde X,\sigma_{\mathrm{gco}}(\omega)\tilde X\big\rangle ,
 $$
 
-because the spatial derivatives vanish on a constant $\tilde X$ and the covariant time derivative becomes a number. **The kernel is the element-form symbol of the companion**, with $\sigma_{\mathrm{gco}}(\omega)=\hbar\omega\,e_t-\tilde H^{\mathrm{gco}}_\Psi$ and $\tilde H^{\mathrm{gco}}_\Psi=(h_t-ϙ\varphi)e_t+i(\vec h_\Psi+ϙ\vec A)$.
+because the spatial derivatives vanish on a constant $\tilde X$ and the covariant time derivative becomes a number. **The kernel is the element-form symbol of the companion**, with $\sigma_{\mathrm{gco}}(\omega)=\hbar\omega\,e_t-\tilde H^{\mathrm{gco}}_\Psi$ and $\tilde H^{\mathrm{gco}}_\Psi=(h_t-ϙ\varphi)e_t+i(\vec h_\Psi-q\vec A)$.
 
 **The operator setting.** With $\tilde\Xi=e^{-i\omega t'+i\vec k_\Phi\cdot\vec r}\tilde X_0$, the covariant spatial derivative becomes the number $ik_\eta+iϙ A_\eta/\hbar$, so
 
@@ -97,7 +97,7 @@ $$
 
 and the identity is exact by construction. **The sign is the Lagrangian's**: a Lagrangian is $T-V$ and the Hamiltonian is $T+V$, so the potential's sign flips and the symbol, which is the Lagrangian's density, carries the minus.
 
-**The operator setting.** With a unit mode, $E=\frac{1}{2m}\lvert\hbar\vec k+ϙ\vec A\rvert^{2}-ϙ\varphi$, and $\sigma_{\mathrm{gco}}(0,\vec k)=ϙ\varphi-\frac{1}{2m}\lvert\hbar\vec k+ϙ\vec A\rvert^{2}$. So $E=-\sigma_{\mathrm{gco}}(0,\vec k)$, verified over one hundred draws with zero residual. **The identity is one line and it fixes the article's sign conventions once.**
+**The operator setting.** With a unit mode, $E=\frac{1}{2m}\lvert\hbar\vec k-q\vec A\rvert^{2}-ϙ\varphi$, and $\sigma_{\mathrm{gco}}(0,\vec k)=ϙ\varphi-\frac{1}{2m}\lvert\hbar\vec k-q\vec A\rvert^{2}$. So $E=-\sigma_{\mathrm{gco}}(0,\vec k)$, verified over one hundred draws with zero residual. **The identity is one line and it fixes the article's sign conventions once.**
 
 **The positivity of the gradient term is visible here.** The energy's first term is a sum of moduli and the second is the potential. **So the energy is bounded below exactly when the potential is**, and the bound is the parent's and not this article's.
 
@@ -119,7 +119,7 @@ $$
 
 **The symbol is invariant.** Substituting the four shifts into $\sigma_{\mathrm{gco}}$ cancels $\partial_{t'}\Gamma$ in the frequency term and $\nabla\Gamma$ in the mechanical momentum, so $\sigma_{\mathrm{gco}}$ is unchanged. **Verified over one hundred draws with constant $\Gamma$: the residual was $8.9\times10^{-16}$.**
 
-**What the invariance says.** The symbol is a function of $\mathcal E=\hbar\omega+ϙ\varphi$ and $\vec\pi=\hbar\vec k+ϙ\vec A$ and of nothing else. **The four ingredients are not independent**, and the symbol's two arguments are the two invariants of the polar companion.
+**What the invariance says.** The symbol is a function of $\mathcal E=\hbar\omega+ϙ\varphi$ and $\vec\pi=\hbar\vec k-q\vec A$ and of nothing else. **The four ingredients are not independent**, and the symbol's two arguments are the two invariants of the polar companion.
 
 **The resolution of the sign.** The frequency shift in the symbol is $+ϙ\varphi/\hbar$ and the mode's frequency shift under a gauge transformation is $-ϙ\partial_{t'}\Gamma/\hbar$. The two signs differ, and they must differ, because $\varphi$ and $\partial_{t'}\Gamma$ enter $\mathcal E$ with the *same* sign while $\omega$ and $\partial_{t'}\Gamma$ enter with opposite signs. **A substitution that gave $\omega\mapsto\omega+ϙ\varphi/\hbar$ with the other sign would break the cancellation**, and that is how the article detects the error rather than asserting the convention.
 
@@ -167,8 +167,8 @@ The symbol is gauge invariant in the invariant coordinates: the four shifts canc
 | --- | --- |
 | $S_\omega[\tilde X]=\int\mathrm{d}t'\,\big\langle\tilde X,\sigma_{\mathrm{gco}}(\omega)\tilde X\big\rangle$ | The coupled action at fixed frequency; constant setting |
 | $\sigma_{\mathrm{gco}}(\omega)=\hbar\omega\,e_t-\tilde H^{\mathrm{gco}}_\Psi$ | The element symbol; the form's kernel |
-| $\sigma_{\mathrm{gco}}(\omega,\vec k)=\hbar\omega+ϙ\varphi-\lvert\hbar\vec k+ϙ\vec A\rvert^{2}/(2m)$ | The scalar symbol; operator setting |
-| $\mathcal E=\hbar\omega+ϙ\varphi$, $\vec\pi=\hbar\vec k+ϙ\vec A$ | The two invariants; the symbol's only arguments |
+| $\sigma_{\mathrm{gco}}(\omega,\vec k)=\hbar\omega+ϙ\varphi-\lvert\hbar\vec k-q\vec A\rvert^{2}/(2m)$ | The scalar symbol; operator setting |
+| $\mathcal E=\hbar\omega+ϙ\varphi$, $\vec\pi=\hbar\vec k-q\vec A$ | The two invariants; the symbol's only arguments |
 | $\omega\mapsto\omega-\frac{ϙ}{\hbar}\partial_{t'}\Gamma$, $\vec k\mapsto\vec k+\frac{ϙ}{\hbar}\nabla\Gamma$ | The mode's gauge shifts; they cancel in the symbol |
 | $E=-\sigma_{\mathrm{gco}}(0,\vec k)$ | The energy as minus the symbol at zero frequency |
 | $\partial\sigma_{\mathrm{gco}}/\partial\omega=\hbar$ | The Legendre slope; unchanged by the coupling |

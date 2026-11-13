@@ -143,7 +143,7 @@ $$
 
 for every constant potential, component by component, exactly. The result agrees with §*The One-Form and the Three Regimes*: a constant potential has zero field strength, its gauge term is a boundary term along every path, and the boundary term is this phase. **The two routes to the statement are independent** — one differentiates the operator, the other sums over paths — and they agree, which is the consistency the two articles owe each other.
 
-**What the phase means.** The exponent is $ϙ(A_t\Delta r'_t+\sum_\eta A_\eta\Delta r_\eta)/\hbar$. Its temporal slot is the energy shift $E\mapsto E+ϙcA_t$ of the coupled equation, written as a phase over the elapsed coordinate time; its spatial slots are the momentum shift $\vec p\mapsto\vec p+ϙ\vec A$, written as a phase over the displacement. **The classical substitution of the element article is one phase in the sum**, and the algebra states it with one sign because the scalar and vector potentials are the two slot types of one element.
+**What the phase means.** The exponent is $ϙ(A_t\Delta r'_t+\sum_\eta A_\eta\Delta r_\eta)/\hbar$. Its temporal slot is the energy shift $E\mapsto E+ϙcA_t$ of the coupled equation, written as a phase over the elapsed coordinate time; its spatial slots are the momentum shift $\vec p\mapsto\vec p-q\vec A$, written as a phase over the displacement. **The classical substitution of the element article is one phase in the sum**, and the algebra states it with one sign because the scalar and vector potentials are the two slot types of one element.
 
 **Three consequences, and each is a statement about the amplitude.** The modulus is unchanged, so a constant potential does not change the weight of any single history and leaves the probability of propagation at fixed endpoints alone. The pole structure in momentum space is translated and not deformed, so the mass shell is the translated hyperboloid of unchanged radius. And the spin transport is unchanged, because the phase is central and commutes with the spin factor's path ordering. **A constant potential is a change of variable on the space of histories and not a force**, and the sum over histories shows the change of variable in one line where the operator shows it in a covariance proof.
 
@@ -154,12 +154,12 @@ for every constant potential, component by component, exactly. The result agrees
 **The stationary phase is the Lorentz path.** Stationarity of $S_0+S_{\mathrm{gco}}$ with respect to the trajectory, with the odd variables integrated out, gives
 
 $$
-\tfrac12\,\eta_{\mu\nu}\ddot R^{\nu}=-ϙ F_{\mu\nu}\dot R^{\nu},
+\tfrac12\sum_\nu\eta_{\mu\nu}\ddot R_\nu=-ϙ\sum_\nu F_{\mu\nu}\dot R_\nu,
 \qquad
 F_{\mu\nu}=\frac{\partial A_\nu}{\partial R_\mu}-\frac{\partial A_\mu}{\partial R_\nu},
 $$
 
-which is the Lorentz equation with the metric raised, $\ddot R^{\mu}=-2ϙ F^{\mu}{}_{\nu}\dot R^{\nu}$. The factor two is the normalisation of the kinetic term, $\tfrac14\sum_\mu\dot R_\mu\dot R_\mu$ rather than $\tfrac12$, and it is the same factor that makes a straight line give $-\langle\tilde R_\Phi-\tilde R_{\Phi,2}\rangle_{\natural}/4T$ in the free kernel.
+which is the Lorentz equation with every index low, $\ddot R_\mu=-2ϙ\sum_\nu F_{\mu\nu}\dot R_\nu$. The factor two is the normalisation of the kinetic term, $\tfrac14\sum_\mu\dot R_\mu\dot R_\mu$ rather than $\tfrac12$, and it is the same factor that makes a straight line give $-\langle\tilde R_\Phi-\tilde R_{\Phi,2}\rangle_{\natural}/4T$ in the free kernel.
 
 **The check distinguishes the coefficient from its half.** On a two-dimensional model with a constant field strength and a Euclidean metric, where the stationary point is a minimum and the comparison is unambiguous, the Euler–Lagrange residual of the path satisfying $\ddot R=-2ϙF\dot R$ falls as $1.7\times10^{-3}$, $4.3\times10^{-4}$, $1.1\times10^{-4}$, $2.7\times10^{-5}$ for ten, twenty, forty and eighty steps, which is second order. The path satisfying $\ddot R=-ϙF\dot R$ keeps a residual of $4.0\times10^{-1}$ at every resolution. The stationary path is the first and not the second, and the Euclidean signature is used for the check only: the equation displayed above is the same algebra in the corpus's metric, and the coefficient two is signature-independent.
 

@@ -23,7 +23,7 @@ The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otim
 The non-relativistic Hamiltonian of a charge $ϙ$ in a vector potential $\vec A(\vec r)$ and a scalar potential $\xi_{\mathrm{scp}}(\vec r)$ is
 
 $$
-H=\left[\frac{1}{2\,m}\left(\vec p-ϙ\vec A\right)^2+ϙ\xi_{\mathrm{scp}}\right]e_t
+H=\left[\frac{1}{2\,m}\left(\vec p-q\vec A\right)^2+ϙ\xi_{\mathrm{scp}}\right]e_t
 =\frac{1}{2\,m}\sum_\eta\tilde\pi_\eta^2 ,
 \qquad
 \tilde\pi_\eta=\left(p_\eta-ϙA_\eta\right)e_t ,

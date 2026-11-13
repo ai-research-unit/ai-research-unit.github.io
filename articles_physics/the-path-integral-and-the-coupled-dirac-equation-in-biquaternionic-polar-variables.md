@@ -116,7 +116,7 @@ $$
 =\frac{\tilde K_{\Phi,\mathrm{gco}}-ik_m}{k_m^{2}+\langle\tilde K_{\Phi,\mathrm{gco}}\rangle_{\natural}},
 $$
 
-with $\langle\tilde K_{\Phi,\mathrm{gco}}\rangle_{\natural}=|\vec\kappa|^{2}-\kappa_t^{2}$ and $\hbar c\kappa_t=E+ϙcA_t$, $\hbar\vec\kappa=\vec p+ϙ\vec A$. This is the polar coupled article's kinetic momentum, and the integral gives it without a separate argument: the shift of the denominator's argument is the shift of the wavevector, and nothing else changes.
+with $\langle\tilde K_{\Phi,\mathrm{gco}}\rangle_{\natural}=|\vec\kappa|^{2}-\kappa_t^{2}$ and $\hbar c\kappa_t=E+ϙcA_t$, $\hbar\vec\kappa=\vec p-q\vec A$. This is the polar coupled article's kinetic momentum, and the integral gives it without a separate argument: the shift of the denominator's argument is the shift of the wavevector, and nothing else changes.
 
 **The boost in the word is named by the covariant wavevector.** On the mass shell $\tilde K_{\Phi,\mathrm{gco}}\tilde K_{\Phi,\mathrm{gco}}^{\natural}=-k_m^{2}$, so the parent's mass-shell proposition gives
 

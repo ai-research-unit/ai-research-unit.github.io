@@ -90,7 +90,7 @@ The four terms have four different algebraic types: a real central scalar; a cen
 $$
 \hbar c\,\kappa_t=E+ϙ c\,a'_t,
 \qquad
-\hbar\vec\kappa=\vec p+ϙ\vec A,
+\hbar\vec\kappa=\vec p-q\vec A,
 $$
 
 with $E=-\hbar c\,\partial\vartheta_{\mathrm{pha}}/\partial r'_t$ and $\vec p=\hbar\nabla\vartheta_{\mathrm{pha}}$ the free readings. The scalar and vector potentials are the two slots of one element, so the two classical substitutions are one substitution and no relative sign can be chosen. That is the coupled Dirac article's statement in the bosonic case, and it holds here for the same reason: the connection is one element and its slots are the algebra's.
@@ -200,7 +200,7 @@ $$
 
 with eight real parameters and the word a bijection onto the N-regular set. The free field's two-factor word is the real slice of this one: the phase and the rotor are the two factors that reality removes and the charge restores, and the norm $\langle\tilde A\rangle_\natural=r^{2}e^{2i\vartheta_{\mathrm{pha}}}$ is the single line that shows it.
 
-The connection is central per slot, so it merges with the scale and the phase brackets and cannot touch the boost or the rotor; the four-momentum shift $\hbar c\kappa_t=E+ϙca'_t$, $\hbar\vec\kappa=\vec p+ϙ\vec A$ is one substitution in one element. The gauge transformation is the translation of $\vartheta_{\mathrm{pha}}$ alone, exact infinitesimally. The equation is second order, the chart exhibits no primary constraint, and that is the difference between this sector and the first-order sectors of the Schrödinger and Dirac companions. The mass term is $r^{2}$ exactly when the rotor is trivial, because the boost is a Lorentz transformation and the rotor is not.
+The connection is central per slot, so it merges with the scale and the phase brackets and cannot touch the boost or the rotor; the four-momentum shift $\hbar c\kappa_t=E+ϙca'_t$, $\hbar\vec\kappa=\vec p-q\vec A$ is one substitution in one element. The gauge transformation is the translation of $\vartheta_{\mathrm{pha}}$ alone, exact infinitesimally. The equation is second order, the chart exhibits no primary constraint, and that is the difference between this sector and the first-order sectors of the Schrödinger and Dirac companions. The mass term is $r^{2}$ exactly when the rotor is trivial, because the boost is a Lorentz transformation and the rotor is not.
 
 ## Summary of Notation
 
@@ -217,7 +217,7 @@ The connection is central per slot, so it merges with the scale and the phase br
 | $\Gamma_\mu=\tilde U^{-1}\partial_\mu\tilde U$, $\rho_\mu=\tilde u^{-1}\partial_\mu\tilde u$ | The frame's two logarithmic derivatives |
 | $\tilde A^{-1}\partial_\mu\tilde A$ | The four brackets: scale, phase, boost, rotor |
 | $\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{ϙ}{\hbar}\tilde A_\Phi$ | Covariant wavevector; the one substitution |
-| $\kappa_t,\vec\kappa$ | Its components; $\hbar c\kappa_t=E+ϙca'_t$, $\hbar\vec\kappa=\vec p+ϙ\vec A$ |
+| $\kappa_t,\vec\kappa$ | Its components; $\hbar c\kappa_t=E+ϙca'_t$, $\hbar\vec\kappa=\vec p-q\vec A$ |
 | $\lambda=\exp(i\vartheta_{\mathrm{gau}})$ | Central gauge unit; $\vartheta_{\mathrm{gau}}=ϙ\Lambda/\hbar$ |
 | $\tilde F$ | Curvature of the connection; traceless, so blind to the constraint |
 | $k_m=mc/\hbar$ | Mass wave number |

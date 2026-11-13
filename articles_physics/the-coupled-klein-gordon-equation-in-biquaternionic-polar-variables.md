@@ -91,7 +91,7 @@ So in the temporal slot the connection adds to the *scale* bracket and in the sp
 $$
 \hbar c\,P_t=E+ϙ c\,a'_t,
 \qquad
-\hbar\vec P=\vec p+ϙ\vec A,
+\hbar\vec P=\vec p-q\vec A,
 \qquad
 E=-\hbar c\,\frac{\partial\theta_{\mathrm{pha}}}{\partial r'_t},
 \quad
@@ -146,12 +146,12 @@ The parenthesis is a central element, so it commutes with $e_t$ and the whole fa
 
 $$
 \boxed{\;
-\bigl(\partial_{r'_t}S_{\tilde\Xi}-ϙ\,a'_t\bigr)^{2}-\bigl\lvert\nabla S_{\tilde\Xi}+ϙ\vec A\bigr\rvert^{2}
+\bigl(\partial_{r'_t}S_{\tilde\Xi}-ϙ\,a'_t\bigr)^{2}-\bigl\lvert\nabla S_{\tilde\Xi}-q\vec A\bigr\rvert^{2}
 =m^{2}c^{2}-\hbar^{2}\frac{\Box_\Phi r}{r}\;}
 $$
 $$
 \boxed{\;
-\nabla\cdot\Bigl(\rho_{\mathrm{num}}\bigl(\nabla S_{\tilde\Xi}+ϙ\vec A\bigr)\Bigr)
+\nabla\cdot\Bigl(\rho_{\mathrm{num}}\bigl(\nabla S_{\tilde\Xi}-q\vec A\bigr)\Bigr)
 -\frac{\partial}{\partial r'_t}\Bigl(\rho_{\mathrm{num}}\bigl(\partial_{r'_t}S_{\tilde\Xi}-ϙ\,a'_t\bigr)\Bigr)=0\;}
 $$
 
@@ -160,19 +160,19 @@ with $\rho_{\mathrm{num}}=r^{2}$ and $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$.
 **The first equation is the mass shell with the mechanical momentum.** Writing $E=-\hbar c\,\partial_{r'_t}\theta_{\mathrm{pha}}$ and $\vec p=\hbar\nabla\theta_{\mathrm{pha}}$ and dividing by $\hbar^{2}c^{2}$,
 
 $$
-\frac{\bigl(E+ϙ c\,a'_t\bigr)^{2}}{c^{2}}-\bigl\lvert\vec p+ϙ\vec A\bigr\rvert^{2}=m^{2}c^{2}+2mQ_{\mathrm{qnt}},
+\frac{\bigl(E+ϙ c\,a'_t\bigr)^{2}}{c^{2}}-\bigl\lvert\vec p-q\vec A\bigr\rvert^{2}=m^{2}c^{2}+2mQ_{\mathrm{qnt}},
 \qquad
 Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\frac{\Box_\Phi r}{r},
 $$
 
-so the sum $E+ϙca'_t$ is the mechanical energy and $\vec p+ϙ\vec A$ the mechanical momentum, and the mass shell is shifted by the quantum potential exactly as in the free article. The quantum potential is unchanged because it is $-\frac{\hbar^{2}}{2m}\Box r/r$ and $r$ is not touched by the coupling; in the logarithmic form of the free article it is a functional of $\rho_{\mathrm{num}}$ alone, and the density is the density.
+so the sum $E+ϙca'_t$ is the mechanical energy and $\vec p-q\vec A$ the mechanical momentum, and the mass shell is shifted by the quantum potential exactly as in the free article. The quantum potential is unchanged because it is $-\frac{\hbar^{2}}{2m}\Box r/r$ and $r$ is not touched by the coupling; in the logarithmic form of the free article it is a functional of $\rho_{\mathrm{num}}$ alone, and the density is the density.
 
 **The second equation is the continuity of the mechanical current.** Dividing by $m$ and reading the two factors as the density and the current, it is
 
 $$
 \frac{\partial\rho_{\mathrm{chg}}}{\partial r'_t}+\nabla\cdot\vec j_{\mathrm{mech}}=0,
 \qquad
-\vec j_{\mathrm{mech}}=\frac{\rho_{\mathrm{num}}}{m}\bigl(\vec p+ϙ\vec A\bigr),
+\vec j_{\mathrm{mech}}=\frac{\rho_{\mathrm{num}}}{m}\bigl(\vec p-q\vec A\bigr),
 $$
 
 with the temporal slot carrying $c\rho_{\mathrm{chg}}$ as in the free article. The current is the density times the mechanical four-velocity, and the statement is the same divergence form because the potential's contribution is a divergence of a product and not a source.
@@ -186,7 +186,7 @@ with the temporal slot carrying $c\rho_{\mathrm{chg}}$ as in the free article. T
 $$
 \tilde J_\Phi=\frac{\rho_{\mathrm{num}}}{m}\,\tilde P^{\mathrm{mech}}_\Phi ,
 \qquad
-\tilde P^{\mathrm{mech}}_\Phi=i\,\frac{E+ϙ c\,a'_t}{c}\,e_t+\bigl(\vec p+ϙ\vec A\bigr),
+\tilde P^{\mathrm{mech}}_\Phi=i\,\frac{E+ϙ c\,a'_t}{c}\,e_t+\bigl(\vec p-q\vec A\bigr),
 $$
 
 and it is gauge invariant: the phase's shift and the potential's shift cancel inside each component, which is the chart's form of the element companion's statement that every derivative in the current is covariant. The free current was not gauge invariant, and the coupling repairs that. It does not repair the sign: on the negative-frequency branch the temporal component is negative, and the positive definiteness of $\rho$ is exactly as absent as it was.
@@ -194,7 +194,7 @@ and it is gauge invariant: the phase's shift and the potential's shift cancel in
 **The vorticity.** The free flow is the gradient of the action and is therefore irrotational. The coupled flow is not:
 
 $$
-\nabla\times\bigl(\vec p+ϙ\vec A\bigr)=\nabla\times\nabla S_{\tilde\Xi}+ϙ\nabla\times\vec A=ϙ\,\vec B ,
+\nabla\times\bigl(\vec p-q\vec A\bigr)=\nabla\times\nabla S_{\tilde\Xi}+ϙ\nabla\times\vec A=ϙ\,\vec B ,
 $$
 
 exactly, with no approximation and no quantum correction. So the mechanical flow's vorticity is the magnetic field times the coupling, and the statement "the flow is a gradient" becomes "the flow is a gradient plus the vector potential": the free article's irrotationality is the statement $\vec B=0$, and it is not a property of the scalar field but a property of the connection it is coupled to.
@@ -202,7 +202,7 @@ exactly, with no approximation and no quantum correction. So the mechanical flow
 **The flux and the circulation.** Integrate the relation around a closed loop:
 
 $$
-\oint\bigl(\vec p+ϙ\vec A\bigr)\cdot\mathrm{d}\vec l
+\oint\bigl(\vec p-q\vec A\bigr)\cdot\mathrm{d}\vec l
 =\oint\vec p\cdot\mathrm{d}\vec l+ϙ\oint\vec A\cdot\mathrm{d}\vec l
 =2\pi\hbar\,n+ϙ\,\Phi_B ,
 $$
@@ -234,7 +234,7 @@ and the second term is the field strength conjugated by the field.
 **Shows.**
 
 - The count: the connection enters as one central scalar per slot and therefore touches two of the four brackets, with the temporal slot real and the spatial slots imaginary.
-- The one substitution: $\hbar cP_t=E+ϙca'_t$ and $\hbar\vec P=\vec p+ϙ\vec A$, the two classical replacements in one element, with the bracket's temporal coefficient equal to $-iP_t$.
+- The one substitution: $\hbar cP_t=E+ϙca'_t$ and $\hbar\vec P=\vec p-q\vec A$, the two classical replacements in one element, with the bracket's temporal coefficient equal to $-iP_t$.
 - The gauge transformation as the translation of one coordinate, exact infinitesimally.
 - The pair of equations as the parent's pair with the mechanical momentum and the same quantum potential.
 - The vorticity, $ϙ\vec B$, and the circulation, $2\pi\hbar n+ϙ\Phi_B$: the two statements that the coupling changes the qualitative character of the flow rather than only its numbers.
@@ -266,9 +266,9 @@ $$
 so it touches the scale bracket in the temporal slot and the phase bracket in the spatial ones and cannot reach the boost or the rotor. For a central field the covariant derivative factors exactly, $\tilde\nabla_{\mathrm{gco},\mu}(re^{i\theta}e_t)=e^{i\theta}(\partial_\mu r+ir\kappa^{\mathrm{kin}}_\mu)e_t$, and the pair becomes
 
 $$
-\bigl(\partial_{r'_t}S_{\tilde\Xi}-ϙa'_t\bigr)^{2}-\bigl\lvert\nabla S_{\tilde\Xi}+ϙ\vec A\bigr\rvert^{2}=m^{2}c^{2}-\hbar^{2}\frac{\Box_\Phi r}{r},
+\bigl(\partial_{r'_t}S_{\tilde\Xi}-ϙa'_t\bigr)^{2}-\bigl\lvert\nabla S_{\tilde\Xi}-q\vec A\bigr\rvert^{2}=m^{2}c^{2}-\hbar^{2}\frac{\Box_\Phi r}{r},
 \qquad
-\nabla\cdot\bigl(\rho_{\mathrm{num}}(\nabla S_{\tilde\Xi}+ϙ\vec A)\bigr)-\frac{\partial}{\partial r'_t}\bigl(\rho_{\mathrm{num}}(\partial_{r'_t}S_{\tilde\Xi}-ϙa'_t)\bigr)=0 .
+\nabla\cdot\bigl(\rho_{\mathrm{num}}(\nabla S_{\tilde\Xi}-q\vec A)\bigr)-\frac{\partial}{\partial r'_t}\bigl(\rho_{\mathrm{num}}(\partial_{r'_t}S_{\tilde\Xi}-ϙa'_t)\bigr)=0 .
 $$
 
 The quantum potential and the density are unchanged; the momentum is not, the current is gauge invariant, the vorticity is $ϙ\vec B$, and the circulation is $2\pi\hbar n+ϙ\Phi_B$. The chart carries the component equation and cannot carry the algebra's equation, whose curvature term is a general element after conjugation by the field; that is the polar face of the element companion's prohibition on central fields in a nonzero field strength.
@@ -286,11 +286,11 @@ The quantum potential and the density are unchanged; the momentum is not, the cu
 | $\mathcal A^{\mathrm{gco}}_\mu=\mathcal A_\mu+\frac{iϙ}{\hbar}A_\mu$ | The covariant bracket |
 | $\tilde A_\Phi=i a'_t e_t+\vec A$ | The connection; $a'_t$ and $\vec A$ real |
 | $ϙ$ | The coupling |
-| $\hbar cP_t=E+ϙca'_t$, $\hbar\vec P=\vec p+ϙ\vec A$ | The mechanical four-momentum |
+| $\hbar cP_t=E+ϙca'_t$, $\hbar\vec P=\vec p-q\vec A$ | The mechanical four-momentum |
 | $\kappa^{\mathrm{kin}}_\mu=\partial_\mu\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}A_\mu$ | The covariant bracket's coefficient; $\kappa^{\mathrm{kin}}_t=-iP_t$ |
 | $E=-\hbar c\,\partial_{r'_t}\theta_{\mathrm{pha}}$, $\vec p=\hbar\nabla\theta_{\mathrm{pha}}$ | The free four-momentum |
 | $Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\frac{\Box_\Phi r}{r}$ | The quantum potential; unchanged by the coupling |
-| $\vec j_{\mathrm{mech}}=\frac{\rho_{\mathrm{num}}}{m}(\vec p+ϙ\vec A)$ | The mechanical current |
+| $\vec j_{\mathrm{mech}}=\frac{\rho_{\mathrm{num}}}{m}(\vec p-q\vec A)$ | The mechanical current |
 | $\vartheta_{\mathrm{gau}}=ϙ\Lambda/\hbar$ | The gauge phase translation |
 | $\tilde F$ | The field strength; one type in the algebra, four brackets in the chart |
 | $k_m=mc/\hbar$ | The mass wave number |

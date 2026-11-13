@@ -8,7 +8,7 @@
 
 *First, the coupling's decomposition fixes its reach.* The connection is Hermitian, so in the bracket decomposition it contributes a central imaginary in its time slot and a Hermitian element in its spatial slots. Those are the phase's bracket and the boost's. It contributes nothing to the real scalar, which is the scale's, and nothing to the real vector, which is the rotor's. **The density and the spin are therefore outside the coupling's reach by type, and not by cancellation.**
 
-*Second, the same decomposition is why there is no torque.* A torque would have to enter the rotor's bracket; the connection has no real-vector part, so it cannot. The action states this as the absence of a term, and [The Charged Spin Fluid](the-charged-spin-fluid.html) states it as a computation: the force equation gains $-ϙ F^{\mu\nu}J_\nu$ and the spin's transport law gains nothing.
+*Second, the same decomposition is why there is no torque.* A torque would have to enter the rotor's bracket; the connection has no real-vector part, so it cannot. The action states this as the absence of a term, and [The Charged Spin Fluid](the-charged-spin-fluid.html) states it as a computation: the force equation gains $-ϙ\sum_\nu F_{\mu\nu}J_\nu$ and the spin's transport law gains nothing.
 
 *Third, every norm in the spinor case survives, and the reason is that a connection transports and does not measure.* The velocity is a unit element's square, so its norm is fixed by the frame and no added connection can move it. At the scalar rung the velocity is a gradient, and there the shell's right-hand side carries the quantum potential; here it carries nothing.
 
@@ -96,7 +96,7 @@ and $\lambda^{-1}\partial_\mu\lambda=iϙ\partial_\mu\Gamma/\hbar$ is central, so
 
 **This is why the invariance is exact here and needs no boundary term, and it is also why it cannot reach the spin.** A gauge transformation is a multiplication of the word by a central factor; the word's factors are the phase's and the frame's; a central multiplication can be absorbed into the phase's factor — which is what a phase shift is — and cannot be absorbed into the frame's, because the frame's factors are not central. So the shift is entirely the phase's, and the boost's bracket's apparent change is the connection's cancellation. **The coupling's reach and the gauge group's reach coincide, and both are the central direction of the algebra.**
 
-**The current and the stress follow as at the scalar charged rung.** The global subgroup supplies the charge current $ϙ\tilde J_\Phi$; translation invariance supplies the stress, whose divergence is $-ϙ F^{\mu\nu}J_\nu$ plus the free spin term; and the canonical tensor computed with the phase as the variable is gauge dependent by a total derivative, while the tensor written in the frame's brackets is not.
+**The current and the stress follow as at the scalar charged rung.** The global subgroup supplies the charge current $ϙ\tilde J_\Phi$; translation invariance supplies the stress, whose divergence is $-ϙ\sum_\nu F_{\mu\nu}J_\nu$ plus the free spin term; and the canonical tensor computed with the phase as the variable is gauge dependent by a total derivative, while the tensor written in the frame's brackets is not.
 
 ## What the Fluid Variational Principle Adds and Does Not Add
 

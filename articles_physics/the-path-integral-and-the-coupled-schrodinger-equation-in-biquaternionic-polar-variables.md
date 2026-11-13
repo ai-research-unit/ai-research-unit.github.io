@@ -24,7 +24,7 @@ the coupled exponent is the free exponent with $\dot\theta_{\mathrm{pha}}\to\kap
 
 **What the article does not do.** It does not produce a second integral, does not evaluate the coupled kernel beyond the constant background, does not decide the Landau spectrum, and does not treat a non-central connection. It reads one integral in another coordinate system and says what the coordinate system shows.
 
-**Conventions.** The chart, the collapse on a central field, the density $n=r^{2}$ and the measure are the free polar companion's. The connection is $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$, the coupling is $ϙ$, and the covariant derivative is $\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$ with $D_t=\partial_{t'}-\frac{iϙ}{\hbar}\varphi$ and $D_\eta=\partial_\eta+\frac{iϙ}{\hbar}A_\eta$. The mechanical momentum is $\vec\pi=-i\hbar\vec\nabla+ϙ\vec A$ and the potential energy is $-ϙ\varphi$.
+**Conventions.** The chart, the collapse on a central field, the density $n=r^{2}$ and the measure are the free polar companion's. The connection is $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$, the coupling is $ϙ$, and the covariant derivative is $\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$ with $D_t=\partial_{t'}-\frac{iϙ}{\hbar}\varphi$ and $D_\eta=\partial_\eta+\frac{iϙ}{\hbar}A_\eta$. The mechanical momentum is $\vec\pi=-i\hbar\vec\nabla-q\vec A$ and the potential energy is $-ϙ\varphi$.
 
 ## The Exponent, and Where the Connection Sits
 
@@ -81,7 +81,7 @@ which is the element companion's $h_t\mapsto h_t-ϙ\varphi$ read as a rate. The 
 
 **The reason is one line and it is worth stating twice.** In the Klein–Gordon chart the exponent is a sum of squares, one per slot, and the temporal square is where a scalar potential lands; in the Schrödinger chart the exponent is linear in the temporal rate, so it is the rate that receives the shift. The order in time decides the shape of the interaction term, and it decides it before the algebra says anything.
 
-**The element companion's dispersion is therefore the chart's dispersion.** $E+ϙ\varphi=(\vec p+ϙ\vec A)^{2}/2m$ is $\hbar\kappa_t=-h_t$ with the momentum's translation, and both statements are the same two rates.
+**The element companion's dispersion is therefore the chart's dispersion.** $E+ϙ\varphi=(\vec p-q\vec A)^{2}/2m$ is $\hbar\kappa_t=-h_t$ with the momentum's translation, and both statements are the same two rates.
 
 ## The Vector Potential Is a Translation
 
@@ -91,7 +91,7 @@ which is the element companion's $h_t\mapsto h_t-ϙ\varphi$ read as a rate. The 
 
 **The chart's invariance is exact and needs no link.** The transformation shifts one of the two chart coordinates by a function of the point, the measure is $dn\,d\theta_{\mathrm{pha}}$ up to a constant, and a shift of a coordinate has unit Jacobian. **The invariance therefore holds at any step size and for a finite transformation**, and there is no linearised link to fail and no exponential link to succeed: those are the Klein–Gordon companion's questions, and they arise there because its field has two independent slots whose covariance is a statement about each.
 
-**The density is the response and the current is the phase's gradient.** The exponent's derivative with respect to $\varphi$ is $\frac{i}{\hbar}ϙ r^{2}$, so the density is the response to the scalar potential; the current is $\vec j=n\vec\pi/m$ with $\vec\pi=\hbar\vec\nabla\theta_{\mathrm{pha}}+ϙ\vec A$, which is the coupled element companion's current and is gauge invariant because both of its factors are.
+**The density is the response and the current is the phase's gradient.** The exponent's derivative with respect to $\varphi$ is $\frac{i}{\hbar}ϙ r^{2}$, so the density is the response to the scalar potential; the current is $\vec j=n\vec\pi/m$ with $\vec\pi=\hbar\vec\nabla\theta_{\mathrm{pha}}-q\vec A$, which is the coupled element companion's current and is gauge invariant because both of its factors are.
 
 **The two interaction terms are also the reason the continuity equation survives the coupling.** The continuity equation is the saddle of the angle's integral, and the angle's integral only sees the two rates; since both rates are gauge invariant combinations, the continuity equation the chart produces is gauge invariant without a separate argument.
 

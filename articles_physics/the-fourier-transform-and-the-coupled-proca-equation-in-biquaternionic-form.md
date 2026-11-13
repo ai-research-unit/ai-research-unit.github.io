@@ -10,7 +10,7 @@ $$
 \sigma_{\mathrm{gco}}\bigl(\pi\bigr)=\underbrace{\bigl(-\pi^{2}\delta^\mu{}_\nu-\pi^\mu\pi_\nu\bigr)}_{\text{the free symbol at }\pi}
 \;+\;\underbrace{\frac{i\varkappa}{\hbar}\,F^{(\Phi)\mu}{}_{\nu}}_{\text{the obstruction}} ,
 \qquad
-\pi_\mu=\hbar k_\mu+\varkappa A_\mu .
+\pi_\mu=\hbar k_\mu-q A_\mu .
 $$
 
 The first bracket is the free Proca symbol with $\pi$ in place of $k$ — translation and rank-one projector together — and the second is the commutator of two covariant derivatives. **The first term is what the transform says and the second is what the transform cannot say**, and the article is the separation of the two.
@@ -32,7 +32,7 @@ The algebra, the products, the two forms, the units and the sectors are those of
 $$
 \tilde\nabla_{\mathrm{gco},\mu}\longmapsto i\pi_\mu ,
 \qquad
-\pi_\mu=\hbar k_\mu+\varkappa A_\mu ,
+\pi_\mu=\hbar k_\mu-q A_\mu ,
 \qquad
 k_\mu=\bigl(k_t',\vec k_\Phi\bigr) ,
 \qquad
@@ -88,13 +88,13 @@ $$
 F^{(\Phi)}_{\mu\nu}=0 ,
 $$
 
-and the symbol's dependence on the coupling is entirely through $\pi_\mu=\hbar k_\mu+\varkappa A_\mu$. **The mass shell then reads $\pi^{2}=k_m^{2}$**, which is the parent's constant-background dispersion with the coupling in the momentum and nowhere else.
+and the symbol's dependence on the coupling is entirely through $\pi_\mu=\hbar k_\mu-q A_\mu$. **The mass shell then reads $\pi^{2}=k_m^{2}$**, which is the parent's constant-background dispersion with the coupling in the momentum and nowhere else.
 
 **The check is one line and it is exact.** A constant connection has $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu=0$ identically, so the commutator vanishes and the square splitting reduces to the symmetric sum of squares. **The symbol of that sum is $-\pi^{2}$**, and the identity is an identity and not an approximation.
 
 **What the translation does to the spectrum is the parent's shift, read as a symbol.** The temporal component of $\pi$ is $\hbar\omega/c+\varkappa\varphi$, so the symbol's evenness is about $\omega=-\varkappa c\varphi/\hbar$ and not about zero. **A constant potential moves the axis of the symbol's parity**, which is the frequency-space form of "a constant potential shifts every energy by $\varkappa\varphi$".
 
-**The spatial components shift the wave vector's origin, and that is the same statement.** $\vec\pi=\hbar\vec k_\Phi+\varkappa\vec A$ means the symbol's dependence on $\vec k_\Phi$ is a translation, so the dispersion's minimum sits at $\vec k_\Phi=-\varkappa\vec A/\hbar$. **A constant vector potential moves the dispersion's centre and not its shape**, and the symbol's translation is exactly that statement.
+**The spatial components shift the wave vector's origin, and that is the same statement.** $\vec\pi=\hbar\vec k_\Phi-q\vec A$ means the symbol's dependence on $\vec k_\Phi$ is a translation, so the dispersion's minimum sits at $\vec k_\Phi=-\varkappa\vec A/\hbar$. **A constant vector potential moves the dispersion's centre and not its shape**, and the symbol's translation is exactly that statement.
 
 **The translation is therefore the entire content of "the coupling is a shift" and the obstruction is the entire content of "the coupling is not only a shift".** The article separates them because the corpus's literature separates them: the constant-background section of the parent is the translation, and its covariant field strength is the obstruction.
 
@@ -185,7 +185,7 @@ has two terms of different kinds: a derivative of the field and a product of two
 
 ## Summary
 
-The coupled Proca operator's symbol is two terms. The first is the free symbol at the shifted four-momentum $\pi_\mu=\hbar k_\mu+\varkappa A_\mu$, which is the translation; the second is $\frac{i\varkappa}{\hbar}F^{(\Phi)}$, which is the commutator of two covariant derivatives and is the obstruction. **The decomposition is the parent's square-splitting identity, transformed term by term**, and there is no third term because the identity has two.
+The coupled Proca operator's symbol is two terms. The first is the free symbol at the shifted four-momentum $\pi_\mu=\hbar k_\mu-q A_\mu$, which is the translation; the second is $\frac{i\varkappa}{\hbar}F^{(\Phi)}$, which is the commutator of two covariant derivatives and is the obstruction. **The decomposition is the parent's square-splitting identity, transformed term by term**, and there is no third term because the identity has two.
 
 At a constant connection the obstruction vanishes identically and the symbol is $-\pi^{2}$ times the identity: **the translation is exact**, the dispersion is $\pi^{2}=k_m^{2}$, and a constant potential moves the axis of the symbol's parity to $\omega=-\varkappa c\varphi/\hbar$.
 
@@ -199,7 +199,7 @@ The mass does not enter the obstruction: the mass term is $-k_m^{2}\delta$, whos
 | --- | --- |
 | $\varkappa$ | The coupling; a length whose inverse multiplies the potential |
 | $A_\mu$ | The background potential |
-| $\pi_\mu=\hbar k_\mu+\varkappa A_\mu$ | The shifted four-momentum; the symbol's argument |
+| $\pi_\mu=\hbar k_\mu-q A_\mu$ | The shifted four-momentum; the symbol's argument |
 | $k_t'=\omega/c$, $k^{2}=k_t'^{2}-\vec k_\Phi^{2}$ | The free four-wave-number and its interval |
 | $k_m=mc/\hbar$ | The mass wave number |
 | $\sigma_{\mathrm{gco}}=-\pi^{2}+\frac{i\varkappa}{\hbar}F^{(\Phi)}$ | The coupled symbol; translation plus obstruction |

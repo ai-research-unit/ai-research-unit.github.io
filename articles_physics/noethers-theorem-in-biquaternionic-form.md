@@ -319,7 +319,7 @@ $$
 \tilde{Ξ}_0\ \text{constant}.
 $$
 
-The multiplier is **central and of unit modulus**, because $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural}) = \langle\tilde P_{\Phi},\tilde{R}_{\Phi,0}\rangle_{\natural}$ is real: writing $\tilde P_{\Phi} = i\frac{\omega}{c}e_t + \vec k_\Phi$ and $\tilde{R}_{\Phi,0} = i R_{0t} e_t + \vec R_0$, with $R_{0t} = r'_{t,0$,
+The multiplier is **central and of unit modulus**, because $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural}) = \langle\tilde P_{\Phi},\tilde{R}_{\Phi,0}\rangle_{\natural}$ is real: writing $\tilde P_{\Phi} = i\frac{\omega}{c}e_t + \vec k_\Phi$ and $\tilde{R}_{\Phi,0} = i R_{0t} e_t + \vec R_0$, with $R_{0t} = r'_{t,0}$,
 
 $$
 \mathrm{Sc}\!\left(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural}\right) = -\frac{\omega R_{0t}}{c} + \vec k_\Phi\cdot\vec R_0 = \vec k_\Phi\cdot\vec R_0-\omega r'_{t,0}/c .

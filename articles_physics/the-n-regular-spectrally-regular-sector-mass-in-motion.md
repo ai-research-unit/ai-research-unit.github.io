@@ -60,6 +60,55 @@ $$
 
 and both coefficients are non-zero. This is the only region in which the spectral decomposition has two non-zero terms and two non-trivial idempotents.
 
+## The Material Case
+
+**The sections above read the region on the material slice, and the slice is a real four-dimensional subspace on which both invariants are real.** With
+
+$$
+\tilde Q=i\,q'_t\,e_t+\vec r,
+\qquad
+q'_t\in\mathbb{R},
+\quad
+\vec r\in\mathbb{R}^{3},
+$$
+
+the invariants are $B^{2}=\lvert\vec r\rvert^{2}$ and $N=\lvert\vec r\rvert^{2}-q_t'^{2}$, so the vector square is non-negative and the material part of the region is
+
+$$
+\Sigma_{11}\cap\mathbb{B}_{\Phi}
+=\bigl\{\vec r\neq0,\ \lvert\vec r\rvert\neq\lvert q'_t\rvert\bigr\},
+$$
+
+with the rest point $\vec r=0$ in $\Sigma_{10}$ and the light point $\lvert\vec r\rvert=\lvert q'_t\rvert$ in $\Sigma_{01}$. **The material part is the region minus its boundary**, and a boost cannot move a material element out of the sector: the two-sided operator preserves $\mathbb{B}_{\Phi}$ to $10^{-16}$ over twenty boosts. The region is not preserved in the same way: the norm is preserved to $10^{-13}$, while $\lvert\vec p\rvert$ ran from $0.18$ to $66$. The region is a type; the mass shell is what the boost preserves.
+
+**The sector adds one invariant and one operation.** The invariant is the polar modulus: with $\sqrt{N}=imc$ and $\lvert N\rvert^{1/2}=mc$, the mass is the modulus of the element and not a separate datum, and it is the number the two eigenvalues' product already carries. The operation is addition, which stays inside the sector while it leaves the region. Two material null momenta of energies $E_1,E_2$ at angle $\theta$ sum to
+
+$$
+N(\tilde P_1+\tilde P_2)=-2E_1E_2\bigl(1-\cos\theta\bigr),
+$$
+
+checked to $8\times10^{-15}$ over one hundred pairs, and that sum is in $\Sigma_{11}$ for every angle strictly between $0$ and $\pi$: parallel rays stay on the cone, equal-energy antiparallel rays land on the scalar line, and one hundred random pairs gave one hundred elements of the region. **No addend is massive and the sum is**, so the mass is produced by the addition and belongs to neither term. It is the one dynamical statement the region supports without a coupling being introduced.
+
+**What the sector excludes, and why.** On $\mathbb{B}_{\Phi}$ the vector square is a definite form, and a definite form has no non-zero isotropic vector. So the Jordan part of $\Sigma_{10}$ and the nilpotents of $\Sigma_{00}$ are not merely off the real slice: they are absent from the sector for every complex value of its four real parameters. **The material face of the arrangement is the classical mass–motion table with its boundary, and the remainder of the region's geometry is complexified.**
+
+## The First Carrier: The Centre
+
+**The centre has no member in this region, and the exclusion is structural.** Its vector part is zero, so $B^{2}=0$ at every point of the carrier, and the region is defined by $B^{2}\neq0$. The intersection is therefore empty for every complex $q$, and no addition, product or boost within the carrier can change it, because the carrier is one-dimensional over $\mathbb{C}$ and every change stays inside it.
+
+**The reading is about the amplitude and not about the momentum.** The element that the centre holds is a field's amplitude, one complex number at each event; the *momentum* of the same field is a four-vector, lies in the material sector, and finds this region generic there. **So the exclusion is not a statement that a scalar field cannot move**: it is the statement that an amplitude carries no direction, and that the two readings of one field sit in two different carriers. The region's content is a direction of motion, and a direction is the one thing a central element does not have. **The carrier reaches two of the four regions, $\Sigma_{10}$ and $\Sigma_{00}$**, and the two are the rest frame and the origin.
+
+## The Second Carrier: The Minimal Left Ideal
+
+**The ideal is excluded here for the opposite reason.** Every member of $S_{\pm}$ is a product with a rank-one idempotent, hence of rank at most one as a matrix, hence of vanishing determinant; the determinant is the norm, so $N=0$ at every point of the carrier, and the region is defined by $N\neq0$. So no value of a spin-half field is a unit, and the region, whose content is a non-zero mass together with two distinct modes, is closed to both ideals.
+
+**The exclusion does not say that a spin-half field is massless.** The field is the sum $S_{+}+S_{-}=\mathbb{B}$, and the sum is not on the cone even when neither summand leaves it, since $N$ is a quadratic form:
+
+$$
+N(\tilde\Xi_{L}+\tilde\Xi_{R})=2\langle\tilde\Xi_{L},\tilde\Xi_{R}\rangle
+$$
+
+when both norms vanish. The right side is the polar form of the norm, and it is the mass. **So this is the region in which a statement about one value says nothing about the field**: $\Sigma_{11}$ is reached by the sum and by neither summand, and it is the one region that no carrier but the material sector reaches.
+
 ## The Spectrum
 
 ### The Doppler Pair
@@ -216,6 +265,8 @@ No dynamics is supplied. The region is a property of one element at one instant;
 - The region lies in the domain of the polar word: scale, phase, boost and rotor.
 - The boundary of the region is the arrangement: $B=0$ gives the rest frame and the exceptional point, $N=0$ gives the light ray.
 - The region is generic and reversible; it supplies no dynamics, no particle count and no mass spectrum.
+- On the material sector the region is $\{\vec r\neq0,\ \lvert\vec r\rvert\neq\lvert q'_t\rvert\}$, the spectrum is purely imaginary, the modulus is $mc$, and a boost moves the element along its mass shell without leaving the region's type.
+- The carrier decides the reach: the centre has $B^{2}=0$ at every point and the ideals have $N=0$ at every point, so neither reaches $\Sigma_{11}$; only the material sector does, and it is generic there.
 
 ## Summary of Notation
 
@@ -230,13 +281,15 @@ No dynamics is supplied. The region is a property of one element at one instant;
 | $S_\pm=\mathbb{B}\tilde\Pi_\pm$ | the two spinor spaces |
 | $\theta_{\mathrm{rpd}}$ | the rapidity, $\cosh\theta_{\mathrm{rpd}}=E/(mc^{2})$ |
 | $r,\theta_{\mathrm{pha}},\tilde U_{\Psi,\mathrm b},\tilde u_{\mathrm r}$ | the polar factors |
+| $i\,q'_t\,e_t+\vec r$ | a material element, $q'_t\in\mathbb{R}$, $\vec r\in\mathbb{R}^{3}$ |
 
 ## Further Reading
 
-- [The Four Regimes of an Element: Mass and Motion](the-four-regimes-of-an-element-mass-and-motion.html), for the partition and the other three regions.
+- [The Three Elementary Carriers and the Four Sectors of Regularity and Degeneracy](the-three-elementary-carriers-and-the-four-sectors-of-regularity-and-degeneracy.html), for the partition and the other three regions.
 - [The Spectral Reading of a Four-Vector](the-spectral-reading-of-a-four-vector.html), for the Doppler pair and the two-term writing.
 - [The Polar Decomposition and Its Three Pairings](the-polar-decomposition-and-its-three-pairings.html), for the polar word.
 - [Frames, Rotations and the Lorentz Group](frames-rotations-and-the-lorentz-group.html), for the two-sided operator and the boost.
 - [Spin and the Three Elementary Carriers](spin-and-the-three-elementary-carriers.html), for the minimal ideals.
 - [The Zero-Divisor Cone and the Massless Spectrum](the-zero-divisor-cone-and-the-massless-spectrum.html), for the boundary $N=0$.
 - [The N-Regular, Spectrally Degenerate Sector: The Rest Frame and the Exceptional Point](the-n-regular-spectrally-degenerate-sector-the-rest-frame-and-the-exceptional-point.html), for the boundary $B=0$.
+- [Spin and the Three Elementary Carriers](spin-and-the-three-elementary-carriers.html), for the three carriers whose reach this article uses.

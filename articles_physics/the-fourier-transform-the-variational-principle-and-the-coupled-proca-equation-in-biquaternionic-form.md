@@ -23,7 +23,7 @@ The algebra, the products, the two forms, the units and the sectors are those of
 $$
 \tilde\nabla_{\mathrm{gco},\mu}\longmapsto i\pi_\mu ,
 \qquad
-\pi_\mu=\hbar k_\mu+\varkappa A_\mu ,
+\pi_\mu=\hbar k_\mu-q A_\mu ,
 \qquad
 k_t'=\frac{\omega}{c} ,
 \qquad
@@ -52,7 +52,7 @@ $$
 
 where $[\,\pi A\,]=\pi_t a_t'+\vec\pi\cdot\vec a$ is the shifted Lorenz form and $A^{\dagger}A=\lvert a_t'\rvert^{2}+\lvert\vec a\rvert^{2}$ the positive amplitude norm of the complex carrier. **$\mathcal{F}$ is bilinear in $A$ and $\mathcal{M}$ is sesquilinear**, and every asymmetry in the article descends from that one fact.
 
-**The stationarity is the coupled symbol.** $\partial S/\partial A^{\dagger}=-\sigma_{\mathrm{gco}}A$ with $\sigma_{\mathrm{gco}}=-\pi^{2}\delta+\frac{i\varkappa}{\hbar}F^{(\Phi)}-\pi^{\mu}\pi_{\nu}$, so the momentum-space variational principle is the coupled Proca equation. **The form companion's machinery applies with $\pi$ in place of $k$**, and the article uses it without repeating it.
+**The stationarity is the coupled symbol.** $\partial S/\partial A^{\dagger}=-\sigma_{\mathrm{gco}}A$ with $\sigma_{\mathrm{gco}}=-\pi^{2}\delta+\frac{i\varkappa}{\hbar}F^{(\Phi)}-\sum_\mu\pi_\mu\pi_\nu$, so the momentum-space variational principle is the coupled Proca equation. **The form companion's machinery applies with $\pi$ in place of $k$**, and the article uses it without repeating it.
 
 **The pairing is the parent's and the article's, and they agree.** The parent varies $\tilde A$ and $\tilde A^{*}$ independently with $\delta\tilde A^{*}$ on the left, which is the pairing the field term's reality dictates; at a mode that is the derivative with respect to $A^{\dagger}$. **The modulus pairing would give the energy and not the equation**, and the parent states the distinction and the article inherits it.
 
@@ -111,7 +111,7 @@ $$
 
 **So the constraint is one equation and it is not a vanishing of the field.** The amplitude is not zero, not lightlike and not in any special branch: it is one of four components expressed through the other three. **That is what "determined by the transverse part through the mass" means when the mass is finite**, and the division shows the mass's role: at $k_m=0$ the same computation gives $[kA]=0$ as a free condition on the three spatial components, and the temporal one is undetermined.
 
-**The coefficient of the longitudinal direction is the mass and the coupling leaves it alone.** Along $\pi^{\mu}$ the form is $\tfrac12k_m^{2}(A\!\cdot\!A)$, so its magnitude is $\tfrac12k_m^{2}=0.245000000$ at $k_m=0.7$ for every momentum tested, the sign following $\pi^{2}$: $-0.245000000$ at $\pi_t=0.9$ and $+0.245000000$ at $\pi_t=1.6$ and $2.4$, the sign change being the crossing of the shifted cone. **The translation moves the cone and does not move the coefficient's magnitude**, which is the frequency-space form of "the mass is the only scale in the constraint".
+**The coefficient of the longitudinal direction is the mass and the coupling leaves it alone.** Along $\pi_\mu$ the form is $\tfrac12k_m^{2}(A\!\cdot\!A)$, so its magnitude is $\tfrac12k_m^{2}=0.245000000$ at $k_m=0.7$ for every momentum tested, the sign following $\pi^{2}$: $-0.245000000$ at $\pi_t=0.9$ and $+0.245000000$ at $\pi_t=1.6$ and $2.4$, the sign change being the crossing of the shifted cone. **The translation moves the cone and does not move the coefficient's magnitude**, which is the frequency-space form of "the mass is the only scale in the constraint".
 
 **The constraint's symbol is free of curvature and its coefficient is free of the coupling.** The trace of $\sigma_{\mathrm{gco}}$ is $-4\pi^{2}$ and carries no $F$; the longitudinal coefficient carries no $\varkappa$ except through the sign. **So the constraint is the one part of the coupled theory whose structure is exactly the free one's**, and the parent's "the constraint holds to machine precision in a background with constant field strength" is that statement's numerical form.
 
@@ -147,7 +147,7 @@ so the temporal coefficient has no $\pi_t^{2}$ and the three spatial coefficient
 
 **The charge's mass-independence is structural and not a cancellation.** $j_\mu=\mathrm{Sc}(\tilde A^{*}\,i\tilde\nabla_{\mathrm{gco},\mu}\tilde A)$ has the coupling in the gradient and the amplitude in both slots; the mass appears in neither. **So the charge's symbol is $-i\pi_\mu$ times the amplitude's bilinear, and the mass cannot enter because the mass is not in the operator.**
 
-**The energy's mass-dependence is the trace's.** The parent's material-slice trace is $T^{\mu}{}_{\mu}\propto k_m^{2}\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$ exactly, and the form companion's symbol trace is $3\pi^{2}-4k_m^{2}$, which at $\pi^{2}=k_m^{2}$ is $-k_m^{2}$. **So the two traces agree at the shell**, and the agreement is the reason the article can state one sentence for both.
+**The energy's mass-dependence is the trace's.** The parent's material-slice trace is $\sum_\mu T_{\mu\mu}\propto k_m^{2}\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$ exactly, and the form companion's symbol trace is $3\pi^{2}-4k_m^{2}$, which at $\pi^{2}=k_m^{2}$ is $-k_m^{2}$. **So the two traces agree at the shell**, and the agreement is the reason the article can state one sentence for both.
 
 **The asymmetry is the theory's and not the article's.** A field with a mass has a conserved charge that does not carry the mass and an energy that does. **The reason is that the charge is the phase's Noether current and the phase is a coordinate of the field, while the energy is the scale's and the scale is the mass's own coordinate** — the parent's chart makes that division visible, and the article states it as the ledger's last row.
 
@@ -191,7 +191,7 @@ a reflection about $\omega=-\varkappa c\varphi/\hbar$ rather than about zero. **
 
 ## Summary
 
-At a wave number the coupled Proca action is $\mathcal{F}+\mathcal{M}=\tfrac12[\,\pi A\,]^{2}+\tfrac12k_m^{2}A^{\dagger}A$ with $\pi_\mu=\hbar k_\mu+\varkappa A_\mu$, and its stationarity is the coupled symbol.
+At a wave number the coupled Proca action is $\mathcal{F}+\mathcal{M}=\tfrac12[\,\pi A\,]^{2}+\tfrac12k_m^{2}A^{\dagger}A$ with $\pi_\mu=\hbar k_\mu-q A_\mu$, and its stationarity is the coupled symbol.
 
 The two terms have different algebraic characters and transform differently under a constant phase. $\mathcal{M}$ is sesquilinear and does not move: $0.169050$ at $\alpha=0,\,0.7,\,1.9,\,3.1$. $\mathcal{F}$ is bilinear and rotates at twice the angle: the ratio's argument is $1.400000$, $-2.483185$, $-0.083185$, which is $2\alpha$ modulo $2\pi$, while its modulus stays at $0.158799$. **Invariance holds only at $\alpha\in\{0,\pi\}$**, which is the parent's "only when the phase's square is one" as a table.
 
@@ -205,7 +205,7 @@ The charge carries no mass and the energy carries $k_m^{2}$: the charge's symbol
 
 | Symbol | Meaning |
 | --- | --- |
-| $\pi_\mu=\hbar k_\mu+\varkappa A_\mu$ | The shifted four-momentum |
+| $\pi_\mu=\hbar k_\mu-q A_\mu$ | The shifted four-momentum |
 | $\varkappa$ | The coupling |
 | $k_m=mc/\hbar$ | The mass wave number |
 | $[\,\pi A\,]=\pi_t a_t'+\vec\pi\cdot\vec a$ | The shifted Lorenz form of the amplitude |

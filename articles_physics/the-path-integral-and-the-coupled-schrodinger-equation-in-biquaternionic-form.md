@@ -10,11 +10,11 @@
 
 *Second, the gauge invariance of the integral is exact, and the measure is what makes it exact.* The transformation is a central phase at each point, so its Jacobian is one and the flat measure is untouched; the exponent shifts by a total derivative which cancels between the kinetic and the potential terms, term by term, exactly as the variational companion records. No lattice link, no Wilson line and no discretisation rule is introduced, and this is a structural difference from the Klein–Gordon case rather than a convenience.
 
-*Third, the constant background is exactly solvable and the two shifts are the whole of the coupling there.* The kernel is the free kernel times a phase factor in the potential and a translation factor in the vector potential, and the dispersion is $E+ϙ\varphi=(\vec p+ϙ\vec A)^{2}/2m$. The composition of the shifted kernels is verified to $2.3\times10^{-12}$.
+*Third, the constant background is exactly solvable and the two shifts are the whole of the coupling there.* The kernel is the free kernel times a phase factor in the potential and a translation factor in the vector potential, and the dispersion is $E+ϙ\varphi=(\vec p-q\vec A)^{2}/2m$. The composition of the shifted kernels is verified to $2.3\times10^{-12}$.
 
 **What is not claimed.** No new prediction, no new solution, no new particle. The integral is the standard one of non-relativistic scalar electrodynamics. What the algebra contributes is that the connection is one central operator read in four slots, that the measure is flat and stays flat, and that the determinant's power is unchanged by the coupling — the first-order $\det^{-1}$ of the free companion, not a new power.
 
-**The two settings are again kept apart, and the coupling has a different face in each.** In the constant setting the coupling is a shift of two numbers, $h_t\mapsto h_t-ϙ\varphi$ and $\vec h_\Psi\mapsto\vec h_\Psi+ϙ\vec A$, and the integral's exponent is the free exponent with the shifted numbers. In the operator setting the coupling is a covariant Laplacian and a potential, and the integral is the free integral with three extra terms. No result is transferred between them.
+**The two settings are again kept apart, and the coupling has a different face in each.** In the constant setting the coupling is a shift of two numbers, $h_t\mapsto h_t-ϙ\varphi$ and $\vec h_\Psi\mapsto\vec h_\Psi-q\vec A$, and the integral's exponent is the free exponent with the shifted numbers. In the operator setting the coupling is a covariant Laplacian and a potential, and the integral is the free integral with three extra terms. No result is transferred between them.
 
 **Conventions.** The algebra, the sectors, the pairing $\mathrm{Sc}(\cdot^{*}\cdot)$, the action, the measure and the $i\epsilon$ are the free companion's. The connection is $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$ with $\varphi$ and $\vec A$ real, the coupling is $ϙ$, and the covariant derivative is $\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$, so that
 
@@ -23,7 +23,7 @@ D_t=\partial_{t'}-\frac{iϙ}{\hbar}\varphi,
 \qquad
 D_\eta=\partial_\eta+\frac{iϙ}{\hbar}A_\eta,
 \qquad
-\vec\pi=-i\hbar\vec\nabla+ϙ\vec A,
+\vec\pi=-i\hbar\vec\nabla-q\vec A,
 $$
 
 with the mechanical momentum $\vec\pi$ and the potential energy $-ϙ\varphi$. The charge $ϙ$ is minus the electric charge of the older convention, and its value is inserted, not derived.
@@ -114,10 +114,10 @@ with $K_0$ the free kernel of the free companion. The first factor is the potent
 **The dispersion is the two shifts and nothing else.** A plane wave $e^{i(\vec p\cdot\vec r-E t')/\hbar}$ solves the coupled equation when
 
 $$
-E+ϙ\varphi=\frac{(\vec p+ϙ\vec A)^{2}}{2m},
+E+ϙ\varphi=\frac{(\vec p-q\vec A)^{2}}{2m},
 $$
 
-which is the constant companion's $h_t\mapsto h_t-ϙ\varphi$ and $\vec h_\Psi\mapsto\vec h_\Psi+ϙ\vec A$ read as a dispersion. **The two shifts are the coupling's only content in the constant setting**, and the potential's shift is linear because the equation is first order in time: there is no square to put it in.
+which is the constant companion's $h_t\mapsto h_t-ϙ\varphi$ and $\vec h_\Psi\mapsto\vec h_\Psi-q\vec A$ read as a dispersion. **The two shifts are the coupling's only content in the constant setting**, and the potential's shift is linear because the equation is first order in time: there is no square to put it in.
 
 **The translation factor is a phase and not a gauge choice.** The second factor of the kernel is not removable by a gauge transformation of the endpoints, because a gauge transformation would also move $\varphi$ and because the factor's argument is the displacement. It is the integral's version of the statement that a constant vector potential is pure gauge in the equation and not in the kernel: the kernel is a matrix element between two positions, and the two positions are at different points, so the phase does not cancel.
 
@@ -157,7 +157,7 @@ which is the constant companion's $h_t\mapsto h_t-ϙ\varphi$ and $\vec h_\Psi\ma
 
 The coupled functional integral is the free one with three extra terms in the exponent and the same measure. The kinetic term is untouched because the temporal connection sits in $D_t$; the gradient term is a sum of moduli of covariant derivatives, hence positive, and splits into the free term, a linear term in $\vec A$ and a quadratic one; the potential term is $ϙ\varphi\,n$, and the whole exponent stays real. The operator $A_{\mathrm{gco}}=i\hbar D_t-\frac{1}{2m}(-i\hbar\vec D)^{2}$ is still first order in time, so its determinant enters to the first power exactly as in the free case.
 
-The gauge transformation is a central phase at each point, its Jacobian is one, so the measure is untouched; the exponent shifts by a total derivative that cancels between the kinetic and the potential terms, so the invariance is exact and term by term, with no link and no boundary term. The determinant is gauge invariant by the similarity the shift supplies, and the density is the functional derivative of $\ln Z$ with respect to $\varphi$. The constant background is exact: the kernel is the free kernel times $\exp(-iϙ\varphi r'_t/\hbar c)$ and $\exp(iϙ\vec A\cdot\vec r/\hbar)$, its composition verified to $2.3\times10^{-12}$, with the dispersion $E+ϙ\varphi=(\vec p+ϙ\vec A)^{2}/2m$. The semiclassical kernel is van Vleck's amplitude times the classical action's phase times the connection's line integral along the classical path.
+The gauge transformation is a central phase at each point, its Jacobian is one, so the measure is untouched; the exponent shifts by a total derivative that cancels between the kinetic and the potential terms, so the invariance is exact and term by term, with no link and no boundary term. The determinant is gauge invariant by the similarity the shift supplies, and the density is the functional derivative of $\ln Z$ with respect to $\varphi$. The constant background is exact: the kernel is the free kernel times $\exp(-iϙ\varphi r'_t/\hbar c)$ and $\exp(iϙ\vec A\cdot\vec r/\hbar)$, its composition verified to $2.3\times10^{-12}$, with the dispersion $E+ϙ\varphi=(\vec p-q\vec A)^{2}/2m$. The semiclassical kernel is van Vleck's amplitude times the classical action's phase times the connection's line integral along the classical path.
 
 ## Summary of Notation
 
@@ -167,13 +167,13 @@ The gauge transformation is a central phase at each point, its Jacobian is one, 
 | $ϙ$ | The coupling constant; minus the older electric charge |
 | $D_t=\partial_{t'}-\frac{iϙ}{\hbar}\varphi$ | Covariant temporal derivative |
 | $D_\eta=\partial_\eta+\frac{iϙ}{\hbar}A_\eta$ | Covariant spatial derivative |
-| $\vec\pi=-i\hbar\vec\nabla+ϙ\vec A$ | Mechanical momentum |
+| $\vec\pi=-i\hbar\vec\nabla-q\vec A$ | Mechanical momentum |
 | $A_{\mathrm{gco}}=i\hbar D_t-\frac{1}{2m}(-i\hbar\vec D)^{2}$ | The first-order operator of the integral |
 | $\det(A_{\mathrm{gco}})^{-1}$ | The coupled determinant; power unchanged |
 | $e^{\frac{iϙ}{\hbar}\Gamma}$ | The gauge transformation; unit Jacobian |
 | $K_{\mathrm{gco}}$ | The constant-background kernel |
 | $\exp(-iϙ\varphi r'_t/\hbar c)\exp(iϙ\vec A\cdot\vec r/\hbar)$ | Its two factors |
-| $E+ϙ\varphi=(\vec p+ϙ\vec A)^{2}/2m$ | The dispersion's two shifts |
+| $E+ϙ\varphi=(\vec p-q\vec A)^{2}/2m$ | The dispersion's two shifts |
 | $\exp(iϙ\oint\vec A\cdot d\vec r/\hbar)$ | The connection's phase along the classical path |
 
 ## Further Reading

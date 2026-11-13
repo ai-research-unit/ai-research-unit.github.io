@@ -6,7 +6,7 @@ The biquaternion algebra carries two objects that the literature calls a spinor,
 
 This article fixes both definitions, proves what they imply, and separates them from the three pictures that stand in their place in the older literature: the column of a matrix model, the gamma matrices, and a second rotation triple attached to the conjugate part. Three results carry the content. A vector carrier has the weights $0$ and $\pm1$, a spinor carrier has $\pm\tfrac12$, and the parity of the weights is what separates them. The two parts of a Dirac spinor are not two independent carriers but two copies of one, because in adapted bases the same left multiplication has the same matrix on both. And no left multiplication carries one part into the other, so the operator that couples them multiplies on the right.
 
-The article is the spinor counterpart of *Angular Momentum and Spin in the Biquaternion Algebra*: that article defines the spin of a carrier as a maximal weight and classifies the carriers; this one takes the two spinor carriers it produces and names them. The algebra, the units, the two-sided operator and the conjugation are those of *Algebra and Element Conventions*. The two definitions use none of a Clifford relation, a gamma basis operator, a Pauli array, a volume element or a Peirce basis; the Pauli arrays appear twice, in worked instances, and never as a definition.
+The article is the spinor counterpart of *Spin and the Three Elementary Carriers in the Biquaternion Algebra*: that article defines the spin of a carrier as a maximal weight and classifies the carriers; this one takes the two spinor carriers it produces and names them. The algebra, the units, the two-sided operator and the conjugation are those of *Algebra and Element Conventions*. The two definitions use none of a Clifford relation, a gamma basis operator, a Pauli array, a volume element or a Peirce basis; the Pauli arrays appear twice, in worked instances, and never as a definition.
 
 ## The Side of a Multiplication
 
@@ -38,7 +38,7 @@ $$
 
 for a unit real vector $\vec u$.
 
-*Proof.* The irreducible modules of $M_2(\mathbb{C})$ are its minimal left ideals, which are the columns of a matrix model; the map $\vec u\mapsto S_+(\vec u)$ is a bijection from the unit sphere onto them (*Angular Momentum and Spin in the Biquaternion Algebra*, §*The Left Module: Spin One Half*). A two-dimensional left-invariant subspace is therefore one of these, and each has dimension two over $\mathbb{C}$.
+*Proof.* The irreducible modules of $M_2(\mathbb{C})$ are its minimal left ideals, which are the columns of a matrix model; the map $\vec u\mapsto S_+(\vec u)$ is a bijection from the unit sphere onto them (*Spin and the Three Elementary Carriers in the Biquaternion Algebra*, §*The Left Module: Spin One Half*). A two-dimensional left-invariant subspace is therefore one of these, and each has dimension two over $\mathbb{C}$.
 
 So an elementary spinor is an element of $S_+(\vec u)$ or of $S_-(\vec u)$ for some axis $\vec u$, and the axis is what names the carrier. Every axis gives the same module up to isomorphism, so an elementary spinor without a named axis means an element of some one of the carriers, and no statement about it depends on which.
 
@@ -55,7 +55,7 @@ the first because $(i\vec u)^2=+e_t$ and $i\vec u$ commutes with $\tilde\Pi_+(\v
 
 **Corollary (the dimension is forced).** The spin of the carrier is $\tfrac12$, the Casimir is $\tfrac34$, and the dimension is $2s+1=2$.
 
-*Proof.* The spin is the maximal weight of $\vec u\cdot\vec S$ by the definition of *Angular Momentum and Spin in the Biquaternion Algebra*, §*The Casimir and the Definition of Spin*, and that maximum is $\tfrac12$; the Casimir value and the dimension are the theorem of the same article.
+*Proof.* The spin is $\tfrac12$ because the carrier's representation space is two-dimensional, and the maximal weight of $\vec u\cdot\vec S$ is the same number read off the generators, by *Spin and the Three Elementary Carriers in the Biquaternion Algebra*, §*The Spin Is the Dimension of the Carrier* and §*The Generator Reading: the Casimir and the Ladder*; that maximum is $\tfrac12$; the Casimir value and the dimension are the theorem of the same article.
 
 **The rotation is a multiplication with the half-angle.** The rotation through $\theta$ about $\vec u$ is the exponential of the generator,
 
@@ -65,7 +65,7 @@ $$
 =\cos\tfrac{\theta}{2}\,e_t+\sin\tfrac{\theta}{2}\,\vec u ,
 $$
 
-and the elementary spinor is multiplied by that element on the left. The multiplier is a unit quaternion, so it acts on a vector by the adjoint action, turning it through a full angle, while on the spinor it acts by left multiplication with the eigenvalues $e^{\mp i\theta/2}$, the half-angle. The exponential is the corpus's own (*Angular Momentum and Spin in the Biquaternion Algebra*, §*The Rotation Generators*), and the sense of the turn follows from it. The adjoint action of $\cos\tfrac{\theta}{2}+\vec u\sin\tfrac{\theta}{2}$ turns a vector through $+\theta$ about $\vec u$ (*Quaternion Rotations and Reflections*, §*The Adjoint Action*), and that is the multiplier above at $\theta=\theta$: the spinor and the vector turn through the same angle and in the same sense, and the half-angle appears only in the eigenvalues of the multiplier. At $\theta=2\pi$ the multiplier is $-e_t$ and the spinor returns with the opposite sign; at $\theta=4\pi$ it returns unchanged. That is the double cover, and no vector carries it: a vector is returned to itself by a full turn, while a spinor is returned to its negative (*Angular Momentum and Spin in the Biquaternion Algebra*, §*The Rotation Generators*).
+and the elementary spinor is multiplied by that element on the left. The multiplier is a unit quaternion, so it acts on a vector by the adjoint action, turning it through a full angle, while on the spinor it acts by left multiplication with the eigenvalues $e^{\mp i\theta/2}$, the half-angle. The exponential is the corpus's own (*Spin and the Three Elementary Carriers in the Biquaternion Algebra*, §*The Rotation Generators*), and the sense of the turn follows from it. The adjoint action of $\cos\tfrac{\theta}{2}+\vec u\sin\tfrac{\theta}{2}$ turns a vector through $+\theta$ about $\vec u$ (*Quaternion Rotations and Reflections*, §*The Adjoint Action*), and that is the multiplier above at $\theta=\theta$: the spinor and the vector turn through the same angle and in the same sense, and the half-angle appears only in the eigenvalues of the multiplier. At $\theta=2\pi$ the multiplier is $-e_t$ and the spinor returns with the opposite sign; at $\theta=4\pi$ it returns unchanged. That is the double cover, and no vector carries it: a vector is returned to itself by a full turn, while a spinor is returned to its negative (*Spin and the Three Elementary Carriers in the Biquaternion Algebra*, §*The Rotation Generators*).
 
 **Coordinates.** In the carrier $S_+(\vec u)$ an element is $d_0\tilde\Pi_+(\vec u)+d_1\nu(\vec u)$ with $d_0,d_1\in\mathbb{C}$ and $\nu$ the companion nilpotent, so an elementary spinor is a pair of complex numbers, a coordinate vector $(d_0;d_1)$ on the carrier. The number is two because the spin is $\tfrac12$; it is not a free choice of the model.
 
@@ -209,7 +209,7 @@ No left multiplication moves between the parts, so the coupling of the parts is 
 
 ## Further Reading
 
-- [Angular Momentum and Spin in the Biquaternion Algebra](angular-momentum-and-spin-in-the-biquaternion-algebra.html), for the definition of spin as a maximal weight, the Casimir, the sphere of minimal left ideals, the double cover and the four uses of the word spin.
+- [Spin and the Three Elementary Carriers in the Biquaternion Algebra](spin-and-the-three-elementary-carriers-in-the-biquaternion-algebra.html), for the definition of spin as a maximal weight, the Casimir, the sphere of minimal left ideals, the double cover and the four uses of the word spin.
 - [Operator Chirality on the Biquaternion Algebra](operator-chirality-on-the-biquaternion-algebra.html), for the side of a multiplication as the chirality, and for the swap.
 - [The Polarized Module of the Biquaternion Algebra](the-polarized-module-of-the-biquaternion-algebra.html), for the decomposition $V\cong S\oplus S$ of the carrier and the two spinor spaces.
 - [The Pauli Module of the Biquaternion Algebra](the-pauli-module-of-the-biquaternion-algebra.html), for the two slots as two copies of one module and for the chirality operator whose eigenspaces they are.

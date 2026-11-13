@@ -122,7 +122,7 @@ the covariant wave equation with the curvature term. The coupling therefore chan
 
 The local phase is a symmetry of the coupled action, so it has a Noether current. This section states the current, states what the algebra does *not* hand over with it, and states the repair.
 
-**The Noether computation.** Take $\tilde\Xi\mapsto e^{i\alpha(R)}\tilde\Xi$ with $\alpha$ a local central angle and with the connection held fixed. The mass term contributes nothing, as §*Why the Coupling Is Forced* shows. The kinetic terms contribute $-\int(\partial_\mu\alpha)J^{\mu}$, and the current is the parent's:
+**The Noether computation.** Take $\tilde\Xi\mapsto e^{i\alpha(R)}\tilde\Xi$ with $\alpha$ a local central angle and with the connection held fixed. The mass term contributes nothing, as §*Why the Coupling Is Forced* shows. The kinetic terms contribute $-\int\sum_\mu(\partial_\mu\alpha)J_\mu$, and the current is the parent's:
 
 $$
 J^{t}=\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}\tilde\Xi_L+\tilde\Xi_R^{*}\tilde\Xi_R\Bigr],
@@ -130,7 +130,7 @@ J^{t}=\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}\tilde\Xi_L+\tilde\Xi_R^{*}\t
 J^{\eta}=\mathrm{Re}\,\mathrm{Sc}\Bigl[i\Bigl(\tilde\Xi_R^{*}\vec e_\eta\tilde\Xi_R-\tilde\Xi_L^{*}\vec e_\eta\tilde\Xi_L\Bigr)\Bigr],
 $$
 
-with $\partial_\mu J^{\mu}=0$ on solutions. **The time component is a sum over the parts and the spatial component is a difference.** The difference is not an error and it is not a convention: the two parts carry conjugate spatial derivatives, and a current built from them inherits the relative sign.
+with $\sum_\mu\partial_\mu J_\mu=0$ on solutions. **The time component is a sum over the parts and the spatial component is a difference.** The difference is not an error and it is not a convention: the two parts carry conjugate spatial derivatives, and a current built from them inherits the relative sign.
 
 **The three writings are one object.** The display above, the polar reading $J^{t}=\rho\cosh\theta_{\mathrm{rpd}}$, $J^{\eta}=\rho\sinh\theta_{\mathrm{rpd}}u_{\mathrm b,\eta}$, and the Gordon pairing
 
@@ -169,13 +169,13 @@ The inner unit $e_\mu$ is what turns the product into a current, and the right m
 **Energy and momentum.** The Lagrangian does not depend explicitly on the coordinates when the connection is constant, so the four translations give four conserved charges with
 
 $$
-T^{\mu}{}_{\nu}=\sum_{p}\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_p^{*}\,s_\mu e_\mu\,\tilde\nabla_{\mathrm{gco},\nu}\tilde\Xi_p\Bigr]-\delta^{\mu}_{\nu}\,\mathcal{L},
+T_{\mu\nu}=\sum_{p}\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_p^{*}\,s_\mu e_\mu\,\tilde\nabla_{\mathrm{gco},\nu}\tilde\Xi_p\Bigr]-\delta_{\mu\nu}\,\mathcal{L},
 $$
 
 and the gradient in the current is the covariant one. **When the connection depends on position the conservation is modified**: the divergence of the stress tensor is not zero but the Lorentz force density,
 
 $$
-\partial_\mu T^{\mu}{}_{\nu}=\frac{ϙ}{2}\,\mathrm{Re}\,\mathrm{Sc}\bigl[\tilde F_{\nu\mu}\,j^{\mu}\bigr],
+\sum_\mu\partial_\mu T_{\mu\nu}=\frac{ϙ}{2}\,\mathrm{Re}\,\mathrm{Sc}\bigl[\sum_\mu\tilde F_{\nu\mu}\,j_\mu\bigr],
 $$
 
 up to the normalization of the current, which is the statement that the matter stress tensor alone is not conserved in a background and that the field's own stress tensor takes up the difference. For a *static* background the total energy is conserved because the background does not change; for a general background only the total of matter and field is.
@@ -260,7 +260,7 @@ The constant setting is closed — a finite product of exponentials up to the ga
 | $J^{t},J^{\eta}$ | Noether current of the local phase; sum over parts, difference over parts |
 | $j_\mu$ | The same current as a pairing with two frame units |
 | $\tilde J_{\Phi,\mathrm{sp}}=i\tilde\Xi\tilde\Xi^{*}$ | The naive bilinear: gauge invariant, density sign, **not conserved** |
-| $T^{\mu}{}_{\nu}$ | Stress tensor; covariant gradient in the current |
+| $T_{\mu\nu}$ | Stress tensor; covariant gradient in the current |
 | $\rho$ | Density; $\rho=r^{2}\cosh\theta_{\mathrm{rpd}}$ in the chart |
 | $\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$ | The frame's idempotents; $\tilde\Xi_R=\tilde\Xi\Pi_-$, $\tilde\Xi_L=\tilde\Xi\Pi_+$ |
 | $s_\mu$ | Sign of the basis operator in the stress tensor's slot |

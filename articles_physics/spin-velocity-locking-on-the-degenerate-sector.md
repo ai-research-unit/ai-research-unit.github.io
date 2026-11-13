@@ -165,7 +165,7 @@ $$
 
 ### It Does Not Impose the Frenkel Condition
 
-**The lock says nothing about the spin's transversality to the flow, and on this sector the spin is generally not transverse.** The corpus's Frenkel condition is a statement about the spin tensor, $S^{\mu\nu}v_{\Phi,\nu}=0$, and it is automatic for a spin carried by a real vector: it constrains the tensor and not the vector. A different condition, that the spin vector be orthogonal to the four-velocity, is sometimes given the same name, and it is not the corpus's condition.
+**The lock says nothing about the spin's transversality to the flow, and on this sector the spin is generally not transverse.** The corpus's Frenkel condition is a statement about the spin tensor, $\sum_\nu S_{\mu\nu}v_{\Phi,\nu}=0$, and it is automatic for a spin carried by a real vector: it constrains the tensor and not the vector. A different condition, that the spin vector be orthogonal to the four-velocity, is sometimes given the same name, and it is not the corpus's condition.
 
 **Under that other condition the sector would be almost empty.** With the spin along the motion at $\theta_{\mathrm{axr}}=\pi/2$ the vector is parallel to the velocity and the orthogonality would fail, so the other condition would exclude every sector element except $\theta_{\mathrm{axr}}=0$ and $\pi$. The sector's existence therefore depends on which condition is meant, and [Spin Conservation and the Frenkel Condition](spin-conservation-and-the-frenkel-condition.html) fixes which one the corpus uses.
 

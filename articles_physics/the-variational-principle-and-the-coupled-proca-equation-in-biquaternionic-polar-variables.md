@@ -61,7 +61,7 @@ $$
 \partial_\mu\vartheta_{\mathrm{pha}}\longmapsto\partial_\mu\vartheta_{\mathrm{pha}}+\frac{ϙ}{\hbar}A_\mu
 $$
 
-in the phase slot and in the phase slot alone, with the other seven parameters' gradients untouched. That is one substitution, in one coordinate, and it is what the classical $E\mapsto E+ϙc\,a'_t$, $\vec p\mapsto\vec p+ϙ\vec A$ becomes when the phase is a coordinate. The polar companion states the same thing as the identity $\hbar c\kappa_t=E+ϙca'_t$, $\hbar\vec\kappa=\vec p+ϙ\vec A$.
+in the phase slot and in the phase slot alone, with the other seven parameters' gradients untouched. That is one substitution, in one coordinate, and it is what the classical $E\mapsto E+ϙc\,a'_t$, $\vec p\mapsto\vec p-q\vec A$ becomes when the phase is a coordinate. The polar companion states the same thing as the identity $\hbar c\kappa_t=E+ϙca'_t$, $\hbar\vec\kappa=\vec p-q\vec A$.
 
 **No multipliers for the units.** The word carries the frame as an exact unit, so the condition $\tilde U\tilde U^{\natural}=1$ and the condition $\tilde u\tilde u^{\natural}=1$ are not constraints on the eight parameters; they are properties of the parameterization. A formulation in which the frame is a set of four vectors with a normalization condition would need multipliers for the normalization, and the polar formulation needs none, because the parameters are angles. That is the structural gain of the chart over a tensor formulation, and it is a gain in bookkeeping rather than in physics.
 

@@ -304,7 +304,7 @@ $$
 | vorticity | zero identically | $r\,\omega=F-\mathrm{d}r\wedge u$ | the antisymmetrised frame gradient |
 | spin in the word | none | none | the rotor |
 | equation of state | none; a Korteweg stress | $p=\epsilon=\tfrac12m^{2}r^{2}$ | none; the spin's transport closes the system |
-| reverse condition | barotropic, irrotational and inviscid | none; closure is $J^{\mu}=m^{2}A^{\mu}$ | the Frenkel condition, or a free constitutive law |
+| reverse condition | barotropic, irrotational and inviscid | none; closure is $J_\mu=m^{2}A_\mu$ | the Frenkel condition, or a free constitutive law |
 | classical medium | a Korteweg fluid | a London plasma | a Cosserat medium |
 | degenerate set | $r=0$, codimension two | the lightlike set, codimension one | $r=0$, codimension two |
 

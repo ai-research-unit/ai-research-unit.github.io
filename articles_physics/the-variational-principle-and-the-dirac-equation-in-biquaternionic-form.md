@@ -156,7 +156,7 @@ J^{t}=\mathrm{Re}\,\mathrm{Sc}\bigl[\tilde\Xi_L^{*}\tilde\Xi_L+\tilde\Xi_R^{*}\t
 J^{\eta}=\mathrm{Re}\,\mathrm{Sc}\bigl[i\bigl(\tilde\Xi_R^{*}\vec e_\eta\tilde\Xi_R-\tilde\Xi_L^{*}\vec e_\eta\tilde\Xi_L\bigr)\bigr],
 $$
 
-with conservation $\partial_\mu J^{\mu}=0$ on solutions, by the standard argument: the variation of the action under a local angle is $-\int(\partial_\mu\alpha)J^{\mu}$ plus the equations of motion.
+with conservation $\sum_\mu\partial_\mu J_\mu=0$ on solutions, by the standard argument: the variation of the action under a local angle is $-\int\sum_\mu(\partial_\mu\alpha)J_\mu$ plus the equations of motion.
 
 **The two components have different structures and both are right.** The time component is a sum over the parts; the spatial component is a difference. The difference is not an error: the two parts carry conjugate spatial derivatives, $-\vec e_\eta\partial_\eta$ on the left and $+\vec e_\eta\partial_\eta$ on the right, and the current inherits that relative sign. In the two-component language this is the statement that one part uses $\bar\sigma$ and the other $\sigma$.
 
@@ -175,7 +175,7 @@ which is the polar parent's current $\tilde J_\Phi=\rho\tilde V_\Phi$ divided by
 **Energy and momentum.** The Lagrangian does not depend on the coordinates explicitly, so translation in $r'_t$ and in the three $r_\eta$ gives four conserved charges. The canonical expressions are
 
 $$
-T^{\mu}{}_{\nu}=\sum_{p}\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_p^{*}\,s_\mu e_\mu\,\partial_\nu\tilde\Xi_p\Bigr]-\delta^{\mu}_{\nu}\,\mathcal{L},
+T_{\mu\nu}=\sum_{p}\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_p^{*}\,s_\mu e_\mu\,\partial_\nu\tilde\Xi_p\Bigr]-\delta_{\mu\nu}\,\mathcal{L},
 \qquad
 E=T^{t}{}_{t},
 $$
@@ -258,8 +258,8 @@ The two-sided display is the same equation in a different right frame — a cons
 | $k_m=mc/\hbar$ | Mass wave number |
 | $S$ | The action; $\mathcal{L}$ its integrand |
 | $r_L,r_R$ | The two residuals, whose vanishing is the pair |
-| $J^{\mu}$ | Electric Noether current |
-| $T^{\mu}{}_{\nu}$ | Canonical energy-momentum |
+| $J_\mu$ | Electric Noether current |
+| $T_{\mu\nu}$ | Canonical energy-momentum |
 | $\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$ | Frame idempotents; $\Pi_\pm^{*}=\Pi_\pm$, $\Pi_\pm^{\natural}=\Pi_\mp$, $\Pi_+\Pi_-=0$ |
 | $\vec v$ | The fixed unit direction of the two-sided display |
 
@@ -269,7 +269,7 @@ The two-sided display is the same equation in a different right frame — a cons
 - [The Dirac Equation in Biquaternionic Polar Variables](the-dirac-equation-in-biquaternionic-polar-variables.html), for the polar word, the four brackets, the current and the spin.
 - [The Variational Principle and the Dirac Equation in Biquaternionic Polar Variables](the-variational-principle-and-the-dirac-equation-in-biquaternionic-polar-variables.html), the companion, for the same action substituted with the word.
 - [The Variational Principle and the Schrödinger Equation in Biquaternionic Form](the-variational-principle-and-the-schrodinger-equation-in-biquaternionic-form.html), for the second-order case, where the split is not forced.
-- [Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form](stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.html), for the symmetric improvement of $T^{\mu}{}_{\nu}$ and its conservation.
+- [Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form](stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.html), for the symmetric improvement of $T_{\mu\nu}$ and its conservation.
 - Takehiko Takabayasi, "Relativistic hydrodynamics of the Dirac matter," *Progress of Theoretical Physics Supplement* **4** (1957) 1–80, §8, for the tensor formulation of the same variational principle, whose unit-vector constraints need Lagrange multipliers.
 - Julian Schwinger, "The theory of quantized fields I," *Physical Review* **82** (1951) 914, for the action principle in the fermionic case.
 - Walter Greiner, *Relativistic Quantum Mechanics: Wave Equations* (Springer, 1990), for the standard action and its symmetries.

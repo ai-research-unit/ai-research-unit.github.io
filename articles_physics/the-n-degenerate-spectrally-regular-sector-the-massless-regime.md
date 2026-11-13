@@ -82,6 +82,61 @@ $$
 
 and the idempotent $e_-$ is present and non-trivial. This is the only region in which the spectrum is regular and one coefficient is zero.
 
+## The Material Case
+
+**On the material sector the region is the light cone with its apex removed, and it is one real equation rather than two.** For $\tilde Q=i\,q'_t\,e_t+\vec r$ with real coefficients,
+
+$$
+N=0\iff\lvert q'_t\rvert=\lvert\vec r\rvert,
+\qquad
+B^{2}=\lvert\vec r\rvert^{2}>0\iff\vec r\neq0,
+$$
+
+so
+
+$$
+\Sigma_{01}\cap\mathbb{B}_{\Phi}
+=\Bigl\{i\frac{E}{c}\bigl(e_t+\vec u\bigr)\ :\ E>0,\ \lvert\vec u\rvert=1\Bigr\},
+$$
+
+a cone of real dimension three, checked on one hundred null material momenta: the norm vanished to $10^{-14}$ and every one of them lay in the region. **A sector element has one invariant and a mixed element has two, and the count of nullness conditions follows.** A massless momentum costs one real equation because $N$ is real on $\mathbb{B}_{\Phi}$; a null field costs two because its norm has a real and an imaginary part, each built from both halves, and each must vanish separately. Nullness of a momentum is one condition inside a sector; nullness of a field is the intersection of two.
+
+**The sector removes exactly what needed $N\neq0$.** The direction $\vec u$, the energy $E$, the eigenvalue $2iE/c$ and the frozen zero survive, and the Peirce decomposition stays unique. The modulus and the polar word do not survive, and neither do the inverse and the generator, because all four are readings of a modulus that has vanished. **A material ray is a direction with an energy and no frame**, which is the sector's own reading of §*The Light Ray*.
+
+**A sum of two material rays carries a mass.** For two null material momenta of energies $E_1,E_2$ at angle $\theta$,
+
+$$
+N(\tilde P_1+\tilde P_2)=-2E_1E_2\bigl(1-\cos\theta\bigr),
+$$
+
+checked to $8\times10^{-15}$ over one hundred pairs. The sum is material, and it lies in $\Sigma_{11}$ for every angle strictly between $0$ and $\pi$; parallel rays stay on the cone, and equal-energy antiparallel rays land on the scalar line. **No addend is massive and the sum is**, so in this block a mass enters as a property of the addition of two rays and not of either ray.
+
+## The First Carrier: The Centre
+
+**The region is empty on the centre, and the emptiness is the strongest of the three.** $B^{2}=0$ at every point of the carrier and the region is defined by $B^{2}\neq0$, so no central element is a light ray. The stronger statement is about the cone itself: the norm on the centre is $N=q^{2}$, which vanishes only at $q=0$, and $q=0$ is the apex, which belongs to $\Sigma_{00}$.
+
+$$
+\mathbb{B}_{C}\cap\mathcal N=\{0\},
+$$
+
+**so the light cone of the first carrier is a single point.** A null scalar amplitude is the zero amplitude, and the light cone of a scalar field is the light cone of its momentum, which is a four-vector and lies in the material sector.
+
+**The reading is about the amplitude.** The region's content is a direction with an energy and no frame, and a direction is what the centre does not have: a central element is a scale together with a phase, and neither of them is a direction. **The massless limit of the field is not this statement**: it is a condition on the momentum, and the momentum reaches this region in the material sector, where the material case of this article puts it.
+
+## The Second Carrier: The Minimal Left Ideal
+
+**This is the generic region of the carrier.** $N=0$ at every point of $S_{\pm}$, so the whole carrier lies in $\Sigma_{01}\cup\Sigma_{00}$, and $B^{2}=-q_t^{2}$ vanishes exactly on the nilpotent line $q_t=0$. Hence
+
+$$
+\Sigma_{01}\cap S_{\pm}=\{\,q_t\neq0\,\},
+$$
+
+the complement of a complex line, open and dense in the carrier, of real dimension four. **A spinor value is a light ray at almost every point of its carrier**, and the exceptions are a set of real codimension two.
+
+**The zero eigenvalue is frozen by the carrier and not by the region.** Since $\lambda_+\lambda_-=N=0$ and $\lambda_++\lambda_-=2Q_t$, every member has the spectrum $\{0,2q_t\}$, and the region's class $\kappa\tilde\Pi$ with $\kappa=2Q_t$ is the carrier's family written with the nilpotent coefficient set to zero. **The one zero mode that §*The Idempotent* reads as the mark of the massless ray is therefore a property of every member of the second carrier**, massive or not, and the region's name describes the carrier rather than selecting a part of it.
+
+**The material share of the carrier is one line of this region.** $\mathbb{B}_{\Phi}\cap S_{\pm}=\mathbb{R}i\tilde\Pi_{\pm}$, which has $N=0$ and $B^{2}=\tfrac14$, so it is a null four-vector along the frame's third axis: $i\,a'_t\,e_t+\vec A$ with $a'_t=\tfrac12$ and $\vec A=-\tfrac12\vec e_z$. **So the light rays of the material case meet the spinor carrier in exactly one direction**, the direction the frame already names.
+
 ## The Light Ray
 
 ### The Idempotent
@@ -248,6 +303,8 @@ The region is not a particle count. One zero eigenvalue is one frozen mode, not 
 - On the real slice the idempotent is a Hermitian pure boundary state; the momentum is an imaginary multiple of it, and a general complex idempotent is a null flag.
 - The cone is ruled by the null lines; the region is the generic part, with the doubly degenerate region as boundary.
 - The region supplies no dynamics, no wave equation and no particle count.
+- On the material sector the region is the light cone minus its apex, one real equation because the norm is real there; the idempotent is informational and the scale purely imaginary, and a sum of two such rays carries a mass $-2E_1E_2(1-\cos\theta)$.
+- This is the generic region of the minimal left ideal, where a spinor value is a light ray at almost every point and the zero eigenvalue is frozen by the carrier; the centre meets the region nowhere, and the light cone of the first carrier is a single point.
 
 ## Summary of Notation
 
@@ -264,12 +321,14 @@ The region is not a particle count. One zero eigenvalue is one frozen mode, not 
 | $\tilde\Pi\mathbb{B}$ | the image of $L_{\tilde Q}$, a minimal right ideal |
 | $\ker L_{\tilde Q}$ | the left annihilator, spanned by $\vec\Upsilon_+$ and $e_-$ |
 | $\mathcal N=\{N=0\}$ | the null cone |
+| $i\,q'_t\,e_t+\vec r$ | a material element, $q'_t\in\mathbb{R}$, $\vec r\in\mathbb{R}^{3}$ |
 
 ## Further Reading
 
-- [The Four Regimes of an Element: Mass and Motion](the-four-regimes-of-an-element-mass-and-motion.html), for the partition and the other three regions.
+- [The Three Elementary Carriers and the Four Sectors of Regularity and Degeneracy](the-three-elementary-carriers-and-the-four-sectors-of-regularity-and-degeneracy.html), for the partition and the other three regions.
 - [The Zero-Divisor Cone and the Massless Spectrum](the-zero-divisor-cone-and-the-massless-spectrum.html), for the cone, its rulings and the massless limit.
 - [The Spectral Reading of a Four-Vector](the-spectral-reading-of-a-four-vector.html), for the massless limit of the Doppler pair.
 - [The N-Degenerate, Spectrally Degenerate Sector: The Vacuum and the Nilpotent Ladder](the-n-degenerate-spectrally-degenerate-sector-the-vacuum-and-the-nilpotent-ladder.html), for the boundary of the region.
 - [The N-Regular, Spectrally Regular Sector: Mass in Motion](the-n-regular-spectrally-regular-sector-mass-in-motion.html), for the region whose boundary this is.
 - [The Polarized Module of the Biquaternion Algebra](../articles_maths/the-polarized-module-of-the-biquaternion-algebra.html), for the primitive idempotents and the spinor spaces.
+- [Spin and the Three Elementary Carriers](spin-and-the-three-elementary-carriers.html), for the three carriers whose reach this article uses.

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Minimal coupling replaces the canonical momentum by the mechanical one, $\vec p\to\vec\pi=\vec p-ϙ\vec A$. The canonical commutation relation is written for the canonical momentum. The two statements sit side by side in every textbook, and the question this article answers is what the relation can and cannot see of the replacement.
+Minimal coupling replaces the canonical momentum by the mechanical one, $\vec p\to\vec\pi=\vec p-q\vec A$. The canonical commutation relation is written for the canonical momentum. The two statements sit side by side in every textbook, and the question this article answers is what the relation can and cannot see of the replacement.
 
 The answer has two halves, and they do not agree. The first half of the relation, the bracket of position with momentum, is blind to the vector potential. It holds for the canonical momentum and for the mechanical one, and it holds for any shift of the momentum by a function of position. The second half, the bracket of two momenta with each other, is not blind. It vanishes for the canonical momentum and equals the field strength for the mechanical one.
 
@@ -239,7 +239,7 @@ The two statements are one statement seen twice. The field strength is central b
 
 ## Summary
 
-Minimal coupling replaces $\vec p$ by $\vec\pi=\vec p-ϙ\vec A$, and the canonical commutation relation accepts the replacement without noticing it. The bracket of position with momentum is unchanged, because the vector potential is a function of position and commutes with position; more generally, any shift of the momentum by a function of position leaves that bracket untouched, so the relation fixes the momentum only up to a function of position. The bracket of two momenta is not blind: it vanishes for the canonical momentum, is the antisymmetrised derivative of the shift for a general one, and equals $i\,\hbar\,ϙ\varepsilon_{j\eta l}B_l$ for minimal coupling.
+Minimal coupling replaces $\vec p$ by $\vec\pi=\vec p-q\vec A$, and the canonical commutation relation accepts the replacement without noticing it. The bracket of position with momentum is unchanged, because the vector potential is a function of position and commutes with position; more generally, any shift of the momentum by a function of position leaves that bracket untouched, so the relation fixes the momentum only up to a function of position. The bracket of two momenta is not blind: it vanishes for the canonical momentum, is the antisymmetrised derivative of the shift for a general one, and equals $i\,\hbar\,ϙ\varepsilon_{j\eta l}B_l$ for minimal coupling.
 
 The kinetic angular momentum $\tilde L_{\mathrm{kin},i}=\varepsilon_{ij\eta}r_j\pi_\eta e_t$ inherits the difference. With uniform $\vec B$,
 

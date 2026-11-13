@@ -28,13 +28,13 @@ with $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$ the material connection, and the who
 
 *First, the connection is a central-imaginary number in every slot, so it joins the phase bracket and nothing else.* The free article decomposes $\tilde\Xi^{-1}\partial_{t'}\tilde\Xi$ into four objects of four algebraic types — a real scalar, a central imaginary, a Hermitian element, a real vector — and the equation reads each of them separately. The covariant bracket is the free one plus $-\frac{iϙ}{\hbar}\varphi$ in the temporal slot and $+\frac{iϙ}{\hbar}A_\eta$ in each spatial slot. Every one of those additions is a central imaginary number, so each joins the second bracket; the scale, the boost and the rotor cannot receive anything. The consequence is exact and it is the article's sharpest statement: the connection moves the phase and only the phase, so in the central field the quantum potential is untouched by it (§*The Covariant Logarithmic Derivative*).
 
-*Second, in the constant setting the coupling is a shift of the two eigenvalues and of the axis.* The free flow's numbers are the mean $h_t$ and the vector $\vec h_\Psi$; the coupled flow's are $h_t-ϙ\varphi$ and $\vec h_\Psi+ϙ\vec A$. The scale and the rapidity are still frozen, the phase still advances at minus the mean of the shifted pair, and the carried directions still precess at the gap of the shifted pair. The kinetic momentum is the shifted vector, the canonical momentum the unshifted one, and the difference between them is the vector potential (§*The General Element in the Constant Setting*).
+*Second, in the constant setting the coupling is a shift of the two eigenvalues and of the axis.* The free flow's numbers are the mean $h_t$ and the vector $\vec h_\Psi$; the coupled flow's are $h_t-ϙ\varphi$ and $\vec h_\Psi-q\vec A$. The scale and the rapidity are still frozen, the phase still advances at minus the mean of the shifted pair, and the carried directions still precess at the gap of the shifted pair. The kinetic momentum is the shifted vector, the canonical momentum the unshifted one, and the difference between them is the vector potential (§*The General Element in the Constant Setting*).
 
 *Third, in the operator setting the word reproduces the covariant Madelung pair, and the connection enters only where the pair can carry it.* The continuity equation gets the kinetic momentum in place of the gradient, the Hamilton–Jacobi equation gets the kinetic energy in place of the kinetic term and $-ϙ\varphi$ in place of nothing, and the quantum potential is written with the ordinary gradient of the scale because the connection cannot touch it. The plate is standard quantum hydrodynamics; the biquaternionic form of it is what the article supplies (§*The Central Field in the Operator Setting*).
 
 **What is not claimed.** No new prediction and no new solution: the equation is the element form's and the flow is its consequence. The polar chart does not decouple the four brackets from the parameters, does not simplify the equation, and does not supply a second constant of motion. What it supplies is the reading: which bracket the connection joins, which coordinate the gauge group translates, and which invariants the coupling leaves alone.
 
-**Conventions.** The algebra, the pairing, the sectors, the two settings and the parameter ranges are the free polar article's and are not restated. Time is $t'$, so that $i\hbar\partial_{t'}=i\hbar c\,\partial_{r'_t}$ and the element form's $r'_t=c\,t'$ is the parent's material length; the polar article uses $t'$ throughout, and so does this one. The connection is $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$ with $\varphi=c\,a'_t$ and $\vec A$ real, and the coupling is $ϙ$, which is minus the electric charge of the older convention: the mechanical momentum is $\vec\pi=-i\hbar\nabla+ϙ\vec A$ and the potential energy enters as $-ϙ\varphi$. The density is $n=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=\rho/2$, and the word gives $n=r^{2}\cosh\theta_{\mathrm{rpd}}$.
+**Conventions.** The algebra, the pairing, the sectors, the two settings and the parameter ranges are the free polar article's and are not restated. Time is $t'$, so that $i\hbar\partial_{t'}=i\hbar c\,\partial_{r'_t}$ and the element form's $r'_t=c\,t'$ is the parent's material length; the polar article uses $t'$ throughout, and so does this one. The connection is $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$ with $\varphi=c\,a'_t$ and $\vec A$ real, and the coupling is $ϙ$, which is minus the electric charge of the older convention: the mechanical momentum is $\vec\pi=-i\hbar\nabla-q\vec A$ and the potential energy enters as $-ϙ\varphi$. The density is $n=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=\rho/2$, and the word gives $n=r^{2}\cosh\theta_{\mathrm{rpd}}$.
 
 ## The Covariant Logarithmic Derivative
 
@@ -63,7 +63,7 @@ $$
 so the scale gradient is untouched and the phase gradients are translated: by $+\frac{ϙ}{\hbar}\vec A$ in space and by $-\frac{ϙ}{\hbar}\varphi$ in time. Multiplying by $\hbar$ gives the two invariants of the coupled theory,
 
 $$
-\vec\pi=\hbar\nabla\theta_{\mathrm{pha}}+ϙ\vec A,
+\vec\pi=\hbar\nabla\theta_{\mathrm{pha}}-q\vec A,
 \qquad
 \mathcal E=-\hbar\,\partial_{t'}\theta_{\mathrm{pha}}+ϙ\varphi,
 $$
@@ -80,7 +80,7 @@ $$
 i\hbar\,\partial_{t'}\tilde\Xi=\tilde H^{\mathrm{gco}}_\Psi\,\tilde\Xi,
 \qquad
 \tilde H^{\mathrm{gco}}_\Psi=\tilde H_\Psi-ϙ\varphi\,e_t+i\,ϙ\vec A
-=\big(h_t-ϙ\varphi\big)e_t+i\big(\vec h_\Psi+ϙ\vec A\big).
+=\big(h_t-ϙ\varphi\big)e_t+i\big(\vec h_\Psi-q\vec A\big).
 $$
 
 The shifted element is Hermitian, of the same form as the unshifted one, with two real numbers changed. That is the whole of minimal coupling in a setting with no derivatives, and it is why the article can state the coupled flow without a new derivation.
@@ -92,11 +92,11 @@ The shifted element is Hermitian, of the same form as the unshifted one, with tw
   $$\partial_{t'}\theta_{\mathrm{pha}}=-\frac{h_t-ϙ\varphi}{\hbar},$$
   so a constant potential translates the frequency by $ϙ\varphi/\hbar$ and does nothing else;
 - every carried direction precesses at the shifted gap,
-  $$|\vec\Omega|=\frac{2\,|\vec h_\Psi+ϙ\vec A|}{\hbar},$$
+  $$|\vec\Omega|=\frac{2\,|\vec h_\Psi-q\vec A|}{\hbar},$$
   so a constant vector potential translates the axis about which the precession happens and changes its rate;
 - the density $n=r^{2}\cosh\theta_{\mathrm{rpd}}$ is constant, and so is the charge density $ϙn$.
 
-**The two momenta.** The unshifted $\vec h_\Psi$ is the canonical momentum and the shifted $\vec h_\Psi+ϙ\vec A$ is the kinetic momentum, which is the vector that appears in the precession rate. The relation is the spatial half of the dictionary; the temporal half is $h_t$ and $h_t-ϙ\varphi$, and the two halves carry opposite signs for the metric reason the element-form companion states. In the free case $\vec h_\Psi$ is the field's momentum and $h_t$ its energy; after the coupling the pair $(\vec h_\Psi+ϙ\vec A,\,h_t-ϙ\varphi)$ is the mechanical pair, and the pair $(\vec h_\Psi,h_t)$ is what the canonical equations of the variational companion conjugate.
+**The two momenta.** The unshifted $\vec h_\Psi$ is the canonical momentum and the shifted $\vec h_\Psi-q\vec A$ is the kinetic momentum, which is the vector that appears in the precession rate. The relation is the spatial half of the dictionary; the temporal half is $h_t$ and $h_t-ϙ\varphi$, and the two halves carry opposite signs for the metric reason the element-form companion states. In the free case $\vec h_\Psi$ is the field's momentum and $h_t$ its energy; after the coupling the pair $(\vec h_\Psi-q\vec A,\,h_t-ϙ\varphi)$ is the mechanical pair, and the pair $(\vec h_\Psi,h_t)$ is what the canonical equations of the variational companion conjugate.
 
 **What the shift cannot do.** It cannot change the rapidity, and therefore it cannot change the density's relation to $r$; it cannot change the rotor's type, so a carried direction stays carried; and it cannot turn a real-vector bracket into a Hermitian one. In the flow's terms: a constant potential displaces the spectrum rigidly and rotates the rotor's axis, and it leaves the two-scale structure — one rate for the phase, one for each carried direction — exactly as it was.
 
@@ -109,23 +109,23 @@ The shifted element is Hermitian, of the same form as the unshifted one, with tw
 $$
 \hat H^{\mathrm{gco}}=\frac{\tilde{\vec\pi}^{\,2}}{2m}-ϙ\varphi+\hat V,
 \qquad
-\tilde{\vec\pi}=-i\hbar\nabla+ϙ\vec A .
+\tilde{\vec\pi}=-i\hbar\nabla-q\vec A .
 $$
 
 **The continuity equation.** Varying the phase gives the covariant continuity equation,
 
 $$
-\partial_{t'}\big(r^{2}\big)+\nabla\cdot\Big(r^{2}\,\frac{\nabla S+ϙ\vec A}{m}\Big)=0,
+\partial_{t'}\big(r^{2}\big)+\nabla\cdot\Big(r^{2}\,\frac{\nabla S-q\vec A}{m}\Big)=0,
 \qquad
 S=\hbar\,\theta_{\mathrm{pha}},
 $$
 
-so the current is $r^{2}(\nabla S+ϙ\vec A)/m=r^{2}\vec\pi/m$, which is the free current with the kinetic momentum in place of the gradient. Nothing else changes: the density is $r^{2}$, the velocity is $\vec\pi/m$, and the equation is the statement that the density is transported by the kinetic velocity and not by the canonical one.
+so the current is $r^{2}(\nabla S-q\vec A)/m=r^{2}\vec\pi/m$, which is the free current with the kinetic momentum in place of the gradient. Nothing else changes: the density is $r^{2}$, the velocity is $\vec\pi/m$, and the equation is the statement that the density is transported by the kinetic velocity and not by the canonical one.
 
 **The Hamilton–Jacobi equation.** Collecting the real part of the equation for $r$ gives
 
 $$
-\partial_{t'}S+\frac{|\nabla S+ϙ\vec A|^{2}}{2m}-ϙ\varphi+Q=0,
+\partial_{t'}S+\frac{|\nabla S-q\vec A|^{2}}{2m}-ϙ\varphi+Q=0,
 \qquad
 Q=-\frac{\hbar^{2}}{2m}\frac{\Delta r}{r},
 $$
@@ -140,7 +140,7 @@ $$
 
 is the kinetic energy of the flow, and it is gauge invariant. In terms of the phase and the potential it is the free kinetic energy plus the potential, which is the classical statement that the total energy minus the potential energy is the kinetic one. The gauge invariance is worth one line: $\theta_{\mathrm{pha}}$ shifts by $+ϙ\Gamma/\hbar$ and $\varphi$ by $+\partial_{t'}\Gamma$, so the two halves of $\mathcal E$ move in the same direction and by the same amount, and the article records that the phase rate alone is not gauge invariant — only the combination is.
 
-**The vorticity.** The velocity is $\vec v=\vec\pi/m=(\nabla S+ϙ\vec A)/m$, and its curl is
+**The vorticity.** The velocity is $\vec v=\vec\pi/m=(\nabla S-q\vec A)/m$, and its curl is
 
 $$
 \nabla\times\vec v=\frac{ϙ}{m}\,\vec B,
@@ -216,14 +216,14 @@ $$
 
 Each addition is a central imaginary number, so the connection joins the phase bracket and reaches no other: the scale, the rapidity, the boost's axis and the rotor's axis are untouched by it in type, and the gauge group acts on the chart as the translation of $\theta_{\mathrm{pha}}$ alone.
 
-In the constant setting the coupled element is $\tilde H^{\mathrm{gco}}_\Psi=(h_t-ϙ\varphi)e_t+i(\vec h_\Psi+ϙ\vec A)$ and the free flow applies with two numbers shifted: the scale and the rapidity frozen, the phase advancing at $-(h_t-ϙ\varphi)/\hbar$, every carried direction precessing at $2|\vec h_\Psi+ϙ\vec A|/\hbar$. The unshifted vector is the canonical momentum, the shifted one the kinetic momentum.
+In the constant setting the coupled element is $\tilde H^{\mathrm{gco}}_\Psi=(h_t-ϙ\varphi)e_t+i(\vec h_\Psi-q\vec A)$ and the free flow applies with two numbers shifted: the scale and the rapidity frozen, the phase advancing at $-(h_t-ϙ\varphi)/\hbar$, every carried direction precessing at $2|\vec h_\Psi-q\vec A|/\hbar$. The unshifted vector is the canonical momentum, the shifted one the kinetic momentum.
 
 In the operator setting, for the central field,
 
 $$
-\partial_{t'}r^{2}+\nabla\cdot\Big(r^{2}\frac{\nabla S+ϙ\vec A}{m}\Big)=0,
+\partial_{t'}r^{2}+\nabla\cdot\Big(r^{2}\frac{\nabla S-q\vec A}{m}\Big)=0,
 \qquad
-\partial_{t'}S+\frac{|\nabla S+ϙ\vec A|^{2}}{2m}-ϙ\varphi+Q=0,
+\partial_{t'}S+\frac{|\nabla S-q\vec A|^{2}}{2m}-ϙ\varphi+Q=0,
 $$
 
 the covariant Madelung pair, with the quantum potential $Q=-\hbar^{2}\Delta r/2mr$ unchanged. The kinetic momentum is invariant, the kinetic energy $-\hbar\partial_{t'}\theta_{\mathrm{pha}}+ϙ\varphi$ is invariant, the vorticity is $ϙ\vec B/m$, and the circulation around a loop is $\big(2\pi\hbar n+ϙ\Phi_B\big)/m$.
@@ -241,13 +241,13 @@ the covariant Madelung pair, with the quantum potential $Q=-\hbar^{2}\Delta r/2m
 | $\mathcal A^{\mathrm{gco}}_\mu$ | The covariant one: $\mathcal A_t-\frac{iϙ}{\hbar}\varphi$ and $\mathcal A_\eta+\frac{iϙ}{\hbar}A_\eta$ |
 | $ϙ$ | The coupling; minus the electric charge of the older convention |
 | $\varphi$, $\vec A$ | The electric potential, $\varphi=c\,a'_t$, and the vector potential |
-| $\vec\pi=\hbar\nabla\theta_{\mathrm{pha}}+ϙ\vec A$ | The kinetic momentum |
+| $\vec\pi=\hbar\nabla\theta_{\mathrm{pha}}-q\vec A$ | The kinetic momentum |
 | $\mathcal E=-\hbar\partial_{t'}\theta_{\mathrm{pha}}+ϙ\varphi$ | The kinetic energy |
 | $S=\hbar\theta_{\mathrm{pha}}$ | The action of the flow |
 | $Q=-\hbar^{2}\Delta r/2mr$ | The quantum potential |
 | $n=r^{2}\cosh\theta_{\mathrm{rpd}}$ | The density; $\rho=2n$ |
 | $h_t$, $\vec h_\Psi$ | The canonical energy and momentum of the constant setting |
-| $h_t-ϙ\varphi$, $\vec h_\Psi+ϙ\vec A$ | The kinetic energy and momentum |
+| $h_t-ϙ\varphi$, $\vec h_\Psi-q\vec A$ | The kinetic energy and momentum |
 | $\Phi_B$ | The magnetic flux through a loop |
 | $\Gamma$, $\lambda=e^{iϙ\Gamma/\hbar}$ | The gauge function and factor |
 

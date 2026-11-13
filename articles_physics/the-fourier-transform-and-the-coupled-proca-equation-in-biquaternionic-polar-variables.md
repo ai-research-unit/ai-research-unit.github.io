@@ -21,7 +21,7 @@ The algebra, the products, the two forms, the units and the sectors are those of
 $$
 \tilde\nabla_{\mathrm{gco},\mu}\longmapsto i\pi_\mu ,
 \qquad
-\pi_\mu=\hbar k_\mu+\varkappa A_\mu ,
+\pi_\mu=\hbar k_\mu-q A_\mu ,
 \qquad
 k_t'=\frac{\omega}{c} ,
 \qquad
@@ -164,7 +164,7 @@ The gauge transformation is the phase coordinate's motion, and on the symbol it 
 
 | Symbol | Meaning |
 | --- | --- |
-| $\pi_\mu=\hbar k_\mu+\varkappa A_\mu$ | The shifted four-momentum; the symbol's argument |
+| $\pi_\mu=\hbar k_\mu-q A_\mu$ | The shifted four-momentum; the symbol's argument |
 | $\varkappa$ | The coupling |
 | $r,\ \vartheta_{\mathrm{pha}},\ \theta_{\mathrm{rpd}},\ \hat u_{\mathrm b},\ \phi_{\mathrm{rot}},\ \hat n_{\mathrm{ax}}$ | Scale, phase, rapidity, boost axis, rotor angle, rotor axis |
 | $\sigma_{\mathrm{gco}}=-\pi^{2}\delta+\frac{i\varkappa}{\hbar}F-\pi^\mu\pi_\nu$ | The coupled symbol; Hermitian, complex |

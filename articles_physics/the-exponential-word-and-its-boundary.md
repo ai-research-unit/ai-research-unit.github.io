@@ -150,7 +150,7 @@ The word is defined if and only if the element is a unit. On the cone the scale 
 | Stratum | Condition | Normal form | Real dimension | What it is |
 | --- | --- | --- | --- | --- |
 | idempotent | $Q_t\neq0$ | $\tilde Q=2Q_t\tilde\Pi$, $\tilde\Pi^2=\tilde\Pi$ | $6$ | a complex multiple of a minimal idempotent |
-| nilpotent | $Q_t=0$ | $\tilde Q=N$, $N^2=0$ | $4$ | a lightlike displacement |
+| nilpotent | $Q_t=0$ | $\tilde Q=N$, $N^2=0$ | $4$ | the complex isotropic model of a null direction |
 
 The idempotent stratum is open and dense in the cone; the nilpotent stratum is a closed subvariety of codimension two and lies in its closure. The two are disjoint, and the scalar part distinguishes them pointwise.
 
@@ -232,7 +232,7 @@ The two strata are therefore reached only at infinity: the idempotent by the div
 - **The cone is the massless wall.** The scale collapses and the rapidity diverges as the element approaches the null cone. The reading is the absence of a rest frame at the speed of light, and the word's failure is the same failure as the boost parametrisation at $\beta=1$.
 The physical limit that realises the theorem, with the mass and the energy of the massive family, is [The Massless Limit as a Boundary Value of the Polar Word](the-massless-limit-as-a-boundary-value-of-the-polar-word.html).
 
-- **The two strata are two kinds of boundary point.** The idempotent stratum is a complex multiple of a minimal idempotent, the algebraic form of the photon; the nilpotent stratum is a lightlike displacement, not a four-momentum. The reading is the massless spectrum's two boundary behaviours, and they must not be identified.
+- **The two strata are two kinds of boundary point.** The idempotent stratum is a complex multiple of a minimal idempotent, the algebraic form of the photon; the nilpotent stratum is the complex isotropic model of a null direction, not a four-momentum and not a real lightlike displacement. The reading is the massless spectrum's two boundary behaviours, and they must not be identified.
 - **The stratum is selected by the rotor, not by the rate.** The same divergence reaches an idempotent or a nilpotent according to the relative orientation of the rotor and the boost axis. The reading is that the boundary value depends on the path, not only on the point.
 - **The rate is not selected by the algebra.** The family can approach the cone at any exponential rate that keeps $re^{\theta_{\mathrm{rpd}}/2}$ finite. The reading is that the algebra supplies the boundary values, not the approach.
 
@@ -258,7 +258,7 @@ The algebra supplies no rate, no dynamics and no massless particle. It supplies 
 - On aligned axes the word is one exponential with a complex angle $\theta_{\mathrm{axr}}/2+i\theta_{\mathrm{rpd}}/2$, the Hamilton angle up to the factor of two; on skew axes no single complex angle on a **real** axis exists, while the element is still one exponential on a complex axis.
 - The defect is the non-additivity of generators, the same structure as the Wigner rotation and the field-strength commutator, but it is not a coupling and not a dynamics.
 - The word is defined off the zero-divisor cone; on the cone the scale collapses and the rapidity diverges.
-- The cone has two strata: the idempotent stratum, a complex multiple of a minimal idempotent, and the nilpotent stratum, a square-zero lightlike displacement.
+- The cone has two strata: the idempotent stratum, a complex multiple of a minimal idempotent, and the nilpotent stratum, a square-zero complex isotropic model of a null direction.
 - The boundary limit of the family $R e^{-\theta_{\mathrm{rpd}}/2}\varkappa_{\mathrm{phs}} e^{i\theta_{\mathrm{rpd}}\vec u_{\mathrm b}/2}\tilde u_{\mathrm r}$ is $\frac{R\varkappa_{\mathrm{phs}}}{2}(e_t+i\vec u_{\mathrm b})\tilde u_{\mathrm r}$; it is an idempotent when the rotor does not anticommute with the boost axis and a nilpotent when it does.
 - The rate of approach is exponential and is not selected by the algebra.
 - The idempotent is the direction of an infinite boost; the nilpotent is the rescaled limit of the unipotent line.

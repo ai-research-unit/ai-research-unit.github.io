@@ -67,7 +67,7 @@ $$
 \tilde P_\Phi=i\frac{E}{c}e_t+\vec p,
 $$
 
-with $E=-\hbar c\,\partial\theta_{\mathrm{pha}}/\partial r'_t$ and $\vec p=\hbar\nabla\theta_{\mathrm{pha}}$ the free readings. Slot by slot the shift is $E\mapsto E+ϙc\,a'_t$ and $\vec p\mapsto\vec p+ϙ\vec A$ — one substitution in one element, with the two signs the metric's and not a convention.
+with $E=-\hbar c\,\partial\theta_{\mathrm{pha}}/\partial r'_t$ and $\vec p=\hbar\nabla\theta_{\mathrm{pha}}$ the free readings. Slot by slot the shift is $E\mapsto E+ϙc\,a'_t$ and $\vec p\mapsto\vec p-q\vec A$ — one substitution in one element, with the two signs the metric's and not a convention.
 
 **The one-line reason, and the reason it matters for the fluid.** A central connection acts on the word as a whole, so it can move the phase and cannot reach inside the product $e^{i\theta_{\mathrm{pha}}}\varepsilon$ to change the branch. **The branch $\varepsilon$ is untouched by the coupling**, and that is the first of the article's negative results: the charge does not repair the sign of the charge density.
 
@@ -163,7 +163,7 @@ $$
 and differentiating it and contracting with the velocity gives, in four-vector form,
 
 $$
-m\frac{\mathrm{d}V_\mu}{\mathrm{d}\tau}=-ϙF_{\mu\nu}V^{\nu}-\partial_\mu Q_{\mathrm{qnt}},
+m\frac{\mathrm{d}V_\mu}{\mathrm{d}\tau}=-ϙ\sum_\nu\varepsilon_\nu F_{\mu\nu}V_\nu-\partial_\mu Q_{\mathrm{qnt}},
 $$
 
 whose spatial slots are the display a reader expects:
@@ -172,15 +172,15 @@ $$
 \frac{\mathrm{d}\vec p^{\mathrm{mech}}}{\mathrm{d}t}
 =-ϙ\bigl(\vec E+\vec v\times\vec B\bigr)-\gamma^{-1}\nabla Q_{\mathrm{qnt}},
 \qquad
-\vec p^{\mathrm{mech}}=\vec p+ϙ\vec A .
+\vec p^{\mathrm{mech}}=\vec p-q\vec A .
 $$
 
-**The sign of the four-vector form is the metric's and the spatial form is the check.** With a lower index, the Lorentz term is $-ϙF_{\mu\nu}V^{\nu}$, whose spatial slots are $-ϙE_i\gamma-ϙ(\vec v\times\vec B)_i\gamma$; dividing by the $\gamma$ that converts $\mathrm{d}/\mathrm{d}\tau$ to $\mathrm{d}/\mathrm{d}t$ leaves the display above with both of its sub-terms at order zero in $\gamma$. **With $ϙ$ the negative of the electric charge the display reads $q(\vec E+\vec v\times\vec B)-\gamma^{-1}\nabla Q_{\mathrm{qnt}}$**, which is the standard force on a charge $q$: the sign is the coupling's, and the mass shell is what fixes it, because the potential energy is $-ϙ\varphi$. The free article's $-ϙ\to0$ case is its own acceleration law, term for term.
+**The sign of the four-vector form is the metric's and the spatial form is the check.** With all the indices low, the Lorentz term is $-ϙ\sum_\nu\varepsilon_\nu F_{\mu\nu}V_\nu$, whose spatial slots are $-ϙE_i\gamma-ϙ(\vec v\times\vec B)_i\gamma$; dividing by the $\gamma$ that converts $\mathrm{d}/\mathrm{d}\tau$ to $\mathrm{d}/\mathrm{d}t$ leaves the display above with both of its sub-terms at order zero in $\gamma$. **With $ϙ$ the negative of the electric charge the display reads $q(\vec E+\vec v\times\vec B)-\gamma^{-1}\nabla Q_{\mathrm{qnt}}$**, which is the standard force on a charge $q$: the sign is the coupling's, and the mass shell is what fixes it, because the potential energy is $-ϙ\varphi$. The free article's $-ϙ\to0$ case is its own acceleration law, term for term.
 
 **The check was carried out symbolically and it is exact.** Taking an arbitrary action $S$ and an arbitrary potential $A_\mu$ in one time and one space dimension, defining $Q_{\mathrm{qnt}}$ by the mass shell above and $V=\tilde P^{\mathrm{mech}}/m$, the identity
 
 $$
-V^{\nu}\partial_\nu P^{\mathrm{mech}}_\mu+ϙF_{\mu\nu}V^{\nu}+\partial_\mu Q_{\mathrm{qnt}}=0
+\sum_\nu\varepsilon_\nu V_\nu\partial_\nu P^{\mathrm{mech}}_\mu+ϙ\sum_\nu\varepsilon_\nu F_{\mu\nu}V_\nu+\partial_\mu Q_{\mathrm{qnt}}=0
 $$
 
 was verified to hold in both slots with no residual term. Each of the three terms has a reading: the first is the acceleration, the second is the Lorentz force with the sign the metric gives a lower index, and the third is the free article's quantum gradient, unchanged.

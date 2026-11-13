@@ -93,7 +93,7 @@ which is the polar equation companion's amplitude equation with the mechanical b
 
 **The quantum potential is untouched.** It is $-\frac{\hbar^{2}}{2m}\Box_\Phi r/r$, a functional of the scale alone, and the connection does not appear in it because the connection does not appear in the amplitude's terms. **This is the chart's sharpest statement about the coupling**: the coupling changes the relation between the phase's rate and the momentum, and it changes nothing about the curvature of the density.
 
-**Stationarity in the angle gives the mechanical transport equation.** Varying $\theta_{\mathrm{pha}}$ gives $\partial_\mu\bigl(r^{2}\kappa^{\mu}_{\mathrm{kin}}\bigr)=0$, which is the divergence of the density times the mechanical four-velocity. The free article's saddle is the same equation with the free rate, so **the coupling's whole effect on the constraint is to replace the phase's gradient by the mechanical one.**
+**Stationarity in the angle gives the mechanical transport equation.** Varying $\theta_{\mathrm{pha}}$ gives $\sum_\mu\partial_\mu\bigl(r^{2}\kappa_{\mathrm{kin},\mu}\bigr)=0$, which is the divergence of the density times the mechanical four-velocity. The free article's saddle is the same equation with the free rate, so **the coupling's whole effect on the constraint is to replace the phase's gradient by the mechanical one.**
 
 **The check is the free check with a link phase.** On the same one-dimensional chain as the free article's, with the same weights and the same endpoints, adding link phases $-0.61$ and $0.29$ leaves the angle's integral equal to its saddle times the Fresnel factor to $1.2\times10^{-13}$, and the saddle satisfies the discrete divergence condition to $4\times10^{-16}$ against a link current of $0.28$. **The phase integral is its saddle times a Fresnel factor, and the saddle is the mechanical transport equation.**
 
@@ -169,7 +169,7 @@ The chart carries the action's reading of the covariant square and cannot carry 
 | $c^{2}r^{2}$ | The quadratic interaction term; no derivative |
 | $\frac{ϛ^{2}r^{2}}{\hbar^{2}}\bigl((a'_t)^{2}-\lvert\vec A\rvert^{2}\bigr)$ | The quadratic term in the material slots; the relative sign is the metric's |
 | $\kappa^{\mathrm{kin}}\!\cdot\kappa^{\mathrm{kin}}=k_m^{2}-\Box_\Phi r/r$ | The amplitude equation; the scale's saddle |
-| $\partial_\mu\bigl(r^{2}\kappa^{\mu}_{\mathrm{kin}}\bigr)=0$ | The mechanical transport equation; the angle's saddle |
+| $\sum_\mu\partial_\mu\bigl(r^{2}\kappa_{\mathrm{kin},\mu}\bigr)=0$ | The mechanical transport equation; the angle's saddle |
 | $-\frac{\hbar^{2}}{2m}\Box_\Phi r/r$ | The quantum potential; independent of the connection |
 | $\sum_\mu(\partial_\mu-\bar c_\mu)(\partial_\mu+c_\mu)$ | The action's paired operator; the chart's object |
 | $\sum_\mu(\partial_\mu+c_\mu)^{2}$ | The equation's squared operator; needs a cross term the chart lacks |

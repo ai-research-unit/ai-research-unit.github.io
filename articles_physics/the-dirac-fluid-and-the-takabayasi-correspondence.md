@@ -21,11 +21,11 @@
 $$
 \rho>0,
 \qquad
-v_\mu v^{\mu}=-1,
+\sum_\mu\varepsilon_\mu v_\mu v_\mu=-1,
 \qquad
-w_\mu w^{\mu}=1,
+\sum_\mu\varepsilon_\mu w_\mu w_\mu=1,
 \qquad
-v_\mu w^{\mu}=0 .
+\sum_\mu\varepsilon_\mu v_\mu w_\mu=0 .
 $$
 
 The count is $1+3+2=6$, and the remaining quantity of the seven is an internal angle $\theta$, defined as the angle in the plane of the two pseudoscalar densities of the field, $\theta=\arctan(\Omega_{\mathrm{ps}}/\Omega)$ with $\Omega$ and $\Omega_{\mathrm{ps}}$ the scalar and pseudoscalar bilinears.

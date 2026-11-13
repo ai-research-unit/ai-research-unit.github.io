@@ -37,9 +37,9 @@ $$
 The spin direction is $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ and the spin element is $\rho_{\mathrm{num}}^{1/2}(\hbar/2)i\vec s$. The Gordon splitting is
 
 $$
-\tilde J_{\Phi}=\rho_{\mathrm{num}}\tilde V_{\Phi}+\partial_\nu M^{\nu\mu},
+\tilde J_{\Phi}=\rho_{\mathrm{num}}\tilde V_{\Phi}+\sum_\nu\partial_\nu M_{\mu\nu},
 \qquad
-M^{\nu\mu}\propto\bar\Xi\,\Sigma^{\nu\mu}\Xi ,
+M_{\mu\nu}\propto\bar\Xi\,\Sigma_{\mu\nu}\Xi ,
 $$
 
 with the bilinear of [The Gordon Decomposition of the Dirac Current in Biquaternionic Form](the-gordon-decomposition-of-the-dirac-current-in-biquaternionic-form.html), whose momentum-space form states that the magnetisation term is proportional to the momentum transfer $k_\nu=(p_2-p)_\nu$. The symbol rule is the scalar rung's, applied slot by slot.
@@ -74,9 +74,9 @@ $$
 $$
 \tilde J_{\Phi}=\rho_{\mathrm{num}}\,ic\,\tilde U_{\Psi,\mathrm b}^{-2},
 \qquad
-M^{\nu\mu}=\text{constant},
+M_{\mu\nu}=\text{constant},
 \qquad
-\partial_\nu M^{\nu\mu}=0 .
+\sum_\nu\partial_\nu M_{\mu\nu}=0 .
 $$
 
 The magnetisation current of a mode is the divergence of a constant bilinear, so it vanishes identically; **the Gordon decomposition's second term is invisible to a mode**, and that is the exact reason the article's velocity check is a check of the frame's velocity and not of the current over the density. At a superposition the bilinear varies and the term does not vanish, and the discrepancy between $\tilde J_\Phi/\rho_{\mathrm{num}}$ and $\tilde V_\Phi$ is precisely the term's divergence over the density.
@@ -163,7 +163,7 @@ A mode's loop invariant is the identity. The transport's Lorentz element is ther
 | $\rho_{\mathrm{num}}=r^{2}$ | The proper density |
 | $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}$ | The four-velocity |
 | $\tilde J_\Phi=\rho_{\mathrm{num}}\tilde V_\Phi$ | The number current |
-| $M^{\nu\mu}$ | The magnetisation bilinear |
+| $M_{\mu\nu}$ | The magnetisation bilinear |
 | $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | The spin direction |
 | $\theta_{\mathrm{rpd}}$, $\theta_{\mathrm{axr}}$ | The rapidity and the rotor's angle |
 | $\omega_{\mu\nu}$ | The vorticity 2-form |

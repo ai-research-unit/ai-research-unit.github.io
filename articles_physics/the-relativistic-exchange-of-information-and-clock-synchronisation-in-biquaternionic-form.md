@@ -22,7 +22,7 @@ The exchange discussed here is the classical exchange of signals. It is not the 
 
 ### The Null Condition Between Two Events
 
-Let an emitter be at the event $A$ with coordinate $\tilde{Q}_A = i r'_{t,A\,e_t + x_A\,\vec e_x+y_A\,\vec e_y+z_A\,\vec e_z$, and a receiver at the event $B$ with $\tilde{Q}_B = i r'_{t,B\,e_t + x_B\,\vec e_x+y_B\,\vec e_y+z_B\,\vec e_z$. The displacement is
+Let an emitter be at the event $A$ with coordinate $\tilde{Q}_A = i r'_{t,A}\,e_t + x_A\,\vec e_x+y_A\,\vec e_y+z_A\,\vec e_z$, and a receiver at the event $B$ with $\tilde{Q}_B = i r'_{t,B}\,e_t + x_B\,\vec e_x+y_B\,\vec e_y+z_B\,\vec e_z$. The displacement is
 
 $$
 \tilde{Q}_{BA} = \tilde{Q}_B - \tilde{Q}_A = ic\,\delta r'_t\,e_t + \delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z),
@@ -144,7 +144,7 @@ $$
 \langle\tilde Q_{A,2} - \tilde{Q}_B\rangle_{\natural} = 0,
 $$
 
-with $\tilde Q_{A,2} = i r'_{t,3\,e_t+x_A\,\vec e_x+y_A\,\vec e_y+z_A\,\vec e_z$ the reception event at the mirror's home position. Since $x_{A,2}\,\vec e_x+y_{A,2}\,\vec e_y+z_{A,2}\,\vec e_z = x_A\,\vec e_x+y_A\,\vec e_y+z_A\,\vec e_z$, the spatial separation is the same on both legs, $|x_B\,\vec e_x+y_B\,\vec e_y+z_B\,\vec e_z-(x_A\,\vec e_x+y_A\,\vec e_y+z_A\,\vec e_z)| = L$, and the null conditions read
+with $\tilde Q_{A,2} = i r'_{t,3}\,e_t+x_A\,\vec e_x+y_A\,\vec e_y+z_A\,\vec e_z$ the reception event at the mirror's home position. Since $x_{A,2}\,\vec e_x+y_{A,2}\,\vec e_y+z_{A,2}\,\vec e_z = x_A\,\vec e_x+y_A\,\vec e_y+z_A\,\vec e_z$, the spatial separation is the same on both legs, $|x_B\,\vec e_x+y_B\,\vec e_y+z_B\,\vec e_z-(x_A\,\vec e_x+y_A\,\vec e_y+z_A\,\vec e_z)| = L$, and the null conditions read
 
 $$
 c^2(r'_{t,2}-r'_{t,1})^2 = L^2,

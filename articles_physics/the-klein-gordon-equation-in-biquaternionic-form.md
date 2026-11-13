@@ -23,6 +23,8 @@ $$
 
 that is, the wave equation stated once for each direction. Every component respects the one equation, and the four are independent of one another. The biquaternion line and the four scalar lines say the same thing.
 
+**The carrier, in advance.** The four coefficients are not four states of one field; they are four copies of the same scalar field, because the operator cannot tell them apart. The spin fixes which subspace of $\mathbb{B}$ holds the solution, and for spin zero that subspace is the centre $\mathbb{B}_C=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$, of complex dimension one. The equation is therefore written below for a general element in order to display the operator, while its spin-zero content is its central part. The restriction is exact and costs nothing in the equation, since $\Box_\Phi$ is central and real; what it costs is the interpretation, and the companion article *The Carrier of the Klein–Gordon Field* prices it. The same question — which subspace a solution may occupy — is asked for the other two spins in *The Carrier of the Dirac Field*, *The Carrier of the Proca Field* and *Spin and the Three Elementary Carriers*.
+
 The companion article *Relativistic Mechanics in Biquaternionic Form* already recorded the biquaternion line as one of the ten formulas of relativistic mechanics. The present article does not repeat that line for its own sake; it examines what the line does and does not carry. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 Two facts about the equation drive everything below. The first is structural: being second order in time, the Klein–Gordon equation is not a single first-order evolution. Equivalently, its general solution carries a positive-frequency and a negative-frequency branch, and both $\tilde\Xi$ and its complex conjugate $\tilde\Xi^{*}$ are needed to describe it. The second is physical, and is the standard objection to the equation as a one-particle wave equation: the two branches come with energies of both signs, the conserved density is not positive definite, and the equation does not conserve particle number. Both defects are real, and the biquaternion notation does not remove either; the honest question is whether it relocates them usefully.
@@ -468,6 +470,7 @@ One exception to the obstruction is imported from the literature and kept separa
 
 ## Further Reading
 
+- [The Carrier of the Klein–Gordon Field](the-carrier-of-the-klein-gordon-field.html), for the centre as the carrier of the spin-zero field, the sector split of the centre, and the two coupled writings that the carrier separates.
 - Walter Greiner, *Relativistic Quantum Mechanics: Wave Equations* (Springer, 1990), for the standard treatment of the Klein–Gordon equation, its current, and its defects.
 - J. D. Bjorken and S. D. Drell, *Relativistic Quantum Mechanics* (McGraw-Hill, 1964), for the negative-energy problem and the field-theoretic resolution.
 - Steven Weinberg, *The Quantum Theory of Fields, Vol. I* (Cambridge, 1995), for the reinterpretation of $\Xi$ and $\Xi^*$ as particle and antiparticle field operators.

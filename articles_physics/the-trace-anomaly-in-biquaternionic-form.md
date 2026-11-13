@@ -90,7 +90,7 @@ and the central charge is $c=1$ for a real scalar, $c=2$ for a complex scalar, a
 $$
 \boxed{\;T_\mu{}_\mu = \frac{1}{(4\pi)^2}\big(c\,W^2 - a\,E_4 + b\,\Box R\big)\;},
 $$
-with $E_4=R_{\mu\nu\rho\sigma}R^{\mu\nu\rho\sigma}-4R_{\mu\nu}R^{\mu\nu}+R^2$ the Euler density and $W^2=W_{\mu\nu\rho\sigma}W^{\mu\nu\rho\sigma}$ the Weyl-square term; the minus on the Euler density is the convention of Duff's review, and a text that writes $+aE_4$ defines $a$ with the opposite sign. In that convention the coefficients are rational functions of the field content,
+with $E_4=\sum_{\mu,\nu,\rho,\sigma}R_{\mu\nu\rho\sigma}R_{\mu\nu\rho\sigma}-4\sum_{\mu,\nu}R_{\mu\nu}R_{\mu\nu}+R^2$ the Euler density and $W^2=\sum_{\mu,\nu,\rho,\sigma}W_{\mu\nu\rho\sigma}W_{\mu\nu\rho\sigma}$ the Weyl-square term; the minus on the Euler density is the convention of Duff's review, and a text that writes $+aE_4$ defines $a$ with the opposite sign. In that convention the coefficients are rational functions of the field content,
 $$
 a=\frac{1}{90}\big(n_s+11n_f+62n_v\big),
 \qquad

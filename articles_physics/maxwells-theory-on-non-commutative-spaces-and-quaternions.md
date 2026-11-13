@@ -274,7 +274,7 @@ $$
 and for the symmetric tensor the trace is exactly twice this,
 
 $$
-T_{\mathrm{sym}}^{\mu}{}_{\mu} = 2\left[(\vec\kappa\cdot\vec B)\left(\vec E^2-\vec B^2\right) - 2(\vec\kappa\cdot\vec E)(\vec E\cdot\vec B)\right].
+\sum_\mu T_{\mathrm{sym},\mu\mu} = 2\left[(\vec\kappa\cdot\vec B)\left(\vec E^2-\vec B^2\right) - 2(\vec\kappa\cdot\vec E)(\vec E\cdot\vec B)\right].
 $$
 
 The source reads a non-zero trace as a **trace anomaly at the classical level**, reflecting the breaking of classical conformal invariance, and relates it to the breaking of Lorentz invariance by the constant $\vec\kappa$; it suggests the anomaly contributes to the cosmological constant and might be the source of an inflationary period. Two properties of the expressions are checkable and are worth recording, because they show when the anomaly is present.

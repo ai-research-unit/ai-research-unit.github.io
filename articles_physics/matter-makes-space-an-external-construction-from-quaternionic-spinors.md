@@ -165,7 +165,7 @@ where a contorsion must have dimension $M$, the dimension of an inverse length. 
 **The constrained action does not constrain.** The master action of Section 5 is
 $$
 S=\int d^4r\, e\Bigl[\frac{1}{2\kappa}\exp(a){}_\mu \exp(b){}_\nu \mathrm{Riem}_{\mu\nu ab}(e,K)
-+\bigl\langle\tilde{Ξ},\,iC^a e_a{}^\mu D_\mu(e,K)\,\tilde{Ξ}\bigr\rangle-m\,\bigl\langle\tilde{Ξ},\tilde{Ξ}\bigr\rangle+\mathcal{L}_{\text{constr}}\Bigr],
++\bigl\langle\tilde{Ξ},\,iC^a\sum_\mu e_{a,\mu}D_\mu(e,K)\,\tilde{Ξ}\bigr\rangle-m\,\bigl\langle\tilde{Ξ},\tilde{Ξ}\bigr\rangle+\mathcal{L}_{\text{constr}}\Bigr],
 $$
 with $C^a=g^{ab}C_b$ raised through the metric and the curvature pair written world indices first, in the corpus's order, and it adds the constraint Lagrangian
 $$
@@ -306,7 +306,7 @@ The box carries a third line as well, $Q_H=Q_{\text{Bohm}}+Q_{\text{Torsion}}+\t
 
 **Two of the three terms are not energies.** Eq. (26), repeated in the comparison box with the same coefficients, reads
 $$
-V_T(\mathbf r)=\frac{\hbar c\hbar/(mc)}{8}\,T_{\mu\nu\rho}T^{\mu\nu\rho}+\frac{c\hbar/(mc)}{4}\,\sigma\cdot(\nabla\times T)+\frac{c\hbar/(mc)}{2}\,\nabla\cdot T ,
+V_T(\mathbf r)=\frac{\hbar c\hbar/(mc)}{8}\sum_{\mu,\nu,\rho}T_{\mu\nu\rho}T_{\mu\nu\rho}+\frac{c\hbar/(mc)}{4}\,\sigma\cdot(\nabla\times T)+\frac{c\hbar/(mc)}{2}\,\nabla\cdot T ,
 \qquad T=\epsilon_{ij\eta}T_{j\eta0} ,
 $$
 in which $\sigma$ is the source's Pauli vector and $\nabla$ its spatial gradient, neither of them the bivector $C_{\mu\nu}$ of the frame actions. The three terms do not share a dimension. With $[\frac{\hbar^{2}}{m}]=\mathrm{J\,m^2}$ and torsion in inverse length, the first term is $\mathrm{J\,m^2\cdot m^{-2}}=\mathrm{J}$; the second is $\mathrm{m^2\,s^{-1}\cdot m^{-2}}=\mathrm{s^{-1}}$, and the third is $\mathrm{s^{-1}}$ as well. The last two are frequencies where the first is an energy, and the whole display is short by one factor of $\hbar$ in those two terms. The defect is the sort that a units check catches and a symbol-by-symbol reading does not, and it is visible in the source's own numbers: at its stated $T\simeq3\times10^{-32}\,\mathrm{m^{-1}}$ the first term is $6\times10^{-108}\,\mathrm{J}$ while the other two are $\sim10^{-41}\,\mathrm{s^{-1}}$, and the ratio is a time.
@@ -476,5 +476,5 @@ What the source does supply is a reminder, in a form the corpus's own articles s
 - [Torsion, Contorsion and the Spin Connection in Biquaternionic Form](torsion-contorsion-and-the-spin-connection-in-biquaternionic-form.html), for the independently verified torsion, contorsion, spin-density and Weitzenböck identities against which the source's Eqs. (4)–(6) and Appendix B were checked.
 - [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html), for the one-sided pair set against the source's two-sided equation, and for the boundary between the gradient and the contraction a frame imposes on it.
 - [Curved Spacetime and the Biquaternion Framework](curved-spacetime-and-the-biquaternion-framework.html), for the corpus's boundary statement that the algebra carries the frame and the connection without generating either.
-- [The Non-Quantum Limit of the Free Schrödinger Equation](the-non-quantum-limit-of-the-free-schrodinger-equation.html), for the corpus's quantum potential, against which the source's torsion Bohm term was compared.
+- [The Non-Quantum Limit and the Schrödinger Equation in Biquaternionic Polar Variables](the-non-quantum-limit-and-the-schrodinger-equation-in-biquaternionic-polar-variables.html), for the corpus's quantum potential, against which the source's torsion Bohm term was compared.
 - [The Biquaternion Basis of a Unified-Field Fibre Bundle](the-biquaternion-basis-of-a-unified-field-fibre-bundle.html), for the corpus's earlier record of an external construction of the same algebra, and for the editorial treatment this article follows of an external source that is recorded and not endorsed.

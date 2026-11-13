@@ -4,11 +4,11 @@
 
 **The coupled equation is the free one with two numbers shifted, and the transform says so in one line.** *The Coupled Schrödinger Equation in Biquaternionic Form* writes $i\hbar\,D_t\tilde\Xi=\frac{1}{2m}\sum_\eta(-i\hbar\,D_\eta)^{2}\tilde\Xi$ with $D_t=\partial_{t'}-iϙ\varphi/\hbar$ and $D_\eta=\partial_\eta+iϙ A_\eta/\hbar$. In frequency space each covariant derivative becomes a number, and the equation becomes a relation between three numbers.
 
-**The first finding is a translation of the symbol's argument.** The coupled symbol is the free symbol evaluated at a shifted frequency and a shifted wave vector: $\omega\mapsto\omega+ϙ\varphi/\hbar$ and $\vec k\mapsto\vec k+ϙ\vec A/\hbar$. Verified over one hundred draws, the two sides differ by zero to machine precision. **The potential shifts the symbol's argument and does not change its shape**, and the shape is the free symbol's.
+**The first finding is a translation of the symbol's argument.** The coupled symbol is the free symbol evaluated at a shifted frequency and a shifted wave vector: $\omega\mapsto\omega+ϙ\varphi/\hbar$ and $\vec k\mapsto\vec k-q\vec A/\hbar$. Verified over one hundred draws, the two sides differ by zero to machine precision. **The potential shifts the symbol's argument and does not change its shape**, and the shape is the free symbol's.
 
 **The sign of the frequency shift is fixed by the parent and it is plus.** The parent's temporal covariant derivative enters the equation as $i\hbar\partial_{t'}+ϙ\varphi$, so the phase's rate acquires $+ϙ\varphi/\hbar$ and not $-ϙ\varphi/\hbar$. The opposite sign is what a careless substitution of $i\hbar D_t$ with $D_t=\partial_{t'}+iϙ\varphi/\hbar$ would give, and the article uses the parent's.
 
-**The second finding is the split between the curvature and the gap.** The symbol's second derivative in the wave vector is $-\hbar^{2}/m$, independent of $\vec A$: verified as $-0.588235$ with no connection, with $\vec A$ and with $2\vec A$. The gap between the two eigenvalues in the constant setting is $2\lvert\vec h_\Psi+ϙ\vec A\rvert$, which moves: $1.232882$ free and $1.503329$ with $ϙ\vec A=(0.35,0.25,0)$. **The curvature is a property of the kinetic term and the gap is a property of the vector potential.**
+**The second finding is the split between the curvature and the gap.** The symbol's second derivative in the wave vector is $-\hbar^{2}/m$, independent of $\vec A$: verified as $-0.588235$ with no connection, with $\vec A$ and with $2\vec A$. The gap between the two eigenvalues in the constant setting is $2\lvert\vec h_\Psi-q\vec A\rvert$, which moves: $1.232882$ free and $1.503329$ with $ϙ\vec A=(0.35,0.25,0)$. **The curvature is a property of the kinetic term and the gap is a property of the vector potential.**
 
 **The third finding is that the connection cannot split the symbol.** Every coefficient of the connection is central, so the covariant derivative commutes with the four units and the symbol remains one element or one scalar. **The coupling does not enlarge the carrier and does not mix the coefficients**, which is the parent's fourfold structure surviving the transform.
 
@@ -53,7 +53,7 @@ $$
 so the symbol is the parent's dispersion relation written as a function,
 
 $$
-\sigma_{\mathrm{gco}}(\omega,\vec k)=\hbar\omega+ϙ\varphi-\frac{1}{2m}\big\lvert\hbar\vec k+ϙ\vec A\big\rvert^{2}.
+\sigma_{\mathrm{gco}}(\omega,\vec k)=\hbar\omega+ϙ\varphi-\frac{1}{2m}\big\lvert\hbar\vec k-q\vec A\big\rvert^{2}.
 $$
 
 **It is scalar because the operator is central and second order in space.** The kinetic operator is a sum of squares of central first-order operators, so its symbol is the corresponding sum of squares of numbers. **The vector structure of the algebra does not appear**, and the four coefficients obey four copies of one scalar equation.
@@ -61,10 +61,10 @@ $$
 **The constant setting's symbol is an element.** There the equation is the free one with $\tilde H_\Psi$ replaced by
 
 $$
-\tilde H^{\mathrm{gco}}_\Psi=\big(h_t-ϙ\varphi\big)e_t+i\big(\vec h_\Psi+ϙ\vec A\big),
+\tilde H^{\mathrm{gco}}_\Psi=\big(h_t-ϙ\varphi\big)e_t+i\big(\vec h_\Psi-q\vec A\big),
 $$
 
-so the symbol is $\sigma_{\mathrm{gco}}(\omega)=\hbar\omega\,e_t-\tilde H^{\mathrm{gco}}_\Psi$, and the determinant is $\big((\hbar\omega-h_t+ϙ\varphi)^{2}-\lvert\vec h_\Psi+ϙ\vec A\rvert^{2}\big)^{2}$. **The element survives because the free Hamiltonian had a vector part**, and the connection shifts that part by the vector potential.
+so the symbol is $\sigma_{\mathrm{gco}}(\omega)=\hbar\omega\,e_t-\tilde H^{\mathrm{gco}}_\Psi$, and the determinant is $\big((\hbar\omega-h_t+ϙ\varphi)^{2}-\lvert\vec h_\Psi-q\vec A\rvert^{2}\big)^{2}$. **The element survives because the free Hamiltonian had a vector part**, and the connection shifts that part by the vector potential.
 
 **The two settings do not compete.** The operator setting's scalar symbol is the symbol of the differential operator; the constant setting's element symbol is the symbol of the ordinary differential equation. They coincide on a plane wave of a constant Hamiltonian with $\vec h_\Psi=\hbar\vec k_\Phi$, which is the statement that the two settings agree where both are defined.
 
@@ -82,7 +82,7 @@ The proof is the substitution of the two shifted arguments and the cancellation 
 
 **What the identity says.** The coupling does not create a new dispersion relation. It renames the arguments, and the renaming is affine. **So every statement about the free symbol transfers to the coupled symbol by a shift**, and the transfer is exact and not asymptotic.
 
-**What the identity does not say.** It does not say that the two settings are the same setting, and it does not say that $\vec k$ is the kinetic momentum. The shifted argument is $\hbar\vec k+ϙ\vec A$, which the parent calls the mechanical momentum $\vec\pi$, and the identity is the statement that the symbol depends on the mechanical momentum alone.
+**What the identity does not say.** It does not say that the two settings are the same setting, and it does not say that $\vec k$ is the kinetic momentum. The shifted argument is $\hbar\vec k-q\vec A$, which the parent calls the mechanical momentum $\vec\pi$, and the identity is the statement that the symbol depends on the mechanical momentum alone.
 
 **The mechanical momentum is the invariant.** The mechanical momentum and the energy $\mathcal E=\hbar\omega+ϙ\varphi$ are the two gauge-invariant combinations of the polar coupled companion. In the symbol they are the only arguments: **the symbol is a function of the two invariants and of nothing else.**
 
@@ -96,11 +96,11 @@ The proof is the substitution of the two shifted arguments and the cancellation 
 
 **Why the sign is not free.** The two signs of the two slots are one fact: the metric $i$ in $\partial/\partial R_t=-i\partial_{r'_t}$ multiplies the connection's temporal coefficient, which is itself imaginary, and the product is real with the sign the parent computes. **A convention that flips one slot and not the other breaks the gauge covariance**, and the parent's §*Gauge Covariance* would fail.
 
-**The check.** Taking the free symbol at $\omega-ϙ\varphi/\hbar$ instead gives $\hbar\omega-ϙ\varphi-\lvert\hbar\vec k+ϙ\vec A\rvert^{2}/(2m)$, which differs from the parent's equation by $2ϙ\varphi$. The difference is not a normalisation: it is a sign error that the parent's own substitution forbids.
+**The check.** Taking the free symbol at $\omega-ϙ\varphi/\hbar$ instead gives $\hbar\omega-ϙ\varphi-\lvert\hbar\vec k-q\vec A\rvert^{2}/(2m)$, which differs from the parent's equation by $2ϙ\varphi$. The difference is not a normalisation: it is a sign error that the parent's own substitution forbids.
 
 **What the sign means physically.** With $ϙ$ the negative of the electric charge, as the parent's note says, the potential energy is $+ϙ\varphi$ and the frequency shift is $+ϙ\varphi/\hbar$. **A positive potential raises the frequency**, which is the statement that the energy is $\hbar\omega=-\varrho\varphi+\ldots$ and the symbol is written with the opposite sign.
 
-**The spatial sign.** The spatial slot has $+iϙ A_\eta/\hbar$ inside $D_\eta$, and $-i\hbar D_\eta$ gives $\hbar k_\eta+ϙ A_\eta$. So the mechanical momentum is $\hbar\vec k+ϙ\vec A$ and the symbol's wave-vector shift is $+\varrho\vec A/\hbar$. **The two shifts have the same sign in the symbol and opposite signs in the covariant derivatives**, and that is the parent's bookkeeping read once more.
+**The spatial sign.** The spatial slot has $+iϙ A_\eta/\hbar$ inside $D_\eta$, and $-i\hbar D_\eta$ gives $\hbar k_\eta+ϙ A_\eta$. So the mechanical momentum is $\hbar\vec k-q\vec A$ and the symbol's wave-vector shift is $-q\vec A/\hbar$. **The two shifts have the same sign in the symbol and opposite signs in the covariant derivatives**, and that is the parent's bookkeeping read once more.
 
 ## The Curvature Is Invariant and the Gap Moves
 
@@ -116,13 +116,13 @@ independent of $\vec A$ and of $\varphi$. A central difference at $k_x=0.4$ with
 
 **Why it cannot move.** The vector potential enters the symbol inside a square, and a shift inside a square changes the first derivative and not the second. **So the effective mass is the bare mass**, and the coupling does not renormalise it.
 
-**The gap.** In the constant setting the two eigenvalues of $L_{\tilde H^{\mathrm{gco}}_\Psi}$ are $\big(h_t-ϙ\varphi\big)\pm\lvert\vec h_\Psi+ϙ\vec A\rvert$, so the gap is $2\lvert\vec h_\Psi+ϙ\vec A\rvert$. With $\lvert\vec h_\Psi\rvert=0.616441$ the free gap is $1.232882$; with $ϙ\vec A=(0.35,0.25,0)$ the gap is $1.503329$. **The vector potential moves the gap, and it moves it by adding to the vector part.**
+**The gap.** In the constant setting the two eigenvalues of $L_{\tilde H^{\mathrm{gco}}_\Psi}$ are $\big(h_t-ϙ\varphi\big)\pm\lvert\vec h_\Psi-q\vec A\rvert$, so the gap is $2\lvert\vec h_\Psi-q\vec A\rvert$. With $\lvert\vec h_\Psi\rvert=0.616441$ the free gap is $1.232882$; with $ϙ\vec A=(0.35,0.25,0)$ the gap is $1.503329$. **The vector potential moves the gap, and it moves it by adding to the vector part.**
 
 **The scalar potential moves nothing of the gap.** With the same Hamiltonian and $ϙ\varphi=0.4$ alone, the gap stayed $1.232882$, and the symbol's value at one frequency changed by exactly $-0.400000$. **A scalar potential translates the pair and leaves its spacing.**
 
 **The two statements together.** The scalar potential adds a constant to the symbol; the vector potential adds a term linear in the wave vector and a term quadratic in it. **The first shifts the pair, the second changes its separation**, and the two are the two halves of one translation's Taylor expansion.
 
-**Why the split matters.** A measurement of the gap determines $\lvert\vec h_\Psi+ϙ\vec A\rvert$ and not $\vec h_\Psi$; a measurement of the curvature determines $m$ and nothing else. **So the transform separates the mass from the vector potential**, which the position-space equation does not do in one line.
+**Why the split matters.** A measurement of the gap determines $\lvert\vec h_\Psi-q\vec A\rvert$ and not $\vec h_\Psi$; a measurement of the curvature determines $m$ and nothing else. **So the transform separates the mass from the vector potential**, which the position-space equation does not do in one line.
 
 ## Why the Connection Does Not Split the Symbol
 
@@ -138,21 +138,21 @@ independent of $\vec A$ and of $\varphi$. A central difference at $k_x=0.4$ with
 
 ## The Poles and Their Spacing
 
-**The constant setting's pole pair.** The zeros of the determinant are at $\hbar\omega=h_t-ϙ\varphi\pm\lvert\vec h_\Psi+ϙ\vec A\rvert$, each twice. **The pair is the free pair translated by $-ϙ\varphi$ and its half-gap enlarged by $\vec A$.**
+**The constant setting's pole pair.** The zeros of the determinant are at $\hbar\omega=h_t-ϙ\varphi\pm\lvert\vec h_\Psi-q\vec A\rvert$, each twice. **The pair is the free pair translated by $-ϙ\varphi$ and its half-gap enlarged by $\vec A$.**
 
-**The spacing is gauge invariant.** The spacing is $2\lvert\vec h_\Psi+ϙ\vec A\rvert$ and the position is $h_t-ϙ\varphi$. Under a gauge transformation with $\vec A\mapsto\vec A-\nabla\Gamma$ and $\varphi\mapsto\varphi+\partial_{t'}\Gamma$, the constant setting admits only linear $\Gamma$, for which both shifts are constants: the position moves by $-ϙ\partial_{t'}\Gamma$ and the field's phase moves by $+ϙ\Gamma/\hbar$. **The two cancel in the frequency, and the spacing is untouched by either**, which is the frequency-space form of the parent's check.
+**The spacing is gauge invariant.** The spacing is $2\lvert\vec h_\Psi-q\vec A\rvert$ and the position is $h_t-ϙ\varphi$. Under a gauge transformation with $\vec A\mapsto\vec A-\nabla\Gamma$ and $\varphi\mapsto\varphi+\partial_{t'}\Gamma$, the constant setting admits only linear $\Gamma$, for which both shifts are constants: the position moves by $-ϙ\partial_{t'}\Gamma$ and the field's phase moves by $+ϙ\Gamma/\hbar$. **The two cancel in the frequency, and the spacing is untouched by either**, which is the frequency-space form of the parent's check.
 
 **The ranks are the free ranks.** The symbol is invertible off the zeros, has rank two at a zero and rank zero at the single zero of a scalar Hamiltonian. **The connection changes none of the three numbers**, and the reason is that it changes the symbol's arguments and not its type.
 
 **The degenerate case moves as one number.** For $\vec h_\Psi=0$ and $\vec A=0$ the pair collapses to the single value $h_t-ϙ\varphi$, and the gap is zero. **A scalar potential shifts the collapse point and does not open a gap**, which is the statement that an electric potential cannot create structure.
 
-**The pole set is a function of the two invariants.** $\mathcal E=\hbar\omega+ϙ\varphi$ and $\vec\pi=\hbar\vec k+ϙ\vec A$ are the only combinations that appear, so the zero set is a locus in the space of invariants. **Gauge transformations move the coordinates and not the locus**, and that sentence is the whole of this section's content.
+**The pole set is a function of the two invariants.** $\mathcal E=\hbar\omega+ϙ\varphi$ and $\vec\pi=\hbar\vec k-q\vec A$ are the only combinations that appear, so the zero set is a locus in the space of invariants. **Gauge transformations move the coordinates and not the locus**, and that sentence is the whole of this section's content.
 
 **What the spacing is not.** It is not a mass. The gap of the free Schrödinger symbol is $2\lvert\vec h_\Psi\rvert$, which is twice a momentum and not a mass; the mass appears as the curvature. **The article keeps the two words apart**, because a second-order equation's shell is a mass and a first-order equation's gap is a rate.
 
 ## What the Coupling Adds
 
-**One translation and one split.** The translation is the identity $\sigma_{\mathrm{gco}}(\omega,\vec k)=\sigma_{\mathrm{free}}(\omega+ϙ\varphi/\hbar,\vec k+ϙ\vec A/\hbar)$, exact. The split is curvature against gap: $-\hbar^{2}/m$ invariant, $2\lvert\vec h_\Psi+ϙ\vec A\rvert$ moving.
+**One translation and one split.** The translation is the identity $\sigma_{\mathrm{gco}}(\omega,\vec k)=\sigma_{\mathrm{free}}(\omega+ϙ\varphi/\hbar,\vec k-q\vec A/\hbar)$, exact. The split is curvature against gap: $-\hbar^{2}/m$ invariant, $2\lvert\vec h_\Psi-q\vec A\rvert$ moving.
 
 **The sign, fixed.** The frequency shift is $+ϙ\varphi/\hbar$, and the opposite sign is excluded by the parent's own covariant derivative. **The correction is stated because the wrong sign is the natural first guess**, and the article names the guess before rejecting it.
 
@@ -180,9 +180,9 @@ independent of $\vec A$ and of $\varphi$. A central difference at $k_x=0.4$ with
 
 ## Summary
 
-The coupled symbol is the free symbol at a shifted argument. In the operator setting, $\sigma_{\mathrm{gco}}(\omega,\vec k)=\hbar\omega+ϙ\varphi-\lvert\hbar\vec k+ϙ\vec A\rvert^{2}/(2m)$ equals $\sigma_{\mathrm{free}}(\omega+ϙ\varphi/\hbar,\vec k+ϙ\vec A/\hbar)$, verified over one hundred draws with zero residual. **The sign of the frequency shift is plus**, because the parent's temporal slot carries $i\hbar\partial_{t'}+ϙ\varphi$, and the opposite sign would differ by $2ϙ\varphi$.
+The coupled symbol is the free symbol at a shifted argument. In the operator setting, $\sigma_{\mathrm{gco}}(\omega,\vec k)=\hbar\omega+ϙ\varphi-\lvert\hbar\vec k-q\vec A\rvert^{2}/(2m)$ equals $\sigma_{\mathrm{free}}(\omega+ϙ\varphi/\hbar,\vec k-q\vec A/\hbar)$, verified over one hundred draws with zero residual. **The sign of the frequency shift is plus**, because the parent's temporal slot carries $i\hbar\partial_{t'}+ϙ\varphi$, and the opposite sign would differ by $2ϙ\varphi$.
 
-The curvature in the wave vector is $-\hbar^{2}/m=-0.588235$, the same with no connection, with $\vec A$ and with $2\vec A$. The gap in the constant setting is $2\lvert\vec h_\Psi+ϙ\vec A\rvert$: $1.232882$ free and $1.503329$ with $ϙ\vec A=(0.35,0.25,0)$, while $ϙ\varphi=0.4$ alone left the gap at $1.232883$ and moved the symbol by $-0.360000$. **The scalar potential translates the pair and the vector potential separates it**, and the effective mass is the bare mass.
+The curvature in the wave vector is $-\hbar^{2}/m=-0.588235$, the same with no connection, with $\vec A$ and with $2\vec A$. The gap in the constant setting is $2\lvert\vec h_\Psi-q\vec A\rvert$: $1.232882$ free and $1.503329$ with $ϙ\vec A=(0.35,0.25,0)$, while $ϙ\varphi=0.4$ alone left the gap at $1.232883$ and moved the symbol by $-0.360000$. **The scalar potential translates the pair and the vector potential separates it**, and the effective mass is the bare mass.
 
 The connection is central in every slot, so the symbol remains one scalar or one element and the four copies of the parent survive. The ranks are the free ranks, the spacing of the pair is gauge invariant, and the pole set is a locus in the plane of the two invariants.
 
@@ -193,13 +193,13 @@ The connection is central in every slot, so the symbol remains one scalar or one
 | $D_t=\partial_{t'}-iϙ\varphi/\hbar$ | The covariant time derivative; the minus sign is the metric's |
 | $D_\eta=\partial_\eta+iϙ A_\eta/\hbar$ | The covariant spatial derivative; the plus sign |
 | $\hbar\omega+ϙ\varphi$ | The covariant frequency; the first invariant $\mathcal E$ |
-| $\hbar\vec k+ϙ\vec A$ | The mechanical momentum $\vec\pi$; the second invariant |
-| $\sigma_{\mathrm{gco}}=\sigma_{\mathrm{free}}(\omega+ϙ\varphi/\hbar,\vec k+ϙ\vec A/\hbar)$ | The translation identity of the operator setting |
+| $\hbar\vec k-q\vec A$ | The mechanical momentum $\vec\pi$; the second invariant |
+| $\sigma_{\mathrm{gco}}=\sigma_{\mathrm{free}}(\omega+ϙ\varphi/\hbar,\vec k-q\vec A/\hbar)$ | The translation identity of the operator setting |
 | $\sigma_{\mathrm{gco}}=\hbar\omega\,e_t-\tilde H^{\mathrm{gco}}_\Psi$ | The constant setting's element symbol |
-| $\tilde H^{\mathrm{gco}}_\Psi=(h_t-ϙ\varphi)e_t+i(\vec h_\Psi+ϙ\vec A)$ | The shifted Hamiltonian |
+| $\tilde H^{\mathrm{gco}}_\Psi=(h_t-ϙ\varphi)e_t+i(\vec h_\Psi-q\vec A)$ | The shifted Hamiltonian |
 | $\partial^{2}\sigma/\partial k_\eta^{2}=-\hbar^{2}/m=-0.588235$ | The curvature; the effective mass; invariant |
-| $2\lvert\vec h_\Psi+ϙ\vec A\rvert$ | The gap; $1.232882$ free, $1.503329$ with the quoted $\vec A$ |
-| $h_t-ϙ\varphi\pm\lvert\vec h_\Psi+ϙ\vec A\rvert$ | The pole pair; translated, with spacing that is gauge invariant |
+| $2\lvert\vec h_\Psi-q\vec A\rvert$ | The gap; $1.232882$ free, $1.503329$ with the quoted $\vec A$ |
+| $h_t-ϙ\varphi\pm\lvert\vec h_\Psi-q\vec A\rvert$ | The pole pair; translated, with spacing that is gauge invariant |
 
 ## Further Reading
 

@@ -45,12 +45,12 @@ The three are consistent with zero, and the statement that they are is the sharp
 **The object.** The one-particle-irreducible two-point function of two gauge fields, in momentum space, carries two Lorentz indices and is written
 
 $$
-i\Pi^{\mu\nu}_{VV'}(q)=i\left(\delta_{\mu\nu}-\frac{q_\mu q_\nu}{q^2}\right)\Pi_{VV'}(q^2)+\text{(terms proportional to }q^\mu\text{ or }q^\nu\text{)} .
+i\Pi_{VV',\mu\nu}(q)=i\left(\delta_{\mu\nu}-\frac{q_\mu q_\nu}{q^2}\right)\Pi_{VV'}(q^2)+\text{(terms proportional to }q_\mu\text{ or }q_\nu\text{)} .
 $$
 
 The second piece never contributes to a physical amplitude, for the reason article 7 established: a conserved external current annihilates it. What matters is the transverse function $\Pi_{VV'}(q^2)$.
 
-**Why the transverse structure is forced for the photon.** Electromagnetic gauge invariance requires $\sum_\mu q_\mu\Pi^{\mu\nu}_{\gamma\gamma}=0$. With the projectors of article 7,
+**Why the transverse structure is forced for the photon.** Electromagnetic gauge invariance requires $\sum_\mu q_\mu\Pi_{\gamma\gamma,\mu\nu}=0$. With the projectors of article 7,
 
 $$
 P_{\mu\nu}=\delta_{\mu\nu}+\frac{q_\mu q_\nu}{\Pi} ,
@@ -63,7 +63,7 @@ $$
 the only symmetric tensor built from $\delta$ and $q$ that is annihilated by $q_\mu$ is $P_{\mu\nu}$, since $\sum_\mu q_\mu P_{\mu\nu}=0$ and $\sum_\mu q_\mu L_{\mu\nu}=-q_\nu$. So
 
 $$
-\Pi^{\mu\nu}_{\gamma\gamma}(q)=P^{\mu\nu}\,\Pi_{\gamma\gamma}(q^2) ,
+\Pi_{\gamma\gamma,\mu\nu}(q)=P_{\mu\nu}\,\Pi_{\gamma\gamma}(q^2) ,
 $$
 
 and the longitudinal projector is absent identically. **The statement "the photon self-energy is transverse" and the statement "the longitudinal projector is invisible to a conserved current" are the same statement**, and both are the Ward identity.

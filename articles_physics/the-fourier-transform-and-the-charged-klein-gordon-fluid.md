@@ -38,7 +38,7 @@ $$
 that is, in the energy and the momentum,
 
 $$
-\frac{1}{c^{2}}\bigl(E+\varkappa c a_t'\bigr)^{2}-\lvert\vec p+\varkappa\vec A\rvert^{2}=m^{2}c^{2},
+\frac{1}{c^{2}}\bigl(E+\varkappa c a_t'\bigr)^{2}-\lvert\vec p-q\vec A\rvert^{2}=m^{2}c^{2},
 \qquad
 E=\hbar c\,k_t',
 \qquad
@@ -103,7 +103,7 @@ and in the canonical variable the support is the same shell translated the other
 
 ## Summary
 
-A constant potential translates the support of the transform and leaves its radius at $m^{2}c^{2}$. The kinetic shell is $(E+\varkappa c a_t')^{2}/c^{2}-\lvert\vec p+\varkappa\vec A\rvert^{2}=m^{2}c^{2}$, checked at residual $0.0$ for four values of the potential.
+A constant potential translates the support of the transform and leaves its radius at $m^{2}c^{2}$. The kinetic shell is $(E+\varkappa c a_t')^{2}/c^{2}-\lvert\vec p-q\vec A\rvert^{2}=m^{2}c^{2}$, checked at residual $0.0$ for four values of the potential.
 
 The displacement of the lowest branch is $\varkappa c\,a_t'$, linearly. At $\varkappa a_t'=mc^{2}$ the translated shell touches $k_t'=0$ and beyond it crosses: the Klein threshold is a tangency and the Klein region is an overlap, both statements about a support and neither about a dynamics.
 

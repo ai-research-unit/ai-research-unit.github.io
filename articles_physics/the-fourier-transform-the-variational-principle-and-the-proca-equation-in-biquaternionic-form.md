@@ -54,7 +54,7 @@ with $A\!\cdot\!A=-\lvert a_t'\rvert^{2}+\lvert\vec a\rvert^{2}$ the material fo
 
 **The sign is the parent's and the article keeps it.** Its normalisation fixes the relative sign of the two terms by requiring positive energy, and the overall sign of an action does not change its extremum. Every statement below is about a coefficient and a vanishing, so the overall sign drops out; the relative sign is the parent's and is not renegotiated.
 
-**The stationarity is the symbol and the check is a finite difference.** $\partial\mathcal{Q}/\partial A^\mu=-\eta_{\mu\nu}(\sigma A)^{\nu}$ with $\sigma^\mu{}_\nu=(k^{2}-k_m^{2})\delta^\mu{}_\nu-k^\mu k_\nu$, verified to $2.1\times10^{-11}$ at $k_t'=1.2$, $\vec k_\Phi=(0.3,0.2,0.1)$, $k_m=0.7$ on a random complex amplitude. **So the momentum-space variational principle is $\sigma A=0$**, and the form companion's matrix is this form's Hessian.
+**The stationarity is the symbol and the check is a finite difference.** $\partial\mathcal{Q}/\partial A_\nu=-(\sigma A)_\nu$ with $(\sigma A)_\nu=(k^{2}-k_m^{2})A_\nu-k_\nu(k\cdot A)$, verified to $2.1\times10^{-11}$ at $k_t'=1.2$, $\vec k_\Phi=(0.3,0.2,0.1)$, $k_m=0.7$ on a random complex amplitude. **So the momentum-space variational principle is $\sigma A=0$**, and the form companion's matrix is this form's Hessian.
 
 ## The Quadratic Form and Its Stationarity
 
@@ -71,7 +71,7 @@ with $A\!\cdot\!A=-\lvert a_t'\rvert^{2}+\lvert\vec a\rvert^{2}$ the material fo
 **Along the wave number the form is the mass and nothing else.** Put $A\parallel k^\mu$, so that $A=\lambda k^\mu$ and $[kA]=\lambda k^{2}$. Then
 
 $$
-\mathcal{Q}\bigl(\lambda k^{\mu}\bigr)
+\mathcal{Q}\bigl(\lambda k\bigr)
 =\tfrac12\Bigl(\lambda^{2}k^{4}-\bigl(k^{2}-k_m^{2}\bigr)\lambda^{2}k^{2}\Bigr)
 =\tfrac12\lambda^{2}k_m^{2}k^{2}
 =\tfrac12 k_m^{2}\bigl(A\!\cdot\!A\bigr) ,
@@ -98,7 +98,7 @@ and the $k^{4}$ cancels against the $k^{4}$ inside the second term. **The cancel
 **The Lorenz condition is the stationarity of the form along the wave number.** The derivative in the direction of the wave number is
 
 $$
-\frac{\partial\mathcal{Q}}{\partial A^\mu}\,k^{\mu}
+\sum_\mu\frac{\partial\mathcal{Q}}{\partial A_\mu}\,k_\mu
 =[kA]\,k^{2}-\bigl(k^{2}-k_m^{2}\bigr)\bigl(A\!\cdot\!k\bigr)
 =k_m^{2}\,[kA] ,
 $$

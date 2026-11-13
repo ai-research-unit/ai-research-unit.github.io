@@ -91,7 +91,7 @@ and nothing else. The phase, the rapidity, the axis and the rotor are angles and
 
 ## The Density Is Not the Invariant Length
 
-**The free article's density was the field's own norm, and the charged field has no norm that could play the part.** The free article writes $r=\sqrt{-A_\mu A^{\mu}}$, positive by construction, and reads it as the fluid's density. In the coupled case there are three candidate objects and none of them is that:
+**The free article's density was the field's own norm, and the charged field has no norm that could play the part.** The free article writes $r=\sqrt{-\sum_\mu\varepsilon_\mu A_\mu A_\mu}$, positive by construction, and reads it as the fluid's density. In the coupled case there are three candidate objects and none of them is that:
 
 | candidate | what it is | its behaviour |
 | --- | --- | --- |
@@ -113,7 +113,7 @@ and nothing else. The phase, the rapidity, the axis and the rotor are angles and
 
 **The coupled fluid carries three distinct currents where the free one carried a single object, and only one of them is conserved.** The three are the response, the direction and the charge.
 
-**The response is $m^{2}\tilde A$, and it is what the free article's current became.** In the free case the equation $\partial_\nu F^{\nu\mu}=m^{2}A^{\mu}$ made $m^{2}A^{\mu}$ the source of the field strength's divergence, and the Lorenz condition made it conserved; the article therefore identified the field, the current and the response. **With the coupling the equation sources $m^{2}\tilde A$ by the *covariant* divergence**, $\tilde\nabla_{\mathrm{gco}}\tilde F=k_m^{2}\tilde A$, so the response is no longer conserved by the Lorenz condition alone: the connection's own term sits between them. **The fluid's own field acts on its own current**, and that is the self-interaction the free case could not have.
+**The response is $m^{2}\tilde A$, and it is what the free article's current became.** In the free case the equation $\sum_\nu\partial_\nu F_{\nu\mu}=m^{2}A_\mu$ made $m^{2}A_\mu$ the source of the field strength's divergence, and the Lorenz condition made it conserved; the article therefore identified the field, the current and the response. **With the coupling the equation sources $m^{2}\tilde A$ by the *covariant* divergence**, $\tilde\nabla_{\mathrm{gco}}\tilde F=k_m^{2}\tilde A$, so the response is no longer conserved by the Lorenz condition alone: the connection's own term sits between them. **The fluid's own field acts on its own current**, and that is the self-interaction the free case could not have.
 
 **The direction is $\tilde A/r$, and it is the generalisation of the free velocity.** In the free case $A_\mu/r=u_\mu$ was the unit flow and the current at once. Here $\tilde A/r=e^{i\vartheta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ is a unit element whose boost is the flow, and it is conserved by nothing: its divergence is the divergence of the word, which is the constraint plus whatever the frame contributes.
 
@@ -174,7 +174,7 @@ so the two real combinations of the divergence are a sine and a cosine of twice 
 **The free article's stress decomposes into a stiff perfect-fluid part and a field-strength part, and the coupling does not change the decomposition.** The free stress is
 
 $$
-T_{\mu\nu}=-F_{\mu\alpha}F_\nu{}^{\alpha}+\tfrac14g_{\mu\nu}F_{\alpha\beta}F^{\alpha\beta}
+T_{\mu\nu}=-\sum_\alpha\varepsilon_\alpha F_{\mu\alpha}F_{\nu\alpha}+\tfrac14g_{\mu\nu}\sum_{\alpha,\beta}F_{\alpha\beta}F_{\alpha\beta}
 +m^{2}\bigl(A_\mu A_\nu-\tfrac12 g_{\mu\nu}A^{2}\bigr),
 $$
 
@@ -197,7 +197,7 @@ and that the field-strength part is traceless, transverse-anisotropic and invisi
 
 ## The Massless Limit
 
-**The free article's massless limit removes the fluid, and the reason is that the Lorenz condition was the mass's gift.** With $A_\mu=ru_\mu$ the free condition is continuity, and continuity came from taking the divergence of $\partial_\nu F^{\nu\mu}=m^{2}A^{\mu}$: at $m=0$ there is nothing on the right and the Lorenz condition is a gauge choice rather than a constraint. **So the free fluid's incompressibility evaporates at $m=0$ and the fluid reading goes with it.**
+**The free article's massless limit removes the fluid, and the reason is that the Lorenz condition was the mass's gift.** With $A_\mu=ru_\mu$ the free condition is continuity, and continuity came from taking the divergence of $\sum_\nu\partial_\nu F_{\nu\mu}=m^{2}A_\mu$: at $m=0$ there is nothing on the right and the Lorenz condition is a gauge choice rather than a constraint. **So the free fluid's incompressibility evaporates at $m=0$ and the fluid reading goes with it.**
 
 **The coupled case has the same limit and a different residue.** For $m>0$ the trace of the equation forces the covariant Lorenz condition and the ordinary divergence is the amplitude of §*The Lorenz Condition Is No Longer the Continuity Equation*. At $m=0$ the equation is $\tilde\nabla_{\mathrm{gco}}\tilde F=0$, whose divergence gives no constraint on the potential; the covariant Lorenz condition becomes one gauge choice among many. **The compressibility statement therefore degrades in the same way as the free one**: it is a statement about a gauge, and a gauge is not a fluid property.
 

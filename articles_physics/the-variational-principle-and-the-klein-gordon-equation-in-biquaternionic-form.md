@@ -54,7 +54,7 @@ $$
 S[\tilde\Xi,\tilde\Xi^{*}]=\int\mathrm{d}^{4}x\;\mathrm{Sc}\Big[(\partial_{r'_t}\tilde\Xi)^{*}\partial_{r'_t}\tilde\Xi-\sum_{\eta}(\partial_{r_\eta}\tilde\Xi)^{*}\partial_{r_\eta}\tilde\Xi-k_m^{2}\tilde\Xi^{*}\tilde\Xi\Big].
 $$
 
-The signature is written out in the display, and that is deliberate. A compact form $\mathrm{Sc}\big[(\partial_\mu\tilde\Xi)^{*}(\partial^{\mu}\tilde\Xi)-k_m^{2}\tilde\Xi^{*}\tilde\Xi\big]$ is available, but only if the index $\mu$ runs over the complex coordinates $R_\mu$ with $\partial_{R_t}=-i\partial_{r'_t}$ and the temporal slot raised by that factor. The reason is the one already met: the Hermitian conjugation carries the central $i$ with it, so $(\partial_{R_t}\tilde\Xi)^{*}\partial_{R_t}\tilde\Xi=(+i)(-i)(\partial_{r'_t}\tilde\Xi)^{*}\partial_{r'_t}\tilde\Xi$ is the temporal term with a plus, and the four-slot contraction over $R$ gives $+\lvert\partial_{r'_t}\tilde\Xi\rvert^{2}+\sum_\eta\lvert\partial_{r_\eta}\tilde\Xi\rvert^{2}$ with no relative sign. The relative sign of the two terms is therefore a property of the metric, not of the conjugation, and it is stated in the display rather than hidden in a symbol. Three properties of the action are now checked.
+The signature is written out in the display, and that is deliberate. A compact form $\mathrm{Sc}\big[(\partial_\mu\tilde\Xi)^{*}(\partial_\mu\tilde\Xi)-k_m^{2}\tilde\Xi^{*}\tilde\Xi\big]$ would need the temporal slot raised, and this corpus raises no index; the compact form therefore hides the metric in a symbol, and the article writes the two halves apart instead. The reason is the one already met: the Hermitian conjugation carries the central $i$ with it, so $(\partial_{R_t}\tilde\Xi)^{*}\partial_{R_t}\tilde\Xi=(+i)(-i)(\partial_{r'_t}\tilde\Xi)^{*}\partial_{r'_t}\tilde\Xi$ is the temporal term with a plus, and the four-slot contraction over $R$ gives $+\lvert\partial_{r'_t}\tilde\Xi\rvert^{2}+\sum_\eta\lvert\partial_{r_\eta}\tilde\Xi\rvert^{2}$ with no relative sign. The relative sign of the two terms is therefore a property of the metric, not of the conjugation, and it is stated in the display rather than hidden in a symbol. Three properties of the action are now checked.
 
 ### The kinetic term is real
 
@@ -230,13 +230,13 @@ with $\eta$ the metric of the display in §*The Action in Element Form*, $\mathc
 **Where the tensor comes from.** The Lagrangian depends on $\tilde\Xi$ and its first derivatives and on no coordinate, so it is invariant under $r_\mu\mapsto r_\mu+\epsilon_\mu$ with constant $\epsilon_\mu$, and the Noether current of that translation is
 
 $$
-T^{\mu}{}_{\nu}=\mathrm{Sc}\big[(\partial^{\mu}\tilde\Xi)^{*}\partial_\nu\tilde\Xi+(\partial_\nu\tilde\Xi)^{*}\partial^{\mu}\tilde\Xi\big]-\delta^{\mu}{}_{\nu}\mathcal{L},
+T_{\mu\nu}=\mathrm{Sc}\big[(\partial_\mu\tilde\Xi)^{*}\partial_\nu\tilde\Xi+(\partial_\nu\tilde\Xi)^{*}\partial_\mu\tilde\Xi\big]-\delta_{\mu\nu}\mathcal{L},
 $$
 
 which is the display above with one index lowered. The two halves appear symmetrically because the Lagrangian is a real bilinear of the pair $(\tilde\Xi,\tilde\Xi^{*})$ and each half contributes one product. Its divergence is
 
 $$
-\partial_\mu T^{\mu}{}_{\nu}=-2\,\mathrm{Re}\,\mathrm{Sc}\big[(\partial_\nu\tilde\Xi)^{*}\left(\Box_\Phi-k_m^{2}\right)\tilde\Xi\big],
+\sum_\mu\partial_\mu T_{\mu\nu}=-2\,\mathrm{Re}\,\mathrm{Sc}\big[(\partial_\nu\tilde\Xi)^{*}\left(\Box_\Phi-k_m^{2}\right)\tilde\Xi\big],
 $$
 
 which vanishes on solutions, so conservation of the stress is the equation and nothing else, exactly as for the charge. The improvement term and the trace belong to *The Quantum Stress Tensor of the Biquaternion Scalar Field*; the variational statement is that no separate construction is needed, since the tensor is the current of the four translations of the action.
@@ -277,7 +277,7 @@ The ledger is short and it is the reason the article is worth writing.
 
 **The reality of the action.** The imaginary part of $S$ vanished identically on every field tried, which is the numerical form of the statement that both terms are Hermitian and that $\mathrm{Sc}$ of a Hermitian element is real.
 
-**The current.** The identity $\partial_\mu j^{\mu}=-2\,\mathrm{Im}\,\mathrm{Sc}[\tilde\Xi^{*}(\Box_\Phi-k_m^{2})\tilde\Xi]$ was checked off shell on a grid with four modes, where the two sides agreed to $10^{-13}$ at every point, and on an exact solution, where the divergence was zero to machine precision. The ratio $j_{r'_t}/\rho_{\mathrm{chg}}=-2k_m$ was checked on the mode $\omega=2$, $k_x=1$, $k_m=\sqrt3$ in one length unit, where it came out $-2\sqrt3$ and the derivation of §*The Noether Currents* explains why.
+**The current.** The identity $\sum_\mu\partial_\mu j_\mu=-2\,\mathrm{Im}\,\mathrm{Sc}[\tilde\Xi^{*}(\Box_\Phi-k_m^{2})\tilde\Xi]$ was checked off shell on a grid with four modes, where the two sides agreed to $10^{-13}$ at every point, and on an exact solution, where the divergence was zero to machine precision. The ratio $j_{r'_t}/\rho_{\mathrm{chg}}=-2k_m$ was checked on the mode $\omega=2$, $k_x=1$, $k_m=\sqrt3$ in one length unit, where it came out $-2\sqrt3$ and the derivation of §*The Noether Currents* explains why.
 
 **The stress.** On the exact plane wave the combination $\partial_{r'_t}T^{00}+\sum_\eta\partial_{r_\eta}T^{0\eta}$ vanished at the level of the finite-difference truncation, which is the numerical form of the divergence identity above.
 

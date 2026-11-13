@@ -405,4 +405,4 @@ The canonical commutator is not visible in the commuting sum over paths, but its
 - H. Kleinert, *Path Integrals in Quantum Mechanics, Statistics, Polymer Physics, and Financial Markets* (World Scientific, 2009), for the Euclidean and real-time integrals side by side.
 - S. L. Adler, *Quaternionic Quantum Mechanics and Quantum Fields* (Oxford, 1995), for the quaternionic formulation in which a complex structure must be chosen.
 - G. C. Wick, "Properties of Bethe-Salpeter Wave Functions," *Physical Review* **96** (1954) 1124–1134, for the Wick rotation and its analytic continuation.
-- [The Non-Quantum Limit of the Free Schrödinger Equation](the-non-quantum-limit-of-the-free-schrodinger-equation.html), for the WKB amplitude, its transport by the continuity equation, and the quantum potential.
+- [The Non-Quantum Limit and the Schrödinger Equation in Biquaternionic Polar Variables](the-non-quantum-limit-and-the-schrodinger-equation-in-biquaternionic-polar-variables.html), for the WKB amplitude, its transport by the continuity equation, and the quantum potential.

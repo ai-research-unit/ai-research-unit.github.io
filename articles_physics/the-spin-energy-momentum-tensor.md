@@ -6,7 +6,7 @@
 
 **The count looks like a defeat and it is not one.** The antisymmetric part of the canonical stress is, by the Belinfante relation, the divergence of the spin tensor. A total divergence carries no charge, so the antisymmetric part contributes nothing to the total energy–momentum of a localised field. The object that a fluid needs is the conserved four-vector, and one element holds exactly that: the energy density in its scalar slot and the momentum density in its vector slot. The limitation and the choice coincide.
 
-**What the element holds of the spin is the density and not the current.** The spin tensor $S^{\lambda\mu\nu}$ has twenty-four components, the Frenkel condition cuts it to twelve, and its time slice at a point is an antisymmetric pair with six, which the condition cuts to three. Those three are the vector slots of one Hermitian element whose scalar slot vanishes. So one element per event holds the spin density exactly, and the spin current needs three more.
+**What the element holds of the spin is the density and not the current.** The spin tensor $S_{\lambda\mu\nu}$ has twenty-four components, the Frenkel condition cuts it to twelve, and its time slice at a point is an antisymmetric pair with six, which the condition cuts to three. Those three are the vector slots of one Hermitian element whose scalar slot vanishes. So one element per event holds the spin density exactly, and the spin current needs three more.
 
 **The pair of laws is the rotor's equation read twice.** The energy–momentum law is the conservation of the symmetric part. The spin law is the divergence of the spin current equalling a torque, and the torque is the rotor connection contracted with the spin. When the connection turns about the spin's own axis the torque vanishes, and that is the free rotor's conservation law in components.
 
@@ -20,7 +20,7 @@
 
 | object | components | slot in one element |
 | --- | --- | --- |
-| general $T^{\mu\nu}$ | 16 | not available |
+| general $T_{\mu\nu}$ | 16 | not available |
 | symmetric part | 10 | not available |
 | antisymmetric part | 6 | not available |
 | energy and momentum density | 4 | the four slots |
@@ -34,10 +34,10 @@
 **An antisymmetric part that is a total divergence carries no charge.** That is the content of the Belinfante relation: the antisymmetric part of the canonical stress equals minus one half the divergence of the spin tensor,
 
 $$
-T^{[\mu\nu]}_{\mathrm{can}}=-\tfrac12\,\partial_\lambda S^{\lambda\mu\nu},
+T_{\mathrm{can},[\mu\nu]}=-\tfrac12\sum_\lambda\partial_\lambda S_{\lambda\mu\nu},
 $$
 
-with $S^{\lambda\mu\nu}$ antisymmetric in its last two indices. Integrating over a localised field, the divergence integrates to a boundary term and vanishes, so the antisymmetric part contributes nothing to the total energy or momentum.
+with $S_{\lambda\mu\nu}$ antisymmetric in its last two indices and every index low. Integrating over a localised field, the divergence integrates to a boundary term and vanishes, so the antisymmetric part contributes nothing to the total energy or momentum.
 
 **The relation is imported, and its convention is stated.** The factor $\tfrac12$ and the sign are those of the standard treatment, quoted in [The Gordon Decomposition of the Dirac Current in Biquaternionic Form](the-gordon-decomposition-of-the-dirac-current-in-biquaternionic-form.html) §*The Belinfante improvement*. The article does not re-derive it and does not claim it as framework content.
 
@@ -71,8 +71,8 @@ with $S^{\lambda\mu\nu}$ antisymmetric in its last two indices. Integrating over
 
 | stage | object | components |
 | --- | --- | --- |
-| the tensor | $S^{\lambda\mu\nu}$, antisymmetric in $\mu\nu$ | 24 |
-| the Frenkel condition | $S^{\lambda\mu\nu}v_{\Phi,\nu}=0$ | 12 |
+| the tensor | $S_{\lambda\mu\nu}$, antisymmetric in $\mu\nu$ | 24 |
+| the Frenkel condition | $\sum_\nu S_{\lambda\mu\nu}v_{\Phi,\nu}=0$ | 12 |
 | the time slice at an event | $S^{0ij}$ | 3 |
 | the polar element | $\rho\tfrac{\hbar}{2}i\hat s$ | 3 |
 
@@ -107,9 +107,9 @@ which is $\partial_t w_{\mathrm{fl}}+\nabla\cdot\vec S_{\mathrm P}=0$ in the fla
 **The divergence of the spin current is a torque, and the torque is the rotor connection contracted with the spin.** With the rotor's logarithmic derivative $\tilde u_{\mathrm r}^{-1}\partial_\eta\tilde u_{\mathrm r}=\tfrac12\vec\Omega_\eta$, a real vector part,
 
 $$
-\partial_\eta S^{\eta\lambda\nu}_{\Psi,\mathrm{sp}}=\tau^{\lambda\nu},
+\sum_\eta\partial_\eta S_{\Psi,\mathrm{sp},\eta\lambda\nu}=\tau_{\lambda\nu},
 \qquad
-\tau^{\lambda\nu}=\tfrac12\bigl(\Omega^{\lambda}{}_{\rho}S^{\rho\nu}-\Omega^{\nu}{}_{\rho}S^{\rho\lambda}\bigr).
+\tau_{\lambda\nu}=\tfrac12\Bigl(\sum_\rho\varepsilon_\rho\,\Omega_{\lambda\rho}S_{\rho\nu}-\sum_\rho\varepsilon_\rho\,\Omega_{\nu\rho}S_{\rho\lambda}\Bigr).
 $$
 
 **The display is the rotor's own equation in components.** The rotor's equation is $\partial_\eta\tilde u_{\mathrm r}=\tfrac12\vec\Omega_\eta\tilde u_{\mathrm r}$, and differentiating the spin direction $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ gives the commutator of the connection with the spin. The conservation law is that statement with the indices put back. [Spin Conservation and the Frenkel Condition](spin-conservation-and-the-frenkel-condition.html) derives it and this article quotes it.
@@ -142,9 +142,9 @@ with the second term a total divergence by construction and $\Sigma_{\mu\nu}$ th
 
 **The Frenkel condition says the spin has no component along the flow, and in the element it says the scalar slot is zero.** With the spin element $\tilde S_{\Psi,\mathrm{sp}}=\rho\tfrac{\hbar}{2}i\hat s$ and $\hat s$ a real vector, the scalar part is $\rho\tfrac{\hbar}{2}i\,\hat s_t$, which vanishes exactly when $\hat s$ has no temporal component.
 
-*Proposition.* $\mathrm{Sc}\,\tilde S_{\Psi,\mathrm{sp}}=0$ if and only if $S^{\mu\nu}v_{\Phi,\nu}=0$ in the flow's rest frame.
+*Proposition.* $\mathrm{Sc}\,\tilde S_{\Psi,\mathrm{sp}}=0$ if and only if $\sum_\nu S_{\mu\nu}v_{\Phi,\nu}=0$ in the flow's rest frame.
 
-*Proof.* In the rest frame $v_{\Phi}=e_t$, and the spin tensor of a spin vector $\hat s$ is $S_{\mu\nu}=\varepsilon_{\mu\nu\rho\sigma}v_{\Phi}^{\rho}\hat s^{\sigma}$, which has $S_{0i}=0$ exactly when $\hat s$ is spatial. The element's scalar part is the temporal component of $\hat s$, so the two conditions are the same condition.
+*Proof.* In the rest frame $v_{\Phi}=e_t$, and the spin tensor of a spin vector $\hat s$ is $S_{\mu\nu}=\sum_{\rho,\sigma}\varepsilon_{\mu\nu\rho\sigma}v_{\Phi,\rho}\hat s_{\sigma}$, which has $S_{0i}=0$ exactly when $\hat s$ is spatial. The element's scalar part is the temporal component of $\hat s$, so the two conditions are the same condition.
 
 **The condition is automatic in the polar word and that is the point.** The rotor is a real unit, so its image of the declared axis is a real vector with no temporal part; the scalar slot of the spin element therefore vanishes identically and the Frenkel condition is not a constraint to be imposed. That is the framework's simplification: a condition that other formulations impose is here a property of the decomposition.
 
@@ -173,13 +173,13 @@ The pair of laws is the rotor's equation read twice: the energy–momentum law c
 | Symbol | Meaning |
 |---|---|
 | $\tilde\Sigma_\Psi=w_{\mathrm{fl}}e_t+\tfrac{i}{c}\vec S_{\mathrm P}$ | Energy–momentum element: energy density and flux |
-| $T^{\mu\nu}$, $T^{[\mu\nu]}$ | Stress and its antisymmetric part |
-| $S^{\lambda\mu\nu}$ | Spin current, antisymmetric in the last two indices |
+| $T_{\mu\nu}$, $T_{[\mu\nu]}$ | Stress and its antisymmetric part |
+| $S_{\lambda\mu\nu}$ | Spin current, antisymmetric in the last two indices |
 | $S_{\Psi,\mathrm{sp},\eta,\lambda\nu}$ | Its components in the corpus's letters |
 | $\tilde S_{\Psi,\mathrm{sp}}=\rho\tfrac{\hbar}{2}i\hat s$ | Spin density element |
 | $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | Spin direction |
 | $\tilde u_{\mathrm r}^{-1}\partial_\eta\tilde u_{\mathrm r}=\tfrac12\vec\Omega_\eta$ | Rotor connection |
-| $\tau^{\lambda\nu}$ | Torque, the spin law's source |
+| $\tau_{\lambda\nu}$ | Torque, the spin law's source |
 | $\omega_{\mu\nu}=\partial_\mu v_{\Phi,\nu}-\partial_\nu v_{\Phi,\mu}$ | Vorticity 2-form |
 | $k_m=mc/\hbar$ | Mass wave number |
 | $\rho=r^{2}$ | Density |

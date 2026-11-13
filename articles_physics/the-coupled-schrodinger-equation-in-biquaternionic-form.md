@@ -47,7 +47,7 @@ which is the standard Schrödinger equation of a charged scalar field, written w
 $$
 h_t\longmapsto h_t-ϙ\varphi,
 \qquad
-\vec h_\Psi\longmapsto\vec h_\Psi+ϙ\vec A .
+\vec h_\Psi\longmapsto\vec h_\Psi-q\vec A .
 $$
 
 The two shifts are the canonical-to-kinetic dictionary of the older literature, and the polar companion reads them off the word. They are the only content of "minimal coupling" in a setting with no derivatives, and they are stated in §*The Constant Setting*.
@@ -68,7 +68,7 @@ $$
 a'_t\in\mathbb{R},\quad\vec A\in\mathbb{R}^{3},
 $$
 
-and the article writes $\varphi:=c\,a'_t$ for the electric potential, so that $ϙ\varphi$ is an energy. This is the same identification the Klein–Gordon companion makes when it writes the four-momentum shift as $\hbar c\,P_t=E+ϙ\varphi$ and $\hbar\vec P=\vec p+ϙ\vec A$; the letters differ and the object does not.
+and the article writes $\varphi:=c\,a'_t$ for the electric potential, so that $ϙ\varphi$ is an energy. This is the same identification the Klein–Gordon companion makes when it writes the four-momentum shift as $\hbar c\,P_t=E+ϙ\varphi$ and $\hbar\vec P=\vec p-q\vec A$; the letters differ and the object does not.
 
 **The two signs, and why they differ.** In the $t'$ language the covariant derivative's slots are
 
@@ -84,7 +84,7 @@ The temporal slot carries a minus where the spatial slots carry a plus. The diff
 
 **Hermiticity.** Each $D_\eta$ is anti-Hermitian for the pairing $\mathrm{Sc}(\cdot^{*}\cdot)$ when $A_\eta$ is real, since $D_\eta^{\dagger}=-D_\eta$; each $D_\eta^{2}$ is therefore Hermitian, and $(D_\eta\tilde\Xi)^{*}(D_\eta\tilde\Xi)$ is a sum of moduli. The temporal combination is Hermitian in the same sense, $i\hbar D_t=i\hbar\partial_{t'}+ϙ\varphi$, because the second term is a real multiplication. The two facts together are what make the equation's operator Hermitian and its action real.
 
-**What the sign of $ϙ$ means.** With these conventions the mechanical momentum is $\vec\pi=-i\hbar\nabla+ϙ\vec A$ and the potential energy enters as $-ϙ\varphi$. That is the standard equation with the charge $-ϙ$: the older convention writes $\vec\pi=\vec p-q\vec A$ and $+q\varphi$, and the two agree when $ϙ=-q$. The article keeps the companions' sign and does not silently flip it; every formula below is written in terms of $ϙ$, so a reader who prefers the older letter reads $ϙ$ as minus the charge and nothing else changes.
+**What the sign of $ϙ$ means.** With these conventions the mechanical momentum is $\vec\pi=-i\hbar\nabla-q\vec A$ and the potential energy enters as $-ϙ\varphi$, which is $q\varphi$ with $q=-ϙ$. That is the standard equation with the electric charge, and the corpus's kinetic momentum $\vec p-q\vec A$ is the same display and not another one. The article keeps the companions' sign and does not silently flip it; every formula below is written in terms of $ϙ$, so a reader who prefers the older letter reads $ϙ$ as minus the charge and nothing else changes.
 
 ## The Carrier and the Phase Symmetry
 
@@ -217,12 +217,12 @@ so the conservation of $J$ is the integrability condition of the connection's ow
 
 $$
 \tilde H^{\mathrm{gco}}_\Psi=\tilde H_\Psi-ϙ\varphi\,e_t+i\,ϙ\vec A
-=\big(h_t-ϙ\varphi\big)e_t+i\big(\vec h_\Psi+ϙ\vec A\big).
+=\big(h_t-ϙ\varphi\big)e_t+i\big(\vec h_\Psi-q\vec A\big).
 $$
 
-The element has the same form as $\tilde H_\Psi$, with two real numbers shifted, so every statement of the free article and of its polar companion applies to it unchanged. The phase runs at $-(h_t-ϙ\varphi)/\hbar$, the rotor's axis is $\vec h_\Psi+ϙ\vec A$, every carried direction turns at $2|\vec h_\Psi+ϙ\vec A|/\hbar$, and the frozen parameters are the field's scale and rapidity as before.
+The element has the same form as $\tilde H_\Psi$, with two real numbers shifted, so every statement of the free article and of its polar companion applies to it unchanged. The phase runs at $-(h_t-ϙ\varphi)/\hbar$, the rotor's axis is $\vec h_\Psi-q\vec A$, every carried direction turns at $2|\vec h_\Psi-q\vec A|/\hbar$, and the frozen parameters are the field's scale and rapidity as before.
 
-**How to read the two shifts.** $\vec h_\Psi$ is the free field's momentum and $h_t$ its energy; after the coupling the coefficients are the mechanical momentum and the canonical energy, $h_t-ϙ\varphi$. The first is the canonical-to-kinetic dictionary in the spatial slot, the second in the temporal one, and they carry opposite signs for the reason §*Conventions and the Sign Bookkeeping* gives. A constant potential therefore translates every frequency by $ϙ\varphi/\hbar$ and every rotor axis by $ϙ\vec A$, and it resizes nothing: the gap between the two eigenvalues is $2|\vec h_\Psi+ϙ\vec A|$ and depends on the vector potential alone.
+**How to read the two shifts.** $\vec h_\Psi$ is the free field's momentum and $h_t$ its energy; after the coupling the coefficients are the mechanical momentum and the canonical energy, $h_t-ϙ\varphi$. The first is the canonical-to-kinetic dictionary in the spatial slot, the second in the temporal one, and they carry opposite signs for the reason §*Conventions and the Sign Bookkeeping* gives. A constant potential therefore translates every frequency by $ϙ\varphi/\hbar$ and every rotor axis by $ϙ\vec A$, and it resizes nothing: the gap between the two eigenvalues is $2|\vec h_\Psi-q\vec A|$ and depends on the vector potential alone.
 
 **No gauge invariance is lost.** The two shifts are consistent with the gauge transformation, and the check is one line: under $\varphi\mapsto\varphi+\partial_{t'}\Gamma$ the phase rate would appear to change, but the field's phase changes by $ϙ\Gamma/\hbar$ in the same step, and the two changes are equal and opposite. In the constant setting the gauge function must be at most linear in $t'$ for the connection to stay constant, and for a linear one the shift of $\varphi$ is a constant translation of the phase rate — which is exactly the translation the field's own phase supplies.
 
@@ -242,7 +242,7 @@ with the same $D_\eta$ and the same $D_t$ as above. The sign check is the one th
 
 ## What the Coupling Adds and What It Does Not
 
-**Adds.** One equation and one covariant derivative in place of four substitution rules. A current that is real, conserved and gauge invariant, with no adjoint row. A covariance proof that is three lines and holds for a general element. The constant setting's dictionary, $h_t\mapsto h_t-ϙ\varphi$ and $\vec h_\Psi\mapsto\vec h_\Psi+ϙ\vec A$, as the whole of minimal coupling where there are no derivatives. And the closure statement, which is the article's structural result: the scalar case's $U(1)$ current lives inside the algebra.
+**Adds.** One equation and one covariant derivative in place of four substitution rules. A current that is real, conserved and gauge invariant, with no adjoint row. A covariance proof that is three lines and holds for a general element. The constant setting's dictionary, $h_t\mapsto h_t-ϙ\varphi$ and $\vec h_\Psi\mapsto\vec h_\Psi-q\vec A$, as the whole of minimal coupling where there are no derivatives. And the closure statement, which is the article's structural result: the scalar case's $U(1)$ current lives inside the algebra.
 
 **Does not add.** No new prediction; the equation is the standard one. No new solution; the coupled constant setting's solution is the free propagator with shifted numbers, and the operator setting's solutions are the standard ones. No enlargement of the carrier; the coupling is central and the four copies are the free four copies.
 
@@ -268,7 +268,7 @@ D_t=\partial_{t'}-\frac{i\,ϙ}{\hbar}\varphi,
 D_\eta=\partial_\eta+\frac{i\,ϙ}{\hbar}A_\eta,
 $$
 
-with $\tilde\Xi\in\mathbb{B}$ one general element, $ϙ$ the coupling and $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$ the material connection. The two signs of the two slots differ by the metric, not by a convention, and the mechanical momentum is $\vec\pi=-i\hbar\nabla+ϙ\vec A$.
+with $\tilde\Xi\in\mathbb{B}$ one general element, $ϙ$ the coupling and $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$ the material connection. The two signs of the two slots differ by the metric, not by a convention, and the mechanical momentum is $\vec\pi=-i\hbar\nabla-q\vec A$.
 
 The field remains one element of $\mathbb{B}$ and the coupling changes nothing about the carrier, because the connection's coefficients are central and left multiplication by them is scalar multiplication. The theory is four copies of the standard charged scalar field sharing one connection.
 
@@ -284,7 +284,7 @@ $$
 
 real, conserved on solutions, and gauge invariant. It closes inside the algebra, with no adjoint row and no fixed frame unit, and that is where the scalar case separates from the spinor one.
 
-In the constant setting the coupling is a shift of two numbers, $\tilde H^{\rm gco}_\Psi=(h_t-ϙ\varphi)e_t+i(\vec h_\Psi+ϙ\vec A)$, and the free flow applies to it unchanged. The coupled Schrödinger system is the non-relativistic limit of the coupled Klein–Gordon system, and the limit closes because the metric sign of the temporal slot is the same sign in both equations.
+In the constant setting the coupling is a shift of two numbers, $\tilde H^{\rm gco}_\Psi=(h_t-ϙ\varphi)e_t+i(\vec h_\Psi-q\vec A)$, and the free flow applies to it unchanged. The coupled Schrödinger system is the non-relativistic limit of the coupled Klein–Gordon system, and the limit closes because the metric sign of the temporal slot is the same sign in both equations.
 
 ## Summary of Notation
 
@@ -304,7 +304,7 @@ In the constant setting the coupling is a shift of two numbers, $\tilde H^{\rm g
 | $D_t=\partial_{t'}-\frac{iϙ}{\hbar}\varphi$, $D_\eta=\partial_\eta+\frac{iϙ}{\hbar}A_\eta$ | Its slots in the $t'$ language |
 | $\vec\pi_\eta=-i\hbar D_\eta=-i\hbar\partial_\eta+ϙA_\eta$ | The mechanical momentum |
 | $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ | The free Hermitian Hamiltonian |
-| $\tilde H^{\mathrm{gco}}_\Psi=(h_t-ϙ\varphi)e_t+i(\vec h_\Psi+ϙ\vec A)$ | The coupled Hamiltonian of the constant setting |
+| $\tilde H^{\mathrm{gco}}_\Psi=(h_t-ϙ\varphi)e_t+i(\vec h_\Psi-q\vec A)$ | The coupled Hamiltonian of the constant setting |
 | $n=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$ | The density; $\rho=2n$ is the free article's |
 | $j_\eta$, $j_t=n$ | The particle current and its temporal component |
 | $\varrho=ϙ n$, $\vec J=ϙ\vec j$ | The charge density and the charge current |

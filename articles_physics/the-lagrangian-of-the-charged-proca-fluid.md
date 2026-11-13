@@ -14,14 +14,14 @@
 
 **Position in the block.** This is the variational companion of [The Charged Proca Fluid](the-charged-proca-fluid.html) and the eighth and last of the articles of this layer. It is the only one in which the coupling degrades a statement rather than adding a force, and the only one in which the free rung's cleanest result is lost.
 
-**Conventions.** $A_\mu$ is complex, $F_{\mu\nu}=D_\mu A_\nu-D_\nu A_\mu$, $D_\mu=\partial_\mu+\frac{iϙ}{\hbar}A^{\mathrm{ext}}_\mu$, $k_m=mc/\hbar$; $\mathcal L=-\frac14F^{*}_{\mu\nu}F^{\mu\nu}-\frac{k_m^{2}}{2}A^{*}_\mu A^\mu$ in the corpus's signature. The external potential is written $\tilde A_\Phi=i a'_t e_t+\vec A$ and the coupling is $ϙ$, with $q=-ϙ$. The carrier's parameters are eight real ones; [The Charged Proca Fluid](the-charged-proca-fluid.html) records the doubling and this article does not re-derive it.
+**Conventions.** $A_\mu$ is complex, $F_{\mu\nu}=D_\mu A_\nu-D_\nu A_\mu$, $D_\mu=\partial_\mu+\frac{iϙ}{\hbar}A^{\mathrm{ext}}_\mu$, $k_m=mc/\hbar$; $\mathcal L=-\frac14\sum_{\mu,\nu}F^{*}_{\mu\nu}F_{\mu\nu}-\frac{k_m^{2}}{2}\sum_\mu\varepsilon_\mu A^{*}_\mu A_\mu$ in the corpus's signature, every index low. The external potential is written $\tilde A_\Phi=i a'_t e_t+\vec A$ and the coupling is $ϙ$, with $q=-ϙ$. The carrier's parameters are eight real ones; [The Charged Proca Fluid](the-charged-proca-fluid.html) records the doubling and this article does not re-derive it.
 
 ## The Action in the Fluid Variables
 
 **The derivative term is rebuilt and the algebraic term is not.**
 
 $$
-\mathcal L=-\frac{1}{4}F^{*}_{\mu\nu}F^{\mu\nu}-\frac{k_m^{2}}{2}\lvert A\rvert^{2}
+\mathcal L=-\frac{1}{4}\sum_{\mu,\nu}F^{*}_{\mu\nu}F_{\mu\nu}-\frac{k_m^{2}}{2}\lvert A\rvert^{2}
 \;\longrightarrow\;
 \mathcal L_{\mathrm{gco}}=-\frac{1}{4}F^{\mathrm{gco}*}_{\mu\nu}F^{\mathrm{gco}\,\mu\nu}-\frac{k_m^{2}}{2}\lvert A\rvert^{2},
 \qquad
@@ -40,7 +40,7 @@ and the identity behind the split is algebraic: $F(D)(r u)=r\,(Du)+\mathrm{d}r\w
 
 **What changes is the vorticity's definition and hence its source.** At the free rung $\omega=\mathrm{d}u$ and the vorticity is the direction's curl; here $\Omega=Du$ and the vorticity carries the connection. **The fluid's rotation is no longer a property of the direction alone**, and the difference is the field strength's contribution to it — which is the opposite of what happens at the scalar rung, where the coupling *is* the vorticity. The two are not in contradiction: the scalar velocity is a gradient and the vector velocity is a direction, so a connection shifts the first into the field and folds itself into the second.
 
-**The rank is still two, and the reason is still the dimension of the rest space.** The covariant vorticity of the congruence is the projected curl, $\Omega^{\perp}_{\mu\nu}=\Delta_\mu{}^\alpha\Delta_\nu{}^\beta\Omega_{\alpha\beta}$ with $\Delta_{\mu\nu}=g_{\mu\nu}+u_\mu u_\nu$, and it annihilates $u$ by construction; a two-form on three dimensions is simple, so the rank is two wherever $\vec\Omega\ne0$. **The raw covariant curl is not transverse, and compatibility with the norm is not what would make it so**: $\Omega_{\mu\nu}u^\nu=-u^\nu D_\nu u_\mu$, the covariant acceleration, which is orthogonal to the flow because the norm is preserved and not because the curl is.
+**The rank is still two, and the reason is still the dimension of the rest space.** The covariant vorticity of the congruence is the projected curl, $\Omega^{\perp}_{\mu\nu}=\sum_{\alpha,\beta}\Delta_{\mu\alpha}\Delta_{\nu\beta}\Omega_{\alpha\beta}$ with $\Delta_{\mu\nu}=g_{\mu\nu}+u_\mu u_\nu$, and it annihilates $u$ by construction; a two-form on three dimensions is simple, so the rank is two wherever $\vec\Omega\ne0$. **The raw covariant curl is not transverse, and compatibility with the norm is not what would make it so**: $\sum_\nu\varepsilon_\nu\Omega_{\mu\nu}u_\nu=-\sum_\nu\varepsilon_\nu u_\nu D_\nu u_\mu$, the covariant acceleration, which is orthogonal to the flow because the norm is preserved and not because the curl is.
 
 ## The Lorenz Condition Ceases to Be Continuity
 
