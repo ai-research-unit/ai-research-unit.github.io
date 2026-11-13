@@ -268,15 +268,121 @@ $$</p>
 </ol>
 <h2 id="the-three-charged-fluids">The Three Charged Fluids</h2>
 <p><strong>The three charged articles can be put side by side, and the table is the shortest statement of what the charge does to each.</strong> The table is the same in all three; what changes from one to the next is which column is the article's own.</p>
-<p>@T3@</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>charged scalar</th>
+<th>charged spin</th>
+<th>charged vector</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the carrier</td>
+<td>a complex function: two parameters</td>
+<td>a word of four factors: eight parameters</td>
+<td>the same word: eight parameters</td>
+</tr>
+<tr>
+<td>the density</td>
+<td>$\rho_{\mathrm{num}}=\lvert\Xi\rvert^{2}$</td>
+<td>$\rho$, read from the word</td>
+<td>the scale, which is not a norm</td>
+</tr>
+<tr>
+<td>the velocity</td>
+<td>$\tilde P^{\mathrm{mech}}/m$</td>
+<td>the frame, $ic\tilde U_{\Psi,\mathrm b}^{-2}$</td>
+<td>the field's direction, $\tilde A/r$</td>
+</tr>
+<tr>
+<td>is it a unit?</td>
+<td>only where the quantum potential vanishes</td>
+<td>always, $\langle\tilde V_\Phi\rangle_\natural=-c^{2}$</td>
+<td>its boost is; the element is not a four-vector</td>
+</tr>
+<tr>
+<td>the vorticity</td>
+<td>the field strength, $ϙF/m$</td>
+<td>the frame's gradient, and not $ϙF/m$</td>
+<td>not established; the free case's is $F$ minus a radial term</td>
+</tr>
+<tr>
+<td>the vorticity's rank</td>
+<td>$0$, $2$ or $4$</td>
+<td>$2$ for the proper part</td>
+<td>the free case's is $2$</td>
+</tr>
+<tr>
+<td>the loop invariant</td>
+<td>$2\pi\hbar n/m+ϙ\Phi_B/m$</td>
+<td>a Lorentz transformation times a phase</td>
+<td>for $ϙ=0$ an integer; for $ϙ\ne0$, not known</td>
+</tr>
+<tr>
+<td>the force</td>
+<td>the Lorentz force, plus a quantum potential</td>
+<td>the Lorentz force, and no torque</td>
+<td>the covariant divergence, self-acting</td>
+</tr>
+<tr>
+<td>the stress</td>
+<td>the quantum potential is in it; no EOS</td>
+<td>the antisymmetric part is in it; no EOS</td>
+<td>its own field strength is in it; stiff on $F=0$</td>
+</tr>
+<tr>
+<td>the degenerate set</td>
+<td>$r=0$, codimension two</td>
+<td>$r=0$, codimension two</td>
+<td>$r=0$; the free case's lightlike wall is gone</td>
+</tr>
+<tr>
+<td>what the charge does</td>
+<td>turns the vorticity into the field strength</td>
+<td>pushes and does not torque</td>
+<td>doubles the carrier and opens the constraint</td>
+</tr>
+</tbody>
+</table></div>
 <p><strong>This article's column is the first, and it is the only column where the charge changes the vorticity's nature.</strong> That one fact explains four rows at once: the vorticity is a field strength rather than a frame gradient or the curl of a direction, the circulation is a winding plus a flux, the force is a Lorentz force rather than a stress divergence, and the stress is untouched because the field is external. <strong>The scalar fluid is the one case in which the coupling is pure kinematics.</strong></p>
-<p><strong>The row that separates it from the other two is the velocity's.</strong> Here the velocity is the mechanical momentum over the mass, a gradient plus a potential, so $\mathrm{d}V$ is exactly $F$. In the spin case the velocity is the frame, which is a unit and not a gradient, so $\mathrm{d}V$ carries the frame's logarithmic derivative and no $F$ at all; in the vector case the velocity is the field's own direction, so $\mathrm{d}V$ is $F$ minus a radial term. <strong>Three velocities, three curls, and only one of them is the field strength.</strong></p>
+<p><strong>The row that separates it from the other two is the velocity's.</strong> Here the velocity is the mechanical momentum over the mass, a gradient plus a potential, so $\mathrm{d}V$ is exactly $F$. In the spin case the velocity is the frame, which is a unit and not a gradient, so $\mathrm{d}V$ carries the frame's logarithmic derivative and no $F$ at all; in the vector case the velocity is the field's own direction, and the free case's $\mathrm{d}V$ is $F$ minus a radial term while the charged case's is not computed in this block. <strong>Three velocities, three curls, and only one of them is the field strength.</strong></p>
 <p><strong>Two rows are the same in all three columns and deserve a sentence.</strong> Every one of the three fluids has a degenerate set at $r=0$ and none of them has an equation of state; those are properties of the word and not of the connection, which is why the three articles state them once and do not re-derive them.</p>
 <h2 id="what-the-charge-does-to-the-correspondence">What the Charge Does to the Correspondence</h2>
 <p><strong>The correspondence still has three steps, and the charge changes the second.</strong> The word is exact; the reverse map is defined on a class; membership of that class is the extra structure that makes the fluid a medium rather than a relabelling of a wave. The free article's version of the three steps is in its own §<em>The Correspondence</em>; here is the charged version.</p>
 <p><strong>The forward arrow is unchanged and exact.</strong> Any nowhere-zero solution of the coupled equation gives a positive density, an action and a mechanical momentum, by the polar substitution, and the substitution is a bijection on the $N$-regular set. The connection is a datum of the equation and not of the solution, so it costs the arrow nothing.</p>
 <p><strong>The reverse arrow now takes three data and returns one field.</strong> Given $(\rho,S_{\tilde\Xi},A)$ with $\rho>0$, the field is $r e^{iS_{\tilde\Xi}/\hbar}\varepsilon$, and it solves the coupled equation iff the pair of §<em>The Force</em> and §<em>The Vorticity</em> holds. <strong>The extra structure is therefore no longer a constitutive law internal to the fluid; it is a connection external to it</strong>, and the classical object it names is a charged fluid with a prescribed field.</p>
-<p>@TC@</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>the word's data</th>
+<th>what the reverse map needs beyond it</th>
+<th>the medium it makes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>charged scalar</td>
+<td>$r$, $\theta_{\mathrm{pha}}$</td>
+<td>the energy equation, which is the Hamiltonian</td>
+<td>a charged Madelung fluid</td>
+</tr>
+<tr>
+<td>charged spin</td>
+<td>eight parameters</td>
+<td>the connection, and a closure of the frame's transport</td>
+<td>a charged Cosserat medium</td>
+</tr>
+<tr>
+<td>charged vector</td>
+<td>the same eight</td>
+<td>the connection, which is the field itself</td>
+<td>a self-acting compressible medium</td>
+</tr>
+</tbody>
+</table></div>
 <p><strong>The free correspondence's three kinds of extra structure were the three ways a medium exceeds a dust; the charged correspondence's third column names what exceeds the dust now: a field.</strong> That is the sense in which the charge does not add a fourth fluid but adds a fourth kind of datum, and the table's second row is this article's.</p>
 <p><strong>What the correspondence supports and what it does not.</strong> It supports the claim that the coupled Klein–Gordon equation is the equation of motion of a recognizable classical medium, and it supports the twelve properties of §<em>The Properties, Listed</em> item by item. It does not support the claim that the charged fluid is a superfluid, that its vorticity is a dynamical variable, or that its density is positive definite: the first is refused in §<em>The Circulation</em>, the second in §<em>The Vorticity</em>, and the third is the free article's defect, which the charge moves and does not repair.</p>
 <h2 id="what-is-established-and-what-is-interpretation">What Is Established and What Is Interpretation</h2>

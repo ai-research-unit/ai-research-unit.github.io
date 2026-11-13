@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Charged Spin Fluid: The Force Takes the Charge and the Spin Does Not — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-charged-spin-fluid-the-force-takes-the-charge-and-the-spin-does-not"><strong>The Charged Spin Fluid: The Force Takes the Charge and the Spin Does Not</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The charge reaches the momentum and the frame's rapidity, and it cannot reach the spin.</strong> That is the whole of what the coupling does to the spin fluid, and the article's work is to draw out what follows: the velocity is still a unit, the vorticity is still the frame's, the spin direction is still gauge invariant and still coupling-blind, and the three open items of the free article — no vorticity transport law, no closure, no spin dynamics in a background — survive the coupling untouched. <strong>The charge adds a force and an angle shift; it does not add a constitutive law.</strong></p>
+<p><strong>The equation.</strong> The coupled Dirac equation in polar variables is the free one with covariant derivatives,</p>
+<p>$$
+\tilde\nabla_{\mathrm{gco}}\tilde\Xi_{\mathrm D}=\frac{i}{\hbar}k_m\tilde\Xi_{\mathrm D},
+\qquad
+\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi,
+\qquad
+\tilde\Xi_{\mathrm D}=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r},
+$$</p>
+<p>with $\tilde A_\Phi=i a'_t e_t+\vec A$ in the material sector. <strong>The coupling is central per component</strong>, so it commutes with the split of the word into a scale, an angle, a boost and a rotor, and its effect is confined by type rather than by size. That single fact decides every question the article asks.</p>
+<p><strong>Three things are established.</strong></p>
+<p><em>First, the connection reaches two of the four brackets and no others.</em> Its temporal slot is a central imaginary number and joins the phase bracket; its spatial slots are Hermitian vectors and join the boost bracket. The scale bracket is a real scalar and the rotor bracket is a real vector part, and a central element can produce neither. <strong>On the fluid's side: the momentum and the rapidity move, the density does not, and the spin does not.</strong></p>
+<p><em>Second, the velocity is the kinetic one and it is a unit for every field.</em> The mass-shell identity holds for the covariant wavevector, $\tilde K_{\Phi,\mathrm{gco}}=ik_m\tilde U_{\Psi,\mathrm b}^{-2}$, so the boost in the word is the one the covariant wavevector names, and $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}$ with $\langle\tilde V_\Phi\rangle_\natural=-c^{2}$ whatever the coupling. <strong>This is the one charged fluid whose normalisation the coupling cannot touch</strong>, and the reason is structural: the velocity is a unit by construction and not by the equation of motion.</p>
+<p><em>Third, the force is the Lorentz force and there is no torque.</em> The coupling enters the momentum balance through the charge current and the antisymmetric part of the stress through the spin current, and the second is the free article's. So the fluid is pushed where it carries charge and is turned where its spin varies, and <strong>the field does not turn the spin directly</strong>; what the standard theory calls Larmor precession appears at second order, through the transport of the frame, and §<em>The Force, and Not the Torque</em> states the composition.</p>
+<p><strong>What is not here.</strong> No new solution, no derivation of a spin equation in a background, and no closure of the general field. The parent records all three limits for the free case; this article records that the coupling does not lift them, and that the reason is a fact of type.</p>
+<p><strong>Position in the block.</strong> This article is the charged companion of <a href="the-spin-fluid-of-the-biquaternion-dirac-field.html">The Spin Fluid of the Biquaternion Dirac Field</a>. Its siblings are <a href="the-charged-klein-gordon-fluid.html">The Charged Klein–Gordon Fluid</a> and <a href="the-charged-proca-fluid.html">The Charged Proca Fluid</a>, and §<em>The Three Charged Fluids</em> compares the three.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $^{\natural}$ is quaternion conjugation, $^{*}$ Hermitian conjugation, $\mathrm{Sc}$ the coefficient of $e_t$. The word is $r e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $r>0$, $\tilde U_{\Psi,\mathrm b}$ a boost of rapidity $\theta_{\mathrm{rpd}}$ about $\vec u_{\mathrm b}$ and $\tilde u_{\mathrm r}$ a rotor of angle $\theta_{\mathrm{axr}}$ about its axis. The coupling is $ϙ$, the action is $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$, $k_m=mc/\hbar$, and $\tilde A_\Phi=i a'_t e_t+\vec A$ with $a'_t$ and $\vec A$ real. The spin direction is $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$.</p>
+<h2 id="the-two-brackets-the-charge-can-reach">The Two Brackets the Charge Can Reach</h2>
+<p><strong>The logarithmic derivative of the coupled word has four brackets, and the connection's whole contribution is one central element per slot.</strong> Dividing the covariant derivative of the word by the word,</p>
+<p>$$
+\tilde\Xi_{\mathrm D}^{-1}\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi_{\mathrm D}
+=\frac{1}{2}\frac{\partial\ln\rho}{\partial R_\mu}
++i\frac{\partial\theta_{\mathrm{pha}}}{\partial R_\mu}
++\frac{iϙ}{\hbar}A_\mu
++\tilde u_{\mathrm r}^{-1}\Bigl(\tilde U_{\Psi,\mathrm b}^{-1}\frac{\partial\tilde U_{\Psi,\mathrm b}}{\partial R_\mu}\Bigr)\tilde u_{\mathrm r}
++\tilde u_{\mathrm r}^{-1}\frac{\partial\tilde u_{\mathrm r}}{\partial R_\mu},
+$$</p>
+<p>and the added term decomposes by its own slots:</p>
+<p>$$
+\frac{iϙ}{\hbar}\tilde A_\Phi
+=\underbrace{\frac{iϙ}{\hbar}A_t}_{\text{central imaginary}}
++\underbrace{\frac{iϙ}{\hbar}\sum_\eta A_\eta\vec e_\eta}_{\text{Hermitian vector}} .
+$$</p>
+<p><strong>The temporal slot is a central imaginary number and the spatial slots are Hermitian vectors</strong>, so the connection adds to the phase bracket and to the boost bracket. The scale bracket is a real central scalar and the rotor bracket is a real vector part; neither is reachable by a central multiplication, and both are therefore untouched.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>bracket</th>
+<th>type</th>
+<th>the connection's share</th>
+<th>what it moves in the fluid</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tfrac12\partial_\mu\ln\rho$</td>
+<td>real central scalar</td>
+<td>none</td>
+<td>the density: nothing</td>
+</tr>
+<tr>
+<td>$i\partial_\mu\theta_{\mathrm{pha}}+\frac{iϙ}{\hbar}A_\mu$</td>
+<td>central imaginary</td>
+<td>the whole temporal slot</td>
+<td>the momentum</td>
+</tr>
+<tr>
+<td>$\tilde u_{\mathrm r}^{-1}(\tilde U_{\Psi,\mathrm b}^{-1}\partial_\mu\tilde U_{\Psi,\mathrm b})\tilde u_{\mathrm r}$</td>
+<td>Hermitian</td>
+<td>the whole spatial slot</td>
+<td>the rapidity and the axis</td>
+</tr>
+<tr>
+<td>$\tilde u_{\mathrm r}^{-1}\partial_\mu\tilde u_{\mathrm r}$</td>
+<td>real vector part</td>
+<td>none</td>
+<td>the spin direction: nothing</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The third row is the row the scalar case does not have, and it is the article's hinge.</strong> In the scalar fluid the frame brackets vanish identically, so the connection's spatial slots have nowhere to land and the only effect is a shift of the phase rate. Here the spatial slots land in the boost bracket, so <strong>the field changes the rapidity of the flow as well as its momentum</strong> — and in doing that it changes the velocity twice over: once by shifting the wavevector the rapidity is read from, and once by turning the frame's axis through the transport.</p>
+<p><strong>The rotor's row is the row that matters for the spin, and it is a row of zeros.</strong> A central multiplication cannot reach inside the product $\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ to change one factor and not the other. <strong>The spin direction is therefore coupling-blind in the chart's kinematics</strong>, and §<em>The Force, and Not the Torque</em> draws the consequence.</p>
+<p><strong>Why the type argument is a proof and not a hope.</strong> The four brackets are the four irreducible types of the element: real central scalar, central imaginary, Hermitian, and real vector part. A central element is a combination of the first two, and multiplication by it preserves the type of what it multiplies. So the connection can move only the two brackets whose type it can supply, and the two it cannot supply are exactly the scale and the rotor. <strong>No choice of the connection's size or shape changes the answer</strong>, which is why the argument is worth stating once and not testing case by case.</p>
+<h2 id="the-velocity-is-the-kinetic-one">The Velocity Is the Kinetic One</h2>
+<p><strong>The mass-shell identity is the proposition that names the velocity, and the coupling shifts which wavevector it applies to.</strong> The parent's proposition is that a field whose wavevector satisfies $\tilde K\tilde K^{\natural}=-k_m^{2}$ has $\tilde K=ik_m\tilde U_{\Psi,\mathrm b}^{-2}$ for a boost. With the connection in place the same proposition holds for the covariant wavevector:</p>
+<p>$$
+\tilde K_{\Phi,\mathrm{gco}}=ik_m\tilde U_{\Psi,\mathrm b}^{-2},
+\qquad
+\tilde V_\Phi=ic\,\tilde U_{\Psi,\mathrm b}^{-2},
+\qquad
+\vec v=c\tanh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b},
+\qquad
+\gamma=\cosh\theta_{\mathrm{rpd}},
+$$</p>
+<p>and the canonical wavevector is the covariant one less the potential:</p>
+<p>$$
+\tilde K_\Phi=\tilde K_{\Phi,\mathrm{gco}}-\frac{ϙ}{\hbar}\tilde A_\Phi .
+$$</p>
+<p><strong>In one sentence: the boost in the word is the one the covariant wavevector names, so the velocity is kinetic and the potential sits entirely in the canonical wavevector.</strong> The classical statement is $\vec p_{\mathrm{kin}}=\vec p_{\mathrm{can}}-ϙ\vec A$; the chart's statement is that the two wavevectors differ by one element and that the mass-shell identity is applied to the second.</p>
+<p><strong>The velocity is a unit for every field, and this is where the spin fluid parts company with the scalar one.</strong> Because the boost is a unit by construction and the density is a separate factor,</p>
+<p>$$
+\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}
+\qquad\text{whatever the coupling,}
+$$</p>
+<p>and the reason is that the velocity is not the momentum over the mass but the frame itself. <strong>In the scalar fluid the velocity was $\tilde P^{\mathrm{mech}}/m$ and was a unit only where the quantum potential vanished</strong>, because the quantum potential changed the momentum's norm; here nothing can change the norm of a frame. The contrast is the sharpest single difference between the two charged articles: <strong>the scalar fluid's normalisation is dynamical and the spin fluid's is kinematical.</strong></p>
+<p><strong>The mass shell in canonical components is the translated hyperboloid.</strong> Expanding the identity,</p>
+<p>$$
+\Bigl(\frac{E+ϙcA_t}{\hbar c}\Bigr)^{2}-\Bigl|\frac{\vec p+ϙ\vec A}{\hbar}\Bigr|^{2}=-k_m^{2},
+$$</p>
+<p>so the radius is $k_m$ and the potential moves the centre: a constant potential shifts every level and opens no gap. <strong>The polar reason is one line</strong>: a shift of a variable cannot change a radius. The fluid reason is equally short: a shift of the momentum cannot change the frame.</p>
+<p><strong>The objection, and the answer.</strong> The objection is that the covariant wavevector is <em>defined</em> as the canonical one plus the potential, so "the boost is carried by the covariant wavevector" is a naming and not a result. The objection is correct as far as it goes, and the answer is that the identity fixes the direction of the reading: read from the potential to the frame, the coupling changes the rapidity, hence the velocity; read from the frame to the potential, the velocity is what survives when the potential is removed. <strong>The chart states the identity; the physical naming is the corpus's convention and not a consequence of the algebra</strong>, and the article says so rather than dressing it up.</p>
+<h2 id="the-vorticity-is-still-the-frames">The Vorticity Is Still the Frame's</h2>
+<p><strong>The vorticity is the antisymmetrised gradient of the frame, and the coupling changes its value only through the equation.</strong> With $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}$ and $\Gamma_\mu:=\tilde U_{\Psi,\mathrm b}^{-1}\partial_\mu\tilde U_{\Psi,\mathrm b}$ the frame's logarithmic derivative,</p>
+<p>$$
+\frac{\partial\tilde U_{\Psi,\mathrm b}^{-2}}{\partial R_\mu}
+=-\Gamma_\mu\tilde U_{\Psi,\mathrm b}^{-2}-\tilde U_{\Psi,\mathrm b}^{-2}\Gamma_\mu,
+$$</p>
+<p>$$
+\omega_{\mu\nu}
+=-ic\Bigl[\Gamma_\mu\tilde U_{\Psi,\mathrm b}^{-2}+\tilde U_{\Psi,\mathrm b}^{-2}\Gamma_\mu\Bigr]_{\nu}
++ic\Bigl[\Gamma_\nu\tilde U_{\Psi,\mathrm b}^{-2}+\tilde U_{\Psi,\mathrm b}^{-2}\Gamma_\nu\Bigr]_{\mu},
+$$</p>
+<p>where $[\,\cdot\,]_\nu$ is the coefficient of $e_\nu$. <strong>Every term is built from $\Gamma$ and $\tilde U$, and no term contains the connection.</strong> The potential appears in the equation of motion, the equation fixes the word, and the word fixes the frame; the chain has three links and is not a one-line identity.</p>
+<p><strong>The contrast with the scalar fluid is exact and it is worth a table.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>charged scalar</th>
+<th>charged spin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the velocity</td>
+<td>$\tilde P^{\mathrm{mech}}/m$, a gradient plus a potential</td>
+<td>$ic\tilde U_{\Psi,\mathrm b}^{-2}$, the frame</td>
+</tr>
+<tr>
+<td>$\mathrm{d}V$</td>
+<td>$\frac{ϙ}{m}F$, exactly</td>
+<td>the frame's logarithmic derivative</td>
+</tr>
+<tr>
+<td>is $\mathrm{d}V$ the field strength?</td>
+<td>yes, identically</td>
+<td>no, for any field</td>
+</tr>
+<tr>
+<td>rank</td>
+<td>$0$, $2$ or $4$</td>
+<td>$2$ for the proper part; the raw derivative reaches $4$</td>
+</tr>
+<tr>
+<td>closed?</td>
+<td>yes, $\mathrm{d}F=0$</td>
+<td>yes, by the Maurer–Cartan flatness of $\Gamma$</td>
+</tr>
+<tr>
+<td>exact?</td>
+<td>no, unless $\Phi_B=0$ on the loop</td>
+<td>no, unless the holonomy is trivial</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The fourth row is the sharpest one, and it is exact.</strong> The vorticity proper — the part that annihilates the velocity — is rank two for every solution, because it is a two-form on the three dimensions of the rest space and every two-form on three dimensions is simple. The check was run twice: on a shear frame the four-dimensional singular values came out $0.150342$, $0.150342$, $0$, $0$; on a boost field whose rapidity varies in two directions and whose axis rotates, $0.19442$, $0.19442$, $0$, $0$, with the projected invariant $\vec E_{\mathrm{vrt}}\cdot\vec B_{\mathrm{vrt}}$ at $2.3\times10^{-19}$. <strong>The raw derivative of that same field is rank four</strong> — $0.20582$, $0.20582$, $0.02742$, $0.02742$ — and the difference between the two displays is the acceleration, which is the free article's point and not the coupling's.</p>
+<p><strong>A rank-four field strength added to a rank-two vorticity is a rank-four two-form of a different kind.</strong> Adding $ϙF/m$ for a representative $F$ with $\vec E\cdot\vec B\ne0$ gave the singular values $0.921$, $0.921$, $0.632$, $0.632$ at the same event. <strong>The sum is closed, since both terms are, and it is not the vorticity</strong>; calling it so would be a relabelling and not an identification. The scalar fluid's display $\omega=ϙF/m$ is therefore not transferable, and the transfer fails by the rank as well as by the letters.</p>
+<p><strong>What the vorticity is and what it is not.</strong> It is the fluid's rotation rate at an event, a closed two-form whose periods around non-contractible loops are the holonomy of the frame. It is not the magnetic field, and it is not the spin density: the Gordon split of §<em>The Gordon Split</em> is the magnetisation current, and the vorticity is a flow property. It is not a dynamical variable either: the free article proves there is no transport law for $\omega$, and the coupling does not supply one, because a transport law would have to be written in the fourth bracket and the connection cannot write there.</p>
+<p><strong>The one thing the coupling does to the vorticity.</strong> It changes the frame, hence $\omega$, at every event where the coupled solution's frame differs from the free one's. <strong>The change is real and it is not a term</strong>: there is no sense in which the charged spin fluid's vorticity is the free one's plus $ϙF/m$. A reader who wants that statement should read the scalar article, where it is true.</p>
+<h2 id="the-loop-invariant-a-holonomy-and-a-phase">The Loop Invariant: a Holonomy and a Phase</h2>
+<p><strong>The circulation of the spin fluid is not a number, and that is what distinguishes it from the scalar one.</strong> Integrate the velocity around a closed loop. Because $\tilde V_\Phi$ is built from the frame, the integral is the trace of the frame's transport around the loop, and the transport is an element of the Lorentz group:</p>
+<p>$$
+\oint\tilde V_\Phi\cdot\mathrm{d}\vec l
+=C\bigl[H_{\mathrm{loop}}\bigr],
+\qquad
+H_{\mathrm{loop}}=\mathcal{P}\exp\oint\Gamma_\mu\,\mathrm{d}x^\mu\in SL(2,\mathbb{C}),
+$$</p>
+<p>with $\mathcal{P}$ the path ordering and $C$ the linear functional that reads the components of the algebra element. <strong>The loop's datum is $H_{\mathrm{loop}}$, a Lorentz transformation, and the circulation is one number read off it</strong>; the scalar fluid's loop datum is a phase and its circulation is the whole of it.</p>
+<p><strong>The mechanical momentum adds the flux, and the sum has two factors.</strong> The canonical momentum is the covariant one less the potential, so the same loop carries</p>
+<p>$$
+\oint\tilde P^{\mathrm{mech}}\cdot\mathrm{d}\vec l
+=\oint\tilde P^{\mathrm{can}}\cdot\mathrm{d}\vec l+ϙ\Phi_B,
+$$</p>
+<p>and the canonical loop integral is the holonomy's. <strong>The loop's invariant is therefore a Lorentz transformation multiplied by a phase</strong>:</p>
+<p>$$
+\text{the loop's transport}
+=\underbrace{\text{holonomy of }\tilde U_{\Psi,\mathrm b}}_{\text{a Lorentz transformation}}
+\times
+\underbrace{\exp\Bigl(\frac{iϙ\Phi_B}{\hbar}\Bigr)}_{\text{a phase}},
+$$</p>
+<p>and the two factors commute because the second is central. <strong>The object is an element of $\mathbb{C}^{\ast}\times SL(2,\mathbb{C})$</strong>, and that is the honest description of a charged spin fluid's circulation: a rotation of the frame and a phase, and neither of them quantised.</p>
+<p><strong>Why the scalar case is the special one.</strong> There the velocity was a gradient plus a potential, so the loop integral split into an integer and a flux and both terms were numbers. Here the velocity is a frame, so the loop integral is a group element before the potential is added and remains one after. <strong>The charge adds a phase to a Lorentz transformation; it does not turn the transformation into a number.</strong></p>
+<p><strong>What survives of the free article's statement.</strong> The free article records that the spin fluid's circulation is the holonomy and is therefore not quantised, and that the frozen-frame sector is where the circulation vanishes. Both survive, the first with the phase attached and the second with a qualification: a constant frame has a trivial holonomy and a constant flux still gives a phase, so the frozen-frame sector's circulation becomes $e^{iϙ\Phi_B/\hbar}$ rather than unity. <strong>That is the smallest exact statement the article can make about the charge, and it is a statement about a loop and not about an event.</strong></p>
+<h2 id="the-gordon-split">The Gordon Split</h2>
+<p><strong>The chart's current is the convection part, and the magnetisation part is built from the rotor alone.</strong> The parent's current is</p>
+<p>$$
+J^t=\rho\cosh\theta_{\mathrm{rpd}},
+\qquad
+J^\eta=\rho\sinh\theta_{\mathrm{rpd}}\,u_{\mathrm b,\eta},
+$$</p>
+<p>which is the density times the velocity and nothing else. The Gordon decomposition of <a href="the-gordon-decomposition-of-the-dirac-current-in-biquaternionic-form.html">The Gordon Decomposition of the Dirac Current in Biquaternionic Form</a> splits the current into that convection part and a magnetisation part which is the divergence of the antisymmetric spin density,</p>
+<p>$$
+J^\mu=J^\mu_{\mathrm{conv}}+J^\mu_{\mathrm{mag}},
+\qquad
+J^\mu_{\mathrm{mag}}=\partial_\nu\bigl(\text{the spin bilinear}\bigr)^{\nu\mu},
+$$</p>
+<p>and the second is conserved by antisymmetry alone and carries no total charge.</p>
+<p><strong>The magnetisation current has no explicit dependence on the connection.</strong> Its bilinear is built from the rotor, $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$, and from the frame. A central multiplication cannot produce a rotor, so no term in the magnetisation current can carry $ϙ$ explicitly: <strong>the bound current is charge-blind</strong>. Its value changes when the field changes the frame through the equation, and the change is entirely indirect.</p>
+<p><strong>Why that is worth stating as a result and not as a triviality.</strong> One might expect the coupling to screen the magnetisation current, or to add to it a term proportional to the field, in the way that a polarisable medium's bound current responds to the applied field. <strong>The chart says no: there is no such term, and the only way the field reaches the magnetisation is by moving the frame.</strong> The corpus's own decomposition makes the same statement in the element form, where the spin bilinear contains no connection; the chart's version is sharper because it exhibits the rotor as the invariant the connection cannot reach.</p>
+<p><strong>What the split does to the charge conservation.</strong> The conservation of the total current splits into the conservation of the convection part and the vanishing of the divergence of the magnetisation part, the second being an identity. So <strong>the charge the fluid transports is the convection current's, and the spin's bound current adds nothing to it</strong>: the charge density is $\rho\cosh\theta_{\mathrm{rpd}}$ and no bound contribution enters it, whatever the field.</p>
+<h2 id="the-force-and-not-the-torque">The Force, and Not the Torque</h2>
+<p><strong>The coupling adds a force and no torque, and the two statements have different reasons.</strong> The momentum balance of the free article is that the divergence of the stress is the divergence of the spin's antisymmetric part. With the coupling it is</p>
+<p>$$
+\partial_\nu T^{\mu\nu}=ϙF^{\mu\nu}J_\nu+(\text{the free article's spin term}),
+$$</p>
+<p>so the field acts on the charge current and the spin term is the free one's. <strong>The force is longitudinal in the sense that it acts where the charge flows; the torque is the antisymmetric part of the stress and the field has no term in it</strong>, because a torque would have to be written in the rotor bracket and the connection cannot write there.</p>
+<p><strong>The consequence, stated plainly.</strong> In this chart the magnetic moment is not a rotor rotation. A reader who expects the coupled equation to show Larmor precession as a rotor equation will not find it, and the absence is structural rather than an oversight: the chart's variables are four brackets of four types, the coupling is confined to two by type, and a precession of the spin would have to be a term in the fourth.</p>
+<p><strong>What the background does to the spin is indirect, and the composition is the whole of the physics.</strong> The field curves the boost, and the spin's transport follows the boost's. Where the trajectory bends, the frame in which the rotor's own rate is zero bends with it, and the observed precession is the rotor's own rate composed with the transport of the frame. That composition is what the standard theory calls Thomas precession, and <a href="the-classical-origin-of-g-2-in-biquaternionic-form.html">The Classical Origin of $g=2$ in Biquaternionic Form</a> carries out the expansion and shows the two contributions combining to the Larmor rate with the ratio two. <strong>So the Larmor precession is second order in the chart's bookkeeping: not a torque on the spin, but a consequence of the frame's transport, which the field does control.</strong></p>
+<p><strong>The exact statement of what is invariant.</strong> The spin's <em>kinematics</em> is exact and gauge invariant: $\hat s$ is a function of the rotor alone, the rotor is gauge invariant, so the spin direction is an observable of the chart with no gauge ambiguity. <strong>That is more than the element form states, and the coupling does not weaken it</strong>, since a central phase cannot touch the rotor. The spin's <em>dynamics</em> is the free one plus whatever the frame's transport induces, and the article claims no more.</p>
+<h2 id="what-the-charge-cannot-close">What the Charge Cannot Close</h2>
+<p><strong>The free article's three open items are still open, and the coupling is the reason they are.</strong> The first is the closure of the general field: the four brackets are coupled and the equation does not close them. The second is the choice of spin-transport law, which the Frenkel condition of <a href="spin-conservation-and-the-frenkel-condition.html">Spin Conservation and the Frenkel Condition</a> supplies in one sector and not in general. The third is the spin's dynamics in a background.</p>
+<p><strong>The tempting hypothesis, and why it fails.</strong> One might hope that coupling the spin fluid to a field supplies the missing closure: the field is a new set of variables, the equation is longer, and a longer equation might close. <strong>It does not, and the reason is the type table.</strong> The missing closure is a statement about the rotor bracket and about the fourth bracket's transport; the connection is central and confined to the first two brackets. A longer equation in the brackets the connection can reach cannot constrain the brackets it cannot reach. <strong>The count is unchanged: the word still has eight parameters, the connection still has four, and the four brackets are still underdetermined by the equation alone.</strong></p>
+<p><strong>What would be needed and is not in this construction.</strong> A coupling that could write in the fourth bracket would have to be non-central: a connection taking values in the algebra's vector part, or a word arranged so that the rotor sits in a bracket a central element can reach. Neither exists in the abelian construction, and the parent's §<em>Open Questions</em> records the same obstacle for the free case.</p>
+<p><strong>The negative result stated as a positive one.</strong> The charge does not close the spin fluid, and that is informative: it says that the spin fluid's underdetermination is internal to the word and not a consequence of the field being free. <strong>A fluid whose closure one could buy with a coupling would be a fluid whose degrees of freedom were not its own</strong>, and this one's are.</p>
+<h2 id="the-properties-listed">The Properties, Listed</h2>
+<p><strong>Twelve statements, each one line, and each with its reason. This is what the charged spin fluid is.</strong></p>
+<ol>
+<li><strong>The word is unchanged and the coupling is confined by type.</strong> Eight parameters; the connection reaches the phase and boost brackets and not the scale or the rotor.</li>
+<li><strong>The density is untouched.</strong> The gauge transformation moves the angle alone, and the scale, the rapidity, the axis and the rotor are gauge invariant by inspection.</li>
+<li><strong>The velocity is the kinetic one</strong>, named by the covariant wavevector: $\tilde K_{\Phi,\mathrm{gco}}=ik_m\tilde U_{\Psi,\mathrm b}^{-2}$ and $\tilde K_\Phi=\tilde K_{\Phi,\mathrm{gco}}-ϙ\tilde A_\Phi/\hbar$.</li>
+<li><strong>The velocity is a unit for every field.</strong> $\langle\tilde V_\Phi\rangle_\natural=-c^{2}$; the normalisation is kinematical and the coupling cannot touch it.</li>
+<li><strong>The rapidity and the axis are observables.</strong> $\vec v=c\tanh\theta_{\mathrm{rpd}}\vec u_{\mathrm b}$, $\gamma=\cosh\theta_{\mathrm{rpd}}$, and no gauge transformation changes either.</li>
+<li><strong>The vorticity is the frame's gradient.</strong> Its proper part is rank two for every solution, and it is not $ϙF/m$ for any field.</li>
+<li><strong>The vorticity is closed and not exact.</strong> Closedness is the Maurer–Cartan flatness of $\Gamma$; exactness fails wherever the holonomy is non-trivial; there is still no transport law.</li>
+<li><strong>The loop invariant is a Lorentz transformation times a phase.</strong> Nothing about it is quantised, and the scalar's $h/m$ is the central factor of the transformation.</li>
+<li><strong>The Gordon split survives.</strong> The convection part is the chart's current; the bound magnetisation current has no explicit dependence on the connection.</li>
+<li><strong>The spin direction is gauge invariant and coupling-blind.</strong> $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$; the chart shows no rotor torque, and the Larmor precession is second order, through the frame.</li>
+<li><strong>The coupling adds a force and not a torque.</strong> $\partial_\nu T^{\mu\nu}=ϙF^{\mu\nu}J_\nu+$ the free article's spin term, and the second is unchanged.</li>
+<li><strong>The degenerate set is $r=0$ and the closure is still underdetermined.</strong> The charge does not supply the missing spin-transport law, and the reason is that the missing law lives in the bracket the connection cannot reach.</li>
+</ol>
+<h2 id="the-three-charged-fluids">The Three Charged Fluids</h2>
+<p><strong>The three charged articles can be put side by side, and the table is the shortest statement of what the charge does to each.</strong> The table is the same in all three; what changes from one to the next is which column is the article's own.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>charged scalar</th>
+<th>charged spin</th>
+<th>charged vector</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the carrier</td>
+<td>a complex function: two parameters</td>
+<td>a word of four factors: eight parameters</td>
+<td>the same word: eight parameters</td>
+</tr>
+<tr>
+<td>the density</td>
+<td>$\rho_{\mathrm{num}}=\lvert\Xi\rvert^{2}$</td>
+<td>$\rho$, read from the word</td>
+<td>the scale, which is not a norm</td>
+</tr>
+<tr>
+<td>the velocity</td>
+<td>$\tilde P^{\mathrm{mech}}/m$</td>
+<td>the frame, $ic\tilde U_{\Psi,\mathrm b}^{-2}$</td>
+<td>the field's direction, $\tilde A/r$</td>
+</tr>
+<tr>
+<td>is it a unit?</td>
+<td>only where the quantum potential vanishes</td>
+<td>always, $\langle\tilde V_\Phi\rangle_\natural=-c^{2}$</td>
+<td>its boost is; the element is not a four-vector</td>
+</tr>
+<tr>
+<td>the vorticity</td>
+<td>the field strength, $ϙF/m$</td>
+<td>the frame's gradient, and not $ϙF/m$</td>
+<td>not established; the free case's is $F$ minus a radial term</td>
+</tr>
+<tr>
+<td>the vorticity's rank</td>
+<td>$0$, $2$ or $4$</td>
+<td>$2$ for the proper part</td>
+<td>the free case's is $2$</td>
+</tr>
+<tr>
+<td>the loop invariant</td>
+<td>$2\pi\hbar n/m+ϙ\Phi_B/m$</td>
+<td>a Lorentz transformation times a phase</td>
+<td>for $ϙ=0$ an integer; for $ϙ\ne0$, not known</td>
+</tr>
+<tr>
+<td>the force</td>
+<td>the Lorentz force, plus a quantum potential</td>
+<td>the Lorentz force, and no torque</td>
+<td>the covariant divergence, self-acting</td>
+</tr>
+<tr>
+<td>the stress</td>
+<td>the quantum potential is in it; no EOS</td>
+<td>the antisymmetric part is in it; no EOS</td>
+<td>its own field strength is in it; stiff on $F=0$</td>
+</tr>
+<tr>
+<td>the degenerate set</td>
+<td>$r=0$, codimension two</td>
+<td>$r=0$, codimension two</td>
+<td>$r=0$; the free case's lightlike wall is gone</td>
+</tr>
+<tr>
+<td>what the charge does</td>
+<td>turns the vorticity into the field strength</td>
+<td>pushes and does not torque</td>
+<td>doubles the carrier and opens the constraint</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>This article's column is the second, and it is the column in which the charge does least.</strong> The velocity keeps its normalisation, the vorticity keeps its kind, the spin keeps its invariance and the closure keeps its underdetermination; what the charge does is shift the momentum, turn the frame, and add a force. <strong>The reason is the type table, and the type table is the same in all three articles</strong>: the connection is central, the central brackets are the scale and the phase, and everything a fluid does with its frame sits in the two brackets a central element cannot reach.</p>
+<p><strong>The row that separates this column from the scalar one is the normalisation, and it is a one-word difference.</strong> The scalar velocity is a unit only where the quantum potential vanishes; the spin velocity is a unit wherever the word exists. <strong>The scalar fluid's velocity is dynamical and this one's is kinematical</strong>, and that single contrast explains why the scalar article can say "the vorticity is the field strength" and this one cannot: a velocity that is a momentum can be a gradient plus a potential, and a velocity that is a frame can only be a frame.</p>
+<p><strong>The row that separates it from the vector one is the compressibility.</strong> The Proca fluid's expansion is fixed by its own amplitude, because its velocity is the field's direction; here the velocity is a unit and the expansion is a property of the frame's gradient, which is the free article's subject and which the coupling does not reach. <strong>Three velocities, three expansions, and the charge reaches only one of them.</strong></p>
+<h2 id="what-the-charge-does-to-the-correspondence">What the Charge Does to the Correspondence</h2>
+<p><strong>The correspondence still has three steps, and here the charge changes the first column of the fourth.</strong> The word is exact; the reverse map is defined on a class; membership of that class is the extra structure that makes the fluid a medium rather than a relabelling of a wave.</p>
+<p><strong>The forward arrow is unchanged and exact.</strong> Any nowhere-zero solution of the coupled equation gives a density, an angle, a frame and a spin direction, and the word is a bijection on the $N$-regular set. <strong>The connection is a datum of the equation, not of the solution</strong>, and the arrow costs nothing.</p>
+<p><strong>The reverse arrow takes the frame as well as the density and the action.</strong> Given the word's data and a connection, the field is $r e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ and it solves the coupled equation iff the mass shell and the momentum balance hold. <strong>The extra structure is of two kinds at once: an internal degree of freedom (the orientation) and an external field (the connection)</strong>, and that pair is what makes this fluid a Cosserat medium in a background rather than a Cosserat medium.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>the word's data</th>
+<th>what the reverse map needs beyond it</th>
+<th>the medium it makes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>charged scalar</td>
+<td>$r$, $\theta_{\mathrm{pha}}$</td>
+<td>the energy equation, which is the Hamiltonian</td>
+<td>a charged Madelung fluid</td>
+</tr>
+<tr>
+<td>charged spin</td>
+<td>eight parameters</td>
+<td>the connection, and a closure of the frame's transport</td>
+<td>a charged Cosserat medium</td>
+</tr>
+<tr>
+<td>charged vector</td>
+<td>the same eight</td>
+<td>the connection, which is the field itself</td>
+<td>a self-acting compressible medium</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The free correspondence's three kinds of extra structure were the three ways a medium exceeds a dust; the charged correspondence's third column names what exceeds the dust now.</strong> For the spin fluid the added datum is a field acting on a medium that already had an orientation, and the table's fourth row is this article's.</p>
+<p><strong>What the correspondence supports and what it does not.</strong> It supports the claim that the coupled Dirac equation is the equation of motion of a charged Cosserat medium, and it supports the twelve properties of §<em>The Properties, Listed</em> item by item. It does not support a spin dynamics in a background, a closure of the general field, or the identification of the vorticity with the field strength: the first two are refused in §<em>What the Charge Cannot Close</em> and the third in §<em>The Vorticity Is Still the Frame's</em>.</p>
+<h2 id="what-is-established-and-what-is-interpretation">What Is Established and What Is Interpretation</h2>
+<p><strong>Established.</strong> The type table with the coupling in place, and the statement that the connection adds to the phase bracket and the boost bracket and to nothing else. The kinetic velocity, and $\tilde K_{\Phi,\mathrm{gco}}=ik_m\tilde U_{\Psi,\mathrm b}^{-2}$ with the canonical wavevector the covariant one less the potential. The invariance of $\langle\tilde V_\Phi\rangle_\natural=-c^{2}$ under every field. The vorticity as the frame's logarithmic derivative, with the proper part rank two for every solution and the raw derivative reaching four, checked numerically on two frames with the singular values quoted. The loop invariant as a Lorentz transformation times a phase, and the frozen-frame sector's circulation as that phase. The Gordon split, and the absence of any explicit connection in the magnetisation current. The force with no torque, and the second-order character of the Larmor precession. The survival of the three open items and the reason they survive.</p>
+<p><strong>Interpretation.</strong> That the frame <em>is</em> the fluid's velocity rather than a rewriting of the bispinor, and that the rotor <em>is</em> an orientation rather than a phase. The warrant is the count, the types and the parent's reading, and the coupling does not touch the warrant. That the loop invariant's $\mathbb{C}^{\ast}\times SL(2,\mathbb{C})$ is the right home for a charged spin fluid's circulation is a reading of the structure and not a theorem.</p>
+<p><strong>Not claimed.</strong> It is not claimed that the vorticity has a dynamics, that the spin is torqued by the field in this chart, that the charge closes the general field, or that the magnetisation current is screened. It is not claimed that the Larmor precession is absent from the physics; it is claimed that the chart exhibits it at second order and not as a rotor term, and the $g=2$ article is where the composition is carried out.</p>
+<h2 id="summary">Summary</h2>
+<p>The coupled Dirac equation in polar variables is $\tilde\nabla_{\mathrm{gco}}\tilde\Xi_{\mathrm D}=\frac{i}{\hbar}k_m\tilde\Xi_{\mathrm D}$ with $\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$, and the word is $r e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$.</p>
+<p>The connection is central per component. Its temporal slot is a central imaginary number and joins the phase bracket; its spatial slots are Hermitian vectors and join the boost bracket. The scale is a real scalar and the rotor is a real vector part, so <strong>the density and the spin are untouched</strong>.</p>
+<p>The velocity is the kinetic one: the boost is named by the covariant wavevector, $\tilde K_{\Phi,\mathrm{gco}}=ik_m\tilde U_{\Psi,\mathrm b}^{-2}$, and the canonical wavevector is the covariant one less the potential. $\langle\tilde V_\Phi\rangle_\natural=-c^{2}$ for every field, so the normalisation is kinematical and the coupling cannot reach it.</p>
+<p>The vorticity is the frame's logarithmic derivative and contains no connection. Its proper part is rank two for every solution, and its raw derivative reaches rank four through the acceleration; it is not $ϙF/m$, and the sum of the two is a two-form of a different kind. It is closed by Maurer–Cartan flatness and obeys no transport law.</p>
+<p>The loop invariant is a Lorentz transformation times a phase, and nothing about it is quantised. The Gordon split survives, and the bound magnetisation current has no explicit dependence on the connection. The coupling adds a force and no torque: $\partial_\nu T^{\mu\nu}=ϙF^{\mu\nu}J_\nu+$ the free spin term.</p>
+<p>The spin direction is gauge invariant and coupling-blind, and the Larmor precession is second order, through the frame. The free article's three open items — no vorticity transport, no closure, no spin dynamics in a background — survive, and the charge does not close them.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde\Xi_{\mathrm D}=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$</td>
+<td>The word</td>
+</tr>
+<tr>
+<td>$r>0$</td>
+<td>Scale; the density is a factor of the word</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$</td>
+<td>The angle; the only gauge-dependent parameter</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{rpd}},\ \vec u_{\mathrm b}$</td>
+<td>Rapidity and axis of the boost</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{axr}},\ \text{axis}$</td>
+<td>Angle and axis of the rotor</td>
+</tr>
+<tr>
+<td>$\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$</td>
+<td>The spin direction; gauge invariant, coupling-blind</td>
+</tr>
+<tr>
+<td>$\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}$</td>
+<td>The four-velocity; $\langle\tilde V_\Phi\rangle_\natural=-c^{2}$</td>
+</tr>
+<tr>
+<td>$\Gamma_\mu=\tilde U_{\Psi,\mathrm b}^{-1}\partial_\mu\tilde U_{\Psi,\mathrm b}$</td>
+<td>The frame's logarithmic derivative</td>
+</tr>
+<tr>
+<td>$\tilde K_{\Phi,\mathrm{gco}}=ik_m\tilde U_{\Psi,\mathrm b}^{-2}$</td>
+<td>The covariant wavevector</td>
+</tr>
+<tr>
+<td>$\tilde K_\Phi=\tilde K_{\Phi,\mathrm{gco}}-\frac{ϙ}{\hbar}\tilde A_\Phi$</td>
+<td>The canonical wavevector</td>
+</tr>
+<tr>
+<td>$\omega_{\mu\nu}$</td>
+<td>The vorticity; the frame's gradient, proper part rank two</td>
+</tr>
+<tr>
+<td>$\Phi_B$</td>
+<td>The flux through a loop</td>
+</tr>
+<tr>
+<td>$ϙ$</td>
+<td>The coupling</td>
+</tr>
+<tr>
+<td>$k_m=mc/\hbar$</td>
+<td>The mass wave number</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-spin-fluid-of-the-biquaternion-dirac-field.html">The Spin Fluid of the Biquaternion Dirac Field</a>, the free companion, whose twelve properties these twelve answer.</li>
+<li><a href="the-coupled-dirac-equation-in-biquaternionic-polar-variables.html">The Coupled Dirac Equation in Biquaternionic Polar Variables</a>, for the type table, the kinetic momentum and the kinetic velocity.</li>
+<li><a href="the-dirac-equation-in-biquaternionic-polar-variables.html">The Dirac Equation in Biquaternionic Polar Variables</a>, for the word, the frame, the spin direction and the mass-shell proposition.</li>
+<li><a href="the-gordon-decomposition-of-the-dirac-current-in-biquaternionic-form.html">The Gordon Decomposition of the Dirac Current in Biquaternionic Form</a>, for the split into convection and magnetisation.</li>
+<li><a href="spin-conservation-and-the-frenkel-condition.html">Spin Conservation and the Frenkel Condition</a>, for the closure the charge does not supply.</li>
+<li><a href="the-classical-origin-of-g-2-in-biquaternionic-form.html">The Classical Origin of $g=2$ in Biquaternionic Form</a>, for the composition of the rotor's rate with the frame's transport.</li>
+<li><a href="the-clebsch-potentials-and-the-rank-of-the-vorticity.html">The Clebsch Potentials and the Rank of the Vorticity</a>, for the rank hierarchy the vorticity proper sits in.</li>
+<li><a href="the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html">The Covariant Derivative and Gauge Connection in Biquaternionic Form</a>, for the central connection and the curvature.</li>
+<li><a href="the-charged-klein-gordon-fluid.html">The Charged Klein–Gordon Fluid</a> and <a href="the-charged-proca-fluid.html">The Charged Proca Fluid</a>, the two companions.</li>
+<li>Chris Doran and Anthony Lasenby, <em>Geometric Algebra for Physicists</em> (Cambridge University Press, 2003), for the Lorentz group's rotor parametrisation.</li>
+<li>Ingo Kirsch and Dirk Kreimer, <em>Spin Hydrodynamics</em> (lecture notes), for the Weyssenhoff–Raabe stress and the Frenkel condition in their relativistic form.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
