@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Non-Quantum Limit of the Free Proca Equation using the Variational Principle — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-non-quantum-limit-of-the-free-proca-equation-using-the-variational-principle"><strong>The Non-Quantum Limit of the Free Proca Equation using the Variational Principle</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The limit taken on the action, and what the action adds that the equation's route cannot.</strong> The companion <em>The Non-Quantum Limit of the Free Proca Equation</em> reads the three groups of the exact identity and takes the limit by contraction. This article takes the same limit on the action of <em>The Variational Principle and the Proca Equation in Biquaternionic Polar Variables</em>, and the gain is of a specific kind: <strong>the action's own term count is the criterion</strong>, so no sensitivity argument is needed, and the two equations that survive are the two variations rather than the two parts of one identity.</p>
+<p><strong>The obstruction is the same one, and it appears in the same place.</strong> The parent's chart is the modulus and the frame, and the parent's action in that chart is a function of the modulus and its gradients. <strong>A criterion written on those variables is of order one on the parent's own solutions</strong>, by the argument the companion gives: the parent's plane wave has $r=r_0\lvert\cos\theta_{\mathrm{pwp}}\rvert$ and its criterion is $\lvert\tan\theta_{\mathrm{pwp}}\rvert$. This article therefore takes the action on a mode, as the companion does, and its first two sections are the statement of that necessity in the action's language rather than the equation's.</p>
+<p><strong>What the article establishes, in five sentences.</strong> On a mode the action splits into three groups of orders $\epsilon^{-2}$, $\epsilon^{-1}$ and $\epsilon^{0}$, and the truncation deletes exactly the third. The truncated action is <strong>algebraic in the amplitude</strong> and quadratic in the phase's gradient, so its variation with respect to the amplitude is the order-$\epsilon^{-2}$ group and its Hessian is minus the Proca symbol, whose determinant is $-k_m^{2}(k^{2}-k_m^{2})^{3}$ and whose rank on the shell is one. Its variation with respect to the phase is the transport equation, and it is the Noether charge of the amplitude–phase redundancy of the decomposition — <strong>the transport equation is a Gauss law and not an extra equation</strong>. The amplitude consequently stops being dynamical: four primary constraints, $p_a=0$, replacing the parent's rank-three Hessian, and the amplitude is reduced on shell to the three-dimensional Lorenz plane. The inversion is two-valued, because the truncated action is quadratic in $\omega$.</p>
+<p><strong>Notation.</strong> As in the companion: $\tilde A_\Phi=ie_t a'_t+\vec e\cdot\vec A$ real, the interval $v^{2}=v'^{2}_t-\lvert\vec v\rvert^{2}$, the sector norm its negative, $A_\mu=\mathrm{Re}(a_\mu e^{i\theta})$, $k_\mu=\partial_\mu\theta=(\omega/c,\vec k)$, $k_m=mc/\hbar$, and $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r'^{2}_{t}$ with $\partial/\partial R_t=-i\,\partial/\partial r'_t$.</p>
+<h2 id="the-action-in-the-chart-and-the-same-obstruction">The Action in the Chart, and the Same Obstruction</h2>
+<p><strong>The parent's action, in the element form and in the chart.</strong></p>
+<p>$$
+S[\tilde A_\Phi]=\int d^{4}r\;\Bigl[\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F\tilde F\bigr)-\tfrac12\,k_m^{2}\langle\tilde A_\Phi\rangle_\natural\Bigr],
+\qquad
+\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F\tilde F\bigr)=\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\Bigl[\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr)^{2}\Bigr]-\tfrac12 S^{2},
+$$</p>
+<p>with $S=\mathrm{Sc}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr)$ the divergence. <strong>The parent's cleanest new statement is the mass term's sign</strong>: in the chart the mass term is $+\tfrac12k_m^{2}r^{2}$ on the timelike branch and $-\tfrac12k_m^{2}r^{2}$ on the spacelike one, so the sign of the mass term <strong>is</strong> the branch, and the causal character of the four-vector is read as a sign in the action.</p>
+<p><strong>The parent's structural numbers, which this article inherits.</strong> The chart has four parameters and four equations, no Lagrange multiplier is needed for the normalisation of the frame because the word is exact, the Hessian has <strong>rank three out of four</strong>, and the single constraint is the standard one of a massive vector field. <strong>The contrast the parent draws with the first-order companions is the one that matters here</strong>: the Schrödinger polar action is first order, six of its eight momenta vanish identically, and its closure needs Dirac analysis; this action is second order and its Hessian is nearly regular.</p>
+<p><strong>And yet the chart cannot be expanded, for a reason that is in the action and not only in the equation.</strong> The action's chart variables are $r$ and the frame, and the fast variation of a solution sits in $r$. <strong>The parent's own dispersion, $k'^{2}_t=\lvert\vec k_\Phi\rvert^{2}+k_m^{2}$, is obtained from the scale equation $(\Box_\Phi-k_m^{2})r+r\sum_\mu\mathrm{Sc}(\Gamma_\mu^{2})=0$ with a constant frame and a cosine modulus</strong>, which is the statement that the phase information is in the modulus. There is no term of that action which is small on a solution, so there is no group to delete, and a truncation written on the chart would delete the solution.</p>
+<p><strong>The mode is therefore the action's variable and not an alternative to it.</strong> Substituting $A_\mu=\mathrm{Re}(a_\mu e^{i\theta})$ into the parent's action is a change of variables on the carrier, exact, and the piecewise branch structure disappears with it: the branch was a property of a real four-vector's sign of norm, and a mode has no such sign to read.</p>
+<h2 id="the-action-on-the-mode">The Action on the Mode</h2>
+<p><strong>The substitution and the leading form.</strong> With $\tilde F$ carrying $i(k_\mu a_\nu-k_\nu a_\mu)e^{i\theta}$ at leading order, the parent's action becomes</p>
+<p>$$
+S=\int d^{4}r\;\Bigl[\tfrac12\bigl(\lvert k\cdot a\rvert^{2}-k^{2}\lvert a\rvert^{2}\bigr)+\tfrac12\,k_m^{2}\lvert a\rvert^{2}\Bigr]+\text{(terms with one derivative of }a\text{)}+\text{(terms with two)},
+$$</p>
+<p>with $\lvert a\rvert^{2}=a_\nu\bar a^{\nu}$ and $k\cdot a=k_\mu a^{\mu}$. <strong>The three groups of the action are the three groups of the identity</strong>, and the correspondence is one-to-one because the identity is the variation of this action term by term.</p>
+<p><strong>What the leading group says, and the indefiniteness it keeps.</strong> The leading density $\tfrac12\bigl(\lvert k\cdot a\rvert^{2}-k^{2}\lvert a\rvert^{2}+k_m^{2}\lvert a\rvert^{2}\bigr)$ is quadratic in $a$, carries no derivative of $a$, and its mass term is $\tfrac12k_m^{2}\lvert a\rvert^{2}$ — <strong>indefinite</strong>, because $\lvert a\rvert^{2}$ is indefinite for a complex four-vector. The parent's "the sign of the mass term is the branch" survives the limit in this form and is not repaired by it: <strong>the positivity of the energy is a property of the field's own bilinear and appears at the next order, not at this one.</strong></p>
+<p><strong>The truncation, stated as a deletion of a group.</strong> Dropping the two-derivative group leaves</p>
+<p>$$
+S_{\mathrm{trunc}}=\int d^{4}r\;\tfrac12\Bigl[\lvert k\cdot a\rvert^{2}-\bigl(k^{2}-k_m^{2}\bigr)\lvert a\rvert^{2}\Bigr],
+$$</p>
+<p><strong>algebraic in $a$ and first order in nothing</strong>: it contains $a$ and $\partial\theta$, and no $\partial a$. That is the whole of the truncation, and the companion's second and third groups are its Euler–Lagrange shadow.</p>
+<p><strong>Why this group is the one to drop, on the action's own terms.</strong> Its size is $\lvert a\rvert^{2}/L^{2}$ against the leading $\lvert a\rvert^{2}k^{2}$, so the ratio is $\epsilon^{2}$; and it is a functional of $a$ alone, with no $\theta$ in it, so <strong>dropping it cannot break any symmetry of the phase</strong> — the argument the Klein–Gordon variational article makes, and it holds here for the same reason. A truncation that dropped the $\lvert k\cdot a\rvert^{2}$ term instead, keeping the derivatives, would break the redundancy the next section exhibits.</p>
+<h2 id="the-truncated-actions-two-variations">The Truncated Action's Two Variations</h2>
+<p><strong>The amplitude's variation is the order-$\epsilon^{-2}$ group.</strong></p>
+<p>$$
+\frac{\delta S_{\mathrm{trunc}}}{\delta\bar a^{\nu}}=0
+\qquad\Longleftrightarrow\qquad
+(k^{2}-k_m^{2})a^{\nu}-k^{\nu}(k\cdot a)=0 .
+$$</p>
+<p><strong>And its Hessian is minus the Proca symbol.</strong></p>
+<p>$$
+\frac{\partial^{2}S_{\mathrm{trunc}}}{\partial\bar a^{\mu}\,\partial a^{\nu}}=k_{\mu}k_{\nu}-\bigl(k^{2}-k_m^{2}\bigr)\eta_{\mu\nu}=-\sigma_{\mu\nu},
+\qquad
+\det\bigl(-\sigma\bigr)=-k_m^{2}\bigl(k^{2}-k_m^{2}\bigr)^{3}.
+$$</p>
+<p><strong>So the Fourier article's symbol is the truncated action's Hessian</strong>, and every number that article computes is a property of this Hessian: the eigenvalues $\{k^{2}-k_m^{2},k^{2}-k_m^{2},k^{2}-k_m^{2},-k_m^{2}\}$, measured at $k=(1.30,0.50,-0.30,0.20)$ with $k_m^{2}=0.49$ as $-0.49$ and $0.82$ three times; the determinant $-0.27017032$ against the formula's $-0.27017032$; and on the shell the rank one that makes the kernel three-dimensional. <strong>The variational route does not need the Fourier article to obtain the count, and it obtains the same count</strong>: it differentiates its own truncated action.</p>
+<p><strong>The phase's variation is the transport equation, and it is a Noether charge.</strong></p>
+<p>$$
+\frac{\delta S_{\mathrm{trunc}}}{\delta\theta}=0
+\qquad\Longleftrightarrow\qquad
+\partial_\mu\bigl(\lvert a\rvert^{2}k^{\mu}\bigr)=0 .
+$$</p>
+<p><strong>The reason is the decomposition's redundancy, and it is exact at every order.</strong> Shifting $\theta$ by a constant and rotating $a$ by $e^{-i\alpha}$ leaves the field $A_\mu$ unchanged, so the identity $\theta\to\theta+\alpha$ with $a$ fixed is a symmetry of the full action in the mode's variables; the truncated action depends on $\theta$ only through $k=\partial\theta$, so the symmetry is retained exactly; and its Noether charge is $\lvert a\rvert^{2}k^{\mu}$, which is the companion's transport current. <strong>The transport equation is therefore a Gauss law of the decomposition and not an additional dynamical equation</strong>, which is why it survives a truncation that deletes all the amplitude's derivatives: it never needed them.</p>
+<p><strong>Read the two variations together and the structure is the same as the Klein–Gordon pair's.</strong> One variation gives the Hamilton–Jacobi-type equation; the other gives the conservation of a current that the first-order structure supplies for free. <strong>What is new here is only that the amplitude is a vector</strong>, so the first variation is a four-component algebraic system with a kernel instead of a single scalar condition.</p>
+<h2 id="the-amplitude-stops-being-dynamical">The Amplitude Stops Being Dynamical</h2>
+<p><strong>The truncation is singular, and the singularity is the family's largest statement.</strong> Because $S_{\mathrm{trunc}}$ contains no derivative of $a$, all four momenta conjugate to the amplitude vanish,</p>
+<p>$$
+p_{a^\nu}=\frac{\partial\mathcal{L}_{\mathrm{trunc}}}{\partial(\partial_{t'}a^{\nu})}=0 ,
+$$</p>
+<p>and the amplitude is determined algebraically instead of dynamically. <strong>This is the Klein–Gordon article's singularity written for a vector</strong>: there one momentum vanished, $p_r=0$, and the consistency condition was the eikonal; here four vanish, and the consistency conditions are the four components of the amplitude's equation.</p>
+<p><strong>What the four algebraic equations amount to, read through the rank.</strong> Off the shell the Hessian $-\sigma$ has rank four, so the only solution is $a=0$: <strong>there is no propagation off the shell at all</strong>, and the eikonal is the condition for the algebraic system to have a non-trivial solution. On the shell the rank falls to one, three of the four equations are dependent, and the solution set is the three-dimensional Lorenz plane. <strong>So the limit does not merely allow the three polarisations; it makes them the kernel of a matrix, which is what a polarisation is.</strong></p>
+<p><strong>The phase is the only dynamical field that remains.</strong> Its momentum is $p_\theta=\partial\mathcal{L}_{\mathrm{trunc}}/\partial(\partial_{t'}\theta)=\lvert a\rvert^{2}k_{t}$, the density times the frequency, and the eikonal is a first-order equation for it. <strong>The limit demotes the amplitude to a polarisation and promotes the phase to the only degree of freedom</strong>, and that division is the same one the Klein–Gordon, Schrödinger and Dirac pairs deliver with a scalar and a spinor in place of a vector.</p>
+<h2 id="the-constraint-count-and-the-comparison-across-families">The Constraint Count and the Comparison Across Families</h2>
+<p><strong>Before and after the limit, the physical count is three, and the bookkeeping moves.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>parent</th>
+<th>truncated</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hessian</td>
+<td>rank three of four</td>
+<td>$-\sigma$; rank four off shell, one on shell</td>
+</tr>
+<tr>
+<td>vanishing momenta</td>
+<td>none</td>
+<td>four, $p_{a}=0$</td>
+</tr>
+<tr>
+<td>amplitude's status</td>
+<td>dynamical, second order</td>
+<td>algebraic, polarisation only</td>
+</tr>
+<tr>
+<td>count on shell</td>
+<td>three</td>
+<td>three</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The parent's rank-three Hessian is the standard massive-vector constraint, and the truncation's four vanishing momenta are a stronger degeneracy of the same count.</strong> The parent says, correctly, that its action is second order and that no momentum vanishes identically; the truncated action is the one in which none of the amplitude's momenta survives. <strong>The two statements do not conflict, because they are statements about different actions</strong>, and the article's contribution is to have exhibited the second.</p>
+<p><strong>The comparison with the three other families, stated as their constraint behaviour.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>family</th>
+<th>the limit's action</th>
+<th>what the limit does to the constraints</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Schrödinger</td>
+<td>first order</td>
+<td>completes a constraint already half-present</td>
+</tr>
+<tr>
+<td>Klein–Gordon</td>
+<td>second order in $r$</td>
+<td>creates one, $p_r=0$</td>
+</tr>
+<tr>
+<td>Dirac</td>
+<td>first order, linear in the velocities</td>
+<td>creates none; changes nothing</td>
+</tr>
+<tr>
+<td>Proca</td>
+<td>second order in $A$, algebraic after truncation</td>
+<td>creates four, $p_a=0$, and keeps the count</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The fourth row is the family's own</strong>, and its distinguishing feature is that the number of constraints created equals the dimension of the amplitude: one for a scalar, four for a vector, and the physical count is untouched in both cases because the amplitude was never the dynamical field.</p>
+<h2 id="the-inversion-is-two-valued">The Inversion Is Two-Valued</h2>
+<p><strong>The truncated action is quadratic in $\omega$, so its Legendre transform is two-valued.</strong> $S_{\mathrm{trunc}}$ contains $k^{2}$ with $k_{t}=\omega/c$, so solving the eikonal for the frequency gives</p>
+<p>$$
+\omega=\pm\,c\sqrt{\lvert\vec k\rvert^{2}+k_m^{2}} .
+$$</p>
+<p><strong>Both roots are kept, and neither is a defect</strong>: they are the mode's two frequency branches, the same two sheets the companion's eikonal delivers, and the parent's evenness result, $\sigma(-\tilde K_\Phi)=\sigma(\tilde K_\Phi)$, is their frequency-space statement.</p>
+<p><strong>The contrast with the first-order families is a matter of degree and not of interpretation.</strong> A first-order theory's form is linear in $\omega$ and its inversion is single-valued; the Dirac variational companion's inversion is of that kind. <strong>The Proca form is degree two, so its inversion is degree two</strong>, and the article states the degree rather than the analogy.</p>
+<p><strong>What the two-valuedness does not do is select a sheet.</strong> The constraint $k_m^{2}(k\cdot a)=0$ is independent of $\omega$ at both roots, so it cannot choose between them, and neither can the transport equation, which is a conservation law on either sheet. <strong>A selection would need an initial condition</strong>, which is the statement that the limit delivers a family and not a solution.</p>
+<h2 id="what-the-variational-route-adds">What the Variational Route Adds</h2>
+<p><strong>Adds.</strong></p>
+<ul>
+<li>The criterion as a comparison of the action's own terms, so that the sensitivity argument of the substitution route is not needed: the ratio of the dropped group to the kept one is $\epsilon^{2}$ and that is the whole of it.</li>
+<li>The identification of the truncated action's Hessian with the Proca symbol, and therefore of the count with a rank.</li>
+<li>The transport equation as the Noether charge of the decomposition's redundancy, hence as a Gauss law rather than an independent equation.</li>
+<li>The statement that the amplitude is non-dynamical after truncation, with the count of four vanishing momenta and the comparison across the four families.</li>
+<li>The two-valued inversion, with the reason being the action's degree in $\omega$.</li>
+</ul>
+<p><strong>Does not add.</strong></p>
+<ul>
+<li>No new solution and no new prediction: the truncated action is the parent's action written on a mode and cut at a stated order.</li>
+<li>No handling of the field term's normalisation, which is the element-form companion's open question and which this article uses as given.</li>
+<li>No statement about the branch structure of the parent's real chart, which the mode's variables do not have.</li>
+</ul>
+<p><strong>The distinction that matters.</strong> The equation's route and the action's route deliver the same three objects; the action's route says <strong>why</strong> each survives. The eikonal is a variation, the transport is a Noether charge, and the remainder is a group whose deletion is legitimate because it carries no phase.</p>
+<h2 id="summary">Summary</h2>
+<p>The parent's action in the modulus-and-frame chart cannot be expanded, for the reason the companion gives: the fast variation of a solution is in the modulus, and the criterion on the parent's own plane wave is $\lvert\tan\theta_{\mathrm{pwp}}\rvert$. Taken on a mode, $A_\mu=\mathrm{Re}(a_\mu e^{i\theta})$, the action splits into groups of orders $\epsilon^{-2}$, $\epsilon^{-1}$ and $\epsilon^{0}$, and the truncation deletes the last, which is legitimate because that group is a functional of $a$ alone and carries no phase.</p>
+<p>The truncated action, $\int\tfrac12[\lvert k\cdot a\rvert^{2}-(k^{2}-k_m^{2})\lvert a\rvert^{2}]$, is algebraic in the amplitude. Its amplitude variation is the order-$\epsilon^{-2}$ group and its Hessian is minus the Proca symbol, with eigenvalues $\{k^{2}-k_m^{2},k^{2}-k_m^{2},k^{2}-k_m^{2},-k_m^{2}\}$, determinant $-k_m^{2}(k^{2}-k_m^{2})^{3}$ and rank one on the shell. Its phase variation is $\partial_\mu(\lvert a\rvert^{2}k^{\mu})=0$, the Noether charge of the amplitude–phase redundancy of the decomposition, so the transport equation is a Gauss law. The truncation is singular — four primary constraints $p_a=0$ — and the amplitude is thereby demoted to a polarisation while the phase becomes the only dynamical field. The count is three before and three after, and the number of constraints created equals the dimension of the amplitude: one for a scalar, four for a vector. The inversion is two-valued because the action is quadratic in $\omega$, and both roots are kept.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$S[\tilde A_\Phi]=\int\bigl[\tfrac12\mathrm{Re\,Sc}(\tilde F\tilde F)-\tfrac12k_m^{2}\langle\tilde A_\Phi\rangle_\natural\bigr]$</td>
+<td>The parent's action</td>
+</tr>
+<tr>
+<td>$+\tfrac12k_m^{2}r^{2}$ / $-\tfrac12k_m^{2}r^{2}$</td>
+<td>The mass term's sign as the branch: timelike / spacelike</td>
+</tr>
+<tr>
+<td>$A_\mu=\mathrm{Re}(a_\mu e^{i\theta})$</td>
+<td>The mode; $a_\mu$ complex, $\theta$ fast</td>
+</tr>
+<tr>
+<td>$\tfrac12\bigl(\lvert k\cdot a\rvert^{2}-k^{2}\lvert a\rvert^{2}+k_m^{2}\lvert a\rvert^{2}\bigr)$</td>
+<td>The order-$\epsilon^{-2}$ density</td>
+</tr>
+<tr>
+<td>$S_{\mathrm{trunc}}=\int\tfrac12\bigl[\lvert k\cdot a\rvert^{2}-(k^{2}-k_m^{2})\lvert a\rvert^{2}\bigr]$</td>
+<td>The truncated action; algebraic in $a$</td>
+</tr>
+<tr>
+<td>$-\sigma_{\mu\nu}=k_\mu k_\nu-(k^{2}-k_m^{2})\eta_{\mu\nu}$</td>
+<td>The truncated action's Hessian</td>
+</tr>
+<tr>
+<td>$\det(-\sigma)=-k_m^{2}(k^{2}-k_m^{2})^{3}$</td>
+<td>The Hessian's determinant; the count</td>
+</tr>
+<tr>
+<td>$p_{a^\nu}=0$</td>
+<td>The four primary constraints the truncation creates</td>
+</tr>
+<tr>
+<td>$p_\theta=\lvert a\rvert^{2}k_t$</td>
+<td>The phase's momentum; the only dynamical one</td>
+</tr>
+<tr>
+<td>$\partial_\mu(\lvert a\rvert^{2}k^{\mu})=0$</td>
+<td>The transport equation as a Gauss law</td>
+</tr>
+<tr>
+<td>$\omega=\pm c\sqrt{\lvert\vec k\rvert^{2}+k_m^{2}}$</td>
+<td>The two sheets; the two-valued inversion</td>
+</tr>
+<tr>
+<td>$\epsilon=1/(k_\Phi L)$</td>
+<td>The criterion; the ratio of the dropped group to the kept one, squared</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Alexandru Proca, "Sur la théorie ondulatoire des électrons positifs et négatifs," <em>Journal de Physique et le Radium</em> <strong>7</strong> (1936) 347–353, for the equation and its constraint.</li>
+<li>Paul A. M. Dirac, <em>Lectures on Quantum Mechanics</em> (Yeshiva University, 1964), for the analysis of constrained systems whose momenta vanish identically.</li>
+<li>Ludwig D. Faddeev and Victor N. Popov, "Feynman diagrams for the Yang–Mills field," <em>Physics Letters B</em> <strong>25</strong> (1967) 29–30, for the treatment of a Gauss law as the conservation of a redundancy rather than as an equation of motion.</li>
+<li>G. B. Whitham, <em>Linear and Nonlinear Waves</em> (Wiley, 1974), chapter 11, for the averaged Lagrangian of a real wave and the algebraic amplitude it produces.</li>
+<li>Michael V. Berry and K. E. Mount, "Semiclassical approximations in wave mechanics," <em>Reports on Progress in Physics</em> <strong>35</strong> (1972) 315–397, for the relation between the truncated action's variations and the eikonal and transport equations.</li>
+<li>Claude Itzykson and Jean-Bernard Zuber, <em>Quantum Field Theory</em> (McGraw-Hill, 1980), §3-2, for the massive vector field's constraint structure and the singular massless limit.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

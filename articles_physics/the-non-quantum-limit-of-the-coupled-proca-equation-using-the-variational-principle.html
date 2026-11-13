@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Non-Quantum Limit of the Coupled Proca Equation using the Variational Principle — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-non-quantum-limit-of-the-coupled-proca-equation-using-the-variational-principle"><strong>The Non-Quantum Limit of the Coupled Proca Equation using the Variational Principle</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The limit taken on the coupled action, and the one thing the coupled chart does that the free chart could not.</strong> <em>The Variational Principle and the Coupled Proca Equation in Biquaternionic Polar Variables</em> writes the action in the eight chart variables as a quadratic form in the gradients with a field-dependent metric, proves that the connection cannot change the metric because it is a central scalar in every slot, and records the Hessian's non-degeneracy as an <strong>open item</strong> rather than asserting it. The free variational companion had to reach for a mode before it could expand anything, because the free chart's fast variation sits in the modulus. <strong>Here the chart carries a phase</strong>, so the expansion is available on the parent's own variables.</p>
+<p><strong>The one operation that has to be got right, stated first because everything else follows from it.</strong> The truncation must be written on the mechanical gradient $\pi_\mu=\hbar\partial_\mu\vartheta_{\mathrm{pha}}+ϙA_\mu$ and not on $\hbar\partial_\mu\vartheta_{\mathrm{pha}}$. The shift is not small: it is the coupling times the potential over $\hbar$, and no power of $\epsilon$ controls it. <strong>A truncation written on the canonical gradient would delete a group whose size is not the one the criterion measures</strong>, and it would not be gauge invariant. Written on $\pi$, the truncation is gauge invariant exactly, because $\pi$ is.</p>
+<p><strong>What the article establishes, in five sentences.</strong> The parent's metric is untouched by the coupling, so the truncation deletes the second-order group and shifts one gradient, and the two operations act on different objects and commute. The truncated action is algebraic in the amplitude and quadratic in $\pi$, and the curvature enters it as the traceless antisymmetric form the Fourier companion writes as $\frac{iϙ}{\hbar}F$. Its amplitude variation is the order-zero algebraic system, whose real projection is the mass shell corrected by the longitudinal part, and whose Hessian is minus the Fourier companion's symbol, with determinant $-k_m^{2}(\pi^{2}-k_m^{2})^{3}$-type structure and rank one on the shell. Its phase variation is $\partial_\mu[(\pi\cdot a)a^{\mu}-\pi^{\mu}\lvert a\rvert^{2}]=0$, which is the covariant transport once the constraint holds — <strong>a Gauss law of the decomposition's redundancy, not a dynamical equation</strong>. The amplitude stops being dynamical, four momenta vanish, and the parent's open item does not need to be settled for any statement here.</p>
+<p><strong>Notation.</strong> The parent's: the field is the four-factor word $\tilde A=r\,e^{i\vartheta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with eight real parameters; $\mathbb{B}_\Phi$ the material sector; $\tilde A=ie_t a'_t+\vec e\cdot\vec A$; the interval $v^{2}=v'^{2}_t-\lvert\vec v\rvert^{2}$; $\partial/\partial R_t=-i\partial/\partial r'_t$; $r'_t=ct$; $k_m=mc/\hbar$; $\tilde\nabla_{\mathrm{gco},\mu}=\partial/\partial R_\mu+\frac{iϙ}{\hbar}A_\mu$. Below, $\mathcal A$ denotes the slowly varying part of the word — scale, boost and rotor — and $a_\mu$ its four components.</p>
+<h2 id="the-action-in-the-chart-and-the-two-things-it-makes-exact">The Action in the Chart, and the Two Things It Makes Exact</h2>
+<p><strong>The kinetic term is a sigma-model form.</strong></p>
+<p>$$
+\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F\tilde F\bigr)
+=\tfrac12\sum_\mu G^{ab}(q)\,\partial_\mu q_a\,\partial_\mu q_b
++\text{(terms linear in the gradients and in the connection)},
+$$</p>
+<p>with $q$ the eight parameters and $G$ the metric built from the frame's brackets. <strong>The parent's exact statement about it is that the connection cannot enter it</strong>: the covariant derivative adds one central scalar per slot to the logarithmic derivative, a central scalar is a multiple of the identity in the frame's basis, and $G$ is built from the non-central parts. <strong>The metric is therefore the same object in the coupled and the free actions</strong>, which is why the coupled chart is a shift and not a rotation.</p>
+<p><strong>The mass term is the chart's one place where the frame's non-Lorentz part shows.</strong> The parent computes $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})/r^{2}$: it is $1$ whenever the rotor angle vanishes, for every rapidity and axis, to $10^{-14}$ over random draws; with the rotor engaged it is $0.7648$ at $\theta_{\mathrm{axr}}=0.7$ independent of the rapidity when the axes are collinear, and $0.7648$, $0.7010$, $0.4401$ at rapidities $0$, $1$, $2$ when they are perpendicular. <strong>The invariant length is Lorentz invariant, so the boost cannot cost; only the rotor can, and only through the angle between the two axes.</strong></p>
+<p><strong>What that means at this article's order, stated once and used below.</strong> The mass term is a <em>potential</em> — a function of the parameters and not of their gradients — so it sits in the leading group of any expansion and appears in the algebraic system with a coefficient that the frame's angles can change by a factor of order one. <strong>The limit does not remove that dependence and does not order it</strong>: it is a term of order zero like the mass shell itself, and its only role is to make the longitudinal coefficient depend on the polarisation's frame.</p>
+<p><strong>What the parent leaves open, and how this article treats it.</strong> The parent states that the chart's system is second order and regular <em>in form</em>, and that it does not establish the Hessian's non-degeneracy. <strong>This article does not need that item</strong>: every statement below is about the truncated action's own Hessian, which is computed and is degenerate in a stated way. The parent's open item is a statement about the untruncated chart and remains open.</p>
+<h2 id="the-truncation-written-on-the-mechanical-gradient">The Truncation, Written on the Mechanical Gradient</h2>
+<p><strong>The mode and the group it exposes.</strong> Write the word's slowly varying part as $\mathcal A$ and the field as $\tilde A=\mathcal A e^{i\vartheta_{\mathrm{pha}}}$. The covariant derivative then acts as</p>
+<p>$$
+\tilde\nabla_{\mathrm{gco},\mu}\tilde A=e^{i\vartheta_{\mathrm{pha}}}\Bigl(\partial_\mu+\frac{i}{\hbar}\pi_\mu\Bigr)\mathcal A,
+\qquad
+\pi_\mu=\hbar\,\partial_\mu\vartheta_{\mathrm{pha}}+ϙA_\mu ,
+$$</p>
+<p>so the phase enters only through $\pi$ and the potential enters only through $\pi$. <strong>That single display is the whole of the truncation's legitimacy</strong>: two objects that were separate in the parent's variables have become one, and the truncation must be written on the one.</p>
+<p><strong>The three groups of the action.</strong></p>
+<p>$$
+S=\int d^{4}r\;\Bigl[\tfrac12\bigl(\lvert\pi\cdot a\rvert^{2}-\pi^{2}\lvert a\rvert^{2}\bigr)+\tfrac12\,k_m^{2}\,w(\mathcal A)\,\lvert a\rvert^{2}\Bigr]
++\text{(one derivative of }\mathcal A\text{)}
++\text{(two derivatives of }\mathcal A\text{)},
+$$</p>
+<p>with $w(\mathcal A)=\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})/r^{2}$ the parent's mass ratio. <strong>The parent's metric is inside the one- and two-derivative groups and nowhere else</strong>, because it multiplies the gradients; and the connection is inside $\pi$ and nowhere else, because it is central. <strong>The two exact statements of the parent's first section are therefore what makes the grouping possible</strong>, and the grouping is the limit.</p>
+<p><strong>The truncated action.</strong></p>
+<p>$$
+S_{\mathrm{trunc}}=\int d^{4}r\;\Bigl[\tfrac12\bigl(\lvert\pi\cdot a\rvert^{2}-\pi^{2}\lvert a\rvert^{2}+k_m^{2}w\,\lvert a\rvert^{2}\bigr)+\tfrac12\,\bar a_{\nu}K^{\nu}{}_{\mu}a^{\mu}\Bigr],
+$$</p>
+<p>where $K$ is the curvature's matrix, antisymmetric and traceless, written $\frac{iϙ}{\hbar}F^{\nu}{}_{\mu}$ in the Fourier companion's symbol and fixed by it up to the sign that symbol carries. <strong>Nothing below uses that sign</strong>; the article uses only that $K$ is antisymmetric and traceless, and both are exact.</p>
+<p><strong>Why the two-derivative group is the one to drop.</strong> Its size is $\lvert a\rvert^{2}/L^{2}$ against the leading $\lvert a\rvert^{2}\pi^{2}$, so the ratio is $\epsilon^{2}$; and it is a functional of $\mathcal A$ alone, with no $\vartheta_{\mathrm{pha}}$ and no connection in it, so <strong>dropping it cannot break gauge invariance</strong> — the same argument the free variational companion makes, and here it is sharper because the action's gauge invariance is carried entirely by $\pi$.</p>
+<p><strong>Gauge invariance, exactly, at the truncation's order.</strong> Under $\vartheta_{\mathrm{pha}}\to\vartheta_{\mathrm{pha}}+\alpha$ and $\vec A\to\vec A-\frac{\hbar}{ϙ}\nabla\alpha$ the mechanical momentum is invariant, so $\pi$ is invariant and $S_{\mathrm{trunc}}$ is invariant. <strong>The truncation is therefore gauge invariant for a structural reason and not by a check</strong>: it is a functional of $\pi$ and of $\mathcal A$ alone.</p>
+<h2 id="the-truncated-actions-two-variations">The Truncated Action's Two Variations</h2>
+<p><strong>The amplitude's variation, and what it is not.</strong></p>
+<p>$$
+\frac{\delta S_{\mathrm{trunc}}}{\delta\bar a^{\nu}}=0
+\qquad\Longleftrightarrow\qquad
+\bigl(\pi^{2}-k_m^{2}w\bigr)a^{\nu}-\pi^{\nu}(\pi\cdot a)-K^{\nu}{}_{\mu}a^{\mu}=0 .
+$$</p>
+<p><strong>This is four algebraic equations</strong>, and it is the order-$\epsilon^{-2}$ group of the equation's route with the mass's frame factor made explicit. <strong>Its Hessian is minus the Fourier companion's symbol</strong>, with $k$ replaced by $\pi$ and with the mass's $w$:</p>
+<p>$$
+\frac{\partial^{2}S_{\mathrm{trunc}}}{\partial\bar a^{\mu}\,\partial a^{\nu}}
+=\pi_{\mu}\pi_{\nu}-\bigl(\pi^{2}-k_m^{2}w\bigr)\eta_{\mu\nu}-K_{\mu\nu},
+$$</p>
+<p>whose trace is $-3\pi^{2}+4k_m^{2}w$ — a number the article records and does not use, because the trace of a matrix is not the trace of an equation.</p>
+<p><strong>The real projection, which is the eikonal.</strong> Multiplying by $\bar a_\nu$ and taking the real part, the curvature term drops because $K$ is antisymmetric and $\bar aKa$ is pure imaginary:</p>
+<p>$$
+\bigl(\pi^{2}-k_m^{2}w\bigr)\lvert a\rvert^{2}=\lvert\pi\cdot a\rvert^{2}.
+$$</p>
+<p><strong>That is the mass shell corrected by the longitudinal part at relative order $\epsilon^{2}$</strong>, and it is the variational counterpart of the companion's statement that the eikonal is the amplitude equation's real projection. <strong>Set the longitudinal part to zero and it is $\pi^{2}=k_m^{2}w$.</strong></p>
+<p><strong>The phase's variation, which is the Gauss law.</strong></p>
+<p>$$
+\frac{\delta S_{\mathrm{trunc}}}{\delta\vartheta_{\mathrm{pha}}}=0
+\qquad\Longleftrightarrow\qquad
+\partial_\mu\Bigl[(\pi\cdot a)a^{\mu}-\pi^{\mu}\lvert a\rvert^{2}\Bigr]=0 .
+$$</p>
+<p><strong>Two terms and two meanings.</strong> The second is the transport current $\pi^{\mu}\lvert a\rvert^{2}$; the first is the longitudinal part's contribution, which vanishes when the constraint holds and is otherwise the correction the redundancy absorbs. <strong>With $\pi\cdot a=0$ the display is exactly the companion's covariant transport equation</strong>, so the variational route derives the transport and the equation's route derives it too, and the two derivations agree because both are the same redundancy read once.</p>
+<p><strong>Why it is a Gauss law and not an equation of motion.</strong> The symmetry being varied is the decomposition's redundancy — shifting the phase by a constant and rotating the amplitude leaves the field unchanged — and it is exact at every order of the full action, not only in the truncation. <strong>A conservation law belonging to a redundancy constrains and does not propagate</strong>, which is why it survives a truncation that deletes every derivative of the amplitude.</p>
+<p><strong>The constraint itself, and where it comes from.</strong> $\pi\cdot a=0$ is the covariant Lorenz condition at leading order, and the parent's polar companion states that the trace of the equation is exactly that condition and that the frame's brackets do not enter it. <strong>In this article it enters as the statement that the longitudinal part is what the redundancy can absorb</strong>, not as an extra Lagrange multiplier: the parent's parameterisation already absorbs the unit conditions, and the redundancy absorbs the longitudinal mode. <strong>That is the chart's own account of why the count is three and not four.</strong></p>
+<h2 id="the-amplitude-stops-being-dynamical">The Amplitude Stops Being Dynamical</h2>
+<p><strong>Four momenta vanish, for the same reason as in the free case.</strong> $S_{\mathrm{trunc}}$ contains no derivative of $a$, so</p>
+<p>$$
+p_{a^{\nu}}=\frac{\partial\mathcal{L}_{\mathrm{trunc}}}{\partial(\partial_{t'}a^{\nu})}=0 ,
+$$</p>
+<p>and the amplitude is algebraic. <strong>The count is the same as the free companion's and the interpretation is sharper</strong>: off the shell the Hessian's determinant is $-k_m^{2}(\pi^{2}-k_m^{2}w)^{3}$ up to the curvature's traceless correction, so there is no non-trivial solution; on the shell the rank falls and the kernel is the polarisation plane.</p>
+<p><strong>The curvature does not change the rank, and the reason is the trace.</strong> $K$ is traceless and antisymmetric, so it shifts the three equal eigenvalues of $\pi_{\mu}\pi_{\nu}-(\pi^{2}-k_m^{2}w)\eta_{\mu\nu}$ without creating or destroying the vanishing at $\pi^{2}=k_m^{2}w$. <strong>The count is three with or without the field</strong>, and what the field changes is the directions. <strong>A traceless perturbation cannot change a rank that is produced by a mass factor, and that is the whole of the statement.</strong></p>
+<p><strong>The phase is the only dynamical field.</strong> Its momentum is $\lvert a\rvert^{2}$ times the temporal component of the current, the eikonal is a first-order equation for it, and the transport fixes the density along the rays. <strong>The limit demotes the amplitude to a polarisation and promotes the phase</strong>, exactly as in the free companion, and the coupling changes neither half of that sentence.</p>
+<h2 id="what-the-variational-route-adds">What the Variational Route Adds</h2>
+<p><strong>Adds.</strong></p>
+<ul>
+<li>The criterion as the ratio of the dropped group to the kept one, $\epsilon^{2}$, with no sensitivity argument and no reference to a chart that cannot be ordered.</li>
+<li>The statement that the truncation is gauge invariant because it is a functional of $\pi$ alone, which is why the criterion had to be written on the mechanical gradient: the two facts are one fact.</li>
+<li>The identification of the truncated Hessian with the Fourier companion's symbol, so the count is a rank and the curvature's role is a traceless shift.</li>
+<li>The transport equation as a Gauss law of the decomposition's redundancy, with the longitudinal correction displayed.</li>
+<li>The mass's frame factor $w$ in its proper place, as a coefficient of order zero rather than as a correction.</li>
+</ul>
+<p><strong>Does not add.</strong></p>
+<ul>
+<li>No settlement of the parent's open item. The parent does not assert that the chart's Hessian is non-degenerate, and this article's Hessian is the truncated one.</li>
+<li>No statement about the field term's normalisation, which the element-form companion owns.</li>
+<li>No derivation of the covariant Lorenz condition, which the polar companion supplies and this article uses.</li>
+</ul>
+<p><strong>The one contrast with the free variational companion worth naming.</strong> There the mode had to be introduced, because the free chart's fast scale is in the modulus and the criterion on the parent's own plane wave is $\lvert\tan\theta_{\mathrm{pwp}}\rvert$. <strong>Here no such step exists</strong>: the coupled chart carries a phase, the criterion on the parent's own word is $\epsilon=1/(k_\pi L)$ with $k_\pi=\lvert\vec\pi\rvert/\hbar$, and the limit is a statement about the parent's variables as they stand. <strong>The coupling that made the field complex made the limit available</strong>.</p>
+<h2 id="summary">Summary</h2>
+<p>The parent's action is a quadratic form in eight gradients with a metric the connection cannot enter, plus a mass potential whose frame dependence the parent measures ($0.7648$ independent of rapidity for collinear axes; $0.7648$, $0.7010$, $0.4401$ at rapidities $0$, $1$, $2$ for perpendicular ones). Because the phase and the potential enter the covariant derivative only through the mechanical momentum $\pi_\mu=\hbar\partial_\mu\vartheta_{\mathrm{pha}}+ϙA_\mu$, the truncation must be written on $\pi$, and written so it is gauge invariant exactly.</p>
+<p>The truncation deletes the two-derivative group, whose ratio to the leading one is $\epsilon^{2}$ and which carries no phase. The truncated action, $\int\tfrac12[\lvert\pi\cdot a\rvert^{2}-\pi^{2}\lvert a\rvert^{2}+k_m^{2}w\lvert a\rvert^{2}]+\tfrac12\bar a_\nu K^{\nu}{}_\mu a^{\mu}$, is algebraic in the amplitude. Its amplitude variation is the order-zero system, whose real projection is $\pi^{2}-k_m^{2}w=\lvert\pi\cdot a\rvert^{2}/\lvert a\rvert^{2}$ — the mass shell corrected by the longitudinal part at order $\epsilon^{2}$ — and whose Hessian is minus the Fourier companion's symbol with a traceless curvature shift. Its phase variation is $\partial_\mu[(\pi\cdot a)a^{\mu}-\pi^{\mu}\lvert a\rvert^{2}]=0$, the Gauss law of the decomposition's redundancy, which is the covariant transport once the constraint holds. The amplitude stops being dynamical, four momenta vanish, the curvature shifts the polarisation directions without touching the rank, and the count is three. The parent's open item about the chart's own Hessian is not needed, and is left open.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde A=r e^{i\vartheta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$</td>
+<td>The parent's four-factor word; eight parameters</td>
+</tr>
+<tr>
+<td>$\tfrac12\sum_\mu G^{ab}(q)\partial_\mu q_a\partial_\mu q_b$</td>
+<td>The chart's kinetic term; the connection cannot enter $G$</td>
+</tr>
+<tr>
+<td>$w=\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})/r^{2}$</td>
+<td>The mass's frame factor; $1$ with the rotor trivial</td>
+</tr>
+<tr>
+<td>$\pi_\mu=\hbar\partial_\mu\vartheta_{\mathrm{pha}}+ϙA_\mu$</td>
+<td>The mechanical momentum; the truncation's variable</td>
+</tr>
+<tr>
+<td>$\tfrac12[\lvert\pi\cdot a\rvert^{2}-\pi^{2}\lvert a\rvert^{2}+k_m^{2}w\lvert a\rvert^{2}]+\tfrac12\bar a_\nu K^{\nu}{}_\mu a^{\mu}$</td>
+<td>The truncated density</td>
+</tr>
+<tr>
+<td>$K^{\nu}{}_{\mu}=\frac{iϙ}{\hbar}F^{\nu}{}_{\mu}$ up to sign</td>
+<td>The curvature's matrix; antisymmetric and traceless</td>
+</tr>
+<tr>
+<td>$\pi_{\mu}\pi_{\nu}-(\pi^{2}-k_m^{2}w)\eta_{\mu\nu}-K_{\mu\nu}$</td>
+<td>The truncated Hessian</td>
+</tr>
+<tr>
+<td>$(\pi^{2}-k_m^{2}w)\lvert a\rvert^{2}=\lvert\pi\cdot a\rvert^{2}$</td>
+<td>The amplitude variation's real projection</td>
+</tr>
+<tr>
+<td>$\partial_\mu[(\pi\cdot a)a^{\mu}-\pi^{\mu}\lvert a\rvert^{2}]=0$</td>
+<td>The phase variation; the Gauss law</td>
+</tr>
+<tr>
+<td>$p_{a^{\nu}}=0$</td>
+<td>The four primary constraints the truncation creates</td>
+</tr>
+<tr>
+<td>$\epsilon=1/(k_\pi L)=\hbar/(\lvert\vec\pi\rvert L)$</td>
+<td>The criterion; the only gauge-invariant choice</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Alexandru Proca, "Sur la théorie ondulatoire des électrons positifs et négatifs," <em>Journal de Physique et le Radium</em> <strong>7</strong> (1936) 347–353, for the equation and its constraint.</li>
+<li>Paul A. M. Dirac, <em>Lectures on Quantum Mechanics</em> (Yeshiva University, 1964), for constraint analysis and the counting of momenta that vanish identically.</li>
+<li>Ludwig D. Faddeev and Victor N. Popov, "Feynman diagrams for the Yang–Mills field," <em>Physics Letters B</em> <strong>25</strong> (1967) 29–30, for a Gauss law treated as the conservation of a redundancy.</li>
+<li>G. B. Whitham, <em>Linear and Nonlinear Waves</em> (Wiley, 1974), chapter 11, for the averaged Lagrangian of a real wave and the algebraic amplitude it produces.</li>
+<li>Michael V. Berry and K. E. Mount, "Semiclassical approximations in wave mechanics," <em>Reports on Progress in Physics</em> <strong>35</strong> (1972) 315–397, for the eikonal and transport equations as the variations of a truncated action.</li>
+<li>Claude Itzykson and Jean-Bernard Zuber, <em>Quantum Field Theory</em> (McGraw-Hill, 1980), §3-2, for the degrees of freedom of a massive vector field and the singular massless limit.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

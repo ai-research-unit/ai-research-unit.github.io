@@ -131,7 +131,42 @@ Q[\rho_1+\rho_2+\text{cross}]\ne Q[\rho_1]+Q[\rho_2],
 $$</p>
 <p>and the failure is not a small correction. <strong>The check is direct.</strong> On a grid of one hundred events, a single mode gave $\max\lvert Q\rvert=4.2\times10^{-16}$ and a density spread of $6.7\times10^{-16}$; a two-mode superposition at the same wave numbers gave $\max\lvert Q\rvert=4.36$ and a density spread of $3.20$. The first line is floating-point zero and the second is the interference term's.</p>
 <p><strong>The precise statement is that $Q$ is homogeneous of degree zero in the amplitude and non-additive in the density.</strong> A common rescaling of all amplitudes leaves $Q$ unchanged, because $Q$ depends on $\ln\rho_{\mathrm{num}}$ and a constant addend to the logarithm differentiates away. Setting one amplitude to zero does not continuously reduce $Q$ to the other's: it reduces $Q$ to zero or to the other's value, with a discontinuous dependence on the amplitudes at the boundary. <strong>So $Q$ is a property of the set of amplitudes and not of any one of them</strong>, which is what the word "interference" states in one word.</p>
+<p><strong>The size of what the interference adds is a number, and it is quadratic in the separation.</strong> Take two modes with $\rho_{\mathrm{num}}=1+\eta^{2}+2\eta\cos(\Delta k\,x)$, so that $\eta$ is the second amplitude relative to the first and $\Delta k$ their separation. Then, the mean being over a period,</p>
+<p>$$
+\Bigl\langle\frac{\nabla^{2}r}{r}\Bigr\rangle=\tfrac12\eta^{2}(\Delta k)^{2}+O(\eta^{4}).
+$$</p>
+<p><strong>The two powers are the content of the formula</strong>: the correction is second order in the amplitude that was added and second order in the label separation, which is what a correlation supported at a difference of labels has to be. Checked with a one-hundred-node quadrature: $\eta=0.1$ with $\Delta k=2$ gave $0.02020202$ against the predicted $0.02000000$, and $\eta=0.01$ with $\Delta k=1$ gave $0.00005000$ against $0.00005000$. <strong>The closed form is $\tfrac12(\Delta k)^{2}\eta^{2}/(1-\eta^{2})$</strong>, of which the displayed line is the first term; at $\eta=0.2$, $\Delta k=1$ it gives $0.020833333$ and the quadrature agrees to nine digits.</p>
 <p><strong>The stated objection, and the answer.</strong> The objection is that the decomposition into modes is a choice of basis, so a statement about "interference" is a statement about the basis and not about the fluid. The objection is correct about the basis and it does not touch the result: the basis is the basis of the plain waves, the plain waves are what a mode is, and the result is that in that basis the quantum layer has no diagonal part. <strong>The invariance of the statement is the invariance of the Fourier support</strong>: a single point of support cannot carry a functional of the density's curvature, because a single point has a constant density, and that is a fact about points and not about bases.</p>
+<h3 id="three-degrees-three-behaviours">Three Degrees, Three Behaviours</h3>
+<p><strong>Every object in the block scales with one of three powers of the field, and the power decides whether a transform can see it.</strong> Under $\tilde\Xi\to\lambda\tilde\Xi$:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>degree in the field</th>
+<th>the objects</th>
+<th>in the label</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>one</td>
+<td>the field, the label, the left side of the equation</td>
+<td>one point per label</td>
+</tr>
+<tr>
+<td>two</td>
+<td>the density, the stress</td>
+<td>a correlation, supported at differences</td>
+</tr>
+<tr>
+<td>zero</td>
+<td>the velocity, the quantum potential, the equation of state</td>
+<td>no label at all</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The first row is the mode, the second is the cross term, and the third is why this section exists.</strong> A density is quadratic, and the square of a sum carries the differences of the labels of its terms: with $k_1=1$ and $k_2=3$ the density has weight at $0$ and at $\pm2$ and none at $k_1+k_2=4$. <strong>A degree-two object therefore carries labels that its amplitude does not carry</strong>, which is the whole of the beat.</p>
+<p><strong>A degree-zero object is a ratio, and a ratio of two transforms is not the transform of a ratio.</strong> That single sentence is why the velocity and the quantum potential are the objects no transform reaches, although the density and the stress are two lines of algebra away from them. <strong>The degree counted here is in the field and not in the energy</strong>; the two counts are independent, and <a href="wave-particle-duality-and-the-galilean-limit.html">Wave–Particle Duality and the Galilean Limit</a> uses the second.</p>
 <h2 id="the-nodal-set-and-the-circulation">The Nodal Set and the Circulation</h2>
 <p><strong>The nodal set is inter-mode, and that is the sharpest of the four statements.</strong> A mode has $\lvert\tilde\Xi\rvert=\lvert a\rvert>0$ everywhere, so it has no nodal set at all. A superposition has one wherever the sum vanishes, and the vanishing requires two terms of comparable amplitude and opposite phase.</p>
 <p><strong>The quantised circulation is therefore inter-mode as well.</strong> From <a href="the-nodal-set-and-quantized-circulation.html">The Nodal Set and Quantized Circulation</a>,</p>
@@ -241,6 +276,10 @@ $$</p>
 <tr>
 <td>$2\sqrt{\rho_1\rho_2}\cos(\theta_1-\theta_2)$</td>
 <td>The interference term of a superposition</td>
+</tr>
+<tr>
+<td>$\eta$, $\Delta k$</td>
+<td>The second amplitude relative to the first, and the separation of the two labels; the mean curvature they add is $\tfrac12\eta^{2}(\Delta k)^{2}$</td>
 </tr>
 <tr>
 <td>$\varepsilon=\pm1$</td>

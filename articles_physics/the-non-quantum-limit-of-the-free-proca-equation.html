@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Non-Quantum Limit of the Free Proca Equation — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-non-quantum-limit-of-the-free-proca-equation"><strong>The Non-Quantum Limit of the Free Proca Equation</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The limit in the second-order vector family, and the one step the parent's own chart does not supply.</strong> <em>The Proca Equation in Biquaternionic Polar Variables</em> writes the real four-potential as a piecewise word, $\tilde A_\Phi=\varepsilon\,i\,r\,\tilde U_{\Psi,\mathrm b}$ on the timelike branch and $\tilde A_\Phi=r\,\tilde U_{\Psi,\mathrm b}\hat u$ on the spacelike one, derives the scale equation and the frame's transport law, and states as a finding that the central bracket is absent identically: a real four-vector has no phase to differentiate, so there is no phase gradient and no Madelung pair. That finding is exact, and it is a statement about the <strong>field</strong>. The limit is a statement about a <strong>mode</strong>. The two are different objects, and the whole of this article is the difference between them.</p>
+<p><strong>On the parent's own word the criterion is not small, and the article proves it in one line.</strong> Take the parent's plane wave, $\tilde A_\Phi=\tilde A_0\cos\theta_{\mathrm{pwp}}$. The parent computes its word: the frame is constant, $\varepsilon$ flips at every node, and the entire spacetime dependence sits in the scale, $r=r_0\lvert\cos\theta_{\mathrm{pwp}}\rvert$. Differentiating gives</p>
+<p>$$
+\frac{\partial_\mu r}{r}=-\tan\theta_{\mathrm{pwp}}\;\partial_\mu\theta_{\mathrm{pwp}},
+$$</p>
+<p>so the ratio of the amplitude's gradient to the phase's is $\lvert\tan\theta_{\mathrm{pwp}}\rvert$, which is zero nowhere and infinite at every node. <strong>The criterion $\epsilon=1/(k_\Phi L)$ evaluated on the parent's own solution is $\lvert\tan\theta_{\mathrm{pwp}}\rvert$</strong>, a number that runs over the whole positive line in one period. There is no family on which it is small, and the reason is structural: in the material sector's real chart the fast variation sits in the modulus, and the modulus is the object the limit is supposed to keep slow.</p>
+<p><strong>The one step, and it is the standard one.</strong> A real field's oscillation is carried by a mode, $A_\mu=\mathrm{Re}\bigl(a_\mu\,e^{i\theta}\bigr)$, with $a_\mu$ complex and slowly varying and $\theta$ fast. The phase is a property of the mode and not of the field; the field is the interference of the mode with its conjugate, and that interference is exactly the modulus's fast oscillation that the parent exhibits. <strong>The limit is therefore stated on a mode, and the parent's finding is not contradicted but located</strong>: it is the statement that the interference of two conjugate modes has no phase, which is true and is why the chart cannot order itself.</p>
+<p><strong>What the article establishes, in five sentences.</strong> The Proca equation on a mode is one exact identity in three groups, of orders $\epsilon^{-2}$, $\epsilon^{-1}$ and $\epsilon^{0}$, and the order-$\epsilon^{-2}$ group is the Proca symbol of <em>The Fourier Transform and the Proca Equation in Biquaternionic Form</em> acting on the amplitude. Contracting it with the wave number gives $-k_m^{2}(k\cdot a)=0$, so <strong>transversality is derived from the mass and not imposed</strong>, and then the symbol's remaining content is $k^{2}=k_m^{2}$. The order-$\epsilon^{-1}$ group is the transport equation $\partial_\mu(\lvert a\rvert^{2}k^{\mu})=0$, exact, and its rays are the timelike dust lines $\vec v=c^{2}\vec k/\omega$. The order-$\epsilon^{0}$ group is the remainder, and it falls as $\epsilon^{2}$. <strong>The count at order zero is three</strong>, which is the parent's own count, and the mechanism that produces it is the mass and not a gauge orbit.</p>
+<p><strong>Notation, stated once.</strong> The material sector is $\mathbb{B}_\Phi=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$; the four-potential is $\tilde A_\Phi=ie_t\,a'_t+\vec e\cdot\vec A$, real, and the Minkowski interval of a four-vector $(v'_t,\vec v)$ is $v^{2}=v'^{2}_t-\lvert\vec v\rvert^{2}$. The sector's norm is minus that interval, $\langle\tilde Q_\Phi\rangle_\natural=-Q^{2}$, which is why the eikonal below reads $\langle\tilde K_\Phi\rangle_\natural=-k_m^{2}$ and not $+k_m^{2}$. The phase is $\theta$, the four-wave-number is $k_\mu=\partial_\mu\theta=(\omega/c,\vec k)$, and $k_m=mc/\hbar$. Derivatives are $\partial/\partial R_t=-i\,\partial/\partial r'_t$ with $r'_t=c\,t$, so $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial{r'_{t}}^{2}$.</p>
+<h2 id="the-parents-identity-and-why-it-cannot-be-ordered">The Parent's Identity and Why It Cannot Be Ordered</h2>
+<p><strong>The parent's identity is exact and every one of its groups is of the same size.</strong></p>
+<p>$$
+\tilde A_\Phi^{-1}\bigl(\Box_\Phi-k_m^{2}\bigr)\tilde A_\Phi
+=\frac{\Box_\Phi r}{r}
++2\sum_\mu\frac{\partial\ln r}{\partial R_\mu}\,\Gamma_\mu
++\tilde U_{\Psi,\mathrm b}^{-1}\Box_\Phi\tilde U_{\Psi,\mathrm b}
+-k_m^{2},
+$$</p>
+<p>with $\Gamma_\mu=\tilde U_{\Psi,\mathrm b}^{-1}\partial_\mu\tilde U_{\Psi,\mathrm b}$. The scalar part of this display is the parent's scale equation, $(\Box_\Phi-k_m^{2})r+r\sum_\mu\mathrm{Sc}(\Gamma_\mu^{2})=0$, and its traceless part is the frame's transport.</p>
+<p><strong>Read as an expansion, it has one scale and not two.</strong> The first group is $\partial^{2}r/r$; the second is $\partial r/r$ times the frame bracket; the third is the frame's curvature. In the spinor case the second group is smaller than the first by $\epsilon$ because one of the two gradients there is the phase's and carries the momentum, while the other is the amplitude's. <strong>Here there is no such split</strong>: both gradients are the frame's or the modulus's, both are of the wave's own scale, and the three groups are $k^{2}$, $k^{2}$ and $k^{2}$.</p>
+<p><strong>The plane wave makes that quantitative, and the number is the criterion itself.</strong> With $r=r_0\lvert\cos\theta_{\mathrm{pwp}}\rvert$ the ratio $\lvert\partial_\mu r\rvert/(r\lvert k_\mu\rvert)$ is $\lvert\tan\theta_{\mathrm{pwp}}\rvert$ on every component. <strong>The criterion is not merely of order one on this solution; it is a function of position that is unbounded.</strong> No amount of care with the expansion changes that, because the object being expanded is the modulus and the modulus is doing the oscillating.</p>
+<p><strong>The chart is also the more fragile of the two in the material sector, which the parent states and which is worth repeating here.</strong> The spinor word fails where the field vanishes; the material word fails on the whole light cone of field values, $\langle\tilde A_\Phi\rangle_\natural=0$, because there the word has no branch. A solution crosses that set on surfaces, so the parent's chart is piecewise in spacetime and not only in parameter space. <strong>An expansion stated on that chart inherits a piecewise domain before it inherits anything else</strong>, and this article does not attempt one.</p>
+<p><strong>What survives from the parent, unchanged and used below.</strong> The two brackets and their types; the absence of the central bracket, which is the reality of the field; the separation of the equation into a scale equation and a frame transport; the Lorenz condition as one divergence; and the fixed-axis reduction $\partial_\mu(r^{2}\partial_\mu\theta_{\mathrm{rpd}})=0$, which is the parent's own statement that the rapidity flows with density $r^{2}$.</p>
+<h2 id="the-mode-and-the-exact-identity">The Mode and the Exact Identity</h2>
+<p><strong>The decomposition and its count.</strong> Write</p>
+<p>$$
+A_\mu=\mathrm{Re}\bigl(a_\mu\,e^{i\theta}\bigr),
+\qquad
+a_\mu\in\mathbb{C},
+\qquad
+\theta\ \text{real and fast},
+$$</p>
+<p>so that $A_\mu$ is real, as the Proca field is. The amplitude carries four complex numbers, the phase one real number, and four real components are being represented. <strong>The decomposition is redundant, as every amplitude–phase split is</strong>: a constant shift of $\theta$ rotates $a$, and a longitudinal part $a_\mu\propto k_\mu$ can be moved into the phase by a position-dependent rotation. The article fixes the second freedom by the transversality it derives below, and the first by declaring $\theta$ to be the phase and not a gauge parameter. Nothing else is removed, and the mode's count is three complex amplitudes for the three polarisations.</p>
+<p><strong>The exact identity.</strong> Substituting into $\tilde\nabla_\Phi\tilde F-k_m^{2}\tilde A_\Phi=0$ and dividing by the carrier $e^{i\theta}$ gives, component by component,</p>
+<p>$$
+0=\underbrace{(k^{2}-k_m^{2})a^{\nu}-k^{\nu}(k\cdot a)}_{\text{order }\epsilon^{-2}}
++\;i\underbrace{\Bigl[2k^{\mu}\partial_\mu a^{\nu}-\partial^{\nu}(k\cdot a)+(\partial\cdot k)a^{\nu}-k^{\nu}(\partial\cdot a)\Bigr]}_{\text{order }\epsilon^{-1}}
++\underbrace{\Bigl[\Box_\Phi a^{\nu}-\partial^{\nu}(\partial\cdot a)\Bigr]}_{\text{order }\epsilon^{0}},
+$$</p>
+<p>with $k\cdot a=k_\mu a^{\mu}$, $\partial\cdot a=\partial_\mu a^{\mu}$ and all indices raised and lowered with the interval of the Notation paragraph. <strong>The identity is exact</strong>: it was checked symbolically, where the difference between the two sides is identically zero, and by finite differences on a smooth configuration, where the difference falls with the square of the step as a second-order scheme must.</p>
+<p><strong>The first group is the Fourier article's symbol.</strong> Writing $\sigma^{\mu}{}_{\nu}=(k^{2}-k_m^{2})\delta^{\mu}{}_{\nu}-k^{\mu}k_{\nu}$, the order-$\epsilon^{-2}$ group is $(\sigma a)^{\nu}$. <strong>The symbol of <em>The Fourier Transform and the Proca Equation in Biquaternionic Form</em> is therefore not an analogy for the limit's leading term; it is the leading term.</strong> That article's determinant, its eigenvalues and its rank are this article's order-zero content, and the article reads them rather than recomputing them.</p>
+<p><strong>The three groups and their measured ratios.</strong> With $\Theta$ fixed, $a$ varying over a length $L$ and the wave number varying over the same $L$, the groups are in the ratio $1:\epsilon:\epsilon^{2}$. Measured at $k=1.03$ with $L=1,2,4,8$, the second group's share of the first is $0.4395$, $0.2064$, $0.0997$, $0.0489$ and the third's is $0.27656$, $0.07081$, $0.01790$, $0.00450$; the second halves with each doubling of $L$ and the third quarters. <strong>The ratios divided by $\epsilon$ and by $\epsilon^{2}$ are constant to two digits</strong>, $0.45$, $0.42$, $0.41$, $0.40$ and $0.29$, $0.30$, $0.30$, $0.31$, which is the statement that the grouping is the expansion and not a rearrangement of it.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>group</th>
+<th>scale</th>
+<th>order</th>
+<th>what it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>first</td>
+<td>$k^{2}\lvert a\rvert$</td>
+<td>$\epsilon^{-2}$</td>
+<td>the symbol; the eikonal and the constraint</td>
+</tr>
+<tr>
+<td>second</td>
+<td>$k\lvert a\rvert/L$</td>
+<td>$\epsilon^{-1}$</td>
+<td>the transport equation</td>
+</tr>
+<tr>
+<td>third</td>
+<td>$\lvert a\rvert/L^{2}$</td>
+<td>$\epsilon^{0}$</td>
+<td>the remainder</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Read the table as the other articles read theirs.</strong> The middle group is not an error: it is an equation, and the ordering of a complex identity is by part and not by size. <strong>A reader who sorted the three groups by magnitude and kept the large ones would keep the symbol and drop the transport.</strong></p>
+<h2 id="the-criterion">The Criterion</h2>
+<p><strong>On the mode, and unchanged in form.</strong></p>
+<p>$$
+\epsilon=\frac{1}{k_\Phi L}=\frac{\hbar}{\lvert\vec p\rvert L},
+\qquad
+k_\Phi=\lvert\vec k\rvert,
+$$</p>
+<p>with $L$ the length over which $a_\mu$ varies. <strong>The criterion is the amplitude's gradient against the phase's, and it is a property of the mode and not of the equation's order</strong>, exactly as in the three families already written.</p>
+<p><strong>The second ratio is the one-particle window and not the limit.</strong> $1/(k_mL)=\hbar/(mcL)$ is the Compton length over $L$. It is not a parameter of the expansion: the mass is a coefficient of the identity and not a term of it, and the eikonal below is the condition that reproduces $k_m^{2}$ rather than a statement that $k_m$ is small.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>comparison</th>
+<th>ratio</th>
+<th>the limit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>amplitude's gradient against the phase's</td>
+<td>$\epsilon^{2}=\hbar^{2}/(\lvert\vec p\rvert^{2}L^{2})$</td>
+<td>yes; the limit is $\epsilon\to0$</td>
+</tr>
+<tr>
+<td>amplitude's gradient against the mass</td>
+<td>$(k_mL)^{-2}$</td>
+<td>no; the one-particle boundary</td>
+</tr>
+<tr>
+<td>the third group against the first</td>
+<td>$\epsilon^{2}$</td>
+<td>no; the error</td>
+</tr>
+<tr>
+<td>the second group against the first</td>
+<td>$\epsilon$</td>
+<td>no; it is an equation</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>What the criterion is not allowed to be.</strong> It is not $1/(k_mL)$, and it is not the ratio of the mass to the momentum. <strong>A limit that sent $k_m\to0$ would send the constraint away with it</strong>, because the constraint is $k_m^{2}(k\cdot a)=0$ and the mass is its coefficient. That is the Proca family's characteristic trap, and the next section is where it bites.</p>
+<h2 id="order-zero-the-eikonal-and-the-constraint">Order Zero: the Eikonal and the Constraint</h2>
+<p><strong>Contract the leading group with $k_\nu$.</strong></p>
+<p>$$
+k_\nu(\sigma a)^{\nu}=(k^{2}-k_m^{2})(k\cdot a)-k^{2}(k\cdot a)=-k_m^{2}\,(k\cdot a)=0,
+$$</p>
+<p>so for $k_m\neq0$</p>
+<p>$$
+k\cdot a=0 .
+$$</p>
+<p><strong>Transversality is derived and not imposed, and the mass is what derives it.</strong> This is the family's central structural statement, and it differs from every other family: the Schrödinger and Klein–Gordon articles impose a constraint or find one carried by the parent, the Dirac article finds the mass ordering the parity of the operator, and here the mass is the coefficient of a contraction identity. <strong>The Lorenz condition is not a gauge choice in the limit; it is the trace of the leading group.</strong></p>
+<p><strong>With transversality in hand the leading group is one line.</strong></p>
+<p>$$
+(k^{2}-k_m^{2})a^{\nu}=0
+\qquad\Longrightarrow\qquad
+k^{2}=k_m^{2}
+\qquad\text{for } a\neq0,
+$$</p>
+<p>that is, $\omega^{2}/c^{2}-\lvert\vec k\rvert^{2}=k_m^{2}$, or $\langle\tilde K_\Phi\rangle_\natural=-k_m^{2}$ in the sector's norm. <strong>The eikonal is the mass shell and the constraint is its partner, and the two come from one group and one contraction.</strong></p>
+<p><strong>The eigenvalues, which are the parent's and which are the count.</strong> The symbol's eigenvalues are $\{k^{2}-k_m^{2},k^{2}-k_m^{2},k^{2}-k_m^{2},-k_m^{2}\}$ and its determinant is $-k_m^{2}(k^{2}-k_m^{2})^{3}$; measured at $k=(1.30,0.50,-0.30,0.20)$ with $k_m^{2}=0.49$, the eigenvalues are $-0.49$ and $0.82$ three times, and the determinant is $-0.27017032$ against the formula's $-0.27017032$. <strong>On the shell the three equal eigenvalues vanish and the fourth does not</strong>, so the symbol has rank one, its kernel is the three-dimensional Lorenz plane, and the count of propagating directions is three.</p>
+<p><strong>Three, and the mechanism is worth naming because Maxwell's is different.</strong> The massless field also has a three-dimensional kernel on the shell, but one of its three dimensions is the wave number itself, which is the gauge orbit; the count of its polarisations is $3-1=2$. <strong>The Proca field's kernel contains no such direction</strong> — the wave number is not in the Lorenz plane, since $k^{2}=k_m^{2}\neq0$ — and its count is $3-0=3$. The fourth component was removed before the polarisation count began, by the mass, through the contraction above. <strong>A limit that imposed transversality by hand would get the same three directions and would have explained nothing.</strong></p>
+<p><strong>The two sheets.</strong> The eikonal is even in $\omega$ and its two roots are $\omega=\pm c\sqrt{\lvert\vec k\rvert^{2}+k_m^{2}}$. <strong>The limit keeps both</strong>: they are the mode's two frequency branches, and the parent's evenness result, $\sigma(-\tilde K_\Phi)=\sigma(\tilde K_\Phi)$, is exactly the statement that the symbol does not distinguish them. In the mode's language the two sheets are the two signs of $\partial_t\theta$ and the amplitude is the same on both, which is why the free Proca spectrum has no particle–antiparticle splitting to exhibit.</p>
+<h2 id="order-one-the-transport-equation">Order One: the Transport Equation</h2>
+<p><strong>The second group, contracted with $\bar a_\nu$ and taken real.</strong></p>
+<p>$$
+2k^{\mu}\,\mathrm{Re}\bigl(\bar a_\nu\partial_\mu a^{\nu}\bigr)+(\partial\cdot k)\lvert a\rvert^{2}=0
+\qquad\Longleftrightarrow\qquad
+\partial_\mu\bigl(\lvert a\rvert^{2}k^{\mu}\bigr)=0,
+$$</p>
+<p>with $\lvert a\rvert^{2}=a_\nu\bar a^{\nu}$. <strong>Two of the four terms of the second group do not appear because they carry $k\cdot a$ or $\partial\cdot a$</strong>, and $k\cdot a$ is zero at order zero while $\partial\cdot a$ enters only multiplied by it. The identity is exact at the order at which it is written, and the discarded terms are one order higher and are the transport's own correction.</p>
+<p><strong>What it determines and what it does not.</strong> It determines $\lvert a\rvert^{2}$ along the rays once the rays are known; it determines nothing about the rays. <strong>The pair is triangular in the same order as everywhere else</strong>: the eikonal fixes the rays, the rays fix the drift, the transport fixes the density.</p>
+<p><strong>The rays are the eikonal's characteristics, and the flow is dust's.</strong></p>
+<p>$$
+\vec v=\frac{\partial\omega}{\partial\vec k}=\frac{c^{2}\vec k}{\omega},
+\qquad
+\lvert\vec v\rvert<c ,
+$$</p>
+<p>straight in the free case, timelike everywhere, and carrying the density $\lvert a\rvert^{2}$. <strong>That is the same congruence the Klein–Gordon and Dirac articles deliver</strong>, which is the statement that the flow is a property of the mass shell and not of the field's spin or its order.</p>
+<p><strong>A density and not a probability.</strong> $\lvert a\rvert^{2}$ is a number density of lines; the positivity the corpus reads as a probability belongs to the field's bilinear and not to the mode's amplitude. <strong>The distinction is the free field's and not the limit's</strong>: a real field has no conserved positive density of its own, and the mode's $\lvert a\rvert^{2}$ is the density of one branch of the interference.</p>
+<h2 id="the-polarization-is-present-at-order-zero">The Polarization Is Present at Order Zero</h2>
+<p><strong>This is where the family parts company with the Dirac pair, and the reason is algebraic.</strong> In the Dirac case the leading multiplier is a norm, $\langle\tilde K_\Psi\rangle_\natural$, and a norm is central: it cannot act on the spinor, so the spin is invisible at order zero and appears at order one in a commutator. <strong>Here the leading multiplier is a matrix</strong>, $\sigma^{\mu}{}_{\nu}$, and a matrix acts on the amplitude's index. So the polarisation is not merely present at order zero; it is what the order-zero equation is about.</p>
+<p><strong>What that gives and what it does not.</strong> It gives the three directions, their transport and their count, all at order zero and all exact within the limit's order. It does not give precession: the symbol is built from $k$ alone and carries no field strength, so a free mode's polarisation is carried along the ray without turning. <strong>The turning is the curvature's, it is the coupled article's subject, and it enters there as a matrix addition to the same symbol.</strong></p>
+<p><strong>The absence of a spin current is the same statement as the parent's.</strong> The parent records that the frame's rotor is an internal rotation and not a spin density, and the variational companion records the absence of a rotor bracket in the material sector. <strong>The limit agrees for its own reason</strong>: the transport equation is scalar, the density is scalar, and the polarisation's index appears only where the symbol acts. Nothing in the limit produces a spin flux, and nothing should.</p>
+<h2 id="what-the-limit-does-not-order">What the Limit Does Not Order</h2>
+<p><strong>The mass.</strong> $k_m$ is the coefficient inside the leading group and the source of the constraint. <strong>No statement of the form "the mass is small" belongs to this limit</strong>, and the massless limit is a different and singular object, treated below.</p>
+<p><strong>The reality of the field.</strong> The limit is stated on a mode; a real field is the sum of two conjugate modes; the limit is not linear, so it cannot be applied to the sum. <strong>The failure of the parent's chart and the success of this one are the same fact</strong>: the sum of two conjugate modes has its fast variation in the modulus, which is why the parent's criterion is $\lvert\tan\theta_{\mathrm{pwp}}\rvert$, and each mode separately has its fast variation in its phase.</p>
+<p><strong>Superposition.</strong> Two modes with different phases have no single $\epsilon$, and the eikonal of a sum is not the sum of eikonals. <strong>The limit acts on one phase and one amplitude</strong>, which is what makes it a limit of a family of solutions and not of the equation.</p>
+<p><strong>The field.</strong> Nothing here orders the coupling, because there is none. <strong>The limit orders $\epsilon$ and not the field</strong>, and the coupled companion is where the second ratio appears.</p>
+<h2 id="failure-regions">Failure Regions</h2>
+<p><strong>Four, and the first three are places.</strong></p>
+<p><em>Caustics.</em> Where the congruence focuses, $\lvert a\rvert$ diverges, $\epsilon$ grows without bound, and the eikonal is still a solution while the expansion is not. <strong>The failure is measured in $\epsilon$ and not in the distance to the caustic.</strong></p>
+<p><em>Where the amplitude varies on the de Broglie scale.</em> $\epsilon\sim1$, the third group is comparable with the first, and the remainder is of the eikonal's size.</p>
+<p><em>Where the amplitude varies on the Compton scale.</em> $(k_mL)\sim1$, the two sheets stop being separable, and the one-particle reading of the amplitude as a complex number per polarisation fails.</p>
+<p><strong>The fourth is not a place but a limit, and it is this family's own.</strong> <em>The massless case.</em> At $k_m=0$ the constraint's coefficient vanishes, $k\cdot a=0$ is no longer implied, and the symbol's determinant vanishes at every wave number: measured on the shell it is zero, and off the shell the factor $-k_m^{2}$ is zero, so the symbol is invertible nowhere. <strong>The count jumps from three to two, and the mechanism changes from the mass to a gauge orbit.</strong> The parent's Fourier article states this as the failure of invertibility, and the article records it as a boundary of the limit: <strong>the limit presupposes that the fourth direction was removed, and at $k_m=0$ it was not.</strong></p>
+<p><strong>A plane wave is the case in which nothing is dropped.</strong> For constant $a$ and $k$ with $k^{2}=k_m^{2}$ and $k\cdot a=0$, the second and third groups vanish identically and the identity is satisfied exactly. <strong>The limit is empty where it is exact</strong>, as in the four other families.</p>
+<h2 id="summary">Summary</h2>
+<p>The Proca equation is second order in the material time and its field is real, so the parent's polar chart — modulus, frame, and a discrete branch label — has its fast variation in the modulus; on the parent's own plane wave the criterion equals $\lvert\tan\theta_{\mathrm{pwp}}\rvert$ and is nowhere small. The limit is therefore stated on a mode, $A_\mu=\mathrm{Re}(a_\mu e^{i\theta})$, and the parent's "no phase" finding is located as a statement about the interference of two conjugate modes and not as an obstacle to the limit.</p>
+<p>On the mode the equation is one exact identity in three groups of orders $\epsilon^{-2}$, $\epsilon^{-1}$ and $\epsilon^{0}$, whose leading group is the Fourier article's symbol acting on the amplitude. Contracting it with $k_\nu$ gives $k_m^{2}(k\cdot a)=0$, so transversality is derived from the mass; then the leading group gives $k^{2}=k_m^{2}$. The eigenvalues $\{k^{2}-k_m^{2},k^{2}-k_m^{2},k^{2}-k_m^{2},-k_m^{2}\}$ and the determinant $-k_m^{2}(k^{2}-k_m^{2})^{3}$ are the parent's, and on the shell they give rank one, a three-dimensional Lorenz kernel and a count of three: $3-0$, against Maxwell's $3-1$. The middle group gives the exact transport $\partial_\mu(\lvert a\rvert^{2}k^{\mu})=0$ with the dust flow $\vec v=c^{2}\vec k/\omega$, and the last group is the remainder at $\epsilon^{2}$, measured to quarter with every doubling of $L$ while the middle group halves.</p>
+<p>The polarisation is present at order zero for an algebraic reason — the leading multiplier is a matrix and not a norm — which is the Dirac family's argument run backwards, and no spin flux appears at any order. The failure regions are caustics, the de Broglie scale, the Compton scale, and the massless limit, where the constraint loses its coefficient and the count jumps.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde A_\Phi=ie_t a'_t+\vec e\cdot\vec A$</td>
+<td>The real four-potential in the material sector</td>
+</tr>
+<tr>
+<td>$v^{2}=v'^{2}_t-\lvert\vec v\rvert^{2}$</td>
+<td>The Minkowski interval; the sector's norm is its negative</td>
+</tr>
+<tr>
+<td>$A_\mu=\mathrm{Re}(a_\mu e^{i\theta})$</td>
+<td>The mode; $a_\mu$ complex and slow, $\theta$ real and fast</td>
+</tr>
+<tr>
+<td>$k_\mu=\partial_\mu\theta=(\omega/c,\vec k)$</td>
+<td>The four-wave-number</td>
+</tr>
+<tr>
+<td>$k_m=mc/\hbar$</td>
+<td>The mass wave number</td>
+</tr>
+<tr>
+<td>$\sigma^{\mu}{}_{\nu}=(k^{2}-k_m^{2})\delta^{\mu}{}_{\nu}-k^{\mu}k_{\nu}$</td>
+<td>The Proca symbol; the leading group</td>
+</tr>
+<tr>
+<td>$(k^{2}-k_m^{2})a^{\nu}-k^{\nu}(k\cdot a)$</td>
+<td>The order-$\epsilon^{-2}$ group</td>
+</tr>
+<tr>
+<td>$i\bigl[2k\cdot\partial a^{\nu}-\partial^{\nu}(k\cdot a)+(\partial\cdot k)a^{\nu}-k^{\nu}\partial\cdot a\bigr]$</td>
+<td>The order-$\epsilon^{-1}$ group</td>
+</tr>
+<tr>
+<td>$\Box_\Phi a^{\nu}-\partial^{\nu}(\partial\cdot a)$</td>
+<td>The order-$\epsilon^{0}$ group; the remainder</td>
+</tr>
+<tr>
+<td>$k\cdot a=0$</td>
+<td>Transversality, derived from the mass</td>
+</tr>
+<tr>
+<td>$k^{2}=k_m^{2}$</td>
+<td>The eikonal; the mass shell</td>
+</tr>
+<tr>
+<td>$\partial_\mu(\lvert a\rvert^{2}k^{\mu})=0$</td>
+<td>The transport equation; exact at its order</td>
+</tr>
+<tr>
+<td>$\vec v=c^{2}\vec k/\omega$</td>
+<td>The flow; timelike dust</td>
+</tr>
+<tr>
+<td>$\epsilon=1/(k_\Phi L)$</td>
+<td>The criterion; $L$ the length over which $a$ varies</td>
+</tr>
+<tr>
+<td>$\lvert\tan\theta_{\mathrm{pwp}}\rvert$</td>
+<td>The criterion evaluated on the parent's own plane wave</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Alexandru Proca, "Sur la théorie ondulatoire des électrons positifs et négatifs," <em>Journal de Physique et le Radium</em> <strong>7</strong> (1936) 347–353, for the equation whose short-wavelength content is at issue.</li>
+<li>J. D. Jackson, <em>Classical Electrodynamics</em>, 3rd edition (Wiley, 1999), §12.8, for the three polarisations of a massive vector field and the Lorenz condition as a constraint.</li>
+<li>Michael V. Berry and K. E. Mount, "Semiclassical approximations in wave mechanics," <em>Reports on Progress in Physics</em> <strong>35</strong> (1972) 315–397, for the eikonal and transport method and its failure at caustics.</li>
+<li>Robert G. Littlejohn, "The semiclassical evolution of wave packets," <em>Physics Reports</em> <strong>138</strong> (1986) 193–291, for the symbol calculus that turns an operator's leading term into a matrix acting on a polarisation.</li>
+<li>G. B. Whitham, <em>Linear and Nonlinear Waves</em> (Wiley, 1974), chapter 11, for the complex-amplitude decomposition of a real wave and the averaging it requires.</li>
+<li>Claude Itzykson and Jean-Bernard Zuber, <em>Quantum Field Theory</em> (McGraw-Hill, 1980), §3-2, for the Proca field's degrees of freedom and the singular character of the massless limit.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
