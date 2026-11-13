@@ -28,7 +28,7 @@ w_\mu w^{\mu}=1,
 v_\mu w^{\mu}=0 .
 $$
 
-The count is $1+3+2=6$, and the remaining quantity of the seven is an internal angle $\theta$, defined as the angle in the plane of the two pseudoscalar densities of the field, $\theta=\arctan(\hat\Omega/\Omega)$ with $\Omega$ and $\hat\Omega$ the scalar and pseudoscalar bilinears.
+The count is $1+3+2=6$, and the remaining quantity of the seven is an internal angle $\theta$, defined as the angle in the plane of the two pseudoscalar densities of the field, $\theta=\arctan(\Omega_{\mathrm{ps}}/\Omega)$ with $\Omega$ and $\Omega_{\mathrm{ps}}$ the scalar and pseudoscalar bilinears.
 
 **To those he adds the momentum.** The particle momentum-energy four-vector $k_\mu$ is not among the bilinears, and it enters his equations as a separate variable. With it the system's variables are
 
@@ -54,7 +54,7 @@ $$
 | $k_\mu$, the momentum | $\tilde K_{\Phi}=\tilde\nabla_\Phi\theta_{\mathrm{pha}}$, the phase gradient | reading, with a qualifier |
 | $\theta$, the internal angle | $\theta_{\mathrm{axr}}$, the rotor angle | forced by the count, given the first four rows |
 
-**The first three rows are identities and they are the corpus's own statements.** The density of the word is $\rho_{\mathrm{num}}=r^{2}$, read from the scale. The four-velocity is $\tilde V_{\Phi}=ic\tilde U_{\Psi,\mathrm b}^{-2}=\gamma(ic\,e_t+\vec v)$, read from the boost, with $\langle\tilde V_{\Phi}\rangle_{\natural}=-c^{2}$ for every field. The spin is $\tilde S_{\Psi,\mathrm{sp}}=\rho_{\mathrm{num}}\frac{\hbar}{2}i\hat s$ with $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$, read from the rotor. These are not correspondences of formulas; they are the same three objects named twice.
+**The first three rows are identities and they are the corpus's own statements.** The density of the word is $\rho_{\mathrm{num}}=r^{2}$, read from the scale. The four-velocity is $\tilde V_{\Phi}=ic\tilde U_{\Psi,\mathrm b}^{-2}=\gamma(ic\,e_t+\vec v)$, read from the boost, with $\langle\tilde V_{\Phi}\rangle_{\natural}=-c^{2}$ for every field. The spin is $\tilde S_{\Psi,\mathrm{sp}}=\rho_{\mathrm{num}}\frac{\hbar}{2}i\vec s$ with $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$, read from the rotor. These are not correspondences of formulas; they are the same three objects named twice.
 
 ### Why the count forces the fifth row
 
@@ -62,11 +62,11 @@ $$
 
 **Two further arguments support the identification, and neither is a computation.**
 
-**The sign of the double cover.** Takabayasi writes the two densities as $\Omega=\rho\cos\theta$ and $\hat\Omega=\rho\sin\theta$. A shift of $\theta$ by $2\pi$ leaves both and multiplies the field by $-1$, and a shift by $\pi$ flips both, which is no invariance and is the field multiplied by $-i\gamma_5$ rather than by a sign. The rotor's angle has exactly this structure: the spin direction $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ has period $2\pi$ and is reversed at $\pi$, while the rotor itself is $-e_t$ at $2\pi$ and multiplies the element by $-1$. So the two angles are the same kind of angle, and the similarity is exact rather than analogical.
+**The sign of the double cover.** Takabayasi writes the two densities as $\Omega=\rho\cos\theta$ and $\Omega_{\mathrm{ps}}=\rho\sin\theta$. A shift of $\theta$ by $2\pi$ leaves both and multiplies the field by $-1$, and a shift by $\pi$ flips both, which is no invariance and is the field multiplied by $-i\gamma_5$ rather than by a sign. The rotor's angle has exactly this structure: the spin direction $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ has period $2\pi$ and is reversed at $\pi$, while the rotor itself is $-e_t$ at $2\pi$ and multiplies the element by $-1$. So the two angles are the same kind of angle, and the similarity is exact rather than analogical.
 
 **Neither is the phase.** The density is the modulus of the norm, so it has period $\pi$ in $\theta_{\mathrm{pha}}$ and the phase's own range is a half turn, the other half being the sign. The two angles of this section are the opposite case: their bilinears need the full turn. That is the difference between the angle the scalar fluid carries and the angle the spinor fluid carries, and it is why the two cases have different counts.
 
-**The chiral operation.** A chiral rotation of the field is a right multiplication by the rotor $e^{\alpha\vec e_z}$ about the declared axis, and the word's rotor is the rightmost factor, so the rotation moves $\tilde u_{\mathrm r}$ alone: the scale and the phase are central and commute, and the boost stands to the left and is untouched. Takabayasi's $\theta$ is the angle that the same rotation shifts, because $\Omega$ and $\hat\Omega$ rotate into one another under it. So the fifth row pairs the two objects that one operation acts on, and that is the whole of the argument. When the rotor's axis is not the declared one the rotation changes the axis as well as the angle, and the pairing of angles is then a statement about the factor and not about a single number.
+**The chiral operation.** A chiral rotation of the field is a right multiplication by the rotor $e^{\alpha\vec e_z}$ about the declared axis, and the word's rotor is the rightmost factor, so the rotation moves $\tilde u_{\mathrm r}$ alone: the scale and the phase are central and commute, and the boost stands to the left and is untouched. Takabayasi's $\theta$ is the angle that the same rotation shifts, because $\Omega$ and $\Omega_{\mathrm{ps}}$ rotate into one another under it. So the fifth row pairs the two objects that one operation acts on, and that is the whole of the argument. When the rotor's axis is not the declared one the rotation changes the axis as well as the angle, and the pairing of angles is then a statement about the factor and not about a single number.
 
 **The mass term is not part of it.** $\mathcal B_{\Psi}=\tilde U_{\Psi,\mathrm b}^{-2}$ depends on the boost and on nothing else, so the mass does not couple the rotor angle; what the mass does is make the chiral rotation a broken symmetry rather than an exact one, which is a statement about the equation and not about which factor carries the angle.
 
@@ -112,7 +112,7 @@ $$
 | object | Takabayasi | polar word |
 | --- | --- | --- |
 | current | $\rho v_\mu$ | $\rho_{\mathrm{num}}\tilde V_{\Phi}$, reading $\rho_{\mathrm{num}}$, $\theta_{\mathrm{rpd}}$, $\vec u_{\mathrm b}$ |
-| spin density | $\rho w_\mu$ | $\rho_{\mathrm{num}}\frac{\hbar}{2}i\hat s$, reading $\rho_{\mathrm{num}}$, $\theta_{\mathrm{axr}}$, $\vec u_{\mathrm r}$ |
+| spin density | $\rho w_\mu$ | $\rho_{\mathrm{num}}\frac{\hbar}{2}i\vec s$, reading $\rho_{\mathrm{num}}$, $\theta_{\mathrm{axr}}$, $\vec u_{\mathrm r}$ |
 | what neither reads | $\theta$ | $\theta_{\mathrm{pha}}$ |
 
 **The separation is the same and the reason is not.** In the tensor formulation the current and the spin are different bilinears, and the separation is a fact about which bilinear is which. In the word the current reads the Hermitian factor and the spin reads the real-unitary factor, and the separation is a consequence of the four factors being of different types. **The word explains the separation and does not merely record it.**
@@ -168,7 +168,7 @@ $$
 
 **No removal of the non-uniqueness.** The closing condition is still a choice. Takabayasi makes one, the spin-hydrodynamics literature makes others, and the corpus records the choice without making it.
 
-**Where the Dirac fluid stands among the three.** The block now has a fluid per spin, and they are compared side by side in [The Spin Fluid of the Biquaternion Dirac Field](the-spin-fluid-of-the-biquaternion-dirac-field.html)'s §*The Three Fluids* and in [The Spin-One Fluid of the Biquaternion Proca Field](the-spin-one-fluid-of-the-biquaternion-proca-field.html)'s: the scalar field is a gradient flow with a Korteweg stress and no orientation, the Proca field is a charged flow with a London response and no orientation, and this one is a flow with an orientation — a Cosserat medium but not the constrained one. Takabayasi's own subsidiary condition is the constraint that would make it the constrained case, and that is the sharpest way to say what his tensor fluid is and what the word's is.
+**Where the Dirac fluid stands among the three.** The block now has a fluid per spin, and they are compared side by side in [The Spin Fluid of the Biquaternion Dirac Field](the-spin-fluid-of-the-biquaternion-dirac-field.html)'s §*The Three Fluids* and in [The Proca Fluid](the-proca-fluid.html)'s: the scalar field is a gradient flow with a Korteweg stress and no orientation, the Proca field is a charged flow with a London response and no orientation, and this one is a flow with an orientation — a Cosserat medium but not the constrained one. Takabayasi's own subsidiary condition is the constraint that would make it the constrained case, and that is the sharpest way to say what his tensor fluid is and what the word's is.
 
 **The one-sentence ledger is: the equation, no; the coordinates, yes.** Takabayasi's tensor calculus is the equation in tensor form. The polar word is the coordinates in which the equation's structure is algebraic.
 
@@ -209,7 +209,7 @@ No experiment separates the two formulations. What separates them is the origin 
 | $\tilde V_{\Phi}=ic\mathcal B_{\Psi}=\gamma(ic\,e_t+\vec v)$ | Four-velocity |
 | $\tilde K_{\Phi}=\tilde\nabla_\Phi\theta_{\mathrm{pha}}$ | The phase gradient; the momentum in wave-number units |
 | $\tilde J_{\Phi}=\rho_{\mathrm{num}}\tilde V_{\Phi}$ | The current |
-| $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | Spin direction |
+| $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | Spin direction |
 | $\rho$, $v_\mu$, $w_\mu$, $k_\mu$, $\theta$ | Takabayasi's density, velocity, spin, momentum and internal angle |
 | $N(\tilde\Xi)=\langle\tilde\Xi\rangle_{\natural}$ | Quaternionic norm, the determinant |
 | $c$ | Speed of light in the medium |

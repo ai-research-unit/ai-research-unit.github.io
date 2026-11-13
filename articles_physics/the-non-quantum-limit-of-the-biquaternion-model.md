@@ -14,7 +14,7 @@ Can a second limit of the same kind remove the quantum? The answer has two halve
 
 The conventions are those of the companions: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, sectors $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$, wave-number biquaternion $\tilde K_{\Phi}=ik_{t}^{\prime}e_{t}+\vec k_{\Phi}$, where $k_{t}^{\prime}=E/(\hbar c)$, $\vec k_{\Phi}=\vec p/\hbar$ and $-\langle\tilde K_{\Phi}\rangle_{\natural}=k_{m}^{2}$, the three numbers of *The Three Wavenumbers of a Particle*. Throughout, $k_m=m\,c/\hbar$, and $L$ is supplied by the problem.
 
-**What is not new.** The corpus has the formal character of the $\hbar\to0$ limit in *Similitudes Between the Poisson Bracket and the Quantum Commutator*, the phase forms in two companions, the divide as a count in a third, and the centre as classical sector in a fourth. Added here: why the limit must be formal, the criterion as one inverse length, the refusal of $1/k_{m}$, the partition it removes, the phase route, and the derivation of the equations of motion. The relativistic side of the same expansion is carried out in the companion *Relativistic Mechanics from the Dirac Wave: The Non-Quantum Limit in Biquaternionic Form*.
+**What is not new.** The corpus has the formal character of the $\hbar\to0$ limit in *Similitudes Between the Poisson Bracket and the Quantum Commutator*, the phase forms in two companions, the divide as a count in a third, and the centre as classical sector in a fourth. Added here: the separation of the limit from the approximation, why the limit must be formal, the criterion as one inverse length, the refusal of $1/k_{m}$, the partition it removes, the phase route, the derivation of the equations of motion, the ordering of the three terms, the mass-order rule for a first-order equation, and the sector in which the limit does not exist. The relativistic side of the same expansion is carried out in the companion *Relativistic Mechanics from the Dirac Wave: The Non-Quantum Limit in Biquaternionic Form*.
 
 ## The Constant the Algebra Does Not Carry
 
@@ -56,6 +56,45 @@ The last row is not independent: $\frac{\Omega}{k_{m}}=\gamma-1=\frac{\beta^{2}}
 
 **The mass is not the quantum either.** Setting $k_{m}=0$ gives $k_{t}^{\prime}=k_{\Phi}$, the photon: linear dispersion, exact interference, no particle scale, and more wave-like than the massive case. A plane wave is semiclassical already, so the limit acts only where $A$ varies.
 
+## The Limit and the Approximation
+
+**Two words, and they answer different questions.** The limit says which equations survive as $\epsilon$ goes to zero. The approximation says how much of the discarded term is put back, and what the putting back costs.
+
+**The limit is a passage, not a truncation.** It acts on a family of solutions that share one phase and one amplitude, and it is formal, because the algebra puts no topology on its solution space and no sequence converges. What it delivers is a pair of equations, and both are exact statements about $S_{\tilde\Xi}$ and $A$.
+
+**The approximation is that passage stopped at a stated order.** It keeps the terms up to a chosen order, drops the rest, and states two things the limit never needs: the order kept, and the region where the remainder stays below the stated size.
+
+**One number separates them.** The limit has no error, only a discarded term. The approximation has an error, and the error is a function of position.
+
+**The limit is not the truncation of everything at order zero.** The continuity equation survives untouched, because it never contained $\hbar$. A reader who truncates both equations at order zero deletes the density and keeps the phase.
+
+**The approximation needs a domain and the limit does not.** The Gaussian ratio $\rho=\epsilon^{2}\lvert x^{2}/4\sigma^{2}-\tfrac12\rvert$ reaches one at $x\simeq2\sigma/\epsilon$ for every $\epsilon$, so the truncated equation holds on a region of a solution and never on the solution.
+
+| | the limit | the approximation |
+|---|---|---|
+| the operation | $\epsilon\to0$, formal | keep terms to order $N$ |
+| taken on | a family of solutions with one phase | one solution, one region |
+| what survives | eikonal, and the exact continuity | eikonal, the amplitude correction, and $Q$ at $N=2$ |
+| the error | a discarded term, not bounded | order $\epsilon^{N+1}$ in the region |
+| fails at | nowhere; the passage is formal | caustics, and a fast-varying amplitude |
+| who needs it | the twelve limit articles | the Fourier articles, which price $Q$ |
+
+**The words are not interchangeable in a sentence.** "In the non-quantum limit the phase obeys Hamilton–Jacobi" is a statement about equations. "To second order the phase obeys Hamilton–Jacobi with the quantum potential" is a statement about a solution on a region. The first needs no length; the second needs $L$.
+
+## The Orders
+
+**Three terms, and the criterion sizes them.** In the momentum, the real part is the phase gradient and the imaginary part is the amplitude gradient. In the equation, the second derivative of the amplitude is the quantum potential. Against the leading term:
+
+| term | size | who retains it |
+|---|---|---|
+| $\vec\nabla_\Phi S_{\tilde\Xi}$ | $1$ | the limit, and every order above it |
+| $\hbar\,\vec\nabla_\Phi\ln A$ | $\epsilon$ | the first correction to the momentum |
+| $\hbar^{2}\,\Delta_\Phi A/A$ | $\epsilon^{2}$ | the exact rewriting; the limit drops it |
+
+**Order zero is the eikonal and order two is the return of the quantum.** The limit keeps the first row and drops the third. The exact rewriting keeps all three, and that pair is Madelung's. The first order between them corrects the momentum and not the equation.
+
+**The order is a number the author states, and the error is what the number buys.** A claim that the eikonal holds, without the order kept and the region, is not a result and cannot be checked. The two articles that price the remainder do it on four shapes in the Klein–Gordon family, and the price runs from $0.000$ to $1155.53$.
+
 ## The Rule
 
 **Write the state and apply the momentum.** Take $\tilde{Ξ}=A\exp\!\left(i\theta_{\mathrm{phs}}\right)\xi$ with $A>0$ real and central, $S_{\tilde\Xi}$ real and central, and $\xi$ constant. The action carries the subscript of the field it belongs to, the spelling the companion limit article uses, so that the two articles of the pair write one symbol. Then
@@ -85,6 +124,33 @@ The rule is written for the scalar problem; the criterion does not depend on tha
 | the parameter | internal to the element | external to the algebra |
 | the dropped pieces | $\frac{3}{8}\beta^{4}$ temporal, $\frac{1}{2}\beta^{2}$ vector | order $\epsilon^{2}$ in the amplitude |
 | the error | a number, in closed form | an operator, with changing sign |
+
+## The Mass Sits Below the Derivative
+
+**A first-order equation needs one step before the eikonal is read.** Write the Dirac operator as $\gamma\cdot\partial-k_m$. Its principal symbol is $\gamma\cdot\pi$, and the mass is a lower-order term, so the principal determinant knows nothing of the mass:
+
+$$
+\det\left(\gamma\cdot\pi-k_m\right)=\left(\pi^{2}-k_m^{2}\right)^{2} ,
+\qquad
+\det\left(\gamma\cdot\pi\right)=\left(\pi^{2}\right)^{2} .
+$$
+
+**The rule.** Read the eikonal from the principal symbol of the operator whose mass is not below the derivative. For a first-order equation that operator is the square, and squaring is what the chiral pair does. For a second-order equation the mass is already in the principal symbol, so no step is needed.
+
+**The rule is applied in the corpus before it is stated.** The Dirac limit is taken on the square in *Relativistic Mechanics from the Dirac Wave*, and no article says why. The Schrödinger, Klein–Gordon and Proca families need no such step, because their symbols carry the dispersion directly.
+
+## Where the Limit Exists
+
+**Four sectors, and the free Proca field is the one that refuses.** The limit needs a phase to differentiate and an amplitude to transport. A real field whose word is a scale and a boost has neither, so no substitution produces $S$ and $A$ and no order can be collected.
+
+| sector | free | coupled |
+|---|---|---|
+| Schrödinger | yes, in *The Non-Quantum Limit of the Free Schrödinger Equation* | yes, with the kinetic momentum |
+| Klein–Gordon | yes | yes, with the circulation quantum $2\pi\hbar n+ϙ\Phi_B$ |
+| Dirac | yes, on the square | yes, on the square, with the spin transport |
+| Proca | no: the word is a scale and a boost | yes: the phase comes from the connection |
+
+**The refusal is structural and not a gap in a derivation.** The free Proca word has no phase slot, so the criterion $\epsilon=1/(k_{\Phi}L)$ has nothing to size and no order can be collected. That is why the twelve limit articles cover six families and not eight.
 
 ## The Classical Equations
 
@@ -180,6 +246,8 @@ and the difference is the interference term. Read against the count, that is the
 
 The non-quantum limit cannot truncate an element, because the algebra holds no quantum constant. $\hbar$ enters only as $\hbar$. Lowered at fixed mass it stiffens the mass term while it softens the bracket; at fixed wavelength it brings the particle to rest.
 
+**The limit and the approximation are two objects and one number.** The limit is the formal passage, and it yields two equations with no error. The approximation is the passage stopped at a stated order, and it yields an error that is a function of position and a region where the error is small. The third term of the expansion, the quantum potential, is order $\epsilon^{2}$ against the kinetic term, so the limit drops it and the second-order approximation puts it back.
+
 What remains is one external number, $\epsilon=\frac{1}{k_{\Phi}L}$. When it is small the phase obeys Hamilton–Jacobi and the amplitude obeys transport, so $\vec p=\vec\nabla_\Phi S_{\tilde\Xi}$, $\vec v=\vec p/m$ and $m\ddot{\vec r}=-\vec\nabla_\Phi V$. The error is an operator that changes sign, so the limit acts on solutions: it does not commute with superposition, does not select a subalgebra and does not produce a state. Those three refusals are one, since it takes a wave to its rays and the second partition with it, and that is why it needs no new constant.
 
 ## Summary of Notation
@@ -190,12 +258,15 @@ What remains is one external number, $\epsilon=\frac{1}{k_{\Phi}L}$. When it is 
 | $L$ | The length over which the amplitude varies; supplied by the problem |
 | $\tilde{Ξ}=A\exp\!\left(i\theta_{\mathrm{phs}}\right)\xi$ | The state in amplitude and phase; $A>0$ real and central, $S_{\tilde\Xi}$ the action of the state, real and central |
 | $\rho=\frac{1}{k_{\Phi}^{2}}\left\lvert\frac{\Delta_\Phi A}{A}\right\rvert$ | The quantum potential over the kinetic energy; the error of the limit |
+| $N$ | The order kept by the approximation; the limit keeps order $0$ in the phase equation and all orders in the continuity equation |
+| $\epsilon^{N+1}$ | The size of the remainder the approximation drops |
 | $Q=-\frac{m\,c^{2}}{2k_{m}^{2}}\frac{\Delta_\Phi A}{A}$ | The quantum potential; central, real, and the term the limit drops |
 | $k_{\Phi}=\lvert\vec p\rvert/\hbar$, $k_{m}=\frac{m\,c}{\hbar}$ | The momentum and mass wave numbers; $\hbar$ is the product $\hbar$ |
 | $\beta=\lvert\vec v\rvert/c$ | The parameter of the other limit, internal to $\tilde V_{\Phi}$ |
 
 ## Further Reading
 
+- Carl M. Bender and Steven A. Orszag, *Advanced Mathematical Methods for Scientists and Engineers* (Springer, 1999), chapters 6 and 10, for asymptotic expansions, their remainders and the regions where they hold.
 - Michael V. Berry and K. E. Mount, "Semiclassical approximations in wave mechanics," *Reports on Progress in Physics* **35** (1972) 315–397, for the uniform approximations and the failure at caustics.
 - Robert G. Littlejohn, "The semiclassical evolution of wave packets," *Physics Reports* **138** (1986) 193–291, for the error estimates that replace a closed-form remainder.
 - Alfredo M. Ozorio de Almeida, *Hamiltonian Systems: Chaos and Quantization* (Cambridge University Press, 1988), chapter 2, for the classical limit and the failure of superposition.

@@ -1,4 +1,4 @@
-# The Lagrangian of the Spin-One Fluid
+# The Lagrangian of the Proca Fluid
 
 ## Introduction
 
@@ -12,7 +12,7 @@
 
 *Third, this is the only action in the layer with no $\hbar$ in its derivative term, and correspondingly the only fluid in the block whose acceleration law has no quantum force.* The polar decomposition of a vector field produces no second derivative of the magnitude, and the action says why: $A=ru$ has one derivative and the Lagrangian is quadratic in it.
 
-**Position in the block.** This is the variational companion of [The Spin-One Fluid of the Biquaternion Proca Field](the-spin-one-fluid-of-the-biquaternion-proca-field.html) and the seventh of the eight articles of this layer. It is the only one in which a Lagrange multiplier is genuinely needed, and the only one whose fluid is not a quantum fluid.
+**Position in the block.** This is the variational companion of [The Proca Fluid](the-proca-fluid.html) and the seventh of the eight articles of this layer. It is the only one in which a Lagrange multiplier is genuinely needed, and the only one whose fluid is not a quantum fluid.
 
 **Conventions.** $A_\mu=r\,u_\mu$ with $r>0$ and $u_\mu u^\mu=-1$; the temporal slot carries the $i$, so $A_\mu A^\mu=-r^{2}$. $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$; $k_m=mc/\hbar$; $\mathcal L=-\frac14F_{\mu\nu}F^{\mu\nu}-\frac{k_m^{2}}{2}A_\mu A^\mu$ in the corpus's signature, whose Euler–Lagrange equation is $\partial_\nu F^{\nu\mu}=k_m^{2}A^\mu$. The transverse derivative is $\nabla_\mu=\Delta_\mu{}^\nu\partial_\nu$ with $\Delta_{\mu\nu}=g_{\mu\nu}+u_\mu u_\nu$.
 
@@ -64,7 +64,7 @@ $$
 
 which is the continuity equation for a density $r$ and a velocity $u^\mu$. **The Proca fluid therefore has a continuity equation that is not an equation of motion**: it is the integrability of the field equation, and it disappears with the mass.
 
-**The block's phrase is exact and the action explains it.** [The Spin-One Fluid of the Biquaternion Proca Field](the-spin-one-fluid-of-the-biquaternion-proca-field.html) finds that the fluid's free incompressibility is the mass's gift. The action's version: nothing in the derivative terms forces $\partial_\mu(ru^\mu)$ to vanish, and the identity $\partial_\mu\partial_\nu F^{\nu\mu}=0$ has no right-hand side to balance until the mass supplies one. **The incompressibility is not a property of the flow; it is a property of the pair $(r,u)$ and of the mass.**
+**The block's phrase is exact and the action explains it.** [The Proca Fluid](the-proca-fluid.html) finds that the fluid's free incompressibility is the mass's gift. The action's version: nothing in the derivative terms forces $\partial_\mu(ru^\mu)$ to vanish, and the identity $\partial_\mu\partial_\nu F^{\nu\mu}=0$ has no right-hand side to balance until the mass supplies one. **The incompressibility is not a property of the flow; it is a property of the pair $(r,u)$ and of the mass.**
 
 **And the flow's own expansion is not zero.** Differentiating $ru^\mu$ gives $\partial_\mu u^\mu=-u^\mu\partial_\mu\ln r$, so the velocity's divergence is the density's logarithmic derivative along the flow. The divergence-free object is the field, and reading it as continuity is what makes the density and the velocity into a fluid's.
 
@@ -145,4 +145,4 @@ and the multiplier enters the direction's equation as $\lambda u_\mu$, which is 
 - John R. Oppenheimer and Julian S. Schwinger, "On the interaction of mesotrons and nuclear particles," *Physical Review* **60** (1941) 150, for the massive vector field's constraint structure.
 - Clifford Truesdell and Richard Toupin, "The classical field theories," in *Handbuch der Physik* III/1 (Springer, 1960), for the polar decomposition of a vector field into magnitude and direction and the strain it induces.
 - Friedrich W. Hehl, "On the kinematics of the torsion of space-time," *Foundations of Physics* **15** (1985) 451–471, for a unit vector field's vorticity, its transversality and its rank.
-- The companion articles: [The Variational Principle and the Proca Equation in Biquaternionic Polar Variables](the-variational-principle-and-the-proca-equation-in-biquaternionic-polar-variables.html), the same action in the chart and the branch's role; [The Spin-One Fluid of the Biquaternion Proca Field](the-spin-one-fluid-of-the-biquaternion-proca-field.html), the acceleration law without a quantum force and the Lorenz condition read as continuity; [The Third Polarization and the Self-Dual Split of the Massive Field Strength](the-third-polarization-and-the-self-dual-split-of-the-massive-field-strength.html), for the decomposition of $F$ that the substitution produces; and the charged companion [The Lagrangian of the Charged Proca Fluid](the-lagrangian-of-the-charged-proca-fluid.html), where the connection's divergence stops being zero and the condition stops being continuity.
+- The companion articles: [The Variational Principle and the Proca Equation in Biquaternionic Polar Variables](the-variational-principle-and-the-proca-equation-in-biquaternionic-polar-variables.html), the same action in the chart and the branch's role; [The Proca Fluid](the-proca-fluid.html), the acceleration law without a quantum force and the Lorenz condition read as continuity; [The Third Polarization and the Self-Dual Split of the Massive Field Strength](the-third-polarization-and-the-self-dual-split-of-the-massive-field-strength.html), for the decomposition of $F$ that the substitution produces; and the charged companion [The Lagrangian of the Charged Proca Fluid](the-lagrangian-of-the-charged-proca-fluid.html), where the connection's divergence stops being zero and the condition stops being continuity.

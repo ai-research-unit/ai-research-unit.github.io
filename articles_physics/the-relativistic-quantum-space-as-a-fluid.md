@@ -23,7 +23,7 @@ Circulation](the-nodal-set-and-quantized-circulation.html) for its charge, and [
 field with a connection. [The Dirac Fluid and the Takabayasi Correspondence](the-dirac-fluid-and-the-takabayasi-correspondence.html) takes the spinor case, in which
 all four survive, with [The Spin Fluid of the Biquaternion Dirac Field](the-spin-fluid-of-the-biquaternion-dirac-field.html) for its frame, [The Spin
 Energy-Momentum Tensor](the-spin-energy-momentum-tensor.html) for its spin current and [The Charged Spin Fluid](the-charged-spin-fluid.html) for its coupling.
-[The Spin-One Fluid of the Biquaternion Proca Field](the-spin-one-fluid-of-the-biquaternion-proca-field.html) takes the vector case, with [The Charged Proca
+[The Proca Fluid](the-proca-fluid.html) takes the vector case, with [The Charged Proca
 Fluid](the-charged-proca-fluid.html) for its coupling. The closing group is the algebra that reads all of them: the bilinears, the choices the word leaves open, the
 sign $\varepsilon$ with its rigidity constraint, the locking of velocity to spin on the degenerate sector, and the boundary at which the chart ends.
 
@@ -85,14 +85,14 @@ with $r>0$, $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$, $\theta_
 | $r$ | real, positive | $r>0$ | density, $\rho_{\mathrm{num}}=r^{2}$ | the scale |
 | $e^{i\theta_{\mathrm{pha}}}$ | central imaginary | $(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ | action, $S=\hbar\theta_{\mathrm{pha}}$ | the phase |
 | $\tilde U_{\Psi,\mathrm b}$ | Hermitian positive | $\theta_{\mathrm{rpd}}\ge0$, unit axis $\vec u_{\mathrm b}$ | four-velocity, $\tilde V_{\Phi}=ic\tilde U_{\Psi,\mathrm b}^{-2}$ | the boost |
-| $\tilde u_{\mathrm r}$ | real unit | $\theta_{\mathrm{axr}}\in[0,2\pi]$, unit axis $\vec u_{\mathrm r}$ | spin direction, $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | the rotor |
+| $\tilde u_{\mathrm r}$ | real unit | $\theta_{\mathrm{axr}}\in[0,2\pi]$, unit axis $\vec u_{\mathrm r}$ | spin direction, $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | the rotor |
 
 **The velocity and the spin are the two non-central factors, and each is read by its own bilinear.** The boost is the Hermitian factor and the rotor is the real-unitary factor, so the algebra separates what a fluid separates: the motion and the internal rotation. The current reads the density and the boost. The spin reads the density and the rotor. The phase is read by neither, and it is read only by the argument of the quaternionic norm.
 
 | bilinear | value | reads | does not read |
 | --- | --- | --- | --- |
 | $\tilde J_{\Phi}=\rho_{\mathrm{num}}\tilde V_{\Phi}$ | $ic\gamma\rho_{\mathrm{num}}e_t+\rho_{\mathrm{num}}\gamma\vec v$ | $\rho_{\mathrm{num}}$, $\theta_{\mathrm{rpd}}$, $\vec u_{\mathrm b}$ (spinor case; see below) | $\theta_{\mathrm{pha}}$, $\theta_{\mathrm{axr}}$, $\vec u_{\mathrm r}$ |
-| $\tilde S_{\Psi,\mathrm{sp}}=\rho_{\mathrm{num}}\frac{\hbar}{2}i\hat s$ | a Hermitian element along $\hat s$ | $\rho_{\mathrm{num}}$, $\theta_{\mathrm{axr}}$, $\vec u_{\mathrm r}$ | $\theta_{\mathrm{pha}}$, $\theta_{\mathrm{rpd}}$, $\vec u_{\mathrm b}$ |
+| $\tilde S_{\Psi,\mathrm{sp}}=\rho_{\mathrm{num}}\frac{\hbar}{2}i\vec s$ | a Hermitian element along $\vec s$ | $\rho_{\mathrm{num}}$, $\theta_{\mathrm{axr}}$, $\vec u_{\mathrm r}$ | $\theta_{\mathrm{pha}}$, $\theta_{\mathrm{rpd}}$, $\vec u_{\mathrm b}$ |
 | $\langle\tilde\Xi\rangle_{\natural}$ | $\rho_{\mathrm{num}}e^{2i\theta_{\mathrm{pha}}}$ | $\rho_{\mathrm{num}}$, $2\theta_{\mathrm{pha}}$ | the two frames |
 
 **The three rows are the fluid's whole observable content, and the last row is where the angle lives.** The angle enters no current and no spin. That is the precise sense in which the field carries an angle that no bilinear of the algebra sees, and it is the reason the phase can be moved between the factors of the word without consequence.
@@ -219,7 +219,7 @@ word leaves open, the sign $\varepsilon$, the locking on the degenerate sector a
 | $\gamma=\cosh\theta_{\mathrm{rpd}}$ | Lorentz factor |
 | $\vec v=c\tanh\theta_{\mathrm{rpd}}\vec u_{\mathrm b}$ | Three-velocity |
 | $\tilde J_{\Phi}=\rho_{\mathrm{num}}\tilde V_{\Phi}$ | The current |
-| $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | Spin direction |
+| $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | Spin direction |
 | $\tilde S_{\Psi,\mathrm{sp}}$ | The spin element, Hermitian |
 | $k_m=mc/\hbar$ | Mass wave number |
 | $\varepsilon=\Xi_t/\Rho$ | Sign of the scalar part against the modulus; $\pm1$ on $\Sigma_{10}$, where the scalar case sits; $\Rho=r\,e^{i\theta_{\mathrm{pha}}}$ |

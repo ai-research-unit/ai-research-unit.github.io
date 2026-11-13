@@ -60,14 +60,14 @@ The norm being $-c^{2}$ is stronger than the corresponding statement for the sca
 **The spin element is the density times $\hbar/2$ times the rotor's image of the declared axis.** The polar article proves
 
 $$
-\tilde S_{\Psi,\mathrm{sp}}=\rho\,\frac{\hbar}{2}\,i\,\hat s,
+\tilde S_{\Psi,\mathrm{sp}}=\rho\,\frac{\hbar}{2}\,i\,\vec s,
 \qquad
-\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural},
+\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural},
 \qquad
-\hat s^{2}=-e_t,
+\vec s^{2}=-e_t,
 $$
 
-with $\tilde u_{\mathrm r}$ the spatial rotor. In this category's letters the prefactor is $\rho_{\mathrm{num}}^{1/2}$, the scale; the spin direction $\hat s$ is a unit real vector, the element is Hermitian because of the central $i$, and the declared axis $\vec e_z$ does not survive: only its image does.
+with $\tilde u_{\mathrm r}$ the spatial rotor. In this category's letters the prefactor is $\rho_{\mathrm{num}}^{1/2}$, the scale; the spin direction $\vec s$ is a unit real vector, the element is Hermitian because of the central $i$, and the declared axis $\vec e_z$ does not survive: only its image does.
 
 Three absences are exact and each has a reason. The central angle is absent, because $\natural$ does not conjugate it and the product cancels it. The boost is absent, because a boost does not rotate a spin direction in the rest frame, and the word respects that by putting the spin in the factor the boost leaves alone. And the declared axis is absent, because the rotor's image is what the field carries; a reader who wants a preferred axis of the algebra will not find one, and the absence is the algebra's way of saying that the axis is a convention of the frame and not a property of the field.
 
@@ -255,10 +255,10 @@ $$
 \qquad
 \tilde V_{\Phi}(x)=ic\,\tilde U_{\Psi,\mathrm b}^{-2}(x),
 \qquad
-\hat s(x)=\tilde u_{\mathrm r}(x)\,\vec e_z\,\tilde u_{\mathrm r}^{\natural}(x),
+\vec s(x)=\tilde u_{\mathrm r}(x)\,\vec e_z\,\tilde u_{\mathrm r}^{\natural}(x),
 $$
 
-with $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$ and $\hat s^{2}=-e_t$. The frame element is an element of $\mathbb{B}_\Phi$ and is written with its indices low, as the frame conventions require; the spin direction is a real unit vector and the spin element is $\rho_{\mathrm{num}}^{1/2}(\hbar/2)i\hat s$ in $\mathbb{B}_\Psi$.
+with $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$ and $\vec s^{2}=-e_t$. The frame element is an element of $\mathbb{B}_\Phi$ and is written with its indices low, as the frame conventions require; the spin direction is a real unit vector and the spin element is $\rho_{\mathrm{num}}^{1/2}(\hbar/2)i\vec s$ in $\mathbb{B}_\Psi$.
 
 The triple is not a set of independent fields. The Dirac equation ties the three, and the tie is what the polar article leaves open in its §*What the general field leaves open*: the equation relates the two parts' words, and the algebra supplies no canonical rule fixing one from the other. A hydrodynamic reading of the Dirac field has therefore to impose the tie as a closure, exactly as the non-relativistic spin-fluid literature does, and the articles on spin hydrodynamics do that.
 
@@ -279,7 +279,7 @@ The accounting explains why the Dirac fluid needs one more equation than the sca
 1. **It carries three data at each event: a density, a frame element and a spin direction.** That is the definition of a spin fluid, and the frame element is what makes it one rather than a dust.
 2. **The velocity is the frame's inverse square**, $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}$, and it is a unit wherever the field is non-zero — stronger than the scalar case, where the velocity is a unit only where $Q_{\mathrm{qnt}}$ vanishes.
 3. **The current reads four of the eight parameters** — the scale, the rapidity and the two angles of the direction — and reads neither the central angle nor the rotor.
-4. **The spin is the rotor's image of a declared axis**, $\tilde S_{\Psi,\mathrm{sp}}=\rho\frac{\hbar}{2}i\hat s$ with $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$. The declared axis does not survive; only its image is a property of the field.
+4. **The spin is the rotor's image of a declared axis**, $\tilde S_{\Psi,\mathrm{sp}}=\rho\frac{\hbar}{2}i\vec s$ with $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$. The declared axis does not survive; only its image is a property of the field.
 5. **The current splits by Gordon into convection and bound magnetisation.** The second term is conserved by antisymmetry alone, carries no total charge, and cannot be removed from the magnetic moment.
 6. **The flow is not a gradient.** The velocity has three functions of the four coordinates where a gradient supplies one, and the gap of two is exactly what the phrase *spin fluid* names.
 7. **The word carries the spin, and this is the only one of the three that does.** The scalar and Proca words have no orientation slot; the rotor is the Dirac word's fourth factor.
@@ -355,7 +355,7 @@ $$
 
 Compared with the block's other two fluids, this one is the only one whose word carries the spin, and the only one whose fluid data leave the stress undetermined. The scalar fluid is a gradient flow with a Korteweg stress and no orientation; the Proca fluid is a charged flow with a London response and no orientation; this one carries an orientation, and the orientation is exactly the extra structure that a Cosserat medium has and a dust does not. The counts run two, four and eight for parameters and equations alike, and no case is a truncation of another.
 
-The Dirac field's fluid is a triple at each event: the proper density $\rho_{\mathrm{num}}$, the frame element $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}=\gamma(ic e_t+\vec v)$ with $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$, and the spin direction $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$. The current is the density times the frame element, the spin is the density's square root times $(\hbar/2)i\hat s$, and the central angle is read by neither. The Gordon decomposition splits the current into a convection part and a bound spin part, which is a magnetisation current and contributes nothing to the total charge.
+The Dirac field's fluid is a triple at each event: the proper density $\rho_{\mathrm{num}}$, the frame element $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}=\gamma(ic e_t+\vec v)$ with $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$, and the spin direction $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$. The current is the density times the frame element, the spin is the density's square root times $(\hbar/2)i\vec s$, and the central angle is read by neither. The Gordon decomposition splits the current into a convection part and a bound spin part, which is a magnetisation current and contributes nothing to the total charge.
 
 The flow is not a gradient. The scalar field's velocity is $\tilde\nabla_\Phi S_{\tilde\Xi}/m$, so its one-form is closed identically; the Dirac field's velocity is a unit element squared, so its one-form is closed only when the frame is constant. The counting makes the obstruction visible: a unit timelike element carries three functions of the coordinates and a gradient carries one, so two functions at each event are unaccounted for, and those two are the frame's variation. The vorticity $\omega_{\mu\nu}=\partial_\mu v_{\Phi,\nu}-\partial_\nu v_{\Phi,\mu}$ is the antisymmetrised gradient of the frame element, read through the velocity; it vanishes for the scalar flow, it is non-zero for a shear flow with a varying rapidity, and the check gave a circulation of $0.434\,555\,977\,568\,337$ against the same closed form to fifteen digits.
 
@@ -384,8 +384,8 @@ The scalar case is the frozen-frame sector: with no frame element there is nothi
 | $\tilde V_{\Phi}=ic\tilde U_{\Psi,\mathrm b}^{-2}$ | Four-velocity of the fluid |
 | $\tilde U_{\Psi,\mathrm b}$ | The boost factor of the frame |
 | $\tilde u_{\mathrm r}$ | The spatial rotor |
-| $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | Spin direction, with $\hat s^{2}=-e_t$ |
-| $\tilde S_{\Psi,\mathrm{sp}}=\rho_{\mathrm{num}}^{1/2}\frac{\hbar}{2}i\hat s$ | Spin element, Hermitian |
+| $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | Spin direction, with $\vec s^{2}=-e_t$ |
+| $\tilde S_{\Psi,\mathrm{sp}}=\rho_{\mathrm{num}}^{1/2}\frac{\hbar}{2}i\vec s$ | Spin element, Hermitian |
 | $\tilde J_{\Phi}=\rho_{\mathrm{num}}\tilde V_{\Phi}$ | Number current |
 | $v_{\Phi,\mu}$ | Components of $\tilde V_\Phi$, index low |
 | $\omega_{\mu\nu}=\partial_\mu v_{\Phi,\nu}-\partial_\nu v_{\Phi,\mu}$ | Vorticity 2-form |

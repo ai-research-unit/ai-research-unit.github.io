@@ -1,4 +1,4 @@
-# __The Spin-One Fluid of the Biquaternion Proca Field__
+# __The Proca Fluid__
 
 ## Introduction
 
@@ -25,7 +25,7 @@
 $$
 \tilde A_\Phi=\varepsilon\,i\,r\,\tilde U_{\Psi,\mathrm b}\quad(\langle\tilde A_\Phi\rangle_\natural<0),
 \qquad
-\tilde A_\Phi=r\,\tilde U_{\Psi,\mathrm b}\,\hat u\quad(\langle\tilde A_\Phi\rangle_\natural>0),
+\tilde A_\Phi=r\,\tilde U_{\Psi,\mathrm b}\,\vec u\quad(\langle\tilde A_\Phi\rangle_\natural>0),
 $$
 
 and the lightlike set $\langle\tilde A_\Phi\rangle_\natural=0$ is outside both. On the timelike branch the boost is a velocity and the sign is a charge; on the spacelike branch there is a boost and a direction locked to it, and there is no velocity at all.
@@ -149,7 +149,7 @@ $$
 \sum_\mu\Bigl(\partial_\mu\Gamma_\mu+\Gamma_\mu^{2}-\mathrm{Sc}\bigl(\Gamma_\mu^{2}\bigr)\Bigr)+2\sum_\mu\partial_\mu\ln r\,\Gamma_\mu=0 .
 $$
 
-**The first is the density's equation and its source is the connection's square.** For a fixed boost axis $\Gamma_\mu=\tfrac12\partial_\mu\theta_{\mathrm{rpd}}\,i\hat u_{\mathrm{b}}$ and $\mathrm{Sc}(\Gamma_\mu^{2})=\tfrac14(\partial_\mu\theta_{\mathrm{rpd}})^{2}$, so
+**The first is the density's equation and its source is the connection's square.** For a fixed boost axis $\Gamma_\mu=\tfrac12\partial_\mu\theta_{\mathrm{rpd}}\,i\vec u_{\mathrm{b}}$ and $\mathrm{Sc}(\Gamma_\mu^{2})=\tfrac14(\partial_\mu\theta_{\mathrm{rpd}})^{2}$, so
 
 $$
 \bigl(\Box_\Phi-k_m^{2}\bigr)r+\tfrac14\,r\sum_\mu\bigl(\partial_\mu\theta_{\mathrm{rpd}}\bigr)^{2}=0 .

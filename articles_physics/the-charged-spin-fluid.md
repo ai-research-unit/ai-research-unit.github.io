@@ -28,7 +28,7 @@ with $\tilde A_\Phi=i a'_t e_t+\vec A$ in the material sector. **The coupling is
 
 **Position in the block.** This article is the charged companion of [The Spin Fluid of the Biquaternion Dirac Field](the-spin-fluid-of-the-biquaternion-dirac-field.html). Its siblings are [The Charged Klein–Gordon Fluid](the-charged-klein-gordon-fluid.html) and [The Charged Proca Fluid](the-charged-proca-fluid.html), and §*The Three Charged Fluids* compares the three.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $^{\natural}$ is quaternion conjugation, $^{*}$ Hermitian conjugation, $\mathrm{Sc}$ the coefficient of $e_t$. The word is $r e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $r>0$, $\tilde U_{\Psi,\mathrm b}$ a boost of rapidity $\theta_{\mathrm{rpd}}$ about $\vec u_{\mathrm b}$ and $\tilde u_{\mathrm r}$ a rotor of angle $\theta_{\mathrm{axr}}$ about its axis. The coupling is $ϙ$, the action is $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$, $k_m=mc/\hbar$, and $\tilde A_\Phi=i a'_t e_t+\vec A$ with $a'_t$ and $\vec A$ real. The spin direction is $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $^{\natural}$ is quaternion conjugation, $^{*}$ Hermitian conjugation, $\mathrm{Sc}$ the coefficient of $e_t$. The word is $r e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $r>0$, $\tilde U_{\Psi,\mathrm b}$ a boost of rapidity $\theta_{\mathrm{rpd}}$ about $\vec u_{\mathrm b}$ and $\tilde u_{\mathrm r}$ a rotor of angle $\theta_{\mathrm{axr}}$ about its axis. The coupling is $ϙ$, the action is $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$, $k_m=mc/\hbar$, and $\tilde A_\Phi=i a'_t e_t+\vec A$ with $a'_t$ and $\vec A$ real. The spin direction is $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$.
 
 ## The Two Brackets the Charge Can Reach
 
@@ -198,7 +198,7 @@ $$
 
 and the second is conserved by antisymmetry alone and carries no total charge.
 
-**The magnetisation current has no explicit dependence on the connection.** Its bilinear is built from the rotor, $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$, and from the frame. A central multiplication cannot produce a rotor, so no term in the magnetisation current can carry $ϙ$ explicitly: **the bound current is charge-blind**. Its value changes when the field changes the frame through the equation, and the change is entirely indirect.
+**The magnetisation current has no explicit dependence on the connection.** Its bilinear is built from the rotor, $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$, and from the frame. A central multiplication cannot produce a rotor, so no term in the magnetisation current can carry $ϙ$ explicitly: **the bound current is charge-blind**. Its value changes when the field changes the frame through the equation, and the change is entirely indirect.
 
 **Why that is worth stating as a result and not as a triviality.** One might expect the coupling to screen the magnetisation current, or to add to it a term proportional to the field, in the way that a polarisable medium's bound current responds to the applied field. **The chart says no: there is no such term, and the only way the field reaches the magnetisation is by moving the frame.** The corpus's own decomposition makes the same statement in the element form, where the spin bilinear contains no connection; the chart's version is sharper because it exhibits the rotor as the invariant the connection cannot reach.
 
@@ -218,7 +218,7 @@ so the field acts on the charge current and the spin term is the free one's. **T
 
 **What the background does to the spin is indirect, and the composition is the whole of the physics.** The field curves the boost, and the spin's transport follows the boost's. Where the trajectory bends, the frame in which the rotor's own rate is zero bends with it, and the observed precession is the rotor's own rate composed with the transport of the frame. That composition is what the standard theory calls Thomas precession, and [The Classical Origin of $g=2$ in Biquaternionic Form](the-classical-origin-of-g-2-in-biquaternionic-form.html) carries out the expansion and shows the two contributions combining to the Larmor rate with the ratio two. **So the Larmor precession is second order in the chart's bookkeeping: not a torque on the spin, but a consequence of the frame's transport, which the field does control.**
 
-**The exact statement of what is invariant.** The spin's *kinematics* is exact and gauge invariant: $\hat s$ is a function of the rotor alone, the rotor is gauge invariant, so the spin direction is an observable of the chart with no gauge ambiguity. **That is more than the element form states, and the coupling does not weaken it**, since a central phase cannot touch the rotor. The spin's *dynamics* is the free one plus whatever the frame's transport induces, and the article claims no more.
+**The exact statement of what is invariant.** The spin's *kinematics* is exact and gauge invariant: $\vec s$ is a function of the rotor alone, the rotor is gauge invariant, so the spin direction is an observable of the chart with no gauge ambiguity. **That is more than the element form states, and the coupling does not weaken it**, since a central phase cannot touch the rotor. The spin's *dynamics* is the free one plus whatever the frame's transport induces, and the article claims no more.
 
 ## What the Charge Cannot Close
 
@@ -243,7 +243,7 @@ so the field acts on the charge current and the spin term is the free one's. **T
 7. **The vorticity is closed and not exact.** Closedness is the Maurer–Cartan flatness of $\Gamma$; exactness fails wherever the holonomy is non-trivial; there is still no transport law.
 8. **The loop invariant is a Lorentz transformation times a phase.** Nothing about it is quantised, and the scalar's $h/m$ is the central factor of the transformation.
 9. **The Gordon split survives.** The convection part is the chart's current; the bound magnetisation current has no explicit dependence on the connection.
-10. **The spin direction is gauge invariant and coupling-blind.** $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$; the chart shows no rotor torque, and the Larmor precession is second order, through the frame.
+10. **The spin direction is gauge invariant and coupling-blind.** $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$; the chart shows no rotor torque, and the Larmor precession is second order, through the frame.
 11. **The coupling adds a force and not a torque.** $\partial_\nu T^{\mu\nu}=-ϙF^{\mu\nu}J_\nu+$ the free article's spin term, and the second is unchanged.
 12. **The degenerate set is $r=0$ and the closure is still underdetermined.** The charge does not supply the missing spin-transport law, and the reason is that the missing law lives in the bracket the connection cannot reach.
 
@@ -320,7 +320,7 @@ The spin direction is gauge invariant and coupling-blind, and the Larmor precess
 | $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ | The angle; the only gauge-dependent parameter |
 | $\theta_{\mathrm{rpd}},\ \vec u_{\mathrm b}$ | Rapidity and axis of the boost |
 | $\theta_{\mathrm{axr}},\ \text{axis}$ | Angle and axis of the rotor |
-| $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | The spin direction; gauge invariant, coupling-blind |
+| $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | The spin direction; gauge invariant, coupling-blind |
 | $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}$ | The four-velocity; $\langle\tilde V_\Phi\rangle_\natural=-c^{2}$ |
 | $\Gamma_\mu=\tilde U_{\Psi,\mathrm b}^{-1}\partial_\mu\tilde U_{\Psi,\mathrm b}$ | The frame's logarithmic derivative |
 | $\tilde K_{\Phi,\mathrm{gco}}=ik_m\tilde U_{\Psi,\mathrm b}^{-2}$ | The covariant wavevector |

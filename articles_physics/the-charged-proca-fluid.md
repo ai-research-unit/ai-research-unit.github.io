@@ -41,7 +41,7 @@ $$
 
 **What is not here.** No new solution and no new particle. The article's subject is the fluid reading of the covariant Proca equation, and its work is to say what the coupling does to a fluid whose current *was* its field.
 
-**Position in the block.** This article is the charged companion of [The Spin-One Fluid of the Biquaternion Proca Field](the-spin-one-fluid-of-the-biquaternion-proca-field.html). Its siblings are [The Charged Klein–Gordon Fluid](the-charged-klein-gordon-fluid.html) and [The Charged Spin Fluid](the-charged-spin-fluid.html), and §*The Three Charged Fluids* compares the three.
+**Position in the block.** This article is the charged companion of [The Proca Fluid](the-proca-fluid.html). Its siblings are [The Charged Klein–Gordon Fluid](the-charged-klein-gordon-fluid.html) and [The Charged Spin Fluid](the-charged-spin-fluid.html), and §*The Three Charged Fluids* compares the three.
 
 **Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $^{\natural}$ is quaternion conjugation, $^{*}$ Hermitian conjugation, $\mathrm{Sc}$ the coefficient of $e_t$ and $\mathrm{Tr}=2\,\mathrm{Sc}$. The material sector is $\mathbb{B}_\Phi=\{i a'_t e_t+\vec A\}$ with $a'_t$ and $\vec A$ real, and the connection is $\tilde A_\Phi\in\mathbb{B}_\Phi$. The coupling is $ϙ$, $k_m=mc/\hbar$, and $\langle\tilde A\rangle_\natural:=\tilde A\tilde A^{\natural}$ is the natural norm, a central complex number. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout.
 
@@ -308,7 +308,7 @@ The stiff equation of state survives as a formula on the sector where the field 
 
 ## Further Reading
 
-- [The Spin-One Fluid of the Biquaternion Proca Field](the-spin-one-fluid-of-the-biquaternion-proca-field.html), the free companion, whose twelve properties these twelve answer.
+- [The Proca Fluid](the-proca-fluid.html), the free companion, whose twelve properties these twelve answer.
 - [The Coupled Proca Equation in Biquaternionic Polar Variables](the-coupled-proca-equation-in-biquaternionic-polar-variables.html), for the word, the covariant logarithmic derivative, the constraint and the mass term's frame dependence.
 - [The Proca Equation in Biquaternionic Polar Variables](the-proca-equation-in-biquaternionic-polar-variables.html), for the free decomposition and the two branches.
 - [The Charged Klein–Gordon Fluid](the-charged-klein-gordon-fluid.html) and [The Charged Spin Fluid](the-charged-spin-fluid.html), the two companions.

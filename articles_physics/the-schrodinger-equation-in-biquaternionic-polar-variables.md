@@ -313,7 +313,7 @@ A second-order equation carries a mass shell: its four-momentum obeys $\langle\t
 
 **3. The relativistic limit.** Whether this equation, with its frozen rapidity and its absent mass shell, is the non-relativistic limit of the biquaternion Dirac equation is not checked here. The companions' mass shells are the natural comparison.
 
-**4. The relation to the WKB series.** The pair of this article is the first term of the series of *The WKB Approximation in Biquaternionic Form*. Whether the word's exact coordinates simplify the higher orders is not examined.
+**4. The relation to the WKB series.** The pair of this article is the first term of the series of *The Non-Quantum Limit of the Free Schrödinger Equation*. Whether the word's exact coordinates simplify the higher orders is not examined.
 
 ## Summary
 
@@ -362,7 +362,7 @@ A central field's word collapses to a scale, a phase and a sign, and that case i
 - [Exponential Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion](../articles_maths/exponential-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html), for the exponential form used here.
 - [The Meaning of N-Regularity and Degeneracy](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for $N$, the units and the cone.
 - [The Dirac Equation in Biquaternionic Polar Variables](the-dirac-equation-in-biquaternionic-polar-variables.html) and [The Klein–Gordon Equation in Biquaternionic Polar Variables](the-klein-gordon-equation-in-biquaternionic-polar-variables.html), for the same word applied to the two relativistic equations.
-- [The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form](the-wkb-approximation-and-the-hamilton-jacobi-equation-in-biquaternionic-form.html), for the pair read as the first term of a series.
+- [The Non-Quantum Limit of the Free Schrödinger Equation](the-non-quantum-limit-of-the-free-schrodinger-equation.html), for the pair read as the first term of a series.
 - [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for why the body of the equation carries elements and not arrays.
 - Erwin Madelung, "Quantentheorie in hydrodynamischer Form," *Zeitschrift für Physik* **40** (1927) 322–326, for the continuity equation and the Hamilton–Jacobi equation of a scalar wave.
 - Takehiko Takabayasi, "On the formulation of quantum mechanics associated with classical pictures," *Progress of Theoretical Physics* **8** (1952) 143–182, for the same pair read as a hydrodynamical formulation.

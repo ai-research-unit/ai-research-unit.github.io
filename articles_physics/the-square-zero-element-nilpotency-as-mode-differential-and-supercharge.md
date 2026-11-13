@@ -34,7 +34,7 @@ The article is organised as follows. The results it borrows are stated with thei
 
 **The label.** The Grassmann algebra as the minimal odd extension, Berezin integration and the fermionic coherent states are those of *Grassmann Coherent States in Biquaternionic Form*; the exact one-mode Wick theorem is that of *The Wick Theorem in Biquaternionic Form*; the Jordan–Wigner square root and its string are those of *The Jordan–Wigner Transformation in Biquaternionic Form*.
 
-**The corner and the interpretations.** The Dirac points, the chiral parts and the topological nodes are those of *Dirac Matter: Graphene, Dirac Cones and Topological Insulators in Biquaternionic Form* and *Fermion Doubling and the Nielsen–Ninomiya Theorem in Biquaternionic Form*. The nilpotency-index-two ceiling and the qutrit outside the algebra are those of *The Qutrit Problem: Three-Level Systems Outside the Biquaternion Algebra*; the hole-theory interpretation is that of *The Dirac Sea, Hole Theory and Antimatter in Biquaternionic Form*; the WKB phase gradient and the squeezing contraction are those of *The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form* and *Squeezing Beyond the Biquaternion Algebra*.
+**The corner and the interpretations.** The Dirac points, the chiral parts and the topological nodes are those of *Dirac Matter: Graphene, Dirac Cones and Topological Insulators in Biquaternionic Form* and *Fermion Doubling and the Nielsen–Ninomiya Theorem in Biquaternionic Form*. The nilpotency-index-two ceiling and the qutrit outside the algebra are those of *The Qutrit Problem: Three-Level Systems Outside the Biquaternion Algebra*; the hole-theory interpretation is that of *The Dirac Sea, Hole Theory and Antimatter in Biquaternionic Form*; the WKB phase gradient and the squeezing contraction are those of *The Non-Quantum Limit of the Free Schrödinger Equation* and *Squeezing Beyond the Biquaternion Algebra*.
 
 Nothing in this article re-derives those results. The coordinate computation of §*The Nilpotent Cone* is the elementary form of the classification, and the rest of the article adds the comparison and the nine interpretations.
 
@@ -784,7 +784,7 @@ The classification is a map, not a derivation. It adds no physics, and it leaves
 - [The Dirac Sea, Hole Theory and Antimatter in Biquaternionic Form](the-dirac-sea-hole-theory-and-antimatter-in-biquaternionic-form.html)
 - [The Jordan–Wigner Transformation in Biquaternionic Form](the-jordan-wigner-transformation-in-biquaternionic-form.html)
 - [Grassmann Coherent States in Biquaternionic Form](grassmann-coherent-states-in-biquaternionic-form.html)
-- [The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form](the-wkb-approximation-and-the-hamilton-jacobi-equation-in-biquaternionic-form.html)
+- [The Non-Quantum Limit of the Free Schrödinger Equation](the-non-quantum-limit-of-the-free-schrodinger-equation.html)
 - [Dirac Matter: Graphene, Dirac Cones and Topological Insulators in Biquaternionic Form](dirac-matter-graphene-dirac-cones-and-topological-insulators-in-biquaternionic-form.html)
 - [Fermion Doubling and the Nielsen–Ninomiya Theorem in Biquaternionic Form](fermion-doubling-and-the-nielsen-ninomiya-theorem-in-biquaternionic-form.html)
 - [The Wick Theorem in Biquaternionic Form](the-wick-theorem-in-biquaternionic-form.html)

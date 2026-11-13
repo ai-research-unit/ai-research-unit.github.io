@@ -242,7 +242,7 @@ The massless limit is a failure of invertibility: $\lvert\det\sigma\rvert$ falls
 - *The Fourier Transform and the Proca Equation in Biquaternionic Polar Variables*, for the same matrix read in the word and for the absent bracket.
 - *The Fourier Transform, the Variational Principle and the Proca Equation in Biquaternionic Form*, for the quadratic form whose stationarity is $\sigma A=0$ and for the longitudinal coefficient.
 - *The Fourier Transform and the Coupled Proca Equation in Biquaternionic Form*, for the symbol with a connection, where a curvature term joins the translation.
-- *The Spin-One Fluid of the Biquaternion Proca Field*, for the Lorenz condition as the field's own continuity equation.
+- *The Proca Fluid*, for the Lorenz condition as the field's own continuity equation.
 - *Derivatives, Fields and Transforms*, for the symbol rule and the transform's conventions.
 - *Operator and Calculus Conventions*, for $\partial/\partial R_t=-i\,\partial/\partial r_t'$ and the sign of the d'Alembertian.
 - A. Proca, "Sur la théorie ondulatoire des électrons positifs et négatifs," *Journal de Physique et le Radium* **7** (1936) 347–353, for the equation and the constraint.

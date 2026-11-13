@@ -42,7 +42,7 @@ and the first term is central imaginary while the second is Hermitian with a rea
 **The free kinetic term is a charge density times two rates, and the coupling makes both of them covariant.**
 
 $$
-\mathcal L_{\mathrm{kin}}=\hbar c\,\rho_{\mathrm{chg}}\bigl(\dot\theta_{\mathrm{pha}}-\beta\,\hat n_{\mathrm{rot}}\cdot\vec\omega_{\mathrm r}\bigr)
+\mathcal L_{\mathrm{kin}}=\hbar c\,\rho_{\mathrm{chg}}\bigl(\dot\theta_{\mathrm{pha}}-\beta\,\vec n_{\mathrm{rot}}\cdot\vec\omega_{\mathrm r}\bigr)
 \;\longrightarrow\;
 \mathcal L_{\mathrm{kin}}^{\mathrm{gco}}=\hbar c\,\rho_{\mathrm{chg}}\bigl(\mathcal R_{\mathrm{pha}}-\beta\,\mathcal R_{\mathrm{rpd}}\bigr),
 $$
@@ -60,7 +60,7 @@ $$
 | momentum | value | changed by the coupling? |
 | --- | --- | --- |
 | $p_{\theta_{\mathrm{pha}}}$ | $\hbar c\,\rho_{\mathrm{chg}}$ | no |
-| $\vec p_{\mathrm{spin}}$ | $-\hbar c\,\rho_{\mathrm{chg}}\beta\,\hat n_{\mathrm{rot}}$ | no |
+| $\vec p_{\mathrm{spin}}$ | $-\hbar c\,\rho_{\mathrm{chg}}\beta\,\vec n_{\mathrm{rot}}$ | no |
 | $p_{\theta_{\mathrm{rpd}}}$ | $0$ | no |
 | $p_{u_{\mathrm b}}$, $p_{r}$ | $0$ | no |
 
@@ -120,7 +120,7 @@ and $\lambda^{-1}\partial_\mu\lambda=iϙ\partial_\mu\Gamma/\hbar$ is central, so
 
 **The kinetic term.** Two rates, both made covariant; the weight $\beta$ unchanged, which is "no torque" in the action.
 
-**The canonical table.** Unchanged line for line: $p_{\theta_{\mathrm{pha}}}=\hbar c\rho_{\mathrm{chg}}$, $\vec p_{\mathrm{spin}}=-\hbar c\rho_{\mathrm{chg}}\beta\hat n_{\mathrm{rot}}$, the rest zero.
+**The canonical table.** Unchanged line for line: $p_{\theta_{\mathrm{pha}}}=\hbar c\rho_{\mathrm{chg}}$, $\vec p_{\mathrm{spin}}=-\hbar c\rho_{\mathrm{chg}}\beta\vec n_{\mathrm{rot}}$, the rest zero.
 
 **The norms.** Every norm survives, because a connection transports and does not measure; the scalar rung's shell is a norm that measures, and it is the exception.
 
@@ -140,7 +140,7 @@ and $\lambda^{-1}\partial_\mu\lambda=iϙ\partial_\mu\Gamma/\hbar$ is central, so
 | $\rho_{\mathrm{num}}=r^{2}$, $\rho_{\mathrm{chg}}=\gamma\rho_{\mathrm{num}}$ | Proper and charge densities |
 | $\beta=\tanh\theta_{\mathrm{rpd}}$ | The spin's canonical weight |
 | $\mathcal R_{\mathrm{pha}}$, $\mathcal R_{\mathrm{rpd}}$ | The two covariant rates |
-| $\vec p_{\mathrm{spin}}=-\hbar c\rho_{\mathrm{chg}}\beta\hat n_{\mathrm{rot}}$ | The spin's momentum; unchanged by the coupling |
+| $\vec p_{\mathrm{spin}}=-\hbar c\rho_{\mathrm{chg}}\beta\vec n_{\mathrm{rot}}$ | The spin's momentum; unchanged by the coupling |
 | $p_{r}=p_{\theta_{\mathrm{rpd}}}=p_{u_{\mathrm b}}=0$ | The four vanishing momenta |
 | $\omega_{\mu\nu}$ | The vorticity; the frame's, not $ϙ F/m$ |
 | $\mathcal L_{\mathrm{kin}}^{\mathrm{gco}}$ | The kinetic Lagrangian density with the connection |

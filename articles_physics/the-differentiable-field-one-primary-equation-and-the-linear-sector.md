@@ -51,7 +51,7 @@ Everything else is a consequence, and the chain is short: a null gradient, hence
 
 ### The Eikonal as Primary, and the Inversion of the WKB Relation
 
-The corpus contains the eikonal twice already, in two different roles. *The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form* derives it as the short-wavelength limit of the linear wave equation: the phase of a rapidly oscillating solution obeys it approximately, and the approximation improves as the wavelength shrinks.
+The corpus contains the eikonal twice already, in two different roles. *The Non-Quantum Limit of the Free Schrödinger Equation* derives it as the short-wavelength limit of the linear wave equation: the phase of a rapidly oscillating solution obeys it approximately, and the approximation improves as the wavelength shrinks.
 
 *Null Electromagnetic Fields and the Shear-Free Congruence* carries the eikonal in its **exact complex** form, and it is the closer comparison. Bateman's representation writes a null Maxwell field as $C=d\alpha\wedge d\beta$ from two complex functions that are **required**, as a hypothesis, to obey $\partial\alpha\cdot\partial\alpha=\partial\beta\cdot\partial\beta=\partial\alpha\cdot\partial\beta=0$ in the complexified metric — which is the companion article's eikonal, written for two functions instead of one. Nothing forces it there: it is an assumption on the data, made so that the field built from them is null and duality-pure.
 
@@ -229,6 +229,6 @@ The last is the fork. Conjugation first gives the two sectors and the corpus's q
 - [The Topology of the Zero-Divisor Cone](../articles_maths/the-topology-of-the-zero-divisor-cone.html), for the cone as a topological object and its Lorentzian slices.
 - [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the postulate the derivation route replaces with a theorem.
 - [Gauge Curvature and the Bianchi Identity in Biquaternionic Form](gauge-curvature-and-the-bianchi-identity-in-biquaternionic-form.html), for the Bianchi identity as a Jacobi identity and the form the field equations take.
-- [The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form](the-wkb-approximation-and-the-hamilton-jacobi-equation-in-biquaternionic-form.html), for the eikonal as the short-wavelength limit, the relation this article inverts.
+- [The Non-Quantum Limit of the Free Schrödinger Equation](the-non-quantum-limit-of-the-free-schrodinger-equation.html), for the eikonal as the short-wavelength limit, the relation this article inverts.
 - [Frames, Rotations and the Lorentz Group](frames-rotations-and-the-lorentz-group.html), for the statement that a boost is a motion and not an automorphism, which is the corpus's side of the fork.
 - [Introduction to the Biquaternion Universe](introduction-to-the-biquaternion-universe.html), for the framework's own test of a structural hypothesis and its list of open questions.

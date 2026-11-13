@@ -186,6 +186,47 @@ $$
 
 when the flavours are massive, and vanishes when any flavour is massless. The resulting $2N_f$-fermion interaction is the 't Hooft vertex, and its structure is fixed by the zero-mode count and not by the algebra: the algebra supplies the saddle, the topology and the density, while the count of legs and the vertex come from the index theorem and the fermionic measure. This is the sharpest illustration of the division of labour in this subcategory, and it is the point at which the semiclassical expansion stops being a statement about the gauge field alone.
 
+## The Phase-Integral Content
+
+**Three results that the limit does not contain.** The non-quantum limit produces the eikonal and the transport equation, and stops there. The phase-integral method goes one step and reads the consequences of *failing* at a turning point: the connection formulas, the Maslov phases, the Bohr–Sommerfeld condition and the tunnelling exponent. They are recorded here because they belong to the semiclassical expansion and not to the limit, and because the twelve limit articles do not carry them.
+
+### The Maslov phases
+
+The amplitude $C/\sqrt{\lvert p\rvert}$ diverges where $p\to0$, and the eikonal's two branches meet there. Near a simple turning point the equation for the envelope is approximated by Airy's equation, and the Airy functions connect the oscillatory solution on the allowed side to the exponential on the forbidden one.
+
+Across a soft turning point the oscillatory solution acquires a phase $-\pi/2$ relative to the naive phase; across a hard wall it acquires $-\pi$. The wall therefore carries Maslov index two where a soft turning point carries one. In the framework these are operations on the central $i$: the connection formulas contain $\sqrt{2\pi i\hbar}$ and $i^{-1/2}$, and the square root is taken inside $\mathbb{B}_{C}$, which is a copy of $\mathbb{C}$. That is why the Maslov phases are unambiguous here — the central $i$ is supplied by the algebra and does not require a chosen complex structure.
+
+### The Bohr–Sommerfeld condition
+
+For a bound state in a smooth well with two soft turning points, the phase must return to itself around the orbit. Single-valuedness of $\exp(i\theta_{\mathrm{act}})$ together with the two Maslov phases gives
+
+$$
+\oint p\,dx=2\pi\hbar\left(n+\tfrac12\right),
+\qquad n=0,1,2,\dots
+$$
+
+and for a well bounded by a hard wall on one side the offset becomes $3/4$:
+
+$$
+\int_{x_1}^{x_2}p\,dx=\pi\hbar\left(n+\tfrac34\right).
+$$
+
+**The condition is exact where the potential is shape-invariant.** For the harmonic oscillator the integral evaluates to $2\pi E/\omega$, so the condition returns $E_n=\hbar\omega(n+\tfrac12)$; a direct quadrature at those energies reproduced $2\pi\hbar(n+\tfrac12)$ to a relative error below $5\times10^{-9}$ for $n=0,\dots,4$. For the Morse potential the same condition reproduced the exact spectrum to a relative error below $2\times10^{-9}$ for the four lowest levels, at $D=5$, $a=0.7$, in units $k_m=k'_t=1$.
+
+**It is an approximation in a general well, and the size is measurable.** For $V=\tfrac12x^{2}+0.1x^{4}$ the condition gives $E_0=0.5333$ against the exact $0.5591$, a relative error of $-4.6\%$; then $1.7540$ against $1.7695$ ($-0.88\%$), $3.1269$ against $3.1386$ ($-0.37\%$) and $4.6193$ against $4.6289$ ($-0.21\%$) for $n=1,2,3$. The exact values came from a finite-difference diagonalisation by the Sturm sequence. The error falls with $n$, as the correspondence principle requires, and the sequence of four numbers is the useful residue: it separates the order of the approximation from the quality of it.
+
+### The tunnelling exponent
+
+In the forbidden region the momentum is imaginary, $p=i\kappa$ with $\kappa=\sqrt{2m(V-E)}$, and the phase becomes a real exponential. Matching across the barrier gives
+
+$$
+T\approx\exp\left(-\frac{2}{\hbar}\int_{x_1}^{x_2}\sqrt{2m\left(V(x)-E\right)}\;dx\right),
+$$
+
+whose exponent is the imaginary part of the action across the barrier. The piecewise-constant barrier is the case in which $\kappa$ is constant and the exponent is $2\kappa a$.
+
+For a parabolic barrier $V=V_0-\tfrac12m\omega^{2}x^{2}$ the exponent is $\pi(V_0-E)/(\hbar\omega)$; a direct quadrature at $V_0=1$, $\omega=1.3$, $E=0.4$, in units $k_m=k'_t=1$, gave $1.4499658$ against the closed value $1.4499658$, agreeing to $10^{-9}$. Kemble's exact transmission is $T=\left(1+\exp(-2\pi(E-V_0)/(\hbar\omega))\right)^{-1}$, whose exponent is the same; the phase-integral result is the leading exponential, and the ratio $T_{\mathrm{wkb}}/T_{\mathrm{exact}}=1+\exp(-2\pi(V_0-E)/(\hbar\omega))$ tends to one for a deep barrier.
+
 ## The Biquaternion Reading and the Gaps
 
 The framework's role in the semiclassical expansion is the supply of the saddle and its moduli, and it is worth stating precisely what that amounts to.
@@ -203,7 +244,7 @@ $$
 Z_{\mathrm{cl},1}\propto VT\int_0^\infty\frac{d\rho}{\rho^5}\,\exp(-8\pi^2/g^2),
 $$
 
-with the one-loop determinant supplying the powers of the running coupling and realising dimensional transmutation. The sum over topological sectors produces the theta vacuum $|\theta_{\mathrm{vac}}\rangle=\sum_Ϙ \exp(+iϘ\theta_{\mathrm{vac}})|Ϙ\rangle$ and the partition function $Z(\theta_{\mathrm{vac}})=\sum_Ϙ \exp(iϘ\theta_{\mathrm{vac}})Z_Ϙ$, which is periodic, $Z(\theta_{\mathrm{vac}}+2\pi)=Z(\theta_{\mathrm{vac}})$, and has vacuum energy $\mathcal E(\theta_{\mathrm{vac}})=\mathcal E_0-2K\cos\theta_{\mathrm{vac}}\,\exp(-8\pi^2/g^2)+\cdots$ and topological susceptibility $\xi_t=2K \exp(-8\pi^2/g^2)+\cdots$. Both were verified on an explicit finite instanton sum.
+with the one-loop determinant supplying the powers of the running coupling and realising dimensional transmutation. The sum over topological sectors produces the theta vacuum $\lvert\theta_{\mathrm{vac}}\rangle=\sum_Ϙ \exp(+iϘ\theta_{\mathrm{vac}})\lvert Ϙ\rangle$ and the partition function $Z(\theta_{\mathrm{vac}})=\sum_Ϙ \exp(iϘ\theta_{\mathrm{vac}})Z_Ϙ$, which is periodic, $Z(\theta_{\mathrm{vac}}+2\pi)=Z(\theta_{\mathrm{vac}})$, and has vacuum energy $\mathcal E(\theta_{\mathrm{vac}})=\mathcal E_0-2K\cos\theta_{\mathrm{vac}}\,\exp(-8\pi^2/g^2)+\cdots$ and topological susceptibility $\xi_t=2K \exp(-8\pi^2/g^2)+\cdots$. Both were verified on an explicit finite instanton sum.
 
 The dilute instanton gas exponentiates the one-instanton weight into a pressure of charged objects and reproduces the vacuum energy and cluster decomposition, but its size integral is infrared divergent in the pure gauge theory and the approximation holds only for instantons small compared with the strong-coupling scale. The framework supplies the saddle, its action, its moduli and the abelian form of its topological density; the measure, the determinants, the running coupling and the physical identification are imported from the standard quantum field theory of the companion path-integral and renormalisation-group articles.
 
@@ -216,10 +257,10 @@ The dilute instanton gas exponentiates the one-instanton weight into a pressure 
 | $\mathcal A_\mu$, $F_{\mu\nu}$ | Gauge connection and curvature |
 | $Ϙ=\frac{1}{8\pi^2}\int\mathrm{Tr}(F\wedge F)$ | Topological charge |
 | $S=\frac{1}{2g^2}\int\mathrm{Tr}(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu})$ | Euclidean action |
-| $S_{\mathrm{cl}}=\frac{8\pi^2}{g^2}|Ϙ|$ | Saturated (Bogomolny) classical action |
+| $S_{\mathrm{cl}}=\frac{8\pi^2}{g^2}\lvert Ϙ\rvert$ | Saturated (Bogomolny) classical action |
 | $Z=\int\mathcal D\mathcal A\,\exp(-S)$ | Euclidean partition function |
 | $Z_Ϙ$ | Contribution of the topological sector of charge $Ϙ$ |
-| $|\theta_{\mathrm{vac}}\rangle=\sum_Ϙ \exp(+iϘ\theta_{\mathrm{vac}})|Ϙ\rangle$ | Theta vacuum |
+| $\lvert\theta_{\mathrm{vac}}\rangle=\sum_Ϙ \exp(+iϘ\theta_{\mathrm{vac}})\lvert Ϙ\rangle$ | Theta vacuum |
 | $Z(\theta_{\mathrm{vac}})=\sum_Ϙ \exp(iϘ\theta_{\mathrm{vac}})Z_Ϙ$ | Theta-dependent partition function |
 | $\mathcal E(\theta_{\mathrm{vac}})$, $\xi_t$ | Vacuum energy density and topological susceptibility |
 | $x_{0\mu}$, $\rho$ | Instanton collective coordinates (translation, scale) |

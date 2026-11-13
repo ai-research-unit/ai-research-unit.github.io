@@ -31,7 +31,7 @@
 | density | $\rho=r^{2}$ | $r=0$ on the cone |
 | phase | $\theta_{\mathrm{pha}}=\tfrac12\arg N$ | $\arg0$ is undefined |
 | velocity | $\tilde V_{\Phi}=ic\tilde U_{\Psi,\mathrm b}^{-2}$ | the boost is not extracted |
-| spin | $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | the rotor is not extracted |
+| spin | $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | the rotor is not extracted |
 
 **The failure is a single failure and not four.** The three frames are read from one unit, and the unit is what the modulus normalises. So the chart either exists whole or not at all, and there is no partial word that keeps the density and drops the velocity.
 

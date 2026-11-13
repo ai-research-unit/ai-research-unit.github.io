@@ -258,7 +258,7 @@ $$\frac{1}{\sqrt{2\,\pi\,i\,\hbar}}\sqrt{\big|\det\nolimits\delta^2S\big|}
 A_{\mathrm{wkb}}=\sqrt{\big|\det\nolimits\delta^2S\big|},
 $$
 
-so the semiclassical prefactor is the **WKB amplitude** divided by the central $\sqrt{2\,\pi\,i\,\hbar}$. This is the amplitude that the companion article *The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form* writes as the modulus of the wave function; the van Vleck determinant is its multidimensional transport, and the statement that it is the WKB amplitude is the content of that article's continuity equation.
+so the semiclassical prefactor is the **WKB amplitude** divided by the central $\sqrt{2\,\pi\,i\,\hbar}$. This is the amplitude that the companion article *The Non-Quantum Limit of the Free Schrödinger Equation* writes as the modulus of the wave function; the van Vleck determinant is its multidimensional transport, and the statement that it is the WKB amplitude is the content of that article's continuity equation.
 
 Both factors are central — the phase is central, and the prefactor is a real number over the central $\sqrt{2\,\pi\,i\,\hbar}$ — so the semiclassical kernel is central:
 
@@ -405,4 +405,4 @@ The canonical commutator is not visible in the commuting sum over paths, but its
 - H. Kleinert, *Path Integrals in Quantum Mechanics, Statistics, Polymer Physics, and Financial Markets* (World Scientific, 2009), for the Euclidean and real-time integrals side by side.
 - S. L. Adler, *Quaternionic Quantum Mechanics and Quantum Fields* (Oxford, 1995), for the quaternionic formulation in which a complex structure must be chosen.
 - G. C. Wick, "Properties of Bethe-Salpeter Wave Functions," *Physical Review* **96** (1954) 1124–1134, for the Wick rotation and its analytic continuation.
-- [The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form](the-wkb-approximation-and-the-hamilton-jacobi-equation-in-biquaternionic-form.html), for the WKB amplitude, its transport by the continuity equation, and the quantum potential.
+- [The Non-Quantum Limit of the Free Schrödinger Equation](the-non-quantum-limit-of-the-free-schrodinger-equation.html), for the WKB amplitude, its transport by the continuity equation, and the quantum potential.

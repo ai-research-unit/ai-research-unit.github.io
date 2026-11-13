@@ -56,7 +56,7 @@ $$
 
 **The velocity is a boost, not an independent field.** $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}=\gamma(ic\,e_t+\vec v)$ with $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$. The unit norm is not imposed; it is what a boost supplies. **The mass shell is the statement that the factor is a boost**, so the constraint and the kinematics are one display.
 
-**The spin is a rotor, not an independent field.** $\tilde S_{\Psi,\mathrm{sp}}=\rho\tfrac{\hbar}{2}i\hat s$ with $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$. **The Frenkel condition is then automatic**, because a rotation cannot produce a temporal component, and [Spin Conservation and the Frenkel Condition](spin-conservation-and-the-frenkel-condition.html) states the equivalence as $\mathrm{Sc}(\tilde S_{\Psi,\mathrm{sp}})=0\Leftrightarrow\mathcal{F}$.
+**The spin is a rotor, not an independent field.** $\tilde S_{\Psi,\mathrm{sp}}=\rho\tfrac{\hbar}{2}i\vec s$ with $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$. **The Frenkel condition is then automatic**, because a rotation cannot produce a temporal component, and [Spin Conservation and the Frenkel Condition](spin-conservation-and-the-frenkel-condition.html) states the equivalence as $\mathrm{Sc}(\tilde S_{\Psi,\mathrm{sp}})=0\Leftrightarrow\mathcal{F}$.
 
 **The spin's conservation is the rotor's equation.** $\partial_\eta\tilde u_{\mathrm r}=\tfrac12\vec\Omega_\eta\tilde u_{\mathrm r}$ with $\vec\Omega_\eta$ real, and the spin current's divergence is the antisymmetric part of $\vec\Omega_\eta$ contracted with the spin. **No separate spin equation is added to the framework.**
 
@@ -210,8 +210,8 @@ The category is twenty-two articles in three layers and a ledger: the state (1 t
 | $\tilde\Sigma_\Psi=w_{\mathrm{fl}}e_t+(i/c)\vec S_{\mathrm P}$ | Energy–momentum element |
 | $w_{\mathrm{fl}}$, $p_{\mathrm{th}}$, $p_{\mathrm{qnt}}$, $p_{\mathrm{eff}}$ | Energy density, thermal and quantum pressures, their sum |
 | $Q_{\mathrm{qnt}}$ | Quantum potential, minus sign, always with the mass shell |
-| $\tilde S_{\Psi,\mathrm{sp}}=\rho\tfrac{\hbar}{2}i\hat s$ | Spin element |
-| $\hat s$ | Spin direction |
+| $\tilde S_{\Psi,\mathrm{sp}}=\rho\tfrac{\hbar}{2}i\vec s$ | Spin element |
+| $\vec s$ | Spin direction |
 | $\mu_{\mathrm{spn}}$ | Spin potential |
 | $\tilde J_{\Phi,\mathrm{ent}}=s_{\mathrm{ent}}\gamma(e_t+\vec\beta_{\mathrm{vel}})$ | Entropy current, Hermitian |
 | $s_{\mathrm{ent}}$ | Entropy density |

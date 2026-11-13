@@ -73,7 +73,7 @@ Checked numerically: the two parameter sets give elements differing by $3.55\tim
 
 ### The Spin
 
-**The spin has two candidate carriers and the word supplies both.** The rotor supplies the spin direction $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$, a unit spatial vector. The axial bilinear of the field supplies the same direction with a different normalisation, and the tensor bilinear $\bar{\tilde\Xi}\Sigma_{\mu\nu}\tilde\Xi$ supplies an antisymmetric pair.
+**The spin has two candidate carriers and the word supplies both.** The rotor supplies the spin direction $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$, a unit spatial vector. The axial bilinear of the field supplies the same direction with a different normalisation, and the tensor bilinear $\bar{\tilde\Xi}\Sigma_{\mu\nu}\tilde\Xi$ supplies an antisymmetric pair.
 
 **A direction and an antisymmetric pair are not the same data until the flow is chosen.** An antisymmetric pair has six components; contracted with the flow it has three, and those three are the direction. So the two carriers agree once the flow is fixed, and the choice between them is a choice of which object one writes the transport equation for.
 
@@ -160,7 +160,7 @@ On top of the word a fluid needs three choices: which density is conserved, how 
 | $\Rho=r\,e^{i\theta_{\mathrm{pha}}}$ | Modulus of the norm |
 | $\varepsilon=\Xi_t/\Rho$ | Sign, a function of four parameters |
 | $\kappa=\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}$ | Cosine between the two axes |
-| $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | Spin direction |
+| $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | Spin direction |
 | $\Sigma_{\mu\nu}$ | Spin generator |
 | $k_m=mc/\hbar$ | Mass wave number |
 
