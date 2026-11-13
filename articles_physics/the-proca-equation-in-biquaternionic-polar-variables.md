@@ -266,7 +266,9 @@ $$
 
 The display is the divergence of the four-vector written in the word's variables, and nothing more: the first two terms are $\partial_{r'_t}(\varepsilon rc)$ and the last three are $-\nabla\cdot(\varepsilon rs\hat u_{\mathrm b})$. It is one equation on four parameters, and on shell it removes one of them, leaving the three polarizations of the source article's count.
 
-**What it is not.** It is not a continuity equation and it is not a guidance equation. In the scalar Madelung case the phase equation is the continuity equation for $\rho=r^2$ and the modulus equation is the Hamilton–Jacobi equation with the quantum potential, and the pair closes because the field is one complex function. Here the field is a real four-vector: its modulus and its direction are not a complex function, the condition is a single divergence, and there is no second conserved density to pair it with. The polar form makes that explicit rather than assuming it.
+**What it is.** The divergence of the four-potential is a continuity equation outright, because on the timelike branch the four-potential is the current: with $r=\sqrt{-\langle\tilde A_\Phi\rangle_\natural}$ and $u_\mu=A_\mu/r$ one has $A_\mu=r u_\mu$ and $S=\partial_\mu(ru^\mu)$, so the Lorenz condition is the conservation of the field's own current in the flow's own density. That reading is [The Spin-One Fluid of the Biquaternion Proca Field](the-spin-one-fluid-of-the-biquaternion-proca-field.html)'s, and it is exact.
+
+**What it is not.** It is not the first member of a *pair*. In the scalar Madelung case the phase equation is the continuity equation for $\rho=r^2$ and the modulus equation is the Hamilton–Jacobi equation with the quantum potential, and the pair closes because the field is one complex function. Here the field is a real four-vector: its modulus and its direction are not a complex function, the divergence stands alone, and there is no second conserved density to pair it with — the modulus equation carries the rapidity's gradient as a source and not a potential's gradient as a guidance term. The polar form makes that explicit rather than assuming it.
 
 **Why the condition is implied and not imposed.** The element form proves that the divergence of the Proca equation forces $S=0$, and the proof does not use the polar variables. The polar display is therefore a reading of an equation that is already there, and the count is consistent: four parameters, four field equations, one of which is the Lorenz condition and three of which are dynamical.
 
@@ -295,7 +297,7 @@ so the boost is fixed by the amplitude and the whole spacetime dependence sits i
 - A word for the material sector with the exact count: four parameters for four components on each branch, so no condition, no multiplier and no constraint analysis.
 - The two brackets that survive, and the proof that the central bracket is absent identically. The absence is the polar form of the reality of the field.
 - The separation of the Proca equation into a scale equation with a source quadratic in the frame's connection and a transport equation for the frame, with the fixed-axis reduction to $\partial_\mu(r^2\partial_\mu\theta_{\mathrm{rpd}})=0$.
-- The polar reading of the Lorenz condition as one divergence, and the reason there is no Madelung pair.
+- The polar reading of the Lorenz condition as one divergence, which on the timelike branch is the continuity equation of the current $A_\mu=ru_\mu$, and the reason there is no Madelung pair to go with it.
 - The statement that the branch is a spacetime region for a solution, with the lightlike set of field values as the boundary of the chart.
 
 **Does not add.**
@@ -311,7 +313,9 @@ so the boost is fixed by the amplitude and the whole spacetime dependence sits i
 
 1. **The spacelike transport equation.** The explicit form of the traceless equation on the locked branch is not displayed here. It matters because the branch is the one where the field is a spacelike four-vector and the boost axis and the direction coincide; whether the transport preserves the locking, or whether the locking is compatible only with a subclass of solutions, is not settled.
 2. **The crossing set.** The chart fails where the local four-vector is lightlike. What is the correct continuation across it, and does the continuation preserve the Lorentz condition? The analogous question for the scalar case is answered by the phase's winding; here there is no phase to wind.
-3. **The operator setting.** This article treats the equation with a constant mass and uses the componentwise Klein–Gordon reduction, which is the operator statement. Whether the polar chart survives quantization, and how it composes with the polarization projector of the canonical quantization article, is not attempted.
+3. **The spacelike branch's fluid reading.** The timelike branch's flow, its Euler equation and its equation of state are [The Spin-One Fluid of the Biquaternion Proca Field](the-spin-one-fluid-of-the-biquaternion-proca-field.html). A spacelike four-potential has no timelike direction to normalise into a velocity, so no fluid reading of the second branch is offered there; whether one exists at all, for instance as a flow of a surface rather than of a medium, is open.
+
+4. **The operator setting.** This article treats the equation with a constant mass and uses the componentwise Klein–Gordon reduction, which is the operator statement. Whether the polar chart survives quantization, and how it composes with the polarization projector of the canonical quantization article, is not attempted.
 
 ## Summary
 
@@ -325,7 +329,7 @@ $$
 \sum_\mu\Bigl(\partial_\mu\Gamma_\mu+\Gamma_\mu^2-\mathrm{Sc}(\Gamma_\mu^2)\Bigr)+2\sum_\mu\partial_\mu\ln r\,\Gamma_\mu=0
 $$
 
-with the second in the traceless part; for a fixed axis they reduce to a massive scale equation with a rapidity-gradient source and to $\partial_\mu(r^2\partial_\mu\theta_{\mathrm{rpd}})=0$. The Lorenz condition is one divergence, and there is no Madelung pair because there is no phase. For a solution the branch is a spacetime region, bounded by the set where the local four-vector is lightlike.
+with the second in the traceless part; for a fixed axis they reduce to a massive scale equation with a rapidity-gradient source and to $\partial_\mu(r^2\partial_\mu\theta_{\mathrm{rpd}})=0$. The Lorenz condition is one divergence — the continuity equation of the current $A_\mu=ru_\mu$ — and there is no Madelung pair because there is no phase. For a solution the branch is a spacetime region, bounded by the set where the local four-vector is lightlike.
 
 ## Summary of Notation
 

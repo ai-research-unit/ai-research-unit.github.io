@@ -257,10 +257,10 @@ A massive vector has three polarisations: two transverse and one longitudinal.
 **The would-be Goldstones are gauge directions.** In a generic gauge the doublet is
 
 $$
-\varphi=\exp\left(\frac{i}{v}\sum_a\xi_a\tau_a\right)\frac{1}{\sqrt2}\begin{pmatrix}0\ v+h\end{pmatrix},
+\varphi=\exp\left(i\sum_a\theta_{\mathrm{gld},a}\tau_a\right)\frac{1}{\sqrt2}\begin{pmatrix}0\ v+h\end{pmatrix},
 $$
 
-and the three fields $\xi_a$ are the would-be Goldstones. A gauge transformation with parameter $\Gamma_a=-\frac{2}{gv}\xi_a$ removes them, at the price of shifting the gauge fields by $\partial\xi/\partial R_\mu$. The combination that is gauge invariant is $W^a_\mu+\frac{2}{gv}\partial\xi_a/\partial R_\mu$, and it is that combination which carries the mass. The Goldstone is not destroyed: it becomes the longitudinal part of the field that absorbed it.
+and the three fields $\xi_a$ are the would-be Goldstones. The angle is $\theta_{\mathrm{gld},a}=\xi_a/v$, a real Goldstone field over the real vacuum expectation value. A gauge transformation with parameter $\Gamma_a=-\frac{2}{gv}\xi_a$ removes them, at the price of shifting the gauge fields by $\partial\xi/\partial R_\mu$. The combination that is gauge invariant is $W^a_\mu+\frac{2}{gv}\partial\xi_a/\partial R_\mu$, and it is that combination which carries the mass. The Goldstone is not destroyed: it becomes the longitudinal part of the field that absorbed it.
 
 **Why this is a statement about a field and not about a particle.** The Goldstone mode never appears in the physical spectrum, and at the same time it is present in every gauge but the unitary one. The two statements are consistent because the mode is a gauge artefact: its presence or absence is a choice of coordinates on field space, and no observable depends on the choice. What is observable is the three polarisations of the massive vector, and those are counted in the second table.
 

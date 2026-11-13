@@ -12,7 +12,7 @@ $$
 
 After complexification, the two halves are the two eigenspaces of the Hodge dual, and each is, on restriction to the rotation group, a spin-one object. This is what the phrase "spin one from the material sector" means precisely: spin one is not an irreducible module of the algebra, it is a three-dimensional complex representation carried by the vector part of the algebra, equivalently by the antisymmetric tensors built from the four-vectors of $\mathbb{B}_{\Phi}$.
 
-The article is organised as follows. The first section recalls why integer spin requires a representation that the spinor module does not provide: the four-vector representation of the Lorentz group is $(\tfrac12,\tfrac12)$, which on restriction to rotations contains spin one and spin zero, while the antisymmetric tensor representation is $(1,0)\oplus(0,1)$, which is pure spin one. The second identifies the carrier inside the algebra: the six-dimensional real vector part $\mathbb{B}_{V}$, which is at once the real field-strength space and the Lorentz Lie algebra. The third defines the Hodge dual on it and proves the identity above, which is linear in the field and therefore holds for a superposition of fields and not only for a single Fourier mode. The fourth constructs the projectors and the split, the fifth reads off the spin content of each half, and the sixth connects the split to duality rotations and to the two helicities of the massless field. A closing section states where the split sits in the algebra's module category and where it does not, which is the boundary that the final article of this subcategory draws in general.
+The article is organised as follows. The first section recalls why integer spin requires a representation that the spinor module does not provide: the four-vector representation of the Lorentz group is $(\tfrac12,\tfrac12)$, which on restriction to rotations contains spin one and spin zero, while the antisymmetric tensor representation is $(1,0)\oplus(0,1)$, which is pure spin one. The second identifies the carrier inside the algebra: the six-dimensional real vector part $\mathbb{B}_{V}$, which is at once the real field-strength space and the Lorentz Lie algebra. The third defines the Hodge dual on it and proves the identity above, which is linear in the field and therefore holds for a superposition of fields and not only for a single Fourier mode. The fourth constructs the projectors and the split, the fifth reads off the spin content of each half and writes the triplet in the algebra's letters, and the sixth connects the split to duality rotations and to the two helicities of the massless field. A closing section states where the split sits in the algebra's module category and where it does not, which is the boundary that the final article of this subcategory draws in general.
 
 The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_\eta^2 = -e_t$ and $\vec e_x \vec e_y = \vec e_z$, and central scalar imaginary $i$. The gradient is $\tilde{\nabla} = e_t\partial/\partial R_t + \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$, with conjugate $\tilde{\nabla}^{\natural} = e_t\partial/\partial R_t - \vec e_x\partial/\partial R_x - \vec e_y\partial/\partial R_y - \vec e_z\partial/\partial R_z$, so that $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Box_\Phi = \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$. The potential and field strength are
 
@@ -151,7 +151,7 @@ the scalar imaginary being central, so that left and right multiplication agree.
 
 ### Projectors
 
-Since $\star^2 = -1$ on the complexified vector part, the operator $\star$ has eigenvalues $\pm i$, and the projectors onto its eigenspaces are
+Because $\star^2 = -1$, the dual is a complex structure on the real vector part. On its complexification, described in the paragraph after the next, it has the eigenvalues $\pm i$, and the projectors onto the two eigenspaces are
 
 $$
 \tilde\Pi_{sd,asd} = \tfrac12\left(1 \pm i\,\star\right), \qquad
@@ -166,7 +166,7 @@ $$
 
 and they decompose the complexified vector part into two three-dimensional complex spaces. Following the companion article's convention, the $\tilde\Pi_{sd}$ space, on which $\star = -i$, is the **self-dual** half, and the $\tilde\Pi_{asd}$ space, on which $\star = +i$, is the **anti-self-dual** half. Each is a copy of the representation $(1,0)$, respectively $(0,1)$, of the Lorentz group.
 
-The subtlety is that the real vector part is already complex, with the scalar imaginary supplying its complex structure. The complexification that the projectors require is a second, external complexification: one allows coefficients in a new unit, the $i$ of the projectors, which is distinct from the algebra's $i$ in $\star\tilde{F}=-i\tilde{F}$, so that the complexified vector part is $\mathbb{C}\otimes_\mathbb{R}\mathbb{B}_{V}$, of complex dimension six. On it, $\star$ has the two three-dimensional eigenspaces above. The real field strength is a real form of this six-dimensional space: it is an element of the vector part, and the biquaternion that the framework assigns to it carries the self-dual coordinate. Concretely, with the two combinations
+The subtlety is that the real vector part is already complex, with the scalar imaginary supplying its complex structure. On $\mathbb{B}_{V}$ itself the dual is therefore the scalar $-i$, every element carries that one eigenvalue, and the split is invisible. The complexification that the projectors require is a second, external complexification: one allows coefficients in a new unit, the $i$ of the projectors, which is distinct from the algebra's $i$ in $\star\tilde{F}=-i\tilde{F}$, so that the complexified vector part is $\mathbb{C}\otimes_\mathbb{R}\mathbb{B}_{V}$, of complex dimension six. On it the two eigenvalues are $\pm i$, each with eigenspace of complex dimension three, and these are the two halves above. The real field strength is a real form of this six-dimensional space: it is an element of the vector part, and the biquaternion that the framework assigns to it carries the self-dual coordinate. Concretely, with the two combinations
 
 $$
 \vec N = \vec E+ic\,\vec B, \qquad \vec N^* = \vec E-ic\,\vec B,
@@ -230,6 +230,39 @@ $$
 
 so that the antisymmetric tensor is **pure** integer spin. This is the algebraic content of the statement that the vector potential carries a scalar admixture while the field strength does not, and it is the reason the self-dual split is the natural home of spin one in the framework: it separates the two pure spin-one multiplets from one another, and it leaves no scalar behind.
 
+### The triplet in the algebra's letters
+
+The count is realised concretely, and the realisation is the one constructed in the maths article [Angular Momentum and Spin in the Biquaternion Algebra](../articles_maths/angular-momentum-and-spin-in-the-biquaternion-algebra.html), §*The Adjoint Module: Spins Zero and One*.
+
+The rotation algebra inside $\mathbb{B}$ is the real span of the three pure quaternions, $\mathfrak{g}=\mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$, with bracket $[\vec e_\mu,\vec e_\nu]=2\epsilon_{\mu\nu\lambda}\vec e_\lambda$. Its Hermitian normalisation is $\tilde S_k=\tfrac12 i\vec e_k$, with $[\tilde S_i,\tilde S_j]=i\epsilon_{ijk}\tilde S_k$ and $\tilde S_k^{*}=\tilde S_k$. The factor $i$ is the only difference between the two normalisations.
+
+The carrier is the vector part itself, of complex dimension three, with the adjoint action $\tilde{Q}\mapsto[\tilde S_k,\tilde{Q}]$. A weight basis is
+
+$$
+v_+=\vec e_x+i\vec e_y,\qquad v_0=\vec e_z,\qquad v_-=\vec e_x-i\vec e_y,
+$$
+
+with
+
+$$
+[\tilde S_3,v_\pm]=\pm v_\pm,\qquad [\tilde S_3,v_0]=0,\qquad [\tilde S_+,v_+]=0,\qquad [\tilde S_-,v_+]=-2v_0,\qquad [\tilde S_-,v_0]=v_-.
+$$
+
+The weights are $+1,0,-1$, one state each, so the maximal weight is $1$, and the Casimir is
+
+$$
+\sum_{k=1}^{3}\mathrm{ad}_{\tilde S_k}^{\,2} = 2\ \ \text{on } \mathbb{B}_{V}, \qquad
+\sum_{k=1}^{3}\mathrm{ad}_{\tilde S_k}^{\,2} = 0\ \ \text{on } \mathbb{B}_{C},
+$$
+
+which is $s(s+1)$ at $s=1$ and at $s=0$; here $\mathbb{B}_{C}=\{Q_te_t\}$ is the centre. In the notation of the maths article, where $\mathcal{V}_n$ is the irreducible module of dimension $n+1$, the adjoint module is $\mathbb{B}\cong\mathcal{V}_0\oplus\mathcal{V}_2$.
+
+Three properties of the construction are used below. The highest-weight vector is nilpotent, $v_+^2=(-e_t+i\vec e_z)+(-i\vec e_z+e_t)=0$, so the state of maximal weight multiplies to zero; the vanishing is a statement about the product and not about a length, and $v_+$ has a positive trace-form norm. The generators act by the commutator and not by left multiplication, so the triplet is a carrier and not a module. And the weights are integers where the spinor's are half-integers, so that a rotation by $2\pi$ returns the triplet to itself and the spinor to minus itself.
+
+The generator of a physical rotation of the field strength is the real $D_k=\tfrac12\mathrm{ad}_{\vec e_k}$, not the Hermitian $\tilde S_k$. On $v_+$ it has the eigenvalue $-i$, and multiplication by $i$ recovers the integer weight $+1$. The same factor $i$ therefore makes the generators self-adjoint for the trace form and turns their anti-Hermitian spectrum into the integer weights.
+
+Each half of the two-form is a copy of this triplet. With the axis taken along the propagation direction, the three weights are the three helicity states, and the later section reads them off on a plane wave.
+
 ### The same two halves as symmetric spinor products
 
 The representation theory of the spinor module supplies a second description of the same split, which will be used again in the final article. The symmetric square of the defining module $S$ is
@@ -267,13 +300,11 @@ so that the self-dual combination $\vec E+ic\vec B$ contains only the helicity $
 
 The split has been constructed on the vector part of the algebra, and the closing observation is that this is the correct location and not an accident. Three statements hold.
 
-First, the carrier of the split is **not a module** over $\mathbb{B}$. The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ is simple, its only simple module is the two-dimensional spinor module $S$, and every finite-dimensional module over it is a direct sum of copies of $S$. The vector part is not such a sum: it is not closed under left multiplication by a general element of $\mathbb{B}$, only under multiplication by central scalars and by the adjoint action. The self-dual half is the symmetric square of the defining module, of complex dimension three, and no module over $M_2(\mathbb{C})$ has odd complex dimension. The split therefore lives in the **tensor** category generated by the defining module and its conjugate, not in the module category of the algebra.
+First, the carrier of the split is **not a module** over $\mathbb{B}$. The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ is simple, its only simple module is the two-dimensional spinor module $S$, and every finite-dimensional module over it is a direct sum of copies of $S$. The vector part is not such a sum: it is invariant under multiplication by central scalars and under the adjoint action, but not under left multiplication by a general element of $\mathbb{B}$. The self-dual half is the symmetric square of the defining module, of complex dimension three, and no module over $M_2(\mathbb{C})$ has odd complex dimension, since each is $S^{\oplus k}$ of dimension $2k$. The split therefore lives in the **tensor** category generated by the defining module and its conjugate, not in the module category of the algebra.
 
 Second, the four-vector representation from which the two-form was built is itself carried by the algebra by **conjugation**, not by multiplication, and the same remark applies to it: $\mathbb{B}_{\Phi}$ is a real form of the $(\tfrac12,\tfrac12)$ representation, and it is not a module over $\mathbb{B}$ either. The integer-spin representations of the framework are all of this kind.
 
-Third, the adjoint action of the algebra on itself exhibits the spin-one algebra directly. The inner derivations $D_\eta = \tfrac12\mathrm{ad}_{\vec e_\eta}a$, with $\mathrm{ad}_{\vec e_\eta}a(\tilde{Q}) = [\vec e_\eta,\tilde{Q}]$, are the adjoint action of a basis of the rotation algebra, which sits inside the traceless part, and they preserve the two real triples $\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$ and $\mathrm{span}_\mathbb{R}\{i\vec e_x,i\vec e_y,i\vec e_z\}$, acting on each as an irreducible three-dimensional angular momentum: for instance $D_1(\vec e_y)=\vec e_z$ and $D_1(\vec e_z)=-\vec e_y$, and the same relations hold with $\vec e_\eta$ replaced by $i\vec e_\eta$ throughout. The six-dimensional real vector part, read as a Lie algebra rather than as a field-strength space, therefore splits under its own rotation subalgebra into the compact rotation triple and the hyperbolic boost triple, each a real three-dimensional irreducible. These are the rotation and boost generators, not the self-dual and anti-self-dual halves: the chiral halves are the complex eigenspaces of the Hodge dual, they mix the two triples, and they appear only after the external complexification that the projectors require. The structural reason the same space carries both descriptions is that the field-strength space and the Lorentz Lie algebra are both the antisymmetric square of the material sector.
-
-The explicit construction of the triplet, with the commutators, the Casimir and the weight basis, is in *Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form*. The module-theoretic form, with the adjoint module split into its scalar and spin-one summands and with the nilpotent highest-weight vector, is in *Angular Momentum and Spin in the Biquaternion Algebra*.
+Third, the adjoint action of the algebra on itself exhibits the spin-one algebra directly. The inner derivations $D_\eta = \tfrac12\mathrm{ad}_{\vec e_\eta}$, with $\mathrm{ad}_{\vec e_\eta}(\tilde{Q}) = [\vec e_\eta,\tilde{Q}]$, are the adjoint action of a basis of the rotation algebra, which sits inside the traceless part, and they preserve the two real triples $\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$ and $\mathrm{span}_\mathbb{R}\{i\vec e_x,i\vec e_y,i\vec e_z\}$, acting on each as an irreducible three-dimensional angular momentum: for instance $D_1(\vec e_y)=\vec e_z$ and $D_1(\vec e_z)=-\vec e_y$, and the same relations hold with $\vec e_\eta$ replaced by $i\vec e_\eta$ throughout. The two triples are the field's own. The magnetic three-vector lies in $\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$ and the electric three-vector in $\mathrm{span}_\mathbb{R}\{i\vec e_x,i\vec e_y,i\vec e_z\}$, so the invariance is the familiar statement that a rotation turns $\vec E$ and $\vec B$ each into itself and never mixes them. The six-dimensional real vector part, read as a Lie algebra rather than as a field-strength space, therefore splits under its own rotation subalgebra into the compact rotation triple and the hyperbolic boost triple, each a real three-dimensional irreducible; the proposition and the remark in §*Real Forms and the Rotation Subgroup* of the maths article give the statement and its proof, including the observation that the Hermitian generators exchange the two triples while the real ones preserve them. These are the rotation and boost generators, not the self-dual and anti-self-dual halves: the chiral halves are the complex eigenspaces of the Hodge dual, they mix the two triples, and they appear only after the external complexification that the projectors require. The structural reason the same space carries both descriptions is that the field-strength space and the Lorentz Lie algebra are both the antisymmetric square of the material sector.
 
 The general statement that these observations point to — that the algebra's own module category contains only spin one-half, with the scalar carried by the centre and the vector by the adjoint, and that spin above one arrives through tensor products of the defining module — is the subject of the final article of this subcategory, which uses the explicit spin-one case constructed here and the spin-$\tfrac32$ case constructed in *The Rarita–Schwinger Equation: Spin 3/2 in Biquaternionic Form*.
 
@@ -297,7 +328,7 @@ $$
 
 that is, as minus left multiplication by the scalar imaginary; equivalently $\star = -i$ on the Riemann–Silberstein vector $\vec N = \vec E+ic\vec B$. Since $\star^2 = -1$, its projectors $\tilde\Pi_{sd,asd} = \tfrac12(1\pm i\star)$ decompose the complexified vector part into two three-dimensional complex spaces, the self-dual and anti-self-dual halves, which are the representations $(1,0)$ and $(0,1)$ and are preserved by every Lorentz transformation because the boost acts complex-linearly on $\vec N$. A real field strength is a real form of this space: its field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\vec N$ carries the self-dual coordinate $\vec N = \vec E+ic\vec B$, on which $\star = -i$, and the anti-self-dual coordinate is the combination $\vec N^* = \vec E-ic\vec B$ carried by $\bar{\tilde{F}}$, on which $\star = +i$.
 
-The split is pure integer spin. The self-dual half is the symmetric square of the defining module, $\mathrm{sym}^2(S)\cong(1,0)$, of complex dimension three; the anti-self-dual half is $\mathrm{sym}^2(\bar{S})\cong(0,1)$. Under duality rotation the two halves acquire opposite phases, and for a plane wave they are exactly the two helicities: $\vec E+ic\vec B$ carries helicity $+1$ and $\vec E-ic\vec B$ helicity $-1$. It is a split of the complexified field and not of a physical one: a real field strength is an eigenform of neither half, and is recovered from one of them by taking a real part. The carrier of all of this is the vector part of the algebra, which is not a module over $\mathbb{B}$ but a representation carried by conjugation and by tensor products of the defining module; that distinction is the boundary of the algebra's native spin content, and it is drawn in the final article of the subcategory.
+The split is pure integer spin. The self-dual half is the symmetric square of the defining module, $\mathrm{sym}^2(S)\cong(1,0)$, of complex dimension three; the anti-self-dual half is $\mathrm{sym}^2(\bar{S})\cong(0,1)$. In the algebra's letters the triplet is the adjoint module: the vector part $\mathbb{B}_{V}$ with the weights $+1,0,-1$ of $\mathrm{ad}_{\tilde S_3}$, Casimir $2$, and nilpotent highest-weight vector $\vec e_x+i\vec e_y$. The scalar of the adjoint is the centre, with Casimir $0$, and the two together are $\mathcal{V}_0\oplus\mathcal{V}_2$. Under duality rotation the two halves acquire opposite phases, and for a plane wave they are exactly the two helicities: $\vec E+ic\vec B$ carries helicity $+1$ and $\vec E-ic\vec B$ helicity $-1$. It is a split of the complexified field and not of a physical one: a real field strength is an eigenform of neither half, and is recovered from one of them by taking a real part. The carrier of all of this is the vector part of the algebra, which is not a module over $\mathbb{B}$ but a representation carried by conjugation and by tensor products of the defining module; that distinction is the boundary of the algebra's native spin content, and it is drawn in the final article of the subcategory.
 
 ## Summary of Notation
 
@@ -308,6 +339,11 @@ The split is pure integer spin. The self-dual half is the symmetric square of th
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{V}$ | Complex three-dimensional vector part, real dimension six |
+| $\mathbb{B}_{C}=\{Q_te_t\}$ | Centre, the complex scalar subspace |
+| $\tilde S_k=\tfrac12 i\vec e_k$ | Hermitian rotation generators, $[\tilde S_i,\tilde S_j]=i\epsilon_{ijk}\tilde S_k$, $\tilde S_k^{*}=\tilde S_k$ |
+| $D_\eta=\tfrac12\mathrm{ad}_{\vec e_\eta}$ | Rotation generators of the adjoint action, the real form of $\tilde S_k$ |
+| $v_+=\vec e_x+i\vec e_y$, $v_0=\vec e_z$, $v_-=\vec e_x-i\vec e_y$ | Weight basis of the adjoint, weights $+1,0,-1$ |
+| $\mathcal{V}_n$ | Irreducible module of dimension $n+1$, spin $n/2$ |
 | $\tilde\nabla_\Phi, (\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient and its quaternion conjugate; $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ |
 | $\tilde{A}_{\Phi} = i\,a'_t\,e_t + \vec A$ | Four-potential biquaternion |
 | $\tilde{F} = (\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi} - \mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$ | Field-strength biquaternion, pure vector |
@@ -324,7 +360,7 @@ The split is pure integer spin. The self-dual half is the symmetric square of th
 
 ## Further Reading
 
-- [Angular Momentum and Spin in the Biquaternion Algebra](../articles_maths/angular-momentum-and-spin-in-the-biquaternion-algebra.html), for the adjoint module, the spins zero and one, the Casimir and the nilpotent highest-weight vector.
+- [Angular Momentum and Spin in the Biquaternion Algebra](../articles_maths/angular-momentum-and-spin-in-the-biquaternion-algebra.html), for the adjoint module, the spins zero and one, the Casimir, the nilpotent highest-weight vector, and the two real forms of the carrier in the compact and hyperbolic triples.
 - [The Tensor Square of $\mathbb{C}^2$](../articles_maths/the-tensor-square-of-c2.html), for $\mathrm{sym}^2\mathbb{C}^2$ as the spin-one representation of dimension three and $\Lambda^2\mathbb{C}^2$ as the scalar.
 - [Biquaternion Rotations and Lorentz Transformations](../articles_maths/biquaternion-rotations-and-lorentz-transformations.html), for the $(m,n)$ classification, the adjoint representation $(1,0)\oplus(0,1)$, and the split of the trace-free part into compact rotation and hyperbolic boost directions.
 - [The Volume Element, Duality and the Hodge Star](../articles_maths/the-volume-element-duality-and-the-hodge-star.html), for $\star A=-iA$ in the biquaternion algebra and the split of the bivectors in the two signatures.

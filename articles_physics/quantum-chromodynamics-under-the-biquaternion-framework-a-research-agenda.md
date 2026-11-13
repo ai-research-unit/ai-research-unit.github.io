@@ -39,7 +39,7 @@ $$
 \mathcal{A}_{2,\mu} = \tilde U\,\mathcal{A}_\mu\,\tilde U^{-1} + \frac{i}{\kappa}\,(\partial/\partial R_\mu \tilde U)\,\tilde U^{-1},
 $$
 
-which reduces to the abelian law $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde{\nabla}_\Phi\Lambda$ when $\tilde U=e^{i\kappa\Lambda}$ is central. The field strength
+which reduces to the abelian law $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde{\nabla}_\Phi\Lambda$ when $\tilde U=e^{i\theta_{\mathrm{gau}}}$, with the gauge angle $\theta_{\mathrm{gau}}=\kappa\Lambda$ real because the charge and the parameter are real, is central. The field strength
 
 $$
 F_{\mu\nu} = \partial/\partial R_\mu \mathcal{A}_\nu - \partial/\partial R_\nu \mathcal{A}_\mu + i\kappa\,[\mathcal{A}_\mu, \mathcal{A}_\nu],

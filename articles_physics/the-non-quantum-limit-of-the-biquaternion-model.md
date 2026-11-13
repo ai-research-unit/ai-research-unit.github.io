@@ -58,7 +58,7 @@ The last row is not independent: $\frac{\Omega}{k_{m}}=\gamma-1=\frac{\beta^{2}}
 
 ## The Rule
 
-**Write the state and apply the momentum.** Take $\tilde{Ξ}=A\exp\!\left(\frac{i\,S_{\tilde\Xi}}{\hbar}\right)\xi$ with $A>0$ real and central, $S_{\tilde\Xi}$ real and central, and $\xi$ constant. The action carries the subscript of the field it belongs to, the spelling the companion limit article uses, so that the two articles of the pair write one symbol. Then
+**Write the state and apply the momentum.** Take $\tilde{Ξ}=A\exp\!\left(i\theta_{\mathrm{phs}}\right)\xi$ with $A>0$ real and central, $S_{\tilde\Xi}$ real and central, and $\xi$ constant. The action carries the subscript of the field it belongs to, the spelling the companion limit article uses, so that the two articles of the pair write one symbol. Then
 
 $$
 \tilde p\,\tilde{Ξ}=\left(\vec\nabla_\Phi S_{\tilde\Xi}-i\,\hbar\vec\nabla_\Phi\ln A\right)\tilde{Ξ} .
@@ -188,7 +188,7 @@ What remains is one external number, $\epsilon=\frac{1}{k_{\Phi}L}$. When it is 
 |---|---|
 | $\epsilon=\frac{1}{k_{\Phi}L}$ | The parameter of the limit; the only dimensionless combination the model offers |
 | $L$ | The length over which the amplitude varies; supplied by the problem |
-| $\tilde{Ξ}=A\exp\!\left(\frac{i\,S_{\tilde\Xi}}{\hbar}\right)\xi$ | The state in amplitude and phase; $A>0$ real and central, $S_{\tilde\Xi}$ the action of the state, real and central |
+| $\tilde{Ξ}=A\exp\!\left(i\theta_{\mathrm{phs}}\right)\xi$ | The state in amplitude and phase; $A>0$ real and central, $S_{\tilde\Xi}$ the action of the state, real and central |
 | $\rho=\frac{1}{k_{\Phi}^{2}}\left\lvert\frac{\Delta_\Phi A}{A}\right\rvert$ | The quantum potential over the kinetic energy; the error of the limit |
 | $Q=-\frac{m\,c^{2}}{2k_{m}^{2}}\frac{\Delta_\Phi A}{A}$ | The quantum potential; central, real, and the term the limit drops |
 | $k_{\Phi}=\lvert\vec p\rvert/\hbar$, $k_{m}=\frac{m\,c}{\hbar}$ | The momentum and mass wave numbers; $\hbar$ is the product $\hbar$ |

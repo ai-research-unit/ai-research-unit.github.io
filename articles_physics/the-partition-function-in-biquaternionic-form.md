@@ -198,10 +198,12 @@ $$
 which is an element of $\mathbb{B}_{\Phi}$ (imaginary scalar part $ia_0$, real vector part $-\vec a$). Because $\vec a$ is a pure real quaternion, $\exp(\beta\vec a)=\cos(\beta|\vec a|)e_t+\sin(\beta|\vec a|)a_{\mathrm{fop}}$, and the scalar part of the thermal operator is no longer real:
 
 $$
-\exp(-\beta H)=\exp(-i\beta a_0)\Big(\cos(\beta|\vec a|)e_t+\sin(\beta|\vec a|)a_{\mathrm{fop}}\Big),
+\exp(-\beta H)=\exp(-i\theta_{\mathrm{mat}})\Big(\cos(\beta|\vec a|)e_t+\sin(\beta|\vec a|)a_{\mathrm{fop}}\Big),
 \qquad
-Z=2\exp(-i\beta a_0)\cos(\beta|\vec a|).
+Z=2\exp(-i\theta_{\mathrm{mat}})\cos(\beta|\vec a|).
 $$
+
+The Matsubara angle is $\theta_{\mathrm{mat}}=\beta a_0$, a real inverse temperature times a real energy component, so the angle is real.
 
 The partition function is complex. Its modulus is $2|\cos(\beta|\vec a|)|$ and its phase is $-\beta a_0$: the **imaginary scalar part** of the $\mathbb{B}_{\Phi}$ generator (the imaginary-time direction, $ia_0e_t$) produces the phase, while the **real vector part** $-\vec a$ produces a real oscillatory factor. With $a_0=0.9$, $\vec a=(0.4,0.2,-0.3)$, $\beta=1.2$, one finds $Z=0.752585-1.408250\,i$, of modulus $1.596732$ and phase $-1.08=-\beta a_0$. Even with $a_0=0$ the result $2\cos(\beta|\vec a|)$ becomes negative for some $\beta$, so the "state" is not positive; the non-Hermitian generator does not define a thermal state at all in the ordinary sense.
 

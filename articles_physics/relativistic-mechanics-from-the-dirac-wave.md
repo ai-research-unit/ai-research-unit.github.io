@@ -6,7 +6,7 @@ The biquaternionic Dirac equation is first order and its solutions are waves. At
 
 **The claim, stated narrowly.** The mass shell is the leading term of a short-wavelength expansion of the Dirac wave. It is not predicted by the algebra nor created by the limit: $k_{m}=\frac{m\,c}{\hbar}$ is already there. What the limit supplies is the reading of the phase gradient as the mechanical momentum, and with it the flow.
 
-**The parameter is the companion's.** With $\tilde\Xi=A\exp\!\left(\frac{iS_{\tilde\Xi}}{\hbar}\right)\xi$, the small quantity is $\epsilon=1/(k_{\Phi}L)=\hbar/(pL)$, $L$ the length over which $A$ varies. The criterion and the error operator are established in *The Non-Quantum Limit of the Biquaternion Model* and are used here, not restated.
+**The parameter is the companion's.** With $\tilde\Xi=A\exp\!\left(i\theta_{\mathrm{phs}}\right)\xi$, the spinor phase $\theta_{\mathrm{phs}}=S_{\tilde\Xi}/\hbar$ real because the action of the field is real, the small quantity is $\epsilon=1/(k_{\Phi}L)=\hbar/(pL)$, $L$ the length over which $A$ varies. The criterion and the error operator are established in *The Non-Quantum Limit of the Biquaternion Model* and are used here, not restated.
 
 **What this is not.** It is not the $\beta\ll1$ limit of *The Dirac Equation in Biquaternionic Form: Solutions and the Non-Relativistic Limit*, which subtracts the rest phase and yields a non-relativistic wave; this yields a relativistic flow. The two compose, as §*Where the Two Limits Meet* says.
 
@@ -168,7 +168,7 @@ The mass is recovered rather than derived: $k_{m}$ carried it. The spin is absen
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde\Xi=A\exp\!\left(\frac{iS_{\tilde\Xi}}{\hbar}\right)\xi$ | The wave in amplitude and phase; $A>0$ real, $S_{\tilde\Xi}$ the action of the field, $\xi$ slowly varying; the companion writes the exponent $\frac{k_{m}iS_{\tilde\Xi}}{m\,c}$, which is the same number |
+| $\tilde\Xi=A\exp\!\left(i\theta_{\mathrm{phs}}\right)\xi$ | The wave in amplitude and phase; $A>0$ real, $S_{\tilde\Xi}$ the action of the field, $\xi$ slowly varying; the companion writes the exponent $\frac{k_{m}iS_{\tilde\Xi}}{m\,c}$, which is the same number |
 | $\epsilon=\frac{1}{k_{\Phi}L}=\frac{\hbar}{pL}$ | The parameter of the limit; $L$ the length over which $A$ varies |
 | $k_{m}=\frac{m\,c}{\hbar}$ | The mass wave number; the reciprocal of the reduced Compton wavelength |
 | $E=-\partial_{t}S_{\tilde\Xi}$, $\vec p=\nabla S_{\tilde\Xi}$ | Energy and momentum read off the phase |

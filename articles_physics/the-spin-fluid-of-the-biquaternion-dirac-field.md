@@ -126,7 +126,7 @@ The scalar flow is therefore **closed**: it is the gradient of a single function
 
 The counting is worth writing out because it is the whole obstruction. A closed one-form on four coordinates has, at each event, four components subject to the six conditions $\partial_\mu v_\nu=\partial_\nu v_\mu$; the solution set is one function. The velocity of the word has four components subject to one condition, $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$, so it has three functions of the four coordinates. The gap between three and one is two functions at each event, and those two functions are what the word "spin fluid" names. The scalar field has one function, its action, and no gap.
 
-**The two functions have a classical name and the medium has a classical type.** Two functions beyond a gradient is the count of a Clebsch pair: a velocity that is not a gradient reads $\nabla\phi_{\mathrm{clb}}/m+\alpha_{\mathrm{clb}}\nabla\beta_{\mathrm{clb}}/m$, and its vorticity is the wedge of the pair — in the case where that wedge is the whole vorticity, which is the rank-two case and the only rotational case three dimensions allows. Whether the Dirac vorticity is of that rank is a computation the block states and does not perform, since nothing in the word forces the product that tests it to vanish. What no pair supplies is the orientation, which the Dirac field carries as the rotor and which a classical fluid does not have at all. **A medium with a velocity and an independent orientation is a Cosserat medium**, a micropolar fluid, and in its relativistic form the Weyssenhoff–Raabe spin fluid; the classical fluid is its constrained case, in which the orientation is locked to the velocity gradient and the stress is symmetric. The kinematics of the Dirac fluid are those of the general member, and [The Clebsch Potentials and the Rank of the Vorticity](the-clebsch-potentials-and-the-rank-of-the-vorticity.html) carries the identification with the count.
+**The two functions have a classical name and the medium has a classical type.** Two functions beyond a gradient is the count of a Clebsch pair: a velocity that is not a gradient reads $\nabla\phi_{\mathrm{clb}}/m+\alpha_{\mathrm{clb}}\nabla\beta_{\mathrm{clb}}/m$, and its vorticity is the wedge of the pair — in the case where that wedge is the whole vorticity, which is the rank-two case and the only rotational case three dimensions allows. The rank question is settled two paragraphs below, in §*What the Clebsch reading tells*: the vorticity proper is rank two for every solution, and only the raw derivative reaches higher, through the acceleration. What no pair supplies is the orientation, which the Dirac field carries as the rotor and which a classical fluid does not have at all. **A medium with a velocity and an independent orientation is a Cosserat medium**, a micropolar fluid, and in its relativistic form the Weyssenhoff–Raabe spin fluid; the classical fluid is its constrained case, in which the orientation is locked to the velocity gradient and the stress is symmetric. The kinematics of the Dirac fluid are those of the general member, and [The Clebsch Potentials and the Rank of the Vorticity](the-clebsch-potentials-and-the-rank-of-the-vorticity.html) carries the identification with the count.
 
 ### The closure test, written out
 
@@ -272,15 +272,88 @@ The accounting explains why the Dirac fluid needs one more equation than the sca
 
 **The Dirac field does not split into a condensate and a normal part.** The split of [The Two-Fluid Model in Biquaternionic Form](the-two-fluid-model-in-biquaternionic-form.html) is a split of the state's entropy content, and the Dirac field of a pure plane wave carries none. A reader who wants a two-fluid reading of the Dirac field has to add a thermal component, which is what the partition function of [Equilibrium Partition Function in a Moving Frame](equilibrium-partition-function-in-a-moving-frame.html) supplies. This article's fluid is the zero-entropy component of that construction, and its spin is the spin of the condensate.
 
+## The Properties, Listed
+
+**Twelve statements, each one line, and each with its reason. This is what the spin fluid is.**
+
+1. **It carries three data at each event: a density, a frame element and a spin direction.** That is the definition of a spin fluid, and the frame element is what makes it one rather than a dust.
+2. **The velocity is the frame's inverse square**, $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}$, and it is a unit wherever the field is non-zero — stronger than the scalar case, where the velocity is a unit only where $Q_{\mathrm{qnt}}$ vanishes.
+3. **The current reads four of the eight parameters** — the scale, the rapidity and the two angles of the direction — and reads neither the central angle nor the rotor.
+4. **The spin is the rotor's image of a declared axis**, $\tilde S_{\Psi,\mathrm{sp}}=\rho\frac{\hbar}{2}i\hat s$ with $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$. The declared axis does not survive; only its image is a property of the field.
+5. **The current splits by Gordon into convection and bound magnetisation.** The second term is conserved by antisymmetry alone, carries no total charge, and cannot be removed from the magnetic moment.
+6. **The flow is not a gradient.** The velocity has three functions of the four coordinates where a gradient supplies one, and the gap of two is exactly what the phrase *spin fluid* names.
+7. **The word carries the spin, and this is the only one of the three that does.** The scalar and Proca words have no orientation slot; the rotor is the Dirac word's fourth factor.
+8. **The vorticity is the antisymmetrised gradient of the frame**, sourced by the frame's logarithmic derivative and by nothing else — not by the density, which cancels out of the velocity, and not by the central angle, which no bilinear reads.
+9. **The vorticity proper is rank two for every solution.** The projected part annihilates the velocity and is a two-form on three dimensions; only the raw derivative reaches higher, through the acceleration.
+10. **The vorticity has no dynamics of its own.** The frame's logarithmic derivative is flat by construction, so there is no vorticity equation, no Helmholtz transport and no conserved helicity: the vorticity is read off the frame and never transported.
+11. **A loop integral of the flow is a Lorentz holonomy and not a number.** The quantised circulation $h/m$ sits inside it as the central factor, so the scalar's circulation is the abelian shadow of a non-abelian holonomy.
+12. **The degenerate set is the nodal set**, $r=0$, of codimension two, and the frozen-frame sector is the dust the whole structure collapses to when the frame stops varying.
+
+## The Three Fluids
+
+**The three fluid articles of the block can be put side by side, and the table is the shortest statement of what each field's fluid is.** The table is the same in all three articles; what changes from one to the next is which column is the article's own.
+
+| | Klein–Gordon | Proca | Dirac |
+| --- | --- | --- | --- |
+| word | $r\,e^{i\theta_{\mathrm{pha}}}\varepsilon$ | $\varepsilon\,i\,r\,\tilde U_{\Psi,\mathrm b}$ | $r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r}$ |
+| parameters | $2$ | $4$ | $8$ |
+| real equations | $2$ | $4$ | $8$ |
+| density | $\rho_{\mathrm{num}}=r^{2}$, a bilinear | $r=\sqrt{-A^{2}}$, the field's own norm | $\rho_{\mathrm{num}}$, a factor of the word |
+| velocity | $\partial_\mu S/m$, a gradient | $A_\mu/r$, the field's direction | $ic\tilde U^{-2}$, the frame |
+| continuity | the imaginary part of the wave equation | the Lorenz condition | the conservation of $\tilde J$, a separate statement |
+| force | $-\gamma^{-1}\nabla Q_{\mathrm{qnt}}$, a gradient | $-\nabla\ln r-E_\mu/r$ | the divergence of the stress, antisymmetric part included |
+| vorticity | zero identically | $r\,\omega=F-\mathrm{d}r\wedge u$ | the antisymmetrised frame gradient |
+| spin in the word | none | none | the rotor |
+| equation of state | none; a Korteweg stress | $p=\epsilon=\tfrac12m^{2}r^{2}$ | none; the spin's transport closes the system |
+| reverse condition | barotropic, irrotational and inviscid | none; closure is $J^{\mu}=m^{2}A^{\mu}$ | the Frenkel condition, or a free constitutive law |
+| classical medium | a Korteweg fluid | a London plasma | a Cosserat medium |
+| degenerate set | $r=0$, codimension two | the lightlike set, codimension one | $r=0$, codimension two |
+
+**This article's column is the third, and it is the only column whose word carries an orientation.** Four rows of the table follow from that alone: the vorticity is the frame's gradient rather than a gradient's vanishing, the force is the divergence of a stress with an antisymmetric part, the equation of state is replaced by the spin's transport as the closing equation, and the classical medium is a Cosserat medium rather than a Korteweg fluid or a charged fluid. **The Dirac field is the only one of the three whose fluid has an internal degree of freedom, and the cost is that its fluid data do not determine its stress.**
+
+**The row that separates it from the Proca case is the fourth.** The Proca word has no orientation and no phase, so its four parameters exhaust its four components; the Dirac word has an orientation as well as a phase, so its eight parameters exhaust its eight components and leave nothing over. In the Proca case the spin is outside the word and appears in the field strength; here it is inside the word and appears in the rotor, and the two placements give two different fluids.
+
+## The Correspondence, Compared with the Other Two
+
+**The correspondence has three steps, and all three fields walk them in the same order.** The word is exact; the reverse map is defined on a class; membership of that class is the extra structure that makes the fluid a classical medium rather than a relabelling of a wave.
+
+$$
+\text{field}\;\longrightarrow\;\text{fluid}\quad(\text{exact, total, no conditions}),
+\qquad
+\text{fluid}\;\longrightarrow\;\text{field}\quad(\text{total, but only solutions close}).
+$$
+
+**The forward arrow is exact in all three cases, and exact for the same reason.** Any non-vanishing spinor gives a density, a frame and a spin direction at once, and the polar decomposition is a bijection on the eight-parameter set of units, so the fluid's data are the field's data.
+
+**The reverse arrow is where the cases part.** Given a density, a frame and a spin direction, the spinor is written at once, but the three data are not yet a solution: what closes the system is the spin's transport, and the closure needs either the Frenkel condition or a free constitutive law. **That is why the spinor case alone has a genuinely non-unique fluid** — the three choices [The Non-Uniqueness of the Spin Fluid](the-non-uniqueness-of-the-spin-fluid.html) records are choices the reverse map does not make for you — and why the orientation, and not the density or the velocity, is where the extra structure of the Dirac medium sits.
+
+**The third step names the medium, and there are exactly three kinds of extra structure.**
+
+| field | the fluid it is | the extra structure | the classical object |
+| --- | --- | --- | --- |
+| Klein–Gordon | a barotropic irrotational flow | a stress that depends on the density's gradient | a Korteweg fluid |
+| Proca | a flow with a density | a source carried by the flow itself | a London plasma |
+| Dirac | a flow with an orientation | an internal degree of freedom | a Cosserat medium |
+
+**The three structures are the three ways a classical medium can differ from a dust**: by remembering the gradient of its state, by carrying an internal field of its own, or by carrying an internal orientation. Each field picks exactly one, and none picks two. That is why the correspondence is systematic and not a pile of coincidences.
+
+**The Madelung pair generalizes, and the count is what stays fixed.** One real equation per parameter in every case: two and two for the scalar, four and four for the Proca, eight and eight for the Dirac, whose four brackets are $1+1+3+3$. The shape of the pair changes in one direction only — scalar and scalar, then scalar and vector, then two more — and the doubling at each step is the doubling of the algebra's real dimension. **No case is a truncation of another.**
+
+**What the correspondence supports and what it does not.** It supports the claim that each field equation is the equation of motion of a recognizable classical medium, and it supports the properties of §*The Properties, Listed* item by item. It does not support the claim that the orientation is fixed by the velocity gradient, that the vorticity and the spin direction are the same object, or that the fluid closes without a subsidiary condition: the first is the Cosserat constraint that the Dirac field does not obey, the second is refuted in §*What the vorticity is not*, and the third is the non-closure that [The Dirac Fluid and the Takabayasi Correspondence](the-dirac-fluid-and-the-takabayasi-correspondence.html) states and Takabayasi's tensor language closes by hand.
+
 ## What Is Established and What Is Interpretation
 
 **Established.** The polar data of the Dirac field — the frame element, its square as the velocity, the rotor's image as the spin, the current as the density times the frame — imported from the polar article. The Gordon split into convection and magnetisation parts, imported from the Gordon article. The closure of the scalar velocity one-form, which is exact and follows from $\tilde P_\Phi=\tilde\nabla_\Phi S_{\tilde\Xi}$. The non-closure of the Dirac velocity, with the counting and the closure conditions displayed. The vorticity as the antisymmetrised frame gradient, with the shear-flow check. The frozen-frame sector and the four losses.
+
+**The comparison is established as a table and not as a claim.** Every entry of §*The Three Fluids* is a statement already proved here or in the companion fluid articles, and the entry that matters is the seventh: the Dirac word is the only one of the three that carries an orientation. The correspondence of §*The Correspondence, Compared with the Other Two* rests on that entry and on the non-closure of the four brackets.
 
 **Interpretation.** That the Dirac fluid is *a* spin fluid in the sense of the non-relativistic spin-hydrodynamics literature. The correspondence is by structure — a density, a velocity and an independent spin direction, with the spin entering the current as a bound current — and not by derivation: nothing here shows that the corpus's spin direction obeys the literature's transport equation. What the corpus supplies is the exact kinematic triple and its algebra; the transport equation is a closure that the later articles add.
 
 **Not claimed.** It is not claimed that the vorticity and the spin direction are tied at each event. They are independent parameters of the word, and the tie is the field equation's, not the kinematics'. It is not claimed that the frozen-frame sector is the non-relativistic limit: the non-relativistic limit of the polar article is a different reduction, in which the frame loses its boost and the rotor precesses, and a reader who wants that limit should read it there.
 
 ## Summary
+
+Compared with the block's other two fluids, this one is the only one whose word carries the spin, and the only one whose fluid data leave the stress undetermined. The scalar fluid is a gradient flow with a Korteweg stress and no orientation; the Proca fluid is a charged flow with a London response and no orientation; this one carries an orientation, and the orientation is exactly the extra structure that a Cosserat medium has and a dust does not. The counts run two, four and eight for parameters and equations alike, and no case is a truncation of another.
 
 The Dirac field's fluid is a triple at each event: the proper density $\rho_{\mathrm{num}}$, the frame element $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}=\gamma(ic e_t+\vec v)$ with $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$, and the spin direction $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$. The current is the density times the frame element, the spin is the density's square root times $(\hbar/2)i\hat s$, and the central angle is read by neither. The Gordon decomposition splits the current into a convection part and a bound spin part, which is a magnetisation current and contributes nothing to the total charge.
 

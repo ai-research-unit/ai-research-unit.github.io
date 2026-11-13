@@ -378,7 +378,7 @@ $$
 M=\{\operatorname{diag}(u,u^{-1}):|u|=1\}\cong \mathrm{U}(1),\qquad
 A=\{\operatorname{diag}(\exp(t/2),\exp(-t/2)):t\in\mathbb{R}\},
 $$
-and $N$ unipotent. For $m\in\mathbb{Z}$ and $\nu\in\mathbb{R}$ the $*$-unitary character $\xi_{m,\nu}(man)=u^m\exp(i\nu t)$ induces a $*$-unitary representation
+and $N$ unipotent. For $m\in\mathbb{Z}$ and $\nu\in\mathbb{R}$ the $*$-unitary character $\xi_{m,\nu}(man)=u^m\exp(i\theta_{\mathrm{pwt}})$ induces a $*$-unitary representation of the group, with $\theta_{\mathrm{pwt}}=\nu t$ real because the character frequency and the group parameter are real.
 $$
 \pi_{m,\nu}=\operatorname{Ind}_P^G(\xi_{m,\nu}),
 $$

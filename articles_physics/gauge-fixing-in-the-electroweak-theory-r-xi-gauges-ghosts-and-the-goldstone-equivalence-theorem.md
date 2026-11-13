@@ -37,10 +37,10 @@ for one massive direction of mass $M$, and the same with $M=0$ for the photon. T
 **What the broken phase adds.** Breaking the symmetry does not remove the degeneracy; it moves it. The scalar's kinetic term produces a mixing between the vector and the Goldstone, and the flat direction is now a simultaneous shift of both. With the doublet written as in article 4,
 
 $$
-\varphi=\exp\left(\frac{i}{v}\sum_a\xi^a\tau_a\right)\frac{1}{\sqrt2}\begin{pmatrix}0\ v+h\end{pmatrix},
+\varphi=\exp\left(i\sum_a\theta_{\mathrm{gld}}^a\tau_a\right)\frac{1}{\sqrt2}\begin{pmatrix}0\ v+h\end{pmatrix},
 $$
 
-the quadratic form in the pair $(A_\mu,\xi)$ is the vector's kernel coupled to the Goldstone by a term proportional to $p_\mu\xi$, and the vector that it annihilates is
+the angle is $\theta_{\mathrm{gld}}^a=\xi^a/v$, a real Goldstone field over the real vacuum expectation value; the quadratic form in the pair $(A_\mu,\xi)$ is the vector's kernel coupled to the Goldstone by a term proportional to $p_\mu\xi$, and the vector that it annihilates is
 
 $$
 v=\begin{pmatrix}p_\mu\ iM\end{pmatrix},

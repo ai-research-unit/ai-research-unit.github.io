@@ -23,10 +23,10 @@ The article is organized as follows. The next section writes the two-route ampli
 Let $K_j(X)$ be the amplitude for the particle to arrive at the screen point $X$ through slit $j$, $j = 1, 2$. Each is a sum over paths through that slit, and by the path-integral article the single-path phase is a **central** $*$-unitary element of $\mathbb{B}_{C}$ whose exponent lies in $\mathbb{B}_{\Phi}$:
 
 $$
-K_j(X) \;=\; \int_{\text{paths via slit }j}\!\mathcal{D}x\; \exp(iS_j[x]/\hbar), \qquad \exp(\frac{iS_{j}}{\hbar}) \in  \mathbb{B}_{C},\frac{iS_{j}}{\hbar} \in  \mathbb{B}_{C} \cap \mathbb{B}_{\Phi} .
+K_j(X) \;=\; \int_{\text{paths via slit }j}\!\mathcal{D}x\; \exp(iS_j[x]/\hbar), \qquad \exp(i\theta_{\mathrm{act},j}) \in  \mathbb{B}_{C},\frac{iS_{j}}{\hbar} \in  \mathbb{B}_{C} \cap \mathbb{B}_{\Phi} .
 $$
 
-Because each phase factor is central and the sum of central elements is central, each $K_j$ is a complex scalar times $e_t$. Writing $a_j(X) = |K_j(X)| \ge 0$ and $\theta_{\mathrm{pha},j}(X) =\frac{S_{j}\,X}{\hbar}$ for its phase,
+The route angle is $\theta_{\mathrm{act},j}=S_j[x]/\hbar$, real because the action of a real path is real. Because each phase factor is central and the sum of central elements is central, each $K_j$ is a complex scalar times $e_t$. Writing $a_j(X) = |K_j(X)| \ge 0$ and $\theta_{\mathrm{pha},j}(X) =\frac{S_{j}\,X}{\hbar}$ for its phase,
 
 $$
 K_j(X) = a_j(X)\, \exp(i\theta_{\mathrm{pha},j}(X))\, e_t .
@@ -70,7 +70,7 @@ Maxima occur where $d\sin\theta = m\lambda$ and nodes where $d\sin\theta = (m + 
 Two remarks keep this section honest.
 
 - **Finite slit width adds an envelope, which is standard.** A slit of finite width has its own diffraction pattern, and the observed intensity is the two-slit interference modulated by the single-slit envelope. Nothing about the biquaternion framework changes this; it is ordinary wave optics, and this article does not develop it.
-- **The numbers are inputs, not outputs.** The wavelength, the separation $d$, the distance $D$, and the action $S_j$ itself are not supplied by the algebra. What the biquaternion interpretation supplies is the *identification* of the $i$ in $\exp(\frac{iS_{j}}{\hbar})$ with the central scalar imaginary, the *location* of the exponent $\frac{iS_{j}}{\hbar}$ in $\mathbb{B}_{\Phi}$, and the *statement* that only $\delta$ is observable. It does not supply the action, the measure, or the geometry; that is the path-integral article's central gap, and it is inherited here without change.
+- **The numbers are inputs, not outputs.** The wavelength, the separation $d$, the distance $D$, and the action $S_j$ itself are not supplied by the algebra. What the biquaternion interpretation supplies is the *identification* of the $i$ in $\exp(i\theta_{\mathrm{act},j})$ with the central scalar imaginary, the *location* of the exponent $\frac{iS_{j}}{\hbar}$ in $\mathbb{B}_{\Phi}$, and the *statement* that only $\delta$ is observable. It does not supply the action, the measure, or the geometry; that is the path-integral article's central gap, and it is inherited here without change.
 
 ## The Which-Path Qubit and the Bloch Ball
 
@@ -283,7 +283,7 @@ maximal when the two route spinors are parallel (the scalar case) and vanishing 
 
 ## Summary
 
-The double-slit experiment in biquaternionic form is the statement that two route amplitudes, each a **central** complex phase $a_j \exp(\frac{iS_{j}}{\hbar})$, add, and that the intensity is their squared modulus:
+The double-slit experiment in biquaternionic form is the statement that two route amplitudes, each a **central** complex phase $a_j \exp(i\theta_{\mathrm{act},j})$, add, and that the intensity is their squared modulus:
 
 $$
 \boxed{\;I = a_1^2 + a_2^2 + 2a_1a_2\cos\delta, \qquad \delta =\frac{S_1 - S_2}{\hbar}\;}.

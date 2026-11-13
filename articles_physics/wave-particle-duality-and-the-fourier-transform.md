@@ -201,7 +201,7 @@ k_{t}^{\prime}-k_{m}-\frac{k_{\Phi}^{2}}{2k_{m}}=0
 E-m\,c^{2}=\frac{p^{2}}{2m}+V ,
 $$
 
-the corpus's ladder obtaining it by dividing the rest clock out, $e^{i\phi}=e^{-i\theta_{\mathrm{rst}}}\chi$. The two displays say the same thing, and a reader who drops $k_{m}$ is off by the rest energy.
+the corpus's ladder obtaining it by dividing the rest clock out, $e^{i\theta_{\mathrm{pha}}}=e^{-i\theta_{\mathrm{rst}}}\chi$, with $\theta_{\mathrm{pha}}=\phi$ the phase of the polar form, real because it is an argument. The two displays say the same thing, and a reader who drops $k_{m}$ is off by the rest energy.
 
 The angle is $\theta_{\mathrm{rst}}=k_m r'_t$: the mass wave number and the real interval give a real angle.
 

@@ -210,7 +210,7 @@ $$
 \boxed{\;\omega_{quad} = 2\Omega\;},
 $$
 
-not at the rotation frequency itself. The reason is visible in the angular decomposition: the body-frame quadrupole $\mathcal{Q}^{(b)}$ has azimuthal components $m_2 = 0$ and $m_2 = \pm 2$ about the rotation axis, and a body-frame component of azimuthal index $m_2$ appears in the lab frame with the time dependence $\exp(i m_2\Omega r'_t/c)$. The $m_2 = \pm 2$ components therefore carry $2\Omega$, and the $m_2 = 0$ component is time-independent.
+not at the rotation frequency itself. The reason is visible in the angular decomposition: the body-frame quadrupole $\mathcal{Q}^{(b)}$ has azimuthal components $m_2 = 0$ and $m_2 = \pm 2$ about the rotation axis, and a body-frame component of azimuthal index $m_2$ appears in the lab frame with the time dependence $\exp(i m_2\theta_{\mathrm{pwt}})$, where $\theta_{\mathrm{pwt}}=\Omega r'_t/c$ is real because the rotation frequency and the interval are real. The $m_2 = \pm 2$ components therefore carry $2\Omega$, and the $m_2 = 0$ component is time-independent.
 
 ### The Axisymmetric Case
 

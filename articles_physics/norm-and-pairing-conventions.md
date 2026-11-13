@@ -26,13 +26,13 @@ $$
 
 a real and non-negative number. The bars are the modulus and not a bracket of the layer: the algebraic norms keep their bracket, $\langle Q\rangle=Q^2$ and $\langle Q\rangle_{*}=Q\bar Q$. The same bars apply to a complex coefficient of a biquaternion, $\lvert Q_\mu\rvert=\sqrt{q_\mu^2+{q'_\mu}^2}$; over $\mathbb{C}$ the square of the modulus is the Hermitian norm, $\lvert Q\rvert^2=\langle Q\rangle_{*}$.
 
-**The argument of a complex element is written $\arg Q_t$.** For $Q_t\neq0$ it is the angle of the polar form,
+**The argument of a complex element is written $\arg Q_t$.** For $Q_t\neq0$ it is the angle of the polar form, the register angle $\theta_{\mathrm{pha}}=\arg Q_t$,
 
 $$
-Q_t=\lvert Q_t\rvert\,e^{i\arg Q_t},
+Q_t=\lvert Q_t\rvert\,e^{i\theta_{\mathrm{pha}}},
 $$
 
-defined modulo $2\pi$; the branch is stated where the argument is used, and the principal argument in $(-\pi,\pi]$ is written $\operatorname{Arg}Q_t$. The same letter applies to a complex coefficient of a biquaternion, $\arg Q_\mu$, with $\lvert Q_\mu\rvert$ the modulus above.
+defined modulo $2\pi$; the angle is real because it is an argument, and the branch is stated where the argument is used, and the principal argument in $(-\pi,\pi]$ is written $\operatorname{Arg}Q_t$. The same letter applies to a complex coefficient of a biquaternion, $\arg Q_\mu$, with $\lvert Q_\mu\rvert$ the modulus above.
 
 **The four algebraic norms.** Each pair gives one norm, the diagonal of its form. **One bracket, two arities:** the bracket names the form when it carries two arguments and the algebraic norm when it carries one, so the plain bracket is the form $\langle\tilde{Q}_1,\tilde{Q}_2\rangle = \mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ and the norm $\langle\tilde{Q}\rangle = \langle\tilde{Q},\tilde{Q}\rangle$, and the same holds for the Hermitian, the quaternionic and the Krein. Read with one argument, the value lies in $\mathbb{C}$ for the two bilinear norms and in $\mathbb{R}$ for the two sesquilinear norms, because a sesquilinear form has a real diagonal. The quaternionic norm has a second spelling, as the central element $\tilde{Q}\tilde{Q}^{\natural}=\langle\tilde{Q}\rangle_{\natural}e_t$; an article that writes $\langle\tilde{Q}\rangle_{\natural}=c\,e_t$ uses that spelling, with $\langle\tilde{Q}\rangle_{\natural}$ still the scalar coefficient $c$, and the two spellings name one value. The four names are those of the four forms with *norm* in place of *form*:
 

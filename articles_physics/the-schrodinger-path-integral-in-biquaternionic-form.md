@@ -253,12 +253,14 @@ $$
 \left[\tilde{Ξ}(r_x)+(r_y-r_x)\frac{d\tilde{Ξ}}{dx}(r_x)+\tfrac12(r_y-r_x)^2\frac{\partial^2\tilde{Ξ}}{\partial r_x^2}(r_x)+\cdots\right].
 $$
 
+The short-time phase is $\theta_{\mathrm{shp}}=k_m(y-x)^2/(2\varepsilon)$, a real wave number times a squared real displacement over a real step: real because every factor is real.
+
 The Gaussian moments are
 
 $$
-\left(\frac{k_m}{2\pi i\varepsilon}\right)^{1/2}\int  dy\;\exp(\,\frac{i\,k_m\,(y-x)^{2}}{2\,\varepsilon})=1,
+\left(\frac{k_m}{2\pi i\varepsilon}\right)^{1/2}\int  dy\;\exp(i\theta_{\mathrm{shp}})=1,
 \qquad
-\left(\frac{k_m}{2\pi i\varepsilon}\right)^{1/2}\int  dy\;(y-x)^2\exp(\,\frac{i\,k_m\,(y-x)^{2}}{2\,\varepsilon})=i\,\varepsilon/k_m,
+\left(\frac{k_m}{2\pi i\varepsilon}\right)^{1/2}\int  dy\;(y-x)^2\exp(i\theta_{\mathrm{shp}})=i\,\varepsilon/k_m,
 $$
 
 and the linear term vanishes by symmetry. Collecting,

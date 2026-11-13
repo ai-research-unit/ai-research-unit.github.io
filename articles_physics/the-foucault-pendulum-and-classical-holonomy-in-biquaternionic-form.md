@@ -108,7 +108,7 @@ $$
 d^2r_z/d{t'}^2 + 2i\Omega\sin\theta_{\mathrm{foc}}\,dr_z/dt' + \omega_0^2 r_z = 0 .
 $$
 
-Writing $r_z(r'_t) = \exp(-i\Omega\sin\theta_{\mathrm{foc}}\,r'_t/c)\,w(r'_t)$ removes the first-derivative term: $w$ satisfies $d^2w/d{t'}^2 + \omega^2 w = 0$ with
+Writing $r_z(r'_t) = \exp(-i\theta_{\mathrm{pwt}})\,w(r'_t)$, where $\theta_{\mathrm{pwt}}=\Omega\sin\theta_{\mathrm{foc}}\,r'_t/c$ is real because every factor is real, removes the first-derivative term: $w$ satisfies $d^2w/d{t'}^2 + \omega^2 w = 0$ with
 
 $$
 \omega^2 = \omega_0^2 + \Omega^2\sin^2\theta_{\mathrm{foc}} .
@@ -117,7 +117,7 @@ $$
 Hence
 
 $$
-r_z(r'_t) = \exp(-i\Omega\sin\theta_{\mathrm{foc}}\,r'_t/c)\left(A\exp(i\theta_{\mathrm{rat}}) + B\exp(-i\theta_{\mathrm{rat}})\right),
+r_z(r'_t) = \exp(-i\theta_{\mathrm{pwt}})\left(A\exp(i\theta_{\mathrm{rat}}) + B\exp(-i\theta_{\mathrm{rat}})\right),
 $$
 
 a fast oscillation of frequency $\omega$ whose **envelope rotates at the rate $-\Omega\sin\theta_{\mathrm{foc}}$**. The plane of oscillation is the direction of the envelope, so the plane precesses at the rate $-\Omega\sin\theta_{\mathrm{foc}}$, that is, at the rate $\Omega\sin\theta_{\mathrm{foc}}$ in the sense opposite to the Earth's rotation, in agreement with Foucault's observation.
@@ -277,7 +277,7 @@ $$
 with $z = x + iy$, and the swing plane precesses at the rate $-\Omega\sin\theta_{\mathrm{foc}}$,
 
 $$
-r_z(r'_t) = \exp(-i\Omega\sin\theta_{\mathrm{foc}}\,r'_t/c)\left(A\exp(i\theta_{\mathrm{rat}}) + B\exp(-i\theta_{\mathrm{rat}})\right), \qquad \omega^2 = \omega_0^2 + \Omega^2\sin^2\theta_{\mathrm{foc}} ,
+r_z(r'_t) = \exp(-i\theta_{\mathrm{pwt}})\left(A\exp(i\theta_{\mathrm{rat}}) + B\exp(-i\theta_{\mathrm{rat}})\right), \qquad \omega^2 = \omega_0^2 + \Omega^2\sin^2\theta_{\mathrm{foc}} ,
 $$
 
 giving the Foucault angle $2\pi\sin\theta_{\mathrm{foc}}$ per sidereal day, independent of $\omega_0$, of the mass and of the amplitude.
@@ -312,7 +312,7 @@ The effect is the purely geometric end of the spin-zero subcategory: it involves
 | $\theta_{\mathrm{foc}}$ | Latitude; local vertical component $\Omega\sin\theta_{\mathrm{foc}}$ |
 | $\omega_0 = \sqrt{g/\ell}$ | Pendulum frequency |
 | $z = x + iy$ | Complex horizontal coordinate |
-| $r_z(r'_t) = \exp(-i\Omega\sin\theta_{\mathrm{foc}}\,r'_t/c)(A\exp(i\theta_{\mathrm{rat}})+B\exp(-i\theta_{\mathrm{rat}}))$ | Solution; envelope rotation $-\Omega\sin\theta_{\mathrm{foc}}$ |
+| $r_z(r'_t) = \exp(-i\theta_{\mathrm{pwt}})(A\exp(i\theta_{\mathrm{rat}})+B\exp(-i\theta_{\mathrm{rat}}))$ | Solution; envelope rotation $-\Omega\sin\theta_{\mathrm{foc}}$ |
 | $\omega^2 = \omega_0^2 + \Omega^2\sin^2\theta_{\mathrm{foc}}$ | Modified oscillation frequency |
 | $\delta\theta = 2\pi\sin\theta_{\mathrm{foc}}$ | Foucault angle per sidereal day |
 | $\boldsymbol\gamma(r'_t)$ | Latitude circle on the unit sphere |

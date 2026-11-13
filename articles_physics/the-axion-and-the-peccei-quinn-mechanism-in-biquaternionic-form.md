@@ -81,19 +81,19 @@ $$
 \mathrm{U}(1)_{\mathbb{B}} = \left\{\,\exp(i\theta_{\mathrm{cen}})e_t \;:\; \theta_{\mathrm{cen}}\in\mathbb{R}\,\right\} .
 $$
 
-A central scalar $\tilde{Ξ} = \xi e_t$, with $\xi = \tfrac{\rho}{\sqrt2}\exp(ia/f_a)$, transforms under it as $\tilde{Ξ}\mapsto \exp(i\theta_{\mathrm{cen}})\tilde{Ξ}$, i.e. $a/f_a\mapsto a/f_a+\theta_{\mathrm{cen}}$, and the symmetry is **exact** at the level of the classical algebra: the phase commutes with every element of $\mathbb{B}$, so no term built from the algebra alone can break it. This is the framework's strongest statement of a global $\mathrm{U}(1)$, and it is the group that the Peccei–Quinn symmetry requires.
+A central scalar $\tilde{Ξ} = \xi e_t$, with $\xi = \tfrac{\rho}{\sqrt2}\exp(i\theta_{\mathrm{axn}})$, the Peccei--Quinn angle $\theta_{\mathrm{axn}}=a/f_a$ real because the axion field and the decay constant are real, transforms under it as $\tilde{Ξ}\mapsto \exp(i\theta_{\mathrm{cen}})\tilde{Ξ}$, i.e. $a/f_a\mapsto a/f_a+\theta_{\mathrm{cen}}$, and the symmetry is **exact** at the level of the classical algebra: the phase commutes with every element of $\mathbb{B}$, so no term built from the algebra alone can break it. This is the framework's strongest statement of a global $\mathrm{U}(1)$, and it is the group that the Peccei–Quinn symmetry requires.
 
 **The axion.** Write the central scalar as
 
 $$
-\tilde{Ξ} = \frac{\rho}{\sqrt2}\,\exp(i\,a/f_a)\,e_t ,
+\tilde{Ξ} = \frac{\rho}{\sqrt2}\,\exp(i\theta_{\mathrm{axn}})\,e_t ,
 \qquad
 \rho = \sqrt2\,v_0 + \ldots ,
 \qquad
 v_0 = |\langle\xi\rangle| ,
 $$
 
-so that $a$ is the angular field and $f_a$ is the scale of the breaking. The kinetic term of the central scalar is the framework's complex scalar kinetic term,
+so that $a$ is the angular field and $f_a$ is the scale of the breaking.  The kinetic term of the central scalar is the framework's complex scalar kinetic term,
 
 $$
 -\mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}^{*}\,\tilde\nabla_\Phi\tilde{Ξ}\right)
@@ -232,7 +232,7 @@ The strong CP problem is the unnaturally small value of the physical theta param
 $$
 \mathrm{U}(1)_{\mathbb{B}} = \left\{\exp(i\theta_{\mathrm{cen}})e_t\right\} ,
 \qquad
-\tilde{Ξ} = \frac{\rho}{\sqrt2}\exp(i\,a/f_a)e_t \in \mathbb{B}_{C} ,
+\tilde{Ξ} = \frac{\rho}{\sqrt2}\exp(i\theta_{\mathrm{axn}})e_t \in \mathbb{B}_{C} ,
 \qquad
 a/f_a \mapsto a/f_a + \alpha ,
 $$
@@ -260,8 +260,8 @@ The framework's contribution is the exact global phase symmetry of the centre, t
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $\mathbb{B}_{C} = \mathrm{span}_\mathbb{R}\{e_t,ie_t\}$ | Centre; carries the Peccei–Quinn $\mathrm{U}(1)$ |
 | $\mathrm{U}(1)_{\mathbb{B}} = \{\exp(i\theta_{\mathrm{cen}})e_t\}$ | Central phase group; the Peccei–Quinn symmetry |
-| $\tilde{Ξ} = \frac{\rho}{\sqrt2}\exp(ia/f_a)e_t$ | Central scalar; axion is its angular mode |
-| $\xi = \tfrac{\rho}{\sqrt2}\exp(ia/f_a)$ | Complex central component; $a/f_a$ is its Peccei–Quinn phase |
+| $\tilde{Ξ} = \frac{\rho}{\sqrt2}\exp(i\theta_{\mathrm{axn}})e_t$ | Central scalar; axion is its angular mode |
+| $\xi = \tfrac{\rho}{\sqrt2}\exp(i\theta_{\mathrm{axn}})$ | Complex central component; $a/f_a$ is its Peccei–Quinn phase |
 | $a$ | Axion field (pseudo-Goldstone phase) |
 | $a,b,c$ | colour indices of the gauge field, written low; each contraction is an explicit sum. The axion field also uses the letter $a$. |
 | $v_0 = \vert\langle\xi\rangle\vert$, $f_a = \sqrt2\,v_0$ | Scalar vacuum value; its relation to the decay constant |

@@ -143,10 +143,10 @@ while for $r'_t<0$ the contour closes above and the integral vanishes. The resul
 $$
 \frac{1}{2\pi}\int_{-\infty}^{\infty}d\omega\,
 \frac{\exp(-i\theta_{\mathrm{pwt}})}{\vec p^2/\hbar^{2}+k_m^{2}-\omega^2/c^{2}-i\epsilon}
-=\frac{i\,c}{2\Omega_{\vec p}}\,\exp(-i\Omega_{\vec p}|r'_t|),
+=\frac{i\,c}{2\Omega_{\vec p}}\,\exp(-i\theta_{\mathrm{prp}}),
 $$
 
-which is the frequency-space form of the time-ordered two-point function: the two poles are displaced to opposite sides, both contribute, and the result is even in $r'_t$ and built from the positive-frequency phase $\exp(-i\Omega_{\vec p}|r'_t|)$. The three results were confirmed by evaluating the contour sums directly.
+which is the frequency-space form of the time-ordered two-point function: the two poles are displaced to opposite sides, both contribute, and the result is even in $r'_t$ and built from the positive-frequency phase $\exp(-i\theta_{\mathrm{prp}})$, with $\theta_{\mathrm{prp}}=\Omega_{\vec p}\lvert r'_t\rvert$ real because the frequency and the interval are real. The three results were confirmed by evaluating the contour sums directly.
 
 ## The Retarded Green's Function in Position Space
 

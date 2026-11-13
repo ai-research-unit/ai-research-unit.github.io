@@ -168,6 +168,8 @@ $$
 
 **No removal of the non-uniqueness.** The closing condition is still a choice. Takabayasi makes one, the spin-hydrodynamics literature makes others, and the corpus records the choice without making it.
 
+**Where the Dirac fluid stands among the three.** The block now has a fluid per spin, and they are compared side by side in [The Spin Fluid of the Biquaternion Dirac Field](the-spin-fluid-of-the-biquaternion-dirac-field.html)'s §*The Three Fluids* and in [The Spin-One Fluid of the Biquaternion Proca Field](the-spin-one-fluid-of-the-biquaternion-proca-field.html)'s: the scalar field is a gradient flow with a Korteweg stress and no orientation, the Proca field is a charged flow with a London response and no orientation, and this one is a flow with an orientation — a Cosserat medium but not the constrained one. Takabayasi's own subsidiary condition is the constraint that would make it the constrained case, and that is the sharpest way to say what his tensor fluid is and what the word's is.
+
 **The one-sentence ledger is: the equation, no; the coordinates, yes.** Takabayasi's tensor calculus is the equation in tensor form. The polar word is the coordinates in which the equation's structure is algebraic.
 
 ## What Is Established and What Is Interpretation

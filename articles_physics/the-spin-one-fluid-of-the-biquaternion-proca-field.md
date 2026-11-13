@@ -56,23 +56,6 @@ so that $r$ is read off the field's own norm and $u$ off its direction. In the s
 
 **The sign $\varepsilon$ is a label here, and this is the opposite of the spinor case.** In the Dirac word $\varepsilon$ is a *derived* function of the eight parameters, complex off the orthogonal locus, and [The Sign ε and the Rigidity Constraint on Σ₁₀](the-sign-epsilon-and-the-rigidity-constraint-on-sigma-10.html) proves it cannot be a label. In the material sector the field is real, the norm is real, and the sign of the scalar potential is genuinely discrete and genuinely free. The antiparticle of the spin-1 field is therefore visible in the word at the level of a sign, and the antiparticle of the spinor is not.
 
-## The Properties, Listed
-
-**Twelve statements, each one line, and each with its reason. This is what the Proca fluid is.**
-
-1. **The field is the current.** $A_\mu=r u_\mu$, so the density is the field's own norm and the velocity its own direction. No bilinear, no separate construction.
-2. **The density is positive wherever the chart exists.** $r=\sqrt{-A^{2}}>0$ by construction, and it cannot vanish: the chart fails first, on the lightlike set. The scalar fluid can be zero at a point; this one cannot.
-3. **The continuity equation is the Lorenz condition.** $\partial_\mu(ru^\mu)=0$ is not an analogue of continuity but the condition itself, and it removes one of the four parameters, leaving the three helicities.
-4. **The acceleration is kinematic, not dynamical.** $a_\mu=-\nabla_\mu\ln r-E_\mu/r$ holds for every potential of the form $A=ru$, whether or not it solves anything. The dynamics is in the closure of §*The Correspondence, Compared with the Other Two*.
-5. **It carries a stiff pressure.** $p=\epsilon=\tfrac12m^{2}r^{2}$ and the sound speed is $c$, read off the density-gradient force and confirmed by projecting the mass term of the stress.
-6. **It carries a transverse force that no other field fluid has.** $E_\mu/r$ is the only non-gradient force in the three cases, and it is what makes the flow non-geodesic.
-7. **An irrotational flow is geodesic.** $u=\partial\phi$ forces $a=0$; equivalently $E=-\nabla r$. A fluid with a stiff pressure that falls freely.
-8. **It generates vorticity although it is barotropic.** The baroclinic torque vanishes, since $p$ is a function of $r$ alone, and yet $\nabla\wedge(E/r)\ne0$ generates vorticity wherever $E$ is not parallel to $\nabla r$. No classical fluid does this.
-9. **Its vorticity is always rank two, and its field strength is not.** $\omega\wedge\omega=0$ for every unit timelike flow; $\det F$ is nonzero generically. The Clebsch pair reaches the first and not the second.
-10. **It has no spin variable.** Four parameters, no orientation. The spin is in the complex structure of $\mathbb{B}_\Phi$ and shows up in $F$, not in the word.
-11. **It has no phase, and therefore no guidance and no Bohm potential.** The term that stands where the quantum potential stands is $\tfrac14r(\partial\theta_{\mathrm{rpd}})^{2}$, quadratic in a rapidity's gradient and not in a density's curvature.
-12. **Its stress is perfect only where the mass dominates.** The mass term is a perfect fluid; the field-strength term is traceless and anisotropic and is not representable in the word's four parameters.
-
 ## The Lorenz Condition Is the Continuity Equation
 
 **The condition the polar article displays as one divergence is the divergence of the four-potential, and the four-potential is the current.** With $S=\mathrm{Sc}\bigl((\tilde\nabla_\Phi)^\natural\tilde A_\Phi\bigr)$ the scalar part of the conjugate gradient,
@@ -209,28 +192,46 @@ $$
 
 **The two facts are consistent because the two words are decompositions of different objects.** The Dirac word is a decomposition of an element of $\mathbb{B}$ into four factors, and the algebra's complex structure is used to write the factorisation; the residual structure lives in the factors' relation. The Proca word is a decomposition of a real four-vector, and the complex structure is what the reality *excludes*. That is why the central factor of the Dirac word is absent here identically: it is not that the Proca field's phase is constant, it is that a real four-vector has no phase slot at all.
 
+## The Properties, Listed
+
+**Twelve statements, each one line, and each with its reason. This is what the Proca fluid is.**
+
+1. **The field is the current.** $A_\mu=r u_\mu$, so the density is the field's own norm and the velocity its own direction. No bilinear, no separate construction.
+2. **The density is positive wherever the chart exists.** $r=\sqrt{-A^{2}}>0$ by construction, and it cannot vanish: the chart fails first, on the lightlike set. The scalar fluid can be zero at a point; this one cannot.
+3. **The continuity equation is the Lorenz condition.** $\partial_\mu(ru^\mu)=0$ is not an analogue of continuity but the condition itself, and it removes one of the four parameters, leaving the three helicities.
+4. **The acceleration is kinematic, not dynamical.** $a_\mu=-\nabla_\mu\ln r-E_\mu/r$ holds for every potential of the form $A=ru$, whether or not it solves anything. The dynamics is in the closure of §*The Correspondence, Compared with the Other Two*.
+5. **It carries a stiff pressure.** $p=\epsilon=\tfrac12m^{2}r^{2}$ and the sound speed is $c$, read off the density-gradient force and confirmed by projecting the mass term of the stress.
+6. **It carries a transverse force that no other field fluid has.** $E_\mu/r$ is the only non-gradient force in the three cases, and it is what makes the flow non-geodesic.
+7. **An irrotational flow is geodesic.** $u=\partial\phi$ forces $a=0$; equivalently $E=-\nabla r$. A fluid with a stiff pressure that falls freely.
+8. **It generates vorticity although it is barotropic.** The baroclinic torque vanishes, since $p$ is a function of $r$ alone, and yet $\nabla\wedge(E/r)\ne0$ generates vorticity wherever $E$ is not parallel to $\nabla r$. No classical fluid does this.
+9. **Its vorticity is always rank two, and its field strength is not.** $\omega\wedge\omega=0$ for every unit timelike flow; $\det F$ is nonzero generically. The Clebsch pair reaches the first and not the second.
+10. **It has no spin variable.** Four parameters, no orientation. The spin is in the complex structure of $\mathbb{B}_\Phi$ and shows up in $F$, not in the word.
+11. **It has no phase, and therefore no guidance and no Bohm potential.** The term that stands where the quantum potential stands is $\tfrac14r(\partial\theta_{\mathrm{rpd}})^{2}$, quadratic in a rapidity's gradient and not in a density's curvature.
+12. **Its stress is perfect only where the mass dominates.** The mass term is a perfect fluid; the field-strength term is traceless and anisotropic and is not representable in the word's four parameters.
+
 ## The Three Fluids
 
-**The block now has one fluid per spin, and the three differ in what the word carries and in what forces the flow.**
+**The three fluid articles of the block can be put side by side, and the table is the shortest statement of what each field's fluid is.** The table is the same in all three articles; what changes from one to the next is which column is the article's own.
 
-| | scalar | Proca (spin 1) | Dirac (spin ½) |
+| | Klein–Gordon | Proca | Dirac |
 | --- | --- | --- | --- |
-| word | $r\,e^{i\theta_{\mathrm{pha}}}\varepsilon$ | $\varepsilon\,i\,r\,\tilde U_{\Psi,\mathrm b}$ | $r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ |
+| word | $r\,e^{i\theta_{\mathrm{pha}}}\varepsilon$ | $\varepsilon\,i\,r\,\tilde U_{\Psi,\mathrm b}$ | $r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r}$ |
 | parameters | $2$ | $4$ | $8$ |
-| classical medium | a barotropic irrotational fluid with a Korteweg stress | a charged fluid with a London response | a Cosserat medium |
-| density | $r^{2}$, a bilinear | $r$, the field's own norm | $\rho_{\mathrm{num}}$, a factor |
-| velocity | $\partial_\mu S/m$, a gradient | $A_\mu/r$, the field's direction | $ic\tilde U^{-2}$, a frame |
-| continuity | the imaginary part of the wave equation | the Lorenz condition | the current's conservation, separate |
-| force | $-\nabla Q_{\mathrm{qnt}}/m$, a gradient | $-\nabla\ln r-E_\mu/r$ | the divergence of the stress, antisymmetric part included |
-| vorticity | zero identically | $r\omega=F-\mathrm{d}r\wedge u$ | the antisymmetrised frame gradient |
+| real equations | $2$ | $4$ | $8$ |
+| density | $\rho_{\mathrm{num}}=r^{2}$, a bilinear | $r=\sqrt{-A^{2}}$, the field's own norm | $\rho_{\mathrm{num}}$, a factor of the word |
+| velocity | $\partial_\mu S/m$, a gradient | $A_\mu/r$, the field's direction | $ic\tilde U^{-2}$, the frame |
+| continuity | the imaginary part of the wave equation | the Lorenz condition | the conservation of $\tilde J$, a separate statement |
+| force | $-\gamma^{-1}\nabla Q_{\mathrm{qnt}}$, a gradient | $-\nabla\ln r-E_\mu/r$ | the divergence of the stress, antisymmetric part included |
+| vorticity | zero identically | $r\,\omega=F-\mathrm{d}r\wedge u$ | the antisymmetrised frame gradient |
 | spin in the word | none | none | the rotor |
-| equation of state | none; $Q_{\mathrm{qnt}}$ is an energy | $p=\epsilon=\tfrac12m^{2}r^{2}$ | none; the spin closes the system instead |
-| reverse condition | barotropic, irrotational, inviscid, plus the Korteweg term | no class restriction at all; the closure is $J^\mu=m^{2}A^\mu$ | the Frenkel constraint, or a free constitutive law |
+| equation of state | none; a Korteweg stress | $p=\epsilon=\tfrac12m^{2}r^{2}$ | none; the spin's transport closes the system |
+| reverse condition | barotropic, irrotational and inviscid | none; closure is $J^{\mu}=m^{2}A^{\mu}$ | the Frenkel condition, or a free constitutive law |
+| classical medium | a Korteweg fluid | a London plasma | a Cosserat medium |
 | degenerate set | $r=0$, codimension two | the lightlike set, codimension one | $r=0$, codimension two |
 
-**The table's fifth row is the article's substance.** A fluid whose only force is a gradient has no vorticity generation and no baroclinic torque, and the scalar case is that fluid. A fluid whose force has a transverse part generates vorticity, and the Proca case is that fluid with the simplest possible transverse force. A fluid whose stress has an antisymmetric part is a third thing again, and the Dirac case is that. **The three cases are not three approximations of one another; they are three positions on a list of what a force can be.**
+**The force row is the article's substance.** A fluid whose only force is a gradient has no vorticity generation and no baroclinic torque, and the scalar case is that fluid. A fluid whose force has a transverse part generates vorticity, and the Proca case is that fluid with the simplest possible transverse force. A fluid whose stress has an antisymmetric part is a third thing again, and the Dirac case is that. **The three cases are not three approximations of one another; they are three positions on a list of what a force can be.**
 
-**The table's third row is the article's surprise.** In the scalar and spinor cases the density is a bilinear or a factor and the current is a separate construction; in the Proca case the field is the current, so the fluid's density is not something the field has but something the field is. That is why the Lorenz condition does double duty here — as the gauge condition of the element form and as the continuity equation of the fluid — and it is why the case has no non-uniqueness of the kind [The Non-Uniqueness of the Spin Fluid](the-non-uniqueness-of-the-spin-fluid.html) records: there is no choice of which density is conserved, because there is only one candidate.
+**The density row is the article's surprise.** In the scalar and spinor cases the density is a bilinear or a factor and the current is a separate construction; in the Proca case the field is the current, so the fluid's density is not something the field has but something the field is. That is why the Lorenz condition does double duty here — as the gauge condition of the element form and as the continuity equation of the fluid — and it is why the case has no non-uniqueness of the kind [The Non-Uniqueness of the Spin Fluid](the-non-uniqueness-of-the-spin-fluid.html) records: there is no choice of which density is conserved, because there is only one candidate.
 
 ## The Correspondence, Compared with the Other Two
 
@@ -261,7 +262,7 @@ which is Maxwell's equation with the fluid's own number current as its source, w
 | field | the fluid it is | the extra structure | the classical object |
 | --- | --- | --- | --- |
 | Klein–Gordon | a barotropic irrotational flow | a stress that depends on the density's gradient | a Korteweg fluid |
-| Proca | a flow with a density | a source carried by the flow itself | a London plasma, a charged fluid |
+| Proca | a flow with a density | a source carried by the flow itself | a London plasma |
 | Dirac | a flow with an orientation | an internal degree of freedom | a Cosserat medium |
 
 **The three structures are the three ways a classical medium can differ from a dust**: by remembering the gradient of its state (Korteweg), by carrying an internal field of its own (London), or by carrying an internal orientation (Cosserat). Each field picks exactly one. That is the sense in which the correspondence is systematic and not a pile of coincidences.
