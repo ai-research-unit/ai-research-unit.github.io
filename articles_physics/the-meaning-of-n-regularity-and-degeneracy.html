@@ -145,7 +145,7 @@ $$</p>
 </tr>
 <tr>
 <td>The three carriers, their dimensions and their spins</td>
-<td><a href="../articles_maths/angular-momentum-and-spin-in-the-biquaternion-algebra.html">Angular Momentum and Spin in the Biquaternion Algebra</a>; <a href="spin-and-the-three-elementary-carriers.html">Spin and the Three Elementary Carriers</a></td>
+<td><a href="../articles_maths/spin-and-the-three-elementary-carriers-in-the-biquaternion-algebra.html">Spin and the Three Elementary Carriers in the Biquaternion Algebra</a>; <a href="spin-and-the-three-elementary-carriers.html">Spin and the Three Elementary Carriers</a></td>
 </tr>
 <tr>
 <td>The cone as the light cone of the material sector and the level set as the mass shell</td>
@@ -557,7 +557,7 @@ $$</p>
 <p><strong>What the sector is.</strong> A two-step ladder with no live weight. The element annihilates what it produces, and the difference from the apex is only that the ladder has a rung.</p>
 <p><strong>What it does to a test element.</strong> $\tilde Q^{2}=0$ is the statement that the output of the map is annihilated by the map, so $\operatorname{im}L_{\tilde Q}\subseteq\ker L_{\tilde Q}$. The rank is two and the kernel is a plane, so the two subspaces coincide: the element maps the algebra onto the plane it kills, and nothing is kept at any scale.</p>
 <p><strong>Why the two sectors cannot be confused.</strong> In $\Sigma_{01}$ the rank of left multiplication is two and the image is complementary to the kernel. In $\Sigma_{00}$, off the origin, the rank is two and the kernel is a plane, so the image coincides with the kernel. The ranks agree and the geometry does not: one sector is a projection onto a plane along a plane, the other is a shift into a dead plane.</p>
-<p><strong>The physical interpretation.</strong> The element is pure, and a nilpotent is neither Hermitian nor anti-Hermitian, so it lies in neither $\mathbb{B}_\Phi$ nor $\mathbb{B}_\Psi$. A physical four-momentum has a non-zero scalar part, so no momentum is a nilpotent, and the massless momentum of the previous subsection is not one. Two physical objects do sit here: the null field strength, which is the radiative field with both invariants zero, and the lightlike displacement, which is the algebraic form of a direction that erases itself in one composition. The sector has a plane and no weight. Boundary: the nullity is fixed and the polarisation is not, so the cone does not separate the two helicities of a null field.</p>
+<p><strong>The physical interpretation.</strong> The element is pure, and a nilpotent is neither Hermitian nor anti-Hermitian, so it lies in neither $\mathbb{B}_\Phi$ nor $\mathbb{B}_\Psi$. A physical four-momentum has a non-zero scalar part, so no momentum is a nilpotent, and the massless momentum of the previous subsection is not one. Two physical objects do sit here: the null field strength, which is the radiative field with both invariants zero, and the complex isotropic model of a null direction, which is what a direction becomes when its scale is dropped and its components are allowed to be complex. A <strong>real</strong> lightlike displacement is not a member: it has $Q_t=ict\neq0$ and $B^2=|\vec r|^2\neq0$ away from the origin, so it lies in $\Sigma_{01}$ beside the momentum. The sector has a plane and no weight. Boundary: the nullity is fixed and the polarisation is not, so the cone does not separate the two helicities of a null field.</p>
 <h3 id="why-there-are-exactly-two">Why There Are Exactly Two</h3>
 <p><strong>Theorem (the cone meets two sectors).</strong> The cone is the disjoint union</p>
 <p>$$
@@ -1008,13 +1008,199 @@ $$</p>
 <li><strong>The two sectors of degeneracy are two physical objects.</strong> $\Sigma_{01}$, the scaled idempotent, is a polarisation: a selected plane with a weight, and a killed transversal. $\Sigma_{00}$, the nilpotent, is a nilpotent shift: it has no selected plane at all. A field strength and a null translation sit in different sectors, and the difference is not one of degree.</li>
 <li><strong>The degenerate element keeps a direction and a scale.</strong> On $\Sigma_{01}$ the normal form $c\tilde\Pi$ is exact and exhaustive. Boundary: the rapidity is the parameter that is lost, so a family on the cone has no rate.</li>
 <li><strong>$\Sigma_{01}$ propagates; $\Sigma_{00}$ does not.</strong> In the first the image and the kernel are complementary, so a live plane survives beside the annihilated one; in the second the image equals the kernel, so the element annihilates its own output.</li>
-<li><strong>Spin zero is a unit, half a spin is a ray, and one spin is a null cone.</strong> A minimal left ideal is on the cone at every point, so a pure spin-$\tfrac12$ state is a ray whatever its amplitude; the centre is on the cone only at the origin, so a spin-$0$ state is a unit wherever it is non-zero; on the traceless part $N$ reduces to $B^{2}$, so a spin-$1$ state is on the cone exactly when it is null. Boundary: the correspondence runs from the carrier to the norm and not the other way.</li>
+<li><strong>Spin zero is a unit, half a spin is a ray, and one spin is a unit unless the field is null.</strong> A minimal left ideal is on the cone at every point, so a pure spin-$\tfrac12$ state is a ray whatever its amplitude; the centre is on the cone only at the origin, so a spin-$0$ state is a unit wherever it is non-zero; on the traceless part $N$ reduces to the quadratic form $B^{2}$, whose vanishing is the nullity of the field and not a consequence of the carrier. <strong>The carrier decides which strata are reachable, not whether the element is degenerate</strong>: tracelessness rules out the idempotent stratum and leaves the field the choice between a unit and a nilpotent. Boundary: the correspondence runs from the carrier to the norm and not the other way, and the spin-$1$ carrier is the one where the run is most easily misread — see §<em>The Photon, Counted Three Ways</em>.</li>
 <li><strong>Mass is interference.</strong> For a spin-$\tfrac12$ field the two chiral parts are individually isotropic, so the norm of the sum is the cross term alone and the mass is the interference of two rays. Boundary: the two parts are the two components of one element, not two particles.</li>
 <li><strong>A photon is a single ray.</strong> The field strength of a null wave is a zero divisor, so it has no second part and generates no mass. Boundary: this is the null condition of the field strength, not a statement about the four-momentum, which is a different element of the same cone.</li>
 <li><strong>The two polar decompositions answer two questions.</strong> The two-factor pair is available on the cone and is the matrix polar decomposition; the four-factor word is not, and is a chart on the group of units. A statement that uses one and means the other is wrong on the whole cone.</li>
 </ul>
+<h2 id="the-photon-counted-three-ways">The Photon, Counted Three Ways</h2>
+<h3 id="three-objects-carry-the-name">Three Objects Carry the Name</h3>
+<p><strong>A photon is not one element, and the three elements that carry its name sit in three different places.</strong> The corpus uses the word for a momentum, for an amplitude and for a field strength, and the three have three different norms.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>object</th>
+<th>element</th>
+<th>sector</th>
+<th>$N$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>momentum</td>
+<td>$\tilde K_\Phi=ik_t'e_t+\vec k_\Phi$</td>
+<td>$\mathbb{B}_\Phi$</td>
+<td>$-k_t'^{2}+\lvert\vec k_\Phi\rvert^{2}=0$ at $m=0$</td>
+</tr>
+<tr>
+<td>amplitude</td>
+<td>$\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec Z)$</td>
+<td>$\mathbb{B}_\Psi$</td>
+<td>$0$, always</td>
+</tr>
+<tr>
+<td>field strength</td>
+<td>$\tilde F=\vec E+i\vec B$</td>
+<td>depends on $\vec E$ and $\vec B$</td>
+<td>$\lvert\vec E\rvert^{2}-\lvert\vec B\rvert^{2}+2i\,\vec E\cdot\vec B$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Each entry was computed and each is exact.</strong> The momentum is anti-Hermitian and null on the mass shell at $m=0$; the amplitude is Hermitian, idempotent, and null whatever its complex scale; the field strength is traceless and its norm is the pair of electromagnetic invariants. <strong>The sector column is the part that is usually skipped</strong>, and it is the part that decides everything below: the field strength sits in $\mathbb{B}_\Phi$ when only $\vec E$ is present, in $\mathbb{B}_\Psi$ when only $\vec B$ is present, and in neither sector in general.</p>
+<h3 id="the-two-nullities-are-different-statements">The Two Nullities Are Different Statements</h3>
+<p><strong>Masslessness is a statement about the momentum; nullity is a statement about the field strength.</strong> They are not the same condition and neither implies the other.</p>
+<p>$$
+\text{massless}: k_t'^{2}-\lvert\vec k_\Phi\rvert^{2}=0
+\qquad\text{against}\qquad
+\text{null field}: \lvert\vec E\rvert=\lvert\vec B\rvert,\ \ \vec E\cdot\vec B=0 .
+$$</p>
+<p><strong>A single photon's radiation field is null, and that is a property of the radiation field.</strong> A static field is massless and not null. Conflating the two is the commonest error in the neighbourhood of this article, and the next three subsections separate them.</p>
+<h3 id="each-characteristic-tested-alone">Each Characteristic, Tested Alone</h3>
+<p><strong>Masslessness does not force degeneracy.</strong> A massless spin-$0$ field is central, and a central element is on the cone only at the origin:</p>
+<p>$$
+N(r e^{i\vartheta})=r^{2}e^{2i\vartheta},\qquad \lvert N\rvert=r^{2}\neq0\ \text{for }r>0 .
+$$</p>
+<p>Run at $r=2$: $N=3.3013+2.2586i$, $\lvert N\rvert=4$. <strong>So "massless" is not "degenerate",</strong> and any argument that starts from $m=0$ alone is wrong at the first step.</p>
+<p><strong>Spin one does not force degeneracy either, and on real values it forbids it.</strong> Tracelessness puts the value in $V=\ker\operatorname{tr}$, where $N$ reduces to the quadratic form $B^{2}$ of the vector part. On a real traceless element,</p>
+<p>$$
+N=B^{2}=\lvert\vec q\rvert^{2}>0\quad\text{unless }\vec q=0 .
+$$</p>
+<p>Verified at three real vectors: $1$, $14$ and $1.1$, each equal to $\lvert\vec q\rvert^{2}$ and each positive. <strong>So a spin-$1$ state with a real value is a unit at every non-zero point.</strong> The carrier pushes away from the cone here, and does not approach it.</p>
+<p><strong>Both together still do not force it.</strong> A static Coulomb field is massless, is spin one, and has</p>
+<p>$$
+\tilde F=\vec E,\quad \vec B=0,\quad N(\tilde F)=\lvert\vec E\rvert^{2}=4\neq0 .
+$$</p>
+<p>It is a unit, it is $\Sigma_{11}$, and its carrier and its mass are exactly those of a photon. <strong>The two characteristics are necessary and not sufficient</strong>, and a statement that they are jointly responsible for the degeneracy is false against this one example.</p>
+<h3 id="what-the-carrier-actually-does">What the Carrier Actually Does</h3>
+<p><strong>Tracelessness fixes the reachable strata, and it does so exactly.</strong> A pure element has $Q_t=0$, so it is not in the non-pure stratum and $\Sigma_{01}$ is closed to it. Its characteristic polynomial is $X^{2}+N$, so its roots are $\pm i\sqrt N$ and they coincide exactly when $N=0$, so $\Sigma_{10}$ is closed to it as well. <strong>Two of the four sectors remain</strong>, and the carrier puts every field strength in one of them.</p>
+<p>The sharper identity behind this is one line. For $\tilde F$ pure,</p>
+<p>$$
+\tilde F^{2}=-N(\tilde F)\,e_t ,
+$$</p>
+<p>verified over a hundred random pure elements with residual $1.3\times10^{-15}$. So for the spin-$1$ carrier <strong>nilpotent, $N$-degenerate and spectrally degenerate are the same condition</strong>, and the field has no other way to be singular.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>$N(\tilde F)$</th>
+<th>$\tilde F^{2}$</th>
+<th>$\operatorname{rank}L_{\tilde F}$</th>
+<th>sector</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Coulomb, $\vec E=2\vec e_x$</td>
+<td>$4$</td>
+<td>$-4e_t$</td>
+<td>$8$</td>
+<td>$\Sigma_{11}$</td>
+</tr>
+<tr>
+<td>magnetic, $\vec B=5\vec e_y$</td>
+<td>$-25$</td>
+<td>$25e_t$</td>
+<td>$8$</td>
+<td>$\Sigma_{11}$</td>
+</tr>
+<tr>
+<td>radiation, $\vec E=\vec e_x,\ \vec B=\vec e_y$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$4$</td>
+<td>$\Sigma_{00}$</td>
+</tr>
+<tr>
+<td>$\vec E\parallel\vec B$, both unit</td>
+<td>$2i$</td>
+<td>$-2i\,e_t$</td>
+<td>$8$</td>
+<td>$\Sigma_{11}$</td>
+</tr>
+<tr>
+<td>$\vec E=2\vec e_x,\ \vec B=\vec e_y$</td>
+<td>$3$</td>
+<td>$-3e_t$</td>
+<td>$8$</td>
+<td>$\Sigma_{11}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Four of the five rows are units.</strong> The carrier permits a field strength to be a unit or a nilpotent, and it has no preference between them. <strong>That is the whole of the spin-one constraint</strong>: it removes the idempotent stratum and it removes nothing else.</p>
+<h3 id="what-actually-forces-the-nullity">What Actually Forces the Nullity</h3>
+<p><strong>The field strength is null when it lies in one minimal left ideal, and for no other reason.</strong> Split about the axis $\vec Z$ of the idempotents,</p>
+<p>$$
+\tilde F=\tilde F\tilde\Pi_++\tilde F\tilde\Pi_- ,
+$$</p>
+<p>so that each part is a right multiple of an idempotent. <strong>Each part is null by multiplicativity</strong>, $N(\tilde F\tilde\Pi_\pm)=N(\tilde F)N(\tilde\Pi_\pm)=0$, and therefore</p>
+<p>$$
+N(\tilde F)=2\langle\tilde F\tilde\Pi_+,\tilde F\tilde\Pi_-\rangle .
+$$</p>
+<p><strong>The norm of a field strength is the interference of its two ideal components, and nothing else.</strong> The split was run on five fields, and the identity held exactly in all five.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>$\langle\tilde F\tilde\Pi_+\rangle_*$</th>
+<th>$\langle\tilde F\tilde\Pi_-\rangle_*$</th>
+<th>$2\langle\tilde F\tilde\Pi_+,\tilde F\tilde\Pi_-\rangle$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>radiation</td>
+<td>$0$</td>
+<td>$2$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>Coulomb</td>
+<td>$2$</td>
+<td>$2$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$\vec E\parallel\vec B$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$2i$</td>
+</tr>
+<tr>
+<td>$\vec E=2\vec e_x,\ \vec B=\vec e_y$</td>
+<td>$0.5$</td>
+<td>$4.5$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>magnetic</td>
+<td>$12.5$</td>
+<td>$12.5$</td>
+<td>$-25$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The radiation row is the answer.</strong> One ideal is populated and the other is empty, so there is no cross term and the norm vanishes. Every other row populates both ideals, and the norm is the interference. <strong>A photon's field strength is a zero divisor because it is a single ray, not because it is massless and not because it is traceless</strong>; those two facts only make the single-ray configuration available.</p>
+<h3 id="the-same-theorem-as-the-mass">The Same Theorem as the Mass</h3>
+<p><strong>This is the spinor statement with a different carrier.</strong> For a spin-$\tfrac12$ field the two chiral parts are individually isotropic and the mass is their interference; for a spin-$1$ field the two ideal components are individually isotropic and the norm is their interference. One theorem, two carriers, one number that is a cross term in both cases.</p>
+<p><strong>The consequence for the mass is the one worth stating.</strong> The norm of the field strength is a pair of field invariants; it varies from field to field at fixed photon mass, and it is not $m^{2}c^{2}$. <strong>A non-null field has $N(\tilde F)\neq0$ and its photons are still massless</strong>, so $N$-regularity of the field strength says nothing about the mass of the quantum. The mass of the photon is the momentum's norm, which is zero; the field strength's norm is a different number about a different element.</p>
+<p><strong>Both invariants are invariant, and the pair is indefinite.</strong> $\lvert\vec E\rvert^{2}-\lvert\vec B\rvert^{2}$ and $\vec E\cdot\vec B$ are unchanged by every boost — checked over twelve boosts on four fields, drift $5\times10^{-15}$ — so the pair can be positive, negative or zero but a boost never moves it. <strong>The pair is not positive definite and is not an interval</strong>: it is a quadratic form on a different carrier, and reading it as a mass is the error the sector column exists to prevent.</p>
+<h3 id="the-correct-exclusion">The Correct Exclusion</h3>
+<p><strong>A photon is excluded from the polar-fluid reading because $m=0$, and only for that reason.</strong> The chain that excludes it is not the chain usually quoted.</p>
+<ul>
+<li><strong>For a null radiation field</strong> the polar word fails as well, since $N(\tilde F)=0$; the two conclusions agree, and the agreement hides which one is doing the work.</li>
+<li><strong>For a non-null electromagnetic field</strong> the word exists, since $N(\tilde F)\neq0$, and the field is still not a fluid: $m=0$ leaves no rest frame, the factor $\gamma=E/(mc^{2})$ has no value, and there is no density per rest volume.</li>
+<li><strong>Nullity of the field strength is a property of the radiation field</strong>, and not a consequence of the carrier and not a consequence of the mass.</li>
+</ul>
+<p><strong>So the two characteristics of the photon do not combine into a degeneracy.</strong> Masslessness puts the momentum on the cone. Spin one puts the value on the traceless part. <strong>The field strength is on the cone in addition, and for a third and independent reason</strong>: it is built from one null momentum and therefore occupies one minimal left ideal. Take that third fact away and the field is a unit with a massless quantum, which is what a Coulomb field is.</p>
 <h2 id="limits">Limits</h2>
 <p><strong>The norm is algebraic; the words are sector-dependent.</strong> $N=0$ is one complex equation. Reading it as <em>massless</em> needs the material sector, reading it as <em>non-reversible</em> needs the operator picture, and reading it as <em>nilpotent</em> needs the pure stratum. The three readings are not the same statement, and the algebra supplies only the common criterion.</p>
+<p><strong>The equivalence is not plain, and the direction that fails is the one usually assumed.</strong> On the material sector $N$ is real, so $N=0$ is one real equation and $N=-m^{2}c^{2}$ is the interval; in the full algebra $N$ is complex, so $N=0$ is two real equations and $N$ is not a mass at all. <strong>A sentence that writes "$N$-regular if and only if massive" without naming the sector is wrong for every element that carries a $\mathbb{B}_\Psi$ part</strong>: there the real part of $N$ is a difference of two indefinite forms and its imaginary part a Euclidean inner product of the two parts, and neither is a mass. <strong>The words coincide only because the material sector is what turns the complex number into the interval</strong>, and a reader who drops the sector has dropped the whole content of the identification.</p>
+<p><strong>One direction does survive unconditionally, and it is the one worth quoting.</strong> Write $\tilde A=ia_te_t+\vec a\in\mathbb{B}_\Phi$ with $a_t$ and $\vec a$ real, put $\Delta(A)=a_t^{2}-(\vec a,\vec a)$, and let $\tilde B=b_te_t+i\vec b\in\mathbb{B}_\Psi$ be arbitrary. Then</p>
+<p>$$
+N(\tilde A+\tilde B)=-\Delta(A)+\Delta(B)+2i\bigl(a_tb_t+(\vec a,\vec b)\bigr).
+$$</p>
+<p><strong>Claim.</strong> If $\Delta(A)>0$ then $N(\tilde A+\tilde B)\neq0$, whatever $\tilde B$ is. <em>Proof.</em> Both parts must vanish. The real part gives $\Delta(B)=\Delta(A)>0$, and the imaginary part gives $a_tb_t=-(\vec a,\vec b)$. Cauchy–Schwarz then gives $a_t^{2}b_t^{2}=(\vec a,\vec b)^{2}\le\lVert\vec a\rVert^{2}\lVert\vec b\rVert^{2}$, while the two positivity conditions give $\lVert\vec a\rVert^{2}<a_t^{2}$ and $\lVert\vec b\rVert^{2}<b_t^{2}$, so the right side is strictly less than the left. Contradiction.</p>
+<p><strong>So a timelike material part forces $N$-regularity in every sector mix, and a degenerate element never has one</strong>: $N=0$ implies the material part is null or spacelike, and never timelike. <strong>Mass implies $N$-regular always; $N$-regular implies mass only on the material sector.</strong> That asymmetry is the whole qualification, and it is why the two words must not be written as synonyms.</p>
 <p><strong>The cone is thin, and that is not a statement about importance.</strong> The cone is a complex hypersurface of real codimension two, so a generic element is a unit. But the rest frame, the null field, the gauge redundancy and the exceptional point all lie on it or on its relatives. A thin set is not a negligible set.</p>
 <p><strong>No dynamics, no particle content, no mass spectrum.</strong> The article reads one element at one point. It supplies no equation of motion and predicts no mass values.</p>
 <p><strong>Degeneracy of the norm is not degeneracy of the spectrum.</strong> $\Sigma_{01}$ is spectrally regular and $N$-degenerate; $\Sigma_{10}$ is $N$-regular and spectrally degenerate. Any sentence that uses <em>degenerate</em> without its qualifier is ambiguous in this corpus, and the ambiguity is not verbal: the two conditions have different zero sets, and the coincidence on the cone is a theorem about the cone and not a general fact.</p>
@@ -1038,6 +1224,8 @@ $$</p>
 <li>The degenerate element keeps a direction and a scale on $\Sigma_{01}$ and loses the rapidity; the word has boundary values on the cone and the generator does not, and the limit is path-dependent.</li>
 <li>$N$ vanishes identically on a minimal left ideal, by multiplicativity and the isotropy of the idempotent: every pure spin-$\tfrac12$ state is a ray.</li>
 <li>The norm of a sum of one element from each ideal is the cross term alone, so the mass of a spin-$\tfrac12$ field is the interference of two rays; a null field strength is a single zero divisor and generates no mass.</li>
+<li>The traceless carrier reaches exactly two of the four sectors, $\Sigma_{11}$ and $\Sigma_{00}$, because a pure element has $Q_t=0$ and $\tilde F^{2}=-N e_t$; tracelessness forbids the idempotent stratum and does not forbid invertibility.</li>
+<li>Masslessness and nullity are separate conditions on separate elements: the momentum is null at $m=0$, the field strength is null for radiation, and a massless non-null field is a unit with a massless quantum.</li>
 </ul>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -1132,14 +1320,14 @@ $$</p>
 <li><a href="../articles_maths/relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html">Relations between the N Norm and Spectral Regularity and Degeneracy</a>, for the four sectors, the characteristic polynomial and the chain of invariants.</li>
 <li><a href="norm-and-pairing-conventions.html">Norm and Pairing Conventions</a>, for the four norms, the qualified regular and degenerate, and the domain of the word.</li>
 <li><a href="../articles_maths/introduction-to-n-and-spectrally-regular-and-degenerate-operators.html">Introduction to N and Spectrally Regular and Degenerate Operators</a>, for the rank, the images and the kernels of the four sectors.</li>
-<li><a href="the-four-regimes-of-an-element-mass-and-motion.html">The Four Regimes of an Element: Mass and Motion</a>, for the sector partition and its physical labels.</li>
+<li><a href="the-three-elementary-carriers-and-the-four-sectors-of-regularity-and-degeneracy.html">The Three Elementary Carriers and the Four Sectors of Regularity and Degeneracy</a>, for the sector partition and its physical labels.</li>
 <li><a href="physical-interpretation-of-spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html">Physical Interpretation of Spectral Regularity and Degeneracy in the Biquaternion Algebra</a>, for the spectral question and the warning that it is not the norm's question.</li>
 <li><a href="the-zero-divisor-cone-and-the-massless-spectrum.html">The Zero-Divisor Cone and the Massless Spectrum</a>, for the cone as the light cone and the wall of invertibility.</li>
 <li><a href="the-exponential-the-logarithm-and-the-generator.html">The Exponential, the Logarithm and the Generator</a>, for the units as the image of the exponential and the cone as its complement.</li>
 <li><a href="the-polar-decomposition-and-its-three-pairings.html">The Polar Decomposition and Its Three Pairings</a>, for the word, its three bracketings and the table of domains.</li>
 <li><a href="the-massless-limit-as-a-boundary-value-of-the-polar-word.html">The Massless Limit as a Boundary Value of the Polar Word</a>, for the boundary value, the two strata and the path dependence.</li>
 <li><a href="the-hamilton-pairing-mass-as-modulus-and-the-complex-angle.html">The Hamilton Pairing: Mass as Modulus and the Complex Angle</a>, for the modulus $\Rho=\sqrt N$, the complex angle and the cross term in the mass of a sum.</li>
-<li><a href="../articles_maths/angular-momentum-and-spin-in-the-biquaternion-algebra.html">Angular Momentum and Spin in the Biquaternion Algebra</a>, for the three carriers, their spins and the statement that the algebra determines no dynamics.</li>
+<li><a href="../articles_maths/spin-and-the-three-elementary-carriers-in-the-biquaternion-algebra.html">Spin and the Three Elementary Carriers in the Biquaternion Algebra</a>, for the three carriers, their spins and the statement that the algebra determines no dynamics.</li>
 <li><a href="spin-and-the-three-elementary-carriers.html">Spin and the Three Elementary Carriers</a>, for the carrier table and the identification with the observed spins.</li>
 <li><a href="null-electromagnetic-fields-and-the-shear-free-congruence.html">Null Electromagnetic Fields and the Shear-Free Congruence</a>, for the null field strength as a zero divisor.</li>
 <li><a href="../articles_maths/the-polar-decomposition-of-a-biquaternion.html">The Polar Decomposition of a Biquaternion</a>, for the two-factor decomposition defined on every element.</li>

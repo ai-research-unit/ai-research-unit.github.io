@@ -107,7 +107,7 @@ S=\int\frac{\mathrm{d}^4k}{(2\pi)^4}\;\mathcal{Q}(A) ,
 $$</p>
 <p>with $A\!\cdot\!A=-\lvert a_t'\rvert^{2}+\lvert\vec a\rvert^{2}$ the material form. <strong>The first term is the field term and the second is the field term's transverse part together with the mass term</strong>; the split is made below and matters.</p>
 <p><strong>The sign is the parent's and the article keeps it.</strong> Its normalisation fixes the relative sign of the two terms by requiring positive energy, and the overall sign of an action does not change its extremum. Every statement below is about a coefficient and a vanishing, so the overall sign drops out; the relative sign is the parent's and is not renegotiated.</p>
-<p><strong>The stationarity is the symbol and the check is a finite difference.</strong> $\partial\mathcal{Q}/\partial A^\mu=-\eta_{\mu\nu}(\sigma A)^{\nu}$ with $\sigma^\mu{}_\nu=(k^{2}-k_m^{2})\delta^\mu{}_\nu-k^\mu k_\nu$, verified to $2.1\times10^{-11}$ at $k_t'=1.2$, $\vec k_\Phi=(0.3,0.2,0.1)$, $k_m=0.7$ on a random complex amplitude. <strong>So the momentum-space variational principle is $\sigma A=0$</strong>, and the form companion's matrix is this form's Hessian.</p>
+<p><strong>The stationarity is the symbol and the check is a finite difference.</strong> $\partial\mathcal{Q}/\partial A_\nu=-(\sigma A)_\nu$ with $(\sigma A)_\nu=(k^{2}-k_m^{2})A_\nu-k_\nu(k\cdot A)$, verified to $2.1\times10^{-11}$ at $k_t'=1.2$, $\vec k_\Phi=(0.3,0.2,0.1)$, $k_m=0.7$ on a random complex amplitude. <strong>So the momentum-space variational principle is $\sigma A=0$</strong>, and the form companion's matrix is this form's Hessian.</p>
 <h2 id="the-quadratic-form-and-its-stationarity">The Quadratic Form and Its Stationarity</h2>
 <p><strong>At a wave number the action is a quadratic form and nothing more.</strong> There is no coupling between different wave numbers in the free case, so the transform does not merely simplify the action; it decomposes it into an independent form at each wave number. <strong>The variation is then algebraic at each index</strong>, and the Euler–Lagrange equation is the vanishing of one gradient.</p>
 <p><strong>The form's two terms have different origins and different behaviour.</strong> The term $[kA]^{2}$ is the field term's longitudinal content: it is quadratic in the Lorenz form and it vanishes on the Lorenz plane. The term $-(k^{2}-k_m^{2})A\!\cdot\!A$ is the field term's transverse content together with the mass, and it is diagonal in the amplitude. <strong>Their competition is the whole of the Proca system's structure</strong>, and the two coefficients are read off below.</p>
@@ -116,7 +116,7 @@ $$</p>
 <h2 id="the-longitudinal-coefficient-is-the-mass-alone">The Longitudinal Coefficient Is the Mass Alone</h2>
 <p><strong>Along the wave number the form is the mass and nothing else.</strong> Put $A\parallel k^\mu$, so that $A=\lambda k^\mu$ and $[kA]=\lambda k^{2}$. Then</p>
 <p>$$
-\mathcal{Q}\bigl(\lambda k^{\mu}\bigr)
+\mathcal{Q}\bigl(\lambda k\bigr)
 =\tfrac12\Bigl(\lambda^{2}k^{4}-\bigl(k^{2}-k_m^{2}\bigr)\lambda^{2}k^{2}\Bigr)
 =\tfrac12\lambda^{2}k_m^{2}k^{2}
 =\tfrac12 k_m^{2}\bigl(A\!\cdot\!A\bigr) ,
@@ -163,7 +163,7 @@ $$</p>
 <h2 id="the-constraint-is-the-vanishing-of-a-coefficient">The Constraint Is the Vanishing of a Coefficient</h2>
 <p><strong>The Lorenz condition is the stationarity of the form along the wave number.</strong> The derivative in the direction of the wave number is</p>
 <p>$$
-\frac{\partial\mathcal{Q}}{\partial A^\mu}\,k^{\mu}
+\sum_\mu\frac{\partial\mathcal{Q}}{\partial A_\mu}\,k_\mu
 =[kA]\,k^{2}-\bigl(k^{2}-k_m^{2}\bigr)\bigl(A\!\cdot\!k\bigr)
 =k_m^{2}\,[kA] ,
 $$</p>

@@ -77,7 +77,7 @@
 <h2 id="conventions">Conventions</h2>
 <p>The charged companion's: $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$ with $\varphi$ and $\vec A$ real, the coupling $\varkappa$ being minus the electric charge, the covariant derivative $\partial_\mu+\frac{i\varkappa}{\hbar}A_\mu$, and the gauge transformation $\lambda=\exp(i\varkappa\Gamma/\hbar)$ with $\Gamma$ real. The field is central, $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$, and the two invariants are</p>
 <p>$$
-\vec\pi=\hbar\nabla\theta_{\mathrm{pha}}+\varkappa\vec A=\nabla S+\varkappa\vec A,
+\vec\pi=\hbar\nabla\theta_{\mathrm{pha}}-q\vec A=\nabla S-q\vec A,
 \qquad
 \mathcal E=-\hbar\,\partial_{t'}\theta_{\mathrm{pha}}+\varkappa\varphi,
 \qquad
@@ -87,9 +87,9 @@ $$</p>
 <h2 id="the-mode-of-a-flat-connection">The Mode of a Flat Connection</h2>
 <p><strong>A constant connection leaves the mode a mode.</strong> Take $\tilde A_\Phi$ constant, so that $\vec B=0$ and $\varphi$ is constant. A plane wave $\tilde\Xi=a\,e^{i(\vec k\cdot\vec r-\omega t')}e_t$ is a solution with the label</p>
 <p>$$
-\vec\pi=\hbar\vec k+\varkappa\vec A,
+\vec\pi=\hbar\vec k-q\vec A,
 \qquad
-\vec v=\frac{\hbar\vec k+\varkappa\vec A}{m},
+\vec v=\frac{\hbar\vec k-q\vec A}{m},
 \qquad
 \nabla\times\vec v=0 ,
 $$</p>
@@ -103,7 +103,7 @@ $$</p>
 <h2 id="the-curvature-is-what-a-multiplier-cannot-carry">The Curvature Is What a Multiplier Cannot Carry</h2>
 <p><strong>The identity is one line and the check is exact.</strong></p>
 <p>$$
-\nabla\times\vec v=\frac{1}{m}\nabla\times\bigl(\hbar\nabla\theta_{\mathrm{pha}}+\varkappa\vec A\bigr)=\frac{\varkappa}{m}\vec B ,
+\nabla\times\vec v=\frac{1}{m}\nabla\times\bigl(\hbar\nabla\theta_{\mathrm{pha}}-q\vec A\bigr)=\frac{\varkappa}{m}\vec B ,
 $$</p>
 <p>since the curl of a gradient vanishes wherever the phase is twice differentiable. On one hundred events with a uniform field $\vec B=0.6\vec e_z$ and a phase carrying a cross term, the residual was $5.0\times10^{-16}$.</p>
 <p><strong>Read as a statement about profiles, the identity says that the vorticity is the second derivative of the connection and nothing else.</strong> A constant connection has zero curvature, a linear connection has constant curvature, and a connection of higher order has a varying one. <strong>No mode of the field can supply a curvature, because a mode's connection is at most a constant</strong>; so the vorticity of this fluid is invisible to the basis by construction and not by an unlucky cancellation.</p>
@@ -181,7 +181,7 @@ $$</p>
 </li>
 </ol>
 <h2 id="summary">Summary</h2>
-<p>The charged Schrödinger fluid's velocity is $(\hbar\nabla\theta_{\mathrm{pha}}+\varkappa\vec A)/m$ and its vorticity is $\varkappa\vec B/m$ exactly, with residual $5.0\times10^{-16}$ on one hundred events and the curl of a gradient vanishing identically.</p>
+<p>The charged Schrödinger fluid's velocity is $(\hbar\nabla\theta_{\mathrm{pha}}-q\vec A)/m$ and its vorticity is $\varkappa\vec B/m$ exactly, with residual $5.0\times10^{-16}$ on one hundred events and the curl of a gradient vanishing identically.</p>
 <p>A constant connection is a multiplier, carries no curvature, mixes no modes and is a pure gradient, so a mode of a flat connection is a free mode with a translated label and zero vorticity, checked at $2.5\times10^{-16}$.</p>
 <p>A connection with curvature is not a multiplier. Its transform is a derivative of a delta for a linear profile, and the coupling then falls as the inverse of the separation, which is the momentum-space face of a constant field strength.</p>
 <p><strong>So the mode basis is the mode basis of the flat connections, and the vorticity is exactly what it cannot carry.</strong> The fluid's rotation is invisible to the Fourier decomposition by construction, and the one gauge-invariant object of the momentum-space reading is the curvature.</p>
@@ -205,7 +205,7 @@ $$</p>
 <td>The connection</td>
 </tr>
 <tr>
-<td>$\vec\pi=\hbar\nabla\theta_{\mathrm{pha}}+\varkappa\vec A$</td>
+<td>$\vec\pi=\hbar\nabla\theta_{\mathrm{pha}}-q\vec A$</td>
 <td>The kinetic momentum</td>
 </tr>
 <tr>

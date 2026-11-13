@@ -139,7 +139,7 @@ $$</p>
 <p><strong>The conservation is the conservation of the field's own current, so the density is not a probability.</strong> $J^\mu=A^\mu$ is conserved on the Lorenz surface and its time component is $\gamma\varepsilon r$, which changes sign with the branch. The fluid's proper density $r$ is positive by construction and the charge density is signed, and the two are different objects — the same split that the scalar fluid carries between $\rho_{\mathrm{num}}$ and $\rho_{\mathrm{chg}}$.</p>
 <h2 id="the-euler-equation">The Euler Equation</h2>
 <p><strong>The acceleration is fixed by the density gradient and by the field strength, and the identity is exact.</strong></p>
-<p><em>Proposition.</em> Let $A_\mu=r u_\mu$ with $u_\mu u^\mu=-1$, let $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$, let $E_\mu=F_{\mu\nu}u^\nu$, and let $\nabla_\mu=\Delta_\mu{}^\nu\partial_\nu$ with $\Delta_{\mu\nu}=g_{\mu\nu}+u_\mu u_\nu$. Then</p>
+<p><em>Proposition.</em> Let $A_\mu=r u_\mu$ with $\sum_\mu\varepsilon_\mu u_\mu u_\mu=-1$, let $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$, let $E_\mu=\sum_\nu\varepsilon_\nu F_{\mu\nu}u_\nu$, and let $\nabla_\mu=\sum_\nu\Delta_{\mu\nu}\partial_\nu$ with $\Delta_{\mu\nu}=g_{\mu\nu}+u_\mu u_\nu$. <strong>No index is raised</strong>: every contraction names its summed index, and the interval's $\varepsilon_\mu$ carries the weight wherever the value is displayed. Then</p>
 <p>$$
 \boxed{\;a_\mu=u^\nu\partial_\nu u_\mu=-\nabla_\mu\ln r-\frac{1}{r}E_\mu\;}
 $$</p>
@@ -200,14 +200,14 @@ $$</p>
 <h2 id="the-stress-and-what-the-word-cannot-see">The Stress, and What the Word Cannot See</h2>
 <p><strong>The stress splits into a perfect-fluid part and a field-strength part, and the split is exact.</strong> With the Proca stress of the element form,</p>
 <p>$$
-T_{\mu\nu}=-F_{\mu\alpha}F_\nu{}^{\alpha}+\tfrac14g_{\mu\nu}F_{\alpha\beta}F^{\alpha\beta}
+T_{\mu\nu}=-\sum_\alpha\varepsilon_\alpha F_{\mu\alpha}F_{\nu\alpha}+\tfrac14g_{\mu\nu}\sum_{\alpha,\beta}F_{\alpha\beta}F_{\alpha\beta}
 +m^{2}\bigl(A_\mu A_\nu-\tfrac12 g_{\mu\nu}A^{2}\bigr),
 $$</p>
-<p>the mass term alone is the perfect-fluid form. Projecting it with $u^\mu u^\nu$ and with $\Delta^{\mu\nu}$, and using $A_\mu u^\mu=-r$, $A^{2}=-r^{2}$ and $u^{2}=-1$,</p>
+<p>the mass term alone is the perfect-fluid form. Projecting it, $\sum_{\mu,\nu}u_\mu T_{\mu\nu}u_\nu$ and $\sum_{\mu,\nu}\Delta_{\mu\nu}T_{\mu\nu}$, and using $\sum_\mu\varepsilon_\mu A_\mu u_\mu=-r$, $A^{2}=-r^{2}$ and $\sum_\mu\varepsilon_\mu u_\mu u_\mu=-1$,</p>
 <p>$$
 \epsilon_{\mathrm{mass}}=m^{2}\Bigl(\bigl(A_\mu u^\mu\bigr)^{2}-\tfrac12u^{2}A^{2}\Bigr)=\tfrac12m^{2}r^{2},
 \qquad
-p_{\mathrm{mass}}=\tfrac13m^{2}\Bigl(A_\mu A_\nu\Delta^{\mu\nu}-\tfrac12 g_{\mu\nu}\Delta^{\mu\nu}A^{2}\Bigr)=\tfrac12m^{2}r^{2}.
+p_{\mathrm{mass}}=\tfrac13m^{2}\Bigl(\sum_{\mu,\nu}A_\mu A_\nu\Delta_{\mu\nu}-\tfrac12\sum_{\mu,\nu}g_{\mu\nu}\Delta_{\mu\nu}A^{2}\Bigr)=\tfrac12m^{2}r^{2}.
 $$</p>
 <p><strong>So the mass term is a stiff fluid: $\epsilon=p=\tfrac12m^{2}r^{2}$ and the sound speed is $c$.</strong> This is the equation of state that §<em>The Euler Equation</em> read off the density-gradient force, and the agreement is the check that the force and the stress are the same object.</p>
 <p><strong>The field-strength part is traceless, transverse-anisotropic, and invisible to the word.</strong> It is quadratic in $F$, its trace vanishes identically, and its transverse traceless projection is nonzero wherever the field strength's own transverse part is — so the stress is that of a perfect fluid only where $F$ is negligible against the mass, which is the long-wavelength limit. <strong>The word has no parameter that could carry this part</strong>: the four parameters are a scale, a direction and a sign, and the anisotropy is a function of the field strength's three electric and three magnetic components in the flow frame.</p>
@@ -304,7 +304,7 @@ $$</p>
 <tr>
 <td>reverse condition</td>
 <td>barotropic, irrotational and inviscid</td>
-<td>none; closure is $J^{\mu}=m^{2}A^{\mu}$</td>
+<td>none; closure is $J_\mu=m^{2}A_\mu$</td>
 <td>the Frenkel condition, or a free constitutive law</td>
 </tr>
 <tr>
@@ -336,9 +336,9 @@ $$</p>
 <p><strong>The reverse arrow is where the three cases part, and the Proca case is the most permissive.</strong> Given any unit timelike flow $u$ and any positive $r$, the potential $A_\mu=ru_\mu$ exists. There is no barotropicity to assume, no irrotationality, no orientation to constrain, no constitutive function to choose. <strong>The Proca reverse map is defined on the whole of the fluid state space</strong>, which is not true of either of the other two: the scalar case needs an irrotational barotropic flow, and the spinor case needs the Frenkel condition or a free constitutive law.</p>
 <p><strong>What is conditional is not membership of a class but closure.</strong> The potential built from $(r,u)$ solves the Proca equation only if the flow obeys</p>
 <p>$$
-\partial_\nu F^{\nu\mu}=m^{2}A^{\mu}=m^{2}r\,u^{\mu},
+\sum_\nu\partial_\nu F_{\nu\mu}=m^{2}A_\mu=m^{2}r\,u_\mu,
 $$</p>
-<p>which is Maxwell's equation with the fluid's own number current as its source, weighted by the mass squared. <strong>So the extra structure is not a constitutive law but a source</strong>: the fluid carries a field and the field is generated by the fluid's own current. The classical object this names is a <em>charged fluid</em>, and the response $J^{\mu}=m^{2}A^{\mu}$ is the London response of a collisionless plasma or a superconductor, where the mass term is the Meissner mass.</p>
+<p>which is Maxwell's equation with the fluid's own number current as its source, weighted by the mass squared. <strong>So the extra structure is not a constitutive law but a source</strong>: the fluid carries a field and the field is generated by the fluid's own current. The classical object this names is a <em>charged fluid</em>, and the response $J_\mu=m^{2}A_\mu$ is the London response of a collisionless plasma or a superconductor, where the mass term is the Meissner mass.</p>
 <p><strong>So the three correspondences are three different kinds of extra structure, and the list is short and complete.</strong></p>
 <div class="table-scroll"><table>
 <thead>
@@ -373,9 +373,9 @@ $$</p>
 <p><strong>The three structures are the three ways a classical medium can differ from a dust</strong>: by remembering the gradient of its state (Korteweg), by carrying an internal field of its own (London), or by carrying an internal orientation (Cosserat). Each field picks exactly one. That is the sense in which the correspondence is systematic and not a pile of coincidences.</p>
 <p><strong>The Madelung pair generalizes, but into a pair of a different shape.</strong> In the scalar case the two real equations are both scalar — continuity and a Hamilton–Jacobi equation with the quantum potential — and they close because the field is one complex function. Here the pair is one scalar and one vector:</p>
 <p>$$
-\underbrace{\partial_\mu\bigl(r u^{\mu}\bigr)=0}_{\text{one scalar}}
+\underbrace{\sum_\mu\partial_\mu\bigl(r u_\mu\bigr)=0}_{\text{one scalar}}
 \qquad\text{and}\qquad
-\underbrace{\partial_\nu F^{\nu\mu}=m^{2}r\,u^{\mu}}_{\text{three components}} .
+\underbrace{\sum_\nu\partial_\nu F_{\nu\mu}=m^{2}r\,u_\mu}_{\text{three components}} .
 $$</p>
 <p><strong>The second member is a field equation and not a Hamilton–Jacobi equation, and that is the honest statement of what is missing.</strong> A Hamilton–Jacobi equation is an equation for a phase, and there is no phase: the material sector is real. What stands in its place is the vector equation for the field strength, which is <em>more</em> than a Hamilton–Jacobi equation in the sense that it has three components and not one.</p>
 <p><strong>The count is one equation per parameter in all three cases, and the numbers double.</strong></p>
@@ -410,7 +410,7 @@ $$</p>
 </tbody>
 </table></div>
 <p><strong>The doubling is the doubling of the algebra's real dimension at each step</strong>, and the equation count tracks it exactly. That is the cleanest evidence that none of the three is a truncation of another.</p>
-<p><strong>The sharpest structural difference, and it is a difference in what the continuity equation <em>is</em>.</strong> In the Klein–Gordon case the current is a Noether current and the continuity equation holds for every $m$, including $m=0$; the density is a genuine charge. Here the continuity equation is <em>forced by the mass</em>: the Proca equation contracts against $\partial_\mu$ to give $0=m^{2}\partial_\mu A^{\mu}$, so the Lorenz condition holds if and only if $m\ne0$. <strong>In the massless limit the fluid's continuity equation evaporates</strong>, and the reason is that a massless potential is a gauge field with no gauge-invariant density to conserve — the photon has no fluid. So the Proca fluid's density is not a charge in the Noether sense; it is a quantity that the mass makes available.</p>
+<p><strong>The sharpest structural difference, and it is a difference in what the continuity equation <em>is</em>.</strong> In the Klein–Gordon case the current is a Noether current and the continuity equation holds for every $m$, including $m=0$; the density is a genuine charge. Here the continuity equation is <em>forced by the mass</em>: the Proca equation contracts against $\partial_\mu$ to give $0=m^{2}\sum_\mu\partial_\mu A_\mu$, so the Lorenz condition holds if and only if $m\ne0$. <strong>In the massless limit the fluid's continuity equation evaporates</strong>, and the reason is that a massless potential is a gauge field with no gauge-invariant density to conserve — the photon has no fluid. So the Proca fluid's density is not a charge in the Noether sense; it is a quantity that the mass makes available.</p>
 <p><strong>The quantum correspondence runs the other way, and this is worth stating because a reader will ask.</strong> For the Klein–Gordon and Dirac equations the fluid reading is the Bohmian one, and the quantum content is a second-gradient term in the fluid: $Q_{\mathrm{qnt}}=-\hbar^{2}\Box r/(2mr)$ in the scalar case, and the spin's own transport in the spinor case. <strong>For the Proca field the fluid reading is not Bohmian, because there is no phase to guide anything.</strong> The quantum content is instead the term $\tfrac14r(\partial\theta_{\mathrm{rpd}})^{2}$ in the scale equation, which is a classical object with a classical meaning: it is the energy stored in the shearing of the flow's frame, the analogue of the centrifugal term in a rotating flow. The literature this belongs to is not Bohmian mechanics but the quantum hydrodynamic model of a plasma — the Schrödinger–Maxwell and Schrödinger–Poisson systems, where a charged fluid carries its own field and the quantum correction enters the momentum balance as a density-gradient stress. <strong>That is the correct contemporary home for a Proca fluid</strong>, and the correspondence with the other two articles of the block is by analogy of role and not by identity of term.</p>
 <p><strong>What the analogy supports and what it does not.</strong> It supports the claim that each of the three field equations is the equation of motion of a recognizable classical medium, and it supports the count, the forces and the equation-of-state readings item by item — those are the content of §§<em>The Euler Equation</em>–<em>The Stress, and What the Word Cannot See</em>. It does not support the claim that the Proca fluid's spin is a fluid variable, that its stress is perfect, or that a phase exists to be guided: those three absences are proved above and are not repairs to be made later.</p>
 <h2 id="the-degenerate-set">The Degenerate Set</h2>
@@ -429,7 +429,7 @@ $$</p>
 <p><strong>The potential is the current, which is true of no other field in the block.</strong> $A_\mu=ru_\mu$, so the Lorenz condition is $\partial_\mu(ru^\mu)=0$ and is the continuity equation outright. There is no choice of which density is conserved, and no bilinear to compute.</p>
 <p><strong>The Euler equation carries two forces.</strong> The gradient of the density's logarithm is the pressure force of a stiff fluid, $p=\epsilon=\tfrac12m^{2}r^{2}$, and the field strength along the flow is the only non-gradient force in any of the three field fluids. An irrotational flow is geodesic; a flow that accelerates does so because its field strength is not the density gradient.</p>
 <p><strong>The field strength is the vorticity plus the density gradient's wedge with the flow.</strong> $F=\mathrm{d}r\wedge u+r\omega$, so the vorticity is a readout of the field strength and the spin is the rest of it. The vorticity is rank two for every solution and the field strength is not, which is the precise sense in which the field's tensor carries more than the fluid's.</p>
-<p><strong>The correspondence exists, and its skeleton is the other two's.</strong> The forward arrow is exact and total: any timelike potential is a density and a flow. The reverse arrow is total as well — every unit flow with a positive density gives a potential — which makes the Proca case the most permissive of the three; what is conditional is only closure. The closure is $\partial_\nu F^{\nu\mu}=m^{2}ru^{\mu}$, Maxwell's equation with the fluid's own current as source, and the response $J=m^{2}A$ is the London response of a charged fluid. The three fields therefore pick the three ways a medium can exceed a dust: a gradient of the state (Korteweg), an internal source (London), an internal orientation (Cosserat). The pair is one scalar plus one vector, four equations for four parameters, and the counts run $2,4,8$.</p>
+<p><strong>The correspondence exists, and its skeleton is the other two's.</strong> The forward arrow is exact and total: any timelike potential is a density and a flow. The reverse arrow is total as well — every unit flow with a positive density gives a potential — which makes the Proca case the most permissive of the three; what is conditional is only closure. The closure is $\sum_\nu\partial_\nu F_{\nu\mu}=m^{2}ru_\mu$, Maxwell's equation with the fluid's own current as source, and the response $J=m^{2}A$ is the London response of a charged fluid. The three fields therefore pick the three ways a medium can exceed a dust: a gradient of the state (Korteweg), an internal source (London), an internal orientation (Cosserat). The pair is one scalar plus one vector, four equations for four parameters, and the counts run $2,4,8$.</p>
 <p><strong>The word cannot see the spin, and that is the contrast with the spinor case.</strong> The Dirac word over-describes its fluid and the Proca word under-describes its field; the spin-½ spin is in both and the spin-1 spin is in neither the word nor the fluid. The stress says so: its mass term is perfect and its field-strength term is anisotropic and unrepresentable in four parameters.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -493,7 +493,7 @@ $$</p>
 <td>the projector onto the rest space</td>
 </tr>
 <tr>
-<td>$\nabla_\mu=\Delta_\mu{}^\nu\partial_\nu$</td>
+<td>$\nabla_\mu=\sum_\nu\Delta_{\mu\nu}\partial_\nu$</td>
 <td>the transverse gradient</td>
 </tr>
 <tr>
@@ -517,7 +517,7 @@ $$</p>
 <li>A. Clebsch, <em>Über eine allgemeine Transformation der hydrodynamischen Gleichungen</em>, J. Reine Angew. Math. <strong>54</strong> (1857), 293–312, for the potential representation of a rotational velocity that §<em>The Field Strength Is the Vorticity Plus a Baroclinic Term</em> uses in its rank remark.</li>
 <li>James Clerk Maxwell, "On stresses in rarified gases arising from inequalities of temperature," <em>Philosophical Transactions of the Royal Society</em> <strong>170</strong> (1879) 231–256, for the stress of a medium whose anisotropy is not a pressure.</li>
 <li>Clifford M. Will, <em>Theory and Experiment in Gravitational Physics</em> (Cambridge University Press, 1993), §4, for the stiff equation of state $p=\epsilon$ and its role as the limiting causal fluid.</li>
-<li>Fritz London and Heinz London, "Supraleitung und Diamagnetismus," <em>Physica</em> <strong>2</strong> (1935) 341–354, for the response $J^{\mu}\propto A^{\mu}$ that the Proca mass term is, and hence for the reading of the mass as a Meissner mass.</li>
+<li>Fritz London and Heinz London, "Supraleitung und Diamagnetismus," <em>Physica</em> <strong>2</strong> (1935) 341–354, for the response $J_\mu\propto A_\mu$ that the Proca mass term is, and hence for the reading of the mass as a Meissner mass.</li>
 <li>Giovanni Manfredi, "How to model quantum plasmas," <em>Fields Institute Communications</em> <strong>46</strong> (2005) 263–287, for the quantum hydrodynamic model in which a charged fluid carries its own field and the quantum correction enters the momentum balance as a density-gradient stress — the correct home for a Proca fluid, as opposed to the Bohmian one.</li>
 <li>The companion articles: <a href="the-proca-equation-in-biquaternionic-polar-variables.html">The Proca Equation in Biquaternionic Polar Variables</a>, <a href="the-proca-equation-massive-spin-1-in-biquaternionic-form.html">The Proca Equation: Massive Spin 1 in Biquaternionic Form</a>, <a href="the-klein-gordon-fluid.html">The Klein–Gordon Fluid</a>, <a href="the-spin-fluid-of-the-biquaternion-dirac-field.html">The Spin Fluid of the Biquaternion Dirac Field</a>, <a href="the-clebsch-potentials-and-the-rank-of-the-vorticity.html">The Clebsch Potentials and the Rank of the Vorticity</a>, <a href="the-third-polarization-and-the-self-dual-split-of-the-massive-field-strength.html">The Third Polarization and the Self-Dual Split of the Massive Field Strength</a>, and the charged companion <a href="the-charged-proca-fluid.html">The Charged Proca Fluid</a>, which doubles the carrier, splits the current in three and turns the incompressibility into an amplitude.</li>
 </ul>

@@ -72,13 +72,13 @@
 <h2 id="introduction">Introduction</h2>
 <p><strong>The coupling is one substitution and the action shows it as one substitution.</strong> In <a href="the-lagrangian-of-the-schrodinger-fluid.html">The Lagrangian of the Schrödinger Fluid</a> the Lagrangian has four terms. Here two of the four change in a single way — the phase's derivative becomes a covariant derivative — and the third does not change at all. That asymmetry is the type argument of <a href="the-charged-schrodinger-fluid.html">The Charged Schrödinger Fluid</a>, and the action is where it is visible without a decomposition.</p>
 <p><strong>Three results.</strong></p>
-<p><em>First, the minimal substitution acts inside the brackets and nowhere else.</em> The two replacements are $\partial_{t'}S\mapsto\partial_{t'}S-ϙ\varphi$ and $\nabla S\mapsto\nabla S+ϙ\vec A$, and they are the two slots of one object: the four-derivative of the phase. The gradient energy is untouched.</p>
+<p><em>First, the minimal substitution acts inside the brackets and nowhere else.</em> The two replacements are $\partial_{t'}S\mapsto\partial_{t'}S-ϙ\varphi$ and $\nabla S\mapsto\nabla S-q\vec A$, and they are the two slots of one object: the four-derivative of the phase. The gradient energy is untouched.</p>
 <p><em>Second, the Lagrangian density is gauge invariant term by term, and not up to a total derivative.</em> The shift of the phase and the shift of the potential cancel inside each bracket, so no boundary term is needed and the invariance is exact in the density.</p>
 <p><em>Third, the action supplies the Clebsch structure that a rotational fluid needs, and it supplies it as a potential rather than as an extra pair of fields.</em> The velocity is $\vec\pi/m$, a gradient plus a potential; its curl is $ϙ\vec B/m$, which is the block's unconditional identity, and the rank is two because a three-vector curl is a rank-two object.</p>
 <p><strong>Position in the block.</strong> This is the variational companion of <a href="the-charged-schrodinger-fluid.html">The Charged Schrödinger Fluid</a> and the second of the eight articles of this layer. It is the only one of the eight whose equation is first order, and therefore the only one in which the two slots of a single covariant derivative exhaust the action's dependence on the phase, with no shell term between them.</p>
 <p><strong>Conventions.</strong> Those of the free companion, with the connection added: $ϙ$ is the coupling and equals minus the electric charge, $q=-ϙ$; $\varphi$ and $\vec A$ are the scalar and vector potentials; $\vec E=-\nabla\varphi-\partial_{t'}\vec A$ and $\vec B=\nabla\times\vec A$; a gauge transformation is $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+ϙ\Gamma/\hbar$, $\varphi\mapsto\varphi+\partial_{t'}\Gamma$, $\vec A\mapsto\vec A-\nabla\Gamma$. The field is $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$, $\rho_{\mathrm{num}}=r^{2}$, and the covariant derivative is $\partial_\mu+\frac{iϙ}{\hbar}A_\mu$, so the mechanical momentum is $\tilde P^{\mathrm{mech}}=\tilde P+ϙ\tilde A$.</p>
 <h2 id="the-action-in-the-fluid-variables">The Action in the Fluid Variables</h2>
-<p><strong>The free action's two slots are the two places the connection can go, and it goes to both.</strong> With $S=\hbar\theta_{\mathrm{pha}}$ and $\vec\pi=\nabla S+ϙ\vec A$,</p>
+<p><strong>The free action's two slots are the two places the connection can go, and it goes to both.</strong> With $S=\hbar\theta_{\mathrm{pha}}$ and $\vec\pi=\nabla S-q\vec A$,</p>
 <p>$$
 \boxed{\;\mathcal L_{\mathrm{fl}}=-\rho_{\mathrm{num}}\Bigl(\partial_{t'}S-ϙ\varphi+\frac{\vec\pi^{2}}{2m}\Bigr)-\frac{\hbar^{2}}{2m}(\nabla r)^{2}\;}
 $$</p>
@@ -122,7 +122,7 @@ $$</p>
 <p>$$
 \partial_{t'}S-ϙ\varphi\longmapsto\partial_{t'}S+ϙ\partial_{t'}\Gamma-ϙ\varphi-ϙ\partial_{t'}\Gamma=\partial_{t'}S-ϙ\varphi,
 $$</p>
-<p>and under $\vec A\mapsto\vec A-\nabla\Gamma$ the combination $\nabla S+ϙ\vec A$ is fixed by the same cancellation. The amplitude and the gradient energy do not move. So every term of $\mathcal L_{\mathrm{fl}}$ is separately invariant, and the action is invariant without a boundary term.</p>
+<p>and under $\vec A\mapsto\vec A-\nabla\Gamma$ the combination $\nabla S-q\vec A$ is fixed by the same cancellation. The amplitude and the gradient energy do not move. So every term of $\mathcal L_{\mathrm{fl}}$ is separately invariant, and the action is invariant without a boundary term.</p>
 <p><strong>The invariance is stronger than the free article's and it is a different kind.</strong> The free action is invariant under a constant shift of the phase, which is a global symmetry with a Noether current. This one is invariant under a <em>local</em> shift, which is a redundancy and not a symmetry: the current it implies is the charge current, and its conservation is an identity rather than a consequence of the equations. <strong>A local invariance gives no conserved quantity beyond the one the global subgroup gives</strong>, and the global subgroup here is the constant shift, whose current is $ϙ\rho_{\mathrm{num}}$ — the charge density.</p>
 <p><strong>The canonical energy is gauge dependent and the fluid's energy is not.</strong> The Legendre transform of $\mathcal L_{\mathrm{fl}}$ in $\dot S$ gives $\rho_{\mathrm{num}}\vec\pi^{2}/2m+\mathcal E_{\mathrm{grad}}-\rho_{\mathrm{num}}ϙ\varphi$, which moves under a gauge transformation; the quantity $\mathcal E$ of the energy equation does not. This is the standard situation for a charged field, and it is worth stating because it limits what the article may call the fluid's energy: <strong>$\mathcal E$ is the kinetic energy and it is gauge invariant; the canonical energy is the matter action's and only the sum with the field's energy is physical.</strong> No thermodynamics is intended here, and the third category's local thermal state is a different object.</p>
 <h2 id="what-the-fluid-variational-principle-adds-and-does-not-add">What the Fluid Variational Principle Adds and Does Not Add</h2>
@@ -139,7 +139,7 @@ $$</p>
 </li>
 </ol>
 <h2 id="summary">Summary</h2>
-<p><strong>The action.</strong> $\mathcal L_{\mathrm{fl}}=-\rho_{\mathrm{num}}(\partial_{t'}S-ϙ\varphi+\vec\pi^{2}/2m)-\frac{\hbar^{2}}{2m}(\nabla r)^{2}$, with $\vec\pi=\nabla S+ϙ\vec A$.</p>
+<p><strong>The action.</strong> $\mathcal L_{\mathrm{fl}}=-\rho_{\mathrm{num}}(\partial_{t'}S-ϙ\varphi+\vec\pi^{2}/2m)-\frac{\hbar^{2}}{2m}(\nabla r)^{2}$, with $\vec\pi=\nabla S-q\vec A$.</p>
 <p><strong>The variations.</strong> The phase gives continuity with $\vec j=\rho_{\mathrm{num}}\vec v$; the amplitude gives $\mathcal E=\vec\pi^{2}/2m+Q$; the gradient of the second is $\mathrm{D}\vec\pi/\mathrm{D}t=-ϙ(\vec E+\vec v\times\vec B)-\nabla Q$, which is the standard Lorentz force for $q=-ϙ$.</p>
 <p><strong>The coupling.</strong> One substitution in the phase's four-derivative. Two terms changed, one untouched, and the untouched one is the whole of the quantum correction.</p>
 <p><strong>The Clebsch structure.</strong> The velocity is a gradient plus a potential, so the connection <em>is</em> the second Clebsch potential and the vorticity's rank is two. The pair costs nothing because it is the field.</p>
@@ -174,7 +174,7 @@ $$</p>
 <td>Time slot of the covariant derivative; the kinetic energy's negative</td>
 </tr>
 <tr>
-<td>$\vec\pi=\nabla S+ϙ\vec A$</td>
+<td>$\vec\pi=\nabla S-q\vec A$</td>
 <td>Kinetic momentum; gauge invariant</td>
 </tr>
 <tr>

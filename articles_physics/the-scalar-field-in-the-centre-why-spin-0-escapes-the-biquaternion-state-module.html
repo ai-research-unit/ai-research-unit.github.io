@@ -124,8 +124,8 @@ $$</p>
 $$</p>
 <p>the <strong>centre</strong> of the algebra. The result was confirmed independently by solving the condition over the eight real coordinates of $\tilde{Q}$: the system has rank six and nullity two, so the solution space is the real two-dimensional subspace spanned by $e_t$ and $ie_t$, as stated.</p>
 <p>The algebraic statement is therefore exact: <strong>the elements of $\mathbb{B}$ that are invariant under the conjugation action of the rotation subgroup are precisely the central elements.</strong> The traceless part transforms instead as the adjoint action, so under rotations the algebra separates into the centre, which is spin $0$, and the traceless part, which is spin $1$, while the carrier of states carries spin $\tfrac{1}{2}$. A spin-$0$ field has no alternative but the centre.</p>
-<h3 id="the-centre-is-a-subalgebra-not-a-carrier">The Centre Is a Subalgebra, Not a Carrier</h3>
-<p>It matters that the centre is a subalgebra and not a carrier, because that is what separates the scalar from the state structurally. The centre is closed under multiplication, because central elements commute and their product is again central,</p>
+<h3 id="the-centre-is-a-subalgebra-and-not-a-module">The Centre Is a Subalgebra and Not a Module</h3>
+<p>It matters that the centre is a subalgebra and not a module, because that is what separates the scalar from the state structurally. The centre is not outside the carrier structure: it is the spin-$0$ carrier, and its carrier is the adjoint action, under which it is fixed pointwise. What it is not is a module, and the next paragraphs show why. The centre is closed under multiplication, because central elements commute and their product is again central,</p>
 <p>$$
 (Q_te_t)(R_te_t)=(Q_tR_t)e_t\in\mathbb{B}_{C},
 $$</p>
@@ -139,7 +139,7 @@ $$</p>
 <p>The distinction has a second, more elementary face. A state that carries a pure state is a <strong>zero divisor</strong>, as shown above. A nonzero central element $\lambda e_t$, by contrast, is invertible, with inverse $\lambda^{-1}e_t$. The nonzero elements of the scalar line are invertible; the states are the algebra's zero divisors. They cannot be the same space, and they do not overlap except at zero.</p>
 <h2 id="three-obstructions-one-reason">Three Obstructions, One Reason</h2>
 <p>The carrier of states cannot host a spin-$0$ field for three reasons, one for each object involved: the carrier, the algebra, and the product of two states.</p>
-<h3 id="no-one-dimensional-carrier">No One-Dimensional Carrier</h3>
+<h3 id="no-one-dimensional-module">No One-Dimensional Module</h3>
 <p>Suppose a one-dimensional subspace is carried into itself by every left multiplication. Choose a nonzero $\tilde{Ξ}$ in it. Then $\tilde{Q}\tilde{Ξ}=\lambda(\tilde{Q})\tilde{Ξ}$ for every $\tilde{Q}$, with $\lambda(\tilde{Q})$ a complex number. The map $\lambda$ is multiplicative, $\lambda(\tilde{Q}_1\tilde{Q}_2)=\lambda(\tilde{Q}_1)\lambda(\tilde{Q}_2)$, and $\lambda(e_t)=1$. From $\vec e_\eta^2=-e_t$,</p>
 <p>$$
 \lambda(\vec e_\eta)^2=-1,
@@ -148,7 +148,7 @@ $$</p>
 <p>$$
 \lambda(\vec e_x)\lambda(\vec e_y)=\lambda(\vec e_z).
 $$</p>
-<p>The product of two numbers each equal to $\pm i$ is $\pm1$, while $\lambda(\vec e_z)$ is $\pm i$. The equation has no solution, and no one-dimensional carrier exists. The check was repeated over all eight sign choices, with no nonzero solution.</p>
+<p>The product of two numbers each equal to $\pm i$ is $\pm1$, while $\lambda(\vec e_z)$ is $\pm i$. The equation has no solution, and no one-dimensional module exists. The check was repeated over all eight sign choices, with no nonzero solution.</p>
 <p>The consequence is immediate. A scalar field carries the trivial action: the algebra does nothing to its value. If that value were a carrier of the left action, the carrier would be one-dimensional and invariant. No such subspace exists. The value of a scalar is therefore not a value of the state action. The carrier is not "the carrier with spin $0$" as against "the carrier with spin $\tfrac{1}{2}$": every carrier of the left action is at least two-dimensional and carries spin $\tfrac{1}{2}$. The spin-$0$ value has to be found outside the carrier.</p>
 <h3 id="the-invariant-subspace-is-the-centre">The Invariant Subspace Is the Centre</h3>
 <p>If one insists on locating the scalar inside the algebra rather than in a carrier, the centralizer computation settles where. Under the rotation subgroup the algebra separates into spin $0$ and spin $1$. Under the full Lorentz action $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$ there is no nonzero invariant, because each sector is carried into itself and carries the four-vector action; the centre, fixed by the rotations, is carried out of itself by a boost. The only rotationally invariant elements are central. A scalar field, being invariant under rotations, must therefore take its values in $\mathbb{B}_{C}$, and there is nothing else it could take them in.</p>
@@ -166,7 +166,7 @@ H=\tfrac12\left(\tilde{Ξ}\tilde\xi^{*}+\tilde\xi\tilde{Ξ}^*\right)\in\mathbb{B
 $$</p>
 <p>which is Hermitian for every pair, unlike the single product $\tilde{Ξ}\tilde\xi^{*}$. Its scalar part is $\sigma=\mathrm{Sc}\,H$; the physical four-vector is $iH\in\mathbb{B}_{\Phi}$, and $\sigma$ is the coefficient of its time direction. Under a rotation $\sigma$ is unchanged; under a boost it is not, and the next section records the check.</p>
 <p>This is the algebraic content of the standard fact that a spin-$0$ object can be built from two spin-$\tfrac{1}{2}$ objects but is not itself one: the trivial action of the rotation subgroup sits in the product, not in either factor. The companion article <em>The Dirac Equation in Biquaternionic Form</em> uses the same products when it forms the Dirac current and the Dirac scalar, and the companion article <em>The Spinor Module in Biquaternionic Form and Its Lorentz Action</em> develops the pairings and their invariance properties explicitly.</p>
-<h2 id="the-sector-question-neither-math135-nor-math136">The Sector Question: Neither $\mathbb{B}_{\Phi}$ nor $\mathbb{B}_{\Psi}$</h2>
+<h2 id="the-sector-question-neither-math136-nor-math137">The Sector Question: Neither $\mathbb{B}_{\Phi}$ nor $\mathbb{B}_{\Psi}$</h2>
 <p>The framework's central algebraic fact is the split into the anti-Hermitian material sector $\mathbb{B}_{\Phi}$ and the Hermitian informational sector $\mathbb{B}_{\Psi}$. The companion article <em>The Klein–Gordon Equation in Biquaternionic Form</em> asked whether the second-order scalar structure organizes itself by this split, and found that it does not: because the d'Alembertian is central and scalar, the split merely separates a complex solution into its real and imaginary parts, giving two $i$-related copies of one real solution space rather than a particle–antiparticle or state–operator pair. The algebra above explains why, and it also says what the split <em>does</em> mean for a scalar.</p>
 <p>The scalar field's value space is the centre, and the centre meets each sector in exactly one real direction: the real scalar direction $e_t$ lies in $\mathbb{B}_{\Psi}$, and the imaginary scalar direction $ie_t$ lies in $\mathbb{B}_{\Phi}$. A complex scalar $\Xi=\xi_{\mathrm{scl}} e_t$ with $\xi_{\mathrm{scl}}=\xi_{\mathrm{scl},1}+i\xi_{\mathrm{scl},2}$ and $\xi_{\mathrm{scl},1},\xi_{\mathrm{scl},2}\in\mathbb{R}$ therefore splits as</p>
 <p>$$
