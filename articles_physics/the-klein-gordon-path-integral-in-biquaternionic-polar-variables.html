@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Klein–Gordon Path Integral in Biquaternionic Polar Variables — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-kleingordon-path-integral-in-biquaternionic-polar-variables"><strong>The Klein–Gordon Path Integral in Biquaternionic Polar Variables</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The integral is the companion's, and this article is a reading of it.</strong> <em>The Klein–Gordon Path Integral in Biquaternionic Form</em> defines the functional integral over central-valued fields, evaluates the free Gaussian on a lattice, and identifies its two-point function with the propagator. This article substitutes the polar word into that integral and reads where each factor of the word lands.</p>
+<p><strong>The word on a central field is two functions and a sign.</strong> The boost factor has neither rapidity nor axis to carry and is $e_t$; the rotor has neither angle nor axis and is the sign that the branch of the modulus deposits. What survives is the scale $r$ and the angle $\theta_{\mathrm{pha}}$, both central. The collapse is the companion article's, <em>The Klein–Gordon Equation in Biquaternionic Polar Variables</em>, §<em>The collapse of the word</em>, and none of its theory is repeated here.</p>
+<p><strong>Three things change, and they are the article's content.</strong> First, the measure gains a Jacobian at every point of spacetime. Second, the exponent splits into a scale part and a phase part, and the phase enters only through its derivatives. Third, the two Euler–Lagrange equations of the variational companion become the two stationary points of the two integrals.</p>
+<p><strong>The findings are five, and each is one sentence.</strong></p>
+<ul>
+<li>The measure is $\prod_x r\,\mathrm{d}r\,\mathrm{d}\theta$: a product over points of one factor and two differentials, and the product is a number on a lattice and a formal divergence in the continuum.</li>
+<li>The chart's failure at a node costs nothing, because the Jacobian vanishes exactly where $r$ does.</li>
+<li>Stationarity in the scale gives the amplitude equation and stationarity in the angle gives the transport equation, so the polar pair of the variational companion is the two saddles of this one integral.</li>
+<li>The Euclidean chart is a sum of four squares, so convergence is term by term and the only obstruction is a negative mass squared.</li>
+<li>The change of variables is exact through the cancellation of three factors — the Jacobian, the determinant of the parameter metric, and the Fresnel factor of the Gaussian.</li>
+</ul>
+<p><strong>What the article does not do.</strong> It does not produce a second integral, does not define the continuum measure, and does not treat an interaction. The pair $(r,\theta_{\mathrm{pha}})$ is a coordinate system on the field, so the value of the integral cannot change; what changes is which object in it is legible.</p>
+<h2 id="conventions">Conventions</h2>
+<p>The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$, $\vec e_\mu^{2}=-e_t$, $i$ central, $\mathrm{Sc}$ the coefficient of $e_t$ and $\mathrm{Tr}=2\,\mathrm{Sc}$. The pairing is the Hermitian $\mathrm{Sc}(\cdot^{*}\cdot)$. The word is $\tilde\Xi=r e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $r>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\tilde U_{\Psi,\mathrm b}$ the boost and $\tilde u_{\mathrm r}$ the rotor; the ranges are those of the polar equation article and are not restated.</p>
+<p><strong>The action and the weight.</strong> The companion's action is</p>
+<p>$$
+S[\tilde\Xi]=\hbar\int d^{4}r\;\Bigl[-\frac{1}{2}\sum_\mu\mathrm{Sc}\bigl(\partial_\mu\tilde\Xi^{*}\,\partial_\mu\tilde\Xi\bigr)-\frac{1}{2}k_m^{2}\,\mathrm{Sc}\bigl(\tilde\Xi^{*}\tilde\Xi\bigr)\Bigr],
+$$</p>
+<p>with the index summed over the four slots of the material coordinate and with $\partial/\partial R_t=-i\,\partial/\partial r'_t$ carrying the metric. The weight of one configuration is $\exp(iS/\hbar)$, central and $*$-unitary. On a central field $\tilde\Xi=re^{i\theta_{\mathrm{pha}}}e_t$ the weight becomes</p>
+<p>$$
+\frac{i}{\hbar}S=\frac{i}{2}\int d^{4}r\;\Bigl[(\partial_{r'_t}r)^{2}-\lvert\nabla r\rvert^{2}
++r^{2}\Bigl((\partial_{r'_t}\theta_{\mathrm{pha}})^{2}-\lvert\nabla\theta_{\mathrm{pha}}\rvert^{2}\Bigr)-k_m^{2}r^{2}\Bigr].
+$$</p>
+<p><strong>The factor two, stated once.</strong> The bracket is the Madelung functional of the variational companion, <em>The Variational Principle and the Klein–Gordon Equation in Biquaternionic Polar Variables</em>, §<em>The action, assembled</em>, which writes it without the $\hbar$ and without the $\tfrac12$. The companion's action is $\hbar$ times the half of it, so the weight is $\exp(\tfrac{i}{2}S_{\mathrm{Madelung}})$. The stationarity is unaffected by the constant, and every equation below is the variational companion's.</p>
+<h2 id="the-word-on-a-central-field">The Word on a Central Field</h2>
+<p><strong>One block of the metric survives.</strong> The polar variational companion writes the kinetic Lagrangian as $g_{ab}(p)\partial_\mu p^{a}\partial_\mu p^{b}$ over eight parameters with the pull-back metric of the word. On a central field the rapidity vanishes, the axes are frozen and the rotor is a sign, so the metric is diagonal with $g_{rr}=1$ and $g_{\theta\theta}=r^{2}$ and every other entry zero. The exponent is therefore one diagonal quadratic form in two real functions.</p>
+<p><strong>The sign is bookkeeping and not a parameter.</strong> The chart holds the angle in $(-\pi/2,\pi/2]$ and deposits the half turn in the rotor's sign, so the pair $(r,\theta_{\mathrm{pha}},\varepsilon)$ with $\varepsilon=\pm1$ is a bijection onto the nonzero complex scalars. The measure below integrates the angle over a full turn; the two halves of the turn with the two signs are the same domain written twice. <strong>The sign is a chart of the circle and contributes no factor to the measure</strong>, and the count of parameters at each point is two.</p>
+<p><strong>Nothing in the exponent prefers a sign.</strong> The action depends on $r$, on $\partial r$, on $\partial\theta_{\mathrm{pha}}$ and on $r^{2}$, and on $\varepsilon$ not at all. So the two signs of one configuration carry the same weight, and the sum over them is a factor of two per point in a quantity that is only ever used as a ratio.</p>
+<h2 id="the-measure">The Measure</h2>
+<p><strong>The substitution is a change of variables at each point.</strong> At one point the complex field is two real numbers and the chart is the polar map of the plane, so</p>
+<p>$$
+\mathcal{D}\tilde\Xi=\prod_{x}r(x)\,\mathrm{d}r(x)\,\mathrm{d}\theta_{\mathrm{pha}}(x),
+$$</p>
+<p>and the Jacobian is the product of the radial factor over the points. Nothing else appears: no derivative, no dependence on the angle, no dependence on the other point of any pair. <strong>The polar measure is a functional of the scale alone.</strong></p>
+<p><strong>On a lattice the product is finite and the measure is exact.</strong> At $N$ sites the substitution is an ordinary change of variables in $\mathbb{R}^{2N}$, the Jacobian is $\prod_{i}r_i$, and the integral is an ordinary $2N$-dimensional integral. This is the companion's own regulator, and the polar form uses the same one.</p>
+<p><strong>In the continuum the product is formal, and the article says so.</strong> The product $\prod_x r(x)$ is $\exp\bigl(\int d^{4}x\,\ln r(x)\,\delta^{(4)}(0)\bigr)$, which is divergent at every point and requires a subtraction. This is not a new difficulty: it is the companion's measure problem, and it appears in the chart as one explicit factor rather than as a general warning. <strong>The chart's contribution is to name the object the difficulty lives in</strong>, and the name is the radial Jacobian.</p>
+<p><strong>What the measure does not contain.</strong> It is invariant under a central phase, because $r$ is. It is positive, because $r>0$. It does not couple the scale to the angle. Each of the three statements is used below.</p>
+<h2 id="the-exponent">The Exponent</h2>
+<p><strong>Two terms and no cross term.</strong> The weight's bracket of §<em>Conventions</em> is a sum of a scale part, $(\partial_{r'_t}r)^{2}-\lvert\nabla r\rvert^{2}-k_m^{2}r^{2}$, and a phase part, $r^{2}\bigl((\partial_{r'_t}\theta_{\mathrm{pha}})^{2}-\lvert\nabla\theta_{\mathrm{pha}}\rvert^{2}\bigr)$. The two are separate because a central field's word is a product of a real function and a unit, and the derivative of a product separates into the derivative of the modulus and the modulus times the derivative of the phase.</p>
+<p><strong>The phase enters through its derivatives and through nothing else.</strong> No term of the exponent contains $\theta_{\mathrm{pha}}$. The angle is a cyclic coordinate at every point, and the gauge transformation of the coupled companion is the translation of that coordinate. In the free case the consequence is the article's main structural fact: <strong>the phase is integrated over a circle at every point and its value nowhere appears</strong>, so the phase integral sees only the gradient field.</p>
+<p><strong>The scale enters twice, and the second time is the coupling.</strong> The scale appears as its own gradient and as the weight $r^{2}$ of the phase's square. That weight is the density, so the chart's exponent is the statement that the phase's kinetic term is the density times the squared four-gradient of the action. The variational companion says the same thing with the statement that the frame density multiplies the bracket.</p>
+<h2 id="the-two-saddles-are-the-companions-pair">The Two Saddles Are the Companion's Pair</h2>
+<p><strong>Stationarity in the scale.</strong> Varying $r$ in the bracket of §<em>Conventions</em> gives</p>
+<p>$$
+\Box_\Phi r=r\Bigl[k_m^{2}-\bigl(\partial_{r'_t}\theta_{\mathrm{pha}}\bigr)^{2}+\lvert\nabla\theta_{\mathrm{pha}}\rvert^{2}\Bigr],
+$$</p>
+<p>which is the amplitude equation of the polar equation article, §<em>The amplitude equation</em>, rearranged. Read through $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$ and multiplied by $\hbar^{2}$, it is $(\partial_{r'_t}S_{\tilde\Xi})^{2}-\lvert\nabla S_{\tilde\Xi}\rvert^{2}=m^{2}c^{2}-\hbar^{2}\Box_\Phi r/r$, the mass shell shifted by the quantum potential.</p>
+<p><strong>Stationarity in the angle.</strong> Varying $\theta_{\mathrm{pha}}$ gives</p>
+<p>$$
+\nabla\cdot\bigl(r^{2}\nabla\theta_{\mathrm{pha}}\bigr)-\frac{\partial}{\partial r'_t}\Bigl(r^{2}\frac{\partial\theta_{\mathrm{pha}}}{\partial r'_t}\Bigr)=0,
+$$</p>
+<p>which is the transport equation, §<em>The transport equation</em>. It is the divergence of the density times the phase gradient, and the density times the phase gradient is the current.</p>
+<p><strong>The pair is therefore the two saddles, and this is one statement and not two.</strong> The variational companion derives the pair from one functional and exhibits it as two equations; the integral exhibits the same pair as the stationary conditions of two nested integrals. <strong>The chart's reading of the pair is that the amplitude equation is the scale's saddle and the transport equation is the angle's saddle</strong>, and the identification is exact.</p>
+<p><strong>The check is exact in one direction.</strong> Take one interior point of a chain with two links, weights $w_1=0.83$ and $w_2=1.47$, link phases $-0.61$ and $0.29$, and fixed endpoints $0.11$ and $-0.74$. The integral of the weight over the interior angle evaluates to $0.867685832861$ by quadrature, and the stationary value times the Fresnel factor $\sqrt{\pi/\alpha}$ evaluates to $0.867685832861$, a relative agreement of $1.2\times10^{-13}$; the stationary point satisfies the discrete divergence condition to $4\times10^{-16}$ against a link current of $0.28$. <strong>The phase integral is its saddle times a Fresnel factor, and the saddle is the transport equation.</strong></p>
+<h2 id="the-phase-is-a-constraint-and-not-a-field">The Phase Is a Constraint and Not a Field</h2>
+<p><strong>The angle's integral is a Gaussian and its content is a determinant and a condition.</strong> Because the exponent is quadratic in $\partial\theta_{\mathrm{pha}}$ and free of $\theta_{\mathrm{pha}}$, integrating the angle gives the inverse square root of the determinant of $-\partial_\mu r^{2}\partial_\mu$ and, whenever the integrand carries an insertion that depends on the angle, a factor supported on configurations whose current is conserved. <strong>The transport equation is not an equation of motion in this reading; it is what the phase leaves behind.</strong></p>
+<p><strong>What the insertion costs.</strong> The companion's generating functional couples a central source, and in the chart that source is $J^{*}r e^{i\theta_{\mathrm{pha}}}$ plus its conjugate. The source multiplies the phase's exponential, so it is the one object in the article that sees the value of the angle and not its gradient. With a source the angle's integral stops being Gaussian. <strong>The chart's statement of what a source does is that it couples to the coordinate whose gradient the free theory conserves</strong>, which is the functional form of the statement that a source changes the charge.</p>
+<p><strong>What the constraint is not.</strong> The constraint is the divergence of a current and not the vanishing of a field, so it removes one function of four variables and leaves the amplitude free. The count matches the companion's: one complex field is two real functions, and one constraint on one of them leaves one amplitude and one transverse phase.</p>
+<h2 id="the-scales-integral">The Scale's Integral</h2>
+<p><strong>At fixed angle the scale's integral is Gaussian.</strong> The bracket is quadratic in $r$ and in $\partial r$, with the coefficient $r^{2}\bigl((\partial_{t}\theta)^{2}-\lvert\nabla\theta\rvert^{2}\bigr)-k_m^{2}$ multiplying $r^{2}$. So the two integrals are nested and either may be done first, and the chart's two orders are the two saddles of §<em>The Two Saddles Are the Companion's Pair</em> in the opposite order.</p>
+<p><strong>The radial domain is automatic.</strong> The Cartesian integral runs over the whole plane at each point; the chart's runs over $r\ge0$ with the weight $r$, and the two agree because the polar map of the plane is onto the half-line with that Jacobian. There is no image of $r<0$ to compensate.</p>
+<p><strong>The scale's integral is not Gaussian once the angle is summed.</strong> The coefficient of $r^{2}$ is the phase's squared gradient, which is integrated over, so the effective action for the scale is not quadratic. The chart's exponent is therefore a Gaussian in one variable and a quartic-type coupling in the other, and the coupling is the term $r^{2}(\partial\theta)^{2}$ that the variational companion calls the density's weight of the bracket.</p>
+<h2 id="the-change-of-variables-exactly">The Change of Variables, Exactly</h2>
+<p><strong>Three factors must cancel, and they do.</strong> A change of variables in a Gaussian changes three things: the measure (Jacobian $\prod r$), the quadratic form (the parameter metric, whose determinant is $\prod r^{2}$ for the central block), and the Fresnel factor (the inverse square root of the determinant, hence $\prod r^{-1}$). The product is one. <strong>The exactness of the polar reading is the cancellation of these three factors</strong>, and it is the reason the chart can claim to read the integral without changing it.</p>
+<p><strong>The cancellation is checked twice, once as an integral and once as a determinant.</strong> The two-site Euclidean Gaussian with quadratic form $\xi^{\dagger}A\xi$ and $A=\begin{pmatrix}1.7&0.4\\0.4&1.1\end{pmatrix}$ evaluates to $5.771698480169$ in Cartesian variables, which is $\pi^{2}/\det A$, and to $5.771698480169$ in the chart with the measure $r_1\mathrm{d}r_1\mathrm{d}\theta_1\,r_2\mathrm{d}r_2\mathrm{d}\theta_2$, a relative agreement of $3.7\times10^{-15}$. Separately, on three sites with random scales and angles, the determinant of the polar second variation divided by $\prod r_i^{2}$ times the Cartesian determinant is $1.000000000000000$. <strong>The Jacobian, the metric and the Fresnel factor are one factor written three ways.</strong></p>
+<p><strong>The identity $\lvert\partial\xi\rvert^{2}=(\partial r)^{2}+r^{2}(\partial\theta)^{2}$ is the pointwise version.</strong> It holds exactly for the analytic derivative, and to the second order of the difference scheme for a finite one: the residual of a centred difference of step $10^{-2}$, $5\times10^{-3}$ and $2.5\times10^{-3}$ is $3.96\times10^{-5}$, $9.90\times10^{-6}$ and $2.48\times10^{-6}$, falling by four as the step halves. <strong>The chart is exact in the continuum and is a product rule away from it on a lattice.</strong></p>
+<h2 id="the-nodes">The Nodes</h2>
+<p><strong>The chart fails where the field vanishes, and the measure does not.</strong> The word needs $r>0$, and on the centre $r=0$ is exactly the nodal set of the wave. The polar measure carries the factor $r$, so the neighbourhood of a node carries weight proportional to $r$ and contributes nothing. <strong>The set where the chart fails is the set where the Jacobian vanishes</strong>, and the two integrals agree for that reason and not by a limiting argument.</p>
+<p><strong>What is lost is differentiability and not the integral.</strong> The action is undefined at a node because the phase of zero is undefined, and the current vanishes there. The variational companion writes the pair on the products $\rho_{\mathrm{num}}\partial S_{\tilde\Xi}$, which stay differentiable, and the integral's version of the same repair is that the weight of the offending configurations is zero. <strong>The chart's domain is the complement of the nodal set, and the complement has full measure in the polar measure.</strong></p>
+<h2 id="the-euclidean-chart">The Euclidean Chart</h2>
+<p><strong>The Wick rotation turns the bracket into four squares.</strong> With $i r'_t=c\tau$ the bracket of §<em>Conventions</em> becomes</p>
+<p>$$
+S_{E}=\frac{1}{2}\int d^{4}r_{E}\;\Bigl[(\partial_{c\tau}r)^{2}+\lvert\nabla r\rvert^{2}
++r^{2}\Bigl((\partial_{c\tau}\theta_{\mathrm{pha}})^{2}+\lvert\nabla\theta_{\mathrm{pha}}\rvert^{2}\Bigr)+k_m^{2}r^{2}\Bigr],
+$$</p>
+<p>and the weight is $\exp(-S_E)$. Four terms and every one of them positive. <strong>The convergence of the Euclidean functional is term by term in the chart</strong>, and this is the sharpest form of the companion's statement that the Euclidean quadratic form is the biquaternion norm on the quaternion subspace.</p>
+<p><strong>The mass is the only term that can change sign.</strong> For $k_m^{2}<0$ the last term is negative, the radial integral grows at large $r$, and it does so uniformly in the angle because no other term contains $\theta_{\mathrm{pha}}$'s value. <strong>The instability is radial and it is in the zero mode</strong>, which is the companion's tachyon statement read as the failure of one of the four squares.</p>
+<p><strong>The marginal case is visible in the chart and not in the Cartesian form.</strong> At $k_m^{2}=0$ the constant mode has no restoring term in either variable, and the radial weight $r\,\mathrm{d}r$ leaves the integral of that mode divergent at large $r$. The chart names the mode: it is the one with $r$ constant and $\theta_{\mathrm{pha}}$ constant.</p>
+<p><strong>The angle is compact and the weight is its measure.</strong> In the Euclidean chart the phase runs over a circle with the weight $r^{2}(\partial\theta)^{2}$, which is the form of the planar model with a radial stiffness. The chart does not add a mechanism here; it records that the two variables of the exponent are one compact and one non-compact, and that the compact one appears only through its gradient.</p>
+<h2 id="the-semiclassical-word">The Semiclassical Word</h2>
+<p><strong>The saddle is the classical field and the second variation is the parameter metric.</strong> Expanding the bracket about a solution of the pair, the quadratic term is $g_{ab}(p)\partial_\mu\delta p^{a}\partial_\mu\delta p^{b}$ evaluated at the solution, with $g$ the polar variational companion's metric. The prefactor is the inverse square root of that operator's determinant. <strong>The chart's one-loop factor is the determinant of the metric's operator</strong>, and it is central because $g$ is built from $r$ and $\theta_{\mathrm{pha}}$ alone.</p>
+<p><strong>The chart's determinant is the Cartesian one times the Jacobian's square.</strong> That is the previous section's cancellation at the level of the fluctuation operator, and it is what makes the prefactor transform correctly: the amplitude gains $\prod r^{-1}$ from the determinant, the measure contributes $\prod r$, and the leftover $\prod r^{-1}$ is exactly the Jacobian of the change of variables in the amplitude.</p>
+<p><strong>The Fresnel phase is the same constant counted in the same way.</strong> Each integrated direction contributes $\sqrt{\pi/\alpha}$ with $\alpha$ complex in the Minkowski case, hence a phase $\arg(i^{-1/2})$ per direction, and the chart does not change the count. <strong>The polar form relocates the constant and does not produce it</strong>, which is the same finding as the free polar article's for the single-particle integral.</p>
+<h2 id="the-placement-table">The Placement Table</h2>
+<p><strong>Each factor of the word lands in one place, and the field case differs from the single-particle case.</strong> The scale is in the measure, through the Jacobian, and in the exponent, through its gradient and through the density that weights the phase. The angle is in the exponent, through its gradient only. The boost and the rotor do not appear, and their absence is the statement that a central field has neither.</p>
+<p><strong>Against the single-particle chart, the difference is the gradient.</strong> For one history the scale is a number and lives in the measure alone, because a number has no derivative. For a field the scale is a function, so it has a gradient, and the gradient is a term of the exponent. <strong>The scale is in the measure in both cases and in the exponent in one of them</strong>, and the asymmetry is the difference between a path and a field.</p>
+<p><strong>The gauge transformation would move one entry of the table.</strong> A central phase multiplies the field, which in the chart translates $\theta_{\mathrm{pha}}$ and leaves $r$ and the measure alone. <strong>The measure is gauge invariant because the Jacobian is the scale and the scale is gauge invariant</strong>, and this is the fact the coupled companion turns on.</p>
+<h2 id="what-the-polar-reading-adds-and-does-not-add">What the Polar Reading Adds and Does Not Add</h2>
+<p><strong>Adds.</strong></p>
+<ul>
+<li>The measure's content, named: a radial Jacobian per point, exact on a lattice and formal in the continuum.</li>
+<li>The two saddles of one integral identified with the polar pair of the variational companion, one of them exact in one direction to $10^{-13}$.</li>
+<li>The phase's role, stated structurally: a Gaussian whose saddle is the transport equation, hence a constraint and not a field.</li>
+<li>The nodes' invisibility, as a consequence of the Jacobian and not as a convention.</li>
+<li>The Euclidean chart as four squares, with the tachyon and the marginal case located in one term each.</li>
+<li>The exactness of the change of variables, as the cancellation of three factors, checked as an integral and as a determinant.</li>
+<li>The placement table, and with it the reason the field chart carries the scale twice where the single-particle chart carries it once.</li>
+</ul>
+<p><strong>Does not add.</strong> No new value: the integral is the companion's number. No continuum measure and no regularisation of the Jacobian. No interaction. No statement about the operator setting. No fermionic-statistics question, which is not present for a scalar.</p>
+<p><strong>The honest ledger.</strong> The chart contributes one object the element form does not exhibit, the radial Jacobian; one identity the element form does not exhibit, the two saddles; and one reading, the phase as a constraint. It contributes nothing to the value, which is the point of a coordinate change, and it contributes a sharper statement of the measure problem, which is the point of doing it.</p>
+<h2 id="open-questions">Open Questions</h2>
+<ol>
+<li>
+<p><strong>The Jacobian's regularisation.</strong> Whether the product $\prod_x r(x)$ admits a subtraction that is natural to the framework — from the trace form, or from the biquaternion norm, or from the real structure — rather than the lattice's, is not settled. The chart makes the question one-dimensional per point, which may make it easier; it does not answer it.</p>
+</li>
+<li>
+<p><strong>The winding sectors.</strong> The angle is compact, so the field space splits by the winding of $\theta_{\mathrm{pha}}$ on a closed surface. Whether the polar integral in a fixed winding sector is a distinct object, and whether the sectors are summed with phases, is not treated. The variational companion's circulation is the classical shadow of the same question.</p>
+</li>
+<li>
+<p><strong>The constraint's determinant.</strong> The angle's integral produces the inverse square root of the determinant of $-\partial_\mu r^{2}\partial_\mu$, which depends on the scale and is therefore not a constant. Whether that determinant has a closed form on a lattice, and whether its scale dependence cancels against the radial integral, is not shown.</p>
+</li>
+<li>
+<p><strong>The interaction.</strong> A central interaction $\lambda r^{4}$ adds one term to the bracket and leaves the chart's structure unchanged; the exponent stays free of $\theta_{\mathrm{pha}}$'s value, so the phase remains a constraint. The article does not pursue it, and the statement is a conjecture about the chart and not a computation.</p>
+</li>
+<li>
+<p><strong>The sign $\varepsilon$.</strong> The article treats the sign as chart bookkeeping and sums it. Whether the two signs are distinguishable in any correlation function of the field — as opposed to of the word — is not examined, and the exponent's independence of the sign says they are not.</p>
+</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>The Klein–Gordon functional integral read in the word is the integral over a scale and an angle at every point, with the measure $r\,\mathrm{d}r\,\mathrm{d}\theta$ and the exponent</p>
+<p>$$
+\frac{i}{2}\int d^{4}r\;\Bigl[(\partial_{r'_t}r)^{2}-\lvert\nabla r\rvert^{2}
++r^{2}\Bigl((\partial_{r'_t}\theta_{\mathrm{pha}})^{2}-\lvert\nabla\theta_{\mathrm{pha}}\rvert^{2}\Bigr)-k_m^{2}r^{2}\Bigr].
+$$</p>
+<p>Three structural facts follow. The measure is a functional of the scale alone, so it is gauge invariant and positive, and its continuum form is a product over points that is exact on a lattice and formal in the continuum. The exponent is free of the angle's value, so the angle's integral is a Gaussian whose saddle is the transport equation: <strong>the phase is a constraint, and the pair of the variational companion is the pair of saddles.</strong> The chart's failure at the nodes is invisible, because the Jacobian vanishes there.</p>
+<p>The change of variables is exact through three factors that cancel: the Jacobian of the measure, the determinant of the parameter metric, and the Fresnel factor of the Gaussian. The integral agrees with the Cartesian one to $3.7\times10^{-15}$ on a two-site lattice, and the determinant ratio is one to machine precision. In the Euclidean chart the exponent is four squares, so convergence is term by term and the only obstruction is a negative mass squared, which appears as the failure of the last square alone.</p>
+<p>The placement table is the reading. The scale sits in the measure and in the exponent, because a function has a gradient where a number does not. The angle sits in the exponent and only through its gradient. The boost and the rotor are absent, which is what a central field is.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde\Xi=r e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$</td>
+<td>The polar word; on a central field the last two factors are $e_t$ and $\pm e_t$</td>
+</tr>
+<tr>
+<td>$r>0$</td>
+<td>The scale; the modulus of the coefficient</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$</td>
+<td>The angle; the action over $\hbar$, reduced into the range</td>
+</tr>
+<tr>
+<td>$\varepsilon=\pm1$</td>
+<td>The branch sign of the modulus; the chart's other half turn</td>
+</tr>
+<tr>
+<td>$\mathcal{D}\tilde\Xi=\prod_x r\,\mathrm{d}r\,\mathrm{d}\theta_{\mathrm{pha}}$</td>
+<td>The polar measure; its Jacobian is the scale at each point</td>
+</tr>
+<tr>
+<td>$S[\tilde\Xi]$</td>
+<td>The companion's action; central, real, quadratic</td>
+</tr>
+<tr>
+<td>$\exp(iS/\hbar)$</td>
+<td>The weight; central and $*$-unitary</td>
+</tr>
+<tr>
+<td>$g_{ab}$</td>
+<td>The parameter metric of the polar variational companion; $g_{rr}=1$, $g_{\theta\theta}=r^{2}$ on the centre</td>
+</tr>
+<tr>
+<td>$S_{\mathrm{Madelung}}$</td>
+<td>The variational companion's polar action; the weight is $\exp(\tfrac{i}{2}S_{\mathrm{Madelung}})$</td>
+</tr>
+<tr>
+<td>$\Box_\Phi r=r\bigl[k_m^{2}-(\partial_{r'_t}\theta_{\mathrm{pha}})^{2}+\lvert\nabla\theta_{\mathrm{pha}}\rvert^{2}\bigr]$</td>
+<td>The amplitude equation; the scale's saddle</td>
+</tr>
+<tr>
+<td>$\partial_\mu(\rho_{\mathrm{num}}\partial^{\mu}\theta_{\mathrm{pha}})=0$</td>
+<td>The transport equation; the angle's saddle</td>
+</tr>
+<tr>
+<td>$\rho_{\mathrm{num}}=r^{2}$</td>
+<td>The density</td>
+</tr>
+<tr>
+<td>$S_{E}$</td>
+<td>The Euclidean bracket; four squares</td>
+</tr>
+<tr>
+<td>$k_m=mc/\hbar$</td>
+<td>The mass parameter</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-klein-gordon-path-integral-in-biquaternionic-form.html">The Klein–Gordon Path Integral in Biquaternionic Form</a>, the companion, for the integral read here: the configuration space, the Gaussian, the lattice regulator and the Wick rotation.</li>
+<li><a href="the-klein-gordon-equation-in-biquaternionic-polar-variables.html">The Klein–Gordon Equation in Biquaternionic Polar Variables</a>, for the collapse of the word on a central field, the amplitude equation and the transport equation.</li>
+<li><a href="the-variational-principle-and-the-klein-gordon-equation-in-biquaternionic-polar-variables.html">The Variational Principle and the Klein–Gordon Equation in Biquaternionic Polar Variables</a>, for the parameter metric, the Madelung action and the current.</li>
+<li><a href="the-klein-gordon-propagator-and-its-greens-functions-in-biquaternionic-form.html">The Klein–Gordon Propagator and Its Green's Functions in Biquaternionic Form</a>, for the two-point function that the Gaussian's inverse is.</li>
+<li><a href="the-scalar-field-in-the-centre-why-spin-0-escapes-the-biquaternion-state-module.html">The Scalar Field in the Centre: Why Spin 0 Escapes the Biquaternion State Module</a>, for why the configuration space is the centre.</li>
+<li><a href="interpretation-of-the-wick-rotation-in-the-biquaternion-universe.html">Interpretation of the Wick Rotation in the Biquaternion Universe</a>, for the sector relabelling behind the Euclidean chart.</li>
+<li><a href="the-path-integral-and-the-coupled-klein-gordon-equation-in-biquaternionic-polar-variables.html">The Path Integral and the Coupled Klein–Gordon Equation in Biquaternionic Polar Variables</a>, for the same chart with a connection, where the measure's gauge invariance is used.</li>
+<li>J. Glimm and A. Jaffe, <em>Quantum Physics: A Functional Integral Point of View</em> (Springer, 1987), for the lattice definition of a scalar functional integral and the status of the continuum measure.</li>
+<li>L. D. Faddeev and A. A. Slavnov, <em>Gauge Fields: An Introduction to Quantum Theory</em> (Benjamin, 1980), for the change of variables in a functional integral and the determinants it produces.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

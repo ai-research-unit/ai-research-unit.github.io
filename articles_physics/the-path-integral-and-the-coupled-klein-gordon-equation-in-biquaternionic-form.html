@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Path Integral and the Coupled Klein–Gordon Equation in Biquaternionic Form — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-path-integral-and-the-coupled-kleingordon-equation-in-biquaternionic-form"><strong>The Path Integral and the Coupled Klein–Gordon Equation in Biquaternionic Form</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>This article puts the coupled scalar action into the functional integral.</strong> <em>The Klein–Gordon Path Integral in Biquaternionic Form</em> defines the integral over central-valued fields and evaluates the free Gaussian. <em>The Variational Principle and the Coupled Klein–Gordon Equation in Biquaternionic Form</em> supplies the action with the covariant derivative in every slot. Joining the two costs one substitution and produces one new structure, and the structure is the subject of the article.</p>
+<p><strong>The substitution.</strong> Minimal coupling replaces $\tilde\nabla_\Phi$ by $\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$ in the kinetic term. Nothing else changes: the field stays in the centre, the measure stays flat, the mass term stays $k_m^{2}\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$, and the phase stays central and $*$-unitary.</p>
+<p><strong>The finding is one sentence, and the article is its unfolding.</strong> The exponent splits into three terms — the free one, a term linear in the potential times the current, and a term quadratic in the potential with no derivative — and the third term is what makes the sum gauge invariant, so the integral cannot be built from the current alone.</p>
+<p><strong>Four consequences follow, and each is stated exactly or checked.</strong></p>
+<ul>
+<li>The split is an algebraic identity, exact for every connection and every field, checked to $6\times10^{-15}$.</li>
+<li>The gauge transformation of the integration variable is a rotation of the two real components at each point, so the measure is invariant with no Jacobian, and on a lattice the invariance requires the phase to be carried in an exponential link and not in a linear one.</li>
+<li>The Gaussian inverts the paired operator $\sum_\mu(\partial_\mu-\bar c_\mu)(\partial_\mu+c_\mu)-k_m^{2}$, which is the equation's operator for a purely vector connection and is not the equation's operator for a scalar potential.</li>
+<li>The current is the first variation of the integral with respect to the connection, and its conservation is the differentiated form of the measure's invariance.</li>
+</ul>
+<p><strong>What the article does not do.</strong> It does not produce a new prediction: the integral is the standard charged scalar's. It does not construct the continuum measure. It does not resolve the sign question that the variational companion records; it locates that question at the pole of the propagator, where it is observable, and stops there.</p>
+<h2 id="conventions">Conventions</h2>
+<p>The algebra and the pairing are the free companion's: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $e_t=1$, $\vec e_\mu^{2}=-e_t$, $i$ central, $\mathrm{Sc}(\cdot^{*}\cdot)$ Hermitian. The covariant derivative and its conjugate are</p>
+<p>$$
+\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi,
+\qquad
+\tilde\nabla_{\mathrm{gco}}^{\natural}=(\tilde\nabla_\Phi)^{\natural}+\frac{i\,ϙ}{\hbar}\tilde A_\Phi^{\natural},
+$$</p>
+<p>with $\natural$ on the units and never on the connection's coefficients, which are scalars. Write $c_\mu=\frac{iϙ}{\hbar}A_\mu$ for the slot's coefficient, so that the covariant derivative is $\partial_\mu+c_\mu$ acting coefficient-wise. The material convention of the coupled companions is $A_t=i a'_t$ with $a'_t$ real and $\vec A$ real, so $c_t$ is real and the three $c_\eta$ are imaginary.</p>
+<p><strong>The action and the weight.</strong> The variational companion's matter action,</p>
+<p>$$
+S_{\mathrm{gco}}[\tilde\Xi,\tilde A]=\hbar\int\mathrm{d}^{4}x\;\Bigl\{-\frac{1}{2}\sum_\mu\mathrm{Sc}\Bigl[\bigl(\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi\bigr)^{*}\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi\Bigr]-\frac{1}{2}k_m^{2}\,\mathrm{Sc}\bigl[\tilde\Xi^{*}\tilde\Xi\bigr]\Bigr\},
+$$</p>
+<p>is the exponent, in the free companion's normalisation and with the covariant derivative in every slot, with the weight $\exp(iS_{\mathrm{gco}}/\hbar)$. <strong>The overall sign and the $\frac12$ are the free companion's and none of the statements below depends on either</strong>; what the coupling changes is that the derivative is no longer the plain one. The connection is held fixed in the integral over the field, and the field is held fixed in the integral over the connection; this article treats the first.</p>
+<p><strong>Which equation the action selects.</strong> The variational companion shows that the covariant square of a central field is not central: $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}(\xi e_t)=\bigl(\sum_\mu D_\mu^{2}\xi\bigr)e_t+\frac{iϙ}{\hbar}\xi\tilde F$, with a vector part that no central field can carry. The action's kinetic term is the sum of squared moduli of one slot each, and its variation produces $\Box_{\mathrm{gco}}=\sum_\mu\tilde\nabla_{\mathrm{gco},\mu}^{2}$ and not the adjoint-paired square. <strong>The action is the arbiter, and it selects the component equation.</strong> The integral inherits the choice, and §<em>The Quadratic Form and the Operator It Inverts</em> says how the choice appears in it.</p>
+<h2 id="the-exponent-splits-into-three-terms">The Exponent Splits into Three Terms</h2>
+<p><strong>The identity.</strong> For one slot and one central coefficient,</p>
+<p>$$
+\bigl\lvert\partial_\mu\Xi+c_\mu\Xi\bigr\rvert^{2}
+=\bigl\lvert\partial_\mu\Xi\bigr\rvert^{2}
++2\,\mathrm{Re}\bigl(\bar c_\mu\,\Xi^{*}\partial_\mu\Xi\bigr)
++\lvert c_\mu\rvert^{2}\lvert\Xi\rvert^{2},
+$$</p>
+<p>which is the expansion of a squared modulus and holds for every field and every connection. Summed over the four slots it gives</p>
+<p>$$
+S_{\mathrm{gco}}=S_{0}+\int\mathrm{d}^{4}x\;\Bigl[2\,\mathrm{Re}\sum_\mu\bar c_\mu\,\Xi^{*}\partial_\mu\Xi+\sum_\mu\lvert c_\mu\rvert^{2}\lvert\Xi\rvert^{2}\Bigr],
+$$</p>
+<p>with $S_0$ the free action. <strong>The three terms are the free action, the current times the potential, and the potential squared.</strong></p>
+<p><strong>The split is checked as an identity.</strong> On a seven-site chain with a random complex field and random real and imaginary coefficients, the difference of the two sides of the summed identity is $6\times10^{-15}$ relative to the sum, which is the arithmetic of the same quantity computed twice. The identity is exact and the number only locates it.</p>
+<p><strong>The middle term is the current.</strong> The variational companion writes the current as $J_\mu=2\,\mathrm{Re}\,\mathrm{Sc}\bigl[i\tilde\Xi^{*}\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi\bigr]$, and for a central field with the covariant derivative's coefficient $c_\mu$ the comparison gives</p>
+<p>$$
+2\,\mathrm{Re}\bigl(\bar c_\mu\Xi^{*}\partial_\mu\Xi\bigr)=-\frac{ϙ}{\hbar}A_\mu J_\mu
+$$</p>
+<p>up to the term that carries $c_\mu$ twice, which is the third. <strong>The interaction is therefore the current times the potential plus the potential squared, and no other object appears.</strong></p>
+<p><strong>The third term has no derivative, and that is its function.</strong> It is the term a "current times potential" presentation omits. It is also the term that makes the exponent invariant: the current's term alone changes by a total derivative under a gauge transformation, and the potential-squared term is what supplies the rest. <strong>The gauge invariance of the exponent is a cancellation between the second and third terms</strong>, and the article states the cancellation before it states the consequence, because the consequence is the next section.</p>
+<p><strong>For fixed connection the exponent is quadratic in the field.</strong> Every term of the split is quadratic in $\Xi$ and the coefficients are fixed numbers, so the functional integral is a Gaussian for every connection, with a quadratic form that carries the $A^{2}$ term as part of its coefficient. <strong>The coupling does not spoil the Gaussian; it moves the quadratic form.</strong></p>
+<h2 id="the-measure-and-gauge-invariance">The Measure and Gauge Invariance</h2>
+<p><strong>The transformation is a rotation at each point.</strong> Write $\tilde\Xi\mapsto e^{iϑ_{\mathrm{gau}}}\tilde\Xi$ with $ϑ_{\mathrm{gau}}=ϙ\Lambda/\hbar$ and $\Lambda$ real. At one point the field is two real numbers, and the transformation rotates the pair by the angle $ϑ_{\mathrm{gau}}(x)$. A rotation has unit determinant, so the flat measure $\prod_x\mathrm{d}\Xi_1\mathrm{d}\Xi_2$ is invariant with no Jacobian at all. <strong>The measure's invariance is the statement that a local phase is orthogonal.</strong></p>
+<p><strong>The lattice version, and the one technical requirement.</strong> On a lattice the covariant difference between neighbouring sites must carry the phase as an exponential and not as a linear term. A link $U_{j}=e^{i(\Lambda_{j}-\Lambda_{j+1})}$ makes the determinant of the quadratic form equal to the free one exactly: the ratio of determinants for a random pure-gauge link field on six sites is $1.00000000000000$. The linearised link $U_j=1+i(\Lambda_j-\Lambda_{j+1})$ gives a ratio of $22.15$ on the same configuration. <strong>The invariance is exact for the Wilson link and approximate for the linear one</strong>, and the difference is the difference between a gauge transformation of the lattice and its first-order shadow.</p>
+<p><strong>What the invariance buys.</strong> The matter action, the mass term and the measure are each invariant, so the integral is a functional of the connection's gauge orbit and not of the connection. The variational companion says the same thing about the action; the integral adds the measure, and the measure's invariance is what makes the statement a statement about the integral and not only about the integrand.</p>
+<p><strong>What it does not buy.</strong> The integral is not invariant under a transformation that moves the field and leaves the connection fixed, and that is the definition of a gauge symmetry rather than a symmetry. The article keeps the two apart throughout, because the current's conservation below is a consequence of the first and would be a false statement under the second.</p>
+<h2 id="the-quadratic-form-and-the-operator-it-inverts">The Quadratic Form and the Operator It Inverts</h2>
+<p><strong>The operator.</strong> Integrating by parts once per slot moves the derivative onto the first factor and leaves</p>
+<p>$$
+S_{\mathrm{gco}}=-\frac{\hbar}{2}\int\mathrm{d}^{4}x\;\mathrm{Sc}\Bigl[\tilde\Xi^{*}\Bigl(\sum_\mu\bigl(\partial_\mu-\bar c_\mu\bigr)\bigl(\partial_\mu+c_\mu\bigr)-k_m^{2}\Bigr)\tilde\Xi\Bigr]
+$$</p>
+<p>up to a boundary term, so the Gaussian's inverse is the paired operator's Green's function. <strong>The free companion's statement that the two-point function is the inverse of the quadratic form survives the coupling with the paired operator in place of the d'Alembertian.</strong></p>
+<p><strong>The two operators differ, and by one term.</strong> The paired operator and the square of the covariant derivative are related by</p>
+<p>$$
+\sum_\mu\bigl(\partial_\mu-\bar c_\mu\bigr)\bigl(\partial_\mu+c_\mu\bigr)
+-\sum_\mu\bigl(\partial_\mu+c_\mu\bigr)^{2}
+=-\sum_\mu\bigl(\bar c_\mu+c_\mu\bigr)\bigl(\partial_\mu+c_\mu\bigr),
+$$</p>
+<p>which is exact as a composition of operators. <strong>The two coincide exactly when $\bar c_\mu=-c_\mu$ in every slot</strong>, which is the case of a purely imaginary coefficient.</p>
+<p><strong>Which slots satisfy the condition.</strong> The three spatial slots satisfy it for a real vector potential, because $\bar c_\eta=-i\frac{ϙ}{\hbar}A_\eta=-c_\eta$. The temporal slot does not, because $c_t=-\frac{ϙ}{\hbar}a'_t$ is real and $\bar c_t=c_t$. <strong>A purely vector connection gives one operator and a scalar potential gives two</strong>, and this is the variational companion's bookkeeping point reached from the integral's side.</p>
+<p><strong>The symbols, measured.</strong> Applying each operator to a plane wave on a periodic grid of $256$ points with wave number $3$, the squared operator's symbol for a real coefficient $0.31$ is $-8.8876+1.86i$ and the paired operator's is $-9.0798$, real; for an imaginary coefficient $1.30i$ both are $-18.4667$ and they agree to machine zero. The free value at the same wave number is $-8.9837$. <strong>The imaginary coefficient shifts the pair together and the real one separates them</strong>, and the separation has an imaginary part that the paired form does not have.</p>
+<p><strong>The pole, in the two cases.</strong> For a purely vector connection the shell is the free one at the shifted wave number, $\vec\kappa=\vec k+\frac{ϙ}{\hbar}\vec A$, exactly and with no residual. For a constant scalar potential the two operators give two different shells:</p>
+<p>$$
+\text{squared:}\quad\bigl(\omega-c_t\bigr)^{2}-\lvert\vec\kappa\rvert^{2}-k_m^{2}=0,
+\qquad
+\text{paired:}\quad\omega^{2}-\lvert\vec\kappa\rvert^{2}-k_m^{2}-c_t^{2}=0 .
+$$</p>
+<p>The first is the variational companion's $E\mapsto E+ϙ c\,a'_t$, the linear shift of the energy. The second has no linear shift and moves the mass squared by $c_t^{2}$. <strong>The two are different physics and they are produced by two different operators from the same coupling.</strong></p>
+<p><strong>What this does to the open question.</strong> The variational companion records the discrepancy between its action and its equation in the temporal slot and leaves it open. The integral does not close it; it changes its status. <strong>A functional integral does not choose an operator by convention: it inverts the one the action gives it</strong>, and the pole of the propagator is where the choice is measured. The article therefore states the paired shell as the integral's and the squared shell as the equation's, and records that a measurement of the scalar potential's effect on the propagator's pole would decide between them.</p>
+<h2 id="the-current-is-the-first-variation-and-its-conservation-is-an-identity">The Current Is the First Variation, and Its Conservation Is an Identity</h2>
+<p><strong>The derivative of the integral.</strong> Because the connection appears in the exponent, differentiating the generating functional with respect to $A_\mu(x)$ brings down the current. For a fixed source,</p>
+<p>$$
+\frac{\delta}{\delta A_\mu(x)}\ln Z[J,\tilde A]=i\,\frac{ϙ}{\hbar}\,\bigl\langle J_\mu(x)\bigr\rangle ,
+$$</p>
+<p>with $J_\mu$ the variational companion's current. <strong>The current is not a separate construction in the integral's language: it is the response of the integral to the connection.</strong></p>
+<p><strong>The conservation is the measure's invariance, differentiated.</strong> Rotate the integration variable locally and use the measure's invariance; the exponent's change is a total divergence plus the field equation's terms, and the identity that survives is</p>
+<p>$$
+\partial_\mu\bigl\langle J_\mu(x)\bigr\rangle=0 ,
+$$</p>
+<p>in every correlation function and not only on the solutions. This is the Ward identity of the central phase symmetry, and it is the integral's form of the variational companion's second-Noether argument. <strong>The companion derives the conservation from the equations; the integral derives it from the measure</strong>, and the integral's version is the stronger one because it does not require the field to be on shell.</p>
+<p><strong>The check already quoted is the check of this section.</strong> The determinant of the quadratic form is unchanged by a pure-gauge link to machine precision, and that invariance is the differentiated identity's source. A generating functional whose determinant does not move under a pure-gauge link is a generating functional whose current is conserved.</p>
+<p><strong>What the identity is not.</strong> It is not the statement that the current is the source of the connection's equation; that is the second variation of the total action, and it belongs to the variational companion. The integral states one half of the pair — that the current is conserved in every correlation function — and the other half is a classical statement about the connection.</p>
+<h2 id="the-two-readings-of-the-covariant-square-in-the-integral">The Two Readings of the Covariant Square, in the Integral</h2>
+<p><strong>The fork, restated as a choice of measure.</strong> The coupled equation article distinguishes two theories: the scalar projection, which keeps the field central and drops the curvature's vector part, and the full equation in $\mathbb{B}$, which lets the field acquire vector components and couples the four coefficients through the field strength. The integral makes the fork a choice of integration domain.</p>
+<p><strong>The measure over the centre inverts the paired scalar operator.</strong> That is the previous section, and it is the standard charged scalar. The free companion's remark that the field decouples on the four coefficients means the same integral over all of $\mathbb{B}$ is four decoupled copies of this one, with the same operator in each, and no curvature coupling — because a measure that is a product of four copies cannot mix them.</p>
+<p><strong>The curvature coupling needs a measure that does not factorise.</strong> The covariant square's vector part is $\frac{iϙ}{\hbar}\xi\tilde F$, linear in the field and in the field strength. Its scalar part is exactly $\sum_\mu D_\mu^{2}\xi$ and its vector part is the field strength term: on a grid with a constant field strength the scalar part agrees with $\sum_\mu D_\mu^{2}\xi$ to $1.8\times10^{-16}$ and the vector part agrees with $\frac{ϙ}{\hbar}\xi\,\mathrm{Vect}\tilde F$ to $5\times10^{-4}$, the residual being the difference scheme. <strong>The vector part is not small and it is not central</strong>, so a theory that carries it must integrate over the non-central directions.</p>
+<p><strong>What the article concludes about the fork.</strong> The integral over central fields is the standard theory and it is the one the action selects. The integral over $\mathbb{B}$ with the covariant square in the exponent would be a different theory, and whether it is admissible is the equation companion's open question, not this article's. <strong>The integral's contribution is to say that the two theories differ in their measure and not only in their operator.</strong></p>
+<h2 id="the-semiclassical-expansion">The Semiclassical Expansion</h2>
+<p><strong>The classical field and the source.</strong> With a source the stationary point of the exponent is $\Box_{\mathrm{gco}}\tilde\Xi-k_m^{2}\tilde\Xi=-\tilde J$, the coupled equation with a source, and the expansion about it separates into the classical action, a vanishing linear term, and the quadratic fluctuation. The one-loop factor is $[\det(\Box_{\mathrm{gco}}-k_m^{2})]^{-1/2}$ for the squared reading and $[\det(\text{paired}-k_m^{2})]^{-1/2}$ for the integral's, and the two differ by the term of §<em>The Quadratic Form and the Operator It Inverts</em>.</p>
+<p><strong>Everything remains central.</strong> The classical field is central, the fluctuation operator's coefficients are central, the determinant is a central scalar, and the effective action is the Legendre transform of a central functional. <strong>The coupling changes no object's type</strong>, which is the free companion's verdict and the coupled companion's, and the integral adds no exception.</p>
+<p><strong>The background-field reading.</strong> The determinant depends on the connection only through the covariant operator, so its variation with respect to $A_\mu$ is the current's two-point function and the same Ward identity holds at every order. The article states this and does not compute it; the one-loop determinant of a charged scalar in a background is a standard object and the algebra adds nothing to it.</p>
+<h2 id="what-the-integral-adds-and-does-not-add">What the Integral Adds and Does Not Add</h2>
+<p><strong>Adds.</strong></p>
+<ul>
+<li>The three-way split of the exponent, exact, with the potential-squared term identified as the one that carries the gauge invariance.</li>
+<li>The measure's invariance as a rotation, with the lattice requirement that the link be an exponential; the Wilson link reproduces the free determinant to machine precision and the linearised link does not.</li>
+<li>The identification of the operator the Gaussian inverts, and with it the statement that the integral and the equation can carry different poles in a scalar potential.</li>
+<li>The current as the first variation of the integral, and its conservation as the differentiated measure invariance rather than as a consequence of the equations.</li>
+<li>The fork between the two readings of the covariant square, restated as a choice of measure.</li>
+</ul>
+<p><strong>Does not add.</strong> No new prediction and no new solution: the integral is the standard charged scalar's. No continuum measure and no regularisation of the determinant's phase. No resolution of the scalar-potential sign question; the article sharpens it to a statement about the pole. No treatment of the interacting theory and none of the connection's own integral, which belongs to the gauge-field path integral article.</p>
+<p><strong>The honest ledger.</strong> The coupling contributes one term to the exponent, one freedom to the quadratic form, and one identity to the measure. Everything else — the centrality, the Gaussian, the semiclassical structure — is the free theory's, and the article's content is the location of the three.</p>
+<h2 id="open-questions">Open Questions</h2>
+<ol>
+<li>
+<p><strong>The pole in a scalar potential.</strong> The paired operator and the squared operator give two different shells, and the article does not decide which a physical propagator follows. The decision is a measurement or a first-principles argument about which operator the corpus's coupled equation should state, and the variational companion's open question is the same question.</p>
+</li>
+<li>
+<p><strong>The measure over $\mathbb{B}$.</strong> Whether an integral over the full algebra with the covariant square in the exponent is a consistent theory, and whether its measure can be defined, is open. The article states the fork and does not take a side.</p>
+</li>
+<li>
+<p><strong>The determinant's phase.</strong> The free companion leaves it open, and the coupling adds a dependence on the connection without changing the difficulty. A background with a nonzero field strength makes the operator's spectrum discrete in the transverse directions — the Landau levels of the equation companion — and the determinant's phase in that setting is a standard but unattractive computation.</p>
+</li>
+<li>
+<p><strong>The interacting theory.</strong> A central interaction $\lambda\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)^{2}$ preserves the centrality of every object and the flatness of the measure, and the three-way split survives with an extra term. Whether the algebra suggests a preferred normalisation is the free companion's question and is not pursued here.</p>
+</li>
+<li>
+<p><strong>The lattice's exponential link in four dimensions.</strong> The one-dimensional check in this article is exact; whether the four-dimensional Wilson-link formulation of the <em>matter</em> integral preserves the free two-point function to the same precision, and what its continuum limit is, is not shown.</p>
+</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>The coupled Klein–Gordon functional integral is the free one with the exponent's kinetic term covariantised, and its structure is the expansion of one squared modulus. The exponent splits into the free action, the current times the potential, and the potential squared, exactly and for every connection, the split checked to $6\times10^{-15}$. The third term carries the gauge invariance, so the coupling cannot be read as a current term alone.</p>
+<p>The measure is flat and the gauge transformation is a rotation at each point, so it is invariant with no Jacobian; on a lattice the invariance is exact only for a link that carries the phase in an exponential, and the free determinant is reproduced to machine precision in that case and not in the linearised one. The Gaussian inverts the paired operator: for a purely vector connection that is the equation's operator and the shell is the free one at the shifted wave number, and for a scalar potential the two operators differ and the difference is the variational companion's recorded cross term, here at the pole.</p>
+<p>The current is the first variation of the integral with respect to the connection, and its conservation is the differentiated invariance of the measure, so it holds in every correlation function. The two readings of the covariant square become a choice of measure: the centre inverts the scalar operator, and the curvature's vector part needs a measure that does not factorise. Everything else in the integral is central, and the coupling changes no object's type.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$</td>
+<td>The covariant derivative; coefficients central</td>
+</tr>
+<tr>
+<td>$c_\mu=\frac{iϙ}{\hbar}A_\mu$</td>
+<td>The slot's coefficient; $c_t$ real and $c_\eta$ imaginary for a material connection</td>
+</tr>
+<tr>
+<td>$S_{\mathrm{gco}}$</td>
+<td>The coupled matter action; the exponent's numerator</td>
+</tr>
+<tr>
+<td>$\exp(iS_{\mathrm{gco}}/\hbar)$</td>
+<td>The weight; central, $*$-unitary, invariant under a gauge transformation</td>
+</tr>
+<tr>
+<td>$S_0$</td>
+<td>The free action</td>
+</tr>
+<tr>
+<td>$J_\mu=2\,\mathrm{Re}\,\mathrm{Sc}\bigl[i\tilde\Xi^{*}\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi\bigr]$</td>
+<td>The current; the coefficient of the exponent's linear term</td>
+</tr>
+<tr>
+<td>$\sum_\mu\lvert c_\mu\rvert^{2}\lvert\Xi\rvert^{2}$</td>
+<td>The potential-squared term; no derivative</td>
+</tr>
+<tr>
+<td>$\prod_x\mathrm{d}\Xi_1\mathrm{d}\Xi_2$</td>
+<td>The flat measure; invariant under a local phase</td>
+</tr>
+<tr>
+<td>$U_j=e^{i(\Lambda_j-\Lambda_{j+1})}$</td>
+<td>The Wilson link; exact gauge invariance on the lattice</td>
+</tr>
+<tr>
+<td>$\sum_\mu(\partial_\mu-\bar c_\mu)(\partial_\mu+c_\mu)-k_m^{2}$</td>
+<td>The paired operator; the Gaussian's inverse</td>
+</tr>
+<tr>
+<td>$\Box_{\mathrm{gco}}=\sum_\mu\tilde\nabla_{\mathrm{gco},\mu}^{2}$</td>
+<td>The equation's operator; the squared reading</td>
+</tr>
+<tr>
+<td>$\bar c_\mu=-c_\mu$</td>
+<td>The condition for the two operators to coincide; holds for a vector connection</td>
+</tr>
+<tr>
+<td>$\vec\kappa=\vec k+\frac{ϙ}{\hbar}\vec A$</td>
+<td>The shifted wave number; the shell for a purely vector connection</td>
+</tr>
+<tr>
+<td>$\tilde F$</td>
+<td>The field strength; the vector part of the covariant square is $\frac{iϙ}{\hbar}\xi\tilde F$</td>
+</tr>
+<tr>
+<td>$k_m=mc/\hbar$</td>
+<td>The mass parameter</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-klein-gordon-path-integral-in-biquaternionic-form.html">The Klein–Gordon Path Integral in Biquaternionic Form</a>, for the free functional integral, its Gaussian and its lattice regulator, all of which this article reuses.</li>
+<li><a href="the-variational-principle-and-the-coupled-klein-gordon-equation-in-biquaternionic-form.html">The Variational Principle and the Coupled Klein–Gordon Equation in Biquaternionic Form</a>, for the coupled action, its variation in the field and in the connection, and the recorded discrepancy in the temporal slot.</li>
+<li><a href="the-coupled-klein-gordon-equation-in-biquaternionic-form.html">The Coupled Klein–Gordon Equation in Biquaternionic Form</a>, for the covariant square's split, the prohibition on central fields in a nonzero field strength, and the two readings.</li>
+<li><a href="the-klein-gordon-equation-in-biquaternionic-polar-variables.html">The Klein–Gordon Equation in Biquaternionic Polar Variables</a>, for the amplitude and transport equations that the integral's saddles reproduce.</li>
+<li><a href="the-path-integral-and-the-coupled-klein-gordon-equation-in-biquaternionic-polar-variables.html">The Path Integral and the Coupled Klein–Gordon Equation in Biquaternionic Polar Variables</a>, for the same integral read in the chart, where the gauge transformation is a translation of one coordinate.</li>
+<li><a href="the-gauge-principle-in-biquaternionic-form.html">The Gauge Principle in Biquaternionic Form</a>, for the covariant derivative and the sign convention.</li>
+<li><a href="the-gauge-field-path-integral-in-biquaternionic-form.html">The Gauge Field Path Integral in Biquaternionic Form</a>, for the integral over the connection, which this article holds fixed.</li>
+<li>J. Glimm and A. Jaffe, <em>Quantum Physics: A Functional Integral Point of View</em> (Springer, 1987), for the lattice definition of a scalar functional integral and the role of the link variable.</li>
+<li>K. G. Wilson, "Confinement of Quarks", <em>Physical Review D</em> <strong>10</strong> (1974), 2445, for the lattice link variable and the exact gauge invariance it carries.</li>
+<li>S. Weinberg, <em>The Quantum Theory of Fields, Vol. II: Modern Applications</em> (Cambridge, 1996), for the background-field method and the Ward identities of an abelian gauge theory.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
