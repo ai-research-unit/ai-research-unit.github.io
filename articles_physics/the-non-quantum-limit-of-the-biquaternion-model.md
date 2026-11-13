@@ -52,7 +52,7 @@ The collapse is the rest frame, $\beta\to0$ at fixed $k_{\Phi}$. That is a membe
 
 The last row is not independent: $\frac{\Omega}{k_{m}}=\gamma-1=\frac{\beta^{2}}{2}$. Two parameters remain, one internal and one external.
 
-**The third row is not a limit.** A small $1/(k_{m}L)$ says the region is large against the mass length, the validity of the one-particle description: a precondition of quantum mechanics, not its removal. The two criteria differ by $\frac{k_{m}}{k_{\Phi}}=\frac{1}{\gamma\beta}=99.995$, so a reader who took $1/k_{m}$ as the classicality length would put the boundary at $386\ \mathrm{fm}$ where it lies at $38.6\ \mathrm{pm}$.
+**The third row is not a limit.** A small $1/(k_{m}L)$ says the region is large against the mass length, the validity of the one-particle description: a precondition of quantum mechanics, not its removal. *The Non-Quantum Limit of the Free Klein–Gordon Equation* derives the same verdict from the mass shell's sensitivity and states the nesting: $\delta=\epsilon\lvert\vec p\rvert/(mc)<\epsilon$, so the limit implies the window and the window does not imply the limit. The two criteria differ by $\frac{k_{m}}{k_{\Phi}}=\frac{1}{\gamma\beta}=99.995$, so a reader who took $1/k_{m}$ as the classicality length would put the boundary at $386\ \mathrm{fm}$ where it lies at $38.6\ \mathrm{pm}$.
 
 **The mass is not the quantum either.** Setting $k_{m}=0$ gives $k_{t}^{\prime}=k_{\Phi}$, the photon: linear dispersion, exact interference, no particle scale, and more wave-like than the massive case. A plane wave is semiclassical already, so the limit acts only where $A$ varies.
 
@@ -146,7 +146,7 @@ $$
 | sector | free | coupled |
 |---|---|---|
 | Schrödinger | yes, in *The Non-Quantum Limit of the Free Schrödinger Equation* | yes, with the kinetic momentum |
-| Klein–Gordon | yes | yes, with the circulation quantum $2\pi\hbar n+ϙ\Phi_B$ |
+| Klein–Gordon | yes, in *The Non-Quantum Limit of the Free Klein–Gordon Equation* | yes, in *The Non-Quantum Limit of the Coupled Klein–Gordon Equation*, with the circulation quantum $2\pi\hbar n+ϙ\Phi_B$ |
 | Dirac | yes, on the square | yes, on the square, with the spin transport |
 | Proca | no: the word is a scale and a boost | yes: the phase comes from the connection |
 

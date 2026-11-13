@@ -6,13 +6,13 @@
 
 **The one term.** The polar action of the Klein–Gordon field is three terms: the amplitude's gradient squared, the density times the squared phase gradient, and the density times the rest mass squared. The limit drops the first. What is left is a functional of the phase alone, weighted by a density that the phase's own equation then transports.
 
-**The criterion, measured on the action.** With the rest energy in the phase, the phase's gradients are of order $k_m$ and the amplitude's gradients are of order $1/L$. So the three terms are of order one, order one and order $\delta^{2}$ with $\delta=1/(k_mL)$, and the limit is the statement that the third is negligible. **The two order-one terms must balance each other, and their balance is the eikonal.** That is the variational form of the criterion, and it is stricter than the equation-level one because it says which two terms balance and not merely which one is dropped.
+**The criterion, measured on the action.** With the rest energy in the phase, the phase's gradients are of order $k_m$ and the amplitude's are of order $1/L$. The phase's two large terms cancel and leave a residual of order $1/L^{2}$; the amplitude's group is of exactly that size, which is why it is the group whose deletion removes the residual. **The two large terms must balance each other, and their balance is the eikonal.** That is the variational form of the criterion, and it is sharper than the equation-level one because it says which two terms balance and not merely which one is dropped.
 
 **The character of the passage.** Dropping the amplitude's gradient removes the second time derivative of $r$ from the problem. The conjugate momentum of $r$ vanishes identically, the Legendre transform becomes degenerate, and the equation that consistency forces is the eikonal. **The non-quantum limit of a second-order field is the passage from a regular to a constrained variational problem, and the eikonal is the constraint that the degeneracy produces.** This is the article's structural result, and it has no counterpart in the substitution route.
 
 **What the article does not do.** It does not re-derive the polar action, the frame metric or the Jacobian argument; those are the variational polar companion's. It does not take the nonrelativistic limit, which is the parent's and which acts on the rest phase rather than on the amplitude.
 
-**Conventions.** Those of the free companion: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$, $i$ central, $\mathrm{Sc}$ the coefficient of $e_t$, the pairing $\mathrm{Sc}(\cdot^{*}\cdot)$, $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$ with $r'_t=c\,t'$, $k_m=mc/\hbar$. The word is $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_t$ with $\rho_{\mathrm{num}}=r^{2}$ and $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$. The parameter is $\delta=1/(k_mL)$ with $L$ the length over which $r$ varies.
+**Conventions.** Those of the free companion: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$, $i$ central, $\mathrm{Sc}$ the coefficient of $e_t$, the pairing $\mathrm{Sc}(\cdot^{*}\cdot)$, $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$ with $r'_t=c\,t'$, $k_m=mc/\hbar$. The word is $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_t$ with $\rho_{\mathrm{num}}=r^{2}$ and $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$. The parameter is $\epsilon=1/(k_\Phi L)$ with $L$ the length over which $r$ varies; the one-particle ratio $\delta=1/(k_mL)=\epsilon\lvert\vec p\rvert/(mc)$ sits beside it.
 
 ## The Action in the Chart
 
@@ -44,15 +44,25 @@ $$
 =\frac{1}{\hbar^{2}}\Bigl[\Bigl(\frac{E}{c}\Bigr)^{2}-\lvert\vec p\rvert^{2}\Bigr]\sim k_m^{2},
 $$
 
-and the phase's kinetic term is the same size as the mass term. **Both are order one, and the eikonal is the statement that they differ by a term of order $\delta^{2}$.**
+and the phase's kinetic term is the same size as the mass term. **Both are order one, they cancel against each other, and the eikonal is the statement that the residual they leave is the amplitude's own curvature.**
 
 **The amplitude's gradients are of order $1/L$.** With $r$ varying over $L$,
 
 $$
-(\partial r)^{2}\sim\frac{r^{2}}{L^{2}}=r^{2}k_m^{2}\,\delta^{2}.
+(\partial r)^{2}\sim\frac{r^{2}}{L^{2}}=r^{2}k_m^{2}\,\delta^{2}=r^{2}k_\Phi^{2}\,\epsilon^{2}.
 $$
 
-**So the three groups stand in the ratios $1:1:\delta^{2}$, and one number compares all three.** The criterion is not an extra input; it is the ratio of two terms that both stand in the same functional. That is the whole of what the variational route contributes to the definition, and it is the cleanest statement of the criterion in the corpus: **the small quantity is the amplitude's gradient against the rest term, and everything else in the action is of the same size and must be kept.**
+**So the three groups stand in the ratios $\delta^{2}:\beta^{2}:1$ with $\beta=\lvert\vec p\rvert/(mc)$, and the third equals the residual of the first two.** The first two are the ones that cancel, and the ratio between the dropped group and the phase's own gradient is $\epsilon^{2}=\delta^{2}/\beta^{2}$ — the criterion. The dropped group and the residual the truncation deletes are the same order, which is why the truncated variation cannot produce the residual and why the limit's equations are exact rather than leading order. **The criterion is not an extra input; it is a ratio of two terms that stand in the same functional.**
+
+**Two ratios, and only one of them is the criterion.**
+
+| comparison | ratio | what it measures |
+|---|---|---|
+| dropped group against the mass term | $\delta^{2}=1/(k_mL)^{2}$ | the amplitude's gradient against the rest energy: the one-particle window |
+| dropped group against the phase's spatial gradient | $\epsilon^{2}=1/(k_\Phi L)^{2}$ | the amplitude's gradient against the phase's: the criterion |
+| the residual's effect on the momentum | $\epsilon^{2}/2$ | the error of the approximation |
+
+**The second and third rows are one number because the momentum is a cancellation.** The mass shell obtains $\vec p$ by cancelling two order-one terms, so a residual that is $\delta^{2}$ of them is $\epsilon^{2}$ of the momentum, and $\delta=\epsilon\lvert\vec p\rvert/(mc)$. **The criterion is $\epsilon$, which is the audit's *The Rule* applied to a second-order equation: the discarded term is measured against the term that carries the change, and the term that carries the change is the momentum.**
 
 **A warning that the statement is about the normalization.** If the rest phase is divided out first, as the nonrelativistic limit does, then the remaining phase $\sigma$ has gradients of order $\lvert\vec p\rvert$ and the ratios change: the phase's term becomes order $\beta^{2}$ and the amplitude's order $\epsilon^{2}$. The statement "the phase's gradients are order one" is therefore a statement about the relativistic normalization in which the rest energy sits in the phase, and it is the normalization the limit of this article is written in.
 
@@ -117,7 +127,7 @@ $$
 
 **The limit triangularises the system, and that is why it is solvable.** A first-order equation for the phase, then a flow, then a transport along the flow: this is the classical recipe, and the triangular structure is what the discarded group was hiding.
 
-**Where the discarded branch lives.** The lost datum is $\partial_{r'_t}r$; the solutions it would have selected are the ones whose amplitude changes on the Compton scale. They are not lost by an error of the method: they are the solutions for which $\delta$ is not small, and the approximation has no claim on them. **The singular character and the region of validity are the same statement**, which is what the substitution route can only assert and what the action exhibits.
+**Where the discarded branch lives.** The lost datum is $\partial_{r'_t}r$; the solutions it would have selected are the ones whose amplitude changes on the scale of the phase. They are not lost by an error of the method: they are the solutions for which $\epsilon$ is not small, and the approximation has no claim on them. **The singular character and the region of validity are the same statement**, which is what the substitution route can only assert and what the action exhibits.
 
 ## What the Variational Route Adds
 
@@ -169,7 +179,7 @@ $$
 
 ## Summary
 
-The polar action of the free Klein–Gordon field is three groups of terms: the amplitude's gradient squared, the density times the squared phase gradient, and the density times the rest term. With the rest energy in the phase the phase's gradients are of order $k_m$ and the amplitude's are of order $1/L$, so the three groups stand in the ratios $1:1:\delta^{2}$ with $\delta=1/(k_mL)$. The limit drops the first group. What remains is a functional of the phase weighted by a density, and its two Euler–Lagrange equations are the eikonal $(\partial S)^{2}-|\nabla S|^{2}=m^{2}c^{2}$ and the exact transport equation — the limit's pair, exactly and not to leading order.
+The polar action of the free Klein–Gordon field is three groups of terms: the amplitude's gradient squared, the density times the squared phase gradient, and the density times the rest term. With the rest energy in the phase the phase's gradients are of order $k_m$ and the amplitude's are of order $1/L$, so the three groups stand in the ratios $\delta^{2}:\beta^{2}:1$; the two large ones cancel to the residual that the third equals, and the criterion is $\epsilon=1/(k_\Phi L)$ with the one-particle ratio $\delta=\epsilon\lvert\vec p\rvert/(mc)$ implied by it. The limit drops the first group. What remains is a functional of the phase weighted by a density, and its two Euler–Lagrange equations are the eikonal $(\partial S)^{2}-|\nabla S|^{2}=m^{2}c^{2}$ and the exact transport equation — the limit's pair, exactly and not to leading order.
 
 The passage is singular. The discarded group carried the second time derivative of $r$, so the conjugate momentum of $r$ vanishes identically in the truncated theory, the Legendre transform degenerates, and the consistency condition is the eikonal. **The eikonal is a constraint, and the limit is what creates it.** The truncated system is triangular: the eikonal fixes the phase, the phase fixes the flow, the transport fixes the density along the flow. The charge current and the charge's indefiniteness survive the truncation unchanged, the energy loses its pressure-like terms and stays positive, and the truncated energy is dust's.
 
@@ -181,7 +191,8 @@ The passage is singular. The discarded group carried the second time derivative 
 | $(\partial r)^{2}-\lvert\nabla r\rvert^{2}$ | The amplitude's gradient; dropped by the limit |
 | $r^{2}[(\partial\theta)^{2}-\lvert\nabla\theta\rvert^{2}]$ | The density times the phase's square; kept |
 | $k_m^{2}r^{2}$ | The rest term; kept |
-| $\delta=1/(k_mL)$ | The parameter; the ratio of the third group to the first two |
+| $\epsilon=1/(k_\Phi L)$ | The parameter of the limit |
+| $\delta=1/(k_mL)=\epsilon\lvert\vec p\rvert/(mc)$ | The one-particle ratio; implied |
 | $S^{\mathrm{trunc}}_{\mathrm{central}}$ | The truncated action; the limit's functional |
 | $p_r=\partial\mathcal L^{\mathrm{trunc}}/\partial(\partial_{r'_t}r)=0$ | The primary constraint created by the truncation |
 | $(\partial S)^{2}-\lvert\nabla S\rvert^{2}=m^{2}c^{2}$ | The secondary constraint, which is the eikonal |

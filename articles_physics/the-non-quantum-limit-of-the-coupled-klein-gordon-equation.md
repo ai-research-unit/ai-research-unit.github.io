@@ -6,7 +6,7 @@
 
 **Why the connection is more visible here than in the first-order family.** In the Schrödinger family the connection is central imaginary in every slot and joins the phase bracket alone. Here the temporal slot's addition is *real* in the spelling the second-order articles use, so it joins the scale bracket, and the naive statement "the connection cannot reach the amplitude" is false. The amplitude equation is nevertheless unchanged in its quantum term, and the reason is not a type argument but a translation: the shift is absorbed into the phase's rate, and the quantum potential depends on $r$ and its ordinary d'Alembertian, which no translation of the phase touches.
 
-**The parameter.** $\delta=1/(k_mL)$, unchanged, with $k_m=mc/\hbar$ and $L$ the length over which the amplitude varies. **The connection contributes no parameter and is not ordered by the limit.** A vector potential comparable with the momentum is kept at full strength, and the limit's smallness is the smallness of the amplitude's variation alone.
+**The parameter.** $\epsilon=1/(k_\Phi L)$, unchanged, with $k_\Phi=\lvert\vec p\rvert/\hbar$ and $L$ the length over which the amplitude varies. The one-particle ratio $\delta=1/(k_mL)=\epsilon\lvert\vec p\rvert/(mc)$ sits beside it and is weaker, as in the free companion. **The connection contributes no parameter and is not ordered by the limit.** A vector potential comparable with the momentum is kept at full strength, and the limit's smallness is the smallness of the amplitude's variation alone.
 
 **What the article establishes, in five sentences.** The pair is exact. The eikonal is the mass shell of the mechanical four-momentum, so the flow is unit and the force is the Lorentz force. The transport equation is the conservation of a gauge-invariant current, which the free current was not. The quantum potential is untouched, so the error of the approximation is the free error, and the reason it is untouched is a translation of the phase rate and not a type statement. The circulation $2\pi\hbar n+ϙ\Phi_B$ is exact and contains no $\delta$.
 
@@ -168,21 +168,21 @@ The bracket is the mechanical energy, and the potential shifts the value at whic
 
 ## The Error
 
-**The error is the free error.** $Q$ is untouched, so
+**The error is the free error.** $Q$ is untouched, so the momentum error is the free one,
 
 $$
-\frac{2m\lvert Q\rvert}{m^{2}c^{2}}=\delta^{2}\left\lvert\frac{x^{2}}{4\sigma^{2}}-\frac{1}{2}\right\rvert
+\frac{\lvert\delta p\rvert}{p}=\frac{\lvert Q\rvert}{2T_{\mathrm{kin}}}=\frac{\epsilon^{2}}{2}\left\lvert\frac{x^{2}}{4\sigma^{2}}-\frac{1}{2}\right\rvert
 $$
 
 for a planar Gaussian, exactly as in the free article, and the table there applies unchanged.
 
-**The connection can shrink the region without appearing in the ratio.** A magnetic field focuses a bundle of dust lines, so $L$ shrinks along the bundle and $\delta$ grows; the ratio itself carries no $\vec A$ and no $a'_t$. The two statements are consistent: the criterion is a property of the amplitude, and a connection acts on the amplitude through the focusing of the congruence and not through the coefficients of the equation.
+**The connection can shrink the region without appearing in the ratio.** A magnetic field focuses a bundle of dust lines, so $L$ shrinks along the bundle and both ratios grow; neither ratio carries $\vec A$ or $a'_t$. The two statements are consistent: the criterion is a property of the amplitude, and a connection acts on the amplitude through the focusing of the congruence and not through the coefficients of the equation.
 
 **That is the sharpest structural difference between the two coupled limits.** The relativistic limit's error is a number that the algebra's entries fix. The non-quantum error is an operator that changes sign, and a connection can move its zeros only by moving the amplitude.
 
 ## The Criterion Does Not Order the Connection
 
-**The potential is not a small quantity.** A vector potential is comparable with the momentum in any laboratory field, and the limit's parameter is $\delta$ and not $ϙ\lvert\vec A\rvert/\lvert\vec p\rvert$. Nothing in the derivation expands in the coupling: the mechanical momentum enters the eikonal at full strength, and the covariant transport equation is exact.
+**The potential is not a small quantity.** A vector potential is comparable with the momentum in any laboratory field, and the limit's parameter is $\epsilon$ and not $ϙ\lvert\vec A\rvert/\lvert\vec p\rvert$. Nothing in the derivation expands in the coupling: the mechanical momentum enters the eikonal at full strength, and the covariant transport equation is exact.
 
 **What follows for the truncation.** The term the limit drops is $2mQ$, which is a functional of $r$ and its ordinary d'Alembertian, hence gauge invariant by itself. **The truncated pair inherits the gauge invariance of the exact pair**, and the reason is that the discarded term carries no connection. Had the limit dropped a term containing $\vec A$ or $a'_t$ without its partner, gauge invariance would be lost at the first order.
 
@@ -190,9 +190,9 @@ for a planar Gaussian, exactly as in the free article, and the table there appli
 
 ## The Two Limits and Their Order
 
-**Two parameters.** The nonrelativistic limit is $\beta\to0$ with $S_{\tilde\Xi}=-mc\,r'_t+\sigma$; the semiclassical limit is $\delta\to0$. Both are needed to reach Newton, and the coupling changes neither.
+**Two parameters.** The nonrelativistic limit is $\beta\to0$ with $S_{\tilde\Xi}=-mc\,r'_t+\sigma$; the non-quantum limit is $\epsilon\to0$. Both are needed to reach Newton, and the coupling changes neither.
 
-**At leading order they commute.** Taking $\delta$ first leaves the mechanical mass shell and the mechanical transport equation; taking $\beta$ on that pair gives $T_{\mathrm{kin}}=\lvert\vec\pi\rvert^{2}/2m-ϙ\varphi$ with the mechanical current. Taking $\beta$ first leaves the coupled Schrödinger pair with $Q=-\hbar^{2}\Delta_\Phi r/(2mr)$; taking $\delta$ on that pair gives the same two equations. **The final pair is the same in both orders**, and it is the pair of *The Non-Quantum Limit of the Coupled Schrödinger Equation*.
+**At leading order they commute.** Taking $\epsilon$ first leaves the mechanical mass shell and the mechanical transport equation; taking $\beta$ on that pair gives $T_{\mathrm{kin}}=\lvert\vec\pi\rvert^{2}/2m-ϙ\varphi$ with the mechanical current. Taking $\beta$ first leaves the coupled Schrödinger pair with $Q=-\hbar^{2}\Delta_\Phi r/(2mr)$; taking $\delta$ on that pair gives the same two equations. **The final pair is the same in both orders**, and it is the pair of *The Non-Quantum Limit of the Coupled Schrödinger Equation*.
 
 **At the order of the discarded term they do not commute.** The two paths discard different objects in a different sequence, so halfway along the first the object is a Lorentz dust with no quantum term and halfway along the second it is a charged quantum fluid with $Q$. A claim that the equations are charged, semiclassical and nonrelativistic must name the path, because the intermediate objects differ.
 
@@ -200,7 +200,7 @@ for a planar Gaussian, exactly as in the free article, and the table there appli
 
 ## What the Biquaternion Form Adds
 
-**Standard charged hydrodynamics, transcribed.** The pair, the mechanical four-momentum, the Lorentz force, the vorticity identity, the circulation quantum, the charge density and the quantum potential are all standard. The ordering by $\delta$ is the free ordering.
+**Standard charged hydrodynamics, transcribed.** The pair, the mechanical four-momentum, the Lorentz force, the vorticity identity, the circulation quantum, the charge density and the quantum potential are all standard. The ordering by $\epsilon$ is the free ordering.
 
 **Four things the notation supplies.**
 
@@ -224,7 +224,7 @@ $$
 \nabla\cdot\left(\rho_{\mathrm{num}}\left(\nabla S_{\tilde\Xi}+ϙ\vec A\right)\right)-\frac{\partial}{\partial r'_t}\left(\rho_{\mathrm{num}}\left(\partial_{r'_t}S_{\tilde\Xi}-ϙ a'_t\right)\right)=0 .
 $$
 
-With the criterion $\delta=1/(k_mL)$, dropping the shift gives the eikonal $\langle\tilde P^{\mathrm{mech}}\rangle_{\natural}=-m^{2}c^{2}$: the mechanical four-momentum is on shell, the flow is a unit timelike congruence, and its acceleration is the Lorentz force. The transport equation is exact and its current is gauge invariant, which the free current was not. The quantum potential is untouched by the connection, so the error of the approximation is the free error, and the argument for that is a translation of the phase rate and not a type statement — the type of the connection's term is a property of the chart, and the corpus writes both spellings. The circulation $2\pi\hbar n+ϙ\Phi_B$ is exact and carries no $\delta$. The connection is not a small parameter of the limit and the limit does not order it; the truncated pair stays gauge invariant because the discarded term is gauge invariant by itself; and the nonrelativistic and semiclassical limits commute at leading order and not at the order of the discarded term.
+With the criterion $\epsilon=1/(k_\Phi L)$, dropping the shift gives the eikonal $\langle\tilde P^{\mathrm{mech}}\rangle_{\natural}=-m^{2}c^{2}$: the mechanical four-momentum is on shell, the flow is a unit timelike congruence, and its acceleration is the Lorentz force. The transport equation is exact and its current is gauge invariant, which the free current was not. The quantum potential is untouched by the connection, so the error of the approximation is the free error, and the argument for that is a translation of the phase rate and not a type statement — the type of the connection's term is a property of the chart, and the corpus writes both spellings. The circulation $2\pi\hbar n+ϙ\Phi_B$ is exact and carries no $\delta$. The connection is not a small parameter of the limit and the limit does not order it; the truncated pair stays gauge invariant because the discarded term is gauge invariant by itself; and the nonrelativistic and semiclassical limits commute at leading order and not at the order of the discarded term.
 
 ## Summary of Notation
 
@@ -240,7 +240,8 @@ With the criterion $\delta=1/(k_mL)$, dropping the shift gives the eikonal $\lan
 | $\mathcal A^{\mathrm{gco}}_\mu$ | The covariant bracket; the connection adds real in $R_t$, imaginary in $r'_t$ |
 | $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$ | The d'Alembertian |
 | $Q=-\frac{\hbar^{2}}{2m}\Box_\Phi r/r$ | Quantum potential; unchanged by the connection |
-| $\delta=1/(k_mL)$ | The parameter of the limit |
+| $\epsilon=1/(k_\Phi L)$ | The parameter of the limit |
+| $\delta=1/(k_mL)=\epsilon\lvert\vec p\rvert/(mc)$ | The one-particle ratio; implied |
 | $\langle\tilde P^{\mathrm{mech}}\rangle_{\natural}=-m^{2}c^{2}$ | The eikonal: mechanical mass shell |
 | $\nabla\times(\vec p+ϙ\vec A)=ϙ\vec B$ | Vorticity, exact |
 | $\oint(\vec p+ϙ\vec A)\cdot d\vec l=2\pi\hbar n+ϙ\Phi_B$ | Circulation, exact |

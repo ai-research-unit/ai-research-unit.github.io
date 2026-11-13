@@ -6,7 +6,7 @@
 
 **Why so little changes.** The connection is a central-imaginary number in every slot, so in the polar chart it joins the phase bracket and nothing else. *The Coupled Schrödinger Equation in Biquaternionic Polar Variables* proves this from the four-bracket split of the logarithmic derivative: the scale bracket receives nothing, the boost bracket receives nothing, the rotor bracket receives nothing. The limit is built from the scale and the phase gradient, so it receives the connection in exactly one place.
 
-**The parameter.** $\epsilon=1/(k_{\Phi}L)$, with $k_{\Phi}$ the wave number of the phase and $L$ the length over which the amplitude varies. The connection does not enter the criterion: a magnetic field bends the rays and does not change the length over which an amplitude varies, and an electric potential shifts the phase's rate uniformly and does not touch the scale.
+**The parameter.** $\epsilon=1/(k_{\pi}L)$, with $k_{\pi}=\lvert\vec\pi\rvert/\hbar$ the **mechanical** wave number and $L$ the length over which the amplitude varies. The mechanical wave number and not the canonical one: $\nabla S_{\tilde\Xi}$ shifts under a gauge transformation and $\vec\pi=\nabla S_{\tilde\Xi}+ϙ\vec A$ does not, so a criterion written on $k_{\Phi}$ would move under a transformation that changes nothing physical. The companion *The Non-Quantum Limit of the Coupled Schrödinger Equation using the Variational Principle* derives the same criterion from the action, where the mechanical wave number appears because it is the coefficient of the surviving kinetic term. The two agree in the free case, where they coincide. The connection does not enter the criterion: a magnetic field bends the rays and does not change the length over which an amplitude varies, and an electric potential shifts the phase's rate uniformly and does not touch the scale.
 
 **What the article establishes, in four sentences.** The coupled pair is exact. The eikonal is the free eikonal with the kinetic momentum, and its characters are the trajectories of a charge. The transport equation is exact and its current is the kinetic one. The circulation quantum $2\pi\hbar n+ϙ\Phi_B$ is exact and survives the limit unchanged, because it is a statement about a loop and not about a length.
 
@@ -197,7 +197,8 @@ Dropping $Q$ gives the eikonal $\frac{1}{2m}\langle\vec\pi\rangle_{\natural}=\ma
 | $\vec p=\nabla S$ | Canonical momentum |
 | $\vec\pi=\nabla S+ϙ\vec A$ | Kinetic momentum; real quaternion in $\mathbb{B}_{H}$ |
 | $\mathcal E=-\partial_{t'}S+ϙ\varphi$ | Kinetic energy; central, gauge invariant |
-| $\epsilon=1/(k_{\Phi}L)$ | The parameter of the limit |
+| $\epsilon=1/(k_{\pi}L)$, $k_{\pi}=\lvert\vec p+ϙ\vec A\rvert/\hbar$ | The parameter of the limit |
+| $k_{\Phi}=\lvert\vec p\rvert/\hbar$ | The canonical wave number; equal to $k_{\pi}$ only without a connection |
 | $Q=-\frac{\hbar^{2}}{2m}\Delta r/r$ | Quantum potential; unchanged by the connection |
 | $\frac{1}{2m}\langle\vec\pi\rangle_{\natural}=\mathcal E$ | The eikonal, as a norm |
 | $\nabla\times\vec v=\frac{ϙ}{m}\vec B$ | Vorticity of the kinetic flow |
