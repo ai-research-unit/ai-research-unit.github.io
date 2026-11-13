@@ -93,9 +93,10 @@
 <p>$$
 \tilde{Ξ}(r'_t) = \exp(\frac{\tilde H_\Phi}{\hbar\,c}r'_t)\,\tilde{Ξ}(0),
 \qquad\text{so}\qquad
-\tilde{Ξ}(T) = \exp(-\frac{i}{\hbar\,c}E\,T)\,\tilde{Ξ}(0)
+\tilde{Ξ}(T) = \exp(-i\theta_{\mathrm{dgp}})\,\tilde{Ξ}(0)
 $$</p>
-<p>for an eigenstate of energy $E$. The phase $-\frac{1}{\hbar\,c}\int_0^T  E\,dr'_t$ is the <strong>dynamical phase</strong>; it is proportional to the duration, so a longer journey accumulates more of it. For a general state the energy in the exponent is the expectation $\langle\tilde H_\Psi\rangle$, and the same statement holds with $\int_0^T\langle\tilde H_\Psi\rangle\,\frac{dr'_{t}}{\hbar\,c}$.</p>
+<p>The dynamical angle $\theta_{\mathrm{dgp}}:=\frac{1}{\hbar\,c}E\,T$ is real because the energy, the duration and $\hbar c$ are real.</p>
+<p>for an eigenstate of energy $E$. The angle $-\theta_{\mathrm{dgp}}=-\frac{1}{\hbar\,c}\int_0^T  E\,dr'_t$ is the <strong>dynamical phase</strong>; it is proportional to the duration, so a longer journey accumulates more of it. For a general state the energy in the exponent is the expectation $\langle\tilde H_\Psi\rangle$, and the same statement holds with $\int_0^T\langle\tilde H_\Psi\rangle\,\frac{dr'_{t}}{\hbar\,c}$.</p>
 <p>The dynamical phase is not what this article is about. It is removed by a standard subtraction, and the residue is the geometric part. The subtraction is meaningful because the two parts respond differently to a change of the speed of the journey at fixed geometry: the dynamical phase scales with the duration and the geometric phase does not.</p>
 <h3 id="the-aharonovanandan-phase">The Aharonov–Anandan Phase</h3>
 <p>Let $|\tilde{Ξ}(r'_t)\rangle$ be a normalized solution of the Schrödinger equation that is <strong>cyclic</strong>, $|\tilde{Ξ}(T)\rangle = \exp(i\theta_{\mathrm{pha},\mathrm{tot}})|\tilde{Ξ}(0)\rangle$ for some real $\theta_{\mathrm{pha},\mathrm{tot}}$. Define</p>
@@ -157,7 +158,7 @@ $$</p>
 $$</p>
 <p>The traversal here is clockwise as seen from $+\vec u_z$ (the corpus Larmor sense), so $\theta_{\mathrm{sol}}{}_{\mathrm{sgn}} = -\theta_{\mathrm{sol}}$ and the general formula gives $\gamma_{\mathrm{geo}} = -\tfrac12(-\theta_{\mathrm{sol}}) = +\tfrac{\theta_{\mathrm{sol}}}{2}$, in exact agreement. The result was verified numerically for $\theta_0 = 0.3, 0.9, 1.57, 2.4, 3.0$; in every case $\gamma_{AA}\equiv +\theta_{\mathrm{sol}}/2\pmod{2\pi}$, with the continuous branch passing through $0$ at $\theta_0 = 0$ and at $\theta_0 = \pi$ as it must.</p>
 <p>Two limits make the formula transparent. At $\theta_0\to0$ the state is the eigenstate along the field and does not precess; the curve degenerates to a point, $\theta_{\mathrm{sol}}\to0$, and the geometric phase vanishes. At $\theta_0\to\pi$ the state is again an eigenstate (the opposite one), the curve again degenerates, and $\theta_{\mathrm{sol}}\to4\pi$, so $\gamma_{AA}\to2\pi\equiv0$. The geometric phase is largest at the equator, where it is $\pi$: the spinor changes sign after a full precession at $\theta_0 = \pi/2$.</p>
-<h3 id="the-math79-periodicity">The $4\pi$ Periodicity</h3>
+<h3 id="the-math81-periodicity">The $4\pi$ Periodicity</h3>
 <p>The sign change $\tilde{Ξ}(T) = -\tilde{Ξ}(0)$ at the equator is not special to the equator: for every $\theta_0$ the spinor after one period differs from the initial spinor by a phase, and at $\theta_0 = \pi/2$ that phase is exactly $\pi$. The general statement is the double-valuedness of the spinor representation of the rotation group: a rotation of the spin by $2\pi$ is the identity on the idempotent,</p>
 <p>$$
 \tilde{u}(2\pi)\,\tilde\Pi_{1,2}(\vec u_x)\,\tilde{u}(2\pi)^{*} = \tilde\Pi_{1,2}(\vec u_x),

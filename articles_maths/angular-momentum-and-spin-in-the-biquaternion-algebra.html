@@ -71,7 +71,7 @@
         <h1 id="angular-momentum-and-spin-in-the-biquaternion-algebra"><strong>Angular Momentum and Spin in the Biquaternion Algebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The angular-momentum algebra is the Lie algebra $\mathfrak{su}(2)$ with a chosen basis. In the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ it appears in two normalisations: as the anti-Hermitian pure quaternions $g_k=-\tfrac12\vec e_k$, which are the elements of the Lie algebra, and as the Hermitian elements $\tilde S_k=\tfrac12 i\vec e_k=-ig_k$, which are the same generators multiplied by $-i$. The factor $-i$ is what makes them self-adjoint, and it is the only difference between the two pictures.</p>
-<p>This article develops the module theory of that algebra inside $\mathbb{B}$: the Casimir, the highest-weight classification, the two module structures, the subcarriers of the regular module, the orbital realisation, the addition of angular momenta, the tensor products, and the four uses of the word spin. It is the pure-mathematical counterpart of <em>Angular Momentum and Spin in Biquaternionic Form</em>, and it states every structure in the algebra itself.</p>
+<p>This article develops the module theory of that algebra inside $\mathbb{B}$: the Casimir, the highest-weight classification, the two module structures, the subcarriers of the regular module, the spectrum of each carrier and the criterion that reads irreducibility off it, the orbital realisation, the addition of angular momenta, the tensor products, and the four uses of the word spin. It is the pure-mathematical counterpart of <em>Angular Momentum and Spin in Biquaternionic Form</em>, and it states every structure in the algebra itself.</p>
 <p>No scale enters the algebra. Every operator below is $\tilde S_k=\tfrac12 i\vec e_k$, and every weight, every bracket and the Casimir are fixed by the multiplication of $\mathbb{B}$; the article carries no constant beside the elements.</p>
 <p>The article also proves one statement that the dimension count does not give. The multiplication map $\mathbb{B}\otimes\mathbb{B}\to\mathbb{B}$ is equivariant for conjugation, and its kernel contains the whole spin-two summand of the tensor square. The product of two biquaternions therefore carries no spin two, and the reason is not arithmetic but a vanishing map.</p>
 <h2 id="the-algebra-and-its-conventions">The Algebra and Its Conventions</h2>
@@ -144,7 +144,7 @@ $$</p>
 <p>$$
 \rho(C)=s(s+1)\operatorname{id}_W,\qquad \dim_{\mathbb{C}}W=2s+1,\qquad s\in\tfrac12\mathbb{Z}_{\ge0}.
 $$</p>
-<p><em>Proof.</em> Choose an eigenvector $v$ of $\rho(\tilde S_3)$ with the maximal eigenvalue $s$. Then $\rho(\tilde S_+)v=0$, since otherwise $\rho(\tilde S_+)$ would produce an eigenvector of weight $s+1$. Put $v_k=\rho(\tilde S_-)^kv$ and $m_k=s-k$. The span of the $v_k$ is invariant, so it is all of $W$. Since $\tilde S_+\tilde S_-=C-\tilde S_3^2+\tilde S_3$, one has $\rho(\tilde S_+\tilde S_-)v_k=(2s-k)(k+1)v_k$. If the string terminates, so that $v_{k+1}=0$ with $v_k\neq0$, then $0=\rho(\tilde S_+)v_{k+1}=(2s-k)(k+1)v_k$, so $k=2s$. Hence $v_0,\dots,v_{2s}$ are a basis and $\dim W=2s+1$. On $v_0$, $\rho(C)v_0=(s^2+2s)v_0=s(s+1)v_0$.</p>
+<p><em>Proof.</em> Choose an eigenvector $v$ of $\rho(\tilde S_3)$ with the maximal eigenvalue $s$. Then $\rho(\tilde S_+)v=0$, since otherwise $\rho(\tilde S_+)$ would produce an eigenvector of weight $s+1$. Put $v_k=\rho(\tilde S_-)^kv$ and $m_k=s-k$. The span of the $v_k$ is invariant, so it is all of $W$. Since $\tilde S_+\tilde S_-=C-\tilde S_3^2+\tilde S_3$, one has $\rho(\tilde S_+\tilde S_-)v_k=(2s-k)(k+1)v_k$. If the string terminates, so that $v_{k+1}=0$ with $v_k\neq0$, then $0=\rho(\tilde S_+)v_{k+1}=(2s-k)(k+1)v_k$, so $k=2s$. Hence $v_0,\dots,v_{2s}$ are a basis and $\dim W=2s+1$. On $v_0$, $\rho(C)v_0=(s^2+s)v_0=s(s+1)v_0$, because $\rho(\tilde S_+\tilde S_-)v_0=2s\,v_0$ and $\rho(C)=\rho(\tilde S_+\tilde S_-)+\rho(\tilde S_3)^2-\rho(\tilde S_3)$.</p>
 <p><strong>Remark.</strong> The algebra sees $SU(2)$ and not $SO(3)$: $s$ ranges over the half-integers. The integer values are the ones on which the centre $\pm e_t$ of $G$ acts trivially, and they are the representations that descend to $SO(3)$.</p>
 <h2 id="the-ladder-and-the-classification">The Ladder and the Classification</h2>
 <p>The ladder operators are</p>
@@ -194,13 +194,13 @@ $$</p>
 <p>Each $S_\pm(\vec u)$ is a minimal left ideal, and $\mathbb{B}=S_+(\vec u)\oplus S_-(\vec u)$ for every $\vec u$.</p>
 <p><strong>Proposition (the sphere of minimal left ideals).</strong> The map $\vec u\mapsto S_+(\vec u)$ is a bijection from the unit sphere of $\mathfrak{g}$ onto the set of minimal left ideals of $\mathbb{B}$.</p>
 <p><em>Proof.</em> The minimal left ideals of $M_2(\mathbb{C})$ are the sets of matrices whose rows lie in a fixed line of $\mathbb{C}^2$, and the lines are parametrised by $\mathbb{CP}^1\cong S^2$. The idempotent $\tilde\Pi_+(\vec u)$ is the orthogonal projection onto the $+1$ eigenspace of $\vec u\cdot\vec\sigma$, and $\vec u\mapsto$ that line is the standard identification.</p>
-<p><strong>Proposition (the states in a copy).</strong> In $S_+(\vec u)$,</p>
+<p><strong>Proposition (the states in the two copies).</strong> The idempotent $\tilde\Pi_+(\vec u)$ is the weight $+\tfrac12$ vector of $S_+(\vec u)$, and $\tilde\Pi_-(\vec u)$ is the weight $-\tfrac12$ vector of $S_-(\vec u)$. That is,</p>
 <p>$$
 (\vec u\cdot\vec S)\tilde\Pi_+(\vec u)=+\tfrac12\tilde\Pi_+(\vec u),\qquad
 (\vec u\cdot\vec S)\tilde\Pi_-(\vec u)=-\tfrac12\tilde\Pi_-(\vec u).
 $$</p>
 <p><em>Proof.</em> $(\vec u\cdot\vec S)\tilde\Pi_+(\vec u)=\tfrac12(i\vec u)\tfrac12(e_t+i\vec u)=\tfrac12\tilde\Pi_+(\vec u)$, because $(i\vec u)^2=+e_t$ and $i\vec u$ commutes with $\tilde\Pi_+(\vec u)$. The other sign is the same computation with $\vec u$ replaced by $-\vec u$.</p>
-<p>The idempotent $\tilde\Pi_+(\vec u)$ is the weight $+\tfrac12$ vector of $S_+(\vec u)$, and $\tilde\Pi_-(\vec u)$ is the weight $-\tfrac12$ vector of $S_-(\vec u)$: each is a vector of its own copy, and they are not two vectors of one module. In $S_+(\vec e_z)$ the weight $-\tfrac12$ vector is $w_-$, which is nilpotent, $w_-^2=0$. The distinction is the reason the two signs label two copies and not a doublet.</p>
+<p>Each vector lies in its own copy, and the two are not two vectors of one module. In $S_+(\vec e_z)$ the weight $-\tfrac12$ vector is $w_-$, which is nilpotent, $w_-^2=0$. The distinction is the reason the two signs label two copies and not a doublet.</p>
 <p><strong>The double cover.</strong> On $S_+$, $\exp(-2\pi i\tilde S_3)=-e_t$. On the adjoint module of the next section, $\exp(-2\pi i\operatorname{ad}_{\tilde S_3})=\operatorname{id}$. The first is the spinor sign and the second is the vector sign; the algebra produces both, and the difference is the parity of the weights.</p>
 <p><em>Proof.</em> The eigenvalues of $\tilde S_3$ on $S_+$ are $\pm\tfrac12$, so the exponential is $e^{\pm\pi i}=-1$. The eigenvalues of $\operatorname{ad}_{\tilde S_3}$ on $\mathbb{B}$ are $0,\pm1$, so the exponential is $1$.</p>
 <h2 id="the-adjoint-module-spins-zero-and-one">The Adjoint Module: Spins Zero and One</h2>
@@ -246,6 +246,79 @@ $$</p>
 $$</p>
 <p>This is impossible. The three spins are the union of the constituents of two structures, not the constituents of one.</p>
 <p><strong>Remark (carriers and subcarriers).</strong> The theorem classifies the subcarriers of the regular module, not the representations of $\mathfrak{g}$. The Lie algebra has an irreducible module of every dimension, so spin $\tfrac32$ and spin $2$ are carriers in the sense of the definition; no subspace of $\mathbb{B}$ carries them. The word <em>subcarrier</em> is what the closure theorem needs, and the distinction is not a technicality: it is the difference between a representation and a representation realised inside the algebra.</p>
+<h2 id="the-spectrum-and-the-criterion">The Spectrum and the Criterion</h2>
+<p>The definition of spin presumes an irreducible carrier, and the Casimir theorem reads a dimension off the spin. The converse is what a reader with a carrier in hand needs: a test that decides whether the carrier is irreducible. The test is the weight string.</p>
+<p><strong>Proposition (the weight string of an irreducible carrier).</strong> Let $(W,\rho)$ be an irreducible unitary carrier of spin $s$, and let $\vec u$ be a unit real vector. The spectrum of $\rho(\vec u\cdot\vec S)$ is</p>
+<p>$$
+s,\ s-1,\ \dots,\ -s,
+$$</p>
+<p>each value once, so that $\dim_{\mathbb{C}}W=2s+1$.</p>
+<p><em>Proof.</em> The proof of the Casimir theorem in §<em>The Casimir and the Definition of Spin</em> produces the vectors $v_0,\dots,v_{2s}$, of weights $s,s-1,\dots,-s$, and proves that they are a basis. Distinct weights therefore occur once each, and the length of the string is the dimension.</p>
+<p><strong>Proposition (the criterion).</strong> Let $W$ be a finite-dimensional carrier whose highest weight is $s$. Then $W$ is irreducible exactly when $\dim_{\mathbb{C}}W=2s+1$; equivalently, exactly when the weights of $\rho(\vec u\cdot\vec S)$ are $s,s-1,\dots,-s$, each occurring once.</p>
+<p><em>Proof.</em> If $W$ is irreducible, the two propositions agree. Conversely, the highest-weight vector generates the irreducible subcarrier $W_0$ of dimension $2s+1$, and $W_0\subseteq W$; if $\dim W=2s+1$ then $W_0=W$. The hypothesis is that $W$ contains a highest-weight vector of weight $s$, not that such a vector generates $W$: a carrier generated by a highest-weight vector is irreducible already, and the proposition would say nothing.</p>
+<p><strong>Remark (a repeated weight is a symptom, not the criterion).</strong> Distinct weights do not by themselves give irreducibility. The module $\mathcal{V}_0\oplus\mathcal{V}_1$ has the weights $-\tfrac12$, $0$, $+\tfrac12$, all distinct, and dimension $3$ against $2\cdot\tfrac12+1=2$; it is reducible. The dimension count decides, and a repeated weight is the visible trace of a reducible sum.</p>
+<p><strong>The weight string is the spin.</strong> The word spin is the length of the string, read on the carriers of this article. It is the same criterion that <em>Spinors as Peirce Coordinates</em> applies to the column of a matrix model, where the half-root has the weight $-\tfrac12$ with multiplicity $N-1$ and the string $+\tfrac12,-\tfrac12$ occurs exactly when $N=2$; the "each occurring once" of the spinor definition there is the criterion above.</p>
+<p><strong>The spectra of the carriers.</strong> With $\vec u=\vec e_z$ and the generator $\tilde S_3$, the computations of the preceding sections give the following table.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>carrier</th>
+<th>structure</th>
+<th>$\dim_{\mathbb{C}}$</th>
+<th>weights of $\tilde S_3$</th>
+<th>string</th>
+<th>verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$S_\pm(\vec u)$</td>
+<td>left multiplication</td>
+<td>$2$</td>
+<td>$+\tfrac12,\ -\tfrac12$</td>
+<td>complete</td>
+<td>irreducible, $\mathcal{V}_1$</td>
+</tr>
+<tr>
+<td>$V$</td>
+<td>conjugation</td>
+<td>$3$</td>
+<td>$+1,\ 0,\ -1$</td>
+<td>complete</td>
+<td>irreducible, $\mathcal{V}_2$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>left multiplication</td>
+<td>$4$</td>
+<td>$+\tfrac12,\ +\tfrac12,\ -\tfrac12,\ -\tfrac12$</td>
+<td>doubled</td>
+<td>reducible, $2\mathcal{V}_1$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>conjugation</td>
+<td>$4$</td>
+<td>$+1,\ 0,\ 0,\ -1$</td>
+<td>doubled at $0$</td>
+<td>reducible, $\mathcal{V}_0\oplus\mathcal{V}_2$</td>
+</tr>
+<tr>
+<td>four-vector</td>
+<td>two-sided action</td>
+<td>$4$</td>
+<td>$+1,\ 0,\ 0,\ -1$</td>
+<td>doubled at $0$</td>
+<td>reducible, $\mathcal{V}_2\oplus\mathcal{V}_0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Remark (the last two rows).</strong> The adjoint action on all of $\mathbb{B}$ and the four-vector of the two-sided action present the same multiset to the rotation subgroup. The repeated weight $0$ is the centre in the first case and the singlet summand in the second. Two carriers, one spectrum.</p>
+<p><strong>The four-vector.</strong> The carriers above are the ones that multiplication on the algebra produces. The algebra carries a fourth, the four-vector of the two-sided action $a\mapsto gag^{*}$, which is the representation $(\tfrac12,\tfrac12)$ of the Lorentz group, of complex dimension four. On the rotation subgroup it restricts to</p>
+<p>$$
+(\tfrac12,\tfrac12)\big|_{\mathrm{SU}(2)}\cong\mathcal{V}_2\oplus\mathcal{V}_0 ,
+$$</p>
+<p>so its weights are $+1,0,0,-1$, and its dimension is $4$ against $2\cdot1+1=3$. By the criterion the carrier is reducible, and its constituents are the triplet and the singlet. The split into $\mathbf{1}\oplus\mathbf{3}$ is recorded in §<em>What the Algebra Does Not Determine</em>; the weights are computed here. The Lorentz labels are those of <em>Biquaternion Rotations and Lorentz Transformations</em>, and the two-sided operator is not a subcarrier of the regular module: it is a second action, and the closure theorem does not apply to it.</p>
 <h2 id="the-orbital-realisation">The Orbital Realisation</h2>
 <p>A third realisation of the rotation algebra exists, and no subspace of $\mathbb{B}$ carries it. Let $A$ be a commutative $\mathbb{C}$-algebra carrying an action of $\mathfrak{so}(3)$ by derivations: linear maps $D_k$ with the Leibniz rule $D_k(ab)=D_k(a)b+aD_k(b)$ and with the angular-momentum brackets among themselves. The classical example is the algebra of polynomials in three commuting letters, where the action is faithful and every spin occurs, in the summands $\mathcal{V}_0,\mathcal{V}_2,\mathcal{V}_4,\dots$ of the homogeneous parts.</p>
 <p><strong>Proposition.</strong> No derivation of a commutative algebra is inner.</p>
@@ -308,12 +381,8 @@ $$</p>
 <p>and the four descendants obtained by applying $\operatorname{ad}_{\tilde S_-}\otimes1+1\otimes\operatorname{ad}_{\tilde S_-}$ also multiply to zero. This is the five-dimensional summand, and it vanishes under the product.</p>
 <p><strong>Remark (why the left picture does not give the theorem).</strong> Under left multiplication $\mathbb{B}\cong2\mathcal{V}_1$ and $\mathbb{B}\otimes\mathbb{B}\cong4(\mathcal{V}_0\oplus\mathcal{V}_2)$, but $m$ is not equivariant for that action, because $(ga)(gb)\neq g(ab)$. The argument must be run in the adjoint picture, where conjugation is an algebra automorphism.</p>
 <h2 id="real-forms-and-the-rotation-subgroup">Real Forms and the Rotation Subgroup</h2>
-<p>The algebra is real, and its complexification by the central root of $-1$, $\tilde{Ζ}_{\mathrm{ad}}$, with $\tilde{Ζ}_{\mathrm{ad}}^2=-e_t$, is</p>
-<p>$$
-\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}\cong\mathbb{B}\oplus\mathbb{B},\qquad e_\pm=\tfrac12(e_t\pm\chi),\qquad \chi=i\tilde{Ζ}_{\mathrm{ad}},\qquad \chi^2=+e_t.
-$$</p>
-<p>The idempotents $e_\pm$ split the doubled algebra into the two chiral halves. The doubled algebra is $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}$, the same notation as in <em>The Unpolarized Module of the Biquaternion Algebra</em>. Its central root of $-1$ is $\tilde{Ζ}_{\mathrm{ad}}$, an element of the double; the spin is the real number $s$.</p>
-<p>The rotation subgroup acts by conjugation on $\mathbb{B}$, and the two module structures of this article are its two pictures: $2\mathcal{V}_1$ on the left and $\mathcal{V}_0\oplus\mathcal{V}_2$ on the adjoint. The Lorentz group acts by the two-sided operator $a\mapsto gag^*$, and the two sectors $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ are the two four-vectors; the left spinor is the $(\tfrac12,0)$ and the conjugate module the $(0,\tfrac12)$. The details are in <em>Biquaternion Rotations and Lorentz Transformations</em> and in <em>The Unpolarized Module of the Biquaternion Algebra</em>; nothing in the present article depends on them.</p>
+<p>The algebra $\mathbb{B}$ is complex; its underlying real algebra is $\mathbb{B}_{\mathbb{R}}$, and the real structure is what this section adds. Complexifying $\mathbb{B}_{\mathbb{R}}$ by an adjoined root of $-1$ gives $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}\cong\mathbb{B}\oplus\mathbb{B}$, and the two halves are the eigenspaces of the central sign $\chi=i\tilde{Ζ}_{\mathrm{ad}}$, with $\tilde{Ζ}_{\mathrm{ad}}^2=-e_t$, $\chi^2=+e_t$ and $\chi\notin\mathbb{B}$; the chiral idempotents are $e_\pm=\tfrac12(e_t\pm\chi)$. The construction, its notation and the two halves are <em>The Unpolarized Module of the Biquaternion Algebra</em>; nothing below uses them.</p>
+<p>The two module structures of this article are two actions of the group: left multiplication on the whole algebra, giving $2\mathcal{V}_1$, and conjugation on the adjoint picture, giving $\mathcal{V}_0\oplus\mathcal{V}_2$. The Lorentz group acts by the two-sided operator $a\mapsto gag^*$, and the two sectors $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ are the two four-vectors; the left spinor is the $(\tfrac12,0)$ and the conjugate module the $(0,\tfrac12)$. The details are in <em>Biquaternion Rotations and Lorentz Transformations</em> and in <em>The Unpolarized Module of the Biquaternion Algebra</em>; nothing in the present article depends on them.</p>
 <p><strong>Proposition (the two real forms of the carrier).</strong> Put $\mathfrak{k}=\operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$ and $\mathfrak{p}=\operatorname{span}_{\mathbb{R}}\{i\vec e_x,i\vec e_y,i\vec e_z\}$. Then</p>
 <p>$$
 V=\mathfrak{k}\oplus\mathfrak{p},
@@ -370,7 +439,7 @@ $$</p>
 P\tilde\Pi_+(\vec u)=\tilde\Pi_+(\vec u),\qquad P\tilde\Pi_-(\vec u)=-\tilde\Pi_-(\vec u),
 $$</p>
 <p>so $P$ is $+1$ on $S_+(\vec u)$ and $-1$ on $S_-(\vec u)$. It is implemented by the element $i\vec u$, which is not central: at $\vec u=\vec e_z$, $i\vec e_z\vec e_x=+i\vec e_y$ while $\vec e_x i\vec e_z=-i\vec e_y$. The Peirce index is therefore an inner, non-central copy label, and it never changes a spin value.</p>
-<p>At a fixed axis, right multiplication by the mixed unit $\vec\Upsilon_{+-}$ carries $S_+$ onto $S_-$ and is the module isomorphism: it sends $\tilde\Pi_+$ to $\vec\Upsilon_{+-}$ and $\vec\Upsilon_{-+}$ to $\tilde\Pi_-$. Right multiplication by $\vec\Upsilon_{-+}$ annihilates $S_+$, because $\tilde\Pi_+\vec\Upsilon_{-+}=0$ and $\vec\Upsilon_{-+}^2=0$. Neither is the grading: each mixed unit squares to zero, and a nilpotent cannot be an involution.</p>
+<p>At a fixed axis, right multiplication by the mixed unit $\vec\Upsilon_{+-}$ carries $S_+$ onto $S_-$ and is the module isomorphism: it sends $\tilde\Pi_+$ to $\vec\Upsilon_{+-}$ and $\vec\Upsilon_{-+}$ to $\tilde\Pi_-$. Right multiplication by $\vec\Upsilon_{-+}$ annihilates $S_+$, because $\tilde\Pi_+\vec\Upsilon_{-+}=0$ and $\vec\Upsilon_{-+}^2=0$. Neither is the grading: each mixed unit is nilpotent, $\vec\Upsilon_{\pm\mp}^2=0$, and a nilpotent cannot be an involution.</p>
 <h3 id="chirality-is-central-but-not-a-spin">Chirality Is Central but Not a Spin</h3>
 <p>In the double, the chirality has the central form $\chi=i\tilde{Ζ}_{\mathrm{ad}}$, with $\chi^2=+e_t$, and its two eigenspaces are the chiral halves $e_\pm=\tfrac12(e_t\pm\chi)$ of §<em>Real Forms and the Rotation Subgroup</em>. Both halves carry the same rotation content: chirality separates the two Lorentz chiralities, not two values of $s$.</p>
 <p>The three signs are therefore distinct. A central sign in $\mathbb{B}$ marks integer against half-integer; an inner non-central sign separates two copies of one half-integer carrier; a central sign in the double separates two Lorentz halves. Only the first tracks the integrality of a spin, and none of the three is a value of $s$.</p>
@@ -393,7 +462,7 @@ $$</p>
 <p><strong>No statistics.</strong> The algebraic split matches the two integrality classes. The spin–statistics theorem is not proved by the algebra.</p>
 <p><strong>No full Lorentz label.</strong> Under left multiplication by $SL(2,\mathbb{C})$ the algebra carries the chiral spinor $(\tfrac12,0)$ with multiplicity two; under the Lorentz two-sided operator $Q\mapsto\tilde U Q\tilde U^{*}$ it carries the four-vector $(\tfrac12,\tfrac12)$, and its split into $\mathbf{1}\oplus\mathbf{3}$ is the work of the compact subgroup $G$. The rotation spin is the little-group shadow of the Lorentz label, not the whole label.</p>
 <h2 id="summary">Summary</h2>
-<p>The rotation algebra inside $\mathbb{B}$ has two normalisations: the anti-Hermitian $g_k=-\tfrac12\vec e_k$ and the Hermitian $\tilde S_k=\tfrac12 i\vec e_k$, related by $\tilde S_k=-ig_k$. The Casimir is $C=\sum \tilde S_k^2$; on an irreducible unitary carrier it is $s(s+1)$, the dimension is $2s+1$, and $s$ is the maximal weight.</p>
+<p>The rotation algebra inside $\mathbb{B}$ has two normalisations: the anti-Hermitian $g_k=-\tfrac12\vec e_k$ and the Hermitian $\tilde S_k=\tfrac12 i\vec e_k$, related by $\tilde S_k=-ig_k$. The Casimir is $C=\sum \tilde S_k^2$; on an irreducible unitary carrier it is $s(s+1)$, the dimension is $2s+1$, and $s$ is the maximal weight. Irreducibility is decided by the spectrum: the carrier is irreducible exactly when the weights $s,s-1,\dots,-s$ occur once each, so that the length of the string is the dimension. A repeated weight marks a reducible sum, and the two carriers of dimension four in the table of §<em>The Spectrum and the Criterion</em> carry the same multiset, $+1,0,0,-1$, because each contains the centre or the singlet beside the triplet.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -521,6 +590,10 @@ $$</p>
 <td>The highest-weight vector of $V$</td>
 </tr>
 <tr>
+<td>$(\tfrac12,\tfrac12)$</td>
+<td>The four-vector of the two-sided action; $\mathcal{V}_2\oplus\mathcal{V}_0$ under $G$, with weights $+1,0,0,-1$</td>
+</tr>
+<tr>
 <td>$L_k$</td>
 <td>The three generators of the orbital action; outer, hence not an operator of $\mathbb{B}$</td>
 </tr>
@@ -530,6 +603,7 @@ $$</p>
 <ul>
 <li><a href="the-category-of-modules.html">The Category of Modules in the Biquaternion Algebra</a>, for the simple module and the classification of the modules.</li>
 <li><a href="the-polarized-module-of-the-biquaternion-algebra.html">The Polarized Module of the Biquaternion Algebra</a>, for the decomposition ${}_\mathbb{B}\mathbb{B}\cong S\oplus S$; the spinor spaces and the ladder.</li>
+<li><a href="spinors-as-peirce-coordinates.html">Spinors as Peirce Coordinates</a>, for the weight condition on a Peirce carrier, the multiplicity of the half-root on a column, and the irreducibility criterion read as a weight string.</li>
 <li><a href="the-casimir-operator.html">The Casimir Operator</a>, for the Casimir in the general theory.</li>
 <li><a href="representations-of-lie-algebras.html">Representations of Lie Algebras</a>, for the highest-weight classification and the Clebsch–Gordan rule.</li>
 <li><a href="the-tensor-square-of-c2.html">The Tensor Square of the Duo-Complex Numbers</a>, for the decomposition of the tensor square.</li>

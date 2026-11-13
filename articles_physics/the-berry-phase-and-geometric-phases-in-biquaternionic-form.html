@@ -89,8 +89,9 @@
 $$</p>
 <p>is bounded below by a positive constant along the traversed path, and if the path is traversed slowly enough compared with that gap, then a system started in $|n(R(0))\rangle$ remains in the instantaneous eigenstate up to a phase:</p>
 <p>$$
-|\tilde{Ξ}(r'_t)\rangle  = \exp(i\gamma_n(r'_t))\,\exp(-\frac{i}{\hbar}\int_0^{r'_{t}}  E_n(R(r'_{t,2}))dr'_{t,2})\,|n(R(r'_t))\rangle  .
-$$</p>
+|\tilde{Ξ}(r'_t)\rangle  = \exp(i\theta_{\mathrm{ber}})\,\exp(-i\theta_{\mathrm{dyn}})\,|n(R(r'_t))\rangle  .\qquad \theta_{\mathrm{ber}}=\gamma_n(r'_t),\quad \theta_{\mathrm{dyn}}=\frac{1}{\hbar}\int_0^{r'_{t}}E_n(R(r'_{t,2}))\,dr'_{t,2}
+$$
+Both angles are real: the Berry angle because a geometric phase is real, the dynamical angle because an energy over $\hbar$ is real.</p>
 <p>Substituting into the Schrödinger equation $i\,\hbar\,c\partial/\partial r'_t|\tilde{Ξ}\rangle  = \tilde H_\Psi|\tilde{Ξ}\rangle$, the dynamical factor cancels, and what remains is</p>
 <p>$$
 d\gamma_{n}/dr'_t = i\,\langle n(R(r'_t))|\frac{d}{dr'_t}|n(R(r'_t))\rangle ,

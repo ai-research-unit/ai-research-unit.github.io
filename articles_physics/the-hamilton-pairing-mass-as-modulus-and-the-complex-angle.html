@@ -100,7 +100,7 @@ $$</p>
 <tr>
 <td>the eigenvalues $\lambda_\pm=Q_t\pm iB$ and the norm identity</td>
 <td><a href="../articles_maths/the-biquaternion-eigenvalue-decomposition.html"><em>The Biquaternion Eigenvalue Decomposition</em></a>, §<em>The Eigenvalues</em></td>
-<td>$\lambda_\pm=\Rho e^{\pm i\Theta}$ and $\lambda_+\lambda_-=\langle\tilde Q\rangle_{\natural}$</td>
+<td>$\lambda_\pm=\Rho e^{\mp\kappa_{\mathrm{dmp}}}e^{\pm i\theta_{\mathrm{cpx}}}$ and $\lambda_+\lambda_-=\langle\tilde Q\rangle_{\natural}$</td>
 </tr>
 <tr>
 <td>the four factors and the branch of the modulus</td>
@@ -135,14 +135,14 @@ $$</p>
 <p>$$
 \tilde Q=\Rho\,\exp(\vec U\Theta),
 \qquad
-\Rho=r\,e^{i\theta_{\mathrm{pha}}},
+\Rho=r\,e^{i\theta_{\mathrm{pha}}},\qquad \theta_{\mathrm{pha}}=\arg\Rho,
 \qquad
 \exp(\vec U\Theta)=\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r}.
 $$</p>
-<p>The modulus is central and complex. The second factor is a unit-norm element, and the unit-norm subgroup of $\mathbb{B}$ is $SL(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group $SO^{+}(1,3)$. The exponent is a complex multiple of a root of $-e_t$: the axis $\vec U$ is a unit pure element with $\vec U^{2}=-e_t$, and $\Theta$ is complex.</p>
+<p>The modulus is central and complex, and its phase $\theta_{\mathrm{pha}}$ is the argument of the central scalar, real because an argument of a complex number is an angle. The second factor is a unit-norm element, and the unit-norm subgroup of $\mathbb{B}$ is $SL(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group $SO^{+}(1,3)$. The exponent is a complex multiple of a root of $-e_t$: the axis $\vec U$ is a unit pure element with $\vec U^{2}=-e_t$, and $\Theta$ is complex: $\Theta=\theta_{\mathrm{cpx}}+i\kappa_{\mathrm{dmp}}$, where $\theta_{\mathrm{cpx}}$ is the rotation angle and $\kappa_{\mathrm{dmp}}$ the decay rate, both real because they are the real and the imaginary part of one complex number.</p>
 <p>The two eigenvalues of the element are the polar form of the spectrum,</p>
 <p>$$
-\boxed{\;\lambda_\pm=Q_t\pm iB=\Rho\,e^{\pm i\Theta},
+\boxed{\;\lambda_\pm=Q_t\pm iB=\Rho\,e^{\mp\kappa_{\mathrm{dmp}}}e^{\pm i\theta_{\mathrm{cpx}}},
 \qquad
 \lambda_+\lambda_-=\Rho^{2}=\langle\tilde Q\rangle_{\natural}\;}.
 $$</p>
@@ -185,7 +185,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\langle\tilde Q\rangle_{\natural}\in\mathbb{C}$ general</td>
-<td>$\Rho=\lvert\langle\tilde Q\rangle_{\natural}\rvert^{1/2}e^{i\arg\langle\tilde Q\rangle_{\natural}/2}$</td>
+<td>$\Rho=\lvert\langle\tilde Q\rangle_{\natural}\rvert^{1/2}e^{i\theta_{\mathrm{pha}}/2}$</td>
 <td>$\tfrac12\arg\langle\tilde Q\rangle_{\natural}$</td>
 <td>general element</td>
 </tr>
@@ -341,7 +341,7 @@ $$</p>
 <ul>
 <li>The Hamilton pairing is $\tilde Q=\Rho\exp(\vec U\Theta)=\Rho(\cos\Theta+\vec U\sin\Theta)$.</li>
 <li>The modulus $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}=r e^{i\theta_{\mathrm{pha}}}$ is central and complex; it is the only scalar first factor of the three pairings.</li>
-<li>The eigenvalues are $\lambda_\pm=Q_t\pm iB=\Rho e^{\pm i\Theta}$, and their product is the norm.</li>
+<li>The eigenvalues are $\lambda_\pm=Q_t\pm iB=\Rho e^{\mp\kappa_{\mathrm{dmp}}}e^{\pm i\theta_{\mathrm{cpx}}}$, and their product is the norm.</li>
 <li>For a four-momentum, $\Rho=i mc$, $\Theta=-i\theta_{\mathrm{rpd}}$, $\vec U=\vec u_p$, and the eigenvalues are $i mc\,e^{\pm\theta_{\mathrm{rpd}}}$.</li>
 <li>The energy is $mc^{2}\cosh\theta_{\mathrm{rpd}}$ and depends on the frame; the modulus is the invariant and does not.</li>
 <li>The angle is real for a rotation, imaginary for a boost and complex in general; the pair $(\Theta,\vec U)$ is the invariant data.</li>
@@ -384,7 +384,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\lambda_\pm=Q_t\pm iB$</td>
-<td>the eigenvalues, $\lambda_\pm=\Rho e^{\pm i\Theta}$</td>
+<td>the eigenvalues, $\lambda_\pm=\Rho e^{\mp\kappa_{\mathrm{dmp}}}e^{\pm i\theta_{\mathrm{cpx}}}$</td>
 </tr>
 <tr>
 <td>$\theta_{\mathrm{rpd}}$</td>

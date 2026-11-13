@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Lagrangian of the Charged Proca Fluid — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-lagrangian-of-the-charged-proca-fluid">The Lagrangian of the Charged Proca Fluid</h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The connection enters one of the two terms and it enters it as a derivative.</strong> The Proca action has a derivative term and an algebraic one; the coupling replaces $\partial_\mu$ by $D_\mu$ in the first and cannot touch the second, because the second is the magnitude's and a connection reaches derivatives. <strong>So the charged Proca fluid keeps its pressure and loses its continuity</strong>, which is the reverse of what the other charged articles of this layer do.</p>
+<p><strong>Three results.</strong></p>
+<p><em>First, the free decomposition of the field strength survives with one word changed.</em> $F=r\,\omega+\mathrm{d}r\wedge u$ becomes $F=r\,\Omega+\mathrm{d}r\wedge u$ with $\Omega_{\mu\nu}=D_\mu u_\nu-D_\nu u_\mu$: the vorticity becomes the covariant one, the density's gradient's term is untouched, and the rank stays two. <strong>The substitution is $\mathrm{d}\to D$ in one place and the structure is preserved.</strong></p>
+<p><em>Second, the Lorenz condition ceases to be continuity and this is the article's main statement.</em> At the free rung $\partial_\mu A^\mu=0$ is $\partial_\mu(ru^\mu)=0$, the conservation of a real density by a real flow. Charged, the condition is $D_\mu A^\mu=0$, and written with the ordinary divergence it carries a source that is phase-carrying and imaginary. <strong>The condition survives and its fluid reading does not</strong>: the density is no longer conserved by the flow alone, and the fluid is compressible by the field's action.</p>
+<p><em>Third, the mass term is coupling-blind, so the four statements it carried at the free rung become three.</em> It still removes the field's own shift freedom, still supplies the condition, still fixes the pressure to a constant. What it can no longer do is make that condition a conservation law.</p>
+<p><strong>Position in the block.</strong> This is the variational companion of <a href="the-charged-proca-fluid.html">The Charged Proca Fluid</a> and the eighth and last of the articles of this layer. It is the only one in which the coupling degrades a statement rather than adding a force, and the only one in which the free rung's cleanest result is lost.</p>
+<p><strong>Conventions.</strong> $A_\mu$ is complex, $F_{\mu\nu}=D_\mu A_\nu-D_\nu A_\mu$, $D_\mu=\partial_\mu+\frac{iϙ}{\hbar}A^{\mathrm{ext}}_\mu$, $k_m=mc/\hbar$; $\mathcal L=-\frac14F^{*}_{\mu\nu}F^{\mu\nu}-\frac{k_m^{2}}{2}A^{*}_\mu A^\mu$ in the corpus's signature. The external potential is written $\tilde A_\Phi=i a'_t e_t+\vec A$ and the coupling is $ϙ$, with $q=-ϙ$. The carrier's parameters are eight real ones; <a href="the-charged-proca-fluid.html">The Charged Proca Fluid</a> records the doubling and this article does not re-derive it.</p>
+<h2 id="the-action-in-the-fluid-variables">The Action in the Fluid Variables</h2>
+<p><strong>The derivative term is rebuilt and the algebraic term is not.</strong></p>
+<p>$$
+\mathcal L=-\frac{1}{4}F^{*}_{\mu\nu}F^{\mu\nu}-\frac{k_m^{2}}{2}\lvert A\rvert^{2}
+\;\longrightarrow\;
+\mathcal L_{\mathrm{gco}}=-\frac{1}{4}F^{\mathrm{gco}*}_{\mu\nu}F^{\mathrm{gco}\,\mu\nu}-\frac{k_m^{2}}{2}\lvert A\rvert^{2},
+\qquad
+F^{\mathrm{gco}}_{\mu\nu}=D_\mu A_\nu-D_\nu A_\mu .
+$$</p>
+<p><strong>The second term is the same term.</strong> $\lvert A\rvert^{2}$ carries no derivative, so no substitution reaches it; the connection is in $D$ and there is no $D$ there. <strong>This is the layer's one constant: in all four charged articles the coupling reaches derivatives and not magnitudes</strong>, and here the magnitude is the whole of the algebraic term.</p>
+<p><strong>The first term's decomposition is the free one with $\mathrm{d}$ replaced by $D$.</strong> Writing $A_\mu$ as a magnitude and a direction, $F^{\mathrm{gco}}=r\,\Omega+\mathrm{d}r\wedge u$ with</p>
+<p>$$
+\Omega_{\mu\nu}=D_\mu u_\nu-D_\nu u_\mu,
+$$</p>
+<p>and the identity behind the split is algebraic: $F(D)(r u)=r\,(Du)+\mathrm{d}r\wedge u$ for every connection. <strong>The free article's three pieces therefore survive</strong>: the covariant vorticity times the density, the density's gradient wedged with the velocity, and the cross term.</p>
+<p><strong>What changes is the vorticity's definition and hence its source.</strong> At the free rung $\omega=\mathrm{d}u$ and the vorticity is the direction's curl; here $\Omega=Du$ and the vorticity carries the connection. <strong>The fluid's rotation is no longer a property of the direction alone</strong>, and the difference is the field strength's contribution to it — which is the opposite of what happens at the scalar rung, where the coupling <em>is</em> the vorticity. The two are not in contradiction: the scalar velocity is a gradient and the vector velocity is a direction, so a connection shifts the first into the field and folds itself into the second.</p>
+<p><strong>The rank is still two, and the reason is still the dimension of the rest space.</strong> The covariant vorticity of the congruence is the projected curl, $\Omega^{\perp}_{\mu\nu}=\Delta_\mu{}^\alpha\Delta_\nu{}^\beta\Omega_{\alpha\beta}$ with $\Delta_{\mu\nu}=g_{\mu\nu}+u_\mu u_\nu$, and it annihilates $u$ by construction; a two-form on three dimensions is simple, so the rank is two wherever $\vec\Omega\ne0$. <strong>The raw covariant curl is not transverse, and compatibility with the norm is not what would make it so</strong>: $\Omega_{\mu\nu}u^\nu=-u^\nu D_\nu u_\mu$, the covariant acceleration, which is orthogonal to the flow because the norm is preserved and not because the curl is.</p>
+<h2 id="the-lorenz-condition-ceases-to-be-continuity">The Lorenz Condition Ceases to Be Continuity</h2>
+<p><strong>The identity survives and the conclusion changes.</strong> Taking the covariant divergence of the field equation,</p>
+<p>$$
+D_\nu F^{\mathrm{gco}\,\nu\mu}=k_m^{2}A^\mu
+\qquad\Longrightarrow\qquad
+0=D_\mu D_\nu F^{\mathrm{gco}\,\nu\mu}=k_m^{2}\,D_\mu A^\mu,
+$$</p>
+<p>the first equality being the antisymmetry of $F$ and the second the field equation. So the condition is $D_\mu A^\mu=0$, exactly as at the free rung with $\partial\to D$.</p>
+<p><strong>Written with the ordinary divergence, the condition has a source.</strong></p>
+<p>$$
+D_\mu A^\mu=0
+\qquad\Longleftrightarrow\qquad
+\partial_\mu\bigl(A^\mu\bigr)=-\frac{iϙ}{\hbar}A^{\mathrm{ext}}_\mu A^\mu,
+$$</p>
+<p>and the right-hand side is not zero, is imaginary, and carries the carrier's phase. <strong>That is the precise sense in which the condition ceases to be continuity</strong>: the left-hand side is the divergence of the field and would be the flow's density balance, and the right-hand side is a source the flow does not supply.</p>
+<p><strong>The block's display is this statement in the algebra.</strong> <a href="the-charged-proca-fluid.html">The Charged Proca Fluid</a> writes $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde A)=-\frac{iϙ}{\hbar}r^{2}e^{2i\vartheta_{\mathrm{pha}}}$: the divergence is imaginary, it is proportional to the coupling, and it carries twice the phase. <strong>Read as a continuity equation it says that the fluid's density is not conserved by the flow</strong>, and the $e^{2i\vartheta}$ says that what spoils the conservation is not a real rate but a phase-carrying quantity — a source that is not a scalar.</p>
+<p><strong>Three consequences, and the article states them as losses.</strong></p>
+<p><em>The free rung's cleanest result is gone.</em> There the Lorenz condition was continuity and the fluid's continuity was the mass's gift; here the condition is a constraint that the flow cannot satisfy alone.</p>
+<p><em>The compressibility's origin is now visible and it is not the mass's.</em> At the free rung $\partial_\mu(ru^\mu)=0$; charged, $\partial_\mu(A^\mu)$ is the source. The difference is the connection's, so <strong>the free fluid's incompressibility is the mass's gift and the charged fluid's compressibility is the charge's.</strong></p>
+<p><em>The count of equations changes in one place.</em> The free rung had four field components, four equations, and one of them a consequence of the others through an identity. The charged rung has the same four and the same identity, and the consequence is now a condition with a source rather than a conservation law. <strong>The count is the same and the content is not.</strong></p>
+<h2 id="what-the-mass-term-still-does">What the Mass Term Still Does</h2>
+<p><strong>Three statements, and each is unchanged.</strong></p>
+<p><em>It removes the field's own shift freedom.</em> $A_\mu\mapsto A_\mu+\partial_\mu\Gamma$ is not a symmetry of $\mathcal L_{\mathrm{gco}}$ at $k_m\ne0$, because $\lvert A\rvert^{2}$ is not invariant; and the coupling does not restore it, because $D\partial\Gamma\ne\partial$ unless $\Gamma$ is constant in the gauge-covariant sense.</p>
+<p><em>It supplies the condition.</em> The derivation above uses the mass term's coefficient: with $k_m=0$ the identity $\partial\partial F=0$ stands alone and says nothing about $A$.</p>
+<p><em>It fixes the stiffness.</em> The algebraic term is $\frac{k_m^{2}}{2}\lvert A\rvert^{2}$, and the pressure is read off it as at the free rung: energy density and pressure are equal, $\epsilon=p=\frac{k_m^{2}}{2}r^{2}$. <strong>The charged Proca fluid is stiff at both rungs, and the coupling does not touch the stiffness</strong>, because the algebraic term carries no derivative for the connection to enter.</p>
+<p><strong>What the mass term no longer does is make the condition a conservation law.</strong> That is the fourth statement of the free rung and it is not available, for the reason the previous section gives: the source is there whether or not the mass is.</p>
+<p><strong>And the coupling does not break the external gauge symmetry.</strong> Under $A\mapsto\lambda A$ with $\lambda=\exp(iϙ\Gamma/\hbar)$ and $A^{\mathrm{ext}}_\mu\mapsto A^{\mathrm{ext}}_\mu-\partial_\mu\Gamma$, both terms are invariant: the derivative term because $D$ is, the algebraic term because $\lvert\lambda\rvert^{2}=1$. <strong>Two different freedoms must be kept apart</strong>: the field's own shift, which the mass breaks at both rungs, and the external group's phase rotation, which is a symmetry at the charged rung and is what makes the carrier complex.</p>
+<h2 id="what-the-carriers-doubling-costs">What the Carrier's Doubling Costs</h2>
+<p><strong>The free carrier has four real parameters; the charged one has eight, and the action says which term sees which.</strong> The block's charged article records the doubling and this article states its location: the derivative term sees all eight, the algebraic term sees one combination of them — the magnitude — and the external gauge redundancy removes one.</p>
+<p><strong>The density and the direction are therefore not enough to describe the carrier, and that is the difference from the other charged articles.</strong> At the scalar rung the carrier is one complex number and the fluid's variables exhaust it; at the spinor rung the carrier is one biquaternion and the word's eight parameters exhaust it; <strong>here the carrier is a complex vector, the fluid's variables are a magnitude and a direction, and the count does not close.</strong> The balance is the phase and the imaginary part of the direction, and the action puts the phase in the derivative term only.</p>
+<p><strong>The consequence for what the fluid reading can be is a boundary and the article states it as one.</strong> <a href="the-charged-proca-fluid.html">The Charged Proca Fluid</a> finds that the free incompressibility is revealed as the mass's gift, that the condition ceases to be continuity, and that the carrier doubles. A reader who wants to know whether the charged Proca field has a fluid reading at all is being told: <strong>it has a fluid reading of its magnitude and direction, and the carrier has four parameters more than those two supply.</strong> Whether the extra four can be read as a second fluid — a second density with its own phase — is not settled anywhere in the corpus.</p>
+<h2 id="what-the-fluid-variational-principle-adds-and-does-not-add">What the Fluid Variational Principle Adds and Does Not Add</h2>
+<p><strong>Adds.</strong> The location of the coupling in the action: the derivative term and not the algebraic one, hence the pressure's survival and the continuity's loss. The decomposition $F=r\Omega+\mathrm{d}r\wedge u$ as an algebraic identity with $D$ in place of $\mathrm{d}$, and with it the statement that the vorticity's source has changed while its structure has not. The condition's loss of its fluid reading, stated as the source term that $\partial\cdot A$ acquires. The separation of the two gauge freedoms. And the count's failure to close, located at the carrier's complex structure.</p>
+<p><strong>Does not add.</strong> No new equation. No new fluid: the reading of the magnitude and the direction survives and does not extend. No statement about the extra four parameters beyond their location. No thermodynamics. No quantum potential, at either rung, since the Proca action has no second derivative of the magnitude.</p>
+<p><strong>The layer's ledger, in one sentence per article.</strong> The scalar first-order rung has one substitution in two brackets; the scalar relativistic rung has a substitution that meets the shell; the spinor rung has a substitution whose image is the phase and the boost and never the rotor; the vector rung has a substitution that reaches the derivative term and leaves the pressure alone and takes the continuity away. <strong>Four charged articles, one connection, four different reaches</strong> — and the reaches are read off the connection's type in the algebra, which is the same argument in all four.</p>
+<h2 id="open-questions">Open Questions</h2>
+<ol>
+<li>
+<p><strong>The extra four parameters.</strong> Whether the carrier's remaining freedom can be read as a second fluid, with its own density and phase, is not settled. The block's article records the doubling and leaves it.</p>
+</li>
+<li>
+<p><strong>The condition's source and the current.</strong> The source term in $\partial_\mu A^\mu$ is $-\frac{iϙ}{\hbar}A^{\mathrm{ext}}\cdot A$; whether it is the divergence of a current the fluid can name — as the scalar rung's $ϙ\vec j$ is — is not computed here.</p>
+</li>
+<li>
+<p><strong>The massless limit.</strong> As at the free rung, the fluid reading does not survive $k_m=0$, and the charged case adds a second reason: the condition's source is present at $k_m=0$ as well, so the limit loses both the condition and the reading.</p>
+</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p><strong>The action.</strong> $\mathcal L_{\mathrm{gco}}=-\frac14F^{\mathrm{gco}*}F^{\mathrm{gco}}-\frac{k_m^{2}}{2}\lvert A\rvert^{2}$: the derivative term rebuilt with $D$, the algebraic term untouched.</p>
+<p><strong>The decomposition.</strong> $F^{\mathrm{gco}}=r\,\Omega+\mathrm{d}r\wedge u$ with $\Omega=Du$; the vorticity is covariant and rank two, its transversality being the projection's and not the curl's; the density's gradient's term is unchanged.</p>
+<p><strong>The condition.</strong> $D_\mu A^\mu=0$ still follows from the field equation, and written with the ordinary divergence it has a phase-carrying imaginary source. <strong>Continuity is lost</strong> and the fluid is compressible by the field's action.</p>
+<p><strong>The mass.</strong> Three of its four free statements survive: it breaks the field's own shift, supplies the condition, fixes the pressure. It no longer makes the condition a conservation law.</p>
+<p><strong>The carrier.</strong> Eight real parameters against the fluid's four; the action puts the coupling in the derivative term only, and the count's balance is the phase.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A_\mu$</td>
+<td>The complex Proca field; eight real parameters</td>
+</tr>
+<tr>
+<td>$D_\mu=\partial_\mu+\frac{iϙ}{\hbar}A^{\mathrm{ext}}_\mu$</td>
+<td>The covariant derivative; abelian</td>
+</tr>
+<tr>
+<td>$F^{\mathrm{gco}}_{\mu\nu}=D_\mu A_\nu-D_\nu A_\mu$</td>
+<td>The covariant field strength</td>
+</tr>
+<tr>
+<td>$r$, $u_\mu$</td>
+<td>Magnitude and direction; $u_\mu u^\mu=-1$</td>
+</tr>
+<tr>
+<td>$\Omega_{\mu\nu}=D_\mu u_\nu-D_\nu u_\mu$</td>
+<td>Covariant curl, contracting to minus the covariant acceleration; its projection is the vorticity and is rank two</td>
+</tr>
+<tr>
+<td>$F^{\mathrm{gco}}=r\,\Omega+\mathrm{d}r\wedge u$</td>
+<td>The decomposition of the field strength</td>
+</tr>
+<tr>
+<td>$\lvert A\rvert^{2}$</td>
+<td>The algebraic term's argument; coupling-blind</td>
+</tr>
+<tr>
+<td>$k_m=mc/\hbar$</td>
+<td>Mass wave number</td>
+</tr>
+<tr>
+<td>$ϙ$</td>
+<td>Coupling; minus the electric charge</td>
+</tr>
+<tr>
+<td>$\lambda=\exp(iϙ\Gamma/\hbar)$</td>
+<td>The external gauge element; a symmetry</td>
+</tr>
+<tr>
+<td>$\vartheta_{\mathrm{pha}}$</td>
+<td>The carrier's phase; appears squared in the divergence</td>
+</tr>
+<tr>
+<td>$\mathcal L_{\mathrm{gco}}$</td>
+<td>The Lagrangian density in the fluid variables with the connection</td>
+</tr>
+<tr>
+<td>$\mathrm{Sc}(\tilde Q)$</td>
+<td>Scalar part</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Alexandru Proca, "Sur la théorie ondulatoire des électrons positifs et négatifs," <em>Journal de Physique et le Radium</em> <strong>7</strong> (1936) 347–353, for the massive vector field and the condition its mass implies.</li>
+<li>Wolfgang Pauli, "Relativistic field theories of elementary particles," <em>Reviews of Modern Physics</em> <strong>13</strong> (1941) 203–232, for the constraint counting of a massive vector field and the fate of its gauge freedom.</li>
+<li>John R. Oppenheimer and Julian S. Schwinger, "On the interaction of mesotrons and nuclear particles," <em>Physical Review</em> <strong>60</strong> (1941) 150, for the constraint structure of a massive vector coupled to an external field.</li>
+<li>Friedrich W. Hehl, "On the kinematics of the torsion of space-time," <em>Foundations of Physics</em> <strong>15</strong> (1985) 451–471, for a unit vector's covariant vorticity, its transversality and its rank.</li>
+<li>The companion articles: <a href="the-variational-principle-and-the-coupled-proca-equation-in-biquaternionic-polar-variables.html">The Variational Principle and the Coupled Proca Equation in Biquaternionic Polar Variables</a>, the same action in the chart and the branch's role; <a href="the-charged-proca-fluid.html">The Charged Proca Fluid</a>, the equations and the divergence $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde A)=-\frac{iϙ}{\hbar}r^{2}e^{2i\vartheta_{\mathrm{pha}}}$; <a href="the-lagrangian-of-the-spin-one-fluid.html">The Lagrangian of the Spin-One Fluid</a>, the free rung where the condition is continuity; and <a href="the-lagrangian-of-the-charged-spin-fluid.html">The Lagrangian of the Charged Spin Fluid</a>, the rung where the coupling reaches neither the density's nor the spin's norm.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

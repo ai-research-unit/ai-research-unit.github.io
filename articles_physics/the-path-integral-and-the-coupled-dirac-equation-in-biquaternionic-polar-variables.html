@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Path Integral and the Coupled Dirac Equation in Biquaternionic Polar Variables — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-path-integral-and-the-coupled-dirac-equation-in-biquaternionic-polar-variables"><strong>The Path Integral and the Coupled Dirac Equation in Biquaternionic Polar Variables</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><em>The Path Integral and the Coupled Dirac Equation in Biquaternionic Form</em> constructs the sum over worldlines for the coupled pair, with the gauge term in the exponent and the spin factor in the weight. This article writes the same integral in the polar word and reads where the connection lands.</p>
+<p><strong>The word is the corpus's, and it is a bijection.</strong> Write</p>
+<p>$$
+\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
+$$</p>
+<p>with $r>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd}}\ge0$ the boost's rapidity, and $\theta_{\mathrm{axr}}\in[0,2\pi]$ the rotor's angle. The map is a bijection onto the $N$-regular elements, so substituting it adds nothing and drops nothing. This article therefore claims no new integral, as its free counterpart claims none. It reads one kernel in other coordinates.</p>
+<p><strong>Two objects are read, and the coupling acts on them differently.</strong> A single history carries a central weight and a spin factor. The connection adds to the first and cannot enter the second except through the curvature. The kernel carries all four factors, and the connection acts on one of them in position space and on a different one in momentum space. The whole article is the working out of that sentence.</p>
+<p><strong>The findings are six, and each is one sentence.</strong></p>
+<ul>
+<li>A path's weight gains the gauge term as a real number, so it gains an angle and nothing else: every history keeps scale one, no boost, and a rotor that is a sign.</li>
+<li>In a field-free potential the kernel's word is the free word with its angle shifted by $-ϙ\tilde A_\Phi\cdot\Delta\tilde R_\Phi/\hbar$, and its scale, boost and rotor untouched.</li>
+<li>The shift wraps: an angle beyond a quarter turn returns into the word's range and leaves a sign in the rotor, so a large constant potential flips the sign of the kernel's rotor.</li>
+<li>In momentum space the kernel is the free one at the covariant wavevector, so the boost in the word is named by $\tilde K_{\Phi,\mathrm{gco}}$ and not by $\tilde K_\Phi$.</li>
+<li>The scale is the van Vleck determinant of the Lorentz path, and it has no first-order response to the field strength; the amplitude is blind to a weak field.</li>
+<li>The rotor is the transport along the Lorentz path, so the charge enters the angle and the scale while the spin enters the rotor, and the two never exchange roles.</li>
+</ul>
+<p><strong>What the article does not do.</strong> It does not build a second integral, does not construct a measure, and does not derive the fermionic statistics. The companion's limitation carries over: the worldline integral is over commuting elements of $\mathbb{B}$, and the Grassmann spin sits in the spin factor. It also does not compute the kernel in a general constant field strength, which the companion leaves open and this article leaves open with it.</p>
+<h2 id="conventions">Conventions</h2>
+<p>The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$, $\vec e_\mu^2=-e_t$, $i$ central, $\mathrm{Sc}$ the coefficient of $e_t$ and $\mathrm{Tr}=2\,\mathrm{Sc}$. The pairing is the Hermitian $\mathrm{Sc}(\cdot^{*}\cdot)$. The word and its ranges are those of <em>The Dirac Equation in Biquaternionic Polar Variables</em>, §<em>The Word</em>, and none of their theory is repeated: $\rho=r^{2}$, $\gamma=\cosh\theta_{\mathrm{rpd}}$, $\mathcal B_\Psi=\tilde U_{\Psi,\mathrm b}^{-2}$, and $\Rho=re^{i\theta_{\mathrm{pha}}}$ the principal root of the quaternionic norm $N(\tilde\Xi)=\langle\tilde\Xi\rangle_{\natural}$. The word exists exactly on the $N$-regular elements.</p>
+<p><strong>The coupled pair and its covariant wavevector.</strong></p>
+<p>$$
+\tilde\nabla_{\mathrm{gco}}\tilde\Xi_R=k_m\tilde\Xi_L,
+\qquad
+\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R,
+\qquad
+\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi,
+$$</p>
+<p>with $\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{ϙ}{\hbar}\tilde A_\Phi$ the covariant wavevector of <em>The Coupled Dirac Equation in Biquaternionic Polar Variables</em>. The potential is $\tilde A_\Phi=A_te_t+\sum_\eta A_\eta\vec e_\eta$ with real coefficients in the abelian case, and every component is central. That centality is the single fact the article turns on, and it is the reason the connection multiplies the word instead of acting inside it.</p>
+<p><strong>The gauge term of the worldline.</strong> The companion's action carries</p>
+<p>$$
+S_{\mathrm{gco}}[x]=-\!ϙ\!\int\tilde A_\Phi\cdot\mathrm{d}\tilde R_\Phi ,
+\qquad
+\tilde A_\Phi\cdot\mathrm{d}\tilde R_\Phi=A_t\,\mathrm{d}r'_t+\sum_\eta A_\eta\,\mathrm{d}r_\eta ,
+$$</p>
+<p>the real pairing of the potential with the tangent. The minus is the corpus's and follows the covariant derivative's $+\frac{iϙ}{\hbar}\tilde A_\Phi$; the companion states the reason and this article does not restate it. Every number quoted below is a recomputation on one hundred samples unless it is stated otherwise.</p>
+<h2 id="the-weight-of-one-path-coupled">The Weight of One Path, Coupled</h2>
+<p><strong>The gauge term is a real number.</strong> For a history $x(\tau)$ the added term is the integral of a real one-form, so it is real. Its exponential is $e^{-iϙ\int\tilde A_\Phi\cdot\mathrm{d}\tilde R_\Phi/\hbar}$, a central element of modulus one. The word of a history's weight is therefore</p>
+<p>$$
+w\,e_t=e^{i\theta_{\mathrm{act}}}e_t,
+\qquad
+\theta_{\mathrm{act}}=\frac{1}{\hbar}\Bigl(S_0[x]+S_{\mathrm{spin}}[\tilde\Xi_\mu]+S_{\mathrm{gco}}[x]\Bigr),
+$$</p>
+<p>and the reduction into the word's range applies exactly as in the free article: $\theta_{\mathrm{pha}}$ is $\theta_{\mathrm{act}}$ reduced into $(-\pi/2,\pi/2]$, and the residue is a sign in the rotor.</p>
+<p><strong>The coupling cannot reach three of the four factors.</strong> A real number added to the action changes the phase of the central exponential. It cannot change the modulus, so the scale stays one; it cannot produce a Hermitian part, so the boost stays trivial; it cannot turn or rescale the rotor, so the rotor stays a sign. <strong>The gauge term is a coordinate shift on one parameter of the weight and on nothing else</strong>, and this is exact rather than approximate: no perturbative order enters.</p>
+<p><strong>This is the path-integral form of the polar equation's type table.</strong> <em>The Coupled Dirac Equation in Biquaternionic Polar Variables</em> records that the connection lands in the phase bracket and the boost bracket and in neither the scale bracket nor the rotor bracket. The worldline integral reproduces that placement from the other side and in a sharper form: on a history, the connection reaches one bracket, the phase's, because a history carries no boost bracket at all. <strong>The two statements are consistent because the kernel has a boost and a path does not</strong>: the boost bracket is where the connection would go if the object had a frame to turn, and the sum over histories assembles that bracket from the paths' transport rather than from any single path.</p>
+<p><strong>The two lines of the pair accumulate conjugate phases.</strong> The $L$ line's connection entry is $\tilde A_\Phi^{\natural}=A_te_t-\sum_\eta A_\eta\vec e_\eta$, so its histories carry $-ϙ\!\int(A_t\mathrm{d}r'_t-\sum_\eta A_\eta\mathrm{d}r_\eta)$ while the $R$ line's carry $-ϙ\!\int(A_t\mathrm{d}r'_t+\sum_\eta A_\eta\mathrm{d}r_\eta)$. For a purely electric potential the two are equal; for a purely magnetic one they are opposite. <strong>In the polar reading the pair's two lines differ by twice the magnetic part of the angle</strong>, and the difference is a phase and not a scale, a boost or a rotor. The element article's sentence that the conjugate entry is neither the negative of the entry nor a decomposition of it is, in the word, a statement about one parameter of one factor.</p>
+<p><strong>What a history does not carry.</strong> The free polar article's placement table stands unchanged: the scale is in the measure, the angle is in the weight, the rotor is in the spin factor, and the boost is in the frame that the intermediate sums assemble. The coupling adds nothing to that table and adds one term to the angle's value. A reader looking for a new parameter in the coupled word will not find one, and the absence is the statement that a one-form has no algebraic degree of freedom to spend.</p>
+<h2 id="the-word-of-the-kernel-in-a-field-free-potential">The Word of the Kernel in a Field-Free Potential</h2>
+<p><strong>The kernel is the free one times a central phase.</strong> The companion's §<em>The Exact Kernel in a Field-Free Potential</em> gives</p>
+<p>$$
+\mathcal S^{A}(x_f,x_i)=e^{-iϙ\tilde A_\Phi\cdot(\tilde R_{\Phi,f}-\tilde R_{\Phi,i})/\hbar}\,\mathcal S^{0}(x_f,x_i)
+$$</p>
+<p>for every field-free potential, component by component and exactly. A central phase multiplies an element without touching its non-central part, so the word transforms as</p>
+<p>$$
+r\longmapsto r,\qquad
+\tilde U_{\Psi,\mathrm b}\longmapsto\tilde U_{\Psi,\mathrm b},\qquad
+\tilde u_{\mathrm r}\longmapsto\pm\tilde u_{\mathrm r},\qquad
+\theta_{\mathrm{pha}}\longmapsto\theta_{\mathrm{pha}}-\frac{ϙ}{\hbar}\tilde A_\Phi\cdot\Delta\tilde R_\Phi .
+$$</p>
+<p><strong>The check is on a generic element, and it is not a check of the kernel alone.</strong> Over one hundred random elements multiplied by a random central phase the scale is unchanged to $9\times10^{-16}$, the boost to $1.3\times10^{-15}$, and the rotor is unchanged or negated, to $3\times10^{-15}$; the angle moves by the phase, modulo $\pi$, to $9\times10^{-16}$. The statement is therefore an identity about the word and not a numerical accident of one kernel.</p>
+<p><strong>The sign in the rotor is the branch and not a physical effect.</strong> The angle's range is $(-\pi/2,\pi/2]$, so a shift larger than a quarter turn returns into the range and the remainder becomes a sign:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$ϙ\tilde A_\Phi\cdot\Delta\tilde R_\Phi/\hbar$</th>
+<th>$\theta_{\mathrm{pha}}$</th>
+<th>rotor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$+0.4$</td>
+<td>$+0.4000$</td>
+<td>$+e_t$</td>
+</tr>
+<tr>
+<td>$+1.2$</td>
+<td>$+1.2000$</td>
+<td>$+e_t$</td>
+</tr>
+<tr>
+<td>$+1.9$</td>
+<td>$-1.2416$</td>
+<td>$-e_t$</td>
+</tr>
+<tr>
+<td>$+3.1$</td>
+<td>$-0.0416$</td>
+<td>$-e_t$</td>
+</tr>
+<tr>
+<td>$-2.0$</td>
+<td>$+1.1416$</td>
+<td>$-e_t$</td>
+</tr>
+<tr>
+<td>$+4.0$</td>
+<td>$+0.8584$</td>
+<td>$-e_t$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Each row is exact to the printed places. <strong>A large constant potential flips the sign of the kernel's rotor</strong>, and the flip is a property of the chart: the same kernel read on a word whose angle range were $(-\pi,\pi]$ would carry no flip. The branch is a coordinate convention, and a coordinate convention cannot be observable.</p>
+<p><strong>What is gauge invariant, stated in the word.</strong> The gauge transformation moves the angle by $ϙ\Gamma/\hbar$ and the potential by $-\tilde\nabla_\Phi\Gamma$, and it leaves the scale, the boost and the rotor at fixed gauge. So the triple $(r,\tilde U_{\Psi,\mathrm b},\tilde u_{\mathrm r})$, read up to the rotor's sign, is gauge invariant, and the angle is not. The covariant wavevector is invariant, as the polar coupled article shows, and the curvature is the invariant derived from it. <strong>The chart's gauge-dependent object is exactly one parameter of one factor</strong>, and that is the sharpest statement the polar form makes about gauge invariance.</p>
+<p><strong>Why the sign is not a counterexample to the invariance.</strong> A transformation with a large $\Gamma$ flips the rotor's sign and leaves everything else. That looks like the gauge transformation reaching the spin frame, and it does not: the flip is the branch's, it is undone by the same transformation read backwards, and no gauge-invariant quantity distinguishes $+\tilde u_{\mathrm r}$ from $-\tilde u_{\mathrm r}$ because both give the same spin direction $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$. <strong>The rotor is a double cover of the frame, and the branch cut is where the cover's sheet changes</strong>, so a gauge transformation can move a kernel from one sheet to the other without moving the frame.</p>
+<h2 id="the-kernel-in-a-background-in-momentum-space">The Kernel in a Background, in Momentum Space</h2>
+<p><strong>The momentum-space kernel is the free one at the covariant wavevector.</strong> Because each component of the connection is central, the coupled Green's function in a constant potential is the free one evaluated at shifted argument,</p>
+<p>$$
+\mathcal S_L^{\mathrm{gco}}(\tilde K_\Phi)=\mathcal S_L^{0}\bigl(\tilde K_{\Phi,\mathrm{gco}}\bigr)
+=\frac{\tilde K_{\Phi,\mathrm{gco}}-ik_m}{k_m^{2}+\langle\tilde K_{\Phi,\mathrm{gco}}\rangle_{\natural}},
+$$</p>
+<p>with $\langle\tilde K_{\Phi,\mathrm{gco}}\rangle_{\natural}=|\vec\kappa|^{2}-\kappa_t^{2}$ and $\hbar c\kappa_t=E+ϙcA_t$, $\hbar\vec\kappa=\vec p+ϙ\vec A$. This is the polar coupled article's kinetic momentum, and the integral gives it without a separate argument: the shift of the denominator's argument is the shift of the wavevector, and nothing else changes.</p>
+<p><strong>The boost in the word is named by the covariant wavevector.</strong> On the mass shell $\tilde K_{\Phi,\mathrm{gco}}\tilde K_{\Phi,\mathrm{gco}}^{\natural}=-k_m^{2}$, so the parent's mass-shell proposition gives</p>
+<p>$$
+\tilde K_{\Phi,\mathrm{gco}}=ik_m\,\tilde U_{\Psi,\mathrm b}^{-2},
+$$</p>
+<p>and the boost factor of the kernel's word is the one the covariant wavevector names, at the reversed axis, which is the free article's proposition applied to the shifted wavevector. <strong>The velocity is kinetic and the potential sits in the canonical wavevector</strong>, which is the polar coupled article's statement and here a consequence of where the integral puts the shift.</p>
+<p><strong>The angle stays one of two values.</strong> The numerator's norm is $\langle\tilde K_{\Phi,\mathrm{gco}}-ik_m\rangle_{\natural}$, a real indefinite quadratic in the shifted components, so the kernel's angle in momentum space is $0$ or $\pi/2$ exactly as in the free case. The coupling shifts the argument of a real-valued norm; it cannot make that norm complex, and it therefore introduces no third value. <strong>A background with a constant potential changes which value a given momentum has and does not enlarge the set of values</strong>, and that is the sense in which the Dirac kernel's angle is a label and not a phase.</p>
+<p><strong>The two arenas, kept apart.</strong> Position space and momentum space say different things about the same kernel and they must not be mixed. In position space the kernel is the free one times a central phase, so the angle moves and the boost is the free one's. In momentum space the kernel is the free one at a shifted argument, so the boost is the covariant wavevector's and the angle is a label. <strong>The two statements are consistent because the position-space kernel is an integral over all momenta</strong>: the word of an integral is not the word of its integrand, and the shift reappears as the argument of the transform rather than as a factor.</p>
+<h2 id="two-histories-and-the-flux">Two Histories and the Flux</h2>
+<p><strong>Interference is a phase and never a modulus.</strong> Take two histories with the same endpoints. Their weights differ by the central factor $e^{-iϙ\Phi/\hbar}$, with $\Phi$ the flux through the loop they enclose. In the word that factor is an angle shift with the branch's residue, exactly as in §<em>The Word of the Kernel in a Field-Free Potential</em>. The sum of the two weights therefore has the modulus of the free sum and the phase of the free sum plus the flux's contribution.</p>
+<p><strong>The check is exact for polygons.</strong> For a constant field strength in a two-dimensional model the gauge term of a polygonal loop is the field strength times the enclosed area to $2\times10^{-16}$ over five random hexagons, and the two-path model of the companion gives a relative phase of $-0.480$ against a field-times-area of $-0.480$. Green's theorem on a linear potential is an identity, so what the numbers check is the orientation and the arithmetic.</p>
+<p><strong>The consequence for the density.</strong> A charged particle's probability density in a field-free region does not respond to the potential, at any order, because the response is a phase common to all histories with the same endpoints. <strong>Only histories that enclose different flux interfere differently</strong>, and the fringe is the whole of the effect. That is the path-integral form of the statement that a pure gauge potential is unobservable, and it is stronger than the operator's statement because it locates the invisibility in the weight of one history rather than in the covariance of the equation.</p>
+<p><strong>Where the word fails and the amplitude does not.</strong> The angle's range is finite, so a flux larger than $\pi\hbar/2ϙ$ in magnitude sends the angle round the branch cut and back into the range. The word's angle then no longer grows with the flux, and only the rotor's sign records the winding. <strong>The winding number of the flux is visible in the word as a sign and in the amplitude as a phase</strong>, and the phase is the one that is physical. This is a second place, after the constant potential, where the chart's range and the physics part company, and the same resolution applies: read the invariant, not the coordinate.</p>
+<h2 id="the-semiclassical-word-in-a-background">The Semiclassical Word in a Background</h2>
+<p><strong>The angle.</strong> For small $\hbar$ the integral is dominated by the Lorentz path of the companion, and the phase is</p>
+<p>$$
+\theta_{\mathrm{act}}=\frac{1}{\hbar}\Bigl(S_0[x_{\mathrm{cl}}]+S_{\mathrm{gco}}[x_{\mathrm{cl}}]\Bigr)
+$$</p>
+<p>reduced into the word's range, plus the Maslov constant. The gauge term's share is $-ϙ\!\int\tilde A_\Phi\cdot\mathrm{d}\tilde R_\Phi$ on the classical path: a boundary term for an exact potential, a flux for a field strength. <strong>The charge enters the angle and only the angle</strong> at this order, and the angle is where the potential is legible.</p>
+<p><strong>The Maslov constants are unchanged by the coupling.</strong> The central constant is $\arg(i^{-d/2})=-d\pi/4$ with $d$ the count of integrated directions, and it comes from the Fresnel integral of the Gaussian. The spin constant is the sign of the rotor's double cover, $2\pi\mapsto-e_t$. Neither involves the potential: the first is a property of the number of integrated directions, the second of the lift. <strong>A coupling that adds a term to the exponent cannot move either constant</strong>, and the coupled case therefore inherits both without correction.</p>
+<p><strong>The scale is the van Vleck determinant of the Lorentz path.</strong> The Gaussian about the classical path gives the determinant of the second variation, and the second variation is the free operator plus a term linear in $F$. Its determinant is even in the field strength, because the linear term's contribution to the logarithm is an antisymmetric field contracted with a kernel symmetric in the two worldline times, and that trace vanishes. The companion checks the evenness directly: at a fixed path the ratio of the second-variation determinant in field strength $B$ to the free one is $-6.0\times10^{-4}$, $-2.4\times10^{-3}$, $-9.6\times10^{-3}$ and $-3.8\times10^{-2}$ for $B=0.05$, $0.10$, $0.20$ and $0.40$, identical for $-B$ to $10^{-8}$, and quadratic in $B$ with the coefficient constant to one percent.</p>
+<p><strong>In the word, that is a statement about the scale.</strong> The scale's response to the field is second order, so a weak field does not change the kernel's amplitude at first order: it moves the angle and it leaves the scale alone. <strong>The scale is blind to a weak field and the angle is not</strong>, and the asymmetry is exact at first order and inherited from the antisymmetry of $F$. The polar reading of a weak-field limit is therefore: a phase shifts, an amplitude does not, and the first amplitude correction is the square of the field.</p>
+<p><strong>The rotor is the transport along the Lorentz path.</strong> The spin factor's curvature term is the path-ordered exponential of the six generators contracted with $F$, and its semiclassical value is the parallel transport of the spin frame along the classical path. In the free case the classical path is straight, the transport is the unit in the frame that moves with it, and the rotor of the exact numerator is a separate $\pi$ rotation about the frame's axis, the one that carries the mass reversal. In a background the path is the Lorentz path, the transport is not the unit, and the kernel's rotor is that transport composed with the numerator's rotation. <strong>The rotor carries the spin and the charge does not touch it</strong>, and the observed precession is the frame's transport composed with the rotor's own rate, which is <em>The Classical Origin of $g=2$ in Biquaternionic Form</em>.</p>
+<p><strong>The division of labour, stated once.</strong> The charge enters the angle, through the one-form, and the scale, at second order through the curvature. The spin enters the rotor. The gauge field never turns the rotor directly and never rescales the weight directly, and the two statements have the same source: a central element multiplies the word and cannot act inside a factor. <strong>Every structural claim of this article is one instance of that sentence.</strong></p>
+<h2 id="the-word-does-not-compose-and-the-coupling-does-not-repair-it">The Word Does Not Compose, and the Coupling Does Not Repair It</h2>
+<p><strong>The covariant phase composes.</strong> For two paths sharing an intermediate point the gauge term is additive, so the covariant phase is additive, and the angle — being the reduced phase — composes up to the branch's residue. This is the free polar article's statement that the angle composes, with the coupling's term included: the coupling is additive along concatenation and therefore compatible with the additivity of the angle.</p>
+<p><strong>The rotor does not compose.</strong> The word of a product of kernels is not the product of the words, because the sum over intermediate points is an integral. The free article measures the failure on a model of two Gaussian kernels: over the full line the composed modulus is $\sqrt{\pi/(a+b)}=\sqrt{\pi/2.3}=1.169$, neither one nor the product of the two moduli, which is one, and the composed angle is $1.33$, the phase at the stationary point plus the quarter turn of the Gaussian. The angle's additivity is recovered at the stationary point together with the Maslov constant; the modulus's multiplicativity is not recovered at all.</p>
+<p><strong>The coupling neither helps nor hurts.</strong> Adding a central phase to a kernel multiplies the composed kernel by the sum of the two central phases and changes nothing else. <strong>A coupling that is central per component is invisible to the non-composition of the rotor</strong>, and that is why the polar form of a gauge theory can be written at all: the composition failure lives in the rotor, and the rotor is exactly what a central coupling cannot reach.</p>
+<p><strong>What would compose.</strong> A field whose rotor factor were central would compose for its rotor too, and the free Schrödinger kernel is the case: its word has no rotor to fail. The Dirac kernel's non-composition is therefore the price of the spin, and the coupled case pays the same price with the connection's phase added to the angle.</p>
+<h2 id="what-the-polar-reading-adds-and-does-not-add">What the Polar Reading Adds and Does Not Add</h2>
+<p><strong>Adds.</strong></p>
+<ul>
+<li>The weight's degeneracy in a background, stated and exact: a history gains an angle and no other parameter, checked on one hundred random elements to $10^{-15}$.</li>
+<li>The exact word of the kernel in a field-free potential, with three factors untouched and the angle shifted by the boundary term of the one-form.</li>
+<li>The branch's residue: a large constant potential flips the kernel's rotor sign, the flip is a chart effect, and the invariant is the covariant wavevector and the curvature.</li>
+<li>The two lines' conjugate angles, equal for an electric potential and opposite for a magnetic one.</li>
+<li>The location of the shift in the two arenas and the reason they differ: in position space a phase, in momentum space an argument.</li>
+<li>The scale's blindness at first order and the rotor's role as the transport along the Lorentz path, which is the division of labour between charge and spin in one statement.</li>
+<li>The compatibility of the coupling with the angle's composition and its irrelevance to the rotor's non-composition.</li>
+</ul>
+<p><strong>Does not add.</strong> No second integral: the object read is the companion's. No prediction: the kernel is the standard coupled propagator. No measure, and no construction of the field integral's Trotter limit. No derivation of the fermionic statistics. No closure of the constrained system that the polar variational article leaves open. No kernel for a general constant field strength, and therefore no reading of the word in a field that bends the path without being a translation.</p>
+<h2 id="open-questions">Open Questions</h2>
+<ol>
+<li>
+<p><strong>The word in a general constant field strength.</strong> The companion leaves the kernel unevaluated there, and so does this article. The polar question is sharp: in a constant field the transport is a one-parameter family of rotors, and whether their angle is linear in the proper time — as the exact Schwinger determinant's logarithm is — would decide whether the word's rotor is the exponential of an element of the algebra that the chart can name.</p>
+</li>
+<li>
+<p><strong>The rotor's sign and the flux's winding.</strong> §<em>Two Histories and the Flux</em> records that a winding larger than a half turn is a sign in the rotor. Whether the winding's count is recoverable from the kernel's word, rather than only from the amplitude, is not settled. A candidate is the rotor's sign together with the angle's branch, and the candidate is untested.</p>
+</li>
+<li>
+<p><strong>The scale at second order.</strong> The determinant's quadratic response is measured and not interpreted. In the word it is a correction to the scale, and whether that correction has a geometric reading — a curvature of the space of paths, say — is open. The free case has no such term and gives no guidance.</p>
+</li>
+<li>
+<p><strong>The constraints with a connection.</strong> The variational companion leaves a system in which seven of the eight momenta vanish or are fixed, one is the density $\pi_{\theta_{\mathrm{pha}}}=-\hbar c\rho$, and six Euler–Lagrange equations are constraints. The coupling adds a potential that depends on the frame's variables and is independent of the scale and the angle, so by the type argument it should enter the same two brackets and leave the count alone. The worldline integral has no canonical structure to test that with, and no test is offered here.</p>
+</li>
+<li>
+<p><strong>The fermionic statistics.</strong> Unchanged from the free pair: the word is a coordinate on a commuting algebra, the Grassmann spin is in the spin factor, and the two are related by the spin–statistics theorem at quantisation rather than by anything in this integral.</p>
+</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>The coupled path integral read in the word gives one new sentence and several consequences of it. A history's weight gains a real number, so it gains an angle and nothing else: scale one, no boost, a rotor that is a sign, and an angle that includes $-ϙ\int\tilde A_\Phi\cdot\mathrm{d}\tilde R_\Phi/\hbar$ reduced into the word's range.</p>
+<p>That single fact decides the rest. In a field-free potential the kernel's word is the free word with the angle shifted and the rotor possibly negated at the branch, and the negation is a chart effect with no invariant content. Two histories differ by a flux, which is again an angle. In momentum space the shift moves where the kernel is evaluated, so the boost is the covariant wavevector's, and the angle stays one of two labels. Semiclassically the angle carries the classical action with the gauge term, the scale is the van Vleck determinant of the Lorentz path with no first-order response to the field, and the rotor is the transport along that path.</p>
+<p>The division of labour is the polar form's contribution: the charge enters the angle and, at second order, the scale; the spin enters the rotor; and no central element can cross from one to the other. The coupling composes with the angle and cannot repair the rotor's non-composition, because it is central and the failure is not.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde\Xi=r e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$</td>
+<td>The polar word; a bijection onto the $N$-regular elements</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$</td>
+<td>The angle; the only parameter a coupling can move</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{rpd}}$, $\vec u_{\mathrm b}$</td>
+<td>Rapidity and axis of the boost $\tilde U_{\Psi,\mathrm b}$</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{axr}}$, $\vec u_{\mathrm r}$</td>
+<td>Angle and axis of the rotor $\tilde u_{\mathrm r}$</td>
+</tr>
+<tr>
+<td>$\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$</td>
+<td>Spin direction; unchanged by a central phase</td>
+</tr>
+<tr>
+<td>$ϙ$</td>
+<td>Charge</td>
+</tr>
+<tr>
+<td>$\tilde A_\Phi$, $\tilde A_\Phi^{\natural}$</td>
+<td>Potential biquaternion and its conjugate; equal for electric, opposite for magnetic</td>
+</tr>
+<tr>
+<td>$\tilde A_\Phi\cdot\mathrm{d}\tilde R_\Phi$</td>
+<td>The real one-form of the potential along the worldline</td>
+</tr>
+<tr>
+<td>$S_{\mathrm{gco}}[x]=-ϙ\!\int\tilde A_\Phi\cdot\mathrm{d}\tilde R_\Phi$</td>
+<td>The gauge term of the worldline action</td>
+</tr>
+<tr>
+<td>$\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{ϙ}{\hbar}\tilde A_\Phi$</td>
+<td>Covariant wavevector; the one that names the boost</td>
+</tr>
+<tr>
+<td>$\Phi$</td>
+<td>Flux through the loop two histories enclose</td>
+</tr>
+<tr>
+<td>$\mathcal S^{A}$, $\mathcal S^{0}$</td>
+<td>Kernel in a constant potential, and free kernel</td>
+</tr>
+<tr>
+<td>$\mathcal{F}[x]$</td>
+<td>Spin factor, the path-ordered algebra-valued weight</td>
+</tr>
+<tr>
+<td>$e^{-iϙ\tilde A_\Phi\cdot\Delta\tilde R_\Phi/\hbar}$</td>
+<td>The central phase of a field-free potential; the whole of its effect</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{act}}$</td>
+<td>Action over $\hbar$, reduced into the word's range</td>
+</tr>
+<tr>
+<td>$\arg(i^{-d/2})=-d\pi/4$</td>
+<td>Central Maslov constant; unchanged by the coupling</td>
+</tr>
+<tr>
+<td>$-e_t$ at $2\pi$</td>
+<td>Spin Maslov constant, the rotor's double cover; unchanged by the coupling</td>
+</tr>
+<tr>
+<td>$k_m=mc/\hbar$</td>
+<td>Mass parameter</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-path-integral-and-the-coupled-dirac-equation-in-biquaternionic-form.html">The Path Integral and the Coupled Dirac Equation in Biquaternionic Form</a>, the companion, for the integral read here: the gauge term, the exact factoring, the flux and the Lorentz path.</li>
+<li><a href="the-path-integral-and-the-dirac-equation-in-biquaternionic-polar-variables.html">The Path Integral and the Dirac Equation in Biquaternionic Polar Variables</a>, for the free reading of the same four factors, the Maslov constants and the non-composition.</li>
+<li><a href="the-coupled-dirac-equation-in-biquaternionic-polar-variables.html">The Coupled Dirac Equation in Biquaternionic Polar Variables</a>, for the type table, the kinetic momentum and the kinetic velocity that this article recovers from the integral.</li>
+<li><a href="the-coupled-dirac-equation-in-biquaternionic-form.html">The Coupled Dirac Equation in Biquaternionic Form</a>, for the equation, the conjugate entry and the constant-potential solutions.</li>
+<li><a href="the-variational-principle-and-the-coupled-dirac-equation-in-biquaternionic-polar-variables.html">The Variational Principle and the Coupled Dirac Equation in Biquaternionic Polar Variables</a>, for the coupled action in the word and the constraint structure.</li>
+<li><a href="the-dirac-equation-in-biquaternionic-polar-variables.html">The Dirac Equation in Biquaternionic Polar Variables</a>, for the word, its ranges and the four brackets.</li>
+<li><a href="the-classical-origin-of-g-2-in-biquaternionic-form.html">The Classical Origin of $g=2$ in Biquaternionic Form</a>, for the composition of the transport with the rotor's own rate.</li>
+<li><a href="the-gauge-principle-in-biquaternionic-form.html">The Gauge Principle in Biquaternionic Form</a>, for the covariant derivative and the sign convention.</li>
+<li>F. A. Berezin and M. S. Marinov, "Particle spin dynamics as the Grassmann variant of classical mechanics," <em>Annals of Physics</em> <strong>104</strong> (1977) 336–362, for the spin factor and its field-strength coupling.</li>
+<li>L. Brink, P. Di Vecchia and P. Howe, "A Lagrangian formulation of the classical and quantum dynamics of spinning particles," <em>Nuclear Physics B</em> <strong>118</strong> (1977) 76–94, for the supersymmetric worldline action.</li>
+<li>J. Schwinger, "On gauge invariance and vacuum polarization," <em>Physical Review</em> <strong>82</strong> (1951) 664–679, for the proper-time kernel in a constant field and the evenness of its determinant in the field strength.</li>
+<li>M. V. Berry, "Quantal phase factors accompanying adiabatic changes," <em>Proceedings of the Royal Society A</em> <strong>392</strong> (1984) 45–57, for the geometric phase that the rotor's holonomy would have to reproduce, left open here.</li>
+<li>V. P. Maslov and M. V. Fedoriuk, <em>Semi-Classical Approximation in Quantum Mechanics</em> (Reidel, 1981), for the Maslov constants and the count of integrated directions.</li>
+<li>J. D. Bjorken and S. D. Drell, <em>Relativistic Quantum Mechanics</em> (McGraw-Hill, 1964), for the coupled propagator and its constant-potential form.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

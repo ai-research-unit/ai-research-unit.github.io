@@ -135,7 +135,7 @@ $$</p>
 \qquad\Longleftrightarrow\qquad
 u = \exp(-m\tau)v , \quad \Box_{\text{s}}v = 0 .
 $$</p>
-<p>For <strong>real</strong> $m$ the weight is a genuine exponential in $\tau$; for the corpus's real $\kappa = \rho$, that is for the source's imaginary $m = i\rho$, it is a phase $\exp(-i\rho\tau)$ and the operator is the one whose symbol the d'Alembertian article evaluated. The same identity applied to the Green's function is the sharp-support statement of the next section.</p>
+<p>For <strong>real</strong> $m$ the weight is a genuine exponential in $\tau$; for the corpus's real $\kappa = \rho$, that is for the source's imaginary $m = i\rho$, it is a phase $\exp(-i\theta_{\mathrm{rpt}})$, with the kernel angle $\theta_{\mathrm{rpt}}=\rho\tau$ real because the kernel parameter and the time are real, and the operator is the one whose symbol the d'Alembertian article evaluated. The same identity applied to the Green's function is the sharp-support statement of the next section.</p>
 <h2 id="the-fundamental-solution-of-the-kgfsh-operator">The Fundamental Solution of the KGFSh Operator</h2>
 <h3 id="the-sources-derivation-and-what-it-gives">The source's derivation, and what it gives</h3>
 <p>The source solves the KGFSh equation by transforming in $\tau$. With $\omega$ the Fourier variable conjugate to $\tau$ and $k = i\omega - m$, the transform $\mathcal{F}_\tau[\tilde{Ξ}_{m}]$ obeys the <strong>Helmholtz equation with a complex wave number</strong>,</p>
@@ -144,7 +144,7 @@ $$</p>
 \qquad k = i\omega - m ,
 $$</p>
 <p>whose fundamental solution is $\mathcal{F}_\tau[\tilde{Ξ}_{m}] = \frac{1}{4\pi R}\bigl(a\exp(-kR) + (1-a)\exp(kR)\bigr)$ with $R = |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|$ and $a$ an arbitrary constant. That kernel was verified: the ball integral of $(\Delta_\Phi + k^2)$ applied to $-\frac{1}{4\pi R}\exp(\pm ikR)$ is $+1$ for the two signs and two values of $k$, which is the coefficient of $\delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$.</p>
-<p>The inverse transform then fixes the support, and this is the source's real result. Since the inverse transform of $\exp(\pm i\omega R)$ is $\delta(\tau \mp R)$, the two terms are supported on the two light cones and the assembled fundamental solution is</p>
+<p>The inverse transform then fixes the support, and this is the source's real result. Since the inverse transform of $\exp(\pm i\theta_{\mathrm{omr}})$, with the omega-radius angle $\theta_{\mathrm{omr}}=\omega R$ real because a frequency and a length are real, is $\delta(\tau \mp R)$, the two terms are supported on the two light cones and the assembled fundamental solution is</p>
 <p>$$
 \tilde{Ξ}_{m}(\tau,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)
 = \frac{\exp(-m\tau)}{4\pi R}\Bigl[a\,\mathrm{H}_{\mathrm{hvs}}(\tau)\,\delta(\tau - R) + (1-a)\,\mathrm{H}_{\mathrm{hvs}}(-\tau)\,\delta(\tau + R)\Bigr] + \tilde{Ξ}_{m}^0 ,
@@ -179,7 +179,7 @@ $$</p>
 <p>The d'Alembertian article states the same dichotomy from the corpus's side in the same terms: for non-real $\kappa$ the symbol never vanishes on real $(\omega,\vec k_\Phi)$, so there is no non-trivial homogeneous <strong>plane wave</strong>, and the class in which the homogeneous equation has <em>only</em> the trivial solution is the class stated here. The two articles agree, and the agreement is exact rather than approximate: the plane-wave statement is the source's symbol computation, and the qualification is the exponential substitution above.</p>
 <p>For the corpus's real $\kappa = \rho$, that is for the source's $m = i\rho$, the homogeneous solutions not only exist but are the source's producing family,</p>
 <p>$$
-\tilde{Ξ}_{\rho}(\tau,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \exp(-i\rho\tau)\int_{\mathbb{R}^3} f(\vec\zeta)\,\exp(i(\vec\zeta\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) \pm |\vec\zeta|\tau))\,d^3\zeta ,
+\tilde{Ξ}_{\rho}(\tau,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \exp(-i\theta_{\mathrm{rpt}})\int_{\mathbb{R}^3} f(\vec\zeta)\,\exp(i(\vec\zeta\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) \pm |\vec\zeta|\tau))\,d^3\zeta ,
 \qquad f \in L^1(\mathbb{R}^3),
 $$</p>
 <p>a superposition of the plane waves of the next section weighted by a free profile. This is the general homogeneous solution in the case that matters.</p>

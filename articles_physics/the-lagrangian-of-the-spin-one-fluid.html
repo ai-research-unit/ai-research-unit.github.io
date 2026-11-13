@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Lagrangian of the Spin-One Fluid — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-lagrangian-of-the-spin-one-fluid">The Lagrangian of the Spin-One Fluid</h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>At this rung the fluid's variables are the field's own, and the action's mass term does double work.</strong> The Proca field is $A_\mu=r\,u_\mu$: a magnitude and a direction, which are a density and a velocity. So the fluid is not a reading of a polar decomposition imposed from outside — it is the field's own parameterisation, and the action written in it is the Proca action and nothing else.</p>
+<p><strong>Three results.</strong></p>
+<p><em>First, one term of the action does two things, and they are the same thing.</em> The mass term $\frac{k_m^{2}}{2}r^{2}$ removes the gauge freedom and supplies the Lorenz condition; the Lorenz condition in the fluid's variables is $\partial_\mu(ru^{\mu})=0$, which is continuity. <strong>The Proca fluid's continuity is the replacement for its lost gauge freedom</strong>, and both come from one term.</p>
+<p><em>Second, the density's variation and the direction's variation are the longitudinal and transverse parts of the field equation, and the Lorenz condition is neither: it is their consequence</em>, by the identity $\partial_\mu\partial_\nu F^{\nu\mu}=0$. The action therefore explains the block's phrase that the free incompressibility is the mass's gift: without the mass the identity has nothing to balance, and the condition does not arise.</p>
+<p><em>Third, this is the only action in the layer with no $\hbar$ in its derivative term, and correspondingly the only fluid in the block whose acceleration law has no quantum force.</em> The polar decomposition of a vector field produces no second derivative of the magnitude, and the action says why: $A=ru$ has one derivative and the Lagrangian is quadratic in it.</p>
+<p><strong>Position in the block.</strong> This is the variational companion of <a href="the-spin-one-fluid-of-the-biquaternion-proca-field.html">The Spin-One Fluid of the Biquaternion Proca Field</a> and the seventh of the eight articles of this layer. It is the only one in which a Lagrange multiplier is genuinely needed, and the only one whose fluid is not a quantum fluid.</p>
+<p><strong>Conventions.</strong> $A_\mu=r\,u_\mu$ with $r>0$ and $u_\mu u^\mu=-1$; the temporal slot carries the $i$, so $A_\mu A^\mu=-r^{2}$. $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$; $k_m=mc/\hbar$; $\mathcal L=-\frac14F_{\mu\nu}F^{\mu\nu}-\frac{k_m^{2}}{2}A_\mu A^\mu$ in the corpus's signature, whose Euler–Lagrange equation is $\partial_\nu F^{\nu\mu}=k_m^{2}A^\mu$. The transverse derivative is $\nabla_\mu=\Delta_\mu{}^\nu\partial_\nu$ with $\Delta_{\mu\nu}=g_{\mu\nu}+u_\mu u_\nu$.</p>
+<h2 id="the-action-in-the-fields-own-variables">The Action in the Field's Own Variables</h2>
+<p><strong>One substitution, and the field strength splits into a magnitude's part and a direction's part.</strong> Since $A=ru$,</p>
+<p>$$
+F_{\mu\nu}=r\,\omega_{\mu\nu}+\bigl(\partial_\mu r\bigr)u_\nu-\bigl(\partial_\nu r\bigr)u_\mu,
+\qquad
+\omega_{\mu\nu}=\partial_\mu u_\nu-\partial_\nu u_\mu .
+$$</p>
+<p><strong>Three pieces, and each has a name in the fluid's language.</strong> The first is the direction's vorticity times the density; the second and third are the density's gradient wedged with the velocity. The field strength therefore carries two independent objects: <strong>the flow's vorticity and the density's gradient</strong>, and the Proca fluid is the only one in this layer whose field strength is made of the fluid's own derivatives rather than of a potential's.</p>
+<p><strong>The Lagrangian, with the mass term expanded.</strong></p>
+<p>$$
+\mathcal L=\frac{1}{2}\Bigl[\bigl(\partial_\mu r\bigr)^{2}-\bigl(u^\mu\partial_\mu r\bigr)^{2}\Bigr]-\frac{r^{2}}{4}\omega_{\mu\nu}\omega^{\mu\nu}-r\,\omega_{\mu\nu}\bigl(\partial^\mu r\bigr)u^\nu+\frac{k_m^{2}}{2}r^{2},
+$$</p>
+<p>obtained by expanding $-\frac14F^{2}$ and using $u^{2}=-1$. Four terms: the density's gradient energy, the vorticity's energy, a cross term, and the mass.</p>
+<p><strong>The cross term is what makes the free Proca fluid's acceleration law as short as the block's.</strong> $a_\mu=-\nabla_\mu\ln r-r^{-1}E_\mu$ has no quantum force because the two pieces of $F$ are first derivatives and no second derivative of $r$ survives the variation; the cross term is where the density's gradient and the vorticity meet, and it is the term that turns the field equation into a statement about the flow's acceleration.</p>
+<p><strong>There is no $\hbar$ anywhere in the derivative terms.</strong> The only place the quantum of action appears is inside $k_m$. So this rung's fluid is not a Madelung fluid: it is a classical field read as a medium, and the block's article says as much by giving an acceleration law with no quantum potential.</p>
+<h2 id="the-mass-term-does-two-things">The Mass Term Does Two Things</h2>
+<p><strong>The Euler–Lagrange equation is the field equation, and its divergence is an identity on one side.</strong></p>
+<p>$$
+\partial_\nu F^{\nu\mu}=k_m^{2}A^\mu
+\qquad\Longrightarrow\qquad
+0=\partial_\mu\partial_\nu F^{\nu\mu}=k_m^{2}\,\partial_\mu A^\mu,
+$$</p>
+<p>because $F$ is antisymmetric. <strong>The Lorenz condition is therefore a consequence of the equation and not a condition imposed on it, and it exists exactly when $k_m\ne0$.</strong></p>
+<p><strong>The same term removes the gauge freedom.</strong> With $k_m=0$ the action is invariant under $A_\mu\mapsto A_\mu+\partial_\mu\Gamma$; with $k_m\ne0$ it is not, because the mass term is not. <strong>One term supplies the condition and destroys the freedom the condition replaces</strong>, and the two statements are the same statement seen from two sides: a massless vector has a redundancy and no condition, a massive one has a condition and no redundancy, and the count of physical components is the same in both cases.</p>
+<p><strong>In the fluid's variables the condition is continuity.</strong> With $A_\mu=r\,u_\mu$,</p>
+<p>$$
+\partial_\mu A^\mu=0
+\qquad\Longleftrightarrow\qquad
+\partial_\mu\bigl(r\,u^\mu\bigr)=0,
+$$</p>
+<p>which is the continuity equation for a density $r$ and a velocity $u^\mu$. <strong>The Proca fluid therefore has a continuity equation that is not an equation of motion</strong>: it is the integrability of the field equation, and it disappears with the mass.</p>
+<p><strong>The block's phrase is exact and the action explains it.</strong> <a href="the-spin-one-fluid-of-the-biquaternion-proca-field.html">The Spin-One Fluid of the Biquaternion Proca Field</a> finds that the fluid's free incompressibility is the mass's gift. The action's version: nothing in the derivative terms forces $\partial_\mu(ru^\mu)$ to vanish, and the identity $\partial_\mu\partial_\nu F^{\nu\mu}=0$ has no right-hand side to balance until the mass supplies one. <strong>The incompressibility is not a property of the flow; it is a property of the pair $(r,u)$ and of the mass.</strong></p>
+<p><strong>And the flow's own expansion is not zero.</strong> Differentiating $ru^\mu$ gives $\partial_\mu u^\mu=-u^\mu\partial_\mu\ln r$, so the velocity's divergence is the density's logarithmic derivative along the flow. The divergence-free object is the field, and reading it as continuity is what makes the density and the velocity into a fluid's.</p>
+<h2 id="the-two-variations-and-the-multiplier">The Two Variations and the Multiplier</h2>
+<p><strong>The density's variation is the field equation contracted with the flow, and the direction's variation is its transverse part.</strong> That is the cleanest way to state the pair, and it follows from the split of $\delta A_\mu=u_\mu\,\delta r+r\,\delta u_\mu$ into a longitudinal and a transverse piece.</p>
+<p>The $r$ variation gives $u_\mu(\partial_\nu F^{\nu\mu}-k_m^{2}A^\mu)=0$, since $\partial F/\partial r$ along $u$ is the contraction; the $\delta u$ variation, restricted to $u\cdot\delta u=0$, gives the transverse part, $\Delta_{\mu}{}^{\nu}(\partial_\lambda F^{\lambda}{}_{\nu}-k_m^{2}A_\nu)=0$. <strong>The two together are the field equation and neither alone is.</strong></p>
+<p><strong>The unit condition is the one place in this layer where a multiplier is genuinely needed.</strong> The word's parameterisation absorbs the unit conditions of the boost and the rotor — a unit element is a unit for every value of its parameters — but the Proca direction is a unit by declaration and not by parameterisation: $u_\mu$ is three functions subject to one constraint, and the constraint must be imposed. Written with a multiplier,</p>
+<p>$$
+\mathcal L_{\lambda}=\mathcal L+\lambda\bigl(u_\mu u^\mu+1\bigr),
+$$</p>
+<p>and the multiplier enters the direction's equation as $\lambda u_\mu$, which is a force along the flow. <strong>It plays the part a pressure plays in an incompressible fluid</strong>, and the analogy is exact in one respect: it is the constraint's force and not the fluid's own.</p>
+<p><strong>The contrast with the spin article is worth recording.</strong> There the parameterisation removed the need for a multiplier and the constraints appeared as vanishing momenta; here the parameterisation cannot remove it and the constraints appear as a projection. <strong>The difference is that a unit rotor has three parameters and a unit vector has two plus one constraint</strong>: the word's frame is a group element, and a direction is a coset.</p>
+<h2 id="what-the-fluid-form-adds-to-the-blocks-account">What the Fluid Form Adds to the Block's Account</h2>
+<p><strong>Three statements, and the block makes each of them in the equations' language.</strong></p>
+<p><em>The vorticity is the direction's, and it is not the field strength.</em> $\omega=\mathrm{d}u$ and $F=r\,\mathrm{d}u+\mathrm{d}r\wedge u$, so the field strength carries the vorticity plus the density's gradient, and only in a region of constant density are the two the same object. The block's article states the vorticity and the self-dual split; the action states the decomposition that produces both.</p>
+<p><em>The rank of $\omega$ is two, and the reason is the dimension of the rest space.</em> The vorticity of a congruence is the curl projected onto the plane orthogonal to the flow, $\omega^{\perp}_{\mu\nu}=\Delta_\mu{}^\alpha\Delta_\nu{}^\beta\omega_{\alpha\beta}$ with $\Delta_{\mu\nu}=g_{\mu\nu}+u_\mu u_\nu$: $\omega^{\perp}$ annihilates $u$ by construction, and a two-form supported on three dimensions is simple, so its rank is at most two and is two wherever the vorticity is non-zero. <strong>The raw curl is a different object, and its contraction with the flow is the acceleration</strong>: $\omega_{\mu\nu}u^\nu=-a_\mu$, so $\mathrm{d}u$ is neither transverse nor always simple — the block's sentence that $\omega\wedge\omega=0$ for every unit timelike flow holds for $\omega^{\perp}$ and not for $\mathrm{d}u$. The first-order charged fluid has rank two for the other reason, that a three-vector curl cannot make a four-dimensional two-form; the spinor fluid's is rank two for every solution, as its own article establishes.</p>
+<p><em>The equation of state is the mass term's, and the action shows it as the only term without a derivative.</em> The mass term $\frac{k_m^{2}}{2}r^{2}$ is the one term in the action that carries the density and no gradient, and it fixes the pressure in one line: the energy density it contributes is $\epsilon=\frac{k_m^{2}}{2}r^{2}$ and the force it exerts is $-\nabla\ln r$, so $\mathrm{d}p/(\epsilon+p)=\mathrm{d}\ln r$ and $p=\epsilon$. <strong>A Proca fluid is stiff, and the stiffness is the mass's</strong>, which is the block's reading of the acceleration law; the action's addition is that no other law is available, because no other term of the action is free of derivatives.</p>
+<h2 id="what-the-fluid-variational-principle-adds-and-does-not-add">What the Fluid Variational Principle Adds and Does Not Add</h2>
+<p><strong>Adds.</strong> The mass term's double role, stated once: it removes the gauge freedom and supplies the condition that replaces it, and in the fluid's variables that condition is continuity. The pair of variations as the field equation's longitudinal and transverse parts, with the Lorenz condition as their consequence by an identity. The multiplier's necessity and its reading as a pressure. The decomposition of the field strength into vorticity and density gradient. And the reason this rung has no quantum force: the action has no second derivative of the magnitude.</p>
+<p><strong>Does not add.</strong> No new equation: the four components are the field's. No new current: the Proca current is $k_m^{2}A^\mu$ up to the normalisation, and it is the field. No gauge invariance to discuss, because the mass removed it. No thermodynamics, and no quantum potential, since this rung has none. And no statement about the massless limit's fluid reading, which the block's article explicitly denies.</p>
+<p><strong>The one thing the action says that the equations cannot.</strong> The Lorenz condition, the loss of gauge freedom, the continuity equation and the stiffness of the flow are four statements about four different objects, and in the action they are one term. <strong>That is the strongest case in the layer for writing the fluid's Lagrangian</strong>: not a new result, but the location of four results in one coefficient.</p>
+<h2 id="open-questions">Open Questions</h2>
+<ol>
+<li>
+<p><strong>The massless limit.</strong> The action's derivative terms survive at $k_m=0$ and the fluid reading does not, because the field becomes pure gauge and $A=ru$ is then a gauge-dependent split. Whether some gauge-fixed chart makes the limit continuous is not settled, and the block's article denies the reading without stating the obstruction in these terms.</p>
+</li>
+<li>
+<p><strong>The constraint's class.</strong> Whether the unit condition and the transverse projection produce a second-class system with a Dirac bracket that closes — the Proca fluid's analogue of the spin article's open problem — is not computed here.</p>
+</li>
+<li>
+<p><strong>The multiplier's sign.</strong> $\lambda$ is determined by the equations and its sign is the density's gradient's, so a region of decreasing density has a negative pressure in this reading. Whether that is physical or an artefact of the split is not settled.</p>
+</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p><strong>The action.</strong> $\mathcal L=\frac12[(\partial r)^{2}-(u\cdot\partial r)^{2}]-\frac{r^{2}}{4}\omega^{2}-r\,\omega_{\mu\nu}\partial^{\mu}r\,u^{\nu}+\frac{k_m^{2}}{2}r^{2}$, with $A=ru$ and $u^{2}=-1$.</p>
+<p><strong>The mass term.</strong> It removes the gauge freedom, supplies the Lorenz condition, and in the fluid's variables that condition is continuity $\partial_\mu(ru^\mu)=0$. One term, four statements.</p>
+<p><strong>The variations.</strong> The density's is the field equation's longitudinal part, the direction's its transverse part, and the Lorenz condition is their consequence by $\partial\partial F=0$.</p>
+<p><strong>The multiplier.</strong> The only genuine one in the layer; it is the unit condition's force and plays a pressure's part.</p>
+<p><strong>The quantum sector.</strong> Absent: no $\hbar$ in the derivative terms, no quantum potential, no quantum force. The Proca fluid is a classical field read as a medium.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A_\mu=r\,u_\mu$</td>
+<td>The field in the fluid's variables; $r$ the density, $u$ the velocity</td>
+</tr>
+<tr>
+<td>$r>0$</td>
+<td>Density; the field's magnitude</td>
+</tr>
+<tr>
+<td>$u_\mu$, $u_\mu u^\mu=-1$</td>
+<td>Unit four-velocity; three functions and one constraint</td>
+</tr>
+<tr>
+<td>$\omega_{\mu\nu}=\partial_\mu u_\nu-\partial_\nu u_\mu$</td>
+<td>The raw curl, whose contraction with $u$ is $-a_\mu$; its projection $\omega^{\perp}$ is the vorticity and is rank two</td>
+</tr>
+<tr>
+<td>$F_{\mu\nu}=r\omega_{\mu\nu}+\partial_\mu r\,u_\nu-\partial_\nu r\,u_\mu$</td>
+<td>The field strength; vorticity plus density gradient</td>
+</tr>
+<tr>
+<td>$k_m=mc/\hbar$</td>
+<td>Mass wave number; the only place $\hbar$ appears</td>
+</tr>
+<tr>
+<td>$\nabla_\mu=\Delta_\mu{}^\nu\partial_\nu$</td>
+<td>Transverse derivative; $\Delta_{\mu\nu}=g_{\mu\nu}+u_\mu u_\nu$</td>
+</tr>
+<tr>
+<td>$\lambda$</td>
+<td>Multiplier of the unit condition; a pressure</td>
+</tr>
+<tr>
+<td>$E_\mu=F_{\mu\nu}u^\nu$</td>
+<td>The electric part along the flow</td>
+</tr>
+<tr>
+<td>$a_\mu=u^\nu\partial_\nu u_\mu$</td>
+<td>The flow's acceleration</td>
+</tr>
+<tr>
+<td>$\mathcal L$</td>
+<td>The Proca Lagrangian in the fluid variables</td>
+</tr>
+<tr>
+<td>$\mathrm{Sc}(\tilde Q)$</td>
+<td>Scalar part</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Alexandru Proca, "Sur la théorie ondulatoire des électrons positifs et négatifs," <em>Journal de Physique et le Radium</em> <strong>7</strong> (1936) 347–353, for the massive vector field and the condition its mass implies.</li>
+<li>John R. Oppenheimer and Julian S. Schwinger, "On the interaction of mesotrons and nuclear particles," <em>Physical Review</em> <strong>60</strong> (1941) 150, for the massive vector field's constraint structure.</li>
+<li>Clifford Truesdell and Richard Toupin, "The classical field theories," in <em>Handbuch der Physik</em> III/1 (Springer, 1960), for the polar decomposition of a vector field into magnitude and direction and the strain it induces.</li>
+<li>Friedrich W. Hehl, "On the kinematics of the torsion of space-time," <em>Foundations of Physics</em> <strong>15</strong> (1985) 451–471, for a unit vector field's vorticity, its transversality and its rank.</li>
+<li>The companion articles: <a href="the-variational-principle-and-the-proca-equation-in-biquaternionic-polar-variables.html">The Variational Principle and the Proca Equation in Biquaternionic Polar Variables</a>, the same action in the chart and the branch's role; <a href="the-spin-one-fluid-of-the-biquaternion-proca-field.html">The Spin-One Fluid of the Biquaternion Proca Field</a>, the acceleration law without a quantum force and the Lorenz condition read as continuity; <a href="the-third-polarization-and-the-self-dual-split-of-the-massive-field-strength.html">The Third Polarization and the Self-Dual Split of the Massive Field Strength</a>, for the decomposition of $F$ that the substitution produces; and the charged companion <a href="the-lagrangian-of-the-charged-proca-fluid.html">The Lagrangian of the Charged Proca Fluid</a>, where the connection's divergence stops being zero and the condition stops being continuity.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

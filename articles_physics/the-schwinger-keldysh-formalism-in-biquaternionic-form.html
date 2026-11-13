@@ -104,9 +104,9 @@ $$
 $$
 The generating functional is
 $$
-Z[\tilde J_{\Phi,+},\tilde J_{\Phi,-}] = \int\mathcal{D}\tilde{Ξ}_+\mathcal{D}\tilde{Ξ}_-\;\exp(\,iS[\tilde{Ξ}_+]-iS[\tilde{Ξ}_-]+i\int(\tilde J_{\Phi,+}\tilde{Ξ}_+-\tilde J_{\Phi,-}\tilde{Ξ}_-)),
+Z[\tilde J_{\Phi,+},\tilde J_{\Phi,-}] = \int\mathcal{D}\tilde{Ξ}_+\mathcal{D}\tilde{Ξ}_-\;\exp(i\theta_{\mathrm{act}}^{+}-i\theta_{\mathrm{act}}^{-}+i\theta_{\mathrm{src}}),
 $$
-with the relative sign between the two branches. The two-branch action is the difference of two copies of the ordinary action, and the minus branch is integrated with the opposite orientation, which is what makes the formalism genuinely <em>in-in</em>: the final state is summed over, not fixed. This is standard (Schwinger 1961; Keldysh 1964; Kadanoff–Baym; see the cited reviews) and is transcribed.</p>
+with the branch actions $\theta_{\mathrm{act}}^{\pm}=S[\tilde{Ξ}_\pm]/\hbar$ and the source angle $\theta_{\mathrm{src}}=\frac{1}{\hbar}\int(\tilde J_{\Phi,+}\tilde{Ξ}_+-\tilde J_{\Phi,-}\tilde{Ξ}_-)$, all real and dimensionless because each is a real action over $\hbar$ or a real pairing over $\hbar$; the relative sign is between the two branches. The two-branch action is the difference of two copies of the ordinary action, and the minus branch is integrated with the opposite orientation, which is what makes the formalism genuinely <em>in-in</em>: the final state is summed over, not fixed. This is standard (Schwinger 1961; Keldysh 1964; Kadanoff–Baym; see the cited reviews) and is transcribed.</p>
 <p><strong>The doubled Green's functions.</strong> The basic objects are the branch-indexed two-point functions
 $$
 G_{ab}(x,y) = -i\big\langle T_{\mathcal{C}}\,\tilde{Ξ}_a(x)\,\tilde{Ξ}_b(y)\big\rangle ,
@@ -216,7 +216,7 @@ a $2\times2$ equation in branch space. In the rotated basis it splits into a ret
 $$
 J = \begin{pmatrix}\tilde J_{\Phi,+}\tilde J_{\Phi,-}\end{pmatrix},
 \qquad
-Z[\tilde J_{\Phi,+},\tilde J_{\Phi,-}] = \int\mathcal{D}\tilde{Ξ}_+\mathcal{D}\tilde{Ξ}_-\;\exp(\,iS[\tilde{Ξ}_+]-iS[\tilde{Ξ}_-]+i\int(\tilde J_{\Phi,+}\tilde{Ξ}_+-\tilde J_{\Phi,-}\tilde{Ξ}_-)) ,
+Z[\tilde J_{\Phi,+},\tilde J_{\Phi,-}] = \int\mathcal{D}\tilde{Ξ}_+\mathcal{D}\tilde{Ξ}_-\;\exp(i\theta_{\mathrm{act}}^{+}-i\theta_{\mathrm{act}}^{-}+i\theta_{\mathrm{src}}) ,
 $$
 one defines $W=-i\log Z$ and obtains the branch-indexed connected functions as its source derivatives; the Legendre transform in both sources gives the two-particle-irreducible effective action, whose stationarity is the Kadanoff–Baym equation. This is the contour version of <em>The Generating Functional and the Effective Action in Biquaternionic Form</em>, with the fields and sources taking values in the module and with one extra external index. The biquaternion content is unchanged: the sources are module-valued, the quadratic operator is the biquaternion-norm operator, and the sector factorization holds whenever the operator is central.</p>
 <p><strong>The CTP Feynman rules.</strong> Each internal line is the branch-indexed propagator $G_{ab}$ (or its rotated form); each vertex carries the branch index of the contour leg on which it sits; each internal vertex is summed over the branches with the relative sign $+$ for the forward leg and $-$ for the backward leg; and the external legs carry the branch indices appropriate to the observable, which are $+$ and $-$ for an in-in matrix element and the rotated components for a physical response. The contour's closing is what enforces the in-in boundary condition, and it is a rule of the formalism and not of the algebra.</p>

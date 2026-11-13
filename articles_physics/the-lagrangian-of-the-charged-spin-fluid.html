@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Lagrangian of the Charged Spin Fluid — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-lagrangian-of-the-charged-spin-fluid">The Lagrangian of the Charged Spin Fluid</h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The connection is a central element, and a central element decomposes into two of the four brackets and none of the others.</strong> That single fact is the whole of the charged spin fluid's structure — the force without a torque, the norms that survive, the vorticity that stays the frame's — and the action is the place where it is one sentence instead of five results.</p>
+<p><strong>Three results.</strong></p>
+<p><em>First, the coupling's decomposition fixes its reach.</em> The connection is Hermitian, so in the bracket decomposition it contributes a central imaginary in its time slot and a Hermitian element in its spatial slots. Those are the phase's bracket and the boost's. It contributes nothing to the real scalar, which is the scale's, and nothing to the real vector, which is the rotor's. <strong>The density and the spin are therefore outside the coupling's reach by type, and not by cancellation.</strong></p>
+<p><em>Second, the same decomposition is why there is no torque.</em> A torque would have to enter the rotor's bracket; the connection has no real-vector part, so it cannot. The action states this as the absence of a term, and <a href="the-charged-spin-fluid.html">The Charged Spin Fluid</a> states it as a computation: the force equation gains $-ϙ F^{\mu\nu}J_\nu$ and the spin's transport law gains nothing.</p>
+<p><em>Third, every norm in the spinor case survives, and the reason is that a connection transports and does not measure.</em> The velocity is a unit element's square, so its norm is fixed by the frame and no added connection can move it. At the scalar rung the velocity is a gradient, and there the shell's right-hand side carries the quantum potential; here it carries nothing.</p>
+<p><strong>Position in the block.</strong> This is the variational companion of <a href="the-charged-spin-fluid.html">The Charged Spin Fluid</a> and the sixth of the eight articles of this layer. It is the article in which the coupling changes the least: the canonical table of <a href="the-lagrangian-of-the-spin-fluid.html">The Lagrangian of the Spin Fluid</a> is reproduced line for line.</p>
+<p><strong>Conventions.</strong> Those of the free companion, with $\tilde A_\Phi=i a'_t e_t+\sum_\eta A_\eta\vec e_\eta\in\mathbb{B}_\Phi$, covariant derivative $\partial_\mu+\frac{iϙ}{\hbar}A_\mu$ acting from the left, $ϙ$ the coupling and $q=-ϙ$ the electric charge. The four brackets of $\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi$ are the real scalar (the scale's), the central imaginary (the phase's), the Hermitian element (the boost's) and the real vector (the rotor's). Gauge transformations are central: $\tilde\Xi\mapsto\tilde\Xi\lambda$ with $\lambda=\exp(iϙ\Gamma/\hbar)\in\mathbb{C}$, $A_\mu\mapsto A_\mu-\partial_\mu\Gamma$.</p>
+<h2 id="the-coupling-in-the-brackets">The Coupling in the Brackets</h2>
+<p><strong>The word's logarithmic derivative splits into four objects of four types, and the connection is one object of two.</strong> Since $\tilde A_\Phi\in\mathbb{B}_\Phi$ is Hermitian,</p>
+<p>$$
+\frac{iϙ}{\hbar}\tilde A_\Phi=\frac{iϙ}{\hbar}a'_t\,e_t+\frac{iϙ}{\hbar}\vec A,
+$$</p>
+<p>and the first term is central imaginary while the second is Hermitian with a real vector coefficient. In the bracket decomposition of $\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi$,</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>bracket</th>
+<th>type</th>
+<th>what the free bracket reads</th>
+<th>what the connection adds</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>scale</td>
+<td>real scalar</td>
+<td>$\partial_\mu\ln r$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>phase</td>
+<td>central imaginary</td>
+<td>$\partial_\mu\theta_{\mathrm{pha}}$</td>
+<td>$-ϙ a'_t/\hbar$ in the time slot</td>
+</tr>
+<tr>
+<td>boost</td>
+<td>Hermitian</td>
+<td>the rapidity's connection</td>
+<td>$ϙ\vec A/\hbar$ in the spatial slots</td>
+</tr>
+<tr>
+<td>rotor</td>
+<td>real vector</td>
+<td>$\vec\omega_{\mathrm r}$'s connection</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The two zeros are the article's first result and they are structural.</strong> The scale is real and the connection has no real scalar part; the rotor is a real vector and the connection has no real vector part. <strong>No cancellation occurs and no small parameter is used</strong>: the two brackets the coupling cannot reach are the two factors of the word that carry the fluid's density and its spin.</p>
+<p><strong>This is the type argument of the block's charged articles, in its most economical form.</strong> The scalar charged articles state it as one sentence about a central element reaching the phase and the boost and not the scale and the rotor; here it is a table whose two zeros are read off the decomposition of $\tilde A_\Phi$.</p>
+<h2 id="the-kinetic-term-and-the-two-covariant-rates">The Kinetic Term and the Two Covariant Rates</h2>
+<p><strong>The free kinetic term is a charge density times two rates, and the coupling makes both of them covariant.</strong></p>
+<p>$$
+\mathcal L_{\mathrm{kin}}=\hbar c\,\rho_{\mathrm{chg}}\bigl(\dot\theta_{\mathrm{pha}}-\beta\,\hat n_{\mathrm{rot}}\cdot\vec\omega_{\mathrm r}\bigr)
+\;\longrightarrow\;
+\mathcal L_{\mathrm{kin}}^{\mathrm{gco}}=\hbar c\,\rho_{\mathrm{chg}}\bigl(\mathcal R_{\mathrm{pha}}-\beta\,\mathcal R_{\mathrm{rpd}}\bigr),
+$$</p>
+<p><strong>The two covariant rates are the time slots of the phase's bracket and of the boost's.</strong> The first is the gauge-invariant phase rate, $\dot\theta_{\mathrm{pha}}-ϙ a'_t/\hbar$, which is the free article's $\mathcal E$ up to the mass; the second is the rapidity's rate with the vector potential's component along the boost axis added, and it is what makes the velocity the mechanical one.</p>
+<p><strong>The weight $\beta$ is untouched, and that is the sharpest form of "no torque".</strong> If the coupling had a rotor-bracket component, the second rate would acquire a term independent of $\beta$ and the spin would be canonically visible at rest. It has none, so the weight stays $\beta$ and the rest frame stays spinless. <strong>The statement "the coupling adds a force and not a torque" is, in the action, the statement that $\beta$ is not modified.</strong></p>
+<p><strong>The sign and the normalisation are the scalar charged article's.</strong> The coupling enters the time slot with the same sign there and here, because the substitution is the same substitution; the difference is that here it also enters the boost's bracket, and there it entered the velocity's gradient. <strong>The Lorentz force's sign is fixed once for both rungs</strong>, and the sign of the second rate's modification is what the block's $\langle\tilde V_\Phi\rangle_\natural=-c^{2}$ requires.</p>
+<h2 id="the-canonical-table-is-unchanged">The Canonical Table Is Unchanged</h2>
+<p><strong>Four statements, and the coupling moves none of them.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>momentum</th>
+<th>value</th>
+<th>changed by the coupling?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$p_{\theta_{\mathrm{pha}}}$</td>
+<td>$\hbar c\,\rho_{\mathrm{chg}}$</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$\vec p_{\mathrm{spin}}$</td>
+<td>$-\hbar c\,\rho_{\mathrm{chg}}\beta\,\hat n_{\mathrm{rot}}$</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$p_{\theta_{\mathrm{rpd}}}$</td>
+<td>$0$</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$p_{u_{\mathrm b}}$, $p_{r}$</td>
+<td>$0$</td>
+<td>no</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The invariance of the table is "no torque" stated canonically.</strong> A torque is a change in the spin's momentum; the spin's momentum is a closed form in the rotor and the boost, and the connection is in neither, so the form is unchanged. The force is a change in the velocity's momentum, and the velocity is not canonical here at all: its momentum is zero before and after. <strong>The asymmetry is exact: the coupling moves the one quantity that has no momentum and leaves alone the two that have.</strong></p>
+<p><strong>What the table says about the block's claim of a surviving normalisation.</strong> $\langle\tilde V_\Phi\rangle_\natural=-c^{2}$ for every field, and the table gives the reason: the velocity is built from the boost element, the boost's bracket is a connection, and a connection does not change a norm. <strong>A connection changes transports; a norm is not a transport.</strong> The free companion's normalisation is therefore not "surviving" anything — nothing was ever at risk.</p>
+<p><strong>And the contrast with the scalar rung is exact.</strong> There the velocity is $\tilde P^{\mathrm{mech}}/m$, a four-vector whose norm the mass shell fixes, and the shell's right-hand side carries $-2Q_{\mathrm{qnt}}/m$; the coupling changes the velocity and not the shell, so the norm moves with the field through the quantum potential. Here the velocity is a unit's square and no term is available to move it. <strong>One rung has a norm that measures the state; the other has a norm that is a property of the frame.</strong></p>
+<h2 id="norms-survive-and-the-vorticity-stays-the-frames">Norms Survive and the Vorticity Stays the Frame's</h2>
+<p><strong>The two rungs differ in what kind of object the velocity is, and every downstream difference follows.</strong></p>
+<p><em>At the scalar rung the velocity is a gradient.</em> $\tilde V_\Phi=\tilde P^{\mathrm{mech}}_\Phi/m$ with $\tilde P_\Phi=\tilde\nabla_\Phi S_{\tilde\Xi}$, so the velocity is the covariant derivative of a function, and its curl is the field strength: $\omega=ϙ F/m$. The coupling makes the flow rotational, and the rotation is the field's.</p>
+<p><em>At the spinor rung the velocity is a square.</em> $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}$, the square of a unit element read through the quaternionic norm, so it is a function of the boost factor alone. <strong>A square of a unit is not the derivative of anything</strong> — the block's article states this as the reason the Dirac velocity does not come from a potential — and adding a connection to a bracket does not turn a square into a gradient.</p>
+<p><strong>Hence the vorticity stays the frame's.</strong> <a href="the-charged-spin-fluid.html">The Charged Spin Fluid</a> finds that the vorticity is the frame's and that the coupling does not put the field strength into it, in contrast to the scalar case's $\mathrm{d}V=ϙ F/m$. The action's version: the connection enters the boost's bracket, the boost's bracket is not the velocity's curl, and the velocity's curl is the antisymmetrised derivative of a square, which is a frame quantity.</p>
+<p><strong>The consequence for what the fluid can and cannot do is worth stating.</strong> The charged scalar fluid's rotation is a field-theoretic input that costs no field; the charged spin fluid's rotation is a property of its own frame, so the field cannot supply it and the fluid cannot be made rotational by turning on a field. <strong>The two charged fluids are therefore not the same fluid with different spins</strong>: one has its vorticity sourced from outside and the other has it sourced from within.</p>
+<h2 id="gauge-invariance-is-exact-because-the-group-is-central">Gauge Invariance Is Exact Because the Group Is Central</h2>
+<p><strong>The invariance is one line and it rests on the gauge element's being central.</strong> With $\tilde\Xi\mapsto\tilde\Xi\lambda$ and $\lambda\in\mathbb{C}$ central,</p>
+<p>$$
+\tilde\Xi^{-1}\bigl(\partial_\mu+\tfrac{iϙ}{\hbar}A_\mu\bigr)\tilde\Xi
+\longmapsto
+\tilde\Xi^{-1}\bigl(\partial_\mu+\tfrac{iϙ}{\hbar}A_\mu\bigr)\tilde\Xi+\lambda^{-1}\partial_\mu\lambda,
+$$</p>
+<p>and $\lambda^{-1}\partial_\mu\lambda=iϙ\partial_\mu\Gamma/\hbar$ is central, so it cancels against the transformed connection. <strong>The frame's brackets do not see the shift at all</strong>, because it is added on the left of the element and the frame's factors are to the right, and because a central element commutes past every one of them.</p>
+<p><strong>This is why the invariance is exact here and needs no boundary term, and it is also why it cannot reach the spin.</strong> A gauge transformation is a multiplication of the word by a central factor; the word's factors are the phase's and the frame's; a central multiplication can be absorbed into the phase's factor — which is what a phase shift is — and cannot be absorbed into the frame's, because the frame's factors are not central. So the shift is entirely the phase's, and the boost's bracket's apparent change is the connection's cancellation. <strong>The coupling's reach and the gauge group's reach coincide, and both are the central direction of the algebra.</strong></p>
+<p><strong>The current and the stress follow as at the scalar charged rung.</strong> The global subgroup supplies the charge current $ϙ\tilde J_\Phi$; translation invariance supplies the stress, whose divergence is $-ϙ F^{\mu\nu}J_\nu$ plus the free spin term; and the canonical tensor computed with the phase as the variable is gauge dependent by a total derivative, while the tensor written in the frame's brackets is not.</p>
+<h2 id="what-the-fluid-variational-principle-adds-and-does-not-add">What the Fluid Variational Principle Adds and Does Not Add</h2>
+<p><strong>Adds.</strong> The coupling's reach as a table with two structural zeros, and hence the type argument in one line. "No torque" as the invariance of the weight $\beta$ rather than as a computation. The canonical table's invariance, which is the same statement read canonically. The surviving normalisation as the statement that a connection transports and does not measure. The gauge invariance's exactness as the centrality of the gauge group rather than as a checked cancellation. And the contrast with the scalar rung as a difference in the kind of object the velocity is: a gradient there, a square here.</p>
+<p><strong>Does not add.</strong> No new equation: the parent's, with the polar companion's Euler–Lagrange equations as its components. No closure: the four primary constraints remain second class and the Dirac bracket remains open. No vorticity, for the particle setting's structural reason given in the free companion. No mass without a declared direction: the coupling does not supply one, and a connection could not, since a direction is not a transport. No thermodynamics.</p>
+<p><strong>The one asymmetry within the layer.</strong> Of the eight articles, this is the one in which the coupling changes nothing that the canonical structure can see. That is not an accident of the formalism: the coupling's image is the phase and the boost, and the canonical structure's non-trivial rows are the phase's and the spin's. <strong>The one row the coupling could have moved is the spin's, and the type argument is exactly what forbids it.</strong></p>
+<h2 id="open-questions">Open Questions</h2>
+<ol>
+<li>
+<p><strong>The bracket with the connection.</strong> Whether the Dirac bracket closes when the constraints are computed with the covariant one-form — that is, whether the connection's presence changes the class of the four constraints — is not settled. The polar companion's computation is for the free field.</p>
+</li>
+<li>
+<p><strong>The operator setting.</strong> As in the free companion, the frame's spatial gradients are where the vorticity lives, and the article does not compute them. Whether the connection's spatial part changes their closed form by more than a substitution is open.</p>
+</li>
+<li>
+<p><strong>The mass and the direction.</strong> One declared direction, as in the free companion. Whether the coupling's phase freedom can absorb it in some naming of the parts is not settled and the article does not claim it can.</p>
+</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p><strong>The coupling's reach.</strong> Central imaginary in the time slot, Hermitian in the spatial ones: the phase's bracket and the boost's. Nothing in the scale's and nothing in the rotor's.</p>
+<p><strong>The kinetic term.</strong> Two rates, both made covariant; the weight $\beta$ unchanged, which is "no torque" in the action.</p>
+<p><strong>The canonical table.</strong> Unchanged line for line: $p_{\theta_{\mathrm{pha}}}=\hbar c\rho_{\mathrm{chg}}$, $\vec p_{\mathrm{spin}}=-\hbar c\rho_{\mathrm{chg}}\beta\hat n_{\mathrm{rot}}$, the rest zero.</p>
+<p><strong>The norms.</strong> Every norm survives, because a connection transports and does not measure; the scalar rung's shell is a norm that measures, and it is the exception.</p>
+<p><strong>The vorticity.</strong> The frame's and not the field's, because the velocity is a unit's square and not a gradient. The two charged rungs differ in the kind of object the velocity is.</p>
+<p><strong>Gauge invariance.</strong> Exact, and exact because the gauge group is central and therefore commutes with the frame.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$</td>
+<td>The word, four factors</td>
+</tr>
+<tr>
+<td>$ϙ$</td>
+<td>Coupling; minus the electric charge</td>
+</tr>
+<tr>
+<td>$\tilde A_\Phi=i a'_t e_t+\vec A$</td>
+<td>The connection; Hermitian, hence central-imaginary in time and Hermitian in space</td>
+</tr>
+<tr>
+<td>$\lambda=\exp(iϙ\Gamma/\hbar)$</td>
+<td>The gauge element; central, hence commuting with the frame</td>
+</tr>
+<tr>
+<td>$\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}$</td>
+<td>The velocity; a unit's square, norm $-c^{2}$ for every field</td>
+</tr>
+<tr>
+<td>$\rho_{\mathrm{num}}=r^{2}$, $\rho_{\mathrm{chg}}=\gamma\rho_{\mathrm{num}}$</td>
+<td>Proper and charge densities</td>
+</tr>
+<tr>
+<td>$\beta=\tanh\theta_{\mathrm{rpd}}$</td>
+<td>The spin's canonical weight</td>
+</tr>
+<tr>
+<td>$\mathcal R_{\mathrm{pha}}$, $\mathcal R_{\mathrm{rpd}}$</td>
+<td>The two covariant rates</td>
+</tr>
+<tr>
+<td>$\vec p_{\mathrm{spin}}=-\hbar c\rho_{\mathrm{chg}}\beta\hat n_{\mathrm{rot}}$</td>
+<td>The spin's momentum; unchanged by the coupling</td>
+</tr>
+<tr>
+<td>$p_{r}=p_{\theta_{\mathrm{rpd}}}=p_{u_{\mathrm b}}=0$</td>
+<td>The four vanishing momenta</td>
+</tr>
+<tr>
+<td>$\omega_{\mu\nu}$</td>
+<td>The vorticity; the frame's, not $ϙ F/m$</td>
+</tr>
+<tr>
+<td>$\mathcal L_{\mathrm{kin}}^{\mathrm{gco}}$</td>
+<td>The kinetic Lagrangian density with the connection</td>
+</tr>
+<tr>
+<td>$\mathrm{Sc}(\tilde Q)$</td>
+<td>Scalar part</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Takehiko Takabayasi, "Relativistic hydrodynamics of the Dirac matter," <em>Progress of Theoretical Physics Supplement</em> <strong>4</strong> (1957) 2–35, for the charged spin fluid's equations and the absence of a torque.</li>
+<li>Fritz Bopp and Rudolf Haag, "Über die Möglichkeit von Spinmodellen," <em>Zeitschrift für Naturforschung</em> <strong>5a</strong> (1950) 644–653, for the spinning fluid with an external field and the transport it does and does not acquire.</li>
+<li>Friedrich W. Hehl, Peter von der Heyde, G. David Kerlick and James M. Nester, "General relativity with spin and torsion," <em>Reviews of Modern Physics</em> <strong>48</strong> (1976) 393–416, for the statement that a minimal coupling moves a momentum and not a spin.</li>
+<li>Peter A. M. Dirac, <em>Lectures on Quantum Mechanics</em> (Yeshiva University, 1964), for the second-class reduction that the four vanishing momenta require.</li>
+<li>The companion articles: <a href="the-variational-principle-and-the-coupled-dirac-equation-in-biquaternionic-polar-variables.html">The Variational Principle and the Coupled Dirac Equation in Biquaternionic Polar Variables</a>, the same action with the connection and the reconstruction conjecture; <a href="the-charged-spin-fluid.html">The Charged Spin Fluid</a>, the equations, the force and the absent torque; <a href="the-lagrangian-of-the-spin-fluid.html">The Lagrangian of the Spin Fluid</a>, the free table this article reproduces; <a href="the-lagrangian-of-the-charged-klein-gordon-fluid.html">The Lagrangian of the Charged Klein–Gordon Fluid</a>, the rung where the velocity is a gradient and the vorticity becomes the field; and <a href="the-lagrangian-of-the-charged-proca-fluid.html">The Lagrangian of the Charged Proca Fluid</a>, where the connection reaches the field's own divergence.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -127,8 +127,8 @@ $$
 \mathcal{M}_{\mathrm{mod}}=\exp(-\tilde H_{\Psi,\mathrm{modular}}),\qquad \mathcal{M}_{\mathrm{mod}}^{ir'_t}=\exp(-i\theta_{\mathrm{evo}}\tilde H_{\Psi,\mathrm{modular}}),\qquad
 \sigma_{r'_{t}}(\tilde Q_3)=\exp(-i\theta_{\mathrm{evo}}\tilde H_{\Psi,\mathrm{modular}})\tilde Q_3 \exp(i\theta_{\mathrm{evo}}\tilde H_{\Psi,\mathrm{modular}}).
 $$
-The opposite choice, $\mathcal{M}_{\mathrm{mod}}=\exp(+\tilde H_{\Psi,\mathrm{modular}})$ with $\mathcal{M}_{\mathrm{mod}}^{ir'_t}=\exp(+i\tilde H_{\Psi,\mathrm{modular}}r'_t)$, is the same equation with $\tilde H_{\Psi,\mathrm{modular}}\mapsto-\tilde H_{\Psi,\mathrm{modular}}$. It is not a relabelling: the Takesaki–Winnink theorem says that a faithful normal state satisfies the KMS condition with respect to $\sigma_{-r'_t}$, not $\sigma_{r'_{t}}$, and reversing the sign of $\tilde H_{\Psi,\mathrm{modular}}$ reverses the flow and exchanges the two. In the finite-dimensional model the convention is pinned by $\tilde{Ϛ}_{\Psi}=\exp(-\tilde H_{\Psi,\mathrm{modular}})$ and $\sigma_{r'_{t}}(\tilde Q_3)=\tilde{Ϛ}_{\Psi}^{ir'_t}\tilde Q_3\tilde{Ϛ}_{\Psi}^{-ir'_t}$, which is the parent's convention; the generator identity $\frac{d}{dr'_t}\sigma_{r'_{t}}(\tilde Q_3)|_{r'_t=0}=-i[\tilde H_{\Psi,\mathrm{modular}},\tilde Q_3]$ follows from it and is the form used throughout. A displayed formula that writes $\mathcal{M}_{\mathrm{mod}}^{ir'_t}=\exp(+i\tilde H_{\Psi,\mathrm{modular}}r'_t)$ together with $\tilde H_{\Psi,\mathrm{modular}}=-\log\mathcal{M}_{\mathrm{mod}}$ is internally inconsistent — it would give $\mathcal{M}_{\mathrm{mod}}^{ir'_t}=\mathcal{M}_{\mathrm{mod}}^{-ir'_t}$ — and the sign is fixed here once, in the direction above, and held.</p>
-<h3 id="the-state-is-thermal-with-respect-to-math118">The State Is Thermal with Respect to $\tilde H_{\Psi,\mathrm{modular}}$</h3>
+The opposite choice, $\mathcal{M}_{\mathrm{mod}}=\exp(+\tilde H_{\Psi,\mathrm{modular}})$ with $\mathcal{M}_{\mathrm{mod}}^{ir'_t}=\exp(+i\theta_{\mathrm{mod}}\tilde H_{\Psi,\mathrm{modular}})$ and the modular angle $\theta_{\mathrm{mod}}=r'_t$ real because the time is real, is the same equation with $\tilde H_{\Psi,\mathrm{modular}}\mapsto-\tilde H_{\Psi,\mathrm{modular}}$. It is not a relabelling: the Takesaki–Winnink theorem says that a faithful normal state satisfies the KMS condition with respect to $\sigma_{-r'_t}$, not $\sigma_{r'_{t}}$, and reversing the sign of $\tilde H_{\Psi,\mathrm{modular}}$ reverses the flow and exchanges the two. In the finite-dimensional model the convention is pinned by $\tilde{Ϛ}_{\Psi}=\exp(-\tilde H_{\Psi,\mathrm{modular}})$ and $\sigma_{r'_{t}}(\tilde Q_3)=\tilde{Ϛ}_{\Psi}^{ir'_t}\tilde Q_3\tilde{Ϛ}_{\Psi}^{-ir'_t}$, which is the parent's convention; the generator identity $\frac{d}{dr'_t}\sigma_{r'_{t}}(\tilde Q_3)|_{r'_t=0}=-i[\tilde H_{\Psi,\mathrm{modular}},\tilde Q_3]$ follows from it and is the form used throughout. A displayed formula that writes $\mathcal{M}_{\mathrm{mod}}^{ir'_t}=\exp(+i\theta_{\mathrm{mod}}\tilde H_{\Psi,\mathrm{modular}})$ together with $\tilde H_{\Psi,\mathrm{modular}}=-\log\mathcal{M}_{\mathrm{mod}}$ is internally inconsistent — it would give $\mathcal{M}_{\mathrm{mod}}^{ir'_t}=\mathcal{M}_{\mathrm{mod}}^{-ir'_t}$ — and the sign is fixed here once, in the direction above, and held.</p>
+<h3 id="the-state-is-thermal-with-respect-to-math119">The State Is Thermal with Respect to $\tilde H_{\Psi,\mathrm{modular}}$</h3>
 <p>The KMS property gives $\tilde H_{\Psi,\mathrm{modular}}$ its <strong>physical interpretation</strong>. Normalized to $\beta=1$, a faithful normal state $\omega$ satisfies the KMS boundary relation with respect to the flow $\sigma_{-r'_t}$ of its modular group. In the finite-dimensional model, where the state is realized by a density $\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$ that is positive definite and of trace one,
 $$
 \omega(\tilde Q_3)=\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\,\tilde Q_3^{*}),
@@ -198,7 +198,7 @@ $$</p>
 <p>which is the same conjugation as before. The amplitude is the operator whose logarithm generates the flow; the state has no Cartan phase, so the flow is the flow of the amplitude alone.</p>
 <p><strong>The reading.</strong> The modular Hamiltonian is minus twice the logarithm of the Cartan amplitude. A state has no Cartan phase; its amplitude is its square root, and its modular flow is the logarithm of that amplitude. This is the exact sense in which the Cartan amplitude is the modular square root, and it is the state-side counterpart of the operator-side statement that the amplitude is what remains when the phase is forgotten.</p>
 <p><strong>The boundary.</strong> The reading needs $\tilde{Ϛ}_{\Psi}>0$. At a pure state $\lambda_-=0$, $\tilde Q_{\mathrm n}$ is rank one and not invertible, $\log\tilde Q_{\mathrm n}$ diverges, and $\tilde H_{\Psi,\mathrm{modular}}$ does not exist; the amplitude is still defined, but its logarithm is not. The modular conjugation is anti-unitary and is not the Cartan phase; the two objects must not be identified.</p>
-<h3 id="the-spectral-form-of-math175">The Spectral Form of $\tilde H_{\Psi,\mathrm{modular}}$</h3>
+<h3 id="the-spectral-form-of-math176">The Spectral Form of $\tilde H_{\Psi,\mathrm{modular}}$</h3>
 <p>Write the faithful state in Bloch form,
 $$
 \tilde{Ϛ}_{\Psi}=\tfrac12\big(e_t+i\vec r\cdot\mathbf e\big),
@@ -226,7 +226,7 @@ $$
 =\Big\{1,\ \frac{\lambda_+}{\lambda_-},\ \frac{\lambda_-}{\lambda_+}\Big\},
 $$
 all strictly positive because $\lambda_\pm>0$. This is the concrete form of $\mathcal{M}_{\mathrm{mod}}>0$.</p>
-<h3 id="math197-generates-the-same-flow-as-math198">$\tilde H_{\Psi,\mathrm{modular}}$ Generates the Same Flow as $\mathcal{M}_{\mathrm{mod}}^{ir'_t}$</h3>
+<h3 id="math198-generates-the-same-flow-as-math199">$\tilde H_{\Psi,\mathrm{modular}}$ Generates the Same Flow as $\mathcal{M}_{\mathrm{mod}}^{ir'_t}$</h3>
 <p>The two displays are equal, not merely analogous. From $\tilde{Ϛ}_{\Psi}=\exp(-\tilde H_{\Psi,\mathrm{modular}})$,
 $$
 \mathcal{M}_{\mathrm{mod}}^{ir'_t}(\tilde Q_3)=e^{-ir'_t\tilde H_{\Psi,\mathrm{modular}}}\tilde Q_3\,e^{ir'_t\tilde H_{\Psi,\mathrm{modular}}}
@@ -241,7 +241,7 @@ $$
 =-i[\tilde H_{\Psi,\mathrm{modular}},\tilde Q_3],
 $$
 which is the generator identity of the definition. So the $\tilde H_{\Psi,\mathrm{modular}}$ constructed from the state is the same operator that generates the flow constructed from the Tomita operator, and the check is a recomputation rather than a quotation.</p>
-<h2 id="verification-math205-generates-the-modular-flow">Verification: $\tilde H_{\Psi,\mathrm{modular}}$ Generates the Modular Flow</h2>
+<h2 id="verification-math206-generates-the-modular-flow">Verification: $\tilde H_{\Psi,\mathrm{modular}}$ Generates the Modular Flow</h2>
 <p>The identities above were recomputed symbolically and numerically in the biquaternion algebra, using the matrix representation $\mathsf{M}_2(\vec e_\eta)=-i\sigma_\eta$, $\mathsf{M}_2(i)=iI_2$. The state was the parent's generic faithful state,
 $$
 \vec r=\big(\tfrac{3}{10},\tfrac{2}{5},-\tfrac15\big),
@@ -341,7 +341,7 @@ $$
 $$
 for any local operator $\mathcal O$ and weight $f$; for a free field it contains bilocal terms, quadratic in the field at two separated points, and the obstruction to removing them is physical rather than technical. Second, and more invariantly, the modular flow $\sigma_{r'_{t}}$ of a general region does <strong>not</strong> map $\mathcal A(V)$ to itself: it is not a geometric flow of the region, and an operator localized in $V$ is, under the flow, spread outside it. This is the precise sense in which $\tilde H_{\Psi,\mathrm{modular},V}$ is nonlocal — not that it fails to be an operator, but that it is not tied to the local algebra of $V$ the way a Hamiltonian density is.</p>
 <p>The nonlocality is also why the Tomita–Takesaki theory is not a tool for computing a local energy: $\tilde H_{\Psi,\mathrm{modular},V}$ is defined for every region and state, but its content is generally as complicated as the entanglement structure of the state across the boundary of $V$.</p>
-<h3 id="the-exceptional-answer-the-cases-where-math306-is-geometric">The Exceptional Answer: The Cases Where $\tilde H_{\Psi,\mathrm{modular},V}$ Is Geometric</h3>
+<h3 id="the-exceptional-answer-the-cases-where-math307-is-geometric">The Exceptional Answer: The Cases Where $\tilde H_{\Psi,\mathrm{modular},V}$ Is Geometric</h3>
 <p>There are cases in which the modular flow <strong>is</strong> a spacetime symmetry flow and $\tilde H_{\Psi,\mathrm{modular},V}$ is therefore a local geometric generator. They are the exceptions, and they are known.</p>
 <ul>
 <li><strong>Half-spaces and wedges: the Bisognano–Wichmann theorem.</strong> For the vacuum of a Wightman field theory and a wedge region (in particular a half-space), the modular operator is

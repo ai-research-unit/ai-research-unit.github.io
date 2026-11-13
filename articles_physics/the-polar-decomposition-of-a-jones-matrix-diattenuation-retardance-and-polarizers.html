@@ -235,10 +235,10 @@ $$</p>
 <p>$$
 \tilde J_{\mathrm{opt},0}=\exp(i\theta_{\mathrm{pha}})\tilde u_{\mathrm r},\qquad
 \theta_{\mathrm{pha}}=\tfrac12(\theta_{\mathrm{pha},1}+\theta_{\mathrm{pha},2}),\qquad
-\tilde u_{\mathrm r}=\cos\frac{\theta_{\mathrm{rat}}}{2}+\sin\frac{\theta_{\mathrm{rat}}}{2}\,\vec u_U .
+\tilde u_{\mathrm r}=\cos\theta_{\mathrm{rte}}+\sin\theta_{\mathrm{rte}}\,\vec u_U,\qquad \theta_{\mathrm{rte}}:=\tfrac12\,\theta_{\mathrm{rat}} .
 $$</p>
-<p>Here $\theta_{\mathrm{pha}}$ is the phase of the polar form: it is the argument of the central complex scalar, a real angle taken modulo a full turn, and the exponential that carries it is $\exp(i\theta_{\mathrm{pha}})$.</p>
-<p>The rotor is a real quaternion of unit norm, and its eigenvalues are $\exp(\pm i\theta_{\mathrm{rat}}/2)$. <strong>The retardance is twice the exponent angle of the rotor</strong>, and the rotor is the half-angle object that the double cover of the rotation group requires. A rotor with exponent angle $\pi/2$ is a retardance of $\pi$, not $\pi/2$.</p>
+<p>Here $\theta_{\mathrm{pha}}$ is the phase of the polar form: it is the argument of the central complex scalar, a real angle taken modulo a full turn, and the exponential that carries it is $\exp(i\theta_{\mathrm{pha}})$. The angle $\theta_{\mathrm{rte}}$ is the exponent angle of the rotor. It is real because the retardance is real and the divisor is the fixed number two, so halving a real angle cannot leave the real line.</p>
+<p>The rotor is a real quaternion of unit norm, and its eigenvalues are $\exp(\pm i\theta_{\mathrm{rte}})$. <strong>The retardance is twice the exponent angle of the rotor</strong>, and the rotor is the half-angle object that the double cover of the rotation group requires. A rotor with exponent angle $\pi/2$ is a retardance of $\pi$, not $\pi/2$.</p>
 <p><strong>The boundary.</strong> The retardance is defined modulo $2\pi$ and its sign depends on the labelling of the two axes. The $*$-unitary factor of a polarizer is a partial isometry, not a $*$-unitary element, so a polarizer has no retardance: one of its two eigenvalues is zero and the phase difference is not defined.</p>
 <h2 id="polarizers-and-the-cone">Polarizers and the Cone</h2>
 <p>An ideal polarizer has a rank-one Jones matrix. In the algebra it is an idempotent, $\tilde J_{\mathrm{opt}}=\tilde\Pi(\vec u)$ up to a scale, and its norm vanishes:</p>
@@ -366,7 +366,11 @@ $$</p>
 </tr>
 <tr>
 <td>$\tilde u_{\mathrm r}$</td>
-<td>the real rotor of the retarder, angle $\theta_{\mathrm{rat}}/2$</td>
+<td>the real rotor of the retarder, angle $\theta_{\mathrm{rte}}$</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{rte}}:=\theta_{\mathrm{rat}}/2$</td>
+<td>the exponent angle of the rotor, half the retardance</td>
 </tr>
 <tr>
 <td>$\tilde\Pi_\pm(\vec u)$</td>

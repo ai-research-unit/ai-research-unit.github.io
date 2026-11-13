@@ -106,9 +106,9 @@ where $S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]$ is the second variation of the action 
 <h2 id="the-connected-generating-functional">The Connected Generating Functional</h2>
 <p>Write the functional integral with a source as in the previous article,
 $$
-Z[\tilde J_{\Phi}] = \int\mathcal{D}\tilde{Ξ}\; \exp(\,iS[\tilde{Ξ}]/\hbar+ \langle  \tilde J_{\Phi},\tilde{Ξ}\rangle),
+Z[\tilde J_{\Phi}] = \int\mathcal{D}\tilde{Ξ}\; \exp(\,i\theta_{\mathrm{act}}+i\theta_{\mathrm{src}}),\qquad \theta_{\mathrm{act}}:=\frac{\mathrm{Re}\,S[\tilde{Ξ}]}{\hbar},\quad \theta_{\mathrm{src}}:=\frac{\langle\tilde J_{\Phi},\tilde{Ξ}\rangle}{\hbar},
 $$
-with $\tilde J_{\Phi}$ valued in the module and the pairing as above. The connected functional is
+with $\tilde J_{\Phi}$ valued in the module and the pairing as above. The exponent holds two real angles, not one: $\theta_{\mathrm{act}}$ is the action over $\hbar$ and $\theta_{\mathrm{src}}$ is the source pairing over $\hbar$. Each is dimensionless because an action and a bilinear form are divided by the same $\hbar$, and each is real because the action and the form are real.
 $$
 W[\tilde J_{\Phi}] = -i\,\hbar\log  Z[\tilde J_{\Phi}].
 $$</p>
@@ -293,8 +293,12 @@ has coefficients $a_n$ built from the curvature of $S^{(2)}$ and the geometry of
 <td>Real bilinear form; positive definite on the algebra, with the sectors orthogonal</td>
 </tr>
 <tr>
-<td>$Z[\tilde J_{\Phi}]=\int\mathcal{D}\tilde{Ξ}\,\exp(\frac{i\,S}{\hbar}+\langle\tilde J_{\Phi},\tilde{Ξ}\rangle)$</td>
+<td>$Z[\tilde J_{\Phi}]=\int\mathcal{D}\tilde{Ξ}\,\exp(i\theta_{\mathrm{act}}+i\theta_{\mathrm{src}})$</td>
 <td>Generating functional</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{act}}:=\mathrm{Re}\,S/\hbar$, $\theta_{\mathrm{src}}:=\langle\tilde J_{\Phi},\tilde{Ξ}\rangle/\hbar$</td>
+<td>The two real angles of the exponent</td>
 </tr>
 <tr>
 <td>$W[\tilde J_{\Phi}]=-i\,\hbar\log  Z[\tilde J_{\Phi}]$</td>

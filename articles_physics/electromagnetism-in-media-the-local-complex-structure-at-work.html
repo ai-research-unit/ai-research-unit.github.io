@@ -337,12 +337,12 @@ $$
 on the propagating branch, with $k_\Phi^{\tau}=k_\Phi/(1-\tau k_\Phi\beta)$; in this labelling $\tau=-1$ is the branch written $k_\Phi^+$ in <em>Maxwell’s Equations in Chiral Media</em>. Both were checked to $2.2\times10^{-16}$ against the wave equation evaluated on the corresponding circular polarisation, and at $\beta=0$ the two branches collapse to the single $k_\Phi=\sqrt{\epsilon\mu}\,\omega$ of the non-chiral medium. The two refractive indices are the optical activity, and they come with no free constant beyond the one $\beta$ that entered the constitutive relations.</p>
 <p><strong>The fundamental solution and the causality principle.</strong> The source constructs the fundamental solution of $\mathcal{M}$ using quaternionic analysis. Writing
 $$
-\mathrm{Sd}_\alpha(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=-\frac{\exp(i\alpha|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|)}{4\pi|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|},
+\mathrm{Sd}_\alpha(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=-\frac{\exp(i\theta_{\mathrm{shf}})e^{-\kappa_{\mathrm{dmp}}\lvert r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\rvert}}{4\pi|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|},
 \qquad
 V_{\mathrm{vek},\alpha}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=-\mathrm{grad}\,\mathrm{Sd}_\alpha(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)+\alpha\,\mathrm{Sd}_\alpha(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)
 =\left(\alpha+\frac{r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z}{|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^2}-\frac{i\alpha\,(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}{|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|}\right)\mathrm{Sd}_\alpha(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z),
 $$
-the object $V_{\mathrm{vek},\alpha}$ is a fundamental solution of the shifted operator in the source's own normalisation, $(D+\alpha)V_{\mathrm{vek},\alpha}=\delta$, and it satisfies at infinity the radiation condition
+the complex shift is split as $\alpha\,\lvert r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\rvert=\theta_{\mathrm{shf}}+i\kappa_{\mathrm{dmp}}\lvert r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\rvert$, with the shift angle $\theta_{\mathrm{shf}}=\operatorname{Re}\alpha\,\lvert\vec r\rvert$ and the decay rate $\kappa_{\mathrm{dmp}}=\operatorname{Im}\alpha$, both real because the shift has a real and an imaginary part; the object $V_{\mathrm{vek},\alpha}$ is a fundamental solution of the shifted operator in the source's own normalisation, $(D+\alpha)V_{\mathrm{vek},\alpha}=\delta$, and it satisfies at infinity the radiation condition
 $$
 \left(1+\frac{i(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}{|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|}\right)V_{\mathrm{vek},\alpha}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=o\!\left(\frac{1}{|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|}\right),
 $$
@@ -496,7 +496,7 @@ $$
 \mathrm{grad}\,G=\vec{\epsilon},
 $$
 so that the potential $G$ is the logarithmic derivative of the square root of the permittivity, which is the carrier function of the normalisation above. The correspondence is recorded in <em>The Dirac Equation in Biquaternionic Form</em>, section <em>The Static Maxwell Field of an Inhomogeneous Medium as a Dirac Potential</em>. It belongs here because the two ends are this section's carrier function and that article's potential coupling, and the statement is a dictionary between them rather than a new solution. It is a static statement, and it does not extend to the time-dependent inhomogeneous case, where the reduction is the Vekua equation and no such identification is available.</p>
-<h2 id="the-operator-math464-the-reduction-to-the-schrodinger-equation-and-a-fundamental-solution">The Operator $\mathcal{D}_{\vec{\alpha}}$, the Reduction to the Schrödinger Equation, and a Fundamental Solution</h2>
+<h2 id="the-operator-math467-the-reduction-to-the-schrodinger-equation-and-a-fundamental-solution">The Operator $\mathcal{D}_{\vec{\alpha}}$, the Reduction to the Schrödinger Equation, and a Fundamental Solution</h2>
 <p>In the static case the reformulation reads</p>
 <p>$$
 D\,\vec{\mathcal E}+\vec{\mathcal E}\,\vec{\epsilon}=-\frac{\rho}{\sqrt{\epsilon}},
@@ -606,7 +606,7 @@ $$</p>
 <p>$$
 \mathcal{K}_{\pm\alpha}=-(D\mp\alpha)\,\mathrm{Sd}_{\pm\alpha},
 \qquad
-\mathrm{Sd}_\alpha=-\frac{\exp(i\alpha|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|)}{4\pi|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|},
+\mathrm{Sd}_\alpha=-\frac{\exp(i\theta_{\mathrm{shf}})e^{-\kappa_{\mathrm{dmp}}\lvert r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\rvert}}{4\pi|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|},
 $$</p>
 <p>minus the first-order operator applied to the outgoing Helmholtz kernel of that same operator. The formula obtained above is the same display,</p>
 <p>$$
