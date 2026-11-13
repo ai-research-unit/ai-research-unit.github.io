@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Non-Quantum Limit of the Free Dirac Equation using the Variational Principle — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-non-quantum-limit-of-the-free-dirac-equation-using-the-variational-principle"><strong>The Non-Quantum Limit of the Free Dirac Equation using the Variational Principle</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The variational route in the Dirac family reaches a different conclusion, and the conclusion is a negative one with content.</strong> In the three other families the polar action is second order in something, and the limit is the deletion of one group of terms from it. Here the polar action is <strong>first order in every velocity</strong>: it is a one-form plus a potential, its Hessian vanishes identically, four of its eight momenta vanish identically, and the remaining four are fixed functions of the coordinates. <strong>There is no term in the amplitude's gradient to delete</strong>, because the amplitude enters the action through the overall density and never through its own derivative.</p>
+<p><strong>So the limit cannot be a truncation here, and the article says what it is instead.</strong> It is the replacement of a differential operator by its symbol, and the object that decides its accuracy is the failure of that replacement to be exact. In the free family the failure is the amplitude's curvature, at order $\epsilon^{2}$ in the eikonal, and there is no commutator because there is no connection.</p>
+<p><strong>The positive result, and it is the article's main claim.</strong> The action's structure is a constraint structure, and the limit does not create it: <strong>the Dirac family's polar action already has the shape the other families' actions acquire only in the limit</strong> — one velocity, the density as the phase's momentum, and a set of constraints on the frame. What the limit adds is a name for the extremum those constraints select: the frame's rapidity is the flow's rapidity and the frame's axis is the momentum's, and the eikonal is the mass potential's value at that extremum.</p>
+<p><strong>So the non-quantum limit of this family, read on the action, is an extremum principle for the frame and not a truncation of a functional.</strong> That is the sentence the article exists to establish, and it is why the twelve-article programme's Dirac pair had to be written from the equation and not from the action: <strong>the action does not contain the term the other routes delete.</strong></p>
+<p><strong>Conventions.</strong> Those of <em>The Variational Principle and the Dirac Equation in Biquaternionic Polar Variables</em>: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $e_t=1$, $\vec e_\mu^{2}=-e_t$, $i$ central, $\mathrm{Sc}$ the coefficient of $e_t$, pairing $\mathrm{Sc}(\cdot^{*}\cdot)$, parameters $r>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd}}\ge0$, $\theta_{\mathrm{axr}}\in[0,2\pi)$, unit axes $\vec u_{\mathrm b}$ and $\vec u_{\mathrm r}$. The density is $\rho=r^{2}\cosh\theta_{\mathrm{rpd}}$, the frame's Lorentz factor is $\gamma=\cosh\theta_{\mathrm{rpd}}$, $k_m=mc/\hbar$, and the setting is the constant homogeneous one throughout, since that is the setting in which the parameters are coordinates on a fixed frame.</p>
+<h2 id="the-action-in-the-chart">The Action in the Chart</h2>
+<p><strong>The parent's display.</strong></p>
+<p>$$
+S=\int\mathrm{d}t'\;\hbar c\,\Bigl\{r^{2}\Bigl(\cosh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}-\sinh\theta_{\mathrm{rpd}}\;\hat n_{\mathrm{rot}}\cdot\vec\omega_{\mathrm r}\Bigr)-r^{2}k_m\,\mathcal{V}\Bigr\},
+$$</p>
+<p>with $\vec\omega_{\mathrm r}=\tilde u_{\mathrm r}^{-1}\dot{\tilde u}_{\mathrm r}$ the rotor's body angular velocity and $\hat n_{\mathrm{rot}}=\tilde u_{\mathrm r}^{-1}\vec u_{\mathrm b}\tilde u_{\mathrm r}$ the boost axis carried into the body frame.</p>
+<p><strong>Read it as a one-form plus a potential.</strong></p>
+<p>$$
+\mathcal L=A_x(q)\,\dot q^{x}-U(q),
+\qquad
+A=\hbar c\,r^{2}\Bigl[\cosh\theta_{\mathrm{rpd}}\,d\theta_{\mathrm{pha}}-\sinh\theta_{\mathrm{rpd}}\;\hat n_{\mathrm{rot}}\cdot\bigl(\tilde u_{\mathrm r}^{-1}d\tilde u_{\mathrm r}\bigr)\Bigr],
+\qquad
+U=\hbar c\,k_m\,r^{2}\mathcal V .
+$$</p>
+<p><strong>Every velocity appears linearly.</strong> So the Hessian $\partial^{2}\mathcal L/\partial\dot q^{x}\partial\dot q^{y}$ vanishes identically, no momentum can be inverted for a velocity, and the eight Euler–Lagrange equations are first order:</p>
+<p>$$
+\Omega_{xy}\,\dot q^{y}=\partial_x U,
+\qquad
+\Omega=\mathrm{d}A,\qquad \mathrm{d}\Omega=0 .
+$$</p>
+<p><strong>The momenta.</strong> They are the components of $A$, and the parent's table is the statement of that.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>coordinate</th>
+<th>momentum</th>
+<th>why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$r$</td>
+<td>$0$</td>
+<td>the scale enters only through $r^{2}$</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{rpd}}$</td>
+<td>$0$</td>
+<td>the rapidity's rate cancels between $\cosh$ and $\sinh$</td>
+</tr>
+<tr>
+<td>the two angles of $\vec u_{\mathrm b}$</td>
+<td>$0$</td>
+<td>the boost axis enters through $\hat n_{\mathrm{rot}}$ and not through a rate</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{pha}}$</td>
+<td>$\hbar c\,r^{2}\cosh\theta_{\mathrm{rpd}}$</td>
+<td>the phase's rate</td>
+</tr>
+<tr>
+<td>the three rotor coordinates</td>
+<td>$-\hbar c\,r^{2}\sinh\theta_{\mathrm{rpd}}\,\hat n_{\mathrm{rot}}$</td>
+<td>a closed form, not a projector</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Four zeros and four fixed functions.</strong> No momentum is a free variable, so the phase space is not the cotangent bundle: it is the base with a two-form on it, and the dynamics is the one-form's.</p>
+<p><strong>What the parent's mass term costs, and why it is worth recording.</strong> The mass bilinear vanishes identically on the frame's parts, because the two parts sit in complementary right ideals and $\mathrm{Sc}$ is cyclic. It returns only when the bilinear carries a fixed unit direction, the frame's third direction reversed, and the direction is fixed and not chosen. <strong>So the potential $U$ depends on the frame through a function $\mathcal V$ of the rapidity, the axis, the rotor and the fixed direction, and it depends on neither $r$ nor $\theta_{\mathrm{pha}}$.</strong> That independence is the reason two of the four vanishing momenta vanish, and it is the structure the limit will have to read.</p>
+<h2 id="there-is-no-term-to-drop">There Is No Term to Drop</h2>
+<p><strong>The argument, from the first-order form.</strong> The element action is quadratic in the field and linear in the derivative, so in the chart the amplitude's derivative can only enter as $\tilde\Xi^{*}\partial\tilde\Xi=r\,\partial r\times(\ldots)$: <strong>linear in $\partial r$ and carrying one power of $r$, never as $\lvert\partial r\rvert^{2}$.</strong> There is no term of the form the three other families delete.</p>
+<p><strong>What the three other families delete, for comparison.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>family</th>
+<th>the deleted group</th>
+<th>why it exists there</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Schrödinger</td>
+<td>$-\frac{\hbar^{2}}{2m}\lvert\vec\nabla r\rvert^{2}$</td>
+<td>a second-order spatial operator acting on $r$</td>
+</tr>
+<tr>
+<td>Klein–Gordon</td>
+<td>$(\partial r)^{2}$</td>
+<td>a second-order operator in time and space acting on $r$</td>
+</tr>
+<tr>
+<td>Dirac, free</td>
+<td><strong>none</strong></td>
+<td>the action is first order, so $\partial r$ enters linearly</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The consequence, stated bluntly.</strong> A limit that is defined as "delete the amplitude's gradient group" has nothing to delete in this family. <strong>The definition of the limit has to be given in a form that does not presuppose a second-order action</strong>, and the form that works is the operator's: the limit is the statement that the differential operator in the action is, to relative order $\epsilon$, the multiplication by its symbol.</p>
+<p><strong>What that form is, exactly.</strong> Acting on the word, the gradient is</p>
+<p>$$
+\tilde\nabla_\Phi\tilde\Xi=i\tilde K_{\Psi}\tilde\Xi+\mathcal{O}(\epsilon)\cdot\tilde\Xi,
+\qquad
+\tilde K_{\Psi}=\frac{1}{\hbar}\Bigl(\frac{E}{c}e_{t}+i\vec p\cdot\vec e\Bigr),
+$$</p>
+<p>and with a derivative that is a multiplication the action is algebraic. <strong>The action is the same functional before and after</strong>; what changes is that its arguments are evaluated on the symbol's eigenvector and the derivative's error is pushed into a remainder.</p>
+<p><strong>So the corpus's three names for the limit are one name.</strong> "The phase dominates", "the amplitude's gradient is dropped", "the operator is its symbol" are the same statement in three grammars, and this family is the one in which only the third grammar can be written.</p>
+<h2 id="the-criterion">The Criterion</h2>
+<p><strong>Unchanged, and it enters through the remainder rather than through a term.</strong></p>
+<p>$$
+\epsilon=\frac{1}{k_{\Phi}L}=\frac{\hbar}{\lvert\vec p\rvert L},
+$$</p>
+<p>with $L$ the length over which the frame's parameters vary. In the homogeneous setting there is no $L$ and therefore no $\epsilon$; <strong>the criterion is a property of the region and the parent's setting has none.</strong> That is not a defect of the parent — it is the reason the parent's flow is exactly the equation's flow — and it is the reason this article must say where $\epsilon$ would enter if the setting had a length.</p>
+<p><strong>Where it would enter.</strong> Not in the action's term list, where the amplitude appears only through $r^{2}$ and $\rho$, but in the remainder of the substitution $\tilde\nabla_\Phi\to i\tilde K_{\Psi}$. The remainder is built from the second derivatives of the frame's parameters, so it is of order $\epsilon$ as an operator statement and of order $\epsilon^{2}$ in the eikonal.</p>
+<p><strong>The second ratio.</strong> $1/(k_mL)=\hbar/(mcL)$ is the Compton length over $L$, the boundary of the one-particle reading, and in this family it has the sharper meaning the route-one companion gives it: it is the scale at which the eikonal's two branches stop being separable. <strong>It is not the criterion and the limit does not need it to be.</strong></p>
+<p><strong>The table, in the form the family allows.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>object</th>
+<th>the limit's treatment</th>
+<th>the accuracy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the one-form $A$</td>
+<td>untouched; it is linear in the derivatives</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>the potential $U$</td>
+<td>evaluated at the frame the constraints select</td>
+<td>the eikonal's order</td>
+</tr>
+<tr>
+<td>the mass term</td>
+<td>kept whole; it is the potential</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>the substitution $\tilde\nabla\to i\tilde K$</td>
+<td>the limit itself</td>
+<td>$O(\epsilon)$ as an operator, $O(\epsilon^{2})$ in the eikonal</td>
+</tr>
+<tr>
+<td>the constraint count</td>
+<td>unchanged</td>
+<td>exact</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Read the first and fifth rows together.</strong> They are the family's statement: <strong>nothing is truncated and nothing is added</strong>, and the limit's whole content is the identification of the frame at which the potential is to be evaluated.</p>
+<h2 id="the-limit-as-a-symbol-replacement">The Limit as a Symbol Replacement</h2>
+<p><strong>What the substitution does to the functional.</strong> With the derivative replaced by a multiplication, the one-form's components become numbers and the potential becomes a function of those numbers, so the functional becomes algebraic in the symbol's entries; its variation then gives two algebraic statements rather than eight first-order equations:</p>
+<p>$$
+\langle\tilde K_{\Psi}\rangle_{\natural}=k_{m}^{2},
+\qquad
+\frac{\partial U_{0}}{\partial q}=0\ \text{for every frame coordinate},
+$$</p>
+<p><strong>with $U_{0}$ the potential evaluated on the symbol's frame. The first is the mass shell and the second is the frame's position, and they are one statement</strong>: the potential's dependence on the frame is the mass term's, so the eikonal is the mass term's value at the frame's extremum. The two are displayed separately only because one is a statement about the momentum and the other about the frame's coordinates.</p>
+<p><strong>Why the free remainder has no commutator.</strong> The commutator of two derivatives vanishes on a scalar amplitude in the absence of a connection, so the remainder is the amplitude's curvature alone — the quantum potential's — and it is real and of order $\epsilon^{2}$. <strong>The first-order family's free limit is therefore accurate to $\epsilon^{2}$ in the eikonal, exactly as the Klein–Gordon family's</strong>, and the two reach the same order by different routes: one by dropping a group of order $\epsilon^{2}$ from the action, the other by keeping every term and bounding the substitution's error.</p>
+<p><strong>The two are the same accuracy and not the same statement.</strong> A truncation declares what it has dropped; a substitution declares what it has replaced and by how much it missed. <strong>In this family only the second declaration is available</strong>, and that is a fact about the action's order and not about the method.</p>
+<h2 id="the-extremum-principle-for-the-frame">The Extremum Principle for the Frame</h2>
+<p><strong>The potential's frame dependence.</strong> $\mathcal V$ is a function of $\theta_{\mathrm{rpd}}$, $\vec u_{\mathrm b}$, $\theta_{\mathrm{axr}}$ and $\vec u_{\mathrm r}$, and the parent's constraints are that the frame sits where the potential is extremal in those variables.</p>
+<p><strong>The limit gives the extremum a name.</strong> On the symbol's frame the rapidity is the flow's,</p>
+<p>$$
+\cosh\theta_{\mathrm{rpd}}=\gamma=\frac{E}{mc^{2}},
+\qquad
+\tanh\theta_{\mathrm{rpd}}=\frac{\lvert\vec p\rvert c}{E}=\frac{\lvert\vec v\rvert}{c},
+$$</p>
+<p><strong>and the axis is the momentum's direction</strong>, because the fixed direction the mass term needs is the spin's and the spin's axis on the flow is the helicity's. So the extremum the constraints select is the frame a particle of momentum $\vec p$ carries, and the eikonal is the value of the mass potential there.</p>
+<p><strong>This is the article's claim in its final form.</strong> The non-quantum limit of the free Dirac family, read on the action, says: <strong>of all frames the word admits, the limit keeps the one whose rapidity is the flow's and whose axis is the momentum's, and the eikonal is the mass potential at that frame.</strong> That is an extremum principle and not a truncation, and it explains why the route-one article could find the limit from the equation and not from the action: the equation's symbol already is the frame's condition.</p>
+<p><strong>What the principle does not say.</strong> It does not say the frame is a dynamical variable. The rapidity and the rotor are coordinates of the word, and the constraint that fixes them is a constraint of the action and not an equation of motion. <strong>The frame's values are read off the flow, and the flow is read off the phase</strong>; nothing in the passage gives the frame its own dynamics, and nothing should, since the spin's precession is the order-$\epsilon$ term of the coupled family and not a feature of this one.</p>
+<p><strong>A check on the name.</strong> At $\vec p=0$ the rapidity vanishes, $\cosh\theta_{\mathrm{rpd}}=1$, and the density $\rho=r^{2}\cosh\theta_{\mathrm{rpd}}$ reduces to $r^{2}$ — the rest-frame statement the parent makes when it says the spin's momentum vanishes at rest. <strong>The extremum's value at the rest frame is the free action's density</strong>, and that is the sharpest consistency check the homogeneous setting admits.</p>
+<h2 id="the-spins-momentum-read-variationally">The Spin's Momentum, Read Variationally</h2>
+<p><strong>The parent's closed form.</strong> The rotor's momentum is $-\hbar c\,r^{2}\sinh\theta_{\mathrm{rpd}}\,\hat n_{\mathrm{rot}}$, <strong>proportional to the boost and vanishing at rest however fast the rotor turns.</strong></p>
+<p><strong>That is the variational form of a statement the route-one article makes algebraically.</strong> There the spin is absent at order zero because the leading eikonal is a norm and a norm is central; here its canonical momentum vanishes when the frame is not boosted. <strong>The two statements are the same fact seen from two sides</strong>: a central object cannot act on a spinor, and a coordinate whose conjugate momentum vanishes at rest is not a dynamical variable of the rest frame.</p>
+<p><strong>What the equivalence buys.</strong> It tells us that "the spin is order one" is not a statement about $\hbar$'s smallness but about the word's structure: the rotor's momentum carries $\sinh\theta_{\mathrm{rpd}}$, which is $\lvert\vec v\rvert/c$ to leading order, so <strong>the spin's momentum is itself of order $\beta$ and the spin's dynamics is relativistic by construction.</strong> A nonrelativistic limit would then have to treat the rotor as slow, which is the Bargmann–Michel–Telegdi problem's starting point and not this article's.</p>
+<p><strong>What the variational route does not show.</strong> It does not produce the spin term's coefficient. The parent's action has no field strength in it, so there is nothing for the spin to couple to; the $g=2$ term is a coupled-family object and the coupled companion locates it.</p>
+<h2 id="the-constraint-count-does-not-move">The Constraint Count Does Not Move</h2>
+<p><strong>Before the limit.</strong> The Hessian vanishes identically; four momenta vanish; four are fixed functions of the coordinates; the eight equations are $\Omega\dot q=\mathrm{d}U$ and are first order.</p>
+<p><strong>After the limit.</strong> The Hessian still vanishes, because the limit replaces the operator by a number and cannot raise a derivative's order. The four momenta vanish for the same reason: the scale still enters only through $r^{2}$ and the rapidity still has no rate. <strong>The count is unchanged and the reason is structural</strong>: a system whose Lagrangian is a one-form cannot have a second-order term created in it by an approximation that adds no derivative.</p>
+<p><strong>Why this is worth stating.</strong> In the Klein–Gordon family the limit <em>creates</em> the primary constraint — the second time derivative of $r$ is dropped and $p_r=0$ appears. In the Schrödinger family the limit <em>completes</em> a constraint that was half present. <strong>Here the constraint was fully present before the limit and the limit is what tells us where the frame sits.</strong> Three families, three relations between the limit and the constraint structure, and the Dirac family's is the empty one — which is a result, because it says the family's classical content is already a constrained system and that the limit cannot be blamed for the constraints.</p>
+<p><strong>A caution the parent already gives.</strong> The constraints are primary and their class has not been determined: whether they are first or second class needs the brackets, and the parent leaves that open. <strong>The article adopts the parent's caution and adds nothing to it</strong>, since a limit that changes no constraint cannot settle a question about their class.</p>
+<h2 id="what-the-variational-route-adds">What the Variational Route Adds</h2>
+<p><strong>Three things, and one that it does not.</strong></p>
+<p><em>The negative result.</em> There is no group to delete, so the definition of the limit cannot be "drop the amplitude's gradient" in this family. <strong>That is a constraint on the corpus's own vocabulary</strong>, and it is the reason the Dirac articles of route one had to be derived from the equation.</p>
+<p><em>The extremum principle.</em> The limit names the frame: rapidity equal to the flow's, axis equal to the momentum's, eikonal equal to the mass potential there. The equation route can state the same thing only as "the eikonal is $\langle\tilde K_\Psi\rangle_\natural=k_m^{2}$".</p>
+<p><em>The variational reading of the spin's order.</em> Its momentum is proportional to $\sinh\theta_{\mathrm{rpd}}$, so it vanishes at rest; the algebraic statement that a central norm cannot act on a spinor has a canonical counterpart.</p>
+<p><strong>What it does not add.</strong> No solution, no new equation, no accuracy better than the substitution's $\epsilon^{2}$. <strong>And no statement about the spatial structure</strong>: the parent's setting is homogeneous, and the gradient terms the word acquires in the operator setting are the spin fluid's standard ones and are stated there without derivation. This article keeps to the parent's setting and says so, because a claim about a truncated functional would need a functional that does not exist in the parent.</p>
+<h2 id="summary">Summary</h2>
+<p>The free polar Dirac action is a one-form plus a potential, $\mathcal L=A_x\dot q^{x}-U$, with the density $\rho=r^{2}\cosh\theta_{\mathrm{rpd}}$ in the one-form's phase component and the mass as the potential. Its Hessian vanishes identically, four of its eight momenta vanish and four are fixed functions of the coordinates, and its eight equations are $\Omega\dot q=\mathrm{d}U$ and first order. <strong>The action is first order, so the amplitude's derivative enters it linearly and there is no $\lvert\partial r\rvert^{2}$ term: the non-quantum limit of this family cannot be a deletion, and the article's first result is that negative one.</strong></p>
+<p>What the limit is instead is the replacement of a differential operator by its symbol, $\tilde\nabla_\Phi\to i\tilde K_\Psi$, with a remainder of order $\epsilon$ as an operator and $\epsilon^{2}$ in the eikonal, and with no commutator because there is no connection. The criterion is $\epsilon=1/(k_\Phi L)$, it enters through the remainder and not through a term, and the homogeneous parent has no $L$ and therefore no $\epsilon$ — which is why the parent's flow is exactly the equation's flow. The limit's positive content is an <strong>extremum principle for the frame</strong>: of all frames the word admits, the limit keeps the one whose rapidity is the flow's and whose axis is the momentum's, and the eikonal is the mass potential's value there. The constraint count does not move, because a replacement that adds no derivative cannot create one, and that is the third of the three relations the corpus's families bear to their constraints.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$S=\int\hbar c\{r^{2}(\cosh\theta_{\mathrm{rpd}}\dot\theta_{\mathrm{pha}}-\sinh\theta_{\mathrm{rpd}}\hat n_{\mathrm{rot}}\cdot\vec\omega_{\mathrm r})-r^{2}k_m\mathcal V\}$</td>
+<td>The free polar action</td>
+</tr>
+<tr>
+<td>$A_x\dot q^{x}-U$</td>
+<td>Its form: a one-form plus a potential</td>
+</tr>
+<tr>
+<td>$A=\hbar c r^{2}[\cosh\theta_{\mathrm{rpd}}d\theta_{\mathrm{pha}}-\sinh\theta_{\mathrm{rpd}}\hat n_{\mathrm{rot}}\cdot(\tilde u_{\mathrm r}^{-1}d\tilde u_{\mathrm r})]$</td>
+<td>The one-form; its components are the momenta</td>
+</tr>
+<tr>
+<td>$U=\hbar c\,k_m\,r^{2}\mathcal V$</td>
+<td>The potential; the mass</td>
+</tr>
+<tr>
+<td>$\rho=r^{2}\cosh\theta_{\mathrm{rpd}}$</td>
+<td>The density; the phase momentum over $\hbar c$</td>
+</tr>
+<tr>
+<td>$\Omega=\mathrm{d}A$</td>
+<td>The two-form; closed; $\Omega\dot q=\mathrm{d}U$ is the system</td>
+</tr>
+<tr>
+<td>$\gamma=\cosh\theta_{\mathrm{rpd}}$</td>
+<td>The frame's Lorentz factor; the flow's on the limit's frame</td>
+</tr>
+<tr>
+<td>$\epsilon=1/(k_\Phi L)$</td>
+<td>The criterion; enters through the substitution's remainder</td>
+</tr>
+<tr>
+<td>$1/(k_mL)$</td>
+<td>The boundary of the one-particle reading</td>
+</tr>
+<tr>
+<td>$-\hbar c r^{2}\sinh\theta_{\mathrm{rpd}}\hat n_{\mathrm{rot}}$</td>
+<td>The rotor's momentum; vanishes at rest</td>
+</tr>
+<tr>
+<td>$\langle\tilde K_\Psi\rangle_\natural=k_m^{2}$</td>
+<td>The eikonal, at the frame the constraints select</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>T. Takabayasi, "Relativistic hydrodynamics of the Dirac matter," <em>Progress of Theoretical Physics Supplement</em> <strong>4</strong> (1957) 1–80, for the spin fluid and its constraints.</li>
+<li>P. A. M. Dirac, <em>Lectures on Quantum Mechanics</em> (Yeshiva University, 1964), for primary constraints, degenerate Lagrangians and the treatment of a one-form Lagrangian.</li>
+<li>J. L. Synge, <em>Classical Dynamics</em> (Springer, 1960), for a system whose Lagrangian is a one-form and whose equations are $\Omega\dot q=\mathrm{d}U$.</li>
+<li>Michael V. Berry and K. E. Mount, "Semiclassical approximations in wave mechanics," <em>Reports on Progress in Physics</em> <strong>35</strong> (1972) 315–397, for the symbol of a first-order operator and the size of its remainder.</li>
+<li>Robert G. Littlejohn, "The semiclassical evolution of wave packets," <em>Physics Reports</em> <strong>138</strong> (1986) 193–291, for the symbol calculus and the frame a semiclassical spinor carries.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

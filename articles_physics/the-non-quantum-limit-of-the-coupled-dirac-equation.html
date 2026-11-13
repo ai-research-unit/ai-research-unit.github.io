@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Non-Quantum Limit of the Coupled Dirac Equation — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-non-quantum-limit-of-the-coupled-dirac-equation"><strong>The Non-Quantum Limit of the Coupled Dirac Equation</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The coupled limit, and the one thing the connection costs.</strong> With an electromagnetic connection the eikonal keeps its form, the phase's gradient becomes the mechanical momentum, and the force comes out of the eikonal's gradient in one step. <strong>What the connection costs is accuracy.</strong> In the free case the limit's remainder is $2\epsilon^{2}$, real, and the quantum potential's. With a field present the covariant derivatives stop commuting, the commutator is real, and it enters at order $\epsilon$ and carries the spin. So the limit's accuracy in this family is $\epsilon$ and not $\epsilon^{2}$, and the term responsible is the one whose space–space part is $\sum_\eta\tilde S_{\Psi,\eta}B_\eta$ — the magnetic moment, at the coefficient $-\frac{ϙ}{m}$ that the corpus's $g=2$ article fixes.</p>
+<p><strong>The article's four statements.</strong></p>
+<p><em>The criterion is the mechanical wave number.</em> $\epsilon=1/(k_\pi L)$ with $k_\pi=\lvert\vec\pi\rvert/\hbar$. <strong>That is the only gauge-invariant choice</strong>, because $\nabla S_{\tilde\Xi}$ moves under a gauge transformation and $\vec\pi=\nabla S_{\tilde\Xi}-ϙ\vec A$ does not. The canonical wave number is right only in the free case.</p>
+<p><em>The eikonal is the mass shell of the mechanical momentum.</em> $\frac{1}{c^{2}}\mathcal E^{2}-\lvert\vec\pi\rvert^{2}=m^{2}c^{2}$ with $\mathcal E=E-ϙ\phi$, and its flow is $\vec v=c^{2}\vec\pi/\mathcal E$ — not $\vec\pi/m$. <strong>The limit's classical object is relativistic mechanics and not Newton's.</strong></p>
+<p><em>The gradient of the eikonal is the Lorentz force.</em> One differentiation, two second-derivative terms cancelling because partial derivatives commute, and $\frac{d\vec\pi}{dt}=ϙ(\vec E+\vec v\times\vec B)$ with nothing else entering.</p>
+<p><em>The accuracy is $\epsilon$.</em> The commutator's contribution is real, of order $\epsilon$ against the eikonal, and spin-dependent. <strong>A claim that the eikonal holds in a field without stating the order is therefore not a claim that can be checked</strong>, and the order to state is $\epsilon$.</p>
+<p><strong>What the article does not do.</strong> It does not derive the Lorentz force's every step, the numerical checks or the case study; those are <em>Relativistic Mechanics from the Dirac Wave</em>'s, which also carries the covariant derivative's sign conventions and the relabelling of the charge. It does not derive the $g=2$ coefficient. <strong>What it does is the limit's account of the coupled family</strong>: the criterion, the ordering with the commutator included, the exactness of the transport line, the accuracy statement, and the gauge behaviour of the passage.</p>
+<p><strong>Notation.</strong> Those of the free companion. The connection is $\tilde A_\Phi=\sum_\mu A_\mu e_\mu$ with temporal entry $A_t=i\phi/c$; the covariant derivative is $\tilde\nabla_{\mathrm{gco},\mu}=\frac{\partial}{\partial R_\mu}+\frac{i\,ϙ}{\hbar}A_\mu$; the charge $ϙ$ is written in the corpus's sign, so that after the relabelling $\vec\pi=\nabla S_{\tilde\Xi}-ϙ\vec A$ and $\mathcal E=E-ϙ\phi$ carry the kinetic signs.</p>
+<h2 id="the-coupled-pair-and-the-two-shifts">The Coupled Pair and the Two Shifts</h2>
+<p><strong>Minimal coupling, and what it does to the multiplier.</strong> The gradient becomes $\tilde\nabla_{\mathrm{gco}}$, and acting on $A\,e^{i\theta_{\mathrm{phs}}}$ its entries are</p>
+<p>$$
+\frac{1}{\hbar c}\bigl(\partial_{t}S_{\tilde\Xi}+ϙ\phi\bigr)
+\qquad\text{and}\qquad
+\frac{i}{\hbar}\bigl(\nabla S_{\tilde\Xi}-ϙ\vec A\bigr),
+$$</p>
+<p><strong>the two shifts being opposite.</strong> Write</p>
+<p>$$
+\Pi_{t}=\partial_{t}S_{\tilde\Xi}+ϙ\phi,
+\qquad
+\vec\pi=\nabla S_{\tilde\Xi}-ϙ\vec A,
+\qquad
+\mathcal E=-\Pi_{t}=E-ϙ\phi .
+$$</p>
+<p><strong>The relative sign is forced.</strong> Under $S_{\tilde\Xi}\mapsto S_{\tilde\Xi}-ϙ\chi$, $\phi\mapsto\phi+\partial_{t}\chi$, $\vec A\mapsto\vec A-\nabla\chi$, only the opposed pairing is invariant under one gauge function. <strong>The same signs that make the multiplier invariant make the two combinations invariant</strong>, and there is no second choice.</p>
+<p><strong>The symbol.</strong> $\tilde K^{\mathrm{gco}}_{\Psi}=\frac{1}{\hbar}\bigl(\frac{\Pi_{t}}{c}e_{t}+i\vec\pi\cdot\vec e\bigr)$, and the limit says the operator is this multiplication to relative order $\epsilon$. <strong>The connection changes one element of the algebra and nothing else about the passage.</strong></p>
+<p><strong>What the coupling does not change.</strong> The pair, the second-order consequence, the type of the multiplier, the split into a real and an imaginary line, and the fact that the imaginary line is exact. <strong>All of the structure is the free structure with two substitutions</strong>, and this is the family's version of the statement the other families make: the connection is central in every slot, so it touches the phase bracket and nothing else.</p>
+<h2 id="the-criterion-and-why-it-must-be-the-mechanical-one">The Criterion, and Why It Must Be the Mechanical One</h2>
+<p><strong>The discarded object against the kept one.</strong></p>
+<p>$$
+\frac{\hbar^{2}/(2mL^{2})}{\lvert\vec\pi\rvert^{2}/(2m)}=\frac{1}{(k_{\pi}L)^{2}}=\epsilon^{2},
+\qquad
+k_{\pi}=\frac{\lvert\vec\pi\rvert}{\hbar}.
+$$</p>
+<p><strong>The wave number is the mechanical one, and the reason is gauge invariance.</strong> Under a gauge transformation $\nabla S_{\tilde\Xi}\mapsto\nabla S_{\tilde\Xi}-ϙ\nabla\chi$ and $\vec A\mapsto\vec A-\nabla\chi$, so the canonical wave number $k_\Phi=\lvert\nabla S_{\tilde\Xi}\rvert/\hbar$ changes while $k_\pi$ does not. <strong>A criterion that moves under a transformation which changes nothing physical is not a criterion</strong>, so the criterion is written on $k_\pi$ and on nothing else.</p>
+<p><strong>The same correction appears in the coupled Schrödinger family</strong>, and the reason is the same: the surviving kinetic term is built from the mechanical momentum, so the mechanical momentum is what the amplitude's gradient is measured against. In the free case the two coincide and the distinction is invisible.</p>
+<p><strong>A consequence worth stating because it is counter-intuitive.</strong> A strong vector potential raises $k_\pi$ and lowers $\epsilon$: <strong>a strong field makes the limit easier, not harder.</strong> The statement is about the short-wavelength parameter, which is set by the mechanical momentum, and it is not a statement that the field is weak. What a strong field does make harder is a different thing, namely the one-particle reading, and §<em>The Two Sheets and the Field's Work</em> says where that boundary is.</p>
+<p><strong>The charge does not enter the criterion.</strong> $ϙ$ appears in $\vec\pi$ and therefore inside $k_\pi$, but there is no separate smallness attributed to it, and none may be: <strong>the limit orders $\epsilon$ and holds the coupling.</strong> An expansion in $ϙ$ would be a different limit, and in this family it would also break gauge invariance, because the three pieces of the covariant square are not separately invariant.</p>
+<p><strong>The table.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>comparison</th>
+<th>ratio</th>
+<th>invariant?</th>
+<th>the limit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>amplitude's gradient against the covariant kinetic term</td>
+<td>$\epsilon^{2}=1/(k_\pi L)^{2}$</td>
+<td><strong>yes</strong></td>
+<td>yes; the limit is $\epsilon\to0$</td>
+</tr>
+<tr>
+<td>amplitude's gradient against the rest term</td>
+<td>$(k_mL)^{-2}$</td>
+<td>yes</td>
+<td>no; the one-particle boundary</td>
+</tr>
+<tr>
+<td>commutator against the eikonal</td>
+<td>$\hbar\lvert F\rvert/\lvert\vec\pi\rvert^{2}$</td>
+<td>yes</td>
+<td>no; <strong>the accuracy's order</strong></td>
+</tr>
+<tr>
+<td>$ϙ\lvert\vec A\rvert/\lvert\vec p\rvert$</td>
+<td>a chart ratio</td>
+<td>no</td>
+<td>no</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The third row is the article's point</strong>, and it is the one row that has no counterpart in the free article: the limit's remainder in a field is of order $\epsilon$ and not $\epsilon^{2}$, and the ratio that measures it is the field strength against the mechanical momentum squared.</p>
+<h2 id="order-zero-the-coupled-eikonal-and-the-flow">Order Zero: the Coupled Eikonal and the Flow</h2>
+<p><strong>The real part's leading term.</strong></p>
+<p>$$
+\frac{1}{c^{2}}\bigl(\partial_{t}S_{\tilde\Xi}+ϙ\phi\bigr)^{2}-\bigl\lvert\nabla S_{\tilde\Xi}-ϙ\vec A\bigr\rvert^{2}=m^{2}c^{2},
+\qquad\text{that is}\qquad
+\frac{\mathcal E^{2}}{c^{2}}-\lvert\vec\pi\rvert^{2}=m^{2}c^{2},
+$$</p>
+<p><strong>the mass shell of the mechanical momentum.</strong> Read as a norm, $\langle\tilde K^{\mathrm{gco}}_{\Psi}\rangle_\natural=k_m^{2}$ with the $i$ on the vector slots.</p>
+<p><strong>The flow is relativistic.</strong></p>
+<p>$$
+\vec v=\frac{c^{2}\vec\pi}{\mathcal E},
+$$</p>
+<p><strong>which is $\vec\pi=\gamma m\vec v$ and $\mathcal E=\gamma mc^{2}$ read backwards, and not $\vec\pi/m$.</strong> The distance between this and the Newtonian statement is the whole content of the family's being first order in the phase and second order in nothing: $\mathcal E$ carries the rest energy and the potential's energy, and the flow divides by the whole of it.</p>
+<p><strong>Why that is not a detail.</strong> A limit that produced $\vec\pi/m$ would have produced a Galilean flow from a Lorentz-covariant equation, and no gauge argument could repair it. <strong>The factor $\mathcal E$ in the denominator is the rest energy's presence in the phase</strong>, and it is the same fact that makes $k_m$ unevaluable in this family: the mass is in the phase's rate as an offset and not as a term to be ordered.</p>
+<p><strong>The characters are dust's again.</strong> The eikonal is first order, its characteristics are the rays of $\vec\pi=\nabla S_{\tilde\Xi}-ϙ\vec A$, and the congruence carries the density $A^{2}$. <strong>The flow is rotational exactly where the field is.</strong> The curl of a gradient vanishes and the potential's does not, so</p>
+<p>$$
+\nabla\times\vec\pi=-ϙ\vec B,
+\qquad\text{that is}\qquad
+\nabla\times\bigl(\gamma m\vec v\bigr)=-ϙ\vec B ,
+$$</p>
+<p>and with $\gamma\to1$ this is $\nabla\times\vec v=-ϙ\vec B/m$, the statement the coupled Schrödinger family makes with the opposite charge sign. The integral of that statement is the circulation, and it is inherited rather than produced: the phase is single-valued on a loop, so the flux enters as a quantum.</p>
+<h2 id="the-gradient-is-the-lorentz-force">The Gradient Is the Lorentz Force</h2>
+<p><strong>One differentiation.</strong> Differentiate the eikonal in $x^{i}$ and use $\partial_{i}\partial_{t}S_{\tilde\Xi}=\partial_{t}\partial_{i}S_{\tilde\Xi}$:</p>
+<p>$$
+\frac{\Pi_{t}}{c^{2}}\bigl(\partial_{t}\partial_{i}S_{\tilde\Xi}+ϙ\partial_{i}\phi\bigr)
+=\pi_{j}\bigl(\partial_{i}\partial_{j}S_{\tilde\Xi}-ϙ\partial_{i}A_{j}\bigr).
+$$</p>
+<p><strong>The two second-derivative terms cancel</strong> when $\partial_{t}\partial_{i}S_{\tilde\Xi}$ is solved for and $\vec v=-c^{2}\vec\pi/\Pi_{t}$ is substituted, because partial derivatives commute; what survives is</p>
+<p>$$
+\frac{d\vec\pi}{dt}=ϙ\bigl(\vec E+\vec v\times\vec B\bigr),
+\qquad
+\vec E=-\nabla\phi-\partial_{t}\vec A,
+\qquad
+\vec B=\nabla\times\vec A,
+$$</p>
+<p><strong>with $d/dt=\partial_{t}+\vec v\cdot\nabla$ along the flow.</strong> The magnetic term is the curl of the potential and the electric term is its rate's partner, and both come out of one scalar equation's gradient.</p>
+<p><strong>What that shows, and what it does not.</strong> Minimal coupling supplied the charge and the potentials; the limit supplied the force. <strong>Nothing else entered</strong>: not the spin, not the mass beyond the flow's normalisation, and not the second derivative of $S_{\tilde\Xi}$, since the two such terms cancelled. That cancellation is the reason the result is exact within the limit and not an approximation to it.</p>
+<p><strong>The companion's checks.</strong> The derivation was carried out with arbitrary $S_{\tilde\Xi}$, $\phi$, $\vec A$ with zero residual, and the free identity was tested at five hundred points to $4.3\times10^{-14}$ on its real line and $3.6\times10^{-15}$ on its imaginary line. <strong>The article refers to those and does not repeat them.</strong></p>
+<h2 id="order-one-the-transport-and-the-commutator">Order One: the Transport and the Commutator</h2>
+<p><strong>The imaginary line is exact and covariant.</strong></p>
+<p>$$
+\frac{1}{c^{2}}\partial_{t}\bigl(A^{2}\Pi_{t}\bigr)-\nabla\cdot\bigl(A^{2}\vec\pi\bigr)=0,
+$$</p>
+<p><strong>the free line with the two mechanical replacements</strong>, and nothing was discarded to obtain it. Its current is $A^{2}$ times the mechanical four-momentum, and so it is invariant: the density is invariant and $\Pi$ is invariant, and the product is too.</p>
+<p><strong>The real line's order-$\epsilon$ term is the commutator.</strong> With a connection the two orderings of the covariant derivative differ by the field strength,</p>
+<p>$$
+\bigl[\tilde\nabla_{\mathrm{gco},\mu},\tilde\nabla_{\mathrm{gco},\nu}\bigr]=\frac{i\,ϙ}{\hbar}\mathsf{F}_{\mu\nu},
+$$</p>
+<p>and the difference is <strong>real</strong>, so it lands on the real line where the eikonal and the quantum potential live, and it is of order $\epsilon$ against the eikonal because it carries one power of $\hbar$ and no derivative of $A$.</p>
+<p><strong>Its content.</strong> Contracted with the algebra's bivector basis, its space–space part is</p>
+<p>$$
+-\frac{ϙ}{m}\sum_{\eta}\tilde S_{\Psi,\eta}B_{\eta},
+$$</p>
+<p><strong>the magnetic moment term</strong>, with $\tilde S_{\Psi,\eta}=\frac{\hbar}{2}i\vec e_\eta$ and $\mathsf{M}_2(\tilde S_{\Psi,\eta})=\frac{\hbar}{2}\sigma_\eta$, whose coefficient is $g=2$ as <em>The Classical Origin of $g=2$ in Biquaternionic Form</em> has it. <strong>The article locates the term and does not derive the coefficient</strong>; the corpus's status is that the term's position is settled and its full reduction to the Bargmann–Michel–Telegdi equation is open.</p>
+<p><strong>Why the free case has no such term.</strong> Without a connection the covariant derivatives commute and the commutator vanishes identically, so the real line's only subleading term is the quantum potential's, at order $\epsilon^{2}$. <strong>The presence of the field is what promotes the remainder from $\epsilon^{2}$ to $\epsilon$</strong>, and the promotion is not a defect of the method: it is the field coupling to the spin, and any method that missed it would be missing the magnetic moment.</p>
+<h2 id="the-accuracy-is-math100-not-math101">The Accuracy Is $\epsilon$, Not $\epsilon^{2}$</h2>
+<p><strong>The statement, in the form a claim can be checked in.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the claim</th>
+<th>the order it holds to</th>
+<th>the region</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the eikonal, free family</td>
+<td>$\epsilon^{2}$ relative</td>
+<td>where $A$ is smooth on the de Broglie scale</td>
+</tr>
+<tr>
+<td>the eikonal, coupled family</td>
+<td>$\epsilon$ relative</td>
+<td>the same, and where $\hbar\lvert\mathsf F\rvert\ll\lvert\vec\pi\rvert^{2}$</td>
+</tr>
+<tr>
+<td>the transport equation, both</td>
+<td>exact</td>
+<td>everywhere the word is $N$-regular</td>
+</tr>
+<tr>
+<td>the Lorentz force</td>
+<td>the eikonal's order</td>
+<td>the same as the eikonal</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The second row is the article's headline.</strong> An approximation of the coupled family is an approximation to order $\epsilon$ and cannot be improved by keeping more terms of the amplitude's expansion, because the term that limits it is not an amplitude term at all: it is the field's coupling to the spin. <strong>The way to improve it is a different expansion</strong>, one in which the spin is a slow variable and the phase is integrated out, and that is the Bargmann–Michel–Telegdi problem and not this article's.</p>
+<p><strong>Why this matters for the audit's definitions.</strong> The audit distinguishes the limit from the approximation: the limit is a formal passage on a family, the approximation is that passage stopped at a stated order on one solution over a region. <strong>This family is the case that makes the distinction bite</strong>, because the same formal passage gives $\epsilon^{2}$ free and $\epsilon$ coupled, so a claim of approximation that does not say which system it is about has no order.</p>
+<p><strong>What survives at the lower accuracy.</strong> The force, the flow, the transport equation, the circulation and the mass shell. <strong>What does not survive unaltered.</strong> Any statement at the order where the spin lives, which is the precession of the polarisation, and any statement that compares the limit's accuracy with the free case's.</p>
+<h2 id="gauge-invariance-of-the-passage">Gauge Invariance of the Passage</h2>
+<p><strong>The dropped object carries no charge.</strong> The limit discards the amplitude's gradient, $\lvert\nabla A\rvert^{2}$, which contains $A$ and its derivative and nothing else; $A\mapsto A$ under the gauge group. <strong>So the discarded object is invariant, the truncation of an invariant identity by an invariant piece is invariant, and the limit commutes with the gauge transformation.</strong></p>
+<p><strong>What that buys.</strong> The eikonal is invariant, $\mathcal E$ and $\vec\pi$ are invariant, the transport equation is invariant, and the criterion is invariant because it is written on $k_\pi$. <strong>A passage that commuted with nothing would produce statements about a chart</strong>; this one produces statements about the field.</p>
+<p><strong>What it does not buy.</strong> It does not fix the phase. The eikonal determines $\mathcal E$ and $\vec\pi$, which are the invariants, and leaves $\theta_{\mathrm{phs}}$ free; that is the gauge freedom and it is untouched by the limit. <strong>The limit is a statement about the invariants and can say nothing about the coordinate</strong>, exactly as in the coupled Schrödinger family, and for the same reason.</p>
+<p><strong>The test the article can make and the substitution route cannot.</strong> Take a constant $\Gamma$: the phase shifts everywhere and the field is unchanged. In the exact identity the first line is invariant, the second is invariant because $A$ is, and the third is invariant because $\Pi$ and $\vec\pi$ are. <strong>In the truncated identity the same three invariances hold</strong>, so the passage and the group commute term by term and not only on solutions.</p>
+<h2 id="the-two-sheets-and-the-fields-work">The Two Sheets and the Field's Work</h2>
+<p><strong>The eikonal's two branches.</strong> $\mathcal E=\pm c\sqrt{\lvert\vec\pi\rvert^{2}+m^{2}c^{2}}$, and the limit keeps both. <strong>In a field the branches are not symmetric in their physical reading</strong>: the negative branch is the antiparticle's, and the field can move a state from one to the other.</p>
+<p><strong>The boundary of the one-particle reading, in a field.</strong> The two branches are separated by $2mc^{2}$ at $\vec\pi=0$, and a field does work $ϙ\lvert\vec E\rvert$ per unit length, so the scale at which the branches stop being separable is</p>
+<p>$$
+ϙ\lvert\vec E\rvert\,\frac{\hbar}{mc}\sim mc^{2},
+$$</p>
+<p><strong>the pair-creation threshold read as an energy over a Compton length.</strong> That is the field's version of the $(k_mL)\sim1$ boundary of the free article, and it is the only place in the coupled family where the mass sets a length.</p>
+<p><strong>What that means for the limit's domain.</strong> The limit's domain is a region where $\epsilon\ll1$ <strong>and</strong> $\hbar\lvert\mathsf F\rvert\ll\lvert\vec\pi\rvert^{2}$ <strong>and</strong> the field is below the pair threshold over the region's size. <strong>Three conditions and only the first is a parameter</strong>: the second is the accuracy statement and the third is the one-particle statement, and a claim that named only $\epsilon$ would be a claim about a different problem.</p>
+<p><strong>A pure gauge potential changes nothing.</strong> With $\vec A=\nabla\chi$ and $\phi=-\partial_{t}\chi$ the mechanical momentum is $\nabla(S_{\tilde\Xi}-ϙ\chi)$, the field strength vanishes, and the whole article reduces to the free one with a shifted phase. <strong>The criterion is unchanged, the eikonal is unchanged and the accuracy returns to $\epsilon^{2}$</strong>, which is the sharpest check the two articles give each other.</p>
+<h2 id="what-the-limit-does-not-order">What the Limit Does Not Order</h2>
+<p><em>The charge.</em> It sits in the mechanical momentum and nowhere else; there is no expansion in it, and one would break gauge invariance.</p>
+<p><em>The mass.</em> As in the free companion: $k_m$ is the eikonal's constant and not a term. The nonrelativistic limit is the separate $\beta$ family, and its order relative to this one is the audit's non-commutativity remark.</p>
+<p><em>The spin.</em> It enters at order $\epsilon$ through the commutator with a coefficient the algebra fixes. <strong>The limit neither removes it nor produces it</strong>, and it is the reason the accuracy is $\epsilon$.</p>
+<p><em>The field's strength.</em> It is held, not ordered. A strong field is inside the limit's domain whenever the region is smooth enough and below the pair threshold, which is a statement about the region and not about the field.</p>
+<p><em>Superposition.</em> Two waves with different phases have no common $\epsilon$, and the eikonal of their sum is not the sum of the eikonals. <strong>The limit acts on one phase and one amplitude</strong>, and that is why it is a passage on a family and not an operation on the equation.</p>
+<h2 id="summary">Summary</h2>
+<p>With a connection the coupled Dirac limit keeps the free structure with two substitutions: the phase's gradient becomes $\vec\pi=\nabla S_{\tilde\Xi}-ϙ\vec A$ and its rate becomes $\Pi_{t}=\partial_{t}S_{\tilde\Xi}+ϙ\phi$, with the shifts opposed so that both combinations are gauge invariant. The criterion is $\epsilon=1/(k_\pi L)$ with $k_\pi=\lvert\vec\pi\rvert/\hbar$, which is the only gauge-invariant wave number; the charge is held and never ordered. At order zero the eikonal is $\frac{\mathcal E^{2}}{c^{2}}-\lvert\vec\pi\rvert^{2}=m^{2}c^{2}$ with $\mathcal E=E-ϙ\phi$, its flow is $\vec v=c^{2}\vec\pi/\mathcal E$ and not $\vec\pi/m$, and one differentiation of it gives $\frac{d\vec\pi}{dt}=ϙ(\vec E+\vec v\times\vec B)$ with nothing else entering.</p>
+<p>The transport equation is exact, covariant and invariant. <strong>The accuracy of the limit is $\epsilon$ and not $\epsilon^{2}$</strong>, because the covariant derivatives stop commuting, the commutator is real, it enters at order $\epsilon$, and its space–space part is the magnetic moment $-\frac{ϙ}{m}\sum_\eta\tilde S_{\Psi,\eta}B_\eta$ at $g=2$. The limit commutes with the gauge group because the discarded object carries no charge, and it leaves the phase free because the eikonal determines only invariants. Its three conditions are $\epsilon\ll1$, $\hbar\lvert\mathsf F\rvert\ll\lvert\vec\pi\rvert^{2}$ and a field below the pair threshold over the region, and only the first is a parameter of the expansion.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde\nabla_{\mathrm{gco},\mu}=\frac{\partial}{\partial R_\mu}+\frac{i\,ϙ}{\hbar}A_\mu$</td>
+<td>The covariant derivative</td>
+</tr>
+<tr>
+<td>$\Pi_{t}=\partial_{t}S_{\tilde\Xi}+ϙ\phi$</td>
+<td>The canonical energy; $\mathcal E=-\Pi_{t}=E-ϙ\phi$</td>
+</tr>
+<tr>
+<td>$\vec\pi=\nabla S_{\tilde\Xi}-ϙ\vec A$</td>
+<td>The mechanical momentum; invariant</td>
+</tr>
+<tr>
+<td>$\tilde K^{\mathrm{gco}}_\Psi=\frac{1}{\hbar}(\frac{\Pi_t}{c}e_t+i\vec\pi\cdot\vec e)$</td>
+<td>The symbol</td>
+</tr>
+<tr>
+<td>$\frac{\mathcal E^{2}}{c^{2}}-\lvert\vec\pi\rvert^{2}=m^{2}c^{2}$</td>
+<td>The coupled eikonal</td>
+</tr>
+<tr>
+<td>$\vec v=c^{2}\vec\pi/\mathcal E$</td>
+<td>The flow; relativistic, not $\vec\pi/m$</td>
+</tr>
+<tr>
+<td>$\frac{d\vec\pi}{dt}=ϙ(\vec E+\vec v\times\vec B)$</td>
+<td>The Lorentz force, from the eikonal's gradient</td>
+</tr>
+<tr>
+<td>$\epsilon=1/(k_\pi L)$, $k_\pi=\lvert\vec\pi\rvert/\hbar$</td>
+<td>The parameter; the only invariant choice</td>
+</tr>
+<tr>
+<td>$\hbar\lvert\mathsf F\rvert/\lvert\vec\pi\rvert^{2}$</td>
+<td>The ratio that measures the accuracy</td>
+</tr>
+<tr>
+<td>$-\frac{ϙ}{m}\sum_\eta\tilde S_{\Psi,\eta}B_\eta$</td>
+<td>The order-$\epsilon$ remainder; the magnetic moment</td>
+</tr>
+<tr>
+<td>$A^{2}\Pi^{\mu}$</td>
+<td>The transport current; exact and invariant</td>
+</tr>
+<tr>
+<td>$ϙ\lvert\vec E\rvert\hbar/(mc)\sim mc^{2}$</td>
+<td>The pair threshold over a Compton length</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Paul A. M. Dirac, "The quantum theory of the electron," <em>Proceedings of the Royal Society A</em> <strong>117</strong> (1928) 610–624, for the equation and the magnetic moment it carries.</li>
+<li>Michael V. Berry and K. E. Mount, "Semiclassical approximations in wave mechanics," <em>Reports on Progress in Physics</em> <strong>35</strong> (1972) 315–397, for the eikonal method with a connection and the gauge invariance of the short-wavelength parameter.</li>
+<li>Robert G. Littlejohn, "The semiclassical evolution of wave packets," <em>Physics Reports</em> <strong>138</strong> (1986) 193–291, for the symbol calculus, the subleading spin term and the covariant transport equation.</li>
+<li>Michel H. L. Pryce, "The mass-centre in the restricted theory of relativity and its connexion with the quantum theory of elementary particles," <em>Proceedings of the Royal Society A</em> <strong>195</strong> (1948) 62–81, for the classical limit of the Dirac equation and the spin supplementary condition.</li>
+<li>V. Bargmann, L. Michel, and V. L. Telegdi, "Precession of the polarization of particles moving in a homogeneous electromagnetic field," <em>Physical Review Letters</em> <strong>2</strong> (1959) 435–436, for the equation the order-$\epsilon$ remainder tends to.</li>
+<li>J. Schwinger, "On gauge invariance and vacuum polarization," <em>Physical Review</em> <strong>82</strong> (1951) 664–679, for the pair-creation threshold as an energy over a Compton length.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

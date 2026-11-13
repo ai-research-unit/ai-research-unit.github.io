@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Non-Quantum Limit of the Coupled Dirac Equation using the Variational Principle — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-non-quantum-limit-of-the-coupled-dirac-equation-using-the-variational-principle"><strong>The Non-Quantum Limit of the Coupled Dirac Equation using the Variational Principle</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The connection enters the potential and not the one-form, and that single fact settles this article.</strong> In the chart the covariant derivative is the free one plus a central term, so the logarithmic derivative gains $\frac{iϙ}{\hbar}\tilde A_\Phi$ and nothing else; the kinetic coefficient $\hbar c\,\rho$ is untouched, the four vanishing momenta stay vanishing, and the six constraints stay six. <strong>What moves is $V$</strong>, the potential's scalar part, and with it the position of the extremum the constraints select. The constraint count does not move.</p>
+<p><strong>Three consequences, and the third is the one worth the article.</strong></p>
+<p><em>The coupling cannot change the limit's accuracy in this setting.</em> A constant connection has no field strength, and the commutator the route-one article blames for the accuracy's falling to $\epsilon$ <strong>is</strong> the field strength. With $\mathsf F=0$ the commutator vanishes identically, the remainder is the amplitude's curvature, and the accuracy returns to $\epsilon^{2}$.</p>
+<p><em>So the two Dirac articles do not disagree; they are about two different connections.</em> The route-one article's $\epsilon$ is the accuracy in a field with a curl; this article's $\epsilon^{2}$ is the accuracy of a pure-gauge-equivalent potential. <strong>The object that separates them is $\mathsf F$</strong>, and the separation is exact: no approximation is involved in either statement.</p>
+<p><em>The limit moves the frame and not the count.</em> The six constraints are the potential's stationarity in the frame variables, so a shifted potential puts the frame somewhere else. <strong>The limit's content in the coupled family is therefore: the frame is where the shifted potential is extremal</strong>, which is the free extremum principle with the potentials inside it.</p>
+<p><strong>What the article does not do.</strong> It does not re-derive the coupled polar action, the density $\rho=r^{2}\cosh\theta_{\mathrm{rpd}}$, the seven-fold degeneracy of the momenta or the six constraints; those are <em>The Variational Principle and the Coupled Dirac Equation in Biquaternionic Polar Variables</em>'s. It does not take a coupling expansion, and it does not treat the operator setting, where the frame's parameters become fields and the action acquires their gradients: the parent states that structure without deriving it, and this article keeps to the parent's setting.</p>
+<p><strong>Conventions.</strong> Those of the coupled polar variational parent. The connection is $\tilde A_\Phi=\sum_\mu A_\mu e_\mu$ with temporal entry $A_t=i\phi/c$; the covariant derivative is $\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$; the density is $\rho=r^{2}\cosh\theta_{\mathrm{rpd}}$; and $V$ is the potential's scalar part in the frame, a real function of the rapidity, the boost axis, the rotor and the fixed direction the mass term needs. The mechanical momentum is $\vec\pi=\nabla S_{\tilde\Xi}-ϙ\vec A$ and the invariant energy is $\mathcal E=E-ϙ\phi$, in the corpus's sign convention.</p>
+<h2 id="the-coupled-action-in-the-chart">The Coupled Action in the Chart</h2>
+<p><strong>The parent's display.</strong></p>
+<p>$$
+S=\int\mathrm{d}^{4}r\;\Bigl[-\hbar c\,\rho\,\partial_{r'_t}\theta_{\mathrm{pha}}-\rho\,V(\theta_{\mathrm{rpd}},\vec u_{\mathrm b},\theta_{\mathrm{axr}},\vec u_{\mathrm r})-m c^{2}\,r^{2}\Bigr],
+\qquad
+\rho=r^{2}\cosh\theta_{\mathrm{rpd}}.
+$$</p>
+<p><strong>Three terms and one velocity.</strong> The first carries the phase's rate with the coefficient $\hbar c\rho$; the second is the potential's; the third is the mass's, written in the chart's letters. <strong>No other parameter has a velocity</strong>, and that is the constraint structure's whole source.</p>
+<p><strong>How the connection got there.</strong> It entered through the logarithmic derivative,</p>
+<p>$$
+\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco}}\tilde\Xi=\tilde\Xi^{-1}\tilde\nabla_\Phi\tilde\Xi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi,
+$$</p>
+<p><strong>one algebraic term and no derivative</strong>, because a central element per component passes through $\tilde\Xi^{-1}$. Its temporal slot is central imaginary and its spatial slots are Hermitian, so the connection reaches the phase bracket and the boost bracket and cannot reach the scale bracket or the rotor bracket. <strong>That is why $V$ depends on the rapidity and the axes and not on $r$ or on $\theta_{\mathrm{pha}}$, and it is why the scale's momentum vanishes.</strong></p>
+<p><strong>The Lagrangian is again a one-form plus a potential</strong>, $\mathcal L=A_x\dot q^{x}-U$ with $U=\rho V+mc^{2}r^{2}$, and the coupled parent's caution applies: the coefficient $\hbar c\rho$ depends on $\theta_{\mathrm{rpd}}$, so the action is linear in the phase's rate with a coefficient that is a coordinate's function. <strong>That is the standard shape of a first-order constrained system</strong>, and a Legendre transform is not the tool.</p>
+<p><strong>The momenta and the count.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>quantity</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\pi_r$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\pi_{\theta_{\mathrm{pha}}}$</td>
+<td>$-\hbar c\,\rho$, a function of the coordinates</td>
+</tr>
+<tr>
+<td>$\pi_{\theta_{\mathrm{rpd}}},\pi_{\theta_{\mathrm{axr}}},\pi_{u_{\mathrm b}},\pi_{u_{\mathrm r}}$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>evolution equations</td>
+<td>two: for $r$ and for $\theta_{\mathrm{pha}}$</td>
+</tr>
+<tr>
+<td>constraints</td>
+<td>six: the potential's stationarity in the frame variables</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Seven of the eight momenta either vanish or are fixed</strong>, and only $\pi_{\theta_{\mathrm{pha}}}$ is a genuine momentum — and even it is not independent, being $-\hbar c\rho$. <strong>Nothing here is a velocity, so the Hessian vanishes identically and the eight equations are first order.</strong></p>
+<h2 id="what-the-coupling-does-not-touch">What the Coupling Does Not Touch</h2>
+<p><strong>The kinetic coefficient.</strong> $\hbar c\,\rho$ is the free coefficient. The connection contributed no velocity and no derivative, so it cannot change it. <strong>A statement the parent makes and this article inherits: the coupling is a shift of the potential and nothing else in this setting.</strong></p>
+<p><strong>The four vanishing momenta.</strong> $\pi_r=0$ because $r$ appears only through $\rho$ and $r^{2}$; the rapidity's, the boost axis's and the rotor's momenta vanish because their rates are absent. <strong>None of those four independence statements involves the connection.</strong></p>
+<p><strong>The six constraints' number.</strong> They are the count of parameters whose velocity the action lacks, and the action lacks the same six before and after the coupling. <strong>The coupling moves the constraint surfaces and does not change how many there are.</strong></p>
+<p><strong>The density's form.</strong> $\rho=r^{2}\cosh\theta_{\mathrm{rpd}}$, with the Lorentz factor, for the reason the parent gives: the density is the temporal slot of the current and the four-velocity's temporal slot is $\cosh\theta_{\mathrm{rpd}}$. The connection does not enter it.</p>
+<p><strong>Why this list matters.</strong> It is the family's version of a statement the other families make differently. In the coupled Klein–Gordon family the connection enters the <strong>kinetic</strong> group, through the covariant square, and the criterion must be written on the mechanical momentum. In the coupled Schrödinger family it enters the potential in the constant setting and the covariant gradient in the operator setting. <strong>Here it enters the potential and only the potential, because the action is first order and there is no kinetic square for it to enter.</strong> Three families, three doors, and the door is decided by the action's order.</p>
+<h2 id="what-the-coupling-does-touch">What the Coupling Does Touch</h2>
+<p><strong>The potential, and with it the extremum.</strong> $V\mapsto V_{\mathrm{gco}}$, the scalar part of the frame's image of $\frac{ϙ}{\hbar}\tilde A_\Phi$ added to the free $V$. So the six constraints,</p>
+<p>$$
+\frac{\partial}{\partial p}\bigl(\rho\,V_{\mathrm{gco}}\bigr)=0
+\qquad\text{for }p\in\{\theta_{\mathrm{rpd}},\vec u_{\mathrm b},\theta_{\mathrm{axr}},\vec u_{\mathrm r}\},
+$$</p>
+<p><strong>put the frame at the shifted potential's extremum.</strong> The functional form is the free one; the surface is not.</p>
+<p><strong>The two evolution equations.</strong> Varying $r$ and $\theta_{\mathrm{pha}}$,</p>
+<p>$$
+-\hbar c\cosh\theta_{\mathrm{rpd}}\,\partial_{r'_t}\theta_{\mathrm{pha}}-V_{\mathrm{gco}}-mc^{2}=0,
+\qquad
+\partial_{r'_t}\bigl(r^{2}\cosh\theta_{\mathrm{rpd}}\bigr)=0 .
+$$</p>
+<p><strong>The second is the continuity equation with the density $\rho$, unchanged by the coupling in form and moved by it in value</strong> through the rapidity the constraints select. The first is the guidance equation with the shifted potential.</p>
+<p><strong>A flux statement, and it is the same in every family with a first-order action.</strong> The phase is cyclic, so its momentum is conserved: $\partial_{r'_t}\rho=0$. <strong>A cyclic coordinate's momentum cannot be changed by a shift of the potential</strong>, so the continuity equation is the coupling's fixed point.</p>
+<h2 id="the-criterion-and-the-gauge-invariant-pairing">The Criterion and the Gauge-Invariant Pairing</h2>
+<p><strong>The parameter.</strong></p>
+<p>$$
+\epsilon=\frac{1}{k_{\pi}L},
+\qquad
+k_{\pi}=\frac{\lvert\vec\pi\rvert}{\hbar},
+\qquad
+\vec\pi=\nabla S_{\tilde\Xi}-ϙ\vec A .
+$$</p>
+<p><strong>The mechanical wave number, for the reason the coupled Schrödinger companion gives</strong>: $\nabla S_{\tilde\Xi}$ moves under a gauge transformation and $\vec\pi$ does not, so a criterion written on the canonical wave number would move under a transformation that changes nothing physical. <strong>The homogeneous parent has no $L$ and therefore no $\epsilon$; the criterion is stated here in the form the operator setting would use</strong>, since the parent's own setting has no region for it.</p>
+<p><strong>The invariant pairing.</strong> In the constant setting the phase's rate and the scalar potential enter together: under $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+ϙ\Gamma/\hbar$ and $\phi\mapsto\phi+\partial_{t'}\Gamma$, the combination</p>
+<p>$$
+-\hbar c\,\rho\,\partial_{r'_t}\theta_{\mathrm{pha}}+ϙ\phi\,\rho
+$$</p>
+<p><strong>is invariant</strong>, because the phase's term gains $-ϙ\rho\,\partial_{t'}\Gamma$ and the potential's gains the same. <strong>So the action's velocity-dependent term and the potential's connection term are the two halves of one covariant object</strong>, and the split between them is a chart statement — exactly as the split of the covariant square into three pieces is a chart statement in the Schrödinger family.</p>
+<p><strong>What that does to the guidance equation.</strong> The first evolution equation says $-\hbar c\cosh\theta\,\partial_{t'}\theta=V_{\mathrm{gco}}+mc^{2}$, and neither side is invariant by itself; <strong>the invariant statement is the combination above</strong>, which is the constant setting's version of $\mathcal E=\lvert\vec\pi\rvert^{2}/2m+\ldots$ — one scalar equation for one invariant, with the phase left free. <strong>The limit cannot fix the phase and this article's equations do not try to.</strong></p>
+<p><strong>The charge does not enter the criterion.</strong> $ϙ$ sits inside $\vec\pi$ and inside $V_{\mathrm{gco}}$, and there is no smallness attributed to it. <strong>The limit orders $\epsilon$ and holds the coupling</strong>; an expansion in $ϙ$ would be a different limit and, here as everywhere, would break the invariance just displayed.</p>
+<h2 id="no-field-strength-no-commutator">No Field Strength, No Commutator</h2>
+<p><strong>The claim.</strong> In the constant setting the limit's accuracy is $\epsilon^{2}$ and not $\epsilon$.</p>
+<p><strong>The reason, and it is exact.</strong> The route-one article's $\epsilon$ comes from the commutator of two covariant derivatives, which equals $\frac{iϙ}{\hbar}\mathsf F_{\mu\nu}$. <strong>A constant connection has $\mathsf F=0$ identically</strong>, so the commutator vanishes, so the real line's only subleading term is the amplitude's curvature — the quantum potential's — which is of order $\epsilon^{2}$.</p>
+<p><strong>The two articles' statements, side by side.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>setting</th>
+<th>the connection</th>
+<th>the commutator</th>
+<th>the accuracy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>constant, this article</td>
+<td>constant coefficients</td>
+<td>$0$</td>
+<td>$\epsilon^{2}$</td>
+</tr>
+<tr>
+<td>a field with a curl, route one</td>
+<td>$\mathsf F\ne0$</td>
+<td>$\frac{iϙ}{\hbar}\mathsf F$</td>
+<td>$\epsilon$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>So there is no contradiction and there is a lesson.</strong> The accuracy of a non-quantum limit is not a property of the family alone; it is a property of the family <strong>and of what is in the action</strong>. A potential with no curl is not a field: it can be removed by a gauge transformation on a simply connected region, and the limit's accuracy is the free accuracy because the physics is the free physics.</p>
+<p><strong>A check.</strong> Take $\vec A=\nabla\chi$, $\phi=-\partial_{t}\chi$. Then $\mathsf F=0$, the mechanical momentum is $\nabla(S_{\tilde\Xi}-ϙ\chi)$, and the whole article reduces to the free companion's with the phase shifted. <strong>The extremum is at the same frame, the constraints are the same six, and the accuracy is the free $\epsilon^{2}$</strong> — which is the sharpest consistency check the constant setting admits, and it is the same check the coupled Schrödinger variational article performs.</p>
+<p><strong>Where the $\epsilon$ term would come from in a real field.</strong> From $\mathsf F$ contracted with the algebra's bivector basis, with space–space part $-\frac{ϙ}{m}\sum_\eta\tilde S_{\Psi,\eta}B_\eta$. <strong>In this setting it lands in the potential</strong>, because the potential is where the connection lives; so a field with a curl would move the frame by an amount of order $\epsilon$, and the frame's position would inherit the limit's accuracy. <strong>That is the precise sense in which the spin's coupling is an order-$\epsilon$ effect of the frame's position and not of the phase's.</strong></p>
+<h2 id="the-constraint-structure-under-the-limit">The Constraint Structure Under the Limit</h2>
+<p><strong>Before.</strong> Eight momenta, seven degenerate or fixed, six constraints, two evolution equations, Hessian zero.</p>
+<p><strong>After.</strong> The same, because the limit replaces a differential operator by a number and adds no derivative. <strong>A count that is settled by the order of the derivatives cannot be moved by a replacement that keeps the order.</strong></p>
+<p><strong>What does change.</strong> The frame's position, since the potential moved. And the equations' <em>content</em>: with the derivative a multiplication, the guidance equation is algebraic in the symbol's entries, so the evolution of $\theta_{\mathrm{pha}}$ is fixed pointwise by the potential and the frame rather than by a differential equation.</p>
+<p><strong>What that gives the limit's output.</strong> A density transported by a flow, a phase fixed by an algebraic condition, and a frame fixed by an extremum. <strong>That is the same triple the three other families produce</strong>, and the route-two articles of those families had to work to get it: here it is the parent's own structure, and the limit's only job is to name the frame.</p>
+<p><strong>The parent's open question, and what the limit does to it.</strong> The parent leaves undetermined whether the six constraints are first or second class, since that needs the brackets. <strong>The limit does not settle it either</strong>: a passage that changes no constraint cannot decide a class. The article records the question as inherited and unanswered.</p>
+<h2 id="what-the-variational-route-adds">What the Variational Route Adds</h2>
+<p><strong>Four things.</strong></p>
+<p><em>The coupling's door.</em> In this family the connection enters the potential, so the limit's accuracy is untouched by it in the constant setting, and the criterion is untouched as well. <strong>That is a statement about the action's order and not about the field's weakness</strong>, and it is the reason the Dirac pair of route two had to be written: no other family shows that the door is decided by the order.</p>
+<p><em>The reconciliation.</em> The route-one article's $\epsilon$ and this article's $\epsilon^{2}$ are the same formula evaluated at $\mathsf F\ne0$ and at $\mathsf F=0$. <strong>The object that separates them is the field strength</strong>, and the two statements are exact, not approximate, in their settings.</p>
+<p><em>The invariant pairing.</em> The phase's rate and the scalar potential's term are one covariant object, so the split between them is a chart statement. <strong>The limit's equations are equations for invariants</strong>, and the phase stays free.</p>
+<p><em>The frame's shift as the $\epsilon$ term's home.</em> In a field with a curl, the order-$\epsilon$ remainder lands in the potential and moves the frame; the spin's coupling is therefore a statement about where the frame sits, which is the free article's extremum principle with the coupling's correction.</p>
+<p><strong>What it does not add.</strong> No new solution, no new prediction, no better accuracy in a real field, and no determination of the constraints' class. <strong>And no treatment of the operator setting</strong>: with the frame's parameters as fields the action acquires their gradients, and that is the spin fluid's standard structure, stated in the parent without derivation. A claim about the limit there would be a claim about a functional this article has not written.</p>
+<h2 id="summary">Summary</h2>
+<p>The coupled polar Dirac action is $-\hbar c\rho\,\partial_{r'_t}\theta_{\mathrm{pha}}-\rho V_{\mathrm{gco}}-mc^{2}r^{2}$ with $\rho=r^{2}\cosh\theta_{\mathrm{rpd}}$, and the connection entered through the logarithmic derivative as an algebraic term with no velocity. <strong>So the kinetic coefficient, the four vanishing momenta, the density's form and the six constraints are the free ones</strong>, and what the coupling moves is the potential and with it the extremum where the frame sits. The seven-fold degeneracy of the momenta and the vanishing Hessian are unchanged, and the limit — a replacement of a differential operator by its symbol — cannot move a count that the derivatives' order fixes.</p>
+<p>The criterion is $\epsilon=1/(k_\pi L)$ on the mechanical wave number, the only gauge-invariant choice; the phase's rate and the scalar potential's term pair into one invariant, so the limit's equations are equations for invariants and the phase stays free. <strong>Because a constant connection has no field strength and the accuracy's order is set by the commutator, the accuracy here is $\epsilon^{2}$ and not the route-one article's $\epsilon$</strong> — the two statements are exact in their own settings and are separated by $\mathsf F$. In a field with a curl the order-$\epsilon$ remainder lands in the potential and moves the frame, so the spin's coupling is a statement about the frame's position. The parent's open question about the constraints' class is inherited and not settled, since a passage that changes no constraint cannot decide one.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$S=\int[-\hbar c\rho\partial_{r'_t}\theta_{\mathrm{pha}}-\rho V_{\mathrm{gco}}-mc^{2}r^{2}]$</td>
+<td>The coupled polar action</td>
+</tr>
+<tr>
+<td>$\rho=r^{2}\cosh\theta_{\mathrm{rpd}}$</td>
+<td>The density; the temporal slot of the current</td>
+</tr>
+<tr>
+<td>$\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco}}\tilde\Xi=\tilde\Xi^{-1}\tilde\nabla_\Phi\tilde\Xi+\frac{iϙ}{\hbar}\tilde A_\Phi$</td>
+<td>The connection's entry: algebraic, no derivative</td>
+</tr>
+<tr>
+<td>$V_{\mathrm{gco}}$</td>
+<td>The shifted potential; the only thing the coupling moves</td>
+</tr>
+<tr>
+<td>$\pi_r=0$; $\pi_{\theta_{\mathrm{pha}}}=-\hbar c\rho$; four more zero</td>
+<td>The momenta; seven degenerate or fixed</td>
+</tr>
+<tr>
+<td>six</td>
+<td>The constraints; the potential's stationarity in the frame</td>
+</tr>
+<tr>
+<td>$-\hbar c\rho\,\partial_{r'_t}\theta_{\mathrm{pha}}+ϙ\phi\rho$</td>
+<td>The invariant pairing of the phase's rate and the potential</td>
+</tr>
+<tr>
+<td>$\epsilon=1/(k_\pi L)$, $k_\pi=\lvert\vec\pi\rvert/\hbar$</td>
+<td>The criterion; the invariant wave number</td>
+</tr>
+<tr>
+<td>$\mathsf F_{\mu\nu}$</td>
+<td>The field strength; zero in this setting and the reason the accuracy is $\epsilon^{2}$</td>
+</tr>
+<tr>
+<td>$-\frac{ϙ}{m}\sum_\eta\tilde S_{\Psi,\eta}B_\eta$</td>
+<td>The order-$\epsilon$ term a curl would add, landing in the potential</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>T. Takabayasi, "Relativistic hydrodynamics of the Dirac matter," <em>Progress of Theoretical Physics Supplement</em> <strong>4</strong> (1957) 1–80, for the spin fluid, its constraints and its currents.</li>
+<li>P. A. M. Dirac, <em>Lectures on Quantum Mechanics</em> (Yeshiva University, 1964), for primary constraints and degenerate Lagrangians.</li>
+<li>F. London, "Zur Theorie der supraelitenden Zustände," <em>Zeitschrift für Physik</em> <strong>54</strong> (1929) 408–421, for the phase's rigidity and the current as the action's derivative with respect to the potential.</li>
+<li>Michael V. Berry and K. E. Mount, "Semiclassical approximations in wave mechanics," <em>Reports on Progress in Physics</em> <strong>35</strong> (1972) 315–397, for the short-wavelength expansion with a connection and the gauge invariance of the parameter.</li>
+<li>Robert G. Littlejohn, "The semiclassical evolution of wave packets," <em>Physics Reports</em> <strong>138</strong> (1986) 193–291, for the symbol calculus, the commutator's rôle and the frame a semiclassical spinor carries.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

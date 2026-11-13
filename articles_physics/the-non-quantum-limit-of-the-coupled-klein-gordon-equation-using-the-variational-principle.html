@@ -71,27 +71,27 @@
         <h1 id="the-non-quantum-limit-of-the-coupled-kleingordon-equation-using-the-variational-principle"><strong>The Non-Quantum Limit of the Coupled Klein–Gordon Equation using the Variational Principle</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p><strong>The same deletion, with a connection in the Lagrangian.</strong> The limit is the removal of the amplitude's gradient group from the polar action. With a connection the action carries three further groups — the linear and quadratic interaction terms and nothing else — and <strong>none of them is touched</strong>. The truncated action is still gauge invariant, the pair it produces is the mechanical pair, and the constraint it creates is the mechanical mass shell.</p>
-<p><strong>The criterion orders one ratio and not the field.</strong> The amplitude's gradient is order $\delta^{2}$ against the rest term, with $\delta=1/(k_mL)$. The field's terms are order $\varkappa\lvert\vec A\rvert/\lvert\vec p\rvert$ and $(\varkappa\lvert\vec A\rvert/mc)^{2}$, which are ratios of the field to the momentum and to the rest momentum. <strong>The limit says nothing about the field's strength</strong>, so a strong field is semiclassical whenever the amplitude is smooth on the Compton scale.</p>
+<p><strong>The criterion orders the amplitude and not the field.</strong> The amplitude's gradient is order $\epsilon^{2}$ against the phase's spatial gradient, with $\epsilon=1/(k_\Phi L)$; the same group is order $\delta^{2}=1/(k_mL)^{2}$ against the rest term, and that second ratio is the one-particle window. The field's terms are order $ϙ\lvert\vec A\rvert/\lvert\vec p\rvert$ and $(ϙ\lvert\vec A\rvert/mc)^{2}$, which are ratios of the field to the momentum and to the rest momentum. <strong>The limit says nothing about the field's strength</strong>, so a strong field is semiclassical whenever the amplitude is smooth on the scale of the phase.</p>
 <p><strong>The variational statement that the substitution route cannot make.</strong> The connection splits the action into a free part and two interaction terms, and the quadratic term is what makes the whole gauge invariant. A truncation that dropped any gauge-dependent piece would break the symmetry; the limit's truncation drops a functional of $r$ alone, which is invariant by inspection. <strong>The limit and gauge invariance commute, and the reason is visible only in the action.</strong></p>
 <p><strong>What the article establishes, in four sentences.</strong> The truncated action's variations are the mechanical eikonal and the mechanical transport equation, exactly. The constraint structure is the free one: $p_r$ vanishes identically, and the secondary constraint is the mechanical mass shell. The charge current is the exact one, gauge invariant, and its sign remains indefinite. The triangular structure survives with the Lorentz flow in place of the free flow.</p>
 <p><strong>What is not new.</strong> The charged Madelung action is standard and the corpus's polar variational companion derives it. Added here: the ordering of the interaction terms against the two parameters, the gauge-invariance argument for the truncation, the constraint analysis in the coupled case, and the statement that the limit orders the amplitude and not the field.</p>
-<p><strong>Conventions.</strong> Those of the coupled limit companion and of the coupled variational polar companion. The connection is $\tilde A_\Phi=i a'_t e_t+\vec A$ with $\varphi=c\,a'_t$; the coupling is $\varkappa$, minus the electric charge; the mechanical momentum is $\vec\pi=\vec p+\varkappa\vec A$ and the mechanical energy is $\mathcal E=E+\varkappa\varphi$. The word is $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_t$ with $\rho_{\mathrm{num}}=r^{2}$ and $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$. The d'Alembertian is $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$ with $r'_t=c\,t'$, and $k_m=mc/\hbar$.</p>
+<p><strong>Conventions.</strong> Those of the coupled limit companion and of the coupled variational polar companion. The connection is $\tilde A_\Phi=i a'_t e_t+\vec A$ with $\varphi=c\,a'_t$; the coupling is $ϙ$, minus the electric charge; the mechanical momentum is $\vec\pi=\vec p+ϙ\vec A$ and the mechanical energy is $\mathcal E=E+ϙ\varphi$. The word is $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_t$ with $\rho_{\mathrm{num}}=r^{2}$ and $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$. The d'Alembertian is $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$ with $r'_t=c\,t'$, and $k_m=mc/\hbar$.</p>
 <h2 id="the-action-and-its-three-groups">The Action and Its Three Groups</h2>
 <p><strong>The coupled polar action for the central field.</strong></p>
 <p>$$
 S_{\mathrm{central}}=\int\mathrm{d}^{4}x\;\Bigl\{(\partial_{r'_t}r)^{2}-\lvert\nabla r\rvert^{2}
-+\frac{\rho_{\mathrm{num}}}{\hbar^{2}}\Bigl[\bigl(\partial_{r'_t}S_{\tilde\Xi}-\varkappa a'_t\bigr)^{2}-\bigl\lvert\nabla S_{\tilde\Xi}+\varkappa\vec A\bigr\rvert^{2}\Bigr]-k_m^{2}\rho_{\mathrm{num}}\Bigr\}.
++\frac{\rho_{\mathrm{num}}}{\hbar^{2}}\Bigl[\bigl(\partial_{r'_t}S_{\tilde\Xi}-ϙ a'_t\bigr)^{2}-\bigl\lvert\nabla S_{\tilde\Xi}+ϙ\vec A\bigr\rvert^{2}\Bigr]-k_m^{2}\rho_{\mathrm{num}}\Bigr\}.
 $$</p>
 <p><strong>Two groups and three terms.</strong> The amplitude's gradient is one group. The second group is the density times a bracket; the bracket is the free bracket with the connection added, and its square produces three terms:</p>
 <p>$$
 \bigl(\partial S\bigr)^{2}-\lvert\nabla S\rvert^{2}
 \ \longrightarrow\
 \underbrace{\bigl(\partial S\bigr)^{2}-\lvert\nabla S\rvert^{2}}_{\text{free}}
-\;\underbrace{-\,2\varkappa\bigl(a'_t\,\partial_{r'_t}S+\vec A\cdot\nabla S\bigr)}_{\text{linear}}
-\;+\;\underbrace{\varkappa^{2}\bigl(a'^{2}_{t}-\lvert\vec A\rvert^{2}\bigr)}_{\text{quadratic}} .
+\;\underbrace{-\,2ϙ\bigl(a'_t\,\partial_{r'_t}S+\vec A\cdot\nabla S\bigr)}_{\text{linear}}
+\;+\;\underbrace{ϙ^{2}\bigl(a'^{2}_{t}-\lvert\vec A\rvert^{2}\bigr)}_{\text{quadratic}} .
 $$</p>
 <p><strong>The linear term is the current times the potential, and the quadratic term is what repairs it.</strong> A presentation that writes minimal coupling as "current times potential" keeps the linear term and omits the quadratic one, and is not gauge invariant. <strong>The action keeps both because they come from one square</strong>, and that is the polar companion's finding read as a statement about terms.</p>
-<p><strong>Gauge invariance, term by term.</strong> Under $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+\varkappa\Lambda/\hbar$ and $\vec A\mapsto\vec A-\nabla\Lambda$, $a'_t\mapsto a'_t+\partial_{r'_t}\Lambda$, each of the two brackets is invariant on its own, so the second group is invariant, and the first and third groups are invariant because they contain $r$ alone. <strong>Every group of the action is gauge invariant separately.</strong> That fact is what makes the truncation safe, and it is the only place the article needs it.</p>
+<p><strong>Gauge invariance, term by term.</strong> Under $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+ϙ\Lambda/\hbar$ and $\vec A\mapsto\vec A-\nabla\Lambda$, $a'_t\mapsto a'_t+\partial_{r'_t}\Lambda$, each of the two brackets is invariant on its own, so the second group is invariant, and the first and third groups are invariant because they contain $r$ alone. <strong>Every group of the action is gauge invariant separately.</strong> That fact is what makes the truncation safe, and it is the only place the article needs it.</p>
 <h2 id="the-criterion-orders-the-amplitude-and-not-the-field">The Criterion Orders the Amplitude and Not the Field</h2>
 <p><strong>Two parameters, and the limit knows one of them.</strong> The connection contributes two dimensionless ratios:</p>
 <div class="table-scroll"><table>
@@ -104,78 +104,83 @@ $$</p>
 </thead>
 <tbody>
 <tr>
+<td>amplitude's gradient against the phase's spatial gradient</td>
+<td>$\epsilon^{2}=1/(k_\Phi L)^{2}$</td>
+<td>yes; the limit is $\epsilon\to0$</td>
+</tr>
+<tr>
 <td>amplitude's gradient against the rest term</td>
 <td>$\delta^{2}=1/(k_mL)^{2}$</td>
-<td>yes; the limit is $\delta\to0$</td>
+<td>implied; the one-particle window, not the limit</td>
 </tr>
 <tr>
 <td>linear interaction against the phase's kinetic term</td>
-<td>$\varkappa\lvert\tilde A\rvert/\lvert\vec p\rvert$</td>
+<td>$ϙ\lvert\tilde A\rvert/\lvert\vec p\rvert$</td>
 <td><strong>no</strong></td>
 </tr>
 <tr>
 <td>quadratic interaction against the rest term</td>
-<td>$(\varkappa\lvert\tilde A\rvert/mc)^{2}$</td>
+<td>$(ϙ\lvert\tilde A\rvert/mc)^{2}$</td>
 <td><strong>no</strong></td>
 </tr>
 </tbody>
 </table></div>
-<p><strong>The second and third rows are ordered by the field.</strong> A vector potential comparable with the momentum puts the linear term at order one, and a potential comparable with the rest momentum puts the quadratic term at order one. Neither is small because the limit is taken, and neither becomes large.</p>
+<p><strong>The last two rows are ordered by the field.</strong> A vector potential comparable with the momentum puts the linear term at order one, and a potential comparable with the rest momentum puts the quadratic term at order one. Neither is small because the limit is taken, and neither becomes large.</p>
 <p><strong>What follows for the truncation.</strong> The only group that may be dropped is the first. The two interaction groups must be kept at full strength, and the reason is not that they are large but that the limit is not the expansion that would make them small. <strong>A derivation that expanded in the coupling would be a different limit</strong>, and the article does not take it.</p>
 <p><strong>What follows for a claim of approximation.</strong> The error of the limit is $\lvert Q\rvert$ against the rest term, with $Q$ unchanged by the connection; the error of neglecting the field's terms entirely would be a different error, of the size of the field's ratios. The two must not be confused, and only the first is the error of this limit.</p>
 <h2 id="the-truncated-action">The Truncated Action</h2>
 <p><strong>Delete the first group and nothing else.</strong></p>
 <p>$$
-S^{\mathrm{trunc}}_{\mathrm{central}}=\int\mathrm{d}^{4}x\;\Bigl\{\frac{\rho_{\mathrm{num}}}{\hbar^{2}}\Bigl[\bigl(\partial_{r'_t}S_{\tilde\Xi}-\varkappa a'_t\bigr)^{2}-\bigl\lvert\nabla S_{\tilde\Xi}+\varkappa\vec A\bigr\rvert^{2}\Bigr]-k_m^{2}\rho_{\mathrm{num}}\Bigr\}.
+S^{\mathrm{trunc}}_{\mathrm{central}}=\int\mathrm{d}^{4}x\;\Bigl\{\frac{\rho_{\mathrm{num}}}{\hbar^{2}}\Bigl[\bigl(\partial_{r'_t}S_{\tilde\Xi}-ϙ a'_t\bigr)^{2}-\bigl\lvert\nabla S_{\tilde\Xi}+ϙ\vec A\bigr\rvert^{2}\Bigr]-k_m^{2}\rho_{\mathrm{num}}\Bigr\}.
 $$</p>
 <p><strong>The two variations.</strong></p>
 <p><em>Varying the phase</em> gives the covariant transport equation,</p>
 <p>$$
-\nabla\cdot\Bigl(\rho_{\mathrm{num}}\bigl(\nabla S_{\tilde\Xi}+\varkappa\vec A\bigr)\Bigr)
--\frac{\partial}{\partial r'_t}\Bigl(\rho_{\mathrm{num}}\bigl(\partial_{r'_t}S_{\tilde\Xi}-\varkappa a'_t\bigr)\Bigr)=0 ,
+\nabla\cdot\Bigl(\rho_{\mathrm{num}}\bigl(\nabla S_{\tilde\Xi}+ϙ\vec A\bigr)\Bigr)
+-\frac{\partial}{\partial r'_t}\Bigl(\rho_{\mathrm{num}}\bigl(\partial_{r'_t}S_{\tilde\Xi}-ϙ a'_t\bigr)\Bigr)=0 ,
 $$</p>
 <p>which is the mechanical current's conservation and is exact.</p>
 <p><em>Varying the amplitude</em> gives, away from $r=0$,</p>
 <p>$$
-\bigl(\partial_{r'_t}S_{\tilde\Xi}-\varkappa a'_t\bigr)^{2}-\bigl\lvert\nabla S_{\tilde\Xi}+\varkappa\vec A\bigr\rvert^{2}=m^{2}c^{2},
+\bigl(\partial_{r'_t}S_{\tilde\Xi}-ϙ a'_t\bigr)^{2}-\bigl\lvert\nabla S_{\tilde\Xi}+ϙ\vec A\bigr\rvert^{2}=m^{2}c^{2},
 $$</p>
 <p>which is the mechanical mass shell.</p>
 <p><strong>These are the limit's two equations, and they follow exactly.</strong> Not to leading order: $\Box_\Phi r$ can only come from the discarded group, so its absence from the truncated variation is the absence of $Q$ and nothing else.</p>
 <p><strong>The truncated action is gauge invariant.</strong> The discarded group is a functional of $r$ alone; the surviving groups are invariant bracket by bracket; so the truncation preserves the symmetry exactly, term by term. <strong>The limit commutes with the gauge transformation</strong>, in the sense that truncating after a gauge transformation and gauge-transforming after truncating give the same functional.</p>
-<p><strong>Why the quadratic term cannot be dropped.</strong> Suppose a truncation kept the linear interaction and dropped the quadratic one, on the ground that the field is weak. Then the quadratic term's absence would leave the bracket $\partial S-\varkappa a'_t$ with only half of its invariance, and the resulting pair would not be gauge invariant even though the exact pair is. <strong>The limit's own truncation has no such problem because it drops a term that contains neither the phase nor the connection.</strong> That is the argument the substitution route cannot make, and it is the article's clearest contribution.</p>
+<p><strong>Why the quadratic term cannot be dropped.</strong> Suppose a truncation kept the linear interaction and dropped the quadratic one, on the ground that the field is weak. Then the quadratic term's absence would leave the bracket $\partial S-ϙ a'_t$ with only half of its invariance, and the resulting pair would not be gauge invariant even though the exact pair is. <strong>The limit's own truncation has no such problem because it drops a term that contains neither the phase nor the connection.</strong> That is the argument the substitution route cannot make, and it is the article's clearest contribution.</p>
 <h2 id="the-constraint-structure">The Constraint Structure</h2>
 <p><strong>The same degeneracy, and the same constraint.</strong></p>
 <p>$$
 p_r=\frac{\partial\mathcal L^{\mathrm{trunc}}}{\partial(\partial_{r'_t}r)}=0 ,
 \qquad
-\dot p_r=0\ \Longrightarrow\ \bigl(\partial_{r'_t}S-\varkappa a'_t\bigr)^{2}-\bigl\lvert\nabla S+\varkappa\vec A\bigr\rvert^{2}=m^{2}c^{2} .
+\dot p_r=0\ \Longrightarrow\ \bigl(\partial_{r'_t}S-ϙ a'_t\bigr)^{2}-\bigl\lvert\nabla S+ϙ\vec A\bigr\rvert^{2}=m^{2}c^{2} .
 $$</p>
 <p><strong>The connection does not change the singular character of the limit.</strong> The vanishing of $p_r$ is caused by the absence of $\partial_{r'_t}r$ from the truncated Lagrangian, and the connection adds no derivative of $r$ at all, so the primary constraint is the free one and the secondary constraint is the free one with the mechanical momentum. The corpus records that the exact coupled problem is as regular as the exact free one — the coupling shifts velocities and adds a term with no velocity, so the rank does not change. <strong>The limit then makes both problems degenerate in the same way.</strong></p>
 <p><strong>One difference, and it is worth naming.</strong> The secondary constraint now contains the potentials, so the constraint surface moves with the field. A constraint that depends on an external field is still a constraint; what changes is that the surface is not fixed once and for all, and a gauge transformation moves the potentials and the phase in a way that leaves the surface where it was. <strong>The constraint is gauge invariant as an equation</strong>, which is the statement that the mechanical mass shell is a physical surface and the canonical one is not.</p>
 <p><strong>The triangular structure survives, with the Lorentz flow.</strong></p>
 <ol>
 <li>The mechanical eikonal is a first-order equation for $\theta_{\mathrm{pha}}$ given the potentials.</li>
-<li>The flow is the mechanical one, $\vec v=(\nabla S+\varkappa\vec A)/m$, and its acceleration is the Lorentz force.</li>
+<li>The flow is the mechanical one, $\vec v=(\nabla S+ϙ\vec A)/m$, and its acceleration is the Lorentz force.</li>
 <li>The covariant transport is a first-order equation for $\ln r$ along that flow.</li>
 <li>The density follows by quadrature, and the current's conservation is the phase's own variation.</li>
 </ol>
 <h2 id="the-current-and-the-charge">The Current and the Charge</h2>
 <p><strong>The current is the exact one.</strong></p>
 <p>$$
-\vec j_{\mathrm{mech}}=\frac{\rho_{\mathrm{num}}}{m}\bigl(\nabla S_{\tilde\Xi}+\varkappa\vec A\bigr),
+\vec j_{\mathrm{mech}}=\frac{\rho_{\mathrm{num}}}{m}\bigl(\nabla S_{\tilde\Xi}+ϙ\vec A\bigr),
 \qquad
-c\rho_{\mathrm{chg}}=\frac{\rho_{\mathrm{num}}}{m}\bigl(E+\varkappa\varphi\bigr).
+c\rho_{\mathrm{chg}}=\frac{\rho_{\mathrm{num}}}{m}\bigl(E+ϙ\varphi\bigr).
 $$</p>
 <p><strong>The truncation does not change it</strong>, because the current is built from $r$ and the bracket and the discarded group contains neither in a form that enters the Noether computation.</p>
 <p><strong>Its conservation is the phase's Euler–Lagrange equation</strong>, so the limit cannot spoil it: the transport equation is not a consequence of the dynamics but the variation itself. That is the free article's statement with the mechanical current, and the connection changes neither the logic nor the status.</p>
 <p><strong>The sign is indefinite and the potential moves the boundary.</strong></p>
 <p>$$
-\rho_{\mathrm{chg}}=\frac{\rho_{\mathrm{num}}}{mc^{2}}\bigl(E+\varkappa\varphi\bigr) .
+\rho_{\mathrm{chg}}=\frac{\rho_{\mathrm{num}}}{mc^{2}}\bigl(E+ϙ\varphi\bigr) .
 $$</p>
 <p>The bracket is the mechanical energy; the potential shifts the value at which it changes sign and does not remove the sign change. <strong>The limit preserves the defect exactly</strong>, and the action shows why: the defect is a power of the velocity, the truncation removes a term that is even in it, and an even term cannot repair an odd one.</p>
 <p><strong>The energy stays positive.</strong> In the truncated theory</p>
 <p>$$
-T^{00}_{\mathrm{trunc}}=\frac{\rho_{\mathrm{num}}}{\hbar^{2}}\Bigl[\bigl(\partial_{r'_t}S-\varkappa a'_t\bigr)^{2}+\bigl\lvert\nabla S+\varkappa\vec A\bigr\rvert^{2}\Bigr]+k_m^{2}\rho_{\mathrm{num}}>0 ,
+T^{00}_{\mathrm{trunc}}=\frac{\rho_{\mathrm{num}}}{\hbar^{2}}\Bigl[\bigl(\partial_{r'_t}S-ϙ a'_t\bigr)^{2}+\bigl\lvert\nabla S+ϙ\vec A\bigr\rvert^{2}\Bigr]+k_m^{2}\rho_{\mathrm{num}}>0 ,
 $$</p>
 <p>which is a sum of squares times a positive density. <strong>The truncated energy is dust's energy in a field</strong>, and the discarded terms are the fluid's internal stress. The charge is odd in the mechanical energy and the energy is even in it, in the coupled theory as in the free one.</p>
 <h2 id="what-the-variational-route-adds">What the Variational Route Adds</h2>
@@ -187,9 +192,9 @@ $$</p>
 <h2 id="the-two-limits-and-what-each-orders">The Two Limits, and What Each Orders</h2>
 <p><strong>The relativistic limit and the semiclassical limit act on different objects.</strong> The nonrelativistic limit divides out the rest phase and drops the kinetic energy's square against the rest energy; the semiclassical limit drops the amplitude's gradient. In the coupled theory the connection enters both, and in both it enters at full strength.</p>
 <p><strong>At leading order the two limits commute</strong>, and the final pair is the coupled Schrödinger limit's pair. At the order of the discarded term they do not: the semiclassical-first path has a Lorentz dust midway, the nonrelativistic-first path has a charged quantum fluid midway, and the two are different objects.</p>
-<p><strong>One inequality, and it is the article's practical statement.</strong> The limit's smallness is $\delta$ and the field's smallness is $\varkappa\lvert\tilde A\rvert/\lvert\vec p\rvert$. They are independent, so a field can be deep in the semiclassical regime and dominated by its connection, which is the ordinary case in a laboratory. <strong>That independence is why the coupled limit is a separate article and not a paragraph of the free one.</strong></p>
+<p><strong>One inequality, and it is the article's practical statement.</strong> The limit's smallness is $\epsilon$ and the field's smallness is $ϙ\lvert\tilde A\rvert/\lvert\vec p\rvert$. They are independent, so a field can be deep in the semiclassical regime and dominated by its connection, which is the ordinary case in a laboratory. <strong>That independence is why the coupled limit is a separate article and not a paragraph of the free one.</strong></p>
 <h2 id="summary">Summary</h2>
-<p>The coupled polar action is the free polar action with the bracket replaced by the covariant one, and the replacement produces a linear and a quadratic interaction term from one square. With the rest energy in the phase, the amplitude's gradient is order $\delta^{2}=1/(k_mL)^{2}$ against the rest term, while the interaction terms are ordered by $\varkappa\lvert\tilde A\rvert/\lvert\vec p\rvert$ and $(\varkappa\lvert\tilde A\rvert/mc)^{2}$ — ratios of the field, which the limit does not touch. The limit drops the amplitude's gradient group and nothing else.</p>
+<p>The coupled polar action is the free polar action with the bracket replaced by the covariant one, and the replacement produces a linear and a quadratic interaction term from one square. With the rest energy in the phase, the amplitude's gradient is order $\epsilon^{2}=1/(k_\Phi L)^{2}$ against the phase's, and order $\delta^{2}=1/(k_mL)^{2}$ against the rest term, while the interaction terms are ordered by $ϙ\lvert\tilde A\rvert/\lvert\vec p\rvert$ and $(ϙ\lvert\tilde A\rvert/mc)^{2}$ — ratios of the field, which the limit does not touch. The limit drops the amplitude's gradient group and nothing else.</p>
 <p>The truncated action's variations are the mechanical eikonal and the covariant transport equation, exactly, and the truncated action is gauge invariant because the discarded group is a functional of $r$ alone. The constraint structure is the free one: $p_r$ vanishes identically, and the secondary constraint is the mechanical mass shell, which is gauge invariant as an equation. The current is the exact mechanical one, its conservation is the phase's own variation, its sign is indefinite, and the truncated energy is dust's and positive. The limit orders the amplitude and not the field; it commutes with the gauge transformation; and the term it must not be confused with — the quadratic interaction — is the term that a naive "current times potential" truncation would drop.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -209,23 +214,27 @@ $$</p>
 <td>The amplitude's gradient; the only group dropped</td>
 </tr>
 <tr>
-<td>$\rho_{\mathrm{num}}\bigl[(\partial S-\varkappa a'_t)^{2}-\lvert\nabla S+\varkappa\vec A\rvert^{2}\bigr]/\hbar^{2}$</td>
+<td>$\rho_{\mathrm{num}}\bigl[(\partial S-ϙ a'_t)^{2}-\lvert\nabla S+ϙ\vec A\rvert^{2}\bigr]/\hbar^{2}$</td>
 <td>The density times the mechanical bracket; kept</td>
 </tr>
 <tr>
-<td>$-2\varkappa\rho_{\mathrm{num}}(a'_t\partial S+\vec A\cdot\nabla S)/\hbar^{2}$</td>
+<td>$-2ϙ\rho_{\mathrm{num}}(a'_t\partial S+\vec A\cdot\nabla S)/\hbar^{2}$</td>
 <td>The linear interaction; kept</td>
 </tr>
 <tr>
-<td>$\varkappa^{2}\rho_{\mathrm{num}}(a'^{2}_{t}-\lvert\vec A\rvert^{2})/\hbar^{2}$</td>
+<td>$ϙ^{2}\rho_{\mathrm{num}}(a'^{2}_{t}-\lvert\vec A\rvert^{2})/\hbar^{2}$</td>
 <td>The quadratic interaction; kept, and required by gauge invariance</td>
 </tr>
 <tr>
-<td>$\delta=1/(k_mL)$</td>
+<td>$\epsilon=1/(k_\Phi L)$</td>
 <td>The parameter of the limit</td>
 </tr>
 <tr>
-<td>$\varkappa\lvert\tilde A\rvert/\lvert\vec p\rvert$, $(\varkappa\lvert\tilde A\rvert/mc)^{2}$</td>
+<td>$\delta=1/(k_mL)=\epsilon\lvert\vec p\rvert/(mc)$</td>
+<td>The one-particle ratio; implied</td>
+</tr>
+<tr>
+<td>$ϙ\lvert\tilde A\rvert/\lvert\vec p\rvert$, $(ϙ\lvert\tilde A\rvert/mc)^{2}$</td>
 <td>The field's ratios; not ordered by the limit</td>
 </tr>
 <tr>

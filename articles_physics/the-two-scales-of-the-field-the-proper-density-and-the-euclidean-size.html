@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Two Scales of the Field: the Proper Density and the Euclidean Size — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-two-scales-of-the-field-the-proper-density-and-the-euclidean-size"><strong>The Two Scales of the Field: the Proper Density and the Euclidean Size</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The fluid block calls one number the density and never asks what the field's size is.</strong> The polar word writes $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$, and every article of the block reads the scale $r$ as the density, $\rho_{\mathrm{num}}=r^{2}$. The element also has a second number, the Euclidean size $\langle\tilde\Xi\rangle_{*}=\sum_\mu\lvert\Xi_\mu\rvert^{2}$, which the algebra supplies without a chart and which no article of the block uses.</p>
+<p><strong>The two numbers are not equal, and their ratio is the boost.</strong> Off the null cone,</p>
+<p>$$
+\frac{\langle\tilde\Xi\rangle_{*}}{\lvert N(\tilde\Xi)\rvert}=\cosh\theta_{\mathrm{rpd}},
+\qquad
+\rho_{\mathrm{num}}=\lvert N(\tilde\Xi)\rvert=r^{2},
+$$</p>
+<p>so the proper density is the Euclidean size divided by the fluid's own Lorentz factor. The ratio is exact and not an approximation, and it is the same rapidity the velocity is built from.</p>
+<p><strong>Three consequences, and they are the article.</strong> First, the Euclidean size is not a second and looser notion of density: at the spinor rung it is the time component of the block's own number current over $c$, up to the algebra's $i$, so the two numbers are the invariant length and the time component of one four-vector. Second, at the scalar rungs the ratio is identically one, because a central element has no second real dimension to be non-parallel to; that is why the block could be written below the spinor rung and exhibit none of this. Third, on the null cone the ratio has no value and diverges along every approach to it, while the Euclidean size stays at the field's full size: the chart's density vanishes where the field does not.</p>
+<p><strong>What is new here, stated plainly.</strong> The identity $\langle\tilde Q\rangle_{*}^{2}=\lvert N(\tilde Q)\rvert^{2}+4A^{2}$ is Lagrange's identity in $\mathbb{R}^{4}$, applied to the real and imaginary four-vectors of the coefficients; it is classical, and no algebraic theorem is claimed. The contribution is interpretive and organizational: the corpus has one number under two names, $r^{2}$ and $r^{2}\cosh\theta_{\mathrm{rpd}}$, and two articles spell it differently without a stated relation. <strong>This article supplies the relation, identifies which name belongs to which quantity, and records what each name does at the cone.</strong> Two further statements are proved here and are not quotations: the transformation law of §<em>Transformation Properties</em>, which shows that the Euclidean size is the time component and the modulus the invariant length, and the factor of two between the spinor and vector carriers of §<em>The Factor of Two, and the Two Carriers</em>.</p>
+<p><strong>Status.</strong> The identities are proved in §<em>Appendix: The Algebra</em> from the eight real coordinates. The numerical values quoted throughout were computed independently of the word's parameters, from the eight real coordinates, and their residuals are collected in §<em>Appendix: The Algebra</em>, §<em>The Numerical Checks</em>; they confirm the algebra and are not a substitute for it. The polar word, its four factors and the density $\rho_{\mathrm{num}}=r^{2}$ are <a href="the-relativistic-quantum-space-as-a-fluid.html">The Relativistic Quantum Space as a Fluid</a>; the current and its reading are <a href="the-spin-fluid-of-the-biquaternion-dirac-field.html">The Spin Fluid of the Biquaternion Dirac Field</a>; the ratio of the two invariants as a rapidity is <a href="the-hamilton-pairing-mass-as-modulus-and-the-complex-angle.html">The Hamilton Pairing: Mass as Modulus and the Complex Angle</a> for the vector case, and this article supplies the spinor case and the factor of two between them; the cone is <a href="../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html">N-Regularity and N-Degeneracy in the Biquaternion Algebra</a> and <a href="the-meaning-of-n-regularity-and-degeneracy.html">The Meaning of N-Regularity and Degeneracy</a>; the degenerate factorisation is <a href="../articles_maths/the-polar-decomposition-of-an-n-degenerate-biquaternion.html">The Polar Decomposition of an N-Degenerate Biquaternion</a>.</p>
+<h2 id="conventions-and-notation">Conventions and Notation</h2>
+<p><strong>The element.</strong> $\tilde Q=Q_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ with $Q_\mu\in\mathbb{C}$, the product fixed by $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$ and $\vec e_k^{2}=-e_t$, the scalar $i$ central. The symbol $e_t$ is the algebra's unit, not a time coordinate; $E$ and $t$ are reserved for energy and coordinate time, so no confusion arises.</p>
+<p><strong>The two norms.</strong> $N(\tilde Q)=\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$ is the <strong>quaternionic norm</strong>: complex-valued, multiplicative, vanishing on the zero-divisor cone $\mathcal N$. $\langle\tilde Q\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ is the <strong>Euclidean size</strong>, also called the Hermitian norm $H$: real, non-negative, definite. $\mathrm{Sc}\,\tilde Q=Q_t$ is the scalar part and $\vec Q$ the vector part, so $\tilde Q=Q_t+\vec Q$.</p>
+<p><strong>The two cases.</strong> An element is <strong>$N$-regular</strong> when $N(\tilde Q)\neq0$, which is exactly when it is invertible; it is <strong>$N$-degenerate</strong> when $N(\tilde Q)=0$ with $\tilde Q\neq0$, which is a zero divisor <a href="../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html">N-Regularity and N-Degeneracy in the Biquaternion Algebra</a>. The degenerate set is the <strong>null cone</strong> $\mathcal N$, one complex equation and therefore two real equations, of real codimension two.</p>
+<p><strong>The polar word.</strong> On the regular elements, and only there, $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $r>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ the central phase, $\tilde U_{\Psi,\mathrm b}$ the <strong>boost factor</strong>, $\tilde u_{\mathrm r}$ the rotor <a href="../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html">The Polar Decomposition of an N-Regular Biquaternion</a>. With $\vec u_{\mathrm b}$ a real unit pure quaternion, $\vec u_{\mathrm b}^{2}=-e_t$, the boost factor is</p>
+<p>$$
+\tilde U_{\Psi,\mathrm b}=\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)=\cosh\frac{\theta_{\mathrm{rpd}}}{2}+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b},
+$$</p>
+<p>with $\theta_{\mathrm{rpd}}\ge0$ the <strong>rapidity</strong>. The half-angle in the exponent is the subject of §<em>The Factor of Two, and the Two Carriers</em>.</p>
+<p><strong>The two names for the density.</strong> The block's fluid articles write $\rho_{\mathrm{num}}=r^{2}$ and call it the <strong>proper density</strong>. The polar-variable articles write $n=r^{2}\cosh\theta_{\mathrm{rpd}}$ and call it the <strong>density</strong> <a href="the-coupled-dirac-equation-in-biquaternionic-polar-variables.html">The Coupled Dirac Equation in Biquaternionic Polar Variables</a>. This article shows that the first is the invariant length of the current over $c$ and the second its time component over $c$, and proposes no change of letters: <strong>the two names stay, and the relation between them is the subject.</strong></p>
+<p><strong>Units.</strong> The field $\tilde\Xi$ carries the amplitude's units, $r$ and $\langle\tilde\Xi\rangle_{*}$ their square, $\rho_{\mathrm{num}}$ and $n$ the units of a number density, and $j^{0}$ density times velocity. No numerical value in this article depends on the units, all statements being ratios or identities between quantities of the same dimension.</p>
+<h2 id="the-two-numbers">The Two Numbers</h2>
+<p><strong>One element, two numbers, and they differ by the boost.</strong></p>
+<p>$$
+N(\tilde\Xi)=r^{2}e^{2i\theta_{\mathrm{pha}}},
+\qquad\text{so}\qquad
+\lvert N(\tilde\Xi)\rvert=r^{2}=\rho_{\mathrm{num}},
+$$</p>
+<p>whereas</p>
+<p>$$
+\langle\tilde\Xi\rangle_{*}=r^{2}\cosh\theta_{\mathrm{rpd}}=n .
+$$</p>
+<p><strong>The second is not a function of the four factors one at a time, and it is not multiplicative.</strong> $e_t+i\vec e_x$ and $e_t-i\vec e_x$ each have Euclidean size $2$ and their product is $0$, so $\langle\cdot\rangle_{*}$ is not a homomorphism; the modulus $N$ is. What the size does have is invariance: the phase and the rotor act on the four complex coefficients by unitary transformations and leave the size fixed, while the boost acts hyperbolically and moves it. <strong>The invariant is the modulus and the frame-dependent number is the size</strong>, which §<em>Transformation Properties</em> makes precise.</p>
+<p><strong>The two numbers on five elements.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>element</th>
+<th>$N$</th>
+<th>$\lvert N\rvert$</th>
+<th>$\langle\cdot\rangle_{*}$</th>
+<th>ratio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e_t+\vec e_x$</td>
+<td>$2$</td>
+<td>$2$</td>
+<td>$2$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$2e_t+i\vec e_z$</td>
+<td>$3$</td>
+<td>$3$</td>
+<td>$5$</td>
+<td>$5/3=1.6667$</td>
+</tr>
+<tr>
+<td>$e_t+(1+i)\vec e_x$</td>
+<td>$1+2i$</td>
+<td>$\sqrt5=2.2361$</td>
+<td>$3$</td>
+<td>$1.3416$</td>
+</tr>
+<tr>
+<td>$e_t+i\vec e_z$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$2$</td>
+<td>no value</td>
+</tr>
+<tr>
+<td>$\vec e_x+i\vec e_y$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$2$</td>
+<td>no value</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The first row is a real element, its rapidity is zero, and the two numbers agree.</strong> The second is a pure boost with $r=\sqrt3$ and $\cosh\theta_{\mathrm{rpd}}=5/3$. The third carries a central phase, which the ratio does not see. The last two are on the cone: there the ratio has no value and the Euclidean size is still two — not small, not zero, and not tending to zero.</p>
+<h2 id="the-inequality-and-what-equality-means">The Inequality, and What Equality Means</h2>
+<p><strong>The quaternionic norm never exceeds the Euclidean size in modulus.</strong></p>
+<p>$$
+\lvert N(\tilde Q)\rvert\le\langle\tilde Q\rangle_{*},
+$$</p>
+<p>with equality exactly when the four coefficients have a common argument modulo $\pi$, that is when $\tilde Q=\varkappa\tilde R$ with $\varkappa$ a complex unit and $\tilde R$ real.</p>
+<p><em>Proof.</em> $\lvert\sum_\mu Q_\mu^{2}\rvert\le\sum_\mu\lvert Q_\mu\rvert^{2}$ is the triangle inequality, since $\lvert Q_\mu^{2}\rvert=\lvert Q_\mu\rvert^{2}$. Equality in the triangle inequality needs the summands to be non-negative real multiples of one another, $Q_\mu^{2}=\varkappa^{2}r_\mu^{2}$ with $\varkappa$ a fixed unit and $r_\mu\ge0$; then $Q_\mu=\varkappa\,\epsilon_\mu r_\mu$ with $\epsilon_\mu=\pm1$, and the signs are absorbed into real coefficients. <strong>The full derivation, including the sign bookkeeping, is §<em>Appendix: The Algebra</em>, §<em>The Triangle Inequality</em>.</strong></p>
+<p><strong>So the inequality is the statement that a boost costs Euclidean size at fixed modulus.</strong> The word's scale is a modulus and its velocity a direction, and the Euclidean size charges for the direction. <strong>That is why the ratio can be read as a kinematic quantity at all</strong>: it is not an arbitrary function of eight real numbers, it is the price of the velocity, and §<em>Transformation Properties</em> shows that the price transforms as a time component.</p>
+<h2 id="the-gap-is-the-boost">The Gap Is the Boost</h2>
+<p><strong>Write the element as two real four-vectors.</strong> Put $Q_\mu=a_\mu+ib_\mu$ with $a,b\in\mathbb{R}^{4}$. Then</p>
+<p>$$
+N(\tilde Q)=\bigl(\lvert a\rvert^{2}-\lvert b\rvert^{2}\bigr)+2i\,a\cdot b,
+\qquad
+\langle\tilde Q\rangle_{*}=\lvert a\rvert^{2}+\lvert b\rvert^{2},
+$$</p>
+<p>a difference of squares and a sum of squares of the same two lengths: a Lorentzian pair. The missing piece is the angle between them, and it enters through the Lagrange identity in $\mathbb{R}^{4}$:</p>
+<p>$$
+\langle\tilde Q\rangle_{*}^{2}=\lvert N(\tilde Q)\rvert^{2}+4A^{2},
+\qquad
+A^{2}=\sum_{j\lt k}\bigl(a_jb_k-a_kb_j\bigr)^{2}=\lvert a\rvert^{2}\lvert b\rvert^{2}-(a\cdot b)^{2},
+$$</p>
+<p>with $A$ the area of the parallelogram spanned by $a$ and $b$, the sum running over the six coordinate planes of $\mathbb{R}^{4}$. <strong>The two forms of $A^{2}$ are quoted together because the first displays the geometry and the second is what makes the identity algebraic.</strong> The symbol $A$ is the area; the Proca potential $\tilde A_\Phi$ carries a tilde and a label and is a different object.</p>
+<p><em>Proof.</em> $\lvert N\rvert^{2}=(\lvert a\rvert^{2}-\lvert b\rvert^{2})^{2}+4(a\cdot b)^{2}$ and $\langle\cdot\rangle_{*}^{2}=(\lvert a\rvert^{2}+\lvert b\rvert^{2})^{2}$, so the difference is $4(\lvert a\rvert^{2}\lvert b\rvert^{2}-(a\cdot b)^{2})$, and Lagrange's identity turns the bracket into the sum over pairs. <strong>Every step is in §<em>Appendix: The Algebra</em>, §<em>The Lagrange Identity</em>.</strong></p>
+<p><strong>Divide by $\lvert N\rvert^{2}$ and the square is a hyperbolic identity.</strong></p>
+<p>$$
+\Bigl(\frac{\langle\tilde Q\rangle_{*}}{\lvert N\rvert}\Bigr)^{2}-\Bigl(\frac{2A}{\lvert N\rvert}\Bigr)^{2}=1,
+\qquad\text{hence}\qquad
+\cosh\theta_{\mathrm{rpd}}=\frac{\langle\tilde Q\rangle_{*}}{\lvert N\rvert},\quad
+\tanh\theta_{\mathrm{rpd}}=\frac{2A}{\langle\tilde Q\rangle_{*}} ,
+$$</p>
+<p>for an element off the cone and $N$-regular.</p>
+<p><strong>What the second display says and does not say.</strong> It says that the parametrisation is hyperbolic: the pair $(\langle\cdot\rangle_{*},2A)$ lies on a hyperbola of radius $\lvert N\rvert$, and $\tanh\theta\le1$ is a property of that hyperbola. <strong>It does not derive physical causality.</strong> A velocity bound follows only after the identification of $\vec v/c$ with a tangent of this angle, which is the fluid reading's input and not the algebra's output. Within the reading the bound is automatic; as a statement about Nature it is a statement about the reading.</p>
+<p><strong>Measured on three boosted elements with $r=1.3$, $\theta_{\mathrm{pha}}=0.4$.</strong> The second column is computed from the eight real coordinates alone, the third from the word's parameter:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\theta_{\mathrm{rpd}}$</th>
+<th>$\langle\cdot\rangle_{*}/\lvert N\rvert$</th>
+<th>$\cosh\theta_{\mathrm{rpd}}$</th>
+<th>$2A/\langle\cdot\rangle_{*}$</th>
+<th>$\tanh\theta_{\mathrm{rpd}}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0.5493$</td>
+<td>$1.1547005$</td>
+<td>$1.1547005$</td>
+<td>$0.5000000$</td>
+<td>$0.5000000$</td>
+</tr>
+<tr>
+<td>$1.0986$</td>
+<td>$1.6666667$</td>
+<td>$1.6666667$</td>
+<td>$0.8000000$</td>
+<td>$0.8000000$</td>
+</tr>
+<tr>
+<td>$3.0000$</td>
+<td>$10.0676620$</td>
+<td>$10.0676620$</td>
+<td>$0.9950548$</td>
+<td>$0.9950548$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Both columns agree to the seven decimals printed, a residual below $5\times10^{-8}$, and that agreement is a check of the identity and not its proof.</strong></p>
+<h2 id="transformation-properties">Transformation Properties</h2>
+<p><strong>The distinction the words "size" and "density" carry is a distinction under boosts, so the two numbers must be followed through one.</strong> Take an $N$-regular element $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}(c_h+is_h\vec u_{\mathrm b})$ with $c_h=\cosh\frac{\theta_{\mathrm{rpd}}}{2}$, $s_h=\sinh\frac{\theta_{\mathrm{rpd}}}{2}$, and act on the left by a boost factor of rapidity $\phi$ about the real unit axis $\vec u_{\phi}$,</p>
+<p>$$
+\tilde U_{\mathrm b}(\phi,\vec u_{\phi})=\cosh\frac{\phi}{2}+i\sinh\frac{\phi}{2}\vec u_{\phi} .
+$$</p>
+<p><strong>The modulus does not move.</strong> $N(\tilde U_{\mathrm b}\tilde\Xi)=N(\tilde U_{\mathrm b})N(\tilde\Xi)$ and $N(\tilde U_{\mathrm b})=\cosh^{2}\frac\phi2-\sinh^{2}\frac\phi2=1$, so</p>
+<p>$$
+\lvert N(\tilde\Xi')\rvert=\lvert N(\tilde\Xi)\rvert=r^{2}:\quad\text{the invariant length is invariant.}
+$$</p>
+<p><strong>The Euclidean size moves as a time component.</strong> With $\chi$ the angle between $\vec u_{\mathrm b}$ and $\vec u_{\phi}$,</p>
+<p>$$
+\langle\tilde\Xi'\rangle_{*}=r^{2}\Bigl(\cosh\theta_{\mathrm{rpd}}\cosh\phi+\sinh\theta_{\mathrm{rpd}}\sinh\phi\cos\chi\Bigr),
+$$</p>
+<p>which is $\gamma_\phi\bigl(u^{0}+\beta_\phi\,\vec u_{\phi}\cdot\vec u\bigr)$ for the four-velocity $u^{\mu}=(\cosh\theta_{\mathrm{rpd}},\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b})$, scaled by $r^{2}$. <strong>The two special cases are the memorable ones</strong>: for a boost along the flow, $\langle\tilde\Xi'\rangle_{*}=r^{2}\cosh(\theta_{\mathrm{rpd}}+\phi)$, the rapidity adding; for a boost perpendicular to it, $\langle\tilde\Xi'\rangle_{*}=r^{2}\cosh\theta_{\mathrm{rpd}}\cosh\phi$, the two Lorentz factors multiplying. <em>Proof and residuals: §</em>Appendix: The Algebra<em>, §</em>The Boost Composition<em>.</em></p>
+<p><strong>So the ratio is the flow's Lorentz factor and transforms as one.</strong> $\langle\tilde\Xi\rangle_{*}/\lvert N\rvert=\cosh\theta_{\mathrm{rpd}}$ is the time component of the four-velocity, and the sentence "the Euclidean size is the coordinate density" is the statement that a coordinate density is a time component. <strong>$\lvert N\rvert$ is a scalar of the theory; $\langle\cdot\rangle_{*}$ is not</strong>, and the phrase "the field's size" is therefore misleading wherever it appears in the block: the field has no Lorentz-invariant <strong>Euclidean</strong> size, it has an invariant modulus and a frame-dependent time component.</p>
+<p><strong>Verified on five angles and three boosts.</strong> With $r=1$, $\theta_{\mathrm{rpd}}=1.0986$, $\phi=0.7$, the measured $\langle\tilde\Xi'\rangle_{*}$ and the displayed law agree to $1.3\times10^{-15}$ at $\chi=0^{\circ},30^{\circ},60^{\circ},90^{\circ},180^{\circ}$, and $\lvert N\rvert$ stays at $1$ to $2\times10^{-16}$ throughout.</p>
+<h2 id="the-elements-size-is-the-currents-time-component">The Element's Size Is the Current's Time Component</h2>
+<p><strong>At the spinor rung the Euclidean size is already in the block, under another name.</strong> The current is $\tilde J_\Phi=\rho_{\mathrm{num}}\tilde V_\Phi$ with $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}$ <a href="the-spin-fluid-of-the-biquaternion-dirac-field.html">The Spin Fluid of the Biquaternion Dirac Field</a>, where</p>
+<p>$$
+\tilde U_{\Psi,\mathrm b}^{-2}=\cosh\theta_{\mathrm{rpd}}-i\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b},
+\qquad
+\tilde J_\Phi=ic\gamma\rho_{\mathrm{num}}\,e_t+\rho_{\mathrm{num}}\gamma\vec v .
+$$</p>
+<p><strong>The scalar part carries the $i$, and the $i$ is the corpus's, not a slip.</strong> The time component of the corpus's four-vectors is written with an imaginary coefficient, $\tilde P_\Phi=i\frac{E}{c}e_t+\vec p$ <a href="the-material-sector-four-vectors-interval-and-lorentz-action.html">The Material Sector</a>, so the coefficient of $e_t$ in a current is $i$ times the physical time component. Hence</p>
+<p>$$
+\mathrm{Sc}(\tilde J_\Phi)=ic\,\gamma\rho_{\mathrm{num}}=ic\,\langle\tilde\Xi\rangle_{*},
+\qquad\text{so}\qquad
+\langle\tilde\Xi\rangle_{*}=\frac{\mathrm{Sc}(\tilde J_\Phi)}{ic}=\frac{j^{0}}{c},
+$$</p>
+<p>with $j^{0}=\gamma\rho_{\mathrm{num}}c=\mathrm{Im}\,\mathrm{Sc}(\tilde J_\Phi)$ the real time component. <strong>The first display is the form to quote; the bare $\mathrm{Sc}(\tilde J_\Phi)/c$ is wrong by a factor $i$ and would give an imaginary density.</strong></p>
+<p><strong>Checked on three words</strong>, with $r=1.3$, $\theta_{\mathrm{pha}}=0.4$ and $\theta_{\mathrm{rpd}}\in\{0,1.0986\}$, and with $r=0.7$, $\theta_{\mathrm{pha}}=-2$, $\theta_{\mathrm{rpd}}=2.5$: the two sides of the second display agree to $4\times10^{-16}$, and $\mathrm{Re}\,\mathrm{Sc}(\tilde J_\Phi)$ vanishes to $0$.</p>
+<p><strong>Write the current's components plainly.</strong> The element $\tilde J_\Phi$ is the corpus's biquaternion current, whose scalar coefficient is $i$ times the physical time component. Put $j^{0}=\gamma\rho_{\mathrm{num}}c$ for the number density times $c$ and $\vec j=\gamma\rho_{\mathrm{num}}\vec v$ for the flux, so that $\tilde J_\Phi=ij^{0}e_t+\vec j$. <strong>Then $\mathrm{Sc}(\tilde J_\Phi)=ij^{0}$ and $\langle\tilde\Xi\rangle_{*}=j^{0}/c$</strong>, the second display of this section.</p>
+<p><strong>So the pair of numbers is one four-vector's invariant length and time component.</strong> The proper density is the invariant length over $c$; the Euclidean size is the time component over $c$; the ratio is the Lorentz factor of the flow that carries it. <strong>The spatial components of the current are not discussed here</strong> and are not implied by any statement above: what is claimed is the pair $(j^{0},\lvert j\rvert)$ against the two numbers, and only through the standard relation $j^{0}=\gamma\rho c$ which the corpus's $\tilde V_\Phi$ already states.</p>
+<p><strong>Two names, and one letter twice.</strong> A reader who takes $\rho_{\mathrm{num}}=r^{2}$ for the field's size is reading $j^{0}/\gamma$; a reader who takes $n$ for the proper density is reading $j^{0}/c$ unnormalised. <strong>Neither name is wrong and the pair is the standard one; the error is to use one where the other is meant</strong>, and it costs exactly the factor $\cosh\theta_{\mathrm{rpd}}$ — one at rest, and unbounded near the cone, which is precisely the regime where the two are confused.</p>
+<h2 id="the-scalar-rungs-show-nothing">The Scalar Rungs Show Nothing</h2>
+<p><strong>A central element has $a$ and $b$ collinear, so the parallelogram is degenerate and the two numbers coincide.</strong></p>
+<p>$$
+\tilde\Xi=\Xi_t e_t,\quad a=(\mathrm{Re}\,\Xi_t,0,0,0),\quad b=(\mathrm{Im}\,\Xi_t,0,0,0)
+\quad\Longrightarrow\quad A=0,\quad \langle\tilde\Xi\rangle_{*}=\lvert N(\tilde\Xi)\rvert .
+$$</p>
+<p><strong>The reason is dimensional and not dynamical.</strong> A central element's eight real coordinates occupy a two-dimensional real subspace, and the real and imaginary parts lie on the same real line through the origin, so the parallelogram they span has no area. No boost exists in one complex dimension, so $\cosh\theta_{\mathrm{rpd}}=1$ identically and the Schrödinger and Klein–Gordon rungs have one scale and not two.</p>
+<p><strong>That is why the block could be written for the scalar rungs and say nothing about this.</strong> Every statement about the two scales is invisible below the spinor rung, and the three quantities that separate them — the boost, the velocity and the $\gamma$ — are exactly the ones the first-order rung does not have. <strong>The two scales appear when the element stops being central and not before</strong>, which is the same threshold at which the block's fluid equations acquire the spin terms that keep them from closing. <em>Why they do not close is <a href="the-spin-fluid-of-the-biquaternion-dirac-field.html">The Spin Fluid of the Biquaternion Dirac Field</a>, §on the non-closure of the three bilinears, and is not re-derived here.</em></p>
+<h2 id="on-the-cone-the-ratio-has-no-value">On the Cone the Ratio Has No Value</h2>
+<p><strong>The polar word exists exactly on the $N$-regular set</strong>, so on the cone the ratio $\langle\tilde\Xi\rangle_{*}/\lvert N(\tilde\Xi)\rvert$ is not merely large: it has no value. <strong>It diverges along every approach to a nonzero point of the cone</strong>, that is along every path on which the limiting Euclidean size is nonzero; a path whose amplitude also goes to zero can give any ratio at all, and carries no information, because it leaves the field's own value as well as the chart. The two numbers behave in opposite ways at fixed field size:</p>
+<p>$$
+\rho_{\mathrm{num}}=\lvert N\rvert\longrightarrow0,
+\qquad
+\langle\tilde\Xi\rangle_{*}=r^{2}\cosh\theta_{\mathrm{rpd}}\longrightarrow\langle\tilde\Xi\rangle_{*}\neq0 .
+$$</p>
+<p><strong>The gap is unbounded and the field is not small.</strong> A chiral field with $\tilde\Xi\vec e_z=-i\tilde\Xi$ is the clean case: $N=0$ and $\langle\tilde\Xi\rangle_{*}=2$ for $\tilde\Xi=e_t+i\vec e_z$, with no word to read.</p>
+<p><strong>The cone is reached at infinite rapidity with a vanishing scale.</strong> The massless path is</p>
+<p>$$
+r\longrightarrow0,\qquad
+\theta_{\mathrm{rpd}}\longrightarrow\infty,\qquad
+r\cosh\frac{\theta_{\mathrm{rpd}}}{2},\ r\sinh\frac{\theta_{\mathrm{rpd}}}{2}\ \text{finite},
+$$</p>
+<p>which sends $\rho_{\mathrm{num}}\to0$ and $\langle\tilde\Xi\rangle_{*}\to$ twice the square of the surviving half-amplitude. For the chiral element the two halves are $1$ and $1$, so the Euclidean size is $2$ in the limit and $j^{0}/c$ is $2$.</p>
+<p><strong>So the cone is where the ratio is undefined and the pair is not.</strong> $\cosh\theta_{\mathrm{rpd}}$ diverges and $r^{2}$ vanishes separately while $\langle\tilde\Xi\rangle_{*}$ is continuous: <strong>a limit taken on the ratio is meaningless and a limit taken on the pair $(\rho_{\mathrm{num}},\langle\tilde\Xi\rangle_{*})$ is not.</strong> That is the boundary-value statement of <a href="the-massless-limit-as-a-boundary-value-of-the-polar-word.html">The Massless Limit as a Boundary Value of the Polar Word</a>, read as a statement about two numbers instead of about the word.</p>
+<h2 id="what-each-variable-becomes">What Each Variable Becomes</h2>
+<p><strong>The chart's variables and the algebra's numbers on the two regions.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>quantity</th>
+<th>off the cone</th>
+<th>on the cone</th>
+<th>reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\rho_{\mathrm{num}}=r^{2}=\lvert N\rvert$</td>
+<td>$>0$</td>
+<td>$0$</td>
+<td>the norm vanishes</td>
+</tr>
+<tr>
+<td>$\langle\tilde\Xi\rangle_{*}$</td>
+<td>$\ge\rho_{\mathrm{num}}$</td>
+<td>$>0$</td>
+<td>definite on the whole algebra</td>
+</tr>
+<tr>
+<td>$n=r^{2}\cosh\theta_{\mathrm{rpd}}$</td>
+<td>$=\langle\tilde\Xi\rangle_{*}$</td>
+<td>$=\langle\tilde\Xi\rangle_{*}$</td>
+<td>the same number throughout</td>
+</tr>
+<tr>
+<td>$\cosh\theta_{\mathrm{rpd}}$</td>
+<td>finite, $\ge1$</td>
+<td>no value</td>
+<td>the word's factor does not exist</td>
+</tr>
+<tr>
+<td>$\vec v=c\tanh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}$</td>
+<td>$\lvert\vec v\rvert=c\tanh\theta_{\mathrm{rpd}}\lt c$</td>
+<td>the word does not exist; $\lvert\vec v\rvert\to c$ along the limiting flow</td>
+<td>the boost cannot be normalised</td>
+</tr>
+<tr>
+<td>$r$</td>
+<td>$>0$</td>
+<td>$0$</td>
+<td>the modulus does not exist</td>
+</tr>
+<tr>
+<td>$A$</td>
+<td>$\le\langle\tilde\Xi\rangle_{*}/2$</td>
+<td>$=\langle\tilde\Xi\rangle_{*}/2$</td>
+<td>equality is $\tanh\theta=1$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The fourth and seventh rows are one statement.</strong> A zero divisor has $\lvert N\rvert=0$ and $A=\langle\cdot\rangle_{*}/2$, so its pair $(a,b)$ spans a maximal parallelogram: <strong>the real and imaginary parts of a zero divisor are as non-parallel as two vectors of fixed lengths can be</strong>, and the flow that would carry it moves at $c$ in the limit.</p>
+<h2 id="rung-by-rung">Rung by Rung</h2>
+<p><strong>The four rungs, with the angle at which the boost sits in the element.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>rung</th>
+<th>element</th>
+<th>$\langle\cdot\rangle_{*}/\lvert N\rvert$</th>
+<th>the density in use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Schrödinger, Klein–Gordon</td>
+<td>central</td>
+<td>$1$</td>
+<td>$\rho_{\mathrm{num}}=r^{2}$</td>
+</tr>
+<tr>
+<td>spin, spinor</td>
+<td>$\tilde\Xi$</td>
+<td>$\cosh\theta_{\mathrm{rpd}}$</td>
+<td>$\rho_{\mathrm{num}}=r^{2}$ and $n=r^{2}\cosh\theta_{\mathrm{rpd}}$</td>
+</tr>
+<tr>
+<td>Proca, spin one</td>
+<td>$\tilde A_\Phi$ timelike</td>
+<td>$\cosh2\theta_{\mathrm{rpd}}$</td>
+<td>$r=mc=\sqrt{-N(\tilde A_\Phi)}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The scalar rows have one number and the other two have two.</strong> The vector row's ratio is the spinor's at doubled rapidity for a timelike potential boosted from rest by $\theta_{\mathrm{rpd}}$. There</p>
+<p>$$
+N(\tilde A_\Phi)=-m^{2}c^{2},\qquad r=mc=\sqrt{-N(\tilde A_\Phi)},\qquad \langle\tilde A_\Phi\rangle_{*}=m^{2}c^{2}\cosh2\theta_{\mathrm{rpd}},
+$$</p>
+<p>so the modulus is the mass and the density is the mass, $r^{2}=m^{2}c^{2}$, while the Euclidean size is the energy squared over $c^{2}$ at that rapidity. <strong>The sign in $\sqrt{-N(\tilde A_\Phi)}$ is what makes $r$ real and positive on the timelike branch</strong>, where the norm is negative <a href="the-proca-fluid.html">The Proca Fluid</a>; writing $\sqrt{-A^{2}}$ with the corpus's shorthand $A^{2}=A_\mu A^\mu$ invites a collision with the area and is not used here. <strong>Each middle column is an exact identity for its carrier; the difference between the rows is the action of the boost on that carrier, and not a hierarchy of accuracy.</strong></p>
+<h3 id="the-factor-of-two-and-the-two-carriers">The Factor of Two, and the Two Carriers</h3>
+<p><strong>One boost, two angles, and the difference is how the carrier transforms.</strong> A spinor transforms by left multiplication, $\xi\mapsto\tilde U\xi$, so a boost of rapidity $\theta_{\mathrm{rpd}}$ enters the element at half the rapidity. A four-vector transforms by congruence, $X\mapsto\tilde UX\tilde U^{*}$, so the same boost enters at the full rapidity. Hence</p>
+<p>$$
+\langle\tilde\Xi\rangle_{*}=r^{2}\cosh\theta_{\mathrm{rpd}}
+\qquad\text{on a spinor,}
+\qquad
+\langle\tilde A_\Phi\rangle_{*}=\lvert N(\tilde A_\Phi)\rvert\cosh2\theta_{\mathrm{rpd}}
+\qquad\text{on a four-vector,}
+$$</p>
+<p>both for an element boosted from rest by $\theta_{\mathrm{rpd}}$.</p>
+<p><em>Proof of the vector case.</em> Write $\tilde A_\Phi=mc\bigl(i\cosh\theta_{\mathrm{rpd}}e_t+\sinh\theta_{\mathrm{rpd}}\vec u\bigr)$, the corpus's four-vector shape with an imaginary time coefficient. Its coefficients are $imc\cosh\theta$ and $mc\sinh\theta\,u_k$, so</p>
+<p>$$
+N=(imc\cosh\theta)^{2}+(mc\sinh\theta)^{2}\sum_ku_k^{2}=-m^{2}c^{2}\bigl(\cosh^{2}-\sinh^{2}\bigr)=-m^{2}c^{2},
+$$</p>
+<p>using $\sum_ku_k^{2}=1$ and $(imc\cosh\theta)^{2}=-m^{2}c^{2}\cosh^{2}\theta$; and</p>
+<p>$$
+\langle\tilde A_\Phi\rangle_{*}=m^{2}c^{2}\bigl(\cosh^{2}+\sinh^{2}\bigr)=m^{2}c^{2}\cosh2\theta_{\mathrm{rpd}} .
+$$</p>
+<p><strong>So the ratio is $\cosh2\theta_{\mathrm{rpd}}$ and the modulus is mass-squared.</strong> The factor of two is the carrier's: the same rapidity appears doubled because the four-vector carries the boost twice, once in each factor of the congruence. <strong>This is the warning of <a href="the-hamilton-pairing-mass-as-modulus-and-the-complex-angle.html">The Hamilton Pairing</a>, that its ratio is $\cosh\theta_{\mathrm{rpd},w}$ and not $\cosh\theta_{\mathrm{rpd}}$, explained by the half-angle and not by a convention.</strong></p>
+<h2 id="limits">Limits</h2>
+<p><strong>The identities are algebraic and need no dynamics.</strong> All of them hold for one element at one event. Nothing here is an equation of motion, a conservation law, or a statement about a solution.</p>
+<p><strong>The identification of $\langle\tilde\Xi\rangle_{*}$ with $j^{0}/c$ needs a rung.</strong> It is exact at the spinor rung because the current there is $\rho_{\mathrm{num}}\tilde V_\Phi$; at the vector rung the current is the field strength's and the Euclidean size is not its time component. <strong>The identity between the two numbers is a theorem; the reading of one of them as $j^{0}/c$ is rung-specific and is proved only where it is stated.</strong></p>
+<p><strong>The speed bound is the reading's, not the algebra's.</strong> $\tanh\theta\le1$ is a property of the hyperbola $(\langle\cdot\rangle_{*},2A)$. Causality follows once $\vec v/c$ is identified with a tangent of the parametrisation, which is the fluid reading's input. <strong>The algebra cannot be used to argue for causality and this article does not.</strong></p>
+<p><strong>The factor of two belongs to the carrier.</strong> A spinor transforms by left multiplication and a four-vector by congruence, so one and the same boost sits at half-rapidity in the first and at full rapidity in the second. <strong>No normalisation is fixed here that another article could fix differently</strong>; a reader who compares the two without the carrier's action finds the factor of two and no explanation, which is the difficulty the Hamilton article records.</p>
+<p><strong>The cone is codimension two and the divergence is genuine.</strong> $\lvert N\rvert\to0$ with $\langle\cdot\rangle_{*}$ bounded is not a limit of small fields: it is a limit along a path of fixed field size on which the phase degenerates. <strong>No perturbation of the amplitude reaches it</strong>, and <a href="the-domain-of-the-fluid-reading.html">The Domain of the Fluid Reading</a> makes the same point by perturbing along all eight coordinates.</p>
+<p><strong>No statement about measurement.</strong> The two numbers are properties of the element. Whether a given configuration of a physical field puts an event on the cone is a question about the field's values, and is not settled here.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The field has two numbers and the block uses one.</strong> The modulus of the quaternionic norm is the proper density, $\rho_{\mathrm{num}}=r^{2}$; the Euclidean size is $\langle\tilde\Xi\rangle_{*}=r^{2}\cosh\theta_{\mathrm{rpd}}$; their ratio is the flow's Lorentz factor.</p>
+<p><strong>The identity is Lagrange's in four dimensions.</strong> $\langle\tilde Q\rangle_{*}^{2}=\lvert N(\tilde Q)\rvert^{2}+4A^{2}$ with $A$ the area of the parallelogram of real and imaginary parts. <strong>No new algebra is claimed</strong>; what is supplied is the relation between two names the corpus already uses and the inventory of what each name does at the cone.</p>
+<p><strong>The two numbers are one four-vector's length and time component.</strong> $\lvert N\rvert$ is invariant under a boost and $\langle\cdot\rangle_{*}$ transforms as $u^{0}$, verified at five angles to $1.3\times10^{-15}$; and at the spinor rung $\mathrm{Sc}(\tilde J_\Phi)=ic\langle\tilde\Xi\rangle_{*}$, exact to $4\times10^{-16}$, the $i$ being the corpus's imaginary time coefficient.</p>
+<p><strong>The scalar rungs cannot show it.</strong> A central element has collinear real and imaginary parts, $A=0$, the ratio is one, and no boost exists in one complex dimension. <strong>The two scales appear exactly where the element stops being central.</strong></p>
+<p><strong>On the cone the ratio has no value and the pair does.</strong> $\rho_{\mathrm{num}}\to0$, $\cosh\theta_{\mathrm{rpd}}$ diverges, $\langle\tilde\Xi\rangle_{*}$ stays at full size, and the reason is that a zero divisor's real and imaginary parts are maximally non-parallel. <strong>A limit taken on the ratio is meaningless; a limit taken on the pair is the boundary value the massless article computes.</strong></p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$N(\tilde Q)=\langle\tilde Q\rangle_{\natural}$</td>
+<td>the quaternionic norm, $\sum_\mu Q_\mu^{2}$, complex, multiplicative</td>
+</tr>
+<tr>
+<td>$\langle\tilde Q\rangle_{*}$</td>
+<td>the Euclidean size, $\sum_\mu\lvert Q_\mu\rvert^{2}$, the Hermitian norm</td>
+</tr>
+<tr>
+<td>$\mathrm{Sc}\,\tilde Q$</td>
+<td>the scalar part $Q_t$</td>
+</tr>
+<tr>
+<td>$r$</td>
+<td>the word's scale, with $r^{2}=\lvert N(\tilde\Xi)\rvert$</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{pha}}$</td>
+<td>the central phase of the word</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{rpd}}$</td>
+<td>the boost's rapidity, with $\gamma=\cosh\theta_{\mathrm{rpd}}$</td>
+</tr>
+<tr>
+<td>$\phi$, $\vec u_{\phi}$</td>
+<td>the rapidity of an applied boost and its real unit axis</td>
+</tr>
+<tr>
+<td>$\chi$</td>
+<td>the angle between that axis and the flow's axis $\vec u_{\mathrm b}$</td>
+</tr>
+<tr>
+<td>$\rho_{\mathrm{num}}=r^{2}$</td>
+<td>the proper density, the invariant length of the current over $c$</td>
+</tr>
+<tr>
+<td>$n=r^{2}\cosh\theta_{\mathrm{rpd}}$</td>
+<td>the coordinate density, $j^{0}/c$</td>
+</tr>
+<tr>
+<td>$a$, $b$</td>
+<td>the real and imaginary four-vectors of the coefficients</td>
+</tr>
+<tr>
+<td>$A$, $A^{2}$</td>
+<td>the area of the parallelogram of $a$ and $b$, with $A^{2}=\sum_{j\lt k}(a_jb_k-a_kb_j)^{2}$</td>
+</tr>
+<tr>
+<td>$\tilde A_\Phi$</td>
+<td>the Proca potential, a different object from $A$</td>
+</tr>
+<tr>
+<td>$j^{0}$, $\vec j$</td>
+<td>the current's time component and flux, with $\tilde J_\Phi=ij^{0}e_t+\vec j$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="appendix-the-algebra">Appendix: The Algebra</h2>
+<h3 id="the-triangle-inequality">The Triangle Inequality</h3>
+<p><strong>Claim.</strong> $\lvert N(\tilde Q)\rvert\le\langle\tilde Q\rangle_{*}$ for every $\tilde Q$, with equality if and only if $\tilde Q=\varkappa\tilde R$, $\varkappa$ a complex unit and $\tilde R$ real.</p>
+<p><em>Proof.</em> With $Q_\mu=r_\mu e^{i\varphi_\mu}$ and $r_\mu\ge0$, $N=\sum_\mu r_\mu^{2}e^{2i\varphi_\mu}$ and $\langle\cdot\rangle_{*}=\sum_\mu r_\mu^{2}$. The modulus of a sum is at most the sum of the moduli, each modulus being $r_\mu^{2}$. Equality holds exactly when the summands $r_\mu^{2}e^{2i\varphi_\mu}$ are non-negative real multiples of one another, so that $2\varphi_\mu\equiv2\varkappa_0$ modulo $2\pi$ for a single angle $\varkappa_0$ and every $\mu$ with $r_\mu\neq0$. That is $\varphi_\mu\equiv\varkappa_0/2$ modulo $\pi$, so $Q_\mu=\varkappa\,\epsilon_\mu r_\mu$ with $\varkappa=e^{i\varkappa_0/2}$ and $\epsilon_\mu=\pm1$, and the signs are carried by the real coefficients of $\tilde R$. Conversely a real element has all $Q_\mu$ real, its summands $Q_\mu^{2}\ge0$ real non-negative, and equality. <strong>The case of a real element is the case of a trivial boost</strong>, since $\theta_{\mathrm{rpd}}=0$ exactly when $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$ has real coefficients up to the central phase.</p>
+<h3 id="the-lagrange-identity">The Lagrange Identity</h3>
+<p><strong>Claim.</strong> $\langle\tilde Q\rangle_{*}^{2}=\lvert N(\tilde Q)\rvert^{2}+4A^{2}$ with $Q_\mu=a_\mu+ib_\mu$ and</p>
+<p>$$
+A^{2}=\sum_{j\lt k}\bigl(a_jb_k-a_kb_j\bigr)^{2}=\lvert a\rvert^{2}\lvert b\rvert^{2}-(a\cdot b)^{2},
+$$</p>
+<p>the sum over the six pairs $1\le j\lt k\le 4$.</p>
+<p><em>Proof.</em> From $Q_\mu^{2}=a_\mu^{2}-b_\mu^{2}+2ia_\mu b_\mu$,</p>
+<p>$$
+N=\bigl(\lvert a\rvert^{2}-\lvert b\rvert^{2}\bigr)+2i\,(a\cdot b),
+\qquad
+\lvert N\rvert^{2}=\bigl(\lvert a\rvert^{2}-\lvert b\rvert^{2}\bigr)^{2}+4(a\cdot b)^{2},
+$$</p>
+<p>and $\langle\cdot\rangle_{*}^{2}=(\lvert a\rvert^{2}+\lvert b\rvert^{2})^{2}$. Subtracting,</p>
+<p>$$
+\langle\cdot\rangle_{*}^{2}-\lvert N\rvert^{2}=4\bigl(\lvert a\rvert^{2}\lvert b\rvert^{2}-(a\cdot b)^{2}\bigr).
+$$</p>
+<p>Lagrange's identity in $\mathbb{R}^{4}$ reads</p>
+<p>$$
+\lvert a\rvert^{2}\lvert b\rvert^{2}-(a\cdot b)^{2}=\sum_{j\lt k}\bigl(a_jb_k-a_kb_j\bigr)^{2},
+$$</p>
+<p>the sum over the six coordinate planes. Substituting gives the claim. <strong>The bracket is non-negative, so $\langle\cdot\rangle_{*}\ge\lvert N\rvert$ follows a second time, independently of the triangle inequality.</strong></p>
+<h3 id="the-polar-ratio">The Polar Ratio</h3>
+<p><strong>Claim.</strong> $\langle\tilde\Xi\rangle_{*}=r^{2}\cosh\theta_{\mathrm{rpd}}$ and $\lvert N(\tilde\Xi)\rvert=r^{2}$ for an $N$-regular element.</p>
+<p><em>Proof.</em> The Euclidean size is <strong>not</strong> multiplicative in general — $e_t+i\vec e_x$ and $e_t-i\vec e_x$ each have size $2$ and their product is $0$ — so the factors are handled one at a time. Multiplication by the central phase multiplies every coefficient by a unit complex number and leaves $\sum_\mu\lvert Q_\mu\rvert^{2}$ fixed. Right multiplication by the real unit $\tilde u_{\mathrm r}$ acts on the four complex coefficients by the same real orthogonal $4\times4$ matrix that it induces on $\mathbb{R}^{4}$, and an orthogonal real matrix preserves $\sum_\mu\lvert Q_\mu\rvert^{2}$; the same holds for left multiplication, since the real unit quaternions act orthogonally on both sides. <strong>What remains is the boost factor alone</strong>, whose two coefficients are $\cosh\frac{\theta_{\mathrm{rpd}}}{2}$ and $i\sinh\frac{\theta_{\mathrm{rpd}}}{2}u_k$, so</p>
+<p>$$
+\langle\tilde U_{\Psi,\mathrm b}\rangle_{*}=\cosh^{2}\frac{\theta_{\mathrm{rpd}}}{2}+\sinh^{2}\frac{\theta_{\mathrm{rpd}}}{2}\sum_ku_k^{2}=\cosh^{2}+\sinh^{2}=\cosh\theta_{\mathrm{rpd}} .
+$$</p>
+<p>For the modulus, $N$ <strong>is</strong> multiplicative, by the theorem of <a href="../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html">N-Regularity and N-Degeneracy in the Biquaternion Algebra</a>, and $N$ of a central phase is that phase squared, $N$ of a real unit is $1$, and $N(\tilde U_{\Psi,\mathrm b})=\cosh^{2}-\sinh^{2}=1$; hence $N(\tilde\Xi)=r^{2}e^{2i\theta_{\mathrm{pha}}}$. <strong>The contrast is the article in one line: the modulus is multiplicative and the size is not, which is why the modulus is the invariant and the size is a frame-dependent quantity.</strong> <strong>The half-angle in the exponent becomes a full angle in the ratio</strong>, which is the origin of every factor of two in this article.</p>
+<h3 id="the-boost-composition">The Boost Composition</h3>
+<p><strong>Claim.</strong> For $\tilde\Xi$ with rapidity $\theta_{\mathrm{rpd}}$ about the real unit axis $\vec u_{\mathrm b}$ and a boost of rapidity $\phi$ about the real unit axis $\vec u_{\phi}$, with $\cos\chi=\vec u_{\mathrm b}\cdot\vec u_{\phi}$,</p>
+<p>$$
+\langle\tilde U_{\mathrm b}(\phi,\vec u_{\phi})\tilde\Xi\rangle_{*}=r^{2}\bigl(\cosh\theta_{\mathrm{rpd}}\cosh\phi+\sinh\theta_{\mathrm{rpd}}\sinh\phi\cos\chi\bigr),
+\qquad
+\lvert N(\tilde U_{\mathrm b}(\phi,\vec u_{\phi})\tilde\Xi)\rvert=r^{2}.
+$$</p>
+<p><em>Proof.</em> The modulus is multiplicative and $N(\tilde U_{\mathrm b})=\cosh^{2}\frac\phi2-\sinh^{2}\frac\phi2=1$. For the size, write $\tilde\Xi=r e^{i\theta_{\mathrm{pha}}}(c_h+is_h\vec u_{\mathrm b})$ and $\tilde U_{\mathrm b}=c_\phi+is_\phi\vec u_{\phi}$. The product is</p>
+<p>$$
+e^{i\theta_{\mathrm{pha}}}\Bigl[\bigl(c_hc_\phi-s_hs_\phi\,\vec u_{\mathrm b}\vec u_{\phi}\bigr)+i\bigl(c_hs_\phi\vec u_{\phi}+s_hc_\phi\vec u_{\mathrm b}\bigr)\Bigr].
+$$</p>
+<p>Since $\vec u_{\mathrm b}\vec u_{\phi}=-\cos\chi+\vec u_{\mathrm b}\times\vec u_{\phi}$, with the cross product orthogonal to both axes, the product splits into three pieces:</p>
+<p>$$
+\underbrace{\bigl(c_hc_\phi+s_hs_\phi\cos\chi\bigr)}_{\text{real scalar}}-s_hs_\phi\,\vec u_{\mathrm b}\times\vec u_{\phi}+i\underbrace{\bigl(c_hs_\phi\vec u_{\phi}+s_hc_\phi\vec u_{\mathrm b}\bigr)}_{\text{real vector}} .
+$$</p>
+<p>Each piece is a real scalar, a real vector, or $i$ times a real vector, and the three are mutually orthogonal in the eight real coordinates, so the Euclidean size is the sum of their squared lengths:</p>
+<p>$$
+\frac{\langle\tilde U_{\mathrm b}\tilde\Xi\rangle_{*}}{r^{2}}=(c_hc_\phi+s_hs_\phi\cos\chi)^{2}+s_h^{2}s_\phi^{2}\sin^{2}\chi+\bigl(c_h^{2}s_\phi^{2}+s_h^{2}c_\phi^{2}+2c_hs_hc_\phi s_\phi\cos\chi\bigr).
+$$</p>
+<p>Adding the $\cos^{2}\chi$ and $\sin^{2}\chi$ terms, the first and third pieces give $c_h^{2}(c_\phi^{2}+s_\phi^{2})+s_h^{2}(c_\phi^{2}+s_\phi^{2})=(c_h^{2}+s_h^{2})\cosh\phi$, and the two cross terms give $4c_hs_hc_\phi s_\phi\cos\chi$. With $c_h^{2}+s_h^{2}=\cosh\theta_{\mathrm{rpd}}$ and $2c_hs_h=\sinh\theta_{\mathrm{rpd}}$, $2c_\phi s_\phi=\sinh\phi$, the total is $\cosh\theta_{\mathrm{rpd}}\cosh\phi+\sinh\theta_{\mathrm{rpd}}\sinh\phi\cos\chi$. <strong>That is the time component of $u^{\mu}=(\cosh\theta_{\mathrm{rpd}},\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b})$ under a boost of rapidity $\phi$ about $\vec u_{\phi}$</strong>, multiplied by $r^{2}$.</p>
+<h3 id="the-scalar-part-of-the-current">The Scalar Part of the Current</h3>
+<p><strong>Claim.</strong> $\mathrm{Sc}(\tilde J_\Phi)=ic\,\gamma\rho_{\mathrm{num}}=ic\langle\tilde\Xi\rangle_{*}$.</p>
+<p><em>Proof.</em> $\tilde U_{\Psi,\mathrm b}^{-2}=\cosh\theta_{\mathrm{rpd}}-i\sinh\theta_{\mathrm{rpd}}\vec u_{\mathrm b}$, so $ic\tilde U_{\Psi,\mathrm b}^{-2}=ic\cosh\theta_{\mathrm{rpd}}+c\sinh\theta_{\mathrm{rpd}}\vec u_{\mathrm b}$, whose scalar part is $ic\cosh\theta_{\mathrm{rpd}}$ and whose vector part is real. Multiplying by the central scalar $\rho_{\mathrm{num}}$ leaves the scalar part $ic\rho_{\mathrm{num}}\cosh\theta_{\mathrm{rpd}}$. By the polar ratio, $\rho_{\mathrm{num}}\cosh\theta_{\mathrm{rpd}}=\langle\tilde\Xi\rangle_{*}$. <strong>The $i$ is the corpus's convention that the time coefficient of a four-vector is imaginary</strong>, as at $\tilde P_\Phi=i\frac{E}{c}e_t+\vec p$; the real time component is therefore $j^{0}=\mathrm{Im}\,\mathrm{Sc}(\tilde J_\Phi)=c\langle\tilde\Xi\rangle_{*}$.</p>
+<h3 id="the-numerical-checks">The Numerical Checks</h3>
+<p><strong>All residuals are on the quantities named and were computed from the eight real coordinates, without using the word's parameters on both sides of the comparison.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>check</th>
+<th>statement</th>
+<th>residual</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the Lagrange identity</td>
+<td>$\langle\cdot\rangle_{*}^{2}-\lvert N\rvert^{2}-4A^{2}$ on $20000$ random elements</td>
+<td>$5.7\times10^{-13}$</td>
+</tr>
+<tr>
+<td>the polar ratio</td>
+<td>$\langle\cdot\rangle_{*}/\lvert N\rvert$ against $\cosh\theta_{\mathrm{rpd}}$, three elements</td>
+<td>$\lt 5\times10^{-8}$</td>
+</tr>
+<tr>
+<td>the boost, collinear</td>
+<td>$r^{2}\cosh(\theta+\phi)$, $\phi\in\{0,0.5493,1.2\}$</td>
+<td>$1.8\times10^{-15}$</td>
+</tr>
+<tr>
+<td>the boost, perpendicular</td>
+<td>$r^{2}\cosh\theta\cosh\phi$, $\phi\in\{0.5493,1.2\}$</td>
+<td>$8.9\times10^{-16}$</td>
+</tr>
+<tr>
+<td>the boost, five angles</td>
+<td>$\chi\in\{0,30,60,90,180\}^{\circ}$, $\phi=0.7$</td>
+<td>$1.3\times10^{-15}$</td>
+</tr>
+<tr>
+<td>the modulus under a boost</td>
+<td>$\lvert N\rvert$ before and after</td>
+<td>$2.2\times10^{-16}$</td>
+</tr>
+<tr>
+<td>the current</td>
+<td>$\mathrm{Sc}(\tilde J_\Phi)/(ic)$ against $\langle\cdot\rangle_{*}$</td>
+<td>$4.4\times10^{-16}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The polar-ratio row's bound is looser than the others for a reason of method, not of accuracy.</strong> Every other comparison holds two quantities of the same kind; that row compares a number computed from the eight real coordinates with a number computed from the word's parameters, so the discrepancy includes the error of the parameter extraction ($\theta_{\mathrm{rpd}}$ recovered from the coefficients, then $\cosh$ taken) as well as the arithmetic. <strong>The identity itself is exact, and the exact statement is the appendix's; the row measures the transcription, and its bound is the extraction's.</strong></p>
+<p><strong>These are checks, not proofs.</strong> The proofs are the five claims above; the numbers confirm that the claims were transcribed correctly into the corpus's conventions, and nothing more.</p>
+<h2 id="further-reading">Further Reading</h2>
+<p><strong>The block this article clarifies.</strong> <a href="the-relativistic-quantum-space-as-a-fluid.html">The Relativistic Quantum Space as a Fluid</a> fixes the word and the reading of $r$; <a href="the-spin-fluid-of-the-biquaternion-dirac-field.html">The Spin Fluid of the Biquaternion Dirac Field</a> supplies the current and the non-closure of the bilinears; <a href="the-dirac-fluid-and-the-takabayasi-correspondence.html">The Dirac Fluid and the Takabayasi Correspondence</a> the correspondence the density serves; <a href="the-domain-of-the-fluid-reading.html">The Domain of the Fluid Reading</a> and <a href="the-massless-limit-as-a-boundary-value-of-the-polar-word.html">The Massless Limit as a Boundary Value of the Polar Word</a> the two ends of the cone.</p>
+<p><strong>The algebra.</strong> <a href="norm-and-pairing-conventions.html">Norm and Pairing Conventions</a> for the four norms and their names; <a href="the-meaning-of-n-regularity-and-degeneracy.html">The Meaning of N-Regularity and Degeneracy</a> for the two cases and what each costs; <a href="the-hamilton-pairing-mass-as-modulus-and-the-complex-angle.html">The Hamilton Pairing: Mass as Modulus and the Complex Angle</a> for the ratio of the two invariants as a rapidity in the vector case; <a href="the-material-sector-four-vectors-interval-and-lorentz-action.html">The Material Sector</a> for the imaginary time coefficient.</p>
+<p><strong>Outside.</strong> P. Langevin, "L'évolution de l'espace et du temps", <em>Scientia</em> <strong>10</strong> (1911), for proper and coordinate densities as one current's two readings. R. Penrose and W. Rindler, <em>Spinors and Space-Time</em>, vol. 1, Cambridge University Press (1984), for the spinor and vector carriers' different actions of one boost, which is the factor of two of §<em>The Factor of Two, and the Two Carriers</em>.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

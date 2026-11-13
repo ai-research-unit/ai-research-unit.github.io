@@ -71,7 +71,7 @@
         <h1 id="the-two-integrals-the-action-and-the-transform-confronted-rung-by-rung"><strong>The Two Integrals: The Action and the Transform, Confronted Rung by Rung</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p><strong>Sixteen articles rest on an integral, and nobody has put the integrals side by side.</strong> The eight Lagrangian articles of the fluid block rest on the action integral. The eight Fourier articles rest on the transform integral. Both integrate over the same variable, both are linear in the same unknown, and each article is written as though the other integral did not exist. This article puts them side by side, one rung at a time, and records what falls out.</p>
-<p><strong>The results, in order of how much they are worth.</strong> First, every Fourier article's support is the pole set of its Lagrangian article's kernel; the shell is the pole, the residue is the mode's weight, and a coupling that enters linearly translates the pole set and cannot reshape it. Second, the action is invariant under a change of chart and the transform is not, so the pair's eight "invisible objects" are eight measurements of one non-commuting square, and the obstruction is linearity and nothing else. Third, "invisible" carries two different meanings in the sixteen articles — not determined, and not diagonal — and separating them classifies every object in the block by its degree in the field. Fourth, the object the transform cannot see is in every case a correlation, and the quantum potential's non-additivity measures it as the interference's mean square weighted by the square of the label separation. Fifth, three different objects — the conserved charge, the constant configuration and the partition function — are the same point of the label space, which is why the two integrals can be compared at all.</p>
+<p><strong>The results, in order of how much they are worth.</strong> First, every Fourier article's support is the pole set of its Lagrangian article's kernel; the shell is the pole, the residue is the mode's weight, and a coupling that enters linearly translates the pole set and cannot reshape it. Second, the action is invariant under a change of chart and the transform is not, so the pair's eight "invisible objects" are eight measurements of one non-commuting square, and the obstruction is linearity and nothing else. Third, "invisible" carries two different meanings in the sixteen articles — not determined, and not diagonal — and separating them classifies every object in the block by its degree in the field. Fourth, the object the transform cannot see is in every case a correlation, and the quantum potential's non-additivity measures it as the interference's mean square weighted by the square of the label separation. Fifth, three different objects — the conserved charge, the constant configuration and the partition function — are the same point of the label space, which is why the two integrals can be compared at all. Sixth, the two integrals fail on two different cones: the chart fails where the field's norm vanishes, the propagator where the symbol's norm vanishes, and the mass is the height that separates the two level sets. At $k_m=0$ the level sets coincide and both failures land on one and the same wave.</p>
 <p><strong>What this article is.</strong> An internal synthesis. No new equation, no new field, no re-derivation of an article's result. Five statements are numerical; each gives its numbers and its lattice correction. The rest are readings of sentences the sixteen articles already write, placed so that they face each other.</p>
 <h2 id="the-three-integrals">The Three Integrals</h2>
 <p><strong>Two integrals over spacetime and one over configurations.</strong></p>
@@ -104,11 +104,16 @@ $$</p>
 \mathcal N(\tilde K_\Phi)=0 .
 $$</p>
 <p>One scalar equation in one label defines a hypersurface, not a region. <strong>So "the support" in each Fourier article is a hypersurface of the label space</strong>, and "supported on the shell" is the statement that the zeros are the shell.</p>
-<p><strong>Fourth step, the propagator's symbol is the reciprocal.</strong> Where the symbol is non-zero the kernel is invertible, and the inverse of a multiplier is the reciprocal multiplier:</p>
+<p><strong>Fourth step, the propagator's symbol is the reciprocal — and, off the centre, an adjugate over a norm.</strong> Where the symbol is a single number the inverse is the reciprocal multiplier,</p>
 <p>$$
-G_{\mathrm{prop}}(\tilde K_\Phi)=\frac{1}{\mathcal N(\tilde K_\Phi)} .
+G_{\mathrm{prop}}(\tilde K_\Phi)=\frac{1}{\mathcal N(\tilde K_\Phi)},\qquad \mathcal N\ \text{central},
 $$</p>
-<p><strong>So the zeros of the symbol are the poles of the propagator, and the identification is complete.</strong> The four steps in one table:</p>
+<p>and where the symbol takes values in the algebra there is no reciprocal of an element. The inverse of $L_\Sigma$ is then left multiplication by</p>
+<p>$$
+\Sigma^{-1}=\frac{\overline{\Sigma}}{N(\Sigma)},\qquad N(\Sigma)=\sum_\mu\Sigma_\mu^{2},
+$$</p>
+<p>because $\Sigma\overline{\Sigma}=\overline{\Sigma}\Sigma=N(\Sigma)e_t$. <strong>The denominator is one complex-valued function in both cases, and that is why the pole set survives the generalisation</strong>: the zeros of the symbol are the poles of the propagator whether the symbol is a number or an element, and in the element case the numerator is an adjugate. <a href="../articles_maths/inversion-of-the-biquaternion-fourier-transform-poles-tails-and-the-degenerate-set.html">Inversion of the Biquaternion Fourier Transform</a> proves the form, names it the adjugate over the norm, and adds the order count that the notation hides: the pole's order is not the symbol's degree and not the block determinant's either.</p>
+<p><strong>The zeros of the symbol are the poles of the propagator, and the identification is complete.</strong> The four steps in one table:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -151,8 +156,161 @@ $$</p>
 $$</p>
 <p>and the measured values are $50.251256$, $5000.250013$, $500000.249980$: the first is $50+0.25+0.00125$, the second is $5000+0.25+0.0000125$, and the third agrees with $500000+0.25$ to seven figures, the rest being round-off at $10^{6}$. <strong>The numbers are the series above and nothing else</strong>, so the pole is simple and the residue's magnitude is $\tfrac12$.</p>
 <p><strong>And the residue is the mode's weight.</strong> A simple zero of the symbol means $\mathcal N\simeq\mathcal N'\,(k_t'-k_{\mathrm{shell}})$ near the shell, so the propagator is $R/(k_t'-k_{\mathrm{shell}})$ with $R=1/\mathcal N'$, and $R$ is what the mode contributes to the spectral measure of the free field — the Källén–Lehmann weight, a delta at the shell of that size. <strong>The pole's position gives the dispersion and the pole's residue gives the normalisation</strong>, and a Fourier article that says "the amplitude at a wave number" is reading both from the same object. So a statement in the block about the measure on a support is a statement about residues, and not about the points of the support.</p>
+<p><strong>The residue is not the inverse of the derivative of the symbol, and off the centre it is not a number.</strong> At a simple null point the residue is $\overline{\Sigma}(\omega_0)/N'(\Sigma)(\omega_0)$: the numerator has norm zero, so <strong>the residue is itself a null element</strong>, and left multiplication by it has rank four of eight. The temptation to write $\Sigma'(\omega_0)^{-1}$ is wrong, because the symbol does not vanish at the pole — its norm does. The $\tfrac12$ measured above is the central case, where the numerator is a number and the formula coincides with $1/\mathcal N'$.</p>
+<p><strong>And the residue expansion needs one frequency variable.</strong> In two or more variables the complexified singular set is a hypersurface of real codimension two, no small sphere links a point, there is no isolated pole and no sum of residues; what replaces it is a residue current over a real cycle. <strong>The codimension is the same two in both spaces</strong> — the label's singular set and the value's null cone are each one complex equation — and that is the next section's subject.</p>
 <p><strong>A coupling that enters linearly does not reshape the pole set, it translates it.</strong> Minimal coupling replaces $\partial_\mu$ by $\partial_\mu+iϙA_\mu/\hbar$, which on a character is one substitution, $\tilde K_\Phi\mapsto\tilde K_\Phi+ϙ\tilde A_\Phi/\hbar$. The symbol is the same function of a shifted argument, so its zeros move rigidly with the shift and the derivative at each zero is untouched. <strong>Three articles state the same fact and this is why they agree</strong>: the <a href="../articles_physics/the-fourier-transform-and-the-charged-klein-gordon-fluid.html">charged Klein–Gordon Fourier article</a> writes "a constant potential translates the support of the transform and leaves its radius alone", the <a href="../articles_physics/the-fourier-transform-and-the-charged-spin-fluid.html">charged spin Fourier article</a> writes "the whole of the coupling's action on a mode is a translation of its label", and the residue argument above says both. <strong>The radius is untouched because a translation does not change a derivative</strong>, and the radius is the residue.</p>
 <p><strong>Where the identification fails, and why.</strong> At the spinor rungs the multiplier is a matrix, so invertibility is a determinant and the pole set is the zero set of $\det\mathcal N$. A determinant's zeros are a set, and a set is not a sheet: nothing there plays the part of a single dispersion relation, and the residue is a matrix rather than a number. <strong>A symbol exists wherever the operator is a multiplier; a scalar symbol, and with it one dispersion relation and one residue per label, exists only where the multiplier is one number per label.</strong> The Fourier article at those rungs reports the translation of the label and the invariant that survives it, the loop, and reports no pole set at all. The block's four charged articles are four answers to whether the multiplier is one number.</p>
+<h2 id="the-two-cones">The Two Cones</h2>
+<p><strong>The block has two failures and they are in two different spaces.</strong> The fluid chart fails where the <em>value</em> of the field is a zero divisor, $N(\tilde\Xi)=0$ — a condition on the field at an event. The transform's reciprocal fails where the <em>norm of the symbol</em> vanishes, $N(\Sigma(\tilde K_\Phi))=0$ — a condition on the label. The two are one algebraic object read in two spaces, and the corpus's two cones are not the same cone. This section separates them, because every sentence in the block that says "the equations are not defined there" is about one of the two and has been read as being about the other.</p>
+<h3 id="the-norm-and-what-its-two-cases-cost">The Norm, and What Its Two Cases Cost</h3>
+<p><strong>The maths the block has been using without naming.</strong> <a href="../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html">N-Regularity and N-Degeneracy in the Biquaternion Algebra</a> proves four things that the fluid block assumes:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>statement</th>
+<th>content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>one norm decides invertibility</td>
+<td>$\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$ is the only multiplicative norm, $\langle\tilde Q_2\tilde Q\rangle_{\natural}=\langle\tilde Q_2\rangle_{\natural}\langle\tilde Q\rangle_{\natural}$</td>
+</tr>
+<tr>
+<td>the regular case is the unit group</td>
+<td>$\{\langle\tilde Q\rangle_{\natural}\neq0\}$ is a group, with inverse $\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$</td>
+</tr>
+<tr>
+<td>the degenerate case is the cone</td>
+<td>$\{\langle\tilde Q\rangle_{\natural}=0\}$ is one complex equation, two real equations, real codimension two, closed, of empty interior</td>
+</tr>
+<tr>
+<td>the group's boundary is the cone</td>
+<td>$\partial\mathbb{B}^{\times}=\mathcal{N}$; the group is open and dense</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The norm is complex, so its zero set is not a surface but a hypersurface over $\mathbb{C}$ and a codimension-two set over $\mathbb{R}$.</strong> The scalar case hides this: a central element has norm $\Xi_t^{2}$, one complex number squared, and its zero set is the element's zero set. <strong>Everything the block says about the chart failing is therefore invisible at the scalar rungs and structural at the others.</strong></p>
+<p><strong>What the cone costs the chart is a theorem, not a defect.</strong> <a href="../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html">The Polar Decomposition of an N-Regular Biquaternion</a> proves the four-factor word $\tilde Q=r\varkappa_{\mathrm{phs}}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ unique, and states in its uniqueness section that the word exists exactly on the regular elements: "on the null cone the norm vanishes, the modulus is zero, and no modulus–unit form exists". <a href="../articles_maths/the-polar-decomposition-of-an-n-degenerate-biquaternion.html">The Polar Decomposition of an N-Degenerate Biquaternion</a> then supplies what does exist there,</p>
+<p>$$
+\tilde\Xi=\tilde\Xi_H\tilde\Xi_0,\qquad
+\tilde\Xi_H=a\,e_t+\frac{i}{2a}\vec W,\qquad
+a=\sqrt{\frac{\langle\tilde\Xi\rangle_{*}}{2}},
+\qquad
+\tilde\Xi_H^{+}=\frac{\tilde\Xi_H}{4a^{2}},
+$$</p>
+<p>a Hermitian factor of rank one and a partial isometry. <strong>So "the equations are not defined on the cone" is a statement about the parametrisation.</strong> The field has a value at every event; the chart has coordinates only off the cone; and the four extractions — density $r^{2}$, phase $\tfrac12\arg N$, velocity from the boost, spin from the rotor — fail together, because they are four reads of one normalised unit.</p>
+<h3 id="one-identity-relates-the-two-spaces">One Identity Relates the Two Spaces</h3>
+<p><strong>The corpus writes the label as $\tilde K_\Phi=ik_t'e_t+\vec k_\Phi$, so the norm of the label is available and is the symbol.</strong> With $\partial_{t'}\mapsto-ik_t'$ and $\partial_\eta\mapsto ik_\eta$ the Klein–Gordon kernel gives</p>
+<p>$$
+N(\tilde K_\Phi)=(ik_t')^{2}+\lvert\vec k_\Phi\rvert^{2}=\lvert\vec k_\Phi\rvert^{2}-k_t'^{2},
+\qquad
+\mathcal N(\tilde K_\Phi)=-N(\tilde K_\Phi)-k_m^{2},
+$$</p>
+<p>so the pole set is a level set of the same norm:</p>
+<p>$$
+\mathcal N(\tilde K_\Phi)=0\quad\Longleftrightarrow\quad N(\tilde K_\Phi)=-k_m^{2}.
+$$</p>
+<p><strong>The null cone of the label space is the level set $0$; the pole set is the level set $-k_m^{2}$; the mass is the height that separates them.</strong> The two sets meet exactly at $k_m=0$. Checked at three labels: at $k_t'=1$, $\lvert\vec k_\Phi\rvert=0$, $k_m=1$ the norm is $-1$ and the symbol vanishes; at $k_t'=2$, $\lvert\vec k_\Phi\rvert=\sqrt3$, $k_m=1$ the norm is $-1$ again and the symbol vanishes; at $k_t'=3$, $\lvert\vec k_\Phi\rvert=3$, $k_m=0$ the norm is $0$ and the symbol vanishes. The first two are the massive shell, off the cone; the third is the cone itself, and there the symbol is a non-zero zero divisor.</p>
+<p><strong>The two failures, side by side.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>space</th>
+<th>the function that vanishes</th>
+<th>its zero set</th>
+<th>what the zero costs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the value, $\tilde\Xi$</td>
+<td>$N(\tilde\Xi)=\sum_\mu\Xi_\mu^{2}$</td>
+<td>the null cone</td>
+<td>no polar word: no density, no velocity, no spin</td>
+</tr>
+<tr>
+<td>the label, $\Sigma(\tilde K_\Phi)$</td>
+<td>$N(\Sigma)=\sum_\mu\Sigma_\mu^{2}$</td>
+<td>the frequency set $Z(P)$</td>
+<td>no inverse symbol: no propagator, only a least-squares inverse</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Both zeros are one complex equation, and both are therefore of real codimension two.</strong> That is why the fluid chart's boundary is populated rather than empty — a codimension-two set is not left by a generic perturbation in one direction, as <a href="../articles_physics/the-domain-of-the-fluid-reading.html">The Domain of the Fluid Reading</a> checks by perturbing a zero divisor along each of the eight real coordinates — and why no residue expansion exists in two or more frequency variables: the same codimension, in the other space, destroys the same contour.</p>
+<h3 id="at-zero-mass-three-failures-coincide-on-one-wave">At Zero Mass Three Failures Coincide on One Wave</h3>
+<p><strong>Set $k_m=0$ and the three statements of the section collapse into one object.</strong> The label of a massless mode lies on the label cone, so the symbol is a non-zero zero divisor, left multiplication by it has rank four of eight, and the algebraic inverse does not exist — <strong>and that rank count is the first-order rung's</strong>: on the scalar rung the symbol is a single number which vanishes outright at that label, so the rank lost there is eight of eight. <a href="../articles_physics/the-massless-fluid-the-one-wave-where-both-charts-fail.html">The Massless Fluid: The One Wave Where Both Charts Fail</a> proves the containment and keeps the two counts apart. The solution carrying that label is the one-sided wave, $\tilde\Xi=\tilde\Xi_0e^{i\tilde K_\Phi\cdot X}$ with $\tilde\Xi_0$ a non-zero zero divisor, and its value lies on the value cone at every event, so the polar word fails everywhere. <strong>One wave, one point of the parameter space, and both charts fail on it: the massless one-sided wave is the only solution at which the two cones are met at once.</strong></p>
+<p><strong>What replaces each inverse, and why the two formulas are one formula.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>space</th>
+<th>the algebraic inverse</th>
+<th>what replaces it there</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the label</td>
+<td>$\Sigma^{-1}=\overline{\Sigma}/N(\Sigma)$</td>
+<td>$\sigma^{+}=\sigma^{*}/(2\lVert\sigma\rVert^{2})$, rank four</td>
+</tr>
+<tr>
+<td>the value</td>
+<td>$\tilde\Xi^{-1}=\tilde\Xi^{\natural}/N(\tilde\Xi)$</td>
+<td>$\tilde\Xi_H^{+}=\tilde\Xi_H/(4a^{2})$, rank one</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The two replacement formulas coincide</strong>, because $2\lVert\sigma\rVert^{2}=4a^{2}$ when $\sigma$ is null: the label's Moore–Penrose inverse and the value's Hermitian-factor inverse are one computation, and the block's two-factor decomposition is that computation read as fluid data. <a href="../articles_maths/biquaternion-fourier-inversion-on-the-degenerate-set.html">Fourier Inversion on the Degenerate Set</a> proves the three ranks — $\operatorname{rank}L_\sigma=8$ for a unit, $4$ for a non-zero null element, $0$ at the origin — and warns that the inverse off the set is not the algebraic inverse; the polar article's $\tilde\Xi_H$ of rank one is the same warning in the other space.</p>
+<h3 id="rung-by-rung">Rung by Rung</h3>
+<p><strong>The value-space cone is not the same set at the four rungs, and the difference is the centre.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>rung</th>
+<th>is the field central</th>
+<th>the value-space cone</th>
+<th>reached by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Schrödinger</td>
+<td>yes</td>
+<td>the nodal set</td>
+<td>a nodal surface</td>
+</tr>
+<tr>
+<td>Klein–Gordon</td>
+<td>yes</td>
+<td>the nodal set</td>
+<td>a nodal surface</td>
+</tr>
+<tr>
+<td>spin, spinor</td>
+<td>no</td>
+<td>strictly larger than the nodal set</td>
+<td>a field of one chirality, or a one-sided wave</td>
+</tr>
+<tr>
+<td>Proca</td>
+<td>no</td>
+<td>the lightlike set $\tilde A_\Phi\tilde A_\Phi^{\natural}=0$</td>
+<td>a lightlike potential, $r=0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The two central rungs are the exception and the exclusion explains the block's tone.</strong> A central element's norm is the square of one complex number, so its cone and its zero set coincide, and the chart's failure is a failure at nodes — which is why the scalar fluid reads as a fluid with vortices rather than as a chart with holes, exactly as the domain article says. <strong>At the two non-central rungs the cone is a genuine hypersurface and it cuts through the region where the density is largest</strong>: a chiral field of any amplitude, and a lightlike potential of any amplitude, have no word.</p>
+<p><strong>That is also why the spin and Proca rungs are where the phrase "not defined" bites.</strong> At the scalar rungs the pole set's movement and the chart's domain are independent questions, since one lives in the label and the other in the value and the value's cone is thin. At the spinor and vector rungs the two questions meet: the same algebra — a rank-one factorisation — answers both, and neither answer is a number.</p>
+<h3 id="the-corner-has-a-value">The Corner Has a Value</h3>
+<p><strong>The cone is a corner of the chart, not a hole in it, and the block already knows what stands in the corner.</strong> <a href="../articles_physics/the-massless-limit-as-a-boundary-value-of-the-polar-word.html">The Massless Limit as a Boundary Value of the Polar Word</a> approaches the cone along a path of diverging rapidity with the scale collapsing at the same rate, and finds that the word converges to a non-zero rank-one null element, an imaginary multiple of a Hermitian idempotent. The maths gives the identity behind it: a non-zero null element is a scalar multiple of an idempotent,</p>
+<p>$$
+\tilde Q=2Q_t\tilde\Pi,\qquad \tilde\Pi^{2}=\tilde\Pi,\qquad \tilde\Pi=\frac{\tilde Q}{2Q_t}\ \ (Q_t\neq0),
+$$</p>
+<p>with the pure stratum — $Q_t=0$, $\tilde Q=2$-step nilpotent — as the other half of the cone.</p>
+<p><strong>So the block's two boundary values are the same identity in the two spaces.</strong> The label's word converges to a scalar times an idempotent; the value's two-factor decomposition <em>is</em> a scalar times an idempotent, $\tilde\Xi_H$ of rank one and $\tilde\Xi_0$ a partial isometry. <strong>A reader who stops at "undefined" misses that the corner is inhabited</strong>: what is lost is not the field but the split of the two frames, and what survives is the scale and the direction.</p>
+<p><strong>Which is the precise form of the standing objection.</strong> A reader says that the quantum fluids must reach a limit as they approach the null cone and that the equations are not defined there. Both halves are right, and this section separates them: the limit exists, and the equations that fail are the ones built from ratios. what fails there is the <em>separation</em> of the four factors, and with it every quantity in the block that is defined by a ratio of two of them — the velocity, the direction, the quantum potential. That is not an accident of notation and not an incomplete calculation. It is the statement that the chart is a parametrisation of the unit group, and that a parametrisation has no value at the boundary of the set it parametrises.</p>
 <h2 id="chart-blind-and-chart-sighted">Chart-Blind and Chart-Sighted</h2>
 <p><strong>The action is one functional in every chart, and the Lagrangian articles say so as their conclusion.</strong> <a href="../articles_physics/the-lagrangian-of-the-schrodinger-fluid.html">The Lagrangian of the Schrödinger Fluid</a> has the section for it: the map between the field's chart, the polar chart and the fluid chart is a bijection away from the nodes, and the action is one functional written three ways. Every one of the eight says the same, in its own words: the coupling is one substitution, the mass is one coefficient, the stress is one current. <strong>None of that survives a change of chart in the transform.</strong></p>
 <p><strong>The transform does not descend.</strong> A chart change is nonlinear in the field, so in general $\bigl(f(\tilde\Xi)\bigr)_{\mathrm{trf}}\ne f\bigl(\tilde\Xi_{\mathrm{trf}}\bigr)$. The square therefore does not close, and the failure is not a gap in the block's technique but a fact about the operation:</p>
@@ -353,6 +511,7 @@ $$</p>
 <p><strong>The two integrals are the two halves of the quantum formalism, one per rung.</strong> The action carries the phase, and with it interference and the semiclassical limit; the transform carries the modulus, and with it the density and the Born rule. The block's two articles per rung are the two halves, and the object that neither can hold alone is the covariance of the previous section: <strong>it is a term in the action and a failure of additivity in the transform, and the two descriptions are the same fact.</strong></p>
 <h2 id="limits">Limits</h2>
 <p><strong>The pole-set identification needs a linear equation.</strong> It is a statement about a quadratic action and a diagonal symbol. Where the coupling enters a bracket, as at the two spinor rungs, the symbol is not diagonal, the article reports a translation instead of a pole set, and the section's first result has no content. The four charged articles are the useful comparison precisely because they fail in four different ways.</p>
+<p><strong>The residue statement needs one frequency variable and a central symbol.</strong> In two or more variables the singular set is of real codimension two and no residue sum exists; off the centre the residue is a null element of rank four rather than a number. The measured $\tfrac12$ is the free scalar case, and it is quoted as that.</p>
 <p><strong>Constant coefficients.</strong> The transform's algebraic reading needs them, as the Fourier articles say in their own Limits sections. A position-dependent potential makes the symbol a function of the point and the transform a convolution, and none of the eight articles uses one.</p>
 <p><strong>Three integrals, two spaces.</strong> Only two of the three are over the same variable. The path integral is over configurations, and $Z[J]=\bigl(e^{iS/\hbar}\bigr)_{\mathrm{trf}}(J)$ is the whole of its relation to the transform here — a remark, not a derivation.</p>
 <p><strong>No new equation.</strong> Nothing in this article adds a result to the sixteen. Five statements are measured, all on a periodic lattice, all with the lattice correction displayed; they confirm what the articles already assert and carry no physics of their own.</p>
@@ -369,16 +528,20 @@ $$</p>
 <p><strong>Does the deficiency formula survive where the density is not $\lvert\phi\rvert^{2}$?</strong> At the relativistic rungs the fluid's density is $\gamma$-weighted, so the second moment would be taken against a different measure. The coefficient $\tfrac12\eta^{2}(\Delta k)^{2}$ is the free non-relativistic case and no more.</p>
 </li>
 <li>
+<p><strong>Is there a fluid reading of the cone itself?</strong> The two-factor decomposition survives there and carries a scale and a direction, so a fluid of two data exists where the four-factor fluid does not. Whether those two data obey a transport law of their own is not asked anywhere in the block, and the obstruction is the one this article keeps meeting: the velocity and the spin are ratios of factors, and on the cone the factors are not separately there.</p>
+</li>
+<li>
 <p><strong>What replaces the pole set when the action is the fluid's own?</strong> The Korteweg action is not quadratic in any variable that carries a label, so there is no symbol. Whether the fluid's own variational principle has a transform at all is open, and the question is the natural end of this article.</p>
 </li>
 </ol>
 <h2 id="summary">Summary</h2>
 <p><strong>Two integrals over one variable, and a third over the configurations that connect them.</strong> The action adds the density up; the transform adds it up against a character; the path integral is the transform of the exponential of the action, read at zero source. The sixteen articles of the block are eight pairs, one of each kind per rung, and each pair is one computation in two charts.</p>
-<p><strong>Every Fourier article's support is its Lagrangian partner's pole set.</strong> The symbol's reciprocal is the propagator, the pole is the shell, the residue is the mode's weight, and a coupling that enters linearly translates the pole set without reshaping it. Three of the block's articles state that translation from three directions and this article states the reason: a constant connection shifts an argument.</p>
+<p><strong>Every Fourier article's support is its Lagrangian partner's pole set.</strong> The symbol's inverse — the reciprocal where the symbol is central, an adjugate over a norm where it is not — is the propagator, the pole is the shell, the residue is the weight, and a coupling that enters linearly translates the pole set without reshaping it. Three of the block's articles state that translation from three directions and this article states the reason: a constant connection shifts an argument.</p>
 <p><strong>The action is chart-blind and the transform is chart-sighted.</strong> A character respects sums and not products, every chart change in the block is a product, so the square does not close and does not close for one reason. The eight "invisible objects" are eight entries of one failure.</p>
 <p><strong>Invisible means not diagonal, and the degree decides.</strong> Degree one is diagonal; degree two is a correlation supported at differences of labels, which is the beat; degree zero has no label at all and is invisible in the stronger sense. A degree-zero object is a ratio, and a ratio of two transforms is not the transform of a ratio — the block's difficulty with the fluid chart, in one sentence.</p>
 <p><strong>The object the transform cannot see is a covariance.</strong> Its measure is $\tfrac12\eta^{2}(\Delta k)^{2}$: the interference's mean square, weighted by the square of the label separation. The action states it as a term, the transform as a failure of additivity, and it is the one object present in all sixteen articles.</p>
 <p><strong>Three things sit at the origin of the label</strong> — the Noether charge, the constant configuration and the partition function — and that is why the two integrals can be compared at all.</p>
+<p><strong>Two cones, two spaces, and the mass between them.</strong> The chart fails where the field is a zero divisor and the propagator where the symbol is; the algebra is one norm, so the pole set is the level set $N(\tilde K_\Phi)=-k_m^{2}$ and the label's null cone is the level set $0$. The mass is the height that lifts one off the other, and only at $k_m=0$ do they meet — on the one-sided wave, where the label is null, the symbol has rank four and the value has no word. The corner is inhabited by a rank-one factorisation, which is what both boundary values of the block are.</p>
 <p><strong>And one rung has a sound speed.</strong> The Proca fluid is stiff, $c_s=1$, its modes are bounded by that speed and approach it, and the three rungs below have no sound speed because a mode never changes their density. The equation of state is the one fluid observable with no mode.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -415,11 +578,31 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathcal N(\tilde K_\Phi)$</td>
-<td>the symbol of the kernel of a quadratic action, one number per label</td>
+<td>the symbol of the kernel of a quadratic action; one number per label when the kernel is central</td>
+</tr>
+<tr>
+<td>$\Sigma(\tilde K_\Phi)$</td>
+<td>the symbol where it takes values in the algebra, with $N(\Sigma)=\sum_\mu\Sigma_\mu^{2}$</td>
 </tr>
 <tr>
 <td>$G_{\mathrm{prop}}$</td>
-<td>the kernel's inverse, the free propagator, with $G_{\mathrm{prop}}=1/\mathcal N$</td>
+<td>the kernel's inverse, the free propagator, $1/\mathcal N$ central and $\overline{\Sigma}/N(\Sigma)$ in general</td>
+</tr>
+<tr>
+<td>$N(\tilde Q)=\langle\tilde Q\rangle_{\natural}$</td>
+<td>the quaternionic norm, the algebra's only multiplicative one; its zero set is the null cone</td>
+</tr>
+<tr>
+<td>$\mathcal{N}$</td>
+<td>the null cone, $\{N=0\}$, of real codimension two; the chart's boundary and the symbol's singular set</td>
+</tr>
+<tr>
+<td>$\operatorname{rank}L_\sigma$</td>
+<td>the rank of left multiplication: $8$ for a unit, $4$ for a non-zero null element, $0$ at the origin</td>
+</tr>
+<tr>
+<td>$\tilde\Xi_H$, $\tilde\Xi_0$</td>
+<td>the Hermitian and partial-isometry factors of the two-factor decomposition, the only one on the cone</td>
 </tr>
 <tr>
 <td>$Z[J]$</td>
@@ -458,6 +641,9 @@ $$</p>
 <h2 id="further-reading">Further Reading</h2>
 <p><strong>The sixteen articles this one confronts.</strong> The Lagrangian side: <a href="../articles_physics/the-lagrangian-of-the-schrodinger-fluid.html">the Schrödinger fluid</a>, <a href="../articles_physics/the-lagrangian-of-the-charged-schrodinger-fluid.html">the charged Schrödinger fluid</a>, <a href="../articles_physics/the-lagrangian-of-the-klein-gordon-fluid.html">the Klein–Gordon fluid</a>, <a href="../articles_physics/the-lagrangian-of-the-charged-klein-gordon-fluid.html">the charged Klein–Gordon fluid</a>, <a href="../articles_physics/the-lagrangian-of-the-spin-fluid.html">the spin fluid</a>, <a href="../articles_physics/the-lagrangian-of-the-charged-spin-fluid.html">the charged spin fluid</a>, <a href="../articles_physics/the-lagrangian-of-the-proca-fluid.html">the Proca fluid</a>, <a href="../articles_physics/the-lagrangian-of-the-charged-proca-fluid.html">the charged Proca fluid</a>. The transform side: <a href="../articles_physics/the-fourier-transform-and-the-schrodinger-fluid.html">Schrödinger</a>, <a href="../articles_physics/the-fourier-transform-and-the-charged-schrodinger-fluid.html">charged Schrödinger</a>, <a href="../articles_physics/the-fourier-transform-and-the-klein-gordon-fluid.html">Klein–Gordon</a>, <a href="../articles_physics/the-fourier-transform-and-the-charged-klein-gordon-fluid.html">charged Klein–Gordon</a>, <a href="../articles_physics/the-fourier-transform-and-the-spin-fluid.html">spin</a>, <a href="../articles_physics/the-fourier-transform-and-the-charged-spin-fluid.html">charged spin</a>, <a href="../articles_physics/the-fourier-transform-and-the-proca-fluid.html">Proca</a>, <a href="../articles_physics/the-fourier-transform-and-the-charged-proca-fluid.html">charged Proca</a>.</p>
 <p><strong>Where the propagator is computed.</strong> <a href="../articles_physics/the-klein-gordon-propagator-and-its-greens-functions-in-biquaternionic-form.html">The Klein–Gordon Propagator and Its Green's Functions</a> and <a href="../articles_physics/the-feynman-propagator-in-biquaternionic-form.html">The Feynman Propagator</a> supply the object whose pole set this article identifies with the Fourier support. <a href="../articles_physics/noethers-theorem-in-biquaternionic-form.html">Noether's Theorem</a> supplies the current whose integral is the zero label.</p>
+<p><strong>The algebra the block was using without naming.</strong> <a href="../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html">N-Regularity and N-Degeneracy in the Biquaternion Algebra</a> proves that one norm decides invertibility and that its two cases are the unit group and the null cone. <a href="../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html">The Polar Decomposition of an N-Regular Biquaternion</a> proves the four-factor word exists exactly on the regular elements; <a href="../articles_maths/the-polar-decomposition-of-an-n-degenerate-biquaternion.html">The Polar Decomposition of an N-Degenerate Biquaternion</a> gives the two-factor form that survives on the cone. <a href="../articles_maths/inversion-of-the-biquaternion-fourier-transform-poles-tails-and-the-degenerate-set.html">Inversion of the Biquaternion Fourier Transform</a> proves the reciprocal is an adjugate over a norm and that a simple null point's residue is null; <a href="../articles_maths/biquaternion-fourier-inversion-on-the-degenerate-set.html">Biquaternion Fourier Inversion on the Degenerate Set</a> proves the three ranks and the least-squares inverse on the middle one.</p>
+<p><strong>The two numbers behind the density.</strong> <a href="../articles_physics/the-two-scales-of-the-field-the-proper-density-and-the-euclidean-size.html">The Two Scales of the Field: the Proper Density and the Euclidean Size</a> separates $\rho_{\mathrm{num}}=\lvert N\rvert$ from $\langle\tilde\Xi\rangle_{*}=r^{2}\cosh\theta_{\mathrm{rpd}}$, shows that the second is $j^{0}/c$ up to the corpus's imaginary time coefficient, and proves that the modulus is invariant under a boost while the size transforms as a time component. <strong>That is what makes the two cones of this section comparable</strong>: the chart's variable is the invariant and the chart's other variable is the component, so a statement about one is never a statement about the other.</p>
+<p><strong>The two physics articles that own the boundary.</strong> <a href="../articles_physics/the-domain-of-the-fluid-reading.html">The Domain of the Fluid Reading</a> states the chart's domain, its codimension and the two families that live on it; <a href="../articles_physics/the-massless-limit-as-a-boundary-value-of-the-polar-word.html">The Massless Limit as a Boundary Value of the Polar Word</a> shows that the corner has a limit value. This article's §<em>The Two Cones</em> is the join of the two: the maths says what fails, the physics says what is still there.</p>
 <p><strong>The other cut of the same corpus.</strong> <a href="../articles_internal/the-eight-families-an-audit-for-the-non-quantum-limit-and-the-approximation.html">The Eight Families</a> sorts the articles by family and asks what each is worth for the non-quantum limit. This article sorts the same material by integral and asks what the two integrals say to each other. The two cuts should agree on the scalar rows.</p>
 <p><strong>Outside.</strong> L. Hörmander, "Fourier integral operators I", <em>Acta Mathematica</em> <strong>127</strong> (1971), for the general theory in which an operator's symbol and its singular structure are two views of one object. E. Madelung, "Quantentheorie in hydrodynamischer Form", <em>Zeitschrift für Physik</em> <strong>40</strong> (1927), and T. Takabayasi, "On the formulation of quantum mechanics associated with classical pictures", <em>Progress of Theoretical Physics</em> <strong>8</strong> (1952), for the two charts whose non-commutativity is this article's subject. D. J. Korteweg, "Sur la forme que prennent les équations du mouvement des fluides si l'on tient compte des forces capillaires", <em>Archives Néerlandaises</em> <strong>6</strong> (1901), for the class the block places the quantum fluid in.</p>
       </div>

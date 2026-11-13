@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Non-Quantum Limit of the Coupled Schrödinger Equation using the Variational Principle — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-non-quantum-limit-of-the-coupled-schrodinger-equation-using-the-variational-principle"><strong>The Non-Quantum Limit of the Coupled Schrödinger Equation using the Variational Principle</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The coupled limit taken on the action, and one correction it forces.</strong> The substitution route writes the criterion as $\epsilon=1/(k_\Phi L)$ with $k_\Phi=\lvert\vec p\rvert/\hbar$. On the action that reading is too weak: the term the amplitude's gradient competes with is $r^{2}\lvert\vec\pi\rvert^{2}/(2m)$ with $\vec\pi=\nabla S_{\tilde\Xi}+ϙ\vec A$, so the wave number in the criterion is the <strong>mechanical</strong> one, $k_\pi=\lvert\vec\pi\rvert/\hbar$. <strong>That is the only gauge-invariant wave number available</strong>, because $\nabla S_{\tilde\Xi}$ moves under a gauge transformation and $\vec\pi$ does not. The criterion is therefore gauge invariant if and only if it is written on $\vec\pi$.</p>
+<p><strong>Three further findings.</strong></p>
+<p><em>The truncation preserves gauge invariance exactly.</em> The dropped group is $\lvert\vec\nabla r\rvert^{2}$, which contains no connection, so it is invariant by itself. <strong>Nothing in the passage mixes the connection into the amplitude's gradient, so the limit commutes with the gauge group.</strong></p>
+<p><em>The constraint is gauge invariant, and that is why the phase cannot be fixed by it.</em> The truncated Lagrangian is the density times the covariant bracket, and the bracket is invariant because the connection's two contributions cancel against the phase's two. So the eikonal determines the invariant combination and leaves the gauge free. Route one's rule that the expansion must be written on invariants is a consequence, not a prescription.</p>
+<p><em>The density is again a multiplier, and the current is unchanged.</em> The truncated Lagrangian has the form $r^{2}F_{\mathrm{gco}}(\theta,\nabla\theta)$ with $F_{\mathrm{gco}}$ the covariant constraint, so the density multiplies the constraint and its own equation is the transport. <strong>And $-\partial\mathcal L^{\mathrm{trunc}}/\partial\vec A$ equals the exact current</strong>, because the dropped term has no $\vec A$ in it.</p>
+<p><strong>What the article does not do.</strong> It does not re-derive the coupled polar Lagrangian, the three coupling pieces, the gauge direction or the current identity; those are <em>The Variational Principle and the Coupled Schrödinger Equation in Biquaternionic Polar Variables</em>'s. It does not take a coupling expansion. <strong>The limit orders $\epsilon$ and holds the field</strong>, and the article is careful about the difference, because the two truncations are not the same one and only one of them is gauge invariant.</p>
+<p><strong>Conventions.</strong> Those of the free variational companion, with the connection $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$, $\varphi=c\,a'_t$, coupling $ϙ$, and the covariant derivative $\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$. The charge $ϙ$ is minus the older electric charge, so the mechanical momentum is $\vec\pi=\vec p+ϙ\vec A$ and the potential energy enters as $-ϙ\varphi$. The word is $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_t$, $\rho=r^{2}$, $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$, and $\mathcal E=-\partial_{t'}S_{\tilde\Xi}+ϙ\varphi$ is the invariant energy.</p>
+<h2 id="the-coupled-action-in-the-chart">The Coupled Action in the Chart</h2>
+<p><strong>The action, in the operator setting.</strong></p>
+<p>$$
+S=\int\mathrm{d}t'\,\mathrm{d}^{3}x\;\Bigl\{-\hbar\,r^{2}\dot\theta_{\mathrm{pha}}
+-\frac{\hbar^{2}}{2m}\Bigl(\lvert\vec\nabla r\rvert^{2}+r^{2}\Bigl\lvert\vec\nabla\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\vec A\Bigr\rvert^{2}\Bigr)
+-r^{2}V_{\mathrm{op}}+ϙ\varphi\,r^{2}\Bigr\}.
+$$</p>
+<p><strong>Four groups, and the coupling sits in two of them.</strong> The density times the phase rate; the density times the covariant kinetic term; the amplitude's gradient; the density times the potential energy. <strong>The second group is where the connection does all of its work, and the third is where it does none</strong>, because $\vec\nabla r$ carries no charge.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>group</th>
+<th>term</th>
+<th>the connection</th>
+<th>the limit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the phase's rate</td>
+<td>$-\hbar\,r^{2}\dot\theta_{\mathrm{pha}}$</td>
+<td>not here; $\varphi$ enters separately as $+ϙ\varphi r^{2}$</td>
+<td>keeps</td>
+</tr>
+<tr>
+<td>the covariant kinetic term</td>
+<td>$-\frac{\hbar^{2}}{2m}r^{2}\bigl\lvert\nabla\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\vec A\bigr\rvert^{2}$</td>
+<td>all of it, in three pieces</td>
+<td>keeps</td>
+</tr>
+<tr>
+<td>the amplitude's gradient</td>
+<td>$-\frac{\hbar^{2}}{2m}\lvert\vec\nabla r\rvert^{2}$</td>
+<td><strong>nothing</strong></td>
+<td><strong>drops</strong></td>
+</tr>
+<tr>
+<td>the potential</td>
+<td>$-r^{2}V_{\mathrm{op}}+ϙ\varphi r^{2}$</td>
+<td>the scalar potential</td>
+<td>keeps</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The three pieces of the second group.</strong> Expanding the covariant square,</p>
+<p>$$
+-\frac{\hbar^{2}}{2m}r^{2}\Bigl\lvert\nabla\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\vec A\Bigr\rvert^{2}
+=-\frac{\hbar^{2}}{2m}r^{2}\lvert\nabla\theta_{\mathrm{pha}}\rvert^{2}
+-\frac{\hbar ϙ}{m}r^{2}\,\vec A\cdot\nabla\theta_{\mathrm{pha}}
+-\frac{ϙ^{2}}{2m}r^{2}\lvert\vec A\rvert^{2},
+$$</p>
+<p><strong>the free term, the paramagnetic term and the diamagnetic term.</strong> The parent records that the three are one object read at three orders, and that the third's sign is what bounds the kinetic energy below.</p>
+<p><strong>The one fact the limit turns on.</strong> The amplitude's gradient is the only group with no connection in it. <strong>That is not an accident of the central word</strong>: $\vec\nabla r$ is a real gradient of a real magnitude, and the covariant derivative acts on the phase and on the frame, not on the scale. The whole of the article's gauge statement follows from this one observation.</p>
+<h2 id="the-criterion-and-which-wave-number">The Criterion, and Which Wave Number</h2>
+<p><strong>Every surviving term is a density times a scalar, and the scalars are invariants.</strong></p>
+<p>$$
+-\hbar\,r^{2}\dot\theta_{\mathrm{pha}}+ϙ\varphi\,r^{2}=r^{2}\bigl(-\partial_{t'}S_{\tilde\Xi}+ϙ\varphi\bigr)=r^{2}\mathcal E,
+\qquad
+-\frac{\hbar^{2}}{2m}r^{2}\Bigl\lvert\nabla\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\vec A\Bigr\rvert^{2}=r^{2}\frac{\lvert\vec\pi\rvert^{2}}{2m}.
+$$</p>
+<p><strong>The dropped group is the second times $\epsilon^{2}$, with $\epsilon$ built on the mechanical wave number.</strong></p>
+<p>$$
+\frac{\frac{\hbar^{2}}{2mL^{2}}}{\frac{\lvert\vec\pi\rvert^{2}}{2m}}=\frac{\hbar^{2}}{\lvert\vec\pi\rvert^{2}L^{2}}=\frac{1}{(k_\pi L)^{2}}=\epsilon^{2},
+\qquad
+k_\pi=\frac{\lvert\vec\pi\rvert}{\hbar}.
+$$</p>
+<p><strong>And $k_\pi$ is the only choice that is gauge invariant.</strong> Under $\tilde\Xi\mapsto e^{iϙ\Gamma/\hbar}\tilde\Xi$ the phase moves by $ϙ\Gamma/\hbar$ and the vector potential moves by $-\vec\nabla\Gamma$, so $\vec\nabla\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\vec A$ is invariant while $\vec\nabla\theta_{\mathrm{pha}}$ is not. <strong>A criterion written on $k_\Phi=\lvert\nabla S_{\tilde\Xi}\rvert/\hbar$ would change value under a gauge transformation and would therefore not be a criterion at all.</strong></p>
+<p><strong>What that does to the earlier statement.</strong> The substitution article writes $\epsilon=1/(k_\Phi L)$ and is right in the free case, where the two wave numbers coincide. In the coupled case it is right in order of magnitude and wrong in principle, and the correction is one letter:</p>
+<p>$$
+\epsilon=\frac{1}{k_\pi L},
+\qquad
+k_\pi=\frac{\lvert\vec p+ϙ\vec A\rvert}{\hbar}.
+$$</p>
+<p><strong>A corollary, and it is worth stating because it is counter-intuitive.</strong> A strong vector potential raises $k_\pi$ and lowers $\epsilon$, so <strong>a strong field makes the limit easier to satisfy and not harder</strong>. That is not a statement about the field being weak; it is the statement that the short-wavelength parameter is set by the mechanical momentum, which is what the surviving kinetic term is built from.</p>
+<p><strong>The field's own ratios are chart statements.</strong> The paramagnetic term against the free term is $ϙ\lvert\vec A\rvert/\lvert\vec p\rvert$, and neither factor is invariant: a gauge transformation moves both. <strong>The split into three pieces is a chart statement, and only the sum is physical.</strong> So no criterion can be built on "the coupling is small", and the article does not build one. The limit orders one ratio, $\epsilon$, and leaves the field's magnitude entirely free.</p>
+<p><strong>The second ratio.</strong> $1/(k_mL)$ with $k_m=mc/\hbar$ is the Compton length over $L$, the one-particle window as in the free companion, and it is not the criterion. Here it is also the only surviving non-invariant-looking quantity that is in fact invariant, since $m$ and $L$ carry no charge.</p>
+<p><strong>The table.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>comparison</th>
+<th>ratio</th>
+<th>invariant?</th>
+<th>ordered by the limit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>amplitude's gradient against the covariant kinetic term</td>
+<td>$\epsilon^{2}=1/(k_\pi L)^{2}$</td>
+<td><strong>yes</strong></td>
+<td>yes; the limit is $\epsilon\to0$</td>
+</tr>
+<tr>
+<td>amplitude's gradient against the rest term's analogue</td>
+<td>$1/(k_mL)^{2}$</td>
+<td>yes</td>
+<td>implied; the one-particle window</td>
+</tr>
+<tr>
+<td>paramagnetic against free kinetic</td>
+<td>$ϙ\lvert\vec A\rvert/\lvert\vec p\rvert$</td>
+<td>no</td>
+<td><strong>no</strong></td>
+</tr>
+<tr>
+<td>diamagnetic against free kinetic</td>
+<td>$(ϙ\lvert\vec A\rvert/\lvert\vec p\rvert)^{2}$</td>
+<td>no</td>
+<td><strong>no</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Read the last two rows as one.</strong> They are the two halves of a single invariant, $\lvert\vec\pi\rvert^{2}=\lvert\vec p\rvert^{2}+2ϙ\vec A\cdot\vec p+ϙ^{2}\lvert\vec A\rvert^{2}$, and a statement about either half alone is a statement about a chart.</p>
+<h2 id="the-truncated-action">The Truncated Action</h2>
+<p><strong>Delete the amplitude's gradient, and only it.</strong></p>
+<p>$$
+S^{\mathrm{trunc}}=\int\mathrm{d}t'\,\mathrm{d}^{3}x\;r^{2}F_{\mathrm{gco}},
+\qquad
+F_{\mathrm{gco}}=-\hbar\dot\theta_{\mathrm{pha}}
+-\frac{\hbar^{2}}{2m}\Bigl\lvert\nabla\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\vec A\Bigr\rvert^{2}-V_{\mathrm{op}}+ϙ\varphi .
+$$</p>
+<p><strong>The bracket is the covariant constraint.</strong> In terms of the invariants,</p>
+<p>$$
+F_{\mathrm{gco}}=-\mathcal E-\frac{\lvert\vec\pi\rvert^{2}}{2m}-V_{\mathrm{op}},
+$$</p>
+<p><strong>so $F_{\mathrm{gco}}=0$ is $\mathcal E=\lvert\vec\pi\rvert^{2}/(2m)+V_{\mathrm{op}}$</strong>, the eikonal of the substitution article, exactly.</p>
+<p><strong>Varying the phase.</strong></p>
+<p>$$
+\frac{\partial}{\partial t'}\bigl(\hbar\,r^{2}\bigr)+\vec\nabla\cdot\Bigl(\frac{\hbar^{2}}{m}r^{2}\Bigl(\vec\nabla\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\vec A\Bigr)\Bigr)=0
+\qquad\Longleftrightarrow\qquad
+\frac{\partial\rho}{\partial t'}+\vec\nabla\cdot\Bigl(\rho\frac{\vec\pi}{m}\Bigr)=0 .
+$$</p>
+<p><strong>The covariant continuity equation, exact.</strong> The truncation cannot touch it, because the discarded term contains no $\theta_{\mathrm{pha}}$.</p>
+<p><strong>Varying the amplitude.</strong></p>
+<p>$$
+-\hbar\dot\theta_{\mathrm{pha}}-\frac{\hbar^{2}}{2m}\Bigl\lvert\nabla\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\vec A\Bigr\rvert^{2}-V_{\mathrm{op}}+ϙ\varphi=0 ,
+$$</p>
+<p><strong>which is the eikonal and nothing else.</strong> The quantum potential was this term's variation and went with it.</p>
+<p><strong>The checks, with a constant connection $\vec A=(0.6,0,0)$ and $ϙ\varphi=0.175$.</strong> On a $31\times31$ grid against central differences of the discrete action: the amplitude variation matches to $3\times10^{-6}$ relative in the exact and in the truncated functional; the phase variation matches to $1\times10^{-7}$ and is <strong>identical in the two functionals to $10^{-6}$</strong>, which is the numerical statement that the discarded term is $\theta$-independent.</p>
+<p><strong>One sentence.</strong> The limit drops the only gauge-invariant group that has no connection in it, and leaves a Lagrangian that is the density times the covariant constraint.</p>
+<h2 id="the-density-is-the-multiplier-and-the-constraint-is-invariant">The Density Is the Multiplier, and the Constraint Is Invariant</h2>
+<p><strong>The multiplier form.</strong></p>
+<p>$$
+\mathcal L^{\mathrm{trunc}}=r^{2}F_{\mathrm{gco}},
+\qquad
+\frac{\delta S^{\mathrm{trunc}}}{\delta r}=2rF_{\mathrm{gco}} .
+$$</p>
+<p><strong>So $r^{2}$ multiplies the covariant constraint</strong>, and the phase's equation is the transport of the multiplier by the constraint's current. The structure is the free companion's, with covariant letters.</p>
+<p><strong>$F_{\mathrm{gco}}$ is gauge invariant, term by term.</strong> The phase rate and the scalar potential move by opposite amounts, $-\hbar\dot\theta_{\mathrm{pha}}\mapsto-\hbar\dot\theta_{\mathrm{pha}}-ϙ\dot\Gamma$ and $ϙ\varphi\mapstoϙ\varphi+ϙ\dot\Gamma$; and the covariant gradient is invariant by construction. <strong>So the constraint is invariant, and the two invariances are one: the phase's two appearances are the two halves of the covariant derivative in time.</strong></p>
+<p><strong>The consequence, and it explains a rule the substitution route had to impose.</strong> A constraint that is invariant can only determine invariants. So the eikonal fixes $\mathcal E$ and not $\theta_{\mathrm{pha}}$, and the phase's residual freedom is the gauge freedom. <strong>The substitution article's rule — write the expansion on invariants — is therefore not a methodological preference but a consequence of what the truncated action can say.</strong> The phase is one coordinate of a redundant description, and a constraint on the description cannot fix a redundant coordinate.</p>
+<p><strong>What the multiplier does not do.</strong> It does not become a Lagrange multiplier for a gauge constraint. The gauge direction is a redundancy of the <em>field</em>, and the constraint $F_{\mathrm{gco}}=0$ is the <em>limit's</em> constraint; the two are different objects and the article keeps them apart. The first says that two parameter sets describe one field; the second says that the classical field's phase obeys an equation of first order.</p>
+<p><strong>The counting.</strong> One primary constraint, $p_r=0$, in the parent and in the truncation, exactly as in the free companion; one secondary constraint which is the amplitude's equation, second order in space in the parent and algebraic in the truncation; and the gauge direction, which is a redundancy and not a degree of freedom in either. <strong>The coupling changes none of the three counts.</strong> That is the parent's finding — the coupling neither creates a constraint nor removes one — carried through the limit.</p>
+<h2 id="gauge-invariance-is-preserved-exactly">Gauge Invariance Is Preserved Exactly</h2>
+<p><strong>The argument is one line, and it is the reason the truncation is legitimate.</strong> The dropped group is $-\frac{\hbar^{2}}{2m}\lvert\vec\nabla r\rvert^{2}$. It contains $r$ and its gradient and nothing else, and $r\mapsto r$ under the gauge group. <strong>So the dropped group is invariant, the truncation of an invariant action by an invariant subgroup is invariant, and the limit commutes with the gauge transformation.</strong></p>
+<p><strong>Why the three coupling pieces must go together.</strong> They are one square, and a truncation that kept the free term and the paramagnetic term and dropped the diamagnetic one would (i) not be this limit, since it would be an expansion in $ϙ\vec A$ and not in $\epsilon$, and (ii) not be gauge invariant, since the three pieces are not separately invariant. <strong>The kinetic energy would also not be bounded below</strong>, because the quadratic term is the positive one. So the coupling expansion is a different limit, and the difference is visible in the action and not only in the answers.</p>
+<p><strong>What the limit and the gauge group have in common.</strong> Both act on the phase; neither acts on the scale. That is why they commute, and it is worth saying in that form: <strong>the limit is a statement about the scale, the gauge group is a statement about the phase, and the two coordinates are independent in the chart.</strong> In the general element the frame would be involved and the statement would need the frame's brackets, which is the parent's cross-term warning; on the central field the two coordinates are all there is.</p>
+<p><strong>A test the article can perform and the substitution route cannot.</strong> Take a gauge transformation with a constant $\Gamma$: it shifts the phase everywhere and leaves the field unchanged. In the parent action the shift changes the kinetic term and the potential term by equal and opposite amounts, and the total is unchanged up to no boundary because $\Gamma$ is constant. In the truncated action the same happens with $r^{2}$ in place of $r^{2}\cosh\theta_{\mathrm{rpd}}$. <strong>So the truncated action is invariant under the same group, with the same mechanism, and the multiplier is invariant.</strong></p>
+<h2 id="the-current-and-the-vorticity">The Current and the Vorticity</h2>
+<p><strong>The current is the action's derivative, and it is unchanged by the truncation.</strong></p>
+<p>$$
+-\frac{\partial\mathcal L}{\partial\vec A}=\frac{\hbar^{2}}{2m}r^{2}\cdot2\Bigl(\nabla\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\vec A\Bigr)\frac{ϙ}{\hbar}
+=ϙ\,\frac{\rho\,\vec\pi}{m}=ϙ\,\vec j ,
+$$</p>
+<p><strong>in the exact and in the truncated Lagrangian alike</strong>, because the only $\vec A$-dependence of either is the covariant square. The identity was verified numerically at a sample point.</p>
+<p><strong>The reading.</strong> The current's three pieces — gradient, linear, quadratic — are one object, and only the sum is invariant. In the truncated theory the same three pieces are present and the same identity holds, so <strong>the limit does not deform the current</strong>. A conservation law that is a variation survives a truncation that leaves the variation alone.</p>
+<p><strong>The vorticity.</strong> The velocity is $\vec\pi/m$, and its curl is</p>
+<p>$$
+\vec\nabla\times\vec v=\frac{ϙ}{m}\vec B ,
+$$</p>
+<p><strong>exactly, in both theories.</strong> In the parent this is a property of the pair; in the truncated theory it is the statement that the dust is rotational exactly where the field is, because the constraint's gradient is the Lorentz force and the curl of that force is the field. The integral form is the circulation quantum $\oint\vec v\cdot d\vec l=(2\pi\hbar n+ϙ\Phi_B)/m$, which contains no $\epsilon$ at all and is therefore inherited by the limit rather than produced by it.</p>
+<p><strong>What the limit adds to the vorticity statement.</strong> Nothing, and that is the point: a topological statement about a loop cannot be ordered in $\epsilon$, so any limit that changed it would be wrong. The circulation is the corpus's sharpest test of a limit, and this one passes it because the phase's Euler–Lagrange equation is untouched.</p>
+<h2 id="the-triangular-structure-with-the-field">The Triangular Structure, With the Field</h2>
+<p><strong>After the truncation, in order.</strong></p>
+<ol>
+<li>The eikonal fixes the invariant energy: $\mathcal E=\lvert\vec\pi\rvert^{2}/(2m)+V_{\mathrm{op}}$, with $\mathcal E=-\partial_{t'}S_{\tilde\Xi}+ϙ\varphi$ and $\vec\pi=\nabla S_{\tilde\Xi}+ϙ\vec A$.</li>
+<li>The flow is $\vec v=\vec\pi/m$, and its acceleration is the Lorentz force, which follows from taking the gradient of the eikonal once.</li>
+<li>The covariant continuity equation transports $\rho$ along that flow.</li>
+<li>Nothing else is required.</li>
+</ol>
+<p><strong>Step one is one equation for one invariant</strong>, and the gauge freedom is what makes that possible: a scalar equation cannot fix a coordinate that has a redundancy, so the equation must be for the invariant, and it is.</p>
+<p><strong>Before the truncation step one needs $Q$</strong>, which needs $\Delta_\Phi r$, and the four steps do not close. The limit is what makes them an algorithm, in this family exactly as in the three others.</p>
+<h2 id="what-the-variational-route-adds">What the Variational Route Adds</h2>
+<p><strong>Four things, in order of importance.</strong></p>
+<p><em>The wave number.</em> The criterion is $\epsilon=1/(k_\pi L)$ with $k_\pi=\lvert\vec\pi\rvert/\hbar$, and this is the only gauge-invariant reading. The substitution route's $k_\Phi$ is correct only in the free case. <strong>This is the article's correction to the route-one statement</strong>, and it is not a refinement of notation: a criterion that moves under gauge transformations is not a criterion.</p>
+<p><em>The gauge invariance of the truncation, proved rather than checked.</em> The dropped group is invariant because it carries no charge, so the limit commutes with the gauge group. The substitution route can verify this on the resulting equations; the action shows why.</p>
+<p><em>Why the expansion must be written on invariants.</em> The truncated constraint is invariant, so it can only determine invariants; the phase's freedom is the gauge freedom. The rule that route one states as a requirement is, on this route, a consequence of the form of $\mathcal L^{\mathrm{trunc}}$.</p>
+<p><em>The difference between the two truncations.</em> Dropping the amplitude's gradient and expanding in the coupling are different operations with different properties: the first is invariant and bounded below, the second is neither. <strong>The action is the only place where the two are visibly different</strong>, because the object that distinguishes them is the single square $\lvert\nabla\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\vec A\rvert^{2}$.</p>
+<p><strong>What it does not add.</strong> No new solution, no new prediction, no new constraint. The pair is the substitution article's pair.</p>
+<h2 id="summary">Summary</h2>
+<p>The coupled polar action in the operator setting has four groups, and the connection sits entirely in one of them: the covariant kinetic square, whose three pieces are the free term, the paramagnetic term and the diamagnetic term. The amplitude's gradient is the only group with no connection in it, and it is the group the limit drops. Because every surviving term is a density times an invariant, the criterion is read directly off the action as $\epsilon=1/(k_\pi L)$ with $k_\pi=\lvert\vec\pi\rvert/\hbar$ — <strong>the mechanical wave number, which is the only gauge-invariant one</strong>, so that the substitution article's $k_\Phi$ is right only in the free case, and a strong field makes the limit easier rather than harder.</p>
+<p>The truncated action is the density times the covariant constraint, so the density is the Lagrange multiplier of $\mathcal E=\lvert\vec\pi\rvert^{2}/(2m)+V_{\mathrm{op}}$ and its own equation is the covariant continuity equation. The constraint is gauge invariant term by term, which is why it can fix $\mathcal E$ and cannot fix the phase, and that is the origin of the rule that the expansion must be written on invariants. The truncation preserves gauge invariance exactly, because the dropped group carries no charge; the current $-\partial\mathcal L/\partial\vec A=ϙ\rho\vec\pi/m$ and the vorticity $ϙ\vec B/m$ are unchanged, and the circulation quantum is inherited rather than produced. $p_r=0$ in the parent and in the truncation, so the limit creates no constraint and only turns a second-order spatial equation into an algebraic one.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$S$</td>
+<td>The coupled polar action in the operator setting; four groups</td>
+</tr>
+<tr>
+<td>$r^{2}\lvert\nabla\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\vec A\rvert^{2}\hbar^{2}/2m$</td>
+<td>The covariant kinetic group; all of the connection is here</td>
+</tr>
+<tr>
+<td>$\lvert\vec\nabla r\rvert^{2}\hbar^{2}/2m$</td>
+<td>The amplitude's gradient; the only group dropped; carries no charge</td>
+</tr>
+<tr>
+<td>$+ϙ\varphi\,r^{2}$</td>
+<td>The scalar potential's term; pairs with $-\hbar r^{2}\dot\theta_{\mathrm{pha}}$</td>
+</tr>
+<tr>
+<td>$\vec\pi=\hbar\nabla\theta_{\mathrm{pha}}+ϙ\vec A$</td>
+<td>The mechanical momentum; invariant</td>
+</tr>
+<tr>
+<td>$\mathcal E=-\hbar\dot\theta_{\mathrm{pha}}+ϙ\varphi$</td>
+<td>The invariant energy</td>
+</tr>
+<tr>
+<td>$\epsilon=1/(k_\pi L)$, $k_\pi=\lvert\vec\pi\rvert/\hbar$</td>
+<td>The parameter of the limit; the only invariant choice</td>
+</tr>
+<tr>
+<td>$1/(k_mL)$</td>
+<td>The one-particle window; not the limit</td>
+</tr>
+<tr>
+<td>$F_{\mathrm{gco}}=-\mathcal E-\lvert\vec\pi\rvert^{2}/2m-V_{\mathrm{op}}$</td>
+<td>The covariant constraint the density multiplies</td>
+</tr>
+<tr>
+<td>$-\partial\mathcal L/\partial\vec A=ϙ\rho\vec\pi/m$</td>
+<td>The current, identical in both theories</td>
+</tr>
+<tr>
+<td>$\vec\nabla\times\vec v=ϙ\vec B/m$</td>
+<td>The vorticity, identical in both theories</td>
+</tr>
+<tr>
+<td>$p_r=0$</td>
+<td>The primary constraint, in the parent and in the truncation</td>
+</tr>
+<tr>
+<td>$ϙ\lvert\vec A\rvert/\lvert\vec p\rvert$</td>
+<td>A chart ratio; not a criterion</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>E. Madelung, "Quantentheorie in hydrodynamischer Form," <em>Zeitschrift für Physik</em> <strong>40</strong> (1927) 322–326, for the hydrodynamic action.</li>
+<li>T. Takabayasi, "On the formulation of quantum mechanics associated with classical pictures," <em>Progress of Theoretical Physics</em> <strong>8</strong> (1952) 143–182, for the hydrodynamic reading of a charged fluid.</li>
+<li>F. London, "Zur Theorie der supraelitenden Zustände," <em>Zeitschrift für Physik</em> <strong>54</strong> (1929) 408–421, for the rigidity of the wave function's phase and the current as the action's derivative with respect to the potential.</li>
+<li>M. V. Berry, "Quantum phase corrections from adiabatic iteration," <em>Proceedings of the Royal Society of London A</em> <strong>414</strong> (1987) 31–46, for the gauge invariance of the invariant combinations and the covariance of the phase.</li>
+<li>P. A. M. Dirac, <em>Lectures on Quantum Mechanics</em> (Yeshiva University, 1964), for primary and secondary constraints and a multiplier that is a field.</li>
+<li>C. M. Bender and S. A. Orszag, <em>Advanced Mathematical Methods for Scientists and Engineers</em> (Springer, 1999), chapter 10, for the short-wavelength expansion with a vector potential and the role of the mechanical rather than the canonical momentum.</li>
+<li>M. V. Berry and K. E. Mount, "Semiclassical approximations in wave mechanics," <em>Reports on Progress in Physics</em> <strong>35</strong> (1972) 315–397, for the gauge-invariant form of the short-wavelength parameter.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Non-Quantum Limit of the Free Dirac Equation — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-non-quantum-limit-of-the-free-dirac-equation"><strong>The Non-Quantum Limit of the Free Dirac Equation</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The limit in the first-order family, and what the first order changes.</strong> The Schrödinger and Klein–Gordon families are second order and the limit there is a statement about which of two real lines of an identity survives. The Dirac equation is first order and the phase enters the gradient as a multiplication, so the limit is a statement about a <strong>symbol</strong>: to leading order the gradient acts as multiplication by $i\tilde K_\Psi$, and the eikonal is the condition that this multiplication reproduce the mass.</p>
+<p><strong>What the article establishes, in five sentences.</strong> The pair $\tilde\nabla_\Phi\tilde\Xi_R=k_m\tilde\Xi_L$, $(\tilde\nabla_\Phi)^\natural\tilde\Xi_L=k_m\tilde\Xi_R$ is exact and its second-order consequence is one identity in the amplitude and the phase. The identity separates into a real line and an imaginary line: the real line is the mass shell corrected by the quantum potential, the imaginary line is the continuity equation and is exact. The criterion is unchanged at $\epsilon=1/(k_\Phi L)$, and the mass is <strong>not ordered by it</strong>, which is the family's structural difference: $k_m$ sits at order zero beside the phase's gradient and no power counting in it is available. At order zero the eikonal is $\frac{E^{2}}{c^{2}}-\lvert\vec p\rvert^{2}=m^{2}c^{2}$ read as $\langle\tilde K_\Psi\rangle_\natural=k_m^{2}$, its characters are the straight timelike lines of a dust, and the spin is absent for a structural reason: a norm is central and cannot act on $\xi$. The error of the eikonal is $2\epsilon^{2}$ in relative terms, and the transport equation is not an approximation at all.</p>
+<p><strong>What is not new, and where the mechanics is.</strong> The chiral pair, the covariant derivative, the reading of $\vec v=c^{2}\vec p/E$ and the derivation of the Lorentz force are <em>Relativistic Mechanics from the Dirac Wave</em>'s, and the article cites it for the flow and the force. <strong>What is added here is the limit's own account</strong>: the criterion read on a first-order symbol, the ordering table, the exactness of the transport line, the two sheets and the sign of the density, the pair-creation boundary, and the ledger of what the limit does not order.</p>
+<p><strong>Notation, stated once.</strong> The action of the field is $S_{\tilde\Xi}$ and the spinor phase is $\theta_{\mathrm{phs}}=S_{\tilde\Xi}/\hbar$, real because the action is real. The word is $\tilde\Xi=A\,e^{i\theta_{\mathrm{phs}}}\xi$ with $A>0$ real and $\xi$ slowly varying; the two chiral halves carry the same phase. The subscript on $S_{\tilde\Xi}$ is not decoration: the spin $\tilde S_{\Psi,\eta}$ appears below and a bare $S$ would be read for either.</p>
+<h2 id="the-pair-and-the-exact-identity">The Pair and the Exact Identity</h2>
+<p><strong>The equations.</strong></p>
+<p>$$
+\tilde\nabla_\Phi\tilde\Xi_{R}=k_{m}\tilde\Xi_{L},
+\qquad
+(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_{L}=k_{m}\tilde\Xi_{R},
+\qquad
+k_{m}=\frac{m\,c}{\hbar},
+$$</p>
+<p>with $\Box_\Phi=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$ and $r'_t=c\,t$. Each half obeys $(\Box_\Phi-k_m^{2})\tilde\Xi=0$, and the operator is a central scalar, so <strong>the expansion never has to choose a chiral half</strong>. That is the first thing the first order gives: one scalar identity serves both halves.</p>
+<p><strong>The identity.</strong> Multiply $(\Box_\Phi-k_{m}^{2})\tilde\Xi=0$ by $-\hbar^{2}$ and divide by $\tilde\Xi$:</p>
+<p>$$
+-\left[\frac{(\partial_{t}S_{\tilde\Xi})^{2}}{c^{2}}-\lvert\nabla S_{\tilde\Xi}\rvert^{2}-m^{2}c^{2}\right]
++\hbar^{2}\left[\frac{1}{c^{2}}\frac{\partial_{t}^{2}A}{A}-\frac{\nabla^{2}A}{A}\right]
++\frac{i\hbar}{A^{2}}\left[\frac{1}{c^{2}}\partial_{t}\!\left(A^{2}\partial_{t}S_{\tilde\Xi}\right)-\nabla\cdot\left(A^{2}\nabla S_{\tilde\Xi}\right)\right]=0 .
+$$</p>
+<p><strong>Three lines, one identity, and no order taken.</strong> The first line is a difference of energies of scale $p^{2}$; the second is the quantum potential's; the third is the continuity equation's, and it is imaginary.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>line</th>
+<th>scale</th>
+<th>order</th>
+<th>what it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>first</td>
+<td>$p^{2}$</td>
+<td>$1$</td>
+<td>the mass shell, corrected by the second line</td>
+</tr>
+<tr>
+<td>second</td>
+<td>$\hbar^{2}/(L^{2})$</td>
+<td>$\epsilon^{2}$</td>
+<td>the quantum potential $Q$</td>
+</tr>
+<tr>
+<td>third</td>
+<td>$\hbar\,p/L$</td>
+<td>$\epsilon$</td>
+<td>the continuity equation, <strong>exactly</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The third line is not a small term.</strong> Its magnitude is $\epsilon$ against the first, which is <em>larger</em> than the second's $\epsilon^{2}$, and that ordering is the family's signature: the transport equation is the leading order of the imaginary part and the quantum potential is the subleading order of the real part. <strong>The two are not in competition, because they are the two parts of one complex identity.</strong></p>
+<p><strong>Why the third line is exact.</strong> It is the imaginary part, and the only term with an imaginary part is itself. Setting it to zero is not an approximation, it is the identity's imaginary component. <strong>The transport equation of this family is exact, as in the Klein–Gordon family and for the same reason</strong>: the quantum potential is real and cannot reach it.</p>
+<p><strong>What first order changes, in one line.</strong> The gradient acting on $\tilde\Xi$ is, to leading order,</p>
+<p>$$
+\tilde\nabla_\Phi\tilde\Xi=\frac{1}{\hbar}\Bigl(\frac{\partial_{t}S_{\tilde\Xi}}{c}\,e_{t}+i\nabla S_{\tilde\Xi}\Bigr)\tilde\Xi+\mathcal{O}(\epsilon),
+$$</p>
+<p><strong>so the limit is the statement that a differential operator is a multiplication.</strong> For a second-order family the same statement is about a Laplacian; here it is about a Dirac operator, and the object that replaces a Laplacian is an element of the algebra. Its entries are $\frac{1}{\hbar c}\partial_{t}S_{\tilde\Xi}$ in the temporal slot and $\frac{i}{\hbar}\nabla S_{\tilde\Xi}$ in the vector slots, real in the first and imaginary in the second, which is the $\mathbb{B}_{\Psi}$ type.</p>
+<p><strong>The symbol, named.</strong> Write</p>
+<p>$$
+\tilde K_{\Psi}=\frac{1}{\hbar}\Bigl(\frac{E}{c}\,e_{t}+i\vec p\cdot\vec e\Bigr),
+\qquad
+E=-\partial_{t}S_{\tilde\Xi},
+\qquad
+\vec p=\nabla S_{\tilde\Xi}.
+$$</p>
+<p><strong>The limit says: the operator is $\tilde K_{\Psi}$ to relative order $\epsilon$, and the equation is the algebraic statement about $\tilde K_{\Psi}$ that the exact equation implies.</strong></p>
+<h2 id="the-criterion">The Criterion</h2>
+<p><strong>Unchanged, and for the same reason as in the other families.</strong></p>
+<p>$$
+\epsilon=\frac{1}{k_{\Phi}L}=\frac{\hbar}{\lvert\vec p\rvert L},
+$$</p>
+<p>with $L$ the length over which $A$ varies. The discarded object is the amplitude's derivative against the phase's, and the phase's derivative is the momentum over $\hbar$ in every family. <strong>The criterion is a property of the word and not of the equation's order.</strong></p>
+<p><strong>The mass is not ordered by it.</strong> This is the family's structural difference, and it is worth stating precisely, because a reader who has read the second-order articles will expect it. There the mass term competes with $\partial_{t}S_{\tilde\Xi}$ in the eikonal and the ratio $k_mL$ is a second parameter, the one-particle window, nested inside $\epsilon$ by $1/(k_mL)=\epsilon\lvert\vec p\rvert/(mc)$. <strong>Here $k_m$ is not in the phase at all</strong>: it is the constant the gradient's multiplication must reproduce, and the eikonal is the condition that it does. So no power counting in $k_m$ is available and none is needed.</p>
+<p><strong>What $1/(k_mL)$ does mean here.</strong> It is $\hbar/(mcL)$, the Compton length over $L$, and a small value says that the amplitude varies slowly on the scale at which pairs are made. <strong>That is the boundary of the one-particle reading and not a parameter of the expansion</strong>, and in this family it has a sharper meaning than in the others: the negative branch of the eikonal is not a defect to be removed but the antiparticle's branch, and the scale at which the two branches stop being separable is $1/k_m$.</p>
+<p><strong>The table.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>comparison</th>
+<th>ratio</th>
+<th>the limit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>amplitude's gradient against the phase's gradient</td>
+<td>$\epsilon^{2}=\hbar^{2}/(\lvert\vec p\rvert^{2}L^{2})$</td>
+<td>yes; the limit is $\epsilon\to0$</td>
+</tr>
+<tr>
+<td>amplitude's gradient against the mass term</td>
+<td>$\hbar^{2}/(m^{2}c^{2}L^{2})=(k_mL)^{-2}$</td>
+<td>no; a boundary of the one-particle reading</td>
+</tr>
+<tr>
+<td>quantum potential against the eikonal</td>
+<td>$\epsilon^{2}$</td>
+<td>no; the error</td>
+</tr>
+<tr>
+<td>the third line against the eikonal</td>
+<td>$\epsilon$</td>
+<td>no; it is an equation</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Read the last two rows together.</strong> The imaginary line is larger than the real correction and is not an error, and a table that sorted the three lines by size and dropped the large ones would drop the transport equation and keep the quantum potential. <strong>The ordering of a complex identity is by part, not by magnitude</strong>, and that is the trap the first-order family sets.</p>
+<h2 id="order-zero-the-eikonal-as-a-norm">Order Zero: the Eikonal as a Norm</h2>
+<p><strong>Drop the second line and keep the first; the third is the other part.</strong></p>
+<p>$$
+\frac{E^{2}}{c^{2}}-\lvert\vec p\rvert^{2}=m^{2}c^{2},
+\qquad\text{that is}\qquad
+\langle\tilde K_{\Psi}\rangle_{\natural}=k_{m}^{2},
+$$</p>
+<p><strong>with $\langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^\natural=\sum_\mu Q_\mu^{2}$ and the $i$ on the vector slots.</strong> The sign is the sector's: in the material sector the $i$ sits on the temporal slot and the norm reads $-k_m^{2}$, as the Klein–Gordon articles have it. <strong>Same object, same convention, opposite sign because the $i$ moved.</strong></p>
+<p><strong>The characters are dust's.</strong> The eikonal is a first-order partial differential equation, so its characteristics are the rays of $\vec p=\nabla S_{\tilde\Xi}$ and</p>
+<p>$$
+\vec v=\frac{c^{2}\vec p}{E},
+$$</p>
+<p><strong>which is $\vec p=\gamma m\vec v$ read backwards.</strong> The rays are straight in the free case, timelike, and carry the density $A^{2}$ — so the object the limit delivers is a congruence of timelike lines with a density, and not a trajectory. <strong>The limit does not select one line</strong>: it delivers all of them, and a trajectory is a choice of one characteristic.</p>
+<p><strong>What the eikonal is not.</strong> It is not an equation for a ray but for a family, and that is the same in every family: the eikonal is a Hamilton–Jacobi equation, its complete integral is a family, and the limit's classical object is the family. The word "trajectory" in the corpus's summaries always means one member of it.</p>
+<p><strong>The two branches, and this is the family's own statement.</strong> The eikonal is quadratic in $E$ and its two roots are $E=\pm c\sqrt{\lvert\vec p\rvert^{2}+m^{2}c^{2}}$. <strong>The limit keeps both</strong>, and neither is a defect: they are the field's two chiral halves' shared eikonal, and the sign of $\partial_t S_{\tilde\Xi}$ is what distinguishes them.</p>
+<p><strong>The sign of the density, stated carefully, because the two families differ.</strong> The transport current is $j^{\mu}=A^{2}\partial^{\mu}S_{\tilde\Xi}$, whose temporal component is $A^{2}\partial_{t}S_{\tilde\Xi}/c$ and therefore changes sign with the branch. <strong>The Dirac bilinear $\tilde\Xi^{*}\tilde\Xi$ is positive definite and is not this current</strong>: the two differ by the Gordon term, which is a total derivative carrying the spin and is of order $\hbar$. So the limit's current inherits the sign ambiguity, and the positivity of the Dirac density lives in the term the limit drops. <em>The Gordon Decomposition of the Dirac Current in Biquaternionic Form</em> is where that split is computed; the limit's business is to record that the split is at order one and is not removable at order zero.</p>
+<p><strong>This is a genuine difference from the Klein–Gordon family.</strong> There the indefinite charge is a property of the pair and the limit keeps it, and the article recorded it as a defect that only second quantisation removes. Here the indefiniteness is in the transport current and the positive object exists at order zero in the algebra; <strong>the limit separates them, and the separation is the spin.</strong></p>
+<h2 id="order-one-the-transport-equation">Order One: the Transport Equation</h2>
+<p><strong>The third line, set to zero.</strong></p>
+<p>$$
+\frac{1}{c^{2}}\partial_{t}\!\left(A^{2}\partial_{t}S_{\tilde\Xi}\right)-\nabla\cdot\left(A^{2}\nabla S_{\tilde\Xi}\right)=0,
+\qquad\text{that is}\qquad
+\partial_{\mu}\bigl(A^{2}\partial^{\mu}S_{\tilde\Xi}\bigr)=0 .
+$$</p>
+<p><strong>Exact, and it is the conservation of $j^{\mu}=A^{2}\partial^{\mu}S_{\tilde\Xi}$.</strong> Nothing was discarded to obtain it.</p>
+<p><strong>What it does and does not determine.</strong> It determines $A^{2}$ along the rays once the rays are known, and it determines nothing about the rays. <strong>The pair is triangular in the same order as everywhere else</strong>: the eikonal fixes the rays, the rays fix the drift, the transport fixes the density. What is specific here is that the transport equation is the <em>imaginary</em> part of one complex identity and the eikonal is the <em>real</em> part, so the two are one equation's components and not two equations.</p>
+<p><strong>A density, not a probability.</strong> $A^{2}$ is the density of the congruence, and the corpus does not read it as a probability at this stage: a probability needs the positive bilinear, which is the Gordon split's other half. <strong>The limit's $A^{2}$ is a number density of dust lines</strong>, and that is the reading the transport equation supports.</p>
+<p><strong>Why the spin cannot be here either.</strong> The transport equation is scalar and the density is a scalar; no spinor index appears in it. <strong>The spin enters only where the two chiral halves stop sharing a phase</strong>, which is order one and is the next section's subject.</p>
+<h2 id="the-spin-is-absent-at-order-zero-structurally">The Spin Is Absent at Order Zero, Structurally</h2>
+<p><strong>The argument is one line and it is exact.</strong> The leading multiplier is $\tilde K_{\Psi}$, and the eikonal is its norm, $\langle\tilde K_{\Psi}\rangle_\natural$. <strong>A norm is central</strong>, so it commutes with $\xi$ and cannot act on it. The order-zero equation therefore cannot see the spinor at all, and the reason is algebraic and not an approximation.</p>
+<p><strong>What that rules out.</strong> No spin term can appear in the eikonal, in the flow or in the transport equation, whatever the field. The force computed from the coupled eikonal in the companion carries no spin for that reason, and the result is the Lorentz force and not the Bargmann–Michel–Telegdi equation.</p>
+<p><strong>Where the spin is.</strong> At order one, in the failure of the two orderings of the coupled gradient to commute. The corpus's $g=2$ article identifies the term, whose space–space part is $\sum_\eta\tilde S_{\Psi,\eta}B_\eta$ and whose coefficient is $-\frac{ϙ}{m}$, and this article locates it rather than deriving it. <strong>The statement worth keeping is the ordering</strong>: the spin is not a small correction to a classical particle, it is the first term at which the operator stops being a multiplication, and a limit that dropped it would be a limit of a scalar equation.</p>
+<p><strong>The $\hbar$ is not small.</strong> $\frac{\hbar}{2}$ survives the limit because the limit sends $\epsilon\to0$ and not $\hbar\to0$. <strong>This is the sharpest statement of why the corpus's criterion had to be an inverse length</strong>: a limit that set $\hbar$ to zero would set the spin to zero and would not be a limit of the Dirac family at all.</p>
+<h2 id="failure-regions">Failure Regions</h2>
+<p><strong>Three, and they are places.</strong></p>
+<p><em>Caustics.</em> Where the congruence focuses, $A$ diverges and $\epsilon$ grows without bound. The eikonal is still a solution; the expansion is not, because the amplitude's gradient is no longer small. <strong>A caustic is where the limit's own criterion fails, and the failure is measured in $\epsilon$ and not in the distance to the caustic.</strong></p>
+<p><em>Where the amplitude varies on the de Broglie scale.</em> $\epsilon\sim1$ over a region, so the second line of the identity is comparable with the first and the quantum potential is of the same size as the eikonal. This is the region the approximation excludes by construction.</p>
+<p><em>Where the amplitude varies on the Compton scale.</em> $(k_mL)\sim1$, so the one-particle reading fails: the two branches of the eikonal stop being separable and the negative branch is no longer interpretable as the antiparticle's partner of a positive-branch state. <strong>The limit has no claim there</strong>, and the region's size is $\hbar/(mc)$, which is the only place in this family where the mass sets a length.</p>
+<p><strong>What is not a failure region.</strong> A turning point in the Schrödinger sense is not one here. The eikonal's characteristics are timelike everywhere and its flow is $\vec v=c^{2}\vec p/E$ with $\lvert\vec v\rvert<c$ for every $\vec p$, so a turning point would need $\vec p=0$ and the flow cannot stop at one. <strong>The classical turning point is a $\beta$ limit's object</strong>, and the audit's remark that the two limits do not commute at the order of the discarded term is the reason a statement carried from one to the other must name its path.</p>
+<p><strong>A plane wave is the case in which nothing is dropped.</strong> For $\tilde\Xi=\xi\,e^{-i\theta_{\mathrm{pwp}}}$ with $\theta_{\mathrm{pwp}}=p\cdot x/\hbar$ the amplitude is constant, both $A$-derivative lines vanish identically, and the eikonal is satisfied exactly. <strong>The limit is empty where it is exact</strong>, and it acts only where the amplitude varies — the same verdict as in the three other families.</p>
+<h2 id="what-the-limit-does-not-order">What the Limit Does Not Order</h2>
+<p><strong>Four things, and each is a statement about the family.</strong></p>
+<p><em>The mass.</em> $k_m$ is a constant of the eikonal and not a term of an expansion. <strong>No statement of the form "the mass is small" belongs to this limit</strong>, and the nonrelativistic limit is the separate $\beta$ family that subtracts the rest phase.</p>
+<p><em>The spin.</em> It sits at order one, in the commutator, and the limit neither removes nor produces it. Its coefficient is fixed by the algebra and its value $g=2$ is the corpus's result and not this article's.</p>
+<p><em>The charge.</em> With a connection the eikonal carries it in the mechanical momentum and the criterion must be written on that, as the coupled companion shows. <strong>The limit orders $\epsilon$ and not the coupling</strong>, exactly as in the other families.</p>
+<p><em>Superposition.</em> The limit is not linear: the eikonal of a sum is not the sum of the eikonals, and two waves with different phases give no single $\epsilon$. <strong>The limit acts on one phase and one amplitude</strong>, which is what makes it a limit of a family of solutions and not of the equation.</p>
+<h2 id="summary">Summary</h2>
+<p>The Dirac equation is first order, so its non-quantum limit is the statement that the gradient is, to relative order $\epsilon$, multiplication by $\tilde K_{\Psi}=\frac{1}{\hbar}(\frac{E}{c}e_{t}+i\vec p\cdot\vec e)$. The pair $\tilde\nabla_\Phi\tilde\Xi_R=k_m\tilde\Xi_L$, $(\tilde\nabla_\Phi)^\natural\tilde\Xi_L=k_m\tilde\Xi_R$ gives one exact identity whose real part is the mass shell corrected by the quantum potential and whose imaginary part is the continuity equation. The criterion is unchanged at $\epsilon=1/(k_\Phi L)$; the mass is not ordered by it, because $k_m$ is the constant the eikonal must reproduce rather than a term of the expansion; and $1/(k_mL)$ is the boundary of the one-particle reading and not a parameter.</p>
+<p>At order zero the eikonal is $\frac{E^{2}}{c^{2}}-\lvert\vec p\rvert^{2}=m^{2}c^{2}$, read as $\langle\tilde K_\Psi\rangle_\natural=k_m^{2}$, its characters are timelike straight lines with density $A^{2}$, and the flow is $\vec v=c^{2}\vec p/E$. The spin is absent at order zero for an algebraic reason — a norm is central and cannot act on $\xi$ — and it enters at order one in the commutator of the two orderings. The transport equation is exact and its current $A^{2}\partial^{\mu}S_{\tilde\Xi}$ changes sign with the eikonal's branch, while the positive Dirac bilinear differs from it by the Gordon term, so the limit separates the sign ambiguity from the positivity and the separation is the spin. The three failure regions are caustics, the de Broglie scale and the Compton scale, and the last is the only place where the mass sets a length.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde\nabla_\Phi\tilde\Xi_R=k_m\tilde\Xi_L$</td>
+<td>The first half of the pair</td>
+</tr>
+<tr>
+<td>$(\tilde\nabla_\Phi)^\natural\tilde\Xi_L=k_m\tilde\Xi_R$</td>
+<td>The second half</td>
+</tr>
+<tr>
+<td>$\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial{r'_t}^{2}$</td>
+<td>The central scalar the pair squares to; $r'_t=c\,t$</td>
+</tr>
+<tr>
+<td>$\tilde\Xi=A\,e^{i\theta_{\mathrm{phs}}}\xi$</td>
+<td>The word; $A>0$ real, $\theta_{\mathrm{phs}}=S_{\tilde\Xi}/\hbar$, $\xi$ slowly varying</td>
+</tr>
+<tr>
+<td>$\epsilon=1/(k_\Phi L)=\hbar/(\lvert\vec p\rvert L)$</td>
+<td>The parameter of the limit; $L$ the length over which $A$ varies</td>
+</tr>
+<tr>
+<td>$k_m=mc/\hbar$</td>
+<td>The mass wave number; the Compton length's reciprocal</td>
+</tr>
+<tr>
+<td>$\tilde K_\Psi=\frac{1}{\hbar}(\frac{E}{c}e_t+i\vec p\cdot\vec e)$</td>
+<td>The symbol; the gradient's leading multiplier</td>
+</tr>
+<tr>
+<td>$\langle\tilde K_\Psi\rangle_\natural=k_m^{2}$</td>
+<td>The eikonal, as a norm</td>
+</tr>
+<tr>
+<td>$Q=\frac{\hbar^{2}}{2m}\frac{\Box_\Phi A}{A}$</td>
+<td>The quantum potential; the second line's content</td>
+</tr>
+<tr>
+<td>$j^{\mu}=A^{2}\partial^{\mu}S_{\tilde\Xi}$</td>
+<td>The transport current; exact; changes sign with the branch</td>
+</tr>
+<tr>
+<td>$1/(k_mL)$</td>
+<td>The one-particle boundary; not the criterion</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Paul A. M. Dirac, "The quantum theory of the electron," <em>Proceedings of the Royal Society A</em> <strong>117</strong> (1928) 610–624, for the equation whose short-wavelength content is at issue.</li>
+<li>Michael V. Berry and K. E. Mount, "Semiclassical approximations in wave mechanics," <em>Reports on Progress in Physics</em> <strong>35</strong> (1972) 315–397, for the eikonal method, its transport equation and its failure at caustics.</li>
+<li>Robert G. Littlejohn, "The semiclassical evolution of wave packets," <em>Physics Reports</em> <strong>138</strong> (1986) 193–291, for the symbol calculus of a first-order operator and the subleading spin term.</li>
+<li>Michel H. L. Pryce, "The mass-centre in the restricted theory of relativity and its connexion with the quantum theory of elementary particles," <em>Proceedings of the Royal Society A</em> <strong>195</strong> (1948) 62–81, for the classical limit of the Dirac equation and the spin supplementary condition.</li>
+<li>J. D. Bjorken and S. D. Drell, <em>Relativistic Quantum Mechanics</em> (McGraw-Hill, 1964), chapter 2, for the Gordon decomposition and the positivity of the bilinear density.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
