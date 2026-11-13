@@ -276,7 +276,8 @@ S=\varepsilon\Bigl[c\,\frac{\partial r}{\partial r'_t}-s\,\hat u_{\mathrm b}\cdo
 +\tfrac12 rs\,\frac{\partial\theta_{\mathrm{rpd}}}{\partial r'_t}-\tfrac12 rc\,\hat u_{\mathrm b}\cdot\nabla\theta_{\mathrm{rpd}}-rs\,\nabla\cdot\hat u_{\mathrm b}\Bigr]=0 .
 $$</p>
 <p>The display is the divergence of the four-vector written in the word's variables, and nothing more: the first two terms are $\partial_{r'_t}(\varepsilon rc)$ and the last three are $-\nabla\cdot(\varepsilon rs\hat u_{\mathrm b})$. It is one equation on four parameters, and on shell it removes one of them, leaving the three polarizations of the source article's count.</p>
-<p><strong>What it is not.</strong> It is not a continuity equation and it is not a guidance equation. In the scalar Madelung case the phase equation is the continuity equation for $\rho=r^2$ and the modulus equation is the Hamilton–Jacobi equation with the quantum potential, and the pair closes because the field is one complex function. Here the field is a real four-vector: its modulus and its direction are not a complex function, the condition is a single divergence, and there is no second conserved density to pair it with. The polar form makes that explicit rather than assuming it.</p>
+<p><strong>What it is.</strong> The divergence of the four-potential is a continuity equation outright, because on the timelike branch the four-potential is the current: with $r=\sqrt{-\langle\tilde A_\Phi\rangle_\natural}$ and $u_\mu=A_\mu/r$ one has $A_\mu=r u_\mu$ and $S=\partial_\mu(ru^\mu)$, so the Lorenz condition is the conservation of the field's own current in the flow's own density. That reading is <a href="the-spin-one-fluid-of-the-biquaternion-proca-field.html">The Spin-One Fluid of the Biquaternion Proca Field</a>'s, and it is exact.</p>
+<p><strong>What it is not.</strong> It is not the first member of a <em>pair</em>. In the scalar Madelung case the phase equation is the continuity equation for $\rho=r^2$ and the modulus equation is the Hamilton–Jacobi equation with the quantum potential, and the pair closes because the field is one complex function. Here the field is a real four-vector: its modulus and its direction are not a complex function, the divergence stands alone, and there is no second conserved density to pair it with — the modulus equation carries the rapidity's gradient as a source and not a potential's gradient as a guidance term. The polar form makes that explicit rather than assuming it.</p>
 <p><strong>Why the condition is implied and not imposed.</strong> The element form proves that the divergence of the Proca equation forces $S=0$, and the proof does not use the polar variables. The polar display is therefore a reading of an equation that is already there, and the count is consistent: four parameters, four field equations, one of which is the Lorenz condition and three of which are dynamical.</p>
 <h2 id="plane-waves-and-the-branch-as-a-region">Plane Waves and the Branch as a Region</h2>
 <p><strong>A plane wave is a constant frame.</strong> Take $\tilde A_\Phi=\tilde A_0\cos\theta_{\mathrm{pwp}}$ with $\tilde A_0$ a constant timelike element and $\theta_{\mathrm{pwp}}=k'_t r'_t-\vec k_\Phi\cdot\vec r$. The word of the field is then</p>
@@ -296,7 +297,7 @@ $$</p>
 <li>A word for the material sector with the exact count: four parameters for four components on each branch, so no condition, no multiplier and no constraint analysis.</li>
 <li>The two brackets that survive, and the proof that the central bracket is absent identically. The absence is the polar form of the reality of the field.</li>
 <li>The separation of the Proca equation into a scale equation with a source quadratic in the frame's connection and a transport equation for the frame, with the fixed-axis reduction to $\partial_\mu(r^2\partial_\mu\theta_{\mathrm{rpd}})=0$.</li>
-<li>The polar reading of the Lorenz condition as one divergence, and the reason there is no Madelung pair.</li>
+<li>The polar reading of the Lorenz condition as one divergence, which on the timelike branch is the continuity equation of the current $A_\mu=ru_\mu$, and the reason there is no Madelung pair to go with it.</li>
 <li>The statement that the branch is a spacetime region for a solution, with the lightlike set of field values as the boundary of the chart.</li>
 </ul>
 <p><strong>Does not add.</strong></p>
@@ -311,7 +312,12 @@ $$</p>
 <ol>
 <li><strong>The spacelike transport equation.</strong> The explicit form of the traceless equation on the locked branch is not displayed here. It matters because the branch is the one where the field is a spacelike four-vector and the boost axis and the direction coincide; whether the transport preserves the locking, or whether the locking is compatible only with a subclass of solutions, is not settled.</li>
 <li><strong>The crossing set.</strong> The chart fails where the local four-vector is lightlike. What is the correct continuation across it, and does the continuation preserve the Lorentz condition? The analogous question for the scalar case is answered by the phase's winding; here there is no phase to wind.</li>
-<li><strong>The operator setting.</strong> This article treats the equation with a constant mass and uses the componentwise Klein–Gordon reduction, which is the operator statement. Whether the polar chart survives quantization, and how it composes with the polarization projector of the canonical quantization article, is not attempted.</li>
+<li>
+<p><strong>The spacelike branch's fluid reading.</strong> The timelike branch's flow, its Euler equation and its equation of state are <a href="the-spin-one-fluid-of-the-biquaternion-proca-field.html">The Spin-One Fluid of the Biquaternion Proca Field</a>. A spacelike four-potential has no timelike direction to normalise into a velocity, so no fluid reading of the second branch is offered there; whether one exists at all, for instance as a flow of a surface rather than of a medium, is open.</p>
+</li>
+<li>
+<p><strong>The operator setting.</strong> This article treats the equation with a constant mass and uses the componentwise Klein–Gordon reduction, which is the operator statement. Whether the polar chart survives quantization, and how it composes with the polarization projector of the canonical quantization article, is not attempted.</p>
+</li>
 </ol>
 <h2 id="summary">Summary</h2>
 <p>The Proca potential is an element of the material sector, and the material sector's polar word is piecewise. On timelike field values $\tilde A_\Phi=\varepsilon ir\tilde U_{\Psi,\mathrm b}$ with four parameters and a sign; on spacelike ones $\tilde A_\Phi=r\tilde U_{\Psi,\mathrm b}\hat u$ with four parameters, the boost axis locked to $\hat u$; on lightlike values there is no word. The branches are the two signs of the Minkowski form of the real four-vector, obtained by polar decomposition and not by restricting the eight-parameter Schrödinger word: no central angle makes that word anti-Hermitian except for the rotor $\pm e_t$, at the excluded endpoint of the phase range.</p>
@@ -321,7 +327,7 @@ $$</p>
 \qquad
 \sum_\mu\Bigl(\partial_\mu\Gamma_\mu+\Gamma_\mu^2-\mathrm{Sc}(\Gamma_\mu^2)\Bigr)+2\sum_\mu\partial_\mu\ln r\,\Gamma_\mu=0
 $$</p>
-<p>with the second in the traceless part; for a fixed axis they reduce to a massive scale equation with a rapidity-gradient source and to $\partial_\mu(r^2\partial_\mu\theta_{\mathrm{rpd}})=0$. The Lorenz condition is one divergence, and there is no Madelung pair because there is no phase. For a solution the branch is a spacetime region, bounded by the set where the local four-vector is lightlike.</p>
+<p>with the second in the traceless part; for a fixed axis they reduce to a massive scale equation with a rapidity-gradient source and to $\partial_\mu(r^2\partial_\mu\theta_{\mathrm{rpd}})=0$. The Lorenz condition is one divergence — the continuity equation of the current $A_\mu=ru_\mu$ — and there is no Madelung pair because there is no phase. For a solution the branch is a spacetime region, bounded by the set where the local four-vector is lightlike.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>

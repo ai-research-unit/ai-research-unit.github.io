@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Coupled Klein–Gordon Equation in Biquaternionic Polar Variables — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-coupled-kleingordon-equation-in-biquaternionic-polar-variables"><strong>The Coupled Klein–Gordon Equation in Biquaternionic Polar Variables</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article substitutes the polar word into the coupled Klein–Gordon equation and reads what the substitution makes visible. It is the polar companion of <em>The Coupled Klein–Gordon Equation in Biquaternionic Form</em>, and it depends on that article for the equation, on <em>The Klein–Gordon Equation in Biquaternionic Polar Variables</em> for the word, the pair of real equations and the quantum potential, and on <em>The Polar Decomposition of an N-Regular Biquaternion</em> for the word itself.</p>
+<p><strong>The substitution.</strong></p>
+<p>$$
+\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\bigl(\theta_{\mathrm{rpd}},\hat u_{\mathrm b}\bigr)\,\tilde u_{\mathrm r}\bigl(\theta_{\mathrm{axr}},\hat u_{\mathrm r}\bigr),
+$$</p>
+<p>with $r>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd}}\ge0$, $\hat u_{\mathrm b}\in S^{2}$, $\theta_{\mathrm{axr}}\in[0,2\pi)$, and $\hat u_{\mathrm r}\in S^{2}$. The word is a bijection from the eight parameters onto the $N$-regular set, so the parameters are coordinates on the units and the substitution loses nothing. The domain is unchanged by the coupling: the connection is a set of functions and the field's own regularity is what decides whether the word exists.</p>
+<p><strong>Three things are established.</strong></p>
+<p><em>First, the connection enters the chart as one additive central term in the covariant bracket, and nothing else.</em> Because each $A_\mu$ is a complex scalar, it commutes with the whole word, so</p>
+<p>$$
+\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi
+=\tilde\Xi^{-1}\partial_\mu\tilde\Xi+\frac{i\,ϙ}{\hbar}A_\mu ,
+$$</p>
+<p>with the connection's term added after the word has been differentiated and with no factor of $\tilde\Xi$ or $\tilde\Xi^{-1}$ attached to it. The separability is not an approximation: it is the algebraic signature of the abelian gauge group, whose parameter lies in the centre.</p>
+<p><em>Second, the connection therefore touches only the central slots, and the two-object pair survives.</em> A central scalar is either real or central imaginary in a given slot, and the four brackets of the word's logarithmic derivative contain exactly one bracket of each type: the scale is real and the phase is central imaginary. So the connection merges with those two and cannot reach the boost or the rotor, and for a central field the whole coupling is the substitution</p>
+<p>$$
+\partial_{r'_t}S_{\tilde\Xi}\ \mapsto\ \partial_{r'_t}S_{\tilde\Xi}-ϙ\,a'_t ,
+\qquad
+\nabla S_{\tilde\Xi}\ \mapsto\ \nabla S_{\tilde\Xi}+ϙ\,\vec A ,
+$$</p>
+<p>where $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$ is the action and $\tilde A_\Phi=i a'_t e_t+\vec A$ the material connection. The two substitutions are the two classical replacements in one step, and the two signs are the metric's and not a convention.</p>
+<p><em>Third, the coupled pair is the parent's pair with that substitution and no other change.</em> The amplitude equation becomes the mass shell with the mechanical momentum and the same quantum potential; the transport equation becomes the divergence of the mechanical current; the quantum potential is untouched, because it depends on the density alone and the density is $r^{2}$ in both cases. The vorticity is <em>not</em> untouched: the free flow is a gradient flow and therefore irrotational, and the coupled flow has vorticity $ϙ\vec B$. That is the one qualitative change the chart exhibits, and §<em>The Current, the Vorticity and the Flux</em> computes it.</p>
+<p><strong>Scope.</strong> The connection is treated as an external field with a constant or a varying profile, and the equation is the component equation of the element companion — the one that decouples, that the action produces, and that the current belongs to. The element companion's other equation, $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}\tilde\Xi=k_m^{2}\tilde\Xi$, is the subject of §<em>What the Chart Cannot Carry</em>, where the chart shows why it is not a two-function system. The operator setting, in which the amplitude and the action are functions of the coordinates and the equation becomes a PDE, is the Madelung problem of the standard literature and is cited rather than re-derived.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary; $^{*}$ is Hermitian conjugation and $^{\natural}$ quaternion conjugation; $\mathrm{Sc}$ is the coefficient of $e_t$ and $\mathrm{Tr}=2\,\mathrm{Sc}$. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout. The material time is $r'_t=c\,t'$, the d'Alembertian is $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$, and $k_m=mc/\hbar$. The connection is $\tilde A_\Phi=i a'_t e_t+\vec A$ with $a'_t$ and $\vec A$ real, and the coupling is $ϙ$.</p>
+<h2 id="the-word-and-its-domain">The Word and Its Domain</h2>
+<p><strong>The collapse on a central field is the free article's and it is unchanged.</strong> On the centre the boost has neither rapidity nor axis and the rotor has neither angle nor axis, so the word reduces to</p>
+<p>$$
+\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\,\varepsilon\,e_t ,
+\qquad \varepsilon=\pm1,
+$$</p>
+<p>with the three parameters $(r,\theta_{\mathrm{pha}},\varepsilon)$ a bijection onto the nonzero complex scalars. The sign is data: the word's angle runs over a half-turn and the rotor's sign carries the other half. The action is $\hbar\theta_{\mathrm{pha}}$ modulo $2\pi\hbar$ and is a coordinate of the field.</p>
+<p><strong>The coupling does not enlarge or shrink the domain.</strong> The word needs $r>0$; the connection is a set of functions and contributes no condition on the field, so the parameter domain is the free article's and the word's bijection is unaffected. Whether the <em>flow</em> stays inside that domain is a separate question, and it is the free second-order article's: the covariant operator is the free one with central coefficients, so the coupling adds lower-order terms and no new mechanism, and the article inherits the free statement rather than proving it. What the coupling does add is a motion of the phase by a function, which is a reparameterisation and not a motion of the field.</p>
+<p><strong>The four coefficients and the one pair.</strong> The free polar article's §<em>General Fields</em> records that a general element's four coefficients obey four independent equations, so the polar pair describes one coefficient and the mixed case is the constant-polarization case $\tilde\Xi=\tilde Q_{\mathrm{amp}}g$. The coupling preserves that structure exactly: $A_\mu$ is central, it commutes with the constant $\tilde Q_{\mathrm{amp}}$, and</p>
+<p>$$
+\tilde\nabla_{\mathrm{gco},\mu}\big(\tilde Q_{\mathrm{amp}}g\big)=\tilde Q_{\mathrm{amp}}\,\tilde\nabla_{\mathrm{gco},\mu}g ,
+$$</p>
+<p>so the polarized field solves the coupled equation exactly when the scalar $g$ does. The polar chart of the coupled theory is therefore the chart of one charged scalar, and the fourfold multiplicity is a constant factor that the chart carries without seeing.</p>
+<h2 id="the-covariant-bracket">The Covariant Bracket</h2>
+<p><strong>The identity.</strong> Differentiate the word, divide by it, add the connection:</p>
+<p>$$
+\mathcal A^{\mathrm{gco}}_\mu:=\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi
+=\underbrace{\frac{\partial_\mu r}{r}+i\,\partial_\mu\theta_{\mathrm{pha}}
++\tilde u_{\mathrm r}^{-1}\bigl(\tilde U_{\Psi,\mathrm b}^{-1}\partial_\mu\tilde U_{\Psi,\mathrm b}\bigr)\tilde u_{\mathrm r}
++\tilde u_{\mathrm r}^{-1}\partial_\mu\tilde u_{\mathrm r}}_{\text{the free bracket }\mathcal A_\mu}
++\frac{i\,ϙ}{\hbar}A_\mu .
+$$</p>
+<p>The four bracketed terms have four different algebraic types — a real central scalar, a central imaginary number, a Hermitian vector conjugated by the rotor, and a real vector part — and the connection's term is a fifth object of a fifth-and-a-half type: a complex central scalar, which is the sum of the first two types.</p>
+<p><strong>Which bracket it joins, slot by slot.</strong> For a material connection the temporal coefficient is imaginary, $A_t=i a'_t$, so</p>
+<p>$$
+\frac{i\,ϙ}{\hbar}A_t=-\frac{ϙ}{\hbar}a'_t
+\qquad\text{(real central)},
+\qquad
+\frac{i\,ϙ}{\hbar}A_\eta=\frac{i\,ϙ}{\hbar}A_\eta
+\qquad\text{(central imaginary)} .
+$$</p>
+<p>So in the temporal slot the connection adds to the <em>scale</em> bracket and in the spatial slots to the <em>phase</em> bracket. The Proca companion states the same fact in the same words, and it holds here for the same reason: the type of the connection's term is fixed by the reality of the potential's coefficients, not by the field. A table that assigns the connection to "the central imaginary bracket" is therefore right for the three spatial slots and wrong for the temporal one, and this article does not draw such a table.</p>
+<p><strong>The physical reading.</strong> The temporal slot's share is a real addition to $\partial_{r'_t}\ln r$ and the spatial slots' shares are imaginary additions to $\partial_\eta\theta_{\mathrm{pha}}$; together they are one substitution in the four-momentum,</p>
+<p>$$
+\hbar c\,P_t=E+ϙ c\,a'_t,
+\qquad
+\hbar\vec P=\vec p+ϙ\vec A,
+\qquad
+E=-\hbar c\,\frac{\partial\theta_{\mathrm{pha}}}{\partial r'_t},
+\quad
+\vec p=\hbar\nabla\theta_{\mathrm{pha}} ,
+$$</p>
+<p>and the scalar and vector potentials are the two slots of one element, so the two classical substitutions are one substitution and no relative sign can be chosen. The signs as written are the metric's: the temporal slot enters the mass shell with a plus on the potential and the spatial slots with a plus on the potential too, and the two pluses look opposite because the temporal slot enters the shell with a minus overall.</p>
+<p><strong>One $i$, in the temporal slot.</strong> The bracket's temporal coefficient and the physical temporal momentum are not the same letter. The bracket is a sum of four types, and its temporal coefficient is central imaginary — the same $i$ that makes the temporal coefficient of $\tilde P_\Phi$ equal $i(E/c)$ in the free article. So $\kappa^{\mathrm{kin}}_t=-i\,P_t$ and $\kappa^{\mathrm{kin}}_\eta=P_\eta$: the physical momentum is the bracket's coefficient with the $i$ removed from the temporal slot. The square is therefore $\bigl(\kappa^{\mathrm{kin}}_t\bigr)^{2}=-P_t^{2}$, and the mass shell carries $P_t^{2}-\lvert\vec P\rvert^{2}$ with the minus in front of the temporal term coming from that $i$. The article uses $P$ for the physical components and $\kappa^{\mathrm{kin}}$ for the bracket's, and keeps them apart.</p>
+<p><strong>What the type statement does not say.</strong> It does not say that the potential cannot affect the frame. It says that the potential cannot affect the frame <em>through the additive term</em>, which is the only place the connection appears before the equation is used. The frame responds to the potential through the equation, because the equation relates the brackets to one another and a shift in one moves the others; the shift in the phase bracket moves the amplitude through the mass-shell relation, and the frame follows. The distinction is the difference between where the coupling sits and what it does, and the Proca companion draws the same distinction for the rotor.</p>
+<h2 id="the-gauge-transformation-is-a-phase-translation">The Gauge Transformation Is a Phase Translation</h2>
+<p><strong>The exact infinitesimal statement.</strong> Let $\lambda=\exp(i\vartheta_{\mathrm{gau}})$ with $\vartheta_{\mathrm{gau}}=ϙ\Lambda/\hbar$ and let $\tilde\Xi_2=\lambda\tilde\Xi$. Then</p>
+<p>$$
+\tilde\Xi_2=r\,e^{i(\theta_{\mathrm{pha}}+\vartheta_{\mathrm{gau}})}\,
+\tilde U_{\Psi,\mathrm b}\bigl(\theta_{\mathrm{rpd}},\hat u_{\mathrm b}\bigr)\,
+\tilde u_{\mathrm r}\bigl(\theta_{\mathrm{axr}},\hat u_{\mathrm r}\bigr),
+$$</p>
+<p>so the gauge transformation is the translation of $\theta_{\mathrm{pha}}$ by $ϙ\Lambda/\hbar$ with the other seven parameters fixed, and the identity is exact because a central unit passes to the left through the whole word and the phase factor is the leftmost factor.</p>
+<p><strong>What it says about the connection.</strong> For a pure-gauge connection $A_\mu=\partial_\mu\Lambda$ the added term is $\frac{iϙ}{\hbar}\partial_\mu\Lambda$, so</p>
+<p>$$
+i\frac{\partial\theta_{\mathrm{pha}}}{\partial R_\mu}+\frac{i\,ϙ}{\hbar}A_\mu
+=i\frac{\partial}{\partial R_\mu}\Bigl(\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\Lambda\Bigr),
+$$</p>
+<p>and the whole effect of the potential is absorbed by a reparameterisation of one coordinate. That is the polar statement of gauge invariance: the connection's content in the chart is that one coordinate is not physical.</p>
+<p><strong>The finite statement and its caveat.</strong> For a finite shift the translated angle may leave $(-\pi/2,\pi/2]$, and then the first factor is no longer in the chart's normal form; the excess is absorbed by the other factors. The chart is therefore not closed under the gauge group although the field is, and the article states the infinitesimal identity as the exact statement and records the range as a property of the coordinates. The Proca companion records the same caveat in the same terms.</p>
+<p><strong>What the coupling adds to this picture.</strong> Nothing, and that is the point. The gauge transformation was already a phase translation; the coupling is what makes the translation <em>local</em>, because the connection's transformation law is what allows $\Lambda$ to depend on the coordinates. The chart shows the two facts as one: a local translation of one coordinate is a gauge transformation, and a global translation of it is a change of the field's phase.</p>
+<h2 id="the-equation-in-polar-variables-the-central-field">The Equation in Polar Variables: the Central Field</h2>
+<p><strong>The factorisation.</strong> For a central field the covariant derivative factors exactly:</p>
+<p>$$
+\tilde\nabla_{\mathrm{gco},\mu}\bigl(r\,e^{i\theta_{\mathrm{pha}}}e_t\bigr)
+=e^{i\theta_{\mathrm{pha}}}\Bigl(\partial_\mu r+i\,r\,\kappa^{\mathrm{kin}}_\mu\Bigr)e_t ,
+\qquad
+\kappa^{\mathrm{kin}}_\mu:=\partial_\mu\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}A_\mu .
+$$</p>
+<p>The parenthesis is a central element, so it commutes with $e_t$ and the whole factorisation is at the level of scalars. The identity is exact for every connection, not only for a material one; the material case enters only when the two slots are read as the four-momentum.</p>
+<p><strong>The pair.</strong> Applying the operator twice and separating real and imaginary parts — which the free article does once and which the coupling does not disturb, because $\kappa^{\mathrm{kin}}_\mu$ is the only place the potential appears and it appears inside the same square — gives</p>
+<p>$$
+\boxed{\;
+\bigl(\partial_{r'_t}S_{\tilde\Xi}-ϙ\,a'_t\bigr)^{2}-\bigl\lvert\nabla S_{\tilde\Xi}+ϙ\vec A\bigr\rvert^{2}
+=m^{2}c^{2}-\hbar^{2}\frac{\Box_\Phi r}{r}\;}
+$$
+$$
+\boxed{\;
+\nabla\cdot\Bigl(\rho_{\mathrm{num}}\bigl(\nabla S_{\tilde\Xi}+ϙ\vec A\bigr)\Bigr)
+-\frac{\partial}{\partial r'_t}\Bigl(\rho_{\mathrm{num}}\bigl(\partial_{r'_t}S_{\tilde\Xi}-ϙ\,a'_t\bigr)\Bigr)=0\;}
+$$</p>
+<p>with $\rho_{\mathrm{num}}=r^{2}$ and $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$. The first is the amplitude equation and the second the transport equation, and both are the parent's with the two substitutions of the introduction and with nothing else changed.</p>
+<p><strong>The first equation is the mass shell with the mechanical momentum.</strong> Writing $E=-\hbar c\,\partial_{r'_t}\theta_{\mathrm{pha}}$ and $\vec p=\hbar\nabla\theta_{\mathrm{pha}}$ and dividing by $\hbar^{2}c^{2}$,</p>
+<p>$$
+\frac{\bigl(E+ϙ c\,a'_t\bigr)^{2}}{c^{2}}-\bigl\lvert\vec p+ϙ\vec A\bigr\rvert^{2}=m^{2}c^{2}+2mQ_{\mathrm{qnt}},
+\qquad
+Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\frac{\Box_\Phi r}{r},
+$$</p>
+<p>so the sum $E+ϙca'_t$ is the mechanical energy and $\vec p+ϙ\vec A$ the mechanical momentum, and the mass shell is shifted by the quantum potential exactly as in the free article. The quantum potential is unchanged because it is $-\frac{\hbar^{2}}{2m}\Box r/r$ and $r$ is not touched by the coupling; in the logarithmic form of the free article it is a functional of $\rho_{\mathrm{num}}$ alone, and the density is the density.</p>
+<p><strong>The second equation is the continuity of the mechanical current.</strong> Dividing by $m$ and reading the two factors as the density and the current, it is</p>
+<p>$$
+\frac{\partial\rho_{\mathrm{chg}}}{\partial r'_t}+\nabla\cdot\vec j_{\mathrm{mech}}=0,
+\qquad
+\vec j_{\mathrm{mech}}=\frac{\rho_{\mathrm{num}}}{m}\bigl(\vec p+ϙ\vec A\bigr),
+$$</p>
+<p>with the temporal slot carrying $c\rho_{\mathrm{chg}}$ as in the free article. The current is the density times the mechanical four-velocity, and the statement is the same divergence form because the potential's contribution is a divergence of a product and not a source.</p>
+<p><strong>What the coupling does not change.</strong> The quantum potential, the density $r^{2}$, the sign of the charge, the nodal set, and the exactness of the equivalence between the pair and the equation. What it changes is the relation between the phase gradient and the momentum, and therefore everything that reads a momentum.</p>
+<h2 id="the-current-the-vorticity-and-the-flux">The Current, the Vorticity and the Flux</h2>
+<p><strong>The current.</strong> The free article's $\tilde J_\Phi=\rho_{\mathrm{num}}\tilde P_\Phi/m$ becomes</p>
+<p>$$
+\tilde J_\Phi=\frac{\rho_{\mathrm{num}}}{m}\,\tilde P^{\mathrm{mech}}_\Phi ,
+\qquad
+\tilde P^{\mathrm{mech}}_\Phi=i\,\frac{E+ϙ c\,a'_t}{c}\,e_t+\bigl(\vec p+ϙ\vec A\bigr),
+$$</p>
+<p>and it is gauge invariant: the phase's shift and the potential's shift cancel inside each component, which is the chart's form of the element companion's statement that every derivative in the current is covariant. The free current was not gauge invariant, and the coupling repairs that. It does not repair the sign: on the negative-frequency branch the temporal component is negative, and the positive definiteness of $\rho$ is exactly as absent as it was.</p>
+<p><strong>The vorticity.</strong> The free flow is the gradient of the action and is therefore irrotational. The coupled flow is not:</p>
+<p>$$
+\nabla\times\bigl(\vec p+ϙ\vec A\bigr)=\nabla\times\nabla S_{\tilde\Xi}+ϙ\nabla\times\vec A=ϙ\,\vec B ,
+$$</p>
+<p>exactly, with no approximation and no quantum correction. So the mechanical flow's vorticity is the magnetic field times the coupling, and the statement "the flow is a gradient" becomes "the flow is a gradient plus the vector potential": the free article's irrotationality is the statement $\vec B=0$, and it is not a property of the scalar field but a property of the connection it is coupled to.</p>
+<p><strong>The flux and the circulation.</strong> Integrate the relation around a closed loop:</p>
+<p>$$
+\oint\bigl(\vec p+ϙ\vec A\bigr)\cdot\mathrm{d}\vec l
+=\oint\vec p\cdot\mathrm{d}\vec l+ϙ\oint\vec A\cdot\mathrm{d}\vec l
+=2\pi\hbar\,n+ϙ\,\Phi_B ,
+$$</p>
+<p>the first term because $\vec p=\hbar\nabla\theta$ is a gradient and its circulation is quantized in units of $2\pi\hbar$, the second because the circulation of the vector potential is the magnetic flux through the loop. The mechanical circulation is therefore quantized <em>up to the flux</em>, which is the chart's exact statement of the flux-quantization and Aharonov–Bohm structure: a loop that encloses flux $\Phi_B$ has a mechanical circulation shifted by $ϙ\Phi_B$, and the shift is visible to the phase even where the field strength vanishes on the loop.</p>
+<p><strong>What the chart shows here that the element form does not.</strong> The element form's current is a bilinear and its gauge invariance is a cancellation between two terms. The chart's current is the density times a four-vector, its gauge invariance is a cancellation inside one component, and its vorticity is one curl. The three statements are the same statement, and the chart is the one that exhibits the vorticity, because the vorticity is a statement about a vector field and the chart is where the vector field is written.</p>
+<h2 id="what-the-chart-cannot-carry">What the Chart Cannot Carry</h2>
+<p><strong>The other element equation.</strong> The element companion distinguishes two coupled equations, $\Box_{\mathrm{gco}}\tilde\Xi=k_m^{2}\tilde\Xi$ and $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}\tilde\Xi=k_m^{2}\tilde\Xi$, which agree in the free theory and differ by the curvature. The chart's pair is the chart of the first. The second's residual in the chart is</p>
+<p>$$
+\tilde\Xi^{-1}\Bigl(\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}-k_m^{2}\Bigr)\tilde\Xi
+=\tilde\Xi^{-1}\Bigl(\Box_{\mathrm{gco}}-k_m^{2}\Bigr)\tilde\Xi
++\frac{i\,ϙ}{\hbar}\,\tilde\Xi^{-1}\tilde F\,\tilde\Xi ,
+$$</p>
+<p>and the second term is the field strength conjugated by the field.</p>
+<p><strong>Why the conjugation matters.</strong> In the algebra $\tilde F$ is a pure vector, and its four brackets are one type. Conjugating it by the field changes its type: $\tilde\Xi^{-1}\tilde F\tilde\Xi$ is a general element, whose components in the bracket basis are all four brackets in general, because the conjugation by $\tilde U_{\Psi,\mathrm b}$ mixes the Hermitian and the real-vector directions and the central phase does not undo the mixing. So the curvature term, which is one bracket in the element form, is four brackets in the chart, and a two-function pair cannot represent it.</p>
+<p><strong>The honest conclusion.</strong> The chart carries the coupled theory exactly when the curvature term is absent or when it is projected away, and those are the same condition: the chart carries the component equation, whose curvature term is zero by construction, and it cannot carry the algebra's equation, whose curvature term is the obstruction. This is the polar face of the element companion's prohibition: a central field is forbidden wherever the field strength is nonzero, and a two-function chart is a central field's chart.</p>
+<p><strong>What the chart does carry for a general element.</strong> The component equation itself, with a general element and a general connection. The covariant bracket is $\mathcal A_\mu+\frac{iϙ}{\hbar}A_\mu$, the frame density is $\tilde\Xi^{*}\tilde\Xi$, the kinetic Lagrangian is $\mathrm{Sc}\big[\tilde\Xi^{*}\tilde\Xi\,\mathcal A^{\mathrm{gco}}_\mu(\mathcal A^{\mathrm{gco}}_\mu)^{*}\big]$, and the eight parameter equations are the Jacobian image of the component equation, which is exact because the word is a bijection with a smooth inverse. No constraint appears and no multiplier is needed, because the parameterisation of the units is exact; the two-function pair is a restriction of this chart and not a different chart. The variational companion computes the metric of the eight-parameter chart; this article's subject is the two-function pair, which is the central case and the constant-polarization case.</p>
+<h2 id="what-the-chart-shows-and-what-it-hides">What the Chart Shows and What It Hides</h2>
+<p><strong>Shows.</strong></p>
+<ul>
+<li>The count: the connection enters as one central scalar per slot and therefore touches two of the four brackets, with the temporal slot real and the spatial slots imaginary.</li>
+<li>The one substitution: $\hbar cP_t=E+ϙca'_t$ and $\hbar\vec P=\vec p+ϙ\vec A$, the two classical replacements in one element, with the bracket's temporal coefficient equal to $-iP_t$.</li>
+<li>The gauge transformation as the translation of one coordinate, exact infinitesimally.</li>
+<li>The pair of equations as the parent's pair with the mechanical momentum and the same quantum potential.</li>
+<li>The vorticity, $ϙ\vec B$, and the circulation, $2\pi\hbar n+ϙ\Phi_B$: the two statements that the coupling changes the qualitative character of the flow rather than only its numbers.</li>
+</ul>
+<p><strong>Hides.</strong></p>
+<ul>
+<li>The fourfold multiplicity. The chart describes one coefficient, and the constant polarization is the only case in which four coefficients share one phase; the multiplicity is a constant factor the chart does not see.</li>
+<li>The algebra's second equation. Its curvature term is a general element in the chart, so the chart cannot represent it and the element form is the place where it is written.</li>
+<li>The field strength. $\tilde F$ does not appear in the pair at all, because the pair is the chart of the component equation, whose only use of the connection is the four-momentum shift. The chart therefore <em>hides the very object that separates the two equations</em>, and that is the sharpest statement of what a coordinate system can and cannot show.</li>
+</ul>
+<p><strong>The honest ledger.</strong> The chart is sharper about the coupling: one additive term, two bracket types touched, one substitution, one curl. The element form is sharper about the algebra: the carrier, the closure, the two equations and the curvature. Neither is simpler; the chart is <em>the place where the coupling looks like classical mechanics</em>, and the element form is the place where it looks like a derivative.</p>
+<h2 id="open-questions">Open Questions</h2>
+<p><strong>Whether the curvature term's chart components have a closed form.</strong> The conjugation $\tilde\Xi^{-1}\tilde F\tilde\Xi$ is one product of three elements, and its eight components in the bracket basis are not displayed here. Whether they factorise into a scale part, a phase part and a frame part — and whether the frame part is the projection of the field strength on the boost axis, as the free article's four-bracket expansion suggests — is not settled.</p>
+<p><strong>Whether the constant-polarization case is the whole of the chart's reach.</strong> The article uses the fact that a constant polarization factors through the central connection, and it uses the central field as the two-function case. Whether an intermediate case exists — a polarization that varies on a scale slow compared with the phase, so that its derivatives enter at a different order — is the chart's version of a WKB question and is not attempted.</p>
+<p><strong>The operator setting.</strong> The article treats the connection as an external field with a varying profile but keeps the amplitude and the action as the primary objects; the operator setting, in which the equation is a PDE for a field, is the standard quantum-hydrodynamics problem with a magnetic field. Whether the chart's vorticity statement survives there with $\vec B$ a function, and whether the flux quantization becomes a statement about the field's nodal lines, is not answered here.</p>
+<h2 id="summary">Summary</h2>
+<p>The coupled Klein–Gordon equation in polar variables is the free pair with the mechanical momentum. The word is the parent's, its domain is unchanged, and the connection enters the logarithmic derivative as one additive central term,</p>
+<p>$$
+\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi=\tilde\Xi^{-1}\partial_\mu\tilde\Xi+\frac{i\,ϙ}{\hbar}A_\mu ,
+$$</p>
+<p>so it touches the scale bracket in the temporal slot and the phase bracket in the spatial ones and cannot reach the boost or the rotor. For a central field the covariant derivative factors exactly, $\tilde\nabla_{\mathrm{gco},\mu}(re^{i\theta}e_t)=e^{i\theta}(\partial_\mu r+ir\kappa^{\mathrm{kin}}_\mu)e_t$, and the pair becomes</p>
+<p>$$
+\bigl(\partial_{r'_t}S_{\tilde\Xi}-ϙa'_t\bigr)^{2}-\bigl\lvert\nabla S_{\tilde\Xi}+ϙ\vec A\bigr\rvert^{2}=m^{2}c^{2}-\hbar^{2}\frac{\Box_\Phi r}{r},
+\qquad
+\nabla\cdot\bigl(\rho_{\mathrm{num}}(\nabla S_{\tilde\Xi}+ϙ\vec A)\bigr)-\frac{\partial}{\partial r'_t}\bigl(\rho_{\mathrm{num}}(\partial_{r'_t}S_{\tilde\Xi}-ϙa'_t)\bigr)=0 .
+$$</p>
+<p>The quantum potential and the density are unchanged; the momentum is not, the current is gauge invariant, the vorticity is $ϙ\vec B$, and the circulation is $2\pi\hbar n+ϙ\Phi_B$. The chart carries the component equation and cannot carry the algebra's equation, whose curvature term is a general element after conjugation by the field; that is the polar face of the element companion's prohibition on central fields in a nonzero field strength.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde\Xi=r e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$</td>
+<td>The word: scale, central phase, boost, rotor</td>
+</tr>
+<tr>
+<td>$r>0$</td>
+<td>Scale; $\rho_{\mathrm{num}}=r^{2}$</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$</td>
+<td>Central phase; $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$ is the action</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{rpd}}\ge0,\ \hat u_{\mathrm b}$</td>
+<td>Rapidity and axis of the boost</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{axr}}\in[0,2\pi),\ \hat u_{\mathrm r}$</td>
+<td>Angle and axis of the rotor</td>
+</tr>
+<tr>
+<td>$\mathcal A_\mu=\tilde\Xi^{-1}\partial_\mu\tilde\Xi$</td>
+<td>The free bracket, four types</td>
+</tr>
+<tr>
+<td>$\mathcal A^{\mathrm{gco}}_\mu=\mathcal A_\mu+\frac{iϙ}{\hbar}A_\mu$</td>
+<td>The covariant bracket</td>
+</tr>
+<tr>
+<td>$\tilde A_\Phi=i a'_t e_t+\vec A$</td>
+<td>The connection; $a'_t$ and $\vec A$ real</td>
+</tr>
+<tr>
+<td>$ϙ$</td>
+<td>The coupling</td>
+</tr>
+<tr>
+<td>$\hbar cP_t=E+ϙca'_t$, $\hbar\vec P=\vec p+ϙ\vec A$</td>
+<td>The mechanical four-momentum</td>
+</tr>
+<tr>
+<td>$\kappa^{\mathrm{kin}}_\mu=\partial_\mu\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}A_\mu$</td>
+<td>The covariant bracket's coefficient; $\kappa^{\mathrm{kin}}_t=-iP_t$</td>
+</tr>
+<tr>
+<td>$E=-\hbar c\,\partial_{r'_t}\theta_{\mathrm{pha}}$, $\vec p=\hbar\nabla\theta_{\mathrm{pha}}$</td>
+<td>The free four-momentum</td>
+</tr>
+<tr>
+<td>$Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\frac{\Box_\Phi r}{r}$</td>
+<td>The quantum potential; unchanged by the coupling</td>
+</tr>
+<tr>
+<td>$\vec j_{\mathrm{mech}}=\frac{\rho_{\mathrm{num}}}{m}(\vec p+ϙ\vec A)$</td>
+<td>The mechanical current</td>
+</tr>
+<tr>
+<td>$\vartheta_{\mathrm{gau}}=ϙ\Lambda/\hbar$</td>
+<td>The gauge phase translation</td>
+</tr>
+<tr>
+<td>$\tilde F$</td>
+<td>The field strength; one type in the algebra, four brackets in the chart</td>
+</tr>
+<tr>
+<td>$k_m=mc/\hbar$</td>
+<td>The mass wave number</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-coupled-klein-gordon-equation-in-biquaternionic-form.html">The Coupled Klein–Gordon Equation in Biquaternionic Form</a>, the element form this article re-coordinatises.</li>
+<li><a href="the-klein-gordon-equation-in-biquaternionic-polar-variables.html">The Klein–Gordon Equation in Biquaternionic Polar Variables</a>, for the free word, the pair and the quantum potential.</li>
+<li><a href="the-variational-principle-and-the-coupled-klein-gordon-equation-in-biquaternionic-polar-variables.html">The Variational Principle and the Coupled Klein–Gordon Equation in Biquaternionic Polar Variables</a>, for the action in the chart and the charge as a momentum.</li>
+<li><a href="the-variational-principle-and-the-klein-gordon-equation-in-biquaternionic-polar-variables.html">The Variational Principle and the Klein–Gordon Equation in Biquaternionic Polar Variables</a>, for the free polar action and its metric.</li>
+<li><a href="the-coupled-proca-equation-in-biquaternionic-polar-variables.html">The Coupled Proca Equation in Biquaternionic Polar Variables</a>, for the same type statement in the vector sector.</li>
+<li><a href="../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html">The Polar Decomposition of an N-Regular Biquaternion</a>, for the four-factor word and its parameter count.</li>
+<li><a href="the-gauge-principle-in-biquaternionic-form.html">The Gauge Principle in Biquaternionic Form</a>, for the localization of the central phase.</li>
+<li><a href="the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html">The Covariant Derivative and Gauge Connection in Biquaternionic Form</a>, for the operator identity with the curvature.</li>
+<li><a href="the-klein-gordon-fluid.html">The Klein–Gordon Fluid</a>, for the hydrodynamic reading of the pair.</li>
+<li><a href="the-vorticity-form-and-the-irrotational-condition.html">The Vorticity Form and the Irrotational Condition</a>, for the free flow's irrotationality that the coupling breaks.</li>
+<li><a href="the-nodal-set-and-quantized-circulation.html">The Nodal Set and Quantized Circulation</a>, for the quantization of the circulation in units of $2\pi\hbar$.</li>
+<li><a href="landau-levels-in-biquaternionic-form.html">Landau Levels in Biquaternionic Form</a>, for the magnetic spectrum that the vorticity statement presupposes.</li>
+<li>E. Madelung, "Quantentheorie in hydrodynamischer Form", <em>Zeitschrift für Physik</em> <strong>40</strong> (1927), for the pair.</li>
+<li>Takehiko Takabayasi, "On the formulation of quantum mechanics associated with classical pictures", <em>Progress of Theoretical Physics</em> <strong>8</strong> (1952), for the relativistic pair.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

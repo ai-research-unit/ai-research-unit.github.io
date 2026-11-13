@@ -135,13 +135,13 @@ $$</p>
 <p>$$
 d^2r_z/d{t'}^2 + 2i\Omega\sin\theta_{\mathrm{foc}}\,dr_z/dt' + \omega_0^2 r_z = 0 .
 $$</p>
-<p>Writing $r_z(r'_t) = \exp(-i\Omega\sin\theta_{\mathrm{foc}}\,r'_t/c)\,w(r'_t)$ removes the first-derivative term: $w$ satisfies $d^2w/d{t'}^2 + \omega^2 w = 0$ with</p>
+<p>Writing $r_z(r'_t) = \exp(-i\theta_{\mathrm{pwt}})\,w(r'_t)$, where $\theta_{\mathrm{pwt}}=\Omega\sin\theta_{\mathrm{foc}}\,r'_t/c$ is real because every factor is real, removes the first-derivative term: $w$ satisfies $d^2w/d{t'}^2 + \omega^2 w = 0$ with</p>
 <p>$$
 \omega^2 = \omega_0^2 + \Omega^2\sin^2\theta_{\mathrm{foc}} .
 $$</p>
 <p>Hence</p>
 <p>$$
-r_z(r'_t) = \exp(-i\Omega\sin\theta_{\mathrm{foc}}\,r'_t/c)\left(A\exp(i\theta_{\mathrm{rat}}) + B\exp(-i\theta_{\mathrm{rat}})\right),
+r_z(r'_t) = \exp(-i\theta_{\mathrm{pwt}})\left(A\exp(i\theta_{\mathrm{rat}}) + B\exp(-i\theta_{\mathrm{rat}})\right),
 $$</p>
 <p>a fast oscillation of frequency $\omega$ whose <strong>envelope rotates at the rate $-\Omega\sin\theta_{\mathrm{foc}}$</strong>. The plane of oscillation is the direction of the envelope, so the plane precesses at the rate $-\Omega\sin\theta_{\mathrm{foc}}$, that is, at the rate $\Omega\sin\theta_{\mathrm{foc}}$ in the sense opposite to the Earth's rotation, in agreement with Foucault's observation.</p>
 <p>For the retained equations the relation below is in fact an identity: $T=2\pi c/\omega$ is an exact period of the fast factor in the coordinate $r'_t$, so the envelope factor is the only thing that survives one period, and the numerical integration of the coupled equations reproduces it to machine precision. Integrating with $\omega_0 = 1$ and a representative $\Omega\sin\theta_{\mathrm{foc}} = 0.457$ — chosen so that the envelope rotation is visible within a single period, and larger relative to the pendulum frequency than the Earth's by a factor of some $3\times10^3$ for a $67$-metre pendulum — the complex amplitude satisfies</p>
@@ -240,7 +240,7 @@ d^2\vec\rho/d{t'}^2 = -\omega_0^2\vec\rho - 2\,\vec\Omega\times\,d\vec\rho/dt',
 $$</p>
 <p>with $z = x + iy$, and the swing plane precesses at the rate $-\Omega\sin\theta_{\mathrm{foc}}$,</p>
 <p>$$
-r_z(r'_t) = \exp(-i\Omega\sin\theta_{\mathrm{foc}}\,r'_t/c)\left(A\exp(i\theta_{\mathrm{rat}}) + B\exp(-i\theta_{\mathrm{rat}})\right), \qquad \omega^2 = \omega_0^2 + \Omega^2\sin^2\theta_{\mathrm{foc}} ,
+r_z(r'_t) = \exp(-i\theta_{\mathrm{pwt}})\left(A\exp(i\theta_{\mathrm{rat}}) + B\exp(-i\theta_{\mathrm{rat}})\right), \qquad \omega^2 = \omega_0^2 + \Omega^2\sin^2\theta_{\mathrm{foc}} ,
 $$</p>
 <p>giving the Foucault angle $2\pi\sin\theta_{\mathrm{foc}}$ per sidereal day, independent of $\omega_0$, of the mass and of the amplitude.</p>
 <p>The angle is geometric. The local vertical traces a circle of latitude with total geodesic turning</p>
@@ -323,7 +323,7 @@ $$</p>
 <td>Complex horizontal coordinate</td>
 </tr>
 <tr>
-<td>$r_z(r'_t) = \exp(-i\Omega\sin\theta_{\mathrm{foc}}\,r'_t/c)(A\exp(i\theta_{\mathrm{rat}})+B\exp(-i\theta_{\mathrm{rat}}))$</td>
+<td>$r_z(r'_t) = \exp(-i\theta_{\mathrm{pwt}})(A\exp(i\theta_{\mathrm{rat}})+B\exp(-i\theta_{\mathrm{rat}}))$</td>
 <td>Solution; envelope rotation $-\Omega\sin\theta_{\mathrm{foc}}$</td>
 </tr>
 <tr>

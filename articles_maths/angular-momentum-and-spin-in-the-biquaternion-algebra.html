@@ -314,6 +314,14 @@ $$</p>
 $$</p>
 <p>The idempotents $e_\pm$ split the doubled algebra into the two chiral halves. The doubled algebra is $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}$, the same notation as in <em>The Unpolarized Module of the Biquaternion Algebra</em>. Its central root of $-1$ is $\tilde{Ζ}_{\mathrm{ad}}$, an element of the double; the spin is the real number $s$.</p>
 <p>The rotation subgroup acts by conjugation on $\mathbb{B}$, and the two module structures of this article are its two pictures: $2\mathcal{V}_1$ on the left and $\mathcal{V}_0\oplus\mathcal{V}_2$ on the adjoint. The Lorentz group acts by the two-sided operator $a\mapsto gag^*$, and the two sectors $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ are the two four-vectors; the left spinor is the $(\tfrac12,0)$ and the conjugate module the $(0,\tfrac12)$. The details are in <em>Biquaternion Rotations and Lorentz Transformations</em> and in <em>The Unpolarized Module of the Biquaternion Algebra</em>; nothing in the present article depends on them.</p>
+<p><strong>Proposition (the two real forms of the carrier).</strong> Put $\mathfrak{k}=\operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$ and $\mathfrak{p}=\operatorname{span}_{\mathbb{R}}\{i\vec e_x,i\vec e_y,i\vec e_z\}$. Then</p>
+<p>$$
+V=\mathfrak{k}\oplus\mathfrak{p},
+$$</p>
+<p>and $\mathrm{ad}_{\vec e_k}$ preserves each summand, acting by the same matrix on both.</p>
+<p><em>Proof.</em> The bracket $[\vec e_k,\vec e_j]=2\epsilon_{kjl}\vec e_l$ is real, so $\mathrm{ad}_{\vec e_k}\mathfrak{k}\subseteq\mathfrak{k}$. The bracket $[\vec e_k,i\vec e_j]=i[\vec e_k,\vec e_j]$ is $i$ times the same combination, so $\mathrm{ad}_{\vec e_k}\mathfrak{p}\subseteq\mathfrak{p}$, and the two matrices agree. Left multiplication by $i$ is central and carries $\mathfrak{k}$ onto $\mathfrak{p}$, so the complex span of either summand is $V$.</p>
+<p><strong>Corollary.</strong> Each summand is a real form of $V$ and carries the real three-dimensional irreducible representation of the rotation algebra. The complex carrier $\mathcal{V}_2$ is one object over $\mathbb{C}$ and two copies of one object over $\mathbb{R}$.</p>
+<p><strong>Remark (the Hermitian generators exchange the summands).</strong> The element $\tilde S_k=\tfrac12 i\vec e_k$ is not in the real rotation algebra $\mathfrak{k}$; it is an element of $\mathfrak{p}$, that is, the complexified generator. Since $i\mathfrak{k}=\mathfrak{p}$, the derivation $\mathrm{ad}_{\tilde S_k}$ carries $\mathfrak{k}$ onto $\mathfrak{p}$ and $\mathfrak{p}$ onto $\mathfrak{k}$. A weight vector of $\mathrm{ad}_{\tilde S_3}$ therefore has one component in each, and the highest-weight vector is of that form: $v_+=\vec e_x+i\vec e_y$ with $\vec e_x\in\mathfrak{k}$ and $i\vec e_y\in\mathfrak{p}$. The integer weights belong to the complexified picture, and the real picture splits the one carrier into two copies.</p>
 <h2 id="the-four-uses-of-the-word-spin">The Four Uses of the Word Spin</h2>
 <p>Four objects in this corpus are called a spin. They are one definition applied to two module structures, and two signs that carry no weight at all.</p>
 <div class="table-scroll"><table>
@@ -451,6 +459,14 @@ $$</p>
 <tr>
 <td>$V=\ker\operatorname{tr}$</td>
 <td>The traceless part</td>
+</tr>
+<tr>
+<td>$\mathfrak{k}=\operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$</td>
+<td>The compact triple, a real form of $V$</td>
+</tr>
+<tr>
+<td>$\mathfrak{p}=\operatorname{span}_{\mathbb{R}}\{i\vec e_x,i\vec e_y,i\vec e_z\}$</td>
+<td>The hyperbolic triple, the other real form; $V=\mathfrak{k}\oplus\mathfrak{p}$</td>
 </tr>
 <tr>
 <td>$G=SU(2)$</td>
