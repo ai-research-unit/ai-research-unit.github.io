@@ -415,7 +415,7 @@ $$
 the amplitude transforms as
 
 $$
-A\mapsto e^{i(\theta_{\mathrm{pha},1}-\theta_{\mathrm{pha},2})}A .
+A\mapsto e^{i\theta_{\mathrm{rel}}}A ,\qquad \theta_{\mathrm{rel}}=\theta_{\mathrm{pha},1}-\theta_{\mathrm{pha},2}\in\mathbb{R},
 $$
 
 The modulus is invariant and the argument shifts by the relative phase. The phase of a pair is therefore gauge dependent: it depends on the two representatives, and only the modulus is a function of the two rays.

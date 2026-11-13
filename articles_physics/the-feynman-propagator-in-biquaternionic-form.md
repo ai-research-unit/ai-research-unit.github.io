@@ -117,16 +117,16 @@ $$
 
 with all other anticommutators vanishing. The plane-wave elements of the parent article obey the normalizations it records there, and the two sums over its two solutions are the numerators of this article, read as actions on $\mathbb{B}$: the positive-frequency sum is the momentum action shifted up by the mass, $\mathcal{A}_p+mc$, and the negative-frequency sum is the same action shifted down, $\mathcal{A}_p-mc$, both on shell.
 
-Contracting the mode operators against the vacuum gives the two elementary two-point actions. The **positive-frequency** piece is
+The separation angle is $\theta_{\mathrm{sep}}=p\cdot(x-y)/\hbar$, real because the momentum and the separation are real. Contracting the mode operators against the vacuum gives the two elementary two-point actions. The **positive-frequency** piece is
 
 $$
-W_+(x-y):\ \tilde Q\ \longmapsto\ \int\!\frac{d^3p}{(2\pi\hbar)^3}\frac{1}{2E_{\vec p}}\,\big(\mathcal{A}_{p}(\tilde Q)+mc\tilde Q\big)\,\exp(-i(p\cdot(x-y))/\hbar),
+W_+(x-y):\ \tilde Q\ \longmapsto\ \int\!\frac{d^3p}{(2\pi\hbar)^3}\frac{1}{2E_{\vec p}}\,\big(\mathcal{A}_{p}(\tilde Q)+mc\tilde Q\big)\,\exp(-i\theta_{\mathrm{sep}}),
 $$
 
 in which only the $a_{\mathrm{fop}} a_{\mathrm{fop}}^{\dagger}$ contraction survives, and the **negative-frequency** piece is
 
 $$
-W_-(x-y):\ \tilde Q\ \longmapsto\ \int\!\frac{d^3p}{(2\pi\hbar)^3}\frac{1}{2E_{\vec p}}\,\big(\mathcal{A}_{p}(\tilde Q)-mc\tilde Q\big)\,\exp(+i(p\cdot(x-y))/\hbar),
+W_-(x-y):\ \tilde Q\ \longmapsto\ \int\!\frac{d^3p}{(2\pi\hbar)^3}\frac{1}{2E_{\vec p}}\,\big(\mathcal{A}_{p}(\tilde Q)-mc\tilde Q\big)\,\exp(+i\theta_{\mathrm{sep}}),
 $$
 
 in which only $b_{\mathrm{fop}} b_{\mathrm{fop}}^{\dagger}$ survives. In both expressions the momentum action is on shell, because the free mode expansion contains the on-shell modes and nothing else. These two objects are not yet the propagator; each is a boundary value of an analytic function, and it is the time ordering that combines them into $S_F$.
@@ -145,7 +145,7 @@ The two $\mathrm{H}_{\mathrm{hvs}}$ functions can be represented by a single fou
 
 $$
 \boxed{\;S_F(x-y):\ \tilde Q\longmapsto i\int\!\frac{d^4p}{(2\pi\hbar)^4}\;
-\exp(-i(p\cdot(x-y))/\hbar)\frac{\mathcal{A}_p(\tilde Q)+mc\tilde Q}{p^2-m^{2}\,c^{2}+i\epsilon},
+\exp(-i\theta_{\mathrm{pwp}})\frac{\mathcal{A}_p(\tilde Q)+mc\tilde Q}{p^2-m^{2}\,c^{2}+i\epsilon},
 \qquad \epsilon\to0^+\;}.
 $$
 
@@ -403,7 +403,7 @@ $$
 Its content is the contour prescription, and the prescription is fixed by time ordering together with the fermionic anticommutation sign:
 
 $$
-S_F(x-y):\ \tilde Q\longmapsto i\int\!\frac{d^4p}{(2\pi\hbar)^4}\,\exp(-i(p\cdot(x-y))/\hbar)\frac{\mathcal{A}_p(\tilde Q)+mc\tilde Q}{p^2-m^{2}\,c^{2}+i\epsilon},
+S_F(x-y):\ \tilde Q\longmapsto i\int\!\frac{d^4p}{(2\pi\hbar)^4}\,\exp(-i\theta_{\mathrm{pwp}})\frac{\mathcal{A}_p(\tilde Q)+mc\tilde Q}{p^2-m^{2}\,c^{2}+i\epsilon},
 \qquad
 \mathcal{A}_p:\ \tilde Q\longmapsto i p_0\tilde Q\,\vec e_x-i\sum_{\eta=1}^{3} p_\eta\,\vec e_\eta\,\tilde Q\,\vec e_y .
 $$

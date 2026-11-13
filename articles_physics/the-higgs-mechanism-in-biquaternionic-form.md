@@ -79,10 +79,10 @@ Two features of this minimum are the whole content of "spontaneous" symmetry bre
 **2. The vacuum is a scalar with a constant magnitude.** Write
 
 $$
-\xi(\tilde{Q}) = \frac{1}{\sqrt{2}}\bigl(v + h(\tilde{Q})\bigr)\,\exp(\,i\vartheta_{\mathrm{fld}}(\tilde{Q})/v),
+\xi(\tilde{Q}) = \frac{1}{\sqrt{2}}\bigl(v + h(\tilde{Q})\bigr)\,\exp(\,i\theta_{\mathrm{gld}}(\tilde{Q})),\qquad \theta_{\mathrm{gld}}:=\vartheta_{\mathrm{fld}}/v,
 $$
 
-with $h$ and $\vartheta_{\mathrm{fld}}$ real. Here $h$ is the **radial** fluctuation away from the minimum and $\vartheta_{\mathrm{fld}}$ is the **angular** fluctuation along it. The potential depends on $|\xi| = \frac{1}{\sqrt{2}}|v+h|$ alone, so it is independent of $\vartheta_{\mathrm{fld}}$: expanding, $V = \beta v^2h^2 + O(h^3)$, giving the radial mode the mass
+with $h$ and $\vartheta_{\mathrm{fld}}$ real. Here $h$ is the **radial** fluctuation away from the minimum and $\vartheta_{\mathrm{fld}}$ is the **angular** fluctuation along it. The angle the exponential carries is $\theta_{\mathrm{gld}}$, real because the field and the vacuum value are both real with $v>0$, and dimensionless because the two have the same dimension. The potential depends on $|\xi| = \frac{1}{\sqrt{2}}|v+h|$ alone, so it is independent of $\vartheta_{\mathrm{fld}}$: expanding, $V = \beta v^2h^2 + O(h^3)$, giving the radial mode the mass
 
 $$
 \boxed{\;m_h^2 = 2\beta v^2\;}
@@ -157,15 +157,15 @@ the middle expression being the $i r'_t$ form of the biquaternion norm and the l
 
 The mass term above was obtained in the gauge in which $\xi$ is real and constant — the tree-level vacuum. In a generic gauge the scalar still has its angular mode $\vartheta_{\mathrm{fld}}$, and it is worth seeing where it goes. The answer is the second half of the mechanism.
 
-**The phase is a gauge direction.** The parametrization $\xi = \frac{1}{\sqrt{2}}(v+h)\exp(i\theta_{\mathrm{fld}}/v)$ exhibits the phase as a field. But a phase rotation is precisely a gauge transformation: choosing
+**The phase is a gauge direction.** The parametrization $\xi = \frac{1}{\sqrt{2}}(v+h)\exp(i\theta_{\mathrm{gld}})$ exhibits the phase as a field. But a phase rotation is precisely a gauge transformation: choosing
 
 $$
-\Gamma(\tilde{Q}) = -\,\frac{\hbar}{ϙ\,v}\,\theta_{\mathrm{fld}}(\tilde{Q})
+\Gamma(\tilde{Q}) = -\,\frac{\hbar}{ϙ\,v}\,\vartheta_{\mathrm{fld}}(\tilde{Q})
 $$
 
-gives $\xi\mapsto  \exp(i\theta_{\mathrm{gau}})\xi = \exp(-i\vartheta_{\mathrm{fld}}/v)\xi = \frac{1}{\sqrt{2}}(v+h)$, which is real — the angular field is removed. This choice is the **unitary gauge** for this abelian model. In it the scalar is a single real field $h$, and the potential gives it the mass $m_h^2 = 2\beta v^2$.
+gives $\xi\mapsto  \exp(i\theta_{\mathrm{gau}})\xi = \exp(-i\theta_{\mathrm{gld}})\xi = \frac{1}{\sqrt{2}}(v+h)$, which is real — the angular field is removed. This choice is the **unitary gauge** for this abelian model. In it the scalar is a single real field $h$, and the potential gives it the mass $m_h^2 = 2\beta v^2$.
 
-**Where the phase went.** The gauge transformation that removes $\theta_{\mathrm{fld}}$ also shifts the connection,
+**Where the phase went.** The gauge transformation that removes $\vartheta_{\mathrm{fld}}$ also shifts the connection,
 
 $$
 A_{2,\mu} = A_\mu - \partial/\partial R_\mu\,\Gamma = A_\mu +\frac{\hbar}{ϙ\,v}\,\partial/\partial R_\mu\,\vartheta_{\mathrm{fld}} ,
@@ -184,7 +184,7 @@ so the combination $A_\mu +\frac{\hbar}{ϙ\,v}\partial/\partial R_\mu\,\vartheta
 *After (broken phase, $\langle|\xi|\rangle = v/\sqrt{2}$):*
 
 - The scalar has $1$ real physical component, the radial mode $h$, which is massive.
-- The phase mode $\theta_{\mathrm{fld}}$ is not an independent physical field; it is the longitudinal polarization of the gauge field.
+- The phase mode $\vartheta_{\mathrm{fld}}$ is not an independent physical field; it is the longitudinal polarization of the gauge field.
 - The gauge field is massive. A massive vector has no residual gauge symmetry, so its $4$ components are all physical up to the equation of motion, giving $3$ polarizations: $2$ transverse and $1$ longitudinal.
 - Total: $1 + 3 = 4$.
 
@@ -221,9 +221,9 @@ The gap above is a gap of *this* framework as developed in the read list. It is 
 - **Class 1, point-like partons.** Two families, **quarks and leptons**, with the correct fractional and integral electric charges and with **baryonic charge**, and with the **neutrino and the u-quark masses zero by eigenvalue equations**.
 - **Class 2, extended hadrons.** No simple mass eigenvalue equation exists, and the **strong interaction is essentially non-local**; the pion mass and the pion–nucleon coupling are said to determine the remaining properties.
 
-The striking sentence is the one about the electroweak sector: it is claimed to be **the same as the Standard Model's, with the same two free parameters $e$ and $\sin^2\vartheta_{\mathrm{fld}}$**, and to need **no Higgs symmetry-breaking mechanism**. The masses that the Standard Model obtains from Yukawa couplings and a vacuum expectation value are obtained here instead as eigenvalues of the generalized mass operator.
+The striking sentence is the one about the electroweak sector: it is claimed to be **the same as the Standard Model's, with the same two free parameters $e$ and $\sin^2\theta_{\mathrm{wbn}}$**, and to need **no Higgs symmetry-breaking mechanism**. The masses that the Standard Model obtains from Yukawa couplings and a vacuum expectation value are obtained here instead as eigenvalues of the generalized mass operator.
 
-**What is genuinely different, and what is not.** The claim is easy to misread, and the paper's own accounting is the corrective. The electroweak sector is claimed **identical** to the Standard Model, with the *same two* parameters; nothing is derived about the couplings. The novelty is confined to **mass generation** — the masses become eigenvalues rather than Yukawa couplings — and to the hadron class, where the paper concedes that no simple eigenvalue equation exists and that the strong interaction is non-local. So the claim is not "the framework computes $e$ and $\sin^2\vartheta_{\mathrm{fld}}$"; it is "mass comes from an eigenvalue problem, so no Higgs is needed." Both halves matter for this article.
+**What is genuinely different, and what is not.** The claim is easy to misread, and the paper's own accounting is the corrective. The electroweak sector is claimed **identical** to the Standard Model, with the *same two* parameters; nothing is derived about the couplings. The novelty is confined to **mass generation** — the masses become eigenvalues rather than Yukawa couplings — and to the hadron class, where the paper concedes that no simple eigenvalue equation exists and that the strong interaction is non-local. So the claim is not "the framework computes $e$ and $\sin^2\theta_{\mathrm{wbn}}$"; it is "mass comes from an eigenvalue problem, so no Higgs is needed." Both halves matter for this article.
 
 **The mechanism's character: parity violation, not a scalar.** The source states its algebraic basis in one sentence, and it is worth keeping: "The generalization (9) is obtained by the substitution $Am\to AE$ in the Lagrangian leading to (1). Therefore, mass-generation is linked to a maximally parity violating field." The Einstein–Mayer–Lanczos Lagrangian is printed as their eq. (8), with an overall scalar-part bracket and the same $(\ldots)^{+}$ completion the corpus records for the Proca current and the energy–momentum tensor:
 
@@ -304,7 +304,7 @@ One gap is left visible and is not closed. The framework's scalar lies in the ce
 | $V(\xi^*\xi) = \beta(\xi^*\xi - v^2/2)^2$ | Scalar potential; $\beta > 0$ is the quartic coupling |
 | $\beta$ | Quartic self-coupling of the scalar (distinct from the phase $\lambda$) |
 | $h$ | Radial (Higgs) mode, $m_h^2 = 2\beta v^2$ |
-| $\theta_{\mathrm{fld}}$ | Angular (would-be Goldstone) mode, the phase $\theta_{\mathrm{fld}}/v$ |
+| $\vartheta_{\mathrm{fld}}$ | Angular (would-be Goldstone) mode, the phase $\vartheta_{\mathrm{fld}}/v$ |
 | $\varepsilon=(1,-1,-1,-1)$ | coordinate signs for contractions |
 | $\mathcal{L}_\text{scalar} = -\sum_{\mu,\nu}g_{\mu\nu}(D_\mu\xi)^*(D_\nu\xi) - V$ | Gauge-invariant scalar Lagrangian |
 | $-\sum_{\mu,\nu} g_{\mu\nu}(D_\mu\xi)^*(D_\nu\xi)\big|_\text{vac} = -\frac{ϙ^{2}\,v^{2}}{2\,\hbar^{2}}\mathrm{Sc}(\tilde{A}_{\Phi}^{\natural}\tilde{A}_{\Phi})_{\natural}$ | Kinetic term at the vacuum = mass term |

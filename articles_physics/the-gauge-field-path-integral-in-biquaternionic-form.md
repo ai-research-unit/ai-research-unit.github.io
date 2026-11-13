@@ -105,7 +105,7 @@ The delta functional is represented by introducing the Nakanishi–Lautrup field
 
 $$
 \delta\!\left(\langle\tilde\nabla_\Phi,\tilde A_{\Phi}\rangle_{\natural}-\omega\right)
-= \int\mathcal{D}B\;\exp(i\int d^4r\,B(\langle\tilde\nabla_\Phi,\tilde A_{\Phi}\rangle_{\natural}-\omega)),
+= \int\mathcal{D}B\;\exp(i\theta_{\mathrm{lgr}}),\qquad \theta_{\mathrm{lgr}}=\int d^4r\,B(\langle\tilde\nabla_\Phi,\tilde A_{\Phi}\rangle_{\natural}-\omega)\in\mathbb{R},
 $$
 
 and the $\omega$-dependence is removed by averaging over $\omega$ with the Gaussian weight

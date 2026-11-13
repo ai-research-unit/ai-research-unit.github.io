@@ -21,9 +21,9 @@ The article proceeds as follows. A section states why the time slicing fails, in
 The construction of the kernel is the one of *The Path Integral in Biquaternionic Form*: divide the time $T$ into $N$ steps of length $\varepsilon=T/N$, use the short-time kernel
 $$
 G_{\mathrm{prop},\varepsilon}(r_{\mathrm{src},x}\,\vec e_x+r_{\mathrm{src},y}\,\vec e_y+r_{\mathrm{src},z}\,\vec e_z,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=\Big(\frac{k_m}{2\pi i c\varepsilon}\Big)^{3/2}
-\exp\Big[\frac{i}{\hbar}\Big(\frac{m|r_{\mathrm{src},x}\,\vec e_x+r_{\mathrm{src},y}\,\vec e_y+r_{\mathrm{src},z}\,\vec e_z-(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)|^2}{2\varepsilon}-\varepsilon\,V(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\Big)\Big]+O(\varepsilon^2),
+\exp(i\theta_{\mathrm{cou}})+O(\varepsilon^2),
 $$
-and take the limit $N\to\infty$ of the product with the intermediate positions integrated.
+The display carries the short-time angle $\theta_{\mathrm{cou}}=\frac{1}{\hbar}\big(\frac{m\lvert\vec r_{\mathrm{src}}-\vec r\rvert^2}{2\varepsilon}-\varepsilon\,V(\vec r)\big)$, real because the mass, the displacement, the step and the potential are real. Take the limit $N\to\infty$ of the product with the intermediate positions integrated.
 
 Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 

@@ -29,8 +29,9 @@ $$
 is bounded below by a positive constant along the traversed path, and if the path is traversed slowly enough compared with that gap, then a system started in $|n(R(0))\rangle$ remains in the instantaneous eigenstate up to a phase:
 
 $$
-|\tilde{Ξ}(r'_t)\rangle  = \exp(i\gamma_n(r'_t))\,\exp(-\frac{i}{\hbar}\int_0^{r'_{t}}  E_n(R(r'_{t,2}))dr'_{t,2})\,|n(R(r'_t))\rangle  .
+|\tilde{Ξ}(r'_t)\rangle  = \exp(i\theta_{\mathrm{ber}})\,\exp(-i\theta_{\mathrm{dyn}})\,|n(R(r'_t))\rangle  .\qquad \theta_{\mathrm{ber}}=\gamma_n(r'_t),\quad \theta_{\mathrm{dyn}}=\frac{1}{\hbar}\int_0^{r'_{t}}E_n(R(r'_{t,2}))\,dr'_{t,2}
 $$
+Both angles are real: the Berry angle because a geometric phase is real, the dynamical angle because an energy over $\hbar$ is real.
 
 Substituting into the Schrödinger equation $i\,\hbar\,c\partial/\partial r'_t|\tilde{Ξ}\rangle  = \tilde H_\Psi|\tilde{Ξ}\rangle$, the dynamical factor cancels, and what remains is
 

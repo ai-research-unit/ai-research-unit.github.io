@@ -97,7 +97,7 @@ by the same two laws with one sign reversed. The relative minus sign is the stan
 **The solutions in full.** The fields are these elements multiplied by the phase,
 
 $$
-\tilde{Ξ}_{\pm}^{(+)}=\tilde{w}_{\pm}\,\vec p\,e^{-\frac{i\,(E\,r'_t/c-\vec p\cdot\vec r)}{\hbar\,c}},\qquad
+\tilde{Ξ}_{\pm}^{(+)}=\tilde{w}_{\pm}\,\vec p\,e^{-i\theta_{\mathrm{pwp}}},\qquad \theta_{\mathrm{pwp}}=\frac{E\,r'_t/c-\vec p\cdot\vec r}{\hbar\,c}\in\mathbb{R},\qquad
 \tilde{Ξ}_{\pm}^{(-)}=\tilde{v}_{\pm}\,\vec p\,e^{+\frac{i\,(E\,r'_t/c-\vec p\cdot\vec r)}{\hbar\,c}},
 $$
 

@@ -226,7 +226,7 @@ and that the field-strength part is traceless, transverse-anisotropic and invisi
 
 ## The Three Charged Fluids
 
-**The three charged articles can be put side by side, and the table is the shortest statement of what the charge does to each.** The table is the same in all three; what changes from one to the next is which column is the article's own.
+**The three relativistic charged articles can be put side by side, and the table is the shortest statement of what the charge does to each.** The table is the same in all three; what changes from one to the next is which column is the article's own. **The block has a fourth charged fluid at the rung below**, [The Charged Schrödinger Fluid](the-charged-schrodinger-fluid.html), and it differs from the charged scalar column in two rows only: its velocity is a three-vector and not a four-vector, so the unit row does not apply to it, and its vorticity is a three-vector curl, so its rank is $2$ wherever the field is present and never $4$.
 
 | | charged scalar | charged spin | charged vector |
 | --- | --- | --- | --- |
@@ -262,7 +262,7 @@ and that the field-strength part is traceless, transverse-anisotropic and invisi
 | charged spin | eight parameters | the connection, and a closure of the frame's transport | a charged Cosserat medium |
 | charged vector | the same eight | the connection, which is the field itself | a self-acting compressible medium |
 
-**The free correspondence's third column named what exceeds a dust; the charged correspondence's fourth row names what exceeds it now.** For the vector fluid the added datum is a field that is the medium, and the table's fourth row is this article's.
+**The free correspondence's third column named what exceeds a dust; the charged correspondence's third column names what exceeds it now.** For the vector fluid the added datum is a field that is the medium, and the table's third row is this article's.
 
 **What the correspondence supports and what it does not.** It supports the claim that the covariant Proca equation is the equation of motion of a charged compressible medium whose stress includes its own field, and it supports the twelve properties of §*The Properties, Listed* item by item. It does not support an equation of state (the free article denies one and the coupling does not supply it), and it does not support a fluid reading of the massless limit.
 

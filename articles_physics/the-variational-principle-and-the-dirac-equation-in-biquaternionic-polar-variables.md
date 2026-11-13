@@ -22,7 +22,7 @@ The word is a bijection from eight parameters onto the units of $\mathbb{B}$, so
 
 **The constant setting throughout.** As in the polar parent, the Hamiltonian is a constant element and the equation is an ordinary differential equation in $t'$. The spatial derivatives are set to zero: the field is homogeneous, which is the setting in which the polar flow is the parent's flow. The operator setting is not treated; it is the Madelung case of the scalar theory and its variational principle is in the classical literature.
 
-The formalism is that of *Lagrangian and Hamiltonian Mechanics in Biquaternionic Form*, and the action principle is that of *The Action Principle and the Classical Limit in Biquaternionic Form*; this article applies the principle to the Dirac equation in its polar form.
+The formalism is that of *Lagrangian and Hamiltonian Mechanics in Biquaternionic Form*, and the action principle is that of *The Action Principle and the Non-Quantum Limit in Biquaternionic Form*; this article applies the principle to the Dirac equation in its polar form.
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $e_t=1$, $\vec e_\mu^{2}=-e_t$, $i$ central, $\mathrm{Sc}$ the coefficient of $e_t$, $\mathrm{Tr}=2\,\mathrm{Sc}$. The conjugations are $*$ and $\natural$; the pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout, as in both element articles. Every symbol is defined where it first appears, and the table at the end collects them. The time variable is $t'$, so the derivative term is $\hbar c\,\partial_{r'_t}=\hbar\,\partial_{t'}$; the element-form companion uses $r'_t$ and the two are the same equation.
 

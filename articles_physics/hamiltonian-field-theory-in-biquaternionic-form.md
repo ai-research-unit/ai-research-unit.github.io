@@ -19,7 +19,7 @@ and the equation of motion is $\left(\Box_\Phi-k_m^{2}\right)\tilde{Ξ}=0$, that
 The companion articles are:
 
 - Companion article *Lagrangian and Hamiltonian Mechanics in Biquaternionic Form*, for the finite-dimensional Legendre transform, the phase-space biquaternion and the Poisson bracket that this article extends to a density.
-- Companion article *The Action Principle and the Classical Limit in Biquaternionic Form*, for the action and its first variation, and for the boundary term that the field case reproduces as a flux.
+- Companion article *The Action Principle and the Non-Quantum Limit in Biquaternionic Form*, for the action and its first variation, and for the boundary term that the field case reproduces as a flux.
 - Companion article *Noether's Theorem in Biquaternionic Form*, for the Lagrangian density, the conserved currents, and the canonical energy–momentum tensor.
 - Companion article *Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form*, for the energy–momentum biquaternion and the electromagnetic packaging that the scalar field's density and flux repeat.
 - Companion article *Canonical Quantization of the Biquaternion Klein–Gordon Field*, for the quantum theory that takes this classical canonical structure over without modification, and for the constraint analysis of the Dirac and Maxwell fields that this article contrasts with.
@@ -239,7 +239,7 @@ The formalism is the instantaneous one. The covariant formalism treats the four 
 - Jerrold E. Marsden and Tudor S. Ratiu, *Introduction to Mechanics and Symmetry* (2nd ed., Springer, 1999), for the field-theoretic Poisson bracket and its relation to the multisymplectic structure.
 - Mark J. Gotay, James Isenberg, Jerrold E. Marsden and Richard Montgomery, "Momentum maps and classical relativistic fields," *Physics Reports* (2004), for the covariant Hamiltonian formalism of field theory and the polymomentum.
 - [Lagrangian and Hamiltonian Mechanics in Biquaternionic Form](lagrangian-and-hamiltonian-mechanics-in-biquaternionic-form.html), companion article, for the finite-dimensional Legendre transform, the phase-space biquaternion and the bracket that this article extends to a density.
-- [The Action Principle and the Classical Limit in Biquaternionic Form](the-action-principle-and-the-classical-limit-in-biquaternionic-form.html), companion article, for the action, its first variation and the boundary term.
+- [The Action Principle and the Non-Quantum Limit in Biquaternionic Form](the-action-principle-and-the-non-quantum-limit-in-biquaternionic-form.html), companion article, for the action, its first variation and the boundary term.
 - [Noether's Theorem in Biquaternionic Form](noethers-theorem-in-biquaternionic-form.html), companion article, for the Lagrangian density and the canonical energy–momentum tensor.
 - [Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form](stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.html), companion article, for the energy–momentum biquaternion of the electromagnetic field and the conservation law for field and matter.
 - [Canonical Quantization of the Biquaternion Klein–Gordon Field](canonical-quantization-of-the-biquaternion-klein-gordon-field.html), companion article, for the quantization of the classical structure built here.

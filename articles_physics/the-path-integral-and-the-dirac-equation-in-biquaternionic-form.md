@@ -1,4 +1,4 @@
-# __The Dirac Path Integral in Biquaternionic Form__
+# __The Path Integral and the Dirac Equation in Biquaternionic Form__
 
 ## Introduction
 
@@ -23,6 +23,8 @@ with massless limit $\tilde\nabla_\Phi\tilde{Ξ} = 0$. Both lines act from the l
 **Two different equations carry the name of Dirac, and this article uses one of them.** The first is the one-sided pair displayed above: both gradients act by left multiplication and keep the value, and the mass is the central coefficient $k_m$ that relates the two components; it is off-diagonal in the pair, since each line joins a component of one letter to a component of the other, and it moves no value across, since a central coefficient multiplying on the left keeps it. The second is the **two-sided** form of *The Dirac Equation in Biquaternionic Form*, a single equation on $\mathbb{B}$ in which the derivative acts from the left and the mass by right multiplication through the fixed direction $\vec e_z$. The two are the same field read through the dictionary of that article, and they are not the same operator; the difference is exactly the difference between a one-sided and a two-sided action. Every statement below is about the one-sided pair, and the path integral is built for it.
 
 The worldline parameter is $\tau$ and the proper time $T$. The material position is $\tilde R_\Phi = i r'_t\,e_t + r_x\,\vec e_x + r_y\,\vec e_y + r_z\,\vec e_z \in \mathbb{B}_{\Phi}$, with real coordinates $x_0 = r'_{t}$ and $r_\eta$ on the three spatial directions (*Frame and Metric Conventions*, §*The $\mathbb{B}_{\Phi}$ Frame*), so that $Q_t=i q'_t$.
+
+**The same integral in the other coordinates is the companion article.** *The Path Integral and the Dirac Equation in Biquaternionic Polar Variables* substitutes the polar word $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ into the integral developed here, and reads which of the word's eight parameters a path carries, where the four factors of the kernel come from, and where the polar form fails. It constructs no second integral and adds no prediction; it is this propagator, read in the coordinates of *The Dirac Equation in Biquaternionic Polar Variables*. Nothing below depends on that reading.
 
 ## The Dirac Propagator and the Square
 
@@ -92,7 +94,7 @@ $$
 (\tilde\nabla_\Phi)^{\natural}\mathcal S_L-k_m\mathcal S_R=i\,\delta^{(4)}\!\left(\tilde R_\Phi-\tilde R_{\Phi,2}\right),
 $$
 
-the two lines with a source of unit strength. Each term carries the dimension of a wave number, the gradients and $k_m$ alike, so the two terms of a line add without a dimensional mismatch; the $\delta^{(4)}$ is the four-dimensional delta of the material four-position measured in metres, and the Fourier measure $d^4p/(2\pi\hbar)^4$ of the display below is its matching transform, so the powers close on both sides. Each line composed with the conjugate of the other is scalar,
+the two lines with a source of unit strength. Each term carries the dimension of a wave number, the gradients and $k_m$ alike, so the two terms of a line add without a dimensional mismatch; the $\delta^{(4)}$ is the four-dimensional delta of the material four-position measured in metres, and the Fourier measure $d^4p/(2\pi\hbar)^4$ of the display below is its matching transform, so the powers close on both sides. The powers, written out once: $\mathcal G_F$ carries $L^{-2}$, the bracket $\tilde\nabla_\Phi+k_m$ carries $L^{-1}$, so $\mathcal S_L$ and $\mathcal S_R$ carry $L^{-3}$, and a second application of the bracket carries $L^{-4}$, the dimension of the $\delta^{(4)}$ on the right-hand side. Each line composed with the conjugate of the other is scalar,
 
 $$
 (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\mathcal S_R = \Box_\Phi\,\mathcal S_R,
@@ -157,6 +159,8 @@ $$
 (x-x_2)^2 = (x_0-x_2^0)^2 - \left|\vec r-\vec r_2\right|^2 ,
 $$
 
+**The sign in the time slot is not a convention.** $R_t=ir'_t$ gives $\dot R_t^{2}=-(\dot r'_t)^{2}$, so the time direction enters the sum with the sign opposite to the three spatial ones, and $\sum_\mu\dot R_\mu\dot R_\mu$ is minus the Lorentzian square of the tangent. The kinetic term is negative along the time direction because the temporal coordinate is the imaginary one, and that is the whole of the sign bookkeeping of the proper-time exponent.
+
 writing $\vec r = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ for the vector part of the position, and the phase reduces to $\exp\left(-\frac{i}{\hbar}\left[\frac{(x-x_2)^2}{4T} + \hbar^{2}k_m^{2} T\right]\right)$; this is the sign that the explicit free kernel of the next section displays. The Dirac propagator is then $\left(\tilde\nabla_\Phi + k_m\right)\mathcal{G}_F$ in the first component and $\left((\tilde\nabla_\Phi)^{\natural}+ k_m\right)\mathcal{G}_F$ in the second. The worldline is a curve in the material sector $\mathbb{B}_{\Phi}$: its tangent is a material four-velocity, and the phase $S_0$ is central. This is the biquaternion content of the scalar worldline: a central phase over a material curve.
 
 The angle is $\theta_{\mathrm{act}}=\mathrm{Re}\,S/\hbar$: the real part of the action is taken before dividing by $\hbar$, so the angle is real.
@@ -187,6 +191,8 @@ with $\mathcal{N}(T)$ the standard Gaussian normalisation $\propto T^{-2}$, whos
 
 The same proper-time integral is the bridge to the worldline of the next section: replacing the constant mass by a general worldline interaction, and adding the odd variables, converts this scalar kernel into the algebra-valued kernel of the pair.
 
+**Two limits are read in the polar companion.** At $k_m=0$ the components reduce to the two gradients applied to the massless scalar kernel, $\mathcal S_L\propto\tilde R_\Phi\langle\tilde R_\Phi\rangle_{\natural}^{-2}$ and $\mathcal S_R\propto\tilde R_\Phi^{\natural}\langle\tilde R_\Phi\rangle_{\natural}^{-2}$, whose singular support is the light cone $\langle\tilde R_\Phi\rangle_{\natural}=0$. For small $\hbar$ the worldline integral is the van Vleck determinant times the phase $e^{iS_{\mathrm{cl}}/\hbar}$ times the spin transport, and *The Path Integral and the Dirac Equation in Biquaternionic Polar Variables* reads those three factors as the scale, the angle and the rotor of the kernel's polar word. Neither limit is used below.
+
 ## The Spinning Worldline and the Spin Factor
 
 The worldline that generates the Dirac propagator itself, rather than the Klein–Gordon kernel it acts on, carries an additional **odd** (Grassmann) degree of freedom $\tilde{Ξ}_{\mu}(\tau)$ at each point. The standard supersymmetric worldline action is
@@ -211,20 +217,20 @@ with the unit $e_t$ of the algebra in place of the identity of the older display
 
 **The odd pair closes on the algebra.** A single odd variable is not an element of $\mathbb{B}$: the algebra has no odd part, and every element of it commutes with the central coefficients. The products of an even number of odd variables are even, and they close under multiplication; they span an algebra of real dimension eight, and that algebra is $\mathbb{B}$ — the even part of the envelope is the algebra, and the odd part is a second copy of it that the algebra does not contain (*Biquaternion Versors and the Orthogonal Group*, §*The Two Slots of the Envelope*). In the algebra itself the closure is visible on the units: a product of two units is a unit up to sign, since $e_te_t$ and $\vec e_\eta\vec e_\eta$ are $\pm e_t$, $e_t\vec e_\eta$ and $\vec e_\eta e_t$ are $\pm\vec e_\eta$, and $\vec e_j\vec e_\eta$ with distinct spatial indices is the third unit. The four units span the algebra, of complex dimension four, and that dimension is the one the older counting reports.
 
-The path integral over the odd variables, with the boundary condition appropriate to the object computed, is a **spin factor** $Ξ[x]$ multiplying the scalar measure:
+The path integral over the odd variables, with the boundary condition appropriate to the object computed, is a **spin factor** $\mathcal{F}[x]$ multiplying the scalar measure:
 
 $$
-\boxed{\;\mathcal S(x,x_2) = \int_0^\infty dT\int\mathcal{D}x\;Ξ[x]\,\exp(i\theta_{\mathrm{act}})\;}
+\boxed{\;\mathcal S(x,x_2) = \int_0^\infty dT\int\mathcal{D}x\;\mathcal{F}[x]\,\exp(i\theta_{\mathrm{act}})\;}
 $$
 
 with the spin factor
 
 $$
-Ξ[x] = \int_{\text{b.c.}}\mathcal{D}\tilde{Ξ}\;
+\mathcal{F}[x] = \int_{\text{b.c.}}\mathcal{D}\tilde{Ξ}\;
 \exp\left(-\frac{1}{2}\int_0^T d\tau\;\sum_\mu\tilde{Ξ}_{\mu}\frac{d\tilde{Ξ}_{\mu}}{d\tau}\right).
 $$
 
-The exponent of $Ξ$ carries no $i$, and the reason is the product of two of them: the action contributes $\frac{i}{2}\sum_\mu\tilde{Ξ}_{\mu}\frac{d\tilde{Ξ}_{\mu}}{d\tau}$, the weight is the exponential of $i$ times the action, and $i\cdot i = -1$. Written with the two $i$'s kept apart, the spin factor is $\exp\left(i\int_0^T d\tau\,\frac{i}{2}\sum_\mu\tilde{Ξ}_{\mu}\frac{d\tilde{Ξ}_{\mu}}{d\tau}\right)$; multiplied out, it is $\exp\left(-\frac{1}{2}\int_0^T d\tau\,\sum_\mu\tilde{Ξ}_{\mu}\frac{d\tilde{Ξ}_{\mu}}{d\tau}\right)$, which is real. It is bilinear in the odd variables, so its expansion is a sum of products of pairs, and a pair corresponds to an element of the algebra, a product of two units being a unit up to sign: the weight the odd integral produces is an element of $\mathbb{B}$.
+The exponent of $\mathcal{F}$ carries no $i$, and the reason is the product of two of them: the action contributes $\frac{i}{2}\sum_\mu\tilde{Ξ}_{\mu}\frac{d\tilde{Ξ}_{\mu}}{d\tau}$, the weight is the exponential of $i$ times the action, and $i\cdot i = -1$. Written with the two $i$'s kept apart, the spin factor is $\exp\left(i\int_0^T d\tau\,\frac{i}{2}\sum_\mu\tilde{Ξ}_{\mu}\frac{d\tilde{Ξ}_{\mu}}{d\tau}\right)$; multiplied out, it is $\exp\left(-\frac{1}{2}\int_0^T d\tau\,\sum_\mu\tilde{Ξ}_{\mu}\frac{d\tilde{Ξ}_{\mu}}{d\tau}\right)$, which is real. It is bilinear in the odd variables, so its expansion is a sum of products of pairs, and a pair corresponds to an element of the algebra, a product of two units being a unit up to sign: the weight the odd integral produces is an element of $\mathbb{B}$.
 
 The complete worldline path integral, with the correct measure, reproduces the propagator $\mathcal S$; this is the Berezin–Marinov / Brink–Di Vecchia–Howe construction, and it is standard. The same construction in a background electromagnetic field replaces the free kinetic term by the minimally coupled one and produces the spin factor quoted in the literature, with the sign conventions of the cited works; the trace of the same object is the closed-worldline weight and belongs to the next section.
 
@@ -232,9 +238,9 @@ The complete worldline path integral, with the correct measure, reproduces the p
 
 The spin factor is where the algebra sits, and its structure is the reason the odd variable carries the spin.
 
-**A pair of odd variables is an element, and a single one is not.** The algebra carries no odd part: every element is even in the Grassmann sense, because the central coefficients commute with it. The oddness therefore lives in the variable and not in the algebra, and the weight is where it disappears: the exponent of $Ξ$ is bilinear, so each term of its expansion is a pair, and a pair is an element of the algebra, since a product of two units is a unit up to sign. The weight is an element of $\mathbb{B}$ and acts on the field by left multiplication. The transport of the field along the worldline is a multiplication by that element, and the algebra is not an auxiliary description of the spin: it is the algebra of the pairs.
+**A pair of odd variables is an element, and a single one is not.** The algebra carries no odd part: every element is even in the Grassmann sense, because the central coefficients commute with it. The oddness therefore lives in the variable and not in the algebra, and the weight is where it disappears: the exponent of $\mathcal{F}$ is bilinear, so each term of its expansion is a pair, and a pair is an element of the algebra, since a product of two units is a unit up to sign. The weight is an element of $\mathbb{B}$ and acts on the field by left multiplication. The transport of the field along the worldline is a multiplication by that element, and the algebra is not an auxiliary description of the spin: it is the algebra of the pairs.
 
-**The spin factor is the path-ordered product of the elements at the successive points.** Order by order, $Ξ[x]$ is a sum of elements: the unit, then the products of two units, then of four. Each instant of the worldline contributes an element and the product is path ordered, because the elements at different instants do not commute. The exponent therefore grows one factor of the algebra per pair of odd variables, and the whole transport is a product of elements multiplying the field on the left.
+**The spin factor is the path-ordered product of the elements at the successive points.** Order by order, $\mathcal{F}[x]$ is a sum of elements: the unit, then the products of two units, then of four. Each instant of the worldline contributes an element and the product is path ordered, because the elements at different instants do not commute. The exponent therefore grows one factor of the algebra per pair of odd variables, and the whole transport is a product of elements multiplying the field on the left.
 
 **The square of the operator is the scalar path integral.** The worldline action has a bosonic kinetic term and a fermionic one, and integrating out the odd variables returns the weight that the first-order equation adds. The statement that the Dirac propagator is the Dirac operator applied to the scalar kernel, and the statement that a pair of odd variables is an element of the algebra, are two faces of the same relation: the odd variable is the spin and the pair is the algebra, so squaring the first-order operator removes the odd variable and returns the scalar operator whose path integral is $\mathcal{G}_F$.
 
@@ -263,13 +269,13 @@ $$
 **The weight is the path-ordered exponential of an element.** The path integral over the odd variables produces the path-ordered exponential of the contraction:
 
 $$
-\boxed{\;Ξ[x] = \mathcal{P}\exp\left(-\frac{i}{2}\int_0^T d\tau\;\sum_{\mu\neq\nu}\tilde\Sigma_{\Psi,\mu\nu}F_{\mu\nu}(x(\tau))\right)\;}
+\boxed{\;\mathcal{F}[x] = \mathcal{P}\exp\left(-\frac{i}{2}\int_0^T d\tau\;\sum_{\mu\neq\nu}\tilde\Sigma_{\Psi,\mu\nu}F_{\mu\nu}(x(\tau))\right)\;}
 $$
 
 for the open worldline that computes the propagator, and for the worldline closed into a loop it is the traced weight
 
 $$
-Ξ_{\mathrm{loop}}[x] = \mathrm{Tr}\,\mathcal{P}\exp\left(-\frac{i}{2}\int_0^T d\tau\;\sum_{\mu\neq\nu}\tilde\Sigma_{\Psi,\mu\nu}F_{\mu\nu}(x(\tau))\right).
+\mathcal{F}_{\mathrm{loop}}[x] = \mathrm{Tr}\,\mathcal{P}\exp\left(-\frac{i}{2}\int_0^T d\tau\;\sum_{\mu\neq\nu}\tilde\Sigma_{\Psi,\mu\nu}F_{\mu\nu}(x(\tau))\right).
 $$
 
 Closing the worldline into a loop turns the weight into a trace, and that is the antiperiodic case of the odd integral above: the fermionic variables are antiperiodic around the circle, as every fermionic trace requires. The contractions pair the electric components with the boost generators and the magnetic components with the rotation generators, so the exponent carries both labels at once.
@@ -463,7 +469,7 @@ so that the four values are $-4I_4$, $+2\gamma_\alpha$, $0$ and $-2\gamma_\alpha
 
 ## Summary
 
-The Dirac path integral is the sum over worldlines that computes the propagator, the pair of element-valued kernels $\mathcal S_L$, $\mathcal S_R$ satisfying $\tilde\nabla_\Phi\mathcal S_R-k_m\mathcal S_L=i\delta^{(4)}$ and $(\tilde\nabla_\Phi)^{\natural}\mathcal S_L-k_m\mathcal S_R=i\delta^{(4)}$. Because the Dirac operator is first order, the path integral is organised in one of two standard ways. In the **proper-time** way, the scalar Klein–Gordon kernel is written as a worldline sum over material curves in $\mathbb{B}_{\Phi}$ with central phase $S_0$, and the Dirac propagator is obtained by applying the conjugate first-order operators: $\mathcal S_L = \left(\tilde\nabla_\Phi + k_m\right)\mathcal{G}_F$ and $\mathcal S_R = \left((\tilde\nabla_\Phi)^{\natural}+ k_m\right)\mathcal{G}_F$, the identity following because each line composed with the conjugate of the other is $\Box$. In the **spinning-worldline** way, an odd Grassmann variable $\tilde{Ξ}_{\mu}$ is added at each point with kinetic term $\frac{i}{2}\sum_\mu\tilde{Ξ}_{\mu}\frac{d\tilde{Ξ}_{\mu}}{d\tau}$; a pair of odd variables is an element of the algebra with $\tilde{Ξ}_{\mu}\tilde{Ξ}_{\nu} + \tilde{Ξ}_{\nu}\tilde{Ξ}_{\mu} = -\frac12\varepsilon_\mu\delta_{\mu\nu}e_t$; the path integral over $\tilde{Ξ}$ is the algebra-valued spin factor $Ξ[x]$; and the full worldline integral reproduces the propagator (Berezin–Marinov, Brink–Di Vecchia–Howe).
+The Dirac path integral is the sum over worldlines that computes the propagator, the pair of element-valued kernels $\mathcal S_L$, $\mathcal S_R$ satisfying $\tilde\nabla_\Phi\mathcal S_R-k_m\mathcal S_L=i\delta^{(4)}$ and $(\tilde\nabla_\Phi)^{\natural}\mathcal S_L-k_m\mathcal S_R=i\delta^{(4)}$. Because the Dirac operator is first order, the path integral is organised in one of two standard ways. In the **proper-time** way, the scalar Klein–Gordon kernel is written as a worldline sum over material curves in $\mathbb{B}_{\Phi}$ with central phase $S_0$, and the Dirac propagator is obtained by applying the conjugate first-order operators: $\mathcal S_L = \left(\tilde\nabla_\Phi + k_m\right)\mathcal{G}_F$ and $\mathcal S_R = \left((\tilde\nabla_\Phi)^{\natural}+ k_m\right)\mathcal{G}_F$, the identity following because each line composed with the conjugate of the other is $\Box$. In the **spinning-worldline** way, an odd Grassmann variable $\tilde{Ξ}_{\mu}$ is added at each point with kinetic term $\frac{i}{2}\sum_\mu\tilde{Ξ}_{\mu}\frac{d\tilde{Ξ}_{\mu}}{d\tau}$; a pair of odd variables is an element of the algebra with $\tilde{Ξ}_{\mu}\tilde{Ξ}_{\nu} + \tilde{Ξ}_{\nu}\tilde{Ξ}_{\mu} = -\frac12\varepsilon_\mu\delta_{\mu\nu}e_t$; the path integral over $\tilde{Ξ}$ is the algebra-valued spin factor $\mathcal{F}[x]$; and the full worldline integral reproduces the propagator (Berezin–Marinov, Brink–Di Vecchia–Howe).
 
 In the biquaternion framework, a single odd variable is not an element of the algebra and a pair is, because every product of two units is a unit up to sign; the spin factor is the path-ordered product of those elements, and squaring the first-order operator returns the central Klein–Gordon operator. In momentum space the two components of the propagator are $\mathcal S_L = (i\,mc-\tilde{P}_{\Phi})/(p^2-m^{2}c^{2})$ and $\mathcal S_R = (i\,mc-\tilde{P}_{\Phi}^{\natural})/(p^2-m^{2}c^{2})$, and the identity that the two lines compose to $\Box-k_m^{2}$ is the whole of the square. The scalar path integral of the companion subcategory is the kernel that the first-order factor acts on, a consequence of this identity rather than an independent construction. Feynman's checkerboard is the discrete realisation of the same structure in 1+1 dimensions: the two directions are the two components of the pair, the corners carry the weight $i\epsilon\,k_m$ and are the mass insertions that join them, and the continuum limit is the two-dimensional propagator.
 
@@ -493,7 +499,7 @@ In the biquaternion framework, a single odd variable is not an element of the al
 | $S_0[x]$ | Scalar worldline action |
 | $\tilde{Ξ}_{\mu}(\tau)$ | Odd (Grassmann) worldline variable; a single one is not an element of the algebra |
 | $\tilde{Ξ}_{\mu}\tilde{Ξ}_{\nu}+\tilde{Ξ}_{\nu}\tilde{Ξ}_{\mu} = -\tfrac12\varepsilon_\mu\delta_{\mu\nu}e_t$ | The pair of odd variables, an element of the algebra |
-| $Ξ[x]$ | Spin factor, the algebra-valued path-ordered weight |
+| $\mathcal{F}[x]$ | Spin factor, the algebra-valued path-ordered weight |
 | $\tilde\Sigma_{\Psi,0\eta}=i\vec e_\eta$, $\tilde\Sigma_{\Psi,jk}=\vec e_j\vec e_\eta$ | The six Lorentz generators, boosts in $\mathbb{B}_{\Psi}$ and rotations in the real quaternion sector |
 | $G_{\mathrm{ctp},++}$, $G_{\mathrm{ctp},+-}$, $G_{\mathrm{ctp},-+}$, $G_{\mathrm{ctp},--}$ | Checkerboard propagator amplitudes |
 | $i\epsilon\,k_m$ per corner | Checkerboard corner weight |
@@ -502,6 +508,7 @@ In the biquaternion framework, a single odd variable is not an element of the al
 
 ## Further Reading
 
+- [The Path Integral and the Dirac Equation in Biquaternionic Polar Variables](the-path-integral-and-the-dirac-equation-in-biquaternionic-polar-variables.html), the companion, for the same integral read in the polar word.
 - [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - R. P. Feynman, "Space-time approach to non-relativistic quantum mechanics," *Reviews of Modern Physics* **20** (1948) 367–387, for the path integral.
 - R. P. Feynman, "The theory of positrons," *Physical Review* **76** (1949) 749–759, and "Mathematical formulation of the quantum theory of electromagnetic interaction," *Physical Review* **80** (1950) 440–457, for the first-order propagator and its proper-time structure.

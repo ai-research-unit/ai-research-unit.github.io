@@ -271,9 +271,9 @@ The structural role of $U_{\mathrm{vec}}$ is what the article uses: the *same* v
 
 The derivative shift integrates to a phase,
 $$
-G^{\mathrm R}_\mu=G^{0\mathrm R}_\mu\exp\Bigl(-i\!\int\bigl(eA_\nu+mK_\nu\bigr)^*dx_\nu\Bigr),
+G^{\mathrm R}_\mu=G^{0\mathrm R}_\mu\exp\Bigl(-i\theta_{\mathrm{wln}}^*\Bigr),\qquad \theta_{\mathrm{wln}}=\int\bigl(eA_\nu+mK_\nu\bigr)dx_\nu\in\mathbb{R},
 \qquad
-G^{\mathrm L}_\mu=G^{0\mathrm L}_\mu\exp\Bigl(i\!\int\bigl(eA_\nu+mK_\nu\bigr)dx_\nu\Bigr),
+G^{\mathrm L}_\mu=G^{0\mathrm L}_\mu\exp\Bigl(i\theta_{\mathrm{wln}}\Bigr),
 $$
 which depends on the path from a fixed initial point, and $U_{\mathrm{vec}}$ is form-invariant under the map: it is the same function of the mapped fields as of the original ones, so the map is invertible and the massless and massive solutions correspond one to one. This is the source's **non-integrable phase**: the mass is not a scalar multiplying $\tilde{Ξ}^{\dagger}iC_0\tilde{Ξ}$ but a unit complex vector, a direction in the complexified tangent space, and the phase it generates is path-dependent and is not removable by a gauge transformation of the s-vector. Its real part is the vector current and its imaginary part the axial current, so the phase and the "scale" of the field are the two halves of one complex vector.
 

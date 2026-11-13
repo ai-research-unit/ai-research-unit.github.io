@@ -86,7 +86,7 @@ $$
 \tilde K_\Phi=\tilde K_{\Phi,\mathrm{gco}}-\frac{ϙ}{\hbar}\tilde A_\Phi .
 $$
 
-**In one sentence: the boost in the word is the one the covariant wavevector names, so the velocity is kinetic and the potential sits entirely in the canonical wavevector.** The classical statement is $\vec p_{\mathrm{kin}}=\vec p_{\mathrm{can}}-ϙ\vec A$; the chart's statement is that the two wavevectors differ by one element and that the mass-shell identity is applied to the second.
+**In one sentence: the boost in the word is the one the covariant wavevector names, so the velocity is kinetic and the potential sits entirely in the canonical wavevector.** The classical statement is $\vec p_{\mathrm{kin}}=\vec p_{\mathrm{can}}+ϙ\vec A$; the chart's statement is that the two wavevectors differ by one element and that the mass-shell identity is applied to the second.
 
 **The velocity is a unit for every field, and this is where the spin fluid parts company with the scalar one.** Because the boost is a unit by construction and the density is a separate factor,
 
@@ -209,7 +209,7 @@ and the second is conserved by antisymmetry alone and carries no total charge.
 **The coupling adds a force and no torque, and the two statements have different reasons.** The momentum balance of the free article is that the divergence of the stress is the divergence of the spin's antisymmetric part. With the coupling it is
 
 $$
-\partial_\nu T^{\mu\nu}=ϙF^{\mu\nu}J_\nu+(\text{the free article's spin term}),
+\partial_\nu T^{\mu\nu}=-ϙF^{\mu\nu}J_\nu+(\text{the free article's spin term}),
 $$
 
 so the field acts on the charge current and the spin term is the free one's. **The force is longitudinal in the sense that it acts where the charge flows; the torque is the antisymmetric part of the stress and the field has no term in it**, because a torque would have to be written in the rotor bracket and the connection cannot write there.
@@ -244,12 +244,12 @@ so the field acts on the charge current and the spin term is the free one's. **T
 8. **The loop invariant is a Lorentz transformation times a phase.** Nothing about it is quantised, and the scalar's $h/m$ is the central factor of the transformation.
 9. **The Gordon split survives.** The convection part is the chart's current; the bound magnetisation current has no explicit dependence on the connection.
 10. **The spin direction is gauge invariant and coupling-blind.** $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$; the chart shows no rotor torque, and the Larmor precession is second order, through the frame.
-11. **The coupling adds a force and not a torque.** $\partial_\nu T^{\mu\nu}=ϙF^{\mu\nu}J_\nu+$ the free article's spin term, and the second is unchanged.
+11. **The coupling adds a force and not a torque.** $\partial_\nu T^{\mu\nu}=-ϙF^{\mu\nu}J_\nu+$ the free article's spin term, and the second is unchanged.
 12. **The degenerate set is $r=0$ and the closure is still underdetermined.** The charge does not supply the missing spin-transport law, and the reason is that the missing law lives in the bracket the connection cannot reach.
 
 ## The Three Charged Fluids
 
-**The three charged articles can be put side by side, and the table is the shortest statement of what the charge does to each.** The table is the same in all three; what changes from one to the next is which column is the article's own.
+**The three relativistic charged articles can be put side by side, and the table is the shortest statement of what the charge does to each.** The table is the same in all three; what changes from one to the next is which column is the article's own. **The block has a fourth charged fluid at the rung below**, [The Charged Schrödinger Fluid](the-charged-schrodinger-fluid.html), and it differs from the charged scalar column in two rows only: its velocity is a three-vector and not a four-vector, so the unit row does not apply to it, and its vorticity is a three-vector curl, so its rank is $2$ wherever the field is present and never $4$.
 
 | | charged scalar | charged spin | charged vector |
 | --- | --- | --- | --- |
@@ -285,7 +285,7 @@ so the field acts on the charge current and the spin term is the free one's. **T
 | charged spin | eight parameters | the connection, and a closure of the frame's transport | a charged Cosserat medium |
 | charged vector | the same eight | the connection, which is the field itself | a self-acting compressible medium |
 
-**The free correspondence's three kinds of extra structure were the three ways a medium exceeds a dust; the charged correspondence's third column names what exceeds the dust now.** For the spin fluid the added datum is a field acting on a medium that already had an orientation, and the table's fourth row is this article's.
+**The free correspondence's three kinds of extra structure were the three ways a medium exceeds a dust; the charged correspondence's third column names what exceeds the dust now.** For the spin fluid the added datum is a field acting on a medium that already had an orientation, and the table's second row is this article's.
 
 **What the correspondence supports and what it does not.** It supports the claim that the coupled Dirac equation is the equation of motion of a charged Cosserat medium, and it supports the twelve properties of §*The Properties, Listed* item by item. It does not support a spin dynamics in a background, a closure of the general field, or the identification of the vorticity with the field strength: the first two are refused in §*What the Charge Cannot Close* and the third in §*The Vorticity Is Still the Frame's*.
 

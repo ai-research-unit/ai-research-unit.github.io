@@ -168,7 +168,7 @@ which need not vanish. A flow that is accelerated from rest develops a non-zero 
 
 **The reverse map's criterion has four items, and the scalar fluid meets all four when the conditions are read on four-vectors, and three of them when the same conditions are read in a frame.** The criterion is derived in [The Direction of the Fluid-Wave Correspondence, Field by Field](the-direction-of-the-fluid-wave-correspondence-field-by-field.html): the velocity must be a gradient, the flow must be vorticity-free, every force must be a gradient, and the potential must be a function of the density plus the quantum term. The audit is short enough to tabulate.
 
-**The criterion being met here in full is what makes this fluid the bottom of a hierarchy and not the whole of it.** A gradient is the rank-zero case of a velocity one-form, and a rotational flow of rank two is still a potential flow, with a Clebsch pair in place of the single scalar. The scalar fluid has no pair to spend because its unknown carries a modulus and a phase and nothing else; a bispinor carries a frame, and the frame is where a pair can live. [The Clebsch Potentials and the Rank of the Vorticity](the-clebsch-potentials-and-the-rank-of-the-vorticity.html) states the hierarchy and locates the Dirac fluid in it, so the four items below are the conditions of the lowest member and the Dirac block does not contradict them.
+**The criterion being met here in full is what makes this fluid the lowest member of the rank hierarchy and not the whole of it.** A gradient is the rank-zero case of a velocity one-form, and a rotational flow of rank two is still a potential flow, with a Clebsch pair in place of the single scalar. The scalar fluid has no pair to spend because its unknown carries a modulus and a phase and nothing else; a bispinor carries a frame, and the frame is where a pair can live. [The Clebsch Potentials and the Rank of the Vorticity](the-clebsch-potentials-and-the-rank-of-the-vorticity.html) states the hierarchy and locates the Dirac fluid in it, so the four items below are the conditions of the lowest member and the Dirac block does not contradict them.
 
 | Item of the criterion | The scalar fluid | Where it is shown |
 | --- | --- | --- |
@@ -185,8 +185,10 @@ $$
 \qquad\Longrightarrow\qquad
 \sum_{\nu}V_{\nu}\,\partial_{\nu}V_{\mu}=-\partial_{\mu}\frac{Q_{\mathrm{qnt}}}{m},
 \qquad
-\sum_{\nu}V_{\nu}V_{\nu}=-c^{2} .
+\sum_{\nu}V_{\nu}V_{\nu}=-c^{2}-\frac{2Q_{\mathrm{qnt}}}{m} .
 $$
+
+**The normalisation is a unit only where the quantum potential vanishes, and the display says so.** The mass shell fixes the norm of $\tilde V_\Phi=\tilde P_\Phi/m$ at $-c^{2}-2Q_{\mathrm{qnt}}/m$, so the four-velocity is a unit on the free shell and on nothing else; the flow is bounded by $\lvert\vec v\rvert<c$ exactly while the shell stays timelike, that is while $Q_{\mathrm{qnt}}>-mc^{2}/2$. **That is the qualification the first-order rung removes**, and it is the reason the non-relativistic fluid's acceleration law carries no $\gamma$: with no norm there is no bound, and a velocity that nothing bounds has no Lorentz factor to carry.
 
 **The four-acceleration is minus the gradient of one scalar per unit mass, with no remainder.** That is the criterion's third item verbatim, and the potential it names is $\Phi_{\mathrm{acc}}=Q_{\mathrm{qnt}}/m$: the quantum term alone, with $V=0$. The scalar fluid is therefore the pressureless member of the reverse map's family, and the family's nonlinear term is absent rather than small.
 
@@ -260,6 +262,8 @@ $$
 **With the rest energy removed the pair becomes the Madelung system.** The action carries $mc^{2}t$, the amplitude equation becomes the quantum Hamilton–Jacobi equation with the WKB potential $Q_{\mathrm{qnt}}\to-\frac{\hbar^{2}}{2m}\frac{\nabla^{2}r}{r}$, and the transport equation becomes the continuity equation of the Schrödinger fluid. The factor $1/\gamma$ of the acceleration law goes to one. The parent article carries the derivation and this article does not repeat it.
 
 **The limit is the check on the reading.** A fluid reading that did not reproduce the Madelung pair in the non-relativistic limit would be a different fluid. It does, term by term, and that is the warrant for calling the relativistic object a fluid at all.
+
+**The limit has an article of its own, and it is not a footnote.** [The Schrödinger Fluid](the-schrodinger-fluid.html) reads the same pair as a fluid in its own right and states what the mass shell was supplying: the normalisation that bounds the velocity and puts $\gamma$ into the inertia, the sign that makes the density two-sheeted, and the dispersion constraint that the pair does not have. Read as a ladder, the first-order fluid is the bottom rung and this one is the rung above, and the table of the three quantities is the measure of the step.
 
 ### The cosmological reading
 

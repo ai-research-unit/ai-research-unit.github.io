@@ -80,7 +80,7 @@ a function of the density plus the quantum term. Miss the first and the fluid is
 | Superfluids and condensates | reversed | the Gross–Pitaevskii equation is fundamental |
 | Relativistic quantum plasmas | reversed | the Dirac equation is fundamental |
 
-**The rows are of three kinds, and the fourth row of the first kind is the one that decides the thesis.** The first ten rows are fluids that carry a fluid equation as their fundamental law, and in none of them is a *free* linear wave equation hidden. The fourth of them is the irrotational, inviscid, non-barotropic case: it passes the three conditions and its inversion is still a linear equation, with an external potential that the fluid's own pressure field produces and no law of state reproduces. The last three rows are fields in which a wave equation is fundamental and the fluid is derived. The pressureless row is the only place a free linear equation appears from a fluid, and it is not an ordinary fluid.
+**The rows are of three kinds, and the third row of the first kind is the one that decides the thesis.** The first ten rows are fluids that carry a fluid equation as their fundamental law, and in none of them is a *free* linear wave equation hidden, the linear cases among them carrying an external potential instead. The third of them is the irrotational, inviscid, non-barotropic case: it passes the three conditions and its inversion is still a linear equation, with an external potential that the fluid's own pressure field produces and no law of state reproduces. The last three rows are fields in which a wave equation is fundamental and the fluid is derived. The pressureless row is the only place a free linear equation appears from a fluid, and it is not an ordinary fluid.
 
 ## The Reasons
 

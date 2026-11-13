@@ -39,14 +39,14 @@ $$
 Every point of the circle minimizes $V$, and no point is preferred by the action, which is invariant under the central phase $\xi\mapsto \exp(i\theta_{\mathrm{cen}})\xi$. The vacuum is therefore a member of a **degenerate family** parametrized by the phase. Writing
 
 $$
-\xi(\tilde{Q}) = \frac{1}{\sqrt{2}}\bigl(v + h(\tilde{Q})\bigr)\exp(\,i\theta_{\mathrm{fld}}(\tilde{Q})/v),
+\xi(\tilde{Q}) = \frac{1}{\sqrt{2}}\bigl(v + h(\tilde{Q})\bigr)\exp(\,i\theta_{\mathrm{gld}}(\tilde{Q})),\qquad \theta_{\mathrm{gld}}:=\vartheta_{\mathrm{fld}}/v,
 $$
 
-with $h$ and $\theta_{\mathrm{fld}}$ real, exhibits the two real fields: $h$ the radial fluctuation, with mass $m_h^2 = 2\beta v^2$ from the curvature of the potential, and $\vartheta_{\mathrm{fld}}$ the angular fluctuation, with no potential term at all.
+with $h$ and $\vartheta_{\mathrm{fld}}$ real, exhibits the two real fields: $h$ the radial fluctuation, with mass $m_h^2 = 2\beta v^2$ from the curvature of the potential, and $\vartheta_{\mathrm{fld}}$ the angular fluctuation, with no potential term at all. The angle $\theta_{\mathrm{gld}}$ is real because the field and the vacuum value are both real with $v>0$, and it is dimensionless because the two have the same dimension.
 
 ### The Informational Status of the Phase
 
-Considered as a classical label, the phase is a continuum: the vacuum family is a circle at every point of spacetime, and a description that resolved $\theta_{\mathrm{fld}}(\tilde{Q})$ point by point would carry the classical information of a function space — a continuum rather than a finite string of bits. If the phase were a physical observable, the choice of one vacuum would **erase** all of it, and the erasure would be a loss of a continuum and not of a record: a field with values on a circle, one at each point of spacetime, reduced to a single number, with no way to recover it from the broken phase.
+Considered as a classical label, the phase is a continuum: the vacuum family is a circle at every point of spacetime, and a description that resolved $\vartheta_{\mathrm{fld}}(\tilde{Q})$ point by point would carry the classical information of a function space — a continuum rather than a finite string of bits. If the phase were a physical observable, the choice of one vacuum would **erase** all of it, and the erasure would be a loss of a continuum and not of a record: a field with values on a circle, one at each point of spacetime, reduced to a single number, with no way to recover it from the broken phase.
 
 Two facts of the framework make the actual situation different, and they are the reason the title's word needs the qualification this section supplies.
 
@@ -62,7 +62,7 @@ The information-theoretic interpretation of the erasure is sharpened by the curv
 
 ### The Hessian at the Minimum
 
-Write the scalar in the two real fields, $\xi = \frac{1}{\sqrt{2}}(v+h)\exp(i\vartheta_{\mathrm{fld}}/v)$, so that
+Write the scalar in the two real fields, $\xi = \frac{1}{\sqrt{2}}(v+h)\exp(i\theta_{\mathrm{gld}})$, so that
 
 $$
 \xi^*\xi = \tfrac{1}{2}(v+h)^2,
@@ -71,7 +71,7 @@ V = \beta\left(\tfrac{1}{2}(v+h)^2 - \tfrac{v^2}{2}\right)^2
 = \frac{\beta}{4}h^2(2v+h)^2 .
 $$
 
-The potential is a function of $h$ alone; the phase $\theta_{\mathrm{fld}}$ does not appear in it. Expanding about the minimum,
+The potential is a function of $h$ alone; the phase $\vartheta_{\mathrm{fld}}$ does not appear in it. Expanding about the minimum,
 
 $$
 V(h) = \beta v^2h^2 + \beta v\,h^3 + \frac{\beta}{4}h^4 ,
@@ -104,13 +104,13 @@ The important point for the erasure interpretation is that the flat direction is
 The elimination of the phase is an explicit gauge transformation. With the parametrization above, choose
 
 $$
-\Gamma(\tilde{Q}) = -\,\frac{\hbar}{ϙ\,v}\,\theta_{\mathrm{fld}}(\tilde{Q}),
+\Gamma(\tilde{Q}) = -\,\frac{\hbar}{ϙ\,v}\,\vartheta_{\mathrm{fld}}(\tilde{Q}),
 $$
 
-so that the covariant phase factor is $\exp(i\theta_{\mathrm{gau}}) = \exp(-i\theta_{\mathrm{fld}}/v)$ and
+so that the covariant phase factor is $\exp(i\theta_{\mathrm{gau}}) = \exp(-i\theta_{\mathrm{gld}})$ and
 
 $$
-\xi \;\longmapsto\; \exp(i\theta_{\mathrm{gau}})\xi = \tfrac{1}{\sqrt{2}}(v+h)\exp(i\theta_{\mathrm{fld}}/v)\exp(-i\theta_{\mathrm{fld}}/v) = \tfrac{1}{\sqrt{2}}(v+h),
+\xi \;\longmapsto\; \exp(i\theta_{\mathrm{gau}})\xi = \tfrac{1}{\sqrt{2}}(v+h)\exp(i\theta_{\mathrm{gld}})\exp(-i\theta_{\mathrm{gld}}) = \tfrac{1}{\sqrt{2}}(v+h),
 $$
 
 Here $\theta_{\mathrm{gau}}:=ϙ\,\Gamma/\hbar$ is the gauge angle: the charge $ϙ$ and the gauge function $\Gamma$ are real, so the exponent is $i$ times a real number and the link is a phase of modulus one.
@@ -180,7 +180,7 @@ The informational interpretation is that the mass is the **record** of the break
 
 ### $*$-Unitary on the Full Degrees of Freedom
 
-On the full degrees of freedom the passage from the symmetric to the broken description is reversible. The gauge transformation that eliminates $\theta_{\mathrm{fld}}$ is implemented by a $*$-unitary (the central phase $\exp(i\theta_{\mathrm{gau}})$), and on the state space of the combined scalar-and-gauge system it acts by conjugation. Relative entropy is invariant under such a map,
+On the full degrees of freedom the passage from the symmetric to the broken description is reversible. The gauge transformation that eliminates $\vartheta_{\mathrm{fld}}$ is implemented by a $*$-unitary (the central phase $\exp(i\theta_{\mathrm{gau}})$), and on the state space of the combined scalar-and-gauge system it acts by conjugation. Relative entropy is invariant under such a map,
 
 $$
 \boxed{\;S\bigl(U\tilde{Ϛ}_{\Psi,1}\,U^\dagger \,\big\|\, U\tilde{Ϛ}_{\Psi,2}\,U^\dagger\bigr) = S(\tilde{Ϛ}_{\Psi,1}\|\tilde{Ϛ}_{\Psi,2})\;},
@@ -208,7 +208,7 @@ The test that separates relocation from loss is whether the erasure leaves a gau
 
 ### Einselection and the Pointer Variable
 
-The broken vacuum is a **stable record**: a definite value of $|\xi|$, a definite mass spectrum, and a definite set of gauge-invariant observables. The phase and the radial field together form the two real variables of the scalar; the vacuum makes one of them ($h$) massive and the other ($\theta_{\mathrm{fld}}$) a gauge coordinate. The massive variable is the one whose measurement is stable; the gauge coordinate is the one that no measurement distinguishes. This is the structure of **einselection**: a preferred, stable set of variables — the pointer variables — emerges, and the complementary variables lose their sharpness. The closest written model in the corpus is the article on decoherence as idempotent projection, and the analogy is worth stating carefully.
+The broken vacuum is a **stable record**: a definite value of $|\xi|$, a definite mass spectrum, and a definite set of gauge-invariant observables. The phase and the radial field together form the two real variables of the scalar; the vacuum makes one of them ($h$) massive and the other ($\vartheta_{\mathrm{fld}}$) a gauge coordinate. The massive variable is the one whose measurement is stable; the gauge coordinate is the one that no measurement distinguishes. This is the structure of **einselection**: a preferred, stable set of variables — the pointer variables — emerges, and the complementary variables lose their sharpness. The closest written model in the corpus is the article on decoherence as idempotent projection, and the analogy is worth stating carefully.
 
 - In decoherence, the pointer basis is selected by the interaction with an environment, and the off-diagonal coherences decay because the environment records them.
 - Here, the stable variables are selected by the gauge structure and the potential: the radial mode is stable because it is massive and gauge invariant, and the phase is not a variable at all because it is gauge. No environment is involved; the selection is by the vacuum.
@@ -261,7 +261,7 @@ One consequence is worth recording as a caution. If the phase were a *physical* 
 
 The Higgs mechanism hides a gauge symmetry in the vacuum, gives the gauge field the mass $M_A =\frac{ϙ\,v}{\hbar}$, and absorbs the would-be Goldstone mode as the longitudinal polarization. Read information-theoretically, it is an **erasure** of a redundant label and a **relocation** of physical content, not a loss.
 
-The erased object is the phase of the scalar. It is a coordinate on the circle of degenerate vacua, $|\xi| = v/\sqrt{2}$, but it is a **gauge** coordinate: the central phase acts trivially on the informational sector, so no Hermitian observable is conjugate to it, and the gauge-invariant content of the vacuum is the single number $|\xi| = v/\sqrt{2}$, checked to be independent of the phase. A gauge transformation removes the phase from the scalar and shifts the connection by a gradient, and the combination $A_\mu + (\frac{\hbar}{ϙ\,v})\partial/\partial R_\mu\,\theta_{\mathrm{fld}}$ is what the mass term depends on. The erasure of the phase and the shift of the connection are one operation, which is why the mechanism is best described as *using* the gauge redundancy rather than suffering it.
+The erased object is the phase of the scalar. It is a coordinate on the circle of degenerate vacua, $|\xi| = v/\sqrt{2}$, but it is a **gauge** coordinate: the central phase acts trivially on the informational sector, so no Hermitian observable is conjugate to it, and the gauge-invariant content of the vacuum is the single number $|\xi| = v/\sqrt{2}$, checked to be independent of the phase. A gauge transformation removes the phase from the scalar and shifts the connection by a gradient, and the combination $A_\mu + (\frac{\hbar}{ϙ\,v})\partial/\partial R_\mu\,\vartheta_{\mathrm{fld}}$ is what the mass term depends on. The erasure of the phase and the shift of the connection are one operation, which is why the mechanism is best described as *using* the gauge redundancy rather than suffering it.
 
 The relocated content is the longitudinal mode, and the record is the mass. The degree-of-freedom count balances, $2+2 = 1+3$: one scalar mode became the third gauge polarization, and nothing was created or destroyed. The mass $M_A^2 =\frac{ϙ^{2}\,v^{2}}{\hbar^{2}}$ was recomputed on a generic connection and a generic parameter set, and the relative entropy was shown to be invariant under the $*$-unitary re-encoding. On the full degrees of freedom the symmetry-breaking map is $*$-unitary and information-preserving; on the gauge-invariant observables it is many-to-one, with the fibre being the gauge orbit — whose information content is zero. The erasure is the quotient map, and its kernel is a gauge orbit.
 

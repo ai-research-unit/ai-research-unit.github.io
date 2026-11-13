@@ -86,6 +86,8 @@ $$
 
 the second form using $k_m=mc/\hbar$. The result is exact, it does not depend on the shape or the radius of the loop, and it does not depend on the amplitude profile: only the map's degree enters.
 
+**The object integrated is the mechanical momentum over the mass, and the three-velocity is a different integral.** $\tilde V_\Phi=\tilde P_\Phi/m$ is the flow variable of the word; the physical three-velocity is $\vec v=\vec p/(m\gamma)$, so $\oint\vec v\cdot\mathrm{d}\vec l=\kappa_1 n/\gamma$ is quantised only where $\gamma$ is constant on the loop, which is [The Klein–Gordon Fluid](the-klein-gordon-fluid.html)'s qualification. At the first-order rung the two integrals coincide, $\vec v=\nabla S/m$ with no factor, and [The Schrödinger Fluid](the-schrodinger-fluid.html) reads the statement on $\vec v$ directly.
+
 ### The loop's independence, checked
 
 **The circulation was checked numerically on a vortex profile at three radii and three windings.** Take the phase angle $\theta_{\mathrm{phs}}=n\arctan(r_y/r_x)$ and an amplitude that vanishes on the axis, $f(r)=Ar\exp(-r^{2}/2\sigma^{2})$ with $A=1.3$ and $\sigma=0.8$. The circulation of $\nabla\theta_{\mathrm{phs}}$ was evaluated by a polygonal quadrature of $4000$ chords on circles of radius $0.3$, $0.8$ and $2.0$:

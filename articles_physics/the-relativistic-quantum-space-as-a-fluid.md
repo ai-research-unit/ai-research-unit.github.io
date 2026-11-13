@@ -8,13 +8,24 @@ Three statements follow, and the article takes them in order. **The reading is e
 
 What the reading does not do is stated near the end. It is not second quantization, not thermodynamics, not a hidden-variable ontology, and not a superfluid in the condensed-matter sense. Each of those four is a distinct subject with its own article elsewhere in the corpus, and the fluid of this block is none of them.
 
-**The block has twelve articles and this is the first.** This one states the framework: the object, the word, the four variables, the domain and the four
-denials. The rest is grouped by spin. [The Klein–Gordon Fluid](the-klein-gordon-fluid.html) takes the scalar case, in which the word collapses to two factors,
-with [The Quantum Stress Tensor of the Biquaternion Scalar Field](the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html) for its energy and flux and [The
-Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html) for its charge. [The Dirac Fluid and the Takabayasi
-Correspondence](the-dirac-fluid-and-the-takabayasi-correspondence.html) takes the spinor case, in which all four survive, with [The Spin Fluid of the Biquaternion
-Dirac Field](the-spin-fluid-of-the-biquaternion-dirac-field.html) for its frame and [The Spin Energy-Momentum Tensor](the-spin-energy-momentum-tensor.html) for its
-spin current. The closing group is the algebra that reads both: the bilinears, the choices the word leaves open, and the boundary at which the chart ends.
+**The block has thirty-five entries and this is the first.** It is the first of twenty-six on the one element; between it and the rest of those twenty-six lies the
+fluid layer, nine articles on ordinary fluid mechanics: the Euler and continuity equations in biquaternionic form, the vorticity form, viscosity and the dissipation
+function, the equation of state, the reverse Madelung map with its direction, its Clebsch hierarchy and its one exceptional linear case. The nine state a fluid's data
+and the obstructions to a wave reading — eight of them with no element of the algebra and no field at all — so that the reading that follows rests on a base stated
+in advance.
+
+**This article states the framework of the twenty-five that follow the fluid layer: the object, the word, the four variables, the domain and the four denials.** The rest is grouped by
+spin, and the scalar group is a ladder. [The Schrödinger Fluid](the-schrodinger-fluid.html) and [The Charged Schrödinger Fluid](the-charged-schrodinger-fluid.html)
+take the first-order rung, on which the boost and the rotor are both absent, the density is the conserved one and no norm constrains the velocity.
+[The Klein–Gordon Fluid](the-klein-gordon-fluid.html) takes the scalar case, in which the word collapses to two factors, with [The Quantum Stress Tensor of the
+Biquaternion Scalar Field](the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html) for its energy and flux and [The Nodal Set and Quantized
+Circulation](the-nodal-set-and-quantized-circulation.html) for its charge, and [The Charged Klein–Gordon Fluid](the-charged-klein-gordon-fluid.html) for the same
+field with a connection. [The Dirac Fluid and the Takabayasi Correspondence](the-dirac-fluid-and-the-takabayasi-correspondence.html) takes the spinor case, in which
+all four survive, with [The Spin Fluid of the Biquaternion Dirac Field](the-spin-fluid-of-the-biquaternion-dirac-field.html) for its frame, [The Spin
+Energy-Momentum Tensor](the-spin-energy-momentum-tensor.html) for its spin current and [The Charged Spin Fluid](the-charged-spin-fluid.html) for its coupling.
+[The Spin-One Fluid of the Biquaternion Proca Field](the-spin-one-fluid-of-the-biquaternion-proca-field.html) takes the vector case, with [The Charged Proca
+Fluid](the-charged-proca-fluid.html) for its coupling. The closing group is the algebra that reads all of them: the bilinears, the choices the word leaves open, the
+sign $\varepsilon$ with its rigidity constraint, the locking of velocity to spin on the degenerate sector, and the boundary at which the chart ends.
 
 ## The Object: One Element at Each Event
 
@@ -107,7 +118,7 @@ with $r>0$, $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$, $\theta_
 
 **The scalar case closes because the boost has nothing to carry.** With a central field the boost is $e_t$ and the rotor is $\varepsilon e_t$, so two of the four factors collapse to the identity and a sign. A central element has $B^{2}=0$, so it lies on $\Sigma_{10}$, and there $\varepsilon=\pm1$ exactly; off that sector the sign of the scalar part is not a sign. One complex equation separates into two real equations, and the pair is the relativistic Madelung–Takabayasi system: a continuity equation and an energy equation.
 
-**The spinor case does not close, and the failure is structural.** The derivative of the word separates into four brackets — scale, phase, boost connection, rotor connection — of four different algebraic types. The equation constrains them. No rule of the algebra fixes one from another, because the types are distinct. The non-closure is the underdetermination of the spin-fluid formulation, and it is the subject of the third article of the block.
+**The spinor case does not close, and the failure is structural.** The derivative of the word separates into four brackets — scale, phase, boost connection, rotor connection — of four different algebraic types. The equation constrains them. No rule of the algebra fixes one from another, because the types are distinct. The non-closure is the underdetermination of the spin-fluid formulation, and it is the subject of [The Non-Uniqueness of the Spin Fluid](the-non-uniqueness-of-the-spin-fluid.html).
 
 ## The Domain: N-Regularity
 
@@ -148,7 +159,7 @@ Idempotent](the-biquaternion-vacuum-as-a-minimal-idempotent.html), and no result
 a state as well as a kinematics, and the state is the subject of *Biquaternion Relativistic Quantum Thermodynamics*, which puts a density operator on the same field —
 the construction is [The Local Thermal State of a Fluid](the-local-thermal-state-of-a-fluid.html) — and takes the hydrodynamic limit of the result.
 
-**The two blocks meet at one object and nowhere else.** The stress tensor of the scalar field is the first article of this block and it is also the object the thermal block's equation of state is built on. The meeting is recorded in both articles and is not a dependency of this one.
+**The two blocks meet at one object and nowhere else.** The stress tensor of the scalar field is an article of this block and it is also the object the thermal block's equation of state is built on. The meeting is recorded in both articles and is not a dependency of this one.
 
 ### Not a hidden-variable ontology
 
@@ -180,8 +191,10 @@ The four factors are of four algebraic types: real central, central imaginary, H
 
 The domain is the set of units, asked at each event. The word exists iff $N(\tilde\Xi)\neq0$, and the complement is the zero-divisor cone. The cone is the nodal set for a scalar field and strictly larger for a spinor field, where the fields of definite value and the one-sided plane waves lie on it with a density that never vanishes. On the cone the two-factor decomposition survives and the four-factor word does not.
 
-The block is twelve articles in four groups: the framework; the scalar fluid with its stress and its nodal set; the spinor fluid with its frame and its stress;
-and the algebra that reads both, with the choices the word leaves open and the boundary at which it fails.
+The block is thirty-five entries in six groups: the framework, which is this article; the fluid layer, which is nine articles on ordinary fluid mechanics, eight of them with no element of the algebra;
+the scalar ladder, which is the first-order pair below the Klein–Gordon fluid and then that fluid with its stress, its nodal set and its charged companion; the spinor
+fluid with its frame, its stress and its charged companion; the vector fluid with its charged companion — each of the four rungs carrying its variational article in the fluid variables at its end, so that the eight Lagrangian articles stand beside the eight fluids they vary; and the algebra that reads all of them, with the choices the
+word leaves open, the sign $\varepsilon$, the locking on the degenerate sector and the boundary at which it fails.
 
 ## Summary of Notation
 

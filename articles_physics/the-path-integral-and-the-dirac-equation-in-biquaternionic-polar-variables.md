@@ -1,0 +1,321 @@
+# __The Path Integral and the Dirac Equation in Biquaternionic Polar Variables__
+
+## Introduction
+
+*The Path Integral and the Dirac Equation in Biquaternionic Form* constructs the integral: a sum over worldlines, each carrying the phase $e^{iS/\hbar}$ and an algebra-valued spin factor, whose result is the propagator of the chiral pair. This article writes the same integral in the polar word.
+
+The word is the parametrisation $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ of *The Polar Decomposition of an N-Regular Biquaternion*, in the exponential form of *The Dirac Equation in Biquaternionic Polar Variables*. It is a bijection from eight real parameters onto the $N$-regular elements, so substituting it adds nothing and drops nothing. This article therefore claims no new integral. It is the companion's integral read in other coordinates, as *The Variational Principle and the Dirac Equation in Biquaternionic Polar Variables* is the element action read in other coordinates.
+
+Two objects are read: the weight of one path, and the kernel that the sum of the weights produces. The weight is central. The kernel is not. The whole difference between this reading and the reading of the Schrödinger path integral lies in that one fact, and the article returns to it at every section.
+
+The findings are five, and each is one sentence.
+
+- A path has scale one, and its angle is the action over $\hbar$ reduced into the word's range, the residue of the reduction being a sign carried by the rotor.
+- The kernel's word carries all four factors, and in momentum space its angle is not the action but one of the two values $0$ and $\pi/2$, selected by the side of the mass shell.
+- The kernel's scale is the van Vleck determinant, its angle is the classical action over $\hbar$ plus a Maslov constant, and its rotor is the spin transport.
+- The Maslov constants are two: a central one from the Gaussian, which is $\arg(i^{-d/2})$, and a spin one from the double cover of the rotor, which is a sign.
+- The word does not compose, so the polar form is a reading of the kernel and not a composition law.
+
+What the article does not do it says at once. It does not build a second integral, does not construct the measure, and does not derive the fermionic statistics. The companion's limitation carries over unchanged: the object read here is the worldline integral over commuting biquaternion elements, with the Grassmann spin absorbed in the spin factor.
+
+## Conventions
+
+The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$, $\vec e_\mu^{2}=-e_t$, $i$ central, $\mathrm{Sc}$ the coefficient of $e_t$ and $\mathrm{Tr}=2\,\mathrm{Sc}$. The conjugations are $*$ and $\natural$, and the pairing is the Hermitian $\mathrm{Sc}(\cdot^{*}\cdot)$, as in both variational articles. The word and its ranges are those of *The Dirac Equation in Biquaternionic Polar Variables*, §*The Word*, and none of their theory is repeated here: $r>0$; $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$; $\theta_{\mathrm{rpd}}\ge0$; $\theta_{\mathrm{axr}}\in[0,2\pi]$; $\vec u_{\mathrm b}$ and $\vec u_{\mathrm r}$ real unit vectors; $\rho=r^{2}$; $\gamma=\cosh\theta_{\mathrm{rpd}}$; $\Rho=r\,e^{i\theta_{\mathrm{pha}}}$ the principal root of the quaternionic norm $N(\tilde\Xi)=\langle\tilde\Xi\rangle_{\natural}$; $\mathcal B_{\Psi}=\tilde U_{\Psi,\mathrm b}^{-2}$. The word exists exactly on the $N$-regular elements, that is on $N\neq0$.
+
+The kernel is the companion's. The dynamics is the pair $\tilde\nabla_\Phi\tilde\Xi_{R}=k_m\tilde\Xi_{L}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_{L}=k_m\tilde\Xi_{R}$ with $k_m=mc/\hbar$, and its Green kernel in momentum space has the two components
+
+$$
+\mathcal S_L=\frac{\tilde K_{\Phi}-ik_m}{k_m^{2}+\langle\tilde K_{\Phi}\rangle_{\natural}},
+\qquad
+\mathcal S_R=\frac{\tilde K_{\Phi}^{\natural}-ik_m}{k_m^{2}+\langle\tilde K_{\Phi}\rangle_{\natural}},
+$$
+
+with $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar$ the wave biquaternion and $\langle\tilde K_{\Phi}\rangle_{\natural}=-p^{2}/\hbar^{2}$. The components are elements of $\mathbb{B}$ and not scalars, and that is the subject of the next three sections. The material position is $\tilde R_\Phi=ir'_{t}e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$, whose norm is $\langle\tilde R_\Phi\rangle_{\natural}=-{r'_{t}}^{2}+|\vec r|^{2}$.
+
+Every statement is an identity of the word, and the number beside it is a recomputation on one hundred samples. No claim rests on a numerical accident.
+
+## The Weight of One Path
+
+### The weight is central and of scale one
+
+The integrand of the companion's worldline integral carries the factor
+
+$$
+w\,e_t=e^{i\theta_{\mathrm{act}}}e_t,\qquad \theta_{\mathrm{act}}=\frac{S[x,\tilde{Ξ}]}{\hbar},
+$$
+
+a central phase times the unit. It is central because both factors are, and it is $*$-unitary because $w^{*}=1/w$, so $ww^{*}=e_t$. Its word is read in one line.
+
+*Proposition.* For real $\theta_{\mathrm{act}}$, write $\theta_{\mathrm{act}}=\theta_{\mathrm{pha}}+\pi n$ with $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ and $n\in\mathbb{Z}$. Then
+
+$$
+e^{i\theta_{\mathrm{act}}}e_t
+=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
+\qquad
+r=1,\quad \tilde U_{\Psi,\mathrm b}=e_t,\quad \tilde u_{\mathrm r}=(-1)^{n}e_t .
+$$
+
+*Proof.* The quaternionic norm of a central phase is $N=e^{2i\theta_{\mathrm{act}}}$, and its principal root is $e^{i\theta_{\mathrm{pha}}}$; the scale is the modulus of that root, which is one. The star square is $ww^{*}=e_t$, so the boost's square is $e_t$ and the boost is $e_t$. The element $(-1)^{n}$ is a rotor with $\theta_{\mathrm{axr}}=2\pi$ or $0$, and the product reconstructs the element.
+
+**Every path has scale one, and the reduction is not a formality.** The word's angle lies in $(-\pi/2,\pi/2]$, so an action whose angle exceeds a quarter turn in magnitude does not enter the angle; the excess becomes a sign in the rotor. A reader who writes $\theta_{\mathrm{pha}}=\theta_{\mathrm{act}}$ without the reduction has the right element and the wrong word. The check confirms both halves: over one hundred angles covering $(-\pi,\pi]$ the scale is one to $10^{-15}$, the boost is trivial to $10^{-15}$, and the rotor is $e_t$ for $|\theta_{\mathrm{act}}|\le\pi/2$ and $-e_t$ beyond.
+
+**The consequence is structural.** A sum of weights of equal modulus is not a weighted sum: the amplitude of the kernel comes entirely from how many paths share a phase, and the weight supplies no damping. This is the path-integral form of a statement the variational companion makes in another register, where the phase's momentum is the only non-zero bosonic one.
+
+### Which parameters a path carries
+
+The word has eight parameters, and the weight of a path carries one of them.
+
+| parameter | in the weight $e^{iS/\hbar}e_t$ | in the spin factor $\mathcal{F}[x]$ | in the pre-factor |
+| --- | --- | --- | --- |
+| scale $r$ | $1$, on every path | the factor's own scale | $A_{\mathrm{wkb}}$, the fluctuation determinant |
+| angle $\theta_{\mathrm{pha}}$ | $S/\hbar$ reduced modulo $\pi$ | the factor's own angle | the Maslov constant |
+| rapidity $\theta_{\mathrm{rpd}}$ and axis $\vec u_{\mathrm b}$ | $0$, and no axis | absent | the classical frame |
+| rotor angle $\theta_{\mathrm{axr}}$ and axis $\vec u_{\mathrm r}$ | $0$ or $2\pi$, and no axis | the factor's own rotor | the transport rotor |
+
+The table is a result about placement and not about values. The scale sits in the measure, the rotor in the spin factor, the phase in the weight. **A path has no boost.** The worldline's tangent is a four-velocity of $\mathbb{B}_{\Phi}$, and a four-velocity is not a parameter of the weight: it is a property of the curve, and it enters the integral only through the action.
+
+The middle column repays one sentence of care. The spin factor of the companion is the path integral over the odd variables, and it is an element multiplying the central phase. When it is not the unit, its own word supplies a scale, an angle, a boost and a rotor, and the product $e^{i\theta_{\mathrm{act}}}\mathcal{F}[x]$ has the word of $\Xi$ shifted in scale and in angle and unchanged in boost and rotor up to sign. That is checked on one hundred random elements with one hundred random phases: the boost is unchanged to $6\times10^{-15}$ and the rotor to $1\times10^{-14}$ up to sign, the sign being the branch the reduction of the angle takes. A central phase moves the scale and the angle, and never the frame.
+
+## The Word of the Kernel
+
+### The kernel in momentum space
+
+Read $\mathcal S_L$ as an element. Its denominator is central and real off the mass shell, so it multiplies the scale, shifts the angle, and does nothing else. The numerator $\tilde K_{\Phi}-ik_m$ carries the frame. Its norm is a real number,
+
+$$
+\bigl\langle\tilde K_{\Phi}-ik_m\bigr\rangle_{\natural}=|\vec k|^{2}-\bigl(k'_{t}-k_m\bigr)^{2},
+\qquad
+\tilde K_{\Phi}=ik'_{t}e_t+\vec k,
+$$
+
+and it is indefinite: positive far above the mass shell, negative just below it. The kernel's angle, which is half the argument of a real number, is therefore one of two values, and not a dynamical phase. Half of an argument in $(-\pi,\pi]$ lies in the word's own range $(-\pi/2,\pi/2]$, so a positive norm gives the angle $0$ and a negative norm gives $\pi/2$; the side of the mass shell decides between the two, and nothing else does.
+
+| factor | value for $\mathcal S_L$ | what fixes it |
+| --- | --- | --- |
+| scale $r$ | $\bigl||\vec k|^{2}-(k'_{t}-k_m)^{2}\bigr|^{1/2}\big/\bigl|k_m^{2}+\langle\tilde K_{\Phi}\rangle_{\natural}\bigr|$ | the numerator's norm and the denominator |
+| angle $\theta_{\mathrm{pha}}$ | $0$ or $\pi/2$ | the sign of the numerator's norm times the sign of the denominator |
+| rapidity $\theta_{\mathrm{rpd}}$ and axis $\vec u_{\mathrm b}$ | the frame's rapidity, the axis reversed | the momentum's boost |
+| rotor angle $\theta_{\mathrm{axr}}$ and axis $\vec u_{\mathrm r}$ | non-trivial in $100$ of $100$ samples | the mass reversal composed with the frame |
+
+The second row is the sharpest difference from the Schrödinger kernel's word, and it is worth stating twice: **in momentum space the free Dirac kernel carries no action phase.** Its angle is a label of a region, not a time. The action's phase appears only in position space, where the pole of the denominator is crossed and the Fourier transform oscillates. The contrast with the Schrödinger kernel is exact in one respect and not in another. In both cases the momentum-space angle is fixed. Here the numerator fixes it, because the norm of $\tilde K_{\Phi}-ik_m$ is real and its sign is a label. There the denominator fixes it, because the numerator is the unit and contributes no argument. The Dirac-specific feature is that the first-order numerator has a real norm of its own, so the kernel's angle is decided before any pole is met. The check is exact: over one hundred off-shell momenta the norm of $\mathcal S_L$ is real, with relative imaginary part zero, and its argument is $0$ or $\pi$. The kernel's angle is therefore $0$ or $\pi/2$, never anything else.
+
+### The mass shell, and the factor that vanishes at rest
+
+On the mass shell $\tilde K_{\Phi}=ik_m\tilde U_{\Psi,\mathrm b}^{-2}$, and the numerator factors exactly.
+
+*Proposition.* On the mass shell, $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_m^{2}$ and $p^{2}=m^{2}c^{2}$,
+
+$$
+\tilde K_{\Phi}-ik_m
+=2k_m\sinh\frac{\theta_{\mathrm{rpd}}}{2}\;\tilde U_{\Psi,\mathrm b}^{-1}\vec u_{\mathrm b},
+\qquad
+\bigl\langle\tilde K_{\Phi}-ik_m\bigr\rangle_{\natural}
+=4k_m^{2}\sinh^{2}\frac{\theta_{\mathrm{rpd}}}{2}.
+$$
+
+*Proof.* Writing $\tilde K_{\Phi}=ik_m\bigl(\cosh\theta_{\mathrm{rpd}}-i\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}\bigr)$ and subtracting $ik_m$ gives $ik_m(\cosh\theta_{\mathrm{rpd}}-1)+k_m\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}$, which is $2k_m\sinh(\theta_{\mathrm{rpd}}/2)$ times $\bigl(i\sinh(\theta_{\mathrm{rpd}}/2)+\cosh(\theta_{\mathrm{rpd}}/2)\,\vec u_{\mathrm b}\bigr)$. That bracket is $\tilde U_{\Psi,\mathrm b}^{-1}\vec u_{\mathrm b}$, since $\vec u_{\mathrm b}^{2}=-e_t$. The norm follows from the same line, the two cross terms cancelling because a central element commutes.
+
+The identity is checked to $4\times10^{-15}$ over one hundred boosts, and its right side has two readings. **The numerator is a real scalar times a unit.** The scalar is the mass times the half-sine of the rapidity, so it vanishes at rest; the unit is the frame's own element with its axis reversed. The kernel's word is the word of a unit times a real number, and the number is zero at rest.
+
+**At rest the numerator is a zero divisor.** $\theta_{\mathrm{rpd}}=0$ gives $\tilde K_{\Phi}=ik_me_t$ and $\tilde K_{\Phi}-ik_m=0$, so the word of the numerator does not exist there. This is not a defect of the reading. It is the rest-frame singularity the variational companion records as its second open question, met from the path-integral side: the kernel's word is a coordinate on the $N$-regular elements, and the on-shell numerator at rest is not one.
+
+### The two norms of the kernel
+
+The kernel carries two bilinears, and each is blind to half of the word.
+
+| bilinear | value | what it reads | what it cannot see |
+| --- | --- | --- | --- |
+| $\langle\mathcal S_L\rangle_{\natural}=\mathcal S_L\mathcal S_L^{\natural}$ | central, $\rho\,e^{2i\theta_{\mathrm{pha}}}$ | the scale and twice the angle | the boost, the rotor |
+| $\mathrm{Tr}\bigl(\mathcal S_L^{*}\mathcal S_L\bigr)=2\,\mathrm{Sc}\bigl(\mathcal S_L^{*}\mathcal S_L\bigr)$ | real | the scale and the boost | the angle, the rotor |
+
+Both rows are exact, and both are checked. Right multiplication of an element by a rotor leaves the quaternionic norm unchanged, because the norm multiplies, and leaves the Hermitian norm unchanged, because the scalar part is invariant under conjugation by a unit. Over one hundred random elements the two deviations are $6\times10^{-15}$ and $5\times10^{-15}$, while the rotor moves in every case. **Neither norm reads the spin.** The density that the standard theory computes from $\mathcal S^{*}\mathcal S$ is insensitive to the spin direction, and the spin of the kernel lives in the rotor alone.
+
+That is the path-integral form of the parent's §*What the Frame Separates*: the current reads the scale and the boost, the spin reads the scale and the rotor, and the two bilinears of the algebra are the two halves of one blindness.
+
+### Where the word fails
+
+The massless kernel is the case in which the failure set can be named. With $k_m=0$ the two components are the two gradients applied to the scalar kernel, that kernel is $1/\langle\tilde R_\Phi\rangle_{\natural}$, and the identity
+
+$$
+\tilde\nabla_\Phi\frac{1}{\langle\tilde R_\Phi\rangle_{\natural}}
+=-2\,\frac{\tilde R_\Phi}{\langle\tilde R_\Phi\rangle_{\natural}^{2}},
+\qquad
+(\tilde\nabla_\Phi)^{\natural}\frac{1}{\langle\tilde R_\Phi\rangle_{\natural}}
+=-2\,\frac{\tilde R_\Phi^{\natural}}{\langle\tilde R_\Phi\rangle_{\natural}^{2}},
+$$
+
+follows from $\partial/\partial R_t=-i\,\partial/\partial r'_{t}$ and is checked by finite differences to $6\times10^{-6}$ over one hundred positions. So
+
+$$
+\mathcal S_L\propto\frac{\tilde R_\Phi}{\langle\tilde R_\Phi\rangle_{\natural}^{2}},
+\qquad
+\mathcal S_R\propto\frac{\tilde R_\Phi^{\natural}}{\langle\tilde R_\Phi\rangle_{\natural}^{2}},
+$$
+
+up to the standard normalisation of the massless propagator. The first numerator is $\tilde R_\Phi$ and the second its conjugate, as the two lines of the pair carry the two conjugates.
+
+The word of the first is now immediate. Its norm is $\langle\tilde R_\Phi\rangle_{\natural}^{-3}$, so its scale is $|\langle\tilde R_\Phi\rangle_{\natural}|^{-3/2}$, and its angle is $0$ on a spacelike separation and $\pi/2$ on a timelike one, both returned by the check to $6\times10^{-15}$. Its boost is the displacement's own, with twice the rapidity of the motion, since a four-vector is bilinear in the field and carries $\mathcal B_{\Psi}$ where the field carries $\tilde U_{\Psi,\mathrm b}$; the factor of two is checked to $2\times10^{-14}$ over one hundred displacements.
+
+**Its rotor is the frame of the separation, and the regime decides it.** On a spacelike separation the rotor is a $\pi$ rotation about the spatial direction $\vec r/|\vec r|$, checked to $2\times10^{-16}$ over one hundred displacements. On a timelike separation it is $\pm e_t$, the sign being that of the time component: a sign and no rotation. So on a spacelike separation the massless kernel carries the direction of the displacement and not the spin of a source, and its spin frame is the frame of the position vector; on a timelike one it carries no frame at all. The rotor is trivial on the whole timelike region and a half turn on the whole spacelike one, and the regime decides it rather than the direction alone: a timelike separation with a large spatial part carries the same sign as a pure time separation, and a spacelike separation with a large temporal part carries the same half turn as a pure displacement. The sign in the timelike region is the branch of the angle, not a direction.
+
+**The singular locus of the massless kernel is the failure set of the word.** $\langle\tilde R_\Phi\rangle_{\natural}=0$ is the light cone, and the light cone of the material sector is the zero-divisor cone of $\mathbb{B}_{\Phi}$, the set $N=0$ on which the polar word does not exist. The kernel's divergence and the word's failure are the same set. That is the sharpest statement the polar form makes about the massless case: it does not merely describe the kernel badly there, it does not exist there, and the divergence is the coordinate's.
+
+**What the mass changes is the axis of the rotor, not its presence.** Read in momentum space on the mass shell, the massive numerator's rotor is a $\pi$ rotation about the momentum's boost axis for every rapidity away from rest, and its boost is the frame inverted; §*The rotor is the transport* checks the first and §*The boost is the classical frame* the second. Read in position space, the massless kernel's rotor is a $\pi$ rotation about the displacement's spatial direction, and its boost is the displacement's own with twice the rapidity. The massless axis is geometric, read from the separation; the massive axis is dynamical, read from the momentum. The two degenerate in different places as well: the massless word fails on the light cone, where the norm vanishes, and the massive word fails at rest, where the numerator vanishes.
+
+## The Semiclassical Word
+
+### The scale is the van Vleck determinant
+
+For small $\hbar$ the integral is dominated by the classical path, and the Gaussian fluctuations about it give the van Vleck factor. In the polar reading that factor is the scale:
+
+$$
+\mathcal S(x_f,x_i)\ \approx\ A_{\mathrm{wkb}}\;e^{iS_{\mathrm{cl}}/\hbar}\;D,
+\qquad
+A_{\mathrm{wkb}}=\left|\det\frac{\partial^{2}S_{\mathrm{cl}}}{\partial x_{i}\,\partial x_{f}}\right|^{1/2},
+$$
+
+with $D$ the transport element of §*The rotor is the transport*. Three claims are separated here. The determinant is the scale, because it is a positive number multiplying an element and the scale of a product is the product of the scales. It is not the integrand's scale: every path has scale one, and the determinant is a count of paths, that is a property of the measure. And it is the same object as in the Schrödinger path integral, which is the point of the word's uniformity: one determinant, two kernels.
+
+The count is where the variational companion's four vanishing momenta reappear. Four of the eight parameters have no momentum in the polar action, so they cannot be integrated over as dynamical variables; they are fixed by the configuration and enter the integral through the measure. The kernel's scale is one of those four. In the integral the same four sit outside the weight, as the table of §*Which parameters a path carries* shows: neither the scale nor the boost ever enters the exponent. The two statements agree in their content, that the scale and the frame are not dynamical, and neither is derived from the other. The correspondence is exact in its direction and incomplete in its detail: the variational statement concerns a homogeneous field, the path-integral statement a worldline, and whether one implies the other is open.
+
+### The angle is the action
+
+The angle of the semiclassical kernel is the classical action over $\hbar$ plus a constant. That is the angle in position space; in momentum space the transform has not been taken and the angle is the label of §*The kernel in momentum space*. The difference between the two is the transform.
+
+In position space the stationary phase of the Fourier integral puts the momentum on the shell and parallel to the separation, so the exponent is $S_{\mathrm{cl}}/\hbar$ with $S_{\mathrm{cl}}$ the classical action of a free particle. The kernel's angle is that number reduced into the word's range, exactly as for one path, and the rotor carries the sign of the reduction. So the exact statement is the one already made: the angle is the action, and the reduction is part of the reading. In momentum space the transform has not been performed, the pole has not been crossed, and the angle is the label $0$ or $\pi/2$. **The two are one kernel.** Their difference is the difference between a function and its transform, and not a difference of physics.
+
+### The rotor is the transport
+
+The rotor of the kernel is the spin transport, and the statement needs its scope fixed, because the free case is the one that tests it.
+
+The companion's integral carries the spin factor $\mathcal{F}[x]$, the integral over the odd variables. It is an element of $\mathbb{B}$, and order by order it is a path-ordered product of the elements at the successive points of the worldline. Its classical value, at the stationary path, is a unit: the transport along that path. In the polar reading that unit has a word, and its rotor is the rotation of the spin frame, $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ carried from $x_i$ to $x_f$. In the semiclassical limit it is the rotor that the variational companion's transport equation generates along the classical path, and that is the path-integral form of the variational statement that the rotor is carried.
+
+**The free case tests the claim and narrows it.** In the free case the spin factor is the unit, with no generator inserted, so the transport is trivial. The exact free kernel's word nevertheless has a non-trivial rotor: a $\pi$ rotation about the boost axis, checked to $10^{-15}$ on one hundred boosts. The two statements are consistent and they are not the same statement. The transport is what the integrand carries; the reversal is what the numerator carries; and in the free case the second is not the first. A reader who identifies the kernel's rotor with the transport without qualification is wrong in the free case, and this article says so rather than smoothing it.
+
+**What survives is the identification in the presence of a field.** There the spin factor is not the unit, its classical value is a genuine transport, and the kernel's rotor is that transport composed with the fixed reversal. The fixed factor is the free-case residue, and it is the path-integral form of the off-diagonal relation $\tilde\Xi_{0}^{L}=-\mathcal B_{\Psi}\tilde\Xi_{0}^{R}$: the mass reverses the frame, and the reversal is a rotation by $\pi$.
+
+**In one sentence.** The interacting kernel's rotor is the transport composed with the mass reversal, the free kernel's rotor is the mass reversal alone, and the integrand's rotor is the transport alone. The third coincides with the first only when the spin factor is not the unit, and with the second only when it is.
+
+### The boost is the classical frame
+
+The boost of the kernel is the classical frame, and in momentum space the statement is exact.
+
+*Proposition.* Let $\tilde K_{\Phi}=ik_m\tilde U_{\Psi,\mathrm b}^{-2}$ with $\tilde U_{\Psi,\mathrm b}$ a boost of rapidity $\theta_{\mathrm{rpd}}$ and axis $\vec u_{\mathrm b}$. Then the word of $\mathcal S_L$ has rapidity $\theta_{\mathrm{rpd}}$ and axis $-\vec u_{\mathrm b}$.
+
+*Proof.* By the factorisation of §*The mass shell* the numerator is a positive scalar times $\tilde U_{\Psi,\mathrm b}^{-1}\vec u_{\mathrm b}$, and a positive central scalar changes neither the boost nor the rotor. The star square of that unit is computed in one line and gives $\cosh\theta_{\mathrm{rpd}}+i\sinh\theta_{\mathrm{rpd}}(-\vec u_{\mathrm b})$, whose half-rapidity is $\theta_{\mathrm{rpd}}$ about $-\vec u_{\mathrm b}$.
+
+The check confirms it: over one hundred boosts the word's boost is the frame's inverse to $3\times10^{-14}$, and its rapidity is the frame's. The reversal of the axis is not an accident of the sample and not a convention: it is the reversal the mass relation carries, and it is why the free kernel's rotor turns about that axis.
+
+In position space the boost is read at the saddle, where the momentum is the classical one; so the kernel's word at each point carries the frame of the classical motion through that point. The two middle factors of the word are therefore one object in two pieces: the boost is the translational frame, the rotor the spin frame, and the mass is what ties them.
+
+## The Maslov Constants
+
+### The central constant
+
+The constant of the kernel's angle is the argument of the Gaussian prefactor. A $d$-dimensional Fresnel integral gives
+
+$$
+\int_{\mathbb{R}^{d}}\exp\Bigl(-i\lambda\sum_\mu x_\mu^{2}\Bigr)\mathrm{d}^{d}x
+=\Bigl(\frac{\pi}{i\lambda}\Bigr)^{d/2},
+\qquad \lambda=\frac{1}{4\hbar T},
+$$
+
+so each integrated direction contributes a quarter turn backwards and the constant is $\arg(i^{-d/2})=-d\pi/4$. In one dimension the phase is $-\pi/4$, checked numerically on a truncated interval; in four dimensions, which is the worldline's count once the einbein is fixed, the phase is $-\pi$, that is a sign. For the non-relativistic kernel, whose three integrated directions are the spatial ones, the constant is $-3\pi/4$, the value the Schrödinger companion records.
+
+**The count $d$ is the count of integrated directions and not the dimension of the algebra.** The Dirac worldline is a curve in the four-dimensional material sector, so the Gaussian is four-dimensional and the central constant is $-1$. The fixed-time Schrödinger kernel integrates three directions and carries $-3\pi/4$. The two differ because the two integrals ask different questions, and the polar word reports the difference in one place: the constant of the angle.
+
+### The spin constant
+
+The rotor adds a second constant, and it is a sign.
+
+The rotor is a unit of the real quaternion algebra, and the units double cover the rotations: $\exp(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u)$ is $-e_t$ at $\theta_{\mathrm{axr}}=2\pi$ and $+e_t$ at $4\pi$, which is checked in one line: the lift is two-to-one and nothing else. So a closed worldline whose frame returns to itself after one full turn returns with the rotor negated, and the kernel picks up a $-1$ that no central phase accounts for: $\tilde u_{\mathrm r}(2\pi)=-e_t$ multiplies the weight by $-1$, and $\tilde u_{\mathrm r}(4\pi)=+e_t$ restores it. That is the spin constant of the Dirac path integral, and it has no counterpart in the Schrödinger case, whose kernel is central and whose word has no rotor to lift.
+
+**What the constant is not.** It is not a continuous phase and not a Berry phase: it is the sign of a lift, and the double cover alone fixes it. Whether a closed worldline in a background field accumulates a continuous geometric phase in addition to the sign is a different question, whose answer would be the holonomy of the transport. This article states the sign, which the algebra gives, and leaves the holonomy open.
+
+## The Word Does Not Compose
+
+A composition law is a statement about a product, and the polar word is a reading of a product only in part.
+
+**At a point, two of the four factors compose.** The quaternionic norm multiplies, $N(AB)=N(A)N(B)$, so the scales multiply and the angles add modulo $\pi$; the check over one hundred random pairs gives $4\times10^{-14}$. The boost and the rotor do not multiply factorwise: the boost of a product differs from the product of the boosts by up to $3.1$ in the same sample, and the rotor by up to $1.9$. The reason is one line. The product of two units is a unit, and a unit's word is its own boost and its own rotor, which are not the factors' boosts and rotors, because each rotor rotates the other's axis.
+
+**At the composition of two kernels, even the scale and the angle fail.** The composition of two kernels is an integral over the intermediate point, and the word of an integral is not the integral of the words: the angle of a sum of phases is the argument of the sum, not the sum of the arguments, and the modulus of the sum is less than the sum of the moduli. A one-dimensional model makes the size plain, and it can be evaluated in closed form. Two kernels of unit modulus whose phases are $\tfrac{9}{10}y^{2}$ and $\tfrac{14}{10}(y-1)^{2}$ compose to a kernel whose exponent is the quadratic $(a+b)y^{2}-2azy+az^{2}$ with $a=\tfrac{14}{10}$, $b=\tfrac{9}{10}$ and $z=1$. Over the full line the Fresnel integral gives the modulus $\sqrt{\pi/(a+b)}=\sqrt{\pi/2.3}=1.169$, which is the factor of the composed curvature and neither one nor the product of the two moduli, which is one. On an interval of length $24$ the computed modulus is $1.19$, and the gap is the undamped tail that the finite interval cuts: the same integral at lengths $24$, $48$, $96$, $192$ and $384$ gives $1.190$, $1.174$, $1.165$, $1.168$ and $1.167$, converging on the closed form from both sides. The angle is $1.33$, the phase at the stationary point $y_{*}=a z/(a+b)=0.609$, namely $a b z^{2}/(a+b)=0.548$, plus the quarter turn $\pi/4$ of the Gaussian. So the angle's additivity is recovered at the stationary point together with the Maslov constant, and the modulus's multiplicativity is not recovered at all: the composed modulus is a property of the sum of the curvatures and not of the factors.
+
+**What restores the law is the stationary phase, and only at the leading order.** At small $\hbar$ the intermediate integral is dominated by the stationary point, the two actions add along the classical path, and the two van Vleck factors multiply with the fluctuation determinant of the composition. To that order the word composes; beyond it, the corrections are the loop terms and the Maslov constants of the caustics. The honest statement is the variational companion's in its own register: the angle composes, because it is central; the rotor does not, because a product of rotors is not the product of the words; and the scale composes only through the measure, order by order.
+
+## What the Polar Reading Adds and Does Not Add
+
+**Adds.**
+
+- The weight's degeneracy, stated and checked: every path has scale one, trivial boost, and a rotor equal to a sign. The kernel's amplitude is therefore a property of the measure and not of the integrand.
+- The kernel's four factors, with the momentum-space angle fixed at $0$ or $\pi/2$ by the side of the mass shell. That is the structural difference from the Schrödinger kernel, whose word carries a scale and an angle and nothing else.
+- The factorisation of the on-shell numerator as $2k_m\sinh(\theta_{\mathrm{rpd}}/2)\tilde U_{\Psi,\mathrm b}^{-1}\vec u_{\mathrm b}$, and its vanishing at rest.
+- The massless kernel's rotor, which is the frame of the separation and not the spin of a source: a $\pi$ rotation about the spatial direction on a spacelike separation, and a sign on a timelike one.
+- The failure set: the light cone of the massless kernel is the zero-divisor cone, where the word does not exist.
+- The two constants: the central $\arg(i^{-d/2})$ and the spin sign of the double cover.
+- The transport statement with its scope: the integrand's rotor is the transport, the free numerator's rotor is the mass reversal, and the two coincide only when the spin factor is not the unit.
+
+**Does not add.** No second integral: the object read is the companion's. No prediction: the kernel is the standard Dirac propagator. No measure: the polar word constructs none, and the count of paths is the same formal object as before. No closure of the constrained system, and no derivation of the fermionic statistics. The companion's limitation carries over: the worldline integral is over commuting elements, and the Grassmann character sits in the odd variables that the spin factor absorbs.
+
+## Open Questions
+
+1. **The geometry of the spin constant.** The double cover fixes the sign. Whether a closed transport in a background field adds a continuous phase, and whether that phase is the Berry phase of a spin, is not settled here. The computation would need the holonomy of $\tilde u_{\mathrm r}$ along a closed worldline in a prescribed field.
+
+2. **The rotor at a caustic.** The van Vleck determinant vanishes or diverges where classical paths cross, and the scale of the word goes with it. What the rotor does there is not known. It must stay a unit if the transport is well defined, and whether its angle jumps by the Maslov constant is the natural question; the free kernel does not answer it, because its determinant is nowhere zero.
+
+3. **The four vanishing momenta.** The polar action has four parameters without momentum, and the polar integral has the same four outside the integrand. Whether the coincidence is an identity or an analogy is open. The two settings differ, a homogeneous field against a worldline, and no calculation here bridges them.
+
+4. **The rest frame.** The on-shell numerator is a zero divisor at rest, so the kernel's word fails there. Whether the rest frame is a removable singularity of the polar chart, or a genuine boundary of the kernel's polar form, is open. The parent's flow is regular there; the word is not.
+
+5. **The statistics.** The word is a word for commuting elements. How it relates to the Grassmann spin of the standard worldline is the companion's open question, unchanged.
+
+## Summary
+
+A path in the Dirac integral has weight $e^{iS/\hbar}e_t$, whose word is $r=1$, $\theta_{\mathrm{pha}}=S/\hbar$ reduced into $(-\pi/2,\pi/2]$, trivial boost, and rotor $\pm e_t$. Every path has scale one, so the amplitude of the kernel comes from the measure and the spin from the spin factor.
+
+The kernel's word carries all four factors. Its scale is the van Vleck determinant; its angle is the action over $\hbar$ plus the Maslov constant in position space, and one of the two labels $0$ or $\pi/2$ in momentum space; its boost is the classical frame with the axis reversed; its rotor is the spin transport composed with the fixed mass reversal. The on-shell numerator factors as $2k_m\sinh(\theta_{\mathrm{rpd}}/2)\tilde U_{\Psi,\mathrm b}^{-1}\vec u_{\mathrm b}$, vanishes at rest, and has norm $4k_m^{2}\sinh^{2}(\theta_{\mathrm{rpd}}/2)$.
+
+The two norms of the kernel read the scale with the angle and the scale with the boost, and neither reads the rotor. The massless kernel's word has scale $|\langle\tilde R_\Phi\rangle_{\natural}|^{-3/2}$, its rotor is the frame of the separation, a $\pi$ turn about $\vec r/|\vec r|$ on a spacelike separation and a sign on a timelike one, and it fails exactly on the light cone, which is the zero-divisor cone. The Maslov constants are the central $\arg(i^{-d/2})$ and the sign of the rotor's lift. The word composes at a point in scale and angle, and not at all in boost and rotor; the composition of kernels restores the law only at the leading semiclassical order.
+
+None of this is a new integral. It is the companion's integral read in the coordinates of the polar variational article, and its content is the placement of the eight parameters: which are in the weight, which in the measure, and which in the spin factor.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+| --- | --- |
+| $\mathbb{B}$ | Biquaternion algebra; $e_t$ its unit; $i$ central |
+| $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r}$ | The polar word |
+| $r>0$, $\rho=r^{2}$ | Scale and density |
+| $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ | The word's angle |
+| $\theta_{\mathrm{rpd}}\ge0$, $\vec u_{\mathrm b}$ | Rapidity and axis of the boost $\tilde U_{\Psi,\mathrm b}$ |
+| $\theta_{\mathrm{axr}}\in[0,2\pi]$, $\vec u_{\mathrm r}$ | Angle and axis of the rotor $\tilde u_{\mathrm r}$ |
+| $\Rho=r\,e^{i\theta_{\mathrm{pha}}}$ | Principal root of the quaternionic norm |
+| $N(\tilde X)=\langle\tilde X\rangle_{\natural}=\tilde X\tilde X^{\natural}$ | Quaternionic norm; the word exists exactly when $N\neq0$ |
+| $\mathcal B_{\Psi}=\tilde U_{\Psi,\mathrm b}^{-2}$ | Frame factor; a four-vector carries $\mathcal B_{\Psi}$ |
+| $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$ | Gradient and its quaternion conjugate |
+| $k_m=mc/\hbar$ | Mass wave number |
+| $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar=ik'_{t}e_t+\vec k$ | Wave biquaternion |
+| $\langle\tilde K_{\Phi}\rangle_{\natural}=-p^{2}/\hbar^{2}$ | Mass-shell scalar |
+| $\mathcal S_L$, $\mathcal S_R$ | The two components of the Dirac propagator |
+| $\theta_{\mathrm{act}}=S/\hbar$ | Angle of a path's weight |
+| $w=e^{i\theta_{\mathrm{act}}}e_t$ | Weight of one path |
+| $\mathcal{F}[x]$ | Spin factor, the algebra-valued worldline weight |
+| $A_{\mathrm{wkb}}$ | Van Vleck determinant; the scale of the semiclassical kernel |
+| $D$ | Transport element; the unit of the semiclassical kernel |
+| $\tilde R_\Phi=ir'_{t}e_t+\vec r$ | Material position |
+| $\langle\tilde R_\Phi\rangle_{\natural}=-{r'_{t}}^{2}+|\vec r|^{2}$ | Interval of the material sector |
+| $d$ | Number of integrated directions in the Fresnel integral |
+| $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | Spin direction carried by the rotor |
+
+## Further Reading
+
+- [The Path Integral and the Dirac Equation in Biquaternionic Form](the-path-integral-and-the-dirac-equation-in-biquaternionic-form.html), the companion, for the construction of the integral, the spinning worldline, the spin factor, and the measure.
+- [The Dirac Equation in Biquaternionic Polar Variables](the-dirac-equation-in-biquaternionic-polar-variables.html), for the word, the two norms, the current and the spin.
+- [The Variational Principle and the Dirac Equation in Biquaternionic Polar Variables](the-variational-principle-and-the-dirac-equation-in-biquaternionic-polar-variables.html), for the polar action, the four vanishing momenta and the mass relation.
+- [The Schrödinger Path Integral in Biquaternionic Form](the-schrodinger-path-integral-in-biquaternionic-form.html), for the central kernel and the van Vleck kernel of the scalar case.
+- [The Klein–Gordon Path Integral in Biquaternionic Form](the-klein-gordon-path-integral-in-biquaternionic-form.html), for the scalar kernel that the first-order operator acts on.
+- [The Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html), for the word and its bijection.
+- F. A. Berezin and M. S. Marinov, "Particle spin dynamics as the Grassmann variant of classical mechanics," *Annals of Physics* **104** (1977) 336–362, for the odd variables of the worldline.
+- L. Brink, P. Di Vecchia and P. Howe, "A Lagrangian formulation of the classical and quantum dynamics of spinning particles," *Nuclear Physics B* **118** (1977) 76–94, for the supersymmetric worldline.
+- J. H. Van Vleck, "The correspondence principle in the statistical interpretation of quantum mechanics," *Proceedings of the National Academy of Sciences* **14** (1928) 178–188, for the fluctuation determinant.
+- V. P. Maslov and M. V. Fedoriuk, *Semi-Classical Approximation in Quantum Mechanics* (Reidel, 1981), for the Maslov index and the constants of the semiclassical kernel.
+- M. V. Berry, "Quantal phase factors accompanying adiabatic changes," *Proceedings of the Royal Society A* **392** (1984) 45–57, for the geometric phase of a transported spin.

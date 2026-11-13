@@ -74,10 +74,10 @@ $$
 The Hamiltonian does not depend on $y$ or $z$, so the momentum components $p_y=\hbar\,k$ and $p_z=\hbar\,k_{z}$ are conserved, and the envelope has the form
 
 $$
-\tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=\exp(\,i(k r_y+k_z r_z))\,f(r_x)\,\xi ,
+\tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=\exp(i\theta_{\mathrm{lnd}})\,f(r_x)\,\xi ,
 $$
 
-with $\xi$ a constant module element. The energy in the transverse directions is then determined by the one-dimensional equation
+with the Landau angle $\theta_{\mathrm{lnd}}=k(r_y+r_z)$ real because the wave number and the two coordinates are real, and $\xi$ a constant module element. The energy in the transverse directions is then determined by the one-dimensional equation
 
 $$\frac{1}{2\,m}\Big[-\frac{\hbar^{2}\,d^{2}\,f}{dr_{x}^{2}}(r_x)+m^2\omega_c^2(r_x-x_0)^2f(r_x)\Big]=\left(E-\frac{\hbar^{2}\,k_{z}^{2}}{2\,m}\right)f(r_x),
 $$
@@ -109,7 +109,7 @@ $$
 which is the **Landau spectrum**: a ladder of levels spaced by $\hbar\,\omega_{c}$, dispersive only in the field direction. The transverse kinetic energy is quantised at half-integer multiples of the cyclotron quantum, with a zero-point floor $\frac12\hbar\,\omega_{c}$. The wave functions are
 
 $$
-\tilde{Ξ}_{n,k}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=\exp(\,i(k r_y+k_z r_z))\,
+\tilde{Ξ}_{n,k}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=\exp(i\theta_{\mathrm{lnd}})\,
 H_n\!\left(\frac{r_x-x_0}{\ell_B}\right)
 \exp(-(r_x-x_0)^2/2\ell_B^2)\;\xi ,
 $$

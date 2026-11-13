@@ -217,15 +217,15 @@ This is the sharpest statement of the Coulomb problem's special character: the B
 The first Born amplitude is the Fourier transform of the potential at the momentum transfer,
 
 $$
-f_B(\theta_{\mathrm{sct}})=-\frac{2\,m}{\hbar^{2}}\frac{1}{4\pi}\int  d^3r\;\exp(-i(\vec k_{\Phi,2}-\vec k_\Phi)\cdot\vec r)\,V(r),
+f_B(\theta_{\mathrm{sct}})=-\frac{2\,m}{\hbar^{2}}\frac{1}{4\pi}\int  d^3r\;\exp(i\theta_{\mathrm{trf}})\,V(r),
 \qquad
 \lvert\vec k_{\Phi,2}-\vec k_\Phi\rvert=2k_\Phi\sin(\theta_{\mathrm{sct}}/2),
 $$
 
-where $\lvert\vec k_{\Phi,2}-\vec k_\Phi\rvert$ is the magnitude of the momentum transfer. For the Coulomb potential the transform is the standard Coulomb kernel,
+The transfer angle $\theta_{\mathrm{trf}}:=-(\vec k_{\Phi,2}-\vec k_\Phi)\cdot\vec r$ is real because the two wave vectors and the position are real, and $\lvert\vec k_{\Phi,2}-\vec k_\Phi\rvert$ is the magnitude of the momentum transfer. For the Coulomb potential the transform is the standard Coulomb kernel,
 
 $$
-\int d^3r\;\frac{\exp(-i(\vec k_{\Phi,2}-\vec k_\Phi)\cdot\vec r)}{r}=\frac{4\pi}{\lvert\vec k_{\Phi,2}-\vec k_\Phi\rvert^2},
+\int d^3r\;\frac{\exp(i\theta_{\mathrm{trf}})}{r}=\frac{4\pi}{\lvert\vec k_{\Phi,2}-\vec k_\Phi\rvert^2},
 $$
 
 so
@@ -247,9 +247,9 @@ The biquaternion framework has nothing to add to this argument except the observ
 
 ### The logarithm and the energy dependence
 
-The phase $\exp(-i\eta\ln\sin^2(\theta_{\mathrm{sct}}/2))$ and the phase $2\sigma_0$ are both energy dependent, through $\eta=\frac{\alpha}{\hbar\,v}$ and through $\sigma_0(\eta)$. They do not affect the cross section, but they do affect the wave function and any interference with a second amplitude. This is the practical signature of the long-range potential: the Coulomb amplitude's phase cannot be gauged away by a constant, because the logarithm makes it angle dependent and the parameter $\eta$ makes it energy dependent.
+The phase $\exp(i\theta_{\mathrm{cld}})$ and the phase $2\sigma_0$ are both energy dependent, through $\theta_{\mathrm{cld}}=-\eta\ln\sin^2(\theta_{\mathrm{sct}}/2)$ real because $\eta$ and the logarithm of a positive number are real, and through $\eta=\frac{\alpha}{\hbar\,v}$ and through $\sigma_0(\eta)$. They do not affect the cross section, but they do affect the wave function and any interference with a second amplitude. This is the practical signature of the long-range potential: the Coulomb amplitude's phase cannot be gauged away by a constant, because the logarithm makes it angle dependent and the parameter $\eta$ makes it energy dependent.
 
-In the biquaternion interpretation these are central phases: $\exp(-i\eta\ln\sin^2(\theta_{\mathrm{sct}}/2))$ and $\exp(2i\theta_{\mathrm{sct},0})$ are elements of the centre's unit circle $\mathrm{U}(1)\subset\mathbb{B}_{C}$, of the same kind as the free phase and the path-integral phase. They multiply the amplitude without touching the module. The framework's $*$-unitary-versus-rotor distinction applies: these are $*$-unitary central phases, not unit-norm rotors.
+In the biquaternion interpretation these are central phases: $\exp(i\theta_{\mathrm{cld}})$ and $\exp(2i\theta_{\mathrm{sct},0})$ are elements of the centre's unit circle $\mathrm{U}(1)\subset\mathbb{B}_{C}$, of the same kind as the free phase and the path-integral phase. They multiply the amplitude without touching the module. The framework's $*$-unitary-versus-rotor distinction applies: these are $*$-unitary central phases, not unit-norm rotors.
 
 ### The scattering length and the infrared analogy
 

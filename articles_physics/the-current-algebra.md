@@ -46,7 +46,7 @@ $$
 \langle\tilde J_{\Phi}\rangle_{\natural}=-c^{2}\rho^{2},
 $$
 
-so the current is a timelike element of fixed square and the density is its modulus. On the same element the display gives $-2.8561$ against $\rho^{2}=2.8561$. **The current carries four of the eight parameters and its length carries one of those four**, which is why a fluid can be described by a density and a direction and why the other four parameters need another bilinear.
+so the current is a timelike element of fixed square and the density is its modulus. **The scalar case is the exception, and it is the framework article's exception**: with the boost collapsed the formula returns the rest velocity, the fluid's velocity is the phase gradient instead, and the current's norm then carries the quantum term, $\langle\tilde J_\Phi\rangle_\natural=-\rho^{2}(c^{2}+2Q_{\mathrm{qnt}}/m)$, as [The Klein–Gordon Fluid](the-klein-gordon-fluid.html) records. On the same element the display gives $-2.8561$ against $\rho^{2}=2.8561$. **The current carries four of the eight parameters and its length carries one of those four**, which is why a fluid can be described by a density and a direction and why the other four parameters need another bilinear.
 
 ### The Spin Reads the Scale and the Rotor
 

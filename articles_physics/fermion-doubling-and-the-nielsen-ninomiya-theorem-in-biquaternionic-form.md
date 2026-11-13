@@ -64,7 +64,7 @@ the action whose equation of motion is the massless limit of the pair. The mass 
 
 ### The propagator and the doubler poles
 
-**The symbol.** On a plane wave $\tilde{Ξ}_{n}\propto e^{i(p\cdot x)/\hbar}$ the symmetric difference carries $i\sin(p_\mu a)/a$, so the lattice gradient acquires the element symbol
+**The symbol.** On a plane wave $\tilde{Ξ}_{n}\propto e^{i\theta_{\mathrm{pwp}}}$ with the plane-wave angle $\theta_{\mathrm{pwp}}=p\cdot x/\hbar$ real because the momentum and the position are real, the symmetric difference carries $i\sin(p_\mu a)/a$, so the lattice gradient acquires the element symbol
 
 $$
 \tilde K_{\Phi}(p)=a^{-1}\sum_{\mu}\sin(p_\mu a)\,e_\mu ,

@@ -299,7 +299,7 @@ The field's value space is the centre $\mathbb{B}_{C}$, and the algebra supplies
 | $1/k_m$ | The mass length, $\hbar/(mc)$ |
 | $\pi=\left(\partial\xi/\partial r'_t\right)^{\,*}$, $\pi^\dagger=\partial\xi/\partial r'_t$ | Conjugate momenta; Legendre transform regular |
 | $\tilde K_{\Phi}=i\,k_{t}^{\prime}e_t+\vec k_\Phi=\tilde P_{\Phi}/\hbar$, $\langle\tilde K_{\Phi}\rangle_{\natural}=-k_t^{\prime\,2}+k_\Phi^{2}=-k_m^{2}$ | Material four-wavevector and its norm, the mass shell |
-| $\exp(\pm i\,\mathrm{Sc}(\tilde K_{\Phi}\tilde{R}_{\Phi}^{\natural}))$, $\delta\tilde R_{\Phi}$ | Central plane-wave phase; the separation element of the commutator |
+| $\exp(\pm i\theta_{\mathrm{pwp}})$, $\delta\tilde R_{\Phi}$ | Central plane-wave phase; the separation element of the commutator |
 | $E_{\vec p}=c\sqrt{\vec p^{\,2}+m^{2}c^{2}}$, $p\cdot x=\hbar\left(k_{t}^{\prime}r'_t-\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\right)$ | On-shell energy, and the action $\hbar$ times the phase |
 | $a_{\mathrm{fop},\vec p},b_{\mathrm{fop},\vec p}$ | Particle and antiparticle annihilation operators |
 | $[a_{\mathrm{fop},\vec p},{a_{\mathrm{fop},\vec p^{\,\prime}}}^\dagger]=(2\pi\hbar)^3\delta^{(3)}(\vec p-\vec p^{\,\prime})$ | Mode commutators |

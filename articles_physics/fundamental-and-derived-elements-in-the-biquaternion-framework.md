@@ -288,7 +288,7 @@ $$
 
 which also shows that the construction is not merely formal. The domain condition $B\ne0$ and the uniqueness up to the correlated sign $(R,\Theta)\mapsto(-R,\Theta+\pi)$ are properties of the construction, hence derived.
 
-**The complex polar form.** For a biquaternion with invertible real quaternion part $Q_r$, put $\tan\tilde{Ξ}=Q_r^{-1}Q_i$ and $Q=Q_r(\cos\tilde{Ξ})^{-1}$, so that $\tilde Q_1=Q\exp(i\tilde{Ξ})$ with $i$ the central root. Again every ingredient is derived, and the reconstruction
+**The complex polar form.** For a biquaternion with invertible real quaternion part $Q_r$, put $\tan\tilde{Ξ}=Q_r^{-1}Q_i$ and $Q=Q_r(\cos\tilde{Ξ})^{-1}$, so that $\tilde Q_1=Q\exp(i\tilde{Ξ})=Q\exp(i\theta_{\mathrm{bqc}}\hat u_{\tilde\Xi})$ with $i$ the central root, where the angle $\theta_{\mathrm{bqc}}=\lvert\tilde\Xi\rvert$ is the modulus of the quaternion angle and $\hat u_{\tilde\Xi}=\tilde\Xi/\lvert\tilde\Xi\rvert$ is its unit pure direction; the angle is real because a quaternion modulus is a real number. Again every ingredient is derived, and the reconstruction
 
 $$
 Q\exp(i\tilde{Ξ})=Q\cos\tilde{Ξ}+iQ\sin\tilde{Ξ}=Q_r+iQ_i=\tilde Q_1

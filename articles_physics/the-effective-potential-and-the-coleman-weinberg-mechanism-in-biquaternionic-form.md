@@ -62,7 +62,7 @@ v_0 = \frac{v}{\sqrt2} ,
 \lambda = 4\beta ,
 $$
 
-so that the physical vacuum value $|\xi| = v_0$ is the same number in both. Writing $\xi = \tfrac{1}{\sqrt2}(\sqrt2\,v_0 + h)\exp(i\theta_{\mathrm{fld}}/(\sqrt2 v_0))$ with $h, \theta_{\mathrm{fld}}$ real gives the radial mass
+so that the physical vacuum value $|\xi| = v_0$ is the same number in both. Writing $\xi = \tfrac{1}{\sqrt2}(\sqrt2\,v_0 + h)\exp(i\theta_{\mathrm{gld}})$ with $h, \theta_{\mathrm{fld}}$ real and $\theta_{\mathrm{gld}}:=\theta_{\mathrm{fld}}/(\sqrt2\,v_0)$ gives the radial mass. The angle is real because the field and the vacuum value are both real with $v_0>0$, and it is dimensionless because a field divided by the vacuum value is a ratio of two quantities of the same dimension.
 
 $$
 m_h^2 = \left.\frac{d^2V_0}{dh^2}\right|_{h=0} = \lambda v_0^2 ,

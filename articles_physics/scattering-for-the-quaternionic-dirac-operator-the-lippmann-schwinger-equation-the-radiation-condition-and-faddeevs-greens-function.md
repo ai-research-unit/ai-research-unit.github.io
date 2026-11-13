@@ -134,7 +134,7 @@ $$
 F_\eta(x-y) := -\frac{\exp(ik\lvert x-y\rvert)}{4\pi\lvert x-y\rvert}, \qquad x,y\in\mathbb{R}^3,\ x\ne y .
 $$
 
-It solves $\Delta u+k_\Phi^2u=0$ away from $y$, and its far-field behaviour is
+The range angle is $\theta_{\mathrm{rgh}}=k_\Phi\lvert x-y\rvert$, real because the wave number and the distance are real. It solves $\Delta u+k_\Phi^2u=0$ away from $y$, and its far-field behaviour is
 
 $$
 F_\eta(x-y) = -\frac{\exp(ik\lvert x\rvert)}{4\pi\lvert x\rvert}\,\exp(-ik\vec u_x\cdot y) + O(\lvert x\rvert^{-2}), \qquad
@@ -421,7 +421,7 @@ The **Lippmann–Schwinger equation** is equivalent to the differential problem 
 | $L_kq=kq$, $R_kq=qk$ | Left and right multiplication; the letter names the side |
 | $D_\alpha=D_3+R_\alpha$ | The corpus's shift, constant parameter; a different object from the gradient-coefficient $D_\alpha=D_3+\operatorname{grad}\log\sqrt{\alpha}$ of the electromagnetic articles |
 | $\vec k_\Phi$ | Wave vector, identified with $k_{\Phi x}\vec e_x+k_{\Phi y}\vec e_y+k_{\Phi z}\vec e_z$; $k_\Phi=\sqrt{\vec k_\Phi^2}$, $\operatorname{Im}(k_\Phi)\ge0$; $\vec k_\Phi^2=-\vec k_\Phi\cdot\vec k_\Phi$ |
-| $\mathrm{Sd}_\alpha=-\exp(i\alpha\lvert x\rvert)/(4\pi\lvert x\rvert)$ | Helmholtz fundamental solution; the source's $F_\eta$ at $\alpha=k_\Phi$ |
+| $\mathrm{Sd}_\alpha=-\exp(i\theta_{\mathrm{rgh}})/(4\pi\lvert x\rvert)$ | Helmholtz fundamental solution; the source's $F_\eta$ at $\alpha=k_\Phi$ |
 | $\mathcal V_{\mathrm{vek},\pm\alpha}=-(D_3\mp\alpha)\mathrm{Sd}_\alpha$ | Fundamental solutions of the shifted family; the source's $C_\eta$ is $\mathcal{V}_{\mathrm{vek},+k_\Phi}$ |
 | $C_\eta=-D_{-k_\Phi}F_\eta$ | Cauchy-type kernel of the Dirac-type operator, $(k_\Phi+\vec u_x/\lvert x\rvert-ik_\Phi\vec u_x)\exp(ik_\Phi\lvert x\rvert)/(4\pi)$ |
 | $k_\Phi f+\vec u_x fk_\Phi=o(\lvert x\rvert^{-1})$ | The quaternionic radiation condition; the factor $1+i\vec u_x$ is a zero divisor |

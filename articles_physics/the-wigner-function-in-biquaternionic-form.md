@@ -219,8 +219,8 @@ so the two quadratures are the amplitude split by the phase into a cosine and a 
 
 $$
 \tilde\Xi^{*}\!\left(r-\frac{\vec s}{2}\right)\tilde\Xi\!\left(r+\frac{\vec s}{2}\right)
-=\rho_{\mathrm{num}}(r)\,e^{i\,\vec s\cdot\vec\nabla_\Phi S_{\tilde\Xi}/\hbar}
-\left(1+\mathcal{O}(s^{2})\right),
+=\rho_{\mathrm{num}}(r)\,e^{i\theta_{\mathrm{sft}}}
+\left(1+\mathcal{O}(s^{2})\right),\qquad \theta_{\mathrm{sft}}=\vec s\cdot\vec\nabla_\Phi S_{\tilde\Xi}/\hbar\in\mathbb{R},
 $$
 
 where the amplitude's two offsets combine to $\rho_{\mathrm{num}}$ to this order because the correction is a derivative of a symmetric combination. Substituting,

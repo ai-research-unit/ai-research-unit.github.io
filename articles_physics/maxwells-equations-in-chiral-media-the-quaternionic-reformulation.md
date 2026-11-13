@@ -391,10 +391,10 @@ D_3+\alpha=\eta\bigl(D_3+\tilde Q_+\bigr)\eta^{-1},
 \tilde Q_+\tilde Q_-=0,
 $$
 
-the last being the zero-divisor identity $\alpha^2-(\nabla\xi)^2=0$ read in the algebra. Because $\tilde Q_+$ is a zero divisor, the shifted operator admits a factorisation, and solutions are built from $\eta$ and functions in the kernel of $D_3$. For a **stratified** medium, $\alpha=\alpha(x_1)$ depending on one coordinate only, the two solutions of the eikonal equation are $\xi=\pm i\Theta$ with $\partial\Theta/\partial x_1=\alpha$, and the corresponding solutions of $(D_3+\alpha(x_1))u=0$ are
+the last being the zero-divisor identity $\alpha^2-(\nabla\xi)^2=0$ read in the algebra. Because $\tilde Q_+$ is a zero divisor, the shifted operator admits a factorisation, and solutions are built from $\eta$ and functions in the kernel of $D_3$. For a **stratified** medium, $\alpha=\alpha(x_1)$ depending on one coordinate only, the two solutions of the eikonal equation are $\xi=\pm i\Theta$ with $\partial\Theta/\partial x_1=\alpha$ and the accumulated shift $\Theta=\theta_{\mathrm{shf}}+i\kappa_{\mathrm{dmp}}$, where $\theta_{\mathrm{shf}}=\operatorname{Re}\Theta$ and $\kappa_{\mathrm{dmp}}=\operatorname{Im}\Theta$ are real because they are the real and the imaginary part of $\Theta$, and the corresponding solutions of $(D_3+\alpha(x_1))u=0$ are
 
 $$
-u_x(x)=\exp(\,i\Theta(x_1))\Bigl[H_1(x_2,x_3)(1-i\vec e_x)A_1+H_2(x_2,x_3)\vec e_y(1+i\vec e_x)A_2\Bigr],
+u_x(x)=\exp(i\theta_{\mathrm{shf}})\,e^{-\kappa_{\mathrm{dmp}}}\Bigl[H_1(x_2,x_3)(1-i\vec e_x)A_1+H_2(x_2,x_3)\vec e_y(1+i\vec e_x)A_2\Bigr],
 \tag{43}
 $$
 
@@ -473,7 +473,7 @@ The two things a reader should carry away are the two wavenumbers and the fact t
 | $\tilde F=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ | Field-strength biquaternion of the rest of the series (its §7 normalisation); $Ξ=-ic\tilde F$ |
 | $Ξ=\vec{\mathcal E}+i\vec{\mathcal H}$, $\tilde{Ξ}=\vec{\mathcal E}-i\vec{\mathcal H}$ | The two diagonalising combinations; $\tilde{Ξ}=Ξ^{*}$ for real fields |
 | $k_\Phi^+=k_\Phi/(1+k_\Phi\beta)$, $k_\Phi^-=k_\Phi/(1-k_\Phi\beta)$ | The two chiral wavenumbers; both $=k_\Phi$ at $\beta=0$ |
-| $\mathrm{Sd}_\alpha=-\exp(\,i\alpha\lvert x\rvert)/(4\pi\lvert x\rvert)$ | Helmholtz fundamental solution, $\operatorname{Im}\alpha\ge0$ |
+| $\mathrm{Sd}_\alpha=-\exp(i\theta_{\mathrm{shf}})e^{-\kappa_{\mathrm{dmp}}\lvert x\rvert}/(4\pi\lvert x\rvert)$ | Helmholtz fundamental solution, $\operatorname{Im}\alpha\ge0$ |
 | $\mathcal V_{\mathrm{vek},\pm\alpha}=-(D_3\mp\alpha)\mathrm{Sd}_\alpha$ | Fundamental solution of $D_{3\pm\alpha}$ |
 | $T_\alpha,V_{\mathrm{vek},\alpha},S_\alpha$ | Teodorescu, Cauchy-type and singular-integration operators |
 | $P_\alpha=\tfrac12(I+S_\alpha)$, $Q_\alpha=I-P_\alpha$ | Plemelj projectors |

@@ -22,9 +22,9 @@ The canonical commutation relation is not a statement about quantumness. It is a
 
 **The relation.** For self-adjoint $Q$ and $P$ on a Hilbert space $\mathcal{H}$, the relation and its bounded form are
 $$
-[Q,P]=i\,\hbar\,I,\qquad  \exp(i\theta_{\mathrm{wyl},Q} Q)\exp(i\theta_{\mathrm{wyl},P} P)=\exp(-i\,\hbar\,\theta_{\mathrm{wyl},Q}\,\theta_{\mathrm{wyl},P})\exp(i\theta_{\mathrm{wyl},P} P)\exp(i\theta_{\mathrm{wyl},Q} Q).
+[Q,P]=i\,\hbar\,I,\qquad  \exp(i\theta_{\mathrm{wyl},Q} Q)\exp(i\theta_{\mathrm{wyl},P} P)=\exp(-i\theta_{\mathrm{wyl}})\exp(i\theta_{\mathrm{wyl},P} P)\exp(i\theta_{\mathrm{wyl},Q} Q).
 $$
-The second is the **Weyl form**, and it is not a rewriting of the first. The passage from one to the other is exponentiation, which for operators needs the Baker–Campbell–Hausdorff formula, and that formula needs bounded arguments. The relation forces unbounded ones, as shown below, so the exponentiated form is reached only under extra domain assumptions, and pairs exist that satisfy the first relation and not the second. The Stone–von Neumann theorem is therefore a theorem about the **Weyl** form: uniqueness is stated where the condition is well posed, and it is not a statement about the commutator form at all.
+The angles $\theta_{\mathrm{wyl},Q}$ and $\theta_{\mathrm{wyl},P}$ are the Weyl parameters, real because they multiply self-adjoint operators, and the symplectic angle $\theta_{\mathrm{wyl}}=\hbar\,\theta_{\mathrm{wyl},Q}\theta_{\mathrm{wyl},P}$ is real because $\hbar$ and the two parameters are real. The second is the **Weyl form**, and it is not a rewriting of the first. The passage from one to the other is exponentiation, which for operators needs the Baker–Campbell–Hausdorff formula, and that formula needs bounded arguments. The relation forces unbounded ones, as shown below, so the exponentiated form is reached only under extra domain assumptions, and pairs exist that satisfy the first relation and not the second. The Stone–von Neumann theorem is therefore a theorem about the **Weyl** form: uniqueness is stated where the condition is well posed, and it is not a statement about the commutator form at all.
 
 **Why a continuum is required.** The translation identity $\exp(iaP)Q\exp(-iaP)=Q+a\,I$ holds for every real $a$, so the spectrum of $Q$ is invariant under every real translation and is therefore all of $\mathbb{R}$. Position eigenstates $|x\rangle$ satisfy $Q|x\rangle=x|x\rangle$ and $\langle x|x_2\rangle=\delta(x-x_2)$, and no such $|x\rangle$ is a vector of the Hilbert space: the integral $\int|x\rangle\langle x|\,dx=I$ is an integral over an uncountable set.
 
@@ -242,7 +242,7 @@ The biquaternion framework and the canonical commutation relation are **independ
 | $[Q,P]=i\,\hbar\,I$ | Canonical commutation relation |
 | $\pi_\eta=p_\eta-ϙA_\eta$ | Mechanical momentum |
 | $[\pi_j,\pi_\eta]=i\,\hbar\,ϙ\varepsilon_{j\eta l}B_l$ | Field-strength commutator; a central multiple of $e_t$, hence an element of $\mathbb{B}$ |
-| $\exp(i\theta_{\mathrm{wyl},Q} Q)\exp(i\theta_{\mathrm{wyl},P} P)=\exp(-i\,\hbar\,\theta_{\mathrm{wyl},Q}\,\theta_{\mathrm{wyl},P})\exp(i\theta_{\mathrm{wyl},P} P)\exp(i\theta_{\mathrm{wyl},Q} Q)$ | Weyl form of the relation |
+| $\exp(i\theta_{\mathrm{wyl},Q} Q)\exp(i\theta_{\mathrm{wyl},P} P)=\exp(-i\theta_{\mathrm{wyl}})\exp(i\theta_{\mathrm{wyl},P} P)\exp(i\theta_{\mathrm{wyl},Q} Q)$ | Weyl form of the relation |
 | $[Q,P^n]=i\,\hbar\,nP^{n-1}$ | the identity behind the boundedness obstruction; the case $m=1$ of McCoy's formula |
 | $\lVert Q\rVert$, $\lVert P\rVert$ | operator norms |
 | $\delta A=A-\langle A\rangle$, $(\delta A)^2=\langle\delta A^2\rangle$ | centred observable and its variance in a state |

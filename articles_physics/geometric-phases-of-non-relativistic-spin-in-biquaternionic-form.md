@@ -32,10 +32,12 @@ A state that evolves under a time-independent Hamiltonian $\tilde H_\Psi$ acquir
 $$
 \tilde{Ξ}(r'_t) = \exp(\frac{\tilde H_\Phi}{\hbar\,c}r'_t)\,\tilde{Ξ}(0),
 \qquad\text{so}\qquad
-\tilde{Ξ}(T) = \exp(-\frac{i}{\hbar\,c}E\,T)\,\tilde{Ξ}(0)
+\tilde{Ξ}(T) = \exp(-i\theta_{\mathrm{dgp}})\,\tilde{Ξ}(0)
 $$
 
-for an eigenstate of energy $E$. The phase $-\frac{1}{\hbar\,c}\int_0^T  E\,dr'_t$ is the **dynamical phase**; it is proportional to the duration, so a longer journey accumulates more of it. For a general state the energy in the exponent is the expectation $\langle\tilde H_\Psi\rangle$, and the same statement holds with $\int_0^T\langle\tilde H_\Psi\rangle\,\frac{dr'_{t}}{\hbar\,c}$.
+The dynamical angle $\theta_{\mathrm{dgp}}:=\frac{1}{\hbar\,c}E\,T$ is real because the energy, the duration and $\hbar c$ are real.
+
+for an eigenstate of energy $E$. The angle $-\theta_{\mathrm{dgp}}=-\frac{1}{\hbar\,c}\int_0^T  E\,dr'_t$ is the **dynamical phase**; it is proportional to the duration, so a longer journey accumulates more of it. For a general state the energy in the exponent is the expectation $\langle\tilde H_\Psi\rangle$, and the same statement holds with $\int_0^T\langle\tilde H_\Psi\rangle\,\frac{dr'_{t}}{\hbar\,c}$.
 
 The dynamical phase is not what this article is about. It is removed by a standard subtraction, and the residue is the geometric part. The subtraction is meaningful because the two parts respond differently to a change of the speed of the journey at fixed geometry: the dynamical phase scales with the duration and the geometric phase does not.
 

@@ -40,9 +40,9 @@ $$
 $$
 The generating functional is
 $$
-Z[\tilde J_{\Phi,+},\tilde J_{\Phi,-}] = \int\mathcal{D}\tilde{Ξ}_+\mathcal{D}\tilde{Ξ}_-\;\exp(\,iS[\tilde{Ξ}_+]-iS[\tilde{Ξ}_-]+i\int(\tilde J_{\Phi,+}\tilde{Ξ}_+-\tilde J_{\Phi,-}\tilde{Ξ}_-)),
+Z[\tilde J_{\Phi,+},\tilde J_{\Phi,-}] = \int\mathcal{D}\tilde{Ξ}_+\mathcal{D}\tilde{Ξ}_-\;\exp(i\theta_{\mathrm{act}}^{+}-i\theta_{\mathrm{act}}^{-}+i\theta_{\mathrm{src}}),
 $$
-with the relative sign between the two branches. The two-branch action is the difference of two copies of the ordinary action, and the minus branch is integrated with the opposite orientation, which is what makes the formalism genuinely *in-in*: the final state is summed over, not fixed. This is standard (Schwinger 1961; Keldysh 1964; Kadanoff–Baym; see the cited reviews) and is transcribed.
+with the branch actions $\theta_{\mathrm{act}}^{\pm}=S[\tilde{Ξ}_\pm]/\hbar$ and the source angle $\theta_{\mathrm{src}}=\frac{1}{\hbar}\int(\tilde J_{\Phi,+}\tilde{Ξ}_+-\tilde J_{\Phi,-}\tilde{Ξ}_-)$, all real and dimensionless because each is a real action over $\hbar$ or a real pairing over $\hbar$; the relative sign is between the two branches. The two-branch action is the difference of two copies of the ordinary action, and the minus branch is integrated with the opposite orientation, which is what makes the formalism genuinely *in-in*: the final state is summed over, not fixed. This is standard (Schwinger 1961; Keldysh 1964; Kadanoff–Baym; see the cited reviews) and is transcribed.
 
 **The doubled Green's functions.** The basic objects are the branch-indexed two-point functions
 $$
@@ -188,7 +188,7 @@ The generating-functional structure of the previous articles carries over with t
 $$
 J = \begin{pmatrix}\tilde J_{\Phi,+}\tilde J_{\Phi,-}\end{pmatrix},
 \qquad
-Z[\tilde J_{\Phi,+},\tilde J_{\Phi,-}] = \int\mathcal{D}\tilde{Ξ}_+\mathcal{D}\tilde{Ξ}_-\;\exp(\,iS[\tilde{Ξ}_+]-iS[\tilde{Ξ}_-]+i\int(\tilde J_{\Phi,+}\tilde{Ξ}_+-\tilde J_{\Phi,-}\tilde{Ξ}_-)) ,
+Z[\tilde J_{\Phi,+},\tilde J_{\Phi,-}] = \int\mathcal{D}\tilde{Ξ}_+\mathcal{D}\tilde{Ξ}_-\;\exp(i\theta_{\mathrm{act}}^{+}-i\theta_{\mathrm{act}}^{-}+i\theta_{\mathrm{src}}) ,
 $$
 one defines $W=-i\log Z$ and obtains the branch-indexed connected functions as its source derivatives; the Legendre transform in both sources gives the two-particle-irreducible effective action, whose stationarity is the Kadanoff–Baym equation. This is the contour version of *The Generating Functional and the Effective Action in Biquaternionic Form*, with the fields and sources taking values in the module and with one extra external index. The biquaternion content is unchanged: the sources are module-valued, the quadratic operator is the biquaternion-norm operator, and the sector factorization holds whenever the operator is central.
 

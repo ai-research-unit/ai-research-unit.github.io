@@ -234,7 +234,7 @@ The polar decomposition is defined off the cone and has no value on it. It has a
 **The boundary-value theorem.** Let $\vec u_{\mathrm b}$ and $\vec u_{\mathrm r}$ be unit real vectors, $\varkappa_{\mathrm{phs}}$ a unit complex number and $R>0$, and set
 
 $$
-\tilde Q(\tilde{Ξ})=R\exp\left(-\frac{\tilde{Ξ}}{2}\right)\varkappa_{\mathrm{phs}}\exp\left(i\frac{\tilde{Ξ}}{2}\vec u_{\mathrm b}\right)\tilde u_{\mathrm r},\qquad \tilde{Ξ}>0.
+\tilde Q(\tilde{Ξ})=R\exp\left(-\frac{\tilde{Ξ}}{2}\right)\varkappa_{\mathrm{phs}}\exp\left(i\theta_{\mathrm{zdn}}\vec u_{\mathrm b}\right)\tilde u_{\mathrm r},\qquad \tilde{Ξ}>0.\qquad \theta_{\mathrm{zdn}}=\frac{\tilde{Ξ}}{2}\in\mathbb{R},
 $$
 
 Every $\tilde Q(\tilde{Ξ})$ is a unit, and as $\tilde{Ξ}\to\infty$ it converges to

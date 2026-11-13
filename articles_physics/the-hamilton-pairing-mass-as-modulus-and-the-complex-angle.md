@@ -25,7 +25,7 @@ The conventions are those of *Norm and Pairing Conventions*, §*The Polar Word a
 | result | established in | used here for |
 |---|---|---|
 | the Hamilton pairing, its theorem and its domain | **The Hamilton Root Pairing of the Polar Decomposition of Biquaternions**, §*The Statement*, §*The Domain* | $\tilde Q=\Rho e^{\vec U\Theta}$, the axis and the angle |
-| the eigenvalues $\lambda_\pm=Q_t\pm iB$ and the norm identity | [*The Biquaternion Eigenvalue Decomposition*](../articles_maths/the-biquaternion-eigenvalue-decomposition.html), §*The Eigenvalues* | $\lambda_\pm=\Rho e^{\pm i\Theta}$ and $\lambda_+\lambda_-=\langle\tilde Q\rangle_{\natural}$ |
+| the eigenvalues $\lambda_\pm=Q_t\pm iB$ and the norm identity | [*The Biquaternion Eigenvalue Decomposition*](../articles_maths/the-biquaternion-eigenvalue-decomposition.html), §*The Eigenvalues* | $\lambda_\pm=\Rho e^{\mp\kappa_{\mathrm{dmp}}}e^{\pm i\theta_{\mathrm{cpx}}}$ and $\lambda_+\lambda_-=\langle\tilde Q\rangle_{\natural}$ |
 | the four factors and the branch of the modulus | [*The Polar Decomposition of an N-Regular Biquaternion*](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html), §*The Four Factors* | $\Rho=r e^{i\theta_{\mathrm{pha}}}$ with $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ |
 | the four-momentum and the mass shell | [*The Spectral Reading of a Four-Vector*](the-spectral-reading-of-a-four-vector.html), §*The Frame Dependence* | $\Rho=i mc$, $\Theta=-i\theta_{\mathrm{rpd}}$, $\vec U=\vec u_p$ |
 | the four objects called a boost and the factor of two | [*Norm and Pairing Conventions*](norm-and-pairing-conventions.html), §*The Four Objects Called a Boost* | the $\theta_{\mathrm{rpd}}/2$ versus $\theta_{\mathrm{rpd}}$ warning |
@@ -41,17 +41,17 @@ The pairing is the grouping of the scale and the phase against the boost and the
 $$
 \tilde Q=\Rho\,\exp(\vec U\Theta),
 \qquad
-\Rho=r\,e^{i\theta_{\mathrm{pha}}},
+\Rho=r\,e^{i\theta_{\mathrm{pha}}},\qquad \theta_{\mathrm{pha}}=\arg\Rho,
 \qquad
 \exp(\vec U\Theta)=\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r}.
 $$
 
-The modulus is central and complex. The second factor is a unit-norm element, and the unit-norm subgroup of $\mathbb{B}$ is $SL(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group $SO^{+}(1,3)$. The exponent is a complex multiple of a root of $-e_t$: the axis $\vec U$ is a unit pure element with $\vec U^{2}=-e_t$, and $\Theta$ is complex.
+The modulus is central and complex, and its phase $\theta_{\mathrm{pha}}$ is the argument of the central scalar, real because an argument of a complex number is an angle. The second factor is a unit-norm element, and the unit-norm subgroup of $\mathbb{B}$ is $SL(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group $SO^{+}(1,3)$. The exponent is a complex multiple of a root of $-e_t$: the axis $\vec U$ is a unit pure element with $\vec U^{2}=-e_t$, and $\Theta$ is complex: $\Theta=\theta_{\mathrm{cpx}}+i\kappa_{\mathrm{dmp}}$, where $\theta_{\mathrm{cpx}}$ is the rotation angle and $\kappa_{\mathrm{dmp}}$ the decay rate, both real because they are the real and the imaginary part of one complex number.
 
 The two eigenvalues of the element are the polar form of the spectrum,
 
 $$
-\boxed{\;\lambda_\pm=Q_t\pm iB=\Rho\,e^{\pm i\Theta},
+\boxed{\;\lambda_\pm=Q_t\pm iB=\Rho\,e^{\mp\kappa_{\mathrm{dmp}}}e^{\pm i\theta_{\mathrm{cpx}}},
 \qquad
 \lambda_+\lambda_-=\Rho^{2}=\langle\tilde Q\rangle_{\natural}\;}.
 $$
@@ -77,7 +77,7 @@ The phase of $\Rho$ carries the causal character when the norm is real.
 | $\langle\tilde Q\rangle_{\natural}>0$ | $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}>0$ | $0$ | spacelike element |
 | $\langle\tilde Q\rangle_{\natural}<0$ | $\Rho=i\sqrt{\lvert\langle\tilde Q\rangle_{\natural}\rvert}$ | $\pi/2$ | timelike element |
 | $\langle\tilde Q\rangle_{\natural}=0$ | $\Rho=0$ | undefined | null element |
-| $\langle\tilde Q\rangle_{\natural}\in\mathbb{C}$ general | $\Rho=\lvert\langle\tilde Q\rangle_{\natural}\rvert^{1/2}e^{i\arg\langle\tilde Q\rangle_{\natural}/2}$ | $\tfrac12\arg\langle\tilde Q\rangle_{\natural}$ | general element |
+| $\langle\tilde Q\rangle_{\natural}\in\mathbb{C}$ general | $\Rho=\lvert\langle\tilde Q\rangle_{\natural}\rvert^{1/2}e^{i\theta_{\mathrm{pha}}/2}$ | $\tfrac12\arg\langle\tilde Q\rangle_{\natural}$ | general element |
 
 For a four-momentum the norm is $\langle\tilde P_{\Phi}\rangle_{\natural}=-m^{2}c^{2}$ and the modulus is $\Rho=i mc$ on the principal branch. The two eigenvalues are
 
@@ -220,7 +220,7 @@ The reading that changes the theory most is the identification of the modulus wi
 
 - The Hamilton pairing is $\tilde Q=\Rho\exp(\vec U\Theta)=\Rho(\cos\Theta+\vec U\sin\Theta)$.
 - The modulus $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}=r e^{i\theta_{\mathrm{pha}}}$ is central and complex; it is the only scalar first factor of the three pairings.
-- The eigenvalues are $\lambda_\pm=Q_t\pm iB=\Rho e^{\pm i\Theta}$, and their product is the norm.
+- The eigenvalues are $\lambda_\pm=Q_t\pm iB=\Rho e^{\mp\kappa_{\mathrm{dmp}}}e^{\pm i\theta_{\mathrm{cpx}}}$, and their product is the norm.
 - For a four-momentum, $\Rho=i mc$, $\Theta=-i\theta_{\mathrm{rpd}}$, $\vec U=\vec u_p$, and the eigenvalues are $i mc\,e^{\pm\theta_{\mathrm{rpd}}}$.
 - The energy is $mc^{2}\cosh\theta_{\mathrm{rpd}}$ and depends on the frame; the modulus is the invariant and does not.
 - The angle is real for a rotation, imaginary for a boost and complex in general; the pair $(\Theta,\vec U)$ is the invariant data.
@@ -238,7 +238,7 @@ The reading that changes the theory most is the identification of the modulus wi
 | $\vec U=\vec Q/B$ | the Hamilton axis, a unit pure element, $\vec U^{2}=-e_t$ |
 | $B=\sqrt{\langle\vec Q,\vec Q\rangle_{\natural}}$ | the vector-part square root (not the boost factor $\mathcal B_{\Psi}$) |
 | $\Theta$ | the complex angle, $\cos\Theta=Q_t/\Rho$, $\sin\Theta=B/\Rho$ |
-| $\lambda_\pm=Q_t\pm iB$ | the eigenvalues, $\lambda_\pm=\Rho e^{\pm i\Theta}$ |
+| $\lambda_\pm=Q_t\pm iB$ | the eigenvalues, $\lambda_\pm=\Rho e^{\mp\kappa_{\mathrm{dmp}}}e^{\pm i\theta_{\mathrm{cpx}}}$ |
 | $\theta_{\mathrm{rpd}}$ | the kinematic rapidity of a four-momentum |
 | $\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})$ | the frame rotor, exponent $\theta_{\mathrm{rpd}}/2$ |
 | $\mathcal B_{\Psi}=\tilde U_{\Psi,\mathrm b}^{-2}$ | the four-vector boost factor, exponent $-\theta_{\mathrm{rpd}}$ |

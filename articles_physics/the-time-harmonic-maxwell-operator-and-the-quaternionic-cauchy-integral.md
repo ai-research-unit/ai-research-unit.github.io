@@ -261,7 +261,7 @@ with the biquaternionic Maxwell operator $\partial/\partial r'_t+iD_3$ of the ti
 The integral theory begins with the kernel of the first-order operators. Let $\mathrm{Sd}_\alpha$ be the outgoing fundamental solution of the Helmholtz operator,
 
 $$
-\mathrm{Sd}_\alpha(x)=-\frac{\exp(\,i\alpha\lvert x\rvert)}{4\pi\lvert x\rvert},
+\mathrm{Sd}_\alpha(x)=-\frac{\exp(i\theta_{\mathrm{shf}})e^{-\kappa_{\mathrm{dmp}}\lvert x\rvert}}{4\pi\lvert x\rvert},\qquad \theta_{\mathrm{shf}}=\operatorname{Re}\alpha\,\lvert x\rvert,\quad \kappa_{\mathrm{dmp}}=\operatorname{Im}\alpha,
 \qquad
 (\Delta+\alpha^2)\mathrm{Sd}_\alpha=\delta ,
 \qquad
@@ -403,7 +403,7 @@ The kernel of the theory is the outgoing Helmholtz kernel $\mathrm{Sd}_\alpha$ o
 | $Ξ,\tilde{Ξ}$ | Diagonalising combinations $\vec E\pm b\vec H$; conjugate Cauchy–Riemann solutions |
 | $\mathcal{R}_\lambda$ | Metaharmonic pairs $\ker((\Delta+\lambda)I_2)$ |
 | $Q_i=\tfrac{1}{2\alpha}A_iNB_i$ | The two complementary projections, $Q_x+Q_y=I$ |
-| $\mathrm{Sd}_\alpha=-\exp(\,i\alpha\lvert x\rvert)/(4\pi\lvert x\rvert)$ | Outgoing Helmholtz fundamental solution |
+| $\mathrm{Sd}_\alpha=-\exp(i\theta_{\mathrm{shf}})e^{-\kappa_{\mathrm{dmp}}\lvert x\rvert}/(4\pi\lvert x\rvert)$ | Outgoing Helmholtz fundamental solution |
 | $\mathcal{V}_{\mathrm{vek},\pm\alpha}=-(D_3\mp\alpha)\mathrm{Sd}_\alpha$ | Fundamental solution of $D_3\pm\alpha$ |
 | $\mathcal M_{\mathrm{maxw}}$ | Maxwell–Cauchy kernel, the rotation of $\mathrm{diag}(\mathcal{V}_{\mathrm{vek},\alpha},\mathcal{V}_{\mathrm{vek},-\alpha})$ |
 | $\mathcal{V}_{\mathrm{vek},N},\mathcal{T}_N$ | Cauchy-type and Teodorescu-type operators of the Maxwell theory |

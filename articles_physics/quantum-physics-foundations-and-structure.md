@@ -265,7 +265,7 @@ $$
 |\tilde{Ξ}(r'_t)\rangle = U(r'_t, r'_{t,0})\, |\tilde{Ξ}(r'_{t,0})\rangle,
 $$
 
-with $U(r'_t, r'_{t,0}) = \exp\left(-\frac{i}{\hbar\,c}H(r'_t - r'_{t,0})\right)$ for a time-independent Hamiltonian.
+with $U(r'_t, r'_{t,0}) = \exp(-i\theta_{\mathrm{prp}}H)$, where the propagation angle $\theta_{\mathrm{prp}}=(r'_t-r'_{t,0})/(\hbar\,c)$ is real because the two times and $\hbar$ are real, for a time-independent Hamiltonian.
 
 For a density matrix $\rho(r'_t)$, the evolution is given by the **von Neumann equation**:
 

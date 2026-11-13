@@ -28,7 +28,7 @@ with $a'_t$ and $\vec A$ real, so that $\tilde A_\Phi$ is an element of the mate
 
 *Second, the vorticity becomes the field strength.* Because the mechanical one-form is a gradient plus a potential, its exterior derivative is the potential's alone, and that is $ϙF$. Everything the free article proved about the vanishing of $\omega$ survives as the statement $\vec E=\vec B=0$.
 
-*Third, the force becomes the Lorentz force and the quantum force stays.* The gradient of the coupled mass shell gives the free article's acceleration law with one term added, and the added term is $ϙ(\vec E+\vec v\times\vec B)$ in the spatial slots. The quantum potential is in the equation exactly as it was, because it depends on $r$ and its curvature and on nothing else.
+*Third, the force becomes the Lorentz force and the quantum force stays.* The gradient of the coupled mass shell gives the free article's acceleration law with one term added, and the added term is $-ϙ(\vec E+\vec v\times\vec B)$ in the spatial slots. The quantum potential is in the equation exactly as it was, because it depends on $r$ and its curvature and on nothing else.
 
 **What is not here.** No new solution, no new prediction, no new particle. The article's subject is the fluid reading of the standard minimally coupled scalar field, and its work is to say which of the free article's properties are properties of the scalar field and which are properties of the connection it is coupled to. The answer is short: the irrotationality and the gauge non-invariance of the velocity are the connection's, and the density, the quantum stress, the absence of an equation of state and the nodal set are the field's.
 
@@ -130,6 +130,8 @@ The first bracket vanishes because the action is a function and not a one-form, 
 
 **The third row is the article's sharpest single statement about the rest of the block.** The spin companion proves that its *vorticity proper* — the part that annihilates the velocity — is rank two for every solution, a two-form on the three dimensions of the rest space, and that only its *raw* derivative reaches rank four, and only through the acceleration. **The scalar fluid's vorticity is the field strength itself.** It is rank four wherever $\vec E\cdot\vec B\ne0$, with no acceleration and no frame, and its rank is a property of the connection rather than of the flow. So the two fluids reach the rank-four row of [The Clebsch Potentials and the Rank of the Vorticity](the-clebsch-potentials-and-the-rank-of-the-vorticity.html) by different routes, and only one of them reaches it with its vorticity.
 
+**The rung below states the same identity with no qualifier and with a lower rank.** [The Charged Schrödinger Fluid](the-charged-schrodinger-fluid.html) has $\nabla\times\vec v=ϙ\vec B/m$ exactly, because its velocity is a three-velocity and not a normalised four-vector, and there the rank is two for every field: a non-relativistic velocity has no time component, so the electric half of $F$ has nowhere to enter the vorticity. The two statements together measure what the second order of the equation adds — the normalisation of the velocity and the mixing of $\vec E$ and $\vec B$ — and both are absent one rung down.
+
 **What the vorticity is not, in this fluid.** It is not a dynamical variable: it is a function of the connection and of nothing else, and the fluid carries no vorticity equation, no Helmholtz transport and no conserved helicity. It is also not a spin, because the scalar sector has no spin: the word's last factor is the branch, and a branch is not an orientation.
 
 ## The Circulation
@@ -168,12 +170,12 @@ whose spatial slots are the display a reader expects:
 
 $$
 \frac{\mathrm{d}\vec p^{\mathrm{mech}}}{\mathrm{d}t}
-=ϙ\bigl(\vec E+\vec v\times\vec B\bigr)-\gamma^{-1}\nabla Q_{\mathrm{qnt}},
+=-ϙ\bigl(\vec E+\vec v\times\vec B\bigr)-\gamma^{-1}\nabla Q_{\mathrm{qnt}},
 \qquad
 \vec p^{\mathrm{mech}}=\vec p+ϙ\vec A .
 $$
 
-**The sign of the four-vector form is the metric's and the spatial form is the check.** With a lower index, the Lorentz term is $-ϙF_{\mu\nu}V^{\nu}$, whose spatial slots are $+ϙE_i\gamma+ϙ(\vec v\times\vec B)_i\gamma$; dividing by the $\gamma$ that converts $\mathrm{d}/\mathrm{d}\tau$ to $\mathrm{d}/\mathrm{d}t$ leaves the display above with both terms at first order in $\gamma$. The free article's $-ϙ\to0$ case is its own acceleration law, term for term.
+**The sign of the four-vector form is the metric's and the spatial form is the check.** With a lower index, the Lorentz term is $-ϙF_{\mu\nu}V^{\nu}$, whose spatial slots are $-ϙE_i\gamma-ϙ(\vec v\times\vec B)_i\gamma$; dividing by the $\gamma$ that converts $\mathrm{d}/\mathrm{d}\tau$ to $\mathrm{d}/\mathrm{d}t$ leaves the display above with both of its sub-terms at order zero in $\gamma$. **With $ϙ$ the negative of the electric charge the display reads $q(\vec E+\vec v\times\vec B)-\gamma^{-1}\nabla Q_{\mathrm{qnt}}$**, which is the standard force on a charge $q$: the sign is the coupling's, and the mass shell is what fixes it, because the potential energy is $-ϙ\varphi$. The free article's $-ϙ\to0$ case is its own acceleration law, term for term.
 
 **The check was carried out symbolically and it is exact.** Taking an arbitrary action $S$ and an arbitrary potential $A_\mu$ in one time and one space dimension, defining $Q_{\mathrm{qnt}}$ by the mass shell above and $V=\tilde P^{\mathrm{mech}}/m$, the identity
 
@@ -228,7 +230,7 @@ and the third member is not a condition on the flow alone: **the flow and the co
 
 ## The Three Charged Fluids
 
-**The three charged articles can be put side by side, and the table is the shortest statement of what the charge does to each.** The table is the same in all three; what changes from one to the next is which column is the article's own.
+**The three relativistic charged articles can be put side by side, and the table is the shortest statement of what the charge does to each.** The table is the same in all three; what changes from one to the next is which column is the article's own. **The block has a fourth charged fluid at the rung below**, [The Charged Schrödinger Fluid](the-charged-schrodinger-fluid.html), and it differs from the charged scalar column in two rows only: its velocity is a three-vector and not a four-vector, so the unit row does not apply to it, and its vorticity is a three-vector curl, so its rank is $2$ wherever the field is present and never $4$.
 
 | | charged scalar | charged spin | charged vector |
 | --- | --- | --- | --- |
@@ -264,7 +266,7 @@ and the third member is not a condition on the flow alone: **the flow and the co
 | charged spin | eight parameters | the connection, and a closure of the frame's transport | a charged Cosserat medium |
 | charged vector | the same eight | the connection, which is the field itself | a self-acting compressible medium |
 
-**The free correspondence's three kinds of extra structure were the three ways a medium exceeds a dust; the charged correspondence's third column names what exceeds the dust now: a field.** That is the sense in which the charge does not add a fourth fluid but adds a fourth kind of datum, and the table's second row is this article's.
+**The free correspondence's three kinds of extra structure were the three ways a medium exceeds a dust; the charged correspondence's third column names what exceeds the dust now: a field.** That is the sense in which the charge adds no fluid of a fourth kind but adds a fourth kind of datum, and the table's first row is this article's.
 
 **What the correspondence supports and what it does not.** It supports the claim that the coupled Klein–Gordon equation is the equation of motion of a recognizable classical medium, and it supports the twelve properties of §*The Properties, Listed* item by item. It does not support the claim that the charged fluid is a superfluid, that its vorticity is a dynamical variable, or that its density is positive definite: the first is refused in §*The Circulation*, the second in §*The Vorticity*, and the third is the free article's defect, which the charge moves and does not repair.
 
@@ -288,7 +290,7 @@ The density is $r^{2}$ and the conserved density is the mechanical phase rate ti
 
 The vorticity is $ϙF/m$ exactly, so the fluid is irrotational exactly where the field strength vanishes. Its rank is $0$, $2$ or $4$, and four exactly where $\vec E\cdot\vec B\ne0$, which is the rank no free fluid of the block reaches with its vorticity proper. The circulation is $2\pi\hbar n+ϙ\Phi_B$, and the flux term survives where the field strength vanishes on the loop.
 
-The force is the Lorentz force plus the free quantum gradient, $\mathrm{d}\vec p^{\mathrm{mech}}/\mathrm{d}t=ϙ(\vec E+\vec v\times\vec B)-\gamma^{-1}\nabla Q_{\mathrm{qnt}}$, and it comes from the one gradient of the coupled mass shell. The quantum potential, the Korteweg stress and the absence of an equation of state are untouched, because the field is external and the amplitude is untouched.
+The force is the Lorentz force plus the free quantum gradient, $\mathrm{d}\vec p^{\mathrm{mech}}/\mathrm{d}t=-ϙ(\vec E+\vec v\times\vec B)-\gamma^{-1}\nabla Q_{\mathrm{qnt}}$, and it comes from the one gradient of the coupled mass shell. The quantum potential, the Korteweg stress and the absence of an equation of state are untouched, because the field is external and the amplitude is untouched.
 
 The charge-sign boundary moves with the potential at $|ϙca'_t|=|E|$ and is gauge invariant, and the number density's sign never moves. The degenerate set is $r=0$, as it was. The reverse map's domain is now a set of triples — density, action, connection — and it is well defined on gauge orbits rather than on triples.
 

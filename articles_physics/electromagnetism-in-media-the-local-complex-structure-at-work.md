@@ -314,12 +314,12 @@ on the propagating branch, with $k_\Phi^{\tau}=k_\Phi/(1-\tau k_\Phi\beta)$; in 
 
 **The fundamental solution and the causality principle.** The source constructs the fundamental solution of $\mathcal{M}$ using quaternionic analysis. Writing
 $$
-\mathrm{Sd}_\alpha(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=-\frac{\exp(i\alpha|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|)}{4\pi|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|},
+\mathrm{Sd}_\alpha(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=-\frac{\exp(i\theta_{\mathrm{shf}})e^{-\kappa_{\mathrm{dmp}}\lvert r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\rvert}}{4\pi|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|},
 \qquad
 V_{\mathrm{vek},\alpha}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=-\mathrm{grad}\,\mathrm{Sd}_\alpha(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)+\alpha\,\mathrm{Sd}_\alpha(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)
 =\left(\alpha+\frac{r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z}{|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^2}-\frac{i\alpha\,(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}{|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|}\right)\mathrm{Sd}_\alpha(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z),
 $$
-the object $V_{\mathrm{vek},\alpha}$ is a fundamental solution of the shifted operator in the source's own normalisation, $(D+\alpha)V_{\mathrm{vek},\alpha}=\delta$, and it satisfies at infinity the radiation condition
+the complex shift is split as $\alpha\,\lvert r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\rvert=\theta_{\mathrm{shf}}+i\kappa_{\mathrm{dmp}}\lvert r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\rvert$, with the shift angle $\theta_{\mathrm{shf}}=\operatorname{Re}\alpha\,\lvert\vec r\rvert$ and the decay rate $\kappa_{\mathrm{dmp}}=\operatorname{Im}\alpha$, both real because the shift has a real and an imaginary part; the object $V_{\mathrm{vek},\alpha}$ is a fundamental solution of the shifted operator in the source's own normalisation, $(D+\alpha)V_{\mathrm{vek},\alpha}=\delta$, and it satisfies at infinity the radiation condition
 $$
 \left(1+\frac{i(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}{|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|}\right)V_{\mathrm{vek},\alpha}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=o\!\left(\frac{1}{|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|}\right),
 $$
@@ -684,7 +684,7 @@ The authors remark that it is not clear how to obtain this result directly for t
 $$
 \mathcal{K}_{\pm\alpha}=-(D\mp\alpha)\,\mathrm{Sd}_{\pm\alpha},
 \qquad
-\mathrm{Sd}_\alpha=-\frac{\exp(i\alpha|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|)}{4\pi|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|},
+\mathrm{Sd}_\alpha=-\frac{\exp(i\theta_{\mathrm{shf}})e^{-\kappa_{\mathrm{dmp}}\lvert r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\rvert}}{4\pi|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|},
 $$
 
 minus the first-order operator applied to the outgoing Helmholtz kernel of that same operator. The formula obtained above is the same display,

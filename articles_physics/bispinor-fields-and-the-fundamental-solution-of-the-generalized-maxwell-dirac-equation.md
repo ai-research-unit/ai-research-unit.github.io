@@ -93,7 +93,7 @@ $$
 u = \exp(-m\tau)v , \quad \Box_{\text{s}}v = 0 .
 $$
 
-For **real** $m$ the weight is a genuine exponential in $\tau$; for the corpus's real $\kappa = \rho$, that is for the source's imaginary $m = i\rho$, it is a phase $\exp(-i\rho\tau)$ and the operator is the one whose symbol the d'Alembertian article evaluated. The same identity applied to the Green's function is the sharp-support statement of the next section.
+For **real** $m$ the weight is a genuine exponential in $\tau$; for the corpus's real $\kappa = \rho$, that is for the source's imaginary $m = i\rho$, it is a phase $\exp(-i\theta_{\mathrm{rpt}})$, with the kernel angle $\theta_{\mathrm{rpt}}=\rho\tau$ real because the kernel parameter and the time are real, and the operator is the one whose symbol the d'Alembertian article evaluated. The same identity applied to the Green's function is the sharp-support statement of the next section.
 
 ## The Fundamental Solution of the KGFSh Operator
 
@@ -108,7 +108,7 @@ $$
 
 whose fundamental solution is $\mathcal{F}_\tau[\tilde{Ξ}_{m}] = \frac{1}{4\pi R}\bigl(a\exp(-kR) + (1-a)\exp(kR)\bigr)$ with $R = |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|$ and $a$ an arbitrary constant. That kernel was verified: the ball integral of $(\Delta_\Phi + k^2)$ applied to $-\frac{1}{4\pi R}\exp(\pm ikR)$ is $+1$ for the two signs and two values of $k$, which is the coefficient of $\delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$.
 
-The inverse transform then fixes the support, and this is the source's real result. Since the inverse transform of $\exp(\pm i\omega R)$ is $\delta(\tau \mp R)$, the two terms are supported on the two light cones and the assembled fundamental solution is
+The inverse transform then fixes the support, and this is the source's real result. Since the inverse transform of $\exp(\pm i\theta_{\mathrm{omr}})$, with the omega-radius angle $\theta_{\mathrm{omr}}=\omega R$ real because a frequency and a length are real, is $\delta(\tau \mp R)$, the two terms are supported on the two light cones and the assembled fundamental solution is
 
 $$
 \tilde{Ξ}_{m}(\tau,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)
@@ -158,7 +158,7 @@ The d'Alembertian article states the same dichotomy from the corpus's side in th
 For the corpus's real $\kappa = \rho$, that is for the source's $m = i\rho$, the homogeneous solutions not only exist but are the source's producing family,
 
 $$
-\tilde{Ξ}_{\rho}(\tau,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \exp(-i\rho\tau)\int_{\mathbb{R}^3} f(\vec\zeta)\,\exp(i(\vec\zeta\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) \pm |\vec\zeta|\tau))\,d^3\zeta ,
+\tilde{Ξ}_{\rho}(\tau,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \exp(-i\theta_{\mathrm{rpt}})\int_{\mathbb{R}^3} f(\vec\zeta)\,\exp(i(\vec\zeta\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) \pm |\vec\zeta|\tau))\,d^3\zeta ,
 \qquad f \in L^1(\mathbb{R}^3),
 $$
 

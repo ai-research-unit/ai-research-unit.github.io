@@ -171,11 +171,11 @@ with reason $\exp(\mp 2\pi \vec k_\Phi r'_t) = \exp\bigl(\mp 2\pi|\vec k_\Phi|r'
 Because $Ξ$ is not an $L^1$ object — the point taken up in *What Is Verified and What Is Not* — the source defines the **parabolic Teodorescu transform** directly from the multiplier:
 
 $$
-L_{\mathcal{C}}R_{\pm}[w](r_x,r'_t) := \int_0^{r'_{t}}\int_{\mathbb{R}^3} \exp\bigl(2\pi i\langle r_x,\vec k_\Phi\rangle\bigr) \exp\bigl(\mp 2\pi (r'_t-s) \vec k_\Phi\bigr) \mathcal{F}(w)(\vec k_\Phi,s)\,d\vec k_\Phi\,ds,
+L_{\mathcal{C}}R_{\pm}[w](r_x,r'_t) := \int_0^{r'_{t}}\int_{\mathbb{R}^3} \exp\bigl(i\theta_{\mathrm{fou}}\bigr) \exp\bigl(\mp 2\pi (r'_t-s) \vec k_\Phi\bigr) \mathcal{F}(w)(\vec k_\Phi,s)\,d\vec k_\Phi\,ds,
 \tag{10}
 $$
 
-for $(r_x,r'_t) \in \mathbb{R}^3 \times (0,\infty)$, with $\mathcal{C} = \Omega \times (0,\infty)$ and $w$ extended by zero outside $\Omega$. The well-definedness argument (the source's Proposition 9) is the unimodularity of (9): for $0 < s < r'_t$, the modulus of the kernel is $1$, so
+for $(r_x,r'_t) \in \mathbb{R}^3 \times (0,\infty)$, with the Fourier angle $\theta_{\mathrm{fou}}=2\pi\langle r_x,\vec k_\Phi\rangle$ real because the coordinate and the wave number are real, $\mathcal{C} = \Omega \times (0,\infty)$ and $w$ extended by zero outside $\Omega$. The well-definedness argument (the source's Proposition 9) is the unimodularity of (9): for $0 < s < r'_t$, the modulus of the kernel is $1$, so
 
 $$
 \bigl|\exp(\mp 2\pi(r'_t-s)\vec k_\Phi)\bigr|^2 \bigl|\mathcal{F}(w)(\vec k_\Phi,s)\bigr|^2 = \bigl|\mathcal{F}(w)(\vec k_\Phi,s)\bigr|^2,
@@ -262,7 +262,7 @@ a **purely vectorial** solution of (13), whose real part is the electric field $
 The source repeats the analysis for the slightly perturbed operator $D \pm i\lambda\partial/\partial r'_t$ with $\lambda \in \mathbb{R}$, whose kernel is characterised by (4) with $\partial/\partial r'_t$ replaced by $\lambda\partial/\partial r'_t$ (its Corollary 14) and whose right inverse is the $\lambda$-scaled transform
 
 $$
-L_{\mathcal{C}}R_{\pm,\lambda}[w](r_x,r'_t) := \int_0^{r'_{t}}\int_{\mathbb{R}^3} \exp\bigl(2\pi i\langle r_x,\vec k_\Phi\rangle\bigr) \exp\bigl(\mp 2\pi\lambda^{-1}(r'_t-s)\vec k_\Phi\bigr) \mathcal{F}(w)(\vec k_\Phi,s)\,d\vec k_\Phi\,ds,
+L_{\mathcal{C}}R_{\pm,\lambda}[w](r_x,r'_t) := \int_0^{r'_{t}}\int_{\mathbb{R}^3} \exp\bigl(i\theta_{\mathrm{fou}}\bigr) \exp\bigl(\mp 2\pi\lambda^{-1}(r'_t-s)\vec k_\Phi\bigr) \mathcal{F}(w)(\vec k_\Phi,s)\,d\vec k_\Phi\,ds,
 \tag{16}
 $$
 

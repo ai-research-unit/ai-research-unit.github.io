@@ -177,10 +177,10 @@ The connection with the subluminal family is that the free stationary field $F_0
 The same Hertz-potential device produces **superluminal** solutions. The scalar seed is taken from the family of **X-waves**,
 
 $$
-Ξ_{X_n}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \exp(in\theta_{\mathrm{azm}})\int_0^\infty B(k)\,J_n(k\rho\sin\theta_{\mathrm{axc}})\,\exp(-k[a_0-i(r_z\cos\theta_{\mathrm{axc}}-r'_t)])\,dk,
+Ξ_{X_n}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \exp(in\theta_{\mathrm{azm}})\int_0^\infty B(k)\,J_n(k\rho\sin\theta_{\mathrm{axc}})\,\exp(i\theta_{\mathrm{axw}})\exp(-\kappa_{\mathrm{dmp}})\,dk,
 $$
 
-with $\theta_{\mathrm{axc}}$ the **axicon angle** and $J_n$ the Bessel function. With $B(k)=a_0$ the integral is elementary, and the source's closed form is
+with $\theta_{\mathrm{axc}}$ the **axicon angle** and $J_n$ the Bessel function. The exponent is one phase beside one real decay: $\theta_{\mathrm{axw}}:=k(r_z\cos\theta_{\mathrm{axc}}-r'_t)$ is real because the wave number, the two coordinates and the retarded time are real, and $\kappa_{\mathrm{dmp}}:=k a_0$ is real because $k$ and the real constant $a_0$ are. With $B(k)=a_0$ the integral is elementary, and the source's closed form is
 
 $$
 Ξ_{XBB_n}=a_0\,\frac{(\rho\sin\theta_{\mathrm{axc}})^n e^{in\theta_{\mathrm{azm}}}}{\sqrt M\left(\tau+\sqrt M\right)^n},\qquad M=(\rho\sin\theta_{\mathrm{axc}})^2+\tau^2,\qquad \tau=a_0-i(r_z\cos\theta_{\mathrm{axc}}-r'_t).

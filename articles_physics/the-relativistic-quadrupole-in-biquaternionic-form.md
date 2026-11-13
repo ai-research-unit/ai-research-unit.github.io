@@ -82,10 +82,10 @@ with $\tilde{J}_{\Phi} = ic\rho\,e_t + \vec J\in\mathbb{B}_{\Phi}$ the four-curr
 
 For a source with a single frequency $\omega$, the current is $\vec J(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z,r'_t) = \vec J(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z)\exp(-i\theta_{\mathrm{pwt}})$, and in the far zone $r = |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|\to\infty$ the retarded integral reduces to
 
-Throughout, $\theta_{\mathrm{pwt}}:=\omega r'_t/c$ is the plane-wave time angle: $\omega$ is real for a monochromatic wave, so the factor $\exp(-i\theta_{\mathrm{pwt}})$ is a phase of modulus one and it is the time part of the plane-wave angle of the full wave form.
+The full phase of the outgoing wave is the plane-wave angle $\theta_{\mathrm{pwp}}=k_{t}^{\prime}r-\omega r'_t/c$, real because the wave number, the radius and the time are real. Throughout, $\theta_{\mathrm{pwt}}:=\omega r'_t/c$ is the plane-wave time angle: $\omega$ is real for a monochromatic wave, so the factor $\exp(-i\theta_{\mathrm{pwt}})$ is a phase of modulus one and it is the time part of the plane-wave angle of the full wave form.
 
 $$
-\vec A(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \frac{\mu_0}{4\pi}\,\frac{\exp(i(k_{t}^{\prime}r-\omega r'_t/c))}{r}\,\vec F(\vec u) ,
+\vec A(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \frac{\mu_0}{4\pi}\,\frac{\exp(i\theta_{\mathrm{pwp}})}{r}\,\vec F(\vec u) ,
 \qquad
 \vec F(\vec u) = \int \vec J(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z)\,\exp(-ik_{t}^{\prime}\vec u\cdot(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z))\,d^3r_2 ,
 $$
@@ -249,7 +249,7 @@ This field is not a radiation field: it has no $r^{-1}$ part, and its Poynting f
 In the far zone the electric quadrupole produces a genuine radiation field. From the radiation vector computed above, $\vec F_{E2} = -\tfrac{k_{t}^{\prime}\omega}{6}\vec{\mathcal{Q}}(\vec u)$, and $\vec B = ik_{t}^{\prime}\,\vec u\times\vec A$ in the radiation zone, one obtains
 
 $$
-\vec B_{E2}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = -\frac{\mu_0}{4\pi}\,\frac{\exp(i(k_{t}^{\prime}r-\omega r'_t/c))}{r}\,\frac{ik_{t}^{\prime\,2}\omega}{6}\,\vec u\times\vec{\mathcal{Q}}(\vec u) .
+\vec B_{E2}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = -\frac{\mu_0}{4\pi}\,\frac{\exp(i\theta_{\mathrm{pwp}})}{r}\,\frac{ik_{t}^{\prime\,2}\omega}{6}\,\vec u\times\vec{\mathcal{Q}}(\vec u) .
 $$
 
 The field is transverse, falls off as $r^{-1}$, and carries the angular dependence of degree two through the vector $\vec{\mathcal{Q}}(\vec u)$. The time-averaged angular distribution follows from the Poynting vector $\langle\vec S\rangle = \tfrac{r^2c}{2\mu_0}|\vec B|^2\vec u$:

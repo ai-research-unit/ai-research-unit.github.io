@@ -291,7 +291,7 @@ The accounting explains why the Dirac fluid needs one more equation than the sca
 
 ## The Three Fluids
 
-**The three fluid articles of the block can be put side by side, and the table is the shortest statement of what each field's fluid is.** The table is the same in all three articles; what changes from one to the next is which column is the article's own.
+**The three relativistic fluid articles of the block can be put side by side, and the table is the shortest statement of what each field's fluid is.** The table is the same in all three articles; what changes from one to the next is which column is the article's own. **The block's fourth free fluid is the first-order rung**, [The Schrödinger Fluid](the-schrodinger-fluid.html), and it is the scalar column with $\gamma\to1$: the same word, the same two parameters, the same two real equations, the same gradient velocity and the same zero vorticity, with the two densities collapsed into one and the mass shell replaced by a rate for the phase.
 
 | | Klein–Gordon | Proca | Dirac |
 | --- | --- | --- | --- |

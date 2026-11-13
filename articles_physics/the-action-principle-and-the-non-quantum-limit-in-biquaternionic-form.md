@@ -1,4 +1,4 @@
-# __The Action Principle and the Classical Limit in Biquaternionic Form__
+# __The Action Principle and the Non-Quantum Limit in Biquaternionic Form__
 
 ## Introduction
 

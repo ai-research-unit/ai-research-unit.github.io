@@ -26,7 +26,7 @@ Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 Write the stationary state as
 
 $$
-\tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = A(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\;\exp(\,\frac{i\,S\,(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}{\hbar})\;\xi,
+\tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = A(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\;\exp(i\theta_{\mathrm{act}})\;\xi,\qquad \theta_{\mathrm{act}}=\frac{S(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}{\hbar}\in\mathbb{R},
 \qquad
 A(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) > 0, \quad S(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) \in  \mathbb{R}, \quad \xi \in  \mathbb{B}\tilde\Pi,
 $$

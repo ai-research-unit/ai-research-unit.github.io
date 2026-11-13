@@ -143,12 +143,12 @@ The $*$-unitary factor splits into that phase and a real rotor,
 $$
 \tilde J_{\mathrm{opt},0}=\exp(i\theta_{\mathrm{pha}})\tilde u_{\mathrm r},\qquad
 \theta_{\mathrm{pha}}=\tfrac12(\theta_{\mathrm{pha},1}+\theta_{\mathrm{pha},2}),\qquad
-\tilde u_{\mathrm r}=\cos\frac{\theta_{\mathrm{rat}}}{2}+\sin\frac{\theta_{\mathrm{rat}}}{2}\,\vec u_U .
+\tilde u_{\mathrm r}=\cos\theta_{\mathrm{rte}}+\sin\theta_{\mathrm{rte}}\,\vec u_U,\qquad \theta_{\mathrm{rte}}:=\tfrac12\,\theta_{\mathrm{rat}} .
 $$
 
-Here $\theta_{\mathrm{pha}}$ is the phase of the polar form: it is the argument of the central complex scalar, a real angle taken modulo a full turn, and the exponential that carries it is $\exp(i\theta_{\mathrm{pha}})$.
+Here $\theta_{\mathrm{pha}}$ is the phase of the polar form: it is the argument of the central complex scalar, a real angle taken modulo a full turn, and the exponential that carries it is $\exp(i\theta_{\mathrm{pha}})$. The angle $\theta_{\mathrm{rte}}$ is the exponent angle of the rotor. It is real because the retardance is real and the divisor is the fixed number two, so halving a real angle cannot leave the real line.
 
-The rotor is a real quaternion of unit norm, and its eigenvalues are $\exp(\pm i\theta_{\mathrm{rat}}/2)$. **The retardance is twice the exponent angle of the rotor**, and the rotor is the half-angle object that the double cover of the rotation group requires. A rotor with exponent angle $\pi/2$ is a retardance of $\pi$, not $\pi/2$.
+The rotor is a real quaternion of unit norm, and its eigenvalues are $\exp(\pm i\theta_{\mathrm{rte}})$. **The retardance is twice the exponent angle of the rotor**, and the rotor is the half-angle object that the double cover of the rotation group requires. A rotor with exponent angle $\pi/2$ is a retardance of $\pi$, not $\pi/2$.
 
 **The boundary.** The retardance is defined modulo $2\pi$ and its sign depends on the labelling of the two axes. The $*$-unitary factor of a polarizer is a partial isometry, not a $*$-unitary element, so a polarizer has no retardance: one of its two eigenvalues is zero and the phase difference is not defined.
 
@@ -276,7 +276,8 @@ The polarizer is the boundary case. It is a rank-one element, hence a zero divis
 | $\theta_{\mathrm{rpd}}$ | the rapidity of the amplitude, $\ln(T_1/T_2)$ |
 | $\theta_{\mathrm{rat}}$ | the retardance, the phase difference of the $*$-unitary factor |
 | $\theta_{\mathrm{pha}}$ | the central phase of the $*$-unitary factor |
-| $\tilde u_{\mathrm r}$ | the real rotor of the retarder, angle $\theta_{\mathrm{rat}}/2$ |
+| $\tilde u_{\mathrm r}$ | the real rotor of the retarder, angle $\theta_{\mathrm{rte}}$ |
+| $\theta_{\mathrm{rte}}:=\theta_{\mathrm{rat}}/2$ | the exponent angle of the rotor, half the retardance |
 | $\tilde\Pi_\pm(\vec u)$ | the spectral projectors $\tfrac12(e_t\pm i\vec u)$; $\tilde\Pi_+$ is the ideal polarizer |
 | $\langle\tilde J_{\mathrm{opt}}\rangle_{\natural}$ | the biquaternion norm, equal to $\det\mathsf{J}$ |
 

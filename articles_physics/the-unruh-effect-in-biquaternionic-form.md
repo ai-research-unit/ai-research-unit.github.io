@@ -149,7 +149,7 @@ $$
 where $H_{\mathrm{modular,boost}}$ is the generator of the boosts that preserve $R$, normalized so that $\zeta=\partial/\partial\eta$. The modular flow is
 
 $$
-\alpha_s(\tilde Q_2) = \mathcal{M}_{\mathrm{mod}}^{is}\,\tilde Q_2\,\mathcal{M}_{\mathrm{mod}}^{-is} = \exp(-2\pi i sH_{\mathrm{modular,boost}})\,\tilde Q_2\,\exp(2\pi i sH_{\mathrm{modular,boost}}),
+\alpha_s(\tilde Q_2) = \mathcal{M}_{\mathrm{mod}}^{is}\,\tilde Q_2\,\mathcal{M}_{\mathrm{mod}}^{-is} = \exp(-i\theta_{\mathrm{unr}}\tilde H_{\mathrm{modular,boost}})\,\tilde Q_2\,\exp(i\theta_{\mathrm{unr}}\tilde H_{\mathrm{modular,boost}}),\qquad \theta_{\mathrm{unr}}=2\pi s\in\mathbb{R},
 $$
 
 which is the boost by rapidity $2\pi s$. This is established physics and is imported here; the article does not derive it, and says so. Its content for us is that the abstract modular flow of the parent acquires a **geometric realization**: it is the boost flow, and the modular parameter $s$ is the Rindler time measured in units of $2\pi$.

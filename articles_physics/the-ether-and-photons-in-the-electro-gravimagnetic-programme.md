@@ -190,7 +190,7 @@ $$
 $$
 
 and because of the factorisation every solution of it is $\vec\nabla^{+}_{\Phi,\omega}$ applied to a Helmholtz
-potential. Taking the plane potentials $\xi_{j} = \exp(\,i(\vec k_\Phi,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))\vec e_{j}$ with
+potential. Taking the plane potentials $\xi_{j} = \exp(i\theta_{\mathrm{spa}})\vec e_{j}$, with the spatial angle $\theta_{\mathrm{spa}}=(\vec k_\Phi,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ real because the wave vector and the position are real vectors, and with
 $\|\vec k_\Phi\| = \omega$ and $e_t = 1$, the programme's four modes are, in the corpus's
 notation and recomputed exactly,
 
@@ -201,7 +201,7 @@ $$
 \qquad j = 1,2,3\;}
 $$
 
-with $\xi = \exp(\,i(\vec k_\Phi,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$ and $\vec u_\Phi = \vec k_\Phi/\omega$. All four
+with $\xi = \exp(i\theta_{\mathrm{spa}})$ and $\vec u_\Phi = \vec k_\Phi/\omega$. All four
 satisfy the free equation, and their content differs in a way the programme reads as physics.
 
 - **The scalar-potential mode is longitudinal and has the two field vectors parallel.** For

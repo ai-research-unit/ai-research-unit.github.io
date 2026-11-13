@@ -41,9 +41,9 @@ The article proceeds as follows. The next section defines the connected function
 
 Write the functional integral with a source as in the previous article,
 $$
-Z[\tilde J_{\Phi}] = \int\mathcal{D}\tilde{Ξ}\; \exp(\,iS[\tilde{Ξ}]/\hbar+ \langle  \tilde J_{\Phi},\tilde{Ξ}\rangle),
+Z[\tilde J_{\Phi}] = \int\mathcal{D}\tilde{Ξ}\; \exp(\,i\theta_{\mathrm{act}}+i\theta_{\mathrm{src}}),\qquad \theta_{\mathrm{act}}:=\frac{\mathrm{Re}\,S[\tilde{Ξ}]}{\hbar},\quad \theta_{\mathrm{src}}:=\frac{\langle\tilde J_{\Phi},\tilde{Ξ}\rangle}{\hbar},
 $$
-with $\tilde J_{\Phi}$ valued in the module and the pairing as above. The connected functional is
+with $\tilde J_{\Phi}$ valued in the module and the pairing as above. The exponent holds two real angles, not one: $\theta_{\mathrm{act}}$ is the action over $\hbar$ and $\theta_{\mathrm{src}}$ is the source pairing over $\hbar$. Each is dimensionless because an action and a bilinear form are divided by the same $\hbar$, and each is real because the action and the form are real.
 $$
 W[\tilde J_{\Phi}] = -i\,\hbar\log  Z[\tilde J_{\Phi}].
 $$
@@ -252,7 +252,8 @@ Because a central kinetic operator does not mix the material and informational s
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\langle\tilde{Q},\tilde{Q}_1\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q}_1)$ | Real bilinear form; positive definite on the algebra, with the sectors orthogonal |
-| $Z[\tilde J_{\Phi}]=\int\mathcal{D}\tilde{Ξ}\,\exp(\frac{i\,S}{\hbar}+\langle\tilde J_{\Phi},\tilde{Ξ}\rangle)$ | Generating functional |
+| $Z[\tilde J_{\Phi}]=\int\mathcal{D}\tilde{Ξ}\,\exp(i\theta_{\mathrm{act}}+i\theta_{\mathrm{src}})$ | Generating functional |
+| $\theta_{\mathrm{act}}:=\mathrm{Re}\,S/\hbar$, $\theta_{\mathrm{src}}:=\langle\tilde J_{\Phi},\tilde{Ξ}\rangle/\hbar$ | The two real angles of the exponent |
 | $W[\tilde J_{\Phi}]=-i\,\hbar\log  Z[\tilde J_{\Phi}]$ | Connected generating functional |
 | $\tilde{Ξ}_{\mathrm{cl}}=\delta W/\delta\tilde J_{\Phi}$ | Classical field (module-valued) |
 | $\delta\tilde{Ξ}$ | Fluctuation about the classical field, $\tilde{Ξ}_{\mathrm{cl}}+\delta\tilde{Ξ}$ |
