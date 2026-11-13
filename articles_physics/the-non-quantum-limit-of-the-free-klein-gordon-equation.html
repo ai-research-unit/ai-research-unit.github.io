@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Non-Quantum Limit of the Free Klein–Gordon Equation — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-non-quantum-limit-of-the-free-kleingordon-equation"><strong>The Non-Quantum Limit of the Free Klein–Gordon Equation</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The limit, in one sentence.</strong> Write the field as an amplitude times a phase and let the phase's wave number grow against the length over which the amplitude varies; the phase then obeys the mass shell and the amplitude obeys a conservation law, and nothing else survives.</p>
+<p><strong>What the second order changes.</strong> The Schrödinger article's eikonal is an energy balance: one condition on the three-momentum. Here the eikonal is a normalisation: one condition on the four-momentum, and it says that the flow is a unit timelike vector. The classical object the limit produces is therefore not a particle with a given energy but a congruence of world lines with a given proper time, and that difference is the whole of what the second order adds.</p>
+<p><strong>The parameter is a different wave number.</strong> The amplitude is compared with the rest term $m^{2}c^{2}$, so the criterion is $\delta=1/(k_mL)$ with $k_m=mc/\hbar$ and $L$ the length over which the amplitude varies. It is the Compton wavelength over that length. The Schrödinger parameter $\epsilon=1/(k_\Phi L)$ is recovered on multiplying by $p/(mc)$, so the two agree only where the particle is ultrarelativistic.</p>
+<p><strong>What the article establishes, in five sentences.</strong> The pair is exact. The eikonal is $\langle\tilde\nabla_\Phi S_{\tilde\Xi}\rangle_{\natural}=-m^{2}c^{2}$, the mass shell read as a norm, and its characters are timelike straight lines. The transport equation is exact and is the conservation of a proper density carried by a unit flow. The eikonal has two sheets and the limit does not choose between them, so the charge defect survives the limit and is classical. For a massless field the eikonal is the zero-divisor cone.</p>
+<p><strong>What is not new.</strong> The relativistic Madelung pair is Takabayasi's and the mass shell is the parent's. Added here: the criterion with the rest wave number and its relation to the Schrödinger one, the norm reading of the mass shell as a normalisation rather than an energy balance, the measurement of the quantum potential as the failure of the flow to be unit, the two-sheet statement as a classical rather than a quantum defect, the massless case as the cone, and the non-commutativity of the two limits at the order of the discarded term.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is central; $\mathbb{B}_{C}$ is the centre, $\mathbb{B}_{H}$ the real-quaternion subspace, $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ the Hermitian and anti-Hermitian sectors. The d'Alembertian is $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$ with $r'_t=c\,t'$, so every temporal derivative is a derivative in a length. The four-momentum is $\tilde P_\Phi=i(E/c)e_t+\vec p$ with $\vec p=\nabla S_{\tilde\Xi}$ and $E=-c\,\partial S_{\tilde\Xi}/\partial r'_t$. The norm is $\langle A\rangle_{\natural}=AA^{\natural}$, which is $+|\vec a|^{2}$ on a real vector and $-(E/c)^{2}$ on the temporal slot $i(E/c)e_t$. The mass wave number is $k_m=mc/\hbar$.</p>
+<h2 id="the-word-and-the-pair">The Word and the Pair</h2>
+<p><strong>The field.</strong> On the central class the polar word collapses to three parameters,</p>
+<p>$$
+\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\,\varepsilon\,e_t ,
+\qquad
+r>0,
+\qquad
+\varepsilon=\pm1,
+\qquad
+S_{\tilde\Xi}=\hbar\,\theta_{\mathrm{pha}},
+$$</p>
+<p>with $r$ the amplitude, $\rho_{\mathrm{num}}=r^{2}$ the proper density and $\varepsilon$ the branch of the modulus. The angle is a coordinate and the sign is data.</p>
+<p><strong>The pair, exact and not an approximation.</strong> Substituting the word into $(\Box-k_m^{2})\Xi_t=0$ and separating the real from the imaginary part gives</p>
+<p>$$
+\left(\frac{\partial S_{\tilde\Xi}}{\partial r'_t}\right)^{2}-\lvert\nabla S_{\tilde\Xi}\rvert^{2}=m^{2}c^{2}-\hbar^{2}\frac{\Box_\Phi r}{r} ,
+\qquad
+\nabla\cdot\left(\rho_{\mathrm{num}}\nabla S_{\tilde\Xi}\right)-\frac{\partial}{\partial r'_t}\left(\rho_{\mathrm{num}}\frac{\partial S_{\tilde\Xi}}{\partial r'_t}\right)=0 .
+$$</p>
+<p>The first is the amplitude equation and the second the transport equation, and together they are equivalent to the equation for a field of this form, away from the nodal set.</p>
+<p><strong>On the four-momentum the first equation is a mass shell with a shift.</strong></p>
+<p>$$
+\frac{E^{2}}{c^{2}}-\lvert\vec p\rvert^{2}=m^{2}c^{2}+2mQ ,
+\qquad
+Q=-\frac{\hbar^{2}}{2m}\,\frac{\Box_\Phi r}{r} .
+$$</p>
+<p><strong>Three terms and their orders.</strong> The criterion sizes the shift against the rest term, and the rest term is the one the amplitude is compared with:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>object</th>
+<th>size</th>
+<th>survives the limit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\dfrac{E^{2}}{c^{2}}-\lvert\vec p\rvert^{2}$</td>
+<td>$m^{2}c^{2}$, order $1$ by definition</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$2mQ$</td>
+<td>$\hbar^{2}/(L^{2})$, order $\delta^{2}$</td>
+<td>no</td>
+</tr>
+<tr>
+<td>the transport equation</td>
+<td>exact, contains no $\hbar$</td>
+<td>yes, untouched</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The second row is the only thing the limit drops.</strong> The first row is kept because it is the statement the equation makes, and the third is kept because it never carried $\hbar$. A reader who drops both the shift and the transport equation has kept a normalisation and thrown away a conservation law, and has not taken this limit.</p>
+<h2 id="the-criterion-uses-the-rest-wave-number">The Criterion Uses the Rest Wave Number</h2>
+<p><strong>Where the parameter comes from.</strong> With $r$ varying over a length $L$, the shift is of size $\hbar^{2}/(L^{2})$ against $m^{2}c^{2}$, so the ratio is</p>
+<p>$$
+\frac{2m\lvert Q\rvert}{m^{2}c^{2}}=\frac{\hbar^{2}}{m^{2}c^{2}L^{2}}=\delta^{2},
+\qquad
+\delta=\frac{1}{k_mL}=\frac{\hbar}{mcL} .
+$$</p>
+<p><strong>This is the Compton wavelength over the amplitude's length.</strong> The limit is the statement $\delta\to0$, and the approximation is the statement that $\delta$ is below a stated size on a stated region.</p>
+<p><strong>The relation to the Schrödinger parameter is exact.</strong> With $\epsilon=1/(k_\Phi L)$ and $k_\Phi=\lvert\vec p\rvert/\hbar$,</p>
+<p>$$
+\frac{\delta}{\epsilon}=\frac{k_\Phi}{k_m}=\frac{\lvert\vec p\rvert}{mc},
+$$</p>
+<p>so the two parameters differ by the ratio of the momentum to the rest momentum. For an ultrarelativistic particle they agree; for a slow one the rest criterion is the weaker of the two, because the rest energy is the largest term in the equation and the shift is measured against it.</p>
+<p><strong>The same shift read against the kinetic energy.</strong> With $T_{\mathrm{kin}}=E-mc^{2}$,</p>
+<p>$$
+\frac{\lvert Q\rvert}{T_{\mathrm{kin}}}\sim\epsilon^{2},
+\qquad
+\frac{\lvert Q\rvert}{mc^{2}}=\frac{\delta^{2}}{2} .
+$$</p>
+<p><strong>The two ratios are the two readings of one number.</strong> The limit drops a term that is order $\delta^{2}$ against the rest energy and order $\epsilon^{2}$ against the kinetic energy, and no contradiction arises because $\delta=\epsilon\lvert\vec p\rvert/(mc)$.</p>
+<p><strong>A criterion of one shape, with the wave number of the surviving term.</strong> In the Schrödinger family the surviving term is the kinetic energy and the wave number is $k_\Phi$. Here the surviving term is the rest energy and the wave number is $k_m$. The criterion is always one over the wave number of the term the amplitude is compared with, multiplied by the amplitude's length; the family decides which wave number that is, and the definitions of <em>The Non-Quantum Limit of the Biquaternion Model</em> are unchanged by the choice.</p>
+<h2 id="the-eikonal-is-the-mass-shell">The Eikonal Is the Mass Shell</h2>
+<p><strong>Drop the shift.</strong></p>
+<p>$$
+\left(\frac{\partial S_{\tilde\Xi}}{\partial r'_t}\right)^{2}-\lvert\nabla S_{\tilde\Xi}\rvert^{2}=m^{2}c^{2} .
+$$</p>
+<p><strong>In the algebra it is a norm.</strong> With $\tilde\nabla_\Phi S_{\tilde\Xi}$ the phase-gradient four-vector, whose temporal slot is $i(E/c)$ and whose spatial slots are $\vec p$,</p>
+<p>$$
+\boxed{\ \langle\tilde\nabla_\Phi S_{\tilde\Xi}\rangle_{\natural}=-m^{2}c^{2}\ }
+$$</p>
+<p>because the temporal slot contributes $-(E/c)^{2}$ and the spatial slots contribute $+\lvert\vec p\rvert^{2}$. <strong>The eikonal is the mass shell, and the mass shell is a norm.</strong></p>
+<p><strong>What kind of statement that is.</strong> The Schrödinger eikonal is an energy balance: $\langle\vec\nabla_\Phi S\rangle_{\natural}/(2m)=E-V$, one condition on the three-momentum with the energy on the other side. The Klein–Gordon eikonal is a normalisation: one condition on the four-momentum, with no quantity on the other side but the mass. The first says how fast; the second says how long, and it says it by fixing the norm.</p>
+<p><strong>The reading of the norm as a normalisation of the flow.</strong> Divide by $m^{2}$:</p>
+<p>$$
+\langle\tilde V_\Phi\rangle_{\natural}=-c^{2},
+\qquad
+\tilde V_\Phi=\frac{\tilde\nabla_\Phi S_{\tilde\Xi}}{m}=\frac{\tilde P_\Phi}{m} .
+$$</p>
+<p>The flow's four-velocity is a unit timelike vector, future-directed on one sheet and past-directed on the other. <strong>The limit's classical object is a congruence of world lines of fixed proper time, and not a trajectory with a given energy.</strong></p>
+<p><strong>The quantum potential measures the failure of that normalisation.</strong> Restoring the shift,</p>
+<p>$$
+\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}+\frac{\hbar^{2}}{m^{2}}\,\frac{\Box_\Phi r}{r},
+$$</p>
+<p>so the flow is exactly unit only where $\Box_\Phi r=0$, and the amount by which it fails is $Q$. <strong>The quantum potential is the amount by which the classical reading of the flow as a congruence of unit world lines misses.</strong> That is the sharpest one-line statement of what the limit discards in this family, and it has no counterpart in the first-order case, where the flow's norm is not what the eikonal fixes.</p>
+<p><strong>The characters are dust.</strong> The characteristic system of $\langle\nabla S\rangle_{\natural}=-m^{2}c^{2}$ is $\dot{\vec r}=\vec p/m$ with $\vec p$ constant, so the rays are straight timelike lines and the flow is pressureless. The transport equation then says that the density is carried without compression along those lines. <strong>Relativistic dust is the classical limit of the free Klein–Gordon field</strong>, and it is dust and not a gas because the free eikonal has no force in it.</p>
+<p><strong>A plane wave is the case in which nothing is dropped.</strong> For $S_{\tilde\Xi}=\vec p\cdot\vec r-E\,r'_t/c$ with the mass shell exact, the amplitude is constant, $\Box_\Phi r=0$, and $\delta$ vanishes identically. The limit is again empty where it is exact, exactly as in the Schrödinger case: it acts only where the amplitude varies.</p>
+<h2 id="the-transport-is-exact">The Transport Is Exact</h2>
+<p><strong>It was never an expansion.</strong> $\nabla\cdot(\rho_{\mathrm{num}}\nabla S)-\partial_{r'_t}(\rho_{\mathrm{num}}\partial_{r'_t}S)=0$ contains no $\hbar$ and no $Q$, so the limit neither produces it nor spoils it. It is the divergence of the four-current</p>
+<p>$$
+\tilde J_\Phi=\rho_{\mathrm{num}}\tilde V_\Phi=\frac{\rho_{\mathrm{num}}}{m}\,\tilde P_\Phi ,
+$$</p>
+<p>and its content is one sentence: the proper density is carried by the unit flow, and the current is the density times the four-velocity.</p>
+<p><strong>Its temporal component is the charge and it is indefinite.</strong> $\rho_{\mathrm{chg}}=\rho_{\mathrm{num}}E/(mc^{2})$ has the sign of $E$, so the positive sheet carries positive charge and the negative sheet negative, with the same positive $r^{2}$ on both. <strong>The amplitude carries no sign anywhere</strong>, which is why the defect is one sign and not two.</p>
+<p><strong>The flow is irrotational off the nodes.</strong> The velocity is a gradient, so $\nabla\times\vec v=0$ wherever the action is twice differentiable, and the exception is a nodal line around which the action is multivalued. The limit inherits both statements unchanged, because neither contains the amplitude's length.</p>
+<h2 id="the-limit-does-not-choose-a-sheet">The Limit Does Not Choose a Sheet</h2>
+<p><strong>Two sheets and one equation.</strong> The eikonal $\langle\tilde P_\Phi\rangle_{\natural}=-m^{2}c^{2}$ is a two-sheeted hyperboloid in momentum space. Its two sheets are the two signs of $E$, and both solve it.</p>
+<p><strong>The limit keeps both.</strong> Dropping $Q$ does not select a sheet, because the shift it drops is even in $E$ and the two sheets are related by $S_{\tilde\Xi}\to-S_{\tilde\Xi}$ while $r$ is unchanged. So</p>
+<p>$$
+\lim\left(\text{positive sheet}\right)\ \text{and}\ \lim\left(\text{negative sheet}\right)
+$$</p>
+<p>are two dusts, with opposite charge densities and the same density, and both are classical.</p>
+<p><strong>What follows, and it is the article's sharpest negative statement.</strong> The indefinite charge is not a quantum defect that the classical limit removes; it is a <strong>classical</strong> defect of a second-order field, and it is visible in the limit as the existence of two classical dusts. A one-particle reading is not available in the limit either. What removes the second sheet is not a limit but a change of theory: second quantisation, where the two sheets become one field's particle and antiparticle.</p>
+<p><strong>The statement in the algebra's letters.</strong> The mass shell constrains the norm and not the sign of the time component. The norm is a quadratic form, so it cannot see a sign, and any statement that does must come from somewhere else — from the initial data, or from the coupling, or from the second-quantised theory. The corpus says this of the equation; the article says it of the limit, and the two statements are the same statement.</p>
+<h2 id="the-massless-case-the-eikonal-is-the-cone">The Massless Case: the Eikonal Is the Cone</h2>
+<p><strong>Set $m=0$.</strong> The equation is $\Box_\Phi\Xi_t=0$, the wave equation, and the amplitude equation loses its rest term:</p>
+<p>$$
+\left(\frac{\partial S}{\partial r'_t}\right)^{2}-\lvert\nabla S\rvert^{2}=-\hbar^{2}\frac{\Box_\Phi r}{r},
+\qquad
+\langle\tilde\nabla_\Phi S\rangle_{\natural}=\hbar^{2}\frac{\Box_\Phi r}{r} .
+$$</p>
+<p><strong>The limit is the vanishing of a norm.</strong></p>
+<p>$$
+\langle\tilde\nabla_\Phi S\rangle_{\natural}=0 .
+$$</p>
+<p><strong>That is the zero-divisor cone.</strong> A nonzero element whose norm vanishes is a zero divisor, so the eikonal of the massless field says that the phase-gradient four-vector is a zero divisor at every point. The light cone of the classical wave is the cone of the algebra, and no separate postulate is needed to identify them: the mass shell with $m=0$ <em>is</em> the cone.</p>
+<p><strong>This is the one case in which the limit lands on a locus the algebra already names.</strong> For $m\neq0$ the phase gradient is never on the cone, because its norm is fixed at $-m^{2}c^{2}$. For $m=0$ it is on the cone everywhere, and the classical characteristic surfaces of the wave equation are the surfaces the cone generates. <strong>The corpus defines the cone as the locus of the non-invertible elements; the massless limit identifies it as the locus of the lightlike momenta</strong>, and that identification is a result of the limit and not a definition.</p>
+<p><strong>What the quantum term does there.</strong> The shift is now the whole of the right side, so the exact statement is that the phase gradient's norm is $\hbar^{2}\Box r/r$ and not zero. The approximation sets it to zero, and $\delta$ does not exist because there is no $k_m$ to build it from; the criterion in the massless case is the Schrödinger one, $\epsilon=1/(k_\Phi L)$, since the surviving term is now the phase's own norm.</p>
+<h2 id="the-error">The Error</h2>
+<p><strong>The error is the shift, and its size is a function of position.</strong> With a planar Gaussian amplitude $r=\exp(-x^{2}/4\sigma^{2})$, static, and $\delta=1/(k_m\sigma)$,</p>
+<p>$$
+\Delta_\Phi r/r=\frac{x^{2}}{4\sigma^{4}}-\frac{1}{2\sigma^{2}},
+\qquad
+\frac{2\lvert Q\rvert}{m^{2}c^{2}}=\delta^{2}\left\lvert\frac{x^{2}}{4\sigma^{2}}-\frac{1}{2}\right\rvert .
+$$</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\lvert x\rvert/\sigma$</th>
+<th>$0$</th>
+<th>$1$</th>
+<th>$\sqrt{2}$</th>
+<th>$2$</th>
+<th>$3$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$2\lvert Q\rvert/(m^{2}c^{2})$ in units of $\delta^{2}$</td>
+<td>$0.500$</td>
+<td>$0.250$</td>
+<td>$0$</td>
+<td>$0.500$</td>
+<td>$1.750$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The numbers are the Schrödinger ones, and the parameter is not.</strong> The shape is the same because the amplitude equation is a second-order equation in both families; the wave number in $\delta$ is the rest one, so for a slow particle the region in which the approximation holds is larger than the Schrödinger region by $mc/\lvert\vec p\rvert$ in the length.</p>
+<p><strong>The ratio reaches one at $x\simeq2\sigma/\delta$ for every $\delta$.</strong> No value of the parameter makes the expansion uniform, and the limit is a statement about the equation while the approximation is a statement about a region of one solution.</p>
+<p><strong>What the limit does not commute with.</strong> Two plane waves are each semiclassical exactly, and their sum is not, because the envelope's wave number is the difference of theirs. So the limit does not distribute over superposition, for the same reason as in the first-order case and with the same consequence: it is not a map on the state space.</p>
+<h2 id="the-two-limits-and-their-order">The Two Limits and Their Order</h2>
+<p><strong>Two parameters, and a second limit that this article does not take.</strong> The nonrelativistic limit is $\beta=\lvert\vec v\rvert/c\to0$; it is the parent's, and it divides out the rest phase $S_{\tilde\Xi}=-mc\,r'_t+\sigma$ and drops $T_{\mathrm{kin}}^{2}/c^{2}$ against $T_{\mathrm{kin}}$. The limit of this article is $\delta\to0$. Both are needed to reach Newton, and the question is whether their order matters.</p>
+<p><strong>At leading order they commute.</strong> Taking $\delta$ first leaves the relativistic eikonal and the exact transport; taking $\beta$ on that pair gives $T_{\mathrm{kin}}=\lvert\vec p\rvert^{2}/2m$ with $\vec p=\nabla\sigma$ and the continuity equation for $\rho_{\mathrm{num}}$. Taking $\beta$ first leaves the Schrödinger pair with $Q=-\hbar^{2}\Delta_\Phi r/(2mr)$; taking $\delta$ on that pair gives the same two equations. <strong>The final pair is the same in both orders.</strong></p>
+<p><strong>At the order of the discarded term they do not commute.</strong> The two paths discard different objects and in different sequence:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>path</th>
+<th>first discarded</th>
+<th>second discarded</th>
+<th>what is left of $Q$ at the end</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\delta$ then $\beta$</td>
+<td>$2mQ$ against $m^{2}c^{2}$</td>
+<td>$T^{2}/c^{2}$ against $T$</td>
+<td>nothing; $Q$ was dropped first</td>
+</tr>
+<tr>
+<td>$\beta$ then $\delta$</td>
+<td>$T^{2}/c^{2}$ and $\partial^{2}_{r'_t}r$ against $\Delta r$</td>
+<td>$Q$ against $T$</td>
+<td>nothing; $Q$ was dropped last</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The difference is in the middle, and it is visible.</strong> Halfway along the first path the object is relativistic dust with no quantum term; halfway along the second it is the quantum Madelung fluid with $Q$. A claim that the equations are semiclassical and nonrelativistic must say which path it took, because the intermediate equations differ and the term that is small differs.</p>
+<p><strong>One number summarises the two.</strong> $\delta=\epsilon\,\lvert\vec p\rvert/(mc)$, so the rest criterion is the Schrödinger criterion times the ratio of the momentum to the rest momentum. A field can be semiclassical in one and not in the other, and the case $\lvert\vec p\rvert\ll mc$, $\epsilon\sim1$ is a field whose phase varies fast on the rest scale and slowly on the kinetic one — a nonrelativistic field with a large quantum potential, which is the ordinary quantum-mechanical regime.</p>
+<h2 id="where-the-approximation-stops">Where the Approximation Stops</h2>
+<p><strong>Three places, and each is a place.</strong></p>
+<p><strong>Where the momentum vanishes.</strong> The branch $p=\sqrt{(E-V)^{2}/c^{2}-m^{2}c^{2}}$ turns where the kinetic energy vanishes, and there the amplitude diverges and the two branches of the eikonal meet. A potential supplies such a point; the free equation does not, so this article has no turning point to repair and the phase-integral apparatus of the nonrelativistic family has no free-space counterpart here.</p>
+<p><strong>At a caustic.</strong> Neighbouring dust lines cross, the density diverges, and the map from initial to final position loses rank. The lines are straight, so the crossing is a property of the initial velocity field and not of a force: a uniform flow has no caustic and a sheared one does.</p>
+<p><strong>Where the amplitude varies on the Compton scale.</strong> There $\delta$ is not small, the quantum term is comparable with the rest term, and the limit has no claim. That is the pair-creation regime, and the fact that the limit's failure region is the Compton scale is the reason the second sheet cannot be discarded: the region where the dust picture fails is the region where the two sheets meet.</p>
+<h2 id="what-the-biquaternion-form-adds">What the Biquaternion Form Adds</h2>
+<p><strong>Standard relativistic hydrodynamics, transcribed.</strong> The pair, the mass shell, the dust reading, the charge sign and the four-current are Takabayasi's and the parent's. The ordering by $\delta$ is the standard semiclassical ordering read on the rest term.</p>
+<p><strong>Four things the notation supplies.</strong></p>
+<p><em>The mass shell is a norm, and the eikonal is the mass shell.</em> $\langle\tilde\nabla_\Phi S\rangle_{\natural}=-m^{2}c^{2}$ is one line, and it identifies the leading-order equation as the normalisation of a four-vector rather than as a balance of energies. The two families' eikonals are then the two things a quadratic form can do to a vector: fix its value against an energy, or fix its norm against a mass.</p>
+<p><em>The failure of the normalisation is the quantum potential.</em> $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}+\hbar^{2}\Box r/(m^{2}r)$ puts $Q$ where a physical reading can see it: it is the amount by which the flow is not a unit congruence, and the limit is the statement that the congruence is unit.</p>
+<p><em>The cone is reached only at $m=0$.</em> For $m\neq0$ the phase gradient's norm is fixed away from zero by the mass, so the limit cannot land on the zero-divisor locus. At $m=0$ it lands on it exactly, and the light cone becomes the algebra's cone. That is the cleanest contact between the corpus's algebraic locus and a classical characteristic surface.</p>
+<p><em>The two sheets are two norms and one sign.</em> The norm is quadratic, so it cannot distinguish the sheets, and the algebra exhibits the reason the defect survives the limit: the only object in the pair that is odd in the action is the temporal component of the current.</p>
+<p><strong>What it does not supply.</strong> A branch rule; any reason to prefer one sheet; a uniform approximation at a turning point; and any prediction distinguishing the reformulation from the standard relativistic Madelung fluid.</p>
+<h2 id="summary">Summary</h2>
+<p>The field is $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_t$ with $\rho_{\mathrm{num}}=r^{2}$, and the exact pair is</p>
+<p>$$
+\left(\frac{\partial S_{\tilde\Xi}}{\partial r'_t}\right)^{2}-\lvert\nabla S_{\tilde\Xi}\rvert^{2}=m^{2}c^{2}-\hbar^{2}\frac{\Box_\Phi r}{r},
+\qquad
+\nabla\cdot\left(\rho_{\mathrm{num}}\nabla S_{\tilde\Xi}\right)-\frac{\partial}{\partial r'_t}\left(\rho_{\mathrm{num}}\frac{\partial S_{\tilde\Xi}}{\partial r'_t}\right)=0 .
+$$</p>
+<p>The criterion is $\delta=1/(k_mL)$, the Compton wavelength over the amplitude's length, and it is the Schrödinger criterion times $\lvert\vec p\rvert/(mc)$. Dropping the shift gives the eikonal $\langle\tilde\nabla_\Phi S_{\tilde\Xi}\rangle_{\natural}=-m^{2}c^{2}$, which is the mass shell read as a norm, and whose characters are straight timelike lines carrying a proper density. The quantum potential is the amount by which the flow fails to be the unit timelike congruence the eikonal asserts. The transport equation is exact and carries the indefinite charge. The eikonal has two sheets and the limit chooses neither, so the charge defect is classical and survives; only second quantisation removes it. At $m=0$ the eikonal is the zero-divisor cone. The error is $\delta^{2}\lvert x^{2}/4\sigma^{2}-\frac12\rvert$ for a planar Gaussian, reaching one at $x\simeq2\sigma/\delta$. The nonrelativistic and semiclassical limits commute at leading order and not at the order of the discarded term, and a claim of approximation must name the path.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$</td>
+<td>Biquaternion algebra</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{C}$, $\mathbb{B}_{H}$</td>
+<td>Centre; real-quaternion subspace</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$</td>
+<td>Hermitian and anti-Hermitian sectors</td>
+</tr>
+<tr>
+<td>$\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_t$</td>
+<td>The central word; scale, angle, branch</td>
+</tr>
+<tr>
+<td>$\rho_{\mathrm{num}}=r^{2}$</td>
+<td>Proper density</td>
+</tr>
+<tr>
+<td>$S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$</td>
+<td>The action, modulo $2\pi\hbar$</td>
+</tr>
+<tr>
+<td>$\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$</td>
+<td>The d'Alembertian; $r'_t=c\,t'$</td>
+</tr>
+<tr>
+<td>$k_m=mc/\hbar$</td>
+<td>Mass wave number</td>
+</tr>
+<tr>
+<td>$\tilde P_\Phi=i(E/c)e_t+\vec p$</td>
+<td>Four-momentum; $E=-c\,\partial S_{\tilde\Xi}/\partial r'_t$, $\vec p=\nabla S_{\tilde\Xi}$</td>
+</tr>
+<tr>
+<td>$\langle A\rangle_{\natural}=AA^{\natural}$</td>
+<td>The norm; $+\lvert\vec a\rvert^{2}$ on a vector, $-(E/c)^{2}$ on the temporal slot</td>
+</tr>
+<tr>
+<td>$\langle\tilde\nabla_\Phi S_{\tilde\Xi}\rangle_{\natural}=-m^{2}c^{2}$</td>
+<td>The eikonal: the mass shell as a norm</td>
+</tr>
+<tr>
+<td>$\tilde V_\Phi=\tilde P_\Phi/m$</td>
+<td>Four-velocity; unit exactly where $\Box_\Phi r=0$</td>
+</tr>
+<tr>
+<td>$Q=-\frac{\hbar^{2}}{2m}\Box_\Phi r/r$</td>
+<td>Quantum potential; the failure of the normalisation</td>
+</tr>
+<tr>
+<td>$\delta=1/(k_mL)$</td>
+<td>The parameter of the limit</td>
+</tr>
+<tr>
+<td>$\delta=\epsilon\lvert\vec p\rvert/(mc)$</td>
+<td>Its relation to the Schrödinger parameter</td>
+</tr>
+<tr>
+<td>$2\lvert Q\rvert/(m^{2}c^{2})=\delta^{2}\lvert x^{2}/4\sigma^{2}-\frac12\rvert$</td>
+<td>The error, planar Gaussian</td>
+</tr>
+<tr>
+<td>$\langle\tilde\nabla_\Phi S\rangle_{\natural}=0$</td>
+<td>The massless eikonal: the cone</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>T. Takabayasi, "Relativistic hydrodynamics of the Dirac matter," <em>Progress of Theoretical Physics Supplement</em> <strong>4</strong> (1957) 2–80, and "On the formulation of quantum mechanics associated with classical pictures," <em>Progress of Theoretical Physics</em> <strong>8</strong> (1952) 143–182, for the relativistic Madelung pair.</li>
+<li>E. Madelung, "Quantentheorie in hydrodynamischer Form," <em>Zeitschrift für Physik</em> <strong>40</strong> (1927) 322–326, for the non-relativistic pair.</li>
+<li>L. D. Landau and E. M. Lifshitz, <em>The Classical Theory of Fields</em> (Pergamon, 1975), for the mass shell, the characteristic surfaces of the wave equation and the light cone.</li>
+<li>H. Goldstein, C. P. Poole, and J. L. Safko, <em>Classical Mechanics</em> (Addison-Wesley, 2002), for the Hamilton–Jacobi equation and its characteristics as a congruence.</li>
+<li>J. B. Keller, "Corrected Bohr–Sommerfeld quantum conditions for nonseparable systems," <em>Annals of Physics</em> <strong>4</strong> (1958) 180–188, for the characteristic reading of an eikonal.</li>
+<li>M. V. Berry and K. E. Mount, "Semiclassical approximations in wave mechanics," <em>Reports on Progress in Physics</em> <strong>35</strong> (1972) 315–397, for the failure of the short-wavelength expansion where an amplitude varies on the scale of the wavelength.</li>
+<li>A. Messiah, <em>Quantum Mechanics</em> (North-Holland, 1961), for the Klein–Gordon charge density and its indefiniteness.</li>
+<li>H. Feshbach and F. Villars, "Elementary relativistic wave mechanics of spin 0 and spin 1/2 particles," <em>Reviews of Modern Physics</em> <strong>30</strong> (1958) 24–45, for the two-sheet structure read as a two-component theory.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

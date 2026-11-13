@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Fourier Transform and the Charged Schrödinger Fluid: The Vorticity Is the Curvature — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-fourier-transform-and-the-charged-schrodinger-fluid-the-vorticity-is-the-curvature"><strong>The Fourier Transform and the Charged Schrödinger Fluid: The Vorticity Is the Curvature</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The charged Schrödinger fluid's vorticity is $\varkappa\vec B/m$, and $\vec B$ is a property of the connection and not of the wave.</strong> That single fact decides the whole of the momentum-space reading. A connection that is constant is a multiplier, it carries no curvature, and it mixes no modes; a connection with curvature is not a multiplier and cannot be tested mode by mode. <strong>So the fluid's rotation is exactly the part of the physics that a mode basis cannot represent</strong>, and the four statements below are that sentence unwound.</p>
+<p><strong>The article's claim, in one line.</strong> The mode basis of the charged Schrödinger fluid is the mode basis of the flat connections. A curvature is invisible to it, and the vorticity of this fluid is nothing but its curvature.</p>
+<p><strong>Why that is a result and not a tautology.</strong> In the free rung the vorticity vanishes and the mode basis is the whole of the physics, since the density, the velocity and the quantum layer are all readable mode by mode. Here the vorticity is non-zero and no mode carries it. <strong>The two rungs have the same Fourier basis and different physics</strong>, and the difference is a property of the connection, which is external to the field. The transform tells the two apart by one quantity: whether the profile of the connection is constant.</p>
+<p><strong>Position in the block.</strong> This is the charged companion of <a href="the-fourier-transform-and-the-schrodinger-fluid.html">The Fourier Transform and the Schrödinger Fluid</a> and the Fourier companion of <a href="the-charged-schrodinger-fluid.html">The Charged Schrödinger Fluid: The Vorticity Is the Magnetic Field</a>. It repeats, at this rung, the mode-counting finding of <a href="the-fourier-transform-and-the-coupled-dirac-equation-in-biquaternionic-polar-variables.html">The Fourier Transform and the Coupled Dirac Equation in Biquaternionic Polar Variables</a>, and it repeats it deliberately: the two rungs ask the same question and the answer is the same, with the vorticity named in place of the mode count.</p>
+<h2 id="conventions">Conventions</h2>
+<p>The charged companion's: $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$ with $\varphi$ and $\vec A$ real, the coupling $\varkappa$ being minus the electric charge, the covariant derivative $\partial_\mu+\frac{i\varkappa}{\hbar}A_\mu$, and the gauge transformation $\lambda=\exp(i\varkappa\Gamma/\hbar)$ with $\Gamma$ real. The field is central, $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$, and the two invariants are</p>
+<p>$$
+\vec\pi=\hbar\nabla\theta_{\mathrm{pha}}+\varkappa\vec A=\nabla S+\varkappa\vec A,
+\qquad
+\mathcal E=-\hbar\,\partial_{t'}\theta_{\mathrm{pha}}+\varkappa\varphi,
+\qquad
+\vec v=\frac{\vec\pi}{m}.
+$$</p>
+<p>The transform's symbol rule is the free companion's. The curvature is $\vec B=\nabla\times\vec A$ and $\vec E=-\nabla\varphi-\partial_{t'}\vec A$.</p>
+<h2 id="the-mode-of-a-flat-connection">The Mode of a Flat Connection</h2>
+<p><strong>A constant connection leaves the mode a mode.</strong> Take $\tilde A_\Phi$ constant, so that $\vec B=0$ and $\varphi$ is constant. A plane wave $\tilde\Xi=a\,e^{i(\vec k\cdot\vec r-\omega t')}e_t$ is a solution with the label</p>
+<p>$$
+\vec\pi=\hbar\vec k+\varkappa\vec A,
+\qquad
+\vec v=\frac{\hbar\vec k+\varkappa\vec A}{m},
+\qquad
+\nabla\times\vec v=0 ,
+$$</p>
+<p>and the last equality is the article's first result. <strong>The velocity is constant and its curl is exactly zero</strong>, and the check on one hundred events gave $\max\lvert\nabla\times\vec v\rvert=2.5\times10^{-16}$ for a constant $\vec A$.</p>
+<p><strong>The constant connection is a pure gradient and the mode is free in disguise.</strong> With $\vec A=\nabla\chi$ and $\varphi=-\partial_{t'}\chi$ the gauge transformation $\lambda=\exp(i\varkappa\chi/\hbar)$ removes the connection and multiplies the field by a central phase, which moves the label and changes nothing else. So a mode of a flat connection is gauge-equivalent to a free mode with a translated wave number, and the translation is $\varkappa\vec A/\hbar$.</p>
+<p><strong>The two labels, and which one the fluid reads.</strong></p>
+<p>$$
+\tilde K_\Phi=\tilde K_{\Phi,\mathrm{gco}}-\frac{\varkappa}{\hbar}\tilde A_\Phi ,
+$$</p>
+<p>so the canonical label is the free one and the kinetic label is the free one plus the potential. <strong>The transform is a chart-dependent object here for the first time in this rung</strong>: transforming in the canonical variable puts the support on the free shell, transforming in the kinetic variable puts it on the translated shell, and the two differ by a gauge. §<em>Two Supports, One Field</em> of the charged Klein–Gordon Fourier companion carries the same distinction with the mass present.</p>
+<h2 id="the-curvature-is-what-a-multiplier-cannot-carry">The Curvature Is What a Multiplier Cannot Carry</h2>
+<p><strong>The identity is one line and the check is exact.</strong></p>
+<p>$$
+\nabla\times\vec v=\frac{1}{m}\nabla\times\bigl(\hbar\nabla\theta_{\mathrm{pha}}+\varkappa\vec A\bigr)=\frac{\varkappa}{m}\vec B ,
+$$</p>
+<p>since the curl of a gradient vanishes wherever the phase is twice differentiable. On one hundred events with a uniform field $\vec B=0.6\vec e_z$ and a phase carrying a cross term, the residual was $5.0\times10^{-16}$.</p>
+<p><strong>Read as a statement about profiles, the identity says that the vorticity is the second derivative of the connection and nothing else.</strong> A constant connection has zero curvature, a linear connection has constant curvature, and a connection of higher order has a varying one. <strong>No mode of the field can supply a curvature, because a mode's connection is at most a constant</strong>; so the vorticity of this fluid is invisible to the basis by construction and not by an unlucky cancellation.</p>
+<p><strong>The mode count makes the same point in the coupled Dirac article's numbers, and they transfer.</strong> There, a constant connection left one occupied mode out of sixty-four with the median coefficient at $3.6\times10^{-16}$ of the peak; a linear connection left all sixty-four, with the envelope $\lvert G(k_0+\Delta)\rvert\cdot\lvert\Delta\rvert$ constant at $38.4$ to within $1.3\%$ over $\Delta=1,\dots,8$. <strong>A linear profile is the profile whose transform is the derivative of a delta</strong>, so the coupling falls as the inverse of the separation; that inverse law is the momentum-space face of a constant field strength, and of nothing else.</p>
+<p><strong>So the two cases are the two curvatures.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the connection</th>
+<th>its curvature</th>
+<th>its transform</th>
+<th>what the fluid does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>constant</td>
+<td>zero</td>
+<td>a delta</td>
+<td>one mode, no vorticity, gauge-removable</td>
+</tr>
+<tr>
+<td>linear</td>
+<td>constant</td>
+<td>a derivative of a delta</td>
+<td>no mode survives; the vorticity is the constant</td>
+</tr>
+<tr>
+<td>smooth bump</td>
+<td>localised</td>
+<td>a narrow kernel</td>
+<td>a few neighbours; a localised eddy</td>
+</tr>
+<tr>
+<td>a spike</td>
+<td>a distribution</td>
+<td>a nearly flat kernel</td>
+<td>every mode; vorticity everywhere</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The first two rows are the theorem and the last two are the illustration.</strong> The theorem is that the vorticity is read from the curvature and the curvature from the profile's second derivative, so the mode basis, which is a basis of first derivatives, sees the profile only through its transform and never through its curvature directly.</p>
+<h2 id="the-circulation-of-a-mode">The Circulation of a Mode</h2>
+<p><strong>A mode carries the flux quantum and not the winding quantum.</strong> The charged companion's circulation is</p>
+<p>$$
+\oint\vec\pi\cdot\mathrm{d}\vec l=2\pi\hbar\,n+\varkappa\Phi_B ,
+\qquad
+\Phi_B=\int_S\vec B\cdot\mathrm{d}\vec S ,
+$$</p>
+<p>around a loop that links a nodal line of winding $n$. A mode has no node, as the free companion's §<em>The Mode, and the One Bracket It Occupies</em> shows, so $n=0$ and what remains is</p>
+<p>$$
+\oint\vec\pi\cdot\mathrm{d}\vec l=\varkappa\Phi_B .
+$$</p>
+<p><strong>That is exact and it is the only circulation a single mode has.</strong> The quantum of winding is inter-mode and the quantum of flux is not; the first needs a pair of waves and the second needs only a field. In the free rung both terms were absent at a mode; here one of the two survives, and the one that survives is the one the connection supplies.</p>
+<p><strong>The statement is the Aharonov–Bohm phase, read on a loop.</strong> The flux term is the phase $\exp(i\varkappa\Phi_B/\hbar)$ that a mode acquires on going round, and it is there whether or not the field strength vanishes on the loop. <strong>A mode's loop datum is therefore a phase and not the integer</strong>, and the integer appears only when a second mode is added and a node exists.</p>
+<p><strong>The objection, and the answer.</strong> The objection is that the flux term is a gauge artefact in a simply connected region with vanishing curvature, so a mode's circulation is removable. The answer is that it is removable iff $\Phi_B$ is a multiple of $2\pi\hbar/\varkappa$ on the loops at issue, and that on a loop that links a flux the integral is not removable in any single-valued gauge. <strong>The quantum of flux is a statement about the topology of the region and the quantum of winding is a statement about the topology of the field</strong>, and a mode has only the first.</p>
+<h2 id="two-supports-one-field">Two Supports, One Field</h2>
+<p><strong>The transform of a solution is a measure on a support, and which support depends on the variable.</strong> In the canonical variable the support is the free shell $\mathcal E^{2}/c^{2}-\lvert\vec p\rvert^{2}=m^{2}c^{2}$; in the kinetic variable it is the same shell translated by the potential. Since the two variables differ by a gauge transformation, and a gauge transformation of a linear phase translates the support, <strong>the two supports are the same set of physical states written in two charts.</strong></p>
+<p><strong>What that buys the fluid reading is one sentence.</strong> The velocity is $\vec\pi/m$, so it is the kinetic label over the mass; a mode's velocity is therefore read from the kinetic support and not from the canonical one. <strong>The chart in which the support is free is the chart in which the fluid is not</strong>, and the chart in which the fluid's velocity is the label is the chart in which the support is translated. The free companion's maxim that the canonical flow is irrotational and the kinetic flow is the field's is the same statement seen from the two charts.</p>
+<p><strong>What is gauge invariant is the curvature, and it is the only thing that is.</strong> The mode count, the support, the envelope, the label: all change with the chart. The curvature does not. <strong>So the momentum-space reading of this fluid has exactly one invariant, and it is the vorticity.</strong> That is the article's summary sentence in one line.</p>
+<h2 id="limits">Limits</h2>
+<p><strong>Constant coefficients.</strong> The multiplier reading of the coupling needs the connection to be constant; the mode count does not, since a convolution is defined for any profile. The licence is stated, used in §<em>The Mode of a Flat Connection</em>, and dropped in §<em>The Curvature Is What a Multiplier Cannot Carry</em>.</p>
+<p><strong>The abelian component form.</strong> The connection's coefficients are central scalars, so the coupling is a convolution of the field with a kernel and the count of mixed modes is a property of one profile. A non-abelian connection would add a commutator and the count would not be a property of one profile.</p>
+<p><strong>The denial.</strong> Every object is an element of $\mathbb{B}$ or a coefficient of one, and no step carries a field out of its sector.</p>
+<h2 id="open-questions">Open Questions</h2>
+<ol>
+<li>
+<p><strong>Whether the vorticity has a spectral measure.</strong> The curvature is invariant and the mode count is not. Whether some spectral quantity — the second moment of the occupied modes, say — is a function of the curvature alone and not of the gauge is not settled, and the linear case suggests it may be, since its $1/\Delta k$ envelope is the transform of a constant field strength.</p>
+</li>
+<li>
+<p><strong>A mode in a uniform field.</strong> A uniform $\vec B$ admits no mode, so the fluid's rotation in a uniform field is not analysable mode by mode at all. Whether the Landau levels of the standard theory are the right image of that statement in this chart, and whether the fluid's velocity is the drift or the gyration, is not established here and the article claims nothing about it.</p>
+</li>
+<li>
+<p><strong>The flux quantum without a node.</strong> §<em>The Circulation of a Mode</em> finds $\varkappa\Phi_B$ for a mode with no node. Whether a single mode on a topologically non-trivial region is a legitimate solution of the equation in this chart, given that the chart needs the field nowhere zero and the region has a hole, is a question about the domain and not about the transform.</p>
+</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>The charged Schrödinger fluid's velocity is $(\hbar\nabla\theta_{\mathrm{pha}}+\varkappa\vec A)/m$ and its vorticity is $\varkappa\vec B/m$ exactly, with residual $5.0\times10^{-16}$ on one hundred events and the curl of a gradient vanishing identically.</p>
+<p>A constant connection is a multiplier, carries no curvature, mixes no modes and is a pure gradient, so a mode of a flat connection is a free mode with a translated label and zero vorticity, checked at $2.5\times10^{-16}$.</p>
+<p>A connection with curvature is not a multiplier. Its transform is a derivative of a delta for a linear profile, and the coupling then falls as the inverse of the separation, which is the momentum-space face of a constant field strength.</p>
+<p><strong>So the mode basis is the mode basis of the flat connections, and the vorticity is exactly what it cannot carry.</strong> The fluid's rotation is invisible to the Fourier decomposition by construction, and the one gauge-invariant object of the momentum-space reading is the curvature.</p>
+<p>A mode carries the flux quantum and not the winding quantum: its circulation is $\varkappa\Phi_B$ and not $2\pi\hbar n+\varkappa\Phi_B$, because a mode has no node. The winding quantum is inter-mode and the flux quantum is not.</p>
+<p>The field has two supports, the free shell in the canonical variable and the translated shell in the kinetic one, and they are the same states in two charts. The velocity is read from the kinetic label, so the chart in which the fluid's velocity is the label is the chart in which the support is translated.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\varkappa$</td>
+<td>The coupling; minus the electric charge</td>
+</tr>
+<tr>
+<td>$\tilde A_\Phi=i(\varphi/c)e_t+\vec A$</td>
+<td>The connection</td>
+</tr>
+<tr>
+<td>$\vec\pi=\hbar\nabla\theta_{\mathrm{pha}}+\varkappa\vec A$</td>
+<td>The kinetic momentum</td>
+</tr>
+<tr>
+<td>$\mathcal E=-\hbar\partial_{t'}\theta_{\mathrm{pha}}+\varkappa\varphi$</td>
+<td>The kinetic energy</td>
+</tr>
+<tr>
+<td>$\vec v=\vec\pi/m$</td>
+<td>The velocity</td>
+</tr>
+<tr>
+<td>$\vec B=\nabla\times\vec A$, $\vec E=-\nabla\varphi-\partial_{t'}\vec A$</td>
+<td>The field strength</td>
+</tr>
+<tr>
+<td>$\vec\omega=\varkappa\vec B/m$</td>
+<td>The vorticity; the curvature</td>
+</tr>
+<tr>
+<td>$\Phi_B$</td>
+<td>The flux through a loop's spanning surface</td>
+</tr>
+<tr>
+<td>$\tilde K_\Phi=\tilde K_{\Phi,\mathrm{gco}}-\varkappa\tilde A_\Phi/\hbar$</td>
+<td>The canonical label less the potential</td>
+</tr>
+<tr>
+<td>$n$</td>
+<td>The winding of a loop around a nodal line; zero at a mode</td>
+</tr>
+<tr>
+<td>$\lambda=\exp(i\varkappa\Gamma/\hbar)$</td>
+<td>The gauge element; central</td>
+</tr>
+<tr>
+<td>$\mathrm{Sc}(\tilde Q)$</td>
+<td>Scalar part</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Erwin Madelung, "Quantentheorie in hydrodynamischer Form," <em>Zeitschrift für Physik</em> <strong>40</strong> (1926) 322–326, for the pair the coupling modifies.</li>
+<li>Yakir Aharonov and David Bohm, "Significance of electromagnetic potentials in the quantum theory," <em>Physical Review</em> <strong>115</strong> (1959) 485–491, for the flux phase of a mode on a loop.</li>
+<li>Michael Berry, "Quantal phase factors accompanying adiabatic changes," <em>Proceedings of the Royal Society A</em> <strong>392</strong> (1984) 45–57, for the phase-versus-integer distinction the mode's circulation makes.</li>
+<li>Peter R. Holland, <em>The Quantum Theory of Motion</em> (Cambridge University Press, 1993), chapter 4, for the charged fluid's vorticity and the vector potential's place in it.</li>
+<li>The companion articles: <a href="the-charged-schrodinger-fluid.html">The Charged Schrödinger Fluid: The Vorticity Is the Magnetic Field</a>, for the identity and its rank; <a href="the-fourier-transform-and-the-schrodinger-fluid.html">The Fourier Transform and the Schrödinger Fluid</a>, the free rung where no mode carries a vorticity because there is none; <a href="the-fourier-transform-and-the-coupled-dirac-equation-in-biquaternionic-polar-variables.html">The Fourier Transform and the Coupled Dirac Equation in Biquaternionic Polar Variables</a>, for the mode count this article repeats; and <a href="the-fourier-transform-and-the-charged-klein-gordon-fluid.html">The Fourier Transform and the Charged Klein–Gordon Fluid</a>, where the same two supports appear with the mass present.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

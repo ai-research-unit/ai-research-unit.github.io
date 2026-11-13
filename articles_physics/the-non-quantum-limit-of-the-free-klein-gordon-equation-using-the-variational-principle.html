@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Non-Quantum Limit of the Free Klein–Gordon Equation using the Variational Principle — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-non-quantum-limit-of-the-free-kleingordon-equation-using-the-variational-principle"><strong>The Non-Quantum Limit of the Free Klein–Gordon Equation using the Variational Principle</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The same limit, taken on the action instead of on the equation.</strong> Substitution into the equation and variation of the action give the same pair, and the corpus establishes that elsewhere. What the variational route adds is a second statement of the criterion, a functional for the limit, and the character of the passage: <strong>the limit is the deletion of one term from a Lagrangian, and that deletion turns a regular variational problem into a constrained one.</strong></p>
+<p><strong>The one term.</strong> The polar action of the Klein–Gordon field is three terms: the amplitude's gradient squared, the density times the squared phase gradient, and the density times the rest mass squared. The limit drops the first. What is left is a functional of the phase alone, weighted by a density that the phase's own equation then transports.</p>
+<p><strong>The criterion, measured on the action.</strong> With the rest energy in the phase, the phase's gradients are of order $k_m$ and the amplitude's gradients are of order $1/L$. So the three terms are of order one, order one and order $\delta^{2}$ with $\delta=1/(k_mL)$, and the limit is the statement that the third is negligible. <strong>The two order-one terms must balance each other, and their balance is the eikonal.</strong> That is the variational form of the criterion, and it is stricter than the equation-level one because it says which two terms balance and not merely which one is dropped.</p>
+<p><strong>The character of the passage.</strong> Dropping the amplitude's gradient removes the second time derivative of $r$ from the problem. The conjugate momentum of $r$ vanishes identically, the Legendre transform becomes degenerate, and the equation that consistency forces is the eikonal. <strong>The non-quantum limit of a second-order field is the passage from a regular to a constrained variational problem, and the eikonal is the constraint that the degeneracy produces.</strong> This is the article's structural result, and it has no counterpart in the substitution route.</p>
+<p><strong>What the article does not do.</strong> It does not re-derive the polar action, the frame metric or the Jacobian argument; those are the variational polar companion's. It does not take the nonrelativistic limit, which is the parent's and which acts on the rest phase rather than on the amplitude.</p>
+<p><strong>Conventions.</strong> Those of the free companion: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$, $i$ central, $\mathrm{Sc}$ the coefficient of $e_t$, the pairing $\mathrm{Sc}(\cdot^{*}\cdot)$, $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$ with $r'_t=c\,t'$, $k_m=mc/\hbar$. The word is $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_t$ with $\rho_{\mathrm{num}}=r^{2}$ and $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$. The parameter is $\delta=1/(k_mL)$ with $L$ the length over which $r$ varies.</p>
+<h2 id="the-action-in-the-chart">The Action in the Chart</h2>
+<p><strong>The polar action.</strong> Substituting the word into the element action gives, for the central field,</p>
+<p>$$
+S_{\mathrm{central}}=\int\mathrm{d}^{4}x\;\Bigl\{(\partial_{r'_t}r)^{2}-\lvert\nabla r\rvert^{2}
++r^{2}\bigl[(\partial_{r'_t}\theta_{\mathrm{pha}})^{2}-\lvert\nabla\theta_{\mathrm{pha}}\rvert^{2}\bigr]-k_m^{2}r^{2}\Bigr\}.
+$$</p>
+<p><strong>Three groups of terms, and they are the whole of the article.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>group</th>
+<th>term</th>
+<th>what it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the amplitude's gradient</td>
+<td>$(\partial r)^{2}-\lvert\nabla r\rvert^{2}$</td>
+<td>the kinetic term of the scale</td>
+</tr>
+<tr>
+<td>the density times the phase's square</td>
+<td>$r^{2}[(\partial\theta)^{2}-\lvert\nabla\theta\rvert^{2}]$</td>
+<td>the kinetic term of the angle</td>
+</tr>
+<tr>
+<td>the density times the rest term</td>
+<td>$k_m^{2}r^{2}$</td>
+<td>the mass term</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The action is the element action in other coordinates.</strong> No term was added and none was dropped; the only object that changed is the measure of the parameter space. The frame metric of the general element is the variational companion's, and on the central block it is diagonal with $g_{rr}=1$ and $g_{\theta\theta}=r^{2}$.</p>
+<p><strong>The two variations, for reference.</strong> Varying $\theta_{\mathrm{pha}}$ gives the transport equation and varying $r$ gives the amplitude equation with $Q$, and the pair is the free companion's exactly. The article's subject is what happens to the action, and therefore to the pair, when one group of terms is removed.</p>
+<h2 id="the-criterion-measured-on-the-action">The Criterion Measured on the Action</h2>
+<p><strong>The phase's gradients are of order $k_m$, and that is a statement about the rest energy.</strong> The action is written with the rest energy inside the phase, so $\partial_{r'_t}S_{\tilde\Xi}=-E/c$ and $E\simeq mc^{2}$ in the regime the limit addresses. Hence</p>
+<p>$$
+(\partial_{r'_t}\theta_{\mathrm{pha}})^{2}-\lvert\nabla\theta_{\mathrm{pha}}\rvert^{2}
+=\frac{1}{\hbar^{2}}\Bigl[\Bigl(\frac{E}{c}\Bigr)^{2}-\lvert\vec p\rvert^{2}\Bigr]\sim k_m^{2},
+$$</p>
+<p>and the phase's kinetic term is the same size as the mass term. <strong>Both are order one, and the eikonal is the statement that they differ by a term of order $\delta^{2}$.</strong></p>
+<p><strong>The amplitude's gradients are of order $1/L$.</strong> With $r$ varying over $L$,</p>
+<p>$$
+(\partial r)^{2}\sim\frac{r^{2}}{L^{2}}=r^{2}k_m^{2}\,\delta^{2}.
+$$</p>
+<p><strong>So the three groups stand in the ratios $1:1:\delta^{2}$, and one number compares all three.</strong> The criterion is not an extra input; it is the ratio of two terms that both stand in the same functional. That is the whole of what the variational route contributes to the definition, and it is the cleanest statement of the criterion in the corpus: <strong>the small quantity is the amplitude's gradient against the rest term, and everything else in the action is of the same size and must be kept.</strong></p>
+<p><strong>A warning that the statement is about the normalization.</strong> If the rest phase is divided out first, as the nonrelativistic limit does, then the remaining phase $\sigma$ has gradients of order $\lvert\vec p\rvert$ and the ratios change: the phase's term becomes order $\beta^{2}$ and the amplitude's order $\epsilon^{2}$. The statement "the phase's gradients are order one" is therefore a statement about the relativistic normalization in which the rest energy sits in the phase, and it is the normalization the limit of this article is written in.</p>
+<h2 id="the-truncated-action">The Truncated Action</h2>
+<p><strong>Drop the first group.</strong></p>
+<p>$$
+S^{\mathrm{trunc}}_{\mathrm{central}}=\int\mathrm{d}^{4}x\;\Bigl\{r^{2}\bigl[(\partial_{r'_t}\theta_{\mathrm{pha}})^{2}-\lvert\nabla\theta_{\mathrm{pha}}\rvert^{2}\bigr]-k_m^{2}r^{2}\Bigr\}.
+$$</p>
+<p><strong>Two variations, and neither produces $Q$.</strong></p>
+<p><em>Varying $\theta_{\mathrm{pha}}$</em> gives</p>
+<p>$$
+\nabla\cdot\bigl(r^{2}\nabla S_{\tilde\Xi}\bigr)-\frac{\partial}{\partial r'_t}\bigl(r^{2}\partial_{r'_t}S_{\tilde\Xi}\bigr)=0 ,
+$$</p>
+<p>which is the transport equation, exact and unchanged. <strong>The truncation does not touch it</strong>, because the dropped term contains no $\theta_{\mathrm{pha}}$.</p>
+<p><em>Varying $r$</em> gives</p>
+<p>$$
+2r\Bigl[(\partial_{r'_t}\theta_{\mathrm{pha}})^{2}-\lvert\nabla\theta_{\mathrm{pha}}\rvert^{2}-k_m^{2}\Bigr]=0
+\qquad\Longrightarrow\qquad
+\Bigl(\frac{\partial S_{\tilde\Xi}}{\partial r'_t}\Bigr)^{2}-\lvert\nabla S_{\tilde\Xi}\rvert^{2}=m^{2}c^{2}
+$$</p>
+<p>away from $r=0$, which is the eikonal and nothing more. <strong>The quantum potential was in the discarded group and went with it.</strong></p>
+<p><strong>So the truncated action's two Euler–Lagrange equations are the limit's two equations, exactly.</strong> Not to leading order and not up to a remainder: exactly, because the discarded group is the only place $\Box_\Phi r$ can come from. That is the sharpest form of the equivalence between the two routes: <strong>the limit of the equations is the variation of the truncated action.</strong></p>
+<p><strong>One line, and it is the article's summary.</strong> Everything the limit drops sits in one group of terms, and everything the limit keeps sits in the other two.</p>
+<h2 id="the-limit-is-singular">The Limit Is Singular</h2>
+<p><strong>What the truncation does to the order.</strong> In the exact action the term $(\partial_{r'_t}r)^{2}$ carries two time derivatives of $r$, so the amplitude equation is second order and the Cauchy data are $(r,\partial_{r'_t}r)$. In the truncated action that term is gone, so the equation for $r$ carries no derivative of $r$ at all: it is algebraic in the fields and constrains $\theta_{\mathrm{pha}}$ alone. <strong>One initial datum is lost, and it is $\partial_{r'_t}r$.</strong></p>
+<p><strong>A singular limit in the technical sense.</strong> A perturbation that lowers the order of an equation's highest derivative is singular: the solutions of the perturbed problem do not converge uniformly to a solution of the unperturbed one on the whole domain, and a boundary or initial layer appears. Here the layer is at the places where $\partial_{r'_t}r$ would have been large, which is where $\delta$ is not small, and the layer's width is the Compton length.</p>
+<p><strong>The Legendre transform degenerates, and the eikonal is the constraint.</strong> The momentum conjugate to $r$ is</p>
+<p>$$
+p_r=\frac{\partial\mathcal L^{\mathrm{trunc}}}{\partial(\partial_{r'_t}r)}=0 ,
+$$</p>
+<p>identically, because $r$ appears in the truncated Lagrangian with no time derivative. So the truncated problem has a primary constraint, and its consistency requires $\dot p_r=0$, which is</p>
+<p>$$
+\frac{\partial\mathcal L^{\mathrm{trunc}}}{\partial r}=2r\Bigl[(\partial_{r'_t}\theta_{\mathrm{pha}})^{2}-\lvert\nabla\theta_{\mathrm{pha}}\rvert^{2}-k_m^{2}\Bigr]=0 .
+$$</p>
+<p><strong>The secondary constraint is the eikonal.</strong> The variational companion records that the exact second-order problem has an invertible kinetic matrix and no constraints, and contrasts it with the first-order families where four momenta vanish. The limit supplies the missing case: <strong>a second-order family acquires a constraint precisely in the limit, and the constraint is the classical equation of motion.</strong> The eikonal is not an equation that happens to be first order; it is a constraint, and that is why it constrains the phase alone.</p>
+<p><strong>The system becomes triangular.</strong> In the exact problem the two equations each contain both functions and are coupled at second order. In the truncated problem</p>
+<ol>
+<li>the eikonal is a first-order equation for $\theta_{\mathrm{pha}}$ alone;</li>
+<li>the flow is then fixed, $\vec v=\nabla S_{\tilde\Xi}/m$;</li>
+<li>the transport equation is a first-order equation for $\ln r$ along that flow;</li>
+<li>and $r$ follows by quadrature along the rays.</li>
+</ol>
+<p><strong>The limit triangularises the system, and that is why it is solvable.</strong> A first-order equation for the phase, then a flow, then a transport along the flow: this is the classical recipe, and the triangular structure is what the discarded group was hiding.</p>
+<p><strong>Where the discarded branch lives.</strong> The lost datum is $\partial_{r'_t}r$; the solutions it would have selected are the ones whose amplitude changes on the Compton scale. They are not lost by an error of the method: they are the solutions for which $\delta$ is not small, and the approximation has no claim on them. <strong>The singular character and the region of validity are the same statement</strong>, which is what the substitution route can only assert and what the action exhibits.</p>
+<h2 id="what-the-variational-route-adds">What the Variational Route Adds</h2>
+<p><strong>Four things, and each is checked.</strong></p>
+<p><em>The criterion at action level.</em> The substitution route compares $Q$ with the mass in the equation. The variational route compares the amplitude's gradient with the rest term in the Lagrangian, and the two comparisons are the same comparison because the amplitude equation is the variation of exactly those terms. The action-level form is the sharper one, because it says which two terms must balance — the phase's kinetic term and the mass term — and that balance is the eikonal.</p>
+<p><em>A functional for the limit.</em> The substitution route produces equations and no action. The truncated action is the action whose variations are the limit's equations, so the limit has a variational principle of its own and not only a pair of equations.</p>
+<p><em>The character of the passage.</em> The order drop, the vanishing momentum and the constraint are visible only from the action. <strong>The eikonal's status as a constraint is a variational fact</strong>, and no manipulation of the field equation displays it.</p>
+<p><em>The conservation law's status.</em> In the exact theory the charge conservation follows from the equation and its conjugate. In the truncated theory the transport equation <em>is</em> the Euler–Lagrange equation of the phase, so conservation is the symmetry's equation and not a consequence of the dynamics. <strong>The limit cannot spoil a conservation law that is itself a variation</strong>, and that is why the transport equation survives untouched in both routes. The variational argument is the reason; the substitution route records the fact.</p>
+<p><strong>What it does not add.</strong> It adds no new equation, no new solution, and no new invariant. The pair is the pair. Both routes give the free companion's equations, and the equivalence is exact in both directions on the $N$-regular set.</p>
+<p><strong>A note on the two routes' scope.</strong> The variational route needs the word to be a bijection with a smooth inverse, so its equations hold on the $N$-regular set and nowhere else. The substitution route has the same restriction, since it substitutes the same word. The difference is that the action inherits the restriction as a domain of definition of a functional, and the substitution inherits it as a domain of differentiability of a function.</p>
+<h2 id="noether-in-the-limit">Noether in the Limit</h2>
+<p><strong>The charge.</strong> The phase's Noether current in the truncated theory is</p>
+<p>$$
+j_{r'_t}=2r^{2}\partial_{r'_t}\theta_{\mathrm{pha}}=-\frac{2r^{2}E}{\hbar c},
+\qquad
+j_\eta=-2r^{2}\partial_{r_\eta}\theta_{\mathrm{pha}},
+$$</p>
+<p>which is the exact theory's current with the same amplitude. <strong>The truncation does not change the current</strong>, because the current is built from $r$ and $\partial\theta$ and the discarded group contains neither in a form that enters the Noether computation.</p>
+<p><strong>The charge is indefinite and the energy is not.</strong> The charge is linear in the phase rate and the energy is quadratic in it, so</p>
+<p>$$
+\rho_{\mathrm{chg}}\ \text{changes sign with the sheet},
+\qquad
+T^{00}=(\partial_{r'_t}r)^{2}+\lvert\nabla r\rvert^{2}+r^{2}\bigl[(\partial_{r'_t}\theta)^{2}+\lvert\nabla\theta\rvert^{2}\bigr]+k_m^{2}r^{2}>0 .
+$$</p>
+<p><strong>In the truncated theory the energy loses its first two terms and stays positive</strong>, so the limit preserves the asymmetry: the charge can be negative and the energy cannot. The free companion reaches that asymmetry from the current; the action reaches it from the two Noether charges' degrees in the velocity. <strong>The limit does not repair the defect, and the action shows why it cannot</strong>: the defect is a power of the velocity and the truncation removes a term that is even in it.</p>
+<p><strong>One consequence worth stating.</strong> Because the amplitude's gradient term is dropped from the energy and not from the charge, the truncated energy is $r^{2}[(\partial\theta)^{2}+|\nabla\theta|^{2}+k_m^{2}]$, which is the energy of a pressureless fluid with a rest density. <strong>The limit's energy is dust's energy</strong>, and the discarded terms are exactly the pressure-like terms of the quantum fluid. That is another name for the same statement as the eikonal's: the quantum potential is the fluid's internal stress and the limit is the passage to dust.</p>
+<h2 id="what-the-limit-does-and-does-not-do">What the Limit Does and Does Not Do</h2>
+<p><strong>Does.</strong> It deletes one group of terms from a Lagrangian, produces a pair of equations that are the truncated action's variations, lowers the order, creates a constraint whose consistency is the eikonal, triangularises the system, and preserves the exact transport equation and the sign structure of the charge.</p>
+<p><strong>Does not.</strong> It does not select a sheet of the mass shell; it does not remove the second sheet; it does not supply a uniform approximation at a caustic; and it does not produce a state.</p>
+<p><strong>The one sentence for the record.</strong> Substitution says which equations survive; variation says which functional they vary, and therefore what kind of problem the limit leaves behind.</p>
+<h2 id="summary">Summary</h2>
+<p>The polar action of the free Klein–Gordon field is three groups of terms: the amplitude's gradient squared, the density times the squared phase gradient, and the density times the rest term. With the rest energy in the phase the phase's gradients are of order $k_m$ and the amplitude's are of order $1/L$, so the three groups stand in the ratios $1:1:\delta^{2}$ with $\delta=1/(k_mL)$. The limit drops the first group. What remains is a functional of the phase weighted by a density, and its two Euler–Lagrange equations are the eikonal $(\partial S)^{2}-|\nabla S|^{2}=m^{2}c^{2}$ and the exact transport equation — the limit's pair, exactly and not to leading order.</p>
+<p>The passage is singular. The discarded group carried the second time derivative of $r$, so the conjugate momentum of $r$ vanishes identically in the truncated theory, the Legendre transform degenerates, and the consistency condition is the eikonal. <strong>The eikonal is a constraint, and the limit is what creates it.</strong> The truncated system is triangular: the eikonal fixes the phase, the phase fixes the flow, the transport fixes the density along the flow. The charge current and the charge's indefiniteness survive the truncation unchanged, the energy loses its pressure-like terms and stays positive, and the truncated energy is dust's.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$S_{\mathrm{central}}$</td>
+<td>The polar action; three groups of terms</td>
+</tr>
+<tr>
+<td>$(\partial r)^{2}-\lvert\nabla r\rvert^{2}$</td>
+<td>The amplitude's gradient; dropped by the limit</td>
+</tr>
+<tr>
+<td>$r^{2}[(\partial\theta)^{2}-\lvert\nabla\theta\rvert^{2}]$</td>
+<td>The density times the phase's square; kept</td>
+</tr>
+<tr>
+<td>$k_m^{2}r^{2}$</td>
+<td>The rest term; kept</td>
+</tr>
+<tr>
+<td>$\delta=1/(k_mL)$</td>
+<td>The parameter; the ratio of the third group to the first two</td>
+</tr>
+<tr>
+<td>$S^{\mathrm{trunc}}_{\mathrm{central}}$</td>
+<td>The truncated action; the limit's functional</td>
+</tr>
+<tr>
+<td>$p_r=\partial\mathcal L^{\mathrm{trunc}}/\partial(\partial_{r'_t}r)=0$</td>
+<td>The primary constraint created by the truncation</td>
+</tr>
+<tr>
+<td>$(\partial S)^{2}-\lvert\nabla S\rvert^{2}=m^{2}c^{2}$</td>
+<td>The secondary constraint, which is the eikonal</td>
+</tr>
+<tr>
+<td>$j_{r'_t}=-2r^{2}E/(\hbar c)$</td>
+<td>The charge current; unchanged by the truncation</td>
+</tr>
+<tr>
+<td>$T^{00}>0$</td>
+<td>The energy; positive on both sheets, in both theories</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>E. Madelung, "Quantentheorie in hydrodynamischer Form," <em>Zeitschrift für Physik</em> <strong>40</strong> (1927) 322–326, for the hydrodynamic action of the pair.</li>
+<li>T. Takabayasi, "Relativistic hydrodynamics of the Dirac matter," <em>Progress of Theoretical Physics Supplement</em> <strong>4</strong> (1957) 2–80, for the relativistic action and its constraints.</li>
+<li>P. A. M. Dirac, <em>Lectures on Quantum Mechanics</em> (Yeshiva University, 1964), for primary and secondary constraints and the degenerate Legendre transform.</li>
+<li>C. M. Bender and S. A. Orszag, <em>Advanced Mathematical Methods for Scientists and Engineers</em> (Springer, 1999), chapters 9 and 10, for singular perturbation and the loss of a boundary condition.</li>
+<li>H. Goldstein, C. P. Poole, and J. L. Safko, <em>Classical Mechanics</em> (Addison-Wesley, 2002), for the Hamilton–Jacobi equation as a constrained problem and the characteristic flow.</li>
+<li>J. L. Anderson and P. G. Bergmann, "Constraints in covariant field theories," <em>Physical Review</em> <strong>83</strong> (1951) 1018–1025, for the constraint analysis of a degenerate field Lagrangian.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

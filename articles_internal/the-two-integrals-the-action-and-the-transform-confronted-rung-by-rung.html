@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Two Integrals: The Action and the Transform, Confronted Rung by Rung — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-two-integrals-the-action-and-the-transform-confronted-rung-by-rung"><strong>The Two Integrals: The Action and the Transform, Confronted Rung by Rung</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>Sixteen articles rest on an integral, and nobody has put the integrals side by side.</strong> The eight Lagrangian articles of the fluid block rest on the action integral. The eight Fourier articles rest on the transform integral. Both integrate over the same variable, both are linear in the same unknown, and each article is written as though the other integral did not exist. This article puts them side by side, one rung at a time, and records what falls out.</p>
+<p><strong>The results, in order of how much they are worth.</strong> First, every Fourier article's support is the pole set of its Lagrangian article's kernel; the shell is the pole, the residue is the mode's weight, and a coupling that enters linearly translates the pole set and cannot reshape it. Second, the action is invariant under a change of chart and the transform is not, so the pair's eight "invisible objects" are eight measurements of one non-commuting square, and the obstruction is linearity and nothing else. Third, "invisible" carries two different meanings in the sixteen articles — not determined, and not diagonal — and separating them classifies every object in the block by its degree in the field. Fourth, the object the transform cannot see is in every case a correlation, and the quantum potential's non-additivity measures it as the interference's mean square weighted by the square of the label separation. Fifth, three different objects — the conserved charge, the constant configuration and the partition function — are the same point of the label space, which is why the two integrals can be compared at all.</p>
+<p><strong>What this article is.</strong> An internal synthesis. No new equation, no new field, no re-derivation of an article's result. Five statements are numerical; each gives its numbers and its lattice correction. The rest are readings of sentences the sixteen articles already write, placed so that they face each other.</p>
+<h2 id="the-three-integrals">The Three Integrals</h2>
+<p><strong>Two integrals over spacetime and one over configurations.</strong></p>
+<p>$$
+S[\tilde\Xi]=\int d^{n}x\;\mathcal L\bigl(\tilde\Xi,\partial\tilde\Xi\bigr),
+\qquad
+\tilde\Xi_{\mathrm{trf}}(\tilde K_\Phi)=\int d^{n}x\;\tilde\Xi(x)\,e^{\,i\tilde K_\Phi\cdot x},
+\qquad
+Z[J]=\int\mathcal D\tilde\Xi\;e^{\,iS[\tilde\Xi]/\hbar\,+\,i\langle J,\tilde\Xi\rangle}.
+$$</p>
+<p><strong>The transform carries a subscript and no accent.</strong> The series writes no hat, so the transform of the field is $\tilde\Xi_{\mathrm{trf}}$, the transform of any other glyph carries the same subscript, and the subscript is the only mark that separates the amplitude from the field it came from. The label is what the subscript is read at.</p>
+<p><strong>The first two are over the same variable.</strong> They differ in what they do with the integrand: the action adds it up, the transform adds it up against a character. The third is over a different space, and it is not a third rival but the bridge, because it is the second integral applied to the exponential of the first,</p>
+<p>$$
+Z[J]=\bigl(e^{\,iS/\hbar}\bigr)_{\mathrm{trf}}(J),
+\qquad
+Z=Z[0].
+$$</p>
+<p><strong>So the three are one transform and two evaluations of it.</strong> That is standard and the block has never needed it. It becomes useful below because it puts the partition function, the conserved charge and the constant configuration at one point of one space, and that point is where the sixteen articles meet.</p>
+<p><strong>Why a variational article and a Fourier article form a pair.</strong> The variational article asks what is stationary under a change of the field at fixed argument. The Fourier article asks what is repeated under a translation of the argument. Stationarity is a statement about the <em>shape</em> of the field; repetition is a statement about its <em>symmetry</em>. A linear equation has both, and the two questions are answered by two different objects: the kernel's inverse and the kernel's symbol.</p>
+<h2 id="the-support-is-the-pole-set">The Support Is the Pole Set</h2>
+<p><strong>Every Fourier article in the block is a statement about a support, and the support is the pole set of its partner's kernel.</strong> The claim is not an analogy. It is four steps, each an algebraic consequence of the one before, and no physics enters at any of them.</p>
+<p><strong>First step, the free action is quadratic.</strong> $S=\tfrac12\int\tilde\Xi\,\mathcal O\,\tilde\Xi$ with $\mathcal O$ of constant coefficients, so the field equation is linear, $\mathcal O\tilde\Xi=0$. That is the whole of what the eight Lagrangian articles supply here.</p>
+<p><strong>Second step, the character diagonalises the operator.</strong> Constant coefficients mean translation invariance, and a translation-invariant operator acts on a character by multiplication:</p>
+<p>$$
+\mathcal O\,e^{\,i\tilde K_\Phi\cdot x}=\mathcal N(\tilde K_\Phi)\,e^{\,i\tilde K_\Phi\cdot x}.
+$$</p>
+<p>The multiplier $\mathcal N(\tilde K_\Phi)$ is the symbol. <strong>The character is the only function that admits this treatment</strong>, and that is why a Fourier integral and not some other integral appears in the eight articles: a function that is an eigenfunction of every translation is a character, and there is nothing else.</p>
+<p><strong>Third step, a mode is where the multiplier vanishes.</strong> A single character solves the equation if and only if its multiplier does:</p>
+<p>$$
+\mathcal N(\tilde K_\Phi)=0 .
+$$</p>
+<p>One scalar equation in one label defines a hypersurface, not a region. <strong>So "the support" in each Fourier article is a hypersurface of the label space</strong>, and "supported on the shell" is the statement that the zeros are the shell.</p>
+<p><strong>Fourth step, the propagator's symbol is the reciprocal.</strong> Where the symbol is non-zero the kernel is invertible, and the inverse of a multiplier is the reciprocal multiplier:</p>
+<p>$$
+G_{\mathrm{prop}}(\tilde K_\Phi)=\frac{1}{\mathcal N(\tilde K_\Phi)} .
+$$</p>
+<p><strong>So the zeros of the symbol are the poles of the propagator, and the identification is complete.</strong> The four steps in one table:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>step</th>
+<th>what it uses</th>
+<th>what it yields</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the action is quadratic</td>
+<td>the field equation is linear</td>
+<td>a mode is a character</td>
+</tr>
+<tr>
+<td>the coefficients are constant</td>
+<td>the operator is a multiplier</td>
+<td>the symbol exists</td>
+</tr>
+<tr>
+<td>a mode solves the equation</td>
+<td>the multiplier vanishes</td>
+<td>the support is the zero set</td>
+</tr>
+<tr>
+<td>the kernel is invertible off the zeros</td>
+<td>the inverse's symbol is reciprocal</td>
+<td>the zero set is the pole set</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The Klein–Gordon case, worked in full.</strong> The kernel is $\mathcal O=\Box_\Phi-k_m^{2}$, the corpus's Klein–Gordon operator, with $\Box_\Phi=\partial_{t'}^{2}-\sum_\eta\partial_\eta^{2}=\Delta_\Phi-\partial_{t'}^{2}$. On a character the derivatives act as $\partial_{t'}\mapsto-ik_t'$ and $\partial_\eta\mapsto ik_\eta$, so $\Box_\Phi\mapsto-k_t'^{2}+\lvert\vec k_\Phi\rvert^{2}$ and the symbol is</p>
+<p>$$
+\mathcal N(\tilde K_\Phi)=k_t'^{2}-\lvert\vec k_\Phi\rvert^{2}-k_m^{2}.
+$$</p>
+<p><strong>Its zero is the free shell</strong>, $k_t'^{2}=\lvert\vec k_\Phi\rvert^{2}+k_m^{2}$. The <a href="../articles_physics/the-fourier-transform-and-the-klein-gordon-fluid.html">Klein–Gordon Fourier article</a> states the same locus with the quantum potential in it, as a radius: $E^{2}/c^{2}-\lvert\vec p\rvert^{2}=m^{2}c^{2}+2mQ_{\mathrm{qnt}}$, which in the wave-number units of this section is $k_t'^{2}=\lvert\vec k_\Phi\rvert^{2}+k_m^{2}+2mQ_{\mathrm{qnt}}/\hbar^{2}$. <strong>Setting the quantum potential to zero recovers the pole exactly.</strong> So the pole set is the locus on which that potential vanishes, its position — not its residue — is what the potential moves, and the article's first sentence, that a mode is a point where the four-velocity is a unit, is the same equation read as a velocity rather than as a symbol. <strong>The two articles are one computation in two charts</strong>, and the chart in which the support is a single clean sheet is the chart in which the symbol is one number per label.</p>
+<p><strong>How far the numbers sit from the pole, and what the residue is.</strong> Put $\lvert\vec k_\Phi\rvert=0$ and $k_m=1$, and approach from below with $k_t'=k_m-\epsilon$. The symbol has magnitude $\lvert\mathcal N\rvert=2\epsilon-\epsilon^{2}$ and the propagator's has</p>
+<p>$$
+\left\lvert\frac{1}{\mathcal N}\right\rvert=\frac{1}{2\epsilon}+\frac14+\frac{\epsilon}{8}+O(\epsilon^{2}),
+$$</p>
+<p>and the measured values are $50.251256$, $5000.250013$, $500000.249980$: the first is $50+0.25+0.00125$, the second is $5000+0.25+0.0000125$, and the third agrees with $500000+0.25$ to seven figures, the rest being round-off at $10^{6}$. <strong>The numbers are the series above and nothing else</strong>, so the pole is simple and the residue's magnitude is $\tfrac12$.</p>
+<p><strong>And the residue is the mode's weight.</strong> A simple zero of the symbol means $\mathcal N\simeq\mathcal N'\,(k_t'-k_{\mathrm{shell}})$ near the shell, so the propagator is $R/(k_t'-k_{\mathrm{shell}})$ with $R=1/\mathcal N'$, and $R$ is what the mode contributes to the spectral measure of the free field — the Källén–Lehmann weight, a delta at the shell of that size. <strong>The pole's position gives the dispersion and the pole's residue gives the normalisation</strong>, and a Fourier article that says "the amplitude at a wave number" is reading both from the same object. So a statement in the block about the measure on a support is a statement about residues, and not about the points of the support.</p>
+<p><strong>A coupling that enters linearly does not reshape the pole set, it translates it.</strong> Minimal coupling replaces $\partial_\mu$ by $\partial_\mu+iϙA_\mu/\hbar$, which on a character is one substitution, $\tilde K_\Phi\mapsto\tilde K_\Phi+ϙ\tilde A_\Phi/\hbar$. The symbol is the same function of a shifted argument, so its zeros move rigidly with the shift and the derivative at each zero is untouched. <strong>Three articles state the same fact and this is why they agree</strong>: the <a href="../articles_physics/the-fourier-transform-and-the-charged-klein-gordon-fluid.html">charged Klein–Gordon Fourier article</a> writes "a constant potential translates the support of the transform and leaves its radius alone", the <a href="../articles_physics/the-fourier-transform-and-the-charged-spin-fluid.html">charged spin Fourier article</a> writes "the whole of the coupling's action on a mode is a translation of its label", and the residue argument above says both. <strong>The radius is untouched because a translation does not change a derivative</strong>, and the radius is the residue.</p>
+<p><strong>Where the identification fails, and why.</strong> At the spinor rungs the multiplier is a matrix, so invertibility is a determinant and the pole set is the zero set of $\det\mathcal N$. A determinant's zeros are a set, and a set is not a sheet: nothing there plays the part of a single dispersion relation, and the residue is a matrix rather than a number. <strong>A symbol exists wherever the operator is a multiplier; a scalar symbol, and with it one dispersion relation and one residue per label, exists only where the multiplier is one number per label.</strong> The Fourier article at those rungs reports the translation of the label and the invariant that survives it, the loop, and reports no pole set at all. The block's four charged articles are four answers to whether the multiplier is one number.</p>
+<h2 id="chart-blind-and-chart-sighted">Chart-Blind and Chart-Sighted</h2>
+<p><strong>The action is one functional in every chart, and the Lagrangian articles say so as their conclusion.</strong> <a href="../articles_physics/the-lagrangian-of-the-schrodinger-fluid.html">The Lagrangian of the Schrödinger Fluid</a> has the section for it: the map between the field's chart, the polar chart and the fluid chart is a bijection away from the nodes, and the action is one functional written three ways. Every one of the eight says the same, in its own words: the coupling is one substitution, the mass is one coefficient, the stress is one current. <strong>None of that survives a change of chart in the transform.</strong></p>
+<p><strong>The transform does not descend.</strong> A chart change is nonlinear in the field, so in general $\bigl(f(\tilde\Xi)\bigr)_{\mathrm{trf}}\ne f\bigl(\tilde\Xi_{\mathrm{trf}}\bigr)$. The square therefore does not close, and the failure is not a gap in the block's technique but a fact about the operation:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>from</th>
+<th>operation</th>
+<th>to</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the field</td>
+<td>polar chart</td>
+<td>the fluid's data</td>
+</tr>
+<tr>
+<td>the field</td>
+<td>Fourier</td>
+<td>the amplitude on the support</td>
+</tr>
+<tr>
+<td>the fluid's data</td>
+<td>Fourier</td>
+<td>no image</td>
+</tr>
+<tr>
+<td>the amplitude's data</td>
+<td>polar chart</td>
+<td>no image</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The eight "invisible objects" are the eight entries of the third row.</strong> The scalar rungs lose the density and the quantum layer; the spinor rungs lose the scale and the rotor; the vector rung loses the direction and with it the vorticity. Eight names, one obstruction, and the obstruction is that a character is a homomorphism of the additive group: <strong>the transform respects sums and not products, and every chart change in the block is a product.</strong></p>
+<p><strong>What that buys the reader.</strong> The reader who wants to know whether an object can be read mode by mode does not need the object's physics. The question is whether the object is linear in the field. If it is, the transform sees it at a label. If it is not, the transform sees only its correlation, and the correlation is supported at differences of labels — which is the next section's subject.</p>
+<h2 id="degree-and-the-two-meanings-of-invisible">Degree, and the Two Meanings of Invisible</h2>
+<p><strong>One word, two statements.</strong> In the sixteen articles "invisible" means either <em>not determined by the transform</em> or <em>not diagonal in the label</em>, and the two are different. Everything is determined, because every object in the block is a functional of the field and the field's transform determines the field. Almost nothing is diagonal. <strong>The articles use it for the second property. A reader who takes it for the first will conclude that the transform loses information, and it does not.</strong></p>
+<p><strong>The degree is what decides.</strong> Under $\tilde\Xi\to\lambda\tilde\Xi$:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>degree</th>
+<th>objects</th>
+<th>in the label</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>the field, the field equation of a quadratic action, the left side of every constraint, the label</td>
+<td>diagonal</td>
+</tr>
+<tr>
+<td>2</td>
+<td>the density, the stress, the field strength's energy, the right side of the charged constraint</td>
+<td>a correlation</td>
+</tr>
+<tr>
+<td>0</td>
+<td>the velocity, the direction, the quantum potential, the equation of state</td>
+<td>no label at all</td>
+</tr>
+</tbody>
+</table></div>
+<p>$$
+\tilde\Xi_{\mathrm{trf}}\ \text{is one element per label},
+\qquad
+\bigl(\lvert\tilde\Xi\rvert^{2}\bigr)_{\mathrm{trf}}=\tilde\Xi_{\mathrm{trf}}*\tilde\Xi_{\mathrm{trf}}^{\natural},
+\qquad
+\bigl(\tilde\Xi/\lvert\tilde\Xi\rvert\bigr)_{\mathrm{trf}}\neq\frac{\tilde\Xi_{\mathrm{trf}}}{\lvert\tilde\Xi\rvert_{\mathrm{trf}}} .
+$$</p>
+<p><strong>A degree-two object's label is a difference.</strong> Two modes at $k_1=1$ and $k_2=3$ give $\rho=2+2\cos 2x$: the transform has weight $2$ at the origin and $1$ at each of $\pm2$, and no weight at all at $k_1+k_2=4$. Measured on a grid of $4096$ points, the peaks are at $0$ and $\pm2$ with those amplitudes, and the bins that move when the grid is refined are artefacts. <strong>That is the beat, and the beat is the off-diagonal at its most literal</strong>: the only labels a density carries are the differences of the labels its amplitude carries. It is the same correlation the <a href="../articles_physics/the-fourier-transform-and-the-charged-proca-fluid.html">charged Proca Fourier article</a> writes on the right of its constraint as $\tilde A_{\mathrm{trf}}*\tilde A_{\mathrm{trf}}^{\natural}$.</p>
+<p><strong>A degree-zero object has no label at all.</strong> The quantum potential is unchanged when the amplitude is scaled: $\langle\nabla^{2}r/r\rangle$ measured $11.910638999227$ at $\lambda=0.5$, at $\lambda=1$ and at $\lambda=7$, to twelve digits. <strong>A degree-zero object is a ratio, and a ratio of two transforms is not the transform of a ratio.</strong> That single sentence is the block's whole difficulty with the fluid chart, and it is why the vector rung's "direction" behaves like the scalar rung's "quantum potential" although one is a vector and the other a scalar.</p>
+<h2 id="the-eight-pairs-confronted">The Eight Pairs, Confronted</h2>
+<p><strong>Each rung, with its two articles' verdicts and the one object both name.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>rung</th>
+<th>what the action article adds</th>
+<th>what the transform article cannot see</th>
+<th>the object both name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Schrödinger</td>
+<td>the quantum potential as a functional derivative; the velocity not canonical</td>
+<td>the density and the whole quantum layer</td>
+<td>$Q$</td>
+</tr>
+<tr>
+<td>charged Schrödinger</td>
+<td>the coupling as one substitution in the phase; two gauge-invariant combinations</td>
+<td>the curvature</td>
+<td>$\vec B$</td>
+</tr>
+<tr>
+<td>Klein–Gordon</td>
+<td>the shell as an equation of motion; the indefinite gradient energy</td>
+<td>the density and $Q_{\mathrm{qnt}}$</td>
+<td>the defect of the norm</td>
+</tr>
+<tr>
+<td>charged Klein–Gordon</td>
+<td>the coupling as a change of variable; a coupling-blind quantum sector</td>
+<td>the curvature, in the kinetic chart</td>
+<td>$F$</td>
+</tr>
+<tr>
+<td>spinor</td>
+<td>the canonical table; the non-closure in the Dirac bracket</td>
+<td>the scale and the rotor</td>
+<td>the frame's derivative</td>
+</tr>
+<tr>
+<td>charged spinor</td>
+<td>the coupling's reach: the phase and the boost, never the rotor</td>
+<td>the rotor's response</td>
+<td>the loop invariant</td>
+</tr>
+<tr>
+<td>Proca</td>
+<td>the mass term's double role, four results in one coefficient</td>
+<td>the direction, hence the vorticity</td>
+<td>the stiff law</td>
+</tr>
+<tr>
+<td>charged Proca</td>
+<td>the coupling in the derivative term and nowhere else</td>
+<td>the correlation on the constraint's right side</td>
+<td>$\tilde A_{\mathrm{trf}}*\tilde A_{\mathrm{trf}}^{\natural}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The scalar rungs agree that the quantum layer is the price of the amplitude's shape.</strong> Both articles of each pair locate the quantum sector in the second derivative of the magnitude, and both say the connection cannot reach it: the action states it as a term of the density, the transform as a blind spot of the label. One object, two signs, and the sign is the only difference.</p>
+<p><strong>The spinor rungs agree that the frame is a coordinate and not a datum.</strong> The action finds the frame's variables to be coordinates with no kinetic term, so their constraints are constraints and not equations; the transform finds a mode whose frame is constant, so the wave number cannot reach it. <strong>Nothing conjugates to the frame's value, only to its rate</strong> — and that is one statement, written once in each article.</p>
+<p><strong>The vector rungs agree that the mass is a constitutive law.</strong> The action finds the mass term supplying the pressure, the continuity equation, the stiffness of the flow and the loss of gauge freedom — four results in one coefficient. The transform finds the wave number in the scale and not in the phase, because the word has no phase. <strong>The mass term is the only term of the vector action that is not a derivative, and it is therefore the only place a scale can enter the word.</strong> The mass's location in the action and the momentum's location in the word are one fact read in two charts.</p>
+<p><strong>What no pair does.</strong> No pair computes a sound speed, no pair closes a bracket, and no pair supplies a temperature. The first of the three absences is a later section's subject; the other two are structural and the articles say so themselves.</p>
+<h2 id="the-invisible-object-is-a-covariance">The Invisible Object Is a Covariance</h2>
+<p><strong>The claim.</strong> In each of the eight pairs the object the transform cannot see is a correlation of the field with itself, and both integrals present that same object: the action as a term of the density, the transform as a failure of additivity. <strong>It is one object seen once as a number and once as a defect.</strong></p>
+<p><strong>The measurement.</strong> Superpose two modes of amplitudes $1$ and $\eta$ at labels $k_1$ and $k_2$, write the interference term $I(x)=2\eta\cos(\Delta k\,x)$ with $\Delta k=k_2-k_1$, and measure $\mathcal Q=\langle\nabla^{2}r/r\rangle$, with $Q=-\frac{\hbar^{2}}{2m}\mathcal Q$. The deficiency is quadratic in $\eta$ — the ratio is $4.01$ per halving of $\eta$, and $1.9996$ at $\eta=0.025$ — and it is</p>
+<p>$$
+\Delta\langle\mathcal Q\rangle=\frac{(\Delta k)^{2}}{4}\,\overline{I^{2}}
+=\tfrac12\,\eta^{2}\,(\Delta k)^{2},
+\qquad \overline{I^{2}}=2\eta^{2}.
+$$</p>
+<p><strong>The numbers, at $\eta=10^{-4}$.</strong> Measured $0.499599$, $1.993585$, $7.897726$, $4.467569$, $30.388546$ for $\Delta k=1,2,4,3,8$, against $\tfrac12(\Delta k)^{2}=0.5,2,8,4.5,32$. The residual is the lattice's, and it falls by a factor $16$ each time the step falls by $4$ — $3.208\times10^{-3}$, $1.998\times10^{-4}$, $1.181\times10^{-5}$ — so its form is $(h\Delta k)^{2}/12$ and the coefficient is exact in the continuum.</p>
+<p><strong>What the formula says.</strong> The deficiency is the <em>mean square of the interference term</em>, weighted by the square of the label separation. That is the shape of a second moment, and it is why the word covariance is the right one: a covariance is a spread in the labels carried by the interference between them, and with two labels present the spread is $\Delta k$ and the carrier is $\overline{I^{2}}$.</p>
+<p><strong>And the response starts at second order for a reason.</strong> A small admixture cannot move the mean of a degree-zero object at first order: $Q$ is unchanged by a rescaling of the field, so the first-order term is a degree-one statement and there is none to make. <strong>The deficiency is quadratic in $\eta$ because the object is degree zero</strong>, and that is the same degree argument the previous section used to explain why no label carries $Q$.</p>
+<p><strong>So the quantum potential at a superposition is not a number about the superposition's size.</strong> It is a number about how far apart its labels are, weighted by the interference that joins them — and both factors are unavailable to a transform that reads single labels.</p>
+<p><strong>Which is why the block's two integrals keep meeting at the same object.</strong> The action integrates a density whose off-diagonal part is this covariance; the transform was never able to diagonalise it, and what it can do instead is name its support, which is the label difference. <strong>A covariance is exactly the object that a linear basis cannot diagonalise and a quadratic action cannot avoid.</strong></p>
+<h2 id="where-the-label-originates">Where the Label Originates</h2>
+<p><strong>Three objects of three different articles sit at $\tilde K_\Phi=0$, and they are one point.</strong></p>
+<p><strong>The charge.</strong> The action's symmetry supplies a current, and $Q=\int j^{0}\,d^{3}x=j^{0}_{\mathrm{trf}}(\vec K=0)$. Measured on $j^{0}=e^{-x^{2}}$: the transform at $K=0$ gives $1.7724538509$, the integral gives $1.7724538509$, and at $K=1$ the transform has fallen to $1.3803884470$. <strong>Noether's charge is a single point of the transform</strong>, and the point is the origin of the spatial label. <a href="../articles_physics/noethers-theorem-in-biquaternionic-form.html">Noether's Theorem in Biquaternionic Form</a> states the current; the transform states where its integral lives.</p>
+<p><strong>The constant configuration.</strong> A spatially constant field has one non-zero bin, at $K=0$: measured, one bin out of $4096$, value $3.000000$. The <a href="../articles_physics/the-fourier-transform-and-the-proca-fluid.html">Proca Fourier article</a>'s subtitle is this instance — <em>the frame carries no momentum</em> — and the same holds for the three constant brackets of a spinor mode, which are why a mode's fluid is a rigid body in uniform translation.</p>
+<p><strong>The partition function.</strong> $Z[J]=\bigl(e^{iS/\hbar}\bigr)_{\mathrm{trf}}(J)$, so $Z=Z[0]$ is the same point again, now in the source variable. <a href="../articles_physics/the-feynman-propagator-in-biquaternionic-form.html">The Feynman Propagator in Biquaternionic Form</a> computes the object that the pole set of the previous section describes; the partition function is that object's value at the origin.</p>
+<p><strong>What follows.</strong> <em>The action's conserved quantities and the transform's constant configurations are the same point of the label space.</em> A symmetry of the action produces a quantity at the origin of the label; a configuration with no label puts all its weight there. <strong>That coincidence is why the two integrals can be compared at all</strong>: they have exactly one point in common, and it is not a coincidence of notation but the origin of the group of translations under which both are defined.</p>
+<h2 id="hydrodynamics-the-observable-with-no-mode">Hydrodynamics: The Observable With No Mode</h2>
+<p><strong>The equation of state is a ratio of two degree-two objects, so no mode can test it.</strong></p>
+<p>$$
+c_s^{2}=\frac{\delta p}{\delta\epsilon},
+\qquad \epsilon\ \text{and}\ p\ \text{both degree }2 .
+$$</p>
+<p><strong>At the scalar and the spinor rungs the denominator vanishes on a mode.</strong> A mode's density is constant, so $\delta\epsilon=0$ and the ratio is not defined at a label. This is the transform's way of stating what <a href="../articles_physics/the-lagrangian-of-the-klein-gordon-fluid.html">The Lagrangian of the Klein–Gordon Fluid</a> states as an absence of a term: <strong>there is no equation of state at these rungs, and a mode is precisely the configuration at which the question cannot be asked.</strong></p>
+<p><strong>At the vector rung the denominator does not vanish, and the ratio exists.</strong> A mode of the Proca fluid has an oscillating scale, so its density oscillates, so its pressure responds to a density change. <a href="../articles_physics/the-lagrangian-of-the-proca-fluid.html">The Lagrangian of the Proca Fluid</a> finds the mass term producing $\epsilon=p=\tfrac12 k_m^{2}r^{2}$, so the fluid is stiff, $c_s^{2}=1$. <strong>The one rung whose fluid has a sound speed is the one rung whose modes carry a density oscillation</strong>, and that is not two facts but one.</p>
+<p><strong>And the modes respect the sound speed.</strong> The dispersion $k_t'^{2}=\lvert\vec k_\Phi\rvert^{2}+k_m^{2}$ gives a group velocity $\lvert\vec k_\Phi\rvert/k_t'$:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\lvert\vec k_\Phi\rvert$, $k_m=1$</th>
+<th>$0.1$</th>
+<th>$0.5$</th>
+<th>$1$</th>
+<th>$2$</th>
+<th>$5$</th>
+<th>$20$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$v_g$</td>
+<td>$0.099504$</td>
+<td>$0.447214$</td>
+<td>$0.707107$</td>
+<td>$0.894427$</td>
+<td>$0.980581$</td>
+<td>$0.998752$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Bounded by the stiff sound speed and approaching it.</strong> So the rung with a constitutive law is the rung whose modes travel asymptotically at the speed that law names, and the three rungs without one are the three whose modes never change their density. <strong>This is a consistency and not a derivation</strong>: it does not produce $c_s^{2}=1$ from the dispersion, it only records that the two agree where both exist.</p>
+<p><strong>The other hydrodynamic absence.</strong> The stress at the quantum rungs carries a gradient term with no thermal counterpart, which is why the block places the fluid in the Korteweg class. A mode has no gradient term. <strong>So the Korteweg stress is invisible to the transform for exactly the reason the quantum potential is</strong>: it is built from the second derivative of a magnitude, and its support is at label differences rather than at labels.</p>
+<h2 id="quantum-physics-one-quantity-the-two-integrals-disagree-about">Quantum Physics: One Quantity the Two Integrals Disagree About</h2>
+<p><strong>The quantum potential is zero on every mode and is the whole of the equation of motion.</strong> The transform's verdict is arithmetic: a mode's magnitude is constant, so $Q=0$ identically, and a reader who worked only from the eight Fourier articles would conclude that the quantum sector is empty. The action's verdict is the opposite: the equation is the classical one plus $Q$, and $Q$ is what the fluid's acceleration law carries that Newton's does not.</p>
+<p><strong>The disagreement is not a contradiction, and the degree resolves it.</strong> $Q$ is degree zero: no scaling of the field can reveal it, no label carries it, and its support is at differences. <strong>A transform that looks for support finds nothing, and an action that looks for a term finds everything</strong>, and both are reading correctly.</p>
+<p><strong>The two integrals are the two halves of the quantum formalism, one per rung.</strong> The action carries the phase, and with it interference and the semiclassical limit; the transform carries the modulus, and with it the density and the Born rule. The block's two articles per rung are the two halves, and the object that neither can hold alone is the covariance of the previous section: <strong>it is a term in the action and a failure of additivity in the transform, and the two descriptions are the same fact.</strong></p>
+<h2 id="limits">Limits</h2>
+<p><strong>The pole-set identification needs a linear equation.</strong> It is a statement about a quadratic action and a diagonal symbol. Where the coupling enters a bracket, as at the two spinor rungs, the symbol is not diagonal, the article reports a translation instead of a pole set, and the section's first result has no content. The four charged articles are the useful comparison precisely because they fail in four different ways.</p>
+<p><strong>Constant coefficients.</strong> The transform's algebraic reading needs them, as the Fourier articles say in their own Limits sections. A position-dependent potential makes the symbol a function of the point and the transform a convolution, and none of the eight articles uses one.</p>
+<p><strong>Three integrals, two spaces.</strong> Only two of the three are over the same variable. The path integral is over configurations, and $Z[J]=\bigl(e^{iS/\hbar}\bigr)_{\mathrm{trf}}(J)$ is the whole of its relation to the transform here — a remark, not a derivation.</p>
+<p><strong>No new equation.</strong> Nothing in this article adds a result to the sixteen. Five statements are measured, all on a periodic lattice, all with the lattice correction displayed; they confirm what the articles already assert and carry no physics of their own.</p>
+<p><strong>Not the non-quantum limit.</strong> That audit is a different cut of the same corpus, by family rather than by integral, and it is <a href="../articles_internal/the-eight-families-an-audit-for-the-non-quantum-limit-and-the-approximation.html">The Eight Families</a>. The two cuts should agree where they overlap, and the scalar rows are where a reader can check it cheapest.</p>
+<h2 id="open-questions">Open Questions</h2>
+<ol>
+<li>
+<p><strong>Is $v_g\le c_s$ general?</strong> The stiff rung satisfies it. A barotropic fluid with $c_s^{2}\ne1$ would not, in this reading, and the reason may be that a mode is not a sound wave but a single label. What the transform would have to see to make the comparison is a <em>pair</em> of labels, and pairs are the covariance's territory.</p>
+</li>
+<li>
+<p><strong>Is there a transform that descends to the fluid chart?</strong> The obstruction is linearity. A Legendre transform on the label, which is what the velocity is to the wave number, is nonlinear and might descend where the Fourier transform does not. Nothing in the block does this.</p>
+</li>
+<li>
+<p><strong>Does the deficiency formula survive where the density is not $\lvert\phi\rvert^{2}$?</strong> At the relativistic rungs the fluid's density is $\gamma$-weighted, so the second moment would be taken against a different measure. The coefficient $\tfrac12\eta^{2}(\Delta k)^{2}$ is the free non-relativistic case and no more.</p>
+</li>
+<li>
+<p><strong>What replaces the pole set when the action is the fluid's own?</strong> The Korteweg action is not quadratic in any variable that carries a label, so there is no symbol. Whether the fluid's own variational principle has a transform at all is open, and the question is the natural end of this article.</p>
+</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p><strong>Two integrals over one variable, and a third over the configurations that connect them.</strong> The action adds the density up; the transform adds it up against a character; the path integral is the transform of the exponential of the action, read at zero source. The sixteen articles of the block are eight pairs, one of each kind per rung, and each pair is one computation in two charts.</p>
+<p><strong>Every Fourier article's support is its Lagrangian partner's pole set.</strong> The symbol's reciprocal is the propagator, the pole is the shell, the residue is the mode's weight, and a coupling that enters linearly translates the pole set without reshaping it. Three of the block's articles state that translation from three directions and this article states the reason: a constant connection shifts an argument.</p>
+<p><strong>The action is chart-blind and the transform is chart-sighted.</strong> A character respects sums and not products, every chart change in the block is a product, so the square does not close and does not close for one reason. The eight "invisible objects" are eight entries of one failure.</p>
+<p><strong>Invisible means not diagonal, and the degree decides.</strong> Degree one is diagonal; degree two is a correlation supported at differences of labels, which is the beat; degree zero has no label at all and is invisible in the stronger sense. A degree-zero object is a ratio, and a ratio of two transforms is not the transform of a ratio — the block's difficulty with the fluid chart, in one sentence.</p>
+<p><strong>The object the transform cannot see is a covariance.</strong> Its measure is $\tfrac12\eta^{2}(\Delta k)^{2}$: the interference's mean square, weighted by the square of the label separation. The action states it as a term, the transform as a failure of additivity, and it is the one object present in all sixteen articles.</p>
+<p><strong>Three things sit at the origin of the label</strong> — the Noether charge, the constant configuration and the partition function — and that is why the two integrals can be compared at all.</p>
+<p><strong>And one rung has a sound speed.</strong> The Proca fluid is stiff, $c_s=1$, its modes are bounded by that speed and approach it, and the three rungs below have no sound speed because a mode never changes their density. The equation of state is the one fluid observable with no mode.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$S$</td>
+<td>the action, an integral of $\mathcal L$ over spacetime</td>
+</tr>
+<tr>
+<td>$\mathcal L$</td>
+<td>the Lagrangian density, in whichever chart the article is using</td>
+</tr>
+<tr>
+<td>$\tilde\Xi_{\mathrm{trf}}(\tilde K_\Phi)$</td>
+<td>the transform of the field, a function of the label; the series writes no hat and marks the transform by the subscript</td>
+</tr>
+<tr>
+<td>$\tilde K_\Phi$</td>
+<td>the label, the wave number written in the algebra</td>
+</tr>
+<tr>
+<td>$k_t'$, $\vec k_\Phi$</td>
+<td>its time and space parts; $k_t'^{2}-\lvert\vec k_\Phi\rvert^{2}=k_m^{2}$</td>
+</tr>
+<tr>
+<td>$k_m$</td>
+<td>the mass in wave-number units, the block's $mc/\hbar$</td>
+</tr>
+<tr>
+<td>$\mathcal N(\tilde K_\Phi)$</td>
+<td>the symbol of the kernel of a quadratic action, one number per label</td>
+</tr>
+<tr>
+<td>$G_{\mathrm{prop}}$</td>
+<td>the kernel's inverse, the free propagator, with $G_{\mathrm{prop}}=1/\mathcal N$</td>
+</tr>
+<tr>
+<td>$Z[J]$</td>
+<td>the partition or generating functional, $Z[J]=\bigl(e^{iS/\hbar}\bigr)_{\mathrm{trf}}(J)$</td>
+</tr>
+<tr>
+<td>$\mathcal Q$</td>
+<td>the curvature ratio $\langle\nabla^{2}r/r\rangle$, with $Q=-\frac{\hbar^{2}}{2m}\mathcal Q$</td>
+</tr>
+<tr>
+<td>degree</td>
+<td>the power of $\lambda$ in the object's scaling under $\tilde\Xi\to\lambda\tilde\Xi$</td>
+</tr>
+<tr>
+<td>$\eta$</td>
+<td>the amplitude of the second mode in a superposition; $I=2\eta\cos(\Delta k\,x)$</td>
+</tr>
+<tr>
+<td>$\Delta k$</td>
+<td>the separation of the two labels, $k_2-k_1$</td>
+</tr>
+<tr>
+<td>$c_s$</td>
+<td>the sound speed, $\sqrt{\delta p/\delta\epsilon}$</td>
+</tr>
+<tr>
+<td>$v_g$</td>
+<td>the group velocity of a mode, $\lvert\vec k_\Phi\rvert/k_t'$</td>
+</tr>
+<tr>
+<td>$h$</td>
+<td>the lattice step of the measurements, with corrections of order $(h\Delta k)^{2}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<p><strong>The sixteen articles this one confronts.</strong> The Lagrangian side: <a href="../articles_physics/the-lagrangian-of-the-schrodinger-fluid.html">the Schrödinger fluid</a>, <a href="../articles_physics/the-lagrangian-of-the-charged-schrodinger-fluid.html">the charged Schrödinger fluid</a>, <a href="../articles_physics/the-lagrangian-of-the-klein-gordon-fluid.html">the Klein–Gordon fluid</a>, <a href="../articles_physics/the-lagrangian-of-the-charged-klein-gordon-fluid.html">the charged Klein–Gordon fluid</a>, <a href="../articles_physics/the-lagrangian-of-the-spin-fluid.html">the spin fluid</a>, <a href="../articles_physics/the-lagrangian-of-the-charged-spin-fluid.html">the charged spin fluid</a>, <a href="../articles_physics/the-lagrangian-of-the-proca-fluid.html">the Proca fluid</a>, <a href="../articles_physics/the-lagrangian-of-the-charged-proca-fluid.html">the charged Proca fluid</a>. The transform side: <a href="../articles_physics/the-fourier-transform-and-the-schrodinger-fluid.html">Schrödinger</a>, <a href="../articles_physics/the-fourier-transform-and-the-charged-schrodinger-fluid.html">charged Schrödinger</a>, <a href="../articles_physics/the-fourier-transform-and-the-klein-gordon-fluid.html">Klein–Gordon</a>, <a href="../articles_physics/the-fourier-transform-and-the-charged-klein-gordon-fluid.html">charged Klein–Gordon</a>, <a href="../articles_physics/the-fourier-transform-and-the-spin-fluid.html">spin</a>, <a href="../articles_physics/the-fourier-transform-and-the-charged-spin-fluid.html">charged spin</a>, <a href="../articles_physics/the-fourier-transform-and-the-proca-fluid.html">Proca</a>, <a href="../articles_physics/the-fourier-transform-and-the-charged-proca-fluid.html">charged Proca</a>.</p>
+<p><strong>Where the propagator is computed.</strong> <a href="../articles_physics/the-klein-gordon-propagator-and-its-greens-functions-in-biquaternionic-form.html">The Klein–Gordon Propagator and Its Green's Functions</a> and <a href="../articles_physics/the-feynman-propagator-in-biquaternionic-form.html">The Feynman Propagator</a> supply the object whose pole set this article identifies with the Fourier support. <a href="../articles_physics/noethers-theorem-in-biquaternionic-form.html">Noether's Theorem</a> supplies the current whose integral is the zero label.</p>
+<p><strong>The other cut of the same corpus.</strong> <a href="../articles_internal/the-eight-families-an-audit-for-the-non-quantum-limit-and-the-approximation.html">The Eight Families</a> sorts the articles by family and asks what each is worth for the non-quantum limit. This article sorts the same material by integral and asks what the two integrals say to each other. The two cuts should agree on the scalar rows.</p>
+<p><strong>Outside.</strong> L. Hörmander, "Fourier integral operators I", <em>Acta Mathematica</em> <strong>127</strong> (1971), for the general theory in which an operator's symbol and its singular structure are two views of one object. E. Madelung, "Quantentheorie in hydrodynamischer Form", <em>Zeitschrift für Physik</em> <strong>40</strong> (1927), and T. Takabayasi, "On the formulation of quantum mechanics associated with classical pictures", <em>Progress of Theoretical Physics</em> <strong>8</strong> (1952), for the two charts whose non-commutativity is this article's subject. D. J. Korteweg, "Sur la forme que prennent les équations du mouvement des fluides si l'on tient compte des forces capillaires", <em>Archives Néerlandaises</em> <strong>6</strong> (1901), for the class the block places the quantum fluid in.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

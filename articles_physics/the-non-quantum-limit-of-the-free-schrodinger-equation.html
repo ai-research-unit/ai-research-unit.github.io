@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Non-Quantum Limit of the Free Schrödinger Equation — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-non-quantum-limit-of-the-free-schrodinger-equation"><strong>The Non-Quantum Limit of the Free Schrödinger Equation</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The limit, in one sentence.</strong> Write a solution as an amplitude times a phase, and let the wavelength of the phase shrink against the length over which the amplitude varies; the phase then obeys the Hamilton–Jacobi equation and the amplitude obeys a transport equation, and no other equation survives.</p>
+<p><strong>The two objects the article keeps apart.</strong> The <em>limit</em> is the formal passage, and it produces two equations and no error. The <em>approximation</em> is that passage stopped at a stated order, and it produces a remainder and a region. <em>The Non-Quantum Limit of the Biquaternion Model</em> defines the two and fixes the criterion; this article carries them out for the free Schrödinger equation.</p>
+<p><strong>The parameter is one inverse length.</strong> Throughout, $\epsilon=1/(k_{\Phi}L)$ with $k_{\Phi}=\lvert\vec p\rvert/\hbar$ and $L$ the length over which the amplitude varies. The quantum potential over the kinetic energy is $\epsilon^{2}$, so the limit is the statement that this ratio goes to zero and the approximation is the statement that it stays below a stated size on a stated region.</p>
+<p><strong>What the article establishes, in four sentences.</strong> The decomposition is exact. The pair it produces is exact. Dropping the quantum potential gives the eikonal, whose characters are the classical trajectories. The transport equation gives the amplitude, in one dimension as $C/\sqrt{\lvert p\rvert}$ and in three as the van Vleck determinant.</p>
+<p><strong>What is not new.</strong> The amplitude–phase decomposition, the two real equations, the Hamilton–Jacobi equation, the method of characteristics, the optical–mechanical analogy, the transport equation, the WKB amplitude, the van Vleck determinant and the quantum potential are standard. Added here: the ordering of the three terms against one parameter, the biquaternion-norm reading of the eikonal, the sector location of every object the limit keeps, and the statement of where the approximation stops holding.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and $\vec e_\mu^{2}=-e_t$; $i$ is central; $\mathbb{B}_{C}$ is the centre, $\mathbb{B}_{H}$ the real-quaternion subspace, $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ the Hermitian and anti-Hermitian sectors; the state module is $\mathbb{B}\tilde\Pi\cong\mathbb{C}^{2}$. Time is $t'$ and $r'_t=c\,t'$ is the material length. The Hamiltonian is $\tilde H_\Psi=(-\frac{\hbar^{2}}{2m}\Delta_\Phi+V)e_t$, central. The mass wave number is $k_m=mc/\hbar$.</p>
+<h2 id="the-state-and-the-criterion">The State and the Criterion</h2>
+<p><strong>The word.</strong> A solution of the free equation is written</p>
+<p>$$
+\tilde\Xi=A\exp\!\left(i\theta_{\mathrm{act}}\right)\xi,
+\qquad
+\theta_{\mathrm{act}}=\frac{S}{\hbar}\in\mathbb{R},
+\qquad
+A>0,
+\qquad
+S\in\mathbb{R},
+\qquad
+\xi\ \text{constant},
+$$</p>
+<p>with a real positive amplitude and a real action. The exponential is central, so it commutes with $\xi$ and with everything else; the amplitude is real and therefore central too. Under the isomorphism $\mathsf M_2$ the state is a scalar phase multiplying both components equally, and $\xi$ is a spectator.</p>
+<p><strong>The decomposition is exact, and that is the first point.</strong> Every solution of the free equation with no nodal surface can be written this way, and the two equations below are then equivalent to the equation itself. Nothing is dropped in the writing.</p>
+<p><strong>The criterion is the ratio of two gradients.</strong> The momentum acting on the word separates into a real part and an imaginary part,</p>
+<p>$$
+\tilde p\,\tilde\Xi=\Big[\vec\nabla_\Phi S-i\,\hbar\,\vec\nabla_\Phi\ln A\Big]\tilde\Xi ,
+$$</p>
+<p>and the two terms have different sizes. Against the leading term,</p>
+<p>$$
+\frac{\lvert\hbar\vec\nabla_\Phi\ln A\rvert}{\lvert\vec\nabla_\Phi S\rvert}\sim\epsilon ,
+\qquad
+\frac{1}{k_{\Phi}^{2}}\left\lvert\frac{\Delta_\Phi A}{A}\right\rvert\sim\epsilon^{2} .
+$$</p>
+<p><strong>The second ratio is the one the limit uses.</strong> It is the quantum potential over the kinetic energy, and it is a square where the first is linear. The limit keeps the leading term of the momentum, the first correction keeps the amplitude gradient, and the exact rewriting keeps all three.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>object</th>
+<th>order in $\epsilon$</th>
+<th>kept by the limit</th>
+<th>kept by the first correction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\vec\nabla_\Phi S$</td>
+<td>$1$</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$\hbar\,\vec\nabla_\Phi\ln A$</td>
+<td>$\epsilon$</td>
+<td>no</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$\hbar^{2}\,\Delta_\Phi A/A$</td>
+<td>$\epsilon^{2}$</td>
+<td>no</td>
+<td>no</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>One warning about the word "order".</strong> The continuity equation below survives the limit untouched and is not an expansion; a reader who truncates both equations at order zero deletes the density and keeps the phase. The limit truncates one equation and leaves the other exact, and that asymmetry is the whole content of the pair.</p>
+<h2 id="the-two-real-equations">The Two Real Equations</h2>
+<p><strong>Apply the Hamiltonian and collect.</strong> From $\tilde H_\Psi\tilde\Xi=E\tilde\Xi$,</p>
+<p>$$
+\left[\frac{\lvert\vec\nabla_\Phi S\rvert^{2}}{2m}+V-E\right]A
+-\frac{i\,\hbar}{2m}\Big(2\,\vec\nabla_\Phi A\cdot\vec\nabla_\Phi S+A\,\Delta_\Phi S\Big)
+-\frac{\hbar^{2}}{2m}\Delta_\Phi A=0 .
+$$</p>
+<p>The first bracket is real, the middle term is purely imaginary, the last term is real. The separation is forced, because the centre of the algebra is $\mathbb{C}$ and the three pieces lie in different parts of it.</p>
+<p><strong>The imaginary part is the transport equation.</strong></p>
+<p>$$
+\vec\nabla_\Phi\cdot\left(A^{2}\,\vec\nabla_\Phi S\right)=0 .
+$$</p>
+<p><strong>The real part is the quantum Hamilton–Jacobi equation.</strong></p>
+<p>$$
+\frac{\lvert\vec\nabla_\Phi S\rvert^{2}}{2m}+V+Q=E ,
+\qquad
+Q=-\frac{\hbar^{2}}{2m}\,\frac{\Delta_\Phi A}{A} .
+$$</p>
+<p><strong>Both are exact and both are central.</strong> $A$ is central and real, $S$ is central and real, so every object in the pair lies in $\mathbb{B}_{C}$. The non-central structure of the algebra does not enter at any order, for a spin-zero free particle.</p>
+<p><strong>The sector statement is worth one line.</strong> The phase is a central $*$-unitary element, the amplitude is a central real one, and the phase gradient is a real quaternion in $\mathbb{B}_{H}$, the algebra's copy of space. The limit therefore takes a state spread over the full algebra to a state in the centre times a real vector, and that contraction of support is what it means to become a ray.</p>
+<h2 id="the-eikonal">The Eikonal</h2>
+<p><strong>Drop the third term.</strong> What remains of the real equation is</p>
+<p>$$
+\frac{\lvert\vec\nabla_\Phi S\rvert^{2}}{2m}+V=E ,
+$$</p>
+<p>the Hamilton–Jacobi equation for a particle of energy $E$ in the potential $V$.</p>
+<p><strong>In the algebra it is a norm.</strong> The phase gradient is the real quaternion $\vec\nabla_\Phi S=\sum_\mu(\partial S/\partial R_\mu)\vec e_\mu$, and</p>
+<p>$$
+\langle\vec\nabla_\Phi S\rangle_{\natural}=\lvert\vec\nabla_\Phi S\rvert^{2},
+$$</p>
+<p>because $\vec\nabla_\Phi S\,\vec\nabla_\Phi S^{\natural}=\lvert\vec\nabla_\Phi S\rvert^{2}e_t$. The eikonal is then the statement in the centre</p>
+<p>$$
+\boxed{\ \frac{1}{2m}\langle\vec\nabla_\Phi S\rangle_{\natural}=E-V\ }
+$$</p>
+<p>that <strong>the kinetic energy is the biquaternion norm of the phase gradient</strong>.</p>
+<p><strong>Two consequences follow at once.</strong> The right side is positive where $E>V$, and the norm of a real vector is positive, so the equation is solvable in the allowed region. Where $E<V$ the right side is negative, no real phase gradient solves it, and the momentum turns imaginary; that is the algebraic statement of the forbidden region, and it needs no separate discussion of exponential behaviour. The vanishing norm would be a zero divisor, and the phase gradient never reaches one, because its norm is fixed by the energy defect and vanishes only where the particle stops.</p>
+<p><strong>The characters are the trajectories.</strong> Writing $\vec p=\vec\nabla_\Phi S$, the characteristic system is</p>
+<p>$$
+\frac{d\vec r}{dt'}=\frac{\vec p}{m},
+\qquad
+\frac{d\vec p}{dt'}=-\vec\nabla_\Phi V ,
+$$</p>
+<p>against the clock $t'$. The wave fronts $S=\text{const}$ are the surfaces of constant phase, the rays are the trajectories, and the phase gradient is the ray direction at each point.</p>
+<p><strong>The free case is the plane wave.</strong> For the free particle the complete integral is</p>
+<p>$$
+S=\vec p\cdot\vec r-E\,t',
+\qquad
+E=\frac{\lvert\vec p\rvert^{2}}{2m},
+$$</p>
+<p>whose gradient is the constant $\vec p$ and whose phase is $\mathrm{Sc}(\tilde K_\Phi\tilde R_\Phi^{\natural})$ with $\tilde K_\Phi=\tilde P_\Phi/\hbar$. The limit has then changed nothing, because a plane wave is semiclassical exactly: its amplitude is constant and its ratio $\epsilon$ vanishes. <strong>The limit acts only where the amplitude varies</strong>, and a plane wave is the case in which it has nothing to do.</p>
+<p><strong>The separable case.</strong> For $V=\sum_\eta V_\eta(x_\eta)$ the equation separates, $S=\sum_\eta S_\eta$, each term obeying $\frac{1}{2m}(dS_\eta/dx_\eta)^{2}+V_\eta=E_\eta$ with $\sum_\eta E_\eta=E$, so that</p>
+<p>$$
+S_\eta(x_\eta)=\pm\int^{x_\eta}\sqrt{2m\left(E_\eta-V_\eta(\zeta)\right)}\;d\zeta .
+$$</p>
+<p>The two signs are the two directions of motion, and the turning points $E_\eta=V_\eta$ are where the branches meet and the amplitude below diverges.</p>
+<h2 id="the-transport-and-the-amplitude">The Transport and the Amplitude</h2>
+<p><strong>The transport equation is a conservation law.</strong> Since $\vec\nabla_\Phi S=m\vec v$ is the classical momentum, the equation $\vec\nabla_\Phi\cdot(A^{2}\vec\nabla_\Phi S)=0$ says that the current $\vec J=A^{2}\vec\nabla_\Phi S/m$ is divergence-free. It is the stationary continuity equation, and it is exact: the limit did not produce it and cannot spoil it.</p>
+<p><strong>In one dimension it integrates.</strong> $A^{2}\,dS/dx=\text{const}$, so</p>
+<p>$$
+A(x)=\frac{C}{\sqrt{\lvert p(x)\rvert}},
+\qquad
+p(x)=\sqrt{2m\left(E-V(x)\right)} .
+$$</p>
+<p>The wave is large where the particle moves slowly, and small where it moves fast. That is the whole of the WKB amplitude, and it follows from the exact equation and not from an expansion.</p>
+<p><strong>In three dimensions it gives the van Vleck determinant.</strong></p>
+<p>$$
+\boxed{\ A\ \propto\ \left\lvert\det\left(\frac{\partial^{2}S_{\mathrm{cl}}}{\partial x_{i}\,\partial x_{f}}\right)_{i,f=1}^{3}\right\rvert^{1/2}\ }
+$$</p>
+<p>The determinant is the Jacobian of the map from initial to final position, so $A^{2}$ is the density of the ray congruence and the amplitude measures its focusing. Where the congruence crosses itself the determinant vanishes, the amplitude diverges, and the approximation has left its region; that is a caustic, and it is the second place where the article has to say that the result stops.</p>
+<p><strong>Why the amplitude may be taken real.</strong> A complex $A$ would put the amplitude in $\mathbb{B}_{C}$ and not in $\mathbb{R}e_t$, and the separation into real and imaginary parts would have to be redone. The real positive choice is the gauge in which $A^{2}$ is a density and the transport equation is a continuity equation; it is a choice and not an assumption, and it is the same choice the corpus makes everywhere.</p>
+<h2 id="the-error">The Error</h2>
+<p><strong>The discarded term is the quantum potential, and its size is a function of position.</strong> With $A=\exp(-x^{2}/4\sigma^{2})$ and $\epsilon=1/(k_\Phi\sigma)$,</p>
+<p>$$
+\rho(x)=\frac{\lvert Q\rvert}{E-V}=\epsilon^{2}\left\lvert\frac{x^{2}}{4\sigma^{2}}-\frac{1}{2}\right\rvert .
+$$</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\lvert x\rvert/\sigma$</th>
+<th>$0$</th>
+<th>$1$</th>
+<th>$\sqrt{2}$</th>
+<th>$2$</th>
+<th>$3$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\rho/\epsilon^{2}$</td>
+<td>$0.500$</td>
+<td>$0.250$</td>
+<td>$0$</td>
+<td>$0.500$</td>
+<td>$1.750$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The table is the argument.</strong> The ratio vanishes at $\sqrt 2\,\sigma$ and grows as $x^{2}$ beyond it, so for every $\epsilon$ it reaches one at $x\simeq2\sigma/\epsilon$. No value of the parameter makes the expansion uniform: the limit is a statement about equations, and the approximation is a statement about a region of one solution.</p>
+<p><strong>This is where the two words part.</strong> The limit needs no region and has no remainder. The approximation needs both, and the table is what a claim of approximation has to carry: the order kept and the place where it stops.</p>
+<p><strong>What the limit does not commute with.</strong> Two plane waves of wave numbers $k_\Phi$ and $k_\Phi+\delta k$ are each semiclassical exactly, and their sum has envelope wave number $\delta k$ and parameter $1/(\delta k\,L)$, which is large when the two are close. So</p>
+<p>$$
+\lim\left(\tilde\Xi_1+\tilde\Xi_2\right)\neq\lim\tilde\Xi_1+\lim\tilde\Xi_2 ,
+$$</p>
+<p>and the difference is the interference term. The limit is not a map on the state space: it takes a wave to its rays, and a ray with a density is not an element of the module.</p>
+<h2 id="where-the-approximation-stops">Where the Approximation Stops</h2>
+<p><strong>Three failures, and each is a place and not an order.</strong></p>
+<p><strong>At a turning point.</strong> $p\to0$, the amplitude $C/\sqrt{\lvert p\rvert}$ diverges, and the eikonal's two branches meet. The repair is a uniform approximation on an Airy scale, which the algebra does not supply; the standard methods are used unchanged.</p>
+<p><strong>At a caustic.</strong> The van Vleck determinant vanishes and the ray congruence folds. The same repair applies, and the same statement holds: the algebra supplies the location of the failure, not its cure.</p>
+<p><strong>Where the amplitude varies as fast as the phase.</strong> There $\epsilon$ is not small anywhere and the limit has no claim to make. That is the interior of a nodal region, and the density vanishes there.</p>
+<p><strong>One thing the limit never does.</strong> It does not select a subalgebra and it does not produce a state. The centre of the algebra is a canonical classical sector, and the limit does not land there; it selects a state-dependent slice, with $L$ as the context made quantitative. That refusal is the subject of <em>The Non-Quantum Limit of the Biquaternion Model</em> and is recorded here only so that the free case is not read as a contraction of the algebra.</p>
+<h2 id="what-the-biquaternion-form-adds">What the Biquaternion Form Adds</h2>
+<p><strong>Standard quantum physics, transcribed.</strong> Every formula in this article is in every textbook. The decomposition, the pair, the eikonal, the characteristics, the optical–mechanical analogy, the transport amplitude, the van Vleck determinant and the quantum potential are not new, and the ordering by $\epsilon$ is the standard semiclassical ordering.</p>
+<p><strong>Three things the notation supplies.</strong></p>
+<p><em>The eikonal is a norm.</em> $\frac{1}{2m}\langle\vec\nabla_\Phi S\rangle_{\natural}=E-V$ is one line, and it ties the leading-order equation to the same quadratic form whose vanishing defines the zero-divisor cone. The forbidden region then needs no separate postulate: it is where a real vector would need a negative norm.</p>
+<p><em>The phase gradient has a home.</em> It is a real quaternion in $\mathbb{B}_{H}$, while the momentum operator is Hermitian in $\mathbb{B}_{\Psi}$. The correspondence between them is the semiclassical statement that the operator's value on a ray is the classical vector, and it is a statement about sectors and not about limits.</p>
+<p><em>The whole expansion is central.</em> Phase, amplitude, quantum potential and the transport current all lie in $\mathbb{B}_{C}$, so the semiclassical expansion of a spin-zero particle never leaves the centre. That is why the free case is the clean one, and why the spin cases need a second step.</p>
+<p><strong>What it does not supply.</strong> A uniform approximation at turning points and caustics; a branch rule for a complex action; and any prediction that distinguishes the reformulation from scalar WKB.</p>
+<h2 id="summary">Summary</h2>
+<p>The state is $\tilde\Xi=A\exp(i\theta_{\mathrm{act}})\xi$ with a central phase, a real central amplitude and a constant module element. The momentum acts as $\tilde p\tilde\Xi=[\vec\nabla_\Phi S-i\hbar\vec\nabla_\Phi\ln A]\tilde\Xi$, with the leading term a real quaternion in $\mathbb{B}_{H}$. Separating the equation gives the exact pair</p>
+<p>$$
+\vec\nabla_\Phi\cdot\left(A^{2}\vec\nabla_\Phi S\right)=0 ,
+\qquad
+\frac{\lvert\vec\nabla_\Phi S\rvert^{2}}{2m}+V+Q=E ,
+\qquad
+Q=-\frac{\hbar^{2}}{2m}\frac{\Delta_\Phi A}{A} .
+$$</p>
+<p>Dropping $Q$ gives the eikonal $\frac{1}{2m}\langle\vec\nabla_\Phi S\rangle_{\natural}=E-V$, whose characters are the classical trajectories. The transport equation is untouched by the limit and gives $A=C/\sqrt{\lvert p\rvert}$ in one dimension and the van Vleck determinant in three. The error is the quantum potential over the kinetic energy, $\epsilon^{2}\lvert x^{2}/4\sigma^{2}-\frac12\rvert$ for a Gaussian, and it reaches one at $x\simeq2\sigma/\epsilon$ for every $\epsilon$, so the approximation holds on a region and never on a solution. The limit does not commute with superposition, and the failure at turning points and caustics is a place and not an order.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$</td>
+<td>Biquaternion algebra</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{C}$, $\mathbb{B}_{H}$</td>
+<td>Centre; real-quaternion subspace</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$</td>
+<td>Hermitian and anti-Hermitian sectors</td>
+</tr>
+<tr>
+<td>$\tilde\Xi=A\exp(i\theta_{\mathrm{act}})\xi$</td>
+<td>The state in amplitude and phase; $A>0$ real, $S$ real, $\xi$ constant</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{act}}=S/\hbar$</td>
+<td>The angle of the action</td>
+</tr>
+<tr>
+<td>$\vec\nabla_\Phi S$</td>
+<td>Phase gradient; real quaternion in $\mathbb{B}_{H}$</td>
+</tr>
+<tr>
+<td>$\langle\vec\nabla_\Phi S\rangle_{\natural}=\lvert\vec\nabla_\Phi S\rvert^{2}$</td>
+<td>Its biquaternion norm</td>
+</tr>
+<tr>
+<td>$\epsilon=1/(k_{\Phi}L)$</td>
+<td>The parameter of the limit</td>
+</tr>
+<tr>
+<td>$k_{\Phi}=\lvert\vec p\rvert/\hbar$, $k_m=mc/\hbar$</td>
+<td>Momentum and mass wave numbers</td>
+</tr>
+<tr>
+<td>$Q=-\frac{\hbar^{2}}{2m}\Delta_\Phi A/A$</td>
+<td>Quantum potential; central real scalar</td>
+</tr>
+<tr>
+<td>$\frac{1}{2m}\langle\vec\nabla_\Phi S\rangle_{\natural}=E-V$</td>
+<td>The eikonal, as a norm</td>
+</tr>
+<tr>
+<td>$\vec\nabla_\Phi\cdot(A^{2}\vec\nabla_\Phi S)=0$</td>
+<td>Transport equation; exact</td>
+</tr>
+<tr>
+<td>$A=C/\sqrt{\lvert p\rvert}$</td>
+<td>Amplitude in one dimension</td>
+</tr>
+<tr>
+<td>$\lvert\det\partial^{2}S_{\mathrm{cl}}/\partial x_i\partial x_f\rvert^{1/2}$</td>
+<td>Van Vleck determinant</td>
+</tr>
+<tr>
+<td>$\rho=\lvert Q\rvert/(E-V)$</td>
+<td>The error of the approximation</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>H. Goldstein, C. P. Poole, and J. L. Safko, <em>Classical Mechanics</em> (Addison-Wesley, 2002), for the Hamilton–Jacobi equation, its characteristics and the optical–mechanical analogy.</li>
+<li>L. D. Landau and E. M. Lifshitz, <em>Quantum Mechanics: Non-Relativistic Theory</em> (Pergamon, 1977), for the semiclassical expansion and the transport equation.</li>
+<li>A. Messiah, <em>Quantum Mechanics</em> (North-Holland, 1961), for the amplitude–phase separation and the quantum potential.</li>
+<li>M. V. Berry and K. E. Mount, "Semiclassical approximations in wave mechanics," <em>Reports on Progress in Physics</em> <strong>35</strong> (1972) 315–397, for the uniform approximations and the failure at caustics.</li>
+<li>R. G. Littlejohn, "The semiclassical evolution of wave packets," <em>Physics Reports</em> <strong>138</strong> (1986) 193–291, for the error estimates that replace a closed-form remainder.</li>
+<li>D. Bohm, "A Suggested Interpretation of the Quantum Theory in Terms of 'Hidden' Variables," <em>Physical Review</em> <strong>85</strong> (1952) 166–193, for the quantum potential and the trajectory reading.</li>
+<li>J. H. Van Vleck, "The correspondence principle in the statistical interpretation of quantum mechanics," <em>Proceedings of the National Academy of Sciences</em> <strong>14</strong> (1928) 178–188, for the determinant that carries the amplitude.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Non-Quantum Limit of the Coupled Schrödinger Equation — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-non-quantum-limit-of-the-coupled-schrodinger-equation"><strong>The Non-Quantum Limit of the Coupled Schrödinger Equation</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>What changes when a connection is present.</strong> Three things and no more. The phase gradient becomes the kinetic momentum, the potential energy enters the phase equation, and the transport equation carries the kinetic velocity. The quantum potential is untouched, the amplitude stays real and central, and the algebra of the limit does not grow a single new object.</p>
+<p><strong>Why so little changes.</strong> The connection is a central-imaginary number in every slot, so in the polar chart it joins the phase bracket and nothing else. <em>The Coupled Schrödinger Equation in Biquaternionic Polar Variables</em> proves this from the four-bracket split of the logarithmic derivative: the scale bracket receives nothing, the boost bracket receives nothing, the rotor bracket receives nothing. The limit is built from the scale and the phase gradient, so it receives the connection in exactly one place.</p>
+<p><strong>The parameter.</strong> $\epsilon=1/(k_{\Phi}L)$, with $k_{\Phi}$ the wave number of the phase and $L$ the length over which the amplitude varies. The connection does not enter the criterion: a magnetic field bends the rays and does not change the length over which an amplitude varies, and an electric potential shifts the phase's rate uniformly and does not touch the scale.</p>
+<p><strong>What the article establishes, in four sentences.</strong> The coupled pair is exact. The eikonal is the free eikonal with the kinetic momentum, and its characters are the trajectories of a charge. The transport equation is exact and its current is the kinetic one. The circulation quantum $2\pi\hbar n+ϙ\Phi_B$ is exact and survives the limit unchanged, because it is a statement about a loop and not about a length.</p>
+<p><strong>What is not new.</strong> The covariant Madelung pair is standard quantum hydrodynamics, and the Lorentz force from the eikonal is the standard optical–mechanical derivation. Added here: the ordering by $\epsilon$ with the connection in place, the proof that the connection cannot enter the quantum potential, the location of the gauge direction in the limit, and the statement that the circulation is an exact invariant of the pair rather than a result of the limit.</p>
+<p><strong>Conventions.</strong> Those of the polar companion, unchanged. Time is $t'$; the connection is $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$ with $\varphi=c\,a'_t$; $ϙ$ is minus the electric charge, so the mechanical momentum is $\vec\pi=-i\hbar\nabla+ϙ\vec A$ and the potential energy is $-ϙ\varphi$; the density is $n=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=r^{2}\cosh\theta_{\mathrm{rpd}}$, which for the central field is $r^{2}$. The mass wave number is $k_m=mc/\hbar$.</p>
+<h2 id="the-state-and-the-connection">The State and the Connection</h2>
+<p><strong>The word.</strong> For the central field the state collapses to three parameters,</p>
+<p>$$
+\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\,\epsilon_{\pm}\,e_t ,
+\qquad
+r>0,
+\qquad
+S=\hbar\,\theta_{\mathrm{pha}},
+$$</p>
+<p>with $\epsilon_\pm=\pm1$ the branch. The boost is trivial and the rotor is trivial, so the word is a scale, a phase and a sign, and the two invariants of the coupled theory are</p>
+<p>$$
+\vec\pi=\nabla S+ϙ\vec A ,
+\qquad
+\mathcal E=-\partial_{t'}S+ϙ\varphi .
+$$</p>
+<p><strong>Both are gauge invariant and neither is separately natural.</strong> Under $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+ϙ\Gamma/\hbar$ and $\vec A\mapsto\vec A-\nabla\Gamma$, the phase gradient shifts by $-\frac{ϙ}{\hbar}\nabla\Gamma$ and the two halves cancel. The phase rate alone is not invariant, and the article records that because the limit is written on the phase: an expansion that keeps only $\partial_{t'}\theta_{\mathrm{pha}}$ keeps a gauge artefact.</p>
+<p><strong>The limit is therefore written on the invariants.</strong> $\vec\pi$ in place of $\nabla S$, and $\mathcal E$ in place of $-\partial_{t'}S$. This is not a cosmetic choice. A truncated equation in $\partial_{t'}\theta_{\mathrm{pha}}$ alone would change its value under a gauge transformation that the untruncated equation ignores, so the truncated equation would not be gauge invariant even where the original is.</p>
+<p><strong>The two momenta.</strong> $\vec p=\nabla S$ is canonical and $\vec\pi=\vec p+ϙ\vec A$ is kinetic. The polar chart's flow statement is that the constant connection shifts the two coefficients of the element: $h_t\mapsto h_t-ϙ\varphi$ and $\vec h_\Psi\mapsto\vec h_\Psi+ϙ\vec A$. The second is the kinetic momentum and the first is the kinetic energy, so the two settings name the same pair.</p>
+<h2 id="the-two-real-equations">The Two Real Equations</h2>
+<p><strong>The covariant pair, exact.</strong> Varying the phase and varying the scale of the coupled equation gives</p>
+<p>$$
+\partial_{t'}\left(r^{2}\right)+\nabla\cdot\left(r^{2}\,\frac{\nabla S+ϙ\vec A}{m}\right)=0 ,
+$$</p>
+<p>$$
+\partial_{t'}S+\frac{\lvert\nabla S+ϙ\vec A\rvert^{2}}{2m}-ϙ\varphi+Q=0 ,
+\qquad
+Q=-\frac{\hbar^{2}}{2m}\,\frac{\Delta r}{r} .
+$$</p>
+<p><strong>Three changes from the free pair, and the list is complete.</strong> The kinetic term carries $\vec\pi$ and not $\nabla S$; the phase equation carries $-ϙ\varphi$; the transport equation carries the kinetic velocity $\vec\pi/m$ and not $\nabla S/m$.</p>
+<p><strong>The quantum potential is unchanged, and that is a theorem and not an observation.</strong> $Q$ is built from $r$ and its ordinary Laplacian. The connection is central imaginary in every slot, so it cannot enter the scale gradient; the scale bracket of the logarithmic derivative is real, and the connection's addition is imaginary. <strong>A gauge field cannot change the size of the quantum potential of a scalar state</strong>, and the limit therefore drops the same term with and without a connection.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>object</th>
+<th>free</th>
+<th>coupled</th>
+<th>changed by the connection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>transport current</td>
+<td>$r^{2}\nabla S/m$</td>
+<td>$r^{2}\vec\pi/m$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>kinetic term of the eikonal</td>
+<td>$\lvert\nabla S\rvert^{2}/2m$</td>
+<td>$\lvert\vec\pi\rvert^{2}/2m$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>potential term</td>
+<td>$0$</td>
+<td>$-ϙ\varphi$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>quantum potential</td>
+<td>$-\frac{\hbar^{2}}{2m}\frac{\Delta r}{r}$</td>
+<td>same</td>
+<td>no</td>
+</tr>
+<tr>
+<td>amplitude, real and positive</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>One asymmetry worth stating.</strong> The connection moves the phase and only the phase, so the limit that reads the phase equation inherits the whole of the coupling, and the limit that reads the density inherits only the velocity. That is why the coupled limit is a mechanics of a charged fluid and not a new expansion.</p>
+<h2 id="the-eikonal">The Eikonal</h2>
+<p><strong>Drop the quantum potential.</strong></p>
+<p>$$
+\partial_{t'}S+\frac{\lvert\nabla S+ϙ\vec A\rvert^{2}}{2m}-ϙ\varphi=0 .
+$$</p>
+<p><strong>In the algebra it is a norm, shifted.</strong> Writing $\vec\pi$ for the kinetic momentum,</p>
+<p>$$
+\frac{1}{2m}\langle\vec\pi\rangle_{\natural}=\mathcal E ,
+\qquad
+\mathcal E=-\partial_{t'}S+ϙ\varphi ,
+$$</p>
+<p>so the kinetic energy is the biquaternion norm of the kinetic momentum, exactly as in the free case with $\vec\pi$ in place of $\vec p$. The kinetic momentum is a real quaternion, its norm is the central kinetic energy, and the identity is the free one with the connection absorbed into the momentum.</p>
+<p><strong>The characters are the trajectories of a charge.</strong> The characteristic system is $\dot{\vec r}=\vec\pi/m$ and $\dot{\vec p}=-\nabla H$ with $H=\frac{\lvert\vec\pi\rvert^{2}}{2m}-ϙ\varphi$. Differentiating the eikonal and using that the curl of a gradient vanishes gives the Lorentz force in the article's convention,</p>
+<p>$$
+\frac{d\vec\pi}{dt'}=-ϙ\left(\vec E+\vec v\times\vec B\right),
+\qquad
+\vec v=\frac{\vec\pi}{m},
+\qquad
+\vec E=-\nabla\varphi-\partial_{t'}\vec A ,
+$$</p>
+<p>which is $q(\vec E+\vec v\times\vec B)$ with $q=-ϙ$. <strong>The force is one step from the eikonal and needs no separate postulate</strong>, and the step is the same gradient that produced the free Newton equation.</p>
+<p><strong>Two structural readings.</strong> The canonical flow is irrotational, $\nabla\times\nabla S=0$, and the kinetic flow is rotational exactly where the magnetic field is,</p>
+<p>$$
+\nabla\times\vec v=\frac{ϙ}{m}\,\vec B .
+$$</p>
+<p>So the magnetic field is the only source of vorticity in the limit, and a region with $\vec B=0$ has an irrotational kinetic flow there. That is the limit's statement of the Aharonov–Bohm structure: the vector potential is invisible in the local velocity's curl and visible on a loop.</p>
+<p><strong>A uniform potential does nothing to the rays.</strong> With $\vec A=0$ and $\varphi$ constant, the eikonal differs from the free one by a constant and the trajectories are identical; the phase's rate is shifted by $ϙ\varphi/\hbar$ and the scale is untouched. In the polar chart's flow language the constant potential translates the frequency and leaves the rapidity, the gap and the density exactly as they were.</p>
+<h2 id="the-transport">The Transport</h2>
+<p><strong>The equation is exact and it is not an expansion.</strong> $\partial_{t'}(r^{2})+\nabla\cdot(r^{2}\vec\pi/m)=0$ says that the density is transported by the kinetic velocity. It never contained $\hbar$, so the limit neither produces it nor spoils it.</p>
+<p><strong>Its content is one sentence.</strong> The fluid moves with $\vec\pi/m$ and not with $\nabla S/m$; the difference is $ϙ\vec A/m$, and it is the whole of the coupling's effect on the density's motion.</p>
+<p><strong>The current is gauge invariant.</strong> $r^{2}\vec\pi/m$ is invariant term by term, while $r^{2}$ and $\vec\pi$ are separately invariant and $\vec A$ is not. The current is therefore a physical object and the vector potential is not, which is the standard statement read on the pair.</p>
+<p><strong>The one-dimensional amplitude is the free one.</strong> Where $\vec A$ can be gauged away locally and the field is stationary, the transport equation reduces to the free one and $A=C/\sqrt{\lvert\pi\rvert}$: the amplitude is large where the kinetic momentum is small. In three dimensions the van Vleck determinant carries the amplitude, with the ray congruence now the congruence of the Lorentz trajectories; the focusing of a magnetic field on a bundle of rays is what the determinant measures, and a caustic in a magnetic field is the place where it vanishes.</p>
+<h2 id="the-circulation">The Circulation</h2>
+<p><strong>A loop, and the exact statement.</strong> Let $\vec B=0$ in a region that is not simply connected, and let the field be central there. The phase is single valued on the field, so its gradient integrates to $2\pi\hbar n$ around the loop with $n$ the winding, and the kinetic circulation is</p>
+<p>$$
+\oint\vec v\cdot d\vec l=\frac{2\pi\hbar\,n+ϙ\,\Phi_B}{m},
+\qquad
+\Phi_B=\oint\vec A\cdot d\vec l=\int_\Sigma\vec B\cdot d\vec S .
+$$</p>
+<p><strong>This is exact and it is not a result of the limit.</strong> It follows from the vorticity identity integrated over a surface, and it holds for any state of the polar form, semiclassical or not. The limit inherits it, and the reason it survives is that a circulation is a statement about a loop while the criterion is a statement about a length: no $\epsilon$ appears.</p>
+<p><strong>Where it belongs in the reading.</strong> It is a statement about the phase gradient, so it belongs to the operator setting, where a gradient exists. In the constant setting there is no loop, and the vector potential acts as a shift of the rotor's axis; the two readings agree on a plane wave, where the axis and the phase gradient are the same momentum.</p>
+<p><strong>What it needs.</strong> $\vec B=0$ on the surface and nothing else: not a weak field, not a slow field, not a field-free region. Where $\vec B\neq0$ the circulation is not quantised, because the phase's gradient need not be single valued there.</p>
+<h2 id="the-error">The Error</h2>
+<p><strong>The error is the free error.</strong> $Q$ is untouched by the connection, so $\rho=\lvert Q\rvert/\mathcal E$ is the free ratio with the kinetic energy in the denominator. For a Gaussian amplitude and a constant connection,</p>
+<p>$$
+\rho(x)=\epsilon^{2}\left\lvert\frac{x^{2}}{4\sigma^{2}}-\frac{1}{2}\right\rvert
+$$</p>
+<p>exactly as in the free case, and the table of <em>The Non-Quantum Limit of the Free Schrödinger Equation</em> applies unchanged.</p>
+<p><strong>The connection can make the region smaller without appearing in the ratio.</strong> A magnetic field focuses a bundle of rays, so $L$ shrinks along the bundle and $\epsilon$ grows; the ratio itself carries no $\vec A$. The two statements are consistent: the criterion is a property of the amplitude, and the field acts on the amplitude through the focusing of the congruence and not through the equation's coefficients.</p>
+<p><strong>That is the sharpest difference between the two limits.</strong> The relativistic limit's error is a number and the algebra's entries fix it. The non-quantum error is an operator that changes sign, and a connection can move its zeros by moving the amplitude and cannot change its shape.</p>
+<h2 id="the-gauge-direction-in-the-limit">The Gauge Direction in the Limit</h2>
+<p><strong>The free chart has no gauge direction; the coupled one has exactly one.</strong> In the free case the phase's rate is fixed and there is no freedom to fix. With the connection, $\theta_{\mathrm{pha}}$ acquires an additive function $\Gamma$ and the equation determines only $\mathcal E$.</p>
+<p><strong>The limit keeps the gauge structure intact, and it must.</strong> An expansion in $\epsilon$ that truncated $\partial_{t'}\theta_{\mathrm{pha}}$ alone would break gauge invariance, because the truncated object shifts while the exact one does not. Written on $\mathcal E$ and $\vec\pi$, as above, the truncated equations are gauge invariant order by order.</p>
+<p><strong>One consequence for the twelve articles.</strong> Every limit article in a coupled family has to state its expansion variable as an invariant combination and not as a bare derivative. That is a rule of the writing and not a theorem of the physics, and this article is where it is stated for the Schrödinger family.</p>
+<h2 id="what-the-biquaternion-form-adds">What the Biquaternion Form Adds</h2>
+<p><strong>Standard quantum hydrodynamics, transcribed.</strong> The covariant pair, the kinetic momentum, the potential energy in the phase equation, the Lorentz force from the eikonal, the vorticity identity, the circulation quantum and the amplitude are all standard. The ordering by $\epsilon$ and the statement of the error are standard too.</p>
+<p><strong>Four things the notation supplies.</strong></p>
+<p><em>The connection's destination is a type statement.</em> It is central imaginary in every slot, so it joins the phase bracket and cannot reach the scale, the boost or the rotor. That is not an approximation and not a smallness statement: it is a statement about which of the four brackets of the logarithmic derivative can receive an addition of that type. It is why the quantum potential is untouched, and it is one line in the polar chart where the element form needs an argument.</p>
+<p><em>The two invariants have a home.</em> $\vec\pi$ is a real quaternion and $\mathcal E$ is central, so the mechanical momentum and the mechanical energy sit in $\mathbb{B}_{H}$ and $\mathbb{B}_{C}$ in the same way the free $\vec p$ and $E$ do. The coupled limit therefore changes no sector assignment.</p>
+<p><em>The gauge group is one coordinate.</em> Seven of the eight parameters are inert and one is translated, by a function of the point. The limit's gauge problem is then visibly one-dimensional: one direction in the chart, and the truncation must be transverse to it.</p>
+<p><em>The loop is a chart statement.</em> The circulation is $\oint\nabla S\cdot d\vec l$ computed on the phase coordinate, with the connection added; the Aharonov–Bohm phase is the value of the phase coordinate around a loop, and the polar chart makes that the primitive object rather than a derived one.</p>
+<p><strong>What it does not supply.</strong> No new solution, no decoupling of the brackets from the parameters, and no second constant of motion. The word remains a chart in which the structure is visible, and not a solution method.</p>
+<h2 id="summary">Summary</h2>
+<p>The coupled limit is the free limit read on two invariant combinations. The state is $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\epsilon_\pm e_t$; the invariants are $\vec\pi=\nabla S+ϙ\vec A$ and $\mathcal E=-\partial_{t'}S+ϙ\varphi$. The exact pair is</p>
+<p>$$
+\partial_{t'}\left(r^{2}\right)+\nabla\cdot\left(r^{2}\frac{\vec\pi}{m}\right)=0 ,
+\qquad
+\partial_{t'}S+\frac{\lvert\vec\pi\rvert^{2}}{2m}-ϙ\varphi+Q=0 ,
+\qquad
+Q=-\frac{\hbar^{2}}{2m}\frac{\Delta r}{r} .
+$$</p>
+<p>Dropping $Q$ gives the eikonal $\frac{1}{2m}\langle\vec\pi\rangle_{\natural}=\mathcal E$, whose characters are the Lorentz trajectories with $\frac{d\vec\pi}{dt'}=-ϙ(\vec E+\vec v\times\vec B)$, and whose kinetic flow has $\nabla\times\vec v=\frac{ϙ}{m}\vec B$. The transport equation is exact and carries the kinetic velocity. The circulation $\oint\vec v\cdot d\vec l=(2\pi\hbar n+ϙ\Phi_B)/m$ is exact and no $\epsilon$ appears in it. The quantum potential is untouched by the connection, so the error of the approximation is the free error, and the connection can shrink the region only by focusing the rays. The gauge direction is one-dimensional and the truncation must be written on invariants, or it breaks the gauge symmetry the exact equation has.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\epsilon_\pm e_t$</td>
+<td>The central-field word; scale, phase, branch</td>
+</tr>
+<tr>
+<td>$S=\hbar\,\theta_{\mathrm{pha}}$</td>
+<td>The action</td>
+</tr>
+<tr>
+<td>$ϙ$</td>
+<td>The coupling; minus the electric charge</td>
+</tr>
+<tr>
+<td>$\tilde A_\Phi=i(\varphi/c)e_t+\vec A$</td>
+<td>The material connection</td>
+</tr>
+<tr>
+<td>$\vec p=\nabla S$</td>
+<td>Canonical momentum</td>
+</tr>
+<tr>
+<td>$\vec\pi=\nabla S+ϙ\vec A$</td>
+<td>Kinetic momentum; real quaternion in $\mathbb{B}_{H}$</td>
+</tr>
+<tr>
+<td>$\mathcal E=-\partial_{t'}S+ϙ\varphi$</td>
+<td>Kinetic energy; central, gauge invariant</td>
+</tr>
+<tr>
+<td>$\epsilon=1/(k_{\Phi}L)$</td>
+<td>The parameter of the limit</td>
+</tr>
+<tr>
+<td>$Q=-\frac{\hbar^{2}}{2m}\Delta r/r$</td>
+<td>Quantum potential; unchanged by the connection</td>
+</tr>
+<tr>
+<td>$\frac{1}{2m}\langle\vec\pi\rangle_{\natural}=\mathcal E$</td>
+<td>The eikonal, as a norm</td>
+</tr>
+<tr>
+<td>$\nabla\times\vec v=\frac{ϙ}{m}\vec B$</td>
+<td>Vorticity of the kinetic flow</td>
+</tr>
+<tr>
+<td>$\frac{d\vec\pi}{dt'}=-ϙ(\vec E+\vec v\times\vec B)$</td>
+<td>Lorentz force from the eikonal</td>
+</tr>
+<tr>
+<td>$\oint\vec v\cdot d\vec l=\frac{2\pi\hbar n+ϙ\Phi_B}{m}$</td>
+<td>Circulation; exact</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>L. D. Landau and E. M. Lifshitz, <em>Quantum Mechanics: Non-Relativistic Theory</em> (Pergamon, 1977), for the covariant Madelung pair and the circulation quantum.</li>
+<li>A. Messiah, <em>Quantum Mechanics</em> (North-Holland, 1961), for the amplitude–phase separation with a vector potential.</li>
+<li>E. Madelung, "Quantentheorie in hydrodynamischer Form," <em>Zeitschrift für Physik</em> <strong>40</strong> (1927) 322–326, for the hydrodynamic form of the Schrödinger equation.</li>
+<li>T. Takabayasi, "On the formulation of quantum mechanics associated with classical pictures," <em>Progress of Theoretical Physics</em> <strong>8</strong> (1952) 143–182, for the hydrodynamical reading with a connection.</li>
+<li>Y. Aharonov and D. Bohm, "Significance of electromagnetic potentials in the quantum theory," <em>Physical Review</em> <strong>115</strong> (1959) 485–491, for the loop statement.</li>
+<li>M. V. Berry, "Quantum phase corrections from adiabatic iteration," <em>Proceedings of the Royal Society A</em> <strong>414</strong> (1987) 31–46, for the geometric phase read as a phase-coordinate holonomy.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

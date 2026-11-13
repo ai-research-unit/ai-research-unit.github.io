@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Fourier Transform and the Klein–Gordon Fluid: The Mode Is a Unit Velocity — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-fourier-transform-and-the-kleingordon-fluid-the-mode-is-a-unit-velocity"><strong>The Fourier Transform and the Klein–Gordon Fluid: The Mode Is a Unit Velocity</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The Klein–Gordon fluid's one defect is that its four-velocity is a unit only where the quantum potential vanishes, and a mode is exactly a point where it does.</strong> That is the article's finding, and it is a statement about supports. The shell is $E^{2}/c^{2}-\lvert\vec p\rvert^{2}=m^{2}c^{2}+2mQ_{\mathrm{qnt}}$, so a mode — whose scale is constant and whose $Q_{\mathrm{qnt}}$ therefore vanishes — sits exactly on the mass shell, and it sits there with a unit four-velocity and with no qualification at all.</p>
+<p><strong>The defect is a radial displacement of the support, and that is the second finding.</strong> The quantum potential enters the shell's right-hand side, so it changes the radius of the local hyperboloid and not its centre. The charged companion's potential does the opposite: it enters as a translation and leaves the radius alone. <strong>Two potentials, one radial and one translational, and the momentum-space picture separates them without any algebra.</strong></p>
+<p><strong>The third finding is about the sheets.</strong> The conserved density is the charge density and its sign is the sign of the energy, so a mode lies on one sheet and one sheet only. A single mode's charge density has a definite sign. A superposition that occupies both sheets has a density of both signs, and the article gives the measured range.</p>
+<p><strong>Position in the block.</strong> This is the Fourier companion of <a href="the-klein-gordon-fluid.html">The Klein–Gordon Fluid</a> and of <a href="the-lagrangian-of-the-klein-gordon-fluid.html">The Lagrangian of the Klein–Gordon Fluid</a>. Its charged companion is <a href="the-fourier-transform-and-the-charged-klein-gordon-fluid.html">The Fourier Transform and the Charged Klein–Gordon Fluid</a>. The rung below is <a href="the-fourier-transform-and-the-schrodinger-fluid.html">The Fourier Transform and the Schrödinger Fluid</a>, and §<em>The Two Scalar Rungs</em> states what the passage removes.</p>
+<h2 id="conventions">Conventions</h2>
+<p>The free companion's: $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$ on a central field, $\rho_{\mathrm{num}}=r^{2}$, $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$, $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime 2}$ on the material sector, and</p>
+<p>$$
+Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\frac{\Box_\Phi r}{r},
+\qquad
+\tilde V_{\Phi}=\frac{\tilde P_{\Phi}}{m},
+\qquad
+\tilde P_{\Phi}=\tilde\nabla_\Phi S_{\tilde\Xi},
+\qquad
+\rho_{\mathrm{chg}}=\gamma\rho_{\mathrm{num}},
+\qquad
+k_m=\frac{mc}{\hbar}.
+$$</p>
+<p>The symbol rule is the Schrödinger rung's, with the temporal slot written once: a plane wave carries $e^{i(\vec k_\Phi\cdot\vec r-k_t'r_t')}$ with $k_t'=\omega/c=E/(\hbar c)$, so $\partial/\partial r_t'\mapsto-ik_t'$ and $\tilde\nabla_\Phi\mapsto i\tilde K_\Phi$ with $\tilde K_\Phi=ik_t'e_t+\vec k_\Phi$.</p>
+<h2 id="the-mode-and-the-second-order-shell">The Mode, and the Second-Order Shell</h2>
+<p><strong>A mode is a point of $\tilde K_\Phi$ and one complex amplitude.</strong></p>
+<p>$$
+\tilde\Xi=a\,e^{i(\vec k_\Phi\cdot\vec r-k_t'r_t')}e_t,
+\qquad
+r=\lvert a\rvert,
+\qquad
+\rho_{\mathrm{num}}=\lvert a\rvert^{2},
+\qquad
+\vec v=\frac{\hbar\vec k_\Phi}{m},
+\qquad
+\gamma=\frac{\hbar k_t'}{mc}.
+$$</p>
+<p><strong>The quantum potential vanishes at a mode for the same reason as at the rung below: the scale is constant.</strong></p>
+<p>$$
+\Box_\Phi r=0
+\qquad\Longrightarrow\qquad
+Q_{\mathrm{qnt}}=0 ,
+$$</p>
+<p>and this is not an approximation in any parameter. The amplitude equation, which is the mass shell with the curvature term, therefore loses its curvature term and becomes the mass shell outright:</p>
+<p>$$
+\frac{E^{2}}{c^{2}}-\lvert\vec p\rvert^{2}=m^{2}c^{2},
+\qquad
+E=\hbar c\,k_t',
+\qquad
+\vec p=\hbar\vec k_\Phi .
+$$</p>
+<p><strong>The unit velocity is then exact.</strong></p>
+<p>$$
+\langle\tilde V_\Phi\rangle_{\natural}
+=-\frac{1}{m^{2}}\Bigl(\frac{E^{2}}{c^{2}}-\lvert\vec p\rvert^{2}\Bigr)
+=-c^{2}
+$$</p>
+<p>at a mode, by the display above and by nothing else. The check on the two modes $(\vec k_\Phi,k_t')=(0.7,1.220656)$ and $(0.3,1.044031)$, with $m=c=\hbar=1$, gave $\langle\tilde V_\Phi\rangle_{\natural}=-1.000000$ in both cases.</p>
+<p><strong>So the companion's qualification is a statement about how many modes are present.</strong> The velocity is a unit wherever the local word is a single mode, and the failure of the unit is the measure of the local admixture. <strong>That is what $Q_{\mathrm{qnt}}$ is, in the momentum-space reading: a measure of the distance between the local field and a single point of the shell.</strong></p>
+<p><strong>The stated objection, and the answer.</strong> The objection is that "$Q_{\mathrm{qnt}}=0$ at a mode" is trivial, since $Q_{\mathrm{qnt}}$ carries derivatives and a plane wave has none. The objection is correct and the triviality is the finding: a defect that vanishes on a dense set of the solutions and that is a derivative functional is a defect of the <em>superposition</em> and not of the equation. <strong>The companion states the defect as a condition on the solution; this article states it as a condition on the support</strong>, and the second statement is the one that says what has to be added to a mode to produce it.</p>
+<h2 id="the-support-and-the-two-potentials">The Support, and the Two Potentials</h2>
+<p><strong>A transform is a measure on a support, and the two potentials of the block act on different attributes of that support.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>what is added</th>
+<th>what it does to the shell</th>
+<th>the momentum-space face</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the quantum potential $Q_{\mathrm{qnt}}$</td>
+<td>changes the radius: $m^{2}c^{2}\mapsto m^{2}c^{2}+2mQ_{\mathrm{qnt}}$</td>
+<td>the local support is a hyperboloid of a different size</td>
+</tr>
+<tr>
+<td>the connection $\varkappa\tilde A_\Phi$</td>
+<td>changes the centre: $\tilde K_\Phi\mapsto\tilde K_\Phi-\varkappa\tilde A_\Phi/\hbar$</td>
+<td>the local support is a translated hyperboloid</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The first row is this article's and the second is the charged companion's, and the comparison is the reason to state both.</strong> A radius cannot be removed by a change of variable and a centre can: a shift of a variable does not change a radius, and a translation is undone by a translation. <strong>So the quantum potential is an intrinsic deformation of the support and the connection is a change of chart</strong>, and the two statements are the two articles' first results in the momentum-space language.</p>
+<p><strong>The radius reading survives the sum.</strong> For a general solution the two effects compose and the local support is a translated hyperboloid of shifted radius, which is the mass shell of the companion's equation with both terms in it. Nothing in the composition is an approximation, because the shell is an identity and not an expansion.</p>
+<h2 id="the-two-sheets">The Two Sheets</h2>
+<p><strong>A mode lies on one sheet.</strong> The charge density is $\rho_{\mathrm{chg}}=\gamma\rho_{\mathrm{num}}$ with $\gamma=E/(mc^{2})$, so its sign is the sign of the mode's energy:</p>
+<p>$$
+\rho_{\mathrm{chg}}=\frac{\hbar k_t'}{mc}\lvert a\rvert^{2}\ \text{ for the mode }(\vec k_\Phi,k_t'),
+$$</p>
+<p>and a negative-frequency mode carries a negative charge density. <strong>The two sheets of the hyperboloid are two disjoint supports, so no mode can straddle them</strong>: a point of the support is on one sheet or the other, and the transform of a mode is a delta at one point.</p>
+<p><strong>A superposition that occupies both sheets has a density of both signs, and the amplitudes decide whether it does.</strong> On one hundred events with $\vec k_\Phi=5.0$ on the positive sheet and $\vec k_\Phi=0.1$ on the negative one, amplitudes $0.5$ and $1.0$, the charge density ran from $-1.777$ to $+2.317$. With amplitudes $1.0$ and $1.0$ the same pair gave $0.0005$ to $8.188$, of one sign. <strong>So the sign change is not automatic even when both sheets are occupied</strong>, and the reason is arithmetic: the incoherent part and the cross term have opposite signs and the cross term's magnitude is bounded by twice the geometric mean of the two incoherent parts, so the balance decides.</p>
+<p><strong>The exact statement that survives every case is the per-mode one.</strong> A mode's density has the sign of its energy, exactly, and the two sheets are disjoint supports; anything beyond that is a statement about a particular pair of amplitudes. <strong>That is the honest form of the companion's two-sheetedness in momentum space</strong>, and the article claims no more.</p>
+<h2 id="the-two-scalar-rungs">The Two Scalar Rungs</h2>
+<p><strong>The passage from this rung to the one below removes the mass from the shell, and the momentum-space table says so in one row.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>the Schrödinger rung</th>
+<th>the Klein–Gordon rung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the shell</td>
+<td>none: the Hamilton–Jacobi equation constrains nothing</td>
+<td>$E^{2}/c^{2}-\lvert\vec p\rvert^{2}=m^{2}c^{2}+2mQ_{\mathrm{qnt}}$</td>
+</tr>
+<tr>
+<td>the support of a solution</td>
+<td>any set of points of the momentum space</td>
+<td>a measure on the two-sheeted hyperboloid</td>
+</tr>
+<tr>
+<td>the sign of the density</td>
+<td>one sign, always</td>
+<td>the sign of the energy</td>
+</tr>
+<tr>
+<td>the velocity</td>
+<td>$\hbar\vec k/m$, unbounded</td>
+<td>$\hbar\vec k/m$ with $\gamma$ fixed by the shell</td>
+</tr>
+<tr>
+<td>$Q$ at a mode</td>
+<td>zero</td>
+<td>zero</td>
+</tr>
+<tr>
+<td>what $Q$ does</td>
+<td>deforms the density</td>
+<td>deforms the radius of the support</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The last row is the one the rung above adds, and it is the whole of the difference.</strong> At the first-order rung the quantum potential has no shell to deform and its only face is the density; here it has a shell and its face is a radius. <strong>The same functional, two pictures</strong>, and the second picture is available only because the equation is second order.</p>
+<p><strong>The fifth row is the invariant across the two rungs.</strong> The quantum potential vanishes at a mode at both, for the same reason and with no parameter in the statement, and the free companion's cross-term reading of it therefore transfers without change. That is why the two Fourier articles of the scalar rung are one article in two orders of the equation, and why their findings are the same finding.</p>
+<h2 id="limits">Limits</h2>
+<p><strong>Constant coefficients.</strong> The shell is an identity for constant $m$, so the free case is exact throughout. A potential $V(\vec r)$ makes the symbol position-dependent, and the article uses none.</p>
+<p><strong>The particle setting.</strong> The article works with plane waves and their superpositions and never with a general solution's spectral measure. A general solution's support is a measure on the shell with an element-valued density, and nothing above needs it.</p>
+<p><strong>The denial.</strong> The transform carries $\mathbb{B}_\Phi$-valued fields to $\mathbb{B}_\Phi$-valued fields. No step carries a field out of its sector, and the amplitude at a wave number is the same numbers the field had at an event, resummed.</p>
+<h2 id="open-questions">Open Questions</h2>
+<ol>
+<li>
+<p><strong>Whether the radius reading is a bound.</strong> The companion's charge-sign boundary is a condition on the parameters; in momentum space the question is whether the shifted radius $m^{2}c^{2}+2mQ_{\mathrm{qnt}}$ can be made negative by a large enough curvature and, if so, what the support looks like there. The companion's discussion of the charge-sign boundary suggests the answer is a change of the support's topology, and the article does not settle it.</p>
+</li>
+<li>
+<p><strong>The measure of the admixture.</strong> $Q_{\mathrm{qnt}}$ is one scalar measure of how far the local field is from a single mode. Whether a spectral measure exists that is additive over modes and reduces to $Q_{\mathrm{qnt}}$ at a single mode is open, and the non-additivity proved at the rung below is evidence against the simplest candidate.</p>
+</li>
+<li>
+<p><strong>The two-sheet balance.</strong> §<em>The Two Sheets</em> exhibits amplitudes of one sign and of both signs at the same pair of wave numbers. Whether the boundary between the two cases is a simple inequality in the amplitudes and the two energies is not settled here.</p>
+</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>A mode has a constant scale, so its quantum potential vanishes exactly, and the mass shell it satisfies is the plain one, $E^{2}/c^{2}-\lvert\vec p\rvert^{2}=m^{2}c^{2}$. Its four-velocity is therefore a unit exactly, and the companion's qualification — a unit only where the quantum potential vanishes — is a statement that a mode is exactly such a place.</p>
+<p>The quantum potential is a measure of the distance between the local field and a single point of the shell. It acts on the radius of the support; the connection acts on the centre. A radius cannot be removed by a change of variable and a centre can, so the quantum potential is an intrinsic deformation and the connection is a change of chart.</p>
+<p>The charge density of a mode is $\hbar k_t'\lvert a\rvert^{2}/(mc)$ and its sign is the sign of the energy, so a mode lies on one sheet of the two-sheeted hyperboloid and the sheets are disjoint supports. A superposition that occupies both can have a density of both signs: on one hundred events the amplitudes $0.5$ and $1.0$ gave $-1.777$ to $+2.317$, and equal amplitudes gave $0.0005$ to $8.188$.</p>
+<p>The passage to the first-order rung removes the shell and with it the radius reading, and keeps the vanishing of $Q_{\mathrm{qnt}}$ at a mode unchanged. The same functional has two pictures, one on the density and one on the radius, and the second exists only because the equation is second order.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$</td>
+<td>The central field, in its word</td>
+</tr>
+<tr>
+<td>$k_t'=\omega/c=E/(\hbar c)$, $\vec k_\Phi=\vec p/\hbar$</td>
+<td>The label of a mode</td>
+</tr>
+<tr>
+<td>$k_m=mc/\hbar$</td>
+<td>The mass wave number</td>
+</tr>
+<tr>
+<td>$\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime 2}$</td>
+<td>The d'Alembertian on the material sector</td>
+</tr>
+<tr>
+<td>$Q_{\mathrm{qnt}}=-\hbar^{2}\Box_\Phi r/(2mr)$</td>
+<td>The quantum potential; zero at a mode</td>
+</tr>
+<tr>
+<td>$\tilde V_\Phi=\tilde P_\Phi/m=\tilde\nabla_\Phi S_{\tilde\Xi}/m$</td>
+<td>The four-velocity</td>
+</tr>
+<tr>
+<td>$\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}-2Q_{\mathrm{qnt}}/m$</td>
+<td>Its norm; $-c^{2}$ at a mode</td>
+</tr>
+<tr>
+<td>$\rho_{\mathrm{chg}}=\gamma\rho_{\mathrm{num}}$, $\gamma=E/(mc^{2})$</td>
+<td>The conserved density</td>
+</tr>
+<tr>
+<td>$\tilde K_\Phi=ik_t'e_t+\vec k_\Phi$</td>
+<td>The wave number element</td>
+</tr>
+<tr>
+<td>$\varepsilon=\pm1$</td>
+<td>The branch</td>
+</tr>
+<tr>
+<td>$\mathrm{Sc}(\tilde Q)$</td>
+<td>Scalar part</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Erwin Madelung, "Quantentheorie in hydrodynamischer Form," <em>Zeitschrift für Physik</em> <strong>40</strong> (1926) 322–326, for the pair in its original form.</li>
+<li>Louis de Broglie, <em>Non-Linear Wave Mechanics: A Causal Interpretation</em> (Elsevier, 1960), for the second-order fluid and the quantum potential in the relativistic case.</li>
+<li>Takehiko Takabayasi, "Relativistic hydrodynamics of the Dirac matter," <em>Progress of Theoretical Physics Supplement</em> <strong>4</strong> (1957) 2–35, for the relativistic scalar and spinor fluids set side by side.</li>
+<li>Peter R. Holland, <em>The Quantum Theory of Motion</em> (Cambridge University Press, 1993), chapter 9, for the Klein–Gordon fluid, its quantum potential and the two sheets.</li>
+<li>The companion articles: <a href="the-klein-gordon-fluid.html">The Klein–Gordon Fluid</a>, for the pair and the $\gamma^{-1}$ acceleration law; <a href="the-lagrangian-of-the-klein-gordon-fluid.html">The Lagrangian of the Klein–Gordon Fluid</a>, the rung as an action; <a href="the-fourier-transform-and-the-schrodinger-fluid.html">The Fourier Transform and the Schrödinger Fluid</a>, the rung below, where the cross-term reading of $Q$ is proved and the shell does not exist; and <a href="the-fourier-transform-and-the-charged-klein-gordon-fluid.html">The Fourier Transform and the Charged Klein–Gordon Fluid</a>, where the support is translated instead of dilated.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

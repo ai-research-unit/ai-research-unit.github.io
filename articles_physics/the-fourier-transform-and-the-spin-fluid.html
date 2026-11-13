@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Fourier Transform and the Spin Fluid: The Mode Is a Frozen Frame — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-fourier-transform-and-the-spin-fluid-the-mode-is-a-frozen-frame"><strong>The Fourier Transform and the Spin Fluid: The Mode Is a Frozen Frame</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>A mode of the Dirac field occupies one of the word's four brackets and leaves the other three constant, so the fluid it carries is a rigid body in uniform translation with a fixed orientation.</strong> The scale is a constant, the boost is a constant, the rotor is a constant, and the phase alone carries the wave number. The density, the velocity, the vorticity, the spin direction and the magnetisation current are then one number and four zeros, and the four zeros are the finding.</p>
+<p><strong>The article's claim is that the three varying data of this fluid are all inter-mode.</strong> The vorticity, the spin precession and the Gordon magnetisation current vanish at a mode and appear only in a superposition. The frozen-frame sector is <a href="the-spin-fluid-of-the-biquaternion-dirac-field.html">The Spin Fluid of the Biquaternion Dirac Field</a>'s degenerate case, a dust; this article's statement is stronger and narrower: <strong>the frozen-frame sector is the set of modes, so the sector the fluid degenerates into is exactly the sector the Fourier basis diagonalises.</strong></p>
+<p><strong>The measurement is the middle of the article and it is one number against another.</strong> On a grid of sixty-four events, a single mode gave $\max\lvert\nabla\times\vec v\rvert=3.8\times10^{-17}$ and a two-mode superposition at a wave-number separation of $0.6$ gave $0.763$. Both were computed from the current over the density, $\tilde J_\Phi/\rho_{\mathrm{num}}$, which is the frame's velocity exactly where the magnetisation current vanishes — that is, at a mode.</p>
+<p><strong>Position in the block.</strong> This is the Fourier companion of <a href="the-spin-fluid-of-the-biquaternion-dirac-field.html">The Spin Fluid of the Biquaternion Dirac Field</a> and of <a href="the-lagrangian-of-the-spin-fluid.html">The Lagrangian of the Spin Fluid</a>. Its charged companion is <a href="the-fourier-transform-and-the-charged-spin-fluid.html">The Fourier Transform and the Charged Spin Fluid</a>, where the phase acquires a gauge and the finding becomes one line about rotations. It repeats the mode-counting result of <a href="the-fourier-transform-and-the-dirac-equation-in-biquaternionic-polar-variables.html">The Fourier Transform and the Dirac Equation in Biquaternionic Polar Variables</a> and adds the fluid reading the parent does not make.</p>
+<h2 id="conventions">Conventions</h2>
+<p>The polar word, on the general field,</p>
+<p>$$
+\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
+\qquad
+r>0,
+\qquad
+\rho_{\mathrm{num}}=r^{2},
+\qquad
+S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}},
+$$</p>
+<p>with $\tilde U_{\Psi,\mathrm b}$ the boost, $\tilde u_{\mathrm r}$ the rotor, $\theta_{\mathrm{rpd}}$ the rapidity, $\theta_{\mathrm{axr}}$ the rotor's angle, and</p>
+<p>$$
+\tilde V_{\Phi}=ic\,\tilde U_{\Psi,\mathrm b}^{-2}=\gamma\bigl(ice_t+\vec v\bigr),
+\qquad
+\langle\tilde V_{\Phi}\rangle_{\natural}=-c^{2},
+\qquad
+\tilde J_{\Phi}=\rho_{\mathrm{num}}\tilde V_{\Phi}.
+$$</p>
+<p>The spin direction is $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ and the spin element is $\rho_{\mathrm{num}}^{1/2}(\hbar/2)i\vec s$. The Gordon splitting is</p>
+<p>$$
+\tilde J_{\Phi}=\rho_{\mathrm{num}}\tilde V_{\Phi}+\partial_\nu M^{\nu\mu},
+\qquad
+M^{\nu\mu}\propto\bar\Xi\,\Sigma^{\nu\mu}\Xi ,
+$$</p>
+<p>with the bilinear of <a href="the-gordon-decomposition-of-the-dirac-current-in-biquaternionic-form.html">The Gordon Decomposition of the Dirac Current in Biquaternionic Form</a>, whose momentum-space form states that the magnetisation term is proportional to the momentum transfer $k_\nu=(p_2-p)_\nu$. The symbol rule is the scalar rung's, applied slot by slot.</p>
+<h2 id="a-mode-occupies-one-bracket-of-four">A Mode Occupies One Bracket of Four</h2>
+<p><strong>A mode is a point of the momentum space, one element of $\mathbb{B}_\Psi$ attached to it, and nothing else.</strong></p>
+<p>$$
+\tilde\Xi(x)=\tilde w(\vec k_\Phi)\,e^{-i\theta_{\mathrm{pwp}}},
+\qquad
+\theta_{\mathrm{pwp}}=k_t'r_t'-\vec k_\Phi\cdot\vec r .
+$$</p>
+<p><strong>Read through the four-factor word, the display says that three factors are constants and the fourth is the label.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>bracket</th>
+<th>what the mode does with it</th>
+<th>what the fluid would read from it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the scale, $\ln r$</td>
+<td>constant</td>
+<td>the density $\rho_{\mathrm{num}}=r^{2}$</td>
+</tr>
+<tr>
+<td>the central phase, $\theta_{\mathrm{pha}}$</td>
+<td>carries $-i\theta_{\mathrm{pwp}}$</td>
+<td>the action, and nothing else</td>
+</tr>
+<tr>
+<td>the boost, $\theta_{\mathrm{rpd}}$ and its axis</td>
+<td>constant</td>
+<td>the velocity $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}$</td>
+</tr>
+<tr>
+<td>the rotor, $\theta_{\mathrm{axr}}$ and its axis</td>
+<td>constant</td>
+<td>the spin direction $\vec s$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The table is the article's structure in one place.</strong> Three of the four brackets are the three the fluid reads its data from, and a mode puts all three at a constant. <strong>So a mode's fluid is constant in every datum that varies in a general solution</strong>, and the only bracket it occupies is the one the fluid reads nothing from.</p>
+<p><strong>The three constants are four numbers and the label is four more</strong>, and the count is the polar article's: eight parameters for eight real components. <strong>At a mode the eight split as four constants and four labels</strong>, and the split is the momentum-space image of the statement that the word's parameters are the field's components.</p>
+<h2 id="the-current-of-a-mode">The Current of a Mode</h2>
+<p><strong>The current of a mode is a constant times its density, exactly.</strong></p>
+<p>$$
+\tilde J_{\Phi}=\rho_{\mathrm{num}}\,ic\,\tilde U_{\Psi,\mathrm b}^{-2},
+\qquad
+M^{\nu\mu}=\text{constant},
+\qquad
+\partial_\nu M^{\nu\mu}=0 .
+$$</p>
+<p>The magnetisation current of a mode is the divergence of a constant bilinear, so it vanishes identically; <strong>the Gordon decomposition's second term is invisible to a mode</strong>, and that is the exact reason the article's velocity check is a check of the frame's velocity and not of the current over the density. At a superposition the bilinear varies and the term does not vanish, and the discrepancy between $\tilde J_\Phi/\rho_{\mathrm{num}}$ and $\tilde V_\Phi$ is precisely the term's divergence over the density.</p>
+<p><strong>The three modes' space is therefore the space on which the fluid's velocity equals the current over the density, and no superposition is.</strong> That is a sharper statement of the frozen-frame degeneration than the fluid article's, which says that a constant frame gives a dust; this one says that the dust is exactly the diagonal of the current's bilinear.</p>
+<h2 id="the-vorticity-is-inter-mode">The Vorticity Is Inter-Mode</h2>
+<p><strong>The fluid article's vorticity 2-form is the antisymmetrised gradient of the frame element, and a constant frame has none.</strong> So a mode is irrotational and the question is what a superposition does.</p>
+<p><strong>The measurement.</strong> On a grid of sixty-four events with $m=c=\hbar=1$, one mode at $\vec k_\Phi=(0.6,0)$ gave $\max\lvert\nabla\times\vec v\rvert=3.8\times10^{-17}$ — machine zero. Two modes at $\vec k_\Phi=(0.6,0)$ and $(0.6,\Delta)$, amplitudes $1.0$ and $0.8$, same spin, gave</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\Delta$</th>
+<th>$\max\lvert\nabla\times\vec v\rvert$</th>
+<th>the density's range</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0.2$</td>
+<td>$1.03\times10^{-2}$</td>
+<td>$5.131$ to $7.560$</td>
+</tr>
+<tr>
+<td>$0.4$</td>
+<td>$1.14\times10^{-1}$</td>
+<td>$1.013$ to $7.563$</td>
+</tr>
+<tr>
+<td>$0.6$</td>
+<td>$7.63\times10^{-1}$</td>
+<td>$0.171$ to $7.554$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The vorticity and the density's modulation grow together, and both grow with the separation.</strong> That is what the Gordon form predicts: the magnetisation term carries the momentum transfer $k_\nu$ as a factor, so a pair of neighbouring wave numbers has a small magnetisation and a pair of distant ones has a large one. <strong>The vorticity of this fluid is a statement about a pair of wave numbers and about their distance</strong>, and the article's one number, $3.8\times10^{-17}$ against $0.763$, is the difference between the diagonal and the off-diagonal.</p>
+<p><strong>The objection, and the answer.</strong> The objection is that a two-mode superposition is a special field and the vorticity of a general solution is not a property of pairs. The answer is that the transform of a general solution is a measure, and the magnetisation term is bilinear in that measure, so its value at an event is an integral over pairs; <strong>a pair is the unit of the object and the general case is a sum of pairs.</strong> What the article proves is the vanishing of the diagonal, and the table is the first off-diagonal.</p>
+<p><strong>What the frame's own velocity does is not settled by this measurement, and the article says so.</strong> The check was run on $\tilde J_\Phi/\rho_{\mathrm{num}}$; the frame's velocity differs from it by the magnetisation divergence over the density, which is itself inter-mode. Both are constant at a mode and both vary at a superposition, so the two agree on the article's central contrast and may differ on the magnitude of a general field.</p>
+<h2 id="the-spin-precession-is-inter-mode">The Spin Precession Is Inter-Mode</h2>
+<p><strong>The rotor is constant at a mode, so the spin direction is constant, so a mode does not precess.</strong> The spin element is $\rho_{\mathrm{num}}^{1/2}(\hbar/2)i\vec s$ and both factors are constants.</p>
+<p><strong>The consequence in fluid words is a missing equation.</strong> The spin fluid's transport law is a statement about how $\vec s$ turns along the flow, and at a mode the flow's parameter is the phase's and the turning is zero: <strong>a mode has no spin transport to write</strong>, and the transport law is an equation on the off-diagonal part of the field in the momentum space. That is the same structure as the vorticity's, one factor over.</p>
+<p><strong>The spin direction is gauge invariant and the vorticity is not, and the modes do not see the difference.</strong> At this rung there is no gauge freedom and the distinction is empty; at the charged rung it is not, and the companion's finding is that the phase cannot rotate the rotor. <strong>The pattern is fixed at the free rung</strong>: both the spin and the vorticity are read from brackets a mode holds constant, so both are off-diagonal in the momentum space, and the two differ only in what a connection can do to them.</p>
+<h2 id="what-the-transform-leaves-of-the-word">What the Transform Leaves of the Word</h2>
+<p><strong>A mode's transform leaves four constants, one label, and one sign, and the fluid reads the seven numbers as a density, a velocity and a direction.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>datum</th>
+<th>the mode's value</th>
+<th>the general field's value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\rho_{\mathrm{num}}$</td>
+<td>$\lvert\tilde w\rvert$-determined constant</td>
+<td>a function, with the interference term</td>
+</tr>
+<tr>
+<td>$\tilde V_\Phi$</td>
+<td>a constant unit</td>
+<td>a function of three parameters at each event</td>
+</tr>
+<tr>
+<td>$\omega_{\mu\nu}$</td>
+<td>$0$</td>
+<td>the frame's antisymmetrised gradient</td>
+</tr>
+<tr>
+<td>$\vec s$</td>
+<td>a constant unit vector</td>
+<td>a function of two parameters at each event</td>
+</tr>
+<tr>
+<td>the holonomy on a loop</td>
+<td>$1$</td>
+<td>a Lorentz element</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The last row is the one that says what a mode is in the transport language.</strong> The loop invariant of the spin fluid is a Lorentz element, and a mode's is the identity: the frame does not turn, so the transport around a closed loop returns the frame unchanged. <strong>The loop's element is therefore a measure of the off-diagonal part of the field</strong>, exactly as the vorticity is, and the two are the closed and the open faces of the same statement.</p>
+<p><strong>The mass and the connection are the two mixers and they mix different things.</strong> The mass is diagonal in the momentum and off-diagonal in the part label, so it fixes the dispersion relation at a mode and couples the four parts within it; the connection is position dependent, so it couples neighbouring momenta. <strong>In the fluid's language the mass couples the four brackets and the connection couples the labels</strong>, and the article's table of four brackets is the list of what the mass can couple and what a mode holds fixed.</p>
+<h2 id="limits">Limits</h2>
+<p><strong>Constant coefficients.</strong> The mode reading needs the mass and any connection to be constant, which for the free field they are.</p>
+<p><strong>A two-mode probe.</strong> The vorticity table is three rows and one pair of wave numbers. It establishes the vanishing of the diagonal and the growth with the separation, and it does not establish a law.</p>
+<p><strong>The denial.</strong> The transform carries $\mathbb{B}_\Psi$-valued fields to $\mathbb{B}_\Psi$-valued fields, and the amplitude at a wave number is one element of the spinor carrier at one point of the momentum space. No step carries the field out of its sector.</p>
+<h2 id="open-questions">Open Questions</h2>
+<ol>
+<li>
+<p><strong>A law for the off-diagonal vorticity.</strong> Whether $\max\lvert\nabla\times\vec v\rvert$ for a pair is a function of the momentum transfer alone, at fixed amplitudes, is not settled by three rows. The Gordon form's linear factor in $k_\nu$ suggests it is, and the saturation between $\Delta=0.6$ and a larger separation suggests a bound.</p>
+</li>
+<li>
+<p><strong>The frame's velocity against the current's.</strong> §<em>The Vorticity Is Inter-Mode</em> was measured on $\tilde J_\Phi/\rho_{\mathrm{num}}$. Whether the frame's own velocity has the same vanishing on the diagonal and the same growth off it, and whether the two differ only by a curl-free term, is not settled here.</p>
+</li>
+<li>
+<p><strong>The holonomy of a pair.</strong> The loop invariant is trivial at a mode and non-trivial on a general field. Whether a pair's holonomy is a function of the pair's separation and its vorticity, in the way the loop element and the vorticity are the same statement's two faces, is not known to the author.</p>
+</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>A mode occupies one of the word's four brackets, the central phase, and holds the other three constant: the scale, the boost and the rotor. So the fluid's density, velocity, spin direction and vorticity are all constant at a mode, and only the action varies.</p>
+<p>The magnetisation current of a mode is the divergence of a constant bilinear, so it vanishes. The fluid's velocity therefore equals the current over the density exactly at a mode, and the difference between them is inter-mode.</p>
+<p>The vorticity vanishes at a mode and appears at a superposition: $3.8\times10^{-17}$ at one mode, and $1.03\times10^{-2}$, $1.14\times10^{-1}$, $7.63\times10^{-1}$ at wave-number separations $0.2$, $0.4$, $0.6$ on sixty-four events. The vorticity and the density's modulation grow together, and both grow with the separation, as the Gordon form's factor $k_\nu$ requires.</p>
+<p>The spin precession is inter-mode for the same reason and by the same table: a constant rotor does not turn, so a mode has no spin transport law. The vorticity and the spin are the closed and the open faces of one statement, and both are off-diagonal in the momentum space.</p>
+<p>A mode's loop invariant is the identity. The transport's Lorentz element is therefore a measure of the off-diagonal part of the field, and the mass, which is diagonal in the momentum and off-diagonal in the part label, is the mixer that a mode's constancy cannot reach.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$</td>
+<td>The four-factor word</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{pwp}}=k_t'r_t'-\vec k_\Phi\cdot\vec r$</td>
+<td>The phase of a mode</td>
+</tr>
+<tr>
+<td>$\tilde w(\vec k_\Phi)$</td>
+<td>The spinor carrier's element at a mode</td>
+</tr>
+<tr>
+<td>$\rho_{\mathrm{num}}=r^{2}$</td>
+<td>The proper density</td>
+</tr>
+<tr>
+<td>$\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}$</td>
+<td>The four-velocity</td>
+</tr>
+<tr>
+<td>$\tilde J_\Phi=\rho_{\mathrm{num}}\tilde V_\Phi$</td>
+<td>The number current</td>
+</tr>
+<tr>
+<td>$M^{\nu\mu}$</td>
+<td>The magnetisation bilinear</td>
+</tr>
+<tr>
+<td>$\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$</td>
+<td>The spin direction</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{rpd}}$, $\theta_{\mathrm{axr}}$</td>
+<td>The rapidity and the rotor's angle</td>
+</tr>
+<tr>
+<td>$\omega_{\mu\nu}$</td>
+<td>The vorticity 2-form</td>
+</tr>
+<tr>
+<td>$\Delta$</td>
+<td>The separation of two wave numbers</td>
+</tr>
+<tr>
+<td>$\mathrm{Sc}(\tilde Q)$</td>
+<td>Scalar part</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Takehiko Takabayasi, "Relativistic hydrodynamics of the Dirac matter," <em>Progress of Theoretical Physics Supplement</em> <strong>4</strong> (1957) 2–35, for the density, frame and spin direction this article places in the momentum decomposition.</li>
+<li>Fritz London, "Quantum-mechanical interpretation of the Dirac equation," <em>Zeitschrift für Physik</em> <strong>63</strong> (1930) 245–253, for the convection-and-spin split of the current.</li>
+<li>Michael Berry, "Classical adiabatic angles and quantal adiabatic phase," <em>Journal of Physics A</em> <strong>18</strong> (1985) 15–27, for the holonomy of a transported frame and the loop element this article finds trivial at a mode.</li>
+<li>The companion articles: <a href="the-spin-fluid-of-the-biquaternion-dirac-field.html">The Spin Fluid of the Biquaternion Dirac Field</a>, for the four brackets, the vorticity as the frame's curl and the frozen-frame sector; <a href="the-lagrangian-of-the-spin-fluid.html">The Lagrangian of the Spin Fluid</a>, the rung as an action; <a href="the-gordon-decomposition-of-the-dirac-current-in-biquaternionic-form.html">The Gordon Decomposition of the Dirac Current in Biquaternionic Form</a>, for the magnetisation term's proportionality to the momentum transfer; <a href="the-fourier-transform-and-the-dirac-equation-in-biquaternionic-polar-variables.html">The Fourier Transform and the Dirac Equation in Biquaternionic Polar Variables</a>, for the mode count and the mass as an off-diagonal mixer in the part label; and <a href="the-fourier-transform-and-the-charged-spin-fluid.html">The Fourier Transform and the Charged Spin Fluid</a>, where the phase acquires a gauge.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

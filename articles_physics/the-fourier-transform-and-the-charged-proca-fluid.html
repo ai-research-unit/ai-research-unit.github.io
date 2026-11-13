@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Fourier Transform and the Charged Proca Fluid: The Constraint Is the Amplitude — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-fourier-transform-and-the-charged-proca-fluid-the-constraint-is-the-amplitude"><strong>The Fourier Transform and the Charged Proca Fluid: The Constraint Is the Amplitude</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The coupled Proca constraint is the only constraint in the block that is nonlinear in the momentum space.</strong> Its covariant half is a multiplier: $\mathrm{Sc}(\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde A)=0$ transforms to a linear condition on the amplitude at each label. Its ordinary half is not: the constraint fixes the multiplier $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde A)$ to equal $-\frac{iϙ}{\hbar}\langle\tilde A\rangle_\natural$, a product, and a product transforms to a <strong>correlation</strong> of the amplitude with its own conjugate. <strong>So the constraint equates a label-local expression to a label-delocal one</strong>, and that asymmetry is the article's finding.</p>
+<p><strong>The immediate consequence is that the constraint cannot be solved label by label.</strong> Every other constraint in the block — the Lorenz condition of the free vector fluid, the mass shell of the scalar, the transversality of a polarisation — is a condition on the amplitude at one point of the momentum space, and it determines that amplitude there. This one is one scalar equation per label whose right-hand side is an integral over all labels. No change of basis removes the correlation, because a correlation is the multiplication in the position variable and the multiplication is the physical product of two field values.</p>
+<p><strong>The second finding is that the free fluid's incompressibility is the statement that the constraint is label-local.</strong> At $ϙ=0$ the right-hand side vanishes identically and the constraint becomes a multiplier on both sides; <strong>the mass's gift is therefore a locality in the momentum space</strong>, which is the sharpest form the fluid article's sentence can take.</p>
+<p><strong>The third finding is that the mode basis of the charged Proca fluid is a basis of the chart and not of the field.</strong> The chart's scale is an amplitude and not the field's norm, because $\tilde A\tilde A^{\natural}=r^{2}e^{2i\vartheta_{\mathrm{pha}}}$ is complex and the invariant $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$ is $r^{2}$ only where the rotor is trivial. <strong>An amplitude at a label is therefore a coordinate</strong>, and the transform's support is a property of the description.</p>
+<p><strong>Position in the block.</strong> This is the charged companion of <a href="the-fourier-transform-and-the-proca-fluid.html">The Fourier Transform and the Proca Fluid</a> and the Fourier companion of <a href="the-charged-proca-fluid.html">The Charged Proca Fluid: Three Currents and a Compressibility</a>. It closes the eight Fourier articles of the fluid block.</p>
+<h2 id="conventions">Conventions</h2>
+<p>The charged Proca fluid's: $\tilde A=r\,e^{i\vartheta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $r>0$, eight real parameters for the eight real components, the coupling $ϙ$, and</p>
+<p>$$
+\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi ,
+\qquad
+\tilde F=\tfrac12\bigl(\tilde\nabla^{\natural}_{\mathrm{gco}}\tilde A-\tilde\nabla_{\mathrm{gco}}\tilde A\bigr)_{V},
+\qquad
+\tilde\nabla_{\mathrm{gco}}\tilde F=k_m^{2}\tilde A .
+$$</p>
+<p>The transform carries a subscript and no accent, as the series requires: the transform of a glyph is written with $\mathrm{trf}$, so the amplitude is $\tilde A_{\mathrm{trf}}(\tilde K_\Phi)$ and its correlation with its conjugate is $\tilde A_{\mathrm{trf}}*\tilde A_{\mathrm{trf}}^{\natural}$. The field itself is $\tilde A$.</p>
+<p>The symbol rule is the scalar rung's, and the product rule is the one proved in <a href="the-fourier-transform-and-the-coupled-dirac-equation-in-biquaternionic-polar-variables.html">The Fourier Transform and the Coupled Dirac Equation in Biquaternionic Polar Variables</a>: a product in the position variable transforms to a convolution of the two transforms, with the residual there measured at $1.4\times10^{-15}$.</p>
+<h2 id="the-two-halves-of-the-constraint-and-their-two-shapes">The Two Halves of the Constraint, and Their Two Shapes</h2>
+<p><strong>The trace of the coupled equation forces the covariant condition, exactly and blindly to the frame, and the ordinary divergence is then the amplitude.</strong></p>
+<p>$$
+\mathrm{Sc}\bigl(\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde A\bigr)=0
+\qquad\Longrightarrow\qquad
+\mathrm{Sc}\bigl(\tilde\nabla^{\natural}\tilde A\bigr)
+=-\frac{iϙ}{\hbar}\langle\tilde A\rangle_{\natural}
+=-\frac{iϙ}{\hbar}\,r^{2}e^{2i\vartheta_{\mathrm{pha}}} .
+$$</p>
+<p><strong>Transform the two sides and they have different shapes.</strong></p>
+<p>$$
+\underbrace{\tilde K_\Phi\cdot\tilde A_{\mathrm{trf}}(\tilde K_\Phi)}_{\text{a multiplier, label-local}}
+\qquad\text{equals}\qquad
+\underbrace{-\frac{iϙ}{\hbar}\bigl(\tilde A_{\mathrm{trf}}*\tilde A_{\mathrm{trf}}^{\natural}\bigr)(\tilde K_\Phi)}_{\text{a correlation, label-delocal}} .
+$$</p>
+<p>The left side is a linear operator applied pointwise, so it constrains this component of the amplitude at this label. The right side is a quadratic functional of the whole measure, so it is an integral over every label at once. <strong>The constraint is therefore one scalar equation per label whose right-hand side is not a datum of that label</strong>, and no diagonalisation of the field changes that, because the correlation is the multiplication in the position variable and the multiplication is the physical product of two field values.</p>
+<p><strong>The stated objection, and the answer.</strong> The objection is that the right-hand side is $r^{2}e^{2i\vartheta}$, so it is a known function once the field is known, and one may impose the constraint by iteration rather than by correlation. The answer is that this is exactly the statement that the constraint is not label-local: an iteration over the whole measure is what a correlation is, and the number of iterations is the number of terms in the expansion of the exponential. <strong>A label-local constraint needs one pass; this one needs the measure.</strong></p>
+<p><strong>The quantities are the parent's and the shapes are the article's.</strong> The parent proves both displays and reads them as a constraint and a compressibility; this article's contribution is that the two are not the same <em>kind</em> of statement, and that the momentum space is where the difference is visible.</p>
+<h2 id="the-free-case-is-a-locality-in-the-momentum-space">The Free Case Is a Locality in the Momentum Space</h2>
+<p><strong>At $ϙ=0$ the right-hand side of the ordinary divergence vanishes identically, so the constraint becomes a multiplier on both sides.</strong></p>
+<p>$$
+ϙ=0:\qquad
+\mathrm{Sc}\bigl(\tilde\nabla^{\natural}\tilde A\bigr)=0
+\qquad\Longleftrightarrow\qquad
+\tilde K_\Phi\cdot\tilde A_{\mathrm{trf}}(\tilde K_\Phi)=0\ \text{at each label}.
+$$</p>
+<p><strong>The free companion's finding is the same statement and this display is its sharpest form.</strong> There the Lorenz condition of a mode is $k_\mu u^\mu=0$, the transversality of the polarisation, checked at $2.2\times10^{-16}$; here the same condition is read as a locality. <strong>The free fluid's incompressibility is therefore not a physical property of a medium but a property of the constraint's symbol</strong>: the divergence is a multiplier, a multiplier is diagonal in the label, and a diagonal condition is one condition per label.</p>
+<p><strong>With the coupling the symbol is no longer diagonal, and the fluid acquires the compressibility the parent names.</strong> The parent says the free incompressibility was the mass's gift and is the $ϙ=0$ case. This article says what the gift is: <strong>the mass is what makes the constraint's right-hand side vanish at $ϙ=0$, and a vanishing right-hand side is a diagonal condition.</strong> A nonzero right-hand side is a product, and a product is a convolution.</p>
+<p><strong>That is also the momentum-space reading of the parent's "three currents".</strong> A conservation law is the vanishing of a divergence, and in the momentum space a divergence is the component along the label; so conservation is a statement about one component of a measure at each label, and it is diagonal. <strong>The constraint's ordinary half is not diagonal and the charge's conservation is</strong>, which is why the parent finds three currents and only one conserved.</p>
+<h2 id="the-amplitude-is-a-coordinate">The Amplitude Is a Coordinate</h2>
+<p><strong>The chart's scale is not the field's norm, and the momentum space shows what that costs.</strong></p>
+<p>$$
+\tilde A\tilde A^{\natural}=r^{2}e^{2i\vartheta_{\mathrm{pha}}},
+\qquad
+\mathrm{Sc}\bigl(\tilde A^{*}\tilde A^{\natural}\bigr)=r^{2}\ \text{only where the rotor is trivial}.
+$$</p>
+<p><strong>So the amplitude at a label is a coordinate of the chart and not an observable.</strong> The rotor is a real datum of the chart with no invariant that reads it, and a change of the chart's normalisation moves $r$ while leaving the field alone. <strong>The mode basis of the charged Proca fluid is therefore a basis of the description and not of the field</strong>, and that is the last rung's answer to the question the block has asked at each of the four: <em>what does the transform see?</em></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>rung</th>
+<th>what the amplitude at a label is</th>
+<th>does the transform see the field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Schrödinger</td>
+<td>the field's own modulus</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Klein–Gordon</td>
+<td>the field's own modulus</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>spinor</td>
+<td>the carrier's element</td>
+<td>yes, up to the phase</td>
+</tr>
+<tr>
+<td>vector, free</td>
+<td>the field's own norm</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>vector, charged</td>
+<td>a chart coordinate</td>
+<td>no</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The last row is the only "no" in the table, and it is the coupling's doing.</strong> The free vector fluid's scale is $\sqrt{-A_\mu A^\mu}$, an invariant; the charged one's is an amplitude whose square is the modulus of a complex number times a phase. <strong>The reality of the field was what made the scale an observable, and the phase that the coupling introduces is what stops it being one.</strong></p>
+<p><strong>What survives is the response and the direction.</strong> The response $m^{2}\tilde A$ has the field's own support, and the direction $\tilde A/r$ is the field's up to the chart's normalisation. <strong>So the mode basis sees the response and cannot see which current is conserved</strong>, which is the previous section's statement in the language of the three currents, and the two sections are one.</p>
+<h2 id="what-the-eight-articles-have-in-common">What the Eight Articles Have in Common</h2>
+<p><strong>Each of the eight rungs asks one question — what does the Fourier decomposition see of the fluid — and each answers it with a single object that the decomposition cannot see.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>rung</th>
+<th>the one object the mode basis cannot carry</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Schrödinger</td>
+<td>the quantum potential, which is a cross term</td>
+</tr>
+<tr>
+<td>charged Schrödinger</td>
+<td>the curvature $\vec B$</td>
+</tr>
+<tr>
+<td>Klein–Gordon</td>
+<td>the defect of the velocity's norm, which is $Q_{\mathrm{qnt}}$</td>
+</tr>
+<tr>
+<td>charged Klein–Gordon</td>
+<td>the curvature $\tilde F$</td>
+</tr>
+<tr>
+<td>spinor</td>
+<td>the vorticity and the spin precession</td>
+</tr>
+<tr>
+<td>charged spinor</td>
+<td>the rotor's response to the connection</td>
+</tr>
+<tr>
+<td>vector, free</td>
+<td>the vorticity, because the direction is constant</td>
+</tr>
+<tr>
+<td>vector, charged</td>
+<td>the constraint's quadratic half</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The eight answers are one pattern in four settings.</strong> The scalar rung's object is a cross term, the spinor rung's is a frame's gradient, the vector rung's is the direction's, and the charged rungs' are the connection's curvature. <strong>So the invisible object is always either a product of two modes or a derivative of a structure that a mode holds constant</strong>, and the two descriptions coincide because a product of two modes is what a derivative of a constant structure produces.</p>
+<p><strong>The pattern's value is diagnostic.</strong> A reader who wants to know whether a statement about a fluid is a statement about the field or about its mode basis has one test: <strong>ask whether the object can be built from one label.</strong> If it can, it is diagonal and the mode basis sees it; if it cannot, it is off-diagonal and the statement is about a pair, a neighbourhood or a curvature.</p>
+<h2 id="limits">Limits</h2>
+<p><strong>Constant coefficients.</strong> The multiplier reading of the covariant half needs $\tilde A_\Phi$ to be constant, which the article assumes where it speaks of labels. The correlation on the right-hand side holds for every profile, since the product rule is general.</p>
+<p><strong>The chart.</strong> The word has eight parameters for eight components and its domain excludes $r=0$ only. Nothing above needs the domain further.</p>
+<p><strong>The denial.</strong> The transform carries $\mathbb{B}_\Phi$-valued fields to $\mathbb{B}_\Phi$-valued fields, and the amplitude at a label is one element of the material sector. No step carries the field out of its sector.</p>
+<h2 id="open-questions">Open Questions</h2>
+<ol>
+<li>
+<p><strong>Whether the constraint can be solved by a transform of its own.</strong> A constraint that is a multiplier on one side and a correlation on the other is a nonlinear equation for the measure. Whether some other transform — a logarithm, a scattering transform, a division by the amplitude — makes it linear is not known to the author, and it is the natural next question for this rung.</p>
+</li>
+<li>
+<p><strong>The rotor's invisibility.</strong> The chart has a rotor and no invariant reads it. Whether the rotor is a gauge freedom of the description, in the sense in which a redundant parameter is, or a physical datum that the invariants happen to miss, is not settled by the parent and is not settled here.</p>
+</li>
+<li>
+<p><strong>The number of currents at a label.</strong> The parent finds three currents and one conservation. Whether the other two have a momentum-space face at all, or whether they are exactly the ones the mode basis cannot see, is the question the last two sections circle and do not close.</p>
+</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>The coupled Proca constraint has two halves with different shapes in the momentum space. The covariant half is a multiplier, a linear condition at each label. The ordinary half fixes its own multiplier to a product, so the right-hand side is a correlation of the amplitude with its own conjugate. <strong>This is the only constraint in the block that cannot be solved label by label.</strong></p>
+<p>At $ϙ=0$ the right-hand side vanishes and the constraint becomes a multiplier on both sides, so the free fluid's incompressibility is a locality in the momentum space. The mass is what makes the right-hand side vanish, and a vanishing right-hand side is a diagonal condition; that is the sharpest form of the fluid article's claim that the incompressibility was the mass's gift.</p>
+<p>The chart's scale is not the field's norm, because $\tilde A\tilde A^{\natural}=r^{2}e^{2i\vartheta_{\mathrm{pha}}}$ is complex. An amplitude at a label is therefore a coordinate, and the mode basis of this fluid is a basis of the description and not of the field — the only rung of the five in which the transform does not see the field.</p>
+<p>What survives is the response $m^{2}\tilde A$, whose support is the field's, and the direction $\tilde A/r$. Conservation is the vanishing of a divergence, hence a diagonal statement, so the mode basis sees the response and cannot see which current is conserved.</p>
+<p>Across the eight Fourier articles the invisible object is always either a product of two modes or a derivative of a structure a mode holds constant. <strong>The test is one line: an object that can be built from a single label is visible to the transform, and an object that cannot is not.</strong></p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$ϙ$</td>
+<td>The coupling</td>
+</tr>
+<tr>
+<td>$\tilde A=r\,e^{i\vartheta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$</td>
+<td>The eight-parameter word</td>
+</tr>
+<tr>
+<td>$\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+iϙ\tilde A_\Phi/\hbar$</td>
+<td>The covariant derivative</td>
+</tr>
+<tr>
+<td>$\tilde F$</td>
+<td>The field strength, built from covariant gradients</td>
+</tr>
+<tr>
+<td>$k_m=mc/\hbar$</td>
+<td>The mass wave number</td>
+</tr>
+<tr>
+<td>$\mathrm{Sc}(\tilde\nabla^{\natural}\tilde A)=-(iϙ/\hbar)r^{2}e^{2i\vartheta_{\mathrm{pha}}}$</td>
+<td>The ordinary divergence; the amplitude</td>
+</tr>
+<tr>
+<td>$\mathrm{Sc}(\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde A)=0$</td>
+<td>The covariant constraint; a multiplier</td>
+</tr>
+<tr>
+<td>$\tilde K_\Phi$</td>
+<td>The label, the transform's variable</td>
+</tr>
+<tr>
+<td>$\tilde A_{\mathrm{trf}}(\tilde K_\Phi)$</td>
+<td>The amplitude at a label, with no hat on the transform</td>
+</tr>
+<tr>
+<td>$\langle\tilde A\rangle_\natural=\tilde A\tilde A^{\natural}$</td>
+<td>The natural norm; equal to $r^{2}$ only on the real slice</td>
+</tr>
+<tr>
+<td>$\tilde A_{\mathrm{trf}}*\tilde A_{\mathrm{trf}}^{\natural}$</td>
+<td>The correlation of the amplitude with its own conjugate</td>
+</tr>
+<tr>
+<td>$m^{2}\tilde A$, $\tilde A/r$, and the charge bilinear</td>
+<td>The three currents</td>
+</tr>
+<tr>
+<td>$r=\lvert\tilde A\rvert$ in the chart</td>
+<td>A coordinate, not the field's norm</td>
+</tr>
+<tr>
+<td>$\lambda=\exp(iϙ\Gamma/\hbar)$</td>
+<td>The gauge element</td>
+</tr>
+<tr>
+<td>$\mathrm{Sc}(\tilde Q)$</td>
+<td>Scalar part</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Alexandru Proca, "Sur la théorie ondulatoire des électrons positifs et négatifs," <em>Journal de Physique et le Radium</em> <strong>7</strong> (1936) 347–353, for the equation and the constraint.</li>
+<li>Fritz London, "On the problem of the molecular interpretation of the persistent current," <em>Physical Review</em> <strong>54</strong> (1938) 947–954, for the London response $J\propto A$ that the parent identifies with the mass term.</li>
+<li>Jan Łopuszański, "On the correspondence between the Proca and the Maxwell fields," <em>Acta Physica Polonica</em> <strong>9</strong> (1948) 205–218, for the massless limit and the constraint's behaviour in it.</li>
+<li>The companion articles: <a href="the-charged-proca-fluid.html">The Charged Proca Fluid: Three Currents and a Compressibility</a>, for the two displays this article transforms; <a href="the-fourier-transform-and-the-proca-fluid.html">The Fourier Transform and the Proca Fluid</a>, the free rung's transversality; <a href="the-fourier-transform-and-the-coupled-dirac-equation-in-biquaternionic-polar-variables.html">The Fourier Transform and the Coupled Dirac Equation in Biquaternionic Polar Variables</a>, for the product rule and the mode count; and the free companion <a href="the-fourier-transform-and-the-dirac-equation-in-biquaternionic-polar-variables.html">The Fourier Transform and the Dirac Equation in Biquaternionic Polar Variables</a>, for the four brackets the block's diagnostics are built on.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

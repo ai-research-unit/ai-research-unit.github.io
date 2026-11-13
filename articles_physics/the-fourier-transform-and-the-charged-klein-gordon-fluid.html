@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Fourier Transform and the Charged Klein–Gordon Fluid: The Support Is the Translated Shell — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-fourier-transform-and-the-charged-kleingordon-fluid-the-support-is-the-translated-shell"><strong>The Fourier Transform and the Charged Klein–Gordon Fluid: The Support Is the Translated Shell</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>A constant potential translates the support of the transform and leaves its radius alone.</strong> That is one sentence and it carries three results. The kinetic mass shell is the free shell with its centre moved to $-\varkappa\tilde A_\Phi$, so a constant potential shifts every branch and opens no gap. The Klein threshold $\varkappa a_t'=mc^{2}$ is the value of the shift at which the translated shell touches the zero-frequency plane. And the energy offset of every mode is the potential itself, linearly and with no factor.</p>
+<p><strong>The article's second result is about what the potential cannot move.</strong> The vorticity of this fluid is $\varkappa F/m$, and $F$ is the connection's curvature. A constant connection is a multiplier and carries no curvature, so <strong>the mode basis is the basis of uncharged and unrotating flows, and the rotation of the charged fluid is exactly the part of it that no mode carries.</strong> That is the charged Schrödinger rung's finding repeated with the mass present, and it is repeated here on purpose: the two rungs answer the same question and the answer does not depend on the order of the equation.</p>
+<p><strong>The third result is that the radius of the support is the quantum potential's and the centre is the connection's.</strong> The free companion proves the first and this article proves the second, and the pair of statements is the momentum-space form of the block's maxim that the charge shifts a momentum and the amplitude sets a scale.</p>
+<p><strong>Position in the block.</strong> This is the charged companion of <a href="the-fourier-transform-and-the-klein-gordon-fluid.html">The Fourier Transform and the Klein–Gordon Fluid</a> and the Fourier companion of <a href="the-charged-klein-gordon-fluid.html">The Charged Klein–Gordon Fluid: Vorticity Is the Field Strength</a>. The rung below is <a href="the-fourier-transform-and-the-charged-schrodinger-fluid.html">The Fourier Transform and the Charged Schrödinger Fluid</a>.</p>
+<h2 id="conventions">Conventions</h2>
+<p>The charged companion's: $\tilde A_\Phi=i a_t'e_t+\vec A$ with $a_t'$ and $\vec A$ real, the coupling $\varkappa$ being minus the electric charge, $\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{i\varkappa}{\hbar}\tilde A_\Phi$, and the gauge transformation $\lambda=\exp(i\varkappa\Gamma/\hbar)$. The mechanical momentum is</p>
+<p>$$
+\tilde P^{\mathrm{mech}}_\Phi=\tilde P_\Phi+\varkappa\tilde A_\Phi,
+\qquad
+\tilde V_\Phi=\frac{\tilde P^{\mathrm{mech}}_\Phi}{m},
+\qquad
+\mathcal E=-\hbar c\,k_t'+\varkappa a_t' ,
+$$</p>
+<p>and the field strength is $\tilde F=\tilde\nabla^{\natural}\tilde A_\Phi-\tilde\nabla\tilde A_\Phi$ read as the two-form of <a href="maxwells-equations-in-the-biquaternionic-formulation.html">Maxwell's Equations in the Biquaternionic Formulation</a>. The symbol rule is the free companion's.</p>
+<h2 id="the-translated-shell">The Translated Shell</h2>
+<p><strong>With a constant connection the equation is free in translated variables, so its modes are free modes with translated labels.</strong></p>
+<p>$$
+\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{\varkappa}{\hbar}\tilde A_\Phi ,
+\qquad
+\Bigl(k_t'+\frac{\varkappa}{\hbar}a_t'\Bigr)^{2}
+-\Bigl\lvert\vec k_\Phi+\frac{\varkappa}{\hbar}\vec A\Bigr\rvert^{2}=k_m^{2},
+$$</p>
+<p>that is, in the energy and the momentum,</p>
+<p>$$
+\frac{1}{c^{2}}\bigl(E+\varkappa c a_t'\bigr)^{2}-\lvert\vec p+\varkappa\vec A\rvert^{2}=m^{2}c^{2},
+\qquad
+E=\hbar c\,k_t',
+\qquad
+\vec p=\hbar\vec k_\Phi .
+$$</p>
+<p><strong>The check is exact and it is a check of an identity, not of an approximation.</strong> With $m=c=\hbar=1$ and $\varkappa=0.7$, the residual of the display above at $a_t'=0$, $0.4$, $1.0$ and $1.5$ was $0.0$ at every one of the sampled momenta.</p>
+<p><strong>The support is a hyperboloid of the same radius, centred at $(-\varkappa c a_t',-\varkappa\vec A)$.</strong> So the potential does to the support exactly what a translation of the chart does to a figure: it moves it and does not deform it. <strong>A shift of a variable cannot change a radius</strong>, which is the free companion's one-line reason and is the whole of this section, and the displacement of the lowest branch is $\varkappa c\,a_t'$ linearly.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$a_t'$</th>
+<th>the lowest energy $E_{\min}=mc^{2}-\varkappa c\,a_t'$</th>
+<th>where the support sits</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0$</td>
+<td>$+1.000000$</td>
+<td>the free shell</td>
+</tr>
+<tr>
+<td>$0.4$</td>
+<td>$+0.720000$</td>
+<td>shifted down by $0.28$</td>
+</tr>
+<tr>
+<td>$1.0$</td>
+<td>$+0.300000$</td>
+<td>shifted down by $0.70$</td>
+</tr>
+<tr>
+<td>$mc^{2}/\varkappa=1.428571$</td>
+<td>$+0.000000$</td>
+<td>touching the zero-frequency plane</td>
+</tr>
+<tr>
+<td>$1.5$</td>
+<td>$-0.050000$</td>
+<td>crossing it</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The table's fourth row is the Klein threshold and its fifth is the Klein region.</strong> They are one statement about the support: when the shift exceeds the radius, the translated shell crosses $k_t'=0$ and the same spatial wave number carries both a positive and a negative frequency. <strong>The threshold is a tangency and the region is an overlap</strong>, and no dynamics is needed to see either.</p>
+<p><strong>The objection, and the answer.</strong> The objection is that the threshold is a statement about the potential's size and has nothing to do with momentum space. The answer is that in position space the threshold is the place where the charge-sign boundary moves, as the companion states, and the momentum-space statement is the sharper one: the boundary is the tangency of a translated hyperboloid with a plane, and a tangency is a fact about a support. <strong>The two statements are the same statement read on the two variables</strong>, and the momentum-space one has no free parameter in it beyond the ratio $\varkappa a_t'/(mc^{2})$.</p>
+<h2 id="the-curvature-which-a-constant-connection-cannot-supply">The Curvature, Which a Constant Connection Cannot Supply</h2>
+<p><strong>The identity is the companion's, $\mathrm{d}\tilde V=\frac{\varkappa}{m}\tilde F$, and in momentum space it is a statement about profiles.</strong> A constant connection has $\tilde F=0$ identically, so a mode of a constant connection is irrotational; a linear connection has a constant $\tilde F$ and a transform that is a derivative of a delta, so no mode survives; and a connection of higher order has a varying $\tilde F$ and a smooth kernel.</p>
+<p><strong>The rank is the relativistic rung's own addition and it has no image at the rung below.</strong> The companion finds the vorticity proper of rank two always, and the raw derivative of the frame reaching rank four, and it finds that adding $\varkappa F/m$ for a field with $\vec E\cdot\vec B\ne0$ gives a rank-four two-form — singular values $0.921$, $0.921$, $0.632$, $0.632$ against the frame's $0.150342$, $0.150342$, $0$, $0$ and the raw derivative's $0.20582$, $0.20582$, $0.02742$, $0.02742$. <strong>The charged Schrödinger fluid's vorticity cannot reach rank four, because a boost mixes the two halves of the field and there is no boost there.</strong> So the two charged rungs differ in the rank of the object a mode cannot carry, and the difference is the mass.</p>
+<p><strong>What survives at both rungs is the invariance statement.</strong> The curvature is the only gauge-invariant object the momentum-space reading has, and the mode count, the support and the envelope are all chart-dependent. <strong>The one thing the transform of a charged fluid can say without a gauge choice is what its vorticity is</strong>, and that is why this article's central section is a section about a curvature and not about a spectrum.</p>
+<h2 id="two-supports-one-field">Two Supports, One Field</h2>
+<p><strong>The canonical and kinetic labels differ by the potential, so the transform has two supports and the choice between them is a gauge choice.</strong></p>
+<p>$$
+\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{\varkappa}{\hbar}\tilde A_\Phi
+\qquad\Longleftrightarrow\qquad
+\text{the support in the kinetic variable}=\text{the free shell},
+$$</p>
+<p>and in the canonical variable the support is the same shell translated the other way. <strong>A gauge transformation with a linear phase translates the support</strong>, so the two descriptions are related by a translation and not by a deformation, which is this article's first result read on the two charts.</p>
+<p><strong>The fluid's velocity is read from the kinetic label, and that fixes which chart the fluid is written in.</strong> $\tilde V_\Phi=\tilde P^{\mathrm{mech}}_\Phi/m$, so the flow's datum is the label on the translated support; in the chart where the support is free the flow's variable is the canonical one and the velocity is not read from it. <strong>The chart in which the fluid's velocity is the label is the chart in which the support is translated</strong>, exactly as at the rung below.</p>
+<p><strong>What the two charts have in common is the radius and the curvature.</strong> The radius is $m^{2}c^{2}+2mQ_{\mathrm{qnt}}$, which the potential does not touch, and the curvature is $\tilde F$, which the translation does not touch. <strong>So the free potential moves the radius and the connection moves the centre, and neither moves the other's invariant</strong> — which is the block's type argument written in the momentum space of the second-order equation.</p>
+<h2 id="limits">Limits</h2>
+<p><strong>Constant coefficients.</strong> The multiplier reading of the potential needs a constant connection. The charge-sign and threshold statements need only a constant $a_t'$ and a vanishing $\vec A$, which is the case in which they are usually made.</p>
+<p><strong>The squared reading and the paired reading.</strong> The chart's object at this rung is a modulus squared, and <a href="the-fourier-transform-and-the-coupled-klein-gordon-equation-in-biquaternionic-polar-variables.html">The Fourier Transform and the Coupled Klein–Gordon Equation in Biquaternionic Polar Variables</a> finds that the chart therefore writes the squared equation and not the paired one. Nothing above uses the paired reading, and the translation result holds for either.</p>
+<p><strong>The denial.</strong> The transform carries $\mathbb{B}_\Phi$-valued fields to $\mathbb{B}_\Phi$-valued fields, and the amplitude at a wave number is one element at one point of the shell.</p>
+<h2 id="open-questions">Open Questions</h2>
+<ol>
+<li>
+<p><strong>The Klein region's support.</strong> §<em>The Translated Shell</em> finds the translated shell crossing $k_t'=0$ at $\varkappa a_t'>mc^{2}$. Whether the fluid's velocity remains a unit on the part of the support beyond the crossing, and what the chart does where the support is two-branched on both sides of the plane, is not settled here.</p>
+</li>
+<li>
+<p><strong>A varying field.</strong> A uniform $\vec B$ is a linear $\vec A$ and admits no mode, so the vorticity in a uniform field is not analysable mode by mode. Whether the Landau-like structure of the charged scalar fluid in this chart is a statement about the support or about a basis of non-plane-wave modes is open.</p>
+</li>
+<li>
+<p><strong>The half of the field the chart cannot see.</strong> The paired reading needs two opposite charges and the chart writes one squared charge. Whether the translation result of §<em>The Translated Shell</em> survives into the paired reading with a factor two in the shift is not settled, and the parent's fork suggests it does not.</p>
+</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>A constant potential translates the support of the transform and leaves its radius at $m^{2}c^{2}$. The kinetic shell is $(E+\varkappa c a_t')^{2}/c^{2}-\lvert\vec p+\varkappa\vec A\rvert^{2}=m^{2}c^{2}$, checked at residual $0.0$ for four values of the potential.</p>
+<p>The displacement of the lowest branch is $\varkappa c\,a_t'$, linearly. At $\varkappa a_t'=mc^{2}$ the translated shell touches $k_t'=0$ and beyond it crosses: the Klein threshold is a tangency and the Klein region is an overlap, both statements about a support and neither about a dynamics.</p>
+<p>The vorticity is $\varkappa F/m$ and $F$ is the curvature, so a constant connection carries none and the mode basis is the basis of unrotating flows. The rank-four field strength of this rung has no image at the rung below, and the difference is the boost that only a second-order equation supplies.</p>
+<p>The fluid reads its velocity from the kinetic label, so the chart in which the fluid's velocity is the label is the chart in which the support is translated. The free quantum potential moves the radius and the connection moves the centre, and neither moves the other's invariant.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\varkappa$</td>
+<td>The coupling; minus the electric charge</td>
+</tr>
+<tr>
+<td>$\tilde A_\Phi=i a_t'e_t+\vec A$</td>
+<td>The connection</td>
+</tr>
+<tr>
+<td>$\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\varkappa\tilde A_\Phi/\hbar$</td>
+<td>The covariant label</td>
+</tr>
+<tr>
+<td>$\tilde P^{\mathrm{mech}}_\Phi=\tilde P_\Phi+\varkappa\tilde A_\Phi$</td>
+<td>The mechanical momentum</td>
+</tr>
+<tr>
+<td>$\tilde V_\Phi=\tilde P^{\mathrm{mech}}_\Phi/m$</td>
+<td>The four-velocity</td>
+</tr>
+<tr>
+<td>$\mathcal E=-\hbar c k_t'+\varkappa a_t'$</td>
+<td>The kinetic energy</td>
+</tr>
+<tr>
+<td>$\varkappa a_t'=mc^{2}$</td>
+<td>The Klein threshold</td>
+</tr>
+<tr>
+<td>$\tilde F$</td>
+<td>The field strength; the curvature</td>
+</tr>
+<tr>
+<td>$\omega=\varkappa F/m$</td>
+<td>The vorticity</td>
+</tr>
+<tr>
+<td>$Q_{\mathrm{qnt}}$</td>
+<td>The quantum potential; it moves the radius</td>
+</tr>
+<tr>
+<td>$\lambda=\exp(i\varkappa\Gamma/\hbar)$</td>
+<td>The gauge element; a linear $\Gamma$ translates the support</td>
+</tr>
+<tr>
+<td>$\mathrm{Sc}(\tilde Q)$</td>
+<td>Scalar part</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Oskar Klein, "Die Reflexion von Elektronen an einem Potentialsprung nach der relativistischen Dynamik von Dirac," <em>Zeitschrift für Physik</em> <strong>53</strong> (1929) 157–165, for the threshold that §<em>The Translated Shell</em> reads as a tangency.</li>
+<li>Fritz Sauter, "Über das Verhalten eines Elektrons im homogenen elektrischen Feld nach der relativistischen Theorie Diracs," <em>Zeitschrift für Physik</em> <strong>69</strong> (1931) 742–764, for the pair production the crossing of the zero-frequency plane describes.</li>
+<li>Peter R. Holland, <em>The Quantum Theory of Motion</em> (Cambridge University Press, 1993), chapter 9, for the charged scalar fluid and the movement of its charge-sign boundary.</li>
+<li>The companion articles: <a href="the-charged-klein-gordon-fluid.html">The Charged Klein–Gordon Fluid: Vorticity Is the Field Strength</a>, for the vorticity identity, its rank and the charge-sign boundary; <a href="the-fourier-transform-and-the-klein-gordon-fluid.html">The Fourier Transform and the Klein–Gordon Fluid</a>, where the quantum potential moves the radius; <a href="the-fourier-transform-and-the-charged-schrodinger-fluid.html">The Fourier Transform and the Charged Schrödinger Fluid</a>, the rung below, where the same curvature argument is made with no mass; and <a href="the-fourier-transform-and-the-coupled-klein-gordon-equation-in-biquaternionic-polar-variables.html">The Fourier Transform and the Coupled Klein–Gordon Equation in Biquaternionic Polar Variables</a>, for the squared reading and the fork.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
