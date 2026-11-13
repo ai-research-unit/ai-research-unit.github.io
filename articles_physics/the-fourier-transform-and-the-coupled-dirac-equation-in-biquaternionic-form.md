@@ -189,7 +189,7 @@ The shift of the wave number is a translation. At constant $\tilde A_\Phi$ the n
 - *The Coupled Dirac Equation in Biquaternionic Form*, for the covariant derivative, the gauge law, the anti-Hermitian writing of the connection and the constant-potential solutions.
 - *The Fourier Transform and the Coupled Dirac Equation in Biquaternionic Polar Variables*, for the same transform read in the word and for the count of mixed modes.
 - *The Fourier Transform and the Dirac Equation in Biquaternionic Form*, for the free symbol, its Hermiticity and the light cone as the idempotent variety.
-- *The Fourier Transform and the Variational Principle and the Dirac Equation in Biquaternionic Form*, for the action's momentum-space quadratic form and the zero-pole relation.
+- *The Fourier Transform, the Variational Principle and the Dirac Equation in Biquaternionic Form*, for the action's momentum-space quadratic form and the zero-pole relation.
 - *Derivatives, Fields and Transforms*, for the transform, its kernel and the symbol rule.
 - *Biquaternion Continuous Harmonic Analysis*, for the convolution theorem and its central-kernel hypothesis.
 - *The Gauge Principle in Biquaternionic Form*, for the localization of the central phase and the sign of the coupling.

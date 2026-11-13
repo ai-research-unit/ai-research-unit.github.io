@@ -240,5 +240,5 @@ The phase is a character and the rotor is not: $0.6$ and $0.9$ about different a
 - *The Fourier Transform and the Schrödinger Equation in Biquaternionic Form*, for the symbol, its determinant and the counts of poles.
 - *The Variational Principle and the Schrödinger Equation in Biquaternionic Polar Variables*, for the kinetic Lagrangian, the factor $\cosh\theta_{\mathrm{rpd}}$ and the conjugate momentum $-\hbar n$.
 - *The Coupled Schrödinger Equation in Biquaternionic Polar Variables*, for the gauge direction of the chart and the invariance of the pair.
-- *The Fourier Transform and the Variational Principle and the Schrödinger Equation in Biquaternionic Form*, for the action's quadratic form at fixed frequency.
+- *The Fourier Transform, the Variational Principle and the Schrödinger Equation in Biquaternionic Form*, for the action's quadratic form at fixed frequency.
 - *Algebra and Element Conventions*, for the four types and the two conjugations that separate them.

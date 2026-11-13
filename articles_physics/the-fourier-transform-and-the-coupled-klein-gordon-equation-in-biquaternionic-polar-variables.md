@@ -137,7 +137,7 @@ What the chart is silent on, it is silent on for one reason: its functionals are
 
 - *The Coupled Klein–Gordon Equation in Biquaternionic Polar Variables*, for the word, the covariant bracket, the vorticity and the table of what the chart shows and hides.
 - *The Fourier Transform and the Coupled Klein–Gordon Equation in Biquaternionic Form*, for the parity lemma, the two symbols and the corrected shells.
-- *The Fourier Transform and the Variational Principle and the Coupled Klein–Gordon Equation in Biquaternionic Form*, for the action's Euler–Lagrange operator and the ordering term.
+- *The Fourier Transform, the Variational Principle and the Coupled Klein–Gordon Equation in Biquaternionic Form*, for the action's Euler–Lagrange operator and the ordering term.
 - *The Variational Principle and the Coupled Klein–Gordon Equation in Biquaternionic Polar Variables*, for the mechanical momentum, the charge sign and the vorticity as a Legendre conjugate's curl.
 - *The Klein–Gordon Equation in Biquaternionic Polar Variables*, for the word, the amplitude equation and the quantum potential the coupling leaves untouched.
 - *The Gauge Principle in Biquaternionic Form*, for the localization of the central phase.

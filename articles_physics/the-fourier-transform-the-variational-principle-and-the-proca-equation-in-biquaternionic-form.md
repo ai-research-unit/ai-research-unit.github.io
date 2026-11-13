@@ -1,4 +1,4 @@
-# __The Fourier Transform and the Variational Principle and the Proca Equation in Biquaternionic Form__
+# __The Fourier Transform, the Variational Principle and the Proca Equation in Biquaternionic Form__
 
 ## Introduction
 
@@ -131,7 +131,7 @@ so the temporal coefficient is $\tfrac12(\vec k_\Phi^{2}+k_m^{2})$ and the three
 
 ## Zero, Pole and Degeneracy Are One Locus
 
-**The form degenerates exactly where the symbol is singular and exactly where the propagator has its pole.** The transverse coefficient is $-\tfrac12(k^{2}-k_m^{2})A\!\cdot\!A$, so the form is degenerate on the Lorenz plane precisely at $k^{2}=k_m^{2}$. That is the same surface as the form companion's $\det\sigma=0$ and the same surface as the propagator's denominator's zero. **Three registers, one locus**, and the naming is *The Fourier Transform and the Variational Principle and the Dirac Equation in Biquaternionic Form*'s, whose §*Zero and Pole Are One Object* establishes it for the Dirac action.
+**The form degenerates exactly where the symbol is singular and exactly where the propagator has its pole.** The transverse coefficient is $-\tfrac12(k^{2}-k_m^{2})A\!\cdot\!A$, so the form is degenerate on the Lorenz plane precisely at $k^{2}=k_m^{2}$. That is the same surface as the form companion's $\det\sigma=0$ and the same surface as the propagator's denominator's zero. **Three registers, one locus**, and the naming is *The Fourier Transform, the Variational Principle and the Dirac Equation in Biquaternionic Form*'s, whose §*Zero and Pole Are One Object* establishes it for the Dirac action.
 
 **The three statements are not equivalent and they are one function's three readings.** The action's vanishing on shell selects the support; the symbol's singularity gives the pole; the form's degeneracy says the amplitude is unconstrained there. **Write $N(k)=k^{2}-k_m^{2}$: the variational output is $N=0$, the symbol is $N$ times a projector plus $-k_m^{2}$ along $k$, and the propagator is proportional to $1/N$.** The article states the three and does not claim that any one of them implies another.
 
@@ -199,8 +199,8 @@ The form degenerates exactly where the symbol is singular and where the propagat
 - *The Variational Principle and the Proca Equation in Biquaternionic Form*, for the action, the variation, the Lorenz condition as a consequence and the Noether currents.
 - *The Fourier Transform and the Proca Equation in Biquaternionic Form*, for the symbol's determinant, rank and kernel.
 - *The Fourier Transform and the Proca Equation in Biquaternionic Polar Variables*, for the chart reading of the same field.
-- *The Fourier Transform and the Variational Principle and the Dirac Equation in Biquaternionic Form*, for the zero–pole relation and the momentum-space action of a first-order theory.
-- *The Fourier Transform and the Variational Principle and the Coupled Proca Equation in Biquaternionic Form*, for the same form with a connection.
+- *The Fourier Transform, the Variational Principle and the Dirac Equation in Biquaternionic Form*, for the zero–pole relation and the momentum-space action of a first-order theory.
+- *The Fourier Transform, the Variational Principle and the Coupled Proca Equation in Biquaternionic Form*, for the same form with a connection.
 - *The Proca Equation: Massive Spin 1 in Biquaternionic Form*, for the plane waves and the polarisation count.
 - *Derivatives, Fields and Transforms*, for the symbol rule.
 - *Norm and Pairing Conventions*, for the material form's indefiniteness and the Hermitian pairing.

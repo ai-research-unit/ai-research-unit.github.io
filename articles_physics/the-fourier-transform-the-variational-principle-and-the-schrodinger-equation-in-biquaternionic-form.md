@@ -1,4 +1,4 @@
-# __The Fourier Transform and the Variational Principle and the Schrödinger Equation in Biquaternionic Form__
+# __The Fourier Transform, the Variational Principle and the Schrödinger Equation in Biquaternionic Form__
 
 ## Introduction
 
@@ -227,5 +227,5 @@ Parseval is the Noether charge's transform, $Q_N=\sum_j\lvert c_j\rvert^{2}$, ex
 - *The Fourier Transform and the Schrödinger Equation in Biquaternionic Form*, for the symbol, its determinant and the counts of poles.
 - *The Fourier Transform and the Schrödinger Equation in Biquaternionic Polar Variables*, for the same identity read in the word.
 - *The Variational Principle and the Schrödinger Equation in Biquaternionic Polar Variables*, for the unconstrained variation and the vanishing multipliers.
-- *The Fourier Transform and the Variational Principle and the Coupled Schrödinger Equation in Biquaternionic Form*, for the same structure with a connection.
+- *The Fourier Transform, the Variational Principle and the Coupled Schrödinger Equation in Biquaternionic Form*, for the same structure with a connection.
 - *The Action Principle and the Non-Quantum Limit in Biquaternionic Form*, for the principle this article applies.

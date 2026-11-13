@@ -12,7 +12,7 @@
 
 **The transform gives nothing to the polar form that it did not already have, and the article says so.** The word is a bijection, so the substitution adds no content and removes none. What the transform gives is a reading: the phase is the action, the amplitude is the spread, and the symbol is the free symbol on a fixed amplitude. That reading is the whole of the article.
 
-**The two companion articles ask neighbouring questions.** *The Fourier Transform and the Variational Principle and the Klein–Gordon Equation in Biquaternionic Form* asks what the eigenvalues of a non-central potential are. *The Fourier Transform and the Klein–Gordon Equation in Biquaternionic Form* asks when the second-order symbol factors. This article asks where the symbol comes from and what removes it. **The three answers are independent**, and this one is the only one of the three that uses the word.
+**The two companion articles ask neighbouring questions.** *The Fourier Transform, the Variational Principle and the Klein–Gordon Equation in Biquaternionic Form* asks what the eigenvalues of a non-central potential are. *The Fourier Transform and the Klein–Gordon Equation in Biquaternionic Form* asks when the second-order symbol factors. This article asks where the symbol comes from and what removes it. **The three answers are independent**, and this one is the only one of the three that uses the word.
 
 ## Conventions
 
@@ -157,7 +157,7 @@ Where the symbol fails the amplitude equation carries $\Box_\Phi r/r$, the paren
 
 - *The Klein–Gordon Equation in Biquaternionic Polar Variables*, for the word, the amplitude and transport equations, and the identity this article follows to the transform.
 - *The Fourier Transform and the Klein–Gordon Equation in Biquaternionic Form*, for the symbol whose failure this article locates.
-- *The Fourier Transform and the Variational Principle and the Klein–Gordon Equation in Biquaternionic Form*, for the spectrum of a non-central potential.
+- *The Fourier Transform, the Variational Principle and the Klein–Gordon Equation in Biquaternionic Form*, for the spectrum of a non-central potential.
 - *The Fourier Transform and the Dirac Equation in Biquaternionic Polar Variables*, for the first-order case, where the polar form stops at the eikonal and has no second derivative of the amplitude to carry.
 - *The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form*, for the quantum potential's origin.
 - *Derivatives, Fields and Transforms*, for the transform, its kernel and the shift rule.

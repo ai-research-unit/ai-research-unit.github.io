@@ -14,7 +14,7 @@
 
 **The fourth finding is that the scalar potential translates the pole pair and leaves its spacing alone.** A constant $\varphi$ shifts both eigenvalues by the same number, so the spacing is untouched and equal to the free gap. **The spacing is gauge invariant and the position of the pair is not**, and the gauge transformation's effect on the frequency is exactly the phase shift the field supplies.
 
-**The companion articles.** The polar companion, *The Fourier Transform and the Coupled Schrödinger Equation in Biquaternionic Polar Variables*, reads the same symbol in the chart. The variational companion, *The Fourier Transform and the Variational Principle and the Coupled Schrödinger Equation in Biquaternionic Form*, asks what the coupled action's quadratic form is at fixed frequency. The free version of this article is *The Fourier Transform and the Schrödinger Equation in Biquaternionic Form*.
+**The companion articles.** The polar companion, *The Fourier Transform and the Coupled Schrödinger Equation in Biquaternionic Polar Variables*, reads the same symbol in the chart. The variational companion, *The Fourier Transform, the Variational Principle and the Coupled Schrödinger Equation in Biquaternionic Form*, asks what the coupled action's quadratic form is at fixed frequency. The free version of this article is *The Fourier Transform and the Schrödinger Equation in Biquaternionic Form*.
 
 ## Conventions
 
@@ -206,6 +206,6 @@ The connection is central in every slot, so the symbol remains one scalar or one
 - *The Coupled Schrödinger Equation in Biquaternionic Form*, for the equation, its two signs, its gauge covariance and the two-number shift this article reads in frequency space.
 - *The Fourier Transform and the Schrödinger Equation in Biquaternionic Form*, for the free symbol whose shifted arguments appear here.
 - *The Fourier Transform and the Coupled Schrödinger Equation in Biquaternionic Polar Variables*, for the same symbol read in the chart.
-- *The Fourier Transform and the Variational Principle and the Coupled Schrödinger Equation in Biquaternionic Form*, for the coupled action's quadratic form at fixed frequency.
+- *The Fourier Transform, the Variational Principle and the Coupled Schrödinger Equation in Biquaternionic Form*, for the coupled action's quadratic form at fixed frequency.
 - *The Coupled Schrödinger Equation in Biquaternionic Polar Variables*, for the two invariants $\vec\pi$ and $\mathcal E$ and the gauge direction.
 - *Maxwell's Equations in the Biquaternionic Formulation*, for the connection's temporal coefficient and the sign of $ϙ$.

@@ -190,5 +190,5 @@ The invariants $\vec\pi$ and $\mathcal E$ are gauge invariant and field dependen
 - *The Fourier Transform and the Coupled Schrödinger Equation in Biquaternionic Form*, for the element-form symbol and its two settings.
 - *The Fourier Transform and the Schrödinger Equation in Biquaternionic Polar Variables*, for the free chart's four brackets and the flat dual.
 - *The Schrödinger Equation in Biquaternionic Polar Variables*, for the word, the two rates and the two norms.
-- *The Fourier Transform and the Variational Principle and the Coupled Schrödinger Equation in Biquaternionic Form*, for the coupled action at fixed frequency.
+- *The Fourier Transform, the Variational Principle and the Coupled Schrödinger Equation in Biquaternionic Form*, for the coupled action at fixed frequency.
 - *The Coupled Schrödinger Equation in Biquaternionic Form*, for the equation and its sign bookkeeping.

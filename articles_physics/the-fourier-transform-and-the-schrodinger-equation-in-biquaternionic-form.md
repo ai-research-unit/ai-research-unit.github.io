@@ -12,7 +12,7 @@
 
 **The third finding is what a first-order equation cannot have.** The Klein–Gordon and Dirac symbols are even in $\omega$; the Schrödinger symbol is even about $h_t$ and not about zero. A solution at frequency $\omega$ has a partner at $-\omega$ in the second-order theories and a partner at $2h_t/\hbar-\omega$ here. **That asymmetry is the absence of the antiparticle, read on the zero set**, and it follows from the order of the equation and not from the algebra.
 
-**The other three readings are companions.** *The Fourier Transform and the Schrödinger Equation in Biquaternionic Polar Variables* reads the same symbol in the word. *The Fourier Transform and the Variational Principle and the Schrödinger Equation in Biquaternionic Form* asks what the action's quadratic form becomes at fixed frequency. The coupled pair repeats both questions with a connection. This article is the free element-form case, and it cites its parents rather than repeating them.
+**The other three readings are companions.** *The Fourier Transform and the Schrödinger Equation in Biquaternionic Polar Variables* reads the same symbol in the word. *The Fourier Transform, the Variational Principle and the Schrödinger Equation in Biquaternionic Form* asks what the action's quadratic form becomes at fixed frequency. The coupled pair repeats both questions with a connection. This article is the free element-form case, and it cites its parents rather than repeating them.
 
 ## Conventions
 
@@ -215,6 +215,6 @@ The symbol's zero set is two points and not a surface, because a first-order equ
 - *The Schrödinger Equation in Biquaternionic Form*, for the equation, its solution, and the uniqueness of the central unit this article reads in momentum space.
 - *The Schrödinger Equation in Biquaternionic Polar Variables*, for the two rates, which are the mean and the gap of this article's symbol.
 - *The Fourier Transform and the Schrödinger Equation in Biquaternionic Polar Variables*, for the same symbol read in the word.
-- *The Fourier Transform and the Variational Principle and the Schrödinger Equation in Biquaternionic Form*, for the action's quadratic form at fixed frequency.
+- *The Fourier Transform, the Variational Principle and the Schrödinger Equation in Biquaternionic Form*, for the action's quadratic form at fixed frequency.
 - *The Fourier Transform and the Klein–Gordon Equation in Biquaternionic Form*, for the second-order comparison: the rank of a quadric and the two-sheeted shell.
 - *Algebra and Element Conventions*, for the coefficient basis, the axis-free array, and the two norms.

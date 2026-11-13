@@ -1,4 +1,4 @@
-# __The Fourier Transform and the Variational Principle and the Coupled Proca Equation in Biquaternionic Form__
+# __The Fourier Transform, the Variational Principle and the Coupled Proca Equation in Biquaternionic Form__
 
 ## Introduction
 
@@ -221,12 +221,12 @@ The charge carries no mass and the energy carries $k_m^{2}$: the charge's symbol
 ## Further Reading
 
 - *The Variational Principle and the Coupled Proca Equation in Biquaternionic Form*, for the action, the variation, the field term's non-invariance, the currents and the constraint's coupled reading.
-- *The Fourier Transform and the Variational Principle and the Proca Equation in Biquaternionic Form*, for the free form, its longitudinal coefficient and the absent frequency.
+- *The Fourier Transform, the Variational Principle and the Proca Equation in Biquaternionic Form*, for the free form, its longitudinal coefficient and the absent frequency.
 - *The Fourier Transform and the Coupled Proca Equation in Biquaternionic Form*, for the coupled symbol and the obstruction.
 - *The Fourier Transform and the Coupled Proca Equation in Biquaternionic Polar Variables*, for the phase as a coordinate and the ledger of three absences.
 - *Gauge Fields and the Covariant Derivative*, for the covariant derivative's symbol and the curvature.
 - *The Proca Equation in Biquaternionic Polar Variables*, for the chart's one equation among eight.
-- *The Fourier Transform and the Variational Principle and the Dirac Equation in Biquaternionic Form*, for a first-order form and a single-valued inversion.
+- *The Fourier Transform, the Variational Principle and the Dirac Equation in Biquaternionic Form*, for a first-order form and a single-valued inversion.
 - *Norm and Pairing Conventions*, for the Hermitian pairing and the modulus pairing's distinct role.
 - *Derivatives, Fields and Transforms*, for the symbol rule.
 - J. D. Bjorken and S. D. Drell, *Relativistic Quantum Fields* (McGraw-Hill, 1965), Chapter 11, for the massive vector field's constraint and its energy–momentum trace.

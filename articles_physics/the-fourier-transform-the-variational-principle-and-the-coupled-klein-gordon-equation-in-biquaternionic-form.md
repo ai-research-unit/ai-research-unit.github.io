@@ -1,4 +1,4 @@
-# __The Fourier Transform and the Variational Principle and the Coupled Klein–Gordon Equation in Biquaternionic Form__
+# __The Fourier Transform, the Variational Principle and the Coupled Klein–Gordon Equation in Biquaternionic Form__
 
 ## Introduction
 

@@ -14,7 +14,7 @@
 
 **The polar parent has no symbol at all, and that is why the family stops here.** The amplitude equation is nonlinear in the pair of amplitude and phase, so there is no symbol to factor and no quadric to test. The companion article *The Fourier Transform and the Klein–Gordon Equation in Biquaternionic Polar Variables* takes that case in full, and the one paragraph below states the algebraic reason without duplicating its argument.
 
-**The companion's question is the spectrum, and it is not this article's.** *The Fourier Transform and the Variational Principle and the Klein–Gordon Equation in Biquaternionic Form* asks what the eigenvalues of a non-central potential are and answers $a\pm\lvert\vec v\rvert$, each doubled. This article asks when the symbol factors. An operator can have a perfectly good spectrum and no square root; that is exactly the Klein–Gordon case, and the two answers are independent.
+**The companion's question is the spectrum, and it is not this article's.** *The Fourier Transform, the Variational Principle and the Klein–Gordon Equation in Biquaternionic Form* asks what the eigenvalues of a non-central potential are and answers $a\pm\lvert\vec v\rvert$, each doubled. This article asks when the symbol factors. An operator can have a perfectly good spectrum and no square root; that is exactly the Klein–Gordon case, and the two answers are independent.
 
 ## Conventions
 
@@ -131,7 +131,7 @@ so a real frequency requires $(\vec\zeta-E)\cdot H=0$, and on that surface $\ome
 
 **The article does not re-derive the kernel.** The light-cone $\delta$-layer, the Bessel-type kernel of the unfactored operator and the exponential weight of the factored one are the parent's, and they are cited at §*Conventions*. What is added here is the shape of the zero set, not the fundamental solution.
 
-**The companion's spectrum and this article's rank are different measurements of one object.** *The Fourier Transform and the Variational Principle and the Klein–Gordon Equation in Biquaternionic Form* finds the spectrum of a non-central potential; this article finds when the symbol splits. A reader who wants the eigenvalues will not find them here, and a reader who wants the square root will not find it there.
+**The companion's spectrum and this article's rank are different measurements of one object.** *The Fourier Transform, the Variational Principle and the Klein–Gordon Equation in Biquaternionic Form* finds the spectrum of a non-central potential; this article finds when the symbol splits. A reader who wants the eigenvalues will not find them here, and a reader who wants the square root will not find it there.
 
 ## Open Questions
 
@@ -163,7 +163,7 @@ The two parts of the coefficient then split the work: $\omega^{2}=(\vec\zeta-E)^
 ## Further Reading
 
 - *The Klein–Gordon Equation in Biquaternionic Form*, for the obstruction this article reads in momentum space, the Alexeyeva factorization, and the plane-wave catalogue.
-- *The Fourier Transform and the Variational Principle and the Klein–Gordon Equation in Biquaternionic Form*, for the spectrum of a non-central potential, which is the companion question.
+- *The Fourier Transform, the Variational Principle and the Klein–Gordon Equation in Biquaternionic Form*, for the spectrum of a non-central potential, which is the companion question.
 - *The Fourier Transform and the Klein–Gordon Equation in Biquaternionic Polar Variables*, for the polar case: the transform's phase as the action and the amplitude as what removes the symbol.
 - *The Klein–Gordon Equation in Biquaternionic Polar Variables*, for the amplitude and transport equations.
 - *The First-Order Root of the Biquaternion Klein–Gordon Operator*, for the spinor square root on a carrier.

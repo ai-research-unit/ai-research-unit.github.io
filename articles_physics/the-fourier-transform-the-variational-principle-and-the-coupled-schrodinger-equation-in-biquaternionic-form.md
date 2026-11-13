@@ -1,4 +1,4 @@
-# __The Fourier Transform and the Variational Principle and the Coupled Schrödinger Equation in Biquaternionic Form__
+# __The Fourier Transform, the Variational Principle and the Coupled Schrödinger Equation in Biquaternionic Form__
 
 ## Introduction
 
@@ -14,7 +14,7 @@
 
 **The fifth finding is a resolution.** The earlier companions report a sign for the frequency shift that a careless substitution would reverse. Here the reversal is visible as a failure of exactly the cancellation above, so the article can state which sign is the parent's and why.
 
-**The companion articles.** *The Fourier Transform and the Variational Principle and the Schrödinger Equation in Biquaternionic Form* is the free version. *The Fourier Transform and the Coupled Schrödinger Equation in Biquaternionic Form* gives the symbol, and its polar companion gives the chart. This article joins the action to the coupled symbol.
+**The companion articles.** *The Fourier Transform, the Variational Principle and the Schrödinger Equation in Biquaternionic Form* is the free version. *The Fourier Transform and the Coupled Schrödinger Equation in Biquaternionic Form* gives the symbol, and its polar companion gives the chart. This article joins the action to the coupled symbol.
 
 ## Conventions
 
@@ -179,7 +179,7 @@ The symbol is gauge invariant in the invariant coordinates: the four shifts canc
 
 - *The Variational Principle and the Coupled Schrödinger Equation in Biquaternionic Form*, for the coupled action, its variation and its currents cited here.
 - *The Fourier Transform and the Coupled Schrödinger Equation in Biquaternionic Form*, for the two settings' symbols and the translation identity.
-- *The Fourier Transform and the Variational Principle and the Schrödinger Equation in Biquaternionic Form*, for the free version of this article's identity.
+- *The Fourier Transform, the Variational Principle and the Schrödinger Equation in Biquaternionic Form*, for the free version of this article's identity.
 - *The Fourier Transform and the Coupled Schrödinger Equation in Biquaternionic Polar Variables*, for the same symbol read in the chart.
 - *The Coupled Schrödinger Equation in Biquaternionic Form*, for the signs of the two covariant slots.
 - *The Action Principle and the Non-Quantum Limit in Biquaternionic Form*, for the principle and its Legendre structure.
