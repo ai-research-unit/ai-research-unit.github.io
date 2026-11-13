@@ -311,8 +311,8 @@ None of this is a new integral. It is the companion's integral read in the coord
 - [The Path Integral and the Dirac Equation in Biquaternionic Form](the-path-integral-and-the-dirac-equation-in-biquaternionic-form.html), the companion, for the construction of the integral, the spinning worldline, the spin factor, and the measure.
 - [The Dirac Equation in Biquaternionic Polar Variables](the-dirac-equation-in-biquaternionic-polar-variables.html), for the word, the two norms, the current and the spin.
 - [The Variational Principle and the Dirac Equation in Biquaternionic Polar Variables](the-variational-principle-and-the-dirac-equation-in-biquaternionic-polar-variables.html), for the polar action, the four vanishing momenta and the mass relation.
-- [The Schrödinger Path Integral in Biquaternionic Form](the-schrodinger-path-integral-in-biquaternionic-form.html), for the central kernel and the van Vleck kernel of the scalar case.
-- [The Klein–Gordon Path Integral in Biquaternionic Form](the-klein-gordon-path-integral-in-biquaternionic-form.html), for the scalar kernel that the first-order operator acts on.
+- [The Path Integral and the Schrödinger Equation in Biquaternionic Form](the-path-integral-and-the-schrodinger-equation-in-biquaternionic-form.html), for the central kernel and the van Vleck kernel of the scalar case.
+- [The Path Integral and the Klein–Gordon Equation in Biquaternionic Form](the-path-integral-and-the-klein-gordon-equation-in-biquaternionic-form.html), for the scalar kernel that the first-order operator acts on.
 - [The Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html), for the word and its bijection.
 - F. A. Berezin and M. S. Marinov, "Particle spin dynamics as the Grassmann variant of classical mechanics," *Annals of Physics* **104** (1977) 336–362, for the odd variables of the worldline.
 - L. Brink, P. Di Vecchia and P. Howe, "A Lagrangian formulation of the classical and quantum dynamics of spinning particles," *Nuclear Physics B* **118** (1977) 76–94, for the supersymmetric worldline.

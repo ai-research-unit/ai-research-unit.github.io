@@ -258,7 +258,7 @@ The parent's two settings are different equations, and the variational principle
 
 **2. The stress tensor, as a check.** The energy component of the operator action's stress tensor should reproduce the tensor of *Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form*. This is a check and not a derivation, and it is not performed here.
 
-**3. The relation to the path integral.** The variational principle is the extremum of an action; the path integral is the sum over configurations. Both are integral in form and they are different objects. The path-integral version belongs to *The Schrödinger Path Integral in Biquaternionic Form*, and the relation between the two is not attempted here.
+**3. The relation to the path integral.** The variational principle is the extremum of an action; the path integral is the sum over configurations. Both are integral in form and they are different objects. The path-integral version belongs to *The Path Integral and the Schrödinger Equation in Biquaternionic Form*, and the relation between the two is not attempted here.
 
 ## Summary
 

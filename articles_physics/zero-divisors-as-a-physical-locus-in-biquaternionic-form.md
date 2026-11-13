@@ -125,7 +125,7 @@ $$
 
 With $m=\omega=1$ and $E=2$ the turning points are $x=\pm2$, and the momentum was evaluated numerically as $p=2.000000,1.732051,0.624500,0.199750,0$ at $x=0,1,1.9,1.99,2$; the amplitude ratio between the centre and a point close to the turning point is $A(0)/A(1.99)=\sqrt{p(0)/p(1.99)}=3.1643$, and it grows without bound as the turning point is approached. The locus is where the classical momentum vanishes, the semiclassical description fails, and the connection formulas of the companion WKB article take over.
 
-The companion article *The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form* develops the connection formulas that carry the solution across the turning surface, and the companion article *The Schrödinger Path Integral in Biquaternionic Form* shows the same locus appearing as a **caustic** of the path integral, where the van Vleck determinant diverges. The two are one object: the projection of the momentum-space cone onto configuration space, where the classical momentum vanishes.
+The companion article *The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form* develops the connection formulas that carry the solution across the turning surface, and the companion article *The Path Integral and the Schrödinger Equation in Biquaternionic Form* shows the same locus appearing as a **caustic** of the path integral, where the van Vleck determinant diverges. The two are one object: the projection of the momentum-space cone onto configuration space, where the classical momentum vanishes.
 
 ### Caustics and the van Vleck determinant
 

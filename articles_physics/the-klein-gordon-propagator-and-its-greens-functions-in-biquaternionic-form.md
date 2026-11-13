@@ -27,7 +27,7 @@ The mass parameter is $k_m=mc/\hbar$, so that $k_m^{2}$ is the quantity that mul
 - Companion article *Exercise: The Retarded Potentials and the Green's Function*, for the massless Green's-function convention, the light-cone Jacobian, and the boundary condition.
 - Companion article *The Feynman Propagator in Biquaternionic Form*, for the $i\epsilon$ prescription, the momentum-space propagator, and the contour conventions.
 - Companion article *Interpretation of the Wick Rotation in the Biquaternion Universe*, for the identification of the material sector with the quaternion subspace and the Euclidean kernel.
-- Companion article *The Klein–Gordon Path Integral in Biquaternionic Form*, for the Gaussian two-point function that reproduces the free kernel.
+- Companion article *The Path Integral and the Klein–Gordon Equation in Biquaternionic Form*, for the Gaussian two-point function that reproduces the free kernel.
 
 ## The Operator and the Defining Equation
 
@@ -388,7 +388,7 @@ $$
 =\delta^{(4)}(\tilde R_\Phi-\tilde Q_3),
 $$
 
-the operator acting on the delta and not on a second propagator, so that the bracket is the bare inverse kernel. Equivalently, convoluting two propagators with one operator insertion returns a single propagator, $\int d^4y\,G_F(\tilde R_\Phi-\tilde{R}_{\Phi,2})[-\bigl(\Box_{\tilde{R}_{\Phi,2}}-k_m^{2}\bigr)]G_F(\tilde{R}_{\Phi,2}-\tilde Q_3)=G_F(\tilde R_\Phi-\tilde Q_3)$, which is the same statement. In momentum space this is the statement $G_F^{-1}=\vec p^2/\hbar^{2}+k_m^{2}-\omega^2/c^{2}$, and it is the free propagator that the path-integral article *The Klein–Gordon Path Integral in Biquaternionic Form* obtains as the Gaussian two-point function of the scalar field. The consistency of the two constructions — the Green's-function inverse here and the Gaussian fluctuation kernel there — is the statement that the free theory's two-point function is the inverse of the quadratic form in the action, and it is checked in that article on a finite lattice.
+the operator acting on the delta and not on a second propagator, so that the bracket is the bare inverse kernel. Equivalently, convoluting two propagators with one operator insertion returns a single propagator, $\int d^4y\,G_F(\tilde R_\Phi-\tilde{R}_{\Phi,2})[-\bigl(\Box_{\tilde{R}_{\Phi,2}}-k_m^{2}\bigr)]G_F(\tilde{R}_{\Phi,2}-\tilde Q_3)=G_F(\tilde R_\Phi-\tilde Q_3)$, which is the same statement. In momentum space this is the statement $G_F^{-1}=\vec p^2/\hbar^{2}+k_m^{2}-\omega^2/c^{2}$, and it is the free propagator that the path-integral article *The Path Integral and the Klein–Gordon Equation in Biquaternionic Form* obtains as the Gaussian two-point function of the scalar field. The consistency of the two constructions — the Green's-function inverse here and the Gaussian fluctuation kernel there — is the statement that the free theory's two-point function is the inverse of the quadratic form in the action, and it is checked in that article on a finite lattice.
 
 ## The Biquaternion Reading
 

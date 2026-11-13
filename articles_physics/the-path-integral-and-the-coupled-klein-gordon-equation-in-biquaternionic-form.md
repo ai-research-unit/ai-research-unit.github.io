@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**This article puts the coupled scalar action into the functional integral.** *The Klein–Gordon Path Integral in Biquaternionic Form* defines the integral over central-valued fields and evaluates the free Gaussian. *The Variational Principle and the Coupled Klein–Gordon Equation in Biquaternionic Form* supplies the action with the covariant derivative in every slot. Joining the two costs one substitution and produces one new structure, and the structure is the subject of the article.
+**This article puts the coupled scalar action into the functional integral.** *The Path Integral and the Klein–Gordon Equation in Biquaternionic Form* defines the integral over central-valued fields and evaluates the free Gaussian. *The Variational Principle and the Coupled Klein–Gordon Equation in Biquaternionic Form* supplies the action with the covariant derivative in every slot. Joining the two costs one substitution and produces one new structure, and the structure is the subject of the article.
 
 **The substitution.** Minimal coupling replaces $\tilde\nabla_\Phi$ by $\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$ in the kinetic term. Nothing else changes: the field stays in the centre, the measure stays flat, the mass term stays $k_m^{2}\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$, and the phase stays central and $*$-unitary.
 
@@ -37,7 +37,7 @@ $$
 
 is the exponent, in the free companion's normalisation and with the covariant derivative in every slot, with the weight $\exp(iS_{\mathrm{gco}}/\hbar)$. The temporal slot enters with $+$ and the three spatial ones with $-$, which is the material metric written out. The connection is held fixed in the integral over the field, and the field is held fixed in the integral over the connection; this article treats the first.
 
-**Which equation the action selects.** The variational companion shows that the covariant square of a central field is not central: $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}(\xi e_t)=\bigl(\sum_\mu D_\mu^{2}\xi\bigr)e_t+\frac{iϙ}{\hbar}\xi\tilde F$, with a vector part that no central field can carry. The action's kinetic term is the sum of squared moduli of one slot each, and its variation produces $\Box_{\mathrm{gco}}=\sum_\mu\tilde\nabla_{\mathrm{gco},\mu}^{2}$ and not the adjoint-paired square. **The action is the arbiter, and it selects the component equation.** The integral inherits the choice, and §*The Quadratic Form and the Operator It Inverts* says how the choice appears in it.
+**Which operator the exponent gives.** The variational companion shows that the covariant square of a central field is not central: $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}(\xi e_t)=\bigl(\sum_\mu D_\mu^{2}\xi\bigr)e_t+\frac{iϙ}{\hbar}\xi\tilde F$, with a vector part that no central field can carry. The action's kinetic term avoids that difficulty by being a sum of squared moduli of one slot each, $\sum_\mu\mathrm{Sc}\bigl[(\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi)^{*}\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi\bigr]$, and this is the form the exponent carries. **The exponent's form fixes the quadratic form, and a Gaussian inverts its quadratic form**: by parts that is the paired operator of §*The Quadratic Form and the Operator It Inverts*, whereas the companion's stated equation is built on $\Box_{\mathrm{gco}}=\sum_\mu\tilde\nabla_{\mathrm{gco},\mu}^{2}$, and the two operators differ whenever $\bar c_\mu\ne-c_\mu$. The article follows the exponent and records the difference.
 
 ## The Exponent Splits into Three Terms
 
@@ -214,7 +214,7 @@ The current is the first variation of the integral with respect to the connectio
 
 ## Further Reading
 
-- [The Klein–Gordon Path Integral in Biquaternionic Form](the-klein-gordon-path-integral-in-biquaternionic-form.html), for the free functional integral, its Gaussian and its lattice regulator, all of which this article reuses.
+- [The Path Integral and the Klein–Gordon Equation in Biquaternionic Form](the-path-integral-and-the-klein-gordon-equation-in-biquaternionic-form.html), for the free functional integral, its Gaussian and its lattice regulator, all of which this article reuses.
 - [The Variational Principle and the Coupled Klein–Gordon Equation in Biquaternionic Form](the-variational-principle-and-the-coupled-klein-gordon-equation-in-biquaternionic-form.html), for the coupled action, its variation in the field and in the connection, and the recorded discrepancy in the temporal slot.
 - [The Coupled Klein–Gordon Equation in Biquaternionic Form](the-coupled-klein-gordon-equation-in-biquaternionic-form.html), for the covariant square's split, the prohibition on central fields in a nonzero field strength, and the two readings.
 - [The Klein–Gordon Equation in Biquaternionic Polar Variables](the-klein-gordon-equation-in-biquaternionic-polar-variables.html), for the amplitude and transport equations that the integral's saddles reproduce.

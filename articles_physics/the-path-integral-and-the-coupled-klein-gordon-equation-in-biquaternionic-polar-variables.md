@@ -179,7 +179,7 @@ The chart carries the action's reading of the covariant square and cannot carry 
 ## Further Reading
 
 - [The Path Integral and the Coupled Klein–Gordon Equation in Biquaternionic Form](the-path-integral-and-the-coupled-klein-gordon-equation-in-biquaternionic-form.html), the companion, for the integral read here, its three-term split and its identification of the operator the Gaussian inverts.
-- [The Klein–Gordon Path Integral in Biquaternionic Polar Variables](the-klein-gordon-path-integral-in-biquaternionic-polar-variables.html), for the free reading of the same chart, the Jacobian and the two saddles.
+- [The Path Integral and the Klein–Gordon Equation in Biquaternionic Polar Variables](the-path-integral-and-the-klein-gordon-equation-in-biquaternionic-polar-variables.html), for the free reading of the same chart, the Jacobian and the two saddles.
 - [The Variational Principle and the Coupled Klein–Gordon Equation in Biquaternionic Polar Variables](the-variational-principle-and-the-coupled-klein-gordon-equation-in-biquaternionic-polar-variables.html), for the action in the chart, the linear and quadratic interaction terms and the current.
 - [The Coupled Klein–Gordon Equation in Biquaternionic Polar Variables](the-coupled-klein-gordon-equation-in-biquaternionic-polar-variables.html), for the type table, the mechanical momentum and the vorticity.
 - [The Coupled Klein–Gordon Equation in Biquaternionic Form](the-coupled-klein-gordon-equation-in-biquaternionic-form.html), for the covariant square's split, the prohibition, and the two readings.

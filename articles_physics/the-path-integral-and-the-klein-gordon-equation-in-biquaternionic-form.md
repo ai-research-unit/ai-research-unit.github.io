@@ -1,4 +1,4 @@
-# __The Klein–Gordon Path Integral in Biquaternionic Form__
+# __The Path Integral and the Klein–Gordon Equation in Biquaternionic Form__
 
 ## Introduction
 
