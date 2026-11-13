@@ -64,7 +64,10 @@ def main():
     rebuilt = 0
 
     for md_name, out_name, is_menu in build.ROOT_PAGES:
-        if index_tpl or code_changed or build.newer_than(build.SRC / md_name, since):
+        # A page whose deployed file is missing is built whatever its date says:
+        # a rename keeps the old mtime and the target was never written.
+        if (index_tpl or code_changed or build.newer_than(build.SRC / md_name, since)
+                or not (build.DEPLOY / out_name).exists()):
             build.build_root_page(build.SRC / md_name, out_name, nav, is_menu)
             rebuilt += 1
 
@@ -74,7 +77,8 @@ def main():
                 print(f"Warning: no md files in {coll['src'].name}/")
             continue
         for f in coll["articles"]:
-            if article_tpl or code_changed or build.newer_than(f, since):
+            target = coll["deploy"] / f.relative_to(coll["src"]).with_suffix(".html")
+            if article_tpl or code_changed or build.newer_than(f, since) or not target.exists():
                 build.build_article(coll, f, nav)
                 rebuilt += 1
 
