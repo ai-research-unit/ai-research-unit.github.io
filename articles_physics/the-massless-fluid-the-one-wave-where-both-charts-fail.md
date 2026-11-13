@@ -163,6 +163,8 @@ $$
 
 **A current with no density.** The time component is finite while the proper density vanishes, so the product $\gamma\rho_{\mathrm{num}}c$ is finite with $\gamma$ without a value and $\rho_{\mathrm{num}}$ zero: **the wave carries a current and has no rest frame, which is the same statement twice.** The pair $(\rho_{\mathrm{num}},\langle\tilde\Xi\rangle_{*})$ is continuous at the corner, exactly as the first article proved, and the corner is the case $\rho_{\mathrm{num}}\to0$ at fixed size.
 
+**The vanishing density is a counting statement and not a cancellation.** A density is quadratic in the field, so the only labels it can carry are differences of the labels the amplitude carries: two modes at $k_1$ and $k_2$ beat at $k_2-k_1$ and at nothing else. **The corner has one label, so it has no pair and no difference**, and $\rho_{\mathrm{num}}=0$ there is the absence of the second label rather than a sum of two terms that happen to cancel. **Hence the wave has no interference structure at all**, which is why every quantity in this section is constant along it, and why no refinement of the arithmetic can recover a density from it.
+
 | quantity | the null wave |
 | --- | --- |
 | $N(\tilde\Xi(X))$ | $0$ at every event |

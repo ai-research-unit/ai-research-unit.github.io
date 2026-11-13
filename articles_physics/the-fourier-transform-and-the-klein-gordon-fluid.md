@@ -89,6 +89,32 @@ at a mode, by the display above and by nothing else. The check on the two modes 
 
 **The radius reading survives the sum.** For a general solution the two effects compose and the local support is a translated hyperboloid of shifted radius, which is the mass shell of the companion's equation with both terms in it. Nothing in the composition is an approximation, because the shell is an identity and not an expansion.
 
+**The support of a solution is the pole set of the kernel, and that is not a coincidence of this rung.** A mode at the label $\tilde K_\Phi$ solves the free equation exactly when the symbol vanishes there,
+
+$$
+\mathcal N(\tilde K_\Phi)=k_t'^{\,2}-\lvert\vec k_\Phi\rvert^{2}-k_m^{2}=0 ,
+$$
+
+so the labels a solution's transform can occupy are the labels at which the kernel's inverse has its pole, and the residue there is the mode's weight. **Two consequences follow and neither needs a calculation**: the support cannot sit at a label the symbol does not vanish at, and a coupling that enters linearly moves the pole and cannot reshape it, which is the second row of the table above. At the rung below the symbol is affine rather than homogeneous, so its zero set is a paraboloid and not a hyperboloid — no shell in the sense of §*The Two Scalar Rungs*, but still a set of labels and still the support, and the identification survives with only the shape of the set changed.
+
+## What the Action Sees and What the Transform Sees
+
+**A constant change of chart is invisible to the action and visible to the transform.** The Lagrangian is a sum of norms of products, and the norm is multiplicative, so a constant unit right-multiplied onto the field cancels from every term and the action cannot tell that the change happened. The character is additive, so it reads a product as a convolution, and the label of the changed field is not the changed label.
+
+**The obstruction is what a character is, and no skill with the transform removes it.** A character respects sums; every chart change in the block is a product; the square of the two transformations therefore does not close, and the objects the block calls invisible are the places where it does not. **That is also why the quantum potential has no momentum-space face of its own**: it is a ratio of two factors of the word, and a ratio of two transforms is not the transform of a ratio. The action states it as a term, the transform states it as a failure of additivity, and neither statement is the other's.
+
+## The Origin of the Label
+
+**Three objects sit at the zero label, and that is why the two integrals of the block can be compared at all.** The transform of the density read at the zero label is the density integrated over the whole domain, which is the total charge; a constant configuration has support at that label and at no other; and the partition function is the transform of $e^{iS/\hbar}$ read at zero source. **So the charge, the constant configuration and the vacuum amplitude are one point of one space, read three ways:**
+
+$$
+\rho_{\mathrm{chg},\mathrm{trf}}(0)=\int d^{n}x\;\rho_{\mathrm{chg}}(x)=\text{the total charge},
+\qquad
+Z=Z[0].
+$$
+
+**The zero label is also the only label at which the action and the transform meet without a convolution.** Everywhere else the transform of a product is a convolution and the two integrals are asking different questions; at the origin the convolution collapses to the one value, and the comparison of the two integrals has a point to stand on.
+
 ## The Two Sheets
 
 **A mode lies on one sheet.** The charge density is $\rho_{\mathrm{chg}}=\gamma\rho_{\mathrm{num}}$ with $\gamma=E/(mc^{2})$, so its sign is the sign of the mode's energy:
@@ -159,6 +185,7 @@ The passage to the first-order rung removes the shell and with it the radius rea
 | $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}-2Q_{\mathrm{qnt}}/m$ | Its norm; $-c^{2}$ at a mode |
 | $\rho_{\mathrm{chg}}=\gamma\rho_{\mathrm{num}}$, $\gamma=E/(mc^{2})$ | The conserved density |
 | $\tilde K_\Phi=ik_t'e_t+\vec k_\Phi$ | The wave number element |
+| $\mathcal N(\tilde K_\Phi)=k_t'^{\,2}-\lvert\vec k_\Phi\rvert^{2}-k_m^{2}$ | The symbol; its zero set is the mass shell, and the support of a solution is that set |
 | $\varepsilon=\pm1$ | The branch |
 | $\mathrm{Sc}(\tilde Q)$ | Scalar part |
 

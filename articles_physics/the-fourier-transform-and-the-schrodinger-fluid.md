@@ -93,7 +93,29 @@ and the failure is not a small correction. **The check is direct.** On a grid of
 
 **The precise statement is that $Q$ is homogeneous of degree zero in the amplitude and non-additive in the density.** A common rescaling of all amplitudes leaves $Q$ unchanged, because $Q$ depends on $\ln\rho_{\mathrm{num}}$ and a constant addend to the logarithm differentiates away. Setting one amplitude to zero does not continuously reduce $Q$ to the other's: it reduces $Q$ to zero or to the other's value, with a discontinuous dependence on the amplitudes at the boundary. **So $Q$ is a property of the set of amplitudes and not of any one of them**, which is what the word "interference" states in one word.
 
+**The size of what the interference adds is a number, and it is quadratic in the separation.** Take two modes with $\rho_{\mathrm{num}}=1+\eta^{2}+2\eta\cos(\Delta k\,x)$, so that $\eta$ is the second amplitude relative to the first and $\Delta k$ their separation. Then, the mean being over a period,
+
+$$
+\Bigl\langle\frac{\nabla^{2}r}{r}\Bigr\rangle=\tfrac12\eta^{2}(\Delta k)^{2}+O(\eta^{4}).
+$$
+
+**The two powers are the content of the formula**: the correction is second order in the amplitude that was added and second order in the label separation, which is what a correlation supported at a difference of labels has to be. Checked with a one-hundred-node quadrature: $\eta=0.1$ with $\Delta k=2$ gave $0.02020202$ against the predicted $0.02000000$, and $\eta=0.01$ with $\Delta k=1$ gave $0.00005000$ against $0.00005000$. **The closed form is $\tfrac12(\Delta k)^{2}\eta^{2}/(1-\eta^{2})$**, of which the displayed line is the first term; at $\eta=0.2$, $\Delta k=1$ it gives $0.020833333$ and the quadrature agrees to nine digits.
+
 **The stated objection, and the answer.** The objection is that the decomposition into modes is a choice of basis, so a statement about "interference" is a statement about the basis and not about the fluid. The objection is correct about the basis and it does not touch the result: the basis is the basis of the plain waves, the plain waves are what a mode is, and the result is that in that basis the quantum layer has no diagonal part. **The invariance of the statement is the invariance of the Fourier support**: a single point of support cannot carry a functional of the density's curvature, because a single point has a constant density, and that is a fact about points and not about bases.
+
+### Three Degrees, Three Behaviours
+
+**Every object in the block scales with one of three powers of the field, and the power decides whether a transform can see it.** Under $\tilde\Xi\to\lambda\tilde\Xi$:
+
+| degree in the field | the objects | in the label |
+| --- | --- | --- |
+| one | the field, the label, the left side of the equation | one point per label |
+| two | the density, the stress | a correlation, supported at differences |
+| zero | the velocity, the quantum potential, the equation of state | no label at all |
+
+**The first row is the mode, the second is the cross term, and the third is why this section exists.** A density is quadratic, and the square of a sum carries the differences of the labels of its terms: with $k_1=1$ and $k_2=3$ the density has weight at $0$ and at $\pm2$ and none at $k_1+k_2=4$. **A degree-two object therefore carries labels that its amplitude does not carry**, which is the whole of the beat.
+
+**A degree-zero object is a ratio, and a ratio of two transforms is not the transform of a ratio.** That single sentence is why the velocity and the quantum potential are the objects no transform reaches, although the density and the stress are two lines of algebra away from them. **The degree counted here is in the field and not in the energy**; the two counts are independent, and [Wave–Particle Duality and the Galilean Limit](wave-particle-duality-and-the-galilean-limit.html) uses the second.
 
 ## The Nodal Set and the Circulation
 
@@ -170,6 +192,7 @@ The momentum of a mode lives in the phase bracket and the quantum data live in t
 | $Q=-\hbar^{2}\Delta r/(2mr)$ | The quantum potential; zero at a mode |
 | $\sigma^{Q}_{ij}=\frac{\hbar^{2}}{4m}\rho_{\mathrm{num}}\partial_{i}\partial_{j}\ln\rho_{\mathrm{num}}$ | The quantum stress; zero at a mode |
 | $2\sqrt{\rho_1\rho_2}\cos(\theta_1-\theta_2)$ | The interference term of a superposition |
+| $\eta$, $\Delta k$ | The second amplitude relative to the first, and the separation of the two labels; the mean curvature they add is $\tfrac12\eta^{2}(\Delta k)^{2}$ |
 | $\varepsilon=\pm1$ | The branch; the datum the transform does not read |
 | $n$ | The winding of a loop around a nodal line |
 | $\nabla\mapsto i\vec k$, $\partial_{t'}\mapsto-i\omega$ | The symbol rule |

@@ -233,6 +233,8 @@ $$
 
 **The density row is the article's surprise.** In the scalar and spinor cases the density is a bilinear or a factor and the current is a separate construction; in the Proca case the field is the current, so the fluid's density is not something the field has but something the field is. That is why the Lorenz condition does double duty here — as the gauge condition of the element form and as the continuity equation of the fluid — and it is why the case has no non-uniqueness of the kind [The Non-Uniqueness of the Spin Fluid](the-non-uniqueness-of-the-spin-fluid.html) records: there is no choice of which density is conserved, because there is only one candidate.
 
+**The equation-of-state row is the one no mode can reach.** At every rung a mode's density is constant, so a single mode cannot be used to measure a sound speed: what a mode supplies is one point of a dispersion relation and not a response of the medium. **So the sound speed is a property of the state and not of a wave**, and of the observables listed in the table above it is the only one that no transform of the field reports. The row is empty at the other rungs for a second reason and not only for that one: the scalar rung's stress is a Korteweg stress and the spinor rung's closes through the spin's transport, so neither has a $p(\epsilon)$ to state at all.
+
 ## The Correspondence, Compared with the Other Two
 
 **There is a correspondence, and its structure is the same as the other two in its skeleton and different in its joint. The skeleton is three steps: the word is exact, the reverse map is defined on a class, and membership of that class is the extra structure that makes the fluid classical rather than merely a relabelling.**
