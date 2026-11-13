@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Fourier Transform and the Variational Principle and the Schrödinger Equation in Biquaternionic Form — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-fourier-transform-and-the-variational-principle-and-the-schrodinger-equation-in-biquaternionic-form"><strong>The Fourier Transform and the Variational Principle and the Schrödinger Equation in Biquaternionic Form</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The action is a functional of the field, and the transform turns it into a quadratic form.</strong> <em>The Variational Principle and the Schrödinger Equation in Biquaternionic Form</em> writes one real functional whose Euler–Lagrange equation is the parent's equation. Take a field of one frequency, $\tilde\Xi=e^{-i\omega t'}\tilde X$, and the functional becomes a quadratic form in $\tilde X$ whose kernel is the symbol of <em>The Fourier Transform and the Schrödinger Equation in Biquaternionic Form</em>. <strong>The symbol is not a second object beside the action</strong>; it is the action's density at fixed frequency, and that identity is the first thing below.</p>
+<p><strong>The second finding is that the reality of the action is a weaker requirement than the reality of the spectrum.</strong> The parent requires the flow to be unitary, which forces the unit to commute with every Hermitian Hamiltonian, and that forces $\pm i$. The action needs less: it stays real for every anti-Hermitian root, because the kinetic coefficient's type is what makes its scalar part real. <strong>A real action therefore certifies the equation and does not certify the frequencies</strong>, and the two counts differ by a wide margin.</p>
+<p><strong>The numbers are the measure of the gap.</strong> All four roots give a real action, verified on a grid of sixty-four points to $8.7\times10^{-16}$ on the imaginary part. The spectrum is real in one hundred draws out of one hundred for $i$, and in $32$, $30$ and $37$ out of one hundred for $\vec e_z$, $\vec e_x$ and $(\vec e_x+\vec e_z)/\sqrt2$. <strong>The first number is a theorem and the others are cones.</strong></p>
+<p><strong>The third finding is that Parseval is the Noether charge's transform.</strong> The parent's charge is the spatial integral of $n=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$. In frequency space it is the sum of the moduli squared of the coefficients, and the energy is the same sum weighted by the frequencies. Both are one normalisation of one identity.</p>
+<p><strong>The fourth finding is that the Legendre structure is trivial and non-degenerate.</strong> The symbol is affine in $\omega$ with slope $\hbar$, for every Hamiltonian. So the frequency is conjugate to time and the map is invertible; a first-order equation has no constraint to impose, and the variational principle has no multiplier to introduce.</p>
+<p><strong>The companion articles.</strong> <em>The Fourier Transform and the Schrödinger Equation in Biquaternionic Form</em> gives the symbol; its polar companion gives the same object in the word. The coupled version of this article adds a connection and keeps the structure; §<em>Limits</em> states what the connection does not change.</p>
+<h2 id="conventions">Conventions</h2>
+<p>The action, its variation and its two currents are those of <em>The Variational Principle and the Schrödinger Equation in Biquaternionic Form</em>, and the article does not re-derive them. The symbol, its trace and its determinant are those of <em>The Fourier Transform and the Schrödinger Equation in Biquaternionic Form</em>.</p>
+<p><strong>The action.</strong> With $\partial=\partial_{t'}$ and the Hermitian pairing $\langle X,Y\rangle=\mathrm{Sc}(X^{*}Y)$,</p>
+<p>$$
+S[\tilde\Xi,\tilde\Xi^{*}]=\int\mathrm{d}t'\;\mathrm{Sc}\!\left[\frac{i\hbar}{2}\big(\tilde\Xi^{*}\partial\tilde\Xi-(\partial\tilde\Xi^{*})\tilde\Xi\big)-\tilde\Xi^{*}\tilde H_\Psi\tilde\Xi\right].
+$$</p>
+<p>The parent writes it in $r'_t$ with a factor $c$; the substitution $i\hbar\,c\,\partial_{r'_t}=i\hbar\,\partial_{t'}$ is exact and is used here once.</p>
+<p><strong>The two kinds of coefficient.</strong> A <em>Hermitian coefficient</em> is $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ with real numbers. A <em>root</em> is $\tilde Z$ with $\tilde Z^{2}=-e_t$; the four used below are $i$, $\vec e_z$, $\vec e_x$ and $(\vec e_x+\vec e_z)/\sqrt2$. Every root is anti-Hermitian, because $\vec e_\mu^{*}=-\vec e_\mu$ and $i^{*}=-i$.</p>
+<h2 id="the-quadratic-form-at-fixed-frequency">The Quadratic Form at Fixed Frequency</h2>
+<p><strong>One substitution.</strong> Put $\tilde\Xi=e^{-i\omega t'}\tilde X$ with $\tilde X$ constant. Then $\partial\tilde\Xi=-i\omega\tilde\Xi$, the antisymmetrised kinetic density is $\hbar\omega\,\mathrm{Sc}(\tilde X^{*}\tilde X)$, and the action becomes</p>
+<p>$$
+S_\omega[\tilde X]=\int\mathrm{d}t'\;\mathrm{Sc}\Big[\tilde X^{*}\big(\hbar\omega\,e_t-\tilde H_\Psi\big)\tilde X\Big]
+=\int\mathrm{d}t'\;\big\langle\tilde X,\sigma(\omega)\tilde X\big\rangle .
+$$</p>
+<p><strong>The kernel is the symbol.</strong> The quadratic form's kernel is the symbol of the companion, element for element. Verified over one hundred draws of $(\tilde X,h_t,\vec h_\Psi,\omega)$: the difference between the two sides is zero to machine precision, because the two expressions are the same expression.</p>
+<p><strong>The form is the action's density, not its value.</strong> The action of a one-frequency field is the density times the interval, so the form's coefficient is what remains after the interval is divided out. <strong>The frequency is a parameter of the functional and not a variable of it</strong>, which is why the form is a form on $\tilde X$ alone.</p>
+<p><strong>Stationarity returns the equation.</strong> Varying $\tilde X^{*}$ in $S_\omega$ gives $\sigma(\omega)\tilde X=0$, which is the companion's frequency-space equation. So the two articles' objects are related by variation: <strong>the symbol is the Euler–Lagrange operator of the fixed-frequency action.</strong></p>
+<p><strong>On shell the form vanishes.</strong> A solution has $\sigma(\omega)\tilde X=0$, so $S_\omega[\tilde X]=0$. That is the standard statement that an action evaluated on a solution is stationary and, for a homogeneous quadratic form, zero; it is not a statement about the energy, which is a different functional.</p>
+<p><strong>What the substitution does not do.</strong> It does not discretise, and it does not assume a single frequency for a general field. A general field is a sum of such terms, and the action is the sum of the forms plus the cross terms that the transform's orthogonality removes. <strong>The cross terms are the interference, and they are what makes a superposition's density not the sum of densities.</strong></p>
+<h2 id="the-symbol-is-the-quadratic-form">The Symbol Is the Quadratic Form</h2>
+<p><strong>Two readings of one identity.</strong> Read as an operator, $\sigma(\omega)$ is an array; read as a quadratic form, it is $\tilde X\mapsto\langle\tilde X,\sigma(\omega)\tilde X\rangle$. The two agree on the diagonal and differ off it; the form determines the self-adjoint part of the array, and that is all the action can see.</p>
+<p><strong>Reality of the form is self-adjointness.</strong> $S_\omega[\tilde X]$ is real for every $\tilde X$ exactly when $\sigma(\omega)$ is self-adjoint for the pairing, which is exactly when $\hbar\omega\,e_t-\tilde H_\Psi$ is Hermitian, which is exactly when $\tilde H_\Psi$ is. <strong>So the reality of the fixed-frequency action at every frequency is the Hermiticity of the Hamiltonian</strong>, verified over one hundred draws on random $\tilde X$.</p>
+<p><strong>What the form cannot see.</strong> An anti-Hermitian part of the array contributes a purely imaginary value to the form and cancels in the sum with its conjugate. So the action is blind to the anti-Hermitian part, and its blindness is the reason the next section's statement is possible.</p>
+<p><strong>The trace is the form on a basis.</strong> Summing the form over an orthonormal basis of the coefficient space gives $\operatorname{tr}\sigma(\omega)=4(\hbar\omega-h_t)$. <strong>The action's trace is four times the mean frequency</strong>, and the determinant, which the form cannot see, is the square of the gap.</p>
+<h2 id="reality-of-the-action-is-the-anti-hermitian-root">Reality of the Action Is the Anti-Hermitian Root</h2>
+<p><strong>The equation with a root.</strong> Write $\hbar\,c\,\tilde Z\,\partial_{r'_t}\tilde\Xi=\tilde H_\Psi\tilde\Xi$ with $\tilde Z^{2}=-e_t$, in the parent's own form. The action that produces it has the kinetic coefficient $\hbar c\,\tilde Z$ in place of $i\hbar c$, because the variation must return the equation's own operator.</p>
+<p><strong>The reality condition.</strong> With $K=\frac{\hbar c}{2}\big(\tilde\Xi^{*}\tilde Z\partial\tilde\Xi-(\partial\tilde\Xi^{*})\tilde Z\tilde\Xi\big)$,</p>
+<p>$$
+K^{*}=\frac{\hbar c}{2}\Big((\partial\tilde\Xi^{*})\tilde Z^{*}\tilde\Xi-\tilde\Xi^{*}\tilde Z^{*}\partial\tilde\Xi\Big),
+$$</p>
+<p>so $K^{*}=K$ exactly when $\tilde Z^{*}=-\tilde Z$. <strong>The action is real exactly when the root is anti-Hermitian</strong>, and every root of $-e_t$ is.</p>
+<p><strong>The equivalent statement in one line.</strong> $\tilde Z$ anti-Hermitian is the same as $i\tilde Z$ Hermitian, and the quadratic form $\mathrm{Sc}(\tilde X^{*}(i\tilde Z)\tilde X)$ is real for every $\tilde X$. Verified over one hundred draws for each of the four roots: the largest imaginary part was $7.5\times10^{-16}$ for $(\vec e_x+\vec e_z)/\sqrt2$, $6.9\times10^{-16}$ for $\vec e_x$, $5.2\times10^{-16}$ for $\vec e_z$ and $2.2\times10^{-16}$ for $i$.</p>
+<p><strong>The functional itself, not only its density.</strong> The density's reality at one time is weaker than the functional's reality, because the kinetic term is antisymmetrised and integrated. On a grid of sixty-four points with a four-component field of three frequencies, the imaginary part of the whole action was at most $8.7\times10^{-16}$ for each of the four roots, against real values of order ten. <strong>The action is real, and it is real for all four roots.</strong></p>
+<p><strong>What the reality does not use.</strong> It does not use the centrality of the root, and it does not use any commutation with the Hamiltonian. It uses one thing: the root's type. <strong>That is the whole content of this section, and it is why the next section can report a gap.</strong></p>
+<h2 id="reality-of-the-action-is-weaker-than-reality-of-the-spectrum">Reality of the Action Is Weaker Than Reality of the Spectrum</h2>
+<p><strong>The stronger requirement.</strong> The parent requires the generator $-\tilde Z\tilde H_\Psi/(\hbar c)$ to be anti-Hermitian for every Hermitian $\tilde H_\Psi$, so that the flow preserves the norm. In $t'$ the generator is $\frac{1}{\hbar}\tilde Z^{-1}\tilde H_\Psi$, and its anti-Hermiticity is</p>
+<p>$$
+\big(\tilde Z^{-1}\tilde H_\Psi\big)^{*}=-\tilde Z^{-1}\tilde H_\Psi
+\qquad\Longleftrightarrow\qquad
+\tilde H_\Psi\,\tilde Z^{-1}=\tilde Z^{-1}\tilde H_\Psi,
+$$</p>
+<p>which is commutativity of the Hamiltonian with the root. <strong>The parent's uniformity requirement is a commutant condition, and only the central root satisfies it for every Hamiltonian.</strong></p>
+<p><strong>The spectrum's condition is the same condition.</strong> The frequencies are the zeros of $\det\big(\hbar\omega(-i\tilde Z)-\tilde H_\Psi\big)$, and for $\tilde Z=\vec e_z$ the determinant is</p>
+<p>$$
+\Big(h_t^{2}-\big(\hbar\omega+h_z\big)^{2}-h_\perp^{2}\Big)^{2},
+$$</p>
+<p>with $h_\perp^{2}=h_x^{2}+h_y^{2}$, verified to $1.4\times10^{-14}$. The zeros are $\hbar\omega=-h_z\pm\sqrt{h_t^{2}-h_\perp^{2}}$, real exactly on the cone $h_t^{2}\ge h_x^{2}+h_y^{2}$.</p>
+<p><strong>The counts.</strong> One hundred draws of a Hermitian Hamiltonian with coefficients uniform in $[-1,1]$: all roots real in $100$ draws for $i$, $32$ for $\vec e_z$, $30$ for $\vec e_x$ and $37$ for $(\vec e_x+\vec e_z)/\sqrt2$. For $\vec e_z$ the cone held in exactly the same $32$ draws, and on the cone the closed form matched to $2.0\times10^{-15}$.</p>
+<p><strong>So the two requirements are different requirements.</strong> The action is real in $100$ draws out of $100$ for each root. The spectrum is real in $100$, $32$, $30$ and $37$. <strong>A variational principle that produces the equation therefore says nothing about whether the frequencies are real</strong>, and the gap between the two counts is the measure of how much it says nothing.</p>
+<p><strong>Why the two differ.</strong> The action's reality is a statement about the kinetic coefficient's type: one of four types, decided by the root's Hermiticity. The spectrum's reality is a statement about the pencil $\hbar\omega(-i\tilde Z)-\tilde H_\Psi$: two self-adjoint arrays, one of them indefinite, and an indefinite pencil has complex zeros. <strong>Type is weaker than definiteness</strong>, and the article's finding is that sentence.</p>
+<p><strong>What the parent's argument really establishes.</strong> The parent's uniqueness theorem is about the <em>flow</em>, and its conclusion is about the norm. Read here, it says that only the central root keeps the pencil positive for every Hamiltonian. The variational companion of this article does not contradict it and does not repeat it; it separates the two requirements that the parent's single argument carries.</p>
+<p><strong>A caveat in the other direction.</strong> Reality of the spectrum does not imply that the action with that root is real for a non-Hermitian Hamiltonian, and the article makes no such claim. Both statements are about Hermitian coefficients, and both are about different objects: one about a functional, one about a pencil.</p>
+<h2 id="the-boundary-term-and-why-one-variation-suffices">The Boundary Term, and Why One Variation Suffices</h2>
+<p><strong>The boundary term.</strong> Varying $\tilde\Xi^{*}$ and integrating the kinetic term by parts gives</p>
+<p>$$
+\delta S=\int\mathrm{d}t'\;\mathrm{Sc}\Big[\delta\tilde\Xi^{*}\big(\hbar c\,\tilde Z\,\partial\tilde\Xi-\tilde H_\Psi\tilde\Xi\big)\Big]
+-\frac{\hbar c}{2}\Big[\mathrm{Sc}\big(\delta\tilde\Xi^{*}\tilde Z\tilde\Xi\big)\Big]_{\mathrm{bdy}},
+$$</p>
+<p>and the boundary term vanishes when $\delta\tilde\Xi^{*}$ vanishes at both ends. <strong>The boundary condition is a condition on the field's variation and not on its value</strong>, and it is the same condition for every root.</p>
+<p><strong>Reality is what makes the second variation redundant.</strong> Because the action is real, the variation with respect to $\tilde\Xi$ is the conjugate of the variation with respect to $\tilde\Xi^{*}$, and one of them carries the content. The parent's identity for a real variation is</p>
+<p>$$
+\delta S=2\,\mathrm{Re}\int\mathrm{d}t'\;\mathrm{Sc}\big[\delta\tilde\Xi^{*}E\big],
+\qquad
+E=\hbar c\,\tilde Z\,\partial\tilde\Xi-\tilde H_\Psi\tilde\Xi,
+$$</p>
+<p>and it holds for every anti-Hermitian root, for the same reason the action is real. <strong>Two variations for the price of one is the payoff of the reality established above.</strong></p>
+<p><strong>What the identity is not.</strong> It is not a proof that the equation is variational for a complex root. For a root that is neither Hermitian nor anti-Hermitian the kinetic term's scalar part has an imaginary piece, the boundary term does not vanish with a real variation, and the argument fails at the first line.</p>
+<p><strong>The vanishing of the bracket is the equation.</strong> Since the pairing $\mathrm{Sc}(XY)$ is non-degenerate on $\mathbb{B}$, the bracket vanishes as an element. <strong>The non-degeneracy is the parent's, and it is not the same as the definiteness of the Hermitian form</strong>: it is a trace pairing, and it needs no positivity.</p>
+<p><strong>Why the trace pairing is enough.</strong> For $X=E^{*}$ the pairing gives $\mathrm{Sc}(E^{*}E)=\sum_\mu\lvert E_\mu\rvert^{2}$, a sum of moduli, so it vanishes only for $E=0$. <strong>The argument is the parent's and it is quoted once here.</strong></p>
+<h2 id="parseval-is-the-noether-charges-transform">Parseval Is the Noether Charge's Transform</h2>
+<p><strong>The charge.</strong> The parent's phase symmetry gives the current whose temporal component is $n=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$, and the conserved charge is $Q_N=\int\mathrm{d}t'\,n$. The factor of two against $\rho=\mathrm{Tr}(\tilde\Xi^{*}\tilde\Xi)$ is the $\mathrm{Tr}=2\,\mathrm{Sc}$ convention and is not a normalisation.</p>
+<p><strong>Its transform.</strong> Write the field as a sum of modes, $\tilde\Xi=\sum_jc_j e^{-i\omega_jt'}\tilde X_j$ with orthonormal $\tilde X_j$ of unit Hermitian norm. Then the charge is</p>
+<p>$$
+Q_N=\sum_j\lvert c_j\rvert^{2},
+$$</p>
+<p>which is Parseval's identity read as a charge. On a grid of $4096$ points a superposition of three integer modes gave $\sum_j\lvert c_j\rvert^{2}=1.562500000000$ and a grid norm equal to that number to the last printed digit. <strong>The norm is the charge, and the transform diagonalises it.</strong></p>
+<p><strong>The energy.</strong> The parent's constant-setting energy is $E=\mathrm{Sc}(\tilde\Xi^{*}\tilde H_\Psi\tilde\Xi)$, which on a mode is $\hbar\omega_j$ times the mode's norm. So</p>
+<p>$$
+E=\sum_j\hbar\omega_j\lvert c_j\rvert^{2},
+$$</p>
+<p>and the same grid gave $4.867427$ against $4.867500$ from the coefficients, the difference $7.3\times10^{-5}$ being the finite-difference gradient's error and not a structural one. <strong>Two functionals, one normalisation, and both diagonal in the transform.</strong></p>
+<p><strong>The weights are the spectrum.</strong> The energy's weights are the eigenvalues of the symbol, so the energy's transform is the symbol's value weighted by the charge. <strong>That is the sense in which the symbol is the action's Legendre transform</strong>, and the next section makes the statement exact.</p>
+<p><strong>A first-order reading of the two.</strong> $Q_N$ counts and $E$ weighs. A first-order equation conserves both because the flow is unitary, and neither is the temporal slot of a current in the second-order sense. <strong>The pair $(Q_N,E)$ is the whole of the Noether content of the phase symmetry and time translation.</strong></p>
+<p><strong>What Parseval does not say.</strong> It does not say that the coefficients are probabilities, and it does not normalise them. <strong>The charge is a real number and the algebra supplies no probability rule</strong>; the corpus's measurement articles are where that reading is made, and this article does not make it.</p>
+<h2 id="legendre">Legendre</h2>
+<p><strong>The slope.</strong> $\partial\sigma/\partial\omega=\hbar$ for every $\tilde H_\Psi$, because the Hamiltonian does not depend on the frequency. A central difference on the scalar part at $\omega=0.7$ returned $1.000000000000$ at a step of $10^{-2}$ and $10^{-4}$, and $1.000000000029$ at $10^{-6}$, which is the roundoff of the step and not a deviation of the slope. <strong>The frequency is conjugate to time with slope $\hbar$, and the slope is the same for every Hamiltonian.</strong></p>
+<p><strong>Non-degeneracy.</strong> $\hbar\neq0$, so the Legendre map from the frequency to the time derivative is invertible everywhere. <strong>There is no constraint surface and no multiplier</strong>: the variational principle for a first-order equation is unconstrained, which is what the polar variational companion means when it says no multiplier is needed for the unit conditions.</p>
+<p><strong>The symbol is affine, so the transform is trivial.</strong> A function affine in $\omega$ is its own Legendre transform up to a total derivative. So the frequency-space action and the time-domain action are related by the elementary transform and not by a nontrivial dualisation. <strong>The nontrivial dualisations in this corpus are in the second-order articles</strong>, where the symbol is quadratic and the derivative of the symbol is the velocity.</p>
+<p><strong>The velocity and the momentum.</strong> For a first-order equation the velocity is the field's time derivative and the momentum is the field's conjugate, and the two are not related by the symbol's derivative. <strong>The symbol's derivative is $\hbar$ times the identity</strong>, so the "velocity" the transform returns is the same for every mode: that is the statement that a first-order equation has no dispersion to invert.</p>
+<p><strong>What the slope fixes.</strong> The slope fixes the normalisation of the transform and therefore the normalisation of $Q_N$ and $E$. <strong>One choice of $\hbar$ fixes both</strong>, and no second convention enters.</p>
+<h2 id="what-the-variational-reading-adds">What the Variational Reading Adds</h2>
+<p><strong>One identity and one separation.</strong> The identity is that the symbol is the fixed-frequency action's kernel, so the two companion articles describe one object. The separation is that the reality of the action and the reality of the spectrum are different requirements, with different strengths and different counts.</p>
+<p><strong>The count of roots.</strong> All four roots are variational, and only one of them gives a real spectrum for every Hamiltonian. <strong>That is the sharpest statement of the article</strong>, and it is a statement the element-form and polar companions cannot make, because the action is what carries the root.</p>
+<p><strong>The transform of the two functionals.</strong> Parseval and the energy identity are one normalisation of the charge and of the energy, and both are diagonal in the transform. <strong>No new conservation law appears</strong>, and none is claimed.</p>
+<p><strong>What it does not add.</strong> No new prediction, no new solution, no closure of the operator setting. The variational principle is the parent's and the transform is the companion's; the article joins them.</p>
+<h2 id="limits">Limits</h2>
+<p><strong>Constant coefficients.</strong> Every statement about the symbol needs a constant Hamiltonian, and the operator setting replaces the symbol by a convolution. The action remains real there, term by term, for the same reason; what fails is the fixed-frequency reduction, not the reality.</p>
+<p><strong>Hermitian coefficients.</strong> The counts are counts over Hermitian Hamiltonians. A non-Hermitian coefficient makes the action non-real at the potential term and the argument of §<em>Reality of the Action Is the Anti-Hermitian Root</em> does not apply to the potential.</p>
+<p><strong>One-time functionals.</strong> The action here is an integral over $t'$ and not over space, so the transform is in one variable. A four-dimensional action would need the transform in four, and the symbol would be a function of the four-wavevector; the structure of the argument would be unchanged.</p>
+<h2 id="open-questions">Open Questions</h2>
+<p><strong>The first question is whether a weaker reality suffices for a unitary flow.</strong> The action is real for every anti-Hermitian root, and the flow is unitary for none of the non-central ones. Whether some other functional distinguishes them is not settled here.</p>
+<p><strong>The second is the count's dependence on the measure.</strong> The counts $32$, $30$ and $37$ are counts with respect to uniform coefficients. A different measure gives different numbers, and the cone condition, not the number, is the invariant statement.</p>
+<p><strong>The third is the second-order root.</strong> The Dirac and Klein–Gordon articles factor their operators and ask about a square root; the Schrödinger operator has a square root trivially, because it is first order. Whether the variational argument has a second-order analogue in which the root's type is again the deciding condition is open.</p>
+<p><strong>The fourth is the operator setting's Legendre structure.</strong> With a position-dependent Hamiltonian the slope in $\omega$ is still $\hbar$, and the dual variable is still a time. Whether the position dependence can be absorbed into a local frequency with a Legendre structure of its own is the polar companion's question.</p>
+<h2 id="summary">Summary</h2>
+<p>The fixed-frequency action is a quadratic form whose kernel is the symbol: $S_\omega[\tilde X]=\int\mathrm{d}t'\,\langle\tilde X,\sigma(\omega)\tilde X\rangle$, exact by construction and verified over one hundred draws. The reality of that form for every $\tilde X$ is the Hermiticity of the Hamiltonian, and the trace of the form on a basis is four times the mean frequency.</p>
+<p>The reality of the whole action is a weaker condition: it holds exactly when the root is anti-Hermitian, which every root of $-e_t$ is. Verified on a grid of sixty-four points, the imaginary part of the action was at most $8.7\times10^{-16}$ for all four roots. <strong>The spectrum, by contrast, is real in $100$ draws out of $100$ for $i$ and in $32$, $30$ and $37$ for the three quaternion roots</strong>, and for $\vec e_z$ the cone $h_t^{2}\ge h_x^{2}+h_y^{2}$ accounts for the count exactly. So the variational principle certifies the equation and not the frequencies.</p>
+<p>Parseval is the Noether charge's transform, $Q_N=\sum_j\lvert c_j\rvert^{2}$, exact to the last digit on a grid of $4096$ points, and the energy is the same sum weighted by the eigenvalues, $4.867427$ against $4.867500$. The Legendre slope is $\partial\sigma/\partial\omega=\hbar$ for every Hamiltonian, so the transform is invertible and the variational problem is unconstrained.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$S_\omega[\tilde X]=\int\mathrm{d}t'\,\langle\tilde X,\sigma(\omega)\tilde X\rangle$</td>
+<td>The action at fixed frequency; the quadratic form whose kernel is the symbol</td>
+</tr>
+<tr>
+<td>$\sigma(\omega)=\hbar\omega\,e_t-\tilde H_\Psi$</td>
+<td>The symbol; the Euler–Lagrange operator of $S_\omega$</td>
+</tr>
+<tr>
+<td>$\tilde Z^{2}=-e_t$, $\tilde Z^{*}=-\tilde Z$</td>
+<td>A root; anti-Hermitian, hence the action is real</td>
+</tr>
+<tr>
+<td>$\hbar c\,\tilde Z$</td>
+<td>The kinetic coefficient of the action with a root</td>
+</tr>
+<tr>
+<td>$E=\hbar c\,\tilde Z\partial\tilde\Xi-\tilde H_\Psi\tilde\Xi$</td>
+<td>The Euler–Lagrange bracket; its vanishing is the equation</td>
+</tr>
+<tr>
+<td>$100$, $32$, $30$, $37$</td>
+<td>Draws with a real spectrum, out of one hundred, for $i$, $\vec e_z$, $\vec e_x$, $(\vec e_x+\vec e_z)/\sqrt2$</td>
+</tr>
+<tr>
+<td>$h_t^{2}\ge h_\perp^{2}$</td>
+<td>The cone on which the pencil has real zeros</td>
+</tr>
+<tr>
+<td>$Q_N=\sum_j\lvert c_j\rvert^{2}$</td>
+<td>The charge; Parseval's identity</td>
+</tr>
+<tr>
+<td>$E=\sum_j\hbar\omega_j\lvert c_j\rvert^{2}$</td>
+<td>The energy; the charge weighted by the spectrum</td>
+</tr>
+<tr>
+<td>$\partial\sigma/\partial\omega=\hbar$</td>
+<td>The Legendre slope; invertible, hence unconstrained</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Variational Principle and the Schrödinger Equation in Biquaternionic Form</em>, for the action, its reality, its variation and its two currents, all cited here and not repeated.</li>
+<li><em>The Fourier Transform and the Schrödinger Equation in Biquaternionic Form</em>, for the symbol, its determinant and the counts of poles.</li>
+<li><em>The Fourier Transform and the Schrödinger Equation in Biquaternionic Polar Variables</em>, for the same identity read in the word.</li>
+<li><em>The Variational Principle and the Schrödinger Equation in Biquaternionic Polar Variables</em>, for the unconstrained variation and the vanishing multipliers.</li>
+<li><em>The Fourier Transform and the Variational Principle and the Coupled Schrödinger Equation in Biquaternionic Form</em>, for the same structure with a connection.</li>
+<li><em>The Action Principle and the Non-Quantum Limit in Biquaternionic Form</em>, for the principle this article applies.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

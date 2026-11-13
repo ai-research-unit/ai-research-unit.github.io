@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Fourier Transform and the Klein–Gordon Equation in Biquaternionic Form — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-fourier-transform-and-the-kleingordon-equation-in-biquaternionic-form"><strong>The Fourier Transform and the Klein–Gordon Equation in Biquaternionic Form</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The parent states the obstruction in one clause and moves on.</strong> <em>The Klein–Gordon Equation in Biquaternionic Form</em> writes, at its §<em>Second Order in Time and the Conjugate Pair</em>, that the scalar Klein–Gordon operator does not factor into first-order scalar operators in $\mathbb{B}$. The proof is given, in position space, by anticommutation: the cross terms cancel only for an element that anticommutes with all three spatial units, and such an element is zero. The sentence is then dropped, and the article turns to the conjugate pair. This article finishes it.</p>
+<p><strong>The finding is that the obstruction is a statement about a zero set.</strong> A second-order symbol factors into two first-order ones exactly when its quadric is the product of two linear forms. Over a central coefficient the Klein–Gordon quadric is a rank-four form, and no product of two linear forms has rank above two. <strong>That is the parent's anticommutation argument read in momentum space</strong>, and the reading makes visible the one thing the position-space argument leaves implicit: which coefficient would allow factorization, and at what price.</p>
+<p><strong>The governing thesis is one sentence.</strong> The free Klein–Gordon symbol is a central scalar; it commutes with everything, including the sector projectors; therefore the free scalar theory carries no sector content at all, and every sector statement at Klein–Gordon level is a statement about the potential. The factorization question is a question about the free symbol, and it is answered without any sector at all: the answer is a property of a scalar quadratic form.</p>
+<p><strong>The exception is the vector coefficient, and its price is exact.</strong> The parent records Alexeyeva's factorization of an operator with a constant complex vector coefficient. In momentum space the two factors are biquaternion-valued linear symbols whose product is scalar, and that product is the quadric. <strong>The factors cannot be central</strong>: a product of two central linear symbols is a product of two linear forms, which is what the rank argument forbids. The first-order factors exist only because they are not scalars, and the mass and the directional term come from one coefficient and cannot be separated.</p>
+<p><strong>The two parts of the coefficient then split the work.</strong> The parent writes the coefficient's norm as $m^{2}=(\vec F,\vec F)=\lvert E\rvert^{2}-\lvert H\rvert^{2}+2i(E,H)$ and does not pursue it. In momentum space the real part $E$ displaces the zero set's apex and contributes no mass, while the imaginary part $H$ supplies a mass $\lvert H\rvert$ and removes one direction of propagation. This article tabulates that split, and it separates the parent's $m^{2}$ from the factored operator's own mass.</p>
+<p><strong>The polar parent has no symbol at all, and that is why the family stops here.</strong> The amplitude equation is nonlinear in the pair of amplitude and phase, so there is no symbol to factor and no quadric to test. The companion article <em>The Fourier Transform and the Klein–Gordon Equation in Biquaternionic Polar Variables</em> takes that case in full, and the one paragraph below states the algebraic reason without duplicating its argument.</p>
+<p><strong>The companion's question is the spectrum, and it is not this article's.</strong> <em>The Fourier Transform and the Variational Principle and the Klein–Gordon Equation in Biquaternionic Form</em> asks what the eigenvalues of a non-central potential are and answers $a\pm\lvert\vec v\rvert$, each doubled. This article asks when the symbol factors. An operator can have a perfectly good spectrum and no square root; that is exactly the Klein–Gordon case, and the two answers are independent.</p>
+<h2 id="conventions">Conventions</h2>
+<p>The algebra and its units are those of <em>Algebra and Element Conventions</em>, the gradient, the d'Alembertian and the symbol rule those of <em>Operator and Calculus Conventions</em>, the two forms those of <em>Norm and Pairing Conventions</em>, the units and the material time those of <em>Physics Units and Common Elements Conventions</em>, and the sector bookkeeping those of <em>Mirror Biquaternions and the Phy–Psy Switch</em>. The kernel and its $i\epsilon$ prescription are those of <em>The Klein–Gordon Propagator and Its Green's Functions in Biquaternionic Form</em>; they are cited and not re-derived.</p>
+<p><strong>The bookkeeping is quoted once.</strong> With $\tilde K_\Phi=ik_t'e_t+\vec k_\Phi$, $k_t'=\omega/c$, $k_m=mc/\hbar$ and $r_t'=ct'$,</p>
+<p>$$
+\tilde\nabla_\Phi\longmapsto i\tilde K_\Phi,
+\qquad
+\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}\longmapsto-\langle\tilde K_\Phi\rangle_\natural,
+\qquad
+\langle\tilde K_\Phi\rangle_\natural=-k_t'^{2}+k_\Phi^{2},
+\qquad
+\langle\tilde P_\Phi\rangle_\natural=-p^{2}.
+$$</p>
+<p><strong>The phase convention is fixed here and used throughout.</strong> A positive-frequency plane wave is $\tilde\Xi=\tilde\Xi_0\exp(-i\theta_{\mathrm{pwp}})$ with $\theta_{\mathrm{pwp}}=\omega r_t'-\vec k_\Phi\cdot\vec r$, so $\partial/\partial r_t'\mapsto-i\omega$ and $\partial/\partial r_\eta\mapsto ik_\eta$. The sign of $\vec\zeta$ in every factorization display below is the sign this convention gives it; the opposite convention reverses it and changes no structural statement.</p>
+<p><strong>The coefficient is a constant complex vector.</strong> $\vec F$ is a constant element of the vector subspace of $\mathbb{B}$ with complex components, carrying no scalar part. It is the parent's object and it is kept in the parent's notation, including the split $\vec F=-E-iH$ for real vectors $E$ and $H$.</p>
+<h2 id="the-symbol-and-its-rank">The Symbol and Its Rank</h2>
+<p><strong>Finding 1.</strong> The symbol of $\Box_\Phi-k_m^{2}$ is</p>
+<p>$$
+-\langle\tilde K_\Phi\rangle_\natural-k_m^{2}=k_t'^{2}-k_\Phi^{2}-k_m^{2},
+$$</p>
+<p>a scalar quadratic form of rank four whose zero set is the two-sheeted mass hyperboloid.</p>
+<p><strong>The operator has no first-order scalar square root, and the rank of that form is the reason.</strong></p>
+<p><strong>The reason is a counting argument on the quadric.</strong> A product of two linear forms $\ell_1\ell_2$ has a symmetrized matrix $(\ell_1\ell_2^{T}+\ell_2\ell_1^{T})/2$ of rank at most two. The Klein–Gordon form has the matrix $\operatorname{diag}(1,-1,-1,-1)$, whose rank is four. A rank-four form is not a product of two linear forms in any number of variables, so no pair of first-order operators with central symbols can compose to the Klein–Gordon operator. The count is measured:</p>
+<p>$$
+\operatorname{rank}\operatorname{diag}(1,-1,-1,-1)=4,
+\qquad
+\operatorname{rank}\bigl(\ell_1\ell_2^{T}+\ell_2\ell_1^{T}\bigr)\le2,
+$$</p>
+<p>so the two ranks differ by two and no product of two linear forms reaches four.</p>
+<p><strong>This is the parent's anticommutation argument and not a rival to it.</strong> The parent shows that $B=-A$ and $A\vec e_\mu+\vec e_\mu A=0$ for all three units force $A=0$, and then the constant term $AB=-A^{2}$ cannot equal $-k_m^{2}$. The rank argument says the same thing in the language of the symbol: the composition of two first-order operators has the product of their symbols as its principal symbol, and a product of two central linear symbols is a product of two linear forms, hence of rank at most two. <strong>Neither argument is stronger; they are one fact seen from two sides, and the parent's is cited rather than repeated.</strong></p>
+<p><strong>The zero set says what a factorization would have to look like.</strong> The hyperboloid has two sheets, and the two sheets are the two frequency branches $\omega=\pm c\sqrt{k_\Phi^{2}+k_m^{2}}$. A factorization would cut the quadric into two <em>hyperplanes</em>, not into two sheets. <strong>The sheet count is not the factor count</strong>, and that distinction is the reason a second-order scalar equation can have two branches and still no square root.</p>
+<p><strong>What the obstruction is not.</strong> It is not an obstruction to a first-order <em>system</em>. The parent's conjugate pair writes the equation as a first-order system in the field and its rate of change, and that system exists for every second-order equation. The obstruction is to a single first-order equation for a scalar amplitude, and the two statements are compatible because the system doubles the unknown.</p>
+<p><strong>Nor is it an obstruction to a first-order root on a carrier.</strong> The parent's §<em>Does the Second-Order Structure Fit</em> records that the operator has a first-order spinor square root, the biquaternion Dirac operator acting on a Peirce carrier, and <em>The First-Order Root of the Biquaternion Klein–Gordon Operator</em> develops it. The root exists on a module; what does not exist is a root on the scalar element.</p>
+<h2 id="factorization-and-its-price">Factorization and Its Price</h2>
+<p><strong>Finding 2.</strong> With a constant complex vector coefficient the operator does factor, and the parent's Alexeyeva display is the factorization. In momentum space both factors are linear and their product is the quadric:</p>
+<p>$$
+\bigl(-\vec\zeta+\vec F-i\omega\bigr)\bigl(\vec\zeta-\vec F-i\omega\bigr)
+=\bigl(\vec\zeta-\vec F,\vec\zeta-\vec F\bigr)-\omega^{2}.
+$$</p>
+<p><strong>The product is scalar, and that is the whole mechanism.</strong> The two cross terms cancel because $i\omega$ is central and the two vector symbols commute with it; what survives is $\vec F$-dependent only through the combination $\vec\zeta-\vec F$ and the square of the frequency. <strong>The product is exactly the quadric of a Klein–Gordon operator whose coefficient is $\vec\zeta-\vec F$</strong>: the coefficient has been absorbed into the wave number, and that absorption is the factorization.</p>
+<p><strong>The identity is measured on the symbols.</strong> Over three hundred random draws of a wave number, a frequency and a complex coefficient, the product of the two first-order symbols had a vector part below $8.9\times10^{-16}$ and a scalar part equal to the Euclidean quadratic form $(\vec\zeta-\vec F,\vec\zeta-\vec F)-\omega^{2}$ to the same order. The parent prints the same quadratic form with $\vec\zeta+\vec F$; the difference is the sign of $\vec\zeta$ under the phase convention, and no statement here depends on which sign is written.</p>
+<p><strong>The first price is the parent's and it is exact.</strong> In the compensated operator $\Box_A+(\vec F,\vec F)+2i(\vec F,\nabla)$ the mass and the directional term both come from the one coefficient $\vec F$. Setting $\vec F=0$ removes the mass and the direction together, and turning off the direction while keeping the mass is not a case of the construction. The parent states this; it is repeated here only to attach it to the symbol display above, where it is visible as the single object $\vec\zeta-\vec F$.</p>
+<p><strong>The second price is the one the rank argument adds, and it is the article's structural point.</strong> The factors are not central: their symbols are biquaternion-valued vectors, with zero scalar part. That is not an accident of Alexeyeva's choice but a necessity, because a product of two central linear symbols has rank at most two and the quadric has rank four. <strong>The factorization is therefore available exactly at the cost of the factor's centrality</strong>, and a central factor would be the scalar square root the parent proves does not exist.</p>
+<p><strong>So the two statements are one statement.</strong> "The Klein–Gordon operator does not factor into first-order scalar operators" and "a vector coefficient whose norm supplies the mass does factor" are not in tension: the first forbids central factors, the second supplies non-central ones, and the rank of the quadric decides between them. <strong>The word "scalar" in the parent's sentence is doing all the work</strong>, and the article has now said why.</p>
+<p><strong>The compensation is visible in the symbol.</strong> In the factored case the symbol is a perfect square in the shifted variable: $(\vec\zeta-\vec F)^{2}-\omega^{2}$, the difference of two squares whose spatial part is the square of one linear form. In the unfactored case the symbol is $k_t'^{2}-k_\Phi^{2}-k_m^{2}$, which is also a difference of squares, $k_t'^{2}-(k_\Phi^{2}+k_m^{2})$, but the second square is a sum of four terms and not one. <strong>The obstruction is the plus sign inside the second square</strong>, and that is the entire content of the rank count.</p>
+<h2 id="the-zero-set-of-the-factored-symbol">The Zero Set of the Factored Symbol</h2>
+<p><strong>Finding 3.</strong> The zero set is fixed by the two parts of the coefficient. The real part displaces the apex and contributes no mass; the imaginary part supplies the mass and removes one direction of propagation.</p>
+<p><strong>The algebra is one expansion.</strong> With $\vec F=-E-iH$ for real vectors $E$ and $H$,</p>
+<p>$$
+\omega^{2}=(\vec\zeta-E)^{2}-\lvert H\rvert^{2}-2i\,(\vec\zeta-E)\cdot H,
+$$</p>
+<p>so a real frequency requires $(\vec\zeta-E)\cdot H=0$, and on that surface $\omega^{2}=\lvert\vec\zeta-E\rvert^{2}-\lvert H\rvert^{2}$. The expansion is exact: over four thousand random pairs of a wave number and a coefficient the two sides agreed to $7.1\times10^{-15}$.</p>
+<p><strong>A real coefficient gives a massless cone, displaced.</strong> For $H=0$ the constraint is empty and $\omega^{2}=\lvert\vec\zeta-E\rvert^{2}$: the light cone with its apex at $\vec\zeta=E$. <strong>The real part of the coefficient shifts the pattern and gives no rest mass at all</strong>, for any value of $\lvert E\rvert$.</p>
+<p><strong>An imaginary coefficient gives the mass, and its direction is not a direction of propagation.</strong> For $H\neq0$ the real solutions live in the plane through $\vec\zeta=E$ perpendicular to $H$, where the dispersion is a hyperboloid of mass $\lvert H\rvert$; inside that plane the region $\lvert\vec\zeta-E\rvert<\lvert H\rvert$ carries an imaginary frequency. Measured: the minimum of $\omega^{2}$ on the allowed plane, attained at $\vec\zeta=E$, is $-\lvert H\rvert^{2}$, which is $-0.250$ for $\lvert H\rvert=0.5$ and $-0.810$ for $\lvert H\rvert=0.9$.</p>
+<p><strong>The parent's $m^{2}$ is the comparison operator's mass and not this one.</strong> The parent writes $m^{2}=(\vec F,\vec F)=\lvert E\rvert^{2}-\lvert H\rvert^{2}+2i(E,H)$ and calls it positive for a real coefficient. That number is the mass of the Klein–Gordon–Fock operator $\Box_A+m^{2}$ with which the factored operator is compared, as the parent's own §<em>A Vector Coefficient: When the Operator Does Factor</em> says: the factored operator is that one <strong>plus</strong> the directional term. Its own dispersion is the displaced cone above, so <strong>a real coefficient gives a massless theory for every $\lvert E\rvert$</strong>, and the parent's phrase must not be read as massiveness.</p>
+<p><strong>The two thresholds are different thresholds.</strong> $\lvert E\rvert=\lvert H\rvert$ is where the comparison mass changes sign, and it is not where anything happens to the factored spectrum. The three values are $0.640$ for a real coefficient with $\lvert E\rvert=0.8$, $0.390$ for $E=(0.8,0,0)$ with $H=(0,0.5,0)$, and $-0.560$ for $E=(0.5,0,0)$ with $H=(0.9,0,0)$. The factored operator's mass vanishes only at $H=0$, and there it is massless for every $E$.</p>
+<p><strong>What the tabulation does not claim.</strong> It does not claim that the three values of the comparison mass are three theories. The factored operator is a mathematical object with a constant coefficient; whether a physical setting realizes each regime is a separate question, and the parent's non-relativistic and rest-mass sections do not decide it.</p>
+<h2 id="where-the-polar-form-loses-its-symbol">Where the Polar Form Loses Its Symbol</h2>
+<p><strong>The polar parent's amplitude equation is not linear, and a nonlinear equation has no symbol.</strong> The parent writes $\Box_\Phi r=r\,[k_m^{2}-(\partial_{r_t'}\theta_{\mathrm{pha}})^{2}+\lvert\nabla\theta_{\mathrm{pha}}\rvert^{2}]$, and the coefficient on the right depends on the gradient of the unknown phase. A symbol is a function of the wave number alone; here the coefficient is a functional of the solution, so no function of $\tilde K_\Phi$ represents the operator.</p>
+<p><strong>The pair is coupled in both directions, and each direction fails a different test.</strong> At fixed phase the amplitude equation is linear in $r$: superposing two amplitudes gave a residual of $1.4\times10^{-14}$ against a scale of $6.4$. At fixed amplitude it is not additive in the phase: superposing two phases gave a residual of $2.0$ against a scale of $4.0$. <strong>So the equation is linear in neither variable of the pair, taken as the pair.</strong></p>
+<p><strong>That is why the polar case yields a section and not a second factorization.</strong> There is no quadric to test for reducibility, because there is no quadratic form. The companion article takes the case in full and asks the question that does have an answer there: which part of the polar word removes the symbol. Its answer is about the amplitude, and it does not depend on anything in this article.</p>
+<h2 id="the-denial-that-survives">The Denial That Survives</h2>
+<p><strong>The informational sector is not the Fourier dual of the material sector.</strong> Every transform in this article acts on a $\mathbb{B}$-valued function and returns a $\mathbb{B}$-valued function. No step carries a field out of its sector, and the sector statements of §<em>Conventions</em> are statements about one constant coefficient, at one wave number or at one event.</p>
+<p><strong>The factorization is not a Fourier discovery, and the article does not present it as one.</strong> The parent proves the obstruction in position space, by anticommutation, and proves the vector exception there too, by composition. The transform is a lens: it displays the obstruction as the rank of a quadric and the exception as the cancellation of two cross terms, and it adds no case that the parent's argument does not already contain.</p>
+<h2 id="limits">Limits</h2>
+<p><strong>Constant coefficients are the licence.</strong> A symbol exists only where the coefficients are constant, and every display above is a statement about that case. A position-dependent coefficient replaces the symbol by a convolution, its kernel being the transform of the coefficient, and there is no quadric to factor. <strong>The rank argument therefore classifies constant coefficients and nothing else</strong>, and the parent's two settings are the two cases of this licence.</p>
+<p><strong>The abelian component form.</strong> The parent separates the covariant derivative into components because the coefficients are central scalars, and that is what makes the symbol a scalar function of $\tilde K_\Phi$ rather than a matrix. A non-abelian coefficient would make the symbol matrix-valued, the rank argument would become a statement about a matrix polynomial, and the classification would have to be redone.</p>
+<p><strong>The article does not re-derive the kernel.</strong> The light-cone $\delta$-layer, the Bessel-type kernel of the unfactored operator and the exponential weight of the factored one are the parent's, and they are cited at §<em>Conventions</em>. What is added here is the shape of the zero set, not the fundamental solution.</p>
+<p><strong>The companion's spectrum and this article's rank are different measurements of one object.</strong> <em>The Fourier Transform and the Variational Principle and the Klein–Gordon Equation in Biquaternionic Form</em> finds the spectrum of a non-central potential; this article finds when the symbol splits. A reader who wants the eigenvalues will not find them here, and a reader who wants the square root will not find it there.</p>
+<h2 id="open-questions">Open Questions</h2>
+<p><strong>One question is left open, and it is whether the rank argument generalizes to higher order.</strong> A third-order symbol factors into first-order factors exactly when its hypersurface is a union of hyperplanes, and the algebraic test is not a rank count but a factorization of a cubic form. Whether a biquaternionic symbol of order $n$ admits a classification of its factorable cases by the geometry of its zero set, in the way the second-order case is classified by the rank of a quadric, is not decided here. No claim is made.</p>
+<h2 id="summary">Summary</h2>
+<p>The Klein–Gordon operator's symbol is $k_t'^{2}-k_\Phi^{2}-k_m^{2}$, a scalar quadratic form of rank four whose zero set is the two-sheeted mass hyperboloid. A product of two linear forms has rank at most two, so the form is not a product of two linear forms, so no pair of first-order operators with central symbols composes to the Klein–Gordon operator. That is the parent's anticommutation obstruction read on the quadric, and the parent's proof is cited rather than repeated.</p>
+<p>A constant complex vector coefficient does factor, and the product of the two first-order symbols is scalar: $(\vec\zeta-\vec F,\vec\zeta-\vec F)-\omega^{2}$, verified to $8.9\times10^{-16}$ over three hundred draws. The price is the parent's: the mass $(\vec F,\vec F)$ and the directional term $2i(\vec F,\nabla)$ come from one coefficient. <strong>The price the rank argument adds is that the factors cannot be central</strong>, because a central factor would be the scalar square root the parent forbids; the word "scalar" in the parent's sentence is what carries the whole obstruction.</p>
+<p>The two parts of the coefficient then split the work: $\omega^{2}=(\vec\zeta-E)^{2}-\lvert H\rvert^{2}-2i(\vec\zeta-E)\cdot H$, verified to $7.1\times10^{-15}$, so a real coefficient gives the massless cone $\omega^{2}=\lvert\vec\zeta-E\rvert^{2}$ displaced to $\vec\zeta=E$, and an imaginary one gives a hyperboloid of mass $\lvert H\rvert$ confined to the plane $(\vec\zeta-E)\perp H$, with $\omega^{2}$ reaching $-0.250$ at $\lvert H\rvert=0.5$ and $-0.810$ at $\lvert H\rvert=0.9$. <strong>The parent's $m^{2}=\lvert E\rvert^{2}-\lvert H\rvert^{2}$ is the comparison operator's mass</strong>, $0.640$, $0.390$ and $-0.560$ in the three cases, and not the factored operator's, which is $\lvert H\rvert$. The polar parent's amplitude equation is nonlinear, with a residual of $2.0$ against a scale of $4.0$ under a superposition of phases, and a nonlinear equation has no symbol at all.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde K_\Phi=ik_t'e_t+\vec k_\Phi$</td>
+<td>The four-wavevector; $k_t'=\omega/c$</td>
+</tr>
+<tr>
+<td>$-\langle\tilde K_\Phi\rangle_\natural-k_m^{2}$</td>
+<td>The scalar Klein–Gordon symbol; rank four</td>
+</tr>
+<tr>
+<td>$\operatorname{diag}(1,-1,-1,-1)$</td>
+<td>Its quadric matrix; the rank count</td>
+</tr>
+<tr>
+<td>$\vec F=-E-iH$</td>
+<td>The constant complex vector coefficient; $E$, $H$ real</td>
+</tr>
+<tr>
+<td>$(\vec F,\vec F)=\lvert E\rvert^{2}-\lvert H\rvert^{2}+2i(E,H)$</td>
+<td>The coefficient's norm; the mass of the comparison operator</td>
+</tr>
+<tr>
+<td>$\lvert H\rvert$</td>
+<td>The factored operator's own mass; zero for every real coefficient</td>
+</tr>
+<tr>
+<td>$\omega^{2}=(\vec\zeta-E)^{2}-\lvert H\rvert^{2}-2i(\vec\zeta-E)\cdot H$</td>
+<td>The dispersion of the factored symbol</td>
+</tr>
+<tr>
+<td>$(\vec\zeta-\vec F,\vec\zeta-\vec F)-\omega^{2}$</td>
+<td>The product of the two first-order symbols</td>
+</tr>
+<tr>
+<td>$2i(\vec F,\nabla)$</td>
+<td>The directional term that cannot be separated from the mass</td>
+</tr>
+<tr>
+<td>$\Box_\Phi r=r\,[k_m^{2}-(\partial_{r_t'}\theta_{\mathrm{pha}})^{2}+\lvert\nabla\theta_{\mathrm{pha}}\rvert^{2}]$</td>
+<td>The polar amplitude equation; nonlinear, no symbol</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Klein–Gordon Equation in Biquaternionic Form</em>, for the obstruction this article reads in momentum space, the Alexeyeva factorization, and the plane-wave catalogue.</li>
+<li><em>The Fourier Transform and the Variational Principle and the Klein–Gordon Equation in Biquaternionic Form</em>, for the spectrum of a non-central potential, which is the companion question.</li>
+<li><em>The Fourier Transform and the Klein–Gordon Equation in Biquaternionic Polar Variables</em>, for the polar case: the transform's phase as the action and the amplitude as what removes the symbol.</li>
+<li><em>The Klein–Gordon Equation in Biquaternionic Polar Variables</em>, for the amplitude and transport equations.</li>
+<li><em>The First-Order Root of the Biquaternion Klein–Gordon Operator</em>, for the spinor square root on a carrier.</li>
+<li><em>Derivatives, Fields and Transforms</em>, for the transform, its kernel and the symbol rule.</li>
+<li><em>Biquaternion Continuous Harmonic Analysis</em>, for the convolution theorem used in §<em>Limits</em>.</li>
+<li>L. A. Alexeyeva, on the differential algebra of biquaternions, for the first-order system whose composition supplies the factored operator.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

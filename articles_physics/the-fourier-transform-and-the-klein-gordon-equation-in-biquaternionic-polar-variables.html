@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Fourier Transform and the Klein–Gordon Equation in Biquaternionic Polar Variables — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-fourier-transform-and-the-kleingordon-equation-in-biquaternionic-polar-variables"><strong>The Fourier Transform and the Klein–Gordon Equation in Biquaternionic Polar Variables</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The polar parent states the identity that generates everything below.</strong> At its §<em>The Momentum and the Current</em> it writes that the biquaternionic gradient of the action is the four-momentum, $\tilde\nabla_\Phi S_{\tilde\Xi}=\tilde P_\Phi$, and it notes that $\tilde K_\Phi=\tilde P_\Phi/\hbar=\tilde\nabla_\Phi S_{\tilde\Xi}/\hbar$. The identity is used there to read the amplitude equation as a norm. It is stated, used, and not followed to the transform.</p>
+<p><strong>Followed to the transform, the identity says what the transform's phase is.</strong> The kernel of the transform is $e^{-i\theta_{\mathrm{pwp}}}$, and the phase is $\theta_{\mathrm{pwp}}=\mathrm{Sc}(\tilde K_\Phi\tilde R_\Phi^\natural)$. By the seed that angle is $S_{\tilde\Xi}/\hbar$. <strong>So the phase of the transform is the action over $\hbar$</strong>, and the polar word's phase is not a second object beside it.</p>
+<p><strong>The second finding is that the amplitude is what removes the symbol.</strong> The transform of $r\,e^{-i\theta}$ is the transform of $r$ translated by the wave number, so the phase moves the support rigidly and the amplitude decides its shape. A single wave number survives exactly when the amplitude's transform is a single point, and that is exactly when the amplitude is constant. <strong>No phase, however nonlinear, can spread a mode; the amplitude spreads it and the phase only moves it.</strong></p>
+<p><strong>The residue of that failure has a name in the parent.</strong> Where the symbol fails, the amplitude equation carries $\Box_\Phi r/r$, the quantum potential. This article states what it is: the residue, a functional of the unknown that no function of the wave number can represent. The parent's own phrase for it, a curvature of the amplitude, is the right one, and the article shows that the curvature set is strictly larger than the set where a symbol exists.</p>
+<p><strong>The transform gives nothing to the polar form that it did not already have, and the article says so.</strong> The word is a bijection, so the substitution adds no content and removes none. What the transform gives is a reading: the phase is the action, the amplitude is the spread, and the symbol is the free symbol on a fixed amplitude. That reading is the whole of the article.</p>
+<p><strong>The two companion articles ask neighbouring questions.</strong> <em>The Fourier Transform and the Variational Principle and the Klein–Gordon Equation in Biquaternionic Form</em> asks what the eigenvalues of a non-central potential are. <em>The Fourier Transform and the Klein–Gordon Equation in Biquaternionic Form</em> asks when the second-order symbol factors. This article asks where the symbol comes from and what removes it. <strong>The three answers are independent</strong>, and this one is the only one of the three that uses the word.</p>
+<h2 id="conventions">Conventions</h2>
+<p>The algebra and its units are those of <em>Algebra and Element Conventions</em>, the gradient, the d'Alembertian and the symbol rule those of <em>Operator and Calculus Conventions</em>, the two forms those of <em>Norm and Pairing Conventions</em>, the units and the material time those of <em>Physics Units and Common Elements Conventions</em>. The word, the four brackets and the quantum potential are the polar parent's, and they are cited rather than restated.</p>
+<p><strong>The seed is quoted once.</strong> On the material sector $\partial/\partial R_t=-i\,\partial/\partial r_t'$ and $\partial/\partial R_\eta=\partial/\partial r_\eta$, so</p>
+<p>$$
+\tilde\nabla_\Phi S_{\tilde\Xi}
+=-i\frac{\partial S_{\tilde\Xi}}{\partial r_t'}e_t+\nabla S_{\tilde\Xi}
+=i\frac{E}{c}e_t+\vec p
+=\tilde P_\Phi,
+\qquad
+\tilde K_\Phi=\frac{\tilde\nabla_\Phi S_{\tilde\Xi}}{\hbar},
+\qquad
+E=-c\,\frac{\partial S_{\tilde\Xi}}{\partial r_t'} .
+$$</p>
+<p><strong>The word is quoted once.</strong> $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}$ for a central field, with $r\geq0$ the amplitude, $\theta_{\mathrm{pha}}$ the phase and $S_{\tilde\Xi}=\hbar\,\theta_{\mathrm{pha}}$. The parent's amplitude equation and transport equation are</p>
+<p>$$
+\left(\frac{\partial S_{\tilde\Xi}}{\partial r_t'}\right)^{2}-\lvert\nabla S_{\tilde\Xi}\rvert^{2}=m^{2}c^{2}-\hbar^{2}\frac{\Box_\Phi r}{r},
+\qquad
+\nabla\cdot(\rho_{\mathrm{num}}\nabla S_{\tilde\Xi})-\frac{\partial}{\partial r_t'}\Bigl(\rho_{\mathrm{num}}\frac{\partial S_{\tilde\Xi}}{\partial r_t'}\Bigr)=0,
+$$</p>
+<p>with $\rho_{\mathrm{num}}=r^{2}$.</p>
+<p><strong>The bookkeeping is stated once.</strong> $\tilde K_\Phi=ik_t'e_t+\vec k_\Phi$, $k_t'=\omega/c$, $k_m=mc/\hbar$, $\langle\tilde K_\Phi\rangle_\natural=-k_t'^{2}+k_\Phi^{2}$, and the phase is $\theta_{\mathrm{pwp}}=\omega r_t'-\vec k_\Phi\cdot\vec r$ for a positive-frequency plane wave.</p>
+<h2 id="the-phase-of-the-transform-is-the-action">The Phase of the Transform Is the Action</h2>
+<p><strong>Finding 1.</strong> On a constant-amplitude field with a linear phase, the transform's angle and the action's angle are one number:</p>
+<p>$$
+\theta_{\mathrm{pwp}}=\mathrm{Sc}(\tilde K_\Phi\tilde R_\Phi^\natural)=\frac{S_{\tilde\Xi}}{\hbar}=\theta_{\mathrm{pha}} .
+$$</p>
+<p><strong>The proof is the seed and one line of bookkeeping.</strong> Since $\tilde K_\Phi=\tilde\nabla_\Phi S/\hbar$, pairing it with $\tilde R_\Phi$ returns $S/\hbar$ whenever $S$ is linear, because a linear function is recovered from its gradient by one contraction. There is no second identity involved: the transform's phase is the action because the action's gradient is the wave number, and those are the same sentence read in two directions.</p>
+<p><strong>What the seed therefore explains is the transform's own kernel.</strong> In the element form the phase $\mathrm{Sc}(\tilde K_\Phi\tilde R_\Phi^\natural)$ is written down as the natural pairing of a wave number with a position; it is a construction, and it is correct, but it is not derived from anything. In the polar form the phase is $\theta_{\mathrm{pha}}$, the phase of the field, and the seed identifies it with $S/\hbar$. <strong>The two readings agree because the gradient of the action is the four-momentum, and that is the article's one gain in the direction of explanation.</strong></p>
+<p><strong>The count is exact and it is a single mode.</strong> On a grid of $128$ samples a field $e^{-i\theta}$ with a linear $\theta$ whose gradient is nine grid units of wave number came back occupying one sample of the transform, at the predicted index, with coefficient $1.000$ and every other coefficient below $5.0\times10^{-16}$ of it. The phase alone never produces a second occupied mode.</p>
+<p><strong>The identity also fixes the sign, and the sign is the parent's.</strong> With $E=-c\,\partial S/\partial r_t'$ the temporal slot of $\tilde\nabla_\Phi S$ is $+iE/c$, which is the temporal slot of $\tilde P_\Phi$; the parent records this as the reason the factor $c$ appears where it does. The transform inherits the sign without a choice: $\theta_{\mathrm{pwp}}=\omega r_t'-\vec k_\Phi\cdot\vec r$ is $\mathrm{Sc}(\tilde K_\Phi\tilde R_\Phi^\natural)$, and no convention is left open.</p>
+<p><strong>What the finding does not say.</strong> It does not say that the phase of a general field is the action of a classical path, and it does not say that $\theta_{\mathrm{pha}}$ is linear. It says that wherever both objects are defined, the transform's angle is $S/\hbar$; for a general field the action is not linear and the transform's angle is not a single number at all, which is the subject of the next section.</p>
+<h2 id="the-amplitude-is-what-spreads-the-support">The Amplitude Is What Spreads the Support</h2>
+<p><strong>Finding 2.</strong> For a field $r\,e^{-i\theta}$ with $\theta$ linear, the transform is the transform of $r$ translated by the wave number:</p>
+<p>$$
+\mathcal{F}\bigl[r\,e^{-i\theta}\bigr](k)=\hat r\,(k-k_\theta).
+$$</p>
+<p><strong>The proof is the shift rule and nothing else.</strong> Multiplication by a unit-modulus exponential of a linear phase is a translation of the transform's argument, so the exponential moves the support and the amplitude multiplies it. The convolution form is the general statement; the translation is the linear-phase case, and the linear-phase case is the one a mode is defined in.</p>
+<p><strong>The identity is measured, and the measurement is a convolution check.</strong> For a Gaussian amplitude of width $0.6$ multiplied by a linear phase, the transform of the product equalled the transform of the amplitude alone shifted by the wave number, to $2.6\times10^{-16}$ of the peak. The coefficient at the peak equalled $\hat r(0)$, which is the mean of $r$, at $0.239365$ — the amplitude's mean and not its maximum, as the shift rule requires.</p>
+<p><strong>The counts are the same counts, and that is the article's structural point.</strong> On a grid of $128$ samples the occupied count of the transform of $r\,e^{-i\theta}$ matched the occupied count of the transform of $r$ alone in every case tried: $1$ for a constant amplitude, $2$ for $\cos$, $49$ for a Gaussian of width $0.3$, and $128$ for a Gaussian of width $1.2$. <strong>The phase does not appear in the count.</strong></p>
+<p><strong>So a symbol exists for the polar theory exactly when the amplitude is constant.</strong> A symbol is a single coefficient at a single wave number; by the shift rule the coefficients of the transform are the coefficients of $\hat r$, moved; those coefficients are one number at one point exactly when $\hat r$ is a delta, which is exactly when $r$ is constant. <strong>The condition is on $r$ and not on $\theta$</strong>, and it is the polar form's version of the constant-coefficient licence that the element form states as a hypothesis about $\tilde M$.</p>
+<p><strong>The reading of the word changes with the count.</strong> For a constant amplitude the central word has one free entry, the phase, and the transform reads it exactly through its gradient. For a varying amplitude the word has two, and the transform reads $\hat r$, which is a function and not a number. <strong>The amplitude is the only entry of the word that a transform cannot represent by a label.</strong></p>
+<p><strong>A constant amplitude is where the two readings meet.</strong> In the element form the free theory is the case of a central coefficient, and its plane waves have a constant amplitude; in the polar form the constant amplitude is exactly the condition under which the transform is a single mode. The two descriptions agree there, and they part company as soon as either the coefficient or the amplitude varies.</p>
+<h2 id="the-quantum-potential-is-the-residue">The Quantum Potential Is the Residue</h2>
+<p><strong>Finding 3.</strong> Where the symbol fails, the amplitude equation carries $\Box_\Phi r/r$, and that term is the residue of the failure: it is local in $r$, it is not a function of the wave number, and no symbol can contain it.</p>
+<p><strong>The parent's identity already displays it.</strong> Dividing the amplitude equation by $\hbar^{2}$ and multiplying by $-1$ gives</p>
+<p>$$
+\langle\tilde K_\Phi\rangle_\natural=-k_m^{2}+\frac{\Box_\Phi r}{r},
+$$</p>
+<p><strong>The result is the dispersion relation with one term added.</strong> It is the free dispersion relation plus a term built from the amplitude, and <strong>that term is the whole difference between the polar theory and a theory with a symbol</strong>; the parent says exactly this when it notes that the term vanishes for a plane wave and not for a wave packet.</p>
+<p><strong>Its size is measured, and the measurement separates curvature from spread.</strong> The maximum of $\lvert\Box_\Phi r/r\rvert$ was $0.000$ for a constant amplitude, $0.999$ for $\cos x$, $3.775$ for a Gaussian of width $1.2$ and $1155.53$ for a Gaussian of width $0.3$. The narrow amplitude has the large curvature, which is the expected direction: a sharper envelope has the larger second derivative relative to its own size.</p>
+<p><strong>But the condition $\Box_\Phi r=0$ is strictly weaker than the condition that the amplitude be constant.</strong> An affine amplitude in one coordinate satisfies $\Box_\Phi r=0$ and is not constant, so the quantum potential vanishes for it while its transform is a derivative of a delta rather than a delta: one point of support, but a jet at that point and not a single coefficient. <strong>The quantum potential measures the curvature of the amplitude; a symbol needs the amplitude's flatness.</strong> The two conditions coincide only for the constant case, and the gap between them is the reason the residue is not by itself a test for the existence of a symbol.</p>
+<p><strong>That gap is why the article states the symbol condition in §<em>The Amplitude Is What Spreads the Support</em> and not here.</strong> A reader who looks for the symbol test in the appearance of $\Box_\Phi r/r$ will find that it disappears for amplitudes that still have no symbol. <strong>The correct order is: constant amplitude first, quantum potential second</strong>, and the article keeps that order.</p>
+<p><strong>The residue is a functional and not a coefficient.</strong> A symbol is a function of $\tilde K_\Phi$ alone; $\Box_\Phi r/r$ depends on the solution, so two fields with the same wave number and different amplitudes have different equations. <strong>That is what "no symbol" means in this case</strong>: not that the operator is unknown, but that the operator is different for every field it is applied to.</p>
+<h2 id="the-transport-equation-has-no-symbol">The Transport Equation Has No Symbol</h2>
+<p><strong>Finding 4.</strong> The transport equation is quadratic in the amplitude, and it has no symbol either, for a second reason.</p>
+<p><strong>The reason is the density.</strong> The equation is $\nabla\cdot(\rho_{\mathrm{num}}\nabla S)-\partial_{r_t'}(\rho_{\mathrm{num}}\partial_{r_t'}S)=0$ with $\rho_{\mathrm{num}}=r^{2}$. Under the transform the divergences become products with $i\tilde K_\Phi$, but the products $\rho_{\mathrm{num}}\nabla S$ are products of two fields, so their transforms are convolutions. <strong>A symbol represents a product by a product; here the product is inside the operator</strong>, and no multiplication at one wave number can stand for it.</p>
+<p><strong>The two equations fail differently and the difference is worth keeping.</strong> The amplitude equation fails because its coefficient depends on the solution; the transport equation fails because it is nonlinear in the amplitude. The first failure is a coefficient problem and the second is a superposition problem, and the polar pair has one of each. <strong>That is why the polar form has neither a symbol nor a linearization that would produce one.</strong></p>
+<p><strong>The polar variational parent sharpens the second failure.</strong> Its momenta are genuine Legendre conjugates to the polar parameters, and its Hamiltonian structure is well defined. That structure is not a symbol: a Legendre transform between a field and its conjugate momentum is a transform on the <em>field's</em> variables at each point, and the wave number is not among those variables. <strong>The parent's canonical momenta are not Fourier momenta</strong>, and no reading of them as such is available.</p>
+<h2 id="the-legendre-denial">The Legendre Denial</h2>
+<p><strong>An invertible Legendre transform is not a Fourier transform.</strong> The polar variational parent's four momenta are derivatives of the Lagrangian density with respect to the rates of the polar parameters, taken at each event. The parameters are field values, not coordinates; their conjugates are field momenta, not wave numbers. A Fourier transform pairs a coordinate with its conjugate wave number, and there is no coordinate in the polar parameter list.</p>
+<p><strong>The denial has teeth because the two transforms can look alike.</strong> Both are invertible, both exchange a function with a transform, and both are used to simplify an equation. What separates them is what the variables are: the Legendre transform acts on the field's own degrees of freedom and leaves the spacetime argument untouched, while the Fourier transform acts on the spacetime argument and leaves the field's degrees of freedom untouched. <strong>The polar parameters live on the wrong side of that line.</strong></p>
+<p><strong>So the article transforms the field and not the parameters.</strong> Every display above is a transform in $\tilde R_\Phi$, with $r$ and $\theta_{\mathrm{pha}}$ carried along as coefficients. Nothing in the article transforms $r$ or $\theta_{\mathrm{pha}}$ into conjugate partners, and nothing claims a momentum-space reading of the polar word beyond what the field's own transform supplies.</p>
+<h2 id="limits">Limits</h2>
+<p><strong>The constant-amplitude case is the licence.</strong> The polar theory has a symbol exactly when $r$ is constant, and every statement about a symbol in this article is confined to that case. For a varying amplitude there is no symbol and the article says so rather than approximating one: the parent's quantum potential is the exact residue, not a correction.</p>
+<p><strong>A central field is assumed throughout.</strong> The word $r\,e^{i\theta}$ with a central exponential describes one coefficient of the field, and the polar parent's §<em>General Fields</em> records that a general field is four independent copies with four unrelated phases. The transform acts on each copy, the shift rule holds for each, and the four supports are translated copies of the four amplitudes' transforms. Nothing new appears, and the article does not pursue it.</p>
+<p><strong>The denial is restated as a limit.</strong> Every transform here acts on a $\mathbb{B}$-valued function and returns one; the word is a bijection, so the substitution adds nothing and removes nothing. No step carries a field out of its sector and no step carries a polar parameter into a wave number.</p>
+<h2 id="open-questions">Open Questions</h2>
+<p><strong>One question is left open, and it is whether a position-and-wave-number reading exists for the polar pair.</strong> The failure documented here is the failure of a symbol, which is a function of the wave number alone. Whether a mixed object — a function of both the wave number and the position, in the manner of a Wigner function — can represent the polar pair's two equations, so that $\Box_\Phi r/r$ becomes a term in that object rather than a residue outside it, is not decided here. The parent's quantum potential is local in $r$, which makes the question well posed; nothing in this article answers it.</p>
+<h2 id="summary">Summary</h2>
+<p>The polar parent's identity, that the biquaternionic gradient of the action is the four-momentum, says through the transform that the transform's phase is the action over $\hbar$: $\theta_{\mathrm{pwp}}=\mathrm{Sc}(\tilde K_\Phi\tilde R_\Phi^\natural)=S_{\tilde\Xi}/\hbar=\theta_{\mathrm{pha}}$. The transform's kernel is therefore not a construction imposed from outside; it is the field's own action, and the element form's phase is that sentence written in the other variable set. Measured: one occupied mode at the predicted index, coefficient $1.000$, every other coefficient below $5.0\times10^{-16}$.</p>
+<p>The transform of $r\,e^{-i\theta}$ with a linear phase is the transform of $r$ translated by the wave number, verified to $2.6\times10^{-16}$, and the occupied counts are the amplitude's counts: $1$, $2$, $49$ and $128$ for a constant, a cosine and two Gaussians, with the phase absent from the count. <strong>So the phase moves the support and the amplitude is its shape</strong>, and a symbol exists exactly when the amplitude is constant.</p>
+<p>Where the symbol fails the amplitude equation carries $\Box_\Phi r/r$, the parent's quantum potential: $0.000$ for a constant amplitude, $0.999$ for a cosine, $3.775$ and $1155.53$ for two Gaussians. That term is a functional of the unknown and no function of the wave number can hold it. It is also a weaker test than the symbol condition, because $\Box_\Phi r=0$ holds for an amplitude affine in one coordinate, whose transform on the line is a derivative of a delta rather than a delta; <strong>the quantum potential measures curvature and a symbol needs flatness.</strong> The transport equation fails separately, being quadratic in the amplitude, and the polar pair therefore has one coefficient failure and one superposition failure and no symbol at either.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$S_{\tilde\Xi}/\hbar=\theta_{\mathrm{pha}}$</td>
+<td>The action's angle; the polar phase</td>
+</tr>
+<tr>
+<td>$\tilde\nabla_\Phi S_{\tilde\Xi}=\tilde P_\Phi=\hbar\tilde K_\Phi$</td>
+<td>The parent's seed: the gradient of the action is the four-momentum</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{pwp}}=\mathrm{Sc}(\tilde K_\Phi\tilde R_\Phi^\natural)$</td>
+<td>The transform's angle; equal to $S_{\tilde\Xi}/\hbar$</td>
+</tr>
+<tr>
+<td>$r$</td>
+<td>The amplitude; the only entry that spreads the support</td>
+</tr>
+<tr>
+<td>$\hat r(k-k_\theta)$</td>
+<td>The transform of $r\,e^{-i\theta}$; a translated amplitude transform</td>
+</tr>
+<tr>
+<td>$\Box_\Phi r/r$</td>
+<td>The quantum potential; the residue of the missing symbol</td>
+</tr>
+<tr>
+<td>$\langle\tilde K_\Phi\rangle_\natural=-k_m^{2}+\Box_\Phi r/r$</td>
+<td>The amplitude equation as a shifted dispersion relation</td>
+</tr>
+<tr>
+<td>$\rho_{\mathrm{num}}=r^{2}$</td>
+<td>The density; the transport equation's quadratic term</td>
+</tr>
+<tr>
+<td>$1$, $2$, $49$, $128$</td>
+<td>Occupied counts of $128$ for four amplitudes</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Klein–Gordon Equation in Biquaternionic Polar Variables</em>, for the word, the amplitude and transport equations, and the identity this article follows to the transform.</li>
+<li><em>The Fourier Transform and the Klein–Gordon Equation in Biquaternionic Form</em>, for the symbol whose failure this article locates.</li>
+<li><em>The Fourier Transform and the Variational Principle and the Klein–Gordon Equation in Biquaternionic Form</em>, for the spectrum of a non-central potential.</li>
+<li><em>The Fourier Transform and the Dirac Equation in Biquaternionic Polar Variables</em>, for the first-order case, where the polar form stops at the eikonal and has no second derivative of the amplitude to carry.</li>
+<li><em>The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form</em>, for the quantum potential's origin.</li>
+<li><em>Derivatives, Fields and Transforms</em>, for the transform, its kernel and the shift rule.</li>
+<li><em>Biquaternion Continuous Harmonic Analysis</em>, for the convolution theorem.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

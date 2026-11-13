@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Fourier Transform and the Variational Principle and the Proca Equation in Biquaternionic Form — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-fourier-transform-and-the-variational-principle-and-the-proca-equation-in-biquaternionic-form"><strong>The Fourier Transform and the Variational Principle and the Proca Equation in Biquaternionic Form</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The variational parent states its central structural fact in prose and this article puts a number on it.</strong> <em>The Variational Principle and the Proca Equation in Biquaternionic Form</em> writes the action $\mathcal{L}=\tfrac12\mathrm{Re}\,\mathrm{Sc}(\tilde F\tilde F)-\tfrac12k_m^{2}\langle\tilde A_\Phi\rangle_\natural$, derives the equation, and then says the sentence the whole subject turns on: <strong>the mass term is the obstruction to gauge invariance</strong>. Shifting the potential by a gradient leaves the field term alone and moves the mass term, so the action has no gauge symmetry and the equation inherits a longitudinal part. The article says the obstruction is the presence of one term in the action. <strong>What it does not say is what the term costs.</strong></p>
+<p><strong>The cost is $\tfrac12k_m^{2}\lvert A\rvert^{2}$ and it is the same number at every frequency.</strong> In momentum space the action at a mode is one quadratic form in the four amplitudes, and the form's coefficient along the four-wave-number is $\tfrac12k_m^{2}\lvert A\rvert^{2}$ — independent of $k^{2}$, independent of $\omega$, and equal to $0.245000000$ at $k_m=0.7$ for every frequency tested from $k_t'=0.5$ to $2.0$. <strong>That coefficient is the entire longitudinal action</strong>, and the article's first finding is that it is a constant of the mode.</p>
+<p><strong>The second finding is that gauge freedom is the vanishing of a coefficient and not the breaking of a symmetry.</strong> The constraint is the stationarity of the form along the wave number, and its coefficient is $\tfrac12k_m^{2}$; at $k_m=0$ the coefficient vanishes and the variation is identically satisfied. <strong>So the massless theory's gauge freedom is a zero coefficient in the quadratic form</strong>, and the massive theory's constraint is a non-zero one. The parent's prose and this sentence say the same thing, and the second is the one that can be computed.</p>
+<p><strong>The third finding is a primary constraint visible as an absent power of the frequency.</strong> The coefficient of $A_0^{2}$ in the form is $\tfrac12(\vec k_\Phi^{2}+k_m^{2})$, with <strong>no $\omega^{2}$ in it</strong>, and it therefore does not move when the frequency moves: $0.315000000$ at $k_t'=0.5$, $1.2$ and $2.0$. The three spatial coefficients move ($-0.145$, $+0.45$, $+1.73$). <strong>That asymmetry is the frequency-space form of "the second-order form carries a primary constraint"</strong>, and it is why the count is four minus one.</p>
+<p><strong>The stationarity of the form and the symbol's vanishing are the same equation, and the check is a finite difference.</strong> The gradient of the form is $-\eta\,\sigma A$, verified to $2.1\times10^{-11}$ on a random amplitude at $k_t'=1.2$, so the momentum-space variational principle <em>is</em> the vanishing of the Proca symbol. <strong>The variational statement and the operator statement are one equation in two registers</strong>, and the form companion's determinant, rank and kernel are all statements about this form's Hessian.</p>
+<p><strong>The article is a reading and it says so once.</strong> There is no new solution, no new action and no new current. The action is the parent's, the form is its value at a mode, and what is added is the coefficient structure: the longitudinal constant, the absent frequency in the temporal slot, and the identification of the constraint's cost.</p>
+<h2 id="conventions">Conventions</h2>
+<p>The algebra and the units are those of <em>Algebra and Element Conventions</em>, the gradient those of <em>Operator and Calculus Conventions</em>, the products those of <em>Product and Form Conventions</em>, the two forms those of <em>Norm and Pairing Conventions</em>, the units and the material time those of <em>Physics Units and Common Elements Conventions</em>, and the sectors those of <em>Mirror Biquaternions and the Phy–Psy Switch</em>. The transform is the one of <em>Derivatives, Fields and Transforms</em>, with the symbol rule</p>
+<p>$$
+\tilde\nabla_\Phi\longmapsto i\tilde K_\Phi ,
+\qquad
+\Box_\Phi\longmapsto k^{2} ,
+\qquad
+\tilde K_\Phi=ik_t'e_t+\vec k_\Phi ,
+\qquad
+k_t'=\frac{\omega}{c},
+\qquad
+k^{2}=k_t'^{2}-\vec k_\Phi^{2}.
+$$</p>
+<p>The parent's action is quoted once and not re-derived:</p>
+<p>$$
+S=\int\mathrm{d}^4r\;\mathcal{L} ,
+\qquad
+\mathcal{L}=\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F\tilde F\bigr)-\tfrac12\,k_m^{2}\,\langle\tilde A_\Phi\rangle_\natural ,
+\qquad
+\tilde F=\mathrm{Vect}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr) .
+$$</p>
+<p><strong>The momentum-space form is the parent's density at one wave number.</strong> Replacing each derivative by its multiplier and each field by its transform, the density's transform is supported on the difference of the two wave numbers, so at a mode the action is</p>
+<p>$$
+S=\int\frac{\mathrm{d}^4k}{(2\pi)^4}\;\mathcal{Q}(A) ,
+\qquad
+\mathcal{Q}(A)=\tfrac12\Bigl([kA]^{2}-\bigl(k^{2}-k_m^{2}\bigr)\,A\!\cdot\!A\Bigr) ,
+\qquad
+[kA]=k_t'a_t'-\vec k_\Phi\cdot\vec a ,
+$$</p>
+<p>with $A\!\cdot\!A=-\lvert a_t'\rvert^{2}+\lvert\vec a\rvert^{2}$ the material form. <strong>The first term is the field term and the second is the field term's transverse part together with the mass term</strong>; the split is made below and matters.</p>
+<p><strong>The sign is the parent's and the article keeps it.</strong> Its normalisation fixes the relative sign of the two terms by requiring positive energy, and the overall sign of an action does not change its extremum. Every statement below is about a coefficient and a vanishing, so the overall sign drops out; the relative sign is the parent's and is not renegotiated.</p>
+<p><strong>The stationarity is the symbol and the check is a finite difference.</strong> $\partial\mathcal{Q}/\partial A^\mu=-\eta_{\mu\nu}(\sigma A)^{\nu}$ with $\sigma^\mu{}_\nu=(k^{2}-k_m^{2})\delta^\mu{}_\nu-k^\mu k_\nu$, verified to $2.1\times10^{-11}$ at $k_t'=1.2$, $\vec k_\Phi=(0.3,0.2,0.1)$, $k_m=0.7$ on a random complex amplitude. <strong>So the momentum-space variational principle is $\sigma A=0$</strong>, and the form companion's matrix is this form's Hessian.</p>
+<h2 id="the-quadratic-form-and-its-stationarity">The Quadratic Form and Its Stationarity</h2>
+<p><strong>At a wave number the action is a quadratic form and nothing more.</strong> There is no coupling between different wave numbers in the free case, so the transform does not merely simplify the action; it decomposes it into an independent form at each wave number. <strong>The variation is then algebraic at each index</strong>, and the Euler–Lagrange equation is the vanishing of one gradient.</p>
+<p><strong>The form's two terms have different origins and different behaviour.</strong> The term $[kA]^{2}$ is the field term's longitudinal content: it is quadratic in the Lorenz form and it vanishes on the Lorenz plane. The term $-(k^{2}-k_m^{2})A\!\cdot\!A$ is the field term's transverse content together with the mass, and it is diagonal in the amplitude. <strong>Their competition is the whole of the Proca system's structure</strong>, and the two coefficients are read off below.</p>
+<p><strong>The parent's three Hermiticity statements become three statements about coefficients.</strong> The action is real, the pairing is $\mathrm{Re}\,\mathrm{Sc}$, and the mass term is the invariant length. At a mode all three are statements about real coefficients of a real form: $\mathcal{Q}$ is real because every coefficient is real. <strong>There is no imaginary part to remove and no surface term to drop</strong>, which is the same gain that the Dirac variational companion records and for the same reason: a multiplier needs no integration by parts.</p>
+<p><strong>What the form does not do is decide which equation the physics uses.</strong> The parent adopts the second-order form and puts the Palatini form aside; the form below is the second-order one's. <strong>A first-order form would give a different form and a pair of equations</strong>, and §<em>Open Questions</em> records that the article does not treat it.</p>
+<h2 id="the-longitudinal-coefficient-is-the-mass-alone">The Longitudinal Coefficient Is the Mass Alone</h2>
+<p><strong>Along the wave number the form is the mass and nothing else.</strong> Put $A\parallel k^\mu$, so that $A=\lambda k^\mu$ and $[kA]=\lambda k^{2}$. Then</p>
+<p>$$
+\mathcal{Q}\bigl(\lambda k^{\mu}\bigr)
+=\tfrac12\Bigl(\lambda^{2}k^{4}-\bigl(k^{2}-k_m^{2}\bigr)\lambda^{2}k^{2}\Bigr)
+=\tfrac12\lambda^{2}k_m^{2}k^{2}
+=\tfrac12 k_m^{2}\bigl(A\!\cdot\!A\bigr) ,
+$$</p>
+<p>and the $k^{4}$ cancels against the $k^{4}$ inside the second term. <strong>The cancellation is the statement that the field term does not act along the wave number</strong>, which is the parent's "the field term depends on the longitudinal part only through a total derivative", read as an algebraic identity.</p>
+<p><strong>The coefficient is constant across the frequency, and it is measured.</strong> On a unit-norm longitudinal amplitude, with $\vec k_\Phi=(0.3,0.2,0.1)$:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$k_m$</th>
+<th>$k_t'=0.5$</th>
+<th>$k_t'=1.2$</th>
+<th>$k_t'=2.0$</th>
+<th>$\tfrac12k_m^{2}\lvert A\!\cdot\!A\rvert$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0.7$</td>
+<td>$+0.245000000$</td>
+<td>$+0.245000000$</td>
+<td>$+0.245000000$</td>
+<td>$+0.245000000$</td>
+</tr>
+<tr>
+<td>$0.3$</td>
+<td>$+0.045000000$</td>
+<td>$+0.045000000$</td>
+<td>$+0.045000000$</td>
+<td>$+0.045000000$</td>
+</tr>
+<tr>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Nine entries, three frequencies, one column.</strong> The value does not depend on $k_t'$ at all, which is the same statement as the algebra above: the longitudinal coefficient is a function of the mass and of the amplitude's norm and of nothing else. <strong>No other coefficient of the form has that property.</strong></p>
+<p><strong>The transverse coefficient is the contrast, and it depends on both.</strong> On the Lorenz plane $[kA]=0$ and $\mathcal{Q}=-\tfrac12(k^{2}-k_m^{2})A\!\cdot\!A$, which moves with $k^{2}$ and therefore with the frequency and the wave vector. <strong>So the form is one constant direction and three moving ones</strong>, and the constant direction is the one the constraint removes. That is the sense in which the constraint's cost is fixed and the propagating modes' cost is not.</p>
+<p><strong>The identity explains why the constraint exists in the massive case only.</strong> The variation along $k^\mu$ is $\partial\mathcal{Q}/\partial\lambda=2\lambda\tfrac12k_m^{2}(A\!\cdot\!A)$, which vanishes for every $\lambda$ when $k_m=0$. <strong>A coefficient that is proportional to the mass is a constraint that exists in proportion to the mass</strong>, and that is a sharper statement than "the mass breaks the symmetry": nothing is broken, one coefficient is zero.</p>
+<h2 id="the-constraint-is-the-vanishing-of-a-coefficient">The Constraint Is the Vanishing of a Coefficient</h2>
+<p><strong>The Lorenz condition is the stationarity of the form along the wave number.</strong> The derivative in the direction of the wave number is</p>
+<p>$$
+\frac{\partial\mathcal{Q}}{\partial A^\mu}\,k^{\mu}
+=[kA]\,k^{2}-\bigl(k^{2}-k_m^{2}\bigr)\bigl(A\!\cdot\!k\bigr)
+=k_m^{2}\,[kA] ,
+$$</p>
+<p>because $A\cdot k=[kA]$ and the two $k^{2}$ terms cancel. <strong>So the directional derivative along $k^\mu$ is the mass times the Lorenz form</strong>, and stationarity in every direction gives $k_m^{2}[kA]=0$, which is the parent's $k_m^{2}S=0$ with $S$'s symbol in place.</p>
+<p><strong>The relation is therefore a statement about the form and not about a symmetry.</strong> The parent derives the constraint by differentiating the equation; the article derives it by varying along one direction. <strong>Both give one condition because the form has one direction in which its coefficient is the mass</strong>, and neither needs the notion of a gauge transformation.</p>
+<p><strong>The massless case is the degenerate one and it is degenerate in a specific way.</strong> At $k_m=0$ the form is $\tfrac12([kA]^{2}-k^{2}A\!\cdot\!A)$, whose longitudinal coefficient is zero identically, so the variation along $k^\mu$ produces no condition and the amplitude along $k^\mu$ is free. <strong>That freedom is the gauge freedom</strong>, and in the form's language it is the freedom of a null direction rather than the orbit of a group.</p>
+<p><strong>What the form cannot say is which representative to choose.</strong> A gauge freedom is a freedom, and a quadratic form that has a null direction does not select one. <strong>The parent's statement that in the massless theory $S=0$ can be reached from any potential by a gauge transformation is the statement that the null direction can be removed by a shift</strong>, and the form's version is that the kernel of the Hessian contains the wave number. The two agree and neither is deeper.</p>
+<h2 id="the-temporal-coefficient-has-no-frequency">The Temporal Coefficient Has No Frequency</h2>
+<p><strong>The coefficient of $A_0^{2}$ contains no $\omega^{2}$, and that is the primary constraint.</strong> Expanding the form's diagonal,</p>
+<p>$$
+\frac{\partial^{2}\mathcal{Q}}{\partial A_0^{2}}=\tfrac12\Bigl(k_t'^{2}-k^{2}+k_m^{2}\Bigr)=\tfrac12\bigl(\vec k_\Phi^{2}+k_m^{2}\bigr) ,
+\qquad
+\frac{\partial^{2}\mathcal{Q}}{\partial A_\eta^{2}}=\tfrac12\Bigl(\kappa_\eta^{2}+k^{2}-k_m^{2}\Bigr) ,
+$$</p>
+<p>so the temporal coefficient is $\tfrac12(\vec k_\Phi^{2}+k_m^{2})$ and the three spatial coefficients each carry the frequency. <strong>Measured at $k_m=0.7$ and $\vec k_\Phi=(0.3,0.2,0.1)$: the temporal coefficient is $0.315000000$ at $k_t'=0.5$, $1.2$ and $2.0$, while the first spatial coefficient is $-0.145$, $+0.450$ and $+1.730$.</strong></p>
+<p><strong>A coefficient with no $\omega^{2}$ is a constraint.</strong> The Hessian's temporal entry is a number, so the equation for $A_0$ is algebraic in the frequency and can be solved and substituted; that is exactly the parent's remark that the second-order form carries a primary constraint, and it is why the count is four minus one. <strong>The absent power is the constraint</strong>, and the article's contribution is to say that it is absent rather than small.</p>
+<p><strong>The coupling does not add one, and that is a statement about the field strength.</strong> $F_{0\eta}=\partial_0A_\eta-\partial_\eta A_0$ contains no $\partial_0A_0$, so no amount of minimal coupling can put an $\omega^{2}$ on $A_0$. <strong>The variational coupled companion makes the same statement with the connection present</strong>, and the two agree because the reason is the antisymmetry of the field strength and not the absence of a potential.</p>
+<p><strong>The three spatial coefficients move because they are the propagating ones.</strong> Their frequency dependence is the dispersion relation's, read as a coefficient: on the shell the transverse coefficient vanishes, which is the symbol's rank drop. <strong>The temporal coefficient never vanishes for a massive field</strong>, which is why the primary constraint is not a dynamical equation at any frequency.</p>
+<h2 id="zero-pole-and-degeneracy-are-one-locus">Zero, Pole and Degeneracy Are One Locus</h2>
+<p><strong>The form degenerates exactly where the symbol is singular and exactly where the propagator has its pole.</strong> The transverse coefficient is $-\tfrac12(k^{2}-k_m^{2})A\!\cdot\!A$, so the form is degenerate on the Lorenz plane precisely at $k^{2}=k_m^{2}$. That is the same surface as the form companion's $\det\sigma=0$ and the same surface as the propagator's denominator's zero. <strong>Three registers, one locus</strong>, and the naming is <em>The Fourier Transform and the Variational Principle and the Dirac Equation in Biquaternionic Form</em>'s, whose §<em>Zero and Pole Are One Object</em> establishes it for the Dirac action.</p>
+<p><strong>The three statements are not equivalent and they are one function's three readings.</strong> The action's vanishing on shell selects the support; the symbol's singularity gives the pole; the form's degeneracy says the amplitude is unconstrained there. <strong>Write $N(k)=k^{2}-k_m^{2}$: the variational output is $N=0$, the symbol is $N$ times a projector plus $-k_m^{2}$ along $k$, and the propagator is proportional to $1/N$.</strong> The article states the three and does not claim that any one of them implies another.</p>
+<p><strong>What the Proca case adds to the Dirac precedent is the projector.</strong> In the Dirac case the second variation is one central scalar and the zero is a number's vanishing. Here the second variation is a matrix with two distinct eigenvalues, so the locus where the form degenerates is a locus where it degenerates <em>partially</em>: rank one on the shell, not rank zero. <strong>The partial degeneracy is the three polarisations</strong>, and the article's one addition to the precedent is that sentence.</p>
+<p><strong>The degeneracy is not the pole's whole story.</strong> A propagator's residue at the pole is a projector, and here it is the transverse projector: the residue is supported on the Lorenz plane and vanishes along the wave number. <strong>That is why the longitudinal mode's contribution to the propagator is not a pole at all</strong> but the $-1/k_m^{2}$ term the standard treatment records, and the form's eigenvalues say so in one line.</p>
+<h2 id="the-trace-is-the-mass">The Trace Is the Mass</h2>
+<p><strong>The form's Hessian has a trace and the trace is the mass on the shell.</strong> $\mathrm{tr}\,\sigma=4(k^{2}-k_m^{2})-k^{2}=3k^{2}-4k_m^{2}$, which at $k^{2}=k_m^{2}$ is $-k_m^{2}$ exactly. <strong>So on the mass shell the symbol's trace is the mass and nothing else</strong>, independent of the wave vector, the frequency and the direction.</p>
+<p><strong>The parent's stress-tensor trace is the same statement one register out.</strong> The variational parent proves $T_{\mu\mu}=-k_m^{2}\langle\tilde A_\Phi\rangle_\natural$ exactly, and observes that the field terms' contributions cancel because $\delta_{\mu\mu}=4$. <strong>The symbol's trace carries the same cancellation</strong>: the four diagonal entries of $k^{2}-k_m^{2}$ minus the one from the rank-one part give three of the former and one of the latter, which is the four-minus-one count in the trace.</p>
+<p><strong>The two statements differ in what they trace over.</strong> The parent traces over the spacetime indices of a tensor; the article traces over the amplitude directions of a Hessian. <strong>Both give the mass</strong>, and the agreement is the reason the trace statements are not two coincidences: the mass is the only term in the action that is a multiple of the identity in the amplitude space.</p>
+<p><strong>What the trace does not do is vanish anywhere physical.</strong> $\mathrm{tr}\,\sigma=0$ requires $k^{2}=\tfrac43k_m^{2}$, which is not the mass shell. <strong>So the massive vector field's symbol is never traceless</strong>, and the parent's conformal non-invariance is the same fact: the mass is in the trace and cannot be removed from it. A massless field has $\mathrm{tr}\,\sigma=3k^{2}$, which vanishes exactly on the cone.</p>
+<h2 id="limits">Limits</h2>
+<p><strong>The constant-coefficient licence bounds every statement here.</strong> The form is a form at one wave number only where the coefficients are constant. With a connection there is a form at a mode only for a constant connection, and the coupled companion treats that case.</p>
+<p><strong>The form is the second-order form's.</strong> The parent sets the Palatini form aside and the article follows it. <strong>A first-order form would have eight amplitudes and a pair of equations</strong>, and none of the coefficients above would be the coefficients of that form.</p>
+<p><strong>The overall sign is a convention.</strong> The relative sign of the two terms is the parent's, fixed by positive energy. <strong>The article's coefficients are quoted with that sign</strong>, and a reader who uses the opposite convention will find every coefficient negated and every vanishing unchanged.</p>
+<p><strong>The denial, once more.</strong> No sector is exchanged. The form is a real number per wave number, the amplitude is four real components, and the trace is a sum of four numbers. <strong>None of the three is a statement about $\mathbb{B}_\Phi$ and $\mathbb{B}_\Psi$.</strong></p>
+<h2 id="open-questions">Open Questions</h2>
+<p><strong>Whether the first-order form has a longitudinal coefficient that is also $\omega$-independent is open.</strong> The parent records the Palatini form and does not use it. In the first-order form the field strength is an independent variable, and the longitudinal direction's cost would be a property of the constraint's multiplier rather than of the mass term. Whether the constant survives is not settled here.</p>
+<p><strong>Whether the absent $\omega^{2}$ in the temporal coefficient has a chart reading is open.</strong> The polar companion shows that the chart's four parameters are not four momenta and that four of the Legendre momenta vanish. Whether the vanishing of those momenta and the absence of the frequency in the temporal coefficient are one statement is a question the two articles raise jointly and neither answers.</p>
+<p><strong>Whether the form's partial degeneracy has a reading that is not the imported one is open.</strong> Rank one on the shell is a statement about the Hessian. <strong>That the degenerate directions are the three polarisations is the corpus's identification</strong>, imported as in the form companion, and the article records the import rather than hiding it.</p>
+<h2 id="summary">Summary</h2>
+<p>At a wave number the Proca action is one quadratic form, $\mathcal{Q}=\tfrac12\{[kA]^{2}-(k^{2}-k_m^{2})A\!\cdot\!A\}$, whose gradient is $-\eta\,\sigma A$ and whose stationarity is therefore the Proca symbol's vanishing, verified to $2.1\times10^{-11}$ on a random amplitude.</p>
+<p>Along the four-wave-number the form is $\tfrac12k_m^{2}(A\!\cdot\!A)$ exactly, because the $k^{4}$ of the field term cancels against the $k^{4}$ inside the second term. <strong>Measured on a unit-norm longitudinal amplitude, the coefficient is $0.245000000$ at $k_m=0.7$ and $0.045000000$ at $k_m=0.3$, at every frequency from $k_t'=0.5$ to $2.0$.</strong> The longitudinal coefficient is a function of the mass alone.</p>
+<p>The constraint is that coefficient. Varying along $k^\mu$ gives $k_m^{2}[kA]=0$, which is the parent's $k_m^{2}S=0$; at $k_m=0$ the coefficient vanishes identically and the direction is free. <strong>Gauge freedom is a zero coefficient in the quadratic form</strong>, and the massless theory's $S=0$ is a null direction of the Hessian rather than the orbit of a group.</p>
+<p>The coefficient of $A_0^{2}$ is $\tfrac12(\vec k_\Phi^{2}+k_m^{2})$, with no $\omega^{2}$: $0.315000000$ at all three frequencies, while the three spatial coefficients move from $-0.145$ to $+0.45$ to $+1.73$. <strong>The absent power is the primary constraint</strong>, and the coupling cannot add one because $F_{0\eta}$ contains no $\partial_0A_0$.</p>
+<p>The form degenerates exactly where the symbol is singular and where the propagator has its pole, and the degeneracy is partial: rank one on the shell, which is the three polarisations. On the shell the symbol's trace is $3k^{2}-4k_m^{2}=-k_m^{2}$, the same mass the parent's $T_{\mu\mu}=-k_m^{2}\langle\tilde A_\Phi\rangle_\natural$ carries, and it vanishes only at $k^{2}=\tfrac43k_m^{2}$, which is not physical.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde K_\Phi=ik_t'e_t+\vec k_\Phi$</td>
+<td>The four-wave number; $k_t'=\omega/c$</td>
+</tr>
+<tr>
+<td>$k^{2}=k_t'^{2}-\vec k_\Phi^{2}$</td>
+<td>The interval in wave numbers</td>
+</tr>
+<tr>
+<td>$k_m=mc/\hbar$</td>
+<td>The mass wave number</td>
+</tr>
+<tr>
+<td>$[kA]=k_t'a_t'-\vec k_\Phi\cdot\vec a$</td>
+<td>The Lorenz form of the amplitude; the parent's $S$ up to $-i$</td>
+</tr>
+<tr>
+<td>$\mathcal{Q}(A)=\tfrac12\{[kA]^{2}-(k^{2}-k_m^{2})A\!\cdot\!A\}$</td>
+<td>The momentum-space quadratic form</td>
+</tr>
+<tr>
+<td>$\partial\mathcal{Q}/\partial A=-\eta\,\sigma A$</td>
+<td>The stationarity; the Proca symbol's vanishing</td>
+</tr>
+<tr>
+<td>$\tfrac12k_m^{2}(A\!\cdot\!A)$</td>
+<td>The longitudinal coefficient; independent of the frequency</td>
+</tr>
+<tr>
+<td>$\tfrac12(\vec k_\Phi^{2}+k_m^{2})$</td>
+<td>The coefficient of $A_0^{2}$; no $\omega^{2}$</td>
+</tr>
+<tr>
+<td>$3k^{2}-4k_m^{2}$</td>
+<td>The symbol's trace; $-k_m^{2}$ on the shell</td>
+</tr>
+<tr>
+<td>$N(k)=k^{2}-k_m^{2}$</td>
+<td>One function, read at its zero and at its pole</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Variational Principle and the Proca Equation in Biquaternionic Form</em>, for the action, the variation, the Lorenz condition as a consequence and the Noether currents.</li>
+<li><em>The Fourier Transform and the Proca Equation in Biquaternionic Form</em>, for the symbol's determinant, rank and kernel.</li>
+<li><em>The Fourier Transform and the Proca Equation in Biquaternionic Polar Variables</em>, for the chart reading of the same field.</li>
+<li><em>The Fourier Transform and the Variational Principle and the Dirac Equation in Biquaternionic Form</em>, for the zero–pole relation and the momentum-space action of a first-order theory.</li>
+<li><em>The Fourier Transform and the Variational Principle and the Coupled Proca Equation in Biquaternionic Form</em>, for the same form with a connection.</li>
+<li><em>The Proca Equation: Massive Spin 1 in Biquaternionic Form</em>, for the plane waves and the polarisation count.</li>
+<li><em>Derivatives, Fields and Transforms</em>, for the symbol rule.</li>
+<li><em>Norm and Pairing Conventions</em>, for the material form's indefiniteness and the Hermitian pairing.</li>
+<li>L. D. Landau and E. M. Lifshitz, <em>The Classical Theory of Fields</em> (Pergamon, 4th ed., 1975), §31, for the massive vector field's Lagrangian and the primary constraint.</li>
+<li>P. A. M. Dirac, <em>Lectures on Quantum Mechanics</em> (Yeshiva University, 1964), for the counting of constraints by the vanishing of a Hessian entry.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

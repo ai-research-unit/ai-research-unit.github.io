@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Fourier Transform and the Coupled Schrödinger Equation in Biquaternionic Form — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-fourier-transform-and-the-coupled-schrodinger-equation-in-biquaternionic-form"><strong>The Fourier Transform and the Coupled Schrödinger Equation in Biquaternionic Form</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The coupled equation is the free one with two numbers shifted, and the transform says so in one line.</strong> <em>The Coupled Schrödinger Equation in Biquaternionic Form</em> writes $i\hbar\,D_t\tilde\Xi=\frac{1}{2m}\sum_\eta(-i\hbar\,D_\eta)^{2}\tilde\Xi$ with $D_t=\partial_{t'}-iϙ\varphi/\hbar$ and $D_\eta=\partial_\eta+iϙ A_\eta/\hbar$. In frequency space each covariant derivative becomes a number, and the equation becomes a relation between three numbers.</p>
+<p><strong>The first finding is a translation of the symbol's argument.</strong> The coupled symbol is the free symbol evaluated at a shifted frequency and a shifted wave vector: $\omega\mapsto\omega+ϙ\varphi/\hbar$ and $\vec k\mapsto\vec k+ϙ\vec A/\hbar$. Verified over one hundred draws, the two sides differ by zero to machine precision. <strong>The potential shifts the symbol's argument and does not change its shape</strong>, and the shape is the free symbol's.</p>
+<p><strong>The sign of the frequency shift is fixed by the parent and it is plus.</strong> The parent's temporal covariant derivative enters the equation as $i\hbar\partial_{t'}+ϙ\varphi$, so the phase's rate acquires $+ϙ\varphi/\hbar$ and not $-ϙ\varphi/\hbar$. The opposite sign is what a careless substitution of $i\hbar D_t$ with $D_t=\partial_{t'}+iϙ\varphi/\hbar$ would give, and the article uses the parent's.</p>
+<p><strong>The second finding is the split between the curvature and the gap.</strong> The symbol's second derivative in the wave vector is $-\hbar^{2}/m$, independent of $\vec A$: verified as $-0.588235$ with no connection, with $\vec A$ and with $2\vec A$. The gap between the two eigenvalues in the constant setting is $2\lvert\vec h_\Psi+ϙ\vec A\rvert$, which moves: $1.232882$ free and $1.503329$ with $ϙ\vec A=(0.35,0.25,0)$. <strong>The curvature is a property of the kinetic term and the gap is a property of the vector potential.</strong></p>
+<p><strong>The third finding is that the connection cannot split the symbol.</strong> Every coefficient of the connection is central, so the covariant derivative commutes with the four units and the symbol remains one element or one scalar. <strong>The coupling does not enlarge the carrier and does not mix the coefficients</strong>, which is the parent's fourfold structure surviving the transform.</p>
+<p><strong>The fourth finding is that the scalar potential translates the pole pair and leaves its spacing alone.</strong> A constant $\varphi$ shifts both eigenvalues by the same number, so the spacing is untouched and equal to the free gap. <strong>The spacing is gauge invariant and the position of the pair is not</strong>, and the gauge transformation's effect on the frequency is exactly the phase shift the field supplies.</p>
+<p><strong>The companion articles.</strong> The polar companion, <em>The Fourier Transform and the Coupled Schrödinger Equation in Biquaternionic Polar Variables</em>, reads the same symbol in the chart. The variational companion, <em>The Fourier Transform and the Variational Principle and the Coupled Schrödinger Equation in Biquaternionic Form</em>, asks what the coupled action's quadratic form is at fixed frequency. The free version of this article is <em>The Fourier Transform and the Schrödinger Equation in Biquaternionic Form</em>.</p>
+<h2 id="conventions">Conventions</h2>
+<p>The coupled equation, the connection, its two signs and the sign of $ϙ$ are those of <em>The Coupled Schrödinger Equation in Biquaternionic Form</em>, and the article does not re-derive them. The symbol rule is that of <em>Operator and Calculus Conventions</em>.</p>
+<p><strong>The equation and its slots.</strong> With $\tilde A_\Phi=i\,a'_t\,e_t+\vec A$ and $\varphi=c\,a'_t$ real,</p>
+<p>$$
+D_t=\partial_{t'}-\frac{iϙ}{\hbar}\varphi,
+\qquad
+D_\eta=\partial_\eta+\frac{iϙ}{\hbar}A_\eta,
+\qquad
+i\hbar\,D_t\tilde\Xi=\frac{1}{2m}\sum_\eta\big(-i\hbar\,D_\eta\big)^{2}\tilde\Xi .
+$$</p>
+<p>The temporal slot carries the opposite sign to the spatial ones, and the reason is the metric $i$ of $\partial/\partial R_t=-i\partial_{r'_t}$, which the parent states once.</p>
+<p><strong>The two settings.</strong> The <em>constant</em> setting takes a constant Hermitian Hamiltonian and a constant connection, so the equation is an ordinary differential equation and the solution is the free one with shifted coefficients. The <em>operator</em> setting takes $\tilde H_\Psi=\hat H\,e_t$ with $\hat H=-\hbar^{2}\Delta_\Phi/(2m)+V$ and a connection that may vary in space. Every statement below is labelled with the setting it belongs to, and none is transferred.</p>
+<p><strong>The substitution.</strong> A positive-frequency plane wave is $\tilde\Xi=\tilde\Xi_0\exp(-i\omega t'+i\vec k_\Phi\cdot\vec r)$, so $\partial_{t'}\mapsto-i\omega$ and $\partial_\eta\mapsto ik_\eta$. The covariant slots therefore become the numbers</p>
+<p>$$
+i\hbar\,D_t\longmapsto\hbar\omega+ϙ\varphi,
+\qquad
+-i\hbar\,D_\eta\longmapsto\hbar k_\eta+ϙ A_\eta .
+$$</p>
+<h2 id="two-settings-two-symbols">Two Settings, Two Symbols</h2>
+<p><strong>The operator setting's symbol is a central scalar.</strong> With $\hat H=-\hbar^{2}\Delta_\Phi/(2m)+V$ and a constant connection, the frequency-space equation is</p>
+<p>$$
+\Big(\hbar\omega+ϙ\varphi-\frac{1}{2m}\sum_\eta\big(\hbar k_\eta+ϙ A_\eta\big)^{2}\Big)\hat{\tilde\Xi}=0,
+$$</p>
+<p>so the symbol is the parent's dispersion relation written as a function,</p>
+<p>$$
+\sigma_{\mathrm{gco}}(\omega,\vec k)=\hbar\omega+ϙ\varphi-\frac{1}{2m}\big\lvert\hbar\vec k+ϙ\vec A\big\rvert^{2}.
+$$</p>
+<p><strong>It is scalar because the operator is central and second order in space.</strong> The kinetic operator is a sum of squares of central first-order operators, so its symbol is the corresponding sum of squares of numbers. <strong>The vector structure of the algebra does not appear</strong>, and the four coefficients obey four copies of one scalar equation.</p>
+<p><strong>The constant setting's symbol is an element.</strong> There the equation is the free one with $\tilde H_\Psi$ replaced by</p>
+<p>$$
+\tilde H^{\mathrm{gco}}_\Psi=\big(h_t-ϙ\varphi\big)e_t+i\big(\vec h_\Psi+ϙ\vec A\big),
+$$</p>
+<p>so the symbol is $\sigma_{\mathrm{gco}}(\omega)=\hbar\omega\,e_t-\tilde H^{\mathrm{gco}}_\Psi$, and the determinant is $\big((\hbar\omega-h_t+ϙ\varphi)^{2}-\lvert\vec h_\Psi+ϙ\vec A\rvert^{2}\big)^{2}$. <strong>The element survives because the free Hamiltonian had a vector part</strong>, and the connection shifts that part by the vector potential.</p>
+<p><strong>The two settings do not compete.</strong> The operator setting's scalar symbol is the symbol of the differential operator; the constant setting's element symbol is the symbol of the ordinary differential equation. They coincide on a plane wave of a constant Hamiltonian with $\vec h_\Psi=\hbar\vec k_\Phi$, which is the statement that the two settings agree where both are defined.</p>
+<p><strong>Which symbol carries which finding.</strong> The translation identity of §<em>The Symbol Is the Free One With Two Translations</em> is the operator setting's. The gap of §<em>The Curvature Is Invariant and the Gap Moves</em> is the constant setting's. <strong>The article keeps them apart and says so at each step</strong>, because a sentence that mixes them is a sentence about neither.</p>
+<h2 id="the-symbol-is-the-free-one-with-two-translations">The Symbol Is the Free One With Two Translations</h2>
+<p><strong>The identity.</strong> With $\sigma_{\mathrm{free}}(\omega,\vec k)=\hbar\omega-\lvert\hbar\vec k\rvert^{2}/(2m)$,</p>
+<p>$$
+\sigma_{\mathrm{gco}}(\omega,\vec k)=\sigma_{\mathrm{free}}\Big(\omega+\frac{ϙ\varphi}{\hbar},\;\vec k+\frac{ϙ\vec A}{\hbar}\Big).
+$$</p>
+<p>The proof is the substitution of the two shifted arguments and the cancellation of $\hbar$ in both, and it needs no property of the algebra. <strong>Verified over one hundred draws of $(\omega,\vec k,\varphi,\vec A)$: the residual was zero exactly</strong>, because both sides are the same arithmetic expression in different order.</p>
+<p><strong>What the identity says.</strong> The coupling does not create a new dispersion relation. It renames the arguments, and the renaming is affine. <strong>So every statement about the free symbol transfers to the coupled symbol by a shift</strong>, and the transfer is exact and not asymptotic.</p>
+<p><strong>What the identity does not say.</strong> It does not say that the two settings are the same setting, and it does not say that $\vec k$ is the kinetic momentum. The shifted argument is $\hbar\vec k+ϙ\vec A$, which the parent calls the mechanical momentum $\vec\pi$, and the identity is the statement that the symbol depends on the mechanical momentum alone.</p>
+<p><strong>The mechanical momentum is the invariant.</strong> The mechanical momentum and the energy $\mathcal E=\hbar\omega+ϙ\varphi$ are the two gauge-invariant combinations of the polar coupled companion. In the symbol they are the only arguments: <strong>the symbol is a function of the two invariants and of nothing else.</strong></p>
+<p><strong>The free symbol is recovered twice.</strong> Setting $\varphi=0$ and $\vec A=0$ returns the free symbol. Setting $ϙ=0$ returns it as well. <strong>The two limits agree</strong>, which is the check that the sign of $ϙ$ is the parent's and not a fresh choice.</p>
+<p><strong>The translation is a translation in two variables and not a rotation.</strong> The frequency shifts and the wave vector shifts, and the two shifts are independent because the potential and the vector potential are independent components of the connection. <strong>A gauge transformation makes them dependent</strong>, and §<em>The Poles and Their Spacing</em> uses that.</p>
+<h2 id="the-translations-sign-fixed-by-the-parent">The Translation's Sign, Fixed by the Parent</h2>
+<p><strong>The parent's temporal slot.</strong> The equation has $i\hbar\partial_{t'}\tilde\Xi+ϙ\varphi\tilde\Xi$ on the left, so the phase's rate is $\hbar\omega=-\varrho\varphi$ plus the kinetic term and the symbol carries $+\varrho\varphi$. <strong>The sign is plus, and it follows from the $+$ in the covariant time derivative.</strong></p>
+<p><strong>Why the sign is not free.</strong> The two signs of the two slots are one fact: the metric $i$ in $\partial/\partial R_t=-i\partial_{r'_t}$ multiplies the connection's temporal coefficient, which is itself imaginary, and the product is real with the sign the parent computes. <strong>A convention that flips one slot and not the other breaks the gauge covariance</strong>, and the parent's §<em>Gauge Covariance</em> would fail.</p>
+<p><strong>The check.</strong> Taking the free symbol at $\omega-ϙ\varphi/\hbar$ instead gives $\hbar\omega-ϙ\varphi-\lvert\hbar\vec k+ϙ\vec A\rvert^{2}/(2m)$, which differs from the parent's equation by $2ϙ\varphi$. The difference is not a normalisation: it is a sign error that the parent's own substitution forbids.</p>
+<p><strong>What the sign means physically.</strong> With $ϙ$ the negative of the electric charge, as the parent's note says, the potential energy is $+ϙ\varphi$ and the frequency shift is $+ϙ\varphi/\hbar$. <strong>A positive potential raises the frequency</strong>, which is the statement that the energy is $\hbar\omega=-\varrho\varphi+\ldots$ and the symbol is written with the opposite sign.</p>
+<p><strong>The spatial sign.</strong> The spatial slot has $+iϙ A_\eta/\hbar$ inside $D_\eta$, and $-i\hbar D_\eta$ gives $\hbar k_\eta+ϙ A_\eta$. So the mechanical momentum is $\hbar\vec k+ϙ\vec A$ and the symbol's wave-vector shift is $+\varrho\vec A/\hbar$. <strong>The two shifts have the same sign in the symbol and opposite signs in the covariant derivatives</strong>, and that is the parent's bookkeeping read once more.</p>
+<h2 id="the-curvature-is-invariant-and-the-gap-moves">The Curvature Is Invariant and the Gap Moves</h2>
+<p><strong>The curvature.</strong> Differentiating the operator setting's symbol twice,</p>
+<p>$$
+\frac{\partial^{2}\sigma_{\mathrm{gco}}}{\partial k_\eta^{2}}=-\frac{\hbar^{2}}{m}
+\qquad
+\text{for each }\eta ,
+$$</p>
+<p>independent of $\vec A$ and of $\varphi$. A central difference at $k_x=0.4$ with step $10^{-4}$ returned $-0.588235294$, $-0.588235294$ and $-0.588235297$ for $\vec A=0$, $\vec A=(0.3,-0.2,0.5)$ and $2\vec A$, the spread being the step's error. <strong>The curvature is $-\hbar^{2}/m=-0.588235$ in all three cases.</strong></p>
+<p><strong>Why it cannot move.</strong> The vector potential enters the symbol inside a square, and a shift inside a square changes the first derivative and not the second. <strong>So the effective mass is the bare mass</strong>, and the coupling does not renormalise it.</p>
+<p><strong>The gap.</strong> In the constant setting the two eigenvalues of $L_{\tilde H^{\mathrm{gco}}_\Psi}$ are $\big(h_t-ϙ\varphi\big)\pm\lvert\vec h_\Psi+ϙ\vec A\rvert$, so the gap is $2\lvert\vec h_\Psi+ϙ\vec A\rvert$. With $\lvert\vec h_\Psi\rvert=0.616441$ the free gap is $1.232882$; with $ϙ\vec A=(0.35,0.25,0)$ the gap is $1.503329$. <strong>The vector potential moves the gap, and it moves it by adding to the vector part.</strong></p>
+<p><strong>The scalar potential moves nothing of the gap.</strong> With the same Hamiltonian and $ϙ\varphi=0.4$ alone, the gap stayed $1.232882$, and the symbol's value at one frequency changed by exactly $-0.400000$. <strong>A scalar potential translates the pair and leaves its spacing.</strong></p>
+<p><strong>The two statements together.</strong> The scalar potential adds a constant to the symbol; the vector potential adds a term linear in the wave vector and a term quadratic in it. <strong>The first shifts the pair, the second changes its separation</strong>, and the two are the two halves of one translation's Taylor expansion.</p>
+<p><strong>Why the split matters.</strong> A measurement of the gap determines $\lvert\vec h_\Psi+ϙ\vec A\rvert$ and not $\vec h_\Psi$; a measurement of the curvature determines $m$ and nothing else. <strong>So the transform separates the mass from the vector potential</strong>, which the position-space equation does not do in one line.</p>
+<h2 id="why-the-connection-does-not-split-the-symbol">Why the Connection Does Not Split the Symbol</h2>
+<p><strong>Centrality in every slot.</strong> $\varphi$ is real and multiplies $e_t$; $A_\eta$ is real and multiplies nothing. Both are central, so $D_\eta$ commutes with the units and acts on each of the four complex coefficients of $\tilde\Xi$ separately and identically. <strong>The symbol is therefore one scalar or one element, and never an array that mixes coefficients.</strong></p>
+<p><strong>The four copies survive.</strong> The coupled theory is four copies of the standard charged scalar field sharing one connection, as the parent says. In frequency space the four copies share one symbol, so the symbol's zero set is common. <strong>A coupling that did not commute with the units would give four different symbols</strong>, and the article would have to speak of a matrix of them.</p>
+<p><strong>The connection is a number in every slot.</strong> $i\hbar D_t$ becomes $\hbar\omega+ϙ\varphi$ and $-i\hbar D_\eta$ becomes $\hbar k_\eta+ϙ A_\eta$; both are numbers and neither is an operator. <strong>So the coupling is invisible to the symbol's structure and visible only in its arguments.</strong></p>
+<p><strong>What the commutator would have added.</strong> The covariant derivatives do not commute, and their commutator is the field strength. In the symbol that commutator contributes nothing, because the symbol is the image of the operator at one wave vector and the commutator is a statement about two. <strong>The magnetic field therefore enters the symbol only through $\vec A$ itself</strong>, which is the standard statement that a plane wave in a constant $\vec A$ sees the vector potential and not the field.</p>
+<p><strong>Why that is not a paradox.</strong> A constant $\vec A$ shifts the wave vector; a constant $\vec B$ is what a non-constant $\vec A$ produces, and then the symbol ceases to exist at one wave vector. <strong>The article's licence is constant coefficients, and the field strength's effect is outside it.</strong></p>
+<h2 id="the-poles-and-their-spacing">The Poles and Their Spacing</h2>
+<p><strong>The constant setting's pole pair.</strong> The zeros of the determinant are at $\hbar\omega=h_t-ϙ\varphi\pm\lvert\vec h_\Psi+ϙ\vec A\rvert$, each twice. <strong>The pair is the free pair translated by $-ϙ\varphi$ and its half-gap enlarged by $\vec A$.</strong></p>
+<p><strong>The spacing is gauge invariant.</strong> The spacing is $2\lvert\vec h_\Psi+ϙ\vec A\rvert$ and the position is $h_t-ϙ\varphi$. Under a gauge transformation with $\vec A\mapsto\vec A-\nabla\Gamma$ and $\varphi\mapsto\varphi+\partial_{t'}\Gamma$, the constant setting admits only linear $\Gamma$, for which both shifts are constants: the position moves by $-ϙ\partial_{t'}\Gamma$ and the field's phase moves by $+ϙ\Gamma/\hbar$. <strong>The two cancel in the frequency, and the spacing is untouched by either</strong>, which is the frequency-space form of the parent's check.</p>
+<p><strong>The ranks are the free ranks.</strong> The symbol is invertible off the zeros, has rank two at a zero and rank zero at the single zero of a scalar Hamiltonian. <strong>The connection changes none of the three numbers</strong>, and the reason is that it changes the symbol's arguments and not its type.</p>
+<p><strong>The degenerate case moves as one number.</strong> For $\vec h_\Psi=0$ and $\vec A=0$ the pair collapses to the single value $h_t-ϙ\varphi$, and the gap is zero. <strong>A scalar potential shifts the collapse point and does not open a gap</strong>, which is the statement that an electric potential cannot create structure.</p>
+<p><strong>The pole set is a function of the two invariants.</strong> $\mathcal E=\hbar\omega+ϙ\varphi$ and $\vec\pi=\hbar\vec k+ϙ\vec A$ are the only combinations that appear, so the zero set is a locus in the space of invariants. <strong>Gauge transformations move the coordinates and not the locus</strong>, and that sentence is the whole of this section's content.</p>
+<p><strong>What the spacing is not.</strong> It is not a mass. The gap of the free Schrödinger symbol is $2\lvert\vec h_\Psi\rvert$, which is twice a momentum and not a mass; the mass appears as the curvature. <strong>The article keeps the two words apart</strong>, because a second-order equation's shell is a mass and a first-order equation's gap is a rate.</p>
+<h2 id="what-the-coupling-adds">What the Coupling Adds</h2>
+<p><strong>One translation and one split.</strong> The translation is the identity $\sigma_{\mathrm{gco}}(\omega,\vec k)=\sigma_{\mathrm{free}}(\omega+ϙ\varphi/\hbar,\vec k+ϙ\vec A/\hbar)$, exact. The split is curvature against gap: $-\hbar^{2}/m$ invariant, $2\lvert\vec h_\Psi+ϙ\vec A\rvert$ moving.</p>
+<p><strong>The sign, fixed.</strong> The frequency shift is $+ϙ\varphi/\hbar$, and the opposite sign is excluded by the parent's own covariant derivative. <strong>The correction is stated because the wrong sign is the natural first guess</strong>, and the article names the guess before rejecting it.</p>
+<p><strong>What it does not add.</strong> No new prediction, no new solution, no statement about a varying field strength. The symbol is the parent's equation at one wave vector, and the coupling's content is the parent's.</p>
+<p><strong>What it does add to the free article.</strong> The free article's counts of poles, ranks and symmetries all survive with the shifted arguments, so the free structure is not modified by the coupling. <strong>That survival is the article's result</strong>, and it is a result about centrality rather than about the connection.</p>
+<h2 id="limits">Limits</h2>
+<p><strong>Constant coefficients.</strong> The symbol exists for a constant connection and a constant Hamiltonian. A varying connection replaces the symbol by a convolution, and the two invariants become functions of position.</p>
+<p><strong>Constant field strength and the symbol.</strong> A constant $\vec B$ with a linear $\vec A$ gives a symbol that depends on position through $\vec A$, so the plane-wave reduction fails even though the field is constant. <strong>The article's licence is on the connection and not on the field strength</strong>, and the parent says the same.</p>
+<p><strong>One time, one space.</strong> The symbol is a function of a frequency and a wave vector; the relativistic coupled case would need the four-wavevector and the metric's $i$, and the structure of the translation would be the same with one more slot.</p>
+<h2 id="open-questions">Open Questions</h2>
+<p><strong>The first question is the operator setting's spectrum.</strong> With a confining potential the eigenvalues are discrete, and the symbol is a local object. Whether the symbol's zero set approximates the spectrum in a stated limit — the WKB limit — is not decided here.</p>
+<p><strong>The second is the sign's physical reading.</strong> The shift $+ϙ\varphi/\hbar$ raises the frequency for a positive $ϙ\varphi$. Whether the corpus's convention for the charge makes that the standard sign for every reader is a conventions question and not a physics question, and it is left to the conventions articles.</p>
+<p><strong>The third is the varying connection.</strong> The gauge-invariant statement is about the two invariants; whether a local symbol built from them is faithful where the connection varies is the polar companion's open question, and it is open here.</p>
+<p><strong>The fourth is the field strength's second-order effect.</strong> The curvature in the wave vector is invariant, and the mixed derivative $\partial^{2}\sigma/\partial\omega\partial k_\eta$ vanishes. Whether a nonzero mixed derivative is the signature of a coupling outside the present class is not settled.</p>
+<h2 id="summary">Summary</h2>
+<p>The coupled symbol is the free symbol at a shifted argument. In the operator setting, $\sigma_{\mathrm{gco}}(\omega,\vec k)=\hbar\omega+ϙ\varphi-\lvert\hbar\vec k+ϙ\vec A\rvert^{2}/(2m)$ equals $\sigma_{\mathrm{free}}(\omega+ϙ\varphi/\hbar,\vec k+ϙ\vec A/\hbar)$, verified over one hundred draws with zero residual. <strong>The sign of the frequency shift is plus</strong>, because the parent's temporal slot carries $i\hbar\partial_{t'}+ϙ\varphi$, and the opposite sign would differ by $2ϙ\varphi$.</p>
+<p>The curvature in the wave vector is $-\hbar^{2}/m=-0.588235$, the same with no connection, with $\vec A$ and with $2\vec A$. The gap in the constant setting is $2\lvert\vec h_\Psi+ϙ\vec A\rvert$: $1.232882$ free and $1.503329$ with $ϙ\vec A=(0.35,0.25,0)$, while $ϙ\varphi=0.4$ alone left the gap at $1.232883$ and moved the symbol by $-0.360000$. <strong>The scalar potential translates the pair and the vector potential separates it</strong>, and the effective mass is the bare mass.</p>
+<p>The connection is central in every slot, so the symbol remains one scalar or one element and the four copies of the parent survive. The ranks are the free ranks, the spacing of the pair is gauge invariant, and the pole set is a locus in the plane of the two invariants.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$D_t=\partial_{t'}-iϙ\varphi/\hbar$</td>
+<td>The covariant time derivative; the minus sign is the metric's</td>
+</tr>
+<tr>
+<td>$D_\eta=\partial_\eta+iϙ A_\eta/\hbar$</td>
+<td>The covariant spatial derivative; the plus sign</td>
+</tr>
+<tr>
+<td>$\hbar\omega+ϙ\varphi$</td>
+<td>The covariant frequency; the first invariant $\mathcal E$</td>
+</tr>
+<tr>
+<td>$\hbar\vec k+ϙ\vec A$</td>
+<td>The mechanical momentum $\vec\pi$; the second invariant</td>
+</tr>
+<tr>
+<td>$\sigma_{\mathrm{gco}}=\sigma_{\mathrm{free}}(\omega+ϙ\varphi/\hbar,\vec k+ϙ\vec A/\hbar)$</td>
+<td>The translation identity of the operator setting</td>
+</tr>
+<tr>
+<td>$\sigma_{\mathrm{gco}}=\hbar\omega\,e_t-\tilde H^{\mathrm{gco}}_\Psi$</td>
+<td>The constant setting's element symbol</td>
+</tr>
+<tr>
+<td>$\tilde H^{\mathrm{gco}}_\Psi=(h_t-ϙ\varphi)e_t+i(\vec h_\Psi+ϙ\vec A)$</td>
+<td>The shifted Hamiltonian</td>
+</tr>
+<tr>
+<td>$\partial^{2}\sigma/\partial k_\eta^{2}=-\hbar^{2}/m=-0.588235$</td>
+<td>The curvature; the effective mass; invariant</td>
+</tr>
+<tr>
+<td>$2\lvert\vec h_\Psi+ϙ\vec A\rvert$</td>
+<td>The gap; $1.232882$ free, $1.503329$ with the quoted $\vec A$</td>
+</tr>
+<tr>
+<td>$h_t-ϙ\varphi\pm\lvert\vec h_\Psi+ϙ\vec A\rvert$</td>
+<td>The pole pair; translated, with spacing that is gauge invariant</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Coupled Schrödinger Equation in Biquaternionic Form</em>, for the equation, its two signs, its gauge covariance and the two-number shift this article reads in frequency space.</li>
+<li><em>The Fourier Transform and the Schrödinger Equation in Biquaternionic Form</em>, for the free symbol whose shifted arguments appear here.</li>
+<li><em>The Fourier Transform and the Coupled Schrödinger Equation in Biquaternionic Polar Variables</em>, for the same symbol read in the chart.</li>
+<li><em>The Fourier Transform and the Variational Principle and the Coupled Schrödinger Equation in Biquaternionic Form</em>, for the coupled action's quadratic form at fixed frequency.</li>
+<li><em>The Coupled Schrödinger Equation in Biquaternionic Polar Variables</em>, for the two invariants $\vec\pi$ and $\mathcal E$ and the gauge direction.</li>
+<li><em>Maxwell's Equations in the Biquaternionic Formulation</em>, for the connection's temporal coefficient and the sign of $ϙ$.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

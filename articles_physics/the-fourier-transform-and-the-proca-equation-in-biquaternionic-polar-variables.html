@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Fourier Transform and the Proca Equation in Biquaternionic Polar Variables — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-fourier-transform-and-the-proca-equation-in-biquaternionic-polar-variables"><strong>The Fourier Transform and the Proca Equation in Biquaternionic Polar Variables</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The Proca word has four parameters and two brackets, and one of its four bracket slots is empty.</strong> <em>The Proca Equation in Biquaternionic Polar Variables</em> decomposes the potential as $\tilde A_\Phi=\varepsilon i\,r\,\tilde U$ on the timelike branch and as $\tilde A_\Phi=r\,\tilde U\,\hat u$ on the spacelike one, computes the logarithmic derivative, and tabulates four bracket slots: the scale, which is real central; the phase, which <strong>vanishes identically on both branches</strong>; the frame's rapidity, which is a Hermitian vector; and the frame's axis, which is a real vector. It then says the sentence that organises everything: in the material sector there is no central bracket, so there is no phase gradient, no guidance equation, and no Madelung pair.</p>
+<p><strong>In frequency space that empty slot has a name, and the name is parity.</strong> The Proca symbol is even in the four-wave-number; the Dirac symbol is odd; the Klein–Gordon scalar is even; the Schrödinger symbol is neither. <strong>An odd symbol is what a phase bracket can live in and an even one has no room for it</strong>, and that is the article's first finding. The parent's bracket table and the symbol's parity table are one table read in two registers.</p>
+<p><strong>The second finding is that the branch is not a spectral property at all.</strong> The sign of $\langle\tilde A_\Phi\rangle_\natural$ is an indefinite quadratic form on the amplitudes, not a linear functional of the mode coefficients. Two lightlike modes can sum to a timelike one; the invariant of a sum is not the sum of the invariants. <strong>So no function of the spectrum determines which branch a field is on</strong>, and the chart's piecewiseness cannot be read off the transform's support.</p>
+<p><strong>What the transform does with the piecewiseness is relocate it.</strong> The parent shows that the word is piecewise in spacetime, because the sign of the invariant varies from event to event. Mode by mode it is not: a Fourier mode is a constant frame, so every mode sits strictly inside one branch. <strong>The transform does not remove the branch structure; it moves it from spacetime to the space of amplitudes</strong>, where its boundary is the cone $\langle A\rangle_\natural=0$.</p>
+<p><strong>That cone is the corpus's own object.</strong> <em>Degenerate Solutions of the Biquaternionic Proca Equation</em> proves that $\langle\tilde A_\Phi\rangle_\natural=0$ is <strong>one real equation on four real parameters</strong> on the material sector, and that its solution set is a cone with a sector label $\Sigma_{01}$. The same equation on the amplitudes gives the same cone. <strong>The chart's failure set on the field and the branch's boundary on the amplitudes are one variety</strong>, and §<em>The Chart's Failure Set Is the Amplitude Cone</em> states the identity.</p>
+<p><strong>The denial is stated plainly.</strong> The transform acts on $\mathbb{B}$-valued functions and returns $\mathbb{B}$-valued functions. No sector is exchanged, no field changes its type, and the word is not reconstructed from its transform. <strong>There is no new solution and no new equation</strong>; the word, the brackets and the two branches are the parent's.</p>
+<h2 id="conventions">Conventions</h2>
+<p>The algebra, the products, the two forms, the units and the sectors are those of <em>Algebra and Element Conventions</em>, <em>Product and Form Conventions</em>, <em>Norm and Pairing Conventions</em>, <em>Physics Units and Common Elements Conventions</em> and <em>Mirror Biquaternions and the Phy–Psy Switch</em>. The gradient and the d'Alembertian are those of <em>Operator and Calculus Conventions</em>, and the transform is the one of <em>Derivatives, Fields and Transforms</em>, with the symbol rule</p>
+<p>$$
+\tilde\nabla_\Phi\longmapsto i\tilde K_\Phi ,
+\qquad
+\tilde K_\Phi=ik_t'e_t+\vec k_\Phi ,
+\qquad
+k_t'=\frac{\omega}{c},
+\qquad
+k^{2}=k_t'^{2}-\vec k_\Phi^{2}.
+$$</p>
+<p>The word and its parameters are the parent's:</p>
+<p>$$
+\text{timelike:}\quad \tilde A_\Phi=\varepsilon\,i\,r\,\tilde U ,
+\qquad
+\text{spacelike:}\quad \tilde A_\Phi=r\,\tilde U\,\hat u ,
+\qquad
+\tilde U=\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\hat u_{\mathrm b}\Bigr) ,
+$$</p>
+<p>with $r\ge0$ the scale, $\varepsilon=\pm1$ the branch label, $\theta_{\mathrm{rpd}}\ge0$ the rapidity, $\hat u_{\mathrm b}$ the boost axis and $\hat u$ a real unit vector. The parent's bracket table is quoted and not re-derived:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>bracket</th>
+<th>type</th>
+<th>timelike branch</th>
+<th>spacelike branch</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>scale</td>
+<td>real central scalar</td>
+<td>$\partial_\mu\ln r$</td>
+<td>$\partial_\mu\ln r$</td>
+</tr>
+<tr>
+<td>phase</td>
+<td>central imaginary</td>
+<td>$0$ identically</td>
+<td>$0$ identically</td>
+</tr>
+<tr>
+<td>frame, rapidity part</td>
+<td>Hermitian vector</td>
+<td>$\tfrac12\partial_\mu\theta_{\mathrm{rpd}}\,i\hat u_{\mathrm b}$</td>
+<td>$-\tfrac12\partial_\mu\theta_{\mathrm{rpd}}\,i\hat u$</td>
+</tr>
+<tr>
+<td>frame, axis part</td>
+<td>real vector</td>
+<td>$\sinh^{2}\frac{\theta_{\mathrm{rpd}}}{2}\,\hat u_{\mathrm b}\partial_\mu\hat u_{\mathrm b}$</td>
+<td>$-\hat u\,\partial_\mu\hat u$ and the conjugated rapidity term</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The invariant is the only one the field carries.</strong> $\langle\tilde A_\Phi\rangle_\natural=-(a_t')^{2}+\vec A^{2}$, real and indefinite, and the two branches are its two signs. On a mode the same number is $\langle A\rangle_\natural=-\lvert a_t'\rvert^{2}+\lvert\vec a\rvert^{2}$, an indefinite quadratic form on the amplitude. <strong>Everything the article says about the branch is a statement about that form.</strong></p>
+<p><strong>The symbol, quoted from the form companion.</strong> The Proca operator's symbol in the four-component reading is $\sigma^\mu{}_\nu=(k^{2}-k_m^{2})\delta^\mu{}_\nu-k^\mu k_\nu$, acting on the amplitude by $(\sigma A)_\mu=(k^{2}-k_m^{2})A_\mu-k_\mu[kA]$ with $[kA]=k_t'a_t'-\vec k_\Phi\cdot\vec a$. Its eigenvalues are $\{k^{2}-k_m^{2},k^{2}-k_m^{2},k^{2}-k_m^{2},-k_m^{2}\}$. <strong>The chart reading is a decomposition of this matrix into the four types, and the decomposition is the section that follows.</strong></p>
+<p><strong>The denial of the Legendre reading, once.</strong> The parent's chart is a chart of the field, and the transform's variable is not one of its parameters. The corpus has a second conjugacy — the polar variational parent's canonical momenta, four of which vanish — and it is a Legendre conjugacy, not a Fourier one. <strong>§<em>Limits</em> records the distinction and the article uses it nowhere else.</strong></p>
+<h2 id="the-brackets-are-the-types-of-the-symbol">The Brackets Are the Types of the Symbol</h2>
+<p><strong>The chart's bracket slots and the symbol's parts are the same slots, and the symbol fills two of the four.</strong> A general element of $\mathbb{B}$ splits into a real central part, an imaginary central part, a Hermitian vector part and an anti-Hermitian vector part, and the polar word's four brackets are the gradients of the four parameters that generate those parts. The Proca symbol splits the same way, and only two of the four parts are non-zero:</p>
+<p>$$
+\sigma=\underbrace{\bigl(k^{2}-k_m^{2}\bigr)\delta^\mu{}_\nu}_{\text{scalar part: the scale slot}}
+\;-\;\underbrace{k^\mu k_\nu}_{\text{rank-one part: the frame slot}} ,
+\qquad
+\text{imaginary central part}=0 ,
+\qquad
+\text{anti-Hermitian vector part}=0 .
+$$</p>
+<p><strong>The first part is the scale and the second is the frame.</strong> The scalar part multiplies every amplitude direction by the same number, which is what the parent's scale bracket does when it is differentiated; the rank-one part carries every amplitude onto a multiple of the wave number, which is what the frame bracket does when it transports the boost axis. The correspondence is a correspondence of decompositions and not an analogy.</p>
+<p><strong>On the material sector the imaginary central slot is empty, and that is the parent's whole point.</strong> The material potential is $\tilde A_\Phi=i\,a_t'e_t+\vec A$ with real coefficients, and the polar word's parameter count is four: the scale, the rapidity, the boost axis and the spacelike direction. <strong>Four parameters, four components, and no angle among them</strong> — which is the parent's "the same eight parameters would be four redundant", read as a statement about which slots the carrier can fill.</p>
+<p><strong>In frequency space the empty slot is not an absence of a coefficient but a symmetry of the matrix.</strong> The symbol has no imaginary central part for a free Proca field, because $k^{2}-k_m^{2}$ and $k^\mu k_\nu$ are both real. <strong>The matrix is real, so it commutes with complex conjugation, and a real matrix cannot generate a phase</strong> — which is the algebraic form of the parent's sentence that the material sector "loses the phase".</p>
+<p><strong>What replaces the phase is the frame, and the symbol carries it in its vector part.</strong> The parent's third and fourth rows — the rapidity's Hermitian vector and the axis's real vector — are the two vector types of the symbol. <strong>So the chart's positive content is the symbol's vector part and its negative content is the symbol's missing central slot</strong>, and the next section makes the negative content a measurement.</p>
+<h2 id="the-absent-phase-is-the-even-symbol">The Absent Phase Is the Even Symbol</h2>
+<p><strong>A symbol that generates a phase must be odd in the wave number, and the Proca symbol is even.</strong> Take the four theories and measure $\sigma(-\tilde K_\Phi)$ against $\sigma(\tilde K_\Phi)$ on the same wave number, $k_t'=1.2$ with $\vec k_\Phi=(0.3,0.2,0.1)$:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>theory</th>
+<th>object</th>
+<th>parity</th>
+<th>measured</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Proca</td>
+<td>$\sigma^\mu{}_\nu$</td>
+<td>even</td>
+<td>$\lvert\sigma(-K)-\sigma(K)\rvert=0.00\times10^{0}$</td>
+</tr>
+<tr>
+<td>Klein–Gordon</td>
+<td>$k^{2}-k_m^{2}$</td>
+<td>even</td>
+<td>$\lvert\sigma(-K)-\sigma(K)\rvert=0.00\times10^{0}$</td>
+</tr>
+<tr>
+<td>Dirac</td>
+<td>$i\tilde K_\Phi-k_m$</td>
+<td>odd</td>
+<td>$\lvert\sigma(-K)+\sigma(K)\rvert=2k_m=1.400000$</td>
+</tr>
+<tr>
+<td>Schrödinger</td>
+<td>$-\hbar\omega-h_t$</td>
+<td>neither</td>
+<td>$\lvert\sigma(-\omega)+\sigma(\omega)\rvert=2h_t=1.000000$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The odd entries are twice the constant term, and that is the table's arithmetic.</strong> The measure of an odd part is $\lvert\sigma(-K)-\sigma(K)\rvert$, which for the Dirac symbol is $2k_m$ and for the Schrödinger symbol $2h_t$: hence $1.400000$ and $1.000000$ at $k_m=0.7$ and $h_t=0.5$. <strong>So the table's second and third rows differ from the first two by a factor and not by a principle</strong>: an odd symbol's reflection doubles its constant term, and an even symbol's reflection cancels its whole value.</p>
+<p><strong>The table is the article's first finding and it is one line of algebra behind each entry.</strong> The Proca and Klein–Gordon symbols are quadratic in $k$; the Dirac symbol is linear; the Schrödinger symbol is affine. <strong>An even symbol is invariant under the reflection $k\mapsto-k$, and a phase bracket is precisely a quantity that changes sign under that reflection</strong>, so the material sector cannot carry one.</p>
+<p><strong>The correspondence with the parent's table is exact and it is slot by slot.</strong> The parent's phase row is zero on both branches; the symbol's imaginary central slot is zero for every wave number. The parent's frame rows are the vector parts; the symbol's vector part is the rank-one piece. <strong>The chart reads the matrix's types; the parity reads the matrix's order; and the two readings agree because a real second-order symbol has no odd slot to fill.</strong></p>
+<p><strong>This is why the Dirac chart carries a phase and the Proca chart does not, and the reason is not the spin.</strong> The Dirac operator is first order and its symbol is odd, so a central imaginary coefficient is available and the guidance equation follows from it. The Proca operator is second order and its symbol is even, so no such coefficient exists and no guidance equation can be written. <strong>The difference between the two charts is the order of the operator and not the representation that carries it</strong>, and the article says so because the parent's contrast is sometimes read as a statement about spin.</p>
+<h2 id="the-branch-is-not-a-spectral-property">The Branch Is Not a Spectral Property</h2>
+<p><strong>The branch label is an indefinite quadratic form on the amplitudes, and a quadratic form is not a linear functional.</strong> The invariant $\langle A\rangle_\natural=-\lvert a_t'\rvert^{2}+\lvert\vec a\rvert^{2}$ is homogeneous of degree two in the amplitude, so it does not distribute over a superposition:</p>
+<p>$$
+\langle A+B\rangle_\natural=\langle A\rangle_\natural+\langle B\rangle_\natural+2\,\mathrm{Re}\,[A,B]_\natural ,
+\qquad
+[A,B]_\natural:=-a_t'(A)a_t'(B)+\vec a(A)\cdot\vec a(B) ,
+$$</p>
+<p>and the cross term is not zero in general. <strong>Measured on two timelike amplitudes $c=(2,0.1,0,0)$ and $d=(2,-0.1,0,0)$: $\langle c\rangle_\natural=\langle d\rangle_\natural=+3.99$ but $\langle c+d\rangle_\natural=+16.00$ against $\langle c\rangle_\natural+\langle d\rangle_\natural=+7.98$.</strong></p>
+<p><strong>The boundary of the branch is a cone and not a subspace.</strong> Two lightlike amplitudes can sum to a timelike one and differ to a spacelike one: for $a=(1,1,0,0)$ and $b=(1,-1,0,0)$ both invariants vanish, while $\langle a+b\rangle_\natural=+4.0$ and $\langle a-b\rangle_\natural=-4.0$. <strong>So the lightlike set is closed under scaling and not under addition</strong>, and no linear functional can vanish on it without vanishing on everything.</p>
+<p><strong>The consequence for the transform is immediate and negative.</strong> A field is a superposition of modes, and each mode has its own amplitude. The branch of the field at an event is the sign of the invariant of the <em>sum</em>, which is not determined by the branches of the summands. <strong>So the chart's piecewiseness is not a property of the spectrum</strong>, and an article that read a branch label off the support of the transform would be reading a quantity the support does not carry.</p>
+<p><strong>What the transform does carry is the bracket structure.</strong> The scale and the frame are first-order objects, and their gradients are the symbols; the branch is a second-order object, and its gradient is nothing. <strong>The parent's bracket table is therefore a table of first-order data, and the branch label sits outside it</strong> — which is why the parent tabs it separately, as a sign of an invariant, and not as a fifth bracket.</p>
+<h2 id="the-charts-failure-set-is-the-amplitude-cone">The Chart's Failure Set Is the Amplitude Cone</h2>
+<p><strong>The parent's failure set and the branch's boundary are one equation.</strong> The chart fails where the local four-vector is lightlike, and on the material sector that is</p>
+<p>$$
+\langle\tilde A_\Phi\rangle_\natural=-(a_t')^{2}+\vec A^{2}=0 ,
+$$</p>
+<p>which <em>Degenerate Solutions of the Biquaternionic Proca Equation</em> proves is <strong>one real equation on four real parameters</strong>, cutting the four-dimensional material sector to a three-dimensional cone. On a mode the same display reads $-\lvert a_t'\rvert^{2}+\lvert\vec a\rvert^{2}=0$, which is the same cone in the amplitude space.</p>
+<p><strong>The codimension is one in both readings and for the same reason.</strong> In the algebra $\langle\tilde Q\rangle_\natural=0$ is complex and costs two real conditions; on the material sector the coefficients are real and it costs one. <strong>On the amplitudes the coefficients are also real for a material field, so the same halving applies</strong>, and the cone has codimension one in the amplitude space as well.</p>
+<p><strong>The parent's sector label transfers with the cone.</strong> <em>Degenerate Solutions</em> shows that a lightlike material potential satisfies $\tilde A_\Phi^{2}=\lambda\tilde A_\Phi$ with $\lambda=2i a_t'$, so it lies in $\Sigma_{01}$ and not in $\Sigma_{00}$, and that the trace $2i a_t'$ is what decides. <strong>The amplitude cone carries the same label</strong>, and it does so for the same reason: the trace of a pure vector vanishes identically, so the field strength's cone is $\Sigma_{00}$ and the potential's is $\Sigma_{01}$.</p>
+<p><strong>What the transform adds here is only the location.</strong> The parent's cone is a set of field values in spacetime; on a mode it is a set of amplitudes at one wave number. <strong>The equation is unchanged and the variety is unchanged; what changes is that the cone is now a condition on the coefficients of a superposition rather than on the value of a field at an event</strong>, and that is why §<em>The Branch Is Not a Spectral Property</em> can be stated as a fact about quadratic forms.</p>
+<p><strong>The failure set is larger than the scalar chart's and the transform does not shrink it.</strong> The parent records that in the scalar case the chart fails where $r=0$, a codimension-two set in spacetime, while here it fails on the whole light cone of field values, a family of three-dimensional surfaces. <strong>In amplitude space the two are a point and a cone</strong>, and the transform preserves the distinction: a point is a point and a cone is a cone.</p>
+<h2 id="what-the-transform-does-to-piecewiseness">What the Transform Does to Piecewiseness</h2>
+<p><strong>A Fourier mode is a constant frame, so every mode sits strictly inside one branch.</strong> The parent's plane-wave section makes this explicit: for $\tilde A_\Phi=\tilde A_0\cos\theta_{\mathrm{pwp}}$ with a constant timelike $\tilde A_0$, the word is $r=\lvert\cos\theta_{\mathrm{pwp}}\rvert\sqrt{-\langle\tilde A_0\rangle_\natural}$, a constant $\tilde U_{\mathrm b}$, and $\varepsilon=\mathrm{sign}\cos\theta_{\mathrm{pwp}}$. <strong>The boost is fixed by the amplitude, the whole spacetime dependence sits in the scale, and the branch label flips only at the nodes.</strong></p>
+<p><strong>The transform's support sees the scale and not the flip.</strong> A plane wave's transform is supported at one wave number with an amplitude, and the amplitude's invariant sign is the branch. The node where $\varepsilon$ flips is a zero of the scale and a feature of the <em>superposition</em>, not of the mode. <strong>So the chart's failure on the nodal surfaces is invisible to each mode and visible only in their sum</strong>, which is the precise sense in which the transform relocates the piecewiseness.</p>
+<p><strong>The relocation is a gain and it is bounded.</strong> The gain: the branch becomes a property of an amplitude, so it can be discussed without reference to a spacetime point, and the amplitude cone is a fixed algebraic object. The bound: the branch of a <em>field</em> is the branch of the sum, which §<em>The Branch Is Not a Spectral Property</em> shows is not determined by the summands. <strong>Both statements are needed and neither is the whole story.</strong></p>
+<p><strong>What would be needed to recover the piecewiseness is a statement about the phase of the superposition.</strong> Two modes of different wave numbers superpose with a relative phase, and the invariant of the sum depends on it. <strong>The transform keeps both amplitudes and both phases, so the data are present; what is absent is a linear functional that reads the branch from them</strong>, and the article states the absence rather than constructing a nonlinear one.</p>
+<h2 id="the-lorenz-condition-in-the-chart-on-a-mode">The Lorenz Condition in the Chart on a Mode</h2>
+<p><strong>The parent's divergence display becomes one algebraic equation on a mode.</strong> The parent writes</p>
+<p>$$
+S=\varepsilon\Bigl[c\,\frac{\partial r}{\partial r'_t}-s\,\hat u_{\mathrm b}\cdot\nabla r
++\tfrac12 rs\,\frac{\partial\theta_{\mathrm{rpd}}}{\partial r'_t}-\tfrac12 rc\,\hat u_{\mathrm b}\cdot\nabla\theta_{\mathrm{rpd}}-rs\,\nabla\cdot\hat u_{\mathrm b}\Bigr]=0 ,
+$$</p>
+<p>with $c=\cosh\frac{\theta_{\mathrm{rpd}}}{2}$ and $s=\sinh\frac{\theta_{\mathrm{rpd}}}{2}$, and observes that the first two terms are $\partial_{r'_t}(\varepsilon rc)$ and the last three are $-\nabla\cdot(\varepsilon rs\hat u_{\mathrm b})$. <strong>On a mode every derivative becomes a multiplication</strong>, so the display collapses to</p>
+<p>$$
+[kA]=k_t'a_t'-\vec k_\Phi\cdot\vec a=0 ,
+$$</p>
+<p>which is one linear condition on the four amplitudes and it is the Lorenz plane.</p>
+<p><strong>It is the same plane as the symbol's kernel, named in the chart's letters.</strong> The form companion computes the kernel of $\sigma$ on the shell and finds it three-dimensional and annihilated to $3\times10^{-17}$; here the same plane is written as the vanishing of the divergence. <strong>Two computations, one plane</strong>: the kernel is what the operator does not see, and the Lorenz condition is what the field must satisfy. That they coincide is the content of "the constraint is implied and not imposed", read in the chart.</p>
+<p><strong>The chart's letters and the amplitude's components are related by a change of basis and not by a transform.</strong> The word's four parameters are a polar decomposition of the same four numbers, so the Lorenz condition is one equation in either set. <strong>The transform does not enter this section at all</strong>, and the section is included only to record that the chart's own constraint and the form companion's kernel are one object.</p>
+<p><strong>What the chart adds is the reading of the condition as a transport equation.</strong> The parent identifies $S$ with $\partial_\mu(ru^\mu)$ on the timelike branch — the field's own current's conservation, in the flow's own density — and that is <em>The Spin-One Fluid of the Biquaternion Proca Field</em>'s reading. <strong>In frequency space the same conservation is the vanishing of $[kA]$, which is algebraic</strong>, and the fluid's continuity equation becomes a single linear condition on a mode. The two readings are one equation, and the frequency-space one is the weaker statement: it holds for a mode and says nothing about a general field.</p>
+<h2 id="limits">Limits</h2>
+<p><strong>The constant-coefficient licence bounds every statement here.</strong> The symbol is a matrix of numbers only where the coefficients are constant, which the free equation satisfies. With a connection the symbol is a matrix of operators and the coupled polar companion treats that case.</p>
+<p><strong>The branch is a property of the carrier and not of the transform.</strong> The two branches exist because the material sector's invariant is indefinite, and the transform neither creates nor removes them. An article that reported a branch from the sign of a frequency would be reporting a different quantity.</p>
+<p><strong>The parity table's Schrödinger entry is a comparison and not a claim about that family.</strong> The Schrödinger symbol is affine in the frequency and therefore neither even nor odd; the entry is included to make the table a census of the corpus's operators, and the article claims nothing about the Schrödinger chart.</p>
+<p><strong>The denial, once more.</strong> No sector is exchanged. The word is a decomposition of an element of $\mathbb{B}_\Phi$, the amplitudes are its four real components, and the parity is a property of a matrix of complex numbers. <strong>None of the three is a statement about $\mathbb{B}_\Phi$ and $\mathbb{B}_\Psi$.</strong></p>
+<h2 id="open-questions">Open Questions</h2>
+<p><strong>Whether a branch label can be assigned to a superposition at all is open.</strong> §<em>The Branch Is Not a Spectral Property</em> shows that the label is not a linear functional of the mode coefficients, which is not the same as showing that no assignment exists. A nonlinear assignment — the sign of the invariant of the sum — always exists, and whether it has a reading in the chart's own terms is not settled here.</p>
+<p><strong>Whether the absent phase bracket and the even symbol are the same statement or two statements is open.</strong> The article exhibits both and shows that they agree; whether the agreement is an identity of the algebra or a coincidence of the corpus's two conventions is a question about the operator's order and not about the Proca field, and it is not answered here.</p>
+<p><strong>The amplitude cone's sector label is inherited and not proved here.</strong> <em>Degenerate Solutions</em> proves the label for the field values, and §<em>The Chart's Failure Set Is the Amplitude Cone</em> transfers it by the sameness of the equation. Whether the transfer needs an additional argument — the amplitude being a coefficient and not a value — is a question the article raises and does not answer.</p>
+<h2 id="summary">Summary</h2>
+<p>The Proca polar chart has four parameters and two brackets, and one of its four bracket slots is empty: the phase vanishes identically on both branches. In frequency space that emptiness has a name. The Proca symbol is even in the four-wave-number to machine precision ($0.00\times10^{0}$ in the largest entry difference at $k_t'=1.2$), as is the Klein–Gordon scalar; the Dirac symbol is odd ($\lvert\sigma(-K)+\sigma(K)\rvert=2k_m=1.400000$) and the Schrödinger symbol is neither. <strong>A phase bracket needs an odd slot, and a real second-order symbol has none</strong>, which is why the Proca chart carries no guidance equation and the Dirac chart does.</p>
+<p>The branch is not a spectral property. The invariant $\langle A\rangle_\natural$ is indefinite quadratic in the amplitudes, so it does not distribute: two timelike amplitudes with invariants $+3.99$ each sum to $+16.00$ while their invariants sum to $+7.98$. The lightlike set is a cone and not a subspace: two lightlike amplitudes sum to a timelike one and differ to a spacelike one. <strong>No linear functional of the spectrum determines a branch label.</strong></p>
+<p>The chart's failure set and the branch's boundary are one variety. The parent's condition "the local four-vector is lightlike" is the same equation as the amplitude cone, and it is one real equation on four real parameters — the parent's codimension-one count and <em>Degenerate Solutions</em>'s sector label $\Sigma_{01}$ both transfer unchanged.</p>
+<p>What the transform does with the piecewiseness is relocate it. A Fourier mode is a constant frame and sits strictly inside one branch, so the nodal flip is a feature of the superposition and not of the mode. <strong>The branch moves from spacetime to the amplitude space</strong>, and the article states the move as a gain — the branch becomes algebraic — and as a bound — the branch of a sum is not determined by the summands. In the chart's own letters the Lorenz condition on a mode is $[kA]=0$, which is the same plane as the symbol's three-dimensional kernel.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde K_\Phi=ik_t'e_t+\vec k_\Phi$</td>
+<td>The four-wave number; $k_t'=\omega/c$</td>
+</tr>
+<tr>
+<td>$k^{2}=k_t'^{2}-\vec k_\Phi^{2}$</td>
+<td>The interval in wave numbers</td>
+</tr>
+<tr>
+<td>$k_m=mc/\hbar$</td>
+<td>The mass wave number</td>
+</tr>
+<tr>
+<td>$\tilde A_\Phi=\varepsilon i r\tilde U$, $r\tilde U\hat u$</td>
+<td>The word on the timelike and spacelike branches</td>
+</tr>
+<tr>
+<td>$r,\ \varepsilon,\ \theta_{\mathrm{rpd}},\ \hat u_{\mathrm b},\ \hat u$</td>
+<td>Scale, branch label, rapidity, boost axis, spacelike direction</td>
+</tr>
+<tr>
+<td>$\langle A\rangle_\natural=-\lvert a_t'\rvert^{2}+\lvert\vec a\rvert^{2}$</td>
+<td>The invariant; an indefinite quadratic form on the amplitudes</td>
+</tr>
+<tr>
+<td>$[kA]=k_t'a_t'-\vec k_\Phi\cdot\vec a$</td>
+<td>The Lorenz form of a mode; the parent's $S$ up to $-i$</td>
+</tr>
+<tr>
+<td>$\sigma^\mu{}_\nu=(k^{2}-k_m^{2})\delta^\mu{}_\nu-k^\mu k_\nu$</td>
+<td>The Proca symbol, quoted from the form companion</td>
+</tr>
+<tr>
+<td>$0.00\times10^{0}$ / $1.400000$</td>
+<td>The measured parity residuals for the even and the odd symbol</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Proca Equation in Biquaternionic Polar Variables</em>, for the word, the two branches, the bracket table and the absent phase.</li>
+<li><em>Degenerate Solutions of the Biquaternionic Proca Equation</em>, for the lightlike set, the two cones and the sector labels.</li>
+<li><em>The Proca Equation: Massive Spin 1 in Biquaternionic Form</em>, for the plane waves, the Lorenz condition and the polarisation count.</li>
+<li><em>The Fourier Transform and the Proca Equation in Biquaternionic Form</em>, for the symbol's determinant, rank and kernel.</li>
+<li><em>The Fourier Transform and the Dirac Equation in Biquaternionic Polar Variables</em>, for the chart that does carry a phase, and for the phase gradient as the Fourier variable.</li>
+<li><em>The Spin-One Fluid of the Biquaternion Proca Field</em>, for the Lorenz condition as the field's own continuity equation.</li>
+<li><em>Mirror Biquaternions and the Phy–Psy Switch</em>, for the sector bookkeeping that the material sector's reality presupposes.</li>
+<li><em>Derivatives, Fields and Transforms</em>, for the symbol rule.</li>
+<li><em>Norm and Pairing Conventions</em>, for the norm's indefiniteness and the two forms.</li>
+<li>H. Weyl, <em>The Theory of Groups and Quantum Mechanics</em> (Dover, 1950), for the polar decomposition of a real four-vector and its two branches.</li>
+<li>C. Møller, <em>The Theory of Relativity</em> (Oxford University Press, 1972), for the causal character of a four-vector and the cone of field values.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

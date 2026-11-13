@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Fourier Transform and the Coupled Proca Equation in Biquaternionic Form — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-fourier-transform-and-the-coupled-proca-equation-in-biquaternionic-form"><strong>The Fourier Transform and the Coupled Proca Equation in Biquaternionic Form</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The Proca field is the first in the corpus whose carrier has to be widened before a connection can be written, and the widening is forced by the connection itself.</strong> <em>The Coupled Proca Equation in Biquaternionic Form</em> states the reason in its §<em>The Carrier</em>: the minimal substitution replaces the gradient by $\tilde\nabla_\Phi+\frac{i\varkappa}{\hbar}\tilde A_\Phi$, the product of two material potentials is not material because of the $i$ in the time slot, and the field therefore has to be a general biquaternion. <strong>The $i$ that breaks closure is the $i$ the mass term needs</strong>, which is why the massless Proca field can be a real potential and the massive one cannot.</p>
+<p><strong>The article's subject is what the transform says about that widening, and the answer is a two-term symbol.</strong> In the coupled theory the operator's symbol is the free symbol at a shifted four-wave-number, plus one extra term that is the curvature:</p>
+<p>$$
+\sigma_{\mathrm{gco}}\bigl(\pi\bigr)=\underbrace{\bigl(-\pi^{2}\delta^\mu{}_\nu-\pi^\mu\pi_\nu\bigr)}_{\text{the free symbol at }\pi}
+\;+\;\underbrace{\frac{i\varkappa}{\hbar}\,F^{(\Phi)\mu}{}_{\nu}}_{\text{the obstruction}} ,
+\qquad
+\pi_\mu=\hbar k_\mu+\varkappa A_\mu .
+$$</p>
+<p>The first bracket is the free Proca symbol with $\pi$ in place of $k$ — translation and rank-one projector together — and the second is the commutator of two covariant derivatives. <strong>The first term is what the transform says and the second is what the transform cannot say</strong>, and the article is the separation of the two.</p>
+<p><strong>The translation is exact and it is the corpus's own identity.</strong> The parent proves $\tilde\nabla^{\natural}_{\mathrm{gco}}\tilde\nabla_{\mathrm{gco}}=\sum_\mu\tilde\nabla^{2}_{\mathrm{gco},\mu}+\frac{i\varkappa}{\hbar}\tilde F^{(\Phi)}$, a decomposition of the covariant d'Alembertian into a symmetric sum of squares and a curvature. <strong>In frequency space the first piece is $-\pi^{2}$ and the second is the curvature term</strong>, so the identity is exactly the symbol's two terms and the article's first finding is that no third term exists.</p>
+<p><strong>The second finding is that the same four-wave-number can give different symbols.</strong> Two connections can agree in $\pi$ at a point and disagree in $F$ there, and the symbol's difference is $\frac{i\varkappa}{\hbar}$ times the difference of the curvatures: for two connections used below, $\lvert F_{21}\rvert$ is $0$ and $0.9$ while $\pi$ agrees at the point of evaluation. <strong>So the symbol is not a function of the momentum alone</strong>, and that is the exact statement of what a Fourier description of a gauge theory loses.</p>
+<p><strong>The third finding is that the mass does not enter the obstruction.</strong> The mass term is $-k_m^{2}\delta$ on the amplitude space, which is inert under the curvature; the curvature term carries no $k_m$. <strong>So the obstruction and the mass are two independent additions to the Klein–Gordon symbol</strong>, and §<em>The Mass Does Not Enter the Obstruction</em> states the check.</p>
+<p><strong>The fourth finding is a floor on how much a coefficient can hide.</strong> The companions' bench measures the mode occupancy of a multiplication, a derivative of a delta and a general function on a $256$-mode circle: one mode, first order, and all $256$. <strong>Covariant differentiation is the derivative's floor</strong>, so a connection moves the symbol away from the free one by an amount the occupancy does not see, and the article quotes the bench rather than rerunning it.</p>
+<p><strong>The denial is stated plainly.</strong> No sector is exchanged. The coupled field is an element of $\mathbb{B}$, its transform is $\mathbb{B}$-valued, and the symbol is a matrix of numbers only at a constant connection. <strong>The article adds the decomposition and its two failures: the failure of the symbol to be a function of $\pi$, and the failure of the ladder to reach the floor.</strong></p>
+<h2 id="conventions">Conventions</h2>
+<p>The algebra, the products, the two forms, the units and the sectors are those of <em>Algebra and Element Conventions</em>, <em>Product and Form Conventions</em>, <em>Norm and Pairing Conventions</em>, <em>Physics Units and Common Elements Conventions</em> and <em>Mirror Biquaternions and the Phy–Psy Switch</em>. The gradient and the covariant derivative are those of <em>Operator and Calculus Conventions</em> and <em>Gauge Fields and the Covariant Derivative</em>, and the transform is the one of <em>Derivatives, Fields and Transforms</em>, whose symbol rule for a gauge-covariant operator is quoted in derived form:</p>
+<p>$$
+\tilde\nabla_{\mathrm{gco},\mu}\longmapsto i\pi_\mu ,
+\qquad
+\pi_\mu=\hbar k_\mu+\varkappa A_\mu ,
+\qquad
+k_\mu=\bigl(k_t',\vec k_\Phi\bigr) ,
+\qquad
+k_t'=\frac{\omega}{c} ,
+$$</p>
+<p>with $\varkappa$ the coupling and $A_\mu$ the background potential. <strong>The shift is a translation of the wave number and not a scaling</strong>: the coupling enters as a length and the potential as its inverse.</p>
+<p><strong>The minimal substitution and the field strength are the parent's.</strong> The substitution is $\tilde\nabla_\Phi\mapsto\tilde\nabla_\Phi+\frac{i\varkappa}{\hbar}\tilde A_\Phi$, and the covariant field strength is</p>
+<p>$$
+\tilde F=\mathrm{Vect}\bigl((\tilde\nabla_{\mathrm{gco}})^{\natural}\tilde A\bigr)
+=\mathrm{Vect}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A\bigr)
++\frac{i\varkappa}{\hbar}\,\mathrm{Vect}\bigl(\tilde A_\Phi^{\natural}\tilde A\bigr) ,
+$$</p>
+<p>whose second term is the parent's extra piece, measured between $0.7$ and $12$ over one hundred random draws. <strong>That term is a product of two fields and not a derivative</strong>, and §<em>The Field Strength's Extra Term</em> is about what the transform does with it.</p>
+<p><strong>The square-splitting identity is the parent's and it is the article's spine.</strong> For a connection with curvature $F^{(\Phi)}$,</p>
+<p>$$
+(\tilde\nabla_{\mathrm{gco}})^{\natural}\tilde\nabla_{\mathrm{gco}}
+=\sum_\mu\tilde\nabla^{2}_{\mathrm{gco},\mu}+\frac{i\varkappa}{\hbar}\tilde F^{(\Phi)} ,
+\qquad
+\bigl[D_{\mathrm{gco},\mu},D_{\mathrm{gco},\nu}\bigr]=\frac{i\varkappa}{\hbar}F^{(\Phi)}_{\mu\nu} ,
+$$</p>
+<p>the commutator checked on a test function to $1.1\times10^{-5}$. <strong>The first display is the symbol's decomposition before the transform is applied</strong>, and the transform turns the two terms into $-\pi^{2}$ and $\frac{i\varkappa}{\hbar}F^{(\Phi)}$.</p>
+<p><strong>The constant-connection licence.</strong> The symbol below is the symbol of a differential operator with constant coefficients, which requires a constant background. <strong>A linear background is not constant and its symbol is not defined</strong>; §<em>The Obstruction: Same Momentum, Different Curvature</em> handles that case by evaluating at a point and saying so.</p>
+<p><strong>The denial of the Legendre reading, once.</strong> The transform's variable is not a canonical momentum, and the parent's $d_\Phi=-i\hbar c\tilde\partial_\Phi+i\varkappa c\tilde A_\Phi$ is a covariant derivative and not a conjugate momentum. <strong>The corpus's second conjugacy is the canonical one, and it is not used here.</strong></p>
+<h2 id="the-symbol-in-two-terms">The Symbol in Two Terms</h2>
+<p><strong>The transform acts on the identity and gives the decomposition, term by term.</strong> Applying the symbol rule to the square splitting, the symmetric sum of squares becomes $-\pi^{2}$ — the four-momentum's interval with a sign — and the curvature term becomes $\frac{i\varkappa}{\hbar}F^{(\Phi)}$. <strong>There is no third term because the identity has two</strong>, and the article's first claim is only that the identity survives the transform unchanged.</p>
+<p><strong>The identity is the d'Alembertian's and the Proca symbol adds two pieces of its own.</strong> The square splitting decomposes $\tilde\nabla^{\natural}_{\mathrm{gco}}\tilde\nabla_{\mathrm{gco}}$, which is the covariant d'Alembertian; the Proca operator is that d'Alembertian less the projector onto the Lorenz form and less $k_m^{2}$. So the symbol's three pieces are the interval, the projector and the curvature, and the first two together are the free symbol at $\pi$. <strong>The curvature is the only piece the free article has no counterpart for</strong>, and every statement below about the obstruction is a statement about that piece alone.</p>
+<p><strong>The translation term is a scalar and the curvature term is a matrix.</strong> $-\pi^{2}$ is one number times the identity in the amplitude space; $\frac{i\varkappa}{\hbar}F^{(\Phi)}$ is a two-form's matrix, antisymmetric and traceless in the four-vector reading. <strong>So the symbol is a scalar plus a traceless part</strong>, and any statement about a trace is a statement about the translation alone.</p>
+<p><strong>The curvature term's trace vanishes, which is the parent's Lorenz argument in frequency space.</strong> The parent shows that taking the trace of the covariant equation removes the commutator, so the curvature does not enter the covariant Lorenz condition. <strong>In the symbol's language: the trace of $\sigma_{\mathrm{gco}}$ is $-\pi^{2}\cdot4$ and has no curvature in it</strong>, so the constraint's symbol is the free one at $\pi$. That single sentence is the whole of the parent's §<em>The Lorenz Condition in Covariant Form</em>, and the article states it as a trace.</p>
+<p><strong>The curvature term is what makes the symbol non-scalar and it is what a gauge transformation cannot remove.</strong> A gauge transformation shifts $A_\mu$ by a gradient, which shifts $\pi_\mu$ and leaves $F$ alone; so the symbol's translation moves and its obstruction does not. <strong>That is the frequency-space form of gauge covariance: the symbol is not invariant, its two parts transform differently</strong>, and the next section separates them.</p>
+<h2 id="the-translation-is-exact">The Translation Is Exact</h2>
+<p><strong>For a constant connection the symbol is the free one at shifted momentum, and the shift is the only change.</strong> With $F=0$ the second term vanishes identically, so</p>
+<p>$$
+\sigma_{\mathrm{gco}}\bigl(\pi\bigr)=-\pi^{2}\mathbb{1}
+\qquad\text{when}\qquad
+F^{(\Phi)}_{\mu\nu}=0 ,
+$$</p>
+<p>and the symbol's dependence on the coupling is entirely through $\pi_\mu=\hbar k_\mu+\varkappa A_\mu$. <strong>The mass shell then reads $\pi^{2}=k_m^{2}$</strong>, which is the parent's constant-background dispersion with the coupling in the momentum and nowhere else.</p>
+<p><strong>The check is one line and it is exact.</strong> A constant connection has $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu=0$ identically, so the commutator vanishes and the square splitting reduces to the symmetric sum of squares. <strong>The symbol of that sum is $-\pi^{2}$</strong>, and the identity is an identity and not an approximation.</p>
+<p><strong>What the translation does to the spectrum is the parent's shift, read as a symbol.</strong> The temporal component of $\pi$ is $\hbar\omega/c+\varkappa\varphi$, so the symbol's evenness is about $\omega=-\varkappa c\varphi/\hbar$ and not about zero. <strong>A constant potential moves the axis of the symbol's parity</strong>, which is the frequency-space form of "a constant potential shifts every energy by $\varkappa\varphi$".</p>
+<p><strong>The spatial components shift the wave vector's origin, and that is the same statement.</strong> $\vec\pi=\hbar\vec k_\Phi+\varkappa\vec A$ means the symbol's dependence on $\vec k_\Phi$ is a translation, so the dispersion's minimum sits at $\vec k_\Phi=-\varkappa\vec A/\hbar$. <strong>A constant vector potential moves the dispersion's centre and not its shape</strong>, and the symbol's translation is exactly that statement.</p>
+<p><strong>The translation is therefore the entire content of "the coupling is a shift" and the obstruction is the entire content of "the coupling is not only a shift".</strong> The article separates them because the corpus's literature separates them: the constant-background section of the parent is the translation, and its covariant field strength is the obstruction.</p>
+<h2 id="the-obstruction-same-momentum-different-curvature">The Obstruction: Same Momentum, Different Curvature</h2>
+<p><strong>Two connections can agree in $\pi$ at a point and disagree in $F$ there, and then the symbols differ.</strong> That is the article's sharpest statement and it is a statement about what a Fourier description can and cannot represent. <strong>Written as a display, at a point $r_0$:</strong></p>
+<p>$$
+\pi^{(1)}(r_0)=\pi^{(2)}(r_0)
+\qquad\text{while}\qquad
+F^{(1)}(r_0)\neq F^{(2)}(r_0)
+\qquad\Longrightarrow\qquad
+\sigma^{(1)}(r_0)\neq\sigma^{(2)}(r_0) ,
+$$</p>
+<p>the difference being $\frac{i\varkappa}{\hbar}(F^{(1)}-F^{(2)})$ and nothing else. <strong>So the symbol at a point is not a function of the momentum at that point</strong>, and a reading that computed the symbol from $\pi$ alone would be wrong by the curvature.</p>
+<p><strong>The example is two connections that differ by a term linear in the coordinate, and the numbers are the parent's.</strong> Take $A^{(1)}=0$ and $A^{(2)}$ with $A_2=0$ and $A_1=b\,r_2'$; the second is the parent's linear connection, whose curvature has $\lvert F_{21}\rvert=b=0.9$ and whose other components vanish. <strong>At the point $r_0=(0,0,0,0)$ the two connections agree in every component</strong>, because a linear connection vanishes at its own origin, and their curvatures differ there by a matrix with one independent component of size $0.9$.</p>
+<p><strong>The consequence for a Fourier description is a limit and not a defect.</strong> The transform diagonalises a constant-coefficient operator and does nothing for a variable one. <strong>A background with curvature has no symbol</strong>, and the closest a symbol can come is the constant-connection symbol at the background's value at a point. <strong>The article's statement is that this approximation is exact in $\pi$ and wrong in $F$</strong>, which is the sharpest form the limitation takes.</p>
+<p><strong>What the parent's covariant field strength does with the same fact is the position-space version.</strong> The extra term $\frac{i\varkappa}{\hbar}\mathrm{Vect}(\tilde A_\Phi^{\natural}\tilde A)$, measured between $0.7$ and $12$, is the same curvature's appearance in the field strength rather than in the operator. <strong>Two registers, one object:</strong> the symbol's obstruction and the field strength's extra term are both the commutator, and the article's §<em>The Field Strength's Extra Term</em> is the second register.</p>
+<p><strong>The obstruction's rank is the curvature's rank and its trace is zero.</strong> A two-form in four dimensions has rank four unless its invariants vanish, so the obstruction is a full-rank traceless addition in general; the trace's vanishing is what leaves the constraint untouched. <strong>So the obstruction moves every eigenvalue of the symbol's transverse part and moves the constraint not at all</strong>, and that asymmetry is why the covariant Lorenz condition is the free one in $\pi$.</p>
+<h2 id="the-mass-does-not-enter-the-obstruction">The Mass Does Not Enter the Obstruction</h2>
+<p><strong>The mass term is a multiple of the identity and the obstruction is traceless, so the two additions are independent.</strong> The coupled equation's symbol in the four-component reading is</p>
+<p>$$
+\sigma_{\mathrm{gco}}=\bigl(-\pi^{2}-k_m^{2}\bigr)\delta^\mu{}_\nu+\frac{i\varkappa}{\hbar}F^{(\Phi)\mu}{}_{\nu}
+-\pi^\mu\pi_\nu ,
+$$</p>
+<p>so the mass appears in one diagonal entry of the decomposition and the curvature in a different one. <strong>Neither can be written in terms of the other</strong>, and the check is that the obstruction's trace is zero at every $k_m$ and the mass's is $-4k_m^{2}$ at every $F$.</p>
+<p><strong>The consequence is that the count cannot be changed by the coupling.</strong> The mass's effect on the symbol's rank is the linear factor $-k_m^{2}$, which is the same at every curvature; the curvature's effect is traceless, so it cannot create or destroy the mass's factor. <strong>The degrees-of-freedom count is therefore a property of the mass and of the constraint's structure, not of the background</strong>, and the form companion's rank table survives the coupling with $\pi$ in place of $k$.</p>
+<p><strong>The independence is visible in the eigenvalues at a constant connection.</strong> With $F=0$ the eigenvalues are the free ones at $\pi$, and the two multiplicities $\{\pi^{2}-k_m^{2},\pi^{2}-k_m^{2},\pi^{2}-k_m^{2},-k_m^{2}\}$ are unchanged in <em>structure</em>; what changes is the value of $\pi^{2}$. <strong>The coupling moves the numbers and not the multiplicities</strong>, which is the same sentence as the mass's independence read forwards.</p>
+<p><strong>What the independence does not say is that the coupling is spectroscopically invisible.</strong> It says the coupling's effect on the <em>count</em> is nil. Its effect on the values is the whole of the constant-background dispersion, and its effect on the eigenvectors is the curvature's. <strong>The article states three things and not one</strong>, because the three are cheap and the confusion between them is not.</p>
+<h2 id="the-field-strengths-extra-term">The Field Strength's Extra Term</h2>
+<p><strong>The covariant field strength has a term the free one does not, and the transform makes it a product.</strong> The parent's display</p>
+<p>$$
+\tilde F=\mathrm{Vect}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A\bigr)+\frac{i\varkappa}{\hbar}\mathrm{Vect}\bigl(\tilde A_\Phi^{\natural}\tilde A\bigr)
+$$</p>
+<p>has two terms of different kinds: a derivative of the field and a product of two fields. <strong>The first has a symbol and the second does not</strong>, because a product is a convolution in frequency space and a convolution is not a multiplier.</p>
+<p><strong>The parent's measurement of the second term is the reason it cannot be dropped.</strong> Over one hundred random draws at unit amplitude the term ranges from $0.7$ to $12$ in the units of the display, so it is not a small correction to the derivative term; it is comparable to it and sometimes larger. <strong>A frequency-space account that kept only the derivative term would be wrong by an $O(1)$ amount</strong>, and the article records the range rather than a mean.</p>
+<p><strong>In frequency space the product is a convolution and it is the obstruction's second appearance.</strong> The first appearance is the symbol's $\frac{i\varkappa}{\hbar}F$, which is a multiplier because a constant curvature is a constant; the second is the product term, which is not a multiplier because the potential is a function. <strong>The two are one object seen at two levels of resolution</strong>, and the article says so once and does not claim they are numerically equal.</p>
+<p><strong>What the transform can say about the product is its support, and the companions' bench gives the numbers.</strong> On a $256$-mode circle, a delta is a multiplier and occupies one mode; a derivative of a delta is first order and occupies a small window; a general function occupies all $256$. <strong>A product with a general potential therefore occupies every mode</strong>, which is the frequency-space statement of "the covariant field strength is not a local operator in the free field".</p>
+<h2 id="the-ladder-and-its-floor">The Ladder and Its Floor</h2>
+<p><strong>The companions' bench measures how far a multiplication can be from a diagonal action, and the floor is the derivative.</strong> The three numbers are the three rungs: a delta is a multiplier and occupies one mode of $256$; a derivative of a delta is first order; a function is a convolution and occupies all $256$. <strong>Covariant differentiation is the derivative's rung</strong>, so it is first order and never diagonal.</p>
+<p><strong>The article's use of the bench is a floor and not a measurement.</strong> A connection's curvature term is a multiplier at constant curvature, so it sits on the delta's rung there; but the covariant derivative that produced it sits on the derivative's rung, and the product term sits on the function's. <strong>The three rungs are occupied simultaneously in one expression</strong>, which is why the coupled theory has a symbol in one limit and not in general.</p>
+<p><strong>The floor is the reason the free theory's exactness is not misleading.</strong> The free Proca symbol is exact because the coefficients are constant; the coupled one is exact only where the connection is, and the bench says how much of the structure the exactness buys: <strong>everything at constant curvature, the translation term at every curvature, and nothing else.</strong></p>
+<p><strong>The rungs are the companions' and the article does not rerun them.</strong> <em>The Fourier Transform and the Coupled Klein–Gordon Equation in Biquaternionic Form</em> and <em>The Fourier Transform and the Coupled Dirac Equation in Biquaternionic Form</em> establish the occupancy counts, and the article quotes them because the Proca case adds no rung. <strong>The Proca case's addition is the second matrix index</strong>: the field strength has two, so its product term is a matrix product and its convolution is a convolution of matrices, and the occupancy count is the same.</p>
+<h2 id="limits">Limits</h2>
+<p><strong>The constant-connection licence bounds the symbol and nothing else.</strong> The translation term is exact for a constant connection; the obstruction is a multiplier only where the curvature is constant. <strong>Every statement about the symbol above carries that condition</strong>, and the article repeats it because the condition is easy to lose in a display.</p>
+<p><strong>The Abelian case is the one treated.</strong> The commutator's value is the curvature and there is no second term from the algebra's non-commutativity, because the coupling is Abelian. <strong>A non-Abelian coupling would add a term to the field strength and the symbol would acquire a second obstruction</strong>, and the article does not treat that case.</p>
+<p><strong>The mass's independence is a statement about the symbol's structure and not about the spectrum's values.</strong> The values move with the coupling through $\pi$; the multiplicities do not. <strong>A reader who took "independent" for "invisible" would be reading the wrong half of the sentence.</strong></p>
+<p><strong>The denial, once more.</strong> No sector is exchanged. The coupled field is one element with eight real parameters, its transform is $\mathbb{B}$-valued, and the symbol is a matrix only at a constant connection. <strong>None of the three is a statement about $\mathbb{B}_\Phi$ and $\mathbb{B}_\Psi$.</strong></p>
+<h2 id="open-questions">Open Questions</h2>
+<p><strong>Whether a frequency-space account of the obstruction exists at all is open.</strong> The symbol's curvature term is exact at constant curvature, and the product term is a convolution; whether a transform-like object exists that diagonalises the second is not known to the article, and the companions raise the same question for their own fields.</p>
+<p><strong>Whether the extra term's range $[0.7,12]$ has a bound is open.</strong> The parent measures the range over random draws at unit amplitude and does not bound it. <strong>A bound in terms of the amplitude's norm and the coupling would turn the range into an inequality</strong>, and nothing above supplies one.</p>
+<p><strong>Whether the mass's independence survives a non-Abelian coupling is open.</strong> An obstruction of a different kind would have a different trace, and the trace's vanishing is what the constraint's survival rests on. <strong>The article's independence argument uses the trace and would need redoing.</strong></p>
+<p><strong>The covariant Lorenz condition's exactness is the parent's and it is quoted, not proved here.</strong> The article's §<em>The Symbol in Two Terms</em> reads it as a trace; whether the trace argument and the parent's divergence argument are the same argument is a question about the two orders of differentiation, and it is not answered here.</p>
+<h2 id="summary">Summary</h2>
+<p>The coupled Proca operator's symbol is two terms. The first is the free symbol at the shifted four-momentum $\pi_\mu=\hbar k_\mu+\varkappa A_\mu$, which is the translation; the second is $\frac{i\varkappa}{\hbar}F^{(\Phi)}$, which is the commutator of two covariant derivatives and is the obstruction. <strong>The decomposition is the parent's square-splitting identity, transformed term by term</strong>, and there is no third term because the identity has two.</p>
+<p>At a constant connection the obstruction vanishes identically and the symbol is $-\pi^{2}$ times the identity: <strong>the translation is exact</strong>, the dispersion is $\pi^{2}=k_m^{2}$, and a constant potential moves the axis of the symbol's parity to $\omega=-\varkappa c\varphi/\hbar$.</p>
+<p>At a varying connection the obstruction is not removable. Two connections can agree in $\pi$ at a point and differ in $F$ there — the example is $A^{(1)}=0$ against $A^{(2)}$ with $A_1=b\,r_2'$, whose $\lvert F_{21}\rvert=0.9$ while both connections vanish at the origin. <strong>So the symbol at a point is not a function of the momentum at that point</strong>, and a Fourier description is wrong by exactly the curvature.</p>
+<p>The mass does not enter the obstruction: the mass term is $-k_m^{2}\delta$, whose trace is $-4k_m^{2}$, and the obstruction is traceless at every $k_m$. <strong>The coupling therefore cannot change the count</strong>, only the values and the eigenvectors, and the form companion's rank table survives with $\pi$ in place of $k$. The field strength's extra term, the parent's product of two fields ranging from $0.7$ to $12$, is the same object in the other register, and in frequency space it is a convolution: the bench's ladder reads one mode for a delta, first order for its derivative, and all $256$ for a general function.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\varkappa$</td>
+<td>The coupling; a length whose inverse multiplies the potential</td>
+</tr>
+<tr>
+<td>$A_\mu$</td>
+<td>The background potential</td>
+</tr>
+<tr>
+<td>$\pi_\mu=\hbar k_\mu+\varkappa A_\mu$</td>
+<td>The shifted four-momentum; the symbol's argument</td>
+</tr>
+<tr>
+<td>$k_t'=\omega/c$, $k^{2}=k_t'^{2}-\vec k_\Phi^{2}$</td>
+<td>The free four-wave-number and its interval</td>
+</tr>
+<tr>
+<td>$k_m=mc/\hbar$</td>
+<td>The mass wave number</td>
+</tr>
+<tr>
+<td>$\sigma_{\mathrm{gco}}=-\pi^{2}+\frac{i\varkappa}{\hbar}F^{(\Phi)}$</td>
+<td>The coupled symbol; translation plus obstruction</td>
+</tr>
+<tr>
+<td>$F^{(\Phi)}_{\mu\nu}$</td>
+<td>The curvature; $\lvert F_{21}\rvert=0.9$ in the example</td>
+</tr>
+<tr>
+<td>$\frac{i\varkappa}{\hbar}\mathrm{Vect}(\tilde A_\Phi^{\natural}\tilde A)$</td>
+<td>The field strength's extra term; $0.7$ to $12$ over $100$ draws</td>
+</tr>
+<tr>
+<td>$-\pi^{2}$</td>
+<td>The trace part; the constraint's symbol</td>
+</tr>
+<tr>
+<td>$256$</td>
+<td>The mode count of the companions' bench; one, a few, all</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Coupled Proca Equation in Biquaternionic Form</em>, for the carrier argument, the minimal substitution, the covariant field strength and the constant background.</li>
+<li><em>The Coupled Proca Equation in Biquaternionic Polar Variables</em>, for the same theory read in the chart, and for the gauge transformation as a phase translation.</li>
+<li><em>Gauge Fields and the Covariant Derivative</em>, for the commutator, the curvature and the square-splitting identity.</li>
+<li><em>The Fourier Transform and the Proca Equation in Biquaternionic Form</em>, for the free symbol's determinant, rank and kernel.</li>
+<li><em>The Fourier Transform and the Coupled Klein–Gordon Equation in Biquaternionic Form</em>, for the occupancy bench and the ladder's rungs.</li>
+<li><em>The Fourier Transform and the Coupled Dirac Equation in Biquaternionic Form</em>, for the same ladder with a first-order operator.</li>
+<li><em>The Fourier Transform and the Coupled Proca Equation in Biquaternionic Polar Variables</em>, for the chart reading of this symbol.</li>
+<li><em>Derivatives, Fields and Transforms</em>, for the symbol rule.</li>
+<li>M. Nakahara, <em>Geometry, Topology and Physics</em> (Adam Hilger, 1990), Chapter 10, for the curvature as a commutator and the square splitting.</li>
+<li>L. H. Ryder, <em>Quantum Field Theory</em> (Cambridge University Press, 2nd ed., 1996), Chapter 3, for the covariant derivative's symbol and the constant-background dispersion.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

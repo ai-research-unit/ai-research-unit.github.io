@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Fourier Transform and the Proca Equation in Biquaternionic Form — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-fourier-transform-and-the-proca-equation-in-biquaternionic-form"><strong>The Fourier Transform and the Proca Equation in Biquaternionic Form</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The Proca subject is already three articles deep, and each of them counts something different.</strong> <em>The Proca Equation: Massive Spin 1 in Biquaternionic Form</em> writes the equation, derives the Lorenz condition, and counts three real polarisation directions at each wave number. <em>Degenerate Solutions of the Biquaternionic Proca Equation</em> classifies the field values at which the potential loses its causal character. <em>Wave–Particle Duality and the Count of Degrees of Freedom</em> counts the rank of left multiplication by $i\tilde K_\Phi$ on the vector part and reads three off the light cone and two on it. <strong>None of the three counts the rank of the Proca operator itself</strong>, and that is the number this article computes.</p>
+<p><strong>The operator's symbol is a four-by-four matrix, and it is the first in the corpus whose rank moves.</strong> The Klein–Gordon symbol is one scalar, the Schrödinger symbol is one affine scalar, and the Dirac symbol is a two-by-two matrix whose rank is two wherever it does not vanish. The Proca symbol has rank four off the mass shell and rank one on it. <strong>Three numbers follow from that single fact</strong> — four off, one on, three in the kernel — and they are the whole of the article's content.</p>
+<p><strong>The determinant is a product of two factors with different multiplicities, and the multiplicities are the physics.</strong> In the four-component reading the symbol is $\sigma^\mu{}_\nu=(k^{2}-k_m^{2})\delta^\mu{}_\nu-k^\mu k_\nu$, whose determinant is $-k_m^{2}(k^{2}-k_m^{2})^{3}$. The cubic factor is the three polarisations of the parent's count; the single factor $-k_m^{2}$ is the longitudinal direction, and it does not vanish on the shell. <strong>The mass is what keeps one direction out of the kernel</strong>, and it is why the count is three and not two.</p>
+<p><strong>The rank is the same for the massive and the massless field, and the difference is one membership.</strong> On the mass shell the kernel is the Lorenz plane, three-dimensional, in both cases. The massless field's kernel contains one more direction than the Lorenz plane does — the wave number itself — and that direction is the gauge orbit. So the two fields have the same kernel dimension and different propagating counts, and the difference is whether $k^\mu$ is annihilated. <strong>That is the frequency-space form of "the Lorenz condition is implied here and chosen there"</strong>, and it is checked to machine precision.</p>
+<p><strong>The massless limit is a failure of invertibility and not a discontinuity of the spectrum.</strong> As $k_m\to0$ the determinant does not merely acquire a new zero: it vanishes at every wave number, so the symbol is invertible nowhere in the limit. The parent's discontinuous degrees-of-freedom count and the Stueckelberg device are the position-space faces of this one fact.</p>
+<p><strong>The symbol is even in the four-wave-number, and that evenness is a structural slot.</strong> $\sigma(-\tilde K_\Phi)=\sigma(\tilde K_\Phi)$, exactly, and the same holds for the Klein–Gordon scalar; the Dirac symbol is odd and the Schrödinger symbol is neither. The polar companion reads the evenness as the absence of a central bracket, and the variational companion reads it as the two-valued inversion of the symbol in the frequency. <strong>The three articles of this set are three registers of one matrix.</strong></p>
+<p><strong>The denial is stated plainly.</strong> The transform acts on $\mathbb{B}$-valued functions and returns $\mathbb{B}$-valued functions; no material-sector field is carried to an informational-sector one. <strong>There is no new solution and no new equation</strong>; the equation, the Lorenz condition and the polarisations are the parents', and what is added is the rank, the multiplicity and the membership.</p>
+<h2 id="conventions">Conventions</h2>
+<p>The algebra and the units are those of <em>Algebra and Element Conventions</em>, the gradient and the d'Alembertian those of <em>Operator and Calculus Conventions</em>, the four products those of <em>Product and Form Conventions</em>, the two forms those of <em>Norm and Pairing Conventions</em>, the units and the material time those of <em>Physics Units and Common Elements Conventions</em>, and the sector bookkeeping those of <em>Mirror Biquaternions and the Phy–Psy Switch</em>. The transform is the one of <em>Derivatives, Fields and Transforms</em>, whose symbol rule is quoted in derived form and not re-derived:</p>
+<p>$$
+\tilde\nabla_\Phi\longmapsto i\tilde K_\Phi ,
+\qquad
+\Box_\Phi\longmapsto-\langle\tilde K_\Phi\rangle_\natural=k^{2} ,
+\qquad
+\tilde K_\Phi=ik_t'e_t+\vec k_\Phi ,
+\qquad
+k_t'=\frac{\omega}{c},
+\qquad
+k^{2}=k_t'^{2}-\vec k_\Phi^{2}.
+$$</p>
+<p><strong>The potential and its Lorenz form.</strong> The potential is $\tilde A_\Phi=i\,a_t'e_t+\vec A$ with $a_t'$ and $\vec A$ real, and on a mode its two invariants are the four-vector $(a_t',\vec a)$ and the divergence. Write</p>
+<p>$$
+[kA]:=k_t'a_t'-\vec k_\Phi\cdot\vec a ,
+$$</p>
+<p>the material contraction of the four-wave-number with the amplitude, so that $S=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi)$ has symbol $-i[kA]$ on a mode. <strong>$[kA]$ is the Lorenz form of the amplitude</strong>, and the sign is the one the parent's plane-wave section fixes: it finds $\mathrm{Sc}(i\tilde P_\Phi^{\natural}\tilde A_{\Phi,0})=-\frac{\omega}{c}A_t+i\vec k_\Phi\cdot\vec a$, which is $i[kA]$ with $A_t=i a_t'$.</p>
+<p><strong>The symbol of the Proca operator, in the four-component reading.</strong> The parent's component equation is $\partial_\mu F_{\mu\nu}=-k_m^{2}A_\nu$ with $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$, and its symbol is the matrix</p>
+<p>$$
+(\sigma A)_\mu=\bigl(k^{2}-k_m^{2}\bigr)A_\mu-k_\mu\,[kA] ,
+$$</p>
+<p>so that the equation of motion on a mode is $\sigma A=0$. <strong>The first term is the Klein–Gordon symbol acting on each component; the second is the rank-one piece that the Lorenz form subtracts</strong>, and the whole article is the study of the competition between them. The biquaternion letter for the same object is $k^{2}-k_m^{2}$ less the image of $\tilde\nabla_\Phi\,\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\,\cdot)$, and §<em>The Symbol</em> states it once in each register.</p>
+<p><strong>The overall sign is a convention and the multiplicities are not.</strong> The corpus's series convention gives $\Box_\Phi\mapsto k^{2}$; the mostly-minus convention gives the negative. Every statement below is about a determinant's factors, a rank, or a membership, and none of the three changes under an overall sign. The sign is fixed once here and not renegotiated.</p>
+<p><strong>The three denials, stated once.</strong> First, the transform carries $\mathbb{B}$-valued functions to $\mathbb{B}$-valued functions and never exchanges sectors. Second, a symbol exists only where the coefficients are constant, which the free equation satisfies identically. Third, a Legendre transform between a field and its conjugate momentum grants no Fourier reading, and nothing below is one.</p>
+<h2 id="the-symbol">The Symbol</h2>
+<p><strong>In the algebra the symbol is one number less one rank-one element.</strong> The Proca operator is $\tilde\nabla_\Phi\,\mathrm{Vect}\bigl((\tilde\nabla_\Phi)^{\natural}\,\cdot\bigr)-k_m^{2}$, and the composition of the gradient with its conjugate is $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box_\Phi$, a central scalar operator. The two pieces that compose it have the images</p>
+<p>$$
+\tilde\nabla_\Phi\,\mathrm{Sc}\bigl((\tilde\nabla_\Phi)^{\natural}\,\cdot\bigr)\longmapsto-i\tilde K_\Phi\,[kA] ,
+\qquad
+\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}\longmapsto-\langle\tilde K_\Phi\rangle_\natural=k^{2} ,
+$$</p>
+<p>so the symbol is $k^{2}-k_m^{2}$ less the rank-one piece $-i\tilde K_\Phi[kA]$, whose component reading is the $-k_\mu[kA]$ of the display below. <strong>The first piece is central and the second is not</strong>: a central scalar alone would give four equal eigenvalues and four equal directions, and the rank-one part is what breaks the four into three and one.</p>
+<p><strong>In components the same matrix is displayed once and used throughout.</strong> With the four-vector amplitude $(a_t',\vec a)$ and the four-wave-number $(k_t',\vec k_\Phi)$,</p>
+<p>$$
+\sigma=\bigl(k^{2}-k_m^{2}\bigr)\delta^\mu{}_\nu-k^\mu k_\nu ,
+\qquad
+k^\mu=\bigl(k_t',-\kappa_x,-\kappa_y,-\kappa_z\bigr) ,
+\qquad
+k_\nu=\bigl(k_t',\kappa_x,\kappa_y,\kappa_z\bigr) ,
+$$</p>
+<p>which is the display the parents use when they contract every pair with $\delta_{\mu\nu}$ and put the metric into $A_0=i a_t'$. <strong>The matrix is real and symmetric in the material metric, so its eigenvectors are orthogonal and its eigenvalues real</strong>, and no spectral question beyond linear algebra arises anywhere in the article.</p>
+<p><strong>The field strength's symbol carries no mass, and that is where the mass sits.</strong> $\tilde F$ has symbol the antisymmetric part of $i\tilde K_\Phi^{\natural}\tilde A$, whose components are $i(k_\mu a_\nu-k_\nu a_\mu)$ up to the polarisation normalisation of the parents. The mass enters the equation only through the $-k_m^{2}\delta$ term, so <strong>the mass is the identity on the amplitude space</strong>. That sentence is what §<em>The Kernel Is the Lorenz Plane</em> measures and what the variational companion uses.</p>
+<h2 id="the-determinant-and-the-two-multiplicities">The Determinant and the Two Multiplicities</h2>
+<p><strong>The determinant is the product of the two factors, and its verification is exact.</strong> Writing $m^{2}:=k^{2}-k_m^{2}$ for the repeated eigenvalue,</p>
+<p>$$
+\boxed{\;\det\sigma=-k_m^{2}\bigl(k^{2}-k_m^{2}\bigr)^{3}\;}
+$$</p>
+<p>with the eigenvalue list $\{m^{2},m^{2},m^{2},-k_m^{2}\}$. The check is direct evaluation of the determinant against the closed form, and it agrees to the printed digits:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$k_t'$</th>
+<th>$k^{2}-k_m^{2}$</th>
+<th>eigenvalues</th>
+<th>$\det\sigma$</th>
+<th>$-k_m^{2}(k^{2}-k_m^{2})^{3}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0.5$</td>
+<td>$-0.38$</td>
+<td>$\{-0.49,-0.38,-0.38,-0.38\}$</td>
+<td>$+2.68872800\times10^{-2}$</td>
+<td>$+2.68872800\times10^{-2}$</td>
+</tr>
+<tr>
+<td>$\sqrt{0.63}$</td>
+<td>$0$</td>
+<td>$\{-0.49,0,0,0\}$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$1.6$</td>
+<td>$+1.93$</td>
+<td>$\{-0.49,1.93,1.93,1.93\}$</td>
+<td>$-3.52263793$</td>
+<td>$-3.52263793$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The wave vector is $\vec k_\Phi=(0.3,0.2,0.1)$ throughout and $k_m=0.7$, so $k_m^{2}=0.49$ and $\vec k_\Phi^{2}=0.14$.</p>
+<p><strong>The cubic factor is the three polarisations and the linear factor is the longitudinal direction.</strong> A matrix whose eigenvalues are $\{m^{2},m^{2},m^{2},-k_m^{2}\}$ says exactly that: three directions scale with the Klein–Gordon symbol and one does not. <strong>The parent's "four components minus one constraint leaves three" is this multiplicity</strong>, and what the article adds is that the factor the constraint removes is the linear one.</p>
+<p><strong>The vanishing of the determinant is one condition and it is the mass shell.</strong> $\det\sigma=0$ requires $k^{2}=k_m^{2}$, since $k_m\neq0$; the second factor is a constant and never vanishes for a massive field. <strong>So the symbol is singular on one surface and nowhere else</strong>, and the surface is the dispersion relation the parent derives by substitution. The two derivations agree and neither needs the other: the parent's is a dispersion, this one is a singularity.</p>
+<p><strong>The multiplicities survive at $k_m=0$ only as a limit, and the limit is degenerate.</strong> Setting $k_m=0$ makes the linear factor vanish identically, so the determinant is zero for every $k$ and the multiplicity structure collapses: what was a three-fold surface becomes a four-fold identity. <strong>§<em>The Massless Limit Is a Failure of Invertibility</em> is that collapse read as a physical statement</strong>, and it is why the massless theory is not the continuous endpoint of the massive one.</p>
+<h2 id="the-rank-on-and-off-the-shell">The Rank, On and Off the Shell</h2>
+<p><strong>Off the shell the symbol is invertible and the kernel is empty.</strong> At $k_t'=1$, $\vec k_\Phi=(0.3,0.2,0.1)$ and $k_m=0.7$ the singular values are $\{0.948946,\,0.37,\,0.37,\,0.191054\}$, so the rank is four and $\dim\ker\sigma=0$. <strong>The smallest singular value is $0.191$, not small</strong>: the symbol is comfortably invertible, and the propagator exists with no gauge ambiguity to fix.</p>
+<p><strong>On the shell the rank is one.</strong> At $k_t'=\sqrt{0.63}$ the singular values are $\{0.77,0,0,0\}$, so the rank is one and the kernel is three-dimensional. <strong>The one surviving direction is the wave number itself</strong>, and the three annihilated directions span the Lorenz plane. The two statements are one computation:</p>
+<p>$$
+\sigma k^\mu=-k_m^{2}k^\mu ,
+\qquad
+\sigma A=0\iff[kA]=0\ \text{and}\ k^{2}=k_m^{2},
+$$</p>
+<p>the first checked to $1.1\times10^{-16}$ on the shell, the second being the eigenvalue statement read as a kernel.</p>
+<p><strong>The rank is a number the corpus has not yet reported for this operator.</strong> <em>Wave–Particle Duality and the Count of Degrees of Freedom</em> reports the rank of a different map, and §<em>The Count, and the Two Ranks in the Corpus</em> sets the two side by side. <strong>The two ranks answer different questions, and their agreement on the number three is a check rather than a duplication.</strong></p>
+<p><strong>Off the shell nothing propagates, and that is the same statement as the dispersion relation.</strong> The rank-four case says that $\sigma A=0$ has only the trivial solution away from $k^{2}=k_m^{2}$. <strong>A non-zero amplitude at an off-shell wave number does not solve the equation at all</strong>, which is the frequency-space form of the dispersion's being an equation rather than a branch choice.</p>
+<h2 id="the-kernel-is-the-lorenz-plane">The Kernel Is the Lorenz Plane</h2>
+<p><strong>The kernel is three-dimensional and every vector in it satisfies the Lorenz condition.</strong> The three null vectors of the symbol at $k_t'=\sqrt{0.63}$ give</p>
+<p>$$
+[kA]=+3.08\times10^{-17},\qquad -1.72\times10^{-17},\qquad +2.88\times10^{-17},
+$$</p>
+<p>each of unit length and each annihilated to $9\times10^{-17}$. <strong>The kernel is the Lorenz plane</strong>, and it is the same plane that the parent's §<em>The Lorenz Condition on a Plane Wave</em> identifies by fixing $A_t=i(c/\omega)\vec k_\Phi\cdot\vec a$.</p>
+<p><strong>The two derivations of the plane are independent and they coincide.</strong> The parent differentiates the equation, takes the scalar part, and finds $k_m^{2}S=0$. The transform reads the symbol's kernel and finds the same plane. <strong>One is a divergence and the other is a null space</strong>, and their agreement is the reason the constraint is not an extra condition imposed on the amplitude: it is the set of directions the operator does not see.</p>
+<p><strong>The fourth direction is not annihilated, and its eigenvalue is the mass.</strong> The wave number itself is an eigenvector with eigenvalue $-k_m^{2}$, verified to $1.1\times10^{-16}$. <strong>So the amplitude along $k^\mu$ is not removed by the operator; it is multiplied by $-k_m^{2}$</strong>, and the equation sets it to zero only through its coupling to the transverse part. That is what "the longitudinal mode is physical for a massive field" means in the symbol's language, and it is the exact counterpart of the massless case, where the same direction is annihilated outright.</p>
+<p><strong>The polarisation count is read off the kernel and not off the rank.</strong> Three annihilated directions and one amplified direction, and the amplified one is the direction whose removal would leave two. <strong>The count is the kernel's dimension</strong>, and §<em>The Count, and the Two Ranks in the Corpus</em> shows that the same sentence gives two for the massless field once the gauge orbit is subtracted.</p>
+<h2 id="the-count-and-the-two-ranks-in-the-corpus">The Count, and the Two Ranks in the Corpus</h2>
+<p><strong>Two matrices, two ranks, one word.</strong> The corpus counts degrees of freedom twice, and the two computations must be distinguished once and then never confused:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>dof-count article</th>
+<th>this article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>map</td>
+<td>left multiplication by $i\tilde K_\Phi$</td>
+<td>the Proca symbol $\sigma^\mu{}_\nu$</td>
+</tr>
+<tr>
+<td>domain and codomain</td>
+<td>vector part, $3\to4$</td>
+<td>four-vector, $4\to4$</td>
+</tr>
+<tr>
+<td>off the shell / off the cone</td>
+<td>rank $3$</td>
+<td>rank $4$</td>
+</tr>
+<tr>
+<td>on the shell / on the cone</td>
+<td>rank $2$</td>
+<td>rank $1$</td>
+</tr>
+<tr>
+<td>what moves</td>
+<td>one direction joins the kernel on the cone</td>
+<td>the whole transverse plane joins the kernel</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The first column's rank counts how many field strengths the gradient can produce; the second counts how many amplitudes the equation leaves free.</strong> Both report three propagating directions for the massive field, from different numbers, and the agreement is the check that neither computation has lost a factor.</p>
+<p><strong>The massless column is where the two computations separate visibly.</strong> For $k_m=0$ the symbol has rank three off the cone and one on it, and the count follows from one formula applied four times:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>surface</th>
+<th>rank</th>
+<th>$\dim\ker$</th>
+<th>$k^\mu$ in kernel</th>
+<th>gauge orbit</th>
+<th>count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Proca</td>
+<td>$k^{2}=k_m^{2}$</td>
+<td>$1$</td>
+<td>$3$</td>
+<td>no</td>
+<td>$0$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>Proca</td>
+<td>$k^{2}\neq k_m^{2}$</td>
+<td>$4$</td>
+<td>$0$</td>
+<td>—</td>
+<td>—</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>Maxwell</td>
+<td>$k^{2}=0$</td>
+<td>$1$</td>
+<td>$3$</td>
+<td>yes</td>
+<td>$1$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>Maxwell</td>
+<td>$k^{2}\neq0$</td>
+<td>$3$</td>
+<td>$1$</td>
+<td>yes</td>
+<td>$1$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Read the fourth column: it is the whole difference between the two theories.</strong> The two fields have the same rank on their respective surfaces and the same kernel dimension, and they differ in whether the wave number belongs to the kernel. <strong>The mass's entire effect on the rank structure is one membership</strong>, and everything the parent says about gauge freedom follows from it.</p>
+<p><strong>The count is the kernel's dimension minus the gauge orbit's dimension inside it.</strong> For the Proca field on the shell that is $3-0=3$; for the Maxwell field on the cone it is $3-1=2$. <strong>The formula is the corpus's, and the article uses it four times rather than asserting the answers separately</strong>, because a count derived once from one formula cannot drift between the rows.</p>
+<h2 id="the-massless-limit-is-a-failure-of-invertibility">The Massless Limit Is a Failure of Invertibility</h2>
+<p><strong>Setting the mass to zero removes the symbol's invertibility everywhere at once.</strong> The determinant's linear factor is $-k_m^{2}$, so at $k_m=0$ the determinant vanishes identically. The approach is smooth in the numbers and singular in the structure:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$k_m$</th>
+<th>$\lvert\det\sigma\rvert$</th>
+<th>$s_{\min}/s_{\max}$</th>
+<th>rank</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0.7$</td>
+<td>$2.083$</td>
+<td>$2.002\times10^{-1}$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$0.3$</td>
+<td>$0.7418$</td>
+<td>$3.403\times10^{-2}$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$0.1$</td>
+<td>$9.261\times10^{-2}$</td>
+<td>$3.704\times10^{-3}$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$0.03$</td>
+<td>$8.444\times10^{-3}$</td>
+<td>$3.325\times10^{-4}$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$0$</td>
+<td>$2.947\times10^{-15}$</td>
+<td>$1.089\times10^{-16}$</td>
+<td>$3$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The wave number is fixed at $k_t'=1.5$ with $\vec k_\Phi=(0.3,0.2,0.1)$, so no entry is near its own shell: $k^{2}-k_m^{2}$ runs from $2.035$ at $k_m=0.7$ to $2.11$ at $k_m=0$, and the determinant falls by twelve orders of magnitude while that factor moves by four per cent. <strong>The fall is entirely the linear factor.</strong></p>
+<p><strong>The limit is therefore not a limit of symbols.</strong> Every $k_m>0$ gives an invertible symbol off the shell and a propagator with one pole on it. At $k_m=0$ there is no invertible point, the propagator is not defined as an inverse, and the gauge orbit appears. <strong>That is the frequency-space form of the parent's statement that no sequence of Proca fields converges to a Maxwell field with a smooth third state</strong>, and it is why the Stueckelberg device has to add a field rather than perturb one.</p>
+<p><strong>The ratio $s_{\min}/s_{\max}$ is the quantitative version of the same statement.</strong> It falls by fifteen orders of magnitude across the table while the rank stays four, which is the numerical signature of a matrix approaching singularity along a fixed direction: the direction is the longitudinal one, its eigenvalue is $-k_m^{2}$, and the approach is linear in $k_m^{2}$.</p>
+<h2 id="the-symbol-is-even">The Symbol Is Even</h2>
+<p><strong>The Proca symbol is even in the four-wave-number, exactly.</strong> $\sigma(-\tilde K_\Phi)=\sigma(\tilde K_\Phi)$ to machine precision, $0.00\times10^{0}$ in the largest entry difference, because both terms are quadratic: $k^{2}$ is a square and $k^\mu k_\nu$ is a product of two. <strong>The Klein–Gordon scalar is even for the same reason, the Dirac symbol is odd, and the Schrödinger symbol is neither.</strong></p>
+<p><strong>The parity is a slot and not a coincidence.</strong> The gradient's symbol is $i\tilde K_\Phi$ and the Proca operator is second order, so its symbol is quadratic in that symbol; an operator of even order in a first-order symbol is even. <strong>The evenness is therefore the statement that the Proca operator is second order</strong>, and it is the property the polar companion turns into the absence of a central bracket and the variational companion turns into a two-valued inversion.</p>
+<p><strong>Two consequences are used by the sibling articles and derived here.</strong> First, the frequency roots come in the pair $\pm\sqrt{\vec k_\Phi^{2}+k_m^{2}}$, so the inversion of $\sigma=0$ for $\omega$ is two-valued and the particle–antiparticle pairing is the reflection $k_t'\mapsto-k_t'$. Second, the symbol cannot distinguish the sign of the energy, so no statement about a preferred sign can be a statement about the symbol. <strong>Both are properties of an even quadratic form and neither is a property of the Proca equation in particular.</strong></p>
+<p><strong>What the parity does not say is anything about the amplitude's sign.</strong> The evenness is in the wave number and not in the amplitude. The amplitude's sign is the branch of the polar chart, and the two are independent. <strong>The article states them as two because they are two.</strong></p>
+<h2 id="limits">Limits</h2>
+<p><strong>The constant-coefficient licence bounds every statement here.</strong> The symbol is a matrix of numbers only where the coefficients are constant, which the free equation satisfies. With a connection the symbol is a matrix of operators, and the coupled companion treats that case; nothing here anticipates it.</p>
+<p><strong>The rank is a count of amplitude directions and not of states.</strong> That a direction is a state is the corpus's identification, imported by <em>Wave–Particle Duality and the Count of Degrees of Freedom</em> at its §<em>Limits</em>, and the article does not re-argue it. <strong>What is proved here is the rank and the kernel; what is imported is the reading.</strong></p>
+<p><strong>The four-component reading is a reading.</strong> The Proca equation is one biquaternion equation for one element, and the four-vector is the component display that the parents use throughout. The symbol's rank is the same in the algebra and in components because the two carriers have the same real dimension, and the article claims no more than that.</p>
+<p><strong>The denial, once more.</strong> No sector is exchanged at any step. The symbol is a matrix multiplying an amplitude, the kernel is a subspace of amplitudes, and the count is a dimension. <strong>None of the three is a statement about $\mathbb{B}_\Phi$ and $\mathbb{B}_\Psi$.</strong></p>
+<h2 id="open-questions">Open Questions</h2>
+<p><strong>Whether the cubic multiplicity has a reading that is not the imported one is open.</strong> The cubic factor counts the directions the symbol scales equally, and the corpus reads those as the three polarisations. Whether the multiplicity can be identified with the count <em>without</em> the identification of a direction with a state — that is, whether the algebra alone supplies the reading — is not settled here, and the article records the import rather than hiding it.</p>
+<p><strong>Whether the massless limit has a symbol at all is open.</strong> The limit's symbol is identically zero, so the limit of the operators is not the operator of a limit theory. The Stueckelberg form is one way to make a limiting family, and whether it is the only one is the parent's question; nothing above bears on it.</p>
+<p><strong>The spin-one content is not located in the symbol.</strong> The angular-momentum current's vector-index part is the variational parent's subject, and the symbol's eigenvalues carry no spin label. Whether the eigenvalue $-k_m^{2}$ and the longitudinal polarisation are the same object under a rotation is a question the article raises and does not answer.</p>
+<h2 id="summary">Summary</h2>
+<p>The Proca operator's symbol, in the four-component reading, is $\sigma^\mu{}_\nu=(k^{2}-k_m^{2})\delta^\mu{}_\nu-k^\mu k_\nu$ with $k^{2}=k_t'^{2}-\vec k_\Phi^{2}$ and $k_t'=\omega/c$. Its eigenvalues are $\{k^{2}-k_m^{2},k^{2}-k_m^{2},k^{2}-k_m^{2},-k_m^{2}\}$ and its determinant is $-k_m^{2}(k^{2}-k_m^{2})^{3}$, verified against direct evaluation at $k_t'=0.5$, $\sqrt{0.63}$ and $1.6$ with $k_m=0.7$.</p>
+<p>Off the mass shell the rank is four, the kernel is empty, and the symbol is invertible with smallest singular value $0.191$. On the shell the rank is one, the kernel is three-dimensional, and it is the Lorenz plane: the three null vectors satisfy $[kA]=0$ to $3\times10^{-17}$. The wave number itself is an eigenvector with eigenvalue $-k_m^{2}$, verified to $1.1\times10^{-16}$, so the longitudinal amplitude is multiplied rather than annihilated. <strong>That is why the massive field has three polarisations and not two.</strong></p>
+<p>The count is the kernel's dimension minus the gauge orbit's dimension inside it: $3-0=3$ for the Proca field on the shell and $3-1=2$ for the Maxwell field on the cone. <strong>The two fields have the same rank and the same kernel dimension and differ in one membership</strong> — whether $k^\mu$ is annihilated. That single fact is the frequency-space form of "the Lorenz condition is implied here and chosen there".</p>
+<p>The massless limit is a failure of invertibility: $\lvert\det\sigma\rvert$ falls from $2.083$ to $2.9\times10^{-15}$ as $k_m$ goes from $0.7$ to $0$ at a wave number four per cent from its own shell, which is the linear factor's vanishing and nothing else. The symbol is even in the wave number to machine precision, and that evenness is the second order of the operator — read by the polar companion as an absent bracket and by the variational companion as a two-valued inversion.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde K_\Phi=ik_t'e_t+\vec k_\Phi$</td>
+<td>The four-wave number; $k_t'=\omega/c$</td>
+</tr>
+<tr>
+<td>$k^{2}=k_t'^{2}-\vec k_\Phi^{2}$</td>
+<td>The interval in wave numbers; the Klein–Gordon symbol</td>
+</tr>
+<tr>
+<td>$k_m=mc/\hbar$</td>
+<td>The mass wave number; $k_m^{2}=0.49$ at $k_m=0.7$</td>
+</tr>
+<tr>
+<td>$\tilde A_\Phi=i\,a_t'e_t+\vec A$</td>
+<td>The potential; $(a_t',\vec a)$ its four-vector amplitude</td>
+</tr>
+<tr>
+<td>$[kA]=k_t'a_t'-\vec k_\Phi\cdot\vec a$</td>
+<td>The Lorenz form of the amplitude; symbol of $S$ up to $-i$</td>
+</tr>
+<tr>
+<td>$\sigma^\mu{}_\nu=(k^{2}-k_m^{2})\delta^\mu{}_\nu-k^\mu k_\nu$</td>
+<td>The Proca symbol</td>
+</tr>
+<tr>
+<td>$\{m^{2},m^{2},m^{2},-k_m^{2}\}$, $m^{2}=k^{2}-k_m^{2}$</td>
+<td>The eigenvalues; three transverse, one longitudinal</td>
+</tr>
+<tr>
+<td>$\det\sigma=-k_m^{2}(k^{2}-k_m^{2})^{3}$</td>
+<td>The determinant; multiplicities $1$ and $3$</td>
+</tr>
+<tr>
+<td>rank $4$ / rank $1$</td>
+<td>Off the shell / on the shell</td>
+</tr>
+<tr>
+<td>$L_{i\tilde K_\Phi}$</td>
+<td>Left multiplication by the gradient's symbol on the vector part; the dof-count article's map</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Proca Equation: Massive Spin 1 in Biquaternionic Form</em>, for the equation, the Lorenz condition, the plane waves and the count of three polarisations.</li>
+<li><em>Degenerate Solutions of the Biquaternionic Proca Equation</em>, for the lightlike set of the potential and the two cones.</li>
+<li><em>Wave–Particle Duality and the Count of Degrees of Freedom</em>, for the rank of the gradient on the vector part and for the import of the reading.</li>
+<li><em>The Fourier Transform and the Proca Equation in Biquaternionic Polar Variables</em>, for the same matrix read in the word and for the absent bracket.</li>
+<li><em>The Fourier Transform and the Variational Principle and the Proca Equation in Biquaternionic Form</em>, for the quadratic form whose stationarity is $\sigma A=0$ and for the longitudinal coefficient.</li>
+<li><em>The Fourier Transform and the Coupled Proca Equation in Biquaternionic Form</em>, for the symbol with a connection, where a curvature term joins the translation.</li>
+<li><em>The Spin-One Fluid of the Biquaternion Proca Field</em>, for the Lorenz condition as the field's own continuity equation.</li>
+<li><em>Derivatives, Fields and Transforms</em>, for the symbol rule and the transform's conventions.</li>
+<li><em>Operator and Calculus Conventions</em>, for $\partial/\partial R_t=-i\,\partial/\partial r_t'$ and the sign of the d'Alembertian.</li>
+<li>A. Proca, "Sur la théorie ondulatoire des électrons positifs et négatifs," <em>Journal de Physique et le Radium</em> <strong>7</strong> (1936) 347–353, for the equation and the constraint.</li>
+<li>C. Itzykson and J.-B. Zuber, <em>Quantum Field Theory</em> (McGraw-Hill, 1980), Chapter 3, for the massive vector propagator and its longitudinal residue.</li>
+<li>S. Weinberg, <em>The Quantum Theory of Fields</em>, Volume I (Cambridge University Press, 1995), Chapter 5, for the counting of polarisations by constraint.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
