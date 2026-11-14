@@ -1,0 +1,621 @@
+# __The Operators of the Algebra__
+
+## Introduction
+
+**This entry reads the thirteenth section of the mathematical category: the algebra acting on itself.**
+
+$$
+L_{\tilde Q}(\tilde X)=\tilde Q\tilde X,\qquad
+R_{\tilde Q}(\tilde X)=\tilde X\tilde Q,\qquad
+T_{\tilde Q,\tilde P}(\tilde X)=\tilde Q\tilde X\tilde P .
+$$
+
+**The first claim is that there are three shapes of action and no fourth.** An operator of the algebra multiplies on the left, or on the right, or on both sides. Each shape is a map from the algebra to itself, so each is an endomorphism of a complex vector space of dimension four. A general endomorphism is none of the three, and the difference between the general case and the three shapes is measured by a single number, the length.
+
+**The second claim is that the three shapes fill the operator space in a ladder, and the ladder is the whole of the arithmetic of this section.** The scalars are one complex dimension. Each one-sided family is four. The two families together span seven. The operator space is sixteen. The two-sided family is not a subspace at all: it is a cone of complex dimension seven inside the sixteen, closed under composition and not under addition. The failure of addition is not a defect and is the origin of the length: to write a general endomorphism one needs a sum of two-sided operators, and the least number of terms is at most four.
+
+**The third claim is that the side of an operator is not a sign.** The two one-sided families are exchanged by an involution of the operator space, and that involution is antimultiplicative. There is no multiplicative function on the operator space that is $+1$ on the left family and $-1$ on the right family, because at the unit the two families coincide and the unit of a multiplicative function is one. The word *chirality* names the side, and the side is a coordinate of the operator and not a grading of it. That distinction is the difference between a chirality that physics can use and a chirality that physics has to postulate.
+
+**The fourth claim is that each of the four forms of the algebra carries its own adjoint, so an operator is self-adjoint for four different conditions.** They agree only on the centre, and an operator built from a real mixed parameter is self-adjoint for none of them. Of the five operator families named after the four adjoints, exactly one keeps both sectors of the algebra in place for every parameter: the Hermitian pair, whose two-sided member acts by congruence.
+
+**The fifth claim is the reading, and it is stated here so that it can be judged against the mathematics.** One operator, three tasks. A two-sided operator with the inverse element in the second slot is a change of frame. A two-sided operator with an idempotent in both slots is a measurement, and its rank is one. A one-sided operator of an exponential is a flow on the algebra, and a conjugation by the exponential is a flow on the sectors. The three readings are not three constructions: they are three choices of the pair, and the element's sector decides which regime of the flow is in force.
+
+**The strongest objection is that this is $M_4(\mathbb{C})$ with new letters.** It is: the operator space is $M_4(\mathbb{C})$, the one-sided families are two four-dimensional subspaces, the two-sided set is a cone of rank-one coefficient matrices, and every statement of the section can be translated into matrices. The answer is that the translation loses three things that the section is about. It loses the parametrisation: no matrix in $M_4(\mathbb{C})$ comes with an element behind it, and the element carries a norm, a spectrum and a sector. It loses the two forms and the two sectors, which are what decide self-adjointness and stability. And it loses the question that the physics asks, which is never "what is this matrix" but "which element acts, and in which regime".
+
+**A second objection is that the three readings are standard.** A conjugation is a change of frame, a rank-one map is a collapse, and an exponential is a flow, in any algebra. The answer is that what the algebra adds is the identity of the actor. The same element supplies the frame, the measurement and the flow, and its sector, its norm and its spectrum travel with it. A frame change by a null element is not a frame change at all: it is a rank-one map, and the rank tells the reader that the transformation is not reversible.
+
+**The letters.** The argument is $\tilde X$. The parameters are $\tilde Q$ and $\tilde P$; the second parameter of a two-sided operator is written $\tilde P$ when the two are unrelated and $\tilde Q^{*}$ when the pair is Hermitian. The operators are $L_{\tilde Q}$, $R_{\tilde Q}$, $T_{\tilde Q,\tilde P}$, and the Hermitian pair is abbreviated $\mathrm{Sd}_{\tilde Q}=T_{\tilde Q,\tilde Q^{*}}$. The sets are $\operatorname{End}_L(\mathbb{B})$, $\operatorname{End}_R(\mathbb{B})$, $\operatorname{End}_{LR}(\mathbb{B})$ and $\operatorname{End}_{LR*}(\mathbb{B})$, abbreviated $L(\mathbb{B})$, $R(\mathbb{B})$ and so on where a set is used in an identity. The prime is the commutant. The swap of the two slots is $\sigma$, the quaternion conjugation is $\natural$, and the Hermitian conjugation is $*$. The four adjoints carry the marks $\approx$, $\natural$, $*$ and $\natural*$. The conventions are *Operator Family Conventions* and *Operator and Calculus Conventions*; this entry uses them and defines none of them.
+
+**Boundaries.** The algebra and its centre are *The Biquaternion Algebra*; the ambient operator space is *The Endomorphisms of the Biquaternion Algebra*; the four forms and the four norms are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the idempotents and the Peirce decomposition are *Idempotents*, *The Peirce Decomposition* and *Special Element and Peirce Conventions*; the sectors $\Sigma_{\varepsilon\eta}$ are *The Spectral Strata*; the matrix models are the three representation articles. No topology, no derivative and no dynamics appear.
+
+## The Source Table
+
+| Mathematical Content | Source Mathematical Article |
+| --- | --- |
+| the ambient operator space, the automorphism group, the derivations, the conjugate-linear maps | [The Endomorphisms of the Biquaternion Algebra](../articles_maths/the-endomorphisms-of-the-biquaternion-algebra.html) |
+| the two maps, linearity, injectivity by the unit probe, the two laws, the annihilators, the rank trichotomy, the invertibility criterion, the two centralisers and their seven-dimensional sum | [Operators Acting on One Side](../articles_maths/operators-acting-on-one-side.html) |
+| the exchange of the two sides, the two identities of $\natural$, the eight pairings and the measured failure off the centre | [The Transposition of the Two Sides](../articles_maths/the-transposition-of-the-two-sides.html) |
+| the cone of products, the composition law, the scaling orbit, the generation theorem, the plain adjoint, the isometries | [Operators Acting on Two Sides](../articles_maths/operators-acting-on-two-sides.html) |
+| the side as a label, the structure isomorphism, the swap, its two eigenspaces, the proof that no multiplicative sign separates the images | [Operator Chirality on the Biquaternion Algebra](../articles_maths/operator-chirality-on-the-biquaternion-algebra.html) |
+| the four adjoints, the five families, the self-adjointness table, the sector criterion and the failure of the four non-Hermitian families | [Adjoint Pair of $L$ and $R$ Operators](../articles_maths/adjoint-pair-of-l-and-r-operators.html) |
+| the Hermitian pair as two equations on one unknown, the transposition of the right member, the one-side pair and its second-order closure | [The Hermitian Pair of Operators Acting on One Side](../articles_maths/the-hermitian-pair-of-operators-acting-on-one-side.html) |
+| the real cone $\mathrm{Hp}_{\tilde Q}$, its multiplicativity, its spectrum $\lambda_i\bar\lambda_j$, its image $CO^{+}(1,3)$ | [The Hermitian Pair of Operators Acting on Two Sides](../articles_maths/the-hermitian-pair-of-operators-acting-on-two-sides.html) |
+| the three operators of the polar word, the doubling rule, the four-sector table of rank, spectrum, Jordan type and image | [Introduction to N and Spectrally Regular and Degenerate Operators](../articles_maths/introduction-to-n-and-spectrally-regular-and-degenerate-operators.html) |
+| the case-by-case computation of the eight sectors, one one-sided and one two-sided for each | [N-Regular, Spectrally Regular Operators Acting on One Side](../articles_maths/n-regular-spectrally-regular-operators-acting-on-one-side.html) and its seven companions |
+| the pair $(A,B)$ of matrices, the Kronecker display $B^{\mathsf T}\otimes A$, the rank formula, the composition and the inverse | [$M_2(\mathbb{C})$ Pauli Representation : Operators](../articles_maths/m2c-pauli-representation-operators.html) |
+| the sixteen products as a basis, the length theorem, the coefficient matrix and its rank | [The Two-Sided Operators Method to Build $M_4(\mathbb{C})$](../articles_maths/the-two-sided-operators-method-to-build-m4c.html) and [The Coefficient Matrix of a Two-Sided Operator: A Worked Computation](../articles_maths/the-coefficient-matrix-of-a-two-sided-operator-a-worked-computation.html) |
+| the operator basis of the Peirce frame and the sixteen lengths of the matrix units | [The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$](../articles_maths/the-operators-of-the-peirce-decomposition-of-m4c.html) |
+| the decomposition of an endomorphism into four rank-one terms, the Riesz identification, the weights of a left multiplier | [The SVD Decomposition of Endomorphisms of the Biquaternion Algebra](../articles_maths/the-svd-decomposition-of-endomorphisms-of-the-biquaternion-algebra.html) |
+
+**The first two rows own the section.** Everything else is either a form laid over the two families or a sector refined from them. The rows are ordered as the section is: the space, the sides, the product, the side label, the adjoints, the sectors, the matrices.
+
+## The Results in Brief
+
+**Dimensions.** $\operatorname{End}_{\mathbb{C}}(\mathbb{B})\cong M_4(\mathbb{C})$ has complex dimension $16$ and real dimension $32$. Each one-sided family is a complex four-dimensional subspace. Their sum is seven-dimensional and their intersection is the complex line of the identity. The two-sided set is a cone of complex dimension seven, not a subspace, and its complex span is everything.
+
+**Laws.** $L_{\tilde Q}L_{\tilde P}=L_{\tilde Q\tilde P}$, $R_{\tilde Q}R_{\tilde P}=R_{\tilde P\tilde Q}$, $L_{\tilde Q}R_{\tilde P}=R_{\tilde P}L_{\tilde Q}$, and $T_{\tilde Q,\tilde P}T_{\tilde R,\tilde S}=T_{\tilde Q\tilde R,\tilde S\tilde P}$.
+
+**The probe.** Each family returns its parameter at the unit: $L_{\tilde Q}(e_t)=R_{\tilde Q}(e_t)=\tilde Q$. Each is therefore injective, and the operator is zero exactly when the element is.
+
+**Rank.** The one-sided operator has rank $4$, $2$ or $0$: four on the units, two on the zero divisors, zero at zero. The two-sided operator has rank $0$, $1$, $2$ or $4$, never $3$.
+
+**Length.** Every endomorphism of $\mathbb{B}$ is a sum of at most four two-sided operators, and the least number is the rank of its coefficient matrix, a $4\times4$ matrix of complex numbers. A single two-sided operator is exactly an endomorphism of coefficient rank one.
+
+**The swap.** The map $\sigma$ that exchanges the two slots is linear, involutive, antimultiplicative, preserves rank and length, is not inner, and is the adjoint of the plain bilinear form $\mathrm{Sc}(\tilde X\tilde Y)$. Its fixed space has dimension $10$ and its negated space dimension $6$.
+
+**The adjoints.** Four adjoints and five families, the fifth being the Krein pair, whose form is the plain sesquilinear form. $(L_{\tilde Q})^{\approx}=R_{\tilde Q}$, $(L_{\tilde Q})^{*}=L_{\tilde Q^{*}}$, $(T_{\tilde Q,\tilde P})^{\approx}=T_{\tilde P,\tilde Q}$, $(T_{\tilde Q,\tilde P})^{*}=T_{\tilde Q^{*},\tilde P^{*}}$.
+
+**The sectors.** $T_{\tilde Q,\lambda\tilde Q^{*}}$ keeps both sectors exactly for real $\lambda$; a one-sided operator keeps a sector only for a real scalar. The Hermitian pair keeps both for every parameter.
+
+**The Hermitian pair.** $\mathrm{Hp}_{\tilde Q}=T_{\tilde Q,\tilde Q^{*}}$ is multiplicative, has spectrum $\{\lambda_i\bar\lambda_j\}$, trace $4\lvert Q_t\rvert^{2}$, determinant $\lvert N\rvert^{4}$, value $H(\tilde Q)$ at the identity, is singular exactly on the cone, and covers the group $CO^{+}(1,3)$ on the units.
+
+**The matrix image.** In the two-dimensional model a two-sided operator is the single Kronecker product $B^{\mathsf T}\otimes A$; the second slot enters transposed because the opposite algebra is the transposed one; the spectrum is the pairwise product of the two slot spectra; and the swap of the slots is the flip of the two factors.
+
+**The regimes.** On the four sectors the operators have rank $4$ with a doubled spectrum, rank $4$ with a Jordan block, rank $2$, and rank $2$ with a square-zero image; the two-sided operator replaces $\lambda_i$ by $\lambda_i\bar\lambda_j$ and drops to rank $1$ on the cone.
+
+## The Ambient Space
+
+**The operator space is the algebra's endomorphism algebra.** A complex-linear map $F:\mathbb{B}\to\mathbb{B}$ is determined by its values on the four units, so it is a $4\times4$ complex matrix, and the space of such maps has complex dimension sixteen. Written as an algebra under composition it is the full matrix algebra $M_4(\mathbb{C})$.
+
+**The sixteen products are a basis.** For a basis $e_\mu$ of the algebra, the sixteen operators $T_{e_\mu,e_\nu}$ are linearly independent, hence a basis of the sixteen-dimensional operator space. The proof is cleanest in a basis of matrix units $E_{jk}$, where
+
+$$
+T_{E_{jk},E_{lm}}(E_{rs})=\delta_{kr}\delta_{ls}E_{jm},
+$$
+
+so each operator returns a single matrix unit and reads one index from each of the four positions.
+
+**The structure isomorphism.** The assignment
+
+$$
+\Phi:\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\longrightarrow\operatorname{End}_{\mathbb{C}}(\mathbb{B}),\qquad
+\Phi(\tilde Q\otimes\tilde P)=L_{\tilde Q}R_{\tilde P}
+$$
+
+is an isomorphism of algebras. It is the coordinate in which the two sides of the multiplication become the two tensor factors, and in which the overlap of the two sides becomes the tensor of the two units. The tensor product has complex dimension sixteen, the operator space has complex dimension sixteen, and the sixteen products of units are the images of the sixteen pure tensors of a basis.
+
+**The four subsets.**
+
+| set | definition | complex dimension | object |
+| --- | --- | --- | --- |
+| $\operatorname{End}_L$ | $\{L_{\tilde Q}\}$ | $4$ | a subspace, a copy of $\mathbb{B}$ |
+| $\operatorname{End}_R$ | $\{R_{\tilde Q}\}$ | $4$ | a subspace, a copy of $\mathbb{B}_{\mathrm{opp}}$ |
+| $\operatorname{End}_{LR}$ | $\{L_{\tilde Q}R_{\tilde P}\}$ | $7$ effective | a cone, closed under composition |
+| $\operatorname{End}_{LR*}$ | $\{T_{\tilde Q,\tilde Q^{*}}\}$ | $7$ | a cone, the Hermitian pair |
+
+The two one-sided sets are subspaces and the two two-sided sets are not. The two-sided set carries eight complex parameters in two slots and the operator is unchanged under the scaling $(\tilde Q,\tilde P)\mapsto(\lambda\tilde Q,\lambda^{-1}\tilde P)$, which removes one complex parameter and leaves seven.
+
+**Inclusions and incomparability.** Each one-sided family sits inside the two-sided cone, because $L_{\tilde Q}=T_{\tilde Q,e_t}$ and $R_{\tilde P}=T_{e_t,\tilde P}$. The two one-sided families are incomparable: they meet in the scalars and nowhere else, since $L_{\tilde Q}=R_{\tilde Q}$ holds exactly for central $\tilde Q$. The Hermitian cone meets each one-sided family in the closed ray of nonnegative multiples of the identity, and the value there is $\lvert Q_t\rvert^{2}$: the operator $\mathrm{Sd}_{\omega}$ of a central element is $\lvert\omega\rvert^{2}\mathrm{id}$.
+
+**The ladder.** One, four, seven, sixteen. The first number is the scalars, the second a one-sided family, the third the two families together, the fourth the whole space. The four numbers measure how much of the operator space the algebra's own multiplication reaches.
+
+**What a general endomorphism is not.** A general endomorphism is a pattern of sixteen complex numbers with no element behind it. It has a rank, a determinant and a trace, and it has neither a norm, nor the spectrum of an element, nor a sector. That is the whole difference between this section and matrix theory: the section never asks what an operator does in the abstract, it asks which element does it.
+
+## The Two One-Sided Families
+
+**Linearity and injectivity.** Both maps $\tilde Q\mapsto L_{\tilde Q}$ and $\tilde Q\mapsto R_{\tilde Q}$ are complex-linear, and both are injective. The proof is one line: evaluate at the unit. In the left family $\tilde Qe_t=\tilde Q$ and in the right family $e_t\tilde Q=\tilde Q$, so the operator returns its own parameter.
+
+**The two laws.** Composition is the product, read on the side of the action:
+
+$$
+L_{\tilde Q}L_{\tilde P}=L_{\tilde Q\tilde P},\qquad
+R_{\tilde Q}R_{\tilde P}=R_{\tilde P\tilde Q}.
+$$
+
+The left family is a representation of the multiplicative monoid and the right family is an anti-representation. The two families commute element by element, $L_{\tilde Q}R_{\tilde P}=R_{\tilde P}L_{\tilde Q}$, because both sides are the single product $\tilde Q\tilde X\tilde P$ by associativity.
+
+**The image is the ideal.** The image of $L_{\tilde Q}$ is the set $\tilde Q\mathbb{B}=\{\tilde Q\tilde X\}$, which is a left ideal, and the image of $R_{\tilde Q}$ is the right ideal $\mathbb{B}\tilde Q$. The kernel of $L_{\tilde Q}$ is the right annihilator of $\tilde Q$ and the kernel of $R_{\tilde Q}$ is its left annihilator. Rank and annihilator are the same measurement seen from the two sides:
+
+$$
+\operatorname{rank}L_{\tilde Q}=4-\dim\ker L_{\tilde Q},\qquad
+\dim\ker L_{\tilde Q}=\dim\operatorname{ann}_R(\tilde Q).
+$$
+
+**The rank trichotomy.** The rank takes three values. For a unit it is $4$ and the image is the whole algebra. For a zero divisor it is $2$, the image is a complex plane, and the plane is totally isotropic. At zero it is $0$. A rank of $1$ or $3$ does not occur, because an element of a four-dimensional algebra either multiplies by an invertible element or annihilates a complex plane.
+
+**The invertibility criterion.** The operator $L_{\tilde Q}$ is invertible exactly when $\tilde Q$ is a unit, that is exactly when $N=\langle\tilde Q\rangle_{\natural}\neq0$. The inverse is $L_{\tilde Q^{-1}}$, and the determinant of the operator is $N^{2}$, the square of the algebraic norm.
+
+**The two centralisers.** Each family is the exact commutant of the other:
+
+$$
+L(\mathbb{B})'=R(\mathbb{B}),\qquad R(\mathbb{B})'=L(\mathbb{B}),\qquad L(\mathbb{B})\cap R(\mathbb{B})=\mathbb{C}\cdot\mathrm{id}.
+$$
+
+The first statement is proved by the unit probe: if $F$ commutes with every $L_{\tilde Q}$ then $F(\tilde X)=F(L_{\tilde X}e_t)=L_{\tilde X}F(e_t)=\tilde XF(e_t)$, so $F=R_{F(e_t)}$. The third statement is the noncommutativity of the algebra read in the operator space.
+
+**The sum is seven.** The two families are four-dimensional each and meet in a line, so their sum has dimension seven. Nine complex dimensions of the operator space are reached by neither family alone and by neither family's sum: they are reached only by sums of products.
+
+## The Two-Sided Operators
+
+**Definition and laws.** For two elements,
+
+$$
+T_{\tilde Q,\tilde P}(\tilde X)=\tilde Q\tilde X\tilde P,\qquad
+T_{\tilde Q,\tilde P}T_{\tilde R,\tilde S}=T_{\tilde Q\tilde R,\tilde S\tilde P}.
+$$
+
+The set is closed under composition and is closed under no other operation. The composition law is the two laws of the one-sided families read at once: the first parameter multiplies as a representation, the second as an anti-representation.
+
+**Not a subspace.** The sum of two two-sided operators is two-sided only in degenerate cases. The sum $T_{\tilde Q,\tilde P}+T_{\tilde R,\tilde S}$ collapses to a single product exactly when the coefficient matrix of the sum has rank one, and for a generic sum it has rank two. So the two-sided set is a cone: closed under multiplication by a scalar and under composition, and not under addition.
+
+**The generation theorem.** The sixteen products $T_{e_\mu,e_\nu}$ are a basis of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$. Hence every endomorphism of the algebra is a finite sum of two-sided operators, and the two-sided set generates the operator space as a linear space. The two statements belong together and they are not in tension: the cone is not a subspace, and it spans the space.
+
+**The rank.** A two-sided operator multiplies the image of one factor by the other, so its rank is bounded by the two ranks. The exact formula in the two-dimensional model is a product,
+
+$$
+\operatorname{rank}T_{\tilde Q,\tilde P}=\operatorname{rank}(A)\operatorname{rank}(B),
+$$
+
+where $A$ and $B$ are the $2\times2$ matrices of the two parameters. The ranks of $A$ and $B$ take the values $2$, $1$, $0$, so the product takes the values $4$, $2$, $1$, $0$. A two-sided operator never has rank three, and the reason is arithmetic and not geometric: three is not a product of two numbers from $\{0,1,2\}$.
+
+**The scaling orbit.** The two parameters are defined up to $(\lambda\tilde Q,\lambda^{-1}\tilde P)$ for a nonzero complex $\lambda$, so the parameter space of the cone is seven complex dimensional. The scaling is the gauge freedom of the cone, and it is the reason a two-sided operator carries no absolute phase.
+
+**The doubling.** On the central elements the two-sided operator squares the data of the element:
+
+$$
+\mathrm{Sd}_{\omega\tilde Q}=\mathrm{Sd}_{\tilde Q}\ \text{for central}\ \omega,\qquad
+r\mapsto r^{2},\qquad
+2a\mapsto4a^{2},\qquad
+e^{i\theta}\mapsto1 .
+$$
+
+The scale and the singular value double, and the central phase cancels. The element's word has a spinor half-angle; the operator's word has the full angle.
+
+**The plain adjoint swaps the parameters.** For the plain bilinear form $\beta(\tilde X,\tilde Y)=\mathrm{Sc}(\tilde X\tilde Y)$,
+
+$$
+\beta\bigl(T_{\tilde Q,\tilde P}\tilde X,\tilde Y\bigr)=\beta\bigl(\tilde X,T_{\tilde P,\tilde Q}\tilde Y\bigr),
+$$
+
+so $T_{\tilde Q,\tilde P}^{\approx}=T_{\tilde P,\tilde Q}$. The one-sided families are exchanged by the same operation: $L_{\tilde Q}^{\approx}=R_{\tilde Q}$.
+
+## The Length
+
+**Why a number is needed.** The rank of an operator measures the size of its image. It does not measure how many products are needed. Two operators of the same rank can need one term and four.
+
+**The coefficient matrix.** Relative to the basis $T_{e_\mu,e_\nu}$, an endomorphism $F$ has a coefficient matrix $c(F)$, a $4\times4$ matrix of complex numbers:
+
+$$
+F=\sum_{\mu,\nu}c(F)_{\mu\nu}\,T_{e_\mu,e_\nu}.
+$$
+
+**The length theorem.** The least number of two-sided operators whose sum is $F$ is the rank of $c(F)$:
+
+$$
+\ell(F)=\operatorname{rank}c(F)\in\{0,1,2,3,4\}.
+$$
+
+The proof is two lines in each direction. A single product has a coefficient matrix with one nonzero entry, hence rank one, and a sum of $k$ products has rank at most $k$, so the length is at least the rank. In the other direction, a matrix of rank $k$ is a sum of $k$ matrices of rank one, and each matrix of rank one is a single product.
+
+**The two numbers are different.** The identity has ordinary rank four and length one. A worked example of the source article has ordinary rank four and length two. So the ordinary rank does not determine the length, and the two measurements answer two questions: the rank counts the image, the length counts the factors.
+
+**The criterion.** An endomorphism is a single two-sided operator exactly when its coefficient matrix has rank one. That is the membership test of the cone, and it is a determinantal condition: all sixteen $2\times2$ minors of $c(F)$ vanish.
+
+**The change of element basis.** A change of the basis of the algebra conjugates the coefficient matrix by a congruence, $c'=\mathsf{C}^{-1}c\,\mathsf{C}^{-\mathsf{T}}$, which preserves the rank. The length is therefore a property of the operator and not of the coordinate choice. The Peirce frame is a non-orthogonal basis for the algebra, and it is harmless here for exactly this reason.
+
+## The Matrix Images of the Operators
+
+**The two-dimensional model.** The algebra is isomorphic to $M_2(\mathbb{C})$, so every operator is a $4\times4$ complex matrix and every element is a $2\times2$ complex matrix. Under the isomorphism the three shapes become three Kronecker expressions: the left multiplication is one factor of the product with the identity on the other factor, the right multiplication is the transposed factor on the other side, and the two-sided operator is the single product
+
+$$
+T_{\tilde Q,\tilde P}\ \longleftrightarrow\ B^{\mathsf T}\otimes A,
+$$
+
+where $A$ and $B$ are the matrices of the two parameters.
+
+**Why the transpose appears.** The right action of an element is a left action of the opposite algebra, and the opposite of a matrix algebra is the transposed algebra. So the second slot enters transposed, and that is the whole of the difference between the two slots in the model. Nothing is lost: the transposition is an anti-isomorphism, so the model is faithful on both sides.
+
+**The eigenvalues multiply.** The spectrum of a Kronecker product is the pairwise product of the spectra:
+
+$$
+\operatorname{spec}T_{\tilde Q,\tilde P}=\{\lambda_i\mu_j\},
+$$
+
+where $\lambda_i$ are the eigenvalues of the first matrix and $\mu_j$ those of the second. For the Hermitian pair the second parameter is $\tilde Q^{*}$, whose eigenvalues are the conjugates, so the spectrum is $\{\lambda_i\bar\lambda_j\}$: real, and nonnegative on the diagonal terms $\lambda_i\bar\lambda_i$.
+
+**The two determinants.** The one-sided operator has determinant $N^{2}$, and the Hermitian pair has determinant $\lvert N\rvert^{4}$, which is $\lvert\det L_{\tilde Q}\rvert^{2}$. The pair's determinant is the squared modulus of the one-sided determinant, and it vanishes on the same set.
+
+**The trace.** The trace of the Hermitian pair is $\lvert\operatorname{tr}\rvert^{2}=4\lvert Q_t\rvert^{2}$, the squared modulus of the trace of the element: the trace of the operator reads the trace of the element twice, once per slot.
+
+**The inverse and the criterion.** In the model the left operator is invertible exactly when the matrix is invertible, and the matrix is invertible exactly when its determinant $N$ is nonzero. The model reproduces the invertibility criterion of §*The Two One-Sided Families* without an extra argument.
+
+**The swap in the model.** The exchange of the slots is the exchange of the two Kronecker factors, $A\otimes B\mapsto B\otimes A$, which in the element basis is the congruence by the Gram matrix of the plain form. The two descriptions agree because the flip of the factors is the transpose of the product in the sense of the tensor square.
+
+## The Two Slots and the Swap
+
+**The side is a label with four values.** An operator either is a left multiplication, or a right multiplication, or is both on the scalars, or is on neither side. The fourth class contains every two-sided operator with two non-central parameters, and it contains the nine complex directions of the operator space that lie outside the sum of the two families.
+
+**The swap.** On the cone, and by linear extension on the whole space,
+
+$$
+\sigma(L_{\tilde Q}R_{\tilde P})=L_{\tilde P}R_{\tilde Q}.
+$$
+
+The map $\sigma$ is complex-linear, involutive, preserves the rank and the length, exchanges the two images, fixes the scalars pointwise, and is antimultiplicative.
+
+**It is the transpose of the trace form.** For the plain bilinear form,
+
+$$
+\beta(\sigma(F)\tilde X,\tilde Y)=\beta(\tilde X,F\tilde Y).
+$$
+
+So the abstract exchange of the sides is the adjoint of a form the algebra already carries, and not an extra structure. The matrix of $\sigma$ in a basis is $\mathsf{W}X^{\mathsf T}\mathsf{W}^{-1}$ for the Gram matrix $\mathsf{W}$ of the form; the symmetric appearance of the transpose is a statement about a basis, and the adjoint is a statement about the algebra.
+
+**Its two eigenspaces.** The operator space splits as the symmetric square and the exterior square of the algebra:
+
+$$
+\operatorname{End}(\mathbb{B})=\operatorname{Sym}^{2}\mathbb{B}\oplus\Lambda^{2}\mathbb{B},\qquad 16=10+6 .
+$$
+
+The plus space is a Jordan algebra under the anti-commutator and the minus space is a Lie algebra under the commutator. The split is the algebraic origin of the two ways two elements combine, and it is not a split of the operator space into physical sectors.
+
+**It is not inner.** An inner automorphism of the operator space acts by $T_{\tilde Q,\tilde P}\mapsto T_{\tilde U\tilde Q\tilde U^{-1},\tilde U\tilde P\tilde U^{-1}}$, which keeps each operator on its own side. So no conjugation implements $\sigma$, and the exchange of the sides is an operation on operators that no operator performs.
+
+**The quaternion conjugation is the second exchanger.** The other involution that moves a parameter across the side is
+
+$$
+\natural\,L_{\tilde Q}\,\natural=R_{\natural(\tilde Q)},\qquad
+\natural\,R_{\tilde Q}\,\natural=L_{\natural(\tilde Q)} .
+$$
+
+It is multiplicative and it keeps the parameter in its slot, while $\sigma$ is antimultiplicative and swaps the slots. The two together are the whole of the rewriting machinery of the corpus: $\natural$ converts an equation on one side into an equation on the other without moving the unknown, and $\sigma$ is the adjoint of the trace form.
+
+**There is no multiplicative sign.** A function $\chi$ on the operator space with $\chi(L_{\tilde Q})=-\chi(R_{\tilde Q})$ and $\chi(FG)=\chi(F)\chi(G)$ cannot exist. At the unit, $L_{e_t}=R_{e_t}=\mathrm{id}$, so the first condition gives $\chi(\mathrm{id})=-\chi(\mathrm{id})$ and $\chi(\mathrm{id})=0$, while the second gives $\chi(\mathrm{id})=1$. The side is therefore not the homogeneous degree of a grading, and the word *chirality* in this corpus never means a grading of the operator algebra. The two ideals of the algebra are what carry the chirality, and they are the subject of the fourth interpretation below.
+
+## The Four Adjoints
+
+**Four forms, four adjoints.** The algebra carries four forms, and each one defines its own adjoint of every complex-linear map. On the two one-sided families they act as follows.
+
+| name of the adjoint | mark | form | adjoint of $L_{\tilde Q}$ | adjoint of $R_{\tilde Q}$ |
+| --- | --- | --- | --- | --- |
+| plain bilinear | $\approx$ | $\mathrm{Sc}(\tilde X\tilde Y)$ | $R_{\tilde Q}$ | $L_{\tilde Q}$ |
+| quaternionic | $\natural$ | $\mathrm{Sc}(\tilde X\tilde Y^{\natural})$ | $R_{\tilde Q^{\natural}}$ | $L_{\tilde Q^{\natural}}$ |
+| Hermitian | $*$ | $\mathrm{Sc}(\tilde X\tilde Y^{*})$ | $L_{\tilde Q^{*}}$ | $R_{\tilde Q^{*}}$ |
+| signed Hermitian | $\natural*$ | $\mathrm{Sc}(\tilde X^{\natural}\tilde Y^{*})$ | $L_{\tilde Q^{\natural*}}$ | $R_{\tilde Q^{\natural*}}$ |
+
+**The four adjoints on a product.** The plain adjoint reverses the order and swaps the parameters, $T_{\tilde Q,\tilde P}^{\approx}=T_{\tilde P,\tilde Q}$; the Hermitian adjoint keeps the order and stars the parameters, $T_{\tilde Q,\tilde P}^{*}=T_{\tilde Q^{*},\tilde P^{*}}$. The two statements are the two ways an operator can be reflected, and they differ in whether the reflection touches the slots or the elements.
+
+**The five families.** There are four adjoints and five families. The signed family is not a fifth adjoint: its form is the Hermitian form of the row above it, and only the operator carries the grade involution on its left factor. The fifth family is the Krein pair, whose form is the plain sesquilinear form and whose second factor is the complex conjugate of the first. The Hermitian family is the one whose members act by congruence:
+
+$$
+\mathrm{Sd}_{\tilde Q}=T_{\tilde Q,\tilde Q^{*}},\qquad \tilde X\longmapsto\tilde Q\tilde X\tilde Q^{*}.
+$$
+
+**Self-adjointness is four conditions.** For a single operator built from two parameters, the four adjoints give five different matrices and no two of them agree. The self-adjointness table of the source article separates the parameters: the two bilinear adjoints answer to the parallel conditions $\tilde Q^{\natural}\parallel\tilde Q$, the two sesquilinear ones to a single scalar $\lambda$ with $\tilde Q^{*}=\lambda\tilde Q$. A real mixed parameter such as $e_t+2\vec e_x$ is self-adjoint for none of the four, which is the generic case.
+
+**The sector criterion.** The two sectors of the algebra are
+
+$$
+\mathbb{B}_{\Psi}=\mathrm{span}_{\mathbb{R}}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\},\qquad
+\mathbb{B}_{\Phi}=\mathrm{span}_{\mathbb{R}}\{i e_t,\vec e_x,\vec e_y,\vec e_z\},
+$$
+
+the fixed and the negated spaces of the Hermitian conjugation. Among the five families only the Hermitian pair keeps both sectors in place for every parameter. The one-sided families keep a sector only for a real scalar: $L_{r e_t}$ keeps both, while $L_{\tilde Q}$ for a non-scalar unit moves a Hermitian element out of the Hermitian sector. The two-sided family keeps both exactly for the pairs $T_{\tilde Q,\lambda\tilde Q^{*}}$ with real $\lambda$; a non-real $\lambda$ rotates one sector into the other.
+
+**Why the criterion matters here.** Sector stability is what makes an operator readable as a physical operation on a state space. An operator that moves a Hermitian element into the anti-Hermitian sector maps a state to a four-vector, and no amount of renaming makes that a transformation of states. The Hermitian pair is the only family that is a transformation of the state space for every parameter.
+
+## The Hermitian Pairs
+
+**The one-sided pair.** A one-sided operator and its Hermitian adjoint form a pair, $(L_{\tilde Q},L_{\tilde Q^{*}})$, and the pair is closed under composition:
+
+$$
+L_{\tilde Q}L_{\tilde Q^{*}}=L_{\tilde Q\tilde Q^{*}} .
+$$
+
+The product is a left multiplication by $\tilde Q\tilde Q^{*}$, whose scalar part is the amplitude $H(\tilde Q)=\operatorname{Sc}(\tilde Q\tilde Q^{*})\ge0$. The pair is therefore not two independent operators: it is one element and its conjugate, and the nonnegative amplitude is the whole of what their product adds. On a Hermitian parameter the pair coincides, $L_{\tilde H}^{*}=L_{\tilde H}$, and the one-sided family contains self-adjoint operators — but only those.
+
+**Positivity on the one side.** A positive Hermitian element defines a positive operator on the algebra, because the Hermitian pairing of the operator reads
+
+$$
+\operatorname{Sc}\bigl(\tilde H\tilde X\tilde X^{*}\bigr)=\operatorname{Sc}\bigl(\tilde X^{*}\tilde H\tilde X\bigr)\ \ge 0 ,
+$$
+
+the equality of the two writings being a cyclic property of the scalar part and the inequality being the positivity of the state cone. So the cone of states, read as parameters, is the cone of positive one-sided operators.
+
+**The two-sided pair.** The Hermitian pair proper is
+
+$$
+\mathrm{Hp}_{\tilde Q}=T_{\tilde Q,\tilde Q^{*}},\qquad
+\mathrm{Hp}_{\tilde Q}\mathrm{Hp}_{\tilde P}=\mathrm{Hp}_{\tilde Q\tilde P},\qquad
+\mathrm{Hp}_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}.
+$$
+
+The multiplicativity is the composition law with the second slot starred, and it makes the map $\tilde Q\mapsto\mathrm{Hp}_{\tilde Q}$ a representation of the multiplicative monoid on the real cone of the operator space.
+
+**It is a real cone.** The central phase cancels, $\mathrm{Hp}_{\omega\tilde Q}=\mathrm{Hp}_{\tilde Q}$ for a central unit $\omega$, and a real rescaling squares, $\mathrm{Hp}_{t\tilde Q}=t^{2}\mathrm{Hp}_{\tilde Q}$ for real $t$. The family is therefore the image of the eight-real-dimensional parameter space modulo the central circle: a cone of real dimension seven over a base of dimension six. The gauge freedom of the general two-sided operator is not lost here; it is fixed to a sign, and the sign is invisible because the scaling is a square.
+
+**The numbers.** The spectrum is $\{\lambda_i\bar\lambda_j\}$, the trace is $4\lvert Q_t\rvert^{2}$, the determinant is $\lvert N\rvert^{4}$, and the value at the identity is the amplitude:
+
+$$
+\operatorname{Sc}\mathrm{Sd}_{\tilde Q}(e_t)=H(\tilde Q).
+$$
+
+The operator that marks the massless wall by its singularity is the operator that measures the amplitude, and the two statements are one.
+
+**The singularity and the image.** The pair is singular exactly on the zero-divisor cone and invertible off it, with inverse $\mathrm{Hp}_{\tilde Q^{-1}}$. On the units the family covers the conformal orthochronous group $CO^{+}(1,3)$ of the quaternionic form, which the source article proves: the congruence is the Lorentz action together with the scale.
+
+**The one statement that covers the section.** Of the five families, this is the only one that is a map of the state space into itself for every parameter, the only one that keeps both sectors, and the only one whose singularity is the massless wall.
+
+## The Sectors of an Operator
+
+**The four sectors of an element.** The two invariants are the algebraic norm $N=\langle\tilde Q\rangle_{\natural}=Q_t^{2}+B^{2}$ and the square of the vector part $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$. They are independent, so the algebra splits into four cells,
+
+$$
+\Sigma_{11}=\{N\neq0,\ B^{2}\neq0\},\quad
+\Sigma_{10}=\{N\neq0,\ B^{2}=0\},\quad
+\Sigma_{01}=\{N=0,\ B^{2}\neq0\},\quad
+\Sigma_{00}=\{N=0,\ B^{2}=0\},
+$$
+
+and on $\Sigma_{11}$ the two eigenvalues are $\lambda_\pm=Q_t\pm iB$.
+
+**The one-sided operators.**
+
+| sector | rank | spectrum | Jordan type | image |
+| --- | --- | --- | --- | --- |
+| $\Sigma_{11}$ | $4$ | $\lambda_+,\lambda_-$, each twice | diagonal | $\mathbb{B}$ |
+| $\Sigma_{10}$ | $4$ | $Q_t$, algebraic multiplicity $4$ | diagonal on the scalar line, $J_2\oplus J_2$ on the Jordan line | $\mathbb{B}$ |
+| $\Sigma_{01}$ | $2$ | $c,0$, multiplicities $2,2$ | diagonal | the isotropic plane $\tilde Q\mathbb{B}$ |
+| $\Sigma_{00}$ | $2$ | $0$, algebraic multiplicity $4$ | $J_2(0)\oplus J_2(0)$ | $\mathbb{C}\tilde\nu\oplus\mathbb{C}\tilde\Pi_+$ |
+
+**The two-sided operators.**
+
+| sector | rank | spectrum | Jordan type | image |
+| --- | --- | --- | --- | --- |
+| $\Sigma_{11}$ | $4$ | $\lambda_i\bar\lambda_j$ | semisimple | $\mathbb{B}$ |
+| $\Sigma_{10}$ | $4$ | $\lvert Q_t\rvert^{2}$, multiplicity $4$ | diagonal on the scalar line, $J_3\oplus J_1$ on the Jordan line | $\mathbb{B}$ |
+| $\Sigma_{01}$ | $1$ | $\lvert c\rvert^{2},0$ | diagonal | the null line $\mathbb{C}P$ |
+| $\Sigma_{00}$ | $1$ | $0$ | $J_2(0)\oplus0\oplus0$ | the null line $\mathbb{C}\tilde\Pi_+$ |
+
+**Reading the two tables.** Along a row, the rank drops when the norm vanishes and the Jordan type leaves the semisimple case when the vector part squares to zero. Along a column, the two-sided operator replaces each eigenvalue $\lambda_i$ of the element by the product $\lambda_i\bar\lambda_j$ and loses one factor of the spectrum. The four rows are the four regimes of one action, and the two tables are the whole of the sector theory of the operators.
+
+**The doubling rule.** The polar word $\tilde Q=\tilde Q_H\tilde Q_0$ carries through both operators,
+
+$$
+L_{\tilde Q}=L_{\tilde Q_H}L_{\tilde Q_0},\qquad
+\mathrm{Sd}_{\tilde Q}=\mathrm{Sd}_{\tilde Q_H}\mathrm{Sd}_{\tilde Q_0},
+$$
+
+so the operator inherits the word of the element. The modulus of the two-sided operator is the operator of the modulus, and on the cone the whole operator collapses to a scalar times a partial isometry.
+
+## The Interpretations
+
+**The twelve labels below are readings of statements proved above.** Each names an algebraic operator and a physical role, and each states the warrant that connects them. The reading never adds a structure to the algebra. Where a reading needs a structure that the section does not supply, it says so.
+
+### I.13.a — The Operator of an Element Is a Change of Frame
+
+**The object.** For a unit $\tilde Q$, the two-sided operator
+
+$$
+T_{\tilde Q,\tilde Q^{-1}}(\tilde X)=\tilde Q\tilde X\tilde Q^{-1}
+$$
+
+is an automorphism of the algebra. Every inner automorphism is of this form, and two elements give the same automorphism exactly when they differ by a central unit.
+
+**The warrant.** The composition law gives $T_{\tilde Q,\tilde Q^{-1}}T_{\tilde P,\tilde P^{-1}}=T_{\tilde Q\tilde P,(\tilde Q\tilde P)^{-1}}$, so the units act by automorphisms. The kernel is computed at the centre: $\tilde Q\tilde X\tilde Q^{-1}=\tilde X$ for every $\tilde X$ exactly when $\tilde Q$ is central, because the probe at the unit returns the parameter and the probe at a non-central element returns its commutator.
+
+**The reading.** A frame is an element modulo a phase, and a change of frame is the action of that element on everything else. The three-dimensional group of rotations and the three-dimensional set of boosts both sit inside one complex group, and the phase that the automorphism forgets is the global phase of the state that the frame is built from. The operator is inner: the frame is not an extra object acting on the algebra, it is another element of the algebra.
+
+### I.13.b — The Operator Is a Measurement
+
+**The object.** For an idempotent $\tilde\Pi$ the two-sided operator
+
+$$
+T_{\tilde\Pi,\tilde\Pi}(\tilde X)=\tilde\Pi\tilde X\tilde\Pi
+$$
+
+has rank one and image the single line $\mathbb{C}\tilde\Pi$ on the cone.
+
+**The warrant.** On the sector $\Sigma_{01}$ the element is $\tilde\Pi$ itself, the rank is one by the table of §*The Sectors of an Operator*, and the image is the line spanned by the idempotent. The square of the operator is itself, $T_{\tilde\Pi,\tilde\Pi}^{2}=T_{\tilde\Pi^{2},\tilde\Pi^{2}}=T_{\tilde\Pi,\tilde\Pi}$, so it is a projection of the operator space onto a one-dimensional image.
+
+**The reading.** A measurement of a sharp effect collapses the algebra to a single ray, and the collapse is a rank drop from four to one. The two outcomes of a complete measurement give two such operators, and their sum
+
+$$
+\tilde X\longmapsto\tilde\Pi\tilde X\tilde\Pi+\tilde\Pi_{\perp}\tilde X\tilde\Pi_{\perp}
+$$
+
+is again a projection of the operator space, of rank two. That sum is a two-sided operator of length two. The measurement of a complete family is therefore not one product: it is a sum of products, and its length is the number of outcomes. The post-measurement state itself is not supplied by the interval and is not claimed here.
+
+### I.13.c — The Operator Is a Flow
+
+**The object.** For an element $\tilde G$ of the material sector, the exponential $\tilde U=e^{\tilde G}$ is a unitary element, and
+
+$$
+\mathrm{Ad}_{\tilde U}(\tilde X)=\tilde U\tilde X\tilde U^{*}=e^{\mathrm{ad}_{\tilde G}}\tilde X,
+\qquad
+\mathrm{ad}_{\tilde G}(\tilde X)=\tilde G\tilde X-\tilde X\tilde G .
+$$
+
+**The warrant.** The generator is anti-Hermitian, so the exponential is unitary; the inner derivation is the first-order term of the conjugation; and the two series converge and agree because the algebra is finite-dimensional. The interval is preserved, since conjugation by a unitary element is an isometry of the quaternionic norm.
+
+**The reading.** A one-parameter subgroup of the frame group is a flow, and its derivative at the identity is a derivation. The reading names the three objects that physics uses and the algebra supplies: the generator is an element, the flow is a one-parameter family of automorphisms, and the flow of an observable is the flow of the operator that the observable defines. The generator is material and the flow is on the informational sector: an anti-Hermitian element generates a unitary conjugation, and no Hermitian element does.
+
+**The limit.** The flow is a group of automorphisms of the algebra and not a group of transformations of a state space with a metric. The section supplies the interval and not the distance, and it supplies no Hamiltonian: which element generates the physical flow is an input.
+
+### I.13.d — The Side Is Not a Grading
+
+**The object.** The operator space splits into the left family, the right family, their scalars and the rest. The temptation is to call the first two the two chiralities, with a sign for each, and to look for a multiplicative function that assigns the sign.
+
+**The warrant.** No such function exists. At the unit the two families coincide, so a sign that separates them would take opposite values at the same operator, and a multiplicative function takes the value one at the identity. The rigorous statement is that the operator algebra is the full matrix algebra, which is simple, so its only multiplicative function is the trivial one.
+
+**The reading.** The word *chirality* is used in this corpus for the side of an action and never for a grading of the operator algebra. That is not a verbal convenience. If chirality were a grading, the two chiralities would be independent and a state could carry both; because it is a side, a state is chiral by the side its projector multiplies on, and the two chiralities are two ideals and not two signs. Physics can use the side, because an ideal is a space and a space can hold a state. Physics cannot use a sign on operators, because no such sign exists.
+
+### I.13.e — The Two Chiralities Are the Two Ideals
+
+**The object.** For the two idempotents $\tilde\Pi_\pm(\vec u)=\tfrac12(e_t\pm i\vec u)$ on a real unit axis, the images of the one-sided operators are the two minimal left ideals
+
+$$
+L_{\tilde\Pi_\pm}(\mathbb{B})=\mathbb{B}\tilde\Pi_\pm=S_\pm,\qquad
+\dim_{\mathbb{C}}S_\pm=2,\qquad
+\mathbb{B}=S_+\oplus S_- .
+$$
+
+**The warrant.** The image of a left multiplication is the left ideal of the element, and the ideal of a minimal idempotent is minimal. Each has complex dimension two and the two are complementary, since $\tilde\Pi_++\tilde\Pi_-=e_t$ and $\tilde\Pi_+\tilde\Pi_-=0$.
+
+**The reading.** A chirality is a space that a projector selects, and the selection is the one-sided operator of that projector. A state of a given chirality is an element of that ideal. The axis is a parameter of the family and not a datum of the algebra, so the two chiralities of this construction are exchanged by a rotation and carry no invariant label. What physics calls left and right must therefore be supplied by an interaction and not by the algebra, which is the standard position and is a theorem here.
+
+### I.13.f — The Four Adjoints Are Four Reality Conditions
+
+**The object.** Four forms, four adjoints, and four different answers to the question whether an operator is real.
+
+**The warrant.** The four adjoints differ only in which involution is inserted into which slot of the pairing, and the self-adjointness criterion of each is a different equation on the parameters. The example of the source article works one operator through all four adjoints and obtains four distinct operators, none of them equal to the one it started from.
+
+**The reading.** Hermiticity is not a property of an operator. It is a property of a pair, an operator and a form, and the algebra carries four forms. An operator that is Hermitian for the state space is not Hermitian for the Krein form, and the Krein form is the one that keeps a time direction. The physical statement is that the choice of inner product is the choice of the theory, and the algebra supplies four, which is why the corpus can put a Hilbert space and a Krein space on the same elements without contradiction.
+
+### I.13.g — Only the Hermitian Pair Keeps the Sectors
+
+**The object.** The five operator families and the two sectors $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$.
+
+**The warrant.** $T_{\tilde Q,\tilde Q^{*}}$ maps a Hermitian element to a Hermitian element for every $\tilde Q$, because $(\tilde Q\tilde X\tilde Q^{*})^{*}=\tilde Q\tilde X\tilde Q^{*}$. A one-sided operator maps a Hermitian element to a Hermitian one only when the parameter is a real scalar, and the four other families fail on proper subvarieties of their parameter spaces.
+
+**The reading.** An operation that is a transformation of states must map states to states, and a state is a Hermitian element of a definite sign. Only the congruence family does that for every parameter. So the operator of a physical process is the congruence, and the other four adjoints describe operations that move the process into the other sector. That is the operator-level form of the split of the algebra: the two sectors are not a bookkeeping device, they are the condition under which an operator is a map of the state space into itself.
+
+### I.13.h — Rank Three Does Not Occur
+
+**The object.** The rank of a two-sided operator.
+
+**The warrant.** In the two-dimensional model the operator is $B^{\mathsf T}\otimes A$, whose rank is the product of the ranks of the two $2\times2$ factors. Each factor has rank $2$, $1$ or $0$, and a product of two such numbers is never three.
+
+**The reading.** A process that acts by two factors cannot have a three-dimensional image. The statement is a restriction on the reachable images of a two-factor process and it holds for every pair of elements, invertible or not. The obstruction is arithmetic: three is not a product of two numbers from $\{0,1,2\}$. A general endomorphism can have rank three, and such an endomorphism is not a process of this kind; it needs a sum of at least two products, and its length is at least two.
+
+### I.13.i — The Length Is the Number of Terms of a Process
+
+**The object.** The length $\ell(F)=\operatorname{rank}c(F)$.
+
+**The warrant.** The length theorem of §*The Length*: the least number of two-sided operators whose sum is $F$ is the rank of the coefficient matrix, and the rank is at most four.
+
+**The reading.** A transformation of the algebra that is not a single product is a sum of products, and the number of terms is a property of the transformation and not of a presentation of it. In the language of open systems the terms are the Kraus terms, and the theorem says that four of them always suffice. The number four is not a convention: it is the dimension of the algebra, and it is the reason a channel on a qubit needs at most four Kraus operators. A decomposition with more terms is redundant, and the redundancy is exactly the linear dependence of the coefficient matrix.
+
+### I.13.j — A Process Is Mixed When Its Coefficient Matrix Has Rank Above One
+
+**The object.** The cone of two-sided operators as a set of coefficient matrices of rank one inside the sixteen-dimensional space of all coefficient matrices.
+
+**The warrant.** The structure isomorphism $\Phi(\tilde Q\otimes\tilde P)=L_{\tilde Q}R_{\tilde P}$ makes the coefficient matrix the coordinate of the operator in the tensor square of the algebra, and the rank of that matrix is the Schmidt rank of the operator across the two slots. Rank one is a pure tensor and rank above one is not.
+
+**The reading.** An operation is a single product exactly when it is not entangled across the two slots, and the length is the Schmidt rank. So the mixedness of an operation is the same quantity as the mixedness of a state, read on a different space: a state is mixed when its radius is below one, and an operation is mixed when its coefficient matrix has rank above one. Both are departures from a rank-one condition, and the algebra supplies both without a second definition.
+
+### I.13.k — The Commutant of One Side Is the Other Side
+
+**The object.** $L(\mathbb{B})'=R(\mathbb{B})$ and $R(\mathbb{B})'=L(\mathbb{B})$, with intersection the scalars.
+
+**The warrant.** The proof is the unit probe: a map commuting with every left multiplication is a right multiplication.
+
+**The reading.** What acts on the algebra from the left is exactly what commutes with everything acting from the right, and the two overlap only in the centre. The noncommutativity of the algebra is therefore the statement that there are two distinct algebras of operations with a common centre, and no more. In the language of measurement the two sides are the two ends of a cut: the algebra of the system and the algebra of the apparatus cannot be the same one, and the centre is the only part they share. The statement is about operators and not about a division of the world; the corpus does not derive a cut from the algebra, it only exhibits the algebraic shape that a cut has.
+
+### I.13.l — The Four Regimes of One Action
+
+**The object.** The four rows of the two tables of §*The Sectors of an Operator*.
+
+**The warrant.** The rank, the spectrum and the Jordan type of each operator are determined by the sector of its element, and the sector is a pair of truth values of two independent invariants.
+
+**The reading.** The same operator, $T_{\tilde Q,\tilde Q^{*}}$, is four different things according to where its element sits: an invertible and diagonalisable map, an invertible map with a Jordan block, a rank-one map onto a ray, or a nilpotent. Read on the material sector, the four regimes are the four physical regimes of one object. On $\Sigma_{11}$ the element is a massive momentum in motion, and the operator has two distinct eigenvalues with their conjugates. On $\Sigma_{10}$ it is the momentum at rest, and the operator is a scalar: no boost and no rotor at rest. On $\Sigma_{01}$ it is a null momentum, and the operator has rank one: the image is a single ray, which is the polarisation of the massless particle. On $\Sigma_{00}$ it is the origin of momentum space, and the operator has no one-particle image at all.
+
+| sector | element read physically | operator read physically |
+| --- | --- | --- |
+| $\Sigma_{11}$ | massive momentum in motion | invertible, two-mode, reversible |
+| $\Sigma_{10}$ | momentum at rest | scalar on the clock line |
+| $\Sigma_{01}$ | null momentum | rank one, one ray of polarisation |
+| $\Sigma_{00}$ | the origin of momentum space | no one-particle image |
+
+The table is the reason the operator theory is worth having. A single construction, the congruence, produces a reversible two-mode evolution, a rest frame, a collapse to a ray and a nilpotent, and the four cases are selected by the invariants of the element and by nothing else.
+
+## The Limits
+
+**The entry has no dynamics.** The flows of §*The Interpretations* are one-parameter groups of automorphisms generated by a given element. No element is selected, no equation of motion is imposed, and no Hamiltonian is derived. The flow of I.13.c is the group generated by a generator, and the physical identification of the generator is an input.
+
+**The entry is about one algebra.** The four-dimensional algebra has one operator space, and every dimension quoted here is that dimension. A composite system needs the tensor square, whose operator space is larger and whose length theory is different; nothing in this entry is a statement about that case.
+
+**The sector reading is a reading.** The four regimes are named after four physical situations, and the naming is an interpretation of a rank, a spectrum and a Jordan type. The element of a sector is a spectral type and not a causal class: the sign of the norm is a second reading, and a spectrally regular element can be spacelike.
+
+**The four adjoints are the four forms of this algebra.** Other algebras carry other adjoints, and the count four is a property of the biquaternion algebra and of its two involutions.
+
+**The length theorem is a linear-algebra statement.** It counts terms in a sum; it does not claim that a given physical process is realised by that sum. The Kraus reading of I.13.i identifies the terms with Kraus operators, and the identification is standard, but the entry does not derive the open-system formalism from the algebra.
+
+**The frame reading does not define a frame.** An inner automorphism is a change of coordinates on the algebra. Whether a physical frame is a tetrad, a gauge choice or a basis of a Hilbert space is not decided here, and the corpus uses the word in the algebraic sense only.
+
+**No claim is made about measurement.** I.13.b computes a rank and an image. When a measurement occurs, whether the collapse is physical, and what selects the outcome are outside the section, and the entry says so rather than leaving it to be inferred.
+
+## Summary
+
+**The algebra acts on itself in three shapes.** The left multiplication, the right multiplication and the product of the two. The first two are four-dimensional subspaces of the sixteen-dimensional operator space, their sum is seven-dimensional, and the third is a cone of dimension seven that spans the whole space without being one.
+
+**The two-sided set is closed under composition and not under addition.** That failure is why a general endomorphism needs a sum, and the least number of terms is its length: the rank of its coefficient matrix, at most four.
+
+**Rank and length are independent.** An operator can have rank four and length one, or rank one and length four, and the two numbers measure the image and the number of factors.
+
+**A two-sided operator never has rank three.** In the two-dimensional model its rank is a product of two ranks from $\{0,1,2\}$.
+
+**The side is not a grading.** The swap of the two slots is an involution of the operator space, antimultiplicative, not inner, and equal to the adjoint of the plain bilinear form. No multiplicative sign separates the two families, so chirality is a side and the two chiralities are the two minimal left ideals.
+
+**Each of the four forms carries its own adjoint.** Four adjoints, five families, and only the Hermitian pair keeps both sectors for every parameter.
+
+**The factors multiply.** In the two-dimensional model the operator is one Kronecker product, the second factor transposed, and its spectrum is the pairwise product of the two slot spectra; the determinant of the Hermitian pair is the squared modulus of the determinant of the one-sided operator.
+
+**The sectors of the element are the regimes of the operator.** Rank four with a doubled spectrum, rank four with a Jordan block, rank two, and rank two with a square-zero image, according to the two invariants of the element; the two-sided operator squares the spectrum and drops to rank one on the cone.
+
+**One operator, three tasks.** A change of frame when the second slot holds the inverse, a measurement when it holds an idempotent, a flow when the element is an exponential. The three are three choices of the pair, and the sector of the element decides which regime of the flow is in force.
+
+## Summary of Notation
+
+| object | notation | content |
+| --- | --- | --- |
+| the algebra | $\mathbb{B}$ | $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, units $e_t,\vec e_x,\vec e_y,\vec e_z$ |
+| the argument | $\tilde X$ | the element an operator acts on |
+| the left operator | $L_{\tilde Q}$ | $\tilde X\mapsto\tilde Q\tilde X$ |
+| the right operator | $R_{\tilde Q}$ | $\tilde X\mapsto\tilde X\tilde Q$ |
+| the two-sided operator | $T_{\tilde Q,\tilde P}$ | $\tilde X\mapsto\tilde Q\tilde X\tilde P$ |
+| the Hermitian pair | $\mathrm{Sd}_{\tilde Q}=\mathrm{Hp}_{\tilde Q}$ | $T_{\tilde Q,\tilde Q^{*}}$, the congruence |
+| the operator space | $\operatorname{End}(\mathbb{B})$ | $M_4(\mathbb{C})$, complex dimension $16$ |
+| the one-sided images | $\operatorname{End}_L,\operatorname{End}_R$ | the left and right families, dimension $4$ each |
+| the two-sided cone | $\operatorname{End}_{LR}$ | dimension $7$, closed under composition |
+| the commutant | $\mathcal{S}'$ | $\{F:FS=SF\ \text{for every}\ S\in\mathcal{S}\}$ |
+| the structure isomorphism | $\Phi$ | $\tilde Q\otimes\tilde P\mapsto L_{\tilde Q}R_{\tilde P}$ |
+| the swap | $\sigma$ | $T_{\tilde Q,\tilde P}\mapsto T_{\tilde P,\tilde Q}$, antimultiplicative |
+| the quaternion conjugation | $\natural$ | the reversal, $\natural L_{\tilde Q}\natural=R_{\natural\tilde Q}$ |
+| the Hermitian conjugation | $*$ | $\tilde X^{*}=\overline{\tilde X^{\natural}}$ |
+| the four adjoints | $\approx,\natural,*,\natural*$ | plain bilinear, quaternionic, Hermitian, signed Hermitian |
+| the coefficient matrix | $c(F)$ | the coordinates of $F$ in the basis $T_{e_\mu,e_\nu}$ |
+| the length | $\ell(F)$ | $\operatorname{rank}c(F)\in\{0,1,2,3,4\}$ |
+| the algebraic norm | $N=\langle\tilde Q\rangle_{\natural}$ | $Q_t^{2}+B^{2}$ |
+| the vector form | $B^{2}$ | $Q_x^{2}+Q_y^{2}+Q_z^{2}$ |
+| the spectral sectors | $\Sigma_{\varepsilon\eta}$ | $\varepsilon=1$ if $N\neq0$, $\eta=1$ if $B^{2}\neq0$ |
+| the element's eigenvalues | $\lambda_\pm$ | $Q_t\pm iB$ on $\Sigma_{11}$ |
+| the informational sector | $\mathbb{B}_{\Psi}$ | the Hermitian half, $\mathrm{span}_{\mathbb{R}}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ |
+| the material sector | $\mathbb{B}_{\Phi}$ | the anti-Hermitian half, $\mathrm{span}_{\mathbb{R}}\{i e_t,\vec e_x,\vec e_y,\vec e_z\}$ |
+| the idempotents | $\tilde\Pi_\pm(\vec u)$ | $\tfrac12(e_t\pm i\vec u)$ on a real unit axis |
+| the minimal left ideals | $S_\pm$ | $\mathbb{B}\tilde\Pi_\pm$, complex dimension $2$ |
+| the derivation | $\mathrm{ad}_{\tilde G}$ | $L_{\tilde G}-R_{\tilde G}$ |
+
+## Further Reading
+
+**The two sides.** [Operators Acting on One Side](../articles_maths/operators-acting-on-one-side.html) builds the two families, their laws, the rank trichotomy and the two centralisers; [The Transposition of the Two Sides](../articles_maths/the-transposition-of-the-two-sides.html) proves the two identities of $\natural$ and measures the failure of the naive pairing.
+
+**The product.** [Operators Acting on Two Sides](../articles_maths/operators-acting-on-two-sides.html) states the composition law, the generation theorem and the plain adjoint; [The Coefficient Matrix of a Two-Sided Operator: A Worked Computation](../articles_maths/the-coefficient-matrix-of-a-two-sided-operator-a-worked-computation.html) computes one case in full and exhibits a matrix of rank four and length two.
+
+**The side.** [Operator Chirality on the Biquaternion Algebra](../articles_maths/operator-chirality-on-the-biquaternion-algebra.html) proves that no multiplicative sign separates the two images and identifies the swap with the adjoint of the trace form.
+
+**The adjoints.** [Adjoint Pair of $L$ and $R$ Operators](../articles_maths/adjoint-pair-of-l-and-r-operators.html) works one operator through all four adjoints and gives the self-adjointness table; [The Hermitian Pair of Operators Acting on Two Sides](../articles_maths/the-hermitian-pair-of-operators-acting-on-two-sides.html) treats the congruence family, its spectrum $\lambda_i\bar\lambda_j$ and its image.
+
+**The sectors.** [Introduction to N and Spectrally Regular and Degenerate Operators](../articles_maths/introduction-to-n-and-spectrally-regular-and-degenerate-operators.html) states the three operators, the doubling rule and the four-sector table; the eight sector articles carry the case-by-case computation.
+
+**The physics siblings.** [The Partition: Two Invariants and Four Regimes](the-partition-two-invariants-and-four-regimes.html) reads the partition of the algebra by the two invariants, and its four entries *Mass in Motion*, *The Rest Frame and the Exceptional Point*, *The Massless Regime* and *The Vacuum and the Nilpotent Ladder* are the physical content of the four rows of I.13.l. [The Two Sectors: Split and the Four Bridges](the-two-sectors-split-and-the-four-bridges.html) reads the two sectors and the operations that cross them, which is the background of I.13.g. [States, Observables and the Born Weight](states-observables-and-the-born-weight.html) reads the Hermitian sector as a state space, and its flow is the conjugation of I.13.c read on the slice.
