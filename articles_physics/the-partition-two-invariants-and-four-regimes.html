@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Partition: Two Invariants and Four Regimes — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-partition-two-invariants-and-four-regimes"><strong>The Partition: Two Invariants and Four Regimes</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>This entry reads the tenth section of the mathematical category: the two invariants of one element taken together, and the four regimes their two truth values produce.</strong></p>
+<p><strong>The pair is the norm and the square of the vector part.</strong></p>
+<p>$$
+N(\tilde Q)=Q_t^{2}+B^{2},\qquad B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2},\qquad \tilde Q=Q_te_t+\vec Q .
+$$</p>
+<p><strong>The norm is the measure of the previous entry.</strong> The vector square is the discriminant of the characteristic polynomial up to a factor $-4$, and it vanishes exactly when the two eigenvalues coincide.</p>
+<p><strong>Each invariant is a yes or a no, so the pair is one of four answers.</strong> The answers are exhaustive and disjoint, because each element has one truth value for each predicate. The four classes are written $\Sigma_{11}$, $\Sigma_{10}$, $\Sigma_{01}$ and $\Sigma_{00}$, with the first index the norm and the second the spectrum.</p>
+<p><strong>The four classes are of unequal size.</strong> The generic class is open and dense, of real dimension eight. Two classes have real dimension six, and one has real dimension four. That is the first sign that the partition is not a partition into four comparable rooms.</p>
+<p><strong>The claim of this entry is that the four answers are the physics and not a classification with labels added afterwards.</strong> The norm asks whether the element has an invariant magnitude and which causal sign it carries. The vector square asks whether the element has two modes or one. On the material sector the first question is the mass and the second is the momentum, and the four regimes are mass in motion, the rest frame, the light ray and the vacuum.</p>
+<p><strong>The second claim is that a regime is a pair of truth values and not a phase.</strong> No regime is a connected component of the algebra, no regime is both open and closed, and the dimensions differ. Nothing passes continuously from one regime to another: every passage crosses a wall, and each wall has real codimension two.</p>
+<p><strong>The third claim is that the two conditions are independent, and that the independence has one exception.</strong> Off the square-zero set the gradients of the two invariants are independent, so the two numbers are separate dials. On the square-zero set the gradients coincide, so at a nilpotent the two dials are one dial.</p>
+<p><strong>The fourth claim is that composition ignores the partition.</strong> Two elements of one regime can compose into another. The computed case is the product of two unipotents, and one complex number, the pairing of the two nilpotent parts, decides whether the product is elliptic, hyperbolic or defective.</p>
+<p><strong>Nothing below is a model of a particle.</strong> The four regimes are cut on the algebra by two equations. Each name comes from the part of its regime that the material sector reaches, and §<em>The Limits</em> states what the names do not carry.</p>
+<h2 id="the-source-table">The Source Table</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Mathematical Content</th>
+<th>Source Mathematical Article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the two predicates, the four sectors, the independence of the two cones, the nilpotent intersection and the tangency, the comparison of the sectors, the chain of invariants, the two decompositions, the two operator loci</td>
+<td><a href="../articles_maths/relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html">Relations between the N Norm and Spectral Regularity and Degeneracy</a></td>
+</tr>
+<tr>
+<td>the product of two unipotent elements, its characteristic polynomial, the criterion, the three regular types, the two computed cases, the image theorem</td>
+<td><a href="../articles_maths/the-product-of-two-unipotent-elements-and-its-spectrum.html">The Product of Two Unipotent Elements and Its Spectrum</a></td>
+</tr>
+<tr>
+<td>the multiplicative norm, the null cone, its two strata, the norm-one group</td>
+<td><a href="../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html">N-Regularity and N-Degeneracy in the Biquaternion Algebra</a></td>
+</tr>
+<tr>
+<td>the spectral criterion, the characteristic polynomial, the eigenvalues, the spectral-degenerate cone, the similarity classification</td>
+<td><a href="../articles_maths/the-spectrum.html">The Spectrum</a></td>
+</tr>
+<tr>
+<td>the doubly regular sector</td>
+<td><a href="../articles_maths/the-n-regular-spectrally-regular-sector.html">The N-Regular, Spectrally Regular Sector</a></td>
+</tr>
+<tr>
+<td>the scalar line and the Jordan part</td>
+<td><a href="../articles_maths/the-n-regular-spectrally-degenerate-sector.html">The N-Regular, Spectrally Degenerate Sector</a></td>
+</tr>
+<tr>
+<td>the scaled idempotents and the spectrum of a null element</td>
+<td><a href="../articles_maths/the-n-degenerate-spectrally-regular-sector.html">The N-Degenerate, Spectrally Regular Sector</a></td>
+</tr>
+<tr>
+<td>the nilpotent cone, the origin and the ladder</td>
+<td><a href="../articles_maths/the-n-degenerate-spectrally-degenerate-sector.html">The N-Degenerate, Spectrally Degenerate Sector</a></td>
+</tr>
+<tr>
+<td>the eigenbasis, the spectral idempotents and the corners</td>
+<td><a href="../articles_maths/the-eigenbasis-of-a-spectrally-regular-biquaternion.html">The Eigenbasis of a Spectrally Regular Biquaternion</a></td>
+</tr>
+<tr>
+<td>the Jordan basis, the obstruction and the adapted frame</td>
+<td><a href="../articles_maths/the-jordan-basis-of-a-spectrally-degenerate-biquaternion.html">The Jordan Basis of a Spectrally Degenerate Biquaternion</a></td>
+</tr>
+<tr>
+<td>the modulus, the unit factor and the failure of the decomposition at $N=0$</td>
+<td><a href="../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html">The Polar Decomposition of an N-Regular Biquaternion</a></td>
+</tr>
+<tr>
+<td>the rank of left multiplication, the annihilators and the two-sided operator</td>
+<td><a href="../articles_maths/the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html">The Four General Products and Their Relations over the Biquaternion Algebra</a></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The rows are the entry's order.</strong> The relations article comes first, because it owns the partition, the independence and the three invariants. The unipotent product comes second, because it owns the one theorem about moving between the regimes. The sector articles come third, one row for each regime, because the regime paragraphs of this entry are their summaries and not their proofs.</p>
+<h2 id="the-results-in-brief">The Results in Brief</h2>
+<h3 id="the-two-predicates">The Two Predicates</h3>
+<p><strong>The first predicate is $N\neq0$ and the second is $B^{2}\neq0$.</strong></p>
+<p>$$
+\Sigma_{11}=\{N\neq0,\ B^{2}\neq0\},\qquad
+\Sigma_{10}=\{N\neq0,\ B^{2}=0\},\qquad
+\Sigma_{01}=\{N=0,\ B^{2}\neq0\},\qquad
+\Sigma_{00}=\{N=0,\ B^{2}=0\}.
+$$</p>
+<p><strong>In cone notation the four classes are the four pieces of the arrangement of two cones.</strong> Writing $\mathcal N=\{N=0\}$ for the null cone and $\mathcal S=\{B^{2}=0\}$ for the spectral-degenerate cone,</p>
+<p>$$
+\Sigma_{11}=\mathbb B\setminus(\mathcal N\cup\mathcal S),\qquad
+\Sigma_{10}=\mathcal S\setminus\mathcal N,\qquad
+\Sigma_{01}=\mathcal N\setminus\mathcal S,\qquad
+\Sigma_{00}=\mathcal N\cap\mathcal S .
+$$</p>
+<p><strong>The partition is by truth values, so it is exhaustive by construction and needs no theorem.</strong> What needs a theorem is that the four truth values are four degeneration patterns of one quadratic, and that the two cones have the arrangement stated.</p>
+<h3 id="the-four-regimes">The Four Regimes</h3>
+<p><strong>The characteristic polynomial reads both predicates at once.</strong></p>
+<p>$$
+p_{\tilde Q}(X)=X^{2}-2Q_tX+N,\qquad \operatorname{disc}p_{\tilde Q}=-4B^{2},\qquad \lambda_\pm=Q_t\pm iB .
+$$</p>
+<p><strong>The norm is the constant term and the vector square is the discriminant.</strong> So $N=0$ is a root at zero and $B^{2}=0$ is a double root, and the four regimes are the four patterns a quadratic can show.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>regime</th>
+<th>conditions</th>
+<th>spectrum</th>
+<th>the element</th>
+<th>name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Sigma_{11}$</td>
+<td>$N\neq0$, $B^{2}\neq0$</td>
+<td>two distinct non-zero roots</td>
+<td>a unit with two modes</td>
+<td>mass in motion</td>
+</tr>
+<tr>
+<td>$\Sigma_{10}$</td>
+<td>$N\neq0$, $B^{2}=0$</td>
+<td>a double non-zero root</td>
+<td>a unit with one mode</td>
+<td>the rest frame and the exceptional point</td>
+</tr>
+<tr>
+<td>$\Sigma_{01}$</td>
+<td>$N=0$, $B^{2}\neq0$</td>
+<td>two distinct roots, one at zero</td>
+<td>a zero divisor with two modes</td>
+<td>the light ray</td>
+</tr>
+<tr>
+<td>$\Sigma_{00}$</td>
+<td>$N=0$, $B^{2}=0$</td>
+<td>a double root at zero</td>
+<td>a zero divisor with one mode</td>
+<td>the vacuum and the nilpotent ladder</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The last column is the interpretation and the first four columns are algebra.</strong> The entry argues the passage from one to the other and does not assume it.</p>
+<h3 id="independence">Independence</h3>
+<p><strong>Neither cone contains the other, and two witnesses settle it.</strong></p>
+<p>$$
+e_t+i\vec e_x\in\Sigma_{01}\quad(N=0,\ B^{2}=-1),\qquad
+e_t+\vec e_x+i\vec e_y\in\Sigma_{10}\quad(N=1,\ B^{2}=0).
+$$</p>
+<p><strong>The first is null with a full eigenbasis and the second is a unit with none.</strong> The eigenvalues of the first are $0$ and $2$. The minimal polynomial of the second is $(X-1)^{2}$.</p>
+<p><strong>The two conditions are also functionally independent, and that is a statement about gradients.</strong> With coordinates $(Q_t,Q_x,Q_y,Q_z)$,</p>
+<p>$$
+\nabla N=2(Q_t,Q_x,Q_y,Q_z),\qquad \nabla B^{2}=2(0,Q_x,Q_y,Q_z),
+$$</p>
+<p><strong>and the two are proportional only where $Q_t=0$, or where the vector part vanishes.</strong> So the map $\tilde Q\mapsto(N,B^{2})$ has rank two except on the hyperplane $Q_t=0$ and on the scalar line, and it has rank one on those two sets.</p>
+<h3 id="where-the-walls-meet">Where the Walls Meet</h3>
+<p><strong>The intersection of the two cones is the set of square-zero elements.</strong></p>
+<p>$$
+\mathcal N\cap\mathcal S=\{\tilde Q:\tilde Q^{2}=0\}=\{Q_t=0,\ \vec Q^{2}=0\}.
+$$</p>
+<p><strong>On that set, and only there, the two gradients are equal.</strong> The cones are therefore tangent along the nilpotent cone away from the origin, and both are singular at the origin, where the gradients vanish.</p>
+<p><strong>The coincidence is exact and not an accident.</strong> A square-zero element has $Q_t=0$, so the scalar coordinate is absent from both invariants, and the two invariants become the same function of the vector part.</p>
+<h3 id="the-chain-of-invariants">The Chain of Invariants</h3>
+<p><strong>Three invariants separate three different numbers of types.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>invariant</th>
+<th>data</th>
+<th>number of types</th>
+<th>what the types are</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>norm</td>
+<td>$N$</td>
+<td>$2$</td>
+<td>the units and the null cone</td>
+</tr>
+<tr>
+<td>characteristic polynomial</td>
+<td>$(2Q_t,N)$</td>
+<td>$4$</td>
+<td>the four regimes</td>
+</tr>
+<tr>
+<td>minimal polynomial</td>
+<td>$m_{\tilde Q}$</td>
+<td>$6$</td>
+<td>the six strata</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The count is of degeneration patterns and not of values.</strong> The norm forgets the trace, the characteristic polynomial forgets the defect, and the minimal polynomial forgets nothing.</p>
+<p><strong>The six strata are the four regimes with two of them split.</strong> The regime $\Sigma_{10}$ splits into the punctured scalar line and the Jordan part, and the regime $\Sigma_{00}$ splits into the origin and the non-zero nilpotents.</p>
+<h3 id="the-two-decompositions">The Two Decompositions</h3>
+<p><strong>One decomposition follows the discriminant and the other follows the norm.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>stratum</th>
+<th>two-term spectral decomposition</th>
+<th>modulus-unit polar decomposition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Sigma_{11}$</td>
+<td>two terms, unique</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>the punctured scalar line</td>
+<td>one term</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>the Jordan part</td>
+<td>none</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$\Sigma_{01}$</td>
+<td>two terms, unique</td>
+<td>no</td>
+</tr>
+<tr>
+<td>the origin</td>
+<td>one term</td>
+<td>no</td>
+</tr>
+<tr>
+<td>the non-zero nilpotents</td>
+<td>none</td>
+<td>no</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The two failures sit in opposite mixed regimes.</strong> The Jordan part is a unit with no eigenbasis. A null element with two modes is a zero divisor with no polar decomposition. Neither failure implies the other.</p>
+<h3 id="the-two-operators">The Two Operators</h3>
+<p><strong>Two operators attached to one element have their singular loci exactly on the two cones.</strong></p>
+<p>$$
+L_{\tilde Q}(\tilde X)=\tilde Q\tilde X,\qquad
+\mathrm{Sd}_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*},\qquad
+\mathrm{ad}_{\tilde Q}(\tilde X)=\tilde Q\tilde X-\tilde X\tilde Q .
+$$</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>operator</th>
+<th>locus</th>
+<th>value on the locus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_{\tilde Q}$</td>
+<td>the null cone</td>
+<td>rank $2$ off the origin, $0$ at the origin</td>
+</tr>
+<tr>
+<td>$\mathrm{Sd}_{\tilde Q}$</td>
+<td>the null cone</td>
+<td>rank $1$ off the origin, $0$ at the origin</td>
+</tr>
+<tr>
+<td>$\mathrm{ad}_{\tilde Q}$</td>
+<td>the spectral-degenerate cone</td>
+<td>zero on the scalar line, of index $3$ elsewhere</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The sandwich is singular exactly on the norm cone and the derivation is nilpotent exactly on the discriminant cone.</strong> Each operator therefore measures one predicate and is blind to the other, and the pair of them is a second reading of the partition.</p>
+<h3 id="two-unipotent-motions">Two Unipotent Motions</h3>
+<p><strong>The product of two unipotents leaves its regime, and its type is decided by one number.</strong></p>
+<p>$$
+T=U_1U_2,\qquad U_i=e_t+\vec\Upsilon_i,\qquad \vec\Upsilon_i^{2}=0,\qquad s=\vec\Upsilon_1\cdot\vec\Upsilon_2,
+$$</p>
+<p>$$
+Q_t(T)=1-s,\qquad B^{2}(T)=1-Q_t^{2}=s(2-s),\qquad N(T)=1 .
+$$</p>
+<p><strong>The product is regular except at $s=0$ and $s=2$.</strong> It is elliptic on the interval $0<s<2$, hyperbolic outside it, and defective at the two endpoints.</p>
+<p><strong>The interval is the whole content of the theorem, and the sign of $s$ is not the criterion.</strong> A positive pairing gives the elliptic type on $(0,2)$ and the hyperbolic type on $(2,\infty)$.</p>
+<h2 id="the-two-invariants">The Two Invariants</h2>
+<h3 id="the-norm-and-the-causal-sign">The Norm and the Causal Sign</h3>
+<p><strong>The norm is the multiplicative quadratic form of the entry before this one, and its vanishing is the wall of invertibility.</strong></p>
+<p>$$
+N(\tilde Q)=Q_t^{2}+B^{2}=\sum_{\mu}Q_\mu^{2},\qquad N(\tilde P\tilde Q)=N(\tilde P)N(\tilde Q),\qquad \tilde Q^{-1}=\frac{\tilde Q^{\natural}}{N}.
+$$</p>
+<p><strong>On the material sector the norm is the interval.</strong> With $\tilde P=ip_0e_t+\vec p$ and real $p_0,\vec p$, in units with $c=1$,</p>
+<p>$$
+N(\tilde P)=-p_0^{2}+\lvert\vec p\rvert^{2}=-m^{2}.
+$$</p>
+<p><strong>The sign of $N$ is the causal sign and the level sets are the mass shells.</strong> That is the reading of the previous entry and it is not repeated here. What matters here is that the norm takes one complex value and that only its vanishing is invariant under the whole structure: the sign, and the word <em>mass</em>, belong to the real slice.</p>
+<h3 id="the-vector-square-and-the-modes">The Vector Square and the Modes</h3>
+<p><strong>The vector square is the discriminant, and it involves no scalar part.</strong></p>
+<p>$$
+B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2},\qquad \operatorname{disc}p_{\tilde Q}=-4B^{2},\qquad \lambda_+-\lambda_-=2iB .
+$$</p>
+<p><strong>The difference of the eigenvalues is twice $iB$, so $B$ is half the gap of the spectrum.</strong> The vanishing of $B^{2}$ is therefore the coincidence of the two eigenvalues, and nothing else.</p>
+<p><strong>On the material sector the vector square is the momentum squared.</strong></p>
+<p>$$
+B^{2}(\tilde P)=\lvert\vec p\rvert^{2},
+$$</p>
+<p><strong>so $B^{2}=0$ is $\vec p=0$.</strong> The second predicate is motion: a real four-momentum has two distinct eigenvalues exactly when it moves.</p>
+<p><strong>The two invariants are of different kinds, and that is why four regimes exist.</strong> The norm is multiplicative and its zero set is closed under products. The vector square is not multiplicative and its zero set is not stable under products. One condition is about the group and the other about the spectrum, and a group condition and a spectral condition do not determine each other.</p>
+<h3 id="the-material-slice">The Material Slice</h3>
+<p><strong>The four regimes are cut on the complex algebra, and a real four-momentum occupies a four-dimensional slice of it.</strong> The slice meets all four regimes, and it meets two of them in a set of lower dimension than the regime itself.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>regime</th>
+<th>on the material slice</th>
+<th>condition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Sigma_{11}$</td>
+<td>a timelike or spacelike momentum with $\vec p\neq0$</td>
+<td>$p_0^{2}\neq\lvert\vec p\rvert^{2}$ and $\vec p\neq0$</td>
+</tr>
+<tr>
+<td>$\Sigma_{10}$</td>
+<td>the rest line only</td>
+<td>$\vec p=0$ and $p_0\neq0$</td>
+</tr>
+<tr>
+<td>$\Sigma_{01}$</td>
+<td>the light cone without its apex</td>
+<td>$p_0^{2}=\lvert\vec p\rvert^{2}$ and $\vec p\neq0$</td>
+</tr>
+<tr>
+<td>$\Sigma_{00}$</td>
+<td>the origin only</td>
+<td>$p_0=0$ and $\vec p=0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The Jordan part of $\Sigma_{10}$ is empty for matter.</strong> A real spatial vector has $B^{2}=\lvert\vec p\rvert^{2}$, a sum of three real squares, so it is isotropic only when it vanishes, and then there is no nilpotent part. The exceptional point of that regime is a property of the complexified algebra.</p>
+<p><strong>The same is true of the nilpotent ladder.</strong> The non-zero nilpotents of $\Sigma_{00}$ are complex isotropic vectors, and no real four-momentum is one. The material share of the fourth regime is the single origin.</p>
+<h2 id="the-four-regimes_1">The Four Regimes</h2>
+<p><strong>The four regimes are stated here as one table and one paragraph each.</strong> The proofs are in the four sector articles. This section states what the table says and where the names come from.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>regime</th>
+<th>real dimension</th>
+<th>spectrum</th>
+<th>invertible</th>
+<th>eigenbasis</th>
+<th>polar word</th>
+<th>name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Sigma_{11}$</td>
+<td>$8$, open and dense</td>
+<td>$\{\lambda_+,\lambda_-\}$, distinct and non-zero</td>
+<td>yes</td>
+<td>yes, unique</td>
+<td>yes</td>
+<td>mass in motion</td>
+</tr>
+<tr>
+<td>$\Sigma_{10}$</td>
+<td>$6$</td>
+<td>$\{Q_t\}$, $Q_t\neq0$</td>
+<td>yes</td>
+<td>on the scalar line; none on the Jordan part</td>
+<td>yes</td>
+<td>the rest frame and the exceptional point</td>
+</tr>
+<tr>
+<td>$\Sigma_{01}$</td>
+<td>$6$</td>
+<td>$\{2Q_t,0\}$, $2Q_t\neq0$</td>
+<td>no</td>
+<td>yes, unique</td>
+<td>no</td>
+<td>the light ray</td>
+</tr>
+<tr>
+<td>$\Sigma_{00}$</td>
+<td>$4$</td>
+<td>$\{0\}$</td>
+<td>no</td>
+<td>only at the origin, trivially</td>
+<td>no</td>
+<td>the vacuum and the nilpotent ladder</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The dimensions are counts of complex equations.</strong> The norm is one complex equation whose gradient does not vanish off the origin, so its zero set has real dimension six. The vector square is one complex equation whose gradient does not vanish off the scalar line, so its zero set has real dimension six. The pair has real dimension four, because on the intersection the scalar coordinate is zero and the vector part is isotropic.</p>
+<h3 id="the-generic-regime">The Generic Regime</h3>
+<p><strong>$\Sigma_{11}$ is the complement of the union of two cones, so it is open.</strong> Its complement has real codimension two, so it is also dense, and an element drawn without a rule lies in it: a hundred random draws with complex normal coefficients gave a hundred elements of $\Sigma_{11}$.</p>
+<p><strong>The element is a unit with two distinct eigenvalues.</strong> It has two orthogonal spectral idempotents, a unique two-term decomposition, an eigenbasis, a modulus and a unit factor. Every description the category has built applies here, and applies here only.</p>
+<p><strong>The physical name is mass in motion, and the name is exact.</strong> On the material slice the element is a timelike momentum with a non-zero spatial part, or a spacelike one. The two eigenvalues are the two light-cone frequencies, their product is $-m^{2}$, and their ratio is the squared Doppler factor.</p>
+<h3 id="the-rest-frame-and-the-exceptional-point">The Rest Frame and the Exceptional Point</h3>
+<p><strong>$\Sigma_{10}$ is the set of units whose two eigenvalues have merged.</strong> The gradient of $B^{2}$ vanishes on the scalar line, so the regime is not a manifold there, and it has two faces that share no physics.</p>
+<p><strong>The scalar line is the semisimple face.</strong> The element is $Q_te_t$: one eigenvalue, repeated, and every basis is an eigenbasis. On the material slice this is the rest frame, the only frame in which the momentum is purely temporal.</p>
+<p><strong>The Jordan part is the defective face.</strong> The element is $Q_te_t+\vec\Upsilon$ with $\vec\Upsilon$ a non-zero pure nilpotent: one eigenvalue, one eigendirection, a single Jordan block, and no eigenbasis at all. Its reading is the exceptional point of a non-Hermitian operator, where two eigenvalues and two eigendirections have coalesced.</p>
+<p><strong>The two faces have the same norm and the same characteristic polynomial.</strong> They differ in the minimal polynomial, which is $X-Q_t$ on the line and $(X-Q_t)^{2}$ on the Jordan part. That is the sharpest statement in the entry: no function of the spectrum separates them.</p>
+<h3 id="the-light-ray">The Light Ray</h3>
+<p><strong>$\Sigma_{01}$ is the set of null elements with two distinct eigenvalues.</strong> The gradient of $N$ does not vanish there, so the regime is a manifold of real dimension six, and the element is a non-zero multiple of a non-trivial idempotent.</p>
+<p>$$
+N(\tilde Q)=0,\quad B^{2}\neq0\quad\Longrightarrow\quad \tilde Q=\kappa\tilde\Pi,\qquad \kappa=2Q_t\neq0,\qquad \tilde\Pi^{2}=\tilde\Pi .
+$$</p>
+<p><strong>The spectrum is $\{\kappa,0\}$ and one eigenvalue is zero.</strong> So the element has a unique two-term decomposition with one coefficient zero, an eigenbasis, no inverse, and no polar decomposition: a modulus would need a square root of zero.</p>
+<p><strong>The physical name is the light ray.</strong> On the material slice the regime is the light cone without its apex, and the element is a massless momentum: one light-cone eigenvalue vanishes and the other is twice the energy.</p>
+<h3 id="the-vacuum">The Vacuum</h3>
+<p><strong>$\Sigma_{00}$ is the set of square-zero elements, and it is the common boundary of the other three.</strong></p>
+<p>$$
+\tilde Q^{2}=0\iff \tilde Q\in\Sigma_{00},\qquad \Sigma_{00}=\{0\}\cup\{\vec\Upsilon:\vec\Upsilon\neq0,\ \vec\Upsilon^{2}=0\}.
+$$</p>
+<p><strong>Off the origin the element is a pure nilpotent, and the origin is the only semisimple point.</strong> The minimal polynomial is $X^{2}$ off the origin and $X$ at it, and the two share the norm, the trace and the characteristic polynomial.</p>
+<p><strong>The physical name is the vacuum together with its nilpotent ladder.</strong> The origin is the unique element with zero momentum and zero scale. The nilpotents are the one-site ladder: two of them with anticommutator $e_t$ produce orthogonal idempotents, which are null elements of the previous regime.</p>
+<h2 id="independence_1">Independence</h2>
+<p><strong>The two conditions are independent in the strong sense: neither cone contains the other.</strong></p>
+<p>$$
+\mathcal N\not\subseteq\mathcal S,\qquad \mathcal S\not\subseteq\mathcal N .
+$$</p>
+<p><strong>The witnesses are the two mixed regimes, and each is a short element.</strong> The element $e_t+i\vec e_x$ has $N=0$ and $B^{2}=-1$; it is null and its eigenvalues are $0$ and $2$, so it has a full eigenbasis. The element $e_t+\vec e_x+i\vec e_y$ has $N=1$ and $B^{2}=0$; it is a unit whose minimal polynomial is $(X-1)^{2}$, so it has no eigenbasis.</p>
+<p><strong>A second pair of witnesses covers the degenerate corners.</strong> The scalar $ie_t$ has $N=-1$ and $B^{2}=0$, and the nilpotent $\vec e_x+i\vec e_y$ has $N=0$ and $B^{2}=0$. The four elements together exhibit all four combinations, which is the proof that the partition is fourfold and not twofold.</p>
+<p><strong>The independence of the conditions is not the independence of the numbers.</strong> The map $\tilde Q\mapsto(N,B^{2})$ has rank two except on the hyperplane $Q_t=0$ and on the scalar line, so off those two sets the two values can be prescribed locally and independently. On the hyperplane the two gradients coincide and the rank is one; on the scalar line the second gradient vanishes and the rank is one again.</p>
+<p><strong>The asymmetry of the two conditions is what forces four regimes rather than a dichotomy.</strong> The norm is multiplicative and its zero set is a subsemigroup. The vector square is neither multiplicative nor additive. A product of two null elements is null, and the product can even be zero:</p>
+<p>$$
+(e_t+i\vec e_x)(e_t-i\vec e_x)=0 .
+$$</p>
+<p><strong>So the null cone is stable under products and the light-ray regime is not.</strong> The product of two elements of $\Sigma_{01}$ has norm zero and lies in $\Sigma_{01}$ or in $\Sigma_{00}$, and both outcomes occur. The vector square has no such stability: two elements of $\Sigma_{10}$ can compose into $\Sigma_{11}$, which is the theorem of §<em>Two Unipotent Motions</em>.</p>
+<p><strong>The zero product is worth stating as its own fact.</strong> The two factors are null, non-zero, and their product vanishes. A semigroup with such pairs is a semigroup with annihilators, and the annihilator of a null element is another null element of the opposite phase.</p>
+<h2 id="where-the-two-walls-meet">Where the Two Walls Meet</h2>
+<p><strong>The intersection of the two cones is the square-zero set, and the identification is exact in both directions.</strong></p>
+<p>$$
+\mathcal N\cap\mathcal S=\{\tilde Q:\tilde Q^{2}=0\}=\{Q_t=0,\ \vec Q^{2}=0\}.
+$$</p>
+<p><strong>The forward inclusion is a computation in two lines.</strong> If $N=0$ and $B^{2}=0$ then $Q_t^{2}=N-B^{2}=0$, and the square of a pure vector is $-B^{2}e_t$, which vanishes. The converse uses the identity</p>
+<p>$$
+\tilde Q^{2}=(Q_t^{2}-B^{2})e_t+2Q_t\vec Q .
+$$</p>
+<p><strong>A vanishing square with a non-zero vector part forces $Q_t=0$ from the vector component, and then $B^{2}=0$ from the scalar component.</strong> A vanishing square with a zero vector part is a scalar whose square is zero, that is the origin.</p>
+<p><strong>On the intersection the two walls are tangent.</strong> The gradients are</p>
+<p>$$
+\nabla N=2(Q_t,Q_x,Q_y,Q_z),\qquad \nabla B^{2}=2(0,Q_x,Q_y,Q_z),
+$$</p>
+<p><strong>and they coincide exactly where $Q_t=0$, which on the two cones is the intersection.</strong> Away from the origin both gradients are non-zero, so both cones are smooth there and their tangent hyperplanes agree. At the origin both gradients vanish and both cones are singular.</p>
+<p><strong>Tangency is a statement about first order, and it has a reading.</strong> At a square-zero element, an infinitesimal displacement changes the two invariants by the same amount to first order. No first-order measurement can tell whether the mass or the splitting has moved, because the two move together.</p>
+<p><strong>The intersection is not a fifth regime.</strong> It is the doubly degenerate regime, and it is exactly the set on which both predicates are false. What the tangency adds is that the two walls are not in general position there: the arrangement has a stratum on which the two defining equations are dependent.</p>
+<h2 id="the-chain-of-invariants_1">The Chain of Invariants</h2>
+<p><strong>Three invariants, three counts, and each is a function of the one above it.</strong></p>
+<p>$$
+N=\text{constant term of }p_{\tilde Q},\qquad p_{\tilde Q}\in\{m_{\tilde Q},\,m_{\tilde Q}^{2}\}.
+$$</p>
+<p><strong>Read downward, information is lost and lost irreversibly.</strong> The norm forgets the sum of the eigenvalues. The characteristic polynomial forgets whether the element is scalar or Jordan. The minimal polynomial forgets nothing.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>invariant</th>
+<th>number of types</th>
+<th>separates</th>
+<th>fails to separate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>norm $N$</td>
+<td>$2$</td>
+<td>units from null elements</td>
+<td>the scalar line from the Jordan part; the origin from the nilpotents</td>
+</tr>
+<tr>
+<td>characteristic polynomial</td>
+<td>$4$</td>
+<td>the four regimes</td>
+<td>the two faces of $\Sigma_{10}$ and of $\Sigma_{00}$</td>
+</tr>
+<tr>
+<td>minimal polynomial</td>
+<td>$6$</td>
+<td>the six strata</td>
+<td>nothing</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The failure of the norm is a theorem and not an oversight.</strong> For $Q_t\neq0$ and a non-zero pure nilpotent $\vec\Upsilon$, the scalar $Q_te_t$ and the Jordan element $Q_te_t+\vec\Upsilon$ have the same norm $Q_t^{2}$, the same trace $2Q_t$, and therefore the same characteristic polynomial $(X-Q_t)^{2}$. Their minimal polynomials are $X-Q_t$ and $(X-Q_t)^{2}$.</p>
+<p><strong>The same computation at the origin gives the second pair.</strong> The origin and every non-zero nilpotent have norm zero, trace zero and characteristic polynomial $X^{2}$. Their minimal polynomials are $X$ and $X^{2}$.</p>
+<p><strong>So the chain is a chain of coarse-grainings.</strong> A measurement of the norm is a measurement of one number; a measurement of the spectrum is a measurement of two; the defect is a third fact that neither sees.</p>
+<p><strong>The chain also fixes what the partition is not.</strong> A finer classification exists, by the minimal polynomial, and it cuts two of the four regimes in two. The partition of this entry is the coarsest cut that still separates invertibility from the spectrum, and the finer cut is a different question.</p>
+<h2 id="the-two-decompositions_1">The Two Decompositions</h2>
+<p><strong>The spectral decomposition follows the discriminant and the polar decomposition follows the norm.</strong></p>
+<p><strong>The spectral side.</strong> On $\Sigma_{11}$ and on $\Sigma_{01}$ there is a unique writing $\tilde Q=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-$ with orthogonal idempotents summing to $e_t$, and the idempotents are</p>
+<p>$$
+\tilde\Pi_\pm=\frac{\tilde Q-\lambda_\mp e_t}{\lambda_\pm-\lambda_\mp}.
+$$</p>
+<p><strong>On the punctured scalar line the writing collapses to one term.</strong> On the Jordan part no non-trivial idempotent commutes with the element, so no two-term writing exists. On the non-zero nilpotents the same failure occurs, and at the origin the trivial one-term writing $0=0\cdot e_t$ exists.</p>
+<p><strong>The polar side.</strong> A writing $\tilde Q=\Rho\tilde U$ with $\Rho\in\mathbb C$, $\Rho^{2}=N(\tilde Q)$ and $N(\tilde U)=1$ exists exactly on $\Sigma_{11}\cup\Sigma_{10}$, and the modulus is a choice of square root.</p>
+<p><strong>The two failures are in opposite mixed regimes.</strong> The Jordan part is a unit with no eigenbasis. The light-ray regime is a zero divisor with an eigenbasis. So the two descriptions fail independently, and an element can have one without the other.</p>
+<p><strong>Neither failure is a defect of the element.</strong> Each is a defect of a description relative to a condition. The element exists in both cases; what does not exist is the coordinate system that the description assumes.</p>
+<h2 id="the-two-operators_1">The Two Operators</h2>
+<p><strong>Two operators read the two cones, and a third reads the strata.</strong></p>
+<p><strong>Left multiplication has rank four on the units, two on the non-zero null elements, and zero at the origin.</strong> So it measures invertibility and separates the origin from the null cone. It does not separate the scalar line from the Jordan part, because its rank is four on both.</p>
+<p><strong>The sandwich is singular exactly on the null cone.</strong> With $\mathrm{Sd}_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$, the proof is one line: if $N=0$ then</p>
+<p>$$
+\mathrm{Sd}_{\tilde Q}(\tilde Q^{\natural})=\tilde Q\tilde Q^{\natural}\tilde Q^{*}=N\tilde Q^{*}=0,
+$$</p>
+<p><strong>and if $N\neq0$ then the sandwich is invertible, with inverse $\mathrm{Sd}_{\tilde Q^{-1}}$.</strong> Off the origin its rank is one, and at the origin it is zero.</p>
+<p><strong>The inner derivation satisfies a closed identity, and the identity decides everything.</strong></p>
+<p>$$
+\mathrm{ad}_{\vec Q}^{3}=-4B^{2}\,\mathrm{ad}_{\vec Q},
+$$</p>
+<p><strong>so the derivation is nilpotent exactly when $B^{2}=0$.</strong> On the scalar line it is zero. On the Jordan part and on the non-zero nilpotents its index is three. On the two regular regimes it is not nilpotent, because a nilpotent operator on a four-dimensional space would satisfy $\mathrm{ad}^{4}=0$, while the identity gives $\mathrm{ad}^{4}=-4B^{2}\mathrm{ad}^{2}\neq0$.</p>
+<p><strong>The pair of loci is therefore a second reading of the partition, and a finer one.</strong> The sandwich follows the norm and the derivation follows the discriminant. Together they separate the scalar line from the Jordan part and the origin from the non-zero nilpotents, which the norm alone cannot do.</p>
+<p><strong>The sandwich is not a new object.</strong> Its value at the identity is the weight of the previous entry,</p>
+<p>$$
+\operatorname{Sc}\mathrm{Sd}_{\tilde Q}(e_t)=\operatorname{Sc}(\tilde Q\tilde Q^{*})=H(\tilde Q),
+$$</p>
+<p><strong>so the operator whose singularity marks the massless wall is the operator that measures the amplitude.</strong></p>
+<h2 id="two-unipotent-motions_1">Two Unipotent Motions</h2>
+<p><strong>A unipotent is $U=e_t+\vec\Upsilon$ with $\vec\Upsilon$ a non-zero pure nilpotent: a unit of norm one, with the double eigenvalue $1$ and no eigenbasis.</strong> It is the shear of the algebra, and it lies in one of the two strata of the spectral wall.</p>
+<p><strong>The product of two of them stays in the norm-one slice and leaves the wall.</strong></p>
+<p>$$
+T=U_1U_2=e_t+\vec\Upsilon_1+\vec\Upsilon_2+\vec\Upsilon_1\vec\Upsilon_2,\qquad \operatorname{Tr}T=2+t,\qquad \det T=1,
+$$</p>
+<p>$$
+p_T(\lambda)=\lambda^{2}-(2+t)\lambda+1,\qquad t=\operatorname{Tr}(\vec\Upsilon_1\vec\Upsilon_2)=-2s,\qquad s=\vec\Upsilon_1\cdot\vec\Upsilon_2 .
+$$</p>
+<p><strong>So the product is described by one complex number, and the criterion is one equation.</strong></p>
+<p>$$
+Q_t(T)=1+\frac{t}{2}=1-s,\qquad B^{2}(T)=-\frac{t(t+4)}{4}=s(2-s).
+$$</p>
+<p><strong>The product is regular exactly when $s\notin\{0,2\}$.</strong> At $s=0$ the single eigenvalue is $1$: the product is $e_t$ when $\vec\Upsilon_2=-\vec\Upsilon_1$ and a non-trivial unipotent otherwise. At $s=2$ the single eigenvalue is $-1$ and the product is $-e_t$ times a non-trivial unipotent. The element $-e_t$ itself cannot occur, because a unipotent has scalar part one.</p>
+<p><strong>On the regular set the type is decided by the interval and not by the sign.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$s$</th>
+<th>spectrum</th>
+<th>type</th>
+<th>name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0<s<2$, real</td>
+<td>non-real conjugates on the unit circle</td>
+<td>elliptic</td>
+<td>a rotation</td>
+</tr>
+<tr>
+<td>$s<0$ or $s>2$, real</td>
+<td>real and reciprocal; positive for $s<0$, negative for $s>2$</td>
+<td>hyperbolic</td>
+<td>a boost, with a central $-1$ in the second case</td>
+</tr>
+<tr>
+<td>$s$ not real</td>
+<td>non-real and reciprocal, moduli not one</td>
+<td>neither</td>
+<td>a complex motion</td>
+</tr>
+<tr>
+<td>$s=0$</td>
+<td>$\{1\}$</td>
+<td>degenerate</td>
+<td>the identity or a shear</td>
+</tr>
+<tr>
+<td>$s=2$</td>
+<td>$\{-1\}$</td>
+<td>degenerate</td>
+<td>minus a shear</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The warning is worth a sentence of its own.</strong> A positive pairing does not mean the elliptic type: $s\in(0,2)$ is elliptic and $s\in(2,\infty)$ is hyperbolic, and both are positive. The criterion is the sign of $s(2-s)$, which is the sign of the vector square of the product on the real line.</p>
+<h3 id="the-two-worked-cases">The Two Worked Cases</h3>
+<p><strong>Two pairings of the same nilpotent give the two regular types.</strong></p>
+<p>$$
+\vec\Upsilon_1=\frac{i}{2}\vec e_x-\frac{1}{2}\vec e_y,\qquad
+\vec\Upsilon_2=-\frac{i}{2}\vec e_x-\frac{1}{2}\vec e_y,\qquad s=\frac{1}{2} .
+$$</p>
+<p><strong>Both are pure nilpotents, the pairing is one half, and the product is</strong></p>
+<p>$$
+T=\frac{1}{2}e_t-\vec e_y-\frac{i}{2}\vec e_z,\qquad Q_t=\frac{1}{2},\qquad B^{2}=\frac{3}{4},\qquad \lambda_\pm=e^{\pm i\pi/3},
+$$</p>
+<p><strong>which is elliptic: the eigenvalues are the sixth roots of unity.</strong></p>
+<p><strong>Replacing the second nilpotent by its negative gives the other type.</strong></p>
+<p>$$
+\vec\Upsilon_3=-\vec\Upsilon_2,\qquad s=-\frac{1}{2},\qquad Q_t=\frac{3}{2},\qquad B^{2}=-\frac{5}{4},\qquad \lambda_\pm=\frac{3\pm\sqrt{5}}{2},
+$$</p>
+<p><strong>which is hyperbolic: real, reciprocal and positive.</strong> The two products differ only in the pairing of the two nilpotent parts, and that difference is the difference between a rotation and a boost.</p>
+<h3 id="the-image-theorem">The Image Theorem</h3>
+<p><strong>Every element of the norm-one group except $-e_t$ is a product of two non-trivial unipotents, and every unit is a central scalar times an element of the norm-one slice.</strong></p>
+<p><strong>The mechanism is visible in the invariants.</strong> On the slice $B^{2}=1-Q_t^{2}$, so the two invariants of a norm-one element are not independent: prescribing $Q_t$ prescribes $B^{2}$. The product law has $Q_t=1-s$ and $B^{2}=s(2-s)$, which is the same relation, so $s=1-Q_t$ reproduces both invariants. The single value that fails is $s=2$, that is $Q_t=-1$, and it fails because $B^{2}=0$ there and the product is defective.</p>
+<p><strong>So the shear set generates the group except at one point.</strong> The exception is the element that squares to $-e_t$: the central element that represents the full turn in the double cover.</p>
+<h2 id="the-interpretations">The Interpretations</h2>
+<h3 id="i10a-two-questions-not-one-the-mass-and-the-motion">I.10.a — Two Questions, Not One: the Mass and the Motion</h3>
+<p><strong>Read:</strong> two quadratic forms on one element, and two predicates that do not determine each other.</p>
+<p><strong>A single invariant cannot ask two questions.</strong> The norm is one complex number; it can be zero or not, and the sign of a real value adds a second bit, but it cannot say whether the spectrum is separated. The vector square is a second quadratic form, it is not a function of the first, and the pair of them is the smallest amount of data that answers both questions.</p>
+<p><strong>The physical interpretation is that mass and motion are independent attributes of one object and not two names for one attribute.</strong> A four-momentum has a mass and a direction. The mass is the invariant magnitude and the direction is the splitting. The algebra says that these are cut by two different equations, so a change of one does not force a change of the other.</p>
+<p><strong>The reading is structural and it stops at the surface.</strong> The two forms are fixed by the algebra and not chosen. No coefficient in them is free, so the independence is a property of the quaternion multiplication and not of a modelling decision.</p>
+<p><strong>The boundary.</strong> Independence of two predicates is not statistical independence and not causal independence. Nothing here says that a process changes the mass without changing the momentum. It says that the two conditions on an element are logically independent.</p>
+<h3 id="i10b-the-four-names-are-the-four-answers">I.10.b — The Four Names Are the Four Answers</h3>
+<p><strong>Read:</strong> the table of §<em>The Four Regimes</em>, whose last column names each class after the part of it that matter reaches.</p>
+<p><strong>A name is a compression of a regime, and it must be recoverable from the algebra.</strong> Mass in motion is a unit with two modes on a timelike or spacelike momentum with a non-zero spatial part. The rest frame is the semisimple face of the units with one mode. The light ray is a null element with two modes and one vanishing eigenvalue. The vacuum is the square-zero set, of which matter reaches only the origin.</p>
+<p><strong>The physical interpretation is that the four regimes are the four kinematic situations of a four-momentum, extended to the complex algebra.</strong> There is no fifth situation, because a quadratic has only four degeneration patterns: two distinct non-zero roots, a double non-zero root, two distinct roots with one at zero, and a double root at zero.</p>
+<p><strong>The extension is what makes the table worth stating.</strong> Two of the four regimes contain objects that no real momentum reaches: the Jordan part of the second and the nilpotents of the fourth. The table is the complexification of a kinematic classification, and the extra points are the price of working in an algebra that is closed under its operations.</p>
+<p><strong>The boundary.</strong> The names are names of regimes and not of particles. A regime is a set of elements, and nothing in the algebra counts them.</p>
+<h3 id="i10c-the-generic-element-is-doubly-regular">I.10.c — The Generic Element Is Doubly Regular</h3>
+<p><strong>Read:</strong> $\Sigma_{11}$ is open and dense, of real dimension eight, and its complement is the union of two cones of real codimension two.</p>
+<p>$$
+\dim_{\mathbb R}\Sigma_{11}=8,\qquad \dim_{\mathbb R}\Sigma_{10}=\dim_{\mathbb R}\Sigma_{01}=6,\qquad \dim_{\mathbb R}\Sigma_{00}=4 .
+$$</p>
+<p><strong>A hundred random draws with complex normal coefficients gave a hundred elements of $\Sigma_{11}$.</strong> The degenerate regimes are not small in the sense of being rare in a discrete family. They are small in the sense of having no interior.</p>
+<p><strong>The physical interpretation is that the exceptional regimes are walls and not rooms.</strong> An element drawn without a rule is a unit with two modes. To be at rest, to be null, or to be square-zero is to satisfy an equation, and an equation is a wall.</p>
+<p><strong>The reading gives a precise sense to the word exceptional.</strong> The word does not mean improbable in the sense of a rare event with a probability. It means of empty interior and of lower dimension, so that a generic perturbation leaves the regime at once.</p>
+<p><strong>The boundary.</strong> Typicality in the algebra is not typicality in nature. A physical configuration is not drawn from a Gaussian on the coefficients, and a system can sit on a wall by symmetry: a particle at rest is a wall, and it is a stable physical situation.</p>
+<h3 id="i10d-neither-answer-implies-the-other">I.10.d — Neither Answer Implies the Other</h3>
+<p><strong>Read:</strong> the two witnesses $e_t+i\vec e_x$ and $e_t+\vec e_x+i\vec e_y$, one in each mixed regime.</p>
+<p><strong>One element is null and has a full eigenbasis; the other is a unit and has none.</strong> The first is $2\tilde\Pi$ for a non-trivial idempotent, so its spectrum is $\{2,0\}$ and its spectral decomposition is unique. The second satisfies $(\tilde Q-e_t)^{2}=0$ with $\tilde Q\neq e_t$, so its minimal polynomial has degree two and no non-trivial idempotent commutes with it.</p>
+<p><strong>The physical interpretation is that having a mass and having a mode basis are different achievements.</strong> A massless element can be perfectly resolvable into two modes, and a massive element can be a single defective block. Neither property is a consequence of the other, and neither is a proxy for the other.</p>
+<p><strong>The two witnesses are also the sharpest counterexamples to a tempting inference.</strong> The tempting inference is that a zero divisor is a degenerate object in every sense. It is degenerate in invertibility and regular in spectrum, and the two words must be kept apart.</p>
+<p><strong>The boundary.</strong> A witness is one element, and it proves non-implication and not typicality. The mixed regimes are lower-dimensional, so the two witnesses are exceptional objects that prove a logical point.</p>
+<h3 id="i10e-on-the-nilpotent-cone-the-two-dials-are-one-dial">I.10.e — On the Nilpotent Cone the Two Dials Are One Dial</h3>
+<p><strong>Read:</strong> $\nabla N=\nabla B^{2}$ exactly on $\{Q_t=0\}$, and on the two cones that set is $\Sigma_{00}$.</p>
+<p><strong>The tangency is an exact statement about first order.</strong> At a square-zero element a displacement changes the two invariants by the same amount to first order, because the scalar coordinate is absent from both gradients and the vector part enters both identically.</p>
+<p><strong>The physical interpretation is that at a square-zero element the mass and the splitting cannot be moved separately.</strong> An infinitesimal perturbation changes both or neither, and no first-order measurement distinguishes which one has moved.</p>
+<p><strong>The reading explains what the doubly degenerate set is.</strong> The two cones are two surfaces in an eight-dimensional space. Along the nilpotent cone they share a tangent hyperplane, so they touch and do not cross. The dimension of their intersection is nevertheless the one the codimensions predict, four real dimensions, because two sets of real codimension two meet in codimension four whether they are transverse or not. What the tangency changes is not the size of the intersection but the way a perturbation leaves it: to first order the two equations fail together.</p>
+<p><strong>The boundary.</strong> The statement is first order. At second order the two invariants separate again, because they differ by $Q_t^{2}$ and a displacement that creates a non-zero scalar part breaks the coincidence at once.</p>
+<h3 id="i10f-the-norm-is-blind-to-the-defect">I.10.f — The Norm Is Blind to the Defect</h3>
+<p><strong>Read:</strong> $Q_te_t$ and $Q_te_t+\vec\Upsilon$ have the same norm, the same trace and the same characteristic polynomial, and different minimal polynomials.</p>
+<p><strong>The two elements are indistinguishable by any function of the spectrum.</strong> They differ in one bit: whether the element is a scalar or a single Jordan block. That bit is not in the norm and not in the characteristic polynomial.</p>
+<p><strong>The physical interpretation is that a mass measurement does not report whether the object has a mode basis.</strong> Two objects of the same mass and the same rate can differ in whether their description has two eigendirections or one, and no spectral measurement sees the difference.</p>
+<p><strong>The same blindness occurs at the vacuum.</strong> The origin and every non-zero nilpotent have norm zero and characteristic polynomial $X^{2}$, and they differ in the minimal polynomial, $X$ against $X^{2}$.</p>
+<p><strong>The boundary.</strong> The defect is visible to the element and to the derivation, which is nilpotent on one and zero on the other. So the blindness belongs to the invariants and not to the algebra: a finer operator reads what the numbers do not.</p>
+<h3 id="i10g-the-chain-of-invariants-is-a-chain-of-forgetting">I.10.g — The Chain of Invariants Is a Chain of Forgetting</h3>
+<p><strong>Read:</strong> the norm gives two types, the characteristic polynomial four, the minimal polynomial six, and each is a function of the one above it.</p>
+<p><strong>Reading down the chain loses information, and the loss is irreversible.</strong> The norm forgets the trace. The characteristic polynomial forgets the defect. Nothing recovers what is forgotten.</p>
+<p><strong>The physical interpretation is a hierarchy of coarse-grainings.</strong> The mass is the coarsest observable of an element, the spectrum is finer, and the defect is the finest. A theory that records only the mass has thrown away the frame and the defect. A theory that records the spectrum has kept the two rates and thrown away the defect.</p>
+<p><strong>The hierarchy is a hierarchy of measurements and not of systems.</strong> The same element has all three descriptions, and the choice of description is a choice of what to measure.</p>
+<p><strong>The boundary.</strong> The counts two, four and six count types and not values. The characteristic polynomial takes infinitely many values and falls into four patterns, and the table counts the patterns.</p>
+<h3 id="i10h-two-descriptions-fail-in-opposite-regimes">I.10.h — Two Descriptions Fail in Opposite Regimes</h3>
+<p><strong>Read:</strong> the eigenbasis fails on the Jordan part, the polar decomposition fails on the null cone, and the Jordan part is a unit while a null element is not.</p>
+<p><strong>The two failures are independent because the two conditions are.</strong> A unit can fail to have an eigenbasis. A zero divisor can have one. The two descriptions are therefore not two names for one structure.</p>
+<p><strong>The physical interpretation is that non-invertibility and non-diagonalisability are different obstructions.</strong> An object can be irreversible and perfectly resolvable, or reversible and defective. The two words are used loosely in physics, and the algebra separates them.</p>
+<p><strong>The reading is a warning about descriptions.</strong> A description is a coordinate system: the eigenbasis assumes distinct eigenvalues, the polar word assumes a non-zero norm. A failure of a description is not a failure of the element, and the two failures do not coincide.</p>
+<p><strong>The boundary.</strong> Each description has its own replacement. On the Jordan part the Jordan basis replaces the eigenbasis. On the null cone the two-factor pair replaces the polar word. This entry states the failures; the replacements belong to the entries on the Jordan basis and on the null cone.</p>
+<h3 id="i10i-the-channel-closes-where-the-mass-closes-the-shear-stops-where-the-modes-merge">I.10.i — The Channel Closes Where the Mass Closes, the Shear Stops Where the Modes Merge</h3>
+<p><strong>Read:</strong> $\mathrm{Sd}_{\tilde Q}$ is singular exactly on $\mathcal N$, and $\mathrm{ad}_{\tilde Q}$ is nilpotent exactly on $\mathcal S$, of index three off the scalar line.</p>
+<p><strong>The sandwich is singular on the massless wall and the derivation dies on the spectral wall.</strong> Two operators, one for each predicate, and each is blind to the other condition.</p>
+<p><strong>The nilpotence has a reading as a truncated series.</strong> With $\mathrm{ad}^{3}=-4B^{2}\mathrm{ad}$, the conjugation by a degenerate element is a polynomial of degree two in the derivation,</p>
+<p>$$
+e^{t\,\mathrm{ad}_{\tilde Q}}=1+t\,\mathrm{ad}_{\tilde Q}+\frac{t^{2}}{2}\,\mathrm{ad}_{\tilde Q}^{2}\qquad (B^{2}=0),
+$$</p>
+<p><strong>so a degenerate element displaces other elements, but the displacement stops after the second power.</strong> On the scalar line the series stops at the first term, because the derivation is zero.</p>
+<p><strong>The physical interpretation is that a coalesced mode has a short memory of its action.</strong> An element that acts by conjugation can carry a perturbation only to second order when its spectrum has merged, and to all orders when it has not.</p>
+<p><strong>The boundary.</strong> The identity is algebraic and it says nothing about a dynamics. The word <em>memory</em> is a reading of the length of a polynomial and not of a physical relaxation.</p>
+<h3 id="i10j-two-one-mode-motions-compose-into-a-two-mode-one">I.10.j — Two One-Mode Motions Compose into a Two-Mode One</h3>
+<p><strong>Read:</strong> $U_1U_2$ with $U_i=e_t+\vec\Upsilon_i$, both defective, and $B^{2}(U_1U_2)=s(2-s)$.</p>
+<p><strong>The defect is not inherited.</strong> Two elements of the spectral wall compose into an element off it whenever $s\notin\{0,2\}$, and the product is a unit with two distinct eigenvalues.</p>
+<p><strong>The physical interpretation is that composing two shears produces a rotation or a boost, and never another shear.</strong> A shear is a null transformation: it fixes one direction and displaces everything else along it. Two of them, about different null directions, compose into a transformation of the elliptic or the hyperbolic type.</p>
+<p><strong>The composition is the elementary mechanism by which a two-mode object is built from one-mode objects.</strong> The regime of the factors is not the regime of the product, so the partition is not preserved by multiplication.</p>
+<p><strong>The boundary.</strong> The composition is in the complexified group. On the material slice there are no non-zero nilpotents, so no real light ray is a shear, and the theorem does not describe the composition of two real massless momenta.</p>
+<h3 id="i10k-the-interval-decides-the-type-the-sign-does-not">I.10.k — The Interval Decides the Type, the Sign Does Not</h3>
+<p><strong>Read:</strong> elliptic on $0<s<2$, hyperbolic on $s<0$ and on $s>2$, defective at the two endpoints.</p>
+<p><strong>A pairing is a complex number, and the type of the product is decided by where it lies.</strong> The sign of the real part is not the criterion. The criterion is the sign of $s(2-s)$, which is the sign of the vector square of the product.</p>
+<p><strong>The physical interpretation is that two null rotations compose into a rotation when their null directions are close, and into a boost when they are not.</strong> The threshold is a definite value of the pairing and not its sign, and there are two ways to exceed it.</p>
+<p><strong>The reading corrects a plausible error.</strong> The plausible error is that a positive pairing gives a rotation and a negative pairing a boost. The first statement is false on $(2,\infty)$, where the pairing is positive and the product is hyperbolic.</p>
+<p><strong>The boundary.</strong> The pairing is the complex bilinear dot product of the two nilpotent parts and not a Hermitian product. On a real slice the bilinear product changes sign with the metric, and the interval $(0,2)$ is stated for the complex form.</p>
+<h3 id="i10l-every-motion-is-two-null-motions-except-the-full-turn">I.10.l — Every Motion Is Two Null Motions, Except the Full Turn</h3>
+<p><strong>Read:</strong> every element of the norm-one group except $-e_t$ is a product of two non-trivial unipotents, and every unit is a central scalar times such an element.</p>
+<p><strong>One exception, and it is the element that squares to minus the identity.</strong> The failure is not generic: it is a single point of the group, and the point is the central element that represents a full turn in the double cover.</p>
+<p><strong>The physical interpretation is that the shear set generates the reversible motions, with one point missing.</strong> A null transformation is the most degenerate reversible motion, and two of them generate a general one. The single element that is not generated is the one that a closed path of length $2\pi$ reaches.</p>
+<p><strong>The reading is a statement about generation and not about the decomposition of a process.</strong> Nothing says that a physical motion is performed as two null motions in sequence. The theorem says that the group is generated by them, which is a statement about the reach of the degenerate stratum.</p>
+<p><strong>The boundary.</strong> The exception is a fact about a set of generators and not about the sign of a spinor. The identification of $-e_t$ with the full turn is a reading of the double cover, and it does not convert the theorem into a statement about fermions.</p>
+<h2 id="the-limits">The Limits</h2>
+<p><strong>The partition is complete and it is not a classification of elements up to equivalence.</strong> The four regimes are sets, and two elements of one regime can be inequivalent in every other respect. The partition answers two questions and no more.</p>
+<p><strong>A regime is not a phase.</strong> There is no order parameter, no free energy and no continuity between the regimes. Two regimes of different dimension cannot be connected by a path that stays inside their union, because the higher-dimensional one would have to contain the lower.</p>
+<p><strong>The names do not extend over the complex algebra.</strong> The words <em>rest frame</em>, <em>light ray</em> and <em>vacuum</em> name the parts of the regimes that the material slice reaches. The Jordan part and the nilpotent ladder are not matter, and a statement about them is a statement about the complexified algebra.</p>
+<p><strong>The independence of the conditions is a statement about gradients and not about causes.</strong> The two invariants are functionally independent off the square-zero set. They are not statistically independent, and nothing in the algebra says that a process can change one without the other.</p>
+<p><strong>The product law is not a composition law for regimes.</strong> The product of two elements of a regime can lie in another regime, and the product of two null elements can vanish. The partition is not a congruence of the multiplicative structure, and no reading may treat it as one.</p>
+<p><strong>The type of the unipotent product is an interval of the complex pairing.</strong> It is not a statement about real light rays, because the material slice has no non-zero nilpotent.</p>
+<p><strong>The two operator loci are loci of linear maps on the algebra.</strong> The singularity of the sandwich and the nilpotence of the derivation are properties of operators and not of states. No norm and no rank here is a probability, and no index here is a charge.</p>
+<p><strong>The chain of invariants is finite and it ends.</strong> Three invariants separate the six strata, and no further invariant of this kind refines them. That the chain ends is a theorem about polynomials of degree two, and it does not claim that no other invariant exists.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>Two quadratic conditions cut the algebra into four regimes, and the four regimes are the four kinematic situations of one element.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>item</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the two predicates</td>
+<td>$N\neq0$ and $B^{2}\neq0$, the norm and the discriminant</td>
+</tr>
+<tr>
+<td>the four regimes</td>
+<td>$\Sigma_{11},\Sigma_{10},\Sigma_{01},\Sigma_{00}$, the four patterns of a quadratic</td>
+</tr>
+<tr>
+<td>the dimensions</td>
+<td>$8$, $6$, $6$, $4$ real, with $\Sigma_{11}$ open and dense</td>
+</tr>
+<tr>
+<td>the walls</td>
+<td>two cones of real codimension two, $\mathcal N$ and $\mathcal S$</td>
+</tr>
+<tr>
+<td>independence</td>
+<td>neither cone contains the other; witnesses $e_t+i\vec e_x$ and $e_t+\vec e_x+i\vec e_y$</td>
+</tr>
+<tr>
+<td>the intersection</td>
+<td>$\mathcal N\cap\mathcal S=\{\tilde Q^{2}=0\}$, where the cones are tangent</td>
+</tr>
+<tr>
+<td>the rank of the map</td>
+<td>$2$ off $Q_t=0$ and off the scalar line, $1$ on them</td>
+</tr>
+<tr>
+<td>the chain</td>
+<td>norm $2$ types, characteristic polynomial $4$, minimal polynomial $6$</td>
+</tr>
+<tr>
+<td>the two decompositions</td>
+<td>the eigenbasis follows the discriminant, the polar word follows the norm</td>
+</tr>
+<tr>
+<td>the two operators</td>
+<td>$\mathrm{Sd}$ singular on $\mathcal N$, $\mathrm{ad}$ nilpotent on $\mathcal S$ with index $3$</td>
+</tr>
+<tr>
+<td>two unipotents</td>
+<td>$Q_t=1-s$, $B^{2}=s(2-s)$, elliptic on $0<s<2$, hyperbolic outside</td>
+</tr>
+<tr>
+<td>the image theorem</td>
+<td>the norm-one group is generated by two unipotents, except at $-e_t$</td>
+</tr>
+<tr>
+<td>the material slice</td>
+<td>$\Sigma_{11}$ with $\vec p\neq0$; the rest line; the light cone; the origin</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The pair of values decides everything downstream.</strong> If both predicates are true the element is a unit with two modes and every description applies. If one fails, exactly one description fails, and which one fails is decided by which predicate failed. If both fail the element squares to zero, and no description applies at all.</p>
+<h3 id="what-the-reader-should-retain">What the Reader Should Retain</h3>
+<p><strong>The three statements to carry away are these.</strong> The partition is by two independent equations, so it has four parts and not two, and the mixed parts are what show the independence. A part is a pair of truth values: it has no interior in general, the dimensions differ, and the names come from the material share. And the partition is not preserved by multiplication, because two shears compose into a rotation or a boost, and the type is decided by an interval of one complex pairing.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde Q=Q_te_t+\vec Q$</td>
+<td>the element, with complex coefficients</td>
+</tr>
+<tr>
+<td>$N(\tilde Q)=Q_t^{2}+B^{2}$</td>
+<td>the norm, the constant term of the characteristic polynomial</td>
+</tr>
+<tr>
+<td>$B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$</td>
+<td>the vector square, the discriminant up to $-4$</td>
+</tr>
+<tr>
+<td>$p_{\tilde Q}(X)=X^{2}-2Q_tX+N$</td>
+<td>the characteristic polynomial</td>
+</tr>
+<tr>
+<td>$\lambda_\pm=Q_t\pm iB$</td>
+<td>the two eigenvalues, $\lambda_+\lambda_-=N$</td>
+</tr>
+<tr>
+<td>$\mathcal N=\{N=0\}$</td>
+<td>the null cone, the wall of invertibility</td>
+</tr>
+<tr>
+<td>$\mathcal S=\{B^{2}=0\}$</td>
+<td>the spectral-degenerate cone, the wall of separation</td>
+</tr>
+<tr>
+<td>$\Sigma_{ij}$</td>
+<td>the regime with $N\neq0$ iff $i=1$ and $B^{2}\neq0$ iff $j=1$</td>
+</tr>
+<tr>
+<td>$\Sigma_{10}^{\mathrm{s}}$, $\Sigma_{10}^{\mathrm{J}}$</td>
+<td>the scalar line and the Jordan part</td>
+</tr>
+<tr>
+<td>$\vec\Upsilon$</td>
+<td>a non-zero pure nilpotent, $\vec\Upsilon^{2}=0$</td>
+</tr>
+<tr>
+<td>$U=e_t+\vec\Upsilon$</td>
+<td>a unipotent: a unit of norm one with the double eigenvalue $1$</td>
+</tr>
+<tr>
+<td>$s=\vec\Upsilon_1\cdot\vec\Upsilon_2$</td>
+<td>the pairing of two nilpotent parts, with $t=-2s$</td>
+</tr>
+<tr>
+<td>$L_{\tilde Q}$</td>
+<td>left multiplication, of rank $4$, $2$ or $0$</td>
+</tr>
+<tr>
+<td>$\mathrm{Sd}_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$</td>
+<td>the sandwich, singular exactly on $\mathcal N$</td>
+</tr>
+<tr>
+<td>$\mathrm{ad}_{\tilde Q}$</td>
+<td>the inner derivation, nilpotent exactly on $\mathcal S$</td>
+</tr>
+<tr>
+<td>$H(\tilde Q)=\operatorname{Sc}\mathrm{Sd}_{\tilde Q}(e_t)$</td>
+<td>the weight of the previous entry, the amplitude</td>
+</tr>
+<tr>
+<td>$\tilde P=ip_0e_t+\vec p$</td>
+<td>a four-momentum on the material slice, in units with $c=1$</td>
+</tr>
+<tr>
+<td>$\mathbb B^{\times}_{1}$</td>
+<td>the norm-one group, isomorphic to $SL_2(\mathbb C)$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<p><strong>In the mathematics corpus.</strong> <a href="../articles_maths/relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html">Relations between the N Norm and Spectral Regularity and Degeneracy</a> owns what this entry states: the four sectors, the independence of the two cones, the nilpotent intersection, the tangency, the comparison of the sectors, the chain of invariants, the two decompositions and the two operator loci. <a href="../articles_maths/the-product-of-two-unipotent-elements-and-its-spectrum.html">The Product of Two Unipotent Elements and Its Spectrum</a> owns the product law, the criterion, the three regular types and the image theorem, and it is the article to consult for the proofs of §<em>Two Unipotent Motions</em>. The four regimes are proved one to an article: <a href="../articles_maths/the-n-regular-spectrally-regular-sector.html">The N-Regular, Spectrally Regular Sector</a>, <a href="../articles_maths/the-n-regular-spectrally-degenerate-sector.html">The N-Regular, Spectrally Degenerate Sector</a>, <a href="../articles_maths/the-n-degenerate-spectrally-regular-sector.html">The N-Degenerate, Spectrally Regular Sector</a> and <a href="../articles_maths/the-n-degenerate-spectrally-degenerate-sector.html">The N-Degenerate, Spectrally Degenerate Sector</a>. The spectrum and the cone are <a href="../articles_maths/the-spectrum.html">The Spectrum</a>; the two bases are <a href="../articles_maths/the-eigenbasis-of-a-spectrally-regular-biquaternion.html">The Eigenbasis of a Spectrally Regular Biquaternion</a> and <a href="../articles_maths/the-jordan-basis-of-a-spectrally-degenerate-biquaternion.html">The Jordan Basis of a Spectrally Degenerate Biquaternion</a>; the two decompositions are <a href="../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html">The Polar Decomposition of an N-Regular Biquaternion</a> and its degenerate counterpart; the ranks and the annihilators are <a href="../articles_maths/the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html">The Four General Products and Their Relations over the Biquaternion Algebra</a>.</p>
+<p><strong>In this category.</strong> <a href="the-element-the-six-subspaces-and-the-two-ledgers.html">The Element: the Six Subspaces and the Two Ledgers</a> supplies the coordinates in which the two invariants are written. <a href="the-four-forms-and-the-four-norms.html">The Four Forms and the Four Norms</a> supplies the four measures and the proof that only the quaternionic one is multiplicative, which is why the first predicate is a group condition. <a href="the-four-products-composition-probability-causality-and-gauge.html">The Four Products: Composition, Probability, Causality and Gauge</a> supplies the products whose scalar parts the measures are. <a href="the-spectrum-and-the-two-modes.html">The Spectrum and the Two Modes</a> supplies the eigenvalues, the discriminant and the reading of $B$ as half the gap. <a href="the-h-norm-amplitude-and-frame.html">The H Norm: Amplitude and Frame</a> supplies the weight that the sandwich reproduces at the identity. <a href="the-n-norm-mass-angle-and-the-cone.html">The N Norm: Mass, Angle and the Cone</a> is the entry before this one and supplies the norm, its cone and its two strata. The four entries that follow read the four regimes one to an article: <em>Mass in Motion: The Region of Both Invariants</em>, <em>The Rest Frame and the Exceptional Point</em>, <em>The Massless Regime</em> and <em>The Vacuum and the Nilpotent Ladder</em>.</p>
+<p><strong>In the archive, until they are rewritten.</strong> <a href="the-three-elementary-carriers-and-the-four-sectors-of-regularity-and-degeneracy.html">The Three Elementary Carriers and the Four Sectors of Regularity and Degeneracy</a> is the earlier statement of the same partition, with the real slices and the reach of the three carriers. <a href="the-meaning-of-n-regularity-and-degeneracy.html">The Meaning of N Regularity and Degeneracy</a> reads the first predicate as the reversible and the irreversible. <a href="physical-interpretation-of-spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html">Physical Interpretation of Spectral Regularity and Degeneracy in the Biquaternion Algebra</a> reads the second predicate as the two modes and the stopped clock. <a href="the-n-regular-spectrally-regular-sector-mass-in-motion.html">The N-Regular, Spectrally Regular Sector: Mass in Motion</a>, <a href="the-n-regular-spectrally-degenerate-sector-the-rest-frame-and-the-exceptional-point.html">The N-Regular, Spectrally Degenerate Sector: The Rest Frame and the Exceptional Point</a>, <a href="the-n-degenerate-spectrally-regular-sector-the-massless-regime.html">The N-Degenerate, Spectrally Regular Sector: The Massless Regime</a> and <a href="the-n-degenerate-spectrally-degenerate-sector-the-vacuum-and-the-nilpotent-ladder.html">The N-Degenerate, Spectrally Degenerate Sector: The Vacuum and the Nilpotent Ladder</a> are the four regime articles of the archive. <a href="the-zero-divisor-cone-and-the-massless-spectrum.html">The Zero-Divisor Cone and the Massless Spectrum</a> places the massless content on the first cone. <a href="the-square-zero-element-nilpotency-as-mode-differential-and-supercharge.html">The Square-Zero Element: Nilpotency as Mode, Differential and Supercharge</a> is the reading of the fourth regime. <a href="norm-and-pairing-conventions.html">Norm and Pairing Conventions</a> fixes the letters and the signatures, and is the article to consult if a formula here disagrees with one elsewhere in the corpus.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
