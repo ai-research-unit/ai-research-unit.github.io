@@ -361,7 +361,7 @@ The completeness of the catalogue is therefore a statement about the base algebr
 ## Further Reading
 
 - [Spin and the Three Elementary Carriers](spin-and-the-three-elementary-carriers.html), for the three carriers named and read physically, with the particle assignments.
-- [Spin and the Three Elementary Carriers in the Biquaternion Algebra](../articles_maths/spin-and-the-three-elementary-carriers-in-the-biquaternion-algebra.html), for the carriers, the Casimir, the criterion and the proof that multiplication kills spin two.
+- [The Carriers of the Biquaternion Algebra](../articles_maths/the-carriers-of-the-biquaternion-algebra.html), for the carriers, the Casimir, the criterion and the proof that multiplication kills spin two.
 - [The Three Elementary Carriers and the Four Sectors of Regularity and Degeneracy](the-three-elementary-carriers-and-the-four-sectors-of-regularity-and-degeneracy.html), for the partition by $N$ and $B^2$ that the three carriers cut.
 - [The Self-Dual and Anti-Self-Dual Split: Spin One from the Biquaternion Material Sector](the-self-dual-and-anti-self-dual-split-spin-1-from-the-biquaternion-material-sector.html), for the spin-one case.
 - [The Rarita–Schwinger Equation: Spin 3/2 in Biquaternionic Form](the-rarita-schwinger-equation-spin-3-2-in-biquaternionic-form.html), for the spin-$\tfrac32$ case and its constraint structure.

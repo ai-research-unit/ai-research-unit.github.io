@@ -57,5 +57,5 @@ Every defect is one of three: a missing datum, a part printed as the whole, or t
 - [Operator Family Conventions](operator-family-conventions.html). The four families and the slot label that is the chirality.
 - [Index and Notation Conventions](index-and-notation-conventions.html). The marks, the subscripts and the working conventions of the corpus.
 - [Operator Chirality on the Biquaternion Algebra](operator-chirality-on-the-biquaternion-algebra.html). The two slots, the four labels, the swap and the conjugation that exchange the sides, and the nine objects the notion does not need.
-- [Spin and the Three Elementary Carriers in the Biquaternion Algebra](spin-and-the-three-elementary-carriers-in-the-biquaternion-algebra.html). The generators, the Casimir, the definition of spin, and the carriers that carry it.
+- [The Carriers of the Biquaternion Algebra](the-carriers-of-the-biquaternion-algebra.html). The generators, the Casimir, the definition of spin, and the carriers that carry it.
 - [Introduction to the Mathematical Corpus](introduction-to-the-mathematical-corpus.html). The exclusion of the applications, which is the restraint the second condition asks for.

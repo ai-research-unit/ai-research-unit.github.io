@@ -32,7 +32,7 @@ and the **helicity** of a state is its eigenvalue $\hbar\,h$, in units of $\hbar
 
 **Proposition (the spectrum, and what the two words mean).** On a carrier of spin $s$ the spectrum of $\lambda$ is $\hbar\,h$ with $h\in\{-s,-s+1,\dots,s\}$. The largest $h$ is the spin.
 
-*Proof.* The spectrum of $\vec u\cdot\vec S$ is independent of the unit vector $\vec u$, and its maximum is the spin, which is the dimension of the carrier's representation space read on the generators (*Spin and the Three Elementary Carriers in the Biquaternion Algebra*, §*The Spin Is the Dimension of the Carrier* and §*The Generator Reading: the Casimir and the Ladder*). The operator at the declared axis is that same operator, so it has that same string, ordered along $\vec u_p$ rather than along a fixed axis.
+*Proof.* The spectrum of $\vec u\cdot\vec S$ is independent of the unit vector $\vec u$, and its maximum is the spin, which is the dimension of the carrier's representation space read on the generators (*The Spin of a Carrier*, §*The Definition*, and *The Weights of a Carrier*, §*The Three Spectra*). The operator at the declared axis is that same operator, so it has that same string, ordered along $\vec u_p$ rather than along a fixed axis.
 
 Two consequences are worth naming. **Spin is a property of the carrier; helicity is a property of the state.** The carrier fixes the list, the axis orders it, the state selects a member. **The list is the same at every axis**, so a rotation cannot change the values available, only which of them a given state carries; that is the content of the rotation law below.
 
@@ -317,7 +317,7 @@ At $m=0$ a second description opens. The null momentum is a zero divisor, hence 
 - [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html), for the chirality basis operator and its invariance.
 - [The Hydrogen Atom in Biquaternionic Form — The Relativistic Case](the-hydrogen-atom-in-biquaternionic-form-the-relativistic-case.html), for the non-conservation of chirality at nonzero mass.
 - [Spinors and Dirac Spinors in the Biquaternion Algebra](../articles_maths/spinors-and-dirac-spinors-in-the-biquaternion-algebra.html), for the elementary spinor, the weights $\pm\tfrac12$, and the two parts of a Dirac spinor as two copies.
-- [Spin and the Three Elementary Carriers in the Biquaternion Algebra](../articles_maths/spin-and-the-three-elementary-carriers-in-the-biquaternion-algebra.html), for the definition of spin as a maximal weight and the classification of the carriers.
+- [The Carriers of the Biquaternion Algebra](../articles_maths/the-carriers-of-the-biquaternion-algebra.html), for the definition of spin as a maximal weight and the classification of the carriers.
 - [Operator Chirality on the Biquaternion Algebra](../articles_maths/operator-chirality-on-the-biquaternion-algebra.html), for the chirality basis operator as a right multiplier and the two parts it separates.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the zero-divisor criterion and the pure and non-pure families.
 - [The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$](../articles_maths/the-forms-the-norms-and-the-singular-set-of-m4c.html), for the rank-one statement and the spinor factorisation.

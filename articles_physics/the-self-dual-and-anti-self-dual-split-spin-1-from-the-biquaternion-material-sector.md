@@ -232,7 +232,7 @@ so that the antisymmetric tensor is **pure** integer spin. This is the algebraic
 
 ### The triplet in the algebra's letters
 
-The count is realised concretely, and the realisation is the one constructed in the maths article [Spin and the Three Elementary Carriers in the Biquaternion Algebra](../articles_maths/spin-and-the-three-elementary-carriers-in-the-biquaternion-algebra.html), §*The Spin-One Carrier: the Material Sector*.
+The count is realised concretely, and the realisation is the one constructed in the maths article [The Carriers of the Biquaternion Algebra](../articles_maths/the-carriers-of-the-biquaternion-algebra.html), §*The Spin-One Carrier: the Material Sector*.
 
 The rotation algebra inside $\mathbb{B}$ is the real span of the three pure quaternions, $\mathfrak{g}=\mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$, with bracket $[\vec e_\mu,\vec e_\nu]=2\epsilon_{\mu\nu\lambda}\vec e_\lambda$. Its Hermitian normalisation is $\tilde S_k=\tfrac12 i\vec e_k$, with $[\tilde S_i,\tilde S_j]=i\epsilon_{ijk}\tilde S_k$ and $\tilde S_k^{*}=\tilde S_k$. The factor $i$ is the only difference between the two normalisations.
 
@@ -360,7 +360,7 @@ The split is pure integer spin. The self-dual half is the symmetric square of th
 
 ## Further Reading
 
-- [Spin and the Three Elementary Carriers in the Biquaternion Algebra](../articles_maths/spin-and-the-three-elementary-carriers-in-the-biquaternion-algebra.html), for the adjoint module, the spins zero and one, the Casimir, the nilpotent highest-weight vector, and the two real forms of the carrier in the compact and hyperbolic triples.
+- [The Carriers of the Biquaternion Algebra](../articles_maths/the-carriers-of-the-biquaternion-algebra.html), for the adjoint module, the spins zero and one, the Casimir, the nilpotent highest-weight vector, and the two real forms of the carrier in the compact and hyperbolic triples.
 - [The Tensor Square of $\mathbb{C}^2$](../articles_maths/the-tensor-square-of-c2.html), for $\mathrm{sym}^2\mathbb{C}^2$ as the spin-one representation of dimension three and $\Lambda^2\mathbb{C}^2$ as the scalar.
 - [Biquaternion Rotations and Lorentz Transformations](../articles_maths/biquaternion-rotations-and-lorentz-transformations.html), for the $(m,n)$ classification, the adjoint representation $(1,0)\oplus(0,1)$, and the split of the trace-free part into compact rotation and hyperbolic boost directions.
 - [The Volume Element, Duality and the Hodge Star](../articles_maths/the-volume-element-duality-and-the-hodge-star.html), for $\star A=-iA$ in the biquaternion algebra and the split of the bivectors in the two signatures.

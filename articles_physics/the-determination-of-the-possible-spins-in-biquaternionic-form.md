@@ -4,7 +4,7 @@
 
 The observed elementary particles carry spin $0$, $\tfrac12$ or $1$: the Higgs is a scalar, the quarks and leptons are spinors, and the photon, the $W^\pm$, the $Z$ and the gluons are vectors. No observed elementary particle carries another spin. This article asks what the biquaternion framework says about that list, and what it does not say.
 
-The answer has two parts. The algebraic part is the companion article *Spin and the Three Elementary Carriers in the Biquaternion Algebra*, which defines spin, proves the closure theorem and separates, in its §*The Five Uses of the Word Spin*, the definition from the two signs that go by the same name. It states that $\mathbb{B}$ carries exactly three carriers, of representation-space dimensions $1$, $2$ and $3$, distributed over **two** actions: the centre and the traceless part under conjugation, the ideals under left multiplication. The physical part is the interpretation of the three as the scalar, the spinor and the vector.
+The answer has two parts. The algebraic part is the companion articles *The Carriers of the Biquaternion Algebra* and *The Spin of a Carrier*, which classify the carriers, define the spin and separate, in §*A Remark on Other Readings of the Same Number*, the definition from the two signs that go by the same name. It states that $\mathbb{B}$ carries exactly three carriers, of representation-space dimensions $1$, $2$ and $3$, distributed over **two** actions: the centre and the traceless part under conjugation, the ideals under left multiplication. The physical part is the interpretation of the three as the scalar, the spinor and the vector.
 
 The distribution over two structures is already recorded in *Spin and the Three Elementary Carriers*: left multiplication sees the spinor twice, and the adjoint action sees the scalar and the vector. This article takes that distribution as its starting point and asks what it means physically. A single action cannot contain all three, because distinct irreducible submodules intersect trivially and $1+2+3=6$ would exceed $\dim_{\mathbb{C}}\mathbb{B}=4$.
 
@@ -240,7 +240,7 @@ The physical interpretation is the scalar, the spinor and the vector, and the ob
 
 ## Further Reading
 
-- [Spin and the Three Elementary Carriers in the Biquaternion Algebra](../articles_maths/spin-and-the-three-elementary-carriers-in-the-biquaternion-algebra.html), for the definition, the two structures, the closure theorem and the four uses of the word spin.
+- [The Carriers of the Biquaternion Algebra](../articles_maths/the-carriers-of-the-biquaternion-algebra.html), for the definition, the two structures, the closure theorem and the four uses of the word spin.
 - [Spin and the Three Elementary Carriers](spin-and-the-three-elementary-carriers.html), for the carrier table, the particle assignments and the Hilbert-orthogonality of the two Peirce planes.
 - [Angular Momentum and Spin in Biquaternionic Form](angular-momentum-and-spin-in-biquaternionic-form.html), for the angular-momentum algebra, the spin operators and the Casimir.
 - [Integer Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form](integer-spin-quantization-and-the-adjoint-action-on-the-material-sector-in-biquaternionic-form.html), for the spin-one multiplet, its weight basis and the internal and orbital parts.
