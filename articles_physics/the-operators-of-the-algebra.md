@@ -16,7 +16,7 @@ $$
 
 **The third claim is that the side of an operator is not a sign.** The two one-sided families are exchanged by an involution of the operator space, and that involution is antimultiplicative. There is no multiplicative function on the operator space that is $+1$ on the left family and $-1$ on the right family, because at the unit the two families coincide and the unit of a multiplicative function is one. The word *chirality* names the side, and the side is a coordinate of the operator and not a grading of it. That distinction is the difference between a chirality that physics can use and a chirality that physics has to postulate.
 
-**The fourth claim is that each of the four forms of the algebra carries its own adjoint, so an operator is self-adjoint for four different conditions.** They agree only on the centre, and an operator built from a real mixed parameter is self-adjoint for none of them. Of the five operator families named after the four adjoints, exactly one keeps both sectors of the algebra in place for every parameter: the Hermitian pair, whose two-sided member acts by congruence.
+**The fourth claim is that each of the four forms of the algebra carries its own adjoint, so an operator is self-adjoint for four different conditions.** They agree only on the centre, and an operator built from a real mixed parameter is self-adjoint for none of them. Of the five operator families of the adjoint section, exactly one keeps both sectors of the algebra in place for every parameter: the Hermitian pair, whose two-sided member acts by congruence.
 
 **The fifth claim is the reading, and it is stated here so that it can be judged against the mathematics.** One operator, three tasks. A two-sided operator with the inverse element in the second slot is a change of frame. A two-sided operator with an idempotent in both slots is a measurement, and its rank is one. A one-sided operator of an exponential is a flow on the algebra, and a conjugation by the exponential is a flow on the sectors. The three readings are not three constructions: they are three choices of the pair, and the element's sector decides which regime of the flow is in force.
 
@@ -44,7 +44,7 @@ $$
 | the case-by-case computation of the eight sectors, one one-sided and one two-sided for each | [N-Regular, Spectrally Regular Operators Acting on One Side](../articles_maths/n-regular-spectrally-regular-operators-acting-on-one-side.html) and its seven companions |
 | the pair $(A,B)$ of matrices, the Kronecker display $B^{\mathsf T}\otimes A$, the rank formula, the composition and the inverse | [$M_2(\mathbb{C})$ Pauli Representation : Operators](../articles_maths/m2c-pauli-representation-operators.html) |
 | the sixteen products as a basis, the length theorem, the coefficient matrix and its rank | [The Two-Sided Operators Method to Build $M_4(\mathbb{C})$](../articles_maths/the-two-sided-operators-method-to-build-m4c.html) and [The Coefficient Matrix of a Two-Sided Operator: A Worked Computation](../articles_maths/the-coefficient-matrix-of-a-two-sided-operator-a-worked-computation.html) |
-| the operator basis of the Peirce frame and the sixteen lengths of the matrix units | [The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$](../articles_maths/the-operators-of-the-peirce-decomposition-of-m4c.html) |
+| the operator basis of the Peirce frame and the sixteen matrix units of the operator space | [The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$](../articles_maths/the-operators-of-the-peirce-decomposition-of-m4c.html) |
 | the decomposition of an endomorphism into four rank-one terms, the Riesz identification, the weights of a left multiplier | [The SVD Decomposition of Endomorphisms of the Biquaternion Algebra](../articles_maths/the-svd-decomposition-of-endomorphisms-of-the-biquaternion-algebra.html) |
 
 **The first two rows own the section.** Everything else is either a form laid over the two families or a sector refined from them. The rows are ordered as the section is: the space, the sides, the product, the side label, the adjoints, the sectors, the matrices.
@@ -387,7 +387,7 @@ and on $\Sigma_{11}$ the two eigenvalues are $\lambda_\pm=Q_t\pm iB$.
 | $\Sigma_{01}$ | $1$ | $\lvert c\rvert^{2},0$ | diagonal | the null line $\mathbb{C}P$ |
 | $\Sigma_{00}$ | $1$ | $0$ | $J_2(0)\oplus0\oplus0$ | the null line $\mathbb{C}\tilde\Pi_+$ |
 
-**Reading the two tables.** Along a row, the rank drops when the norm vanishes and the Jordan type leaves the semisimple case when the vector part squares to zero. Along a column, the two-sided operator replaces each eigenvalue $\lambda_i$ of the element by the product $\lambda_i\bar\lambda_j$ and loses one factor of the spectrum. The four rows are the four regimes of one action, and the two tables are the whole of the sector theory of the operators.
+**Reading the two tables.** Along a row, the rank drops when the norm vanishes and the Jordan type leaves the semisimple case when the vector part squares to zero. Along a column, the eigenvalues become the four products $\lambda_i\bar\lambda_j$: the scale survives as its square, the phase cancels, and the pair of eigenvalues of the element becomes a quartet on the regular sectors and a doubled pair on the degenerate ones. The four rows are the four regimes of one action, and the two tables are the whole of the sector theory of the operators.
 
 **The doubling rule.** The polar word $\tilde Q=\tilde Q_H\tilde Q_0$ carries through both operators,
 
@@ -448,7 +448,7 @@ $$
 
 **The warrant.** The generator is anti-Hermitian, so the exponential is unitary; the inner derivation is the first-order term of the conjugation; and the two series converge and agree because the algebra is finite-dimensional. The interval is preserved, since conjugation by a unitary element is an isometry of the quaternionic norm.
 
-**The reading.** A one-parameter subgroup of the frame group is a flow, and its derivative at the identity is a derivation. The reading names the three objects that physics uses and the algebra supplies: the generator is an element, the flow is a one-parameter family of automorphisms, and the flow of an observable is the flow of the operator that the observable defines. The generator is material and the flow is on the informational sector: an anti-Hermitian element generates a unitary conjugation, and no Hermitian element does.
+**The reading.** A one-parameter subgroup of the frame group is a flow, and its derivative at the identity is a derivation. The reading names the three objects that physics uses and the algebra supplies: the generator is an element, the flow is a one-parameter family of automorphisms, and the flow of an observable is the flow of the operator that the observable defines. The generator is material and its exponential is informational: an anti-Hermitian element becomes a unitary one, and the conjugation moves both sectors without mixing them. A Hermitian element does not generate such a flow, because its exponential is Hermitian and not unitary.
 
 **The limit.** The flow is a group of automorphisms of the algebra and not a group of transformations of a state space with a metric. The section supplies the interval and not the distance, and it supplies no Hamiltonian: which element generates the physical flow is an input.
 
@@ -561,7 +561,7 @@ The table is the reason the operator theory is worth having. A single constructi
 
 **The two-sided set is closed under composition and not under addition.** That failure is why a general endomorphism needs a sum, and the least number of terms is its length: the rank of its coefficient matrix, at most four.
 
-**Rank and length are independent.** An operator can have rank four and length one, or rank one and length four, and the two numbers measure the image and the number of factors.
+**Rank and length are two different numbers.** The identity has rank four and length one, and an endomorphism of rank four can need two terms. The rank counts the image and the length counts the factors.
 
 **A two-sided operator never has rank three.** In the two-dimensional model its rank is a product of two ranks from $\{0,1,2\}$.
 
