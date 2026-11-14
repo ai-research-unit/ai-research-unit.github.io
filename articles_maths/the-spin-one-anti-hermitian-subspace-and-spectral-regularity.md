@@ -118,6 +118,19 @@ and its two eigenvalues are $\lambda\pm\lvert\vec v\rvert$, real and symmetric a
 
 On the anti-Hermitian closure the square of the vector part is $\lvert\vec v\rvert^{2}$, a non-negative real number, so the degenerate locus of the closure is the line $\mathbb{R}(ie_t)$ and the spectrum of $i\lambda+\vec v$ is the purely imaginary pair $i(\lambda\pm\lvert\vec v\rvert)$. On the carrier the spectrum is $\pm i\lvert\vec v\rvert$, distinct for every nonzero $\vec v$, so the carrier is spectrally regular away from the origin and avoids the degenerate cone entirely. On the closure the degenerate cone and the null cone are disjoint except at the origin, and the closure meets all four sectors while no carrier meets more than one.
 
+## The Boxed Summary
+
+| the point | in plain words |
+| --- | --- |
+| the question | Spectral regularity asks whether the square of the vector part is nonzero, which is the same as asking whether the two eigenvalues differ. |
+| the quantity on the closure | The square of the vector length, a real number that is never negative. |
+| what vanishes there | The line along the imaginary identity, and the whole of it. |
+| the spectrum of the closure | Purely imaginary: the scalar coordinate plus and minus the vector length. |
+| the spectrum of the carrier | Plus and minus the imaginary vector length, distinct for every nonzero vector. |
+| the answer on the carrier | Spectrally regular everywhere except at the origin, and it avoids the degenerate locus entirely. |
+| the two loci | On the closure the degenerate locus and the null cone meet only at the origin. |
+| the moral | The closure meets all four sectors, while no individual carrier meets more than one. |
+
 ## Summary of Notation
 
 | Symbol | Meaning |
@@ -139,7 +152,6 @@ On the anti-Hermitian closure the square of the vector part is $\lvert\vec v\rve
 
 - [Introduction to the Spin-One Anti-Hermitian Subspace](the-spin-one-anti-hermitian-subspace.html), for the carrier, the closure and the action on it
 - [The Spin-One Anti-Hermitian Subspace and N Norm Regularity](the-spin-one-anti-hermitian-subspace-and-n-norm-regularity.html), for the other predicate on the same space
-- [The Carriers of Dimension 4 and Spectral Regularity](the-carriers-of-dimension-4-and-spectral-regularity.html), for the four halves and their degenerate loci
 - [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the definitions of the two predicates and the four sectors
 - [The Spectrum](the-spectrum.html), for the two eigenvalues of an element and the quadratic relation
 - [The N-Regular, Spectrally Regular Sector](the-n-regular-spectrally-regular-sector.html), for the sector in which the carrier away from the origin lies

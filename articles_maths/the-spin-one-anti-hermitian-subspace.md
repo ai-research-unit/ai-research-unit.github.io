@@ -6,7 +6,7 @@ The carrier of spin $1$ is the vector part of the algebra, of real dimension $3$
 
 The case is the opposite of the spin-zero case in one respect and the opposite of the spin-half case in another. The subspace is three-dimensional, so the spectrum has three members instead of one; the action is two-sided, so the eigenvalues are integers instead of halves; and the closure is unique, since it does not depend on an axis. Nothing here is a family.
 
-**The question in one line.** Which real subspace of $\mathbb{B}$ of dimension $3$ is carried onto itself by every unit, and which space of dimension $4$ contains it.
+**The question in one line.** Which real subspace of $\mathbb{B}$ of dimension $3$ is carried onto itself by every unitary element, and which space of dimension $4$ contains it.
 
 **The answer in one line.** The vector part $\mathfrak{k}=\mathbb{R}\vec e_x\oplus\mathbb{R}\vec e_y\oplus\mathbb{R}\vec e_z$, and the anti-Hermitian space $\mathbb{B}_\Phi=\mathbb{R}(ie_t)\oplus\mathfrak{k}$.
 
@@ -25,7 +25,7 @@ the real span of the three pure units, of real dimension $3$.
 
 The three units anticommute in pairs and each squares to $-e_t$, so the span is closed under the commutator and under no other product: the product of two pure units is a pure unit, but the product of two elements of $\mathfrak{k}$ need not lie in $\mathfrak{k}$.
 
-**The action.** The conjugation by a unit, $\varrho_{\mathrm{ad}}(u)(X)=\operatorname{Ad}_u(X)=uXu^{*}$ for $u\in G$. On the vector part the action is the rotation: for a rotor $\tilde u_{\mathrm r}$ of angle $\theta$ about an axis, $\operatorname{Ad}_{\tilde u_{\mathrm r}}$ turns $\mathfrak{k}$ through the angle $\theta$ about that axis. The map $G\to SO(\mathfrak{k})$ is onto with kernel $\{\pm e_t\}$, and the vector part is the space on which the rotation acts in the way the name suggests.
+**The action.** The conjugation by a unitary element, $\varrho_{\mathrm{ad}}(u)(X)=\operatorname{Ad}_u(X)=uXu^{-1}=uXu^{*}$ for $u\in G$, the second equality because $u^{*}=u^{-1}$ at a unitary element. On the vector part the action is the rotation: for a rotor $\tilde u_{\mathrm r}$ of angle $\theta$ about an axis, $\operatorname{Ad}_{\tilde u_{\mathrm r}}$ turns $\mathfrak{k}$ through the angle $\theta$ about that axis. The map $G\to SO(\mathfrak{k})$ is onto with kernel $\{\pm e_t\}$, and the vector part is the space on which the rotation acts in the way the name suggests.
 
 **The closure.** The anti-Hermitian space is
 
@@ -157,7 +157,7 @@ The sign is $(-1)^{2s}=(-1)^{2}=+1$, and the two agree. The case of the vector p
 
 ## Summary
 
-The spin-one carrier is the vector part $\mathfrak{k}$, of real dimension $3$. Its closure is the anti-Hermitian space $\mathbb{B}_\Phi=\mathbb{R}(ie_t)\oplus\mathfrak{k}$, of real dimension $4$. The action is the conjugation by a unit, the generator $\tfrac12\vec u_{\mathrm r}$ acts by the cross product with the whole axis, the spectrum is $\{+1,-1,0\}$, the spin is $1$, the identity reads $2s+1=3=3$, and a full turn acts as $+1$. The space is $\mathfrak{u}(2)=\mathfrak{u}(1)\oplus\mathfrak{su}(2)$, it is a Lie algebra under the bracket, and it is the half that contains the carrier.
+The spin-one carrier is the vector part $\mathfrak{k}$, of real dimension $3$. Its closure is the anti-Hermitian space $\mathbb{B}_\Phi=\mathbb{R}(ie_t)\oplus\mathfrak{k}$, of real dimension $4$. The action is the conjugation by a unitary element, the generator $\tfrac12\vec u_{\mathrm r}$ acts by the cross product with the whole axis, the spectrum is $\{+1,-1,0\}$, the spin is $1$, the identity reads $2s+1=3=3$, and a full turn acts as $+1$. The space is $\mathfrak{u}(2)=\mathfrak{u}(1)\oplus\mathfrak{su}(2)$, it is a Lie algebra under the bracket, and it is the half that contains the carrier.
 
 ## Summary of Notation
 
@@ -173,18 +173,13 @@ The spin-one carrier is the vector part $\mathfrak{k}$, of real dimension $3$. I
 | $A(\vec u_{\mathrm r})=\tfrac12\vec u_{\mathrm r}$ | the generator along the axis |
 | $\times$ | the cross product of $\mathfrak{k}$ |
 | $[\cdot,\cdot]$ | the commutator, the bracket of the algebra |
-| $\operatorname{Ad}_u(X)=uXu^{*}$ | the conjugation by a unit |
-| $G=\mathrm{U}(2)$ | the group of units, $uu^{*}=e_t$ |
+| $\operatorname{Ad}_u(X)=uXu^{-1}=uXu^{*}$ | the inner automorphism, on $G$ the conjugation by a unitary element |
+| $G=\mathrm{U}(2)$ | the group of unitary elements, $uu^{*}=e_t$ |
 
 ## Further Reading
 
 - [The Spin-One Anti-Hermitian Subspace and N Norm Regularity](the-spin-one-anti-hermitian-subspace-and-n-norm-regularity.html), for the indefinite form of signature $(3,1)$ and its null cone
 - [The Spin-One Anti-Hermitian Subspace and Spectral Regularity](the-spin-one-anti-hermitian-subspace-and-spectral-regularity.html), for the purely imaginary spectrum and the degenerate line of the closure
 - [The Carriers, the Representation, the Spin and the Closure](the-carriers-the-representation-the-spin-and-the-closure.html), for the three carriers, the spin table and the four closures
-- [The Carriers of the Biquaternion Algebra](the-carriers-of-the-biquaternion-algebra.html), for the definition of a carrier and the completeness of the list
-- [Introduction to the Carriers of Dimension 4 over R](the-carriers-of-dimension-4.html), for the four halves of real dimension $4$ and the two tests
-- [The Weights of a Carrier](the-weights-of-a-carrier.html), for the definition of a weight and the three spectra
-- [The Spin of a Carrier](the-spin-of-a-carrier.html), for the spin as the largest weight and its agreement with the dimension
 - [Subspaces and Decompositions of the Biquaternion Algebra](subspaces-and-decompositions-of-the-biquaternion-algebra.html), for the two Hermitian halves and the pure part
-- [The Tensor Square of the Adjoint Module](the-tensor-square-of-the-adjoint-module.html), for the module read with the bracket
 - [Biquaternion Rotations and Lorentz Transformations](biquaternion-rotations-and-lorentz-transformations.html), for the rotor, the two-to-one cover and the action on the vector part

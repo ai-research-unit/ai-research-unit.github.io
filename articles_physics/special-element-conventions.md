@@ -132,7 +132,7 @@ is a pure right multiplier; it squares to the identity, its trace is zero, and i
 $$
 s=\frac{\max}{\hbar}\operatorname{spec}\bigl(\rho(\vec u\cdot\vec S)\bigr)\in\tfrac12\mathbb{Z}_{\ge0},
 $$
-a scalar label and not a vector. The definition is the dimension of the carrier's representation space, $2s+1$; the maximum weight is the same number read off the generators, and that is the sentence an article computes with. The two agree on every carrier the corpus uses (*The Spin of a Carrier*, §*The Definition*, and *The Weights of a Carrier*, §*The Three Spectra*, in the mathematical corpus). The label is $s$ and the projection $s_z$. The half-angle is the exponential coordinate of the rotor, the Peirce index is a copy label, and the chirality is the side on which an operator multiplies, the fifth basis operator of §*The Chirality Convention* being the example of it that a frame writes down.
+a scalar label and not a vector. The definition is the dimension of the carrier's representation space, $2s+1$; the maximum weight is the same number read off the generators, and that is the sentence an article computes with. The two agree on every carrier the corpus uses (*The Carriers, the Representation, the Spin and the Closure*, §*The Spin Table*, in the mathematical corpus). The label is $s$ and the projection $s_z$. The half-angle is the exponential coordinate of the rotor, the Peirce index is a copy label, and the chirality is the side on which an operator multiplies, the fifth basis operator of §*The Chirality Convention* being the example of it that a frame writes down.
 
 ### The Spinor Convention
 
@@ -190,5 +190,5 @@ An **elementary spinor** is an element of a carrier, a minimal left ideal $S_\pm
 - [Index and Notation Conventions](index-and-notation-conventions.html), for the subscript rules these glyphs use.
 - [The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$](../articles_maths/the-operators-of-the-peirce-decomposition-of-m4c.html), for the Peirce family these elements generate.
 - [Operator Chirality on the Biquaternion Algebra](../articles_maths/operator-chirality-on-the-biquaternion-algebra.html), for the two one-sided families, the properties of the chirality basis operator, and the objects the notion does not need.
-- [The Carriers of the Biquaternion Algebra](../articles_maths/the-carriers-of-the-biquaternion-algebra.html), for the rotation algebra, the Casimir and the definition of spin.
+- [The Carriers, the Representation, the Spin and the Closure](../articles_maths/the-carriers-the-representation-the-spin-and-the-closure.html), for the rotation algebra, the quadratic element and the definition of spin.
 - [Spinors and Dirac Spinors in the Biquaternion Algebra](../articles_maths/spinors-and-dirac-spinors-in-the-biquaternion-algebra.html), for the two definitions, the weights and the multiplicity of the two parts.

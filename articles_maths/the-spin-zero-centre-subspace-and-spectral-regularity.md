@@ -112,7 +112,7 @@ $$
 
 *Proof.* If the vector part vanishes the element is central and $B^{2}=0$ automatically, which gives the inclusion of the centre in the intersection. Conversely an element of the intersection is central by definition.
 
-**Remark (how much bigger the cone is).** The cone $\mathcal S$ is not a subspace and not a cone over a sphere; it is the set where the three complex numbers $Q_x,Q_y,Q_z$ satisfy one complex equation, and it contains the centre as a thin part. The element $N_{\mathrm d}$ above is the first example, and the degenerate elements of a spinor space, treated in *The Spin-Half Bispinor Spaces and Spectral Regularity*, are the members of the cone that lie inside an ideal.
+**Remark (how much bigger the cone is).** The cone $\mathcal S$ is not a subspace and not a cone over a sphere; it is the set where the three complex numbers $Q_x,Q_y,Q_z$ satisfy one complex equation, and it contains the centre as a thin part. The element $N_{\mathrm d}$ above is the first example, and the degenerate elements of a spinor space, treated in *The Spin-Half Bispinors and Spectral Regularity*, are the members of the cone that lie inside an ideal.
 
 ## The Centre Against the Other Carriers
 
@@ -129,6 +129,20 @@ $$
 ## Summary
 
 Every element of the centre is spectrally degenerate: its vector part vanishes, $B^{2}=0$, and its spectrum is the single value $\lambda$ with multiplicity two. The relation satisfied by a central element is of degree one, so the double eigenvalue is the multiplicity of the space and not a defect of the element. The centre is not the whole degenerate cone, since the element $\vec u_2-i\vec u_3$ is degenerate and noncentral; it is exactly the degenerate part on which the vector part vanishes. Away from the origin the centre lies in the sector $\Sigma_{10}$, the sector of the norm-regular and spectrally degenerate elements.
+
+## The Boxed Summary
+
+| the point | in plain words |
+| --- | --- |
+| the question | Spectral regularity asks whether the square of the vector part is nonzero, which is the same as asking whether the two eigenvalues differ. |
+| the carrier | A central element is a complex number times the identity, so it has no vector part at all. |
+| what happens | The square of the vector part vanishes, the two eigenvalues coincide, and the element is spectrally degenerate. |
+| how many escape | None. Every central element is spectrally degenerate, the zero element included. |
+| the spectrum | One complex number repeated twice, and an equation of degree one. |
+| why the repeat is not a fault | The repetition is the multiplicity of the space and not a defect of the element. |
+| the trap | The degenerate locus is far larger than the centre. The element built from the two perpendicular directions is degenerate and is not central. |
+| what the centre is | Exactly the part of the degenerate locus on which the vector part vanishes. |
+| the answer | Away from the origin the centre lies in the sector of the elements that are norm-regular and spectrally degenerate. |
 
 ## Summary of Notation
 
@@ -150,7 +164,6 @@ Every element of the centre is spectrally degenerate: its vector part vanishes, 
 
 - [Introduction to the Spin-Zero Centre Subspace](the-spin-zero-centre-subspace.html), for the line, the closure and the action on it
 - [The Spin-Zero Centre Subspace and N Norm Regularity](the-spin-zero-centre-subspace-and-n-norm-regularity.html), for the other predicate on the same space
-- [The Carrier of Dimension 1 and Spectral Regularity](the-carrier-of-dimension-1-and-spectral-regularity.html), for the same computation in the complex reading of the algebra
 - [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the definitions of the two predicates and the four sectors
 - [The Spectrum](the-spectrum.html), for the characteristic polynomial and the two eigenvalues of an element
 - [The N-Regular, Spectrally Degenerate Sector](the-n-regular-spectrally-degenerate-sector.html), for the sector in which the centre away from the origin lies

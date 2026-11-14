@@ -120,11 +120,25 @@ and the form is nondegenerate there: if $B(\lambda e_t,\mu e_t)=0$ for every $\m
 
 **The two extremes.** The centre and the plane are the two extremes of the group, and the vector part sits at neither. On the centre the norm separates points; on the plane it separates nothing; on the vector part it separates points and is moreover positive, so the whole of the vector part away from the origin is norm-regular.
 
-**The reason for the contrast.** The norm of an element is the sum of the squares of its four coordinates. On the centre three of the four vanish, so one square remains and it is the square of the coordinate. On the plane the four squares cancel against one another exactly, because the plane is built from an idempotent of norm zero. The cancellation is the subject of *The Spin-Half Bispinor Spaces and N Norm Regularity*.
+**The reason for the contrast.** The norm of an element is the sum of the squares of its four coordinates. On the centre three of the four vanish, so one square remains and it is the square of the coordinate. On the plane the four squares cancel against one another exactly, because the plane is built from an idempotent of norm zero. The cancellation is the subject of *The Spin-Half Bispinors and N Norm Regularity*.
 
 ## Summary
 
 The norm on the centre is $N(\lambda e_t)=\lambda^{2}$. Its null locus in the centre is the origin alone, so every nonzero element of the centre is norm-regular and invertible, and the centre is a copy of the complex field inside the algebra. The real part of the norm is an indefinite form of signature $(1,1)$ with the two isotropic lines $\mathbb{R}(e_t\pm ie_t)$, and on those lines the norm itself is $\pm2i$ and not zero. The polar form is $\lambda\mu$, complex-bilinear and nondegenerate. Against the other two carriers the centre is the case in which the norm separates, and the plane is the case in which it does not.
+
+## The Boxed Summary
+
+| the point | in plain words |
+| --- | --- |
+| the carrier | The carrier of spin zero is the real line along the identity, and its closure is the centre, a copy of the complex numbers inside the algebra. |
+| the norm on it | The norm of a central element is the square of its complex coordinate. |
+| what vanishes | Only the zero element. No other central element has a vanishing norm. |
+| the answer | Every central element except zero is norm-regular, and its inverse is central again. |
+| the consequence | The centre contains no zero divisor, and the null cone meets it in a single point. |
+| the trap | The real part of the norm is not the norm. Read on the real plane it is indefinite, of signature (1,1), with two isotropic lines. |
+| why that is no contradiction | On the two lines the norm itself is not zero, so the centre is not isotropic. |
+| the polar form | It is the product of the two coordinates, and it is nondegenerate. |
+| against the other carriers | The norm separates points on the centre and on the vector part, and it separates nothing on the spin-half plane. |
 
 ## Summary of Notation
 
@@ -147,7 +161,6 @@ The norm on the centre is $N(\lambda e_t)=\lambda^{2}$. Its null locus in the ce
 
 - [Introduction to the Spin-Zero Centre Subspace](the-spin-zero-centre-subspace.html), for the line, the closure and the action on it
 - [The Spin-Zero Centre Subspace and Spectral Regularity](the-spin-zero-centre-subspace-and-spectral-regularity.html), for the other predicate on the same space
-- [The Carrier of Dimension 1 and Norm Regularity](the-carrier-of-dimension-1-and-norm-regularity.html), for the same computation in the complex reading of the algebra
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the norm, its multiplicativity and its zero locus
 - [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the definitions of the two predicates and the four sectors
 - [The N-Regular Sector](the-n-regular-sector.html), for the open set on which the norm does not vanish

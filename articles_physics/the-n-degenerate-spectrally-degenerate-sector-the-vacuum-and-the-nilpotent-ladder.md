@@ -298,7 +298,7 @@ An anti-Hermitian element has a real vector part and a purely imaginary scalar p
 
 ### The Spin
 
-An element has no spin. In *The Spin of a Carrier* the spin is a property of a **carrier**: a subspace together with one of the two actions that preserve it, with $s$ the dimension of the representation space read as $(2s+1-1)/2$ and, equivalently, the highest weight $\max\operatorname{spec}\rho(\vec u\cdot\vec S)$. An element is a vector in a carrier, and the question acquires an answer only once the action is named. The question is therefore well posed only after the action is named, and then it has three answers.
+An element has no spin. In *The Carriers, the Representation, the Spin and the Closure* the spin is a property of a **carrier**: a subspace together with one of the two actions that preserve it, with $s$ the dimension of the representation space read as $(2s+1-1)/2$ and, equivalently, the highest weight $\max\operatorname{spec}\rho(\vec u\cdot\vec S)$. An element is a vector in a carrier, and the question acquires an answer only once the action is named. The question is therefore well posed only after the action is named, and then it has three answers.
 
 **The adjoint action.** Under conjugation by $G$ the algebra splits as
 
@@ -484,7 +484,7 @@ The field reading is pointwise. The sector classifies a value of the field at a 
 
 - [The Three Elementary Carriers and the Four Sectors of Regularity and Degeneracy](the-three-elementary-carriers-and-the-four-sectors-of-regularity-and-degeneracy.html), for the partition and the other three regions.
 - [The Square-Zero Element: Nilpotency as Mode, Differential and Supercharge](the-square-zero-element-nilpotency-as-mode-differential-and-supercharge.html), for the nine interpretations of the nilpotent.
-- [The Carriers of the Biquaternion Algebra](../articles_maths/the-carriers-of-the-biquaternion-algebra.html), for the definition of spin as a highest weight, the two module structures, the spectrum criterion, and the four uses of the word spin.
+- [The Carriers, the Representation, the Spin and the Closure](../articles_maths/the-carriers-the-representation-the-spin-and-the-closure.html), for the definition of spin as a highest weight, the two module structures, the spectrum criterion, and the four uses of the word spin.
 - [Null Electromagnetic Fields and the Shear-Free Congruence](null-electromagnetic-fields-and-the-shear-free-congruence.html), for the null field, its principal direction and the difference between nullness and radiation.
 - [Exceptional Points and the Nilpotent Regime in the Biquaternion Spectrum](exceptional-points-and-the-nilpotent-regime-in-the-biquaternion-spectrum.html), for the Jordan block at zero as the limit of a defective family.
 - [The N-Degenerate, Spectrally Regular Sector: The Massless Regime](the-n-degenerate-spectrally-regular-sector-the-massless-regime.html), for the other degenerate region.

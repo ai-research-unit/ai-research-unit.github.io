@@ -111,7 +111,7 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 - [The Polarized Module of the Biquaternion Algebra](../articles_maths/the-polarized-module-of-the-biquaternion-algebra.html)
 - [The Category of Modules](../articles_maths/the-category-of-modules.html)
 - [The Unpolarized Module of the Biquaternion Algebra](../articles_maths/the-unpolarized-module-of-the-biquaternion-algebra.html)
-- [The Carriers of the Biquaternion Algebra](../articles_maths/the-carriers-of-the-biquaternion-algebra.html)
+- [The Carriers, the Representation, the Spin and the Closure](../articles_maths/the-carriers-the-representation-the-spin-and-the-closure.html)
 
 #### The Element
 

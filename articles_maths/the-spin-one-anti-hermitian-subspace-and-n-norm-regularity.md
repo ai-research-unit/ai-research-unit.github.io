@@ -92,7 +92,7 @@ $$
 
 ## Invariance Under the Group
 
-**Theorem (the norm is invariant).** For every unit $u$ and every $X$,
+**Theorem (the norm is invariant).** For every unitary element $u$ and every $X$,
 
 $$
 N(uXu^{*})=N(X).
@@ -132,6 +132,19 @@ which is the negative of the norm on the closure at the corresponding coordinate
 
 On the closure the norm is $N(i\lambda+\vec v)=\lvert\vec v\rvert^{2}-\lambda^{2}$, a real form of signature $(3,1)$ that vanishes on a cone of real dimension $3$ with two nappes. The line $\mathbb{R}(ie_t)$ is negative definite and the triple $\mathfrak{k}$ is positive definite, the two are orthogonal for the polar form, and the carrier is norm-regular at every point except the origin. The norm is invariant under the conjugation action of the group and is constant on the orbits, which are labelled by the pair $(\lambda,\lvert\vec v\rvert)$; the norm is the difference of the two squares and does not separate the orbits. The carrier away from the origin lies in the sector $\Sigma_{11}$.
 
+## The Boxed Summary
+
+| the point | in plain words |
+| --- | --- |
+| the carrier | The carrier of spin one is the real three-dimensional space of pure vector elements, and its closure is the anti-Hermitian space. |
+| the norm on the closure | Vector length squared minus scalar square, a real form of signature (3,1). |
+| what vanishes there | A cone of real dimension three, with two nappes. |
+| the split | The line along the imaginary identity is negative definite, the vector part is positive definite, and the two are perpendicular for the polar form. |
+| the norm on the carrier | Vector length squared. It is positive definite, and it vanishes at the origin alone. |
+| the answer | The carrier is norm-regular at every point except the origin. |
+| under conjugation | The norm is unchanged, so it is constant on the orbits. The orbits are labelled by the scalar coordinate and the vector length, and the norm is the difference of their squares, so it does not separate the orbits. |
+| the sector | Away from the origin the carrier lies in the doubly regular sector. |
+
 ## Summary of Notation
 
 | Symbol | Meaning |
@@ -152,7 +165,6 @@ On the closure the norm is $N(i\lambda+\vec v)=\lvert\vec v\rvert^{2}-\lambda^{2
 
 - [Introduction to the Spin-One Anti-Hermitian Subspace](the-spin-one-anti-hermitian-subspace.html), for the carrier, the closure and the action on it
 - [The Spin-One Anti-Hermitian Subspace and Spectral Regularity](the-spin-one-anti-hermitian-subspace-and-spectral-regularity.html), for the other predicate on the same space
-- [The Carriers of Dimension 4 and Norm Regularity](the-carriers-of-dimension-4-and-norm-regularity.html), for the four halves and their four quadratic forms
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the norm, its multiplicativity and its zero locus
 - [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the definitions of the two predicates and the four sectors
 - [The N-Regular Sector](the-n-regular-sector.html), for the open set on which the norm does not vanish

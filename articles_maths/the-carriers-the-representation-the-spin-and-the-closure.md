@@ -12,9 +12,9 @@ The whole article is written over the reals, and this is not a matter of taste. 
 
 The complex structure $i$ is an element of the algebra here and not a scalar of the ground field. It is one of the operators, on the same footing as $\vec e_x,\vec e_y,\vec e_z$, and the fact that it is available is what the closure steps use.
 
-*Preliminaries* fixes the real algebra. *The Rotation Action* fixes the action and the generator. *The Carriers* and *The Spin Table* contain the answer, with the three carriers read off the action itself. *What the Construction Uses and Does Not Use* records the limits. *The Closure of a Carrier* is the last step: a carrier is a module, and the question asks for subspaces, so each carrier is closed into a subspace — the centre, the spinor and bispinor spaces, and the anti-Hermitian space. The appendix holds the computations.
+*Preliminaries* fixes the real algebra. *The Rotation Action* fixes the action and the generator, and *The Criterion* gives the test that makes irreducibility a reading of the spectrum. *The Carriers* and *The Spin Table* contain the answer, with the three carriers read off the action itself. *Three and No More* proves that the list is complete, and *The Quadratic Element* reads the same three numbers from a second construction. *What the Construction Uses and Does Not Use* records the limits. *The Closure of a Carrier* is the last step: a carrier is a module, and the question asks for subspaces, so each carrier is closed into a subspace — the centre, the spinor and bispinor spaces, and the anti-Hermitian space. The appendix holds the computations.
 
-Three things are not claimed. The article does not derive the trichotomy: that there are exactly three carriers is *The Carriers of the Biquaternion Algebra*, and it is quoted here. It does not read the label as anything but a spectral quantity. And it does not present the closure as a decomposition: the three closures are not the pieces of one splitting of the algebra.
+Two things are not claimed. The article does not read the label as anything but a spectral quantity, and it does not present the closure as a decomposition: the three closures are not the pieces of one splitting of the algebra. What it does claim, and proves, is the trichotomy itself — that the list of three is complete — in *Three and No More*, where the count is derived rather than quoted.
 
 No argument array is printed anywhere below, at any point, and this is deliberate. An array carries a frame, the frame singles out a direction, and the direction is not part of the algebra: a display that fixes one axis absorbs whatever depends on that axis, and the page then stops showing it. Every statement here is made at a general axis $\vec u_{\mathrm r}$ and proved from two identities that hold at that axis. The rule and its reasons are those of *Matrix Representations Conventions*.
 
@@ -108,7 +108,7 @@ The **adjoint action** on the pure part, $\varrho_{\mathrm{ad}}(u)=\operatorname
 
 The **spinor action** on a real plane, $\varrho_{\mathrm{def}}(X)=L_X$. Unlike the other two it is defined for every element of the algebra and not only for the units, because left multiplication is multiplicative on the whole algebra. The plane it acts on is described in *The Carriers*.
 
-**Definition (carrier).** A **carrier** is a nonzero real subspace of $\mathbb{B}$ that is invariant and irreducible under one of these actions. The action is part of the carrier, because the same subspace can be reducible for one action and irreducible for another. The three carriers are computed in *The Carriers*, and the list is complete: there are three and no more.
+**Definition (carrier).** A **carrier** is a nonzero real subspace of $\mathbb{B}$ that is invariant and irreducible under one of these actions. The action is part of the carrier, because the same subspace can be reducible for one action and irreducible for another. The three carriers are computed in *The Carriers*, and the list is complete: there are three and no more, which is proved in *Three and No More* and not assumed.
 
 **How the rotor performs the rotation.** For the rotor of an axis $\vec u_{\mathrm r}$ and an angle $\theta_{\mathrm{axr}}$, the operator $\operatorname{Ad}_{\tilde u_{\mathrm r}}$ on $\mathfrak{k}$ is the rotation about $\vec u_{\mathrm r}$ through $\theta_{\mathrm{axr}}$:
 
@@ -166,7 +166,29 @@ $$
 s=\max\operatorname{spec}W,
 $$
 
-the largest weight, with $s=0$ for the spectrum $\{0\}$. The definition is well posed by the two lemmas: the weights are real, so the maximum exists, and they do not depend on the axis, so the number depends on the carrier and not on a choice. It agrees with the definition by dimension of *The Spin of a Carrier*: on an irreducible carrier the weights are $s,s-1,\dots,-s$, so there are $2s+1$ of them.
+the largest weight, with $s=0$ for the spectrum $\{0\}$. The definition is well posed by the two lemmas: the weights are real, so the maximum exists, and they do not depend on the axis, so the number depends on the carrier and not on a choice. It agrees with the definition by dimension, the identity $2s+1=\dim_\mathbb{R}$ of *The Spin Table*: on an irreducible carrier the weights are $s,s-1,\dots,-s$, so there are $2s+1$ of them.
+
+## The Criterion
+
+Irreducibility is the one property of a carrier that no dimension can supply, and it is normally checked case by case. One test covers every module that arises here, and it is worth stating on its own, because it turns irreducibility into a reading of the spectrum.
+
+**Definition (simple and spaced).** A string of weights is **simple** when no value occurs twice, and **spaced by one** when consecutive values differ by $1$.
+
+**Theorem (irreducibility from the string).** Let $V$ be a finite-dimensional complex module for the rotation algebra, and suppose that the weights of $\varrho(A(\vec u_{\mathrm r}))$ on $V$ are simple and spaced by one, the largest being $s$. Then $V$ is irreducible, $s$ is its highest weight, and $\dim_\mathbb{C}V=2s+1$.
+
+*Proof.* The rotation group is compact, so $V$ is a direct sum of irreducible submodules, by the averaging argument of *Representations of Groups*, which needs no finiteness and no array. On an irreducible submodule the weights form one string, simple, spaced by one, and symmetric about zero: the submodule is generated by an eigenvector of the largest weight, and the algebra acts on it through $\varrho(A(\vec u_{\mathrm r}))$ together with the two ladder elements $\tilde S_\pm=\tilde S(\vec u_2)\pm i\tilde S(\vec u_3)$ built on an oriented orthonormal pair completing the axis. Since $\vec u_2\times\vec u_3=\vec u_{\mathrm r}$, these satisfy
+
+$$
+\bigl[\varrho(\tilde S(\vec u_{\mathrm r})),\varrho(\tilde S_\pm)\bigr]=\pm\varrho(\tilde S_\pm),
+$$
+
+so on an eigenvector of weight $\lambda$ they produce an eigenvector of weight $\lambda\pm1$, or zero when the string ends. A string that is symmetric about zero and spaced by one contains the value $0$, once. The multiplicity of the weight $0$ on $V$ is therefore the number of its irreducible summands, and the hypothesis makes that number one.
+
+**Corollary (the three carriers pass the test).** The strings $\{0\}$, $\{\pm\tfrac12\}$ and $\{\pm1,0\}$ are simple and spaced by one, with largest values $0$, $\tfrac12$ and $1$. Each of the three carriers is therefore irreducible, and after complexification its dimension is $2s+1$, which is $1$, $2$ and $3$.
+
+**Remark (the string carries the dimension and the highest weight).** The largest weight is read from the string, and the length of the string is the complex dimension. So a carrier is determined in both respects by its spectrum, and the identity $2s+1=\dim$ of *The Spin Table* is a relation between two readings of one string rather than between two independent numbers.
+
+**Remark (a repeated weight is a direct sum).** Under left multiplication on the whole algebra the weights are $\pm\tfrac12$ each with multiplicity two, and $\mathbb{B}=S_+\oplus S_-$ is a sum of two carriers of one type. The repetition is the multiplicity of a type, not a second type, and this is why the criterion is a statement about multiplicities and not only about the set of values.
 
 ## The Carriers
 
@@ -248,6 +270,60 @@ From the idempotent, $\mathbb{B}=S_+\oplus S_-$ as left modules, where $S_\pm=\m
 
 The spinor plane occurs in neither as a summand: it is a complex line inside $S_+$, and not a left module over the whole algebra. The line, the plane and the vector part are three carriers, not three summands.
 
+## Three and No More
+
+The list is complete, and the proof has one half for each action. Both halves use one form, and the form is not the trace form: it is the polar form of the norm.
+
+**The form.** For elements $X,Y$ put
+
+$$
+\beta(X,Y)=\tfrac12\bigl(N(X+Y)-N(X)-N(Y)\bigr),
+$$
+
+so that $N(X+Y)=N(X)+N(Y)+2\beta(X,Y)$. In the four complex coordinates it is
+
+$$
+\beta(X,Y)=Q_t(X)Q_t(Y)+Q_x(X)Q_x(Y)+Q_y(X)Q_y(Y)+Q_z(X)Q_z(Y),
+$$
+
+which is complex-bilinear, symmetric and non-degenerate, and which reads the scalar part on the unit:
+
+$$
+\beta(e_t,Y)=Q_t(Y),\qquad \beta(ie_t,Y)=i\,Q_t(Y).
+$$
+
+*Proof.* The coordinate display is the polar form of the sum of four squares, and the two evaluations are that display at $X=e_t$ and at $X=ie_t$, whose coordinates are $(1,0,0,0)$ and $(i,0,0,0)$.
+
+**Lemma (the form is invariant).** For a unit $u$ and elements $X,Y$, $\beta(uXu^{*},uYu^{*})=\beta(X,Y)$.
+
+*Proof.* The norm is multiplicative and $N(uu^{*})=N(e_t)=1$, so $N(uZu^{*})=N(Z)$ for every $Z$. Apply this to $Z=X+Y$, to $Z=X$ and to $Z=Y$ in the definition of $\beta$.
+
+**Theorem (the multiplication carriers).** Up to isomorphism there is one simple left $\mathbb{B}$-module, of complex dimension $2$: every minimal left ideal is a copy of it, and every left ideal is a sum of copies.
+
+*Proof.* A minimal left ideal is $S=\mathbb{B}e$ for a primitive idempotent $e$, and two such ideals are isomorphic as left modules whenever their idempotents are conjugate, which for a full matrix algebra is always. Let $W$ be a simple left module. It is a quotient of the regular module $\mathbb{B}$, hence $\mathbb{B}/M$ for a maximal left ideal $M$, and every such quotient is a minimal left ideal up to a sum of minimal ones. All the minimal ones are copies of one module, so the simple module is unique up to isomorphism. Its complex dimension is $2$, since $\mathbb{B}$ is the algebra of endomorphisms of a two-dimensional complex space and the minimal left ideals are its columns.
+
+**Theorem (the conjugation carriers).** Up to isomorphism there are exactly two: the centre, the trivial module of complex dimension $1$, and the traceless part, the adjoint module of complex dimension $3$.
+
+*Proof.* Let $W\subseteq\mathbb{B}$ be nonzero and invariant under $\operatorname{Ad}_u$ for every unit $u$. Since $\beta(e_t,Y)=Q_t(Y)$, the orthogonal complement of the centre is the traceless part,
+
+$$
+\mathbb{B}=\mathbb{B}_C\perp\mathbb{B}_V,\qquad \mathbb{B}_V=\{X:Q_t(X)=0\},
+$$
+
+and both summands are invariant: the centre is fixed pointwise, and the traceless part is its orthogonal complement, invariant because $\beta$ is. The group $G$ is compact, so the average of $uXu^{*}$ over $u\in G$ is defined; it is a map of modules, it is the identity on $\mathbb{B}_C$ and zero on $\mathbb{B}_V$, and applied to an element of $W$ it returns an element of $W$, because $W$ is invariant and linear. The average is the projection onto the fixed space, by the argument of *Representations of Groups* that gives complete reducibility for compact groups. So each $X\in W$ splits as $X=\pi X+(X-\pi X)$ with both terms in $W$, and
+
+$$
+W=(W\cap\mathbb{B}_C)\oplus(W\cap\mathbb{B}_V).
+$$
+
+An irreducible $W$ is therefore one of these two summands. The centre is a complex line, hence irreducible. The traceless part is irreducible by the criterion: its weights at the axis are $\{+1,0,-1\}$, simple and spaced by one. Two summands, both irreducible, and no third.
+
+**Corollary (three and not four).** Up to isomorphism the carriers of $\mathbb{B}$ are three: the trivial module of complex dimension $1$, the module of a minimal left ideal of complex dimension $2$, and the adjoint module of complex dimension $3$. One comes from multiplication and two from conjugation, and there is no fourth, because a carrier is irreducible for one of the two actions and both actions are now classified.
+
+**Remark (what is counted).** The count is a count for the two actions the algebra carries on itself: multiplication, which is an action of the algebra, and conjugation, which is an action of the group of units by automorphisms. No third action is used anywhere in this group of articles. Left and right multiplication give the same types, because the algebra is a full matrix algebra, and the derived form of the conjugation is the bracket.
+
+**Remark (copies are not types).** $S_+$ and $S_-$ are two carriers of one type, not two types. The multiplicity is a property of the algebra as a module, not a count of types, and it is the reason the weight string of the whole algebra repeats.
+
 ## The Spin Table
 
 | carrier | $\dim_\mathbb{R}$ | action | $\varrho\bigl(A(\vec u_{\mathrm r})\bigr)$ | weights | $s$ | $2s+1$ | full turn |
@@ -266,6 +342,40 @@ The spinor plane occurs in neither as a summand: it is a complex line inside $S_
 
 **Remark (the spacing).** The three spectra are symmetric about zero, spaced by $1$, and of length $2s+1$: $0$ alone, then $+\tfrac12$ and $-\tfrac12$, then $+1,0,-1$ in steps of $1$. The spacing is checked in the three cases; it is not assumed.
 
+## The Quadratic Element
+
+The same three numbers are values of one element of the algebra, and this is a second reading of them, independent of the dimension and of the string.
+
+**Definition (the quadratic element).** With $\tilde S_k=\tfrac12 i\vec e_k$ for the three coordinate axes, the **quadratic element** is
+
+$$
+C=\tilde S_x^{2}+\tilde S_y^{2}+\tilde S_z^{2}.
+$$
+
+**Proposition (the value in the algebra).** $C=\tfrac34 e_t$.
+
+*Proof.* $\tilde S_k^{2}=\tfrac14 i^{2}\vec e_k^{2}$, and $i^{2}=\vec e_k^{2}=-e_t$, so $\tilde S_k^{2}=\tfrac14 e_t$ and the three terms give $\tfrac34 e_t$. The value is central.
+
+**Proposition (the values in the three modules).** Acting in the module of each carrier,
+
+$$
+C\big|_{\mathbb{B}_C}=0,\qquad C\big|_{S_\pm}=\tfrac34,\qquad C\big|_{\mathfrak{k}}=2 .
+$$
+
+*Proof.* On the centre the module is trivial, and $C$ is central, so it acts as the scalar $0$. On $S_\pm$ the action is left multiplication by the central $\tfrac34 e_t$, so it acts as the scalar $\tfrac34$. On $\mathfrak{k}$ the action is the bracket, and $\operatorname{ad}_{\tilde S_k}^{2}$ kills the axis $\vec e_k$ and fixes its orthogonal plane: from $[\vec e_x,\vec e_y]=2\vec e_z$ and $[\vec e_x,\vec e_z]=-2\vec e_y$ one has $\operatorname{ad}_{\vec e_x}^{2}\vec e_y=-4\vec e_y$ and $\operatorname{ad}_{\vec e_x}^{2}\vec e_z=-4\vec e_z$, and $\operatorname{ad}_{\tilde S_x}^{2}=-\tfrac14\operatorname{ad}_{\vec e_x}^{2}$ is therefore the identity on that plane. The three operators are the three coordinate projections, and their sum is $2$ on a three-dimensional space.
+
+**Corollary (one polynomial, three carriers).** The three values are $s(s+1)$ at $s=0,\tfrac12,1$:
+
+$$
+0=0\cdot1,\qquad \tfrac34=\tfrac12\cdot\tfrac32,\qquad 2=1\cdot2 .
+$$
+
+**Remark (two elements, one scalar).** The element $C=\tfrac34e_t$ of the algebra and the element $\sum_k\tilde S_k\otimes\tilde S_k$ of the enveloping algebra are different objects, and they are not interchangeable. The first is central, so the adjoint action, which kills the centre, sends it to the operator $0$ on $\mathfrak{k}$: read with the algebra product, the quadratic element is $0$ on the adjoint carrier. The second is the composed operator, and it is $2$ there. The value attached to a carrier is the second, and the two agree only on $S_\pm$, where the module is the defining one and the product and the symmetrised product coincide.
+
+**Remark (what the value does not determine).** The value $\lambda=s(s+1)$ is quadratic in $s$, so it determines $s$ only up to the other root, $s\mapsto-1-s$. The largest weight being non-negative fixes the choice here, and the values $0,\tfrac34,2$ are distinct, so on these three carriers there is no ambiguity left. In general the ambiguity is present, which is why the quadratic element is a reading of the highest weight and not a definition of it.
+
+**Remark (what the polynomial does not prove).** The identity $2s+1=\dim_\mathbb{R}$ rests on the trichotomy and on the three computations, not on this element: the values $0,\tfrac34,2$ are consistent with the three spins, and consistency is not derivation. What the element adds is that the three numbers are the values on the three carriers of one invariant of the algebra, computed once and read three times.
+
 ## What the Construction Uses and Does Not Use
 
 **The axis.** The axis is a parameter. The spectrum does not depend on it, by the lemma of *The Rotation Action*, and the spin therefore does not depend on it. The answer is a property of the carrier and not of a direction.
@@ -274,15 +384,15 @@ The spinor plane occurs in neither as a summand: it is a complex line inside $S_
 
 **The complex structure.** $i$ is used twice: it is what the first closure adjoins, and it is what the idempotent $\tilde\Pi_+$ contains. No carrier is defined by means of it, and the weights are real numbers throughout.
 
-**The norm.** The norm is used twice. It identifies the rotor as a unit, $\tilde u_{\mathrm r}\tilde u_{\mathrm r}^{*}=e_t$, and it gives the pure part its positive definite form, which is what makes $SO(\mathfrak{k})$ a group of rotations. The spectra, the spin and the sign of the full turn use the product, the star and the commutator only.
+**The norm.** The norm is used three times. It identifies the rotor as a unit, $\tilde u_{\mathrm r}\tilde u_{\mathrm r}^{*}=e_t$. It gives the pure part its positive definite form, which is what makes $SO(\mathfrak{k})$ a group of rotations. And its polar form $\beta$ is the invariant form of *Three and No More*, where it does the work that the trace form does in a treatment by matrices. The spectra, the spin and the sign of the full turn use the product, the star and the commutator only.
 
 **No array.** No argument array is used, and no basis is fixed. The two identities $\vec u_{\mathrm r}\tilde\Pi_+=-i\tilde\Pi_+$ and $[\tfrac12\vec u_{\mathrm r},\vec v]=\vec u_{\mathrm r}\times\vec v$ carry every computation, and the spectra are read from the scalar action on the plane and from the exhibited eigenvectors on the vector part. A display in a fixed frame would have introduced the axis into statements that do not contain one.
 
-**What is read from an element.** Only the scalar part and the vector part are used, read off the coefficients. No pairing of the algebra with itself is needed, and no invariant of a linear operator is taken; the spectra are read from the action of the axis and from eigenvectors that are written out.
+**What is read from an element.** Only the scalar part and the vector part are used, read off the coefficients. No pairing of the algebra with itself is needed for the spectra, and no invariant of a linear operator is taken; the spectra are read from the action of the axis and from eigenvectors that are written out. The one pairing used in this article is the polar form $\beta$ of the norm, and it is used once, in *Three and No More*.
 
 **Regularity.** No decomposition into regular and degenerate parts is assumed. The idempotent is degenerate by construction, since $\tilde\Pi_+\ne e_t$, and the plane is built from it. The construction therefore does not assume that the algebra is a division algebra: $\mathbb{B}$ is not one, and the existence of a nontrivial idempotent is exactly the failure.
 
-**The classification.** The statement that there are three carriers and no more is quoted from *The Carriers of the Biquaternion Algebra* and is not reproved.
+**The classification.** The statement that there are three carriers and no more is proved in *Three and No More*, from the polar form of the norm and from the compactness of the group of units. It is not quoted, and the proof writes no array.
 
 ## The Closure of a Carrier
 
@@ -351,7 +461,29 @@ with $\mathfrak{k}$ the second summand and $\mathbb{R}(ie_t)$ the centre; it is 
 
 **The carrier inside.** $\mathfrak{k}$, of real dimension $3$, with weights $\{\pm1,0\}$ and $s=1$. The line $\mathbb{R}(ie_t)$ is not a second carrier: it is the degenerate summand, fixed by the action, and it is the same carrier as the line of the centre.
 
-**Remark (why this half and not the other).** The Hermitian half $\mathbb{B}_\Psi=\mathbb{R}e_t\oplus i\mathfrak{k}$ is also invariant and also of real dimension $4$, and it too splits as a line and a three-dimensional summand. Two facts separate them. The vector part lies in $\mathbb{B}_\Phi$ and meets $\mathbb{B}_\Psi$ only at the origin. And $\mathbb{B}_\Phi$ is closed under the commutator, while $\mathbb{B}_\Psi$ is not: the bracket of two Hermitian elements is anti-Hermitian and leaves it. The two halves carry the same module with $i$ inserted; the table names the half that contains the carrier.
+**Remark (why this half and not the other).** The Hermitian half $\mathbb{B}_\Psi=\mathbb{R}e_t\oplus i\mathfrak{k}$ is also invariant and also of real dimension $4$, and it too splits as a line and a three-dimensional summand. The two halves carry the same module, since $X\mapsto iX$ is a real-linear isomorphism carrying one onto the other and commuting with every conjugation. What separates them is read off the involution identity
+
+$$
+(XY)^{*}=Y^{*}X^{*},
+$$
+
+which needs no axis. On $\mathbb{B}_\Phi$ every element is anti-Hermitian, so $X^{*}=-X$ and $Y^{*}=-Y$ give $(XY)^{*}=YX$ and $(YX)^{*}=XY$, hence $[X,Y]^{*}=-[X,Y]$: the bracket of two elements of the half is again in the half.
+
+$$
+[\mathbb{B}_\Phi,\mathbb{B}_\Phi]\subseteq\mathbb{B}_\Phi .
+$$
+
+On $\mathbb{B}_\Psi$ every element is Hermitian, so $X^{*}=X$ and $Y^{*}=Y$ give $(XY)^{*}=YX$ as well, and the bracket of two elements is anti-Hermitian. But the two halves meet only at the origin, $\mathbb{B}_\Phi\cap\mathbb{B}_\Psi=\{0\}$, and the bracket is not identically zero on the half: $\mathfrak{k}$ is non-abelian, $[\vec v,\vec w]\neq0$ for some pair, and $i\mathfrak{k}$ lies in $\mathbb{B}_\Psi$. So for a suitable pair the bracket of two elements of $\mathbb{B}_\Psi$ is a nonzero element of $\mathfrak{k}$, which $\mathbb{B}_\Psi$ does not contain.
+
+$$
+[\mathbb{B}_\Psi,\mathbb{B}_\Psi]\subseteq\mathbb{B}_\Phi,\qquad [\mathbb{B}_\Psi,\mathbb{B}_\Psi]\not\subseteq\mathbb{B}_\Psi .
+$$
+
+The same identity shows that the anticommutator runs the other way, $\{X,Y\}^{*}=YX+XY=\{X,Y\}$ for two elements of $\mathbb{B}_\Psi$, so that half is closed under the symmetrisation and not under the bracket. Both closure statements are computations in the involution, and neither refers to a basis: the vector part lies in $\mathbb{B}_\Phi$, which is closed, and that is the half the table names.
+
+**Remark (the bracket alone does not name it).** Being closed under the commutator is necessary and not sufficient. Of the four halves $\mathbb{B}_\Psi$, $\mathbb{B}_\Phi$, $\mathbb{B}_H=\mathbb{R}e_t\oplus\mathfrak{k}$ and $\mathbb{B}_{iH}$, exactly two are closed under the bracket: $\mathbb{B}_\Phi$ and $\mathbb{B}_H$. The reason is that the bracket of two elements of any half is anti-Hermitian and traceless, so it lands in $\mathfrak{k}$, which lies in both. What singles out $\mathbb{B}_\Phi$ is the two facts together, containing the carrier and being closed under the bracket. A third test completes the picture: of the four halves only $\mathbb{B}_H$ is closed under the algebra product, and as an algebra it is the real quaternions, a division algebra. So the two halves that carry a bracket are distinguished by the product, and $\mathbb{B}_\Phi$ is the one that carries a bracket and not a product.
+
+**Remark (the naming is a convention with a warrant).** The table names one half for the carrier, and no number depends on the choice. If the other half were named, the types, the weights $\{0,\pm1\}$ and the spin would all be unchanged; what would change is the algebra structure that comes with the name, since one half is closed under the bracket and the other is not. The warrant for $\mathbb{B}_\Phi$ is that it contains the carrier and is a Lie algebra under the bracket, which is the structure the action itself uses.
 
 ### The Spaces Together
 
@@ -367,13 +499,13 @@ with $\mathfrak{k}$ the second summand and $\mathbb{R}(ie_t)$ the centre; it is 
 
 ## Discussion
 
-**What is established.** Three carriers of real dimensions $1$, $2$, $3$; the actions trivial, by left multiplication, and by conjugation; the weights $\{0\}$, $\{\pm\tfrac12\}$ and $\{\pm1,0\}$ obtained from the two identities without any array; the spins $0,\tfrac12,1$; the identity $2s+1=\dim_\mathbb{R}$ checked in the three cases; the full-turn sign $(-1)^{2s}$, with the $-1$ visible as a half turn of the plane; and the closures — the centre, the spinor and bispinor spaces, and the anti-Hermitian space.
+**What is established.** Three carriers of real dimensions $1$, $2$, $3$; the actions trivial, by left multiplication, and by conjugation; the weights $\{0\}$, $\{\pm\tfrac12\}$ and $\{\pm1,0\}$ obtained from the two identities without any array; the spins $0,\tfrac12,1$; the identity $2s+1=\dim_\mathbb{R}$ checked in the three cases and covering every carrier, because the list is complete and the completeness is proved; the full-turn sign $(-1)^{2s}$, with the $-1$ visible as a half turn of the plane; the quadratic element, whose values on the three carriers are $s(s+1)$; and the closures — the centre, the spinor and bispinor spaces, and the anti-Hermitian space.
 
 **What it means.** The three numbers $1,2,3$ are the real dimensions of three carriers, and the label $s$ is the largest weight of each, so the identity that relates them relates two counts of the same nature. The closure then places each carrier in the algebra, at the cost of one complex structure, one transverse direction, one second idempotent, and one fixed line.
 
 **Limitations.** The article studies the conjugation by the units with $uu^{*}=e_t$. It does not study the conjugation by the general invertible elements, which does not preserve the pure part. It does not study products of carriers, or the bracket as a structure. And it states the closure of the three carriers only.
 
-**Two questions left open.** The first is whether the count $2s+1$ can be proved without the classification, by an argument that does not run through the list. The second is whether the bispinor family has a canonical member, that is, whether the axis can be fixed by a condition internal to the algebra; on the three carriers the axis is a free parameter, and nothing in the algebra singles one out.
+**Two questions left open.** The first is whether the identity $2s+1=\dim_\mathbb{R}$ can be proved without the classification, by an argument that does not run through the list; the quadratic element is a second reading of the three numbers and not such a proof. The second is whether the bispinor family has a canonical member, that is, whether the axis can be fixed by a condition internal to the algebra; on the three carriers the axis is a free parameter, and nothing in the algebra singles one out.
 
 ## Appendix
 
@@ -396,6 +528,8 @@ with $\mathfrak{k}$ the second summand and $\mathbb{R}(ie_t)$ the centre; it is 
 | $\tilde u_{\mathrm r}$ | the rotor of the axis and the angle |
 | $A(\vec u_{\mathrm r})=\tfrac12\vec u_{\mathrm r}$ | the generator along the axis, an element of $\mathfrak{k}$ |
 | $\tilde S(\vec u_{\mathrm r})=iA$ | the Hermitian element of the corpus |
+| $\beta$ | the polar form of the norm, invariant and non-degenerate |
+| $C=\sum_k\tilde S_k^{2}$ | the quadratic element, equal to $\tfrac34e_t$ |
 | $\tilde\Pi_\pm(\vec u_{\mathrm r})=\tfrac12(e_t\pm i\vec u_{\mathrm r})$ | the two idempotents of the axis, a Peirce basis |
 | $\Sigma=\mathbb{C}\tilde\Pi_+$ | the spinor plane, dimension $2$ over $\mathbb{R}$ |
 | $S_\pm=\mathbb{B}\tilde\Pi_\pm$ | the spinor spaces, dimension $4$ over $\mathbb{R}$ |
@@ -451,7 +585,10 @@ $$
 \qquad
 [\tfrac12\vec u_{\mathrm r},\vec u_2-i\vec u_3]=+i\,(\vec u_2-i\vec u_3),
 \qquad
-[\tfrac12\vec u_{\mathrm r},\vec u_{\mathrm r}]=0 .$$ The eigenvalues are $-i,+i,0$ on the complexification of $\mathfrak{k}$, so the weights are $\pm1,0$.
+[\tfrac12\vec u_{\mathrm r},\vec u_{\mathrm r}]=0 .
+$$
+
+The eigenvalues are $-i,+i,0$ on the complexification of $\mathfrak{k}$, so the weights are $\pm1,0$.
 
 **The full turns.** Exponentiating the three operators at $\theta_{\mathrm{axr}}=2\pi$: on the line, $\varrho(2\pi A)=e_t$ acts as $+1$; on the plane, the phase is $e^{-i\pi}=-1$, so the operator is $-\mathrm{id}$ on the two real dimensions, a half turn; on the vector part, $\exp(2\pi\,\vec u_{\mathrm r}\times)$ is the identity, because the cross product is a quarter turn and four quarter turns are a full turn.
 
@@ -481,16 +618,15 @@ The scalar term is $2i\operatorname{Im}(\alpha\bar\beta)$, and it vanishes exact
 
 ## Further Reading
 
-- [The Carriers of the Biquaternion Algebra](the-carriers-of-the-biquaternion-algebra.html), for the carrier, the type and the completeness of the list
-- [Introduction to the Spin-Zero Centre Subspace](the-spin-zero-centre-subspace.html), for the line and the centre taken on their own, with the proof that the fixed space is exactly the centre
-- [Introduction to the Spin-Half Bispinor Spaces](the-spin-half-bispinor-spaces.html), for the plane, the two spinor spaces and the infinite family of bispinor spaces
+- [Introduction to the Spin-Zero Centre Subspace](the-spin-zero-centre-subspace.html), for the line and the centre taken on their own, with the proof that the fixed space is exactly the centre and that no other complex line is invariant
+- [Introduction to the Spin-Half Bispinors](the-spin-half-bispinor-spaces.html), for the plane, the two spinor spaces and the infinite family of bispinor spaces
 - [Introduction to the Spin-One Anti-Hermitian Subspace](the-spin-one-anti-hermitian-subspace.html), for the vector part, the cross product operator and the split $\mathfrak{u}(2)=\mathfrak{u}(1)\oplus\mathfrak{su}(2)$
-- [The Weights of a Carrier](the-weights-of-a-carrier.html), for the weight, the weight string and the three spectra
-- [The Spin of a Carrier](the-spin-of-a-carrier.html), for the definition of the spin by dimension and its agreement with the largest weight
 - [The Minimal Left Ideals of the Biquaternion Algebra](the-minimal-left-ideals-of-the-biquaternion-algebra.html), for the idempotents, the minimality and the splitting of the algebra
-- [The Peirce Basis and Norm Regularity](the-peirce-basis-and-norm-regularity.html), for the Peirce basis and the four corners
+- [The Peirce Basis of the Biquaternion Algebra](the-peirce-basis-of-the-biquaternion-algebra.html), for the basis, the gauge and the system of matrix units
+- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the four corners and the diagonal part
 - [The Regular Module in the Biquaternion Algebra](the-regular-module.html), for the algebra read as a module over itself
 - [Subspaces and Decompositions of the Biquaternion Algebra](subspaces-and-decompositions-of-the-biquaternion-algebra.html), for the centre, the pure part and the two Hermitian halves
+- [Representations of Groups](representations-of-groups.html), for complete reducibility by averaging, which is what compactness of the group of units supplies
 - [Biquaternion Rotations and Lorentz Transformations](biquaternion-rotations-and-lorentz-transformations.html), for the rotor, the two-to-one cover and the comparison of the two two-sided actions
 - [Operator and Calculus Conventions](operator-and-calculus-conventions.html), for the glyphs $L_X$, $R_X$, $\operatorname{Ad}_u$ and $\operatorname{ad}_X$
 - [Matrix Representations Conventions](matrix-representations-conventions.html), for the rule that no array is written in a symbol, and the basis-free form of an operator
