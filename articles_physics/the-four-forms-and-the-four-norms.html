@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Four Forms and the Four Norms — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-four-forms-and-the-four-norms"><strong>The Four Forms and the Four Norms</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>This entry reads the seventh section of the mathematical category: what a product measures once it is reduced to a scalar, and what the four reductions are.</strong></p>
+<p><strong>The question is what a product has to say about the pair it acts on.</strong> The previous entry read the product as an operation and its two halves. A scalar part is different: it is a single number, and the number asks what the operation is <em>for</em>. The mathematics answers with four functions of two elements, and each becomes a function of one element on the diagonal.</p>
+<p><strong>The rule is one line, read at two arities.</strong></p>
+<p>$$
+\boxed{\;\varphi(\tilde Q_1,\tilde Q_2)=\mathrm{Sc}\bigl(K_1(\tilde Q_1)\,K_2(\tilde Q_2)\bigr),\qquad \varphi(\tilde Q)=\varphi(\tilde Q,\tilde Q)\;}
+$$</p>
+<p><strong>Two arguments give a form; one argument gives an algebraic norm.</strong> The four settings of the previous entry give four forms, and each form read on the diagonal gives one norm:</p>
+<p>$$
+P(\tilde Q)=\sum_\mu\varepsilon_\mu Q_\mu^{2},\qquad \langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2},\qquad H(\tilde Q)=\sum_\mu\lvert Q_\mu\rvert^{2},\qquad \mathrm{Kr}(\tilde Q)=\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2},
+$$</p>
+<p>with $\varepsilon=(1,-1,-1,-1)$.</p>
+<p><strong>The single idea is that two properties single out two of the four, and they are different properties.</strong> The quaternionic norm is the one that is multiplicative. The Hermitian norm is the one that is definite. No function is both, and the reason is not an accident of this algebra: it is the zero divisors. Everything that follows — the mass shell, the Born weight, the indefinite constraint, the sign of the sector — is a consequence of that split.</p>
+<p><strong>The four words are the corpus's shorthand, and they follow the algebra rather than the other way round.</strong> The quaternionic form is <strong>the interval</strong>, because its level sets on the material sector are the mass shells. The Hermitian form is <strong>the weight</strong>, because it is the only one that can be normalised. The plain form is <strong>the pairing</strong>, because it is the invariant trace pairing of two elements and its values are complex. The Krein form is <strong>the volume</strong>, because it is the only real-valued form that is signed. A pairing may be complex; a measure must be real; and only one of the two real measures is indefinite.</p>
+<h2 id="the-source-table">The Source Table</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Mathematical Content</th>
+<th>Source Mathematical Article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the four forms, their brackets, their Gram matrices, their signatures, their null sets, their isometry groups, the two slots, the four algebraic norms, multiplicativity and definiteness, the qualified regular and degenerate pairs</td>
+<td><a href="../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html">The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</a></td>
+</tr>
+<tr>
+<td>the twelve operations and their scalar parts, the symmetrisation that keeps a form and the antisymmetrisation that kills it, the distinction over $\mathbb{C}$ and the coincidence over $\mathbb{R}$</td>
+<td><a href="../articles_maths/symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html">Symmetric and Antisymmetric Decomposition of the Four General Products</a></td>
+</tr>
+<tr>
+<td>the four general products whose scalar parts the four forms are, the identities among the four scalar parts, the trace convention</td>
+<td><a href="../articles_maths/the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html">The Four General Products and Their Relations over the Biquaternion Algebra</a></td>
+</tr>
+<tr>
+<td>the restriction of the four forms and the four norms to the six remarkable subspaces, the signatures, the definiteness on each</td>
+<td><a href="../articles_maths/remarkable-subspaces-and-the-four-general-products-forms-and-norms.html">Remarkable Subspaces and the Four General Products, Forms and Norms</a></td>
+</tr>
+<tr>
+<td>the $\natural$-regular and $\natural$-degenerate partition, the unit group, the null cone, the criterion of invertibility</td>
+<td><a href="../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html">N-Regularity and N-Degeneracy in the Biquaternion Algebra</a></td>
+</tr>
+<tr>
+<td>the Krein partition, the two sectors of the Krein norm, the indefinite geometry</td>
+<td><a href="../articles_maths/kr-regularity-and-degeneracy-in-the-biquaternion-algebra.html">Kr-Regularity and Degeneracy in the Biquaternion Algebra</a></td>
+</tr>
+<tr>
+<td>the algebraic norm of a form and its distinction from the topological norm</td>
+<td><a href="../articles_maths/the-norm-defined-by-a-form.html">The Norm Defined by a Form</a></td>
+</tr>
+<tr>
+<td>the one topological norm of the space and its square root</td>
+<td><a href="../articles_maths/the-euclidean-topology-of-the-biquaternion-algebra.html">The Euclidean Topology of the Biquaternion Algebra</a></td>
+</tr>
+<tr>
+<td>the unqualified <em>regular</em> and <em>degenerate</em>, which are spectral and not norm-theoretic</td>
+<td><a href="../articles_maths/the-spectrum.html">The Spectrum</a></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The rows are the entry's order.</strong> The four forms first, because they are the objects; then the count of the four, which is one lemma; then the signatures, which are what a restriction can change; then the groups, which are what a form preserves; then the four partitions, which are what a form cuts.</p>
+<h2 id="the-results-in-brief">The Results in Brief</h2>
+<h3 id="two-arities-of-one-letter">Two Arities of One Letter</h3>
+<p><strong>A form takes two elements and a norm takes one, and one letter serves both.</strong></p>
+<p>$$
+2P(\tilde Q_1,\tilde Q_2)=\mathrm{Tr}\bigl(\tilde Q_1\tilde Q_2\bigr),\qquad
+2N(\tilde Q_1,\tilde Q_2)=\mathrm{Tr}\bigl(\tilde Q_1^{\natural}\tilde Q_2\bigr),
+$$
+$$
+2H(\tilde Q_1,\tilde Q_2)=\mathrm{Tr}\bigl(\tilde Q_1\tilde Q_2^{*}\bigr),\qquad
+2\mathrm{Kr}(\tilde Q_1,\tilde Q_2)=\mathrm{Tr}\bigl(\tilde Q_1^{\natural}\tilde Q_2^{*}\bigr),
+$$</p>
+<p>in the $2\times2$ image, where the trace of the central part is twice the scalar coefficient.</p>
+<p><strong>The distinction is not cosmetic, and the two arities carry different laws.</strong> A form of two elements is symmetric or conjugate-symmetric and bilinear or sesquilinear; a norm of one element is a quadratic function of the coordinates. Multiplicativity belongs to the second arity alone:</p>
+<p>$$
+N(\tilde Q_1\tilde Q_2)=N(\tilde Q_1)N(\tilde Q_2)\qquad\text{is a law about one element at a time.}
+$$</p>
+<p><strong>There is no law of the form of the same shape.</strong> The candidate $N(\tilde Q_1\tilde Q_2,\tilde Q_3\tilde Q_4)=N(\tilde Q_1,\tilde Q_3)N(\tilde Q_2,\tilde Q_4)$ would need the middle product $\tilde Q_2\tilde Q_3$ to be central, and the algebra is not commutative; it fails on generic quadruples.</p>
+<h3 id="the-four-forms">The Four Forms</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>form</th>
+<th>letter</th>
+<th>$\mathrm{Sc}$ of</th>
+<th>coordinates</th>
+<th>symmetry</th>
+<th>Gram</th>
+<th>signature over $\mathbb{R}$</th>
+<th>null set</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the plain form</td>
+<td>$P$</td>
+<td>$\tilde Q_1\tilde Q_2$</td>
+<td>$Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)$</td>
+<td>symmetric</td>
+<td>$\mathrm E$</td>
+<td>$(4,4)$</td>
+<td>the complex cone</td>
+</tr>
+<tr>
+<td>the quaternionic form</td>
+<td>$N$</td>
+<td>$\tilde Q_1^{\natural}\tilde Q_2$</td>
+<td>$Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2)$</td>
+<td>symmetric</td>
+<td>$\mathrm I_4$</td>
+<td>$(4,4)$</td>
+<td>$\mathcal N$, the zero-divisor cone</td>
+</tr>
+<tr>
+<td>the Hermitian form</td>
+<td>$H$</td>
+<td>$\tilde Q_1\tilde Q_2^{*}$</td>
+<td>$Q_{1t}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})$</td>
+<td>conjugate-symmetric</td>
+<td>$\mathrm I_4$</td>
+<td>$(8,0)$</td>
+<td>$\{0\}$</td>
+</tr>
+<tr>
+<td>the Krein form</td>
+<td>$\mathrm{Kr}$</td>
+<td>$\tilde Q_1^{\natural}\tilde Q_2^{*}$</td>
+<td>$Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})$</td>
+<td>conjugate-symmetric</td>
+<td>$\mathrm E$</td>
+<td>$(2,6)$</td>
+<td>$\mathcal K$, the Krein cone</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The four are distinct as functions of two elements, and one pair separates them.</strong> At $\tilde Q_1=\vec e_x$ and $\tilde Q_2=\vec e_x+i\vec e_x$ the values are $-(1+i)$, $1+i$, $1-i$ and $-(1-i)$: four different complex numbers.</p>
+<p><strong>The count of four is one lemma about the twelve operations.</strong> The symmetrisation of a family keeps the scalar part of its general product, and the antisymmetrisation kills it. So the four general products and their four symmetric parts carry the four forms two by two, and the four antisymmetric parts carry the zero form. A bracket has no scalar part, and a measure cannot be obtained from one.</p>
+<h3 id="what-each-slot-decides">What Each Slot Decides</h3>
+<p><strong>The second slot decides whether the value is complex or real.</strong></p>
+<p>$$
+K_2=\mathrm{id}\iff\text{bilinear}\iff\text{the norm lands in }\mathbb{C},\qquad
+K_2={}^{*}\iff\text{sesquilinear}\iff\text{the norm lands in }\mathbb{R}.
+$$</p>
+<p><strong>The first slot decides the Gram matrix, and through it the signature and the definiteness on each subspace.</strong></p>
+<p>$$
+K_1=\mathrm{id}\iff\text{Gram }\mathrm E\iff\text{the vector part enters with a minus},\qquad
+K_1={}^{\natural}\iff\text{Gram }\mathrm I_4\iff\text{the vector part enters with a plus}.
+$$</p>
+<p><strong>The two divisions are independent and their product is the four.</strong> Two forms share a symmetry and two share a Gram matrix, and no two share both: $\{P,N\}$ and $\{H,\mathrm{Kr}\}$ are the two symmetries, $\{P,\mathrm{Kr}\}$ and $\{N,H\}$ the two Gram matrices, and each form is one intersection.</p>
+<p><strong>One structural consequence is worth naming here.</strong> Every one of the four forms is the plain form with a conjugation inserted in one or both slots:</p>
+<p>$$
+N(\tilde Q_1,\tilde Q_2)=P(\tilde Q_1^{\natural},\tilde Q_2),\qquad
+H(\tilde Q_1,\tilde Q_2)=P(\tilde Q_1,\tilde Q_2^{*}),\qquad
+\mathrm{Kr}(\tilde Q_1,\tilde Q_2)=P(\tilde Q_1^{\natural},\tilde Q_2^{*}).
+$$</p>
+<p><strong>So the four measures are one pairing read against the mirror of an element.</strong> The two real ones are exactly those in which the <em>second</em> slot is an adjoint, and the reality of the value is the reality of that adjoint.</p>
+<h3 id="the-four-norms">The Four Norms</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>algebraic norm</th>
+<th>letter</th>
+<th>value</th>
+<th>multiplicative</th>
+<th>definite</th>
+<th>vanishing set</th>
+<th>job</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\sum_\mu\varepsilon_\mu Q_\mu^{2}$</td>
+<td>$P$</td>
+<td>$\mathbb{C}$</td>
+<td>no</td>
+<td>—</td>
+<td>the complex cone, dim $6$</td>
+<td>the pairing, read on the diagonal</td>
+</tr>
+<tr>
+<td>$\sum_\mu Q_\mu^{2}$</td>
+<td>$N$</td>
+<td>$\mathbb{C}$</td>
+<td><strong>yes</strong></td>
+<td>—</td>
+<td>$\mathcal N$, dim $6$</td>
+<td>invertibility, the reduced norm, the interval</td>
+</tr>
+<tr>
+<td>$\sum_\mu\lvert Q_\mu\rvert^{2}$</td>
+<td>$H$</td>
+<td>$\mathbb{R}$</td>
+<td>no</td>
+<td><strong>yes</strong></td>
+<td>$\{0\}$</td>
+<td>the topological norm, the weight</td>
+</tr>
+<tr>
+<td>$\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}$</td>
+<td>$\mathrm{Kr}$</td>
+<td>$\mathbb{R}$</td>
+<td>no</td>
+<td>no</td>
+<td>$\mathcal K$, dim $7$</td>
+<td>the indefinite geometry, the constraint</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Two of the four have a property the others lack, and the two properties are different.</strong> The quaternionic norm is the determinant of the $2\times2$ image, hence multiplicative; the Hermitian norm is a sum of four non-negative terms, hence definite. Each fails the property of the other, and one substitution each settles it:</p>
+<p>$$
+N\bigl(\vec e_x+i\vec e_y\bigr)=0\quad\text{though}\quad\vec e_x+i\vec e_y\neq0,
+$$
+$$
+H\bigl(\vec e_x+i\vec e_y\bigr)=2,\qquad \bigl(\vec e_x+i\vec e_y\bigr)^{2}=0,\qquad H\bigl(0\bigr)=0\neq2\cdot2 .
+$$</p>
+<p><strong>The second refutation is the sharper one, and it is not a violation.</strong> $H$ is not multiplicative and cannot be: $H$ is a measure of an element, and the product of two elements is measured by the quaternionic norm. The two questions — <em>how large</em> and <em>is it invertible</em> — are answered by different functions.</p>
+<h3 id="the-signatures-at-three-levels">The Signatures at Three Levels</h3>
+<p><strong>A signature is a statement about one level, and the four forms have three levels.</strong></p>
+<ul>
+<li>the <strong>complex form</strong>: a Gram matrix and a complex rank;</li>
+<li>its <strong>realification</strong>: the form on the eight real coordinates, where a symmetric bilinear form of complex rank $n$ becomes the split $(n,n)$ and a Hermitian form of inertia $(p,q)$ doubles to $(2p,2q)$;</li>
+<li>its <strong>restriction</strong>: the form on a real subspace, which has a signature of its own and may be definite where the form is not.</li>
+</ul>
+<p><strong>The three levels give three different answers for the same form.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>form</th>
+<th>complex Gram</th>
+<th>realification</th>
+<th>on $\mathbb{B}_{\Phi}$</th>
+<th>on $\mathbb{B}_{\Psi}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$P$</td>
+<td>$\mathrm E$</td>
+<td>$(4,4)$</td>
+<td>$(0,4)$</td>
+<td>$(4,0)$</td>
+</tr>
+<tr>
+<td>$N$</td>
+<td>$\mathrm I_4$</td>
+<td>$(4,4)$</td>
+<td>$(3,1)$</td>
+<td>$(1,3)$</td>
+</tr>
+<tr>
+<td>$H$</td>
+<td>$\mathrm I_4$</td>
+<td>$(8,0)$</td>
+<td>$(4,0)$</td>
+<td>$(4,0)$</td>
+</tr>
+<tr>
+<td>$\mathrm{Kr}$</td>
+<td>$\mathrm E$</td>
+<td>$(2,6)$</td>
+<td>$(1,3)$</td>
+<td>$(1,3)$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The two bilinear forms are neutral on the algebra and definite on a sector; the Hermitian one is definite everywhere; the Krein one is indefinite everywhere.</strong> A reader who carries $(4,4)$ into a statement about spacetime has changed the object, and a reader who carries $(0,4)$ into a statement about the algebra has changed it in the other direction.</p>
+<h3 id="the-restriction-to-the-sectors-and-the-subspaces">The Restriction to the Sectors and the Subspaces</h3>
+<p><strong>On the two sectors the four forms coincide in pairs, with a sign.</strong></p>
+<p>$$
+P=-H,\qquad \mathrm{Kr}=-N\quad\text{on }\mathbb{B}_{\Phi};\qquad
+P=H,\qquad \mathrm{Kr}=N\quad\text{on }\mathbb{B}_{\Psi}.
+$$</p>
+<p><strong>The sign is the sector, and the identity is a form-level statement.</strong> It does not say that the four products agree there; the products are the subject of the previous entry and they do not.</p>
+<p><strong>On the six subspaces the pairing of the four changes.</strong> The Krein norm is positive definite of signature $(2,0)$ on the centre and negative definite of signature $(0,6)$ on the vector subspace; the plain and the quaternionic forms are $(1,1)$ on the centre and $(3,3)$ on the vector subspace; and the Hermitian form is definite on every one of the six.</p>
+<p><strong>The four-dimensional real-type subspaces carry the four signatures the corpus uses.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>subspace</th>
+<th>$P$</th>
+<th>$N$</th>
+<th>$H$</th>
+<th>$\mathrm{Kr}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the real quaternions $\mathbb{R}^{4}$</td>
+<td>$(1,3)$</td>
+<td>$(4,0)$</td>
+<td>$(4,0)$</td>
+<td>$(1,3)$</td>
+</tr>
+<tr>
+<td>$i\mathbb{R}^{4}$</td>
+<td>$(3,1)$</td>
+<td>$(0,4)$</td>
+<td>$(4,0)$</td>
+<td>$(1,3)$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{\Phi}$, the material sector</td>
+<td>$(0,4)$</td>
+<td>$(3,1)$</td>
+<td>$(4,0)$</td>
+<td>$(1,3)$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{\Psi}$, the informational sector</td>
+<td>$(4,0)$</td>
+<td>$(1,3)$</td>
+<td>$(4,0)$</td>
+<td>$(1,3)$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The table states the fact the entry turns on.</strong> Each slice carries a form with one time direction and three space directions, and the letter that carries it changes: it is $P$ on the real quaternions, of signature $(1,3)$, and it is $N$ on the material sector, of signature $(3,1)$. The two are the same form with the overall sign reversed. The interval is a signature, and the letter records where the imaginary unit sits among the coordinates.</p>
+<h3 id="the-four-collapse-to-two-on-the-real-part">The Four Collapse to Two on the Real Part</h3>
+<p><strong>For real coefficients the conjugation is the identity, so two pairs of forms coincide.</strong></p>
+<p>$$
+P=\mathrm{Kr},\qquad N=H\qquad(\tilde Q_1,\tilde Q_2\ \text{real}).
+$$</p>
+<p><strong>The collapse is exact and it is a loss.</strong> A computation restricted to real coefficients sees two measures, one complex-valued and one real-valued, and it cannot separate the plain from the Krein or the quaternionic from the Hermitian. The complex structure is the carrier of the distinction, and the same phenomenon appears on the twelve operations and on the ten that survive.</p>
+<p><strong>The consequence for a check is a caution.</strong> An identity verified on real elements and claimed for the four forms is a claim about two, and a property that holds for $N$ and fails for $H$ — or the reverse — is invisible there.</p>
+<h3 id="the-isometry-groups">The Isometry Groups</h3>
+<p><strong>A form is known by the operators that preserve it, and the four groups are classical.</strong></p>
+<p>$$
+\mathrm{Isom}(P)=O_4(\mathbb{C}),\quad
+\mathrm{Isom}(N)=O_4(\mathbb{C}),\quad
+\mathrm{Isom}(H)=\mathrm{U}(4),\quad
+\mathrm{Isom}(\mathrm{Kr})=\mathrm{U}(1,3),
+$$</p>
+<p>of real dimensions $12$, $12$, $16$ and $16$.</p>
+<p><strong>The two bilinear groups carry the same name for a reason, and the two sesquilinear ones do not.</strong> The sign matrix is congruent to the identity over $\mathbb{C}$,</p>
+<p>$$
+\mathrm E=S^{\mathsf T}S,\qquad S=\operatorname{diag}(1,i,i,i),
+$$</p>
+<p>so the two bilinear forms are conjugate copies and one group serves both. A Hermitian congruence preserves inertia, and $\mathrm E$ has inertia $(1,3)$ while $\mathrm I_4$ has $(4,0)$, so no invertible $S$ carries one to the other and $\mathrm U(1,3)$ is not a conjugate of $\mathrm U(4)$.</p>
+<p><strong>The quaternion conjugation lies in all four groups.</strong> It is the matrix $\mathrm E$ in the coordinate basis, $\mathrm E^{2}=\mathrm I_4$, and $\mathrm E$ preserves each of the four forms; the fundamental symmetry of the indefinite structure is therefore a symmetry of every measure, and not a property of the Krein form alone.</p>
+<h3 id="the-qualified-regular-and-degenerate-pairs">The Qualified Regular and Degenerate Pairs</h3>
+<p><strong>Each letter cuts the algebra in two by the vanishing of its norm.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>letter</th>
+<th>degenerate set</th>
+<th>$\dim_{\mathbb R}$</th>
+<th>contains a unit</th>
+<th>equals the non-units</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$P$</td>
+<td>the complex cone $\{P=0\}$</td>
+<td>$6$</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$N$</td>
+<td>$\mathcal N$, the origin together with the zero divisors</td>
+<td>$6$</td>
+<td>no</td>
+<td><strong>yes</strong></td>
+</tr>
+<tr>
+<td>$H$</td>
+<td>$\{0\}$</td>
+<td>$0$</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$\mathrm{Kr}$</td>
+<td>$\mathcal K$, the Krein cone</td>
+<td>$7$</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Only the $N$ cut is the invertibility partition.</strong> The witness is one element: $e_t+\vec e_x$ is a unit with $P=\mathrm{Kr}=0$ and $N=2$, so the plain and the Krein norms vanish on an invertible element; $H$ is a sum of four non-negative terms and vanishes only at the origin.</p>
+<p><strong>The four degenerate sets are pairwise distinct, and four elements witness it.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>element</th>
+<th>$P$</th>
+<th>$N$</th>
+<th>$\mathrm{Kr}$</th>
+<th>what it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e_t+\vec e_x$</td>
+<td>$0$</td>
+<td>$2$</td>
+<td>$0$</td>
+<td>a unit</td>
+</tr>
+<tr>
+<td>$e_t+i\vec e_x$</td>
+<td>$2$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>a zero divisor</td>
+</tr>
+<tr>
+<td>$\vec e_x+i\vec e_y$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$-2$</td>
+<td>a zero divisor</td>
+</tr>
+<tr>
+<td>$\sqrt2\,e_t+\vec e_x+i\vec e_y$</td>
+<td>$2$</td>
+<td>$2$</td>
+<td>$0$</td>
+<td>a unit</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The words without a letter are different words.</strong> <em>Regular</em> alone is <strong>spectrally regular</strong>, $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}\neq0$, and <em>degenerate</em> alone is <strong>spectrally degenerate</strong>, $B^{2}=0$. The letter is never omitted when the four norms are meant, because the spectral condition and the norm condition are independent: the entry before this one is about the first, and this one is about the second.</p>
+<h3 id="the-four-are-not-the-only-four">The Four Are Not the Only Four</h3>
+<p><strong>Beside the four norms, the corpus reads one element four ways, and the two lists must not be confused.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>reading</th>
+<th>object</th>
+<th>what it says</th>
+<th>where it fails</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>norm</td>
+<td>$N(\tilde R_\Phi)=\sum_\mu R_\mu^{2}$</td>
+<td>the value and its sign; the mass shell as a level set</td>
+<td>detects no polarisation count and no label</td>
+</tr>
+<tr>
+<td>rank</td>
+<td>$\operatorname{rank}\mathsf M_2(\tilde R_\Phi\tilde R_\Phi^{*})$</td>
+<td>the count of polarisations, two massive and one massless</td>
+<td>fixes only whether the mass vanishes</td>
+</tr>
+<tr>
+<td>charge</td>
+<td>the compact slice $\{\tilde U:\tilde U\tilde U^{*}=e_t\}\cong\mathrm U(2)$</td>
+<td>the discrete internal label</td>
+<td>says nothing about the cone</td>
+</tr>
+<tr>
+<td>scale</td>
+<td>the polar modulus $r$</td>
+<td>the unit of length, the dilation potential</td>
+<td>is a unit and not a level set</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Only the first is the mass, and only $N$ belongs to both lists.</strong> The rank agrees with the norm on the cone and is blind to the value of the mass; the charge is defined only off the cone; the scale is the unit the mass is measured in.</p>
+<h2 id="the-interpretations">The Interpretations</h2>
+<h3 id="i7a-a-form-of-two-elements-is-an-amplitude-its-diagonal-is-a-number">I.7.a — A Form of Two Elements Is an Amplitude; Its Diagonal Is a Number</h3>
+<p><strong>Read:</strong> the four forms take two elements and return a scalar, and the four norms are those forms at the two equal arguments.</p>
+<p><strong>The two objects behave differently in a theory.</strong> A function of two elements is what a theory evaluates on a pair — a transition, an overlap, an expectation. A function of one element is what a theory reads off a single object — a size, a mass, a normalisation. The algebra supplies both from one letter, and the passage between them is the diagonal.</p>
+<p><strong>The diagonal is not a lossless restriction.</strong> The form knows the pair and the norm knows one element; a form that vanishes on the diagonal can be non-zero off it, and a form that is non-zero on the diagonal can vanish on a pair. The $\mathrm{Kr}$ form is the clearest case: $\mathrm{Kr}(\tilde Q)=0$ on the whole Krein cone, while $\mathrm{Kr}(\tilde Q_1,\tilde Q_2)$ is non-zero for a generic pair of null elements.</p>
+<p><strong>The physical reading is that a theory needs two arities and often confuses them.</strong> The probability of a transition is a value of a form at two elements; the normalisation of a state is a value of a norm at one. A formalism that uses one word for both is using one symbol for two functions, and the four-letter notation is what keeps them apart.</p>
+<p><strong>The boundary.</strong> The reading is not a claim that every pairing is an amplitude. It is the claim that the arity is a real distinction, that the algebra carries it, and that a law proved at one arity does not transfer to the other.</p>
+<h3 id="i7b-the-weight-the-one-definite-measure-and-the-one-distance">I.7.b — The Weight: the One Definite Measure and the One Distance</h3>
+<p><strong>Read:</strong> the Hermitian norm is positive definite, $H(\tilde Q)>0$ for $\tilde Q\neq0$, of signature $(8,0)$ on the real algebra.</p>
+<p><strong>One property follows at once and no other norm has it.</strong> The square root is a norm in the topological sense:</p>
+<p>$$
+\lVert\tilde Q\rVert^{2}=H(\tilde Q)=\sum_\mu\lvert Q_\mu\rvert^{2},
+$$</p>
+<p>and a norm gives distance, balls, convergence, bounded operators and a completion.</p>
+<p><strong>The physical reading is that only this measure can be normalised.</strong> A probability needs a positive number that can be divided by its total; a state needs a sphere to live on; a limit needs a topology. The three requirements are one requirement, and $H$ is the only one of the four that meets it.</p>
+<p><strong>The measure is blind to the sector, and that blindness is exact.</strong></p>
+<p>$$
+H=\lVert\cdot\rVert^{2}\ \text{on both sectors};\qquad P=-H\ \text{on }\mathbb{B}_{\Phi},\quad P=H\ \text{on }\mathbb{B}_{\Psi}.
+$$</p>
+<p><strong>So the sign of the sector is not visible to the weight.</strong> A material element and an informational element of the same coordinate moduli have the same weight, and the difference between them is a difference of a bilinear form and not of the measure. This is the precise content of the corpus's rule that the sesquilinear layer does not carry the sector.</p>
+<p><strong>The form supplies the weight and not the state.</strong> The pure states are the minimal Hermitian idempotents, $\tfrac12(e_t+i\vec u)$ with $\vec u$ a real unit vector; the weight pairs a state with an observable and returns a number. The state carries an axis and no phase, and the phase is not a value of $H$.</p>
+<p><strong>The boundary.</strong> That the definite Hermitian form is physical probability is the hypothesis of the informational sector and not a theorem of the algebra. The algebra proves that a definite pairing exists and that it is unique among the four.</p>
+<h3 id="i7c-the-interval-the-one-multiplicative-norm">I.7.c — The Interval: the One Multiplicative Norm</h3>
+<p><strong>Read:</strong> the quaternionic norm is multiplicative, $N(\tilde Q_1\tilde Q_2)=N(\tilde Q_1)N(\tilde Q_2)$, and it is the determinant of the $2\times2$ image.</p>
+<p><strong>Multiplicativity is a law of composition, and it has one immediate consequence.</strong> The causal type of a composite is the product of the causal types; the units, the zero divisors and the null set are each closed under multiplication; and the level set $N=1$ is a group.</p>
+<p><strong>The physical reading is that this is the only measure that survives a product.</strong> A theory that composes operations and asks for an invariant has exactly one candidate, and the candidate is the determinant. The other three measures are destroyed by composition: the weight of a product is not the product of the weights, and the plain norm of a product is not the product of the plain norms.</p>
+<p><strong>The determinant reading makes the name precise.</strong> $N(\tilde Q)=\det\mathsf M_2(\tilde Q)$, so the norm is the volume scale of the element as a linear map: the image of the unit cell has $N$ times the volume. A composite scales volumes by the product, which is multiplicativity read geometrically.</p>
+<p><strong>On the material sector the same number is the interval.</strong></p>
+<p>$$
+N(\tilde R_\Phi)=-{r'_t}^{2}+x^{2}+y^{2}+z^{2},
+$$</p>
+<p>of signature $(3,1)$, with the light cone as its zero set and the hyperboloids $N=-m^{2}c^{2}$ as its level sets. One function, two readings: a volume scale on the algebra, an interval on the sector.</p>
+<p><strong>The boundary.</strong> The interval is real on the four-dimensional real-type subspaces and complex on the centre and the vector subspace. The mass shell is a level set on the sector, not a value of the form on the algebra, and the entry derives no mass spectrum from it.</p>
+<h3 id="i7d-the-pairing-the-trace-form-and-the-sign-of-the-sector">I.7.d — The Pairing: the Trace Form and the Sign of the Sector</h3>
+<p><strong>Read:</strong> the plain form is the invariant pairing of the algebra, $2P(\tilde Q_1,\tilde Q_2)=\mathrm{Tr}(\tilde Q_1\tilde Q_2)$, and its value is complex in general.</p>
+<p><strong>A pairing may be complex; a measure must be real, and this is where the alphabet divides.</strong> The two forms with the star in the second slot have real values; the two without it have complex values. So the plain form is not a measure of size but a pairing of two elements, and the distinction is the second slot and not a convention.</p>
+<p><strong>On the sectors the pairing is a signed square and the sign is the sector.</strong></p>
+<p>$$
+P(\tilde R_\Phi)=-\bigl({r'_t}^{2}+x^{2}+y^{2}+z^{2}\bigr)<0,\qquad
+P(\tilde H_\Psi)={h_t}^{2}+s_x^{2}+s_y^{2}+s_z^{2}>0.
+$$</p>
+<p><strong>The physical reading is that the pairing is a flag and not a metric.</strong> It says which half an element belongs to and measures neither half: it is minus the Euclidean square on the material side and plus it on the informational side, so its sign is the sector and its modulus is the weight.</p>
+<p><strong>The pairing also crosses the split.</strong> For one element of each sector the scalar part is purely imaginary,</p>
+<p>$$
+\mathrm{Sc}(\tilde R_\Phi\tilde H_\Psi)=i\bigl(r'_t h_t-(\vec v,\vec s)\bigr),
+$$</p>
+<p>the Minkowski pairing of the two four-vectors multiplied by $i$, with the relative sign of time and space inside the bracket. The same two elements paired by $N$ give the Euclidean pairing, $i(r'_t h_t+(\vec v,\vec s))$; the difference of the two is the sign of the spatial term, and that sign is the first slot.</p>
+<p><strong>The sharpest warrant for the word <em>flag</em> is one comparison.</strong> $P(e_t+\vec e_x)=0$ on a unit, and $P(e_t+i\vec e_x)=2$ on a zero divisor. A function that vanishes on an invertible element and does not vanish on a non-invertible one decides no invertibility, so it cannot be the metric of a theory of reversible operations.</p>
+<p><strong>The boundary.</strong> The complex cone $\{P=0\}$ is not the light cone and not the zero-divisor cone. It is a six-dimensional complex quadric that cuts across the units and the non-units alike, and no physical set is its image.</p>
+<h3 id="i7e-the-volume-the-signed-content-and-the-krein-cone">I.7.e — The Volume: the Signed Content and the Krein Cone</h3>
+<p><strong>Read:</strong> the Krein norm is real and indefinite, of signature $(2,6)$ on the algebra, and it is the difference of the two contents of the centre–vector split.</p>
+<p>$$
+\mathrm{Kr}(\tilde Q)=\lvert Q_t\rvert^{2}-\lvert\vec Q\rvert^{2}.
+$$</p>
+<p><strong>The reading is a signed content.</strong> The Hermitian norm adds the squared moduli of the coordinates; the Krein one adds them with a minus on the three vector coordinates. The first counts the content of the element, the second counts the difference between its temporal content and its spatial content, and the surface where the two balance is the cone $\mathcal K=\{\lvert c\rvert=\lvert v\rvert\}$, of real dimension seven.</p>
+<p><strong>Only one of the two real measures is signed, and that is the whole of the name.</strong> A weight is a content and has no sign problem; a signed content is a volume with an orientation, and its sign says which side of the cone the element is on.</p>
+<p><strong>The indefinite form normalises nothing, and the geometry shows it.</strong> The level sets are not spheres but hyperboloids, and they split into two components of different topology:</p>
+<p>$$
+\{\mathrm{Kr}=1\}\cong S^{1}\times\mathbb{R}^{6},\qquad
+\{\mathrm{Kr}=-1\}\cong\mathbb{R}^{2}\times S^{5}.
+$$</p>
+<p><strong>The physical reading is that a signed content fixes a constraint and not a state.</strong> A gauge calibration distinguishes two kinds of direction and leaves the normalisation to a choice; it does not prepare a state, and its form is the form of that freedom. The signature is the difference: a definite form counts states, an indefinite one counts a constraint.</p>
+<p><strong>The fundamental symmetry makes the reading consistent.</strong> The quaternion conjugation is an isometry of $\mathrm{Kr}$ with $\mathrm{Kr}(\tilde Q^{\natural},\tilde Q^{\natural})=\mathrm{Kr}(\tilde Q,\tilde Q)$, and its eigenspaces are the centre and the vector subspace, of complex dimensions one and three, on which the sign is opposite. So $\mathrm{Kr}(\tilde Q_1,\tilde Q_2)=H(\tilde Q_1^{\natural},\tilde Q_2)$: the signed measure is the weight with the mirror inserted in the first slot, and this is the exact sense in which an indefinite geometry is a definite one with a chosen mirror.</p>
+<p><strong>The boundary.</strong> The form is a form. It derives no gauge group, no coupling and no field content; the indefinite structure at large belongs to the geometry block, and the cone $\mathcal K$ is not the zero-divisor cone.</p>
+<h3 id="i7f-no-function-is-both-a-mass-and-a-probability">I.7.f — No Function Is Both a Mass and a Probability</h3>
+<p><strong>Read:</strong> no function on the algebra with $\varphi(0)=0$ is both definite and multiplicative.</p>
+<p><strong>The proof is one line and it is the whole entry.</strong></p>
+<p>$$
+(e_t+i\vec e_x)(e_t-i\vec e_x)=0,\qquad e_t\pm i\vec e_x\neq0,
+$$</p>
+<p>so a multiplicative $\varphi$ with $\varphi(0)=0$ gives $\varphi(e_t+i\vec e_x)\varphi(e_t-i\vec e_x)=0$; one factor vanishes on a non-zero element, and a definite function cannot vanish there.</p>
+<p><strong>The physical reading is that a theory of one algebra needs two different norms.</strong> The interval is the measure that survives composition, and it vanishes on the light cone. The weight is the measure that never vanishes, and it is destroyed by composition. A formalism that wants both a causal structure and a probability has to carry both, and it cannot identify them.</p>
+<p><strong>This is also the precise reason the biquaternions are not a normed division algebra.</strong> In $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ and $\mathbb{O}$ the four normed division algebras of the Hurwitz theorem, the two senses coincide because there are no zero divisors. The complexification creates them, and the two senses separate.</p>
+<p><strong>The obstruction is not non-commutativity, and the corpus's own examples say so.</strong> The quaternions are non-commutative and $q\bar q$ is definite and multiplicative; the dual numbers are commutative and admit no definite multiplicative function, since $\varphi(\varepsilon)^{2}=\varphi(0)=0$ forces $\varphi(\varepsilon)=0$. The obstruction is the zero divisor, and the zero divisors come from the complexification.</p>
+<p><strong>The boundary.</strong> The proposition is about functions on the algebra, not about physical quantities. That the interval is the mass and the weight is the probability is the sector dictionary; the impossibility of one function being both is the algebra's.</p>
+<h3 id="i7g-the-interval-is-a-signature-not-a-letter">I.7.g — The Interval Is a Signature, Not a Letter</h3>
+<p><strong>Read:</strong> the four-dimensional real-type subspaces carry the four signatures, and $P$ is $(1,3)$ on the real quaternions while $N$ is $(3,1)$ on the material sector.</p>
+<p><strong>The letter that carries the interval is decided by the imaginary unit, and the arithmetic is one line.</strong> A norm written $\sum_\mu Q_\mu^{2}$ gives a plus for a real coordinate and a minus for an imaginary one. In $\mathbb{B}_{\Phi}$ the scalar coordinate is imaginary and the three vector coordinates are real, so $N=-{r'_t}^{2}+x^{2}+y^{2}+z^{2}$: one time direction, three space directions. In $\mathbb{B}_{\Psi}$ the three vector coordinates are imaginary and the scalar one real, so $N={h_t}^{2}-s_x^{2}-s_y^{2}-s_z^{2}$: the same split with the other sign. On the real quaternions no coordinate is imaginary, $\sum_\mu Q_\mu^{2}$ is a sum of four squares, and the minus must be supplied by the sign matrix: the interval there is $P=t^{2}-x^{2}-y^{2}-z^{2}$.</p>
+<p><strong>The physical reading is that the metric is a signature and the alphabet is a convention.</strong> A theory that puts its spacetime in the material sector reads the interval off $N$; a theory that works on the real grade reads the same interval off $P$. The two are not two metrics. One is $\sum Q^{2}$ on a slice with an imaginary time coordinate, the other is the sign matrix on a slice with none.</p>
+<p><strong>Central multiplication moves between the sectors and reverses the two bilinear measures.</strong></p>
+<p>$$
+i\mathbb{B}_{\Phi}=\mathbb{B}_{\Psi},\qquad
+P(i\tilde Q)=-P(\tilde Q),\qquad
+N(i\tilde Q)=-N(\tilde Q),\qquad
+H(i\tilde Q)=H(\tilde Q),\qquad
+\mathrm{Kr}(i\tilde Q)=\mathrm{Kr}(\tilde Q).
+$$</p>
+<p><strong>So the imaginary unit flips the two complex measures and is invisible to the two real ones.</strong> The interval of the material sector and the interval of the informational sector are one form read with opposite values, and the two real measures cannot tell the sectors apart at all.</p>
+<p><strong>The comparison also shows why the two are easy to exchange in print.</strong> On the material sector $P=-H$ and $\mathrm{Kr}=-N$, so each measure is minus its partner there; a sign dropped in that double bookkeeping turns a metric into a weight without changing a symbol.</p>
+<p><strong>The boundary.</strong> The observation is about signatures on real subspaces. On the whole algebra over $\mathbb{C}$ both bilinear forms are neutral, $(4,4)$, and the interval of a sector is a restriction and not a global object.</p>
+<h3 id="i7h-the-mass-shell-is-a-level-set-not-a-spectrum">I.7.h — The Mass Shell Is a Level Set, Not a Spectrum</h3>
+<p><strong>Read:</strong> on the material sector $N=-{r'_t}^{2}+x^{2}+y^{2}+z^{2}$, so the level set $N=-m^{2}c^{2}$ is the hyperboloid of four-vectors of mass $m$.</p>
+<p><strong>The level set is the whole of what the norm says about the mass.</strong> It fixes no value — the value is the label of the level set — it fixes no spin, no charge and no multiplicity.</p>
+<p><strong>The physical reading is that the norm and the spectrum answer different questions.</strong> The spectrum of the previous entry is the pair $\lambda_\pm=Q_t\pm iB$; the norm is the product $\lambda_+\lambda_-=Q_t^{2}+B^{2}=N$. The two invariants of an element are the trace and the norm, and the norm is the product of the two eigenvalues of the left multiplication.</p>
+<p><strong>So the mass shell is one of the two symmetric functions of the spectrum and not a third object.</strong> A level set of $N$ is a level set of the product of the two eigenvalues, and the mass is the value of that product on the sector.</p>
+<p><strong>The reading also fixes what the other three measures cannot do.</strong> The rank agrees with $N$ about the cone and says nothing about the value; the weight says nothing about the cone; the plain and Krein norms vanish on units and so say nothing about either.</p>
+<p><strong>The boundary.</strong> The mass shell is a level set of a form on a sector. The entry derives no mass spectrum, no mass ratio and no quantisation of the level sets.</p>
+<h3 id="i7i-the-group-is-the-measure">I.7.i — The Group Is the Measure</h3>
+<p><strong>Read:</strong> the four isometry groups are $O_4(\mathbb{C})$, $O_4(\mathbb{C})$, $\mathrm U(4)$ and $\mathrm U(1,3)$, of real dimensions $12$, $12$, $16$ and $16$.</p>
+<p><strong>A measure is known by what preserves it, and the two properties that matter physically are compactness and signature.</strong> $\mathrm U(4)$ is compact; $\mathrm U(1,3)$ is not; $O_4(\mathbb{C})$ is complex and imposes no reality condition at all.</p>
+<p><strong>The physical reading is that compactness is the difference between a probability theory and an indefinite one.</strong> A compact group has a finite invariant volume and a discrete spectrum of representations; a non-compact one has neither, and keeps a distinguished time direction instead. The passage from $\mathrm U(4)$ to $\mathrm U(1,3)$ is the passage from a state space to a constrained one, and it is decided by the Gram matrix and nothing else.</p>
+<p><strong>The two bilinear forms share their group, and that sharing is a fact about $\mathbb{C}$.</strong> The sign matrix is congruent to the identity over the complex numbers, so the two bilinear measures are the same measure in two coordinate systems. Over $\mathbb{R}$ the congruence fails, and the two real specializations of the four are different groups: $O(1,3)$ and $O(4)$.</p>
+<p><strong>On the material sector the isometry group of the interval is the Lorentz group.</strong></p>
+<p>$$
+\mathrm{Isom}\bigl(N|_{\mathbb{B}_{\Phi}}\bigr)=O(1,3).
+$$</p>
+<p>The statement is a restriction statement: it is the group of the interval on the sector, not of the quaternionic form on the algebra, and the two differ.</p>
+<p><strong>The boundary.</strong> A group of a form is not a gauge group of a theory. The entry does not claim that the gauge group of a physical model is one of the four; it claims that the measure determines its own isometries, and that the isometries are the group a theory must respect if it uses that measure.</p>
+<h3 id="i7j-the-fundamental-symmetry-sits-in-all-four-groups">I.7.j — The Fundamental Symmetry Sits in All Four Groups</h3>
+<p><strong>Read:</strong> the quaternion conjugation is the matrix $\mathrm E$ in the coordinate basis, and it preserves each of the four forms.</p>
+<p><strong>No measure distinguishes an element from its mirror.</strong> Since $\mathrm E$ is an isometry of all four, every one of the four norms takes the same value on $\tilde Q$ and on $\tilde Q^{\natural}$:</p>
+<p>$$
+P(\tilde Q^{\natural})=P(\tilde Q),\qquad N(\tilde Q^{\natural})=N(\tilde Q),\qquad H(\tilde Q^{\natural})=H(\tilde Q),\qquad \mathrm{Kr}(\tilde Q^{\natural})=\mathrm{Kr}(\tilde Q).
+$$</p>
+<p><strong>The physical reading is that the discrete operation is invisible to every measure and visible in the pairing.</strong> A norm is unchanged by the mirror; the <em>sign</em> of the vector part is what the mirror reverses, and a norm squares it away. So a discrete symmetry of this kind cannot be detected by a mass or a weight, and it shows up only in a quantity that is odd in the vector part — a bracket, or the orientation of the frame.</p>
+<p><strong>The same operator is what makes the indefinite form usable.</strong> $\mathrm E$ is the fundamental symmetry of $\mathrm{Kr}$, the operator that turns it into the definite form $H$; so the mirror is at once the symmetry of the four measures and the tool that converts the signed one into the positive one.</p>
+<p><strong>The boundary.</strong> That a measure is blind to the mirror does not make the mirror a physical symmetry. It states that the four measures cannot witness it, and it locates the witness elsewhere.</p>
+<h3 id="i7k-four-cones-and-only-one-is-the-wall">I.7.k — Four Cones, and Only One Is the Wall</h3>
+<p><strong>Read:</strong> the four norms have four different zero sets, of dimensions $6$, $6$, $0$ and $7$.</p>
+<p><strong>Only the quaternionic one is the set of the non-units, and the others vanish on units.</strong></p>
+<p>$$
+\{N=0\}=\{0\}\cup\mathcal Z,\qquad
+P(e_t+\vec e_x)=0,\qquad \mathrm{Kr}(e_t+\vec e_x)=0,\qquad \{H=0\}=\{0\}.
+$$</p>
+<p><strong>The physical reading is that reversibility has exactly one measure.</strong> The wall of the reversible region is the zero set of the determinant, and no other norm draws it. A theory that wants a cone of reversibility — a horizon of invertibility, a massless boundary — must use $N$; a theory that uses $P$ or $\mathrm{Kr}$ draws a cone that contains units and therefore cuts through the reversible region.</p>
+<p><strong>The light cone is a cut and not a null set.</strong></p>
+<p>$$
+\text{light cone}=\mathcal N\cap\mathbb{B}_{\Phi},
+$$</p>
+<p>and the two are different objects: the null set of $N$ on the algebra is six-dimensional and contains elements of both sectors, while the light cone is its trace on a four-dimensional slice.</p>
+<p><strong>The two cones that are easy to confuse are the zero-divisor cone and the Krein cone.</strong> They have dimensions six and seven, they are both real, and they are both invariant; but $\mathcal K$ contains units and $\mathcal N$ does not, so a statement about one is not a statement about the other.</p>
+<p><strong>The boundary.</strong> A zero set is a set. The entry does not claim that every element of the wall is a physical light ray, and it does not derive the signature from the cone; the direction is the other way.</p>
+<h3 id="i7l-a-real-computation-sees-two-measures">I.7.l — A Real Computation Sees Two Measures</h3>
+<p><strong>Read:</strong> on real coefficients $P=\mathrm{Kr}$ and $N=H$.</p>
+<p><strong>The collapse is a test of what a computation can conclude.</strong> A numerical check on real elements cannot separate the plain pairing from the Krein volume, and cannot separate the quaternionic norm from the Hermitian one. Two of the four functions are invisible to it.</p>
+<p><strong>The physical reading is that a real description loses the sector, and with it the shell.</strong> On the real grade the quaternionic norm is $t^{2}+x^{2}+y^{2}+z^{2}$, a sum of four squares of real numbers, so it is positive definite there and no level set of it is a mass shell. The shell exists on $\mathbb{B}_{\Phi}$, where one coordinate is imaginary; it is a property of the complex structure and not of the algebra read over $\mathbb{R}$.</p>
+<p><strong>The same lesson was stated for the operations, and the count is the same count.</strong> Ten operations and two measures from twelve and four: the complex structure contributes one distinction to each list, and a real description loses both.</p>
+<p><strong>The boundary.</strong> A real computation is not a cheaper route to the same answers; it is a computation about a different object, and the entry states which object it is about whenever a signature is quoted.</p>
+<h2 id="the-limits">The Limits</h2>
+<p><strong>The four words are a naming and not a theorem.</strong> The algebra proves that four forms exist, that they are distinct, that their Gram matrices and signatures are $(4,4)$, $(4,4)$, $(8,0)$ and $(2,6)$, that one of them is multiplicative and another definite, and that no function is both. It does not prove that these are the four quantities a physical theory evaluates.</p>
+<p><strong>Three levels of signature are kept apart throughout.</strong> A complex Gram matrix, a realified signature and a restricted signature are three statements about the same form, and the entry names the level whenever a signature is quoted. The interval of a physical sector is a restriction.</p>
+<p><strong>Two senses of norm are kept apart.</strong> The algebraic norm is a map into the ring, complex for the two bilinear forms and real for the two Hermitian ones; the topological norm is the one positive square root, $\lVert\tilde Q\rVert^{2}=H(\tilde Q)$. A norm is not a distance until a positivity is declared.</p>
+<p><strong>The coincidences on the sectors are form-level statements.</strong> $P=\pm H$ and $\mathrm{Kr}=\pm N$ on a sector do not make the four products agree there, and they do not make the Krein form a probability or the plain form an interval.</p>
+<p><strong>The entry states no dynamics, no mass value, no gauge group and no state space.</strong> The mass shell is a level set; the charge is a label of a compact group; the interval is a metric and not an equation of motion; the volume is a signed content and not a field.</p>
+<p><strong>The four partitions are four cuts and not one.</strong> A degenerate biquaternion is not the same object as a zero divisor for any letter; only $N$'s cut coincides with the non-units, and only off the origin.</p>
+<h2 id="summary">Summary</h2>
+<ul>
+<li>A form is the scalar part of a product and an algebraic norm is that form at two equal arguments; one letter serves the two arities, and the two arities obey different laws.</li>
+<li>The twelve operations carry four forms and no more: the symmetrisation keeps the scalar part of its family, the antisymmetrisation kills it, so the four general products and their symmetric parts carry the four forms two by two and the four brackets carry the zero form.</li>
+<li>The second slot decides whether the value is complex or real, and with it whether the form can supply a measure of size; the first slot decides the Gram matrix, the signature and the definiteness on each subspace.</li>
+<li>The four forms are $P=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, $N=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)$, $H=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ and $\mathrm{Kr}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})$, with Gram matrices $\mathrm E$, $\mathrm I_4$, $\mathrm I_4$ and $\mathrm E$ and realified signatures $(4,4)$, $(4,4)$, $(8,0)$ and $(2,6)$.</li>
+<li>Every one of the four is the plain form with a conjugation inserted in one or both slots; the two real forms are those whose second slot is an adjoint.</li>
+<li>The quaternionic norm is the one multiplicative norm, the determinant of the $2\times2$ image; the Hermitian norm is the one definite norm, and its square root is the only topological norm.</li>
+<li>No function is both definite and multiplicative, and the zero divisors are the reason; the split is the failure of the biquaternions to be a normed division algebra.</li>
+<li>On the material sector the four restrictions are $(0,4)$, $(3,1)$, $(4,0)$ and $(1,3)$; on the informational sector they are $(4,0)$, $(1,3)$, $(4,0)$ and $(1,3)$; on the sectors $P=-H$ and $\mathrm{Kr}=-N$ on the first and $P=H$, $\mathrm{Kr}=N$ on the second.</li>
+<li>The interval is a signature and not a letter: it is $P$, of signature $(1,3)$, on the real quaternions and $N$, of signature $(3,1)$, on the material sector, because $\sum_\mu Q_\mu^{2}$ takes a minus from an imaginary coordinate while $P$ takes it from the sign matrix.</li>
+<li>Central multiplication exchanges the two sectors and reverses both bilinear norms, $P(i\tilde Q)=-P(\tilde Q)$ and $N(i\tilde Q)=-N(\tilde Q)$, while leaving both real measures unchanged.</li>
+<li>The isometry groups are $O_4(\mathbb{C})$, $O_4(\mathbb{C})$, $\mathrm U(4)$ and $\mathrm U(1,3)$, of real dimensions $12$, $12$, $16$ and $16$; the quaternion conjugation lies in all four.</li>
+<li>Only the quaternionic cut is the invertibility partition; the plain and Krein norms vanish on units, the Hermitian norm only at the origin, and the four degenerate sets are pairwise distinct.</li>
+<li>On real coefficients the four collapse to two, $P=\mathrm{Kr}$ and $N=H$, so a real computation cannot tell the plain pairing from the Krein volume, nor the quaternionic norm from the Hermitian one.</li>
+<li>The four norms are the measures of one element; they are not the four readings of one element — norm, rank, charge and scale — and only the norm is the mass.</li>
+</ul>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$P(\tilde Q_1,\tilde Q_2)$, $\langle\cdot,\cdot\rangle$</td>
+<td>the plain form, $\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, symmetric, Gram $\mathrm E$</td>
+</tr>
+<tr>
+<td>$N(\tilde Q_1,\tilde Q_2)$, $\langle\cdot,\cdot\rangle_{\natural}$</td>
+<td>the quaternionic form, the interval, $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)$, Gram $\mathrm I_4$</td>
+</tr>
+<tr>
+<td>$H(\tilde Q_1,\tilde Q_2)$, $\langle\cdot,\cdot\rangle_{*}$</td>
+<td>the Hermitian form, the weight, $\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$, Gram $\mathrm I_4$</td>
+</tr>
+<tr>
+<td>$\mathrm{Kr}(\tilde Q_1,\tilde Q_2)$, $\langle\cdot,\cdot\rangle_{\natural*}$</td>
+<td>the Krein form, the volume, $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})$, Gram $\mathrm E$</td>
+</tr>
+<tr>
+<td>$\varphi(\tilde Q)=\varphi(\tilde Q,\tilde Q)$</td>
+<td>one letter, two arities: the form at two arguments, the algebraic norm at one</td>
+</tr>
+<tr>
+<td>$\varepsilon=(1,-1,-1,-1)$</td>
+<td>the sign vector of the quaternion conjugation, which the first slot applies</td>
+</tr>
+<tr>
+<td>$\mathrm E$, $\mathrm I_4$</td>
+<td>the two Gram matrices; $\mathrm E$ is also the matrix of the quaternion conjugation</td>
+</tr>
+<tr>
+<td>$(4,4)$, $(4,4)$, $(8,0)$, $(2,6)$</td>
+<td>the realified signatures of $P$, $N$, $H$, $\mathrm{Kr}$</td>
+</tr>
+<tr>
+<td>$O_4(\mathbb{C})$, $\mathrm U(4)$, $\mathrm U(1,3)$</td>
+<td>the isometry groups, of real dimensions $12$, $16$ and $16$</td>
+</tr>
+<tr>
+<td>the complex cone, $\mathcal N$, $\mathcal K$</td>
+<td>the null sets of $P$, of $N$ and of $\mathrm{Kr}$; that of $H$ is $\{0\}$</td>
+</tr>
+<tr>
+<td>$P$-regular, $N$-regular, $H$-regular, $\mathrm{Kr}$-regular</td>
+<td>$\Phi(\tilde Q)\neq0$ for the four letters; only $N$-regular is the unit group</td>
+</tr>
+<tr>
+<td>$\Phi$-degenerate</td>
+<td>$\Phi(\tilde Q)=0$; only the $N$ set is the non-unit set</td>
+</tr>
+<tr>
+<td>$\lVert\tilde Q\rVert$</td>
+<td>the topological norm, $\bigl(H(\tilde Q)\bigr)^{1/2}$</td>
+</tr>
+<tr>
+<td>$\mathcal Z$</td>
+<td>the zero divisors; $\{N=0\}=\{0\}\cup\mathcal Z$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<p><strong>In the mathematics corpus.</strong> The nine articles of the source table, and inside the first of them the sections <em>The Four Forms</em>, which owns the brackets and the isometry groups; <em>The Four Algebraic Norms</em>, which owns the multiplicativity and the definiteness; <em>What the Four Algebraic Norms Separate</em>, which owns the proposition that no function is both and the refutation of each of the other three; and <em>Commutativity, Multiplicativity and Definiteness</em>, which owns the correction of the common paraphrase — the obstruction is the zero divisors and not the non-commutativity.</p>
+<p><strong>In this category.</strong> <em>The Four Products: Composition, Probability, Causality and Gauge</em> supplies the products whose scalar parts the four forms are, and the two dials that index them. <em>The Spectrum and the Two Modes</em> supplies the two invariants of an element, the trace and the norm, and the pair whose product is the interval. <em>The Two Sectors: Split and the Four Bridges</em> supplies the cross-sector pairing and the restriction table.</p>
+<p><strong>In the archive, until they are rewritten.</strong> <a href="../articles_physics/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html">The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</a> is the earlier treatment of the same four labels, with the change of scalars and the four readings of one element. <a href="../articles_physics/the-krein-form-and-the-indefinite-structure.html">The Krein Form and the Indefinite Structure</a> is the indefinite geometry at large. <a href="../articles_physics/the-born-rule-from-the-hermitian-form-derivation-and-comparison.html">The Born Rule from the Hermitian Form: Derivation and Comparison</a> is the weight read as a probability. <a href="../articles_physics/the-meaning-of-n-regularity-and-degeneracy.html">The Meaning of N-Regularity and Degeneracy</a> is the invertibility cut. <a href="../articles_physics/the-zero-divisor-cone-and-the-massless-spectrum.html">The Zero-Divisor Cone and the Massless Spectrum</a> is the cone as a physical boundary.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
