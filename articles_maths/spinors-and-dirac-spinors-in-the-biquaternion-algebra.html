@@ -70,201 +70,547 @@
       <div class="article-body">
         <h1 id="spinors-and-dirac-spinors-in-the-biquaternion-algebra"><strong>Spinors and Dirac Spinors in the Biquaternion Algebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The biquaternion algebra carries two objects that the literature calls a spinor, and the difference between them is a factor of two in dimension and one algebraic datum. An <strong>elementary spinor</strong> is an element of a complex two-dimensional space on which the left multiplications act irreducibly, with weights $+\tfrac12$ and $-\tfrac12$, so that a rotation through $\theta$ about $\vec u$ multiplies it by $e^{-i\theta\vec u\cdot\vec S}$. A <strong>Dirac spinor</strong> is an element $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ of the biquaternion algebra $\mathbb{B}$ whose two parts are its two components in the decomposition of $\mathbb{B}$ into minimal left ideals; each part is an elementary spinor of complex dimension two.</p>
-<p>This article fixes both definitions, proves what they imply, and separates them from the three pictures that stand in their place in the older literature: the column of a matrix model, the gamma matrices, and a second rotation triple attached to the conjugate part. Three results carry the content. A vector carrier has the weights $0$ and $\pm1$, a spinor carrier has $\pm\tfrac12$, and the parity of the weights is what separates them. The two parts of a Dirac spinor are not two independent carriers but two copies of one, because in adapted bases the same left multiplication has the same matrix on both. And no left multiplication carries one part into the other, so the operator that couples them multiplies on the right.</p>
-<p>The article is the spinor counterpart of <em>The Carriers of the Biquaternion Algebra</em> and <em>The Spin of a Carrier</em>: those articles define the carriers, classify them and define their spin as a maximal weight; this one takes the two spinor carriers it produces and names them. The algebra, the units, the two-sided operator and the conjugation are those of <em>Algebra and Element Conventions</em>. The two definitions use none of a Clifford relation, a gamma basis operator, a Pauli array, a volume element or a Peirce basis; the Pauli arrays appear twice, in worked instances, and never as a definition.</p>
-<h2 id="the-side-of-a-multiplication">The Side of a Multiplication</h2>
-<p>The two families of operators are the left and the right multiplications,</p>
+<p>The word spinor names three different objects in this algebra, and the three are the three levels of one chain: a carrier, the closure of that
+carrier, and the sum of two copies of the closure. The conventions of this section give each level a name, and the article fixes them.</p>
+<p>A <strong>spinor</strong> is an element of the plane $\Sigma(\vec u_{\mathrm r})=\mathbb{C}\tilde\Pi_+(\vec u_{\mathrm r})$, of real dimension $2$. A <strong>spinor
+space</strong> is the first closure $S_+(\vec u_{\mathrm r})=\mathbb{B}\tilde\Pi_+(\vec u_{\mathrm r})$, of real dimension $4$. A <strong>Dirac spinor</strong> is an
+element of a bispinor space, the second closure $\mathbb{B}=S_+\oplus S_-$, of real dimension $8$. The three levels are nested,
+$\Sigma\subset S_+\subset\mathbb{B}$, and each is the closure of the one before.</p>
+<p>Each level answers the two questions of the section. The weight question is answered by the generator $\tfrac12 i\vec u_{\mathrm r}$ and gives the
+string $(\pm\tfrac12)$, of length $2=2s+1$. The sector question is answered by the two predicates $N\neq0$ and $B^{2}\neq0$, and it answers
+differently at each level: a nonzero spinor lies in $\Sigma_{01}$ and the zero spinor in $\Sigma_{00}$, so no spinor lies in a regular sector; a
+spinor-space element obeys the same rule; and a Dirac spinor lies in any of the four. The reason for the difference is one theorem, <em>a spinor is null</em>,
+and its analogue for the ideal: on the plane and on the ideal the norm vanishes everywhere, so the first index of the sector is fixed at zero, and only
+at the bispinor level does the norm become the pairing of two parts and with it a free index.</p>
+<p>The article also records what the two definitions do not need. They use no array, no second triple of operators, no conjugate module, and no separate
+parameter for the coupling of the two parts: the coupling is a right multiplication, the exchanges between the parts form a single complex line, and
+one complex number times a fixed exchange is the whole datum the pair costs.</p>
+<p>The predicates, the sectors and the strata are those of <em>Relations between the N Norm and Spectral Regularity and Degeneracy</em>, and they are defined
+again below so that the article stands alone. The carriers are <em>The Carriers, the Representation, the Spin and the Closure</em>. The levels themselves
+are <em>Introduction to the Spin-Zero Centre Subspace</em>, <em>Introduction to the Spin-Half Bispinors</em> and <em>Introduction to the Spin-One Anti-Hermitian
+Subspace</em>.</p>
+<p>Nothing below is a statement of physics. The elements are written $X,Y$. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the
+basis $e_t,\vec e_x,\vec e_y,\vec e_z$, with $e_t$ the identity, $\vec e_k^{2}=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, with complex coefficients. The
+element $i$ commutes with the units and satisfies $i^{2}=-e_t$. A general element is $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu=q_\mu+iq'_\mu$ complex and
+$\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. A unit real axis is $\vec u_{\mathrm r}$, with $\vec u_2,\vec u_3$ an oriented orthonormal pair
+completing it. The star is the Hermitian conjugation, $u$ is a unitary element, one with $uu^{*}=e_t$, and $\operatorname{Ad}_u$ is the inner automorphism
+$X\mapsto uXu^{-1}$, which on $G$ reads $X\mapsto uXu^{*}$.</p>
+<h2 id="the-two-predicates-and-the-four-sectors">The Two Predicates and the Four Sectors</h2>
+<p><strong>Definition (the norm and the square of the vector part).</strong> For $\tilde Q=Q_te_t+\vec Q$,</p>
 <p>$$
-L_a\tilde{Ξ}=a\tilde{Ξ},\qquad R_b\tilde{Ξ}=\tilde{Ξ}b .
+N(\tilde Q)=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2},\qquad B^{2}(\tilde Q)=Q_x^{2}+Q_y^{2}+Q_z^{2},
 $$</p>
-<p>They commute, $L_aR_b=R_bL_a$, because the product is associative: both sides are $a\psi b$. That one line is the engine of everything below, and its consequence is a rule about subspaces.</p>
-<p><strong>Proposition (left ideals are stable, right ideals are not).</strong> If $J\subseteq\mathbb{B}$ is a left ideal then $L_aJ\subseteq J$ for every $a$; if $J$ is a left ideal and $b\ne0$ then $R_bJ$ need not be contained in $J$.</p>
-<p><em>Proof.</em> $L_aJ=aJ\subseteq J$ by the definition of a left ideal. For the second statement take $J=\mathbb{B}\tilde\Pi_+$, the first column of the matrix model, and $b=i\vec e_x$; the product of a first-column matrix with $\sigma_1$ is a second-column matrix, so the image leaves $J$. The computation is carried out below.</p>
-<p>The asymmetry is the reason the definitions are possible. A left multiplication never leaves the part it acts on; a right multiplication can. So a decomposition into left ideals is stable under the operators of the equation, which act on the left, and is moved only by an operator written on the other side. That is the content of <strong>operator chirality</strong> in this algebra (<em>Operator Chirality on the Biquaternion Algebra</em>): the side on which an operator multiplies, and not the sign of a generator.</p>
-<h2 id="the-elementary-spinor">The Elementary Spinor</h2>
-<p><strong>Definition (elementary spinor).</strong> An <strong>elementary spinor</strong> is an element of a complex two-dimensional space on which the left multiplications act irreducibly with weights $+\tfrac12$ and $-\tfrac12$, so that a rotation through $\theta$ about $\vec u$ multiplies it by $e^{-i\theta\vec u\cdot\vec S}$.</p>
-<p>Three things are packed into that sentence, and each is a theorem below: what the carrier is, that the weights are exactly $\pm\tfrac12$, and that the rotation is a left multiplication with the half-angle. The vector $\vec u$ stands also for the pure quaternion $u_x\vec e_x+u_y\vec e_y+u_z\vec e_z$, as it does throughout the corpus, so that $i\vec u$ is an element of the algebra.</p>
-<p><strong>Proposition (the carrier is a minimal left ideal).</strong> A complex two-dimensional subspace of $\mathbb{B}$ on which the left multiplications act irreducibly is a minimal left ideal, and the minimal left ideals are</p>
+<p>with the polar form $B(X,Y)=\tfrac12\bigl(N(X+Y)-N(X)-N(Y)\bigr)$, symmetric and complex-bilinear. The two differ by the scalar square:</p>
 <p>$$
-S_\pm(\vec u)=\mathbb{B}\tilde\Pi_\pm(\vec u),\qquad \tilde\Pi_\pm(\vec u)=\tfrac12\bigl(e_t\pm i\vec u\bigr),
+N(\tilde Q)-B^{2}(\tilde Q)=Q_t^{2}.
 $$</p>
-<p>for a unit real vector $\vec u$.</p>
-<p><em>Proof.</em> The irreducible modules of $M_2(\mathbb{C})$ are its minimal left ideals, which are the columns of a matrix model; the map $\vec u\mapsto S_+(\vec u)$ is a bijection from the unit sphere onto them (<em>The Minimal Left Ideals of the Biquaternion Algebra</em>, §<em>The Sphere of Axes and the Type</em>). A two-dimensional left-invariant subspace is therefore one of these, and each has dimension two over $\mathbb{C}$.</p>
-<p>So an elementary spinor is an element of $S_+(\vec u)$ or of $S_-(\vec u)$ for some axis $\vec u$, and the axis is what names the carrier. Every axis gives the same module up to isomorphism, so an elementary spinor without a named axis means an element of some one of the carriers, and no statement about it depends on which.</p>
-<p><strong>Proposition (the weights).</strong> On $S_+(\vec u)$ the operator $\vec u\cdot\vec S$ has the two eigenvalues $+\tfrac12$ and $-\tfrac12$, each once, and the same holds on $S_-(\vec u)$.</p>
-<p><em>Proof.</em> The generator is $\tilde S_k=\tfrac12 i\vec e_k$, so $\vec u\cdot\vec S=\tfrac12 i\vec u$, and</p>
+<p><strong>Lemma (the discriminant identity).</strong> If $\lambda_1,\lambda_2$ are the eigenvalues of $\tilde Q$, then</p>
 <p>$$
-\bigl(\tfrac12 i\vec u\bigr)\tilde\Pi_+(\vec u)=\tfrac12\tilde\Pi_+(\vec u),\qquad
-\bigl(\tfrac12 i\vec u\bigr)\tilde\Pi_-(\vec u)=-\tfrac12\tilde\Pi_-(\vec u),
+(\lambda_1-\lambda_2)^{2}=\operatorname{tr}(\tilde Q)^{2}-4N(\tilde Q)=-4B^{2}(\tilde Q).
 $$</p>
-<p>the first because $(i\vec u)^2=+e_t$ and $i\vec u$ commutes with $\tilde\Pi_+(\vec u)$, the second by the same computation with $\vec u$ replaced by $-\vec u$. The weight $-\tfrac12$ vector of $S_+(\vec u)$ is the companion corner $\tilde\Pi_-(\vec u)\,\mathbb{B}\,\tilde\Pi_+(\vec u)$. It is one-dimensional; every $\nu$ in it satisfies $\nu=\tilde\Pi_-(\vec u)\nu$, so $\tfrac12 i\vec u\,\nu=-\tfrac12\nu$; and it is square-zero, because $\nu=\nu\tilde\Pi_+(\vec u)$ together with $\tilde\Pi_+(\vec u)\tilde\Pi_-(\vec u)=0$ gives $\nu^2=\nu\tilde\Pi_+(\vec u)\tilde\Pi_-(\vec u)\nu=0$. For $\vec u=\vec e_z$ it is $\vec\Upsilon_{-+}=\tfrac12(i\vec e_x+\vec e_y)$. Two independent weight vectors exhaust a two-dimensional carrier, so each weight occurs once.</p>
-<p><strong>Corollary (the dimension is forced).</strong> The spin of the carrier is $\tfrac12$, the Casimir is $\tfrac34$, and the dimension is $2s+1=2$.</p>
-<p><em>Proof.</em> The spin is $\tfrac12$ because the carrier's representation space is two-dimensional, and the maximal weight of $\vec u\cdot\vec S$ is the same number read off the generators, by <em>The Spin of a Carrier</em>, §<em>The Definition</em>, and <em>The Weights of a Carrier</em>, §<em>The Three Spectra</em> and §<em>The Central Element and Its Values</em>; that maximum is $\tfrac12$; the value of the quadratic element and the dimension are the theorems of those two articles.</p>
-<p><strong>The rotation is a multiplication with the half-angle.</strong> The rotation through $\theta$ about $\vec u$ is the exponential of the generator,</p>
-<p>$$
-\exp\bigl(-i\theta\,\vec u\cdot\vec S\bigr)
-=\exp\bigl(\tfrac{\theta}{2}\,\vec u\bigr)
-=\cos\tfrac{\theta}{2}\,e_t+\sin\tfrac{\theta}{2}\,\vec u ,
-$$</p>
-<p>and the elementary spinor is multiplied by that element on the left. The multiplier is a unit quaternion, so it acts on a vector by the adjoint action, turning it through a full angle, while on the spinor it acts by left multiplication with the eigenvalues $e^{\mp i\theta/2}$, the half-angle. The exponential is the corpus's own (<em>The Weights of a Carrier</em>, §<em>The Generator</em>), and the sense of the turn follows from it. The adjoint action of $\cos\tfrac{\theta}{2}+\vec u\sin\tfrac{\theta}{2}$ turns a vector through $+\theta$ about $\vec u$ (<em>Quaternion Rotations and Reflections</em>, §<em>The Adjoint Action</em>), and that is the multiplier above at $\theta=\theta$: the spinor and the vector turn through the same angle and in the same sense, and the half-angle appears only in the eigenvalues of the multiplier. At $\theta=2\pi$ the multiplier is $-e_t$ and the spinor returns with the opposite sign; at $\theta=4\pi$ it returns unchanged. That is the double cover, and no vector carries it: a vector is returned to itself by a full turn, while a spinor is returned to its negative (<em>The Weights of a Carrier</em>, §<em>The Generator</em>).</p>
-<p><strong>Coordinates.</strong> In the carrier $S_+(\vec u)$ an element is $d_0\tilde\Pi_+(\vec u)+d_1\nu(\vec u)$ with $d_0,d_1\in\mathbb{C}$ and $\nu$ the companion nilpotent, so an elementary spinor is a pair of complex numbers, a coordinate vector $(d_0;d_1)$ on the carrier. The number is two because the spin is $\tfrac12$; it is not a free choice of the model.</p>
-<h2 id="the-dirac-spinor">The Dirac Spinor</h2>
-<p><strong>Definition (Dirac spinor).</strong> A <strong>Dirac spinor</strong> is an element $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ of $\mathbb{B}$, the two parts being its two components in the decomposition of $\mathbb{B}$ into minimal left ideals,</p>
-<p>$$
-\mathbb{B}=S_+(\vec u)\oplus S_-(\vec u),\qquad \tilde\Pi_\pm(\vec u)=\tfrac12\bigl(e_t\pm i\vec u\bigr),
-$$</p>
-<p>for a declared unit imaginary direction $\vec u$, and each part is an elementary spinor of complex dimension two.</p>
-<p><strong>Proposition (the two parts are the two carriers, and they exhaust the algebra).</strong> Each summand is a minimal left ideal of complex dimension two, the sum is direct, and $2+2=4=\dim_\mathbb{C}\mathbb{B}$. With the axis declared, every element of the algebra is a Dirac spinor, and only the zero element has both parts zero.</p>
-<p><em>Proof.</em> $\tilde\Pi_+(\vec u)$ and $\tilde\Pi_-(\vec u)$ are idempotent, orthogonal and sum to $e_t$; so $\mathbb{B}\tilde\Pi_+(\vec u)+\mathbb{B}\tilde\Pi_-(\vec u)=\mathbb{B}$ and the intersection is zero. Each summand is two-dimensional by the counting of the preceding section. The last statement is the definition of a direct sum.</p>
-<p><strong>Remark (the four coordinates).</strong> In the units $e_t,\vec e_x,\vec e_y,\vec e_z$ a Dirac spinor is four complex numbers, and in the frame of the two carriers it is two pairs, one pair per part. The count $4=2\times2$ is the product of the spin dimension and the number of parts, and the two factors have different origins: the first is the weight string $\pm\tfrac12$, the second is the number of lines in the decomposition.</p>
-<p><strong>Remark (the names of the parts).</strong> The two labels $L$ and $R$ are a convention and carry no invariant content. Exchanging them is the substitution $\vec u\mapsto-\vec u$, because</p>
-<p>$$
-\tilde\Pi_+(\vec u)=\tfrac12\bigl(e_t+i\vec u\bigr)=\tfrac12\bigl(e_t-i(-\vec u)\bigr)=\tilde\Pi_-(-\vec u).
-$$</p>
-<p>So the pair is unordered, and the definition orders it only to give the two parts names. A statement that treats the two parts differently is a statement about the declared axis and not about the algebra.</p>
-<p><strong>Example (the axis $\vec u=\vec e_z$).</strong> In the matrix model $\mathsf{M}_2$ of <em>Algebra and Element Conventions</em>, $\mathsf{M}_2(i\vec e_k)=\sigma_k$, so $\tilde\Pi_+(\vec e_z)$ is the array $\operatorname{diag}(1,0)$ and $\tilde\Pi_-(\vec e_z)$ the array $\operatorname{diag}(0,1)$. The two parts are therefore the two columns of the matrix model: the first part is the first column, the second part the second column. A Dirac spinor is a $2\times2$ array read as two columns, which is what a four-component column says in a basis that nobody had to choose.</p>
-<h2 id="the-pair-is-a-multiplicity">The Pair Is a Multiplicity</h2>
-<p>The definition says that the algebra is the sum of the two carriers. It does not yet say how they are related, and the answer is that they are the same carrier twice.</p>
-<p><strong>Proposition (the same matrix on both parts).</strong> Let $\vec v$ be a unit real vector perpendicular to $\vec u$. Right multiplication by $i\vec v$ maps $S_+(\vec u)$ onto $S_-(\vec u)$ bijectively and is left-linear. Consequently, in the bases $(\nu_1,\nu_2)$ of $S_+(\vec u)$ and $(\nu_1i\vec v,\nu_2i\vec v)$ of $S_-(\vec u)$, every left multiplication $L_a$ has the same matrix on the two parts.</p>
-<p><em>Proof.</em> Left-linearity: $R_{i\vec v}(ax)=ax(i\vec v)=a\,R_{i\vec v}(x)$. The image of $\mathbb{B}\tilde\Pi_+(\vec u)$ is $\mathbb{B}\bigl(\tilde\Pi_+(\vec u)i\vec v\bigr)$, which is a left ideal generated by a nonzero element, hence minimal, and a computation in the matrix model identifies it as $S_-(\vec u)$. With $\vec u=\vec e_z$ and $\vec v=\vec e_x$ the generator is $\operatorname{diag}(1,0)\sigma_1=E_{12}$, which generates the second column. Bijectivity follows from the dimensions. For the matrices, $L_aR_{i\vec v}=R_{i\vec v}L_a$, so $L_a$ applied to the transported basis equals the transport of $L_a$ applied to the original basis, and the two matrices agree.</p>
-<p><strong>Corollary (the multiplicity two).</strong> As a left module $\mathbb{B}\cong S\oplus S$ with $S$ the simple module, so the left multiplication acts on one factor and the decomposition into the two parts is a multiplicity, not a direct sum of two different representations. The Dirac spinor is a carrier of spin $\tfrac12$ with multiplicity two, and the second factor is what the labels $L$ and $R$ index.</p>
-<p>Two consequences follow. The four coordinates of a Dirac spinor are not four independent numbers acted on by a four-dimensional irreducible representation of the algebra: this left action is two-dimensional and repeats. And the second factor carries no new representation of the algebra: it is a copy, and the index that separates the two parts is a copy index (<em>The Pauli Module of the Biquaternion Algebra</em>).</p>
-<p><strong>Remark (the two readings of the pair).</strong> Everything above is the left action on the two left ideals. The physics of the corpus reads the same two subspaces a second way: on the Dirac module $\Delta=S\oplus S^{\mathrm{c}}$ the second factor is the conjugate module, on which $Q$ acts as $\bar Q$, so a scalar $\lambda$ multiplies one part by $\lambda$ and the other by $\bar\lambda$ (<em>The Unpolarized Module of the Biquaternion Algebra</em>; <em>The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism</em>). The subspaces are the same in both readings, because coefficient conjugation carries $S_+(\vec u)$ onto $S_-(\vec u)$; what differs is the action declared on the second. A statement about the two parts therefore has to name its reading, and the two names are the same pair of ideals with the copy action and with the conjugate action.</p>
-<p><strong>The grading and the projector.</strong> Right multiplication by $\tilde\Pi_+(\vec u)$ is the projection onto $S_+(\vec u)$ along $S_-(\vec u)$: it is idempotent, of trace two, the identity on the first part and zero on the second, because $\tilde\Pi_+^2=\tilde\Pi_+$ and $\tilde\Pi_-\tilde\Pi_+=0$. The grading behind it is a right multiplier, $R(i\vec u)$, which has the eigenvalue $+1$ on $S_+(\vec u)$ and $-1$ on $S_-(\vec u)$; so the two parts diagonalise it, and</p>
-<p>$$
-R\bigl(\tilde\Pi_+(\vec u)\bigr)=\tfrac12\bigl(\mathrm{id}+R(i\vec u)\bigr),\qquad
-R\bigl(\tilde\Pi_-(\vec u)\bigr)=\tfrac12\bigl(\mathrm{id}-R(i\vec u)\bigr).
-$$</p>
-<p>That grading is the object the corpus calls the chirality operator of a frame: in the axis-free frame the basis operator is the right multiplier $-iR_{\vec e_z}$ (<em>Operator Chirality on the Biquaternion Algebra</em>, <em>The Pauli Module of the Biquaternion Algebra</em>), which is the negative of $R(i\vec u)$ at $\vec u=\vec e_z$, and a grading agrees with its negative on the two parts and differs only in which part carries which sign. The idempotent form is used here because the idempotent is what defines the carrier, and it names no frame. What the basis operator does not give is invariant data of the pair: the two parts are two copies, the index that separates them is a copy index, and the sign attaches to the declared axis (<em>The Polarized Module of the Biquaternion Algebra</em>).</p>
-<h2 id="what-carries-one-part-to-the-other">What Carries One Part to the Other</h2>
-<p>The two parts are stable under every left multiplication, and only a right one moves them. The exact statement is the following, and it is the algebraic content of the mass term of the Dirac equation.</p>
-<p><strong>Proposition (no left multiplication exchanges the parts).</strong> For every $a\in\mathbb{B}$, $L_a\,S_+(\vec u)\subseteq S_+(\vec u)$ and $L_a\,S_-(\vec u)\subseteq S_-(\vec u)$.</p>
-<p><em>Proof.</em> $S_\pm(\vec u)$ are left ideals, and a left multiplication preserves a left ideal by the definition.</p>
-<p><strong>Proposition (what a right multiplier does to the axis).</strong> Let $\vec v=\cos\theta\,\vec u+\sin\theta\,\vec n$ with $\vec n$ a unit real vector perpendicular to $\vec u$. Then right multiplication by $i\vec v$ carries $S_+(\vec u)$ onto $S_+(\vec w)$ with</p>
-<p>$$
-\vec w=\cos2\theta\,\vec u+\sin2\theta\,\vec n,
-$$</p>
-<p>so it preserves the part at $\theta=0$, exchanges the two parts at $\theta=\tfrac{\pi}{2}$, where $\vec w=-\vec u$ and $S_+(-\vec u)=S_-(\vec u)$, and otherwise carries it to a carrier at a different axis, which is a third carrier beside the two at $\vec u$. The same holds with $S_+$ replaced by $S_-$.</p>
-<p><em>Proof.</em> Put $q=\tilde\Pi_+(\vec u)i\vec v$, which is nonzero and of rank one, so $\mathbb{B}q$ is a minimal left ideal; it equals $S_+(\vec w)$ exactly when $q\in S_+(\vec w)$, because one minimal left ideal that meets another is that other. A carrier has the description</p>
-<p>$$
-S_+(\vec w)=\bigl\{x\in\mathbb{B}: x\,i\vec w=x\bigr\},
-$$</p>
-<p>the $+1$ eigenspace of $R(i\vec w)$, which in the matrix model is the set of arrays whose rows lie in the $+1$ eigenline of $\vec w\cdot\vec\sigma$. Take $\vec u=\vec e_z$ and $\vec n=\vec e_x$; then</p>
-<p>$$
-\mathsf{M}_2(q)=\mathsf{M}_2\bigl(\tfrac12(i\vec v-\vec e_z\vec v)\bigr)
-=\tfrac12\bigl(\cos\theta\,(I_2+\sigma_3)+\sin\theta\,(\sigma_1+i\sigma_2)\bigr)
-=\begin{pmatrix}\cos\theta & \sin\theta\\ 0 & 0\end{pmatrix},
-$$</p>
-<p>whose rows lie in the line at angle $\theta$ from the first coordinate axis. The $+1$ eigenline of $\vec w\cdot\vec\sigma$ is the spinor line at half the angle of $\vec w$, so the line at angle $\theta$ belongs to $\vec w$ at angle $2\theta$, that is $\vec w=\cos2\theta\,\vec e_z+\sin2\theta\,\vec e_x$; the identity $q\,i\vec w=q$ confirms it, and with it $q\in S_+(\vec w)$. The general pair $(\vec u,\vec n)$ is carried to this frame by a left multiplication with a unit, which maps carriers onto carriers and conjugates a right multiplier into a right multiplier. The special values follow by substitution, and $S_+(-\vec u)=S_-(\vec u)$ because $\tilde\Pi_+(-\vec u)=\tilde\Pi_-(\vec u)$.</p>
-<p><strong>Proposition (the exchange is unique up to a scalar).</strong> Let $\vec v$ and $\vec v'$ be unit real vectors perpendicular to $\vec u$. Then $R(i\vec v)$ and $R(i\vec v')$ agree on the whole of $S_+(\vec u)$ up to one nonzero complex scalar, and the same holds on $S_-(\vec u)$. Consequently the space of left-linear maps from one part to the other is a complex line.</p>
-<p><em>Proof.</em> A left-linear map $\varphi:S_+(\vec u)\to S_-(\vec u)$ satisfies $\varphi(a\tilde\Pi_+)=a\varphi(\tilde\Pi_+)$, so it is determined by the single vector $\varphi(\tilde\Pi_+)$, and the consistency condition $a\tilde\Pi_+=0\Rightarrow a\varphi(\tilde\Pi_+)=0$ selects the line $\tilde\Pi_+S_-(\vec u)=\tilde\Pi_+(\vec u)\mathbb{B}\tilde\Pi_-(\vec u)$, of complex dimension one. For the multipliers: $q=\tilde\Pi_+(\vec u)i\vec v$ is nonzero, because $i\vec v$ has purely imaginary coefficients and $\vec u\vec v$ has real ones, and for $\vec v\perp\vec u$ the element $q$ generates $S_-(\vec u)$ by the proposition on the axis, so $q$ lies in the corner and is not zero. Each $R(i\vec v)$ therefore realises the nonzero element of the line, and two of them differ by a nonzero scalar.</p>
-<p><strong>Remark (the mass is one complex number).</strong> The mass of the biquaternionic Dirac equation acts on the right: it carries the field from one value to the other, and it is neither a central scalar nor a left multiplication. The two propositions above say what it can be. It is a right multiplication, the multiplier must be perpendicular to the declared axis, and there is only one such map up to a scalar; so the mass is a complex number times a fixed exchange, and no perpendicular direction is a second datum. The terms that act on the left stay in their part. The two-sided form of the equation, in which one factor acts from the left and the mass from the right, is therefore not a rewriting: it is the only side on which the mass can act.</p>
-<p><strong>Example (the exchange at $\vec u=\vec e_z$).</strong> With $\vec v=\vec e_x$ the multiplier is $i\vec e_x$, whose matrix is $\sigma_1$, and the exchange acts on the two columns by</p>
-<p>$$
-E_{11}\,\sigma_1=E_{12},\qquad E_{21}\,\sigma_1=E_{22},
-$$</p>
-<p>so it sends the first column onto the second coordinate by coordinate. The multiplier $i\vec e_z$ instead keeps each column in place, which is the case $\vec v=\pm\vec u$ of the second proposition.</p>
-<h2 id="what-the-definitions-do-not-use">What the Definitions Do Not Use</h2>
-<p>The definition of an elementary spinor names the axis that selects its carrier, and the definition of a Dirac spinor names one axis and nothing else. The two definitions use none of: a Clifford relation, a gamma basis operator, a Pauli array, a volume element, a Peirce basis, a second rotation triple. Three claims of the older literature are replaced, and each replacement is a statement of the same fact with fewer objects.</p>
-<p><strong>The four-component column.</strong> A column of four components is a Dirac spinor written in a chosen frame, namely the frame of the two carriers read as two columns. The definition does not need the frame: the element exists before the columns do, and the columns are its coordinates in the decomposition.</p>
-<p><strong>The two-component spinor.</strong> A column of two components is an elementary spinor written in a chosen carrier. The carrier is a minimal left ideal, and the ideal is selected by an axis; the column is the coordinate form of an element of that ideal.</p>
-<p><strong>The second triple.</strong> No second rotation triple is needed to distinguish the two parts, and none can do it. A triple of left multiplications acts inside each part; by the first proposition of the preceding section it cannot move between them. What distinguishes the parts is the side of the multiplication, and the side is a datum of the operator, not of a generator. In particular the two parts carry the same operator with the same weights, and a statement that gives them opposite signs is a statement about a different algebraic object.</p>
-<p><strong>What the definitions cost.</strong> One declared direction $\vec u$ between them, and it is the only datum they cost. The direction is a point of the sphere; it selects the two carriers and the decomposition, and a change of it changes nothing else: the dimension, the weights, the spin, the multiplicity and the exchange are the same at every axis. The price of splitting an algebra into two parts is one frame, named where it is used.</p>
-<h2 id="summary">Summary</h2>
-<p>An elementary spinor is an element of a complex two-dimensional carrier on which the left multiplications act irreducibly with weights $\pm\tfrac12$. In $\mathbb{B}$ the carriers are the minimal left ideals $S_\pm(\vec u)=\mathbb{B}\tilde\Pi_\pm(\vec u)$, the weight string is $(+\tfrac12,-\tfrac12)$, the spin is $\tfrac12$ and the dimension is $2=2s+1$. A rotation through $\theta$ about $\vec u$ multiplies the spinor by $\cos\tfrac{\theta}{2}e_t+\sin\tfrac{\theta}{2}\vec u$, so the multiplier carries the half-angle and a full turn returns the element with the opposite sign.</p>
-<p>A Dirac spinor is an element of $\mathbb{B}$ whose two parts are its two components in the decomposition of $\mathbb{B}$ into the minimal left ideals at a declared axis, and each part is an elementary spinor. The parts are the two columns of the matrix model at $\vec u=\vec e_z$, the algebra is their direct sum, and the four coordinates are two pairs.</p>
-<p>The pair is a multiplicity. Right multiplication by $i\vec v$ with $\vec v\perp\vec u$ carries one part onto the other and is left-linear, so in adapted bases every left multiplication has the same matrix on both parts. The decomposition is therefore one carrier taken twice, not two carriers.</p>
-<p>No left multiplication moves between the parts, so the coupling of the parts is a right multiplication. The multipliers that do it are the imaginary units, and the axis of the image doubles the angle: a perpendicular unit exchanges the two parts, a parallel unit preserves them, and anything between carries the carrier to a third one. All perpendicular units give the same map up to a nonzero scalar, so the space of such maps is a complex line and the mass is one complex number times a fixed exchange. The two names cost one declared direction between them, and no Clifford relation, no gamma basis operator and no second triple.</p>
-<h2 id="summary-of-notation">Summary of Notation</h2>
+<p><em>Proof.</em> The trace is $2Q_t$ and the determinant is $N(\tilde Q)$; for a two-by-two element $\operatorname{tr}^{2}-4\det=(\lambda_1-\lambda_2)^{2}$,
+and substituting $N=Q_t^{2}+B^{2}$ gives $4Q_t^{2}-4Q_t^{2}-4B^{2}$.</p>
+<p><strong>Corollary (the spectral predicate is the coincidence of the eigenvalues).</strong> $B^{2}(\tilde Q)=0$ exactly when the two eigenvalues coincide.</p>
+<p><strong>Definition (the two predicates and the four sectors).</strong> An element is <strong>norm-regular</strong> when $N(\tilde Q)\neq0$ and <strong>spectrally regular</strong> when
+$B^{2}(\tilde Q)\neq0$. The zero loci are the <strong>null cone</strong> $\mathcal N=\{N=0\}$ and the <strong>spectral-degenerate cone</strong> $\mathcal S=\{B^{2}=0\}$. For
+$i,j\in\{0,1\}$ the sector $\Sigma_{ij}$ is the set of elements with $N\neq0$ if $i=1$, and with $B^{2}\neq0$ if $j=1$.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>Symbol</th>
-<th>Meaning</th>
+<th>sector</th>
+<th>conditions</th>
+<th>name</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>$\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$</td>
-<td>The biquaternion algebra, $M_2(\mathbb{C})$, complex dimension four</td>
+<td>$\Sigma_{11}$</td>
+<td>$N\neq0$, $B^{2}\neq0$</td>
+<td>doubly regular</td>
+</tr>
+<tr>
+<td>$\Sigma_{10}$</td>
+<td>$N\neq0$, $B^{2}=0$</td>
+<td>norm-regular, spectrally degenerate</td>
+</tr>
+<tr>
+<td>$\Sigma_{01}$</td>
+<td>$N=0$, $B^{2}\neq0$</td>
+<td>norm-degenerate, spectrally regular</td>
+</tr>
+<tr>
+<td>$\Sigma_{00}$</td>
+<td>$N=0$, $B^{2}=0$</td>
+<td>doubly degenerate</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-three-levels-of-a-spinor">The Three Levels of a Spinor</h2>
+<p><strong>Definition (the idempotent of the axis).</strong> For a unit real axis $\vec u_{\mathrm r}$,</p>
+<p>$$
+\tilde\Pi_\pm(\vec u_{\mathrm r})=\tfrac12\bigl(e_t\pm i\vec u_{\mathrm r}\bigr),
+$$</p>
+<p>so that $\tilde\Pi_\pm^{2}=\tilde\Pi_\pm$, $\tilde\Pi_+\tilde\Pi_-=0$ and $\tilde\Pi_++\tilde\Pi_-=e_t$.</p>
+<p><strong>Definition (the three levels).</strong></p>
+<p>$$
+\Sigma(\vec u_{\mathrm r})=\mathbb{C}\tilde\Pi_+(\vec u_{\mathrm r}),\qquad
+S_\pm(\vec u_{\mathrm r})=\mathbb{B}\tilde\Pi_\pm(\vec u_{\mathrm r}),\qquad
+\mathbb{B}=S_+(\vec u_{\mathrm r})\oplus S_-(\vec u_{\mathrm r}).
+$$</p>
+<p>The plane is the carrier of spin $\tfrac12$. Its first closure is the ideal $S_+(\vec u_{\mathrm r})$, one of the two minimal left ideals of the
+algebra at the axis; its second closure is the sum of the two ideals, a bispinor space, which as a set is the whole algebra.</p>
+<p><strong>Theorem (the three levels are nested).</strong> $\Sigma(\vec u_{\mathrm r})\subset S_+(\vec u_{\mathrm r})\subset\mathbb{B}$, and the dimensions double
+at each step.</p>
+<p><em>Proof.</em> The plane is the complex line generated by the idempotent, and the idempotent lies in the ideal it generates. The ideal is one of the two
+summands of the direct sum. The dimensions are computed in the table below.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>level</th>
+<th>space</th>
+<th>$\dim_{\mathbb{R}}$</th>
+<th>$\dim_{\mathbb{C}}$</th>
+<th>generator</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>spinor</td>
+<td>$\Sigma(\vec u_{\mathrm r})=\mathbb{C}\tilde\Pi_+$</td>
+<td>$2$</td>
+<td>$1$</td>
+<td>the idempotent $\tilde\Pi_+$</td>
+</tr>
+<tr>
+<td>spinor space</td>
+<td>$S_+(\vec u_{\mathrm r})=\mathbb{B}\tilde\Pi_+$</td>
+<td>$4$</td>
+<td>$2$</td>
+<td>$\tilde\Pi_+$ and $\vec u_2\tilde\Pi_+$</td>
+</tr>
+<tr>
+<td>Dirac spinor</td>
+<td>$\mathbb{B}=S_+\oplus S_-$</td>
+<td>$8$</td>
+<td>$4$</td>
+<td>both ideals together</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Remark (why the plane is the carrier and the ideal is its closure).</strong> The plane is invariant under the rotations about its own axis only, and the
+ideal is invariant under every left multiplication, hence under the whole group. The closure is what makes the object a module of the algebra; the
+plane is what makes the object irreducible, and the two properties are not the same property.</p>
+<h2 id="the-weight">The Weight</h2>
+<p><strong>Definition (the generator).</strong> The spin generators are $\tilde S_k=\tfrac12 i\vec e_k$, and the generator of the axis is
+$\vec u_{\mathrm r}\cdot\vec S=\tfrac12 i\vec u_{\mathrm r}$.</p>
+<p><strong>Theorem (the axis identity).</strong> $\vec u_{\mathrm r}\,\tilde\Pi_\pm(\vec u_{\mathrm r})=\mp i\,\tilde\Pi_\pm(\vec u_{\mathrm r})$.</p>
+<p><em>Proof.</em> The product is $\tfrac12(\vec u_{\mathrm r}+i\vec u_{\mathrm r}^{2})=\tfrac12(\vec u_{\mathrm r}-ie_t)$, which equals
+$-i\cdot\tfrac12(e_t+i\vec u_{\mathrm r})$; the other sign is the same computation at $-\vec u_{\mathrm r}$.</p>
+<p><strong>Theorem (the weights).</strong> On the plane the generator acts as the number $+\tfrac12$:</p>
+<p>$$
+\bigl(\tfrac12 i\vec u_{\mathrm r}\bigr)\tilde\Pi_+(\vec u_{\mathrm r})=\tfrac12\tilde\Pi_+(\vec u_{\mathrm r}).
+$$</p>
+<p>On the ideal the generator has the two eigenvalues $+\tfrac12$ and $-\tfrac12$, each once. The $-\tfrac12$ vector of $S_+(\vec u_{\mathrm r})$ is the
+companion nilpotent</p>
+<p>$$
+\nu(\vec u_{\mathrm r})=\tilde\Pi_-(\vec u_{\mathrm r})\,\vec u_2\,\tilde\Pi_+(\vec u_{\mathrm r}),
+$$</p>
+<p>which is square-zero. At $\vec u_{\mathrm r}=\vec e_z$ it is $\nu=\tfrac12(i\vec e_x+\vec e_y)$.</p>
+<p><em>Proof.</em> The first display follows from the axis identity, which gives $\tfrac12 i\vec u_{\mathrm r}\tilde\Pi_+=\tfrac12\tilde\Pi_+$, and the second
+sign from the same identity at $\tilde\Pi_-$. For $\nu$: it is one-dimensional because it lies in the corner $\tilde\Pi_-\mathbb{B}\tilde\Pi_+$, and
+every element of that corner satisfies $\nu=\tilde\Pi_-\nu$, whence $\tfrac12 i\vec u_{\mathrm r}\nu=-\tfrac12\nu$; and
+$\nu^{2}=\tilde\Pi_-\vec u_2\tilde\Pi_+\tilde\Pi_-\vec u_2\tilde\Pi_+=0$ because $\tilde\Pi_+\tilde\Pi_-=0$.</p>
+<p><strong>Corollary (the weight string and the dimension).</strong> The string of the ideal is $(+\tfrac12,-\tfrac12)$, of length $2$, and</p>
+<p>$$
+2s+1=2=\dim_{\mathbb{C}}S_+(\vec u_{\mathrm r})=\dim_{\mathbb{R}}\Sigma(\vec u_{\mathrm r}).
+$$</p>
+<p><strong>Remark (the half angle).</strong> The rotation through $\theta$ about $\vec u_{\mathrm r}$ is the left multiplication by</p>
+<p>$$
+\exp\bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\bigr)=\cos\tfrac{\theta}{2}\,e_t+\sin\tfrac{\theta}{2}\,\vec u_{\mathrm r},
+$$</p>
+<p>which acts on the plane as the scalar $e^{-i\theta/2}$, by the axis identity. At $\theta=2\pi$ the multiplier is $-e_t$ and the spinor returns with
+the opposite sign; at $\theta=4\pi$ it returns unchanged. No vector does this: the adjoint action of the same multiplier turns a vector through the
+full angle $\theta$ and returns it to itself at $\theta=2\pi$.</p>
+<h2 id="the-sector-of-a-spinor">The Sector of a Spinor</h2>
+<p><strong>Theorem (a spinor is null).</strong> For every complex $\lambda$,</p>
+<p>$$
+N\bigl(\lambda\tilde\Pi_+(\vec u_{\mathrm r})\bigr)=0,\qquad B^{2}\bigl(\lambda\tilde\Pi_+(\vec u_{\mathrm r})\bigr)=-\tfrac14\lambda^{2}.
+$$</p>
+<p>With $Q_t=\lambda/2$ the scalar coordinate of the spinor, the second display reads $B^{2}=-Q_t^{2}$.</p>
+<p><em>Proof.</em> The norm is multiplicative and $N(\tilde\Pi_+)=\tfrac14(1-\lvert\vec u_{\mathrm r}\rvert^{2})=0$. For the second display, the eigenvalues
+sum to $2Q_t=\lambda$ and their product is $N=0$, so they are $0$ and $\lambda$; the discriminant identity then reads $\lambda^{2}=-4B^{2}$, whence
+$B^{2}=-\lambda^{2}/4$.</p>
+<p><strong>Theorem (a spinor is neither invertible nor of norm one).</strong> Every nonzero spinor is a zero divisor, so no spinor is norm-regular and no spinor lies in
+$\Sigma_{11}$ or in $\Sigma_{10}$.</p>
+<p><em>Proof.</em> An invertible element has $N\neq0$, and a unit element has $N=1$; the norm of a spinor vanishes.</p>
+<h3 id="the-sector-math141">The Sector $\Sigma_{01}$</h3>
+<p><strong>Theorem.</strong> The punctured plane lies in the sector:</p>
+<p>$$
+\Sigma(\vec u_{\mathrm r})\cap\Sigma_{01}=\{\lambda\tilde\Pi_+(\vec u_{\mathrm r}):\lambda\neq0\}.
+$$</p>
+<p><em>Proof.</em> On the plane $N=0$, so the first index is zero, and $B^{2}=-\lambda^{2}/4$ is nonzero exactly for $\lambda\neq0$.</p>
+<p><strong>Corollary (the spectrum of a spinor).</strong> For $\lambda\neq0$ the spectrum is $\{0,\lambda\}$, with distinct eigenvalues, and the eigenvector of the
+eigenvalue $\lambda$ is the spinor itself, since $\tilde\Pi_+^{2}=\tilde\Pi_+$.</p>
+<h3 id="the-sector-math150">The Sector $\Sigma_{00}$</h3>
+<p><strong>Theorem.</strong> $\Sigma(\vec u_{\mathrm r})\cap\Sigma_{00}=\{0\}$, and the origin is the only point of the plane at which the second predicate fails.</p>
+<p><em>Proof.</em> The origin is the point $\lambda=0$, where both predicates fail.</p>
+<h3 id="the-two-intersections-in-one-table">The Two Intersections in One Table</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>sector</th>
+<th>condition on $\lambda$</th>
+<th>intersection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Sigma_{11}$</td>
+<td>impossible, $N=0$</td>
+<td>$\varnothing$</td>
+</tr>
+<tr>
+<td>$\Sigma_{10}$</td>
+<td>impossible, $N=0$</td>
+<td>$\varnothing$</td>
+</tr>
+<tr>
+<td>$\Sigma_{01}$</td>
+<td>$\lambda\neq0$</td>
+<td>$\mathbb{C}^{\times}\tilde\Pi_+(\vec u_{\mathrm r})$</td>
+</tr>
+<tr>
+<td>$\Sigma_{00}$</td>
+<td>$\lambda=0$</td>
+<td>$\{0\}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Remark (the spinor against the vector).</strong> A carrier of spin $1$ is the vector part, on which $N=B^{2}=\lvert\vec v\rvert^{2}$ and every nonzero
+element is invertible; a carrier of spin $\tfrac12$ is the plane, on which $N=0$ and no nonzero element is invertible. The difference is not an
+accident of the axis: $N(\tilde\Pi_+)=\tfrac14(1-\lvert\vec u_{\mathrm r}\rvert^{2})$ cancels exactly because the axis is a real unit vector, so
+the vanishing is the geometry of the axis and not a coincidence of a frame.</p>
+<h2 id="the-spinor-space-and-its-two-planes">The Spinor Space and Its Two Planes</h2>
+<p><strong>The coordinates.</strong> In the basis $(\tilde\Pi_+(\vec u_{\mathrm r}),\vec u_2\tilde\Pi_+(\vec u_{\mathrm r}))$ an element of the spinor space is</p>
+<p>$$
+Y=\alpha\tilde\Pi_+(\vec u_{\mathrm r})+\beta\,\vec u_2\tilde\Pi_+(\vec u_{\mathrm r}),
+$$</p>
+<p>with $\alpha,\beta$ complex, and its scalar coordinate is $Q_t(Y)=\alpha/2$.</p>
+<p><strong>Theorem (the ideal is null, and one number decides its sector).</strong> For every $Y$,</p>
+<p>$$
+N(Y)=0,\qquad B^{2}(Y)=-Q_t(Y)^{2}.
+$$</p>
+<p>So the ideal meets $\Sigma_{01}$ where $\alpha\neq0$ and $\Sigma_{00}$ where $\alpha=0$, and it meets the two regular sectors nowhere.</p>
+<p><em>Proof.</em> The ideal is $\mathbb{B}\tilde\Pi_+$ and the norm is multiplicative, so the norm vanishes. The spectrum of $Y$ is $\{0,2Q_t(Y)\}$ by the
+quadratic relation $Y^{2}-2Q_t(Y)Y+N(Y)e_t=0$ together with $N(Y)=0$, so the difference of the two eigenvalues is $-2Q_t(Y)$ and $B^{2}=-Q_t^{2}$.</p>
+<h3 id="the-sector-math188">The Sector $\Sigma_{01}$</h3>
+<p><strong>Theorem.</strong> The intersection is the ideal minus a real plane:</p>
+<p>$$
+S_+(\vec u_{\mathrm r})\cap\Sigma_{01}=\{Y:Q_t(Y)\neq0\}.
+$$</p>
+<p><em>Proof.</em> On the ideal the first index is zero and the second is decided by $Q_t$, which is nonzero exactly when $\alpha\neq0$.</p>
+<h3 id="the-sector-math192">The Sector $\Sigma_{00}$</h3>
+<p><strong>Theorem (the doubly degenerate part of the ideal is a real plane).</strong></p>
+<p>$$
+S_+(\vec u_{\mathrm r})\cap\Sigma_{00}=\mathbb{C}\bigl(\vec u_2-i\vec u_3\bigr)=\mathbb{C}\,\vec u_2\tilde\Pi_+(\vec u_{\mathrm r}),
+$$</p>
+<p>of real dimension $2$.</p>
+<p><em>Proof.</em> The condition is $\alpha=0$, that is $Q_t=0$. And $\vec u_2\tilde\Pi_+(\vec u_{\mathrm r})=\tfrac12(\vec u_2-i\vec u_3)$, whose scalar
+coordinate vanishes.</p>
+<p><strong>Theorem (the doubly degenerate part is the square-zero part).</strong> For an element $Y$ of the ideal,</p>
+<p>$$
+Y^{2}=0\iff Y\in\Sigma_{00}.
+$$</p>
+<p><em>Proof.</em> On the ideal the quadratic relation reduces to $Y^{2}=2Q_t(Y)Y$, so a vanishing square forces $Q_t(Y)Y=0$ and hence $Q_t(Y)=0$ unless
+$Y=0$; conversely $Q_t(Y)=0$ gives $Y^{2}=0$.</p>
+<p><strong>Remark (the two planes of the ideal).</strong> The carrier plane is generated by an idempotent and lies in $\Sigma_{01}$ away from the origin; the
+degenerate plane is generated by a square-zero element and lies entirely in $\Sigma_{00}$. The two meet only at the origin, and the second is the
+part of the ideal that the first does not see.</p>
+<h2 id="the-dirac-spinor-is-a-pair">The Dirac Spinor Is a Pair</h2>
+<p><strong>Definition (Dirac spinor).</strong> A <strong>Dirac spinor</strong> is an element</p>
+<p>$$
+X=X_++X_-,\qquad X_\pm\in S_\pm(\vec u_{\mathrm r}),
+$$</p>
+<p>of a bispinor space at the declared axis $\vec u_{\mathrm r}$. The two summands are the <strong>parts</strong> of the Dirac spinor, and each part is an element of
+a spinor space.</p>
+<p><strong>Theorem (the parts exhaust the algebra).</strong> Every element of $\mathbb{B}$ is a Dirac spinor at every axis, and only the zero element has both parts
+zero. The four complex coordinates of an element are two pairs, one pair per part.</p>
+<p><em>Proof.</em> $\tilde\Pi_+$ and $\tilde\Pi_-$ are orthogonal idempotents summing to $e_t$, so $\mathbb{B}=S_+\oplus S_-$ and the decomposition is unique.
+The count $4=2+2$ is the sum $\dim_{\mathbb{C}}S_++\dim_{\mathbb{C}}S_-$.</p>
+<p><strong>Theorem (the norm of a Dirac spinor is the pairing of the parts).</strong> $N(X)=2B(X_+,X_-)$.</p>
+<p><em>Proof.</em> The norm is quadratic with polar form $B$, so $N(X_++X_-)=N(X_+)+N(X_-)+2B(X_+,X_-)$, and the two pure terms vanish because each spinor
+space is null.</p>
+<p><strong>Corollary (the weight string of the pair).</strong> On each of the two parts the generator $\tfrac12 i\vec u_{\mathrm r}$ has the weights $+\tfrac12$ and
+$-\tfrac12$ once, so on the Dirac spinor each weight occurs twice.</p>
+<h2 id="the-sector-of-a-dirac-spinor">The Sector of a Dirac Spinor</h2>
+<p><strong>Theorem (the two indices are independent).</strong> The first index of the sector of a Dirac spinor is the vanishing of the pairing of its two parts, and
+the second is the vanishing of $B^{2}$. Neither is a function of the other, and all four combinations occur.</p>
+<p><em>Proof.</em> The first index is $N=2B(X_+,X_-)$ by the theorem above and the second is $B^{2}$ by definition; the witnesses below supply one element of
+each sector.</p>
+<h3 id="the-sector-math226">The Sector $\Sigma_{11}$</h3>
+<p><strong>Theorem.</strong> The intersection is</p>
+<p>$$
+\mathbb{B}\cap\Sigma_{11}=\{X:2B(X_+,X_-)\neq0,\ B^{2}(X)\neq0\},
+$$</p>
+<p>which is open and dense in the algebra, of real dimension $8$.</p>
+<p><em>Proof.</em> Each of the two conditions fails on a complex hypersurface, so the intersection of their complements is open and dense in the algebra, whose
+real dimension is $8$.</p>
+<p><strong>Witness.</strong> $X=e_t+2\vec e_x$ has $N=5$ and $B^{2}=4$.</p>
+<h3 id="the-sector-math233">The Sector $\Sigma_{10}$</h3>
+<p><strong>Theorem.</strong> The intersection is</p>
+<p>$$
+\mathbb{B}\cap\Sigma_{10}=\{X:2B(X_+,X_-)\neq0,\ B^{2}(X)=0\},
+$$</p>
+<p>of real dimension $6$: the invertible elements whose two eigenvalues coincide.</p>
+<p><em>Proof.</em> The conditions are a non-vanishing pairing and a vanishing $B^{2}$, and the vanishing of $B^{2}$ is the coincidence of the two eigenvalues by
+the criterion of the spectral predicate.</p>
+<p><strong>Witness.</strong> $X=e_t=\tilde\Pi_++\tilde\Pi_-$ has $N=1$ and $B^{2}=0$, and its two parts pair to $\tfrac12$.</p>
+<h3 id="the-sector-math242">The Sector $\Sigma_{01}$</h3>
+<p><strong>Theorem.</strong> The intersection is the null cone without its apex:</p>
+<p>$$
+\mathbb{B}\cap\Sigma_{01}=\{X:2B(X_+,X_-)=0,\ B^{2}(X)\neq0\},
+$$</p>
+<p>of real dimension $6$. It contains the punctured plane of each ideal and the two ideals minus their degenerate planes.</p>
+<p><em>Proof.</em> The pairing vanishes and $B^{2}$ does not.</p>
+<p><strong>Witness.</strong> $X=\tilde\Pi_+(\vec u_{\mathrm r})$ has $N=0$ and $B^{2}=-\tfrac14$.</p>
+<h3 id="the-sector-math249">The Sector $\Sigma_{00}$</h3>
+<p><strong>Theorem.</strong> The intersection is the nilpotent cone:</p>
+<p>$$
+\mathbb{B}\cap\Sigma_{00}=\{X:X^{2}=0\},
+$$</p>
+<p>of real dimension $4$.</p>
+<p><em>Proof.</em> The two predicates fail exactly when $Q_t=0$ and $\vec Q^{2}=0$, and these two conditions are $X^{2}=0$.</p>
+<p><strong>Witness.</strong> $X=\vec u_2-i\vec u_3$ has a vanishing square, and it generates the degenerate plane of the ideal.</p>
+<p><strong>The Four Intersections in One Table.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>sector</th>
+<th>pairing</th>
+<th>$B^{2}$</th>
+<th>witness</th>
+<th>$\dim_{\mathbb{R}}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Sigma_{11}$</td>
+<td>$\neq0$</td>
+<td>$\neq0$</td>
+<td>$e_t+2\vec e_x$</td>
+<td>$8$</td>
+</tr>
+<tr>
+<td>$\Sigma_{10}$</td>
+<td>$\neq0$</td>
+<td>$=0$</td>
+<td>$e_t$</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>$\Sigma_{01}$</td>
+<td>$=0$</td>
+<td>$\neq0$</td>
+<td>$\tilde\Pi_+(\vec u_{\mathrm r})$</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>$\Sigma_{00}$</td>
+<td>$=0$</td>
+<td>$=0$</td>
+<td>$\vec u_2-i\vec u_3$</td>
+<td>$4$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Corollary (a Dirac spinor is invertible exactly when its parts pair).</strong> By $N(X)=2B(X_+,X_-)$, the element $X$ is invertible if and only if
+$B(X_+,X_-)\neq0$, and in that case both parts are nonzero.</p>
+<h2 id="the-two-parts-are-exchanged-on-the-right">The Two Parts Are Exchanged on the Right</h2>
+<p><strong>Theorem (no left multiplication crosses).</strong> For every $a\in\mathbb{B}$,</p>
+<p>$$
+a\,S_+(\vec u_{\mathrm r})\subseteq S_+(\vec u_{\mathrm r}),\qquad a\,S_-(\vec u_{\mathrm r})\subseteq S_-(\vec u_{\mathrm r}).
+$$</p>
+<p><em>Proof.</em> Each summand is a left ideal.</p>
+<p><strong>Theorem (a perpendicular unit vector exchanges the parts).</strong> Let $\vec v$ be a real unit vector perpendicular to $\vec u_{\mathrm r}$, read as an
+element of the algebra. Then the right multiplication $X\mapsto X\vec v$ is left-linear, carries $S_+(\vec u_{\mathrm r})$ bijectively onto
+$S_-(\vec u_{\mathrm r})$ and $S_-(\vec u_{\mathrm r})$ bijectively onto $S_+(\vec u_{\mathrm r})$, and satisfies $(X\vec v)\vec v=-X$ on the
+whole algebra.</p>
+<p><em>Proof.</em> Left-linearity: $(aX)\vec v=a(X\vec v)$. The product $\tilde\Pi_+(\vec u_{\mathrm r})\vec v$ equals
+$\tfrac12(\vec v+i\vec u_{\mathrm r}\vec v)$, and $\vec u_{\mathrm r}\vec v=-\vec v\vec u_{\mathrm r}$ at a perpendicular pair, so the product is a
+nonzero element of the ideal $S_-(\vec u_{\mathrm r})$; hence $S_+(\vec u_{\mathrm r})\vec v\subseteq S_-(\vec u_{\mathrm r})$. The map is injective
+because $\vec v$ is invertible, with $\vec v^{-1}=-\vec v$, and the two ideals have the same real dimension $4$, so the image is the whole of
+$S_-(\vec u_{\mathrm r})$. The same computation at $-\vec u_{\mathrm r}$ gives the other direction. Finally $\vec v^{2}=-e_t$, so
+$(X\vec v)\vec v=-X$, which also proves the two maps inverse to each other.</p>
+<p><strong>Corollary (the pair is one spinor space taken twice).</strong> As a left module $\mathbb{B}\cong S\oplus S$ with $S$ the simple module, and the exchange is
+a left-linear isomorphism of the two summands. So the Dirac spinor is not the carrier of a four-dimensional irreducible module: the left action on it
+is two-dimensional and repeats.</p>
+<p><strong>Theorem (the exchanges form a complex line).</strong> The left-linear maps $S_+(\vec u_{\mathrm r})\to S_-(\vec u_{\mathrm r})$ form a complex vector
+space of dimension $1$.</p>
+<p><em>Proof.</em> A right multiplication $X\mapsto XM$ carries $S_+(\vec u_{\mathrm r})$ into $S_-(\vec u_{\mathrm r})$ exactly when
+$\tilde\Pi_+M\tilde\Pi_+=0$: the image is $\mathbb{B}\tilde\Pi_+M$, which lies in $\mathbb{B}\tilde\Pi_-$ exactly when
+$\tilde\Pi_+M=\tilde\Pi_+M\tilde\Pi_-$. On the four corners of the algebra at the axis this condition kills the corner
+$\tilde\Pi_+\mathbb{B}\tilde\Pi_+$ and nothing else, so the multipliers that give such a map form a complex vector space of dimension $3$. Two of
+them give the same map exactly when their difference is annihilated on the left by $\tilde\Pi_+$, that is exactly when the difference lies in
+$\tilde\Pi_-\mathbb{B}$, of complex dimension $2$. The maps form a space of dimension $3-2=1$, and each of them is the map $X\mapsto XE$ attached to
+a single element $E$ of the corner $\tilde\Pi_+\mathbb{B}\tilde\Pi_-$.</p>
+<p><strong>Corollary (the multiplier is one corner element, and the perpendicular axes differ by a phase).</strong> The maps are exactly the maps $X\mapsto XE$ with
+$E$ in the corner $\tilde\Pi_+(\vec u_{\mathrm r})\mathbb{B}\tilde\Pi_-(\vec u_{\mathrm r})$, a complex line, and the correspondence is bijective. A
+perpendicular real unit vector gives $E=\tilde\Pi_+(\vec u_{\mathrm r})\vec v$, and for $\vec v=\cos\varphi\,\vec u_2+\sin\varphi\,\vec u_3$
+that corner element runs once round the circle of elements of modulus one. So the perpendicular real axes carry the phase of the exchange, and not a
+direction of it.</p>
+<p><strong>Remark (the exchange preserves the norm and not the spectral predicate).</strong> Since $N(X\vec v)=N(X)N(\vec v)=N(X)$ at a real unit vector, the exchange
+preserves invertibility and carries the null cone to itself. It does not preserve $B^{2}$, and it is therefore not an automorphism of the sector
+structure. At $\vec u_{\mathrm r}=\vec e_z$ and $\vec v=\vec e_x$ the element $e_t$ has $B^{2}=0$ and its image $\vec e_x$ has $B^{2}=1$, so
+$\Sigma_{10}$ is carried to $\Sigma_{11}$; and $\tilde\Pi_+(\vec e_z)$ has $B^{2}=-\tfrac14$ and goes to an element with $B^{2}=0$, so
+$\Sigma_{01}$ is carried to $\Sigma_{00}$. The sector of a Dirac spinor is not an invariant of the exchange; only the first index is.</p>
+<h2 id="the-axis-is-a-parameter-of-the-family">The Axis Is a Parameter of the Family</h2>
+<p><strong>Theorem (the conjugation carries one axis to another).</strong> Let $u$ be a unitary element with $\operatorname{Ad}_u(\vec u_{\mathrm r})=\vec u_{\mathrm r}'$. Then
+$\operatorname{Ad}_u$ carries $\tilde\Pi_\pm(\vec u_{\mathrm r})$ to $\tilde\Pi_\pm(\vec u_{\mathrm r}')$, the plane to the plane, each ideal to the
+corresponding ideal, and each of the four sectors to itself.</p>
+<p><em>Proof.</em> The conjugation by a unitary element is an automorphism of the algebra; it carries $\vec u_{\mathrm r}$ to $\vec u_{\mathrm r}'$ and hence
+the idempotent to the idempotent, a complex line to a complex line and a left ideal to a left ideal. Both predicates are invariant: the norm is
+multiplicative and $N(u)N(u^{*})=N(uu^{*})=N(e_t)=1$ at a unitary element, so $N(uXu^{*})=N(X)$, and the trace is invariant under conjugation, so $Q_t$ and hence
+$B^{2}=N-Q_t^{2}$ are unchanged.</p>
+<p><strong>Corollary (what the family is indexed by).</strong> The planes and the ideals are indexed by the sphere of unit axes; the unordered pair
+$\{S_+(\vec u_{\mathrm r}),S_-(\vec u_{\mathrm r})\}$, which is a bispinor space, is indexed by the pair $\pm\vec u_{\mathrm r}$, that is by the real
+projective plane.</p>
+<p><strong>Remark (the axis is the only datum the definitions cost).</strong> The weight, the dimension, the pairing, the sector of each level and the exchange are
+the same at every axis. What the axis fixes is which two summands are called the parts; the substitution $\vec u_{\mathrm r}\mapsto-\vec u_{\mathrm r}$
+swaps them, since $\tilde\Pi_+(\vec u_{\mathrm r})=\tilde\Pi_-(-\vec u_{\mathrm r})$. So the pair is unordered and the ordering is a name.</p>
+<h2 id="what-the-definitions-do-not-use">What the Definitions Do Not Use</h2>
+<p><strong>No array.</strong> The idempotent, the weights, the plane, the ideals and the pairing are elements and identities of the algebra. No matrix is needed to
+state them, and none is used above. An array can be written afterwards, as the coordinates of an element in a chosen frame, and then the two parts of a
+Dirac spinor are two columns; the columns are a consequence of the decomposition and not its definition.</p>
+<p><strong>No second triple.</strong> The two parts are not distinguished by a second family of operators with opposite signs. The generator
+$\tfrac12 i\vec u_{\mathrm r}$ has the same weights on both parts, and what separates them is the idempotent that generates them, that is a datum
+of the axis.</p>
+<p><strong>No separate coupling parameter.</strong> The two parts are coupled by a right multiplication, and the multiplications that exchange them form a single
+complex line, spanned by the corner element the axis produces. A coupling is one complex number times that exchange; no new scalar is introduced, and
+none is needed, because the line is already an object of the algebra.</p>
+<p><strong>No conjugate module.</strong> The second part is not a conjugate copy of the first. It is a copy of the first, isomorphic as a left module and exchanged
+with it by a left-linear map. Nothing in the construction uses a module on which the scalars act by their conjugates.</p>
+<p><strong>No Peirce basis and no volume element.</strong> The four corners of the algebra at the axis exist and are useful, and the article does not need them: the
+whole content is carried by the two idempotents, the generator and the two predicates.</p>
+<h2 id="summary">Summary</h2>
+<p>The three levels are the plane $\Sigma(\vec u_{\mathrm r})=\mathbb{C}\tilde\Pi_+(\vec u_{\mathrm r})$ of real dimension $2$, the spinor space
+$S_+(\vec u_{\mathrm r})=\mathbb{B}\tilde\Pi_+(\vec u_{\mathrm r})$ of real dimension $4$, and the bispinor space $\mathbb{B}=S_+\oplus S_-$ of real
+dimension $8$, nested in that order. The generator $\tfrac12 i\vec u_{\mathrm r}$ acts on the plane as $+\tfrac12$ and on the ideal with the two
+weights $\pm\tfrac12$, so $2s+1=2$; the rotation through $\theta$ is the left multiplication by
+$\cos\tfrac{\theta}{2}e_t+\sin\tfrac{\theta}{2}\vec u_{\mathrm r}$, which returns the spinor with the opposite sign at a full turn.</p>
+<p>The sector question has one answer on the plane and on the ideal and another on the pair. The plane and the ideal are null, so a spinor lies in
+$\Sigma_{01}$ away from the origin and in $\Sigma_{00}$ at it, and the doubly degenerate part of the ideal is the real plane
+$\mathbb{C}(\vec u_2-i\vec u_3)$ of square-zero elements. A Dirac spinor lies in any of the four sectors, because its norm is the pairing of its two
+parts, $N(X)=2B(X_+,X_-)$, so the first index asks whether the parts pair and the second whether $B^{2}$ survives; the witnesses are
+$e_t+2\vec e_x$, $e_t$, $\tilde\Pi_+$ and $\vec u_2-i\vec u_3$.</p>
+<p>The two parts are exchanged on the right, by a real unit vector perpendicular to the axis, which is left-linear and squares to $-1$; no left
+multiplication crosses. The pair is therefore one spinor space taken twice, the exchanges form a complex line spanned by the corner element of the
+axis, and the axis is the only datum the definitions cost, with the pair unordered and indexed by the real projective plane. The exchange preserves
+the norm and not $B^{2}$, so it moves elements between sectors.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$</td>
+<td>the biquaternion algebra, real dimension $8$, complex dimension $4$</td>
 </tr>
 <tr>
 <td>$e_t,\vec e_x,\vec e_y,\vec e_z$</td>
-<td>The units, $e_t^2=e_t$ and $\vec e_k^2=-e_t$</td>
+<td>the units, $e_t^{2}=e_t$, $\vec e_k^{2}=-e_t$, $\vec e_x\vec e_y=\vec e_z$</td>
 </tr>
 <tr>
-<td>$L_a\tilde{Ξ}=a\tilde{Ξ}$, $R_b\tilde{Ξ}=\tilde{Ξ}b$</td>
-<td>Left and right multiplication; they commute</td>
+<td>$\tilde Q=Q_te_t+\vec Q$</td>
+<td>a general element, with $Q_\mu$ complex</td>
+</tr>
+<tr>
+<td>$N(\tilde Q)=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$</td>
+<td>the norm, the first predicate</td>
+</tr>
+<tr>
+<td>$B^{2}(\tilde Q)=Q_x^{2}+Q_y^{2}+Q_z^{2}$</td>
+<td>the square of the vector part, the second predicate</td>
+</tr>
+<tr>
+<td>$B(X,Y)$</td>
+<td>the polar form of the norm, $\tfrac12\bigl(N(X+Y)-N(X)-N(Y)\bigr)$</td>
+</tr>
+<tr>
+<td>$N-B^{2}=Q_t^{2}$</td>
+<td>the difference of the two conditions</td>
+</tr>
+<tr>
+<td>$\Sigma_{ij}$</td>
+<td>the sector with $N\neq0$ for $i=1$ and $B^{2}\neq0$ for $j=1$</td>
+</tr>
+<tr>
+<td>$\vec u_{\mathrm r}$, $\vec u_2,\vec u_3$</td>
+<td>a unit real axis and an oriented orthonormal pair completing it</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_\pm(\vec u_{\mathrm r})=\tfrac12(e_t\pm i\vec u_{\mathrm r})$</td>
+<td>the idempotents of the axis</td>
+</tr>
+<tr>
+<td>$\Sigma(\vec u_{\mathrm r})=\mathbb{C}\tilde\Pi_+(\vec u_{\mathrm r})$</td>
+<td>the plane, a spinor, real dimension $2$; the letter takes the axis as argument, while a sector $\Sigma_{ij}$ takes subscripts</td>
+</tr>
+<tr>
+<td>$S_\pm(\vec u_{\mathrm r})=\mathbb{B}\tilde\Pi_\pm(\vec u_{\mathrm r})$</td>
+<td>the spinor spaces, real dimension $4$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}=S_+\oplus S_-$</td>
+<td>a bispinor space, real dimension $8$</td>
 </tr>
 <tr>
 <td>$\tilde S_k=\tfrac12 i\vec e_k$</td>
-<td>The spin generators, Hermitian, with eigenvalues $\pm\tfrac12$ on a carrier</td>
+<td>the spin generators, $\vec u_{\mathrm r}\cdot\vec S=\tfrac12 i\vec u_{\mathrm r}$</td>
 </tr>
 <tr>
-<td>$\vec S$</td>
-<td>The same generators read as one vector, $\vec u\cdot\vec S=u_k\tilde S_k$; pure, so arrowed and without the tilde</td>
+<td>$\nu(\vec u_{\mathrm r})=\tilde\Pi_-\vec u_2\tilde\Pi_+$</td>
+<td>the companion nilpotent, the $-\tfrac12$ vector of the ideal</td>
 </tr>
 <tr>
-<td>$\vec u$</td>
-<td>A unit real vector, the declared direction</td>
+<td>$\vec u_2-i\vec u_3$</td>
+<td>the square-zero element spanning the doubly degenerate plane of the ideal</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_\pm(\vec u)=\tfrac12(e_t\pm i\vec u)$</td>
-<td>The rank-one idempotents at the axis; $\tilde\Pi_+\tilde\Pi_-=0$ and $\tilde\Pi_++\tilde\Pi_-=e_t$</td>
+<td>$X=X_++X_-$</td>
+<td>a Dirac spinor and its two parts</td>
 </tr>
 <tr>
-<td>$S_\pm(\vec u)=\mathbb{B}\tilde\Pi_\pm(\vec u)$</td>
-<td>The minimal left ideals at the axis, $\mathbb{B}=S_+\oplus S_-$</td>
-</tr>
-<tr>
-<td>$(d_0;d_1)$</td>
-<td>The coordinates of an elementary spinor on its carrier</td>
-</tr>
-<tr>
-<td>$\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$</td>
-<td>A Dirac spinor, one part in each carrier</td>
-</tr>
-<tr>
-<td>$R(i\vec u)$</td>
-<td>The grading of the two parts, $+1$ on $S_+(\vec u)$ and $-1$ on $S_-(\vec u)$; $\tfrac12(\mathrm{id}+R(i\vec u))$ is the projector $R(\tilde\Pi_+(\vec u))$</td>
-</tr>
-<tr>
-<td>$S^{\mathrm{c}}$</td>
-<td>The conjugate module, on which $Q$ acts as $\bar Q$</td>
-</tr>
-<tr>
-<td>$\mathsf{M}_2$, $\sigma_k$</td>
-<td>The matrix model, $\mathsf{M}_2(e_t)=I_2$ and $\mathsf{M}_2(i\vec e_k)=\sigma_k$, with $\sigma_k$ the Pauli matrices</td>
-</tr>
-<tr>
-<td>$s=\tfrac12$, $2s+1=2$</td>
-<td>The spin of the carrier and its dimension</td>
-</tr>
-<tr>
-<td>$\vec\Upsilon_{-+}=\tfrac12(i\vec e_x+\vec e_y)$</td>
-<td>The nilpotent weight $-\tfrac12$ vector of $S_+(\vec e_z)$</td>
-</tr>
-<tr>
-<td>$R(i\vec v)$, $\vec v\perp\vec u$</td>
-<td>The left-linear exchange of the two parts; unique up to a nonzero scalar</td>
+<td>$Q_t=\tfrac12\lambda$</td>
+<td>the scalar coordinate of a spinor</td>
 </tr>
 </tbody>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><a href="the-carriers-of-the-biquaternion-algebra.html">The Carriers of the Biquaternion Algebra</a>, for the definition of spin as a maximal weight, the Casimir, the sphere of minimal left ideals, the double cover and the four uses of the word spin.</li>
-<li><a href="operator-chirality-on-the-biquaternion-algebra.html">Operator Chirality on the Biquaternion Algebra</a>, for the side of a multiplication as the chirality, and for the swap.</li>
-<li><a href="the-polarized-module-of-the-biquaternion-algebra.html">The Polarized Module of the Biquaternion Algebra</a>, for the decomposition $V\cong S\oplus S$ of the carrier and the two spinor spaces.</li>
-<li><a href="the-pauli-module-of-the-biquaternion-algebra.html">The Pauli Module of the Biquaternion Algebra</a>, for the two slots as two copies of one module and for the chirality operator whose eigenspaces they are.</li>
-<li><a href="the-unpolarized-module-of-the-biquaternion-algebra.html">The Unpolarized Module of the Biquaternion Algebra</a>, for the Dirac module $S\oplus S^{\mathrm{c}}$, the conjugate action on the second factor, and the no-go theorem on the basis operator.</li>
-<li><a href="quaternion-rotations-and-reflections.html">Quaternion Rotations and Reflections</a>, for the rotation through $\theta$ about $u$ as the adjoint action of $\cos\tfrac{\theta}{2}+u\sin\tfrac{\theta}{2}$, which fixes the sign used above.</li>
-<li><a href="spinors-as-peirce-coordinates.html">Spinors as Peirce Coordinates</a>, for the coordinate vector on a Peirce carrier and the weight condition that makes it a spinor.</li>
-<li><a href="spinors-as-coordinates-in-m4c.html">Spinors as Coordinates in $M_4(\mathbb{C})$</a>, for the same construction at $n=4$, the $2+2$ chiral split and the higher spin.</li>
-<li><a href="../articles_physics/the-dirac-equation-in-biquaternionic-form.html">The Dirac Equation in Biquaternionic Form</a>, for the chiral pair and the mass term that the last section reads.</li>
-<li><a href="peirce-coordinates-and-companion-nilpotents.html">Peirce Coordinates and Companion Nilpotents</a>, for the coordinate theory of a carrier and its nilpotent companion.</li>
-<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the Peirce decomposition and the corner algebras.</li>
-<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge University Press, 2nd ed. 2001), for the classical construction of the spinor spaces and its comparison with the algebraic one.</li>
+<li><a href="the-spin-half-bispinor-spaces.html">Introduction to the Spin-Half Bispinors</a>, for the plane, the two spinor spaces and the family of bispinor
+spaces.</li>
+<li><a href="the-spin-half-bispinor-spaces-and-n-norm-regularity.html">The Spin-Half Bispinors and N Norm Regularity</a>, for the nullity of the plane and of
+the ideals, and the pairing of the two halves.</li>
+<li><a href="the-spin-half-bispinor-spaces-and-spectral-regularity.html">The Spin-Half Bispinors and Spectral Regularity</a>, for the spectrum $\{0,\lambda\}$
+of the plane and the degenerate plane inside an ideal.</li>
+<li><a href="the-spin-half-bispinor-spaces-and-the-sectors-of-n-and-spectral-regularity.html">The Spin-Half Bispinors and the Sectors of N and Spectral Regularity</a>,
+for the four intersections of the bispinor space with the sectors, with their dimensions.</li>
+<li><a href="the-carriers-the-representation-the-spin-and-the-closure.html">The Carriers, the Representation, the Spin and the Closure</a>, for the definition of
+spin as a maximal weight, the two identities from which the spectra are read, and the double cover.</li>
+<li><a href="relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html">Relations between the N Norm and Spectral Regularity and Degeneracy</a>,
+for the two predicates, the four sectors and the strata.</li>
+<li><a href="the-spin-zero-centre-subspace.html">Introduction to the Spin-Zero Centre Subspace</a>, for the carrier of spin $0$ and the degenerate case of the
+same construction.</li>
+<li><a href="the-spin-one-anti-hermitian-subspace.html">Introduction to the Spin-One Anti-Hermitian Subspace</a>, for the carrier of spin $1$ and the closure in
+the anti-Hermitian space.</li>
+<li><a href="the-spin-zero-centre-subspace-and-the-sectors-of-n-and-spectral-regularity.html">The Spin-Zero Centre Subspace and the Sectors of N and Spectral Regularity</a>,
+for the sector count at the smallest carrier.</li>
+<li><a href="the-spin-one-anti-hermitian-subspace-and-the-sectors-of-n-and-spectral-regularity.html">The Spin-One Anti-Hermitian Subspace and the Sectors of N and Spectral Regularity</a>,
+for the sector count at the largest of the three carriers.</li>
 </ul>
       </div>
     </main>

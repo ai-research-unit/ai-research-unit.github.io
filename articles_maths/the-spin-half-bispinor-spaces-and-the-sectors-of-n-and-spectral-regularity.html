@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Spin-Half Bispinors and the Sectors of N and Spectral Regularity — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-spin-half-bispinors-and-the-sectors-of-n-and-spectral-regularity"><strong>The Spin-Half Bispinors and the Sectors of N and Spectral Regularity</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The spin-half carrier is the plane $\Sigma(\vec u_{\mathrm r})=\mathbb{C}\tilde\Pi_+(\vec u_{\mathrm r})$, of real dimension $2$. Its two closures
+are the spinor spaces $S_\pm(\vec u_{\mathrm r})=\mathbb{B}\tilde\Pi_\pm(\vec u_{\mathrm r})$, of real dimension $4$, and their sum, a bispinor space,
+which as a set is the whole algebra.</p>
+<p>This article places all three levels in the four sectors cut by the two predicates $N\neq0$ and $B^{2}\neq0$. The three levels answer differently,
+and the difference is the content of the article. On the plane the norm vanishes everywhere, so the plane meets $\Sigma_{01}$ away from the origin
+and $\Sigma_{00}$ at the origin, and nothing else. On a spinor space the same holds with one change: the elements whose scalar coordinate vanishes
+form a real plane of square-zero elements, and that plane is the part of $\Sigma_{00}$ the spinor space contains. On a bispinor space all four
+sectors are met, and the reason is that the bispinor space is the algebra.</p>
+<p>The bispinor case supplies the sharpest statement of the article. Inside a bispinor space the norm is the pairing of the two spinor components,
+$N(X_++X_-)=2B(X_+,X_-)$, so the first index of the sector is decided by whether the two components pair at all, and the second index is decided by
+$B^{2}$ separately. The two indices therefore come from two different places, which is why the four combinations all occur.</p>
+<p>The predicates, the sectors and the strata are defined in <em>Relations between the N Norm and Spectral Regularity and Degeneracy</em>, and the definitions
+are repeated below. The spaces themselves are <em>Introduction to the Spin-Half Bispinors</em>. The two predicates taken one at a time are <em>The
+Spin-Half Bispinors and N Norm Regularity</em> and <em>The Spin-Half Bispinors and Spectral Regularity</em>.</p>
+<p>Nothing below is a statement of physics. The elements are written $X,Y$. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the
+basis $e_t,\vec e_x,\vec e_y,\vec e_z$, with $e_t$ the identity, $\vec e_k^{2}=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, with complex coefficients.
+The element $i$ commutes with the units and satisfies $i^{2}=-e_t$. A general element is $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu=q_\mu+iq'_\mu$ complex
+and $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. A unit real axis is written $\vec u_{\mathrm r}$, with $\vec u_2,\vec u_3$ an oriented orthonormal
+pair completing it, and $G$ is the group of unitary elements, $G=\mathrm{U}(2)=\{u:uu^{*}=e_t\}$.</p>
+<h2 id="the-two-predicates-and-the-four-sectors">The Two Predicates and the Four Sectors</h2>
+<p><strong>Definition (the norm and the square of the vector part).</strong> For $\tilde Q=Q_te_t+\vec Q$,</p>
+<p>$$
+N(\tilde Q)=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2},\qquad B^{2}(\tilde Q)=Q_x^{2}+Q_y^{2}+Q_z^{2}.
+$$</p>
+<p><strong>Theorem (the two conditions differ by the scalar square).</strong> $N(\tilde Q)-B^{2}(\tilde Q)=Q_t^{2}$, and the polar form of the norm is</p>
+<p>$$
+B(X,Y)=\tfrac12\bigl(N(X+Y)-N(X)-N(Y)\bigr),
+$$</p>
+<p>symmetric and complex-bilinear.</p>
+<p><em>Proof.</em> The difference is the subtraction of two sums of squares. The polar form is the usual polarisation of a quadratic form.</p>
+<p><strong>Definition (the two predicates).</strong> An element is <strong>norm-regular</strong> when $N(\tilde Q)\neq0$ and <strong>spectrally regular</strong> when $B^{2}(\tilde Q)\neq0$.
+The zero loci are the <strong>null cone</strong> $\mathcal N=\{N=0\}$ and the <strong>spectral-degenerate cone</strong> $\mathcal S=\{B^{2}=0\}$.</p>
+<p><strong>Definition (the four sectors).</strong> For $i,j\in\{0,1\}$ the sector $\Sigma_{ij}$ is the set of elements with $N\neq0$ if $i=1$ and $N=0$ if $i=0$,
+and with $B^{2}\neq0$ if $j=1$ and $B^{2}=0$ if $j=0$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>sector</th>
+<th>conditions</th>
+<th>name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Sigma_{11}$</td>
+<td>$N\neq0$, $B^{2}\neq0$</td>
+<td>doubly regular</td>
+</tr>
+<tr>
+<td>$\Sigma_{10}$</td>
+<td>$N\neq0$, $B^{2}=0$</td>
+<td>norm-regular, spectrally degenerate</td>
+</tr>
+<tr>
+<td>$\Sigma_{01}$</td>
+<td>$N=0$, $B^{2}\neq0$</td>
+<td>norm-degenerate, spectrally regular</td>
+</tr>
+<tr>
+<td>$\Sigma_{00}$</td>
+<td>$N=0$, $B^{2}=0$</td>
+<td>doubly degenerate</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Lemma (a vanishing predicate collapses the partition).</strong> If $N$ vanishes on a subset $W$ then $W\subseteq\Sigma_{01}\cup\Sigma_{00}$, and $W$ meets
+neither $\Sigma_{11}$ nor $\Sigma_{10}$.</p>
+<p><em>Proof.</em> The first index is $0$ at every point of $W$; the second index is free, which leaves the two sectors named.</p>
+<p>The lemma settles the plane and the spinor spaces at one stroke, since both lie in $\mathcal N$.</p>
+<h2 id="the-carrier-the-plane-and-the-sectors">The Carrier: The Plane and the Sectors</h2>
+<p><strong>The plane and its coordinates.</strong> The idempotent of the axis is $\tilde\Pi_+(\vec u_{\mathrm r})=\tfrac12(e_t+i\vec u_{\mathrm r})$, and the plane is</p>
+<p>$$
+\Sigma(\vec u_{\mathrm r})=\mathbb{C}\tilde\Pi_+(\vec u_{\mathrm r})=\{\lambda\tilde\Pi_+(\vec u_{\mathrm r}):\lambda\in\mathbb{C}\},
+$$</p>
+<p>of real dimension $2$. Its scalar coordinate is $Q_t=\lambda/2$.</p>
+<p><strong>Theorem (the norm vanishes on the plane).</strong> For every complex $\lambda$,</p>
+<p>$$
+N\bigl(\lambda\tilde\Pi_+(\vec u_{\mathrm r})\bigr)=\lambda^{2}N\bigl(\tilde\Pi_+(\vec u_{\mathrm r})\bigr)=0 .
+$$</p>
+<p><em>Proof.</em> The norm is multiplicative and the idempotent has norm $\tfrac14(1-\lvert\vec u_{\mathrm r}\rvert^{2})=0$, the axis being of unit length.</p>
+<p><strong>Theorem (the square of the vector part on the plane).</strong> For every complex $\lambda$,</p>
+<p>$$
+B^{2}\bigl(\lambda\tilde\Pi_+(\vec u_{\mathrm r})\bigr)=-\tfrac14\lambda^{2}=-Q_t^{2}.
+$$</p>
+<p><em>Proof.</em> The coordinates are $Q_t=\tfrac12\lambda$ and $Q_k=\tfrac i2\lambda u_k$, so the sum of the vector squares is $-\tfrac14\lambda^{2}$ times
+the squared length of the axis.</p>
+<h3 id="the-sector-math77">The Sector $\Sigma_{11}$</h3>
+<p><strong>Theorem.</strong> $\Sigma(\vec u_{\mathrm r})\cap\Sigma_{11}=\varnothing$.</p>
+<p><em>Proof.</em> The sector requires $N\neq0$ and the norm vanishes on the plane.</p>
+<h3 id="the-sector-math80">The Sector $\Sigma_{10}$</h3>
+<p><strong>Theorem.</strong> $\Sigma(\vec u_{\mathrm r})\cap\Sigma_{10}=\varnothing$.</p>
+<p><em>Proof.</em> The sector requires $N\neq0$, and the norm vanishes on the plane. The exclusion is the same one as for $\Sigma_{11}$, read on the other
+index.</p>
+<p><strong>Remark (the two exclusions are one).</strong> The two regular sectors differ in the second index and agree in the first, so a subset on which the norm
+vanishes misses both. The plane misses the whole of the regular part of the algebra and none of its degenerate part.</p>
+<h3 id="the-sector-math84">The Sector $\Sigma_{01}$</h3>
+<p><strong>Theorem.</strong> The intersection with the sector is the plane minus its origin:</p>
+<p>$$
+\Sigma(\vec u_{\mathrm r})\cap\Sigma_{01}=\{\lambda\tilde\Pi_+(\vec u_{\mathrm r}):\lambda\neq0\}.
+$$</p>
+<p><em>Proof.</em> On the plane $N=0$, so the first index is $0$ and the sector is decided by the second. The value is $B^{2}=-\lambda^{2}/4$, which vanishes
+exactly at $\lambda=0$.</p>
+<p><strong>Corollary (the spectrum of an element of the plane).</strong> For $\lambda\neq0$ the spectrum is $\{0,\lambda\}$, with distinct eigenvalues, and the
+element is a zero divisor with a full eigenbasis.</p>
+<p><strong>Remark (the carrier lies in one sector).</strong> The punctured plane is contained in a single sector, and its sector is the one in which the norm fails
+and the spectrum survives. The claim is not that the plane is special among the planes, since the same holds at every axis; it is that the carrier
+is the cleanest inhabitant of $\Sigma_{01}$, and the sector is named for the pattern it shows.</p>
+<h3 id="the-sector-math93">The Sector $\Sigma_{00}$</h3>
+<p><strong>Theorem.</strong> $\Sigma(\vec u_{\mathrm r})\cap\Sigma_{00}=\{0\}$.</p>
+<p><em>Proof.</em> The origin is the point $\lambda=0$, where both forms vanish, and it is the only point of the plane where $B^{2}$ vanishes.</p>
+<p><strong>Remark (the plane is null and its apex is the only doubly degenerate point).</strong> The whole plane lies in the null cone, and one point of it lies in
+the spectral-degenerate cone. The two cones meet the plane in a line and in a point, and the point is the origin of the line.</p>
+<p><strong>The intersections in one table.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>sector</th>
+<th>condition on $\lambda$</th>
+<th>intersection</th>
+<th>dimension over $\mathbb{R}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Sigma_{11}$</td>
+<td>impossible, $N=0$</td>
+<td>$\varnothing$</td>
+<td>—</td>
+</tr>
+<tr>
+<td>$\Sigma_{10}$</td>
+<td>impossible, $N=0$</td>
+<td>$\varnothing$</td>
+<td>—</td>
+</tr>
+<tr>
+<td>$\Sigma_{01}$</td>
+<td>$\lambda\neq0$</td>
+<td>$\mathbb{C}^{\times}\tilde\Pi_+$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$\Sigma_{00}$</td>
+<td>$\lambda=0$</td>
+<td>$\{0\}$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-first-closure-the-spinor-space-and-the-sectors">The First Closure: The Spinor Space and the Sectors</h2>
+<p><strong>The space and its coordinates.</strong> The spinor space is $S_+(\vec u_{\mathrm r})=\mathbb{B}\tilde\Pi_+(\vec u_{\mathrm r})$, of real dimension $4$,
+with the complex basis $\tilde\Pi_+$ and $\vec u_2\tilde\Pi_+$. An element is</p>
+<p>$$
+Y=\alpha\tilde\Pi_+(\vec u_{\mathrm r})+\beta\,\vec u_2\tilde\Pi_+(\vec u_{\mathrm r}),
+$$</p>
+<p>with $\alpha,\beta$ complex, and its scalar coordinate is $Q_t(Y)=\alpha/2$. The second spinor space $S_-(\vec u_{\mathrm r})$ is the same space at the
+complementary idempotent.</p>
+<p><strong>Theorem (the norm vanishes on the ideal).</strong> For every element $Y$ of $S_+(\vec u_{\mathrm r})$,</p>
+<p>$$
+N(Y)=0,\qquad B^{2}(Y)=-Q_t(Y)^{2}.
+$$</p>
+<p><em>Proof.</em> The space is $\mathbb{B}\tilde\Pi_+$, the norm is multiplicative and $N(\tilde\Pi_+)=0$, so the norm vanishes. For the second display, the two
+eigenvalues have product $N(Y)=0$ and sum $2Q_t(Y)$, so they are $0$ and $2Q_t(Y)$; the discriminant identity
+$(\lambda_1-\lambda_2)^{2}=-4B^{2}$ then reads $4Q_t(Y)^{2}=-4B^{2}(Y)$, whence $B^{2}=-Q_t^{2}$.</p>
+<p><strong>Corollary (one number decides the sector).</strong> Inside a spinor space the sector of an element is decided by the single complex number $Q_t(Y)$: the
+element lies in $\Sigma_{01}$ when $Q_t(Y)\neq0$ and in $\Sigma_{00}$ when $Q_t(Y)=0$.</p>
+<h3 id="the-sector-math138">The Sector $\Sigma_{11}$</h3>
+<p><strong>Theorem.</strong> $S_+(\vec u_{\mathrm r})\cap\Sigma_{11}=\varnothing$.</p>
+<p><em>Proof.</em> The norm vanishes on the ideal.</p>
+<h3 id="the-sector-math140">The Sector $\Sigma_{10}$</h3>
+<p><strong>Theorem.</strong> $S_+(\vec u_{\mathrm r})\cap\Sigma_{10}=\varnothing$.</p>
+<p><em>Proof.</em> The norm vanishes on the ideal.</p>
+<p><strong>Remark (the closure repairs invariance and not nullity).</strong> The first closure adds the transverse direction, and it adds it inside the null cone. The
+plane is not invariant under the whole group and the spinor space is, so the closure repairs the invariance; it does not repair the norm, and the
+ideal is as null as the plane.</p>
+<h3 id="the-sector-math142">The Sector $\Sigma_{01}$</h3>
+<p><strong>Theorem.</strong> The intersection is the ideal minus a real plane:</p>
+<p>$$
+S_+(\vec u_{\mathrm r})\cap\Sigma_{01}=\{Y\in S_+(\vec u_{\mathrm r}):Q_t(Y)\neq0\}.
+$$</p>
+<p><em>Proof.</em> On the ideal $N=0$ and $B^{2}=-Q_t^{2}$, so the second index is $1$ exactly when $Q_t\neq0$.</p>
+<p><strong>Corollary (what the sector adds).</strong> The part of the ideal in $\Sigma_{01}$ is the complement of the complex line $\mathbb{C}\vec u_2\tilde\Pi_+$,
+which is a real plane, and it is non-empty and open in the ideal.</p>
+<h3 id="the-sector-math150">The Sector $\Sigma_{00}$</h3>
+<p><strong>Theorem (the degenerate part of the ideal is a real plane).</strong> In the basis above,</p>
+<p>$$
+S_+(\vec u_{\mathrm r})\cap\Sigma_{00}=\mathbb{C}\bigl(\vec u_2-i\vec u_3\bigr),
+$$</p>
+<p>of real dimension $2$. The basis element $\vec u_2\tilde\Pi_+(\vec u_{\mathrm r})$ equals $\tfrac12(\vec u_2-i\vec u_3)$, so its complex
+multiples are the complex multiples of $\vec u_2-i\vec u_3$.</p>
+<p><em>Proof.</em> By the display of the previous theorem the intersection is the set $Q_t=0$, that is $\alpha=0$. And the second basis element satisfies
+$\vec u_2\tilde\Pi_+(\vec u_{\mathrm r})=\tfrac12(\vec u_2-i\vec u_3)$, whose scalar coordinate is zero, so the complex multiples of that
+element are exactly the set.</p>
+<p><strong>Theorem (the degenerate part is the square-zero part).</strong> For an element $Y$ of the ideal,</p>
+<p>$$
+Y^{2}=0\iff Y\in\Sigma_{00}.
+$$</p>
+<p><em>Proof.</em> On the ideal the quadratic relation $Y^{2}-2Q_t(Y)Y+N(Y)e_t=0$ reduces to $Y^{2}=2Q_t(Y)Y$. If $Q_t(Y)=0$ the square vanishes; conversely a
+non-zero square-zero element forces $Q_t(Y)Y=0$, hence $Q_t(Y)=0$.</p>
+<p><strong>Remark (the degenerate plane is not the carrier).</strong> The degenerate plane is spanned by a square-zero element and the carrier is spanned by an
+idempotent, so the two planes of the ideal meet only at the origin. The family of degenerate planes is indexed by the axis like the family of carriers,
+and no member of one family is a member of the other.</p>
+<p><strong>The intersections in one table.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>sector</th>
+<th>condition on $\alpha$</th>
+<th>intersection</th>
+<th>dimension over $\mathbb{R}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Sigma_{11}$</td>
+<td>impossible, $N=0$</td>
+<td>$\varnothing$</td>
+<td>—</td>
+</tr>
+<tr>
+<td>$\Sigma_{10}$</td>
+<td>impossible, $N=0$</td>
+<td>$\varnothing$</td>
+<td>—</td>
+</tr>
+<tr>
+<td>$\Sigma_{01}$</td>
+<td>$\alpha\neq0$</td>
+<td>the ideal minus a plane</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$\Sigma_{00}$</td>
+<td>$\alpha=0$</td>
+<td>$\mathbb{C}(\vec u_2-i\vec u_3)$</td>
+<td>$2$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-second-closure-the-bispinor-space-and-the-sectors">The Second Closure: The Bispinor Space and the Sectors</h2>
+<p><strong>The space.</strong> A bispinor space is the sum $\mathbb{B}=S_+(\vec u_{\mathrm r})\oplus S_-(\vec u_{\mathrm r})$, and as a set it is the whole algebra.
+Since the sectors partition the algebra, a bispinor space meets all four of them. What the spinor coordinates add is a description of each
+intersection, and that description is the content of this section.</p>
+<p><strong>Theorem (the norm is the pairing).</strong> Let $X=X_++X_-$ with $X_\pm\in S_\pm(\vec u_{\mathrm r})$. Then</p>
+<p>$$
+N(X)=2B(X_+,X_-).
+$$</p>
+<p><em>Proof.</em> The norm is quadratic with polar form $B$, so $N(X_++X_-)=N(X_+)+N(X_-)+2B(X_+,X_-)$, and the two pure terms vanish because each spinor
+space is null.</p>
+<p><strong>Corollary (the two indices come from two places).</strong> The first index is decided by the pairing of the two components and the second by $B^{2}$
+alone. Nothing forces the two decisions to agree, and the four combinations all occur.</p>
+<h3 id="the-sector-math188">The Sector $\Sigma_{11}$</h3>
+<p><strong>Theorem.</strong> The intersection is the set of elements whose two components pair nontrivially and whose square of the vector part is nonzero:</p>
+<p>$$
+\mathbb{B}\cap\Sigma_{11}=\{X:N(X)\neq0,\ B^{2}(X)\neq0\}=\{X:B(X_+,X_-)\neq0,\ B^{2}(X)\neq0\}.
+$$</p>
+<p>It is open and dense in the algebra, of real dimension $8$, and its complement is the union of the two cones, of real codimension $2$.</p>
+<p><em>Proof.</em> The first equality is the definition of the sector and the second is the theorem above. The two cones are the zero loci of non-zero
+polynomials in four complex variables, so their union is a complex hypersurface, and its complement is open, dense and of real dimension $8$.</p>
+<p><strong>Witness.</strong> The element $e_t+2\vec e_x$ has $N=1+4=5$ and $B^{2}=4$, so it lies in the sector.</p>
+<h3 id="the-sector-math196">The Sector $\Sigma_{10}$</h3>
+<p><strong>Theorem.</strong> The intersection is the set of elements whose components pair and whose square of the vector part vanishes:</p>
+<p>$$
+\mathbb{B}\cap\Sigma_{10}=\{X:B(X_+,X_-)\neq0,\ B^{2}(X)=0\}.
+$$</p>
+<p>It is of real dimension $6$, and it consists of invertible elements with a repeated eigenvalue.</p>
+<p><em>Proof.</em> The first index is $1$ and the second is $0$ by the two conditions, and $N\neq0$ is the invertibility condition. On $B^{2}=0$ the two eigenvalues
+coincide, by the criterion of the spectral predicate.</p>
+<p><strong>Witness.</strong> The identity $e_t$ has $N=1$ and $B^{2}=0$, and its components are the two idempotents, which pair to $\tfrac12$. So $e_t=\tilde\Pi_++\tilde\Pi_-$
+is the simplest element of the sector, and it is the element on which the first index survives and the second fails.</p>
+<h3 id="the-sector-math208">The Sector $\Sigma_{01}$</h3>
+<p><strong>Theorem.</strong> The intersection is the null cone with its apex removed:</p>
+<p>$$
+\mathbb{B}\cap\Sigma_{01}=\{X:N(X)=0,\ B^{2}(X)\neq0\}=\{X:B(X_+,X_-)=0,\ B^{2}(X)\neq0\}.
+$$</p>
+<p>It is of real dimension $6$ and it contains the punctured plane and the two ideals minus their degenerate planes.</p>
+<p><em>Proof.</em> The first index is $0$ by the vanishing of the pairing and the second is $1$ by the non-vanishing of $B^{2}$.</p>
+<p><strong>Witness.</strong> The idempotent $\tilde\Pi_+$ has $N=0$ and $B^{2}=-\tfrac14$, so it lies in the sector, and it is one of its two pure components.</p>
+<h3 id="the-sector-math217">The Sector $\Sigma_{00}$</h3>
+<p><strong>Theorem.</strong> The intersection is the nilpotent cone:</p>
+<p>$$
+\mathbb{B}\cap\Sigma_{00}=\{X:X^{2}=0\},
+$$</p>
+<p>the origin together with the nonzero pure nilpotents, of real dimension $4$.</p>
+<p><em>Proof.</em> The sector is $\{N=0,B^{2}=0\}$, which forces $Q_t=0$ and $\vec Q^{2}=0$, and these two conditions are equivalent to $X^{2}=0$.</p>
+<p><strong>Witness.</strong> The element $\vec u_2-i\vec u_3$ is a nonzero pure nilpotent, so its square vanishes and it lies in the sector; it is at once the
+generator of the degenerate plane of the ideal and a member of the sector of the doubly degenerate elements.</p>
+<p><strong>The intersections in one table.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>sector</th>
+<th>condition in the spinor coordinates</th>
+<th>intersection</th>
+<th>dimension over $\mathbb{R}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Sigma_{11}$</td>
+<td>$B(X_+,X_-)\neq0$, $B^{2}\neq0$</td>
+<td>open dense set</td>
+<td>$8$</td>
+</tr>
+<tr>
+<td>$\Sigma_{10}$</td>
+<td>$B(X_+,X_-)\neq0$, $B^{2}=0$</td>
+<td>invertible elements with a repeated eigenvalue</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>$\Sigma_{01}$</td>
+<td>$B(X_+,X_-)=0$, $B^{2}\neq0$</td>
+<td>null cone minus its apex</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>$\Sigma_{00}$</td>
+<td>$B(X_+,X_-)=0$, $B^{2}=0$</td>
+<td>nilpotent cone</td>
+<td>$4$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-pairing-decides-the-first-index">The Pairing Decides the First Index</h2>
+<p><strong>The statement.</strong> The first index of the sector is the vanishing or the non-vanishing of the pairing of the two spinor components, and the second is
+the vanishing or the non-vanishing of $B^{2}$. Neither index refers to the other, and the four combinations are the four sectors.</p>
+<p><strong>Why the pairing alone is not enough.</strong> A reader might expect the norm to decide the sector, since it decides invertibility. It decides one of the
+two indices only, and the other is free. The elements $\tilde\Pi_+$ and $\vec u_2-i\vec u_3$ have the same first index, both being null, and
+different second indices, $-\tfrac14$ and $0$. The elements $e_t$ and $e_t+2\vec e_x$ have the same first index, both being invertible, and different
+second indices, $0$ and $4$. Neither index is a function of the other.</p>
+<p><strong>The pairing at the carrier.</strong> On the plane the two components are $\lambda\tilde\Pi_+$ and $0$, so the pairing vanishes and the norm vanishes with
+it. The plane is the case in which one of the two components is absent, and the bispinor read is the case in which both are present.</p>
+<h2 id="the-axis-does-not-matter">The Axis Does Not Matter</h2>
+<p><strong>Theorem (the pattern is the same at every axis).</strong> Let $\vec u_{\mathrm r}'$ be a second unit real axis and let $u$ be a unit with
+$\operatorname{Ad}_u(\vec u_{\mathrm r})=\vec u_{\mathrm r}'$. Then</p>
+<p>$$
+\operatorname{Ad}_u\bigl(\tilde\Pi_\pm(\vec u_{\mathrm r})\bigr)=\tilde\Pi_\pm(\vec u_{\mathrm r}'),\qquad
+\operatorname{Ad}_u\bigl(S_\pm(\vec u_{\mathrm r})\bigr)=S_\pm(\vec u_{\mathrm r}'),
+$$</p>
+<p>and $\operatorname{Ad}_u$ carries each of the four intersections of this article to the corresponding intersection at the axis $\vec u_{\mathrm r}'$.</p>
+<p><em>Proof.</em> The conjugation by a unitary element is an automorphism of the algebra, so it carries an idempotent to an idempotent and a left ideal to a left ideal; it
+carries $\vec u_{\mathrm r}$ to $\vec u_{\mathrm r}'$, so it carries the idempotent of one axis to the idempotent of the other. Both predicates are
+invariant under it, by multiplicativity of the norm and invariance of the trace, so the sectors are preserved.</p>
+<p><strong>Corollary.</strong> The number of sectors met, the dimensions of the intersections and the strata they occupy do not depend on the axis. The family of
+bispinor spaces is infinite and its sectorial description is one description.</p>
+<p><strong>Remark (what the invariance does not say).</strong> The invariance is under conjugation, which is the action of the group on the algebra. It does not say
+that the plane is invariant under the whole group, and it is not: the plane is invariant only under the rotations about its own axis, which is why the
+first closure exists.</p>
+<h2 id="the-three-levels-compared">The Three Levels Compared</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>level</th>
+<th>dimension over $\mathbb{R}$</th>
+<th>sectors met</th>
+<th>$\Sigma_{11}$</th>
+<th>$\Sigma_{10}$</th>
+<th>$\Sigma_{01}$</th>
+<th>$\Sigma_{00}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>plane $\Sigma$</td>
+<td>$2$</td>
+<td>two</td>
+<td>$\varnothing$</td>
+<td>$\varnothing$</td>
+<td>$\mathbb{C}^{\times}\tilde\Pi_+$</td>
+<td>$\{0\}$</td>
+</tr>
+<tr>
+<td>spinor space $S_+$</td>
+<td>$4$</td>
+<td>two</td>
+<td>$\varnothing$</td>
+<td>$\varnothing$</td>
+<td>$Q_t\neq0$</td>
+<td>$\mathbb{C}(\vec u_2-i\vec u_3)$</td>
+</tr>
+<tr>
+<td>bispinor space $\mathbb{B}$</td>
+<td>$8$</td>
+<td>four</td>
+<td>open dense</td>
+<td>$B^{2}=0$, pairing nonzero</td>
+<td>null minus apex</td>
+<td>nilpotent cone</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Remark (the count grows with the level).</strong> The plane meets two sectors, the spinor space meets the same two with a larger doubly degenerate part, and
+the bispinor space meets all four. The growth is not a growth in dimension alone: the first closure keeps the norm vanished and only enlarges the part
+of $\Sigma_{00}$, while the second closure restores the norm and with it the two regular sectors.</p>
+<p><strong>Remark (the degenerate part grows first).</strong> Between the plane and the ideal the doubly degenerate part jumps from a point to a real plane, and the
+sector $\Sigma_{01}$ loses exactly that plane. The ideal is therefore the level at which the square-zero elements become a space of their own.</p>
+<h2 id="summary">Summary</h2>
+<p>The spin-half family has three levels, and this article places each in the four sectors. On the plane the norm vanishes identically and the square of
+the vector part is $-Q_t^{2}$, so the punctured plane lies in $\Sigma_{01}$, the origin lies in $\Sigma_{00}$, and the two regular sectors are met
+by nothing. On a spinor space the same two sectors occur, the elements with a vanishing scalar coordinate forming the real plane
+$\mathbb{C}(\vec u_2-i\vec u_3)$, which is exactly the set of square-zero elements of the ideal. On a bispinor space all four sectors are met, because
+the bispinor space is the algebra.</p>
+<p>The bispinor read is what distinguishes the two indices. The norm is the pairing of the two components, $N(X)=2B(X_+,X_-)$, so the first index asks
+whether the components pair and the second asks whether $B^{2}$ survives; the four combinations are the four sectors, and the sector $\Sigma_{10}$ is
+the one in which an invertible element has a repeated eigenvalue whose norm survives.</p>
+<p>Both predicates are invariant under scaling by a nonzero complex scalar and under conjugation by a unitary element, so the sector belongs to the
+orbit, and a unitary element carrying one axis to another carries the four intersections of one bispinor space to those of the other. The description is therefore the same at every
+axis.</p>
+<h2 id="the-boxed-summary">The Boxed Summary</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the point</th>
+<th>in plain words</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the family</td>
+<td>Three levels: the plane, the ideal that plane generates, and the sum of the two ideals. Each level has its own answer.</td>
+</tr>
+<tr>
+<td>the plane</td>
+<td>The norm vanishes identically, and the square of the vector part vanishes at the origin alone.</td>
+</tr>
+<tr>
+<td>the sectors of the plane</td>
+<td>The punctured plane lies in the norm-degenerate spectrally regular sector, and the origin lies in the doubly degenerate sector. The two sectors that need a nonzero norm are met by nothing.</td>
+</tr>
+<tr>
+<td>an ideal</td>
+<td>The same two sectors occur, and the doubly degenerate part of an ideal is a real plane, exactly the elements whose square vanishes.</td>
+</tr>
+<tr>
+<td>the sum</td>
+<td>All four sectors occur, because the sum of the two ideals is the whole algebra.</td>
+</tr>
+<tr>
+<td>why</td>
+<td>The norm on the sum is the pairing of the two components. The first question asks whether the components pair, the second asks whether the spectral condition survives, and the two answers are independent.</td>
+</tr>
+<tr>
+<td>the sector worth naming</td>
+<td>The one where the norm is nonzero and the two eigenvalues coincide.</td>
+</tr>
+<tr>
+<td>why the answer is stable</td>
+<td>Both conditions survive scaling and conjugation, so the answer belongs to the orbit and is the same at every axis.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$</td>
+<td>the biquaternion algebra, real dimension $8$</td>
+</tr>
+<tr>
+<td>$\tilde Q=Q_te_t+\vec Q$</td>
+<td>a general element, with $Q_\mu$ complex</td>
+</tr>
+<tr>
+<td>$N(\tilde Q)=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$</td>
+<td>the norm, the first predicate</td>
+</tr>
+<tr>
+<td>$B^{2}(\tilde Q)=Q_x^{2}+Q_y^{2}+Q_z^{2}$</td>
+<td>the square of the vector part, the second predicate</td>
+</tr>
+<tr>
+<td>$B(X,Y)$</td>
+<td>the polar form of the norm, $\tfrac12\bigl(N(X+Y)-N(X)-N(Y)\bigr)$</td>
+</tr>
+<tr>
+<td>$\mathcal N$, $\mathcal S$</td>
+<td>the null cone and the spectral-degenerate cone</td>
+</tr>
+<tr>
+<td>$\Sigma_{ij}$</td>
+<td>the sector with $N\neq0$ for $i=1$ and $B^{2}\neq0$ for $j=1$</td>
+</tr>
+<tr>
+<td>$\vec u_{\mathrm r}$, $\vec u_2,\vec u_3$</td>
+<td>a unit real axis and an oriented orthonormal pair completing it</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_\pm(\vec u_{\mathrm r})=\tfrac12(e_t\pm i\vec u_{\mathrm r})$</td>
+<td>the two idempotents of the axis</td>
+</tr>
+<tr>
+<td>$\Sigma(\vec u_{\mathrm r})=\mathbb{C}\tilde\Pi_+(\vec u_{\mathrm r})$</td>
+<td>the spinor plane, the carrier, real dimension $2$</td>
+</tr>
+<tr>
+<td>$S_\pm(\vec u_{\mathrm r})=\mathbb{B}\tilde\Pi_\pm(\vec u_{\mathrm r})$</td>
+<td>the spinor spaces, real dimension $4$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}=S_+\oplus S_-$</td>
+<td>a bispinor space, real dimension $8$</td>
+</tr>
+<tr>
+<td>$\vec u_2-i\vec u_3$</td>
+<td>the square-zero element spanning the degenerate plane of the ideal</td>
+</tr>
+<tr>
+<td>$\alpha,\beta$</td>
+<td>the coordinates of an element of the ideal</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-spin-half-bispinor-spaces.html">Introduction to the Spin-Half Bispinors</a>, for the plane, the two spinor spaces and the family of
+bispinor spaces.</li>
+<li><a href="the-spin-half-bispinor-spaces-and-n-norm-regularity.html">The Spin-Half Bispinors and N Norm Regularity</a>, for the nullity of the plane and
+of the ideals, and the pairing of the two halves.</li>
+<li><a href="the-spin-half-bispinor-spaces-and-spectral-regularity.html">The Spin-Half Bispinors and Spectral Regularity</a>, for the spectrum
+$\{0,\lambda\}$ of the plane and the degenerate plane inside an ideal.</li>
+<li><a href="relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html">Relations between the N Norm and Spectral Regularity and Degeneracy</a>,
+for the two predicates, the four sectors and the strata.</li>
+<li><a href="the-n-degenerate-spectrally-regular-sector.html">The N-Degenerate, Spectrally Regular Sector</a>, for the sector that contains the punctured plane.</li>
+<li><a href="the-n-degenerate-spectrally-degenerate-sector.html">The N-Degenerate, Spectrally Degenerate Sector</a>, for the sector that contains the square-zero
+plane of the ideal.</li>
+<li><a href="the-spin-zero-centre-subspace-and-the-sectors-of-n-and-spectral-regularity.html">The Spin-Zero Centre Subspace and the Sectors of N and Spectral Regularity</a>,
+for the same question answered on the centre.</li>
+<li><a href="the-spin-one-anti-hermitian-subspace-and-the-sectors-of-n-and-spectral-regularity.html">The Spin-One Anti-Hermitian Subspace and the Sectors of N and Spectral Regularity</a>,
+for the same question answered on the vector part and on the anti-Hermitian space.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

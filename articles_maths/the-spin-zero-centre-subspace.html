@@ -71,8 +71,8 @@
         <h1 id="introduction-to-the-spin-zero-centre-subspace"><strong>Introduction to the Spin-Zero Centre Subspace</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>One carrier of the biquaternion algebra under the rotation action has spin $0$, and its subspace is the centre. This article introduces that carrier: it states the subspace, the action on it, the two numbers that make the label $0$ unavoidable, and the place the subspace takes among the four spaces of the algebra.</p>
-<p>The carrier is the smallest of the three and the one with no argument. The rotation does not move it. An element of the centre is a complex multiple of the unit, and every conjugation by a unit fixes it, so the operator of the action is the identity at every axis and the generator is zero.</p>
-<p><strong>The question in one line.</strong> A carrier is a real subspace that the group carries onto itself and that has no invariant real subspace. Which subspace of $\mathbb{B}$ is fixed by every unit, of real dimension $1$.</p>
+<p>The carrier is the smallest of the three and the one with no argument. The rotation does not move it. An element of the centre is a complex multiple of the identity, and every conjugation by a unitary element fixes it, so the operator of the action is the identity at every axis and the generator is zero.</p>
+<p><strong>The question in one line.</strong> A carrier is a real subspace that the group carries onto itself and that has no invariant real subspace. Which subspace of $\mathbb{B}$ is fixed by every unitary element, of real dimension $1$.</p>
 <p><strong>The answer in one line.</strong> The real line $\mathbb{R}e_t$, and its closure $\mathbb{C}e_t$ of real dimension $2$.</p>
 <p>Nothing below is a statement of physics. The elements are written $X,Y$; the units are $e_t,\vec e_x,\vec e_y,\vec e_z$ with $e_t$ the identity and $\vec e_k^{2}=-e_t$; $*$ is the Hermitian conjugation; $G=\mathrm{U}(2)$ is the group of units, the elements with $XX^{*}=e_t$; and a unit real axis is written $\vec u_{\mathrm r}$.</p>
 <h2 id="the-subspace">The Subspace</h2>
@@ -80,24 +80,32 @@
 <p>$$
 \mathbb{R}e_t=\{\,te_t:t\in\mathbb{R}\,\},
 $$</p>
-<p>the real line of the unit, of real dimension $1$.</p>
+<p>the real line of the identity, of real dimension $1$.</p>
 <p>The subspace is not built and not chosen. It is the set of real multiples of the identity of the algebra, and the identity is the one element the algebra supplies without a choice.</p>
 <p><strong>The closure.</strong> The smallest complex subspace containing the line is</p>
 <p>$$
 \mathbb{C}e_t=\mathbb{R}e_t\oplus\mathbb{R}(ie_t),
 $$</p>
 <p>of real dimension $2$ and complex dimension $1$. This is the centre of the algebra, and it is the space the tables name when they name the spin-zero space. The line is the carrier; the centre is its closure.</p>
-<h2 id="why-every-unit-fixes-it">Why Every Unit Fixes It</h2>
-<p><strong>Proposition (the centre is the fixed space).</strong> For every unit $u$ and every real $t$,</p>
+<h2 id="why-every-unitary-element-fixes-it">Why Every Unitary Element Fixes It</h2>
+<p><strong>Proposition (the centre is the fixed space).</strong> For every unitary element $u$ and every real $t$,</p>
 <p>$$
 u\,(te_t)\,u^{*}=t\,uu^{*}=te_t .
 $$</p>
-<p><em>Proof.</em> The unit is central, so it commutes with every element, and $uu^{*}=e_t$ by the unit condition. The two facts give the display, and the line is fixed pointwise.</p>
-<p><strong>Proposition (nothing else is fixed).</strong> If $X$ satisfies $uXu^{*}=X$ for every unit $u$, then $X\in\mathbb{C}e_t$.</p>
-<p><em>Proof.</em> Take $u$ with $uu^{*}=e_t$. The condition is $uX=Xu$, so $X$ commutes with every unit. The units span $\mathbb{B}$ over $\mathbb{C}$, so $X$ commutes with every element, and an element of $\mathbb{B}$ that commutes with everything is a complex multiple of $e_t$. The other direction is the proposition above.</p>
+<p><em>Proof.</em> The identity is central, so it commutes with every element, and $uu^{*}=e_t$ by the definition of $G$. The two facts give the display, and the line is fixed pointwise.</p>
+<p><strong>Proposition (nothing else is fixed).</strong> If $X$ satisfies $uXu^{*}=X$ for every unitary element $u$, then $X\in\mathbb{C}e_t$.</p>
+<p><em>Proof.</em> Take $u$ with $uu^{*}=e_t$. The condition is $uX=Xu$, so $X$ commutes with every unitary element. The unitary elements span $\mathbb{B}$ over $\mathbb{C}$, so $X$ commutes with every element, and an element of $\mathbb{B}$ that commutes with everything is a complex multiple of $e_t$. The other direction is the proposition above.</p>
 <p>The two statements together say that the fixed space of the conjugation is exactly the centre, and that the centre is not the line but its closure. The line is the carrier; the centre is the space of fixed points, and the difference between the two is the element $ie_t$.</p>
+<h2 id="the-only-invariant-complex-line">The Only Invariant Complex Line</h2>
+<p>The propositions above say that the centre is a fixed space. They do not yet say that it is the only complex line the conjugation preserves, and the difference matters: a carrier is invariant as well as irreducible, so the uniqueness of the line is part of the statement that this carrier is the spin-zero carrier of the algebra.</p>
+<p><strong>Theorem (no other complex line is fixed).</strong> Let $W$ be a complex line whose elements are all fixed by the conjugation. Then $W=\mathbb{B}_C$.</p>
+<p><em>Proof.</em> The fixed elements are those of $\mathbb{B}_C$, by the proposition above, so $W$ is a complex line inside $\mathbb{B}_C$. The centre is itself a complex line, so $W=\mathbb{B}_C$.</p>
+<p><strong>Theorem (no other complex line is invariant).</strong> Let $W$ be a complex line with $uWu^{*}\subseteq W$ for every unitary element $u$. Then $W=\mathbb{B}_C$.</p>
+<p><em>Proof.</em> Let $w$ generate $W$. For a unitary element $u$ the element $uwu^{*}$ lies in $W$ and is nonzero, since $u$ is invertible, so $uwu^{*}=\chi(u)w$ for a nonzero complex number $\chi(u)$, and $\chi$ is a homomorphism of $G$ into the multiplicative group of $\mathbb{C}$. The norm is multiplicative and $N(uu^{*})=1$, so $N(uwu^{*})=N(w)$ and $\chi(u)^{2}=1$: the character takes values in $\{\pm1\}$. The group $G=\mathrm U(2)$ is connected, so $\chi$ is constant, and $\chi(e_t)=1$ gives $\chi=1$. Every element of $W$ is therefore fixed, and $W=\mathbb{B}_C$ by the previous theorem.</p>
+<p><strong>Corollary (three descriptions, one line).</strong> The real line $\mathbb{R}e_t$, the fixed space of the group, and the only invariant complex line are the same subspace read three ways. The first is the carrier, the second is its space of fixed points, and the third is its closure.</p>
+<p><strong>Remark (why the character argument is not a detour).</strong> Without the invariance of the norm the conclusion fails: a complex line can be scaled by an arbitrary nonzero scalar by a conjugation, and the scaling would be a character with values outside the unit circle. The norm is what reduces the character to a sign, and the connectedness of the group is what reduces the sign to $1$.</p>
 <h2 id="the-action-and-the-two-numbers">The Action and the Two Numbers</h2>
-<p><strong>The action.</strong> The conjugation by a unit, $\varrho_{\mathrm{ad}}(u)(X)=\operatorname{Ad}_u(X)=uXu^{*}$ for $u\in G$. On this space the action is trivial: $\varrho_{\mathrm{ad}}(u)$ is the identity operator for every unit $u$.</p>
+<p><strong>The action.</strong> The conjugation by a unitary element, $\varrho_{\mathrm{ad}}(u)(X)=\operatorname{Ad}_u(X)=uXu^{-1}=uXu^{*}$ for $u\in G$, the second equality because $u^{*}=u^{-1}$ at a unitary element. On this space the action is trivial: $\varrho_{\mathrm{ad}}(u)$ is the identity operator for every unit $u$.</p>
 <p><strong>The generator.</strong> Write a rotor as $u=\exp\bigl(\theta_{\mathrm{axr}}A(\vec u_{\mathrm r})\bigr)$ with $A(\vec u_{\mathrm r})=\tfrac12\vec u_{\mathrm r}$. The derived operator is the commutator, and on a central element the commutator vanishes:</p>
 <p>$$
 \varrho\bigl(A(\vec u_{\mathrm r})\bigr)(te_t)=\tfrac12\bigl[\vec u_{\mathrm r},te_t\bigr]=0 .
@@ -127,9 +135,9 @@ $$</p>
 <p><strong>The reason.</strong> A corner is a space of products, and the centre is a space of fixed points. The two are different constructions, and they coincide in no case: a corner of real dimension $2$ contains an element with a non-central product, while every element of the centre has a central product.</p>
 <p><strong>What this says about the naming.</strong> The four spaces of the algebra are reached by four different rules, and the centre is reached by the rule of the fixed points. Its dimension happens to agree with the dimension of a corner, and the agreement is a coincidence of small numbers: the algebra has eight real dimensions and the two constructions cut it in different ways.</p>
 <h2 id="the-carrier-in-the-list-of-three">The Carrier in the List of Three</h2>
-<p><strong>The three carriers.</strong> The algebra has three carriers under the rotation action: this line, of real dimension $1$ and spin $0$; a spinor plane, of real dimension $2$ and spin $\tfrac12$; and the vector part, of real dimension $3$ and spin $1$. The list is quoted from <em>The Carriers of the Biquaternion Algebra</em> and is not reproved here.</p>
+<p><strong>The three carriers.</strong> The algebra has three carriers under the rotation action: this line, of real dimension $1$ and spin $0$; a spinor plane, of real dimension $2$ and spin $\tfrac12$; and the vector part, of real dimension $3$ and spin $1$. The list is proved in <em>The Carriers, the Representation, the Spin and the Closure</em>, §<em>Three and No More</em> and is not reproved here.</p>
 <p><strong>The arithmetic.</strong> The three dimensions are $1,2,3$ and the three spins are $0,\tfrac12,1$, and the identity $2s+1=\dim_\mathbb{R}$ holds in all three cases. The line is the case $s=0$, and it is the only case in which the spectrum has a single member.</p>
-<p><strong>The limits.</strong> This article treats the fixed line and its closure. It does not treat the action of the general invertible elements, which is not the conjugation by a unit; it does not treat products of carriers; and it does not prove the trichotomy.</p>
+<p><strong>The limits.</strong> This article treats the fixed line and its closure. It does not treat the action of the general invertible elements, which is not the conjugation by a unitary element; it does not treat products of carriers; and it does not prove the trichotomy.</p>
 <h2 id="summary">Summary</h2>
 <p>The carrier of spin $0$ is the real line $\mathbb{R}e_t$, of real dimension $1$. Its closure is the centre $\mathbb{C}e_t$, of real dimension $2$. The action on it is trivial, the generator is zero, the spectrum is $\{0\}$, the spin is $0$, the identity $2s+1=\dim_\mathbb{R}$ reads $1=1$, and the operator of a full turn is $+1$. The centre is the fixed space of the conjugation, it contains two copies of the carrier, and it meets the anti-Hermitian space in the line $\mathbb{R}(ie_t)$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -147,7 +155,7 @@ $$</p>
 </tr>
 <tr>
 <td>$e_t$</td>
-<td>the identity of the algebra, the real unit</td>
+<td>the identity of the algebra</td>
 </tr>
 <tr>
 <td>$i$</td>
@@ -183,7 +191,7 @@ $$</p>
 </tr>
 <tr>
 <td>$G=\mathrm{U}(2)$</td>
-<td>the group of units, $uu^{*}=e_t$</td>
+<td>the group of unitary elements, $uu^{*}=e_t$</td>
 </tr>
 </tbody>
 </table></div>
@@ -191,11 +199,7 @@ $$</p>
 <ul>
 <li><a href="the-spin-zero-centre-subspace-and-n-norm-regularity.html">The Spin-Zero Centre Subspace and N Norm Regularity</a>, for the $N$ norm on the centre and the isotropic lines of its real part</li>
 <li><a href="the-spin-zero-centre-subspace-and-spectral-regularity.html">The Spin-Zero Centre Subspace and Spectral Regularity</a>, for the double eigenvalue of a central element and the degenerate cone</li>
-<li><a href="the-carriers-the-representation-the-spin-and-the-closure.html">The Carriers, the Representation, the Spin and the Closure</a>, for the three carriers, the spin table and the four closures</li>
-<li><a href="the-carriers-of-the-biquaternion-algebra.html">The Carriers of the Biquaternion Algebra</a>, for the definition of a carrier and the completeness of the list</li>
-<li><a href="the-weights-of-a-carrier.html">The Weights of a Carrier</a>, for the definition of a weight and the three spectra</li>
-<li><a href="the-spin-of-a-carrier.html">The Spin of a Carrier</a>, for the spin as the largest weight and its agreement with the dimension</li>
-<li><a href="the-carrier-of-dimension-1.html">Introduction to the Carrier of Dimension 1 over C</a>, for the centre as a complex line, obtained in the complex reading</li>
+<li><a href="the-carriers-the-representation-the-spin-and-the-closure.html">The Carriers, the Representation, the Spin and the Closure</a>, for the three carriers, the completeness of the list, the spin table and the four closures</li>
 <li><a href="the-centre-and-the-zero-divisors-of-a-sesqualgebra.html">The Centre and the Zero Divisors of a Sesqualgebra</a>, for the centre of a related algebra</li>
 <li><a href="subspaces-and-decompositions-of-the-biquaternion-algebra.html">Subspaces and Decompositions of the Biquaternion Algebra</a>, for the centre and the pure part among the subspaces of the algebra</li>
 </ul>
