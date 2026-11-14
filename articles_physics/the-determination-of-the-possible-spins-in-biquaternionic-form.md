@@ -8,7 +8,7 @@ The answer has two parts. The algebraic part is the companion article *The Carri
 
 The distribution over two structures is already recorded in *Spin and the Three Elementary Carriers*: left multiplication sees the spinor twice, and the adjoint action sees the scalar and the vector. This article takes that distribution as its starting point and asks what it means physically. A single action cannot contain all three, because distinct irreducible submodules intersect trivially and $1+2+3=6$ would exceed $\dim_{\mathbb{C}}\mathbb{B}=4$.
 
-The article fixes what spin is, gives the two lists, interprets each carrier physically, proves that there is no fourth, and then treats the relativistic label, the statistics sign and the classical limit. The carrier table and the particle assignments are developed at length in *Spin and the Three Elementary Carriers*; the present article owns the physical interpretation and the reason for the list.
+The article fixes what spin is, gives the two lists, interprets each carrier physically, proves that there is no fourth, and then treats the relativistic label, the statistics sign and the classical limit. The carrier table and the particle assignments are developed at length in *Spin and the Three Elementary Carriers*; the present article owns the physical interpretation and the reason for the list. The module those carriers act on is not chosen but forced, and *The Native Qubit and the Defining Module of the Biquaternion Algebra* proves it: the qubit is the defining module of $\mathbb{B}$, so the two-dimensional carrier follows from the algebra and is not a separate input.
 
 ## Spin Is the Casimir Label
 

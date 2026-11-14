@@ -357,6 +357,8 @@
 ## Biquaternion Relativistic Quantum Theory
 
 ### Generalities
+<a href="articles_physics/fundamental-and-derived-elements-in-the-biquaternion-framework.html">Fundamental and Derived Elements in the Biquaternion Framework</a>
+<!-- the sorting criterion; the stipulated base; the conjugations as derived; the two-sector split as derived; the trace form; the scalar imaginary; the polar decompositions as derived; the sorting. -->
 
 <a href="articles_physics/quantum-physics-foundations-and-structure.html">Quantum Physics: Foundations and Structure</a>
 <!-- the postulates of quantum physics; states; observables; the Born rule; two-state systems and qubits; dynamics; measurement; composite systems and entanglement; what a comprehensive quantum theory must contain. -->
@@ -364,11 +366,17 @@
 <a href="articles_physics/quantum-physics-in-biquaternionic-form.html">Quantum Physics in Biquaternionic Form</a>
 <!-- the Hermitian subspace; states; observables; the Born rule; dynamics; measurement as an algebraic operation; purity, entropy and fidelity; symmetries; the ten-point checklist; compatibility with relativity; what is structural and what is new. -->
 
+<a href="articles_physics/the-centre-of-the-biquaternion-algebra-as-the-classical-sector.html">The Centre of the Biquaternion Algebra as the Classical Sector</a>
+<!-- the centre, definition and computation; five characterisations of the centre; central simple structure and the absence of superselection; the centre as the classical sector; commuting sectors and state-dependent classical slices; the commutant picture.  The two splittings of the algebra are read as two independent $\mathbb{Z}_2$ decompositions, with the failure of a grading recorded. -->
+
 <a href="articles_physics/angular-momentum-and-spin-in-biquaternionic-form.html">Angular Momentum and Spin in Biquaternionic Form</a>
 <!-- the angular-momentum algebra; the rotation group inside the algebra; the orbital angular momentum operator; the spin operators under the isomorphism; commutators as biquaternion commutators; total angular momentum and spin–orbit coupling; the Casimir operator; ladder operators; addition of angular momenta; the rotor realisation of rotations. -->
 
 <a href="articles_physics/the-determination-of-the-possible-spins-in-biquaternionic-form.html">The Determination of the Possible Spins in Biquaternionic Form</a>
 <!-- the three spins $0$, $\tfrac12$, $1$ and the two module structures they come from; spin as the Casimir label and not a direction, the direction as a state label and the classical vector as an expectation; the left module $S_\pm$ as the matter carrier and the adjoint module $Z\oplus V$ as the vector carrier; the scalar of spin $0$, the spinor of weight $\pm\tfrac12$ with its copies at an axis and its $2\pi$ sign, and the vector of weights $\pm1,0$; why there is no fourth, from the closure and from $1+2+3=6>4$; the little group $SU(2)$ or the double cover of $E(2)$, helicity, the two self-dual halves and the gauge removal of the longitudinal state; the massless cone, $N=0$ and the verdict that masslessness is an input; the Pauli–Lubanski invariant; the spin–statistics sign and the limits of the algebraic split; the Wess–Zumino term and the classical limit; and what the framework does not say. -->
+
+<a href="articles_physics/the-ontology-of-the-quantum-state-under-the-biquaternion-framework.html">The Ontology of the Quantum State under the Biquaternion Framework</a>
+<!-- the state as an element of $\mathbb{B}_{\Psi}$; state and observable in one space; convexity, extremality and superposition; the pure state as an idempotent and a zero divisor; what the element does not carry; ontological readings and what the algebra decides. -->
 
 <a href="articles_physics/the-three-wavenumbers-of-a-particle.html">The Three Wavenumbers of a Particle</a>
 <!-- the three wave numbers $k_m=mc/\hbar$, $k_{\mathrm{mo}}=p/\hbar$ and $k_E=E/(\hbar c)$, which are one rule, a momentum over $\hbar$, applied to the mass, the momentum and the energy over $c$; why wave numbers and not wavelengths, since a derivative carries an inverse length and conservation is a sum; the relation $k_E^{2}=k_{\mathrm{mo}}^{2}+k_m^{2}$ from the mass shell, read as a right triangle whose side ratios are $\gamma$, $\beta$ and $\gamma\beta$, and the same relation as the biquaternion norm of the wave four-vector; the values for the electron, the muon, the pion, the proton and the top quark, and for the electron at 1 MeV, 100 MeV and 1 GeV, with the conversion $\hbar c=197.327$ MeV fm; where each form is used in the series, with the harmonic parameter whose entries are $k_E$ and $k_m$ and whose square is $k_{\mathrm{mo}}^{2}$; the mass wave number at work: the uncertainty argument that localizes to $1/k_m$ and costs a rest energy, the rest-frame clock $c\,k_m$, the trembling amplitude $1/(2k_m)$, the Yukawa range, the Schwinger field $\hbar c\,k_m^{2}/e$, the Compton shift, and the ratio $a_0k_{m_e}=1/\alpha$; the momentum wave number as the rate of the phase, the fringe spacing, the Bohr condition as a count of turns, crystals and thermal wave numbers, and the degeneracy criterion $n/k_T^{3}\sim1$; the energy wave number as the photon-equivalent wave number, the clock, the reach of a virtual deficit, and the inverse decay length; the refutation of the reading of any of them as the size of the particle, from the proton charge radius and the pointlike electron; the non-relativistic criterion $k_{\mathrm{mo}}\gg k_m$; the limit itself as one operation on the triangle, with the exact split $k_E=k_m+\Omega$, the exact relation $k_{\mathrm{mo}}^{2}=2k_m\Omega+\Omega^{2}$, the quotient $\eta=\Omega/(2k_m)$ and the closed-form error $-\eta/(1+\eta)$ tabulated, the expansion $\Omega=k_{\mathrm{mo}}^{2}/2k_m-k_{\mathrm{mo}}^{4}/8k_m^{3}+\cdots$, the reason the order in time is the number of terms kept, and the boxed Schrödinger equation the first-order relation leaves; the massless case, where the triangle degenerates to $k_E=k_{\mathrm{mo}}$ and the massless equations of the series are exact, with the photon bound; the letters and the subscripts, $\mathrm{mo}$ against the spatial index $k$ and the momentum components $p_k$, and the caution that separates $k_E$ from the Euclidean $k_{\mathrm{eu}}$. -->
@@ -381,6 +389,9 @@
 
 <a href="articles_physics/the-path-integral-in-biquaternionic-form.html">The Path Integral in Biquaternionic Form</a>
 <!-- the sum over paths; the biquaternion phase; why the central imaginary and not a quaternion unit; the propagator and its composition; the Wick rotation as the bridge; the semiclassical kernel and stationary phase; the canonical commutation relations and the contact term; curved space, operator ordering and the measure factor $\prod_x\sqrt{g}$; what the algebra adds and what it does not. -->
+
+<a href="articles_physics/the-measurement-problem-in-algebraic-form.html">The Measurement Problem in Algebraic Form</a>
+<!-- the problem in standard terms; the algebraic vocabulary; the problem in algebraic form; what decoherence supplies; the selection step; the preferred basis and the cut; what the reformulation changes and what it does not. -->
 
 <a href="articles_physics/helicity-in-biquaternionic-form.html">Helicity in Biquaternionic Form</a>
 <!-- the operator $\lambda=\vec u_p\cdot\vec S$ and the declared axis; the orbital projection that vanishes identically; the two values on the fundamental carrier as the two lines of the elementary spinor; the adjoint carrier and $\{+1,0,-1\}$; the spin-two carrier; the reversal, rotation and boost laws; the little group at $m=0$; the null momentum as a zero divisor, rank one as factorisability, the brackets as the symplectic pairing, helicity as the weight of the scaling, the singular massless limit; chirality against helicity; what the algebra supplies and what it does not. -->
@@ -729,27 +740,14 @@
 ## Biquaternion Non Relativistic Approximation of Quantum Theory
 
 ### Generalities
-
-<a href="articles_physics/the-ontology-of-the-quantum-state-under-the-biquaternion-framework.html">The Ontology of the Quantum State under the Biquaternion Framework</a>
-<!-- the state as an element of $\mathbb{B}_{\Psi}$; state and observable in one space; convexity, extremality and superposition; the pure state as an idempotent and a zero divisor; what the element does not carry; ontological readings and what the algebra decides. -->
-
 <a href="articles_physics/the-double-slit-experiment-in-biquaternionic-form.html">The Double-Slit Experiment in Biquaternionic Form</a>
 <!-- the two-path amplitude; the fringe pattern; the which-path qubit and the Bloch ball; visibility, predictability and the biquaternion-norm bound; which-path detection and the loss of interference; the phase root; spinor-valued routes and spin-dependent fringes. -->
 
 <a href="articles_physics/the-quantum-classical-divide-in-the-biquaternion-framework.html">The Quantum–Classical Divide in the Biquaternion Framework</a>
 <!-- the operational criterion and its five consequences (wave phenomena and metrology among them); the criterion in the biquaternion language; the four subsets mapped to the framework; fundamental versus derived; what the framework adds and what remains open. -->
 
-<a href="articles_physics/fundamental-and-derived-elements-in-the-biquaternion-framework.html">Fundamental and Derived Elements in the Biquaternion Framework</a>
-<!-- the sorting criterion; the stipulated base; the conjugations as derived; the two-sector split as derived; the trace form; the scalar imaginary; the polar decompositions as derived; the sorting. -->
-
 <a href="articles_physics/the-biquaternion-framework-and-the-canonical-commutation-relation-independence-not-a-defect.html">The Biquaternion Framework and the Canonical Commutation Relation: Independence, Not a Defect</a>
 <!-- what the relation encodes: a configuration continuum, the Weyl form as a distinct condition rather than a rewriting of the commutator form, Stone-von Neumann stated for the Weyl form; the trace obstruction in the framework and its general form, then a second and independent norm obstruction from $[Q,P^n]=i\hbar nP^{n-1}$, so that no bounded pair holds the relation in any dimension; the observable algebra as an internal algebra with no position operator and the spin analogy; independence stated precisely and its one-directional character; the rotation bracket the framework does carry, with the Robertson-Schrodinger inequality it implies and the spin case $s\ge\lvert m\rvert$, an equality at $s=\tfrac12$; the relation's two halves on a field carrier, the position-momentum bracket blind to every shift by a function of position and the momentum-momentum bracket the field strength, with the field strength nameable as a central element of $\mathbb{B}$ and neither half generable; position and momentum entering as the argument of the field and the dual variable of the transform, with the assembly of the carrier root-independent; the clock-and-shift pair as the $\mathbb{Z}/N$ Weyl relation; no theory ever rejected by the relation, the composition objection being the historical one; the continuum as an import and the two readings; what the independence does not say. physical readings. -->
-
-<a href="articles_physics/the-centre-of-the-biquaternion-algebra-as-the-classical-sector.html">The Centre of the Biquaternion Algebra as the Classical Sector</a>
-<!-- the centre, definition and computation; five characterisations of the centre; central simple structure and the absence of superselection; the centre as the classical sector; commuting sectors and state-dependent classical slices; the commutant picture.  The two splittings of the algebra are read as two independent $\mathbb{Z}_2$ decompositions, with the failure of a grading recorded. -->
-
-<a href="articles_physics/the-measurement-problem-in-algebraic-form.html">The Measurement Problem in Algebraic Form</a>
-<!-- the problem in standard terms; the algebraic vocabulary; the problem in algebraic form; what decoherence supplies; the selection step; the preferred basis and the cut; what the reformulation changes and what it does not. -->
 
 ### Particles of spin 0
 
