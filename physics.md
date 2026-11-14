@@ -1029,25 +1029,6 @@
 
 <a href="articles_physics/the-central-scalar-field-classical-dynamics-in-the-biquaternion-centre.html">The Central Scalar Field: Classical Dynamics in the Biquaternion Centre</a>
 <!-- the centre as the scalar's value space; the classical action and the field equation; plane waves and the range of the field; the static central solution; the field energy and the stress–energy; the test particle and the reduction to the central-force problem; why there is no intrinsic magnetism. -->
-
-### Effects with intrinsic magnetism (spin ½ origin)
-
-<a href="articles_physics/thomas-precession-as-a-biquaternion-rotor-effect.html">Thomas Precession as a Biquaternion Rotor Effect</a>
-<!-- the boost rotor and the instantaneous rest frame; the composition of two boosts and the Wigner rotor; the rotor between neighbouring rest frames; the continuous limit and the Thomas precession rate; the Thomas rotor; uniform circular motion; the spin of a relativistic particle; the Thomas half and spin–orbit coupling. -->
-
-<a href="articles_physics/the-classical-spinning-particle-the-bargmann-michel-telegdi-equation-in-biquaternionic-form.html">The Classical Spinning Particle: The Bargmann–Michel–Telegdi Equation in Biquaternionic Form</a>
-<!-- the spin four-vector; the covariant equation from the two available structures; the biquaternion form; the rest frame and the meaning of $g$; the degenerate case $g=2$ and the spin-follows-velocity property; the laboratory-frame limit, Larmor and Thomas. -->
-
-### Effects with higher multipole origins (spin 1+ origin)
-
-<a href="articles_physics/the-relativistic-quadrupole-in-biquaternionic-form.html">The Relativistic Quadrupole in Biquaternionic Form</a>
-<!-- the quadrupole as a higher multipole; the retarded field of a localised source; the relativistic transformation of the quadrupole; the quadrupole field and its radiation; the quadrupole in the algebra. -->
-
-<a href="articles_physics/higher-multipoles-and-the-field-strength-decomposition-in-biquaternionic-form.html">Higher Multipoles and the Field-Strength Decomposition in Biquaternionic Form</a>
-<!-- the multipole series of a localised source; the field-strength biquaternion and its two decompositions; the multipole tower and the two decompositions; covariance of the decomposition; the lowest orders. -->
-
-### Non-Quantum Limits of the Quantum Equations
-
 <a href="articles_physics/the-non-quantum-limit-and-the-klein-gordon-equation-in-biquaternionic-polar-variables.html">The Non-Quantum Limit and the Klein–Gordon Equation in Biquaternionic Polar Variables</a>
 <!-- one Lorentz scalar deleted, $(\partial_{r'_{t}}r)^{2}-\lvert\vec\nabla_\Phi r\rvert^{2}$, so the limit commutes with every boost of the material sector and the truncated action is covariant; the scale left in the action without a derivative of itself and therefore auxiliary, its variation the mass shell, so the truncated theory is constrained with the mechanical shell as its Hamiltonian and its content irrotational dust; the contrast with the first-order families, where the deleted term is frame dependent -->
 
@@ -1060,6 +1041,13 @@
 <a href="articles_physics/the-non-quantum-limit-the-variational-principle-and-the-coupled-klein-gordon-equation-in-biquaternionic-polar-variables.html">The Non-Quantum Limit, the Variational Principle and the Coupled Klein–Gordon Equation in Biquaternionic Polar Variables</a>
 <!-- the coupled polar action with the linear and quadratic interaction terms from one square; the criterion that orders the amplitude's gradient at $\epsilon^{2}$ (and its one-particle ratio at $\delta^{2}$) and the field's ratios at $\varkappa\lvert\tilde A\rvert/\lvert\vec p\rvert$ and $(\varkappa\lvert\tilde A\rvert/mc)^{2}$, so that the limit orders one ratio and not the field; the truncation as the deletion of a group that is a functional of $r$ alone, hence gauge invariant by itself, and the argument that a truncation which dropped the quadratic interaction would break the symmetry; the truncated action's two variations as the mechanical eikonal and the covariant transport equation; $p_r=0$ and the mechanical mass shell as the secondary constraint, gauge invariant as an equation; the exact mechanical current, its indefinite charge and the positive truncated energy. -->
 
+### Effects with intrinsic magnetism (spin ½ origin)
+
+<a href="articles_physics/thomas-precession-as-a-biquaternion-rotor-effect.html">Thomas Precession as a Biquaternion Rotor Effect</a>
+<!-- the boost rotor and the instantaneous rest frame; the composition of two boosts and the Wigner rotor; the rotor between neighbouring rest frames; the continuous limit and the Thomas precession rate; the Thomas rotor; uniform circular motion; the spin of a relativistic particle; the Thomas half and spin–orbit coupling. -->
+
+<a href="articles_physics/the-classical-spinning-particle-the-bargmann-michel-telegdi-equation-in-biquaternionic-form.html">The Classical Spinning Particle: The Bargmann–Michel–Telegdi Equation in Biquaternionic Form</a>
+<!-- the spin four-vector; the covariant equation from the two available structures; the biquaternion form; the rest frame and the meaning of $g$; the degenerate case $g=2$ and the spin-follows-velocity property; the laboratory-frame limit, Larmor and Thomas. -->
 <a href="articles_physics/the-non-quantum-limit-and-the-dirac-equation-in-biquaternionic-polar-variables.html">The Non-Quantum Limit and the Dirac Equation in Biquaternionic Polar Variables</a>
 <!-- the action as a one-form plus a potential, three vanishing momenta and a degenerate closed two-form, so the equations are $\Omega\dot q=\mathrm{d}U$ and the limit is the split of that system into constraints and flow; the mass term's fixed transverse direction, without which the mass bilinear vanishes on the chirality parts, so that the polarisation is a requirement and not an assumption; no multiplier introduced by hand, in contrast with Takabayasi's spin-fluid formulation; the price stated — nothing to size and no quantum potential, since the action is first order -->
 
@@ -1072,6 +1060,13 @@
 <a href="articles_physics/the-non-quantum-limit-the-variational-principle-and-the-coupled-dirac-equation-in-biquaternionic-polar-variables.html">The Non-Quantum Limit, the Variational Principle and the Coupled Dirac Equation in Biquaternionic Polar Variables</a>
 <!-- the connection entering the potential through the logarithmic derivative with no velocity, so that the kinetic coefficient, the four vanishing momenta, the density and the six constraints are the free ones and only the extremum moves; the criterion on $k_\pi$ and the invariant pairing of the phase's rate with the scalar potential, the split between them being a chart statement; the reconciliation with the route-one companion — a constant connection has no field strength, the commutator is the field strength, so the accuracy is $\epsilon^{2}$ here and $\epsilon$ in a field with a curl, the two statements both exact and separated by $\mathsf F$; the order-$\epsilon$ term's home in the potential, so that the spin's coupling is a statement about the frame's position; the parent's open question about the constraints' class inherited and not settled. -->
 
+### Effects with higher multipole origins (spin 1+ origin)
+
+<a href="articles_physics/the-relativistic-quadrupole-in-biquaternionic-form.html">The Relativistic Quadrupole in Biquaternionic Form</a>
+<!-- the quadrupole as a higher multipole; the retarded field of a localised source; the relativistic transformation of the quadrupole; the quadrupole field and its radiation; the quadrupole in the algebra. -->
+
+<a href="articles_physics/higher-multipoles-and-the-field-strength-decomposition-in-biquaternionic-form.html">Higher Multipoles and the Field-Strength Decomposition in Biquaternionic Form</a>
+<!-- the multipole series of a localised source; the field-strength biquaternion and its two decompositions; the multipole tower and the two decompositions; covariance of the decomposition; the lowest orders. -->
 <a href="articles_physics/the-non-quantum-limit-and-the-proca-equation-in-biquaternionic-polar-variables.html">The Non-Quantum Limit and the Proca Equation in Biquaternionic Polar Variables</a>
 <!-- the obstruction as a comparison of coefficients: the amplitude's kinetic term and the mass term carry the same two derivatives and the same factor $k_m^{2}$, their ratio being $\omega^{2}/k_m^{2}$ of order one at every time, so the deletion is not an approximation but a change of theory; the ledger against the Klein–Gordon and Dirac deletions, which are controlled by $\epsilon$; the frame's transport and the Lorenz constraint as the exact surviving content, and the refusal to name a quantum potential where no parameter exists -->
 
