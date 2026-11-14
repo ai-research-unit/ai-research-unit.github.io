@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduction to the Spin-Zero Centre Subspace — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="introduction-to-the-spin-zero-centre-subspace"><strong>Introduction to the Spin-Zero Centre Subspace</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>One carrier of the biquaternion algebra under the rotation action has spin $0$, and its subspace is the centre. This article introduces that carrier: it states the subspace, the action on it, the two numbers that make the label $0$ unavoidable, and the place the subspace takes among the four spaces of the algebra.</p>
+<p>The carrier is the smallest of the three and the one with no argument. The rotation does not move it. An element of the centre is a complex multiple of the unit, and every conjugation by a unit fixes it, so the operator of the action is the identity at every axis and the generator is zero.</p>
+<p><strong>The question in one line.</strong> A carrier is a real subspace that the group carries onto itself and that has no invariant real subspace. Which subspace of $\mathbb{B}$ is fixed by every unit, of real dimension $1$.</p>
+<p><strong>The answer in one line.</strong> The real line $\mathbb{R}e_t$, and its closure $\mathbb{C}e_t$ of real dimension $2$.</p>
+<p>Nothing below is a statement of physics. The elements are written $X,Y$; the units are $e_t,\vec e_x,\vec e_y,\vec e_z$ with $e_t$ the identity and $\vec e_k^{2}=-e_t$; $*$ is the Hermitian conjugation; $G=\mathrm{U}(2)$ is the group of units, the elements with $XX^{*}=e_t$; and a unit real axis is written $\vec u_{\mathrm r}$.</p>
+<h2 id="the-subspace">The Subspace</h2>
+<p><strong>Definition (the fixed line).</strong> The carrier of this article is</p>
+<p>$$
+\mathbb{R}e_t=\{\,te_t:t\in\mathbb{R}\,\},
+$$</p>
+<p>the real line of the unit, of real dimension $1$.</p>
+<p>The subspace is not built and not chosen. It is the set of real multiples of the identity of the algebra, and the identity is the one element the algebra supplies without a choice.</p>
+<p><strong>The closure.</strong> The smallest complex subspace containing the line is</p>
+<p>$$
+\mathbb{C}e_t=\mathbb{R}e_t\oplus\mathbb{R}(ie_t),
+$$</p>
+<p>of real dimension $2$ and complex dimension $1$. This is the centre of the algebra, and it is the space the tables name when they name the spin-zero space. The line is the carrier; the centre is its closure.</p>
+<h2 id="why-every-unit-fixes-it">Why Every Unit Fixes It</h2>
+<p><strong>Proposition (the centre is the fixed space).</strong> For every unit $u$ and every real $t$,</p>
+<p>$$
+u\,(te_t)\,u^{*}=t\,uu^{*}=te_t .
+$$</p>
+<p><em>Proof.</em> The unit is central, so it commutes with every element, and $uu^{*}=e_t$ by the unit condition. The two facts give the display, and the line is fixed pointwise.</p>
+<p><strong>Proposition (nothing else is fixed).</strong> If $X$ satisfies $uXu^{*}=X$ for every unit $u$, then $X\in\mathbb{C}e_t$.</p>
+<p><em>Proof.</em> Take $u$ with $uu^{*}=e_t$. The condition is $uX=Xu$, so $X$ commutes with every unit. The units span $\mathbb{B}$ over $\mathbb{C}$, so $X$ commutes with every element, and an element of $\mathbb{B}$ that commutes with everything is a complex multiple of $e_t$. The other direction is the proposition above.</p>
+<p>The two statements together say that the fixed space of the conjugation is exactly the centre, and that the centre is not the line but its closure. The line is the carrier; the centre is the space of fixed points, and the difference between the two is the element $ie_t$.</p>
+<h2 id="the-action-and-the-two-numbers">The Action and the Two Numbers</h2>
+<p><strong>The action.</strong> The conjugation by a unit, $\varrho_{\mathrm{ad}}(u)(X)=\operatorname{Ad}_u(X)=uXu^{*}$ for $u\in G$. On this space the action is trivial: $\varrho_{\mathrm{ad}}(u)$ is the identity operator for every unit $u$.</p>
+<p><strong>The generator.</strong> Write a rotor as $u=\exp\bigl(\theta_{\mathrm{axr}}A(\vec u_{\mathrm r})\bigr)$ with $A(\vec u_{\mathrm r})=\tfrac12\vec u_{\mathrm r}$. The derived operator is the commutator, and on a central element the commutator vanishes:</p>
+<p>$$
+\varrho\bigl(A(\vec u_{\mathrm r})\bigr)(te_t)=\tfrac12\bigl[\vec u_{\mathrm r},te_t\bigr]=0 .
+$$</p>
+<p>So the operator of the generator is the zero operator, at every axis, with no computation.</p>
+<p><strong>The weights.</strong> By definition a weight is a real $\lambda$ for which $i\lambda$ is an eigenvalue of that operator. The operator is zero, so the only eigenvalue is $0$, and the spectrum is</p>
+<p>$$
+\{0\},
+$$</p>
+<p>with multiplicity $1$ on the line.</p>
+<p><strong>The spin.</strong> The spin is the largest weight, so $s=0$. The identity that relates the dimension to the spin is</p>
+<p>$$
+2s+1=1=\dim_\mathbb{R}\mathbb{R}e_t ,
+$$</p>
+<p>and it holds here in the degenerate way: the spectrum has one member, the space has one dimension.</p>
+<p><strong>The full turn.</strong> A rotation through the full angle is the rotor $-e_t$. On a central element it acts as $(-e_t)X(-e_t)^{*}=e_tXe_t=X$, so the operator of a full turn is $+1$. The sign is $(-1)^{2s}=(-1)^{0}=+1$, and the two agree.</p>
+<h2 id="the-centre-as-a-space-of-multiplicity-two">The Centre as a Space of Multiplicity Two</h2>
+<p><strong>Why the closure doubles the carrier.</strong> The centre carries the trivial carrier twice. The two lines $\mathbb{R}e_t$ and $\mathbb{R}(ie_t)$ are each fixed pointwise, and they are the real and the imaginary part of one complex line. A reader who asks for the spin-zero carrier of the algebra is answered by the line; a reader who asks for the subspace that carries it is answered by the centre, and the centre contains two copies of the line.</p>
+<p><strong>The two copies are not two carriers.</strong> The carrier is the module, and the module is one-dimensional. The multiplicity two belongs to the space and not to the carrier: the space is a complex line and the module is a real line, and the factor of two is the price of reading a real space complexly.</p>
+<p><strong>The intersection with the anti-Hermitian space.</strong> The centre meets the anti-Hermitian space in the line $\mathbb{R}(ie_t)$:</p>
+<p>$$
+\mathbb{C}e_t\cap\mathbb{B}_\Phi=\mathbb{R}(ie_t),
+$$</p>
+<p>of real dimension $1$. The imaginary unit line of the centre is the fixed direction of the anti-Hermitian space, and the two spaces are not disjoint. This is the only overlap the centre has with the other closures.</p>
+<h2 id="why-the-subspace-is-not-a-peirce-corner">Why the Subspace Is Not a Peirce Corner</h2>
+<p><strong>The test.</strong> The centre is not one of the four Peirce corners of a basis. A corner is a set $\tilde\Pi_\epsilon\mathbb{B}\tilde\Pi_\delta$ for a pair of idempotents of one axis, of real dimension $2$, and its elements have a product that is not central.</p>
+<p><strong>The reason.</strong> A corner is a space of products, and the centre is a space of fixed points. The two are different constructions, and they coincide in no case: a corner of real dimension $2$ contains an element with a non-central product, while every element of the centre has a central product.</p>
+<p><strong>What this says about the naming.</strong> The four spaces of the algebra are reached by four different rules, and the centre is reached by the rule of the fixed points. Its dimension happens to agree with the dimension of a corner, and the agreement is a coincidence of small numbers: the algebra has eight real dimensions and the two constructions cut it in different ways.</p>
+<h2 id="the-carrier-in-the-list-of-three">The Carrier in the List of Three</h2>
+<p><strong>The three carriers.</strong> The algebra has three carriers under the rotation action: this line, of real dimension $1$ and spin $0$; a spinor plane, of real dimension $2$ and spin $\tfrac12$; and the vector part, of real dimension $3$ and spin $1$. The list is quoted from <em>The Carriers of the Biquaternion Algebra</em> and is not reproved here.</p>
+<p><strong>The arithmetic.</strong> The three dimensions are $1,2,3$ and the three spins are $0,\tfrac12,1$, and the identity $2s+1=\dim_\mathbb{R}$ holds in all three cases. The line is the case $s=0$, and it is the only case in which the spectrum has a single member.</p>
+<p><strong>The limits.</strong> This article treats the fixed line and its closure. It does not treat the action of the general invertible elements, which is not the conjugation by a unit; it does not treat products of carriers; and it does not prove the trichotomy.</p>
+<h2 id="summary">Summary</h2>
+<p>The carrier of spin $0$ is the real line $\mathbb{R}e_t$, of real dimension $1$. Its closure is the centre $\mathbb{C}e_t$, of real dimension $2$. The action on it is trivial, the generator is zero, the spectrum is $\{0\}$, the spin is $0$, the identity $2s+1=\dim_\mathbb{R}$ reads $1=1$, and the operator of a full turn is $+1$. The centre is the fixed space of the conjugation, it contains two copies of the carrier, and it meets the anti-Hermitian space in the line $\mathbb{R}(ie_t)$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>the biquaternion algebra, real, of dimension $8$</td>
+</tr>
+<tr>
+<td>$e_t$</td>
+<td>the identity of the algebra, the real unit</td>
+</tr>
+<tr>
+<td>$i$</td>
+<td>the complex unit, an element of $\mathbb{B}$</td>
+</tr>
+<tr>
+<td>$\mathbb{R}e_t$</td>
+<td>the fixed line, the carrier of spin $0$, $\dim_\mathbb{R}=1$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}e_t$</td>
+<td>the centre, the closure, $\dim_\mathbb{R}=2$</td>
+</tr>
+<tr>
+<td>$\mathbb{R}(ie_t)$</td>
+<td>the fixed line of the anti-Hermitian space</td>
+</tr>
+<tr>
+<td>$A(\vec u_{\mathrm r})=\tfrac12\vec u_{\mathrm r}$</td>
+<td>the generator along the unit real axis</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{axr}}$</td>
+<td>the rotation angle, twice the rotor angle</td>
+</tr>
+<tr>
+<td>$\varrho$</td>
+<td>the representation of the action on the carrier</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_\Phi$</td>
+<td>the anti-Hermitian space, $\mathbb{R}(ie_t)\oplus\mathfrak{k}$</td>
+</tr>
+<tr>
+<td>$G=\mathrm{U}(2)$</td>
+<td>the group of units, $uu^{*}=e_t$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-spin-zero-centre-subspace-and-n-norm-regularity.html">The Spin-Zero Centre Subspace and N Norm Regularity</a>, for the $N$ norm on the centre and the isotropic lines of its real part</li>
+<li><a href="the-spin-zero-centre-subspace-and-spectral-regularity.html">The Spin-Zero Centre Subspace and Spectral Regularity</a>, for the double eigenvalue of a central element and the degenerate cone</li>
+<li><a href="the-carriers-the-representation-the-spin-and-the-closure.html">The Carriers, the Representation, the Spin and the Closure</a>, for the three carriers, the spin table and the four closures</li>
+<li><a href="the-carriers-of-the-biquaternion-algebra.html">The Carriers of the Biquaternion Algebra</a>, for the definition of a carrier and the completeness of the list</li>
+<li><a href="the-weights-of-a-carrier.html">The Weights of a Carrier</a>, for the definition of a weight and the three spectra</li>
+<li><a href="the-spin-of-a-carrier.html">The Spin of a Carrier</a>, for the spin as the largest weight and its agreement with the dimension</li>
+<li><a href="the-carrier-of-dimension-1.html">Introduction to the Carrier of Dimension 1 over C</a>, for the centre as a complex line, obtained in the complex reading</li>
+<li><a href="the-centre-and-the-zero-divisors-of-a-sesqualgebra.html">The Centre and the Zero Divisors of a Sesqualgebra</a>, for the centre of a related algebra</li>
+<li><a href="subspaces-and-decompositions-of-the-biquaternion-algebra.html">Subspaces and Decompositions of the Biquaternion Algebra</a>, for the centre and the pure part among the subspaces of the algebra</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

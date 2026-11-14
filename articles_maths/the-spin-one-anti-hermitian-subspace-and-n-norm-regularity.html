@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Spin-One Anti-Hermitian Subspace and N Norm Regularity — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-spin-one-anti-hermitian-subspace-and-n-norm-regularity"><strong>The Spin-One Anti-Hermitian Subspace and N Norm Regularity</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The spin-one carrier is the vector part $\mathfrak{k}=\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$, and its closure is the anti-Hermitian subspace $\mathbb{B}_{\Phi}=\mathbb{R}(ie_t)\oplus\mathfrak{k}$. This article computes the $N$ norm on the closure and on the carrier.</p>
+<p>The answer is the third of the three possible answers, and it is the one in the middle. On the closure the norm is real and indefinite, of signature $(3,1)$, and its null locus is a genuine cone of real dimension $3$ with two nappes. On the carrier the same formula restricts to a positive definite form, so the carrier is norm-regular away from the origin and the cone touches it only at that point. The extra line $\mathbb{R}(ie_t)$ is negative definite, and the indefiniteness of the closure comes entirely from adding the two pieces together.</p>
+<p>Two further results are worth stating at the outset. The splitting of the closure into the negative line and the positive triple is orthogonal for the polar form, so the norm of a sum is the sum of the norms of the parts. And the norm is invariant under the conjugation action of the group, so it is constant on the orbits; it is one of the two numbers that label an orbit, and it does not separate the orbits from one another.</p>
+<p>The companion article is <em>The Spin-One Anti-Hermitian Subspace and Spectral Regularity</em>, where the second predicate is computed: the degenerate locus there is the extra line, and the carrier is regular away from the origin. The subspace itself is <em>Introduction to the Spin-One Anti-Hermitian Subspace</em>. The norm and the predicate are defined in <em>Relations between the N Norm and Spectral Regularity and Degeneracy</em>.</p>
+<p>Nothing below is a statement of physics. The algebra $\mathbb{B}$ is real, of dimension $8$, with units $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t$ the identity and $\vec e_k^{2}=-e_t$, and with $i$ an element commuting with the units and $i^2=-e_t$. An element is $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu=q_\mu+iq'_\mu$ complex. The pure part is $\mathfrak{k}=\operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$, an element of it is written $\vec v$ with $\lvert\vec v\rvert^{2}=v_x^{2}+v_y^{2}+v_z^{2}$, and the star is the Hermitian conjugation.</p>
+<h2 id="the-norm-and-the-predicate">The Norm and the Predicate</h2>
+<p><strong>Definition (the $N$ norm).</strong> For $\tilde Q=Q_te_t+\vec Q$ put</p>
+<p>$$
+N(\tilde Q)=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2},
+$$</p>
+<p>a complex-valued quadratic form, multiplicative, vanishing exactly on the elements without an inverse. The <strong>polar form</strong> is</p>
+<p>$$
+B(X,Y)=\tfrac12\bigl(N(X+Y)-N(X)-N(Y)\bigr)=\sum_\mu Q_\mu(X)Q_\mu(Y).
+$$</p>
+<p><strong>Definition (the predicate).</strong> An element is <strong>norm-regular</strong> when $N\neq0$ and <strong>norm-degenerate</strong> when $N=0$. The zero locus is the <strong>null cone</strong> $\mathcal N=\{N=0\}$.</p>
+<p><strong>Definition (the closure).</strong> The anti-Hermitian subspace is</p>
+<p>$$
+\mathbb{B}_{\Phi}=\{X:X^{*}=-X\}=\mathbb{R}(ie_t)\oplus\mathfrak{k},
+$$</p>
+<p>of real dimension $4$. An element is written $X=i\lambda+\vec v$ with real $\lambda$ and real $\vec v$.</p>
+<h2 id="the-norm-on-the-closure">The Norm on the Closure</h2>
+<p><strong>Theorem (the formula).</strong> For real $\lambda$ and real $\vec v$,</p>
+<p>$$
+N(i\lambda+\vec v)=\lvert\vec v\rvert^{2}-\lambda^{2}.
+$$</p>
+<p><em>Proof.</em> The coordinates are $Q_t=i\lambda$, real imaginary part $\lambda$ and vanishing real part, and $Q_k=v_k$ real. So $Q_t^{2}=-\lambda^{2}$ and $Q_x^{2}+Q_y^{2}+Q_z^{2}=\lvert\vec v\rvert^{2}$.</p>
+<p><strong>Corollary (the norm is real on the closure).</strong> The value $N(i\lambda+\vec v)$ is a real number for every element of $\mathbb{B}_{\Phi}$, and the closure is contained in the real locus of the norm.</p>
+<p><strong>Corollary (the splitting is orthogonal).</strong> For the two summands,</p>
+<p>$$
+N(i\lambda)=-\lambda^{2},\qquad N(\vec v)=\lvert\vec v\rvert^{2},\qquad B(i\lambda,\vec v)=0 .
+$$</p>
+<p>So the norm of a sum is the sum of the norms, and the polar form couples the two summands to nothing.</p>
+<p><strong>Theorem (the signature).</strong> The form $N$ on the closure has signature $(3,1)$: it is negative definite on the line $\mathbb{R}(ie_t)$ and positive definite on the triple $\mathfrak{k}$.</p>
+<p><em>Proof.</em> On the line the value is $-\lambda^{2}$, which is negative for $\lambda\neq0$. On the triple the value is $\lvert\vec v\rvert^{2}$, which is positive for $\vec v\neq0$ and vanishes only at $\vec v=0$. The two summands are orthogonal and of real dimensions $1$ and $3$.</p>
+<p><strong>Corollary (the carrier is norm-regular away from the origin).</strong> On $\mathfrak{k}$ the norm is positive definite, so</p>
+<p>$$
+\mathfrak{k}\cap\mathcal N=\{0\},
+$$</p>
+<p>and every nonzero element of the carrier is norm-regular.</p>
+<p><strong>Corollary (the line is norm-regular away from the origin).</strong> On the line the norm is negative definite, so $\mathbb{R}(ie_t)\cap\mathcal N=\{0\}$.</p>
+<p><strong>Remark (where the indefiniteness comes from).</strong> Neither summand is indefinite: each is definite, one positive and one negative, and each is norm-regular away from the origin. The indefiniteness of the closure is exactly the difference of the two signs, and it is created by the addition and not by either piece.</p>
+<h2 id="the-null-cone">The Null Cone</h2>
+<p><strong>Definition (the cone).</strong> On the closure the null locus is</p>
+<p>$$
+\mathcal N\cap\mathbb{B}_{\Phi}=\{i\lambda+\vec v:\lvert\vec v\rvert^{2}=\lambda^{2}\}.
+$$</p>
+<p><strong>Theorem (the cone is a cone of real dimension 3).</strong> The set above is a cone with vertex at the origin. It is the union of two nappes, the nappe $\lambda=\lvert\vec v\rvert$ and the nappe $\lambda=-\lvert\vec v\rvert$, and each nappe meets each sphere $\lambda^{2}+\lvert\vec v\rvert^{2}=r^{2}$ of the closure in a sphere of dimension $2$.</p>
+<p><em>Proof.</em> The condition is homogeneous of degree two, so the set is a cone. For fixed $\lvert\lambda\rvert=r$ the condition is $\lvert\vec v\rvert=r$, a sphere of dimension $2$ in the triple, and the two signs of $\lambda$ give the two nappes. The cone has real dimension $1+2=3$.</p>
+<p><strong>Corollary (the cone is not a subspace).</strong> The set is closed under multiplication by a real scalar and not under addition: the sum of two null elements need not be null.</p>
+<p><strong>Remark (the null lines).</strong> Every nonzero null element spans a null line, and the null lines of the closure are parametrised by the unit sphere in the triple: to a unit vector $\vec u$ corresponds the line spanned by $ie_t+\vec u$ and its opposite. A null line is a zero divisor of the algebra, and the cone is the union of its null lines.</p>
+<p><strong>Remark (the cone against the two other carriers).</strong> The cone is a curved set of real dimension $3$ inside the four-dimensional closure. It meets the carrier at the origin, it meets the line at the origin, and it separates the closure into the region where the norm is positive and the region where it is negative.</p>
+<h2 id="invariance-under-the-group">Invariance Under the Group</h2>
+<p><strong>Theorem (the norm is invariant).</strong> For every unit $u$ and every $X$,</p>
+<p>$$
+N(uXu^{*})=N(X).
+$$</p>
+<p><em>Proof.</em> The norm is multiplicative, so $N(uXu^{*})=N(u)N(X)N(u^{*})=N(X)N(u)N(u^{*})$, and $uu^{*}=e_t$ gives $N(u)N(u^{*})=N(e_t)=1$.</p>
+<p><strong>Corollary (the norm is constant on the orbits).</strong> The conjugation action of the group preserves the closure, since the conjugate of an anti-Hermitian element is anti-Hermitian, and it preserves the norm. So the norm is a function of the orbit.</p>
+<p><strong>Remark (the norm does not separate the orbits).</strong> The orbits of the conjugation on the closure are labelled by two numbers, the parameter $\lambda$ of the centre and the modulus $\lvert\vec v\rvert$ of the triple. The norm is the difference of their squares, so it is one function of the two labels and not an enumeration of them. Two orbits with the same difference and different labels are distinct and carry the same norm, so the norm does not separate the orbits.</p>
+<p><strong>Corollary (the cone is a union of orbits).</strong> The null cone is the set of orbits whose two labels have equal modulus, and each nappe is a union of orbits. The cone is therefore invariant under the group, as it must be, since it is the zero locus of an invariant.</p>
+<h2 id="the-two-halves-and-the-sign">The Two Halves and the Sign</h2>
+<p><strong>Why the anti-Hermitian half and not its partner.</strong> The other half of real dimension $4$ with the same shape is $\mathbb{B}_{\Psi}=\mathbb{R}e_t\oplus i\mathfrak{k}$, with elements $\lambda+i\vec v$. Its norm is</p>
+<p>$$
+N(\lambda+i\vec v)=\lambda^{2}-\lvert\vec v\rvert^{2},
+$$</p>
+<p>which is the negative of the norm on the closure at the corresponding coordinates. Both halves carry indefinite forms of signature $(3,1)$ and $(1,3)$, and the choice between them is not a choice of sign but a choice of which triple is real. The carrier $\mathfrak{k}$ is real and lies in $\mathbb{B}_{\Phi}$; the triple $i\mathfrak{k}$ is imaginary and lies in $\mathbb{B}_{\Psi}$, and on that half it is negative definite. So the carrier sits in the half where its own triple is the positive one.</p>
+<h2 id="the-three-carriers-compared">The Three Carriers Compared</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>carrier</th>
+<th>norm on it</th>
+<th>null locus in it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>centre $\mathbb{C}e_t$</td>
+<td>$\lambda^{2}$</td>
+<td>$\{0\}$</td>
+</tr>
+<tr>
+<td>spinor plane $\Sigma$</td>
+<td>$0$</td>
+<td>the whole plane</td>
+</tr>
+<tr>
+<td>vector part $\mathfrak{k}$</td>
+<td>$\lvert\vec v\rvert^{2}$</td>
+<td>$\{0\}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Where the carrier sits.</strong> The carrier is norm-regular away from the origin and, as the companion article shows, spectrally regular there too, so $\mathfrak{k}$ away from the origin lies in the sector $\Sigma_{11}$, the sector of the fully regular elements. The centre lies in $\Sigma_{10}$ and the plane in $\Sigma_{01}$.</p>
+<p><strong>The positive carrier.</strong> Among the three carriers the vector part is the only one on which the norm is positive definite. The centre carries a complex square, whose real part is indefinite; the plane carries zero. The positivity of the vector part is what makes it the natural home of a length, and it is the reason the cone of the closure is a cone over a sphere rather than a pair of lines.</p>
+<h2 id="summary">Summary</h2>
+<p>On the closure the norm is $N(i\lambda+\vec v)=\lvert\vec v\rvert^{2}-\lambda^{2}$, a real form of signature $(3,1)$ that vanishes on a cone of real dimension $3$ with two nappes. The line $\mathbb{R}(ie_t)$ is negative definite and the triple $\mathfrak{k}$ is positive definite, the two are orthogonal for the polar form, and the carrier is norm-regular at every point except the origin. The norm is invariant under the conjugation action of the group and is constant on the orbits, which are labelled by the pair $(\lambda,\lvert\vec v\rvert)$; the norm is the difference of the two squares and does not separate the orbits. The carrier away from the origin lies in the sector $\Sigma_{11}$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>the biquaternion algebra, real, of dimension $8$</td>
+</tr>
+<tr>
+<td>$\tilde Q=Q_te_t+\vec Q$</td>
+<td>an element, with $Q_\mu$ complex</td>
+</tr>
+<tr>
+<td>$N(\tilde Q)=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$</td>
+<td>the $N$ norm, complex-valued and multiplicative</td>
+</tr>
+<tr>
+<td>$B(X,Y)=\tfrac12\bigl(N(X+Y)-N(X)-N(Y)\bigr)$</td>
+<td>the polar form of the norm</td>
+</tr>
+<tr>
+<td>$\mathcal N=\{N=0\}$</td>
+<td>the null cone</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{\Phi}=\mathbb{R}(ie_t)\oplus\mathfrak{k}$</td>
+<td>the anti-Hermitian subspace, the closure, $\dim_\mathbb{R}=4$</td>
+</tr>
+<tr>
+<td>$\mathfrak{k}=\operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$</td>
+<td>the vector part, the carrier, $\dim_\mathbb{R}=3$</td>
+</tr>
+<tr>
+<td>$i\lambda+\vec v$</td>
+<td>an element of the closure, with $\lambda$ and $\vec v$ real</td>
+</tr>
+<tr>
+<td>$\lvert\vec v\rvert^{2}=v_x^{2}+v_y^{2}+v_z^{2}$</td>
+<td>the positive definite form on the triple</td>
+</tr>
+<tr>
+<td>signature $(3,1)$</td>
+<td>three positive directions, one negative</td>
+</tr>
+<tr>
+<td>$\Sigma_{ij}$</td>
+<td>the sector with $N\neq0$ for $i=1$ and $B^{2}\neq0$ for $j=1$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-spin-one-anti-hermitian-subspace.html">Introduction to the Spin-One Anti-Hermitian Subspace</a>, for the carrier, the closure and the action on it</li>
+<li><a href="the-spin-one-anti-hermitian-subspace-and-spectral-regularity.html">The Spin-One Anti-Hermitian Subspace and Spectral Regularity</a>, for the other predicate on the same space</li>
+<li><a href="the-carriers-of-dimension-4-and-norm-regularity.html">The Carriers of Dimension 4 and Norm Regularity</a>, for the four halves and their four quadratic forms</li>
+<li><a href="n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html">N-Regularity and N-Degeneracy in the Biquaternion Algebra</a>, for the norm, its multiplicativity and its zero locus</li>
+<li><a href="relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html">Relations between the N Norm and Spectral Regularity and Degeneracy</a>, for the definitions of the two predicates and the four sectors</li>
+<li><a href="the-n-regular-sector.html">The N-Regular Sector</a>, for the open set on which the norm does not vanish</li>
+<li><a href="the-topology-of-the-zero-divisor-cone.html">The Topology of the Zero Divisor Cone</a>, for the cone as a union of null lines</li>
+<li><a href="the-carriers-the-representation-the-spin-and-the-closure.html">The Carriers, the Representation, the Spin and the Closure</a>, for the three carriers taken together</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

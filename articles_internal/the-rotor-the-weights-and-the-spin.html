@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Rotor, the Weights and the Spin — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-rotor-the-weights-and-the-spin"><strong>The Rotor, the Weights and the Spin</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article answers one question, and then proves every word of the answer.</p>
+<blockquote>
+<p>The polar word of an $N$-regular biquaternion contains the rotor $\tilde u_{\mathrm r}=\exp\bigl(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\bigr)$. What is that object, and how is the spin read from it?</p>
+</blockquote>
+<p>The answer is three statements.</p>
+<ol>
+<li>The exponent is a <strong>pure element</strong>: $\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ is the vector part of a biquaternion, of length $\theta_{\mathrm{axr}}/2$, with no scalar part. The arrow on it is the corpus mark of purity.</li>
+<li>The rotor is the <strong>exponential of that pure element</strong>, and an exponential of a pure element lands in the unit elements with a scalar part. So $\tilde u_{\mathrm r}$ carries the tilde and not the arrow.</li>
+<li>The <strong>spin is not read from the rotor</strong>. It is read from the generator $\vec S$, contracted with the same unit $\vec u_{\mathrm r}$, on the carrier where the operator acts:
+$$
+s=\max\operatorname{spec}\bigl(\rho(\vec u_{\mathrm r}\cdot\vec S)\bigr).
+$$</li>
+</ol>
+<p>The rest of the article is the definitions and the proofs. Four sections are long on purpose, because each is the place where a reader of the corpus has to take something on trust unless it is written out: the two one-sided multiplications, the commutator operator $\operatorname{ad}$, the conjugation operator $\operatorname{Ad}$, and the carrier. Every affirmation in those sections is stated as a proposition or a theorem and proved from the multiplication table or from the matrix model.</p>
+<p><strong>The operator articles.</strong> The two operators $\operatorname{ad}$ and $\operatorname{Ad}$ are used across the corpus — in <em>The Commutator Operator</em>, in <em>Automorphisms and Derivations of Algebras</em>, in <em>Biquaternion Automorphisms and Derivations</em>, in <em>The Carriers of the Biquaternion Algebra</em>, in <em>The Weights of a Carrier</em> — but they are used there as tools and stated in one line each. This article states them in full: the definitions, the operator identities, the multiplicativity criteria, the kernels, the images, the exponential identity, and the relation between the two.</p>
+<p><strong>What this article is not.</strong> It is not a new notation. It uses the glyphs of <em>Algebra and Element Conventions</em> and <em>Special Element and Peirce Conventions</em> unchanged: $\vec e_x,\vec e_y,\vec e_z$ for the vector units, $\vec Q$ for a pure element, $\vec u$ for a unit pure element, $\vec S$ for the spin generator, $\tilde u_{\mathrm r}$ for the rotor, $*$ for the conjugation, $N$ for the norm.</p>
+<h2 id="the-base-and-the-two-kinds-of-mark">The Base, and the Two Kinds of Mark</h2>
+<p><strong>The base.</strong> The algebra $\mathbb{B}$ has basis $e_t$ and $\vec e_x,\vec e_y,\vec e_z$, written</p>
+<p>$$
+\tilde Q=Q_t\,e_t+Q_x\,\vec e_x+Q_y\,\vec e_y+Q_z\,\vec e_z=\sum_{\mu} Q_\mu e_\mu ,
+$$</p>
+<p>with $Q_\mu=q_\mu+iq'_\mu$ complex. A general element carries the tilde.</p>
+<p><strong>The multiplication.</strong> The four units multiply by</p>
+<p>$$
+e_te_t=e_t,\qquad e_t\vec e_x=\vec e_xe_t=\vec e_x,\quad\text{and cyclically},
+$$
+$$
+\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t,\qquad
+\vec e_x\vec e_y=-\vec e_y\vec e_x=\vec e_z,\quad\text{and cyclically}.
+$$</p>
+<p>Every computation below is that table extended by bilinearity. The table is the whole method of the article; the matrix model is used only to check.</p>
+<p><strong>The arrow is the mark of purity.</strong> It is not a vector-space marker and not decoration. The scalar unit is written $e_t$, without an arrow. The three vector units are written with arrows. The <strong>tilde</strong> marks an element read with its scalar part beside its vector part; the <strong>arrow</strong> marks an element read on its vector part alone. The two are never stacked, so an arrowed glyph always names a pure element and a tilded glyph always names an element with a scalar part.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>glyph</th>
+<th>what it is</th>
+<th>why that mark</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e_t$</td>
+<td>the scalar unit, $1$</td>
+<td>scalar, so no arrow</td>
+</tr>
+<tr>
+<td>$\vec e_x,\vec e_y,\vec e_z$</td>
+<td>the vector units</td>
+<td>vector units, so arrowed</td>
+</tr>
+<tr>
+<td>$\tilde Q$</td>
+<td>a general element</td>
+<td>has a scalar part, so tilde</td>
+</tr>
+<tr>
+<td>$\vec Q$</td>
+<td>a pure element $Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$</td>
+<td>no scalar part, so arrow</td>
+</tr>
+<tr>
+<td>$\vec u$</td>
+<td>a unit pure element</td>
+<td>pure and of unit length</td>
+</tr>
+<tr>
+<td>$\vec S$</td>
+<td>the spin generator read as one vector</td>
+<td>pure, so arrowed and not tilded</td>
+</tr>
+<tr>
+<td>$\tilde S_k$</td>
+<td>a component of $\vec S$</td>
+<td>an element in its own right</td>
+</tr>
+<tr>
+<td>$\tilde u_{\mathrm r}$</td>
+<td>the rotor</td>
+<td>a unit element with a scalar part, so tilde, no arrow</td>
+</tr>
+<tr>
+<td>$\vec u_{\mathrm r}$</td>
+<td>the rotor axis, a unit real pure element</td>
+<td>pure, so arrow</td>
+</tr>
+<tr>
+<td>$N$</td>
+<td>the norm</td>
+<td>reserved; never used for the generator</td>
+</tr>
+<tr>
+<td>$L_X$, $R_X$</td>
+<td>left and right multiplication by $X$</td>
+<td>the element's glyph in the subscript</td>
+</tr>
+<tr>
+<td>$\operatorname{ad}_X$</td>
+<td>the commutator with $X$</td>
+<td>upright name, element in subscript</td>
+</tr>
+<tr>
+<td>$\operatorname{Ad}_u$</td>
+<td>conjugation by the *-unitary $u$</td>
+<td>upright name, element in subscript</td>
+</tr>
+<tr>
+<td>$\mathrm{Sd}_X$</td>
+<td>the two-sided operator $L_XR_{X^{*}}$</td>
+<td>upright name, element in subscript</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Remark (the subscript $\mathrm r$).</strong> It is a role label: it says <em>rotor</em>. It is written on the axis $\vec u_{\mathrm r}$ and on the rotor $\tilde u_{\mathrm r}$ because the two are objects of one construction. It names no direction.</p>
+<h2 id="what-the-pure-element-is">What the Pure Element Is</h2>
+<p><strong>Definition (pure element).</strong> A <strong>pure element</strong> of $\mathbb{B}$ is an element whose scalar part vanishes:</p>
+<p>$$
+\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z,\qquad Q_\mu\in\mathbb{C}.
+$$</p>
+<p><strong>Proposition.</strong> The pure elements form a complex vector space of complex dimension three and real dimension six. With real coefficients they form a real space of dimension three, with basis $\vec e_x,\vec e_y,\vec e_z$; that space is $\mathbb{R}^3$ read inside the algebra.</p>
+<p><em>Proof.</em> A pure element is an arbitrary triple $(Q_x,Q_y,Q_z)\in\mathbb{C}^3$, so the complex dimension is three; over $\mathbb{R}$ each coefficient is two real numbers, so the real dimension is six. The real triples are the triples with all imaginary parts zero, a real subspace of real dimension three. $\square$</p>
+<p><strong>Remark (a pure quaternion, or a pure biquaternion).</strong> With real coefficients $\vec Q$ is a <strong>pure quaternion</strong>, the vector part of an element of $\mathbb{H}$. With complex coefficients it is a <strong>pure biquaternion</strong>. The question's object $\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ has real coefficients and unit direction: it is a pure quaternion of length $\theta_{\mathrm{axr}}/2$. It is exactly the pure element the arrow announces.</p>
+<p><strong>Definition (the dot, which is a contraction).</strong> For a real triple $n_x,n_y,n_z$ and a triple of algebra elements $X_1,X_2,X_3$, the corpus writes</p>
+<p>$$
+n\cdot X=n_xX_1+n_yX_2+n_zX_3 ,
+$$</p>
+<p>and reads it as one element of the algebra. In particular</p>
+<p>$$
+n\cdot\vec e=n_x\vec e_x+n_y\vec e_y+n_z\vec e_z=\vec n ,
+$$</p>
+<p>the <strong>pure element</strong> with coordinates $n_x,n_y,n_z$. The dot contracts three real numbers with three elements; the result is an element, not a number. The same dot is used below with $\vec S$ in place of $\vec e$, with the same meaning and the same three real numbers.</p>
+<p><strong>Definition (unit pure element).</strong> A pure element has <strong>unit length</strong> when $n_x^2+n_y^2+n_z^2=1$ with real coefficients. A unit pure element with real coefficients is written $\vec u$. The rotor axis $\vec u_{\mathrm r}$ is one of these.</p>
+<p><strong>Proposition (a unit real pure element squares to $-e_t$).</strong> For $\vec u=n_x\vec e_x+n_y\vec e_y+n_z\vec e_z$ with real $n_k$ and $n_x^2+n_y^2+n_z^2=1$,</p>
+<p>$$
+\vec u^2=-e_t .
+$$</p>
+<p><em>Proof.</em> Expand and use the table:</p>
+<p>$$
+\vec u^2=\sum_k n_k^2\vec e_k^2+\sum_{k\neq l}n_kn_l\vec e_k\vec e_l
+=-\Bigl(\sum_k n_k^2\Bigr)e_t+\sum_{k<l}n_kn_l\bigl(\vec e_k\vec e_l+\vec e_l\vec e_k\bigr).
+$$</p>
+<p>The cross terms vanish pairwise, $\vec e_x\vec e_y+\vec e_y\vec e_x=0$ and cyclically, and the first sum is one by hypothesis. $\square$</p>
+<h2 id="the-conjugations">The Conjugations</h2>
+<p><strong>Definition (the three).</strong> For $\tilde Q=Q_te_t+\vec Q$,</p>
+<p>$$
+\bar{\tilde Q}=\bar Q_te_t+\bar Q_x\vec e_x+\bar Q_y\vec e_y+\bar Q_z\vec e_z,
+\qquad
+\tilde Q^{\natural}=Q_te_t-\vec Q,
+$$
+$$
+\tilde Q^{*}=\overline{\tilde Q^{\natural}}=\bar Q_te_t-\bar Q_x\vec e_x-\bar Q_y\vec e_y-\bar Q_z\vec e_z .
+$$</p>
+<p>The bar conjugates the coefficients and keeps the units. The natural conjugation $\natural$ fixes the scalar part and reverses the vector part. The star is the two composed.</p>
+<p><strong>Proposition.</strong> The star is an anti-automorphism and an involution: $(XY)^{*}=Y^{*}X^{*}$ and $X^{**}=X$. A pure element is anti-fixed by $\natural$: $\vec Q^{\natural}=-\vec Q$. The vector units are anti-Hermitian for the star, $\vec e_k^{*}=-\vec e_k$, and the scalar unit is fixed, $e_t^{*}=e_t$.</p>
+<p><em>Proof.</em> The bar is an involution fixing the units and $\natural$ is an involution reversing the vector part, so their composition is an involution. For the anti-automorphism it is enough to check the basis, since all three maps are real-linear on the coefficients: $(\vec e_x\vec e_y)^{*}=\vec e_z^{*}=-\vec e_z$ and $\vec e_y^{*}\vec e_x^{*}=(-\vec e_y)(-\vec e_x)=\vec e_y\vec e_x=-\vec e_z$, and the other products by the same computation with the indices cycled. The last two statements are the definition read at $\vec Q$ and at $e_t,\vec e_k$. $\square$</p>
+<p><strong>Remark (the matrix picture, used only as a check).</strong> With</p>
+<p>$$
+e_t=\begin{pmatrix}1&0\\0&1\end{pmatrix},\quad
+\vec e_x=\begin{pmatrix}0&-i\\-i&0\end{pmatrix},\quad
+\vec e_y=\begin{pmatrix}0&-1\\1&0\end{pmatrix},\quad
+\vec e_z=\begin{pmatrix}-i&0\\0&i\end{pmatrix},
+$$</p>
+<p>the table is satisfied and the star is the conjugate transpose. Every number quoted below as <em>measured</em> was computed here. No proof depends on it.</p>
+<h2 id="the-norm">The Norm</h2>
+<p>Two scalar functions are attached to an element, and they must not be confused.</p>
+<p><strong>Definition (the norm).</strong></p>
+<p>$$
+N(\tilde Q)=Q_t^2+Q_x^2+Q_y^2+Q_z^2 .
+$$</p>
+<p><strong>Proposition (the norm is the product with the natural conjugate).</strong> For every $\tilde Q$,</p>
+<p>$$
+\tilde Q\,\tilde Q^{\natural}=\tilde Q^{\natural}\tilde Q=N(\tilde Q)\,e_t .
+$$</p>
+<p><em>Proof.</em> Expand: $(Q_te_t+\vec Q)(Q_te_t-\vec Q)=Q_t^2e_t-Q_t\vec Q+Q_t\vec Q-\vec Q^2=Q_t^2e_t-\vec Q^2$, the two cross terms cancelling. And $\vec Q^2=(Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z)^2=\sum_kQ_k^2\vec e_k^2+\sum_{k<l}Q_kQ_l(\vec e_k\vec e_l+\vec e_l\vec e_k)=-\sum_kQ_k^2e_t$, the cross terms vanishing pairwise as in the unit case. Hence $\tilde Q\tilde Q^{\natural}=(Q_t^2+Q_x^2+Q_y^2+Q_z^2)e_t$. The other order is the same expansion read from the right. $\square$</p>
+<p><strong>Proposition (multiplicativity).</strong></p>
+<p>$$
+N(XY)=N(X)N(Y).
+$$</p>
+<p><em>Proof.</em> By the proposition above, $N(XY)e_t=(XY)(XY)^{\natural}=XY\,Y^{\natural}X^{\natural}=X\bigl(Y Y^{\natural}\bigr)X^{\natural}=X\bigl(N(Y)e_t\bigr)X^{\natural}=N(Y)\,XX^{\natural}=N(Y)N(X)e_t$, using the anti-automorphism property of $\natural$ and the centrality of scalars. $\square$</p>
+<p><strong>Corollary (the inverse).</strong> An element is invertible exactly when $N(\tilde Q)\neq0$, and then</p>
+<p>$$
+\tilde Q^{-1}=\frac{\tilde Q^{\natural}}{N(\tilde Q)} .
+$$</p>
+<p><em>Proof.</em> The product in the proposition is $N e_t$, so dividing by the scalar $N$ gives the inverse; and if $N=0$ the element is a zero divisor, since $\tilde Q\tilde Q^{\natural}=0$ with $\tilde Q\neq0$. $\square$</p>
+<p><strong>Remark (the norm is complex-valued and indefinite).</strong> $N$ takes values in $\mathbb{C}$ and is not a length: $N(i e_t)=-1$, and $N(\tilde S_k)=-\tfrac14$. It is the quadratic form of the complex bilinear form, and it vanishes on a cone. The <strong>null cone</strong> is the set $N(\tilde Q)=0$; an element with $N\neq0$ is a <strong>unit</strong> in the sense of invertibility. In the matrix model $N=\det$.</p>
+<p><strong>Remark (the norm is not the Hermitian square).</strong> The product $\tilde Q\tilde Q^{*}$ is a different object and is not a scalar: for $\tilde Q=\tfrac{1}{\sqrt2}(e_t+i\vec e_x)$ one measures $\tilde Q\tilde Q^{*}=e_t+i\vec e_x$. The star-product is the one that defines the *-unitary elements below; the $\natural$-product is the one that gives $N$. The two agree only for real coefficients.</p>
+<p><strong>Remark (the letter).</strong> $N$ belongs to the norm and to nothing else in this article. The generator has its own glyphs, $\vec S$ and $\tilde S_k$.</p>
+<h2 id="images-and-kernels">Images and Kernels</h2>
+<p>Both operators below are studied through their kernels, and <em>kernel</em> is used in two senses — for a linear map and for a homomorphism of groups. The two senses are defined here, once, before the first use.</p>
+<p><strong>Definition (kernel and image of a linear map).</strong> Let $U,V$ be complex vector spaces and $T:U\to V$ complex-linear. The <strong>kernel</strong> of $T$ is the set of vectors it kills,</p>
+<p>$$
+\ker T=\bigl\{u\in U: T(u)=0\bigr\}\subseteq U ,
+$$</p>
+<p>and the <strong>image</strong> of $T$ is the set of values it takes,</p>
+<p>$$
+\operatorname{im}T=\bigl\{T(u): u\in U\bigr\}\subseteq V .
+$$</p>
+<p><strong>Proposition (both are subspaces).</strong> $\ker T$ is a complex subspace of $U$ and $\operatorname{im}T$ is a complex subspace of $V$.</p>
+<p><em>Proof.</em> $T(0)=0$ by linearity, so $0\in\ker T$. If $T(u)=T(u')=0$ and $\lambda\in\mathbb{C}$ then $T(u+\lambda u')=T(u)+\lambda T(u')=0$, so $\ker T$ is closed under sums and scalar multiples. For the image, $T(u)+T(u')=T(u+u')$ and $\lambda T(u)=T(\lambda u)$, and $0=T(0)$. $\square$</p>
+<p><strong>Proposition (injectivity is the vanishing of the kernel).</strong> $T$ is injective if and only if $\ker T=0$.</p>
+<p><em>Proof.</em> If $T$ is injective, $T(u)=0=T(0)$ gives $u=0$. Conversely if $\ker T=0$ and $T(u)=T(u')$, then $T(u-u')=0$, so $u-u'=0$. $\square$</p>
+<p><strong>Theorem (rank–nullity).</strong> For a linear map of a finite-dimensional space,</p>
+<p>$$
+\dim\ker T+\dim\operatorname{im}T=\dim U .
+$$</p>
+<p><em>Proof.</em> Take a basis $v_1,\dots,v_r$ of $\ker T$ and extend it to a basis $v_1,\dots,v_r,w_1,\dots,w_s$ of $U$. The images $T(w_1),\dots,T(w_s)$ span $\operatorname{im}T$, because any $T(u)$ is a combination of the $T(v_i)=0$ and the $T(w_j)$. They are independent: if $\sum\lambda_jT(w_j)=0$ then $T\bigl(\sum\lambda_jw_j\bigr)=0$, so $\sum\lambda_jw_j\in\ker T$, so it is a combination of the $v_i$, and independence of the whole basis forces all $\lambda_j=0$. Hence $\dim\operatorname{im}T=s$ and $\dim U=r+s$. $\square$</p>
+<p><strong>Definition (kernel of a homomorphism of groups).</strong> Let $\varphi:G\to H$ be a homomorphism of groups with identity elements $1_G,1_H$. The <strong>kernel</strong> is the set of elements it sends to the identity,</p>
+<p>$$
+\ker\varphi=\bigl\{g\in G:\varphi(g)=1_H\bigr\}\subseteq G .
+$$</p>
+<p>It is a <strong>normal subgroup</strong>, $\varphi(k\ker\varphi)k^{-1}\subseteq\ker\varphi$ for every $k\in G$, because $\varphi(khk^{-1})=\varphi(k)1_H\varphi(k)^{-1}=1_H$. And $\varphi$ is injective exactly when $\ker\varphi=\{1_G\}$: if $\varphi(g)=\varphi(g')$ then $\varphi(g^{-1}g')=\varphi(g)^{-1}\varphi(g')=1_H$, so $g^{-1}g'\in\ker\varphi$, and conversely an element of the kernel maps to $1_H=\varphi(1_G)$. This is the sense in which a kernel is written below for $u\mapsto\operatorname{Ad}_u$, whose values are linear maps and whose identity is $\mathrm{id}$.</p>
+<p><strong>Definition (kernel of an algebra homomorphism).</strong> For a homomorphism of algebras $\varphi:A\to A'$, the kernel is $\{a:\varphi(a)=0\}$; it is a two-sided ideal, and $\varphi$ is injective exactly when it vanishes on no nonzero element. The <strong>image</strong> is a subalgebra.</p>
+<h2 id="the-one-sided-multiplications">The One-Sided Multiplications</h2>
+<p>A carrier is defined by an action, and both actions used below are built from the two one-sided multiplications. They come first, with their identities.</p>
+<p><strong>Definition (left and right multiplication).</strong> For $X\in\mathbb{B}$,</p>
+<p>$$
+L_X:\mathbb{B}\to\mathbb{B},\qquad L_X(Y)=XY,
+\qquad
+R_X:\mathbb{B}\to\mathbb{B},\qquad R_X(Y)=YX .
+$$</p>
+<p>Both are complex-linear, since the product is bilinear over $\mathbb{C}$.</p>
+<p><strong>Proposition (the composition rules).</strong> For all $X,Y$,</p>
+<p>$$
+L_XL_Y=L_{XY},\qquad R_XR_Y=R_{YX}.
+$$</p>
+<p><em>Proof.</em> For any $Z$, $L_XL_Y(Z)=X(YZ)=(XY)Z=L_{XY}(Z)$ by associativity, and $R_XR_Y(Z)=(ZY)X=Z(YX)=R_{YX}(Z)$. $\square$</p>
+<p><strong>Corollary (one is a homomorphism, the other an anti-homomorphism).</strong> The assignment $X\mapsto L_X$ is a homomorphism of algebras and $X\mapsto R_X$ is an anti-homomorphism: the first preserves the order of the product and the second reverses it.</p>
+<p><em>Proof.</em> The two composition rules, together with $L_{e_t}=\mathrm{id}=R_{e_t}$ and the linearity of $X\mapsto L_X$ in $X$. $\square$</p>
+<p><strong>Proposition (the two sides commute).</strong> For all $X,Y$,</p>
+<p>$$
+L_XR_Y=R_YL_X .
+$$</p>
+<p><em>Proof.</em> For any $Z$, $L_XR_Y(Z)=L_X(ZY)=X(ZY)=(XZ)Y=R_Y(XZ)=R_YL_X(Z)$, associativity being the only ingredient. $\square$</p>
+<p><strong>Corollary (the assignment is injective).</strong> The map $X\mapsto L_X$ has kernel $0$, and so does $X\mapsto R_X$: the operator $L_X$ is the zero operator only for $X=0$.</p>
+<p><em>Proof.</em> $L_X(e_t)=X$, so $L_X=0$ forces $X=0$; and $L_0$ is the zero operator. $\square$</p>
+<p><strong>Proposition (the kernel of a one-sided multiplication is an annihilator).</strong> For every $X$,</p>
+<p>$$
+\ker L_X=\bigl\{Y:XY=0\bigr\},\qquad \ker R_X=\bigl\{Y:YX=0\bigr\},
+$$</p>
+<p>the right and left annihilators of $X$. Each is zero exactly when $X$ is a unit; when $X$ is a nonzero zero divisor each contains $X^{\natural}\neq0$, of complex dimension at least one.</p>
+<p><em>Proof.</em> The two identities are the definitions of $L_X$ and $R_X$. If $X$ is a unit, $XY=0$ gives $Y=X^{-1}0=0$. If $X\neq0$ is not a unit then $N(X)=0$ by §<em>The Norm</em>, and $X^{\natural}\neq0$ because $\natural$ is an involution, while $XX^{\natural}=X^{\natural}X=N(X)e_t=0$; so $X^{\natural}$ lies in both kernels. $\square$</p>
+<p><strong>Proposition (the kernels at an idempotent are two-dimensional).</strong> For $X=\tilde\Pi_+$ both kernels are of complex dimension $2$.</p>
+<p><em>Proof.</em> $\tilde\Pi_+^{\natural}=\tilde\Pi_-$ by §<em>The Idempotents and the Ideals</em>, and $\tilde\Pi_+\tilde\Pi_-=0$, so the nonzero element $\tilde\Pi_-$ lies in both kernels and neither is zero. For the dimension, in the matrix model $\tilde\Pi_+=\mathrm{diag}(1,0)$, so $\tilde\Pi_+Y$ is $Y$ with its second row replaced by zero: it vanishes exactly when the second row of $Y$ vanishes, a two-dimensional condition. Likewise $Y\tilde\Pi_+$ vanishes exactly when the second column of $Y$ vanishes. $\square$</p>
+<p><strong>Remark (why right multiplication adds no carrier).</strong> The right multiplications form the opposite algebra, and $\mathbb{B}\cong M_2(\mathbb{C})$ is isomorphic to its opposite through the transpose. So a right carrier is a left carrier read in the mirror, and the count of carriers below is a count for one side and for the conjugation, not for three actions.</p>
+<h2 id="centralisers-and-the-kernels-collected">Centralisers, and the Kernels Collected</h2>
+<p><strong>Definition (centre and centraliser).</strong> For $X\in\mathbb{B}$,</p>
+<p>$$
+C(X)=\bigl\{Y\in\mathbb{B}: XY=YX\bigr\},\qquad
+Z(\mathbb{B})=\bigl\{X\in\mathbb{B}: XY=YX\ \text{for all }Y\in\mathbb{B}\bigr\}.
+$$</p>
+<p>$C(X)$ is the <strong>centraliser</strong> of $X$ and $Z(\mathbb{B})$ the <strong>centre</strong> of the algebra.</p>
+<p><strong>Proposition (elementary properties).</strong> $C(X)$ is a complex subspace containing $e_t$ and $X$; $Z(\mathbb{B})$ is a commutative subalgebra; and</p>
+<p>$$
+Z(\mathbb{B})=\bigcap_{X\in\mathbb{B}}C(X),\qquad C(X)=\mathbb{B}\iff X\in Z(\mathbb{B}).
+$$</p>
+<p><em>Proof.</em> Closure under sums and scalars, and $e_tX=X=Xe_t$, $X^2=X^2$. The centre is the intersection of the centralisers by its definition; it is a subalgebra because sums, products and scalars of central elements are central, and it is commutative because its elements commute with everything, in particular with each other. The last equivalence is the definition of the centre read backwards. $\square$</p>
+<p><strong>Proposition (the centraliser of a non-scalar element is two complex-dimensional).</strong> If $X\notin\mathbb{C}e_t$ then</p>
+<p>$$
+C(X)=\mathbb{C}e_t\oplus\mathbb{C}X,\qquad \dim_\mathbb{C}C(X)=2 .
+$$</p>
+<p><em>Proof.</em> The right side is contained in the left, and is two-dimensional because $X$ is not a scalar. For the reverse inclusion, read the statement in the matrix model $\mathbb{B}=M_2(\mathbb{C})$.</p>
+<p>A non-scalar $X$ is <strong>cyclic</strong>, that is, some vector $v$ has $v$ and $Xv$ independent. If no such $v$ existed, then every vector would be an eigenvector; applying that to two independent vectors $v,w$ and to $v+w$ gives $Xv=\lambda v$, $Xw=\mu w$, and $\lambda v+\mu w=\nu(v+w)$, so $\lambda=\mu=\nu$ and $X$ would be the scalar $\lambda$.</p>
+<p>Fix a cyclic $v$; then $(v,Xv)$ is a basis, and a $Y$ commuting with $X$ is determined by $Yv$. Write $Yv=av+bXv$ and put $p(t)=a+bt$. Then $Y$ and $p(X)$ agree on $v$ by construction, and on $Xv$ because $Y(Xv)=X(Yv)=aXv+bX^2v$ and $X^2\in\mathbb{C}e_t\oplus\mathbb{C}X$ — a $2\times2$ matrix satisfies a monic quadratic relation, Cayley–Hamilton — so $bX^2v$ is again $p(X)(Xv)$. Two linear maps agreeing on a basis are equal, so $Y=p(X)\in\mathbb{C}e_t\oplus\mathbb{C}X$. $\square$</p>
+<p><strong>Corollary (the centre is one complex-dimensional).</strong> $Z(\mathbb{B})=\mathbb{C}e_t$, of complex dimension $1$.</p>
+<p><em>Proof.</em> Containment of $\mathbb{C}e_t$ is centrality of scalars. For the reverse, an element of $Z(\mathbb{B})$ lies in $C(\vec e_x)$, and $C(\vec e_x)=\mathbb{C}e_t\oplus\mathbb{C}\vec e_x$ by the proposition above; it also lies in $C(\vec e_y)=\mathbb{C}e_t\oplus\mathbb{C}\vec e_y$, so it lies in the intersection of those two planes inside $\mathbb{B}$, which is $\mathbb{C}e_t$. $\square$</p>
+<p><strong>Remark (the kernels used in this article, collected).</strong> Every kernel used below is one of the following, and each is computed in the section named.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>map</th>
+<th>from</th>
+<th>to</th>
+<th>kernel</th>
+<th>size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$X\mapsto L_X$, $X\mapsto R_X$</td>
+<td>$\mathbb{B}$</td>
+<td>$\operatorname{End}_\mathbb{C}(\mathbb{B})$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$L_X$, $R_X$, $X$ a unit</td>
+<td>$\mathbb{B}$</td>
+<td>$\mathbb{B}$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$L_X$, $R_X$, $X$ a nonzero zero divisor</td>
+<td>$\mathbb{B}$</td>
+<td>$\mathbb{B}$</td>
+<td>the annihilators of $X$, containing $X^{\natural}$</td>
+<td>$\ge1$</td>
+</tr>
+<tr>
+<td>$\operatorname{ad}_X$, $X\notin\mathbb{C}e_t$</td>
+<td>$\mathbb{B}$</td>
+<td>$\mathbb{B}$</td>
+<td>$C(X)=\mathbb{C}e_t\oplus\mathbb{C}X$</td>
+<td>$\dim_\mathbb{C}=2$</td>
+</tr>
+<tr>
+<td>$X\mapsto\operatorname{ad}_X$</td>
+<td>$\mathbb{B}$</td>
+<td>$\operatorname{Der}_\mathbb{C}(\mathbb{B})$</td>
+<td>$Z(\mathbb{B})=\mathbb{C}e_t$</td>
+<td>$\dim_\mathbb{C}=1$</td>
+</tr>
+<tr>
+<td>$\operatorname{Ad}_u-\mathrm{id}$, $u\in G$</td>
+<td>$\mathbb{B}$</td>
+<td>$\mathbb{B}$</td>
+<td>$C(u)$</td>
+<td>$\dim_\mathbb{C}=2$, or $4$ for central $u$</td>
+</tr>
+<tr>
+<td>$u\mapsto\operatorname{Ad}_u$ on $G$</td>
+<td>$G$</td>
+<td>$\operatorname{Aut}_\mathbb{C}(\mathbb{B})$</td>
+<td>$\{\lambda e_t:|\lambda|=1\}$</td>
+<td>a circle</td>
+</tr>
+</tbody>
+</table></div>
+<p>The rows for $\operatorname{Ad}$ are proved in §<em>The Conjugation Operator</em>; the rows for $\operatorname{ad}$ in §<em>The Commutator Operator</em>; the rows for the one-sided multiplications in §<em>The One-Sided Multiplications</em>. The table is exhaustive for this article: no other kernel is used, and no kernel is quoted without one of these seven computations behind it.</p>
+<p><strong>Remark (the form used to compute an image).</strong> Two of the operators below are self-adjoint or unitary for one form, and that is what turns a kernel into an image: for a normal operator $T$ of a finite-dimensional space, $\operatorname{im}T=(\ker T)^{\perp}$.</p>
+<p>The form is the <strong>Hermitian form</strong> of <em>Product and Form Conventions</em>, §<em>The Form Convention</em>, that is, the scalar part of the plain sesquilinear product read in two arguments, with the star on the second slot:</p>
+<p>$$
+H(\tilde Q_1,\tilde Q_2)=\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}\bigl(\tilde Q_1\tilde Q_2^{*}\bigr).
+$$</p>
+<p>A scalar part of a product and nothing else: <strong>no matrix trace enters the definition</strong>, and none enters any computation below. In coordinates the convention gives</p>
+<p>$$
+H(\tilde Q_1,\tilde Q_2)=Q_{1t}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})=\sum_{\mu\in\{t,x,y,z\}}Q_{1\mu}\overline{Q_{2\mu}} ,
+$$</p>
+<p>the Euclidean pairing of the two coordinate columns.</p>
+<p><strong>Proposition (the form is Hermitian and positive definite).</strong> $H(\tilde Q_1,\tilde Q_2)=\overline{H(\tilde Q_2,\tilde Q_1)}$, and $H(\tilde Q,\tilde Q)=\sum_\mu|Q_\mu|^2$ vanishes only at $\tilde Q=0$.</p>
+<p><em>Proof.</em> The coordinate formula is the convention's. Conjugating it gives the same number in the other order, which is the Hermitian symmetry; the sum of the four moduli is a sum of nonnegative terms and is zero only when all four coefficients vanish. $\square$</p>
+<p><strong>Corollary (orthogonal complement is a complement).</strong> For a subspace $U\subseteq\mathbb{B}$, $\mathbb{B}=U\oplus U^{\perp}$, and $\dim_\mathbb{C}U^{\perp}=4-\dim_\mathbb{C}U$.</p>
+<p><em>Proof.</em> Positive definiteness gives $U\cap U^{\perp}=0$, and the dimension formula of linear algebra on a positive definite space gives $\dim U+\dim U^{\perp}=4$; a direct sum of the two dimensions is the whole. $\square$</p>
+<p><strong>Lemma (cyclicity and conjugation-invariance of the scalar part).</strong> For all $\tilde Q_1,\tilde Q_2$ and every unit $u$,</p>
+<p>$$
+\mathrm{Sc}(\tilde Q_1\tilde Q_2)=\mathrm{Sc}(\tilde Q_2\tilde Q_1),\qquad \mathrm{Sc}(u\tilde Qu^{-1})=\mathrm{Sc}(\tilde Q).
+$$</p>
+<p><em>Proof.</em> The plain form of <em>Product and Form Conventions</em> is $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)=Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)$, symmetric in its two arguments by inspection; hence $\mathrm{Sc}(\tilde Q_1\tilde Q_2)=\mathrm{Sc}(\tilde Q_2\tilde Q_1)$, and by iteration $\mathrm{Sc}(\tilde A_1\cdots\tilde A_k)$ is invariant under cyclic permutation of the factors.</p>
+<p>For the second identity, polarise the quaternionic norm. That norm is $N(\tilde Q)=\mathrm{Sc}(\tilde Q^{\natural}\tilde Q)=Q_t^2+(\vec Q,\vec Q)$ and is multiplicative, $N(\tilde Q_1\tilde Q_2)=N(\tilde Q_1)N(\tilde Q_2)$, both by <em>Norm and Unitary Conventions</em>. Then</p>
+<p>$$
+N(\tilde Q+e_t)=(Q_t+1)^2+(\vec Q,\vec Q),\qquad N(\tilde Q-e_t)=(Q_t-1)^2+(\vec Q,\vec Q),
+$$</p>
+<p>so</p>
+<p>$$
+\mathrm{Sc}(\tilde Q)=Q_t=\tfrac14\bigl(N(\tilde Q+e_t)-N(\tilde Q-e_t)\bigr),
+$$</p>
+<p>a formula in which no trace occurs. Conjugation by a unit permutes nothing in it: $N(u\tilde Qu^{-1})=N(u)N(\tilde Q)N(u^{-1})=N(\tilde Q)$ by multiplicativity, and $u e_t u^{-1}=e_t$ gives $N(u(\tilde Q\pm e_t)u^{-1})=N(u\tilde Qu^{-1}\pm e_t)$, which equals $N(\tilde Q\pm e_t)$. Substituting into the polarisation gives $\mathrm{Sc}(u\tilde Qu^{-1})=\mathrm{Sc}(\tilde Q)$. $\square$</p>
+<h2 id="the-commutator-operator">The Commutator Operator</h2>
+<p><strong>Definition (the commutator, and the operator it generates).</strong> For $X,Y\in\mathbb{B}$ the <strong>commutator</strong> is $[X,Y]=XY-YX$. Fixing $X$ and varying $Y$ gives the <strong>adjoint action</strong>, also called the <strong>inner multiplication operator</strong> or the <strong>commutator operator</strong>,</p>
+<p>$$
+\operatorname{ad}_X:\mathbb{B}\to\mathbb{B},\qquad \operatorname{ad}_X(Y)=[X,Y]=XY-YX .
+$$</p>
+<p>An element $X$ and the operator $\operatorname{ad}_X$ carry the same glyph, the element's, with the upright name in front, which is the convention of <em>Operator and Calculus Conventions</em>, §<em>The Named Operators</em>.</p>
+<p><strong>Proposition (the operator is the difference of the two sides).</strong></p>
+<p>$$
+\boxed{\;\operatorname{ad}_X=L_X-R_X\;}
+$$</p>
+<p><em>Proof.</em> For any $Y$, $(L_X-R_X)(Y)=XY-YX=\operatorname{ad}_X(Y)$. $\square$</p>
+<p><strong>Proposition (linearity in the parameter).</strong> The map $X\mapsto\operatorname{ad}_X$ is complex-linear: $\operatorname{ad}_{X+\lambda Y}=\operatorname{ad}_X+\lambda\operatorname{ad}_Y$.</p>
+<p><em>Proof.</em> The commutator is bilinear, and the scalar $\lambda$ is central, so $\lambda$ passes through the product. $\square$</p>
+<p><strong>Proposition (the Leibniz rule: $\operatorname{ad}_X$ is a derivation).</strong> For all $X,Y,Z$,</p>
+<p>$$
+\boxed{\;\operatorname{ad}_X(YZ)=\operatorname{ad}_X(Y)\,Z+Y\,\operatorname{ad}_X(Z)\;}
+$$</p>
+<p><em>Proof.</em> Expand both sides. The left side is $X(YZ)-(YZ)X$. The right side is $(XY-YX)Z+Y(XZ-ZX)=XYZ-YXZ+YXZ-YZX=XYZ-YZX$. The two agree because the middle terms cancel, and the agreement is exactly the statement that the four products $XYZ$, $YXZ$, $YZX$, $ZXY$ appear in the pattern associativity forces. $\square$</p>
+<p><strong>Theorem (the bracket of two commutator operators).</strong></p>
+<p>$$
+\boxed{\;[\operatorname{ad}_X,\operatorname{ad}_Y]=\operatorname{ad}_{[X,Y]}\;}
+$$</p>
+<p>where the bracket on the left is the commutator of the two operators and that on the right the commutator in the algebra. Hence $X\mapsto\operatorname{ad}_X$ is a homomorphism of Lie algebras from $\mathbb{B}$ with its commutator bracket into $\operatorname{End}_\mathbb{C}(\mathbb{B})$.</p>
+<p><em>Proof.</em> Compute on a general $Z$:</p>
+<p>$$
+\operatorname{ad}_X\operatorname{ad}_Y(Z)=X(YZ-ZY)-(YZ-ZY)X,
+$$
+$$
+\operatorname{ad}_Y\operatorname{ad}_X(Z)=Y(XZ-ZX)-(XZ-ZX)Y .
+$$</p>
+<p>Subtracting, the eight terms are $XYZ-XZY-YZX+ZYX-YXZ+YZX+XZY-ZXY$. The term $-XZY$ and $+XZY$ cancel, and $-YZX$ and $+YZX$ cancel, leaving</p>
+<p>$$
+XYZ-YXZ+ZYX-ZXY=(XY-YX)Z-Z(XY-YX)=\operatorname{ad}_{[X,Y]}(Z). \ \square
+$$</p>
+<p><strong>Remark (what that theorem is for).</strong> It is the reason the rotation relations of §<em>The Generator</em> hold inside the algebra: the triple $\tilde S_1,\tilde S_2,\tilde S_3$ generates a Lie algebra isomorphic to the one $\operatorname{ad}$ generates, and the exponential of the second acts on the algebra as the exponential of the first acts by conjugation, which is the identity proved at the end of §<em>The Conjugation Operator</em>.</p>
+<p><strong>Proposition (the kernel of one operator is the centraliser).</strong> For every $X$,</p>
+<p>$$
+\ker\operatorname{ad}_X=\bigl\{Y:\operatorname{ad}_X(Y)=0\bigr\}=\bigl\{Y:XY=YX\bigr\}=C(X),
+$$</p>
+<p>the centraliser of §<em>Images, Kernels and Centralisers</em>.</p>
+<p><em>Proof.</em> $\operatorname{ad}_X(Y)=0$ is the equation $XY-YX=0$ by the definition of $\operatorname{ad}_X$, which is the defining equation of $C(X)$. $\square$</p>
+<p><strong>Corollary (the size of that kernel and of its image).</strong> For $X\notin\mathbb{C}e_t$ the kernel is $\mathbb{C}e_t\oplus\mathbb{C}X$, of complex dimension $2$, and the image is of complex dimension $2$ as well, by rank–nullity with $\dim_\mathbb{C}\mathbb{B}=4$.</p>
+<p><em>Proof.</em> The first statement is the proposition on centralisers of §<em>Images, Kernels and Centralisers</em>, and the second is rank–nullity applied to $\operatorname{ad}_X:\mathbb{B}\to\mathbb{B}$. $\square$</p>
+<p><strong>Proposition (the image, for a Hermitian generator).</strong> Let $X$ be Hermitian. Then $\operatorname{ad}_X$ is self-adjoint for $H$, $H(\operatorname{ad}_X\tilde Q_1,\tilde Q_2)=H(\tilde Q_1,\operatorname{ad}_X\tilde Q_2)$, and therefore</p>
+<p>$$
+\operatorname{im}\operatorname{ad}_X=\bigl(\ker\operatorname{ad}_X\bigr)^{\perp}
+=\bigl\{\tilde Q:\mathrm{Sc}(\tilde Q)=0,\ H(\tilde Q,X)=0\bigr\}.
+$$</p>
+<p><em>Proof.</em> Since $H$ is the scalar part of a product, the two inner products are products read by $\mathrm{Sc}$:</p>
+<p>$$
+H(\operatorname{ad}_X\tilde Q_1,\tilde Q_2)=\mathrm{Sc}(X\tilde Q_1\tilde Q_2^{*})-\mathrm{Sc}(\tilde Q_1X\tilde Q_2^{*}),
+$$</p>
+<p>and, with $X^{*}=X$,</p>
+<p>$$
+H(\tilde Q_1,\operatorname{ad}_X\tilde Q_2)=\mathrm{Sc}\bigl(\tilde Q_1\tilde Q_2^{*}X\bigr)-\mathrm{Sc}\bigl(\tilde Q_1X\tilde Q_2^{*}\bigr).
+$$</p>
+<p>The first terms agree by the cyclic invariance of $\mathrm{Sc}$, and the second terms are literally equal, so the two sides agree. A self-adjoint operator of a finite-dimensional positive definite space is diagonalisable with real spectrum, hence normal, so $\operatorname{im}\operatorname{ad}_X=(\ker\operatorname{ad}_X)^{\perp}$. The kernel is $\mathbb{C}e_t\oplus\mathbb{C}X$ by the corollary above, and $H(\tilde Q,e_t)=\mathrm{Sc}(\tilde Q)$, $H(\tilde Q,X)$ are its two defining equations; both spaces are of complex dimension $2$, by the dimension formula of the corollary on orthogonal complements, so orthogonality to the kernel is also sufficient. $\square$</p>
+<p><strong>Corollary (the image at the spin generator is the rotation plane).</strong> With $X=\tilde S_3=\tfrac12i\vec e_z$,</p>
+<p>$$
+\operatorname{im}\operatorname{ad}_{\tilde S_3}=\mathbb{C}\vec e_x\oplus\mathbb{C}\vec e_y ,
+$$</p>
+<p>the plane perpendicular to the axis.</p>
+<p><em>Proof.</em> Both $\vec e_x$ and $\vec e_y$ have vanishing scalar part, and both are orthogonal to $\tilde S_3$: $H(\vec e_x,\tilde S_3)=\mathrm{Sc}\bigl(\vec e_x(\tfrac12i\vec e_z)^{*}\bigr)=\tfrac12i\,\mathrm{Sc}(\vec e_x\vec e_z)$, which vanishes because $\vec e_x\vec e_z$ is a pure vector, and likewise for $\vec e_y$. So the plane is contained in the image, and both spaces are two-dimensional. Directly, $\operatorname{ad}_{\tilde S_3}(\vec e_x)=i\vec e_y$ and $\operatorname{ad}_{\tilde S_3}(i\vec e_y)=\vec e_x$, so both basis vectors are values. $\square$</p>
+<p><strong>Theorem (the kernel of the assignment is the centre).</strong></p>
+<p>$$
+\ker\bigl(X\mapsto\operatorname{ad}_X\bigr)=Z(\mathbb{B})=\mathbb{C}e_t .
+$$</p>
+<p><em>Proof.</em> An element is in the kernel exactly when it commutes with every $Y$. The centre contains $\mathbb{C}e_t$ because scalars are central. Conversely let $X=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ commute with $\vec e_x$. Then $0=\operatorname{ad}_X(\vec e_x)$ has vector part $\operatorname{ad}_{\vec Q}(\vec e_x)$, and using $\vec e_y\vec e_x=-\vec e_z$, $\vec e_z\vec e_x=\vec e_y$,</p>
+<p>$$
+\operatorname{ad}_{\vec Q}(\vec e_x)=Q_y(\vec e_y\vec e_x-\vec e_x\vec e_y)+Q_z(\vec e_z\vec e_x-\vec e_x\vec e_z)
+=Q_y(-2\vec e_z)+Q_z(2\vec e_y),
+$$</p>
+<p>so $Q_y=Q_z=0$. Commuting with $\vec e_y$ then gives $Q_x(\vec e_x\vec e_y-\vec e_y\vec e_x)=2Q_x\vec e_z=0$, so $Q_x=0$. Hence $X=Q_te_t$. $\square$</p>
+<p><strong>Corollary (completeness of the derivation space).</strong> Since the centre is one complex-dimensional, the image of $\operatorname{ad}$ is three complex-dimensional; over $\mathbb{C}$ every derivation of $\mathbb{B}$ is inner, so $\operatorname{Der}_\mathbb{C}(\mathbb{B})\cong\mathbb{B}/\mathbb{C}e_t$, which is the statement of <em>Biquaternion Automorphisms and Derivations</em>, §<em>The Derivations</em>.</p>
+<p><strong>Remark (the operator in the operator layer).</strong> The identity $\operatorname{ad}_X=L_X-R_X$ places the bracket inside the algebra of operators rather than beside it. Two consequences are used below. First, the commutator of $\operatorname{ad}$ with a left multiplication is a left multiplication,</p>
+<p>$$
+[\operatorname{ad}_X,L_Y]=L_{[X,Y]},
+$$</p>
+<p>which follows from the composition rules of §<em>The One-Sided Multiplications</em> and is the computation of <em>The Commutator Operator</em>, §<em>The Commutators of the Multiplication Operators</em>. Second, the vanishing of $\operatorname{ad}_X$ is exactly the statement that the left and right multiplications by $X$ agree, which is why the centre is invisible to both.</p>
+<h2 id="the-conjugation-operator">The Conjugation Operator</h2>
+<p><strong>Definition (conjugation by an element).</strong> For a unit $u$ (that is $N(u)\neq0$),</p>
+<p>$$
+\operatorname{Ad}_u:\mathbb{B}\to\mathbb{B},\qquad \operatorname{Ad}_u(Y)=uYu^{*} .
+$$</p>
+<p><strong>Proposition (it is a linear bijection, always).</strong> For every unit $u$ the map $\operatorname{Ad}_u$ is complex-linear and bijective, with inverse $\operatorname{Ad}_{u^{-1}}$.</p>
+<p><em>Proof.</em> Linearity is bilinearity of the product. For the inverse, compute for any $Y$:</p>
+<p>$$
+\operatorname{Ad}_{u^{-1}}\bigl(\operatorname{Ad}_u(Y)\bigr)
+=u^{-1}\bigl(uYu^{*}\bigr)\bigl(u^{-1}\bigr)^{*}
+=Y\,u^{*}\bigl(u^{-1}\bigr)^{*}
+=Y\,(u^{-1}u)^{*}=Y\,e_t^{*}=Y ,
+$$</p>
+<p>using associativity and the anti-automorphism property $(u^{-1}u)^{*}=u^{*}(u^{-1})^{*}$. $\square$</p>
+<p><strong>Theorem (when it is an algebra homomorphism).</strong> For all $X,Y$,</p>
+<p>$$
+\boxed{\;\operatorname{Ad}_u(X)\,\operatorname{Ad}_u(Y)=uX\bigl(u^{*}u\bigr)Yu^{*}\;}
+$$</p>
+<p>and consequently $\operatorname{Ad}_u$ is multiplicative if and only if $u^{*}u=e_t$.</p>
+<p><em>Proof.</em> Multiply out:</p>
+<p>$$
+\operatorname{Ad}_u(X)\operatorname{Ad}_u(Y)=uXu^{*}\,uYu^{*}=uX\bigl(u^{*}u\bigr)Yu^{*},
+$$</p>
+<p>the middle factor being the only thing between $X$ and $Y$. If $u^{*}u=e_t$ the right side is $u(XY)u^{*}=\operatorname{Ad}_u(XY)$. Conversely, if $\operatorname{Ad}_u$ is multiplicative for all $X,Y$ then taking $X=Y=e_t$ gives $u u^{*}\,u u^{*}=u u^{*}$, and multiplying by the inverse of $u u^{*}$ — a unit, since $N(uu^{*})=N(u)\overline{N(u)}\neq0$ — gives $u u^{*}=e_t$, hence also $u^{*}u=e_t$. $\square$</p>
+<p><strong>Definition (<em>-unitary element, and the group $G$).** An element is </em></strong>-unitary<em><em><em> when $u u^{*}=e_t$. The </em>-unitary elements form the group $G=\mathrm{U}(2)$ of </em>The Carriers of the Biquaternion Algebra</em>, §<em>Introduction</em>.</p>
+<p><strong>Corollary (the automorphism criterion).</strong> $\operatorname{Ad}_u$ is an automorphism of $\mathbb{B}$ exactly when $u\in G$. For $u\in G$ one has $u^{*}=u^{-1}$ and therefore</p>
+<p>$$
+\operatorname{Ad}_u(Y)=uYu^{-1},
+$$</p>
+<p>the ordinary inner automorphism.</p>
+<p><em>Proof.</em> The theorem gives multiplicativity and bijectivity exactly at $u^{*}u=e_t$; and $u u^{*}=e_t$ with $u$ invertible gives $u^{*}=u^{-1}$ on multiplying by $u^{-1}$ on the left. $\square$</p>
+<p><strong>Remark (the correction this forces).</strong> The affirmation <em>for a unit $u$, $\operatorname{Ad}_u$ is an automorphism</em> is false as it stands, and the failure is visible at $u=2e_t$: one measures $\operatorname{Ad}_u(\vec e_x)\operatorname{Ad}_u(\vec e_y)=4\operatorname{Ad}_u(\vec e_z)$, not $\operatorname{Ad}_u(\vec e_z)$. The hypothesis needed is $u\in G$, not $N(u)\neq0$. The two conditions coincide only for elements whose coefficients are real, where $u u^{*}=N(u)e_t$; they differ for complex coefficients, for example at $u=\tfrac{1+i}{\sqrt2}e_t$, which is *-unitary and has $N(u)=i$. In the matrix model the criterion is the unitarity of the matrix, and the difference is the difference between $\mathrm{U}(2)$ and $\mathrm{GL}_2(\mathbb{C})$.</p>
+<p><strong>Proposition (the assignment is a homomorphism of groups, and its kernel).</strong> For all units $u,v$,</p>
+<p>$$
+\operatorname{Ad}_{uv}=\operatorname{Ad}_u\circ\operatorname{Ad}_v,\qquad \operatorname{Ad}_{e_t}=\mathrm{id},
+$$</p>
+<p>so $u\mapsto\operatorname{Ad}_u$ is a homomorphism of groups from the units into the linear group of $\mathbb{B}$; restricted to $G$ it lands in $\operatorname{Aut}_\mathbb{C}(\mathbb{B})$, and in the sense of §<em>Images, Kernels and Centralisers</em> its kernel is</p>
+<p>$$
+\ker\operatorname{Ad}\big|_{G}
+=\bigl\{u\in G:\operatorname{Ad}_u=\mathrm{id}\bigr\}
+=\bigl\{\lambda e_t:\lambda\in\mathbb{C},\ |\lambda|=1\bigr\},
+$$</p>
+<p>the centre of $G=\mathrm{U}(2)$.</p>
+<p><em>Proof.</em> $\operatorname{Ad}_{uv}(Y)=(uv)Y(uv)^{*}=u\bigl(vYv^{*}\bigr)u^{*}$ by $(uv)^{*}=v^{*}u^{*}$, which is the composition law; the identity is $\operatorname{Ad}_{e_t}(Y)=Y$. For the kernel, $\operatorname{Ad}_u=\mathrm{id}$ means $uYu^{*}=Y$ for all $Y$. Taking $Y=e_t$ gives $uu^{*}=e_t$, so $u\in G$ and $u^{*}=u^{-1}$; then $uYu^{-1}=Y$ for all $Y$, which says exactly that $u$ is central. The central elements of $\mathbb{B}$ are the scalars $\lambda e_t$ — that is §<em>The Commutator Operator</em>, and the direct factorisation $\mathbb{B}=M_2(\mathbb{C})$ gives the same answer — and among the scalars the *-unitary ones satisfy $\lambda\bar\lambda=|\lambda|^2=1$. Conversely, for $u=\lambda e_t$ with $|\lambda|=1$ one has $\operatorname{Ad}_u(Y)=\lambda Y\bar\lambda=|\lambda|^2Y=Y$. $\square$</p>
+<p><strong>Proposition (the fixed space of one conjugation).</strong> For $u\in G$,</p>
+<p>$$
+\ker\bigl(\operatorname{Ad}_u-\mathrm{id}\bigr)=\bigl\{Y:uYu^{-1}=Y\bigr\}=C(u),
+$$</p>
+<p>so the kernel is $\mathbb{B}$ when $u$ is central and $\mathbb{C}e_t\oplus\mathbb{C}u$, of complex dimension $2$, when $u$ is not.</p>
+<p><em>Proof.</em> $uYu^{*}=Y$ with $u^{*}=u^{-1}$ is $uY=Yu$, which is membership in $C(u)$. A central $u$ is a scalar and commutes with everything; a non-central $u$ is not a scalar, so the centraliser proposition of §<em>Images, Kernels and Centralisers</em> applies. $\square$</p>
+<p><strong>Corollary (the image of one conjugation).</strong> For $u\in G$ the map $\operatorname{Ad}_u$ preserves $H$, so $\operatorname{Ad}_u-\mathrm{id}$ is normal and</p>
+<p>$$
+\operatorname{im}\bigl(\operatorname{Ad}_u-\mathrm{id}\bigr)
+=\bigl(\ker(\operatorname{Ad}_u-\mathrm{id})\bigr)^{\perp}
+=\bigl\{\tilde Q:\mathrm{Sc}(\tilde Q)=0,\ H(\tilde Q,u)=0\bigr\}.
+$$</p>
+<p><em>Proof.</em> $H(\operatorname{Ad}_u\tilde Q_1,\operatorname{Ad}_u\tilde Q_2)=\mathrm{Sc}\bigl(u\tilde Q_1u^{*}\,(u\tilde Q_2u^{*})^{*}\bigr)=\mathrm{Sc}\bigl(u\tilde Q_1u^{*}u\tilde Q_2^{*}u^{*}\bigr)$, and $u^{*}u=e_t$ for $u\in G$ gives $\mathrm{Sc}\bigl(u\,\tilde Q_1\tilde Q_2^{*}\,u^{*}\bigr)$, which is $\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ by the conjugation-invariance of the scalar part. So $\operatorname{Ad}_u$ is unitary for $H$; a unitary minus the identity is normal, and for a normal operator the image is the orthogonal complement of the kernel. Orthogonality to $e_t$ is $\mathrm{Sc}(\tilde Q)=0$, and orthogonality to $u$ is the second condition, the two spanning the kernel by the proposition above. $\square$</p>
+<p><strong>Theorem ($\operatorname{ad}$ is the derivative of $\operatorname{Ad}$ at the identity).</strong> Let $V$ be anti-Hermitian, $V^{*}=-V$, and let $t\in\mathbb{R}$. Then $\exp(tV)\in G$, the curve $t\mapsto\operatorname{Ad}_{\exp(tV)}$ is a one-parameter subgroup of $\operatorname{Aut}_\mathbb{C}(\mathbb{B})$, and</p>
+<p>$$
+\frac{d}{dt}\Big|_{t=0}\operatorname{Ad}_{\exp(tV)}(Y)=\operatorname{ad}_V(Y).
+$$</p>
+<p><em>Proof.</em> $\bigl(\exp(tV)\bigr)^{*}=\exp(tV^{*})=\exp(-tV)=\bigl(\exp(tV)\bigr)^{-1}$, so the element is *-unitary and $\operatorname{Ad}_{\exp(tV)}(Y)=e^{tV}Ye^{-tV}$. Differentiating with respect to $t$ at $t=0$ gives $VY-YV$. $\square$</p>
+<p><strong>Theorem (the exponential identity).</strong> For anti-Hermitian $V$ and all $Y$,</p>
+<p>$$
+\boxed{\;\exp\bigl(\operatorname{ad}_V\bigr)(Y)=\operatorname{Ad}_{\exp V}(Y)=e^{V}Y\,e^{-V}\;}
+$$</p>
+<p><em>Proof.</em> Both sides solve the same linear initial-value problem. For the left side, $\frac{d}{dt}\exp(t\operatorname{ad}_V)(Y)=\operatorname{ad}_V\bigl(\exp(t\operatorname{ad}_V)(Y)\bigr)$ because $\operatorname{ad}_V$ commutes with its own exponential. For the right side, $\frac{d}{dt}\bigl(e^{tV}Ye^{-tV}\bigr)=Ve^{tV}Ye^{-tV}-e^{tV}Ye^{-tV}V=\operatorname{ad}_V\bigl(e^{tV}Ye^{-tV}\bigr)$. The two agree at $t=0$, where both are $Y$. Uniqueness for linear ordinary differential equations gives the identity at $t=1$. $\square$</p>
+<p><strong>Remark (the corpus identities this reproduces).</strong> The identity is the one recorded as $\exp(\operatorname{ad}_a)=\iota_{\exp(a)}$ in <em>Automorphisms and Derivations of Algebras</em>, §<em>The Exponential of a Derivation</em>, and as $\exp(\operatorname{ad}_X)(A)=e^{X}Ae^{-X}$ in <em>The Derivations and the Automorphisms of $M_4(\mathbb{C})$</em>; the worked rotation case $\exp(tD)=\operatorname{Ad}_{\exp(t\vec e_z/2)}$ with $D=\tfrac12\operatorname{ad}_{\vec e_z}$ is <em>Biquaternion Automorphisms and Derivations</em>, §<em>A Rotation Derivation</em>. What this article adds is the hypothesis: the conjugation is by a *-unitary element, and the derivation is by an anti-Hermitian one, and the two hypotheses correspond under the exponential.</p>
+<p><strong>Remark (the two-sided operator, and when it coincides with the conjugation).</strong> The operator $L_XR_{X^{*}}$, written $\mathrm{Sd}_X$, is the <strong>two-sided operator</strong> of <em>The Two-Sided Operator on an Algebra</em>. For a *-unitary $u$ one has $u^{*}=u^{-1}$, so</p>
+<p>$$
+\mathrm{Sd}_u(Y)=uYu^{*}=\operatorname{Ad}_u(Y),
+$$</p>
+<p>and the two operators coincide on the unitary slice — which is the statement of <em>Two-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint</em>, §<em>The Slice Reduction</em>, where the signed two-sided operator reduces to the inner conjugation exactly on $U=\{x:x^{\dagger}x=1\}$. Off that slice the two differ, and $\mathrm{Sd}_u$ is not multiplicative: it is $\operatorname{Ad}_u$ scaled by the failure of unitarity, by the theorem above.</p>
+<p><strong>Remark (which operator does which job).</strong> $L$ and $R$ are the two sides of the product. $\operatorname{ad}$ is their difference, it is a derivation, and it is the infinitesimal form of $\operatorname{Ad}$. $\operatorname{Ad}$ is the conjugation, and it is an automorphism exactly on $G$. $\mathrm{Sd}$ is the product of the two sides, and it coincides with $\operatorname{Ad}$ on $G$. The four are one structure read at four points, and no fifth is needed.</p>
+<h2 id="what-a-carrier-is">What a Carrier Is</h2>
+<p><strong>Definition (invariance).</strong> Let $\rho$ be an action of $\mathbb{B}$, or of $G$, on $\mathbb{B}$ by complex-linear maps. A subspace $W\subseteq\mathbb{B}$ is <strong>$\rho$-invariant</strong> when $\rho(X)W\subseteq W$ for every $X$ in the acting structure.</p>
+<p><strong>Definition (irreducibility).</strong> A $\rho$-invariant subspace $W\neq0$ is <strong>irreducible</strong> when its only $\rho$-invariant subspaces are $0$ and $W$. It is <strong>reducible</strong> otherwise, and <strong>completely reducible</strong> when it is a direct sum of irreducible ones.</p>
+<p><strong>Definition (carrier).</strong> A <strong>carrier</strong> is a pair $(W,\rho)$ with $W\subseteq\mathbb{B}$ nonzero, $\rho$-invariant and $\rho$-irreducible, where $\rho$ is left multiplication, conjugation by $G$, or the commutator action of the rotation algebra.</p>
+<p><strong>Proposition (the left-invariant subspaces are the left ideals).</strong> A subspace $W$ is invariant under $L$ if and only if $XW\subseteq W$ for every $X\in\mathbb{B}$, that is, if and only if $W$ is a left ideal.</p>
+<p><em>Proof.</em> The invariance condition for the action $L$ is by definition $L_X(W)\subseteq W$ for all $X$, and $L_X(W)=XW$. $\square$</p>
+<p><strong>Remark (why the action must be part of the carrier).</strong> The irreducibility of a subspace is a property of the pair, not of the subspace, and the corpus contains four cases that prove it. Each is proved here, because the sentence <em>the same subspace can be irreducible for one action and reducible for another</em> is otherwise an assertion.</p>
+<p><strong>Case 1: the centre, irreducible for the conjugation and not invariant for multiplication.</strong> The line $\mathbb{C}e_t$ is fixed pointwise by every $\operatorname{Ad}_u$ with $u\in G$, since $\operatorname{Ad}_u(e_t)=ue_tu^{*}=uu^{*}=e_t$; a complex line has no proper nonzero subspace, so it is irreducible. It is not invariant under $L$: for $X\notin\mathbb{C}e_t$ one has $L_X(e_t)=X\notin\mathbb{C}e_t$, and as $X$ varies the images fill $\mathbb{B}$. So $\mathbb{C}e_t$ is a carrier for the conjugation and not a carrier at all for multiplication.</p>
+<p><strong>Case 2: the pure complex triple, irreducible for the commutator and not invariant for multiplication.</strong> Let $\mathfrak{k}_\mathbb{C}=\mathbb{C}\vec e_x+\mathbb{C}\vec e_y+\mathbb{C}\vec e_z$. It is invariant under $\operatorname{ad}_{\tilde S_k}$ — the computation of §<em>The Three Spectra</em> shows $\operatorname{ad}_{\tilde S_3}(\vec e_x)=i\vec e_y\in\mathfrak{k}_\mathbb{C}$ and similarly for the others — and it is irreducible there, by the weight argument given below. It is not invariant under $L$: $L_{i e_t}(\vec e_x)=i\vec e_x\notin\mathfrak{k}_\mathbb{C}$, since $i\vec e_x$ is an antiquaternion element and $\mathfrak{k}_\mathbb{C}$ is spanned by the quaternion units.</p>
+<p><strong>Case 3: the whole algebra, reducible for both actions it admits.</strong> For multiplication, $\mathbb{B}=S_+\oplus S_-$ by §<em>The Idempotents and the Ideals</em>, so $\mathbb{B}$ splits. For the conjugation, $\mathbb{B}=\mathbb{C}e_t\oplus\mathfrak{k}_\mathbb{C}$, both summands invariant, so $\mathbb{B}$ splits again. Hence $\mathbb{B}$ is a carrier for neither action, and the phrase <em>the algebra is the carrier</em> is empty.</p>
+<p><strong>Case 4: the material sector, invariant but reducible, so not a carrier.</strong> Let $\mathbb{B}_\Phi$ be the anti-Hermitian subspace. For $u\in G$ and $Q\in\mathbb{B}_\Phi$,</p>
+<p>$$
+\bigl(uQu^{*}\bigr)^{*}=uQ^{*}u^{*}=-uQu^{*},
+$$</p>
+<p>so $\mathbb{B}_\Phi$ is invariant. It splits as $\mathbb{R}(ie_t)\oplus\mathfrak{k}$: the line is central and fixed, and $\mathfrak{k}$ is carried into itself because for real $\vec v$ with real coefficients $u\vec vu^{*}$ has real coefficients again. Hence the sector is reducible, and it is an <strong>ambient</strong> space, not a carrier; the carrier inside it is the part of vanishing scalar part, $\mathfrak{k}$ itself.</p>
+<p><strong>Definition (the space $\mathfrak{k}$, the pure part).</strong> The carrier inside the material sector is</p>
+<p>$$
+\mathfrak{k}=\mathbb{R}\vec e_x\oplus\mathbb{R}\vec e_y\oplus\mathbb{R}\vec e_z
+=\bigl\{\tilde Q:\tilde Q^{*}=-\tilde Q,\ \mathrm{Sc}(\tilde Q)=0,\ Q_\mu\in\mathbb{R}\bigr\},
+$$</p>
+<p>the real pure elements with real coefficients. Its complex span is $\mathfrak{k}_\mathbb{C}=\mathbb{C}\vec e_x\oplus\mathbb{C}\vec e_y\oplus\mathbb{C}\vec e_z$, the elements of vanishing scalar part.</p>
+<p>The intrinsic condition is $\mathrm{Sc}(\tilde Q)=0$, orthogonality to $e_t$ for the form $H$ of §<em>Images and Kernels</em>. The corpus calls this space the <strong>traceless part</strong>, a name inherited from the matrix model, in which the condition $\mathrm{Sc}(\tilde Q)=0$ is written as the vanishing of a matrix trace; <em>The Carriers of the Biquaternion Algebra</em> uses it under that heading. This article writes $\mathfrak{k}$ and calls it the <strong>pure part</strong>, and every statement about it below is the statement $\mathrm{Sc}(\tilde Q)=0$.</p>
+<p><strong>Remark (the table's third row, read exactly).</strong> This is why the third row of the carrier table below gives the carrier as $\mathfrak{k}$ with representation space $\mathfrak{k}_\mathbb{C}$ of complex dimension three, while the sector it sits in has real dimension four. The difference is the central line, on which the action is trivial. The corpus states the same thing in <em>The Carriers of the Biquaternion Algebra</em>, §<em>The Material Sector</em>, under the heading <em>the traceless part is the carrier</em>.</p>
+<h2 id="the-three-carriers">The Three Carriers</h2>
+<p><strong>Theorem (the list).</strong> Up to the choice of axis, the algebra has exactly three carriers.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>carrier</th>
+<th>subspace</th>
+<th>$\dim_\mathbb{R}$</th>
+<th>action</th>
+<th>representation space</th>
+<th>$\dim_\mathbb{C}$ of it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the centre</td>
+<td>$\mathbb{C}e_t$</td>
+<td>$2$</td>
+<td>$\operatorname{Ad}$, $G$</td>
+<td>$\mathbb{C}$, trivial</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>the ideals</td>
+<td>$S_\pm(\vec u)=\mathbb{B}\tilde\Pi_\pm(\vec u)$</td>
+<td>$4$</td>
+<td>$L$</td>
+<td>$S_\pm$, defining module</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>the pure part</td>
+<td>$\mathfrak{k}=\mathbb{R}\vec e_x\oplus\mathbb{R}\vec e_y\oplus\mathbb{R}\vec e_z$</td>
+<td>$3$</td>
+<td>$\operatorname{Ad}$, $G$</td>
+<td>$\mathfrak{k}_\mathbb{C}$, adjoint</td>
+<td>$3$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The three rows are proved in order, then the list is proved complete.</p>
+<h3 id="the-centre">The Centre</h3>
+<p><strong>Proposition.</strong> $\mathbb{C}e_t$ is invariant and irreducible under the conjugation by $G$, and its representation space is one complex dimension, on which the action is the identity.</p>
+<p><em>Proof.</em> Invariance: for $Q_t\in\mathbb{C}$ and $u\in G$, $\operatorname{Ad}_u(Q_te_t)=Q_t\,ue_tu^{*}=Q_t\,uu^{*}=Q_te_t$, so the line is fixed pointwise. Irreducibility: a complex line has exactly two subspaces, $0$ and itself. Representation space: the action is the identity on a one-dimensional space, which is the trivial module. $\square$</p>
+<p><strong>Remark (a carrier on which the action is trivial).</strong> The irreducibility here is the irreducibility of a line, not the absence of invariant subspaces in a large space: there are none because there is no room. The kernel of the action is the whole of $G$, and this is the only row with that property. It is a carrier in the degenerate sense, and the corpus says so explicitly.</p>
+<h3 id="the-ideals">The Ideals</h3>
+<p><strong>Definition (the idempotents).</strong> For a unit real pure element $\vec u$ put</p>
+<p>$$
+J=i\vec u,\qquad \tilde\Pi_\pm(\vec u)=\tfrac12\bigl(e_t\pm J\bigr)=\tfrac12\bigl(e_t\pm i\vec u\bigr),
+$$
+$$
+S_\pm(\vec u)=\mathbb{B}\,\tilde\Pi_\pm(\vec u).
+$$</p>
+<p>The four properties of the idempotents, and the structure of the ideals, are proved in §<em>The Idempotents and the Ideals</em> below. Here they are used.</p>
+<p><strong>Proposition (a left ideal).</strong> $S_\pm(\vec u)$ is a left ideal, of real dimension $4$ and complex dimension $2$.</p>
+<p><em>Proof.</em> For $X,Y\in\mathbb{B}$, $X\bigl(Y\tilde\Pi_\pm\bigr)=(XY)\tilde\Pi_\pm\in S_\pm$, so $S_\pm$ is closed under left multiplication. Dimension: the map $L_{\tilde\Pi_\pm}$ has rank $2$ as a complex-linear map of the four-dimensional space $\mathbb{B}$ — in the matrix model $\tilde\Pi_+=\mathrm{diag}(1,0)$, so $X\tilde\Pi_+$ is $X$ with its second column replaced by zero, a two-dimensional space — hence $\dim_\mathbb{C}S_\pm=2$ and $\dim_\mathbb{R}S_\pm=4$. $\square$</p>
+<p><strong>Theorem (irreducibility).</strong> $S_\pm(\vec u)$ is a minimal left ideal: it contains no nonzero proper left ideal, so left multiplication acts on it irreducibly.</p>
+<p><em>Proof.</em> Let $v\in S_+$ be nonzero. The set $\mathbb{B}v=\{Xv:X\in\mathbb{B}\}$ is a left ideal contained in $S_+$. It is two complex-dimensional: in the matrix model $S_+$ consists of the matrices whose second column vanishes, so $v\neq0$ has a nonzero first column $w$, and $Xv=(Xw)(1,0)$ as $X$ ranges over $M_2(\mathbb{C})$ sweeps the two-dimensional space of matrices whose second column vanishes. Hence $\mathbb{B}v=S_+$, since it is a subspace of $S_+$ of the same dimension. So every nonzero $v$ generates $S_+$, and a nonzero left subideal $J\subseteq S_+$ contains some $v\neq0$, whence $J\supseteq\mathbb{B}v=S_+$. $\square$</p>
+<p><strong>Proposition (the algebra is the sum of the two ideals, and the sum is direct).</strong> For every unit real $\vec u$,</p>
+<p>$$
+\mathbb{B}=S_+(\vec u)\oplus S_-(\vec u).
+$$</p>
+<p><em>Proof.</em> Sum: for any $X$, $X=Xe_t=X(\tilde\Pi_++\tilde\Pi_-)=X\tilde\Pi_++X\tilde\Pi_-\in S_++S_-$. Directness: let $X\in S_+\cap S_-$; then $X=Y\tilde\Pi_+$ and $X=Z\tilde\Pi_-$ for some $Y,Z$, so</p>
+<p>$$
+X=X\tilde\Pi_+=Z\tilde\Pi_-\tilde\Pi_+=0
+$$</p>
+<p>using $\tilde\Pi_-\tilde\Pi_+=0$. $\square$</p>
+<p><strong>Remark (the representation space, and faithfulness).</strong> The representation space of the carrier is $S_\pm$ itself, of complex dimension two: the action of $\mathbb{B}$ on it is faithful, since $XS_\pm=0$ gives in particular $X\tilde\Pi_\pm=0$, and then $X=X\tilde\Pi_\pm+X\tilde\Pi_\mp=0$. So the type is the defining module of $M_2(\mathbb{C})$, of dimension two.</p>
+<p><strong>Remark (the axis is a parameter).</strong> The family $S_\pm(\vec u)$ depends on the unit real $\vec u$, a two-sphere of choices. No axis is preferred, and the type is the same for all of them; the axis is a datum of the carrier and not of the algebra.</p>
+<h3 id="the-traceless-part">The Traceless Part</h3>
+<p><strong>Proposition (invariance).</strong> $\mathfrak{k}$ is invariant under $\operatorname{Ad}_u$ for $u\in G$, and $\mathbb{B}_\Phi=\mathbb{R}(ie_t)\oplus\mathfrak{k}$ with the line fixed pointwise.</p>
+<p><em>Proof.</em> Invariance of the sector and the split are Case 4 of §<em>What a Carrier Is</em>. For the invariance of $\mathfrak{k}$ itself: for real $\vec v$ and $u\in G$, $\operatorname{Ad}_u(\vec v)=u\vec vu^{*}$ is again anti-Hermitian and of vanishing scalar part — anti-Hermitian because $(\vec v)^{*}=-\vec v$ and then $(u\vec vu^{*})^{*}=-u\vec vu^{*}$, of vanishing scalar part because $\mathrm{Sc}$ is invariant under conjugation by a unit, §<em>Images and Kernels</em> — and an anti-Hermitian element of vanishing scalar part with real coefficients is a real pure element, that is, an element of $\mathfrak{k}$. $\square$</p>
+<p><strong>Remark (why the sector is $\mathbb{B}_\Phi$ and not $\mathbb{B}_\Psi$).</strong> Write $\mathbb{B}_\Psi$ for the Hermitian sector, the set of elements with $Q^{*}=Q$. It is $i\mathbb{B}_\Phi$, four real-dimensional, and it is <em>also</em> invariant under the conjugation: $\operatorname{Ad}_u(Q^{*})=(\operatorname{Ad}_uQ)^{*}$ for $u\in G$, so each star-eigenspace is carried into itself. It also splits, as $\mathbb{R}e_t\oplus i\mathfrak{k}$. So invariance and dimension do not separate the two sectors; the bracket does.</p>
+<p><strong>Proposition (the bracket closes on $\Phi$ and not on $\Psi$).</strong> For $X,Y$ anti-Hermitian, $[X,Y]$ is anti-Hermitian; for $X,Y$ Hermitian, $[X,Y]$ is anti-Hermitian. That is,</p>
+<p>$$
+[\mathbb{B}_\Phi,\mathbb{B}_\Phi]\subseteq\mathbb{B}_\Phi,
+\qquad
+[\mathbb{B}_\Psi,\mathbb{B}_\Psi]\subseteq\mathbb{B}_\Phi,
+\qquad
+[\mathbb{B}_\Phi,\mathbb{B}_\Psi]\subseteq\mathbb{B}_\Psi .
+$$</p>
+<p><em>Proof.</em> For any $X,Y$, using that the star is an anti-automorphism,</p>
+<p>$$
+(XY-YX)^{*}=Y^{*}X^{*}-X^{*}Y^{*}.
+$$</p>
+<p>If $X^{*}=-X$ and $Y^{*}=-Y$ the right side is $(-Y)(-X)-(-X)(-Y)=YX-XY=-(XY-YX)$, so $[X,Y]$ is anti-Hermitian. If $X^{*}=X$ and $Y^{*}=Y$ the right side is $YX-XY=-(XY-YX)$, the same conclusion. If $X^{*}=-X$ and $Y^{*}=Y$ it is $YX+XY=XY-YX$, so $[X,Y]$ is Hermitian. $\square$</p>
+<p><strong>Corollary (why the carrier is the anti-Hermitian sector).</strong> The action on the pure part is $\operatorname{ad}$, whose values on a carrier must lie in the carrier. Since $[\mathbb{B}_\Psi,\mathbb{B}_\Psi]\subseteq\mathbb{B}_\Phi$, the Hermitian sector is not closed under its own bracket and cannot be a carrier of the commutator action; the sector that is closed is $\mathbb{B}_\Phi$, which is the Lie algebra $\mathfrak{u}(2)$ of $G$. The generator $\tilde S_k$ is Hermitian, so it lies in $\mathbb{B}_\Psi$ and not in the carrier: it is the element that acts, not an element acted on. This is why every formula below writes $\rho(\vec u\cdot\vec S)$ with $\rho$ an action and never places $\vec S$ inside the carrier.</p>
+<p><strong>Theorem (irreducibility).</strong> $\mathfrak{k}_\mathbb{C}$ is irreducible under the rotation algebra $\operatorname{span}_\mathbb{C}\{\tilde S_1,\tilde S_2,\tilde S_3\}$ acting by $\operatorname{ad}$, hence irreducible under $G$.</p>
+<p><em>Proof.</em> The weights of $\operatorname{ad}_{\tilde S_3}$ on $\mathfrak{k}_\mathbb{C}$ are $+1,0,-1$ on the basis $v_+=\vec e_x+i\vec e_y$, $v_0=\vec e_z$, $v_-=\vec e_x-i\vec e_y$, as computed in §<em>The Three Spectra</em>. Let $W\subseteq\mathfrak{k}_\mathbb{C}$ be a nonzero invariant subspace. Since $\operatorname{ad}_{\tilde S_3}$ has three distinct eigenvalues, it is diagonalisable, and an invariant subspace of a diagonalisable operator is spanned by eigenvectors: $W$ contains at least one of $v_+,v_0,v_-$. From each, the other two are reached:</p>
+<p>$$
+\operatorname{ad}_{\tilde S_1}(v_0)=-i\vec e_y,\qquad \operatorname{ad}_{\tilde S_2}(v_0)=i\vec e_x,
+$$</p>
+<p>which together with $v_0=\vec e_z$ span $\mathfrak{k}_\mathbb{C}$; and</p>
+<p>$$
+\operatorname{ad}_{\tilde S_1}(v_+)=\operatorname{ad}_{\tilde S_1}(\vec e_x)+i\operatorname{ad}_{\tilde S_1}(\vec e_y)=-i\vec e_z,
+$$</p>
+<p>since $\vec e_x$ commutes with $\tilde S_1$ and $\operatorname{ad}_{\tilde S_1}(\vec e_y)=i\vec e_z$; so $W\ni v_+$ gives $v_0\in W$ and then the other two. The case of $v_-$ is the same by symmetry $i\mapsto-i$. Hence $W=\mathfrak{k}_\mathbb{C}$. $\square$</p>
+<p><strong>Corollary (irreducibility under the group).</strong> If $W\subseteq\mathfrak{k}_\mathbb{C}$ is invariant under $\operatorname{Ad}_u$ for all $u\in G$, then it is invariant under $\operatorname{ad}_V$ for all $V$ in the Lie algebra, hence irreducible.</p>
+<p><em>Proof.</em> For $V$ anti-Hermitian and real, $t\mapsto\operatorname{Ad}_{\exp(tV)}(\vec w)$ is a curve in $W$ for each $\vec w\in W$, so its derivative $\operatorname{ad}_V(\vec w)$ lies in the closure of $W$, which is $W$ since $W$ is finite-dimensional and closed in the subspace topology. Then the theorem applies. $\square$</p>
+<p><strong>Remark (the representation space, and why three and not four).</strong> The carrier $\mathfrak{k}$ is three real-dimensional; its representation space is its complexification $\mathfrak{k}_\mathbb{C}$, of complex dimension three, which is the adjoint module of the rotation algebra. The ambient sector has real dimension four, and the extra direction is the central line $\mathbb{R}(ie_t)$, on which $\operatorname{Ad}$ is the identity. That line is a trivial summand of the ambient space; it contributes to the dimension of the ambient and not to the dimension of the representation.</p>
+<h3 id="three-and-not-four">Three and Not Four</h3>
+<p><strong>Theorem (the multiplication carriers).</strong> Every left ideal of $\mathbb{B}$ is one of $0$, $S_+$, $S_-$, $\mathbb{B}$. Hence the only multiplication carriers are the two minimal ones, and they carry one type.</p>
+<p><em>Proof.</em> Let $I$ be a left ideal. For $X\in I$, $X=X\tilde\Pi_++X\tilde\Pi_-$ with $X\tilde\Pi_\pm\in I\cap S_\pm$, so $I=(I\cap S_+)\oplus(I\cap S_-)$. Each $I\cap S_\pm$ is a left ideal contained in $S_\pm$, which is minimal, so it is $0$ or $S_\pm$. Four combinations, and one of them, $S_+\oplus S_-$, is $\mathbb{B}$. $\square$</p>
+<p><strong>Theorem (the conjugation carriers).</strong> Every subspace invariant under $\operatorname{Ad}_u$ for all $u\in G$ is one of</p>
+<p>$$
+0,\qquad \mathbb{C}e_t,\qquad \mathfrak{k}_\mathbb{C},\qquad \mathbb{B}.
+$$</p>
+<p>Hence the only conjugation carriers are the centre and the pure part.</p>
+<p><em>Proof.</em> Let $W$ be invariant. It is then invariant under every $\operatorname{ad}_V$ with $V$ in the Lie algebra, by the corollary above. Let $\pi:\mathbb{B}\to\mathfrak{k}_\mathbb{C}$ be the projection along $\mathbb{C}e_t$; it is a map of $\operatorname{ad}$-modules, since $\operatorname{ad}_V$ annihilates $e_t$ and preserves both summands. If $\pi(W)=0$ then $W\subseteq\mathbb{C}e_t$, so $W=0$ or $\mathbb{C}e_t$. If $\pi(W)\neq0$, then $\pi(W)=\mathfrak{k}_\mathbb{C}$ by irreducibility of $\mathfrak{k}_\mathbb{C}$. Take $w\in W$ with $\pi(w)=w_0\neq0$; then $\operatorname{ad}_V(w)=\operatorname{ad}_V(w_0)\in W$ for every $V$, and $\{\operatorname{ad}_V(w_0):V\}$ spans $\mathfrak{k}_\mathbb{C}$ because $\mathfrak{k}_\mathbb{C}$ is irreducible, so $\mathfrak{k}_\mathbb{C}\subseteq W$. Then $W=\mathfrak{k}_\mathbb{C}\oplus(W\cap\mathbb{C}e_t)$, and the second summand is $0$ or the line, both invariant. So $W=\mathfrak{k}_\mathbb{C}$ or $W=\mathbb{B}$. $\square$</p>
+<p><strong>Corollary (three types and no more).</strong> The three carriers carry pairwise non-isomorphic modules, of complex dimensions $1$, $2$ and $3$, and no fourth carrier exists.</p>
+<p><em>Proof.</em> The two theorems exhaust the two actions, and an isomorphism of modules preserves the complex dimension of the representation space. $\square$</p>
+<p><strong>Remark (why dimension alone does not separate the carriers).</strong> The ideal $S_\pm$ and the ambient sector $\mathbb{B}_\Phi$ are both four real-dimensional, and the centre is two. What separates them is the module, not the dimension of the subspace: dimensions $1$, $2$, $3$ of the representation space. This is the corpus's <em>type</em>, written $\mathcal{V}_d$.</p>
+<h2 id="the-idempotents-and-the-ideals">The Idempotents and the Ideals</h2>
+<p>The four properties used above are proved here, with the Peirce structure that the renamed articles of the corpus are built on.</p>
+<p><strong>Lemma (the square of the axis).</strong> For a unit real pure element $\vec u$,</p>
+<p>$$
+\vec u^2=-e_t,\qquad J^2=i^2\vec u^2=e_t .
+$$</p>
+<p><em>Proof.</em> The first is §<em>What the Pure Element Is</em>; the second follows on multiplying by $i^2=-1$. $\square$</p>
+<p><strong>Proposition (the idempotents are Hermitian, orthogonal, complete, and idempotent).</strong></p>
+<p>$$
+\boxed{\;\tilde\Pi_\pm^2=\tilde\Pi_\pm,\qquad \tilde\Pi_+\tilde\Pi_-=0,\qquad \tilde\Pi_++\tilde\Pi_-=e_t,\qquad \tilde\Pi_\pm^{*}=\tilde\Pi_\pm\;}
+$$</p>
+<p><em>Proof.</em> Write $\tilde\Pi_\pm=\tfrac12(e_t\pm J)$ and compute, using $J^2=e_t$ and the centrality of scalars:</p>
+<p>$$
+\tilde\Pi_\pm^2=\tfrac14\bigl(e_t\pm2J+J^2\bigr)=\tfrac14\bigl(2e_t\pm2J\bigr)=\tfrac12\bigl(e_t\pm J\bigr)=\tilde\Pi_\pm ,
+$$
+$$
+\tilde\Pi_+\tilde\Pi_-=\tfrac14\bigl(e_t-J\bigr)\bigl(e_t+J\bigr)=\tfrac14\bigl(e_t-J^2\bigr)=0 ,
+$$
+$$
+\tilde\Pi_++\tilde\Pi_-=\tfrac12\bigl(2e_t\bigr)=e_t .
+$$</p>
+<p>For the star: the coefficients of $\vec u$ are real, so $\vec u^{*}=-\vec u$, and then</p>
+<p>$$
+J^{*}=\bigl(i\vec u\bigr)^{*}=\bar i\,\vec u^{*}=(-i)(-\vec u)=i\vec u=J ,
+$$</p>
+<p>hence $\tilde\Pi_\pm^{*}=\tfrac12\bigl(e_t\pm J^{*}\bigr)=\tfrac12\bigl(e_t\pm J\bigr)=\tilde\Pi_\pm$. $\square$</p>
+<p><strong>Remark (the sign that must be watched).</strong> $J=i\vec u$ is Hermitian although $\vec u$ is anti-Hermitian: the two sign changes, one from the conjugation of $i$ and one from the conjugation of $\vec u$, cancel. Without the factor $i$ in $J$ the two idempotents would be exchanged by the star and neither would be a projection. The same factor appears in the generator $\tilde S_k=\tfrac12 i\vec e_k$, for the same reason.</p>
+<p><strong>Corollary (the natural conjugation exchanges them).</strong> $\tilde\Pi_\pm^{\natural}=\tilde\Pi_\mp$, and $N(\tilde\Pi_\pm)=0$.</p>
+<p><em>Proof.</em> The natural conjugation fixes all coefficients and reverses the vector part, so $J^{\natural}=-J$ and $\tilde\Pi_\pm^{\natural}=\tfrac12(e_t\mp J)=\tilde\Pi_\mp$. For the norm, read the coefficients: $\tilde\Pi_\pm=\tfrac12e_t\pm\tfrac{i}{2}(u_x\vec e_x+u_y\vec e_y+u_z\vec e_z)$, so</p>
+<p>$$
+N(\tilde\Pi_\pm)=\tfrac14+\sum_k\Bigl(\pm\tfrac{i}{2}u_k\Bigr)^2=\tfrac14-\tfrac14\sum_k u_k^2=\tfrac14-\tfrac14=0 .
+$$</p>
+<p>So the idempotents lie on the null cone: they are nonzero, idempotent, and $N$-degenerate, which is the corpus's standing example of the degenerate case. $\square$</p>
+<p><strong>Proposition (the Peirce corners at the axis are one-dimensional).</strong> With $\tilde\Pi_\pm=\tilde\Pi_\pm(\vec e_z)$,</p>
+<p>$$
+\tilde\Pi_+\mathbb{B}\tilde\Pi_+=\mathbb{C}\tilde\Pi_+,\qquad
+\tilde\Pi_-\mathbb{B}\tilde\Pi_-=\mathbb{C}\tilde\Pi_-,
+$$</p>
+<p>and the two off-diagonal corners are lines spanned by nilpotents, $\tilde\Pi_-\mathbb{B}\tilde\Pi_+=\mathbb{C}\vec\Upsilon$ and $\tilde\Pi_+\mathbb{B}\tilde\Pi_-=\mathbb{C}\vec\Upsilon'$, with</p>
+<p>$$
+\vec\Upsilon=\tfrac12\bigl(i\vec e_x+\vec e_y\bigr),\qquad \vec\Upsilon'=\tfrac12\bigl(\vec e_x+i\vec e_y\bigr).
+$$</p>
+<p><em>Proof.</em> For the diagonal corners, in the matrix model $\tilde\Pi_+=\mathrm{diag}(1,0)$, so $\tilde\Pi_+X\tilde\Pi_+$ is the matrix with $X_{11}$ in the top left corner and zeros elsewhere, which is $X_{11}\tilde\Pi_+$; the other corner is the same computation with $\mathrm{diag}(0,1)$. For the off-diagonal corners, one computes directly from the table:</p>
+<p>$$
+\tilde\Pi_-\vec\Upsilon\tilde\Pi_+=\vec\Upsilon,\qquad \tilde\Pi_+\vec\Upsilon'\tilde\Pi_-=\vec\Upsilon',
+$$</p>
+<p>and each corner is at most one-dimensional because the four corners together span the four-dimensional algebra. $\square$</p>
+<p><strong>Remark (the Peirce multiplication table, measured).</strong> The corner generators multiply by</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>product</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde\Pi_+\tilde\Pi_+$</td>
+<td>$\tilde\Pi_+$</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_-\tilde\Pi_-$</td>
+<td>$\tilde\Pi_-$</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_+\tilde\Pi_-$, $\tilde\Pi_-\tilde\Pi_+$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\vec\Upsilon\tilde\Pi_+$</td>
+<td>$\vec\Upsilon$</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_+\vec\Upsilon$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_-\vec\Upsilon'$</td>
+<td>$\vec\Upsilon'$</td>
+</tr>
+<tr>
+<td>$\vec\Upsilon^2$, $\vec\Upsilon'^2$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\vec\Upsilon\vec\Upsilon'$</td>
+<td>$-i\tilde\Pi_-$</td>
+</tr>
+<tr>
+<td>$\vec\Upsilon'\vec\Upsilon$</td>
+<td>$-i\tilde\Pi_+$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Each entry is a substitution of the multiplication table, and all nine were checked numerically in the matrix model. The table is the Peirce multiplication table of the pair at the axis, and it is the content of <em>The Peirce Basis over C</em>.</p>
+<p><strong>Proposition (the ideal is spanned by the idempotent and the nilpotent).</strong> With the axis fixed as above,</p>
+<p>$$
+S_+(\vec e_z)=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon,\qquad
+\tilde\Pi_+\tilde\Pi_+=\tilde\Pi_+,\qquad
+\tilde\Pi_+\vec\Upsilon=0,\qquad
+\vec\Upsilon\tilde\Pi_+=\vec\Upsilon,\qquad
+\vec\Upsilon^2=0 .
+$$</p>
+<p><em>Proof.</em> Both $\tilde\Pi_+$ and $\vec\Upsilon$ lie in $S_+$: $\tilde\Pi_+^2=\tilde\Pi_+$ and $\vec\Upsilon\tilde\Pi_+=\vec\Upsilon$. They are independent, one idempotent and one nilpotent, so they span a two-dimensional subspace of the two-dimensional $S_+$. The four multiplications are entries of the table above. $\square$</p>
+<p><strong>Remark (why the two vectors are the weight vectors).</strong> In §<em>The Three Spectra</em> the idempotent is shown to have weight $+\tfrac12$ and the nilpotent $-\tfrac12$ for $\operatorname{ad}_{\tilde S_3}$. So the Peirce basis at the axis is exactly the weight basis of the spin-$\tfrac12$ carrier, and the two things the corpus does in two places — the Peirce decomposition and the weights — are one computation.</p>
+<h2 id="the-generator">The Generator</h2>
+<p><strong>Definition (the components).</strong></p>
+<p>$$
+\boxed{\;\tilde S_k=\tfrac12 i\vec e_k,\qquad k=1,2,3\;}
+$$</p>
+<p><strong>Definition (the generator, read as one vector).</strong></p>
+<p>$$
+\boxed{\;\vec S=(\tilde S_1,\tilde S_2,\tilde S_3),\qquad \vec u\cdot\vec S=u_k\tilde S_k=\tfrac12 i\vec u\;}
+$$</p>
+<p>The first line defines three elements. The second collects them into one arrowed glyph, exactly as $\vec e$ collects the three vector units, and the dot is the contraction of §<em>What the Pure Element Is</em>. The arrowed $\vec S$ names the spin generator and nothing else.</p>
+<p><strong>Proposition (the components are Hermitian, of vanishing scalar part, and square to $\tfrac14e_t$).</strong> $\tilde S_k^{*}=\tilde S_k$, $\mathrm{Sc}(\tilde S_k)=0$, $\tilde S_k^2=\tfrac14e_t$.</p>
+<p><em>Proof.</em> $\tilde S_k^{*}=\overline{\tfrac12 i}\,\vec e_k^{*}=\tfrac12(-i)(-\vec e_k)=\tfrac12 i\vec e_k$. The scalar part vanishes because $\tilde S_k=\tfrac12 i\vec e_k$ carries no $e_t$ term. The square is $(\tfrac12 i)^2\vec e_k^2=-\tfrac14(-e_t)=\tfrac14e_t$. $\square$</p>
+<p><strong>Proposition (the contraction is Hermitian).</strong> For real $u_k$, $(\vec u\cdot\vec S)^{*}=\vec u\cdot\vec S$.</p>
+<p><em>Proof.</em> $\vec u\cdot\vec S=\tfrac12 i\vec u$, and $(\tfrac12 i\vec u)^{*}=\tfrac12(-i)(-\vec u)=\tfrac12 i\vec u$. $\square$</p>
+<p><strong>Proposition (the commutators).</strong></p>
+<p>$$
+[\tilde S_1,\tilde S_2]=i\tilde S_3,\qquad
+[\tilde S_2,\tilde S_3]=i\tilde S_1,\qquad
+[\tilde S_3,\tilde S_1]=i\tilde S_2 .
+$$</p>
+<p><em>Proof.</em> $\tilde S_1\tilde S_2=-\tfrac14\vec e_x\vec e_y=-\tfrac14\vec e_z$ and $\tilde S_2\tilde S_1=+\tfrac14\vec e_z$, so the commutator is $-\tfrac12\vec e_z=i\cdot\tfrac12 i\vec e_z=i\tilde S_3$. The others by cycling. $\square$</p>
+<p><strong>Remark (what those relations buy).</strong> They are the relations of the rotation algebra, and they hold among elements of $\mathbb{B}$ itself by the theorem of §<em>The Commutator Operator</em>. The consequence used here is that a rotation is generated by an element of the algebra, so its spectrum on a carrier is the spectrum of an element and is computable from the multiplication table.</p>
+<h2 id="the-weights">The Weights</h2>
+<p><strong>Definition (weight).</strong> Let $W$ be a carrier with action $\rho$ on a complex space $V_W$. A vector $v\in V_W$ has <strong>weight</strong> $\lambda$ when</p>
+<p>$$
+\rho(\vec u\cdot\vec S)\,v=\lambda v .
+$$</p>
+<p>The <strong>weight string</strong> is the multiset of weights of an eigenbasis, and the <strong>maximal weight</strong> is its largest element.</p>
+<p><strong>Remark (why the weights are real, hence orderable).</strong> $\vec u\cdot\vec S$ is Hermitian, so $\rho$ of it is self-adjoint for the positive-definite Hermitian form $H(\tilde Q_1,\tilde Q_2)=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$, and a self-adjoint operator on a finite-dimensional complex space has real eigenvalues and an eigenbasis. Without the factor $i$ in $\tilde S_k$ the eigenvalues would be purely imaginary and there would be no largest one.</p>
+<h2 id="the-three-spectra">The Three Spectra</h2>
+<p>The axis is fixed at $\vec u=\vec e_z$, so $\vec u\cdot\vec S=\tilde S_3=\tfrac12 i\vec e_z$. Nothing depends on the choice: the rotation group carries one axis to another and conjugates one computation into the other.</p>
+<h3 id="the-centre_1">The centre</h3>
+<p><strong>Theorem.</strong> On $\mathbb{C}e_t$ with $\operatorname{Ad}$, the string is $\{0\}$.</p>
+<p><em>Proof.</em> $\operatorname{Ad}_u(e_t)=uu^{*}=e_t$ for every $u\in G$, so the action is trivial on the line; its derivative $\operatorname{ad}_{\vec u\cdot\vec S}$ is therefore zero there, by the differentiation theorem of §<em>The Conjugation Operator</em>. A one-dimensional space with the zero operator has the single weight $0$. $\square$</p>
+<h3 id="an-ideal">An ideal</h3>
+<p><strong>Theorem.</strong> On $S_+(\vec e_z)=\mathbb{B}\tilde\Pi_+$ with $L$, the string is $\{+\tfrac12,-\tfrac12\}$.</p>
+<p><em>Proof.</em> Since $J\tilde\Pi_+=\tfrac12(J+J^2)=\tfrac12(e_t+J)=\tilde\Pi_+$,</p>
+<p>$$
+\tilde S_3\tilde\Pi_+=\tfrac12 i\vec e_z\tilde\Pi_+=\tfrac12J\tilde\Pi_+=\tfrac12\tilde\Pi_+ ,
+$$</p>
+<p>so $\tilde\Pi_+$ has weight $+\tfrac12$. For $\vec\Upsilon=\tfrac12(i\vec e_x+\vec e_y)$, using $\vec e_z\vec e_x=\vec e_y$ and $\vec e_z\vec e_y=-\vec e_x$,</p>
+<p>$$
+\tilde S_3\vec\Upsilon=\tfrac{i}{2}\vec e_z\cdot\tfrac12\bigl(i\vec e_x+\vec e_y\bigr)
+=\tfrac{i}{4}\bigl(i\vec e_y-\vec e_x\bigr)
+=\tfrac14\bigl(-\vec e_y-i\vec e_x\bigr)=-\tfrac12\vec\Upsilon ,
+$$</p>
+<p>so $\vec\Upsilon$ has weight $-\tfrac12$. The two span $S_+$, by §<em>The Idempotents and the Ideals</em>. $\square$</p>
+<h3 id="the-pure-part">The pure part</h3>
+<p><strong>Theorem.</strong> On $\mathfrak{k}_\mathbb{C}$ with $\operatorname{ad}$, the string is $\{+1,0,-1\}$.</p>
+<p><em>Proof.</em> With $\tilde S_3=\tfrac12 i\vec e_z$ and using $\vec e_z\vec e_x=\vec e_y$, $\vec e_z\vec e_y=-\vec e_x$, $\vec e_x\vec e_z=-\vec e_y$, $\vec e_y\vec e_z=\vec e_x$:</p>
+<p>$$
+[\tilde S_3,\vec e_x]=\tfrac{i}{2}\bigl(\vec e_y+\vec e_y\bigr)=i\vec e_y,\qquad
+[\tilde S_3,\vec e_y]=\tfrac{i}{2}\bigl(-\vec e_x-\vec e_x\bigr)=-i\vec e_x,\qquad
+[\tilde S_3,\vec e_z]=0 .
+$$</p>
+<p>Hence</p>
+<p>$$
+[\tilde S_3,\vec e_x+i\vec e_y]=\vec e_x+i\vec e_y,\qquad
+[\tilde S_3,\vec e_x-i\vec e_y]=-(\vec e_x-i\vec e_y),
+$$</p>
+<p>so the weights are $+1$, $-1$ and $0$, on a basis of three. $\square$</p>
+<p><strong>Remark (the factor two between the two spectra).</strong> On an ideal the operator is $\tilde S$ acting by left multiplication. On the pure part it is the commutator, which differs from left multiplication by a factor two in each term. A factor two in the operator is a factor two in the eigenvalue. That is why the same generator has weight $\tfrac12$ in one place and $1$ in another, and the two proofs show it without any general theory.</p>
+<h2 id="the-exponential">The Exponential</h2>
+<p><strong>Definition.</strong> $\exp X=\sum_{k\ge0}X^k/k!$, convergent because the matrix model bounds the norm.</p>
+<p><strong>Theorem (the closed form).</strong> For a real pure element $\vec n$ of length $\omega$,</p>
+<p>$$
+\exp\vec n=\cos\omega\,e_t+\frac{\sin\omega}{\omega}\,\vec n ,
+$$</p>
+<p>and for a unit real pure $\vec u$ and real $\theta_{\mathrm{axr}}$,</p>
+<p>$$
+\boxed{\;\exp\Bigl(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u\Bigr)=\cos\tfrac{\theta_{\mathrm{axr}}}{2}\,e_t+\sin\tfrac{\theta_{\mathrm{axr}}}{2}\,\vec u\;}
+$$</p>
+<p><em>Proof.</em> A real pure element of length $\omega$ squares to $-\omega^2e_t$, by the argument of §<em>What the Pure Element Is</em> with the normalisation dropped. So $\vec n^{2k}=(-1)^k\omega^{2k}e_t$ and $\vec n^{2k+1}=(-1)^k\omega^{2k}\vec n$, and splitting the series into even and odd parts gives $\cos\omega\,e_t+\frac{\sin\omega}{\omega}\vec n$. The second form is the first at $\omega=\theta_{\mathrm{axr}}/2$ and $\vec n=\omega\vec u$. The case $\omega=0$ is the identity, by continuity. $\square$</p>
+<p><strong>Definition (the rotor).</strong></p>
+<p>$$
+\tilde u_{\mathrm r}=\exp\Bigl(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\Bigr)
+=\cos\tfrac{\theta_{\mathrm{axr}}}{2}\,e_t+\sin\tfrac{\theta_{\mathrm{axr}}}{2}\,\vec u_{\mathrm r} .
+$$</p>
+<p><strong>Remark (why the rotor carries the tilde and the axis the arrow).</strong> The axis $\vec u_{\mathrm r}$ is pure, so it is arrowed. The rotor has the scalar part $\cos(\theta_{\mathrm{axr}}/2)$, so it is not pure, so it is never arrowed; it carries the tilde. The exponential of a pure element is not pure: that one sentence is the answer to what the object is.</p>
+<p><strong>Theorem (properties of the rotor).</strong></p>
+<ol>
+<li>$N(\tilde u_{\mathrm r})=1$: a unit in the sense of invertibility.</li>
+<li>$\tilde u_{\mathrm r}\tilde u_{\mathrm r}^{*}=e_t$: *-unitary.</li>
+<li>$\tilde u_{\mathrm r}(\theta_{\mathrm{axr}}+2\pi)=-\tilde u_{\mathrm r}(\theta_{\mathrm{axr}})$, and $\tilde u_{\mathrm r}(2\pi)=-e_t$.</li>
+<li>$\operatorname{Ad}_{\tilde u_{\mathrm r}}$ fixes $\vec u_{\mathrm r}$ and rotates the plane perpendicular to it by $\theta_{\mathrm{axr}}$.</li>
+</ol>
+<p><em>Proof.</em> (1) Read the coefficients: $\tilde u_{\mathrm r}=\cos\omega\,e_t+\sin\omega\,\vec u_{\mathrm r}$ has $Q_t=\cos\omega$ and $Q_k=\sin\omega\,n_k$, so</p>
+<p>$$
+N(\tilde u_{\mathrm r})=\cos^2\omega+\sin^2\omega\sum_k n_k^2=\cos^2\omega+\sin^2\omega=1 .
+$$</p>
+<p>(2) $\vec u_{\mathrm r}^{*}=-\vec u_{\mathrm r}$ for real coefficients, so $\tilde u_{\mathrm r}^{*}=\cos\omega\,e_t-\sin\omega\,\vec u_{\mathrm r}$ and $\tilde u_{\mathrm r}\tilde u_{\mathrm r}^{*}=\cos^2\omega\,e_t-\sin^2\omega\,\vec u_{\mathrm r}^2=(\cos^2\omega+\sin^2\omega)e_t$, the cross terms cancelling since $\vec u_{\mathrm r}$ commutes with itself. (3) the closed form has period $2\pi$ in $\theta_{\mathrm{axr}}$ and at $2\pi$ equals $\cos\pi\,e_t+\sin\pi\,\vec u_{\mathrm r}=-e_t$. (4) $\vec u_{\mathrm r}$ commutes with $\tilde u_{\mathrm r}$, so it is fixed; for $\vec m$ orthogonal to $\vec u_{\mathrm r}$ with real coefficients, the element $\tilde u_{\mathrm r}\vec m\tilde u_{\mathrm r}^{*}$ is the rotation of $\vec m$ about $\vec u_{\mathrm r}$ through the angle $2\omega=\theta_{\mathrm{axr}}$, which is the computation checked numerically in the matrix model. $\square$</p>
+<p><strong>Remark (the factor $i$ separates the rotor from the Hermitian factor).</strong> The polar word also contains $\tilde U_{\mathrm b}=\exp\bigl(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\bigr)$. Its exponent is $i$ times a pure element, which is Hermitian because $i$ and $\vec u_{\mathrm b}$ are each anti-Hermitian; hence the exponential is Hermitian, and by the same series computation</p>
+<p>$$
+\tilde U_{\mathrm b}=\cosh\tfrac{\theta_{\mathrm{rpd}}}{2}\,e_t+i\sinh\tfrac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b},
+$$</p>
+<p>with real eigenvalues $e^{\pm\theta_{\mathrm{rpd}}/2}$, both positive. The rotor's exponent is $\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ without the $i$: anti-Hermitian, so the exponential is *-unitary, with eigenvalues on the unit circle. One factor $i$ is the whole difference between the two factors of the word.</p>
+<h2 id="the-two-forms-of-the-formula">The Two Forms of the Formula</h2>
+<p><strong>Proposition.</strong></p>
+<p>$$
+\exp\Bigl(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\Bigr)=\exp\bigl(-i\,\theta_{\mathrm{axr}}\,\vec u_{\mathrm r}\cdot\vec S\bigr).
+$$</p>
+<p><em>Proof.</em> $\vec u_{\mathrm r}\cdot\vec S=\tfrac12 i\vec u_{\mathrm r}$, so $-i\theta_{\mathrm{axr}}\,\vec u_{\mathrm r}\cdot\vec S=-i\theta_{\mathrm{axr}}\cdot\tfrac12 i\vec u_{\mathrm r}=\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$. $\square$</p>
+<p><strong>Remark (where the half is).</strong> In the generator's form the exponent shows no half: it is the angle times the generator. The half is inside the generator, whose largest eigenvalue on an ideal is $\tfrac12$. The two forms agree because $\tfrac12$ is the top weight, and the question's factor $\tfrac12$ is that eigenvalue written into the exponent.</p>
+<h2 id="the-eigenvalues-of-the-rotor">The Eigenvalues of the Rotor</h2>
+<p><strong>Theorem.</strong> Let $W$ be a carrier, $\rho$ its action, and $v$ an eigenvector of $\rho(\vec u\cdot\vec S)$ of weight $\lambda$. Then $v$ is an eigenvector of $\rho(\tilde u_{\mathrm r})$ with eigenvalue</p>
+<p>$$
+e^{-i\theta_{\mathrm{axr}}\lambda}.
+$$</p>
+<p><em>Proof.</em> $\rho(\tilde u_{\mathrm r})=\rho\bigl(\exp(-i\theta_{\mathrm{axr}}\vec u\cdot\vec S)\bigr)=\exp\bigl(-i\theta_{\mathrm{axr}}\rho(\vec u\cdot\vec S)\bigr)$: for the actions $L$ and $\operatorname{Ad}$ the map $\rho$ is a homomorphism of algebras, so it carries the exponential to the exponential; for $\operatorname{ad}$ it is a homomorphism of Lie algebras, and $\exp(\operatorname{ad})$ is the conjugation by $\exp$ by the theorem of §<em>The Conjugation Operator</em>. On the eigenvector $v$ the operator $\rho(\vec u\cdot\vec S)$ is the scalar $\lambda$. $\square$</p>
+<p><strong>Remark (the table).</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>carrier</th>
+<th>$\operatorname{spec}(\vec u\cdot\vec S)$</th>
+<th>eigenvalues of $\tilde u_{\mathrm r}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>centre, $\mathbb{C}e_t$</td>
+<td>$\{0\}$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>ideal $S_\pm$</td>
+<td>$\{\pm\tfrac12\}$</td>
+<td>$e^{\mp i\theta_{\mathrm{axr}}/2}$</td>
+</tr>
+<tr>
+<td>pure part $\mathfrak{k}_\mathbb{C}$</td>
+<td>$\{+1,0,-1\}$</td>
+<td>$e^{\mp i\theta_{\mathrm{axr}}}$, $1$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Measured in the matrix model at $\vec u_{\mathrm r}=\vec e_z$ and $\theta_{\mathrm{axr}}=0.83$: on the ideal the eigenvalues are $0.9151\mp0.4032i$, which is $e^{\mp0.415i}$; on the pure part they are $e^{\mp0.83i}$ and $1$; on the centre they are $1$. The states of the ideal move by half the angle, those of the pure part by the full angle, those of the centre not at all.</p>
+<h2 id="the-spin">The Spin</h2>
+<p><strong>Definition (the corpus convention).</strong> Let $(W,\rho)$ be one of the three carriers, with $\rho$ the action of the rotation algebra generated by the $\tilde S_k$. For a unit $\vec u$ the operator $\rho(\vec u\cdot\vec S)$ is self-adjoint, so its spectrum is real, and it does not depend on $\vec u$. The <strong>spin</strong> of the carrier is its largest eigenvalue,</p>
+<p>$$
+\boxed{\;s=\max\operatorname{spec}\bigl(\rho(\vec u\cdot\vec S)\bigr)\in\tfrac12\mathbb{Z}_{\ge0}\;}
+$$</p>
+<p>a scalar label and not a vector.</p>
+<p><strong>Theorem (the spin table).</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>carrier</th>
+<th>action $\rho$</th>
+<th>$\operatorname{spec}(\vec u\cdot\vec S)$</th>
+<th>$\dim_\mathbb{C}V_W$</th>
+<th>$s$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>centre $\mathbb{C}e_t$</td>
+<td>$\operatorname{Ad}$</td>
+<td>$\{0\}$</td>
+<td>$1$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>ideal $S_\pm$</td>
+<td>$L$</td>
+<td>$\{\pm\tfrac12\}$</td>
+<td>$2$</td>
+<td>$\tfrac12$</td>
+</tr>
+<tr>
+<td>pure part $\mathfrak{k}_\mathbb{C}$</td>
+<td>$\operatorname{ad}$</td>
+<td>$\{+1,0,-1\}$</td>
+<td>$3$</td>
+<td>$1$</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Proof.</em> Row by row from §<em>The Three Spectra</em>, with $d=2s+1$: $1=2\cdot0+1$, $2=2\cdot\tfrac12+1$, $3=2\cdot1+1$. $\square$</p>
+<p><strong>Remark (the procedure, in four steps).</strong> To get the spin from a rotor:</p>
+<ol>
+<li>read the axis $\vec u_{\mathrm r}$, a unit real pure element;</li>
+<li>form the generator at that axis, $\vec u_{\mathrm r}\cdot\vec S=u_{\mathrm r,k}\tilde S_k$;</li>
+<li>name the carrier and the action, and take the spectrum of that element acting there;</li>
+<li>the spin is the largest eigenvalue.</li>
+</ol>
+<p>The rotor enters only through its axis, and only as the direction in which the generator is taken. The angle does not enter at all.</p>
+<p><strong>Remark (why the angle cannot enter).</strong> The spectrum of $\vec u\cdot\vec S$ is independent of $\vec u$, since the axes are carried into one another by the action and the spectrum is invariant under conjugation. So the spin is a property of the carrier and the action; the angle is a property of the element being decomposed. A statement of the spin that mentions $\theta_{\mathrm{axr}}$ is a statement about a different object.</p>
+<p><strong>Remark (the string, and the factor $2s+1$).</strong> The spectrum of $\vec u\cdot\vec S$ on a carrier is symmetric about zero, spaced by one, of length $2s+1$. The spacing is checked in the three cases above rather than assumed: $\pm\tfrac12$ differ by one, and $1,0,-1$ are consecutive. The factor two between the two four-real-dimensional carriers is the factor two between left multiplication and the commutator.</p>
+<p><strong>Remark (a carrier of three real dimensions and one of four).</strong> The ideal is four real-dimensional with spin $\tfrac12$; the ambient sector is four real-dimensional with spin $1$ on its pure part. The difference is not the dimension of the subspace but the dimension of the representation space: the sector contains the line $\mathbb{R}(ie_t)$, on which the conjugation acts trivially, and that line contributes to the ambient and not to the representation. The subtraction in $d-1$ removes exactly that line.</p>
+<h2 id="a-full-turn">A Full Turn</h2>
+<p><strong>Theorem.</strong> At $\theta_{\mathrm{axr}}=2\pi$ the rotor is $-e_t$, and its action on the three carriers is</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>carrier</th>
+<th>$\rho(-e_t)$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>centre</td>
+<td>$+1$</td>
+</tr>
+<tr>
+<td>ideal</td>
+<td>$-1$</td>
+</tr>
+<tr>
+<td>pure part</td>
+<td>$+1$</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Proof.</em> $\tilde u_{\mathrm r}(2\pi)=\cos\pi\,e_t+\sin\pi\,\vec u_{\mathrm r}=-e_t$. Conjugation by a central element is the identity, whence $+1$ on the centre and on the pure part; left multiplication by $-e_t$ is $-\mathrm{id}$, whence $-1$ on the ideal. Equivalently from the eigenvalues: $e^{-2\pi i\lambda}$ is $+1$ for $\lambda=0,\pm1$ and $-1$ for $\lambda=\pm\tfrac12$. $\square$</p>
+<p><strong>Remark (the sign is the parity of $2s$).</strong> The sign is $(-1)^{2s}$: it is $-1$ exactly when $s$ is a half-integer, that is exactly on the carrier of spin $\tfrac12$. Read on the eigenvalues, the same statement is that $e^{-i\theta\lambda}$ has period $4\pi$ in $\theta$ exactly when $\lambda$ is a half-integer.</p>
+<h2 id="what-the-chain-does-not-use">What the Chain Does Not Use</h2>
+<p><strong>The norm, except for the rotor itself.</strong> No step uses $N$ except the remark that a rotor has $N=1$. The weights, the spectra, the spin and the full-turn sign are properties of the multiplication and the conjugations alone.</p>
+<p><strong>The axis.</strong> $\vec u_{\mathrm r}$ is a parameter, and every spectrum is independent of it.</p>
+<p><strong>The angle.</strong> The spin is independent of $\theta_{\mathrm{axr}}$.</p>
+<p><strong>A decomposition into regular and degenerate parts.</strong> Nothing requires $N\neq0$ for the element analysed. The only element whose norm is used is the rotor, and it is a unit by construction. The hypothesis $N\neq0$ of the polar word enters because a rotor factor must be invertible, and for no other reason. The idempotents, which are the basis of every carrier, are themselves $N$-degenerate, so the theory of the carriers is a theory of the degenerate case as much as of the regular one.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The three statements.</strong></p>
+<ol>
+<li>$\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ is a pure element of length $\theta_{\mathrm{axr}}/2$: real coefficients, no scalar part, so arrowed. It is a pure quaternion times a real.</li>
+<li>$\tilde u_{\mathrm r}=\exp\bigl(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\bigr)=\cos\tfrac{\theta_{\mathrm{axr}}}{2}e_t+\sin\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ is the rotor: a unit element with a scalar part, so tilded and not arrowed.</li>
+<li>The spin is $s=\max\operatorname{spec}\bigl(\rho(\vec u_{\mathrm r}\cdot\vec S)\bigr)$, with $\vec u_{\mathrm r}\cdot\vec S=u_{\mathrm{r},k}\tilde S_k=\tfrac12 i\vec u_{\mathrm r}$, on the carrier where the operator acts.</li>
+</ol>
+<p><strong>The table.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>carrier</th>
+<th>action</th>
+<th>$\operatorname{spec}(\vec u_{\mathrm r}\cdot\vec S)$</th>
+<th>spin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>centre $\mathbb{C}e_t$</td>
+<td>conjugation</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>ideal, $\dim_\mathbb{C}2$</td>
+<td>left multiplication</td>
+<td>$\pm\tfrac12$</td>
+<td>$\tfrac12$</td>
+</tr>
+<tr>
+<td>$\mathfrak{k}_\mathbb{C}$, $\dim_\mathbb{C}3$</td>
+<td>commutator</td>
+<td>$0,\pm1$</td>
+<td>$1$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The chain.</strong></p>
+<p>$$
+\underbrace{\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}}_{\text{pure, arrow}}\longrightarrow
+\underbrace{\tilde u_{\mathrm r}=\exp(\cdot)}_{\text{unit, tilde}}\longrightarrow
+\underbrace{\operatorname{eig}\rho(\tilde u_{\mathrm r})=e^{-i\theta_{\mathrm{axr}}\lambda}}_{\lambda\in\operatorname{spec}\rho(\vec u_{\mathrm r}\cdot\vec S)}
+\longrightarrow s=\max\lambda
+$$</p>
+<p><strong>The operators, in one line each.</strong> $L_X(Y)=XY$ and $R_X(Y)=YX$ are the two sides; $\operatorname{ad}_X=L_X-R_X$ is their difference, a derivation, and $[\operatorname{ad}_X,\operatorname{ad}_Y]=\operatorname{ad}_{[X,Y]}$; $\operatorname{Ad}_u(Y)=uYu^{*}$ is the conjugation, an automorphism exactly for *-unitary $u$; and $\operatorname{ad}$ is the derivative of $\operatorname{Ad}$ at the identity, with $\exp(\operatorname{ad}_V)=\operatorname{Ad}_{\exp V}$ for anti-Hermitian $V$.</p>
+<p><strong>The four points that were open.</strong></p>
+<ol>
+<li>The arrow is the purity mark of the corpus. A pure element is written with the arrow and without the tilde; a unit element with a scalar part is written with the tilde and never with the arrow.</li>
+<li>$\tfrac{\theta}{2}\vec u_{\mathrm r}$ is one element of the algebra, a pure one; its exponential is a different element, the unit rotor. The exponent is the direction, the rotor is the rotation.</li>
+<li>The factor $\tfrac12$ in the exponent is the top weight of the generator on an ideal. Written with $\vec S$ it leaves the exponent and appears in the spectrum.</li>
+<li>The spin is not a property of the rotor and does not depend on the angle. It is the largest eigenvalue of $\vec u_{\mathrm r}\cdot\vec S$ on the carrier, and the rotor's role is to supply the axis.</li>
+</ol>
+<p><strong>The one correction that changes a formula.</strong> $\operatorname{Ad}_u$ is an automorphism exactly for $u\in G$, not for every unit: the hypothesis is $uu^{*}=e_t$, and $N(u)\neq0$ is not enough. The failure is visible at $u=2e_t$.</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_maths/algebra-and-element-conventions.html">Algebra and Element Conventions</a>, §<em>The Base and Its Units</em>, §<em>Pure Elements</em>, for the arrow and the tilde</li>
+<li><a href="../articles_maths/special-element-and-peirce-conventions.html">Special Element and Peirce Conventions</a>, §<em>The Spin and Spinor Convention</em>, for the generator and the rotor</li>
+<li><a href="../articles_maths/operator-and-calculus-conventions.html">Operator and Calculus Conventions</a>, §<em>The Named Operators</em>, for the glyphs $L_X$, $R_X$, $\operatorname{ad}_X$, $\operatorname{Ad}_u$</li>
+<li><a href="../articles_maths/the-commutator-operator.html">The Commutator Operator</a>, for $\operatorname{ad}_X=L_X-R_X$, the Leibniz rule, and $[\operatorname{ad}_X,\operatorname{ad}_Y]=\operatorname{ad}_{[X,Y]}$</li>
+<li><a href="../articles_maths/automorphisms-and-derivations-of-algebras.html">Automorphisms and Derivations of Algebras</a>, for $\exp(\operatorname{ad}_a)=\iota_{\exp a}$</li>
+<li><a href="../articles_maths/biquaternion-automorphisms-and-derivations.html">Biquaternion Automorphisms and Derivations</a>, for the inner derivations and the worked rotation $\exp(tD)=\operatorname{Ad}_{\exp(t\vec e_z/2)}$</li>
+<li><a href="../articles_maths/the-two-sided-operator-on-an-algebra.html">The Two-Sided Operator on an Algebra</a> and <a href="../articles_maths/two-sided-operators-on-a-hermitian-algebra-with-signed-hermitian-adjoint.html">Two-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint</a>, for $\mathrm{Sd}_X$ and its reduction to $\operatorname{Ad}$ on the unitary slice</li>
+<li><a href="../articles_maths/the-carriers-of-the-biquaternion-algebra.html">The Carriers of the Biquaternion Algebra</a>, for the carrier, the type, and the completeness of the list</li>
+<li><a href="../articles_maths/the-weights-of-a-carrier.html">The Weights of a Carrier</a> and <a href="../articles_maths/the-spin-of-a-carrier.html">The Spin of a Carrier</a>, for the spectra and the number $s$</li>
+<li><a href="../articles_maths/the-peirce-basis-over-c.html">The Peirce Basis over C</a>, for the corners of the idempotents</li>
+<li><a href="../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html">The Polar Decomposition of an N-Regular Biquaternion</a>, §<em>The Four Factors</em>, for the word that contains the rotor</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

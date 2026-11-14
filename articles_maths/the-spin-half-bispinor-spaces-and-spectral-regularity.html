@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Spin-Half Bispinor Spaces and Spectral Regularity — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-spin-half-bispinor-spaces-and-spectral-regularity"><strong>The Spin-Half Bispinor Spaces and Spectral Regularity</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The spin-half carrier is the plane $\Sigma(\vec u_{\mathrm r})=\mathbb{C}\tilde\Pi_+(\vec u_{\mathrm r})$, and its closures are the two spinor spaces and their sum. This article computes the second predicate on all of them, and the answer is the opposite of the answer for the norm.</p>
+<p>On the plane the norm vanishes everywhere and the two eigenvalues are separated everywhere except at the origin. The plane is a null plane and a spectrally regular plane at the same time. This is the sharpest single statement in the group of articles: it shows that the two predicates are independent, that neither implies the other, and that a carrier can sit at one extreme for one of them and at the other extreme for the other.</p>
+<p>The two eigenvalues of an element of the plane are $0$ and $\lambda$, so the spectrum is the pair of the coordinate and zero, and the separation is exactly the nonvanishing of the coordinate. The idempotent itself has spectrum $\{0,1\}$, which is the idempotent relation read as a statement about eigenvalues, and that is where the two values come from.</p>
+<p>Inside the spinor space the statement is finer. Every element has a vanishing eigenvalue, because the norm vanishes and the product of the two eigenvalues is the norm. The other eigenvalue is twice the scalar coordinate, and the degenerate elements are those whose scalar coordinate vanishes. They form a real plane inside the spinor space, and they are exactly the elements of the ideal whose square vanishes. So the degenerate locus inside a spinor space is neither empty nor the whole space: it is a plane of square-zero elements.</p>
+<p>The companion article is <em>The Spin-Half Bispinor Spaces and N Norm Regularity</em>, where the first predicate is computed and the answer is degenerate everywhere. The spaces themselves are <em>Introduction to the Spin-Half Bispinor Spaces</em>. The predicates and the four sectors are defined in <em>Relations between the N Norm and Spectral Regularity and Degeneracy</em>.</p>
+<p>Nothing below is a statement of physics. The algebra $\mathbb{B}$ is real, of dimension $8$, with units $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t$ the identity and $\vec e_k^{2}=-e_t$, and with $i$ an element commuting with the units and $i^2=-e_t$. An element is $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu=q_\mu+iq'_\mu$ complex. A unit real axis is written $\vec u_{\mathrm r}$, and $\vec u_2,\vec u_3$ is an oriented orthonormal pair completing it.</p>
+<h2 id="the-two-eigenvalues">The Two Eigenvalues</h2>
+<p><strong>The quadratic relation.</strong> Every element satisfies $X^{2}-2Q_tX+N(X)e_t=0$, so its two eigenvalues are</p>
+<p>$$
+\lambda_{\pm}=Q_t\pm iB,\qquad B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2},
+$$</p>
+<p>with $B$ a fixed square root of $B^{2}$. The element is <strong>spectrally regular</strong> when $B^{2}\neq0$ and <strong>spectrally degenerate</strong> when $B^{2}=0$. The degenerate locus is the <strong>spectral-degenerate cone</strong> $\mathcal S=\{B^{2}=0\}$.</p>
+<p><strong>Remark (the sum and the product).</strong> The two eigenvalues are determined by their sum $2Q_t$ and their product $N(X)$, and the predicate asks whether the product equals the square of half the sum. Two complex numbers with a given sum and product coincide exactly when the product equals the square of half the sum, and that is the condition $B^{2}=0$.</p>
+<h2 id="the-plane">The Plane</h2>
+<p><strong>Theorem (the square of the vector part).</strong> For every complex $\lambda$,</p>
+<p>$$
+B^{2}\bigl(\lambda\tilde\Pi_+(\vec u_{\mathrm r})\bigr)=-\tfrac14\lambda^{2}.
+$$</p>
+<p><em>Proof.</em> The coordinates are $Q_t=\tfrac12\lambda$ and $Q_k=\tfrac i2\lambda u_k$, so</p>
+<p>$$
+B^{2}=\sum_k\Bigl(\tfrac i2\lambda u_k\Bigr)^{2}=-\tfrac14\lambda^{2}\sum_k u_k^{2}=-\tfrac14\lambda^{2}.
+$$</p>
+<p><strong>Corollary (the plane is spectrally regular away from the origin).</strong> The factor $-\tfrac14$ is invertible, so $B^{2}$ vanishes on the plane exactly at $\lambda=0$:</p>
+<p>$$
+\Sigma(\vec u_{\mathrm r})\cap\mathcal S=\{0\}.
+$$</p>
+<p><strong>Theorem (the spectrum of an element of the plane).</strong> For $\lambda\neq0$,</p>
+<p>$$
+\operatorname{spec}\bigl(\lambda\tilde\Pi_+(\vec u_{\mathrm r})\bigr)=\{0,\lambda\},
+$$</p>
+<p>and the two eigenvalues are distinct.</p>
+<p><em>Proof.</em> The two eigenvalues are $Q_t\pm iB$ with $Q_t=\tfrac12\lambda$ and $iB=\pm\tfrac12\lambda$, so the pair is $\{\lambda,0\}$.</p>
+<p><strong>Corollary (the plane is null and spectrally regular).</strong> Every nonzero element of the carrier is norm-degenerate and spectrally regular, so the plane away from the origin lies in the sector $\Sigma_{01}$.</p>
+<p><strong>Remark (why this is the sharp case).</strong> On the centre the norm separated and the spectrum did not. On the plane the spectrum separates and the norm does not, and the two failures are at the same elements. Neither predicate controls the other, and the plane is the cleanest demonstration of it.</p>
+<h2 id="the-idempotent">The Idempotent</h2>
+<p><strong>Theorem.</strong> $\operatorname{spec}\bigl(\tilde\Pi_+(\vec u_{\mathrm r})\bigr)=\{0,1\}$.</p>
+<p><em>Proof.</em> The coordinate is $Q_t=\tfrac12$, so the eigenvalues are $\tfrac12\pm\tfrac12$.</p>
+<p><strong>Remark (the idempotent relation read spectrally).</strong> The two eigenvalues of an idempotent sum to $2Q_t(P)=1$ and multiply to $N(P)=0$. A pair of complex numbers with sum $1$ and product $0$ is $\{0,1\}$, so the spectral content of $P^{2}=P$ is that the two values are $0$ and $1$. The spectral version of "the algebra splits as a sum of two ideals" is "the idempotent has one eigenvalue zero and one eigenvalue one", and the two statements carry the same content.</p>
+<p><strong>Remark (the same element is null).</strong> The element of the previous display is also of norm zero. So the two eigenvalues are $0$ and $1$, distinct, and the norm vanishes. There is no contradiction: the norm is the product of the two eigenvalues, and a product vanishes when one factor does.</p>
+<h2 id="inside-the-spinor-space">Inside the Spinor Space</h2>
+<p><strong>Theorem (one eigenvalue always vanishes).</strong> For every $Y\in S_+(\vec u_{\mathrm r})$,</p>
+<p>$$
+N(Y)=0,\qquad \operatorname{spec}(Y)=\{0,\,2Q_t(Y)\}.
+$$</p>
+<p><em>Proof.</em> The norm vanishes on the spinor space, and the two eigenvalues have product $N(Y)=0$ and sum $2Q_t(Y)$. A pair of complex numbers with vanishing product contains a zero, so the pair is $\{0,2Q_t(Y)\}$.</p>
+<p><strong>Corollary (the degenerate elements of the spinor space).</strong> An element $Y$ of the spinor space is spectrally degenerate exactly when</p>
+<p>$$
+Q_t(Y)=0 .
+$$</p>
+<p><strong>Theorem (the degenerate locus is a real plane).</strong> In the complex basis $\tilde\Pi_+$ and $\vec u_2\tilde\Pi_+$ of the spinor space, the scalar coordinate is the coefficient of the first basis element, since</p>
+<p>$$
+\vec u_2\tilde\Pi_+(\vec u_{\mathrm r})=\tfrac12\bigl(\vec u_2-i\vec u_3\bigr),\qquad Q_t\bigl(\tfrac12(\vec u_2-i\vec u_3)\bigr)=0 .
+$$</p>
+<p>So the degenerate elements are the complex multiples of $\vec u_2-i\vec u_3$, a real plane:</p>
+<p>$$
+S_+(\vec u_{\mathrm r})\cap\mathcal S=\mathbb{C}\bigl(\vec u_2-i\vec u_3\bigr),\qquad \dim_\mathbb{R}=2 .
+$$</p>
+<p><em>Proof.</em> The first display uses $\vec u_2\vec u_{\mathrm r}=-\vec u_3$, which follows from the multiplication of the pure units. The coefficient of $\tilde\Pi_+$ in $\alpha\tilde\Pi_++\beta\vec u_2\tilde\Pi_+$ is $\alpha$, and $Q_t$ reads half of it, so $Q_t=0$ is $\alpha=0$.</p>
+<p><strong>Theorem (the degenerate elements are the square-zero elements).</strong> For $Y$ in the spinor space,</p>
+<p>$$
+Y^{2}=0\iff Y\ \text{is spectrally degenerate}.
+$$</p>
+<p><em>Proof.</em> On the spinor space the quadratic relation reduces to $Y^{2}=2Q_t(Y)Y$, since the norm vanishes. If $Q_t(Y)=0$ then $Y^{2}=0$. Conversely if $Y^{2}=0$ and $Y\neq0$ then $2Q_t(Y)Y=0$, so $Q_t(Y)=0$.</p>
+<p><strong>Remark (the plane is not the degenerate locus).</strong> The degenerate locus of the spinor space is a real plane, and it is not the carrier. The carrier is $\mathbb{C}\tilde\Pi_+$, spanned by the idempotent; the degenerate locus is $\mathbb{C}(\vec u_2-i\vec u_3)$, spanned by a square-zero element. The two planes meet only at the origin, since the two spanning elements are not proportional: one has $Q_t=\tfrac12$ and the other $Q_t=0$.</p>
+<p><strong>Remark (one plane per axis, one degenerate plane per axis).</strong> The two planes move with the axis, and the degenerate plane of one axis is the carrier plane of no axis, since its generator is not an idempotent. The family of carriers and the family of degenerate planes are two different families, both indexed by the axis.</p>
+<h2 id="the-bispinor-space">The Bispinor Space</h2>
+<p><strong>The predicate on a bispinor space.</strong> An element $X=X_++X_-$ is spectrally degenerate exactly when $B^{2}(X)=0$. The quantity $B^{2}$ is a quadratic form in the eight real coordinates of $X$, and the equation is complex, so it is two real equations; the degenerate elements form a set of real dimension $6$ and the regular ones are its complement, of real dimension $8$ minus that set.</p>
+<p><strong>Remark (the degenerate set is not small).</strong> The cone is not a subspace and not empty. The element $\vec u_2-i\vec u_3$ is in it, and so is every element whose spinor decomposition has a vanishing component, since each spinor space is entirely degenerate. What is not in it is a generic element of the bispinor space, and that is the sense in which the bispinor read is the regular case.</p>
+<h2 id="the-three-carriers-compared">The Three Carriers Compared</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>carrier</th>
+<th>$B^{2}$ on it</th>
+<th>spectrally degenerate locus in it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>centre $\mathbb{C}e_t$</td>
+<td>$0$</td>
+<td>the whole centre</td>
+</tr>
+<tr>
+<td>spinor plane $\Sigma$</td>
+<td>$-\lambda^{2}/4$</td>
+<td>$\{0\}$</td>
+</tr>
+<tr>
+<td>vector part $\mathfrak{k}$</td>
+<td>$\lvert\vec v\rvert^{2}$</td>
+<td>$\{0\}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Where the carrier sits.</strong> The plane away from the origin is norm-degenerate and spectrally regular, hence in $\Sigma_{01}$; the centre is in $\Sigma_{10}$; the vector part is in $\Sigma_{11}$. The fourth sector $\Sigma_{00}$ is met by no carrier except at the origin, though the closure of the plane meets it on the degenerate plane of the spinor space.</p>
+<h2 id="summary">Summary</h2>
+<p>The square of the vector part on the plane is $-\lambda^{2}/4$, so the plane is spectrally regular at every point except the origin, while its norm vanishes everywhere. The spectrum of $\lambda\tilde\Pi_+$ is $\{0,\lambda\}$, and the idempotent itself has spectrum $\{0,1\}$. Inside the spinor space every element has spectrum $\{0,2Q_t\}$, the degenerate elements are those with vanishing scalar coordinate, they form the real plane $\mathbb{C}(\vec u_2-i\vec u_3)$, and they are exactly the elements whose square vanishes. The plane away from the origin lies in the sector $\Sigma_{01}$: null and spectrally regular.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>the biquaternion algebra, real, of dimension $8$</td>
+</tr>
+<tr>
+<td>$\tilde Q=Q_te_t+\vec Q$</td>
+<td>an element, with $Q_\mu$ complex</td>
+</tr>
+<tr>
+<td>$N(\tilde Q)=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$</td>
+<td>the $N$ norm</td>
+</tr>
+<tr>
+<td>$B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$</td>
+<td>the square of the vector part</td>
+</tr>
+<tr>
+<td>$\lambda_{\pm}=Q_t\pm iB$</td>
+<td>the two eigenvalues of an element</td>
+</tr>
+<tr>
+<td>spectral-regular</td>
+<td>$B^{2}\neq0$</td>
+</tr>
+<tr>
+<td>$\mathcal S=\{B^{2}=0\}$</td>
+<td>the spectral-degenerate cone</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_\pm(\vec u_{\mathrm r})=\tfrac12(e_t\pm i\vec u_{\mathrm r})$</td>
+<td>the two idempotents of the axis</td>
+</tr>
+<tr>
+<td>$\Sigma(\vec u_{\mathrm r})=\mathbb{C}\tilde\Pi_+$</td>
+<td>the spinor plane, the carrier</td>
+</tr>
+<tr>
+<td>$S_\pm(\vec u_{\mathrm r})=\mathbb{B}\tilde\Pi_\pm$</td>
+<td>the spinor spaces</td>
+</tr>
+<tr>
+<td>$\vec u_2-i\vec u_3$</td>
+<td>the square-zero element spanning the degenerate plane of $S_+$</td>
+</tr>
+<tr>
+<td>$\Sigma_{ij}$</td>
+<td>the sector with $N\neq0$ for $i=1$ and $B^{2}\neq0$ for $j=1$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-spin-half-bispinor-spaces.html">Introduction to the Spin-Half Bispinor Spaces</a>, for the plane, the two spinor spaces and the family of bispinor spaces</li>
+<li><a href="the-spin-half-bispinor-spaces-and-n-norm-regularity.html">The Spin-Half Bispinor Spaces and N Norm Regularity</a>, for the other predicate on the same spaces</li>
+<li><a href="the-carrier-of-dimension-1-and-spectral-regularity.html">The Carrier of Dimension 1 and Spectral Regularity</a>, for the same computation in the complex reading of the algebra, where the answer is the opposite</li>
+<li><a href="relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html">Relations between the N Norm and Spectral Regularity and Degeneracy</a>, for the definitions of the two predicates and the four sectors</li>
+<li><a href="the-n-degenerate-spectrally-regular-sector.html">The N-Degenerate, Spectrally Regular Sector</a>, for the sector in which the plane away from the origin lies</li>
+<li><a href="the-spectrum.html">The Spectrum</a>, for the two eigenvalues of an element and the quadratic relation</li>
+<li><a href="the-minimal-left-ideals-of-the-biquaternion-algebra.html">The Minimal Left Ideals of the Biquaternion Algebra</a>, for the idempotents, the ideals and the splitting</li>
+<li><a href="the-carriers-the-representation-the-spin-and-the-closure.html">The Carriers, the Representation, the Spin and the Closure</a>, for the three carriers taken together</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

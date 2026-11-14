@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Spin-Zero Centre Subspace and Spectral Regularity — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-spin-zero-centre-subspace-and-spectral-regularity"><strong>The Spin-Zero Centre Subspace and Spectral Regularity</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The spin-zero carrier is the real line $\mathbb{R}e_t$ and its closure is the centre $\mathbb{C}e_t$. This article computes the second predicate on the closure: whether the two eigenvalues of an element are separated.</p>
+<p>The answer is the extreme one, and it is the opposite of the answer for the spin-half carrier. Every element of the centre has a single eigenvalue of multiplicity two, so the whole centre lies in the spectral-degenerate cone and no element of it is spectrally regular. The centre is a copy of the complex field, and a copy of a field is exactly the case in which there is only one eigenvalue to have.</p>
+<p>Two qualifications keep the result from being misread, and both are treated below. A double eigenvalue is not a defect of the element: the element satisfies a relation of degree one, so there is nothing to separate, and the multiplicity is the multiplicity of the space and not a failure. And the centre is not the whole of the degenerate cone: the cone contains noncentral elements, and the centre is the part of the cone on which the vector part vanishes.</p>
+<p>The companion article is <em>The Spin-Zero Centre Subspace and N Norm Regularity</em>, where the first predicate is computed and the answer is the opposite: the norm separates the points of the centre and vanishes only at the origin. The subspace itself is <em>Introduction to the Spin-Zero Centre Subspace</em>. The predicates and the four sectors are defined in <em>Relations between the N Norm and Spectral Regularity and Degeneracy</em>.</p>
+<p>Nothing below is a statement of physics. The algebra $\mathbb{B}$ is real, of dimension $8$, with units $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t$ the identity and $\vec e_k^{2}=-e_t$, and with $i$ an element commuting with the units and $i^2=-e_t$. An element is $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu=q_\mu+iq'_\mu$ complex and $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$.</p>
+<h2 id="the-two-eigenvalues">The Two Eigenvalues</h2>
+<p><strong>The quadratic relation.</strong> Every element of the algebra satisfies</p>
+<p>$$
+X^{2}-2Q_tX+N(X)e_t=0 .
+$$</p>
+<p><em>Proof.</em> Write $X=Q_te_t+\vec Q$. The pure part squares to $\vec Q^{2}=-B^{2}e_t$ with $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$, since the three pure units anticommute in pairs. Then</p>
+<p>$$
+X^{2}=Q_t^{2}e_t+2Q_t\vec Q-B^{2}e_t ,
+$$</p>
+<p>and subtracting $2Q_tX=2Q_t^{2}e_t+2Q_t\vec Q$ and adding $N(X)e_t=(Q_t^{2}+B^{2})e_t$ leaves zero.</p>
+<p><strong>Definition (the two eigenvalues).</strong> The two eigenvalues of $X$ are the roots of the quadratic relation,</p>
+<p>$$
+\lambda_{\pm}=Q_t\pm iB ,
+$$</p>
+<p>with $B$ a fixed square root of $B^{2}$. The other root of $B^{2}$ only exchanges the two eigenvalues, so the pair is well defined. The <strong>spectrum</strong> is the set $\{\lambda_{+},\lambda_{-}\}$, and</p>
+<p>$$
+\lambda_{+}+\lambda_{-}=2Q_t,\qquad \lambda_{+}\lambda_{-}=N(X).
+$$</p>
+<p><strong>Definition (the predicate).</strong> An element is <strong>spectrally regular</strong> when $B^{2}\neq0$, that is when the two eigenvalues are distinct, and <strong>spectrally degenerate</strong> when $B^{2}=0$, that is when they coincide. The zero locus is the <strong>spectral-degenerate cone</strong> $\mathcal S=\{B^{2}=0\}$.</p>
+<p><strong>Remark (the two spectra are different objects).</strong> The two eigenvalues of an element are computed from that element. The weights of a carrier, computed elsewhere, are the eigenvalues of the operator of the action and belong to the carrier and not to the element. The two are related but distinct, and the word <em>spectrum</em> alone will not say which is meant.</p>
+<h2 id="the-predicate-on-the-centre">The Predicate on the Centre</h2>
+<p><strong>Theorem (the vector part vanishes identically).</strong> For every complex $\lambda$,</p>
+<p>$$
+B^{2}(\lambda e_t)=0 .
+$$</p>
+<p><em>Proof.</em> The vector part of $\lambda e_t$ is zero, so all three of $Q_x,Q_y,Q_z$ vanish and the sum of their squares vanishes.</p>
+<p><strong>Corollary (the centre lies in the degenerate cone).</strong> $\mathbb{C}e_t\subseteq\mathcal S$, and every element of the centre is spectrally degenerate.</p>
+<p><strong>Theorem (the spectrum of an element of the centre).</strong></p>
+<p>$$
+\lambda_{+}=\lambda_{-}=\lambda,\qquad \operatorname{spec}(\lambda e_t)=\{\lambda\},
+$$</p>
+<p>with $\lambda$ of multiplicity two.</p>
+<p><em>Proof.</em> The coordinates give $Q_t=\lambda$ and $B=0$, so both roots of $Q_t\pm iB$ equal $\lambda$.</p>
+<p><strong>Corollary (no element of the centre is spectrally regular).</strong> The predicate fails at every point of the closure, the origin included.</p>
+<h2 id="degenerate-and-yet-not-defective">Degenerate and Yet Not Defective</h2>
+<p><strong>The relation of degree one.</strong> The quadratic relation collapses for a central element. With $B=0$ and $N=\lambda^{2}$ it reads</p>
+<p>$$
+X^{2}-2\lambda X+\lambda^{2}e_t=(X-\lambda e_t)^{2}=0 ,
+$$</p>
+<p>and the element itself satisfies the linear relation</p>
+<p>$$
+X-\lambda e_t=0 .
+$$</p>
+<p>So the element is the scalar $\lambda$ and nothing else. There is one eigenvalue because the element is one number.</p>
+<p><strong>Why the multiplicity is not a failure.</strong> The two eigenvalues coincide, and the natural question is whether the element can be separated into two independent directions. For a central element the question does not arise: the element does not mix any two directions, since it does not move anything at all. The multiplicity two is the multiplicity of the two-dimensional real space over the one-dimensional complex space, and it is the same factor of two that appears in the norm article as the two copies of the line.</p>
+<p><strong>The count.</strong> The number of distinct eigenvalues is one, and the real dimension of the centre is two, and the complex dimension is one. The identity $2s+1=\dim_{\mathbb{R}}$ is a statement about the carrier of real dimension one, where $s=0$; it is not a statement about the closure, whose dimension over $\mathbb{R}$ is two. The two counts agree in the complex dimension and not in the real one.</p>
+<h2 id="the-centre-is-not-the-whole-degenerate-cone">The Centre Is Not the Whole Degenerate Cone</h2>
+<p><strong>A degenerate element outside the centre.</strong> Let $\vec u_{\mathrm r}$ be a unit real axis and $\vec u_2,\vec u_3$ an oriented orthonormal pair completing it. The element</p>
+<p>$$
+N_{\mathrm d}=\vec u_2-i\vec u_3
+$$</p>
+<p>is not central, and it is spectrally degenerate:</p>
+<p>$$
+N_{\mathrm d}^{2}=\vec u_2^{2}-\vec u_3^{2}-i\bigl(\vec u_2\vec u_3+\vec u_3\vec u_2\bigr)=-e_t+e_t-0=0 ,
+$$</p>
+<p>because the two pure units anticommute and each squares to $-e_t$. Its vector part is nonzero and its square is zero, so it is a degenerate element that is not in the centre.</p>
+<p><strong>The centre inside the cone.</strong> The centre is exactly the part of the cone on which the vector part vanishes:</p>
+<p>$$
+\mathcal S\cap\{\vec Q=0\}=\mathbb{C}e_t .
+$$</p>
+<p><em>Proof.</em> If the vector part vanishes the element is central and $B^{2}=0$ automatically, which gives the inclusion of the centre in the intersection. Conversely an element of the intersection is central by definition.</p>
+<p><strong>Remark (how much bigger the cone is).</strong> The cone $\mathcal S$ is not a subspace and not a cone over a sphere; it is the set where the three complex numbers $Q_x,Q_y,Q_z$ satisfy one complex equation, and it contains the centre as a thin part. The element $N_{\mathrm d}$ above is the first example, and the degenerate elements of a spinor space, treated in <em>The Spin-Half Bispinor Spaces and Spectral Regularity</em>, are the members of the cone that lie inside an ideal.</p>
+<h2 id="the-centre-against-the-other-carriers">The Centre Against the Other Carriers</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>carrier</th>
+<th>$B^{2}$ on it</th>
+<th>spectrally degenerate locus in it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>centre $\mathbb{C}e_t$</td>
+<td>$0$</td>
+<td>the whole centre</td>
+</tr>
+<tr>
+<td>spinor plane $\Sigma$</td>
+<td>$-\lambda^{2}/4$</td>
+<td>$\{0\}$</td>
+</tr>
+<tr>
+<td>vector part $\mathfrak{k}$</td>
+<td>$\lvert\vec v\rvert^{2}$</td>
+<td>$\{0\}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The two extremes again.</strong> On the centre the second predicate fails everywhere; on the plane and on the vector part it holds everywhere except at the origin. The centre and the plane are the two extremes, and each is extreme for one predicate and not for the other.</p>
+<p><strong>The sector of the centre.</strong> With the two predicates taken together, every nonzero element of the centre is norm-regular and spectrally degenerate, so the centre away from the origin lies in the sector $\Sigma_{10}$. The plane away from the origin lies in $\Sigma_{01}$, and the vector part away from the origin in $\Sigma_{11}$. The fourth sector, $\Sigma_{00}$, is met by no carrier except at the origin, where all three meet.</p>
+<h2 id="summary">Summary</h2>
+<p>Every element of the centre is spectrally degenerate: its vector part vanishes, $B^{2}=0$, and its spectrum is the single value $\lambda$ with multiplicity two. The relation satisfied by a central element is of degree one, so the double eigenvalue is the multiplicity of the space and not a defect of the element. The centre is not the whole degenerate cone, since the element $\vec u_2-i\vec u_3$ is degenerate and noncentral; it is exactly the degenerate part on which the vector part vanishes. Away from the origin the centre lies in the sector $\Sigma_{10}$, the sector of the norm-regular and spectrally degenerate elements.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>the biquaternion algebra, real, of dimension $8$</td>
+</tr>
+<tr>
+<td>$\tilde Q=Q_te_t+\vec Q$</td>
+<td>an element, with $Q_\mu$ complex</td>
+</tr>
+<tr>
+<td>$N(\tilde Q)$</td>
+<td>the $N$ norm, complex-valued and multiplicative</td>
+</tr>
+<tr>
+<td>$B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$</td>
+<td>the square of the vector part</td>
+</tr>
+<tr>
+<td>$\lambda_{\pm}=Q_t\pm iB$</td>
+<td>the two eigenvalues of an element</td>
+</tr>
+<tr>
+<td>spectral-regular</td>
+<td>$B^{2}\neq0$</td>
+</tr>
+<tr>
+<td>$\mathcal S=\{B^{2}=0\}$</td>
+<td>the spectral-degenerate cone</td>
+</tr>
+<tr>
+<td>$\mathbb{C}e_t$</td>
+<td>the centre, the closure of the carrier</td>
+</tr>
+<tr>
+<td>$\vec u_{\mathrm r},\vec u_2,\vec u_3$</td>
+<td>a unit real axis and an oriented orthonormal pair completing it</td>
+</tr>
+<tr>
+<td>$\vec u_2-i\vec u_3$</td>
+<td>a degenerate noncentral element, of square zero</td>
+</tr>
+<tr>
+<td>$\Sigma_{ij}$</td>
+<td>the sector with $N\neq0$ for $i=1$ and $B^{2}\neq0$ for $j=1$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-spin-zero-centre-subspace.html">Introduction to the Spin-Zero Centre Subspace</a>, for the line, the closure and the action on it</li>
+<li><a href="the-spin-zero-centre-subspace-and-n-norm-regularity.html">The Spin-Zero Centre Subspace and N Norm Regularity</a>, for the other predicate on the same space</li>
+<li><a href="the-carrier-of-dimension-1-and-spectral-regularity.html">The Carrier of Dimension 1 and Spectral Regularity</a>, for the same computation in the complex reading of the algebra</li>
+<li><a href="relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html">Relations between the N Norm and Spectral Regularity and Degeneracy</a>, for the definitions of the two predicates and the four sectors</li>
+<li><a href="the-spectrum.html">The Spectrum</a>, for the characteristic polynomial and the two eigenvalues of an element</li>
+<li><a href="the-n-regular-spectrally-degenerate-sector.html">The N-Regular, Spectrally Degenerate Sector</a>, for the sector in which the centre away from the origin lies</li>
+<li><a href="centre-units-zero-divisors-and-division-algebras.html">Centre, Units, Zero Divisors and Division Algebras</a>, for the centre as a division algebra inside the algebra</li>
+<li><a href="the-carriers-the-representation-the-spin-and-the-closure.html">The Carriers, the Representation, the Spin and the Closure</a>, for the three carriers taken together</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

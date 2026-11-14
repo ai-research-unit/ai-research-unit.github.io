@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Carriers, the Representation, the Spin and the Closure — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-carriers-the-representation-the-spin-and-the-closure"><strong>The Carriers, the Representation, the Spin and the Closure</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The question of this article is fixed, and so is its answer.</p>
+<p><strong>The question.</strong> How do spatial rotations act on the biquaternion algebra — what are its rotation-invariant pieces and one-sided ideals?</p>
+<p><strong>The answer.</strong> A line of real dimension $1$ with the trivial action and spin $0$; a plane of real dimension $2$ with the spinor action and spin $\tfrac12$; and the vector part of real dimension $3$ with the adjoint action and spin $1$. The dimensions are $1,2,3$, and the spin is $s$ with $2s+1=\dim_\mathbb{R}$.</p>
+<p>The whole article is written over the reals, and this is not a matter of taste. A spatial rotation acts on a real space; a subspace that a rotation leaves alone is a real subspace; and the question asks for those subspaces. Over the reals the three dimensions are $1,2,3$, the three spins are $0,\tfrac12,1$, and the identity $2s+1=\dim$ compares two counts of the same nature. Over the complex numbers the three dimensions would be $1,2,3$ again, but the identity would compare a complex dimension with a weight count, which is weaker.</p>
+<p>The complex structure $i$ is an element of the algebra here and not a scalar of the ground field. It is one of the operators, on the same footing as $\vec e_x,\vec e_y,\vec e_z$, and the fact that it is available is what the closure steps use.</p>
+<p><em>Preliminaries</em> fixes the real algebra. <em>The Rotation Action</em> fixes the action and the generator. <em>The Carriers</em> and <em>The Spin Table</em> contain the answer, with the three carriers read off the action itself. <em>What the Construction Uses and Does Not Use</em> records the limits. <em>The Closure of a Carrier</em> is the last step: a carrier is a module, and the question asks for subspaces, so each carrier is closed into a subspace — the centre, the spinor and bispinor spaces, and the anti-Hermitian space. The appendix holds the computations.</p>
+<p>Three things are not claimed. The article does not derive the trichotomy: that there are exactly three carriers is <em>The Carriers of the Biquaternion Algebra</em>, and it is quoted here. It does not read the label as anything but a spectral quantity. And it does not present the closure as a decomposition: the three closures are not the pieces of one splitting of the algebra.</p>
+<p>No argument array is printed anywhere below, at any point, and this is deliberate. An array carries a frame, the frame singles out a direction, and the direction is not part of the algebra: a display that fixes one axis absorbs whatever depends on that axis, and the page then stops showing it. Every statement here is made at a general axis $\vec u_{\mathrm r}$ and proved from two identities that hold at that axis. The rule and its reasons are those of <em>Matrix Representations Conventions</em>.</p>
+<p>Nothing below is a statement of physics, and no physical vocabulary is used. This article opens the subsection <em>Spin Geometry</em> of <em>Geometry</em>, in <em>Biquaternions</em>.</p>
+<h2 id="preliminaries">Preliminaries</h2>
+<p><strong>The algebra.</strong> The biquaternion algebra $\mathbb{B}$ is the real algebra with basis</p>
+<p>$$
+e_t,\ \vec e_x,\ \vec e_y,\ \vec e_z,\ ie_t,\ i\vec e_x,\ i\vec e_y,\ i\vec e_z,
+$$</p>
+<p>of real dimension $8$, where $i$ is an element commuting with the four units and $i^2=-e_t$. The four real units multiply as</p>
+<p>$$
+e_t\tilde Q=\tilde Qe_t=\tilde Q,\qquad
+\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t,\qquad
+\vec e_x\vec e_y=\vec e_z,\quad \vec e_y\vec e_z=\vec e_x,\quad \vec e_z\vec e_x=\vec e_y,
+$$</p>
+<p>with the last line read cyclically. An element is written</p>
+<p>$$
+\tilde Q=q_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z+i\bigl(q'_te_t+q'_x\vec e_x+q'_y\vec e_y+q'_z\vec e_z\bigr),
+$$</p>
+<p>with real coefficients $q_\mu$ and $q'_\mu$, or briefly $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu=q_\mu+iq'_\mu$. The vector part $\vec Q$ is a pure element, and the <strong>pure part</strong> is the real span</p>
+<p>$$
+\mathfrak{k}=\mathbb{R}\vec e_x\oplus\mathbb{R}\vec e_y\oplus\mathbb{R}\vec e_z,
+$$</p>
+<p>of real dimension $3$. The <strong>centre</strong> is $\mathbb{B}_C=\mathbb{C}e_t=\mathbb{R}e_t\oplus\mathbb{R}(ie_t)$, of real dimension $2$.</p>
+<p><strong>The two conjugations.</strong> The <strong>natural conjugation</strong> ${}^{\natural}$ fixes $e_t$ and $i$ and negates the vectors:</p>
+<p>$$
+(Q_te_t+\vec Q)^{\natural}=Q_te_t-\vec Q,\qquad (XY)^{\natural}=Y^{\natural}X^{\natural}.
+$$</p>
+<p>The <strong>star</strong> is the natural conjugation followed by the conjugation of $i$, and it is the Hermitian conjugation of the algebra:</p>
+<p>$$
+(Q_te_t+\vec Q)^{*}=\bar Q_te_t-\bar{\vec Q},\qquad (XY)^{*}=Y^{*}X^{*}.
+$$</p>
+<p>An element is <strong>Hermitian</strong> when $X^{*}=X$ and <strong>anti-Hermitian</strong> when $X^{*}=-X$.</p>
+<p><strong>The norm and the units.</strong> The <strong>norm</strong> is</p>
+<p>$$
+N(\tilde Q)=Q_t^2+Q_x^2+Q_y^2+Q_z^2,
+$$</p>
+<p>multiplicative, and vanishing exactly on the elements without an inverse. An element is <strong>invertible</strong> when $N(\tilde Q)\ne0$. An element is a <strong>unit</strong> when $XX^{*}=e_t$; the units form the group $G=\mathrm U(2)$, of real dimension $4$. Every unit is invertible, since $X^{-1}=X^{*}$; the converse fails, and $2e_t$ is invertible without being a unit.</p>
+<p><strong>The rotor.</strong> A <strong>unit real axis</strong> is a real pure element $\vec u_{\mathrm r}$ with $(\vec u_{\mathrm r},\vec u_{\mathrm r})=1$ for the positive definite form on $\mathfrak{k}$. For a real angle $\theta_{\mathrm{axr}}$ the <strong>rotor</strong> is</p>
+<p>$$
+\tilde u_{\mathrm r}=\cos\frac{\theta_{\mathrm{axr}}}{2}\,e_t+\sin\frac{\theta_{\mathrm{axr}}}{2}\,\vec u_{\mathrm r},
+$$</p>
+<p>with real coefficients and $\tilde u_{\mathrm r}\tilde u_{\mathrm r}^{*}=e_t$. The rotors form $Sp(1)$, the unit sphere of the quaternion layer, of real dimension $3$.</p>
+<p><strong>The operators.</strong> For an element $X$ the four operators used below are</p>
+<p>$$
+L_X(Y)=XY,\qquad R_X(Y)=YX,\qquad \operatorname{ad}_X(Y)=XY-YX,\qquad \operatorname{Ad}_u(Y)=uYu^{*},
+$$</p>
+<p>the last one for $uu^{*}=e_t$. The first two are left and right multiplication, the third is the commutator, the fourth is the conjugation by a unit.</p>
+<h2 id="the-rotation-action">The Rotation Action</h2>
+<p><strong>The rotation group.</strong> A <strong>rotation</strong> of the pure part is a real-linear map $R:\mathfrak{k}\to\mathfrak{k}$ that preserves the form and has determinant $1$. The rotations form the group $SO(\mathfrak{k})$, the usual group of spatial rotations.</p>
+<p><strong>Definition (real representation).</strong> Let $H$ be a group and $V$ a real vector space. A <strong>real representation</strong> of $H$ on $V$ is a map $\varrho:H\to GL_\mathbb{R}(V)$ with</p>
+<p>$$
+\varrho(e_t)=\mathrm{id}_V,\qquad \varrho(uv)=\varrho(u)\varrho(v).
+$$</p>
+<p>The second line is the law. It is what makes the operator a function of the group element rather than a table indexed by elements: two successive rotations have the operator of their product, with no freedom. Every space below is a real vector space and every operator is real-linear.</p>
+<p><strong>The three actions.</strong> Three representations occur.</p>
+<p>The <strong>trivial action</strong> on a real line, $\varrho_{\mathrm{tr}}(u)=\mathrm{id}$.</p>
+<p>The <strong>adjoint action</strong> on the pure part, $\varrho_{\mathrm{ad}}(u)=\operatorname{Ad}_u$. It preserves $\mathfrak{k}$, because $u\vec vu^{*}$ is again a real pure element for $\vec v\in\mathfrak{k}$ and $u\in G$, and it preserves the form, because the norm is multiplicative, $N(u)N(u^{*})=N(uu^{*})=1$, so $N(u\vec vu^{*})=N(\vec v)$, and the form is recovered from the norm by $(\vec p,\vec q)=\tfrac14\bigl(N(\vec p+\vec q)-N(\vec p-\vec q)\bigr)$. So $\varrho_{\mathrm{ad}}$ is a homomorphism $G\to SO(\mathfrak{k})$.</p>
+<p>The <strong>spinor action</strong> on a real plane, $\varrho_{\mathrm{def}}(X)=L_X$. Unlike the other two it is defined for every element of the algebra and not only for the units, because left multiplication is multiplicative on the whole algebra. The plane it acts on is described in <em>The Carriers</em>.</p>
+<p><strong>Definition (carrier).</strong> A <strong>carrier</strong> is a nonzero real subspace of $\mathbb{B}$ that is invariant and irreducible under one of these actions. The action is part of the carrier, because the same subspace can be reducible for one action and irreducible for another. The three carriers are computed in <em>The Carriers</em>, and the list is complete: there are three and no more.</p>
+<p><strong>How the rotor performs the rotation.</strong> For the rotor of an axis $\vec u_{\mathrm r}$ and an angle $\theta_{\mathrm{axr}}$, the operator $\operatorname{Ad}_{\tilde u_{\mathrm r}}$ on $\mathfrak{k}$ is the rotation about $\vec u_{\mathrm r}$ through $\theta_{\mathrm{axr}}$:</p>
+<p>$$
+\operatorname{Ad}_{\tilde u_{\mathrm r}}(\vec v)=\vec v_\parallel+\vec v_\perp\cos\theta_{\mathrm{axr}}+(\vec u_{\mathrm r}\times\vec v)\sin\theta_{\mathrm{axr}},
+$$</p>
+<p>with $\vec v_\parallel=(\vec u_{\mathrm r}\cdot\vec v)\vec u_{\mathrm r}$ and $\vec v_\perp=\vec v-\vec v_\parallel$. The angle appears halved in the rotor because the rotor enters twice, once on each side, and the two halves add. The map $Sp(1)\to SO(\mathfrak{k})$ is onto with kernel $\{\pm e_t\}$, so a rotation has two rotors and the cover is two to one.</p>
+<p><strong>The generator.</strong> The <strong>generator</strong> along the axis is the real pure element</p>
+<p>$$
+A(\vec u_{\mathrm r})=\tfrac12\vec u_{\mathrm r},
+$$</p>
+<p>and $A_k=\tfrac12\vec e_k$ for the three coordinate axes. It is one half of the axis, and it lies in $\mathfrak{k}$. The derivative at $t=0$ of $t\mapsto\varrho(\exp t\vec u_{\mathrm r})$ is $\varrho(\vec u_{\mathrm r})$, so the generator of the action is $\varrho(A)$, and</p>
+<p>$$
+\varrho(\tilde u_{\mathrm r})=\exp\bigl(\theta_{\mathrm{axr}}\,\varrho(A(\vec u_{\mathrm r}))\bigr).
+$$</p>
+<p>This is the exponential form used below: real operator, real exponent, no $i$ in the display. The Hermitian element of the corpus is $\tilde S(\vec u_{\mathrm r})=\tfrac12 i\vec u_{\mathrm r}\cdot\vec e=iA$, and the two forms agree, since $-i\theta_{\mathrm{axr}}\tilde S=\theta_{\mathrm{axr}}A$.</p>
+<p><strong>The two identities.</strong> Every computation below follows from two identities, and from nothing else. At a unit real axis $\vec u_{\mathrm r}$ and its idempotent $\tilde\Pi_+(\vec u_{\mathrm r})$,</p>
+<p>$$
+\vec u_{\mathrm r}\tilde\Pi_+(\vec u_{\mathrm r})=\tilde\Pi_+(\vec u_{\mathrm r})\vec u_{\mathrm r}=-i\tilde\Pi_+(\vec u_{\mathrm r}),
+\qquad
+[\tfrac12\vec u_{\mathrm r},\vec v]=\vec u_{\mathrm r}\times\vec v\quad(\vec v\in\mathfrak{k}).
+$$</p>
+<p>The first holds in one line: $\tilde\Pi_+$ is a polynomial in $\vec u_{\mathrm r}$, so the two commute, and $\vec u_{\mathrm r}\tilde\Pi_+=\tfrac12\bigl(\vec u_{\mathrm r}+i\vec u_{\mathrm r}^2\bigr)=\tfrac12\bigl(\vec u_{\mathrm r}-ie_t\bigr)=-i\tilde\Pi_+$. The second is the quaternion product rule $\vec u\vec v=-\vec u\cdot\vec v+\vec u\times\vec v$, applied to the difference $\vec u\vec v-\vec v\vec u$. Both are identities at the general axis: no coordinate is chosen, and no array is printed. The two display the whole method — the axis multiplied into the idempotent gives the scalar $-i$, and the commutator with the axis gives the cross product. One carrier is read from the first, the other from the second.</p>
+<p><strong>Definition (weights and spectrum).</strong> Let $W$ be a carrier with action $\varrho$ on the real space $V_W$. The <strong>weights</strong> of $W$ are the real numbers $\lambda$ such that $i\lambda$ is an eigenvalue of $\varrho(A(\vec u_{\mathrm r}))$ on $V_W$, each counted with its multiplicity. The <strong>spectrum</strong> is the list of weights.</p>
+<p><strong>Remark (the weights come in pairs).</strong> The operator is real, so its eigenvalues are either real or come in conjugate pairs, and the eigenvalues are purely imaginary on the three carriers. A weight $\lambda\ne0$ therefore occurs together with $-\lambda$ and with the same multiplicity, and $0$ may occur alone. This is why every spectrum below is symmetric about zero, and the symmetry is read off the reality of the operator rather than checked case by case.</p>
+<p><strong>Lemma (the weights are real).</strong> On each of the three carriers the eigenvalues of $\varrho(A(\vec u_{\mathrm r}))$ are purely imaginary, so the weights are real.</p>
+<p><em>Proof.</em> For the trivial action the operator is zero. For the adjoint action the operator is the cross product with the axis, by the second identity, and the cross product annihilates $\vec u_{\mathrm r}$ and turns the perpendicular plane by a quarter turn: with an oriented orthonormal pair $\vec u_2,\vec u_3$ completing the axis so that $\vec u_{\mathrm r}\times\vec u_2=\vec u_3$, it sends $\vec u_2\pm i\vec u_3$ to $\mp i(\vec u_2\pm i\vec u_3)$. The eigenvalues are therefore $0,-i,+i$. For the spinor action the operator acts on the plane as the complex scalar $-\tfrac i2$, by the first identity, so its eigenvalues are that scalar and its conjugate, $-\tfrac i2$ and $+\tfrac i2$. Both operators are real-linear, so both spectra are symmetric under conjugation and both are purely imaginary.</p>
+<p><strong>Lemma (the weights do not depend on the axis).</strong> For two unit real axes $\vec u_{\mathrm r}$ and $\vec u_{\mathrm r}'$ the operators $\varrho(A(\vec u_{\mathrm r}))$ and $\varrho(A(\vec u_{\mathrm r}'))$ are similar, hence have the same spectrum with the same multiplicities.</p>
+<p><em>Proof.</em> Since $Sp(1)\to SO(\mathfrak{k})$ is onto, there is a rotor $\tilde g$ with $\operatorname{Ad}_{\tilde g}\vec u_{\mathrm r}=\vec u_{\mathrm r}'$. The generator is equivariant, $A(\vec u_{\mathrm r}')=\operatorname{Ad}_{\tilde g}\bigl(A(\vec u_{\mathrm r})\bigr)$, because $\operatorname{Ad}$ is real linear and carries the axis to the axis. A representation intertwines the conjugation with itself,</p>
+<p>$$
+\varrho(\operatorname{Ad}_{\tilde g}X)=\varrho(\tilde g)\varrho(X)\varrho(\tilde g)^{-1},
+$$</p>
+<p>for both the spinor and the adjoint action, as checked in the appendix. The two operators are therefore similar.</p>
+<p><strong>Definition (spin).</strong> The <strong>spin</strong> of a carrier is</p>
+<p>$$
+s=\max\operatorname{spec}W,
+$$</p>
+<p>the largest weight, with $s=0$ for the spectrum $\{0\}$. The definition is well posed by the two lemmas: the weights are real, so the maximum exists, and they do not depend on the axis, so the number depends on the carrier and not on a choice. It agrees with the definition by dimension of <em>The Spin of a Carrier</em>: on an irreducible carrier the weights are $s,s-1,\dots,-s$, so there are $2s+1$ of them.</p>
+<h2 id="the-carriers">The Carriers</h2>
+<p>The three carriers are stated in the order line, plane, vector part: the two rotation-invariant pieces first, the one-sided one after. Each is described by the same template: the subspace, the action, the operator, the spectrum, the dimension, the spin, and the sign of a full turn.</p>
+<h3 id="the-fixed-line">The Fixed Line</h3>
+<p><strong>The subspace.</strong> The real line $\mathbb{R}e_t$, of real dimension $1$.</p>
+<p><strong>The action.</strong> The conjugation acts trivially, because $ue_tu^{*}=e_t$ for every unit $u$. The line is fixed pointwise, and it is the carrier of the trivial action.</p>
+<p><strong>The operator.</strong> $\varrho(A)=0$.</p>
+<p><strong>The spectrum.</strong> $\{0\}$, with multiplicity $1$.</p>
+<p><strong>Dimension, spin, full turn.</strong> $\dim_\mathbb{R}=1$, $s=0$, and $2s+1=1$. The full turn has operator $\varrho(-e_t)=\mathrm{id}$, so the sign is $+1$.</p>
+<h3 id="the-spinor-plane">The Spinor Plane</h3>
+<p><strong>The subspace.</strong> Fix a unit real axis $\vec u_{\mathrm r}$ and the idempotent</p>
+<p>$$
+\tilde\Pi_+(\vec u_{\mathrm r})=\tfrac12\bigl(e_t+i\vec u_{\mathrm r}\bigr),\qquad \tilde\Pi_+^2=\tilde\Pi_+ .
+$$</p>
+<p>The plane is the complex line spanned by it, read as a real plane:</p>
+<p>$$
+\Sigma(\vec u_{\mathrm r})=\mathbb{C}\tilde\Pi_+(\vec u_{\mathrm r})=\mathbb{R}\bigl\{\tilde\Pi_+,\ i\tilde\Pi_+\bigr\},
+$$</p>
+<p>of real dimension $2$, with the real basis $p_1=\tilde\Pi_+(\vec u_{\mathrm r})$ and $p_2=i\tilde\Pi_+(\vec u_{\mathrm r})$. The plane lies in the left ideal $S_+=\mathbb{B}\tilde\Pi_+$, so $L_X\Sigma\subseteq S_+$ for every $X$, and it carries the one-sided action. The axis is a parameter of the family and not a datum of the algebra.</p>
+<p><strong>The action.</strong> Left multiplication, $\varrho_{\mathrm{def}}(X)=L_X$. On the plane the rotor acts by a phase of half its angle, and this is where the half-integer arises. By the first identity, $\vec u_{\mathrm r}\tilde\Pi_+=-i\tilde\Pi_+$, so for the rotor $\tilde u_{\mathrm r}=\cos\tfrac{\theta_{\mathrm{axr}}}{2}\,e_t+\sin\tfrac{\theta_{\mathrm{axr}}}{2}\,\vec u_{\mathrm r}$,</p>
+<p>$$
+\tilde u_{\mathrm r}\tilde\Pi_+(\vec u_{\mathrm r})=\Bigl(\cos\tfrac{\theta_{\mathrm{axr}}}{2}-i\sin\tfrac{\theta_{\mathrm{axr}}}{2}\Bigr)\tilde\Pi_+(\vec u_{\mathrm r})=e^{-i\theta_{\mathrm{axr}}/2}\,\tilde\Pi_+(\vec u_{\mathrm r}).
+$$</p>
+<p>The rotor multiplies the plane by the phase $e^{-i\theta_{\mathrm{axr}}/2}$, at every axis and by one line of algebra: the half angle is not inserted, it is what the identity gives.</p>
+<p><strong>The operator.</strong> Since $\tilde u_{\mathrm r}=\exp\bigl(\theta_{\mathrm{axr}}A(\vec u_{\mathrm r})\bigr)$ and the phase in the display is $e^{-i\theta_{\mathrm{axr}}/2}$, the operator $L_{A(\vec u_{\mathrm r})}$ acts on the plane as the complex scalar $-\tfrac i2$. It is complex-linear, with no other component; as a real operator on the two real dimensions its eigenvalues are the scalar and its conjugate, $-\tfrac i2$ and $+\tfrac i2$.</p>
+<p><strong>The spectrum.</strong> $\{+\tfrac12,-\tfrac12\}$, with multiplicities $1,1$.</p>
+<p><strong>Dimension, spin, full turn.</strong> $\dim_\mathbb{R}=2$, $s=\tfrac12$, and $2s+1=2$. The full turn is $\theta_{\mathrm{axr}}=2\pi$, and the rotor acts by $e^{-i\pi}=-1$: a full rotation of space is a half turn of the plane. The sign is $-1$, and here it is visible in the plane itself, without any complexification.</p>
+<p><strong>Remark (the plane is not invariant under the full group).</strong> The plane is carried by the rotations about its own axis and by no others: left multiplication by the transverse axis $\vec u_2$ sends $\tilde\Pi_+(\vec u_{\mathrm r})$ out of $\Sigma(\vec u_{\mathrm r})$, and the smallest real subspace of $\mathbb{B}$ that contains $\Sigma$ and is invariant under the whole group has real dimension $4$. The carrier is therefore a carrier for the circle of rotations about the axis. Why this is so, and what it costs, is <em>The Closure of a Carrier</em>.</p>
+<h3 id="the-vector-part">The Vector Part</h3>
+<p><strong>The subspace.</strong> $\mathfrak{k}=\mathbb{R}\vec e_x\oplus\mathbb{R}\vec e_y\oplus\mathbb{R}\vec e_z$, of real dimension $3$.</p>
+<p><strong>The action.</strong> The conjugation, $\varrho_{\mathrm{ad}}(u)=\operatorname{Ad}_u$. It preserves $\mathfrak{k}$ and it preserves the form, so it is a representation into $SO(\mathfrak{k})$; the map is onto with kernel $\{\pm e_t\}$.</p>
+<p><strong>The operator.</strong> By the second identity the operator is the cross product with the axis,</p>
+<p>$$
+\varrho_{\mathrm{ad}}\bigl(A(\vec u_{\mathrm r})\bigr)(\vec v)=\vec u_{\mathrm r}\times\vec v ,
+$$</p>
+<p>which is the zero of $\vec u_{\mathrm r}$ and a quarter turn of the plane perpendicular to it. With the oriented pair $\vec u_2,\vec u_3$ completing the axis as before, it sends $\vec u_2\pm i\vec u_3$ to $\mp i(\vec u_2\pm i\vec u_3)$, so the eigenvalues are $-i$, $+i$ and $0$.</p>
+<p><strong>The spectrum.</strong> $\{+1,0,-1\}$, with multiplicities $1,1,1$.</p>
+<p><strong>Dimension, spin, full turn.</strong> $\dim_\mathbb{R}=3$, $s=1$, and $2s+1=3$. The full turn is a rotation of space through $2\pi$, which is the identity on $\mathfrak{k}$, so the sign is $+1$.</p>
+<p><strong>Remark (why the two spectra differ by a factor of two).</strong> The generator is the same real element $\tfrac12\vec u_{\mathrm r}$ in both cases, and the two identities say why the spectra differ. On the vector part the operator is the commutator with $\tfrac12\vec u_{\mathrm r}$, which equals the cross product with the whole axis $\vec u_{\mathrm r}$: the two sides of the product both contribute, and the quarter turn of the cross product gives the eigenvalues $\mp i$, hence the weights $\pm1$. On the plane the operator is a single multiplication by one half of the axis, which gives the scalar $-\tfrac i2$, hence the weights $\pm\tfrac12$. The commutator consumes the axis twice and the multiplication consumes it once, and that is the factor of two.</p>
+<h3 id="why-the-three-are-not-a-direct-sum">Why the Three Are Not a Direct Sum</h3>
+<p>The three carriers are not the pieces of one decomposition, and the arithmetic says so at once: $1+2+3=6$, while $\mathbb{B}$ has real dimension $8$.</p>
+<p>Two decompositions of the algebra exist, in two different categories.</p>
+<p>From the star, $\mathbb{B}=\mathbb{B}_\Phi\oplus\mathbb{B}_\Psi$, the anti-Hermitian and Hermitian halves, of real dimensions $4+4=8$; the first contains the vector part.</p>
+<p>From the idempotent, $\mathbb{B}=S_+\oplus S_-$ as left modules, where $S_\pm=\mathbb{B}\tilde\Pi_\pm$, and each summand has real dimension $4$.</p>
+<p>The spinor plane occurs in neither as a summand: it is a complex line inside $S_+$, and not a left module over the whole algebra. The line, the plane and the vector part are three carriers, not three summands.</p>
+<h2 id="the-spin-table">The Spin Table</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>carrier</th>
+<th>$\dim_\mathbb{R}$</th>
+<th>action</th>
+<th>$\varrho\bigl(A(\vec u_{\mathrm r})\bigr)$</th>
+<th>weights</th>
+<th>$s$</th>
+<th>$2s+1$</th>
+<th>full turn</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fixed line $\mathbb{R}e_t$</td>
+<td>$1$</td>
+<td>trivial</td>
+<td>$0$</td>
+<td>$\{0\}$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$+1$</td>
+</tr>
+<tr>
+<td>spinor plane $\Sigma$</td>
+<td>$2$</td>
+<td>$L_u$</td>
+<td>the scalar $-\tfrac i2$</td>
+<td>$\{\pm\tfrac12\}$</td>
+<td>$\tfrac12$</td>
+<td>$2$</td>
+<td>$-1$</td>
+</tr>
+<tr>
+<td>vector part $\mathfrak{k}$</td>
+<td>$3$</td>
+<td>$\operatorname{Ad}_u$</td>
+<td>$\vec u_{\mathrm r}\times$</td>
+<td>$\{\pm1,0\}$</td>
+<td>$1$</td>
+<td>$3$</td>
+<td>$+1$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proposition ($2s+1=\dim_\mathbb{R}$).</strong> The identity holds for each of the three carriers: $1=2\cdot0+1$, $2=2\cdot\tfrac12+1$, $3=2\cdot1+1$. It is checked in the three cases, and since the list of carriers is complete the check covers every carrier of $\mathbb{B}$. It is not a numerical coincidence: the dimension and the largest weight are the same kind of number here, both read from the same real space.</p>
+<p><strong>Theorem (the full turn).</strong> The operator of a full rotation, $\varrho(-e_t)$, is $+1$ on the line and on the vector part and $-1$ on the plane; that is, its value is $(-1)^{2s}$.</p>
+<p><em>Proof.</em> Let $\lambda$ run over the weights, and let $\varrho(A)$ be the operator of the generator. The eigenvalues of $\varrho(A)$ are $i\lambda$, so the eigenvalues of $\varrho(\tilde u_{\mathrm r})=\exp(\theta_{\mathrm{axr}}\varrho(A))$ are $e^{i\theta_{\mathrm{axr}}\lambda}$. At $\theta_{\mathrm{axr}}=2\pi$ the rotor is $-e_t$ and the eigenvalues are $e^{2\pi i\lambda}$. For $\lambda\in\{0,\pm1\}$ this is $+1$; for $\lambda=\pm\tfrac12$ it is $e^{\pm i\pi}=-1$. On each carrier all the eigenvalues are equal and the operator is diagonalisable, so the operator is that single value times the identity: $+1$ on the line and on the vector part, $-1$ on the plane.</p>
+<p><strong>Remark (the reading of the sign).</strong> The sign is not a defect of the computation. On the plane $\varrho$ is defined on the rotors, and a full rotation has the rotor $-e_t$, which is not the identity of the rotor group; the value $-1$ shows that the action does not descend to the rotation group. The half-integer carrier is therefore an action of the double cover, and the integer carriers are actions of the rotation group. On the plane the statement is geometric: a full rotation of space is a half turn of the plane.</p>
+<p><strong>Remark (the spacing).</strong> The three spectra are symmetric about zero, spaced by $1$, and of length $2s+1$: $0$ alone, then $+\tfrac12$ and $-\tfrac12$, then $+1,0,-1$ in steps of $1$. The spacing is checked in the three cases; it is not assumed.</p>
+<h2 id="what-the-construction-uses-and-does-not-use">What the Construction Uses and Does Not Use</h2>
+<p><strong>The axis.</strong> The axis is a parameter. The spectrum does not depend on it, by the lemma of <em>The Rotation Action</em>, and the spin therefore does not depend on it. The answer is a property of the carrier and not of a direction.</p>
+<p><strong>The angle.</strong> The spin is read from the generator at the identity, so no angle enters it. The angle enters once, at $\theta_{\mathrm{axr}}=2\pi$, in the theorem of the full turn. The halved angle of the rotor is not used to define the weights; it is the reason the exponent in the full turn is $2\pi\lambda$.</p>
+<p><strong>The complex structure.</strong> $i$ is used twice: it is what the first closure adjoins, and it is what the idempotent $\tilde\Pi_+$ contains. No carrier is defined by means of it, and the weights are real numbers throughout.</p>
+<p><strong>The norm.</strong> The norm is used twice. It identifies the rotor as a unit, $\tilde u_{\mathrm r}\tilde u_{\mathrm r}^{*}=e_t$, and it gives the pure part its positive definite form, which is what makes $SO(\mathfrak{k})$ a group of rotations. The spectra, the spin and the sign of the full turn use the product, the star and the commutator only.</p>
+<p><strong>No array.</strong> No argument array is used, and no basis is fixed. The two identities $\vec u_{\mathrm r}\tilde\Pi_+=-i\tilde\Pi_+$ and $[\tfrac12\vec u_{\mathrm r},\vec v]=\vec u_{\mathrm r}\times\vec v$ carry every computation, and the spectra are read from the scalar action on the plane and from the exhibited eigenvectors on the vector part. A display in a fixed frame would have introduced the axis into statements that do not contain one.</p>
+<p><strong>What is read from an element.</strong> Only the scalar part and the vector part are used, read off the coefficients. No pairing of the algebra with itself is needed, and no invariant of a linear operator is taken; the spectra are read from the action of the axis and from eigenvectors that are written out.</p>
+<p><strong>Regularity.</strong> No decomposition into regular and degenerate parts is assumed. The idempotent is degenerate by construction, since $\tilde\Pi_+\ne e_t$, and the plane is built from it. The construction therefore does not assume that the algebra is a division algebra: $\mathbb{B}$ is not one, and the existence of a nontrivial idempotent is exactly the failure.</p>
+<p><strong>The classification.</strong> The statement that there are three carriers and no more is quoted from <em>The Carriers of the Biquaternion Algebra</em> and is not reproved.</p>
+<h2 id="the-closure-of-a-carrier">The Closure of a Carrier</h2>
+<p>A carrier is a module; the question asks for subspaces. The two are not the same object, and the passage from one to the other is a step of its own. The step is a <strong>closure</strong>: to a carrier, attach a real subspace of $\mathbb{B}$ in which it sits and on which the action is defined.</p>
+<p><strong>Definition (closure).</strong> Let $W$ be a carrier with representation space $V_W$. A <strong>closure</strong> of $W$ is a real subspace $\overline{W}\subseteq\mathbb{B}$ that contains $V_W$, is invariant under the action of $W$, and is the smallest subspace of $\mathbb{B}$ with a further property, named by the rule of the case.</p>
+<p>The definition is deliberately incomplete, and the incompleteness is the content of this section. The further property is not the same in the four cases, and the four rules below are not one rule applied four times.</p>
+<p><strong>The four properties.</strong> For the line the property is being a complex subspace, since the line is real and the algebra has an $i$ to spend. For the plane no further property is needed: invariance under the whole group is the property, and it is the plane that fails to have it, not the definition. For the spinor space the property is containing both members of the Peirce pair. For the vector part the property is being the whole eigenspace of the conjugation.</p>
+<p>The plane needs two steps and the other two need one.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>carrier</th>
+<th>$\dim_\mathbb{R}$</th>
+<th>closure</th>
+<th>$\dim_\mathbb{R}$</th>
+<th>property the rule adds</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fixed line</td>
+<td>$1$</td>
+<td>centre $\mathbb{C}e_t$</td>
+<td>$2$</td>
+<td>being a complex subspace</td>
+</tr>
+<tr>
+<td>spinor plane</td>
+<td>$2$</td>
+<td>spinor space $S_+\cong\mathbb{C}^2$</td>
+<td>$4$</td>
+<td>none: invariance under the whole group</td>
+</tr>
+<tr>
+<td>spinor space</td>
+<td>$4$</td>
+<td>a bispinor space, one per Peirce basis</td>
+<td>$8$</td>
+<td>containing both members of the pair</td>
+</tr>
+<tr>
+<td>vector part</td>
+<td>$3$</td>
+<td>anti-Hermitian space $\mathbb{B}_\Phi$</td>
+<td>$4$</td>
+<td>being the whole eigenspace of the conjugation</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="the-centre">The Centre</h3>
+<p><strong>The space.</strong> $\mathbb{C}e_t=\mathbb{R}e_t\oplus\mathbb{R}(ie_t)$, of real dimension $2$.</p>
+<p><strong>Why it is the closure of the line.</strong> The line is fixed pointwise by the conjugation, and the fixed space of the conjugation is exactly the centre: $uXu^{*}=X$ for every unit $u$ holds only for the central elements. The line is real and the property named for it is being complex, so the closure takes the smallest complex subspace containing it, which is $\mathbb{C}e_t$: the line together with $ie_t$. That the result is the whole fixed space, and not merely a complex line through $e_t$, is a theorem about the conjugation and not a part of the rule.</p>
+<p><strong>The carrier inside.</strong> Every element of the centre is fixed, so the space carries the trivial carrier with multiplicity two: the lines $\mathbb{R}e_t$ and $\mathbb{R}(ie_t)$ are two copies of it, and they are the real and imaginary parts of one complex line. The spin is $s=0$.</p>
+<h3 id="the-bispinor-spaces">The Bispinor Spaces</h3>
+<p><strong>The first step, and why it is forced.</strong> No real subspace of $\mathbb{B}$ of dimension $2$ is invariant under the whole rotation group. The plane $\Sigma$ is invariant under the rotations about its axis and under no others, and the smallest real subspace containing it and invariant under all of them has dimension $4$, which is $S_+=\mathbb{B}\tilde\Pi_+$.</p>
+<p><em>Proof.</em> The plane is the complex line $\mathbb{C}\tilde\Pi_+$. For an element $X$ whose product $X\tilde\Pi_+$ is not a complex multiple of $\tilde\Pi_+$, the space $L_X\Sigma$ is not contained in $\Sigma$, and the transverse axis $\vec u_2$ is such an element. The real span of $\Sigma$ and $L_{\vec u_2}\Sigma$ is $S_+$, of real dimension $4$, and $S_+$ is closed under every $L_X$ and under $L_{iX}$. Hence the smallest invariant real subspace containing the plane is $S_+$.</p>
+<p>So the first closure is not a convenience, and it is not a matter of supplying $i$ either: the plane is a complex line already, and multiplication by $i$ acts inside it. What the plane lacks is the transverse direction. The image of the plane under left multiplication by the transverse axis, $L_{\vec u_2}\Sigma$, is a second complex line, and the real span of the two is $S_+$. The step is a step inside the ideal, from one complex line to two, and it adds two real dimensions.</p>
+<p><strong>The spinor space.</strong> $S_+=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\vec u_2\tilde\Pi_+\}$, of real dimension $4$ and complex dimension $2$. It is a minimal left ideal: no nonzero left subspace of it is invariant. It carries the spinor carrier, with weights $\pm\tfrac12$ and $s=\tfrac12$.</p>
+<p><strong>The second step.</strong> The complementary idempotent $\tilde\Pi_-(\vec u_{\mathrm r})=\tfrac12(e_t-i\vec u_{\mathrm r})=e_t-\tilde\Pi_+$ gives a second ideal $S_-=\mathbb{B}\tilde\Pi_-$, also of real dimension $4$, and</p>
+<p>$$
+\mathbb{B}=S_+\oplus S_-,\qquad 4+4=8 .
+$$</p>
+<p>The two idempotents satisfy $\tilde\Pi_\pm^2=\tilde\Pi_\pm$ and $\tilde\Pi_+\tilde\Pi_-=0$, so they form a <strong>Peirce basis</strong> and the sum is direct. Each axis therefore produces a <strong>bispinor space</strong>: the algebra $\mathbb{B}$ read through the Peirce basis of that axis, that is, the pair of spinor spaces and their sum.</p>
+<p><strong>The four corners.</strong> Each summand splits further. The four Peirce corners $\tilde\Pi_\epsilon\mathbb{B}\tilde\Pi_\delta$ with $\epsilon,\delta\in\{+,-\}$ have real dimension $2$ each, and the two spinor spaces are their grouping two by two.</p>
+<p><strong>The family, and why the plural.</strong> There is one bispinor space per Peirce basis, so there are infinitely many: one for each unit real axis, and two axes that differ by a sign give the same unordered pair, so the family is indexed by the real projective plane. For two distinct axes the spinor spaces differ, since each contains its own idempotent. The sum does not move, $\mathbb{B}\tilde\Pi_+\oplus\mathbb{B}\tilde\Pi_-=\mathbb{B}$ for every axis.</p>
+<p>As sets the members of this family coincide, because each of them is $\mathbb{B}$. What varies is the splitting. The family is therefore a family of decompositions of one space and not a family of subspaces of it, and the naming keeps that apart: the spinor spaces are subspaces, and a bispinor space is the whole space together with a Peirce basis. A subspace is a subset, a bispinor space is a subset and a splitting, and the count of the first is two per axis while the count of the second is one per axis.</p>
+<p><strong>The two idempotents and the two conjugations.</strong> The idempotents are exchanged by the natural conjugation, $\tilde\Pi_+^{\natural}=\tilde\Pi_-$, and each is fixed by the star, since $(i\vec u_{\mathrm r})^{*}=i\vec u_{\mathrm r}$ at a real axis. The two <strong>ideals</strong> are exchanged by neither, and indeed they cannot be: each is a left ideal, and the natural conjugation carries a left ideal to a right ideal.</p>
+<h3 id="the-anti-hermitian-space">The Anti-Hermitian Space</h3>
+<p><strong>The space.</strong> $\mathbb{B}_\Phi=\{X\in\mathbb{B}:X^{*}=-X\}=\mathbb{R}(ie_t)\oplus\mathfrak{k}$, of real dimension $4$. This is the half the corpus calls the <strong>material part</strong> of an element, the other half $\mathbb{B}_\Psi=\mathbb{R}e_t\oplus i\mathfrak{k}$ being the informational part. It is a real subspace and not a complex one: multiplication by $i$ carries it to $\mathbb{B}_\Psi$.</p>
+<p><strong>Why it is the closure of the vector part.</strong> The property named for the vector part is being the whole eigenspace of the conjugation. The star is an involution, so it splits the algebra into its $+1$ and $-1$ eigenspaces, of real dimensions $4+4$. The vector part lies in the $-1$ eigenspace and is not the whole of it: multiplication by $i$ carries the vector part to a Hermitian space, so the $-1$ eigenspace needs a real line as well, and that line is $\mathbb{R}(ie_t)$. The closure takes the whole eigenspace, which is $\mathbb{B}_\Phi$. Read with the commutator, $\mathbb{B}_\Phi$ is a real Lie algebra, and the display is a split of Lie algebras,</p>
+<p>$$
+\mathbb{B}_\Phi=\mathfrak{u}(2)=\mathfrak{u}(1)\oplus\mathfrak{su}(2),
+$$</p>
+<p>with $\mathfrak{k}$ the second summand and $\mathbb{R}(ie_t)$ the centre; it is the Lie algebra of the group $G$ that acts.</p>
+<p><strong>The carrier inside.</strong> $\mathfrak{k}$, of real dimension $3$, with weights $\{\pm1,0\}$ and $s=1$. The line $\mathbb{R}(ie_t)$ is not a second carrier: it is the degenerate summand, fixed by the action, and it is the same carrier as the line of the centre.</p>
+<p><strong>Remark (why this half and not the other).</strong> The Hermitian half $\mathbb{B}_\Psi=\mathbb{R}e_t\oplus i\mathfrak{k}$ is also invariant and also of real dimension $4$, and it too splits as a line and a three-dimensional summand. Two facts separate them. The vector part lies in $\mathbb{B}_\Phi$ and meets $\mathbb{B}_\Psi$ only at the origin. And $\mathbb{B}_\Phi$ is closed under the commutator, while $\mathbb{B}_\Psi$ is not: the bracket of two Hermitian elements is anti-Hermitian and leaves it. The two halves carry the same module with $i$ inserted; the table names the half that contains the carrier.</p>
+<h3 id="the-spaces-together">The Spaces Together</h3>
+<p><strong>What the closures add.</strong> The centre adds the complex structure to a line. The first closure of the plane adds the transverse direction, which is the second complex line of the ideal; the second adds the second idempotent. The anti-Hermitian space adds the fixed line to the vector part. Four rules, each with its own property, and no two of them the same.</p>
+<p><strong>The dimensions.</strong> The carriers are $1,2,3$; the spaces are $2$, $4$, $8$, and $4$ for the vector part. The two lists are not proportional and no rule turns one into the other: the line doubles, the plane is squared and then doubled, the vector part gains one.</p>
+<p><strong>They are not a decomposition.</strong> One of the four is a bispinor space, and as a set it is the whole algebra; the sum of the four space dimensions is $2+4+8+4=18$, which is not $8$. The sum counts the same algebra several times over. The four spaces are four readings of one algebra, one for each action and one for the second step of the plane, and the only decompositions available are the pair stated in <em>The Carriers</em>.</p>
+<p><strong>The overlaps.</strong> The four spaces are not disjoint, and two inclusions say how they meet. The centre and the anti-Hermitian space intersect in the line $\mathbb{R}(ie_t)$. The spinor space lies inside the bispinor space, as one of its two summands. Nothing else overlaps: the plane meets $S_-$ only at the origin, and the vector part meets $\mathbb{B}_\Psi$ only at the origin.</p>
+<p><strong>The order of the steps.</strong> The rotation acts; the action has three carriers; each carrier closes into a space. The first step is a question about the group, the second about the modules, the third about the subspaces. A statement about a carrier and a statement about its closure are different statements, and the two are kept apart by the naming: the line and the centre, the plane and the spinor space, the vector part and the anti-Hermitian space.</p>
+<h2 id="discussion">Discussion</h2>
+<p><strong>What is established.</strong> Three carriers of real dimensions $1$, $2$, $3$; the actions trivial, by left multiplication, and by conjugation; the weights $\{0\}$, $\{\pm\tfrac12\}$ and $\{\pm1,0\}$ obtained from the two identities without any array; the spins $0,\tfrac12,1$; the identity $2s+1=\dim_\mathbb{R}$ checked in the three cases; the full-turn sign $(-1)^{2s}$, with the $-1$ visible as a half turn of the plane; and the closures — the centre, the spinor and bispinor spaces, and the anti-Hermitian space.</p>
+<p><strong>What it means.</strong> The three numbers $1,2,3$ are the real dimensions of three carriers, and the label $s$ is the largest weight of each, so the identity that relates them relates two counts of the same nature. The closure then places each carrier in the algebra, at the cost of one complex structure, one transverse direction, one second idempotent, and one fixed line.</p>
+<p><strong>Limitations.</strong> The article studies the conjugation by the units with $uu^{*}=e_t$. It does not study the conjugation by the general invertible elements, which does not preserve the pure part. It does not study products of carriers, or the bracket as a structure. And it states the closure of the three carriers only.</p>
+<p><strong>Two questions left open.</strong> The first is whether the count $2s+1$ can be proved without the classification, by an argument that does not run through the list. The second is whether the bispinor family has a canonical member, that is, whether the axis can be fixed by a condition internal to the algebra; on the three carriers the axis is a free parameter, and nothing in the algebra singles one out.</p>
+<h2 id="appendix">Appendix</h2>
+<h3 id="a1-conventions">A.1 Conventions</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>the biquaternion algebra, a real algebra of dimension $8$, with $i$ an element</td>
+</tr>
+<tr>
+<td>$\vec u_2,\vec u_3$</td>
+<td>an oriented orthonormal pair with $\vec u_{\mathrm r}\times\vec u_2=\vec u_3$</td>
+</tr>
+<tr>
+<td>$e_t,\vec e_x,\vec e_y,\vec e_z$</td>
+<td>the basis of the quaternion layer, with $e_t$ the identity</td>
+</tr>
+<tr>
+<td>$\tilde Q=Q_te_t+\vec Q$</td>
+<td>an element, with scalar part $Q_t$ and vector part $\vec Q$</td>
+</tr>
+<tr>
+<td>${}^{\natural}$, ${}^{*}$</td>
+<td>the natural conjugation and the star</td>
+</tr>
+<tr>
+<td>$\mathfrak{k}$</td>
+<td>the real span of the pure part, dimension $3$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_C$</td>
+<td>the centre $\mathbb{C}e_t$, dimension $2$ over $\mathbb{R}$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_\Psi$, $\mathbb{B}_\Phi$</td>
+<td>the Hermitian and anti-Hermitian halves</td>
+</tr>
+<tr>
+<td>$G=\mathrm U(2)$</td>
+<td>the units, $uu^{*}=e_t$</td>
+</tr>
+<tr>
+<td>$Sp(1)$</td>
+<td>the rotors, the unit sphere of the quaternion layer</td>
+</tr>
+<tr>
+<td>$\vec u_{\mathrm r}$</td>
+<td>a unit real axis</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{axr}}$</td>
+<td>the rotation angle, twice the angle of the rotor</td>
+</tr>
+<tr>
+<td>$\tilde u_{\mathrm r}$</td>
+<td>the rotor of the axis and the angle</td>
+</tr>
+<tr>
+<td>$A(\vec u_{\mathrm r})=\tfrac12\vec u_{\mathrm r}$</td>
+<td>the generator along the axis, an element of $\mathfrak{k}$</td>
+</tr>
+<tr>
+<td>$\tilde S(\vec u_{\mathrm r})=iA$</td>
+<td>the Hermitian element of the corpus</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_\pm(\vec u_{\mathrm r})=\tfrac12(e_t\pm i\vec u_{\mathrm r})$</td>
+<td>the two idempotents of the axis, a Peirce basis</td>
+</tr>
+<tr>
+<td>$\Sigma=\mathbb{C}\tilde\Pi_+$</td>
+<td>the spinor plane, dimension $2$ over $\mathbb{R}$</td>
+</tr>
+<tr>
+<td>$S_\pm=\mathbb{B}\tilde\Pi_\pm$</td>
+<td>the spinor spaces, dimension $4$ over $\mathbb{R}$</td>
+</tr>
+<tr>
+<td>$\varrho$</td>
+<td>a representation of the action on a carrier</td>
+</tr>
+<tr>
+<td>$\lambda$, $s$</td>
+<td>a weight, and the spin, the largest weight</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="a2-the-operator-identities">A.2 The Operator Identities</h3>
+<p><strong>Proposition (the elementary identities).</strong> For elements $X,Y$ and a unit $u$:</p>
+<ol>
+<li>$L_XL_Y=L_{XY}$ and $R_XR_Y=R_{YX}$.</li>
+<li>$\operatorname{ad}_X=L_X-R_X$.</li>
+<li>$\operatorname{Ad}_u=L_uR_{u^{*}}$ for $uu^{*}=e_t$, and there $R_{u^{*}}=R_{u^{-1}}$.</li>
+<li>$\operatorname{Ad}_{uv}=\operatorname{Ad}_u\operatorname{Ad}_v$ and $\operatorname{Ad}_{e_t}=\mathrm{id}$.</li>
+<li>$\varrho(\operatorname{Ad}_uX)=\varrho(u)\varrho(X)\varrho(u)^{-1}$ for the spinor action and for the adjoint action.</li>
+<li>$\varrho(\exp X)=\exp\varrho(X)$.</li>
+<li>$\operatorname{Ad}_{\exp X}=\exp(\operatorname{ad}_X)$.</li>
+</ol>
+<p><em>Proof.</em> Items 1 and 2 are the associativity of the product and the definition of the bracket. Item 3 is $uYu^{*}=(uY)u^{*}$. Item 4 is associativity again. Item 5: for the spinor action, $L_{uXu^{*}}=L_uL_XL_{u^{*}}$ by item 1 and $L_{u^{*}}=L_u^{-1}$; for the adjoint action, $\operatorname{ad}_{uXu^{*}}=\operatorname{Ad}_u\operatorname{ad}_X\operatorname{Ad}_u^{-1}$, checked by applying both sides to $Y$ and using item 4. Item 6 is the exponential series, whose terms are the powers of the operator. Item 7 is item 6 applied to the adjoint action, whose derived map is the commutator.</p>
+<p><strong>Corollary (the exponential form).</strong> For the rotor $\tilde u_{\mathrm r}$ and the generator $A=A(\vec u_{\mathrm r})$,</p>
+<p>$$
+\varrho(\tilde u_{\mathrm r})=\exp\bigl(\theta_{\mathrm{axr}}\varrho(A)\bigr)
+$$</p>
+<p>for both the spinor and the adjoint action.</p>
+<p><em>Proof.</em> By item 6 it suffices to compute the derived map on $\vec u_{\mathrm r}$, which is $\varrho(\vec u_{\mathrm r})=2\varrho(A)$, and to replace the exponent $\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ accordingly.</p>
+<p><strong>Corollary (the eigenvalues of a rotor).</strong> The eigenvalues of $\varrho(\tilde u_{\mathrm r})$ are $e^{i\theta_{\mathrm{axr}}\lambda}$, where $\lambda$ runs over the weights.</p>
+<h3 id="a3-the-three-computations">A.3 The Three Computations</h3>
+<p>Everything below uses the two identities of <em>The Rotation Action</em>, at a general unit real axis $\vec u_{\mathrm r}$, and one oriented orthonormal pair $\vec u_2,\vec u_3$ with $\vec u_{\mathrm r}\times\vec u_2=\vec u_3$ and $\vec u_2\times\vec u_3=\vec u_{\mathrm r}$. No array is written and no coordinate is used.</p>
+<p><strong>The line.</strong> $\varrho(A)=0$ on $\mathbb{R}e_t$, so the spectrum is $\{0\}$.</p>
+<p><strong>The plane.</strong> By the first identity, $\vec u_{\mathrm r}\tilde\Pi_+(\vec u_{\mathrm r})=-i\tilde\Pi_+(\vec u_{\mathrm r})$ and therefore</p>
+<p>$$
+L_{A(\vec u_{\mathrm r})}\tilde\Pi_+(\vec u_{\mathrm r})=\tfrac12\vec u_{\mathrm r}\tilde\Pi_+(\vec u_{\mathrm r})=-\tfrac i2\,\tilde\Pi_+(\vec u_{\mathrm r}),
+\qquad
+L_{A(\vec u_{\mathrm r})}\bigl(i\tilde\Pi_+(\vec u_{\mathrm r})\bigr)=-\tfrac i2\,i\tilde\Pi_+(\vec u_{\mathrm r}).
+$$</p>
+<p>So the operator is the complex scalar $-\tfrac i2$ on the whole plane, and on the two real dimensions its eigenvalues are the scalar and its conjugate, $-\tfrac i2$ and $+\tfrac i2$. The weights are $\pm\tfrac12$. The half angle follows in the same line: multiplying by the rotor gives the phase $e^{-i\theta_{\mathrm{axr}}/2}$, whose exponent at $\theta_{\mathrm{axr}}=2\pi$ is $-i\pi$.</p>
+<p><strong>The vector part.</strong> By the second identity, $\varrho_{\mathrm{ad}}(A(\vec u_{\mathrm r}))(\vec v)=\vec u_{\mathrm r}\times\vec v$. The cross product with a unit vector is the zero on the axis and a quarter turn on its orthogonal plane, so</p>
+<p>$$
+[\tfrac12\vec u_{\mathrm r},\vec u_2+i\vec u_3]=-i\,(\vec u_2+i\vec u_3),
+\qquad
+[\tfrac12\vec u_{\mathrm r},\vec u_2-i\vec u_3]=+i\,(\vec u_2-i\vec u_3),
+\qquad
+[\tfrac12\vec u_{\mathrm r},\vec u_{\mathrm r}]=0 .$$ The eigenvalues are $-i,+i,0$ on the complexification of $\mathfrak{k}$, so the weights are $\pm1,0$.</p>
+<p><strong>The full turns.</strong> Exponentiating the three operators at $\theta_{\mathrm{axr}}=2\pi$: on the line, $\varrho(2\pi A)=e_t$ acts as $+1$; on the plane, the phase is $e^{-i\pi}=-1$, so the operator is $-\mathrm{id}$ on the two real dimensions, a half turn; on the vector part, $\exp(2\pi\,\vec u_{\mathrm r}\times)$ is the identity, because the cross product is a quarter turn and four quarter turns are a full turn.</p>
+<p><strong>The invariance of the plane.</strong> For a rotor $\tilde u_{\mathrm r}$ of the same axis, the product $\tilde u_{\mathrm r}\tilde\Pi_+(\vec u_{\mathrm r})=e^{-i\theta_{\mathrm{axr}}/2}\tilde\Pi_+(\vec u_{\mathrm r})$ is a complex multiple of the idempotent, so the plane is preserved. For the transverse axis it is not: $\vec u_2\tilde\Pi_+(\vec u_{\mathrm r})$ is not a complex multiple of $\tilde\Pi_+(\vec u_{\mathrm r})$, since it has a component in the direction $\vec u_3\tilde\Pi_+$, and the two together span $S_+$.</p>
+<h3 id="a4-the-correction-on-the-conjugation">A.4 The Correction on the Conjugation</h3>
+<p>Two two-sided maps occur, and they differ. The <strong>inner automorphism</strong> is $\operatorname{Ad}_u(Y)=uYu^{-1}$, defined for every invertible element. The <strong>conjugation with the star</strong> is $\Psi_u(Y)=uYu^{*}$, defined for every element. They agree exactly on $G$:</p>
+<p>$$
+\Psi_u=\operatorname{Ad}_u\iff u^{*}=u^{-1}\iff uu^{*}=e_t .
+$$</p>
+<p><strong>Proposition (when the star conjugation is multiplicative).</strong> Let $u$ be invertible. Then $\Psi_u$ is multiplicative exactly when $u^{*}u$ is central, in which case $u^{*}u=\mu e_t$ for a nonzero complex $\mu$ and $\Psi_u=\mu\operatorname{Ad}_u$.</p>
+<p><em>Proof.</em> Compute $\Psi_u(X)\Psi_u(Y)=uX(u^{*}u)Yu^{*}$. If $u^{*}u=\mu e_t$ the middle factor is the scalar $\mu$, and the product is $\Psi_u(XY)$. If $u^{*}u$ is not central there is $Y$ with $[u^{*}u,Y]\ne0$, and then $\Psi_u(X)\Psi_u(Y)-\Psi_u(XY)=X[u^{*}u,Y]\ne0$ for $X=e_t$.</p>
+<p><strong>Remark (invertible is not enough).</strong> The hypothesis $N(u)\ne0$ does not imply $uu^{*}=e_t$. The central $u=2e_t$ has $N(u)=4$ and $\Psi_{2e_t}(Y)=4Y$: the product of two images is $16XY$, while the image of the product is $4XY$, so $\Psi_{2e_t}$ is not multiplicative. The same element is a perfectly good inner automorphism, since $\operatorname{Ad}_{2e_t}=\mathrm{id}$; the failure is in the star.</p>
+<p><strong>Remark (a non-central invertible element does not preserve the pure part).</strong> Write $u=\alpha e_t+\beta\vec u_{\mathrm r}$ at a unit real axis, with complex $\alpha,\beta$. Then $N(u)=\alpha^2+\beta^2$ and</p>
+<p>$$
+\operatorname{Ad}_u(\vec u_{\mathrm r})=\bigl(|\alpha|^2+|\beta|^2\bigr)\vec u_{\mathrm r}+\bigl(\alpha\bar\beta-\bar\alpha\beta\bigr)e_t .
+$$</p>
+<p>The scalar term is $2i\operatorname{Im}(\alpha\bar\beta)$, and it vanishes exactly when $\alpha\bar\beta$ is real, that is, when $uu^{*}$ is central. The element $u=2e_t+i\vec u_{\mathrm r}$ has $N(u)=3$, so it is invertible, and it sends $\vec u_{\mathrm r}$ to $5\vec u_{\mathrm r}-4ie_t$, which is not in $\mathfrak{k}$. Every statement about $\operatorname{Ad}_u$ in this article is made for $u\in G$, and that is the hypothesis which makes the conjugation preserve $\mathfrak{k}$ and the form.</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-carriers-of-the-biquaternion-algebra.html">The Carriers of the Biquaternion Algebra</a>, for the carrier, the type and the completeness of the list</li>
+<li><a href="the-spin-zero-centre-subspace.html">Introduction to the Spin-Zero Centre Subspace</a>, for the line and the centre taken on their own, with the proof that the fixed space is exactly the centre</li>
+<li><a href="the-spin-half-bispinor-spaces.html">Introduction to the Spin-Half Bispinor Spaces</a>, for the plane, the two spinor spaces and the infinite family of bispinor spaces</li>
+<li><a href="the-spin-one-anti-hermitian-subspace.html">Introduction to the Spin-One Anti-Hermitian Subspace</a>, for the vector part, the cross product operator and the split $\mathfrak{u}(2)=\mathfrak{u}(1)\oplus\mathfrak{su}(2)$</li>
+<li><a href="the-weights-of-a-carrier.html">The Weights of a Carrier</a>, for the weight, the weight string and the three spectra</li>
+<li><a href="the-spin-of-a-carrier.html">The Spin of a Carrier</a>, for the definition of the spin by dimension and its agreement with the largest weight</li>
+<li><a href="the-minimal-left-ideals-of-the-biquaternion-algebra.html">The Minimal Left Ideals of the Biquaternion Algebra</a>, for the idempotents, the minimality and the splitting of the algebra</li>
+<li><a href="the-peirce-basis-and-norm-regularity.html">The Peirce Basis and Norm Regularity</a>, for the Peirce basis and the four corners</li>
+<li><a href="the-regular-module.html">The Regular Module in the Biquaternion Algebra</a>, for the algebra read as a module over itself</li>
+<li><a href="subspaces-and-decompositions-of-the-biquaternion-algebra.html">Subspaces and Decompositions of the Biquaternion Algebra</a>, for the centre, the pure part and the two Hermitian halves</li>
+<li><a href="biquaternion-rotations-and-lorentz-transformations.html">Biquaternion Rotations and Lorentz Transformations</a>, for the rotor, the two-to-one cover and the comparison of the two two-sided actions</li>
+<li><a href="operator-and-calculus-conventions.html">Operator and Calculus Conventions</a>, for the glyphs $L_X$, $R_X$, $\operatorname{Ad}_u$ and $\operatorname{ad}_X$</li>
+<li><a href="matrix-representations-conventions.html">Matrix Representations Conventions</a>, for the rule that no array is written in a symbol, and the basis-free form of an operator</li>
+<li><a href="../articles_physics/why-axf-matrices-instead-of-pauli-and-gamma-matrices.html">Why AXF Matrices instead of Pauli and Gamma Matrices</a>, for the axis carried by an array and the axis-free display that does not carry one</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
