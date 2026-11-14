@@ -55,7 +55,7 @@ $$
 - The amplitude is scale times boost and the frame is central phase times rotor, so the four-factor word splits $2+2$ between the two polar factors.
 - Written through the rapidity, $H(\tilde Q)=\lvert N(\tilde Q)\rvert\cosh\Xi$ and the normalised state has Bloch vector of length $\tanh\Xi$.
 - The H-norm is not multiplicative and not submultiplicative: $H(\tilde Q_1\tilde Q_2)\le2H(\tilde Q_1)H(\tilde Q_2)$, and the constant $2$ is attained.
-- The H-norm is the only one of the four that adds across the two sectors, because the sectors are orthogonal for it and for no other.
+- The H-norm and the Krein form both add across the two sectors, because both are diagonal sums of squared moduli; the weight is the only additive one that is positive on both.
 
 ## The Pair
 
@@ -82,11 +82,11 @@ $$
 \tilde Q\tilde Q^{*}=\langle\tilde Q\rangle_{*}\,e_t+i\vec W .
 $$
 
-**Two numbers and one direction carry the amplitude.** The scale $a$ and the length $\lvert\vec W\rvert$ are fixed by the two algebraic norms, and the direction of $\vec W$ is the axis of the amplitude's vector part. The vector part has length at most $a$, because $a^{2}-\lvert\vec W\rvert^{2}/(4a^{2})=\lvert N(\tilde Q)\rvert$, and that inequality is the positivity of the amplitude written as one line.
+**Two numbers and one direction carry the amplitude.** The scale $a$ and the length $\lvert\vec W\rvert$ are fixed by the two algebraic norms, since $\lvert\vec W\rvert^{2}=H(\tilde Q)^{2}-\lvert N(\tilde Q)\rvert^{2}$, and the direction of $\vec W$ is the axis of the amplitude's vector part. The two numbers obey $a^{2}-\lvert\vec W\rvert^{2}/(4a^{2})=\lvert N(\tilde Q)\rvert$, which bounds the vector part by $\lvert\vec W\rvert\le2a^{2}$ and turns the inequality into an equality exactly on the null cone.
 
 **The amplitude lies in the informational sector.** It is Hermitian, so it is an element of $\mathbb{B}_{\Psi}$, whatever sector $\tilde Q$ belonged to. This is the first structural fact of the entry: the polar decomposition is not a split of the element into two parts of the same kind. It is a split into a Hermitian part and a residual part, and the Hermitian part is the one the algebra's positivity is defined on.
 
-**Uniqueness needs the two ideals and would not hold without them.** The pair is characterised by four conditions: $\tilde Q_H$ lies in the cone, $\tilde Q=\tilde Q_H\tilde Q_0$, $\tilde Q_0\tilde Q_0^{*}=\tilde\Pi_{\mathrm f}(\tilde Q)$, and $\tilde Q_H\mathbb{B}=\tilde Q\mathbb{B}$. The two counterexamples of the mathematical article are worth carrying, because each fails exactly one condition and both are built on the same null element $\tilde\Pi_{\vec u}$. With $\tilde Q_H'=e_t$ and $\tilde Q_0'=\tilde\Pi_{\vec u}$ the product is right but the amplitude generates the whole algebra rather than the line. With $\tilde Q_H'=\tilde\Pi_{\vec u}$ and $\tilde Q_0'=e_t$ the product is right and the amplitudes agree, but the frame is the identity and its final projection is not the line. The first counterexample fixes the amplitude by its ideal; the second fixes the frame by its projection.
+**Uniqueness needs the two ideals and would not hold without them.** The pair is characterised by four conditions: $\tilde Q_H$ lies in the cone, $\tilde Q=\tilde Q_H\tilde Q_0$, $\tilde Q_0\tilde Q_0^{*}=\tilde\Pi_{\mathrm f}(\tilde Q)$, and $\tilde Q_H\mathbb{B}=\tilde Q\mathbb{B}$. The two counterexamples of the mathematical article are worth carrying, because each fails exactly one condition and both are built on the same null element $\tilde\Pi_{\vec u}$. With $\tilde Q_H'=e_t$ and $\tilde Q_0'=\tilde\Pi_{\vec u}$ the product is right but the amplitude generates the whole algebra rather than the minimal left ideal that the element generates. With $\tilde Q_H'=\tilde\Pi_{\vec u}$ and $\tilde Q_0'=e_t$ the product is right and the amplitudes agree, but the frame is the identity and its final projection is not the line. The first counterexample fixes the amplitude by its ideal; the second fixes the frame by its projection.
 
 **The two factors are continuous in different ways, and the difference is the physics.** The amplitude is continuous on the whole algebra. The frame is not: along a family that approaches the cone the frame tends to the identity, while its value on the cone is the rank-one projection onto the line. At the origin the frame falls to $0$ while its limit along $\tilde Q=\epsilon e_t$ is $e_t$.
 
@@ -147,7 +147,7 @@ $$
 
 **The pattern is $H(\tilde Q_0)=\tfrac12\operatorname{rank}\tilde Q_0$, because the trace of a projection is its rank.** In the algebra's convention the trace of the unit is $2$ and the trace of a minimal projection is $1$, so the H-norm of the frame is one half of an integer. This is the sharpest contrast with the amplitude: the amplitude's H-norm is an arbitrary positive real, and the frame's is $0$, $\tfrac12$ or $1$.
 
-**The frame is where the two ideals live, and the amplitude is where the size lives.** The statement is a division of labour and not a metaphor: $\tilde Q_0$ determines and is determined by the pair of ideals, given the second factor's phase; and $\tilde Q_H$ determines and is determined by $\tilde Q\tilde Q^{*}$.
+**The frame is where the two ideals live, and the amplitude is where the size lives.** The statement is a division of labour and not a metaphor. The frame determines the pair of ideals, and the pair determines the frame once the action between the two subspaces is fixed; the amplitude determines and is determined by $\tilde Q\tilde Q^{*}$.
 
 **A frame is not a phase.** A phase is an element of the centre, and the centre is one complex dimension. The frame is an element of $U(2)$, which is four real dimensions, and it does not commute with the amplitude in general. The distinction is the reason the decomposition has content: if the frame were a phase, the pair would be a rescaling and a rotation of the scalar, and no information about orientation would be carried.
 
@@ -389,15 +389,15 @@ so that $H(\tilde Q_1)=4$, $H(\tilde Q_2)=2$, and $\tilde Q_1\tilde Q_2=(-2+2i)\
 
 **The weight is the only column that is a measure in the strict sense.** The pairing is complex, the interval is a modulus, and the volume is signed. A polar decomposition needs a positive factor, and only one of the four supplies positivity.
 
-**The weight is also the only one that adds across the two sectors.** The material sector is spanned by the four real axes $ie_t,\vec e_x,\vec e_y,\vec e_z$ and the informational sector by the four axes $e_t,i\vec e_x,i\vec e_y,i\vec e_z$, so the two share no coordinate axis and the weight of a sum is the sum of the weights,
+**The weight is one of the two measures that add across the two sectors.** The material sector is spanned by the four real axes $ie_t,\vec e_x,\vec e_y,\vec e_z$ and the informational sector by the four axes $e_t,i\vec e_x,i\vec e_y,i\vec e_z$, so the two share no coordinate axis, and any diagonal sum of squared moduli splits cleanly. The weight is such a sum, and the volume is another:
 
 $$
 H\bigl(\tilde R_{\Phi}+\tilde H_{\Psi}\bigr)=H\bigl(\tilde R_{\Phi}\bigr)+H\bigl(\tilde H_{\Psi}\bigr),
 $$
 
-while the interval of a sum carries the cross terms and the volume carries them with signs. A check on a hundred random pairs of one element from each sector confirmed the additive identity to ten digits.
+while the interval and the pairing carry the cross terms, because both are built from products of distinct coefficients rather than from moduli. A check on a hundred random pairs of one element from each sector confirmed the additive identity for the weight and for the volume, and a failure of it for the interval and the pairing in every case.
 
-**Additivity is the property a probability needs and the property a mass cannot have.** A measure that must add over independent alternatives has to be positive and diagonal in the coordinate splitting. The weight is the only candidate, and the polar decomposition is the operation that exposes its argument.
+**Additivity is necessary for a probability and is not sufficient.** A measure that must add over independent alternatives has to be diagonal in the coordinate splitting, and two of the four are. Of the two, only the weight is positive on both sectors; the volume is signed, so it adds and still cannot be a probability. Positivity and additivity together single out one letter, and the polar decomposition is the operation that exposes its argument.
 
 **The weight is the topological norm, and the other three are not.** The previous entry established that only one of the four is positive definite and that its square root is the norm of the topology. The polar decomposition is the place where that fact becomes structural: it is the only measure that can sit inside a positive square root and come out unchanged.
 
@@ -463,15 +463,15 @@ while the interval of a sum carries the cross terms and the volume carries them 
 
 **The boundary.** The two modes are the two spectral values of $\tilde Q\tilde Q^{*}$. They are a decomposition of one element's amplitude and not a claim that the element is a pair of particles.
 
-### I.8.g — The Weight Is the One That Adds
+### I.8.g — The Weight Is the One That Adds and Stays Positive
 
-**Read:** the two sectors share no real coordinate axis, and $H(\tilde R_{\Phi}+\tilde H_{\Psi})=H(\tilde R_{\Phi})+H(\tilde H_{\Psi})$ while the other three forms carry cross terms.
+**Read:** the two sectors share no real coordinate axis, so the weight and the volume both add across the split, while the interval and the pairing carry cross terms.
 
-**A measure that must add over independent alternatives has to be positive and diagonal.** The weight is both by construction: it is a sum of squared moduli over the eight real axes, and the two sectors occupy four axes each.
+**Additivity is cheap and is a property of any diagonal sum of moduli.** The weight is a sum of squared moduli with plus signs; the volume is the same sum with the signs of the quaternion conjugation. Both see the two sectors as four disjoint axes each and both split without a remainder.
 
-**The physical interpretation is that the weight is the measure a probability needs.** A probability that did not add over exclusive alternatives would not be a probability. The interval cannot play this role, because a difference of squares carries the cross terms and can fall when one term rises.
+**The physical interpretation is that a probability needs additivity and positivity, and only one of the four supplies both.** The volume adds and is signed, so it is a bookkeeping device for a conserved quantity and not a probability. The interval and the pairing are not additive at all, because they are built from products and therefore from interference terms.
 
-**The boundary.** Additivity is a statement about the coordinate splitting and not about composition. The weight does not add over a product, and the next interpretation supplies the counterexample.
+**The boundary.** Additivity is a statement about the coordinate splitting and not about composition. Neither additive measure adds over a product, and the failure of the weight on composition is the subject of the interpretation after next.
 
 ### I.8.h — A Frame Is a Rank, Not a Phase
 
