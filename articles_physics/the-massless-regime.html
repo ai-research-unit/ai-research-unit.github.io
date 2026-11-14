@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Massless Regime — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-massless-regime"><strong>The Massless Regime</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>This entry reads the fourth of the five parts of the tenth section: the stratum on which the spectral splitting survives and the norm does not.</strong></p>
+<p>$$
+\Sigma_{01}=\{N=0,\ B^{2}\neq0\},\qquad N=Q_t^{2}+B^{2},\qquad B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}.
+$$</p>
+<p><strong>The two predicates are the ones the partition entry named, and here they give opposite answers.</strong> The norm fails: the element is a zero divisor, it has no inverse, and it lies on the wall of the unit group. The vector square holds: the two eigenvalues are distinct, the eigenbasis exists, and the Peirce decomposition attached to the element is unique.</p>
+<p><strong>The first claim is that the failure is a single failure.</strong> Every element of the stratum is a non-zero complex multiple of a primitive idempotent, $\tilde Q=\kappa\tilde\Pi$ with $\kappa=2Q_t\neq0$; every spectral description survives because the two eigenvalues $\kappa$ and $0$ are distinct; and every description that needs a magnitude fails, because the magnitude is zero. One predicate is false and the other is true, and the descriptions divide exactly along that line.</p>
+<p><strong>The second claim is that when the norm is gone the trace normalises.</strong> On a null line no modulus is available, so the usual normalisation $\tilde Q/\sqrt N$ has no value. It is replaced by $\tilde\Pi=\tilde Q/(2Q_t)$, and the replacement is canonical: each null line that is not a nilpotent line contains exactly one idempotent. So the stratum carries a section of its own projectivisation, and the section is not a choice.</p>
+<p><strong>The third claim is that the direction is the whole frame content.</strong> The idempotent is the direction, the coefficient is a complex scale, and the stratum is a $\mathbb{C}^{\times}$-bundle over the null quadric with the nilpotent conic removed. On the material slice the base is the celestial sphere and the fibre is the energy. There is no third datum, and nothing inside a direction is distinguished.</p>
+<p><strong>The fourth claim is that both multiplications are scaled projections.</strong> $L_{\tilde Q}^{2}=\kappa L_{\tilde Q}$ and $R_{\tilde Q}^{2}=\kappa R_{\tilde Q}$: the element is rank one as an element and rank two as an operator. Their kernels are two different planes that meet in one line, which is the frozen mode. The element annihilates information, and the two one-sided readings annihilate different information.</p>
+<p><strong>The fifth claim is that the material share is the light cone, and that mass is what a sum of two rays costs.</strong> The material part of the stratum is the light cone with its apex removed, of real dimension three. The sum of two null momenta is massive unless they are parallel, and the invariant mass is a function of the angle between them: $m^{2}c^{4}=2E_1E_2(1-\cos\theta)$. Mass is not carried by either addend; it is carried by the failure of the addition to stay on the cone.</p>
+<p><strong>The sixth claim is that this stratum is the exact complement of the previous one.</strong> There the modulus survives and the eigenbasis dies; here the eigenbasis survives and the modulus dies. The two mixed strata are the two ways for a description of an element to fail, and each fails where the other holds.</p>
+<p><strong>The interpretation labels continue the section's sequence.</strong> The partition entry carries I.10.a to I.10.l, the mass-in-motion entry I.10.m to I.10.x, and the rest-frame entry I.10.y to I.10.ah. This entry carries I.10.ai to I.10.ar.</p>
+<p><strong>Nothing below is a model of a photon.</strong> The stratum is cut on the algebra by two equations. Every name is a reading of the part of it that the material slice reaches, and §<em>The Limits</em> states what the readings do not carry.</p>
+<h2 id="the-source-table">The Source Table</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Mathematical Content</th>
+<th>Source Mathematical Article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the definition, the five descriptions, the geometry, the idempotent, the annihilators, the Peirce data, the products and the two cones</td>
+<td><a href="../articles_maths/the-n-degenerate-spectrally-regular-sector.html">The N-Degenerate, Spectrally Regular Sector</a></td>
+</tr>
+<tr>
+<td>the eigenbasis, the normalisation, the Peirce basis and the spinor reading on the whole spectrally regular part</td>
+<td><a href="../articles_maths/the-eigenbasis-of-a-spectrally-regular-biquaternion.html">The Eigenbasis of a Spectrally Regular Biquaternion</a></td>
+</tr>
+<tr>
+<td>the idempotents, the minimal left ideals and the projective structure</td>
+<td><a href="../articles_maths/the-polarized-module-of-the-biquaternion-algebra.html">The Polarized Module of the Biquaternion Algebra</a></td>
+</tr>
+<tr>
+<td>the null quadric, its rulings and its projective geometry</td>
+<td><a href="../articles_maths/the-null-quadric-and-its-projective-geometry.html">The Null Quadric and Its Projective Geometry</a></td>
+</tr>
+<tr>
+<td>the characteristic polynomial, the two eigenvalues and the discriminant</td>
+<td><a href="../articles_maths/the-spectrum.html">The Spectrum</a></td>
+</tr>
+<tr>
+<td>the two predicates, the independence of the cones and the chain of invariants</td>
+<td><a href="../articles_maths/relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html">Relations between the N Norm and Spectral Regularity and Degeneracy</a></td>
+</tr>
+<tr>
+<td>the corner rule, the idempotents and the off-diagonal nilpotents</td>
+<td><a href="../articles_maths/the-peirce-decomposition-of-the-biquaternion-algebra.html">The Peirce Decomposition of the Biquaternion Algebra</a></td>
+</tr>
+<tr>
+<td>the modulus and the place where the polar word has no value</td>
+<td><a href="../articles_maths/the-polar-decomposition-of-an-n-degenerate-biquaternion.html">The Polar Decomposition of an N-Degenerate Biquaternion</a></td>
+</tr>
+<tr>
+<td>the exponential, the root supplied by the element and the degenerate boundary</td>
+<td><a href="../articles_maths/biquaternion-elementary-functions.html">Biquaternion Elementary Functions</a></td>
+</tr>
+<tr>
+<td>the rank of left and right multiplication, the annihilators and the two-sided operator</td>
+<td><a href="../articles_maths/the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html">The Four General Products and Their Relations over the Biquaternion Algebra</a></td>
+</tr>
+<tr>
+<td>the multiplicative norm, the unit group and the null cone</td>
+<td><a href="../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html">N-Regularity and N-Degeneracy in the Biquaternion Algebra</a></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The first row owns everything structural.</strong> The remaining rows supply what the entry uses and does not build: the eigenbasis on the spectrally regular part, the projective geometry of the null quadric, the idempotent calculus of the module, and the exponential with its degenerate boundary.</p>
+<h2 id="the-results-in-brief">The Results in Brief</h2>
+<h3 id="the-sector">The Sector</h3>
+<p><strong>The stratum is the null cone minus the spectral cone.</strong></p>
+<p>$$
+\Sigma_{01}=\mathcal N\setminus\mathcal S,\qquad
+\mathcal N=\{N=0\},\qquad
+\mathcal S=\{B^{2}=0\},\qquad
+\mathcal N=\Sigma_{01}\sqcup\Sigma_{00}.
+$$</p>
+<p><strong>Five descriptions coincide.</strong> An element of the stratum is: a null element with non-zero vector square; a null element with non-zero scalar part; an element with $\tilde Q^{2}=2Q_t\tilde Q$ and $Q_t\neq0$; a non-zero complex multiple of a primitive idempotent; and an element whose spectrum is $\{\kappa,0\}$ with $\kappa\neq0$.</p>
+<p><strong>The dimension is three complex and six real</strong>, the same as the spectral stratum and one less than the open stratum in each count. The stratum is Zariski-open and dense in the null cone, smooth, connected, and a cone with its apex removed.</p>
+<p><strong>Over sixty random null elements</strong>, built as $Q_t(e_t+\vec\zeta)$ with $\vec\zeta^{2}=e_t$, the norm vanished to $5.2\times10^{-14}$ and the idempotent $\tilde\Pi=\tilde Q/(2Q_t)$ satisfied $\tilde\Pi^{2}=\tilde\Pi$ to $2.0\times10^{-15}$.</p>
+<h3 id="the-idempotent">The Idempotent</h3>
+<p><strong>The element is a scale times a primitive idempotent, and both factors are determined by the element.</strong></p>
+<p>$$
+\tilde Q=\kappa\,\tilde\Pi,\qquad
+\kappa=2Q_t,\qquad
+\tilde\Pi=\frac{\tilde Q}{2Q_t}=\frac{1}{2}\left(e_t+\vec\zeta\right),\qquad
+\vec\zeta=\frac{\vec Q}{Q_t},\qquad
+\vec\zeta^{2}=e_t .
+$$</p>
+<p><strong>The idempotent has trace one half in the scalar part and norm zero.</strong></p>
+<p>$$
+\operatorname{Sc}\tilde\Pi=\tfrac12,\qquad
+N(\tilde\Pi)=0,\qquad
+B^{2}(\tilde\Pi)=-\tfrac14 .
+$$</p>
+<p><strong>Each null line contains exactly one idempotent.</strong> On the line $\mathbb{C}\tilde\Pi$ the equation $(\lambda\tilde\Pi)^{2}=\lambda\tilde\Pi$ reduces to $\lambda^{2}=\lambda$, whose solutions are $0$ and $1$. Computed: $\lambda=2$ misses idempotence by $1.55$ and $\lambda=i$ by $1.10$.</p>
+<h3 id="the-description-that-survives">The Description That Survives</h3>
+<p><strong>The spectrum is $\{\kappa,0\}$ with distinct roots, so every spectral object exists and is unique.</strong></p>
+<p>$$
+p_{\tilde Q}(X)=X(X-\kappa),\qquad
+e_{+}=\tilde\Pi,\qquad
+e_{-}=e_t-\tilde\Pi,\qquad
+\tilde Q=\kappa\,e_{+}+0\cdot e_{-}.
+$$</p>
+<p><strong>The two spectral idempotents are both in the stratum</strong>, and they are orthogonal. So the identity decomposes into two null idempotents: $e_t=\tilde\Pi+\tilde\Pi'$ with $N=1$, $N(\tilde\Pi)=N(\tilde\Pi')=0$.</p>
+<p><strong>The powers are linear in the element.</strong></p>
+<p>$$
+\tilde Q^{n}=\kappa^{\,n-1}\tilde Q,\qquad n\ge1,
+$$</p>
+<p>checked at $\kappa^{6}$ for $n=7$ to $1.9\times10^{-10}$ and at $n=2$ to $8.9\times10^{-15}$.</p>
+<h3 id="the-description-that-fails">The Description That Fails</h3>
+<p><strong>The modulus is zero and the unit factor diverges.</strong></p>
+<p>$$
+\Rho=\sqrt{N}=0,\qquad
+\frac{\tilde Q}{\Rho}\ \text{undefined},\qquad
+N(\tilde Q^{-1})\ \text{undefined}.
+$$</p>
+<p><strong>The element has no inverse and no logarithm.</strong></p>
+<p>$$
+N(\tilde Q\tilde X)=0\ \text{for every }\tilde X,\qquad
+N\bigl(e^{X}\bigr)=e^{2X_t}\neq0\ \text{for every }X .
+$$</p>
+<p>The second identity was checked over thirty random $X$ to $3.4\times10^{-13}$: the image of the exponential misses the null cone entirely, so no logarithm reaches the stratum.</p>
+<p><strong>The flow leaves the cone and never returns.</strong></p>
+<p>$$
+e^{\theta\tilde Q}=e^{\theta Q_t}\left(\cos(\theta B)e_t+\sin(\theta B)\,\vec U\right),\qquad
+N\bigl(e^{\theta\tilde Q}\bigr)=e^{2\theta Q_t}\neq0 ,
+$$</p>
+<p>with $\vec U=\vec Q/B$ and $\vec U^{2}=e_t$. At $\theta=0.3$, $1$, $2$ the gap between the computed norm and $e^{2\theta Q_t}$ was $2.5\times10^{-16}$, $7.1\times10^{-16}$ and $7.2\times10^{-15}$.</p>
+<h3 id="the-operators-and-the-annihilators">The Operators and the Annihilators</h3>
+<p><strong>Both multiplications are $\kappa$ times a projection.</strong></p>
+<p>$$
+L_{\tilde Q}^{2}=\kappa L_{\tilde Q},\qquad
+R_{\tilde Q}^{2}=\kappa R_{\tilde Q},\qquad
+\operatorname{rank}L_{\tilde Q}=\operatorname{rank}R_{\tilde Q}=2,\qquad
+\dim\ker L_{\tilde Q}=\dim\ker R_{\tilde Q}=2 .
+$$</p>
+<p><strong>The two kernels are different planes that meet in one line.</strong></p>
+<p>$$
+\ker L_{\tilde Q}=\mathbb{C}\vec\Upsilon_{+}\oplus\mathbb{C}\tilde\Pi',\qquad
+\ker R_{\tilde Q}=\mathbb{C}\vec\Upsilon_{-}\oplus\mathbb{C}\tilde\Pi',\qquad
+\ker L_{\tilde Q}\cap\ker R_{\tilde Q}=\mathbb{C}\tilde\Pi' .
+$$</p>
+<p>Computed: both ranks are two, the sum of the two kernels is three-dimensional, and the intersection is one-dimensional.</p>
+<p><strong>In the Peirce basis the two operators are diagonal and different.</strong></p>
+<p>$$
+L_{\tilde Q}/\kappa=\operatorname{diag}(1,1,0,0),\qquad
+R_{\tilde Q}/\kappa=\operatorname{diag}(1,0,1,0).
+$$</p>
+<h3 id="the-material-part">The Material Part</h3>
+<p><strong>On the material sector the norm is one real equation and the stratum is the light cone.</strong></p>
+<p>$$
+\tilde P_\Phi=i\frac{E}{c}e_t+\vec p,\qquad
+N=-\frac{E^{2}}{c^{2}}+\lvert\vec p\rvert^{2},\qquad
+B^{2}=\lvert\vec p\rvert^{2},
+$$</p>
+<p>so</p>
+<p>$$
+\Sigma_{01}\cap\mathbb{B}_{\Phi}
+=\left\{i\frac{E}{c}\left(e_t+\vec n\right)\ :\ E\neq0,\ \lvert\vec n\rvert=1\right\},
+$$</p>
+<p>a cone of real dimension three inside a stratum of real dimension six. The idempotent is $\tilde\Pi=\tfrac12(e_t-i\vec n)$, and it is Hermitian.</p>
+<p><strong>The sum of two null momenta is massive unless they are parallel.</strong></p>
+<p>$$
+N(\tilde P_1+\tilde P_2)=-2E_1E_2\left(1-\cos\theta\right),
+\qquad
+m^{2}c^{4}=2E_1E_2\left(1-\cos\theta\right),
+$$</p>
+<p>checked over one hundred random pairs to $7.1\times10^{-15}$.</p>
+<h2 id="the-sector_1">The Sector</h2>
+<h3 id="two-predicates-opposite-answers">Two Predicates, Opposite Answers</h3>
+<p><strong>On the null cone the first predicate decides the second.</strong></p>
+<p>$$
+N=0\ \Longrightarrow\ B^{2}=-Q_t^{2},
+\qquad
+\text{so on }\mathcal N:\quad B^{2}\neq0\iff Q_t\neq0 .
+$$</p>
+<p><strong>Norm-degeneracy reduces to a condition on the scalar part, and the scalar part is what the spectral description needs.</strong> The eigenvalue sum is $2Q_t$ and the eigenvalue product is $N=0$; if $Q_t$ were zero both would vanish and the spectrum would be $\{0\}$. So one number does both jobs: the non-zero scalar part is what keeps the two eigenvalues apart and what puts the product on the cone.</p>
+<p><strong>The discriminant is non-zero on the stratum.</strong></p>
+<p>$$
+\Delta=4Q_t^{2}-4N=4Q_t^{2}\neq0 .
+$$</p>
+<p>So the stratum is the locus of elements with vanishing norm and non-vanishing discriminant. In the $2\times2$ matrix images the sentence reads: the determinant is zero and the discriminant is not. That is the exact opposite of the previous stratum, where the determinant was non-zero and the discriminant was not.</p>
+<p><strong>The two gradients are independent.</strong></p>
+<p>$$
+\nabla N=2(Q_t,\vec Q),\qquad \nabla B^{2}=2(0,\vec Q),
+$$</p>
+<p>and they are proportional only if $Q_t=0$ or $\vec Q=0$, neither of which holds on the stratum. So the null cone and the spectral cone cross transversally along the whole stratum, and their intersection — the doubly degenerate stratum — is nowhere dense in the null cone there.</p>
+<h3 id="five-descriptions-of-one-condition">Five Descriptions of One Condition</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>description</th>
+<th>statement</th>
+<th>what it fixes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>predicate</td>
+<td>$N=0$, $B^{2}\neq0$</td>
+<td>the two invariants</td>
+</tr>
+<tr>
+<td>cone difference</td>
+<td>$\mathcal N\setminus\mathcal S$</td>
+<td>the position among the strata</td>
+</tr>
+<tr>
+<td>scalar part</td>
+<td>$Q_t\neq0$ on $\mathcal N$</td>
+<td>the eigenvalue sum, half of it</td>
+</tr>
+<tr>
+<td>idempotent form</td>
+<td>$\kappa\tilde\Pi$, $\tilde\Pi^{2}=\tilde\Pi$, $\tilde\Pi\neq0,e_t$</td>
+<td>the direction and the scale</td>
+</tr>
+<tr>
+<td>spectrum</td>
+<td>$\{\kappa,0\}$, $\kappa\neq0$</td>
+<td>the spectral type</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The descriptions are equivalent and each names a different datum.</strong> The pair $(\kappa,\tilde\Pi)$ is determined by the element, and the element by the pair, so the correspondence is a bijection and not a parametrisation with a kernel. That matters for what follows: there is no gauge freedom in the decomposition of a null element, and the only freedom is the freedom to describe the same element twice.</p>
+<p><strong>The second description is the one that survives every later test.</strong> An element of the stratum is a scaled projector, and the projection is primitive: it is not a sum of two non-zero orthogonal idempotents. Everything in §<em>The Description That Survives</em> is a consequence of primitivity, and everything in §<em>The Description That Fails</em> is a consequence of the scale being a scale of a null object.</p>
+<h3 id="the-geometry-a-bundle-over-the-directions">The Geometry: a Bundle Over the Directions</h3>
+<p><strong>The stratum is the total space of a punctured-line bundle.</strong></p>
+<p>$$
+\mathbb{C}^{\times}\times\{\text{primitive idempotents}\}\longrightarrow\Sigma_{01},
+\qquad
+(\kappa,\tilde\Pi)\mapsto\kappa\tilde\Pi .
+$$</p>
+<p><strong>The base is a smooth affine quadric with two points removed.</strong> A primitive idempotent is $\tilde\Pi=\tfrac12(e_t+\vec Z)$ with $\vec Z^{2}=e_t$, a root of $+1$; a root that is a pure vector has $\vec Z=\vec\zeta\in\mathbb{C}^{3}$ with</p>
+<p>$$
+\zeta_x^{2}+\zeta_y^{2}+\zeta_z^{2}=-1,
+$$</p>
+<p>which is an affine quadric of complex dimension two. The two roots that are not pure vectors are the central ones $\vec Z=\pm e_t$, which give $\tilde\Pi=e_t$ and $\tilde\Pi=0$; they are the two points removed. After removing them and multiplying by $\mathbb{C}^{\times}$ the count is $2+1=3$ complex and $4+2=6$ real.</p>
+<p><strong>The base is the complexified celestial sphere.</strong> The Hermitian idempotents are $\vec\zeta=i\vec n$ with $\vec n\in S^{2}$, and they form a two-sphere inside the quadric, since $(i\vec n)^{2}=e_t$ for every real unit $\vec n$. So the real directions sit in the complex directions as the real slice of the quadric, and the rest of the quadric is the complexification.</p>
+<p><strong>The bundle has a canonical section.</strong> The map</p>
+<p>$$
+[\tilde Q]\longmapsto\frac{\tilde Q}{2Q_t}
+$$</p>
+<p>sends a null line to its unique idempotent. It is a section because each line contains exactly one idempotent, and it is canonical because $Q_t$ is determined by the element and not chosen. <strong>This is the geometric content of §<em>Normalise by the Trace</em>: the stratum normalises itself by its own trace, because no modulus is available.</strong></p>
+<h3 id="the-cone-its-closure-and-its-boundary">The Cone, Its Closure and Its Boundary</h3>
+<p><strong>The stratum is a cone with its apex removed, and its closure is the whole null cone.</strong></p>
+<p>$$
+\overline{\Sigma_{01}}=\mathcal N,\qquad
+\mathcal N\setminus\Sigma_{01}=\Sigma_{00}=\{\tilde Q^{2}=0\}.
+$$</p>
+<p><strong>The removed part is the set of nilpotent directions and the apex.</strong> At those points $Q_t=0$, the idempotent $\tilde Q/(2Q_t)$ is undefined, and the direction is not a projector but a null flag. So the stratum's boundary inside the cone is exactly the locus on which its own parametrisation fails, which is not true of the previous stratum and is the reason the two mixed strata behave so differently.</p>
+<p><strong>The stratum is connected and it is homogeneous.</strong> It is a single orbit of $\mathbb{C}^{\times}\times\mathbb{B}^{\times}$ acting by scaling and inner automorphisms, because the unit group acts transitively on the primitive idempotents. So no element of the stratum is distinguished from any other except by the value of $\kappa$, and the value of $\kappa$ is fixed by the element.</p>
+<p><strong>The stratum lies on the boundary of the unit group.</strong> A path in $\Sigma_{11}$ that reaches $N=0$ lands in $\Sigma_{01}$ unless it also reaches $B=0$, in which case it lands in $\Sigma_{00}$. So the stratum is what a massive element becomes when its mass goes to zero without its momentum going to zero, and the doubly degenerate stratum is what it becomes when both go.</p>
+<h2 id="the-idempotent_1">The Idempotent</h2>
+<h3 id="the-scale-and-the-direction">The Scale and the Direction</h3>
+<p><strong>The element factors, and the factorisation is unique.</strong></p>
+<p>$$
+\tilde Q=\kappa\tilde\Pi,\qquad
+\kappa=2Q_t,\qquad
+\tilde\Pi=\frac{\tilde Q}{\kappa},\qquad
+\tilde\Pi^{2}=\tilde\Pi .
+$$</p>
+<p><strong>The proof is one line and it is worth stating because it uses the nullity.</strong> The identity $\tilde Q^{2}=(Q_t^{2}-B^{2})e_t+2Q_t\vec Q$ becomes $\tilde Q^{2}=2Q_t^{2}e_t+2Q_t\vec Q=2Q_t\tilde Q$ after substituting $B^{2}=-Q_t^{2}$; dividing by $4Q_t^{2}$ gives $\tilde\Pi^{2}=\tilde\Pi$.</p>
+<p><strong>The direction is a root of $+1$ and not an isotropic vector.</strong> The vector part of a null element is not isotropic: $\vec\zeta=\vec Q/Q_t$ satisfies $\vec\zeta^{2}=e_t$, which in components is $\zeta_x^{2}+\zeta_y^{2}+\zeta_z^{2}=-1$, so its vector square is $B^{2}(\vec\zeta)=-1$ and not zero. This is the opposite of the previous stratum, where the vector part was isotropic and the scalar part was arbitrary. The two mixed strata divide the null directions of the algebra between them: one carries the isotropic vectors, the other the roots of $+1$.</p>
+<p><strong>The idempotent is a projector of trace one half and norm zero.</strong></p>
+<p>$$
+\operatorname{Sc}\tilde\Pi=\tfrac12,\qquad
+N(\tilde\Pi)=0,\qquad
+B^{2}(\tilde\Pi)=-\tfrac14,\qquad
+\operatorname{Sc}\tilde\Pi'=\tfrac12,\qquad
+N(\tilde\Pi')=0 .
+$$</p>
+<p><strong>The two idempotents of the pair are both null, and their sum is a unit.</strong></p>
+<p>$$
+e_t=\tilde\Pi+\tilde\Pi',\qquad
+N(e_t)=1,\qquad
+N(\tilde\Pi)=N(\tilde\Pi')=0,\qquad
+\tilde\Pi\tilde\Pi'=0 .
+$$</p>
+<p>So the identity of the algebra is the sum of two null idempotents, and neither summand is degenerate in the spectral sense. The null cone contains the pieces of a unit and not the unit; that is the whole difference between this stratum and the open one.</p>
+<h3 id="trace-one-and-norm-zero">Trace One and Norm Zero</h3>
+<p><strong>The two invariants measure different things, and the idempotent separates them.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>quantity</th>
+<th>value on $\tilde\Pi$</th>
+<th>what it measures</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{Sc}\tilde\Pi$</td>
+<td>$\tfrac12$</td>
+<td>the weight, half the trace in the matrix model</td>
+</tr>
+<tr>
+<td>$N(\tilde\Pi)$</td>
+<td>$0$</td>
+<td>the determinant, the multiplicative invariant</td>
+</tr>
+<tr>
+<td>$B^{2}(\tilde\Pi)$</td>
+<td>$-\tfrac14$</td>
+<td>the discriminant, the separation of the modes</td>
+</tr>
+<tr>
+<td>$\operatorname{rank}\tilde\Pi$</td>
+<td>$1$</td>
+<td>the primitivity, in the matrix model</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>In the matrix model the idempotent is a rank-one projector with trace one.</strong> Its image is one-dimensional, its kernel is three-dimensional, and its determinant vanishes. So the four numbers are one number and one rank: the projector is normalised by its trace and annihilated by its determinant.</p>
+<p><strong>This is the table to consult whenever a reader wants one of the invariants to be a probability.</strong> The trace of the idempotent is one, so the idempotent is a state in the sense of having unit weight; its norm is zero, so the norm is not that weight. Both statements are about the same element, and they are not in conflict: the norm is a multiplicative invariant of the algebra and the trace is an additive one.</p>
+<h3 id="normalise-by-the-trace">Normalise by the Trace</h3>
+<p><strong>The usual normalisation needs a modulus, and the modulus is zero.</strong></p>
+<p>$$
+\tilde Q\longmapsto\frac{\tilde Q}{\sqrt N}\quad\text{fails},\qquad
+\tilde Q\longmapsto\frac{\tilde Q}{2Q_t}\quad\text{succeeds}.
+$$</p>
+<p><strong>The replacement is not a convention, because it is unique.</strong> On the line $\mathbb{C}\tilde\Pi$ the idempotence condition is $\lambda^{2}=\lambda$, so the only idempotents on the line are $0$ and $\tilde\Pi$ itself; the value $\lambda=1$ is forced, and the induced map on the projectivisation is a section. Computed: $\lambda=2$ misses idempotence by $1.55$ and $\lambda=i$ by $1.10$, so neither a real rescaling nor a phase rescaling preserves the normalisation.</p>
+<p><strong>So the phase of the coefficient is a datum and not a gauge.</strong> A reader who is used to scaling a spinor by a phase will expect the ray to be indifferent to it. The algebra says the opposite: the ray is a projective class, and the idempotent is the canonical representative of the class, so any change of the representative is a change of the element and not a change of description.</p>
+<p><strong>The same statement read forwards is that null lines split into two kinds.</strong> A line with $Q_t\neq0$ contains one idempotent; a line with $Q_t=0$ contains none, because every point on it is a nilpotent. So the base of the bundle is the set of lines that carry a normalisation, and the removed conic is the set that does not.</p>
+<h3 id="what-the-direction-does-not-fix">What the Direction Does Not Fix</h3>
+<p><strong>The direction fixes the spectral data and the scale fixes the eigenvalue.</strong></p>
+<p>$$
+\tilde\Pi\ \text{fixed}\ \Longrightarrow\ e_\pm,\ \vec\zeta,\ \text{the Peirce pair, the kernels fixed};\qquad
+\kappa\ \text{fixed}\ \Longrightarrow\ \text{the eigenvalue fixed}.
+$$</p>
+<p><strong>The two factors vary independently.</strong> Two elements with the same direction and different scales are different elements with the same idempotent, the same Peirce pair and the same annihilators; two elements with the same scale and different directions are different elements with the same spectrum and different everything else. So the stratum's data split into a projective part and a scale part with no interaction, which is the sharpest sense in which an element here is a direction and a number.</p>
+<p><strong>That split is not available on the open stratum.</strong> There the scale and the direction are entangled: the modulus is built from the same coefficients that fix the eigenvalues, and changing one changes the other. Here the modulus is zero on every element, so it constrains nothing, and the two factors separate completely.</p>
+<h2 id="the-description-that-survives_1">The Description That Survives</h2>
+<h3 id="the-spectrum-and-the-two-idempotents">The Spectrum and the Two Idempotents</h3>
+<p><strong>The eigenvalues are distinct and one of them is zero.</strong></p>
+<p>$$
+\lambda_{+}=\kappa=2Q_t,\qquad
+\lambda_{-}=0,\qquad
+\lambda_{+}\lambda_{-}=N=0,\qquad
+\lambda_{+}+\lambda_{-}=2Q_t .
+$$</p>
+<p><strong>Distinctness is what the eigenbasis needs, and it holds.</strong> The minimal polynomial is $X(X-\kappa)$, of degree two with distinct roots, so the element is semisimple, the spectral idempotents are unique, and the spectral decomposition has two terms.</p>
+<p><strong>The zero coefficient is a value and not a missing term.</strong></p>
+<p>$$
+\tilde Q=\kappa\,e_{+}+0\cdot e_{-},\qquad
+e_{-}=e_t-e_{+}\neq0 .
+$$</p>
+<p>So the writing is genuinely two-term: the idempotent $e_{-}$ is present, non-trivial, and carries weight zero. This is the exact point where this stratum and the previous one differ, and the difference is a single number: there the coefficient of the second term was undefined because the second idempotent did not exist; here it is defined and equal to zero.</p>
+<p><strong>The menu calls the stratum's writing one-term, and the algebra says two-term with a zero coefficient.</strong> Both are correct and they are counting different things. The number of non-zero terms is one; the number of terms is two; and the distinction is exactly whether the second idempotent exists. A one-term writing would mean the element is a scale times the identity, which is the centre and not this stratum.</p>
+<p><strong>The Peirce matrix is diagonal and singular.</strong></p>
+<p>$$
+\mathsf M^{Q}=\begin{pmatrix}\kappa&0\\0&0\end{pmatrix},\qquad
+\operatorname{rank}\mathsf M^{Q}=1 .
+$$</p>
+<p><strong>So the element and its Peirce matrix have the same rank.</strong> An element of the stratum is rank one, its Peirce matrix is rank one, and its two one-sided operators are rank two: the rank doubles on each side because multiplication acts on a four-dimensional space instead of a two-dimensional one.</p>
+<h3 id="the-eigenbasis-and-the-joint-eigenbasis">The Eigenbasis and the Joint Eigenbasis</h3>
+<p><strong>The eigenbasis exists, and so does the joint eigenbasis of the two one-sided actions.</strong></p>
+<p>$$
+L_{\tilde Q}\big|_{\text{eigenbasis}}=\operatorname{diag}(\kappa,\kappa,0,0),\qquad
+R_{\tilde Q}\big|_{\text{eigenbasis}}=\operatorname{diag}(\kappa,0,\kappa,0).
+$$</p>
+<p><strong>Four joint eigenvectors exist.</strong> The element commutes with itself, so $L_{\tilde Q}$ and $R_{\tilde Q}$ commute; the four basis vectors $\tilde\Pi$, $\vec\Upsilon_{-}$, $\vec\Upsilon_{+}$, $\tilde\Pi'$ are simultaneous eigenvectors with the pairs $(\kappa,\kappa)$, $(\kappa,0)$, $(0,\kappa)$, $(0,0)$. Computed: the commutator was $2.8\times10^{-16}$, both operators were diagonalisable with spectra $\{\kappa,\kappa,0,0\}$, and each had rank two.</p>
+<p><strong>The right eigenvalue is the Peirce index.</strong> It is $\kappa$ on the spinor space $S_{+}=\mathbb{B}\tilde\Pi$ and zero on $S_{-}=\mathbb{B}\tilde\Pi'$. So the two spinor spaces are distinguished by the right action and not by the left: the left action gives each of them the same spectrum, and the right action separates them.</p>
+<p><strong>This is the sharpest contrast with the previous stratum.</strong> There the two eigenvalues coincided, the centraliser was the dual numbers, and the joint eigenspace was one line. Here the eigenvalues are distinct, the centraliser is $\mathbb{C}\oplus\mathbb{C}$, and there are four joint eigenvectors. Both strata are degenerate in one predicate; only one of them is degenerate in its eigenstructure.</p>
+<h3 id="the-centraliser-and-its-four-idempotents">The Centraliser and Its Four Idempotents</h3>
+<p><strong>The centraliser is the span of the two idempotents.</strong></p>
+<p>$$
+\mathbb{C}[\tilde Q]=\{a\tilde\Pi+b\tilde\Pi'\}\cong\mathbb{C}\oplus\mathbb{C},
+\qquad
+\dim_{\mathbb{C}}\mathbb{C}[\tilde Q]=2 .
+$$</p>
+<p><strong>It contains exactly four idempotents.</strong></p>
+<p>$$
+0,\qquad e_t,\qquad \tilde\Pi,\qquad \tilde\Pi' .
+$$</p>
+<p>Solving $a^{2}=a$ and $2ab+b^{2}=b$ gives $(a,b)\in\{(0,0),(1,0),(0,1),(1,-1)\}$, and the fourth pair gives $\tilde\Pi'=e_t-\tilde\Pi$. All four were checked to $1.9\times10^{-16}$, and no random element commuted with $\tilde Q$ in two hundred draws.</p>
+<p><strong>A four-idempotent centraliser is what a two-point spectrum gives.</strong> A dual-number centraliser has two; a $\mathbb{C}\oplus\mathbb{C}$ has four; the whole algebra has infinitely many. So the count of idempotents in the centraliser is a rough measure of how much of the spectrum is alive, and the three strata order as two, four and infinitely many.</p>
+<h3 id="the-powers-are-linear">The Powers Are Linear</h3>
+<p><strong>Every power of a null element is the element itself, up to a scalar.</strong></p>
+<p>$$
+\tilde Q^{n}=\kappa^{\,n-1}\tilde Q,\qquad
+\tilde Q^{2}=\kappa\tilde Q,\qquad
+B^{2}(\tilde Q^{n})=\kappa^{2n-2}B^{2}(\tilde Q)\neq0 .
+$$</p>
+<p><strong>There is no growth in the power.</strong> The previous stratum had a defect that accumulated a coefficient $n$; here there is no defect and the power is a rescaling. Iterating a null element produces the same element, and the iteration is visible only in the scale.</p>
+<p><strong>The functional calculus is evaluation at two points.</strong></p>
+<p>$$
+f(\tilde Q)=f(\kappa)\tilde\Pi+f(0)\tilde\Pi',
+$$</p>
+<p>which is the two-term writing read as an algebra homomorphism. It is the exact analogue of the open stratum's $f(\lambda_+)e_+ + f(\lambda_-)e_-$, with one of the two values fixed at zero.</p>
+<h2 id="the-description-that-fails_1">The Description That Fails</h2>
+<h3 id="the-modulus-is-zero">The Modulus Is Zero</h3>
+<p><strong>The polar word begins with a square root that does not exist.</strong></p>
+<p>$$
+\Rho=\sqrt{N}=0,\qquad
+\tilde Q=\Rho\,\tilde Q_1\ \text{has no solution with }N(\tilde Q_1)=1 .
+$$</p>
+<p><strong>The failure is total and it is not repairable.</strong> A normalisation by the norm would need $N\neq0$, and the normalisation by the trace is available instead. But the polar word is not only a normalisation: the modulus is its first factor, and every later factor is obtained by dividing by it. So the failure of the first factor removes all of them.</p>
+<p><strong>The physical name for the failure is the absence of a rest frame.</strong> The modulus is the factor by which the polar word carries an element to the ray of the identity, so the value $\Rho=0$ is exactly the statement that no unit carries $\tilde Q$ to the scalar line. A null element has no frame in which it stands still, and the algebraic reason is the vanishing of the modulus and not the vanishing of the momentum.</p>
+<p><strong>The modulus is the only failure, and it is the whole of the failure.</strong> Everything downstream of the modulus fails with it: the inverse, the logarithm, the generator, the polar decomposition and the unit-group parametrisation. Everything upstream of it is intact: the spectrum, the idempotents, the Peirce pair, the kernels, the powers. The stratum is therefore not a place where the algebra stops working; it is a place where one input to one construction is zero.</p>
+<h3 id="no-inverse">No Inverse</h3>
+<p><strong>The element is a zero divisor and it annihilates a plane.</strong></p>
+<p>$$
+\tilde Q\tilde X=0\ \text{has a two-dimensional solution space},\qquad
+\tilde X\tilde Q=0\ \text{has another},\qquad
+\tilde Q\tilde Q^{\natural}=N e_t=0 .
+$$</p>
+<p><strong>The vanishing of the norm is the vanishing of the product with the conjugate.</strong> That is one line and it is the exact statement: $N(\tilde Q)=0$ means $\tilde Q\tilde Q^{\natural}=0$, so the conjugate is a non-zero element that the element annihilates. In a division algebra this cannot happen; here it happens on a cone of real dimension six.</p>
+<p><strong>The left multiplication is onto, not invertible.</strong> Its image is the right ideal $\tilde\Pi\mathbb{B}$, of complex dimension two, and its kernel is the plane $\mathbb{C}\vec\Upsilon_{+}\oplus\mathbb{C}\tilde\Pi'$. So the element maps a four-dimensional algebra onto a two-dimensional ideal and kills a two-dimensional ideal, and the count adds up: $2+2=4$.</p>
+<h3 id="no-logarithm">No Logarithm</h3>
+<p><strong>The exponential never lands on the null cone.</strong></p>
+<p>$$
+N\bigl(e^{X}\bigr)=e^{2X_t}\qquad\text{for every }X\in\mathbb{B}.
+$$</p>
+<p><strong>The identity is a determinant identity.</strong> In the $2\times2$ matrix image the norm is the determinant and the scalar part is half the trace, so $N(e^{X})=\det(e^{X})=e^{\operatorname{tr}X}=e^{2X_t}$. It is exact, it holds for every element, and it was checked over thirty random elements to $3.4\times10^{-13}$.</p>
+<p><strong>So the stratum is disjoint from the image of the exponential.</strong> Every exponential is a unit with a non-zero norm; every element of the stratum has zero norm; hence no element of the stratum is the exponential of anything. A massless element has a flow — the exponential is defined on it — but it is not itself a flow's endpoint.</p>
+<p><strong>The same statement forbids one-parameter subgroups in the cone.</strong> A subgroup of the unit group is a set $\{e^{\theta X}\}$, and every member of it has norm $e^{2\theta X_t}\neq0$. So the null cone contains no one-parameter subgroup, and the stratum contains no curve through the identity. A ray is a generator, and no finite amount of it is a ray.</p>
+<h3 id="the-flow-leaves-the-cone">The Flow Leaves the Cone</h3>
+<p><strong>The exponential of a null element is a rotation with a scale, and it is a unit.</strong></p>
+<p>$$
+e^{\theta\tilde Q}=e^{\theta Q_t}\left(\cos(\theta B)e_t+\sin(\theta B)\,\vec U\right),\qquad
+\vec U=\frac{\vec Q}{B},\qquad
+\vec U^{2}=e_t .
+$$</p>
+<p><strong>The root exists here and the axis does not degenerate.</strong> $B^{2}\neq0$, so $B$ is a non-zero square root and $\vec U$ is a well-defined root of $+1$. The exponential is therefore an ordinary rotation composed with a scale: the same formula as on the open stratum, with the same axis, and with no truncation and no defect.</p>
+<p><strong>The norm of the flow is a pure exponential.</strong></p>
+<p>$$
+N\bigl(e^{\theta\tilde Q}\bigr)=e^{2\theta Q_t},
+$$</p>
+<p>computed as $2.5\times10^{-16}$, $7.1\times10^{-16}$, $7.2\times10^{-15}$ away from the formula at $\theta=0.3,1,2$. So the flow lies on the cone only where $e^{2\theta Q_t}$ vanishes, which is nowhere: the flow leaves the cone at $\theta=0$ and does not return.</p>
+<p><strong>This is the sharpest difference from the previous stratum's flow.</strong> There the exponential stayed in the stratum for every parameter, because the defect was invariant under the flow. Here the exponential leaves immediately, because the norm is not invariant: $N$ is the determinant and the determinant of a flow is exponential in the trace.</p>
+<h3 id="the-hermitian-norm">The Hermitian Norm</h3>
+<p><strong>The Hermitian norm of the flow is a quadratic form in cosine and sine.</strong></p>
+<p>$$
+\bigl\langle e^{\theta\tilde Q}\bigr\rangle_{*}
+=\lvert e^{\theta Q_t}\rvert^{2}\left(\lvert\cos(\theta B)\rvert^{2}+\lvert\sin(\theta B)\rvert^{2}\lVert\vec U\rVert^{2}\right),
+\qquad
+\lVert\vec U\rVert^{2}=\sum_k\lvert U_k\rvert^{2},
+$$</p>
+<p>checked over twenty random null elements and three parameters each to a relative error of $3.2\times10^{-15}$.</p>
+<p><strong>The factor in the parenthesis is the whole story.</strong> It is a weighted average of $1$ and $\lVert\vec U\rVert^{2}$, and it is one at every $\theta$ exactly when $\lVert\vec U\rVert^{2}=1$. A random complex null element had $\lVert\vec U\rVert^{2}=6.68$, so its flow grows without bound; a material null element has $\lVert\vec U\rVert^{2}=1$ because $\vec U$ is a real unit vector.</p>
+<p><strong>On the material massless slice the flow is unitary.</strong> For $E=1.7$ and $\vec n=(0,0.6,0.8)$ the computed Hermitian norm at $\theta=0.5$, $1.2$ and $3.0$ was $1.000000000000000$ each time. So a massless momentum generates a unitary one-parameter group, and it does so although it is a zero divisor, has no inverse, no logarithm and no polar decomposition.</p>
+<p><strong>That combination is the entry's central structural fact.</strong> The flow needs a root and a spectrum; it does not need a modulus. So the stratum has a unitary dynamics and no polar decomposition, and the previous stratum had a polar decomposition and a non-unitary dynamics. The two descriptions are genuinely independent, and each stratum exhibits one and not the other.</p>
+<h2 id="the-two-annihilators">The Two Annihilators</h2>
+<h3 id="two-planes-not-one">Two Planes, Not One</h3>
+<p><strong>Left and right multiplication have different kernels.</strong></p>
+<p>$$
+\ker L_{\tilde Q}=\mathbb{C}\vec\Upsilon_{+}\oplus\mathbb{C}\tilde\Pi',\qquad
+\ker R_{\tilde Q}=\mathbb{C}\vec\Upsilon_{-}\oplus\mathbb{C}\tilde\Pi',
+$$</p>
+<p>where $\vec\Upsilon_{+}\in S_{+}$ and $\vec\Upsilon_{-}\in S_{-}$ are the Peirce nilpotents of the pair. Each kernel is a complex plane, and the two are distinct: the left action kills the nilpotent of $S_{+}$, the right action kills the nilpotent of $S_{-}$, and only the frozen line $\mathbb{C}\tilde\Pi'$ is common.</p>
+<p><strong>The shared line is the frozen mode.</strong></p>
+<p>$$
+\ker L_{\tilde Q}\cap\ker R_{\tilde Q}=\mathbb{C}\tilde\Pi'.
+$$</p>
+<p>Computed: both kernels are two-dimensional, their sum is three-dimensional, and their intersection is one-dimensional. The line is spanned by $\tilde\Pi'$, the idempotent of the zero eigenvalue, which satisfies $\tilde\Pi'\tilde Q=\tilde Q\tilde\Pi'=0$.</p>
+<p><strong>So the two one-sided readings lose different information.</strong> The left action annihilates the plane $\mathbb{C}\vec\Upsilon_{+}\oplus\mathbb{C}\tilde\Pi'$; the right action annihilates $\mathbb{C}\vec\Upsilon_{-}\oplus\mathbb{C}\tilde\Pi'$. Only the frozen line is lost on both sides, and everything else that is lost is lost on one side only.</p>
+<p><strong>The element itself is in neither kernel.</strong> $\tilde Q^{2}=\kappa\tilde Q\neq0$, so the element is not annihilated by itself on either side; it is annihilated by its conjugate, which is a different element of the stratum. That is the exact shape of a zero divisor: the annihilator is not the element but its mirror.</p>
+<h3 id="the-spinor-spaces-are-the-peirce-planes">The Spinor Spaces Are the Peirce Planes</h3>
+<p><strong>The two spinor spaces are the minimal left ideals.</strong></p>
+<p>$$
+S_{+}=\mathbb{B}\tilde\Pi=\mathbb{C}\tilde\Pi\oplus\mathbb{C}\vec\Upsilon_{+},
+\qquad
+S_{-}=\mathbb{B}\tilde\Pi'=\mathbb{C}\vec\Upsilon_{-}\oplus\mathbb{C}\tilde\Pi',
+\qquad
+\mathbb{B}=S_{+}\oplus S_{-}.
+$$</p>
+<p><strong>On each, the left action is $\operatorname{diag}(\kappa,0)$; the right action is $\kappa$ on the whole of $S_{+}$ and zero on the whole of $S_{-}$.</strong></p>
+<p>$$
+L_{\tilde Q}\big|_{S_{\pm}}=\operatorname{diag}(\kappa,0),
+\qquad
+R_{\tilde Q}\big|_{S_{+}}=\kappa\,\mathrm{id},
+\qquad
+R_{\tilde Q}\big|_{S_{-}}=0 .
+$$</p>
+<p><strong>A spinor space is not an eigenspace.</strong> Each contains one vector of each eigenspace of the left action, and each eigenspace contains one vector of each spinor space: the two decompositions are transverse. The right action, by contrast, does select: it is scalar on one spinor space and zero on the other, which is why the Peirce index is a right eigenvalue and not a left one.</p>
+<h2 id="products">Products</h2>
+<h3 id="the-product-stays-on-the-cone">The Product Stays on the Cone</h3>
+<p><strong>The norm is multiplicative, so the null cone is closed under multiplication.</strong></p>
+<p>$$
+N(\tilde Q_2\tilde Q)=N(\tilde Q_2)N(\tilde Q)=0
+\qquad\Longrightarrow\qquad
+\Sigma_{01}\cdot\Sigma_{01}\subseteq\mathcal N .
+$$</p>
+<p><strong>So the sector is closed on the cone and not closed in itself.</strong> A product of two null elements is null, hence lies in one of the two strata of the cone, and the product is never a unit. Over three hundred random pairs the product landed in the stratum three hundred times, which is the generic answer and not the only one.</p>
+<p><strong>All three outcomes occur, and the two exceptional ones need special pairs.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>outcome</th>
+<th>witness</th>
+<th>what the pair has to be</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>in the stratum</td>
+<td>$\tilde\Pi_{+}^{2}=\tilde\Pi_{+}$</td>
+<td>any non-orthogonal pair whose product is idempotent up to scale</td>
+</tr>
+<tr>
+<td>the origin</td>
+<td>$\tilde\Pi_{+}\tilde\Pi_{-}=0$</td>
+<td>orthogonal idempotents</td>
+</tr>
+<tr>
+<td>the nilpotent stratum</td>
+<td>$\tilde\Pi_{+}\tilde\Pi'=bE_{12}$</td>
+<td>a complementary pair with one corner turned on</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The third witness is the interesting one.</strong> With $\tilde\Pi'=\tilde\Pi_{-}+bE_{12}$ for $b\neq0$, which is again a primitive idempotent, the product is</p>
+<p>$$
+\tilde\Pi_{+}\tilde\Pi'=bE_{12}=\frac{b}{2}\left(\vec e_x+i\vec e_y\right),
+$$</p>
+<p>a non-zero nilpotent of index two: $N=0$, $B^{2}=0$, and the square vanishes. Computed for $b=1.7$: the product had $N=0$, $B^{2}=0$ and square zero, while both factors were idempotents of norm zero.</p>
+<p><strong>The generic product is in the stratum and the exceptional products are in the closure.</strong> That is the same pattern as the previous stratum's products, with one difference: there the product could not leave the unit group, and here it cannot leave the cone. The two sectors are closed in different directions, and each closure is the multiplicative version of its own predicate.</p>
+<h3 id="sums-are-not-products">Sums Are Not Products</h3>
+<p><strong>Addition leaves the cone immediately.</strong></p>
+<p>$$
+N(\tilde P_1+\tilde P_2)=N_1+N_2+2\left(Q_{1t}Q_{2t}+\vec Q_1\cdot\vec Q_2\right),
+$$</p>
+<p><strong>and for two null elements only the pairing survives.</strong> The sum is null exactly when $Q_{1t}Q_{2t}+\vec Q_1\cdot\vec Q_2=0$, and otherwise it carries a non-zero norm. On the material slice the pairing of two momenta is $-E_1E_2/c^{2}+\vec p_1\cdot\vec p_2$, and the formula becomes the one displayed in §<em>The Material Part</em>.</p>
+<p><strong>So multiplication and addition behave in opposite ways here.</strong> The product of two null elements is always null; the sum is null only on a hypersurface. That asymmetry is what makes the sector a multiplicative object and the light cone a cone: a cone is closed under scaling and not under translation.</p>
+<h2 id="the-material-part_1">The Material Part</h2>
+<h3 id="the-light-cone">The Light Cone</h3>
+<p><strong>On the material slice the norm is the interval and the vector square is the momentum squared.</strong></p>
+<p>$$
+\tilde P_\Phi=i\frac{E}{c}e_t+\vec p,\qquad
+N=-\frac{E^{2}}{c^{2}}+\lvert\vec p\rvert^{2},\qquad
+B^{2}=\lvert\vec p\rvert^{2}\ge0 .
+$$</p>
+<p><strong>The stratum is one real equation and one inequality.</strong></p>
+<p>$$
+N=0\iff\lvert\vec p\rvert=\frac{\lvert E\rvert}{c},\qquad
+B^{2}\neq0\iff\vec p\neq0 ,
+$$</p>
+<p>so</p>
+<p>$$
+\Sigma_{01}\cap\mathbb{B}_{\Phi}
+=\left\{i\frac{E}{c}\left(e_t+\vec n\right)\ :\ E\neq0,\ \lvert\vec n\rvert=1\right\},
+$$</p>
+<p>a cone of real dimension three: one for the energy and two for the direction. The apex $\vec p=0$ with $E=0$ is excluded, and it belongs to the doubly degenerate stratum.</p>
+<p><strong>The count of conditions is worth stating.</strong> A momentum costs one real equation because its norm is real on the material slice; a general element costs two because its norm is complex, so $N=0$ is a pair of real equations that must hold together. So nullness of a momentum is one condition inside the sector, and nullness of a field is the intersection of two.</p>
+<p><strong>The idempotent is the Hermitian projector along the direction.</strong></p>
+<p>$$
+\tilde\Pi=\frac{\tilde P_\Phi}{2Q_t}=\frac{1}{2}\left(e_t-i\vec n\right),\qquad
+\tilde\Pi^{*}=\tilde\Pi,\qquad
+\tilde\Pi^{2}=\tilde\Pi
+$$</p>
+<p>for every real unit $\vec n$, checked to machine zero. So the material idempotents are a two-sphere inside the complex quadric, and the two-sphere is the celestial sphere of the momentum.</p>
+<p><strong>The name for the material element is the light ray.</strong> It has a direction, an energy and a phase; it has no rest frame, no inverse and no generator. Those six statements are the six computations of this entry read on the material slice, and none of them is an extra assumption. A light ray in this sense is not a trajectory and not a world line: it is one null element, with its projector, its spectrum and its two annihilators.</p>
+<h3 id="the-two-frequencies-one-of-them-zero">The Two Frequencies, One of Them Zero</h3>
+<p><strong>The spectrum on the material slice is $\{2iE/c,\,0\}$.</strong></p>
+<p>$$
+\lambda_{+}=2i\frac{E}{c},\qquad
+\lambda_{-}=0,\qquad
+\tilde P_\Phi=2i\frac{E}{c}\,\tilde\Pi .
+$$</p>
+<p><strong>The non-zero eigenvalue is the light-cone frequency and the zero eigenvalue is the frozen mode.</strong> The spectral writing has two terms, the first non-zero and the second zero, and the second idempotent is present and non-trivial.</p>
+<p><strong>The element is anti-Hermitian and the idempotent is Hermitian.</strong> $\tilde P_\Phi^{*}=-\tilde P_\Phi$ on the material slice, while $\tilde\Pi^{*}=\tilde\Pi$. So the momentum is an imaginary multiple of a projector, and the projector is the object with unit trace. The pair is the algebraic form of the statement that a state is a projector and a momentum is a weight.</p>
+<h3 id="the-sum-of-two-rays">The Sum of Two Rays</h3>
+<p><strong>Two null momenta sum to a massive one unless they are parallel.</strong></p>
+<p>$$
+N(\tilde P_1+\tilde P_2)=-\frac{2E_1E_2}{c^{2}}\left(1-\cos\theta\right),
+\qquad
+m^{2}c^{4}=2E_1E_2\left(1-\cos\theta\right),
+$$</p>
+<p>checked over one hundred random pairs to $7.1\times10^{-15}$.</p>
+<p><strong>The three limiting cases are the three kinematic statements.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>configuration</th>
+<th>$N$</th>
+<th>$B^{2}$</th>
+<th>where the sum lies</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>parallel, any energies</td>
+<td>$0$</td>
+<td>$(E_1+E_2)^{2}/c^{2}$</td>
+<td>the stratum: one ray with the summed energy</td>
+</tr>
+<tr>
+<td>equal energies, $\theta=\pi/2$</td>
+<td>$-2E^{2}/c^{2}$</td>
+<td>$2E^{2}/c^{2}$</td>
+<td>the open stratum: a massive element</td>
+</tr>
+<tr>
+<td>equal energies, $\theta=\pi$</td>
+<td>$-4E^{2}/c^{2}$</td>
+<td>$0$</td>
+<td>the scalar line: the rest frame</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The first row is energy additivity.</strong> Two collinear rays are one ray, and its vector square is the square of the summed energy. That is not a new theorem; it is the statement that the stratum is a cone and that parallel null momenta are proportional.</p>
+<p><strong>The third row is the rest frame of a pair.</strong> Two equal and opposite rays have zero total momentum and non-zero total energy; their sum is a point of the scalar line, which is the stratum read by the previous entry. So the rest frame is reachable as a sum of two light rays, and the mass of the pair is the whole of the energy in that frame.</p>
+<p><strong>The second row is the generic case, and it is the one that matters.</strong> No addend is massive and the sum is, so mass is not additive and is not carried by either summand. In this algebra the mass of a sum of two null momenta is exactly the failure of the two to be parallel, and the measure of that failure is $1-\cos\theta$.</p>
+<h2 id="the-reach-of-the-three-carriers">The Reach of the Three Carriers</h2>
+<p><strong>The three carriers meet the stratum in three different ways, and one of them is the whole carrier minus a line.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>carrier</th>
+<th>dimension</th>
+<th>invariant on it</th>
+<th>intersection with $\Sigma_{01}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the centre $\mathbb{C}e_t$</td>
+<td>$2$ real</td>
+<td>$B^{2}=0$, $N=q_t^{2}$</td>
+<td>empty</td>
+</tr>
+<tr>
+<td>the ideals $S_\pm=\mathbb{B}\tilde\Pi_\pm$</td>
+<td>$4$ real</td>
+<td>$N=0$ everywhere, $B^{2}=-q_t^{2}$</td>
+<td>the whole carrier minus the line $q_t=0$</td>
+</tr>
+<tr>
+<td>the material sector $\mathbb{B}_{\Phi}$</td>
+<td>$4$ real</td>
+<td>both vary</td>
+<td>the light cone minus the apex, real dimension three</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The centre is empty, and the emptiness is exact.</strong> On the centre $N=q_t^{2}$, which vanishes only at the apex, and the apex is in the doubly degenerate stratum. So the light cone of the first carrier is a single point: a null scalar amplitude is the zero amplitude. The reading is that a scale and a phase are not a direction, and the stratum's content is a direction.</p>
+<p><strong>The ideals are almost the whole carrier.</strong> Every member of $S_\pm$ has $N=0$ and $B^{2}=-q_t^{2}$ for its scalar part $q_t$, so $B^{2}$ vanishes exactly on the line $q_t=0$. Hence</p>
+<p>$$
+\Sigma_{01}\cap S_{\pm}=\{q_t\neq0\},
+$$</p>
+<p>an open dense subset of the carrier, of real dimension four. <strong>A spinor value is a null element at almost every point of its carrier</strong>, and the exceptions are a set of real codimension two.</p>
+<p><strong>That is a strong statement about spinors and it is worth separating from the physics.</strong> The norm of every element of a minimal left ideal is zero, so the norm cannot grade a spinor: all spinor values have the same norm. What distinguishes them is the right action, which is $\kappa$ on $S_+$ and zero on $S_-$, and the Peirce index that names it.</p>
+<p><strong>Why the list records $\mathbb{B}_{\Phi}$ and not $\mathbb{B}_{\Psi}$.</strong> The two are exchanged by multiplication by $i$, so they are one real four-space up to the algebra's own complex structure, and</p>
+<p>$$
+\mathbb{B}_{\Psi}=i\,\mathbb{B}_{\Phi}=\mathbb{R}e_t\oplus i\vec k,\qquad
+\vec k=\operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\},
+$$</p>
+<p>whose scalar piece is a line inside the centre and whose vector piece is $i$ times the spin-one space. Recording it would list the centre and the spin-one space a second time, and the spin content would not change. The representative is $\mathbb{B}_{\Phi}$ because the material dictionary lands there: a four-momentum $i(E/c)e_t+\vec p$ has an imaginary scalar part and a real vector part, so it is anti-Hermitian and not Hermitian.</p>
+<p><strong>The material share of a carrier is one direction.</strong> $\mathbb{B}_{\Phi}\cap S_{\pm}=\mathbb{R}\,i\tilde\Pi_{\pm}$, which has $N=0$ and $B^{2}=\tfrac14$, so it is a null four-vector along the frame's third axis. So the material light rays meet the spinor carrier in exactly one direction, the one the frame already names, and every other material ray lies in a different carrier.</p>
+<h2 id="the-interpretations">The Interpretations</h2>
+<h3 id="i10ai-one-zero-is-a-value-not-a-missing-mode">I.10.ai — One Zero Is a Value, Not a Missing Mode</h3>
+<p><strong>Read:</strong> the spectrum $\{\kappa,0\}$ with distinct roots, the two spectral idempotents, and the Peirce matrix $\operatorname{diag}(\kappa,0)$.</p>
+<p><strong>A zero eigenvalue is a number and not an absence.</strong> The sector has one non-zero mode and one frozen mode; both are eigenvalues, both have idempotents, and the second coefficient is a well-defined zero. Nothing is missing from the spectral description, and the two-term writing is unique.</p>
+<p><strong>The reading is that masslessness is a spectral value and not a spectral breakdown.</strong> A massless element still has two eigenvalues and still has an eigenbasis; what it does not have is a second non-zero eigenvalue. So a massless object is not an object whose description has collapsed: it is an object described by the same description with one entry set to zero.</p>
+<p><strong>The contrast with the previous stratum is exact and it is the section's main comparison.</strong> There the eigenvalues coincided and the eigenbasis died; here they are distinct and the eigenbasis lives. Two strata, both degenerate in one predicate, and opposite in their spectral health.</p>
+<p><strong>The boundary.</strong> The reading is of the spectrum. A zero eigenvalue in this algebra is one frozen mode of one element, not an empty state and not a second particle.</p>
+<h3 id="i10aj-normalise-by-the-trace-when-the-norm-is-gone">I.10.aj — Normalise by the Trace When the Norm Is Gone</h3>
+<p><strong>Read:</strong> $\tilde\Pi=\tilde Q/(2Q_t)$, $\operatorname{Sc}\tilde\Pi=\tfrac12$, $N(\tilde\Pi)=0$, and the uniqueness of the idempotent on each null line.</p>
+<p><strong>A normalisation needs a scale, and the modulus is not the only available scale.</strong> The inverse of the norm does not exist here; the inverse of the scalar part does, and it lands exactly on the idempotent. So the canonical representative of a null line is the projector, and every null line with a non-zero scalar part has exactly one.</p>
+<p><strong>The reading is that a ray is normalised by its weight and not by its length.</strong> In a theory of massless objects the natural normalisation is the energy, which is a component of the momentum, and not a length built from the whole vector. The algebra states the same preference: the component is invertible, the length is not.</p>
+<p><strong>The map is a section and not a convention.</strong> If the normalisation were a choice there would be a family of representatives and a gauge freedom between them; uniqueness says there is one representative and no freedom. A phase freedom on a spinor representative is therefore a freedom of the module and not of the element.</p>
+<p><strong>The absence of a rest frame is the same failure.</strong> The polar word is the algebra's own boost to the scalar line, so a vanishing modulus means that no unit reaches that line from a null element, and the absence of a rest frame is a statement about the modulus and not about the momentum.</p>
+<p><strong>The boundary.</strong> The word <em>weight</em> is a reading of the scalar part. Off the material slice $\kappa$ is a complex number with no energy interpretation.</p>
+<h3 id="i10ak-trace-one-and-norm-zero-the-norm-is-not-a-probability">I.10.ak — Trace One and Norm Zero: the Norm Is Not a Probability</h3>
+<p><strong>Read:</strong> $\operatorname{Sc}\tilde\Pi=\tfrac12$, $N(\tilde\Pi)=0$, $\operatorname{rank}\tilde\Pi=1$.</p>
+<p><strong>An element can have unit weight and zero norm.</strong> In the matrix model the idempotent is a rank-one projector with trace one; its norm, which is its determinant, vanishes. So the two invariants answer two questions: the trace counts dimensions, the norm multiplies.</p>
+<p><strong>The reading is a prohibition.</strong> Any interpretation that makes $N$ a Born weight, a probability or a normalisation of a state is refuted by one element. The norm is a multiplicative invariant: it is the determinant, it is what survives a product, and it vanishes on the projectors that carry unit trace.</p>
+<p><strong>The prohibition bites hardest exactly where a reader most wants it not to.</strong> A massless state is the natural place to hope that a null norm means a null probability; the rank-one projector shows that a state of zero norm is a perfectly good state of unit weight. The two quantities are different quantities, and the algebra keeps them apart.</p>
+<p><strong>The boundary.</strong> The trace is a matrix-model trace and the norm is the quaternionic norm; the identification of either with a physical normalisation is a further step that this entry does not take.</p>
+<h3 id="i10al-no-inverse-and-no-generator-a-ray-is-one-way">I.10.al — No Inverse and No Generator: a Ray Is One-Way</h3>
+<p><strong>Read:</strong> the two annihilator planes, the vanishing of $\tilde Q\tilde Q^{\natural}$, and the identity $N(e^{X})=e^{2X_t}$.</p>
+<p><strong>The element annihilates, and it is annihilated by an element other than itself.</strong> It is a zero divisor, so it has no inverse; and the exponential never lands on the cone, so it has no logarithm. Both failures have the same cause: the norm is zero, and the norm is what the inverse inverts and what the exponential produces.</p>
+<p><strong>The reading is that a massless element is a generator and never a finite transformation.</strong> The exponential is defined on the element and gives the flow, but no element's exponential gives the element back. So the ray has a direction in time and no position; it can be integrated and it cannot be exponentiated.</p>
+<p><strong>The strongest form of the statement is about subgroups.</strong> The null cone contains no one-parameter subgroup, so no flow stays on the cone for an interval. A massless element generates a family that leaves the cone at once, and the family is a family of units.</p>
+<p><strong>The boundary.</strong> <em>One-way</em> is a reading of non-invertibility. The algebra supplies the kernel and the image; it does not supply an arrow of time, and no theorem here is a statement about irreversibility.</p>
+<h3 id="i10am-the-flow-is-unitary-and-the-polar-word-is-not">I.10.am — The Flow Is Unitary and the Polar Word Is Not</h3>
+<p><strong>Read:</strong> $\langle e^{\theta\tilde Q}\rangle_{*}=\lvert e^{\theta Q_t}\rvert^{2}(\lvert\cos\rvert^{2}+\lvert\sin\rvert^{2}\lVert\vec U\rVert^{2})$, equal to one on the material null slice.</p>
+<p><strong>Two descriptions that are usually taken together come apart here.</strong> The flow needs a root and a spectrum: both exist. The polar word needs a modulus: it does not exist. So the stratum has a unitary one-parameter group and no polar decomposition, and the previous stratum had the reverse.</p>
+<p><strong>The reading is that unitarity of a flow is a spectral property and not a norm property.</strong> A null element can generate a unitary group, because the group is built from the axis and the angle; the norm enters only through the size of the axis in the Hermitian form, and on the material slice that size is one.</p>
+<p><strong>The measurement makes the point in one line.</strong> For a material null momentum of energy $1.7$ the computed Hermitian norm of the flow was $1.000000000000000$ at three different parameters, while the element itself has norm zero, no inverse and no logarithm. Nothing about the flow is degenerate; everything about the element's magnitude is.</p>
+<p><strong>The boundary.</strong> The Hermitian norm is a norm on the algebra, not on a state. A unitary flow on the algebra is not a statement that a physical evolution conserves probability.</p>
+<h3 id="i10an-the-direction-is-the-whole-frame-content">I.10.an — The Direction Is the Whole Frame Content</h3>
+<p><strong>Read:</strong> the factorisation $\Sigma_{01}\leftrightarrow\mathbb{C}^{\times}\times\{\text{primitive idempotents}\}$ and the material base $S^{2}$.</p>
+<p><strong>An element is a direction and a complex scale, and nothing else.</strong> The base of the bundle carries the direction, the fibre carries the scale, and there is no third factor. On the material slice the base is the celestial sphere and the fibre is the energy.</p>
+<p><strong>The reading is a count of kinematic data.</strong> A massless momentum has a direction and an energy, and the algebra confirms that two data are enough and that no third is available. Everything else that a massless object is said to have — a polarisation, a helicity, a phase — is a datum of a module over the algebra and not of the element.</p>
+<p><strong>The claim has a sharp corollary about frames.</strong> Two elements with the same direction and the same scale are the same element, so a null element does not select a frame among the frames that share its direction; and it does not select a direction among the directions that share its energy. The stratum supplies no preferred frame at any of its points.</p>
+<p><strong>The boundary.</strong> The celestial sphere is the base of the material slice only. Over the complex algebra the base is the complex quadric, which is not a sphere and has no metric reading.</p>
+<h3 id="i10ao-two-losses-not-one">I.10.ao — Two Losses, Not One</h3>
+<p><strong>Read:</strong> $\ker L_{\tilde Q}\neq\ker R_{\tilde Q}$, with intersection the frozen line $\mathbb{C}\tilde\Pi'$.</p>
+<p><strong>The element annihilates two different planes.</strong> The left action kills $\mathbb{C}\vec\Upsilon_{+}\oplus\mathbb{C}\tilde\Pi'$; the right action kills $\mathbb{C}\vec\Upsilon_{-}\oplus\mathbb{C}\tilde\Pi'$. Only the frozen line is killed by both, so the two one-sided readings lose different things and agree on one thing.</p>
+<p><strong>The reading is that a rank-one element is a filter with two faces.</strong> Multiplication by the element projects onto a plane and annihilates a plane, and the plane it annihilates depends on the side on which the product is taken. So a state passing through the element on the left loses one set of components and a state passing on the right loses another.</p>
+<p><strong>The two faces are transverse and not complementary.</strong> The two kernels are distinct planes of a four-dimensional space; their sum is three-dimensional, so they overlap in a line and their union is not the whole space. What is neither lost nor kept is one dimension of slack, and that dimension is the direction of the element itself, which is in neither kernel.</p>
+<p><strong>The boundary.</strong> The reading is about the linear maps $L_{\tilde Q}$ and $R_{\tilde Q}$ on the algebra. It is not a statement about a measurement on a state, and the two faces are not two outcomes.</p>
+<h3 id="i10ap-mass-is-not-additive">I.10.ap — Mass Is Not Additive</h3>
+<p><strong>Read:</strong> $N(\tilde P_1+\tilde P_2)=-\frac{2E_1E_2}{c^{2}}(1-\cos\theta)$, verified over one hundred pairs.</p>
+<p><strong>Two massless momenta sum to a massive one unless they are parallel.</strong> No addend carries a mass; the sum does; and the mass is a function of the angle alone, once the energies are fixed. The formula is the algebraic form of $m^{2}c^{4}=2E_1E_2(1-\cos\theta)$.</p>
+<p><strong>The reading is that mass is a property of an addition and not of an addend.</strong> A massless object is not a small massive object and it is not a massive object with a parameter set to zero: it is an element that is null, and nullness is not preserved by addition. The cone is closed under multiplication and not under translation.</p>
+<p><strong>The three rows of the table are three physical statements.</strong> Parallel rays add to one ray with the summed energy, which is energy additivity for a beam; a right angle gives a mass $\sqrt{2E_1E_2}/c^{2}$; and equal antiparallel rays give the scalar line, which is the centre-of-momentum frame of a pair with no momentum.</p>
+<p><strong>The boundary.</strong> The reading uses the material slice and the identification of $N$ with $-m^{2}c^{2}$. In the full algebra the pairing is a complex bilinear form and the <em>angle</em> is a complex number.</p>
+<h3 id="i10aq-a-pure-spinor-is-null">I.10.aq — A Pure Spinor Is Null</h3>
+<p><strong>Read:</strong> $N=0$ on all of $S_\pm$, and $\Sigma_{01}\cap S_\pm=\{q_t\neq0\}$.</p>
+<p><strong>Every element of a minimal left ideal has zero norm.</strong> So the norm cannot grade a spinor: all spinor values have the same norm, namely zero, and the ideal is a complex plane of null elements.</p>
+<p><strong>The reading is that the norm is not a norm on spinor space.</strong> A spinor is graded by the right action, which is $\kappa$ on $S_+$ and zero on $S_-$, and by the Peirce index. The left action and the norm agree on everything and distinguish nothing inside a carrier.</p>
+<p><strong>The material case makes the statement concrete.</strong> The material share of a carrier is one real direction, $\mathbb{R}\,i\tilde\Pi_\pm$, a null four-vector along the frame's third axis. So a material spinor is null by construction, and the frame's axis is the only direction in which a material spinor can point.</p>
+<p><strong>The boundary.</strong> The statement is about the algebra's own norm and not about a spinor inner product used in a quantum theory. A different form on a module can be definite; the algebra's norm is not that form.</p>
+<h3 id="i10ar-the-massless-limit-is-a-limit-in-the-element-only">I.10.ar — The Massless Limit Is a Limit in the Element Only</h3>
+<p><strong>Read:</strong> $\overline{\Sigma_{01}}=\mathcal N$, the divergence of $\tilde Q/\sqrt N$, and the connectivity of the stratum.</p>
+<p><strong>A path in the open stratum that reaches $N=0$ lands here.</strong> The element has a limit: it converges to a null element with a non-zero vector square. The modulus has no limit: it tends to zero, and the unit factor built from it diverges.</p>
+<p><strong>The reading is that two objects have two different limits.</strong> The element is continuous in the limit, and the description is not. A physical statement that is phrased in the description — a polar decomposition, a normalised state, a modulus and a phase — does not survive the limit even though the object it describes does.</p>
+<p><strong>The stratum is where the limit lands, and the doubly degenerate stratum is where it lands if the momentum also vanishes.</strong> So the boundary of the unit group has two pieces, and only one of them keeps the spectral description. A path that reaches both walls at once loses everything at once.</p>
+<p><strong>The boundary.</strong> The reading is about a limit of elements in the algebra. It does not supply a limiting procedure for a theory, and it does not say that a massless theory is the limit of a massive one in any sense beyond the pointwise one.</p>
+<h2 id="the-limits">The Limits</h2>
+<p><strong>The massless reading needs the material slice.</strong> <em>Massless</em> names the part of the stratum that the material sector reaches, where $N$ is the interval and $B^{2}$ is the momentum squared. In the full algebra the stratum is the null cone minus the spectral cone, and $Q_t$ is a complex number with no energy reading.</p>
+<p><strong>The idempotent is a state only after a choice of form.</strong> On the material slice $\tilde\Pi$ is Hermitian, rank one and of unit trace, which is what a state is in the matrix model. Over the complex algebra a primitive idempotent need not be Hermitian, and then it is a null flag and not a state. The entry does not claim that every element of the stratum is a state.</p>
+<p><strong>The zero eigenvalue is not an empty mode and not a second particle.</strong> It is one eigenvalue of one element, with its own idempotent and its own line in both annihilators. A count of eigenvalues is a count of spectral data, not of particles.</p>
+<p><strong>The zero divisor is not a division by zero.</strong> It is a non-invertible element. The algebra supplies the kernel, the image and the annihilators; it does not supply a singularity and it does not supply an infinity.</p>
+<p><strong>The absence of a logarithm is a statement about the exponential's image.</strong> It says that no element of the stratum is $\exp$ of anything, and it therefore says that the stratum contains no one-parameter subgroup. It does not say that the element has no flow: the exponential is defined on it and the flow is a genuine one-parameter group.</p>
+<p><strong>The polynomial growth is a property of the Hermitian norm on the algebra.</strong> For a complex null element the flow's Hermitian norm grows as $\lvert\cos\rvert^{2}+\lvert\sin\rvert^{2}\lVert\vec U\rVert^{2}$; on the material slice it is exactly one. No growth here is the growth of a probability or of an amplitude.</p>
+<p><strong>The sum of two rays is a sum of elements.</strong> The mass formula is a statement about the algebra's norm on a sum, and it uses the identification of $N$ with $-m^{2}c^{2}$ on the material slice. It is not a claim about the composition of two physical systems in any dynamical sense.</p>
+<p><strong>No dynamics is supplied.</strong> The entry describes one element at an instant, its two operators, its idempotent, its annihilators, its powers and its flow. It gives no evolution equation and no rate.</p>
+<p><strong>The numerical checks are checks of identities.</strong> Every identity was verified on at most a few hundred elements; the readings are arguments from the identities and stand or fall with them.</p>
+<h2 id="summary">Summary</h2>
+<ul>
+<li>$\Sigma_{01}=\{N=0,\ B^{2}\neq0\}$ is the null cone minus the spectral cone: zero divisors with two distinct eigenvalues, of complex dimension three and real dimension six, smooth, connected, dense in the cone, with the apex removed and the nilpotent directions as its boundary.</li>
+<li>Every element is a non-zero multiple of a primitive idempotent, $\tilde Q=\kappa\tilde\Pi$ with $\kappa=2Q_t$, and the pair $(\kappa,\tilde\Pi)$ is determined by the element.</li>
+<li>The idempotent has scalar part $\tfrac12$, norm zero and vector square $-\tfrac14$: trace one and determinant zero in the matrix model.</li>
+<li>Each null line with non-zero scalar part contains exactly one idempotent, so the stratum carries a canonical section of its own projectivisation: the trace normalises what the norm cannot.</li>
+<li>The stratum is a $\mathbb{C}^{\times}$-bundle over the affine quadric $\vec\zeta^{2}=e_t$ minus two points; on the material slice the base is the celestial sphere and the fibre is the energy.</li>
+<li>The spectral description survives in full: distinct eigenvalues $\{\kappa,0\}$, unique spectral idempotents, a two-term writing with a zero coefficient, a unique Peirce form $\operatorname{diag}(\kappa,0)$, four joint eigenvectors, a four-idempotent centraliser, and linear powers.</li>
+<li>The polar description fails in full: the modulus is zero, there is no inverse, no logarithm, no polar decomposition, and the flow leaves the cone at once.</li>
+<li>The two one-sided operators are $\kappa$ times projections of rank two, with distinct kernels meeting in the line $\mathbb{C}\tilde\Pi'$.</li>
+<li>The product of two null elements is always null, with three outcomes; the sum is null only on a hypersurface.</li>
+<li>The material part is the light cone minus the apex, of real dimension three; the two frequencies are $2iE/c$ and $0$; the idempotent is the Hermitian projector along the direction.</li>
+<li>Two null momenta sum to a massive element unless they are parallel: $m^{2}c^{4}=2E_1E_2(1-\cos\theta)$.</li>
+<li>The flow is unitary on the material slice and non-unitary off it, and the stratum has the eigenbasis and not the modulus, which is the exact complement of the previous stratum.</li>
+</ul>
+<h3 id="what-the-reader-should-retain">What the Reader Should Retain</h3>
+<p><strong>Masslessness is a failure of the magnitude and not of the spectrum.</strong> An element can be a zero divisor, have no inverse, no logarithm and no polar decomposition, and still have two distinct eigenvalues, a unique eigenbasis and a unitary flow.</p>
+<p><strong>When the norm is gone the trace normalises.</strong> A null line has exactly one idempotent, and the idempotent is the canonical representative: trace one, determinant zero, rank one. The normalisation is not a convention.</p>
+<p><strong>A ray is a direction and a scale, and mass is what a sum of two rays costs.</strong> No addend is massive and the sum is, unless the two are parallel; the mass is a function of the angle and of nothing else.</p>
+<p><strong>The two mixed strata fail in opposite descriptions.</strong> The previous one keeps the modulus and loses the eigenbasis; this one keeps the eigenbasis and loses the modulus.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Sigma_{01}=\{N=0,\ B^{2}\neq0\}$</td>
+<td>the stratum, the fourth of the five parts of the section</td>
+</tr>
+<tr>
+<td>$\mathcal N$</td>
+<td>the null cone, the wall of invertibility</td>
+</tr>
+<tr>
+<td>$\mathcal S$</td>
+<td>the spectral cone, the wall of separation</td>
+</tr>
+<tr>
+<td>$\kappa=2Q_t$</td>
+<td>the scale, the non-zero eigenvalue, fixed by the element</td>
+</tr>
+<tr>
+<td>$\tilde\Pi=\tilde Q/(2Q_t)$</td>
+<td>the primitive idempotent, the direction</td>
+</tr>
+<tr>
+<td>$\tilde\Pi'=e_t-\tilde\Pi$</td>
+<td>its complement, the idempotent of the zero eigenvalue</td>
+</tr>
+<tr>
+<td>$\vec\zeta=\vec Q/Q_t$</td>
+<td>the root of $+1$ attached to the direction, $\vec\zeta^{2}=e_t$</td>
+</tr>
+<tr>
+<td>$e_+=\tilde\Pi,\ e_-=\tilde\Pi'$</td>
+<td>the two spectral idempotents</td>
+</tr>
+<tr>
+<td>$\mathsf M^{Q}=\operatorname{diag}(\kappa,0)$</td>
+<td>the Peirce form of the element</td>
+</tr>
+<tr>
+<td>$L_{\tilde Q}^{2}=\kappa L_{\tilde Q}$</td>
+<td>the one-sided operators are scaled projections</td>
+</tr>
+<tr>
+<td>$\ker L_{\tilde Q},\ \ker R_{\tilde Q}$</td>
+<td>the two annihilator planes, meeting in $\mathbb{C}\tilde\Pi'$</td>
+</tr>
+<tr>
+<td>$S_\pm=\mathbb{B}\tilde\Pi_\pm$</td>
+<td>the spinor spaces, minimal left ideals, entirely null</td>
+</tr>
+<tr>
+<td>$E_{12}=(\vec e_x+i\vec e_y)/2$</td>
+<td>the corner nilpotent, whose product is in $\Sigma_{00}$</td>
+</tr>
+<tr>
+<td>$\vec U=\vec Q/B$</td>
+<td>the axis of the flow, $\vec U^{2}=e_t$</td>
+</tr>
+<tr>
+<td>$\langle\tilde X\rangle_{*}=\operatorname{Sc}(\tilde X\tilde X^{*})$</td>
+<td>the Hermitian norm</td>
+</tr>
+<tr>
+<td>$\lVert\vec U\rVert^{2}=\sum_k\lvert U_k\rvert^{2}$</td>
+<td>the size of the axis, one on the material slice</td>
+</tr>
+<tr>
+<td>$\tilde P_\Phi=i\frac{E}{c}e_t+\vec p$</td>
+<td>a material momentum, null when $\lvert\vec p\rvert=\lvert E\rvert/c$</td>
+</tr>
+<tr>
+<td>$\tilde\Pi=\tfrac12(e_t-i\vec n)$</td>
+<td>the material idempotent, Hermitian, along the direction $\vec n$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<p><strong>In this category.</strong> <a href="the-partition-two-invariants-and-four-regimes.html">The Partition: Two Invariants and Four Regimes</a> is the parent entry and states the two predicates and the four strata. <a href="the-region-of-mass-in-motion.html">Mass in Motion: The Region of Both Invariants</a> reads the open stratum, whose wall at $N=0$ is this entry. <a href="the-rest-frame-and-the-exceptional-point.html">The Rest Frame and the Exceptional Point</a> reads the other mixed stratum, which fails in the opposite description: there the modulus survives and the eigenbasis does not. <em>The Vacuum and the Nilpotent Ladder</em> reads the intersection of the two cones, which is this stratum's boundary and the part of the cone the apex and the nilpotent directions contribute; it is the entry that follows this one in the menu.</p>
+<p><strong>Mathematics.</strong> <a href="../articles_maths/the-n-degenerate-spectrally-regular-sector.html">The N-Degenerate, Spectrally Regular Sector</a> is the source; <a href="../articles_maths/the-eigenbasis-of-a-spectrally-regular-biquaternion.html">The Eigenbasis of a Spectrally Regular Biquaternion</a> owns the eigenbasis and the Peirce data on the whole spectrally regular part, <a href="../articles_maths/the-null-quadric-and-its-projective-geometry.html">The Null Quadric and Its Projective Geometry</a> owns the rulings and the base of the bundle, and <a href="../articles_maths/the-polar-decomposition-of-an-n-degenerate-biquaternion.html">The Polar Decomposition of an N-Degenerate Biquaternion</a> states where the modulus has no value.</p>
+<p><strong>In the archive, for the readings that predate this entry.</strong> <a href="the-n-degenerate-spectrally-regular-sector-the-massless-regime.html">The N-Degenerate, Spectrally Regular Sector: The Massless Regime</a> is the earlier statement of this stratum, with the light ray, the idempotent and the massless limit. <a href="the-zero-divisor-cone-and-the-massless-spectrum.html">The Zero-Divisor Cone and the Massless Spectrum</a> owns the cone, its rulings and the projective base. <a href="the-massless-limit-as-a-boundary-value-of-the-polar-word.html">The Massless Limit as a Boundary Value of the Polar Word</a> owns the divergence of the decomposition in the limit, which §<em>The Massless Limit Is a Limit in the Element Only</em> summarises. <a href="the-material-sector-four-vectors-interval-and-lorentz-action.html">The Material Sector: Four-Vectors, Interval and Lorentz Action</a> and <a href="the-spectral-reading-of-a-four-vector.html">The Spectral Reading of a Four-Vector</a> own the four-momentum chart and the light-cone frequencies. <a href="spin-and-the-three-elementary-carriers.html">Spin and the Three Elementary Carriers</a> owns the reach of the three carriers, which §<em>The Reach of the Three Carriers</em> summarises. <a href="the-massless-fluid-the-one-wave-where-both-charts-fail.html">The Massless Fluid: the One Wave Where Both Charts Fail</a> is the place in the archive where both descriptions fail at once, and is the natural continuation of §<em>The Limits</em>. <a href="norm-and-pairing-conventions.html">Norm and Pairing Conventions</a> fixes the letters and the signatures, and is the article to consult if a formula here disagrees with one elsewhere in the corpus.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
