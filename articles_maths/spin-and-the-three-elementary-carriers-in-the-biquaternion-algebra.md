@@ -2,13 +2,13 @@
 
 ## Introduction
 
-The biquaternion algebra carries exactly three subspaces that a field can occupy and that its own multiplications preserve: the centre, the minimal left ideals, and the material sector. Their spins are $0$, $\tfrac12$ and $1$. That list is the article's subject, and it is also its definition: **the spin of a field is the spin of its carrier**, and the spin of a carrier is read from the dimension of the representation space the carrier holds.
+The biquaternion algebra carries exactly three kinds of subspace that a field can occupy and that its own multiplications preserve: the centre, the minimal left ideals, and the material sector. Their spins are $0$, $\tfrac12$ and $1$. That list is the article's subject, and it is also its definition: **the spin of a field is the spin of its carrier**, and the spin of a carrier is read from the dimension of the representation space the carrier holds.
 
 **Why the definition is stated this way and not as a highest weight.** The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ is simple, so it has one isomorphism class of simple modules. A label attached to a module therefore cannot distinguish three spins: one module serves two of them, and the third is not a module at all. The algebra has three carriers and one module, so the label attaches to the carrier. The highest weight is then a *reading* of the carrier, and it is the reading this article develops in full once the carriers are in place.
 
-**What the article does.** It names the three carriers and their spins (§*The Three Carriers*), states the definition and the arithmetic behind it (§*The Spin Is the Dimension of the Carrier*), and then treats each carrier in turn: the centre for spin $0$, the ideals for spin $\tfrac12$, the material sector for spin $1$. The generators, the Casimir, the ladder and the classification follow as the machinery that computes the spin once the carrier is named. The article closes with the addition of angular momenta, the tensor products and the five uses of the word spin.
+**What the article does.** It names the three carriers and their spins (§*The Three Carriers*), states the definition and the arithmetic behind it (§*The Spin Is the Dimension of the Carrier*), and then treats each carrier in turn: the centre for spin $0$, the ideals for spin $\tfrac12$, the material sector for spin $1$. It also settles which of the two sectors is the carrier, since the two hold the same representation and only the material one is closed under the commutator (§*Why the Material Sector and Not the Informational One*). The generators, the Casimir, the ladder and the classification follow as the machinery that computes the spin once the carrier is named. The article closes with the addition of angular momenta, the tensor products and the five uses of the word spin.
 
-**The two actions.** Only two multiplications of the algebra make a subspace a carrier. Left multiplication acts irreducibly on each minimal left ideal and reducibly on the rest. Conjugation by the unit real quaternions — the adjoint action — fixes the centre and acts on the traceless part as the vector representation, that is, as spin one. Every carrier of this article is a carrier for one of those two actions, and the pair of them is the whole of the algebra's spin content.
+**The two actions.** Only two multiplications of the algebra make a subspace a carrier. Left multiplication acts irreducibly on each minimal left ideal and reducibly on the rest. Conjugation by the unit real quaternions — the adjoint action — fixes the centre and acts on the traceless part as the vector representation, that is, as spin one. Every carrier of this article is a carrier for one of those two actions, and the pair of them is the whole of the algebra's spin content. The second action preserves both sectors and gives them the same representation, so the spin does not choose between them. The commutator does: the material sector is closed under it and the informational one is not.
 
 **What no carrier carries.** No subspace of $\mathbb{B}$ carries spin $\tfrac32$ or spin $2$. The tensor square of the adjoint module does contain a spin-two summand, and the multiplication map kills it; the article proves that vanishing, since it is the reason the list stops where it does. A field of higher spin is a field with more than one index, built by tensoring the spin-$\tfrac12$ module and imposing a constraint, and it is not a subspace of the algebra.
 
@@ -63,19 +63,21 @@ which is $SU(2)$; its Lie algebra is $\mathfrak{g}=\mathbb{B}_{H}\cap\mathbb{B}_
 
 ## The Three Carriers
 
-**Definition (carrier).** A **carrier** is a nonzero subspace $W\subseteq\mathbb{B}$ that is invariant and irreducible under one of the algebra's own actions: left multiplication, or conjugation by $G$. The action is part of the carrier, because the same subspace can be reducible for one and irreducible for the other.
+**Definition (carrier and carrier type).** A **carrier** is a nonzero subspace $W\subseteq\mathbb{B}$ invariant under one of the algebra's own actions, left multiplication or conjugation by $G$. Its **representation space** is its irreducible part: $W$ itself when the action is irreducible on $W$, and the traceless part when the action fixes a line inside $W$. Its **type** is the isomorphism class of that representation space, and a carrier is **elementary** when that space is irreducible. A carrier of one type contained in a carrier of the same type is a **sub-carrier** of it, and two carriers of one type are **copies**. The action is part of the carrier, because the same subspace can be reducible for one and irreducible for the other.
 
-The algebra has three of them, and no more. They are the whole of the spin content of $\mathbb{B}$.
+The algebra has three elementary types, and no more. They are the whole of the spin content of $\mathbb{B}$. **It is the types that are three and not the spaces**: the third line below is the material sector, and the informational sector is a second carrier of the same type. §*Why the Material Sector and Not the Informational One* settles which of the two the article takes.
 
-| carrier | set | $\dim_{\mathbb{R}}$ | $\dim_{\mathbb{C}}$ | action | spin |
-|---|---|---|---|---|---|
-| the centre $\mathbb{B}_{C}$ | $\mathbb{C}e_t$ | $2$ | $1$ | conjugation; fixed pointwise | $0$ |
-| the ideals $S_\pm$ | $\mathbb{B}\tilde\Pi_\pm$ | $4$ | $2$ | left multiplication | $\tfrac12$ |
-| the material sector $\mathbb{B}_{\Phi}$ | $\mathrm{span}_{\mathbb{R}}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ | $4$ | — | conjugation | $1$, on its traceless part |
+| carrier | type | set | $\dim_{\mathbb{R}}$ | $\dim_{\mathbb{C}}$ | action | representation space | spin |
+|---|---|---|---|---|---|---|---|
+| the centre $\mathbb{B}_{C}$ | $\mathcal{V}_0$ | $\mathbb{C}e_t$ | $2$ | $1$ | conjugation; fixed pointwise | $\mathbb{C}e_t$ | $0$ |
+| the ideals $S_\pm$ | $\mathcal{V}_1$ | $\mathbb{B}\tilde\Pi_\pm$ | $4$ | $2$ | left multiplication | $S_\pm$ | $\tfrac12$ |
+| the material sector $\mathbb{B}_{\Phi}$ | $\mathcal{V}_2$ | $\mathrm{span}_{\mathbb{R}}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ | $4$ | — | conjugation | $\mathfrak{k}$, the traceless part | $1$ |
+
+Two of the three are irreducible as they stand. The third is one real dimension larger than its representation space, and the extra dimension is the fixed line $\mathbb{R}(ie_t)$, which carries the trivial representation beside the triplet. Nothing is lost by the enlargement and nothing is gained: the spin is the dimension of the representation space. The list gives one carrier for each type, so a sub-carrier of a listed carrier is not a further entry: the line and $\mathfrak{k}$ are the two pieces of the third, and the content is the triplet's.
 
 **The centre.** $\mathbb{B}_{C}=\mathbb{C}e_t$ is the fixed space of the adjoint action: $ue_tu^*=e_t$ for every unit $u$. It is a carrier of the adjoint action in the degenerate sense that the action is trivial on it, and its representation space is one-dimensional.
 
-**The ideals.** For $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$ the set $S_\pm=\mathbb{B}\tilde\Pi_\pm$ is a minimal left ideal: left multiplication acts on it irreducibly and it has no invariant left subspace. It is four real dimensions, two complex. Both ideals occur, they are exchanged by nothing in the algebra's structure, and $\mathbb{B}=S_+\oplus S_-$.
+**The ideals.** For a unit real axis $\vec u$ and $\tilde\Pi_\pm(\vec u)=\tfrac12(e_t\pm i\vec u)$, the set $S_\pm(\vec u)=\mathbb{B}\tilde\Pi_\pm(\vec u)$ is a minimal left ideal: left multiplication acts on it irreducibly and it has no invariant left subspace. The axis is a parameter of the family and not a datum of the algebra. It is four real dimensions, two complex. Both ideals occur, the algebra distinguishes neither, and $\mathbb{B}=S_+(\vec u)\oplus S_-(\vec u)$. The two are module-isomorphic, and the isomorphism is inner: right multiplication by the mixed unit $\vec\Upsilon_{+-}(\vec u)$ carries $S_+(\vec u)$ onto $S_-(\vec u)$.
 
 **The material sector.** $\mathbb{B}_{\Phi}$ is the anti-Hermitian subspace, four real dimensions, and it is not a complex subspace: multiplication by $i$ carries it to $\mathbb{B}_{\Psi}$. Under conjugation it splits as
 
@@ -85,9 +87,9 @@ $$
 
 because $u(ie_t)u^*=ie_t$ and $u\vec vu^*$ is again a real pure quaternion. The first summand is one-dimensional and the second is three-dimensional; the three-dimensional summand carries the vector representation, and that is the spin-one space.
 
-**The partner sector carries the same content.** $\mathbb{B}_{\Psi}=i\mathbb{B}_{\Phi}$ splits in the same way, $\mathbb{B}_{\Psi}=\mathbb{R}e_t\oplus i\mathfrak{k}$, and it carries the same $1\oplus0$ under conjugation, because $i$ is central and commutes with conjugation. The two sectors differ physically and not algebraically: $\mathbb{B}_{\Phi}$ is where the four-vectors and the momenta live, $\mathbb{B}_{\Psi}$ is where the states and the observables live. The corpus names $\mathbb{B}_{\Phi}$ as the spin-one carrier for that reason, and the algebraic content is shared.
+The split is a split of Lie algebras, not only of modules. The triple is closed under the commutator, $[\mathfrak{k},\mathfrak{k}]\subseteq\mathfrak{k}$, because $[\vec e_\mu,\vec e_\nu]=2\epsilon_{\mu\nu\lambda}\vec e_\lambda$ is real, and $ie_t$ is central in $\mathbb{B}$ and hence central in the sector. So $\mathbb{B}_{\Phi}$ is closed under the commutator as well, and as a real Lie algebra it is a direct sum, $\mathbb{B}_{\Phi}\cong\mathfrak{u}(1)\oplus\mathfrak{su}(2)$, with both summands ideals. The spin-one space is the derived algebra: $[\mathbb{B}_{\Phi},\mathbb{B}_{\Phi}]=\mathfrak{k}$.
 
-**Three and not four.** The classification is the classification of the left ideals of $M_2(\mathbb{C})$ together with the isotypic decomposition of the adjoint action, and both are complete: a left ideal is a sum of columns, the minimal ones are single columns, and the adjoint action on $\mathbb{B}$ has exactly the two isotypic components $Z$ and $V$. A fourth carrier would have to be a fourth isotypic component, and there is none. §*The Spectrum and the Criterion* states the same fact as a dimension count.
+**Three and not four.** The classification is the classification of the left ideals of $M_2(\mathbb{C})$ together with the isotypic decomposition of the adjoint action, and both are complete: a left ideal is a sum of columns, the minimal ones are single columns, and the adjoint action on $\mathbb{B}$ has exactly the two isotypic components $Z$ and $V$. A fourth type would have to be a fourth isotypic component, and there is none. The two sub-carriers of the sector are not a fourth and a fifth: they are the two pieces of the third, and the type belongs to the triplet. §*The Spectrum and the Criterion* states the same fact as a dimension count.
 
 **Two invariants, and the carrier fixes one.** The two elementary invariants of an element are
 
@@ -96,6 +98,16 @@ N=\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2,\qquad B^2=Q_x^2+Q_y^2+Q_z^2,
 $$
 
 the quaternionic norm and the vector square. On the ideals $N=0$ identically, because $\tilde\Pi_\pm^{\natural}=\tilde\Pi_\mp$ and $\tilde\Pi_+\tilde\Pi_-=0$. On the centre $B^2=0$ identically. On the material sector both are free. So the carrier decides where in the partition by $(N,B^2)$ a field's values can fall, and that partition is the subject of *The Three Elementary Carriers and the Four Sectors of Regularity and Degeneracy* in the physics corpus. The chain runs one way: spin, carrier, invariants, region.
+
+### Why the Material Sector and Not the Informational One
+
+**The objection first.** Conjugation by $G$ preserves Hermiticity exactly as it preserves anti-Hermiticity, and $i$ is central and commutes with it, so the two sectors are exchanged by multiplication by $i$, $i\mathbb{B}_{\Phi}=\mathbb{B}_{\Psi}$. The partner splits in the same way, $\mathbb{B}_{\Psi}=i\mathbb{B}_{\Phi}=\mathbb{R}e_t\oplus i\mathfrak{k}$, and it carries the same $1\oplus0$ under conjugation. Nothing in the action, in the weights or in the Casimir separates the two sectors, and a reader who swaps the letters keeps every spin of this article.
+
+**What separates them is the commutator.** The material sector is closed under it and the informational sector is not. On $\mathbb{B}_{\Phi}$ the bracket stays inside the sector, $[\mathbb{B}_{\Phi},\mathbb{B}_{\Phi}]=\mathfrak{k}$; on $\mathbb{B}_{\Psi}$ it does not, because $[\mathbb{B}_{\Psi},\mathbb{B}_{\Psi}]=\mathfrak{k}$ as well and $\mathfrak{k}$ lies outside $\mathbb{B}_{\Psi}$, the two sectors being complementary, $\mathbb{B}_{\Phi}\cap\mathbb{B}_{\Psi}=0$. No bracket of two Hermitian elements is Hermitian. So $\mathbb{B}_{\Phi}$ is the real Lie algebra $\mathfrak{u}(2)$, and $\mathbb{B}_{\Psi}$ is not a Lie algebra at all.
+
+**The generators are in the material sector.** The anti-Hermitian normalisation of the rotation generators, $g_k=-\tfrac12\vec e_k$, is an element of $\mathbb{B}_{\Phi}$; the Hermitian one is $i$ times it, $\tilde S_k=-i g_k$, and lies in $\mathbb{B}_{\Psi}$. The sector that holds the Lie algebra of the group is the material one, and on the triplet the action is the adjoint action of that Lie algebra on itself; that is the sense in which the spin sits in $\mathbb{B}_{\Phi}$ and not in its partner. The informational sector holds $i$ times the algebra and is where the group acts, not where it lives.
+
+**The letter follows the sector, and that part is a convention.** The two tokens are the corpus's, $\varphi$ material and $\psi$ informational (*Algebra and Element Conventions*, §*The Hermitian and Anti-Hermitian Subspaces*), and the spin-one carrier takes the letter of the sector it is. The choice of $\Phi$ is a convention with a warrant and not a theorem: the warrant is the closure under the commutator, and the convention is the reading, in which the four-vectors and the momenta live in $\mathbb{B}_{\Phi}$. A page that reads its states in $\mathbb{B}_{\Psi}$ and calls that sector the carrier makes no algebraic error; it changes the reading and keeps the spin.
 
 ## The Spin Is the Dimension of the Carrier
 
@@ -113,7 +125,7 @@ so that $\dim_{\mathbb{C}}V_W=2s+1$. The spin is a scalar label, not a vector, a
 
 **Dimension alone does not give the spin.** Two of the three carriers are four real-dimensional, and their spins are $\tfrac12$ and $1$. What separates them is the action and the invariant line: left multiplication has no invariant line inside $S_\pm$, and the adjoint action on $\mathbb{B}_{\Phi}$ has one, the line of $ie_t$. So the definition is the dimension *of the representation space*, not the dimension of the carrier, and the difference between the two is exactly the trivial summand.
 
-**The definition is not a label of an element.** An element has whatever carrier its field has. The same element can be read in two carriers when the two meet, and they meet on the lines $\mathbb{R}ie_t$ and $i\mathbb{R}e_t$ — shared by the centre and the material sector — and on $\mathbb{R}i\tilde\Pi_\pm$, shared by the ideals and the material sector. The corpus uses both coincidences: $i\tilde\Pi_\pm$ is at once a lightlike four-vector and a spinor value, and $ie_t$ is at once the scalar and the timelike four-vector.
+**The definition is not a label of an element.** An element has whatever carrier its field has. The same element can be read in two carriers when the two meet, and they meet on the line $\mathbb{R}(ie_t)=\mathbb{C}e_t\cap\mathbb{B}_{\Phi}$, shared by the centre and the material sector, and on the lines $\mathbb{R}\bigl(i\tilde\Pi_\pm(\vec u)\bigr)$, shared by the ideals and the material sector. The corpus uses both coincidences: $i\tilde\Pi_\pm(\vec u)$ is at once a lightlike four-vector and a spinor value, and $ie_t$ is at once the scalar and the timelike four-vector.
 
 **The definition is not a label of a module either.** There is one simple module, and the carriers are three. A module statement can say $\tfrac12$; it can say $\tfrac12$ any number of times; it cannot say $0$ or $1$ except by leaving the module category, which is what the centre and the adjoint action do.
 
@@ -154,7 +166,7 @@ The group generated is $G=SU(2)$, which is the double cover of $SO(3)$.
 
 Consequently $\operatorname{ad}_{\tilde S_k}$ is self-adjoint and $\operatorname{ad}_{g_k}$ is skew-adjoint; $L_{\tilde S_k}$ is self-adjoint on the defining module.
 
-**The generator is the same object on all three carriers.** $\tilde S_3$ acts on the centre as $0$, on each ideal with the eigenvalues $\pm\tfrac12$, and on the material sector with the eigenvalues $0,\pm1$. One element, three carriers, three spectra. That is the whole of the difference between the spins, and the sections that follow compute the three spectra.
+**The generator is the same object on all three carriers.** Fix a unit $\vec u$ and take $\tilde S(\vec u)=\vec u\cdot\vec S$; no axis is preferred by the algebra, and any unit will do. It acts on the centre as $0$, on each ideal with the eigenvalues $\pm\tfrac12$, and on the material sector with the eigenvalues $0,\pm1$. One element, one axis, three carriers, three spectra. That is the whole of the difference between the spins, and the sections that follow compute the three spectra.
 
 ## The Spin-Zero Carrier: the Centre
 
@@ -162,7 +174,7 @@ Let $Z=\mathbb{C}e_t=\mathbb{B}_{C}$.
 
 **Proposition.** $Z$ is fixed by the adjoint action, its Casimir is $0$, and its spin is $0$.
 
-*Proof.* For $u\in G$, $ue_tu^*=uu^*e_t=e_t$, since $e_t$ is central. The generator acts as $\operatorname{ad}_{\tilde S_3}e_t=0$, so every weight is $0$ and the Casimir, $\sum_k\operatorname{ad}_{\tilde S_k}^2$, vanishes on $Z$. With $\dim_{\mathbb{C}}Z=1$ the definition gives $s=0$.
+*Proof.* For $u\in G$, $ue_tu^*=uu^*e_t=e_t$, since $e_t$ is central. The generator acts as $\operatorname{ad}_{\tilde S(\vec u)}e_t=0$ for every unit $\vec u$, so every weight is $0$ and the Casimir, $\sum_k\operatorname{ad}_{\tilde S_k}^2$, vanishes on $Z$. With $\dim_{\mathbb{C}}Z=1$ the definition gives $s=0$.
 
 **What the spin-zero carrier is not.** It is not a module under left multiplication: $L_{\tilde Q}Z=\mathbb{C}\tilde Q$, which is $\mathbb{B}$ for a unit $\tilde Q$, not a line. The centre is a carrier of the adjoint action only. That asymmetry is why the corpus's physics states that a scalar field "escapes the state module", and the algebraic content is the one line above: the scalar is not in the module, it is in the centre.
 
@@ -170,49 +182,64 @@ Let $Z=\mathbb{C}e_t=\mathbb{B}_{C}$.
 
 ## The Spin-Half Carrier: the Two Ideals
 
-The operator carries the tilde, $\tilde S_k$; the simple module and its minimal left ideals do not, and are written $S$ and $S_\pm(\vec u)$.
+**No axis is chosen.** A minimal left ideal is $\mathbb{B}\tilde\Pi$ for an idempotent, and every idempotent of this algebra is built from a direction, $\tilde\Pi_+(\vec u)=\tfrac12(e_t+i\vec u)$. There is therefore no such thing as *the* minimal left ideal, only the sphere of them. A section that writes the one at $\vec e_z$ and calls it the carrier has replaced a family by a member of it. The family is the object, the member is a coordinate, and this section is written at a unit $\vec u$.
 
-Let
+The rule is the one of *Why AXF Matrices instead of Pauli and Gamma Matrices*, §*Why the Third Matrix Is the Diagonal One*: the third of the three Pauli arrays is the diagonal one because $\vec e_z$ built the idempotents of the display, and the diagonal is the footprint of that choice and not a property of $\vec e_z$. The defect also appears in words. A sentence that reads "$w_+=\tilde\Pi_+$ and $w_-=\tfrac12(i\vec e_x+\vec e_y)$" looks like a statement about the algebra and is a statement about a frame.
 
-$$
-\tilde\Pi_+=\tfrac12(e_t+i\vec e_z),\qquad S_+=\mathbb{B}\tilde\Pi_+.
-$$
+**The operator and the module.** The generator is one element per direction, $\tilde S(\vec u)=\vec u\cdot\vec S=\sum_k u_k\tilde S_k$, with $\tilde S_k=\tfrac12 i\vec e_k$. The operator carries the tilde; the module and its ideals do not, and are written $S$ and $S_\pm(\vec u)$.
 
-Then $\tilde\Pi_+$ is an idempotent of trace $1$ and rank one, and $S_+$ is a minimal left ideal, hence a simple module, of complex dimension $2$. A basis is
-
-$$
-w_+=\tilde\Pi_+,\qquad w_-=\vec\Upsilon_{-+}=\tfrac12(i\vec e_x+\vec e_y),
-$$
-
-and the action of the generators is
-
-$$
-\tilde S_3w_\pm=\pm\tfrac12 w_\pm,\qquad \tilde S_+w_+=0,\qquad \tilde S_-w_+=w_-,\qquad \tilde S_+w_-=w_+,\qquad \tilde S_-w_-=0.
-$$
-
-**Proposition.** On $S_+$, $C=\tfrac34 e_t$ and $s=\tfrac12$.
-
-*Proof.* The weights are $\pm\tfrac12$, so the representation space is two-dimensional and the definition gives $s=\tfrac12$ and $C=s(s+1)=\tfrac34$; directly, $(\tilde S_1^2+\tilde S_2^2+\tilde S_3^2)w_+=\tfrac14(1+1+1)w_+$.
-
-**The second plane.** The idempotent $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$ is orthogonal to $\tilde\Pi_+$, and
-
-$$
-\mathbb{B}=S_+\oplus S_-,\qquad S_\pm=\mathbb{B}\tilde\Pi_\pm.
-$$
-
-The two summands are isomorphic as $\mathbb{B}$-modules and orthogonal for the trace form. They are two carriers of one spin, not two spins.
-
-**The copies at an axis.** For a unit real $\vec u$, put
+**The carrier.** For unit real $\vec u$,
 
 $$
 \tilde\Pi_\pm(\vec u)=\tfrac12(e_t\pm i\vec u),\qquad S_\pm(\vec u)=\mathbb{B}\tilde\Pi_\pm(\vec u).
 $$
 
-Each $S_\pm(\vec u)$ is a minimal left ideal, and $\mathbb{B}=S_+(\vec u)\oplus S_-(\vec u)$ for every $\vec u$.
+$\tilde\Pi_\pm(\vec u)$ is an idempotent of trace $1$ and rank one, the two are orthogonal, $\tilde\Pi_+(\vec u)\tilde\Pi_-(\vec u)=0$, and they sum to the identity, $\tilde\Pi_+(\vec u)+\tilde\Pi_-(\vec u)=e_t$. Hence
 
-**Proposition (the sphere of minimal left ideals).** The map $\vec u\mapsto S_+(\vec u)$ is a bijection from the unit sphere of $\mathfrak{g}$ onto the set of minimal left ideals of $\mathbb{B}$.
+$$
+\mathbb{B}=S_+(\vec u)\oplus S_-(\vec u),
+$$
 
-*Proof.* The minimal left ideals of $M_2(\mathbb{C})$ are the sets of matrices whose rows lie in a fixed line of $\mathbb{C}^2$, and the lines are parametrised by $\mathbb{CP}^1\cong S^2$. The idempotent $\tilde\Pi_+(\vec u)$ is the orthogonal projection onto the $+1$ eigenspace of $\vec u\cdot\vec\sigma$, and $\vec u\mapsto$ that line is the standard identification.
+with the two summands orthogonal for the trace form, isomorphic as $\mathbb{B}$-modules, and each a minimal left ideal, hence a simple module, of complex dimension $2$. They are two carriers of one spin, not two spins.
+
+**A basis, and what it costs.** A basis of $S_+(\vec u)$ needs coordinates, and coordinates need a frame. Let $(\vec u,\vec v,\vec w)$ be a right-handed orthonormal frame of the rotation algebra, $\vec u\times\vec v=\vec w$. Then
+
+$$
+w_+(\vec u)=\tilde\Pi_+(\vec u),\qquad w_-(\vec u)=\vec\Upsilon_{-+}(\vec u)=\tfrac12(i\vec v+\vec w)
+$$
+
+is a basis of $S_+(\vec u)$, with $\vec\Upsilon_{-+}(\vec u)$ a nonzero element of the mixed line $\mathbb{B}_{-+}$. **The module depends on the axis $\vec u$ alone; the basis depends on the axis and on the frame $(\vec v,\vec w)$.** The axis is a parameter of a family that the algebra itself supplies, and the frame is a choice a page makes; only the second carries a direction that no statement needs.
+
+**The generators on the basis.** Write $\tilde S_\pm(\vec u)=\vec v\cdot\vec S\pm i\,\vec w\cdot\vec S$. Then
+
+$$
+[\tilde S(\vec u),\tilde S_\pm(\vec u)]=\pm\tilde S_\pm(\vec u),\qquad [\tilde S_+(\vec u),\tilde S_-(\vec u)]=2\tilde S(\vec u),
+$$
+
+and on the basis
+
+$$
+\tilde S(\vec u)w_\pm(\vec u)=\pm\tfrac12 w_\pm(\vec u),\qquad
+\tilde S_+(\vec u)w_+(\vec u)=0,\qquad
+\tilde S_-(\vec u)w_+(\vec u)=w_-(\vec u),
+$$
+
+$$
+\tilde S_+(\vec u)w_-(\vec u)=w_+(\vec u),\qquad
+\tilde S_-(\vec u)w_-(\vec u)=0.
+$$
+
+**The weight is the axis's and the ladder is the frame's.** Rotate the pair $(\vec v,\vec w)$ inside the plane orthogonal to $\vec u$ through an angle $\theta$: the two weights and the two weight vectors are unchanged, while $\tilde S_\pm(\vec u)$ is multiplied by the phase $e^{\mp i\theta}$. So $\tilde S_+(\vec u)$ and $\tilde S_-(\vec u)$ are not structure of the module but a frame written as an operator, and a reader who takes them for intrinsic has fixed a frame without saying so — the same defect, one level down. What is intrinsic is the pair of weight vectors and the two weights.
+
+**Proposition.** On $S_+(\vec u)$, for every unit $\vec u$, the Casimir is $C=\tfrac34 e_t$ and the spin is $s=\tfrac12$.
+
+*Proof.* The weights are $\pm\tfrac12$ at every axis, so the representation space is two-dimensional and the definition gives $s=\tfrac12$ and $C=s(s+1)=\tfrac34$. Directly, each generator squares to a central element, $\tilde S_k^2=\tfrac14 e_t$, so
+
+$$
+(\tilde S_1^2+\tilde S_2^2+\tilde S_3^2)w_+(\vec u)=\tfrac34 w_+(\vec u)
+$$
+
+for every $\vec u$, because $e_t$ acts as the identity on the module. No axis enters the computation, which is why the number is one number and not one per axis.
 
 **Proposition (the states in the two copies).** The idempotent $\tilde\Pi_+(\vec u)$ is the weight $+\tfrac12$ vector of $S_+(\vec u)$, and $\tilde\Pi_-(\vec u)$ is the weight $-\tfrac12$ vector of $S_-(\vec u)$. That is,
 
@@ -223,13 +250,34 @@ $$
 
 *Proof.* $(\vec u\cdot\vec S)\tilde\Pi_+(\vec u)=\tfrac12(i\vec u)\tfrac12(e_t+i\vec u)=\tfrac12\tilde\Pi_+(\vec u)$, because $(i\vec u)^2=+e_t$ and $i\vec u$ commutes with $\tilde\Pi_+(\vec u)$. The other sign is the same computation with $\vec u$ replaced by $-\vec u$.
 
-Each vector lies in its own copy, and the two are not two vectors of one module. In $S_+(\vec e_z)$ the weight $-\tfrac12$ vector is $w_-$, which is nilpotent, $w_-^2=0$. The distinction is the reason the two signs label two copies and not a doublet.
+**Each lies in its own copy.** The two vectors are not two vectors of one module: $\tilde\Pi_+(\vec u)$ lies in $S_+(\vec u)$ and $\tilde\Pi_-(\vec u)$ in $S_-(\vec u)$, and the two copies are distinct ideals. In $S_+(\vec u)$ the weight $-\tfrac12$ vector is $\vec\Upsilon_{-+}(\vec u)$, and it is nilpotent for every $\vec u$, because the two units of a right-handed frame anticommute and their cross terms therefore cancel:
 
-**The invariant.** $N=0$ on both ideals identically: $\tilde\Pi_+^{\natural}=\tilde\Pi_-$, so $\tilde\Pi_+\tilde\Pi_+^{\natural}=\tilde\Pi_+\tilde\Pi_-=0$, and every member is $\tilde Q\tilde\Pi_+$ with $\tilde Q\tilde\Pi_+\tilde\Pi_-\tilde Q^{\natural}=0$. The ideals are the carrier of the degenerate values of $N$, and no ideal holds a member with $N\neq0$.
+$$
+\vec\Upsilon_{-+}(\vec u)^2=\tfrac14\bigl(\vec v+i\vec w\bigr)^2=\tfrac14\bigl(\vec v^2+i(\vec v\vec w+\vec w\vec v)+(i\vec w)^2\bigr)=\tfrac14\bigl(-e_t+0+e_t\bigr)=0,
+$$
 
-**The double cover.** On $S_+$, $\exp(-2\pi i\tilde S_3)=-e_t$. On the adjoint module of the next section, $\exp(-2\pi i\operatorname{ad}_{\tilde S_3})=\operatorname{id}$. The first is the spinor sign and the second is the vector sign; the algebra produces both, and the difference is the parity of the weights.
+Nilpotence is the axis-free statement; the axis appears only when the letter $\vec\Upsilon_{-+}$ is written out. That is the reason the two signs label two copies and not a doublet.
 
-*Proof.* The eigenvalues of $\tilde S_3$ on $S_+$ are $\pm\tfrac12$, so the exponential is $e^{\pm\pi i}=-1$. The eigenvalues of $\operatorname{ad}_{\tilde S_3}$ on $\mathbb{B}$ are $0,\pm1$, so the exponential is $1$.
+**Proposition (the sphere of minimal left ideals).** The map $\vec u\mapsto S_+(\vec u)$ is a bijection from the unit sphere of the rotation algebra onto the set of minimal left ideals of $\mathbb{B}$.
+
+*Proof.* The minimal left ideals of $M_2(\mathbb{C})$ are the sets of matrices whose rows lie in a fixed line of $\mathbb{C}^2$, and the lines are parametrised by $\mathbb{CP}^1\cong S^2$. The idempotent $\tilde\Pi_+(\vec u)$ is the orthogonal projection onto the $+1$ eigenspace of the Hermitian generator in the direction $\vec u$, and $\vec u\mapsto$ that line is the standard identification.
+
+**The invariant.** $N=0$ on both ideals identically: $\tilde\Pi_+(\vec u)^{\natural}=\tilde\Pi_-(\vec u)$, so $\tilde\Pi_+(\vec u)\tilde\Pi_+(\vec u)^{\natural}=\tilde\Pi_+(\vec u)\tilde\Pi_-(\vec u)=0$, and every member is $\tilde Q\tilde\Pi_+(\vec u)$ with $\tilde Q\tilde\Pi_+(\vec u)\tilde\Pi_-(\vec u)\tilde Q^{\natural}=0$. The ideals are the carrier of the degenerate values of $N$, and no ideal holds a member with $N\neq0$.
+
+**The double cover.** On $S_+(\vec u)$, $\exp(-2\pi i\tilde S(\vec u))=-e_t$ for every $\vec u$. On the adjoint carrier of the next section, $\exp(-2\pi i\operatorname{ad}_{\tilde S(\vec u)})=\operatorname{id}$. The first is the spinor sign and the second is the vector sign; the algebra produces both, and the difference is the parity of the weights, not a property of the axis.
+
+*Proof.* The eigenvalues of $\tilde S(\vec u)$ on $S_+(\vec u)$ are $\pm\tfrac12$, so the exponential is $e^{\pm\pi i}=-1$. The eigenvalues of $\operatorname{ad}_{\tilde S(\vec u)}$ on $\mathbb{B}$ are $0,\pm1$, so the exponential is $1$.
+
+**The instance.** One axis, given once so that the letters of this article can be matched to the corpus's older pages, and flagged as one: at $\vec u=\vec e_z$ with $(\vec v,\vec w)=(\vec e_x,\vec e_y)$,
+
+$$
+\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z),\qquad
+\vec\Upsilon_{-+}=\tfrac12(i\vec e_x+\vec e_y),\qquad
+\tilde S_3w_\pm=\pm\tfrac12 w_\pm,\qquad
+\tilde S_+=\tfrac12\bigl(i\vec e_x-\vec e_y\bigr).
+$$
+
+Nothing in this section needs it, and no result changes if the axis is moved: $\vec e_z$ is the unit that builds this display and is otherwise one of three. The corpus's older pages write the weight $-\tfrac12$ vector of $S_+(\vec e_z)$ as $w_-=\tfrac12(i\vec e_x+\vec e_y)$; the same vector at another axis is $\vec\Upsilon_{-+}(\vec u)$, and the statement that it is nilpotent is the statement that survives the change.
 
 ## The Spin-One Carrier: the Material Sector
 
@@ -245,25 +293,30 @@ $$
 \mathbb{B}=Z\oplus V,\qquad Z=\mathbb{C}e_t,\qquad V=\ker\operatorname{tr}=\operatorname{span}_{\mathbb{C}}\{\vec e_x,\vec e_y,\vec e_z\},
 $$
 
-with $Z\cong\mathcal{V}_0$ and $V\cong\mathcal{V}_2$. A weight basis of $V$ is
+with $Z\cong\mathcal{V}_0$ and $V\cong\mathcal{V}_2$. There is no preferred axis here either, so the weight basis is written at a unit $\vec u$ and a right-handed orthonormal frame $(\vec u,\vec v,\vec w)$:
 
 $$
-v_+=\vec e_x+i\vec e_y,\qquad v_-=\vec e_x-i\vec e_y,\qquad v_0=\vec e_z,
+v_+(\vec u)=\vec v+i\vec w,\qquad v_-(\vec u)=\vec v-i\vec w,\qquad v_0(\vec u)=\vec u,
 $$
 
 with
 
 $$
-[\tilde S_3,v_\pm]=\pm v_\pm,\qquad [\tilde S_3,v_0]=0,\qquad [\tilde S_+,v_+]=0,\qquad [\tilde S_-,v_+]=-2v_0,\qquad [\tilde S_-,v_0]=v_-.
+[\tilde S(\vec u),v_\pm(\vec u)]=\pm v_\pm(\vec u),\qquad [\tilde S(\vec u),v_0(\vec u)]=0,
 $$
+$$
+[\tilde S_+(\vec u),v_+(\vec u)]=0,\qquad [\tilde S_-(\vec u),v_+(\vec u)]=-2v_0(\vec u),\qquad [\tilde S_-(\vec u),v_0(\vec u)]=v_-(\vec u).
+$$
+
+The three vectors are the frame's and the weights are the axis's; the module is the whole of $V$ and needs neither. At $\vec u=\vec e_z$ with $(\vec v,\vec w)=(\vec e_x,\vec e_y)$ this is the display $v_\pm=\vec e_x\pm i\vec e_y$, $v_0=\vec e_z$ of the corpus's older pages.
 
 **Proposition.** On $Z$ the Casimir is $0$ and the spin is $0$; on $V$ the Casimir is $2$ and the spin is $1$, so the material sector has spin $1$ on its traceless part and $0$ on its trace.
 
-*Proof.* The weights of $V$ are $\pm1,0$, so the representation space is three-dimensional and the definition gives $s=1$ and $C=s(s+1)=2$. Directly, $\sum_k\operatorname{ad}_{\tilde S_k}^2$ acts on $v_+$ as $2v_+$ and on $v_0$ as $2v_0$. The line $\mathbb{R}(ie_t)$ is fixed by the same argument as the centre.
+*Proof.* The weights of $V$ are $\pm1,0$, so the representation space is three-dimensional and the definition gives $s=1$ and $C=s(s+1)=2$. Directly, $\sum_k\operatorname{ad}_{\tilde S_k}^2$ acts on $v_+(\vec u)$ as $2v_+(\vec u)$ and on $v_0(\vec u)$ as $2v_0(\vec u)$, for every frame. The line $\mathbb{R}(ie_t)$ is fixed by the same argument as the centre.
 
 **The third carrier is real and the representation is complexified.** $\mathbb{B}_{\Phi}$ is not a complex subspace, so the weights $\pm1,0$ belong to the complexified picture. §*Real Forms and the Rotation Subgroup* separates the two: the real carrier is $\mathfrak{k}$, and the complex carrier $\mathcal{V}_2$ is one object over $\mathbb{C}$ and two copies of one object over $\mathbb{R}$.
 
-**Remark (the highest-weight vector is nilpotent).** The vector $v_+=\vec e_x+i\vec e_y$ is a highest-weight vector of the adjoint, and $v_+^2=0$ in the algebra. The highest-weight vector of the adjoint is a nilpotent element; the same vector is not null for the trace form, which is positive definite. The two notions of length, the product and the form, must be kept apart.
+**Remark (the highest-weight vector is nilpotent).** The vector $v_+(\vec u)=\vec v+i\vec w$ is a highest-weight vector of the adjoint for every frame, and $v_+(\vec u)^2=0$ in the algebra, by the anticommutation of the two units of the frame. The highest-weight vector of the adjoint is a nilpotent element; the same vector is not null for the trace form, which is positive definite. The two notions of length, the product and the form, must be kept apart.
 
 **Remark (why the shortcut fails).** One cannot compute the adjoint Casimir as $\operatorname{ad}_{\tilde S_k^2}$, because $\operatorname{ad}$ is a representation of the Lie algebra and not of the associative algebra. For example,
 
@@ -287,11 +340,13 @@ The three carriers are in place. What follows computes their spins a second time
 
 *Proof.* For $u\in G$, $\rho(u)\rho(\vec u\cdot\vec S)\rho(u)^{-1}=\rho\bigl(\operatorname{Ad}_u(\vec u\cdot\vec S)\bigr)=\rho\bigl((R\vec u)\cdot\vec S\bigr)$, with $R$ the rotation. The map $G\to SO(3)$ is surjective, so all unit vectors are conjugate, and conjugate operators have the same spectrum.
 
-Let
+**A frame, declared once.** This section uses a right-handed orthonormal frame $(\vec u,\vec v,\vec w)$, with $\tilde S(\vec u)=\vec u\cdot\vec S$ as in §*The Spin-Half Carrier*. It is a coordinate choice and nothing below depends on it. The Casimir is
 
 $$
-C=\tilde S_1^2+\tilde S_2^2+\tilde S_3^2\in U(\mathfrak{g}).
+C=(\vec u\cdot\vec S)^2+(\vec v\cdot\vec S)^2+(\vec w\cdot\vec S)^2=\tilde S_1^2+\tilde S_2^2+\tilde S_3^2\in U(\mathfrak{g}),
 $$
+
+and the two expressions are equal for every frame, because the coefficient of $\tilde S_i\tilde S_j$ in the first is $\sum_a n_{a,i}n_{a,j}=\delta_{ij}$ and the first is therefore $\sum_i\tilde S_i^2$ with no ordering question. Every statement below is a statement about the algebra with the frame removed.
 
 **Proposition (centrality).** $[C,\tilde S_l]=0$ for $l=1,2,3$.
 
@@ -303,25 +358,27 @@ $$
 \rho(C)=s(s+1)\operatorname{id}_W,\qquad \dim_{\mathbb{C}}W=2s+1,\qquad s\in\tfrac12\mathbb{Z}_{\ge0}.
 $$
 
-*Proof.* Choose an eigenvector $v$ of $\rho(\tilde S_3)$ with the maximal eigenvalue $s$. Then $\rho(\tilde S_+)v=0$, since otherwise $\rho(\tilde S_+)$ would produce an eigenvector of weight $s+1$. Put $v_k=\rho(\tilde S_-)^kv$ and $m_k=s-k$. The span of the $v_k$ is invariant, so it is all of $W$. Since $\tilde S_+\tilde S_-=C-\tilde S_3^2+\tilde S_3$, one has $\rho(\tilde S_+\tilde S_-)v_k=(2s-k)(k+1)v_k$. If the string terminates, so that $v_{k+1}=0$ with $v_k\neq0$, then $0=\rho(\tilde S_+)v_{k+1}=(2s-k)(k+1)v_k$, so $k=2s$. Hence $v_0,\dots,v_{2s}$ are a basis and $\dim W=2s+1$. On $v_0$, $\rho(C)v_0=(s^2+s)v_0=s(s+1)v_0$, because $\rho(\tilde S_+\tilde S_-)v_0=2s\,v_0$ and $\rho(C)=\rho(\tilde S_+\tilde S_-)+\rho(\tilde S_3)^2-\rho(\tilde S_3)$.
+*Proof.* Choose an eigenvector $v$ of $\rho(\tilde S(\vec u))$ with the maximal eigenvalue $s$, the axis being any unit and the answer being independent of it. Then $\rho(\tilde S_+(\vec u))v=0$, since otherwise that operator would produce an eigenvector of weight $s+1$. Put $v_k=\rho(\tilde S_-(\vec u))^kv$. The span of the $v_k$ is invariant, so it is all of $W$. Since $\tilde S_+(\vec u)\tilde S_-(\vec u)=C-\tilde S(\vec u)^2+\tilde S(\vec u)$, one has $\rho(\tilde S_+(\vec u)\tilde S_-(\vec u))v_k=(2s-k)(k+1)v_k$. If the string terminates, so that $v_{k+1}=0$ with $v_k\neq0$, then $0=\rho(\tilde S_+(\vec u))v_{k+1}=(2s-k)(k+1)v_k$, so $k=2s$. Hence $v_0,\dots,v_{2s}$ are a basis and $\dim W=2s+1$. On $v_0$, $\rho(C)v_0=(s^2+s)v_0=s(s+1)v_0$, because $\rho(\tilde S_+(\vec u)\tilde S_-(\vec u))v_0=2s\,v_0$ and $\rho(C)=\rho(\tilde S_+(\vec u)\tilde S_-(\vec u))+\rho(\tilde S(\vec u))^2-\rho(\tilde S(\vec u))$.
 
 The theorem is the converse of the definition: the definition reads the spin off the dimension, and the theorem recovers the dimension from the spin. Neither replaces the other, and the definition comes first because the dimension is what the algebra supplies.
 
-**The ladder operators** are
+**The ladder operators** are the frame's,
 
 $$
-\tilde S_\pm=\tilde S_1\pm i\tilde S_2,\qquad [\tilde S_3,\tilde S_\pm]=\pm\tilde S_\pm,\qquad [\tilde S_+,\tilde S_-]=2\tilde S_3.
+\tilde S_\pm(\vec u)=\vec v\cdot\vec S\pm i\,\vec w\cdot\vec S,\qquad [\tilde S(\vec u),\tilde S_\pm(\vec u)]=\pm\tilde S_\pm(\vec u),\qquad [\tilde S_+(\vec u),\tilde S_-(\vec u)]=2\tilde S(\vec u),
 $$
+
+with $\vec u$ the axis and $(\vec v,\vec w)$ the frame inside the plane orthogonal to it. At $\vec u=\vec e_z$ they read $\tilde S_\pm=\tilde S_1\pm i\tilde S_2$, which is the corpus's older display and is one instance of the line above.
 
 **Theorem (the irreducible modules).** For every integer $n\ge0$ there is, up to isomorphism, exactly one irreducible module $\mathcal{V}_n$ of dimension $n+1$. In a basis $v_0,\dots,v_n$,
 
 $$
-\tilde S_3v_k=\bigl(k-\tfrac{n}{2}\bigr)v_k,\qquad
-\tilde S_+v_k=\sqrt{(n-k)(k+1)}\,v_{k+1},\qquad
-\tilde S_-v_k=\sqrt{k(n-k+1)}\,v_{k-1},
+\tilde S(\vec u)v_k=\bigl(k-\tfrac{n}{2}\bigr)v_k,\qquad
+\tilde S_+(\vec u)v_k=\sqrt{(n-k)(k+1)}\,v_{k+1},\qquad
+\tilde S_-(\vec u)v_k=\sqrt{k(n-k+1)}\,v_{k-1},
 $$
 
-with $\tilde S_+v_n=0$ and $\tilde S_-v_0=0$. The spin is $s=n/2$ and the Casimir is $s(s+1)$.
+with $\tilde S_+(\vec u)v_n=0$ and $\tilde S_-(\vec u)v_0=0$. The spin is $s=n/2$ and the Casimir is $s(s+1)$, for every frame.
 
 *Proof.* The preceding theorem gives existence and the dimension. The formulas are the standard ones, and they satisfy the brackets directly. Uniqueness follows because a highest-weight vector generates the module and its weight fixes $n$.
 
@@ -363,18 +420,19 @@ each value once, so that $\dim_{\mathbb{C}}W=2s+1$.
 
 **The weight string is the spin.** The word spin is the length of the string, read on the carriers of this article. It is the same criterion that *Spinors as Peirce Coordinates* applies to the column of a matrix model, where the half-root has the weight $-\tfrac12$ with multiplicity $N-1$ and the string $+\tfrac12,-\tfrac12$ occurs exactly when $N=2$; the "each occurring once" of the spinor definition there is the criterion above.
 
-**The spectra of the three carriers.** With $\vec u=\vec e_z$ and the generator $\tilde S_3$, the computations of the preceding sections give the following table.
+**The spectra of the three carriers.** With any unit axis $\vec u$ and the generator $\tilde S(\vec u)$, the computations of the preceding sections give the following table. The spectra do not depend on the axis, so none is written.
 
-| carrier | action | $\dim$ of the carrier | weights of $\tilde S_3$ | string | verdict |
+| carrier | action | $\dim$ of the carrier | weights of $\tilde S(\vec u)$ | string | verdict |
 |---|---|---|---|---|---|
 | $\mathbb{B}_{C}$ | conjugation | $1$ complex | $0$ | complete | irreducible, $\mathcal{V}_0$ |
 | $S_\pm(\vec u)$ | left multiplication | $2$ complex | $+\tfrac12,\ -\tfrac12$ | complete | irreducible, $\mathcal{V}_1$ |
-| $\mathbb{B}_{\Phi}$ | conjugation | $4$ real, $3$ traceless | $+1,\ 0,\ -1$ on $\mathfrak{k}$ | complete | irreducible on $\mathfrak{k}$, $\mathcal{V}_2$ |
+| $\mathbb{B}_{\Phi}$ | conjugation | $4$ real | $+1,\ 0,\ 0,\ -1$ | doubled at $0$ | reducible, $\mathcal{V}_0\oplus\mathcal{V}_2$ |
+| $\mathfrak{k}\subset\mathbb{B}_{\Phi}$ | conjugation | $3$ real | $+1,\ 0,\ -1$ | complete | irreducible, $\mathcal{V}_2$ |
 | $\mathbb{B}$ | left multiplication | $4$ complex | $+\tfrac12,\ +\tfrac12,\ -\tfrac12,\ -\tfrac12$ | doubled | reducible, $2\mathcal{V}_1$ |
 | $\mathbb{B}$ | conjugation | $4$ complex | $+1,\ 0,\ 0,\ -1$ | doubled at $0$ | reducible, $\mathcal{V}_0\oplus\mathcal{V}_2$ |
 | four-vector | two-sided action | $4$ complex | $+1,\ 0,\ 0,\ -1$ | doubled at $0$ | reducible, $\mathcal{V}_2\oplus\mathcal{V}_0$ |
 
-**Remark (the last three rows).** The adjoint action on all of $\mathbb{B}$ and the four-vector of the two-sided action present the same multiset to the rotation subgroup. The repeated weight $0$ is the centre in the first case and the singlet summand in the second. Two carriers, one spectrum. The material sector sits between them: it is the part of the adjoint picture on which the invariant line is separated, so the string is complete and the carrier is irreducible.
+**Remark (the last four rows).** The adjoint action on all of $\mathbb{B}$, on one sector and on the four-vector of the two-sided action present the same multiset to the rotation subgroup, $+1,0,0,-1$. The repeated weight $0$ is the centre in the first case, the fixed line in the second and the singlet summand in the third. Three carriers, one spectrum. The representation space of the sector is the triplet inside it, and that is the row that reads as complete.
 
 **The four-vector of the two-sided action.** The carriers above are the ones that multiplication on the algebra produces. The algebra also carries the four-vector of the two-sided action $a\mapsto gag^{*}$, which is the representation $(\tfrac12,\tfrac12)$ of the Lorentz group, of complex dimension four. On the rotation subgroup it restricts to
 
@@ -403,7 +461,7 @@ This is impossible. The three spins are the union of the constituents of two act
 
 **Corollary.** The spins of the three carriers are $0$, $\tfrac12$ and $1$, and their representation spaces have dimensions $1$, $2$ and $3$.
 
-**Corollary.** No carrier has a representation space of dimension $4$ or more. The only four-dimensional invariant subspace is $\mathbb{B}$ itself, and it is reducible in both actions: $S_+\oplus S_-$ on the left, $Z\oplus V$ under conjugation.
+**Corollary.** No carrier has a representation space of dimension $4$ or more. The only invariant subspace of complex dimension four is $\mathbb{B}$ itself, and it is reducible in both actions: $S_+\oplus S_-$ on the left, $Z\oplus V$ under conjugation. The two sectors are four real dimensions and are not complex subspaces; over $\mathbb{C}$ each of them spans $\mathbb{B}$.
 
 ## The Orbital Realisation
 
@@ -498,10 +556,10 @@ In particular the unique spin-two summand $\mathcal{V}_4$ lies in the kernel.
 
 *Proof.* The image is $\mathbb{B}=\mathcal{V}_0\oplus\mathcal{V}_2$.
 
-**Example (the highest-weight check).** The highest-weight vector of $\mathcal{V}_4$ is $v_+\otimes v_+$, of weight $2$. Its product is
+**Example (the highest-weight check).** The highest-weight vector of $\mathcal{V}_4$ is $v_+(\vec u)\otimes v_+(\vec u)$, of weight $2$. Its product is
 
 $$
-v_+^2=(\vec e_x+i\vec e_y)^2=\bigl(-e_t+i\vec e_z\bigr)+\bigl(-i\vec e_z+e_t\bigr)=0,
+v_+(\vec u)^2=(\vec v+i\vec w)^2=\vec v^2+i\bigl(\vec v\vec w+\vec w\vec v\bigr)+(i\vec w)^2=(-e_t)+0+(e_t)=0,
 $$
 
 and the four descendants obtained by applying $\operatorname{ad}_{\tilde S_-}\otimes1+1\otimes\operatorname{ad}_{\tilde S_-}$ also multiply to zero. This is the five-dimensional summand, and it vanishes under the product.
@@ -526,7 +584,7 @@ and $\mathrm{ad}_{\vec e_k}$ preserves each summand, acting by the same matrix o
 
 **Corollary.** Each summand is a real form of $V$ and carries the real three-dimensional irreducible representation of the rotation algebra. The complex carrier $\mathcal{V}_2$ is one object over $\mathbb{C}$ and two copies of one object over $\mathbb{R}$.
 
-**The material sector is the real carrier.** $\mathfrak{k}$ is the spin-one carrier in the real algebra, and $\mathbb{B}_{\Phi}=\mathbb{R}(ie_t)\oplus\mathfrak{k}$ is that carrier together with its scalar line. This is why the corpus names the sector rather than the traceless part: the sector is the smallest real subspace that holds a four-vector and is closed under conjugation, and the spin sits in its traceless part.
+**The material sector is the real carrier.** $\mathfrak{k}$ is the spin-one carrier in the real algebra, and $\mathbb{B}_{\Phi}=\mathbb{R}(ie_t)\oplus\mathfrak{k}$ is that carrier together with its scalar line. This is why the corpus names the sector rather than the traceless part: the sector is the smallest real subspace that holds a four-vector and is closed under conjugation and under the commutator, and the spin sits in its traceless part.
 
 **Remark (the Hermitian generators exchange the summands).** The element $\tilde S_k=\tfrac12 i\vec e_k$ is not in the real rotation algebra $\mathfrak{k}$; it is an element of $\mathfrak{p}$, that is, the complexified generator. Since $i\mathfrak{k}=\mathfrak{p}$, the derivation $\mathrm{ad}_{\tilde S_k}$ carries $\mathfrak{k}$ onto $\mathfrak{p}$ and $\mathfrak{p}$ onto $\mathfrak{k}$. A weight vector of $\mathrm{ad}_{\tilde S_3}$ therefore has one component in each, and the highest-weight vector is of that form: $v_+=\vec e_x+i\vec e_y$ with $\vec e_x\in\mathfrak{k}$ and $i\vec e_y\in\mathfrak{p}$. The integer weights belong to the complexified picture, and the real picture splits the one carrier into two copies.
 
@@ -604,7 +662,7 @@ The truncation is the same fact from the other side. The algebra is the endomorp
 
 ## Summary
 
-The biquaternion algebra carries three carrier subspaces and no fourth: the centre $\mathbb{B}_{C}=\mathbb{C}e_t$ with spin $0$ under conjugation, the minimal left ideals $S_\pm=\mathbb{B}\tilde\Pi_\pm$ with spin $\tfrac12$ under left multiplication, and the material sector $\mathbb{B}_{\Phi}=\mathbb{R}(ie_t)\oplus\mathfrak{k}$ with spin $1$ on its traceless part $\mathfrak{k}$ under conjugation. The spin of a carrier is the dimension of its representation space, $2s+1$; for the third carrier that dimension is three against a carrier of four, and the fourth entry is the scalar line that a vector field's constraint removes.
+The biquaternion algebra carries three elementary carrier types and no fourth: the type $\mathcal{V}_0$ on the centre $\mathbb{B}_{C}=\mathbb{C}e_t$ with spin $0$ under conjugation, the type $\mathcal{V}_1$ on the minimal left ideals $S_\pm=\mathbb{B}\tilde\Pi_\pm$ with spin $\tfrac12$ under left multiplication, and the type $\mathcal{V}_2$ on the material sector $\mathbb{B}_{\Phi}=\mathbb{R}(ie_t)\oplus\mathfrak{k}$ with spin $1$ on its traceless part $\mathfrak{k}$ under conjugation. The informational sector is a second carrier of the third type, and the material one is the carrier the article takes because it is closed under the commutator: $[\mathbb{B}_{\Phi},\mathbb{B}_{\Phi}]=\mathfrak{k}$ stays inside the sector, while $[\mathbb{B}_{\Psi},\mathbb{B}_{\Psi}]=\mathfrak{k}$ lands in the other one. The spin of a carrier is the dimension of its representation space, $2s+1$; for the third carrier that dimension is three against a carrier of four, and the fourth entry is the scalar line that a vector field's constraint removes.
 
 | carrier | action | spin | dimension of the representation space | Casimir |
 |---|---|---|---|---|
@@ -612,9 +670,9 @@ The biquaternion algebra carries three carrier subspaces and no fourth: the cent
 | $S_\pm(\vec u)\cong\mathcal{V}_1$ | left multiplication | $\tfrac12$ | $2$ | $\tfrac34$ |
 | $\mathbb{B}_{\Phi}$, traceless part $\mathfrak{k}$ | conjugation | $1$ | $3$ | $2$ |
 
-The rotation algebra inside $\mathbb{B}$ has two normalisations: the anti-Hermitian $g_k=-\tfrac12\vec e_k$ and the Hermitian $\tilde S_k=\tfrac12 i\vec e_k$, related by $\tilde S_k=-ig_k$. The Casimir is $C=\sum \tilde S_k^2$; on an irreducible unitary carrier it is $s(s+1)$, the dimension is $2s+1$, and $s$ is the maximal weight. Irreducibility is decided by the spectrum: the carrier is irreducible exactly when the weights $s,s-1,\dots,-s$ occur once each, so that the length of the string is the dimension. A repeated weight marks a reducible sum, and the two carriers of dimension four in the table of §*The Spectrum and the Criterion* carry the same multiset, $+1,0,0,-1$, because each contains the centre or the singlet beside the triplet.
+The rotation algebra inside $\mathbb{B}$ has two normalisations: the anti-Hermitian $g_k=-\tfrac12\vec e_k$ and the Hermitian $\tilde S_k=\tfrac12 i\vec e_k$, related by $\tilde S_k=-ig_k$. The Casimir is $C=\sum \tilde S_k^2$; on an irreducible unitary carrier it is $s(s+1)$, the dimension is $2s+1$, and $s$ is the maximal weight. Irreducibility is decided by the spectrum: the carrier is irreducible exactly when the weights $s,s-1,\dots,-s$ occur once each, so that the length of the string is the dimension. A repeated weight marks a reducible sum, and the three carriers that present the multiset $+1,0,0,-1$ in the table of §*The Spectrum and the Criterion* present it for the same reason, each containing the centre or the singlet beside the triplet.
 
-The three carriers are exactly the three irreducible subcarriers of the regular module, and $1+2+3=6>4$ shows that no single action contains all three. The minimal left ideals are parametrised by the sphere, and each is a copy of the spin-half module. Two of the three carriers are four real-dimensional, and their spins differ because the adjoint action on the sector has an invariant line and the left action on an ideal has none. The orbital part is an outer derivation, and the algebra cannot carry it, since every derivation of $\mathbb{B}$ is inner; the spin part is the inner derivation $\operatorname{ad}_{\tilde S_k}$.
+The three types are exactly the types of the irreducible subcarriers of the regular module, and $1+2+3=6>4$ shows that no single action contains all three. The minimal left ideals are parametrised by the sphere, and each is a copy of the spin-half module. Two of the three carriers are four real-dimensional, and their spins differ because the adjoint action on the sector has an invariant line and the left action on an ideal has none. The orbital part is an outer derivation, and the algebra cannot carry it, since every derivation of $\mathbb{B}$ is inner; the spin part is the inner derivation $\operatorname{ad}_{\tilde S_k}$.
 
 The tensor square of the adjoint module contains a spin-two summand, and the multiplication map kills it: the product of two biquaternions carries no spin two. That vanishing is why there is no fourth carrier; the dimension count is why no other route can produce one. A spin above one is a field with more than one index, not a subspace.
 
@@ -627,11 +685,13 @@ The word spin has five uses in this corpus. Three are one number: the carrier, w
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | The biquaternion algebra |
 | $e_t,\vec e_x,\vec e_y,\vec e_z$ | Its basis; $\vec e_k^2=-e_t$ |
 | $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ | The Hermitian and anti-Hermitian sectors |
+| carrier; type; sub-carrier | An invariant subspace; the isomorphism class of its representation space; a proper invariant subspace of a carrier |
 | $\mathbb{B}_{C}=\mathbb{C}e_t$ | The centre; the spin-$0$ carrier |
 | $S_\pm(\vec u)=\mathbb{B}\tilde\Pi_\pm(\vec u)$ | The minimal left ideals at the axis $\vec u$; the spin-$\tfrac12$ carriers |
 | $\tilde\Pi_\pm(\vec u)=\tfrac12(e_t\pm i\vec u)$ | The rank-one idempotents |
 | $\mathfrak{k}=\operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$ | The compact triple, the traceless part of $\mathbb{B}_{\Phi}$; the spin-$1$ carrier |
 | $\mathfrak{p}=\operatorname{span}_{\mathbb{R}}\{i\vec e_x,i\vec e_y,i\vec e_z\}$ | The hyperbolic triple, the other real form; $V=\mathfrak{k}\oplus\mathfrak{p}$ |
+| $\mathbb{B}_{\Phi}\cong\mathfrak{u}(1)\oplus\mathfrak{su}(2)$ | The material sector as a real Lie algebra; $[\mathbb{B}_{\Phi},\mathbb{B}_{\Phi}]=\mathfrak{k}$ |
 | $Z=\mathbb{C}e_t$, $V=\ker\operatorname{tr}$ | The two isotypic components of the adjoint action; $Z\cong\mathcal{V}_0$, $V\cong\mathcal{V}_2$ |
 | $N=\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$ | The quaternionic norm; $N=0$ identically on $S_\pm$ |
 | $B^2=Q_x^2+Q_y^2+Q_z^2$ | The vector square; $B^2=0$ identically on $\mathbb{B}_{C}$ |

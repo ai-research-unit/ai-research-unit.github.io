@@ -9,20 +9,20 @@ These are also the spins of every observed elementary particle. The Higgs boson 
 The spin-$\tfrac12$ carrier is also the place where the algebra offers **two copies**. The plain product splits it into two minimal left ideals,
 
 $$
-\mathbb{B}=\mathbb{B}\tilde\Pi_+\oplus\mathbb{B}\tilde\Pi_-,
+\mathbb{B}=\mathbb{B}\tilde\Pi_+(\vec u)\oplus\mathbb{B}\tilde\Pi_-(\vec u),
 \qquad
-\tilde\Pi_+=\tfrac12(e_t+i\vec e_z),
-\qquad
-\tilde\Pi_-=e_t-\tilde\Pi_+=\tfrac12(e_t-i\vec e_z),
+\tilde\Pi_\pm(\vec u)=\tfrac12(e_t\pm i\vec u),
 $$
 
-with
+for a unit axis $\vec u$, with
 
 $$
-S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\vec\Upsilon_y\},
+S_+(\vec u)=\mathbb{B}\tilde\Pi_+(\vec u),
 \qquad
-\mathbb{B}\tilde\Pi_-=\mathbb{C}\{\tilde\Pi_-,\vec\Upsilon_x\}.
+S_-(\vec u)=\mathbb{B}\tilde\Pi_-(\vec u).
 $$
+
+**The axis, declared once.** The two ideals exist at every unit $\vec u$, and the algebra supplies the whole sphere of them. The physics below needs coordinates in exactly two places, the Peirce corners and the Gram matrices, and both are written at a declared axis with a declared frame $(\vec u,\vec v,\vec w)$. The declaration is the one of this corpus's convention for choosing a direction where a computation needs one (*Why AXF Matrices instead of Pauli and Gamma Matrices*, §*Not Every Frame Is a Defect*): the axis is named at the point of use, no statement below depends on it, and the letters $\vec e_x,\vec e_y,\vec e_z$ appear only as the instance $\vec u=\vec e_z$, $\vec v=\vec e_x$, $\vec w=\vec e_y$ at which the older pages print them.
 
 The two planes are the **two state spaces** of the spin-$\tfrac12$ carrier. They are distinct subspaces, module-isomorphic, metrically identical and Hilbert-orthogonal, and the copy-flip coupling is the pair of right multiplications by the two nilpotents that carries one onto the other and back. That coupling is not the chiral mass, which pairs $S$ with the conjugate module $S^{\mathrm{c}}$. The doubling is a copy of one carrier, not a second particle.
 
@@ -37,7 +37,7 @@ The article has two theses. First, the **three carrier types are the elementary 
 | $S_-=\mathbb{B}\tilde\Pi_-$ | $L$ | $2$ | $+\tfrac12,-\tfrac12$ | $\tfrac12$ | the second copy |
 | $V=\ker\operatorname{tr}$ | $\operatorname{ad}$ | $3$ | $+1,0,-1$ | $1$ | vector, three polarisations |
 
-Spin is the intrinsic angular momentum of a particle; in the rest frame it is the little-group label, and the labels $0,\tfrac12,1$ of the three carriers are the physical labels. The frame supplies the pair $(\vec\Upsilon_-,\vec\Upsilon_+)$, with spin element the contraction $\vec u\cdot\vec S=u_\eta\tilde S_{\Psi,\eta}=\tfrac12[\vec\Upsilon_-,\vec\Upsilon_+]=\tfrac12\vec{Ζ}$ and triple $(\vec u\cdot\vec S,\vec\Upsilon_-,\vec\Upsilon_+)$ satisfying $[\vec u\cdot\vec S,\vec\Upsilon_-]=\vec\Upsilon_-$, $[\vec u\cdot\vec S,\vec\Upsilon_+]=-\vec\Upsilon_+$ and $[\vec\Upsilon_-,\vec\Upsilon_+]=2\,\vec u\cdot\vec S$. The frame root is $\vec{Ζ}=2\,\vec u\cdot\vec S$, pure and therefore arrowed without a tilde. The two planes are two copies of one carrier type; the table lists them separately because the article uses both. The three types are the centre, the plane and the traceless part. The right action repeats the plane and adds no type. The dimensions are complex: one, two and three. Over the reals they are two, four and six, and the physical scalar and vector are real forms of the centre and of the traceless part.
+Spin is the intrinsic angular momentum of a particle; in the rest frame it is the little-group label, and the labels $0,\tfrac12,1$ of the three carriers are the physical labels. A declared frame $(\vec u,\vec v,\vec w)$ supplies the pair $(\vec\Upsilon_-,\vec\Upsilon_+)$ and the root $\vec{Ζ}=2\,\vec u\cdot\vec S$, pure and therefore arrowed without a tilde, with the spin element the contraction $\vec u\cdot\vec S=u_\eta\tilde S_{\Psi,\eta}=\tfrac12[\vec\Upsilon_-,\vec\Upsilon_+]=\tfrac12\vec{Ζ}$ and the triple $(\vec u\cdot\vec S,\vec\Upsilon_-,\vec\Upsilon_+)$ satisfying $[\vec u\cdot\vec S,\vec\Upsilon_-]=\vec\Upsilon_-$, $[\vec u\cdot\vec S,\vec\Upsilon_+]=-\vec\Upsilon_+$ and $[\vec\Upsilon_-,\vec\Upsilon_+]=2\,\vec u\cdot\vec S$. The pair is the frame's and the weights in the table are the axis's and the algebra's; none of the entries depends on the frame. This paragraph and the two Peirce sections are the only places where a direction is named, and each names it as a declaration. The two planes are two copies of one carrier type; the table lists them separately because the article uses both. The three types are the centre, the plane and the traceless part. The right action repeats the plane and adds no type. The dimensions are complex: one, two and three. Over the reals they are two, four and six, and the physical scalar and vector are real forms of the centre and of the traceless part.
 
 ## Why There Is No Fourth
 
@@ -130,27 +130,35 @@ The scalar carrier is split evenly between the sectors and the central $i$ excha
 | The roots of $+1$ and the non-Hermitian idempotents | [Idempotents](../articles_maths/idempotents.html) |
 | The spectral triple and the chirality conventions | [The Spectral Triple of the Biquaternion Algebra](the-spectral-triple-of-the-biquaternion-algebra.html) |
 
-## The Carrier and Its Forced Basis
+## The Carrier and Its Basis
 
-The two idempotents $\tilde\Pi_+$ and $\tilde\Pi_-$ are orthogonal and complete in the plain product, and the Peirce decomposition cuts the algebra into four one-dimensional complex corners:
-
-$$
-\tilde\Pi_+\mathbb{B}\tilde\Pi_+=\mathbb{C}\tilde\Pi_+,\quad
-\tilde\Pi_+\mathbb{B}\tilde\Pi_-=\mathbb{C}\vec\Upsilon_x,\quad
-\tilde\Pi_-\mathbb{B}\tilde\Pi_+=\mathbb{C}\vec\Upsilon_y,\quad
-\tilde\Pi_-\mathbb{B}\tilde\Pi_-=\mathbb{C}\tilde\Pi_-.
-$$
-
-The spinor space is the Peirce direct sum of a diagonal corner and an off-diagonal one:
+The two idempotents $\tilde\Pi_+(\vec u)$ and $\tilde\Pi_-(\vec u)$ are orthogonal and complete in the plain product, and the Peirce decomposition cuts the algebra into four one-dimensional complex corners:
 
 $$
-S=\tilde\Pi_+\mathbb{B}\tilde\Pi_+\oplus\tilde\Pi_-\mathbb{B}\tilde\Pi_+
-=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_y .
+\tilde\Pi_+(\vec u)\mathbb{B}\tilde\Pi_+(\vec u)=\mathbb{C}\tilde\Pi_+(\vec u),\quad
+\tilde\Pi_+(\vec u)\mathbb{B}\tilde\Pi_-(\vec u)=\mathbb{C}\vec\Upsilon_{+-}(\vec u),\quad
+\tilde\Pi_-(\vec u)\mathbb{B}\tilde\Pi_+(\vec u)=\mathbb{C}\vec\Upsilon_{-+}(\vec u),\quad
+\tilde\Pi_-(\vec u)\mathbb{B}\tilde\Pi_-(\vec u)=\mathbb{C}\tilde\Pi_-(\vec u),
 $$
 
-The basis is therefore not a choice. The carrier is one column of the matrix model, and in that model it is the minimal left ideal; a column of a rank-two matrix algebra is one diagonal corner plus one off-diagonal corner. The diagonal corner contributes the idempotent $\tilde\Pi_+$; the off-diagonal corner contributes a nilpotent, $\vec\Upsilon_y$. Every element of an off-diagonal corner is square-zero, because $(fae)(fae)=fa(ef)ae=0$ for orthogonal idempotents $e,f$. In rank $n$ the same count gives one idempotent and $n-1$ nilpotents; the spinor space is the case $n=2$.
+with the two mixed units
 
-> **The basis of the spinor space is one idempotent and one nilpotent, and the nilpotency is structural.** It is not a property of the particular column, and it is not a choice of coordinates.
+$$
+\vec\Upsilon_{-+}(\vec u)=\tfrac12(i\vec v+\vec w),\qquad \vec\Upsilon_{+-}(\vec u)=\tfrac12(i\vec v-\vec w),
+$$
+
+at the declared frame $(\vec u,\vec v,\vec w)$. The spinor space is the Peirce direct sum of a diagonal corner and an off-diagonal one:
+
+$$
+S_+(\vec u)=\tilde\Pi_+(\vec u)\mathbb{B}\tilde\Pi_+(\vec u)\oplus\tilde\Pi_-(\vec u)\mathbb{B}\tilde\Pi_+(\vec u)
+=\mathbb{C}\tilde\Pi_+(\vec u)\oplus\mathbb{C}\vec\Upsilon_{-+}(\vec u).
+$$
+
+**The shape is not a choice; the letters are.** Every carrier is one column of the matrix model, and in that model it is the minimal left ideal; a column of a rank-two matrix algebra is one diagonal corner plus one off-diagonal corner. The diagonal corner contributes the idempotent, the off-diagonal corner contributes a nilpotent, and every element of an off-diagonal corner is square-zero, because $(fae)(fae)=fa(ef)ae=0$ for orthogonal idempotents $e,f$. In rank $n$ the same count gives one idempotent and $n-1$ nilpotents, and the spinor space is the case $n=2$. **What the frame decides is which column, and the count does not depend on that decision**; the count is the algebra's, the axis is the page's, and the letters $\vec\Upsilon_x=\vec\Upsilon_{+-}$ and $\vec\Upsilon_y=\vec\Upsilon_{-+}$ are the instance at $\vec u=\vec e_z$ used throughout the rest of this article.
+
+> **The basis of the spinor space is one idempotent and one nilpotent, and the nilpotency is structural.** It is not a property of the particular column. The proportion is not a choice of coordinates; the axis is one, and it is declared.
+
+The same statement in the vocabulary of *Why AXF Matrices instead of Pauli and Gamma Matrices*: a page that writes $\vec\Upsilon_y$ without saying at which axis has printed the diagonal member of the Pauli triplet. The defect is repaired here by the declaration, not by a different basis, because no basis of a two-complex-dimensional space avoids a direction — the direction is in the idempotent, and the idempotent is what a minimal left ideal is built from.
 
 The physical reading of the basis is the first statement of the article. The idempotent is the **state** direction of the column, and the nilpotent is the **shift** direction, the off-diagonal element that raises or lowers the column index. The two directions are what a two-level carrier needs: one projection and one shift. The algebra supplies both, and it supplies them in that proportion.
 
@@ -464,11 +472,11 @@ $\mathbb{B}$ alone has three elementary carrier types, represented by four space
 
 The three values are the spins of all observed elementary particles: $0$ for the Higgs, $\tfrac12$ for the twelve quarks and leptons, $1$ for the photon, the $W^\pm$, the $Z$ and the eight gluons. No observed elementary particle carries another spin. The graviton of spin $2$ is not observed, and the higher-spin hadrons are composites. The match is a match of labels, not a prediction of the particle content.
 
-Within the spin-$\tfrac12$ carrier, the spinor space $S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\vec\Upsilon_y\}$ is the Peirce carrier of the plain algebra, and it is a minimal left ideal, with a forced basis of one idempotent and one nilpotent. As a module it is the unique simple module, with $\operatorname{End}_{\mathbb{B}}(S)=\mathbb{C}$, $\mathbb{B}\cong S\oplus S$ and $\mathbb{B}\cong\operatorname{End}_{\mathbb{C}}(S)$; the left action is the defining representation of the double cover, and $-e_t$ acts as $-\mathrm{id}$, which is where spin-$\tfrac12$ lives.
+Within the spin-$\tfrac12$ carrier, the spinor space $S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\vec\Upsilon_y\}$ is the Peirce carrier of the plain algebra, and it is a minimal left ideal, with a basis of one idempotent and one nilpotent: the shape is forced and only the axis is declared. As a module it is the unique simple module, with $\operatorname{End}_{\mathbb{B}}(S)=\mathbb{C}$, $\mathbb{B}\cong S\oplus S$ and $\mathbb{B}\cong\operatorname{End}_{\mathbb{C}}(S)$; the left action is the defining representation of the double cover, and $-e_t$ acts as $-\mathrm{id}$, which is where spin-$\tfrac12$ lives.
 
 The same carrier carries a second structure from the plain sesquilinear product: a positive definite Hermitian form of Gram matrix $\tfrac12 I_2$, the Born pairing and the normalisation. The two structures do not coincide: the algebra's own bilinear form is degenerate on the carrier, $\operatorname{diag}(\tfrac12,0)$, with radical the nilpotent line. The module is composition and the Hilbert space is probability; the spin is a module datum and the ray a Hilbert datum; the vacuum is a module choice and the normalisation a metric condition.
 
-The algebra also splits into two minimal left ideals, the second column $\mathbb{B}\tilde\Pi_-=\mathbb{C}\{\tilde\Pi_-,\vec\Upsilon_x\}$, module-isomorphic to $S$ through right multiplication by $\vec\Upsilon_x$ and Hilbert-orthogonal to it. The copy-flip coupling is the pair of right multiplications by the two nilpotents, off-diagonal and column-changing; it is not the chiral mass. The natural generators are null, the induced maps are isometries, and the nilpotence is a choice of generator and not an invariant. The complement is not the dual, not a second representation and not a sector. Three complements must be kept apart: the module and Hilbert complements coincide, the algebra's-own-form complement $S^{\perp_B}=\mathbb{C}\{\vec\Upsilon_y,\tilde\Pi_-\}$ is a third subspace, and the coincidence of the first two is conditional on the Hermiticity of the vacuum idempotent.
+The algebra also splits into two minimal left ideals, the second column $\mathbb{B}\tilde\Pi_-=\mathbb{C}\{\tilde\Pi_-,\vec\Upsilon_x\}$, module-isomorphic to $S$ through right multiplication by $\vec\Upsilon_x$ and Hilbert-orthogonal to it. The axis is named once, at the head of the article and in the two Peirce sections, and no result depends on it: the two ideals exist at every unit axis and the algebra supplies the whole sphere of them. The copy-flip coupling is the pair of right multiplications by the two nilpotents, off-diagonal and column-changing; it is not the chiral mass. The natural generators are null, the induced maps are isometries, and the nilpotence is a choice of generator and not an invariant. The complement is not the dual, not a second representation and not a sector. Three complements must be kept apart: the module and Hilbert complements coincide, the algebra's-own-form complement $S^{\perp_B}=\mathbb{C}\{\vec\Upsilon_y,\tilde\Pi_-\}$ is a third subspace, and the coincidence of the first two is conditional on the Hermiticity of the vacuum idempotent.
 
 The same three carriers are the three carriers of the field equations, and the spin fixes which one holds the solutions. The Klein–Gordon operator is a central real scalar and the scalar field is carried by $\mathbb{B}_{C}$; the Dirac operator multiplies on the left and the spinor is carried by the minimal left ideals $S_\pm$; the Proca operator is built from one material gradient and the vector potential is carried by $\mathbb{B}_\Phi$, with the traceless part $V$ carrying the spin itself and the constraint removing the time slot that separates the two. No non-zero subspace of the material sector is a left ideal, because $i$ is central and exchanges the sectors, so a spin-$\tfrac12$ field cannot be confined to it.
 

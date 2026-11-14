@@ -6,7 +6,7 @@ The analysis block of the category rests on two operators. The first is the **bi
 
 The article states these results in brief and gives the physical interpretations. It proves nothing. The derivative conventions, the products, the forms, the norms, the transform and its properties are owned by the mathematics articles linked below; the interpretations are this category's. The organising distinction is between **differentiation as one-sided multiplication** and **the transform as a change of description**. The first acts on a field by multiplying it by the gradient on one side; the second re-expresses the field in the basis in which the constant-coefficient operators are diagonal. The first is a map from fields to fields; the second is an invertible map from one description to another.
 
-The article is the analysis article of *Biquaternion Physical Interpretation of Mathematics*. It links the mathematics, not the physics companions. The interpretations it states are the ones the physics corpus has built, restated as interpretations of the mathematics, each with its boundary.
+The article is the analysis article of *Biquaternion Algebra Physical Interpretations*. It links the mathematics, not the physics companions. The interpretations it states are the ones the physics corpus has built, restated as interpretations of the mathematics, each with its boundary.
 
 ## The Results It Uses
 

@@ -8,7 +8,7 @@ The article reads the two cases physically. The regular case gives the mode pict
 
 The vocabulary is the harmonic one, and it is exact. The regular element supplies the root of the Fourier kernel, and the degenerate cone is where that kernel stops oscillating. The two readings are the same construction seen from the spectrum and from the transform.
 
-The mathematics is proved in *The Spectrum* and *The Eigenbasis of a Spectrally Regular Biquaternion*. The article belongs to *Biquaternion Physical Interpretation of Mathematics*: it interprets that mathematics, and it proves nothing. It identifies the physical objects, labels the interpretations, and states the boundary of each.
+The mathematics is proved in *The Spectrum* and *The Eigenbasis of a Spectrally Regular Biquaternion*. The article belongs to *Biquaternion Algebra Physical Interpretations*: it interprets that mathematics, and it proves nothing. It identifies the physical objects, labels the interpretations, and states the boundary of each.
 
 ## The Results It Uses
 
