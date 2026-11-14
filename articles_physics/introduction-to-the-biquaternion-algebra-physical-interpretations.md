@@ -2,127 +2,168 @@
 
 ## Introduction
 
-The biquaternion algebra is one object, and it carries more than one physical interpretation. The Mathematical menu starts from the algebraic objects — the vector space, the product, the form, the involution — and proves their properties. This category runs the other way. It starts from the articles of the Mathematical menu and asks what each mathematical structure can be read as, physically. The unit of an article is a mathematical result, not a physical object.
+**This category is derived from the Mathematical menu and inherits its order.** It takes the one hundred and fifty articles of the *Biquaternions* category in the order the menu gives them, and asks one question of each group: what does this result mean physically, and how many articles does the reading need. The answer is twenty-nine articles in twenty-three subsections. This introduction is the thirtieth entry and it is the index of the other twenty-nine.
 
-The category carries thirty-eight articles that interpret results in addition to this introduction. Each of the thirty-eight follows the same form: it links one or several articles of the Mathematical menu, then gives the physical interpretations of that result. Such an article opens with the source table: the mathematical content it uses, each row linked to the mathematics article that owns it. It states those results in brief, with their sources. It then gives the physical interpretations, one by one, each labelled and each with its boundary. The article proves nothing: the proof is in the mathematics article, one click away.
+**The direction of the derivation is the whole point.** An article list assembled from the physics side inherits the history of the physics. That history put the spin at the head of the algebra, among the modules, and it put the spectral reading in the same block. The mathematics places the spin at the end of the geometry, after the rotations and the Lorentz group, in a section of its own. A list built from the algebra first and corrected afterwards keeps the spin in the wrong place, and no amount of vocabulary repair moves it. A list built from the menu puts it where the mathematics puts it, by construction, and needs no correction.
 
-The articles follow the four blocks of the Mathematical menu — algebra, topology, analysis and geometry — and the physics menu groups them by the block they read. The algebra block is the largest, because the same algebra carries the material sector, the informational sector and the operators between them.
+**The compression is five to one.** One hundred and fifty mathematics articles become twenty-nine physics articles. The ratio is not a target. It is what the reading costs: a mathematics article proves one thing, and several of them prove facets of one thing that a reader of physics wants in one place, with one statement and its interpretations.
 
-The link is not a citation of convenience. It is the guarantee of the interpretation. A physical interpretation in this category is always an interpretation of a theorem that exists, and the reader can check the theorem before accepting the interpretation.
+| part | mathematics articles | physics articles |
+| --- | --- | --- |
+| Algebra | $80$ | $19$ |
+| Topology | $4$ | $1$ |
+| Analysis | $36$ | $3$ |
+| Geometry | $30$ | $6$ |
+| total | $150$ | $29$ |
+
+## The Rule of Derivation
+
+**Five rules, and the last one is the load-bearing one.**
+
+| rule | statement |
+| --- | --- |
+| R1 | the order of the physics articles is the order of the mathematics menu, section by section, with no reordering |
+| R2 | one physics article to one section of the mathematics menu |
+| R3 | a section may take more than one physics article only where the physics reads separate regimes or separate spaces, and every such exception is named |
+| R4 | every mathematics article of the section is visible in the physics article: as a link, as a stated result, or as an interpretation |
+| R5 | no article exists without at least one interpretation |
+
+**The two exceptions, named.** *The Spectral Strata* takes five entries and *The Remarkable Subspaces* takes three. The first is four regimes that a physicist names and uses: mass in motion, the rest frame, the light ray, the vacuum. Folding them into one article would put four dispersion relations in one file and lose the naming the rest of the menu relies on. The second is a state space — the split of the algebra into two geometries, the four-vector, and the state–observable–probability triple — and that triple is a reading the mathematics does not contain at all, because it is a reading and not a theorem.
+
+**Every other section takes one entry, and the entry reads all of its mathematics.** A section of eight mathematics articles does not become eight entries. It becomes one entry that states the section's result in brief, links the articles, and gives the readings. The reader who wants a proof follows the link; the reader who wants the meaning reads the entry.
+
+## The Order Is the Order of the Mathematics
+
+**The mathematics orders its own category by dependency.** The algebra comes first because every later section is a structure on it. The four general products come after the element, because a product is a rule on elements. The forms and the norms come after the products, because a form is what a product preserves. The spectral strata come after the norms, because a stratum is a pair of conditions on two norms. The operators come after the forms, because an operator is what a form is invariant under. The topology, the analysis and the geometry come last, because each is a structure *on* the algebra.
+
+**The spin comes last inside the geometry.** In the mathematics the carrier articles sit in *Geometry → Spin Geometry*, after the rotations, the Lorentz group, the unitary group and the Krein groups. That position is not an accident of filing. A spin is a weight of a representation of the rotation, and the rotation is a geometric object, so the spin cannot precede the rotation. Read from the algebra, the spin looks like a property of the module, which is why a physics list built from the algebra files it there.
+
+**The same order now holds on this side.** The carriers and the three spins are IV.2 to IV.5, after IV.1, which is the rotations, the boosts and the groups. A reader arrives at the spin having read what a rotation is.
 
 ## The Form of an Article in This Category
 
-Every article that interprets a result has four parts, in this order.
+**Every article has four parts, in this order.**
 
-| Part | Content | Provided by |
+| part | content | provided by |
 | --- | --- | --- |
-| The source table | the mathematical content used, with the article that owns each item | the mathematics corpus |
-| The statement | the result in brief, with its hypotheses | the mathematics article |
-| The interpretations | labelled physical interpretations of the result | this category |
-| The limits | what each interpretation does not claim | this category |
+| the source table | the mathematical content used, with the article that owns each item | the mathematics corpus |
+| the statement | the result in brief, with its hypotheses | the mathematics article |
+| the interpretations | labelled physical interpretations of the result | this category |
+| the limits | what each interpretation does not claim | this category |
 
-### The Source Table
+**The source table is the contract.** It has two columns: *Mathematical Content*, which names the result in the terms the article uses, and *Source Mathematical Article*, which links the article that states and proves it. A row without a link is not allowed, because the reader must be able to open the proof of every item the article interprets. A result the corpus does not contain is named as missing and is not written as if it were proved.
 
-Each article opens with a table of two columns. **Mathematical Content** names the result in the terms in which the article uses it, and **Source Mathematical Article** links the mathematics article that states and proves it. The table is the contract of the article.
+**An interpretation is a sentence, not a metaphor.** It names a physical object, process or quantity and identifies it with the mathematical structure: *the norm is the interval*, *the minimal Hermitian idempotent is the pure state*, *the two-sided operator is the change of frame*. Several interpretations of one result are allowed, and they are distinguished by the sector, the regime or the question they answer. The label is the reader's protection: it says which reading is meant at that point.
 
-| Mathematical Content | Source Mathematical Article |
-| --- | --- |
-| The subspace, its basis and its defining involution | [Subspaces and Decompositions](../articles_maths/subspaces-and-decompositions-of-the-biquaternion-algebra.html) |
-| The norm, its signature and the inverse formula | [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
+**Every interpretation carries its boundary.** The boundary says what it does not claim: which object it does not identify, which regime it does not cover, which number it does not predict. The zero-divisor cone is the light cone on the material sector; on the informational sector its trace-one slice is the boundary of the state space, and that boundary is the set of pure states. One set, two readings, two boundaries — and the article says which one it is using.
 
-The rows follow the order in which the article uses the results. A row without a link is not allowed: the reader must be able to open the proof of every item the article interprets. A result that the corpus does not contain is named as missing, not written as if it were proved.
+**An interpretation does not derive the physics from the algebra.** It identifies which physical object the algebraic structure is. The dynamics belongs to the other physics categories of the corpus.
 
-### The Links
+## The Structure of the Category
 
-The source table is the list of links. An article links to at least one mathematics article, and to several when the interpretation needs several results. A product and its form are two results even when one article carries both; a cone and its projectivisation are two. The link points to the mathematics article, never to a physics article, because the mathematics article is where the proof lives.
+**Twenty-three subsections in four parts.** The middle column gives the mathematics section the entry derives from and the number of articles in it.
 
-The article names the part of the result it uses. A long article may carry ten theorems and one of them may be the one interpreted; the reader must be able to see which.
+### Part I — The Algebra
 
-If an interpretation needs a result that the menu does not contain, the article says so. It does not state the missing result as if it were proved, and it does not borrow a proof from physics.
+| subsection | from | the entry |
+| --- | --- | --- |
+| I.1 | The Algebra of Biquaternions, $8$ | The Element, the Six Subspaces and the Two Ledgers |
+| I.2 | Matrix Representations, $4$ | The Matrix Images: One Element, Two Pictures |
+| I.3 | The Idempotents, the Ideals and the Peirce Decomposition, $7$ | Idempotents, Ideals and Observables |
+| I.4 | The Modules, $5$ | The Modules: What the Algebra Acts On |
+| I.5 | The Spectral Theory, $6$ | The Spectrum and the Two Modes |
+| I.6 | The Four General Products, $3$ | The Four Products: Composition, Probability, Causality and Gauge |
+| I.7 | The Four Forms and Their Algebraic Norms, $1$ | The Four Forms and the Four Norms |
+| I.8 | Algebra with the H Norm, $1$ | The H Norm: Amplitude and Frame |
+| I.9 | Algebra with the N Norm, $5$ | The N Norm: Mass, Angle and the Cone |
+| I.10 | The Spectral Strata and the N Norm, $6$ | The Partition: Two Invariants and Four Regimes, and the four regime entries |
+| I.11 | Algebra with the K Norm, $3$ | The K Norm and the Indefinite Structure |
+| I.12 | Remarkable Subspaces and the Forms, $2$ | The Two Sectors: Split and the Four Bridges; Four-Vectors and the Interval; States, Observables and the Born Weight |
+| I.13 | Operators, $29$ | The Operators of the Algebra |
 
-### The Interpretations
+**I.10 is five entries and I.12 is three.** The partition entry states the three-level theorem — the partition of the algebra, the characterisation of each stratum by a geometric condition on an element, and the sectors as the strata particularised to the material closure — and then one entry to each regime. I.12 states the two sectors as two geometries, then the four-vector with its interval and its Lorentz action, then the state space with its observables and its Born weight.
 
-A physical interpretation names a physical object, process or quantity and identifies it with the mathematical structure. It is written as a sentence: *the norm is the interval*, *the minimal Hermitian idempotent is the pure state*, *the two-sided operator is the change of frame*. It is not a metaphor and not an analogy.
+### Part II — The Topology
 
-Each interpretation is labelled. Several interpretations of one result are allowed, and they are distinguished by the sector, the regime or the question they answer. The label is the reader's protection: it says which interpretation is meant at that point.
+| subsection | from | the entry |
+| --- | --- | --- |
+| II.1 | Topology, $4$ | The Unit Group, the Cone and the Orders |
 
-An interpretation does not derive the physics from the algebra. It identifies which physical object the algebraic structure is, and it leaves the dynamics to the other physics categories of the corpus.
+### Part III — The Analysis
 
-### The Limits
+| subsection | from | the entry |
+| --- | --- | --- |
+| III.1 | General Analysis, $10$ | The Derivative, the Field and the Transform |
+| III.2 | Harmonic Analysis, $8$ | The Harmonic Analysis: The Transform as a Change of Description |
+| III.3 | Exponential Polar Decomposition, $18$ | The Exponential and Its Three Pairings |
 
-Every interpretation carries its boundary. The boundary says what the interpretation does not claim: which object it does not identify, which regime it does not cover, which number it does not predict.
+### Part IV — The Geometry
 
-The boundary is not decoration. The zero-divisor cone is the light cone on the material sector; on the informational sector its trace-one slice bounds the state space, and that boundary is the set of pure states. The two interpretations are of one set, and the boundary states that the set is not the same physical object in the two cases.
+| subsection | from | the entry |
+| --- | --- | --- |
+| IV.1 | Geometry, $6$ | The Rotations, the Boosts and the Groups |
+| IV.2 | The Carriers and the Closure, $1$ | The Carriers, the Spin and the Closure |
+| IV.3 | The Spin-Zero Centre Subspace, $4$ | The Spin-Zero Carrier: The Centre |
+| IV.4 | The Spin-Half Bispinors, $5$ | The Spin-Half Carrier: The Bispinors |
+| IV.5 | The Spin-One Anti-Hermitian Subspace, $4$ | The Spin-One Carrier: The Material Sector |
+| IV.6 | Fractal Geometry, $10$ | The Quadratic Map and the Singular Sets |
 
-## Why One Result Carries Several Interpretations
+**The spin block is four entries for fourteen mathematics articles.** The mathematics needs fourteen because fourteen proofs. This category needs four because there are four things to say: what carries the spin, and then one entry to each spin. Inside a per-spin entry the four mathematics articles of that subsection become four readings — the subspace, the norm, the spectrum and the sectors — stated once each. That block is the test case of the whole compression, and it is the part of the category that the corpus has been missing.
 
-The category is not a dictionary of one-to-one correspondences. The algebra is one object and the physics reads it at several levels, so a single theorem can carry more than one interpretation.
+**A field is a function with values in the closure of its carrier.** That sentence is the one the other categories of the physics corpus need. The carrier is a nonzero real subspace that is invariant and irreducible under one of the algebra's own actions, and the action is part of the carrier, because the same subspace can be reducible for one action and irreducible for another. There are three of them: the centre, of real dimension two; the ideals, of real dimension four; and the material sector, of real dimension four. The closure is what a field takes values in, and its existence is what makes the weight of the carrier the spin of the field.
 
-The norm is the clearest case. $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$ is the interval on the material sector: for $\tilde Q=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ it is $-{r'_{t}}^{2}+x^{2}+y^{2}+z^{2}$. The same form read on a four-position is a squared length; read on a four-momentum, it is $-m^{2}c^{2}$, and the level set $\langle\tilde Q\rangle_{\natural}=-m^{2}c^{2}$ inside the material sector is the mass shell. Its zero set is the zero-divisor cone, the light cone of the material sector. The Hermitian form is the Born pairing up to the factor two. On the state $\tilde{Ϛ}_{\Psi}$ and a Hermitian observable $\tilde H_\Psi$, $\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi)$, and $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})$ is the probability weight, normalised by $\mathrm{Tr}\,\tilde{Ϛ}_{\Psi}=1$. Four interpretations, four questions, one algebra.
+## The Mathematical Corpus
 
-$$
-\boxed{\;\langle\tilde Q\rangle_{\natural}=-m^{2}c^{2}\ \text{(mass shell)},\qquad \langle\tilde Q\rangle_{\natural}=0\ \text{(light cone)}\;}
-$$
+**This is the whole of the source corpus, in the order of the Mathematical menu.** One hundred and fifty articles of the *Biquaternions* category, each linked to its own page. The list is the map from every entry of this category to the articles it reads: an entry in Part I draws on the *Algebra* block, an entry in Part II on *Topology*, the entries of Part III on *Analysis*, and IV.1 and IV.6 on *Geometry*, while the spin entries IV.2 to IV.5 draw on the last subsection of the geometry.
 
-The idempotents are a second case. A minimal Hermitian idempotent is a pure state, a rank-one projector and a choice of vacuum, depending on which structure is interpreted. The three interpretations agree on the element and disagree on the physics, which is why each is labelled.
-
-The two-sided operator is a third. $\mathrm{Sd}_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$ is a change of frame for a unit-norm rotor and a rotation with a dilation for a general unit. For a minimal Hermitian idempotent and a state, $\mathrm{Sd}_{\tilde\Pi}(\tilde{Ϛ}_{\Psi})=\tilde\Pi\tilde{Ϛ}_{\Psi}\tilde\Pi$ is the unnormalised post-measurement state. The same operator, three regimes of its parameter.
-
-A reader who wants one interpretation per theorem will not find it here. A reader who wants to know which interpretation is meant will find the label and the boundary.
-
-## The Place of the Category
-
-The Mathematical menu proves the results; this category reads them physically. The two are independent entries into one corpus.
-
-A reader can enter by the mathematical result and find the physics it carries, or by a physics article of another category and find the theorem behind it. The routes meet at the same theorem.
-
-This category is not a prerequisite of any other, and no other category is a prerequisite of it. The same set is the light cone on the material sector, the purity boundary of the state space on the informational sector, and the support of the massless propagator in the analysis block.
-
-## The Mathematical Corpus about Biquaternions
-
-The list below gathers one hundred and twenty-three entries of the Mathematical menu, grouped as the menu groups them: the *Biquaternions* category, which carries one hundred and thirty entries, and the few results the interpretations need that the menu files in another category. Every entry is a mathematics article, and every link opens it directly. The list is the source of this category: an article of the category links to one or several of these entries, and the entries it does not use are the part of the corpus that this category has not yet read.
-
-The category reads a second corpus as well. The *Biquaternion Algebraic Structures* category of the Mathematical menu carries one hundred and thirty-five further entries, the derived structures of the biquaternion complex space: the general plain, quaternionic and sesquilinear algebras, their symmetric and antisymmetric parts, and the comparisons across the twelve. The list below does not reproduce them, because it is already long and the derived structures are read where they are used. An article of the category that interprets one of them links the entry directly, in the *Biquaternion Algebraic Structures* category, exactly as it links an entry of the list. The two corpora together carry two hundred and sixty-five entries, and they are the full mathematical source of the category.
+**The headings are the menu's headings, not this category's.** Where a menu section carries more articles than one entry can state, the entry names the ones it uses and links them at its own source table; the rest are here for the reader who wants the whole of a section before reading the entry.
 
 ### Algebra
 
-#### The Algebra
+#### The Algebra of Biquaternions
 
-- [The Biquaternion Algebra](../articles_maths/the-biquaternion-algebra.html)
-- [The Element, the Coordinates and the Conjugations](../articles_maths/the-element-the-coordinates-and-the-conjugations.html)
-- [The Group of Involutions](../articles_maths/the-group-of-involutions.html)
-- [Subspaces and Decompositions](../articles_maths/subspaces-and-decompositions-of-the-biquaternion-algebra.html)
-- [Matrix Representations Conventions](../articles_maths/matrix-representations-conventions.html)
-- [The $M_4(\mathbb{C})$ Axis-Free Representation](../articles_maths/m4c-axis-free-representation.html)
-- [The Square of an Element](../articles_maths/the-square-of-an-element.html)
-- [Zero Divisors and Units](../articles_maths/zero-divisors-and-units.html)
+- [Introduction to the Algebra of Biquaternions](../articles_maths/the-biquaternion-algebra.html)
+- [The Element, the Coordinates and the Conjugations in the Biquaternion Algebra](../articles_maths/the-element-the-coordinates-and-the-conjugations.html)
+- [The Group of Involutions of the Biquaternion Algebra](../articles_maths/the-group-of-involutions.html)
+- [Mirror Biquaternions of the Biquaternion Algebra](../articles_maths/mirror-biquaternions-of-the-biquaternion-algebra.html)
+- [Subspaces and Decompositions of the Biquaternion Algebra](../articles_maths/subspaces-and-decompositions-of-the-biquaternion-algebra.html)
+- [The Square of an Element in the Biquaternion Algebra](../articles_maths/the-square-of-an-element.html)
+- [Zero Divisors and Units in the Biquaternion Algebra](../articles_maths/zero-divisors-and-units.html)
+- [The Square Roots of a General Element in the Biquaternion Algebra](../articles_maths/square-roots-of-an-element.html)
 
-#### The Frame
+#### Matrix Representations
 
-- [Nilpotents](../articles_maths/nilpotents.html)
-- [Idempotents](../articles_maths/idempotents.html)
-- [The Peirce Decomposition](../articles_maths/the-peirce-decomposition-of-the-biquaternion-algebra.html)
+- [Families of Matrix Representations](../articles_maths/families-of-matrix-representations.html)
+- [$M_4(\mathbb{C})$ Axis-Free Representation](../articles_maths/m4c-axis-free-representation.html)
+- [$M_4(\mathbb{C})$ Pauli Representation](../articles_maths/m4c-pauli-representation.html)
+- [$M_2(\mathbb{C})$ Pauli Representation](../articles_maths/m2c-pauli-representation.html)
+
+#### The Idempotents, the Ideals and the Peirce Decomposition
+
+- [The Square Roots of Zero and the Nilpotents of the Biquaternion Algebra](../articles_maths/nilpotents.html)
+- [The Square Roots of One and the Idempotents of the Biquaternion Algebra](../articles_maths/idempotents.html)
+- [The Minimal Left Ideals of the Biquaternion Algebra](../articles_maths/the-minimal-left-ideals-of-the-biquaternion-algebra.html)
+- [Peirce Decompositions of the Biquaternion Algebra](../articles_maths/the-peirce-decomposition-of-the-biquaternion-algebra.html)
 - [The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra](../articles_maths/the-peirce-basis-of-the-biquaternion-algebra.html)
-- [The Polarized Module of the Biquaternion Algebra](../articles_maths/the-polarized-module-of-the-biquaternion-algebra.html)
+- [The Companion Nilpotents of the Biquaternion Algebra](../articles_maths/the-companion-nilpotents-of-the-biquaternion-algebra.html)
+- [The Special Decomposition of a Biquaternion under a Peirce Basis](../articles_maths/the-special-decomposition-of-a-biquaternion-under-a-peirce-basis.html)
 
-#### The Modules
+#### The Modules in the Biquaternion Algebra
 
-- [The Regular Module](../articles_maths/the-regular-module.html)
+- [The Regular Module in the Biquaternion Algebra](../articles_maths/the-regular-module.html)
 - [The Polarized Module of the Biquaternion Algebra](../articles_maths/the-polarized-module-of-the-biquaternion-algebra.html)
-- [The Category of Modules](../articles_maths/the-category-of-modules.html)
+- [The Pauli Module of the Biquaternion Algebra](../articles_maths/the-pauli-module-of-the-biquaternion-algebra.html)
+- [The Category of Modules in the Biquaternion Algebra](../articles_maths/the-category-of-modules.html)
 - [The Unpolarized Module of the Biquaternion Algebra](../articles_maths/the-unpolarized-module-of-the-biquaternion-algebra.html)
-- [The Carriers, the Representation, the Spin and the Closure](../articles_maths/the-carriers-the-representation-the-spin-and-the-closure.html)
 
-#### The Element
+#### The Spectral Theory in the Biquaternion Algebra
 
-- [The Spectrum](../articles_maths/the-spectrum.html)
-- [Spectral Theory and the Spectral Projectors of $M_4(\mathbb{C})$](../articles_maths/spectral-theory-and-the-spectral-projectors-of-m4c.html)
-- [The Centraliser](../articles_maths/the-centraliser.html)
-- [The Semisimple–Nilpotent Split](../articles_maths/the-semisimple-nilpotent-split.html)
+- [The Spectrum of a Biquaternion](../articles_maths/the-spectrum.html)
+- [The Centraliser in the Biquaternion Algebra](../articles_maths/the-centraliser.html)
+- [The Semisimple–Nilpotent Split of a Biquaternion](../articles_maths/the-semisimple-nilpotent-split.html)
 - [The Eigenbasis of a Spectrally Regular Biquaternion](../articles_maths/the-eigenbasis-of-a-spectrally-regular-biquaternion.html)
 - [Worked Examples of an Eigenbasis of a Biquaternion](../articles_maths/worked-examples-of-an-eigenbasis-of-a-biquaternion.html)
 - [The Jordan Basis of a Spectrally Degenerate Biquaternion](../articles_maths/the-jordan-basis-of-a-spectrally-degenerate-biquaternion.html)
-- [Square Roots of an Element](../articles_maths/square-roots-of-an-element.html)
 
 #### The Four General Products
 
@@ -133,21 +174,16 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 #### The Four Forms and Their Algebraic Norms
 
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html)
-- [Adjoint Pair of $L$ and $R$ Operators](../articles_maths/adjoint-pair-of-l-and-r-operators.html)
-
-- [The $M_4(\mathbb{C})$ Axis-Free Representation](../articles_maths/m4c-axis-free-representation.html)
 
 #### Algebra with the H Norm
 
 - [The Polar Decomposition of a Biquaternion](../articles_maths/the-polar-decomposition-of-a-biquaternion.html)
-- [The Polar Decomposition of $M_4(\mathbb{C})$](../articles_maths/the-polar-decomposition-of-m4c.html)
 
 #### Algebra with the N Norm
 
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html)
 - [The N-Regular Sector](../articles_maths/the-n-regular-sector.html)
 - [The N-Degenerate Sector](../articles_maths/the-n-degenerate-sector.html)
-- [The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$](../articles_maths/the-forms-the-norms-and-the-singular-set-of-m4c.html)
 - [The Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html)
 - [The Polar Decomposition of an N-Degenerate Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-degenerate-biquaternion.html)
 
@@ -168,17 +204,51 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 
 #### Remarkable Subspaces and the Forms
 
-- [Adjoint Pair of $L$ and $R$ Operators](../articles_maths/adjoint-pair-of-l-and-r-operators.html)
 - [Remarkable Subspaces and the Four General Products, Forms and Norms](../articles_maths/remarkable-subspaces-and-the-four-general-products-forms-and-norms.html)
 - [The Polar Decomposition and Remarkable Subspaces](../articles_maths/the-polar-decomposition-and-remarkable-subspaces.html)
 
+#### Operators of the Quaternion Algebra
+
+- [The Enveloping Operator Algebra of the Quaternion Algebra and the Bi-module Structure](../articles_maths/the-enveloping-operator-algebra-of-the-quaternion-algebra-and-the-bi-module-structure.html)
+- [Two-Sided Operators on the Quaternion Algebra](../articles_maths/two-sided-operators-on-the-quaternion-algebra.html)
+- [One-Sided Operators on the Quaternion Algebra](../articles_maths/one-sided-operators-on-the-quaternion-algebra.html)
+- [The Pin and Spin Groups of the Quaternion Algebra](../articles_maths/the-pin-and-spin-groups-of-the-quaternion-algebra.html)
+
+##### Matrix Operator Representations
+
+- [$M_2(\mathbb{C})_{\mathbb{H}}$ Standard Representation : Operators](../articles_maths/m2c-h-standard-representation-operators.html)
+- [$M_4(\mathbb{R})_{\mathbb{H}_L}$ Regular Representation : Operators](../articles_maths/m4r-h-l-regular-representation-operators.html)
+
 #### Operators
 
+##### The Endomorphism Algebra
+
 - [The Endomorphisms of the Biquaternion Algebra](../articles_maths/the-endomorphisms-of-the-biquaternion-algebra.html)
-- [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](../articles_maths/the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html)
-- [Adjoint Pair of $L$ and $R$ Operators](../articles_maths/adjoint-pair-of-l-and-r-operators.html)
-- [Operators Acting on Two Sides](../articles_maths/operators-acting-on-two-sides.html)
+
+##### Operators of the Biquaternion Algebra
+
+- [Introduction to the Operators of the Biquaternion Algebra](../articles_maths/introduction-to-the-operators-of-the-biquaternion-algebra.html)
+- [Operator Chirality on the Biquaternion Algebra](../articles_maths/operator-chirality-on-the-biquaternion-algebra.html)
+- [The SVD Decomposition of Endomorphisms of the Biquaternion Algebra](../articles_maths/the-svd-decomposition-of-endomorphisms-of-the-biquaternion-algebra.html)
 - [Operators Acting on One Side](../articles_maths/operators-acting-on-one-side.html)
+- [The Transposition of the Two Sides](../articles_maths/the-transposition-of-the-two-sides.html)
+- [Operators Acting on Two Sides](../articles_maths/operators-acting-on-two-sides.html)
+- [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](../articles_maths/the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html)
+
+##### Adjoint pairs of operators
+
+- [Adjoint Pair of $L$ and $R$ Operators](../articles_maths/adjoint-pair-of-l-and-r-operators.html)
+- [The Hermitian Pair of Operators Acting on One Side](../articles_maths/the-hermitian-pair-of-operators-acting-on-one-side.html)
+- [The Hermitian Pair of Operators Acting on Two Sides](../articles_maths/the-hermitian-pair-of-operators-acting-on-two-sides.html)
+
+##### Matrix Operator Representations
+
+- [$M_4(\mathbb{C})$ Axis-Free Representation : Operators](../articles_maths/m4c-axis-free-representation-operators.html)
+- [$M_4(\mathbb{C})$ Pauli Representation : Operators](../articles_maths/m4c-pauli-representation-operators.html)
+- [$M_2(\mathbb{C})$ Pauli Representation : Operators](../articles_maths/m2c-pauli-representation-operators.html)
+
+##### Operators on the Four Sectors
+
 - [Introduction to N and Spectrally Regular and Degenerate Operators](../articles_maths/introduction-to-n-and-spectrally-regular-and-degenerate-operators.html)
 - [N-Regular, Spectrally Regular Operators Acting on One Side](../articles_maths/n-regular-spectrally-regular-operators-acting-on-one-side.html)
 - [Hermitian Pair of N-Regular, Spectrally Regular Operators Acting on Two Sides](../articles_maths/hermitian-pair-of-n-regular-spectrally-regular-operators-acting-on-two-sides.html)
@@ -188,7 +258,6 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 - [Hermitian Pair of N-Degenerate, Spectrally Regular Operators Acting on Two Sides](../articles_maths/hermitian-pair-of-n-degenerate-spectrally-regular-operators-acting-on-two-sides.html)
 - [N-Degenerate, Spectrally Degenerate Operators Acting on One Side](../articles_maths/n-degenerate-spectrally-degenerate-operators-acting-on-one-side.html)
 - [Hermitian Pair of N-Degenerate, Spectrally Degenerate Operators Acting on Two Sides](../articles_maths/hermitian-pair-of-n-degenerate-spectrally-degenerate-operators-acting-on-two-sides.html)
-- [The Hermitian Pair of Operators Acting on Two Sides](../articles_maths/the-hermitian-pair-of-operators-acting-on-two-sides.html)
 
 ### Topology
 
@@ -204,21 +273,27 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 
 ### Analysis
 
+#### General Analysis
+
 - [Biquaternion Analysis](../articles_maths/biquaternion-analysis.html)
 - [The First-Order Root of the Biquaternion D'Alembertian](../articles_maths/the-first-order-root-of-the-biquaternion-d-alembertian.html)
 - [Biquaternion Regular Functions](../articles_maths/biquaternion-regular-functions.html)
-- [Fueter Theory for Biquaternions](../articles_maths/fueter-theory-for-biquaternions.html)
 - [The Two-Sided Derivative over the Biquaternion Algebra: Rank-One Gradients, the Complex Eikonal and the Linear Sector](../articles_maths/the-two-sided-derivative-over-the-biquaternion-algebra.html)
+- [Fueter Theory for Biquaternions](../articles_maths/fueter-theory-for-biquaternions.html)
 - [Biquaternion Integration](../articles_maths/biquaternion-integration.html)
 - [Remarkable Subspaces and the Analysis](../articles_maths/remarkable-subspaces-and-the-analysis.html)
 - [Biquaternion Lie Group and Exponential Structure](../articles_maths/biquaternion-lie-group-and-exponential-structure.html)
-- [The Killing Form Operator](../articles_maths/the-killing-form-operator.html)
 - [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html)
-- [Holomorphic Functional Calculus](../articles_maths/holomorphic-functional-calculus.html)
 - [Biquaternion Higher Special Functions](../articles_maths/biquaternion-higher-special-functions.html)
+
+#### Harmonic Analysis
+
 - [Biquaternion Discrete Harmonic Analysis](../articles_maths/biquaternion-discrete-harmonic-analysis.html)
 - [Biquaternion Continuous Harmonic Analysis](../articles_maths/biquaternion-continuous-harmonic-analysis.html)
 - [Relations between the Biquaternion Exponential and the Fourier Kernel](../articles_maths/relations-between-the-biquaternion-exponential-and-the-fourier-kernel.html)
+- [Inversion of the Biquaternion Fourier Transform: Poles, Tails and the Degenerate Set](../articles_maths/inversion-of-the-biquaternion-fourier-transform-poles-tails-and-the-degenerate-set.html)
+- [The Three Kernel Placements of the Biquaternion Fourier Transform](../articles_maths/three-kernel-placements-of-the-biquaternion-fourier-transform.html)
+- [Biquaternion Fourier Inversion on the Degenerate Set: Peirce Coordinates and the Exponential](../articles_maths/biquaternion-fourier-inversion-on-the-degenerate-set.html)
 - [The Biquaternion Algebra and the Krein–von Neumann Property](../articles_maths/the-biquaternion-algebra-and-the-krein-von-neumann-property.html)
 - [The Tomita Operator and the J-Modular Pair for the Biquaternion Algebra](../articles_maths/the-tomita-operator-and-the-j-modular-pair-for-the-biquaternion-algebra.html)
 
@@ -250,11 +325,36 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 
 - [Biquaternion Rotations and Lorentz Transformations](../articles_maths/biquaternion-rotations-and-lorentz-transformations.html)
 - [Biquaternion Automorphisms and Derivations](../articles_maths/biquaternion-automorphisms-and-derivations.html)
-- [The Möbius Transformation as an Operator](../articles_maths/the-mobius-transformation-as-an-operator.html)
 - [Biquaternion Versors and the Orthogonal Group](../articles_maths/biquaternion-versors-and-the-orthogonal-group.html)
 - [The Unitary Group of the Biquaternion Algebra](../articles_maths/the-unitary-group-of-the-biquaternion-algebra.html)
 - [The Krein Isometry Group and Its Cartan Decomposition](../articles_maths/the-krein-isometry-group-and-its-cartan-decomposition.html)
 - [The Krein Level Sets and the Hyperbolic Structure](../articles_maths/the-krein-level-sets-and-the-hyperbolic-structure.html)
+
+#### Spin Geometry
+
+- [The Carriers, the Representation, the Spin and the Closure](../articles_maths/the-carriers-the-representation-the-spin-and-the-closure.html)
+
+##### The Spin-Zero Centre Subspace
+
+- [Introduction to the Spin-Zero Centre Subspace](../articles_maths/the-spin-zero-centre-subspace.html)
+- [The Spin-Zero Centre Subspace and N Norm Regularity](../articles_maths/the-spin-zero-centre-subspace-and-n-norm-regularity.html)
+- [The Spin-Zero Centre Subspace and Spectral Regularity](../articles_maths/the-spin-zero-centre-subspace-and-spectral-regularity.html)
+- [The Spin-Zero Centre Subspace and the Sectors of N and Spectral Regularity](../articles_maths/the-spin-zero-centre-subspace-and-the-sectors-of-n-and-spectral-regularity.html)
+
+##### The Spin-Half Bispinors
+
+- [Introduction to the Spin-Half Bispinors](../articles_maths/the-spin-half-bispinor-spaces.html)
+- [Spinors and Dirac Spinors in the Biquaternion Algebra](../articles_maths/spinors-and-dirac-spinors-in-the-biquaternion-algebra.html)
+- [The Spin-Half Bispinors and N Norm Regularity](../articles_maths/the-spin-half-bispinor-spaces-and-n-norm-regularity.html)
+- [The Spin-Half Bispinors and Spectral Regularity](../articles_maths/the-spin-half-bispinor-spaces-and-spectral-regularity.html)
+- [The Spin-Half Bispinors and the Sectors of N and Spectral Regularity](../articles_maths/the-spin-half-bispinor-spaces-and-the-sectors-of-n-and-spectral-regularity.html)
+
+##### The Spin-One Anti-Hermitian Subspace
+
+- [Introduction to the Spin-One Anti-Hermitian Subspace](../articles_maths/the-spin-one-anti-hermitian-subspace.html)
+- [The Spin-One Anti-Hermitian Subspace and N Norm Regularity](../articles_maths/the-spin-one-anti-hermitian-subspace-and-n-norm-regularity.html)
+- [The Spin-One Anti-Hermitian Subspace and Spectral Regularity](../articles_maths/the-spin-one-anti-hermitian-subspace-and-spectral-regularity.html)
+- [The Spin-One Anti-Hermitian Subspace and the Sectors of N and Spectral Regularity](../articles_maths/the-spin-one-anti-hermitian-subspace-and-the-sectors-of-n-and-spectral-regularity.html)
 
 #### Fractal Geometry
 
@@ -269,21 +369,23 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 - [The Hausdorff Dimension of the Biquaternion Julia Sets](../articles_maths/the-hausdorff-dimension-of-the-biquaternion-julia-sets.html)
 - [The Biquaternion Holomorphic Dynamics and the Jacobian](../articles_maths/the-biquaternion-holomorphic-dynamics-and-the-jacobian.html)
 
-## What the Index Is For
+## The Archive
 
-The list has four blocks. The *Algebra* block fixes the vocabulary and the objects: the vector space, the four general products and their twelve readings, the forms, the norms, the involutions, the subspaces, the two sectors, the ideals and the representations. The three remaining blocks of the study are the three places a physical interpretation can land beyond the algebra. Topology gives the causal structure: the cone, its link and its projectivisation. Analysis gives the fields and their evolution: the regular functions, the operators and the propagators. Geometry gives the frames and their orbits: the rotations, the Lorentz group, the $*$-unitary and the Krein groups.
+**The forty-one articles that the category carried before this derivation are kept, in a subsection named ARCHIVE.** Nothing is deleted. Each one is the source of the readings that the derived entries carry, and each is reachable from the menu, at the end of the category, under that heading.
 
-The grouping also tells the reader what kind of interpretation to expect. A general entry fixes a definition. An algebraic entry is read as an object or an operation. A topological entry is read as a locus or a boundary. An analytic entry is read as a field or a propagator. A geometric entry is read as a transformation or an orbit.
+**The archive is not a second reading of the subject.** The derived entries above are the category. The archived articles are kept for two reasons: their readings are being carried over one at a time, and a reader who wants the older and longer treatment of one point can still find it. An archived article is retired once its readings have been carried into an entry and that entry has been checked against it.
 
-The index is not a publication plan. It is the map of the sources, and the category reads them as its articles require. Some entries will carry an interpretation and some will not. The fractal block, in particular, has no physical article in the corpus so far, and an article of this category may say so. The absence of an interpretation is a statement about the physics and not a defect of the mathematics.
+**Three articles are not archived, because they survive.** *The Two Sectors: Split and the Four Bridges* is taken unchanged as the first entry of I.12. *The Unit Group, the Cone and the Orders* is taken unchanged as II.1. This introduction is rewritten in place, because its subject is unchanged and its content is the new structure.
 
-## Summary
+## The Limits of the Category
 
-- The category reads the mathematics physically.
-- It carries thirty-eight articles that interpret results. Each links one or several articles of the Mathematical menu, states their results, then gives labelled physical interpretations with their boundaries.
-- The category owns no theorem; the proof stays in the mathematics article.
-- One result may carry several interpretations, and the interpretation names the sector, the regime and the question.
-- The index lists one hundred and twenty-three entries of the Mathematical menu, grouped as that menu groups them. The category also reads the one hundred and thirty-five entries of the *Biquaternion Algebraic Structures* category, and the two corpora together carry two hundred and sixty-five entries.
+**The category owns no theorem.** Every result it reads is proved in a mathematics article, one click away, and the entry names the section it uses. Where an interpretation needs a result the mathematics does not contain, the interpretation is not written.
+
+**The category predicts no number.** It identifies a physical object with an algebraic structure and leaves the dynamics, the constants and the comparison with experiment to the other physics categories. An identification that would need a measurement to be true is a claim of those categories, not of this one.
+
+**The category is not complete.** Twenty-seven of the twenty-nine derived entries are titled in the menu and not yet written; their links are dead until they exist. The two written entries are the two that were taken unchanged. The order of writing follows the order of dependence: the vocabulary of the carrier and the norm first, then the spin block, then the algebra that the spin block cites.
+
+**The archive is not maintained.** A factual correction is made to a derived entry. An archived article that is found to be wrong is retired rather than repaired, unless its readings have not yet been carried, in which case the error is recorded in the entry that carries them.
 
 ## Summary of Notation
 
@@ -295,14 +397,26 @@ The index is not a publication plan. It is the map of the sources, and the categ
 | $\tilde Q=\sum_\mu Q_\mu e_\mu$ | a general element, with complex coefficients $Q_\mu$ |
 | $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$ | the quaternionic norm, the form that carries the interval |
 | $\tilde Q^{*}$ | the Hermitian conjugation, the anti-automorphism of the plain product |
+| $N(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ | the N norm, the form whose vanishing is N degeneracy |
 | $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | the material and the informational sectors, the anti-Hermitian and the Hermitian halves |
 | $\tilde{Ϛ}_{\Psi}$ | the state element, Hermitian and normalised by $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$ (trace one in the $2\times2$ image) |
 | $\tilde\Pi$ | an idempotent; a rank-one Hermitian idempotent is a pure state |
 | $\mathrm{Sd}_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$ | the two-sided operator, the change of frame on the unit-norm slice |
+| $W$ | a carrier: a nonzero real subspace, invariant and irreducible under one of the algebra's own actions |
+| $\mathrm{cl}(W)$ | the closure of the carrier, the real space a field takes values in |
+
+## Summary
+
+- The category is derived from the Mathematical menu and inherits its order. One hundred and fifty mathematics articles in twenty sections become twenty-nine physics entries in twenty-three subsections.
+- The rule is one entry to one section, with two named exceptions: the spectral strata and the remarkable subspaces.
+- Every entry links its mathematics, states the result in brief, gives labelled interpretations, and states the limits of each.
+- The spin is the last part of the geometry, after the rotations and the groups, because a spin is a weight of a representation of the rotation.
+- The forty-one superseded articles are kept in the archive as sources, and are retired one at a time as their readings are carried.
+- Twenty-seven derived entries are titled and not yet written; none exists on disk as a stub.
 
 ## Further Reading
 
-- The Mathematical menu, *Biquaternions* category, which is the source of every mathematical link of this article, and its *Biquaternion Algebraic Structures* category, which supplies the derived structures read where they are used.
-- [Conventions in the Biquaternion Universe](algebra-and-element-conventions.html), for the notation every article of the category assumes.
+- The Mathematical menu, *Biquaternions* category, which is the source of every mathematical link of the category: the algebra, the idempotents, the modules, the spectrum, the products, the forms and the norms, the strata, the operators, the topology, the analysis and the geometry.
+- [Conventions in the Biquaternion Universe](algebra-and-element-conventions.html), for the notation every entry of the category assumes.
 - [Introduction to the Biquaternion Universe](introduction-to-the-biquaternion-universe.html), for the algebra and the two sectors.
-- [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) and [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the two sector articles of this category.
+- The archive at the end of this category, for the longer treatments of the points that the derived entries state once.
