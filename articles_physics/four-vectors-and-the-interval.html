@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Four-Vectors and the Interval — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="four-vectors-and-the-interval"><strong>Four-Vectors and the Interval</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>This entry reads the second article of the fourth section of the category: the material sector as the home of the four-vector.</strong> The sector is the anti-Hermitian half of the algebra, four real dimensions, and it is the only part of the algebra in which the order of events is written. The entry states what the algebra supplies to a four-vector, what it refuses, and which of the standard relativistic statements are theorems rather than conventions.</p>
+<p>$$
+\mathbb{B}_{\Phi}=\{\tilde Q\in\mathbb{B}:\tilde Q^{*}=-\tilde Q\},
+\qquad
+\tilde R_{\Phi}=i\,r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z,
+\qquad
+r'_t,r_x,r_y,r_z\in\mathbb{R}.
+$$</p>
+<p><strong>The first claim is that the interval is the norm, and that its signature is produced by one symbol.</strong> On the sector the quaternionic norm is real and of signature $(3,1)$, because the temporal coordinate is multiplied by the central imaginary and the spatial ones are not. Nothing is added to obtain the Lorentzian signature. The minus sign on the time term is the square of $i$, and the placement of the imaginary unit on the two blocks is what distributes the signs: with $i$ on the temporal block the form is $(3,1)$ and with $i$ on the spatial block it is $(1,3)$, so the two Lorentzian placements are the two Hermitian halves.</p>
+<p><strong>The second claim is that the sector is a Lie algebra and not an algebra.</strong> The bracket of two material elements is twice the cross product of their space parts and has no temporal component, so the temporal direction is central and the bracket is $\mathfrak{su}(2)$ on a line. The product of two material elements, by contrast, leaves the sector: it is Hermitian exactly when the two commute, and the anticommutator is Hermitian always. A four-vector therefore generates rotations and is never itself a product of two four-vectors.</p>
+<p><strong>The third claim is that the Lorentz action comes from outside the sector.</strong> The map $\tilde Q\mapsto\tilde U\tilde Q\tilde U^{*}$ preserves the sector for every invertible $\tilde U$ and preserves the interval exactly when $N(\tilde U)=1$. The rotations of that action are carried by the real unit quaternions inside the sector, the boosts are carried by the Hermitian units outside it, and the sector is a representation space rather than a group. This is the precise sense in which a change of frame is not an element of the thing it acts on.</p>
+<p><strong>The fourth claim is that the spectrum of a four-vector is a Doppler pair, and that its eigenprojectors are not material.</strong> The two eigenvalues of a momentum are $i(E/c\pm\lvert\vec p\rvert)$, the two light-cone frequencies, and their product is the mass squared. The projectors that produce them are Hermitian idempotents, so they lie in $\mathbb{B}_{\Psi}$ and not in $\mathbb{B}_{\Phi}$: the modes of a four-vector are states, and the sector that carries the vector does not carry its own decomposition.</p>
+<p><strong>The fifth claim is that the branch is data.</strong> The pair of frequencies is fixed once the momentum is given, but the statement that both are non-negative needs $E/c\ge\lvert\vec p\rvert$, which is the choice of the future sheet. The two sheets are not exchanged by the proper orthochronous group, so the branch is a Lorentz-invariant declaration and not a gauge. Every statement below that mentions a sign of energy names the branch it uses.</p>
+<p><strong>The sixth claim is a correction to a plausible reading.</strong> It is tempting to say that the four-vector is an element of the algebra and therefore that the algebra contains spacetime. It does not: the sector contains the points of a flat kinematic space and the invariants of its linear motions, and it contains neither a metric field, nor a connection, nor an equation of motion. What it contains is exactly the data that a four-vector formalism contains, and the entry says so in the same place where it says what the formalism is used for.</p>
+<p><strong>The seventh claim is the reading, and it is stated here so that it can be judged against the mathematics.</strong> The material sector is the kinematic layer of the framework: it is where an event, a worldline, a momentum and a wave covector are the same kind of object, and where the difference between them is the invariant that each one's norm carries. The interval is not a distance and not a metric; it is the invariant of the sector, and the three classes of four-vector are the three regions of its zero set.</p>
+<p><strong>The strongest objection is that this is the standard four-vector formalism with new letters.</strong> The algebra does supply a dictionary, and a dictionary is not a derivation. The answer is that three statements here are theorems and not translations. The coincidence of the light cone with the zero-divisor cone is one. The split of the Lorentz algebra into one part inside the sector and one part outside it is the second. The presence of the eigenprojectors in the other sector is the third. Each of the three is a fact about this algebra that a general four-vector formalism does not state.</p>
+<p><strong>A second objection is that the interval has been placed in the algebra by hand, through the factor $i$ on the time coordinate.</strong> The factor is not free: the sector is defined as the fixed space of the reversal, and on that fixed space the coefficient of $e_t$ is imaginary by definition. The alternative convention, the Hermitian sector, gives the negative of the same form and the same geometry. What is not available is a real four-plane on which the norm is real and positive definite <em>and</em> indefinite somewhere else; the signatures are distributed by the involution, not chosen per element.</p>
+<p><strong>The interpretation labels continue the category's sequence.</strong> §<em>The H Norm</em> carries I.8.a to I.8.k, §<em>The N Norm</em> carries I.9.a to I.9.l, §<em>The Spectral Strata</em> carries I.10.a to I.10.bd across its five entries, and §<em>The K Norm</em> carries I.11.a to I.11.l. The first entry of this section, <em>The Two Sectors: Split and the Four Bridges</em>, is a catalogue and carries no labels. This entry carries I.12.a to I.12.l.</p>
+<p><strong>The readings are readings.</strong> Every physical name below is attached to an algebraic object defined without it, and §<em>The Limits</em> states what the readings do not carry. No field equation, no dynamics, no statistics and no curved metric are supplied here.</p>
+<h2 id="the-source-table">The Source Table</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Mathematical Content</th>
+<th>Source Mathematical Article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the sector, its basis, its coordinate blocks and its position among the six subspaces</td>
+<td><a href="../articles_maths/subspaces-and-decompositions-of-the-biquaternion-algebra.html">Subspaces and Decompositions of the Biquaternion Algebra</a></td>
+</tr>
+<tr>
+<td>the norm, its signature, the inverse formula, the units and the zero-divisor cone</td>
+<td><a href="../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html">N-Regularity and N-Degeneracy in the Biquaternion Algebra</a></td>
+</tr>
+<tr>
+<td>the four forms, their Gram matrices and their inertia on the sector</td>
+<td><a href="../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html">The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</a></td>
+</tr>
+<tr>
+<td>the restriction of the forms to the six subspaces and the six signatures</td>
+<td><a href="../articles_maths/remarkable-subspaces-under-the-general-quaternionic-sesqualgebra.html">Remarkable Subspaces under the General Quaternionic Sesqualgebra</a></td>
+</tr>
+<tr>
+<td>the products, the symmetric and antisymmetric decomposition and the cross-product formula</td>
+<td><a href="../articles_maths/remarkable-subspaces-and-the-four-general-products-forms-and-norms.html">Remarkable Subspaces and the Four General Products, Forms and Norms</a></td>
+</tr>
+<tr>
+<td>the bracket, the anticommutator and the Lie algebra of the sector</td>
+<td><a href="../articles_maths/lie-algebras-of-sesqualgebras.html">Lie Algebras of Sesqualgebras</a></td>
+</tr>
+<tr>
+<td>the two-sided operator, its kernel, its image and its adjoint action</td>
+<td><a href="../articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra.html">Two-Sided Operators on the General Plain Sesqualgebra</a></td>
+</tr>
+<tr>
+<td>the rotor conjugation, the double covers, $SO^{+}(1,3)$ and $\mathrm{Spin}(1,3)$</td>
+<td><a href="../articles_maths/biquaternion-rotations-and-lorentz-transformations.html">Biquaternion Rotations and Lorentz Transformations</a></td>
+</tr>
+<tr>
+<td>the exponential, the boost and rotation families and their closed forms</td>
+<td><a href="../articles_maths/biquaternion-lie-group-and-exponential-structure.html">Biquaternion Lie Group and Exponential Structure</a></td>
+</tr>
+<tr>
+<td>the eigenvalue decomposition, the eigenprojectors and the degenerate case</td>
+<td><a href="../articles_maths/the-biquaternion-eigenvalue-decomposition.html">The Biquaternion Eigenvalue Decomposition</a></td>
+</tr>
+<tr>
+<td>the spectrum, the centraliser and the semisimple–nilpotent split</td>
+<td><a href="../articles_maths/the-spectrum.html">The Spectrum</a></td>
+</tr>
+<tr>
+<td>the K norm and the coincidence of the two null sets on this sector</td>
+<td><a href="../articles_maths/kr-regularity-and-degeneracy-in-the-biquaternion-algebra.html">Kr-Regularity and Degeneracy in the Biquaternion Algebra</a></td>
+</tr>
+<tr>
+<td>the rank of the one-sided multiplications and the polar decomposition</td>
+<td><a href="../articles_maths/relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html">Relations between the N Norm and Spectral Regularity and Degeneracy</a></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Three physics companions are quoted and not rebuilt.</strong> The dictionary of the seven four-vectors, the interval and the Lorentz action are <em>The Material Sector: Four-Vectors, Interval and Lorentz Action</em>. The reading of the eigenpair is <em>The Spectral Reading of a Four-Vector</em>. The indefinite form and the two null sets are <em>The K Norm and the Indefinite Structure</em>, the previous section of this series. What this entry adds to those three is the position of the sector in the category: which of its properties are inherited from the algebra, which are inherited from the involution that defines it, and which are the sector's alone.</p>
+<h2 id="the-results-in-brief">The Results in Brief</h2>
+<p><strong>The sector is a real four-plane of two blocks.</strong> The temporal block $\mathbb{R}(ie_t)$ is one-dimensional and central; the spatial block $k=\operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$ is three-dimensional. The two blocks behave differently under every operation of the algebra, and the difference is the whole content of the sector.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>operation</th>
+<th>temporal block $\mathbb{R}(ie_t)$</th>
+<th>spatial block $k$</th>
+<th>whole sector</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>quaternionic norm $N$</td>
+<td>$-r_t'^{2}$</td>
+<td>$+\lvert\vec r\rvert^{2}$</td>
+<td>$-r_t'^{2}+\lvert\vec r\rvert^{2}$, signature $(3,1)$</td>
+</tr>
+<tr>
+<td>Hermitian norm $H$</td>
+<td>$+r_t'^{2}$</td>
+<td>$+\lvert\vec r\rvert^{2}$</td>
+<td>positive definite, $(4,0)$</td>
+</tr>
+<tr>
+<td>plain norm $P$</td>
+<td>$-r_t'^{2}$</td>
+<td>$-\lvert\vec r\rvert^{2}$</td>
+<td>negative definite, $(0,4)$</td>
+</tr>
+<tr>
+<td>K norm $\mathrm{Kr}$</td>
+<td>$+r_t'^{2}$</td>
+<td>$-\lvert\vec r\rvert^{2}$</td>
+<td>$r_t'^{2}-\lvert\vec r\rvert^{2}$, signature $(1,3)$</td>
+</tr>
+<tr>
+<td>bracket $[\cdot,\cdot]$</td>
+<td>$0$</td>
+<td>$2\vec r_1\times\vec r_2$</td>
+<td>stays in the sector</td>
+</tr>
+<tr>
+<td>anticommutator $\{\cdot,\cdot\}$</td>
+<td>—</td>
+<td>—</td>
+<td>leaves the sector</td>
+</tr>
+<tr>
+<td>product</td>
+<td>—</td>
+<td>—</td>
+<td>leaves the sector unless the factors commute</td>
+</tr>
+<tr>
+<td>action $\tilde Q\mapsto\tilde U\tilde Q\tilde U^{*}$</td>
+<td>preserved</td>
+<td>preserved</td>
+<td>preserved</td>
+</tr>
+<tr>
+<td>central imaginary $i\cdot$</td>
+<td>leaves the sector</td>
+<td>leaves the sector</td>
+<td>$\mathbb{B}_{\Phi}\to\mathbb{B}_{\Psi}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The four norms are the four ways of reading the same four coordinates.</strong> On the sector the four forms are all real, because the star is minus the identity there. They are therefore four real quadratic forms on one real four-space, and their signatures are $(3,1)$, $(4,0)$, $(0,4)$ and $(1,3)$. Only two of them are indefinite, and the two indefinite ones are negatives of each other:</p>
+<p>$$
+N=-\mathrm{Kr},
+\qquad
+H=-P .
+$$</p>
+<p><strong>The bracket is the cross product, and that is a theorem about the coordinates.</strong> For $\tilde R_{\Phi,1}=ir'_{1t}e_t+\vec r_1$ and $\tilde R_{\Phi,2}=ir'_{2t}e_t+\vec r_2$,</p>
+<p>$$
+[\tilde R_{\Phi,1},\tilde R_{\Phi,2}]=2\,\vec r_1\times\vec r_2,
+$$</p>
+<p>with no temporal part and no dependence on $r'_{1t}$ or $r'_{2t}$. The temporal coordinate is therefore central in the sector, and the sector's Lie algebra is $\mathfrak{u}(2)=\mathbb{R}(ie_t)\oplus\mathfrak{su}(2)$.</p>
+<p><strong>The Lorentz action is a congruence by a unit, and the unit need not be in the sector.</strong> For any invertible $\tilde U$ the map $\tilde Q\mapsto\tilde U\tilde Q\tilde U^{*}$ carries $\mathbb{B}_{\Phi}$ into itself, since $(\tilde U\tilde Q\tilde U^{*})^{*}=\tilde U\tilde Q^{*}\tilde U^{*}=-\tilde U\tilde Q\tilde U^{*}$. The norm scales by $\lvert N(\tilde U)\rvert^{2}$, so the action is by isometries exactly on the unit group.</p>
+<p><strong>The spectrum is the Doppler pair.</strong> For a momentum $\tilde P_{\Phi}=i\frac{E}{c}e_t+\vec p$ the eigenvalues are $\lambda_\pm=i(E/c\pm\lvert\vec p\rvert)$, the two frequencies are $\nu_\pm=mc\,e^{\pm\theta_{\mathrm{rpd}}}$ for a massive momentum, and the product is the mass squared.</p>
+<p><strong>The eigenprojectors lie in the other sector.</strong> They are $\tilde\Pi_\pm=\frac12(e_t\mp i\vec u_p)$, Hermitian idempotents, so $\tilde\Pi_\pm\in\mathbb{B}_{\Psi}$ although $\tilde P_{\Phi}\in\mathbb{B}_{\Phi}$. The decomposition of a material element is written with informational idempotents.</p>
+<p><strong>Two null sets coincide here and nowhere else.</strong> On the sector the K norm is minus the algebraic norm, so lightlike and massless are one equation. That coincidence is <em>The K Norm and the Indefinite Structure</em>, §<em>The Six Restrictions</em>, and it is used here as a boundary rather than reproved.</p>
+<h2 id="the-sector-and-its-coordinates">The Sector and Its Coordinates</h2>
+<p><strong>The material sector is the fixed space of the reversal.</strong> The algebra carries one involution and two reversals, and the syntax of the corpus is fixed by the conventions article: ${}^{*}$ is the Hermitian involution, ${}^{\natural}$ the quaternionic conjugation, and the material reversal is the composite</p>
+<p>$$
+\tilde Q^{\flat}=-{}^{*}\tilde Q .
+$$</p>
+<p>The sector is the set of elements fixed by the reversal, and the fixed space of a linear involution is a linear subspace. The definition therefore costs nothing and adds nothing: the sector is a subspace of the algebra before any physical word is used.</p>
+<p><strong>In coordinates the definition is a statement about real and imaginary parts.</strong> With the coefficient vector $(Q_t,Q_x,Q_y,Q_z)\in\mathbb{C}^{4}$ the involution acts as</p>
+<p>$$
+\tilde Q^{*}=(\bar Q_t,-\bar Q_x,-\bar Q_y,-\bar Q_z),
+$$</p>
+<p>so the fixed space of $-{}^{*}$ is the set of vectors with $Q_t$ purely imaginary and $Q_x,Q_y,Q_z$ real. That is the four real parameters $r'_t,r_x,r_y,r_z$ of the display in the introduction. The prime on the temporal coordinate marks the convention that the temporal component carries the imaginary unit explicitly, and it is the same prime that <em>The Material Sector: Four-Vectors, Interval and Lorentz Action</em> uses.</p>
+<p><strong>The temporal block and the spatial block are different objects.</strong> The first is $\mathbb{R}(ie_t)$, a line, and the second is $k=\operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$, a three-space. Every table in this entry separates them, because every claim about the sector either holds for both blocks or distinguishes them, and the distinction is never the one that a reader expects. The norm is negative on the first block and positive on the second. The bracket vanishes on the first block and is the cross product on the second. The K norm has the opposite signs. The central imaginary exchanges the two signatures.</p>
+<p><strong>The sector is not an algebra and the failure is structural.</strong> The star is an anti-automorphism, so for two anti-Hermitian elements</p>
+<p>$$
+(\tilde R_{\Phi,1}\tilde R_{\Phi,2})^{*}=\tilde R_{\Phi,2}^{*}\tilde R_{\Phi,1}^{*}=\tilde R_{\Phi,2}\tilde R_{\Phi,1},
+$$</p>
+<p>and the product is Hermitian exactly when the two factors commute. A product of two distinct material elements is therefore not material. The square of a material element is always informational, since the element commutes with itself. A four-vector multiplied by a four-vector is a state or a density, and not another four-vector.</p>
+<p><strong>The bracket does not fail.</strong> The antisymmetric part of the product is the commutator, and the commutator of two anti-Hermitian elements is anti-Hermitian:</p>
+<p>$$
+[\tilde R_{\Phi,1},\tilde R_{\Phi,2}]^{*}
+=(\tilde R_{\Phi,1}\tilde R_{\Phi,2})^{*}-(\tilde R_{\Phi,2}\tilde R_{\Phi,1})^{*}
+=\tilde R_{\Phi,1}\tilde R_{\Phi,2}-\tilde R_{\Phi,2}\tilde R_{\Phi,1}.
+$$</p>
+<p><strong>The coefficient computation gives the cross product exactly.</strong> Writing the two elements in components, the product is</p>
+<p>$$
+\tilde R_{\Phi,1}\tilde R_{\Phi,2}
+=-\bigl(\vec r_1\cdot\vec r_2-r'_{1t}r'_{2t}\bigr)e_t
++i\bigl(r'_{1t}\vec r_2-r'_{2t}\vec r_1\bigr)
++\vec r_1\times\vec r_2,
+$$</p>
+<p>and the antisymmetric part of that expression is twice the cross product of the space parts, with the temporal coordinates cancelling. The entry verifies the identity numerically as well as symbolically, and the cancellation is exact.</p>
+<p><strong>The symmetric part of the same product is Hermitian and carries the temporal mixing.</strong> Its scalar part is minus the Minkowski pairing of the two elements, and its vector part is the antisymmetric temporal mixture $i(r'_{1t}\vec r_2-r'_{2t}\vec r_1)$. The anticommutator is the sum of twice each, and it is informational.</p>
+<p><strong>The two halves of the product are the two halves of the algebra.</strong> The commutator, which stays, is the compact part and generates rotations. The anticommutator, which leaves, is the non-compact part and carries the boosts. This is the Cartan decomposition of the Lorentz algebra, obtained here without naming the group: the compact generators are the real vectors, and the non-compact ones are the imaginary vectors, which lie in the informational sector.</p>
+<p><strong>That the boost generators are informational is a coordinate fact.</strong> The element $i\vec e_x$ has coefficient vector $(0,i,0,0)$, and its star is $(0,i,0,0)$ again, so it is Hermitian. The rotation generator $\vec e_x$ has star $-\vec e_x$ and is material. Hence</p>
+<p>$$
+\mathfrak{so}(1,3)=\mathfrak{su}(2)_{J}\oplus i\,\mathfrak{su}(2)_{K},
+\qquad
+J\in\mathbb{B}_{\Phi},
+\qquad
+K\in\mathbb{B}_{\Psi},
+$$</p>
+<p>and the Lie algebra of the Lorentz group uses both sectors. Nothing in the sector alone generates a boost.</p>
+<p><strong>The centre of the sector is the time axis, and the bracket cannot see it.</strong> Since the bracket is the cross product of the spatial parts, the coordinate $r'_t$ does not enter. Two four-vectors with the same space part and different energies have the same bracket with everything. The bracket of the sector is therefore $\mathfrak{su}(2)$ and not $\mathfrak{so}(1,3)$, and the temporal line is an abelian summand: $\mathfrak{u}(2)$ rather than $\mathfrak{su}(2)$.</p>
+<p><strong>This is the first place where the sector's physics is thinner than it looks.</strong> A four-vector is a generator of spatial rotations, and the temporal component is a label that rotations do not touch. The Lorentz boosts, which are what mix the temporal component into the spatial ones, are not in the sector's bracket at all; they are the action of the sector's Hermitian complement. The entry returns to this in §<em>The Lorentz Action</em>.</p>
+<p><strong>The sector sits in the six-subspace decomposition as one of the two Hermitian halves.</strong> The other half is $\mathbb{B}_{\Psi}$, the fixed space of ${}^{*}$ itself, with basis $\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$. The two halves intersect in $\{0\}$ and span the algebra, and the central imaginary exchanges them. The remaining four subspaces of the six-subspace list are the centre, the quaternion layer, the vector subspace and the trace-free part; the entry uses only the two halves and the two blocks inside $\mathbb{B}_{\Phi}$.</p>
+<h2 id="the-interval">The Interval</h2>
+<p><strong>The interval is the quaternionic norm restricted to the sector, and on the sector it is real.</strong> The norm of a general biquaternion is complex; the general formula is $N(\tilde Q)=\tilde Q\tilde Q^{\natural}$, and it is real exactly when the element lies in one of the two Hermitian halves. On the sector,</p>
+<p>$$
+N(\tilde R_{\Phi})=\tilde R_{\Phi}\tilde R_{\Phi}^{\natural}=-r_t'^{2}+r_x^{2}+r_y^{2}+r_z^{2},
+$$</p>
+<p>and the right-hand side is a real quadratic form of signature $(3,1)$: one negative direction, the temporal one, and three positive ones, the spatial ones.</p>
+<p><strong>The signature is produced by the square of the central imaginary.</strong> The temporal coordinate enters the display as $ir'_t$, and $(ir'_t)^{2}=-r_t'^{2}$. With a real temporal coefficient the form would be $r_t'^{2}+\lvert\vec r\rvert^{2}$, positive definite, with no null set and no cone. The Lorentzian signature is therefore a consequence of the placement of $i$ in the definition of the sector, and the placement is a consequence of the involution that defines the sector. Nothing is added.</p>
+<p><strong>The inverse formula fails exactly on the cone.</strong> For a unit-norm element the inverse is $\tilde R_{\Phi}^{-1}=\tilde R_{\Phi}^{\natural}/N(\tilde R_{\Phi})$, and for zero norm there is no inverse. The zero set of the norm is therefore the boundary of the set of units, and on it the element is a zero divisor:</p>
+<p>$$
+N(\tilde R_{\Phi})=0,\quad \tilde R_{\Phi}\neq0
+\quad\Longleftrightarrow\quad
+\tilde R_{\Phi}\ \text{annihilates a non-zero element on the left and on the right}.
+$$</p>
+<p><strong>The origin is the one null point that is not a zero divisor.</strong> It is null and it annihilates nothing that is not already zero. The distinction matters because the light cone is usually drawn with its apex included, and the apex is the single point where the algebraic and the geometric descriptions differ: the cone without its apex is a smooth three-manifold, the apex is the singularity that closes it.</p>
+<p><strong>The four forms on the sector are all real, and their signatures are the four combinations.</strong> The plain form is the bilinear partner of the quaternionic one, the Hermitian form is the sesquilinear one, and the K form is the fourth. On the sector the star is minus the identity, so the sesquilinear forms differ from the bilinear ones only by a sign, and the four read</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>form</th>
+<th>expression on $\tilde R_{\Phi}$</th>
+<th>signature</th>
+<th>on the sector</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\langle\tilde R,\tilde R\rangle$</td>
+<td>$-r_t'^{2}-\lvert\vec r\rvert^{2}$</td>
+<td>$(0,4)$</td>
+<td>negative definite</td>
+</tr>
+<tr>
+<td>$\langle\tilde R,\tilde R\rangle_{\natural}$</td>
+<td>$-r_t'^{2}+\lvert\vec r\rvert^{2}$</td>
+<td>$(3,1)$</td>
+<td>the interval</td>
+</tr>
+<tr>
+<td>$\langle\tilde R,\tilde R\rangle_{*}$</td>
+<td>$+r_t'^{2}+\lvert\vec r\rvert^{2}$</td>
+<td>$(4,0)$</td>
+<td>positive definite</td>
+</tr>
+<tr>
+<td>$\langle\tilde R,\tilde R\rangle_{\natural*}$</td>
+<td>$+r_t'^{2}-\lvert\vec r\rvert^{2}$</td>
+<td>$(1,3)$</td>
+<td>minus the interval</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The identities that relate them are two.</strong> The first is $N=-\mathrm{Kr}$, which is the statement that the two indefinite forms on the sector are negatives of each other. The second is $H=-P$, which is the same statement for the two definite ones. Both hold because the star acts as minus the identity on the sector, and both fail on the informational sector, where the star acts as plus the identity and the two indefinite forms coincide with opposite orientation.</p>
+<p><strong>The consequences of $N=-\mathrm{Kr}$ are the whole of the coincidence of the two null sets.</strong> A material element is null for one if and only if it is null for the other, so a lightlike four-vector is a zero divisor and a zero-divisor four-vector is lightlike. That is <em>The K Norm and the Indefinite Structure</em>, §<em>The Six Restrictions</em>, and the entry records it here because it is the reason a four-vector's null set has one name rather than two.</p>
+<p><strong>The interval is multiplicative, and that is not true of the other three forms.</strong> For any two elements of the algebra, $N(\tilde Q_1\tilde Q_2)=N(\tilde Q_1)N(\tilde Q_2)$, because the norm is a determinant. The K form is not multiplicative, the Hermitian form is not multiplicative, and the plain form is multiplicative only on the quaternionic layer. On the sector the multiplicativity of $N$ has a consequence that the other forms do not have: the sign of the interval of a product is the product of the signs of the factors.</p>
+<p><strong>That consequence is the algebra's version of a composition law for causal character.</strong> The product of two timelike elements is spacelike in this convention, since two negative factors give a positive product; the product of a timelike and a spacelike element is timelike; a null factor makes the product null. The statement is algebraic and its physical reading is the composition of causal characters along a chain of transformations, which is what a worldline is.</p>
+<p><strong>The temporal sign convention is a convention and the entry names it once.</strong> In this corpus a timelike element has negative interval and a spacelike element positive. The opposite convention is obtained by reading the informational sector instead, or by exchanging $\tilde Q$ with $i\tilde Q$, and the geometry is the same. Every statement about "future" and "past" below is a statement about the sign of $r'_t$, and it is stated in the branch where the temporal coordinate is positive for a future-pointing vector.</p>
+<p><strong>The proper time is the square root of minus the interval, and it exists exactly off the null set.</strong> For a timelike displacement one writes</p>
+<p>$$
+d\tau=\frac{1}{c}\sqrt{-N(d\tilde R_{\Phi})}
+=\sqrt{dr_t'^{2}-\frac{dr_x^{2}+dr_y^{2}+dr_z^{2}}{c^{2}}},
+$$</p>
+<p>and the parameter is defined where the interval is negative. On the null set the proper time vanishes and the worldline is a light ray. The formula is a consequence of the norm and not an independent axiom, and it is the only place where the speed of light enters the sector: as the constant that converts the spatial coordinates into the units of the temporal one.</p>
+<p><strong>The speed of light is local because the conversion is a choice of coordinates.</strong> The number $c$ does not appear in the algebra; it appears in the identification of the temporal coordinate with a length. In a medium, $c=1/\sqrt{\epsilon\mu}$ varies, so the cone varies from point to point and the identification varies with it. The vacuum value is the case in which the conversion is the same everywhere. The sector carries the kinematic structure; the variation of the conversion is a statement about a medium and not about the algebra.</p>
+<h2 id="the-bracket">The Bracket</h2>
+<p><strong>The bracket of the sector is the cross product, and the entry verifies it in coordinates.</strong> With $\tilde R_{\Phi,1}=ir'_{1t}e_t+\vec r_1$ and $\tilde R_{\Phi,2}=ir'_{2t}e_t+\vec r_2$ the product is</p>
+<p>$$
+\tilde R_{\Phi,1}\tilde R_{\Phi,2}
+=-\bigl(\vec r_1\cdot\vec r_2-r'_{1t}r'_{2t}\bigr)e_t
++i\bigl(r'_{1t}\vec r_2-r'_{2t}\vec r_1\bigr)
++\vec r_1\times\vec r_2,
+$$</p>
+<p>and the antisymmetric part of the product is twice the cross product of the space parts:</p>
+<p>$$
+[\tilde R_{\Phi,1},\tilde R_{\Phi,2}]=2\,\vec r_1\times\vec r_2 .
+$$</p>
+<p><strong>Two features of that display are used repeatedly below.</strong> The temporal coordinates $r'_{1t}$ and $r'_{2t}$ do not appear in the bracket, so the temporal line is central. And the bracket is a real vector, so it lies in the spatial block $k$ and not merely in the sector.</p>
+<p><strong>The bracket is therefore $\mathfrak{su}(2)$ on a central line, and the sector is $\mathfrak{u}(2)$ as a Lie algebra.</strong> The cross product is the Lie bracket of $\mathbb{R}^{3}$ with the standard orientation, the identification of $k$ with $\mathfrak{su}(2)$ is the standard one, and the central line adds the abelian summand. The sector is a Lie algebra of real dimension four, and its derived algebra is the three-dimensional $\mathfrak{su}(2)$.</p>
+<p><strong>The bracket closes and the product does not, and the difference is the involution.</strong> This is the sharpest structural statement about the sector, and it deserves the display:</p>
+<p>$$
+[\mathbb{B}_{\Phi},\mathbb{B}_{\Phi}]\subseteq\mathbb{B}_{\Phi},
+\qquad
+\{\mathbb{B}_{\Phi},\mathbb{B}_{\Phi}\}\subseteq\mathbb{B}_{\Psi},
+\qquad
+\mathbb{B}_{\Phi}\cdot\mathbb{B}_{\Phi}\not\subseteq\mathbb{B}_{\Phi}.
+$$</p>
+<p><strong>The first inclusion says that a four-vector generates a rotation of four-vectors.</strong> The second says that the symmetrised product of two four-vectors is a state. The third says that a four-vector times a four-vector is neither. The sector is closed under the operation that generates transformations and open under the operation that composes objects, and that asymmetry is what makes it a kinematic space rather than a material one.</p>
+<p><strong>The central element $ie_t$ is the one direction the bracket cannot move.</strong> It commutes with every element of the algebra, since it is a scalar multiple of the identity in the matrix image. Its bracket with anything is zero, so the temporal direction of a four-vector is invisible to rotations. A rotation of a four-vector changes its space part and leaves its temporal component alone, and the algebra says so before any frame is chosen.</p>
+<p><strong>The boosts are the elements that do move the temporal direction, and they are not in the sector.</strong> An element of the sector acts on another element of the sector by the bracket, and the bracket is a cross product, which is orthogonal to both factors and has no temporal component. A boost, by contrast, mixes the temporal component into the spatial ones, and it is carried by an element of the informational sector acting by the two-sided map. The sector's own algebra therefore generates the compact part of the Lorentz group and only the compact part.</p>
+<p><strong>That split is the Cartan decomposition, reached from the sector rather than assumed.</strong> The compact generators are the material vectors and the non-compact generators are the informational imaginary vectors, and the two commute into the whole $\mathfrak{so}(1,3)$. The display</p>
+<p>$$
+\mathfrak{so}(1,3)=\mathfrak{su}(2)\oplus i\,\mathfrak{su}(2)
+$$</p>
+<p>is the statement that the Lie algebra of the Lorentz group needs both Hermitian halves of the algebra, and it is the reason a boost cannot be a rotation of the same kind as a rotation. The two summands are exchanged by the central imaginary, so a complex rotation is a boost: that is the statement $i\mathfrak{su}(2)=\mathfrak{su}(2)_{\mathbb{C}}$ restricted to the imaginary axis, and it is what makes the complexification of the rotation group a Lorentz group.</p>
+<p><strong>The anticommutator is what carries the temporal mixing, and it is Hermitian.</strong> The symmetric part of the product in the display above is</p>
+<p>$$
+\{\tilde R_{\Phi,1},\tilde R_{\Phi,2}\}
+=-2\bigl(\vec r_1\cdot\vec r_2-r'_{1t}r'_{2t}\bigr)e_t
++2i\bigl(r'_{1t}\vec r_2-r'_{2t}\vec r_1\bigr),
+$$</p>
+<p>an element of $\mathbb{B}_{\Psi}$ whose scalar part is minus twice the Minkowski pairing of the two four-vectors and whose vector part is twice the antisymmetric temporal mixture. The scalar part of half the anticommutator is therefore minus the pairing, and the vector part of half of it is the generator of the boost that would carry one four-vector into the other. Both are informational.</p>
+<p><strong>The Minkowski pairing is therefore a scalar part of an informational element, not a form on the sector.</strong> This is a small but real difference from the standard formalism, where the pairing is a bilinear form on the same space. Here the definite pairing of two four-vectors is the scalar part of half their anticommutator, so the pairing of two material elements is computed by leaving the sector and coming back with a scalar.</p>
+<p><strong>The Jordan structure and the Lie structure are therefore two different sectors.</strong> The symmetric product closes on $\mathbb{B}_{\Psi}$ and the antisymmetric one on $\mathbb{B}_{\Phi}$; the first is a Jordan algebra, the second a Lie algebra. This is the algebra's own version of the statement that the observables and the generators of a theory are different kinds of object, and the entry records it here because it is a property of the involution and not of any physical choice.</p>
+<p><strong>The mixed products do not close anywhere, and they are the interesting ones.</strong> A material element times an informational one is neither material nor informational in general, because the product of an anti-Hermitian and a Hermitian element has no definite symmetry. Those products are the ones a change of frame uses: a boost times a four-vector, a rotation times a four-vector, and the rotor products of the next section.</p>
+<h2 id="the-lorentz-action">The Lorentz Action</h2>
+<p><strong>The action is a congruence by a unit, and the sector is its carrier.</strong> For $\tilde U\in\mathbb{B}$ with $N(\tilde U)=1$ the map</p>
+<p>$$
+\Lambda_{\tilde U}:\ \mathbb{B}_{\Phi}\longrightarrow\mathbb{B}_{\Phi},
+\qquad
+\Lambda_{\tilde U}(\tilde Q)=\tilde U\tilde Q\tilde U^{*},
+$$</p>
+<p>is real-linear, preserves the interval, and composes as an action. The three properties are one computation each. The sector is preserved because the star is an anti-automorphism; the interval is preserved because the norm is multiplicative and $N(\tilde U)=N(\tilde U^{*})=1$; and the action law is the associativity of the product.</p>
+<p><strong>The sector is preserved by a much larger set than the units.</strong> The computation of the previous paragraph used only the anti-automorphism property, so $\Lambda_{\tilde U}$ carries the sector into itself for <em>every</em> invertible $\tilde U$, unit or not. What the unit condition buys is the preservation of the interval: for a general unit the norm scales as</p>
+<p>$$
+N\bigl(\Lambda_{\tilde U}(\tilde Q)\bigr)=N(\tilde U)N(\tilde Q)N(\tilde U^{*})=\lvert N(\tilde U)\rvert^{2}N(\tilde Q).
+$$</p>
+<p><strong>So the congruences by invertible elements form a group larger than the Lorentz group.</strong> A central rescaling $\tilde U=\lambda e_t$ acts on the sector as multiplication by $\lambda^{2}$ and moves the interval by the positive factor $\lvert\lambda\rvert^{4}$, while the units act by isometries. Only the second is the Lorentz group, and the first is the reason a four-vector can be rescaled without leaving the sector.</p>
+<p><strong>The unit group is the double cover of the proper orthochronous Lorentz group.</strong> The kernel of the action is the set of units that act trivially, and it is the centre $\{\pm e_t\}$. Hence</p>
+<p>$$
+\mathbb{B}^{\times}_{1}/\{\pm e_t\}\cong SO^{+}(1,3),
+\qquad
+\mathbb{B}^{\times}_{1}\cong\mathrm{Spin}(1,3),
+$$</p>
+<p>and the map is two-to-one. The sign ambiguity is not a defect of the representation: it is the statement that a rotor and its negative are the same frame, and it is the same ambiguity that the double cover of the rotation group carries.</p>
+<p><strong>Every unit factors into a boost and a rotation.</strong> A unit-norm biquaternion is a Hermitian positive factor and a real quaternion,</p>
+<p>$$
+\tilde U=\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
+\qquad
+\tilde U_{\Psi,\mathrm b}=\cosh\frac{\theta_{\mathrm{rpd}}}{2}+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b},
+\qquad
+\tilde u_{\mathrm r}=\cos\frac{\theta_{\mathrm{axr}}}{2}+\sin\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r},
+$$</p>
+<p>with the boost factor on the left. The boost factor is Hermitian and lies in $\mathbb{B}_{\Psi}$; the rotation factor is real and lies in $\mathbb{B}_{H}$, the quaternion layer. Only a general rotor uses the whole algebra.</p>
+<p><strong>The two factors act on the sector in two recognisable ways.</strong> The rotation factor $\tilde u_{\mathrm r}$ is a unit of the real quaternion algebra, so its congruence is a rotation of the spatial block and fixes the temporal coordinate. The boost factor $\tilde U_{\Psi,\mathrm b}$ is Hermitian, so its congruence mixes the temporal coordinate into the spatial ones and is the hyperbolic rotation of a change of velocity. The two commute only when the boost axis and the rotation axis coincide, and the product is written with the boost on the left because the two do not commute in general.</p>
+<p><strong>The factorisation is where the sector's thinness becomes visible again.</strong> Rotations are inside the sector: $\tilde u_{\mathrm r}$ is a material element of unit norm, and its action is the congruence by an element of the sector. Boosts are not: $\tilde U_{\Psi,\mathrm b}$ is informational. A sector closed under the action of its own units would generate only rotations, and the reason it does not is that the boost factor is not one of its own.</p>
+<p><strong>The action is transitive on each class of four-vector and preserves the class.</strong> A timelike four-vector is carried to any other timelike four-vector of the same interval, a null one to any null one of the same temporal sign, and a spacelike one to any spacelike one of the same interval. The invariant that separates the orbits is the norm, and it is the only one, because the group is large enough to move any direction into any other direction of the same length. The statement is the orbit classification of <em>Biquaternion Rotations and Lorentz Transformations</em>, §<em>Orbits and the Invariants</em>, restricted to the sector.</p>
+<p><strong>The two sheets of the timelike region are not exchanged.</strong> The action preserves the sign of the temporal component of a timelike or null element, so the future and past hyperboloids are separate orbits and not one orbit in two pieces. The statement is the proper orthochronous condition, and it is a property of the unit group as defined by a continuous path from the identity: a single reflection would exchange the sheets, and a reflection is not in the connected component.</p>
+<p><strong>The action is what the word frame means in this entry.</strong> A frame is an orbit point; a change of frame is a rotor; the invariants of a four-vector are the quantities constant on the orbit. Nothing in that sentence is a new assumption, and nothing in it is specific to the material sector: the same three sentences describe an observable in the informational sector, with the same group acting.</p>
+<p><strong>The infinitesimal form separates the two factors.</strong> Writing $\tilde U=e_t+\epsilon\tilde A$ with $N(\tilde U)=1$ to first order gives $Q_t(\tilde A)=0$, and the congruence expands as</p>
+<p>$$
+\Lambda_{\tilde U}(\tilde Q)=\tilde Q+\epsilon\bigl(\tilde A\tilde Q+\tilde Q\tilde A^{*}\bigr)+O(\epsilon^{2}).
+$$</p>
+<p><strong>The correction is a bracket for an anti-Hermitian generator and an anticommutator for a Hermitian one.</strong> If $\tilde A$ is anti-Hermitian the correction is $\tilde A\tilde Q-\tilde Q\tilde A=[\tilde A,\tilde Q]$, the infinitesimal rotation. If $\tilde A$ is Hermitian it is $\tilde A\tilde Q+\tilde Q\tilde A=\{\tilde A,\tilde Q\}$, the infinitesimal boost. Both corrections are anti-Hermitian when $\tilde Q$ is, so both preserve the sector, and the two cases are the two summands of the Cartan decomposition: $\tilde A=\vec a$ generates a rotation and $\tilde A=i\vec a$ a boost.</p>
+<p><strong>The two kinds of generator sit in different sectors, and only one of them is in the sector's own bracket.</strong> The rotation generator is a material vector and its action is the sector's bracket. The boost generator is an informational imaginary vector and its action is the anticommutator, which leaves the sector as a product while preserving it as an operator. A boost is therefore realisable as an action on the sector and not as an element of the sector's Lie algebra.</p>
+<p><strong>The last statement is worth a display because it is often got wrong.</strong> A Lorentz transformation is the congruence by a unit; the unit is the exponential of an element of the Lie algebra $\mathfrak{so}(1,3)=\mathfrak{su}(2)\oplus i\mathfrak{su}(2)$; and only the first summand is material. So the exponential of a material element is a rotation, the exponential of an informational element is a boost, and the general unit is the product of the two. The sector's own exponential is the rotation subgroup, and it is compact.</p>
+<h2 id="the-spectrum">The Spectrum</h2>
+<p><strong>The spectrum of a four-vector is a pair of imaginary numbers.</strong> For $\tilde P_{\Phi}=i\frac{E}{c}e_t+\vec p$ with $B=\lvert\vec p\rvert$ the characteristic equation is $\lambda^{2}-2Q_t\lambda+N=0$ with $Q_t=iE/c$ and $N=-E^{2}/c^{2}+B^{2}$, so</p>
+<p>$$
+\lambda_\pm=i\left(\frac{E}{c}\pm B\right),
+\qquad
+\lambda_++\lambda_-=2i\frac{E}{c},
+\qquad
+\lambda_+\lambda_-=-m^{2}c^{2}.
+$$</p>
+<p><strong>The eigenvalues are imaginary and the frequencies are real.</strong> Writing $\nu_\pm=\lambda_\pm/i$ gives the two non-negative numbers</p>
+<p>$$
+\nu_\pm=\frac{E}{c}\pm\lvert\vec p\rvert,
+\qquad
+\nu_++\nu_-=\frac{2E}{c},
+\qquad
+\nu_+-\nu_-=2\lvert\vec p\rvert,
+\qquad
+\nu_+\nu_-=m^{2}c^{2}.
+$$</p>
+<p><strong>The pair is the Doppler pair of the momentum's own rapidity.</strong> For $m>0$ the rapidity is fixed by $\cosh\theta_{\mathrm{rpd}}=E/(mc^{2})$ and $\sinh\theta_{\mathrm{rpd}}=\lvert\vec p\rvert/(mc)$, so</p>
+<p>$$
+\nu_\pm=mc\,e^{\pm\theta_{\mathrm{rpd}}},
+\qquad
+\frac{\nu_+}{\nu_-}=e^{2\theta_{\mathrm{rpd}}},
+$$</p>
+<p>and the two frequencies are the rest frequency $mc$ scaled by the two reciprocal Doppler factors. The product is the mass squared and does not depend on the frame; the ratio is the squared Doppler factor and depends on nothing else.</p>
+<p><strong>Only the product is invariant, and the entry insists on the difference.</strong> The sum is twice the energy, the difference is twice the momentum, the ratio is the squared Doppler factor, and each of the three changes under a boost. The product is the mass shell. A reading that takes one of the two factors as <em>the</em> frequency of the particle has confused the pair with one of its members.</p>
+<p><strong>The degenerate cases are two and they are different.</strong> At $\vec p=0$ the two eigenvalues coincide at $iE/c$ and the element is a scalar multiple of the identity on the sector; the two-projector writing is not unique, and any pair of orthogonal Hermitian idempotents summing to $e_t$ will do. At $E/c=\lvert\vec p\rvert$ the element is null, one frequency vanishes, and the element stays semisimple: it is a zero divisor, but its spectrum is a pair with a zero member and not a repeated root. The first case is a spectral degeneracy without a null element; the second is a null element without a spectral degeneracy.</p>
+<p><strong>The two cases are the exceptional point and the massless point, and they are not the same point.</strong> The first is the rest frame, where the two modes coincide; the second is the light ray, where one mode is absent. The corpus treats them in <em>The Rest Frame and the Exceptional Point</em> and <em>The Massless Regime</em> respectively, and the distinction is exactly the one between a repeated eigenvalue and a vanishing one.</p>
+<p><strong>The eigenprojectors are Hermitian idempotents and they are not material.</strong> With $\vec u_p=\vec p/\lvert\vec p\rvert$,</p>
+<p>$$
+\tilde\Pi_\pm=\frac12\bigl(e_t\mp i\vec u_p\bigr),
+\qquad
+\tilde\Pi_\pm^{2}=\tilde\Pi_\pm,
+\qquad
+\tilde\Pi_\pm^{*}=\tilde\Pi_\pm,
+\qquad
+\tilde\Pi_++\tilde\Pi_-=e_t,
+\qquad
+\tilde\Pi_+\tilde\Pi_-=0,
+$$</p>
+<p>and the element reconstructs as $\tilde P_{\Phi}=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-$. The projectors satisfy $\tilde P_{\Phi}\tilde\Pi_\pm=\lambda_\pm\tilde\Pi_\pm$, so they are right eigenprojectors, and the reconstruction is exact.</p>
+<p><strong>Each projector is a null element, and that is the whole point of the display.</strong> A pure state is a null element of the algebra, so the two pieces into which a massive momentum splits are lightlike. The momentum is not null; its two spectral components are. The mass is the product of the two eigenvalues, which are scalars, and the null set is not closed under addition: the sum of two null elements need not be null, and that is why a massive momentum can be written as a sum of two lightlike pieces.</p>
+<p><strong>The projectors lie in the informational sector while the momentum lies in the material one.</strong> Two statements are involved and only the second is specific to this element. First, there is no non-zero anti-Hermitian idempotent: if $\tilde\Pi^{2}=\tilde\Pi$ and $\tilde\Pi^{*}=-\tilde\Pi$, then $\tilde\Pi^{*}=(\tilde\Pi^{2})^{*}=\tilde\Pi^{*}\tilde\Pi^{*}=\tilde\Pi$, so $\tilde\Pi=0$. The projectors therefore cannot be material. Second, they are exactly the Hermitian ones, because the spectral projectors of a semisimple element are polynomials in it,</p>
+<p>$$
+\tilde\Pi_\pm=\frac{\tilde P_{\Phi}-\lambda_\mp e_t}{\lambda_\pm-\lambda_\mp},
+$$</p>
+<p>and the interpolation of the two imaginary eigenvalues returns $\frac12(e_t\mp i\vec u_p)$. Non-Hermitian idempotents do exist in the algebra: for a real unit $\vec u$ and a null complex unit vector $\hat w$ orthogonal to it, $\tfrac12(e_t+i\vec u-\hat w)$ is idempotent and not Hermitian. They are simply not the spectral projectors of this element. The modes of a four-vector are therefore states, and the sector that carries the vector does not carry its own decomposition.</p>
+<p><strong>The spectral decomposition is the one operation of this entry that leaves the sector and re-enters it.</strong> The element is material, the projectors are informational, the eigenvalues are imaginary scalars, and the reconstruction is a sum of informational elements with imaginary coefficients whose result is material. That is the algebra's version of the statement that a mode decomposition is a change of description and not a change of object.</p>
+<p><strong>The eigenprojectors are also the idempotents of the Peirce decomposition of the momentum.</strong> The pair $\{\tilde\Pi_+,\tilde\Pi_-\}$ is a complete set of orthogonal idempotents, so it defines a Peirce decomposition of the algebra relative to the momentum, with $\tilde P_{\Phi}$ acting as $\lambda_+$ on the first Peirce space and $\lambda_-$ on the second. The statement and its proofs are <em>The Biquaternion Eigenvalue Decomposition</em>; the entry uses only the pair and the two eigenvalues.</p>
+<h2 id="the-seven-four-vectors">The Seven Four-Vectors</h2>
+<p><strong>The sector carries the standard four-vectors, and each one is a different invariant.</strong> The table is the dictionary. Every row has the same shape: an imaginary temporal component, a real spatial part, and a norm that names the physical quantity.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>four-vector</th>
+<th>element</th>
+<th>components</th>
+<th>norm $N$</th>
+<th>reading of the norm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>four-position</td>
+<td>$\tilde R=i r'_t e_t+\vec r$</td>
+<td>$(r'_t,r_x,r_y,r_z)$</td>
+<td>$-r_t'^{2}+\lvert\vec r\rvert^{2}$</td>
+<td>the squared interval</td>
+</tr>
+<tr>
+<td>four-velocity</td>
+<td>$\tilde V_{\Phi}=i\gamma c\,e_t+\gamma\vec v$</td>
+<td>$(\gamma c,\gamma\vec v)$</td>
+<td>$-c^{2}$</td>
+<td>the normalisation</td>
+</tr>
+<tr>
+<td>four-momentum</td>
+<td>$\tilde P_{\Phi}=i\frac{E}{c}e_t+\vec p$</td>
+<td>$(E/c,\vec p)$</td>
+<td>$-m^{2}c^{2}$</td>
+<td>the mass shell</td>
+</tr>
+<tr>
+<td>four-wavevector</td>
+<td>$\tilde K_{\Phi}=i\frac{\omega}{c}e_t+\vec k_\Phi$</td>
+<td>$(\omega/c,\vec k_\Phi)$</td>
+<td>$0$ for light</td>
+<td>the dispersion relation</td>
+</tr>
+<tr>
+<td>four-potential</td>
+<td>$\tilde A_{\Phi}=i a'_t e_t+\vec A$</td>
+<td>$(a'_t,\vec A)$</td>
+<td>gauge-dependent</td>
+<td>not an invariant</td>
+</tr>
+<tr>
+<td>four-current</td>
+<td>$\tilde J_{\Phi}=i c\rho\,e_t+\vec j$</td>
+<td>$(c\rho,\vec j)$</td>
+<td>not fixed</td>
+<td>not an invariant</td>
+</tr>
+<tr>
+<td>four-force</td>
+<td>$\tilde{\mathcal F}_{\Phi}=i\frac{\gamma\vec f\cdot\vec v}{c}e_t+\gamma\vec f$</td>
+<td>$(\gamma\vec f\cdot\vec v/c,\gamma\vec f)$</td>
+<td>not fixed</td>
+<td>orthogonality to $\tilde V_{\Phi}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Three of the seven have a fixed norm and four do not, and the difference is the physical content.</strong> The position has its interval, the velocity has its normalisation, and the momentum has its mass shell; those three are level sets that the motion cannot leave. The wavevector's norm vanishes exactly for light, which is a constraint and not a level set. The potential, the current and the force have norms that depend on the configuration, and for those three the sector supplies the carrier and not the invariant.</p>
+<p><strong>The four-velocity's norm is a constant, and that is what makes it a normalised direction.</strong> $N(\tilde V_{\Phi})=-c^{2}$ for every velocity with $\lvert\vec v\rvert<c$, so the four-velocity is a point of the timelike hyperboloid of radius $c$ and the three-velocity is a coordinate on it.</p>
+<p><strong>The four-force is orthogonal to the four-velocity in the definite pairing of half the anticommutator.</strong> The display of §<em>The Bracket</em> applies with $\tilde R_{\Phi,1}=\tilde{\mathcal F}_{\Phi}$ and $\tilde R_{\Phi,2}=\tilde V_{\Phi}$, and the scalar part of the anticommutator is minus twice their Minkowski pairing. That scalar part vanishes when the power is $\vec f\cdot\vec v$, which is the statement that such a force preserves the rest mass. A force with a different power has a non-zero scalar part and changes $N(\tilde V_{\Phi})$: it changes the rest mass, and the algebra says so through the scalar part of an informational element.</p>
+<p><strong>The four-potential's gauge freedom is a motion inside the sector.</strong> The transformation $\tilde A_{\Phi}\mapsto\tilde A_{\Phi}+\partial\xi$ adds to the potential an element of the sector that is the gradient of a scalar, and the norm of the sum is not the sum of the norms. The field strength, built from the antisymmetrised derivative, is the object whose components are the entries of a matrix in $\mathbb{B}_{\Phi}$ and whose norm is invariant. The entry does not derive the field equations; it records that the object whose norm is invariant exists in the sector and the potential does not have that property.</p>
+<p><strong>The four-current's norm is not fixed because a current is a density and not a state.</strong> The continuity equation $\operatorname{Sc}\bigl((\tilde\nabla_{\Phi})^{\natural}\tilde J_{\Phi}\bigr)=0$ is the statement that a divergence vanishes, and the divergence is the scalar part of a product of an informational operator with a material element. The current is a material four-vector whose scalar part is a charge density and whose vector part is a flux; the equation constrains the pair and not the norm.</p>
+<p><strong>The seven entries are one object in seven costumes, and the costume is the invariant.</strong> The entry states this because it is the summary of the section: the sector is not a list of physical quantities, it is the space in which each of them is a direction, and the invariant attached to the direction is what tells one from another.</p>
+<h2 id="the-interpretations">The Interpretations</h2>
+<h3 id="i12a-the-sector-is-spacetime-and-the-interval-is-its-norm">I.12.a — The Sector Is Spacetime, and the Interval Is Its Norm</h3>
+<p><strong>Read:</strong> the sector definition, the basis $\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ and the norm of §<em>The Interval</em>.</p>
+<p><strong>The element $ir'_t e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$ is an event.</strong> Its four coordinates are the coordinates of a point of flat spacetime, and its norm is the squared interval, negative for timelike, zero for null, positive for spacelike. The three cases are the three regions of the null set, and the null set is the boundary between them.</p>
+<p><strong>The interval is the norm itself and not the square of a separate norm.</strong> There is no additional quadratic form to introduce and no metric matrix to write down: the form is $N$, and the fact that $N$ has signature $(3,1)$ is the fact that the sector has one imaginary coordinate. The Lorentzian signature is the arithmetic of $i^{2}=-1$ placed on the temporal coefficient.</p>
+<p><strong>The proper time is the square root of minus the norm along a timelike path.</strong> A worldline is a path in the sector on which the norm is negative, its proper time is the integral of $\sqrt{-N(d\tilde R)}$, and the path is a light ray where the integrand vanishes. The definitions are the standard ones, and their content here is that they are read off the norm rather than assumed.</p>
+<p><strong>Boundary.</strong> The sector is a kinematic space. It carries events, intervals, directions and the transformations among them; it does not carry a metric field, a connection, curvature or a field equation. The identification with the spacetime of a physical theory is the corpus's reading, and the anti-Hermitian convention is a convention: the Hermitian sector gives the same geometry with the opposite sign.</p>
+<h3 id="i12b-the-signature-is-the-placement-of-the-imaginary-unit">I.12.b — The Signature Is the Placement of the Imaginary Unit</h3>
+<p><strong>Read:</strong> the coordinate form of the involution and the four signatures of §<em>The Interval</em>.</p>
+<p><strong>The temporal coordinate is $ir'_t$ because the sector is the fixed space of the reversal.</strong> On that fixed space the coefficient of $e_t$ is imaginary and the other three are real. The minus sign of the Minkowski form is $(ir'_t)^{2}$, and it is the only place in the entry where a sign is produced rather than counted.</p>
+<p><strong>The two Hermitian halves are the two placements that give a Lorentzian form.</strong> On the quaternion layer the norm is positive definite. On the material half the temporal block is imaginary and the spatial block real, which gives $(3,1)$; on the informational half the roles are reversed, and there $N=a_0^{2}-\lvert\vec a\rvert^{2}$, which gives $(1,3)$. The two halves are exchanged by the central imaginary, and that exchange is also the exchange of the interval with minus itself. A mixed placement, imaginary on the temporal block and on one spatial coordinate, gives $(2,2)$ and is not a Lorentzian plane: the Lorentzian possibility is located rather than chosen, and there are exactly two placements that realise it.</p>
+<p><strong>The four signatures over one sector are four readings of one placement.</strong> Reverse the sign of the temporal block and the interval becomes the negative interval; take absolute values and the Hermitian norm appears; take the difference in the other order and the K norm appears. Every one of them is a real form on the same four coordinates.</p>
+<p><strong>Boundary.</strong> The assignment is a property of the involution and not of the element. Which elements are timelike is a property of the element and the sector together, so a statement about the sign of the interval is always a statement about a pair.</p>
+<h3 id="i12c-the-commutator-is-twice-the-cross-product">I.12.c — The Commutator Is Twice the Cross Product</h3>
+<p><strong>Read:</strong> the coefficient computation and the closure display of §<em>The Bracket</em>.</p>
+<p><strong>Two four-vectors generate the rotation that carries one into the other, and the generator is the cross product of their space parts.</strong> The temporal coordinates do not enter. A four-vector is therefore a generator of spatial rotations with an energy label, and the label is invisible to the bracket.</p>
+<p><strong>The Lie algebra of the sector is $\mathfrak{su}(2)$ on a central line.</strong> The cross product is the bracket of the rotation algebra, the central line is the time direction, and the sum is $\mathfrak{u}(2)$. The derived algebra is the rotation algebra, so every bracket of brackets is a rotation and the time direction never appears again.</p>
+<p><strong>A boost is not in the sector's bracket, and that is a statement about the algebra and not about a choice of coordinates.</strong> The boost generators are the imaginary vectors, which are Hermitian and therefore informational. The Lie algebra of the Lorentz group is the direct sum of a material part and an informational part.</p>
+<p><strong>Boundary.</strong> The bracket is a Lie bracket and not a product. It generates transformations and does not compose objects; a reader who takes the cross product as a multiplication of four-vectors has left the sector.</p>
+<h3 id="i12d-a-four-vector-squared-is-a-state">I.12.d — A Four-Vector Squared Is a State</h3>
+<p><strong>Read:</strong> the anti-automorphism computation and the closure display of §<em>The Bracket</em>.</p>
+<p><strong>The product of two material elements is Hermitian exactly when the two commute.</strong> The square of one is therefore always informational, and a product of two distinct ones is informational never. A four-vector multiplied by a four-vector has left the sector by the first factor's own involution.</p>
+<p><strong>The anticommutator is always informational and carries the Minkowski pairing.</strong> Its scalar part is minus twice the pairing, so the scalar part of half of it is minus the pairing, and its vector part is the antisymmetric temporal mixture. So the definite pairing of two four-vectors is computed in the other sector and returned as a scalar.</p>
+<p><strong>The Jordan and Lie structures are the two sectors.</strong> Symmetric products close on the informational half and antisymmetric products on the material half. The observables and the generators of a theory are the two halves here, and the split is the involution's and not a modelling decision.</p>
+<p><strong>Boundary.</strong> The reading names roles. It does not claim that every observable is a product of two four-vectors, and it does not claim that every state is one.</p>
+<h3 id="i12e-the-modes-of-a-four-vector-are-in-the-other-sector">I.12.e — The Modes of a Four-Vector Are in the Other Sector</h3>
+<p><strong>Read:</strong> the eigenprojector display and the idempotent argument of §<em>The Spectrum</em>.</p>
+<p><strong>The two spectral projectors of a momentum are Hermitian idempotents, so they lie in the informational half.</strong> The momentum lies in the material half. The decomposition $\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-$ therefore writes a material element as a combination of informational ones with imaginary coefficients.</p>
+<p><strong>An idempotent cannot be anti-Hermitian.</strong> If $\tilde\Pi^{2}=\tilde\Pi$ and $\tilde\Pi^{*}=-\tilde\Pi$, then $\tilde\Pi^{*}=(\tilde\Pi^{2})^{*}=\tilde\Pi^{*}\tilde\Pi^{*}=\tilde\Pi$, hence $\tilde\Pi=0$. There is therefore no material idempotent and no decomposition of a four-vector inside its own sector. The projectors that do occur are the Hermitian ones, obtained as the interpolation of the element at its two eigenvalues; the algebra also contains non-Hermitian idempotents, which are not the spectral projectors of anything in this entry.</p>
+<p><strong>The modes are null elements.</strong> A pure state is a null element, and the projectors of a massive momentum are pure states. The two pieces of a massive momentum are lightlike even though the momentum is not, which is why the mass can be a product of two lightlike eigenvalues while the momentum is timelike.</p>
+<p><strong>Boundary.</strong> The projectors are a basis of a two-dimensional complex space and not two particles. The reading does not double the particle content of a momentum.</p>
+<h3 id="i12f-the-spectrum-is-a-doppler-pair">I.12.f — The Spectrum Is a Doppler Pair</h3>
+<p><strong>Read:</strong> the eigenvalues, the rapidity and the ratio of §<em>The Spectrum</em>, and <em>The Spectral Reading of a Four-Vector</em>.</p>
+<p><strong>The two eigenvalues are imaginary and their quotients by $i$ are the two light-cone frequencies.</strong> For a massive momentum they are $mc\,e^{\pm\theta_{\mathrm{rpd}}}$, the rest frequency scaled by the two reciprocal Doppler factors of the momentum's own rapidity. The sum is twice the energy, the difference twice the momentum, the ratio the squared Doppler factor, and the product the mass squared.</p>
+<p><strong>Only the product is invariant.</strong> A boost rescales the two factors reciprocally and leaves the product alone. The two factors are therefore not two properties of the particle: they are one property read in two frames at once, and the invariant is the mass.</p>
+<p><strong>The frame dependence has a closed form, and that is why it is a reading and not a slogan.</strong> The rapidity is the parameter of the boost that would carry the momentum to its rest frame, and the pair is the orbit of $(mc,mc)$ under the rescaling that the boost induces.</p>
+<p><strong>Boundary.</strong> The pair needs a non-zero space part for its members to differ, and it needs a chosen branch for both to be non-negative. Neither condition is a property of the algebra.</p>
+<h3 id="i12g-the-branch-is-declared-and-not-derived">I.12.g — The Branch Is Declared and Not Derived</h3>
+<p><strong>Read:</strong> the fifth claim of the introduction and the two degenerate cases of §<em>The Spectrum</em>.</p>
+<p><strong>The statement that both frequencies are non-negative is the statement $E/c\ge\lvert\vec p\rvert$, and that is the choice of the future sheet.</strong> The proper orthochronous group preserves the sign of the temporal component, so the choice is stable under every transformation the entry uses. It is nonetheless a choice: the past sheet gives the same pair with both signs reversed, and the two sheets are exchanged by a reflection and not by a boost.</p>
+<p><strong>Off the shell one of the two frequencies changes sign.</strong> A momentum with $E/c<\lvert\vec p\rvert$ is spacelike, its norm is positive, and the pair $E/c\pm\lvert\vec p\rvert$ has one negative member. The sign of a frequency is therefore a statement about the position of the momentum relative to the cone, and the declaration of a branch is the declaration that the momentum is inside the future cone.</p>
+<p><strong>The declaration is where a physical reading enters and where it can be checked.</strong> Every sentence of the entry that says <em>energy</em> rather than <em>temporal component</em> uses the branch. A reader who wants the branch-free statement has it: it is the pair of eigenvalues with their signs, and it holds on the whole sector.</p>
+<p><strong>Boundary.</strong> Branch selection is not derivable from the algebra and is not claimed to be. What the algebra supplies is that the two sheets are separate orbits, which is what makes the declaration consistent.</p>
+<h3 id="i12h-the-interval-is-multiplicative-and-causal-character-composes">I.12.h — The Interval Is Multiplicative, and Causal Character Composes</h3>
+<p><strong>Read:</strong> the multiplicativity of $N$ and its consequence in §<em>The Interval</em>.</p>
+<p><strong>The norm is a determinant, so it is multiplicative on the whole algebra, and on the sector that fact has a reading.</strong> The product of two timelike elements is spacelike, the product of a timelike and a spacelike is timelike, and a null factor makes the product null. The composition of causal characters along a chain of elements is therefore a rule about signs.</p>
+<p><strong>The same rule does not hold for the K norm.</strong> The K form is not multiplicative, and the entry records the contrast because the two indefinite forms of the sector are negatives of each other and one of them composes while the other does not. The interval is the one to use when a product is taken; the K norm is the one to use when a weight is assigned.</p>
+<p><strong>The composition rule is why the interval is a law and the K value is a label.</strong> A quantity that is multiplicative survives a chain of transformations with a predictable sign; a quantity that is not multiplicative does not. Both are invariants of the isometry group on a single element; only one of them is an invariant of a product.</p>
+<p><strong>Boundary.</strong> The rule is about the algebra's product and not about the composition of velocities. A product of two four-vectors is not a four-vector, so the rule concerns the signs carried by a chain of elements.</p>
+<h3 id="i12i-the-light-cone-is-the-zero-divisor-cone">I.12.i — The Light Cone Is the Zero-Divisor Cone</h3>
+<p><strong>Read:</strong> the inverse formula and the null-set display of §<em>The Interval</em>, and <em>The K Norm and the Indefinite Structure</em>, §<em>The Six Restrictions</em>.</p>
+<p><strong>A null four-vector has no inverse and annihilates a non-zero element.</strong> The first statement is the failure of $\tilde Q^{-1}=\tilde Q^{\natural}/N(\tilde Q)$; the second is the definition of a zero divisor. The light cone of the sector is therefore the zero-divisor cone of the algebra, a structural identity rather than an additional assumption.</p>
+<p><strong>The apex is the one null point that is not a zero divisor.</strong> It annihilates nothing non-zero, and it is the only point where the geometric and the algebraic descriptions differ. The cone without the apex is a smooth three-manifold with two components; with the apex it is a single singular set.</p>
+<p><strong>A null momentum therefore has no rest frame, and the reason is algebraic.</strong> A rest frame would be a congruence carrying the momentum to a multiple of $ie_t$, and the orbit of a null element under the proper orthochronous group is the set of null elements of the same temporal sign and never contains a timelike one. The absence of a rest frame is the statement that the orbit does not meet the temporal axis.</p>
+<p><strong>Boundary.</strong> The identity is between two sets and not between two theories. It says that the set on which the interval vanishes is the set on which invertibility fails; it does not say that every zero divisor is a light ray in a physical spacetime.</p>
+<h3 id="i12j-a-frame-is-an-orbit-and-the-rotor-is-outside-the-sector">I.12.j — A Frame Is an Orbit and the Rotor Is Outside the Sector</h3>
+<p><strong>Read:</strong> the action display, the kernel and the factorisation of §<em>The Lorentz Action</em>.</p>
+<p><strong>The unit group acts on the sector by congruence, the kernel is $\{\pm e_t\}$, and the quotient is $SO^{+}(1,3)$.</strong> A frame is an orbit point of a four-vector, a change of frame is a unit acting by congruence, and the invariants are the orbit labels. The double cover is the statement that two units give the same frame.</p>
+<p><strong>Neither factor of a general unit need be in the sector.</strong> A rotation factor is material and a boost factor is informational, and a general unit is their product. The acting group is therefore larger than the acted-on space, and the sector is a representation space in the strict sense: a module for a group it does not contain.</p>
+<p><strong>This is the precise content of the phrase that the Lorentz group acts on spacetime.</strong> The group is not a subset of the space and not a product of its points; it is the group of congruences of the algebra that preserve the norm of the space. The algebra makes the statement literal, and it also explains why the complexification is needed: the six parameters of the group do not fit in the four dimensions of the sector.</p>
+<p><strong>Boundary.</strong> The action is linear and acts on a flat space. No local action, no bundle and no gauge field is constructed here, and the entry does not claim that a change of frame is a physical operation performed on an object.</p>
+<h3 id="i12k-seven-four-vectors-are-one-object-in-seven-costumes">I.12.k — Seven Four-Vectors Are One Object in Seven Costumes</h3>
+<p><strong>Read:</strong> the dictionary table of §<em>The Seven Four-Vectors</em>.</p>
+<p><strong>Every row of the table has an imaginary temporal component, a real space part, and a norm that names a physical quantity.</strong> The position, the velocity, the momentum, the wavevector, the potential, the current and the force are therefore one algebraic object read with seven invariants. The reading is what the sector is for.</p>
+<p><strong>Three rows have a fixed norm and four do not.</strong> The interval, the normalisation of the velocity and the mass shell are level sets; the dispersion of the wavevector is a constraint; the potential, the current and the force have norms that depend on the configuration. The difference is the difference between a kinematic constraint and a dynamical variable, and it is visible in the table as the difference between a constant entry and a blank one.</p>
+<p><strong>The orthogonality of the four-force to the four-velocity is read in the other sector.</strong> The pairing is the scalar part of half the anticommutator, so the statement that a force preserves the rest mass is the statement that a scalar part vanishes. The algebra puts the pairing where the physics needs it.</p>
+<p><strong>Boundary.</strong> The table is a dictionary and not a derivation. The field equations, the Lorentz force law and the wave equations are not results of the algebra; the algebra supplies the carrier space and the invariant for each entry.</p>
+<h3 id="i12l-what-the-sector-cannot-do">I.12.l — What the Sector Cannot Do</h3>
+<p><strong>Read:</strong> the closures of §<em>The Bracket</em> together with the limits stated in each interpretation.</p>
+<p><strong>The sector cannot multiply, cannot decompose and cannot curve.</strong> Its product leaves it, its idempotents are in the other half, and its norm is a constant form rather than a field. Each of the three limitations is a theorem, and each of them marks a place where a physical theory must add something the algebra does not contain.</p>
+<p><strong>The sector also cannot distinguish a four-vector from its reading.</strong> The interval tells a timelike element from a null one, and nothing in the algebra says which of them is a particle, which is a potential and which is a force. The dictionary is an interpretation, and it is the interpretation's job to attach the names.</p>
+<p><strong>The three limitations are the useful part of the entry.</strong> A framework that claimed to derive dynamics from the sector would be claiming more than the algebra supports; a framework that claimed nothing would be a notation. What the algebra supports is the carrier, the invariant, the action and the spectral pair, and the entry has stated exactly those four.</p>
+<p><strong>Boundary.</strong> Everything in this entry that is not a computation is a reading. The computations are the anti-automorphism identity, the cross-product formula, the norm scaling, the eigenvalue pair and the projector identities, and each of them can be checked by hand or by machine.</p>
+<h2 id="the-limits">The Limits</h2>
+<p><strong>The object is a real four-plane and the readings are readings of its quadratic form.</strong> The mathematical content is one real vector space of dimension four, two involutions that fix it and negate it, one real quadratic form of signature $(3,1)$, one bracket, and one group action. Everything the entry names — event, worldline, momentum, mass, frame — is a name for what those objects mean when a chart supplies a physical vocabulary.</p>
+<p><strong>No dynamics is supplied.</strong> The interval is a constant on the sector and says nothing about how a four-vector changes. A law that keeps a worldline inside the cone, one that crosses it, and one that does neither are all compatible with the interval. Conservation of the norm along a path is a constraint that a theory may impose; it is not implied here.</p>
+<p><strong>No field equation is supplied.</strong> The sector carries the four-potential and the four-current as elements, and it carries no operator that would annihilate them into an equation. The wave operator, the field strength and the gauge connection belong to later entries of the category, and the entry refers to them and does not restate them.</p>
+<p><strong>No statistics is supplied.</strong> The spectral pair is a pair of complex numbers and not a pair of occupation numbers. Nothing here says whether the two modes are distinguishable, and no Fock space, no commutation relation and no spin-statistics connection is constructed.</p>
+<p><strong>No curved metric is supplied.</strong> The form is constant on the sector: the same four coordinates, the same signature at every point. A metric field would be a map from a base into the sector, and the entry has no base. The statement that the speed of light is local is a statement about a medium, and the entry says so where it makes it.</p>
+<p><strong>No particle content is supplied.</strong> The seven four-vectors are seven invariants of one algebra, and the entry does not say which of them are realised in nature. The dictionary is a dictionary: it says what an element would be if it were a four-momentum, not that some element is one.</p>
+<p><strong>No absolute scale is supplied.</strong> The norm is homogeneous of degree two, so every non-zero element has a one-parameter family of rescalings that stay on its level set. The choice of a level set on which to normalise is a separate act, and the mass shell is a choice of level rather than a consequence of the algebra.</p>
+<p><strong>The sector is a chart and the informational sector is the other chart.</strong> The identities $N=-\mathrm{Kr}$ and $H=-P$ are exact on this chart, and every reading here is a reading through them. A statement that holds on one chart and fails on the other is a statement about the chart, and the entry names the chart at each place.</p>
+<p><strong>The formalism is standard and the placement is not.</strong> Four-vectors, the Minkowski interval, the Lorentz action by a two-by-two matrix and the Doppler pair are classical. What this entry contributes is the placement: the sector as the material placement of the imaginary unit, the split of the Lorentz algebra into a material and an informational summand, the location of the eigenprojectors in the other half, and the identification of the light cone with the zero-divisor cone.</p>
+<h2 id="summary">Summary</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>result</th>
+<th>content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the sector</td>
+<td>$\mathbb{B}_{\Phi}=\{\tilde Q^{*}=-\tilde Q\}$, basis $\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$, real dimension four</td>
+</tr>
+<tr>
+<td>the blocks</td>
+<td>$\mathbb{R}(ie_t)$ of dimension one, central; $k=\operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\}$ of dimension three</td>
+</tr>
+<tr>
+<td>the interval</td>
+<td>$N=-r_t'^{2}+\lvert\vec r\rvert^{2}$, real, signature $(3,1)$</td>
+</tr>
+<tr>
+<td>the companions</td>
+<td>$H=r_t'^{2}+\lvert\vec r\rvert^{2}$ positive definite; $P=-H$; $\mathrm{Kr}=-N$</td>
+</tr>
+<tr>
+<td>the inverse</td>
+<td>$\tilde R^{-1}=\tilde R^{\natural}/N(\tilde R)$, defined off the cone</td>
+</tr>
+<tr>
+<td>the closure</td>
+<td>bracket in the sector, anticommutator in $\mathbb{B}_{\Psi}$, product in the sector only when the factors commute</td>
+</tr>
+<tr>
+<td>the bracket</td>
+<td>$[\tilde R_1,\tilde R_2]=2\vec r_1\times\vec r_2$; the sector is $\mathfrak{u}(2)$</td>
+</tr>
+<tr>
+<td>the Lorentz algebra</td>
+<td>$\mathfrak{so}(1,3)=\mathfrak{su}(2)_{J}\oplus i\,\mathfrak{su}(2)_{K}$, $J$ material, $K$ informational</td>
+</tr>
+<tr>
+<td>the action</td>
+<td>$\tilde Q\mapsto\tilde U\tilde Q\tilde U^{*}$, sector preserved for every invertible $\tilde U$, norm scaled by $\lvert N(\tilde U)\rvert^{2}$</td>
+</tr>
+<tr>
+<td>the group</td>
+<td>$\mathbb{B}^{\times}_{1}/\{\pm e_t\}\cong SO^{+}(1,3)$, $\mathbb{B}^{\times}_{1}\cong\mathrm{Spin}(1,3)$</td>
+</tr>
+<tr>
+<td>the factorisation</td>
+<td>$\tilde U=\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$, boost informational, rotation material</td>
+</tr>
+<tr>
+<td>the spectrum</td>
+<td>$\lambda_\pm=i(E/c\pm\lvert\vec p\rvert)$; $\nu_\pm=mc\,e^{\pm\theta_{\mathrm{rpd}}}$; $\nu_+\nu_-=m^{2}c^{2}$</td>
+</tr>
+<tr>
+<td>the projectors</td>
+<td>$\tilde\Pi_\pm=\tfrac12(e_t\mp i\vec u_p)$, Hermitian idempotents, null elements, in $\mathbb{B}_{\Psi}$</td>
+</tr>
+<tr>
+<td>the degeneracies</td>
+<td>$\vec p=0$: repeated eigenvalue; $E/c=\lvert\vec p\rvert$: null element, one zero eigenvalue</td>
+</tr>
+<tr>
+<td>the null set</td>
+<td>the zero-divisor cone, real dimension three, apex excluded from the divisors</td>
+</tr>
+<tr>
+<td>the multiplicativity</td>
+<td>$N(\tilde Q_1\tilde Q_2)=N(\tilde Q_1)N(\tilde Q_2)$, so causal character composes</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>object</th>
+<th>notation</th>
+<th>content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the element</td>
+<td>$\tilde R_{\Phi}=i r'_t e_t+\vec r$</td>
+<td>imaginary temporal part, real spatial part</td>
+</tr>
+<tr>
+<td>the reversal</td>
+<td>$\tilde Q^{\flat}=-{}^{*}\tilde Q$</td>
+<td>the involution whose fixed space is the sector</td>
+</tr>
+<tr>
+<td>the interval</td>
+<td>$N(\tilde R_{\Phi})$</td>
+<td>$-r_t'^{2}+\lvert\vec r\rvert^{2}$, real</td>
+</tr>
+<tr>
+<td>the Hermitian norm</td>
+<td>$H(\tilde R_{\Phi})$</td>
+<td>$r_t'^{2}+\lvert\vec r\rvert^{2}$, positive</td>
+</tr>
+<tr>
+<td>the K norm</td>
+<td>$\mathrm{Kr}(\tilde R_{\Phi})$</td>
+<td>$r_t'^{2}-\lvert\vec r\rvert^{2}$, equal to $-N$</td>
+</tr>
+<tr>
+<td>the bracket</td>
+<td>$[\tilde R_1,\tilde R_2]$</td>
+<td>$2\vec r_1\times\vec r_2$</td>
+</tr>
+<tr>
+<td>the pairing</td>
+<td>$\operatorname{Sc}\tfrac12\{\tilde R_1,\tilde R_2\}$</td>
+<td>minus the Minkowski pairing</td>
+</tr>
+<tr>
+<td>the Lorentz rotor</td>
+<td>$\tilde U$</td>
+<td>a unit, $N(\tilde U)=1$</td>
+</tr>
+<tr>
+<td>the boost factor</td>
+<td>$\tilde U_{\Psi,\mathrm b}$</td>
+<td>$\cosh\tfrac{\theta}{2}+i\sinh\tfrac{\theta}{2}\vec u_{\mathrm b}$, Hermitian</td>
+</tr>
+<tr>
+<td>the rotation factor</td>
+<td>$\tilde u_{\mathrm r}$</td>
+<td>$\cos\tfrac{\theta}{2}+\sin\tfrac{\theta}{2}\vec u_{\mathrm r}$, real</td>
+</tr>
+<tr>
+<td>the rapidity</td>
+<td>$\theta_{\mathrm{rpd}}$</td>
+<td>$\tanh\theta_{\mathrm{rpd}}=\lvert\vec p\rvert c/E$</td>
+</tr>
+<tr>
+<td>the eigenvalues</td>
+<td>$\lambda_\pm$</td>
+<td>$i(E/c\pm\lvert\vec p\rvert)$</td>
+</tr>
+<tr>
+<td>the frequencies</td>
+<td>$\nu_\pm$</td>
+<td>$\lambda_\pm/i=mc\,e^{\pm\theta_{\mathrm{rpd}}}$</td>
+</tr>
+<tr>
+<td>the projectors</td>
+<td>$\tilde\Pi_\pm$</td>
+<td>$\tfrac12(e_t\mp i\vec u_p)$, Hermitian idempotents</td>
+</tr>
+<tr>
+<td>the four-velocity</td>
+<td>$\tilde V_{\Phi}$</td>
+<td>$i\gamma c\,e_t+\gamma\vec v$, norm $-c^{2}$</td>
+</tr>
+<tr>
+<td>the four-momentum</td>
+<td>$\tilde P_{\Phi}$</td>
+<td>$i\frac{E}{c}e_t+\vec p$, norm $-m^{2}c^{2}$</td>
+</tr>
+<tr>
+<td>the four-wavevector</td>
+<td>$\tilde K_{\Phi}$</td>
+<td>$i\frac{\omega}{c}e_t+\vec k_\Phi$, norm zero for light</td>
+</tr>
+<tr>
+<td>the four-potential</td>
+<td>$\tilde A_{\Phi}$</td>
+<td>$i a'_t e_t+\vec A$, gauge-dependent norm</td>
+</tr>
+<tr>
+<td>the four-current</td>
+<td>$\tilde J_{\Phi}$</td>
+<td>$i c\rho\,e_t+\vec j$</td>
+</tr>
+<tr>
+<td>the four-force</td>
+<td>$\tilde{\mathcal F}_{\Phi}$</td>
+<td>$i\frac{\gamma\vec f\cdot\vec v}{c}e_t+\gamma\vec f$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<p><strong>The dictionary and the interval.</strong> <a href="the-material-sector-four-vectors-interval-and-lorentz-action.html">The Material Sector: Four-Vectors, Interval and Lorentz Action</a> is the earlier reading of the sector, with the seven four-vectors and the mass shell.</p>
+<p><strong>The spectral reading.</strong> <a href="the-spectral-reading-of-a-four-vector.html">The Spectral Reading of a Four-Vector</a> treats the eigenpair and the two-term writing.</p>
+<p><strong>The indefinite form.</strong> <a href="the-k-norm-and-the-indefinite-structure.html">The K Norm and the Indefinite Structure</a> is the previous entry of the series, and its §<em>The Six Restrictions</em> is where the coincidence of the two null sets is proved.</p>
+<p><strong>The partition.</strong> <a href="the-partition-two-invariants-and-four-regimes.html">The Partition: Two Invariants and Four Regimes</a> places the momentum among the four sectors of the norm and the spectrum.</p>
+<p><strong>The unit group.</strong> <a href="the-unit-group-the-cone-and-the-orders.html">The Unit Group, the Cone and the Orders</a> reads the complement of the cone as the set of reversible processes.</p>
+<p><strong>The mathematics.</strong> <a href="../articles_maths/biquaternion-rotations-and-lorentz-transformations.html">Biquaternion Rotations and Lorentz Transformations</a> owns the double covers and the orbit classification, and <a href="../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html">N-Regularity and N-Degeneracy in the Biquaternion Algebra</a> owns the norm, the units and the cone.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
