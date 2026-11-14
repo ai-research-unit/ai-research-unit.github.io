@@ -362,7 +362,7 @@ $$
 
 so the abstract spin rotation operator and the unit quaternion rotor are the same element of $\mathbb{B}$. The identification reproduces the characteristic spinorial behaviour: $\tilde u(\theta_{\mathrm{rat}}+2\pi,\vec u) = -\tilde u(\theta_{\mathrm{rat}},\vec u)$, and the two rotors $\pm\tilde u$ produce the same rotation of $\vec r$ and of $r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$. The sign ambiguity is the double cover, and it is here a statement about unit real quaternions: the group of rotors is $SU(2)$, and the rotation group is its quotient by $\{\pm e_t\}$.
 
-The rotor realisation ties the two sectors together in the way the companion articles describe: the same unit quaternion acts by conjugation on the material four-vectors of $\mathbb{B}_{\Phi}$ and on the states of the informational sector $\mathbb{B}_{\Psi}$. Angular momentum is the infinitesimal generator of that action, and its biquaternion form is the subject of this article.
+The rotor realisation ties the two sectors together in the way the companion articles describe: the same unit quaternion acts by conjugation on the material four-vectors of $\mathbb{B}_{\Phi}$ and on the states of the informational sector $\mathbb{B}_{\Psi}$. Angular momentum is the infinitesimal generator of that action, and its biquaternion form is the subject of this article. When the rotating object is an extended body with an inertia tensor rather than a point or a state, the same conjugation carries its orientation and the biquaternion form of its equations of motion is worked out in *Rigid-Body Dynamics and the Biquaternion Rotor*, where Euler's equations become a single quaternion equation.
 
 ## What Is Standard and What Is Algebraic
 
