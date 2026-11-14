@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Modules: What the Algebra Acts On — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-modules-what-the-algebra-acts-on"><strong>The Modules: What the Algebra Acts On</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>This entry reads the fourth section of the mathematical category: the module structure of the algebra, that is, the algebra acting on a space rather than on itself.</strong> Five mathematics articles establish it.</p>
+<p><strong>The section changes the question.</strong> The first three sections ask what an element is, what its matrix image is, and how one element cuts the algebra. This one asks what the algebra <em>does</em>: it fixes a space, lets every element act on it by left multiplication, and classifies the spaces on which that action can live.</p>
+<p><strong>The answer is short and it is the whole section.</strong></p>
+<p>$$
+\text{one simple module }S\text{ of complex dimension }2,\qquad \text{every module }M\cong S^{\oplus k}.
+$$</p>
+<p><strong>The carrier of the action is the algebra itself.</strong> It is four complex dimensions, eight real, and it is not irreducible: it is the direct sum of two copies of $S$. So the algebra acts on a space that splits in many ways and canonically in none, and the entire section is the bookkeeping of that fact.</p>
+<p><strong>The single idea is that a splitting of the carrier is a choice and not a structure.</strong> The algebra prefers no splitting; a frame may display one, and a display that shows a splitting for free is showing a property of that frame. Everything the section proves is a separation of what the module carries from what a description of the module adds.</p>
+<h2 id="the-source-table">The Source Table</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Mathematical Content</th>
+<th>Source Mathematical Article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ideals, the two-sided ideals, Artinian and semisimple, length two, the radical, the three regular modules, the submodules are the ideals, the endomorphisms of the regular object</td>
+<td><a href="../articles_maths/the-regular-module.html">The Regular Module</a></td>
+</tr>
+<tr>
+<td>the two minimal left ideals, all minimal left ideals, the simple module, the two spinor spaces, the canonical splitting, the ladder, the gauge, the invariants of a single spinor, the Peirce index, right multiplication, what the spinor is not</td>
+<td><a href="../articles_maths/the-polarized-module-of-the-biquaternion-algebra.html">The Polarized Module of the Biquaternion Algebra</a></td>
+</tr>
+<tr>
+<td>the root and the frame, the display polarizes for free, what the display is not</td>
+<td><a href="../articles_maths/the-pauli-module-of-the-biquaternion-algebra.html">The Pauli Module of the Biquaternion Algebra</a></td>
+</tr>
+<tr>
+<td>representations and modules, the category of left modules, projectivity and the parity of freeness, the standard bimodule, Morita equivalence, torsion, real structures, the lattice of left ideals, the projective line and the Möbius action</td>
+<td><a href="../articles_maths/the-category-of-modules.html">The Category of Modules</a></td>
+</tr>
+<tr>
+<td>the module and the two actions, the names of the elements, a splitting is a pair of points, the polarizations of the corpus, the axis-free frame, the swap, what the module carries instead, the conjugate pair, what the absence costs</td>
+<td><a href="../articles_maths/the-unpolarized-module-of-the-biquaternion-algebra.html">The Unpolarized Module of the Biquaternion Algebra</a></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The rows are the entry's order.</strong> The regular module first, because it names the carrier; then the polarized module, which fixes one splitting and develops it; then the Pauli module, which is the frame that displays a splitting silently; then the unpolarized module, which proves that no splitting is canonical; then the category of modules, which classifies the carriers.</p>
+<h2 id="the-results-in-brief">The Results in Brief</h2>
+<h3 id="the-regular-module">The Regular Module</h3>
+<p><strong>The algebra is a module over itself, and the submodules are the ideals.</strong></p>
+<p>$$
+{}_{\mathbb{B}}\mathbb{B}\ :\ \mathbb{B}\times\mathbb{B}\to\mathbb{B},\qquad (\tilde Q_1,\tilde Q_2)\mapsto\tilde Q_1\tilde Q_2 .
+$$</p>
+<p><strong>The module axioms are the ring axioms.</strong> Distributivity, associativity and the unit law are needed by the module and are already supplied by the algebra, so the regular module costs nothing new.</p>
+<p><strong>The algebra has four structural properties at once.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>property</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Artinian</td>
+<td>yes, the complex dimension is finite</td>
+</tr>
+<tr>
+<td>semisimple</td>
+<td>yes, the radical is $0$</td>
+</tr>
+<tr>
+<td>simple</td>
+<td>yes, the two-sided ideals are $0$ and $\mathbb{B}$</td>
+</tr>
+<tr>
+<td>length as a left module over itself</td>
+<td>$2$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Length two is the sharp statement.</strong> Every left ideal is $0$, a minimal left ideal, or the algebra; every nonzero proper left ideal is minimal, of real dimension four; every minimal left ideal is also maximal.</p>
+<p><strong>The endomorphisms of the regular module are the algebra.</strong> Left multiplications give $\operatorname{End}_{\mathbb{B}}(\mathbb{B}_{\mathbb{B}})\cong\mathbb{B}$, and the bimodule endomorphisms are the centre, $\operatorname{End}_{\mathbb{B}\text{-}\mathbb{B}}(\mathbb{B})\cong\mathbb{C}e_t$.</p>
+<h3 id="the-submodules-are-the-ideals">The Submodules Are the Ideals</h3>
+<p><strong>Left submodules are left ideals, right submodules are right ideals, and sub-bimodules are two-sided ideals.</strong> The identity map on subsets is an isomorphism of lattices, preserving inclusion, intersection and sum.</p>
+<p><strong>Simplicity therefore says two things at once.</strong> As an algebra, $\mathbb{B}$ has no proper nonzero two-sided ideal; as a bimodule, it has no proper nonzero sub-bimodule. The two statements are one statement.</p>
+<p><strong>The base field does not matter.</strong> An additive subgroup closed under left multiplication is automatically a complex subspace, because multiplication by $i$ is left multiplication by the central element $ie_t$. So the ideal lattice is the same over $\mathbb{R}$ and over $\mathbb{C}$.</p>
+<p><strong>The annihilator of a zero divisor is a computed object.</strong> For a nonzero nilpotent $\vec P$ the ideal generated and the annihilator coincide, $\mathbb{B}\vec P=I_{\vec P}$; for every other zero divisor the two are distinct and complementary,</p>
+<p>$$
+\mathbb{B}=\mathbb{B}\tilde Q\oplus I_{\tilde Q}=\tilde Q\mathbb{B}\oplus J_{\tilde Q}.
+$$</p>
+<h3 id="the-simple-module-and-its-copies">The Simple Module and Its Copies</h3>
+<p><strong>There is exactly one simple module up to isomorphism, and it is two complex dimensions.</strong></p>
+<p>$$
+S=\mathbb{B}\tilde\Pi_+\cong\mathbb{C}^2,\qquad \operatorname{End}_{\mathbb{B}}(S)=\mathbb{C},\qquad \dim_{\mathbb{C}}S=2 .
+$$</p>
+<p><strong>Every module is a direct sum of copies of it.</strong></p>
+<p>$$
+M\cong S^{\oplus k},\qquad \dim_{\mathbb{C}}M=2k,\qquad {}_{\mathbb{B}}\mathbb{B}\cong S\oplus S .
+$$</p>
+<p><strong>Every module is projective, and freeness has a parity.</strong> The module $S^{\oplus k}$ is free exactly when $k$ is even, that is, when $2k$ is divisible by four.</p>
+<p>$$
+S^{\oplus k}\ \text{free}\iff 2\mid k\iff 4\mid\dim_{\mathbb{C}}S^{\oplus k} .
+$$</p>
+<p>So $S$ itself is projective and not free: a two-dimensional complex module with no basis over the algebra.</p>
+<p><strong>The same parity is the obstruction to a real structure.</strong> A module descends to a quaternionic module exactly when it is free,</p>
+<p>$$
+W\ \text{admits a real structure}\iff W\ \text{is a free }\mathbb{B}\text{-module},
+$$</p>
+<p>and the minimal counterexample is again $S$.</p>
+<p><strong>The Morita equivalence is the classification.</strong></p>
+<p>$$
+\operatorname{Hom}_{\mathbb{B}}(S,-):\operatorname{Mod}(\mathbb{B})\longrightarrow\operatorname{Mod}(\mathbb{C}),\qquad \dim_{\mathbb{C}}\bigl(S\otimes_{\mathbb{C}}W\bigr)=2\dim_{\mathbb{C}}W .
+$$</p>
+<p>The module theory of the algebra is the linear algebra of the complex field, with every dimension doubled, and the algebra is recovered as $\operatorname{End}_{\mathbb{C}}(S)$.</p>
+<h3 id="the-polarized-module">The Polarized Module</h3>
+<p><strong>One splitting, fixed and developed.</strong> With $\tilde\Pi_\pm$ a complete orthogonal pair of primitive idempotents, the two spinor spaces are</p>
+<p>$$
+S_+=\mathbb{B}\tilde\Pi_+,\qquad S_-=\mathbb{B}\tilde\Pi_-,\qquad \mathbb{B}=S_+\oplus S_-,\qquad \dim_{\mathbb{C}}S_\pm=2 .
+$$</p>
+<p><strong>Each spinor space splits canonically into a diagonal line and a mixed line.</strong></p>
+<p>$$
+S_+=\mathbb{C}\tilde\Pi_+\oplus\mathbb{B}_{-+},\qquad S_-=\mathbb{B}_{+-}\oplus\mathbb{C}\tilde\Pi_-,
+$$</p>
+<p>so every positive spinor has a unique intrinsic form</p>
+<p>$$
+\psi_+=a\tilde\Pi_++\nu_+,\qquad a\in\mathbb{C},\quad \nu_+\in\mathbb{B}_{-+},
+$$</p>
+<p>and every negative spinor the mirror form $\psi_-=\nu_-+d\tilde\Pi_-$. The coefficient $a$ is the diagonal part and $\nu_+$ is the nilpotent part; both are intrinsic, and the coordinate $c$ of $\nu_+$ in a chosen basis is not.</p>
+<p><strong>The ladder has two rungs.</strong></p>
+<p>$$
+\vec\Upsilon_{+-}\psi_+=c\,\tilde\Pi_+,\qquad \vec\Upsilon_{-+}\psi_+=a\,\vec\Upsilon_{-+},
+$$</p>
+<p>so left multiplication by one nilpotent keeps the mixed part and kills the diagonal part, and the other does the reverse. Both maps are square-zero, and the two composites are the projections onto the two lines.</p>
+<p><strong>The gauge acts on the coordinates and not on the element.</strong></p>
+<p>$$
+a'=a,\qquad c'=t^{-1}c,\qquad b'=tb,\qquad d'=d,\qquad t\in\mathbb{C}^{\times}.
+$$</p>
+<p>The diagonal coefficients are invariant and the mixed ones carry reciprocal factors. The Hermitian norm, when the family is Hermitian and $|t|=1$, is</p>
+<p>$$
+\operatorname{Sc}(\psi_+\psi_+^{*})=\tfrac12\bigl(|a|^{2}+|c|^{2}\bigr).
+$$</p>
+<p><strong>Right multiplication is the other action, and it does not respect the split.</strong> Right multiplication by $\tilde Q$ preserves $S_+$ exactly when $\tilde\Pi_+\tilde Q\tilde\Pi_-=0$; the two mixed units exchange $S_+$ and $S_-$, each being square-zero and the two being inverse to one another.</p>
+<p><strong>The star does not exchange the two spinor spaces.</strong> If the family is Hermitian then $S_+^{*}=\tilde\Pi_+\mathbb{B}$, the right Peirce row, which is not $S_-$. Chirality belongs to the left grouping; the star groups by the right index.</p>
+<h3 id="the-pauli-module">The Pauli Module</h3>
+<p><strong>One root, one frame, one display.</strong></p>
+<p>$$
+\vec Z=i\vec e_z,\qquad L_{\mathrm{pau}}(\tilde Q)=\mathrm I_2\otimes\mathsf M_2(\tilde Q).
+$$</p>
+<p><strong>The carrier arrives already split.</strong> The matrix acts on the second tensor factor only, so $V=(\mathbb{C}e_1\otimes\mathbb{C}^2)\oplus(\mathbb{C}e_2\otimes\mathbb{C}^2)$ is a splitting that no left multiplication can see.</p>
+<p><strong>That invisibility is the source of the illusion.</strong> A splitting invisible to the action looks like a property of the algebra. It is a property of the display: the first tensor factor is the Peirce index of the root $\vec Z=i\vec e_z$.</p>
+<p><strong>The two slots are copies and not chiralities.</strong> The two summands are $S_+$ and $S_-$, both copies of $S$. Chirality is the pair graded by the basis operator</p>
+<p>$$
+\mathsf V_{\mathrm{vol}}=-iR_{\vec e_z},\qquad (\mathsf V_{\mathrm{vol}})^{2}=I_4,
+$$</p>
+<p>whose eigenspaces are $S$ and $S^{\mathrm{c}}$, and those two are not isomorphic over $\mathbb{R}$.</p>
+<p><strong>The test for any statement made in the frame.</strong> Replace $\vec e_z$ by a general real unit $\vec n$ and read the statement again. A statement about the Peirce index survives with $\vec n$ in place of $\vec e_z$; a statement about chirality does not change at all, because the grading is built from a right multiplier and anticommutes with the frame.</p>
+<h3 id="the-unpolarized-module">The Unpolarized Module</h3>
+<p><strong>The carrier is the algebra, and it has two actions.</strong></p>
+<p>$$
+V=\mathbb{B},\qquad L(\tilde Q)\tilde X=\tilde Q\tilde X,\qquad R(\tilde Q)\tilde X=\tilde X\tilde Q .
+$$</p>
+<p><strong>The right action is the commutant of the left one, and it is all of it.</strong> The double centraliser makes the regular module a faithful bimodule, with $\operatorname{End}_{\mathbb{B}}(V)=R(\mathbb{B})$.</p>
+<p><strong>A splitting is a pair of points.</strong> The rank-one idempotents are</p>
+<p>$$
+\Pi_u=\tfrac12\bigl(e_t+i\,u\cdot\vec e\,\bigr),\qquad u\in\mathbb{C}^{3},\quad u\cdot u=1,
+$$</p>
+<p>a complex surface, and the ideal $\mathbb{B}\Pi_u$ depends only on the kernel line of $\Pi_u$. Two idempotents with distinct kernels give complementary ideals, so a splitting is an unordered pair of distinct points of $\mathbb{P}^{1}$.</p>
+<p><strong>No splitting is canonical.</strong> The automorphisms of the module are the right multiplications by units, and they move the pairs of points transitively. The Peirce pair and the tensor split of the Pauli display are the same splitting, written twice.</p>
+<p><strong>The module carries a form and a swap instead.</strong></p>
+<p>$$
+\beta(\tilde X,\tilde Y)=\operatorname{Sc}(\tilde X\tilde Y),\qquad \operatorname{Gram}=\operatorname{diag}(1,-1,-1,-1),\qquad \sigma(L_aR_b)=L_bR_a .
+$$</p>
+<p>The form is symmetric, non-degenerate and indefinite, and it splits the endomorphism algebra as $\operatorname{Sym}^{2}V\oplus\Lambda^{2}V$, of dimensions $10+6$. The swap is an involution, an anti-automorphism, and it is the only canonical operation that refers to the two sides without choosing one.</p>
+<p><strong>The conjugate pair is not a splitting of this module.</strong> The conjugate module $S^{\mathrm{c}}$ is a module for the conjugate algebra, and over $\mathbb{C}$ it is isomorphic to $S$. The grading that separates $S$ from $S^{\mathrm{c}}$ is not an element of the algebra: the central sign $\chi$ satisfies $\chi^2=e_t$, is central, and lies outside $\mathbb{B}$.</p>
+<h3 id="the-category-of-modules">The Category of Modules</h3>
+<p><strong>The lattice has three layers.</strong></p>
+<p>$$
+0\ \subset\ \{\text{minimal left ideals}\}\ \subset\ \mathbb{B},
+$$</p>
+<p>the middle layer being a projective line of pairwise incomparable ideals, each minimal and maximal.</p>
+<p><strong>The parameter is the kernel line, not the image line.</strong> The left ideals are indexed by $\ker\tilde\Pi$ and the right ideals by $\operatorname{im}\tilde\Pi$, and applying the image criterion to the left family is the standard error.</p>
+<p><strong>The units act on the line by Möbius transformations.</strong></p>
+<p>$$
+\tilde Q\cdot[\zeta]=[P\zeta],\qquad z'=\frac{az+b}{cz+d},\qquad \mathbb{B}^{\times}/\mathbb{C}^{\times}e_t\cong PGL_2(\mathbb{C})\cong\operatorname{Aut}_{\mathbb{C}}(\mathbb{B}).
+$$</p>
+<p>The action is transitive, and simply transitive on ordered triples of distinct points. In the chart of the standard family, $\tilde\Pi_+$ sits at $z=0$ and $\tilde\Pi_-$ at $z=\infty$, and the stabiliser of a point is a Borel subgroup of complex dimension two.</p>
+<p><strong>Coefficient conjugation has no fixed point on the family.</strong> It acts by $t\mapsto-1/\bar t$, which has no fixed point, so no minimal left ideal is stable under the real structure; on the real subfamily $\mathbb{P}^{1}(\mathbb{R})$ it acts as the antipodal map.</p>
+<h2 id="the-interpretations">The Interpretations</h2>
+<h3 id="i4a-there-is-no-hilbert-space-outside-the-algebra">I.4.a — There Is No Hilbert Space Outside the Algebra</h3>
+<p><strong>Read:</strong> the carrier of the action is the algebra. A field is an element, an operator is an element, and the space they live in is the set of elements.</p>
+<p><strong>This is not a stylistic choice and it has a price.</strong> In the standard formulation a state is a vector in a Hilbert space and an observable is an operator on that space; the two objects belong to different types, and the space is external to the algebra of observables. Here the algebra acts on itself by left multiplication, so the carrier and the algebra are one set with two structures on it: the algebra structure, which supplies the product, and the module structure, which supplies the action.</p>
+<p><strong>The archive states the consequence and this entry gives the reason.</strong> A spinor is not a vector in an external space; its coordinates are the Peirce coordinates in an adapted basis, and when a Hermitian form is used, that form is a form on the algebra. The reason is module-theoretic: the regular module is faithful, so every element of the algebra is a distinct operator on the carrier, and every element of the carrier is a vector on which the algebra acts. There is nowhere else for either to live.</p>
+<p><strong>The boundary.</strong> Fock space, the multi-particle space and the infinite-dimensional Hilbert space of a quantum field are not this carrier. The regular module is finite and eight-real-dimensional. An entry that needs infinitely many modes needs an infinite direct sum of copies of the carrier, and that construction is not in this section.</p>
+<h3 id="i4b-two-copies-of-one-module-is-not-one-object-in-two-halves">I.4.b — Two Copies of One Module Is Not One Object in Two Halves</h3>
+<p><strong>Read:</strong> the regular module is $S\oplus S$, and the two summands are copies of one simple module. There is one isomorphism type, with multiplicity two.</p>
+<p><strong>This is the exact content of the "two components" of the spinor folklore.</strong> An element of the four-dimensional carrier is two vectors of a two-dimensional space, and the doubled structure is a multiplicity and not an internal decomposition. The module $S$ is simple, so a single copy has no invariant subspace and no internal parts at all; the only structure a two-component object can have is the structure of a basis of $S$.</p>
+<p><strong>Why the count two appears everywhere.</strong> Trace doubles, determinant squares, the spectrum repeats, and the semisimple length is two — those are the phenomena of I.2, and this is their module-theoretic source. A multiplicity-two module has twice the dimension and one isomorphism type.</p>
+<p><strong>The physical reading is a degeneracy and not a symmetry.</strong> Two copies of the same module can be exchanged by an isomorphism, so nothing in the module forbids the exchange; but the exchange is not an automorphism of the algebra and it changes no physics. The multiplicity is bookkeeping, and the multiplicity of the regular module is exactly the number of Peirce columns, which is two because the matrix algebra is $2\times2$.</p>
+<p><strong>The boundary.</strong> The Dirac module $\Delta=S\oplus S^{\mathrm{c}}$ is not this sum. There the two summands are related by a real structure and are not isomorphic over $\mathbb{R}$, so the sum is a genuine pair and not a multiplicity. The two-looking notations must not be identified, and the section is explicit about which is which.</p>
+<h3 id="i4c-a-splitting-that-the-action-cannot-see-is-a-splitting-of-the-frame">I.4.c — A Splitting That the Action Cannot See Is a Splitting of the Frame</h3>
+<p><strong>Read:</strong> the Pauli display shows the carrier as $\mathbb{C}^2\otimes\mathbb{C}^2$ with one factor untouched by the algebra. The untouched factor is a copy index of the root, and it looks like a property of the algebra only because no left multiplication can move it.</p>
+<p><strong>The illusion has a precise shape.</strong> A left action of the form $\mathrm I_2\otimes\mathsf M_2(\tilde Q)$ is blind to the first factor, so the two blocks of the display are invariant under every element. Invariance under the whole algebra is the definition of a canonical splitting, and the display appears to satisfy it. It does not: the invariance is invariance under $\mathrm I_2\otimes\mathsf M_2(\mathbb{B})$, which is the algebra as <em>written in that frame</em>, and the frame itself was built from the root $i\vec e_z$.</p>
+<p><strong>The mechanical test.</strong> Replace $\vec e_z$ by a general real unit $\vec n$. A statement about the Peirce index survives and becomes a statement about $\vec n$; a statement about chirality does not change at all. A statement that silently changes its meaning is a statement about the frame.</p>
+<p><strong>The physical reading is that a spin direction named in the algebra is a choice of frame.</strong> The algebra has a sphere of roots and $\mathrm{SU}(2)$ acts transitively on it, so the frame that writes $\vec e_z$ is one of a sphere of equally good frames. A computation done in that frame is correct; a law derived in that frame and not tested for invariance is a convention.</p>
+<p><strong>The boundary.</strong> The display is exact and it is used throughout the corpus; the mistake it invites is in the reading and not in the display. The statement is not that the Pauli frame is wrong but that one particular promotion of it is: reading the copy index as a chirality.</p>
+<h3 id="i4d-chirality-is-a-real-structure-and-not-a-slot">I.4.d — Chirality Is a Real Structure and Not a Slot</h3>
+<p><strong>Read:</strong> the two slots of the display are $S_+$ and $S_-$, both copies of $S$, while chirality is the pair $(S,S^{\mathrm{c}})$ graded by a basis operator. The slots are a polarization; the pair is a real structure.</p>
+<p><strong>The distinguishing property is the isomorphism over $\mathbb{R}$.</strong> $S_+$ and $S_-$ are isomorphic as left modules, so over $\mathbb{C}$ they are the same object. $S$ and $S^{\mathrm{c}}$ are isomorphic over $\mathbb{C}$ as well, but not over $\mathbb{R}$: the quaternionic module and its conjugate are genuinely different real objects. A label that survives a change of frame must be carried by a structure that no frame can move, and only the real structure qualifies.</p>
+<p><strong>The algebra says this twice, independently.</strong> It says it in the no-go theorem: no element of $\mathbb{B}$ acts as the central sign $\chi$, so the grading cannot be an element and must be an operator. And it says it in the parity of §<em>The Category of Modules</em>: a module descends to a quaternionic module exactly when it is free, that is when $k$ is even, so a single copy of $S$ has no real structure at all.</p>
+<p><strong>The physical reading is that chirality is Lorentz-invariant and a polarization is not.</strong> A Lorentz transformation is an automorphism of the algebra, and it moves the pairs of points of the projective line; it does not move the real structure. That is why a chirality is a physical label and a spin-frame component is not.</p>
+<p><strong>The boundary.</strong> The grading operator on the Dirac module is $\mathsf V_{\mathrm{vol}}=-iR_{\vec e_z}$, and it is built from a right multiplier and a named frame. The label is invariant; the operator that realises it is written in a frame. A computation may use either, provided it does not claim that the operator is canonical.</p>
+<h3 id="i4e-a-single-chirality-has-no-real-structure-and-that-is-the-parity">I.4.e — A Single Chirality Has No Real Structure, and That Is the Parity</h3>
+<p><strong>Read:</strong> the module $S$ is projective and not free, and the same parity that obstructs freeness obstructs the descent to the quaternion algebra.</p>
+<p>$$
+S^{\oplus k}\ \text{free}\iff 2\mid k\iff W\ \text{descends to } \mathbb{H}.
+$$</p>
+<p><strong>The smallest object with a real structure is two copies.</strong> One copy is defined over $\mathbb{C}$ and over $\mathbb{R}$, but not over the quaternions. Two copies are. So the algebra's own statement is that a real object of this kind is a pair, and that a lone copy of the simple module is a complex object with no quaternionic descent.</p>
+<p><strong>The physical reading is the pairing that a mass needs.</strong> The Dirac carrier of the corpus is one element multiplying another on the left, and its two values live in the two ideals; the massive field is the pair, and the field confined to one ideal is a two-component Weyl field. The parity says the same thing from the module side: the minimal object that can be read over the real quaternion algebra is the pair, not the single chirality.</p>
+<p><strong>The no-fixed-point statement is the same fact a third time.</strong> Coefficient conjugation acts on the projective line by $t\mapsto-1/\bar t$, with no fixed point, so no minimal left ideal is stable under the real structure. There is therefore no chirality that conjugation leaves alone, and a "real chirality" is not an object of this algebra.</p>
+<p><strong>The boundary.</strong> This is a statement about the module category and not about masses. It says that the minimal real object is a pair; it does not say that the pair has a mass, and it does not give the value. The mass is a norm condition, and the norm is the subject of a later entry.</p>
+<h3 id="i4f-two-structures-on-one-carrier-composition-and-probability">I.4.f — Two Structures on One Carrier: Composition and Probability</h3>
+<p><strong>Read:</strong> the carrier has the module structure and, separately, a Hermitian form. The two are independent, and the algebra's own bilinear form supplies neither positivity nor a norm on the carrier.</p>
+<p><strong>The algebra's form is degenerate on the carrier.</strong></p>
+<p>$$
+\beta(\tilde X,\tilde Y)=\operatorname{Sc}(\tilde X\tilde Y),\qquad \beta\big|_{S}=\begin{pmatrix}\tfrac12&0\\0&0\end{pmatrix},
+$$</p>
+<p>of rank one, with the nilpotent direction as its radical. So the form cannot separate the two basis spinors and cannot produce a norm on the carrier.</p>
+<p><strong>The Hermitian form does the job, and it is a second structure.</strong> With $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\operatorname{Sc}(\tilde Q_1\tilde Q_2^{*})$ the Gram matrix on the adapted basis is $\tfrac12 I_2$: the two basis spinors are orthogonal and of equal norm, and the carrier is a two-dimensional Hilbert space with the standard metric.</p>
+<p><strong>The physical reading is that composition and probability are two data and not one.</strong> The module structure gives what the algebra does — the action, the closure, the representation. The Hermitian structure gives what can be compared and counted — orthogonality, norm, probability. An indefinite form can do the first and cannot do the second; positivity is not a property of the plain product at all.</p>
+<p><strong>This is the honest reason the corpus has two sectors.</strong> The informational sector carries the star and therefore the probabilities; the material sector carries the indefinite norm and therefore the causal signs. A single carrier read with one form would have to choose, and the algebra does not choose.</p>
+<p><strong>The boundary.</strong> The Hermitian form is positive definite on the algebra, which is a strong and special property. It is not the Lorentzian form of spacetime, and the entry does not identify them: the signature of $\beta$ on the four real units is $(1,3)$, and that is a different object on the same set.</p>
+<h3 id="i4g-the-operator-acts-on-one-side-and-the-other-side-is-the-frame">I.4.g — The Operator Acts on One Side, and the Other Side Is the Frame</h3>
+<p><strong>Read:</strong> every element of the algebra has a left action and a right action, they commute, and they are not symmetric: the swap $\sigma(L_aR_b)=L_bR_a$ is an anti-automorphism and has no multiplicative sign.</p>
+<p><strong>The left action is the representation and the right action is the commutant.</strong> $L$ is an algebra homomorphism and $R$ is anti-multiplicative; the double centraliser says the two are each other's commutant, of equal dimension four. So the two sides are equally large and structurally different.</p>
+<p><strong>The differential operator of the corpus is a left multiplication.</strong> A gradient times a field, with no right multiplication anywhere in the equation, so the carrier condition is one line: the subspace must be a left ideal, because the equation must hold for every coefficient. This is why the minimal left ideal is the carrier of a spin-half field and the right ideal is not.</p>
+<p><strong>The physical reading is a division of labour.</strong> The left action carries the dynamics; the right action carries the frame. Every right multiplication is an endomorphism of the left module, so it commutes with the dynamics and cannot appear in the equation of motion; what it can do is change the presentation, which is exactly what a frame change does. A term in a Lagrangian that needs a right multiplication is a term written in a frame.</p>
+<p><strong>The swap is what remains when no frame is chosen.</strong> It refers to the two sides without preferring one, it is canonical, and it negates the six-dimensional skew summand of the endomorphism algebra. It is the only canonical operation of the carrier that uses both sides, and it is the reason the two-sided structures of the corpus can be stated without a polarization.</p>
+<p><strong>The boundary.</strong> The swap has no $\pm1$ multiplicative character, so it cannot be the sign of a mass term. It says which slot an operator occupies; the sign is supplied by an operator on the module.</p>
+<h3 id="i4h-the-ladder-has-two-rungs">I.4.h — The Ladder Has Two Rungs</h3>
+<p><strong>Read:</strong> the two companion nilpotents act on a spinor as two steps, each square-zero, and the composite of the two is a projection.</p>
+<p>$$
+\vec\Upsilon_{+-}\psi_+=c\,\tilde\Pi_+,\qquad \vec\Upsilon_{-+}\psi_+=a\,\vec\Upsilon_{-+},\qquad \vec\Upsilon_{-+}\vec\Upsilon_{+-}=\tilde\Pi_- .
+$$</p>
+<p><strong>The two steps are not inverses, and that is the point.</strong> The first keeps the mixed part and kills the diagonal part; the second keeps the diagonal part and kills the mixed part. Applying either twice gives zero, and applying them in the two orders gives two different projections.</p>
+<p><strong>The physical reading is a two-state mode.</strong> A rung exists or it does not, the step up is not a step down, and there is no third rung. The occupation parity of the archive is the same statement: two steps exhaust the ladder, and the algebra has no nilpotent of index three, so a third rung cannot be built. The cap at two is not a truncation imposed from outside; it is the length of the module.</p>
+<p><strong>The reason the cap is two is module-theoretic.</strong> A spinor space is two complex dimensions and splits into two complex lines. A ladder step is a map between two lines, so there are two steps and no more; any further map would have to leave the carrier.</p>
+<p><strong>The boundary.</strong> This is the kinematics of the ladder and not the dynamics. It does not say when a step is taken, and it does not supply the operator that takes it. The differential and the supercharge are structures on top of this one.</p>
+<h3 id="i4i-the-amplitude-is-one-complex-number-and-a-direction">I.4.i — The Amplitude Is One Complex Number and a Direction</h3>
+<p><strong>Read:</strong> a spinor has an intrinsic form $a\tilde\Pi_++\nu_+$ and the coordinate description $(a,c)$ is not intrinsic. Only the diagonal coefficient and the nilpotent element are.</p>
+<p><strong>The gauge makes the difference exact.</strong></p>
+<p>$$
+a'=a,\qquad c'=t^{-1}c ,
+$$</p>
+<p>so $a$ is invariant and $c$ is not; the vanishing of $c$ is invariant, since $c=0$ exactly when $\nu_+=0$, but the value of a nonzero $c$ is not. Reading the pair $(a,c)$ as two amplitudes is therefore reading a coordinate.</p>
+<p><strong>The physical reading is that a state has one invariant magnitude and one dirigible part.</strong> The diagonal coefficient is a complex number attached to the idempotent; the mixed part is an element of a line, which is a direction with a magnitude that the gauge can absorb. What is invariant is the magnitude of $a$ and the ray of $\nu_+$, not the two numbers of a column.</p>
+<p><strong>The probabilities are invariant only after the gauge is cut.</strong> The Hermitian norm $\tfrac12(|a|^{2}+|c|^{2})$ is invariant under the circle $|t|=1$ and not under the full $\mathbb{C}^{\times}$. So the two entries of a column carry the two probabilities in the Hermitian gauge, and in that gauge only. The modulus of the gauge is not a symmetry of the norm, and a computation that uses the full gauge and the norm together is inconsistent.</p>
+<p><strong>The boundary.</strong> The Hermitian gauge is available when the family and the basis are Hermitian, and that is one case of the section and not the general one. In the general case there is no invariant norm and no probability, and the entry says so.</p>
+<h3 id="i4j-the-line-of-polarizations-is-the-celestial-sphere">I.4.j — The Line of Polarizations Is the Celestial Sphere</h3>
+<p><strong>Read:</strong> the minimal left ideals are indexed by the kernel lines, the index set is a projective line, and the units act on it by Möbius transformations through $PGL_2(\mathbb{C})$.</p>
+<p>$$
+\mathbb{B}^{\times}/\mathbb{C}^{\times}e_t\cong PGL_2(\mathbb{C})\cong\operatorname{Aut}_{\mathbb{C}}(\mathbb{B})\cong SO^{+}(1,3).
+$$</p>
+<p><strong>The group that acts is the Lorentz group.</strong> The quotient of the units by the scalars is the automorphism group of the algebra, and the automorphism group is the proper orthochronous Lorentz group acting by inner automorphisms. A projective line with a transitive Möbius action of that group is the sphere of null directions.</p>
+<p><strong>The physical reading is that a polarization is a null direction.</strong> A minimal left ideal names a line in the defining module, and a Lorentz transformation moves that line by a Möbius map. So choosing a spin frame is choosing a point of the celestial sphere, and the family of spin frames is the sphere itself, not a discrete set.</p>
+<p><strong>Transitivity has a sharp consequence.</strong> The action is transitive, so no point of the line is privileged and no polarization is algebraic. It is simply transitive on ordered triples of distinct points, so a polarization is pinned down by three points and no fewer — which is the precise sense in which "a frame" is a set of data and not a single vector.</p>
+<p><strong>The stabiliser is a Borel, and that is the little group of the choice.</strong> The matrices fixing one line are the upper triangular ones of complex dimension two. Choosing a polarization therefore breaks $PGL_2(\mathbb{C})$ to that Borel, exactly as choosing a rest frame breaks the Lorentz group to the rotation subgroup.</p>
+<p><strong>The boundary.</strong> The identification of $PGL_2(\mathbb{C})$ with $SO^{+}(1,3)$ is an isomorphism of real Lie groups, not of complex ones: the complex group is $SO(3,\mathbb{C})$. And the celestial sphere here is the projective line of the <em>defining module</em> of the algebra; the entry does not claim that it is the sphere of the directions of physical null momenta, which is a different identification on a different space.</p>
+<h3 id="i4k-what-the-module-category-does-not-contain">I.4.k — What the Module Category Does Not Contain</h3>
+<p><strong>Read:</strong> the module category of the algebra is the linear algebra of $\mathbb{C}$ with every dimension doubled, and nothing else.</p>
+<p>$$
+\operatorname{Mod}(\mathbb{B})\simeq\operatorname{Mod}(\mathbb{C}),\qquad \dim_{\mathbb{C}}\bigl(S\otimes_{\mathbb{C}}W\bigr)=2\dim_{\mathbb{C}}W .
+$$</p>
+<p><strong>The equivalence is exact, and it is a subtraction.</strong> Every statement that can be made about a module is a statement about a complex vector space read through $S$, and the algebra is recovered as the endomorphism algebra of $S$. So the module structure alone carries no biquaternion information beyond the doubling: the multiplicity, the dimension, the projectivity, the parity.</p>
+<p><strong>The physical reading is a location statement.</strong> The physics of this algebra cannot live in its module category, because that category is the complex one. It must live in what the module does not see: the forms, the norms, the star, the real structure, the products. This is the most useful boundary in the section, and it is the reason the corpus's physical content is carried by the norms and not by the representations.</p>
+<p><strong>What this buys a reader.</strong> A claim that a phenomenon follows from "the representation theory of the biquaternion algebra" is a claim that can be checked by asking whether it survives the Morita equivalence. If it does, it is a statement about complex vector spaces and belongs to the complex field; if it does not, it names one of the structures that the equivalence drops.</p>
+<p><strong>The boundary.</strong> The equivalence is about modules and not about algebras with extra structure. The star, the quaternion conjugation and the four products are not functorial for it, and that is exactly why they carry the content.</p>
+<h2 id="the-limits">The Limits</h2>
+<p><strong>The entry states the module structure and not the norms.</strong> Which modules carry a mass, which carry a causal sign, and which are positive are norm questions, and they belong to the entries on the four forms and the four norms.</p>
+<p><strong>Two assignments are labelled and not proved.</strong> That the left action carries the dynamics and the right action carries the frame is a reading consistent with the archive and with the one-sidedness of the Dirac operator; the algebra states only that the two actions commute and are unequally multiplicative. And the identification of the line of polarizations with the sphere of null directions uses an identification of $PGL_2(\mathbb{C})$ with $SO^{+}(1,3)$ that is an isomorphism of real groups, stated elsewhere in the corpus.</p>
+<p><strong>The infinite-dimensional case is not treated.</strong> A quantum field needs infinitely many modes, hence an infinite direct sum of copies of $S$, and the finiteness arguments of this section do not extend to it. The archive's Fock constructions are read on a one-mode truncation, which is what makes them finite and what makes them belong to this section.</p>
+<p><strong>The carrier of the module is not yet a field.</strong> A field is an element of the carrier depending on a point of spacetime, and the dependence is a further structure. The entry gives the fibre and not the field.</p>
+<h2 id="summary">Summary</h2>
+<ul>
+<li>The algebra is a module over itself by left multiplication, by right multiplication and by the two together, and the submodules are the ideals.</li>
+<li>The algebra is simple, semisimple, Artinian and of length two as a left module; every nonzero proper left ideal is minimal and maximal.</li>
+<li>There is one simple module $S$, of complex dimension two; every module is $S^{\oplus k}$, and the regular module is $S\oplus S$.</li>
+<li>Every module is projective; $S^{\oplus k}$ is free exactly when $k$ is even, and the same parity is the obstruction to a real structure.</li>
+<li>The module category of the algebra is the category of complex vector spaces, with every dimension doubled.</li>
+<li>A splitting of the regular module is an unordered pair of distinct points of a projective line, and no pair is canonical.</li>
+<li>The Peirce pair and the tensor split of the Pauli display are one splitting, written as ideals and as a tensor index.</li>
+<li>The two slots of the display are copies of $S$; chirality is the pair $(S,S^{\mathrm{c}})$, graded by $\mathsf V_{\mathrm{vol}}=-iR_{\vec e_z}$, and it is a real structure.</li>
+<li>The star does not exchange the two spinor spaces: it maps $S_+$ to the right row $\tilde\Pi_+\mathbb{B}$.</li>
+<li>A spinor has an intrinsic diagonal coefficient and an intrinsic nilpotent part; the mixed coordinate is gauge-dependent.</li>
+<li>The two nilpotents are two square-zero steps, and the ladder has two rungs because the carrier has two lines.</li>
+<li>The module carries an indefinite bilinear form and a canonical swap, and no positivity: the Hermitian form is a second structure.</li>
+<li>The units act on the line of polarizations by Möbius transformations through $PGL_2(\mathbb{C})$, transitively, with a Borel stabiliser.</li>
+<li>The module category contains no biquaternion physics beyond the doubling; the content lies in the forms, the norms and the real structure.</li>
+</ul>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>${}_{\mathbb{B}}\mathbb{B}$, $\mathbb{B}_{\mathbb{B}}$, ${}_{\mathbb{B}}\mathbb{B}_{\mathbb{B}}$</td>
+<td>the left, right and two-sided regular modules</td>
+</tr>
+<tr>
+<td>$S=\mathbb{B}\tilde\Pi$</td>
+<td>the simple module, $\dim_{\mathbb{C}}S=2$</td>
+</tr>
+<tr>
+<td>$S_{\pm}=\mathbb{B}\tilde\Pi_{\pm}$</td>
+<td>the two spinor spaces of a polarized module</td>
+</tr>
+<tr>
+<td>$S^{\mathrm{c}}$</td>
+<td>the conjugate module</td>
+</tr>
+<tr>
+<td>$V=\mathbb{B}$</td>
+<td>the carrier of the regular module</td>
+</tr>
+<tr>
+<td>$L(\tilde Q)$, $R(\tilde Q)$</td>
+<td>left and right multiplication by $\tilde Q$</td>
+</tr>
+<tr>
+<td>$\Pi_u=\tfrac12(e_t+iu\cdot\vec e)$</td>
+<td>the rank-one idempotent at $u\in\mathbb{C}^{3}$, $u\cdot u=1$</td>
+</tr>
+<tr>
+<td>$\psi_+=a\tilde\Pi_++\nu_+$</td>
+<td>the intrinsic form of a positive spinor</td>
+</tr>
+<tr>
+<td>$a,c,b,d$</td>
+<td>Peirce coordinates of the two spinors</td>
+</tr>
+<tr>
+<td>$t\in\mathbb{C}^{\times}$</td>
+<td>the gauge parameter of a Peirce basis</td>
+</tr>
+<tr>
+<td>$\beta(\tilde X,\tilde Y)=\operatorname{Sc}(\tilde X\tilde Y)$</td>
+<td>the trace form on the carrier</td>
+</tr>
+<tr>
+<td>$\sigma(L_aR_b)=L_bR_a$</td>
+<td>the swap</td>
+</tr>
+<tr>
+<td>$\mathsf V_{\mathrm{vol}}=-iR_{\vec e_z}$</td>
+<td>the chirality basis operator</td>
+</tr>
+<tr>
+<td>$\chi$</td>
+<td>the central sign, $\chi^2=e_t$, outside $\mathbb{B}$</td>
+</tr>
+<tr>
+<td>$S^{\oplus k}$</td>
+<td>the general module, of complex dimension $2k$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<p><strong>In the mathematics corpus.</strong> The five articles of the source table, and inside the last of them <em>Morita Equivalence with the Complex Field</em> and <em>Real Structures</em>, which carry the two results this entry uses most.</p>
+<p><strong>In this category.</strong> <em>The Idempotents, the Ideals and the Observables</em> constructs the minimal left ideal that this entry names as a carrier. <em>The Spectrum and the Two Modes</em> asks what an element does to a carrier it does not preserve. <em>The Four Forms and the Four Norms</em> supplies the positivity that this entry shows the plain product cannot supply.</p>
+<p><strong>In the archive, until they are rewritten.</strong> <a href="../articles_physics/the-carrier-of-the-dirac-field.html">The Carrier of the Dirac Field</a> is the case where the carrier is a minimal left ideal, with the one-sidedness of the operator and the two dimensions as the whole content. <a href="../articles_physics/spin-and-the-three-elementary-carriers.html">Spin and the Three Elementary Carriers</a> sets the module structure beside the probability structure on one carrier and shows that the algebra's own form is degenerate there. <a href="../articles_physics/the-scalar-field-in-the-centre-why-spin-0-escapes-the-biquaternion-state-module.html">The Scalar Field in the Centre: Why Spin Zero Escapes the State Module</a> is the boundary case, where the missing one-dimensional module is proved missing. <a href="../articles_physics/biquaternion-physical-interpretation-of-operator-chirality.html">Operator Chirality on the Biquaternion Algebra</a> treats the swap and the chirality operator at length.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
