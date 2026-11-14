@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Carriers of the Biquaternion Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-carriers-of-the-biquaternion-algebra"><strong>The Carriers of the Biquaternion Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The biquaternion algebra $\mathbb{B}$ acts on itself in two ways: by multiplication, $Q\mapsto XQ$, and by conjugation, $Q\mapsto uQu^{*}$. A <strong>carrier</strong> is a nonzero subspace that one of these actions preserves and cannot split further. This article defines the carriers, proves that there are three of them and no more, and gives their table.</p>
+<p>The count is a consequence of two classifications, one for each action. Under multiplication, $\mathbb{B}$ is a full matrix algebra over $\mathbb{C}$, so it has a single simple module and the minimal left ideals are all copies of it. Under conjugation, the trace form splits $\mathbb{B}$ into the centre and the traceless part, and both summands are irreducible. One type from the first action and two from the second give the three carriers of dimensions $1$, $2$ and $3$ over $\mathbb{C}$.</p>
+<p>The article is the first of the group. The number attached to a carrier — its spin — is <em>The Spin of a Carrier</em>, the weights of a fixed generator on each carrier are <em>The Weights of a Carrier</em>, and the products of carriers are <em>The Tensor Square of the Adjoint Module</em>. The subspaces used here are defined in <em>Subspaces and Decompositions of the Biquaternion Algebra</em>, the idempotents and the minimal left ideals in <em>The Minimal Left Ideals of the Biquaternion Algebra</em> and <em>The Companion Nilpotents of the Biquaternion Algebra</em>, and the module category in <em>The Category of Modules in the Biquaternion Algebra</em>.</p>
+<p>Nothing below is a statement of physics. The elements are written $\tilde Q,\tilde Q_1,\tilde Q_2$ with coefficients $Q_t,Q_x,Q_y,Q_z$; the units of the algebra are $\mathbb{B}^{\times}$; the unitary units are $G=\mathrm{U}(2)$; and $*$ is the Hermitian conjugation, $\tilde Q^{*}=Q_t^{*}e_t+\vec Q^{*}$.</p>
+<h2 id="the-two-actions-of-the-algebra">The Two Actions of the Algebra</h2>
+<p><strong>Definition (left multiplication).</strong> For $X\in\mathbb{B}$ the <strong>left multiplication</strong> by $X$ is the linear map</p>
+<p>$$
+L_X:\mathbb{B}\to\mathbb{B},\qquad L_X(Q)=XQ .
+$$</p>
+<p>The assignment $X\mapsto L_X$ is an injective algebra homomorphism $\mathbb{B}\to\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, because $\mathbb{B}$ has a unit; the resulting $\mathbb{B}$-module is the <strong>regular module</strong>.</p>
+<p><strong>Definition (conjugation).</strong> For a unit $u\in\mathbb{B}^{\times}$ the <strong>conjugation</strong> by $u$ is</p>
+<p>$$
+\operatorname{Ad}_u:\mathbb{B}\to\mathbb{B},\qquad \operatorname{Ad}_u(Q)=uQu^{*} .
+$$</p>
+<p>The assignment $u\mapsto\operatorname{Ad}_u$ is a homomorphism of groups, with kernel the central units, and it differentiates to the adjoint action $\operatorname{ad}_X(Q)=[X,Q]$ of the commutator, read in <em>The Adjoint Action and the Inner Derivations of the Biquaternion Algebra</em>.</p>
+<p><strong>Remark (right multiplication adds nothing).</strong> The right multiplications $R_X(Q)=QX$ form the opposite algebra, and they are the left multiplications of $\mathbb{B}^{\mathrm{op}}$. Since $\mathbb{B}\cong M_2(\mathbb{C})$ is a full matrix algebra, $\mathbb{B}^{\mathrm{op}}\cong\mathbb{B}$ and the two categories of modules are equivalent; a right carrier is a left carrier read in the mirror. The count below is therefore a count for the two actions, not for four.</p>
+<h2 id="invariant-subspaces">Invariant Subspaces</h2>
+<p><strong>Definition (invariance).</strong> Let $\rho$ be one of the two actions. A subspace $W\subseteq\mathbb{B}$ is <strong>$\rho$-invariant</strong> when $\rho(X)W\subseteq W$ for every $X$: for left multiplication, when $XW\subseteq W$ for every $X\in\mathbb{B}$, that is, when $W$ is a left ideal; for conjugation, when $uWu^{*}\subseteq W$ for every unit $u$.</p>
+<p><strong>Definition (irreducibility).</strong> A $\rho$-invariant subspace $W\neq 0$ is <strong>irreducible</strong> when it has no $\rho$-invariant subspace other than $0$ and $W$. It is <strong>reducible</strong> otherwise, and it is <strong>completely reducible</strong> when it is a direct sum of irreducible subspaces.</p>
+<p><strong>Remark (the action is part of the carrier).</strong> The same subspace can be irreducible for one action and reducible for the other, and a statement of irreducibility without the action is incomplete. The centre is the extreme case: irreducible for conjugation, where the action is trivial on it, and not a carrier at all for left multiplication, where $X\,\mathbb{C}e_t$ fills the algebra as $X$ varies and the line sits inside the larger left ideal $\mathbb{B}e_t=\mathbb{B}$.</p>
+<h2 id="carriers">Carriers</h2>
+<p><strong>Definition (carrier).</strong> A <strong>carrier</strong> of $\mathbb{B}$ is a pair $(W,\rho)$ with $W\subseteq\mathbb{B}$ nonzero, $\rho$-invariant and $\rho$-irreducible, where $\rho$ is left multiplication or conjugation. A carrier is <strong>elementary</strong> when it is irreducible, and a <strong>copy</strong> of a carrier when it is a second irreducible subspace isomorphic to it as a $\rho$-module.</p>
+<p><strong>Definition (the representation space).</strong> Let $(W,\rho)$ be a carrier. The <strong>representation space</strong> of the carrier is the $\rho$-module generated by $W$; it is $W$ itself when the action is faithful on $W$, and it is the quotient of $W$ by the common kernel of the action when the action has a kernel. For the adjoint action the kernel of $\operatorname{ad}$ is the centre, so the representation space of a conjugation carrier is $W/(W\cap\mathbb{B}_{C})$.</p>
+<p><strong>Definition (type).</strong> Two carriers have the same <strong>type</strong> when their representation spaces are isomorphic as modules over the acting structure. The <strong>type</strong> of a carrier is the isomorphism class itself, written $\mathcal{V}_d$ with $d=\dim_{\mathbb{C}}$ of the representation space.</p>
+<p><strong>Remark (why the type and not the subspace).</strong> The three carriers are three subspaces of one algebra, and two of them are four real-dimensional. Dimension therefore does not separate them; the module does. The type records what the action does, and the spin of <em>The Spin of a Carrier</em> is a function of the type alone.</p>
+<h2 id="the-three-carriers">The Three Carriers</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>carrier</th>
+<th>set</th>
+<th>$\dim_{\mathbb{R}}$</th>
+<th>$\dim_{\mathbb{C}}$ of the representation space</th>
+<th>action</th>
+<th>type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the centre $\mathbb{B}_{C}$</td>
+<td>$\mathbb{C}e_t$</td>
+<td>$2$</td>
+<td>$1$</td>
+<td>conjugation; every unit acts trivially</td>
+<td>$\mathcal{V}_1$, the trivial module</td>
+</tr>
+<tr>
+<td>the ideals $S_{\pm}$</td>
+<td>$\mathbb{B}\,\tilde\Pi_{\pm}(\vec u)$</td>
+<td>$4$</td>
+<td>$2$</td>
+<td>left multiplication</td>
+<td>$\mathcal{V}_2$, the defining module</td>
+</tr>
+<tr>
+<td>the material sector $\mathbb{B}_{\Phi}$</td>
+<td>$\mathbb{R}(ie_t)\oplus\mathfrak{k}$</td>
+<td>$4$</td>
+<td>$3$</td>
+<td>conjugation by $G=\mathrm{U}(2)$; the line $\mathbb{R}(ie_t)$ fixed, $\mathfrak{k}$ traceless</td>
+<td>$\mathcal{V}_3$, the adjoint module</td>
+</tr>
+</tbody>
+</table></div>
+<p>with $\tilde\Pi_{\pm}(\vec u)=\tfrac12(e_t\pm i\vec u)$ for a unit real $\vec u$, and $\mathfrak{k}=\operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$ the real vector triple.</p>
+<p>The three types are pairwise non-isomorphic, of dimensions $1$, $2$ and $3$. The rest of the article proves that the list is complete.</p>
+<h3 id="the-centre">The Centre</h3>
+<p><strong>Proposition.</strong> $\mathbb{B}_{C}=\mathbb{C}e_t$ is invariant and irreducible for conjugation, and its representation space is one-dimensional and trivial.</p>
+<p><em>Proof.</em> For $u\in\mathbb{B}^{\times}$, $u(Q_te_t)u^{*}=Q_t\,ue_tu^{*}=Q_te_t$ by centrality, so the centre is fixed pointwise; a one-dimensional space has no proper nonzero subspace, so it is irreducible. The action is the identity, so the module is the trivial one.</p>
+<p><strong>Remark (the carrier of a trivial action).</strong> The centre is a carrier in the degenerate sense that its action is the identity: it is invariant and irreducible, and the irreducibility is the triviality of a line. It is the only carrier on which the action has a nonzero kernel, the kernel being the whole of $\mathbb{B}^{\times}$.</p>
+<h3 id="the-ideals">The Ideals</h3>
+<p><strong>Theorem.</strong> For every unit real $\vec u$ the set $S_{\pm}(\vec u)=\mathbb{B}\,\tilde\Pi_{\pm}(\vec u)$ is a minimal left ideal: left multiplication preserves it, acts on it irreducibly, and it has no nonzero proper left subideal. Its real dimension is $4$ and its complex dimension is $2$.</p>
+<p><em>Proof.</em> The set is a left ideal because $X(Y\tilde\Pi_{\pm})=(XY)\tilde\Pi_{\pm}$. For minimality, use $\tilde\Pi_{\pm}^{2}=\tilde\Pi_{\pm}$ and $\tilde\Pi_{+}\tilde\Pi_{-}=0$, so $\mathbb{B}=\mathbb{B}\tilde\Pi_{+}\oplus\mathbb{B}\tilde\Pi_{-}$ with both summands nonzero; the corner $\tilde\Pi_{\pm}\mathbb{B}\tilde\Pi_{\pm}=\mathbb{C}\tilde\Pi_{\pm}$ is one-dimensional, and by <em>The Minimal Left Ideals of the Biquaternion Algebra</em> a left ideal of this algebra is minimal exactly when it is of this form. The real dimension is that of $\mathbb{B}$ times that of the idempotent, halved by the rank-one condition: $4$ real, $2$ complex. Left multiplication acts irreducibly because any nonzero $s\in S_{\pm}$ satisfies $\mathbb{B}s=S_{\pm}$.</p>
+<p><strong>Remark (the axis is a parameter, not a datum).</strong> The family $S_{\pm}(\vec u)$ is a sphere of choices, and no axis is preferred by the algebra: the unitary group acts transitively on the axes and carries one member of the family to another. The type is the same for every axis, which is why the table lists the type and not the axis.</p>
+<p><strong>Remark (both ideals occur).</strong> $\mathbb{B}=S_{+}\oplus S_{-}$ is a direct sum of two minimal left ideals, and the two are isomorphic as modules. An inner automorphism need not preserve either: conjugation by the flip $\vec e_x$ exchanges the two idempotents $\tilde\Pi_{+}(\vec e_z)$ and $\tilde\Pi_{-}(\vec e_z)$ and therefore exchanges the two ideals. The exchange is an isomorphism of left $\mathbb{B}$-modules read through an automorphism, which is why the two copies carry one type and not two.</p>
+<h3 id="the-material-sector">The Material Sector</h3>
+<p><strong>Theorem.</strong> $\mathbb{B}_{\Phi}$ is invariant under conjugation by $G=\mathrm{U}(2)$, and under that action it splits as</p>
+<p>$$
+\mathbb{B}_{\Phi}=\mathbb{R}(ie_t)\oplus\mathfrak{k},
+$$</p>
+<p>with $\mathbb{R}(ie_t)$ fixed pointwise and $\mathfrak{k}$ irreducible of real dimension $3$.</p>
+<p><em>Proof.</em> An element of $\mathbb{B}_{\Phi}$ is anti-Hermitian, and $(uQu^{*})^{*}=uQ^{*}u^{*}=-uQu^{*}$ for unitary $u$, so the sector is invariant. The line $\mathbb{R}(ie_t)$ is central, hence fixed. For $\vec v\in\mathfrak{k}$ real and $u$ unitary, $u\vec vu^{*}$ is again a real pure quaternion, so $\mathfrak{k}$ is invariant. The conjugation action of $G$ on $\mathfrak{k}$ is the adjoint action of $\mathrm{U}(2)$ on its traceless anti-Hermitian part, that is, the adjoint action of $\mathrm{SU}(2)$ on $\mathfrak{su}(2)$, and it is irreducible; the invariance is <em>The Two Symmetric Pairs of the Biquaternion Algebra</em>, §<em>The Hermitian Pair</em>, and the identification $\mathfrak{k}\cong\mathfrak{su}(2)$ is <em>The Bracket on the Subspaces of the Biquaternion Algebra</em>.</p>
+<p><strong>Remark (the traceless part carries the spin).</strong> The sector is four real-dimensional and its representation space is three-dimensional, the difference being the central line. The line is a trivial summand, and the type of the carrier is the type of the traceless part. This is the only carrier whose dimension and whose type differ, and the difference is exactly the scalar admixture that <em>The Spin of a Carrier</em> records.</p>
+<h2 id="three-and-not-four">Three and Not Four</h2>
+<p>The completeness of the table is a statement about the two actions, and it is proved in two parts.</p>
+<p><strong>Theorem (the multiplication carriers).</strong> Up to isomorphism there is exactly one simple left $\mathbb{B}$-module, of complex dimension $2$; every minimal left ideal is isomorphic to it, and every left ideal is a direct sum of copies.</p>
+<p><em>Proof.</em> $\mathbb{B}\cong M_2(\mathbb{C})$ by the Pauli representation of <em>The $M_2(\mathbb{C})$ Pauli Representation</em>, and the simple left modules of $M_2(\mathbb{C})$ are the columns $\mathbb{C}^2$: a nonzero vector $v$ generates $M_2(\mathbb{C})v=\mathbb{C}^2$, so the module is simple, and every simple module is a quotient of the regular module $\mathbb{B}$, hence a copy of $\mathbb{C}^2$ by the Jordan–Hölder theorem. The lattice of left ideals of $M_2(\mathbb{C})$ is the lattice of subspaces of $\mathbb{C}^2$, whose minimal elements are the lines. The identification of the minimal left ideals with the sets $\mathbb{B}\tilde\Pi_{\pm}$ is <em>The Minimal Left Ideals of the Biquaternion Algebra</em>.</p>
+<p><strong>Theorem (the conjugation carriers).</strong> Up to isomorphism there are exactly two conjugation carriers: the trivial one-dimensional module and the three-dimensional adjoint module.</p>
+<p><em>Proof.</em> Let $W$ be conjugation-invariant. The trace form $\langle X,Y\rangle=\operatorname{tr}(XY)$ is nondegenerate and invariant, $\langle uXu^{*},uYu^{*}\rangle=\langle X,Y\rangle$, so $W^{\perp}$ is invariant and $\mathbb{B}=W\oplus W^{\perp}$ is a decomposition into invariant subspaces. The centre is the fixed space of the action, and its orthogonal complement under the trace form is the traceless part, $\mathbb{B}_{C}^{\perp}=\mathbb{B}_{V}$; hence every invariant subspace is a sum of invariant subspaces of $\mathbb{B}_{C}$ and of $\mathbb{B}_{V}$. The centre is irreducible because it is a line, and $\mathbb{B}_{V}$ is irreducible for the conjugation action because it is the adjoint module of $\mathrm{SL}_2(\mathbb{C})$, whose highest weight is fundamental (<em>The Adjoint Action of a Lie Algebra</em>, §<em>Worked Case: $\mathrm{sl}(2,K)$</em>). Two summands, both irreducible, and no third.</p>
+<p><strong>Corollary (three and not four).</strong> The types of carriers of $\mathbb{B}$ are exactly $\mathcal{V}_1$, $\mathcal{V}_2$ and $\mathcal{V}_3$: one from multiplication, two from conjugation, and no other, because a carrier is irreducible for one of the two actions and both actions are classified.</p>
+<p><strong>Remark (what is counted).</strong> The count is a count for the two actions the algebra carries on itself: multiplication, which is an action of the algebra, and conjugation, which is an action of the group of units by automorphisms. No third action is used anywhere in this group of articles, and the completeness statement is the completeness of the classification of the irreducible summands of these two. Left and right multiplication give the same types because the algebra is a full matrix algebra, and the derived form of the conjugation is the bracket of <em>The Bracket on the Subspaces of the Biquaternion Algebra</em>.</p>
+<h2 id="copies-sums-and-sub-carriers">Copies, Sums and Sub-Carriers</h2>
+<p><strong>Definition (sum and sub-carrier).</strong> A <strong>sub-carrier</strong> of a carrier $(W,\rho)$ is a nonzero $\rho$-invariant subspace of $W$; by irreducibility it is $W$ itself. A <strong>sum</strong> of carriers is their direct sum as $\rho$-modules, and it is a carrier only when the sum is irreducible.</p>
+<p><strong>Remark (the algebra is not a carrier).</strong> $\mathbb{B}$ is invariant for both actions and reducible for both: as a left module it is $S_{+}\oplus S_{-}$, and for conjugation it is $\mathbb{B}_{C}\oplus\mathbb{B}_{V}$. The algebra is the direct sum of its carriers, never one of them. The two decompositions</p>
+<p>$$
+\mathbb{B}=S_{+}\oplus S_{-},\qquad \mathbb{B}=\mathbb{B}_{C}\oplus\mathbb{B}_{V}
+$$</p>
+<p>are the two isotypic decompositions of the algebra as a module over itself, the first with two copies of $\mathcal{V}_2$ and the second with one copy of $\mathcal{V}_1$ and one of $\mathcal{V}_3$.</p>
+<p><strong>Remark (the two copies are not a multiplicity of types).</strong> $S_{+}$ and $S_{-}$ are two carriers of one type, not two types. The multiplicity is a property of the algebra as a module, and the type is a property of the action; the spin counts types, and it is not multiplied by the copies.</p>
+<h2 id="summary">Summary</h2>
+<p>A carrier is a nonzero subspace of $\mathbb{B}$ that is invariant and irreducible under left multiplication or under conjugation, and the two actions are classified. Left multiplication has one simple module, the two-dimensional one, because $\mathbb{B}$ is a full matrix algebra over $\mathbb{C}$; conjugation has two, the trivial line and the traceless part, because the trace form splits the algebra into the centre and its orthogonal complement and both summands are irreducible.</p>
+<p>The three carriers are therefore the centre $\mathbb{C}e_t$, of type $\mathcal{V}_1$; the minimal left ideals $S_{\pm}=\mathbb{B}\tilde\Pi_{\pm}(\vec u)$, of type $\mathcal{V}_2$; and the material sector $\mathbb{B}_{\Phi}=\mathbb{R}(ie_t)\oplus\mathfrak{k}$, of type $\mathcal{V}_3$, its representation space being the traceless part. Their real dimensions are $2$, $4$ and $4$, their types have complex dimensions $1$, $2$ and $3$, and the difference between dimension and type in the third case is the fixed central line.</p>
+<p>The algebra is the direct sum of its carriers in two ways, $\mathbb{B}=S_{+}\oplus S_{-}$ and $\mathbb{B}=\mathbb{B}_{C}\oplus\mathbb{B}_{V}$, and neither summand of either decomposition is reducible further. The count is three and not four, and the number attached to each type is the subject of the next article.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_X$</td>
+<td>left multiplication $Q\mapsto XQ$, the regular action</td>
+</tr>
+<tr>
+<td>$\operatorname{Ad}_u$</td>
+<td>conjugation $Q\mapsto uQu^{*}$, the adjoint action of the units</td>
+</tr>
+<tr>
+<td>$\mathbb{B}^{\times}$, $G=\mathrm{U}(2)$</td>
+<td>the units, and the unitary units</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{C}=\mathbb{C}e_t$</td>
+<td>the centre, a carrier of type $\mathcal{V}_1$</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_{\pm}(\vec u)=\tfrac12(e_t\pm i\vec u)$</td>
+<td>the complementary idempotents at the axis $\vec u$</td>
+</tr>
+<tr>
+<td>$S_{\pm}(\vec u)=\mathbb{B}\tilde\Pi_{\pm}(\vec u)$</td>
+<td>the minimal left ideals, carriers of type $\mathcal{V}_2$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{\Phi}=\mathbb{R}(ie_t)\oplus\mathfrak{k}$</td>
+<td>the anti-Hermitian subspace, a carrier of type $\mathcal{V}_3$</td>
+</tr>
+<tr>
+<td>$\mathfrak{k}=\operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$</td>
+<td>the real vector triple, the traceless part of $\mathbb{B}_{\Phi}$</td>
+</tr>
+<tr>
+<td>$\mathcal{V}_d$</td>
+<td>the type of a carrier whose representation space has complex dimension $d$</td>
+</tr>
+<tr>
+<td>representation space</td>
+<td>the module generated by the carrier, the quotient by the kernel of the action</td>
+</tr>
+<tr>
+<td>type</td>
+<td>the isomorphism class of the representation space</td>
+</tr>
+<tr>
+<td>copy</td>
+<td>a second irreducible subspace of the same type</td>
+</tr>
+<tr>
+<td>sub-carrier</td>
+<td>an invariant subspace of a carrier, hence the carrier itself</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="subspaces-and-decompositions-of-the-biquaternion-algebra.html">Subspaces and Decompositions of the Biquaternion Algebra</a>, for the centre, the vector subspace, the quaternion subspace and the two Hermitian halves</li>
+<li><a href="the-minimal-left-ideals-of-the-biquaternion-algebra.html">The Minimal Left Ideals of the Biquaternion Algebra</a>, for the minimal left ideals, the sphere of axes and the exchange of the two copies</li>
+<li><a href="the-category-of-modules.html">The Category of Modules in the Biquaternion Algebra</a>, for the simple module, the Morita equivalence and the module category</li>
+<li><a href="the-regular-module.html">The Regular Module in the Biquaternion Algebra</a>, for the algebra as a module over itself</li>
+<li><em>The Two Symmetric Pairs of the Biquaternion Algebra</em>, for the invariance of the two Hermitian halves under conjugation</li>
+<li><em>The Adjoint Action and the Inner Derivations of the Biquaternion Algebra</em>, for the derived action of the conjugation and the inner automorphisms</li>
+<li><a href="the-spin-of-a-carrier.html">The Spin of a Carrier</a>, for the number attached to each type</li>
+<li><a href="the-weights-of-a-carrier.html">The Weights of a Carrier</a>, for the spectrum of a generator on each carrier</li>
+<li><a href="the-spin-zero-carrier.html">The Spin-Zero Carrier</a>, for the one carrier of the trivial type</li>
+<li><a href="the-spin-half-carriers.html">The Spin-Half Carriers</a>, for the sphere of minimal left ideals</li>
+<li><a href="the-spin-one-carriers.html">The Spin-One Carriers</a>, for the two real triples and the four halves</li>
+<li><a href="the-tensor-square-of-the-adjoint-module.html">The Tensor Square of the Adjoint Module</a>, for the products of carriers</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the Peirce decomposition and the modules of a finite-dimensional algebra.</li>
+<li>Israel Nathan Herstein, <em>Noncommutative Rings</em> (Carus Monographs, 1968), for the simple modules of a full matrix algebra.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

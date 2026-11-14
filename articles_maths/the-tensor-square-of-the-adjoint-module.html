@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Tensor Square of the Adjoint Module — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-tensor-square-of-the-adjoint-module"><strong>The Tensor Square of the Adjoint Module</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The algebra $\mathbb{B}$ is a module over itself for the conjugation action, and as such it is the sum of two carriers, the trivial line and the traceless part. Its tensor square is therefore a module of dimension sixteen, and it decomposes into five irreducible summands. The multiplication of the algebra is a map between two modules, and the decomposition says exactly what it does: it is onto two of the summands and it vanishes on the third.</p>
+<p>The result is the reason the list of carriers ends where it does. The carriers are $\mathcal{V}_1$, $\mathcal{V}_2$ and $\mathcal{V}_3$; a product of two carriers lands in a sum of carriers; and the only new summand produced by the tensor square, $\mathcal{V}_5$, is not a carrier and is killed by the multiplication. No product manufactures a type the algebra does not have.</p>
+<p>The carriers and their types are <em>The Carriers of the Biquaternion Algebra</em>, the number attached to each type is <em>The Spin of a Carrier</em>, the weights used in the count are <em>The Weights of a Carrier</em>, and the product itself is <em>The Four General Products and Their Relations over the Biquaternion Algebra</em> and <em>Symmetric and Antisymmetric Decomposition of the Four General Products</em>.</p>
+<p>Nothing below is a statement of physics. The types are written $\mathcal{V}_d$ with $d$ the complex dimension, so that $\mathcal{V}_1$ is the trivial module, $\mathcal{V}_3$ the adjoint module and $\mathcal{V}_5$ the module of dimension five; the spin is $(d-1)/2$ throughout.</p>
+<h2 id="the-algebra-as-a-module">The Algebra as a Module</h2>
+<p><strong>Proposition.</strong> For the conjugation action, $\mathbb{B}\cong\mathcal{V}_1\oplus\mathcal{V}_3$, with $\mathcal{V}_1=\mathbb{B}_{C}$ and $\mathcal{V}_3=\mathbb{B}_{V}$.</p>
+<p><em>Proof.</em> <em>The Carriers of the Biquaternion Algebra</em>, §<em>Three and Not Four</em>: the trace form is invariant and nondegenerate, its radical-free decomposition is $\mathbb{B}=\mathbb{B}_{C}\oplus\mathbb{B}_{C}^{\perp}$, the complement is the traceless part, and both summands are irreducible.</p>
+<p><strong>Corollary (the dimensions).</strong> $\dim_{\mathbb{C}}\mathbb{B}=4$ and $1+3=4$; the tensor square has complex dimension $16$, and the endomorphism algebra $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ has dimension $16$ as well, the two being canonically dual through the trace form.</p>
+<p><strong>Remark (the multiplication is not an endomorphism).</strong> The product $m:\mathbb{B}\otimes\mathbb{B}\to\mathbb{B}$ is a map of modules, not an element of the algebra: it is the structural map of the algebra, and its properties — associativity, the unit, the invariance — are the properties of that map. The module theory constrains it, and the constraint is the subject of this article.</p>
+<h2 id="the-decomposition-of-the-tensor-square">The Decomposition of the Tensor Square</h2>
+<p><strong>Theorem (Clebsch–Gordan for the two carriers).</strong> The tensor products of the carrier types decompose as</p>
+<p>$$
+\mathcal{V}_3\otimes\mathcal{V}_3\cong\mathcal{V}_1\oplus\mathcal{V}_3\oplus\mathcal{V}_5,\qquad
+\mathcal{V}_1\otimes\mathcal{V}_3\cong\mathcal{V}_3,\qquad
+\mathcal{V}_1\otimes\mathcal{V}_1\cong\mathcal{V}_1 .
+$$</p>
+<p><em>Proof.</em> The weights of $\mathcal{V}_3$ are $+1,0,-1$; the weights of $\mathcal{V}_3\otimes\mathcal{V}_3$ are the sums of two of them, with multiplicity, that is $+2$ once, $+1$ twice, $0$ three times, $-1$ twice and $-2$ once. The right-hand side has weights $+2,+1,0,-1,-2$ from $\mathcal{V}_5$, two copies of $+1,0,-1$ from the two $\mathcal{V}_3$, and one $0$ from $\mathcal{V}_1$, which is the same multiset. A module for the rotation algebra over $\mathbb{C}$ is determined up to isomorphism by its weight multiplicities, so the two sides are isomorphic. The other two products are the unit of the tensor category.</p>
+<p><strong>Corollary (the tensor square of the algebra).</strong></p>
+<p>$$
+\mathbb{B}\otimes\mathbb{B}\cong 2\,\mathcal{V}_1\oplus 3\,\mathcal{V}_3\oplus\mathcal{V}_5,
+$$</p>
+<p>of dimensions $2+9+5=16$.</p>
+<p><em>Proof.</em> $(\mathcal{V}_1\oplus\mathcal{V}_3)\otimes(\mathcal{V}_1\oplus\mathcal{V}_3)$ expands into the four products of the theorem, and the copies are collected.</p>
+<p><strong>Remark (the count is complete).</strong> The multiplicity of $\mathcal{V}_5$ is one and the multiplicity of $\mathcal{V}_1$ is two; there is no $\mathcal{V}_7$ and no higher type, because the highest weight of a product of two strings of length three is the sum of the two highest weights, $1+1=2$, and a string of highest weight two has length five. The tensor square of a module of dimension four cannot contain a module of dimension seven.</p>
+<h2 id="the-multiplication-map">The Multiplication Map</h2>
+<p><strong>Proposition (equivariance).</strong> The product $m(X\otimes Y)=XY$ commutes with the conjugation action:</p>
+<p>$$
+m\bigl(uXu^{*}\otimes uYu^{*}\bigr)=u(XY)u^{*}=u\,m(X\otimes Y)\,u^{*}.
+$$</p>
+<p><em>Proof.</em> Multiply the two conjugated factors and cancel the middle pair, $u^{*}u=e_t$.</p>
+<p><strong>Theorem (what the multiplication does to the summands).</strong> The product is onto $\mathcal{V}_1\oplus\mathcal{V}_3$ and vanishes on $\mathcal{V}_5$:</p>
+<p>$$
+m\bigl(2\mathcal{V}_1\oplus 3\mathcal{V}_3\bigr)=\mathbb{B},\qquad m\bigl(\mathcal{V}_5\bigr)=0 .
+$$</p>
+<p><em>Proof.</em> The image of a map of modules is a submodule, and the submodules of $\mathbb{B}$ are $\mathcal{V}_1$, $\mathcal{V}_3$ and their sum; the product is onto because $e_t$ is a unit, so the image is the whole of $\mathcal{V}_1\oplus\mathcal{V}_3$. A map of modules carries an isotypic component into the isotypic component of the same type, and $\mathbb{B}$ has no $\mathcal{V}_5$ summand, so the restriction to $\mathcal{V}_5$ is a map into zero.</p>
+<p><strong>Corollary (no higher carrier).</strong> A product of two elements of carriers lies in a carrier, and the only summand of the tensor square that is not a carrier is annihilated by the product. The algebra therefore generates no type beyond $\mathcal{V}_1$, $\mathcal{V}_2$ and $\mathcal{V}_3$: the first two by multiplication, the third by conjugation.</p>
+<p><strong>Remark (the two-dimensional type is invisible here).</strong> The decomposition above is the decomposition for the conjugation action, under which $\mathbb{B}$ is $\mathcal{V}_1\oplus\mathcal{V}_3$ and the two-dimensional type does not appear. The two-dimensional type is the carrier of the multiplication, and its products are read in the category of left modules, where the tensor product is over the algebra and not over $\mathbb{C}$. The absence of $\mathcal{V}_2$ from this table is not an omission: the adjoint action of the algebra on itself has no two-dimensional summand, and that is the content of <em>The Carriers of the Biquaternion Algebra</em>, §<em>Three and Not Four</em>.</p>
+<h2 id="the-four-products">The Four Products</h2>
+<p><strong>Proposition (the four products are four maps).</strong> Each of the four general products of <em>The Four General Products and Their Relations over the Biquaternion Algebra</em> is a map $\mathbb{B}\otimes\mathbb{B}\to\mathbb{B}$ that is equivariant for the conjugation action up to the signs of the conjugations involved; the plain bilinear product is equivariant as stated, the plain sesquilinear one is equivariant for the action composed with the involution, and the quaternionic ones likewise.</p>
+<p><em>Proof.</em> Each product is a composition of the multiplication with one or two applications of a conjugation to the factors, and a conjugation is either an automorphism of the module structure or an antiautomorphism, which is an isomorphism onto the module with the conjugated action. The equivariance is the associativity of the multiplication together with $u^{*}u=e_t$.</p>
+<p><strong>Corollary (all four products kill $\mathcal{V}_5$).</strong> Every one of the four products vanishes on the $\mathcal{V}_5$ summand of $\mathbb{B}\otimes\mathbb{B}$, and every one of them is onto a sum of carriers.</p>
+<p><em>Proof.</em> Each product is the multiplication composed with maps that permute or conjugate the factors, and conjugation preserves the isotypic components of the tensor square.</p>
+<p><strong>Remark (what this says about the algebra).</strong> The four products are four different pairings of two copies of the algebra, and the module theory says that none of them can produce an isotypic component the algebra does not already have as a module. This is the structural reason the algebra is closed under its own products at the level of types, and it is the reason the list of carriers is short.</p>
+<h2 id="summary">Summary</h2>
+<p>For the conjugation action, $\mathbb{B}\cong\mathcal{V}_1\oplus\mathcal{V}_3$, and its tensor square is $2\mathcal{V}_1\oplus3\mathcal{V}_3\oplus\mathcal{V}_5$, with dimensions $2+9+5=16$. The multiplicities are read from the weight strings: the sums of two elements of $\{+1,0,-1\}$ give $+2$ once, $+1$ twice, $0$ three times, $-1$ twice and $-2$ once, which is $\mathcal{V}_5\oplus2\mathcal{V}_3\oplus\mathcal{V}_1$.</p>
+<p>The multiplication is a map of modules, it is onto $\mathcal{V}_1\oplus\mathcal{V}_3$, and it vanishes on $\mathcal{V}_5$ because the algebra has no five-dimensional summand. All four general products vanish there for the same reason.</p>
+<p>Hence no product of carriers produces a new carrier, and no carrier above spin one exists: the highest weight of a tensor product is the sum of the highest weights, the square of the adjoint reaches two, the algebra stops at one, and the summand that overshoots is the one the product annihilates.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathcal{V}_d$</td>
+<td>the carrier type of complex dimension $d$</td>
+</tr>
+<tr>
+<td>$\mathcal{V}_1$</td>
+<td>the trivial module, the centre</td>
+</tr>
+<tr>
+<td>$\mathcal{V}_3$</td>
+<td>the adjoint module, the traceless part</td>
+</tr>
+<tr>
+<td>$\mathcal{V}_5$</td>
+<td>the module of highest weight two, a summand of the tensor square and not a carrier</td>
+</tr>
+<tr>
+<td>$\mathbb{B}\cong\mathcal{V}_1\oplus\mathcal{V}_3$</td>
+<td>the algebra as a module for the conjugation</td>
+</tr>
+<tr>
+<td>$m:\mathbb{B}\otimes\mathbb{B}\to\mathbb{B}$</td>
+<td>the multiplication, a map of modules</td>
+</tr>
+<tr>
+<td>$2\mathcal{V}_1\oplus3\mathcal{V}_3\oplus\mathcal{V}_5$</td>
+<td>the decomposition of the tensor square</td>
+</tr>
+<tr>
+<td>Clebsch–Gordan</td>
+<td>the rule $\mathcal{V}_{2s+1}\otimes\mathcal{V}_{2s'+1}\cong\bigoplus_{j=|s-s'|}^{s+s'}\mathcal{V}_{2j+1}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-carriers-of-the-biquaternion-algebra.html">The Carriers of the Biquaternion Algebra</a>, for the three carriers, the isotypic decomposition and the proof that there are no others</li>
+<li><a href="the-spin-of-a-carrier.html">The Spin of a Carrier</a>, for the number attached to each type</li>
+<li><a href="the-weights-of-a-carrier.html">The Weights of a Carrier</a>, for the spectra from which the multiplicities are read</li>
+<li><a href="the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html">The Four General Products and Their Relations over the Biquaternion Algebra</a>, for the four products and their relations</li>
+<li><a href="symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html">Symmetric and Antisymmetric Decomposition of the Four General Products</a>, for the split of each product into its symmetric and antisymmetric halves</li>
+<li><a href="the-vector-parts-of-the-products-over-the-biquaternion-algebra.html">The Vector Parts of the Products over the Biquaternion Algebra</a>, for the vector part of each product</li>
+<li><a href="the-category-of-modules.html">The Category of Modules in the Biquaternion Algebra</a>, for the module category and the tensor product over the algebra</li>
+<li><a href="representations-of-lie-algebras.html">Representations of Lie Algebras</a>, for the highest-weight classification and the Clebsch–Gordan rule in general</li>
+<li>Brian C. Hall, <em>Lie Groups, Lie Algebras, and Representations</em> (Springer, 2015), for the Clebsch–Gordan decomposition of $\mathfrak{su}(2)$-modules.</li>
+<li>William Fulton and Joe Harris, <em>Representation Theory: A First Course</em> (Springer, 1991), for the multiplicities in the tensor products of the irreducible modules.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

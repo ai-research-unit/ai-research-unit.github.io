@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Spin-Zero Carrier — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-spin-zero-carrier"><strong>The Spin-Zero Carrier</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The biquaternion algebra $\mathbb{B}$ carries exactly one carrier of the trivial type, and the carrier is the centre $\mathbb{C}e_t$. The type has complex dimension one and spin $0$, and the subspace that realises it is forced: no axis, no sign and no choice enter.</p>
+<p>This article proves three things. The fixed space of the conjugation is the centre, and nothing else. A carrier of the trivial type is a trivial module, hence lies in the fixed space, hence is the centre; so there is one and not a family. And the centre is not a Peirce line of any complete family of idempotents, so the object has no companion nilpotent, no coordinate vector and no weight string of the form $\pm$.</p>
+<p>The count of the three types is <em>The Carriers of the Biquaternion Algebra</em>, the number attached to a type is <em>The Spin of a Carrier</em>, and the spectra of all three are <em>The Weights of a Carrier</em>, §<em>The Three Spectra</em>. The two other carriers are <em>The Spin-Half Carriers</em> and <em>The Spin-One Carriers</em>.</p>
+<p>Nothing below is a statement of physics. The elements are written $X,Y$; the units are $e_t,\vec e_x,\vec e_y,\vec e_z$ with $e_t^2=e_t$ and $\vec e_k^2=-e_t$; the group of unitary units is $G=\mathrm{U}(2)$; and $*$ is the Hermitian conjugation.</p>
+<h2 id="the-fixed-space-of-the-conjugation">The Fixed Space of the Conjugation</h2>
+<p><strong>Definition (the conjugation).</strong> For a unit $u$ the <strong>conjugation</strong> is $\operatorname{Ad}_u(X)=uXu^{*}$, and its derived form is $\operatorname{ad}_Y(X)=[Y,X]$.</p>
+<p><strong>Proposition (the centre is fixed pointwise).</strong> For every unit $u$ and every $\lambda\in\mathbb{C}$,</p>
+<p>$$
+\operatorname{Ad}_u(\lambda e_t)=\lambda e_t,\qquad \operatorname{ad}_Y(\lambda e_t)=0 .
+$$</p>
+<p><em>Proof.</em> $u(\lambda e_t)u^{*}=\lambda\,ue_tu^{*}=\lambda e_t$ because $e_t$ is the unit and $u$ is invertible; and $[Y,\lambda e_t]=0$ because $\lambda e_t$ is central. The two statements are the same computation read on the group and on its algebra.</p>
+<p><strong>Theorem (the fixed space is the centre).</strong> A subspace $W$ on which $G$ acts trivially is contained in $\mathbb{C}e_t$, and the fixed space of $G$ is exactly $\mathbb{C}e_t$.</p>
+<p><em>Proof.</em> The fixed elements are the matrices commuting with every unitary, in the model $\mathbb{B}\cong M_2(\mathbb{C})$ of <em>The $M_2(\mathbb{C})$ Pauli Representation</em>. The unitary group spans $M_2(\mathbb{C})$ linearly, so the commutant of $G$ in $M_2(\mathbb{C})$ is the commutant of $M_2(\mathbb{C})$, which is $\mathbb{C}\mathrm I_2$. The preimage of $\mathbb{C}\mathrm I_2$ is $\mathbb{C}e_t$. A trivial module consists of fixed vectors, so it lies in that line.</p>
+<h2 id="uniqueness">Uniqueness</h2>
+<p><strong>Theorem (one carrier of the trivial type).</strong> There is exactly one carrier of type $\mathcal{V}_1$, and it is $\mathbb{C}e_t$. No parameter and no sign enter, in contrast with the other two types.</p>
+<p><em>Proof.</em> A carrier of type $\mathcal{V}_1$ is a nonzero space on which the action is the identity. By the theorem above it lies in $\mathbb{C}e_t$, which is a complex line; a nonzero subspace of a line is the line. So the carrier is $\mathbb{C}e_t$ and the description admits no choice.</p>
+<p><strong>Corollary (why the other two types have families).</strong> The count of carriers is one, a sphere, and a pair, for the three types. The reason is not the dimension of the type but the size of the space of solutions: the trivial type is realised by the unique fixed line, the defining type by the sphere of minimal left ideals, and the adjoint type by the traceless parts of the four halves.</p>
+<p><strong>Remark (a real line inside the centre).</strong> Read over the reals, $\mathbb{C}e_t=\mathbb{R}e_t\oplus\mathbb{R}(ie_t)$ contains a circle of real lines, each invariant and each irreducible as a real space, and all of them trivial. They are not carriers of the complex algebra: the action is complex-linear and a carrier is a complex subspace, so a real line is excluded by the type of the object and not by a failure of invariance. The same remark explains the entry for the third type in the table of <em>The Carriers of the Biquaternion Algebra</em>, where a real block stands for the complex carrier inside it.</p>
+<h2 id="not-a-peirce-line">Not a Peirce Line</h2>
+<p>The centre is not one of the four Peirce lines of a complete family. The statement is worth proving, because it is the reason the spin-zero carrier has none of the machinery of the other two.</p>
+<p><strong>Theorem (the centre meets every Peirce line in zero).</strong> Let $\tilde\Pi_{+},\tilde\Pi_{-}$ be a complete family, $\tilde\Pi_{\pm}^{2}=\tilde\Pi_{\pm}$, $\tilde\Pi_{+}\tilde\Pi_{-}=0$, $\tilde\Pi_{+}+\tilde\Pi_{-}=e_t$, and let $\mathbb{B}_{st}=\tilde\Pi_s\mathbb{B}\tilde\Pi_t$ be the four Peirce lines. Then</p>
+<p>$$
+\mathbb{B}_{st}\cap\mathbb{C}e_t=0
+$$</p>
+<p>for every pair $(s,t)$, and $e_t$ lies in no Peirce line.</p>
+<p><em>Proof.</em> An element of $\mathbb{B}_{st}$ satisfies $X=\tilde\Pi_sX\tilde\Pi_t$. Take $X=\lambda e_t$ with $\lambda\neq0$; then $\tilde\Pi_s\tilde\Pi_t=\lambda e_t$, and the left side is $\delta_{st}\tilde\Pi_s$, which is an idempotent of rank one and not the unit. A nonzero multiple of $e_t$ is not idempotent, so no such $X$ exists. The same computation at $\lambda=0$ gives only the zero element.</p>
+<p><strong>Corollary (no companion, no coordinates, no string).</strong> The centre has no companion nilpotent, no Peirce coordinate vector, and no weight string of the form $+\lambda,-\lambda$. Its weight string is the single number $0$.</p>
+<p><em>Proof.</em> The companion nilpotents of a family lie in the mixed lines $\mathbb{B}_{-+}$ and $\mathbb{B}_{+-}$, and the coordinates of <em>The Companion Nilpotents of the Biquaternion Algebra</em> are taken in a Peirce column. The centre lies in no corner and in no column, so neither applies. The string is computed in §<em>The Readings</em> below.</p>
+<p><strong>Remark (what the centre is, in Peirce language).</strong> The centre is the diagonal corner of the degenerate family $(e_t)$, whose complement is $0$. That family is not a complete family of two nonzero idempotents, and it has no mixed lines, so the Peirce decomposition it gives is the trivial one, $\mathbb{B}=\mathbb{B}_{++}$.</p>
+<h2 id="the-readings">The Readings</h2>
+<p>The carrier is one object and it has four readings. They agree, and each is computed in one line.</p>
+<p><strong>The weight.</strong> The generator of <em>The Weights of a Carrier</em> is $\tilde S(\vec u)=\tfrac12 i\vec u\cdot\vec e$, Hermitian. On $\mathbb{C}e_t$ it acts by the commutator, which is zero, so the weight string is $\{0\}$ and its single member is the highest weight. The spin is $(1-1)/2=0$.</p>
+<p><strong>The quadratic element.</strong> The element $C=\sum_k\tilde S_k^{2}=\tfrac34 e_t$ is central, so $\operatorname{ad}_C=0$ and $C$ acts by the scalar $0$ on this carrier. The same scalar read as $s(s+1)$ at $s=0$ is $0$.</p>
+<p><strong>The integrality class.</strong> Left multiplication by $-e_t$ is the scalar $-1$ on the two ideals; on the centre the action is the conjugation, and $-e_t$ is central, so it acts by $+1$. The centre therefore belongs to the integer class, as it must for spin $0$.</p>
+<p><strong>The triviality.</strong> The kernel of the action is the whole of $G$, since every unit acts as the identity. The centre is the only carrier on which the action has a nonzero kernel.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>reading</th>
+<th>value on $\mathbb{C}e_t$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the weight string</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>the highest weight, that is the spin</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>the quadratic element</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>the sign of $-e_t$</td>
+<td>$+1$</td>
+</tr>
+<tr>
+<td>the kernel of the action</td>
+<td>$G$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>The spin-zero carrier of $\mathbb{B}$ is the centre $\mathbb{C}e_t$, and there is exactly one. The conjugation fixes it pointwise and its derived form kills it, so the module is trivial; the fixed space of $G$ is exactly the centre, so a trivial carrier is a complex line inside a complex line, which is the line itself.</p>
+<p>The carrier is not a Peirce line. Every corner of a complete family is an idempotent of rank one, and no corner contains a nonzero central element, so the centre has no companion nilpotent, no coordinate vector and no weight string of the form $\pm$. Its readings are the weight $0$, the spin $0$, the value $0$ of the quadratic element and the sign $+1$ of $-e_t$.</p>
+<p>Read over the reals the centre contains a circle of invariant real lines, all trivial; they are the same carrier read in a smaller category and are not counted separately.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$</td>
+<td>the biquaternion algebra, $M_2(\mathbb{C})$, complex dimension four</td>
+</tr>
+<tr>
+<td>$e_t,\vec e_x,\vec e_y,\vec e_z$</td>
+<td>the units, $e_t^2=e_t$ and $\vec e_k^{2}=-e_t$</td>
+</tr>
+<tr>
+<td>$G=\mathrm{U}(2)$</td>
+<td>the group of unitary units</td>
+</tr>
+<tr>
+<td>$\operatorname{Ad}_u(X)=uXu^{*}$</td>
+<td>the conjugation by a unit</td>
+</tr>
+<tr>
+<td>$\operatorname{ad}_Y(X)=[Y,X]$</td>
+<td>the commutator, the derived form of the conjugation</td>
+</tr>
+<tr>
+<td>$\mathbb{C}e_t$</td>
+<td>the centre, the fixed space of $G$, the spin-zero carrier</td>
+</tr>
+<tr>
+<td>$\tilde S_k=\tfrac12 i\vec e_k$</td>
+<td>the Hermitian generators</td>
+</tr>
+<tr>
+<td>$C=\sum_k\tilde S_k^{2}=\tfrac34e_t$</td>
+<td>the quadratic element</td>
+</tr>
+<tr>
+<td>$\mathcal{V}_1$</td>
+<td>the trivial type, of complex dimension one</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_{\pm}$, $\mathbb{B}_{st}$</td>
+<td>a complete family and its four Peirce lines</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-carriers-of-the-biquaternion-algebra.html">The Carriers of the Biquaternion Algebra</a>, for the definition of a carrier, the table of the three types and the completeness of the count.</li>
+<li><a href="the-spin-of-a-carrier.html">The Spin of a Carrier</a>, for the spin as a function of the type and the three values $0,\tfrac12,1$.</li>
+<li><a href="the-weights-of-a-carrier.html">The Weights of a Carrier</a>, for the three spectra, the quadratic element and the integrality class.</li>
+<li><a href="subspaces-and-decompositions-of-the-biquaternion-algebra.html">Subspaces and Decompositions of the Biquaternion Algebra</a>, for the centre among the six remarkable subspaces and the decompositions cut by the conjugations.</li>
+<li><a href="the-peirce-decomposition-of-the-biquaternion-algebra.html">Peirce Decompositions of the Biquaternion Algebra</a>, for the complete family, the four corners and the reason the centre lies in none of them.</li>
+<li><a href="the-companion-nilpotents-of-the-biquaternion-algebra.html">The Companion Nilpotents of the Biquaternion Algebra</a>, for the companion corner and the coordinate vector of a Peirce carrier.</li>
+<li><a href="the-spin-half-carriers.html">The Spin-Half Carriers</a>, for the sphere of minimal left ideals.</li>
+<li><a href="the-spin-one-carriers.html">The Spin-One Carriers</a>, for the two traceless parts and the four halves.</li>
+<li><a href="the-tensor-square-of-the-adjoint-module.html">The Tensor Square of the Adjoint Module</a>, for the trivial summand beside the adjoint one.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
