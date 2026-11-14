@@ -1,0 +1,932 @@
+# __The Rest Frame and the Exceptional Point__
+
+## Introduction
+
+**This entry reads the third of the five parts of the tenth section: the stratum on which the norm survives and the spectral splitting does not.**
+
+$$
+\Sigma_{10}=\{N\neq0,\ B^{2}=0\},\qquad N=Q_t^{2}+B^{2},\qquad B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}.
+$$
+
+**The predicates are the ones the partition entry named.** The norm $N$ asks whether the element has an invariant magnitude. The vector square $B^{2}$ asks whether its two eigenvalues are separated. On this stratum the first answer is yes and the second is no, and the two answers do not conflict: on the cone the second predicate fails by hypothesis, and the first then reduces to the single condition $Q_t\neq0$.
+
+**The first claim is that invertibility and spectral separation are independent.** An element here is a unit — it has an inverse, it generates a flow, it admits a logarithm and a polar decomposition — and it has no second eigenvalue. Everything the algebra does with units it still does here; what fails is the one operation that needs two distinct eigenvalues, namely the eigenbasis.
+
+**The second claim is that this stratum has two faces and the predicates cannot see the difference.** The scalar line $\tilde Q=Q_te_t$ is semisimple: the eigenvalue is repeated and the element is diagonalisable. The Jordan part $\tilde Q=Q_te_t+\vec\Upsilon$ with $\vec\Upsilon^{2}=0$ is defective: the eigenvalue is repeated and the element is a single Jordan block. Both satisfy $N\neq0$ and $B^{2}=0$. The split is by the minimal polynomial, and it is the one place in the arrangement where a sector's own interior matters more than its boundary.
+
+**The third claim is that the scalar line is exactly the centre of the algebra.** The semisimple face of the stratum is the centre minus the origin, and not a slice chosen inside it. The consequence is sharp: on the scalar line left multiplication is a scalar operator with a four-dimensional eigenspace, so no basis is preferred, and the frame is not a function of the element.
+
+**The fourth claim is that the Jordan part is the exceptional point, and that its three symptoms are three theorems.** The eigenvalues have coalesced, the eigenbasis has gone, and what survives in its place is a flag. The inverse has a double pole, the exponential is truncated to a term linear in the parameter, and the defect is a direction rather than a magnitude.
+
+**The fifth claim is that the material share of the stratum is one real line.** The vector square is a sum of three real squares on the real slice, so it is definite, so it has no non-zero isotropic vector: no real momentum has $B^{2}=0$ except the momentum at rest. The rest frame is material and the exceptional point is not, and the difference is a sign of a sum of squares.
+
+**The sixth claim is that the stratum has the polar word and lacks the eigenbasis, and that this is the exact complement of the massless stratum.** The two mixed strata are the two ways for the two descriptions to fail, and each fails where the other holds.
+
+**The interpretation labels continue the section's sequence.** The partition entry carries I.10.a to I.10.l and the mass-in-motion entry carries I.10.m to I.10.x. This entry carries I.10.y and I.10.z, and then two-letter suffixes I.10.aa onwards, so that the letters of the section are exhausted in a stated order rather than restarted in silence.
+
+**Nothing below is a model of a particle.** The stratum is cut on the algebra by two equations, and each name is a reading of the part of it that matter or a complexified momentum reaches. §*The Limits* states what the readings do not carry.
+
+## The Source Table
+
+| Mathematical Content | Source Mathematical Article |
+| --- | --- |
+| the definition, the five descriptions, the geometry, the two regimes, the centraliser, the Peirce data, the multiplication and inversion, the relation to the two cones | [The N-Regular, Spectrally Degenerate Sector](../articles_maths/the-n-regular-spectrally-degenerate-sector.html) |
+| the Jordan basis, the canonical flag and the equation of the sector | [The Jordan Basis of a Spectrally Degenerate Biquaternion](../articles_maths/the-jordan-basis-of-a-spectrally-degenerate-biquaternion.html) |
+| the characteristic polynomial, the repeated eigenvalue and the discriminant | [The Spectrum](../articles_maths/the-spectrum.html) |
+| the two predicates, the independence of the cones and the chain of invariants | [Relations between the N Norm and Spectral Regularity and Degeneracy](../articles_maths/relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html) |
+| the Peirce corners, the corner rule and the off-diagonal nilpotents | [The Peirce Decomposition of the Biquaternion Algebra](../articles_maths/the-peirce-decomposition-of-the-biquaternion-algebra.html) |
+| the modulus, the unit factor and the polar word on the whole N-regular part | [The Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html) |
+| the multiplicative norm, the unit group and the null cone | [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
+| the rank of left and right multiplication, the annihilators and the two-sided operator | [The Four General Products and Their Relations over the Biquaternion Algebra](../articles_maths/the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html) |
+| the exponential and the logarithm in the degenerate regimes | [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html) |
+| the exponential as a Fourier kernel, the root supplied by the element and the Hermitian norm of the flow | [Relations between the Biquaternion Exponential and the Fourier Kernel](../articles_maths/relations-between-the-biquaternion-exponential-and-the-fourier-kernel.html) |
+
+**The first row owns everything structural.** This entry does not reprove the sector theorems: it states them, verifies the witnesses numerically, and reads them. The remaining rows supply the four things the entry uses and does not build — the Jordan basis and its flag, the Peirce corners, the polar word, and the exponential with its Hermitian norm.
+
+## The Results in Brief
+
+### The Sector
+
+**The stratum is the spectral cone minus the null cone.**
+
+$$
+\Sigma_{10}=\mathcal S\setminus\mathcal N,\qquad
+\mathcal S=\{B^{2}=0\},\qquad
+\mathcal N=\{N=0\}.
+$$
+
+**Five descriptions coincide.** An element of the stratum is: a unit with $B^{2}=0$; an element with $B^{2}=0$ and a non-zero scalar part; a scalar times a unipotent, $Q_t(e_t+\vec\Upsilon)$ with $\vec\Upsilon^{2}=0$; a non-zero complex multiple of a unipotent element; and a unit whose two eigenvalues coincide at $Q_t$.
+
+**The dimension drops by two from the open stratum.** The stratum has complex dimension three and real dimension six, against four and eight for $\Sigma_{11}$. It is Zariski-open inside the cone $\mathcal S$, it is connected, and it is a cone with its apex removed.
+
+**Over 196 random elements**, drawn with $Q_t$ complex and $\vec Q$ a random isotropic vector, the two identities
+
+$$
+N=Q_t^{2},\qquad (\tilde Q-Q_te_t)^{2}=0
+$$
+
+held to $3.6\times10^{-15}$.
+
+### The Two Regimes
+
+**The stratum splits by the vector part.**
+
+$$
+\Sigma_{10}=\Sigma_{10}^{\mathrm{s}}\sqcup\Sigma_{10}^{\mathrm{J}},\qquad
+\Sigma_{10}^{\mathrm{s}}=\{Q_te_t\},\qquad
+\Sigma_{10}^{\mathrm{J}}=\{Q_te_t+\vec\Upsilon,\ \vec\Upsilon\neq0\}.
+$$
+
+| regime | dimension | minimal polynomial | centraliser | spectral idempotent |
+| --- | --- | --- | --- | --- |
+| the scalar line $\Sigma_{10}^{\mathrm{s}}$ | $1$ complex | $X-Q_t$ | all of $\mathbb{B}$ | $e_t$, unique; its refinement is not |
+| the Jordan part $\Sigma_{10}^{\mathrm{J}}$ | $3$ complex | $(X-Q_t)^{2}$ | the dual numbers $\mathbb{C}[\tilde Q]$ | none |
+
+**The split is invisible to the two predicates.** Both faces have $N\neq0$ and $B^{2}=0$, so no truth value separates them. What separates them is the minimal polynomial: for the scalar line it is linear, for the Jordan part it is the square of a linear factor.
+
+**The scalar line is closed in the stratum and the Jordan part is open and dense in it.** A sequence of Jordan elements with $\vec\Upsilon\to0$ converges to a point of the scalar line, and the limit is not in the Jordan part.
+
+### The Centre Is the Scalar Line
+
+**The semisimple face of the stratum is the first carrier.**
+
+$$
+\Sigma_{10}\cap\mathbb{B}_{C}=\mathbb{B}_{C}\setminus\{0\}=\Sigma_{10}^{\mathrm{s}},\qquad
+\mathbb{B}_{C}=\mathbb{C}e_t .
+$$
+
+**The identification is two-sided.** Every non-zero central element has $B^{2}=0$ and $N=Q_t^{2}\neq0$, so every one of them is in the stratum; and every element of the scalar line is central. The Jordan part is disjoint from the centre because $\vec\Upsilon\neq0$ is not central. So the stratum's two faces separate along the carrier, and the carrier holds the semisimple face and none of the defective one.
+
+**Left multiplication on the centre is a scalar operator.** For $\tilde Q=Q_te_t$ the operator $L_{\tilde Q}$ is $Q_t$ times the identity on a four-dimensional space, so its eigenspace is the whole algebra. In any Peirce basis the matrix is $Q_tI$, so $L_{\tilde Q}-Q_tI$ has rank zero and its kernel is the whole algebra.
+
+### The Centraliser Is the Dual Numbers
+
+**On the Jordan part the centraliser is a plane, and it is the dual numbers.**
+
+$$
+\mathbb{C}[\tilde Q]=\{ae_t+b\vec\Upsilon\}=\mathbb{C}[\varepsilon]/(\varepsilon^{2}),\qquad
+[X,\tilde Q]=0\iff \vec x\times\vec\Upsilon=0 .
+$$
+
+**The plane contains two idempotents and no more.** From $a^{2}=a$ and $2ab=b$ one gets $(a,b)=(0,0)$ or $(1,0)$. So $0$ and $e_t$ are the only idempotents commuting with $\tilde Q$, and no non-trivial pair summing to $e_t$ is attached to the element.
+
+**Over 120 parallel tests the commutator vanished and over 60 non-parallel tests it did not**, the vector part of the test element being drawn at random.
+
+### The Peirce Form Is One Block
+
+**A chosen idempotent gives a Peirce form and a block.**
+
+$$
+e\tilde Qe=Q_te,\qquad
+e\tilde Qf=\vec\Upsilon,\qquad
+f\tilde Qe=0,\qquad
+f\tilde Qf=Q_tf,\qquad f=e_t-e,
+$$
+
+so in the Peirce coordinates of the pair the element is
+
+$$
+\mathsf M^{Q}=\begin{pmatrix}Q_t&1\\0&Q_t\end{pmatrix}=J_2(Q_t).
+$$
+
+**The $1$ is a normalisation, not an eigenvalue.** It is the coefficient of $\vec\Upsilon$ in the sum $\tilde Q=Q_te+1\cdot\vec\Upsilon+0\cdot\vec X+Q_tf$, and it can be changed by rescaling the corner generator while the element stays fixed.
+
+**The form is gauge-invariant and the gauge is real.** The pair $(e,f)$ and the corner vector $\vec X$ are not functions of $\tilde Q$; the four products above are. Over forty random conjugations by units of norm one, the transported Peirce form closed to $5.1\times10^{-14}$.
+
+### The Powers, the Inverse and the Flow
+
+**The power is a two-term formula with a coefficient that counts.**
+
+$$
+\tilde Q^{n}=Q_t^{n}e_t+nQ_t^{n-1}\vec\Upsilon,\qquad
+\tilde Q^{-1}=\frac{1}{Q_t}e_t-\frac{1}{Q_t^{2}}\vec\Upsilon .
+$$
+
+**The inverse stays in the stratum and the power stays in the stratum.** The inverse has the same nilpotent direction and the reciprocal scalar part; the $n$-th power has the same direction and coefficient $n$. Checked to $8.0\times10^{-14}$ at $n=10$ for the power and to $5.6\times10^{-17}$ for the inverse.
+
+**The flow stays and the product leaves.** The exponential is the truncated kernel
+
+$$
+e^{\theta\tilde Q}=e^{\theta Q_t}\left(e_t+\theta\vec\Upsilon\right),
+$$
+
+which is in the stratum for every $\theta$; but a product of two elements of the Jordan part with different nilpotent directions is generically in $\Sigma_{11}$.
+
+### The Material Part Is a Line
+
+**The real slice meets the stratum on the scalar line only.**
+
+$$
+\Sigma_{10}\cap\mathbb{B}_{\Phi}=\left\{i\,q'_te_t\ :\ q'_t\in\mathbb{R}^{\times}\right\},
+\qquad
+B^{2}=\lvert\vec p\rvert^{2}\ \text{on the real slice}.
+$$
+
+**The reason is a sign.** The vector square on a real vector part is a sum of three real squares, so it is a definite form, and a definite form has no non-zero isotropic vector. The Jordan part needs a complex isotropic vector, and no real momentum is one.
+
+**Over 2000 random real momenta** no element had $B^{2}=0$ other than those with $\vec p=0$, which the sample did not contain.
+
+## The Sector
+
+### Two Predicates That Coincide
+
+**The two conditions are not independent here, and this is the point of the stratum.**
+
+$$
+B^{2}=0\ \Longrightarrow\ N=Q_t^{2},
+\qquad
+\text{so on }\mathcal S:\quad N\neq0\iff Q_t\neq0 .
+$$
+
+**Norm-regularity becomes a condition on the scalar part.** On the cone, invertibility is the survival of the scalar part and nothing else. That is why the stratum is described by two equations rather than by three: the element is a unit exactly when the scalar part is non-zero, and the scalar part is the eigenvalue.
+
+**The discriminant of the characteristic polynomial vanishes on the stratum and nowhere else on the cone.**
+
+$$
+X^{2}-2Q_tX+N,\qquad \Delta=4Q_t^{2}-4N=-4B^{2}.
+$$
+
+**So the stratum is the locus of invertible elements with vanishing discriminant.** In the $2\times2$ matrix images of the algebra the same sentence reads: the determinant is non-zero and the discriminant is zero. The two invariants are not the same invariant, and the stratum is the proof: one of them is non-zero while the other vanishes.
+
+**The transversality is generic on the Jordan part and undefined on the scalar line.**
+
+$$
+\nabla N=2(Q_t,\vec Q),\qquad \nabla B^{2}=2(0,\vec Q).
+$$
+
+On the Jordan part both gradients are non-zero and they are proportional only if $Q_t=0$, which cannot happen here; so the two hypersurfaces cross transversally along $\Sigma_{10}^{\mathrm{J}}$. On the scalar line the gradient of $B^{2}$ vanishes, the cone is singular, and the question of transversality does not arise.
+
+### Five Descriptions of One Condition
+
+| description | statement | what it fixes |
+| --- | --- | --- |
+| predicate | $N\neq0$, $B^{2}=0$ | the two invariants |
+| cone difference | $\mathcal S\setminus\mathcal N$ | the position among the strata |
+| scalar part | $Q_t\neq0$ on $\mathcal S$ | the eigenvalue |
+| unipotent form | $Q_t(e_t+\vec\Upsilon)$, $\vec\Upsilon^{2}=0$ | the defect and its direction |
+| unit with one eigenvalue | spectrum $\{Q_t\}$ with multiplicity two | the spectral type |
+
+**The five descriptions are equivalent and each names a different datum.** The pair $(Q_t,\vec\Upsilon)$ is determined by the element — the scalar part gives $Q_t$ and the vector part gives $\vec\Upsilon$ — so the unipotent form is a bijection and not a parametrisation with a kernel.
+
+**The bijection is between the stratum and a product.**
+
+$$
+\mathbb{C}^{\times}\times\{\vec\Upsilon\in\mathbb{C}^{3}:\vec\Upsilon^{2}=0\}\longrightarrow\Sigma_{10},\qquad
+(Q_t,\vec\Upsilon)\mapsto Q_t(e_t+\vec\Upsilon).
+$$
+
+The second factor is the isotropic cone in $\mathbb{C}^{3}$, of complex dimension two, and the first factor is a punctured complex line, of dimension one. The count is three, and it is the count the geometry gives.
+
+### The Geometry: a Cone With the Apex Removed
+
+**The stratum is a complex cone of dimension three with its apex deleted.**
+
+$$
+\dim_{\mathbb{C}}\Sigma_{10}=3,\qquad
+\dim_{\mathbb{R}}\Sigma_{10}=6 .
+$$
+
+**The cone it sits in is the cone over a conic.** The set $\mathcal S=\{B^{2}=0\}$ is the cone in $\mathbb{C}^{4}$ over the smooth conic $\{Q_x^{2}+Q_y^{2}+Q_z^{2}=0\}\subset\mathbb{P}^{2}$, and its vertex is the scalar line. That line is exactly the singular locus of the cone: the gradient of $B^{2}$ vanishes there and nowhere else. The stratum contains the singular locus minus the origin, since a point of the scalar line with $Q_t\neq0$ is in the stratum.
+
+**The stratum is stable under every non-zero complex scalar and under no zero scalar.** Multiplication by $0$ sends it to the origin, which is not in the stratum. So it is a cone whose apex has been removed, and the apex belongs to its closure: the closure of the stratum is the whole cone $\mathcal S$, and the part of the closure it does not contain is the nilpotent stratum $\Sigma_{00}$.
+
+**This is where the split in §*The Two Regimes* comes from.** The scalar line is the vertex of the cone and the Jordan part is the smooth part. A stratum whose interior contains a singularity has two behaviours, and this one does: the semisimple face is the vertex and the defective face is the smooth part.
+
+### The Split the Predicates Cannot See
+
+**A sector is a pair of truth values, and a truth value is not an interior.**
+
+$$
+\Sigma_{10}=\underbrace{\Sigma_{10}^{\mathrm{s}}}_{\text{semisimple}}\ \sqcup\ \underbrace{\Sigma_{10}^{\mathrm{J}}}_{\text{defective}},
+\qquad
+\text{both with }N\neq0,\ B^{2}=0 .
+$$
+
+**The two faces are separated by the minimal polynomial and by nothing else.**
+
+| question | the scalar line | the Jordan part |
+| --- | --- | --- |
+| minimal polynomial | $X-Q_t$ | $(X-Q_t)^{2}$ |
+| diagonalisable | yes | no |
+| idempotents in the centraliser | all of them | $0$ and $e_t$ only |
+| Peirce matrix | $Q_tI$ | $J_2(Q_t)$ |
+| what survives instead | every Peirce pair | one flag |
+| dimension | $1$ complex | $3$ complex, open dense |
+
+**The pair of numbers $(N\neq0,\,B^{2}=0)$ is the same in both columns.** The chain of invariants runs from the element to its spectrum and stops: the predicates see the eigenvalue and not the multiplicity of the minimal polynomial. This is the sharpest sense in which the partition entry's four names are coarse: the fourth name in the table is not one behaviour but two.
+
+**The identity is in the stratum and it is semisimple.** $\tilde Q=e_t$ has $Q_t=1$, a repeated eigenvalue, and no defect at all. So the degenerate sector contains the element that does nothing, and it contains it in its semisimple face. Any claim of the form *spectrally degenerate means non-diagonalisable* is refuted by one element.
+
+### Connected, and the Phase Loop
+
+**The stratum is connected.** It is $\mathbb{C}^{\times}$ times the punctured isotropic cone, and both factors are connected. The whole stratum is therefore one piece, in contrast with the four names, which are four pieces.
+
+**It is not simply connected, and the loop that shows it is the phase of the scalar part.**
+
+$$
+\tilde Q(s)=e^{2\pi is}\,Q,\qquad 0\le s\le 1,\qquad Q\in\Sigma_{10}\ \text{fixed}.
+$$
+
+Along the loop the norm is
+
+$$
+N(\tilde Q(s))=e^{4\pi is}N(Q),
+$$
+
+which is non-zero for every $s$, so the loop lies in the stratum. Its image under $N$ winds twice around the origin; a loop of non-zero winding in $\mathbb{C}^{\times}$ is not null-homotopic; hence the loop in the stratum is not null-homotopic either.
+
+**The reading is that the only loop in the stratum is a phase, and that the norm sees it doubled.** The scalar part is a circle, the norm is its square, and a full turn of the element is two turns of the invariant. The stratum has one circular direction and nothing else that the fundamental group can see; the open stratum $\Sigma_{11}$ had the same doubling, produced by the vector part instead of the scalar part.
+
+## The Scalar Line
+
+### The Element and What Commutes With It
+
+**On the scalar line the element is central and semisimple.**
+
+$$
+\tilde Q=Q_te_t,\qquad
+\tilde Q\tilde X=\tilde X\tilde Q\ \text{for every }\tilde X,\qquad
+p_{\tilde Q}(X)=X-Q_t .
+$$
+
+**Everything commutes with it, so its centraliser is the whole algebra.** The scalar line is the centre minus the origin, and the centre is a carrier of the algebra: it is invariant and irreducible under inner conjugation, and the action on it is trivial.
+
+**The element and its inverse are on the line, and so is every power.**
+
+$$
+\tilde Q^{n}=Q_t^{n}e_t,\qquad
+\tilde Q^{-1}=Q_t^{-1}e_t,
+$$
+
+so the line is closed under multiplication and inversion, and it is a subgroup of the unit group isomorphic to $\mathbb{C}^{\times}$. It is the only part of the stratum that is.
+
+### The Two-Term Writing Is Not Unique
+
+**Every complete pair of idempotents gives a two-term writing with equal coefficients.**
+
+$$
+\tilde Q=Q_t\tilde\Pi_1+Q_t\tilde\Pi_2,\qquad
+\tilde\Pi_1+\tilde\Pi_2=e_t,\qquad
+\tilde\Pi_1\tilde\Pi_2=0,
+$$
+
+and the pair is not determined by $\tilde Q$. The canonical Peirce decomposition attached to the element has one term, $\tilde Q=Q_te_t$; every two-term refinement is a choice.
+
+**This is the sharpest warning in the arrangement.** On the open stratum the two-term writing is unique; on the massless stratum it is unique with one coefficient zero. Here it exists, it is not unique, and both coefficients are the same number. The non-uniqueness is not a defect of the construction: it is what a repeated coefficient means.
+
+**The numerical check is trivial and worth stating.** A random idempotent $e$, its complement $f=e_t-e$, and the sum $Q_t(e+f)=Q_te_t$ agree to machine precision; the Peirce matrix of $L_{\tilde Q}$ in the basis $(e,\vec X,\vec Y,f)$ is $Q_tI$ with zero remainder, and the rank of $L_{\tilde Q}-Q_tI$ is zero.
+
+### The Operator Is a Scalar
+
+**The operator reading is the strongest statement available on the line.**
+
+$$
+L_{\tilde Q}=Q_t\,\mathrm{id},\qquad
+\ker(L_{\tilde Q}-Q_t\,\mathrm{id})=\mathbb{B},\qquad
+\dim_{\mathbb{C}}\ker=4 .
+$$
+
+**A four-dimensional eigenspace for a repeated eigenvalue means the operator is a scalar.** It is not merely diagonalisable: it is blind to every basis. Every vector is an eigenvector, every basis is an eigenbasis, and no direction is selected.
+
+**The same holds on the right, and for the same reason.** $R_{\tilde Q}=Q_t\,\mathrm{id}$, so the two-sided reading gives nothing beyond the scalar. The stratum's semisimple face is the one place where the two one-sided operators both collapse to one number, and that is what makes it the carrier rather than a point of the stratum.
+
+### The Frame Is Not a Function of the Momentum
+
+**A rest momentum is the scalar line at an imaginary point.**
+
+$$
+\tilde P_\Phi=i\frac{E}{c}e_t=i\,mc\,e_t,\qquad
+\vec p=0,\qquad
+B^{2}=0,\qquad
+N=-m^{2}c^{2},\qquad
+Q_t=imc .
+$$
+
+**The two light-cone frequencies coincide.**
+
+$$
+\lambda_+=\lambda_-=i\,mc .
+$$
+
+**What survives is a scale and a phase, and neither carries an orientation.** The modulus is the mass; the phase is the causal label, fixed to $i$ on the positive-energy timelike slice. The element acts as one number on every module, so a state module is multiplied by that number uniformly: the rest frame carries the rest frequency and no direction.
+
+**The frame is therefore not a function of the momentum.** A momentum at rest does not select a frame; every frame is equally available, and the two-term writing is a choice made from outside. This is stronger than the statement that the writing is not unique: the operator has no preferred basis at all, because it has all of them.
+
+**The limit is continuous in the element and discontinuous in the frame.** As $\vec p\to0$ the element tends to the scalar line and the two eigenvalues coalesce. The eigenbasis does not tend anywhere: on the open stratum it is built from the root $\vec Q/B$, and $B\to0$ makes the root diverge. There is a limit of elements and no limit of bases.
+
+## The Jordan Part
+
+### The Element and the Defect
+
+**Off the scalar line the element is defective.**
+
+$$
+\tilde Q=Q_te_t+\vec\Upsilon,\qquad
+\vec\Upsilon^{2}=0,\qquad
+\vec\Upsilon\neq0,\qquad
+p_{\tilde Q}(X)=(X-Q_t)^{2}.
+$$
+
+**The minimal polynomial is the square of a linear factor and the element is not that factor.** So the element is a single Jordan block of size two: one eigenvalue, one eigendirection, and no diagonal form.
+
+**The defect is a direction and not a magnitude.** Whether the element is defective depends on one thing only, namely whether $\vec\Upsilon$ vanishes; the size of $\vec\Upsilon$ is a datum of the element and not of its type. Two elements with the same scalar part and different defects are different elements of the same spectral type, and the type is decided by a vanishing. A quantity whose type is decided by whether it vanishes is a direction: the algebra distinguishes the line and does not distinguish the points along it.
+
+**The defect is not visible to the norm.** $N=Q_t^{2}$ does not depend on $\vec\Upsilon$ at all. An element of the Jordan part and the scalar element with the same scalar part have the same norm, the same eigenvalue, the same inverse's norm, and different minimal polynomials.
+
+### What Commutes With It: the Dual Numbers
+
+**The centraliser is the plane spanned by the element and the unit, and it is the dual numbers.**
+
+$$
+\mathbb{C}[\tilde Q]=\{ae_t+b\vec\Upsilon\}\cong\mathbb{C}[\varepsilon]/(\varepsilon^{2}),\qquad
+\varepsilon^{2}=0 .
+$$
+
+**The computation is one cross product.** For $X=x_0e_t+\vec x$,
+
+$$
+[X,\tilde Q]=2\,\vec x\times\vec\Upsilon,
+$$
+
+so $X$ commutes with $\tilde Q$ exactly when $\vec x$ is a multiple of $\vec\Upsilon$. The centraliser is two-dimensional over $\mathbb{C}$ instead of four.
+
+**A dual-number algebra has two idempotents.** Solving $a^{2}=a$ and $2ab=b$ gives $(0,0)$ and $(1,0)$: the zero and the unit. There is no non-trivial idempotent in the centraliser, so there is no non-trivial Peirce decomposition attached to the element, and there is no spectral decomposition. This is the failure, stated exactly: the decomposition needs two idempotents that commute with the element, and the supply is exhausted by $0$ and $e_t$.
+
+**The nilpotent is carried by the vector part, and the vector part is what the stratum constrains.** $\vec\Upsilon$ is a pure vector with $\vec\Upsilon^{2}=0$, so it is a nilpotent of index two; its direction is a point of the punctured isotropic cone, which is the second factor of the parameter space in §*Five Descriptions of One Condition*.
+
+### The Peirce Form and the Block
+
+**A Peirce decomposition still exists; it is only not attached to the element.**
+
+$$
+e\tilde Qe=Q_te,\qquad
+e\tilde Qf=\vec\Upsilon,\qquad
+f\tilde Qe=0,\qquad
+f\tilde Qf=Q_tf,
+$$
+
+with $e$ an idempotent satisfying $\vec\Upsilon=e\vec\Upsilon f$ and $f=e_t-e$. In these coordinates
+
+$$
+\mathsf M^{Q}=\begin{pmatrix}Q_t&1\\0&Q_t\end{pmatrix}=J_2(Q_t).
+$$
+
+**The semisimple part is diagonal and the nilpotent part sits in one mixed corner.** Compare the open stratum, where the element is $\operatorname{diag}(\lambda_+,\lambda_-)$ and both mixed corners are filled by the corner nilpotents: here one corner holds the defect and the other holds zero. The asymmetry is the defect.
+
+**The block is the same for every admissible choice of $e$.** The pair is a gauge and the block is the invariant; the only thing the gauge moves is the scale of the corner generator, and that is the $1$ in the corner. Over forty random conjugations the four products of the transported pair agreed with the transported defect to $5.1\times10^{-14}$.
+
+**The standard representative makes the choice concrete.**
+
+$$
+\tilde Q=Q_te_t+c(\vec e_x+i\vec e_y),\qquad
+e=\frac{1}{2}(e_t+i\vec e_z),\qquad
+f=\frac{1}{2}(e_t-i\vec e_z),\qquad
+\vec X=\frac{1}{2}(\vec e_x-i\vec e_y),
+$$
+
+and the four products close to zero remainder. Every other non-zero isotropic direction is this one transported by a unit of norm one, which is what the conjugation check confirms; the size of $\vec\Upsilon$ travels with the element and not with the direction.
+
+### The Flag, Not the Basis
+
+**What survives when the eigenbasis fails is a flag.**
+
+$$
+\{0\}\subset\mathbb{C}\vec\Upsilon\subset\ker L_{\vec\Upsilon}\subset\mathbb{B},
+$$
+
+with $\vec\Upsilon$ spanning the line and the kernel a plane. The line is invariant under the flow, the plane is invariant, and there is no canonical complement of the line inside the plane.
+
+**The flag is the invariant and the splitting of the flag is a choice.** A Peirce pair $(e,f)$ chooses a complement of the line, and a change of pair changes the complement; the flag itself does not depend on the choice. This is the exact replacement for the eigenbasis: one nested pair of subspaces instead of four independent eigenvectors.
+
+**The reading is that a defective element retains a nested structure and loses an unordered one.** An eigenbasis is a set; a flag is a chain. A set can be permuted and a chain cannot, and the loss of the permutation is the loss of the second eigenvalue.
+
+### The Exchange That Has Nothing to Exchange
+
+**On the open stratum the element carried an involution of its labelling.** Replacing the chosen square root $B$ by $-B$ sent $\vec{Ζ}$ to $-\vec{Ζ}$, exchanged the two idempotents and exchanged the two eigenvalues; the element was unchanged and the two names for its spectrum were swapped.
+
+**Here the involution has no fixed content to act on.**
+
+$$
+B^{2}=0\ \Longrightarrow\ B=0\ \Longrightarrow\
+\vec{Ζ}\ \text{is undefined},\qquad
+\lambda_+=\lambda_-=Q_t .
+$$
+
+**What survives is the sign of the defect, and the two signs are two elements rather than one element in two names.** $Q_t(e_t+\vec\Upsilon)$ and $Q_t(e_t-\vec\Upsilon)$ differ; neither is a relabelling of the other, each has its own adapted pair, and each has the block $J_2(Q_t)$ relative to that pair. So the freedom that the open stratum spent on exchanging two labels is spent here on nothing, and the sign that remains is the sign of a direction on a line.
+
+**The reading is that a parity needs two eigenvalues and a direction needs only one.** The exchange of labels is a symmetry of a two-term writing; when the writing collapses to one term the symmetry has no object, and the object that replaces it is the sign of the nilpotent, which is a direction on a line and not a permutation of two lines.
+
+### The Two Annihilators
+
+**The element is a unit, so neither multiplication has a kernel as an operator on the algebra.**
+
+$$
+\ker L_{\tilde Q}=\ker R_{\tilde Q}=\{0\},\qquad
+\operatorname{rank}L_{\tilde Q}=\operatorname{rank}R_{\tilde Q}=4 .
+$$
+
+**The defect is in the eigenvalue and not in the invertibility.** This is the point that ideal theory cannot see: an ideal-theoretic statement about left multiplication can detect a zero divisor and cannot detect a repeated eigenvalue. On $\Sigma_{10}$ and on $\Sigma_{11}$ alike both multiplications are bijections.
+
+**The nilpotent part, by contrast, does have a kernel.**
+
+$$
+\ker L_{\vec\Upsilon}=\{X:\vec\Upsilon X=0\},\qquad
+\dim_{\mathbb{C}}\ker L_{\vec\Upsilon}=2,\qquad
+L_{\vec\Upsilon}^{2}=0,
+$$
+
+and the same holds on the right. So $L_{\tilde Q}=Q_t\mathrm{id}+L_{\vec\Upsilon}$ is a scalar plus a square-zero map of rank two: one eigenvalue, four-dimensional space, two Jordan blocks of size two.
+
+### No Joint Eigenbasis
+
+**The eigenbasis of the open stratum is a joint eigenbasis of the two one-sided actions, and it is exactly what fails here.**
+
+$$
+L_{\tilde Q}\big|_{\text{basis}}=\operatorname{diag}(\lambda_+,\lambda_+,\lambda_-,\lambda_-),\qquad
+R_{\tilde Q}\big|_{\text{basis}}=\operatorname{diag}(\lambda_+,\lambda_-,\lambda_+,\lambda_-).
+$$
+
+On the Jordan part the eigenvalue is one number, so both operators are $Q_t$ on their common eigenspace, and that common eigenspace is one line:
+
+$$
+\dim_{\mathbb{C}}\bigl(\ker(L_{\vec\Upsilon})\cap\ker(R_{\vec\Upsilon})\bigr)=1,
+\qquad
+\ker L_{\vec\Upsilon}\cap\ker R_{\vec\Upsilon}=\mathbb{C}\vec\Upsilon .
+$$
+
+**A basis of four joint eigenvectors does not exist, because there is one joint eigenvector.** The eigenspaces have dimension two each and their intersection has dimension one; four independent vectors cannot be found in a plane, and the joint condition cuts the plane to a line. The numerical check gives the two dimensions as $2$ and $2$ and the intersection as $1$.
+
+**The reading is precise: the two-sided structure is a spectrum with a frame, and the frame is the part that a joint basis expresses.** When the two eigenvalues separate, left multiplication carries both and right multiplication carries one on each ideal, and a basis exhibits both at once. When they coincide, the two readings of the basis agree on one line and disagree elsewhere, and no basis exhibits both.
+
+## Powers, Inverse, and the Two Poles
+
+### The Ladder in the Power
+
+**The powers are polynomial in the power and linear in the defect.**
+
+$$
+\tilde Q^{n}=Q_t^{n}e_t+nQ_t^{n-1}\vec\Upsilon,\qquad n\ge1 .
+$$
+
+**The coefficient $n$ is the rung index and not an eigenvalue.** It counts how many times the defect has been applied, and it is the same $n$ that appears in a Jordan chain. Checked at $n=2,3,4,7,10$; the error at $n=10$ was $8.0\times10^{-14}$.
+
+**Squaring keeps the stratum and doubles the coefficient.**
+
+$$
+\tilde Q^{2}=Q_t^{2}e_t+2Q_t\vec\Upsilon,\qquad
+B^{2}(\tilde Q^{2})=0,\qquad
+N(\tilde Q^{2})=Q_t^{4}=N(\tilde Q)^{2}.
+$$
+
+**The stratum is closed under powers and under the flow, and it is not closed under products.** The powers of an element keep its nilpotent direction; a product of two elements with different directions does not.
+
+### The Inverse and the Double Pole
+
+**The inverse is a two-term formula with a second-order coefficient.**
+
+$$
+\tilde Q^{-1}=Q_t^{-1}e_t-Q_t^{-2}\vec\Upsilon .
+$$
+
+**The two terms have different orders in the scalar part.** The diagonal term is of order $Q_t^{-1}$ and the nilpotent term of order $Q_t^{-2}$, so as a function of the scalar part the inverse has a double pole at $Q_t=0$, and the residue of the second-order term is the defect itself.
+
+**The inverse is in the stratum and it is checked.**
+
+$$
+B^{2}(\tilde Q^{-1})=0,\qquad
+N(\tilde Q^{-1})=Q_t^{-2}=N(\tilde Q)^{-1},
+$$
+
+with $\lvert B^{2}(\tilde Q^{-1})\rvert<3\times10^{-17}$, $\lvert N(\tilde Q^{-1})N(\tilde Q)-1\rvert=2.2\times10^{-16}$, and the formula agreeing with the computed inverse to $1.1\times10^{-16}$.
+
+**A single pole is what a projector gives and a double pole is what a defect gives.** That sentence is the whole of §*I.10.af* below, and it is the reason the inverse is stated here rather than with the powers.
+
+### Squaring and Products
+
+**Two elements with the same nilpotent direction multiply inside the stratum.**
+
+$$
+(Q_te_t+\vec\Upsilon)(Q'_te_t+\vec\Upsilon)=QQ'_te_t+(Q_t+Q'_t)\vec\Upsilon .
+$$
+
+**Two elements with different directions do not.**
+
+$$
+\Sigma_{10}\cdot\Sigma_{10}\subseteq\Sigma_{10}\cup\Sigma_{11},
+$$
+
+and both alternatives occur. Over 500 random pairs of Jordan elements with independently drawn isotropic directions, 480 left the stratum and landed in $\Sigma_{11}$; over 200 pairs sharing a direction, none left. A pair sharing a direction produces the scalar line exactly when $Q_t+Q'_t=0$, which is the case in which the coefficient of the defect vanishes.
+
+**The witness is worth writing out.**
+
+$$
+\tilde Q_2=e_t+\vec e_x+i\vec e_y,\qquad
+\tilde Q=e_t+i\vec e_x+\vec e_y,\qquad
+\tilde Q_2\tilde Q=(1-2i)e_t+(1+i)\vec e_x+(1+i)\vec e_y+2\vec e_z,
+$$
+
+with $B^{2}(\tilde Q_2)=B^{2}(\tilde Q)=0$, $N(\tilde Q_2)=N(\tilde Q)=1$, and $B^{2}(\tilde Q_2\tilde Q)=4+4i$, $N=1$. Both factors are defective, their product is a unit with two distinct eigenvalues, and the norm is preserved throughout — the product never approaches the null cone.
+
+### The Flow Stays and the Product Leaves
+
+**The exponential of an element of the stratum is in the stratum for every parameter.**
+
+$$
+e^{\theta\tilde Q}=e^{\theta Q_t}\left(e_t+\theta\vec\Upsilon\right),\qquad
+B^{2}\bigl(e^{\theta\tilde Q}\bigr)=0,\qquad
+N\bigl(e^{\theta\tilde Q}\bigr)=e^{2\theta Q_t}\neq0 .
+$$
+
+At $\theta=0.3$, $1$, $5$ the computed norm was $2.181472$, $13.463738$ and $442413.392$, and each equalled $e^{2\theta Q_t}$ to the printed digits, with $B^{2}$ at machine zero throughout.
+
+**So the stratum is flow-invariant and not product-invariant.** A one-parameter group generated by a member stays inside; two different members composed do not. The distinction is the difference between iterating one defect and composing two.
+
+## The Flow
+
+### The Truncated Exponential
+
+**There is no root on the stratum, and the exponential says so.**
+
+$$
+e^{\theta\tilde Q}=e^{\theta Q_t}\left(e_t+\theta\vec\Upsilon\right)
+=e^{\theta Q_t}e_t+\theta e^{\theta Q_t}\vec\Upsilon .
+$$
+
+**The kernel is not oscillatory.** On the open stratum the root $\vec U=\vec Q/B$ exists and the exponential is a rotation by the angle $B\theta$ about that axis. Here $B=0$, the root is undefined, the axis is undefined, and the second term grows linearly in $\theta$ instead of turning.
+
+**The two terms are a rate and a shear.** The first term is the scalar part transported; the second is the defect transported and multiplied by the elapsed parameter. There is no frequency, because there is no second eigenvalue to differ from the first and produce one.
+
+**The Fourier reading degenerates with the root.** A Fourier basis attached to an element is a basis of eigenvectors of $L_{\tilde Q}$ with oscillatory characters. There is no such basis here, so the transform exists and its characters do not oscillate in the defective direction.
+
+### The Hermitian Norm Is Polynomial
+
+**The Hermitian norm of the flow is quadratic in the parameter.**
+
+$$
+\bigl\langle e^{\theta\tilde Q}\bigr\rangle_{*}
+=\lvert e^{\theta Q_t}\rvert^{2}\left(1+\lvert\theta\rvert^{2}\lVert\vec\Upsilon\rVert^{2}\right),
+\qquad
+\lVert\vec\Upsilon\rVert^{2}=\sum_k\lvert\Upsilon_k\rvert^{2}\ge0 .
+$$
+
+**The parenthesis is exact and its form is the statement.** With $Q_t=2i$ and $\vec\Upsilon=\vec e_x+i\vec e_y$, so that $\lVert\vec\Upsilon\rVert^{2}=2$, the computed values at $\theta=0.5,1,2,4,8$ were $1.5$, $3$, $9$, $33$, $129$, and the formula $1+2\theta^{2}$ reproduces each of them exactly. For a complex scalar part the same parenthesis multiplies $\lvert e^{\theta Q_t}\rvert^{2}$, and the agreement held to $10^{-13}$ at $\theta=8$ where the norm is $1.4\times10^{11}$.
+
+**The growth is polynomial, and it is polynomial even when the scalar part is imaginary.** For $Q_t=2i$ the first factor is a pure phase of modulus one and the norm still grows as $1+2\theta^{2}$: the defect alone is a source of growth, and it needs no real part and no non-normality.
+
+**On a material element the growth cannot occur.** A material element has $B^{2}=\lvert\vec p\rvert^{2}$, which is zero only at $\vec p=0$, and there $\vec\Upsilon=0$ and the parenthesis is $1$. So the polynomial growth is a property of complexified elements only.
+
+### Two Sources of Non-Unitarity
+
+**The open stratum and this one fail unitarity for different reasons.**
+
+| stratum | source of growth | form of the growth |
+| --- | --- | --- |
+| $\Sigma_{11}$, complex eigenvalue | non-normality, $\lVert\vec U\rVert^{2}>1$ | exponential in the parameter |
+| $\Sigma_{10}$, Jordan part | defect, $\vec\Upsilon\neq0$ | polynomial, quadratic in the parameter |
+
+**The first is a tilted axis and the second is a coalesced one.** On the open stratum the growth comes from the axis of the element not being aligned with its Hermitian adjoint's; the exponent is $\lVert\vec U\rVert^{2}$ and it is strictly greater than one. Here the axis does not exist and the growth comes from a term that is linear in the parameter, so the norm is a polynomial of degree two in $\theta$ and never exponential.
+
+**A reader who knows only the first kind will misread the second.** A growing norm is usually taken as evidence of a complex eigenvalue; on the Jordan part the eigenvalue may be pure imaginary and the norm still grows. What distinguishes the two is the shape of the growth in the parameter, not its presence.
+
+## The Material Part
+
+### The Vector Square Is Definite on Real Vectors
+
+**On the material sector the vector square is a sum of three real squares.**
+
+$$
+\tilde P_\Phi=i\frac{E}{c}e_t+\vec p,\qquad
+E\in\mathbb{R},\ \vec p\in\mathbb{R}^{3},\qquad
+B^{2}=\lvert\vec p\rvert^{2}\ge0 .
+$$
+
+**A definite form has no non-zero isotropic vector.** So $B^{2}=0$ forces $\vec p=0$, and the intersection of the stratum with the material sector is
+
+$$
+\Sigma_{10}\cap\mathbb{B}_{\Phi}=\{i\,q'_te_t\ :\ q'_t\in\mathbb{R}^{\times}\},
+$$
+
+of real dimension one inside a stratum of real dimension six.
+
+**The mass shell meets it in two points.**
+
+$$
+N=-m^{2}c^{2}\ \Longrightarrow\ Q_t^{2}=-m^{2}c^{2}\ \Longrightarrow\ Q_t=\pm i\,mc,
+$$
+
+so the timelike mass shell touches the stratum at $\pm imc\,e_t$: the positive-energy and negative-energy rest frames, and nothing else.
+
+**The stratum loses five of its six real dimensions when the element is required to be material.** Four of them are the direction of the isotropic vector, which has no real representative, and one is the phase of the scalar part, which is fixed to the two mass-shell points.
+
+### The Rest Frame Is the Vertex of the Mass Shell
+
+**The timelike branch of the open stratum is a hyperboloid and its vertex is on this stratum.**
+
+$$
+\overline{\bigl\{\tilde P_\Phi\in\Sigma_{11}:\ \lvert\vec p\rvert<\lvert E\rvert/c\bigr\}}\cap\Sigma_{10}
+=\bigl\{\pm imc\,e_t\bigr\}.
+$$
+
+**The boost that removes the motion lands exactly here.** On the open stratum the rapidity $\theta_{\mathrm{rest}}=\operatorname{artanh}(\lvert\vec p\rvert c/E)$ is the unique parameter at which the vector part vanishes; the element it produces is $ime_t$, which is a point of this stratum. So the rest frame is not a separate object: it is the endpoint of the boost, and the boost is a path in the algebra that leaves the open stratum at exactly one parameter value.
+
+**The vertex is fixed by every rotation and reached by exactly one boost from every timelike momentum.** Rotations act on the vector part, which is zero, so they fix the whole line. A boost carries a timelike momentum into the line at the single rapidity $\theta_{\mathrm{rest}}$ and out of it at every other value. So the material part of the stratum is at once the fixed set of the rotation group and the endpoint of the boost orbit of every timelike momentum.
+
+### Why the Exceptional Point Needs a Complex Momentum
+
+**The Jordan part has no real representative, and the reason is the isotropy condition.**
+
+$$
+\vec\Upsilon^{2}=0,\qquad \vec\Upsilon\neq0,\qquad
+\vec\Upsilon=\vec p\ \text{real}\ \Longrightarrow\ \lvert\vec p\rvert^{2}=0\ \Longrightarrow\ \vec p=0 .
+$$
+
+**So a defective element is a complexified momentum whose spatial part is non-zero and has vanishing square.** In the four-momentum chart that is a momentum whose spatial square vanishes while the spatial vector does not: the mass-shell equation, solved off the real slice.
+
+**What that means physically is stated in §*The Limits* and not here.** The algebraic statement is exact: the exceptional point is reached by complexifying the momentum and not by boosting a real one. A real momentum is a point of the open stratum or of the rest line, and never of the Jordan part.
+
+**The consequence for the reader is a discipline.** Any physics that is claimed to sit on the Jordan part must exhibit a complex momentum, a complex wave vector or a complex parameter; a construction that keeps every quantity real cannot land here, however it is tuned. That is a theorem about the algebra and not a hypothesis about the world.
+
+## The Reach of the Three Carriers
+
+**The three carriers meet the stratum in three different ways.**
+
+| carrier | dimension | invariant on it | intersection with $\Sigma_{10}$ |
+| --- | --- | --- | --- |
+| the centre $\mathbb{C}e_t$ | $2$ real | $B^{2}=0$ everywhere, $N=Q_t^{2}$ | the whole punctured line $\mathbb{C}^{\times}e_t$ |
+| the ideals $S_\pm=\mathbb{B}\tilde\Pi_\pm$ | $4$ real | $N=0$ everywhere | empty |
+| the material sector $\mathbb{B}_{\Phi}$ | $4$ real | both vary | the real line $\{i\,q'_te_t\}$ |
+
+**The centre is the semisimple face and not a part of it.** The identification is exact in both directions, and it is the only one of the three intersections that is a whole carrier.
+
+**The ideals are empty, and the reason is the norm.** Every member of $S_\pm$ has $N=0$, and the stratum requires $N\neq0$; the norm is multiplicative and vanishes on every member, so no product or sum inside the carrier repairs it. So no value of a spinor is at rest: a massive spinor at rest has a rest frame, and the frame belongs to the sum $S_++S_-=\mathbb{B}$ and to neither summand.
+
+**The material sector contributes one real line out of six real dimensions.** The rest frame is a line in the material sector, and the exceptional point is not in the material sector at all. This is the sharpest form of the split in §*The Two Regimes*: the two faces of the stratum are separated by the predicate *material*, which is not one of the two predicates that cut the algebra.
+
+## The Polar Word and the Missing Eigenbasis
+
+**The stratum has the polar word and lacks the eigenbasis.**
+
+$$
+\tilde Q=\Rho\,\tilde Q_1,\qquad
+\Rho=\sqrt{N}\neq0,\qquad
+N(\tilde Q_1)=1,
+$$
+
+so the modulus exists and the word continues into a phase, a Hermitian factor and a real rotor, exactly as on the open stratum.
+
+**What fails is the spectral word.**
+
+| description | $\Sigma_{11}$ | $\Sigma_{10}$ | $\Sigma_{01}$ |
+| --- | --- | --- | --- |
+| modulus $\Rho=\sqrt N$ | exists | exists | does not exist |
+| two-term spectral writing | unique | one term, non-unique refinement; none on the Jordan part | unique, with a zero coefficient |
+| eigenbasis | exists | does not exist | exists |
+| canonical Peirce decomposition attached to $\tilde Q$ | exists | does not exist off the scalar line | exists |
+
+**The two mixed strata are the two ways for a description to fail, and they fail in opposite descriptions.** The massless stratum has the eigenbasis and not the modulus; this stratum has the modulus and not the eigenbasis. Neither failure is a subset of the other, which is the independence of the two predicates at the level of the descriptions rather than at the level of the element.
+
+**So the stratum is the boundary of the two-mode picture in exactly one respect and not in another.** It is where the two-term writing loses its uniqueness and then its existence; it is not where the algebra stops being decomposable, because the polar word survives intact.
+
+## The Interpretations
+
+### I.10.y — The Two Frequencies Coincide: the Beat Stops and the Rate Remains
+
+**Read:** the spectrum $\{Q_t\}$ of multiplicity two, against the pair $\{\lambda_+,\lambda_-\}$ of the open stratum.
+
+**A beat needs two frequencies and a rate needs one.** On the open stratum the two eigenvalues differ by $2iB$, and their difference is the frequency of the interference between the two modes. Here $B=0$, the difference vanishes, and the beat period is infinite. What remains is the common value $Q_t$, which is the frequency of the global phase.
+
+**The reading is that the stratum is one clock and not two.** A single element generating a one-parameter group has one rate; two modes with different rates produce a modulation and one mode does not. The algebra states the difference as a vanishing of $B^{2}$ and not as a vanishing of $N$, so the clock survives and the modulation does not.
+
+**The material case makes the reading exact.** At rest the two light-cone frequencies are equal to $mc$, and their difference — which is proportional to the momentum — is zero. The beat stops because the momentum stops, and the rate continues because the mass does not.
+
+**The boundary.** The identification uses the material chart for the frequency reading. In the full algebra $Q_t$ is a complex number with no frequency reading.
+
+### I.10.z — The Rest Frame Is a Scalar Operator: the Frame Is Not a Function of the Momentum
+
+**Read:** $L_{\tilde P_\Phi}=imc\,\mathrm{id}$ with a four-dimensional eigenspace.
+
+**A rest momentum does not select a frame.** The operator is a scalar, so every basis diagonalises it, and the eigenbasis is not a datum of the momentum but a choice made from outside. A motion selects a direction; rest does not.
+
+**The reading is stronger than the non-uniqueness of the two-term writing and it implies it.** If the operator is a scalar then every pair of complementary idempotents gives the same element, because both coefficients are the same number. So the non-uniqueness is a corollary, and the scalar operator is the cause.
+
+**Read forwards, the same statement is about rotations and boosts.** A rotation acts on the vector part and a boost moves it; at rest there is no vector part, so every rotation fixes the element and no rotation is distinguished, while a boost leaves the line at every non-zero rapidity. The rest frame is the only material momentum on which the rotation group acts trivially.
+
+**The boundary.** The reading is of the element and not of a state. A state at rest still has a spin label; the algebra's rest frames form a line, and a spin label is a datum of the module and not of the algebra.
+
+### I.10.aa — The Rest Frame Is the Centre of the Algebra
+
+**Read:** $\Sigma_{10}\cap\mathbb{B}_{C}=\mathbb{B}_{C}\setminus\{0\}$, with the identification exact in both directions.
+
+**The semisimple face of the stratum is a carrier and not a slice.** So the rest frame is a property of the algebra's centre, and the centre's defining property is that it commutes with everything. An element that commutes with everything acts as one number on every module and multiplies every component of a state by the same factor.
+
+**The reading is that rest is a global phase and a scale, and that both are unobservable in a single element.** The scale is the mass; the phase is the causal label; a uniform phase on a state module is not observable on a ray. So the content of a rest frame is the mass and the sign of the energy, and nothing else.
+
+**The centre also collects the whole singular locus of the spectral cone.** The vertex of the cone is where the two eigenvalues meet and where the gradient of $B^{2}$ vanishes; that vertex is this carrier. So the stratum's only singularity and its semisimple face are the same set, which is why the split into two regimes is geometric and not arithmetic.
+
+**The boundary.** *Rest frame* names a point of the centre only after the material chart identifies $Q_t$ with $imc$; off the two real lines of the centre the element has a complex scalar part and no mass.
+
+### I.10.ab — One Mode Is Not Two Particles of Equal Mass
+
+**Read:** a repeated eigenvalue $Q_t$ of multiplicity two, with one eigendirection on the Jordan part.
+
+**Counting eigenvalues counts modes of one element.** On the open stratum the two eigenvalues are two null components of one element and not two objects; here there is one eigenvalue and one mode, and a count of two would require two independent data.
+
+**The algebraic test is the number of coefficients, not the multiplicity of the root.** The open stratum has two coefficients, tied by the trace and the norm; the scalar line has a one-term writing with a non-unique refinement; the Jordan part has none. Multiplicity counts the root, not the writing.
+
+**The reading is a warning about a common inference.** A degenerate spectrum looks like two states at the same energy, and the algebra says the opposite: one state, one direction, and a defect. A degeneracy of eigenvalues in this algebra is a coalescence of eigendirections, and the number of eigendirections has gone down while the number of eigenvalues stayed at one.
+
+**The boundary.** The statement is about the element. A module can carry a two-dimensional degenerate subspace; the algebra constrains the operator and not the dimension of a state space.
+
+### I.10.ac — The Exceptional Point Is Where the Eigenbasis Disappears
+
+**Read:** $\vec\Upsilon^{2}=0$, $\vec\Upsilon\neq0$, and the eigenspaces $\ker L_{\vec\Upsilon}$ of dimension two with a one-dimensional intersection.
+
+**Four symptoms, one condition.** The minimal polynomial is a square; the centraliser is the dual numbers; the two eigenspaces of the one-sided actions have dimension two each and intersect in one line; the Peirce matrix is a single block.
+
+**The operational signature is the splitting law.**
+
+$$
+\Delta=\lambda_+-\lambda_-=2i\sqrt{B^{2}},\qquad
+B^{2}(\tilde Q+\varepsilon\tilde X)=2\varepsilon\,\tilde X\cdot\vec\Upsilon+\varepsilon^{2}B^{2}(\tilde X),
+$$
+
+where $\tilde X\cdot\vec\Upsilon=\sum_kX_k\Upsilon_k$ is the bilinear form. So the splitting is the square root of a linear function of the parameter, and it is linear only for a perturbation with $\tilde X\cdot\vec\Upsilon=0$, that is one tangent to the isotropic cone. Computed on $\tilde Q=1.3e_t+\vec e_x+i\vec e_y$: the generic perturbation $\varepsilon\vec e_x$ gave splittings $2.836\times10^{-1}$, $2.828\times10^{-2}$, $2.828\times10^{-3}$ at $\varepsilon=10^{-2},10^{-4},10^{-6}$, against the predicted $2\sqrt{2\varepsilon+\varepsilon^{2}}$; the tangential perturbation $\varepsilon\vec e_z$ gave $2.000\times10^{-2}$, $2.000\times10^{-4}$, $2.000\times10^{-6}$, against $2\varepsilon$.
+
+**The reading is that the exceptional point is a property of the spectrum and not of the size of anything.** The square-root law is a consequence of the eigenvalue map being a square root of $B^{2}$, and it is the same statement as the loss of the eigenbasis. A quantity that responds to the square root of a perturbation is responding to a defect.
+
+**The boundary.** The reading identifies a defective element with the object usually called an exceptional point. It is not a claim that a physical Hamiltonian is defective; it is a claim about what defectiveness costs structurally.
+
+### I.10.ad — The Defect Is a Shear, and the Unipotent Is a Null Rotation
+
+**Read:** $\tilde Q=Q_t(e_t+\vec\Upsilon/Q_t)$ with $(\vec\Upsilon/Q_t)^{2}=0$.
+
+**The element is a scale times a unipotent.** The unipotent preserves the flag and moves along it: it fixes the line $\mathbb{C}\vec\Upsilon$ and the plane containing it, and it translates inside the plane. That is a null rotation and not a rotation.
+
+**The reading is a rate with a shear.** A rotation has an axis and an angle; a null rotation has a flag and a magnitude of translation. So a defective element does not say *turn this much about that direction*; it says *push along this direction, and preserve the direction while pushing*.
+
+**The exponential shows the shear directly.** $e^{\theta\tilde Q}=e^{\theta Q_t}(e_t+\theta\vec\Upsilon)$: the scalar part is transported and the defect is transported and displaced by $\theta$. There is no angle anywhere in the formula, and the displacement is unbounded.
+
+**The boundary.** The word *shear* is a reading of the unipotent factor. No metric is used, and no deformation of a material body is implied.
+
+### I.10.ae — The Repeated Eigenvalue Is the Critical Damping
+
+**Read:** $e^{\theta\tilde Q}=e^{\theta Q_t}(e_t+\theta\vec\Upsilon)$, a rate times a factor linear in the parameter.
+
+**The form $(a+b\theta)e^{\lambda\theta}$ is the solution of a critically damped equation.** A second-order linear equation with a repeated characteristic root produces exactly this: an exponential multiplied by a linear function, and the linear term is what distinguishes the critical case from the underdamped and overdamped ones.
+
+**The algebra produces the form and not the equation.** What the stratum supplies is that the generator has a repeated eigenvalue and a nilpotent part; the form of the exponential follows from that and from nothing else. So a generator in this stratum produces the critical form by construction, and the coefficient of the linear term is the defect.
+
+**The reading is that criticality is a spectral type and not a tuning.** The usual statement is that critical damping is one value of a parameter. Here it is a stratum: an open set of elements has a repeated eigenvalue and a defect, and the whole set has the same response form. A parameter tuned to criticality lands in a stratum with real dimension six, not on a point.
+
+**The boundary.** The reading is of the form of the exponential. It supplies no equation of motion, no inertia, no damping constant and no identification of the parameter with time.
+
+### I.10.af — The Double Pole Is the Defective Response
+
+**Read:** $\tilde Q^{-1}=Q_t^{-1}e_t-Q_t^{-2}\vec\Upsilon$.
+
+**The two orders are the two halves of the element.** The scalar part inverts to first order and the defect to second; as a function of the scalar part the inverse has a double pole, and the coefficient of the second-order term is the defect itself.
+
+**The reading is that a resolvent inherits the defect.** In a response function the pole structure is the spectrum: a simple pole belongs to a mode and its residue is a projector; a double pole belongs to a defective mode and its residue is a projector plus a nilpotent. So the defect is visible in the derivative of the response and invisible in its value.
+
+**The same statement is the powers formula read backwards.** $\tilde Q^{n}$ carries the coefficient $n$, so a sum over $n$ of $\tilde Q^{n}$ produces a term with a factor linear in the summation index, and the linear factor is the double pole in the transformed variable.
+
+**The boundary.** The reading is algebraic. It says what the pole structure of a rational function of a defective element is, and it does not assert that a physical propagator is such a function.
+
+### I.10.ag — Growth Without a Real Part: the Defect Is a Second Source of Non-Unitarity
+
+**Read:** $\langle e^{\theta\tilde Q}\rangle_{*}=\lvert e^{\theta Q_t}\rvert^{2}(1+\lvert\theta\rvert^{2}\lVert\vec\Upsilon\rVert^{2})$.
+
+**Two strata, two mechanisms, two shapes.** On $\Sigma_{11}$ the growth is exponential in the parameter, and its rate is set by the misalignment of the axis with its Hermitian adjoint, measured by $\lVert\vec U\rVert^{2}>1$. On $\Sigma_{10}$ the growth is $1+\lvert\theta\rvert^{2}\lVert\vec\Upsilon\rVert^{2}$, quadratic, with no exponential in it anywhere.
+
+**The first is a tilted axis and the second is a coalesced one.** On the open stratum the growth is exponential in the parameter and its rate is set by the misalignment of the axis and its Hermitian adjoint; here there is no axis, the growth is quadratic, and its rate is set by the size of the defect.
+
+**The reading is that a norm that grows is not evidence of a complex eigenvalue.** The measured sequence $1.5,3,9,33,129$ at $\theta=0.5,1,2,4,8$ for a purely imaginary scalar part has no exponential in it at all, and a reader who interprets growth as amplification by a complex rate would misread every term of it.
+
+**On matter the mechanism is absent.** A material element has $B^{2}=\lvert\vec p\rvert^{2}>0$ unless it is at rest, and at rest the defect is zero, so the parenthesis is one and the flow is unitary. The polynomial growth belongs to complexified elements.
+
+**The boundary.** The Hermitian norm is a norm on the algebra and not a probability. The reading is about the size of a flow on the algebra and says nothing about the size of a state.
+
+### I.10.ah — The Defect Is a Direction and Not a Charge
+
+**Read:** $480$ of $500$ random pairs leave the stratum; $200$ of $200$ pairs sharing a direction stay; the flow of any member stays.
+
+**The defect is carried by a line and composition does not add lines.** Two elements with the same nilpotent direction compose inside the stratum; two with different directions compose into a generic element. So the defect is not a quantity that is conserved by multiplication: it is a direction, and two directions either agree or they do not.
+
+**The reading is that defect is not additive and not conserved.** A charge would be a number attached to an element and added under composition; there is no such number here, because $B^{2}=0$ on every member and the norm does not see the defect at all. What is preserved is the direction under powers and under the flow, and nothing under products.
+
+**The consequence is that two defects can cancel.** Two defective elements with different directions produce an element with two distinct eigenvalues: the two defects have cancelled and the pair is generic. Nothing in the algebra counts how many defective factors entered.
+
+**The boundary.** The reading is about the composition of elements. It does not say that a physical exceptional point cannot be counted, only that the algebra supplies no count.
+
+## The Limits
+
+**The rest-frame reading needs the material chart.** *Rest frame* is the name of a four-momentum with vanishing spatial part, and a four-momentum is a point of the material sector. In the full algebra the scalar line is the centre minus the origin, and calling it a rest frame is an identification.
+
+**The exceptional-point reading is conditional on the operator reading.** It says what happens to $L_{\tilde Q}$ and $R_{\tilde Q}$ when the eigenvalues coalesce. It is not a claim that a physical generator is defective, and it supplies no perturbation theory beyond the splitting law.
+
+**The Jordan part is not material.** A real four-momentum with $B^{2}=0$ has $\vec p=0$ and lies on the scalar line; the Jordan part needs a complex isotropic spatial vector. So the exceptional point is a complexified regime, and a construction that keeps every quantity real cannot reach it.
+
+**The repeated eigenvalue is not a degeneracy of a state space.** A repeated eigenvalue is one element with one eigenvalue and, off the scalar line, one eigendirection. It says nothing about the dimension of a module or about how many states share an energy.
+
+**The growth is not amplification of a signal.** The Hermitian norm is a norm on the algebra. Its polynomial growth is a statement about the size of the flow of one element, and it is not a statement about the growth of a probability, an amplitude or an instability.
+
+**The identity is in the stratum, so the stratum is not the locus of the defective.** The element that does nothing has a repeated eigenvalue, no defect, and sits in this stratum. Any reading of *degenerate* as *pathological* is refuted by $e_t$.
+
+**No dynamics is supplied.** The entry describes one element at an instant, the two operators attached to it, its inverse, its powers and its flow. It gives no evolution equation, no rate and no count.
+
+**The numerical checks are checks of identities, not of the reading.** Every identity above was verified on at most a few hundred elements; the readings are arguments from the identities and stand or fall with them.
+
+## Summary
+
+- $\Sigma_{10}=\{N\neq0,\ B^{2}=0\}$ is the spectral cone minus the null cone: connected, of complex dimension three and real dimension six, a cone with its apex removed, not simply connected.
+- Its elements are exactly the units with a repeated eigenvalue $Q_t$, and on the cone $N=Q_t^{2}$, $\Delta=-4B^{2}$.
+- The stratum splits into the semisimple scalar line $\Sigma_{10}^{\mathrm{s}}$ and the defective Jordan part $\Sigma_{10}^{\mathrm{J}}$; the split is by the minimal polynomial and is invisible to the two predicates.
+- The scalar line is exactly the centre minus the origin: $L_{\tilde Q}=R_{\tilde Q}=Q_t\mathrm{id}$, the eigenspace is the whole algebra, and every two-term writing is non-unique.
+- On the Jordan part the centraliser is the dual numbers, its only idempotents are $0$ and $e_t$, and no non-trivial Peirce decomposition is attached to the element.
+- A chosen idempotent gives the Peirce block $J_2(Q_t)$; the flag is the invariant and the splitting of the flag is the gauge.
+- The one-sided eigenspaces have dimension two each and their joint eigenspace is the line $\mathbb{C}\vec\Upsilon$: no joint eigenbasis exists.
+- The powers are $Q_t^{n}e_t+nQ_t^{n-1}\vec\Upsilon$, the inverse is $Q_t^{-1}e_t-Q_t^{-2}\vec\Upsilon$, and the inverse has a double pole in the scalar part.
+- The flow stays in the stratum for every parameter and is $e^{\theta Q_t}(e_t+\theta\vec\Upsilon)$; the Hermitian norm is $\lvert e^{\theta Q_t}\rvert^{2}(1+\lvert\theta\rvert^{2}\lVert\vec\Upsilon\rVert^{2})$.
+- The stratum is closed under powers and under the flow, and not under products: $480$ of $500$ random pairs left it, and pairs sharing a direction never did.
+- The material part of the stratum is the punctured real scalar line; the mass shell meets it at $\pm imc\,e_t$, and the exceptional point has no material representative.
+- The stratum has the polar word and lacks the eigenbasis, which is the exact complement of the massless stratum.
+
+### What the Reader Should Retain
+
+**Invertibility and spectral separation are independent.** An element can be a unit, generate a flow, admit a polar word, and have no second eigenvalue. The eigenbasis is the one operation that needs two.
+
+**A sector is a pair of truth values and not one behaviour.** This stratum contains both the element that does nothing and the element that cannot be diagonalised, and the two predicates cannot tell them apart. Only the minimal polynomial can.
+
+**The rest frame is a scalar operator, so the frame is not a function of the momentum.** A rest momentum selects nothing: every basis is an eigenbasis, and the two-term writing is a choice made from outside.
+
+**The exceptional point is a coalescence of eigendirections, and it is complexified.** Its symptoms are a square minimal polynomial, a dual-number centraliser, a flag instead of a basis, a double pole and a polynomial flow; its home is a complex isotropic momentum and not a real one.
+
+## Summary of Notation
+
+| symbol | meaning |
+| --- | --- |
+| $\Sigma_{10}=\{N\neq0,\ B^{2}=0\}$ | the stratum, the third of the five parts of the section |
+| $\Sigma_{10}^{\mathrm{s}}=\mathbb{C}^{\times}e_t$ | the scalar line, the semisimple face |
+| $\Sigma_{10}^{\mathrm{J}}$ | the Jordan part, $\vec\Upsilon^{2}=0$, $\vec\Upsilon\neq0$ |
+| $Q_t$ | the scalar part, the repeated eigenvalue |
+| $\vec\Upsilon=\vec Q$ | the defect, a pure nilpotent |
+| $u=e_t+\vec\Upsilon$ | the unipotent element, $(u-e_t)^{2}=0$ |
+| $N=Q_t^{2}$ | the norm on the stratum |
+| $\Delta=-4B^{2}$ | the discriminant of the characteristic polynomial |
+| $e,f=e_t-e$ | a Peirce pair adapted to the defect |
+| $\mathsf M^{Q}=J_2(Q_t)$ | the Peirce block of the element |
+| $\mathbb{C}[\tilde Q]\cong\mathbb{C}[\varepsilon]/(\varepsilon^{2})$ | the dual-number centraliser |
+| $\tilde Q^{n}=Q_t^{n}e_t+nQ_t^{n-1}\vec\Upsilon$ | the powers |
+| $\tilde Q^{-1}=Q_t^{-1}e_t-Q_t^{-2}\vec\Upsilon$ | the inverse, with a double pole |
+| $\langle\tilde X\rangle_{*}=\operatorname{Sc}(\tilde X\tilde X^{*})$ | the Hermitian norm |
+| $\lVert\vec\Upsilon\rVert^{2}=\sum_k\lvert\Upsilon_k\rvert^{2}$ | the size of the defect in the Hermitian norm |
+| $\tilde P_\Phi=i\frac{E}{c}e_t+\vec p$ | a material four-momentum, $B^{2}=\lvert\vec p\rvert^{2}$ |
+| $i\,mc\,e_t$ | the rest frame, $Q_t=\pm imc$ on the mass shell |
+
+## Further Reading
+
+**In this category.** [The Partition: Two Invariants and Four Regimes](the-partition-two-invariants-and-four-regimes.html) is the parent entry and states the two predicates and the four strata. [Mass in Motion: The Region of Both Invariants](the-region-of-mass-in-motion.html) reads the open stratum, whose boundary at $B^{2}=0$ is this entry; the boost that removes the motion lands here, and the two-mode picture stops here. *The Massless Regime* reads the other mixed stratum, which fails in the opposite description: there the eigenbasis exists and the polar word does not. *The Vacuum and the Nilpotent Ladder* reads the intersection of the two cones, which is the part of the closure that this stratum does not contain and whose nilpotents its inverse and its flow resemble. Both are the entries that follow this one in the menu.
+
+**Mathematics.** [The N-Regular, Spectrally Degenerate Sector](../articles_maths/the-n-regular-spectrally-degenerate-sector.html) is the source; [The Jordan Basis of a Spectrally Degenerate Biquaternion](../articles_maths/the-jordan-basis-of-a-spectrally-degenerate-biquaternion.html) owns the flag and the Jordan basis, and [The Spectrum](../articles_maths/the-spectrum.html) owns the discriminant and the repeated eigenvalue.
+
+**In the archive, for the readings that predate this entry.** [The N-Regular, Spectrally Degenerate Sector: The Rest Frame and the Exceptional Point](the-n-regular-spectrally-degenerate-sector-the-rest-frame-and-the-exceptional-point.html) is the earlier statement of this stratum, with the rest frame, the exceptional point and the beat. [The Spectral Reading of a Four-Vector](the-spectral-reading-of-a-four-vector.html) owns the four-momentum chart and the frequency pair. [Spin and the Three Elementary Carriers](spin-and-the-three-elementary-carriers.html) and [The Three Elementary Carriers and the Four Sectors of Regularity and Degeneracy](the-three-elementary-carriers-and-the-four-sectors-of-regularity-and-degeneracy.html) own the reach of the three carriers, which §*The Reach of the Three Carriers* summarises. [The Polar Decomposition and Its Three Pairings](the-polar-decomposition-and-its-three-pairings.html) owns the word that survives here, and [The Exponential, the Logarithm and the Generator](the-exponential-the-logarithm-and-the-generator.html) owns the exponential and its degenerate boundary. [Frames, Rotations and the Lorentz Group](frames-rotations-and-the-lorentz-group.html) owns the boost rotor used in §*The Rest Frame Is the Vertex of the Mass Shell*. [Norm and Pairing Conventions](norm-and-pairing-conventions.html) fixes the letters and the signatures, and is the article to consult if a formula here disagrees with one elsewhere in the corpus.
