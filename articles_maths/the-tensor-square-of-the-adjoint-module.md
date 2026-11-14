@@ -6,9 +6,9 @@ The algebra $\mathbb{B}$ is a module over itself for the conjugation action, and
 
 The result is the reason the list of carriers ends where it does. The carriers are $\mathcal{V}_1$, $\mathcal{V}_2$ and $\mathcal{V}_3$; a product of two carriers lands in a sum of carriers; and the only new summand produced by the tensor square, $\mathcal{V}_5$, is not a carrier and is killed by the multiplication. No product manufactures a type the algebra does not have.
 
-The carriers and their types are *The Carriers of the Biquaternion Algebra*, the number attached to each type is *The Spin of a Carrier*, the weights used in the count are *The Weights of a Carrier*, and the product itself is *The Four General Products and Their Relations over the Biquaternion Algebra* and *Symmetric and Antisymmetric Decomposition of the Four General Products*.
+The carriers and their types are *The Carriers of the Biquaternion Algebra*, the weights used in the count are *The Weights of a Carrier*, and the product itself is *The Four General Products and Their Relations over the Biquaternion Algebra* and *Symmetric and Antisymmetric Decomposition of the Four General Products*.
 
-Nothing below is a statement of physics. The types are written $\mathcal{V}_d$ with $d$ the complex dimension, so that $\mathcal{V}_1$ is the trivial module, $\mathcal{V}_3$ the adjoint module and $\mathcal{V}_5$ the module of dimension five; the spin is $(d-1)/2$ throughout.
+Nothing below is a statement of physics. The types are written $\mathcal{V}_d$ with $d$ the complex dimension, so that $\mathcal{V}_1$ is the trivial module, $\mathcal{V}_3$ the adjoint module and $\mathcal{V}_5$ the module of dimension five; the highest weight of $\mathcal{V}_d$ is $(d-1)/2$ throughout.
 
 ## The Algebra as a Module
 
@@ -84,7 +84,7 @@ For the conjugation action, $\mathbb{B}\cong\mathcal{V}_1\oplus\mathcal{V}_3$, a
 
 The multiplication is a map of modules, it is onto $\mathcal{V}_1\oplus\mathcal{V}_3$, and it vanishes on $\mathcal{V}_5$ because the algebra has no five-dimensional summand. All four general products vanish there for the same reason.
 
-Hence no product of carriers produces a new carrier, and no carrier above spin one exists: the highest weight of a tensor product is the sum of the highest weights, the square of the adjoint reaches two, the algebra stops at one, and the summand that overshoots is the one the product annihilates.
+Hence no product of carriers produces a new carrier, and no carrier beyond the adjoint exists: the highest weight of a tensor product is the sum of the highest weights, the square of the adjoint reaches two, the algebra stops at one, and the summand that overshoots is the one the product annihilates.
 
 ## Summary of Notation
 
@@ -102,7 +102,7 @@ Hence no product of carriers produces a new carrier, and no carrier above spin o
 ## Further Reading
 
 - [The Carriers of the Biquaternion Algebra](the-carriers-of-the-biquaternion-algebra.html), for the three carriers, the isotypic decomposition and the proof that there are no others
-- [The Spin of a Carrier](the-spin-of-a-carrier.html), for the number attached to each type
+- [The Spin of a Carrier](the-spin-of-a-carrier.html), for the section that names the number attached to a type
 - [The Weights of a Carrier](the-weights-of-a-carrier.html), for the spectra from which the multiplicities are read
 - [The Four General Products and Their Relations over the Biquaternion Algebra](the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html), for the four products and their relations
 - [Symmetric and Antisymmetric Decomposition of the Four General Products](symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html), for the split of each product into its symmetric and antisymmetric halves

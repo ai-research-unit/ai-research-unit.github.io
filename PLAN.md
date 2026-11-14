@@ -13,7 +13,7 @@
 
 **DO NOT TOUCH THE DEPLOY FOLDER**
 
-**Never touch version control or the build.** No `commit`, `add`, `push`, `stash`,  `checkout`, `reset`, or `clean`; do not run `build.py`. This is the author's task.
+**Never touch git and version control.** No `commit`, `add`, `push`, `stash`,  `checkout`, `reset`, or `clean. This is the author's task.
 
 Do not create AGENTS.md, the articles should be sable to defend themselves without it.
 

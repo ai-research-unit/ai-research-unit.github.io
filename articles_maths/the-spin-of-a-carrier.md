@@ -160,7 +160,7 @@ The third carrier is named by $\mathbb{B}_{\Phi}$ and not by $\mathbb{B}_{\Psi}$
 - *The Commutator Bracket of the Biquaternion Algebra*, for the bracket, its alternation and the formula in the vector parts
 - *The Two Symmetric Pairs of the Biquaternion Algebra*, for the closure of the two halves under the two products
 - *The Bracket on the Subspaces of the Biquaternion Algebra*, for the identification $\mathfrak{k}\cong\mathfrak{su}(2)$
-- [The Spin-Zero Carrier](the-spin-zero-carrier.html), [The Spin-Half Carriers](the-spin-half-carriers.html) and [The Spin-One Carriers](the-spin-one-carriers.html), for the carriers of each type listed one type to an article
+- [Introduction to the Carrier of Dimension 1 over C](the-carrier-of-dimension-1.html), [Introduction to the Peirce Basis over C](the-peirce-basis-over-c.html) and [Introduction to the Carriers of Dimension 4 over R](the-carriers-of-dimension-4.html), for the carriers of each type listed one type to an article
 - [The Minimal Left Ideals of the Biquaternion Algebra](the-minimal-left-ideals-of-the-biquaternion-algebra.html), for the two-dimensional carrier
 - Hermann Weyl, *The Theory of Groups and Quantum Mechanics* (Dover, 1950), for the weight strings and their length.
 - Brian C. Hall, *Lie Groups, Lie Algebras, and Representations* (Springer, 2015), for the classification of the irreducible representations of $\mathfrak{su}(2)$ by their dimension.

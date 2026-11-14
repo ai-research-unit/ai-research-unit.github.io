@@ -6,7 +6,7 @@ The biquaternion algebra $\mathbb{B}$ acts on itself in two ways: by multiplicat
 
 The count is a consequence of two classifications, one for each action. Under multiplication, $\mathbb{B}$ is a full matrix algebra over $\mathbb{C}$, so it has a single simple module and the minimal left ideals are all copies of it. Under conjugation, the trace form splits $\mathbb{B}$ into the centre and the traceless part, and both summands are irreducible. One type from the first action and two from the second give the three carriers of dimensions $1$, $2$ and $3$ over $\mathbb{C}$.
 
-The article is the first of the group. The number attached to a carrier — its spin — is *The Spin of a Carrier*, the weights of a fixed generator on each carrier are *The Weights of a Carrier*, and the products of carriers are *The Tensor Square of the Adjoint Module*. The subspaces used here are defined in *Subspaces and Decompositions of the Biquaternion Algebra*, the idempotents and the minimal left ideals in *The Minimal Left Ideals of the Biquaternion Algebra* and *The Companion Nilpotents of the Biquaternion Algebra*, and the module category in *The Category of Modules in the Biquaternion Algebra*.
+The article is the first of the group. The weights of a fixed generator on each carrier are *The Weights of a Carrier*, and the products of carriers are *The Tensor Square of the Adjoint Module*. The subspaces used here are defined in *Subspaces and Decompositions of the Biquaternion Algebra*, the idempotents and the minimal left ideals in *The Minimal Left Ideals of the Biquaternion Algebra* and *The Companion Nilpotents of the Biquaternion Algebra*, and the module category in *The Category of Modules in the Biquaternion Algebra*.
 
 Nothing below is a statement of physics. The elements are written $\tilde Q,\tilde Q_1,\tilde Q_2$ with coefficients $Q_t,Q_x,Q_y,Q_z$; the units of the algebra are $\mathbb{B}^{\times}$; the unitary units are $G=\mathrm{U}(2)$; and $*$ is the Hermitian conjugation, $\tilde Q^{*}=Q_t^{*}e_t+\vec Q^{*}$.
 
@@ -46,7 +46,7 @@ The assignment $u\mapsto\operatorname{Ad}_u$ is a homomorphism of groups, with k
 
 **Definition (type).** Two carriers have the same **type** when their representation spaces are isomorphic as modules over the acting structure. The **type** of a carrier is the isomorphism class itself, written $\mathcal{V}_d$ with $d=\dim_{\mathbb{C}}$ of the representation space.
 
-**Remark (why the type and not the subspace).** The three carriers are three subspaces of one algebra, and two of them are four real-dimensional. Dimension therefore does not separate them; the module does. The type records what the action does, and the spin of *The Spin of a Carrier* is a function of the type alone.
+**Remark (why the type and not the subspace).** The three carriers are three subspaces of one algebra, and two of them are four real-dimensional. Dimension therefore does not separate them; the module does. The type records what the action does, and every numerical invariant of a carrier is a function of the type alone.
 
 ## The Three Carriers
 
@@ -90,7 +90,7 @@ with $\mathbb{R}(ie_t)$ fixed pointwise and $\mathfrak{k}$ irreducible of real d
 
 *Proof.* An element of $\mathbb{B}_{\Phi}$ is anti-Hermitian, and $(uQu^{*})^{*}=uQ^{*}u^{*}=-uQu^{*}$ for unitary $u$, so the sector is invariant. The line $\mathbb{R}(ie_t)$ is central, hence fixed. For $\vec v\in\mathfrak{k}$ real and $u$ unitary, $u\vec vu^{*}$ is again a real pure quaternion, so $\mathfrak{k}$ is invariant. The conjugation action of $G$ on $\mathfrak{k}$ is the adjoint action of $\mathrm{U}(2)$ on its traceless anti-Hermitian part, that is, the adjoint action of $\mathrm{SU}(2)$ on $\mathfrak{su}(2)$, and it is irreducible; the invariance is *The Two Symmetric Pairs of the Biquaternion Algebra*, §*The Hermitian Pair*, and the identification $\mathfrak{k}\cong\mathfrak{su}(2)$ is *The Bracket on the Subspaces of the Biquaternion Algebra*.
 
-**Remark (the traceless part carries the spin).** The sector is four real-dimensional and its representation space is three-dimensional, the difference being the central line. The line is a trivial summand, and the type of the carrier is the type of the traceless part. This is the only carrier whose dimension and whose type differ, and the difference is exactly the scalar admixture that *The Spin of a Carrier* records.
+**Remark (the traceless part is the carrier).** The sector is four real-dimensional and its representation space is three-dimensional, the difference being the central line. The line is a trivial summand, and the type of the carrier is the type of the traceless part. This is the only carrier whose ambient subspace and whose representation space differ, and the difference is exactly the scalar admixture.
 
 ## Three and Not Four
 
@@ -120,7 +120,7 @@ $$
 
 are the two isotypic decompositions of the algebra as a module over itself, the first with two copies of $\mathcal{V}_2$ and the second with one copy of $\mathcal{V}_1$ and one of $\mathcal{V}_3$.
 
-**Remark (the two copies are not a multiplicity of types).** $S_{+}$ and $S_{-}$ are two carriers of one type, not two types. The multiplicity is a property of the algebra as a module, and the type is a property of the action; the spin counts types, and it is not multiplied by the copies.
+**Remark (the two copies are not a multiplicity of types).** $S_{+}$ and $S_{-}$ are two carriers of one type, not two types. The multiplicity is a property of the algebra as a module, and the type is a property of the action; the count of types is not multiplied by the copies.
 
 ## Summary
 
@@ -158,9 +158,9 @@ The algebra is the direct sum of its carriers in two ways, $\mathbb{B}=S_{+}\opl
 - *The Adjoint Action and the Inner Derivations of the Biquaternion Algebra*, for the derived action of the conjugation and the inner automorphisms
 - [The Spin of a Carrier](the-spin-of-a-carrier.html), for the number attached to each type
 - [The Weights of a Carrier](the-weights-of-a-carrier.html), for the spectrum of a generator on each carrier
-- [The Spin-Zero Carrier](the-spin-zero-carrier.html), for the one carrier of the trivial type
-- [The Spin-Half Carriers](the-spin-half-carriers.html), for the sphere of minimal left ideals
-- [The Spin-One Carriers](the-spin-one-carriers.html), for the two real triples and the four halves
+- [Introduction to the Carrier of Dimension 1 over C](the-carrier-of-dimension-1.html), for the one carrier of the trivial type
+- [Introduction to the Peirce Basis over C](the-peirce-basis-over-c.html), for the sphere of minimal left ideals
+- [Introduction to the Carriers of Dimension 4 over R](the-carriers-of-dimension-4.html), for the two real triples and the four halves
 - [The Tensor Square of the Adjoint Module](the-tensor-square-of-the-adjoint-module.html), for the products of carriers
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the Peirce decomposition and the modules of a finite-dimensional algebra.
 - Israel Nathan Herstein, *Noncommutative Rings* (Carus Monographs, 1968), for the simple modules of a full matrix algebra.

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The biquaternion algebra is one object with eight real coordinates, and the corpus reads those coordinates as a physical dictionary. Four of them are two times, four are two spaces; the eight group into four blocks; the blocks combine into six remarkable subspaces; four involutions cut the subspaces out; and three decompositions pair the blocks. This article is the physical interpretation of that arrangement taken as a whole. It reads the dictionary as two ledgers, the six subspaces as six physical objects, the four real-type subspaces as the four signatures of the quaternionic norm that a physical theory can carry, the involutions as the algebra's discrete structure, and the central imaginary as the one map that exchanges the two readings.
+The biquaternion algebra is one object with eight real coordinates, and the corpus reads those coordinates as a physical dictionary. Two of the coordinates are times and six are spaces; the eight group into four blocks; the blocks combine into six remarkable subspaces; four involutions cut the subspaces out; and three decompositions pair the blocks. This article is the physical interpretation of that arrangement taken as a whole. It reads the dictionary as two ledgers, the six subspaces as six physical objects, the four real-type subspaces as the four signatures of the quaternionic norm that a physical theory can carry, the involutions as the algebra's discrete structure, and the central imaginary as the one map that exchanges the two readings.
 
 The article owns no theorem. It states each result in a sentence, links the mathematics article that proves it, and gives the physical interpretation with its boundary.
 
@@ -16,6 +16,8 @@ The results used are these.
 | The three decompositions of the algebra | [Subspaces and Decompositions](../articles_maths/subspaces-and-decompositions-of-the-biquaternion-algebra.html) |
 | The four coordinate blocks, the intersections, the sums and the action of $J$ | [Subspaces and Decompositions](../articles_maths/subspaces-and-decompositions-of-the-biquaternion-algebra.html) |
 | The four forms, their restrictions and the alternating companion | [Remarkable Subspaces and the Four General Products, Forms and Norms](../articles_maths/remarkable-subspaces-and-the-four-general-products-forms-and-norms.html) |
+
+The names of the six subspaces come from *Algebra and Element Conventions*. Each subspace carries an **algebraic name**, taken from the involution that defines it, and a **physical name**, taken from the role it plays: the centre is the complex time sector, the vector subspace the complex space sector, the quaternion subspace the real sector, the anti-quaternion subspace the imaginary sector, the Hermitian subspace the informational sector, and the anti-Hermitian subspace the material sector. The companion articles of the category are titled by the physical name. Both names are used below: the physical name is the heading, and the algebraic name is stated beside it.
 
 ## The Results It Uses
 
@@ -62,11 +64,11 @@ the **material coordinate** $\tilde R_\Phi$, with an imaginary time and a real s
 
 **The dictionary is local.** The identification of the scalar imaginary with the time direction is not rigid. In a material medium the scale $c=1/\sqrt{\epsilon\mu}$ varies from point to point, so the dictionary is local; the vacuum, $c=c_0$, is the limiting member of the family. The local freedom sits in the dictionary and not in $J$: multiplication by the central $i$ is constant, and it is the physical identification of that $i$ with time that varies. The root is not a local complex structure: it is the constant central $i$, and the locality is the point-dependence of the dictionary.
 
-**The anti-Hermitian convention.** The corpus takes the material sector to be the **anti-Hermitian** subspace, fixed by the reversal $\flat=-{}^{*}$, where the more familiar convention takes the Hermitian subspace as the material one. The two conventions differ by the central factor $i$ and neither is a mathematical error. The corpus fixes the anti-Hermitian one because the material sector is the fixed space of the algebra's real structure and is the space that carries the four-positions and the four-vectors. A reader who restores the Hermitian convention finds the whole dictionary inverted.
+**The anti-Hermitian convention.** The corpus takes the material sector to be the **anti-Hermitian** subspace, fixed by the anti-Hermitian conjugation $\flat=-{}^{*}$, where the more familiar convention takes the Hermitian subspace as the material one. The two conventions differ by the central factor $i$ and neither is a mathematical error. The corpus fixes the anti-Hermitian one because the material sector is the fixed space of the algebra's real structure and is the space that carries the four-positions and the four-vectors. A reader who restores the Hermitian convention finds the whole dictionary inverted.
 
 ### The Involutions
 
-Four maps act on the algebra: the complex conjugation $\bar{\cdot}$, the quaternion conjugation ${}^{\natural}$, the Hermitian conjugation ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ and the reversal $\flat=-{}^{*}$. The first three, with the identity, form the Klein four-group; the reversal is not a fourth element of the group, it is minus the star.
+Four maps act on the algebra: the complex conjugation $\bar{\cdot}$, the quaternion conjugation ${}^{\natural}$, the Hermitian conjugation ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ and the anti-Hermitian conjugation $\flat=-{}^{*}$. The first three, with the identity, form the Klein four-group; $\flat$ is not a fourth element of the group, it is minus the star.
 
 | Map | Formula | $\mathbb{C}$-linearity | What it touches | Fixed space | Anti-fixed space |
 | --- | --- | --- | --- | --- | --- |
@@ -75,7 +77,7 @@ Four maps act on the algebra: the complex conjugation $\bar{\cdot}$, the quatern
 | ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ | $\bar Q_te_t-\sum_\eta \bar Q_\eta\vec e_\eta$ | antilinear | both | $\mathbb{B}_{\Psi}$ | $\mathbb{B}_{\Phi}$ |
 | $\flat=-{}^{*}$ | $-\bar Q_te_t+\sum_\eta \bar Q_\eta\vec e_\eta$ | antilinear | both, with a sign | $\mathbb{B}_{\Phi}$ | $\mathbb{B}_{\Psi}$ |
 
-Each map is an involution, so each cuts the algebra into a fixed space and an anti-fixed space. The six distinct spaces so obtained are the six remarkable subspaces. Each of the four maps preserves every remarkable subspace: no conjugation carries an element out of a subspace into another one.
+Each map is an involution, so each cuts the algebra into a fixed space and an anti-fixed space. The six distinct spaces so obtained are the six remarkable subspaces: the fixed space of $\bar{\cdot}$ is the real sector and its anti-fixed space the imaginary sector; the fixed space of ${}^{\natural}$ is the complex time sector and its anti-fixed space the complex space sector; the fixed space of ${}^{*}$ is the informational sector and its anti-fixed space the material sector; and $\flat$ fixes the material sector and anti-fixes the informational one. Each of the four maps preserves every remarkable subspace: no conjugation carries an element out of a subspace into another one.
 
 The orbit of an element under the Klein four-group has size one, two or four. It is one on the real line $\mathbb{R}e_t$; it is two on the elements of $\mathbb{B}_{C}$, of $\mathbb{B}_{H}$ or of $\mathbb{B}_{\Psi}$ that are not on that line; it is four elsewhere, and a generic material element is in that last case.
 
@@ -87,20 +89,20 @@ $$
 A_1=\mathbb{R}e_t,\qquad A_2=\mathbb{R}(ie_t),\qquad B_1=\operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\},\qquad B_2=\operatorname{span}_{\mathbb{R}}\{i\vec e_x,i\vec e_y,i\vec e_z\},
 $$
 
-two scalar blocks of dimension one and two vector blocks of dimension three. Every remarkable subspace is the sum of two blocks.
+two scalar blocks of dimension one and two vector blocks of dimension three. Every remarkable subspace is the sum of two blocks, and each subspace carries the two names of the convention.
 
-| Subspace | Blocks | Dimension over $\mathbb{R}$ | The quaternionic norm on it | Physical object |
-| --- | --- | --- | --- | --- |
-| $\mathbb{B}_{C}$ | $A_1\oplus A_2$ | $2$ | not real | the clock plane and the global phase |
-| $\mathbb{B}_{V}$ | $B_1\oplus B_2$ | $6$ | not real | the complex three-vector: field strength, Lorentz generators, phase space |
-| $\mathbb{B}_{H}$ | $A_1\oplus B_1$ | $4$ | $(4,0)$ | the Euclidean four-coordinate space; the rotation rotors |
-| $\mathbb{B}_{iH}$ | $A_2\oplus B_2$ | $4$ | $(0,4)$ | the negative-definite four-coordinate space; the boost generators |
-| $\mathbb{B}_{\Psi}$ | $A_1\oplus B_2$ | $4$ | $(1,3)$ | the operator space: states and observables |
-| $\mathbb{B}_{\Phi}$ | $A_2\oplus B_1$ | $4$ | $(3,1)$ | the four-vector space: events and the interval |
+| Subspace | Algebraic name | Physical name | Defining condition | Blocks | $\dim_{\mathbb{R}}$ | Norm on the subspace |
+| --- | --- | --- | --- | --- | --- | --- |
+| $\mathbb{B}_{C}$ | the centre | the complex time sector | $\tilde Q^{\natural}=\tilde Q$ | $A_1\oplus A_2$ | $2$ | complex-valued |
+| $\mathbb{B}_{V}$ | the vector subspace | the complex space sector | $\tilde Q^{\natural}=-\tilde Q$ | $B_1\oplus B_2$ | $6$ | complex-valued |
+| $\mathbb{B}_{H}$ | the quaternion subspace | the real sector | $\bar{\tilde Q}=\tilde Q$ | $A_1\oplus B_1$ | $4$ | $(4,0)$ |
+| $\mathbb{B}_{iH}$ | the anti-quaternion subspace | the imaginary sector | $\bar{\tilde Q}=-\tilde Q$ | $A_2\oplus B_2$ | $4$ | $(0,4)$ |
+| $\mathbb{B}_{\Psi}$ | the Hermitian subspace | the informational sector | $\tilde Q^{*}=\tilde Q$ | $A_1\oplus B_2$ | $4$ | $(1,3)$ |
+| $\mathbb{B}_{\Phi}$ | the anti-Hermitian subspace | the material sector | $\tilde Q^{\flat}=\tilde Q$ | $A_2\oplus B_1$ | $4$ | $(3,1)$ |
 
 The first two are the two complex subspaces, with $iU=U$; the last four are the four real-type subspaces, with $iU\cap U=\{0\}$.
 
-Each block is the intersection of the three subspaces that contain it. Two distinct subspaces meet in the blocks they share, so an intersection has dimension zero, one or three, never two, four, five or six.
+Each block is the intersection of the three subspaces that contain it. Two distinct subspaces meet in the blocks they share, so an intersection has dimension zero, one or three.
 
 ### The Three Decompositions
 
@@ -116,7 +118,7 @@ There are exactly three, because a four-element set has exactly three pairings i
 
 ### The Forms
 
-The algebra carries four scalar-valued forms, one for each choice of conjugation in the two slots: the plain form $\langle\tilde Q_1,\tilde Q_2\rangle$, the quaternionic form $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$, the Hermitian form $\langle\tilde Q_1,\tilde Q_2\rangle_{*}$ and the Krein form $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$. Each has a real part and an imaginary part on a subspace. The imaginary part, for the two sesquilinear forms, is alternating; it is the **area pairing**.
+The algebra carries four scalar-valued forms, one for each choice of conjugation in the two slots: the plain form $\langle\tilde Q_1,\tilde Q_2\rangle$, the quaternionic form $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$, the Hermitian form $\langle\tilde Q_1,\tilde Q_2\rangle_{*}$ and the Krein form $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$. On each subspace the restriction of a form splits into a real part and an imaginary part. The imaginary part of the two sesquilinear forms is alternating; it is the **area pairing**.
 
 The area pairing is non-degenerate exactly on the complex time sector, of rank $2$, and on the complex space sector, of rank $6$. It vanishes on the real sector, on the imaginary sector and on both physical sectors. The reason is one line: the pairing joins each direction to its partner under multiplication by $i$, and it is available exactly on the subspaces that contain both members of the pair.
 
@@ -133,7 +135,7 @@ The dictionary gives every one of the eight coordinates the dimension of a lengt
 | $\vec e_x,\vec e_y,\vec e_z$ | $r_x,r_y,r_z$ | the material space |
 | $i\vec e_x,i\vec e_y,i\vec e_z$ | $i h'_{x},i h'_{y},i h'_{z}$ | the informational space |
 
-The two times are one complex coordinate, $h_t+i r'_t$, and the two spaces are one complex vector, $r_x\vec e_x+r_y\vec e_y+r_z\vec e_z+i(h'_{x}\vec e_x+h'_{y}\vec e_y+h'_{z}\vec e_z)$. The first is the **clock plane**: one real axis is the clock of the informational sector, the other the clock of the material one, and the central imaginary turns one into the other. The second is the **complex space**: three real directions and their three imaginary partners.
+The two times are one complex coordinate, $h_t+i r'_t$, and the two spaces are one complex vector, $r_x\vec e_x+r_y\vec e_y+r_z\vec e_z+i(h'_{x}\vec e_x+h'_{y}\vec e_y+h'_{z}\vec e_z)$. The first is the complex time sector, read as the **clock plane**: one real axis is the clock of the informational sector, the other the clock of the material one, and the central imaginary turns one into the other. The second is the complex space sector, read as the **complex space**: three real directions and their three imaginary partners.
 
 The reading of the imaginary directions is the delicate one. In the sector dictionary the block $B_2$ is the **informational space**, the partner of the material space. In the phase-space reading of the complex space sector the same block is the **momentum half** of a configuration–momentum pair: the real direction carries the configuration and its imaginary partner carries the conjugate momentum. The two readings are of one block, and they must not be conflated. What both have in common is the algebraic fact that an imaginary spatial direction is a direction the pairing uses, not a direction in which anything propagates; the Fourier reading of the same fact is that the imaginary axis is where the conjugate variable sits.
 
@@ -141,43 +143,48 @@ The reading of the imaginary directions is the delicate one. In the sector dicti
 
 ### The Six Subspaces Are Six Physical Objects
 
-The six subspaces are not six arbitrary slices. Each is the fixed or anti-fixed space of one involution and the sum of two coordinate blocks, and each carries a definite physical structure.
+The six subspaces are not six arbitrary slices. Each is the fixed or anti-fixed space of one involution and the sum of two coordinate blocks, and each carries a definite physical structure. The sections below take them in the order of §*The Six Subspaces and the Four Blocks*, one section to a subspace, under the physical name. The two sectors, the informational and the material, are the two halves of the Hermitian split; each has its own article in this category, and the section on each states only the place it holds in the dictionary.
 
-| Subspace | Physical object | What it carries |
-| --- | --- | --- |
-| $\mathbb{B}_{C}$ | the clock plane | the two times on one complex axis; the global phase; the time–energy pair in the Fourier reading |
-| $\mathbb{B}_{V}$ | the complex three-vector | the electromagnetic field strength, the six Lorentz generators, the phase space of a spatial direction |
-| $\mathbb{B}_{H}$ | the Euclidean four-coordinate space | the Wick-rotated reading; the rotation rotors |
-| $\mathbb{B}_{iH}$ | the negative-definite four-coordinate space | the material time with the informational space; the boost generators |
-| $\mathbb{B}_{\Psi}$ | the operator space | states, observables, probability |
-| $\mathbb{B}_{\Phi}$ | the four-vector space | events, four-vectors, the interval |
+#### The Complex Time Sector $\mathbb{B}_{C}$
 
-**The complex time sector is the clock plane.** Its two coordinates are the two times, $h_t$ on the real axis and $i r'_t$ on the imaginary one, and its element is $z e_t=(h_t+i r'_t)e_t$. It is the sector of a number rather than of an operator: a central scalar is the one quantity that can take a definite value at the same time as every other, and its phase $\exp(i\theta_{\mathrm{cen}})e_t$ is a global phase that no interference experiment can detect. The area pairing has rank $2$ here, and its one non-zero entry pairs the two times. This is a different object from the global phase, and the two must not be conflated: the phase is a number, the area pairing is what makes the two times conjugate. In the Fourier reading the imaginary axis is read as the energy component of the four-momentum conjugate to the real time, and the same entry is the time–energy pairing; that is a second reading of the block, not the sector dictionary, and the two must not be conflated.
+The complex time sector is the centre, and it is read as the clock plane. Its two coordinates are the two times, $h_t$ on the real axis and $i r'_t$ on the imaginary one, and its element is $z e_t=(h_t+i r'_t)e_t$. It is the sector of a number rather than of an operator: a central scalar is the one quantity that can take a definite value at the same time as every other, and its phase $\exp(i\theta_{\mathrm{cen}})e_t$ is a global phase that no interference experiment can detect. The area pairing has rank $2$ here, and its one non-zero entry pairs the two times. This is a different object from the global phase, and the two must not be conflated: the phase is a number, the area pairing is what makes the two times conjugate. In the Fourier reading the imaginary axis is read as the energy component of the four-momentum conjugate to the real time, and the same entry is the time–energy pairing; that is a second reading of the block, not the sector dictionary, and the two must not be conflated.
 
 Here $\theta_{\mathrm{cen}}$ is the central phase: it is the argument of a unit complex number, so it is real.
 
-**The complex space sector is the complex three-vector.** Its six real directions carry the three material directions and their three informational partners. Multiplication by $i$ acts inside the sector as the **duality rotation** of the complex three-vector, which is the electric–magnetic duality of the field strength; the three real directions generate the rotations and the three imaginary ones the boosts, so the same six-dimensional carrier holds a field configuration and the generators of the transformations that act on it. In the phase-space reading the same sector is $T^*\mathbb{R}^3$: the real direction is the configuration, the imaginary partner the momentum, and the area pairing of rank $6$ is the symplectic form. **The boundary:** this is the kinematic phase space; the Hamiltonian is not supplied by the algebra, and the identification of the imaginary partner with momentum is the fixed complex structure, not a dynamical Legendre transform.
+#### The Complex Space Sector $\mathbb{B}_{V}$
 
-**The real sector is the Euclidean four-coordinate space.** Its four coefficients are real, so the $i r'_t$ writing is unavailable inside it: its element is $h_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$, the norm is positive definite of signature $(4,0)$, there is no null direction and no light cone, and the metric singles out no direction as time; the dictionary nevertheless names the $e_t$ axis the informational time. This is the Euclidean, or Wick-rotated, reading of the four-vector space, and it is the home of the rotation rotors, whose action is the rotation of the material space with the two-to-one cover of $SO(3)$. **The boundary:** it is not the physical spacetime, because its time is $h_t$ and its space is real; it is the Euclidean reading, not the Minkowski one.
+The complex space sector is the vector subspace, and it is read as the complex three-vector. Its six real directions carry the three material directions and their three informational partners. Multiplication by $i$ acts inside the sector as the **duality rotation** of the complex three-vector, which is the electric–magnetic duality of the field strength; the three real directions generate the rotations and the three imaginary ones the boosts, so the same six-dimensional carrier holds a field configuration and the generators of the transformations that act on it. In the phase-space reading the same sector is $T^*\mathbb{R}^3$: the real direction is the configuration, the imaginary partner the momentum, and the area pairing of rank $6$ is the symplectic form. **The boundary:** this is the kinematic phase space; the Hamiltonian is not supplied by the algebra, and the identification of the imaginary partner with momentum is the fixed complex structure, not a dynamical Legendre transform.
 
-**The imaginary sector is the negative-definite four-coordinate space.** Every coefficient carries the central imaginary, and its element is $i r'_t\,e_t+i(h'_{x}\vec e_x+h'_{y}\vec e_y+h'_{z}\vec e_z)$. It carries the material time with the informational space, the reverse assignment to the real sector, and its norm is negative definite of signature $(0,4)$. It is where the infinitesimal generators of the boosts lie, the three imaginary vector units. **The boundary:** a finite boost does not lie in the sector, because its scalar part is real; the sector holds the generators, and the boosts themselves are obtained by leaving it.
+#### The Real Sector $\mathbb{B}_{H}$
 
-**The two sectors** are the two halves of the Hermitian split. The material sector $\mathbb{B}_{\Phi}$ is the space of four-vectors and the interval, and the informational sector $\mathbb{B}_{\Psi}$ is the space of states and observables. Each has its own article in this category, *The Material Sector: Four-Vectors, Interval and Lorentz Action* and *The Informational Sector: States, Observables and Probability*, and this article only places them in the table.
+The real sector is the quaternion subspace, and it is read as the Euclidean four-coordinate space. Its four coefficients are real, so the $i r'_t$ writing is unavailable inside it: its element is $h_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$, the norm is positive definite of signature $(4,0)$, there is no null direction and no light cone, and the metric singles out no direction as time; the dictionary nevertheless names the $e_t$ axis the informational time. This is the Euclidean, or Wick-rotated, reading of the four-vector space, and it is the home of the rotation rotors, whose action is the rotation of the material space with the two-to-one cover of $SO(3)$. **The boundary:** it is not the physical spacetime, because its time is $h_t$ and its space is real; it is the Euclidean reading, not the Minkowski one.
+
+#### The Imaginary Sector $\mathbb{B}_{iH}$
+
+The imaginary sector is the anti-quaternion subspace, and it is read as the negative-definite four-coordinate space. Every coefficient carries the central imaginary, and its element is $i r'_t\,e_t+i(h'_{x}\vec e_x+h'_{y}\vec e_y+h'_{z}\vec e_z)$. It carries the material time with the informational space, the reverse assignment to the real sector, and its norm is negative definite of signature $(0,4)$. It is where the infinitesimal generators of the boosts lie, the three imaginary vector units, which it shares with the informational sector. **The boundary:** a finite boost does not lie in the sector, because its scalar part is real; the sector holds the generators, and the boosts themselves are obtained by leaving it.
+
+#### The Informational Sector $\mathbb{B}_{\Psi}$
+
+The informational sector is the Hermitian subspace, and it is read as the operator space. Its element is $\tilde H_\Psi=h_t\,e_t+i(h'_{x}\vec e_x+h'_{y}\vec e_y+h'_{z}\vec e_z)$; its norm is $h_t^2-{h'_{x}}^2-{h'_{y}}^2-{h'_{z}}^2$, of signature $(1,3)$; and the Hermitian form is positive definite on it and carries the probability. Its elements are the states and the observables. *The Informational Sector: States, Observables and Probability* gives the reading.
+
+#### The Material Sector $\mathbb{B}_{\Phi}$
+
+The material sector is the anti-Hermitian subspace, and it is read as the four-vector space. Its element is $\tilde R_\Phi=i r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$; its norm is $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, of signature $(3,1)$; and its zero set is the light cone. Its elements are the events, the four-vectors and the interval. *The Material Sector: Four-Vectors, Interval and Lorentz Action* gives the reading.
 
 ### The Four Real-Type Subspaces Carry the Four Signatures
 
 The quaternionic norm is one complex quadratic form. On the four real-type subspaces $\mathbb{B}_{H}$, $\mathbb{B}_{iH}$, $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ it restricts to four real quadratic forms, and the signature depends only on which subspace is taken.
 
 $$
-\boxed{\;\mathbb{B}_{H}:(4,0),\quad \mathbb{B}_{iH}:(0,4),\quad \mathbb{B}_{\Phi}:(3,1),\quad \mathbb{B}_{\Psi}:(1,3)\;}
+\boxed{\;\mathbb{B}_{H}:(4,0),\quad \mathbb{B}_{iH}:(0,4),\quad \mathbb{B}_{\Psi}:(1,3),\quad \mathbb{B}_{\Phi}:(3,1)\;}
 $$
 
-| Subspace | Blocks | Norm on the subspace | Signature | Reading |
-| --- | --- | --- | --- | --- |
-| $\mathbb{B}_{H}$ | $A_1\oplus B_1$ | $q_t^2+q_x^2+q_y^2+q_z^2$ | $(4,0)$ | Euclidean |
-| $\mathbb{B}_{iH}$ | $A_2\oplus B_2$ | $-\bigl((q'_t)^2+(q'_x)^2+(q'_y)^2+(q'_z)^2\bigr)$ | $(0,4)$ | anti-Euclidean |
-| $\mathbb{B}_{\Phi}$ | $A_2\oplus B_1$ | $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ | $(3,1)$ | Lorentzian |
-| $\mathbb{B}_{\Psi}$ | $A_1\oplus B_2$ | $h_t^2-{h'_{x}}^2-{h'_{y}}^2-{h'_{z}}^2$ | $(1,3)$ | anti-Lorentzian |
+| Subspace | Physical name | Blocks | Norm on the subspace | Signature | Reading |
+| --- | --- | --- | --- | --- | --- |
+| $\mathbb{B}_{H}$ | real sector | $A_1\oplus B_1$ | $q_t^2+q_x^2+q_y^2+q_z^2$ | $(4,0)$ | Euclidean |
+| $\mathbb{B}_{iH}$ | imaginary sector | $A_2\oplus B_2$ | $-\bigl((q'_t)^2+(q'_x)^2+(q'_y)^2+(q'_z)^2\bigr)$ | $(0,4)$ | negative definite |
+| $\mathbb{B}_{\Psi}$ | informational sector | $A_1\oplus B_2$ | $h_t^2-{h'_{x}}^2-{h'_{y}}^2-{h'_{z}}^2$ | $(1,3)$ | Lorentzian, time positive |
+| $\mathbb{B}_{\Phi}$ | material sector | $A_2\oplus B_1$ | $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ | $(3,1)$ | Lorentzian, time negative |
 
 The two definite slices are the two coefficient halves; the two indefinite slices are the two physical sectors. The Lorentzian signature of the material sector is not an independent axiom: it is what the norm becomes on the slice that carries the $i$ in the time slot, and the sign of the time direction is the sign of $i^2$. The light cone is the zero set of that form, and the causal structure is the sign of the form.
 
@@ -197,18 +204,18 @@ Each of the four maps preserves every remarkable subspace, so the involutions ac
 
 | Map | Action on a central phase | Action on the material space $B_1$ | Physical shape |
 | --- | --- | --- | --- |
-| $\bar{\cdot}$ | $\theta_{\mathrm{cen}}\mapsto-\theta_{\mathrm{cen}}$ | none | phase conjugation |
-| ${}^{\natural}$ | none | $\vec v\mapsto-\vec v$ | spatial reflection |
+| $\bar{\cdot}$ | $\theta_{\mathrm{cen}}\mapsto-\theta_{\mathrm{cen}}$ | fixed | phase conjugation |
+| ${}^{\natural}$ | fixed | $\vec v\mapsto-\vec v$ | spatial reflection |
 | ${}^{*}$ | $\theta_{\mathrm{cen}}\mapsto-\theta_{\mathrm{cen}}$ | $\vec v\mapsto-\vec v$ | the combined operation; self-adjointness |
 | $\flat=-{}^{*}$ | a sign and a phase reflection | fixes $B_1$ | the real structure |
 
 The orbit is the set of descriptions that the discrete operations produce from one element. Size one is the real line: the classical scale, on which no discrete operation acts. Size two is an element of the centre, of $\mathbb{B}_{H}$ or of $\mathbb{B}_{\Psi}$: one operation is invisible on it, so two of the four descriptions coincide. For a central element $z$ the pair is $z$ and $\bar z$. Size four is the generic element, and a generic material element is in this class: the four descriptions are distinct.
 
-**The boundary.** The size of the orbit is not the size of a multiplet, and it carries no statistics. The assignment of parity, time reversal, $PT$ and charge conjugation to the four non-trivial sign patterns is a separate labelling, and it is not a consequence of the group structure. The next section states it.
+**The boundary.** The size of the orbit is not the size of a multiplet, and it carries no statistics. The assignment of parity, time reversal, $PT$ and charge conjugation to the three non-trivial group elements and to $\flat$ is a separate labelling, and it is not a consequence of the group structure. The next section states it.
 
 ### The Klein Four Carries the Discrete Labels
 
-The three involutions of the group, with the identity, act on the four coordinate blocks, and each block is a joint eigenspace of the group: every group element acts on it by a sign. The four blocks carry the four characters of the group: on each block, the sign of a group element is that character's value. The reversal $\flat$ also acts by a sign; its pattern is the fifth row, the negative of ${}^{*}$, and it is not a character because $\flat$ is not a group element. The blocks are ordered $A_1,A_2,B_1,B_2$: the informational time, the material time, the material space and the informational space.
+The three involutions of the group, with the identity, act on the four coordinate blocks, and each block is a joint eigenspace of the group: every group element acts on it by a sign. The four blocks carry the four characters of the group: on each block, the sign of a group element is that character's value. The anti-Hermitian conjugation $\flat$ also acts by a sign; its pattern is the fifth row, the negative of ${}^{*}$, and it is not a character because $\flat$ is not a group element. The blocks are ordered $A_1,A_2,B_1,B_2$: the informational time, the material time, the material space and the informational space.
 
 | map | sign pattern $(A_1,A_2,B_1,B_2)$ | fixed space |
 | --- | --- | --- |
@@ -218,18 +225,18 @@ The three involutions of the group, with the identity, act on the four coordinat
 | ${}^{*}$ | $(+,-,-,+)$ | $\mathbb{B}_{\Psi}$ |
 | $\flat=-{}^{*}$ | $(-,+,+,-)$ | $\mathbb{B}_{\Phi}$ |
 
-The first four rows are the group; the fifth is the fourth non-trivial sign pattern, the negative of ${}^{*}$, and it is not a group element. The labels are read on those four non-trivial sign patterns:
+The first four rows are the group; the fifth is the fourth non-identity map of the table, the negative of ${}^{*}$, and it is not a group element. The labels are read on the three non-trivial group elements and on $\flat$:
 
 - **Parity $P$ is ${}^{\natural}$.** It fixes both times and negates both spaces. On the material four-vector $i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ it keeps the time and reverses the space. It is $\mathbb{C}$-linear, which is the algebraic form of the unitarity of parity.
 - **Time reversal $T$ is $\bar{\cdot}$.** On the material sector it negates the material time $A_2$ and fixes the material space $B_1$. It is antilinear, which is the algebraic form of the anti-unitarity of time reversal.
 - **The full reflection $PT$ is ${}^{*}$.** It negates the material time and the material space, so it sends $x_{\mu}\mapsto-x_{\mu}$.
-- **Charge conjugation is $\flat=-{}^{*}$.** It fixes the material sector and negates the informational one. It is a sign pattern and not a group element, which is the algebraic statement that $C$ does not join $\{1,P,T,PT\}$ as an independent factor but is the sign that turns $PT$ into its negative.
+- **Charge conjugation is $\flat=-{}^{*}$.** It fixes the material sector and negates the informational one. It is a sign-flipped conjugation and not a group element, which is the algebraic statement that $C$ does not join $\{1,P,T,PT\}$ as an independent factor but is the sign that turns $PT$ into its negative.
 
-**Three corrections belong with the table.** First, $\flat$ is the fourth non-trivial **sign pattern**, not a fourth conjugation: it differs from ${}^{*}$ by the central sign, and the group has four elements and not five. Second, $\flat$ carries the **shape** of the charge-conjugation pairing. The operation called charge conjugation belongs to the Dirac module; the twisted Clifford-algebra map is its counterpart, and the module real structure is $\bar{\cdot}$. The four levels of the name are tabulated in *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*. Third, parity exchanges the two conjugate spinor modules $S$ and $\bar S$, so the character label and the chirality action are not independent.
+**Three corrections belong with the table.** First, $\flat$ is not a fourth group element: it is the sign-flipped ${}^{*}$, it reverses the product only up to the central sign, and the group has four elements and not five. Second, $\flat$ carries the **shape** of the charge-conjugation pairing. The operation called charge conjugation belongs to the Dirac module; the twisted Clifford-algebra map is its counterpart, and the module real structure is $\bar{\cdot}$. The four levels of the name are tabulated in *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*. Third, parity exchanges the two conjugate spinor modules $S$ and $\bar S$, so the character label and the chirality action are not independent.
 
 **The second dictionary.** The Clifford-algebra literature attaches the names to the same maps in the transpose order: with the generators $i\vec e_\eta$, the grade involution is $\bar{\cdot}$, the reversion is ${}^{*}$ and the Clifford conjugation is ${}^{\natural}$, so that dictionary reads $P=\bar{\cdot}$, $T={}^{*}$ and $PT={}^{\natural}$. Both dictionaries are labelled and neither is proved. The table is the fact; the naming is the interpretation, and the interpretation above is the one whose parity fixes time and negates space.
 
-**The boundary.** The assignment is a labelled speculation, not a theorem. It is offered because it makes the four characters carry four physical names and because the linearity of each map matches the linearity of the symmetry it names. It does not derive the discrete symmetries, their conservation or their violation.
+**The boundary.** The assignment is a labelled speculation, not a theorem. It is offered because it makes the four maps carry four physical names and because the linearity of each map matches the linearity of the symmetry it names. It does not derive the discrete symmetries, their conservation or their violation.
 
 ### The Central Imaginary Is One Generator with Four Names
 
@@ -254,27 +261,23 @@ Two subspaces meet in the blocks they share, and each shared block is one physic
 
 | Intersection | Shared block | The common object |
 | --- | --- | --- |
-| $\mathbb{B}_{H}\cap\mathbb{B}_{\Phi}$ | $B_1$ | the real space |
-| $\mathbb{B}_{H}\cap\mathbb{B}_{\Psi}$ | $A_1$ | the real time |
+| $\mathbb{B}_{H}\cap\mathbb{B}_{\Phi}$ | $B_1$ | the material space |
+| $\mathbb{B}_{H}\cap\mathbb{B}_{\Psi}$ | $A_1$ | the informational time |
 | $\mathbb{B}_{C}\cap\mathbb{B}_{\Phi}$ | $A_2$ | the material time |
 | $\mathbb{B}_{V}\cap\mathbb{B}_{\Psi}$ | $B_2$ | the informational space |
-| $\mathbb{B}_{\Psi}\cap\mathbb{B}_{\Phi}$ | $\{0\}$ | nothing: an element is material or informational, never both |
+| $\mathbb{B}_{\Psi}\cap\mathbb{B}_{\Phi}$ | $\{0\}$ | nothing: no non-zero element is both material and informational |
 
-The table lists one row for each of the four blocks; every intersection of two distinct subspaces is one of these blocks or zero. The pattern is the dictionary's grammar. A shared vector block has dimension three: two descriptions agree on a space. A shared scalar block has dimension one: they agree on a time. An empty intersection means the two descriptions are complementary, and the decomposition they form is a decomposition of the whole algebra. The three decompositions are the three complementary pairs, and their sums are all of $\mathbb{B}$.
+The table gives one representative pair for each of the four blocks, and the last row is the two complementary sectors; every intersection of two distinct subspaces is one of these four blocks or zero. The pattern is the dictionary's grammar. A shared vector block has dimension three: two descriptions agree on a space. A shared scalar block has dimension one: they agree on a time. An empty intersection means the two descriptions are complementary, and the decomposition they form is a decomposition of the whole algebra. The three decompositions are the three complementary pairs, and their sums are all of $\mathbb{B}$.
 
 **The boundary.** An intersection is a subspace of elements, not a set of physical objects. A shared time is one direction, not one clock reading; the two sectors carry different coordinates on the central time plane, $h_t$ and $i r'_t$.
 
 ### The Area Pairing Marks the Complex Sectors
 
-The four forms are the scalar parts of the four products. On a subspace each form has a real part and an imaginary part, and the imaginary part of the two sesquilinear forms is alternating: it is the area pairing. The pairing is non-degenerate exactly on the complex time sector, of rank $2$, and on the complex space sector, of rank $6$; it vanishes on the real sector, on the imaginary sector and on both physical sectors.
-
-The reason is the one already stated. The pairing joins each direction to its partner under multiplication by $i$. The complex time sector contains both times, so it has one pair to join; the complex space sector contains the three material directions and their three partners, so it has three; the real and imaginary sectors contain one member of each pair and never both; and the two physical sectors are exchanged by $i$, so no pair lies inside either. This is the sharpest algebraic sense in which the two physical sectors are phase-free.
-
-The physical interpretation is a division of labour. The area pairing is the **symplectic form** of the phase plane and of the phase space: on the complex time sector it pairs the two times, on the complex space sector each material direction with its informational partner; in the Fourier and phase-space readings the same pairings are time–energy and configuration–momentum, and the primitive is the action. The physical sectors carry the **metric** and the **probability**, which are symmetric pairings, and no area. The two roles are distinct, and the complex sectors are where the area lives.
+The area pairing is the alternating companion of the two sesquilinear forms, and its rank on the six subspaces is the one stated in §*The Forms*. The physical interpretation is a division of labour. The area pairing is the **symplectic form** of the phase plane and of the phase space: on the complex time sector it pairs the two times, on the complex space sector each material direction with its informational partner; in the Fourier and phase-space readings the same pairings are time–energy and configuration–momentum, and the primitive is the action. The physical sectors carry the **metric** and the **probability**, which are symmetric pairings, and no area. The two roles are distinct, and the complex sectors are where the area lives.
 
 **The boundary.** The vanishing statement concerns the **scalar-valued** alternating part of the form. The **vector-valued** antisymmetric half of the product is not zero on a physical sector; on the informational sector it is the coherence, and it has its own article. A sector without an area pairing is not a sector without an antisymmetric structure. The area pairing is a property of the restriction of a form; it does not add a dynamics.
 
-### The Relations Table Is an Index
+### The Intersection Table Is an Index
 
 The intersection table says which two subspaces share a block. Read as an index, it answers a prior question: **where can a proposed interpretation be posed at all?** A composition needs a subspace on which the product closes; an observable needs a subspace on which the Hermitian form is real; a state needs a subspace on which positivity makes sense; a gauge generator needs a subspace on which the bracket closes. The table does not supply those structures; it says which subspace carries which.
 
@@ -284,18 +287,18 @@ The three decompositions say which operation preserves which split, and therefor
 
 ## Limits
 
-The article interprets the linear structure, the involutions, the four real-type subspaces and the restrictions of the forms. It does not interpret the product, the cone, the topology or the analysis of the algebra; each belongs to another article of the category. The physical names are the coordinate dictionary of the corpus. The conventions article records which of them are forced and which are chosen, and the choice of the anti-Hermitian half as the material sector is a convention that the whole series inherits. The physical realisation of the informational sector is a hypothesis, stated and bounded in its own article. The discrete labels are a labelled speculation and add no theorem.
+The article interprets the linear structure, the involutions, the four real-type subspaces and the restrictions of the forms. It does not interpret the product, the cone, the topology or the analysis of the algebra; each belongs to another article of the category. The physical names are those of *Algebra and Element Conventions*, and that article records which of them are forced and which are chosen; the choice of the anti-Hermitian half as the material sector is a convention that the whole series inherits. The physical realisation of the informational sector is a hypothesis, stated and bounded in its own article. The discrete labels are a labelled speculation and add no theorem.
 
 ## Summary
 
-- The eight real coordinates are two times and two spaces, grouped in four blocks: $A_1,A_2$ scalar and $B_1,B_2$ vector.
+- The eight real coordinates are two times and two space triples, grouped in four blocks: $A_1,A_2$ scalar and $B_1,B_2$ vector.
 - The material sector is the imaginary time with the real space; the informational sector is the real time with the imaginary space.
-- The six subspaces are six physical objects: the clock plane, the complex three-vector, the Euclidean four-space, the negative-definite four-space, the operator space and the four-vector space.
-- The four real-type subspaces carry the four signatures of the quaternionic norm, $(4,0)$, $(0,4)$, $(3,1)$ and $(1,3)$; the two sectors are the two indefinite ones.
+- The six subspaces carry an algebraic name and a physical name: the centre is the complex time sector, the vector subspace the complex space sector, the quaternion subspace the real sector, the anti-quaternion subspace the imaginary sector, the Hermitian subspace the informational sector, and the anti-Hermitian subspace the material sector.
+- The four real-type subspaces carry the four signatures of the quaternionic norm, $(4,0)$, $(0,4)$, $(1,3)$ and $(3,1)$; the two sectors are the two indefinite ones.
 - The Lorentzian signature of the material sector follows from the placement of $i$ in its time slot, not from an independent axiom.
 - The three decompositions are the three pairings of the four blocks, and there is no fourth.
 - The three involutions, with the identity, form a Klein four-group; they preserve every subspace and have orbits of size one, two or four.
-- The four blocks carry the four characters of the Klein four; parity, time reversal and $PT$ are three of them, and $\flat=-{}^{*}$ is the fourth non-trivial pattern, the shape of charge conjugation and not a group element.
+- The four blocks carry the four characters of the Klein four; parity, time reversal and $PT$ are three of them, and $\flat=-{}^{*}$ is the fourth non-identity map, the shape of charge conjugation and not a group element.
 - The intersection table is an index of where an interpretation can be posed: the subspace names the object and the operation that preserves it names the question.
 - Multiplication by $i$ is one map with four names: global phase, duality rotation, Wick rotation and sector exchange.
 - The area pairing is non-degenerate exactly on the two complex sectors, of rank $2$ and rank $6$, and vanishes on the four others.
@@ -308,10 +311,13 @@ The article interprets the linear structure, the involutions, the four real-type
 | $Q_\mu=q_\mu+iq'_\mu$ | a complex coefficient, with real and imaginary parts |
 | $J(\tilde Q)=i\tilde Q$ | the complex structure, $J^2=-\mathrm{id}$ |
 | ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ | quaternion, complex and Hermitian conjugation |
-| $\flat=-{}^{*}$ | the reversal, outside the Klein four |
-| $\mathbb{B}_{C}$, $\mathbb{B}_{V}$ | the centre and the vector subspace |
-| $\mathbb{B}_{H}$, $\mathbb{B}_{iH}$ | the quaternion and anti-quaternion subspaces |
-| $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | the Hermitian and anti-Hermitian subspaces |
+| $\flat=-{}^{*}$ | the anti-Hermitian conjugation, outside the Klein four |
+| $\mathbb{B}_{C}$ | the centre; the complex time sector, read as the clock plane |
+| $\mathbb{B}_{V}$ | the vector subspace; the complex space sector, read as the complex three-vector |
+| $\mathbb{B}_{H}$ | the quaternion subspace; the real sector, read as the Euclidean four-coordinate space |
+| $\mathbb{B}_{iH}$ | the anti-quaternion subspace; the imaginary sector, read as the negative-definite four-coordinate space |
+| $\mathbb{B}_{\Psi}$ | the Hermitian subspace; the informational sector, read as the operator space |
+| $\mathbb{B}_{\Phi}$ | the anti-Hermitian subspace; the material sector, read as the four-vector space |
 | $\tilde H_\Psi$, $\tilde R_\Phi$ | the informational and material parts of an element, $\tilde Q=\tilde H_\Psi+\tilde R_\Phi$ |
 | $A_1,A_2$ | the scalar blocks $\mathbb{R}e_t$ and $\mathbb{R}(ie_t)$ |
 | $B_1,B_2$ | the real and imaginary vector blocks |
@@ -324,5 +330,6 @@ The article interprets the linear structure, the involutions, the four real-type
 - [The Group of Involutions](../articles_maths/the-group-of-involutions.html), for the Klein four-group, its subgroups and its orbits.
 - [Subspaces and Decompositions](../articles_maths/subspaces-and-decompositions-of-the-biquaternion-algebra.html), for the six subspaces one by one, the three decompositions, the coordinate blocks and the intersection table.
 - [Remarkable Subspaces and the Four General Products, Forms and Norms](../articles_maths/remarkable-subspaces-and-the-four-general-products-forms-and-norms.html), for the restrictions of the forms and the area pairing.
-- [Conventions in the Biquaternion Universe](algebra-and-element-conventions.html), for the coordinate dictionary and the choice of the material sector.
+- [Algebra and Element Conventions](algebra-and-element-conventions.html), for the coordinate dictionary, the two names of each subspace and the choice of the material sector.
+- [Product and Form Conventions](product-and-form-conventions.html), for the four forms and their names.
 - [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) and [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the two sectors.
