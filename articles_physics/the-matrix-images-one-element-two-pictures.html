@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Matrix Images: One Element, Two Pictures — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-matrix-images-one-element-two-pictures"><strong>The Matrix Images: One Element, Two Pictures</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>This entry reads the second section of the mathematical category: the matrix representations.</strong> Four mathematics articles build them — the two families in a general frame, the axis-free form and the Peirce form in $M_4(\mathbb{C})$, and the compressed form in $M_2(\mathbb{C})$.</p>
+<p><strong>A matrix image is a choice of picture, not a new object.</strong> The element is one; the array depends on the frame and on the size. The entry states what each picture makes visible, what each one loses, and where the conversions between them are linear and where they are not.</p>
+<p><strong>The one idea that governs the section is the doubling.</strong> The $4\times4$ picture is the $2\times2$ picture written twice, and every quantity of the smaller picture changes at the larger size by a definite rule: additive quantities double, multiplicative ones square, the spectrum repeats, and the minimal polynomial does not change. A computation that does not say which size it is in produces factors of two and four that look like physics and are not.</p>
+<h2 id="the-source-table">The Source Table</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Mathematical Content</th>
+<th>Source Mathematical Article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the left and the right families, their three composition laws, the switch between the sides, the frame-changing matrix, the $2\times2$ family and why it has no second side</td>
+<td><a href="../articles_maths/families-of-matrix-representations.html">Families of Matrix Representations of the Biquaternion Algebra</a></td>
+</tr>
+<tr>
+<td>the axis-free basis, the two families, the product, the trace, the determinant, the four norms, the six subspaces in the image, the three splits</td>
+<td><a href="../articles_maths/m4c-axis-free-representation.html">$M_4(\mathbb{C})$ Axis-Free Representation</a></td>
+</tr>
+<tr>
+<td>the root and the Peirce frame, the two families, the stitch, the switch to the axis-free display, the sixteen products, the comparison table, which roots give a Peirce frame</td>
+<td><a href="../articles_maths/m4c-pauli-representation.html">$M_4(\mathbb{C})$ Pauli Representation</a></td>
+</tr>
+<tr>
+<td>the root and the two idempotents, the Peirce basis, the compression, the product, the trace, the determinant, the spectral projectors, the diagonalising matrix, the adjugate and the inverse, the four norms, the six subspaces</td>
+<td><a href="../articles_maths/m2c-pauli-representation.html">$M_2(\mathbb{C})$ Pauli Representation</a></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The rows are the entry's own order.</strong> The general frame comes first, then the regular size, then the compressed size, and the reading goes with them.</p>
+<h2 id="the-results-in-brief">The Results in Brief</h2>
+<h3 id="the-two-families">The Two Families</h3>
+<p><strong>Fix a frame and read the columns.</strong> For a frame $\mathcal{F}=(f_1,f_2,f_3,f_4)$ of $\mathbb{B}$,</p>
+<p>$$
+L(\tilde Q)_{\mu\nu}=\bigl[\tilde Qf_\nu\bigr]_\mu,\qquad R(\tilde Q)_{\mu\nu}=\bigl[f_\nu\tilde Q\bigr]_\mu .
+$$</p>
+<p><strong>Three laws hold, and they need no coordinates.</strong></p>
+<p>$$
+L(\tilde Q_2\tilde Q)=L(\tilde Q_2)L(\tilde Q),\qquad R(\tilde Q_2\tilde Q)=R(\tilde Q)R(\tilde Q_2),\qquad L(\tilde Q_2)R(\tilde Q)=R(\tilde Q)L(\tilde Q_2) .
+$$</p>
+<p><strong>The left family is the algebra and the right family is its opposite.</strong> The second law carries the product backwards. Both images are faithful and four-complex-dimensional inside the sixteen of $M_4(\mathbb{C})$.</p>
+<p><strong>The two families meet in the scalars and nowhere else.</strong></p>
+<p>$$
+L(\tilde Q)=R(\tilde Q)\iff\tilde Q\in\mathbb{C}e_t,\qquad \mathbb{B}_L\cap\mathbb{B}_R=\mathbb{C}\,\mathrm I_4 .
+$$</p>
+<p>Two four-dimensional spaces with a line in common span seven dimensions, not eight.</p>
+<h3 id="the-invariants-at-the-two-sizes">The Invariants at the Two Sizes</h3>
+<p>$$
+\operatorname{Tr}L(\tilde Q)=\operatorname{Tr}R(\tilde Q)=4Q_t,\qquad \det L(\tilde Q)=\det R(\tilde Q)=\langle\tilde Q\rangle_{\natural}^{2}=N^2 ,
+$$</p>
+<p>$$
+\chi(\lambda)=\bigl((\lambda-Q_t)^2+B^2\bigr)^2,\qquad \operatorname{spec}=\{Q_t+iB,\ Q_t-iB\}\ \text{each twice} .
+$$</p>
+<p><strong>At size two the same data appear at half the size.</strong></p>
+<p>$$
+\operatorname{Tr}\mathsf M_2(\tilde Q)=2Q_t,\qquad \det\mathsf M_2(\tilde Q)=N,\qquad \operatorname{spec}=\{Q_t+iB,\ Q_t-iB\},\qquad \operatorname{rank}\in\{0,1,2\} .
+$$</p>
+<p><strong>At size four the rank is even.</strong> It is twice the rank of the $2\times2$ image, hence $0$, $2$ or $4$, and never $1$ or $3$.</p>
+<h3 id="the-doubling-rule">The Doubling Rule</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>quantity</th>
+<th>size two</th>
+<th>size four</th>
+<th>rule</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>trace</td>
+<td>$2Q_t$</td>
+<td>$4Q_t$</td>
+<td>double</td>
+</tr>
+<tr>
+<td>determinant</td>
+<td>$N$</td>
+<td>$N^2$</td>
+<td>square</td>
+</tr>
+<tr>
+<td>characteristic polynomial</td>
+<td>degree $2$</td>
+<td>its square</td>
+<td>square</td>
+</tr>
+<tr>
+<td>spectrum</td>
+<td>$\lambda_\pm$ once each</td>
+<td>each twice</td>
+<td>repeat</td>
+</tr>
+<tr>
+<td>rank</td>
+<td>$r$</td>
+<td>$2r$</td>
+<td>double</td>
+</tr>
+<tr>
+<td>minimal polynomial</td>
+<td>degree $2$</td>
+<td>degree $2$</td>
+<td>unchanged</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The last row is the exception.</strong> The characteristic polynomial squares and the minimal polynomial does not, because the square of a minimal polynomial is not minimal.</p>
+<h3 id="the-pauli-correspondence">The Pauli Correspondence</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>unit</th>
+<th>matrix</th>
+<th>Hermitian</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e_t$</td>
+<td>$\mathrm I_2$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$\vec e_\eta$</td>
+<td>$-i\sigma_\eta$</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$i\vec e_\eta$</td>
+<td>$\sigma_\eta$</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table></div>
+<p>$$
+\boxed{\;\mathsf M_2(\tilde Q)=Q_t\mathrm I_2-i\bigl(Q_x\sigma_1+Q_y\sigma_2+Q_z\sigma_3\bigr)\;}
+$$</p>
+<p><strong>Hermitian conjugation becomes the conjugate transpose,</strong> $\mathsf M_2(\tilde Q^{*})=\mathsf M_2(\tilde Q)^{\dagger}$, so the fixed space of ${}^{*}$ is carried onto the Hermitian matrices.</p>
+<p><strong>There is no second side at size two.</strong> The right action there is the ordinary matrix product $\mathsf A\mapsto\mathsf A\,\mathsf M_2(\tilde Q)$, which is not left multiplication by a matrix unless $\mathsf M_2(\tilde Q)$ is scalar. At size two the transpose is a conjugation and returns the conjugate element; the second side appears only when the element is read as acting on a carrier.</p>
+<h3 id="the-peirce-frame">The Peirce Frame</h3>
+<p><strong>A root of the unit fixes a frame.</strong> For $\vec Z=\sum_ka_k\vec e_k$ with</p>
+<p>$$
+\vec Z^2=-\bigl(a_x^2+a_y^2+a_z^2\bigr)e_t=e_t ,
+$$</p>
+<p>the condition is $a_x^2+a_y^2+a_z^2=-1$, one complex equation in three unknowns: a family of real dimension four. The root gives the idempotent pair, and the pair gives a frame.</p>
+<p><strong>In that frame the sixteen matrices are monomial, unitary, of determinant one, with entries in $\mathbb{Z}[i]$.</strong> The display is a tensor product,</p>
+<p>$$
+L(\tilde Q)=\mathrm I_2\otimes\mathsf M_2(\tilde Q),\qquad R(\tilde Q)=\mathsf M_2(\tilde Q)^{\mathsf T}\otimes\mathrm I_2 ,
+$$</p>
+<p>the idempotents are the first and fourth frame vectors, and the stitch is a pure swap, $R=\mathsf P L^{\mathsf T}\mathsf P$.</p>
+<p><strong>Only the six coordinate roots keep the sparsity.</strong> The roots $\pm i\vec e_x,\pm i\vec e_y,\pm i\vec e_z$ give one frame up to cyclic relabelling and the exchange of the two idempotents. A root with two nonzero coordinates densifies every array.</p>
+<p><strong>Every frame that contains two orthogonal idempotents summing to $e_t$ is a root frame.</strong> Their difference is $\vec Z=2\tilde\Pi_+-e_t$, a vector of square $e_t$.</p>
+<h3 id="the-six-subspaces-in-the-image">The Six Subspaces in the Image</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>subspace</th>
+<th>condition on $L(\tilde Q)$</th>
+<th>$\operatorname{Tr}$</th>
+<th>$\det\mathsf M_2$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}_{C}$</td>
+<td>$M=\lambda\mathrm I_4$</td>
+<td>$4Q_t$</td>
+<td>$Q_t^2$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{V}$</td>
+<td>$\operatorname{Tr}M=0$</td>
+<td>$0$</td>
+<td>$B^2$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{H}$</td>
+<td>$M=\overline M$</td>
+<td>$4q_t$</td>
+<td>$\sum q_\mu^2$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{iH}$</td>
+<td>$M=-\overline M$</td>
+<td>$4iq'_t$</td>
+<td>$-\sum(q'_\mu)^2$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{\Psi}$</td>
+<td>$M=M^{\dagger}$</td>
+<td>$4q_t$</td>
+<td>$q_t^2-\lvert\vec q'\rvert^2$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{\Phi}$</td>
+<td>$M=-M^{\dagger}$</td>
+<td>$4iq'_t$</td>
+<td>$-(q'_t)^2+\lvert\vec q\rvert^2$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The four conjugations become the four matrix involutions.</strong> Complex conjugation is the entrywise bar, quaternion conjugation is the transpose in the axis-free basis, Hermitian conjugation is the dagger, and the anti-Hermitian one is minus the dagger.</p>
+<p><strong>The conditions are necessary and not sufficient in the ambient $M_4(\mathbb{C})$.</strong> The real matrices, the Hermitian matrices and the anti-Hermitian matrices each form a real space of dimension sixteen; the image is a four-dimensional subspace of each. A condition stated on the image is a statement about the image and not about matrix theory.</p>
+<p><strong>Two of the six are closed under the product and the others are not.</strong> The centre and the quaternion subspace are subalgebras; the vector subspace is a Lie subalgebra under the commutator; the anti-quaternion and the two sector images are neither.</p>
+<h3 id="the-spectral-projectors">The Spectral Projectors</h3>
+<p><strong>A general element carries its own root and its own idempotent pair.</strong> With $B^2\neq0$ and $B$ a square root, $\vec Z=-i\vec Q/B$ is a root, and the two projectors $\rho_\pm$ are the spectral projectors of the element. A diagonalising matrix is</p>
+<p>$$
+\mathsf C_Q=\begin{pmatrix}B-Q_z&Q_x-iQ_y\\-Q_x-iQ_y&B-Q_z\end{pmatrix},\qquad \det\mathsf C_Q=2B(B-Q_z) ,
+$$</p>
+<p>with a second chart for $B=Q_z$ of determinant $-2B(B+Q_z)$. The two determinants cannot both vanish, so the pair of charts covers every element with $B\neq0$.</p>
+<p><strong>The freedom left is the two diagonal rescalings.</strong> $\mathsf C_Q\mapsto\lambda\mathsf C_QD$ with $D$ invertible diagonal, and $\lambda$ cancels from the similarity.</p>
+<h3 id="the-adjugate-and-the-inverse">The Adjugate and the Inverse</h3>
+<p>$$
+\mathsf M^{-1}=\frac{\mathsf M^{\mathsf T}}{N},\qquad \operatorname{adj}\mathsf M=N\mathsf M^{\mathsf T},\qquad \operatorname{adj}\bigl(\operatorname{adj}\mathsf M\bigr)=N^{4}\mathsf M .
+$$</p>
+<p><strong>At size four the adjugate is not an involution and not linear.</strong> At size two it is both. The inverse formula is the $2\times2$ one with the determinant replaced by $N$ and the transpose standing for the conjugate.</p>
+<h2 id="the-interpretations">The Interpretations</h2>
+<h3 id="i2a-one-element-two-pictures-and-the-doubling-is-not-a-second-particle">I.2.a — One Element, Two Pictures, and the Doubling Is Not a Second Particle</h3>
+<p><strong>Read:</strong> the $4\times4$ regular image is the $2\times2$ image written twice, and the two copies are the two dimensions of the module.</p>
+<p><strong>The tensor display makes the doubling visible as a block structure.</strong> $L=\mathrm I_2\otimes\mathsf M_2$ and $R=\mathsf M_2^{\mathsf T}\otimes\mathrm I_2$: the first factor of each tensor is the copy index, the second is the element. The matrix is a two-by-two array of blocks, each block a copy of $\mathsf M_2(\tilde Q)$.</p>
+<p><strong>The consequences are bookkeeping and they are not optional.</strong> The trace doubles because there are two blocks. The determinant squares because it is multiplicative over the blocks. The spectrum repeats because each block has the same two eigenvalues. The rank doubles because both blocks have the same rank. None of these is a physical multiplicity.</p>
+<p><strong>The boundary.</strong> The copy index is not a chirality, not a generation and not a particle label. The two copies are the two columns of the module, and the two minimal left ideals they correspond to are isomorphic, so nothing in the algebra distinguishes them. A reading that treats the two copies as two species is reading the display and not the algebra.</p>
+<h3 id="i2b-the-qubit-is-the-math101-image-and-it-has-one-side">I.2.b — The Qubit Is the $2\times2$ Image, and It Has One Side</h3>
+<p><strong>Read:</strong> the compressed image is the state space of a two-level system, and the regular image is the same object with its copy index exposed.</p>
+<p><strong>At size two the picture is complete and it has one side.</strong> The carrier is $M_2(\mathbb{C})$ itself: the element acts on a two-component column, and the column is a spinor. The right action there is an ordinary matrix product, and it is not the left multiplication by a second matrix. So the element yields one matrix, and the "before" and "after" pictures collapse into one.</p>
+<p><strong>The transposition and the conjugation are the same operation at this size.</strong> The conjugating matrix is $\varepsilon=i\sigma_2$, with $\varepsilon^{\mathsf T}=-\varepsilon$ and $\varepsilon^{2}=-\mathrm I_2$, and</p>
+<p>$$
+\mathsf M_2(\tilde Q^{\natural})=\varepsilon\,\mathsf M_2(\tilde Q)^{\mathsf T}\varepsilon^{-1} .
+$$</p>
+<p>The transpose returns the conjugate element, not a second side. At size four the two operations separate, and that separation is what the regular picture buys.</p>
+<p><strong>The boundary.</strong> The $2\times2$ image is a model of the module and not of the algebra's action on itself. Anything that needs the algebra as a carrier — a commutator of two multiplications, a two-sided operator, the Peirce corners — has no home at this size.</p>
+<h3 id="i2c-left-multiplication-carries-right-multiplication-couples-the-mass-is-a-right-action">I.2.c — Left Multiplication Carries, Right Multiplication Couples: the Mass Is a Right Action</h3>
+<p><strong>Read:</strong> the two families are the two things an element can do to another element. A left multiplication carries what it acts on; a right multiplication changes its internal index.</p>
+<p><strong>The reason is one line of the composition laws.</strong> $L(\tilde Q_2\tilde Q)=L(\tilde Q_2)L(\tilde Q)$ is associativity read on the left, so left multiplication composes forward. $R(\tilde Q_2\tilde Q)=R(\tilde Q)R(\tilde Q_2)$ carries the product backwards, so right multiplication is a map on the other side of the argument.</p>
+<p><strong>The mass is a right multiplication, and the algebra says why.</strong> Left multiplication preserves the copy index, so a term that couples the two copies cannot be a left action. The coupling is the right multiplication by the column swap</p>
+<p>$$
+J=i\vec e_x,\qquad J^{2}=e_t,\qquad \mathsf M_2(J)=\sigma_1,\qquad R_J(\tilde Q)=\tilde QJ ,
+$$</p>
+<p>and $R_J$ exchanges the two columns with $R_J^{2}=\mathrm I$. The coupling element has to be a unit, because the mass is a bijection between the copies: one coefficient in each direction. A nilpotent cannot serve. For $\vec\Upsilon_x$ the matrix is $E_{12}$, the right multiplication carries the first column into the second and annihilates the second, and the map has rank two and no inverse. That is a one-way copy flip, not a mass.</p>
+<p><strong>The boundary.</strong> The statement is structural: it says which kind of action can couple the two copies, and it says that the coupling element must be off the cone. It does not give the coupling a value, and it does not produce a mass spectrum. The magnitude of the mass is an input, and the algebra is scale-free.</p>
+<h3 id="i2d-the-factor-math115-separates-the-generators-from-the-observables">I.2.d — The Factor $i$ Separates the Generators from the Observables</h3>
+<p><strong>Read:</strong> the algebra's own basis maps to minus $i$ times the Pauli matrices, and the Hermitian basis maps to the Pauli matrices. The two rows differ by one factor and by nothing else.</p>
+<p>$$
+\vec e_\eta\longmapsto-i\sigma_\eta\ \ (\text{anti-Hermitian, generates}),\qquad i\vec e_\eta\longmapsto\sigma_\eta\ \ (\text{Hermitian, is measured}) .
+$$</p>
+<p><strong>The factor is forced, and the sign is forced.</strong> A real $2\times2$ matrix of square $-\mathrm I_2$ is a complex structure on $\mathbb{R}^2$; three of them, anticommuting, are the quaternionic structure. The algebra whose vectors square to $-e_t$ needs the coefficient field to supply the $i$ that turns $\sigma_\eta$ into $-i\sigma_\eta$. The alternative assignment $\vec e_\eta\mapsto-\mathsf M_2(\vec e_\eta)$ keeps the squares and fails the products.</p>
+<p><strong>So $i$ is not bookkeeping.</strong> It is the statement that the three directions of the algebra are generators of rotations and not observables, and that the same three directions multiplied by $i$ are observables and not generators. The complexification is what allows one algebra to hold both.</p>
+<p><strong>The boundary.</strong> The argument explains why the factor is present in the model. It does not derive the complex numbers from anything physical, and it does not say that a measured quantity must be Hermitian; that is a separate postulate which the image makes convenient.</p>
+<h3 id="i2e-the-trace-is-the-clock-and-the-traceless-part-is-the-motion">I.2.e — The Trace Is the Clock and the Traceless Part Is the Motion</h3>
+<p><strong>Read:</strong> the matrix trace sees the scalar part only, and the traceless part of the image is the vector part.</p>
+<p>$$
+\operatorname{Tr}L(\tilde Q)=4Q_t,\qquad \operatorname{Tr}M=0\iff\tilde Q\in\mathbb{B}_{V} .
+$$</p>
+<p><strong>The split is exact, and it is the scalar–vector split in the image.</strong> The trace is additive, bilinear and blind to everything except $Q_t$; the traceless remainder carries the three directions. In the axis-free display the vector image is skew-symmetric, $M^{\mathsf T}=-M$, so the traceless condition and the antisymmetry coincide inside the image.</p>
+<p><strong>The physical reading is the one from the previous entry, in matrix form.</strong> The scalar part is the complex time, so the trace is the clock; the vector part is the three directions, so the traceless part is the motion. A matrix statement about a biquaternion that uses only the trace is a statement about time, and it cannot see a direction.</p>
+<p><strong>The boundary.</strong> The factor four is the dimension of the regular module and the factor two at size two is the dimension of the spinor module. Neither is a physical factor, and both are the origin of the factor-of-two errors that occur in computations that change size without saying so.</p>
+<h3 id="i2f-the-determinant-is-one-function-with-three-readings">I.2.f — The Determinant Is One Function with Three Readings</h3>
+<p><strong>Read:</strong> the determinant is the norm, and the norm is read differently on three real slices.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>slice</th>
+<th>determinant</th>
+<th>reading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>material $\mathbb{B}_{\Phi}$</td>
+<td>$-(r'_t)^2+\lvert\vec r\rvert^2$</td>
+<td>the interval</td>
+</tr>
+<tr>
+<td>informational $\mathbb{B}_{\Psi}$</td>
+<td>$h_t^2-\lvert\vec h'\rvert^2$</td>
+<td>the causal type</td>
+</tr>
+<tr>
+<td>trace-one state</td>
+<td>$\tfrac14(1-\lvert\vec r\rvert^2)$</td>
+<td>the mixedness</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>One zero set, three meanings.</strong> The determinant vanishes on the light cone, on the boundary of the state space, and on the set of pure states, and these are three descriptions of one locus in three slices. Purity is affine in the determinant on the trace-one slice.</p>
+<p><strong>The image makes invertibility a determinant.</strong> A unit is an element with $N\neq0$, so in the matrix image a unit is a matrix with non-zero determinant. The algebraic criterion of the previous entry and the matrix criterion are the same criterion, and the zero-divisor cone is the determinant's vanishing set.</p>
+<p><strong>The boundary.</strong> These are three restrictions of one function to three real slices, not three quantities. A statement about the determinant must say which slice it is on, or it will read an interval as a probability weight.</p>
+<h3 id="i2g-the-determinant-is-a-volume-and-an-interval-is-not">I.2.g — The Determinant Is a Volume, and an Interval Is Not</h3>
+<p><strong>Read:</strong> multiplication by $\mathsf M$ is a real-linear map of $\mathbb{C}^2\cong\mathbb{R}^4$, and its real determinant is $\lvert\det\mathsf M\rvert^2$.</p>
+<p><strong>On the unit-norm slice the map is volume preserving.</strong> There $\det\mathsf M=1$, so the real determinant is one and the group is $SL_2(\mathbb{C})$. Volume preservation is a property of the transformation, and it holds for every element of the group.</p>
+<p><strong>The two readings agree only in the zero set.</strong> The volume is the volume of the realification of the module; the interval is the interval of the material sector. They vanish together, because both are built from the same determinant, and elsewhere they are different functions of the same four numbers.</p>
+<p><strong>The boundary.</strong> A "volume" in the module and a "volume" in spacetime are different objects with one algebraic ancestor. An argument that transfers a volume-preservation statement to a spacetime volume is transferring a statement between two different realifications.</p>
+<h3 id="i2h-the-doubling-rule-is-where-the-factors-of-two-live">I.2.h — The Doubling Rule Is Where the Factors of Two Live</h3>
+<p><strong>Read:</strong> every quantity of the smaller picture changes in one of three ways at the larger size, and the three ways are fixed by the block structure.</p>
+<p><strong>Additive quantities double, multiplicative ones square, the spectrum repeats, the minimal polynomial does not change.</strong> The first four follow from the block form. The last does not, and it is the one that catches errors: the characteristic polynomial squares and the minimal polynomial stays at degree two, because the square of a minimal polynomial is not minimal. An element therefore has two eigenmodes and not four, and the four entries of the regular spectrum are two modes counted twice.</p>
+<p><strong>The trace, the determinant and the rank are three different rules on one object.</strong> $4Q_t$ against $2Q_t$; $N^2$ against $N$; $2r$ against $r$. A number read at the wrong size is wrong by a definite factor, and the factor is always a power of two.</p>
+<p><strong>The operator picture is worse.</strong> The two-sided operator $X\mapsto\tilde QX\tilde Q^{*}$ is quadratic in the element, so it double-counts the parameters: its trace is $4\lvert Q_t\rvert^2$ and its determinant is $\lvert N\rvert^4$. Only the zero sets of the three determinants agree.</p>
+<p><strong>The boundary.</strong> The rule is bookkeeping and not physics. Its role in this category is diagnostic: when a factor of two appears in an argument, the first question is which picture the argument is in.</p>
+<h3 id="i2i-the-element-stores-half-the-rapidity">I.2.i — The Element Stores Half the Rapidity</h3>
+<p><strong>Read:</strong> a boost rotor of rapidity $\eta$ has a matrix with eigenvalues $e^{\pm\eta/2}$, and its two-sided operator has eigenvalues $e^{\eta},1,1,e^{-\eta}$.</p>
+<p>$$
+\tilde B_\eta=\cosh\tfrac{\eta}{2}\,e_t+\sinh\tfrac{\eta}{2}\,i\vec e_z,\qquad \mathsf M_2(\tilde B_\eta)=\operatorname{diag}\bigl(e^{\eta/2},e^{-\eta/2}\bigr) .
+$$</p>
+<p><strong>The half is the double cover, read on the spectrum.</strong> The element acts on the spinor, so it carries half of the rapidity; the congruence acts on the four-vector, so it carries the whole of it. The two middle eigenvalues of the operator are the transverse directions, which the boost fixes.</p>
+<p><strong>The same factor appears for a rotation, with a sign that is observable.</strong> For a rotation of angle $\theta$ the element has eigenvalues $e^{\pm i\theta/2}$ and the operator has $e^{\pm i\theta}$ beside two ones. At $\theta=2\pi$ the element eigenvalues are $-1$ and the operator eigenvalues are $1$: the spinor returns with a sign and the vector returns unchanged.</p>
+<p><strong>The boundary.</strong> The reading needs a diagonalisable element and a pure boost or rotation. On the cone one eigenvalue vanishes, on its trace-zero part the two collide at zero, and the reading stops. For a general Lorentz element no single rapidity exists, and the polar decomposition separates the boost from the rotation.</p>
+<h3 id="i2j-the-central-phase-is-the-fibre-and-the-operator-cannot-see-it">I.2.j — The Central Phase Is the Fibre, and the Operator Cannot See It</h3>
+<p><strong>Read:</strong> the central element $e^{i\theta}e_t$ maps to the scalar matrix $e^{i\theta}\mathrm I_2$, which multiplies the element, multiplies the determinant by $e^{2i\theta}$, multiplies a state by $e^{i\theta}$, and acts trivially in the two-sided operator.</p>
+<p><strong>A state is a ray and not a vector.</strong> The scalar matrix does not preserve the trace-one slice, because it multiplies it by a phase; so the phase is not a property of the state and the state is an equivalence class. The map $\varsigma\mapsto\varsigma\varsigma^{\dagger}$ from unit spinors to rank-one Hermitian matrices of trace one has the phase circle as its fibre, and the bundle</p>
+<p>$$
+U(1)\hookrightarrow S^{3}\longrightarrow S^{2}
+$$</p>
+<p>is the Hopf bundle.</p>
+<p><strong>The element picture sees the phase and the operator picture does not.</strong> This is why the polar word carries a phase and the two-sided operator does not, and it is why a phase cannot be an observable: no operator of the algebra's own action records it.</p>
+<p><strong>The boundary.</strong> The fibre of the ray map and the stabiliser of an axis are different circles of $U(2)$ that meet only in $\{\pm\mathrm I_2\}$. They must not be identified fibre by fibre. And the holonomy of the Hopf connection is not derived here; it belongs to the entry on the gauge bundle.</p>
+<h3 id="i2k-the-peirce-frame-is-a-choice-of-axis-and-the-algebra-does-not-make-it">I.2.k — The Peirce Frame Is a Choice of Axis, and the Algebra Does Not Make It</h3>
+<p><strong>Read:</strong> a frame with the monomial properties exists for every root of the unit, and there is a four-real-parameter family of roots.</p>
+<p><strong>The root is a pair of projectors, and the pair is a measurement axis.</strong> A root $\vec Z$ gives the idempotents $\tfrac12(e_t\pm\vec Z)$, and the idempotents are the first and fourth frame vectors. So the frame is a measurement axis together with the two nilpotent directions that complete it. Conversely every frame containing two orthogonal idempotents that sum to $e_t$ arises this way, so there is nothing else a frame can be.</p>
+<p><strong>Sparsity belongs to six roots and not to the algebra.</strong> Only $\pm i\vec e_x,\pm i\vec e_y,\pm i\vec e_z$ keep the sixteen arrays monomial with entries in $\mathbb{Z}[i]$, and those six give one frame up to a cyclic relabelling and the exchange of the two idempotents. A root with two nonzero coordinates has an idempotent with three nonzero coordinates, so the change matrix is not monomial, and the sixteen arrays lose the monomial form: the coefficients of the change and of its inverse are carried into every product.</p>
+<p><strong>The consequence is a rule of method.</strong> The standard form of the display is a convention about the axis, and the axis is chosen by the algebra's convention article and not by the algebra. Any result that changes when the root changes is a result about the frame.</p>
+<p><strong>The boundary.</strong> The sparsity is a property of the display, not a symmetry of the algebra. All Peirce frames are conjugate, so no physics can depend on the choice, and the appearance of a dense array in an unusual frame is not a signal of anything.</p>
+<h3 id="i2l-the-six-subspaces-are-four-matrix-involutions">I.2.l — The Six Subspaces Are Four Matrix Involutions</h3>
+<p><strong>Read:</strong> the dagger, the entrywise bar, the transpose and minus the dagger carry the four conjugations onto the matrix side, and each subspace is a fixed or anti-fixed space of one of them.</p>
+<p><strong>The dictionary is exact on the image and only on the image.</strong> $\mathbb{B}_{\Psi}$ is the Hermitian part, $\mathbb{B}_{\Phi}$ the anti-Hermitian part, $\mathbb{B}_{H}$ the entrywise real part, $\mathbb{B}_{iH}$ the entrywise imaginary part, $\mathbb{B}_{C}$ the scalar matrices, $\mathbb{B}_{V}$ the traceless ones. Each condition defines a real sixteen-dimensional space in the ambient $M_4(\mathbb{C})$, and the image selects four dimensions inside it.</p>
+<p><strong>The closure pattern is visible at a glance and it is not uniform.</strong> The centre and the quaternion subspace are subalgebras. The vector subspace is closed under the commutator and not under the product. The anti-Hermitian image is the same: a Lie algebra under the bracket, not a subalgebra under the product.</p>
+<p><strong>That last fact is why a Lorentz transformation is an exponential.</strong> The boost and rotation generators lie in the anti-Hermitian image, where the bracket closes and the product does not. A finite transformation is therefore an exponential of a bracket element and not a product of two elements of the sector, which is the matrix statement of the fact that the material sector holds the generators and not the finite elements.</p>
+<p><strong>The boundary.</strong> The four matrix involutions are four <em>words in the matrix</em>, and which word a conjugation becomes depends on the frame. In the axis-free basis the transpose is quaternion conjugation; in another frame the same conjugation is a transpose conjugated by a fixed matrix. A formula that uses the transpose silently assumes the basis.</p>
+<h3 id="i2m-every-element-carries-its-own-frame-and-the-chart-is-singular-on-the-axis">I.2.m — Every Element Carries Its Own Frame, and the Chart Is Singular on the Axis</h3>
+<p><strong>Read:</strong> a general element produces its own root, its own projectors and its own diagonalising matrix.</p>
+<p>$$
+\vec Z=-\frac{i}{B}\vec Q,\qquad \mathsf C_Q=\begin{pmatrix}B-Q_z&Q_x-iQ_y\\-Q_x-iQ_y&B-Q_z\end{pmatrix},\qquad \det\mathsf C_Q=2B(B-Q_z) .
+$$</p>
+<p><strong>The frame is not the frame of the last reading.</strong> The Peirce frame is fixed once for the whole algebra; $\mathsf C_Q$ moves inside the element and depends on it. The first is a change of basis of the algebra, the second a change of basis adapted to one element.</p>
+<p><strong>The singularity is a coordinate artefact.</strong> The chart degenerates exactly when $B=Q_z$, which is one point of the sphere of directions. The second chart degenerates at $B=-Q_z$, and the two cannot degenerate together because $B\neq0$. So every element off the cone is covered.</p>
+<p><strong>The physical reading is that a generic element has a frame of its own and a degenerate one does not.</strong> An element with $B=0$ has coincident eigenvalues, and both charts degenerate with it, since both determinants carry the factor $B$. Its two projectors merge, no eigenbasis follows from the spectrum, and the diagonalisation carries nothing that the element did not already carry.</p>
+<p><strong>The boundary.</strong> The frame of an element is a statement about that element's spectrum and not about a measurement performed on it. Two elements with the same spectrum are not thereby in the same frame, and the diagonalising matrix is defined up to two rescalings that no measurement fixes.</p>
+<h2 id="the-limits">The Limits</h2>
+<p><strong>The entry reads the representations and not the operators.</strong> It states what the images are worth and what each one loses. The operator pictures — the congruence, the two-sided operator, the adjoint and the swap, the monoid of acting maps — belong to the entries on the forms and on the modules, and the Peirce corners belong to the entry on the idempotents.</p>
+<p><strong>The entry does not read the spectrum.</strong> The eigenvalue pair is named because the matrix invariants carry it, and the spectral theory is the subject of its own entry. What this entry establishes is only that the pair is the same pair at both sizes and that the multiplicity is the module's dimension.</p>
+<p><strong>Two readings are labelled and not proved.</strong> The identification of the four matrix involutions with the physical conjugations, and the identification of the copy index with an internal index that a mass couples, are conventions of the corpus with a stated reason. The algebra supplies the two sides and the two involutions; which physical name goes with which is a naming.</p>
+<p><strong>No factor in this entry is physical.</strong> The factors two and four are the dimensions of the spinor and the regular modules. They are exact, they are unavoidable, and they are not measurements.</p>
+<h2 id="summary">Summary</h2>
+<ul>
+<li>A matrix image depends on the frame and on the size; the element does not.</li>
+<li>The left family is the algebra and the right family is its opposite. They meet exactly in the scalar matrices and span seven dimensions.</li>
+<li>The $4\times4$ image is the $2\times2$ image written twice, with the copy index as the first tensor factor.</li>
+<li>Additive quantities double, multiplicative ones square, the spectrum repeats, and the minimal polynomial is unchanged. The element has two eigenmodes, not four.</li>
+<li>The determinant is the norm at size two and its square at size four; only the zero sets agree, and the zero set is the light cone, the state-space boundary and the set of pure states in three slices.</li>
+<li>The $2\times2$ image is the qubit and it has one side. The second side appears only when the element acts on a carrier.</li>
+<li>Left multiplication preserves the copy index, so a mass term is a right multiplication, and the element that carries it must be a unit because the mass is a bijection.</li>
+<li>The factor $i$ in the Pauli correspondence separates the anti-Hermitian generators from the Hermitian observables.</li>
+<li>A boost stores half its rapidity in the element and the whole of it in the congruence; that factor is the double cover.</li>
+<li>The central phase is the fibre of the ray map and it acts trivially in the two-sided operator, so it is not an observable.</li>
+<li>The Peirce frame is a choice of root, the roots form a four-parameter family, and only six of them keep the display sparse.</li>
+<li>The anti-Hermitian image is a Lie algebra under the commutator and not a subalgebra under the product, which is why a finite transformation is an exponential.</li>
+</ul>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L(\tilde Q)$, $R(\tilde Q)$</td>
+<td>the left and right matrices in a frame, in $M_4(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$\mathsf M_2(\tilde Q)$</td>
+<td>the compressed image in $M_2(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_L$, $\mathbb{B}_R$</td>
+<td>the two four-dimensional families inside $M_4(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$N=\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$</td>
+<td>the quaternionic norm</td>
+</tr>
+<tr>
+<td>$\sigma_1,\sigma_2,\sigma_3$</td>
+<td>the Pauli matrices</td>
+</tr>
+<tr>
+<td>$\varepsilon=i\sigma_2$</td>
+<td>the conjugating matrix of the transpose at size two</td>
+</tr>
+<tr>
+<td>$\vec Z$</td>
+<td>a root of the unit, $\vec Z^2=e_t$</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_\pm=\tfrac12(e_t\pm\vec Z)$</td>
+<td>the idempotent pair of the root</td>
+</tr>
+<tr>
+<td>$\mathsf P$</td>
+<td>the swap matrix of the stitch, $\mathsf P^2=\mathrm I_4$</td>
+</tr>
+<tr>
+<td>$\mathsf C_Q$</td>
+<td>the diagonalising matrix of the element $\tilde Q$</td>
+</tr>
+<tr>
+<td>$\rho_\pm$</td>
+<td>the spectral projectors of the element</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<p><strong>In the mathematics corpus.</strong> The four articles of the source table, and <em>Matrix Representations Conventions</em> for the choice of root that the standard display fixes.</p>
+<p><strong>In this category.</strong> The next entry, <em>Idempotents, Ideals and Observables</em>, reads the roots of $+e_t$ and $-e_t$ and the Peirce corners that this entry only names. <em>The Modules: What the Algebra Acts On</em> reads the carrier that the copy index belongs to. <em>The Four Forms and the Four Norms</em> reads the quarter-traces that this entry quotes as norms.</p>
+<p><strong>In the archive, until they are rewritten.</strong> The two longer treatments of the same material are <a href="../articles_physics/the-pauli-correspondence-and-the-matrix-image.html">The Pauli Correspondence and the Matrix Image</a>, which carries the observables, the states, the phase fibre and the double cover in full, and <a href="../articles_physics/element-and-operator-representations-the-three-actions.html">Element and Operator Representations: The Three Actions</a>, which carries the five pictures, the three actions and the mass coupling at operator level.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
