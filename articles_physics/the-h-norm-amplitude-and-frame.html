@@ -352,6 +352,392 @@ $$</p>
 $$</p>
 <p><strong>The two ends of the range are the two degenerations of the frame.</strong> At $\Xi=0$ the state is maximally mixed, purity $\tfrac12$, and the element is a central phase times a real quaternion: no boost, two equal singular values, a frame of full rank. As $\Xi\to\infty$ the state becomes pure, purity $1$, and the element approaches the cone: infinite boost, one singular value zero, a frame of rank one.</p>
 <p><strong>The map is therefore the statement that a pure state is a degenerate amplitude and a mixed state is a boosted one.</strong> This is the backward-feeling half of the correspondence, and it is forced by the formulas: purity is rank deficiency, and rank deficiency is what the cone means.</p>
+<h2 id="the-two-singular-values">The Two Singular Values</h2>
+<p><strong>The amplitude is a pair of numbers and not one.</strong> The Hermitian square $\tilde Q\tilde Q^{*}$ has two spectral values, and they are non-negative because the element is positive semidefinite. Their square roots are the two singular values.</p>
+<p>$$
+\sigma_1^{2}=\lambda_1\bigl(\tilde Q\tilde Q^{*}\bigr),\qquad
+\sigma_2^{2}=\lambda_2\bigl(\tilde Q\tilde Q^{*}\bigr),\qquad
+\sigma_1\ge\sigma_2\ge0 .
+$$</p>
+<p><strong>Both algebraic norms are symmetric functions of the pair, and they are the two elementary ones.</strong></p>
+<p>$$
+\boxed{\;2H(\tilde Q)=\sigma_1^{2}+\sigma_2^{2},\qquad
+\bigl\lvert N(\tilde Q)\bigr\rvert=\sigma_1\sigma_2,\qquad
+H(\tilde Q)-\bigl\lvert N(\tilde Q)\bigr\rvert=\frac{(\sigma_1-\sigma_2)^{2}}{2}\;}
+$$</p>
+<p><strong>The first is the trace of the Hermitian square read through the convention $\operatorname{Tr}=2\operatorname{Sc}$.</strong> The second is the product of its spectral values, which is its quaternionic norm, and the third is the arithmetic–geometric gap written in the algebra's units. A numerical check on a hundred random elements confirmed all three to ten digits.</p>
+<p><strong>The third identity is the reason the entry can be written at all.</strong> It says that the difference between the amplitude and the mass is not a matter of taste but the square of the spread of the two singular values. An element whose two singular values are equal has $H=\lvert N\rvert$ and no other difference exists. An element whose singular values are far apart has a large amplitude relative to its mass, and the excess is quadratic in the spread.</p>
+<p><strong>The two singular values are the parameters of the double coset.</strong></p>
+<p>$$
+\tilde Q=\tilde U_{\mathrm s}\operatorname{diag}(\sigma_1,\sigma_2)\tilde U_{\mathrm s}' ,
+$$</p>
+<p>with the diagonal pair invariant under no further $*$-unitary motion except the swap. The pair $(\sigma_1,\sigma_2)$, unordered, is a complete invariant of the orbit under left and right unitary multiplication, and $H$ and $\lvert N\rvert$ determine it and are determined by it.</p>
+<p><strong>The pair is a Doppler pair, and the algebra's own parametrisation shows it.</strong></p>
+<p>$$
+\sigma_1=r e^{\Xi/2},\qquad \sigma_2=r e^{-\Xi/2},\qquad r=\bigl\lvert N(\tilde Q)\bigr\rvert^{1/2},
+$$</p>
+<p>with $\Xi$ the rapidity of the boost factor. The geometric mean of the two amplitudes is the square root of the mass, the ratio is $e^{\Xi}$, and the logarithm of the ratio is the rapidity. In this reading the amplitude is an element with two mode amplitudes, the mass is what the two modes share, and the boost is what separates them.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>element</th>
+<th>$H$</th>
+<th>$\lvert N\rvert$</th>
+<th>$\sigma_1$</th>
+<th>$\sigma_2$</th>
+<th>$\sqrt{\lvert N\rvert}$</th>
+<th>$\Xi$</th>
+<th>$\tanh\Xi$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e_t+\vec e_x$</td>
+<td>$2$</td>
+<td>$2$</td>
+<td>$1.414$</td>
+<td>$1.414$</td>
+<td>$1.414$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$e_t+\vec e_x+i\vec e_y$</td>
+<td>$3$</td>
+<td>$1$</td>
+<td>$2.414$</td>
+<td>$0.414$</td>
+<td>$1$</td>
+<td>$1.763$</td>
+<td>$0.943$</td>
+</tr>
+<tr>
+<td>$\sqrt2\,e_t+\vec e_x+i\vec e_y$</td>
+<td>$4$</td>
+<td>$2$</td>
+<td>$2.732$</td>
+<td>$0.732$</td>
+<td>$1.414$</td>
+<td>$1.317$</td>
+<td>$0.866$</td>
+</tr>
+<tr>
+<td>$e_t+i\vec e_x$</td>
+<td>$2$</td>
+<td>$0$</td>
+<td>$2$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$\infty$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$(1+i)e_t$</td>
+<td>$2$</td>
+<td>$2$</td>
+<td>$1.414$</td>
+<td>$1.414$</td>
+<td>$1.414$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The ratio of the two measures is the one datum that the scale cannot move.</strong> It is $1/3$ in the second row and $1/2$ in the third, and $\cosh\Xi$ is $3$ and $2$ respectively. Doubling an element doubles $H$ and $\lvert N\rvert$ together and leaves the ratio, the rapidity and the state unchanged, so the two measures carry the scale and the boost separately while their ratio carries the boost alone.</p>
+<h2 id="the-amplitude-against-the-mass">The Amplitude Against the Mass</h2>
+<p><strong>The two measures of one element are related by one factor, and the factor is the boost.</strong></p>
+<p>$$
+\boxed{\;H(\tilde Q)=\bigl\lvert N(\tilde Q)\bigr\rvert\cosh\Xi\;}
+$$</p>
+<p><strong>The identity follows from the last section in one line.</strong> $2H=\sigma_1^{2}+\sigma_2^{2}=r^{2}(e^{\Xi}+e^{-\Xi})=2r^{2}\cosh\Xi$ and $\lvert N\rvert=r^{2}$. A check on a hundred elements built from the four-factor word confirmed it to ten digits.</p>
+<p><strong>Three consequences follow, and each is a statement about what the two measures are for.</strong> The amplitude is never smaller than the modulus of the interval, because $\cosh\Xi\ge1$. The two are equal exactly when the boost is absent, which is the case of a central phase times a real quaternion. And the ratio $H/\lvert N\rvert$ is the Lorentz factor of the element's boost.</p>
+<p><strong>The amplitude is therefore the mass times the boost factor and not the mass.</strong> This is the honest statement of what the polar decomposition adds to the interval. The interval answers how much invariant mass the element carries. The amplitude answers how much mass and motion together, and the extra is the boost. Any reading that identifies the amplitude with the mass will fail on the first element with a nonzero rapidity, and the table of the last section exhibits four of them.</p>
+<p><strong>The same number appears in the state.</strong> The Bloch length of $\tilde\varpi_Q$ is $\tanh\Xi$, so the state's departure from maximal mixing is the velocity of the boost and the amplitude's excess over the mass is the Lorentz factor of the same velocity. The two are one statement written twice, through the identity $\cosh\Xi=1/\sqrt{1-\tanh^{2}\Xi}$.</p>
+<p><strong>The H-norm sees the scale and the boost and nothing else.</strong></p>
+<p>$$
+H(\tilde Q)=r^{2}\cosh\Xi,\qquad
+\lvert N(\tilde Q)\rvert=r^{2},\qquad
+H\bigl(e^{i\theta}\tilde Q\bigr)=H(\tilde Q),\qquad
+H\bigl(\tilde Q\tilde u_{\mathrm r}\bigr)=H(\tilde Q).
+$$</p>
+<p><strong>The central phase, the rotor angle and both axes leave the amplitude alone.</strong> The phase is removed by the modulus of $N$; the rotor is removed by the invariance; and the two axes enter only through the boost's magnitude. So the H-norm is a function of the scale and the rapidity and of nothing else, and the polar decomposition is the statement that everything else is carried by the frame.</p>
+<p><strong>This is why the amplitude is the right object for a state and the wrong object for a charge.</strong> A state is what survives when the phase and the rotation are discarded, and $H$ is exactly the measure that survives with them. A charge is what survives when the boost is discarded, and that is $\lvert N\rvert$. The two measures are the two halves of the same discard.</p>
+<h2 id="what-the-h-norm-cannot-do">What the H Norm Cannot Do</h2>
+<p><strong>The H-norm is not multiplicative.</strong> The cleanest counterexample is an element of the null cone,</p>
+<p>$$
+\tilde Q=e_t+i\vec e_z=2\tilde\Pi_{\vec e_z},\qquad
+\tilde Q^{2}=2\tilde Q,\qquad
+H(\tilde Q)=2,\qquad
+H\bigl(\tilde Q^{2}\bigr)=8 .
+$$</p>
+<p><strong>The square doubles the element and quadruples the norm, so the norm of the square is twice the square of the norm.</strong> The mechanism is the cross term: $(\tilde Q_1+\tilde Q_2)^{2}$ carries $2\tilde Q_1\tilde Q_2$, and a norm built from moduli of coefficients has no way to cancel it.</p>
+<p><strong>Composition is even worse than this example suggests, and the bound is two.</strong></p>
+<p>$$
+\boxed{\;\lVert\tilde Q_1\tilde Q_2\rVert_{\mathrm{HS}}\le\lVert\tilde Q_1\rVert_{\mathrm{HS}}\lVert\tilde Q_2\rVert_{\mathrm{HS}}
+\quad\Longrightarrow\quad
+H(\tilde Q_1\tilde Q_2)\le2H(\tilde Q_1)H(\tilde Q_2)\;}
+$$</p>
+<p><strong>The proof is the Hilbert–Schmidt inequality and the factor $2$ of the trace convention.</strong> In the matrix picture $2H=\lVert\rho(\tilde Q)\rVert_{\mathrm{HS}}^{2}$, so submultiplicativity of the Hilbert–Schmidt norm gives $2H(\tilde Q_1\tilde Q_2)\le4H(\tilde Q_1)H(\tilde Q_2)$.</p>
+<p><strong>The constant is attained, and the witness is short.</strong> Take</p>
+<p>$$
+\tilde Q_1=(-1+i)\vec e_x+(-1-i)\vec e_y,\qquad
+\tilde Q_2=e_t-i\vec e_z=2\tilde\Pi_{-\vec e_z},
+$$</p>
+<p>so that $H(\tilde Q_1)=4$, $H(\tilde Q_2)=2$, and $\tilde Q_1\tilde Q_2=(-2+2i)\vec e_x+(-2-2i)\vec e_y$ with $H=16$. The ratio is exactly $2$, and no larger ratio was found in a search over three hundred thousand pairs of small Gaussian-integer elements.</p>
+<p><strong>The excess is the normalisation of a pure state.</strong> The factor $2$ is $\tfrac{1}{H(\tilde\Pi_{\vec u})}$, because a minimal projection has H-norm $\tfrac12$. An amplitude is not an algebra norm; it is a norm that agrees with composition only up to the normalisation of the states it is made of.</p>
+<p><strong>The H-norm is also blind to the sector.</strong> $\tilde Q$ and $i\tilde Q$ have the same H-norm and lie in opposite sectors, so the norm cannot say which sector an element belongs to. The sector is a datum of the interval and of the Krein form, and it is invisible to the weight.</p>
+<p><strong>And the H-norm does not determine the element.</strong> The state map of an earlier section has five-dimensional fibres in an eight-dimensional algebra, so a state determines three numbers and an element needs eight. The missing five are the frame and the scale, and no function of $H$ and the state can recover them.</p>
+<h2 id="the-h-norm-among-the-four">The H Norm Among the Four</h2>
+<p><strong>The four measures of the previous entry are still four, and the polar decomposition uses exactly one of them.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>measure</th>
+<th>on the amplitude</th>
+<th>on the frame</th>
+<th>why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$P$</td>
+<td>complex, not positive</td>
+<td>complex</td>
+<td>not a real measure</td>
+</tr>
+<tr>
+<td>$\lvert N\rvert$</td>
+<td>$\lvert N(\tilde Q)\rvert$</td>
+<td>$1$ or $0$</td>
+<td>multiplicative, loses the argument</td>
+</tr>
+<tr>
+<td>$H$</td>
+<td>$H(\tilde Q)$</td>
+<td>$1$, $\tfrac12$ or $0$</td>
+<td>positive definite</td>
+</tr>
+<tr>
+<td>$\mathrm{Kr}$</td>
+<td>signed</td>
+<td>signed</td>
+<td>indefinite</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The weight is the only column that is a measure in the strict sense.</strong> The pairing is complex, the interval is a modulus, and the volume is signed. A polar decomposition needs a positive factor, and only one of the four supplies positivity.</p>
+<p><strong>The weight is also the only one that adds across the two sectors.</strong> The material sector is spanned by the four real axes $ie_t,\vec e_x,\vec e_y,\vec e_z$ and the informational sector by the four axes $e_t,i\vec e_x,i\vec e_y,i\vec e_z$, so the two share no coordinate axis and the weight of a sum is the sum of the weights,</p>
+<p>$$
+H\bigl(\tilde R_{\Phi}+\tilde H_{\Psi}\bigr)=H\bigl(\tilde R_{\Phi}\bigr)+H\bigl(\tilde H_{\Psi}\bigr),
+$$</p>
+<p>while the interval of a sum carries the cross terms and the volume carries them with signs. A check on a hundred random pairs of one element from each sector confirmed the additive identity to ten digits.</p>
+<p><strong>Additivity is the property a probability needs and the property a mass cannot have.</strong> A measure that must add over independent alternatives has to be positive and diagonal in the coordinate splitting. The weight is the only candidate, and the polar decomposition is the operation that exposes its argument.</p>
+<p><strong>The weight is the topological norm, and the other three are not.</strong> The previous entry established that only one of the four is positive definite and that its square root is the norm of the topology. The polar decomposition is the place where that fact becomes structural: it is the only measure that can sit inside a positive square root and come out unchanged.</p>
+<h2 id="the-interpretations">The Interpretations</h2>
+<h3 id="i8a-what-the-frame-cannot-change-is-the-norm">I.8.a — What the Frame Cannot Change Is the Norm</h3>
+<p><strong>Read:</strong> the amplitude carries the whole H-norm, $H(\tilde Q_H)=H(\tilde Q)$, and no $*$-unitary multiplication on either side changes it.</p>
+<p><strong>A size that depends on orientation is not a size.</strong> If a quantity fell when the element was rotated, it would be a component and not a magnitude, and no state could be normalised by it. The weight is the one measure of the four that is invariant under the largest compact motion, and that invariance is what makes it a magnitude rather than a coordinate.</p>
+<p><strong>The physical interpretation is that the amplitude is a magnitude and the frame is a set of angles.</strong> A magnitude and a set of angles are the two things a theory wants from a vector, and the polar decomposition is the theorem that says an element of this algebra has exactly those two and no third. The measure belongs to the magnitude, and the magnitude is the positive element that the decomposition exhibits.</p>
+<p><strong>The boundary.</strong> The reading does not say the frame is physically irrelevant. It says the frame is <em>what the measure cannot see</em>, which is a statement about the measure and not about the world.</p>
+<h3 id="i8b-the-isometry-group-is-the-unitary-group-and-nothing-larger">I.8.b — The Isometry Group Is the Unitary Group and Nothing Larger</h3>
+<p><strong>Read:</strong> the elements that preserve $H$ on one side for every element are exactly the $*$-unitary ones, and among positive definite forms invariant under both sides $H$ is unique up to scale.</p>
+<p><strong>A conservation law is a group, and the group is a small one.</strong> The invariance of $H$ is the group $U(2)$, of real dimension four. If a larger group preserved it, the measure would be constant on larger orbits and would carry less; if a smaller one did, it would not be a scalar under a unitary rotation.</p>
+<p><strong>The physical interpretation is that the amplitude is the unique scalar of the compact group.</strong> Every function of the element invariant under both-sided unitary multiplication is a function of $H$. This is why the amplitude can be normalised once and for all, and why the frame can be discarded without loss of the magnitude.</p>
+<p><strong>The boundary.</strong> Uniqueness is up to a positive scale. The scale is fixed by the trace convention $\operatorname{Tr}(e_t)=2$, and that convention is a normalisation of the algebra and not a law of physics.</p>
+<h3 id="i8c-what-it-is-and-how-it-is-oriented">I.8.c — What It Is and How It Is Oriented</h3>
+<p><strong>Read:</strong> the amplitude is the scale times the boost, and the frame is the central phase times the rotor.</p>
+<p><strong>The four-factor word splits two and two.</strong> The scale and the rapidity are the amplitude's; the central phase and the rotor angle are the frame's; and the two axes go one to each. The decomposition is a partition of the word and not a partition of the element into large and small pieces.</p>
+<p><strong>The physical interpretation is that magnitude and orientation are separate questions with separate answers.</strong> An element's size and its boost answer what it is. Its phase and its rotation answer how it is turned. A theory that asks both questions needs both factors, and it must not expect either factor to answer the other's question.</p>
+<p><strong>The boundary.</strong> The split is not the split of the algebra into the two sectors. Both factors are complex elements. The amplitude happens to be Hermitian and the frame happens to be unitary, and neither fact follows from a sector assignment of the original element.</p>
+<h3 id="i8d-the-state-is-the-boost">I.8.d — The State Is the Boost</h3>
+<p><strong>Read:</strong> $\tilde\varpi_Q=\tfrac12(e_t+i\tanh\Xi\,\vec u_{\mathrm b})$, with $\vec u_{\mathrm b}$ the boost axis and $\Xi$ its rapidity.</p>
+<p><strong>The normalised amplitude is the boost and nothing else.</strong> The scale cancels in the quotient, the central phase cancels because it is unitary on the right, and the rotor cancels because a real unit quaternion is unitary on the right. What survives is the boost, and the boost is a positive Hermitian element of trace one, with one spectral value possibly vanishing.</p>
+<p><strong>The physical interpretation is that the mixedness of a state is the motion of the element that produced it.</strong> A state's departure from maximal mixing is $\tanh\Xi$, the velocity of the boost in units where the cone is the speed of light. A pure state is an element on the light cone. A maximally mixed state is an element at rest.</p>
+<p><strong>The boundary.</strong> The statement uses the four-factor word and therefore the complement of the cone. On the cone it holds as a limit, $\tanh\Xi\to1$, and the limit is the pure state. At the origin the state is undefined.</p>
+<h3 id="i8e-pure-where-the-frame-degenerates">I.8.e — Pure Where the Frame Degenerates</h3>
+<p><strong>Read:</strong> the purity is $1-\lvert N\rvert^{2}/(2H^{2})$, which is $1$ exactly when $N=0$, which is the cone; and on the cone the frame has rank one.</p>
+<p><strong>Purity is rank deficiency.</strong> The amplitude is a rank-two positive element off the cone and a rank-one element on it, and the state inherits the rank. The pure state is the degenerate case of the amplitude, not the generic one.</p>
+<p><strong>The physical interpretation is that purity is a boundary condition and not a species of object.</strong> A pure state is what an element becomes when it loses a rank. It is not a separate kind of element that happens to have no entropy. The entropy of the state measures how far the amplitude is from the boundary, and the boundary itself has measure zero in the algebra.</p>
+<p><strong>The boundary.</strong> The statement is about the amplitude of a single element and not about the reduced state of a composite. A reduced state can be mixed without any element being off the cone, and this reading does not apply to it.</p>
+<h3 id="i8f-the-mass-is-the-geometric-mean-of-the-two-squared-amplitudes">I.8.f — The Mass Is the Geometric Mean of the Two Squared Amplitudes</h3>
+<p><strong>Read:</strong> $2H=\sigma_1^{2}+\sigma_2^{2}$, $\lvert N\rvert=\sigma_1\sigma_2$, and $H-\lvert N\rvert=(\sigma_1-\sigma_2)^{2}/2$.</p>
+<p><strong>The two measures are the two means of one pair.</strong> The weight is the arithmetic mean of the two squared singular values and the interval is their geometric mean, so the mass of an element is the geometric mean of the squares of its two amplitudes and the amplitude is their arithmetic mean. The inequality between the means is the inequality between the measures, and its equality case is the equality of the two amplitudes.</p>
+<p><strong>The physical interpretation is that the mass is what the two modes share.</strong> An element with two mode amplitudes has a mass that both contribute to multiplicatively and an amplitude that both contribute to additively. A boost makes one mode larger and the other smaller without changing what they share, and that is why the mass is boost invariant and the amplitude is not.</p>
+<p><strong>The boundary.</strong> The two modes are the two spectral values of $\tilde Q\tilde Q^{*}$. They are a decomposition of one element's amplitude and not a claim that the element is a pair of particles.</p>
+<h3 id="i8g-the-weight-is-the-one-that-adds">I.8.g — The Weight Is the One That Adds</h3>
+<p><strong>Read:</strong> the two sectors share no real coordinate axis, and $H(\tilde R_{\Phi}+\tilde H_{\Psi})=H(\tilde R_{\Phi})+H(\tilde H_{\Psi})$ while the other three forms carry cross terms.</p>
+<p><strong>A measure that must add over independent alternatives has to be positive and diagonal.</strong> The weight is both by construction: it is a sum of squared moduli over the eight real axes, and the two sectors occupy four axes each.</p>
+<p><strong>The physical interpretation is that the weight is the measure a probability needs.</strong> A probability that did not add over exclusive alternatives would not be a probability. The interval cannot play this role, because a difference of squares carries the cross terms and can fall when one term rises.</p>
+<p><strong>The boundary.</strong> Additivity is a statement about the coordinate splitting and not about composition. The weight does not add over a product, and the next interpretation supplies the counterexample.</p>
+<h3 id="i8h-a-frame-is-a-rank-not-a-phase">I.8.h — A Frame Is a Rank, Not a Phase</h3>
+<p><strong>Read:</strong> $H(\tilde Q_0)=\tfrac12\operatorname{rank}\tilde Q_0$, so the frame's norm is $1$, $\tfrac12$ or $0$ and nothing else.</p>
+<p><strong>An orientation has no size.</strong> The frame is a partial isometry, and the only number it carries is the dimension of the space it acts on. Off the cone that dimension is two, on the cone it is one, and at the origin it is zero.</p>
+<p><strong>The physical interpretation is that a frame cannot carry a coupling.</strong> A quantity that takes three values, one of them zero, is a bookkeeping device and not a strength. Any reading in which the frame's norm measures an interaction strength is a misreading, and the factor $\tfrac12$ on the cone is the diagnostic.</p>
+<p><strong>The boundary.</strong> The value $\tfrac12$ is the trace convention again: a minimal projection has trace one and the unit has trace two. The statement that the frame is normalised to one is therefore false on the cone, by a factor of two.</p>
+<h3 id="i8i-the-amplitude-is-not-a-conserved-charge">I.8.i — The Amplitude Is Not a Conserved Charge</h3>
+<p><strong>Read:</strong> $H$ is not multiplicative, the norm of a square can be twice the square of the norm, and the sharp composition bound is $H(\tilde Q_1\tilde Q_2)\le2H(\tilde Q_1)H(\tilde Q_2)$.</p>
+<p><strong>If the amplitude were a charge, composition would multiply it.</strong> It does not, and the failure is not small: the witness attains the bound. So the amplitude is neither additive over a process nor multiplicative over a product. It is the norm of an element and nothing more.</p>
+<p><strong>The physical interpretation is that amplitudes are not conserved and probabilities are not multiplicative under composition.</strong> A conservation law needs a multiplicative invariant, and the only multiplicative invariant of this algebra is the quaternionic norm, which is not positive and therefore not an amplitude. The division of labour is forced by the algebra.</p>
+<p><strong>The boundary.</strong> The bound of two is the sharp constant for this normalisation. It is a fact about the trace convention and not a universal law; a rescaled norm would carry a rescaled constant.</p>
+<h3 id="i8j-two-senses-of-frame">I.8.j — Two Senses of Frame</h3>
+<p><strong>Read:</strong> a change of frame is a left multiplication $\tilde Q\mapsto\tilde U\tilde Q$; the frame of an element is the second polar factor $\tilde Q_0$.</p>
+<p><strong>The two differ in what they act on.</strong> A change of frame acts on the algebra and moves every element. The frame is a factor of one element and moves with it. Under a change of frame the amplitude conjugates and the frame multiplies on the left, and neither is quotiented away.</p>
+<p><strong>The physical interpretation is that the polar decomposition is a decomposition and not a gauge fixing.</strong> A gauge fixing removes a redundancy and leaves a representative of a class. The polar decomposition keeps the element and splits it into two invariantly defined pieces. A reader who conflates the passive and the active sense will conclude that the frame is unphysical, and the conclusion is a category error.</p>
+<p><strong>The boundary.</strong> The two senses coincide only when the frame is central, and then only up to the sign that the double cover supplies.</p>
+<h3 id="i8k-the-amplitude-is-the-hermitian-half">I.8.k — The Amplitude Is the Hermitian Half</h3>
+<p><strong>Read:</strong> $\tilde Q_H$ is Hermitian for every $\tilde Q$, so it lies in $\mathbb{B}_{\Psi}$ whatever sector the element belonged to.</p>
+<p><strong>The decomposition maps the algebra onto its sector of positivity.</strong> An element of the material sector has an informational amplitude. The material and the informational are not two kinds of object but two readings of one object, and the polar decomposition is the map between the readings.</p>
+<p><strong>The physical interpretation is that a state is made from an operator by a canonical operation and not by a choice.</strong> The operation is: take the Hermitian square, take the positive square root, normalise by its trace. Each step is canonical, so the state is a function of the element and not a convention about it.</p>
+<p><strong>The boundary.</strong> The sector of the original element is not lost, and it is not in the amplitude. It appears in the frame as the central phase $i$: the element $i\tilde Q$ has the same amplitude and the frame $i\tilde Q_0$. A sector flip is therefore a frame datum, and this is the precise sense in which the two sectors are one algebra read twice.</p>
+<h2 id="the-limits">The Limits</h2>
+<p><strong>The amplitude is not the mass, and the difference is not a correction term.</strong> The identity $H=\lvert N\rvert\cosh\Xi$ is exact, and the factor is the Lorentz factor of the element's boost. An identification of the two holds only on the set of elements with no boost, which is the set of central phases times real quaternions.</p>
+<p><strong>The H-pair is not the four-factor word.</strong> The pair is defined on the whole algebra and its second factor is a partial isometry. The word needs the complement of the cone and its second factor is $*$-unitary. Results proved for one are not automatically results for the other, and the passage between them is the subject of the next entry.</p>
+<p><strong>The H-norm is not an algebra norm.</strong> Composition does not multiply it, and the failure is the constant two. Any argument that treats the amplitude as a charge, as a rate, or as a weight that multiplies under convolution is unsupported by the algebra.</p>
+<p><strong>The state map is not injective and cannot be inverted.</strong> Its fibres are five-dimensional in an eight-dimensional algebra. A state determines the boost and nothing else: not the scale, not the phase, not the rotor. Reading an element off a state requires five of the eight dimensions to be supplied from elsewhere.</p>
+<p><strong>The purity reading is about an element and not about a subsystem.</strong> The statement that a pure state is a null element is a statement about the amplitude of one element. It does not license the inference that every pure state of a composite is null, and it does not compute a reduced state.</p>
+<p><strong>The decomposition removes nothing.</strong> It is not a quotient, not a gauge choice, and not a coarse-graining. It is an identity in the algebra, and the two factors are as much a part of the element as the element is.</p>
+<h2 id="summary">Summary</h2>
+<p>The polar decomposition reads the Hermitian norm as the amplitude of an element and the residual factor as its frame.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>item</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the pair</td>
+<td>$\tilde Q=\tilde Q_H\tilde Q_0$, positive factor first, defined on the whole algebra</td>
+</tr>
+<tr>
+<td>the amplitude</td>
+<td>$\tilde Q_H=(\tilde Q\tilde Q^{*})^{1/2}=ae_t+i\vec W/(2a)$, Hermitian, in $\mathbb{B}_{\Psi}$</td>
+</tr>
+<tr>
+<td>the frame</td>
+<td>$\tilde Q_0=\tilde Q_H^{+}\tilde Q$, a partial isometry, $*$-unitary off the cone</td>
+</tr>
+<tr>
+<td>the invariants</td>
+<td>$H(\tilde Q_H)=H(\tilde Q)$ and $N(\tilde Q_H)=\lvert N(\tilde Q)\rvert$</td>
+</tr>
+<tr>
+<td>the invariance</td>
+<td>$H(\tilde U\tilde Q\tilde V)=H(\tilde Q)$, and $U(\mathbb{B})$ is exactly the group that does it</td>
+</tr>
+<tr>
+<td>the frame's size</td>
+<td>$H(\tilde Q_0)=\tfrac12\operatorname{rank}\tilde Q_0$, that is $1$, $\tfrac12$ or $0$</td>
+</tr>
+<tr>
+<td>the two singular values</td>
+<td>$2H=\sigma_1^{2}+\sigma_2^{2}$, $\lvert N\rvert=\sigma_1\sigma_2$, $H-\lvert N\rvert=(\sigma_1-\sigma_2)^{2}/2$</td>
+</tr>
+<tr>
+<td>the rapidity</td>
+<td>$\sigma_{1,2}=re^{\pm\Xi/2}$ with $r^{2}=\lvert N\rvert$, so $H=\lvert N\rvert\cosh\Xi$</td>
+</tr>
+<tr>
+<td>the state</td>
+<td>$\tilde\varpi_Q=\tilde Q\tilde Q^{*}/(2H)=\tfrac12(e_t+i\tanh\Xi\,\vec u_{\mathrm b})$</td>
+</tr>
+<tr>
+<td>the purity</td>
+<td>$1-\lvert N\rvert^{2}/(2H^{2})=(1+\tanh^{2}\Xi)/2$</td>
+</tr>
+<tr>
+<td>the composition bound</td>
+<td>$H(\tilde Q_1\tilde Q_2)\le2H(\tilde Q_1)H(\tilde Q_2)$, sharp</td>
+</tr>
+<tr>
+<td>the continuity</td>
+<td>the amplitude everywhere; the frame everywhere except the cone and the origin</td>
+</tr>
+</tbody>
+</table></div>
+<p>The decomposition is characterised by four conditions: the amplitude in the cone, the product equal to the element, the final projection equal to the right ideal, and the amplitude generating the left ideal. The frame's norm is a rank, the amplitude's norm is the element's, and the state is the amplitude with its scale removed.</p>
+<h3 id="what-the-reader-should-retain">What the Reader Should Retain</h3>
+<p>The three statements to carry away are these. The Hermitian norm is the only measure of the four that a positive factor can carry and the only one that both-sided unitary multiplication leaves alone, and that is why the polar decomposition is written with $H$ and not with $N$. The amplitude is the element's mass times its boost factor, $\lvert N\rvert\cosh\Xi$, and the frame is what remains: the phase, the rotation and the two axes, with a norm equal to half its rank. And the operator-to-state map is the normalised Hermitian square, whose image is the boost and whose purity measures how far the element sits from the light cone.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde Q=\tilde Q_H\tilde Q_0$</td>
+<td>the polar decomposition, positive factor first</td>
+</tr>
+<tr>
+<td>$\tilde Q_H$</td>
+<td>the amplitude, Hermitian positive semidefinite</td>
+</tr>
+<tr>
+<td>$\tilde Q_0$</td>
+<td>the frame, a partial isometry, $*$-unitary off the cone</td>
+</tr>
+<tr>
+<td>$\tilde Q_H^{+}$</td>
+<td>the Moore–Penrose inverse of the amplitude</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_{\mathrm f}(\tilde Q)$, $\tilde\Pi_{\mathrm i}(\tilde Q)$</td>
+<td>the final and initial projections, the two ideals of $\tilde Q$</td>
+</tr>
+<tr>
+<td>$a$, $\vec W$</td>
+<td>the scale and the real vector part of $\tilde Q\tilde Q^{*}$</td>
+</tr>
+<tr>
+<td>$\sigma_1\ge\sigma_2\ge0$</td>
+<td>the two singular values, the square roots of the spectral values of $\tilde Q\tilde Q^{*}$</td>
+</tr>
+<tr>
+<td>$r$, $\Xi$</td>
+<td>the scale and the rapidity of the polar word, $r^{2}=\lvert N\rvert$ and $\sigma_{1,2}=re^{\pm\Xi/2}$</td>
+</tr>
+<tr>
+<td>$\theta$, $\Theta$</td>
+<td>the central phase and the rotor angle of the polar word</td>
+</tr>
+<tr>
+<td>$\tilde u_{\mathrm r}$, $\vec u_{\mathrm b}$</td>
+<td>the rotor, a real unit quaternion, and the axis of the boost</td>
+</tr>
+<tr>
+<td>$H(\tilde Q)=\operatorname{Sc}(\tilde Q\tilde Q^{*})$</td>
+<td>the weight, the positive definite form, $\tfrac12\lVert\rho(\tilde Q)\rVert_{\mathrm{HS}}^{2}$</td>
+</tr>
+<tr>
+<td>$\lvert N(\tilde Q)\rvert$</td>
+<td>the modulus of the interval, the invariant mass</td>
+</tr>
+<tr>
+<td>$\tilde\varpi_Q$</td>
+<td>the state, $\tilde Q\tilde Q^{*}/(2H)$, of trace one</td>
+</tr>
+<tr>
+<td>$\lvert\vec r\rvert=\tanh\Xi$</td>
+<td>the Bloch length of the state, the boost velocity</td>
+</tr>
+<tr>
+<td>$U(\mathbb{B})\cong U(2)$</td>
+<td>the $*$-unitary group, the group of H-isometries, real dimension four</td>
+</tr>
+<tr>
+<td>$2H=\lVert\rho\rVert_{\mathrm{HS}}^{2}$</td>
+<td>the matrix picture of the weight and the source of the constant two</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<p><strong>In the mathematics corpus.</strong> The ten articles of the source table, and inside the first of them the sections <em>The Hermitian Factor</em>, which owns the closed form and the invariants; <em>The Isometry Factor</em>, which owns the projections and the two counterexamples of uniqueness; and <em>Continuity</em>, which owns the discontinuity on the cone and at the origin. The cone of positivity and the uniqueness of the square root are in <em>Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint</em>. The two ideals and their projections are in <em>The Peirce Decomposition of the Biquaternion Algebra</em> and <em>Hermitian Idempotents and the Peirce Decomposition</em>.</p>
+<p><strong>In this category.</strong> <em>The Four Forms and the Four Norms</em> supplies the four measures, their definiteness and their multiplicativity. <em>The Four Products: Composition, Probability, Causality and Gauge</em> supplies the products whose scalar parts the measures are. <em>The Spectrum and the Two Modes</em> supplies the two invariants of an element and the pair whose product is the interval. <em>The Two Sectors: Split and the Four Bridges</em> supplies the coordinate split and the additivity of the weight across it. <em>The Element: the Six Subspaces and the Two Ledgers</em> supplies the six subspaces on which the polar factors are restricted.</p>
+<p><strong>In the archive, until they are rewritten.</strong> <a href="../articles_physics/the-general-polar-decomposition-the-amplitude-and-the-operator-to-state-map.html">The General Polar Decomposition, the Amplitude and the Operator-to-State Map</a> is the earlier statement of the same pair and the same map. <a href="../articles_physics/the-polar-decomposition-and-its-three-pairings.html">The Polar Decomposition and Its Three Pairings</a> compares the Cartan, Hamilton and quaternion pairings. <a href="../articles_physics/the-polar-decomposition-of-a-jones-matrix-diattenuation-retardance-and-polarizers.html">The Polar Decomposition of a Jones Matrix: Diattenuation, Retardance and Polarizers</a> reads the amplitude as diattenuation and the frame as retardance. <a href="../articles_physics/the-polar-decomposition-of-a-kraus-operator-effect-backaction-and-the-measurement-boundary.html">The Polar Decomposition of a Kraus Operator: Effect, Backaction and the Measurement Boundary</a> reads the amplitude as an outcome's strength and the frame as its backaction. <a href="../articles_physics/the-massless-limit-as-a-boundary-value-of-the-polar-word.html">The Massless Limit as a Boundary Value of the Polar Word</a> is the limit in which the frame loses a rank and the state becomes pure.</p>
       </div>
     </main>
   </div>
