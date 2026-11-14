@@ -475,3 +475,4 @@ The algebra's contribution is the identification of the singular loci with the b
 - G. N. Watson, *A Treatise on the Theory of Bessel Functions* (Cambridge, 1922), for the representation $J_0(z)=\frac{2}{\pi}\int_0^\infty\sin(z\cosh v)\,dv$ and the modified Bessel function $K_1$.
 - M. E. Peskin and D. V. Schroeder, *An Introduction to Quantum Field Theory* (Addison-Wesley, 1995), for the propagator conventions and the Wick rotation to Euclidean space.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the biquaternion norm, the zero divisors, and the geometry of the light cone in the biquaternion algebra.
+- Companion article: [The Biquaternion D'Alembertian and Its Green's Functions](the-biquaternion-dalembertian-and-its-greens-functions.html), for the operator, its first-order root and the collection of kernels established once for the whole series.

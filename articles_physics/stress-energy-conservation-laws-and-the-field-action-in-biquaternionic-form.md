@@ -421,3 +421,4 @@ symmetric, traceless, and conserved source-free — all verified by direct compu
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the geometric-algebra treatment of the electromagnetic stress–energy tensor.
 - David Hestenes, *Space-Time Algebra* (Gordon and Breach, 1966), for the spacetime-algebra form of fields, actions and conserved currents.
 - Ludwik Silberstein, "Elektromagnetische Grundgleichungen in bivektorieller Behandlung," *Annalen der Physik* **22** (1907) 579–586, for the complex-vector formulation of the electromagnetic energy and momentum.
+- Companion article: [The Relativistic Action and the Stationary-Action Principle in Biquaternionic Form](the-relativistic-action-and-the-stationary-action-principle-in-biquaternionic-form.html), for the derivation of the field action stated here and for the boundary term that selects the Green's function.
