@@ -1,4 +1,4 @@
-# __The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric__
+# __The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=4$__
 
 ## Introduction
 

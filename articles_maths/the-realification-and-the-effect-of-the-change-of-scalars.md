@@ -4,7 +4,7 @@
 
 The complex numbers carry two readings of one algebra: over $\mathbb{C}$, where the space has dimension one, and over $\mathbb{R}$, where the same space has dimension two. This article is the passage from the first reading to the second, the **realification**, and the effect of the change of scalars on the products and on the two forms. It is the **prototype** of the general construction of *The Realification and the Effect of the Change of Scalars*.
 
-The space itself, its two scalar readings, the complex structure $J$ of multiplication by $i$, the criteria $TJ=JT$ and $SJ=-JS$ for the two kinds of real-linear map and their block shapes are those of *The Complex Numbers as a Vector Space over $\mathbb{R}$*, above this article in this category, and are recalled here only where the realification of the forms needs them. The two products are *The Two Products of the Complexoid Space*; the two forms and their algebraic norms are *The Two Forms and the Two Algebraic Norms of the Complexoid Space*, above this article in this category, and the realified signatures stated there, $(1,1)$ and $(2,0)$, are derived here from the two rules of the construction.
+The space itself, its two scalar readings, the complex structure $J$ of multiplication by $i$, the criteria $TJ=JT$ and $SJ=-JS$ for the two kinds of real-linear map and their block shapes are those of *The Complex Numbers as a Vector Space over $\mathbb{R}$*, above this article in this category, and are recalled here only where the realification of the forms needs them. The two products are *The Two Products of the Complex Space*; the two forms and their algebraic norms are *The Two Forms and the Two Algebraic Norms of the Complex Space*, above this article in this category, and the realified signatures stated there, $(1,1)$ and $(2,0)$, are derived here from the two rules of the construction.
 
 ## The Two Scalar Interpretations and the Doubling of the Dimension
 
@@ -88,7 +88,7 @@ $$
 \boxed{\;\langle\cdot,\cdot\rangle\longrightarrow(1,1),\qquad \langle\cdot,\cdot\rangle_{*}\longrightarrow(2,0)\;},
 $$
 
-the signatures stated in *The Two Forms and the Two Algebraic Norms of the Complexoid Space*, above this article in this category. The realified Gram matrix of $\langle\cdot,\cdot\rangle$ is $\operatorname{diag}(1,-1)$, since the complex Gram matrix $[1]$ is real, and that of $\langle\cdot,\cdot\rangle_{*}$ is the identity $\mathrm{id}_2$. The form $\langle\cdot,\cdot\rangle$ is anisotropic over $\mathbb{C}$ and indefinite after realification; the two facts are read on different fields, the first on the complex values $Q_1^{2}$ and the second on their real parts $q_1^{2}-q'^2_1$.
+the signatures stated in *The Two Forms and the Two Algebraic Norms of the Complex Space*, above this article in this category. The realified Gram matrix of $\langle\cdot,\cdot\rangle$ is $\operatorname{diag}(1,-1)$, since the complex Gram matrix $[1]$ is real, and that of $\langle\cdot,\cdot\rangle_{*}$ is the identity $\mathrm{id}_2$. The form $\langle\cdot,\cdot\rangle$ is anisotropic over $\mathbb{C}$ and indefinite after realification; the two facts are read on different fields, the first on the complex values $Q_1^{2}$ and the second on their real parts $q_1^{2}-q'^2_1$.
 
 ## The Dictionary of the Complex Statements against the Real Ones
 
@@ -110,7 +110,7 @@ Two rows carry the substance of the dictionary. The row of the automorphisms: th
 
 ## The Trap of the Count of Operations
 
-The realification doubles the dimension and leaves the two products distinct, so a reader who expects the count of operations to fall is looking in the wrong place. The trap is met one step earlier, on the **real subspace**: there the two products coincide, $Q_1\bar Q_2=Q_1Q_2$, because the bar fixes a real element, so a computation carried out on real elements sees one operation where the complex space has two. The count of two is recovered only by the imaginary elements, on which the two products are opposite (see *Remarkable Subspaces of the Complexoid and the Two Forms*, above this article in this category); the realification preserves that distinction and does not create it.
+The realification doubles the dimension and leaves the two products distinct, so a reader who expects the count of operations to fall is looking in the wrong place. The trap is met one step earlier, on the **real subspace**: there the two products coincide, $Q_1\bar Q_2=Q_1Q_2$, because the bar fixes a real element, so a computation carried out on real elements sees one operation where the complex space has two. The count of two is recovered only by the imaginary elements, on which the two products are opposite (see *The Group of Involutions and the Two Subspaces of the Complex Space*, above this article in this category); the realification preserves that distinction and does not create it.
 
 ## Summary
 
@@ -134,7 +134,7 @@ The realification reads the one-dimensional complex space as the two-dimensional
 ## Further Reading
 
 - *The Complex Numbers as a Vector Space over $\mathbb{R}$*, above this article in this category, for the two scalar readings of $\mathbb{C}$, the complex structure $J$, the criteria $TJ=JT$ and $SJ=-JS$ and the block shapes.
-- [The Two Forms and the Two Algebraic Norms of the Complexoid Space](the-two-forms-and-the-two-algebraic-norms-of-the-complexoid-space.html), above this article in this category, for the two forms whose realified signatures are derived here.
+- [The Two Forms and the Two Algebraic Norms of the Complexoid Space](the-two-forms-and-the-two-algebraic-norms-of-the-complex-space.html), above this article in this category, for the two forms whose realified signatures are derived here.
 - *The Matrix Element Representations of the Complex Numbers*, above this article in this category, for the two matrices at $n=1$ read as element representations and for the identification of their determinant and trace with the algebraic norms.
-- [Remarkable Subspaces of the Complexoid and the Two Forms](remarkable-subspaces-of-the-complexoid-and-the-two-forms.html), above this article in this category, for the coincidence of the two products on the real subspace.
-- *Complexoid Subspaces* and [Complex Algebra](complex-algebra.html), for the two subspaces and the field of the algebra.
+- [Remarkable Subspaces of the Complexoid and the Two Forms](the-group-of-involutions-and-the-two-subspaces-of-the-complex-space.html), above this article in this category, for the coincidence of the two products on the real subspace.
+- *The Group of Involutions and the Two Subspaces of the Complex Space* and [Complex Algebra](complex-algebra.html), for the two subspaces and the field of the algebra.

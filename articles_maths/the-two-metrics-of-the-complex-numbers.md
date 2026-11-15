@@ -3,11 +3,11 @@
 
 ## Introduction
 
-The complex space carries two distinguished forms (*The Two Forms and the Two Algebraic Norms of the Complexoid Space*), and each of them induces a distance-like function on the one underlying plane. The **Euclidean metric** comes from the definite Hermitian form $\langle\cdot,\cdot\rangle_{*}$, and the **split metric** from the realified bilinear form $\langle\cdot,\cdot\rangle$. This article defines both, computes their Gram matrices and signatures in the real basis $1$, $i$, reads their level sets and the null cone of the indefinite one, and identifies the group of linear maps preserving each. The two functions are then compared: they are the definite and the indefinite quadratic forms carried by the one plane.
+The complex space carries two distinguished forms (*The Two Forms and the Two Algebraic Norms of the Complex Space*), and each of them induces a distance-like function on the one underlying plane. The **Euclidean metric** comes from the definite Hermitian form $\langle\cdot,\cdot\rangle_{*}$, and the **split metric** from the realified bilinear form $\langle\cdot,\cdot\rangle$. This article defines both, computes their Gram matrices and signatures in the real basis $1$, $i$, reads their level sets and the null cone of the indefinite one, and identifies the group of linear maps preserving each. The two functions are then compared: they are the definite and the indefinite quadratic forms carried by the one plane.
 
 The word **metric** is used in the sense of the menu, for the quadratic function a form induces on the difference of two elements. Only the Euclidean one is a metric in the strict sense; the split one is an indefinite quadratic function and is named a metric by the same convention, and the difference is stated where it occurs.
 
-The article does not define the two forms, which are *The Two Forms and the Two Algebraic Norms of the Complexoid Space*, nor the two algebraic norms $Q_1^{2}$ and $\langle Q_1\rangle_{*}$ that are their diagonals. The modulus $\sqrt{\langle Q_1\rangle_{*}}=\sqrt{H(Q_1)}$, its multiplicativity, its triangle inequality, the invertibility criterion and the group of units are *Complex Norm and Invertibility*. The topology is *Complex Topology*; the reflections and the group of maps preserving the definite form are *Rotations and Reflections in the Complex Plane*, below this article in this category. The realification by which a complex form becomes a real bilinear form is the two-dimensional case of *The Realification and the Effect of the Change of Scalars*.
+The article does not define the two forms, which are *The Two Forms and the Two Algebraic Norms of the Complex Space*, nor the two algebraic norms $Q_1^{2}$ and $\langle Q_1\rangle_{*}$ that are their diagonals. The modulus $\sqrt{\langle Q_1\rangle_{*}}=\sqrt{H(Q_1)}$, its multiplicativity, its triangle inequality, the invertibility criterion and the group of units are *Complex Norm and Invertibility*. The topology is *Complex Topology*; the reflections and the group of maps preserving the definite form are *Rotations and Reflections in the Complex Plane*, below this article in this category. The realification by which a complex form becomes a real bilinear form is the two-dimensional case of *The Realification and the Effect of the Change of Scalars*.
 
 ## The Two Forms and Their Realifications
 
@@ -17,7 +17,7 @@ $$
 B(Q_1,Q_2)=Q_1Q_2, \qquad H(Q_1,Q_2)=Q_1\bar Q_2,
 $$
 
-the first the multiplication of the field, symmetric, and the second the derived operation of the algebra, conjugate-symmetric; the two products of the complex space are exactly these, $Q_1Q_2$ and $Q_1\bar Q_2$ (*The Two Products of the Complexoid Space*). Both are $\mathbb{C}$-linear in the first slot and both have Gram matrix $[1]$ over $\mathbb{C}$ (*The Two Forms and the Two Algebraic Norms of the Complexoid Space*). Their diagonals are the two algebraic norms,
+the first the multiplication of the field, symmetric, and the second the derived operation of the algebra, conjugate-symmetric; the two products of the complex space are exactly these, $Q_1Q_2$ and $Q_1\bar Q_2$ (*The Two Products of the Complex Space*). Both are $\mathbb{C}$-linear in the first slot and both have Gram matrix $[1]$ over $\mathbb{C}$ (*The Two Forms and the Two Algebraic Norms of the Complex Space*). Their diagonals are the two algebraic norms,
 
 $$
 B(Q_1,Q_1)=Q_1^{2}, \qquad H(Q_1,Q_1)=Q_1\bar Q_1=\langle Q_1\rangle_{*},
@@ -189,13 +189,13 @@ The two metrics are the two readings of the two forms and satisfy $d_{H}^{2}-d_{
 
 ## Further Reading
 
-- [The Two Forms and the Two Algebraic Norms of the Complexoid Space](the-two-forms-and-the-two-algebraic-norms-of-the-complexoid-space.html), for the two forms and the two algebraic norms whose diagonals are their squares.
-- [The Two Products of the Complexoid Space](the-two-products-of-the-complexoid-space.html), for the two products $Q_1Q_2$ and $Q_1\bar Q_2$ whose forms are realified here.
+- [The Two Forms and the Two Algebraic Norms of the Complexoid Space](the-two-forms-and-the-two-algebraic-norms-of-the-complex-space.html), for the two forms and the two algebraic norms whose diagonals are their squares.
+- [The Two Products of the Complexoid Space](the-two-products-of-the-complex-space.html), for the two products $Q_1Q_2$ and $Q_1\bar Q_2$ whose forms are realified here.
 - [The Realification and the Effect of the Change of Scalars](the-realification-and-the-effect-of-the-change-of-scalars.html), the complex article of that name, for the realification rules that give the signatures $(1,1)$ and $(2,0)$.
 - [Complex Algebra](complex-algebra.html), for the algebra, its basis and its one nontrivial involution.
 - [Complex Norm and Invertibility](complex-norm-and-invertibility.html), for the modulus, its multiplicativity, its triangle inequality and the group of units.
 - [Rotations and Reflections in the Complex Plane](rotations-and-reflections-in-the-complex-plane.html), for the identification of the form-preserving multiplications with $\mathrm{SO}(2)$, the reflections and the group $O(2)$.
-- *Complexoid Subspaces*, for the real and imaginary subspaces on which the split metric is definite of opposite signs.
-- [Remarkable Subspaces of the Complexoid and the Two Forms](remarkable-subspaces-of-the-complexoid-and-the-two-forms.html), for the restrictions of the two forms to the two subspaces.
+- *The Group of Involutions and the Two Subspaces of the Complex Space*, for the real and imaginary subspaces on which the split metric is definite of opposite signs.
+- [Remarkable Subspaces of the Complexoid and the Two Forms](the-group-of-involutions-and-the-two-subspaces-of-the-complex-space.html), for the restrictions of the two forms to the two subspaces.
 - Werner Greub, *Linear Algebra*, 4th edition (Springer, 1981), for Gram matrices, inertia and the groups preserving a symmetric or Hermitian form.
 - Pertti Lounesto, *Clifford Algebras and Spinors*, 2nd edition (Cambridge University Press, 2001), for the definite and indefinite forms of the plane and their groups.

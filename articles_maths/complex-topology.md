@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This article collects the topology of the complex algebra $\mathbb{C}$ as a space and of its group of units. It uses the algebra and the two distinguished subspaces of *Complex Algebra* and *Complexoid Subspaces*, the norm $\langle Q\rangle_{*} = Q\bar{Q} = q^2+q'^2$ and the invertibility criterion of *Complex Norm and Invertibility*, and the Lie-group structure and exponential of *Complex Exponential and Lie Group Structure*. No physics is invoked and no new result is claimed.
+This article collects the topology of the complex algebra $\mathbb{C}$ as a space and of its group of units. It uses the algebra and the two distinguished subspaces of *Complex Algebra* and *The Group of Involutions and the Two Subspaces of the Complex Space*, the norm $\langle Q\rangle_{*} = Q\bar{Q} = q^2+q'^2$ and the invertibility criterion of *Complex Norm and Invertibility*, and the Lie-group structure and exponential of *Complex Exponential and Lie Group Structure*. No physics is invoked and no new result is claimed.
 
 The complex case is the simplest in the family and the whole of its topology is the topology of the plane and the circle. The algebra itself is $\mathbb{R}^2$, hence contractible; the group of units is the punctured plane, homotopy equivalent to the unit circle, with fundamental group $\mathbb{Z}$. No richer topology is available here: the definiteness of the norm and the emptiness of the zero-divisor class rule out the higher sphere, the null cone and its link. The group structure of the units and their connectedness are the subject of the companion article *Complex Exponential and Lie Group Structure*; this article owns the ambient space and its distinguished subsets, the unit circle and its homotopy, and the punctured plane.
 
@@ -32,7 +32,7 @@ Thus every map into $\mathbb{C}$ is null-homotopic, and the same homotopy contra
 $$ \boxed{\;\mathbb{R}_{\mathbb{C}} \cong \mathbb{R}, \qquad i\mathbb{R}_{\mathbb{C}} \cong \mathbb{R}\;}.
 $$
 
-The two subspaces carry no topology beyond that of the line; the content on the norm of *Complexoid Subspaces* lies in the quadratic form restricted to them, not in their topology.
+The two subspaces carry no topology beyond that of the line; the content on the norm of *The Group of Involutions and the Two Subspaces of the Complex Space* lies in the quadratic form restricted to them, not in their topology.
 
 ## The Unit Circle
 

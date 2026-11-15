@@ -361,6 +361,10 @@ The interior of the ball carries the standard Bures metric, whose boundary restr
 
 ## Further Reading
 
+**The state space.** [States, Observables and the Born Weight](states-observables-and-the-born-weight.html) states the results that this article derives — the forms on the sector, the ball as the trace-one slice, the Fubini–Study metric as a quarter of the sphere, the commutator as the complex structure — and carries the Born weight and the preparation dictionary around them.
+
+**The module.** [The Modules: What the Algebra Acts On](the-modules-what-the-algebra-acts-on.html) constructs the state module $\mathbb{B}\tilde\Pi_+\cong\mathbb{C}^2$ in which the spinor computation is carried out, with its two ideals, its ladder and its gauge.
+
 - S. Kobayashi and K. Nomizu, *Foundations of Differential Geometry, Vol. II* (Wiley, 1969), for the Fubini–Study metric on complex projective space, its Kähler structure, and its holomorphic sectional curvature.
 - I. Bengtsson and K. Życzkowski, *Geometry of Quantum States: An Introduction to Quantum Entanglement* (Cambridge University Press, 2nd ed., 2017), for the Bloch ball, the Fubini–Study and Bures metrics, and their monotonicity properties.
 - S. L. Braunstein and C. M. Caves, "Statistical distance and the geometry of quantum states", *Physical Review Letters* **72**, 3439 (1994), for the quantum Fisher information and the identification of the Bures metric with the statistically distinguished metric of the state space.
