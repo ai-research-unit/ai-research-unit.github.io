@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The multiplication operators of a commutative involutive algebra carry the involution $L_a^{*} = L_{\sigma(a)}$ of *Involutions of the Multiplication Operators*, and *Adjoints in a Commutative Involutive Algebra* shows that this involution is the restriction of the adjoint involution ${}^{\dagger}$ of $\operatorname{End}_R(A)$ to the multiplication algebra: $L_a^{*} = L_a^{\dagger}$. The present article reads the restricted involution as a structure in its own right. Its **fixed algebra** is the set of the self-adjoint multiplications, $\{F\in\operatorname{Mult}(A) : F^{\dagger} = F\}$, which is the multiplication algebra of the fixed subalgebra, $L_{A^\sigma}$, and which carries the symmetrised product $F\bullet G = \tfrac12(FG+GF)$ as a Jordan algebra; its skew part is $L_{A^-}$, and the whole multiplication algebra is the direct sum of the two when $2$ is invertible. The involution descends to the quotients of the algebra, to the module endomorphisms, and to the multiplication operators of the fixed subalgebra, and it is the operator-level shadow of the involution of the elements.
+The multiplication operators of a commutative involutive algebra carry the involution $L_a^{*} = L_{\sigma(a)}$ of *Involutions of the Multiplication Operators*, and *Adjoints in a Commutative Involutive Algebra* shows that this involution is the restriction of the adjoint involution ${}^{\dagger}$ of $\operatorname{End}_R(A)$ to the multiplication algebra: $L_a^{*} = L_a^{\dagger}$. The present article reads the restricted involution as a structure in its own right. Its **fixed algebra** is the set of the self-adjoint multiplications, $\{F\in\operatorname{Mult}(A) : F^{\dagger} = F\}$, which is the multiplication algebra of the fixed subalgebra, $L_{A^\sigma}$, and which carries the symmetrised product $F\bullet G = \tfrac12(FG+GF)$ as a Jordan algebra; its anti-Hermitian part is $L_{A^-}$, and the whole multiplication algebra is the direct sum of the two when $2$ is invertible. The involution descends to the quotients of the algebra, to the module endomorphisms, and to the multiplication operators of the fixed subalgebra, and it is the operator-level shadow of the involution of the elements.
 
 The article collects the properties of the restricted involution: it is the unique algebra involution of $\operatorname{Mult}(A)$ that corresponds to $\sigma$ under the isomorphism $a\mapsto L_a$; it is compatible with the inclusion $\operatorname{Mult}(A)\hookrightarrow\operatorname{End}_R(A)$, so the multiplication algebra is an involutive subalgebra of the endomorphism algebra; the fixed algebra $L_{A^\sigma}$ is the multiplication algebra of the fixed subalgebra and is a Jordan subalgebra of the self-adjoint operators; and the involution is compatible with the descent and with the quotients. The closed forms are the multiplication algebra of the polynomial ring with the negation, where the fixed algebra is the multiplication by the even polynomials, and of the coordinate algebra, where it is the multiplication by the fixed coordinates.
 
@@ -36,7 +36,7 @@ the restriction of the adjoint involution of $\operatorname{End}_R(A)$. On the g
 
 ### The Self-Adjoint Multiplications
 
-**Theorem.** The fixed algebra and the skew part of the multiplication operators are
+**Theorem.** The fixed algebra and the anti-Hermitian part of the multiplication operators are
 
 $$
 \boxed{\;\operatorname{Mult}(A)^{*} = \{F : F^{\dagger} = F\} = L_{A^\sigma}\cong A^\sigma, \qquad
@@ -51,7 +51,7 @@ and $\operatorname{Mult}(A) = \operatorname{Mult}(A)^{*}\oplus\operatorname{Mult
 
 ### The Jordan Structure
 
-**Proposition.** With the symmetrised product $F\bullet G = \tfrac12(FG+GF)$ the fixed algebra $\operatorname{Mult}(A)^{*}$ is a Jordan algebra, isomorphic to $(A^\sigma)^+$; the skew part is a Lie algebra under the commutator, isomorphic to the Lie algebra of $A^-$ under the commutator.
+**Proposition.** With the symmetrised product $F\bullet G = \tfrac12(FG+GF)$ the fixed algebra $\operatorname{Mult}(A)^{*}$ is a Jordan algebra, isomorphic to $(A^\sigma)^+$; the anti-Hermitian part is a Lie algebra under the commutator, isomorphic to the Lie algebra of $A^-$ under the commutator.
 
 *Proof.* The fixed algebra of an involution is closed under the symmetrised product and the anti-fixed part under the commutator, by *Involutive Algebras*; the isomorphism with $A^\sigma$ and $A^-$ is $a\mapsto L_a$, which carries the products to the products.
 
@@ -67,13 +67,13 @@ and $\operatorname{Mult}(A) = \operatorname{Mult}(A)^{*}\oplus\operatorname{Mult
 
 ## Examples
 
-**Example (the negated variable).** For $A = R[x]$ with $\sigma(x) = -x$ the involution on the multiplication operators is $L_f^{*} = L_{f(-x)}$; the fixed algebra is $L_{R[x^2]}\cong R[x^2]$, the multiplications by the even polynomials, a Jordan algebra under the symmetrised product, and the skew part is $L_{xR[x^2]}$. On $R[x]/(x^k)$ the same formula holds modulo $x^k$.
+**Example (the negated variable).** For $A = R[x]$ with $\sigma(x) = -x$ the involution on the multiplication operators is $L_f^{*} = L_{f(-x)}$; the fixed algebra is $L_{R[x^2]}\cong R[x^2]$, the multiplications by the even polynomials, a Jordan algebra under the symmetrised product, and the anti-Hermitian part is $L_{xR[x^2]}$. On $R[x]/(x^k)$ the same formula holds modulo $x^k$.
 
 **Example (the coordinate algebra).** For $A = R^n$ with the standard pairing and a coordinate involution $\sigma$, the multiplication operators are the diagonal matrices $L_a$; the involution on them is $L_a^{*} = L_{\sigma(a)}$, the fixed algebra is the diagonal matrices with the coordinates fixed by $\sigma$, and every such operator is self-adjoint.
 
 ## Summary
 
-The **involution on the multiplication operators** of a commutative involutive algebra is $L_a^{*} = L_{\sigma(a)}$, the restriction of the adjoint involution ${}^{\dagger}$ of $\operatorname{End}_R(A)$; by *Adjoints in a Commutative Involutive Algebra* it is the induced involution of *Involutions of the Multiplication Operators*, and it is the unique algebra involution making the isomorphism $A\cong\operatorname{Mult}(A)$ equivariant. Its **fixed algebra** is $\operatorname{Mult}(A)^{*}\cong A^\sigma$, the multiplication algebra of the fixed subalgebra, a Jordan algebra under the symmetrised product; its skew part is $L_{A^-}$, a Lie algebra under the commutator; and $\operatorname{Mult}(A)$ is their direct sum when $2$ is invertible. The involution is compatible with the composition, descends to the stable quotients and to the fixed subalgebra under the descent, and makes the multiplication algebra an involutive subalgebra of the endomorphism algebra. The negated variable and the coordinate algebra are the worked examples. No form, norm, distance or order occurs.
+The **involution on the multiplication operators** of a commutative involutive algebra is $L_a^{*} = L_{\sigma(a)}$, the restriction of the adjoint involution ${}^{\dagger}$ of $\operatorname{End}_R(A)$; by *Adjoints in a Commutative Involutive Algebra* it is the induced involution of *Involutions of the Multiplication Operators*, and it is the unique algebra involution making the isomorphism $A\cong\operatorname{Mult}(A)$ equivariant. Its **fixed algebra** is $\operatorname{Mult}(A)^{*}\cong A^\sigma$, the multiplication algebra of the fixed subalgebra, a Jordan algebra under the symmetrised product; its anti-Hermitian part is $L_{A^-}$, a Lie algebra under the commutator; and $\operatorname{Mult}(A)$ is their direct sum when $2$ is invertible. The involution is compatible with the composition, descends to the stable quotients and to the fixed subalgebra under the descent, and makes the multiplication algebra an involutive subalgebra of the endomorphism algebra. The negated variable and the coordinate algebra are the worked examples. No form, norm, distance or order occurs.
 
 ## Summary of Notation
 
@@ -83,7 +83,7 @@ The **involution on the multiplication operators** of a commutative involutive a
 | $L_a^{*} = L_{\sigma(a)} = L_a^{\dagger}$ | The involution on the multiplication operators |
 | $\iota(F^{*}) = \iota(F)^{\dagger}$ | Compatibility with the inclusion in $\operatorname{End}_R(A)$ |
 | $\operatorname{Mult}(A)^{*}\cong A^\sigma$ | Fixed algebra |
-| $\operatorname{Mult}(A)^{-}\cong A^-$ | Skew part |
+| $\operatorname{Mult}(A)^{-}\cong A^-$ | Anti-Hermitian part |
 | $F\bullet G = \tfrac12(FG+GF)$ | Jordan structure on the fixed algebra |
 | $\overline{L_a^{*}}$ on $A/I$ | Descent to a stable quotient |
 

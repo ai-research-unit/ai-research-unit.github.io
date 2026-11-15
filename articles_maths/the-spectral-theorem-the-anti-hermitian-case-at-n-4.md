@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**A anti-Hermitian matrix is $i$ times a Hermitian one, so its spectrum is purely imaginary and its exponential is unitary; for a real skew matrix of order four the spectrum is $\{i\theta_1,-i\theta_1,i\theta_2,-i\theta_2\}$, the two angles exist and are independent, the Pfaffian is their product, and the two summands of $\mathfrak{so}(4)=\mathfrak{sl}_2\oplus\mathfrak{sl}_2$ carry the two parameters.**
+**An anti-Hermitian matrix is $i$ times a Hermitian one, so its spectrum is purely imaginary and its exponential is unitary; for a real antisymmetric matrix of order four the spectrum is $\{i\theta_1,-i\theta_1,i\theta_2,-i\theta_2\}$, the two angles exist and are independent, the Pfaffian is their product, and the two summands of $\mathfrak{so}(4)=\mathfrak{sl}_2\oplus\mathfrak{sl}_2$ carry the two parameters.**
 
 The article proves the purely imaginary spectrum, identifies the exponential with the map onto the unitary group, derives the real normal form with two rotation blocks, relates the two angles to the two ideals and to the isoclinic families, computes the Pfaffian, and reads the whole picture in the biquaternion algebra as a two-sided rotation $L_{e^{\theta_1 i}}R_{e^{\theta_2 i}}$.
 
@@ -16,7 +16,7 @@ It assumes *Normal Matrices and the Common Spectral Theorem at $n=4$*, *The Lie 
 
 **Proof.** $H=-iA$ satisfies $H^{\ast}=iA^{\ast}=-iA=H$; the eigenvalues of $iH$ are $i\lambda$ with $\lambda$ an eigenvalue of $H$, by the spectral resolution.
 
-**Corollary.** $A=i\sum_k\theta_kP_k$ with $\theta_k$ real and $P_k$ the spectral projectors, so a anti-Hermitian matrix is a real linear combination of commuting orthogonal projections after multiplication by $i$.
+**Corollary.** $A=i\sum_k\theta_kP_k$ with $\theta_k$ real and $P_k$ the spectral projectors, so an anti-Hermitian matrix is a real linear combination of commuting orthogonal projections after multiplication by $i$.
 
 **Proof.** Insert the Hermitian resolution of $H$.
 
@@ -24,7 +24,7 @@ It assumes *Normal Matrices and the Common Spectral Theorem at $n=4$*, *The Lie 
 
 **Proof.** The conjugate of an eigenvalue is an eigenvalue of the conjugate matrix, which is the matrix itself.
 
-**The real dimension.** $\mathfrak{u}(4)$ has real dimension $16$, and its anti-Hermitian part is the whole of it, since a anti-Hermitian matrix has $16$ real parameters.
+**The real dimension.** $\mathfrak{u}(4)$ has real dimension $16$, and its anti-Hermitian part is the whole of it, since an anti-Hermitian matrix has $16$ real parameters.
 
 **Proof.** A Hermitian matrix has $16$ real parameters, and multiplication by $i$ is a real-linear isomorphism onto the anti-Hermitian matrices.
 
@@ -46,20 +46,20 @@ It assumes *Normal Matrices and the Common Spectral Theorem at $n=4$*, *The Lie 
 
 **Proof.** The spectral mapping theorem for the exponential.
 
-## Real Skew Matrices and the Two Angles
+## Real Anti-Hermitian Matrices and the Two Angles
 
-**Theorem.** A real skew matrix of order four has a real orthogonal $Q$ and real numbers $\theta_1,\theta_2$ with
+**Theorem.** A real antisymmetric matrix of order four has a real orthogonal $Q$ and real numbers $\theta_1,\theta_2$ with
 $$
 A=Q\begin{pmatrix}R_{\theta_1}&0\\0&R_{\theta_2}\end{pmatrix}Q^{\mathsf T},\qquad R_\theta=\begin{pmatrix}0&-\theta\\ \theta&0\end{pmatrix}.
 $$
 
-**Proof.** The real eigenvalues of a real skew matrix are zero, since a real eigenvalue $\lambda$ satisfies $\lambda=-\lambda$; the complex ones come in conjugate pairs, and a conjugate pair $\pm i\theta$ spans a real two-dimensional invariant plane on which the matrix is $\theta$ times a rotation by a quarter turn. Two such planes exhaust the four dimensions.
+**Proof.** The real eigenvalues of a real antisymmetric matrix are zero, since a real eigenvalue $\lambda$ satisfies $\lambda=-\lambda$; the complex ones come in conjugate pairs, and a conjugate pair $\pm i\theta$ spans a real two-dimensional invariant plane on which the matrix is $\theta$ times a rotation by a quarter turn. Two such planes exhaust the four dimensions.
 
 **Corollary.** The spectrum is $\{i\theta_1,-i\theta_1,i\theta_2,-i\theta_2\}$, and the eigenvalues are purely imaginary and come in pairs of opposite sign.
 
 **Proof.** The eigenvalues of $R_\theta$ are $\pm i\theta$.
 
-**Corollary.** $\det A=\theta_1^{2}\theta_2^{2}\ge0$, so a real skew matrix of order four has a nonnegative determinant, and it is singular exactly when one angle vanishes.
+**Corollary.** $\det A=\theta_1^{2}\theta_2^{2}\ge0$, so a real antisymmetric matrix of order four has a nonnegative determinant, and it is singular exactly when one angle vanishes.
 
 **Proof.** The determinant is the product of the four eigenvalues.
 
@@ -91,13 +91,13 @@ with $J_1=e_1\wedge e_2+e_3\wedge e_4$ self-dual and $J_2=e_1\wedge e_2-e_3\wedg
 
 ## The Pfaffian
 
-**Definition.** For a real skew matrix of order four, $\operatorname{Pf}(A)=a_{12}a_{34}-a_{13}a_{24}+a_{14}a_{23}$.
+**Definition.** For a real antisymmetric matrix of order four, $\operatorname{Pf}(A)=a_{12}a_{34}-a_{13}a_{24}+a_{14}a_{23}$.
 
 **Theorem.** $\operatorname{Pf}(A)^{2}=\det A$, and in the normal form $\operatorname{Pf}(A)=\pm\theta_1\theta_2$ with the sign of $Q$.
 
 **Proof.** Both sides are polynomials of degree four in the entries and agree on the normal form up to the square of the orthogonal change, whose determinant is $\pm1$; the square removes the sign.
 
-**Corollary.** An invertible real skew matrix of order four has $\operatorname{Pf}\neq0$, and the sign of the Pfaffian separates the invertible ones into two components.
+**Corollary.** An invertible real antisymmetric matrix of order four has $\operatorname{Pf}\neq0$, and the sign of the Pfaffian separates the invertible ones into two components.
 
 **Proof.** $\operatorname{Pf}^{2}=\det$, and the Pfaffian is continuous.
 
@@ -111,9 +111,9 @@ with $J_1=e_1\wedge e_2+e_3\wedge e_4$ self-dual and $J_2=e_1\wedge e_2-e_3\wedg
 
 ## The Biquaternion Reading
 
-**Theorem.** Every real skew matrix of order four is $A=L_u+R_v$ with $u,v$ imaginary biquaternions, and $e^{A}=L_{e^{u}}R_{e^{v}}$ is a two-sided rotation with the two one-sided unit quaternions.
+**Theorem.** Every real antisymmetric matrix of order four is $A=L_u+R_v$ with $u,v$ imaginary biquaternions, and $e^{A}=L_{e^{u}}R_{e^{v}}$ is a two-sided rotation with the two one-sided unit quaternions.
 
-**Proof.** The three left multiplications by $i,j,k$ and the three right multiplications span a six-dimensional space of real skew matrices, which is all of $\mathfrak{so}(4)$; the left and right families commute, so the exponential of the sum is the product of the exponentials.
+**Proof.** The three left multiplications by $i,j,k$ and the three right multiplications span a six-dimensional space of real antisymmetric matrices, which is all of $\mathfrak{so}(4)$; the left and right families commute, so the exponential of the sum is the product of the exponentials.
 
 **Corollary.** The two angles are the rotation angles of the two one-sided unit quaternions, and the isoclinic rotations are those with one of the two factors equal to a real scalar.
 
@@ -129,18 +129,18 @@ with $J_1=e_1\wedge e_2+e_3\wedge e_4$ self-dual and $J_2=e_1\wedge e_2-e_3\wedg
 
 ## Summary
 
-A anti-Hermitian matrix is $i$ times a Hermitian one, so its spectrum is purely imaginary and its exponential is unitary; every unitary matrix is the exponential of a anti-Hermitian one, and the exponential is onto but not injective.
+An anti-Hermitian matrix is $i$ times a Hermitian one, so its spectrum is purely imaginary and its exponential is unitary; every unitary matrix is the exponential of an anti-Hermitian one, and the exponential is onto but not injective.
 
-A real skew matrix of order four has the normal form with two rotation blocks and the spectrum $\{i\theta_1,-i\theta_1,i\theta_2,-i\theta_2\}$, with $\det A=\theta_1^{2}\theta_2^{2}$, so it is singular exactly when an angle vanishes. The Pfaffian is $\pm\theta_1\theta_2$ and its square is the determinant, so the sign of the Pfaffian separates the two components of the invertible skew matrices.
+A real antisymmetric matrix of order four has the normal form with two rotation blocks and the spectrum $\{i\theta_1,-i\theta_1,i\theta_2,-i\theta_2\}$, with $\det A=\theta_1^{2}\theta_2^{2}$, so it is singular exactly when an angle vanishes. The Pfaffian is $\pm\theta_1\theta_2$ and its square is the determinant, so the sign of the Pfaffian separates the two components of the invertible antisymmetric matrices.
 
-The two summands of $\mathfrak{so}(4)=\mathfrak{sl}_2\oplus\mathfrak{sl}_2$ carry the parameters $\theta_\pm=(\theta_1\pm\theta_2)/2$, and the isoclinic rotations are those with one parameter zero. In the biquaternion algebra the real skew matrices are the sums $L_u+R_v$, and the rotation is the two-sided action of two one-sided unit quaternions.
+The two summands of $\mathfrak{so}(4)=\mathfrak{sl}_2\oplus\mathfrak{sl}_2$ carry the parameters $\theta_\pm=(\theta_1\pm\theta_2)/2$, and the isoclinic rotations are those with one parameter zero. In the biquaternion algebra the real antisymmetric matrices are the sums $L_u+R_v$, and the rotation is the two-sided action of two one-sided unit quaternions.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $A^{\ast}=-A$ | anti-Hermitian |
-| $A=iH$ | the Hermitian form of a anti-Hermitian matrix |
+| $A=iH$ | the Hermitian form of an anti-Hermitian matrix |
 | $R_\theta$ | the real rotation block |
 | $\theta_1,\theta_2$ | the two angles |
 | $\theta_\pm$ | the two parameters of the two ideals |
@@ -148,7 +148,7 @@ The two summands of $\mathfrak{so}(4)=\mathfrak{sl}_2\oplus\mathfrak{sl}_2$ carr
 
 ## Further Reading
 
-- Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the real normal form of a skew matrix and the Pfaffian.
+- Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the real normal form of an antisymmetric matrix and the Pfaffian.
 - [The Lie Algebra $\operatorname{Skew}_4\cong\mathfrak{so}(4)$](the-lie-algebra-skew-4-and-so-4.html), for the two ideals and the brackets.
 - [Simple and Non-Simple Rotations: One Angle at $n\le3$, Two Angles at $n\ge4$](simple-and-non-simple-rotations-one-angle-at-n-le-3-two-angles-at-n-ge-4.html), for the geometry of the two angles.
 - [The Rotor as a Square Root of a Rotation: the Two Signs and the Double Cover at $n=4$](the-rotor-as-a-square-root-of-a-rotation-the-two-signs-and-the-double-cover-at-n-4.html), for the two-sided rotor.

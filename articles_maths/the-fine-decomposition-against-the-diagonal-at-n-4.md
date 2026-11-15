@@ -96,9 +96,9 @@ with $12$ one-dimensional weight spaces and the four-dimensional zero weight spa
 
 **The reading in the axis-free basis.** There the split is invisible: the sixteen elements $T_{\mu\nu}$ are signed permutations, and no subset of them is the set of diagonal matrices. The matrix units are the basis in which the diagonal and the triangular pieces are coordinate subspaces, and the axis-free basis is the one in which the halves and the trace pairing are coordinate subspaces. Each question has its own basis, and the fine decomposition belongs to the first.
 
-**Corollary.** The diagonal is the only part of the space common to the two halves in the index language: a symmetric matrix has arbitrary diagonal and symmetric off-diagonal entries, a skew matrix has zero diagonal, and the diagonal coordinates belong to the symmetric side alone.
+**Corollary.** The diagonal is the only part of the space common to the two halves in the index language: a symmetric matrix has arbitrary diagonal and symmetric off-diagonal entries, an antisymmetric matrix has zero diagonal, and the diagonal coordinates belong to the symmetric side alone.
 
-**Proof.** The two index patterns: the diagonal indices $i=i$ are symmetric, and no skew matrix has a nonzero diagonal entry.
+**Proof.** The two index patterns: the diagonal indices $i=i$ are symmetric, and no antisymmetric matrix has a nonzero diagonal entry.
 
 **Corollary.** The count $4+6+6=16$ is read as the dimension of the flat part plus twice the dimension of the positive roots, which is the shape of the triangular decomposition of the next article.
 

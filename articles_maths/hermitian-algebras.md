@@ -89,15 +89,15 @@ an anti-automorphism of order two, and the **conjugate reversion** $x^{r,\sigma}
 
 **Example.** For the biquaternions $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H} \cong M_2(\mathbb{C})$ the conjugations ${}^{\natural}$, $\sigma$ and $\bar{\cdot}$ commute and $\bar{\cdot} = \sigma\circ{}^{\natural}$ is the dagger; the form $\operatorname{Trd}(\tilde Q_1\bar{\tilde Q_2})$ is the Hermitian one, while $\operatorname{Trd}(\tilde Q_1\tilde Q_2)$ is the symmetric form of the ordinary trace. The difference between the two is exactly the dagger, and it is stated in *Hilbert Algebras*.
 
-## The Self-Adjoint and Skew Elements
+## The Self-Adjoint and Anti-Hermitian Elements
 
-The involution cuts the algebra in two. An element is **self-adjoint** when $x^{\dagger} = x$ and **skew-adjoint** when $x^{\dagger} = -x$, and the involution is $F$-semilinear, so the self-adjoint elements form a module over the fixed ring $F^\sigma$ and the skew-adjoint elements another. When $2$ is invertible in $F$ every element decomposes uniquely,
+The involution cuts the algebra in two. An element is **self-adjoint** when $x^{\dagger} = x$ and **anti-self-adjoint** when $x^{\dagger} = -x$, and the involution is $F$-semilinear, so the self-adjoint elements form a module over the fixed ring $F^\sigma$ and the anti-self-adjoint elements another. When $2$ is invertible in $F$ every element decomposes uniquely,
 
 $$
 x = \tfrac{1}{2}\bigl(x + x^{\dagger}\bigr) + \tfrac{1}{2}\bigl(x - x^{\dagger}\bigr),
 $$
 
-into a self-adjoint part and a skew-adjoint part. The decomposition is the algebraic substitute for the splitting of a complex number into a real part and an imaginary part, and it carries no order.
+into a self-adjoint part and an anti-self-adjoint part. The decomposition is the algebraic substitute for the splitting of a complex number into a real part and an imaginary part, and it carries no order.
 
 For every $x$ the products $x^{\dagger}x$ and $xx^{\dagger}$ are self-adjoint, $(x^{\dagger}x)^{\dagger} = x^{\dagger}x$, and the form at the two equal arguments reads $\mathfrak{Q}(x) = \langle x^{\dagger}x, 1\rangle$ by the correspondence. These elements are the **Hermitian squares** of the algebra, and the set of their finite sums is the algebraic positive cone of *Hermitian Squares and the Algebraic Positive Cone*. Whether that cone meets its negative only at $0$ is the question of the positivity of the involution, and it is the question that decides whether the algebra is a *Hilbert Algebra*; it is Part II's.
 
@@ -155,7 +155,7 @@ It is a subgroup of the group of units: it is closed under the product because $
 - The axiom is $\langle xy, z\rangle = \langle y, x^{\dagger}z\rangle$, equivalently $\langle x^{\dagger}y, z\rangle = \langle y, xz\rangle$; it says that $L_{x^{\dagger}} = L_x^{*}$. The third identity $\langle xy, z\rangle = \langle x, zy^{\dagger}\rangle$, equivalently $R_{x^{\dagger}} = R_x^{*}$, is not a consequence: it is the cyclicity of the functional of the form, and it holds for the trace form.
 - The form and the involution determine each other through $\ell = \langle \cdot, 1\rangle$, with $\langle x, y\rangle = \langle x^{\dagger}y, 1\rangle$.
 - The dagger of a Clifford algebra is the composite $x^{\dagger} = \sigma(\alpha(x^{r}))$ of reversion and the involution of the base, available with no positivity.
-- Every element splits as $x = \tfrac12(x + x^{\dagger}) + \tfrac12(x - x^{\dagger})$ into a self-adjoint and a skew-adjoint part, and the Hermitian squares $x^{\dagger}x$ generate the algebraic positive cone.
+- Every element splits as $x = \tfrac12(x + x^{\dagger}) + \tfrac12(x - x^{\dagger})$ into a self-adjoint and an anti-self-adjoint part, and the Hermitian squares $x^{\dagger}x$ generate the algebraic positive cone.
 - The left and the right radicals are a left and a right ideal, and they coincide and are two-sided when the form is associative; the form descends to a non-degenerate form on the quotient.
 - The isometry group is algebraic, and the unitary slice $U = \{x : x^{\dagger}x = xx^{\dagger} = 1\}$ is the subgroup on which the dagger is the inverse and the Hermitian pair is the inner conjugation.
 - Positivity, the cone, the completion and the modular theory are *Hilbert Algebras* and Part II; the operator groups of this category are the four that follow.

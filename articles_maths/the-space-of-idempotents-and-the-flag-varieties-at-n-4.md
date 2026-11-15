@@ -4,7 +4,7 @@
 
 **The idempotents of rank $k$ in $M_4(\mathbb{C})$ form the homogeneous space of decompositions $\mathbb{C}^{4}=V\oplus W$ of complex dimension $2k(4-k)$, their images sweep the Grassmannian $\mathrm{Gr}_k(\mathbb{C}^{4})$ of dimension $k(4-k)$, so the four Grassmannians are $\mathbb{P}^{3}$, $\mathrm{Gr}_2$ of dimension $4$, $\mathbb{P}^{3}$ again and two points, the full flag has dimension $6$, the Hermitian idempotents give the Grassmannians themselves through $U(4)$, and $\mathrm{Gr}_2$ sits in $\mathbb{P}^{5}$ as the Klein quadric.**
 
-The article parametrises the idempotents of each rank by their kernel, proves that the parametrisation is an isomorphism onto the Grassmannian, computes the four dimensions, describes the full flag and the Borel, identifies the Hermitian idempotents with the same Grassmannians through the unitary group, reads the two Peirce idempotents as a complementary pair of points of $\mathrm{Gr}_2$, and exhibits the Plücker relation of $\mathrm{Gr}_2$ as the Klein quadric, whose defining equation is the Pfaffian expression of the skew article.
+The article parametrises the idempotents of each rank by their kernel, proves that the parametrisation is an isomorphism onto the Grassmannian, computes the four dimensions, describes the full flag and the Borel, identifies the Hermitian idempotents with the same Grassmannians through the unitary group, reads the two Peirce idempotents as a complementary pair of points of $\mathrm{Gr}_2$, and exhibits the Plücker relation of $\mathrm{Gr}_2$ as the Klein quadric, whose defining equation is the Pfaffian expression of the antisymmetric article.
 
 It assumes *The Ideals, the Centre and the Simplicity of $M_4(\mathbb{C})$*, *The Peirce Decomposition of $\operatorname{Sym}_4$ as a Jordan Algebra* and *The Triangular Decomposition $\mathfrak{h}\oplus\mathfrak{n}_+\oplus\mathfrak{n}_-$. The model at order two is *The Space of Idempotents and the Flag Variety $\mathbb{P}^{1}$*.
 
@@ -117,7 +117,7 @@ $$
 
 **Proof.** The six minors are the coordinates of the decomposable bivector of the plane; a bivector is decomposable exactly when its wedge with itself vanishes, which in four dimensions is the single relation displayed.
 
-**Corollary.** The relation is the Plücker relation, and its left side is the Pfaffian expression of the skew article applied to the matrix of the six coordinates.
+**Corollary.** The relation is the Plücker relation, and its left side is the Pfaffian expression of the antisymmetric article applied to the matrix of the six coordinates.
 
 **Proof.** The three terms are the three pairings of the four indices into two pairs.
 
@@ -139,7 +139,7 @@ The idempotents of rank $k$ are the projections onto $k$-planes and form the Gra
 
 The Hermitian idempotents are the orthogonal projections onto $k$-planes and form the same Grassmannians through $U(4)$, of real dimension $2k(4-k)$ inside $\operatorname{Herm}_4$. The two Peirce idempotents are a complementary pair of points, and the Peirce decomposition is that pair together with the mixed blocks.
 
-$\mathrm{Gr}_2$ embeds in $\mathbb{P}^{5}$ as the Klein quadric, whose single equation is the Plücker relation, the same expression as the Pfaffian of a skew matrix. The two rulings of the quadric are the two families of planes through a line and inside a hyperplane.
+$\mathrm{Gr}_2$ embeds in $\mathbb{P}^{5}$ as the Klein quadric, whose single equation is the Plücker relation, the same expression as the Pfaffian of an antisymmetric matrix. The two rulings of the quadric are the two families of planes through a line and inside a hyperplane.
 
 ## Summary of Notation
 

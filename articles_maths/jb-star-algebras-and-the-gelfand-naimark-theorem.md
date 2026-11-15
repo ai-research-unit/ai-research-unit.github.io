@@ -51,7 +51,7 @@ $$
 
 closed under the Jordan product, so that the order of a JB\*-algebra is a **Jordan order**.
 
-*Proof.* The decomposition into Hermitian and skew parts is the same computation as in the involutive algebra; the Jordan product of Hermitian elements is Hermitian because the product is commutative and the involution is multiplicative; the cone is closed under the Jordan product by the JB-algebra axioms, and it is closed under the congruences $x\mapsto c^{*}\bullet x\bullet c$ by the Jordan identity.
+*Proof.* The decomposition into Hermitian and anti-Hermitian parts is the same computation as in the involutive algebra; the Jordan product of Hermitian elements is Hermitian because the product is commutative and the involution is multiplicative; the cone is closed under the Jordan product by the JB-algebra axioms, and it is closed under the congruences $x\mapsto c^{*}\bullet x\bullet c$ by the Jordan identity.
 
 ## The Gelfand–Naimark Theorem
 

@@ -126,7 +126,7 @@ so that $A$, as a Lie algebra over $R$ under the commutator, is **$\mathbb{Z}/2$
 
 **Proof.** For $s, t \in S(A)$ one has $(st - ts)^{*} = t^{*}s^{*} - s^{*}t^{*} = (-t)(-s) - (-s)(-t) = ts - st$, so $[s,t] \in S(A)$; for $s \in S(A)$ and $h \in H(A)$, $[s,h]^{*} = (sh - hs)^{*} = h^{*}s^{*} - s^{*}h^{*} = h(-s) - (-s)h = sh - hs$, so $[s,h] \in H(A)$; for $h_1, h_2 \in H(A)$, $[h_1,h_2]^{*} = h_2h_1 - h_1h_2 = -[h_1,h_2]$, so $[h_1,h_2] \in S(A)$. The last identity is the same computation read for arbitrary $x, y$. The gradings are the parity of the degrees under the rule that the degree of $[x,y]$ is the sum of the degrees: $0+0 = 0$, $0+1 = 1$ and $1+1 = 0$ in $\mathbb{Z}/2$.
 
-**Remark.** The Hermitian elements are not a Lie subalgebra, since $[H,H] \subseteq S$ and not $H$; it is the *skew*-Hermitian half that is a subalgebra, and this is the first structural asymmetry of the two halves in the sesquilinear layer. In the bilinear language $S(A)$ is the fixed set of the map $-*$, and the grading says that the Lie algebra is the direct sum of an even part on which the bracket is internal and an odd part on which it is twisted.
+**Remark.** The Hermitian elements are not a Lie subalgebra, since $[H,H] \subseteq S$ and not $H$; it is the *anti-Hermitian*-Hermitian half that is a subalgebra, and this is the first structural asymmetry of the two halves in the sesquilinear layer. In the bilinear language $S(A)$ is the fixed set of the map $-*$, and the grading says that the Lie algebra is the direct sum of an even part on which the bracket is internal and an odd part on which it is twisted.
 
 ### The Anti-Hermitian Half
 
@@ -148,7 +148,7 @@ for $s, t \in S(A)$, so that $s \mapsto \mathrm{ad}_{s}$ is a homomorphism of Li
 
 **Proof.** The bracket identity and the description of the image and the kernel are the theorem and the corollary of *Derivations of a Sesqualgebra*, §*The Inner Derivations*; what is added here is only their reading: since $S(A)$ is closed under the commutator, the source of the homomorphism is a Lie algebra over the fixed ring, and the target is a Lie subalgebra of the Lie algebra of the derivations of that article.
 
-**Remark.** The Hermitian elements act too, and by the skew derivations: $\mathrm{ad}_{h}$ for $h \in H(A)$ satisfies $\mathrm{ad}_{h}(x^{*}) = -\mathrm{ad}_{h}(x)^{*}$ and is not a $*$-derivation, so the $*$-derivations come from the skew half and the skew derivations from the Hermitian half. The parallel with the Jordan side is exact and is the subject of the comparison below: there the Hermitian elements act by the quadratic representation, here the anti-Hermitian elements act by the adjoint representation.
+**Remark.** The Hermitian elements act too, and by the anti-Hermitian derivations: $\mathrm{ad}_{h}$ for $h \in H(A)$ satisfies $\mathrm{ad}_{h}(x^{*}) = -\mathrm{ad}_{h}(x)^{*}$ and is not a $*$-derivation, so the $*$-derivations come from the anti-Hermitian half and the anti-Hermitian derivations from the Hermitian half. The parallel with the Jordan side is exact and is the subject of the comparison below: there the Hermitian elements act by the quadratic representation, here the anti-Hermitian elements act by the adjoint representation.
 
 ---
 

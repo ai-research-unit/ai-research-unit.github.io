@@ -51,9 +51,9 @@ $$
 
 **Proof.** Compute $\varphi_S^{2}(A)=SS^{-{\mathsf T}}AS^{\mathsf T}S^{-1}$; this equals $A$ for all $A$ exactly when $S^{\mathsf T}$ is a scalar multiple of $S$, and rescaling forces the scalar to be $\pm1$.
 
-**Proposition.** For $S$ symmetric the fixed space is $S^{-1}\operatorname{Sym}_4$, of dimension $10$; for $S$ skew the fixed space is $S^{-1}\operatorname{Skew}_4$, of dimension $6$.
+**Proposition.** For $S$ symmetric the fixed space is $S^{-1}\operatorname{Sym}_4$, of dimension $10$; for $S$ antisymmetric the fixed space is $S^{-1}\operatorname{Skew}_4$, of dimension $6$.
 
-**Proof.** $\varphi_S(A)=A$ reads $SA^{\mathsf T}=(SA)^{\mathsf T}$, that is $SA$ symmetric when $S$ is symmetric, and skew when $S$ is skew; multiplication by $S^{-1}$ is a linear isomorphism.
+**Proof.** $\varphi_S(A)=A$ reads $SA^{\mathsf T}=(SA)^{\mathsf T}$, that is $SA$ symmetric when $S$ is symmetric, and antisymmetric when $S$ is antisymmetric; multiplication by $S^{-1}$ is a linear isomorphism.
 
 **Corollary (two similarity classes).** Over $\mathbb{C}$ every $\mathbb{C}$-linear involution is a twist of $\mathsf T$ by some $S$, and up to conjugation by an invertible matrix there are exactly two: the orthogonal type, with fixed algebra of dimension $6$ isomorphic to $\mathfrak{so}(4)$, and the symplectic type, with fixed algebra of dimension $10$.
 
@@ -107,7 +107,7 @@ and the same formula holds on the right with $C_R=\sigma_2\otimes\mathrm I_2$.
 
 The four maps $\mathsf T$, $\mathsf C$, $\ast$ and $-\mathsf T$ are involutions, and the first two commute so that $\ast$ is their composite. The first kind, $\mathbb{C}$-linear, fixes $\operatorname{Sym}_4$ of dimension $10$ or $\operatorname{Skew}_4$ of dimension $6$; the second kind, semilinear, fixes $M_4(\mathbb{R})$, $\operatorname{Herm}_4$ or $\mathfrak{u}(4)$, each of real dimension $16$.
 
-The inner twists $SA^{\mathsf T}S^{-1}$ are involutions exactly when $S$ is symmetric or skew, and up to conjugation there are only the two classes, the orthogonal and the symplectic, which are the two halves. The twists of the dagger behave the same way with $S^{\ast}=\pm S$, and the semilinear automorphisms fix the two real forms.
+The inner twists $SA^{\mathsf T}S^{-1}$ are involutions exactly when $S$ is symmetric or anti-Hermitian, and up to conjugation there are only the two classes, the orthogonal and the symplectic, which are the two halves. The twists of the dagger behave the same way with $S^{\ast}=\pm S$, and the semilinear automorphisms fix the two real forms.
 
 The quaternion conjugation $\natural$ is the transpose in the axis-free frame, exactly and with no correction, and is the transpose composed with two copies of $\sigma_2$ in the Peirce frame. The difference is a change of frame, not of the algebra.
 

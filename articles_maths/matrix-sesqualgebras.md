@@ -84,7 +84,7 @@ and it is the derived product of the sesqualgebra $M_{n}(\mathbb{C})$ with its c
 
 **Definition.** A matrix $X$ is **Hermitian** when $X^{*}=X$ and **anti-Hermitian** when $X^{*}=-X$. Both classes are closed under real linear combinations, and each is a real form of the complex space $M_{n}(\mathbb{C})$.
 
-**Theorem (the decomposition).** Every matrix is the sum of a Hermitian and a anti-Hermitian matrix, in one way,
+**Theorem (the decomposition).** Every matrix is the sum of a Hermitian and an anti-Hermitian matrix, in one way,
 
 $$
 X=\tfrac{1}{2}(X+X^{*})+\tfrac{1}{2}(X-X^{*}) ,
@@ -182,7 +182,7 @@ The case $n=2$ is worked on the Pauli basis $\sigma_{1},\sigma_{2},\sigma_{3}$: 
 | $\varphi(X,Y)=\operatorname{tr}(XY^{*})$ | the pairing, the standard Hermitian form |
 | $S\star T=ST^{*}$ | the sesquilinear product, the derived product |
 | $X^{*}=X$ / $X^{*}=-X$ | Hermitian / anti-Hermitian matrices |
-| $X=\tfrac12(X+X^{*})+\tfrac12(X-X^{*})$ | the Hermitian–skew decomposition |
+| $X=\tfrac12(X+X^{*})+\tfrac12(X-X^{*})$ | the Hermitian–anti-Hermitian decomposition |
 | $U^{*}=U^{-1}$, $\lvert\det U\rvert=1$ | unitary matrices, the group $\mathrm{U}(n)$ |
 | $\sigma_{1},\sigma_{2},\sigma_{3}$ | the Pauli matrices |
 | $aI+b\sigma_{1}+c\sigma_{2}+d\sigma_{3}$ | the Hermitian matrices of order two |

@@ -2,9 +2,9 @@
 
 ## Introduction
 
-The left multiplication $L_a(x)=ax$ is the simplest operator an algebra carries, and its adjoint with respect to the pairing of the category is explicit: it is the **right** multiplication by the same element, $L_a^{*}=R_a$. The pairing moves the factor $a$ across the product, and the adjoint records the move as a change of side; the left and the right multiplications are therefore mutual adjoints, and the regular representation is its own dual read through the pairing. Against an involution $\sigma$ the answer changes side: the twisted pairing sends $L_a$ to the left multiplication by $\sigma(a)$, $L_a^{*_\sigma}=L_{\sigma(a)}$, so that the twisted adjoint of a left multiplication is again a left multiplication, and the element involution is the operator involution of the regular representation. The self-adjoint and the unitary left multiplications are read off at once — the central elements and the symmetric elements for the first, the central involutions and the unitary elements for the second — and the inner derivation $L_a-R_a$ is skew-adjoint.
+The left multiplication $L_a(x)=ax$ is the simplest operator an algebra carries, and its adjoint with respect to the pairing of the category is explicit: it is the **right** multiplication by the same element, $L_a^{*}=R_a$. The pairing moves the factor $a$ across the product, and the adjoint records the move as a change of side; the left and the right multiplications are therefore mutual adjoints, and the regular representation is its own dual read through the pairing. Against an involution $\sigma$ the answer changes side: the twisted pairing sends $L_a$ to the left multiplication by $\sigma(a)$, $L_a^{*_\sigma}=L_{\sigma(a)}$, so that the twisted adjoint of a left multiplication is again a left multiplication, and the element involution is the operator involution of the regular representation. The self-adjoint and the unitary left multiplications are read off at once — the central elements and the symmetric elements for the first, the central involutions and the unitary elements for the second — and the inner derivation $L_a-R_a$ is anti-self-adjoint.
 
-This article computes the adjoint of the left and the right multiplications for the two pairings of the category, records the compatibility with the involution, identifies the self-adjoint and the unitary left multiplications, and relates the inner derivations to the skew-adjoint operators. It assumes *Left and Right Multiplication* for $L_a$ and $R_a$ and the anti-homomorphism $a\mapsto R_a$ onto $A_{\mathrm{opp}}$, *The Two-Sided Operator on an Algebra* for the two-sided operators $L_{a}R_{b}$, *The Commutator Operator* for the inner derivations $D_a=L_a-R_a$, *Frobenius Algebras* for the trace and the pairing, *Involutive Algebras* for the involution, and *Involutions of the Operator Algebra* and *The Adjoint in an Involutive Algebra* for the adjoint operation and the twisted pairing. The signed version, in which the grade involution is inserted between the two factors, is *The Signed Adjoint of the Left Multiplication on an Algebra* and *The Signed Adjoint Two-Sided Operator on an Algebra*; the graded version is *The Graded Adjoint Action on a Module over an Algebra*; and the analytic left multiplication, the norm and the positivity are Part II. This article stays inside Part I: no distance, norm, form with a norm, topology or limit.
+This article computes the adjoint of the left and the right multiplications for the two pairings of the category, records the compatibility with the involution, identifies the self-adjoint and the unitary left multiplications, and relates the inner derivations to the anti-self-adjoint operators. It assumes *Left and Right Multiplication* for $L_a$ and $R_a$ and the anti-homomorphism $a\mapsto R_a$ onto $A_{\mathrm{opp}}$, *The Two-Sided Operator on an Algebra* for the two-sided operators $L_{a}R_{b}$, *The Commutator Operator* for the inner derivations $D_a=L_a-R_a$, *Frobenius Algebras* for the trace and the pairing, *Involutive Algebras* for the involution, and *Involutions of the Operator Algebra* and *The Adjoint in an Involutive Algebra* for the adjoint operation and the twisted pairing. The signed version, in which the grade involution is inserted between the two factors, is *The Signed Adjoint of the Left Multiplication on an Algebra* and *The Signed Adjoint Two-Sided Operator on an Algebra*; the graded version is *The Graded Adjoint Action on a Module over an Algebra*; and the analytic left multiplication, the norm and the positivity are Part II. This article stays inside Part I: no distance, norm, form with a norm, topology or limit.
 
 Throughout, $k$ is a field of characteristic not two, $A$ is a finite-dimensional unital associative $k$-algebra, $\tau$ is a trace whose pairing $\langle x,y\rangle=\tau(xy)$ is nondegenerate, $\sigma$ is an involution of $A$ with $\tau(\sigma(x))=\tau(x)$, the twisted pairing is $\{x,y\}=\tau(x\sigma(y))$, the operator algebra is $E=\operatorname{End}_k(A)$, and the adjoints for the two pairings are $T^{*}$ and $T^{*_\sigma}$.
 
@@ -65,17 +65,17 @@ $$
 \tfrac12\bigl(L_a+L_a^{*}\bigr)=\tfrac12\bigl(L_a+R_a\bigr),
 $$
 
-which is the two-sided multiplication by $a$ on the two sides; the skew part is $\tfrac12(L_a-R_a)$, half the inner derivation of *The Commutator Operator*.
+which is the two-sided multiplication by $a$ on the two sides; the anti-Hermitian part is $\tfrac12(L_a-R_a)$, half the inner derivation of *The Commutator Operator*.
 
-*Proof.* The averaging is the decomposition of an operator into its self-adjoint and skew-adjoint parts from *Involutions of the Operator Algebra*, and $R_a=L_a^{*}$ makes the two terms explicit.
+*Proof.* The averaging is the decomposition of an operator into its self-adjoint and anti-self-adjoint parts from *Involutions of the Operator Algebra*, and $R_a=L_a^{*}$ makes the two terms explicit.
 
-**Theorem (the inner derivation is skew-adjoint).** The inner derivation $D_a=L_a-R_a$ satisfies
+**Theorem (the inner derivation is anti-self-adjoint).** The inner derivation $D_a=L_a-R_a$ satisfies
 
 $$
 \boxed{\;D_a^{*}=R_a-L_a=-D_a\;}
 $$
 
-for the plain pairing, so the inner derivations are skew-adjoint operators; for the twisted pairing $D_a^{*_\sigma}=D_{\sigma(a)}$, so $D_a$ is skew-adjoint for the twisted pairing exactly when $\sigma(a)=-a$, that is when $a$ is a skew element.
+for the plain pairing, so the inner derivations are anti-self-adjoint operators; for the twisted pairing $D_a^{*_\sigma}=D_{\sigma(a)}$, so $D_a$ is anti-self-adjoint for the twisted pairing exactly when $\sigma(a)=-a$, that is when $a$ is an anti-Hermitian element.
 
 *Proof.* $D_a^{*}=L_a^{*}-R_a^{*}=R_a-L_a=-D_a$, and for the twisted pairing $D_a^{*_\sigma}=L_{\sigma(a)}-R_{\sigma(a)}=D_{\sigma(a)}$; the relation $D_{\sigma(a)}=-D_a$ is $\sigma(a)=-a$, by injectivity of the parameter in $L$ and $R$.
 
@@ -107,11 +107,11 @@ $$
 
 **(c) The commutative algebra.** For a commutative $A$ one has $L_a=R_a$ and every $L_a$ is self-adjoint for the plain pairing; the adjoint operation is the identity on the image of $A$ in $E$, which is the centrality criterion of the self-adjointness theorem read as a definition.
 
-**(d) The connection with the derivation.** The inner derivation $D_a=L_a-R_a$ is the difference of a left and a right multiplication, and it is skew-adjoint for the plain pairing; the self-adjoint part of $L_a$ is the symmetrised operator $\tfrac12(L_a+R_a)$ and the skew part is $\tfrac12 D_a$, so the derivation is the skew shadow of the left multiplication.
+**(d) The connection with the derivation.** The inner derivation $D_a=L_a-R_a$ is the difference of a left and a right multiplication, and it is anti-self-adjoint for the plain pairing; the self-adjoint part of $L_a$ is the symmetrised operator $\tfrac12(L_a+R_a)$ and the anti-Hermitian part is $\tfrac12 D_a$, so the derivation is the anti-Hermitian shadow of the left multiplication.
 
 ## Summary
 
-For the pairing $\langle x,y\rangle=\tau(xy)$ of the category the adjoint of the left multiplication is the right multiplication, $L_a^{*}=R_a$, and conversely $R_b^{*}=L_b$: the adjoint operation exchanges the two sides of the regular representation, and a product $L_{a_1}R_{b_1}\cdots$ is sent to the product of the adjoints in the reverse order. Against an involution $\sigma$ the right multiplication is the conjugate of a left one, $R_a=\sigma L_{\sigma(a)}\sigma$, and the twisted pairing $\{x,y\}=\tau(x\sigma(y))$ sends $L_a$ to $L_{\sigma(a)}$ and $R_b$ to $R_{\sigma(b)}$, so that the twisted adjoint preserves each side; with the twisted pairing the regular representation is a `*`-representation, $L_{\sigma(a)}=L_a^{*_\sigma}$, and the agreement of the element involution with the operator adjoint is proved. The left multiplication is self-adjoint for the plain pairing exactly when $a$ is central and for the twisted pairing exactly when $a$ is symmetric; it is unitary for the plain pairing exactly when $a$ is a central involution and for the twisted pairing exactly when $\sigma(a)a=1$, that is when $a$ is a unitary element of the algebra. The inner derivation $D_a=L_a-R_a$ is skew-adjoint for the plain pairing, and its twisted adjoint is $D_{\sigma(a)}$.
+For the pairing $\langle x,y\rangle=\tau(xy)$ of the category the adjoint of the left multiplication is the right multiplication, $L_a^{*}=R_a$, and conversely $R_b^{*}=L_b$: the adjoint operation exchanges the two sides of the regular representation, and a product $L_{a_1}R_{b_1}\cdots$ is sent to the product of the adjoints in the reverse order. Against an involution $\sigma$ the right multiplication is the conjugate of a left one, $R_a=\sigma L_{\sigma(a)}\sigma$, and the twisted pairing $\{x,y\}=\tau(x\sigma(y))$ sends $L_a$ to $L_{\sigma(a)}$ and $R_b$ to $R_{\sigma(b)}$, so that the twisted adjoint preserves each side; with the twisted pairing the regular representation is a `*`-representation, $L_{\sigma(a)}=L_a^{*_\sigma}$, and the agreement of the element involution with the operator adjoint is proved. The left multiplication is self-adjoint for the plain pairing exactly when $a$ is central and for the twisted pairing exactly when $a$ is symmetric; it is unitary for the plain pairing exactly when $a$ is a central involution and for the twisted pairing exactly when $\sigma(a)a=1$, that is when $a$ is a unitary element of the algebra. The inner derivation $D_a=L_a-R_a$ is anti-self-adjoint for the plain pairing, and its twisted adjoint is $D_{\sigma(a)}$.
 
 ## Summary of Notation
 
@@ -128,7 +128,7 @@ For the pairing $\langle x,y\rangle=\tau(xy)$ of the category the adjoint of the
 | $L_a$ self-adjoint (twisted) $\iff \sigma(a)=a$ | self-adjointness for the twisted pairing |
 | $a^{2}=1$, $a \in Z(A)$ | the unitary left multiplications, plain pairing |
 | $\sigma(a)a=1$ | the unitary left multiplications, twisted pairing |
-| $D_a=L_a-R_a$, $D_a^{*}=-D_a$ | the inner derivation and its skew-adjointness |
+| $D_a=L_a-R_a$, $D_a^{*}=-D_a$ | the inner derivation and its anti-self-adjointness |
 
 ## Further Reading
 

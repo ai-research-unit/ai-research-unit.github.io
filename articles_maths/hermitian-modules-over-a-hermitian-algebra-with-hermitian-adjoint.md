@@ -9,7 +9,7 @@ $$
 (x\cdot s, t) = (s, x^{\dagger}\cdot t)
 $$
 
-for every $x$ in the algebra and every pair $s, t$ of elements of the module. This is the module-level form of the operator identity of *The Blade Form and the Hermitian Structure with Hermitian Adjoint*, and it is the condition that makes the Dirac operator formally self-adjoint, the condition that makes the Clifford action a representation by skew-adjoint operators on the vectors, and the condition under which the unitary slice acts by unitaries.
+for every $x$ in the algebra and every pair $s, t$ of elements of the module. This is the module-level form of the operator identity of *The Blade Form and the Hermitian Structure with Hermitian Adjoint*, and it is the condition that makes the Dirac operator formally self-adjoint, the condition that makes the Clifford action a representation by anti-self-adjoint operators on the vectors, and the condition under which the unitary slice acts by unitaries.
 
 This article treats the definition, the fundamental example of the algebra as a module over itself, the adjoint condition and the unitarity of the slice, the uniqueness of the invariant form on an irreducible module, and the criterion for positivity. The last point carries a correction that is easy to get wrong and is stated with an example: the naive restriction of the scalar form $\mathrm{Sc}(s^{\dagger}t)$ to a minimal left ideal is **invariant** but is **totally isotropic** in the split signatures, so the Hermitian structure on a general spinor module requires a spinor adjoint and not merely the restriction of the scalar form.
 
@@ -31,7 +31,7 @@ $$
 (x\cdot s, t) = (s, x^{\dagger}\cdot t) \qquad \text{for all } x \in \mathrm{Cl}(V,\mathfrak{Q}), \ s, t \in S .
 $$
 
-**Proposition (equivalence with skew-adjointness of the vectors).** The condition above is equivalent to the statement that every vector acts by a skew-adjoint operator:
+**Proposition (equivalence with anti-self-adjointness of the vectors).** The condition above is equivalent to the statement that every vector acts by an anti-self-adjoint operator:
 
 $$
 \boxed{\;(v\cdot s, t) = -(s, v\cdot t) \qquad \text{for all } v \in V\;},
@@ -63,7 +63,7 @@ $$
 
 using that the dagger is an anti-involution and the cyclicity of the scalar part. Non-degeneracy and the positivity criterion are those of *The Blade Form and the Hermitian Structure with Hermitian Adjoint*.
 
-**Corollary (the vectors are skew-adjoint in the regular module).** For $v \in V$, $(v\cdot x, y) = -(x, v\cdot y)$; the identity is the reason the vector action is skew-adjoint and the reason the Clifford algebra of a definite form is the standard example of a $*$-algebra acting on a Hilbert space.
+**Corollary (the vectors are anti-self-adjoint in the regular module).** For $v \in V$, $(v\cdot x, y) = -(x, v\cdot y)$; the identity is the reason the vector action is anti-self-adjoint and the reason the Clifford algebra of a definite form is the standard example of a $*$-algebra acting on a Hilbert space.
 
 **Remark (the regular module is not irreducible).** For a simple algebra $\mathrm{Cl}(V,\mathfrak{Q})\cong M_k(D)$ the regular module is the sum of $k$ copies of the simple module, so it is Hermitian Clifford module of "multiplicity $k$"; the irreducible cases are the minimal left ideals, treated below.
 
@@ -103,7 +103,7 @@ and on the regular module this is the statement $\langle L_xy,z\rangle = \langle
 
 **Proof.** In the definite case the regular module form $\mathrm{Sc}(x^{\dagger}y)$ is positive definite by *The Blade Form and the Hermitian Structure with Hermitian Adjoint*; restricting to any submodule gives a positive semidefinite form, and the simple module, being a subquotient, receives a positive definite form on its nonzero elements; the uniqueness is the Schur theorem above.
 
-**Remark (the complexified case).** Over $\mathbb{C}$ with coefficient conjugation, $\mathrm{Cl}(V,\mathfrak{Q})\otimes\mathbb{C}\cong M_{2^m}(\mathbb{C})$ and the simple module is $\mathbb{C}^{2^m}$ with the standard positive definite Hermitian form; the Clifford generators act by the spinor matrices, and each is skew-adjoint under the convention in which the generators of the algebra are skew-adjoint. This is the standard Hermitian spinor module of *Dirac Differential Operators*.
+**Remark (the complexified case).** Over $\mathbb{C}$ with coefficient conjugation, $\mathrm{Cl}(V,\mathfrak{Q})\otimes\mathbb{C}\cong M_{2^m}(\mathbb{C})$ and the simple module is $\mathbb{C}^{2^m}$ with the standard positive definite Hermitian form; the Clifford generators act by the spinor matrices, and each is anti-self-adjoint under the convention in which the generators of the algebra are anti-self-adjoint. This is the standard Hermitian spinor module of *Dirac Differential Operators*.
 
 ### The Isotropic Ideal: a Warning
 
@@ -117,7 +117,7 @@ and on the regular module this is the statement $\langle L_xy,z\rangle = \langle
 
 ## Summary
 
-A **Hermitian Clifford module** is a Clifford module $S$ with a Hermitian form satisfying the single adjointness axiom $(x\cdot s,t) = (s,x^{\dagger}\cdot t)$, equivalently $(v\cdot s,t) = -(s,v\cdot t)$ for every vector; so the action is a $*$-representation of the daggered algebra and each vector acts by a skew-adjoint operator. The **regular module** $\mathrm{Cl}(V,\mathfrak{Q})$ over itself with the form $\mathrm{Sc}(x^{\dagger}y)$ is the fundamental example: the axiom holds by cyclicity of the scalar part, the form is non-degenerate, and it is positive definite exactly when the dagger is positive, that is for a negative definite quadratic form. The **unitary slice** acts on every Hermitian module by unitaries, $u\mapsto\rho(u)$ being a unitary representation extending the spin representation, and the adjoint of left multiplication is $L_x^{*} = L_{x^{\dagger}}$.
+A **Hermitian Clifford module** is a Clifford module $S$ with a Hermitian form satisfying the single adjointness axiom $(x\cdot s,t) = (s,x^{\dagger}\cdot t)$, equivalently $(v\cdot s,t) = -(s,v\cdot t)$ for every vector; so the action is a $*$-representation of the daggered algebra and each vector acts by an anti-self-adjoint operator. The **regular module** $\mathrm{Cl}(V,\mathfrak{Q})$ over itself with the form $\mathrm{Sc}(x^{\dagger}y)$ is the fundamental example: the axiom holds by cyclicity of the scalar part, the form is non-degenerate, and it is positive definite exactly when the dagger is positive, that is for a negative definite quadratic form. The **unitary slice** acts on every Hermitian module by unitaries, $u\mapsto\rho(u)$ being a unitary representation extending the spin representation, and the adjoint of left multiplication is $L_x^{*} = L_{x^{\dagger}}$.
 
 On an **irreducible** module over a simple algebra the invariant Hermitian form is **unique up to a scalar** by Schur's lemma, so a spinor inner product is well defined without further choices; the form is positive definite, and the module is the standard Hermitian spinor module, in the definite case. For the **regular module** the uniqueness fails, the space of invariant forms having the dimension of the multiplicity. Finally, the restriction of the scalar form $\mathrm{Sc}(s^{\dagger}t)$ to a minimal left ideal $\mathrm{Cl}\pi$ is invariant but is **totally isotropic** when $\pi^{\dagger}\pi = 0$, as computed in $\mathrm{Cl}_{1,1}(\mathbb{R})$ where the Gram matrix on the ideal is zero; the Hermitian structure of a spinor module therefore requires a spinor adjoint and a self-adjoint idempotent, and it is constructed in *Spinor Adjoints and the Dirac Adjoint with Hermitian Adjoint*.
 
@@ -128,7 +128,7 @@ On an **irreducible** module over a simple algebra the invariant Hermitian form 
 | $(S,\cdot)$ | Left Clifford module |
 | $(\cdot,\cdot)$ | Hermitian form, $A$-linear in the second argument |
 | $(x\cdot s,t) = (s,x^{\dagger}\cdot t)$ | Adjointness axiom, equivalently $L_x^{*}=L_{x^{\dagger}}$ |
-| $(v\cdot s,t) = -(s,v\cdot t)$ | Vectors act by skew-adjoint operators |
+| $(v\cdot s,t) = -(s,v\cdot t)$ | Vectors act by anti-self-adjoint operators |
 | $\rho(x^{\dagger}) = \rho(x)^{*}$ | Action is a $*$-representation |
 | $(x,y) = \mathrm{Sc}(x^{\dagger}y)$ | Form of the regular module |
 | $U$ | Unitary slice, acting by unitaries on $S$ |

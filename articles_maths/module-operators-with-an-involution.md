@@ -3,7 +3,7 @@
 
 ## Introduction
 
-When a module carries a non-degenerate pairing, its endomorphism ring carries an involution, and the individual endomorphisms fall into classes according to how they meet it: those fixed by the involution, those negated by it, and the units it preserves. This article develops the calculus of a single operator with respect to the involution — the decomposition into a self-adjoint and a skew-adjoint part, the behaviour of products, the congruences $f \mapsto g^{*}fg$, and the action of the unitary group.
+When a module carries a non-degenerate pairing, its endomorphism ring carries an involution, and the individual endomorphisms fall into classes according to how they meet it: those fixed by the involution, those negated by it, and the units it preserves. This article develops the calculus of a single operator with respect to the involution — the decomposition into a self-adjoint and an anti-self-adjoint part, the behaviour of products, the congruences $f \mapsto g^{*}fg$, and the action of the unitary group.
 
 The article is the second of the `* Operator Theory` group of this category. The involution itself, its construction from a pairing and the property of being an involution are the subject of *The Involution on the Endomorphism Ring of a Module*; this article assumes that structure, writes the involutive algebra of operators as $(E,{}^{*})$, and studies its elements. The classification of the involutions a ring can carry is *Involutions of the Module Endomorphism Ring*; the adjoints of the specific operators of the preceding articles are *The Adjoint of the Two-Sided Operator on a Bimodule over an Algebra* and its signed variant. The article stays inside Part I: no distance, norm, positivity, topology or limit occurs, and a self-adjoint operator is one fixed by the involution, not one bounded or closed. Throughout, $R$ is a commutative ring with $1 \neq 0$ in which $2$ is invertible, $(A,\sigma)$ is an involutive $R$-algebra, $M$ is a left $A$-module with a non-degenerate reflexive $\sigma$-sesquilinear pairing, and $(E,{}^{*})$ is the involutive $R$-algebra $\operatorname{End}_A(M)$ with the adjoint involution of *The Involution on the Endomorphism Ring of a Module*.
 
@@ -19,7 +19,7 @@ An operator $f \in E$ is therefore an element of an involutive algebra, and the 
 
 ### Elementary classes
 
-**Definition.** An operator $f \in E$ is **self-adjoint** when $f^{*}=f$, **skew-adjoint** when $f^{*}=-f$, and **unitary** when $f^{*}f=ff^{*}=\mathrm{id}$. Write
+**Definition.** An operator $f \in E$ is **self-adjoint** when $f^{*}=f$, **anti-self-adjoint** when $f^{*}=-f$, and **unitary** when $f^{*}f=ff^{*}=\mathrm{id}$. Write
 
 $$
 \operatorname{sym}(M)=\{f : f^{*}=f\}, \qquad \operatorname{Skew}(M)=\{f : f^{*}=-f\}, \qquad \mathrm{U}(M)=\{f : f^{*}f=ff^{*}=\mathrm{id}\}.
@@ -33,7 +33,7 @@ $$
 
 ### The real and the imaginary part
 
-**Definition.** For $f \in E$ the **self-adjoint part** and the **skew part** are
+**Definition.** For $f \in E$ the **self-adjoint part** and the **anti-Hermitian part** are
 
 $$
 \operatorname{Re}f=\tfrac12(f+f^{*}), \qquad \operatorname{Im}f=\tfrac12(f-f^{*}),
@@ -41,7 +41,7 @@ $$
 
 so that $f=\operatorname{Re}f+\operatorname{Im}f$ and $(\operatorname{Re}f)^{*}=\operatorname{Re}f$, $(\operatorname{Im}f)^{*}=-\operatorname{Im}f$.
 
-**Proposition.** The assignment $f \mapsto (\operatorname{Re}f,\operatorname{Im}f)$ is an $R$-linear isomorphism $E \to \operatorname{sym}(M)\oplus\operatorname{Skew}(M)$, natural in $f$, and $\operatorname{Re}f=f$ exactly for self-adjoint $f$ while $\operatorname{Im}f=f$ exactly for skew-adjoint $f$.
+**Proposition.** The assignment $f \mapsto (\operatorname{Re}f,\operatorname{Im}f)$ is an $R$-linear isomorphism $E \to \operatorname{sym}(M)\oplus\operatorname{Skew}(M)$, natural in $f$, and $\operatorname{Re}f=f$ exactly for self-adjoint $f$ while $\operatorname{Im}f=f$ exactly for anti-self-adjoint $f$.
 
 *Proof.* The map is $R$-linear because ${}^{*}$ is, it is injective because its composite with the sum is the identity, and its image is contained in the direct sum; dimensions (or the projection formula) give the isomorphism. The last clauses are the definitions.
 
@@ -89,13 +89,13 @@ $$
 
 *Proof.* The isometry characterisation and the group property are *The Involution on the Endomorphism Ring of a Module*; the two identities use $u^{*}=u^{-1}$ and anti-multiplicativity.
 
-The action $f \mapsto ufu^{-1}$ of $\mathrm{U}(M)$ on $E$ is **unitary conjugation**, an inner action by the unitary group; it preserves products, self-adjointness and skew-adjointness, and it is the operator-level counterpart of the action of the unitary group of an involutive algebra on its symmetric elements.
+The action $f \mapsto ufu^{-1}$ of $\mathrm{U}(M)$ on $E$ is **unitary conjugation**, an inner action by the unitary group; it preserves products, self-adjointness and anti-self-adjointness, and it is the operator-level counterpart of the action of the unitary group of an involutive algebra on its symmetric elements.
 
 ### Unitary equivalence of operators
 
 **Definition.** Two operators $f$ and $h$ are **unitarily equivalent** when $h=ufu^{*}$ for some $u \in \mathrm{U}(M)$; they are **congruent** when $h=g^{*}fg$ for some $g\in E^{\times}$.
 
-**Proposition.** Unitary equivalence is an equivalence relation on $E$ and preserves the classes of self-adjoint, skew-adjoint and unitary operators. Congruence by an invertible $g$ preserves self-adjointness and is transitive; it coincides with unitary equivalence exactly when $g$ is unitary.
+**Proposition.** Unitary equivalence is an equivalence relation on $E$ and preserves the classes of self-adjoint, anti-self-adjoint and unitary operators. Congruence by an invertible $g$ preserves self-adjointness and is transitive; it coincides with unitary equivalence exactly when $g$ is unitary.
 
 *Proof.* The group $\mathrm{U}(M)$ acts, so unitary equivalence is an equivalence relation, and the class preservation is the displayed identities. Congruence preserves self-adjointness by the proposition above and composes as $\operatorname{cong}_g\circ\operatorname{cong}_h=\operatorname{cong}_{gh}$ up to a congruence; it is unitary equivalence when $g^{*}=g^{-1}$.
 
@@ -125,7 +125,7 @@ $$
 \boxed{\;f+f^{*} \in \operatorname{sym}(M), \qquad f-f^{*} \in \operatorname{Skew}(M), \qquad f f^{*} \in \operatorname{sym}(M), \qquad f^{*} f \in \operatorname{sym}(M)\;} .
 $$
 
-Moreover $f$ is self-adjoint if and only if $f=f^{*}$, and $f$ is skew-adjoint if and only if $f=-f^{*}$.
+Moreover $f$ is self-adjoint if and only if $f=f^{*}$, and $f$ is anti-self-adjoint if and only if $f=-f^{*}$.
 
 *Proof.* $(f+f^{*})^{*}=f^{*}+f$; $(f-f^{*})^{*}=f^{*}-f=-(f-f^{*})$; the products are the self-adjoint squares.
 
@@ -139,19 +139,19 @@ This is how a module with two pairings carries two involutions on one ring, as *
 
 ## Examples
 
-**(a) The orthogonal case.** For $M=R^n$ with the standard bilinear pairing, the self-adjoint operators are the symmetric matrices, the skew-adjoint the alternating matrices, and $\mathrm{U}(M)=O(n)$; unitarily equivalent self-adjoint operators are orthogonally similar.
+**(a) The orthogonal case.** For $M=R^n$ with the standard bilinear pairing, the self-adjoint operators are the symmetric matrices, the anti-self-adjoint the alternating matrices, and $\mathrm{U}(M)=O(n)$; unitarily equivalent self-adjoint operators are orthogonally similar.
 
-**(b) The unitary case.** For $M=\mathbb{C}^n$ with the sesquilinear pairing, the self-adjoint operators are the hermitian matrices, the skew-adjoint the anti-Hermitian ones, and $\mathrm{U}(M)=\mathrm{U}(n)$.
+**(b) The unitary case.** For $M=\mathbb{C}^n$ with the sesquilinear pairing, the self-adjoint operators are the hermitian matrices, the anti-self-adjoint the anti-Hermitian ones, and $\mathrm{U}(M)=\mathrm{U}(n)$.
 
 **(c) The symplectic case.** For $M=R^{2n}$ with the alternating pairing, the self-adjoint operators form the symplectic Lie algebra and $\mathrm{U}(M)=Sp(2n)$; the congruence $f \mapsto g^{*}fg$ is the symplectic change of basis.
 
-**(d) The regular module of a division ring.** For $M=A=D$ with the regular pairing $\langle a,b\rangle=\sigma(a)b$, the self-adjoint operators under $\operatorname{End}_D(D)\cong D_{\mathrm{opp}}$ are the symmetric elements of $D$, the skew-adjoint the antisymmetric elements, and $\mathrm{U}(M)$ the unitary group of $D$.
+**(d) The regular module of a division ring.** For $M=A=D$ with the regular pairing $\langle a,b\rangle=\sigma(a)b$, the self-adjoint operators under $\operatorname{End}_D(D)\cong D_{\mathrm{opp}}$ are the symmetric elements of $D$, the anti-self-adjoint the antisymmetric elements, and $\mathrm{U}(M)$ the unitary group of $D$.
 
 **(e) A congruence that is not unitary.** For $M=R^2$ with the standard pairing and $g=\operatorname{diag}(2,1)$, the congruence $f \mapsto g^{*}fg=g f g$ preserves self-adjointness but is not conjugation by a unitary element; it changes the operator's "shape" while keeping it symmetric.
 
 ## Summary
 
-On a module with a non-degenerate reflexive pairing, the endomorphism ring is an involutive $R$-algebra $(E,{}^{*})$, and its elements are classified by the involution: self-adjoint, skew-adjoint, and unitary. Every operator decomposes uniquely as $f=\operatorname{Re}f+\operatorname{Im}f$ with the two parts self-adjoint and skew-adjoint; the self-adjoint part is closed under the Jordan product and the square but under the ordinary product only when the factors commute; the products $f^{*}f$ and $ff^{*}$ are always self-adjoint, and a congruence $f \mapsto g^{*}fg$ preserves self-adjointness while being multiplicative only for unitary $g$. The unitary operators are the isometries of the pairing and form a subgroup $\mathrm{U}(M)$ of the unit group, acting by unitary conjugation $f \mapsto ufu^{-1}$ and preserving the involutive algebra structure; the unitary orbit and the congruence orbit are the two natural equivalence relations on the self-adjoint operators, and their classification needs the spectrum, which belongs to Part II. Nothing here uses a norm, a positivity or a topology; the classes are defined by the involution alone, and the operator identities are the ones available over a general coefficient ring.
+On a module with a non-degenerate reflexive pairing, the endomorphism ring is an involutive $R$-algebra $(E,{}^{*})$, and its elements are classified by the involution: self-adjoint, anti-self-adjoint, and unitary. Every operator decomposes uniquely as $f=\operatorname{Re}f+\operatorname{Im}f$ with the two parts self-adjoint and anti-self-adjoint; the self-adjoint part is closed under the Jordan product and the square but under the ordinary product only when the factors commute; the products $f^{*}f$ and $ff^{*}$ are always self-adjoint, and a congruence $f \mapsto g^{*}fg$ preserves self-adjointness while being multiplicative only for unitary $g$. The unitary operators are the isometries of the pairing and form a subgroup $\mathrm{U}(M)$ of the unit group, acting by unitary conjugation $f \mapsto ufu^{-1}$ and preserving the involutive algebra structure; the unitary orbit and the congruence orbit are the two natural equivalence relations on the self-adjoint operators, and their classification needs the spectrum, which belongs to Part II. Nothing here uses a norm, a positivity or a topology; the classes are defined by the involution alone, and the operator identities are the ones available over a general coefficient ring.
 
 ## Summary of Notation
 
@@ -161,7 +161,7 @@ On a module with a non-degenerate reflexive pairing, the endomorphism ring is an
 | $M$, $\langle\cdot,\cdot\rangle$ | module with non-degenerate reflexive σ-sesquilinear pairing |
 | $(E,{}^{*})$ | involutive algebra of operators, $E=\operatorname{End}_A(M)$ |
 | $\operatorname{sym}(M)$ | self-adjoint operators, $f^{*}=f$ |
-| $\operatorname{Skew}(M)$ | skew-adjoint operators, $f^{*}=-f$ |
+| $\operatorname{Skew}(M)$ | anti-self-adjoint operators, $f^{*}=-f$ |
 | $\operatorname{Re}f$, $\operatorname{Im}f$ | $\frac12(f+f^{*})$ and $\frac12(f-f^{*})$ |
 | $\mathrm{U}(M)$ | unitary group, $u^{*}u=uu^{*}=\mathrm{id}$ |
 | $\operatorname{cong}_g(f)=g^{*}fg$ | congruence by $g$ |

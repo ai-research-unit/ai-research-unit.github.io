@@ -138,7 +138,7 @@ so the signed action is exchanged with the signed right action by the modular co
 
 ### A Vector in a Three-Dimensional Algebra
 
-In $\mathrm{Cl}_{0,3}$ with the trivial coefficient involution, let $x = e_1$. Then $|x| = 1$, $x^{\dagger} = -x$, the ordinary adjoint is $L_{e_1}^{*} = L_{-e_1} = -L_{e_1}$, and the super-adjoint is $L_{e_1}^{\star} = -L_{e_1}^{*} = L_{e_1}$. So the odd left multiplication is skew-adjoint in the ordinary sense and super-self-adjoint in the graded sense, and the two adjoints differ by the sign of the odd part.
+In $\mathrm{Cl}_{0,3}$ with the trivial coefficient involution, let $x = e_1$. Then $|x| = 1$, $x^{\dagger} = -x$, the ordinary adjoint is $L_{e_1}^{*} = L_{-e_1} = -L_{e_1}$, and the super-adjoint is $L_{e_1}^{\star} = -L_{e_1}^{*} = L_{e_1}$. So the odd left multiplication is anti-self-adjoint in the ordinary sense and super-self-adjoint in the graded sense, and the two adjoints differ by the sign of the odd part.
 
 ### An Even Element
 

@@ -321,7 +321,7 @@ The two forms therefore close the carrier in two different ways. The module comp
 
 **The physical reading is a division of labour.** The left action carries the dynamics; the right action carries the frame. Every right multiplication is an endomorphism of the left module, so it commutes with the dynamics and cannot appear in the equation of motion; what it can do is change the presentation, which is exactly what a frame change does. A term in a Lagrangian that needs a right multiplication is a term written in a frame.
 
-**The swap is what remains when no frame is chosen.** It refers to the two sides without preferring one, it is canonical, and it negates the six-dimensional skew summand of the endomorphism algebra. It is the only canonical operation of the carrier that uses both sides, and it is the reason the two-sided structures of the corpus can be stated without a polarization.
+**The swap is what remains when no frame is chosen.** It refers to the two sides without preferring one, it is canonical, and it negates the six-dimensional anti-Hermitian summand of the endomorphism algebra. It is the only canonical operation of the carrier that uses both sides, and it is the reason the two-sided structures of the corpus can be stated without a polarization.
 
 **The boundary.** The swap has no $\pm1$ multiplicative character, so it cannot be the sign of a mass term. It says which slot an operator occupies; the sign is supplied by an operator on the module.
 

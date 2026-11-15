@@ -132,7 +132,7 @@ $$
 
 The identity was verified at $n=4$, and the sign is absent because the conjugate transpose is used twice with no transposition of the product order. For the trace form the corresponding statement has a minus sign, since there the adjoint of the multiplication is multiplication by the transpose and the order reverses.
 
-**The derivation is therefore not skew for the Hilbert–Schmidt form.** Since $\operatorname{ad}_A^{*}=\operatorname{ad}_{A^{*}}$ and $\operatorname{ad}_A$ is skew only when $A$ is anti-Hermitian up to the sign of the adjoint, the skewness statement holds for the trace form and not for this one. The two forms split the theory: the trace form is the natural form for the Lie structure, the Hilbert–Schmidt form the natural form for the operator structure.
+**The derivation is therefore not anti-self-adjoint for the Hilbert–Schmidt form.** Since $\operatorname{ad}_A^{*}=\operatorname{ad}_{A^{*}}$ and $\operatorname{ad}_A$ is anti-Hermitian only when $A$ is anti-Hermitian up to the sign of the adjoint, the skewness statement holds for the trace form and not for this one. The two forms split the theory: the trace form is the natural form for the Lie structure, the Hilbert–Schmidt form the natural form for the operator structure.
 
 ## Definiteness on the Two Halves
 
@@ -170,7 +170,7 @@ and for $2\times2$ matrices they satisfy $N(X)\le\tfrac12\|X\|^{2}$, with equali
 
 ## Summary
 
-The form $\langle X,Y\rangle=\operatorname{tr}(X^{*}Y)$ is Hermitian, positive definite, with the matrix units as an orthonormal basis, and its real part is the Euclidean form on $\mathbb{R}^{2n^{2}}$. Its norm is the Euclidean norm of the singular values, it is bounded between the operator norm and $\sqrt n$ times it, and it equals $\sqrt r$ on a projection of rank $r$. The form is invariant under unitary conjugation and not under general conjugation, which is the exact trade-off against the indefinite invariant trace form. The adjoints are $L_A^{*}=L_{A^{*}}$, $R_B^{*}=R_{B^{*}}$, $(X\mapsto AXB)^{*}=(Y\mapsto A^{*}YB^{*})$ and $\operatorname{ad}_A^{*}=\operatorname{ad}_{A^{*}}$, so the derivation is skew for the trace form and not for this one. The form is positive definite on both halves, so the split by the involution is orthogonal for it but not a signature split.
+The form $\langle X,Y\rangle=\operatorname{tr}(X^{*}Y)$ is Hermitian, positive definite, with the matrix units as an orthonormal basis, and its real part is the Euclidean form on $\mathbb{R}^{2n^{2}}$. Its norm is the Euclidean norm of the singular values, it is bounded between the operator norm and $\sqrt n$ times it, and it equals $\sqrt r$ on a projection of rank $r$. The form is invariant under unitary conjugation and not under general conjugation, which is the exact trade-off against the indefinite invariant trace form. The adjoints are $L_A^{*}=L_{A^{*}}$, $R_B^{*}=R_{B^{*}}$, $(X\mapsto AXB)^{*}=(Y\mapsto A^{*}YB^{*})$ and $\operatorname{ad}_A^{*}=\operatorname{ad}_{A^{*}}$, so the derivation is anti-self-adjoint for the trace form and not for this one. The form is positive definite on both halves, so the split by the involution is orthogonal for it but not a signature split.
 
 ## Summary of Notation
 

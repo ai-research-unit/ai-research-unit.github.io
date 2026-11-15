@@ -50,7 +50,7 @@ $$
 \gamma(e_i)^2 = -1 , \qquad \gamma(e_i)\gamma(e_j)+\gamma(e_j)\gamma(e_i) = 0 \quad (i\neq j) .
 $$
 
-The operators $\gamma(e_i)$ are **skew** for the natural quadratic structure of the module in the
+The operators $\gamma(e_i)$ are **anti-Hermitian** for the natural quadratic structure of the module in the
 sense that $\gamma(e_i)^2=-1$; the sign is what makes the Clifford structure of the operator layer
 match the operator $D$ of the function theory.
 

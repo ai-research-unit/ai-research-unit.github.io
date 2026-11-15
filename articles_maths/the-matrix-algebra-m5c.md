@@ -255,7 +255,7 @@ $$
 A=\underbrace{\tfrac12(A-A^*)}_{\text{anti-Hermitian}}+\underbrace{\tfrac12(A+A^*)}_{\text{Hermitian}} .
 $$
 
-**Proof.** The two projections are idempotent and sum to the identity; the first is anti-Hermitian, the second Hermitian, and the intersection is zero because a matrix that is both Hermitian and anti-Hermitian is zero. The real dimension of $\mathfrak{u}(5)$ is $25$: a anti-Hermitian matrix has purely imaginary diagonal entries (five real parameters) and arbitrary complex entries above the diagonal ($10$ complex $=20$ real), total $5+20=25$; the Hermitian part has real diagonal entries (five) and arbitrary complex entries above the diagonal (twenty), also $25$.
+**Proof.** The two projections are idempotent and sum to the identity; the first is anti-Hermitian, the second Hermitian, and the intersection is zero because a matrix that is both Hermitian and anti-Hermitian is zero. The real dimension of $\mathfrak{u}(5)$ is $25$: an anti-Hermitian matrix has purely imaginary diagonal entries (five real parameters) and arbitrary complex entries above the diagonal ($10$ complex $=20$ real), total $5+20=25$; the Hermitian part has real diagonal entries (five) and arbitrary complex entries above the diagonal (twenty), also $25$.
 
 **Corollary.** The **special $*$-unitary** algebra
 
@@ -265,7 +265,7 @@ $$
 
 has real dimension $24$. The trace is a real linear functional on $\mathfrak{u}(5)$ (the diagonal entries are purely imaginary, and the trace is their sum), and its kernel has dimension $24$.
 
-**Proof.** The trace of a anti-Hermitian matrix is purely imaginary; the condition $\operatorname{tr}A=0$ is one real linear equation on the $25$-dimensional space.
+**Proof.** The trace of an anti-Hermitian matrix is purely imaginary; the condition $\operatorname{tr}A=0$ is one real linear equation on the $25$-dimensional space.
 
 ### The Complexification of $\mathfrak{u}(5)$
 

@@ -41,11 +41,11 @@ $$
 
 The last identity is the bridge between the involution of the algebra and the involution of the endomorphism ring: the action of $a$ has adjoint the action of $\sigma(a)$.
 
-## Self-Adjoint and Skew-Adjoint Elements
+## Self-Adjoint and Anti-Self-Adjoint Elements
 
 ### Definition and decomposition
 
-**Definition.** An endomorphism $f \in E$ is **self-adjoint** when $f^{*}=f$ and **skew-adjoint** when $f^{*}=-f$. The **symmetric part** and the **skew part** of $E$ are
+**Definition.** An endomorphism $f \in E$ is **self-adjoint** when $f^{*}=f$ and **anti-self-adjoint** when $f^{*}=-f$. The **symmetric part** and the **anti-Hermitian part** of $E$ are
 
 $$
 \operatorname{sym}(M)=\{f : f^{*}=f\}, \qquad \operatorname{Skew}(M)=\{f : f^{*}=-f\}.
@@ -61,9 +61,9 @@ $$
 
 and the two summands have intersection $0$.
 
-*Proof.* The displayed decomposition writes $f$ as the sum of a self-adjoint and a skew-adjoint element because ${}^{*}$ is $R$-linear and of order two; if $f$ is both, then $f=-f$ and $2f=0$, so $f=0$ when $2$ is invertible.
+*Proof.* The displayed decomposition writes $f$ as the sum of a self-adjoint and an anti-self-adjoint element because ${}^{*}$ is $R$-linear and of order two; if $f$ is both, then $f=-f$ and $2f=0$, so $f=0$ when $2$ is invertible.
 
-The decomposition is the module-level form of the fixed-and-skew decomposition of an involutive algebra, and it reduces the study of $E$ to the self-adjoint part and the skew-adjoint part separately.
+The decomposition is the module-level form of the fixed and anti-self-adjoint decomposition of an involutive algebra, and it reduces the study of $E$ to the self-adjoint part and the anti-self-adjoint part separately.
 
 ### The self-adjoint part is a Jordan algebra
 
@@ -87,7 +87,7 @@ $$
 \mathrm{J}(X)_{ij}=\sigma(X_{ji}),
 $$
 
-of *Modules over an Involutive Algebra*, so the self-adjoint matrices are those with $\mathrm{J}(X)=X$ and the skew-adjoint matrices those with $\mathrm{J}(X)=-X$.
+of *Modules over an Involutive Algebra*, so the self-adjoint matrices are those with $\mathrm{J}(X)=X$ and the anti-self-adjoint matrices those with $\mathrm{J}(X)=-X$.
 
 *Proof.* The adjoint with respect to the standard pairing is the transpose-entrywise map, as computed in *The Adjoint of a Module Homomorphism*.
 
@@ -133,9 +133,9 @@ $$
 (u^{*}fu)^{*}=u^{*}f^{*}u, \qquad (ufu^{-1})^{*}=u f^{*}u^{*} .
 $$
 
-Consequently $\mathrm{U}(M)$ acts on the involutive algebra $E$ by **unitary conjugation**, $f \mapsto ufu^{*}=ufu^{-1}$, and this action preserves self-adjointness, skew-adjointness and the Jordan product. It is the **unitary group of the involutive algebra** $(E,{}^{*})$.
+Consequently $\mathrm{U}(M)$ acts on the involutive algebra $E$ by **unitary conjugation**, $f \mapsto ufu^{*}=ufu^{-1}$, and this action preserves self-adjointness, anti-self-adjointness and the Jordan product. It is the **unitary group of the involutive algebra** $(E,{}^{*})$.
 
-*Proof.* The two identities are anti-multiplicativity and $(u^{*})^{*}=u$; for $u\in \mathrm{U}(M)$, $u^{*}=u^{-1}$, so $ufu^{-1}=ufu^{*}$ and conjugation by a unitary element maps $f^{*}$ to $(ufu^{*})^{*}=u f^{*}u^{*}$, preserving the fixed and skew parts; it preserves products and hence the Jordan product.
+*Proof.* The two identities are anti-multiplicativity and $(u^{*})^{*}=u$; for $u\in \mathrm{U}(M)$, $u^{*}=u^{-1}$, so $ufu^{-1}=ufu^{*}$ and conjugation by a unitary element maps $f^{*}$ to $(ufu^{*})^{*}=u f^{*}u^{*}$, preserving the fixed and anti-Hermitian parts; it preserves products and hence the Jordan product.
 
 ## The Involution and the Centre
 
@@ -183,7 +183,7 @@ The classification of the involutions a module's endomorphism ring can carry, an
 
 ## Examples
 
-**(a) The orthogonal group.** For $A=R$ a field, $M=R^n$ and the standard bilinear pairing $\langle x,y\rangle=\sum x_iy_i$, the involution is the transpose, the self-adjoint elements are the symmetric matrices, the skew-adjoint the alternating ones, and $\mathrm{U}(M)=O(n)$.
+**(a) The orthogonal group.** For $A=R$ a field, $M=R^n$ and the standard bilinear pairing $\langle x,y\rangle=\sum x_iy_i$, the involution is the transpose, the self-adjoint elements are the symmetric matrices, the anti-self-adjoint the alternating ones, and $\mathrm{U}(M)=O(n)$.
 
 **(b) The unitary group.** For $A=\mathbb{C}$, $M=\mathbb{C}^n$ and the sesquilinear pairing $\langle x,y\rangle=\sum x_i\overline{y_i}$, the involution is the conjugate transpose, the self-adjoint elements are the hermitian matrices, and $\mathrm{U}(M)=\mathrm{U}(n)$.
 
@@ -195,7 +195,7 @@ The classification of the involutions a module's endomorphism ring can carry, an
 
 ## Summary
 
-A non-degenerate reflexive $\sigma$-sesquilinear pairing on a left $A$-module $M$ induces the adjoint map $f\mapsto f^{*}$ on $E=\operatorname{End}_A(M)$, which is $R$-linear, additive, anti-multiplicative and of order two, hence an involution of the $R$-algebra $E$; on the regular module it is the involution $\sigma$ of the algebra, and on a free module with the standard pairing it is the transpose-entrywise map $\mathrm{J}(X)_{ij}=\sigma(X_{ji})$. The fixed part is the set of self-adjoint endomorphisms, the negative-fixed part the skew-adjoint ones, and when $2$ is invertible $E$ is their direct sum; the self-adjoint part is closed under the Jordan product $f\bullet g=\frac12(fg+gf)$, hence a special Jordan algebra. The unitary elements $u$ with $u^{*}u=uu^{*}=\mathrm{id}$ form a subgroup $\mathrm{U}(M)$ of the unit group, equal to the group of isometries of the pairing, and they act on $E$ by unitary conjugation, preserving the involution and its symmetric part; in the classical cases $\mathrm{U}(M)$ is $O(n)$, $\mathrm{U}(n)$ or $Sp(2n)$. The involution is of the first kind when it fixes the centre and of the second kind otherwise, and equivalent pairings induce conjugate involutions, so the same ring can carry several inequivalent involutions.
+A non-degenerate reflexive $\sigma$-sesquilinear pairing on a left $A$-module $M$ induces the adjoint map $f\mapsto f^{*}$ on $E=\operatorname{End}_A(M)$, which is $R$-linear, additive, anti-multiplicative and of order two, hence an involution of the $R$-algebra $E$; on the regular module it is the involution $\sigma$ of the algebra, and on a free module with the standard pairing it is the transpose-entrywise map $\mathrm{J}(X)_{ij}=\sigma(X_{ji})$. The fixed part is the set of self-adjoint endomorphisms, the negative-fixed part the anti-self-adjoint ones, and when $2$ is invertible $E$ is their direct sum; the self-adjoint part is closed under the Jordan product $f\bullet g=\frac12(fg+gf)$, hence a special Jordan algebra. The unitary elements $u$ with $u^{*}u=uu^{*}=\mathrm{id}$ form a subgroup $\mathrm{U}(M)$ of the unit group, equal to the group of isometries of the pairing, and they act on $E$ by unitary conjugation, preserving the involution and its symmetric part; in the classical cases $\mathrm{U}(M)$ is $O(n)$, $\mathrm{U}(n)$ or $Sp(2n)$. The involution is of the first kind when it fixes the centre and of the second kind otherwise, and equivalent pairings induce conjugate involutions, so the same ring can carry several inequivalent involutions.
 
 ## Summary of Notation
 
@@ -205,7 +205,7 @@ A non-degenerate reflexive $\sigma$-sesquilinear pairing on a left $A$-module $M
 | $M$, $\langle\cdot,\cdot\rangle$ | module and non-degenerate reflexive σ-sesquilinear pairing |
 | $E=\operatorname{End}_A(M)$ | the endomorphism ring |
 | $f^{*}$ | the adjoint, $\langle f(m),n\rangle=\langle m,f^{*}(n)\rangle$ |
-| $\operatorname{sym}(M)$, $\operatorname{Skew}(M)$ | self-adjoint and skew-adjoint endomorphisms |
+| $\operatorname{sym}(M)$, $\operatorname{Skew}(M)$ | self-adjoint and anti-self-adjoint endomorphisms |
 | $f\bullet g=\frac12(fg+gf)$ | the Jordan product on the self-adjoint part |
 | $\mathrm{U}(M)=\{u : u^{*}u=uu^{*}=\mathrm{id}\}$ | the unitary group |
 | $\langle u(m),u(n)\rangle=\langle m,n\rangle$ | the isometry characterisation of unitarity |

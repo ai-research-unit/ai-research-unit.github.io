@@ -78,7 +78,7 @@ which is the signed two-sided operator $\Sigma^{\alpha}_{\alpha(a),\alpha(b)}$ a
 
 **Example (the transpose involution).** Let $J = H_n(F)$ with the transpose grade involution on the ambient matrix algebra; then $\ell^{\alpha}_a(x) = a\bullet x^{\mathsf{T}}$, and its adjoint is $\ell^{\alpha}_{a^{\mathsf{T}}}$. The operator is self-adjoint exactly when $a$ is symmetric, and unitary exactly when $a$ is a symmetry of the Jordan algebra.
 
-**Example (the odd element).** For an odd element $a$ the signed left multiplication is $\ell^{\alpha}_a = L_a\circ\alpha$, which is not self-adjoint: $\ell^{\alpha\dagger}_a = \ell^{\alpha}_{\alpha(a)} = \ell^{\alpha}_{-a} = -\ell^{\alpha}_a$, so an odd parameter gives a skew-adjoint signed left multiplication.
+**Example (the odd element).** For an odd element $a$ the signed left multiplication is $\ell^{\alpha}_a = L_a\circ\alpha$, which is not self-adjoint: $\ell^{\alpha\dagger}_a = \ell^{\alpha}_{\alpha(a)} = \ell^{\alpha}_{-a} = -\ell^{\alpha}_a$, so an odd parameter gives an anti-self-adjoint signed left multiplication.
 
 ## Summary
 

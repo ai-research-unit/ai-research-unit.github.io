@@ -104,7 +104,7 @@ $$
 
 Then $\sigma_2$ is antilinear, multiplicative and of order two, because $J$ is real. Its fixed algebra is the set of $A$ with $\bar A=J^{-1}AJ$, of real dimension $n^{2}$; at $n=2$ it is a copy of $\mathbb{H}$.
 
-**Every real structure is of one of these two shapes.** Let $\sigma$ be a real structure. There is an invertible $S$ with $\sigma(A)=S\bar AS^{-1}$, and $\sigma^{2}=\mathrm{id}$ reads $S\bar S=cI$ with $c\in\mathbb{R}^{\times}$; rescaling $S$ normalises $c$ to $\pm1$. If $c=1$, then $S$ is symmetric after a real change of basis and the fixed algebra is conjugate to $M_n(\mathbb{R})$. If $c=-1$, then $n$ is even, $S$ is skew after a change of basis, and the fixed algebra is conjugate to $M_{n/2}(\mathbb{H})$.
+**Every real structure is of one of these two shapes.** Let $\sigma$ be a real structure. There is an invertible $S$ with $\sigma(A)=S\bar AS^{-1}$, and $\sigma^{2}=\mathrm{id}$ reads $S\bar S=cI$ with $c\in\mathbb{R}^{\times}$; rescaling $S$ normalises $c$ to $\pm1$. If $c=1$, then $S$ is symmetric after a real change of basis and the fixed algebra is conjugate to $M_n(\mathbb{R})$. If $c=-1$, then $n$ is even, $S$ is anti-Hermitian after a change of basis, and the fixed algebra is conjugate to $M_{n/2}(\mathbb{H})$.
 
 **The fixed algebras have the same real dimension and are not isomorphic.** Both have dimension $n^{2}$, since $4\cdot(n/2)^{2}=n^{2}$. They differ in type. At $n=2$ the fixed algebra of $\sigma_2$ is $\mathbb{H}$, where every nonzero element is invertible, while $M_2(\mathbb{R})$ contains the nonzero zero divisors $E_{11}$ and $E_{22}$ with $E_{11}E_{22}=0$. So $\mathbb{H}\not\cong M_2(\mathbb{R})$ and the two structures are not conjugate.
 

@@ -53,9 +53,9 @@ and when the grade involution is not inner, $K = \{1\}$, so unitarity is $\delta
 
 **Proof.** The parametrisation $u\mapsto\ell_u$ is injective: $\ell_u = \ell_v$ means $u\alpha(x) = v\alpha(x)$ for all $x$, and $\alpha$ is surjective, so $u = v$. Hence $\ell_a^\dagger = \ell_{\delta(a)}$ equals $\ell_a$ exactly when $\delta(a) = a$. For unitarity, $\ell_a^\dagger\ell_a = \ell_{\delta(a)}\ell_a = \ell_{\delta(a)\alpha(a)}$, which is the identity exactly when $\delta(a)\alpha(a)\in K$, where $K$ is the set of units $u$ with $\ell_u = \mathrm{id}$; for involutivity, $\ell_a^2 = \ell_{a\alpha(a)}$, which is the identity exactly when $a\alpha(a)\in K$.
 
-**Corollary (the skew case).** The signed left multiplication is skew, $\ell_a^\dagger = -\ell_a$, exactly when $\delta(a) = -a$; a skew signed left multiplication is never unitary.
+**Corollary (the anti-Hermitian case).** The signed left multiplication is anti-Hermitian, $\ell_a^\dagger = -\ell_a$, exactly when $\delta(a) = -a$; an anti-Hermitian signed left multiplication is never unitary.
 
-**Proof.** The first statement is the injectivity of the parametrisation applied to the skew equation; a skew operator $T$ with $-T = T^\dagger$ has $T^\dagger T = -T^2$, which is the identity only under $T^2 = -\mathrm{id}$, incompatible with $T^2 = \mathrm{id}$ except in the degenerate case.
+**Proof.** The first statement is the injectivity of the parametrisation applied to the anti-Hermitian equation; an anti-self-adjoint operator $T$ with $-T = T^\dagger$ has $T^\dagger T = -T^2$, which is the identity only under $T^2 = -\mathrm{id}$, incompatible with $T^2 = \mathrm{id}$ except in the degenerate case.
 
 **Remark (the two faces of the involution).** The self-adjoint signed left multiplications are the parameters with $\delta(a) = a$, the Hermitian parameters; the unitary ones are the parameters with $\delta(a)\alpha(a)\in K$; the involutive ones are the parameters with $a\alpha(a)\in K$. The three sets are the one-sided analogues of the three sets of the reflection, and for $K = \{1\}$ they meet in the self-adjoint elements of order two.
 

@@ -74,7 +74,7 @@ $$
 \boxed{\;\bigl(C^{-1}TC\bigr)^{*} = C^{-1}T^{*}C\;}
 $$
 
-for the adjoint with respect to $h$ on the left and with respect to $h_{C}$ on the right; consequently the congruence transports the self-adjoint, the skew-adjoint and the unitary operators of the form to the corresponding operators of the congruent form.
+for the adjoint with respect to $h$ on the left and with respect to $h_{C}$ on the right; consequently the congruence transports the self-adjoint, the anti-self-adjoint and the unitary operators of the form to the corresponding operators of the congruent form.
 
 **Proof.** $h_{C}(C^{-1}TCx, y) = h(TCx, Cy) = h(Cx, T^{*}Cy) = h_{C}(x, C^{-1}T^{*}Cy)$, which identifies the adjoint of $C^{-1}TC$ for $h_{C}$ with $C^{-1}T^{*}C$. The sign conditions are invariant under conjugation, since $\pm$ is central, and the isometry condition is preserved by the last corollary of the previous section.
 
@@ -106,7 +106,7 @@ On $\mathbb{B}$ the congruence of the plain and the quaternionic forms, their si
 - The Gram matrix transforms as $G \mapsto C^{\dagger}GC$, and the determinant by the norm $\varsigma(\det C)\det C$; the rank and the non-degeneracy are invariants of the class.
 - The **stabiliser** of $h$ is exactly the unitary group $\mathrm{U}(A,h)$, and the unitary groups of the congruent forms are conjugate: $\mathrm{U}(A,h_{C}) = C^{-1}\mathrm{U}(A,h)C$.
 - Over $\mathbb{R}$ the class is the **signature** (Sylvester); over $\mathbb{C}$ a Hermitian form is classified by the signature as well, while a complex bilinear form is classified by the rank; over a general field with an involution the class is the **Witt class**.
-- The congruence transports the operators by $T \mapsto C^{-1}TC$ and the adjoint by $T^{*} \mapsto C^{-1}T^{*}C$, so the self-adjoint, the skew-adjoint and the unitary operators are carried to the corresponding operators of the congruent form.
+- The congruence transports the operators by $T \mapsto C^{-1}TC$ and the adjoint by $T^{*} \mapsto C^{-1}T^{*}C$, so the self-adjoint, the anti-self-adjoint and the unitary operators are carried to the corresponding operators of the congruent form.
 - The spectra, the positivity and the polar decomposition of the transported operators are Part II.
 
 ## Summary of Notation

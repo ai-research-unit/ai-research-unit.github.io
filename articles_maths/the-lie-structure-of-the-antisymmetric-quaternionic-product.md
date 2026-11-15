@@ -92,7 +92,7 @@ with $[\vec e_y,\vec e_z]_{\natural}=-\vec e_x$, $[\vec e_z,\vec e_x]_{\natural}
 
 **Corollary (the trace of the adjoint).** $\operatorname{tr}(\operatorname{ad}e_t)=3$ and $\operatorname{tr}(\operatorname{ad}\vec e_x)=0$.
 
-*Proof.* The diagonal of the table: the three vector units on the first row and $-\vec e_k$ on the first column do not contribute to the trace, and the vector-vector block is skew. Computed exactly.
+*Proof.* The diagonal of the table: the three vector units on the first row and $-\vec e_k$ on the first column do not contribute to the trace, and the vector-vector block is anti-Hermitian. Computed exactly.
 
 ## The Ideals and the Radical
 

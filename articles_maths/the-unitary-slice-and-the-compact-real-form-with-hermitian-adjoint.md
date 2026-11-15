@@ -5,7 +5,7 @@
 
 The dagger is defined on every element of the algebra, but it is an inverse only on the elements that satisfy $x^{\dagger}x = 1$. Those elements are the **unitary slice** $U$, and the slice is where the involutive theory and the orthogonal theory meet: on it the Hermitian pair is the inner conjugation, the dagger is the inverse, and the operator family of *The Family of Two-Sided Operators on a Clifford Algebra* closes on itself. The slice is also the object that makes the involutive base visible in the group theory, because its shape records the signature: for the identity involution it is the Pin group, and for a definite form over $\mathbb{C}$ or $\mathbb{H}$ it is a compact unitary group.
 
-This article treats the slice as a group, as the isometry group of the Hermitian form, as the image of the exponential of the skew part, and as a compact real form of the group of units. The two structural results are that $U$ is a compact subgroup whenever the dagger is a positive involution, because $x^{\dagger}x = 1$ forces the Euclidean norm to be $1$, so the slice lies in the unit sphere; and that the group of units is the product $U\cdot\exp(\mathrm{Herm})$ of the slice with the exponential of the self-adjoint part, which is the Cartan decomposition of the polar decomposition of the previous article.
+This article treats the slice as a group, as the isometry group of the Hermitian form, as the image of the exponential of the anti-Hermitian part, and as a compact real form of the group of units. The two structural results are that $U$ is a compact subgroup whenever the dagger is a positive involution, because $x^{\dagger}x = 1$ forces the Euclidean norm to be $1$, so the slice lies in the unit sphere; and that the group of units is the product $U\cdot\exp(\mathrm{Herm})$ of the slice with the exponential of the self-adjoint part, which is the Cartan decomposition of the polar decomposition of the previous article.
 
 The forms are *Hermitian Forms on a Hermitian Algebra with Hermitian Adjoint*; the scalar forms and the Euclidean norm are *The Blade Form and the Hermitian Structure with Hermitian Adjoint*; positivity and the cone are *Positivity and the Hermitian Cone of a Hermitian Algebra with Hermitian Adjoint*; the operator on the algebra whose slice this is is *The Hermitian Pair of Operators on a Hermitian Algebra with Hermitian Adjoint*; the unitary group as a classical group is *The Unitary and Symplectic Groups*; the compactness of the group of units of a complex Clifford algebra is the case of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation* in the definite real case; and the biquaternion example, where the slice is $\mathrm{U}(2)$ with determinant-one part $\mathrm{Spin}(3)$, is *The Hermitian Pair in the Biquaternion Algebra with Hermitian Adjoint*.
 
@@ -57,7 +57,7 @@ so the unitary slice is the Pin group of the quadratic space, and in particular 
 
 ## The Lie Algebra and the Exponential
 
-**Theorem.** With the bracket $[u,v] = uv - vu$, the skew part
+**Theorem.** With the bracket $[u,v] = uv - vu$, the anti-Hermitian part
 
 $$
 \boxed{\;\mathfrak{u} = \mathrm{Skew}(V,\mathfrak{Q}) = \{\, u : u^{\dagger} = -u \,\}\;}
@@ -85,7 +85,7 @@ of the group of units $G$, when the dagger is positive.
 
 **Proof.** $\dagger(\exp h) = \exp(h^{\dagger}) = \exp(h)$ for $h$ self-adjoint. The factorisation is the polar decomposition $x = u|x|$ of *Positivity and the Hermitian Cone of a Hermitian Algebra with Hermitian Adjoint*, with $|x| = \exp(\log|x|)$ and $\log|x|$ self-adjoint because $|x|$ is positive.
 
-**Corollary.** The Lie algebra of the slice is the skew part, so the slice has the dimension of the skew part of the algebra, and the exponential is surjective onto the identity component of $U$ in the definite compact case; the Cartan involution $\theta$ of *Positivity and the Hermitian Cone of a Hermitian Algebra with Hermitian Adjoint* is exactly the involution $\mathrm{d}\theta = +1$ on $\mathfrak{u}$, $-1$ on $\mathrm{Herm}$, associated with this decomposition.
+**Corollary.** The Lie algebra of the slice is the anti-Hermitian part, so the slice has the dimension of the anti-Hermitian part of the algebra, and the exponential is surjective onto the identity component of $U$ in the definite compact case; the Cartan involution $\theta$ of *Positivity and the Hermitian Cone of a Hermitian Algebra with Hermitian Adjoint* is exactly the involution $\mathrm{d}\theta = +1$ on $\mathfrak{u}$, $-1$ on $\mathrm{Herm}$, associated with this decomposition.
 
 ## The Compact Real Form
 
@@ -99,13 +99,13 @@ $$
 
 **Proof.** For $x \in U$ we have $x^{\dagger}x = 1$, so $\mathrm{Sc}(x^{\dagger}x) = 1$; when the dagger is positive, $\mathrm{Sc}(x^{\dagger}x) = \|x\|^{2}$ by *The Blade Form and the Hermitian Structure with Hermitian Adjoint*, whence $\|x\| = 1$. Thus $U$ is a closed subset of the unit sphere of a finite-dimensional Euclidean space, and it is bounded and closed, hence compact; it is a group by the theorem above, and a closed subgroup of the group of units, hence a compact Lie group.
 
-**Corollary (the positive cases).** The dagger is positive and $U$ is compact for the Clifford algebras of a negative definite real form, $\mathrm{Cl}_{0,n}$ over $\mathbb{R}$, where $U = \mathrm{Pin}(0,n)$; for the complexified algebras with coefficient conjugation; and for the quaternionic cases. In each of them the slice is a compact real Lie group whose Lie algebra is the skew part, and the exponential is surjective onto its identity component.
+**Corollary (the positive cases).** The dagger is positive and $U$ is compact for the Clifford algebras of a negative definite real form, $\mathrm{Cl}_{0,n}$ over $\mathbb{R}$, where $U = \mathrm{Pin}(0,n)$; for the complexified algebras with coefficient conjugation; and for the quaternionic cases. In each of them the slice is a compact real Lie group whose Lie algebra is the anti-Hermitian part, and the exponential is surjective onto its identity component.
 
 ### The Slice as a Compact Real Form
 
 **Theorem (the complex case).** Let $A = \mathbb{C}$ with $\sigma$ the complex conjugation, and suppose the dagger is positive. Then the group of units $G = \mathrm{Cl}(V,\mathfrak{Q})^{\times}$ is a complex Lie group, $U$ is a compact real form of it, and the Cartan decomposition $G = U\exp(\mathfrak{p})$ with $\mathfrak{p}$ the self-adjoint part is the polar decomposition. The real Lie algebra of $U$ complexifies to the Lie algebra of $G$.
 
-**Proof.** The complexification of $\mathfrak{u}$ is $\mathfrak{u}\oplus i\mathfrak{u} = \mathfrak{u}\oplus\mathfrak{p} = \mathrm{Lie}(G)$, since every element of the algebra is the sum of its skew and self-adjoint parts after multiplying by $i$; the rest is the theory of compact real forms.
+**Proof.** The complexification of $\mathfrak{u}$ is $\mathfrak{u}\oplus i\mathfrak{u} = \mathfrak{u}\oplus\mathfrak{p} = \mathrm{Lie}(G)$, since every element of the algebra is the sum of its anti-Hermitian and self-adjoint parts after multiplying by $i$; the rest is the theory of compact real forms.
 
 **Example (the one-dimensional complex case, computed exactly).** Let $\mathrm{Cl}_1(\mathbb{C})$ be the algebra with a single generator $e^{2} = -1$, so $\mathrm{Cl}_1(\mathbb{C})\cong\mathbb{C}\oplus\mathbb{C}$ and the group of units is $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$. Write $x = a + be$ with $a, b \in \mathbb{C}$, so that $x^{\dagger} = \bar a - \bar b e$ and
 
@@ -139,7 +139,7 @@ so the involution $\sigma$ acts on such an $x$ as the scalar $\sigma(N(x))$, and
 
 The **unitary slice** $U = \{x : x^{\dagger}x = 1\}$ is a subgroup of the group of units on which the dagger is the inverse, and it is exactly the isometry group of the Hermitian form $h_{\dagger}(x,y) = x^{\dagger}y$. On it the Hermitian pair is the inner conjugation, so the Hermitian and the inverse two-sided operator agree on the slice and the two theories meet there. For the identity involution $U = \{x : N(x) = 1\} = \mathrm{Pin}(V,\mathfrak{Q})$, so the slice recovers the classical spin group; for a nontrivial involution it is larger and acts as a group of operators on the algebra and its modules without adding isometries of the quadratic space.
 
-The **skew part** $\mathfrak{u} = \{u : u^{\dagger} = -u\}$ is a Lie algebra and is the Lie algebra of $U$; the exponential maps $\mathfrak{u}$ into $U$ and the self-adjoint part into itself, and the group of units is the Cartan product $G = U\exp(\mathrm{Herm})$ when the dagger is positive, which is the polar decomposition of an invertible element. When the dagger is positive the slice is **compact**, because $x^{\dagger}x = 1$ forces $\|x\|^{2} = \mathrm{Sc}(x^{\dagger}x) = 1$, so $U$ is a closed subset of the unit sphere; in the complex case it is a compact real form of the complex group of units, the one-dimensional exactly computed example being $\mathrm{Cl}_1(\mathbb{C})\cong\mathbb{C}\oplus\mathbb{C}$ with $U\cong \mathrm{U}(1)\times \mathrm{U}(1)$ and the biquaternion example being $\mathrm{U}(2)$ with determinant-one part $\mathrm{Spin}(3)$.
+The **anti-Hermitian part** $\mathfrak{u} = \{u : u^{\dagger} = -u\}$ is a Lie algebra and is the Lie algebra of $U$; the exponential maps $\mathfrak{u}$ into $U$ and the self-adjoint part into itself, and the group of units is the Cartan product $G = U\exp(\mathrm{Herm})$ when the dagger is positive, which is the polar decomposition of an invertible element. When the dagger is positive the slice is **compact**, because $x^{\dagger}x = 1$ forces $\|x\|^{2} = \mathrm{Sc}(x^{\dagger}x) = 1$, so $U$ is a closed subset of the unit sphere; in the complex case it is a compact real form of the complex group of units, the one-dimensional exactly computed example being $\mathrm{Cl}_1(\mathbb{C})\cong\mathbb{C}\oplus\mathbb{C}$ with $U\cong \mathrm{U}(1)\times \mathrm{U}(1)$ and the biquaternion example being $\mathrm{U}(2)$ with determinant-one part $\mathrm{Spin}(3)$.
 
 ## Summary of Notation
 
@@ -147,7 +147,7 @@ The **skew part** $\mathfrak{u} = \{u : u^{\dagger} = -u\}$ is a Lie algebra and
 |---|---|
 | $U = \{x : x^{\dagger}x=1\}$ | Unitary slice |
 | $h_{\dagger}(x,y) = x^{\dagger}y$ | Hermitian form whose isometry group is $U$ |
-| $\mathfrak{u} = \mathrm{Skew}(V,\mathfrak{Q})$ | Skew part, the Lie algebra of $U$ |
+| $\mathfrak{u} = \mathrm{Skew}(V,\mathfrak{Q})$ | Anti-Hermitian part, the Lie algebra of $U$ |
 | $\mathrm{Herm}(V,\mathfrak{Q})$ | Self-adjoint part, the tangent space of the symmetric space |
 | $\theta$ | Cartan involution, $\mathrm{d}\theta = +1$ on $\mathfrak{u}$, $-1$ on $\mathrm{Herm}$ |
 | $G = U\exp(\mathrm{Herm})$ | Cartan decomposition of the group of units |

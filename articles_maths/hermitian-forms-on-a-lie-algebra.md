@@ -3,7 +3,7 @@
 
 ## Introduction
 
-A **Hermitian form** on a complex Lie algebra is a sesquilinear form that is conjugate-symmetric; it is **invariant** when the adjoint action is skew with respect to it, and the invariance is the single condition that makes the form the infinitesimal counterpart of a unitary structure. A positive definite invariant Hermitian form turns the Lie algebra into a space whose adjoint operators are skew-adjoint, so its representations by skew-adjoint operators are the unitary ones; and the existence of such a form is the compactness of the algebra. The form is thus the bridge from the algebra to its unitary representations, and it is the object from which the star of the enveloping algebra and the Casimir element are read.
+A **Hermitian form** on a complex Lie algebra is a sesquilinear form that is conjugate-symmetric; it is **invariant** when the adjoint action is anti-self-adjoint with respect to it, and the invariance is the single condition that makes the form the infinitesimal counterpart of a unitary structure. A positive definite invariant Hermitian form turns the Lie algebra into a space whose adjoint operators are anti-self-adjoint, so its representations by anti-self-adjoint operators are the unitary ones; and the existence of such a form is the compactness of the algebra. The form is thus the bridge from the algebra to its unitary representations, and it is the object from which the star of the enveloping algebra and the Casimir element are read.
 
 This article treats Hermitian forms on a Lie algebra, their invariance and the unitary representations they define. It is the first article of the `- * Operator Theory` group of the category; the real forms and the compact real form are *Real Forms of a Complex Lie Group and the Cartan Involution*, the Cartan decomposition and the compact type are *The Cartan Decomposition and the Cartan Involution*, the star structure of the enveloping algebra is *The Involution on the Enveloping Algebra of a Lie Group*, and the operators built from the adjoint with respect to the form are *Unitary Representations and the Adjoint Operator*, *The Signed Adjoint Two-Sided Operator on a Lie Algebra*, *The Signed Adjoint of the Reflection on a Lie Algebra*, *The Signed Adjoint of the Left Multiplication on a Lie Algebra* and *The Graded Adjoint Action on a Module over a Lie Algebra*, all below in this group.
 
@@ -99,13 +99,13 @@ and a representation of $\mathrm{G}$ by anti-Hermitian operators with respect to
 
 **Theorem.** Let $H$ be a positive definite invariant Hermitian form on a real semisimple Lie algebra $\mathrm{G}$, let $(X_i)$ be an orthonormal basis, and let $\Omega = -\sum_i X_i^2$. Then $\Omega$ is a positive Hermitian element of $\mathrm{U}(\mathrm{G})$, it is central, and its image in every star-representation is a positive self-adjoint operator; the scalars by which it acts are the quadratic invariants of the irreducible summands.
 
-*Proof.* The element is Hermitian because the $X_i$ are skew under the star, and it is positive because $-\sum X_i^2 = \sum X_i^{\star}X_i$; the centrality is the invariance of the form; the positivity of the image is the positivity of the sum of the squares of skew-adjoint operators, and the eigenvalue statement is *The Casimir Operator of a Lie Group*.
+*Proof.* The element is Hermitian because the $X_i$ are anti-Hermitian under the star, and it is positive because $-\sum X_i^2 = \sum X_i^{\star}X_i$; the centrality is the invariance of the form; the positivity of the image is the positivity of the sum of the squares of anti-self-adjoint operators, and the eigenvalue statement is *The Casimir Operator of a Lie Group*.
 
 ## Examples
 
 ### The Unitary Algebra
 
-Let $\mathrm{G} = \mathrm{u}(n)$ with $H(X,Y) = \operatorname{tr}(X\overline{Y}^{t}) = -\operatorname{tr}(XY)$ on the anti-Hermitian matrices, using that the conjugate transpose of a anti-Hermitian matrix is its negative. The form is positive definite and invariant under the commutator, the adjoint operators are anti-Hermitian, and the algebra is the model compact case.
+Let $\mathrm{G} = \mathrm{u}(n)$ with $H(X,Y) = \operatorname{tr}(X\overline{Y}^{t}) = -\operatorname{tr}(XY)$ on the anti-Hermitian matrices, using that the conjugate transpose of an anti-Hermitian matrix is its negative. The form is positive definite and invariant under the commutator, the adjoint operators are anti-Hermitian, and the algebra is the model compact case.
 
 ### The Special Linear Algebra
 

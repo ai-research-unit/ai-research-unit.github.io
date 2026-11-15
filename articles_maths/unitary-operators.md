@@ -50,7 +50,7 @@ It is a topological group in each of these topologies, it is compact and Hausdor
 
 **Proposition (finite-dimensional case and the determinant).** For $H=\mathbb{C}^n$ the unitary group is a compact connected Lie group of real dimension $n^2$, the determinant is a homomorphism $\mathrm{U}(n)\to\mathbb{T}$ with kernel the special unitary group $SU(n)$, and $\mathrm{U}(n)\cong SU(n)\times\mathbb{T}$ up to a finite central subgroup; the centre is $\mathbb{T}I$.
 
-*Proof.* The group is closed and bounded in the matrix space, hence compact, and the exponential of the skew-adjoint matrices fills a neighbourhood of the identity, giving connectivity and the dimension; the determinant has modulus one on unitaries and its kernel is the special unitary group, and the product decomposition is the standard one, with the intersection the $n$-th roots of unity.
+*Proof.* The group is closed and bounded in the matrix space, hence compact, and the exponential of the anti-self-adjoint matrices fills a neighbourhood of the identity, giving connectivity and the dimension; the determinant has modulus one on unitaries and its kernel is the special unitary group, and the product decomposition is the standard one, with the intersection the $n$-th roots of unity.
 
 ## The Conjugation Action and the Inner Automorphisms
 

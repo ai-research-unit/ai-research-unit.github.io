@@ -22,7 +22,7 @@ $$
 
 so the matrix valued $2$-form $\Omega$ is anti-Hermitian, and $\frac{i}{2\pi}\Omega$ is Hermitian.
 
-*Proof.* The metric compatibility $dH = \omega^*H+H\omega$ differentiates to $0 = (d\omega)^*H+\omega^*dH + dH\,\omega + H\,d\omega$; substituting $dH=\omega^*H+H\omega$ and comparing with the definition $\Omega = d\omega+\omega\wedge\omega$ gives $\Omega^*H+H\Omega=0$, which is the anti-Hermitian condition. Equivalently, the curvature of a metric connection with respect to the metric is skew-adjoint, as in *The Covariant Derivative*. Multiplying by $\frac{i}{2\pi}$ conjugates the anti-Hermitian matrix into a Hermitian one.
+*Proof.* The metric compatibility $dH = \omega^*H+H\omega$ differentiates to $0 = (d\omega)^*H+\omega^*dH + dH\,\omega + H\,d\omega$; substituting $dH=\omega^*H+H\omega$ and comparing with the definition $\Omega = d\omega+\omega\wedge\omega$ gives $\Omega^*H+H\Omega=0$, which is the anti-Hermitian condition. Equivalently, the curvature of a metric connection with respect to the metric is anti-self-adjoint, as in *The Covariant Derivative*. Multiplying by $\frac{i}{2\pi}$ conjugates the anti-Hermitian matrix into a Hermitian one.
 
 ### The Chern Forms
 
@@ -88,7 +88,7 @@ for Hermitian bundles with the direct-sum and tensor-product metrics, and it is 
 
 ## Summary
 
-For a Hermitian bundle the Chern connection has a anti-Hermitian curvature $\Omega$; the matrix $\frac{i}{2\pi}\Omega$ is Hermitian, and the elementary symmetric functions of its eigenvalues are the **Chern forms**, real closed forms whose de Rham classes are the integral Chern classes. The total Chern form is $\det(I+\frac{i}{2\pi}\Omega)$, the first Chern form is the trace $\frac{i}{2\pi}\operatorname{tr}\Omega$, and it is the class of the determinant line bundle. On a Hermitian line bundle $\Omega=\bar\partial\partial\log h$, and its class is the first Chern class, normalised so that $c_1(\mathcal{O}(1))=1$ on the Riemann sphere and $c_1(\mathcal{O}(-1))=-x$.
+For a Hermitian bundle the Chern connection has an anti-Hermitian curvature $\Omega$; the matrix $\frac{i}{2\pi}\Omega$ is Hermitian, and the elementary symmetric functions of its eigenvalues are the **Chern forms**, real closed forms whose de Rham classes are the integral Chern classes. The total Chern form is $\det(I+\frac{i}{2\pi}\Omega)$, the first Chern form is the trace $\frac{i}{2\pi}\operatorname{tr}\Omega$, and it is the class of the determinant line bundle. On a Hermitian line bundle $\Omega=\bar\partial\partial\log h$, and its class is the first Chern class, normalised so that $c_1(\mathcal{O}(1))=1$ on the Riemann sphere and $c_1(\mathcal{O}(-1))=-x$.
 
 The construction is the Chern–Weil one read with a metric: the invariant polynomials on the curvature give closed forms, their classes are independent of the metric and the connection, and the Hermitian metric supplies the preferred connection and the preferred real representatives. The Chern character $\operatorname{tr}\exp(\frac{i}{2\pi}\Omega)$ is additive and multiplicative, and the normalisations agree with those of *Fibre Bundles, Connections and Curvature* and *Characteristic Classes*, to which the topological content — integrality, the splitting principle, characteristic numbers and cobordism — belongs.
 

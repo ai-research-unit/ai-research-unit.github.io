@@ -83,7 +83,7 @@ and it is a `*`-homomorphism; the Hermitian elements of $\mathcal{A}$ form the r
 
 **Corollary (the Hermitian decomposition of the operators).** Every operator in $\lambda(\mathcal{A})$ is uniquely $\lambda(f) = \lambda(u) + i\lambda(v)$ with $\lambda(u),\lambda(v)$ Hermitian, and the Hermitian part of $\lambda(\mathcal{A})$ is the image of the Hermitian elements; the anti-Hermitian operators are $i$ times the Hermitian ones.
 
-**Proof.** The decomposition is the image of $f = \mathrm{Re}\,f + i\,\mathrm{Im}\,f$ under the real-linear injection $\lambda$, and the skew statement is the definition.
+**Proof.** The decomposition is the image of $f = \mathrm{Re}\,f + i\,\mathrm{Im}\,f$ under the real-linear injection $\lambda$, and the anti-Hermitian statement is the definition.
 
 ## Positive Functionals and the Trace
 

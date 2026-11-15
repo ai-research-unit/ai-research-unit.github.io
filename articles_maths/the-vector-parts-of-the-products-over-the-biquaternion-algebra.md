@@ -466,7 +466,7 @@ For $f$ bilinear it is a complex bilinear form, with Gram matrix $G_{ij}=\varphi
 | $\tilde Q_1\bullet_{*}\tilde Q_2$ | zero | zero | $0$ |
 | $\tilde Q_1\bullet_{\natural*}\tilde Q_2$ | sesquilinear | conjugate-symmetric; Hermitian | $2$ |
 | $\tilde Q_1\wedge_{\natural*}\tilde Q_2$ | sesquilinear | conjugate-alternating; anti-Hermitian | $2$ |
-| $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | sesquilinear | sum of a Hermitian rank $2$ and a anti-Hermitian rank $2$ | $4$ |
+| $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | sesquilinear | sum of a Hermitian rank $2$ and an anti-Hermitian rank $2$ | $4$ |
 
 *Proof.* The ranks and the symmetry types are read from the matrices. For $\tilde Q_1\tilde Q_2$ and $w=\vec e_x$ the matrix is
 
@@ -492,7 +492,7 @@ N_x=
 \end{pmatrix},
 $$
 
-skew of rank $4$; the other two are obtained by the same cyclic relabelling. The zero rows are immediate. For the sesquilinear rows, the Gram matrix of a conjugate-symmetric form is Hermitian and that of a conjugate-alternating form is anti-Hermitian, by the two definitions read in the entries; the ranks are computed from the same matrices. The $\tilde Q_1^{\natural}\tilde Q_2^{*}$ entry is the sum of the $\tilde Q_1\bullet_{\natural*}\tilde Q_2$ and $\tilde Q_1\wedge_{\natural*}\tilde Q_2$ entries; its Hermitian part is the $\tilde Q_1\bullet_{\natural*}\tilde Q_2$ matrix, its anti-Hermitian part is the $\tilde Q_1\wedge_{\natural*}\tilde Q_2$ matrix, and its rank is $4$.
+anti-Hermitian of rank $4$; the other two are obtained by the same cyclic relabelling. The zero rows are immediate. For the sesquilinear rows, the Gram matrix of a conjugate-symmetric form is Hermitian and that of a conjugate-alternating form is anti-Hermitian, by the two definitions read in the entries; the ranks are computed from the same matrices. The $\tilde Q_1^{\natural}\tilde Q_2^{*}$ entry is the sum of the $\tilde Q_1\bullet_{\natural*}\tilde Q_2$ and $\tilde Q_1\wedge_{\natural*}\tilde Q_2$ entries; its Hermitian part is the $\tilde Q_1\bullet_{\natural*}\tilde Q_2$ matrix, its anti-Hermitian part is the $\tilde Q_1\wedge_{\natural*}\tilde Q_2$ matrix, and its rank is $4$.
 
 **Remark (the diagonal of a component form).** At the two equal arguments,
 

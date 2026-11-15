@@ -117,13 +117,13 @@ In even dimension $n=2m$ the half-spinor spaces are invariant under the spin rep
 
 The spin representation of the group has a differentiated version on the orthogonal Lie algebra, and it is the form in which the representation is usually computed.
 
-**Theorem.** Let $\mathrm{SO}(V,\mathfrak{Q})$ be the orthogonal Lie algebra of skew transformations. There is an isomorphism of vector spaces
+**Theorem.** Let $\mathrm{SO}(V,\mathfrak{Q})$ be the orthogonal Lie algebra of antisymmetric transformations. There is an isomorphism of vector spaces
 
 $$
 \Lambda^2V\longrightarrow \mathrm{SO}(V,\mathfrak{Q}), \qquad v\wedge w\longmapsto \bigl(u\mapsto g(u,w)v-g(u,v)w\bigr),
 $$
 
-identifying the bivectors with the skew transformations, and the Clifford algebra realises it by the commutator: the linear map
+identifying the bivectors with the anti-Hermitian transformations, and the Clifford algebra realises it by the commutator: the linear map
 
 $$
 \Lambda^2V\longrightarrow \mathrm{Cl}^0(V,\mathfrak{Q}), \qquad v\wedge w\longmapsto \tfrac14(vw-wv),
@@ -141,7 +141,7 @@ $$
 \bigl[\tfrac14(vw-wv),u\bigr]=\tfrac12[vw,u]=g(u,w)v-g(u,v)w,
 $$
 
-so the image of $v\wedge w$ is exactly the skew transformation displayed above, and the normalisation $\tfrac14$ is the one for which the two identifications agree. The element $\tfrac14(vw-wv)$ lies in $\mathrm{Cl}^0$ and spans, as $v\wedge w$ varies, the even part of degree two; writing out the commutator of two such elements in an orthogonal basis shows that it is again of degree two, so the map is a homomorphism of Lie algebras onto that space. Applying the module action gives the infinitesimal representation, $c\bigl(\tfrac14(vw-wv)\bigr)=\tfrac14[c(v),c(w)]$.
+so the image of $v\wedge w$ is exactly the antisymmetric transformation displayed above, and the normalisation $\tfrac14$ is the one for which the two identifications agree. The element $\tfrac14(vw-wv)$ lies in $\mathrm{Cl}^0$ and spans, as $v\wedge w$ varies, the even part of degree two; writing out the commutator of two such elements in an orthogonal basis shows that it is again of degree two, so the map is a homomorphism of Lie algebras onto that space. Applying the module action gives the infinitesimal representation, $c\bigl(\tfrac14(vw-wv)\bigr)=\tfrac14[c(v),c(w)]$.
 
 **The weight decomposition.** Choosing a maximal torus of $\mathrm{SO}(V,\mathfrak{Q})$ — equivalently, an orthogonal splitting of $V$ into two-dimensional planes — diagonalises the bivectors of the planes, and the infinitesimal spin representation has the weights obtained by summing the halves of the weights of the defining representation. In the exterior-algebra model the weights are the sums of the weights of the creation operators, which is why the spin representation of $\mathrm{SO}(2m)$ has highest weight $\tfrac12(\lambda_1+\cdots+\lambda_m)$ for the appropriate ordering and the half-spin representations have the two highest weights differing by the sign of the last coordinate. The computation is the standard one of the representation theory of the orthogonal group and is cited rather than repeated.
 

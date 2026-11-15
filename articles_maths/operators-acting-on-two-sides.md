@@ -20,7 +20,7 @@ $$
 
 with $\mu,\nu\in\{t,x,y,z\}$. They are named here, at the start, because the generation theorem uses them: they are a basis of the ambient operator space $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, and every two-sided operator is a linear combination of them. The bracket is the one of the elementary operators, and the two indices are the two slots.
 
-**What the article proves.** The composition law $L_{\tilde Q}R_{\tilde Q_2}L_{\tilde Q_3}R_{\tilde Q_4}=L_{\tilde Q\tilde Q_3}R_{\tilde Q_4\tilde Q_2}$, with the second slot reversed. The two closures: the family is closed under composition and not under addition. The generation theorem: the sixteen basis operators are a basis of the ambient space, so the span of the family is the whole $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, of complex dimension sixteen. The ladder $1,4,7,16$: the scalars, the one-sided families, the cone and the ambient space. The plain adjoint: $(L_{\tilde Q}R_{\tilde Q_2})^{\approx}=L_{\tilde Q_2}R_{\tilde Q}$, the self-adjoint pairs and the empty skew sector. The isometries and the multiplicative members: the criteria $\tilde Q_2\tilde Q=\pm e_t$ and $\tilde Q\tilde Q_2=e_t$, the isometry group, and the absence of a pin group in the family.
+**What the article proves.** The composition law $L_{\tilde Q}R_{\tilde Q_2}L_{\tilde Q_3}R_{\tilde Q_4}=L_{\tilde Q\tilde Q_3}R_{\tilde Q_4\tilde Q_2}$, with the second slot reversed. The two closures: the family is closed under composition and not under addition. The generation theorem: the sixteen basis operators are a basis of the ambient space, so the span of the family is the whole $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, of complex dimension sixteen. The ladder $1,4,7,16$: the scalars, the one-sided families, the cone and the ambient space. The plain adjoint: $(L_{\tilde Q}R_{\tilde Q_2})^{\approx}=L_{\tilde Q_2}R_{\tilde Q}$, the self-adjoint pairs and the empty anti-Hermitian sector. The isometries and the multiplicative members: the criteria $\tilde Q_2\tilde Q=\pm e_t$ and $\tilde Q\tilde Q_2=e_t$, the isometry group, and the absence of a pin group in the family.
 
 **What the article does not do.** The matrix of $L_{\tilde Q}R_{\tilde Q_2}$ is *Operators Acting on Two Sides*, where the sixteen matrices, the coefficient matrix and the length are computed. The Hermitian pair $\mathrm{Sd}_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$, with $\tilde Q^{*}$ the Hermitian conjugation, is Part V: this article states no two-sided theorem. The enveloping algebra and the bi-module structure are *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*; this article proves the generation statement on which that article's isomorphism rests. The association of the two one-sided families with the plain form is *Adjoint Pair of $L$ and $R$ Operators*.
 
@@ -288,18 +288,18 @@ The self-adjoint two-sided operators are therefore the scalar multiples of the d
 
 **The diagonal.** The operator $L_{\tilde Q}R_{\tilde Q}$ is self-adjoint for every $\tilde Q$, including the zero divisors; it is the operator $X\mapsto\tilde QX\tilde Q$, and it is not an inner automorphism unless $\tilde Q$ is a unit.
 
-### The Skew Pairs
+### The Anti-Hermitian Pairs
 
-**Theorem (the skew sector is trivial).** No nonzero two-sided operator is skew-adjoint:
+**Theorem (the anti-Hermitian sector is trivial).** No nonzero two-sided operator is anti-self-adjoint:
 
 $$
 \bigl(L_{\tilde Q}R_{\tilde Q_2}\bigr)^{\approx}=-L_{\tilde Q}R_{\tilde Q_2}
 \iff L_{\tilde Q}R_{\tilde Q_2}=0.
 $$
 
-*Proof.* Skew-adjointness is $BXA=-AXB$ for all $X$. On the matrix units, $B_{ik}A_{lj}=-A_{ik}B_{lj}$. If $A=0$ the operator is zero. Otherwise choose $(k_0,i_0)$ with $A_{k_0i_0}\neq0$ and put $\mu=-B_{k_0i_0}/A_{k_0i_0}$; then $B=\mu A$. Substituting back gives $2\mu AXA=0$ for all $X$, and $AXA$ is not identically zero for $A\neq0$, so $\mu=0$ and $B=0$. The zero operator is skew-adjoint.
+*Proof.* Anti-self-adjointness is $BXA=-AXB$ for all $X$. On the matrix units, $B_{ik}A_{lj}=-A_{ik}B_{lj}$. If $A=0$ the operator is zero. Otherwise choose $(k_0,i_0)$ with $A_{k_0i_0}\neq0$ and put $\mu=-B_{k_0i_0}/A_{k_0i_0}$; then $B=\mu A$. Substituting back gives $2\mu AXA=0$ for all $X$, and $AXA$ is not identically zero for $A\neq0$, so $\mu=0$ and $B=0$. The zero operator is anti-self-adjoint.
 
-**The reading.** The plain form has a self-adjoint sector and no skew sector among the nonzero two-sided operators. The asymmetry is the asymmetry of the swap: a self-adjoint pair is a pair of proportional parameters, and the proportionality is symmetric; a skew pair would need an antisymmetric proportionality, and the only antisymmetric scalar is zero.
+**The reading.** The plain form has a self-adjoint sector and no antisymmetric sector among the nonzero two-sided operators. The asymmetry is the asymmetry of the swap: a self-adjoint pair is a pair of proportional parameters, and the proportionality is symmetric; an antisymmetric pair would need an antisymmetric proportionality, and the only antisymmetric scalar is zero.
 
 ## Isometries and Multiplicative Members
 
@@ -421,7 +421,7 @@ The two-sided operators are the products $L_{\tilde Q}R_{\tilde Q_2}(X)=\tilde Q
 
 The sixteen basis operators $e_\mu[\,]e_\nu$ are a basis of the ambient space, so the span of the family is the whole $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, of complex dimension sixteen. The ladder is $1,4,7,16$: the scalars, the one-sided families, the cone, the ambient space. The chain is a chain of sets, not of subspaces; the cone is not a subspace, and its span is the whole space. The linear sum of the two one-sided families is a complex seven-dimensional subspace and is not a subalgebra.
 
-The plain adjoint exchanges the parameters, $(L_{\tilde Q}R_{\tilde Q_2})^{\approx}=L_{\tilde Q_2}R_{\tilde Q}$. The self-adjoint operators are the scalar multiples of the diagonal operators, $\tilde Q_2=\lambda\tilde Q$; no nonzero operator is skew-adjoint. The isometries are the two cosets $\pm\mathrm{Ad}_{\tilde Q}$, with $\tilde Q_2\tilde Q=\pm e_t$, of complex dimension three; the multiplicative members are the inner automorphisms $\mathrm{Ad}_{\tilde Q}$, with $\tilde Q\tilde Q_2=e_t$. The quadratic form is not multiplicative, so the family contains no pin group, and the reflections lie outside it.
+The plain adjoint exchanges the parameters, $(L_{\tilde Q}R_{\tilde Q_2})^{\approx}=L_{\tilde Q_2}R_{\tilde Q}$. The self-adjoint operators are the scalar multiples of the diagonal operators, $\tilde Q_2=\lambda\tilde Q$; no nonzero operator is anti-self-adjoint. The isometries are the two cosets $\pm\mathrm{Ad}_{\tilde Q}$, with $\tilde Q_2\tilde Q=\pm e_t$, of complex dimension three; the multiplicative members are the inner automorphisms $\mathrm{Ad}_{\tilde Q}$, with $\tilde Q\tilde Q_2=e_t$. The quadratic form is not multiplicative, so the family contains no pin group, and the reflections lie outside it.
 
 ## Summary of Notation
 
@@ -435,7 +435,7 @@ The plain adjoint exchanges the parameters, $(L_{\tilde Q}R_{\tilde Q_2})^{\appr
 | $(L_{\tilde Q}R_{\tilde Q_2})^n=L_{\tilde Q^n}R_{\tilde Q_2^n}$ | The powers |
 | $(L_{\tilde Q}R_{\tilde Q_2})^{\approx}=L_{\tilde Q_2}R_{\tilde Q}$ | The plain adjoint swaps the parameters |
 | Self-adjoint $\iff\tilde Q_2=\lambda\tilde Q$ | For $\tilde Q\neq0$; the diagonal operators and their multiples |
-| Skew-adjoint $\iff L_{\tilde Q}R_{\tilde Q_2}=0$ | The skew sector is trivial |
+| Anti-self-adjoint $\iff L_{\tilde Q}R_{\tilde Q_2}=0$ | The anti-Hermitian sector is trivial |
 | Isometry $\iff\tilde Q_2\tilde Q=\pm e_t$ | The group $\{\pm\mathrm{Ad}_{\tilde Q}\}$ |
 | Multiplicative, nonzero $\iff\tilde Q\tilde Q_2=e_t$ | Then $L_{\tilde Q}R_{\tilde Q_2}=\mathrm{Ad}_{\tilde Q}$ |
 | $\tilde Q_2\tilde Q$ central $\implies$ multiplicative up to $\tilde Q_2\tilde Q$ | The partial law |

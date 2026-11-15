@@ -52,11 +52,11 @@ equivalently $\rho(x)^{\dagger}=\rho(x^{*})$ for the representation $\rho=c$ of 
 a compatible Hermitian form exactly when it is of the definite type; the form is unique up to a
 positive scalar on each irreducible summand, and the involution $*$ under which the axiom holds is
 the Clifford conjugation, possibly composed with the conjugation of the coefficient field. Under it
-a generator $e_i$ is **skew**, $(e_i\cdot s,t)=-(s,e_i\cdot t)$ for $i\ge1$, so the multiplication
-by a vector is skew-adjoint, and the scalar unit $1$ is Hermitian.
+a generator $e_i$ is **anti-Hermitian**, $(e_i\cdot s,t)=-(s,e_i\cdot t)$ for $i\ge1$, so the multiplication
+by a vector is anti-self-adjoint, and the scalar unit $1$ is Hermitian.
 
 *Proof.* The skewness of $e_i$ is $e_i^{*}=-e_i$, which is the Clifford conjugation; the axiom then
-reads $(e_i\cdot s,t)=(s,(-e_i)\cdot t)=-(s,e_i\cdot t)$, which is skew-adjointness. The existence
+reads $(e_i\cdot s,t)=(s,(-e_i)\cdot t)=-(s,e_i\cdot t)$, which is anti-self-adjointness. The existence
 and uniqueness of a compatible definite form on a Clifford module are the results of Part II's
 *Hermitian Modules over a Hermitian Algebra with Hermitian Adjoint*, and the involution is the one
 fixed there.
@@ -117,7 +117,7 @@ $$
 \boxed{\;c(x)^{\dagger} = c(x^{*}) , \qquad x\in A\;} .
 $$
 
-In particular the multiplication by a generator is skew-adjoint and the multiplication by a unit
+In particular the multiplication by a generator is anti-self-adjoint and the multiplication by a unit
 scalar is unitary.
 
 *Proof.* The pointwise axiom $(x\cdot s,t)=(s,x^{*}\cdot t)$ integrates to
@@ -135,14 +135,14 @@ $$
 
 the boundary term being the conormal pairing of *The Cauchy Integral Operator*.
 
-*Proof.* The derivatives integrate by parts with a sign, the multiplications are skew or Hermitian
+*Proof.* The derivatives integrate by parts with a sign, the multiplications are anti-Hermitian or Hermitian
 as in the preceding theorem, and the boundary term is the flux of the vector field $c(e_\mu)f$
 against $g$; the computation is the one of *The Dirac Operator* for the formal adjoint
 $D^{\dagger}=-\bar D$.
 
 **Corollary (self-adjointness on a closed domain, and on the Hardy space).** If the boundary term
 vanishes — for example on the boundary values of monogenic functions, or on a domain without
-boundary — then $D$ is skew-adjoint up to the conjugation, and the operator
+boundary — then $D$ is anti-self-adjoint up to the conjugation, and the operator
 $D_{\mathrm{sa}}=\sum_{i\ge1}c(e_i) \partial/\partial x_i$ is self-adjoint on the appropriate domain, with
 $D_{\mathrm{sa}}^2=-\Delta$ and a real spectrum. The spectral theory of that operator is *Dirac
 Differential Operators*', and the passage from the formal adjoint to the unbounded self-adjoint
@@ -186,10 +186,10 @@ A Hermitian Hilbert module over a Clifford algebra is a definite Clifford module
 a positive Hermitian form for which the action obeys the self-adjointness axiom
 $(x\cdot s,t)=(s,x^{*}\cdot t)$, completed to a Hilbert space of sections
 $L^2(\Omega;\mathcal{S})=\overline{C_c^\infty(\Omega;\mathcal{S})}$. The algebra acts by bounded
-operators with $c(x)^{\dagger}=c(x^{*})$; a generator is skew-adjoint and the scalar unit is
+operators with $c(x)^{\dagger}=c(x^{*})$; a generator is anti-self-adjoint and the scalar unit is
 unitary. The operator $D$ has formal adjoint $D^{\dagger}=-\bar D$, the failure on a bounded domain
 being the conormal boundary term $\int_{\partial\Omega}(c(\nu_B)f,g)dS$; when that term vanishes,
-$D$ is skew and the vector operator $D_{\mathrm{sa}}$ is self-adjoint with
+$D$ is anti-Hermitian and the vector operator $D_{\mathrm{sa}}$ is self-adjoint with
 $D_{\mathrm{sa}}^2=-\Delta$ and a real spectrum, whose spectral theory is *Dirac Differential
 Operators*'. The spaces of monogenic $L^2$ functions — the Bergman space
 $\mathcal{A}^2=\ker D\cap L^2$ and the Hardy space $H^2$ — are closed subspaces, hence Hilbert

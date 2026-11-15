@@ -30,7 +30,7 @@ so $A$ is normal exactly when $\|Ax\|=\|A^{*}x\|$ for every $x$, which was verif
 
 ## The Two Hermitian Halves of a Matrix
 
-**Every matrix splits into a Hermitian and a anti-Hermitian part.** Put
+**Every matrix splits into a Hermitian and an anti-Hermitian part.** Put
 
 $$
 H=\tfrac12(A+A^{*}),\qquad K=\tfrac12(A-A^{*}),\qquad A=H+K .
@@ -70,7 +70,7 @@ $$
 \|AA^{*}-A^{*}A\|=2\|[H,J]\|,
 $$
 
-so the vanishing of one side is the vanishing of the other. The computation confirms the equivalence on random matrices and on the two halves: a Hermitian matrix has $J=0$ and a anti-Hermitian one has $H=0$, so both are normal and the criterion holds trivially.
+so the vanishing of one side is the vanishing of the other. The computation confirms the equivalence on random matrices and on the two halves: a Hermitian matrix has $J=0$ and an anti-Hermitian one has $H=0$, so both are normal and the criterion holds trivially.
 
 **The criterion states the compatibility of the two structures exactly.** The split $M_n(\mathbb{C})=\operatorname{Herm}_n\oplus i\operatorname{Herm}_n$ is a decomposition into two real subspaces, and the commutator is a bilinear map $[\,\cdot,\cdot]:\operatorname{Herm}_n\times\operatorname{Herm}_n\to i\operatorname{Herm}_n$. The normal matrices are the pairs $(H,J)$ in the kernel of that map, so
 
@@ -102,7 +102,7 @@ $$
 
 so the spectrum of a normal matrix is the pointwise sum of two real spectra, read in the same order. The order is the choice of eigenbasis, and a different order gives the same spectrum as a multiset, which is why the spectrum is the invariant and the basis is the gauge.
 
-**The theorem contains both of the extreme cases.** If $A$ is Hermitian then $\Lambda$ is real, and the theorem says that a Hermitian matrix is unitarily diagonalisable with a real diagonal; if $A$ is anti-Hermitian then $\Lambda$ is purely imaginary, and the theorem says that a anti-Hermitian matrix is unitarily diagonalisable with a purely imaginary diagonal. So the two spectral theorems are the two real and imaginary slices of the one theorem, and the common spectral theorem is the statement that the two slices fit together.
+**The theorem contains both of the extreme cases.** If $A$ is Hermitian then $\Lambda$ is real, and the theorem says that a Hermitian matrix is unitarily diagonalisable with a real diagonal; if $A$ is anti-Hermitian then $\Lambda$ is purely imaginary, and the theorem says that an anti-Hermitian matrix is unitarily diagonalisable with a purely imaginary diagonal. So the two spectral theorems are the two real and imaginary slices of the one theorem, and the common spectral theorem is the statement that the two slices fit together.
 
 **The theorem is the statement that the two halves are simultaneously diagonalisable exactly on the normal set.** For a general matrix the two halves do not commute and no common eigenbasis exists; the best that can be done is the Schur form, in which one of the two is triangular and the other is not diagonal. So the difference between normal and general is exactly the difference between one unitary and one unitary times a triangular factor.
 

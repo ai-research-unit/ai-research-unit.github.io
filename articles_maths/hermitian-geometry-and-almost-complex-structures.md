@@ -197,7 +197,7 @@ with equality if and only if $V$ is a complex subspace, that is $JV = V$.
 
 This is the **Chern connection** of the Hermitian structure.
 
-**Proof sketch.** Conditions (a) and (b) are linear in $\nabla$ and define an affine space of connections; the difference $\nabla - \nabla^{LC}$ of two connections with $\nabla J = 0$ is a tensor with values in the $J$-skew endomorphisms. Imposing (c) fixes the free part. Concretely, in a local complex frame $e_1,\ldots,e_n$ of $T^{1,0}$ with $g_{i\bar j} = g(e_i, \bar e_j)$, the conditions force $\nabla e_j = A_{kj}\otimes e_k$ with
+**Proof sketch.** Conditions (a) and (b) are linear in $\nabla$ and define an affine space of connections; the difference $\nabla - \nabla^{LC}$ of two connections with $\nabla J = 0$ is a tensor with values in the $J$-anti-self-adjoint endomorphisms. Imposing (c) fixes the free part. Concretely, in a local complex frame $e_1,\ldots,e_n$ of $T^{1,0}$ with $g_{i\bar j} = g(e_i, \bar e_j)$, the conditions force $\nabla e_j = A_{kj}\otimes e_k$ with
 
 $$
 A_{kj} = \sum_l (g^{-1})_{k\bar l}\,\partial g_{j\bar l}, \qquad \text{and} \qquad \bar\partial \text{-part of } A_{kj} = 0,

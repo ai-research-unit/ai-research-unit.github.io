@@ -82,7 +82,7 @@ and the map $\mathrm{Jor} : x\mapsto \mathrm{Jor}_x$ defines the symmetries of t
 
 ## The Self-Adjoint Operators and the Involution
 
-**Theorem.** The assignment $F\mapsto F^{\dagger}$ is an involution of the endomorphism algebra $\operatorname{End}_F(J)$ of the trace form; the self-adjoint operators form a Jordan algebra under the symmetrised product and the skew-adjoint operators a Lie algebra under the commutator, with $\operatorname{End}_F(J) = \operatorname{End}_F(J)^+\oplus\operatorname{End}_F(J)^-$ when $2$ is invertible. The multiplication algebra $\operatorname{Mult}(J)$ is contained in the self-adjoint part, and so is its polynomial closure.
+**Theorem.** The assignment $F\mapsto F^{\dagger}$ is an involution of the endomorphism algebra $\operatorname{End}_F(J)$ of the trace form; the self-adjoint operators form a Jordan algebra under the symmetrised product and the anti-self-adjoint operators a Lie algebra under the commutator, with $\operatorname{End}_F(J) = \operatorname{End}_F(J)^+\oplus\operatorname{End}_F(J)^-$ when $2$ is invertible. The multiplication algebra $\operatorname{Mult}(J)$ is contained in the self-adjoint part, and so is its polynomial closure.
 
 *Proof.* The involution property is *The Adjoint of an Endomorphism*; the Jordan and the Lie structures are *Involutive Algebras*; the inclusion of the multiplications in the self-adjoint part is the self-adjointness of the $L_x$; the polynomial closure is closed under the symmetrised product.
 

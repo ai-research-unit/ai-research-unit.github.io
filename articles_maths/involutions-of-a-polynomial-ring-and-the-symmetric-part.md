@@ -5,7 +5,7 @@
 
 The polynomial ring $R[x]$ over a commutative ring $R$ with an involution $\sigma$ carries involutions obtained by sending $x$ to a polynomial $f$ and the coefficients by $\sigma$; the smallest interesting one is $x \mapsto -x$, whose fixed subring is $R[x^2]$ and which turns $R[x]$ into a $\mathbb{Z}/2$-graded ring with even part $R[x^2]$ and odd part $xR[x^2]$. The general involution of $R[x]$ that restricts to $\sigma$ on the coefficients is determined by $f$, it is an involution exactly when $f \circ f = x$ and $f$ is compatible with $\sigma$, and the affine ones $f(x) = ax+b$ are classified by the two conditions $a\sigma(a) = 1$ and $\sigma(a)b + \sigma(b) = 0$; the map $x \mapsto -x$ is the case $a = -1$ and $b$ a fixed element, and the identity is the case $a = 1$.
 
-This article treats those involutions, the symmetric part they define, and the graded decomposition that the involution $x \mapsto -x$ induces. It opens with the structure of an involution of $R[x]$, continues with the symmetric part and the grading, and closes with the examples of $x \mapsto -x$, of the conjugation of $\mathbb{R}[x]$ inside $\mathbb{C}[x]$, and of the characteristic-$p$ phenomena. It assumes *Polynomial Rings and Rational Functions* for the polynomial ring and its degree, *Involutive Rings* for the involution and its fixed ring, and *Ring and Field Automorphisms* for the automorphisms of $R[x]$; the symmetric and skew elements are *The Skew Field of a Ring with Involution*, the article of this group that follows. Throughout, $R$ is a commutative ring with $1 \neq 0$ and an involution $\sigma$, and $R[x]^+$ denotes the fixed subring of an involution.
+This article treats those involutions, the symmetric part they define, and the graded decomposition that the involution $x \mapsto -x$ induces. It opens with the structure of an involution of $R[x]$, continues with the symmetric part and the grading, and closes with the examples of $x \mapsto -x$, of the conjugation of $\mathbb{R}[x]$ inside $\mathbb{C}[x]$, and of the characteristic-$p$ phenomena. It assumes *Polynomial Rings and Rational Functions* for the polynomial ring and its degree, *Involutive Rings* for the involution and its fixed ring, and *Ring and Field Automorphisms* for the automorphisms of $R[x]$; the symmetric and anti-Hermitian elements are *The Skew Field of a Ring with Involution*, the article of this group that follows. Throughout, $R$ is a commutative ring with $1 \neq 0$ and an involution $\sigma$, and $R[x]^+$ denotes the fixed subring of an involution.
 
 ## Involutions of R[x]
 
@@ -59,7 +59,7 @@ $$
 \boxed{\;R[x] = R[x^2] \oplus x\,R[x^2]\;},
 $$
 
-with even part $R[x^2]$ and odd part $xR[x^2]$. The symmetric part is the even part and the skew part is the odd part.
+with even part $R[x^2]$ and odd part $xR[x^2]$. The symmetric part is the even part and the antisymmetric part is the odd part.
 
 **Proof.** A polynomial $\sum a_i x^i$ is fixed by $x \mapsto -x$ exactly when the coefficients of the odd powers vanish, that is, when it is a polynomial in $x^2$; the direct sum is the grouping of the even and the odd powers, and the product of an element of $x^iR[x^2]$ and one of $x^jR[x^2]$ lies in $x^{i+j}R[x^2]$, which is the grading. The identification of the eigenspaces is the additive decomposition of *Involutive Rings*.
 
@@ -87,7 +87,7 @@ with even part $R[x^2]$ and odd part $xR[x^2]$. The symmetric part is the even p
 
 An involution of $R[x]$ that restricts to $\sigma$ on the coefficients is determined by a polynomial $f$ and sends $\sum a_i x^i$ to $\sum \sigma(a_i)f(x)^i$; it is an involution exactly when $\sigma^2 = \mathrm{id}$ and $f \circ f = x$ with the coefficient compatibility, and it is an automorphism because $R[x]$ is commutative. The affine involutions $f(x) = ax+b$ are classified by $a\sigma(a) = 1$ and $\sigma(a)b+\sigma(b) = 0$; over a field $R$ of characteristic zero, or over any integral domain with a multiplicative degree, every involution is affine, and when $2$ is invertible the only ones are the identity and $x \mapsto -x+b$ with $b$ fixed. Over a ring with nilpotents there are non-affine involutions, such as $x \mapsto x+t$ with $t^2 = 0$.
 
-The involution $x \mapsto -x$ is the model of the $\mathbb{Z}/2$-grading: its fixed subring is $R[x^2]$, the symmetric part is the even part and the skew part is the odd part, and $R[x] = R[x^2]\oplus xR[x^2]$. The affine involution $x \mapsto -x+b$ is the translate of this one by $b/2$, with fixed subring $R[(x-b/2)^2]$, and the conjugation of $\mathbb{C}[x]$ over $\mathbb{R}[x]$, the twisted case $x \mapsto -x$, the circle example $\mathbb{R}[x]/(x^2+1)$ and the power series analogue are the standard instances.
+The involution $x \mapsto -x$ is the model of the $\mathbb{Z}/2$-grading: its fixed subring is $R[x^2]$, the symmetric part is the even part and the anti-Hermitian part is the odd part, and $R[x] = R[x^2]\oplus xR[x^2]$. The affine involution $x \mapsto -x+b$ is the translate of this one by $b/2$, with fixed subring $R[(x-b/2)^2]$, and the conjugation of $\mathbb{C}[x]$ over $\mathbb{R}[x]$, the twisted case $x \mapsto -x$, the circle example $\mathbb{R}[x]/(x^2+1)$ and the power series analogue are the standard instances.
 
 ## Summary of Notation
 

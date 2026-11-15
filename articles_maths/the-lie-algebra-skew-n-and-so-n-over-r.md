@@ -32,7 +32,7 @@ $$
 [X,Y]=\frac{d}{dt}\Big|_{t=0}e^{tX}Ye^{-tX},
 $$
 
-so the bracket measures the infinitesimal action of the one-parameter group on the algebra. This is the reason the bracket of the skew half is the natural product: it is the product of the group $\mathrm{SO}(n)$ read at the identity.
+so the bracket measures the infinitesimal action of the one-parameter group on the algebra. This is the reason the bracket of the anti-Hermitian half is the natural product: it is the product of the group $\mathrm{SO}(n)$ read at the identity.
 
 ## The Identification with $\mathfrak{so}(n)$
 
@@ -44,7 +44,7 @@ $$
 
 *Proof.* The left side is $v^{\mathsf T}(X+X^{\mathsf T})u$, and a symmetric matrix that vanishes as a bilinear form is zero.
 
-**Consequence: $\mathfrak{g}$ is the Lie algebra of $\mathrm{O}(n)$.** A curve $t\mapsto Q(t)$ in $\mathrm{O}(n)$ with $Q(0)=\mathrm{I}$ satisfies $Q^{\mathsf T}Q=\mathrm{I}$, and differentiating gives $\dot Q(0)^{\mathsf T}+\dot Q(0)=0$. Conversely, for $X$ skew the exponential $e^{tX}$ is orthogonal, since $(e^{tX})^{\mathsf T}=e^{-tX}=(e^{tX})^{-1}$. So the tangent space at the identity is $\mathfrak{g}$, and $\mathfrak{g}$ is the Lie algebra of both $\mathrm{O}(n)$ and $\mathrm{SO}(n)$, because the two groups have the same identity component.
+**Consequence: $\mathfrak{g}$ is the Lie algebra of $\mathrm{O}(n)$.** A curve $t\mapsto Q(t)$ in $\mathrm{O}(n)$ with $Q(0)=\mathrm{I}$ satisfies $Q^{\mathsf T}Q=\mathrm{I}$, and differentiating gives $\dot Q(0)^{\mathsf T}+\dot Q(0)=0$. Conversely, for $X$ antisymmetric the exponential $e^{tX}$ is orthogonal, since $(e^{tX})^{\mathsf T}=e^{-tX}=(e^{tX})^{-1}$. So the tangent space at the identity is $\mathfrak{g}$, and $\mathfrak{g}$ is the Lie algebra of both $\mathrm{O}(n)$ and $\mathrm{SO}(n)$, because the two groups have the same identity component.
 
 **The isomorphism with $\mathfrak{so}(n)$ is the identity map.** The notation $\mathfrak{so}(n)$ refers to the same set of matrices with the same bracket; the article writes $\operatorname{Skew}_n$ when the matrix structure is used and $\mathfrak{so}(n)$ when the Lie structure is used. The two names denote one object.
 
@@ -96,7 +96,7 @@ $$
 \operatorname{tr}([X,Y]Z)=\operatorname{tr}(X[Y,Z]),
 $$
 
-so the adjoint action is by skew maps for this form. The algebra is thus a Euclidean Lie algebra, and the bracket is a skew trilinear form on it, which is the structure used in *The Derivation $X\mapsto[A,X]$ and Its Skewness for the Trace Form*.
+so the adjoint action is by anti-self-adjoint maps for this form. The algebra is thus a Euclidean Lie algebra, and the bracket is an anti-Hermitian trilinear form on it, which is the structure used in *The Derivation $X\mapsto[A,X]$ and Its Skewness for the Trace Form*.
 
 ## The Cases $n=2$, $n=3$ and $n=4$
 
@@ -124,9 +124,9 @@ as Lie algebras. The two summands commute, so the algebra is semisimple and not 
 
 ## The Exponential and the Group
 
-**The exponential maps $\mathfrak{so}(n)$ into $\mathrm{SO}(n)$.** For $X$ skew, $(e^{X})^{\mathsf T}e^{X}=e^{-X}e^{X}=\mathrm{I}$, so $e^{X}$ is orthogonal, and $\det e^{X}=e^{\operatorname{tr}X}=1$ because $\operatorname{tr}X=0$. So the image is in $\mathrm{SO}(n)$, and it is the identity component.
+**The exponential maps $\mathfrak{so}(n)$ into $\mathrm{SO}(n)$.** For $X$ antisymmetric, $(e^{X})^{\mathsf T}e^{X}=e^{-X}e^{X}=\mathrm{I}$, so $e^{X}$ is orthogonal, and $\det e^{X}=e^{\operatorname{tr}X}=1$ because $\operatorname{tr}X=0$. So the image is in $\mathrm{SO}(n)$, and it is the identity component.
 
-**The exponential is onto $\mathrm{SO}(n)$.** Every rotation is orthogonally diagonalisable in blocks of size one and two, and each block is a rotation by an angle $\theta$ in a plane, which is $e^{\theta J_2}$ on that plane. Assembling the blocks gives $Q=e^{X}$ with $X$ skew. So the exponential is surjective onto $\mathrm{SO}(n)$, which is the contrast with $\mathrm{GL}_n(\mathbb{R})$, where it is not.
+**The exponential is onto $\mathrm{SO}(n)$.** Every rotation is orthogonally diagonalisable in blocks of size one and two, and each block is a rotation by an angle $\theta$ in a plane, which is $e^{\theta J_2}$ on that plane. Assembling the blocks gives $Q=e^{X}$ with $X$ antisymmetric. So the exponential is surjective onto $\mathrm{SO}(n)$, which is the contrast with $\mathrm{GL}_n(\mathbb{R})$, where it is not.
 
 **Consequence: $\mathrm{SO}(n)$ is connected.** It is the continuous image of the connected space $\mathfrak{so}(n)$, and $\mathrm{O}(n)$ has two components, cut by the determinant. This is the content of *The Two Components of $\mathrm{GL}_n(\mathbb{R})$ and the Failure of the Exponential* read at the level of the maximal compact subgroup.
 

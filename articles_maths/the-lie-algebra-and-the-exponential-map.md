@@ -153,7 +153,7 @@ and the series converges absolutely for every $A$.
 
 **Proof.** (a) The binomial theorem applies to commuting $A, B$ and gives the product series. (b) The inverse is $\exp(-A)$ from (a) with $B = -A$. For the determinant, reduce to the triangular case: over $\mathbb{C}$ every matrix is conjugate to an upper triangular matrix; for upper triangular $T$ with diagonal entries $t_i$ the matrix $e^T$ is upper triangular with diagonal $\exp(t_i)$, so $\det e^T = \prod_i \exp(t_i) = \exp(\sum_i t_i) = \exp(\operatorname{tr}T)$; conjugating by (d) and extending from $\mathbb{C}$ to $\mathbb{K}$ gives the general case. (c) is immediate from the series. (d) is $(BAB^{-1})^k = B A^k B^{-1}$.
 
-**Example.** For $A = \begin{pmatrix} 0 & -t \\ t & 0 \end{pmatrix}$ one has $\exp(A) = \begin{pmatrix} \cos t & -\sin t \\ \sin t & \cos t\end{pmatrix}$, the rotation by angle $t$. This exhibits the exponential as the map from the line of skew matrices to the circle group $SO(2)$, and it shows that $\exp$ is not injective: $\exp(A) = I$ for $t = 2\pi$.
+**Example.** For $A = \begin{pmatrix} 0 & -t \\ t & 0 \end{pmatrix}$ one has $\exp(A) = \begin{pmatrix} \cos t & -\sin t \\ \sin t & \cos t\end{pmatrix}$, the rotation by angle $t$. This exhibits the exponential as the map from the line of antisymmetric matrices to the circle group $SO(2)$, and it shows that $\exp$ is not injective: $\exp(A) = I$ for $t = 2\pi$.
 
 ### Local Diffeomorphism
 

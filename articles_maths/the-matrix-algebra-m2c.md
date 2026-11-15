@@ -88,7 +88,7 @@ $$
 
 ## The Reading over the Real Numbers
 
-**Every matrix splits into a Hermitian and a anti-Hermitian part.** Put $A^{*}=\bar A^{\mathsf T}$; the **Hermitian** matrices satisfy $H^{*}=H$ and the **anti-Hermitian** ones $S^{*}=-S$.
+**Every matrix splits into a Hermitian and an anti-Hermitian part.** Put $A^{*}=\bar A^{\mathsf T}$; the **Hermitian** matrices satisfy $H^{*}=H$ and the **anti-Hermitian** ones $S^{*}=-S$.
 
 **Proposition.** Every $A$ splits uniquely as
 

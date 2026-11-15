@@ -62,9 +62,9 @@ $$
 \pi_+(XY)=S\circ T+\pi_+(SL)+\pi_+(KT)+\pi_+(KL),
 $$
 
-so the defect is the sum of the three mixed and skew contributions, and it vanishes exactly when those three terms are symmetric. The first term $S\circ T$ is the part that survives, and it is the reason the isomorphism looks right at the level of the symmetric parts.
+so the defect is the sum of the three mixed and antisymmetric contributions, and it vanishes exactly when those three terms are symmetric. The first term $S\circ T$ is the part that survives, and it is the reason the isomorphism looks right at the level of the symmetric parts.
 
-**The defect is not the commutator and not a coboundary.** The three correction terms involve the skew parts of $X$ and $Y$, which the symmetrisation forgets; so no modification of the product on $UT_n$ by a term built from $\pi_+$ alone can repair the defect. The information in $K$ and $L$ is genuinely lost, and the product of the triangular algebra uses it.
+**The defect is not the commutator and not a coboundary.** The three correction terms involve the anti-Hermitian parts of $X$ and $Y$, which the symmetrisation forgets; so no modification of the product on $UT_n$ by a term built from $\pi_+$ alone can repair the defect. The information in $K$ and $L$ is genuinely lost, and the product of the triangular algebra uses it.
 
 ## The Idempotents Do Match
 
@@ -84,7 +84,7 @@ so the defect is the sum of the three mixed and skew contributions, and it vanis
 
 ## The Forms and the Groups
 
-**The symmetrisation is not an isometry.** The trace form on $UT_n$ is degenerate with radical $n_+$ and rank $n$; on $S$ it is positive definite. Under $\pi_+$ the form $\operatorname{tr}(XY)$ on $UT_n$ corresponds to $\operatorname{tr}(\pi_+(X)\pi_+(Y))$ on $S$, which is not the trace form of $S$: the two differ by the skew parts, and the skew parts are invisible to the diagonal.
+**The symmetrisation is not an isometry.** The trace form on $UT_n$ is degenerate with radical $n_+$ and rank $n$; on $S$ it is positive definite. Under $\pi_+$ the form $\operatorname{tr}(XY)$ on $UT_n$ corresponds to $\operatorname{tr}(\pi_+(X)\pi_+(Y))$ on $S$, which is not the trace form of $S$: the two differ by the anti-Hermitian parts, and the anti-Hermitian parts are invisible to the diagonal.
 
 **Consequence: the isomorphism does not preserve the invariant form.** The trace form of $UT_n$ has nullity $n(n-1)/2$, and the same form read on $S$ has nullity zero. So the linear isomorphism carries a degenerate form to a nondegenerate one, and this is the form-level statement of the same failure: the two algebras have different radicals.
 
@@ -117,7 +117,7 @@ The symmetrisation $\pi_+(X)=\tfrac12(X+X^{\mathsf T})$ is a linear isomorphism 
 | $UT_n$ | the upper triangular matrices, dimension $n(n+1)/2$ |
 | $\operatorname{Sym}_n$ | the symmetric half, dimension $n(n+1)/2$ |
 | $\pi_+$ | the symmetrisation $\tfrac12(X+X^{\mathsf T})$ |
-| $S,K,T,L$ | the symmetric and skew parts of $X$ and $Y$ |
+| $S,K,T,L$ | the symmetric and antisymmetric parts of $X$ and $Y$ |
 | $S\circ T$ | the Jordan product $\tfrac12(ST+TS)$ |
 | $n_+$ | the nilpotent radical of $UT_n$ |
 

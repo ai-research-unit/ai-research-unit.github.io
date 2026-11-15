@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A connection on a vector bundle may be **transposed** to the dual bundle and **conjugated** on the conjugate bundle, and a Hermitian metric identifies the two operations: the metric-compatible connections are exactly the connections whose dual and whose conjugate agree under the metric. This is the **self-adjointness** of the connection, and it is the reason that a metric connection has a anti-Hermitian curvature and that the covariant derivative has the simple adjoint $-\nabla_X-\operatorname{div}X$.
+A connection on a vector bundle may be **transposed** to the dual bundle and **conjugated** on the conjugate bundle, and a Hermitian metric identifies the two operations: the metric-compatible connections are exactly the connections whose dual and whose conjugate agree under the metric. This is the **self-adjointness** of the connection, and it is the reason that a metric connection has an anti-Hermitian curvature and that the covariant derivative has the simple adjoint $-\nabla_X-\operatorname{div}X$.
 
 The article develops the adjoint connection. It defines the dual connection $\nabla^*$ on $E^*$ by the derivative of the pairing and the conjugate connection $\bar\nabla$ on $\bar E$, proves that the Hermitian metric is a conjugate-linear isomorphism intertwining them exactly when the connection is metric-compatible, computes the **adjoint of a single covariant derivative** $\nabla_X$ as a differential operator, identifies the **connection Laplacian** $\nabla^*\nabla$ as the composition with the formal adjoint at the level of the $1$-form-valued sections, and computes the **curvature of the adjoint connection** $R_{\nabla^*}(X,Y)=-R_\nabla(X,Y)^t$, deriving again that the curvature of a metric connection is anti-Hermitian.
 
@@ -64,11 +64,11 @@ $$
 \boxed{\;(\nabla_X)^* = -\nabla_X - \operatorname{div} X\;},
 $$
 
-acting as a differential operator on the sections, where the divergence is taken with respect to the density; consequently $\nabla_X$ is skew-adjoint exactly when $\operatorname{div}X = 0$.
+acting as a differential operator on the sections, where the divergence is taken with respect to the density; consequently $\nabla_X$ is anti-self-adjoint exactly when $\operatorname{div}X = 0$.
 
 *Proof.* Compute with the metric-compatibility identity and the metric nature of the pairing. For the pairing with compact support $\int_M X\,h(s,t)\,d\mu = \int_M h(\nabla_Xs,t)\,d\mu + \int_M h(s,\nabla_Xt)\,d\mu$, and by the integration by parts of the previous entry $\int_M X\,f\,d\mu = -\int_M f\,\operatorname{div}X\,d\mu$ for a function $f$. Substituting and collecting the two terms in $h(s,\cdot)$ gives $\int_M h(\nabla_Xs,t)\,d\mu = -\int_M h(s,\nabla_Xt + \operatorname{div}X\,t)\,d\mu$, which is the display.
 
-**Remark.** The formula exhibits the self-adjointness of the metric connection up to the divergence of the direction field: the adjoint of $\nabla_X$ is the negative of the covariant derivative along $X$ with the density correction, and the correction vanishes exactly for the divergence-free fields. The skew-adjointness of the differential $d$ and the first-order part of the Dirac operator, as in *Dirac Differential Operators* and *The Atiyah–Singer Index Theorem and K-Theory*, are instances of this formula with the appropriate density.
+**Remark.** The formula exhibits the self-adjointness of the metric connection up to the divergence of the direction field: the adjoint of $\nabla_X$ is the negative of the covariant derivative along $X$ with the density correction, and the correction vanishes exactly for the divergence-free fields. The anti-self-adjointness of the differential $d$ and the first-order part of the Dirac operator, as in *Dirac Differential Operators* and *The Atiyah–Singer Index Theorem and K-Theory*, are instances of this formula with the appropriate density.
 
 ### The Connection Laplacian
 

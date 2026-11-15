@@ -22,15 +22,15 @@ $$
 \dim\langle \mathrm{I},K,\dots,K^{n-1}\rangle=n,
 $$
 
-which was verified at $n=3,4,5$ on random skew generators, where the Krylov rank equals $n$. So one rotor generates a commutative algebra of dimension $n$, and the family $t\mapsto e^{tK}$ lies in it.
+which was verified at $n=3,4,5$ on random anti-Hermitian generators, where the Krylov rank equals $n$. So one rotor generates a commutative algebra of dimension $n$, and the family $t\mapsto e^{tK}$ lies in it.
 
-**At $n=3$ the rotor is Rodrigues' formula.** With $\theta=\|K\|/\sqrt2$ the unit skew matrix $A=K/\theta$ satisfies $A^{3}=-A$, so
+**At $n=3$ the rotor is Rodrigues' formula.** With $\theta=\|K\|/\sqrt2$ the unit antisymmetric matrix $A=K/\theta$ satisfies $A^{3}=-A$, so
 
 $$
 e^{K}=\mathrm{I}+\sin\theta\,A+(1-\cos\theta)A^{2},
 $$
 
-which was verified at $n=3$ on random skew matrices. So a rotation of three-space is a combination of the three powers $\mathrm{I},A,A^{2}$, and the three coefficients are functions of the single angle.
+which was verified at $n=3$ on random antisymmetric matrices. So a rotation of three-space is a combination of the three powers $\mathrm{I},A,A^{2}$, and the three coefficients are functions of the single angle.
 
 ## The Clifford Algebra of the Space
 

@@ -46,7 +46,7 @@ is a sesqualgebra with a form in the sense of *Sesqualgebras with a Form*; the f
 
 **Proof.** The dagger is a conjugate-linear anti-automorphism of order two and the compatibility $\langle xy, z\rangle_{\dagger} = \langle y, x^{\dagger}z\rangle_{\dagger}$ is the cyclicity of the scalar part against the dagger. The diagonal is the computation of *The Blade Form and the Hermitian Structure with Hermitian Adjoint*: the dagger inserts the parity sign $(-1)^{|I|}$ relative to the blade form $\operatorname{Sc}(x^{r}y)$, whose diagonal is $\prod_{i\in I}e_{i}^{2}$. The definiteness is the definite case, so it is named and not developed here.
 
-**Corollary.** The Hermitian Clifford algebra is a Hermitian algebra *and* a sesqualgebra with a form; the two structures are the same data, and the operator theory of the category applies to it with no change: the adjoint, the unitary group, the skew operators and the congruence classification are the articles of this category, and the explicit Clifford computations of the dagger are *The Blade Form and the Hermitian Structure with Hermitian Adjoint*.
+**Corollary.** The Hermitian Clifford algebra is a Hermitian algebra *and* a sesqualgebra with a form; the two structures are the same data, and the operator theory of the category applies to it with no change: the adjoint, the unitary group, the anti-self-adjoint operators and the congruence classification are the articles of this category, and the explicit Clifford computations of the dagger are *The Blade Form and the Hermitian Structure with Hermitian Adjoint*.
 
 ## The Unitary and the Spin Groups
 

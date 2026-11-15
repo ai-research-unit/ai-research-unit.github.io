@@ -33,7 +33,7 @@ $$
 \{f,g\} = \sum_{i,j}\pi_{ij}\,\frac{\partial f}{\partial x_i}\frac{\partial g}{\partial x_j},
 $$
 
-where the $\pi_{ij}$ are the entries of a antisymmetric matrix of elements of $A$. The Jacobi identity for the bracket is equivalent to the single condition
+where the $\pi_{ij}$ are the entries of an antisymmetric matrix of elements of $A$. The Jacobi identity for the bracket is equivalent to the single condition
 
 $$
 \sum_{i,j,l}\Bigl(\pi_{il}\frac{\partial\pi_{jk}}{\partial x_l}+\pi_{jl}\frac{\partial\pi_{ki}}{\partial x_l}+\pi_{kl}\frac{\partial\pi_{ij}}{\partial x_l}\Bigr) = 0

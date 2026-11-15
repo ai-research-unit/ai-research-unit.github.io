@@ -22,7 +22,7 @@ It follows the biquaternion article *Subspaces and Decompositions of the Biquate
 
 **Corollary.** The anti-Hermitian half is the image of the Hermitian half under multiplication by $i$, and it is a real subspace but not a complex one.
 
-**Proof.** Multiplying a Hermitian matrix by $i$ gives a anti-Hermitian one, and the product of a complex scalar with a anti-Hermitian matrix is Hermitian again only for the real scalars.
+**Proof.** Multiplying a Hermitian matrix by $i$ gives an anti-Hermitian one, and the product of a complex scalar with an anti-Hermitian matrix is Hermitian again only for the real scalars.
 
 ## The Trace Form on the Halves
 

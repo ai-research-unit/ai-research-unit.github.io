@@ -20,7 +20,7 @@ and the assignment $A \mapsto A^{*}$ is additive, of order two and anti-multipli
 
 **Proof.** For fixed $y$ the map $x \mapsto B(Ax,y)$ is linear; since $z \mapsto B(\cdot,z)$ is a bijection $V \to V^{*}$ by non-degeneracy, there is a unique $A^{*}y$ representing it, and uniqueness in $y$ makes $A^{*}$ a map. Linearity of $A^{*}$ and the four laws follow by uniqueness exactly as in *Involutions of the Endomorphism Algebra*, which owns them.
 
-**Definition.** An endomorphism is **self-adjoint** when $A^{*}=A$, **skew-adjoint** when $A^{*}=-A$, and **unitary** when $A^{*}A = AA^{*} = \mathrm{id}$.
+**Definition.** An endomorphism is **self-adjoint** when $A^{*}=A$, **anti-self-adjoint** when $A^{*}=-A$, and **unitary** when $A^{*}A = AA^{*} = \mathrm{id}$.
 
 ## Kernel, Image and the Paired Complement
 
@@ -66,7 +66,7 @@ $$
 
 **Proof.** Induction on $k$ from $(AB)^{*}=B^{*}A^{*}$ and additivity.
 
-**Remark (the involution on the endomorphism algebra).** The assignment $A \mapsto A^{*}$ is an involution of the algebra $E$ in the sense of *Involutive Rings*, of the first kind for a bilinear pairing and of the second kind for a sesquilinear one; its fixed and skew parts, its matrix description, the classification of the involutions it produces and the unitary elements are the subject of *Involutions of the Endomorphism Algebra*, and only the operator facts about a single adjoint are established here. The two articles divide the subject: that one treats the involution as a structure on the algebra, this one the adjoint as an operator on $V$.
+**Remark (the involution on the endomorphism algebra).** The assignment $A \mapsto A^{*}$ is an involution of the algebra $E$ in the sense of *Involutive Rings*, of the first kind for a bilinear pairing and of the second kind for a sesquilinear one; its fixed and anti-Hermitian parts, its matrix description, the classification of the involutions it produces and the unitary elements are the subject of *Involutions of the Endomorphism Algebra*, and only the operator facts about a single adjoint are established here. The two articles divide the subject: that one treats the involution as a structure on the algebra, this one the adjoint as an operator on $V$.
 
 **Remark (the involution and the operator adjoint).** There are two maps that the word "adjoint" names, and the article's symbol $\ast$ is the element involution on $E$ while the operator adjoint of a map on $E$ — the adjoint of $L_A$ for the natural pairing of the endomorphism algebra — is written ${}^{\dagger}$ and is *The Adjoint of the Left Multiplication on a Linear Space*.
 
@@ -87,7 +87,7 @@ A non-degenerate reflexive pairing $B$ on a finite-dimensional space $V$ attache
 | $\ker A^{*}=(\operatorname{im}A)^{\mathrm{c}}$ | the kernel of the adjoint |
 | $\operatorname{im}A^{*}=(\ker A)^{\mathrm{c}}$ | the image of the adjoint |
 | $\Phi$ | the Gram matrix; $[A^{*}]=\Phi^{-1}[A]^{\mathsf{T}}\Phi$ |
-| $A^{*}=\pm A$ | self-adjoint and skew-adjoint |
+| $A^{*}=\pm A$ | self-adjoint and anti-self-adjoint |
 | $A^{*}A=AA^{*}=\mathrm{id}$ | unitary |
 
 ## Further Reading

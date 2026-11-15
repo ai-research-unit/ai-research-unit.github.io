@@ -15,7 +15,7 @@ U(3)\times\operatorname{Herm}_{>0}(3)\longrightarrow GL_3(\mathbb{C}),
 \qquad (U,P)\longmapsto UP,
 $$
 
-and the real dimensions match: $9+9=18$. The positive definite factor is the exponential of a Hermitian matrix, $P=e^{H}$, and the $*$-unitary factor is the exponential of a anti-Hermitian matrix, $U=e^{iK}$, so the polar decomposition is the real splitting
+and the real dimensions match: $9+9=18$. The positive definite factor is the exponential of a Hermitian matrix, $P=e^{H}$, and the $*$-unitary factor is the exponential of an anti-Hermitian matrix, $U=e^{iK}$, so the polar decomposition is the real splitting
 
 $$
 \mathfrak{gl}_3=\mathfrak{u}(3)\oplus\operatorname{Herm}(3),

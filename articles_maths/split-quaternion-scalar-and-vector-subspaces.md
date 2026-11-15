@@ -129,7 +129,7 @@ $$
 [\vec e_x, \vec e_y] = 2\vec e_z, \qquad [\vec e_y, \vec e_z] = -2\vec e_x, \qquad [\vec e_z, \vec e_x] = 2\vec e_y,
 $$
 
-so $V \cong \mathrm{SL}_2(\mathbb{R})$, and the split-quaternion norm $\langle\cdot\rangle_{\natural}$ on $V$, of signature $(2,1)$, is invariant under the adjoint action: $\operatorname{ad}_{\tilde q}$ is $\langle\cdot\rangle_{\natural}$-skew for every $\tilde q \in V$.
+so $V \cong \mathrm{SL}_2(\mathbb{R})$, and the split-quaternion norm $\langle\cdot\rangle_{\natural}$ on $V$, of signature $(2,1)$, is invariant under the adjoint action: $\operatorname{ad}_{\tilde q}$ is $\langle\cdot\rangle_{\natural}$-anti-self-adjoint for every $\tilde q \in V$.
 
 **Proof.** The bracket relations follow from the products $\vec e_x \vec e_y = \vec e_z$, $\vec e_y \vec e_z = -\vec e_x$, $\vec e_z \vec e_x = \vec e_y$ together with $\vec e_y \vec e_x = -\vec e_z$, $\vec e_z \vec e_y = \vec e_x$, $\vec e_x \vec e_z = -\vec e_y$. The Jacobi identity is $[[\tilde q_1,\tilde q_2],\tilde q_3] + [[\tilde q_2,\tilde q_3],\tilde q_1] + [[\tilde q_3,\tilde q_1],\tilde q_2] = 0$, an identity in every associative algebra, and the structure constants are those of $\mathrm{SL}_2(\mathbb{R})$. The invariance of $\langle\cdot\rangle_{\natural}$ is the identity $\langle[\tilde q_1,\tilde q_2],\tilde q_3\rangle + \langle\tilde q_2,[\tilde q_1,\tilde q_3]\rangle = 0$, which follows from the associativity of the algebra and the multiplicativity $\langle ab\rangle_{\natural} = \langle a\rangle_{\natural}\langle b\rangle_{\natural}$ of the split-quaternion norm.
 

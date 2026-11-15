@@ -358,11 +358,11 @@ the one-parameter group of hyperbolic rotations, which is the **boost**. So $O(1
 
 **The split norm is Minkowski.** Its Gram matrix is $g$, its signature $(1,1)$, its zero set two lines. It is the only multiplicative form, and it is indefinite.
 
-**The trace and Frobenius forms coincide here.** Both have Gram $2I_2$, because every matrix of the image is symmetric, so $M^{\mathsf T}=M$ and the two forms agree on the image. In the complex model the two forms differed, because the image contained skew matrices. So the split category has one Euclidean form and not two, and the two coincide for the structural reason that the image is a space of symmetric matrices.
+**The trace and Frobenius forms coincide here.** Both have Gram $2I_2$, because every matrix of the image is symmetric, so $M^{\mathsf T}=M$ and the two forms agree on the image. In the complex model the two forms differed, because the image contained antisymmetric matrices. So the split category has one Euclidean form and not two, and the two coincide for the structural reason that the image is a space of symmetric matrices.
 
 **The conformal parameter.** The identity $M^{\mathsf T}gM=\langle Q\rangle_{*}g$ says that the image acts on the Minkowski plane by similarities of factor $\langle Q\rangle_{*}$; the Euclidean form is not preserved and is not conformal for the image in general, since $\operatorname{tr}(M^{\mathsf T}M)=2(q^{2}+q'^{2})\neq2\langle Q\rangle_{*}$ unless $qq'=0$. So the two forms of the plane play strictly different roles: the definite one measures the coefficients, the indefinite one is the one the algebra respects.
 
-**The absence of a Hermitian form.** As in the complex model there is no Hermitian form on the image, and the involution is the signed transpose. The symmetric/skew splitting of the image is degenerate here: every member is symmetric, so the skew part of the image is zero. What replaces the splitting is the Peirce splitting into the two null lines.
+**The absence of a Hermitian form.** As in the complex model there is no Hermitian form on the image, and the involution is the signed transpose. The symmetric/anti-Hermitian splitting of the image is degenerate here: every member is symmetric, so the anti-Hermitian part of the image is zero. What replaces the splitting is the Peirce splitting into the two null lines.
 
 ## The Subspaces
 
@@ -396,14 +396,14 @@ $$
 and the complement is exactly the matrix of the norm. The ambient then splits as
 
 $$
-M_2(\mathbb{R})=\underbrace{M_2(\mathbb{C}_{\mathrm{spl}})}_{\text{hyperbolic, dim }2}\oplus\underbrace{\mathbb{R}g}_{\text{traceless diagonal}}\oplus\underbrace{\mathfrak{so}(2)}_{\text{skew, dim }1},
+M_2(\mathbb{R})=\underbrace{M_2(\mathbb{C}_{\mathrm{spl}})}_{\text{hyperbolic, dim }2}\oplus\underbrace{\mathbb{R}g}_{\text{traceless diagonal}}\oplus\underbrace{\mathfrak{so}(2)}_{\text{antisymmetric, dim }1},
 $$
 
 of dimensions $2+1+1$, and the three summands are the conformal part, the norm and the rotation. In the complex model the corresponding split was conformal plus anti-conformal; here there is a third piece, and it is the one that carries the sign of the determinant.
 
 **The units.** The level set $\langle Q\rangle_{*}=\pm1$ is the hyperbola pair, of dimension one, and its image is $O(1,1)$; the level set $\langle Q\rangle_{*}=1$ has two components, the future and past branches, and its identity component is the boost group. The model realises $O(1,1)$ as an equality of matrix sets, exactly as the complex model realised $SO(2)$, and the difference of topology — one component against four — is the difference of signature.
 
-**The comparison with the ambient.** The image contains no nilpotent, no skew matrix, no traceless matrix and no off-diagonal matrix unit; the ambient contains all of them. The passage from the ambient to the algebra is the passage from an arbitrary linear map to a hyperbolic similarity, and it is the imposition of two linear conditions $CJ=JC$.
+**The comparison with the ambient.** The image contains no nilpotent, no antisymmetric matrix, no traceless matrix and no off-diagonal matrix unit; the ambient contains all of them. The passage from the ambient to the algebra is the passage from an arbitrary linear map to a hyperbolic similarity, and it is the imposition of two linear conditions $CJ=JC$.
 
 ## Summary
 
@@ -416,7 +416,7 @@ of dimensions $2+1+1$, and the three summands are the conformal part, the norm a
 7. The diagonalising matrix is the orthogonal reflection $H$ of determinant $-1$, which is at once a similarity and a congruence, sends the split form to $J$ and does not belong to the image.
 8. Every element is diagonalisable, including the zero divisors; there are no nilpotents; the projectors never coalesce; the claim that a zero divisor breaks the diagonalisation is false.
 9. The adjugate is the signed transpose $gM^{\mathsf T}g$, so the image is conformal for the split form, $M^{\mathsf T}gM=\langle Q\rangle_{*}g$, and the units map onto $O(1,1)$ with four components.
-10. The distinguished subspaces are four — the real line, the $j$-line and the two null lines — and the ambient splits as the image plus the traceless diagonal line plus the skew line.
+10. The distinguished subspaces are four — the real line, the $j$-line and the two null lines — and the ambient splits as the image plus the traceless diagonal line plus the antisymmetric line.
 
 ## Summary of Notation
 

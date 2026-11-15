@@ -147,7 +147,7 @@ $$
 \smile:HH^p(A,M)\otimes_kHH^q(A,N)\to HH^{p+q}(A,M\otimes_AN)
 $$
 
-induced by the composition of cochains $\varphi\smile\psi(a_1,\dots,a_{p+q})=\varphi(a_1,\dots,a_p)\otimes\psi(a_{p+1},\dots,a_{p+q})$ composed with the bimodule map. Applied with $M=N=A$, it makes $HH^{\bullet}(A,A)$ a graded commutative $k$-algebra when $A$ is commutative, and in general a graded ring with a skew action of the centre.
+induced by the composition of cochains $\varphi\smile\psi(a_1,\dots,a_{p+q})=\varphi(a_1,\dots,a_p)\otimes\psi(a_{p+1},\dots,a_{p+q})$ composed with the bimodule map. Applied with $M=N=A$, it makes $HH^{\bullet}(A,A)$ a graded commutative $k$-algebra when $A$ is commutative, and in general a graded ring with an anti-Hermitian action of the centre.
 
 **Proposition.** The cup product is associative and, for $A$ commutative, graded commutative on the cohomology: $x\smile y=(-1)^{pq}y\smile x$ for $x \in HH^p$, $y \in HH^q$. Under the Hochschild–Kostant–Rosenberg theorem it corresponds to the exterior product of differential forms.
 

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The **antipodal map** $\alpha(x) = -x$ of the sphere is the free involution of *Borsuk's Theorem and the Antipodal Involution*, and it is also an operator on the cohomology of the sphere. The article computes the operator: on the top cohomology $H^{n}(S^{n})$ it is multiplication by the degree, $\deg\alpha = (-1)^{n+1}$, so that the antipodal map preserves the orientation of the sphere in odd dimensions and reverses it in even dimensions. The article then computes its **adjoint** with respect to the cup-product pairing, the archetypal pairing of the operator group. The adjoint turns out to be a scalar multiple of the operator itself, $\operatorname{Ad}(\alpha^{*}) = (-1)^{n+1}\alpha^{*}$, so that the antipodal operator is self-adjoint in odd dimensions and skew-adjoint in even dimensions; the computation is the model of the Hermitian pairings of *Hermitian Pairings on a Topological Space*, and the fixed part of the operator is computed at the same time, the invariant cohomology being the whole ring in the odd case and the degree-zero part alone in the even case.
+The **antipodal map** $\alpha(x) = -x$ of the sphere is the free involution of *Borsuk's Theorem and the Antipodal Involution*, and it is also an operator on the cohomology of the sphere. The article computes the operator: on the top cohomology $H^{n}(S^{n})$ it is multiplication by the degree, $\deg\alpha = (-1)^{n+1}$, so that the antipodal map preserves the orientation of the sphere in odd dimensions and reverses it in even dimensions. The article then computes its **adjoint** with respect to the cup-product pairing, the archetypal pairing of the operator group. The adjoint turns out to be a scalar multiple of the operator itself, $\operatorname{Ad}(\alpha^{*}) = (-1)^{n+1}\alpha^{*}$, so that the antipodal operator is self-adjoint in odd dimensions and anti-self-adjoint in even dimensions; the computation is the model of the Hermitian pairings of *Hermitian Pairings on a Topological Space*, and the fixed part of the operator is computed at the same time, the invariant cohomology being the whole ring in the odd case and the degree-zero part alone in the even case.
 
 The article continues *The Involution on the Cohomology Operators*, whose general involution it specialises to the antipodal map, and *Borsuk's Theorem and the Antipodal Involution*, whose degree it recomputes and whose rigidity it reinterprets. It prepares *Hermitian Pairings on a Topological Space*. It uses the cohomology ring and the cup product of *Cup and Cap Products*, the degree of a map of spheres from the homology of this Part, and the antipodal involution of the sphere. Nothing analytic and nothing geometric is used: the sphere is the set of unit vectors, the antipodal map is the restriction of the linear map $-I$, and the only geometry is the determinant of that linear map, read as the sign of the degree; no metric is chosen on the cohomology and no length or angle on the sphere.
 
@@ -90,7 +90,7 @@ $$
 \operatorname{Ad}(\alpha^{*}) = (-1)^{n+1}\,\alpha^{*},
 $$
 
-so that the antipodal operator is **self-adjoint** in the odd dimensions and **skew-adjoint** in the even dimensions; in both cases it satisfies $\operatorname{Ad}(\alpha^{*}) = \pm\alpha^{*}$ and it is an involution up to the sign of the degree. The pairing is invariant under the antipodal operator exactly in the odd dimensions and anti-invariant in the even dimensions.
+so that the antipodal operator is **self-adjoint** in the odd dimensions and **anti-self-adjoint** in the even dimensions; in both cases it satisfies $\operatorname{Ad}(\alpha^{*}) = \pm\alpha^{*}$ and it is an involution up to the sign of the degree. The pairing is invariant under the antipodal operator exactly in the odd dimensions and anti-invariant in the even dimensions.
 
 **Proof.** The antipodal operator is a ring homomorphism, so $\alpha^{*}(u\cup v) = \alpha^{*}u \cup \alpha^{*}v$; naturality of the evaluation gives
 
@@ -104,7 +104,7 @@ $$
 b(\alpha^{*}u, v) = (-1)^{n+1}\mathfrak{b}(u,\alpha^{*}v),
 $$
 
-because $v = \alpha^{*}\alpha^{*}v$ and the isometry-up-to-sign relation applies to the pair $(u,\alpha^{*}v)$; hence $\operatorname{Ad}(\alpha^{*}) = (-1)^{n+1}\alpha^{*}$. The self-adjoint and the skew-adjoint statements are the two cases of the sign, and the invariance and anti-invariance are the two cases of the displayed scaling.
+because $v = \alpha^{*}\alpha^{*}v$ and the isometry-up-to-sign relation applies to the pair $(u,\alpha^{*}v)$; hence $\operatorname{Ad}(\alpha^{*}) = (-1)^{n+1}\alpha^{*}$. The self-adjoint and the anti-self-adjoint statements are the two cases of the sign, and the invariance and anti-invariance are the two cases of the displayed scaling.
 
 **Corollary.** The pairing defined by the antipodal operator through the adjoint is the scaled pairing $b_{\alpha}(u,v) = b(\alpha^{*}u,v) = (-1)^{n+1}\mathfrak{b}(u,\alpha^{*}v)$; it is symmetric in the even dimensions and antisymmetric in the odd dimensions, and it is nondegenerate exactly when the cup-product pairing is, since $\alpha^{*}$ is an invertible operator.
 
@@ -128,7 +128,7 @@ and the anti-invariant part is the complementary summand when two is invertible:
 
 ## Summary
 
-The antipodal map is a free involution of the sphere, the orbit map is the universal two-fold covering of the projective space, and the induced operator on the cohomology is the identity in degree zero and the multiplication by the degree in the top degree. The degree is $(-1)^{n+1}$: it is computed as the product of the degrees of the $n+1$ reflections whose composite is $-I$, and equally as the determinant of the linear operator, and the two agree. With respect to the cup-product pairing of Poincaré duality the antipodal operator scales the pairing by its degree, and its adjoint is therefore the same operator multiplied by the degree; the antipodal operator is self-adjoint in odd dimensions and skew-adjoint in even dimensions, and the pairing it defines through the adjoint is symmetric in the odd dimensions and antisymmetric in the even dimensions. Its fixed part on the cohomology of the sphere is the whole ring in the odd dimensions and the degree-zero part in the even dimensions, with the complementary top class anti-invariant when two is invertible; the fixed part is coarser than the cohomology of the quotient, and the article that follows develops the pairings of which this computation is the model.
+The antipodal map is a free involution of the sphere, the orbit map is the universal two-fold covering of the projective space, and the induced operator on the cohomology is the identity in degree zero and the multiplication by the degree in the top degree. The degree is $(-1)^{n+1}$: it is computed as the product of the degrees of the $n+1$ reflections whose composite is $-I$, and equally as the determinant of the linear operator, and the two agree. With respect to the cup-product pairing of Poincaré duality the antipodal operator scales the pairing by its degree, and its adjoint is therefore the same operator multiplied by the degree; the antipodal operator is self-adjoint in odd dimensions and anti-self-adjoint in even dimensions, and the pairing it defines through the adjoint is symmetric in the odd dimensions and antisymmetric in the even dimensions. Its fixed part on the cohomology of the sphere is the whole ring in the odd dimensions and the degree-zero part in the even dimensions, with the complementary top class anti-invariant when two is invertible; the fixed part is coarser than the cohomology of the quotient, and the article that follows develops the pairings of which this computation is the model.
 
 ## Summary of Notation
 
@@ -143,7 +143,7 @@ The antipodal map is a free involution of the sphere, the orbit map is the unive
 | $\varepsilon = (-1)^{n}$ | The symmetry sign of the middle pairing |
 | $b(\alpha^{*}u,\alpha^{*}v) = (-1)^{n+1}\mathfrak{b}(u,v)$ | The scaling of the pairing by the degree |
 | $\operatorname{Ad}(\alpha^{*}) = (-1)^{n+1}\alpha^{*}$ | The adjoint of the antipodal operator |
-| self-adjoint / skew-adjoint | Odd dimensions / even dimensions |
+| self-adjoint / anti-self-adjoint | Odd dimensions / even dimensions |
 | $b_{\alpha}(u,v) = b(\alpha^{*}u,v)$ | The pairing defined by the antipodal operator |
 | $H^{*}(S^{n})^{\alpha^{*}}$ | Invariant cohomology: whole ring if $n$ odd, degree zero if $n$ even |
 

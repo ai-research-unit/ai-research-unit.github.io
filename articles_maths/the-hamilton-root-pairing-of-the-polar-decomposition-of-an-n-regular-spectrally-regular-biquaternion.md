@@ -502,7 +502,7 @@ The examples are collected in the table, with the status of the pairing and the 
 | $i\vec e_x+i\vec e_y$ | yes | $i\sqrt2$ | $\tfrac{\pi}{2}e_t$ | $0.707107(\vec e_x+\vec e_y)$ |
 | $i$ | no | $i$ | — | $\vec Q=0$ |
 | root of norm $-e_t$, $\theta_{\mathrm{rpd}}=1.386294$ | yes | $i$ | $\tfrac{\pi}{2}e_t$ | $1.25\,\vec u_{\mathrm r}+0.75\,i\,\vec e_z$ |
-| skew axes, $\theta_{\mathrm{axr}}=1.2$, $\theta_{\mathrm{rpd}}=0.8$ | yes | $e_t$ | $0.551851+0.307926i$ | $0.636163-0.308495i$ in $\vec e_x$, $0.878459+0.191155i$ in $\vec e_y$, $-0.117212-0.241710i$ in $\vec e_z$ |
+| anti-Hermitian axes, $\theta_{\mathrm{axr}}=1.2$, $\theta_{\mathrm{rpd}}=0.8$ | yes | $e_t$ | $0.551851+0.307926i$ | $0.636163-0.308495i$ in $\vec e_x$, $0.878459+0.191155i$ in $\vec e_y$, $-0.117212-0.241710i$ in $\vec e_z$ |
 
 ### The Generic Element
 
@@ -532,7 +532,7 @@ $$
 \mathcal H+\mathcal R = \bigl(0.483363900-0.169107833i\bigr)\vec e_x+\bigl(0.966727800-0.338215666i\bigr)\vec e_y ,
 $$
 
-the complex number $\frac{\theta_{\mathrm{axr}}}{2}-i\frac{\theta_{\mathrm{rpd}}}{2} = 1.080834538-0.378136610i$ times the rotor axis, and it is exactly the Hamilton exponent: $\Theta\vec U = \mathcal H+\mathcal R$ to machine precision, with $\Theta = 1.080834538-0.378136610i$ and $\vec U = \vec u_{\mathrm r}$. The alignment here is an accident of the example, whose two axes were chosen collinear; the last example has the skew case.
+the complex number $\frac{\theta_{\mathrm{axr}}}{2}-i\frac{\theta_{\mathrm{rpd}}}{2} = 1.080834538-0.378136610i$ times the rotor axis, and it is exactly the Hamilton exponent: $\Theta\vec U = \mathcal H+\mathcal R$ to machine precision, with $\Theta = 1.080834538-0.378136610i$ and $\vec U = \vec u_{\mathrm r}$. The alignment here is an accident of the example, whose two axes were chosen collinear; the last example has the anti-Hermitian case.
 
 ### The Element with a Null Vector Part
 
@@ -576,7 +576,7 @@ $$
 
 with $\theta_{\mathrm{rpd}} = 1.386294361$, and their bracket is $[\mathcal H,\mathcal R] = i\frac{\pi\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\vec u_{\mathrm r} = 2.177586090\,i\,\vec e_z$, of length $2.177586090$. The two axes are orthogonal, so the root is not aligned and the exponents do not add. The Hamilton data of the root show the gap: its complex angle is the real quarter turn $\Theta = \frac{\pi}{2}$, and $\Theta\vec U$ differs from $\mathcal H+\mathcal R$ by $1.178097$ in the largest coefficient, against $1.088793$ for half the bracket, the leading term of the Baker–Campbell–Hausdorff series.
 
-### An Element with Skew Axes
+### An Element with Anti-Hermitian Axes
 
 Take the rotor axis $\vec u_{\mathrm r} = (\vec e_x+\vec e_y)/\sqrt2$, the boost axis $\vec u_{\mathrm b} = \vec e_y$, the rotation angle $\theta_{\mathrm{axr}} = 1.2$ and the rapidity $\theta_{\mathrm{rpd}} = 0.8$. The two directions meet at $45$ degrees, so the word is neither aligned nor orthogonal, and the product of the two factors is
 

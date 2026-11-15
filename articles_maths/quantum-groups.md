@@ -201,7 +201,7 @@ whose coefficients $\mu_n : A\times A \to A$ are $k$-bilinear and which is assoc
 
 The general theory of formal deformations, of the **star product** $f*g$ on the algebra of functions with $\mu_n$ built from a Poisson bracket, and of the Gerstenhaber bracket that controls the higher obstructions, is the subject, which follows this article. The Hochschild cohomology that classifies the deformations is the cohomology of the enveloping algebra $A^{\mathrm{e}}$ of *Separable Algebras*, and it is the subject of the homological articles of a later category of this Part.
 
-**Example (the Moyal-type deformation of the polynomial algebra).** Let $A = k[x_1,\dots,x_n]$ and let $\{\cdot,\cdot\}$ be the constant bracket $\{x_i,x_j\} = \omega_{ij}$ with $\omega$ a antisymmetric constant matrix. The **Moyal star product**
+**Example (the Moyal-type deformation of the polynomial algebra).** Let $A = k[x_1,\dots,x_n]$ and let $\{\cdot,\cdot\}$ be the constant bracket $\{x_i,x_j\} = \omega_{ij}$ with $\omega$ an antisymmetric constant matrix. The **Moyal star product**
 
 $$
 f * g = \sum_{r\geq0}\frac{1}{r!}\Bigl(\frac{h}{2}\Bigr)^r \sum_{i_1,\dots,i_r,j_1,\dots,j_r}\omega_{i_1j_1}\cdots\omega_{i_rj_r}\ \partial/\partial x_{i_1}\cdots\partial/\partial x_{i_r}\,f\ \partial/\partial x_{j_1}\cdots\partial/\partial x_{j_r}\,g

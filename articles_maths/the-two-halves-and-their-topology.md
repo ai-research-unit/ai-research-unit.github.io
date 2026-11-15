@@ -38,7 +38,7 @@ $$
 \{H\in\operatorname{Herm}_n:\|H\|_{\mathrm{HS}}=1\}
 $$
 
-is the unit sphere of a real Euclidean space of dimension $n^{2}$, hence the sphere $S^{n^{2}-1}$, and the same holds in the skew half. The computation confirms the dimension at $n=2,3$ by counting the coordinates of a normalised Hermitian matrix, and it is the only non-contractible subset of a half which is not cut by a condition on the spectrum.
+is the unit sphere of a real Euclidean space of dimension $n^{2}$, hence the sphere $S^{n^{2}-1}$, and the same holds in the anti-Hermitian half. The computation confirms the dimension at $n=2,3$ by counting the coordinates of a normalised Hermitian matrix, and it is the only non-contractible subset of a half which is not cut by a condition on the spectrum.
 
 ## The Splitting Map
 
@@ -72,7 +72,7 @@ $$
 \|A^{*}\|_{\mathrm{HS}}^{2}=\operatorname{tr}(AA^{*})=\operatorname{tr}(A^{*}A)=\|A\|_{\mathrm{HS}}^{2},
 $$
 
-so it is an isometry of order two whose fixed set is the Hermitian half and whose anti-fixed set is the skew half. The computation confirms the isometry at $n=3$, and it is the metric reason the two halves are the two eigenspaces of a symmetry.
+so it is an isometry of order two whose fixed set is the Hermitian half and whose anti-fixed set is the anti-Hermitian half. The computation confirms the isometry at $n=3$, and it is the metric reason the two halves are the two eigenspaces of a symmetry.
 
 ## The Strata of the Hermitian Half
 
@@ -150,7 +150,7 @@ $$
 
 which was confirmed at $n=2,3$ by the determinant having every phase. So the unitary half carries the topology which the two linear halves do not, and it is the only one of the three sets with a nontrivial homotopy type.
 
-**The unitary group is a real algebraic set of dimension $n^{2}$.** It is cut by the $n^{2}$ real equations $U^{*}U=\mathrm{I}$ and its dimension is $n^{2}$, the dimension of the skew half. The computation confirms the dimension at $n=2,3,4$ by the count of the anti-Hermitian coordinates, and it is the reason the group and the skew half have the same dimension while only one of them is compact.
+**The unitary group is a real algebraic set of dimension $n^{2}$.** It is cut by the $n^{2}$ real equations $U^{*}U=\mathrm{I}$ and its dimension is $n^{2}$, the dimension of the anti-Hermitian half. The computation confirms the dimension at $n=2,3,4$ by the count of the anti-Hermitian coordinates, and it is the reason the group and the anti-Hermitian half have the same dimension while only one of them is compact.
 
 ## The Case $n=2$
 
@@ -187,7 +187,7 @@ Each of the two halves is a real Euclidean space of dimension $n^{2}$, closed in
 | Symbol | Meaning |
 |---|---|
 | $\operatorname{Herm}_n\cong\mathbb{R}^{n^{2}}$ | the Hermitian half as a Euclidean space |
-| $\mathfrak{u}(n)\cong\mathbb{R}^{n^{2}}$ | the skew half as a Euclidean space |
+| $\mathfrak{u}(n)\cong\mathbb{R}^{n^{2}}$ | the anti-Hermitian half as a Euclidean space |
 | $\Phi(A)=(H,K)$ | the splitting map |
 | $\|A\|_{\mathrm{HS}}^{2}=\|H\|_{\mathrm{HS}}^{2}+\|K\|_{\mathrm{HS}}^{2}$ | the Pythagorean identity |
 | $\operatorname{Herm}_n^{(p,q)}$ | the region of signature $(p,q)$ |

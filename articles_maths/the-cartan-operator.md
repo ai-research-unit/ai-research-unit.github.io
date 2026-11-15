@@ -3,7 +3,7 @@
 
 ## Introduction
 
-A **Cartan subalgebra** of a semisimple Lie algebra $\mathrm{G}$ is a maximal abelian subalgebra consisting of elements that act diagonalisably, and the **root space decomposition** is the simultaneous eigenspace decomposition of the operators $\operatorname{ad}_h=[h,-]$ for $h$ in it. This article studies those operators. For $h\in\mathrm{H}$ the **Cartan operator** is $\operatorname{ad}_h$, and the article treats the family $\{\operatorname{ad}_h\}_{h\in\mathrm{H}}$ as a commuting family of diagonalisable operators, the root decomposition as its joint eigenspace decomposition, the roots as the eigenvalues, and the Killing form as the invariant pairing under which the whole adjoint representation consists of skew adjoint operators. The Cartan subalgebra, the roots, the root system and the restriction of the Killing form to $\mathrm{H}$ are defined in *Root Systems and Classification*, and the Killing form, its invariance and its nondegeneracy are defined in *Structure of Lie Algebras*; nothing owned by those entries is re-derived.
+A **Cartan subalgebra** of a semisimple Lie algebra $\mathrm{G}$ is a maximal abelian subalgebra consisting of elements that act diagonalisably, and the **root space decomposition** is the simultaneous eigenspace decomposition of the operators $\operatorname{ad}_h=[h,-]$ for $h$ in it. This article studies those operators. For $h\in\mathrm{H}$ the **Cartan operator** is $\operatorname{ad}_h$, and the article treats the family $\{\operatorname{ad}_h\}_{h\in\mathrm{H}}$ as a commuting family of diagonalisable operators, the root decomposition as its joint eigenspace decomposition, the roots as the eigenvalues, and the Killing form as the invariant pairing under which the whole adjoint representation consists of anti-self-adjoint operators. The Cartan subalgebra, the roots, the root system and the restriction of the Killing form to $\mathrm{H}$ are defined in *Root Systems and Classification*, and the Killing form, its invariance and its nondegeneracy are defined in *Structure of Lie Algebras*; nothing owned by those entries is re-derived.
 
 The article belongs to the operator theory of the category: the object is the operator $\operatorname{ad}_h$ and the consequences of its diagonalisability, not the classification of the root systems, which is *Root Systems and Classification*, nor the construction of the highest weight modules, which is *Representations of Lie Algebras*. The base is an algebraically closed field $K$ of characteristic zero and $\mathrm{G}$ is finite-dimensional and semisimple over $K$; the Cartan subalgebra is written $\mathrm{H}$, the root system $\Phi\subseteq\mathrm{H}^*$, the root space of $\alpha$ is $\mathrm{G}_\alpha$, and the Killing form is $\kappa$.
 
@@ -69,9 +69,9 @@ a product of linear factors with multiplicities one, showing the diagonalisabili
 
 ## The Killing Form as an Invariant Pairing
 
-### Invariance and Skew Adjunction
+### Invariance and Anti-Hermitian Adjunction
 
-**Proposition.** The Killing form is invariant, $\kappa([x,y],z)=\kappa(x,[y,z])$, and with respect to it every adjoint operator is skew adjoint:
+**Proposition.** The Killing form is invariant, $\kappa([x,y],z)=\kappa(x,[y,z])$, and with respect to it every adjoint operator is anti-self-adjoint:
 
 $$
 \kappa(\operatorname{ad}_xy,z)=-\kappa(y,\operatorname{ad}_xz),\qquad\text{that is}\qquad \operatorname{ad}_x^{*}=-\operatorname{ad}_x .
@@ -79,9 +79,9 @@ $$
 
 **Proof.** The invariance is from *Structure of Lie Algebras*; putting $y=x$ in the middle slot gives $\kappa([x,y],z)=\kappa(x,[y,z])$, that is $\kappa(\operatorname{ad}_xy,z)=-\kappa(y,\operatorname{ad}_xz)$, which is the defining relation of the adjoint with respect to the nondegenerate pairing $\kappa$.
 
-**Corollary.** The adjoint representation is a homomorphism $\operatorname{ad}:\mathrm{G}\to\operatorname{End}_K(\mathrm{G})$ whose image lies in the Lie subalgebra of $\kappa$-skew operators; in particular each Cartan operator is $\kappa$-skew, and its nonzero eigenvalues come in opposite pairs.
+**Corollary.** The adjoint representation is a homomorphism $\operatorname{ad}:\mathrm{G}\to\operatorname{End}_K(\mathrm{G})$ whose image lies in the Lie subalgebra of $\kappa$-anti-self-adjoint operators; in particular each Cartan operator is $\kappa$-anti-self-adjoint, and its nonzero eigenvalues come in opposite pairs.
 
-**Proof.** The image of a homomorphism is a subalgebra, and the skew adjoint operators form a subalgebra because the adjoint operation reverses the commutator. For a skew operator the characteristic polynomial is even up to the kernel, so the nonzero eigenvalues occur in pairs $t,-t$.
+**Proof.** The image of a homomorphism is a subalgebra, and the anti-self-adjoint operators form a subalgebra because the adjoint operation reverses the commutator. For an anti-self-adjoint operator the characteristic polynomial is even up to the kernel, so the nonzero eigenvalues occur in pairs $t,-t$.
 
 ### The Restriction to the Cartan Subalgebra
 
@@ -109,7 +109,7 @@ $$
 \operatorname{ad}_h=\begin{pmatrix}2&0&0\\0&0&0\\0&0&-2\end{pmatrix}
 $$
 
-in the basis $(e,h,f)$, so its eigenvalues are $2,0,-2$ and its characteristic polynomial is $-t(t-2)(t+2)$; the nonzero eigenvalues are opposite, as the skew adjointness requires. The Cartan part of the Casimir operator acts on $\mathrm{G}_\alpha=Ke$ and $\mathrm{G}_{-\alpha}=Kf$ by $(\alpha,\alpha)=\tfrac12$ with the Killing normalisation $(\omega,\omega)=\tfrac18$ and $\alpha=2\omega$, and the full Casimir operator is the identity on the adjoint module.
+in the basis $(e,h,f)$, so its eigenvalues are $2,0,-2$ and its characteristic polynomial is $-t(t-2)(t+2)$; the nonzero eigenvalues are opposite, as the anti-self-adjointness requires. The Cartan part of the Casimir operator acts on $\mathrm{G}_\alpha=Ke$ and $\mathrm{G}_{-\alpha}=Kf$ by $(\alpha,\alpha)=\tfrac12$ with the Killing normalisation $(\omega,\omega)=\tfrac18$ and $\alpha=2\omega$, and the full Casimir operator is the identity on the adjoint module.
 
 ### The Root System $A_2$
 
@@ -126,7 +126,7 @@ records the pairings $2(\alpha_i,\alpha_j)/(\alpha_j,\alpha_j)$. The root decomp
 
 The **Cartan operators** are the adjoint operators $\operatorname{ad}_h$ for $h$ in a Cartan subalgebra $\mathrm{H}$; they commute pairwise and are diagonalisable, so they admit a joint eigenspace decomposition, and that decomposition is the root space decomposition $\mathrm{G}=\mathrm{H}\oplus\bigoplus_{\alpha\in\Phi}\mathrm{G}_\alpha$, with $\mathrm{G}_\alpha$ the joint eigenspace of the eigenvalue function $\alpha$. On $\mathrm{G}_\alpha$ the Cartan operator acts by the scalar $\alpha(h)$, so the roots are the eigenvalues read as functionals on $\mathrm{H}$, and the characteristic polynomial of $\operatorname{ad}_h$ is $t^{\dim\mathrm{H}}\prod_\alpha(t-\alpha(h))$. The bracket satisfies $[\mathrm{G}_\alpha,\mathrm{G}_\beta]\subseteq\mathrm{G}_{\alpha+\beta}$, so an operator $\operatorname{ad}_x$ with $x\in\mathrm{G}_\alpha$ raises the root by $\alpha$.
 
-The Killing form is invariant, and every adjoint operator is skew adjoint with respect to it, so the adjoint representation lands in the skew adjoint operators and the nonzero eigenvalues of each Cartan operator occur in opposite pairs. The restriction of the Killing form to $\mathrm{H}$ is nondegenerate and transports to the form $(\alpha,\beta)$ on $\mathrm{H}^*$, with the Cartan integers $2(\beta,\alpha)/(\alpha,\alpha)$ integral. The Cartan part $\sum_i\operatorname{ad}_{h_i}\operatorname{ad}_{\check h_i}$ of the Casimir operator acts on $\mathrm{G}_\alpha$ by $(\alpha,\alpha)$ and annihilates $\mathrm{H}$, and the full Casimir operator is the identity on the adjoint module. For $\mathrm{SL}(2,K)$ the Cartan operator has eigenvalues $2,0,-2$; for $A_2$ it has the six nonzero roots and the Cartan matrix $[[2,-1],[-1,2]]$.
+The Killing form is invariant, and every adjoint operator is anti-self-adjoint with respect to it, so the adjoint representation lands in the anti-self-adjoint operators and the nonzero eigenvalues of each Cartan operator occur in opposite pairs. The restriction of the Killing form to $\mathrm{H}$ is nondegenerate and transports to the form $(\alpha,\beta)$ on $\mathrm{H}^*$, with the Cartan integers $2(\beta,\alpha)/(\alpha,\alpha)$ integral. The Cartan part $\sum_i\operatorname{ad}_{h_i}\operatorname{ad}_{\check h_i}$ of the Casimir operator acts on $\mathrm{G}_\alpha$ by $(\alpha,\alpha)$ and annihilates $\mathrm{H}$, and the full Casimir operator is the identity on the adjoint module. For $\mathrm{SL}(2,K)$ the Cartan operator has eigenvalues $2,0,-2$; for $A_2$ it has the six nonzero roots and the Cartan matrix $[[2,-1],[-1,2]]$.
 
 ## Summary of Notation
 
@@ -141,7 +141,7 @@ The Killing form is invariant, and every adjoint operator is skew adjoint with r
 | $\kappa$ | the Killing form, invariant and nondegenerate |
 | $t_\alpha$ | the element of $\mathrm{H}$ with $\kappa(t_\alpha,h)=\alpha(h)$ |
 | $(\alpha,\beta)=\kappa(t_\alpha,t_\beta)$ | the transported form on $\mathrm{H}^*$ |
-| $\operatorname{ad}(\mathrm{G})\subseteq\mathfrak{so}(\mathrm{G},\kappa)$ | the adjoint operators are $\kappa$-skew |
+| $\operatorname{ad}(\mathrm{G})\subseteq\mathfrak{so}(\mathrm{G},\kappa)$ | the adjoint operators are $\kappa$-anti-self-adjoint |
 
 ## Further Reading
 
@@ -149,4 +149,4 @@ The Killing form is invariant, and every adjoint operator is skew adjoint with r
 - Nicolas Bourbaki, *Lie Groups and Lie Algebras*, Chapters 4–6 (Springer, 2002), for the simultaneous diagonalisation of the Cartan operators and the Cartan integers.
 - Nathan Jacobson, *Lie Algebras* (Dover, 1979), for the adjoint operators, their eigen-decomposition and the invariant form.
 - Jean-Pierre Serre, *Complex Semisimple Lie Algebras* (Springer, 2001), for the root space decomposition and the integrality of the Cartan integers.
-- Sigurdur Helgason, *Differential Geometry, Lie Groups and Symmetric Spaces*, Graduate Studies in Mathematics 34 (American Mathematical Society, 2001), for the Cartan decomposition and the skew adjointness that reappears in the symmetric-space theory of Part II.
+- Sigurdur Helgason, *Differential Geometry, Lie Groups and Symmetric Spaces*, Graduate Studies in Mathematics 34 (American Mathematical Society, 2001), for the Cartan decomposition and the anti-self-adjointness that reappears in the symmetric-space theory of Part II.

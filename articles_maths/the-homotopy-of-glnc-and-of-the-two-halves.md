@@ -134,7 +134,7 @@ $$
 \pi_k\big(\operatorname{Herm}_n\big)=0\quad\text{for all}\ k\ge0.
 $$
 
-**The skew half is a real vector space.** The same argument applies, since a real multiple of a anti-Hermitian matrix is anti-Hermitian, so the skew half is contractible and all its homotopy groups vanish. The computation confirms the path at $n=3$ on random anti-Hermitian matrices, and it is the reason
+**The anti-Hermitian half is a real vector space.** The same argument applies, since a real multiple of an anti-Hermitian matrix is anti-Hermitian, so the anti-Hermitian half is contractible and all its homotopy groups vanish. The computation confirms the path at $n=3$ on random anti-Hermitian matrices, and it is the reason
 
 $$
 \mathfrak{u}(n)\ \text{carries no topology beyond that of a point.}

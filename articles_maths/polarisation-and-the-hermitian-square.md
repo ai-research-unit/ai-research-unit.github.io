@@ -54,11 +54,11 @@ $$
 \boxed{\;h_{\mathrm{tr}}(x,y) = \mathfrak{Q}(x+y) - \mathfrak{Q}(x) - \mathfrak{Q}(y)\;},
 $$
 
-so two forms with the same diagonal have the same trace form and differ by a anti-Hermitian form.
+so two forms with the same diagonal have the same trace form and differ by an anti-Hermitian form.
 
 **Corollary (the classical case).** When $\varsigma = \mathrm{id}$ and $2$ is invertible, the polarisation $h(x,y) = \tfrac{1}{2}\bigl(\mathfrak{Q}(x+y) - \mathfrak{Q}(x) - \mathfrak{Q}(y)\bigr)$ is a bijection between the symmetric bilinear forms and the quadratic functions $q$ with $\mathfrak{Q}(\lambda x) = \lambda^{2}q(x)$. This is the correspondence of *Quadratic Forms and Polarisation*, and the sesquilinear layer is its $\varsigma$-twisted version.
 
-**Remark (what the diagonal does not see).** The anti-Hermitian part is invisible to the diagonal: $h$ and $h - h_{\mathrm{sk}}$ have the same diagonal, and $h_{\mathrm{sk}}(x,x) = 0$ for every $x$. Over $\mathbb{C}$ with $\varsigma$ the conjugation, the trace form $\tfrac{1}{2}h_{\mathrm{tr}} = \operatorname{Re} h$ is a real symmetric form and the skew part $\tfrac{1}{2}h_{\mathrm{sk}} = \mathrm{i}\,\operatorname{Im} h$ is real alternating; a Hermitian form is exactly a real symmetric form together with a real alternating form tied by the complex structure, and this is the decomposition $h = g + \mathrm{i}\,\omega$ of the geometry of a Kähler manifold.
+**Remark (what the diagonal does not see).** The anti-Hermitian part is invisible to the diagonal: $h$ and $h - h_{\mathrm{sk}}$ have the same diagonal, and $h_{\mathrm{sk}}(x,x) = 0$ for every $x$. Over $\mathbb{C}$ with $\varsigma$ the conjugation, the trace form $\tfrac{1}{2}h_{\mathrm{tr}} = \operatorname{Re} h$ is a real symmetric form and the antisymmetric part $\tfrac{1}{2}h_{\mathrm{sk}} = \mathrm{i}\,\operatorname{Im} h$ is real alternating; a Hermitian form is exactly a real symmetric form together with a real alternating form tied by the complex structure, and this is the decomposition $h = g + \mathrm{i}\,\omega$ of the geometry of a Kähler manifold.
 
 ## The Hermitian Square
 
@@ -90,7 +90,7 @@ The quadratic datum is therefore strictly finer than the bilinear one when $2$ i
 
 ### The Matrices
 
-On $M_n(\mathbb{C})$ with $h(X,Y) = \tau(XY^{*})$ the diagonal is $\mathfrak{Q}(X) = \tau(XX^{*}) = \sum_{ij}|X_{ij}|^{2}$, the square of the Frobenius norm, and the polarisation recovers $\tau(XY^{*} + YX^{*}) = 2\operatorname{Re}\tau(XY^{*})$. The form is Hermitian, its trace form is the real symmetric form of the real and imaginary parts of the trace pairing, and its skew part is the alternating form $\mathrm{i}\operatorname{Im}\tau(XY^{*})$. The smallest instance shows the square and its trace at once:
+On $M_n(\mathbb{C})$ with $h(X,Y) = \tau(XY^{*})$ the diagonal is $\mathfrak{Q}(X) = \tau(XX^{*}) = \sum_{ij}|X_{ij}|^{2}$, the square of the Frobenius norm, and the polarisation recovers $\tau(XY^{*} + YX^{*}) = 2\operatorname{Re}\tau(XY^{*})$. The form is Hermitian, its trace form is the real symmetric form of the real and imaginary parts of the trace pairing, and its antisymmetric part is the alternating form $\mathrm{i}\operatorname{Im}\tau(XY^{*})$. The smallest instance shows the square and its trace at once:
 
 $$
 X=\begin{pmatrix}1&i\\0&2\end{pmatrix},\qquad XX^{*}=\begin{pmatrix}2&2i\\-2i&4\end{pmatrix},\qquad \mathfrak{Q}(X)=\tau(XX^{*})=6=\lvert1\rvert^{2}+\lvert i\rvert^{2}+\lvert0\rvert^{2}+\lvert2\rvert^{2},
@@ -110,7 +110,7 @@ On $\mathbb{B}$ with the dagger, $\mathfrak{Q}(\tilde Q) = \operatorname{Sc}(\ti
 
 - The **diagonal** $\mathfrak{Q}(x) = h(x,x)$ is valued in the fixed ring $R^{\varsigma}$ and is the only part of the form visible to one variable.
 - The **polarisation identity** reads $\mathfrak{Q}(x+y) - \mathfrak{Q}(x) - \mathfrak{Q}(y) = h_{\mathrm{tr}}(x,y)$, the trace form.
-- The trace form is symmetric and $R^{\varsigma}$-bilinear, the anti-Hermitian part $h_{\mathrm{sk}}$ is alternating, and $h = \tfrac{1}{2}h_{\mathrm{tr}} + \tfrac{1}{2}h_{\mathrm{sk}}$ when $2$ is invertible: the diagonal recovers the trace form and never the skew part.
+- The trace form is symmetric and $R^{\varsigma}$-bilinear, the anti-Hermitian part $h_{\mathrm{sk}}$ is alternating, and $h = \tfrac{1}{2}h_{\mathrm{tr}} + \tfrac{1}{2}h_{\mathrm{sk}}$ when $2$ is invertible: the diagonal recovers the trace form and never the antisymmetric part.
 - Over $\mathbb{C}$ the decomposition is $\operatorname{Re}h + \mathrm{i}\operatorname{Im}h$, a real symmetric form and a real alternating form.
 - The diagonal is the functional image of the **Hermitian square**, $\mathfrak{Q}(x) = \varphi(x^{*}x)$, and the quadratic form $\mathfrak{Q}(x) = \varphi(x^{*}x)$ has the trace form for its polarisation; for a cyclic functional the square $xx^{*}$ gives the same diagonal.
 - In characteristic two with the trivial involution the polarisation degenerates, the diagonal determines nothing, and a quadratic refinement is extra structure.

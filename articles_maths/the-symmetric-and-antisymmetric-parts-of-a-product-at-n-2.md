@@ -4,20 +4,20 @@
 
 **Every product of two matrices splits into a symmetric and an antisymmetric part, the two parts have dimensions $3$ and $1$, and the product of a symmetric with an antisymmetric matrix exchanges the roles of the anticommutator and the commutator.**
 
-The article proves the split $XY=\operatorname{sym}(XY)+\operatorname{skew}(XY)$, shows that the trace reads only the symmetric part, treats the three kinds of product by the halves of the two factors, proves that $\operatorname{sym}(SK)=\tfrac12[S,K]$ and $\operatorname{skew}(SK)=\tfrac12\{S,K\}$, and records the Clifford identity $\{u,v\}=2\operatorname{tr}(uv)I$ for traceless symmetric matrices. It assumes *The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$* and *The Two Halves as Orthogonal Complements at $n=2$*.
+The article proves the split $XY=\operatorname{sym}(XY)+\operatorname{antisymmetric}(XY)$, shows that the trace reads only the symmetric part, treats the three kinds of product by the halves of the two factors, proves that $\operatorname{sym}(SK)=\tfrac12[S,K]$ and $\operatorname{antisymmetric}(SK)=\tfrac12\{S,K\}$, and records the Clifford identity $\{u,v\}=2\operatorname{tr}(uv)I$ for traceless symmetric matrices. It assumes *The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$* and *The Two Halves as Orthogonal Complements at $n=2$*.
 
 It defers the collection of the four tables to *The Four Multiplication Tables: $SS$, $SK$, $KS$, $KK$ at $n=2$*, the algebra axioms of the symmetric half to *The Jordan Algebra $\operatorname{Sym}_2$*, and the bracket of the antisymmetric half to *The Lie Algebra $\operatorname{Skew}_2$: One Dimension, Hence Abelian*.
 
 ## The Two Parts of a Product
 
-**Definition.** For a square matrix $P$ the **symmetric part** is $\operatorname{sym}P=\tfrac12(P+P^{\mathsf T})$ and the **antisymmetric part** is $\operatorname{skew}P=\tfrac12(P-P^{\mathsf T})$.
+**Definition.** For a square matrix $P$ the **symmetric part** is $\operatorname{sym}P=\tfrac12(P+P^{\mathsf T})$ and the **antisymmetric part** is $\operatorname{antisymmetric}P=\tfrac12(P-P^{\mathsf T})$.
 
 **Theorem.** Every matrix splits in one way as a symmetric plus an antisymmetric matrix, so every product splits too:
 
 $$
-XY=\operatorname{sym}(XY)+\operatorname{skew}(XY),\qquad
+XY=\operatorname{sym}(XY)+\operatorname{antisym}(XY),\qquad
 \operatorname{sym}(XY)=\tfrac12\bigl(XY+(XY)^{\mathsf T}\bigr),\qquad
-\operatorname{skew}(XY)=\tfrac12\bigl(XY-(XY)^{\mathsf T}\bigr).
+\operatorname{antisym}(XY)=\tfrac12\bigl(XY-(XY)^{\mathsf T}\bigr).
 $$
 
 **Proof.** $P=\tfrac12(P+P^{\mathsf T})+\tfrac12(P-P^{\mathsf T})$ and the two terms are symmetric and antisymmetric. The sum is direct because a matrix that is both symmetric and antisymmetric satisfies $P=-P$.
@@ -30,7 +30,7 @@ $$
 
 ## The Trace Reads Only the Symmetric Part
 
-**Proposition.** $\operatorname{tr}(P)=\operatorname{tr}(\operatorname{sym}P)$ and $\operatorname{tr}(\operatorname{skew}P)=0$.
+**Proposition.** $\operatorname{tr}(P)=\operatorname{tr}(\operatorname{sym}P)$ and $\operatorname{tr}(\operatorname{antisym}P)=0$.
 
 **Proof.** The trace of a matrix equals the trace of its transpose, so $\operatorname{tr}(P^{\mathsf T})=\operatorname{tr}(P)$ and the antisymmetric part has trace $\tfrac12(\operatorname{tr}P-\operatorname{tr}P)=0$.
 
@@ -47,10 +47,10 @@ $$
 **Theorem.** For symmetric $S,T$,
 
 $$
-\operatorname{sym}(ST)=\tfrac12\{S,T\},\qquad \operatorname{skew}(ST)=\tfrac12[S,T].
+\operatorname{sym}(ST)=\tfrac12\{S,T\},\qquad \operatorname{antisym}(ST)=\tfrac12[S,T].
 $$
 
-**Proof.** $(ST)^{\mathsf T}=T^{\mathsf T}S^{\mathsf T}=TS$, so $\operatorname{sym}(ST)=\tfrac12(ST+TS)$ and $\operatorname{skew}(ST)=\tfrac12(ST-TS)$.
+**Proof.** $(ST)^{\mathsf T}=T^{\mathsf T}S^{\mathsf T}=TS$, so $\operatorname{sym}(ST)=\tfrac12(ST+TS)$ and $\operatorname{antisym}(ST)=\tfrac12(ST-TS)$.
 
 **Corollary.** The symmetric part of a product of two symmetric matrices is symmetric and the antisymmetric part is antisymmetric, and both are nonzero in general.
 
@@ -70,7 +70,7 @@ $$
 
 $$
 \operatorname{sym}(SK)=\tfrac12(SK-KS)=\tfrac12[S,K],\qquad
-\operatorname{skew}(SK)=\tfrac12(SK+KS)=\tfrac12\{S,K\}.
+\operatorname{antisym}(SK)=\tfrac12(SK+KS)=\tfrac12\{S,K\}.
 $$
 
 **Proof.** $(SK)^{\mathsf T}=K^{\mathsf T}S^{\mathsf T}=(-K)S=-KS$, so the symmetric part is $\tfrac12(SK-KS)$ and the antisymmetric part is $\tfrac12(SK+KS)$.
@@ -87,7 +87,7 @@ $$
 
 **Proof.** By the theorem, the antisymmetric part vanishes exactly when $\{S,K\}=0$.
 
-**The reversed product.** For $KS$ the same computation gives $\operatorname{sym}(KS)=-\tfrac12[S,K]$ and $\operatorname{skew}(KS)=\tfrac12\{S,K\}$, so the two mixed products have opposite symmetric parts and equal antisymmetric parts.
+**The reversed product.** For $KS$ the same computation gives $\operatorname{sym}(KS)=-\tfrac12[S,K]$ and $\operatorname{antisymmetric}(KS)=\tfrac12\{S,K\}$, so the two mixed products have opposite symmetric parts and equal antisymmetric parts.
 
 **Proof.** Apply the transpose to the theorem, or recompute with $(KS)^{\mathsf T}=S(-K)=-SK$.
 
@@ -131,14 +131,14 @@ $$
 
 Every product splits into a symmetric and an antisymmetric part, of dimensions $3$ and $1$, and the trace reads only the symmetric part, so commutators are traceless and $\operatorname{tr}\{X,Y\}=2\operatorname{tr}(XY)$.
 
-For two symmetric factors the symmetric part of the product is the anticommutator and the antisymmetric part is the commutator; for a mixed product the roles are exchanged, with $\operatorname{sym}(SK)=\tfrac12[S,K]$ and $\operatorname{skew}(SK)=\tfrac12\{S,K\}$; for two antisymmetric factors the product is a scalar matrix because $J^{2}=-I$. For traceless symmetric matrices the anticommutator is the scalar $2\operatorname{tr}(uv)I$, and the commutator is a cross product in the antisymmetric direction.
+For two symmetric factors the symmetric part of the product is the anticommutator and the antisymmetric part is the commutator; for a mixed product the roles are exchanged, with $\operatorname{sym}(SK)=\tfrac12[S,K]$ and $\operatorname{antisymmetric}(SK)=\tfrac12\{S,K\}$; for two antisymmetric factors the product is a scalar matrix because $J^{2}=-I$. For traceless symmetric matrices the anticommutator is the scalar $2\operatorname{tr}(uv)I$, and the commutator is a cross product in the antisymmetric direction.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\operatorname{sym}P$ | $\tfrac12(P+P^{\mathsf T})$ |
-| $\operatorname{skew}P$ | $\tfrac12(P-P^{\mathsf T})$ |
+| $\operatorname{antisymmetric}P$ | $\tfrac12(P-P^{\mathsf T})$ |
 | $\{X,Y\}$ | the anticommutator $XY+YX$ |
 | $[X,Y]$ | the commutator $XY-YX$ |
 | $\sigma_{1},\sigma_{3}$ | the two real Pauli matrices, symmetric |

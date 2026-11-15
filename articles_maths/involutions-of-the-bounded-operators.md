@@ -78,7 +78,7 @@ so the unitary group of the form is the group of bounded operators preserving $B
 
 ## Examples
 
-**Example (the self-adjoint and skew parts of an involution).** For each involution $T \mapsto T^{\sharp}$ of $B(H)$ the algebra splits over $\mathbb{R}$ into the $\sharp$-self-adjoint operators $T = T^{\sharp}$ and the $\sharp$-skew operators $T = -T^{\sharp}$, with $T = \frac12(T+T^{\sharp}) + \frac12(T-T^{\sharp})$; for the canonical involution these are the self-adjoint and skew-adjoint operators of *The Adjoint of a Bounded Operator*, and for the form-adjoint they are the operators self-adjoint or skew with respect to $B$.
+**Example (the self-adjoint and anti-Hermitian parts of an involution).** For each involution $T \mapsto T^{\sharp}$ of $B(H)$ the algebra splits over $\mathbb{R}$ into the $\sharp$-self-adjoint operators $T = T^{\sharp}$ and the $\sharp$-anti-self-adjoint operators $T = -T^{\sharp}$, with $T = \frac12(T+T^{\sharp}) + \frac12(T-T^{\sharp})$; for the canonical involution these are the self-adjoint and anti-self-adjoint operators of *The Adjoint of a Bounded Operator*, and for the form-adjoint they are the operators self-adjoint or anti-self-adjoint with respect to $B$.
 
 **Example (the Minkowski form).** On $\mathbb{C}^{n}$ with the form $B(x,y) = \sum_{i=1}^{n}x_{i}\overline{y_{i}} - \sum_{i=n+1}^{n}x_{i}\overline{y_{i}}$ of signature $(n,m)$, the induced operator is $\Phi = \mathrm{diag}(1,\dots,1,-1,\dots,-1)$, the form-adjoint is $T^{\dagger} = \Phi T^{*}\Phi$, and the unitary group is the indefinite unitary group $\mathrm{U}(n,m)$; its self-adjoint part contains the operators that are $\Phi$-self-adjoint, and the indefinite geometry is Part III.
 

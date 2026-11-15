@@ -26,7 +26,7 @@ $$
 A^{[*]}=\begin{pmatrix}a^*&-c^*\\-b^*&d^*\end{pmatrix},
 $$
 
-so self-adjointness in the Krein space is the pair of conditions $a=a^*$, $d=d^*$, $c=-b^*$; the off-diagonal pair is skew rather than symmetric, and this skewness is the entire difference from the Hilbert-space case.
+so self-adjointness in the Krein space is the pair of conditions $a=a^*$, $d=d^*$, $c=-b^*$; the off-diagonal pair is anti-Hermitian rather than symmetric, and this skewness is the entire difference from the Hilbert-space case.
 
 ## The General Spectral Theorem in a Pontryagin Space
 
@@ -101,7 +101,7 @@ A Krein space is a Hilbert space with a fundamental symmetry $J=J^*=J^{-1}$ and 
 | $\Pi_\kappa$ | Pontryagin space with $\kappa=\dim K_-<\infty$ |
 | $A^{[*]}=JA^*J$ | the indefinite adjoint |
 | $A^{[*]}=A$ | self-adjoint in the Krein space |
-| $c=-b^*$ | the skew off-diagonal condition |
+| $c=-b^*$ | the anti-Hermitian off-diagonal condition |
 | $E(\Delta)$ | spectral function, $E(\Delta_1\cap\Delta_2)=E(\Delta_1)E(\Delta_2)$ |
 | $A=\int\lambda\,dE(\lambda)$ | general spectral theorem, up to a finite correction |
 | at most $\kappa$ non-real eigenvalues | Pontryagin's theorem |

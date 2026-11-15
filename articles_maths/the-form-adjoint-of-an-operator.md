@@ -8,7 +8,7 @@ $$
 h(Tx, y) = h(x, T^{*}y) \qquad \text{for all } x, y \in A .
 $$
 
-This article constructs it for the form of *Sesqualgebras with a Form* and proves that its existence and its uniqueness are exactly the non-degeneracy of the form. The adjoint is the single instrument from which the operator theory of the category is built: the isometries are the solutions of $T^{*}T = 1$ (*Isometries and Unitary Operators of a Form*), the self-adjoint and skew operators are the eigenspaces of the involution $T \mapsto T^{*}$ (*Self-Adjoint and Skew Operators of a Form*), the multiplications of the algebra have their adjoints given by the involution (*The Form-Adjoint of the Multiplications*), and the unitary group is the stabiliser of the form (*Congruence and the Stabiliser of a Form*).
+This article constructs it for the form of *Sesqualgebras with a Form* and proves that its existence and its uniqueness are exactly the non-degeneracy of the form. The adjoint is the single instrument from which the operator theory of the category is built: the isometries are the solutions of $T^{*}T = 1$ (*Isometries and Unitary Operators of a Form*), the self-adjoint and anti-self-adjoint operators are the eigenspaces of the involution $T \mapsto T^{*}$ (*Self-Adjoint and Anti-Self-Adjoint Operators of a Form*), the multiplications of the algebra have their adjoints given by the involution (*The Form-Adjoint of the Multiplications*), and the unitary group is the stabiliser of the form (*Congruence and the Stabiliser of a Form*).
 
 Three facts organise the article. The adjoint exists and is unique as soon as the form is **nonsingular**, that is, as soon as the Riesz map $y \mapsto h(\cdot, y)$ is an isomorphism; the assignment $T \mapsto T^{*}$ is then a $\varsigma$-semilinear anti-automorphism of order two of the algebra of operators, not an $R$-linear one, because the form carries the twist in its second slot. A **semilinear** operator admits no linear adjoint, and its adjoint is taken by the twisted rule $h(Sx,y) = \varsigma(h(x,S^{*}y))$, which makes the two adjoints of $S$ — against $h$ and against the transposed form — coincide, because $h$ is Hermitian. And the formula of the adjoint is read from the **Gram matrix** of the form in a basis; the two conventions of the slots give the two formulas $T^{*} = T^{\dagger}$ and $T^{*} = G^{-1}T^{\dagger}G$, and the article states both, because the corpus uses both.
 
@@ -36,9 +36,9 @@ $$
 
 **Corollary.** The adjoint operation makes the algebra of operators an algebra with a $\varsigma$-semilinear involution in the sense of *Involutive Algebras*; the topological counterpart of the same statement, with the adjoint of a bounded operator, is *Involutions of the Operator Algebra*.
 
-## Self-Adjoint, Skew and Normal Operators
+## Self-Adjoint, Anti-Hermitian and Normal Operators
 
-**Definition.** An operator is **self-adjoint** when $T^{*} = T$, **skew-adjoint** when $T^{*} = -T$, **normal** when $TT^{*} = T^{*}T$, and **unitary** when $T^{*}T = TT^{*} = 1$. The **quadratic form of $T$** is the function $Q_{T}(x) = h(Tx,x)$.
+**Definition.** An operator is **self-adjoint** when $T^{*} = T$, **anti-self-adjoint** when $T^{*} = -T$, **normal** when $TT^{*} = T^{*}T$, and **unitary** when $T^{*}T = TT^{*} = 1$. The **quadratic form of $T$** is the function $Q_{T}(x) = h(Tx,x)$.
 
 **Proposition.** The first two of the following are equivalent always; when the sesquilinear forms are determined by their diagonals — in particular over a field containing a scalar $\mathrm{i}$ with $\varsigma(\mathrm{i}) = -\mathrm{i}$ — they are also equivalent to the third:
 
@@ -48,9 +48,9 @@ $$
 
 **Proof.** The first two are the definition of the adjoint. If $T$ is self-adjoint then $Q_{T}(x) = h(Tx,x) = h(x,Tx) = \varsigma(h(Tx,x)) = \varsigma(Q_{T}(x))$. Conversely, let $B(x,y) = h\bigl((T - T^{*})x, y\bigr)$; the reality of $Q_{T}$ says that $h((T-T^{*})x,x) = 0$ for every $x$, that is $B(x,x) = 0$, and $B$ is anti-Hermitian, $B(y,x) = -\varsigma(B(x,y))$. A sesquilinear form with vanishing diagonal vanishes as soon as the diagonal determines the sesquilinear forms, so $B = 0$ and $T = T^{*}$.
 
-**Remark (the diagonal sees only the trace form).** Over a base in which no polarising scalar is available the third condition is strictly weaker. On $\mathbb{R}$ with the trivial involution, the operator $T(x_{1},x_{2}) = (x_{2},-x_{1})$ — the rotation by a right angle — is skew and has the identically vanishing quadratic form $Q_{T} = 0$, while it is not self-adjoint: the diagonal recovers only the trace form $h(Tx,y) + h(Ty,x)$ of $T$, never the anti-Hermitian part.
+**Remark (the diagonal sees only the trace form).** Over a base in which no polarising scalar is available the third condition is strictly weaker. On $\mathbb{R}$ with the trivial involution, the operator $T(x_{1},x_{2}) = (x_{2},-x_{1})$ — the rotation by a right angle — is anti-Hermitian and has the identically vanishing quadratic form $Q_{T} = 0$, while it is not self-adjoint: the diagonal recovers only the trace form $h(Tx,y) + h(Ty,x)$ of $T$, never the anti-Hermitian part.
 
-**Corollary.** Every operator decomposes as $T = \tfrac{1}{2}(T + T^{*}) + \tfrac{1}{2}(T - T^{*})$ into a self-adjoint and a skew-adjoint part when $2$ is invertible in the fixed ring, and the two parts are the eigenspaces of the involution $T \mapsto T^{*}$.
+**Corollary.** Every operator decomposes as $T = \tfrac{1}{2}(T + T^{*}) + \tfrac{1}{2}(T - T^{*})$ into a self-adjoint and an anti-self-adjoint part when $2$ is invertible in the fixed ring, and the two parts are the eigenspaces of the involution $T \mapsto T^{*}$.
 
 ## The Semilinear Operator and the Two Adjoints
 
@@ -88,7 +88,7 @@ the equation of the indefinite unitary group of $G$; for $G = 1$ it is $T^{*} = 
 
 - The **adjoint** of $T$ for $h$ is defined by $h(Tx,y) = h(x,T^{*}y)$; it exists and is unique exactly when $h$ is nonsingular.
 - The assignment $T \mapsto T^{*}$ is a $\varsigma$-semilinear anti-automorphism of order two of the operator algebra: $(ST)^{*} = T^{*}S^{*}$, $(\lambda T)^{*} = \varsigma(\lambda)T^{*}$, $(T^{*})^{*} = T$.
-- $T$ is self-adjoint exactly when $h(Tx,y) = h(x,Ty)$, equivalently when $Q_{T}(x) = h(Tx,x)$ is Hermitian; every operator splits into a self-adjoint and a skew-adjoint part when $2$ is invertible.
+- $T$ is self-adjoint exactly when $h(Tx,y) = h(x,Ty)$, equivalently when $Q_{T}(x) = h(Tx,x)$ is Hermitian; every operator splits into a self-adjoint and an anti-self-adjoint part when $2$ is invertible.
 - A semilinear operator has no linear adjoint; its twisted adjoint $h(Sx,y) = \varsigma(h(x,S^{*}y))$ exists and coincides with the adjoint against the transposed form, because $h$ is Hermitian.
 - In a basis with Gram matrix $G$ and the dagger in the first slot the adjoint is $T^{*} = G^{-1}T^{\dagger}G$ and the isometry equation is $T^{\dagger}GT = G$; with the dagger in the second slot it is $T^{*} = T^{\dagger}$ and $T^{\dagger}T = 1$.
 - The bounded and the completed adjoint are *The Adjoint under a Hermitian Form* in Part II; the bilinear original is *The Transpose as an Adjoint* and the involutive-algebra reading is *The Adjoint in an Involutive Algebra*.

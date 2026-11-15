@@ -82,7 +82,7 @@ as real vector spaces, of real dimension $72$.
 
 **Proof.** $H$ and $K$ are Hermitian by construction, and $A=H+\mathrm iK$. The Hermitian matrices are the fixed points of the conjugate-linear involution $*$; a conjugate-linear involution on a complex vector space of dimension $36$ has a real fixed space of dimension $36$. The imaginary multiples fill the other half.
 
-**Corollary (the Hermitian coordinates).** A Hermitian matrix has $6$ real diagonal entries and $15$ complex off-diagonal entries, hence $6+2\cdot15=36$ real dimensions. A anti-Hermitian matrix has $6$ purely imaginary diagonal entries and $15$ complex off-diagonal entries, also $36$ real dimensions.
+**Corollary (the Hermitian coordinates).** A Hermitian matrix has $6$ real diagonal entries and $15$ complex off-diagonal entries, hence $6+2\cdot15=36$ real dimensions. An anti-Hermitian matrix has $6$ purely imaginary diagonal entries and $15$ complex off-diagonal entries, also $36$ real dimensions.
 
 **Proof.** The diagonal of a Hermitian matrix is real; the off-diagonal entries are paired by $a_{ji}=\overline{a_{ij}}$. For anti-Hermitian, the diagonal is purely imaginary and $a_{ji}=-\overline{a_{ij}}$.
 
@@ -144,7 +144,7 @@ $$
 
 is surjective.
 
-**Proof.** The curve $t\mapsto e^{tX}$ is $*$-unitary for $X$ anti-Hermitian, and its derivative at zero is $X$; the tangent space is exactly $\mathfrak{u}(6)$. Every $*$-unitary matrix is diagonalizable with eigenvalues on the unit circle, so it is the exponential of a anti-Hermitian matrix (the diagonal logarithm).
+**Proof.** The curve $t\mapsto e^{tX}$ is $*$-unitary for $X$ anti-Hermitian, and its derivative at zero is $X$; the tangent space is exactly $\mathfrak{u}(6)$. Every $*$-unitary matrix is diagonalizable with eigenvalues on the unit circle, so it is the exponential of an anti-Hermitian matrix (the diagonal logarithm).
 
 ## The Positive Definite Trace Form
 

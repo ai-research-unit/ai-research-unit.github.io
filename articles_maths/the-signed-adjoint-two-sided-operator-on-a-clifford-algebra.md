@@ -23,7 +23,7 @@ $$
 \boxed{\;L_a^{*}=L_{\hat a} , \qquad R_b^{*}=R_{\hat b} , \qquad \alpha^{*}=\alpha\;} ,
 $$
 
-so that the ordinary two-sided operator satisfies $L_{a}R_{b}^{*}=L_{\hat a}R_{\hat b}$ and the left multiplication by a vector is skew-adjoint, $L_u^{*}=-L_u$.
+so that the ordinary two-sided operator satisfies $L_{a}R_{b}^{*}=L_{\hat a}R_{\hat b}$ and the left multiplication by a vector is anti-self-adjoint, $L_u^{*}=-L_u$.
 
 **Proof.** The computation is that of *The Signed Adjoint of the Left Multiplication on a Clifford Algebra*: $\langle ax,y\rangle=\operatorname{Sc}(\widehat{ax}y)=\operatorname{Sc}(\hat x\hat ay)=\langle x,\hat ay\rangle$, the right case being identical, and the self-adjointness of $\alpha$ following from $\widehat{\alpha x}=x^{r}$ and the invariance of the scalar part under $\alpha$. The vector value is $\vec u=\alpha(u^{r})=-u$.
 

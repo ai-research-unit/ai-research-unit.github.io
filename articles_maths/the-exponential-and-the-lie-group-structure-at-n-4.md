@@ -128,9 +128,9 @@ so the group law in exponential coordinates is the addition corrected by the com
 
 **Theorem.** The exponential maps $\operatorname{Herm}_4$ diffeomorphically onto $\operatorname{Herm}_4^{++}$ and maps $\mathfrak{u}(4)$ onto $U(4)$.
 
-**Proof.** A Hermitian $H$ has real eigenvalues, so $e^{H}$ is positive definite Hermitian; the inverse is the logarithm of the eigenvalues, which is smooth on the positive axis. A anti-Hermitian $K$ satisfies $(e^{K})^{\ast}=e^{K^{\ast}}=e^{-K}=(e^{K})^{-1}$, so the image is unitary; and every unitary is $e^{K}$ for some anti-Hermitian $K$ by the spectral theorem.
+**Proof.** A Hermitian $H$ has real eigenvalues, so $e^{H}$ is positive definite Hermitian; the inverse is the logarithm of the eigenvalues, which is smooth on the positive axis. An anti-Hermitian $K$ satisfies $(e^{K})^{\ast}=e^{K^{\ast}}=e^{-K}=(e^{K})^{-1}$, so the image is unitary; and every unitary is $e^{K}$ for some anti-Hermitian $K$ by the spectral theorem.
 
-**Corollary.** $\exp$ is a diffeomorphism from the Hermitian half onto the open cone, and a surjection with non-discrete fibres from the skew half onto the unitary group.
+**Corollary.** $\exp$ is a diffeomorphism from the Hermitian half onto the open cone, and a surjection with non-discrete fibres from the anti-Hermitian half onto the unitary group.
 
 **Proof.** The first is a diffeomorphism by the two smooth inverse constructions; the second is onto with the ambiguity of the angles by $2\pi$.
 
@@ -148,7 +148,7 @@ The exponential series converges everywhere, gives an invertible matrix with det
 
 The differential at the origin is the identity, so the exponential gives coordinates near the identity, and the Baker–Campbell–Hausdorff formula corrects the addition by the commutator. The one-parameter subgroups are the solutions of $\dot X=AX$.
 
-In the axis-free frame the eigenvalues are $Q_t\pm iB$ twice each, so the determinant of the exponential is $e^{4Q_t}$ and the rotor is the exponential of a bivector. The exponential is a diffeomorphism from the Hermitian half onto the open cone and a surjection from the skew half onto $U(4)$.
+In the axis-free frame the eigenvalues are $Q_t\pm iB$ twice each, so the determinant of the exponential is $e^{4Q_t}$ and the rotor is the exponential of a bivector. The exponential is a diffeomorphism from the Hermitian half onto the open cone and a surjection from the anti-Hermitian half onto $U(4)$.
 
 ## Summary of Notation
 

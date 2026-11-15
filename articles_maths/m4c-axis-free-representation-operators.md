@@ -684,9 +684,9 @@ $$
 $$
 The self-adjoint two-sided operators are the scalar multiples of the diagonal operators $L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q)$, together with the zero operator. The proof is the fibre theorem of §*The Factorization Map*: equality of the two products gives $(\tilde Q_2,\tilde Q)=\lambda(\tilde Q,\tilde Q_2)$, hence $\tilde Q_2=\lambda\tilde Q$. The argument uses no inverse and covers the zero divisors.
 
-### The Skew Sector
+### The Anti-Hermitian Sector
 
-**No nonzero skew-adjoint.** No nonzero two-sided operator is skew-adjoint:
+**No nonzero anti-self-adjoint.** No nonzero two-sided operator is anti-self-adjoint:
 $$
 \bigl(L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q_2)\bigr)^{\approx}
 =-L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q_2)
@@ -797,7 +797,7 @@ is an isomorphism of complex algebras. The sixteen elementary tensors $e_\mu\oti
 - Additivity: the set is not a subspace, and the sum of two products is generally not a product.
 - Universality: not every matrix is a single product; four products may be needed, and four are always enough.
 - A division algebra: the basis matrices are invertible, but the span has zero divisors, for example $L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t}+L_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_x}$ of rank two.
-- A pin group: the quadratic form $\operatorname{Sc}(\tilde Q^2)$ is not multiplicative, and the isometry group of the family is only $\{\pm\mathrm{Ad}_{\tilde Q}\}$, of complex dimension three, with no nonzero skew-adjoint sector.
+- A pin group: the quadratic form $\operatorname{Sc}(\tilde Q^2)$ is not multiplicative, and the isometry group of the family is only $\{\pm\mathrm{Ad}_{\tilde Q}\}$, of complex dimension three, with no nonzero anti-self-adjoint sector.
 
 ## Open Questions
 

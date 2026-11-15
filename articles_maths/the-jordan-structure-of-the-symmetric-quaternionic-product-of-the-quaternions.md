@@ -117,7 +117,7 @@ $$
 
 **Remark (the unit seen through the operators).** At $\tilde X=e_t$ the quadratic representation is $U(e_t)\tilde Y=Y_0e_t=L_{e_t}\tilde Y$, which is the projection and not the identity. In a unital Jordan algebra $U(e_t)$ is the identity, and here it is the projection onto the scalar line: this is the operator form of the absent unit, and it is the reason the quadratic identity holds in the degenerate form $U(e_t)^2=U(e_t)$ rather than $U(e_t)=I$.
 
-**Remark (the derivations).** The derivations of the algebra are the maps $\tilde q\mapsto2\,\vec w\times\vec q$ extended by zero on the real line, and they form a three-dimensional $\mathfrak{so}(3)$: the computation on the $16$ entries of $D$ gives a solution space of dimension three. Every derivation kills $e_t$, because $D(e_t)=D(e_t\bullet_{\natural}e_t)=2e_t\bullet_{\natural}De_t=2De_t$, and on the vector subspace it is skew for the definite form. The algebra therefore has the same derivation algebra as the symmetric plain product, and it is the only structure the two symmetrisations share.
+**Remark (the derivations).** The derivations of the algebra are the maps $\tilde q\mapsto2\,\vec w\times\vec q$ extended by zero on the real line, and they form a three-dimensional $\mathfrak{so}(3)$: the computation on the $16$ entries of $D$ gives a solution space of dimension three. Every derivation kills $e_t$, because $D(e_t)=D(e_t\bullet_{\natural}e_t)=2e_t\bullet_{\natural}De_t=2De_t$, and on the vector subspace it is anti-self-adjoint for the definite form. The algebra therefore has the same derivation algebra as the symmetric plain product, and it is the only structure the two symmetrisations share.
 
 ## The Radical and the Isotropic Set
 

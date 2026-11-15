@@ -2,13 +2,13 @@
 
 ## Introduction
 
-The unitary group $\mathrm{U}(A,h)$ of *Isometries and the Unitary Group of a Form* is an algebraic group, and every algebraic group has a Lie algebra: the tangent space at the identity, computed by the **dual numbers**. This article computes it, and the answer is the space of the skew-adjoint operators with the commutator:
+The unitary group $\mathrm{U}(A,h)$ of *Isometries and the Unitary Group of a Form* is an algebraic group, and every algebraic group has a Lie algebra: the tangent space at the identity, computed by the **dual numbers**. This article computes it, and the answer is the space of the anti-self-adjoint operators with the commutator:
 
 $$
 \mathfrak{u}(A,h) = \{T : T^{*} = -T\} = \operatorname{Lie}\,\mathrm{U}(A,h) .
 $$
 
-The computation is algebraic and it uses no limit and no topology. The tangent space is the kernel of the map $U(R[\varepsilon]/\varepsilon^{2}) \to U(R)$, the infinitesimal isometries are the operators whose quadratic form $h(Tx,x)$ vanishes to first order, and the first-order condition is exactly the antisymmetry $T^{*} = -T$; this is the algebraic form of the classical statement that the Lie algebra of the isometry group of a form is the space of the skew operators of that form. The bracket is the commutator, and it closes on the skew operators by the sign rule of *Self-Adjoint and Skew Operators of a Form*.
+The computation is algebraic and it uses no limit and no topology. The tangent space is the kernel of the map $U(R[\varepsilon]/\varepsilon^{2}) \to U(R)$, the infinitesimal isometries are the operators whose quadratic form $h(Tx,x)$ vanishes to first order, and the first-order condition is exactly the antisymmetry $T^{*} = -T$; this is the algebraic form of the classical statement that the Lie algebra of the isometry group of a form is the space of the anti-self-adjoint operators of that form. The bracket is the commutator, and it closes on the anti-self-adjoint operators by the sign rule of *Self-Adjoint and Anti-Self-Adjoint Operators of a Form*.
 
 The corresponding structure on the other eigenspace of the involution is the Jordan algebra of *The Hermitian Jordan Algebra of a Form*; the bilinear original is *The Orthogonal Lie Algebra*, the completed reading is *The Lie Algebra and the Exponential Map* and *Unitary and Isometric Operators of the Form* of Part II, and the exponential map that joins the algebra to the group is *The Lie Algebra and the Exponential Map* in Part II. Throughout, $(A,*,h)$ is a sesqualgebra with a form over a base $(R,\varsigma)$ with $h$ nonsingular, $T^{*}$ is the adjoint of $T$ for $h$, and $R[\varepsilon] = R[\varepsilon]/\varepsilon^{2}$ is the ring of the dual numbers over the base.
 
@@ -22,7 +22,7 @@ $$
 
 that is, the set of the first-order deformations of the identity that remain isometries over the dual numbers.
 
-**Proposition.** The Lie algebra is the space of the **skew-adjoint** operators:
+**Proposition.** The Lie algebra is the space of the **anti-self-adjoint** operators:
 
 $$
 \boxed{\;\mathfrak{u}(A,h) = \{T : T^{*} = -T\}\;} .
@@ -52,9 +52,9 @@ $$
 
 and the commutator makes it a Lie algebra over the fixed ring $R^{\varsigma}$.
 
-**Proof.** The sign rule of *Self-Adjoint and Skew Operators of a Form* gives $(ST - TS)^{*} = -\varepsilon\delta(ST-TS)$ with $\varepsilon = \delta = -1$, hence $(ST-TS)^{*} = -(ST-TS)$, which is the closure. The bilinearity, the antisymmetry and the Jacobi identity of the commutator are the associativity of the product of the operators.
+**Proof.** The sign rule of *Self-Adjoint and Anti-Self-Adjoint Operators of a Form* gives $(ST - TS)^{*} = -\varepsilon\delta(ST-TS)$ with $\varepsilon = \delta = -1$, hence $(ST-TS)^{*} = -(ST-TS)$, which is the closure. The bilinearity, the antisymmetry and the Jacobi identity of the commutator are the associativity of the product of the operators.
 
-**Corollary.** The Lie algebra of the unitary group is the skew part of the algebra of the operators, the self-adjoint part is its complement under the involution of *The Form-Adjoint of an Operator*, and the product of two skew operators splits as
+**Corollary.** The Lie algebra of the unitary group is the anti-Hermitian part of the algebra of the operators, the self-adjoint part is its complement under the involution of *The Form-Adjoint of an Operator*, and the product of two anti-self-adjoint operators splits as
 
 $$
 \boxed{\;ST = \tfrac{1}{2}[S,T] + \tfrac{1}{2}(ST + TS)\;} ,
@@ -68,7 +68,7 @@ with the commutator inside the Lie algebra and the anticommutator leaving it; th
 
 **Proof.** The group over the dual numbers is the set of the operators $1 + \varepsilon T$ satisfying the isometry equation with the Gram matrix read over $R[\varepsilon]$; reducing modulo $\varepsilon$ gives the identity, so every element of the kernel is of the shape $1 + \varepsilon T$, and the first-order expansion of the previous section is the computation of the kernel. The reduction map is a homomorphism of groups by the functoriality of the construction of the group.
 
-**Remark (the exponential).** Over $\mathbb{R}$ or $\mathbb{C}$ the exponential of a skew operator is unitary, and the differential of the exponential at $0$ is the identity, so the Lie algebra is the tangent space of the group in the analytic sense as well; the series is analytic, and the exponential and its image are *The Lie Algebra and the Exponential Map* in Part II. In the algebraic layer the Cayley transform of *Self-Adjoint and Skew Operators of a Form* plays the role of the exponential without the series.
+**Remark (the exponential).** Over $\mathbb{R}$ or $\mathbb{C}$ the exponential of an anti-self-adjoint operator is unitary, and the differential of the exponential at $0$ is the identity, so the Lie algebra is the tangent space of the group in the analytic sense as well; the series is analytic, and the exponential and its image are *The Lie Algebra and the Exponential Map* in Part II. In the algebraic layer the Cayley transform of *Self-Adjoint and Anti-Self-Adjoint Operators of a Form* plays the role of the exponential without the series.
 
 ## Examples
 
@@ -90,7 +90,7 @@ On $\mathbb{B}$ with the dagger the Lie algebra of the unitary slice is the spac
 
 ## Summary
 
-- The **Lie algebra** of the unitary group is the space of the first-order isometries, computed by the dual numbers: $\mathfrak{u}(A,h) = \{T : T^{*} = -T\}$, the **skew-adjoint operators**.
+- The **Lie algebra** of the unitary group is the space of the first-order isometries, computed by the dual numbers: $\mathfrak{u}(A,h) = \{T : T^{*} = -T\}$, the **anti-self-adjoint operators**.
 - Equivalently, when $2$ is invertible and the diagonal determines the form, it is the set of the operators whose quadratic form $h(Tx,x)$ has vanishing trace part; over the trivial involution this is $h(Tx,x) = 0$ for every $x$.
 - It closes under the commutator by the sign rule, and it is a Lie algebra over the fixed ring $R^{\varsigma}$.
 - The construction is algebraic: the kernel of $U(R[\varepsilon]) \to U(R)$, with no limit, no norm and no completion; the analytic exponential is Part II and the Cayley transform is the algebraic substitute.
@@ -102,13 +102,13 @@ On $\mathbb{B}$ with the dagger the Lie algebra of the unitary slice is the spac
 | symbol | meaning |
 |---|---|
 | $R[\varepsilon] = R[\varepsilon]/\varepsilon^{2}$ | the ring of the dual numbers over the base |
-| $\mathfrak{u}(A,h)$ | the Lie algebra of the skew-adjoint operators |
+| $\mathfrak{u}(A,h)$ | the Lie algebra of the anti-self-adjoint operators |
 | $[S,T] = ST - TS$ | the commutator of the operators |
 | $\mathfrak{u}(n)$, $\mathfrak{su}(n)$ | the unitary and special unitary Lie algebras |
 | $\mathfrak{so}(G)$, $\mathfrak{sp}(2n)$ | the orthogonal and the symplectic Lie algebras |
 
 ## Further Reading
 
-- Jean Dieudonné, *La géométrie des groupes classiques*, Ergebnisse der Mathematik 5 (Springer, 1955), for the classical Lie algebras as the skew operators of a form.
+- Jean Dieudonné, *La géométrie des groupes classiques*, Ergebnisse der Mathematik 5 (Springer, 1955), for the classical Lie algebras as the anti-self-adjoint operators of a form.
 - Nathan Jacobson, *Lie Algebras* (Interscience, 1962; Dover reprint, 1979), for the Lie algebra of an algebraic group and the structure of the classical algebras.
 - Max-Albert Knus, *Quadratic and Hermitian Forms over Rings*, Grundlehren der mathematischen Wissenschaften 294 (Springer, 1991), for the Lie algebra of the unitary group of a form over a ring with an involution.

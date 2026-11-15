@@ -5,7 +5,7 @@
 
 The matrix ring $M_n(R)$ carries three involutions that occur throughout the corpus: the **transpose** $X \mapsto X^{\mathrm t}$, which needs no commutativity and no coefficient structure; the **conjugate transpose** $X \mapsto (\sigma(x_{ji}))$, which needs a commutative ring of coefficients with an involution $\sigma$; and the **symplectic involution** $X \mapsto J^{-1}X^{\mathrm t}J$, which needs an element $J$ with $J^{\mathrm t} = -J$ and $J^2 = -1$ and therefore an even dimension. The three are not equivalent, and the classification of the involutions of $M_n(R)$ says that over a field, up to conjugation by a unit, there are no others of the first kind: an involution is of **transpose type** when it has $n$ orthogonal symmetric idempotents summing to the identity, and of **symplectic type** otherwise, the second occurring only in even dimension.
 
-This article fixes the three involutions, computes their symmetric and skew matrices, and states the classification with the invariant that separates the transpose type from the symplectic type, the dimension of the symmetric part. It assumes *Involutive Rings* for the definition of an involution, its fixed set and its symmetric and skew elements, and *Rings* and *Modules over an Algebra* for the matrix ring and its units. The classification by the forms a matrix represents, the discriminant and the Clifford invariant of an involution, belong to *Hilbert Algebras* in Part II and are named here only as the boundary; the involutions of a general central simple algebra are *Involutions of a Central Simple Algebra*, in *Algebras*, the algebra category that owns the central simple algebras. Nothing here is measured: a matrix is transposed, conjugated and multiplied, and no length or sign is read off a vector.
+This article fixes the three involutions, computes their symmetric and antisymmetric matrices, and states the classification with the invariant that separates the transpose type from the symplectic type, the dimension of the symmetric part. It assumes *Involutive Rings* for the definition of an involution, its fixed set and its symmetric and anti-Hermitian elements, and *Rings* and *Modules over an Algebra* for the matrix ring and its units. The classification by the forms a matrix represents, the discriminant and the Clifford invariant of an involution, belong to *Hilbert Algebras* in Part II and are named here only as the boundary; the involutions of a general central simple algebra are *Involutions of a Central Simple Algebra*, in *Algebras*, the algebra category that owns the central simple algebras. Nothing here is measured: a matrix is transposed, conjugated and multiplied, and no length or sign is read off a vector.
 
 Throughout, $R$ is a ring with $1 \neq 0$, $F$ is a field, $n \geq 1$, and $M_n(R)$ is the ring of $n \times n$ matrices with entries in $R$ and the usual product; $e_{ij}$ are the matrix units, $X^{\mathrm t}$ is the transpose, $\operatorname{tr}(X)$ is the trace, $\sigma$ is an involution of $R$ when $R$ is commutative, and $J$ is a matrix with $J^{\mathrm t} = -J$, $J^2 = -1$. The **conjugate transpose** of $X = (x_{ij})$ is written $X^{*} = (\sigma(x_{ji}))$.
 
@@ -43,17 +43,17 @@ $$
 
 **Remark.** The symplectic involution is the transpose twisted by $J$: since $J^{-1} = -J$ one has $X^{\tau} = -JX^{\mathrm t}J$. If $J'$ gives the same involution then $J'J^{-1}$ commutes with every $X^{\mathrm t}$ and is therefore a central scalar, and the conditions $J'^{\mathrm t} = -J'$, $J'^2 = -1$ force $J' = \pm J$; so $J$ is determined by the involution up to sign.
 
-## Symmetric and Skew Matrices
+## Symmetric and Antisymmetric Matrices
 
-**Proposition.** Let $2$ be invertible in $R$. Every matrix decomposes uniquely as the sum of a symmetric and a antisymmetric matrix under the transpose,
+**Proposition.** Let $2$ be invertible in $R$. Every matrix decomposes uniquely as the sum of a symmetric and an antisymmetric matrix under the transpose,
 $$
 \boxed{\;X = \tfrac12(X+X^{\mathrm t}) + \tfrac12(X-X^{\mathrm t})\;},
 $$
-and the same with $X^{\mathrm t}$ replaced by $X^{*}$ or $X^{\tau}$. In each case the symmetric and the skew matrices are the eigenspaces of the involution for $+1$ and $-1$, and the fixed set is the symmetric one.
+and the same with $X^{\mathrm t}$ replaced by $X^{*}$ or $X^{\tau}$. In each case the symmetric and the antisymmetric matrices are the eigenspaces of the involution for $+1$ and $-1$, and the fixed set is the symmetric one.
 
 **Proof.** This is the additive decomposition of *Involutive Rings* applied to the three involutions; the two summands are fixed or negated by the involution because it is additive of order two, and the decomposition is direct because the involution has no nonzero element on which it is both $\mathrm{id}$ and $-\mathrm{id}$ when $2$ is invertible.
 
-**Example (the symmetric and skew sets of the transpose).** For $n = 2$ and $R$ a field with $2 \neq 0$, a symmetric matrix is $\begin{pmatrix} a & b \\ b & d\end{pmatrix}$ and a antisymmetric matrix is $\begin{pmatrix} 0 & c \\ -c & 0\end{pmatrix}$, so $\dim \mathrm{sym} = 3$ and $\dim \mathrm{Skew} = 1$, in agreement with $n(n+1)/2 = 3$ and $n(n-1)/2 = 1$.
+**Example (the symmetric and antisymmetric sets of the transpose).** For $n = 2$ and $R$ a field with $2 \neq 0$, a symmetric matrix is $\begin{pmatrix} a & b \\ b & d\end{pmatrix}$ and an antisymmetric matrix is $\begin{pmatrix} 0 & c \\ -c & 0\end{pmatrix}$, so $\dim \mathrm{sym} = 3$ and $\dim \mathrm{Skew} = 1$, in agreement with $n(n+1)/2 = 3$ and $n(n-1)/2 = 1$.
 
 **Example (Hermitian and anti-Hermitian).** Over $\mathbb{C}$ with the conjugation the $\sigma$-Hermitian matrices are the Hermitian ones, $X^{*} = X$, and the $\sigma$-anti-Hermitian matrices satisfy $X^{*} = -X$, so the anti-Hermitian matrices are $i$ times the Hermitian ones. The fixed set is not a complex subspace but a real one, because the involution is not complex-linear.
 
@@ -103,7 +103,7 @@ Hence the transpose and the symplectic involutions are inequivalent for $n \geq 
 
 ## Summary
 
-The matrix ring $M_n(R)$ carries the **transpose** $X \mapsto X^{\mathrm t}$, an involution for every ring $R$ with symmetric fixed set and permutation $e_{ij} \leftrightarrow e_{ji}$; the **conjugate transpose** $X \mapsto (\sigma(x_{ji}))$ for a commutative coefficient ring with an involution $\sigma$, whose fixed matrices are the $\sigma$-Hermitian ones; and the **symplectic involution** $X \mapsto J^{-1}X^{\mathrm t}J$ for $J^{\mathrm t} = -J$, $J^2 = -1$, whose fixed matrices are those with $JX$ antisymmetric, and which needs even dimension. Each has a symmetric-plus-skew decomposition when $2$ is invertible, with the symmetric and skew matrices the eigenspaces.
+The matrix ring $M_n(R)$ carries the **transpose** $X \mapsto X^{\mathrm t}$, an involution for every ring $R$ with symmetric fixed set and permutation $e_{ij} \leftrightarrow e_{ji}$; the **conjugate transpose** $X \mapsto (\sigma(x_{ji}))$ for a commutative coefficient ring with an involution $\sigma$, whose fixed matrices are the $\sigma$-Hermitian ones; and the **symplectic involution** $X \mapsto J^{-1}X^{\mathrm t}J$ for $J^{\mathrm t} = -J$, $J^2 = -1$, whose fixed matrices are those with $JX$ antisymmetric, and which needs even dimension. Each has a symmetric-plus-anti-self-adjoint decomposition when $2$ is invertible, with the symmetric and antisymmetric matrices the eigenspaces.
 
 An involution is of the **first kind** when it fixes the centre and of the **second kind** when it acts on the centre by a nontrivial automorphism; the transpose and the symplectic involutions are of the first kind, the conjugate transpose of the second kind. The first-kind involutions of $M_n(F)$, up to conjugation, are the **transpose type**, occurring for every $n$ and characterised by $n$ orthogonal symmetric idempotents summing to $1$, and the **symplectic type**, occurring only for even $n$; the separating invariant is the dimension of the symmetric part, $\tfrac12 n(n+1)$ in the transpose type and $\tfrac12 n(n-1)$ in the symplectic type, so the two are inequivalent in dimension at least two. The arithmetic invariant that distinguishes two algebras of the same type is the business of the central simple algebra and of the forms of Part II.
 
@@ -120,14 +120,14 @@ An involution is of the **first kind** when it fixes the centre and of the **sec
 | $\tau(X) = X^{\tau} = J^{-1}X^{\mathrm t}J$ | Symplectic involution |
 | $J$, with $J^{\mathrm t} = -J$, $J^2 = -1$ | The matrix twisting the symplectic involution; even $n$ |
 | $JX$ antisymmetric | Equivalent form of $\tau$-symmetry |
-| $\mathrm{sym}$, $\mathrm{Skew}$ | Symmetric and skew matrices, the eigenspaces |
+| $\mathrm{sym}$, $\mathrm{Skew}$ | Symmetric and antisymmetric matrices, the eigenspaces |
 | $\tfrac12 n(n+1)$, $\tfrac12 n(n-1)$ | Dimensions of the symmetric part in the two types |
 | $U^{*}U = 1$ | Unitary matrices, the units fixed by the twisted action |
 | first kind, second kind | Involution fixing the centre, or acting on it by a nontrivial order-two automorphism |
 
 ## Further Reading
 
-- I. N. Herstein, *Rings with Involution* (University of Chicago Press, 1976), for the symmetric and skew matrices, the two types of the first kind and the idempotent criterion.
+- I. N. Herstein, *Rings with Involution* (University of Chicago Press, 1976), for the symmetric and antisymmetric matrices, the two types of the first kind and the idempotent criterion.
 - Nathan Jacobson, *Structure of Rings*, American Mathematical Society Colloquium Publications 37 (1964), for the classification of the involutions of a matrix ring and the symplectic type.
 - Albert Adrian Albert, *Structure of Algebras*, American Mathematical Society Colloquium Publications 24 (1939), for the classification of involutions of central simple algebras, which begins with the matrix case.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge University Press, 2nd ed. 2013), for symmetric, Hermitian, antisymmetric and anti-Hermitian matrices and their decompositions.

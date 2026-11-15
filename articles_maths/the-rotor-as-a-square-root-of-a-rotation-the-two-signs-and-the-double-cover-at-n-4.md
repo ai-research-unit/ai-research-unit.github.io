@@ -36,7 +36,7 @@ It assumes *Rotors Acting on the Bivector Space: the Adjoint Action at $n=4$* an
 
 **Theorem.** Every element of $SO(4)$ is $\Phi_\rho$ for some unit rotor $\rho$, and the rotors form the group $\mathrm{Spin}(4)$.
 
-**Proof.** In the axis-free frame the four left multiplications and the four right multiplications generate a group of signed permutations containing $SO(4)$ in the sense of Lie algebras; at the level of the Lie algebra every skew matrix is $L_u+R_v$ with $u,v$ imaginary, and exponentiating gives $\Phi_{e^{u}e^{v}}$ with the two one-sided unit quaternions. The rotors form a group because the product of two rotors is a rotor.
+**Proof.** In the axis-free frame the four left multiplications and the four right multiplications generate a group of signed permutations containing $SO(4)$ in the sense of Lie algebras; at the level of the Lie algebra every antisymmetric matrix is $L_u+R_v$ with $u,v$ imaginary, and exponentiating gives $\Phi_{e^{u}e^{v}}$ with the two one-sided unit quaternions. The rotors form a group because the product of two rotors is a rotor.
 
 **Corollary.** $\mathrm{Spin}(4)\cong SU(2)\times SU(2)$, of real dimension $6$, equal to the dimension of $SO(4)$.
 

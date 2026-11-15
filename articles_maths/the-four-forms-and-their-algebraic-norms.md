@@ -100,7 +100,7 @@ the classical inequality for positive matrices, with equality exactly at $X=c\ma
 
 ## Which Form for Which Structure
 
-**The trace form is the form of the Lie structure.** It is invariant under all of $\mathrm{GL}_n$ and every derivation is skew for it, so it is the form in which the group acts by isometries and the Lie algebra sits as a space of skew operators. Its indefiniteness is the price of the invariance, since a definite invariant form would make the group compact.
+**The trace form is the form of the Lie structure.** It is invariant under all of $\mathrm{GL}_n$ and every derivation is anti-self-adjoint for it, so it is the form in which the group acts by isometries and the Lie algebra sits as a space of anti-self-adjoint operators. Its indefiniteness is the price of the invariance, since a definite invariant form would make the group compact.
 
 **The Killing form is the form of the structure theory.** It is invariant and it detects the radical, since its radical is the centre and its restriction to $\mathfrak{sl}_n$ is nondegenerate. So it is the form that decides semisimplicity, and it is a scalar multiple of the trace form exactly on the semisimple part.
 

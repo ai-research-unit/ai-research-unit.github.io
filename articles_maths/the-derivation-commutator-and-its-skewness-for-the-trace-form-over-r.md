@@ -2,9 +2,9 @@
 
 ## Introduction
 
-**Every derivation of $M_n(\mathbb{R})$ is inner, $D_A(X)=[A,X]$, the space of derivations is $\mathfrak{sl}_n(\mathbb{R})$ of dimension $n^{2}-1$, and every one of them is skew for the trace form; for the Hilbert–Schmidt form the skew derivations are exactly those with $A$ antisymmetric and the self-adjoint ones exactly those with $A$ symmetric.**
+**Every derivation of $M_n(\mathbb{R})$ is inner, $D_A(X)=[A,X]$, the space of derivations is $\mathfrak{sl}_n(\mathbb{R})$ of dimension $n^{2}-1$, and every one of them is anti-self-adjoint for the trace form; for the Hilbert–Schmidt form the anti-Hermitian derivations are exactly those with $A$ antisymmetric and the self-adjoint ones exactly those with $A$ symmetric.**
 
-The article defines the map $D_A$, proves the Leibniz rule, computes the kernel and the dimension, proves the skewness for the trace form and classifies the skew and self-adjoint derivations for the Hilbert–Schmidt form. It assumes *The Matrix Algebra $M_n(\mathbb{R})$* for the trace form and *The Hilbert–Schmidt Form* of the complex series for the definite form, and it defers the Lie-theoretic reading to *The Lie Algebra $\operatorname{Skew}_n\cong\mathfrak{so}(n)$*.
+The article defines the map $D_A$, proves the Leibniz rule, computes the kernel and the dimension, proves the skewness for the trace form and classifies the anti-Hermitian and self-adjoint derivations for the Hilbert–Schmidt form. It assumes *The Matrix Algebra $M_n(\mathbb{R})$* for the trace form and *The Hilbert–Schmidt Form* of the complex series for the definite form, and it defers the Lie-theoretic reading to *The Lie Algebra $\operatorname{Skew}_n\cong\mathfrak{so}(n)$*.
 
 Throughout $n\ge2$. The maps are
 
@@ -50,7 +50,7 @@ by the Jacobi identity. So $\mathfrak{gl}_n(\mathbb{R})$ maps onto the derivatio
 
 ## Skewness for the Trace Form
 
-**Every derivation is skew for the trace form.** For all $A,X,Y$,
+**Every derivation is anti-self-adjoint for the trace form.** For all $A,X,Y$,
 
 $$
 \operatorname{tr}(D_A(X)Y)+\operatorname{tr}(XD_A(Y))=\operatorname{tr}(AXY-XAY+XAY-XYA)=\operatorname{tr}(AXY)-\operatorname{tr}(XYA)=0,
@@ -62,9 +62,9 @@ $$
 \langle D_AX,Y\rangle+\langle X,D_AY\rangle=0
 $$
 
-for every $A$, and the whole derivation algebra is contained in the skew endomorphisms of the trace form. Measured on $100$ random triples at $n=3,4$, the identity held in every case.
+for every $A$, and the whole derivation algebra is contained in the anti-self-adjoint endomorphisms of the trace form. Measured on $100$ random triples at $n=3,4$, the identity held in every case.
 
-**Consequence: the derivation algebra is inside a Lie algebra of skew operators.** The skew endomorphisms of $\operatorname{tr}(XY)$ on $M_n(\mathbb{R})$ form a Lie algebra isomorphic to $\mathfrak{so}(n^{2})$ in the metric of signature $(n(n+1)/2,n(n-1)/2)$, and the derivations are a subspace of dimension $n^{2}-1$ inside the one of dimension $n^{2}(n^{2}-1)/2$. So the derivations are a small Lie subalgebra of the full skew algebra, and the trace form does not distinguish $D_A$ by its skewness at all.
+**Consequence: the derivation algebra is inside a Lie algebra of anti-self-adjoint operators.** The anti-self-adjoint endomorphisms of $\operatorname{tr}(XY)$ on $M_n(\mathbb{R})$ form a Lie algebra isomorphic to $\mathfrak{so}(n^{2})$ in the metric of signature $(n(n+1)/2,n(n-1)/2)$, and the derivations are a subspace of dimension $n^{2}-1$ inside the one of dimension $n^{2}(n^{2}-1)/2$. So the derivations are a small Lie subalgebra of the full anti-Hermitian algebra, and the trace form does not distinguish $D_A$ by its skewness at all.
 
 **The trace form is the invariant form and this is why.** A bilinear form $\langle X,Y\rangle=\operatorname{tr}(F(X)Y)$ is invariant under all derivations only when $F$ commutes with every conjugation, so $F$ is a scalar and the form is a multiple of the trace form. So the skewness of every derivation for $\operatorname{tr}(XY)$ is the statement that the trace form is the invariant form of the algebra, and it holds for no other nondegenerate form.
 
@@ -80,15 +80,15 @@ so the sum vanishes for all $X,Y$ exactly when $[S,Y]=0$ for every $Y$, that is 
 
 *Proof.* Using $\langle AX,Y\rangle_{\mathrm{HS}}=\langle X,A^{\mathsf T}Y\rangle_{\mathrm{HS}}$ and $\langle XA,Y\rangle_{\mathrm{HS}}=\langle X,YA^{\mathsf T}\rangle_{\mathrm{HS}}$, the sum equals $\langle X,A^{\mathsf T}Y\rangle-\langle X,YA^{\mathsf T}\rangle+\langle X,AY\rangle-\langle X,YA\rangle=\langle X,SY-YS\rangle$. Measured on $100$ random pairs at $n=4$, the sum vanished for antisymmetric $A$ and for $\mathrm{I}+A$ with $A$ antisymmetric, and it was nonzero for a general $A$.
 
-**The skew derivations are those with antisymmetric $A$ up to a scalar, and the self-adjoint ones those with symmetric $A$ up to a scalar.** The condition $A+A^{\mathsf T}\in\mathbb{R}\mathrm{I}$ is exactly $D_A=D_K$ with $K=\tfrac12(A-A^{\mathsf T})\in\operatorname{Skew}_n$, because the scalar part contributes nothing to the derivation. The same computation with the difference in place of the sum gives $\langle D_AX,Y\rangle_{\mathrm{HS}}-\langle X,D_AY\rangle_{\mathrm{HS}}=\langle X,[A-A^{\mathsf T},Y]\rangle_{\mathrm{HS}}$, which vanishes for all $X,Y$ exactly when $A-A^{\mathsf T}\in\mathbb{R}\mathrm{I}$, that is exactly when $D_A=D_S$ with $S\in\operatorname{Sym}_n$. So
+**The anti-Hermitian derivations are those with antisymmetric $A$ up to a scalar, and the self-adjoint ones those with symmetric $A$ up to a scalar.** The condition $A+A^{\mathsf T}\in\mathbb{R}\mathrm{I}$ is exactly $D_A=D_K$ with $K=\tfrac12(A-A^{\mathsf T})\in\operatorname{Skew}_n$, because the scalar part contributes nothing to the derivation. The same computation with the difference in place of the sum gives $\langle D_AX,Y\rangle_{\mathrm{HS}}-\langle X,D_AY\rangle_{\mathrm{HS}}=\langle X,[A-A^{\mathsf T},Y]\rangle_{\mathrm{HS}}$, which vanishes for all $X,Y$ exactly when $A-A^{\mathsf T}\in\mathbb{R}\mathrm{I}$, that is exactly when $D_A=D_S$ with $S\in\operatorname{Sym}_n$. So
 
 $$
-\{D_A\text{ skew for the HS form}\}=\{D_K:K\in\operatorname{Skew}_n\},\qquad \{D_A\text{ self-adjoint}\}=\{D_S:S\in\operatorname{Sym}_n\},
+\{D_A\text{ anti-self-adjoint for the HS form}\}=\{D_K:K\in\operatorname{Skew}_n\},\qquad \{D_A\text{ self-adjoint}\}=\{D_S:S\in\operatorname{Sym}_n\},
 $$
 
 and the two halves of $M_n$ index the two halves of the derivation space for this form.
 
-**Consequence: the two forms give two different pictures of the same derivations.** For the trace form every derivation is skew, so the skewness carries no information about $A$; for the Hilbert–Schmidt form the skewness type of $D_A$ is the symmetry type of $A$ modulo scalars. This is the phenomenon of *The Hilbert–Schmidt Form*: the definite form distinguishes what the invariant form cannot see.
+**Consequence: the two forms give two different pictures of the same derivations.** For the trace form every derivation is anti-Hermitian, so the skewness carries no information about $A$; for the Hilbert–Schmidt form the skewness type of $D_A$ is the symmetry type of $A$ modulo scalars. This is the phenomenon of *The Hilbert–Schmidt Form*: the definite form distinguishes what the invariant form cannot see.
 
 ## The Two Halves Acting on Each Other
 
@@ -106,9 +106,9 @@ $$
 D_A([X,Y])=[D_A(X),Y]+[X,D_A(Y)],
 $$
 
-so $D_A$ is a derivation of $\mathfrak{so}(n)$ and it maps $\operatorname{Skew}_n$ to $\operatorname{Sym}_n$. The two halves therefore act on each other: the skew half differentiates the Jordan structure and the symmetric half differentiates the Lie structure, which is the pair $(\mathfrak{k},\mathfrak{p})$ of *Symmetric Pairs and Cartan Pairs: the Reductivity Criterion over $\mathbb{R}$*.
+so $D_A$ is a derivation of $\mathfrak{so}(n)$ and it maps $\operatorname{Skew}_n$ to $\operatorname{Sym}_n$. The two halves therefore act on each other: the antisymmetric half differentiates the Jordan structure and the symmetric half differentiates the Lie structure, which is the pair $(\mathfrak{k},\mathfrak{p})$ of *Symmetric Pairs and Cartan Pairs: the Reductivity Criterion over $\mathbb{R}$*.
 
-**Consequence: the derivation algebra is the direct sum of two pieces acting on the two halves.** $D$ with $A$ skew preserves the symmetric half as a derivation and shifts it into the skew half; $D$ with $A$ symmetric preserves the skew half and shifts it into the symmetric half. The splitting is the one of $\mathfrak{sl}_n(\mathbb{R})=\mathfrak{so}(n)\oplus(\mathfrak{sl}_n\cap\operatorname{Sym}_n)$ in dimensions $n(n-1)/2$ and $n(n+1)/2-1$.
+**Consequence: the derivation algebra is the direct sum of two pieces acting on the two halves.** $D$ with $A$ antisymmetric preserves the symmetric half as a derivation and shifts it into the antisymmetric half; $D$ with $A$ symmetric preserves the antisymmetric half and shifts it into the symmetric half. The splitting is the one of $\mathfrak{sl}_n(\mathbb{R})=\mathfrak{so}(n)\oplus(\mathfrak{sl}_n\cap\operatorname{Sym}_n)$ in dimensions $n(n-1)/2$ and $n(n+1)/2-1$.
 
 ## The Exponential of a Derivation
 
@@ -128,13 +128,13 @@ $$
 
 **At $n=2$ the derivations are three-dimensional.** $\operatorname{Der}M_2(\mathbb{R})\cong\mathfrak{sl}_2(\mathbb{R})$, of dimension $3$, and it is isomorphic to $\mathfrak{so}(2,1)$ as a real Lie algebra. The operator space $M_2(\mathbb{R})$ has dimension $4$, and the derivations are the traceless part.
 
-**The trace-form skewness is total and the Hilbert–Schmidt one is not.** Every $D_A$ on $M_2(\mathbb{R})$ is skew for $\operatorname{tr}(XY)$, whose signature is $(3,1)$, so the derivations sit inside $\mathfrak{so}(3,1)$; for the Hilbert–Schmidt form only the antisymmetric $A$ give skew derivations, and those form the one-dimensional subspace of the rotations. So the definite form separates the rotation direction from the two stretch directions, and the invariant form does not.
+**The trace-form skewness is total and the Hilbert–Schmidt one is not.** Every $D_A$ on $M_2(\mathbb{R})$ is anti-self-adjoint for $\operatorname{tr}(XY)$, whose signature is $(3,1)$, so the derivations sit inside $\mathfrak{so}(3,1)$; for the Hilbert–Schmidt form only the antisymmetric $A$ give anti-Hermitian derivations, and those form the one-dimensional subspace of the rotations. So the definite form separates the rotation direction from the two stretch directions, and the invariant form does not.
 
-**The skew derivation at $n=2$ is a complex structure on the symmetric half.** The element $A=J$ gives $D_J$, which maps $\operatorname{Sym}_2$ to $\operatorname{Skew}_2$; on the traceless part of $\operatorname{Sym}_2$ one has $D_J^{2}=-4$, and $D_J^{2}=0$ on the scalars, so $D_J/2$ is a complex structure on the two-dimensional traceless part. The conjugation $e^{tJ}$ is the circle of rotations, and its derivative is $D_J$.
+**The anti-Hermitian derivation at $n=2$ is a complex structure on the symmetric half.** The element $A=J$ gives $D_J$, which maps $\operatorname{Sym}_2$ to $\operatorname{Skew}_2$; on the traceless part of $\operatorname{Sym}_2$ one has $D_J^{2}=-4$, and $D_J^{2}=0$ on the scalars, so $D_J/2$ is a complex structure on the two-dimensional traceless part. The conjugation $e^{tJ}$ is the circle of rotations, and its derivative is $D_J$.
 
 ## Summary
 
-The derivations of $M_n(\mathbb{R})$ are the maps $D_A(X)=[A,X]$, they satisfy the Leibniz rule, they form a Lie algebra under the commutator, and the map $A\mapsto D_A$ is a homomorphism with kernel $\mathbb{R}\mathrm{I}$, so the derivation algebra is $\mathfrak{sl}_n(\mathbb{R})$ of dimension $n^{2}-1$ and every derivation is inner. Every derivation is skew for the trace form, which is the invariant form of the algebra and the reason the skewness is total; for the Hilbert–Schmidt form the skew derivations are those with $A$ antisymmetric up to a scalar and the self-adjoint ones those with $A$ symmetric up to a scalar, so the definite form reads the symmetry type of $A$ where the invariant form reads nothing. The antisymmetric generators differentiate the Jordan algebra of the symmetric half and the symmetric generators differentiate the Lie algebra of the skew half, so the two halves act on each other. The exponential of a derivation is the conjugation $X\mapsto e^{A}Xe^{-A}$, so the inner derivations integrate to the inner automorphisms and the scalar direction is the invisible centre.
+The derivations of $M_n(\mathbb{R})$ are the maps $D_A(X)=[A,X]$, they satisfy the Leibniz rule, they form a Lie algebra under the commutator, and the map $A\mapsto D_A$ is a homomorphism with kernel $\mathbb{R}\mathrm{I}$, so the derivation algebra is $\mathfrak{sl}_n(\mathbb{R})$ of dimension $n^{2}-1$ and every derivation is inner. Every derivation is anti-self-adjoint for the trace form, which is the invariant form of the algebra and the reason the skewness is total; for the Hilbert–Schmidt form the anti-Hermitian derivations are those with $A$ antisymmetric up to a scalar and the self-adjoint ones those with $A$ symmetric up to a scalar, so the definite form reads the symmetry type of $A$ where the invariant form reads nothing. The antisymmetric generators differentiate the Jordan algebra of the symmetric half and the symmetric generators differentiate the Lie algebra of the antisymmetric half, so the two halves act on each other. The exponential of a derivation is the conjugation $X\mapsto e^{A}Xe^{-A}$, so the inner derivations integrate to the inner automorphisms and the scalar direction is the invisible centre.
 
 ## Summary of Notation
 

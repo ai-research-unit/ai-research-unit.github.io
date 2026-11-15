@@ -63,7 +63,7 @@ $$
 
 **Corollary (the two regimes).** If $c$ acts trivially on the coefficient scalars, then $h_c$ is $A$-**bilinear**; if $c$ acts as a nontrivial involution $\sigma$ on them, then $h_c$ is $\sigma$-**semilinear** in the first argument and $A$-linear in the second. For a Clifford algebra this separates the intrinsic forms from the dagger: reversion and Clifford conjugation fix every coefficient, since they fix the degree-zero part, so $h_r$ and $h_{\bar\cdot}$ are bilinear over the base; the dagger induces $\sigma$ on the coefficients, so $h_{\dagger}$ is genuinely sesquilinear. The passage from the bilinear to the sesquilinear theory is exactly the passage from the identity involution to a general $\sigma$.
 
-**Corollary (the skew companion).** The map $h_c(x,y) - h_c(y,x)$ is $c$-skew, $c(h_c(x,y)-h_c(y,x)) = -(h_c(x,y)-h_c(y,x))$, and when $2$ is invertible in $A$ the form splits into a $c$-Hermitian and a $c$-skew part.
+**Corollary (the anti-Hermitian companion).** The map $h_c(x,y) - h_c(y,x)$ is $c$-anti-self-adjoint, $c(h_c(x,y)-h_c(y,x)) = -(h_c(x,y)-h_c(y,x))$, and when $2$ is invertible in $A$ the form splits into a $c$-Hermitian and a $c$-anti-self-adjoint part.
 
 ### Non-Degeneracy
 

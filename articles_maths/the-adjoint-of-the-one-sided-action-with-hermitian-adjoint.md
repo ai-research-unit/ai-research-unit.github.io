@@ -5,7 +5,7 @@
 
 A Hermitian Clifford module is a Clifford module with a Hermitian form for which the Clifford action is self-adjoint, $(x\cdot s,t) = (s,x^{\dagger}\cdot t)$. That single axiom is a statement about the **adjoint of the action**: the adjoint of the operator "multiply on the left by $x$" is the operator "multiply on the left by $x^{\dagger}$", so that the action of the algebra and the action of its dagger are adjoint to one another. This article is about that adjoint: the identity $\rho(x)^{*} = \rho(x^{\dagger})$, the resulting $*$-structure on the algebra of operators, the rule for the adjoint of a composite operator built from the one-sided action, and the special case that is the algebraic reason a Dirac operator is formally self-adjoint.
 
-The topic is algebraic. The analytic consequences of the self-adjointness — domains, closures, essential self-adjointness, spectrum, compactness of the resolvent — are the content of *Dirac Differential Operators* and are cited, not repeated. What is established here is the algebra that makes those theorems apply: the coefficients of a Dirac operator are elements of the Clifford algebra acting one-sidedly, and they are skew-adjoint exactly when the elements are; from that, and the skew-adjointness of the derivative, the formal self-adjointness of the operator follows in one line.
+The topic is algebraic. The analytic consequences of the self-adjointness — domains, closures, essential self-adjointness, spectrum, compactness of the resolvent — are the content of *Dirac Differential Operators* and are cited, not repeated. What is established here is the algebra that makes those theorems apply: the coefficients of a Dirac operator are elements of the Clifford algebra acting one-sidedly, and they are anti-self-adjoint exactly when the elements are; from that, and the anti-self-adjointness of the derivative, the formal self-adjointness of the operator follows in one line.
 
 The Clifford action and the module form are *Hermitian Modules over a Hermitian Algebra with Hermitian Adjoint*; the one-sided operators on the algebra and their adjoints are *One-Sided Operators on a Hermitian Algebra with Hermitian Adjoint*; the two-sided family is *The Family of Two-Sided Operators on a Clifford Algebra*; the Hermitian member of that family, whose adjoint is the theorem at the end, is *The Hermitian Pair of Operators on a Hermitian Algebra with Hermitian Adjoint*; the forms of the dagger and the adjoint of multiplication are *The Blade Form and the Hermitian Structure with Hermitian Adjoint*; the unitary slice is *The Unitary Slice and the Compact Real Form with Hermitian Adjoint*; the spinor module is *Peirce Carriers and Inner Conjugation*; and the analysis of the Dirac operator is *Dirac Differential Operators*.
 
@@ -47,7 +47,7 @@ $$
 
 the statement of *One-Sided Operators on a Hermitian Algebra with Hermitian Adjoint*; so the module theorem above is the general form of that identity, and the algebra case is its regular instance.
 
-**Corollary (vectors act by skew-adjoint operators).** For $v \in V$, $\rho(v)^{*} = \rho(v^{\dagger}) = -\rho(v)$, because the dagger negates the vectors; so every vector acts by a **skew-adjoint** operator, $\rho(v)^{*} = -\rho(v)$, and the Clifford relation reads $\rho(v)^{2} = \mathfrak{Q}(v)\cdot\mathrm{id}$ with $\rho(v)$ skew-adjoint. This is the single fact from which the formal self-adjointness of the Dirac operator is read off below.
+**Corollary (vectors act by anti-self-adjoint operators).** For $v \in V$, $\rho(v)^{*} = \rho(v^{\dagger}) = -\rho(v)$, because the dagger negates the vectors; so every vector acts by a **anti-self-adjoint** operator, $\rho(v)^{*} = -\rho(v)$, and the Clifford relation reads $\rho(v)^{2} = \mathfrak{Q}(v)\cdot\mathrm{id}$ with $\rho(v)$ anti-self-adjoint. This is the single fact from which the formal self-adjointness of the Dirac operator is read off below.
 
 ## The Adjoint as an Involution on Operators
 
@@ -61,11 +61,11 @@ so that $T\mapsto T^{*}$ is an involutive $\sigma$-antilinear anti-automorphism 
 
 **Proof.** The first two are the standard properties of the Hermitian-space adjoint with respect to a $\sigma$-sesquilinear form, and the third records the semilinearity: $(\lambda Ts,t) = \lambda(Ts,t)$ while $(s, T^{*}\sigma(\lambda)t) = \sigma(\lambda)(s,T^{*}t)$.
 
-**Corollary (self-adjoint, skew-adjoint and normal elements).** For $a \in \mathrm{Cl}(V,\mathfrak{Q})$,
+**Corollary (self-adjoint, anti-self-adjoint and normal elements).** For $a \in \mathrm{Cl}(V,\mathfrak{Q})$,
 
 $$
 \rho(a) \text{ is self-adjoint} \iff a^{\dagger} = a, \qquad
-\rho(a) \text{ is skew-adjoint} \iff a^{\dagger} = -a, \qquad
+\rho(a) \text{ is anti-self-adjoint} \iff a^{\dagger} = -a, \qquad
 \rho(a) \text{ is normal} \iff [a^{\dagger},a] \text{ acts as } 0 ,
 $$
 
@@ -83,15 +83,15 @@ $$
 
 **Proof.** By the anti-multiplicativity and the involution property, $(\rho(a_i)T_i)^{*} = T_i^{*}\rho(a_i)^{*} = T_i^{*}\rho(a_i^{\dagger})$, and the adjoint of a sum is the sum of the adjoints.
 
-**Corollary (formal self-adjointness of the Dirac operator).** Let $D = \sum_j \rho(e_j)\,\partial/\partial x_j$ be the flat Dirac-type operator built from an orthonormal frame $e_j$, with $x_j$ the coordinate along $e_j$, and first-order operators $\partial/\partial x_j$ that are **skew-adjoint**, $(\partial/\partial x_j)^{*} = -\partial/\partial x_j$. Then
+**Corollary (formal self-adjointness of the Dirac operator).** Let $D = \sum_j \rho(e_j)\,\partial/\partial x_j$ be the flat Dirac-type operator built from an orthonormal frame $e_j$, with $x_j$ the coordinate along $e_j$, and first-order operators $\partial/\partial x_j$ that are **anti-self-adjoint**, $(\partial/\partial x_j)^{*} = -\partial/\partial x_j$. Then
 
 $$
 D^{*} = \sum_j (\partial/\partial x_j)^{*}\rho(e_j^{\dagger}) = \sum_j (-\partial/\partial x_j)(-\rho(e_j)) = \sum_j \rho(e_j)\partial/\partial x_j = D,
 $$
 
-so $D$ is **formally self-adjoint**. The two sign flips — the coefficient is skew because it is a vector, and the derivative is skew because integration by parts introduces a minus — cancel, and the operator is its own adjoint. This is the algebraic core of the self-adjointness that *Dirac Differential Operators* develops analytically: the ellipticity of the symbol, the domain, the closure, essential self-adjointness and the spectrum are treated there, and what is shown here is only why the formal adjoint of the operator coincides with the operator.
+so $D$ is **formally self-adjoint**. The two sign flips — the coefficient is anti-Hermitian because it is a vector, and the derivative is anti-Hermitian because integration by parts introduces a minus — cancel, and the operator is its own adjoint. This is the algebraic core of the self-adjointness that *Dirac Differential Operators* develops analytically: the ellipticity of the symbol, the domain, the closure, essential self-adjointness and the spectrum are treated there, and what is shown here is only why the formal adjoint of the operator coincides with the operator.
 
-**Remark (why the scalar direction breaks it, algebraically).** The corpus's Cauchy–Riemann operator has one coefficient equal to $1$, which is self-adjoint and not skew, $\rho(1) = \mathrm{id}$ with $\rho(1)^{*} = \rho(1)$, so the corresponding term acquires no minus from the coefficient and the operator is not symmetric; its formal adjoint is the conjugate operator, and the two split into a self-adjoint part and a skew-adjoint part. The algebra of the split is exactly the failure of one coefficient to be skew, and the analysis of the two operators is *Dirac Differential Operators*.
+**Remark (why the scalar direction breaks it, algebraically).** The corpus's Cauchy–Riemann operator has one coefficient equal to $1$, which is self-adjoint and not anti-Hermitian, $\rho(1) = \mathrm{id}$ with $\rho(1)^{*} = \rho(1)$, so the corresponding term acquires no minus from the coefficient and the operator is not symmetric; its formal adjoint is the conjugate operator, and the two split into a self-adjoint part and an anti-self-adjoint part. The algebra of the split is exactly the failure of one coefficient to be anti-Hermitian, and the analysis of the two operators is *Dirac Differential Operators*.
 
 ## The Adjoint Action of the Slice, and the Two-Sided Case
 
@@ -117,9 +117,9 @@ In particular the **Hermitian pair** $\Phi_{\mathrm{id},x}^{\dagger} = L_xR_{x^{
 
 ## Summary
 
-The **adjoint of the one-sided action** is the one-sided action of the dagger: for the action $\rho$ of a Clifford algebra on a Hermitian Clifford module, $\rho(x)^{*} = \rho(x^{\dagger})$, so $\rho$ is a $*$-homomorphism of the daggered algebra into the $*$-algebra of operators on the module. On the regular module this is the identity $L_a^{*} = L_{a^{\dagger}}$, $R_b^{*} = R_{b^{\dagger}}$ of the one-sided operators; for the vectors it is the **skew-adjointness** $\rho(v)^{*} = -\rho(v)$, since the dagger negates the vectors; and for an element it gives the criteria: self-adjoint, skew-adjoint, normal or unitary exactly as the element is self-adjoint, skew-adjoint, normal or in the **unitary slice** $U$.
+The **adjoint of the one-sided action** is the one-sided action of the dagger: for the action $\rho$ of a Clifford algebra on a Hermitian Clifford module, $\rho(x)^{*} = \rho(x^{\dagger})$, so $\rho$ is a $*$-homomorphism of the daggered algebra into the $*$-algebra of operators on the module. On the regular module this is the identity $L_a^{*} = L_{a^{\dagger}}$, $R_b^{*} = R_{b^{\dagger}}$ of the one-sided operators; for the vectors it is the **anti-self-adjointness** $\rho(v)^{*} = -\rho(v)$, since the dagger negates the vectors; and for an element it gives the criteria: self-adjoint, anti-self-adjoint, normal or unitary exactly as the element is self-adjoint, anti-self-adjoint, normal or in the **unitary slice** $U$.
 
-The adjoint is an involutive, $\sigma$-antilinear, anti-multiplicative map on the operator algebra. For a composite operator it gives $(\sum_i\rho(a_i)T_i)^{*} = \sum_i T_i^{*}\rho(a_i^{\dagger})$, and applying it to the flat Dirac-type operator $D = \sum_j\rho(e_j)\partial/\partial x_j$ with skew coefficients and skew derivatives produces $D^{*} = D$: the two sign flips cancel and the operator is **formally self-adjoint**, which is the algebraic core of the analysis of *Dirac Differential Operators*, the failure of the corpus's Cauchy–Riemann operator being exactly its one self-adjoint scalar coefficient. Finally the **unitary slice acts by inner $*$-automorphisms** $\mathrm{Ad}_u(T) = \rho(u)T\rho(u)^{-1}$ preserving the adjoint, and a **two-sided operator** has its adjoint at the dagger, $(\Phi^{\mathrm{J},c}_x)^{*} = \Phi^{\mathrm{J},c}_{x^{\dagger}}$, because the standard involutions commute pairwise; on the slice the Hermitian pair is unitary.
+The adjoint is an involutive, $\sigma$-antilinear, anti-multiplicative map on the operator algebra. For a composite operator it gives $(\sum_i\rho(a_i)T_i)^{*} = \sum_i T_i^{*}\rho(a_i^{\dagger})$, and applying it to the flat Dirac-type operator $D = \sum_j\rho(e_j)\partial/\partial x_j$ with anti-Hermitian coefficients and anti-Hermitian derivatives produces $D^{*} = D$: the two sign flips cancel and the operator is **formally self-adjoint**, which is the algebraic core of the analysis of *Dirac Differential Operators*, the failure of the corpus's Cauchy–Riemann operator being exactly its one self-adjoint scalar coefficient. Finally the **unitary slice acts by inner $*$-automorphisms** $\mathrm{Ad}_u(T) = \rho(u)T\rho(u)^{-1}$ preserving the adjoint, and a **two-sided operator** has its adjoint at the dagger, $(\Phi^{\mathrm{J},c}_x)^{*} = \Phi^{\mathrm{J},c}_{x^{\dagger}}$, because the standard involutions commute pairwise; on the slice the Hermitian pair is unitary.
 
 ## Summary of Notation
 
@@ -128,7 +128,7 @@ The adjoint is an involutive, $\sigma$-antilinear, anti-multiplicative map on th
 | $\rho(x)(s) = x\cdot s$ | One-sided action of the algebra on the module |
 | $\rho(x)^{*} = \rho(x^{\dagger})$ | Adjoint of the action |
 | $\rho(xy) = \rho(x)\rho(y)$, $\rho(x^{\dagger}) = \rho(x)^{*}$ | $\rho$ is a $*$-homomorphism |
-| $\rho(v)^{*} = -\rho(v)$ | Vectors act by skew-adjoint operators |
+| $\rho(v)^{*} = -\rho(v)$ | Vectors act by anti-self-adjoint operators |
 | $U$ | Unitary slice, $\rho(u)$ unitary iff $u \in U$ |
 | $\bigl(\sum_i\rho(a_i)T_i\bigr)^{*} = \sum_iT_i^{*}\rho(a_i^{\dagger})$ | Adjoint of a composite operator |
 | $D = \sum_j\rho(e_j)\partial/\partial x_j$, $(\partial/\partial x_j)^{*} = -\partial/\partial x_j$ | Flat Dirac-type operator, formally self-adjoint |
@@ -137,7 +137,7 @@ The adjoint is an involutive, $\sigma$-antilinear, anti-multiplicative map on th
 
 ## Further Reading
 
-- H. Blaine Lawson and Marie-Louise Michelsohn, *Spin Geometry* (Princeton University Press, 1989), for the Clifford action on a Hermitian module and the skew-adjointness of the coefficients that makes the Dirac operator self-adjoint.
+- H. Blaine Lawson and Marie-Louise Michelsohn, *Spin Geometry* (Princeton University Press, 1989), for the Clifford action on a Hermitian module and the anti-self-adjointness of the coefficients that makes the Dirac operator self-adjoint.
 - Nicole Berline, Ezra Getzler and Michèle Vergne, *Heat Kernels and Dirac Operators*, Grundlehren der mathematischen Wissenschaften 298 (Springer, 1992), for the Clifford module with Hermitian structure as the data of a Dirac operator, and for the compatibility of the connection with the form.
 - Richard V. Kadison and John R. Ringrose, *Fundamentals of the Theory of Operator Algebras I*, Graduate Studies in Mathematics 15 (American Mathematical Society, 1997), for $*$-representations, the Hermitian-space adjoint and the structure of $*$-algebras of operators.
 - John C. Baez and Javier P. Muniain, *Gauge Fields, Knots and Gravity*, Series on Knots and Everything 4 (World Scientific, 1994), for the Clifford action, the adjoint and the formal self-adjointness of the Dirac operator in a form close to the computation here.

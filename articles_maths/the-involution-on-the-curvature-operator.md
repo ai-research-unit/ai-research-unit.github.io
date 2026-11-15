@@ -26,7 +26,7 @@ $$
 
 Equivalently, the curvature is a section of $\Lambda^2T^*M\otimes\Lambda^2T^*M$: it is a two-form in the pair $(X, Y)$ and a two-form in the pair $(Z, W)$.
 
-**Proof.** The first identity is $R(X,Y) = -R(Y,X)$, which is the antisymmetry of the curvature operator of *The Curvature Operator*, proved from the antisymmetry of the Lie bracket and the connection. The second is the metricity of the connection read on the curvature, $R(X,Y,Z,W) = -R(X,Y,W,Z)$, which follows because $R(X,Y)$ is a skew-adjoint endomorphism of the tangent space for the metric; the skew-adjointness is the identity $\langle R(X,Y)Z,W\rangle = -\langle Z,R(X,Y)W\rangle$, which is the definition of the curvature of the Levi-Civita connection as a metric connection.
+**Proof.** The first identity is $R(X,Y) = -R(Y,X)$, which is the antisymmetry of the curvature operator of *The Curvature Operator*, proved from the antisymmetry of the Lie bracket and the connection. The second is the metricity of the connection read on the curvature, $R(X,Y,Z,W) = -R(X,Y,W,Z)$, which follows because $R(X,Y)$ is an anti-self-adjoint endomorphism of the tangent space for the metric; the anti-self-adjointness is the identity $\langle R(X,Y)Z,W\rangle = -\langle Z,R(X,Y)W\rangle$, which is the definition of the curvature of the Levi-Civita connection as a metric connection.
 
 ### The Pair Symmetry and the Bianchi Identity
 

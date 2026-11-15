@@ -86,7 +86,7 @@ $$
 
 ## The Two Halves and the Hermitian Space
 
-**Proposition.** The exponential of a Hermitian matrix is Hermitian and positive definite, and the exponential of a anti-Hermitian matrix is unitary.
+**Proposition.** The exponential of a Hermitian matrix is Hermitian and positive definite, and the exponential of an anti-Hermitian matrix is unitary.
 
 **Proof.** If $X^{*}=\pm X$ then $(e^{X})^{*}=e^{X^{*}}=e^{\pm X}$, which is $e^{X}$ in the Hermitian case and $(e^{X})^{-1}$ in the anti-Hermitian case; and the eigenvalues of $e^{X}$ in the Hermitian case are the exponentials of the real eigenvalues, hence positive.
 

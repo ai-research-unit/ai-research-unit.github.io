@@ -27,7 +27,7 @@ such that for all $f, g, h \in C^\infty(M)$:
 
 A **Poisson manifold** is a pair $(M, \{\cdot, \cdot\})$ of a manifold and a Poisson structure on it.
 
-The Leibniz rule in each argument says that the bracket is a **biderivation** of the commutative algebra $C^\infty(M)$: it is a derivation in each slot separately, and it is not assumed to be a derivation of the bracket itself. By the universal property of the exterior algebra, a antisymmetric biderivation is the same thing as a section of the bundle $\Lambda^2 TM$: there is a unique bivector field $\pi \in \Gamma(\Lambda^2TM)$ with
+The Leibniz rule in each argument says that the bracket is a **biderivation** of the commutative algebra $C^\infty(M)$: it is a derivation in each slot separately, and it is not assumed to be a derivation of the bracket itself. By the universal property of the exterior algebra, an antisymmetric biderivation is the same thing as a section of the bundle $\Lambda^2 TM$: there is a unique bivector field $\pi \in \Gamma(\Lambda^2TM)$ with
 
 $$
 \{f, g\} = \pi(df, dg) = \sum_{i, j} \pi_{ij}\, \partial/\partial x_i f\, \partial/\partial x_j g
@@ -221,7 +221,7 @@ A Poisson map preserves the bracket, a coisotropic submanifold is one whose vani
 |---|---|
 | $M$ | Smooth manifold; $T_xM$, $TM$, $T^*M$ the tangent and cotangent objects |
 | $\mathrm{X}(M)$, $\Omega^k(M)$ | Smooth vector fields and $k$-forms |
-| $\{\cdot,\cdot\}$ | The Poisson bracket on $C^\infty(M)$; skew, Leibniz, Jacobi |
+| $\{\cdot,\cdot\}$ | The Poisson bracket on $C^\infty(M)$; antisymmetric, Leibniz, Jacobi |
 | $\pi \in \Gamma(\Lambda^2TM)$ | Poisson bivector; $\{f,g\} = \pi(df,dg)$ |
 | $\pi_{ij}$ | Coefficients in $\pi = \frac12\sum_{i,j}\pi_{ij}\partial/\partial x_i\wedge\partial/\partial x_j$, $\pi_{ij}=-\pi_{ji}$ |
 | $\pi^{\sharp} : T^*M\to TM$ | Anchor, $\beta(\pi^{\sharp}\alpha)=\pi(\alpha,\beta)$ |

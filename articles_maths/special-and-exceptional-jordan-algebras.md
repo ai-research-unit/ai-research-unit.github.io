@@ -235,7 +235,7 @@ The simple formally real algebras of the classification are tabulated below with
 | $H_n(\mathbb{H})$, $n \geq 3$ | $n$ | $n(2n-1)$ | $\mathrm{Sp}(n)$ |
 | $H_3(\mathbb{O})$ | $3$ | $27$ | $\mathrm{F}_4$ |
 
-The degree of a simple Jordan algebra is the number of orthogonal idempotents in a maximal Jordan frame; it is the invariant that separates the spin factors from the matrix algebras, and it is the size of the matrix algebra in the matrix family. The derivation algebras are the classical skew algebras for the matrix family and the exceptional algebra $\mathrm{F}_4$ for the Albert algebra; the table is the precise form of the classification statement of *Jordan Algebras*.
+The degree of a simple Jordan algebra is the number of orthogonal idempotents in a maximal Jordan frame; it is the invariant that separates the spin factors from the matrix algebras, and it is the size of the matrix algebra in the matrix family. The derivation algebras are the classical antisymmetric algebras for the matrix family and the exceptional algebra $\mathrm{F}_4$ for the Albert algebra; the table is the precise form of the classification statement of *Jordan Algebras*.
 
 ## Summary
 

@@ -3,15 +3,15 @@
 
 ## Introduction
 
-An involution of an algebra orders it. Once an element $x$ has a conjugate $x^{\dagger}$, the elements fixed by the conjugation play the role of the real numbers of the algebra, the elements of the form $x^{\dagger}x$ play the role of the squares of lengths, and the question whether the latter are "positive" is the question whether the conjugation is a **positive involution**. On a Clifford algebra over an involutive base all three notions are available, and they are what this article treats: the self-adjoint and skew elements, the decomposition of the algebra into the two, the cone of elements $x^{\dagger}x$, the condition under which the dagger is a positive involution, the polar decomposition and the Cartan involution of the group of units.
+An involution of an algebra orders it. Once an element $x$ has a conjugate $x^{\dagger}$, the elements fixed by the conjugation play the role of the real numbers of the algebra, the elements of the form $x^{\dagger}x$ play the role of the squares of lengths, and the question whether the latter are "positive" is the question whether the conjugation is a **positive involution**. On a Clifford algebra over an involutive base all three notions are available, and they are what this article treats: the self-adjoint and anti-Hermitian elements, the decomposition of the algebra into the two, the cone of elements $x^{\dagger}x$, the condition under which the dagger is a positive involution, the polar decomposition and the Cartan involution of the group of units.
 
 The positivity is not automatic, and the article isolates exactly when it holds. The scalar form $\mathrm{Sc}(x^{\dagger}x)$, which is the form at the two equal arguments of the dagger of *The Blade Form and the Hermitian Structure with Hermitian Adjoint*, is positive definite exactly when the quadratic form is **negative definite**; in that case the algebra is a finite-dimensional $C^{*}$-algebra of the canonical anticommutation relations, the cone $\{x^{\dagger}x\}$ is the positive cone, and every element has a polar decomposition $x = u|x|$ with $u$ unitary. For a positive definite quadratic form the good involution is the other one and the dagger is indefinite, so the Euclidean structure and the Hermitian structure are exchanged by a change of signature. This is the same exchange that the previous article recorded at the level of forms and that *Hermitian Forms on a Hermitian Algebra with Hermitian Adjoint* recorded at the level of signatures; here it becomes the statement that positivity chooses a side.
 
 The algebra-valued forms are *Hermitian Forms on a Hermitian Algebra with Hermitian Adjoint*; the scalar forms are *The Blade Form and the Hermitian Structure with Hermitian Adjoint*; the group of units on which the Cartan involution acts is *The Unitary Slice and the Compact Real Form with Hermitian Adjoint*; the symmetric space it defines belongs to *Symmetric Spaces* and its Jordan description to *Jordan Algebras and the Positive Cone*; the infinite-dimensional $C^{*}$-algebra is *Infinite-Dimensional Clifford Algebras and CAR with Inner Conjugation*; and the spin-factor case is *Spin Factors and the Clifford Envelope with Inner Conjugation*.
 
-## Self-Adjoint and Skew Elements
+## Self-Adjoint and Anti-Hermitian Elements
 
-**Definition.** Let $\sigma$ be an involution of the base $A$ and let ${}^{\dagger}$ be the induced dagger, $x^{\dagger} = \sigma(\alpha(x^{r}))$. An element $x$ is **self-adjoint** or **Hermitian** if $x^{\dagger} = x$, and **skew-adjoint** if $x^{\dagger} = -x$. Write
+**Definition.** Let $\sigma$ be an involution of the base $A$ and let ${}^{\dagger}$ be the induced dagger, $x^{\dagger} = \sigma(\alpha(x^{r}))$. An element $x$ is **self-adjoint** or **Hermitian** if $x^{\dagger} = x$, and **anti-self-adjoint** if $x^{\dagger} = -x$. Write
 
 $$
 \mathrm{Herm}(V,\mathfrak{Q}) = \{\, x : x^{\dagger} = x \,\}, \qquad \mathrm{Skew}(V,\mathfrak{Q}) = \{\, x : x^{\dagger} = -x \,\}.
@@ -25,13 +25,13 @@ $$
 
 and the splitting is exactly the eigen-decomposition of the involution.
 
-**Proof.** $(x^{\dagger})^{\dagger} = x$ gives $\mathrm{Herm} \cap \mathrm{Skew} = 0$, and the displayed formula gives the sum, with the first summand self-adjoint by $\dagger^{2} = \mathrm{id}$ and the second skew.
+**Proof.** $(x^{\dagger})^{\dagger} = x$ gives $\mathrm{Herm} \cap \mathrm{Skew} = 0$, and the displayed formula gives the sum, with the first summand self-adjoint by $\dagger^{2} = \mathrm{id}$ and the second anti-Hermitian.
 
 **Proposition.** For every $x$, the product $x^{\dagger}x$ is self-adjoint.
 
 **Proof.** $(x^{\dagger}x)^{\dagger} = x^{\dagger}(x^{\dagger})^{\dagger} = x^{\dagger}x$.
 
-**Example (the low-dimensional picture).** In the definite negative algebra $\mathrm{Cl}_{0,n}$ the dagger is Clifford conjugation $x^{\dagger} = x^{\natural}$, which fixes the scalars, negates the vectors and acts on a blade by $(-1)^{k(k+1)/2}$; so the scalars and the blades of degree $k \equiv 0,3 \pmod 4$ are self-adjoint and those of degree $k \equiv 1,2 \pmod 4$ are skew. In particular the vectors are **skew**-adjoint and the bivectors are **skew**-adjoint in this convention, which is the one in which the spin group is generated by products of pairs of vectors: the Lie algebra of the group lies in the skew part, as it must.
+**Example (the low-dimensional picture).** In the definite negative algebra $\mathrm{Cl}_{0,n}$ the dagger is Clifford conjugation $x^{\dagger} = x^{\natural}$, which fixes the scalars, negates the vectors and acts on a blade by $(-1)^{k(k+1)/2}$; so the scalars and the blades of degree $k \equiv 0,3 \pmod 4$ are self-adjoint and those of degree $k \equiv 1,2 \pmod 4$ are anti-Hermitian. In particular the vectors are **anti-Hermitian**-adjoint and the bivectors are **anti-Hermitian**-adjoint in this convention, which is the one in which the spin group is generated by products of pairs of vectors: the Lie algebra of the group lies in the anti-Hermitian part, as it must.
 
 ## The Cone
 
@@ -88,7 +88,7 @@ $$
 \mathrm{J}(x) = \bigl(x^{\dagger}\bigr)^{-1}.
 $$
 
-**Proposition.** $\mathrm{J}$ is an automorphism of order two of the group of units, and its fixed set is exactly the unitary slice $U = \{x : x^{\dagger}x = 1\}$. Its differential at the identity is $\mathrm{d}\mathrm{J} = -{}^{\dagger}$, which is $+1$ on the skew part and $-1$ on the self-adjoint part.
+**Proposition.** $\mathrm{J}$ is an automorphism of order two of the group of units, and its fixed set is exactly the unitary slice $U = \{x : x^{\dagger}x = 1\}$. Its differential at the identity is $\mathrm{d}\mathrm{J} = -{}^{\dagger}$, which is $+1$ on the anti-Hermitian part and $-1$ on the self-adjoint part.
 
 **Proof.** $\mathrm{J}(xy) = ((xy)^{\dagger})^{-1} = (y^{\dagger}x^{\dagger})^{-1} = (x^{\dagger})^{-1}(y^{\dagger})^{-1} = \mathrm{J}(x)\mathrm{J}(y)$, so $\mathrm{J}$ is an automorphism. For the order, $((x^{\dagger})^{-1})^{\dagger} = ((x^{\dagger})^{\dagger})^{-1} = x^{-1}$, so $\mathrm{J}^{2}(x) = (x^{-1})^{-1} = x$. The fixed set is $\{x : (x^{\dagger})^{-1} = x\} = \{x : x^{\dagger}x = 1\} = U$. For the differential, $\mathrm{J}(1 + tu) \equiv 1 - tu^{\dagger}$ to first order, so $\mathrm{d}\mathrm{J}(u) = -u^{\dagger}$, which is $u$ on $\mathrm{Skew}$ and $-u$ on $\mathrm{Herm}$.
 
@@ -108,13 +108,13 @@ $$
 
 so $[\mathrm{Skew},\mathrm{Skew}] \subseteq \mathrm{Skew}$; the other two are the same computation with the signs of one or both arguments changed.
 
-**Corollary.** $\mathrm{Skew}(V,\mathfrak{Q})$ is closed under the bracket and is the Lie algebra of the unitary slice in *The Unitary Slice and the Compact Real Form with Hermitian Adjoint*; the complement $\mathrm{Herm}(V,\mathfrak{Q})$ is the tangent space of the symmetric space of the Cartan involution, in the sense of *Symmetric Spaces*. When the dagger is positive this is the Cartan decomposition of a compact group and the space is a compact symmetric space; the example worked out in the corpus is $\mathrm{Cl}_{0,3}$, where the skew part is the Lie algebra of $\mathrm{Spin}(3)$ and the Hermitian part carries the spin-factor structure of *Spin Factors and the Clifford Envelope with Inner Conjugation*.
+**Corollary.** $\mathrm{Skew}(V,\mathfrak{Q})$ is closed under the bracket and is the Lie algebra of the unitary slice in *The Unitary Slice and the Compact Real Form with Hermitian Adjoint*; the complement $\mathrm{Herm}(V,\mathfrak{Q})$ is the tangent space of the symmetric space of the Cartan involution, in the sense of *Symmetric Spaces*. When the dagger is positive this is the Cartan decomposition of a compact group and the space is a compact symmetric space; the example worked out in the corpus is $\mathrm{Cl}_{0,3}$, where the anti-Hermitian part is the Lie algebra of $\mathrm{Spin}(3)$ and the Hermitian part carries the spin-factor structure of *Spin Factors and the Clifford Envelope with Inner Conjugation*.
 
 **Remark (the cone and the spin factor).** In the three-dimensional definite case the positive cone of the spin factor is the cone over the sphere of radius $1/2$ generated by the idempotents, and the quadratic form of the spin factor is the restriction of the scalar part of the dagger form. This is the point of contact with the Jordan theory of *Jordan Algebras and the Positive Cone*, and it is the reason the algebra of the three-dimensional Euclidean space carries both a Clifford and a Jordan structure.
 
 ## Summary
 
-The dagger makes a Clifford algebra an algebra with involution, with self-adjoint and skew parts and the splitting $\mathrm{Cl} = \mathrm{Herm}\oplus\mathrm{Skew}$ when $2$ is invertible, and with $x^{\dagger}x$ self-adjoint for every $x$. The **Hermitian cone** $P = \{x^{\dagger}x\}$ is the set of squares; the involution is **positive** exactly when the scalar form of the dagger is positive definite, which happens exactly for a negative definite quadratic form, where $\mathrm{Sc}(x^{\dagger}x) = \sum_I a_I^{2}$; a positive definite form instead makes reversion positive and exchanges the two sides by $e_i \mapsto ie_i$. When the involution is positive the algebra is a finite-dimensional $C^{*}$-algebra, $P$ is its positive cone, and every element has a polar decomposition $x = u|x|$ with $u$ in the unitary slice, which is the quaternion polar decomposition when the algebra is $\mathbb{H}$. The **Cartan involution** $\mathrm{J}(x) = (x^{\dagger})^{-1}$ is an automorphism of order two of the group of units whose fixed set is exactly the unitary slice, and the induced Lie-algebra decomposition is that of a symmetric space: $[\mathrm{Skew},\mathrm{Skew}] \subseteq \mathrm{Skew}$, $[\mathrm{Skew},\mathrm{Herm}] \subseteq \mathrm{Herm}$, $[\mathrm{Herm},\mathrm{Herm}] \subseteq \mathrm{Skew}$, so the skew part is the Lie algebra of the unitary group and the self-adjoint part is the tangent space of the symmetric space.
+The dagger makes a Clifford algebra an algebra with involution, with self-adjoint and anti-Hermitian parts and the splitting $\mathrm{Cl} = \mathrm{Herm}\oplus\mathrm{Skew}$ when $2$ is invertible, and with $x^{\dagger}x$ self-adjoint for every $x$. The **Hermitian cone** $P = \{x^{\dagger}x\}$ is the set of squares; the involution is **positive** exactly when the scalar form of the dagger is positive definite, which happens exactly for a negative definite quadratic form, where $\mathrm{Sc}(x^{\dagger}x) = \sum_I a_I^{2}$; a positive definite form instead makes reversion positive and exchanges the two sides by $e_i \mapsto ie_i$. When the involution is positive the algebra is a finite-dimensional $C^{*}$-algebra, $P$ is its positive cone, and every element has a polar decomposition $x = u|x|$ with $u$ in the unitary slice, which is the quaternion polar decomposition when the algebra is $\mathbb{H}$. The **Cartan involution** $\mathrm{J}(x) = (x^{\dagger})^{-1}$ is an automorphism of order two of the group of units whose fixed set is exactly the unitary slice, and the induced Lie-algebra decomposition is that of a symmetric space: $[\mathrm{Skew},\mathrm{Skew}] \subseteq \mathrm{Skew}$, $[\mathrm{Skew},\mathrm{Herm}] \subseteq \mathrm{Herm}$, $[\mathrm{Herm},\mathrm{Herm}] \subseteq \mathrm{Skew}$, so the anti-Hermitian part is the Lie algebra of the unitary group and the self-adjoint part is the tangent space of the symmetric space.
 
 ## Summary of Notation
 
@@ -122,7 +122,7 @@ The dagger makes a Clifford algebra an algebra with involution, with self-adjoin
 |---|---|
 | $x^{\dagger}$ | The dagger $\sigma(\alpha(x^{r}))$ |
 | $\mathrm{Herm}(V,\mathfrak{Q})$ | Self-adjoint elements, $x^{\dagger}=x$ |
-| $\mathrm{Skew}(V,\mathfrak{Q})$ | Skew-adjoint elements, $x^{\dagger}=-x$ |
+| $\mathrm{Skew}(V,\mathfrak{Q})$ | Anti-self-adjoint elements, $x^{\dagger}=-x$ |
 | $P = \{x^{\dagger}x\}$ | Hermitian cone of the algebra |
 | $\mathrm{Sc}(x^{\dagger}x)$ | Scalar form of the dagger, positive definite iff $q$ is negative definite |
 | $|x| = (x^{\dagger}x)^{1/2}$ | Absolute value, for a positive involution |

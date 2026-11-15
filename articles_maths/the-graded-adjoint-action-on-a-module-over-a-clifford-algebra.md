@@ -94,7 +94,7 @@ For $M=A$ with the left regular action, the graded dual is $A^\vee$ and the adjo
 
 ### The Spinor Module
 
-For the graded spinor module $S=S^+\oplus S^-$ of an even-dimensional Clifford algebra, the graded dual is $S^\vee=(S^+)^*\oplus(S^-)^*$ and the adjoint action interchanges the two summands; with the spinor inner product of *Hermitian Clifford Structures* the dual is identified with the conjugate module, and the adjoint action is the ordinary Clifford multiplication there, the Koszul sign reproducing the skew-adjointness $c(v)^*=-c(v)$ on the odd functionals.
+For the graded spinor module $S=S^+\oplus S^-$ of an even-dimensional Clifford algebra, the graded dual is $S^\vee=(S^+)^*\oplus(S^-)^*$ and the adjoint action interchanges the two summands; with the spinor inner product of *Hermitian Clifford Structures* the dual is identified with the conjugate module, and the adjoint action is the ordinary Clifford multiplication there, the Koszul sign reproducing the anti-self-adjointness $c(v)^*=-c(v)$ on the odd functionals.
 
 ### The Exterior Algebra
 

@@ -53,7 +53,7 @@ the spin curvature is the image of the curvature form of the Levi-Civita connect
 
 ### Compatibility with the Metric and the Clifford Action
 
-**Given.** The spinor bundle carries a Hermitian form $h$ for which the Clifford multiplication is skew-adjoint, $c(v)^*=-c(v)$, as in *Spin Geometry* and *Adjoints on a Clifford Module*; the form is induced from a Hermitian form on the spin module $\Delta_n$ invariant under $\operatorname{Spin}(n)$, and it is positive definite.
+**Given.** The spinor bundle carries a Hermitian form $h$ for which the Clifford multiplication is anti-self-adjoint, $c(v)^*=-c(v)$, as in *Spin Geometry* and *Adjoints on a Clifford Module*; the form is induced from a Hermitian form on the spin module $\Delta_n$ invariant under $\operatorname{Spin}(n)$, and it is positive definite.
 
 **Proposition.** The spin connection is compatible with the Hermitian form,
 
@@ -63,7 +63,7 @@ $$
 
 and with the Clifford multiplication in the sense of the derivation identity above. These two compatibilities characterise it among the connections on $\mathcal{S}$.
 
-**Proof.** Compatibility with $h$ holds for the associated connection of any connection whose structure group acts by isometries of the fibre form, since $\operatorname{Spin}(n)$ acts unitarily on $\Delta_n$; concretely, the spin connection form is skew-adjoint because $c(e_i)c(e_j)$ is skew-adjoint for $i\neq j$, so the defining first-order operator is skew-adjoint for $h$. Compatibility with the Clifford action is the derivation identity, and the two properties characterise the connection because their difference is a one-form with values in the endomorphisms of $\mathcal{S}$ annihilated by the Clifford algebra, which is zero on an irreducible spinor bundle.
+**Proof.** Compatibility with $h$ holds for the associated connection of any connection whose structure group acts by isometries of the fibre form, since $\operatorname{Spin}(n)$ acts unitarily on $\Delta_n$; concretely, the spin connection form is anti-self-adjoint because $c(e_i)c(e_j)$ is anti-self-adjoint for $i\neq j$, so the defining first-order operator is anti-self-adjoint for $h$. Compatibility with the Clifford action is the derivation identity, and the two properties characterise the connection because their difference is a one-form with values in the endomorphisms of $\mathcal{S}$ annihilated by the Clifford algebra, which is zero on an irreducible spinor bundle.
 
 **Remark (why the spin connection is the geometric operator of the article).** The spin structure is a choice of a lift of the frame bundle, and the spin connection is what that choice buys: the Levi-Civita connection alone is defined on tensors, and its action on spinors is not defined until the structure group is lifted. Once lifted, the spin connection is the unique differentiation compatible with the metric, the Clifford action and the module form; every other operator of the spin geometry is built from it and the Clifford multiplication, and no further choice enters.
 

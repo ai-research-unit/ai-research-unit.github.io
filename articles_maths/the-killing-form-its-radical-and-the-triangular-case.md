@@ -36,7 +36,7 @@ $$
 B([A,X],Y)+B(X,[A,Y])=0,
 $$
 
-which follows from the formula and was checked numerically. So the Killing form is the invariant form that the derivation algebra acts by skew maps, and it is the form used in the reductivity criterion.
+which follows from the formula and was checked numerically. So the Killing form is the invariant form that the derivation algebra acts by anti-self-adjoint maps, and it is the form used in the reductivity criterion.
 
 ## The Radical and the Reductive Splitting
 

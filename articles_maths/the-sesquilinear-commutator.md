@@ -78,11 +78,11 @@ $$
 [A,A]_{\varsigma}\subseteq S(A),
 $$
 
-and it is a antisymmetric $R^{\varsigma}$-bilinear map $A\times A\to S(A)$.
+and it is an antisymmetric $R^{\varsigma}$-bilinear map $A\times A\to S(A)$.
 
 **Proof.** The conjugate of a product reverses it, $(x\star y)^{*}=y\star x$, so $[x,y]_{\varsigma}^{*}=(y\star x)-(x\star y)=-[x,y]_{\varsigma}$.
 
-**Remark.** The values are anti-Hermitian for every pair and not merely for anti-Hermitian arguments, so the bracket is an operator $A\times A\to S(A)$ and its image never meets $H(A)$ unless it vanishes. This is the second sharp difference from the ordinary commutator, which moves between the two halves: the commutator of two Hermitian elements is anti-Hermitian, of a Hermitian and a anti-Hermitian element Hermitian, of two anti-Hermitian elements anti-Hermitian, so that $S(A)$ is its even part and $H(A)$ its odd part. The sesquilinear bracket has only the first of those three behaviours, and it has it everywhere.
+**Remark.** The values are anti-Hermitian for every pair and not merely for anti-Hermitian arguments, so the bracket is an operator $A\times A\to S(A)$ and its image never meets $H(A)$ unless it vanishes. This is the second sharp difference from the ordinary commutator, which moves between the two halves: the commutator of two Hermitian elements is anti-Hermitian, of a Hermitian and an anti-Hermitian element Hermitian, of two anti-Hermitian elements anti-Hermitian, so that $S(A)$ is its even part and $H(A)$ its odd part. The sesquilinear bracket has only the first of those three behaviours, and it has it everywhere.
 
 ## The Two Halves
 
@@ -156,7 +156,7 @@ The Lie structure that a sesqualgebra carries is on $S(A)$, where the bracket is
 
 ### The Other Exchange, and the Other Antisymmetric Half
 
-The bracket is the antisymmetric half of the **plain** exchange, the swap of the two arguments. The other exchange, by a conjugation $c$, $f^{c}(x,y)=c(f(y,x))$, keeps the class of the sesquilinear products, and its antisymmetric half is the **skew-conjugate-symmetric part** $f^{c}_{-}=\tfrac12(f-f^{c})$ of *The Conjugate-Symmetric and Skew-Conjugate-Symmetric Parts of a Sesquilinear Product*. That half is sesquilinear over $R$, where the bracket of this article is only linear over the fixed ring, and it is another operation: on the biquaternion sesqualgebra over $(\mathbb{C},\bar{\cdot})$ with the derived operation $x\star y=xy^{*}$ and $c=\overline{\cdot}$ it is the **vector part** of the product, $\tfrac12\bigl(\tilde{Q}_1\tilde{Q}_2^{*}-\bigl(\tilde{Q}_1\tilde{Q}_2^{*}\bigr)^{\natural}\bigr)=\mathrm{Vect}(\tilde{Q}_1\tilde{Q}_2^{*})$, whose symmetric partner is the scalar part $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$. The bracket and the skew-conjugate-symmetric part are the two antisymmetric halves of the one product, taken under the two exchanges, and the twelve names of *Symmetric and Antisymmetric Decomposition of the Four General Products* belong to the plain one.
+The bracket is the antisymmetric half of the **plain** exchange, the swap of the two arguments. The other exchange, by a conjugation $c$, $f^{c}(x,y)=c(f(y,x))$, keeps the class of the sesquilinear products, and its antisymmetric half is the **skew-conjugate-symmetric part** $f^{c}_{-}=\tfrac12(f-f^{c})$ of *The Conjugate-Symmetric and Antisymmetric-Conjugate-Symmetric Parts of a Sesquilinear Product*. That half is sesquilinear over $R$, where the bracket of this article is only linear over the fixed ring, and it is another operation: on the biquaternion sesqualgebra over $(\mathbb{C},\bar{\cdot})$ with the derived operation $x\star y=xy^{*}$ and $c=\overline{\cdot}$ it is the **vector part** of the product, $\tfrac12\bigl(\tilde{Q}_1\tilde{Q}_2^{*}-\bigl(\tilde{Q}_1\tilde{Q}_2^{*}\bigr)^{\natural}\bigr)=\mathrm{Vect}(\tilde{Q}_1\tilde{Q}_2^{*})$, whose symmetric partner is the scalar part $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$. The bracket and the skew-conjugate-symmetric part are the two antisymmetric halves of the one product, taken under the two exchanges, and the twelve names of *Symmetric and Antisymmetric Decomposition of the Four General Products* belong to the plain one.
 
 ## Summary
 
@@ -182,6 +182,6 @@ The sesquilinear commutator is the difference of the product and its transpose, 
 ## Further Reading
 
 - I. N. Herstein, *Rings with Involution* (University of Chicago Press, 1976), for the two halves of a ring with involution and the operations they carry.
-- Nathan Jacobson, *Structure of Rings*, American Mathematical Society Colloquium Publications 37 (1964), for the antisymmetrisation of an associative algebra and the Lie algebra of the skew elements.
-- Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions*, American Mathematical Society Colloquium Publications 44 (1998), for the skew elements of an algebra with involution and the Lie structure they carry.
+- Nathan Jacobson, *Structure of Rings*, American Mathematical Society Colloquium Publications 37 (1964), for the antisymmetrisation of an associative algebra and the Lie algebra of the anti-Hermitian elements.
+- Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions*, American Mathematical Society Colloquium Publications 44 (1998), for the anti-Hermitian elements of an algebra with involution and the Lie structure they carry.
 - The companion articles of this series: [Sesqualgebras](sesqualgebras.html), [The Sesquilinear Product](the-sesquilinear-product.html), [The Sesquilinear Symmetrised Product](the-sesquilinear-symmetrised-product.html), [Hermitian and Anti-Hermitian Elements](hermitian-and-anti-hermitian-elements.html), [The Sesquilinear Associator and the Ternary Product](the-sesquilinear-associator-and-the-ternary-product.html), [Lie Algebras of Sesqualgebras](lie-algebras-of-sesqualgebras.html) and [The Unitary Lie Algebra](the-unitary-lie-algebra.html).

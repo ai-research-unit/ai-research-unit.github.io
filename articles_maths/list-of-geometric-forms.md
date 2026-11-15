@@ -92,7 +92,7 @@ The norms of the number systems are the examples through which the general theor
 | Object | Why the expected statement fails | Introduced in |
 |---|---|---|
 | a quadratic form over $\mathbb{F}_2$ | the polar form does not determine the quadratic form when $2$ is not invertible; the correspondence is an obstruction, not a bijection | *Quadratic Forms and Polarisation* |
-| an alternating form in characteristic $2$ | it is not the same as a antisymmetric form; antisymmetry with $\omega(u,u) = 0$ is the condition available over every ring | *The Determinant and Alternating Forms*; *Symplectic Forms and Poisson Brackets* |
+| an alternating form in characteristic $2$ | it is not the same as an antisymmetric form; antisymmetry with $\omega(u,u) = 0$ is the condition available over every ring | *The Determinant and Alternating Forms*; *Symplectic Forms and Poisson Brackets* |
 | the split octonions | their norm is isotropic, unlike the norm of the division algebra $\mathbb{O}$; the two are different forms of the same dimension | *Quadratic Forms over Algebras and Norms* |
 | the classification over $\mathbb{Q}$ | it is not read from the signature alone; the Hasse–Minkowski principle needs the local invariants at the completions | *Witt's Theorems* |
 | the Hermitian form over a non-commutative ring | the diagonal $\mathfrak{Q}(x) = s(x,x)$ is a quadratic form over the fixed ring and not over the base; the transfer is part of the theory | *Hilbert Algebras* |

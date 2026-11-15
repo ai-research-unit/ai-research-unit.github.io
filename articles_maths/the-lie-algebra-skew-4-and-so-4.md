@@ -16,7 +16,7 @@ It assumes *The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=
 
 **Corollary.** $\operatorname{Skew}_4=\mathfrak{so}(4)$ is the Lie algebra of the orthogonal group, $\mathfrak{so}(4)=\{X:X+X^{\mathsf T}=0\}$.
 
-**Proof.** The Lie algebra of the group preserving a bilinear form is the set of endomorphisms skew for it; the standard form gives the antisymmetric matrices.
+**Proof.** The Lie algebra of the group preserving a bilinear form is the set of endomorphisms anti-self-adjoint for it; the standard form gives the antisymmetric matrices.
 
 **Proposition.** The trace pairing on $\operatorname{Skew}_4$ is negative definite: for $X,Y$ antisymmetric, $\operatorname{tr}(XY)=-2\sum_{i<j}x_{ij}y_{ij}$.
 

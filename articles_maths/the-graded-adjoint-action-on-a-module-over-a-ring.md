@@ -11,7 +11,7 @@ $$
 
 The **adjoint action** is the inner operator $\operatorname{ad}_x(y) = xy-(-1)^{\lvert x\rvert\lvert y\rvert}yx$ of the graded commutator; it is a graded derivation of degree $\lvert x\rvert$, it is compatible with the grading in the sense that it shifts the degree by $\lvert x\rvert$, and it is compatible with an involution $\sigma$ of degree zero exactly when $x$ lies in the appropriate eigenspace of $\sigma$. This article fixes the graded pairing on a graded module, computes the adjoint of a homogeneous operator, states the Koszul sign rule, and reads the adjoint action as a graded derivation with its sign.
 
-It assumes *The Graded Action on a Module over a Ring* for the graded action, *Involutions of the Endomorphism Ring* for the adjoint, *Star-Derivations and the Skew Derivations* for the inner derivations; the superalgebra of the sign rule is *Superalgebras and Graded Structures* and is named rather than used. Throughout, $A$ is a ring with a $\mathbb{Z}/2$-grading, $M$ is a graded module over $A$, the pairing $\langle-,-\rangle$ is biadditive and homogeneous of degree zero, homogeneous elements are written with their parity $\lvert a\rvert\in\mathbb{Z}/2$, and the sign $(-1)^{\lvert a\rvert\lvert b\rvert}$ is the Koszul sign.
+It assumes *The Graded Action on a Module over a Ring* for the graded action, *Involutions of the Endomorphism Ring* for the adjoint, *Star-Derivations and the Anti-Hermitian Derivations* for the inner derivations; the superalgebra of the sign rule is *Superalgebras and Graded Structures* and is named rather than used. Throughout, $A$ is a ring with a $\mathbb{Z}/2$-grading, $M$ is a graded module over $A$, the pairing $\langle-,-\rangle$ is biadditive and homogeneous of degree zero, homogeneous elements are written with their parity $\lvert a\rvert\in\mathbb{Z}/2$, and the sign $(-1)^{\lvert a\rvert\lvert b\rvert}$ is the Koszul sign.
 
 ## The Graded Pairing and the Adjoint
 
@@ -73,13 +73,13 @@ $$
 \boxed{\;\operatorname{ad}_x^{*_\sigma} = -\operatorname{ad}_{\delta(x)} , \qquad \delta = \sigma\alpha\;} ,
 $$
 
-with respect to the twisted pairing: the adjoint of the adjoint action is the adjoint action of $-\delta(x)$, so the adjoint action is skew-adjoint exactly when $\delta(x) = -x$.
+with respect to the twisted pairing: the adjoint of the adjoint action is the adjoint action of $-\delta(x)$, so the adjoint action is anti-self-adjoint exactly when $\delta(x) = -x$.
 
 **Proof.** $\operatorname{ad}_x = L_x-(-1)^{\lvert x\rvert\lvert\cdot\rvert}R_x$ is the difference of a signed left and a signed right multiplication, and the signed adjoints of the two are $T_{\delta(x)}$ and the corresponding signed right multiplication by $\delta(x)$, by *The Signed Adjoint of the Left Multiplication on a Ring*; the difference is $-\operatorname{ad}_{\delta(x)}$.
 
 ## Examples
 
-**(a) The exterior algebra.** For the exterior algebra of a module with the sign $(-1)^{\lvert x\rvert\lvert y\rvert}$, the adjoint action of a vector $v$ is the contraction-insertion operator $\operatorname{ad}_v(\omega) = v\omega-(-1)^{\lvert\omega\rvert}\omega v$, a graded derivation of degree one; its adjoint is $-\operatorname{ad}_v$ for the natural pairing, so the odd part acts by skew-adjoint operators.
+**(a) The exterior algebra.** For the exterior algebra of a module with the sign $(-1)^{\lvert x\rvert\lvert y\rvert}$, the adjoint action of a vector $v$ is the contraction-insertion operator $\operatorname{ad}_v(\omega) = v\omega-(-1)^{\lvert\omega\rvert}\omega v$, a graded derivation of degree one; its adjoint is $-\operatorname{ad}_v$ for the natural pairing, so the odd part acts by anti-self-adjoint operators.
 
 **(b) The Clifford algebra.** With the Clifford product and the grading by degree, the adjoint action of a vector is the commutator $[v,\omega] = v\omega-\omega v$ on the even part and the anti-commutator on the odd part, the sign rule of *Hilbert Algebras*; the adjoint is $-\operatorname{ad}_{\delta(v)}$, and for the dagger of that theory $\delta(v) = -v$, so the adjoint action is self-adjoint.
 
@@ -89,7 +89,7 @@ with respect to the twisted pairing: the adjoint of the adjoint action is the ad
 
 ## Summary
 
-On a graded module over a graded ring the pairing is graded and supersymmetric, $\langle y,x\rangle = (-1)^{\lvert x\rvert\lvert y\rvert}\langle x,y\rangle$, and the adjoint of a homogeneous operator is homogeneous of the same degree with the **Koszul sign rule** $(ST)^{*} = (-1)^{\lvert S\rvert\lvert T\rvert}T^{*}S^{*}$ for products. The **adjoint action** $\operatorname{ad}_x(y) = xy-(-1)^{\lvert x\rvert\lvert y\rvert}yx$ is a graded derivation of degree $\lvert x\rvert$, it satisfies the graded antisymmetry and the graded Jacobi identity, so the graded commutator makes the ring a graded Lie algebra and $\operatorname{ad}$ a representation of it with kernel the graded centre. With respect to the twisted pairing the adjoint of the adjoint action is $-\operatorname{ad}_{\delta(x)}$ for $\delta = \sigma\alpha$, so the adjoint action is skew-adjoint exactly when $\delta(x) = -x$; when the grading is trivial the whole article reduces to the ungraded adjoint involution and the ordinary commutator.
+On a graded module over a graded ring the pairing is graded and supersymmetric, $\langle y,x\rangle = (-1)^{\lvert x\rvert\lvert y\rvert}\langle x,y\rangle$, and the adjoint of a homogeneous operator is homogeneous of the same degree with the **Koszul sign rule** $(ST)^{*} = (-1)^{\lvert S\rvert\lvert T\rvert}T^{*}S^{*}$ for products. The **adjoint action** $\operatorname{ad}_x(y) = xy-(-1)^{\lvert x\rvert\lvert y\rvert}yx$ is a graded derivation of degree $\lvert x\rvert$, it satisfies the graded antisymmetry and the graded Jacobi identity, so the graded commutator makes the ring a graded Lie algebra and $\operatorname{ad}$ a representation of it with kernel the graded centre. With respect to the twisted pairing the adjoint of the adjoint action is $-\operatorname{ad}_{\delta(x)}$ for $\delta = \sigma\alpha$, so the adjoint action is anti-self-adjoint exactly when $\delta(x) = -x$; when the grading is trivial the whole article reduces to the ungraded adjoint involution and the ordinary commutator.
 
 ## Summary of Notation
 

@@ -121,7 +121,7 @@ $$
 (\alpha T)^{\mathrm{Cl}}=\bar\alpha\,T^{\mathrm{Cl}} \quad (\alpha\in\mathbb{K})\;} .
 $$
 
-An operator is **Clifford-self-adjoint** when $T^{\mathrm{Cl}}=T$, and **Clifford-skew** when
+An operator is **Clifford-self-adjoint** when $T^{\mathrm{Cl}}=T$, and **Clifford-anti-self-adjoint** when
 $T^{\mathrm{Cl}}=-T$.
 
 *Proof.* Non-degeneracy of the pairing turns the functional $t\mapsto(Ts,t)_A$ into an element of
@@ -163,7 +163,7 @@ $$
 (\alpha T)^{\dagger}=\bar\alpha\,T^{\dagger} ,
 $$
 
-and the operator is **self-adjoint** when $T^{\dagger}=T$, **skew-adjoint** when $T^{\dagger}=-T$,
+and the operator is **self-adjoint** when $T^{\dagger}=T$, **anti-self-adjoint** when $T^{\dagger}=-T$,
 **unitary** when $T^{\dagger}T=TT^{\dagger}=1$. These are the adjoint properties of *The Hilbert
 Adjoint on a Hilbert Module* (Part II); the unbounded case is the one of *Unbounded Operators and
 Spectral Measures*.
@@ -179,7 +179,7 @@ $$
 c(x)^{\dagger} = c(x^{*}) , \qquad x\in A .
 $$
 
-In particular the multiplication by a generator is skew-adjoint, $c(e_i)^{\dagger}=-c(e_i)$, and the
+In particular the multiplication by a generator is anti-self-adjoint, $c(e_i)^{\dagger}=-c(e_i)$, and the
 multiplication by a unit scalar is unitary.
 
 *Proof.* The pointwise module axiom $(x\cdot s,t)_{\mathbb{K}}=(s,x^{*}\cdot t)_{\mathbb{K}}$
@@ -253,7 +253,7 @@ $$
 \langle Df,g\rangle-\langle f,D^{\dagger}g\rangle = \int_{\partial\Omega}(c(\nu_B)f,g)_{\mathbb{K}}\,dS .
 $$
 
-*Proof.* The derivatives integrate by parts with a sign and the multiplications are skew or
+*Proof.* The derivatives integrate by parts with a sign and the multiplications are anti-Hermitian or
 Hermitian by the theorem above; the boundary term is the flux of the vector field $c(e_\mu)f$
 against $g$. The computation is the one of *Hermitian Hilbert Modules over a Clifford Algebra*, and
 the algebraic reason the multiplications make the result formally self-adjoint is Part II's *The
@@ -266,8 +266,8 @@ a real spectrum; the Clifford-adjoint of $D$ is $-(D)^{\mathrm{Cl}}$ computed wi
 algebra-valued form, and on the regular module it agrees with the Hermitian one whenever the module
 is $A$-linear over the algebra. The spectral theory is *Dirac Differential Operators*'.
 
-*Proof.* The multiplications by the generators are skew for both forms and the derivatives are
-formally skew, so $iD$ and $D_{\mathrm{sa}}$ are self-adjoint on the appropriate domains; the
+*Proof.* The multiplications by the generators are anti-self-adjoint for both forms and the derivatives are
+formally anti-Hermitian, so $iD$ and $D_{\mathrm{sa}}$ are self-adjoint on the appropriate domains; the
 Clifford statement is the same computation with the algebra-valued form, and the agreement is the
 theorem of the preceding section applied to the $A$-linear coefficient algebra.
 
@@ -313,7 +313,7 @@ $(ST)^{\mathrm{Cl}}=T^{\mathrm{Cl}} S^{\mathrm{Cl}}$, whose value on the regular
 $L_a^{\mathrm{Cl}}=L_{a^{*}}$ and $R_b^{\mathrm{Cl}}=R_{b^{*}}$; and the **Hermitian-adjoint**
 $T^{\dagger}$, the adjoint with respect to the scalar form, obeying the same involution laws, with
 $c(x)^{\dagger}=c(x^{*})$ for the pointwise multiplication and with the generators multiplying
-skew-adjointly. The two adjoints **coincide on the $A$-linear operators** — the intertwiners — and
+anti-self-adjointly. The two adjoints **coincide on the $A$-linear operators** — the intertwiners — and
 differ on general operators by the non-scalar part of the Clifford form; correspondingly the
 **Clifford-unitary** and the **unitary** groups of the module differ, the first containing the
 scalars that the second does not see. On the module of sections the Hermitian-adjoint of $D$ is

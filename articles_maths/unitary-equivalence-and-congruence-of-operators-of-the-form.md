@@ -18,7 +18,7 @@ $$
 U \cdot T = UTU^{\dagger} .
 $$
 
-Then $\cdot$ is a left action of the unitary group $\mathrm{U}(A,h)$ on $B(A)$: $1 \cdot T = T$ and $(UV)\cdot T = U\cdot(V\cdot T)$. The action preserves the adjoint, $(U\cdot T)^{\dagger} = U\cdot T^{\dagger}$, and it therefore preserves self-adjointness, skew-adjointness, normality and unitarity.
+Then $\cdot$ is a left action of the unitary group $\mathrm{U}(A,h)$ on $B(A)$: $1 \cdot T = T$ and $(UV)\cdot T = U\cdot(V\cdot T)$. The action preserves the adjoint, $(U\cdot T)^{\dagger} = U\cdot T^{\dagger}$, and it therefore preserves self-adjointness, anti-self-adjointness, normality and unitarity.
 
 *Proof.* The unit acts by $1T1 = T$, and $(UV)T(UV)^{\dagger} = U(VTV^{\dagger})U^{\dagger}$ by the anti-multiplicativity and the identity $(UV)^{\dagger} = V^{\dagger}U^{\dagger} = V^{-1}U^{-1}$. For the adjoint, $(UTU^{\dagger})^{\dagger} = (U^{\dagger})^{\dagger}T^{\dagger}U^{\dagger} = UT^{\dagger}U^{\dagger}$, using the order two of the adjoint operation. The preservation of the four properties is immediate from the preservation of the adjoint.
 
@@ -130,7 +130,7 @@ still positive definite, of inertia $(4,0,0)$ as Sylvester's law requires.
 
 ## Summary
 
-**Unitary equivalence**, $T \mapsto UTU^{\dagger}$, is the action of the **unitary group** on the operators of a fixed form; it preserves the adjoint, hence self-adjointness, skew-adjointness, normality and unitarity, and it preserves the spectrum, the modulus and the polar factors; for **normal** operators over the sesquilinear base the **spectrum** is the complete invariant. **Congruence**, $h \mapsto h_{C}$ with $h_{C}(x,y) = h(Cx,Cy)$, is the change of coordinates of the form; its Gram matrix transforms as $K = \Gamma^{T}H\varsigma(\Gamma)$, it preserves the **inertia** by **Sylvester's law**, and over either classical base the inertia is the complete invariant. The **unitary group is the stabiliser** of the form in the congruence action. A congruence transports the operator theory by the **similarity** $T \mapsto C^{-1}TC$, which preserves the spectrum and moves the form and the adjoint; the layer uses the congruence to bring the form to its diagonal model and the unitary equivalence to classify the operators on that model by their spectra.
+**Unitary equivalence**, $T \mapsto UTU^{\dagger}$, is the action of the **unitary group** on the operators of a fixed form; it preserves the adjoint, hence self-adjointness, anti-self-adjointness, normality and unitarity, and it preserves the spectrum, the modulus and the polar factors; for **normal** operators over the sesquilinear base the **spectrum** is the complete invariant. **Congruence**, $h \mapsto h_{C}$ with $h_{C}(x,y) = h(Cx,Cy)$, is the change of coordinates of the form; its Gram matrix transforms as $K = \Gamma^{T}H\varsigma(\Gamma)$, it preserves the **inertia** by **Sylvester's law**, and over either classical base the inertia is the complete invariant. The **unitary group is the stabiliser** of the form in the congruence action. A congruence transports the operator theory by the **similarity** $T \mapsto C^{-1}TC$, which preserves the spectrum and moves the form and the adjoint; the layer uses the congruence to bring the form to its diagonal model and the unitary equivalence to classify the operators on that model by their spectra.
 
 ## Summary of Notation
 

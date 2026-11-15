@@ -11,7 +11,7 @@ The ordered vector space and the order unit are *Ordered Vector Spaces and the O
 
 ## The Hermitian Part as an Ordered Space
 
-**Definition.** The **Hermitian part** of the involutive algebra $A$ is $H(A) = \{a : a^{*} = a\}$; the **skew part** is $\{a : a^{*} = -a\} = iH(A)$. The **order** of $H(A)$ is that of the cone, $h\leq k\iff k - h\in A_+$.
+**Definition.** The **Hermitian part** of the involutive algebra $A$ is $H(A) = \{a : a^{*} = a\}$; the **anti-Hermitian part** is $\{a : a^{*} = -a\} = iH(A)$. The **order** of $H(A)$ is that of the cone, $h\leq k\iff k - h\in A_+$.
 
 **Proposition (the Hermitian part is an ordered real vector space).** $H(A)$ is a real vector subspace of $A$ of real dimension $\dim_{\mathbb{C}}A$, closed under the **symmetrised product** $\{h,k\} = \frac12(hk + kh)$, and the cone $H(A)\cap A_+$ is a proper cone when $A$ is reduced; the identity is Hermitian and positive, $1 = 1^{*}1\in A_+$.
 

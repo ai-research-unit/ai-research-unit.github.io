@@ -30,11 +30,11 @@ $$
 
 **Proposition.** $UT_n\cap\operatorname{Skew}_n=\{0\}$.
 
-*Proof.* Let $A$ be upper triangular and skew. Skewness forces $A_{ii}=0$ and $A_{ij}=-A_{ji}$. Upper triangularity forces $A_{ij}=0$ for $i>j$. So every entry is zero: the diagonal by skewness, the lower part by triangularity, and the upper part by skewness together with the lower part.
+*Proof.* Let $A$ be upper triangular and anti-Hermitian. Antisymmetry forces $A_{ii}=0$ and $A_{ij}=-A_{ji}$. Upper triangularity forces $A_{ij}=0$ for $i>j$. So every entry is zero: the diagonal by skewness, the lower part by triangularity, and the upper part by skewness together with the lower part.
 
 **The measurement confirms the zero intersection.** On the union of the two bases the rank is the sum of the dimensions: $3+1=4$ at $n=2$, $6+3=9$ at $n=3$ and $10+6=16$ at $n=4$. A nonzero intersection would make the rank smaller.
 
-**The intersection is zero for a structural reason.** A skew matrix with zero lower part is zero, because skewness turns the upper part into the lower part with a sign. An upper triangular matrix has no lower part to supply, so the two conditions cancel each other.
+**The intersection is zero for a structural reason.** An antisymmetric matrix with zero lower part is zero, because skewness turns the upper part into the lower part with a sign. An upper triangular matrix has no lower part to supply, so the two conditions cancel each other.
 
 ## The Direct Sum
 
@@ -88,17 +88,17 @@ $$
 \operatorname{Skew}_n^{\perp}=\operatorname{Sym}_n,\qquad \operatorname{Sym}_n^{\perp}=\operatorname{Skew}_n.
 $$
 
-This is the content of *The Two Halves as Orthogonal Complements for the Trace Form*, and the proof is the identity $\operatorname{tr}(SK)=0$ for symmetric $S$ and skew $K$, together with the dimension count.
+This is the content of *The Two Halves as Orthogonal Complements for the Trace Form*, and the proof is the identity $\operatorname{tr}(SK)=0$ for symmetric $S$ and antisymmetric $K$, together with the dimension count.
 
 **$UT_n$ is not orthogonal to $\operatorname{Skew}_n$: if it were, it would equal $\operatorname{Sym}_n$.** The orthogonal complement $\operatorname{Skew}_n^{\perp}$ has dimension $n(n+1)/2$, and $UT_n\subseteq\operatorname{Skew}_n^{\perp}$ would force the equality $UT_n=\operatorname{Sym}_n$ because the dimensions agree. But $E_{12}$ is upper triangular and is not symmetric, so the inclusion fails.
 
-**An explicit pair is not orthogonal.** Take $T=E_{12}$ and $K=E_{21}-E_{12}$, which is skew. Then
+**An explicit pair is not orthogonal.** Take $T=E_{12}$ and $K=E_{21}-E_{12}$, which is antisymmetric. Then
 
 $$
 TK=E_{12}E_{21}-E_{12}E_{12}=E_{11},
 $$
 
-so $\operatorname{tr}(TK)=1$. The pairing of an upper triangular matrix with a skew matrix is therefore not always zero, and the complement is not orthogonal.
+so $\operatorname{tr}(TK)=1$. The pairing of an upper triangular matrix with an antisymmetric matrix is therefore not always zero, and the complement is not orthogonal.
 
 ## The Projection along the Antisymmetric Part
 
@@ -110,9 +110,9 @@ $$
 \pi(X)_{ii}=X_{ii},\qquad \pi(X)_{ij}=X_{ij}+X_{ji}\ (i<j),\qquad \pi(X)_{ij}=0\ (i>j).
 $$
 
-*Proof.* Put $T=\pi(X)$ and $K=X-T$. For $i>j$ the entry $T_{ij}$ is zero by the formula and $K_{ij}=X_{ij}$. For $i<j$ the condition $K_{ij}=-K_{ji}$ reads $X_{ij}-T_{ij}=-X_{ji}$, hence $T_{ij}=X_{ij}+X_{ji}$. The diagonal is untouched because a skew matrix has zero diagonal.
+*Proof.* Put $T=\pi(X)$ and $K=X-T$. For $i>j$ the entry $T_{ij}$ is zero by the formula and $K_{ij}=X_{ij}$. For $i<j$ the condition $K_{ij}=-K_{ji}$ reads $X_{ij}-T_{ij}=-X_{ji}$, hence $T_{ij}=X_{ij}+X_{ji}$. The diagonal is untouched because an antisymmetric matrix has zero diagonal.
 
-**Measured, the remainder is always skew.** On $100$ random matrices at each of $n=2,3,4$ the part $X-\pi(X)$ was skew in $100$ cases out of $100$, and $\pi(X)$ was upper triangular in every case.
+**Measured, the remainder is always anti-Hermitian.** On $100$ random matrices at each of $n=2,3,4$ the part $X-\pi(X)$ was anti-Hermitian in $100$ cases out of $100$, and $\pi(X)$ was upper triangular in every case.
 
 **The projection is not the symmetrisation.** On the diagonal the two maps agree, because both copy $X_{ii}$. Above the diagonal they differ by a factor two, since
 

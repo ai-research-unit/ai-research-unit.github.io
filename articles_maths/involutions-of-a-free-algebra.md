@@ -4,7 +4,7 @@
 
 A free algebra has no relations, so an involution of it is a map that has nowhere to hide: it is determined by what it does to the generators, and the only obstruction to its existence is the order-two condition. The free algebra on a set carries one canonical anti-involution that exists for every set, the **reversal of words**, which reads a word backwards; it carries also the involutive automorphisms given by signs and permutations of the generators. Every involutive quotient of a free algebra — the polynomial algebra, the exterior algebra, the group algebra — inherits its involution from one of these by descent.
 
-This article develops the free algebra, the reversal as its canonical anti-involution with its fixed and skew elements, the general anti-involution determined by the images of the generators and the condition for it to have order two, the involutive automorphisms determined by a signed permutation of the generators, and the descent to the quotients. The free algebra is the tensor algebra of the free linear space on the set, so the tensor-power theory is that of *Tensor Powers and the Free Algebra*, the induced reversal of the tensor algebra is that of *Involutions of the Tensor Algebra*, and the general theory of an involution on the elements is *Involutive Algebras*.
+This article develops the free algebra, the reversal as its canonical anti-involution with its fixed and anti-Hermitian elements, the general anti-involution determined by the images of the generators and the condition for it to have order two, the involutive automorphisms determined by a signed permutation of the generators, and the descent to the quotients. The free algebra is the tensor algebra of the free linear space on the set, so the tensor-power theory is that of *Tensor Powers and the Free Algebra*, the induced reversal of the tensor algebra is that of *Involutions of the Tensor Algebra*, and the general theory of an involution on the elements is *Involutive Algebras*.
 
 Throughout, $k$ is a field, $X$ is a set, and $F\langle X\rangle$ is the free associative $k$-algebra on $X$; its elements are the linear combinations of **words** in the elements of $X$, and a word is a finite sequence $x_1 x_2 \cdots x_n$ of generators. The free algebra is the tensor algebra of the free $k$-linear space with basis $X$, and the words of length $n$ span the $n$-th tensor power; the notation $F\langle X\rangle$ is that of *Tensor Powers and the Free Algebra*, and the modules and the ideals are those of *Modules over an Algebra* and *Ideals and Quotients of Algebras*.
 
@@ -42,17 +42,17 @@ and the **reversal map** on $F\langle X\rangle$ is the linear extension of $\mat
 
 *Proof.* For two words $u$ and $v$ one has $\mathrm{rev}(uv) = \mathrm{rev}(v)\mathrm{rev}(u)$, because reversing the concatenation reverses each factor and exchanges their order; the reversal fixes the empty word, so it extends to an anti-homomorphism, and it is bijective with inverse itself. It fixes every generator, and an anti-automorphism of $F\langle X\rangle$ fixing the generators is determined on them and hence everywhere by the universal property.
 
-### The Fixed and the Skew Elements
+### The Fixed and the Anti-Hermitian Elements
 
-**Proposition.** The reversal involution has fixed space spanned by the **palindromes** together with the sums $w + \mathrm{rev}(w)$ and skew part spanned by the differences $w - \mathrm{rev}(w)$; the underlying space decomposes as
+**Proposition.** The reversal involution has fixed space spanned by the **palindromes** together with the sums $w + \mathrm{rev}(w)$ and anti-Hermitian part spanned by the differences $w - \mathrm{rev}(w)$; the underlying space decomposes as
 
 $$
 \boxed{\;F\langle X\rangle = F\langle X\rangle^+ \oplus F\langle X\rangle^-, \qquad F\langle X\rangle^\pm = \{a : \mathrm{rev}(a) = \pm a\}\;},
 $$
 
-and the fixed space is the span of the symmetric combinations and the skew space the span of the antisymmetric ones.
+and the fixed space is the span of the symmetric combinations and the antisymmetric space the span of the antisymmetric ones.
 
-*Proof.* The map has order two, so its eigenvalues are $1$ and $-1$ and the space is the direct sum of the two eigenspaces, over a field of characteristic not two; a word is fixed exactly when it is a palindrome, and a word that is not a palindrome contributes the pair $w + \mathrm{rev}(w)$ to the fixed space and $w - \mathrm{rev}(w)$ to the skew space.
+*Proof.* The map has order two, so its eigenvalues are $1$ and $-1$ and the space is the direct sum of the two eigenspaces, over a field of characteristic not two; a word is fixed exactly when it is a palindrome, and a word that is not a palindrome contributes the pair $w + \mathrm{rev}(w)$ to the fixed space and $w - \mathrm{rev}(w)$ to the anti-Hermitian space.
 
 **Corollary.** The reversal is the identity exactly when every word is a palindrome, which is the case for $X$ empty, for $X$ with one element, and for a free algebra on one generator; it is the identity on the commutative quotients, where the words are identified with their reversals by the commutativity of the product, as in the polynomial algebra.
 
@@ -98,11 +98,11 @@ and the fixed space is the span of the symmetric combinations and the skew space
 
 ### One Generator
 
-For $X = \{x\}$ the free algebra is the polynomial algebra $k[x]$ in one variable, every word is a palindrome, the reversal is the identity, and the only signed permutation involution is $x \mapsto -x$, which is the grade involution of the degree grading of $T(k)$. The fixed skew decomposition is trivial in the skew part, since the reversal is the identity, and the example marks the degenerate case in which the canonical involution carries no information.
+For $X = \{x\}$ the free algebra is the polynomial algebra $k[x]$ in one variable, every word is a palindrome, the reversal is the identity, and the only signed permutation involution is $x \mapsto -x$, which is the grade involution of the degree grading of $T(k)$. The fixed anti-Hermitian decomposition is trivial in the anti-Hermitian part, since the reversal is the identity, and the example marks the degenerate case in which the canonical involution carries no information.
 
 ### Two Generators
 
-For $X = \{x,y\}$ the free algebra $F\langle x,y\rangle$ is the algebra of noncommutative polynomials in two variables, and its reversal is not the identity: the word $xy$ is reversed to $yx$ and the difference $xy - yx$ is skew, while $xy + yx$ is symmetric. The signed permutation involutions come from the identity and the transposition of the two generators, each with signs subject to the order-two condition; for the identity permutation the condition is $\epsilon(x)^2 = \epsilon(y)^2 = 1$ and the involutions are the four sign choices, among them the grade involution. The commutator ideal is stable, the quotient is the polynomial algebra $k[x,y]$, and the descended reversal is the identity there.
+For $X = \{x,y\}$ the free algebra $F\langle x,y\rangle$ is the algebra of noncommutative polynomials in two variables, and its reversal is not the identity: the word $xy$ is reversed to $yx$ and the difference $xy - yx$ is anti-Hermitian, while $xy + yx$ is symmetric. The signed permutation involutions come from the identity and the transposition of the two generators, each with signs subject to the order-two condition; for the identity permutation the condition is $\epsilon(x)^2 = \epsilon(y)^2 = 1$ and the involutions are the four sign choices, among them the grade involution. The commutator ideal is stable, the quotient is the polynomial algebra $k[x,y]$, and the descended reversal is the identity there.
 
 ### The Free Algebra on a Group
 
@@ -110,7 +110,7 @@ For $X = G$ a group, the free algebra on the elements of $G$ has the group algeb
 
 ## Summary
 
-The free algebra $F\langle X\rangle$ on a set $X$ has for basis the words in the generators, the product being concatenation, and it satisfies the universal property that every map $X \to B$ into an algebra extends uniquely to a homomorphism. Its **canonical anti-involution** is the **reversal** $\mathrm{rev}(x_1\cdots x_n) = x_n\cdots x_1$, the unique anti-automorphism fixing every generator; it has order two, its fixed space is spanned by the palindromes and the symmetric sums and its skew part by the antisymmetric differences, and it is the identity exactly when every word is a palindrome. Its **involutive automorphisms** are the **signed permutations** $x \mapsto \epsilon(x)x^{\pi}$ with $\pi^2 = \mathrm{id}$ and $\epsilon(\pi(x))\epsilon(x) = 1$, among them the grade involution $x \mapsto -x$, which acts on a word by the sign $(-1)^{|w|}$.
+The free algebra $F\langle X\rangle$ on a set $X$ has for basis the words in the generators, the product being concatenation, and it satisfies the universal property that every map $X \to B$ into an algebra extends uniquely to a homomorphism. Its **canonical anti-involution** is the **reversal** $\mathrm{rev}(x_1\cdots x_n) = x_n\cdots x_1$, the unique anti-automorphism fixing every generator; it has order two, its fixed space is spanned by the palindromes and the symmetric sums and its anti-Hermitian part by the antisymmetric differences, and it is the identity exactly when every word is a palindrome. Its **involutive automorphisms** are the **signed permutations** $x \mapsto \epsilon(x)x^{\pi}$ with $\pi^2 = \mathrm{id}$ and $\epsilon(\pi(x))\epsilon(x) = 1$, among them the grade involution $x \mapsto -x$, which acts on a word by the sign $(-1)^{|w|}$.
 
 Anti-homomorphisms of $F\langle X\rangle$ correspond bijectively to maps $X \to F\langle X\rangle$, and an anti-involution corresponds to a map $f$ with $\mathrm{J}_f^2 = \mathrm{id}$ and generating image; the reversal is $f = \mathrm{id}$. An ideal stable under an involution admits the descent, and the classical quotients receive their involutions this way: the polynomial algebra by the (stable) commutator ideal, with the descended reversal the identity; the exterior algebra, with the descended reversal the identity and the descended grade involution the degree sign; and the group algebra, where the descended reversal of the generators is the inversion. The tensor-power theory and the identification of the free algebra with the tensor algebra belong to *Tensor Powers and the Free Algebra*; the reversal involution of the tensor algebra and its quotients is *Involutions of the Tensor Algebra*; the general theory of an involution on the elements is *Involutive Algebras*; and the involutions of the path algebras, which are quotients of a free algebra by the relations of a quiver, are *Involutions of a Path Algebra*.
 
@@ -126,7 +126,7 @@ Anti-homomorphisms of $F\langle X\rangle$ correspond bijectively to maps $X \to 
 | $\mathrm{J}_f$ | the anti-homomorphism extending $f : X \to B$ |
 | $x \mapsto \epsilon(x)x^{\pi}$ | a signed permutation involution |
 | $\alpha(w) = (-1)^{|w|}w$ | the grade involution |
-| $F\langle X\rangle = F\langle X\rangle^+\oplus F\langle X\rangle^-$ | the fixed and skew parts of the reversal |
+| $F\langle X\rangle = F\langle X\rangle^+\oplus F\langle X\rangle^-$ | the fixed and anti-Hermitian parts of the reversal |
 | $I_{\mathrm s}, I_{\mathrm e}, I_G$ | the ideals of the classical quotients |
 
 ## Further Reading

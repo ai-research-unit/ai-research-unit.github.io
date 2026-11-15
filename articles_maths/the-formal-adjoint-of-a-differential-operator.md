@@ -90,7 +90,7 @@ the adjoint being taken with respect to the fibrewise metrics; consequently $P$ 
 
 ## Formally Self-Adjoint Operators
 
-**Definition.** The operator $P$ is **formally self-adjoint** if $P^* = P$; it is **formally skew-adjoint** if $P^* = -P$, and **formally normal** if $P^*P = PP^*$. Its formal self-adjointness is a condition on the coefficients read through the metrics and the density.
+**Definition.** The operator $P$ is **formally self-adjoint** if $P^* = P$; it is **formally anti-self-adjoint** if $P^* = -P$, and **formally normal** if $P^*P = PP^*$. Its formal self-adjointness is a condition on the coefficients read through the metrics and the density.
 
 **Proposition.** A formally self-adjoint operator of order $k$ has
 
@@ -116,7 +116,7 @@ $$
 P^*v = -Xv - (\operatorname{div}X)\,v,
 $$
 
-because the integration by parts against the density produces the divergence term; hence $P$ is skew-adjoint exactly when $X$ is divergence-free, and it is not symmetric in general. The density correction is visible in the formula, and it shows that the formal adjoint depends on the density and not only on the operator's principal part.
+because the integration by parts against the density produces the divergence term; hence $P$ is anti-self-adjoint exactly when $X$ is divergence-free, and it is not symmetric in general. The density correction is visible in the formula, and it shows that the formal adjoint depends on the density and not only on the operator's principal part.
 
 ## The Dirichlet Form and the Variational Interpretation
 
@@ -144,7 +144,7 @@ which is the energy form of the operator; the operator is nonnegative, $P \geq 0
 
 The formal adjoint of a differential operator is defined by the integration-by-parts identity $\int\langle Pu,v\rangle d\mu=\int\langle u,P^*v\rangle d\mu$ for compactly supported sections; it exists, is unique, has the same order as the operator, and its local form is the transposed expression $\sum(-1)^{|\alpha|}\partial^\alpha(A_\alpha^*v)$ with the density correction $(\partial/\partial x_i)^{\dagger}=-\partial/\partial x_i-\partial/\partial x_i\,\log\rho$ in each derivative. The difference $\langle v,Pu\rangle-\langle u,P^*v\rangle$ is the divergence of a vector field, the Lagrange identity, which integrates to the boundary term of Green's formula; the formal adjoint is the true adjoint on the compactly supported sections exactly when the boundary term vanishes, which is the origin of the boundary conditions of the global theory.
 
-The symbol of the adjoint is $\sigma_k(P^*)(\zeta)=(-1)^k\sigma_k(P)(\zeta)^*$, so the characteristic variety and the ellipticity are preserved; a formally self-adjoint operator has a Hermitian symbol for even order and a anti-Hermitian one for odd order. The Sturm–Liouville operator, the Laplace–Beltrami operator, the divergence/gradient pair and the exterior derivative/codifferential pair are the examples; the quadratic form $\langle Pu,u\rangle$ is the Dirichlet form and the energy of the operator. The global $L^2$ adjoint, with its domain and boundary conditions, is the subject of the next entry.
+The symbol of the adjoint is $\sigma_k(P^*)(\zeta)=(-1)^k\sigma_k(P)(\zeta)^*$, so the characteristic variety and the ellipticity are preserved; a formally self-adjoint operator has a Hermitian symbol for even order and an anti-Hermitian one for odd order. The Sturm–Liouville operator, the Laplace–Beltrami operator, the divergence/gradient pair and the exterior derivative/codifferential pair are the examples; the quadratic form $\langle Pu,u\rangle$ is the Dirichlet form and the energy of the operator. The global $L^2$ adjoint, with its domain and boundary conditions, is the subject of the next entry.
 
 ## Summary of Notation
 
@@ -160,7 +160,7 @@ The symbol of the adjoint is $\sigma_k(P^*)(\zeta)=(-1)^k\sigma_k(P)(\zeta)^*$, 
 | $\langle v,Pu\rangle-\langle u,P^*v\rangle=\operatorname{div}W$ | Lagrange identity |
 | $\int_\Omega(\langle v,Pu\rangle-\langle u,P^*v\rangle)=\int_{\partial\Omega}\langle W,\nu\rangle\,dS$ | Green formula; the boundary term |
 | $\sigma_k(P^*)(\zeta)=(-1)^k\sigma_k(P)(\zeta)^*$ | Symbol of the adjoint; ellipticity preserved |
-| Formally self-adjoint, skew-adjoint, normal | $P^*=P$; $P^*=-P$; $P^*P=PP^*$ |
+| Formally self-adjoint, anti-self-adjoint, normal | $P^*=P$; $P^*=-P$; $P^*P=PP^*$ |
 | $\mathfrak{Q}(u)=\langle Pu,u\rangle_{L^2}$ | Dirichlet form; energy of a self-adjoint operator |
 
 ## Further Reading

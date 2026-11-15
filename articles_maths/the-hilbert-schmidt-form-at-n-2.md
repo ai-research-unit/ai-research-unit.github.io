@@ -94,7 +94,7 @@ $$
 
 **Proof.** $\operatorname{tr}((AX-XA)^{*}Y)=\operatorname{tr}(X^{*}(A^{*}Y-YA^{*}))$ after expanding and cycling the trace.
 
-**Corollary.** The adjoint action of the Hermitian matrices is self-adjoint, and the adjoint action of the anti-Hermitian ones is skew-adjoint.
+**Corollary.** The adjoint action of the Hermitian matrices is self-adjoint, and the adjoint action of the anti-Hermitian ones is anti-self-adjoint.
 
 **Proof.** The formula of the proposition gives $\operatorname{ad}_{A}^{*}=\operatorname{ad}_{A}$ for Hermitian $A$ and $\operatorname{ad}_{A}^{*}=-\operatorname{ad}_{A}$ for anti-Hermitian $A$.
 

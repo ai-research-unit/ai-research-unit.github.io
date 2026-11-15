@@ -90,7 +90,7 @@ $$
 \mathfrak{b}(Tv, w) = \mathfrak{b}(v, T^{*}w) \qquad (v, w \in V),
 $$
 
-which exists and is unique because $b$ is nondegenerate. The operator $T$ is **self-adjoint** when $T^{*} = T$, and **skew-adjoint** when $T^{*} = -T$; the involution $T \mapsto T^{*}$ is the **adjoint operation** of the form.
+which exists and is unique because $b$ is nondegenerate. The operator $T$ is **self-adjoint** when $T^{*} = T$, and **anti-self-adjoint** when $T^{*} = -T$; the involution $T \mapsto T^{*}$ is the **adjoint operation** of the form.
 
 **Theorem.** The adjoint operation is additive and reverses the product,
 
@@ -98,7 +98,7 @@ $$
 (S + T)^{*} = S^{*} + T^{*}, \qquad (ST)^{*} = T^{*}S^{*}, \qquad \mathrm{id}^{*} = \mathrm{id},
 $$
 
-so it is an anti-automorphism of the algebra of operators. For a form that is $\varepsilon$-symmetric, $\mathfrak{b}(w,v) = \varepsilon\, \mathfrak{b}(v,w)$ with $\varepsilon = \pm 1$, the adjoint operation is an involution, $(T^{*})^{*} = T$. The self-adjoint and the skew-adjoint operators are the fixed and the anti-fixed parts of the adjoint operation when two is invertible.
+so it is an anti-automorphism of the algebra of operators. For a form that is $\varepsilon$-symmetric, $\mathfrak{b}(w,v) = \varepsilon\, \mathfrak{b}(v,w)$ with $\varepsilon = \pm 1$, the adjoint operation is an involution, $(T^{*})^{*} = T$. The self-adjoint and the anti-self-adjoint operators are the fixed and the anti-fixed parts of the adjoint operation when two is invertible.
 
 **Proof.** The additivity is linearity of $b$ in the first variable; the reversal of the product is $\mathfrak{b}(STv,w) = \mathfrak{b}(Tv, S^{*}w) = \mathfrak{b}(v, T^{*}S^{*}w)$; the unit is the definition. For the double adjoint, the $\varepsilon$-symmetry gives $\mathfrak{b}(w,v) = \varepsilon\, \mathfrak{b}(v,w)$, so $\mathfrak{b}(T^{*}v,w) = \varepsilon\, \mathfrak{b}(w,T^{*}v) = \varepsilon\, \mathfrak{b}(Tw,v) = \varepsilon^{2}\, \mathfrak{b}(v,Tw) = \mathfrak{b}(v,Tw)$, using the defining relation $\mathfrak{b}(Tw,v) = \mathfrak{b}(w,T^{*}v)$ and the symmetry again; hence $(T^{*})^{*} = T$. The last clause is the eigenspace decomposition of an involution.
 
@@ -110,7 +110,7 @@ $$
 (\sigma T \sigma)^{*} = \sigma T^{*}\sigma \qquad (T \in \operatorname{End}_{k}(V)).
 $$
 
-Consequently an equivariant operator has an equivariant adjoint; the commutant of $\sigma$ is closed under the adjoint operation; and the self-adjoint and the skew-adjoint equivariant operators form the fixed and the anti-fixed parts of the adjoint operation on the commutant.
+Consequently an equivariant operator has an equivariant adjoint; the commutant of $\sigma$ is closed under the adjoint operation; and the self-adjoint and the anti-self-adjoint equivariant operators form the fixed and the anti-fixed parts of the adjoint operation on the commutant.
 
 **Proof.** Using $b(\sigma u, \sigma w) = \mathfrak{b}(u,w)$, that is $b(\sigma u, w) = \mathfrak{b}(u, \sigma w)$ because $\sigma^{2} = \mathrm{id}$, compute
 
@@ -130,7 +130,7 @@ so that $(\sigma T\sigma)^{*} = \sigma T^{*}\sigma$. If $T$ is equivariant, $\si
 
 ## Summary
 
-An involution of a module acts on its endomorphisms by conjugation, an algebra automorphism of order two whose fixed points are the equivariant operators, the operators commuting with the involution; the equivariant operators form a subalgebra, and over a ring in which two is invertible every operator has a unique decomposition into an equivariant and an anti-equivariant part. The fixed and the anti-fixed submodules of the involution decompose the module when two is invertible, an equivariant operator preserves both, and the algebra of equivariant operators is the direct sum of the endomorphism algebras of the two eigenspaces. The adjoint operation of a nondegenerate bilinear form is an anti-automorphism of the operator algebra, an involution for a symmetric or antisymmetric form, whose fixed and anti-fixed parts are the self-adjoint and the skew-adjoint operators. For a form preserved by the involution the conjugation and the adjoint commute, $(\sigma T\sigma)^{*} = \sigma T^{*}\sigma$, so the commutant of the involution is closed under the adjoint operation, an equivariant operator has an equivariant adjoint, and the two involutions generate a group of the Klein type acting on the operator algebra. The two structures of the layer — the involution on the operators and the adjoint of the form — are different, their compatibility is the theorem, and the module of the cohomology with the cup-product pairing is the example that the later articles develop.
+An involution of a module acts on its endomorphisms by conjugation, an algebra automorphism of order two whose fixed points are the equivariant operators, the operators commuting with the involution; the equivariant operators form a subalgebra, and over a ring in which two is invertible every operator has a unique decomposition into an equivariant and an anti-equivariant part. The fixed and the anti-fixed submodules of the involution decompose the module when two is invertible, an equivariant operator preserves both, and the algebra of equivariant operators is the direct sum of the endomorphism algebras of the two eigenspaces. The adjoint operation of a nondegenerate bilinear form is an anti-automorphism of the operator algebra, an involution for a symmetric or antisymmetric form, whose fixed and anti-fixed parts are the self-adjoint and the anti-self-adjoint operators. For a form preserved by the involution the conjugation and the adjoint commute, $(\sigma T\sigma)^{*} = \sigma T^{*}\sigma$, so the commutant of the involution is closed under the adjoint operation, an equivariant operator has an equivariant adjoint, and the two involutions generate a group of the Klein type acting on the operator algebra. The two structures of the layer — the involution on the operators and the adjoint of the form — are different, their compatibility is the theorem, and the module of the cohomology with the cup-product pairing is the example that the later articles develop.
 
 ## Summary of Notation
 
@@ -146,7 +146,7 @@ An involution of a module acts on its endomorphisms by conjugation, an algebra a
 | $V = V^{\sigma}\oplus V^{-\sigma}$ | The eigenspace decomposition, two invertible |
 | $\operatorname{End}_{k}(V)^{\sigma} \cong \operatorname{End}_{k}(V^{\sigma})\oplus\operatorname{End}_{k}(V^{-\sigma})$ | The commutant as a sum of endomorphism algebras |
 | $b$, $T^{*}$ | A nondegenerate bilinear form and the adjoint of $T$ |
-| self-adjoint, skew-adjoint | $T^{*} = T$, respectively $T^{*} = -T$ |
+| self-adjoint, anti-self-adjoint | $T^{*} = T$, respectively $T^{*} = -T$ |
 | $(\sigma T\sigma)^{*} = \sigma T^{*}\sigma$ | Compatibility of the conjugation with the adjoint |
 | unitary, $T^{*}T = TT^{*} = 1$ | An operator on which the two structures coincide |
 
@@ -154,7 +154,7 @@ An involution of a module acts on its endomorphisms by conjugation, an algebra a
 
 - Serge Lang, *Algebra* (Springer, revised 3rd ed. 2002), for the algebra of endomorphisms, the conjugation by a unit and the eigenspace decomposition of an involution.
 - Saunders Mac Lane and Garrett Birkhoff, *Algebra* (Macmillan, 1967; 3rd ed. Chelsea, 1988), for the structure of the commutant and the decomposition of an operator under an inner automorphism of order two.
-- Nicolas Bourbaki, *Algebra I* (Springer, 1998), for bilinear forms, the adjoint anti-automorphism and the self-adjoint and skew-adjoint operators.
+- Nicolas Bourbaki, *Algebra I* (Springer, 1998), for bilinear forms, the adjoint anti-automorphism and the self-adjoint and anti-self-adjoint operators.
 - Paul M. Cohn, *Algebra*, Vol. 2, 2nd ed. (Wiley, 1989), for the adjoint with respect to a form, the sesquilinear case and the unitary operators.
 - Nathan Jacobson, *Lectures in Abstract Algebra*, Vol. II (Van Nostrand, 1953), for the endomorphism algebra of a module, the commutant and the double commutant.
 - Glen E. Bredon, *Introduction to Compact Transformation Groups* (Academic Press, 1972), for the operators commuting with a group action and their role in equivariant topology.

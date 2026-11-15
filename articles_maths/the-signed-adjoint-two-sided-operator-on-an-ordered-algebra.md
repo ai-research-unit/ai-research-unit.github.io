@@ -57,7 +57,7 @@ as for every family of operators, and the composition law of the signed two-side
 
 *Proof.* The unsigned case is the formula with $\alpha = 1$; the anti-homomorphism property is general for operators with adjoints; the last statement combines the two.
 
-## Self-Adjointness and Skew-Adjointness
+## Self-Adjointness and Anti-Self-Adjointness
 
 **Proposition ($\alpha$-Hermitian parameters).** The signed two-sided operator is **self-adjoint**,
 
@@ -69,15 +69,15 @@ when the parameters are **$\alpha$-Hermitian**, $a = \alpha(a^{*})$ and $b = \al
 
 *Proof.* If the parameters are $\alpha$-Hermitian then $\alpha(a^{*}) = a$ and $\alpha(b^{*}) = b$, so the theorem gives $(\mathrm{Sd}^{\alpha}_{a,b})^{*} = \mathrm{Sd}^{\alpha}_{a,b}$; conversely, if the adjoints agree then $\mathrm{Sd}^{\alpha}_{\alpha(a^{*}),\alpha(b^{*})} = \mathrm{Sd}^{\alpha}_{a,b}$, and the equality of the signed two-sided operators with the $a$-parameters differing by a central factor is the fibre statement of *The Signed Two-Sided Operator on an Ordered Algebra*.
 
-**Corollary (the decomposition into self-adjoint and skew parts).** Every signed two-sided operator decomposes as the sum of an **$\alpha$-Hermitian** part and a **skew-$\alpha$-Hermitian** part in each parameter,
+**Corollary (the decomposition into self-adjoint and anti-Hermitian parts).** Every signed two-sided operator decomposes as the sum of an **$\alpha$-Hermitian** part and a **anti-Hermitian-$\alpha$-Hermitian** part in each parameter,
 
 $$
 \mathrm{Sd}^{\alpha}_{a,b} = \tfrac12\bigl(\mathrm{Sd}^{\alpha}_{a,b} + (\mathrm{Sd}^{\alpha}_{a,b})^{*}\bigr) + \tfrac12\bigl(\mathrm{Sd}^{\alpha}_{a,b} - (\mathrm{Sd}^{\alpha}_{a,b})^{*}\bigr) ,
 $$
 
-the two summands being self-adjoint and skew-adjoint respectively; the operator is **normal** exactly when the two summands commute.
+the two summands being self-adjoint and anti-self-adjoint respectively; the operator is **normal** exactly when the two summands commute.
 
-*Proof.* The decomposition is the standard one into the self-adjoint part $\frac12(T + T^{*})$ and the skew part $\frac12(T - T^{*})$; the normality criterion is the standard one, $TT^{*} = T^{*}T$.
+*Proof.* The decomposition is the standard one into the self-adjoint part $\frac12(T + T^{*})$ and the anti-Hermitian part $\frac12(T - T^{*})$; the normality criterion is the standard one, $TT^{*} = T^{*}T$.
 
 ## The Adjoint and the Order
 
@@ -121,7 +121,7 @@ $$
 \bigl(\mathrm{Sd}^{\alpha}_{a,b}\bigr)^{*} = \mathrm{Sd}^{\alpha}_{\alpha(a^{*}),\,\alpha(b^{*})} ,
 $$
 
-so the family of the signed two-sided operators is **closed under the adjoint**, the adjoint is an anti-homomorphism on the family, and the unsigned case is $(\mathrm{Sd}_{a,b})^{*} = \mathrm{Sd}_{a^{*},b^{*}}$. The signed two-sided operator is **self-adjoint** exactly when the parameters are **$\alpha$-Hermitian**, $a = \alpha(a^{*})$, $b = \alpha(b^{*})$, up to a central factor; every signed two-sided operator decomposes into the self-adjoint and the skew-adjoint parts, and it is normal exactly when the parts commute. The adjoint **preserves the positivity** and is an **order isomorphism** of the family, so a signed two-sided operator with a positive grade involution and positive parameters has a positive adjoint; the adjoint of the reflection $\tau_a = \mathrm{Sd}^{\alpha}_{a,a^{-1}}$ is the reflection $\tau_{\alpha(a^{*})}$, computed in the next article. The signed two-sided operator is *The Signed Two-Sided Operator on an Ordered Algebra*; the reflections are *Reflections as Signed Two-Sided Operators on an Ordered Algebra*; the signed one-sided multiplications are *The Signed Left Multiplication on an Ordered Algebra*; the graded action is *The Graded Action on a Module over an Ordered Algebra*; the order is *Ordered Vector Spaces and the Order Unit* and *Positive Operators on an Ordered Space*; the adjoint is *The Adjoint of a Positive Operator*; the two-sided multiplications are *The Adjoint of the Left Multiplication on an Ordered Algebra*; and the automorphisms are *The Involution on the Order Automorphisms*.
+so the family of the signed two-sided operators is **closed under the adjoint**, the adjoint is an anti-homomorphism on the family, and the unsigned case is $(\mathrm{Sd}_{a,b})^{*} = \mathrm{Sd}_{a^{*},b^{*}}$. The signed two-sided operator is **self-adjoint** exactly when the parameters are **$\alpha$-Hermitian**, $a = \alpha(a^{*})$, $b = \alpha(b^{*})$, up to a central factor; every signed two-sided operator decomposes into the self-adjoint and the anti-self-adjoint parts, and it is normal exactly when the parts commute. The adjoint **preserves the positivity** and is an **order isomorphism** of the family, so a signed two-sided operator with a positive grade involution and positive parameters has a positive adjoint; the adjoint of the reflection $\tau_a = \mathrm{Sd}^{\alpha}_{a,a^{-1}}$ is the reflection $\tau_{\alpha(a^{*})}$, computed in the next article. The signed two-sided operator is *The Signed Two-Sided Operator on an Ordered Algebra*; the reflections are *Reflections as Signed Two-Sided Operators on an Ordered Algebra*; the signed one-sided multiplications are *The Signed Left Multiplication on an Ordered Algebra*; the graded action is *The Graded Action on a Module over an Ordered Algebra*; the order is *Ordered Vector Spaces and the Order Unit* and *Positive Operators on an Ordered Space*; the adjoint is *The Adjoint of a Positive Operator*; the two-sided multiplications are *The Adjoint of the Left Multiplication on an Ordered Algebra*; and the automorphisms are *The Involution on the Order Automorphisms*.
 
 ## Summary of Notation
 

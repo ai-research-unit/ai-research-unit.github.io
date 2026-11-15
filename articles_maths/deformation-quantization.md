@@ -111,13 +111,13 @@ $$
 
 The bracket is the **Poisson bracket**, and the axiom relating it to the product is the **Leibniz rule**. A Poisson algebra is thus a commutative algebra and a Lie algebra in a compatible way, and the two structures are precisely the data of a Gerstenhaber algebra concentrated in degrees $0$ and $1$ with the bracket of degree $-1$.
 
-**Example.** For $A = k[x_1,\dots,x_n]$ and a antisymmetric matrix $\omega = (\omega_{ij})$ of constants, the bracket
+**Example.** For $A = k[x_1,\dots,x_n]$ and an antisymmetric matrix $\omega = (\omega_{ij})$ of constants, the bracket
 
 $$
 \{f,g\} = \sum_{i,j}\omega_{ij}\,\partial/\partial x_i\,f\,\partial/\partial x_j\,g
 $$
 
-is a Poisson bracket: antisymmetry and the Jacobi identity follow because $\omega$ is constant and skew, and the Leibniz rule is the product rule for the formal derivatives. This is the **constant** or **linear** case, and it is the Poisson structure whose quantisation is the Moyal product. When $\omega$ is invertible the bracket is called **symplectic**, and the geometric content of that case belongs to Part II.
+is a Poisson bracket: antisymmetry and the Jacobi identity follow because $\omega$ is constant and anti-Hermitian, and the Leibniz rule is the product rule for the formal derivatives. This is the **constant** or **linear** case, and it is the Poisson structure whose quantisation is the Moyal product. When $\omega$ is invertible the bracket is called **symplectic**, and the geometric content of that case belongs to Part II.
 
 **Example.** On $A = k[x,y]$ the bracket defined by $\{y,x\} = xy$ and extended by the Leibniz rule,
 

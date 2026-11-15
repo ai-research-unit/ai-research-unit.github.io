@@ -22,7 +22,7 @@ $$
 
 So $\operatorname{Skew}_n$ is a Lie algebra, and it is the Lie subalgebra $\mathfrak{so}(n)$ of $\mathfrak{gl}_n(\mathbb{R})$.
 
-**The dimension is $n(n-1)/2$.** A skew matrix has zero diagonal and $n(n-1)/2$ free entries above it, so
+**The dimension is $n(n-1)/2$.** An antisymmetric matrix has zero diagonal and $n(n-1)/2$ free entries above it, so
 
 $$
 \dim\mathfrak{so}(n)=\frac{n(n-1)}{2}=1,3,6,10,15\quad(n=2,3,4,5,6),
@@ -40,13 +40,13 @@ which was verified on all index combinations with $i\neq j$ and $k\neq l$ at $n=
 
 ## The Identification with $\Lambda^{2}$
 
-**A skew matrix is a two-form, and the identification is canonical.** The map
+**An antisymmetric matrix is a two-form, and the identification is canonical.** The map
 
 $$
 u\wedge v\longmapsto uv^{\mathsf T}-vu^{\mathsf T}
 $$
 
-sends a decomposable two-vector to a skew matrix of rank two, and it extends by linearity to an isomorphism $\Lambda^{2}\mathbb{R}^{n}\to\operatorname{Skew}_n$. Both sides have dimension $\binom{n}{2}=n(n-1)/2$, and the map is injective because $uv^{\mathsf T}-vu^{\mathsf T}=0$ forces $u$ and $v$ to be dependent.
+sends a decomposable two-vector to an antisymmetric matrix of rank two, and it extends by linearity to an isomorphism $\Lambda^{2}\mathbb{R}^{n}\to\operatorname{Skew}_n$. Both sides have dimension $\binom{n}{2}=n(n-1)/2$, and the map is injective because $uv^{\mathsf T}-vu^{\mathsf T}=0$ forces $u$ and $v$ to be dependent.
 
 **Under the identification the bracket is the commutator of the two operators.** For $X=u\wedge v$ and $Y=w\wedge z$ the matrix $X$ acts on $\mathbb{R}^{n}$ by $p\mapsto u\langle v,p\rangle-v\langle u,p\rangle$, which is the infinitesimal rotation in the plane spanned by $u$ and $v$. The commutator of two such operators is again of the form $\sum u_{k}\wedge v_{k}$, and the identity
 
@@ -86,7 +86,7 @@ $$
 \mathfrak{h}=\langle X_{12},X_{34},\dots\rangle,
 $$
 
-and no larger commutative subalgebra of semisimple elements exists, since a skew matrix has pure imaginary eigenvalues occurring in conjugate pairs and each pair needs its own plane. The ranks at $n=2,3,4,5,6$ are $1,1,2,2,3$.
+and no larger commutative subalgebra of semisimple elements exists, since an antisymmetric matrix has pure imaginary eigenvalues occurring in conjugate pairs and each pair needs its own plane. The ranks at $n=2,3,4,5,6$ are $1,1,2,2,3$.
 
 **The roots are the differences and the sums of the plane coordinates.** Writing an element of the torus as $\mathrm{diag}(i\theta_1,-i\theta_1,\dots)$, the roots of the complexified algebra are $\pm\epsilon_k\pm\epsilon_l$ with $k\neq l$, and each root space is one-dimensional, spanned by a complex combination of $E_{kl}$ and $E_{lk}$. Their number is
 
@@ -96,11 +96,11 @@ $$
 
 which was checked by subtracting the rank from the dimension at those orders. Over $\mathbb{R}$ the root spaces pair into two-dimensional real planes, one pair per complex root, which is why the real form has no real root decomposition.
 
-**The compact form is the real algebra itself.** Since $\mathfrak{so}(n)$ has negative definite Killing form, it is the compact real form of the complex Lie algebra $\mathfrak{so}(n,\mathbb{C})=\mathfrak{so}(n)\otimes\mathbb{C}$. The complexification is the algebra of complex skew matrices, the fixed points of the conjugation $X\mapsto\overline{X}$, and it is the Lie algebra of $\mathrm{SO}(n,\mathbb{C})$.
+**The compact form is the real algebra itself.** Since $\mathfrak{so}(n)$ has negative definite Killing form, it is the compact real form of the complex Lie algebra $\mathfrak{so}(n,\mathbb{C})=\mathfrak{so}(n)\otimes\mathbb{C}$. The complexification is the algebra of complex antisymmetric matrices, the fixed points of the conjugation $X\mapsto\overline{X}$, and it is the Lie algebra of $\mathrm{SO}(n,\mathbb{C})$.
 
 ## The Exponential and the Group
 
-**The exponential of a skew matrix is orthogonal.** For $X^{\mathsf T}=-X$,
+**The exponential of an antisymmetric matrix is orthogonal.** For $X^{\mathsf T}=-X$,
 
 $$
 \big(e^{X}\big)^{\mathsf T}=e^{X^{\mathsf T}}=e^{-X}=\big(e^{X}\big)^{-1},
@@ -134,13 +134,13 @@ so the group is the circle and the algebra is the tangent line at the identity. 
 
 ## Summary
 
-The antisymmetric half is closed under the bracket and is the Lie algebra $\mathfrak{so}(n)$, of dimension $n(n-1)/2$ and rank $\lfloor n/2\rfloor$, isomorphic to $\Lambda^{2}\mathbb{R}^{n}$ with the commutator of operators. It is simple for $n\ge3$ except at $n=4$, where the Hodge star splits it into the self-dual and anti-self-dual ideals $\mathfrak{so}(3)\oplus\mathfrak{so}(3)$, and it is abelian at $n=2$. Its exponential is the rotation group, its Killing form is $(n-2)\operatorname{tr}(XY)$ and is negative definite for $n\ge3$, and its complexification is the algebra of complex skew matrices.
+The antisymmetric half is closed under the bracket and is the Lie algebra $\mathfrak{so}(n)$, of dimension $n(n-1)/2$ and rank $\lfloor n/2\rfloor$, isomorphic to $\Lambda^{2}\mathbb{R}^{n}$ with the commutator of operators. It is simple for $n\ge3$ except at $n=4$, where the Hodge star splits it into the self-dual and anti-self-dual ideals $\mathfrak{so}(3)\oplus\mathfrak{so}(3)$, and it is abelian at $n=2$. Its exponential is the rotation group, its Killing form is $(n-2)\operatorname{tr}(XY)$ and is negative definite for $n\ge3$, and its complexification is the algebra of complex antisymmetric matrices.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\mathfrak{so}(n)=\operatorname{Skew}_n$ | the Lie algebra of skew matrices |
+| $\mathfrak{so}(n)=\operatorname{Skew}_n$ | the Lie algebra of antisymmetric matrices |
 | $X_{ij}=E_{ij}-E_{ji}$ | the standard basis elements, one per pair $i<j$ |
 | $\Lambda^{2}\mathbb{R}^{n}$ | the exterior square, isomorphic to $\mathfrak{so}(n)$ by $u\wedge v\mapsto uv^{\mathsf T}-vu^{\mathsf T}$ |
 | $\star$ | the Hodge star, with $\star^{2}=1$ on $\Lambda^{2}\mathbb{R}^{4}$ |

@@ -180,7 +180,7 @@ $$
 A=\frac{A+A^*}{2}+\frac{A-A^*}{2},
 $$
 
-a Hermitian part plus a anti-Hermitian part. The real vector spaces
+a Hermitian part plus an anti-Hermitian part. The real vector spaces
 
 $$
 \mathfrak{u}(6)=\{A:A^*=-A\},\qquad
@@ -189,7 +189,7 @@ $$
 
 have real dimensions $36$ and $35$.
 
-**Proof.** The two parts are Hermitian and anti-Hermitian, and the sum is $A$; uniqueness follows by applying the conjugate transpose. A anti-Hermitian matrix has purely imaginary diagonal entries ($6$ real parameters) and arbitrary complex entries above the diagonal ($15$ complex $=30$ real parameters), so $\dim_{\mathbb{R}}\mathfrak{u}(6)=36$. The trace is a nonzero real-linear functional on $\mathfrak{u}(6)$ (with values in $\mathrm i\mathbb{R}$), so its kernel has real dimension $35$.
+**Proof.** The two parts are Hermitian and anti-Hermitian, and the sum is $A$; uniqueness follows by applying the conjugate transpose. An anti-Hermitian matrix has purely imaginary diagonal entries ($6$ real parameters) and arbitrary complex entries above the diagonal ($15$ complex $=30$ real parameters), so $\dim_{\mathbb{R}}\mathfrak{u}(6)=36$. The trace is a nonzero real-linear functional on $\mathfrak{u}(6)$ (with values in $\mathrm i\mathbb{R}$), so its kernel has real dimension $35$.
 
 **Theorem (the complexification).** As real vector spaces,
 

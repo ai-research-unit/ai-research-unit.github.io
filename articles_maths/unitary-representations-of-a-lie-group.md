@@ -3,7 +3,7 @@
 
 ## Introduction
 
-A **unitary representation** of a Lie group is a strongly continuous action on a Hilbert space by unitary operators, and it is the object whose decomposition is the harmonic analysis of the group; the left regular representation is the model, its decomposition is the Plancherel theorem, and the irreducible summands are the points of the unitary dual. The infinitesimal form is a representation of the Lie algebra by skew-adjoint operators, so that the generators are self-adjoint after multiplication by $i$; the Casimir element becomes a self-adjoint operator whose sign and spectrum are the first invariants of the representation.
+A **unitary representation** of a Lie group is a strongly continuous action on a Hilbert space by unitary operators, and it is the object whose decomposition is the harmonic analysis of the group; the left regular representation is the model, its decomposition is the Plancherel theorem, and the irreducible summands are the points of the unitary dual. The infinitesimal form is a representation of the Lie algebra by anti-self-adjoint operators, so that the generators are self-adjoint after multiplication by $i$; the Casimir element becomes a self-adjoint operator whose sign and spectrum are the first invariants of the representation.
 
 This article treats unitary representations of a Lie group, the irreducible decomposition and the Plancherel measure. It is the second article of the `- * Theory` group of the category; the regular representation and its derived form are from *The Regular Representation of a Lie Group*, the Casimir operator is *The Casimir Operator of a Lie Group*, the invariant forms are *Hermitian Forms on a Lie Algebra* and *Unitary Representations and the Adjoint Operator* of the `- * Operator Theory` group, and the detailed analysis is *Harmonic Analysis on Groups*, written and cited.
 
@@ -27,7 +27,7 @@ The article assumes the Hilbert space, the bounded operators and the spectral th
 
 **Theorem (Stone).** Let $g : \mathbb{R} \to \mathrm{U}(\mathcal{H})$ be a strongly continuous one-parameter unitary group. Then there is a self-adjoint operator $A$ on a dense domain such that $g(t) = \exp(itA)$; conversely every self-adjoint $A$ defines such a group. The operator $A$ is determined by $g$ and is written $A = -i\,g'(0)$ in the sense of the derivative on the domain of analytic vectors.
 
-*Proof.* Stone's theorem is the spectral theorem for the one-parameter group; the map $t\mapsto g(t)$ has a generator $B$ which is skew-adjoint with dense domain, and $A = -iB$ is self-adjoint with the same domain.
+*Proof.* Stone's theorem is the spectral theorem for the one-parameter group; the map $t\mapsto g(t)$ has a generator $B$ which is anti-self-adjoint with dense domain, and $A = -iB$ is self-adjoint with the same domain.
 
 **Definition.** For a unitary representation $\pi$ the **derived representation** on the space of smooth vectors $\mathcal{H}^\infty$ is
 
@@ -35,13 +35,13 @@ $$
 \pi_* : \mathrm{G} \to \operatorname{End}(\mathcal{H}^\infty), \qquad \pi_*(X)v = \frac{d}{dt}\Big|_{t=0}\pi(\exp tX)v .
 $$
 
-**Theorem.** The derived representation is a representation of the Lie algebra by skew-adjoint operators, $\pi_*(X)^* = -\pi_*(X)$ on $\mathcal{H}^\infty$, so that $i\pi_*(X)$ is self-adjoint and $\pi_*$ extends to a representation of the universal enveloping algebra; the space $\mathcal{H}^\infty$ is dense, invariant and carries a Fréchet structure on which every $\pi_*(u)$ is continuous.
+**Theorem.** The derived representation is a representation of the Lie algebra by anti-self-adjoint operators, $\pi_*(X)^* = -\pi_*(X)$ on $\mathcal{H}^\infty$, so that $i\pi_*(X)$ is self-adjoint and $\pi_*$ extends to a representation of the universal enveloping algebra; the space $\mathcal{H}^\infty$ is dense, invariant and carries a Fréchet structure on which every $\pi_*(u)$ is continuous.
 
-*Proof.* The skew-adjointness is the derivative of the equality $\pi(\exp tX)^*\pi(\exp tX) = \mathrm{id}$ at $t = 0$; the bracket identity is the multiplicativity of $\pi$ and the group law; the density and the Fréchet structure are the standard Sobolev structure of a unitary representation, in which a vector is smooth when all the derived operators act, and the extension to $\mathrm{U}(\mathrm{G})$ is the universal property.
+*Proof.* The anti-self-adjointness is the derivative of the equality $\pi(\exp tX)^*\pi(\exp tX) = \mathrm{id}$ at $t = 0$; the bracket identity is the multiplicativity of $\pi$ and the group law; the density and the Fréchet structure are the standard Sobolev structure of a unitary representation, in which a vector is smooth when all the derived operators act, and the extension to $\mathrm{U}(\mathrm{G})$ is the universal property.
 
 **Corollary.** The Casimir element of *The Casimir Operator of a Lie Group* acts on $\mathcal{H}^\infty$ by the operator $\pi_*(\Omega) = \sum_i\pi_*(X_i)\pi_*(\check X_i)$; when the invariant form is such that $\pi_*(\Omega)$ is bounded below, it is essentially self-adjoint and its spectrum is a lowest eigenvalue when the representation is irreducible and has a lowest weight.
 
-*Proof.* The operator is the sum of products of skew-adjoint operators, hence self-adjoint on the common analytic domain when the sum converges; the formula for the eigenvalue on a highest weight vector is that of *The Casimir Operator of a Lie Group*, and the self-adjointness is the standard ellipticity of the Casimir on the smooth vectors.
+*Proof.* The operator is the sum of products of anti-self-adjoint operators, hence self-adjoint on the common analytic domain when the sum converges; the formula for the eigenvalue on a highest weight vector is that of *The Casimir Operator of a Lie Group*, and the self-adjointness is the standard ellipticity of the Casimir on the smooth vectors.
 
 ## The Irreducible Decomposition
 
@@ -125,7 +125,7 @@ which is bounded, continuous and uniformly continuous in each variable; it is **
 
 ### The Vector Group
 
-For $G = \mathbb{R}^n$ the irreducible unitary representations are the characters $\chi_\zeta(x) = \exp(2\pi i\,\zeta\cdot x)$ with $\zeta \in \mathbb{R}^n$, the unitary dual is $\mathbb{R}^n$, and the Plancherel measure is Lebesgue measure; the decomposition of the regular representation is the Fourier transform, and the derived representation is $\pi_*(X)v = 2\pi i\,(\zeta\cdot X)v$, skew-adjoint because the scalar is imaginary.
+For $G = \mathbb{R}^n$ the irreducible unitary representations are the characters $\chi_\zeta(x) = \exp(2\pi i\,\zeta\cdot x)$ with $\zeta \in \mathbb{R}^n$, the unitary dual is $\mathbb{R}^n$, and the Plancherel measure is Lebesgue measure; the decomposition of the regular representation is the Fourier transform, and the derived representation is $\pi_*(X)v = 2\pi i\,(\zeta\cdot X)v$, anti-self-adjoint because the scalar is imaginary.
 
 ### A Compact Group
 
@@ -137,7 +137,7 @@ For $G = SL_2(\mathbb{R})$ the unitary dual consists of the principal series, th
 
 ## Summary
 
-A unitary representation of a Lie group is a strongly continuous homomorphism into the unitary group of a Hilbert space; it is irreducible when it has no non-trivial closed invariant subspace, and Schur's lemma identifies its commutant with the scalars. The derived representation on the smooth vectors is a Lie algebra representation by skew-adjoint operators, so the generators are self-adjoint after multiplication by $i$ by Stone's theorem; it extends to the universal enveloping algebra, and the Casimir element becomes a self-adjoint operator whose eigenvalue on an irreducible summand of highest weight is the quadratic invariant. Every unitary representation of a separable group is a direct integral of irreducible ones over the unitary dual, and the decomposition of the left regular representation is the Plancherel theorem, with a uniquely determined **Plancherel measure** and the formula $\int_G|f|^2 = \int_{\widehat{G}}\langle \pi_\lambda(f)\rangle_*\,d\mu_{\mathrm{Pl}}(\lambda)$. The measure has atoms exactly at the discrete series and a continuous part on the tempered dual; for compact groups the decomposition is discrete and the multiplicities are the dimensions, and for a vector group it is the Fourier transform with Lebesgue measure. The detailed densities and the classification of the discrete series belong to the harmonic analysis of the group.
+A unitary representation of a Lie group is a strongly continuous homomorphism into the unitary group of a Hilbert space; it is irreducible when it has no non-trivial closed invariant subspace, and Schur's lemma identifies its commutant with the scalars. The derived representation on the smooth vectors is a Lie algebra representation by anti-self-adjoint operators, so the generators are self-adjoint after multiplication by $i$ by Stone's theorem; it extends to the universal enveloping algebra, and the Casimir element becomes a self-adjoint operator whose eigenvalue on an irreducible summand of highest weight is the quadratic invariant. Every unitary representation of a separable group is a direct integral of irreducible ones over the unitary dual, and the decomposition of the left regular representation is the Plancherel theorem, with a uniquely determined **Plancherel measure** and the formula $\int_G|f|^2 = \int_{\widehat{G}}\langle \pi_\lambda(f)\rangle_*\,d\mu_{\mathrm{Pl}}(\lambda)$. The measure has atoms exactly at the discrete series and a continuous part on the tempered dual; for compact groups the decomposition is discrete and the multiplicities are the dimensions, and for a vector group it is the Fourier transform with Lebesgue measure. The detailed densities and the classification of the discrete series belong to the harmonic analysis of the group.
 
 ## Summary of Notation
 
@@ -146,7 +146,7 @@ A unitary representation of a Lie group is a strongly continuous homomorphism in
 | $\pi : G \to \mathrm{U}(\mathcal{H})$ | a unitary representation |
 | $\widehat{G}$ | the unitary dual |
 | $\pi_*$ | the derived representation on the smooth vectors |
-| $\pi_*(X)^* = -\pi_*(X)$ | skew-adjointness of the generators |
+| $\pi_*(X)^* = -\pi_*(X)$ | anti-self-adjointness of the generators |
 | $i\pi_*(X)$ | the self-adjoint generator, by Stone's theorem |
 | $\int_S^\oplus\mathcal{H}_s\,d\mu(s)$ | a direct integral of Hilbert spaces |
 | $L^2(G) \cong \bigoplus_\pi V_\pi\otimes V_\pi^*$ | the Peter--Weyl decomposition for compact $G$ |

@@ -69,7 +69,7 @@ $$
 H(T) = \{x \in T : \sigma(x) = x\},
 $$
 
-and the **skew** elements are those with $\sigma(x) = -x$.
+and the **anti-Hermitian** elements are those with $\sigma(x) = -x$.
 
 **Theorem.** $H(T)$ is a sub-triple of $T$: if $x, y, z \in H(T)$ then $\{x,y,z\}\in H(T)$. If $\sigma$ is conjugate-linear over a quadratic extension $K/F$ with $K = F\oplus Fi$, $\varsigma(i) = -i$, then
 
@@ -81,7 +81,7 @@ and $H(T)$ is the **fixed subtriple**, a Jordan triple over the fixed field $F$.
 
 *Proof.* For the closure, $\sigma\{x,y,z\} = \{\sigma x,\sigma y,\sigma z\} = \{x,y,z\}$ when the three arguments are self-adjoint. The decomposition is the one of *Jordan Algebras with an Involution*: $h_1 = \tfrac12(x+\sigma x)$ and $h_2 = \tfrac{1}{2i}(x-\sigma x)$ are self-adjoint and $x = h_1+ih_2$. The ternary product of the fixed field is the restriction.
 
-**Corollary.** The fixed subtriple $H(T)$ is the set of the self-adjoint elements and is a Jordan triple over the fixed field; the map $x\mapsto \sigma(x)$ is the identity on $H(T)$ and the negation on the skew part, and it is the semilinear extension of the identity of $H(T)$.
+**Corollary.** The fixed subtriple $H(T)$ is the set of the self-adjoint elements and is a Jordan triple over the fixed field; the map $x\mapsto \sigma(x)$ is the identity on $H(T)$ and the negation on the anti-Hermitian part, and it is the semilinear extension of the identity of $H(T)$.
 
 ## The Case of a Jordan Algebra
 

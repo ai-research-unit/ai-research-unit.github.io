@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The one-sided operators are the left and the right multiplications, $L_{\tilde q_3}(\tilde q)=\tilde q_3\tilde q$ and $R_{\tilde q_4}(\tilde q)=\tilde q\tilde q_4$. They are the two copies of $\mathbb{H}$ inside the operator algebra, they commute, and the transpose of the plain form exchanges them. This article gives the two families, their composition laws, the transpose and the association it defines between the families, the self-adjoint sector, the skew sector, and the one-sided operators that are automorphisms of the form. The two-sided operators are *Two-Sided Operators on the Quaternion Algebra*, above this article in this category; the transpose and the matrix formula are *Association and the Transpose on the Quaternion Algebra*, above this article in this category; the enveloping algebra is *The Enveloping Operator Algebra of the Quaternion Algebra and the Bi-module Structure*, above this article in this category; the pin and spin groups are *The Pin and Spin Groups of the Quaternion Algebra*, below this article in this category.
+The one-sided operators are the left and the right multiplications, $L_{\tilde q_3}(\tilde q)=\tilde q_3\tilde q$ and $R_{\tilde q_4}(\tilde q)=\tilde q\tilde q_4$. They are the two copies of $\mathbb{H}$ inside the operator algebra, they commute, and the transpose of the plain form exchanges them. This article gives the two families, their composition laws, the transpose and the association it defines between the families, the self-adjoint sector, the antisymmetric sector, and the one-sided operators that are automorphisms of the form. The two-sided operators are *Two-Sided Operators on the Quaternion Algebra*, above this article in this category; the transpose and the matrix formula are *Association and the Transpose on the Quaternion Algebra*, above this article in this category; the enveloping algebra is *The Enveloping Operator Algebra of the Quaternion Algebra and the Bi-module Structure*, above this article in this category; the pin and spin groups are *The Pin and Spin Groups of the Quaternion Algebra*, below this article in this category.
 
 ## The Two Families
 
@@ -50,21 +50,21 @@ a four-dimensional space; its one-dimensional part in the scalar line is $\{\lam
 
 *Proof.* $L_{\tilde q_3}+R_{\tilde q_3}$ with $\tilde q_3=\lambda+\vec q_3$ is $2\lambda\,\mathrm{id}$ plus the pure part; the matrix statement is the formula $G^{\sim}=D\,G^{\mathsf T}D$ of *Association and the Transpose on the Quaternion Algebra*, above this article in this category, read at $G^{\sim}=G$.
 
-## The Skew Sector
+## The Anti-Hermitian Sector
 
-**Theorem.** The skew-adjoint operators of the span $\mathcal L+\mathcal R$ are the **inner derivations**
+**Theorem.** The anti-self-adjoint operators of the span $\mathcal L+\mathcal R$ are the **inner derivations**
 
 $$ \boxed{\; \{L_{\tilde q_3}-R_{\tilde q_3}:\tilde q_3\in\mathbb{H}\}=\{\operatorname{ad}_{\tilde q_3}:\tilde q\mapsto\tilde q_3\tilde q-\tilde q\tilde q_3\} \;} ,$$
 
 a three-dimensional space, vanishing exactly for central $\tilde q_3$.
 
-*Proof.* $T=L_{\tilde q_3}+R_{\tilde q_4}$ is skew-adjoint exactly when $R_{\tilde q_3}+L_{\tilde q_4}=-L_{\tilde q_3}-R_{\tilde q_4}$, that is $L_{\tilde q_3+\tilde q_4}=-R_{\tilde q_3+\tilde q_4}$; evaluating at $\tilde q=e_t$ gives $(\tilde q_3+\tilde q_4)=-(\tilde q_3+\tilde q_4)$, so $\tilde q_3+\tilde q_4=0$; then $T=L_{\tilde q_3}-R_{\tilde q_3}$. The map $\tilde q_3\mapsto\operatorname{ad}_{\tilde q_3}$ is linear with kernel the centre, of dimension one, so the image has dimension $3$.
+*Proof.* $T=L_{\tilde q_3}+R_{\tilde q_4}$ is anti-self-adjoint exactly when $R_{\tilde q_3}+L_{\tilde q_4}=-L_{\tilde q_3}-R_{\tilde q_4}$, that is $L_{\tilde q_3+\tilde q_4}=-R_{\tilde q_3+\tilde q_4}$; evaluating at $\tilde q=e_t$ gives $(\tilde q_3+\tilde q_4)=-(\tilde q_3+\tilde q_4)$, so $\tilde q_3+\tilde q_4=0$; then $T=L_{\tilde q_3}-R_{\tilde q_3}$. The map $\tilde q_3\mapsto\operatorname{ad}_{\tilde q_3}$ is linear with kernel the centre, of dimension one, so the image has dimension $3$.
 
-**Corollary.** $[\operatorname{ad}_{\tilde q_3},\operatorname{ad}_{\tilde q_4}]=\operatorname{ad}_{[\tilde q_3,\tilde q_4]}$, so the skew sector is a Lie algebra isomorphic to the pure quaternions with the cross product, and $\operatorname{ad}_{\tilde q_3}$ is the derivation of $\mathbb{H}$ by $\tilde q_3$.
+**Corollary.** $[\operatorname{ad}_{\tilde q_3},\operatorname{ad}_{\tilde q_4}]=\operatorname{ad}_{[\tilde q_3,\tilde q_4]}$, so the antisymmetric sector is a Lie algebra isomorphic to the pure quaternions with the cross product, and $\operatorname{ad}_{\tilde q_3}$ is the derivation of $\mathbb{H}$ by $\tilde q_3$.
 
 *Proof.* The Jacobi identity of the associative product, read in the operator algebra: $[\operatorname{ad}_a,\operatorname{ad}_b](q)=abq-aqb-bqa+b a q=\operatorname{ad}_{ab-ba}(q)$. The commutator of two pure quaternions is twice the cross product up to a scalar normalisation.
 
-**Corollary.** The seven-dimensional span $\mathcal L+\mathcal R$ splits as the four-dimensional self-adjoint sector and the three-dimensional skew sector, and the sum is direct.
+**Corollary.** The seven-dimensional span $\mathcal L+\mathcal R$ splits as the four-dimensional self-adjoint sector and the three-dimensional anti-Hermitian sector, and the sum is direct.
 
 *Proof.* The transpose is an involution, so the span is the direct sum of its $+1$ and $-1$ eigenspaces, of dimensions $4$ and $3$.
 
@@ -80,7 +80,7 @@ a three-dimensional space, vanishing exactly for central $\tilde q_3$.
 
 ## Summary
 
-The left and right multiplications of $\mathbb{H}$ are two four-dimensional families, the first an algebra isomorphic copy of $\mathbb{H}$ and the second of $\mathbb{H}_{\mathrm{opp}}$; they commute and intersect in the scalar multiplications, so their span is seven-dimensional. The transpose of the plain form exchanges them, $L_{\tilde q_3}^{\sim}=R_{\tilde q_3}$ and $R_{\tilde q_4}^{\sim}=L_{\tilde q_4}$, and it is the operator-level association of the two factors. The self-adjoint sector is the four-dimensional family of symmetric sums $L_{\tilde q_3}+R_{\tilde q_3}$, whose one-dimensional scalar part is the centre acting by scalar multiplications; the skew sector is the three-dimensional family of inner derivations $L_{\tilde q_3}-R_{\tilde q_3}$, a Lie algebra isomorphic to the pure quaternions. The only one-sided automorphisms of the plain form are $\pm\mathrm{id}$; the form whose one-sided form-preserving maps are the unit shell is the definite norm, and it belongs to the pin and spin article.
+The left and right multiplications of $\mathbb{H}$ are two four-dimensional families, the first an algebra isomorphic copy of $\mathbb{H}$ and the second of $\mathbb{H}_{\mathrm{opp}}$; they commute and intersect in the scalar multiplications, so their span is seven-dimensional. The transpose of the plain form exchanges them, $L_{\tilde q_3}^{\sim}=R_{\tilde q_3}$ and $R_{\tilde q_4}^{\sim}=L_{\tilde q_4}$, and it is the operator-level association of the two factors. The self-adjoint sector is the four-dimensional family of symmetric sums $L_{\tilde q_3}+R_{\tilde q_3}$, whose one-dimensional scalar part is the centre acting by scalar multiplications; the antisymmetric sector is the three-dimensional family of inner derivations $L_{\tilde q_3}-R_{\tilde q_3}$, a Lie algebra isomorphic to the pure quaternions. The only one-sided automorphisms of the plain form are $\pm\mathrm{id}$; the form whose one-sided form-preserving maps are the unit shell is the definite norm, and it belongs to the pin and spin article.
 
 ## Summary of Notation
 

@@ -9,7 +9,7 @@ $$
 c(b)^{\dagger}=-c(b) ,
 $$
 
-the multiplication by a real vector being skew-adjoint. This sign is the geometric convention of the corpus, and it makes the Clifford action of a unit vector a **unitary** operator of the module. The article introduces the Hermitian conjugation on the elements of the algebra, defines the Hermitian Clifford structures on the algebra and on the module, and derives the compatibility statements.
+the multiplication by a real vector being anti-self-adjoint. This sign is the geometric convention of the corpus, and it makes the Clifford action of a unit vector a **unitary** operator of the module. The article introduces the Hermitian conjugation on the elements of the algebra, defines the Hermitian Clifford structures on the algebra and on the module, and derives the compatibility statements.
 
 ## The Hermitian Conjugation on a Complex Clifford Algebra
 
@@ -47,7 +47,7 @@ for every vector $b$ and all $s,t\in S$; the pair $(S,\langle\cdot,\cdot\rangle)
 
 **Proposition.** On a Hermitian Clifford module the following hold.
 
-**(a)** The multiplication by a real vector is skew-adjoint, so $c(b)$ is an anti-self-adjoint operator and $ic(b)$ is self-adjoint.
+**(a)** The multiplication by a real vector is anti-self-adjoint, so $c(b)$ is an anti-self-adjoint operator and $ic(b)$ is self-adjoint.
 
 **(b)** For a unit vector $b$, $\mathfrak{Q}(b)=\pm1$, the operator $c(b)$ is **unitary up to the sign of $m$**: $c(b)^{\dagger}c(b)=-\mathfrak{Q}(b)\operatorname{id}$.
 
@@ -63,11 +63,11 @@ for every vector $b$ and all $s,t\in S$; the pair $(S,\langle\cdot,\cdot\rangle)
 
 **Definition.** A **spinor inner product** on a Hermitian Clifford module $S$ is a positive definite Hermitian form $\langle\cdot,\cdot\rangle$ as above together with the Clifford action; on the irreducible module of $\mathbb{C}\ell(V,\mathfrak{Q})$ it is unique up to a positive scalar by the previous proposition.
 
-**Proposition (the spinor inner product and the chirality).** In even complex dimension the module splits $S=S^+\oplus S^-$, the chirality grading $\Pi$ is self-adjoint and unitary, $\Pi^{\dagger}=\Pi=\Pi^{-1}$, the two halves are orthogonal, and the Clifford multiplication by a vector interchanges them, $c(b)S^\pm\subseteq S^\mp$, so $c(b)$ is off-diagonal and skew-adjoint.
+**Proposition (the spinor inner product and the chirality).** In even complex dimension the module splits $S=S^+\oplus S^-$, the chirality grading $\Pi$ is self-adjoint and unitary, $\Pi^{\dagger}=\Pi=\Pi^{-1}$, the two halves are orthogonal, and the Clifford multiplication by a vector interchanges them, $c(b)S^\pm\subseteq S^\mp$, so $c(b)$ is off-diagonal and anti-self-adjoint.
 
-**Proof.** The chirality is the product of an orthonormal basis in even dimension, it squares to a scalar that is normalised to $+1$ in the complex case, and it is an involution of the module with the two eigenspaces $S^\pm$; it is unitary because it is a product of unitaries up to the normalisation; the interchange is the anticommutation of $c(b)$ with the product of an odd number of vectors, and skew-adjointness with an off-diagonal matrix is the pairing of the two halves.
+**Proof.** The chirality is the product of an orthonormal basis in even dimension, it squares to a scalar that is normalised to $+1$ in the complex case, and it is an involution of the module with the two eigenspaces $S^\pm$; it is unitary because it is a product of unitaries up to the normalisation; the interchange is the anticommutation of $c(b)$ with the product of an odd number of vectors, and anti-self-adjointness with an off-diagonal matrix is the pairing of the two halves.
 
-**Corollary (the Hermitian structure of the spinor bundle).** On a spin manifold with a Hermitian Clifford structure the spinor bundle carries the spinor inner product, the Clifford multiplication is skew-adjoint, and the charge conjugation of the spinor bundle is the Hermitian conjugation combined with the chirality; the form is the datum of the real structure of the twistor construction.
+**Corollary (the Hermitian structure of the spinor bundle).** On a spin manifold with a Hermitian Clifford structure the spinor bundle carries the spinor inner product, the Clifford multiplication is anti-self-adjoint, and the charge conjugation of the spinor bundle is the Hermitian conjugation combined with the chirality; the form is the datum of the real structure of the twistor construction.
 
 **Proof.** The pointwise statements are the propositions above and the charge-conjugation identification is the standard spinorial reality structure; the last clause is the Hermitian structure used in *Twistor Spaces and the Hermitian Structure of a Conformal Manifold*.
 
@@ -75,7 +75,7 @@ for every vector $b$ and all $s,t\in S$; the pair $(S,\langle\cdot,\cdot\rangle)
 
 ### The Complex Numbers
 
-For $\mathbb{C}\ell_1$ with $e_1^2=-1$, the algebra is $\mathbb{C}\oplus\mathbb{C}$ as a vector space with the generator $e_1$, and the Hermitian conjugation fixing $i$ with $e_1^{\dagger}=-e_1$ makes $c(e_1)$ skew-adjoint; the module $\mathbb{C}$ carries the standard inner product and $c(e_1)$ is the multiplication by $i$, whose adjoint is the multiplication by $-i$.
+For $\mathbb{C}\ell_1$ with $e_1^2=-1$, the algebra is $\mathbb{C}\oplus\mathbb{C}$ as a vector space with the generator $e_1$, and the Hermitian conjugation fixing $i$ with $e_1^{\dagger}=-e_1$ makes $c(e_1)$ anti-self-adjoint; the module $\mathbb{C}$ carries the standard inner product and $c(e_1)$ is the multiplication by $i$, whose adjoint is the multiplication by $-i$.
 
 ### The Complexified Plane
 
@@ -83,11 +83,11 @@ For the neutral complex plane with the Witt basis $\mathfrak f,\mathfrak f^{\dag
 
 ### The Quaternions Complexified
 
-For $\mathbb{C}\ell_3\cong M_2(\mathbb{C})$, the Hermitian conjugation is $X\mapsto X^{\dagger}$ on the matrices after the standard identification, the Clifford generators $\sigma_1,\sigma_2,\sigma_3$ are Hermitian matrices with $\sigma_j^{\dagger}=\sigma_j$, and the skew-adjointness $c(b)^{\dagger}=-c(b)$ is the statement that the Clifford generators are $-i$ times the Pauli matrices in the geometric normalisation; the two conventions differ exactly by the factor $i$ named in the remark.
+For $\mathbb{C}\ell_3\cong M_2(\mathbb{C})$, the Hermitian conjugation is $X\mapsto X^{\dagger}$ on the matrices after the standard identification, the Clifford generators $\sigma_1,\sigma_2,\sigma_3$ are Hermitian matrices with $\sigma_j^{\dagger}=\sigma_j$, and the anti-self-adjointness $c(b)^{\dagger}=-c(b)$ is the statement that the Clifford generators are $-i$ times the Pauli matrices in the geometric normalisation; the two conventions differ exactly by the factor $i$ named in the remark.
 
 ## Summary
 
-A **Hermitian Clifford structure** is a Clifford structure together with a Hermitian form, so that the conjugation of the form, written $x\mapsto x^{\dagger}$, is an anti-involution on the **elements** with $(xy)^{\dagger}=y^{\dagger}x^{\dagger}$, and the Clifford multiplication is **skew-adjoint**, $c(b)^{\dagger}=-c(b)$; the multiplication by a unit vector is unitary up to the sign of $\mathfrak{Q}(b)$, and the Clifford action of the versor group is unitary. The Hermitian conjugation is distinct from the Clifford conjugation $\hat x$ of the adjoint theory, and it commutes with the grade involution. A **Hermitian Clifford module** is a Clifford module with a positive definite form satisfying the skew-adjointness; in even dimension the chirality $\Pi$ is self-adjoint and unitary, the two chiral halves are orthogonal and are interchanged by the multiplication by a vector. The **Hermitian Clifford algebra** is the algebra of a neutral complex quadratic space in a Witt presentation, generated by isotropic elements $\mathfrak f_j$ and their Hermitian conjugates $\mathfrak f_j^{\dagger}$ with $\{\mathfrak f_j,\mathfrak f_k^{\dagger}\}=\delta_{jk}$; it is the classification of the complex quadratic forms in a Hermitian dress, and it is the algebraic input of the Hermitian Clifford analysis, whose operator theory belongs to Part III. The Clifford multiplication as an operator is *The Clifford Multiplication Operator*, its metric adjoint is *The Adjoint of the Clifford Multiplication*, and the form of the spinor bundle is the one used by the twistor construction of *Twistor Spaces and the Hermitian Structure of a Conformal Manifold*.
+A **Hermitian Clifford structure** is a Clifford structure together with a Hermitian form, so that the conjugation of the form, written $x\mapsto x^{\dagger}$, is an anti-involution on the **elements** with $(xy)^{\dagger}=y^{\dagger}x^{\dagger}$, and the Clifford multiplication is **anti-self-adjoint**, $c(b)^{\dagger}=-c(b)$; the multiplication by a unit vector is unitary up to the sign of $\mathfrak{Q}(b)$, and the Clifford action of the versor group is unitary. The Hermitian conjugation is distinct from the Clifford conjugation $\hat x$ of the adjoint theory, and it commutes with the grade involution. A **Hermitian Clifford module** is a Clifford module with a positive definite form satisfying the anti-self-adjointness; in even dimension the chirality $\Pi$ is self-adjoint and unitary, the two chiral halves are orthogonal and are interchanged by the multiplication by a vector. The **Hermitian Clifford algebra** is the algebra of a neutral complex quadratic space in a Witt presentation, generated by isotropic elements $\mathfrak f_j$ and their Hermitian conjugates $\mathfrak f_j^{\dagger}$ with $\{\mathfrak f_j,\mathfrak f_k^{\dagger}\}=\delta_{jk}$; it is the classification of the complex quadratic forms in a Hermitian dress, and it is the algebraic input of the Hermitian Clifford analysis, whose operator theory belongs to Part III. The Clifford multiplication as an operator is *The Clifford Multiplication Operator*, its metric adjoint is *The Adjoint of the Clifford Multiplication*, and the form of the spinor bundle is the one used by the twistor construction of *Twistor Spaces and the Hermitian Structure of a Conformal Manifold*.
 
 ## Summary of Notation
 
@@ -96,7 +96,7 @@ A **Hermitian Clifford structure** is a Clifford structure together with a Hermi
 | $x^{\dagger}$ | Hermitian conjugation; anti-involution, conjugate-linear |
 | $h(x^{\dagger}y,z)=h(y,xz)$ | The dagger form of the algebra |
 | $\mathfrak f_j,\mathfrak f_j^{\dagger}$ | Witt (isotropic) basis; $\{\mathfrak f_j,\mathfrak f_k^{\dagger}\}=\delta_{jk}$ |
-| $c(b)^{\dagger}=-c(b)$ | Skew-adjointness; geometric convention |
+| $c(b)^{\dagger}=-c(b)$ | Anti-self-adjointness; geometric convention |
 | $\Pi^{\dagger}=\Pi=\Pi^{-1}$ | Self-adjoint unitary chirality in even dimension |
 | $c(b)S^\pm\subseteq S^\mp$ | The multiplication by a vector interchanges the chiral halves |
 | $\hat x=\alpha(x^{r})$ | Clifford conjugation; **not** the Hermitian conjugation |

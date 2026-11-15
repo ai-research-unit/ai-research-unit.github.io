@@ -34,7 +34,7 @@ $$
 
 **Proof.** Take $S=E_{11}+E_{22}$ and $S'=E_{11}$, both symmetric; their product is $E_{11}+E_{22}$, symmetric. Now take $S=E_{12}+E_{21}$ and $S'=E_{11}$, both symmetric; their product is $E_{21}$, antisymmetric. For the second half, $K=E_{12}-E_{21}$ and $K'=E_{34}-E_{43}$ are antisymmetric and their product has the entries $\pm1$ at $(1,4)$ and $(2,3)$, which is symmetric.
 
-**Proposition (the truth about the four products).** For $A,B$ of the **same** parity the anticommutator is symmetric and the commutator is skew; for $A,B$ of **opposite** parity the anticommutator is skew and the commutator is symmetric. Hence
+**Proposition (the truth about the four products).** For $A,B$ of the **same** parity the anticommutator is symmetric and the commutator is antisymmetric; for $A,B$ of **opposite** parity the anticommutator is antisymmetric and the commutator is symmetric. Hence
 
 $$
 AB=\tfrac12\{A,B\}+\tfrac12[A,B]
@@ -48,7 +48,7 @@ is the symmetric-plus-antisymmetric split of $AB$ when the parities agree, and t
 
 **Proof.** Expand: $K$ sends $e_1\mapsto e_2$ and $e_2\mapsto-e_1$, $K'$ sends $e_2\mapsto e_3$ and $e_3\mapsto-e_2$, so $KK'$ sends $e_3\mapsto-e_1$ and kills the other two basis vectors; that map is $E_{13}$. Its transpose is $E_{31}\neq\pm E_{13}$.
 
-**Why order two is different.** At $n=2$ the antisymmetric matrices form a one-dimensional space, so they all commute and $KK'$ is symmetric there. At $n=4$ the antisymmetric half is $\mathfrak{so}(4)$, of dimension $6$ and not abelian, and the commutator $[K,K']$ is a nonzero skew matrix; the symmetric product of order two is the accident, and the general statement carries both parts.
+**Why order two is different.** At $n=2$ the antisymmetric matrices form a one-dimensional space, so they all commute and $KK'$ is symmetric there. At $n=4$ the antisymmetric half is $\mathfrak{so}(4)$, of dimension $6$ and not abelian, and the commutator $[K,K']$ is a nonzero antisymmetric matrix; the symmetric product of order two is the accident, and the general statement carries both parts.
 
 **Corollary (what each half does support).** $\operatorname{Sym}_4$ is closed under the anticommutator and not under the product; $\operatorname{Skew}_4$ is closed under the commutator and not under the product.
 
@@ -64,7 +64,7 @@ is the symmetric-plus-antisymmetric split of $AB$ when the parities agree, and t
 
 **Corollary.** The trace functional vanishes on $\operatorname{Skew}_4$, and the traceless part of $\operatorname{Sym}_4$ has dimension $9$.
 
-**Proof.** The trace of a skew matrix is zero; on the symmetric half the trace is a nonzero linear functional, so its kernel has dimension $10-1=9$.
+**Proof.** The trace of an antisymmetric matrix is zero; on the symmetric half the trace is a nonzero linear functional, so its kernel has dimension $10-1=9$.
 
 **The definiteness over $\mathbb{R}$.** For real $S$ and real $K$,
 
@@ -123,7 +123,7 @@ and the antisymmetric half is the set whose remaining ten coefficients vanish.
 
 The transpose is an involution of $M_4(\mathbb{C})$, so the algebra is the direct sum of its $+1$ and $-1$ eigenspaces, of complex dimensions $10$ and $6$ and real dimensions $10$ and $6$ on the real slice. The projections are $\tfrac12(A\pm A^{\mathsf T})$ and they are unique.
 
-Neither half is closed under the product. For two matrices of the same parity the anticommutator is symmetric and the commutator skew, for opposite parities the reverse, and every product splits accordingly; in particular a product of two antisymmetric matrices is not symmetric at order four. The trace vanishes on the antisymmetric half and on every mixed pairing.
+Neither half is closed under the product. For two matrices of the same parity the anticommutator is symmetric and the commutator antisymmetric, for opposite parities the reverse, and every product splits accordingly; in particular a product of two antisymmetric matrices is not symmetric at order four. The trace vanishes on the antisymmetric half and on every mixed pairing.
 
 Over the reals the trace of a symmetric square is a sum of squares and the trace of an antisymmetric square is minus a sum of squares, so the two halves are the positive and negative parts of the form, of signature $(10,6)$. In the axis-free basis this is an index pattern with no transpose in sight: ten symmetric slots, six antisymmetric ones, and a sign of $4$ attached to each.
 

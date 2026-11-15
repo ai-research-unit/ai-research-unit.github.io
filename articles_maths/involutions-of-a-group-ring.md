@@ -11,7 +11,7 @@ $$
 
 is anti-multiplicative because the two reversals compensate: the inverse of a product is the product of the inverses in the opposite order, and $\sigma$ is anti-multiplicative. This **standard involution** is the one used throughout the representation theory of a finite group, and it is only the first of a family: any anti-automorphism of $G$ of order two, composed with $\sigma$ on the coefficients, gives an involution of $K[G]$, and the standard one is the case of inversion. When $G$ is abelian, inversion is an automorphism, so the standard involution is an automorphism of $K[G]$ and the distinction between the two kinds of involution disappears.
 
-This article fixes the standard involution, derives the involutions induced by an anti-automorphism of the group, records the compatibility with the coefficients and the passage to a twisted group ring, and computes the symmetric and skew elements. It assumes *Rings* and *Involutive Rings* for the involution of a ring, *Groups* for the group and its anti-automorphisms, and *Group Algebras* for the group ring and its augmentation; the classification of all the involutions of $K[G]$ by a cocycle is stated in the form in which the twisted group ring carries it, and the applications to representation theory are not touched. Throughout, $G$ is a group, $K$ is a commutative ring with $1 \neq 0$ and $\sigma$ is an involution of $K$ (possibly the identity), $K[G]$ is the group ring, and $\varepsilon$ is its augmentation; the general element is $\sum_g a_g g$ with $a_g \in K$ and finite support.
+This article fixes the standard involution, derives the involutions induced by an anti-automorphism of the group, records the compatibility with the coefficients and the passage to a twisted group ring, and computes the symmetric and anti-Hermitian elements. It assumes *Rings* and *Involutive Rings* for the involution of a ring, *Groups* for the group and its anti-automorphisms, and *Group Algebras* for the group ring and its augmentation; the classification of all the involutions of $K[G]$ by a cocycle is stated in the form in which the twisted group ring carries it, and the applications to representation theory are not touched. Throughout, $G$ is a group, $K$ is a commutative ring with $1 \neq 0$ and $\sigma$ is an involution of $K$ (possibly the identity), $K[G]$ is the group ring, and $\varepsilon$ is its augmentation; the general element is $\sum_g a_g g$ with $a_g \in K$ and finite support.
 
 ## The Standard Involution
 
@@ -91,7 +91,7 @@ $$
 \mathbb{Q}[Q_8] \cong \mathbb{Q}^4 \times \mathbb{H}(\mathbb{Q}),
 $$
 
-with four one-dimensional factors and the quaternion algebra; under this decomposition the standard involution is the identity on the four copies of $\mathbb{Q}$ and the quaternion conjugation on $\mathbb{H}(\mathbb{Q})$, so its fixed part is $4+1 = 5$-dimensional, spanned by the four coordinate units together with the real line of the quaternion factor, and its skew part is the $3$-dimensional space of pure quaternions.
+with four one-dimensional factors and the quaternion algebra; under this decomposition the standard involution is the identity on the four copies of $\mathbb{Q}$ and the quaternion conjugation on $\mathbb{H}(\mathbb{Q})$, so its fixed part is $4+1 = 5$-dimensional, spanned by the four coordinate units together with the real line of the quaternion factor, and its anti-Hermitian part is the $3$-dimensional space of pure quaternions.
 
 ## Compatibility with the Coefficients
 
@@ -99,7 +99,7 @@ with four one-dimensional factors and the quaternion algebra; under this decompo
 
 **Proof.** The generation statement is the definition of the group ring; the form of the involutions of the previous section is its construction, and the exhaustiveness is the deferred classification.
 
-**Corollary (elements fixed by the standard involution).** For the standard involution the fixed elements are $\{x : a_g = \sigma(a_{g^{-1}})\ \text{for all}\ g\}$ and the skew elements are $\{x : a_g = -\sigma(a_{g^{-1}})\}$; both are additive subgroups, and they are the eigenspaces when $2$ is invertible in $K$. For a finite group the symmetric part is a $K^\sigma$-module of rank at least the number of conjugacy classes of $G$ that are stable under inversion.
+**Corollary (elements fixed by the standard involution).** For the standard involution the fixed elements are $\{x : a_g = \sigma(a_{g^{-1}})\ \text{for all}\ g\}$ and the anti-Hermitian elements are $\{x : a_g = -\sigma(a_{g^{-1}})\}$; both are additive subgroups, and they are the eigenspaces when $2$ is invertible in $K$. For a finite group the symmetric part is a $K^\sigma$-module of rank at least the number of conjugacy classes of $G$ that are stable under inversion.
 
 **Proof.** The fixed-element condition is the comparison of coefficients in $x^{*} = x$; the eigenspace statement is the additive decomposition of *Involutive Rings*. The rank statement follows because a stable conjugacy class sum is fixed under $\sigma = \mathrm{id}$ and the class sums are linearly independent.
 
@@ -107,7 +107,7 @@ with four one-dimensional factors and the quaternion algebra; under this decompo
 
 The group ring $K[G]$ carries the **standard involution** $(\sum a_g g)^{*} = \sum \sigma(a_g)g^{-1}$, anti-multiplicative because the inversion of $G$ and the involution $\sigma$ of $K$ reverse in tandem, with $1^{*} = 1$ and $\varepsilon(x^{*}) = \varepsilon(x)$. It restricts to $\sigma$ on the coefficients, it is an automorphism exactly when $G$ is abelian, and its fixed elements are those with $a_g = \sigma(a_{g^{-1}})$. More generally an anti-automorphism $\iota$ of $G$ of order two gives the involution $(\sum a_g g)^{\iota} = \sum \sigma(a_g)\iota(g)$, and the standard involution is the case of inversion; every involution of $K[G]$ fixing the coefficients is of the form $g^{*} = u_g\iota(g)$ with $u$ a cocycle, the invariant of the involution being the class of $u$ in $H^2(G;K^{\times})$.
 
-On a twisted group ring $K^{\alpha}[G]$, with $\bar g\bar h = \alpha(g,h)\overline{gh}$, the assignment $\bar g^{*} = \overline{g^{-1}}$ extends to an involution if and only if $\alpha(g,h) = \alpha(h^{-1},g^{-1})$, a condition automatic for the untwisted ring. The symmetric and skew elements are the eigenspaces of the standard involution, and for a finite group the symmetric part contains the inversion-stable class sums.
+On a twisted group ring $K^{\alpha}[G]$, with $\bar g\bar h = \alpha(g,h)\overline{gh}$, the assignment $\bar g^{*} = \overline{g^{-1}}$ extends to an involution if and only if $\alpha(g,h) = \alpha(h^{-1},g^{-1})$, a condition automatic for the untwisted ring. The symmetric and anti-Hermitian elements are the eigenspaces of the standard involution, and for a finite group the symmetric part contains the inversion-stable class sums.
 
 ## Summary of Notation
 

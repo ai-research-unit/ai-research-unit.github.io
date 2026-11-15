@@ -76,7 +76,7 @@ a space of dimension one. The radical of the form is exactly the centre of the a
 
 ## The Restriction to $\mathfrak{so}(n)$
 
-**On $\mathfrak{so}(n)$ the form is a negative multiple of the trace form.** The elements of $\mathfrak{so}(n)$ are the skew matrices, and they have trace zero, so $\operatorname{K}(X,Y)=2n\operatorname{tr}(XY)$ there. For skew $X$ the trace of $X^{2}$ is $-2\sum_{i<j}X_{ij}^{2}$, which is negative for nonzero $X$. So the restriction is negative definite.
+**On $\mathfrak{so}(n)$ the form is a negative multiple of the trace form.** The elements of $\mathfrak{so}(n)$ are the antisymmetric matrices, and they have trace zero, so $\operatorname{K}(X,Y)=2n\operatorname{tr}(XY)$ there. For antisymmetric $X$ the trace of $X^{2}$ is $-2\sum_{i<j}X_{ij}^{2}$, which is negative for nonzero $X$. So the restriction is negative definite.
 
 **The eigenvalues in the standard basis are negative and explicit.** Take the basis $L_{ij}=E_{ij}-E_{ji}$ for $i<j$. Then $\operatorname{tr}(L_{ij}^{2})=-2$, and the basis is orthogonal for the trace form, so the eigenvalues of the trace form on this basis are $-2$, with multiplicity $n(n-1)/2$. The restriction of $\operatorname{K}$ is $2n$ times that, so its eigenvalues are $-4n$: that is $-12$ three times at $n=3$ and $-16$ six times at $n=4$, as measured.
 
@@ -117,7 +117,7 @@ The Killing form of $\mathfrak{gl}_n(\mathbb{R})$ is $\operatorname{K}(X,Y)=2n\o
 | $\mathrm{I}$ | the identity matrix |
 | $\mathfrak{gl}_n(\mathbb{R})$ | the algebra $M_n(\mathbb{R})$ read as a Lie algebra |
 | $\mathfrak{sl}_n(\mathbb{R})$ | the trace-zero subspace, of dimension $n^{2}-1$ |
-| $\mathfrak{so}(n)$ | the skew matrices, of dimension $n(n-1)/2$ |
+| $\mathfrak{so}(n)$ | the antisymmetric matrices, of dimension $n(n-1)/2$ |
 | $L_{ij}=E_{ij}-E_{ji}$ | the standard basis of $\mathfrak{so}(n)$ |
 | $\operatorname{rad}\operatorname{K}$ | the radical of the form, equal to $\mathbb{R}\mathrm{I}$ |
 | $\mathfrak{z}(\mathfrak{gl}_n(\mathbb{R}))$ | the centre, equal to $\mathbb{R}\mathrm{I}$ |

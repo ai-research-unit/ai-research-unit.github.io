@@ -6,7 +6,7 @@ An element $h$ of an algebra with involution is **self-adjoint** when $h^*=h$. I
 
 The result is the algebraic form of the statement that a Hermitian matrix has an orthonormal basis of eigenvectors with real eigenvalues. The algebra is form-free: no inner product, no positivity and no distance are used. The eigenvalue decomposition is that of *The Eigenvalue Decomposition of an Element*; the involution and the two kinds are those of *Involutive Algebras*; the self-adjoint part and its Jordan structure are *The Self-Adjoint Part of an Algebra*; the unitary analogue is *Unitary Elements and Their Algebraic Decompositions*; and the form-theoretic orthogonality of the Peirce corners is *The Adjoint of the Peirce Projection*. The examples are *Matrix Algebras* and *Examples of Algebras*.
 
-Throughout, $F$ is a field of characteristic not two, $\varsigma$ is an involution of $F$, $A$ is a finite-dimensional unital associative $F$-algebra, and $\sigma$ is a $\varsigma$-semilinear involution of $A$; the image of $x$ is written $x^*=\sigma(x)$, so that $(xy)^*=y^*x^*$ and $(x^*)^*=x$. The fixed field of $\varsigma$ is $F_0=F^\varsigma$, the self-adjoint part is $A^+=H(A)=\{h:h^*=h\}$, and the skew part is $A^-=\{k:k^*=-k\}$. The involution is **of the first kind** when $\varsigma=\mathrm{id}$, and **of the second kind** when $\varsigma\neq\mathrm{id}$; in the second kind $F/F_0$ is quadratic and there is an element $t\in F$ with $\varsigma(t)=-t$ and $F=F_0\oplus F_0t$.
+Throughout, $F$ is a field of characteristic not two, $\varsigma$ is an involution of $F$, $A$ is a finite-dimensional unital associative $F$-algebra, and $\sigma$ is a $\varsigma$-semilinear involution of $A$; the image of $x$ is written $x^*=\sigma(x)$, so that $(xy)^*=y^*x^*$ and $(x^*)^*=x$. The fixed field of $\varsigma$ is $F_0=F^\varsigma$, the self-adjoint part is $A^+=H(A)=\{h:h^*=h\}$, and the anti-Hermitian part is $A^-=\{k:k^*=-k\}$. The involution is **of the first kind** when $\varsigma=\mathrm{id}$, and **of the second kind** when $\varsigma\neq\mathrm{id}$; in the second kind $F/F_0$ is quadratic and there is an element $t\in F$ with $\varsigma(t)=-t$ and $F=F_0\oplus F_0t$.
 
 ## The Involution on the Polynomial Calculus
 
@@ -120,9 +120,9 @@ $$
 h_J=\frac{s}{2}g_J+bt\,v_J, \qquad v_J=\frac{h_J-\frac{s}{2}g_J}{bt},
 $$
 
-where $v_J\in g_JAg_J$ is skew, $v_J^*=-v_J$, and $v_J^2=g_J$.
+where $v_J\in g_JAg_J$ is anti-Hermitian, $v_J^*=-v_J$, and $v_J^2=g_J$.
 
-*Proof.* The involution permutes the $e_i$ within each orbit, so it fixes the sum $g_J$; distinct orbits are disjoint unions of orthogonal idempotents, so the $g_J$ are orthogonal and sum to the identity. The element $h_J=hg_J$ is fixed by $*$ because $h$ and $g_J$ are, and it lies in $g_JAg_J$ because $g_J$ is an idempotent commuting with $h$. For a singleton, $g_J=e_\lambda$ and $h_J=\lambda e_\lambda$, with $\lambda$ fixed by the corollary. For a pair, $g_J=e_\lambda+e_{\bar\lambda}$, and $h_J=\lambda e_\lambda+\bar\lambda e_{\bar\lambda}$. The scalar $\lambda-\bar\lambda$ is skew and nonzero, so it is $2bt$ with $b\in F_0$ and $b\neq0$, because the skew elements of $F$ are exactly $F_0t$. The element $v_J$ is skew: the numerator is self-adjoint, and $bt$ is skew, so the quotient is skew. Finally,
+*Proof.* The involution permutes the $e_i$ within each orbit, so it fixes the sum $g_J$; distinct orbits are disjoint unions of orthogonal idempotents, so the $g_J$ are orthogonal and sum to the identity. The element $h_J=hg_J$ is fixed by $*$ because $h$ and $g_J$ are, and it lies in $g_JAg_J$ because $g_J$ is an idempotent commuting with $h$. For a singleton, $g_J=e_\lambda$ and $h_J=\lambda e_\lambda$, with $\lambda$ fixed by the corollary. For a pair, $g_J=e_\lambda+e_{\bar\lambda}$, and $h_J=\lambda e_\lambda+\bar\lambda e_{\bar\lambda}$. The scalar $\lambda-\bar\lambda$ is anti-Hermitian and nonzero, so it is $2bt$ with $b\in F_0$ and $b\neq0$, because the anti-Hermitian elements of $F$ are exactly $F_0t$. The element $v_J$ is anti-Hermitian: the numerator is self-adjoint, and $bt$ is anti-Hermitian, so the quotient is anti-Hermitian. Finally,
 
 $$
 v_J^2=\frac{\left(h_J-\frac{s}{2}g_J\right)^2}{b^2t^2}
@@ -162,7 +162,7 @@ is therefore stable under $*$, and the spectral decomposition of $h$ is adapted 
 
 ### The exchanged corners
 
-If a two-element orbit $\{\lambda,\bar\lambda\}$ is present, the idempotents $e_\lambda,e_{\bar\lambda}$ are not Hermitian, and the corners $A_{\lambda\lambda}$ and $A_{\bar\lambda\bar\lambda}$ are exchanged by $*$; so are $A_{\lambda\bar\lambda}$ and $A_{\bar\lambda\lambda}$. The orbit idempotent $g=e_\lambda+e_{\bar\lambda}$ is Hermitian, and the corner $gAg$ is $*$-stable. Inside it, the element $h g$ has the form $\frac{s}{2}g+btv$ of the orbit theorem, with $v$ skew and $v^2=g$; the pair is a single "complex" block over $F_0$, not two real blocks.
+If a two-element orbit $\{\lambda,\bar\lambda\}$ is present, the idempotents $e_\lambda,e_{\bar\lambda}$ are not Hermitian, and the corners $A_{\lambda\lambda}$ and $A_{\bar\lambda\bar\lambda}$ are exchanged by $*$; so are $A_{\lambda\bar\lambda}$ and $A_{\bar\lambda\lambda}$. The orbit idempotent $g=e_\lambda+e_{\bar\lambda}$ is Hermitian, and the corner $gAg$ is $*$-stable. Inside it, the element $h g$ has the form $\frac{s}{2}g+btv$ of the orbit theorem, with $v$ anti-Hermitian and $v^2=g$; the pair is a single "complex" block over $F_0$, not two real blocks.
 
 **Proposition.** In the corner $gAg$, the element $v$ satisfies
 
@@ -174,7 +174,7 @@ and the element $hg$ commutes with $v$. The subalgebra $F_0[v]$ is spanned by $g
 
 *Proof.* The first two identities are the orbit theorem; $vg=v$ and $gv=v$ follow from $v\in gAg$. The commutation is $h g=\frac{s}{2}g+btv$. The algebra $F_0[v]$ is spanned by $g$ and $v$ with $v^2=g$, and the displayed assignment is an isomorphism onto $F_0\times F_0$ because it preserves the unit, is bijective on the two-dimensional spaces, and sends $v^2=g$ to $(1,1)$.
 
-**Remark.** The last proposition is the algebraic model of the two-dimensional real block of a complex conjugate pair. The element $v$ is the "complex structure" of the block, and it is skew, not self-adjoint; the self-adjoint element $hg$ is $\frac{s}{2}g$ plus a multiple of $v$. The notation is consistent with the split complex numbers $\mathbb{R}[j]$, $j^2=+1$, of *Examples of Algebras*: the corner is a split algebra over $F_0$, and the two idempotents $\frac12(g\pm v)$ of that split algebra are the images of $e_\lambda$ and $e_{\bar\lambda}$ after the scalar extension.
+**Remark.** The last proposition is the algebraic model of the two-dimensional real block of a complex conjugate pair. The element $v$ is the "complex structure" of the block, and it is anti-Hermitian, not self-adjoint; the self-adjoint element $hg$ is $\frac{s}{2}g$ plus a multiple of $v$. The notation is consistent with the split complex numbers $\mathbb{R}[j]$, $j^2=+1$, of *Examples of Algebras*: the corner is a split algebra over $F_0$, and the two idempotents $\frac12(g\pm v)$ of that split algebra are the images of $e_\lambda$ and $e_{\bar\lambda}$ after the scalar extension.
 
 ## Examples
 
@@ -228,9 +228,9 @@ $$
 v=\frac{R-0}{1\cdot i}=\frac{R}{i}=-iR=\begin{pmatrix}0&i\\-i&0\end{pmatrix}.
 $$
 
-The element $v$ is skew, $v^*=iR=-v$, and $v^2=(-i)^2R^2=I$; the orbit formula reads $R=btv=i(-iR)=R$. The matrix $v$ is the complex structure of the rotation.
+The element $v$ is anti-Hermitian, $v^*=iR=-v$, and $v^2=(-i)^2R^2=I$; the orbit formula reads $R=btv=i(-iR)=R$. The matrix $v$ is the complex structure of the rotation.
 
-The example is the two-dimensional real rotation, the standard conjugate pair; the "complex structure" of the pair is $-iR$, a real matrix that squares to $I$ and is skew for the entrywise conjugation.
+The example is the two-dimensional real rotation, the standard conjugate pair; the "complex structure" of the pair is $-iR$, a real matrix that squares to $I$ and is anti-self-adjoint for the entrywise conjugation.
 
 ### A repeated eigenvalue
 
@@ -244,7 +244,7 @@ both Hermitian. The eigenvalue $1$ has algebraic multiplicity two and the eigenp
 
 ## Summary
 
-For a self-adjoint element $h$ of an algebra with a $\varsigma$-semilinear involution, the eigenvalue decomposition $h=\sum_i\lambda_i e_i$ is permuted by the involution: there is an involution $\pi$ of the index set with $e_i^*=e_{\pi(i)}$ and $\lambda_{\pi(i)}=\varsigma(\lambda_i)$. The eigenprojector $e_i$ is Hermitian exactly when the eigenvalue $\lambda_i$ is fixed by $\varsigma$; consequently all the projectors are Hermitian exactly when all the eigenvalues are fixed. In the first kind ($\varsigma=\mathrm{id}$) this is automatic, so every eigenprojector of a self-adjoint element is Hermitian; in the second kind the non-fixed eigenvalues occur in conjugate pairs, the two projectors of a pair are exchanged, and neither is Hermitian. The Hermitian orbit idempotents $g_J=\sum_{i\in J}e_i$ give a decomposition $h=\sum_J h_J$ over the fixed field, with a singleton term $\lambda g_J$ for a fixed eigenvalue and a two-element term $\frac{s}{2}g_J+btv_J$ for a conjugate pair, where $v_J$ is skew, $v_J^2=g_J$ and $v_J$ is the algebraic complex structure of the pair. When all the eigenvalues are fixed, the Peirce corners satisfy $A_{ij}^*=A_{ji}$, the diagonal corners are $*$-stable, and the decomposition is orthogonal in the algebraic sense. The eigenvalue decomposition is *The Eigenvalue Decomposition of an Element*; the involution is *Involutive Algebras*; the self-adjoint part is *The Self-Adjoint Part of an Algebra*; the unitary analogue is *Unitary Elements and Their Algebraic Decompositions*; and the form-theoretic Peirce theory is *The Adjoint of the Peirce Projection*.
+For a self-adjoint element $h$ of an algebra with a $\varsigma$-semilinear involution, the eigenvalue decomposition $h=\sum_i\lambda_i e_i$ is permuted by the involution: there is an involution $\pi$ of the index set with $e_i^*=e_{\pi(i)}$ and $\lambda_{\pi(i)}=\varsigma(\lambda_i)$. The eigenprojector $e_i$ is Hermitian exactly when the eigenvalue $\lambda_i$ is fixed by $\varsigma$; consequently all the projectors are Hermitian exactly when all the eigenvalues are fixed. In the first kind ($\varsigma=\mathrm{id}$) this is automatic, so every eigenprojector of a self-adjoint element is Hermitian; in the second kind the non-fixed eigenvalues occur in conjugate pairs, the two projectors of a pair are exchanged, and neither is Hermitian. The Hermitian orbit idempotents $g_J=\sum_{i\in J}e_i$ give a decomposition $h=\sum_J h_J$ over the fixed field, with a singleton term $\lambda g_J$ for a fixed eigenvalue and a two-element term $\frac{s}{2}g_J+btv_J$ for a conjugate pair, where $v_J$ is anti-Hermitian, $v_J^2=g_J$ and $v_J$ is the algebraic complex structure of the pair. When all the eigenvalues are fixed, the Peirce corners satisfy $A_{ij}^*=A_{ji}$, the diagonal corners are $*$-stable, and the decomposition is orthogonal in the algebraic sense. The eigenvalue decomposition is *The Eigenvalue Decomposition of an Element*; the involution is *Involutive Algebras*; the self-adjoint part is *The Self-Adjoint Part of an Algebra*; the unitary analogue is *Unitary Elements and Their Algebraic Decompositions*; and the form-theoretic Peirce theory is *The Adjoint of the Peirce Projection*.
 
 ## Summary of Notation
 
@@ -256,18 +256,18 @@ For a self-adjoint element $h$ of an algebra with a $\varsigma$-semilinear invol
 | $A$ | a finite-dimensional unital associative $F$-algebra |
 | $x^*=\sigma(x)$ | the adjoint of an element |
 | $A^+=H(A)$ | the self-adjoint elements, $h^*=h$ |
-| $A^-$ | the skew elements, $k^*=-k$ |
+| $A^-$ | the anti-Hermitian elements, $k^*=-k$ |
 | $h=\sum_i\lambda_i e_i$ | the eigenvalue decomposition |
 | $e_i$ | the eigenprojectors, $e_ie_j=\delta_{ij}e_i$, $\sum_i e_i=1$ |
 | $\pi$ | the involution of the index set with $e_i^*=e_{\pi(i)}$ |
 | $g_J=\sum_{i\in J}e_i$ | the orbit idempotent of a $\varsigma$-orbit $J$ |
-| $t$ | a skew scalar, $\varsigma(t)=-t$, $F=F_0\oplus F_0t$ |
-| $v_J$ | the skew element of a pair orbit, $v_J^2=g_J$ |
+| $t$ | an anti-Hermitian scalar, $\varsigma(t)=-t$, $F=F_0\oplus F_0t$ |
+| $v_J$ | the anti-Hermitian element of a pair orbit, $v_J^2=g_J$ |
 
 ## Further Reading
 
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions* (American Mathematical Society, 1998), for the involutions of the first and the second kind and the descent to the fixed field.
-- Israel Nathan Herstein, *Rings with Involution* (University of Chicago Press, 1976), for the symmetric and the skew elements and their polynomial calculus.
+- Israel Nathan Herstein, *Rings with Involution* (University of Chicago Press, 1976), for the symmetric and the anti-Hermitian elements and their polynomial calculus.
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the eigenvalue decomposition and the Peirce decomposition in a finite-dimensional algebra.
 - Nathan Jacobson, *Structure and Representations of Jordan Algebras* (American Mathematical Society, 1968), for the self-adjoint part and its structure under the symmetrised product.
 - The fixed-field case, with fixed eigenvalues and Hermitian projectors, is [The Eigenvalue Decomposition of a Hermitian Element](the-eigenvalue-decomposition-of-a-hermitian-element.html).

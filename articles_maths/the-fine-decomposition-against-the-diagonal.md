@@ -4,7 +4,7 @@
 
 **Against the diagonal subalgebra the algebra splits into $n^{2}$ lines, one for each ordered pair of indices, and that is the finest decomposition of the category: the coarse split into two halves and the Peirce split into $n^{2}$ corners are both coarsenings of it.**
 
-The article defines the diagonal subalgebra, grades the algebra by the characters of the diagonal torus, computes the weight of each matrix unit, counts the lines and the roots, and shows how the involution acts on the grading: it fixes the diagonal lines and pairs the two lines of a transposed pair, whose sum and difference are one symmetric and one skew line. It then identifies the Peirce lines of the coordinate flag with the weight lines, and the simple nilpotents of the frame with the simple root vectors. It assumes *The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric* and *The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian* for the splits, and *The Involutions over $\mathbb{R}$ and over $\mathbb{C}$* for the action of the involution. It defers the Peirce construction at a general flag to *The Peirce Decomposition in $n$ Dimensions* and the operator version to *The Symmetric and Antisymmetric Parts of the Operator Space*.
+The article defines the diagonal subalgebra, grades the algebra by the characters of the diagonal torus, computes the weight of each matrix unit, counts the lines and the roots, and shows how the involution acts on the grading: it fixes the diagonal lines and pairs the two lines of a transposed pair, whose sum and difference are one symmetric and one antisymmetric line. It then identifies the Peirce lines of the coordinate flag with the weight lines, and the simple nilpotents of the frame with the simple root vectors. It assumes *The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric* and *The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian* for the splits, and *The Involutions over $\mathbb{R}$ and over $\mathbb{C}$* for the action of the involution. It defers the Peirce construction at a general flag to *The Peirce Decomposition in $n$ Dimensions* and the operator version to *The Symmetric and Antisymmetric Parts of the Operator Space*.
 
 ## The Diagonal Subalgebra
 
@@ -42,7 +42,7 @@ $$
 
 The roots are the weights of the adjoint action, and the root space of $\alpha_{ij}$ is $\mathbb{C}E_{ij}$. The system is irreducible of rank $n-1$, the Weyl group is the symmetric group $S_n$, and the positive roots are the ones with $i<j$ in the chosen order.
 
-**The count is the dimension of the antisymmetric half.** The number of positive roots is $\binom{n}{2}=n(n-1)/2$, which is exactly the dimension of $\operatorname{Skew}_n$. At $n=2,3,4,5,6$ the counts of all roots are $2,6,12,20,30$, of positive roots $1,3,6,10,15$, and the last column is the dimension of the skew half. The coincidence is not numerical: the positive roots index the off-diagonal pairs, and each pair contributes one skew direction.
+**The count is the dimension of the antisymmetric half.** The number of positive roots is $\binom{n}{2}=n(n-1)/2$, which is exactly the dimension of $\operatorname{Skew}_n$. At $n=2,3,4,5,6$ the counts of all roots are $2,6,12,20,30$, of positive roots $1,3,6,10,15$, and the last column is the dimension of the antisymmetric half. The coincidence is not numerical: the positive roots index the off-diagonal pairs, and each pair contributes one antisymmetric direction.
 
 **The simple roots are the gaps between consecutive indices, and their vectors are the simple nilpotents.** Put $\alpha_k=\alpha_{k,k+1}$ for $k=1,\dots,n-1$. Then the simple roots are the $n-1$ elements
 
@@ -56,7 +56,7 @@ and the matrix units $E_{k,k+1}$ are exactly the simple nilpotents $N_k$ of *The
 
 **The involution acts on the grading by reversing the weight.** The transpose sends $E_{ij}$ to $E_{ji}$, so it sends the weight $\alpha_{ij}$ to $\alpha_{ji}=-\alpha_{ij}$. A weight line is therefore fixed by the involution exactly when its weight is zero, that is on the diagonal, and the other lines are exchanged in pairs.
 
-**Each transposed pair splits into a symmetric line and a skew line.** For $i<j$ put
+**Each transposed pair splits into a symmetric line and an antisymmetric line.** For $i<j$ put
 
 $$
 S_{ij}=E_{ij}+E_{ji},\qquad K_{ij}=E_{ij}-E_{ji}.
@@ -69,7 +69,7 @@ $$
 \operatorname{Skew}_n=\bigoplus_{i<j}\mathbb{C}K_{ij},
 $$
 
-of dimensions $n+\tfrac{n(n-1)}{2}=\tfrac{n(n+1)}{2}$ and $\tfrac{n(n-1)}{2}$. The two halves are the coarse split, and this is the fine form of it: the symmetric half is the diagonal plus one line from each pair, and the skew half is the other line from each pair.
+of dimensions $n+\tfrac{n(n-1)}{2}=\tfrac{n(n+1)}{2}$ and $\tfrac{n(n-1)}{2}$. The two halves are the coarse split, and this is the fine form of it: the symmetric half is the diagonal plus one line from each pair, and the antisymmetric half is the other line from each pair.
 
 **The coarse split loses the weight and keeps the parity.** A vector in $\operatorname{Sym}_n$ or in $\operatorname{Skew}_n$ is a sum of pieces of many weights, so the two halves are not graded pieces: they are the fixed and the anti-fixed sets of an involution which acts on the grading. The correct picture is a $\mathbb{Z}$-grading by weight together with a $\mathbb{Z}/2$-grading by the involution, and the four multiplication tables of the next articles are the interaction of the two.
 
@@ -103,13 +103,13 @@ $$
 S=\sigma_1=\begin{pmatrix}0&1\\1&0\end{pmatrix},\qquad K=E_{12}-E_{21}=\begin{pmatrix}0&1\\-1&0\end{pmatrix},
 $$
 
-a symmetric and a skew line. The one positive root is $\alpha_{12}$, its vector is the simple nilpotent $N_1=E_{12}$, and the count $n-1=1$ is the number of gauge parameters.
+a symmetric and an antisymmetric line. The one positive root is $\alpha_{12}$, its vector is the simple nilpotent $N_1=E_{12}$, and the count $n-1=1$ is the number of gauge parameters.
 
 **The biquaternion frame is the grading plus the gauge.** The idempotents $\tilde\Pi_\pm$ are the two diagonal weight lines, the companion nilpotents $\vec\Upsilon_{+-}$ and $\vec\Upsilon_{-+}$ are the two off-diagonal weight lines, and the freedom of a frame is the freedom of choosing a vector in each line, which is the gauge $(\mathbb{C}^{\times})^{n-1}$ of *The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$*. At $n=2$ that is one complex parameter, the reciprocal rescaling of the two nilpotents.
 
 ## Summary
 
-The diagonal subalgebra $\mathfrak{h}$ has dimension $n$ and is a maximal torus; the conjugation action of the torus grades the algebra into $n^{2}$ one-dimensional weight lines, $n$ of weight zero and $n(n-1)$ of nontrivial weight. The weights are the roots of the system $A_{n-1}$, $n(n-1)$ in number with $n(n-1)/2$ positive, and the positive roots index the off-diagonal pairs. The simple roots correspond to the simple nilpotents $E_{k,k+1}$, $n-1$ of them, and every other unit is a product of consecutive simple ones. The transpose reverses the weight and splits each transposed pair into a symmetric line $E_{ij}+E_{ji}$ and a skew line $E_{ij}-E_{ji}$, which gives the two halves as a coarsening: $\operatorname{Sym}_n=\mathfrak{h}\oplus\bigoplus_{i<j}\mathbb{C}S_{ij}$ and $\operatorname{Skew}_n=\bigoplus_{i<j}\mathbb{C}K_{ij}$. Against the coordinate flag the Peirce lines are the weight lines, and no decomposition has more than $n^{2}$ one-dimensional summands.
+The diagonal subalgebra $\mathfrak{h}$ has dimension $n$ and is a maximal torus; the conjugation action of the torus grades the algebra into $n^{2}$ one-dimensional weight lines, $n$ of weight zero and $n(n-1)$ of nontrivial weight. The weights are the roots of the system $A_{n-1}$, $n(n-1)$ in number with $n(n-1)/2$ positive, and the positive roots index the off-diagonal pairs. The simple roots correspond to the simple nilpotents $E_{k,k+1}$, $n-1$ of them, and every other unit is a product of consecutive simple ones. The transpose reverses the weight and splits each transposed pair into a symmetric line $E_{ij}+E_{ji}$ and an antisymmetric line $E_{ij}-E_{ji}$, which gives the two halves as a coarsening: $\operatorname{Sym}_n=\mathfrak{h}\oplus\bigoplus_{i<j}\mathbb{C}S_{ij}$ and $\operatorname{Skew}_n=\bigoplus_{i<j}\mathbb{C}K_{ij}$. Against the coordinate flag the Peirce lines are the weight lines, and no decomposition has more than $n^{2}$ one-dimensional summands.
 
 ## Summary of Notation
 
@@ -122,7 +122,7 @@ The diagonal subalgebra $\mathfrak{h}$ has dimension $n$ and is a maximal torus;
 | $\alpha_{ij}=\epsilon_i-\epsilon_j$ | a root, with $\epsilon_i$ the character $t\mapsto t_i$ |
 | $\Phi^{+}$ | the positive roots $\alpha_{ij}$ with $i<j$, $n(n-1)/2$ of them |
 | $S_{ij}=E_{ij}+E_{ji}$ | the symmetric line of a transposed pair |
-| $K_{ij}=E_{ij}-E_{ji}$ | the skew line of a transposed pair |
+| $K_{ij}=E_{ij}-E_{ji}$ | the antisymmetric line of a transposed pair |
 | $A_{kl}=P_kM_nP_l$ | the Peirce line, equal to $\mathbb{C}E_{kl}$ at the coordinate flag |
 
 ## Further Reading

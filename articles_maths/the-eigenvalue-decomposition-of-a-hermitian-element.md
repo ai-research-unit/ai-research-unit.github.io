@@ -18,7 +18,7 @@ $$
 (\lambda h)^{*}=\varsigma(\lambda)h .
 $$
 
-Hence $H(A)$ is a module over the fixed field $F_{0}$ and not over $F$ in general. When $F_{0}\neq F$ the extension $F/F_{0}$ is quadratic and there is an element $t\in F$ with $\varsigma(t)=-t$ and $F=F_{0}\oplus F_{0}t$; the multiplication by $t$ carries $H(A)$ to the skew part $S(A)$ and back. This is the scalar theorem of *Hermitian and Anti-Hermitian Elements*, §*The Scalar Action*.
+Hence $H(A)$ is a module over the fixed field $F_{0}$ and not over $F$ in general. When $F_{0}\neq F$ the extension $F/F_{0}$ is quadratic and there is an element $t\in F$ with $\varsigma(t)=-t$ and $F=F_{0}\oplus F_{0}t$; the multiplication by $t$ carries $H(A)$ to the anti-Hermitian part $S(A)$ and back. This is the scalar theorem of *Hermitian and Anti-Hermitian Elements*, §*The Scalar Action*.
 
 **Definition.** The **Hermitian Jordan algebra** of $A$ is $J(A)=(H(A),\circ)$ with
 

@@ -143,7 +143,7 @@ and only if its density is real $\lvert\mu\rvert$-almost everywhere, and anti-He
 density is purely imaginary; the Hermitian and anti-Hermitian parts have densities
 $\operatorname{Re}h$ and $i\operatorname{Im}h$.
 
-**Proof.** The involution conjugates $h$, so the fixed points and the skew points of the involution are the
+**Proof.** The involution conjugates $h$, so the fixed points and the anti-Hermitian points of the involution are the
 real and imaginary densities.
 
 ## Hermitian Measures and the Fourier–Stieltjes Transform

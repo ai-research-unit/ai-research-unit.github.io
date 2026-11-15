@@ -60,7 +60,7 @@ $$
 \operatorname{rank}A=4\iff \mathrm{Pf}(A)\ne0.
 $$
 
-**Proof.** The rank is even because the matrix is skew for the symmetric form, and the only even ranks in dimension four are $0,2,4$. If the rank is four, the matrix is invertible and $\det A\ne0$, so $\mathrm{Pf}(A)\ne0$. If the rank is two, the kernel has dimension two; choosing a basis adapted to the kernel, the matrix has the form $u\wedge v$ in the remaining two dimensions, of rank two and Pfaffian zero. If the rank is zero the matrix vanishes. The converses follow from the same normal form.
+**Proof.** The rank is even because the matrix is anti-self-adjoint for the symmetric form, and the only even ranks in dimension four are $0,2,4$. If the rank is four, the matrix is invertible and $\det A\ne0$, so $\mathrm{Pf}(A)\ne0$. If the rank is two, the kernel has dimension two; choosing a basis adapted to the kernel, the matrix has the form $u\wedge v$ in the remaining two dimensions, of rank two and Pfaffian zero. If the rank is zero the matrix vanishes. The converses follow from the same normal form.
 
 **The normal form.** Every nonzero antisymmetric matrix of rank two is $A=u\wedge v$ for two independent vectors $u,v$; every antisymmetric matrix of rank four is congruent to $e_{1}\wedge e_{2}+e_{3}\wedge e_{4}$, with Pfaffian $1$.
 

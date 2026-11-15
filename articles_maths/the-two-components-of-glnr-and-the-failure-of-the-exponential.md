@@ -66,7 +66,7 @@ $$
 \mathrm{GL}_n(\mathbb{R})^{+}=\exp(\operatorname{Sym}_n)\cdot\mathrm{SO}(n).
 $$
 
-**Both factors are connected.** The space $\operatorname{Sym}_n$ is a real vector space, hence connected, and $\exp$ is continuous, so $\exp(\operatorname{Sym}_n)=\operatorname{Sym}_n^{++}$ is connected. The group $\mathrm{SO}(n)$ is connected: every rotation is the exponential of a skew matrix, so it is the continuous image of the connected space $\operatorname{Skew}_n$. The product of two connected spaces is connected, and the multiplication map is continuous.
+**Both factors are connected.** The space $\operatorname{Sym}_n$ is a real vector space, hence connected, and $\exp$ is continuous, so $\exp(\operatorname{Sym}_n)=\operatorname{Sym}_n^{++}$ is connected. The group $\mathrm{SO}(n)$ is connected: every rotation is the exponential of an antisymmetric matrix, so it is the continuous image of the connected space $\operatorname{Skew}_n$. The product of two connected spaces is connected, and the multiplication map is continuous.
 
 **Every matrix of positive determinant is joined to the identity.** Let $A=\exp(S)Q$ and let $t\mapsto Q_{t}$ be a path in $\mathrm{SO}(n)$ from $Q$ to $\mathrm{I}$. Then
 

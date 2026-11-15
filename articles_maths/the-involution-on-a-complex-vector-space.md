@@ -58,7 +58,7 @@ $$
 
 **Proof.** The restriction of $h$ to $V_0$ is a real symmetric form, its signature is invariant under the unitary group by Sylvester's law, and the normal form is the standard one. This is *Hermitian Geometry and the Unitary Group*.
 
-**Remark (the configuration of the two involutions).** A complex vector space with a conjugation and a Hermitian form carries the three operators $J$, $c$ and the adjoint $\dagger$, with the relations $J^2 = -\mathrm{id}$, $c^2 = \mathrm{id}$, $Jc = -cJ$, and the compatibilities of $J$ and $c$ with $h$; the adjoint of $J$ is $J^{\dagger} = -J$ (the complex structure is skew-adjoint for $h$) and a conjugation $c$ compatible with $h$ is antiunitary, $h(cx,cy) = \overline{h(x,y)}$, self-adjoint in the antilinear sense. These are the linear relations that the operators of the category satisfy, and they are the model of the operator theory of the later group.
+**Remark (the configuration of the two involutions).** A complex vector space with a conjugation and a Hermitian form carries the three operators $J$, $c$ and the adjoint $\dagger$, with the relations $J^2 = -\mathrm{id}$, $c^2 = \mathrm{id}$, $Jc = -cJ$, and the compatibilities of $J$ and $c$ with $h$; the adjoint of $J$ is $J^{\dagger} = -J$ (the complex structure is anti-self-adjoint for $h$) and a conjugation $c$ compatible with $h$ is antiunitary, $h(cx,cy) = \overline{h(x,y)}$, self-adjoint in the antilinear sense. These are the linear relations that the operators of the category satisfy, and they are the model of the operator theory of the later group.
 
 ## The Transport of the Real Structure to the Endomorphism Algebra
 

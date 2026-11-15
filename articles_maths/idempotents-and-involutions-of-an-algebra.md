@@ -4,11 +4,11 @@
 
 An **idempotent** is an element $e$ with $e^2=e$, and an **involution** is an anti-automorphism $\sigma$ with $\sigma^2=\mathrm{id}$. The two notions meet because an involution carries an idempotent to an idempotent: from $e^2=e$ one gets $\sigma(e)^2=\sigma(e)$. The set of idempotents therefore carries an order-two permutation $e\mapsto e^*=\sigma(e)$, and the present article is a reading of the idempotents of an involutive algebra through that permutation.
 
-Three relations between $e$ and $e^*$ are distinguished by the theory, and they are the subject of the article. The first is the fixed-point relation $e^*=e$, which defines the **Hermitian idempotents**. The second is the exchange relation $e^*=1-e$, which makes $e$ and $e^*$ complementary idempotents and turns $2e-1$ into a skew root of the identity. The third is the vanishing of the Hermitian square, $e^*e=0$, which makes $e$ a **left isotropic idempotent**, and makes every nonzero such $e$ a zero divisor; the two-sided form $e^*e=ee^*=0$ is, when $2$ is invertible, the condition that $e+e^*$ be an idempotent, and it includes the exchange relation as the complete case $e+e^*=1$.
+Three relations between $e$ and $e^*$ are distinguished by the theory, and they are the subject of the article. The first is the fixed-point relation $e^*=e$, which defines the **Hermitian idempotents**. The second is the exchange relation $e^*=1-e$, which makes $e$ and $e^*$ complementary idempotents and turns $2e-1$ into an anti-Hermitian root of the identity. The third is the vanishing of the Hermitian square, $e^*e=0$, which makes $e$ a **left isotropic idempotent**, and makes every nonzero such $e$ a zero divisor; the two-sided form $e^*e=ee^*=0$ is, when $2$ is invertible, the condition that $e+e^*$ be an idempotent, and it includes the exchange relation as the complete case $e+e^*=1$.
 
-The article is purely algebraic and form-free. The Peirce decomposition $A=eAe\oplus eAf\oplus fAe\oplus fAf$ is that of *Unital Algebras*, §*Idempotents and the Peirce Decomposition*; the involutions themselves, the symmetric and skew elements and the opposite algebra are *Involutive Algebras*; the Peirce analysis of a Hermitian idempotent and the orthogonality of the corners belong to *Hermitian Idempotents and the Peirce Decomposition*; the primitive idempotents and the minimal left ideals are *Primitive Idempotents and Minimal Left Ideals*; and the roots of the identity are *Roots of the Identity, Split Algebras and Nontrivial Idempotents*. No positivity, norm or form is used: the positive definite case, in which $e^*e=0$ forces $e=0$, is a theorem of Part II and is named only as a contrast.
+The article is purely algebraic and form-free. The Peirce decomposition $A=eAe\oplus eAf\oplus fAe\oplus fAf$ is that of *Unital Algebras*, §*Idempotents and the Peirce Decomposition*; the involutions themselves, the symmetric and anti-Hermitian elements and the opposite algebra are *Involutive Algebras*; the Peirce analysis of a Hermitian idempotent and the orthogonality of the corners belong to *Hermitian Idempotents and the Peirce Decomposition*; the primitive idempotents and the minimal left ideals are *Primitive Idempotents and Minimal Left Ideals*; and the roots of the identity are *Roots of the Identity, Split Algebras and Nontrivial Idempotents*. No positivity, norm or form is used: the positive definite case, in which $e^*e=0$ forces $e=0$, is a theorem of Part II and is named only as a contrast.
 
-Throughout, $F$ is a field, $A$ is a unital associative $F$-algebra with $1\neq0$, and $\sigma$ is an $F$-linear involution of $A$; we write $a^*=\sigma(a)$. The idempotent is $e$, and $f=1-e$ is its complement. The characteristic is arbitrary unless a statement says otherwise. Two restrictions are marked: the halving of an idempotent into a skew root requires $2$ invertible, and the positive definite case excludes the exchange relation. The semilinear involutions of *Involutive Algebras* are not used.
+Throughout, $F$ is a field, $A$ is a unital associative $F$-algebra with $1\neq0$, and $\sigma$ is an $F$-linear involution of $A$; we write $a^*=\sigma(a)$. The idempotent is $e$, and $f=1-e$ is its complement. The characteristic is arbitrary unless a statement says otherwise. Two restrictions are marked: the halving of an idempotent into an anti-Hermitian root requires $2$ invertible, and the positive definite case excludes the exchange relation. The semilinear involutions of *Involutive Algebras* are not used.
 
 ## Idempotents and the Involution
 
@@ -102,7 +102,7 @@ In particular the Peirce decomposition is stable under the involution, the two d
 
 *Proof.* For $x\in eAe$, $x=exe$, so $x^*=e^*x^*e^*=ex^*e\in eAe$; the computation for $fAf$ is the same. For $x\in eAf$, $x=exf$, so $x^*=f^*x^*e^*=fx^*e\in fAe$, and the reverse inclusion follows by applying the involution again. The diagonal corner $eAe$ is closed under multiplication and contains $e$, and $(eae)^*=ea^*e$ lies in it; the same for $fAf$.
 
-**Remark.** The diagonal corner $eAe$ is a $*$-algebra with identity $e$, not with identity $1_A$: its unit is $e$, and the inclusion $eAe\hookrightarrow A$ is a $*$-homomorphism but not a unital one unless $e=1$. The symmetric elements of the corner are $eAe\cap A^+$, and the skew elements are $eAe\cap A^-$, where $A^-=\{a:a^*=-a\}$.
+**Remark.** The diagonal corner $eAe$ is a $*$-algebra with identity $e$, not with identity $1_A$: its unit is $e$, and the inclusion $eAe\hookrightarrow A$ is a $*$-homomorphism but not a unital one unless $e=1$. The symmetric elements of the corner are $eAe\cap A^+$, and the antisymmetric elements are $eAe\cap A^-$, where $A^-=\{a:a^*=-a\}$.
 
 ### Examples
 
@@ -124,7 +124,7 @@ with the two mixed corners exchanged by the involution. For the conjugate transp
 
 **Definition.** An idempotent $e$ is **complementary** when $e^*=1-e$. Equivalently, $e$ and $e^*$ are complementary idempotents, $e+e^*=1$.
 
-The name records the relation, not a new operation: the complement of $e$ is $1-e$, and the condition says that the involution carries $e$ to its complement. The complementary idempotents are the fixed points of the conjugate complement $\sigma\tau$, and they are the algebra-level form of a **skew** structure: the element $2e-1$ is skew.
+The name records the relation, not a new operation: the complement of $e$ is $1-e$, and the condition says that the involution carries $e$ to its complement. The complementary idempotents are the fixed points of the conjugate complement $\sigma\tau$, and they are the algebra-level form of a **anti-Hermitian** structure: the element $2e-1$ is anti-Hermitian.
 
 **Proposition.** Let $e$ be an idempotent and $f=1-e$. The following are equivalent.
 
@@ -136,7 +136,7 @@ The name records the relation, not a new operation: the complement of $e$ is $1-
 
 **(d)** $ee^*=e^*e=0$ and $e+e^*=1$. In particular both Hermitian squares vanish.
 
-**(e)** If $2$ is invertible in $F$, the element $u=2e-1$ is a skew root of the identity, $u^*=-u$ and $u^2=1$.
+**(e)** If $2$ is invertible in $F$, the element $u=2e-1$ is an anti-Hermitian root of the identity, $u^*=-u$ and $u^2=1$.
 
 *Proof.* (a)$\Leftrightarrow$(b) is the definition of the complement. (a)$\Rightarrow$(c): $e^*=1-e$ gives $ee^*=e(1-e)=0$ and $e^*e=(1-e)e=0$; the sum is $1$. (c)$\Rightarrow$(a): $e^*=1-e$ because $e+e^*=1$. (d) is the same as (c). For (e), $u^*=2e^*-1=2(1-e)-1=1-2e=-u$, and $u^2=4e^2-4e+1=1$; the computation uses $2\neq0$ only to recover $e=(1+u)/2$ in the converse, which is stated next.
 
@@ -146,11 +146,11 @@ $$
 \boxed{\;e=\frac{1+u}{2}\;}
 $$
 
-is an idempotent with $e^*=1-e$, and the two constructions are inverse. Hence, when $2$ is invertible, the complementary idempotents are in bijection with the skew roots of the identity.
+is an idempotent with $e^*=1-e$, and the two constructions are inverse. Hence, when $2$ is invertible, the complementary idempotents are in bijection with the anti-Hermitian roots of the identity.
 
 *Proof.* $e^2=(1+2u+u^2)/4=(2+2u)/4=e$, and $e^*=(1+u^*)/2=(1-u)/2=1-e$. Conversely, if $e^*=1-e$, then $(1+(2e-1))/2=e$; and if $u^*=-u$, $u^2=1$, then $2e-1=u$. The two maps are inverse.
 
-**Remark (characteristic two).** When $2=0$, the element $u=2e-1$ is $-1$ for every idempotent, so the map $e\mapsto u$ is constant and has no inverse. The relation $e^*=1-e$ becomes $e^*=1+e$, and it still defines a class of idempotents, but it is no longer the same class as the skew roots of $1$: every idempotent gives the constant $u=-1=1$, while the skew roots of $1$ can be numerous in a non-reduced algebra. The halving correspondence and its collapse are the subject of *Roots of the Identity, Split Algebras and Nontrivial Idempotents*; the present article records the relation without using the halving.
+**Remark (characteristic two).** When $2=0$, the element $u=2e-1$ is $-1$ for every idempotent, so the map $e\mapsto u$ is constant and has no inverse. The relation $e^*=1-e$ becomes $e^*=1+e$, and it still defines a class of idempotents, but it is no longer the same class as the anti-Hermitian roots of $1$: every idempotent gives the constant $u=-1=1$, while the anti-Hermitian roots of $1$ can be numerous in a non-reduced algebra. The halving correspondence and its collapse are the subject of *Roots of the Identity, Split Algebras and Nontrivial Idempotents*; the present article records the relation without using the halving.
 
 ### Examples
 
@@ -160,9 +160,9 @@ $$
 X^*=JX^{\mathsf T}J^{-1}, \qquad J=\begin{pmatrix}0&1\\-1&0\end{pmatrix}.
 $$
 
-For $e=E_{11}$ one has $e^*=E_{22}=1-e$, so $e$ is complementary. The image of $e$ is the first coordinate line, the image of $e^*$ is the second, and the involution exchanges the two; the element $2e-1=\operatorname{diag}(1,-1)$ is skew and squares to $1$. The same algebra with the transpose involution has $E_{11}^*=E_{11}$, so the two involutions put the same idempotent in different classes.
+For $e=E_{11}$ one has $e^*=E_{22}=1-e$, so $e$ is complementary. The image of $e$ is the first coordinate line, the image of $e^*$ is the second, and the involution exchanges the two; the element $2e-1=\operatorname{diag}(1,-1)$ is anti-Hermitian and squares to $1$. The same algebra with the transpose involution has $E_{11}^*=E_{11}$, so the two involutions put the same idempotent in different classes.
 
-**Example (the split algebra).** In $A=F\times F$ with the exchange involution, $e=(1,0)$ satisfies $e^*=(0,1)=1-e$. The element $2e-1=(1,-1)$ is skew and squares to $(1,1)=1$. This is the commutative model of the complementary case.
+**Example (the split algebra).** In $A=F\times F$ with the exchange involution, $e=(1,0)$ satisfies $e^*=(0,1)=1-e$. The element $2e-1=(1,-1)$ is anti-Hermitian and squares to $(1,1)=1$. This is the commutative model of the complementary case.
 
 **Example (the positive definite case is empty).** If $A$ carries a positive definite Hermitian form and $e^*$ is the adjoint of $e$, then $e^*e=0$ forces $e=0$. A complementary idempotent would give $e^*e=(1-e)e=0$, hence $e=0$; then $e^*=1-e=1$, while $e^*=0^*=0$, so $1=0$, impossible. Thus a positive definite involutive algebra has no complementary idempotent. The statement belongs to the form theory of Part II; the algebra-level computation $e^*e=(1-e)e=0$ is already visible here.
 
@@ -290,7 +290,7 @@ is a complementary idempotent, so the class is nonempty over a field containing 
 
 ## Summary
 
-An involution $\sigma$ acts on the idempotents of $A$ by $e\mapsto e^*$, preserving orthogonality, completeness, primitivity and centrality. The complement map $e\mapsto1-e$ commutes with $\sigma$, and the two generate a Klein four action whose orbit of $e$ is contained in $\{e,e^*,1-e,1-e^*\}$. Three relations are distinguished, together with the two-sided form of the third. The **Hermitian** idempotents are the fixed points $e^*=e$; their Peirce corners are $*$-stable, the diagonal corners are $*$-subalgebras and the mixed corners are exchanged. The **complementary** idempotents are the fixed points of the conjugate complement, $e^*=1-e$; equivalently $e+e^*=1$ and $e^*e=ee^*=0$, and when $2$ is invertible they are in bijection with the skew roots of the identity by $e\mapsto2e-1$. The **left isotropic** idempotents satisfy $e^*e=0$; a nonzero one is a zero divisor, is not Hermitian, and the involution exchanges the left and the right forms. The **two-sided isotropic** idempotents satisfy $e^*e=ee^*=0$; when $2$ is invertible this is equivalent to $e+e^*$ being an idempotent, and the sum $e+e^*$ is then a Hermitian idempotent whose corner contains $e$ and $e^*$ as complementary idempotents. The complementary class is the complete two-sided isotropic class. The matrix algebras with the transpose, the conjugate transpose, the hyperbolic involution and the symplectic involution, and the split algebra with the exchange involution, are the worked examples. No form, norm or positivity is used.
+An involution $\sigma$ acts on the idempotents of $A$ by $e\mapsto e^*$, preserving orthogonality, completeness, primitivity and centrality. The complement map $e\mapsto1-e$ commutes with $\sigma$, and the two generate a Klein four action whose orbit of $e$ is contained in $\{e,e^*,1-e,1-e^*\}$. Three relations are distinguished, together with the two-sided form of the third. The **Hermitian** idempotents are the fixed points $e^*=e$; their Peirce corners are $*$-stable, the diagonal corners are $*$-subalgebras and the mixed corners are exchanged. The **complementary** idempotents are the fixed points of the conjugate complement, $e^*=1-e$; equivalently $e+e^*=1$ and $e^*e=ee^*=0$, and when $2$ is invertible they are in bijection with the anti-Hermitian roots of the identity by $e\mapsto2e-1$. The **left isotropic** idempotents satisfy $e^*e=0$; a nonzero one is a zero divisor, is not Hermitian, and the involution exchanges the left and the right forms. The **two-sided isotropic** idempotents satisfy $e^*e=ee^*=0$; when $2$ is invertible this is equivalent to $e+e^*$ being an idempotent, and the sum $e+e^*$ is then a Hermitian idempotent whose corner contains $e$ and $e^*$ as complementary idempotents. The complementary class is the complete two-sided isotropic class. The matrix algebras with the transpose, the conjugate transpose, the hyperbolic involution and the symplectic involution, and the split algebra with the exchange involution, are the worked examples. No form, norm or positivity is used.
 
 ## Summary of Notation
 
@@ -299,7 +299,7 @@ An involution $\sigma$ acts on the idempotents of $A$ by $e\mapsto e^*$, preserv
 | $e,f$ | idempotent and its complement $f=1-e$ |
 | $e^*$ | $\sigma(e)$, the image of $e$ under the involution |
 | $A^+$ | the symmetric elements $\{a:a^*=a\}$ |
-| $A^-$ | the skew elements $\{a:a^*=-a\}$ |
+| $A^-$ | the anti-Hermitian elements $\{a:a^*=-a\}$ |
 | $\operatorname{Idem}(A)$ | the set of idempotents of $A$ |
 | $\tau(e)=1-e$ | the complement map |
 | $\sigma\tau(e)=1-e^*$ | the conjugate complement |
@@ -312,5 +312,5 @@ An involution $\sigma$ acts on the idempotents of $A$ by $e\mapsto e^*$, preserv
 
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for idempotents, Peirce decompositions and the matrix examples.
 - Nathan Jacobson, *Basic Algebra II* (Freeman, 1989), for involutions, Hermitian elements and the classical matrix algebras.
-- Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions* (American Mathematical Society, 1998), for the classification of involutions and the role of the symmetric and skew elements.
+- Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions* (American Mathematical Society, 1998), for the classification of involutions and the role of the symmetric and anti-Hermitian elements.
 - Israel Gohberg, Peter Lancaster and Leiba Rodman, *Indefinite Linear Algebra and Applications* (Birkhäuser, 2005), for the indefinite and symplectic matrix examples and the isotropic idempotents they carry.

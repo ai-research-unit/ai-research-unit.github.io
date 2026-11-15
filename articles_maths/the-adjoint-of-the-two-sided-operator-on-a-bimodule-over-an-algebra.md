@@ -55,7 +55,7 @@ $$
 
 commutes: applying the pair $(\sigma,\sigma)$ to the parameters and applying the operator involution to the two-sided operator are the same operation. This is the precise sense in which the involution of the bimodule is compatible with the involution of the algebra.
 
-### Self-adjoint and skew-adjoint two-sided operators
+### Self-adjoint and anti-self-adjoint two-sided operators
 
 **Corollary.** Suppose the two-sided map $(a,b)\mapsto L_{a}R_{b}$ is injective. Then
 
@@ -63,9 +63,9 @@ $$
 \boxed{\;(L_{a}R_{b})^{*}=L_{a}R_{b} \iff \sigma(a)=a,\ \sigma(b)=b, \qquad (L_{a}R_{b})^{*}=-L_{a}R_{b} \iff \sigma(a)=-a,\ \sigma(b)=-b\;} .
 $$
 
-Thus the self-adjoint two-sided operators are exactly those with both parameters symmetric, and the skew-adjoint two-sided operators those with both parameters antisymmetric.
+Thus the self-adjoint two-sided operators are exactly those with both parameters symmetric, and the anti-self-adjoint two-sided operators those with both parameters antisymmetric.
 
-*Proof.* $L_{\sigma(a)}R_{\sigma(b)}=L_{a}R_{b}$ is $\sigma(a)=a$ and $\sigma(b)=b$ by injectivity; the skew case is the same with a sign, and the signs of the two parameters must agree because $L_{a}R_{b}$ is linear in each parameter.
+*Proof.* $L_{\sigma(a)}R_{\sigma(b)}=L_{a}R_{b}$ is $\sigma(a)=a$ and $\sigma(b)=b$ by injectivity; the anti-Hermitian case is the same with a sign, and the signs of the two parameters must agree because $L_{a}R_{b}$ is linear in each parameter.
 
 ### Unitary two-sided operators
 
@@ -155,7 +155,7 @@ Consequently the image of the algebra of two-sided operators is an involutive qu
 
 ## Summary
 
-On an $(A,A)$-bimodule with a non-degenerate reflexive balanced $\sigma$-sesquilinear pairing, the adjoints of the one-sided multiplications are $(L_a)^{*}=L_{\sigma(a)}$ and $(R_b)^{*}=R_{\sigma(b)}$, and the adjoint of the two-sided operator is $(L_{a}R_{b})^{*}=L_{\sigma(a)}R_{\sigma(b)}$. The two-sided parameters are transformed by the involution of the algebra, and the operator involution of the endomorphism ring is the same operation in operator coordinates; the span of the two-sided operators is an involutive submodule of $E$, and the map $A\otimes_RA_{\mathrm{opp}}\to E$ is compatible with $\sigma\otimes\sigma$. The self-adjoint two-sided operators are those with both parameters symmetric, the skew-adjoint those with both parameters antisymmetric, and the unitary two-sided operators are the isometries; they are exactly the two-sided operators with unitary parameters when the two-sided map is injective. The general kernel, image and length statements for the adjoint apply, so $\ker(L_{a}R_{b})^{*}=(\operatorname{im}L_{a}R_{b})^{\mathrm{c}}$ and the lengths of the kernel, image and cokernel are preserved. The construction fails when the pairing is not balanced on the right and degenerates when the module is not faithful or is zero. The signed version, with the grade involution in the middle, is *The Signed Adjoint Two-Sided Operator on a Bimodule over an Algebra*.
+On an $(A,A)$-bimodule with a non-degenerate reflexive balanced $\sigma$-sesquilinear pairing, the adjoints of the one-sided multiplications are $(L_a)^{*}=L_{\sigma(a)}$ and $(R_b)^{*}=R_{\sigma(b)}$, and the adjoint of the two-sided operator is $(L_{a}R_{b})^{*}=L_{\sigma(a)}R_{\sigma(b)}$. The two-sided parameters are transformed by the involution of the algebra, and the operator involution of the endomorphism ring is the same operation in operator coordinates; the span of the two-sided operators is an involutive submodule of $E$, and the map $A\otimes_RA_{\mathrm{opp}}\to E$ is compatible with $\sigma\otimes\sigma$. The self-adjoint two-sided operators are those with both parameters symmetric, the anti-self-adjoint those with both parameters antisymmetric, and the unitary two-sided operators are the isometries; they are exactly the two-sided operators with unitary parameters when the two-sided map is injective. The general kernel, image and length statements for the adjoint apply, so $\ker(L_{a}R_{b})^{*}=(\operatorname{im}L_{a}R_{b})^{\mathrm{c}}$ and the lengths of the kernel, image and cokernel are preserved. The construction fails when the pairing is not balanced on the right and degenerates when the module is not faithful or is zero. The signed version, with the grade involution in the middle, is *The Signed Adjoint Two-Sided Operator on a Bimodule over an Algebra*.
 
 ## Summary of Notation
 

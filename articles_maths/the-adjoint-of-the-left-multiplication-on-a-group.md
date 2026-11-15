@@ -33,9 +33,9 @@ $$
 
 **Example.** In $C_4=\langle r\rangle$ the self-adjoint left multiplications are $L_e$ and $L_{r^{2}}$, since $r^{2}$ is the unique element of order two. In $V_4$ all four left multiplications are self-adjoint, because every element is its own inverse. In $S_3$ the self-adjoint left multiplications are the four with parameter in $\{e,(1\,2),(1\,3),(2\,3)\}$. In $Q_8$ they are $L_{\pm1}$.
 
-**Proposition (the skew-adjoint left multiplications).** There is no nonzero skew-adjoint left multiplication unless $\operatorname{char}k=2$; in characteristic not two, $L_a$ is skew-adjoint if and only if $L_a=0$, which never happens for a translation.
+**Proposition (the anti-self-adjoint left multiplications).** There is no nonzero anti-self-adjoint left multiplication unless $\operatorname{char}k=2$; in characteristic not two, $L_a$ is anti-self-adjoint if and only if $L_a=0$, which never happens for a translation.
 
-**Proof.** Skew-adjointness is $L_a^{*}=-L_a$, that is $L_{a^{-1}}=-L_a$. Evaluating at $e$ gives $a^{-1}=-a$, which in characteristic not two would make $L_{a^{-1}}$ and $-L_a$ have entries $1$ and $-1$ in the same positions, a contradiction; in characteristic two the two signs agree and the condition is $a^{2}=e$, so every left multiplication is at once self-adjoint and skew-adjoint.
+**Proof.** Anti-self-adjointness is $L_a^{*}=-L_a$, that is $L_{a^{-1}}=-L_a$. Evaluating at $e$ gives $a^{-1}=-a$, which in characteristic not two would make $L_{a^{-1}}$ and $-L_a$ have entries $1$ and $-1$ in the same positions, a contradiction; in characteristic two the two signs agree and the condition is $a^{2}=e$, so every left multiplication is at once self-adjoint and anti-self-adjoint.
 
 **Remark.** The self-adjoint criterion is the operator-level form of the fixed-point criterion of the involutive part of the category: an element of order at most two is a fixed point of the inversion, and the left multiplication by such an element is a fixed point of the adjoint. The correspondence is exact and is the reason the two structures are read together.
 
@@ -63,7 +63,7 @@ and the extension $\Sigma_{\sigma}$ commutes with the adjoint operation: $(\Sigm
 
 The adjoint of the left multiplication is the left multiplication by the inverse, $(L_a)^{*}=L_{a^{-1}}$; equivalently the matrix of $L_a$ has its $1$'s at the positions $g\mapsto ag$ and the adjoint at $g\mapsto a^{-1}g$, the transpose. The adjoint commutes with products through the anti-multiplicativity, $(L_aL_b)^{*}=L_{(ab)^{-1}}$, and the left multiplications are closed under the adjoint.
 
-The **self-adjoint** left multiplications are exactly those with parameter of order at most two: $L_a$ is self-adjoint if and only if $a^{2}=e$, so the self-adjoint translations correspond to the $2$-torsion of $G$; there are no nonzero skew-adjoint left multiplications in characteristic not two, and in characteristic two every left multiplication is both. The adjoint commutes with the extension of any group involution $\sigma$, and $a\mapsto L_a$ is a $*$-representation of $G$ for the inversion, whose commutant $R(G)$ is likewise closed under the adjoint.
+The **self-adjoint** left multiplications are exactly those with parameter of order at most two: $L_a$ is self-adjoint if and only if $a^{2}=e$, so the self-adjoint translations correspond to the $2$-torsion of $G$; there are no nonzero anti-self-adjoint left multiplications in characteristic not two, and in characteristic two every left multiplication is both. The adjoint commutes with the extension of any group involution $\sigma$, and $a\mapsto L_a$ is a $*$-representation of $G$ for the inversion, whose commutant $R(G)$ is likewise closed under the adjoint.
 
 ## Summary of Notation
 

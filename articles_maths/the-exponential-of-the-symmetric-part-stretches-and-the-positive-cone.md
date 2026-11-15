@@ -74,13 +74,13 @@ $$
 
 The cone is an open subset of that space, so it has the same dimension, and $\exp$ is a diffeomorphism between them.
 
-**The dimension is half of $n^{2}+n$, and the other half is the skew part.** Write
+**The dimension is half of $n^{2}+n$, and the other half is the anti-Hermitian part.** Write
 
 $$
 n^{2}=\frac{n(n-1)}{2}+\frac{n(n+1)}{2},
 $$
 
-the dimension of the skew part plus the dimension of the symmetric part. The exponential of the symmetric part accounts for the second summand; the first is the orthogonal group, and the two together give the polar decomposition.
+the dimension of the antisymmetric part plus the dimension of the symmetric part. The exponential of the symmetric part accounts for the second summand; the first is the orthogonal group, and the two together give the polar decomposition.
 
 ## The Cone: Open and Convex
 

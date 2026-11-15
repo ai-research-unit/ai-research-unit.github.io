@@ -51,7 +51,7 @@ so $X^{\mathrm t}$ is the adjoint of $X$ with respect to the standard pairing. C
 
 **(c) The trace duality.** For $R = \mathbb{C}$, the trace pairing $\tau(XY)$ identifies $M_n(\mathbb{C})$ with its dual, and the symmetric matrices $X^{\mathrm t}=X$ pair symmetrically with themselves, $\tau(X^2)\neq 0$ for $X\neq0$ symmetric over $\mathbb{R}$; the pairing is the algebraic ancestor of the trace form of *Hilbert Algebras* in Part II.
 
-**(d) The transpose involution.** As an involution of the matrix ring the transpose is the first-kind orthogonal involution of *Matrix Rings with an Involution*; its self-adjoint elements are the symmetric matrices and its skew elements the antisymmetric ones, and the trace vanishes on the latter, the sign structure of *The Skew Field of a Ring with Involution*.
+**(d) The transpose involution.** As an involution of the matrix ring the transpose is the first-kind orthogonal involution of *Matrix Rings with an Involution*; its self-adjoint elements are the symmetric matrices and its anti-Hermitian elements the antisymmetric ones, and the trace vanishes on the latter, the sign structure of *The Skew Field of a Ring with Involution*.
 
 ## Summary
 
@@ -75,5 +75,5 @@ The **standard pairing** $\langle x,y\rangle = x^{\mathrm t}y$ on $R^n$ is symme
 
 - Nathan Jacobson, *Structure of Rings*, American Mathematical Society Colloquium Publications 37 (1964), for the adjoint involution and the trace duality of a matrix algebra.
 - Nicolas Bourbaki, *Algebra I*, Chapters 1–3 (Springer, 1998), for bilinear forms, the dual map and the transposition of a linear map.
-- I. N. Herstein, *Rings with Involution* (University of Chicago Press, 1976), for the transpose involution, the symmetric and the skew matrices and the trace.
+- I. N. Herstein, *Rings with Involution* (University of Chicago Press, 1976), for the transpose involution, the symmetric and the antisymmetric matrices and the trace.
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions*, American Mathematical Society Colloquium Publications 44 (1998), for the orthogonal involution, the standard pairing and the trace form.

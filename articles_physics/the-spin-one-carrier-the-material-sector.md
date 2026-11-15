@@ -82,7 +82,7 @@ $$
 \vec a\,\vec b=-\,\vec a\cdot\vec b+\vec a\times\vec b ,
 $$
 
-and the two terms have different characters: the dot product is symmetric and lands on the scalar line, the cross product is skew and lands back in the triple. So the square of an element of the triple is a real number, $\vec v^{2}=-\lvert\vec v\rvert^{2}e_t$, and the product of two elements of the triple is a pure element that is not real unless the two are parallel.
+and the two terms have different characters: the dot product is symmetric and lands on the scalar line, the cross product is antisymmetric and lands back in the triple. So the square of an element of the triple is a real number, $\vec v^{2}=-\lvert\vec v\rvert^{2}e_t$, and the product of two elements of the triple is a pure element that is not real unless the two are parallel.
 
 **The three dimensions.** Nothing in the definition singles out a direction. The triple has no preferred axis, no parameter and no family: the group acts on it transitively away from the origin, and the orbits are the spheres $\lvert\vec v\rvert=r$. This is the structural difference from the spin-half carrier, whose every statement carried the axis $\vec u$ as a parameter, and it is the reason the three articles of this case are shorter than the two of that one.
 

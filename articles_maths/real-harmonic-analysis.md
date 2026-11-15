@@ -295,7 +295,7 @@ $$
 \|Hf\|_2 = \|f\|_2, \qquad H^2 = -I, \qquad H^* = -H,
 $$
 
-so $H$ is a skew-adjoint isometry of $L^2(\mathbb{R})$, the operator corresponding to the conjugate-function operator of Fourier series.
+so $H$ is an anti-self-adjoint isometry of $L^2(\mathbb{R})$, the operator corresponding to the conjugate-function operator of Fourier series.
 
 **Boundedness on $L^{r}$.** The Hilbert transform is bounded on $L^{r}(\mathbb{R})$ for every $1 < r < \infty$: there is $C_r$ with $\|Hf\|_r \le C_r \|f\|_r$ (the Riesz theorem for the conjugate function). It is not bounded on $L^1$ and not bounded on $L^\infty$.
 

@@ -58,7 +58,7 @@ $$
 
 of dimensions $n(n-1)/2$ and $n(n+1)/2$.
 
-**The three rules are the three product facts.** $[\mathfrak{k},\mathfrak{k}]\subseteq\mathfrak{k}$ says that the commutator of two skew matrices is skew. $[\mathfrak{k},\mathfrak{p}]\subseteq\mathfrak{p}$ says that the commutator of a skew and a symmetric matrix is symmetric: measured, $100$ of $100$ random pairs at $n=2,3$. $[\mathfrak{p},\mathfrak{p}]\subseteq\mathfrak{k}$ says that the commutator of two symmetric matrices is skew, the measured $100$ of $100$ at $n=2,3$.
+**The three rules are the three product facts.** $[\mathfrak{k},\mathfrak{k}]\subseteq\mathfrak{k}$ says that the commutator of two antisymmetric matrices is antisymmetric. $[\mathfrak{k},\mathfrak{p}]\subseteq\mathfrak{p}$ says that the commutator of an antisymmetric and a symmetric matrix is symmetric: measured, $100$ of $100$ random pairs at $n=2,3$. $[\mathfrak{p},\mathfrak{p}]\subseteq\mathfrak{k}$ says that the commutator of two symmetric matrices is antisymmetric, the measured $100$ of $100$ at $n=2,3$.
 
 **The last rule is the one with the sign.** For symmetric $S,T$,
 
@@ -66,7 +66,7 @@ $$
 [S,T]^{\mathsf T}=(ST-TS)^{\mathsf T}=T^{\mathsf T}S^{\mathsf T}-S^{\mathsf T}T^{\mathsf T}=TS-ST=-[S,T],
 $$
 
-so the commutator is skew. The same computation with the Jordan product gives a symmetric result, which is why the symmetric half is a Jordan algebra under the anticommutator and a Lie algebra only after the bracket is taken.
+so the commutator is antisymmetric. The same computation with the Jordan product gives a symmetric result, which is why the symmetric half is a Jordan algebra under the anticommutator and a Lie algebra only after the bracket is taken.
 
 ## The Block Diagonal Sign
 
@@ -144,7 +144,7 @@ $$
 
 **Measured, the signatures are $(2,1)$, $(5,3)$, $(9,6)$ at $n=2,3,4$.** Both counts grow like $n^{2}/2$, so the form is indefinite at every order and $\mathfrak{sl}_n(\mathbb{R})$ is semisimple and not compact.
 
-**The negative directions are the skew part.** On $\operatorname{Skew}_n$ the trace form is negative definite and the Killing form is a positive multiple of it, so the compact directions are exactly the antisymmetric ones.
+**The negative directions are the antisymmetric part.** On $\operatorname{Skew}_n$ the trace form is negative definite and the Killing form is a positive multiple of it, so the compact directions are exactly the antisymmetric ones.
 
 ## The Cartan Pair of the First Kind
 

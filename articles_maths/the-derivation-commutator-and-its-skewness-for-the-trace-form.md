@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The map $\operatorname{ad}_A(X)=[A,X]$ is a derivation of $M_2(\mathbb{C})$ for every $A$, it is skew for the trace form for every $A$, and it is skew for the Hilbert–Schmidt form exactly when $A$ is antisymmetric.**
+**The map $\operatorname{ad}_A(X)=[A,X]$ is a derivation of $M_2(\mathbb{C})$ for every $A$, it is anti-self-adjoint for the trace form for every $A$, and it is anti-self-adjoint for the Hilbert–Schmidt form exactly when $A$ is antisymmetric.**
 
 The article proves the Leibniz rule, the representation property $\operatorname{ad}_{[A,B]}=[\operatorname{ad}_A,\operatorname{ad}_B]$, the skewness of $\operatorname{ad}_A$ for the trace form, the formula $\operatorname{ad}_A^{\mathrm{HS}*}=\operatorname{ad}_{A^{\mathsf T}}$, the spectrum of $\operatorname{ad}_A$ as the two differences of the eigenvalues, the identification of the kernel with the centre and the dimension of the space of inner derivations, and the nilpotency of $\operatorname{ad}_A$ for a nilpotent $A$. It assumes *The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$* and *The Lie Algebra $\operatorname{Skew}_2$: One Dimension, Hence Abelian*.
 
@@ -54,9 +54,9 @@ $$
 
 **Proof.** $\operatorname{tr}([A,X]Y)=\operatorname{tr}(AXY)-\operatorname{tr}(XAY)=\operatorname{tr}(A[XY])$ using cyclicity, and $\operatorname{tr}(X[A,Y])=\operatorname{tr}(XAY)-\operatorname{tr}(XYA)=-\operatorname{tr}(A[XY])$ by the same cyclicity; the sum vanishes.
 
-**Corollary.** Every $\operatorname{ad}_A$ is skew for the trace form, so the image of $\operatorname{ad}$ lies in the Lie algebra of the orthogonal group of the trace form, which is $\mathfrak{so}(3,1)$.
+**Corollary.** Every $\operatorname{ad}_A$ is anti-self-adjoint for the trace form, so the image of $\operatorname{ad}$ lies in the Lie algebra of the orthogonal group of the trace form, which is $\mathfrak{so}(3,1)$.
 
-**Proof.** The skewness is the theorem, and the Lie algebra of the orthogonal group of a form of signature $(3,1)$ is the set of skew endomorphisms.
+**Proof.** The skewness is the theorem, and the Lie algebra of the orthogonal group of a form of signature $(3,1)$ is the set of anti-self-adjoint endomorphisms.
 
 **The trace form cannot detect the skewness condition.** Here the freedom is total: no hypothesis on $A$ is needed, because the trace is invariant under the cyclic permutation of three factors, and the invariance is what produces the skewness.
 
@@ -68,11 +68,11 @@ $$
 
 **Proof.** $\langle[A,X],Y\rangle=\operatorname{tr}((AX-XA)^{*}Y)=\operatorname{tr}(X^{*}A^{*}Y)-\operatorname{tr}(A^{*}X^{*}Y)$ and $\langle X,[A^{\mathsf T},Y]\rangle=\operatorname{tr}(X^{*}A^{\mathsf T}Y)-\operatorname{tr}(X^{*}YA^{\mathsf T})$; the two agree after cyclicity.
 
-**Corollary.** $\operatorname{ad}_A$ is skew for the Hilbert–Schmidt form exactly when $A$ is antisymmetric, and it is self-adjoint exactly when $A$ is symmetric.
+**Corollary.** $\operatorname{ad}_A$ is anti-self-adjoint for the Hilbert–Schmidt form exactly when $A$ is antisymmetric, and it is self-adjoint exactly when $A$ is symmetric.
 
 **Proof.** $\operatorname{ad}_{A^{\mathsf T}}=-\operatorname{ad}_A$ iff $A^{\mathsf T}=-A$, since $\operatorname{ad}$ is injective on the traceless part and the antisymmetric matrices are traceless.
 
-**The two forms divide the algebra.** The trace form sees every derivation as skew, while the Hilbert–Schmidt form separates the symmetric directions, where the derivation is self-adjoint, from the antisymmetric direction, where it is skew.
+**The two forms divide the algebra.** The trace form sees every derivation as antisymmetric, while the Hilbert–Schmidt form separates the symmetric directions, where the derivation is self-adjoint, from the antisymmetric direction, where it is antisymmetric.
 
 ## The Spectrum of $\operatorname{ad}_A$
 
@@ -84,7 +84,7 @@ $$
 
 **Proof.** The four eigenvalues sum to zero and contain two zeros; the rank is the number of nonzero eigenvalues.
 
-**Corollary.** The spectrum of $\operatorname{ad}_A$ is real for every complex matrix $A$ whose eigenvalues are real, and it is purely imaginary for a anti-Hermitian $A$ with imaginary eigenvalues.
+**Corollary.** The spectrum of $\operatorname{ad}_A$ is real for every complex matrix $A$ whose eigenvalues are real, and it is purely imaginary for an anti-Hermitian $A$ with imaginary eigenvalues.
 
 **Proof.** The differences of two real numbers are real, and the differences of two purely imaginary numbers are purely imaginary.
 
@@ -128,7 +128,7 @@ $$
 
 $\operatorname{ad}_A(X)=[A,X]$ is a derivation for every $A$, the map $A\mapsto\operatorname{ad}_A$ is a representation of $\mathfrak{gl}_2$ with kernel the scalars, and every derivation of $M_2(\mathbb{C})$ is inner, so the derivations form $\mathfrak{sl}_2(\mathbb{C})$ of dimension $3$.
 
-For the trace form every $\operatorname{ad}_A$ is skew, with no condition on $A$, while for the Hilbert–Schmidt form the adjoint is $\operatorname{ad}_{A^{\mathsf T}}$, which makes the derivation skew for antisymmetric $A$ and self-adjoint for symmetric $A$. The spectrum of $\operatorname{ad}_A$ is $0,0,\pm(\lambda_{1}-\lambda_{2})$, and for a nilpotent element the derivation is nilpotent of index $3$.
+For the trace form every $\operatorname{ad}_A$ is anti-Hermitian, with no condition on $A$, while for the Hilbert–Schmidt form the adjoint is $\operatorname{ad}_{A^{\mathsf T}}$, which makes the derivation anti-self-adjoint for antisymmetric $A$ and self-adjoint for symmetric $A$. The spectrum of $\operatorname{ad}_A$ is $0,0,\pm(\lambda_{1}-\lambda_{2})$, and for a nilpotent element the derivation is nilpotent of index $3$.
 
 ## Summary of Notation
 
@@ -145,6 +145,6 @@ For the trace form every $\operatorname{ad}_A$ is skew, with no condition on $A$
 
 - Nathan Jacobson, *Lie Algebras* (Dover, 1979), for inner derivations of central simple algebras and the Jacobi identity.
 - James E. Humphreys, *Introduction to Lie Algebras and Representation Theory* (Springer, 1972), for the adjoint representation and the Killing form.
-- [The Lie Algebra $\operatorname{Skew}_2$: One Dimension, Hence Abelian](the-lie-algebra-skew-2-one-dimension-hence-abelian.html), for the antisymmetric line on which the derivation is skew.
+- [The Lie Algebra $\operatorname{Skew}_2$: One Dimension, Hence Abelian](the-lie-algebra-skew-2-one-dimension-hence-abelian.html), for the antisymmetric line on which the derivation is antisymmetric.
 - [The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$](the-two-halves-over-r-symmetric-and-antisymmetric-at-n-2.html), for the splitting that the two forms detect.
 - [The Four Multiplication Tables: $SS$, $SK$, $KS$, $KK$ at $n=2$](the-four-multiplication-tables-ss-sk-ks-kk-at-n-2.html), for the products used in the computation of the matrix of $\operatorname{ad}_{E_{12}}$.

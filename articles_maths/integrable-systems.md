@@ -19,7 +19,7 @@ The article treats the theory in the following order: Lax pairs and isospectral 
 
 ### The Lax Equation
 
-**Definition.** Let $L$ and $A$ be linear operators on a function space, with $L$ formally self-adjoint and $A$ formally skew-adjoint. The **Lax pair** $(L,A)$ **represents** the evolution equation $\partial/\partial t w = F(w)$ if
+**Definition.** Let $L$ and $A$ be linear operators on a function space, with $L$ formally self-adjoint and $A$ formally anti-self-adjoint. The **Lax pair** $(L,A)$ **represents** the evolution equation $\partial/\partial t w = F(w)$ if
 
 $$
 \partial L/\partial t = [A,L] := AL - LA ,
@@ -27,7 +27,7 @@ $$
 
 where $\partial L/\partial t$ is the operator obtained by differentiating the coefficients of $L$ in time.
 
-**Theorem (isospectrality).** Suppose $L(t) = -\partial^2/\partial x^2 + w(\cdot,t)$ on $\mathbb{R}$ with $w$ decaying at infinity, suppose $A$ is skew-adjoint, and suppose $\partial L/\partial t = [A,L]$. Then the spectrum of $L(t)$ is independent of $t$. Moreover, if $\psi$ solves the eigenvalue equation $L\psi = \lambda\psi$ and evolves by $\partial/\partial t\,\psi = A\psi$, then $L\psi = \lambda\psi$ holds for all $t$ with $\lambda$ constant.
+**Theorem (isospectrality).** Suppose $L(t) = -\partial^2/\partial x^2 + w(\cdot,t)$ on $\mathbb{R}$ with $w$ decaying at infinity, suppose $A$ is anti-self-adjoint, and suppose $\partial L/\partial t = [A,L]$. Then the spectrum of $L(t)$ is independent of $t$. Moreover, if $\psi$ solves the eigenvalue equation $L\psi = \lambda\psi$ and evolves by $\partial/\partial t\,\psi = A\psi$, then $L\psi = \lambda\psi$ holds for all $t$ with $\lambda$ constant.
 
 *Proof.* Differentiate the eigenvalue equation: $\partial L/\partial t\,\psi + L\,\partial/\partial t\,\psi = \partial/\partial t\,\lambda\psi + \lambda\partial/\partial t\,\psi$. Substituting $\partial/\partial t\,\psi=A\psi$ and $\partial L/\partial t = AL-LA$ gives $(AL-LA)\psi + LA\psi = \partial/\partial t\,\lambda\psi + \lambda A\psi$, and the left-hand side is $A(L\psi) = \lambda A\psi$ by the eigenvalue equation, so $\partial/\partial t\,\lambda\psi = 0$ and $\lambda$ is constant whenever $\psi\neq0$. The spectrum, being the set of such $\lambda$, is time-independent.
 
@@ -53,7 +53,7 @@ $$
 
 Indeed, the third-order part contributes $-4[D^3,L]\psi = -4\partial^3/\partial x^3 w\psi + \dots$ and the remaining terms contribute $6w\partial/\partial x w\psi$; all terms involving derivatives of $\psi$ cancel identically, so the commutator is multiplication by $6w\partial/\partial x w-\partial^3/\partial x^3 w$. Since $\partial L/\partial t$ is multiplication by $\partial/\partial t w$, the Lax equation is exactly KdV in the stated convention.
 
-The computation is the model of every Lax-pair verification, and the operator $A$ is skew-adjoint, as required by the general theorem. The notation $\partial/\partial t w - 6w\partial/\partial x w + \partial^3/\partial x^3 w=0$ is fixed once and for all in this article; the equation written with the other sign of the nonlinearity is the same equation after the substitution $w\mapsto-w$.
+The computation is the model of every Lax-pair verification, and the operator $A$ is anti-self-adjoint, as required by the general theorem. The notation $\partial/\partial t w - 6w\partial/\partial x w + \partial^3/\partial x^3 w=0$ is fixed once and for all in this article; the equation written with the other sign of the nonlinearity is the same equation after the substitution $w\mapsto-w$.
 
 ### Zero Curvature and the AKNS Scheme
 
@@ -339,7 +339,7 @@ The classical prototype of this linearisation is the Riccati equation $y'+y^2=-v
 | Symbol | Meaning |
 |---|---|
 | $w(x,t)$ | Field of the integrable equation |
-| $L$, $A$ | Lax pair; $L$ self-adjoint, $A$ skew-adjoint |
+| $L$, $A$ | Lax pair; $L$ self-adjoint, $A$ anti-self-adjoint |
 | $\partial L/\partial t = [A,L]$ | Lax equation, the isospectral deformation |
 | $U$, $V$, $\lambda$ | Zero-curvature pair and spectral parameter |
 | KdV | $\partial/\partial t w - 6w\partial/\partial x w + \partial^3/\partial x^3 w = 0$ |

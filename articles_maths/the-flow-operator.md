@@ -96,9 +96,9 @@ $$
 \boxed{\;\Phi_t=\exp(itA), \qquad A=-i\mathcal{L}_X\;} ,
 $$
 
-on the domain where the generator exists, with $\mathcal{L}_X$ essentially skew-adjoint; the spectral measure $E$ of $A$ gives $\Phi_t=\int_{\mathbb{R}}\exp(it\lambda)dE(\lambda)$.
+on the domain where the generator exists, with $\mathcal{L}_X$ essentially anti-self-adjoint; the spectral measure $E$ of $A$ gives $\Phi_t=\int_{\mathbb{R}}\exp(it\lambda)dE(\lambda)$.
 
-*Proof.* The unitarity is the change of variables in the theorem above. Stone's theorem supplies the self-adjoint generator $A$; differentiating $\Phi_t=\exp(itA)$ at $t=0$ gives $iA=\mathcal{L}_X$, hence $A=-i\mathcal{L}_X$. The skew-adjointness of $\mathcal{L}_X$ is the integration by parts $\int\mathcal{L}_Xf\,\overline{g}\,d\mu=-\int f\,\overline{\mathcal{L}_Xg}\,d\mu$, valid when $\operatorname{div}_\mu X=0$; the general adjoint, with the divergence correction for a reference measure that is not invariant, is *The Involution on the Flow Operator*, later in this category.
+*Proof.* The unitarity is the change of variables in the theorem above. Stone's theorem supplies the self-adjoint generator $A$; differentiating $\Phi_t=\exp(itA)$ at $t=0$ gives $iA=\mathcal{L}_X$, hence $A=-i\mathcal{L}_X$. The anti-self-adjointness of $\mathcal{L}_X$ is the integration by parts $\int\mathcal{L}_Xf\,\overline{g}\,d\mu=-\int f\,\overline{\mathcal{L}_Xg}\,d\mu$, valid when $\operatorname{div}_\mu X=0$; the general adjoint, with the divergence correction for a reference measure that is not invariant, is *The Involution on the Flow Operator*, later in this category.
 
 ### The Spectral Interpretation of a Flow
 

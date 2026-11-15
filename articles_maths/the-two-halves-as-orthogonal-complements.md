@@ -90,7 +90,7 @@ $$
 
 so the $n^{2}$ units form an orthonormal basis of $M_n(\mathbb{C})$ for the form, and the coordinates of $A$ in that basis are its entries. The identity was verified for all quadruples at $n=2,3,4$.
 
-**The fine decomposition is therefore an orthogonal direct sum, and the coarse one is not spanned by its own lines.** The grading of *The Fine Decomposition against the Diagonal* splits the algebra into the $n^{2}$ lines $\mathbb{C}E_{ij}$, and those lines are mutually orthogonal for the Hilbert–Schmidt form. The two halves are spanned by these lines combined in pairs: the symmetric line $\mathbb{C}(E_{ij}+E_{ji})$ is orthogonal to the skew line $\mathbb{C}(E_{ij}-E_{ji})$, and this orthogonality is again the lemma applied to the transposed pair.
+**The fine decomposition is therefore an orthogonal direct sum, and the coarse one is not spanned by its own lines.** The grading of *The Fine Decomposition against the Diagonal* splits the algebra into the $n^{2}$ lines $\mathbb{C}E_{ij}$, and those lines are mutually orthogonal for the Hilbert–Schmidt form. The two halves are spanned by these lines combined in pairs: the symmetric line $\mathbb{C}(E_{ij}+E_{ji})$ is orthogonal to the antisymmetric line $\mathbb{C}(E_{ij}-E_{ji})$, and this orthogonality is again the lemma applied to the transposed pair.
 
 **Orthonormality gives the coordinates of the trace forms.** For $A=\sum A_{ij}E_{ij}$ and $C=\sum C_{ij}E_{ij}$,
 
@@ -108,7 +108,7 @@ $$
 \operatorname{tr}(A^{2})=\operatorname{tr}(S^{2})+\operatorname{tr}(K^{2})
 $$
 
-for $A=S+K$ real, the cross term vanishing by orthogonality. The quadratic form $\operatorname{tr}(A^{2})$ is therefore the sum of a positive definite form on the symmetric half and a negative definite one on the skew half, and its signature is read from the two halves separately.
+for $A=S+K$ real, the cross term vanishing by orthogonality. The quadratic form $\operatorname{tr}(A^{2})$ is therefore the sum of a positive definite form on the symmetric half and a negative definite one on the antisymmetric half, and its signature is read from the two halves separately.
 
 **The complementarity makes the projections computable and the adjoints visible.** The orthogonal projection onto a half is $\tfrac12(\mathrm{I}\pm\sigma)$, and the adjoint of a map that preserves the split is computed half by half. The same mechanism is used for the operator space of *The Symmetric and Antisymmetric Parts of the Operator Space*, where the two-sided operators carry their own split.
 
@@ -122,7 +122,7 @@ $$
 \operatorname{tr}(\mathrm{I}J)=\operatorname{tr}(\sigma_1J)=\operatorname{tr}(\sigma_3J)=0,
 $$
 
-so the single skew direction is orthogonal to the three symmetric ones. The form has signature $(3,1)$ on $M_2(\mathbb{R})$.
+so the single antisymmetric direction is orthogonal to the three symmetric ones. The form has signature $(3,1)$ on $M_2(\mathbb{R})$.
 
 **At $n=2$ the complex split is $8=4\perp4$.** The Hermitian half is spanned over $\mathbb{R}$ by the Pauli list and the anti-Hermitian half by $i$ times it, and the two four-dimensional real spaces are orthogonal for the Euclidean form. In the biquaternion reading this is the split into the two sectors, and the orthogonality is the statement that the sectors do not mix under the Hilbert–Schmidt form.
 

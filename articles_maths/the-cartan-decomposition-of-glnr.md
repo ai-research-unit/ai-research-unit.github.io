@@ -22,10 +22,10 @@ and the map $K\times\mathfrak{p}\to\mathrm{GL}_n(\mathbb{R})$, $(k,X)\mapsto k\m
 
 ## The Lie Algebra Splits
 
-**The Lie algebra is $\mathfrak{gl}_n(\mathbb{R})=M_n(\mathbb{R})$ with the commutator.** Every matrix is a symmetric plus a skew matrix in exactly one way:
+**The Lie algebra is $\mathfrak{gl}_n(\mathbb{R})=M_n(\mathbb{R})$ with the commutator.** Every matrix is a symmetric plus an antisymmetric matrix in exactly one way:
 
 $$
-A=\underbrace{\tfrac12(A+A^{\mathsf T})}_{\text{symmetric}}+\underbrace{\tfrac12(A-A^{\mathsf T})}_{\text{skew}} .
+A=\underbrace{\tfrac12(A+A^{\mathsf T})}_{\text{symmetric}}+\underbrace{\tfrac12(A-A^{\mathsf T})}_{\text{antisymmetric}} .
 $$
 
 So, as vector spaces,
@@ -34,9 +34,9 @@ $$
 \mathfrak{gl}_n(\mathbb{R})=\mathfrak{k}\oplus\mathfrak{p},\qquad \mathfrak{k}=\mathfrak{so}(n)=\operatorname{Skew}_n,\quad \mathfrak{p}=\operatorname{Sym}_n,
 $$
 
-and the sum is direct because a matrix that is both symmetric and skew is zero. The dimensions add, $\frac{n(n-1)}{2}+\frac{n(n+1)}{2}=n^{2}$.
+and the sum is direct because a matrix that is both symmetric and antisymmetric is zero. The dimensions add, $\frac{n(n-1)}{2}+\frac{n(n+1)}{2}=n^{2}$.
 
-**$\mathfrak{k}$ is a subalgebra and $\mathfrak{p}$ is not.** The skew matrices are closed under the commutator. The symmetric ones are not: the commutator of two symmetric matrices is skew whenever it is nonzero, so $\mathfrak{p}$ is only a subspace.
+**$\mathfrak{k}$ is a subalgebra and $\mathfrak{p}$ is not.** The antisymmetric matrices are closed under the commutator. The symmetric ones are not: the commutator of two symmetric matrices is antisymmetric whenever it is nonzero, so $\mathfrak{p}$ is only a subspace.
 
 ## The Three Brackets
 
@@ -46,13 +46,13 @@ $$
 [\mathfrak{k},\mathfrak{k}]\subseteq\mathfrak{k},\qquad [\mathfrak{k},\mathfrak{p}]\subseteq\mathfrak{p},\qquad [\mathfrak{p},\mathfrak{p}]\subseteq\mathfrak{k}.
 $$
 
-*Proof.* Let $X,Y$ be skew and $S,T$ symmetric. Using $(UV)^{\mathsf T}=V^{\mathsf T}U^{\mathsf T}$ and $X^{\mathsf T}=-X$, $S^{\mathsf T}=S$,
+*Proof.* Let $X,Y$ be antisymmetric and $S,T$ symmetric. Using $(UV)^{\mathsf T}=V^{\mathsf T}U^{\mathsf T}$ and $X^{\mathsf T}=-X$, $S^{\mathsf T}=S$,
 
 $$
 [X,Y]^{\mathsf T}=Y^{\mathsf T}X^{\mathsf T}-X^{\mathsf T}Y^{\mathsf T}=YX-XY=-[X,Y],
 $$
 
-so $[X,Y]$ is skew. Next,
+so $[X,Y]$ is anti-Hermitian. Next,
 
 $$
 [X,S]^{\mathsf T}=S^{\mathsf T}X^{\mathsf T}-X^{\mathsf T}S^{\mathsf T}=-SX+XS=[X,S],
@@ -64,7 +64,7 @@ $$
 [S,T]^{\mathsf T}=TS-ST=-[S,T],
 $$
 
-so $[S,T]$ is skew. Numerically all three defects are $0$ at $n=3$ on random pairs.
+so $[S,T]$ is anti-Hermitian. Numerically all three defects are $0$ at $n=3$ on random pairs.
 
 ## The Involution
 
@@ -78,7 +78,7 @@ $$
 
 using $[U,V]^{\mathsf T}=[V^{\mathsf T},U^{\mathsf T}]$; numerically the defect is $0$ at $n=3$.
 
-**The eigenspaces are the two summands.** A matrix with $\theta(X)=X$ satisfies $-X^{\mathsf T}=X$ and is skew; a matrix with $\theta(X)=-X$ satisfies $X^{\mathsf T}=X$ and is symmetric. Hence
+**The eigenspaces are the two summands.** A matrix with $\theta(X)=X$ satisfies $-X^{\mathsf T}=X$ and is antisymmetric; a matrix with $\theta(X)=-X$ satisfies $X^{\mathsf T}=X$ and is symmetric. Hence
 
 $$
 \mathfrak{k}=\{X:\theta(X)=X\},\qquad \mathfrak{p}=\{X:\theta(X)=-X\}.
@@ -179,7 +179,7 @@ The Cartan decomposition of $\mathrm{GL}_n(\mathbb{R})$ is $G=K\exp(\mathfrak{p}
 | Symbol | Meaning |
 |---|---|
 | $K=\mathrm{O}(n)$ | The maximal compact subgroup |
-| $\mathfrak{k}=\mathfrak{so}(n)$ | The skew matrices, the Lie algebra of $K$ |
+| $\mathfrak{k}=\mathfrak{so}(n)$ | The antisymmetric matrices, the Lie algebra of $K$ |
 | $\mathfrak{p}=\operatorname{Sym}_n$ | The symmetric matrices, the second summand |
 | $\theta(X)=-X^{\mathsf T}$ | The Cartan involution on the Lie algebra |
 | $\Theta(g)=(g^{\mathsf T})^{-1}$ | Its group form |

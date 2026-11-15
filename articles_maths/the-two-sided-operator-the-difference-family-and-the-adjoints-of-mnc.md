@@ -62,7 +62,7 @@ $$
 $$
 The sign is an invariant of the class, because the rescaling $(\mu A,\mu^{-1}B)$ leaves $\lambda$ unchanged; the classes with $\lambda=1$ contain a pair of symmetric matrices and the classes with $\lambda=-1$ a pair of antisymmetric ones.
 
-**The skew classes are not empty, and they are not the Hermitian ones.** At $n=2$, with $J=\begin{pmatrix}0&1\\-1&0\end{pmatrix}$, the pair $(iJ,J)$ is complex skew in both slots, so $L_{iJ}R_{J}$ is self-adjoint for the trace form; it is not self-adjoint for the Hilbert–Schmidt form, because $A^{*}=A$ and $B^{*}=-B$ carry incompatible signs. **The transpose sees the symmetric and the antisymmetric parameters alike, and the star does not.**
+**The anti-Hermitian classes are not empty, and they are not the Hermitian ones.** At $n=2$, with $J=\begin{pmatrix}0&1\\-1&0\end{pmatrix}$, the pair $(iJ,J)$ is complex anti-Hermitian in both slots, so $L_{iJ}R_{J}$ is self-adjoint for the trace form; it is not self-adjoint for the Hilbert–Schmidt form, because $A^{*}=A$ and $B^{*}=-B$ carry incompatible signs. **The transpose sees the symmetric and the antisymmetric parameters alike, and the star does not.**
 
 **The isometries.** The operator preserves the trace form exactly when the class of its pair contains two complex orthogonal matrices:
 $$
@@ -98,18 +98,18 @@ $$
 $$
 because the array of $M^{\dagger}$ is obtained from the array of $M$ by conjugating the entries and permuting the two index sets, and a permutation of the rows and of the columns preserves the rank. **The length is a unitary invariant of the operator, and so are its strata $\mathcal{C}_{r}$.**
 
-### The Self-Adjoint and the Skew-Adjoint
+### The Self-Adjoint and the Anti-Self-Adjoint
 
 **Theorem (the types).** Let $T=L_{A}R_{B}$ be nonzero and put $\lambda$ the scalar of its class, $|\lambda|=1$.
 
 - $T$ is self-adjoint exactly when its class contains a pair of Hermitian matrices.
-- $T$ is skew-adjoint exactly when its class contains a pair with $A$ anti-Hermitian and $B$ Hermitian.
+- $T$ is anti-self-adjoint exactly when its class contains a pair with $A$ anti-Hermitian and $B$ Hermitian.
 
-*Proof.* The equation $T^{\dagger}=T$ reads $L_{A^{*}}R_{B^{*}}=L_{A}R_{B}$, which by the fibre theorem is $A^{*}=\lambda A$, $B^{*}=\lambda^{-1}B$; taking adjoints again gives $|\lambda|=1$, and rescaling the pair by $\mu$ with $\mu/\bar\mu=\lambda$ brings both parameters to the Hermitian case. The skew case reads $L_{A^{*}}R_{B^{*}}=L_{-A}R_{B}$, that is $A^{*}=-\lambda A$ and $B^{*}=\lambda^{-1}B$, and the same rescaling brings the pair to the anti-Hermitian and Hermitian case.
+*Proof.* The equation $T^{\dagger}=T$ reads $L_{A^{*}}R_{B^{*}}=L_{A}R_{B}$, which by the fibre theorem is $A^{*}=\lambda A$, $B^{*}=\lambda^{-1}B$; taking adjoints again gives $|\lambda|=1$, and rescaling the pair by $\mu$ with $\mu/\bar\mu=\lambda$ brings both parameters to the Hermitian case. The anti-Hermitian case reads $L_{A^{*}}R_{B^{*}}=L_{-A}R_{B}$, that is $A^{*}=-\lambda A$ and $B^{*}=\lambda^{-1}B$, and the same rescaling brings the pair to the anti-Hermitian and Hermitian case.
 
-**The sign is carried by the first slot and not by the two.** The asymmetry is not a convention: the two slots enter the product in opposite orders, so the sign of the adjoint equation reaches them with opposite signs, and only the first slot can carry the minus. **At $n=2$ the quaternionic plain form has no skew sector at all among the nonzero products; the Hilbert–Schmidt form has a large one, of real dimension $2n^{2}-1$ in the cone.**
+**The sign is carried by the first slot and not by the two.** The asymmetry is not a convention: the two slots enter the product in opposite orders, so the sign of the adjoint equation reaches them with opposite signs, and only the first slot can carry the minus. **At $n=2$ the quaternionic plain form has no anti-Hermitian sector at all among the nonzero products; the Hilbert–Schmidt form has a large one, of real dimension $2n^{2}-1$ in the cone.**
 
-**The count of the skew sector.** The pairs $(A,B)$ with $A$ anti-Hermitian and $B$ Hermitian form a real space of dimension $n^{2}+n^{2}=2n^{2}$, and the scaling by the unit circle is one real parameter, so the skew-adjoint products form a real cone of real dimension $2n^{2}-1$: **the count of the two-sided cone, because the condition is real-linear and replaces the complex freedom of a parameter by the real freedom of the anti-Hermitian one.**
+**The count of the anti-Hermitian sector.** The pairs $(A,B)$ with $A$ anti-Hermitian and $B$ Hermitian form a real space of dimension $n^{2}+n^{2}=2n^{2}$, and the scaling by the unit circle is one real parameter, so the anti-self-adjoint products form a real cone of real dimension $2n^{2}-1$: **the count of the two-sided cone, because the condition is real-linear and replaces the complex freedom of a parameter by the real freedom of the anti-Hermitian one.**
 
 ### The Isometries
 
@@ -270,7 +270,7 @@ The difference family $L_{A}-R_{B}$ is the general Sylvester operator, with kern
 | $\mathrm{Sd}_{A}=L_{A}R_{A^{*}}$ | the two-sided operator, $X\mapsto AXA^{*}$ |
 | $r$ | the rank of $A$, giving $\operatorname{rank}\mathrm{Sd}_{A}=r^{2}$ |
 | $L_{A}-R_{B}$ | the Sylvester operator $X\mapsto AX-XB$ |
-| $2n^{2}-1$ | the complex dimension of the cone and of the difference span; the real dimension of the two-sided cone and of the skew sector |
+| $2n^{2}-1$ | the complex dimension of the cone and of the difference span; the real dimension of the two-sided cone and of the anti-Hermitian sector |
 
 ## Further Reading
 

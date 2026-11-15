@@ -222,7 +222,7 @@ the conjugation, $\widehat{f^*}=\overline{\mathcal F f}$; under these two corres
 $\ast$-isomorphism of the convolution algebra onto the algebra of multipliers, with the involution on the
 first side carried to the conjugation on the second. The constant of the normalisation does not enter the
 algebraic identities, only the metric ones, and the Hilbert transform, with the multiplier
-$-i\operatorname{sgn}\zeta$, is the skew-adjoint instance computed in *The Fourier Transform and Conjugate
+$-i\operatorname{sgn}\zeta$, is the anti-self-adjoint instance computed in *The Fourier Transform and Conjugate
 Symmetry*.
 
 ## The Distributional and Group Cases

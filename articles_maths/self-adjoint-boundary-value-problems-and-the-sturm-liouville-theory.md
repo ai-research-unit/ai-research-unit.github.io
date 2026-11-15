@@ -116,7 +116,7 @@ $$
 \langle w,v\rangle_\partial = \Bigl[p\,(w\bar v'-w'\bar v)\Bigr]_a^b ,
 $$
 
-a anti-Hermitian form in the four boundary values $w(a),w'(a),w(b),w'(b)$ and their conjugates, and the problem is self-adjoint exactly when this form vanishes for all admissible pairs.
+an anti-Hermitian form in the four boundary values $w(a),w'(a),w(b),w'(b)$ and their conjugates, and the problem is self-adjoint exactly when this form vanishes for all admissible pairs.
 
 *Proof.* The Green formula of the interval is the integration by parts, which produces the bracket $[\,p(w\bar v'-w'\bar v)\,]_a^b$; the form is the difference of the two boundary contributions, and the anti-Hermitian property follows from exchanging $w$ and $v$ and conjugating. Vanishing on the admissible pairs is the definition of self-adjointness.
 

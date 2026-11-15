@@ -49,7 +49,7 @@ $$
 h(\lambda v, \mu w) = \lambda\,h(v,w)\,\bar\mu \quad \text{for all } \lambda,\mu \in \mathbb{H}, \qquad (h(w,v))^{\natural} = h(v,w),
 $$
 
-positive definite in the sense that $h(v,v)$ is real and positive for $v \neq 0$; the group preserving it is the compact symplectic group $Sp(n)$, of dimension $n(2n+1)$. Equivalently, the real part $g = \mathrm{Re}\,h$ is a Riemannian metric with $g(J_iv,J_iw) = g(v,w)$ for $i=1,2,3$, and the three $J_i$ are then skew-adjoint.
+positive definite in the sense that $h(v,v)$ is real and positive for $v \neq 0$; the group preserving it is the compact symplectic group $Sp(n)$, of dimension $n(2n+1)$. Equivalently, the real part $g = \mathrm{Re}\,h$ is a Riemannian metric with $g(J_iv,J_iw) = g(v,w)$ for $i=1,2,3$, and the three $J_i$ are then anti-self-adjoint.
 
 **Remark.** The inclusion of groups is
 

@@ -4,7 +4,7 @@
 
 **The antisymmetric matrices have two natural complements inside $M_n(\mathbb{R})$: the symmetric ones, which are the fixed half of the transpose, and the upper triangular ones, which are an algebra; the second complement is a vector space complement and not a structural one.**
 
-The article proves the direct sum $M_n(\mathbb{R})=UT_n\oplus\operatorname{Skew}_n$, computes the projection onto the antisymmetric part along $UT_n$ in coordinates, and shows that this projection is not of the form $A\mapsto eA$ or $A\mapsto Ae$, so it is not a Peirce projection of any idempotent. It then shows what the complement fails to do: the bracket of a skew matrix with an upper triangular one is not upper triangular, so $UT_n$ is not the reductive complement of $\mathfrak{so}(n)$, and the projection is not a morphism for any of the products of the category. It assumes *The Two Halves as Orthogonal Complements* for the orthogonal complement and *The Triangular Decomposition $h\oplus n_+\oplus n_-$* for the triangular algebra. It defers the criterion that decides between the two complements to *Symmetric Pairs and Cartan Pairs: the Reductivity Criterion* and the product comparison to *$UT_n$ as a Linear Model of $\operatorname{Sym}_n$: Same Space, Wrong Product*.
+The article proves the direct sum $M_n(\mathbb{R})=UT_n\oplus\operatorname{Skew}_n$, computes the projection onto the antisymmetric part along $UT_n$ in coordinates, and shows that this projection is not of the form $A\mapsto eA$ or $A\mapsto Ae$, so it is not a Peirce projection of any idempotent. It then shows what the complement fails to do: the bracket of an antisymmetric matrix with an upper triangular one is not upper triangular, so $UT_n$ is not the reductive complement of $\mathfrak{so}(n)$, and the projection is not a morphism for any of the products of the category. It assumes *The Two Halves as Orthogonal Complements* for the orthogonal complement and *The Triangular Decomposition $h\oplus n_+\oplus n_-$* for the triangular algebra. It defers the criterion that decides between the two complements to *Symmetric Pairs and Cartan Pairs: the Reductivity Criterion* and the product comparison to *$UT_n$ as a Linear Model of $\operatorname{Sym}_n$: Same Space, Wrong Product*.
 
 ## Two Complements of the Antisymmetric Half
 
@@ -78,13 +78,13 @@ which is symmetric and not antisymmetric, so $\operatorname{Skew}_n$ is not a le
 
 ## What Fails: The Bracket
 
-**The bracket of a skew matrix with an upper triangular one is not upper triangular.** Since $UT_n$ is a subalgebra and $\operatorname{Skew}_n$ is a Lie subalgebra, one might hope that the decomposition is a symmetric pair, which would require
+**The bracket of an antisymmetric matrix with an upper triangular one is not upper triangular.** Since $UT_n$ is a subalgebra and $\operatorname{Skew}_n$ is a Lie subalgebra, one might hope that the decomposition is a symmetric pair, which would require
 
 $$
 [\operatorname{Skew}_n,UT_n]\subseteq UT_n .
 $$
 
-The requirement fails: for a generic skew $K$ and a generic upper triangular $U$ the commutator $KU-UK$ has nonzero strictly lower entries. The computation at $n=2,3,4$ produces such entries every time, so the inclusion is false for every $n\ge2$.
+The requirement fails: for a generic antisymmetric $K$ and a generic upper triangular $U$ the commutator $KU-UK$ has nonzero strictly lower entries. The computation at $n=2,3,4$ produces such entries every time, so the inclusion is false for every $n\ge2$.
 
 **The failure is exactly what distinguishes $UT_n$ from the symmetric half.** For the symmetric half the corresponding inclusion holds,
 
@@ -92,7 +92,7 @@ $$
 [\operatorname{Skew}_n,\operatorname{Sym}_n]\subseteq\operatorname{Sym}_n ,
 $$
 
-because the commutator of a skew and a symmetric matrix is symmetric; this is the closure rule of *The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric*. So the two complements of the antisymmetric half are separated by one bracket computation, and the criterion is the subject of *Symmetric Pairs and Cartan Pairs: the Reductivity Criterion*.
+because the commutator of an antisymmetric and a symmetric matrix is symmetric; this is the closure rule of *The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric*. So the two complements of the antisymmetric half are separated by one bracket computation, and the criterion is the subject of *Symmetric Pairs and Cartan Pairs: the Reductivity Criterion*.
 
 **The projection is not a morphism for any product of the category.** A map that is not multiplicative for the ordinary product cannot be multiplicative for the commutator or the anticommutator, and $\pi$ fails already on the commutator: $\pi([E_{12},E_{21}])=\pi(\sigma_3)=0$ while $[\pi E_{12},\pi E_{21}]$ involves the antisymmetrisations of the two units, which do not vanish. So $\pi$ is a projection of vector spaces and nothing more.
 
@@ -108,7 +108,7 @@ so it reads one entry of the matrix and forgets the other three, and its kernel 
 
 **The two complements are the two readings of the same three-dimensional space.** The symmetric half is spanned by $\mathrm{I},\sigma_1,\sigma_3$ and the triangular algebra by $\mathrm{I},E_{12},\sigma_3$; both are three-dimensional, both meet $\operatorname{Skew}_2$ in zero, and they share the diagonal. The change from one to the other is the shear that replaces $\sigma_1$ by $E_{12}$, and that shear is the difference between $\tfrac12(A-A^{\mathsf T})$ and $\pi(A)$.
 
-**The biquaternion frame sits in the skew side at $n=2$ only through one line.** The idempotents $\tilde\Pi_\pm$ are symmetric, the companion nilpotents are triangular at the coordinate flag, and the rotation $J$ is the single antisymmetric direction. The frame therefore uses the symmetric half for its idempotents and the triangular side for its nilpotents, and the two complements of this article are exactly the two pieces it borrows.
+**The biquaternion frame sits in the antisymmetric side at $n=2$ only through one line.** The idempotents $\tilde\Pi_\pm$ are symmetric, the companion nilpotents are triangular at the coordinate flag, and the rotation $J$ is the single antisymmetric direction. The frame therefore uses the symmetric half for its idempotents and the triangular side for its nilpotents, and the two complements of this article are exactly the two pieces it borrows.
 
 ## Summary
 

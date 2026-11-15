@@ -47,7 +47,7 @@ but one fixed space is a Jordan algebra and the other a Lie algebra. The fixed s
 | the algebra | $M_n(\mathbb{R})$, dimension $n^{2}$ | $M_n(\mathbb{C})$, real dimension $2n^{2}$ |
 | the involution | two types, and one orthogonal class per signature | the same two types, one orthogonal class |
 | symmetric part | $\operatorname{Sym}_n$, dimension $n(n+1)/2$ | $\operatorname{Sym}_n(\mathbb{C})$, complex dimension $n(n+1)/2$ |
-| skew part | $\operatorname{Skew}_n=\mathfrak{so}(n)$ | $\operatorname{Skew}_n(\mathbb{C})=\mathfrak{so}(n,\mathbb{C})$ |
+| antisymmetric part | $\operatorname{Skew}_n=\mathfrak{so}(n)$ | $\operatorname{Skew}_n(\mathbb{C})=\mathfrak{so}(n,\mathbb{C})$ |
 | the trace form | signature $(n(n+1)/2,\,n(n-1)/2)$ | the complex bilinear form, no signature |
 | the invariant definite form | none | $\operatorname{tr}(A^{*}B)$ |
 | the unit group | two components | one component |

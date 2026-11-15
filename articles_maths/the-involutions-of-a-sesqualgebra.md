@@ -186,7 +186,7 @@ The inner family $\sigma_{u}(x) = ux^{*}u^{*}$ is an involution exactly when $u^
 
 ## Further Reading
 
-- Nathan Jacobson, *Structure of Rings* (American Mathematical Society Colloquium Publications 37, 1956), for the involutions of a ring, the hermitian and the skew elements, and the relation to the automorphism group.
+- Nathan Jacobson, *Structure of Rings* (American Mathematical Society Colloquium Publications 37, 1956), for the involutions of a ring, the hermitian and the anti-Hermitian elements, and the relation to the automorphism group.
 - I. N. Herstein, *Rings with Involution* (University of Chicago Press, 1976), for the set of the involutions, the fixed rings and the Galois-type correspondence for rings with involution.
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions* (American Mathematical Society Colloquium Publications 44, 1998), for the involutions of a central simple algebra, the inner conjugation, and the correspondence between the involutions and the fixed spaces.
 - Nicolas Bourbaki, *Algebra I, Chapters 1–3* (Springer, 1998), for the semilinear maps, the twisted anti-automorphisms and the case of the trivial involution.

@@ -10,7 +10,7 @@ The article recalls what each block established, states the Kronecker reading an
 
 **The algebra.** The two base fields: $M_4(\mathbb{R})$ inside $M_4(\mathbb{C})$ as the fixed algebra of the conjugation, of real dimension $16$ inside $32$. The elementary symmetric functions: the four coefficients of $\det(\mathrm I+tA)$ and the strata they cut. The minimal polynomial and the Jordan form: the five partitions of four and the two regimes. The ideals: the centre $\mathbb{C}\mathrm I$ and the central simplicity of degree four.
 
-**The involutions and the decompositions.** The involutions of first and second kind and their fixed algebras; the two halves $\operatorname{Sym}_4$ and $\operatorname{Skew}_4$ of dimensions $10$ and $6$; the orthogonality of the two halves; the fine decomposition against the diagonal with the count $4+6+6$; the triangular decomposition with the Borel of dimension $10$; $UT_4$ as another complement of the skew half; the symmetric and Cartan pairs with the reductivity criterion.
+**The involutions and the decompositions.** The involutions of first and second kind and their fixed algebras; the two halves $\operatorname{Sym}_4$ and $\operatorname{Skew}_4$ of dimensions $10$ and $6$; the orthogonality of the two halves; the fine decomposition against the diagonal with the count $4+6+6$; the triangular decomposition with the Borel of dimension $10$; $UT_4$ as another complement of the anti-Hermitian half; the symmetric and Cartan pairs with the reductivity criterion.
 
 **The product on the halves.** The symmetric and antisymmetric parts of a product; the four multiplication tables and their ranks; the Jordan algebra $\operatorname{Sym}_4$ of degree four; the Lie algebra $\operatorname{Skew}_4\cong\mathfrak{so}(4)=\mathfrak{sl}_2\oplus\mathfrak{sl}_2$; the derivation $[A,X]$ and its two skewness statements; the radical of the Borel as its commutator; and $UT_4$ as a linear model of $\operatorname{Sym}_4$ with the wrong product.
 
@@ -46,7 +46,7 @@ The article recalls what each block established, states the Kronecker reading an
 
 **Proposition.** Every special feature of order four is a feature of the factorisation $4=2\cdot2$: the trace-form signature $(10,6)$, the split $\mathfrak{so}(4)=\mathfrak{sl}_2\oplus\mathfrak{sl}_2$, the two angles of a rotation, the two orthogonal complex structures, the even Clifford algebra $M_2\oplus M_2$, and the Segre cone $\mathbb{P}^{3}\times\mathbb{P}^{3}$.
 
-**Proof.** Each object is built from the pair of factors $M_2$ and $M_2$: the ten and the six are the symmetric and skew parts of the tensor product, the two $\mathfrak{sl}_2$ are the two factors of the skew part, and the two angles are the two parameters of the two factors.
+**Proof.** Each object is built from the pair of factors $M_2$ and $M_2$: the ten and the six are the symmetric and antisymmetric parts of the tensor product, the two $\mathfrak{sl}_2$ are the two factors of the antisymmetric part, and the two angles are the two parameters of the two factors.
 
 **Corollary.** The two-sided operators are the place where the factorisation is visible as operators: the basis $T_{\mu\nu}=L_{e_\mu}R_{e_\nu}$ is the tensor product of the two four-dimensional one-sided bases.
 
@@ -76,7 +76,7 @@ The article recalls what each block established, states the Kronecker reading an
 
 **Corollary.** The trace form on $M_3(\mathbb{C})$ has signature $(6,3)$, since $\dim\operatorname{Sym}_3=6$ and $\dim\operatorname{Skew}_3=3$, and the fine count is $3+3+3=9$.
 
-**Proof.** $\operatorname{tr}(S^{2})>0$ on real symmetric matrices of order three and $\operatorname{tr}(K^{2})<0$ on real skew matrices, with the same dimension count as at order four.
+**Proof.** $\operatorname{tr}(S^{2})>0$ on real symmetric matrices of order three and $\operatorname{tr}(K^{2})<0$ on real antisymmetric matrices, with the same dimension count as at order four.
 
 **Corollary.** The signature is the pair of triangular numbers $\tfrac{3\cdot4}{2}=6$ and $\tfrac{3\cdot2}{2}=3$, the same pattern as the ten and the six at order four, so the pattern survives the loss of the factorisation.
 

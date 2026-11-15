@@ -3,11 +3,11 @@
 
 ## Introduction
 
-The **adjoint** of an operator on a Lie algebra is taken with respect to the invariant Hermitian form of the category, and the adjoint of the signed two-sided operator is the operator that the form assigns to it. On a Lie algebra the two one-sided multiplications are skew for an invariant form, so the adjoint of a product is the product of the adjoints in the reverse order, and the adjoint of the signed two-sided operator is a signed two-sided operator of the transposed type together with a correction by the commutator of the carrying pair. The form under which the signed two-sided operator agrees with its adjoint is the **unitarity condition**, and it is the condition under which the signed two-sided operator defines a unitary operator.
+The **adjoint** of an operator on a Lie algebra is taken with respect to the invariant Hermitian form of the category, and the adjoint of the signed two-sided operator is the operator that the form assigns to it. On a Lie algebra the two one-sided multiplications are anti-self-adjoint for an invariant form, so the adjoint of a product is the product of the adjoints in the reverse order, and the adjoint of the signed two-sided operator is a signed two-sided operator of the transposed type together with a correction by the commutator of the carrying pair. The form under which the signed two-sided operator agrees with its adjoint is the **unitarity condition**, and it is the condition under which the signed two-sided operator defines a unitary operator.
 
 This article treats the adjoint of the signed two-sided operator on a Lie algebra, the explicit form of the adjoint and the unitarity condition it defines. It is the third article of the `- * Operator Theory` group of the category; the signed two-sided operator is *The Signed Two-Sided Operator on a Lie Algebra* and its one-sided factors are *The Signed Left Multiplication on a Lie Algebra*, both above in the category, the invariant form and its adjoint are *Hermitian Forms on a Lie Algebra*, the star of the enveloping algebra is *The Involution on the Enveloping Algebra of a Lie Group*, and the adjoints of the remaining signed operators are *The Signed Adjoint of the Reflection on a Lie Algebra*, *The Signed Adjoint of the Left Multiplication on a Lie Algebra* and *The Graded Adjoint Action on a Module over a Lie Algebra*, below in this group.
 
-The article assumes the Lie algebra and the bracket from *Lie Groups*, the invariant Hermitian form, its skew-adjoint adjoint operators and its positive definite case from *Hermitian Forms on a Lie Algebra*, the signed two-sided operator, its factorisation and its square from *The Signed Two-Sided Operator on a Lie Algebra*, the signed left multiplication and its kernel from *The Signed Left Multiplication on a Lie Algebra*, and the grade involution and the grading from *Graded Lie Algebras with an Involution*. The form is used as an instrument and not as an object of study; the metric and the geometry of the form belong to Part IV.
+The article assumes the Lie algebra and the bracket from *Lie Groups*, the invariant Hermitian form, its anti-self-adjoint adjoint operators and its positive definite case from *Hermitian Forms on a Lie Algebra*, the signed two-sided operator, its factorisation and its square from *The Signed Two-Sided Operator on a Lie Algebra*, the signed left multiplication and its kernel from *The Signed Left Multiplication on a Lie Algebra*, and the grade involution and the grading from *Graded Lie Algebras with an Involution*. The form is used as an instrument and not as an object of study; the metric and the geometry of the form belong to Part IV.
 
 ## The Adjoint Operation
 
@@ -27,7 +27,7 @@ $$
 L_a^{*} = -L_a, \qquad R_b^{*} = -R_b, \qquad \alpha^{*} = \alpha ,
 $$
 
-so all the multiplications are **skew-adjoint** and the grade involution is a self-adjoint isometry.
+so all the multiplications are **anti-self-adjoint** and the grade involution is a self-adjoint isometry.
 
 *Proof.* The invariance of $H$ is the identity $H([a,x],y) = -H(x,[a,y])$, which is $H(L_ax,y) = H(x,-L_ay) = H(x,L_{-a}y)$, hence $L_a^{*} = -L_a$; the right multiplication is the same with the antisymmetry, $R_b^{*} = -R_b$. The isometry condition is the hypothesis, and an isometry is an invertible operator with $\alpha^{*} = \alpha^{-1} = \alpha$.
 
@@ -83,17 +83,17 @@ the second being automatic for homogeneous carrying elements; consequently the s
 
 *Proof.* The adjoint is the formula above, so self-adjointness is the identity $\Sigma^{\alpha}_{\alpha(a),\alpha(b)} - \alpha R_{[a,b]} = \Sigma^{\alpha}_{a,b}$; separating the two-sided operator part from the right-multiplication part gives the two stated conditions, and the second holds for homogeneous parameters by the parity computation.
 
-### Skew-Adjointness
+### Anti-Self-Adjointness
 
-**Proposition.** The signed two-sided operator is skew-adjoint if and only if
+**Proposition.** The signed two-sided operator is anti-self-adjoint if and only if
 
 $$
 2\Sigma^{\alpha}_{a,b} = \alpha R_{[a,b]} ,
 $$
 
-an equation which on the odd part of the algebra becomes the vanishing of the second term; in particular no nonzero two-sided operator with an even commuting pair is skew-adjoint.
+an equation which on the odd part of the algebra becomes the vanishing of the second term; in particular no nonzero two-sided operator with an even commuting pair is anti-self-adjoint.
 
-*Proof.* Skew-adjointness is $\Sigma^{\alpha\,*}_{a,b} = -\Sigma^{\alpha}_{a,b}$; substitute the formula and rearrange.
+*Proof.* Anti-self-adjointness is $\Sigma^{\alpha\,*}_{a,b} = -\Sigma^{\alpha}_{a,b}$; substitute the formula and rearrange.
 
 ### Unitarity
 
@@ -139,7 +139,7 @@ vanishes identically if and only if the signed two-sided operator is self-adjoin
 
 ### The Orthogonal Algebra
 
-Let $\mathrm{G} = \mathrm{so}(3)$ with the negative definite form $H(X,Y) = -\frac12\operatorname{tr}(XY)$, which is positive definite and invariant; the algebra is compact, the left multiplications are skew-adjoint, and every signed two-sided operator with a commuting pair is self-adjoint. The Casimir operator is the negative of the Laplacian, and it is a positive self-adjoint combination of the two-sided operators.
+Let $\mathrm{G} = \mathrm{so}(3)$ with the negative definite form $H(X,Y) = -\frac12\operatorname{tr}(XY)$, which is positive definite and invariant; the algebra is compact, the left multiplications are anti-self-adjoint, and every signed two-sided operator with a commuting pair is self-adjoint. The Casimir operator is the negative of the Laplacian, and it is a positive self-adjoint combination of the two-sided operators.
 
 ### The Rank-One Algebra
 
@@ -151,13 +151,13 @@ Let $\mathrm{G}$ be the Heisenberg algebra with the central element $Z$; the inv
 
 ## Summary
 
-With respect to a non-degenerate invariant Hermitian form $H$ that the grade involution preserves, the one-sided multiplications are skew-adjoint, $L_a^{*} = -L_a$ and $R_b^{*} = -R_b$, and the grade involution is self-adjoint; hence the adjoint of the signed two-sided operator is the composite of the adjoints in the reverse order, $\Sigma^{\alpha\,*}_{a,b} = \alpha R_bL_a$, with the explicit form
+With respect to a non-degenerate invariant Hermitian form $H$ that the grade involution preserves, the one-sided multiplications are anti-self-adjoint, $L_a^{*} = -L_a$ and $R_b^{*} = -R_b$, and the grade involution is self-adjoint; hence the adjoint of the signed two-sided operator is the composite of the adjoints in the reverse order, $\Sigma^{\alpha\,*}_{a,b} = \alpha R_bL_a$, with the explicit form
 
 $$
 \Sigma^{\alpha\,*}_{a,b} = \Sigma^{\alpha}_{\alpha(a),\alpha(b)} - \alpha R_{[a,b]} ,
 $$
 
-a signed two-sided operator of the $\alpha$-transformed pair corrected by the right multiplication of the commutator. The signed two-sided operator is self-adjoint exactly when the carrying pair commutes and the two-sided operator is $\alpha$-invariant, which holds for homogeneous pairs; it is skew-adjoint only in the special case $2\Sigma^{\alpha}_{a,b} = \alpha R_{[a,b]}$, and it is **unitary** exactly when it is self-adjoint and its square is the identity, so the unitary signed two-sided operators are the involutive ones with a commuting carrying pair. The signed conjugation is unitary for every element, being the inverse of its adjoint, and it is self-adjoint exactly when it is an involution; the unsigned case is $\alpha = \mathrm{id}$, and the form defect $H(\Sigma x,y) - H(x,\Sigma y)$ measures the failure of the self-adjointness.
+a signed two-sided operator of the $\alpha$-transformed pair corrected by the right multiplication of the commutator. The signed two-sided operator is self-adjoint exactly when the carrying pair commutes and the two-sided operator is $\alpha$-invariant, which holds for homogeneous pairs; it is anti-self-adjoint only in the special case $2\Sigma^{\alpha}_{a,b} = \alpha R_{[a,b]}$, and it is **unitary** exactly when it is self-adjoint and its square is the identity, so the unitary signed two-sided operators are the involutive ones with a commuting carrying pair. The signed conjugation is unitary for every element, being the inverse of its adjoint, and it is self-adjoint exactly when it is an involution; the unsigned case is $\alpha = \mathrm{id}$, and the form defect $H(\Sigma x,y) - H(x,\Sigma y)$ measures the failure of the self-adjointness.
 
 ## Summary of Notation
 
@@ -165,7 +165,7 @@ a signed two-sided operator of the $\alpha$-transformed pair corrected by the ri
 |---|---|
 | $H$ | a non-degenerate invariant Hermitian form |
 | $T^{*}$ | the adjoint of $T$ for $H$ |
-| $L_a^{*} = -L_a$, $R_b^{*} = -R_b$ | skew-adjointness of the multiplications |
+| $L_a^{*} = -L_a$, $R_b^{*} = -R_b$ | anti-self-adjointness of the multiplications |
 | $\alpha^{*} = \alpha$ | the grade involution is a self-adjoint isometry |
 | $\Sigma^{\alpha}_{a,b} = L_aR_b\alpha$ | the signed two-sided operator |
 | $\Sigma^{\alpha\,*}_{a,b} = \alpha R_bL_a$ | the adjoint of the signed two-sided operator |
@@ -178,7 +178,7 @@ a signed two-sided operator of the $\alpha$-transformed pair corrected by the ri
 ## Further Reading
 
 - Sigurdur Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces* (American Mathematical Society, 2001), for the invariant forms, the adjoint operators and the Casimir element.
-- Anthony W. Knapp, *Lie Groups Beyond an Introduction* (Birkhäuser, second edition, 2002), for the invariant forms, the Cartan involution and the skew-adjoint operators.
+- Anthony W. Knapp, *Lie Groups Beyond an Introduction* (Birkhäuser, second edition, 2002), for the invariant forms, the Cartan involution and the anti-self-adjoint operators.
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions* (American Mathematical Society, 1998), for the adjoint of a signed operator and the unitarity conditions.
 - Gerald B. Folland, *A Course in Abstract Harmonic Analysis* (CRC Press, second edition, 2015), for the unitary conditions and the adjoints of the multiplication operators.
 - V. S. Varadarajan, *Lie Groups, Lie Algebras, and Their Representations* (Springer, 1984), for the invariant forms, the adjoints and the unitary representations.

@@ -70,7 +70,7 @@ $$
 [\mathfrak{p},\mathfrak{p}]\subseteq\mathfrak{u},
 $$
 
-with $\mathfrak{p}=\operatorname{Herm}_4$. The first is closure of the unitary algebra; the second is the statement that the commutator of a anti-Hermitian and a Hermitian matrix is Hermitian; the third is the statement that the commutator of two Hermitian matrices is anti-Hermitian.
+with $\mathfrak{p}=\operatorname{Herm}_4$. The first is closure of the unitary algebra; the second is the statement that the commutator of an anti-Hermitian and a Hermitian matrix is Hermitian; the third is the statement that the commutator of two Hermitian matrices is anti-Hermitian.
 
 ## The Symmetric Space
 

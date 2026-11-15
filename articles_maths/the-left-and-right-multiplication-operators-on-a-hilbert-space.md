@@ -62,7 +62,7 @@ So the adjoint of a left multiplication is again a left multiplication, the adjo
 
 **Corollary (self-adjointness, normality and unitarity of the multiplications).** For $A\in B(H)$:
 
-1. $L_A$ is self-adjoint exactly when $A$ is self-adjoint, and skew-adjoint exactly when $A$ is skew-adjoint;
+1. $L_A$ is self-adjoint exactly when $A$ is self-adjoint, and anti-self-adjoint exactly when $A$ is anti-self-adjoint;
 2. $L_A$ is normal exactly when $A$ is normal;
 3. $L_A$ is unitary exactly when $A$ is unitary, and then $L_A^{-1}=L_{A^*}$;
 4. $L_A$ is positive exactly when $A$ is positive.

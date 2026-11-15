@@ -2,9 +2,9 @@
 
 ## Introduction
 
-The symmetric algebra of a module $M$ is graded, $\operatorname{sym}(M) = \bigoplus_{k\ge0}\operatorname{sym}^k(M)$, and an involution $\sigma_M$ of $M$ induces an involution $\sigma$ of the whole algebra; the degree is preserved, so the induced involution restricts to an involution $\sigma_k$ of each **symmetric power** $\operatorname{sym}^k(M)$. The eigenvalues of $\sigma_k$ are $\pm1$, because $\sigma_k$ is an involution, and the two eigenspaces are the **symmetric part** $\operatorname{sym}^k(M)^+$ and the **skew part** $\operatorname{sym}^k(M)^-$ of the power; the decomposition $\operatorname{sym}^k(M) = \operatorname{sym}^k(M)^+\oplus\operatorname{sym}^k(M)^-$ is the degree-$k$ part of the decomposition of the symmetric algebra, and the sum of the symmetric parts over all $k$ is the fixed subalgebra computed in *The Symmetric Algebra of a Module with an Involution*. The purpose of this article is to compute the eigenvalues explicitly and to describe the two eigenspaces.
+The symmetric algebra of a module $M$ is graded, $\operatorname{sym}(M) = \bigoplus_{k\ge0}\operatorname{sym}^k(M)$, and an involution $\sigma_M$ of $M$ induces an involution $\sigma$ of the whole algebra; the degree is preserved, so the induced involution restricts to an involution $\sigma_k$ of each **symmetric power** $\operatorname{sym}^k(M)$. The eigenvalues of $\sigma_k$ are $\pm1$, because $\sigma_k$ is an involution, and the two eigenspaces are the **symmetric part** $\operatorname{sym}^k(M)^+$ and the **anti-Hermitian part** $\operatorname{sym}^k(M)^-$ of the power; the decomposition $\operatorname{sym}^k(M) = \operatorname{sym}^k(M)^+\oplus\operatorname{sym}^k(M)^-$ is the degree-$k$ part of the decomposition of the symmetric algebra, and the sum of the symmetric parts over all $k$ is the fixed subalgebra computed in *The Symmetric Algebra of a Module with an Involution*. The purpose of this article is to compute the eigenvalues explicitly and to describe the two eigenspaces.
 
-The article restricts the induced involution to each homogeneous piece and shows that the eigenvalue of a monomial is $(-1)^{j}$, where $j$ is the number of its factors drawn from the anti-fixed part $M^-$ of the module; in a basis of eigenvectors of $\sigma_M$ with $p$ fixed and $q$ anti-fixed vectors, the generating function of the eigenvalues is $1/((1-t)^p(1+t)^q)$, and the symmetric and the skew parts of the power have the generating functions $\tfrac12\bigl(1/((1-t)^{p+q}) \pm 1/((1-t)^p(1+t)^q)\bigr)$. The two parts are then combined over all degrees, and the fixed subalgebra of the symmetric algebra is recognised as the sum of the symmetric parts; the worked cases are the two-dimensional module with the swapped basis and the one-dimensional module with $\sigma_M = -1$, where the involution of $\operatorname{sym}^k$ is the parity $(-1)^k$.
+The article restricts the induced involution to each homogeneous piece and shows that the eigenvalue of a monomial is $(-1)^{j}$, where $j$ is the number of its factors drawn from the anti-fixed part $M^-$ of the module; in a basis of eigenvectors of $\sigma_M$ with $p$ fixed and $q$ anti-fixed vectors, the generating function of the eigenvalues is $1/((1-t)^p(1+t)^q)$, and the symmetric and the anti-Hermitian parts of the power have the generating functions $\tfrac12\bigl(1/((1-t)^{p+q}) \pm 1/((1-t)^p(1+t)^q)\bigr)$. The two parts are then combined over all degrees, and the fixed subalgebra of the symmetric algebra is recognised as the sum of the symmetric parts; the worked cases are the two-dimensional module with the swapped basis and the one-dimensional module with $\sigma_M = -1$, where the involution of $\operatorname{sym}^k$ is the parity $(-1)^k$.
 
 The article assumes *The Symmetric Algebra of a Module with an Involution* for the induced involution and its fixed subalgebra, *The Symmetric and Exterior Powers* for $\operatorname{sym}^k(M)$, *Involutive Linear Spaces* for the involution of a module, *The Symmetric Algebra of a Module* for the universal property, and *Linear Algebra* for the bases of eigenvectors. The involution-invariant ideals of the symmetric algebra are *Involution-Invariant Ideals of the Symmetric Algebra*, later in this group. Throughout, $R$ is a commutative ring with identity, $M$ is an $R$-module with an $R$-linear involution $\sigma_M$, $M^+$ and $M^-$ are the fixed and anti-fixed parts, $\sigma_k$ is the induced involution of $\operatorname{sym}^k(M)$, and no form, norm or distance occurs.
 
@@ -28,7 +28,7 @@ $$
 \boxed{\;\operatorname{sym}^k(M) = \operatorname{sym}^k(M)^+ \oplus \operatorname{sym}^k(M)^-\;} .
 $$
 
-**Definition.** The **symmetric part** of the power is $\operatorname{sym}^k(M)^+ = \{u : \sigma_k(u) = u\}$ and the **skew part** is $\operatorname{sym}^k(M)^- = \{u : \sigma_k(u) = -u\}$; a monomial is **symmetric** when it is fixed and **skew** when it is negated.
+**Definition.** The **symmetric part** of the power is $\operatorname{sym}^k(M)^+ = \{u : \sigma_k(u) = u\}$ and the **antisymmetric part** is $\operatorname{sym}^k(M)^- = \{u : \sigma_k(u) = -u\}$; a monomial is **symmetric** when it is fixed and **antisymmetric** when it is negated.
 
 ## Eigenvalues and the Sign
 
@@ -40,7 +40,7 @@ $$
 \boxed{\;\sigma_k(m) = (-1)^{j}m, \qquad j = \#\{i : v_i \in M^-\}\;},
 $$
 
-the number of the factors drawn from the anti-fixed part. Hence a monomial is symmetric exactly when it has an even number of anti-fixed factors, and skew exactly when the number is odd.
+the number of the factors drawn from the anti-fixed part. Hence a monomial is symmetric exactly when it has an even number of anti-fixed factors, and anti-Hermitian exactly when the number is odd.
 
 *Proof.* $\sigma_M(v_i) = v_i$ for a factor in $M^+$ and $\sigma_M(v_i) = -v_i$ for a factor in $M^-$, so $\sigma_M(v_1)\cdots\sigma_M(v_k) = (-1)^j v_1\cdots v_k$.
 
@@ -51,20 +51,20 @@ $$
 \sum_{k\ge0}\dim\operatorname{sym}^k(M)^\pm\,t^k = \frac12\left(\frac{1}{(1-t)^{p+q}} \pm \frac{1}{(1-t)^p(1+t)^q}\right).
 $$
 
-*Proof.* A monomial $u^a v^b$ with $u$ in the fixed basis (degree $a$) and $v$ in the anti-fixed basis (degree $b$) has eigenvalue $(-1)^b$, so the trace generating function sums $(-1)^b t^{a+b}$ over the monomials, which is $\bigl(\sum_a t^a\bigr)^p\bigl(\sum_b(-t)^b\bigr)^q = 1/((1-t)^p(1+t)^q)$. The fixed and the skew parts are the $\pm1$-eigenspaces, with the projectors $\tfrac12(\mathrm{id}\pm\sigma)$, giving the second formula from the first and the total generating function $1/(1-t)^{p+q}$.
+*Proof.* A monomial $u^a v^b$ with $u$ in the fixed basis (degree $a$) and $v$ in the anti-fixed basis (degree $b$) has eigenvalue $(-1)^b$, so the trace generating function sums $(-1)^b t^{a+b}$ over the monomials, which is $\bigl(\sum_a t^a\bigr)^p\bigl(\sum_b(-t)^b\bigr)^q = 1/((1-t)^p(1+t)^q)$. The fixed and the anti-Hermitian parts are the $\pm1$-eigenspaces, with the projectors $\tfrac12(\mathrm{id}\pm\sigma)$, giving the second formula from the first and the total generating function $1/(1-t)^{p+q}$.
 
 ## The Decomposition
 
 ### The Two Eigenspaces
 
-**Theorem.** With $M = M^+\oplus M^-$ and $2$ invertible, the symmetric and the skew parts of the power are
+**Theorem.** With $M = M^+\oplus M^-$ and $2$ invertible, the symmetric and the antisymmetric parts of the power are
 
 $$
 \operatorname{sym}^k(M)^+ = \operatorname{span}_R\{v_1\cdots v_k : \#\{i : v_i\in M^-\} \ \text{even}\}, \qquad
 \operatorname{sym}^k(M)^- = \operatorname{span}_R\{v_1\cdots v_k : \#\{i : v_i\in M^-\} \ \text{odd}\},
 $$
 
-and the projections onto the two summands are $\tfrac12(\mathrm{id}\pm\sigma_k)$. The symmetric part is spanned by the products of the fixed elements together with the products with pairs of anti-fixed elements, and the skew part is spanned by the products with an odd number of anti-fixed factors.
+and the projections onto the two summands are $\tfrac12(\mathrm{id}\pm\sigma_k)$. The symmetric part is spanned by the products of the fixed elements together with the products with pairs of anti-fixed elements, and the anti-Hermitian part is spanned by the products with an odd number of anti-fixed factors.
 
 *Proof.* The eigenvalue formula gives the spanning sets, and the projectors split the identity by $\sigma_k^2 = \mathrm{id}$.
 
@@ -76,23 +76,23 @@ $$
 \boxed{\;\operatorname{sym}(M)^\sigma = \bigoplus_{k\ge0}\operatorname{sym}^k(M)^+\;} ,
 $$
 
-and it is a graded subalgebra of $\operatorname{sym}(M)$; the skew elements form the complementary graded submodule $\bigoplus_k\operatorname{sym}^k(M)^-$, which is not a subalgebra but satisfies $\operatorname{sym}(M)^-\cdot\operatorname{sym}(M)^-\subseteq\operatorname{sym}(M)^+$.
+and it is a graded subalgebra of $\operatorname{sym}(M)$; the anti-Hermitian elements form the complementary graded submodule $\bigoplus_k\operatorname{sym}^k(M)^-$, which is not a subalgebra but satisfies $\operatorname{sym}(M)^-\cdot\operatorname{sym}(M)^-\subseteq\operatorname{sym}(M)^+$.
 
-*Proof.* The induced involution preserves the degree, so the fixed set is the sum of the fixed sets of the pieces; the fixed set of an algebra automorphism is a subalgebra; the products of two skew monomials have an even number of anti-fixed factors, hence are fixed.
+*Proof.* The induced involution preserves the degree, so the fixed set is the sum of the fixed sets of the pieces; the fixed set of an algebra automorphism is a subalgebra; the products of two anti-Hermitian monomials have an even number of anti-fixed factors, hence are fixed.
 
 **Corollary.** The fixed subalgebra is the commutant of the involution inside the symmetric algebra: $\operatorname{sym}(M)^\sigma$ is generated by $M^+$ and by the products of pairs of elements of $M^-$, matching the description of *The Symmetric Algebra of a Module with an Involution*.
 
 ## Examples
 
-**Example (the swapped basis).** Let $M = R^2$ with basis $e_1, e_2$ and $\sigma_M$ exchanging them, and let $2$ be invertible. Then $M^+ = R(e_1+e_2)$ and $M^- = R(e_1-e_2)$, so $p = q = 1$. The character is $1/((1-t)(1+t)) = 1/(1-t^2)$, giving $\operatorname{tr}(\sigma_k) = 1$ for even $k$ and $0$ for odd $k$; the generating functions are $\tfrac12\bigl(1/(1-t)^2 \pm 1/(1-t^2)\bigr)$. In degree two, $\operatorname{sym}^2(M)$ has basis $e_1^2, e_1e_2, e_2^2$, the symmetric part is spanned by $e_1e_2$ and $e_1^2+e_2^2$, and the skew part by $e_1^2-e_2^2$; the dimensions $2$ and $1$ agree with the generating function, whose $t^2$-coefficient is $\tfrac12(3\pm1)$.
+**Example (the swapped basis).** Let $M = R^2$ with basis $e_1, e_2$ and $\sigma_M$ exchanging them, and let $2$ be invertible. Then $M^+ = R(e_1+e_2)$ and $M^- = R(e_1-e_2)$, so $p = q = 1$. The character is $1/((1-t)(1+t)) = 1/(1-t^2)$, giving $\operatorname{tr}(\sigma_k) = 1$ for even $k$ and $0$ for odd $k$; the generating functions are $\tfrac12\bigl(1/(1-t)^2 \pm 1/(1-t^2)\bigr)$. In degree two, $\operatorname{sym}^2(M)$ has basis $e_1^2, e_1e_2, e_2^2$, the symmetric part is spanned by $e_1e_2$ and $e_1^2+e_2^2$, and the antisymmetric part by $e_1^2-e_2^2$; the dimensions $2$ and $1$ agree with the generating function, whose $t^2$-coefficient is $\tfrac12(3\pm1)$.
 
-**Example (the single anti-fixed generator).** Let $M = R$ with $\sigma_M = -1$, so $p = 0$, $q = 1$ and $\operatorname{sym}^k(M)\cong R$ with $\sigma_k = (-1)^k$. The symmetric part is $R$ in even degrees and $0$ in odd degrees, the skew part is complementary, and the generating function $\tfrac12\bigl(1/(1-t)\pm1/(1+t)\bigr)$ gives $1/(1-t^2)$ for the symmetric part and $t/(1-t^2)$ for the skew part. The fixed subalgebra is the even polynomial ring $R[x^2]$ of *Commutative Algebras with an Involution*.
+**Example (the single anti-fixed generator).** Let $M = R$ with $\sigma_M = -1$, so $p = 0$, $q = 1$ and $\operatorname{sym}^k(M)\cong R$ with $\sigma_k = (-1)^k$. The symmetric part is $R$ in even degrees and $0$ in odd degrees, the anti-Hermitian part is complementary, and the generating function $\tfrac12\bigl(1/(1-t)\pm1/(1+t)\bigr)$ gives $1/(1-t^2)$ for the symmetric part and $t/(1-t^2)$ for the anti-Hermitian part. The fixed subalgebra is the even polynomial ring $R[x^2]$ of *Commutative Algebras with an Involution*.
 
 **Example (the trivial involution).** If $\sigma_M = \mathrm{id}$ then $M = M^+$, $q = 0$, the induced involution of every power is the identity, and $\operatorname{sym}^k(M)^+ = \operatorname{sym}^k(M)$, $\operatorname{sym}^k(M)^- = 0$; the fixed subalgebra is the whole symmetric algebra.
 
 ## Summary
 
-An $R$-linear involution $\sigma_M$ of a module $M$ restricts to an involution $\sigma_k$ of each **symmetric power** $\operatorname{sym}^k(M)$, which therefore splits as the direct sum of its **symmetric part** $\operatorname{sym}^k(M)^+$ and its **skew part** $\operatorname{sym}^k(M)^-$ when $2$ is invertible. A monomial has eigenvalue $(-1)^j$, where $j$ is the number of its factors from the anti-fixed part $M^-$; in a basis with $p$ fixed and $q$ anti-fixed vectors the character of $\sigma_k$ has generating function $1/((1-t)^p(1+t)^q)$ and the two eigenspaces have the generating functions $\tfrac12(1/(1-t)^{p+q}\pm1/((1-t)^p(1+t)^q))$. The sum of the symmetric parts is the fixed subalgebra of the symmetric algebra, a graded subalgebra generated by $M^+$ and the products of pairs of elements of $M^-$; the skew parts form a graded submodule whose products land in the fixed subalgebra. The swapped and the negated bases are the worked examples. No form, norm or distance occurs.
+An $R$-linear involution $\sigma_M$ of a module $M$ restricts to an involution $\sigma_k$ of each **symmetric power** $\operatorname{sym}^k(M)$, which therefore splits as the direct sum of its **symmetric part** $\operatorname{sym}^k(M)^+$ and its **anti-Hermitian part** $\operatorname{sym}^k(M)^-$ when $2$ is invertible. A monomial has eigenvalue $(-1)^j$, where $j$ is the number of its factors from the anti-fixed part $M^-$; in a basis with $p$ fixed and $q$ anti-fixed vectors the character of $\sigma_k$ has generating function $1/((1-t)^p(1+t)^q)$ and the two eigenspaces have the generating functions $\tfrac12(1/(1-t)^{p+q}\pm1/((1-t)^p(1+t)^q))$. The sum of the symmetric parts is the fixed subalgebra of the symmetric algebra, a graded subalgebra generated by $M^+$ and the products of pairs of elements of $M^-$; the anti-Hermitian parts form a graded submodule whose products land in the fixed subalgebra. The swapped and the negated bases are the worked examples. No form, norm or distance occurs.
 
 ## Summary of Notation
 
@@ -102,7 +102,7 @@ An $R$-linear involution $\sigma_M$ of a module $M$ restricts to an involution $
 | $M^+, M^-$ | Fixed and anti-fixed parts |
 | $\operatorname{sym}^k(M)$ | $k$-th symmetric power |
 | $\sigma_k$ | Induced involution of the power |
-| $\operatorname{sym}^k(M)^\pm$ | Symmetric and skew parts |
+| $\operatorname{sym}^k(M)^\pm$ | Symmetric and anti-Hermitian parts |
 | $\sigma_k(m) = (-1)^j m$ | Eigenvalue $j$ anti-fixed factors |
 | $\sum\operatorname{tr}(\sigma_k)t^k = 1/((1-t)^p(1+t)^q)$ | Character generating function |
 | $\tfrac12(1/(1-t)^{p+q}\pm1/((1-t)^p(1+t)^q))$ | Dimensions of the two eigenspaces |

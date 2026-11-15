@@ -80,7 +80,7 @@ It follows the biquaternion article *The Endomorphisms of the Biquaternion Algeb
 
 **Proof.** The squared norm of $L_{X}$ is the sum of the squared norms of the images of the four matrix units, and the image of a matrix unit is the corresponding column of $X$, so each column is counted twice.
 
-**Corollary.** The left multiplications by Hermitian matrices form a real subspace of dimension four inside the self-adjoint operators, and the left multiplications by anti-Hermitian matrices form the corresponding skew subspace.
+**Corollary.** The left multiplications by Hermitian matrices form a real subspace of dimension four inside the self-adjoint operators, and the left multiplications by anti-Hermitian matrices form the corresponding anti-Hermitian subspace.
 
 **Proof.** The four real dimensions of the Hermitian half carry over to the four real dimensions of the subspace of self-adjoint one-sided operators.
 

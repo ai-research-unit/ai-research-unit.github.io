@@ -73,13 +73,13 @@ and $T$ is invertible exactly when $T^{*}$ is, with $(T^{-1})^{*} = (T^{*})^{-1}
 
 **Proof.** $T - \lambda \mathrm{id}$ is invertible with bounded inverse exactly when its adjoint $T^{*} - \overline{\lambda}\,\mathrm{id}$ is, because the adjoint of an invertible operator is invertible with adjoint inverse; hence $\lambda \in \rho(T)$ iff $\overline{\lambda} \in \rho(T^{*})$. The inverse formula follows by taking adjoints in $T T^{-1} = \mathrm{id}$.
 
-**Proposition (self-adjoint, skew, normal, unitary).** The involution splits $B(H)$ into the **self-adjoint** operators $T = T^{*}$ and the **skew-adjoint** operators $T = -T^{*}$, with
+**Proposition (self-adjoint, anti-Hermitian, normal, unitary).** The involution splits $B(H)$ into the **self-adjoint** operators $T = T^{*}$ and the **anti-self-adjoint** operators $T = -T^{*}$, with
 
 $$
-B(H) = B(H)_{\mathrm{sa}} \oplus B(H)_{\mathrm{skew}} , \qquad T = \tfrac12(T+T^{*}) + \tfrac12(T-T^{*}) ,
+B(H) = B(H)_{\mathrm{sa}} \oplus B(H)_{\mathrm{anti}} , \qquad T = \tfrac12(T+T^{*}) + \tfrac12(T-T^{*}) ,
 $$
 
-when $2$ is invertible; $T$ is **normal** when $TT^{*} = T^{*}T$ and **unitary** when $T^{*}T = TT^{*} = \mathrm{id}$. The self-adjoint and skew-adjoint parts are real vector subspaces, and the unitary operators form a group.
+when $2$ is invertible; $T$ is **normal** when $TT^{*} = T^{*}T$ and **unitary** when $T^{*}T = TT^{*} = \mathrm{id}$. The self-adjoint and anti-self-adjoint parts are real vector subspaces, and the unitary operators form a group.
 
 **Proof.** The averaging maps $\tfrac12(\mathrm{id}\pm\ast)$ are real-linear idempotents with the stated images, and the direct sum is the abstract decomposition of an involutive algebra; the unitary operators are closed under multiplication and inversion by the anti-automorphism property.
 
@@ -91,7 +91,7 @@ when $2$ is invertible; $T$ is **normal** when $TT^{*} = T^{*}T$ and **unitary**
 
 ## Summary
 
-For a bounded operator $T$ on a Hilbert space there is a unique $T^{*}$ with $\langle Tx,y\rangle = \langle x,T^{*}y\rangle$, of the same norm, and the assignment $T \mapsto T^{*}$ is an isometric involutive anti-automorphism of $B(H)$, satisfying $(ST)^{*} = T^{*}S^{*}$, $T^{**} = T$ and the $C^{*}$-identity $\lVert T^{*}T\rVert = \lVert T\rVert^{2}$; it is the transpose of $T$ conjugated by the Riesz map, $T^{*} = R^{-1}T'R$. The involution is a homeomorphism for the norm, weak, strong and weak-star topologies of $B(H)$, it preserves commutants of self-adjoint sets, it sends the spectrum to the conjugate spectrum, $\sigma(T^{*}) = \overline{\sigma(T)}$, and it implements the splitting of $B(H)$ into the self-adjoint and the skew-adjoint operators, with the normal and the unitary operators defined by the involutive identities. In finite dimension the involution is the conjugate transpose of the matrix. The abstract involutions of $B(H)$ and the classical groups they define are *Involutions of the Bounded Operators*, and the adjoint defined by an abstract pairing is *The Dual Pairing and the Adjoint*.
+For a bounded operator $T$ on a Hilbert space there is a unique $T^{*}$ with $\langle Tx,y\rangle = \langle x,T^{*}y\rangle$, of the same norm, and the assignment $T \mapsto T^{*}$ is an isometric involutive anti-automorphism of $B(H)$, satisfying $(ST)^{*} = T^{*}S^{*}$, $T^{**} = T$ and the $C^{*}$-identity $\lVert T^{*}T\rVert = \lVert T\rVert^{2}$; it is the transpose of $T$ conjugated by the Riesz map, $T^{*} = R^{-1}T'R$. The involution is a homeomorphism for the norm, weak, strong and weak-star topologies of $B(H)$, it preserves commutants of self-adjoint sets, it sends the spectrum to the conjugate spectrum, $\sigma(T^{*}) = \overline{\sigma(T)}$, and it implements the splitting of $B(H)$ into the self-adjoint and the anti-self-adjoint operators, with the normal and the unitary operators defined by the involutive identities. In finite dimension the involution is the conjugate transpose of the matrix. The abstract involutions of $B(H)$ and the classical groups they define are *Involutions of the Bounded Operators*, and the adjoint defined by an abstract pairing is *The Dual Pairing and the Adjoint*.
 
 ## Summary of Notation
 
@@ -104,7 +104,7 @@ For a bounded operator $T$ on a Hilbert space there is a unique $T^{*}$ with $\l
 | $\lVert T^{*}T\rVert = \lVert T\rVert^{2}$ | the $C^{*}$-identity |
 | $R : H \to H'$ | Riesz map, $T^{*} = R^{-1}T'R$ |
 | $\sigma(T^{*}) = \overline{\sigma(T)}$ | conjugation of the spectrum |
-| $B(H)_{\mathrm{sa}}$, $B(H)_{\mathrm{skew}}$ | self-adjoint and skew-adjoint operators |
+| $B(H)_{\mathrm{sa}}$, $B(H)_{\mathrm{anti}}$ | self-adjoint and anti-self-adjoint operators |
 | $T^{*}T = TT^{*} = \mathrm{id}$ | unitary operators |
 
 ## Further Reading

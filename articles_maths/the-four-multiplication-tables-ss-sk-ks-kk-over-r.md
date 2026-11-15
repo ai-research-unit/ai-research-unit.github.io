@@ -4,7 +4,7 @@
 
 **Every product of two real matrices splits into two pieces, a symmetric one and an antisymmetric one, and each of the four pairings $SS$, $SK$, $KS$, $KK$ contributes to both pieces by different formulas; the table is the multiplication table of the two halves read in the two projections.**
 
-The article computes the four tables, states which piece of each product is a commutator and which an anticommutator, and identifies the two products that stay where they start: the square of a skew matrix is symmetric and negative semidefinite, and the square of a symmetric matrix keeps a symmetric part and a skew part. It assumes *The Symmetric and Antisymmetric Parts of a Product* for the two projection formulas, and it defers the algebra structure of the symmetric half to *The Jordan Algebra $\operatorname{Sym}_n(\mathbb{R})$* and the Lie structure of the skew half to *The Lie Algebra $\operatorname{Skew}_n\cong\mathfrak{so}(n)$*.
+The article computes the four tables, states which piece of each product is a commutator and which an anticommutator, and identifies the two products that stay where they start: the square of an antisymmetric matrix is symmetric and negative semidefinite, and the square of a symmetric matrix keeps a symmetric part and an antisymmetric part. It assumes *The Symmetric and Antisymmetric Parts of a Product* for the two projection formulas, and it defers the algebra structure of the symmetric half to *The Jordan Algebra $\operatorname{Sym}_n(\mathbb{R})$* and the Lie structure of the antisymmetric half to *The Lie Algebra $\operatorname{Skew}_n\cong\mathfrak{so}(n)$*.
 
 Throughout $n\ge2$, and $M_n=M_n(\mathbb{R})$. The projections are
 
@@ -44,25 +44,25 @@ $$
 
 *Proof.* The first summand equals its transpose, since $(SS'+S'S)^{\mathsf T}=S'S+SS'$. The second changes sign, since $(SS'-S'S)^{\mathsf T}=S'S-SS'$. Both are nonzero in general, so $SS\subseteq S\oplus K$ and the two projections are the anticommutator and the commutator.
 
-**The product of two skew matrices splits the other way around.** With $K,K'\in\operatorname{Skew}_n$,
+**The product of two antisymmetric matrices splits the other way around.** With $K,K'\in\operatorname{Skew}_n$,
 
 $$
 KK'=\underbrace{\tfrac12(KK'+K'K)}_{\in\operatorname{Sym}_n}+\underbrace{\tfrac12(KK'-K'K)}_{\in\operatorname{Skew}_n},
 $$
 
-by the same computation with a sign: $(KK'+K'K)^{\mathsf T}=K'^{\mathsf T}K^{\mathsf T}+K^{\mathsf T}K'^{\mathsf T}=K'K+KK'$, and the difference is antisymmetric. Measured on $100$ random pairs at $n=2,3,4$, the symmetric part is symmetric in every case and the skew part antisymmetric in every case.
+by the same computation with a sign: $(KK'+K'K)^{\mathsf T}=K'^{\mathsf T}K^{\mathsf T}+K^{\mathsf T}K'^{\mathsf T}=K'K+KK'$, and the difference is antisymmetric. Measured on $100$ random pairs at $n=2,3,4$, the symmetric part is symmetric in every case and the antisymmetric part antisymmetric in every case.
 
-**The structure of the two formulas is identical and the meaning is different.** In $SS'$ the symmetric part is the anticommutator of two symmetric matrices and the skew part is their commutator; in $KK'$ the same two words appear with the same roles. What changes is the sign of the square: $S^{2}$ is symmetric and positive semidefinite, while $K^{2}$ is symmetric and negative semidefinite.
+**The structure of the two formulas is identical and the meaning is different.** In $SS'$ the symmetric part is the anticommutator of two symmetric matrices and the antisymmetric part is their commutator; in $KK'$ the same two words appear with the same roles. What changes is the sign of the square: $S^{2}$ is symmetric and positive semidefinite, while $K^{2}$ is symmetric and negative semidefinite.
 
-**The square of a skew matrix is symmetric and negative semidefinite.** For $K\in\operatorname{Skew}_n$,
+**The square of an antisymmetric matrix is symmetric and negative semidefinite.** For $K\in\operatorname{Skew}_n$,
 
 $$
 (K^{2})^{\mathsf T}=(K^{\mathsf T})^{2}=(-K)^{2}=K^{2},\qquad K^{2}=-KK^{\mathsf T},
 $$
 
-and $-KK^{\mathsf T}$ is negative semidefinite with kernel $\ker K$. So the map $K\mapsto K^{2}$ leaves the skew half and lands in the closed cone of the symmetric half. Measured on $100$ random skew matrices at each of $n=2,3,4$, all $300$ squares were symmetric and negative semidefinite.
+and $-KK^{\mathsf T}$ is negative semidefinite with kernel $\ker K$. So the map $K\mapsto K^{2}$ leaves the antisymmetric half and lands in the closed cone of the symmetric half. Measured on $100$ random antisymmetric matrices at each of $n=2,3,4$, all $300$ squares were symmetric and negative semidefinite.
 
-**Consequence: $KK$ is not closed in $K$ but its square is closed in $S$.** The product $KK'$ has a skew part in general, and that part is the commutator $\tfrac12[K,K']$; the square has no skew part at all. So the skew half is closed under the square only up to the bracket, and the bracket of two skew matrices is again skew, as *The Lie Algebra $\operatorname{Skew}_n\cong\mathfrak{so}(n)$* records.
+**Consequence: $KK$ is not closed in $K$ but its square is closed in $S$.** The product $KK'$ has an antisymmetric part in general, and that part is the commutator $\tfrac12[K,K']$; the square has no antisymmetric part at all. So the antisymmetric half is closed under the square only up to the bracket, and the bracket of two antisymmetric matrices is again antisymmetric, as *The Lie Algebra $\operatorname{Skew}_n\cong\mathfrak{so}(n)$* records.
 
 ## The Tables $SK$ and $KS$
 
@@ -90,7 +90,7 @@ $$
 
 and $\operatorname{tr}(SK)=0$.
 
-*Proof.* The first two are the identity $\operatorname{tr}(AB)=\sum_{i,j}A_{ij}B_{ji}$ with $B$ symmetric and $B$ skew. For the third, $\operatorname{tr}(SK)=\operatorname{tr}((SK)^{\mathsf T})=\operatorname{tr}(-KS)=-\operatorname{tr}(SK)$, so the number is zero.
+*Proof.* The first two are the identity $\operatorname{tr}(AB)=\sum_{i,j}A_{ij}B_{ji}$ with $B$ symmetric and $B$ antisymmetric. For the third, $\operatorname{tr}(SK)=\operatorname{tr}((SK)^{\mathsf T})=\operatorname{tr}(-KS)=-\operatorname{tr}(SK)$, so the number is zero.
 
 **Consequence: the two halves are orthogonal for the trace form, and each is definite on itself.** The trace form is positive definite on $S$ and negative definite on $K$; the mixed pairings vanish. So the four tables have a diagonal trace form:
 
@@ -108,11 +108,11 @@ $$
 S\cdot S\subseteq S\oplus K,\qquad S\cdot K\subseteq S\oplus K,\qquad K\cdot K\subseteq S\oplus K,
 $$
 
-and the first two are equalities for $n\ge2$ while the third is an equality only for $n\ge3$: at $n=2$ the skew half is one-dimensional and abelian, so $[K,K']=0$ and $KK'$ stays in $S$.
+and the first two are equalities for $n\ge2$ while the third is an equality only for $n\ge3$: at $n=2$ the anti-Hermitian half is one-dimensional and abelian, so $[K,K']=0$ and $KK'$ stays in $S$.
 
 **Consequence: the two halves are not subalgebras of $M_n$.** Neither is closed under the product of the algebra, so neither inherits an associative structure. Each inherits a different one: $S$ is closed under the anticommutator and $K$ under the commutator, which is the content of *The Two Halves: Symmetric and Antisymmetric*.
 
-**The commutator and the anticommutator are exchanged by the two tables.** In $SS'$ the commutator is the skew part; in $KK'$ the commutator is the skew part as well; in $SK$ the commutator is the symmetric part. So the answer to the question "which product is the bracket" depends on the pair of halves, and the mixed table is the one that reverses the answer.
+**The commutator and the anticommutator are exchanged by the two tables.** In $SS'$ the commutator is the antisymmetric part; in $KK'$ the commutator is the antisymmetric part as well; in $SK$ the commutator is the symmetric part. So the answer to the question "which product is the bracket" depends on the pair of halves, and the mixed table is the one that reverses the answer.
 
 ## The Case $n=2$
 
@@ -130,7 +130,7 @@ and $K^{2}=-d^{2}\mathrm{I}$, which is symmetric and negative semidefinite for e
 
 ## Summary
 
-The four tables of the two halves of $M_n(\mathbb{R})$ are the products $SS'$, $SK$, $KS$ and $KK'$, and each splits into a symmetric part and an antisymmetric part. In $SS'$ the symmetric part is the anticommutator and the antisymmetric part the commutator; in $KK'$ the same two formulas hold, with $K^{2}=-KK^{\mathsf T}$ symmetric and negative semidefinite, so the square of a skew matrix leaves the skew half and lands in the closed cone of the symmetric half; in the mixed product $SK$ the symmetric part is $\tfrac12(SK-KS)$ and the antisymmetric part $\tfrac12(SK+KS)$, so the bracket appears in the symmetric half. The trace form sees only the like pairings, is positive definite on $S$, negative definite on $K$ and vanishes on the mixed pairings, so the four tables decouple. None of the three tables stays inside a half, so neither half is a subalgebra of $M_n$; each carries its own product, the anticommutator on the symmetric half and the commutator on the skew half.
+The four tables of the two halves of $M_n(\mathbb{R})$ are the products $SS'$, $SK$, $KS$ and $KK'$, and each splits into a symmetric part and an antisymmetric part. In $SS'$ the symmetric part is the anticommutator and the antisymmetric part the commutator; in $KK'$ the same two formulas hold, with $K^{2}=-KK^{\mathsf T}$ symmetric and negative semidefinite, so the square of an antisymmetric matrix leaves the antisymmetric half and lands in the closed cone of the symmetric half; in the mixed product $SK$ the symmetric part is $\tfrac12(SK-KS)$ and the antisymmetric part $\tfrac12(SK+KS)$, so the bracket appears in the symmetric half. The trace form sees only the like pairings, is positive definite on $S$, negative definite on $K$ and vanishes on the mixed pairings, so the four tables decouple. None of the three tables stays inside a half, so neither half is a subalgebra of $M_n$; each carries its own product, the anticommutator on the symmetric half and the commutator on the antisymmetric half.
 
 ## Summary of Notation
 

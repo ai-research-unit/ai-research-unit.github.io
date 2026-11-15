@@ -414,7 +414,7 @@ which is the Hamilton–Jacobi equation of the calculus of variations. **The act
 
 **Theorem (conservation of energy).** For an autonomous Hamiltonian $H$, the function $H$ is conserved by its own flow, $\{H,H\}=0$, and the flow preserves the symplectic form, $\mathcal{L}_{X_H}\omega=0$, and hence the volume form $\omega^n/n!$.
 
-*Proof.* The bracket is skew, so $\{H,H\}=0$; the preservation of $\omega$ is Cartan's formula $\mathcal{L}_{X_H}\omega = d\iota_{X_H}\omega+\iota_{X_H}d\omega = d\,dH + 0 = 0$, using closedness. The volume form is a power of $\omega$, so it is preserved as well.
+*Proof.* The bracket is anti-Hermitian, so $\{H,H\}=0$; the preservation of $\omega$ is Cartan's formula $\mathcal{L}_{X_H}\omega = d\iota_{X_H}\omega+\iota_{X_H}d\omega = d\,dH + 0 = 0$, using closedness. The volume form is a power of $\omega$, so it is preserved as well.
 
 **Theorem (Liouville).** The flow of a Hamiltonian vector field on a symplectic manifold of dimension $2n$ preserves the measure induced by $\omega^n/n!$; consequently, on a bounded invariant set of finite measure, almost every orbit returns arbitrarily close to its starting point infinitely often (Poincaré recurrence).
 

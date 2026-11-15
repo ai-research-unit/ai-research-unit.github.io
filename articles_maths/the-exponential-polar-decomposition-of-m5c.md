@@ -103,7 +103,7 @@ where $\mathfrak{p}$ is the space of Hermitian matrices. The decomposition is th
 
 **Corollary.** $[\mathfrak{u},\mathfrak{u}]\subseteq\mathfrak{u}$, $[\mathfrak{u},\mathfrak{p}]\subseteq\mathfrak{p}$, $[\mathfrak{p},\mathfrak{p}]\subseteq\mathfrak{u}$; the decomposition is a symmetric Lie algebra.
 
-**Proof.** The bracket of anti-Hermitian matrices is anti-Hermitian; the bracket of a anti-Hermitian and a Hermitian is Hermitian; the bracket of two Hermitian is anti-Hermitian.
+**Proof.** The bracket of anti-Hermitian matrices is anti-Hermitian; the bracket of an anti-Hermitian and a Hermitian is Hermitian; the bracket of two Hermitian is anti-Hermitian.
 
 ### The Global Decomposition
 

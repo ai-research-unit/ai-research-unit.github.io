@@ -191,6 +191,6 @@ The centre of a sesqualgebra is the set of the elements that commute with every 
 
 ## Further Reading
 
-- I. N. Herstein, *Rings with Involution* (University of Chicago Press, 1976), for the centre of a ring with involution, the parts cut by the involution and the symmetric and the skew elements.
+- I. N. Herstein, *Rings with Involution* (University of Chicago Press, 1976), for the centre of a ring with involution, the parts cut by the involution and the symmetric and the anti-Hermitian elements.
 - T. Y. Lam, *A First Course in Noncommutative Rings* (Springer, second edition, 2001), for the centre, the units and the zero divisors of a ring, and the annihilator arguments.
 - Sterling K. Berberian, *Baer $*$-Rings* (Springer, 1972), for the interplay of an involution with the one-sided annihilators and the projection on the structure of an involutive ring.

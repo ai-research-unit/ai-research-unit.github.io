@@ -30,7 +30,7 @@ of the $+1$ and $-1$ eigenspaces, and the projection onto the first is $\tfrac12
 
 **Every involution of the first kind is $\sigma_B(X)=B^{-1}X^{\mathsf T}B$ for a nondegenerate bilinear form $B$, and $B$ is unique up to a nonzero scalar.** A nondegenerate bilinear form is a matrix $B$ with $\det B\ne0$, and $\sigma_B$ is an anti-automorphism because $(XY)^{\mathsf T}=Y^{\mathsf T}X^{\mathsf T}$ and $B^{-1}$ cancels. The negative $-\sigma_B$ is also of order two and satisfies $\sigma(XY)=-\sigma(Y)\sigma(X)$; both signs occur, and the sign is the invariant that separates the two classes. The order-two condition is automatic: $\sigma_B^{2}(X)=X$. Conversely, an anti-automorphism of the matrix algebra is determined by its effect on the rank-one maps, which it permutes, and that permutation is induced by a linear map on the dual space; assembling the two gives $B$.
 
-**The fixed space is the set of matrices self-adjoint for $B$.** The equation $\sigma_B(X)=X$ is $X^{\mathsf T}B=BX$, which says $\langle Xu,v\rangle=\langle u,Xv\rangle$ for the form $\langle u,v\rangle=u^{\mathsf T}Bv$. So the $+1$ space is the set of $B$-self-adjoint endomorphisms, and the $-1$ space is the set of $B$-skew endomorphisms.
+**The fixed space is the set of matrices self-adjoint for $B$.** The equation $\sigma_B(X)=X$ is $X^{\mathsf T}B=BX$, which says $\langle Xu,v\rangle=\langle u,Xv\rangle$ for the form $\langle u,v\rangle=u^{\mathsf T}Bv$. So the $+1$ space is the set of $B$-self-adjoint endomorphisms, and the $-1$ space is the set of $B$-anti-self-adjoint endomorphisms.
 
 **Scaling the form does not change the involution.** $\sigma_{\lambda B}=\sigma_B$ for $\lambda\ne0$, because the two scalars cancel. So the data is the form up to a scalar, and the classification of involutions is the classification of forms up to similarity.
 
@@ -144,7 +144,7 @@ An involution of the first kind is an $\mathbb{R}$-linear anti-automorphism of o
 ## Further Reading
 
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions* (American Mathematical Society, 1998), for involutions of the first and second kind and their classification by forms.
-- Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for self-adjoint and skew endomorphisms of a bilinear form.
+- Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for self-adjoint and anti-self-adjoint endomorphisms of a bilinear form.
 - [The Matrix Algebra $M_n(\mathbb{R})$](the-matrix-algebra-mnr.html), for the transpose and the two halves.
 - [Split-Quaternion Algebra](split-quaternion-algebra.html), for the one-dimensional case of the classification.
 - [The Matrix Algebra $M_n(\mathbb{C})$](the-matrix-algebra-mnc.html), for the complex algebra where one class remains.

@@ -30,15 +30,15 @@ It assumes *The Exponential and the Lie Group Structure at $n=4$*, *The Exponent
 
 **Theorem.** The exponential restricts to an analytic diffeomorphism $\operatorname{Herm}_4\to\operatorname{Herm}_4^{++}$ with analytic inverse, and to a surjective analytic map $\mathfrak{u}(4)\to U(4)$ whose fibres are discrete.
 
-**Proof.** For Hermitian $H$ the eigenvalues are real and $e^{H}$ has positive eigenvalues; the inverse sends a positive definite $A$ to $\sum\log\lambda_k\,P_k$ in its spectral decomposition, which is analytic. For anti-Hermitian $K$ the exponential is unitary and every unitary has a anti-Hermitian logarithm; two logarithms of the same unitary differ by $2\pi i$ times an integral matrix in the eigenbasis, so the fibres are discrete.
+**Proof.** For Hermitian $H$ the eigenvalues are real and $e^{H}$ has positive eigenvalues; the inverse sends a positive definite $A$ to $\sum\log\lambda_k\,P_k$ in its spectral decomposition, which is analytic. For anti-Hermitian $K$ the exponential is unitary and every unitary has an anti-Hermitian logarithm; two logarithms of the same unitary differ by $2\pi i$ times an integral matrix in the eigenbasis, so the fibres are discrete.
 
 **Corollary.** The image of the Hermitian half is exactly the open cone, so the exponential identifies the two halves as manifolds of the same dimension and the cone as a model of the linear space.
 
 **Proof.** The two halves have dimension sixteen and the exponential is a diffeomorphism onto the cone.
 
-**Corollary.** The image of the skew half is the compact group $U(4)$, so the same exponential is injective-up-to-discrete on one half and a covering-like surjection on the other.
+**Corollary.** The image of the anti-Hermitian half is the compact group $U(4)$, so the same exponential is injective-up-to-discrete on one half and a covering-like surjection on the other.
 
-**Proof.** The unitary group is compact and of dimension sixteen, equal to the dimension of the skew half.
+**Proof.** The unitary group is compact and of dimension sixteen, equal to the dimension of the anti-Hermitian half.
 
 **The derivative of the exponential.** The differential of $\exp$ at $A$ is $B\mapsto e^{A}\sum_{k\ge0}\frac{(-1)^{k}}{(k+1)!}(\operatorname{ad}_A)^{k}(B)$, which is the identity at $A=0$ and is singular whenever two eigenvalues of $A$ differ by $2\pi i n$.
 
@@ -83,7 +83,7 @@ $$
 
 **Proof.** The product of the two manifolds has dimension $16+16$.
 
-**Corollary.** The differential of the polar map at the identity is the direct sum of the identity on the Hermitian half and the identity on the skew half.
+**Corollary.** The differential of the polar map at the identity is the direct sum of the identity on the Hermitian half and the identity on the anti-Hermitian half.
 
 **Proof.** Near the identity, $H=\mathrm I+\tfrac12(A+A^{\ast})$ and $U=\mathrm I+\tfrac12(A-A^{\ast})$ to first order.
 
@@ -111,7 +111,7 @@ $$
 
 ## Analysis against Algebra
 
-**Proposition.** The statements that are analysis: the convergence of the exponential series, the inverse and implicit function theorems, the concavity of $\log\det$, the smoothness of the square root and the logarithm, and the discreteness of the fibres of the exponential on the skew half.
+**Proposition.** The statements that are analysis: the convergence of the exponential series, the inverse and implicit function theorems, the concavity of $\log\det$, the smoothness of the square root and the logarithm, and the discreteness of the fibres of the exponential on the anti-Hermitian half.
 
 **Proof.** Each uses a limit, a derivative or a completeness argument.
 
@@ -129,7 +129,7 @@ $$
 
 ## Summary
 
-The Hermitian and anti-Hermitian halves are linear subspaces of real dimension sixteen, complementary at every point, and each is its own tangent space. The exponential is a diffeomorphism from the Hermitian half onto the open cone and a surjection with discrete fibres from the skew half onto the unitary group.
+The Hermitian and anti-Hermitian halves are linear subspaces of real dimension sixteen, complementary at every point, and each is its own tangent space. The exponential is a diffeomorphism from the Hermitian half onto the open cone and a surjection with discrete fibres from the anti-Hermitian half onto the unitary group.
 
 The maps $A\mapsto A^{\ast}$, $\operatorname{tr}$, $\det$ and $A\mapsto A^{-1}$ are analytic, with derivatives $B^{\ast}$, $\operatorname{tr}B$, $\det(A)\operatorname{tr}(A^{-1}B)$ and $-A^{-1}BA^{-1}$; the map $A\mapsto A^{\ast}A$ is a submersion onto the Hermitian half with the unitary orbits as fibres.
 

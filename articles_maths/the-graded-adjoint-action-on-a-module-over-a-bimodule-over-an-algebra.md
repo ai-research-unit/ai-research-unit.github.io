@@ -159,7 +159,7 @@ $$
 
 ### Self-adjointness under the adjoint action
 
-**Proposition.** Let $T$ be homogeneous and let $a$ be homogeneous with $\sigma(a)=a$. Then $T$ is self-adjoint if and only if the graded commutator $[L_a,T]_{\epsilon}$ is skew with respect to the adjoint in the graded sense,
+**Proposition.** Let $T$ be homogeneous and let $a$ be homogeneous with $\sigma(a)=a$. Then $T$ is self-adjoint if and only if the graded commutator $[L_a,T]_{\epsilon}$ is anti-self-adjoint with respect to the adjoint in the graded sense,
 
 $$
 T^{*}=T \implies [L_a,T]_{\epsilon}^{*}=-\epsilon\,[L_a,T]_{\epsilon},

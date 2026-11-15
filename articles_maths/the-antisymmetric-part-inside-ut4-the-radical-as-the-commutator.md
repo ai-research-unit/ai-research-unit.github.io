@@ -4,7 +4,7 @@
 
 **Inside the Borel $\mathfrak{b}=\mathfrak{h}\oplus\mathfrak{n}_+$ the radical of the trace form is $\mathfrak{n}_+$, of dimension $6$, and it is also the derived algebra $[\mathfrak{b},\mathfrak{b}]$; but the antisymmetric matrices inside $\mathfrak{b}$ are only the zero matrix, so the identification is between the radical and the commutator, not between the radical and $\operatorname{Skew}_4$.**
 
-The article computes the restricted form, proves that a skew upper triangular matrix is zero, proves $[\mathfrak{b},\mathfrak{b}]=\mathfrak{n}_+$ and that the radical is $\mathfrak{n}_+$, and then states exactly what the coincidence means: $\mathfrak{n}_+$ is the totally isotropic part of the Borel, the place where the form is alternating, and it is a six-dimensional subspace that is not the antisymmetric half.
+The article computes the restricted form, proves that an antisymmetric upper triangular matrix is zero, proves $[\mathfrak{b},\mathfrak{b}]=\mathfrak{n}_+$ and that the radical is $\mathfrak{n}_+$, and then states exactly what the coincidence means: $\mathfrak{n}_+$ is the totally isotropic part of the Borel, the place where the form is alternating, and it is a six-dimensional subspace that is not the antisymmetric half.
 
 It assumes *The Triangular Decomposition $h\oplus n_+\oplus n_-$ of $M_4(\mathbb{C})$* and *$UT_4$ as the Complement of the Antisymmetric Part*. The case $n=2$ is *The Antisymmetric Part inside $UT_2$: the Radical as the Commutator*; the form itself is *The Trace Form and Its Signature on the Two Halves of $M_4(\mathbb{C})$*; the Killing form of the same algebra is *The Killing Form, Its Radical and the Triangular Case*.
 
@@ -42,9 +42,9 @@ It assumes *The Triangular Decomposition $h\oplus n_+\oplus n_-$ of $M_4(\mathbb
 
 **Proof.** The first is the proposition; the second is its contrapositive, read entry by entry.
 
-**Corollary.** $\operatorname{Skew}_4\oplus\mathfrak{b}=M_4$, and the map sending a skew matrix to its $\mathfrak{b}$-component along $\mathfrak{n}_-$ is injective, its image being the six-dimensional space of strict upper parts.
+**Corollary.** $\operatorname{Skew}_4\oplus\mathfrak{b}=M_4$, and the map sending an antisymmetric matrix to its $\mathfrak{b}$-component along $\mathfrak{n}_-$ is injective, its image being the six-dimensional space of strict upper parts.
 
-**Proof.** The dimensions are $6+10=16$ with zero intersection. A skew matrix has zero diagonal, so its $\mathfrak{b}$-component is its strict upper part, and a skew matrix whose strict upper part vanishes is its own negative transpose with zeros above the diagonal, hence zero.
+**Proof.** The dimensions are $6+10=16$ with zero intersection. An antisymmetric matrix has zero diagonal, so its $\mathfrak{b}$-component is its strict upper part, and an antisymmetric matrix whose strict upper part vanishes is its own negative transpose with zeros above the diagonal, hence zero.
 
 **What this rules out.** The claim "the antisymmetric part inside the Borel is its nilradical" is false as a statement about matrices: the nilradical $\mathfrak{n}_+$ consists of strictly **upper** triangular matrices, none of which is antisymmetric except zero. The two spaces are disjoint, and they even have zero intersection.
 

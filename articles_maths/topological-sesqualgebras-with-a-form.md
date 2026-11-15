@@ -38,7 +38,7 @@ The conventions are those of the sesqualgebra block, the pairing $\varphi(x,y) =
 
 **Proposition (the diagonal).** Let $h$ be Hermitian. Then $h(x,x) = \varsigma(h(x,x))$ for every $x$, so the diagonal takes its values in the fixed ring $R^{\varsigma}$ of the base involution. If $h$ is anti-Hermitian then $h(x,x) = -\varsigma(h(x,x))$, so the diagonal vanishes when $2$ is invertible and $\varsigma = \mathrm{id}$.
 
-*Proof.* $h(x,x) = \varsigma(h(x,x))$ is the Hermitian condition on the pair $(x,x)$, and the skew case is the other condition on the same pair. For the last statement, $h(x,x) = -h(x,x)$ gives $2h(x,x) = 0$.
+*Proof.* $h(x,x) = \varsigma(h(x,x))$ is the Hermitian condition on the pair $(x,x)$, and the anti-Hermitian case is the other condition on the same pair. For the last statement, $h(x,x) = -h(x,x)$ gives $2h(x,x) = 0$.
 
 **Proposition (the radical of a continuous form is closed).** Let $h$ be continuous. Then its radical is a closed submodule of $A$.
 

@@ -56,7 +56,7 @@ $$
 
 In particular $\ell_U$ is self-adjoint when $U$ is self-adjoint and even, and it is never self-adjoint for a nonzero odd $U$.
 
-*Proof.* The family is faithful: $\ell_A(I)=A\alpha(I)=A$, so $\ell_A=\ell_C$ iff $A=C$; the criterion is therefore the equality $\ell_{\alpha(U^*)}=\ell_U$, that is $\alpha(U^*)=U$. If $U$ is self-adjoint and even, $\alpha(U^*)=\alpha(U)=U$; if $U$ is odd and nonzero then $\alpha(U^*)=\alpha(U)^*=-U^*$, and $-U^*=U$ would make $U$ skew-adjoint and odd, contradicting $U^*=-\alpha(U)=\alpha(-U)$, so no nonzero odd $U$ satisfies the criterion.
+*Proof.* The family is faithful: $\ell_A(I)=A\alpha(I)=A$, so $\ell_A=\ell_C$ iff $A=C$; the criterion is therefore the equality $\ell_{\alpha(U^*)}=\ell_U$, that is $\alpha(U^*)=U$. If $U$ is self-adjoint and even, $\alpha(U^*)=\alpha(U)=U$; if $U$ is odd and nonzero then $\alpha(U^*)=\alpha(U)^*=-U^*$, and $-U^*=U$ would make $U$ anti-self-adjoint and odd, contradicting $U^*=-\alpha(U)=\alpha(-U)$, so no nonzero odd $U$ satisfies the criterion.
 
 **Theorem (isometry and unitarity).** The signed left multiplication is an isometry of $S_2(H)$ if and only if $U$ is an isometry, and it is unitary if and only if $U$ is unitary; more precisely
 

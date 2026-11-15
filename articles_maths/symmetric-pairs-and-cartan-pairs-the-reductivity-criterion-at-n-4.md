@@ -18,13 +18,13 @@ $$
 
 **Proposition.** For $\mathfrak{k}=\operatorname{Skew}_4$ and $\mathfrak{p}=\operatorname{Sym}_4$ all three inclusions hold.
 
-**Proof.** Let $K,K'$ be antisymmetric and $S,S'$ symmetric. Then $(KK'-K'K)^{\mathsf T}=K'^{\mathsf T}K^{\mathsf T}-K^{\mathsf T}K'^{\mathsf T}=K'K-KK'$, so the commutator of two skew matrices is skew. Next, $(KS-SK)^{\mathsf T}=S^{\mathsf T}K^{\mathsf T}-K^{\mathsf T}S^{\mathsf T}=-SK+KS$, so the commutator of a skew and a symmetric matrix is symmetric. Finally $(SS'-S'S)^{\mathsf T}=S'S-SS'$, so the commutator of two symmetric matrices is skew.
+**Proof.** Let $K,K'$ be antisymmetric and $S,S'$ symmetric. Then $(KK'-K'K)^{\mathsf T}=K'^{\mathsf T}K^{\mathsf T}-K^{\mathsf T}K'^{\mathsf T}=K'K-KK'$, so the commutator of two antisymmetric matrices is antisymmetric. Next, $(KS-SK)^{\mathsf T}=S^{\mathsf T}K^{\mathsf T}-K^{\mathsf T}S^{\mathsf T}=-SK+KS$, so the commutator of an antisymmetric and a symmetric matrix is symmetric. Finally $(SS'-S'S)^{\mathsf T}=S'S-SS'$, so the commutator of two symmetric matrices is antisymmetric.
 
 **Corollary.** $\mathfrak{so}(4)=\operatorname{Skew}_4$ is a Lie subalgebra of dimension $6$, $\operatorname{Sym}_4$ is a $\mathfrak{so}(4)$-module of dimension $10$, and the bracket of two symmetric matrices lands in $\mathfrak{so}(4)$.
 
 **Proof.** The three inclusions with the dimensions $6$ and $10$.
 
-**The same for the traceless algebra.** With $\mathfrak{sl}_4$ in place of $\mathfrak{gl}_4$ the decomposition is $\mathfrak{so}(4)\oplus\operatorname{Sym}_4^{0}$, of dimensions $6+9=15$, since a skew matrix is automatically traceless.
+**The same for the traceless algebra.** With $\mathfrak{sl}_4$ in place of $\mathfrak{gl}_4$ the decomposition is $\mathfrak{so}(4)\oplus\operatorname{Sym}_4^{0}$, of dimensions $6+9=15$, since an antisymmetric matrix is automatically traceless.
 
 **Proof.** The trace of a commutator is zero, so both bracketed pieces stay traceless; the symmetric part is cut down by the traceless condition, from $10$ to $9$.
 

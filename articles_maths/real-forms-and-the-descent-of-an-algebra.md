@@ -42,7 +42,7 @@ $$
 
 *Proof.* On decomposable elements $\sigma((a\otimes\lambda)(b\otimes\mu)) = \sigma(ab\otimes\lambda\mu) = ab\otimes\bar\lambda\bar\mu = (a\otimes\bar\lambda)(b\otimes\bar\mu) = \sigma(a\otimes\lambda)\sigma(b\otimes\mu)$; additivity and the scalar rule are immediate, and $\sigma^2 = \mathrm{id}$ because $c^2 = \mathrm{id}$. An element $x = \sum a_j\otimes\lambda_j$ is fixed iff $\sum a_j\otimes(\lambda_j - \bar\lambda_j) = 0$; taking $a_j$ linearly independent forces each $\lambda_j = \bar\lambda_j$, so the fixed set is $A\otimes\mathbb{R} = A\otimes1$.
 
-**Corollary.** The conjugation is the semilinear involution of the complexification that has $A$ as its self-adjoint part; the map $A\mapsto(A_{\mathbb{C}},\sigma)$ is a functor from the real algebras to the complex algebras with a conjugation, and the decomposition $A_{\mathbb{C}} = A\oplus iA$ is the decomposition into the self-adjoint and the skew parts.
+**Corollary.** The conjugation is the semilinear involution of the complexification that has $A$ as its self-adjoint part; the map $A\mapsto(A_{\mathbb{C}},\sigma)$ is a functor from the real algebras to the complex algebras with a conjugation, and the decomposition $A_{\mathbb{C}} = A\oplus iA$ is the decomposition into the self-adjoint and the anti-Hermitian parts.
 
 ## Real Forms
 
@@ -109,7 +109,7 @@ The **complexification** $A_{\mathbb{C}} = A\otimes_{\mathbb{R}}\mathbb{C}$ of a
 | $c$ | Conjugation of $\mathbb{C}$ |
 | $\sigma = \mathrm{id}\otimes c$ | Conjugation of the complexification |
 | $A_{\mathbb{C}}^\sigma = A\otimes1\cong A$ | Real part, the fixed algebra |
-| $A_{\mathbb{C}} = A\oplus iA$ | Self-adjoint and skew decomposition |
+| $A_{\mathbb{C}} = A\oplus iA$ | Self-adjoint and anti-Hermitian decomposition |
 | $A\subseteq B$ real form | $A\otimes_{\mathbb{R}}\mathbb{C}\cong B$ |
 | $B^\sigma$ | Real form attached to a conjugation $\sigma$ |
 | $M\mapsto H(M)$, $N\mapsto N\otimes_{\mathbb{R}}\mathbb{C}$ | Descent equivalence |

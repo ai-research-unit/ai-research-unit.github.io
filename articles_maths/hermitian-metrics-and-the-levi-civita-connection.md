@@ -4,7 +4,7 @@
 
 A Riemannian metric makes a smooth manifold into a space on which lengths and angles are defined, and its fundamental theorem produces from it a single connection, the **Levi-Civita connection**, that is compatible with the metric and has no torsion. When the manifold also carries an **involution** of its tangent spaces — an almost complex structure $J$ with $J^2=-\mathrm{id}$ — a metric is **Hermitian** for it when $J$ is an isometry, and the two data interact: the Levi-Civita connection need not preserve $J$, and it does exactly when the metric form is closed, the **Kähler** case.
 
-The article develops the metric and the connection as the involution layer of the group. It recalls the Riemannian metric and the fundamental theorem in the form fixed by the operator group, then develops the Hermitian condition $g(JX,JY)=g(X,Y)$, its equivalent skew-adjointness of $J$, and the **fundamental form** $\omega(X,Y)=g(JX,Y)$. It proves that a metric-compatible connection preserves $J$ exactly when it preserves the fundamental form, characterises the Kähler condition by four equivalent statements — the closedness of $\omega$, the parallelism of $J$ under the Levi-Civita connection, the torsion-freeness of the Chern connection, and the coincidence of the two connections — and identifies the difference between the Levi-Civita and the Chern connections as the tensor $\nabla^{LC}J$.
+The article develops the metric and the connection as the involution layer of the group. It recalls the Riemannian metric and the fundamental theorem in the form fixed by the operator group, then develops the Hermitian condition $g(JX,JY)=g(X,Y)$, its equivalent anti-self-adjointness of $J$, and the **fundamental form** $\omega(X,Y)=g(JX,Y)$. It proves that a metric-compatible connection preserves $J$ exactly when it preserves the fundamental form, characterises the Kähler condition by four equivalent statements — the closedness of $\omega$, the parallelism of $J$ under the Levi-Civita connection, the torsion-freeness of the Chern connection, and the coincidence of the two connections — and identifies the difference between the Levi-Civita and the Chern connections as the tensor $\nabla^{LC}J$.
 
 The article assumes the Riemannian metrics, the musical isomorphisms, the volume form and the Hodge star of the operator group and of Part IV; the metric-compatible connections, the torsion, the Koszul formula and the fundamental theorem of *The Covariant Derivative* in this category, where the theorem is proved; the almost complex structure, the type decomposition, the Nijenhuis tensor and the Hermitian metrics as geometric objects of *Hermitian Geometry and Almost Complex Structures* in Part IV; and the Chern connection of a holomorphic Hermitian bundle of *Hermitian Vector Bundles and the Chern Connection*, the previous entry of this group. The Kähler manifold — the metric, the symplectic form, the curvature and the Hodge theory of the Kähler case — is *Kähler Geometry* and *Symplectic Geometry* in Part IV; the metric geometry of geodesics and curvature is *Riemannian Geometry* there. No physics is invoked.
 
@@ -46,7 +46,7 @@ $$
 
 The triple $(M, J, g)$ is a **Hermitian manifold**; the almost complex structures, their integrability by the Newlander–Nijenhuis theorem and the Nijenhuis tensor are *Hermitian Geometry and Almost Complex Structures* in Part IV, where the geometry of the pair is developed.
 
-**Proposition.** The Hermitian condition is equivalent to the skew-adjointness of $J$ with respect to $g$:
+**Proposition.** The Hermitian condition is equivalent to the anti-self-adjointness of $J$ with respect to $g$:
 
 $$
 \boxed{\;g(JX, Y) = -g(X, JY), \qquad \text{that is,} \qquad J^* = -J \ \text{for } g\;} .
@@ -64,7 +64,7 @@ $$
 \omega(X, Y) = g(JX, Y), \qquad X, Y \in \mathrm{X}(M).
 $$
 
-**Proposition.** The fundamental form is a real $2$-form; it is antisymmetric because $g$ is symmetric and $J$ is $g$-skew: $\omega(Y,X)=g(JY,X)=-g(X,JY)=-g(JX,Y)=-\omega(X,Y)$; it is nondegenerate, because $\omega(X,Y)=0$ for all $Y$ forces $JX=0$ and hence $X=0$; and it is of type $(1,1)$ for the complexified metric, $\omega(JX,JY)=\omega(X,Y)$.
+**Proposition.** The fundamental form is a real $2$-form; it is antisymmetric because $g$ is symmetric and $J$ is $g$-anti-self-adjoint: $\omega(Y,X)=g(JY,X)=-g(X,JY)=-g(JX,Y)=-\omega(X,Y)$; it is nondegenerate, because $\omega(X,Y)=0$ for all $Y$ forces $JX=0$ and hence $X=0$; and it is of type $(1,1)$ for the complexified metric, $\omega(JX,JY)=\omega(X,Y)$.
 
 *Proof.* The antisymmetry and the nondegeneracy are immediate from the definitions and the invertibility of $J$; the type statement is the invariance of $g$ and $J$. A nondegenerate $2$-form is a **symplectic form** when it is closed, and the closedness of $\omega$ is the Kähler condition of the next section; the symplectic form as an object is *Symplectic Geometry* in Part IV.
 
@@ -114,7 +114,7 @@ and when any of them holds, the manifold is a **Kähler manifold**.
 
 ## Summary
 
-A Riemannian metric is a smooth family of inner products; it supplies the musical isomorphisms, the volume form, the Hodge star and the codifferential, and the fundamental theorem produces the unique metric-compatible torsion-free connection, the Levi-Civita connection, determined by the Koszul formula and locally by the Christoffel symbols. A metric is Hermitian for an almost complex structure $J$ when $J$ is an isometry, equivalently when $J$ is $g$-skew-adjoint, and then the fundamental form $\omega(X,Y)=g(JX,Y)$ is a nondegenerate real $2$-form of type $(1,1)$.
+A Riemannian metric is a smooth family of inner products; it supplies the musical isomorphisms, the volume form, the Hodge star and the codifferential, and the fundamental theorem produces the unique metric-compatible torsion-free connection, the Levi-Civita connection, determined by the Koszul formula and locally by the Christoffel symbols. A metric is Hermitian for an almost complex structure $J$ when $J$ is an isometry, equivalently when $J$ is $g$-anti-self-adjoint, and then the fundamental form $\omega(X,Y)=g(JX,Y)$ is a nondegenerate real $2$-form of type $(1,1)$.
 
 For a metric-compatible connection, preserving the fundamental form, preserving the involution $J$ and preserving the type decomposition are one and the same condition, $\nabla J=0$. The Levi-Civita connection satisfies it exactly when the Hermitian manifold is Kähler, and the Kähler condition has the five equivalent forms: $d\omega=0$; $\nabla^{LC}J=0$; $\nabla^{LC}\omega=0$; the Chern connection is torsion-free; the two connections coincide. Outside the Kähler case the Levi-Civita connection is torsion-free but does not preserve $J$, the Chern connection preserves the metric and the holomorphic structure but has torsion, and they differ by a tensor built from $\nabla^{LC}J$.
 

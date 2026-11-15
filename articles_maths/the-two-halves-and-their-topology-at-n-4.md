@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The complex matrix space splits as $\operatorname{Herm}_4\oplus\mathfrak{u}(4)$ into two real sixteen-dimensional halves, and the polar decomposition contracts the first onto the second, so $\mathrm{GL}_4(\mathbb{C})\simeq U(4)$; over the reals the symmetric half has dimension ten and the antisymmetric half six, the singular set of each is a hypersurface, the invertible symmetric matrices have five components indexed by inertia, and the invertible skew matrices have two indexed by the sign of the Pfaffian.**
+**The complex matrix space splits as $\operatorname{Herm}_4\oplus\mathfrak{u}(4)$ into two real sixteen-dimensional halves, and the polar decomposition contracts the first onto the second, so $\mathrm{GL}_4(\mathbb{C})\simeq U(4)$; over the reals the symmetric half has dimension ten and the antisymmetric half six, the singular set of each is a hypersurface, the invertible symmetric matrices have five components indexed by inertia, and the invertible antisymmetric matrices have two indexed by the sign of the Pfaffian.**
 
 The article proves the two decompositions, computes the dimensions, identifies the singular sets as the zero sets of the determinant and of the Pfaffian, counts the components of the invertible halves, identifies the halves with homogeneous spaces of the general linear group, and writes the contraction that reduces the topology of $\mathrm{GL}_4(\mathbb{C})$ to that of $U(4)$.
 
@@ -52,9 +52,9 @@ as real vector spaces, with the projections $\tfrac12(A+A^{\ast})$ and $\tfrac12
 
 **Proof.** The Pfaffian squares to the determinant, and both are nonconstant polynomials.
 
-**Corollary.** A real skew matrix of order four is singular exactly when one of its two angles vanishes, since $\det=\theta_1^{2}\theta_2^{2}$.
+**Corollary.** A real antisymmetric matrix of order four is singular exactly when one of its two angles vanishes, since $\det=\theta_1^{2}\theta_2^{2}$.
 
-**Proof.** The normal form of the real skew matrix.
+**Proof.** The normal form of the real antisymmetric matrix.
 
 ## The Components of the Invertible Halves
 
@@ -68,27 +68,27 @@ as real vector spaces, with the projections $\tfrac12(A+A^{\ast})$ and $\tfrac12
 
 **Theorem.** The invertible real antisymmetric matrices of order four form exactly two components, distinguished by the sign of the Pfaffian.
 
-**Proof.** $\operatorname{Pf}^{2}=\det$ is nonzero, so the Pfaffian is a continuous function into $\mathbb{R}\setminus\{0\}$, which forces at least two components; and a skew matrix with a given sign of the Pfaffian is carried to the standard form by a congruence with positive determinant, so each sign class is connected.
+**Proof.** $\operatorname{Pf}^{2}=\det$ is nonzero, so the Pfaffian is a continuous function into $\mathbb{R}\setminus\{0\}$, which forces at least two components; and an antisymmetric matrix with a given sign of the Pfaffian is carried to the standard form by a congruence with positive determinant, so each sign class is connected.
 
-**Corollary.** The two components of the invertible skew half are the two orientations of the pair of rotations, and the Pfaffian is the obstruction to connecting them.
+**Corollary.** The two components of the invertible anti-Hermitian half are the two orientations of the pair of rotations, and the Pfaffian is the obstruction to connecting them.
 
 **Proof.** The sign of the Pfaffian changes under an orientation-reversing congruence and does not change under an orientation-preserving one.
 
-**The symmetric contrast.** The symmetric half has more components because the inertia has more freedom; the skew half has only two because the spectrum of a real skew matrix is forced into conjugate pairs.
+**The symmetric contrast.** The symmetric half has more components because the inertia has more freedom; the antisymmetric half has only two because the spectrum of a real antisymmetric matrix is forced into conjugate pairs.
 
 **Proof.** The two theorems.
 
 ## The Homogeneous Spaces
 
-**Proposition.** Each inertia class of invertible real symmetric matrices is the homogeneous space $\mathrm{GL}_4(\mathbb{R})/O(p,q)$ of dimension $10$, and the invertible skew matrices form $\mathrm{GL}_4(\mathbb{R})/\mathrm{Sp}_4(\mathbb{R})$ up to the two components, of dimension $6$.
+**Proposition.** Each inertia class of invertible real symmetric matrices is the homogeneous space $\mathrm{GL}_4(\mathbb{R})/O(p,q)$ of dimension $10$, and the invertible antisymmetric matrices form $\mathrm{GL}_4(\mathbb{R})/\mathrm{Sp}_4(\mathbb{R})$ up to the two components, of dimension $6$.
 
-**Proof.** The stabiliser of a fixed symmetric form of inertia $(p,q)$ is the corresponding orthogonal group, of dimension $6$; the stabiliser of a nondegenerate skew form is the symplectic group, of dimension $10$; the orbit-stabiliser theorem with $\dim\mathrm{GL}_4(\mathbb{R})=16$ gives $16-6=10$ and $16-10=6$.
+**Proof.** The stabiliser of a fixed symmetric form of inertia $(p,q)$ is the corresponding orthogonal group, of dimension $6$; the stabiliser of a nondegenerate antisymmetric form is the symplectic group, of dimension $10$; the orbit-stabiliser theorem with $\dim\mathrm{GL}_4(\mathbb{R})=16$ gives $16-6=10$ and $16-10=6$.
 
-**Corollary.** $\dim O(p,q)=6$, $\dim\mathrm{Sp}_4(\mathbb{R})=10$ and $\dim\mathrm{GL}_4(\mathbb{R})=16$, so the symmetric orbit has dimension ten and the skew orbit six.
+**Corollary.** $\dim O(p,q)=6$, $\dim\mathrm{Sp}_4(\mathbb{R})=10$ and $\dim\mathrm{GL}_4(\mathbb{R})=16$, so the symmetric orbit has dimension ten and the antisymmetric orbit six.
 
 **Proof.** The dimensions of the classical groups of order four.
 
-**The complex analogue.** Over $\mathbb{C}$ the invertible symmetric matrices form the single orbit $\mathrm{GL}_4(\mathbb{C})/O(4,\mathbb{C})$ of complex dimension $10$, and the invertible skew matrices the single orbit $\mathrm{GL}_4(\mathbb{C})/\mathrm{Sp}_4(\mathbb{C})$ of complex dimension $6$.
+**The complex analogue.** Over $\mathbb{C}$ the invertible symmetric matrices form the single orbit $\mathrm{GL}_4(\mathbb{C})/O(4,\mathbb{C})$ of complex dimension $10$, and the invertible antisymmetric matrices the single orbit $\mathrm{GL}_4(\mathbb{C})/\mathrm{Sp}_4(\mathbb{C})$ of complex dimension $6$.
 
 **Proof.** Over $\mathbb{C}$ every nondegenerate symmetric form is congruent to the standard one, so there is one orbit; the same orbit-stabiliser count gives the dimensions, with $\dim\mathrm{GL}_4(\mathbb{C})=16$.
 
@@ -126,7 +126,7 @@ as real vector spaces, with the projections $\tfrac12(A+A^{\ast})$ and $\tfrac12
 
 The complex matrix space splits into the Hermitian and the anti-Hermitian halves, each of real dimension sixteen, and the split is the eigenspace decomposition of the adjoint involution. The singular set of each half is a hypersurface, the zero set of the determinant.
 
-The invertible real symmetric matrices have five components indexed by inertia, grouped by the sign of the determinant into three and two, so the sign of the determinant alone does not separate them; the invertible real skew matrices have two components indexed by the sign of the Pfaffian. Each class is a homogeneous space of the general linear group.
+The invertible real symmetric matrices have five components indexed by inertia, grouped by the sign of the determinant into three and two, so the sign of the determinant alone does not separate them; the invertible real antisymmetric matrices have two components indexed by the sign of the Pfaffian. Each class is a homogeneous space of the general linear group.
 
 The polar decomposition contracts the positive definite cone onto a point and leaves the unitary group, so $\mathrm{GL}_4(\mathbb{C})\simeq U(4)$, and over the reals $\mathrm{GL}_4(\mathbb{R})\simeq O(4)$. The dimension count must pair the Hermitian cone of dimension sixteen with $U(4)$, not the real symmetric cone of dimension ten.
 
@@ -137,7 +137,7 @@ The polar decomposition contracts the positive definite cone onto a point and le
 | $\operatorname{Herm}_4$, $\mathfrak{u}(4)$ | the two halves, real dimension $16$ each |
 | $\{\det=0\}$ | the singular set, a hypersurface |
 | $(p,q)$, $p+q=4$ | the inertia of a real symmetric matrix |
-| $\operatorname{Pf}$ | the Pfaffian of a real skew matrix |
+| $\operatorname{Pf}$ | the Pfaffian of a real antisymmetric matrix |
 | $\mathrm{GL}_4/O(p,q)$ | the homogeneous space of an inertia class |
 | $\operatorname{Herm}_4^{++}\times U(4)\cong\mathrm{GL}_4$ | the contraction |
 

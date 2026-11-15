@@ -12,11 +12,11 @@ The article fixes the scalar product $\langle X,Y\rangle=\operatorname{tr}(XY)$,
 
 **Theorem.** The signature is $\bigl(n(n+1)/2,\ n(n-1)/2\bigr)$, that is $p=n(n+1)/2$ positive and $q=n(n-1)/2$ negative directions.
 
-*Proof.* The two halves are orthogonal, since $\operatorname{tr}(SK)=0$ for $S$ symmetric and $K$ skew, because $SK$ and $KS=(SK)^{\mathsf T}$ have the same trace. On $\operatorname{Sym}_n$ the form is positive definite, $\operatorname{tr}(S^{2})=\|S\|_{2}^{2}>0$ for $S\ne0$. On $\operatorname{Skew}_n$ it is negative definite, $\operatorname{tr}(K^{2})=-\|K\|_{2}^{2}<0$. So the signature is the pair of dimensions, measured as $(3,1),(6,3),(10,6),(15,10)$ at $n=2,3,4,5$.
+*Proof.* The two halves are orthogonal, since $\operatorname{tr}(SK)=0$ for $S$ symmetric and $K$ antisymmetric, because $SK$ and $KS=(SK)^{\mathsf T}$ have the same trace. On $\operatorname{Sym}_n$ the form is positive definite, $\operatorname{tr}(S^{2})=\|S\|_{2}^{2}>0$ for $S\ne0$. On $\operatorname{Skew}_n$ it is negative definite, $\operatorname{tr}(K^{2})=-\|K\|_{2}^{2}<0$. So the signature is the pair of dimensions, measured as $(3,1),(6,3),(10,6),(15,10)$ at $n=2,3,4,5$.
 
 **So the algebra is a pseudo-Euclidean space with a preferred orthogonal splitting into a definite positive and a definite negative part.** The splitting is exactly the splitting into the two halves, and it is the only natural one.
 
-**The cone of isotropic vectors is worth naming.** $X$ is isotropic when $\operatorname{tr}(X^{2})=0$. For a symmetric $X$ that happens only at $X=0$, since the form is definite there; for a skew $X$ likewise. So every isotropic vector has both halves nonzero, and the isotropic cone is the union of the lines on which the two quadratic forms cancel.
+**The cone of isotropic vectors is worth naming.** $X$ is isotropic when $\operatorname{tr}(X^{2})=0$. For a symmetric $X$ that happens only at $X=0$, since the form is definite there; for an antisymmetric $X$ likewise. So every isotropic vector has both halves nonzero, and the isotropic cone is the union of the lines on which the two quadratic forms cancel.
 
 **The form is not the Hilbert–Schmidt form.** $\operatorname{tr}(X^{\mathsf T}X)$ is definite and equal to the Euclidean norm; $\operatorname{tr}(X^{2})$ is indefinite and equal to the difference of the norms of the two halves:
 
@@ -28,7 +28,7 @@ $$
 
 **Each half is a linear subspace, hence flat and totally geodesic.** In a pseudo-Euclidean vector space the geodesics are the straight lines, so a linear subspace is totally geodesic, and the induced metric on it is flat.
 
-**The two halves realise the two halves of the signature.** On $\operatorname{Sym}_n$ the form is positive definite of dimension $n(n+1)/2$, on $\operatorname{Skew}_n$ negative definite of dimension $n(n-1)/2$, exactly the two indices. They are not the only definite subspaces of those dimensions: a graph of a symmetric map over the skew half can be positive definite too. What is special about the halves is that they are the unique *orthogonal* pair of definite subspaces covering the whole space.
+**The two halves realise the two halves of the signature.** On $\operatorname{Sym}_n$ the form is positive definite of dimension $n(n+1)/2$, on $\operatorname{Skew}_n$ negative definite of dimension $n(n-1)/2$, exactly the two indices. They are not the only definite subspaces of those dimensions: a graph of a symmetric map over the antisymmetric half can be positive definite too. What is special about the halves is that they are the unique *orthogonal* pair of definite subspaces covering the whole space.
 
 **The intrinsic geometry of $\operatorname{Sym}_n$ is Euclidean.** Its distance is $\|S-S'\|_{2}$, its geodesics are the affine lines $S+tH$, and its isometry group is the semidirect product of the translations and $\mathrm{O}(\operatorname{Sym}_n)$.
 
@@ -98,7 +98,7 @@ The trace form gives $M_n(\mathbb{R})$ the structure of a pseudo-Euclidean space
 | $g_A(H,H')$ | the bi-invariant metric on the group |
 | $R(X,Y)Z$ | the curvature tensor, $-\tfrac14[[X,Y],Z]$ |
 | $K(X,Y)$ | the sectional curvature, $\tfrac14\langle[X,Y],[X,Y]\rangle$ |
-| $\mathfrak{p},\mathfrak{k}$ | the symmetric and skew halves in the Cartan decomposition |
+| $\mathfrak{p},\mathfrak{k}$ | the symmetric and antisymmetric halves in the Cartan decomposition |
 
 ## Further Reading
 

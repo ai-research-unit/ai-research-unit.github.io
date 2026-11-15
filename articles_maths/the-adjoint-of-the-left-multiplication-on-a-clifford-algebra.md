@@ -9,7 +9,7 @@ $$
 \boxed{\;L_a^{*} = L_{\hat a} , \qquad \hat a = \alpha(a^{r})\;} ,
 $$
 
-where $x\mapsto x^{r}$ is the reversion; this is an operator of the same family with the parameter conjugated. The adjoint therefore defines an involution on the parameters, and its consequences are geometric: the **self-adjoint** left multiplications are those with $\hat a=a$, the **orthogonal** ones are the units $a$ with $\hat aa=1$, and the multiplication by a vector is skew-adjoint, $L_u^*=-L_u$. The article collects these consequences and the corresponding statements for the twisted form of *The Signed Adjoint of the Left Multiplication on a Clifford Algebra*.
+where $x\mapsto x^{r}$ is the reversion; this is an operator of the same family with the parameter conjugated. The adjoint therefore defines an involution on the parameters, and its consequences are geometric: the **self-adjoint** left multiplications are those with $\hat a=a$, the **orthogonal** ones are the units $a$ with $\hat aa=1$, and the multiplication by a vector is anti-self-adjoint, $L_u^*=-L_u$. The article collects these consequences and the corresponding statements for the twisted form of *The Signed Adjoint of the Left Multiplication on a Clifford Algebra*.
 
 ## The Adjoint and Its Involution
 
@@ -43,19 +43,19 @@ as *The Signed Adjoint of the Left Multiplication on a Clifford Algebra* records
 
 ### The Quaternions
 
-For $\mathrm{Cl}\cong\mathbb H$ with $e_1^2=e_2^2=-1$, the conjugation is the quaternionic conjugate, and $L_{e_1}^*=L_{-e_1}=-L_{e_1}$: the left multiplication by a pure quaternion unit is skew-adjoint. The orthogonal left multiplications are $L_a$ with $\hat aa=|a|^2=1$, the unit sphere, the group of unit quaternions.
+For $\mathrm{Cl}\cong\mathbb H$ with $e_1^2=e_2^2=-1$, the conjugation is the quaternionic conjugate, and $L_{e_1}^*=L_{-e_1}=-L_{e_1}$: the left multiplication by a pure quaternion unit is anti-self-adjoint. The orthogonal left multiplications are $L_a$ with $\hat aa=|a|^2=1$, the unit sphere, the group of unit quaternions.
 
 ### A Unit Vector
 
-For any vector $u$ with $\mathfrak{Q}(u)\ne0$, $L_u^*=L_{-u}=-L_u$, so the multiplication by a vector is always skew-adjoint, independent of the signature; the same computation is the manifold relation $c(v)^*=-c(v)$ of *The Adjoint of the Clifford Multiplication*.
+For any vector $u$ with $\mathfrak{Q}(u)\ne0$, $L_u^*=L_{-u}=-L_u$, so the multiplication by a vector is always anti-self-adjoint, independent of the signature; the same computation is the manifold relation $c(v)^*=-c(v)$ of *The Adjoint of the Clifford Multiplication*.
 
 ### An Even Element
 
-For $a=e_1e_2$ in the negative-definite plane, $\hat a=(-e_2)(-e_1)=e_2e_1=-e_1e_2=-a$, and $L_a^*=L_{-a}=-L_a$: an even element can be skew-adjoint too. The parity of $a$ does not decide self-adjointness; the involution $\hat{}$ does.
+For $a=e_1e_2$ in the negative-definite plane, $\hat a=(-e_2)(-e_1)=e_2e_1=-e_1e_2=-a$, and $L_a^*=L_{-a}=-L_a$: an even element can be anti-self-adjoint too. The parity of $a$ does not decide self-adjointness; the involution $\hat{}$ does.
 
 ## Summary
 
-For the standard form $\langle x,y\rangle=\operatorname{Sc}(\hat xy)$ the adjoint of the left multiplication is the left multiplication by the **Clifford conjugate**, $L_a^*=L_{\hat a}$ with $\hat a=\alpha(a^{r})$ an anti-automorphism and an involution acting on a vector by $\vec u=-u$. Hence $L_a$ is **self-adjoint** exactly when $\hat a=a$ and **orthogonal** exactly when $\hat aa=1$, the latter defining the group of orthogonal left multiplications inside the units; the multiplication by a vector is always **skew-adjoint**, $L_u^*=-L_u$. For the twisted form the adjoint is the **signed** left multiplication $(L_a)^{*\alpha}=L_{\hat a}\alpha$, and a left multiplication is self-adjoint for the twisted form only for central scalars in the central-simple case. The operator is *The Left and Right Multiplication Operators on a Clifford Algebra*, the form is *The Signed Adjoint of the Left Multiplication on a Clifford Algebra*, the mirror article is *The Adjoint of the Right Multiplication*, and the manifold case is *The Adjoint of the Clifford Multiplication*.
+For the standard form $\langle x,y\rangle=\operatorname{Sc}(\hat xy)$ the adjoint of the left multiplication is the left multiplication by the **Clifford conjugate**, $L_a^*=L_{\hat a}$ with $\hat a=\alpha(a^{r})$ an anti-automorphism and an involution acting on a vector by $\vec u=-u$. Hence $L_a$ is **self-adjoint** exactly when $\hat a=a$ and **orthogonal** exactly when $\hat aa=1$, the latter defining the group of orthogonal left multiplications inside the units; the multiplication by a vector is always **anti-self-adjoint**, $L_u^*=-L_u$. For the twisted form the adjoint is the **signed** left multiplication $(L_a)^{*\alpha}=L_{\hat a}\alpha$, and a left multiplication is self-adjoint for the twisted form only for central scalars in the central-simple case. The operator is *The Left and Right Multiplication Operators on a Clifford Algebra*, the form is *The Signed Adjoint of the Left Multiplication on a Clifford Algebra*, the mirror article is *The Adjoint of the Right Multiplication*, and the manifold case is *The Adjoint of the Clifford Multiplication*.
 
 ## Summary of Notation
 
@@ -79,6 +79,6 @@ For the standard form $\langle x,y\rangle=\operatorname{Sc}(\hat xy)$ the adjoin
   Mathematics 50 (Cambridge University Press, 1995), for the unitary group of an algebra with involution
   and the orthogonal left multiplications.
 - H. Blaine Lawson and Marie-Louise Michelsohn, *Spin Geometry* (Princeton University Press, 1989), for
-  the skew-adjointness of the Clifford multiplication, the manifold form of $L_u^*=-L_u$.
+  the anti-self-adjointness of the Clifford multiplication, the manifold form of $L_u^*=-L_u$.
 - Claude Chevalley, *The Algebraic Theory of Spinors and Clifford Algebras*, Collected Works vol. 2
   (Springer, 1997), for the conjugation, the norm and the group of units preserving it.

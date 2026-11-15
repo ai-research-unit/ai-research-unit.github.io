@@ -146,9 +146,9 @@ $$
 
 **Proof.** The first identity is the cyclic invariance of the trace: $\operatorname{tr}(gAg^{-1}gBg^{-1})=\operatorname{tr}(gABg^{-1})=\operatorname{tr}(AB)$. For the second, $\langle [A,B],C\rangle=\operatorname{tr}(ABC-BAC)$ and $\langle B,[A,C]\rangle=\operatorname{tr}(BAC-BCA)$; the sum is $\operatorname{tr}(ABC-BCA)=0$ by cyclicity.
 
-**Corollary.** The adjoint operator $\operatorname{ad}_A$ is skew for the trace pairing: $\langle\operatorname{ad}_A B,C\rangle=-\langle B,\operatorname{ad}_A C\rangle$. The trace form is the invariant bilinear form of the Lie algebra $\mathfrak{gl}_5$.
+**Corollary.** The adjoint operator $\operatorname{ad}_A$ is anti-self-adjoint for the trace pairing: $\langle\operatorname{ad}_A B,C\rangle=-\langle B,\operatorname{ad}_A C\rangle$. The trace form is the invariant bilinear form of the Lie algebra $\mathfrak{gl}_5$.
 
-**Proof.** The second identity is exactly the skew-adjointness.
+**Proof.** The second identity is exactly the anti-self-adjointness.
 
 **Remark.** **The trace pairing is indefinite.** It is a complex bilinear form, not a Hermitian form; $\langle A,A\rangle=\operatorname{tr}(A^2)$ can be zero for a nonzero nilpotent $A$. The positive definite form is $\operatorname{tr}(A^*B)$, which uses the conjugate transpose and is treated in *The Involution and the Hermitian Structure of $M_5(\mathbb{C})$*. The trace pairing is the algebraic pairing of the Frobenius algebra; the definite form is the metric of the Hilbert space.
 

@@ -90,7 +90,7 @@ $$
 
 ### The Metric of the Involution
 
-**Definition.** A **Hermitian structure** on an almost complex manifold $(M,J)$ is a Riemannian metric $g$ with $g(JX,JY)=g(X,Y)$; the triple $(M,J,g)$ is a **Hermitian manifold**. Equivalently, $J$ is $g$-skew, $g(JX,Y)=-g(X,JY)$, and the **fundamental form** is $\omega(X,Y)=g(JX,Y)$.
+**Definition.** A **Hermitian structure** on an almost complex manifold $(M,J)$ is a Riemannian metric $g$ with $g(JX,JY)=g(X,Y)$; the triple $(M,J,g)$ is a **Hermitian manifold**. Equivalently, $J$ is $g$-anti-self-adjoint, $g(JX,Y)=-g(X,JY)$, and the **fundamental form** is $\omega(X,Y)=g(JX,Y)$.
 
 **Proposition.** The Hermitian structure is the pair of the involution $J$ with the invariant metric; the metric is the fixed point of the involution $g\mapsto J^*g$ acting on the Riemannian metrics, and the average $\tfrac12(g+J^*g)$ of any metric is the invariant metric in its conformal or linear class. The fundamental form is a real nondegenerate $(1,1)$-form, and it is closed exactly when the Hermitian manifold is Kähler; the type of $\omega$, the closedness condition and the comparison of the Chern and Levi-Civita connections are those of *Hermitian Metrics and the Levi-Civita Connection*.
 

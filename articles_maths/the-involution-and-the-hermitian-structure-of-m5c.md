@@ -78,11 +78,11 @@ M_5(\mathbb{C})=\mathfrak{u}(5)\oplus i\mathfrak{u}(5),
 A=\underbrace{\tfrac12(A-A^*)}_{\text{anti-Hermitian}}+\underbrace{\tfrac12(A+A^*)}_{\text{Hermitian}} .
 $$
 
-**Proof.** The two projections are real-linear, idempotent and sum to the identity; the first is anti-Hermitian and the second Hermitian; their intersection is zero because a matrix both Hermitian and anti-Hermitian satisfies $A=-A$. A anti-Hermitian matrix has purely imaginary diagonal entries (five real parameters) and arbitrary complex entries above the diagonal (ten complex $=20$ real), total $25$; the Hermitian matrices have real diagonal entries and arbitrary complex entries above the diagonal, also $25$.
+**Proof.** The two projections are real-linear, idempotent and sum to the identity; the first is anti-Hermitian and the second Hermitian; their intersection is zero because a matrix both Hermitian and anti-Hermitian satisfies $A=-A$. An anti-Hermitian matrix has purely imaginary diagonal entries (five real parameters) and arbitrary complex entries above the diagonal (ten complex $=20$ real), total $25$; the Hermitian matrices have real diagonal entries and arbitrary complex entries above the diagonal, also $25$.
 
 **Corollary.** The real dimension of $\mathfrak{u}(5)$ is $25$, and the real dimension of the traceless subspace $\mathfrak{su}(5)$ is $24$.
 
-**Proof.** The trace of a anti-Hermitian matrix is purely imaginary; the condition $\operatorname{tr}X=0$ is one real linear equation on the $25$-dimensional space.
+**Proof.** The trace of an anti-Hermitian matrix is purely imaginary; the condition $\operatorname{tr}X=0$ is one real linear equation on the $25$-dimensional space.
 
 ### The Real Form
 
@@ -253,7 +253,7 @@ $$
 
 **Proof.** The compactness is the closed boundedness of $U(5)$; the real form is the anti-Hermitian subspace. The surjectivity of the exponential is the standard theorem for compact connected Lie groups: every $*$-unitary matrix is diagonalizable by a $*$-unitary matrix, $U=VDV^*$ with $D=\operatorname{diag}(e^{i\mathrm{J}_1},\dots,e^{i\mathrm{J}_5})$, and $U=e^{iH}$ with $H=V\operatorname{diag}(\mathrm{J}_1,\dots,\mathrm{J}_5)V^*\in\mathfrak{u}(5)$.
 
-**Corollary.** Every $*$-unitary matrix is the exponential of a anti-Hermitian matrix, and every special $*$-unitary matrix is the exponential of a traceless anti-Hermitian matrix.
+**Corollary.** Every $*$-unitary matrix is the exponential of an anti-Hermitian matrix, and every special $*$-unitary matrix is the exponential of a traceless anti-Hermitian matrix.
 
 **Proof.** The diagonal angles can be chosen with sum zero for determinant one; the traceless condition is the sum of the angles.
 
@@ -340,7 +340,7 @@ The Frobenius form is the Hilbert space structure on $M_5\cong\mathbb{C}^{25}\co
 
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge University Press, second edition, 2013), for the conjugate transpose, the Hermitian matrices and the $*$-unitary group.
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions* (American Mathematical Society, 1998), for the involutions of a central simple algebra and the $*$-unitary groups.
-- Brian C. Hall, *Lie Groups, Lie Algebras, and Representations* (Springer, second edition, 2015), for the compact real form $\mathfrak{u}(5)$, the exponential of a anti-Hermitian matrix and the $*$-unitary group.
+- Brian C. Hall, *Lie Groups, Lie Algebras, and Representations* (Springer, second edition, 2015), for the compact real form $\mathfrak{u}(5)$, the exponential of an anti-Hermitian matrix and the $*$-unitary group.
 - [The Matrix Algebra $M_5(\mathbb{C})$](the-matrix-algebra-m5c.html), for the algebra, the conjugate transpose and the real form.
 - [The Element, the Coordinates and the Trace of $M_5(\mathbb{C})$](the-element-the-coordinates-and-the-trace-of-m5c.html), for the trace, the trace pairing and the Jordan decomposition.
 - [The Forms, the Norms and the Singular Set of $M_5(\mathbb{C})$](the-forms-the-norms-and-the-singular-set-of-m5c.html), for the determinant and the singular set.

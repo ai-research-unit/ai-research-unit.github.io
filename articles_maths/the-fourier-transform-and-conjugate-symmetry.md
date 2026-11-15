@@ -119,12 +119,12 @@ $$
 $$
 \widehat{(Hf)}(\zeta)=-i\operatorname{sgn}(\zeta)\,(\mathcal F f)(\zeta) ,
 $$
-and it is skew-adjoint and involutive in the sense $H^2=-\mathrm{id}$; it commutes with the translations and
+and it is anti-self-adjoint and involutive in the sense $H^2=-\mathrm{id}$; it commutes with the translations and
 with the dilations.
 
 **Proof.** The Fourier transform of the principal value of $1/x$ is $-i\pi\operatorname{sgn}(\zeta)$ and the
 conjugate Poisson kernel multiplies this by $\exp(-2\pi y\lvert\zeta\rvert)$, so the multiplier at $y=0$ is
-$-i\operatorname{sgn}(\zeta)$, which is bounded; the skew-adjointness is that of a multiplication by a purely
+$-i\operatorname{sgn}(\zeta)$, which is bounded; the anti-self-adjointness is that of a multiplication by a purely
 imaginary odd function, $H^\dagger=-H$, and $H^2$ has multiplier
 $(-i\operatorname{sgn})^2=-1$. The commutation with the translations and the dilations is the corresponding
 statement for the multiplier, from the convolution and dilation identities of the Fourier article.
@@ -202,7 +202,7 @@ $\widehat{\bar f}(\zeta)=\overline{(\mathcal F f)(-\zeta)}$, so that a function 
 the conjugate symmetry $(\mathcal F f)(-\zeta)=\overline{(\mathcal F f)(\zeta)}$; for a real function the even part has the real
 part of the spectrum as its transform and the odd part $i$ times the imaginary part, and a real even function
 has a real even transform. The conjugate function of a real function on the line is the Hilbert transform,
-with multiplier $-i\operatorname{sgn}(\zeta)$, skew-adjoint and involutive with square $-\mathrm{id}$; the
+with multiplier $-i\operatorname{sgn}(\zeta)$, anti-self-adjoint and involutive with square $-\mathrm{id}$; the
 analytic representation $f+iHf$ has spectrum confined to the positive frequencies, which is the sharpest form of the
 redundancy of the conjugate-symmetric spectrum, and its analytic theory is that of the Hardy space and the
 Plemelj formulae. On the convolution algebra the Fourier transform is a star-isomorphism carrying the

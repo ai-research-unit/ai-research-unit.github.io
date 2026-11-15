@@ -156,7 +156,7 @@ $$
 
 using $\nabla_X(\alpha(Y)) = (\nabla_X\alpha)(Y) + \alpha(\nabla_XY)$ for the metric-compatible pairing between a form and a field; the two middle terms cancel and leave $\alpha(\nabla_YX)$. The tensor statement follows by applying the same computation to each slot and using the Leibniz rule.
 
-**Remark.** A vector field with $\mathcal{L}_Xg = 0$ for a Riemannian metric $g$ is a **Killing field**, and the identity above shows that this is the same as $\nabla X$ being skew-adjoint, equivalently $\nabla_YX$ orthogonal to $Y$ for all $Y$; the Killing fields, the isometries they generate and the geometry of the symmetry orbits are Part IV's, and the operator content is the identity displayed here. A vector field with $\mathcal{L}_X\omega = 0$ for a closed $2$-form $\omega$ is a symmetry of that form, and the whole family of such symmetry operators is the Hamiltonian machinery of *Lagrangian and Hamiltonian Systems*, later in this Part.
+**Remark.** A vector field with $\mathcal{L}_Xg = 0$ for a Riemannian metric $g$ is a **Killing field**, and the identity above shows that this is the same as $\nabla X$ being anti-self-adjoint, equivalently $\nabla_YX$ orthogonal to $Y$ for all $Y$; the Killing fields, the isometries they generate and the geometry of the symmetry orbits are Part IV's, and the operator content is the identity displayed here. A vector field with $\mathcal{L}_X\omega = 0$ for a closed $2$-form $\omega$ is a symmetry of that form, and the whole family of such symmetry operators is the Hamiltonian machinery of *Lagrangian and Hamiltonian Systems*, later in this Part.
 
 ## Summary
 

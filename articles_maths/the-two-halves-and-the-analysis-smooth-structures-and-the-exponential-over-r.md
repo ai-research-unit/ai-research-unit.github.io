@@ -40,9 +40,9 @@ $$
 d(\exp)_{S}(H)=e^{S}\sum_{k\ge0}\frac{(-1)^{k}}{(k+1)!}\operatorname{ad}_S^{k}(H),\qquad H\in\operatorname{Sym}_n,
 $$
 
-and the result is symmetric: for $S$ and $H$ both symmetric the commutator $[S,H]$ is skew, so $\operatorname{ad}_S$ exchanges the two halves, and the $k$-th term is symmetric for $k$ even and skew for $k$ odd, which is exactly the pairing with the alternating coefficients.
+and the result is symmetric: for $S$ and $H$ both symmetric the commutator $[S,H]$ is antisymmetric, so $\operatorname{ad}_S$ exchanges the two halves, and the $k$-th term is symmetric for $k$ even and anti-self-adjoint for $k$ odd, which is exactly the pairing with the alternating coefficients.
 
-**On the antisymmetric half the derivative is the same formula with a skew direction, and the result is skew.** The two halves are therefore preserved by the derivative, as they must be, since $\exp$ maps each half into a subset of the corresponding symmetric or orthogonal set.
+**On the antisymmetric half the derivative is the same formula with an antisymmetric direction, and the result is antisymmetric.** The two halves are therefore preserved by the derivative, as they must be, since $\exp$ maps each half into a subset of the corresponding symmetric or orthogonal set.
 
 **The derivative is invertible on each half at every point.** For the symmetric half this follows from the global bijectivity of $\exp$; for the antisymmetric half it follows from the covering property, since a local diffeomorphism has invertible derivative.
 
@@ -74,11 +74,11 @@ with a largest entry difference of $0.7628$. The reason is that $SK-KS=\begin{pm
 
 **Theorem.** $\exp:\operatorname{Skew}_n\to\mathrm{SO}(n)$ is surjective, a local diffeomorphism everywhere, and not injective.
 
-*Proof.* Surjective: by the spectral theorem for skew matrices, every rotation is a direct sum of rotations in orthogonal planes, and each planar rotation is $e^{\theta J_2}$; assembling the blocks gives $K\in\operatorname{Skew}_n$ with $e^{K}=Q$. Local diffeomorphism: the derivative is invertible at every point, and the map is equivariant under conjugation so it suffices to check at $0$. Not injective: at $n=2$ the matrix $2\pi J$ satisfies $e^{2\pi J}=\mathrm{I}$, and more generally $\exp$ is $2\pi$-periodic in each angle.
+*Proof.* Surjective: by the spectral theorem for antisymmetric matrices, every rotation is a direct sum of rotations in orthogonal planes, and each planar rotation is $e^{\theta J_2}$; assembling the blocks gives $K\in\operatorname{Skew}_n$ with $e^{K}=Q$. Local diffeomorphism: the derivative is invertible at every point, and the map is equivariant under conjugation so it suffices to check at $0$. Not injective: at $n=2$ the matrix $2\pi J$ satisfies $e^{2\pi J}=\mathrm{I}$, and more generally $\exp$ is $2\pi$-periodic in each angle.
 
-**The failure of injectivity is exactly the periodicity of the angles.** The eigenvalues of a skew matrix are $i\theta_1,-i\theta_1,\dots$ and the exponential depends on the angles modulo $2\pi$. So $\exp$ is a covering map onto its image in a neighbourhood of each point, and globally it is a fibration with fibres consisting of the angle shifts by $2\pi\mathbb{Z}$.
+**The failure of injectivity is exactly the periodicity of the angles.** The eigenvalues of an antisymmetric matrix are $i\theta_1,-i\theta_1,\dots$ and the exponential depends on the angles modulo $2\pi$. So $\exp$ is a covering map onto its image in a neighbourhood of each point, and globally it is a fibration with fibres consisting of the angle shifts by $2\pi\mathbb{Z}$.
 
-**The image is exactly $\mathrm{SO}(n)$ and not a proper subset.** This is where the antisymmetric half differs from a general subspace: the exponential of a skew matrix is always orthogonal with determinant one, and conversely every such matrix has a skew logarithm. So the two halves both have the exponential as a surjection onto their natural targets, and the difference is injectivity.
+**The image is exactly $\mathrm{SO}(n)$ and not a proper subset.** This is where the antisymmetric half differs from a general subspace: the exponential of an antisymmetric matrix is always orthogonal with determinant one, and conversely every such matrix has an antisymmetric logarithm. So the two halves both have the exponential as a surjection onto their natural targets, and the difference is injectivity.
 
 **Consequence: the half is a covering space of the group, and the two are not diffeomorphic.** $\operatorname{Skew}_n$ is contractible and $\mathrm{SO}(n)$ is not, so no diffeomorphism can exist; the exponential is a surjective local diffeomorphism between spaces of different homotopy type.
 
@@ -102,15 +102,15 @@ $$
 
 and the powers mix $S$ and $K$ through their commutator. So the Taylor expansion of $f$ is not a sum of a function of $S$ and a function of $K$; the mixing is exactly the noncommutativity.
 
-**The trace kills the cross terms at first order.** $\operatorname{tr}(SK)=0$ for $S$ symmetric and $K$ skew, so the first-order term of $\operatorname{tr}f(X)$ is $f'(0)\operatorname{tr}S$, and the skew part enters only at second order and through $\operatorname{tr}(K^{2})$, which is negative.
+**The trace kills the cross terms at first order.** $\operatorname{tr}(SK)=0$ for $S$ symmetric and $K$ antisymmetric, so the first-order term of $\operatorname{tr}f(X)$ is $f'(0)\operatorname{tr}S$, and the antisymmetric part enters only at second order and through $\operatorname{tr}(K^{2})$, which is negative.
 
-**The determinant is blind to the skew part's sign and sees only its square.** $\det e^{S+K}=e^{\operatorname{tr}S}$, since the trace of $K$ vanishes; so the determinant of the exponential depends only on the symmetric part. This is the cleanest analytic statement of the split: the volume change is the symmetric part, and the rotation is the skew part.
+**The determinant is blind to the antisymmetric part's sign and sees only its square.** $\det e^{S+K}=e^{\operatorname{tr}S}$, since the trace of $K$ vanishes; so the determinant of the exponential depends only on the symmetric part. This is the cleanest analytic statement of the split: the volume change is the symmetric part, and the rotation is the antisymmetric part.
 
 **The splitting is the infinitesimal form of the polar decomposition.** Every invertible matrix is a rotation times a stretch, and the differential of that statement at the identity is the splitting of the algebra into the two halves.
 
 ## Summary
 
-$\operatorname{Sym}_n$ and $\operatorname{Skew}_n$ are embedded submanifolds of dimensions $n(n+1)/2$ and $n(n-1)/2$, the images of the smooth complementary projections $\pi_{\pm}$, and they split the tangent bundle of the algebra. The exponential is an analytic diffeomorphism from $\operatorname{Sym}_n$ onto the positive definite cone and a surjective local diffeomorphism from $\operatorname{Skew}_n$ onto $\mathrm{SO}(n)$ that is not injective. The two exponentials do not multiply to the exponential of the sum, with a largest entry difference of $0.7628$ in the explicit example at $n=2$. The involution $\Theta(A)=(A^{\mathsf T})^{-1}$ on the group has derivative $X\mapsto-X^{\mathsf T}$ at the identity, which is why the group fixed set is the skew half while the algebra fixed set is the symmetric half.
+$\operatorname{Sym}_n$ and $\operatorname{Skew}_n$ are embedded submanifolds of dimensions $n(n+1)/2$ and $n(n-1)/2$, the images of the smooth complementary projections $\pi_{\pm}$, and they split the tangent bundle of the algebra. The exponential is an analytic diffeomorphism from $\operatorname{Sym}_n$ onto the positive definite cone and a surjective local diffeomorphism from $\operatorname{Skew}_n$ onto $\mathrm{SO}(n)$ that is not injective. The two exponentials do not multiply to the exponential of the sum, with a largest entry difference of $0.7628$ in the explicit example at $n=2$. The involution $\Theta(A)=(A^{\mathsf T})^{-1}$ on the group has derivative $X\mapsto-X^{\mathsf T}$ at the identity, which is why the group fixed set is the anti-Hermitian half while the algebra fixed set is the symmetric half.
 
 ## Summary of Notation
 

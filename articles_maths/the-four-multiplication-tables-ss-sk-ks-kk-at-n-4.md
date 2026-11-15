@@ -27,9 +27,9 @@ each sending a pair to its ordinary product $AB$.
 | $KS$ | $\tfrac12[K,S]$ | $\tfrac12\{K,S\}$ |
 | $KK$ | $\tfrac12\{K,K'\}$ | $\tfrac12[K,K']$ |
 
-**Proof.** The parity rule of the product article: for two symmetric or two antisymmetric factors the anticommutator is symmetric and the commutator skew, while for a symmetric and an antisymmetric factor the anticommutator is skew and the commutator symmetric.
+**Proof.** The parity rule of the product article: for two symmetric or two antisymmetric factors the anticommutator is symmetric and the commutator antisymmetric, while for a symmetric and an antisymmetric factor the anticommutator is antisymmetric and the commutator symmetric.
 
-**Corollary.** The two diagonal tables have their symmetric parts symmetric and their skew parts skew, and the two mixed tables have the two roles interchanged.
+**Corollary.** The two diagonal tables have their symmetric parts symmetric and their antisymmetric parts antisymmetric, and the two mixed tables have the two roles interchanged.
 
 **Proof.** Read the table row by row.
 

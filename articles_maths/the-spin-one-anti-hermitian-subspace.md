@@ -101,7 +101,7 @@ $$
 \varrho\bigl(A(\vec u_{\mathrm r})\bigr)(\vec v)=\bigl[\tfrac12\vec u_{\mathrm r},\vec v\bigr].
 $$
 
-**The identity that removes the computation.** The quaternion product rule is $\vec u\vec v=-\vec u\cdot\vec v+\vec u\times\vec v$, and the dot product is symmetric while the cross product is skew, so the difference of the two orders is twice the cross product:
+**The identity that removes the computation.** The quaternion product rule is $\vec u\vec v=-\vec u\cdot\vec v+\vec u\times\vec v$, and the dot product is symmetric while the cross product is antisymmetric, so the difference of the two orders is twice the cross product:
 
 $$
 \bigl[\tfrac12\vec u_{\mathrm r},\vec v\bigr]=\vec u_{\mathrm r}\times\vec v .

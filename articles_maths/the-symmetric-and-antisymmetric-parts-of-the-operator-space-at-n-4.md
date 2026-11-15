@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The operator space $\operatorname{End}(M_4(\mathbb{C}))$ has complex dimension $256$ and carries two commuting involutions, the plain transpose and the Hilbert–Schmidt adjoint; the four simultaneous eigenspaces have real dimensions $136$, $136$, $120$ and $120$, the model operator $X\mapsto AXB$ has adjoint $Y\mapsto A^{\ast}YB^{\ast}$, and the commutator $T\mapsto[A,T]$ is always skew for the trace pairing.**
+**The operator space $\operatorname{End}(M_4(\mathbb{C}))$ has complex dimension $256$ and carries two commuting involutions, the plain transpose and the Hilbert–Schmidt adjoint; the four simultaneous eigenspaces have real dimensions $136$, $136$, $120$ and $120$, the model operator $X\mapsto AXB$ has adjoint $Y\mapsto A^{\ast}YB^{\ast}$, and the commutator $T\mapsto[A,T]$ is always anti-self-adjoint for the trace pairing.**
 
 The article sets up the two involutions, proves that they commute, computes the four eigenspaces and their real dimensions, treats the model operator and its adjoint as an example that mixes the two structures, proves the skewness of the commutator, and separates the two scales: the symmetric and antisymmetric parts of the operator space are about operators of dimension $256$, while the two halves of the algebra are about elements of dimension $16$.
 
@@ -36,15 +36,15 @@ $$
 $$
 and they sum to $512$.
 
-**Proof.** The $\sigma=1$ eigenspace is the symmetric $16\times16$ matrices, of complex dimension $136$; inside it the condition $\tau=1$ is the reality of the entries, which halves nothing but fixes the real dimension at $136$, and $\tau=-1$ is the purely imaginary part, also of real dimension $136$. The $\sigma=-1$ eigenspace is the skew matrices, of complex dimension $120$, and again the two reality conditions give real dimensions $120$ and $120$.
+**Proof.** The $\sigma=1$ eigenspace is the symmetric $16\times16$ matrices, of complex dimension $136$; inside it the condition $\tau=1$ is the reality of the entries, which halves nothing but fixes the real dimension at $136$, and $\tau=-1$ is the purely imaginary part, also of real dimension $136$. The $\sigma=-1$ eigenspace is the antisymmetric matrices, of complex dimension $120$, and again the two reality conditions give real dimensions $120$ and $120$.
 
-**Corollary.** The two complex-linear halves are of complex dimensions $136$ and $120$, and the four real halves are the symmetric-real, symmetric-imaginary, skew-imaginary and skew-real operators.
+**Corollary.** The two complex-linear halves are of complex dimensions $136$ and $120$, and the four real halves are the symmetric-real, symmetric-imaginary, antisymmetric-imaginary and antisymmetric-real operators.
 
 **Proof.** The classification by the pair of signs.
 
 **Corollary.** $136=\tfrac{16\cdot17}{2}$ and $120=\tfrac{16\cdot15}{2}$, so the two linear halves are the symmetric and antisymmetric parts of the operator space in the ordinary sense.
 
-**Proof.** The dimension of the symmetric and of the skew square matrices of order sixteen.
+**Proof.** The dimension of the symmetric and of the antisymmetric square matrices of order sixteen.
 
 **The analogy with the algebra.** The element space has dimensions $10$ and $6$, the operator space $136$ and $120$, and the ratio is the passage from $n=4$ to $n=16$.
 
@@ -70,7 +70,7 @@ and they sum to $512$.
 
 **Proof.** $AT-\mathrm I\,T = AT - TA$.
 
-**Corollary.** Its plain adjoint is $\Phi_{\mathrm I,A}-\Phi_{A,\mathrm I}=-T\mapsto[A,T]$, so the commutator operator is plain skew-adjoint.
+**Corollary.** Its plain adjoint is $\Phi_{\mathrm I,A}-\Phi_{A,\mathrm I}=-T\mapsto[A,T]$, so the commutator operator is plain anti-self-adjoint.
 
 **Proof.** The adjoint of a difference is the difference of the adjoints.
 
@@ -80,18 +80,18 @@ and they sum to $512$.
 
 ## The Commutator
 
-**Theorem.** For every $A$ the operator $\operatorname{ad}_A:T\mapsto[A,T]$ is a derivation of the algebra, and it is skew for the trace pairing:
+**Theorem.** For every $A$ the operator $\operatorname{ad}_A:T\mapsto[A,T]$ is a derivation of the algebra, and it is anti-self-adjoint for the trace pairing:
 $$
 \beta(\operatorname{ad}_A T,U)+\beta(T,\operatorname{ad}_A U)=0 .
 $$
 
 **Proof.** The derivation property is the Jacobi identity for the associator; for the skewness, $\operatorname{tr}([A,T]U)+\operatorname{tr}(T[A,U])=\operatorname{tr}(ATU-TAU+TAU-TUA)=\operatorname{tr}(ATU)-\operatorname{tr}(TUA)=0$ by cyclicity.
 
-**Corollary.** The derivation is skew for the Hilbert–Schmidt pairing exactly when $A$ is anti-Hermitian, since $\langle[A,T],U\rangle+\langle T,[A,U]\rangle=\operatorname{tr}(T^{\ast}[A^{\ast},U])$ up to a commutator.
+**Corollary.** The derivation is anti-self-adjoint for the Hilbert–Schmidt pairing exactly when $A$ is anti-Hermitian, since $\langle[A,T],U\rangle+\langle T,[A,U]\rangle=\operatorname{tr}(T^{\ast}[A^{\ast},U])$ up to a commutator.
 
 **Proof.** The second computation with $A^{\ast}$ in place of $A$, and the vanishing of the mixed term exactly when $A^{\ast}=-A$.
 
-**Corollary.** The two skewness statements differ by the involution, not by the derivation, so the same operator is skew for one pairing and not for the other.
+**Corollary.** The two skewness statements differ by the involution, not by the derivation, so the same operator is anti-self-adjoint for one pairing and not for the other.
 
 **Proof.** The two computations.
 
@@ -129,7 +129,7 @@ $$
 
 The operator space has complex dimension $256$ and carries two commuting involutions, the plain transpose and the Hilbert–Schmidt adjoint. The four simultaneous eigenspaces have real dimensions $136$, $136$, $120$ and $120$, and they sum to the real dimension $512$; the two complex-linear halves have dimensions $136$ and $120$, the symmetric and antisymmetric parts of a $16\times16$ matrix space.
 
-The model operator $X\mapsto AXB$ has plain adjoint $X\mapsto BXA$ and Hilbert–Schmidt adjoint $X\mapsto A^{\ast}XB^{\ast}$, and the commutator $T\mapsto[A,T]$ is a difference of two model operators. The commutator is always skew for the trace pairing and is skew for the Hilbert–Schmidt pairing exactly when $A$ is anti-Hermitian.
+The model operator $X\mapsto AXB$ has plain adjoint $X\mapsto BXA$ and Hilbert–Schmidt adjoint $X\mapsto A^{\ast}XB^{\ast}$, and the commutator $T\mapsto[A,T]$ is a difference of two model operators. The commutator is always anti-self-adjoint for the trace pairing and is anti-self-adjoint for the Hilbert–Schmidt pairing exactly when $A$ is anti-Hermitian.
 
 The two scales must be kept apart: the halves of the algebra are a ten and a six inside a sixteen, the halves of the operator space a $136$ and a $120$ inside a $256$, and the left regular representation does not carry one to the other in the naive way.
 

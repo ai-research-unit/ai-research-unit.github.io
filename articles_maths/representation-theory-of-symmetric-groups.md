@@ -104,7 +104,7 @@ with $K_{\mu\lambda}$ the Kostka number, the number of semistandard tableaux of 
 
 ### The Murnaghan–Nakayama Rule
 
-**Definition.** A **rim hook** (or border strip) of a Young diagram $\lambda$ is a connected skew shape $\zeta = \lambda/\mu$ containing no $2\times2$ block; its **height** $\operatorname{ht}(\zeta)$ is one less than the number of rows it occupies, and its sign is $(-1)^{\operatorname{ht}(\zeta)}$.
+**Definition.** A **rim hook** (or border strip) of a Young diagram $\lambda$ is a connected anti-Hermitian shape $\zeta = \lambda/\mu$ containing no $2\times2$ block; its **height** $\operatorname{ht}(\zeta)$ is one less than the number of rows it occupies, and its sign is $(-1)^{\operatorname{ht}(\zeta)}$.
 
 **Theorem (Murnaghan–Nakayama).** Let $\lambda \vdash n$ and let $\mu = (\mu_1,\ldots,\mu_k)$ be a partition. Then
 

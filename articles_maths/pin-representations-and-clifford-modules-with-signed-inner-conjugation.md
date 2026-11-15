@@ -104,8 +104,8 @@ proposition; faithfulness is the theorem on the kernel, applied with the classif
 Clifford algebras. 
 
 **Remark (the definite case).** For a definite real form the standard module form of *Involutive
-Clifford Algebras* makes each Clifford coefficient skew-adjoint, so an even element of $\mathrm{Pin}$
-acts by an orthogonal operator and an odd element by a composition of an odd number of skew
+Clifford Algebras* makes each Clifford coefficient anti-self-adjoint, so an even element of $\mathrm{Pin}$
+acts by an orthogonal operator and an odd element by a composition of an odd number of anti-Hermitian
 operators, with $\rho(a)^{2}=\mathfrak{Q}(a)\,\mathrm{id}_S$ a scalar of the sign of $\mathfrak{Q}(a)$. The adjoint of
 $\rho(x)$ and its relation to $\rho(x)^{-1}$ belong to the involutive layer and are not repeated
 here.

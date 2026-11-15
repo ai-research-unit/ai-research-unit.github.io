@@ -75,7 +75,7 @@ $$
 
 The right-hand side is a sum of squares with positive coefficients, and it vanishes only for $X=0$. The restriction is the Euclidean structure of $\mathbb{R}^{n(n+1)/2}$ in the entries, up to the factor two.
 
-**On $\operatorname{Skew}_n$ the form is negative definite.** For skew $X$ the entry formula gives $X_{ji}=-X_{ij}$, so
+**On $\operatorname{Skew}_n$ the form is negative definite.** For anti-Hermitian $X$ the entry formula gives $X_{ji}=-X_{ij}$, so
 
 $$
 \operatorname{tr}(X^{2})=-2\sum_{i<j}X_{ij}^{2}.
@@ -83,7 +83,7 @@ $$
 
 The right-hand side is negative for every nonzero $X$.
 
-**The two halves are orthogonal.** Let $S$ be symmetric and $K$ skew. Then
+**The two halves are orthogonal.** Let $S$ be symmetric and $K$ antisymmetric. Then
 
 $$
 \operatorname{tr}(SK)=\operatorname{tr}\bigl((SK)^{\mathsf T}\bigr)=\operatorname{tr}(K^{\mathsf T}S^{\mathsf T})=-\operatorname{tr}(KS)=-\operatorname{tr}(SK),
@@ -93,7 +93,7 @@ so $\operatorname{tr}(SK)=0$. The first step uses the invariance of the trace un
 
 **The halves are the signature decomposition.** They are orthogonal, their dimensions add to $n^{2}$, and the form is positive on one and negative on the other. So $p=\dim\operatorname{Sym}_n$ and $q=\dim\operatorname{Skew}_n$ with no diagonalisation.
 
-**At $n=2$ the count reads $4=3+1$.** The symmetric part is spanned by $E_{11}$, $E_{22}$ and $E_{12}+E_{21}$, and it is positive definite. The skew part is spanned by $J=E_{12}-E_{21}$, and $\operatorname{tr}(J^{2})=-2$. This is the signature $(3,1)$ of the form on the split-quaternion algebra, as in *Split-Quaternion Algebra*.
+**At $n=2$ the count reads $4=3+1$.** The symmetric part is spanned by $E_{11}$, $E_{22}$ and $E_{12}+E_{21}$, and it is positive definite. The antisymmetric part is spanned by $J=E_{12}-E_{21}$, and $\operatorname{tr}(J^{2})=-2$. This is the signature $(3,1)$ of the form on the split-quaternion algebra, as in *Split-Quaternion Algebra*.
 
 ## The Isotropic Cone
 
@@ -105,7 +105,7 @@ $$
 H=E_{11}-E_{22},\qquad K=E_{12}-E_{21}.
 $$
 
-The first is symmetric and the second is skew, so the two are orthogonal. Their norms are
+The first is symmetric and the second is antisymmetric, so the two are orthogonal. Their norms are
 
 $$
 \operatorname{tr}(H^{2})=2,\qquad \operatorname{tr}(K^{2})=-2.
@@ -131,7 +131,7 @@ $$
 
 The identity is the associativity of the matrix product written through the trace, and it is what makes the form natural on an algebra rather than on a vector space.
 
-**Every inner derivation is skew for the form.** For all $A,X,Y$,
+**Every inner derivation is anti-self-adjoint for the form.** For all $A,X,Y$,
 
 $$
 \langle [A,X],Y\rangle+\langle X,[A,Y]\rangle=\operatorname{tr}(AXY)-\operatorname{tr}(XAY)+\operatorname{tr}(XAY)-\operatorname{tr}(XYA)=0,
@@ -187,7 +187,7 @@ That contradicts $B(E_{12},E_{12})>0$, because $E_{12}$ is nonzero.
 
 ## Summary
 
-The form $\langle X,Y\rangle=\operatorname{tr}(XY)$ on $M_n(\mathbb{R})$ is symmetric and nondegenerate. Its Gram matrix in the matrix-unit basis is the permutation matrix of the transposition $(i,j)\mapsto(j,i)$, so its signature is $\bigl(n(n+1)/2,n(n-1)/2\bigr)$, measured as $(3,1)$, $(6,3)$, $(10,6)$ and $(15,10)$ at $n=2,3,4,5$. The form is therefore indefinite for every $n\ge2$, with exactly $n(n-1)/2$ negative directions, and the negative directions are the skew ones. The form is positive definite on $\operatorname{Sym}_n$ and negative definite on $\operatorname{Skew}_n$, and the two halves are orthogonal, which is the signature decomposition. The isotropic cone has dimension $n^{2}-1$, and an explicit null vector is $E_{11}-E_{22}+E_{12}-E_{21}$, the sum of a positive direction and a negative direction of equal norm. The form is associative, every inner derivation is skew for it, and it is invariant under conjugation by any invertible matrix. The transpose is an isometric involution and the fundamental symmetry, so the space is a Krein space of type $\bigl(n(n+1)/2,n(n-1)/2\bigr)$. No positive definite form is invariant under the inner derivations, and every symmetric associative form is a scalar multiple of this one.
+The form $\langle X,Y\rangle=\operatorname{tr}(XY)$ on $M_n(\mathbb{R})$ is symmetric and nondegenerate. Its Gram matrix in the matrix-unit basis is the permutation matrix of the transposition $(i,j)\mapsto(j,i)$, so its signature is $\bigl(n(n+1)/2,n(n-1)/2\bigr)$, measured as $(3,1)$, $(6,3)$, $(10,6)$ and $(15,10)$ at $n=2,3,4,5$. The form is therefore indefinite for every $n\ge2$, with exactly $n(n-1)/2$ negative directions, and the negative directions are the antisymmetric ones. The form is positive definite on $\operatorname{Sym}_n$ and negative definite on $\operatorname{Skew}_n$, and the two halves are orthogonal, which is the signature decomposition. The isotropic cone has dimension $n^{2}-1$, and an explicit null vector is $E_{11}-E_{22}+E_{12}-E_{21}$, the sum of a positive direction and a negative direction of equal norm. The form is associative, every inner derivation is anti-self-adjoint for it, and it is invariant under conjugation by any invertible matrix. The transpose is an isometric involution and the fundamental symmetry, so the space is a Krein space of type $\bigl(n(n+1)/2,n(n-1)/2\bigr)$. No positive definite form is invariant under the inner derivations, and every symmetric associative form is a scalar multiple of this one.
 
 ## Summary of Notation
 
@@ -208,7 +208,7 @@ The form $\langle X,Y\rangle=\operatorname{tr}(XY)$ on $M_n(\mathbb{R})$ is symm
 ## Further Reading
 
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the trace form of a central simple algebra and its uniqueness among invariant forms.
-- Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the trace, the transpose and the symmetric and skew halves.
+- Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the trace, the transpose and the symmetric and antisymmetric halves.
 - Israel Gohberg, Peter Lancaster and Leiba Rodman, *Indefinite Linear Algebra and Applications* (Birkhäuser, 2005), for Krein spaces, fundamental symmetries and maximal definite subspaces.
 - [The Matrix Algebra $M_n(\mathbb{R})$](the-matrix-algebra-mnr.html), for the algebra and the two halves of the transpose.
 - [The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric](the-two-halves-over-r-symmetric-and-antisymmetric.html), for the dimensions and the algebra of the two eigenspaces.

@@ -54,15 +54,15 @@ so $[X,P]\in\mathfrak{p}$. Conversely, if the inclusion holds and $\mathfrak{k}$
 
 ## The Two Complements Tested
 
-**The symmetric half passes.** For $X$ skew and $P$ symmetric the commutator is symmetric, since
+**The symmetric half passes.** For $X$ antisymmetric and $P$ symmetric the commutator is symmetric, since
 
 $$
 [X,P]^{\mathsf T}=P^{\mathsf T}X^{\mathsf T}-X^{\mathsf T}P^{\mathsf T}=PX-XP=-[X,P],
 $$
 
-so the sign is the opposite one and $[\mathfrak{k},\mathfrak{p}]\subseteq\mathfrak{p}$ holds. Hence $(\mathfrak{gl}_n,\mathfrak{so}(n))$ is a symmetric pair with $\mathfrak{p}=\operatorname{Sym}_n$, and the third rule $[\mathfrak{p},\mathfrak{p}]\subseteq\mathfrak{k}$ holds as well: the commutator of two symmetric matrices is skew.
+so the sign is the opposite one and $[\mathfrak{k},\mathfrak{p}]\subseteq\mathfrak{p}$ holds. Hence $(\mathfrak{gl}_n,\mathfrak{so}(n))$ is a symmetric pair with $\mathfrak{p}=\operatorname{Sym}_n$, and the third rule $[\mathfrak{p},\mathfrak{p}]\subseteq\mathfrak{k}$ holds as well: the commutator of two symmetric matrices is antisymmetric.
 
-**The triangular algebra fails.** Take $X=E_{12}-E_{21}$, which is skew, and $P=E_{12}$, which is upper triangular. Then
+**The triangular algebra fails.** Take $X=E_{12}-E_{21}$, which is anti-Hermitian, and $P=E_{12}$, which is upper triangular. Then
 
 $$
 [X,P]=E_{12}E_{12}-E_{12}E_{21}-E_{21}E_{12}+E_{21}E_{21}
@@ -71,7 +71,7 @@ $$
 
 which is diagonal and not strictly upper triangular, so $[X,P]\notin UT_n$; the computation at $n=2,3,4$ produces a non-triangular entry every time. Hence no involutive automorphism of $\mathfrak{gl}_n$ has $UT_n$ as its $-1$ eigenspace, and the decomposition $\mathfrak{gl}_n=\mathfrak{so}(n)\oplus UT_n$ is not a symmetric pair.
 
-**The failure is caused by the diagonal.** The diagonal part of $UT_n$ is what the bracket produces, and a complement that contains the diagonal together with a nilpotent part cannot be stable: the bracket of the skew part with the nilpotent part returns to the diagonal. The symmetric half also contains the diagonal, but its off-diagonal part is symmetric rather than triangular, and the symmetry is exactly what makes the sign work.
+**The failure is caused by the diagonal.** The diagonal part of $UT_n$ is what the bracket produces, and a complement that contains the diagonal together with a nilpotent part cannot be stable: the bracket of the antisymmetric part with the nilpotent part returns to the diagonal. The symmetric half also contains the diagonal, but its off-diagonal part is symmetric rather than triangular, and the symmetry is exactly what makes the sign work.
 
 **The criterion also separates the two complements in dimension.** Both have dimension $n(n+1)/2$, both are complements of $\mathfrak{so}(n)$, and only one carries a representation of $\mathfrak{so}(n)$. So the dimension of a complement is not the information that matters; the bracket is.
 
@@ -111,13 +111,13 @@ $$
 
 the middle image is spanned by $\sigma_1$ and $\sigma_3$, since $[J,\sigma_1]=-2\sigma_3$ and $[J,\sigma_3]=2\sigma_1$, and the last holds because the commutator of two symmetric matrices is a multiple of $J$, which the computation confirms by producing a rank-one answer in the direction $J$.
 
-**The triangular complement fails already at $n=2$.** With $X=J$ and $P=E_{12}$ the commutator is $E_{22}-E_{11}$, which is diagonal and therefore not in $UT_2$. The failure at the smallest case is the same failure as at every case, and it cannot be repaired by choosing a different complement of dimension $3$: the criterion tests a bracket, and the bracket of the skew line with the triangular algebra always reaches the diagonal.
+**The triangular complement fails already at $n=2$.** With $X=J$ and $P=E_{12}$ the commutator is $E_{22}-E_{11}$, which is diagonal and therefore not in $UT_2$. The failure at the smallest case is the same failure as at every case, and it cannot be repaired by choosing a different complement of dimension $3$: the criterion tests a bracket, and the bracket of the anti-Hermitian line with the triangular algebra always reaches the diagonal.
 
 **The Cartan form at $n=2$ is the Euclidean form on three dimensions.** Since $\mathfrak{sl}_2$ is three-dimensional and $\mathfrak{so}(2)$ is one-dimensional, the complement is two-dimensional and the definite form is $4\sum X_{ij}^{2}$ on the traceless part. The biquaternion reading of the pair is the one of *Coda: $n=2$ and the Biquaternion Algebra*: the subalgebra is the rotation direction, the complement the two stretch directions, and the pair is the model of every later symmetric space.
 
 ## Summary
 
-The map $\theta(X)=-X^{\mathsf T}$ is an involutive automorphism of $\mathfrak{gl}_n$ with fixed set $\mathfrak{so}(n)$ and anti-fixed set $\operatorname{Sym}_n$, so $(\mathfrak{gl}_n,\mathfrak{so}(n))$ is a symmetric pair with the bracket rules $[\mathfrak{k},\mathfrak{k}]\subseteq\mathfrak{k}$, $[\mathfrak{k},\mathfrak{p}]\subseteq\mathfrak{p}$ and $[\mathfrak{p},\mathfrak{p}]\subseteq\mathfrak{k}$. The second rule is the criterion: a complement is the anti-fixed set of an involution exactly when it is stable under the subalgebra. The symmetric half passes, since the commutator of a skew with a symmetric matrix is symmetric; the triangular algebra fails, since the commutator of a skew matrix with $E_{12}$ reaches the diagonal. The Killing form of $\mathfrak{gl}_n$ is $2n\operatorname{tr}(XY)-2\operatorname{tr}(X)\operatorname{tr}(Y)$, and $-B(X,\theta X)=2n\operatorname{tr}(XX^{\mathsf T})$ is positive on $\mathfrak{sl}_n$, so the pair is a Cartan pair.
+The map $\theta(X)=-X^{\mathsf T}$ is an involutive automorphism of $\mathfrak{gl}_n$ with fixed set $\mathfrak{so}(n)$ and anti-fixed set $\operatorname{Sym}_n$, so $(\mathfrak{gl}_n,\mathfrak{so}(n))$ is a symmetric pair with the bracket rules $[\mathfrak{k},\mathfrak{k}]\subseteq\mathfrak{k}$, $[\mathfrak{k},\mathfrak{p}]\subseteq\mathfrak{p}$ and $[\mathfrak{p},\mathfrak{p}]\subseteq\mathfrak{k}$. The second rule is the criterion: a complement is the anti-fixed set of an involution exactly when it is stable under the subalgebra. The symmetric half passes, since the commutator of an antisymmetric with a symmetric matrix is symmetric; the triangular algebra fails, since the commutator of an antisymmetric matrix with $E_{12}$ reaches the diagonal. The Killing form of $\mathfrak{gl}_n$ is $2n\operatorname{tr}(XY)-2\operatorname{tr}(X)\operatorname{tr}(Y)$, and $-B(X,\theta X)=2n\operatorname{tr}(XX^{\mathsf T})$ is positive on $\mathfrak{sl}_n$, so the pair is a Cartan pair.
 
 ## Summary of Notation
 

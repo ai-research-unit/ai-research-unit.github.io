@@ -32,7 +32,7 @@ it satisfies $(T^{\dagger})^{\dagger} = T$, $(ST)^{\dagger} = T^{\dagger}S^{\dag
 
 ## J-Self-Adjointness
 
-**Definition.** $T$ is **$J$-self-adjoint** when $T^{\dagger} = T$; it is **$J$-skew-adjoint** when $T^{\dagger} = -T$; and every $T$ decomposes as $T = \frac{1}{2}(T + T^{\dagger}) + \frac{1}{2}(T - T^{\dagger})$ into a $J$-self-adjoint and a $J$-skew-adjoint part.
+**Definition.** $T$ is **$J$-self-adjoint** when $T^{\dagger} = T$; it is **$J$-anti-self-adjoint** when $T^{\dagger} = -T$; and every $T$ decomposes as $T = \frac{1}{2}(T + T^{\dagger}) + \frac{1}{2}(T - T^{\dagger})$ into a $J$-self-adjoint and a $J$-anti-self-adjoint part.
 
 **Proposition (the real space of $J$-self-adjoint operators).** The $J$-self-adjoint operators form a real vector space, closed under the $J$-adjoint; they are exactly the operators $T$ with $JT$ Hilbert-self-adjoint; and $T^{\dagger}T$ is $J$-self-adjoint for every $T$.
 

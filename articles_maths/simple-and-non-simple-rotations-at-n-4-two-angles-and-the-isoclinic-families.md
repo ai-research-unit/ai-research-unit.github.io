@@ -36,7 +36,7 @@ It assumes *The Spectral Theorem: the Anti-Hermitian Case and the Reality of the
 
 **Theorem.** Every rotation of four-space is orthogonally conjugate to $\operatorname{diag}(R_{\theta_1},R_{\theta_2})$ with $\theta_1\ge\theta_2\ge0$, up to signs and ordering.
 
-**Proof.** The real normal form of the skew generator, exponentiated: the pair of invariant planes of the skew part is invariant under the rotation it generates.
+**Proof.** The real normal form of the anti-Hermitian generator, exponentiated: the pair of invariant planes of the anti-Hermitian part is invariant under the rotation it generates.
 
 **Corollary.** The spectrum is $\{e^{i\theta_1},e^{-i\theta_1},e^{i\theta_2},e^{-i\theta_2}\}$, and the two angles are read from it up to sign.
 
@@ -89,9 +89,9 @@ It assumes *The Spectral Theorem: the Anti-Hermitian Case and the Reality of the
 
 **Proof.** $\dim SO(4)=6$, the rank is two, and the remaining four dimensions are the choice of the two planes.
 
-**Corollary.** The normal form is $\operatorname{diag}(R_{\theta_1},R_{\theta_2})$, and the two planes of the normal form are the eigenplanes of the skew generator.
+**Corollary.** The normal form is $\operatorname{diag}(R_{\theta_1},R_{\theta_2})$, and the two planes of the normal form are the eigenplanes of the anti-Hermitian generator.
 
-**Proof.** The normal form of the skew matrix, exponentiated.
+**Proof.** The normal form of the antisymmetric matrix, exponentiated.
 
 **The order five.** At order five a third angle exists but the extra dimension is a fixed line, so the count is still two; the first order with three angles is six.
 

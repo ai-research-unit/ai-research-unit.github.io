@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The **operator layer** of a variety is the sheaf of differential operators $\mathcal{D}_X$ of *The Sheaf of Differential Operators*, an algebra under composition whose elements act on the structure sheaf and on the quasi-coherent modules; a **real structure** on it is an involution of the operator algebra that is semilinear over the structure sheaf, the action of the Galois group by conjugation. The operators split into the **fixed operators**, those commuting with the conjugation, which are exactly the operators defined over the base field, and the **skew operators**, those satisfying the conjugate relation with the sign $-1$; the fixed part is the operator layer of the descended variety, and the descent of the algebra and of its modules is the content of the article. This article fixes the real structure on the operator layer, the conjugation and its two eigenspaces, the descent of the operator algebra, and the distinction between the conjugation and the adjoint, and it is the first article of the `- * Operator Theory` group.
+The **operator layer** of a variety is the sheaf of differential operators $\mathcal{D}_X$ of *The Sheaf of Differential Operators*, an algebra under composition whose elements act on the structure sheaf and on the quasi-coherent modules; a **real structure** on it is an involution of the operator algebra that is semilinear over the structure sheaf, the action of the Galois group by conjugation. The operators split into the **fixed operators**, those commuting with the conjugation, which are exactly the operators defined over the base field, and the **anti-self-adjoint operators**, those satisfying the conjugate relation with the sign $-1$; the fixed part is the operator layer of the descended variety, and the descent of the algebra and of its modules is the content of the article. This article fixes the real structure on the operator layer, the conjugation and its two eigenspaces, the descent of the operator algebra, and the distinction between the conjugation and the adjoint, and it is the first article of the `- * Operator Theory` group.
 
 The article reads the real structure of *Real Structures on Varieties and Galois Descent* on the operators, and it prepares *Galois Descent for the Operator Layer*, the second article of the group, which treats the descent data and the effective descent of the operator modules. The operator layer is that of *Operators on a Variety*, *The Pullback Operator of a Morphism* and *The Sheaf of Differential Operators* of this category; the conventions of the conjugation and of the adjoint on the operator layer are those of the written *Involutions on the Operator Layer* of the category *Groups*, where the two operations are separated, and the descent is Part I's *Descent Theory* and *Real Forms and the Descent of an Algebra*. The pairing that defines the adjoint on the operator layer of a variety — the trace form of *The Weil Restriction and the Trace Form* — is used here only for the comparison of the conjugation with the adjoint, and the analytic and smooth operators of Part III are excluded.
 
@@ -41,13 +41,13 @@ for a derivation $\partial$.
 
 *Proof.* The map $\sigma^\sharp\circ(-)\circ(\sigma^\sharp)^{-1}$ is a conjugation by an invertible algebra element, hence an algebra automorphism; the semilinearity is the semilinearity of $\sigma^\sharp$ over $\mathcal{O}_{X_L}$, checked on a function $f$ and an operator $T$: $\sigma^\sharp fT(\sigma^\sharp)^{-1} = \sigma(f)\sigma^\sharp T(\sigma^\sharp)^{-1}$. The order is the order of $\sigma$, and the preservation of the filtration and of the graded algebra is the previous proposition. The action on the derivations is the conjugation of an operator by an algebra automorphism, which is a derivation again.
 
-**Example (the affine line and the Weyl algebra).** For $X = \mathbb{A}^1_k$ with base change $\mathbb{A}^1_L$ and the coordinate $x$, the operator layer is the Weyl algebra $A_1(L) = L\langle x,\partial\rangle$ with $[\partial,x]=1$, and the conjugation of the coefficients $\sigma(\ell x^n) = \sigma(\ell)x^n$ on the functions extends by $\mathrm{ad}_\sigma(\partial) = \partial$ and $\mathrm{ad}_\sigma(x) = x$. The fixed elements are the polynomials in $x,\partial$ with coefficients in $k$, the subalgebra $A_1(k)$, and the operator $i\partial$, for $L=\mathbb{C}$, $k=\mathbb{R}$, is skew: $\mathrm{ad}_\sigma(i\partial) = -i\partial$.
+**Example (the affine line and the Weyl algebra).** For $X = \mathbb{A}^1_k$ with base change $\mathbb{A}^1_L$ and the coordinate $x$, the operator layer is the Weyl algebra $A_1(L) = L\langle x,\partial\rangle$ with $[\partial,x]=1$, and the conjugation of the coefficients $\sigma(\ell x^n) = \sigma(\ell)x^n$ on the functions extends by $\mathrm{ad}_\sigma(\partial) = \partial$ and $\mathrm{ad}_\sigma(x) = x$. The fixed elements are the polynomials in $x,\partial$ with coefficients in $k$, the subalgebra $A_1(k)$, and the operator $i\partial$, for $L=\mathbb{C}$, $k=\mathbb{R}$, is anti-Hermitian: $\mathrm{ad}_\sigma(i\partial) = -i\partial$.
 
-## The Fixed and the Skew Operators
+## The Fixed and the Anti-Hermitian Operators
 
 ### The Two Eigenspaces
 
-**Definition.** Let $\mathrm{ad}_\sigma$ be the conjugation of the operator layer for a group $G$ generated by a single involution $\sigma$ over $L/k$. The **fixed operators** and the **skew operators** are
+**Definition.** Let $\mathrm{ad}_\sigma$ be the conjugation of the operator layer for a group $G$ generated by a single involution $\sigma$ over $L/k$. The **fixed operators** and the **anti-self-adjoint operators** are
 $$
 \mathcal{D}_+ = \{T : \mathrm{ad}_\sigma(T) = T\}, \qquad \mathcal{D}_- = \{T : \mathrm{ad}_\sigma(T) = -T\},
 $$
@@ -59,13 +59,13 @@ $$
 $$
 and $\mathcal{D}_+$ is the fixed subalgebra. In characteristic two the decomposition fails and every operator is fixed or nilpotent in the conjugation.
 
-*Proof.* The average of an element with its conjugate is fixed and the difference is skew, so the two either generate or span; their sum is the whole layer by the displayed formula and their intersection is $0$ because an element fixed and skew at once is $T=-T$, so $2T=0$ and $T=0$ when $2$ is invertible. The fixed elements form a subalgebra because the conjugation is an algebra automorphism. In characteristic two the equation $\mathrm{ad}_\sigma(T)=T$ admits the nilpotent solutions $T+\mathrm{ad}_\sigma(T)$ with $T$ skew, and the two eigenspaces coincide with the fixed layer.
+*Proof.* The average of an element with its conjugate is fixed and the difference is anti-Hermitian, so the two either generate or span; their sum is the whole layer by the displayed formula and their intersection is $0$ because an element fixed and anti-Hermitian at once is $T=-T$, so $2T=0$ and $T=0$ when $2$ is invertible. The fixed elements form a subalgebra because the conjugation is an algebra automorphism. In characteristic two the equation $\mathrm{ad}_\sigma(T)=T$ admits the nilpotent solutions $T+\mathrm{ad}_\sigma(T)$ with $T$ anti-Hermitian, and the two eigenspaces coincide with the fixed layer.
 
 **Proposition (the parity of the product).** The eigenspaces multiply by the rule
 $$
 \mathcal{D}_+\cdot\mathcal{D}_+\subseteq\mathcal{D}_+, \qquad \mathcal{D}_+\cdot\mathcal{D}_-\subseteq\mathcal{D}_-, \qquad \mathcal{D}_-\cdot\mathcal{D}_-\subseteq\mathcal{D}_+ ,
 $$
-so that $\mathcal{D} = \mathcal{D}_+\oplus\mathcal{D}_-$ is a $\mathbb{Z}/2$-graded algebra with the even part the fixed operators, and the skew part is a module over the fixed part.
+so that $\mathcal{D} = \mathcal{D}_+\oplus\mathcal{D}_-$ is a $\mathbb{Z}/2$-graded algebra with the even part the fixed operators, and the anti-Hermitian part is a module over the fixed part.
 
 *Proof.* The conjugation is an algebra automorphism, so $\mathrm{ad}_\sigma(ST) = \mathrm{ad}_\sigma(S)\mathrm{ad}_\sigma(T)$, and the signs multiply: the product of two operators of parities $\epsilon$ and $\delta$ has parity $\epsilon\delta$. This is the multiplicative rule of a $\mathbb{Z}/2$-grading.
 
@@ -82,7 +82,7 @@ $$
 
 *Proof.* The derivations are the first-order operators and the fixed ones are the derivations defined over $k$ by the theorem; the order filtration restricts to the fixed part because the conjugation preserves it, and the associated graded is computed from the fixed functions and the fixed derivations.
 
-**Example (the Weyl algebra and its fixed subalgebra).** For the affine line and $\mathbb{C}/\mathbb{R}$ the fixed algebra of the Weyl algebra $A_1(\mathbb{C})$ under the conjugation is $A_1(\mathbb{R})$, generated by $x$ and $\partial$ with $[\partial,x]=1$; the operator $x\partial$ is fixed, the operator $i\partial$ is skew, and the skew part is $iA_1(\mathbb{R})$, the module over the fixed algebra generated by $i$.
+**Example (the Weyl algebra and its fixed subalgebra).** For the affine line and $\mathbb{C}/\mathbb{R}$ the fixed algebra of the Weyl algebra $A_1(\mathbb{C})$ under the conjugation is $A_1(\mathbb{R})$, generated by $x$ and $\partial$ with $[\partial,x]=1$; the operator $x\partial$ is fixed, the operator $i\partial$ is anti-Hermitian, and the anti-Hermitian part is $iA_1(\mathbb{R})$, the module over the fixed algebra generated by $i$.
 
 ## The Conjugation and the Adjoint
 
@@ -104,17 +104,17 @@ $$
 $$
 so $(\mathrm{ad}_\sigma T)^{*} = \mathrm{ad}_\sigma(T^{*})$ by the uniqueness of the adjoint. This is the operator-level instance of the general rule that the involution on the elements and the adjoint on the operators are two structures and not one, and their agreement is proved and never assumed.
 
-**Corollary (the self-adjoint fixed operators).** When the pairing is invariant, an operator $T$ is fixed and self-adjoint exactly when $\mathrm{ad}_\sigma(T) = T = T^{*}$; the self-adjoint fixed operators form a real subspace of the fixed algebra, and the skew fixed operators are the fixed part of the skew-adjoint operators. The unitary operators are the fixed operators with $T^{*}T = TT^{*} = \mathrm{id}$.
+**Corollary (the self-adjoint fixed operators).** When the pairing is invariant, an operator $T$ is fixed and self-adjoint exactly when $\mathrm{ad}_\sigma(T) = T = T^{*}$; the self-adjoint fixed operators form a real subspace of the fixed algebra, and the anti-Hermitian fixed operators are the fixed part of the anti-self-adjoint operators. The unitary operators are the fixed operators with $T^{*}T = TT^{*} = \mathrm{id}$.
 
-*Proof.* The conditions $\mathrm{ad}_\sigma(T)=T$ and $T^{*}=T$ are independent, and their intersection is the fixed self-adjoint part; the fixed skew-adjoint operators are cut out by $T^{*}=-T$ inside the fixed algebra. The unitarity is the condition of the written *Involutions on the Operator Layer*, restricted to the fixed algebra.
+*Proof.* The conditions $\mathrm{ad}_\sigma(T)=T$ and $T^{*}=T$ are independent, and their intersection is the fixed self-adjoint part; the fixed anti-self-adjoint operators are cut out by $T^{*}=-T$ inside the fixed algebra. The unitarity is the condition of the written *Involutions on the Operator Layer*, restricted to the fixed algebra.
 
 ## Examples
 
-**Example (the coordinate and the derivative).** On the affine line with the coordinate $x$ and the derivative $\partial$, the conjugation fixes $x$ and $\partial$, so both are fixed operators; the monomial $x^m\partial^n$ is fixed, the operator $i\,x^m\partial^n$ is skew for $L=\mathbb{C}$, $k=\mathbb{R}$, and the fixed part of the Weyl algebra is generated by the fixed monomials. The self-adjoint operators for the trace pairing are those whose coefficients are real, and the two operations $\mathrm{ad}_\sigma$ and $(-)^{*}$ commute on the whole Weyl algebra for the $\mathbb{C}/\mathbb{R}$ example.
+**Example (the coordinate and the derivative).** On the affine line with the coordinate $x$ and the derivative $\partial$, the conjugation fixes $x$ and $\partial$, so both are fixed operators; the monomial $x^m\partial^n$ is fixed, the operator $i\,x^m\partial^n$ is anti-self-adjoint for $L=\mathbb{C}$, $k=\mathbb{R}$, and the fixed part of the Weyl algebra is generated by the fixed monomials. The self-adjoint operators for the trace pairing are those whose coefficients are real, and the two operations $\mathrm{ad}_\sigma$ and $(-)^{*}$ commute on the whole Weyl algebra for the $\mathbb{C}/\mathbb{R}$ example.
 
-**Example (the ring of operators on a vector space with a real structure).** Let $V$ be a $k$-vector space and $V_L = V\otimes_kL$ with the semilinear involution, and let the operator layer be $\operatorname{End}_L(V_L)$ with the conjugation $\mathrm{ad}_\sigma(T) = \Sigma_\sigma T\Sigma_\sigma^{-1}$ of the linear extension $\Sigma_\sigma$ of the involution. The fixed operators are $\operatorname{End}_k(V)$; the skew operators satisfy $T\Sigma_\sigma = -\Sigma_\sigma T$, and the self-adjoint operators for the trace form $\operatorname{Tr}(ST)$ are the operators with $T^{*}=T$ in the sense of the transpose. This is the linear model of the operator layer, and the two operations on it are those of the written *Involutions on the Operator Layer* of the category *Groups*, with the group $\mathbb{Z}/2$ in place of $G$.
+**Example (the ring of operators on a vector space with a real structure).** Let $V$ be a $k$-vector space and $V_L = V\otimes_kL$ with the semilinear involution, and let the operator layer be $\operatorname{End}_L(V_L)$ with the conjugation $\mathrm{ad}_\sigma(T) = \Sigma_\sigma T\Sigma_\sigma^{-1}$ of the linear extension $\Sigma_\sigma$ of the involution. The fixed operators are $\operatorname{End}_k(V)$; the anti-self-adjoint operators satisfy $T\Sigma_\sigma = -\Sigma_\sigma T$, and the self-adjoint operators for the trace form $\operatorname{Tr}(ST)$ are the operators with $T^{*}=T$ in the sense of the transpose. This is the linear model of the operator layer, and the two operations on it are those of the written *Involutions on the Operator Layer* of the category *Groups*, with the group $\mathbb{Z}/2$ in place of $G$.
 
-**Example (a derivation conjugated to its negative).** On the affine line with the involution $x\mapsto-x$ of the base change, the derivative satisfies $\mathrm{ad}_\sigma(\partial) = -\partial$, since $\partial$ is odd for the inversion of the coordinate: the derivative is a skew operator, the multiplication by $x$ is skew as well, and the product $x\partial$ is fixed. The fixed algebra of the operator layer for this involution is generated by $x^2$, $x\partial$ and $\partial^2$, the even elements of the Weyl algebra under the parity of the total degree.
+**Example (a derivation conjugated to its negative).** On the affine line with the involution $x\mapsto-x$ of the base change, the derivative satisfies $\mathrm{ad}_\sigma(\partial) = -\partial$, since $\partial$ is odd for the inversion of the coordinate: the derivative is an anti-self-adjoint operator, the multiplication by $x$ is anti-Hermitian as well, and the product $x\partial$ is fixed. The fixed algebra of the operator layer for this involution is generated by $x^2$, $x\partial$ and $\partial^2$, the even elements of the Weyl algebra under the parity of the total degree.
 
 ## Summary
 
@@ -122,7 +122,7 @@ The **operator layer** of $X_L$ is the sheaf of algebras $\mathcal{D}_{X_L}$ of 
 $$
 \mathrm{ad}_\sigma(T) = \sigma^\sharp\circ T\circ(\sigma^\sharp)^{-1},
 $$
-which is an automorphism of the operator algebra, semilinear over the structure sheaf, preserving the order filtration. For a single involution the layer splits into the **fixed operators** $\mathcal{D}_+ = \{T : \mathrm{ad}_\sigma(T)=T\}$ and the **skew operators** $\mathcal{D}_- = \{T : \mathrm{ad}_\sigma(T)=-T\}$ when $2$ is invertible, with the $\mathbb{Z}/2$-graded multiplication rule; the fixed part is the operator layer of the descended variety,
+which is an automorphism of the operator algebra, semilinear over the structure sheaf, preserving the order filtration. For a single involution the layer splits into the **fixed operators** $\mathcal{D}_+ = \{T : \mathrm{ad}_\sigma(T)=T\}$ and the **anti-self-adjoint operators** $\mathcal{D}_- = \{T : \mathrm{ad}_\sigma(T)=-T\}$ when $2$ is invertible, with the $\mathbb{Z}/2$-graded multiplication rule; the fixed part is the operator layer of the descended variety,
 $$
 \mathcal{D}_{X_L}^{G} = \mathcal{D}_X ,
 $$
@@ -138,7 +138,7 @@ so the fixed derivations are the derivations of $X$. The conjugation is an **aut
 | $\mathrm{ad}_\sigma(ST)=\mathrm{ad}_\sigma(S)\mathrm{ad}_\sigma(T)$ | the conjugation is an algebra automorphism |
 | $\mathrm{ad}_\sigma(fT)=\sigma(f)\mathrm{ad}_\sigma(T)$ | semilinearity over the structure sheaf |
 | $\mathcal{D}_+ = \{T:\mathrm{ad}_\sigma(T)=T\}$ | the fixed operators |
-| $\mathcal{D}_- = \{T:\mathrm{ad}_\sigma(T)=-T\}$ | the skew operators |
+| $\mathcal{D}_- = \{T:\mathrm{ad}_\sigma(T)=-T\}$ | the anti-self-adjoint operators |
 | $\mathcal{D}=\mathcal{D}_+\oplus\mathcal{D}_-$ | the eigenspace decomposition, when $2$ is invertible |
 | $\mathcal{D}_+\mathcal{D}_+\subset\mathcal{D}_+$, $\mathcal{D}_+\mathcal{D}_-\subset\mathcal{D}_-$ | the $\mathbb{Z}/2$-graded multiplication |
 | $\mathcal{D}_{X_L}^G=\mathcal{D}_X$ | the fixed algebra is the operator layer of $X$ |

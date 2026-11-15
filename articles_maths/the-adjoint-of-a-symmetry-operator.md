@@ -61,15 +61,15 @@ so every element of the symmetry group is a unitary operator of the form; conver
 
 ### The Invariant Form and the Lie Algebra
 
-**Proposition.** The Lie algebra of the symmetry group is the space of operators skew-adjoint with respect to the invariant form,
+**Proposition.** The Lie algebra of the symmetry group is the space of operators anti-self-adjoint with respect to the invariant form,
 
 $$
 \mathrm{Lie}(G) = \{X \in \operatorname{End}(V) : X^{*} = -X\},
 $$
 
-so the one-parameter groups of symmetries are the exponentials of the skew-adjoint operators; the Hermitian operators are the $i$ times the skew-adjoint ones in the complex case, and the flow of a skew-adjoint operator preserves the form.
+so the one-parameter groups of symmetries are the exponentials of the anti-self-adjoint operators; the Hermitian operators are the $i$ times the anti-self-adjoint ones in the complex case, and the flow of an anti-self-adjoint operator preserves the form.
 
-**Proof.** Differentiate $h(\exp(tX)u, \exp(tX)v) = h(u,v)$ at $t = 0$: $h(Xu,v) + h(u,Xv) = 0$, i.e., $X^{*} = -X$; conversely the exponential of a skew-adjoint operator is unitary, the standard Lie-correspondence, *Lie Groups*.
+**Proof.** Differentiate $h(\exp(tX)u, \exp(tX)v) = h(u,v)$ at $t = 0$: $h(Xu,v) + h(u,Xv) = 0$, i.e., $X^{*} = -X$; conversely the exponential of an anti-self-adjoint operator is unitary, the standard Lie-correspondence, *Lie Groups*.
 
 **Remark.** The realisation of the symmetry group inside the unitary operators of the form is a **representation** of $G$ by operators, and the statement $g^{*} = g^{-1}$ holds **for the elements of the group**, without reference to any involution on the group. The two structures are distinguished in the next section.
 
@@ -77,7 +77,7 @@ so the one-parameter groups of symmetries are the exponentials of the skew-adjoi
 
 ### The Operator Involution
 
-**Definition.** The **operator involution** on $\operatorname{End}(V)$ is the map $T \mapsto T^{*}$; the operators it fixes are the Hermitian ones, and the operators it inverts are the skew-adjoint ones, so the involution on the operators is the same structure as the involution on the elements of the group `- * Theory`, transported to the algebra of operators.
+**Definition.** The **operator involution** on $\operatorname{End}(V)$ is the map $T \mapsto T^{*}$; the operators it fixes are the Hermitian ones, and the operators it inverts are the anti-self-adjoint ones, so the involution on the operators is the same structure as the involution on the elements of the group `- * Theory`, transported to the algebra of operators.
 
 **Proposition.** The operator involution is an involutive anti-automorphism of the algebra $\operatorname{End}(V)$, it makes the algebra a `*`-algebra, and its interaction with a subalgebra is what the unitary group of the form is defined by:
 
@@ -123,7 +123,7 @@ because $\rho(\sigma(g)) = \rho(g)^{-1}$ is equivalent to $\rho(g)\rho(\sigma(g)
 
 ## Summary
 
-A form $h$ invariant under a symmetry group $G$ defines the adjoint $T^{*}$ of an operator by $h(Tu,v) = h(u,T^{*}v)$; the adjoint is a conjugate-linear involutive anti-automorphism, so the operator algebra is a `*`-algebra, and the Hermitian, unitary and normal operators are defined by $T^{*} = T$, $T^{*}T = \operatorname{id}$ and $T^{*}T = TT^{*}$. Every symmetry operator is unitary, $g^{*} = g^{-1}$, and the unitary operators of the form are exactly the isometries, so the symmetry group is a subgroup of the unitary group $\mathrm{U}(V,h)$ and its Lie algebra consists of the skew-adjoint operators; for the orthogonal group the adjoint is the transpose-adjoint and for the unitary group the conjugate transpose. The involution $T \mapsto T^{*}$ on the operators and the involution $\sigma$ on the elements of the group are two different structures: the identity $\rho(\sigma(g)) = \rho(g)^{*}$ holds exactly when $\rho(g\sigma(g)) = \operatorname{id}$ for all $g$, so it holds for an abelian image with the inversion and, when $\sigma$ is an automorphism, it forces the image to be abelian; it is proved for the representations that have it and never assumed. The adjoint of the standard operators of the group is the subject of the following articles of this group.
+A form $h$ invariant under a symmetry group $G$ defines the adjoint $T^{*}$ of an operator by $h(Tu,v) = h(u,T^{*}v)$; the adjoint is a conjugate-linear involutive anti-automorphism, so the operator algebra is a `*`-algebra, and the Hermitian, unitary and normal operators are defined by $T^{*} = T$, $T^{*}T = \operatorname{id}$ and $T^{*}T = TT^{*}$. Every symmetry operator is unitary, $g^{*} = g^{-1}$, and the unitary operators of the form are exactly the isometries, so the symmetry group is a subgroup of the unitary group $\mathrm{U}(V,h)$ and its Lie algebra consists of the anti-self-adjoint operators; for the orthogonal group the adjoint is the transpose-adjoint and for the unitary group the conjugate transpose. The involution $T \mapsto T^{*}$ on the operators and the involution $\sigma$ on the elements of the group are two different structures: the identity $\rho(\sigma(g)) = \rho(g)^{*}$ holds exactly when $\rho(g\sigma(g)) = \operatorname{id}$ for all $g$, so it holds for an abelian image with the inversion and, when $\sigma$ is an automorphism, it forces the image to be abelian; it is proved for the representations that have it and never assumed. The adjoint of the standard operators of the group is the subject of the following articles of this group.
 
 ## Summary of Notation
 

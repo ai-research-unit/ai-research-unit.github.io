@@ -51,9 +51,9 @@ $$
 
 ### The Star Structure
 
-**Definition.** The pair $(\mathrm{U}(\mathrm{G}),\sigma)$ is an **involutive algebra**: an associative algebra over $\mathbb{R}$ with an involutive anti-automorphism. An element is **Hermitian** when $u^{\star} = u$, and **skew** when $u^{\star} = -u$; the Hermitian elements form a real subspace, and a Hermitian element is **positive** when it is a sum of elements of the form $u^{\star}u$.
+**Definition.** The pair $(\mathrm{U}(\mathrm{G}),\sigma)$ is an **involutive algebra**: an associative algebra over $\mathbb{R}$ with an involutive anti-automorphism. An element is **Hermitian** when $u^{\star} = u$, and **anti-Hermitian** when $u^{\star} = -u$; the Hermitian elements form a real subspace, and a Hermitian element is **positive** when it is a sum of elements of the form $u^{\star}u$.
 
-**Proposition.** Every element is the sum of a Hermitian and a skew part, $u = \tfrac12(u + u^{\star}) + \tfrac12(u - u^{\star})$; the generators $X\in\mathrm{G}$ are skew, the unit is Hermitian, and the real span of the products $u^{\star}u$ is a cone stable under the star.
+**Proposition.** Every element is the sum of a Hermitian and an anti-Hermitian part, $u = \tfrac12(u + u^{\star}) + \tfrac12(u - u^{\star})$; the generators $X\in\mathrm{G}$ are anti-Hermitian, the unit is Hermitian, and the real span of the products $u^{\star}u$ is a cone stable under the star.
 
 *Proof.* The decomposition is the standard one for an involution, and the statements about the generators and the unit follow from $\sigma(X) = -X$ and $\sigma(1) = 1$; the cone statement is that $(u^{\star}u)^{\star} = u^{\star}u$.
 
@@ -109,15 +109,15 @@ $$
 \boxed{\;\pi_*(X)^{*} = -\pi_*(X) \qquad (X\in\mathrm{G})\;},
 $$
 
-so $\pi_*$ is a star-representation of $\mathrm{U}(\mathrm{G})$: the generators are skew-adjoint and the star is the adjoint operation. Conversely a star-representation of $\mathrm{U}(\mathrm{G})$ whose operators integrate to a group representation gives a unitary representation.
+so $\pi_*$ is a star-representation of $\mathrm{U}(\mathrm{G})$: the generators are anti-self-adjoint and the star is the adjoint operation. Conversely a star-representation of $\mathrm{U}(\mathrm{G})$ whose operators integrate to a group representation gives a unitary representation.
 
-*Proof.* The skew-adjointness of $\pi_*(X)$ is the derivative of the unitarity at the identity; since the generators are skew and generate $\mathrm{U}(\mathrm{G})$, the identity $\pi_*(u^{\star}) = \pi_*(u)^{*}$ holds on the whole algebra by multiplicativity and the adjoint of a product; the converse is the integration of the skew operators to a unitary group, which is Stone's theorem of *Unitary Representations of a Lie Group*.
+*Proof.* The anti-self-adjointness of $\pi_*(X)$ is the derivative of the unitarity at the identity; since the generators are anti-Hermitian and generate $\mathrm{U}(\mathrm{G})$, the identity $\pi_*(u^{\star}) = \pi_*(u)^{*}$ holds on the whole algebra by multiplicativity and the adjoint of a product; the converse is the integration of the anti-self-adjoint operators to a unitary group, which is Stone's theorem of *Unitary Representations of a Lie Group*.
 
 ### The Form and the Star
 
 **Theorem.** Let $H$ be an invariant Hermitian form on $\mathrm{G}$ whose associated operator is the star, in the sense that $H([X,Y],Z) + H(Y,[X,Z]) = 0$ for all $X,Y,Z$. Then the adjoint of the operator of left multiplication $\pi_*(X)$ with respect to $H$ is $-\pi_*(X)$, and the star of $\mathrm{U}(\mathrm{G})$ is the adjoint operation for the extended form on the enveloping algebra; the invariance of $H$ on $\mathrm{G}$ is equivalent to the star identity on $\mathrm{U}(\mathrm{G})$.
 
-*Proof.* The invariance of $H$ under the adjoint action says that $\operatorname{ad}_X$ is skew for $H$, so the adjoint of $\operatorname{ad}_X$ is $-\operatorname{ad}_X = \operatorname{ad}_{X^{\star}}$; the extension to the enveloping algebra is by multiplicativity of the adjoint and of the star. The equivalence is the statement that both properties are generated on the first order.
+*Proof.* The invariance of $H$ under the adjoint action says that $\operatorname{ad}_X$ is anti-self-adjoint for $H$, so the adjoint of $\operatorname{ad}_X$ is $-\operatorname{ad}_X = \operatorname{ad}_{X^{\star}}$; the extension to the enveloping algebra is by multiplicativity of the adjoint and of the star. The equivalence is the statement that both properties are generated on the first order.
 
 **Corollary (the Casimir is positive).** For a compact real form the Casimir element is a positive Hermitian element and the operator $\pi_*(\Omega)$ is a negative semidefinite self-adjoint operator on each unitary representation, with a negative eigenvalue on each irreducible summand.
 
@@ -131,7 +131,7 @@ The algebra $\mathrm{sl}_2(\mathbb{R})$ has the basis $E,F,H$ with $[H,E] = 2E$,
 
 ### The Heisenberg Algebra
 
-For the Heisenberg algebra with $[P,Q] = Z$ central, the star sends each generator to its negative, and the symmetric elements include $PQ + QP$ and $Z$; a unitary representation sends $P$ and $Q$ to skew-adjoint operators and $Z$ to a central skew-adjoint scalar, so the imaginary parts are the self-adjoint position and momentum operators of the Schrödinger representation, named here only as the analytic model, with no physical interpretation.
+For the Heisenberg algebra with $[P,Q] = Z$ central, the star sends each generator to its negative, and the symmetric elements include $PQ + QP$ and $Z$; a unitary representation sends $P$ and $Q$ to anti-self-adjoint operators and $Z$ to a central anti-self-adjoint scalar, so the imaginary parts are the self-adjoint position and momentum operators of the Schrödinger representation, named here only as the analytic model, with no physical interpretation.
 
 ### A Graded Case
 
@@ -139,7 +139,7 @@ For a Lie superalgebra with a non-trivial odd part the grade involution is not t
 
 ## Summary
 
-The universal enveloping algebra of a real Lie algebra carries the **principal anti-automorphism** $\sigma$, the unique anti-automorphism equal to $-\mathrm{id}$ on the generators; it is involutive, it reverses the order of a product, it preserves the filtration and the centre, and it is the infinitesimal form of the inversion of the group, acting on the distributions supported at the identity as the transpose of the inversion. Its square is the identity and its fixed elements are the Hermitian ones, the generators being skew; the trace form is invariant and compatible with it, and the Casimir element of a compact form is positive. A graded Lie algebra carries in addition the **grade involution** $\alpha$, an involutive automorphism changing the sign of the odd part; $\sigma$ and $\alpha$ commute and generate the Klein four-group, whose third element is the graded transposition. A star-representation of $\mathrm{U}(\mathrm{G})$ on a Hilbert space is one with $\pi(u^{\star}) = \pi(u)^{*}$, and the derived representation of a unitary representation is a star-representation with skew-adjoint generators, the star playing the role of the Hilbert-space adjoint; the invariance of a Hermitian form on the Lie algebra is equivalent to the star identity on the enveloping algebra, so the unitary representations are the star-representations and the adjoint operation is the star.
+The universal enveloping algebra of a real Lie algebra carries the **principal anti-automorphism** $\sigma$, the unique anti-automorphism equal to $-\mathrm{id}$ on the generators; it is involutive, it reverses the order of a product, it preserves the filtration and the centre, and it is the infinitesimal form of the inversion of the group, acting on the distributions supported at the identity as the transpose of the inversion. Its square is the identity and its fixed elements are the Hermitian ones, the generators being anti-Hermitian; the trace form is invariant and compatible with it, and the Casimir element of a compact form is positive. A graded Lie algebra carries in addition the **grade involution** $\alpha$, an involutive automorphism changing the sign of the odd part; $\sigma$ and $\alpha$ commute and generate the Klein four-group, whose third element is the graded transposition. A star-representation of $\mathrm{U}(\mathrm{G})$ on a Hilbert space is one with $\pi(u^{\star}) = \pi(u)^{*}$, and the derived representation of a unitary representation is a star-representation with anti-self-adjoint generators, the star playing the role of the Hilbert-space adjoint; the invariance of a Hermitian form on the Lie algebra is equivalent to the star identity on the enveloping algebra, so the unitary representations are the star-representations and the adjoint operation is the star.
 
 ## Summary of Notation
 
@@ -150,10 +150,10 @@ The universal enveloping algebra of a real Lie algebra carries the **principal a
 | $\sigma(uv) = \sigma(v)\sigma(u)$, $\sigma^2 = \mathrm{id}$ | anti-multiplicativity and involution |
 | $\alpha$ | the grade involution, $\alpha(X) = (-1)^{\lvert X\rvert}X$ |
 | $\alpha\sigma$ | the graded transposition |
-| Hermitian, skew, positive | the elements with $u^{\star} = u$, $u^{\star} = -u$, and sums $u^{\star}u$ |
+| Hermitian, anti-Hermitian, positive | the elements with $u^{\star} = u$, $u^{\star} = -u$, and sums $u^{\star}u$ |
 | $\langle u,v\rangle = \tau(uv)$ | the trace form |
 | $\pi(u^{\star}) = \pi(u)^{*}$ | the star-representation, the unitary condition |
-| $\pi_*(X)^{*} = -\pi_*(X)$ | skew-adjointness of the generators |
+| $\pi_*(X)^{*} = -\pi_*(X)$ | anti-self-adjointness of the generators |
 | $\Omega$ | the Casimir, Hermitian and positive for a compact form |
 
 ## Further Reading

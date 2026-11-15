@@ -32,7 +32,7 @@ $$
 $$
 the sum of a Hermitian and an anti-Hermitian operator, the **real and imaginary parts** of $H$.
 
-**Proof.** If $H^{*}=H$ then $\langle Hx,x\rangle = \overline{\langle x,Hx\rangle} = \overline{\langle Hx,x\rangle}$ is real; conversely if the quadratic form is real, the polarisation of $\langle Hx,y\rangle$ from $q_H$ shows $\langle Hx,y\rangle = \langle x,Hy\rangle$, so $H^{*}=H$. The matrix statement is the previous proposition; the decomposition is the projection onto the self-adjoint and skew-adjoint parts, using $(H+H^{*})^{*} = H+H^{*}$ and $(H-H^{*})^{*} = H^{*}-H$. This is *Quadratic Forms and Polarisation* and *Hermitian Geometry and the Unitary Group*.
+**Proof.** If $H^{*}=H$ then $\langle Hx,x\rangle = \overline{\langle x,Hx\rangle} = \overline{\langle Hx,x\rangle}$ is real; conversely if the quadratic form is real, the polarisation of $\langle Hx,y\rangle$ from $q_H$ shows $\langle Hx,y\rangle = \langle x,Hy\rangle$, so $H^{*}=H$. The matrix statement is the previous proposition; the decomposition is the projection onto the self-adjoint and anti-self-adjoint parts, using $(H+H^{*})^{*} = H+H^{*}$ and $(H-H^{*})^{*} = H^{*}-H$. This is *Quadratic Forms and Polarisation* and *Hermitian Geometry and the Unitary Group*.
 
 ## The Hermitian Operators and the Hermitian Forms
 
@@ -46,7 +46,7 @@ is a bijection between the Hermitian operators on $V$ and the Hermitian forms on
 
 **Corollary (self-adjointness of the structural operators).** The complex structure is anti-Hermitian, $J^{*} = -J$; a unitary operator $U$ satisfies $U^{*}U = UU^{*} = I$, so its adjoint is its inverse, $U^{*} = U^{-1}$. A conjugation $c$ compatible with the form, $h(cx,cy) = \overline{h(x,y)}$, is **antiunitary**: it is antilinear, so it has no ordinary adjoint, but the adjoint of an antilinear map defined by $h(cx,y) = \overline{h(x,c^{\dagger}y)}$ gives $c^{\dagger} = c$, so a compatible conjugation is self-adjoint in the antilinear sense.
 
-**Proof.** $\langle Jx,y\rangle = -\langle x,Jy\rangle$ is the skew-adjointness of $J$ for a Hermitian form; $U^{*}U=I$ is the isometry condition, and the inverse of a unitary is its adjoint. For a compatible conjugation, $h(cx,y) = h(cx,c(cy)) = \overline{h(x,cy)}$ (using $c^2=\mathrm{id}$ and compatibility), which is exactly $c^{\dagger}=c$ under the antilinear adjoint convention. These are *The Involution on a Complex Vector Space* and *Hermitian Geometry and the Unitary Group*.
+**Proof.** $\langle Jx,y\rangle = -\langle x,Jy\rangle$ is the anti-self-adjointness of $J$ for a Hermitian form; $U^{*}U=I$ is the isometry condition, and the inverse of a unitary is its adjoint. For a compatible conjugation, $h(cx,y) = h(cx,c(cy)) = \overline{h(x,cy)}$ (using $c^2=\mathrm{id}$ and compatibility), which is exactly $c^{\dagger}=c$ under the antilinear adjoint convention. These are *The Involution on a Complex Vector Space* and *Hermitian Geometry and the Unitary Group*.
 
 ## The Spectral Statements and the Positivity
 

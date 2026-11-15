@@ -190,7 +190,7 @@ For $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ with the star-invo
 
 ### The Other Exchange, and the Other Symmetric Half
 
-The symmetrised product is the symmetric half of the **plain** exchange, the swap of the two arguments, and it is $R^{\varsigma}$-bilinear and no more. The other exchange, by a conjugation $c$, $f^{c}(x,y)=c(f(y,x))$, keeps the class of the sesquilinear products, and its symmetric half is the **conjugate-symmetric part** $f^{c}_{+}=\tfrac12(f+f^{c})$ of *The Conjugate-Symmetric and Skew-Conjugate-Symmetric Parts of a Sesquilinear Product*. That part is sesquilinear over $R$, where the symmetrised product of this article is only $R^{\varsigma}$-bilinear, and it is another operation.
+The symmetrised product is the symmetric half of the **plain** exchange, the swap of the two arguments, and it is $R^{\varsigma}$-bilinear and no more. The other exchange, by a conjugation $c$, $f^{c}(x,y)=c(f(y,x))$, keeps the class of the sesquilinear products, and its symmetric half is the **conjugate-symmetric part** $f^{c}_{+}=\tfrac12(f+f^{c})$ of *The Conjugate-Symmetric and Antisymmetric-Conjugate-Symmetric Parts of a Sesquilinear Product*. That part is sesquilinear over $R$, where the symmetrised product of this article is only $R^{\varsigma}$-bilinear, and it is another operation.
 
 On the biquaternion sesqualgebra over $(\mathbb{C},\bar{\cdot})$ with the derived operation $x \star y = xy^{*}$ and $c=\overline{\cdot}$ the conjugate-symmetric part is the **scalar part** of the product,
 

@@ -47,11 +47,11 @@ $$
 \mathcal{Q}(g) = \left\{ [\tilde{Q}] \in \mathbb{P}(\mathbb{B}_{\mathrm{spl}}) : g(\tilde{Q}) = 0 \right\} \subset \mathbb{P}^7 , \qquad g(\tilde{Q}) = \sum_\mu (q_\mu^2 - q'^2_\mu) .
 $$
 
-**Theorem.** $\mathcal{Q}(g)$ is a smooth non-degenerate quadric of dimension $6$ and of Kleinian signature $(4,4)$. It contains two families of maximal isotropic projective three-spaces, and through each point of $\mathcal{Q}(g)$ there passes exactly one member of each family. The two zero divisor ideals project to two skew maximal isotropic three-spaces, and these two lie in the same family.
+**Theorem.** $\mathcal{Q}(g)$ is a smooth non-degenerate quadric of dimension $6$ and of Kleinian signature $(4,4)$. It contains two families of maximal isotropic projective three-spaces, and through each point of $\mathcal{Q}(g)$ there passes exactly one member of each family. The two zero divisor ideals project to two anti-Hermitian maximal isotropic three-spaces, and these two lie in the same family.
 
 **Proof.** The null cone of $g$ is a smooth irreducible hypersurface away from the origin because the gradient of $g$ is nonzero there; projectivising gives a smooth quadric of dimension $6$. The maximal totally isotropic subspaces of a non-degenerate form of signature $(4,4)$ have dimension $4$, so their projectivisations are three-spaces; the two families and the incidence properties are the standard description of the maximal isotropic subspaces of a neutral form. The ideals are totally isotropic of dimension $4$ by *Split-Biquaternion Geometry*, so each projects to a maximal isotropic three-space.
 
-The zero divisor locus thus has a projective description: it is not a hypersurface but the union of two skew linear three-spaces on the quadric, and the quadric is the unique smooth quadric of signature $(4,4)$ up to projective equivalence.
+The zero divisor locus thus has a projective description: it is not a hypersurface but the union of two anti-Hermitian linear three-spaces on the quadric, and the quadric is the unique smooth quadric of signature $(4,4)$ up to projective equivalence.
 
 ## The Segre Embedding and Its Degeneration
 

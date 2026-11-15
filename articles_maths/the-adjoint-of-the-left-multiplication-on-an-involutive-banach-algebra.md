@@ -5,7 +5,7 @@
 
 The left multiplication $L_a$ is the archetype of the operators of a Banach algebra, and its adjoint with respect to the form of the category is again a left multiplication, that by the image of the parameter under the involution: $(L_a)^\dagger = L_{\sigma(a)}$. The formula carries three things at once: the explicit expression of the adjoint, the compatibility of the adjoint with the involution, and the fact that the left regular representation is a `*`-representation. From it follows the whole dictionary between the properties of the operator and the properties of the element — self-adjointness, skewness, unitarity, involutivity — and the adjoints of the right multiplication and of the unsigned two-sided operator. This article computes the adjoint of the left multiplication, proves the compatibility with the involution, derives the dictionary, and reads the whole thing through the topology.
 
-The article assumes the form of the category, the adjoint and the self-adjoint and skew operators from *The Involution on the Operator Algebra*; the involutive Banach algebra, the isometry of the involution and the self-adjoint, skew and unitary elements from *Adjoints in a Banach Algebra* and *Involutive Banach Algebras and the Gelfand–Naimark Theorem*; the one-sided multiplications, their composition and their commutation from *Operators on a Banach Algebra*; the unsigned two-sided operator from *The Signed Two-Sided Operator on a Banach Algebra*; and the adjoint of the left multiplication of the abstract algebra from *The Adjoint of the Left Multiplication on an Algebra*. The signed versions are *The Signed Adjoint Two-Sided Operator on a Banach Algebra* and *The Signed Adjoint of the Left Multiplication on an Involutive Banach Algebra*.
+The article assumes the form of the category, the adjoint and the self-adjoint and anti-self-adjoint operators from *The Involution on the Operator Algebra*; the involutive Banach algebra, the isometry of the involution and the self-adjoint, anti-Hermitian and unitary elements from *Adjoints in a Banach Algebra* and *Involutive Banach Algebras and the Gelfand–Naimark Theorem*; the one-sided multiplications, their composition and their commutation from *Operators on a Banach Algebra*; the unsigned two-sided operator from *The Signed Two-Sided Operator on a Banach Algebra*; and the adjoint of the left multiplication of the abstract algebra from *The Adjoint of the Left Multiplication on an Algebra*. The signed versions are *The Signed Adjoint Two-Sided Operator on a Banach Algebra* and *The Signed Adjoint of the Left Multiplication on an Involutive Banach Algebra*.
 
 Throughout, $A$ is a unital Banach algebra over $\mathbb{C}$ with a continuous involution $\sigma$, $a^* = \sigma(a)$, and the **form of the category** $\{x,y\} = \tau(x\sigma(y))$ attached to a continuous $\sigma$-invariant trace $\tau$; the adjoint $T^\dagger$ is defined by $\{Tx,y\} = \{x,T^\dagger y\}$; $L_a(x) = ax$ and $R_b(x) = xb$ are the one-sided multiplications; and the unsigned two-sided operator is $\Sigma_{a,b} = L_aR_b$, $\Sigma_{a,b}(x) = axb$.
 
@@ -46,12 +46,12 @@ the two-sided operator of the images, with the order of the parameters restored 
 **Theorem (the properties of the operator and of the element).** For $a \in A$,
 
 $$
-\boxed{\;L_a \text{ self-adjoint} \iff a = a^* ; \quad L_a \text{ skew} \iff a = -a^* ; \quad L_a \text{ unitary} \iff a \text{ unitary} ; \quad L_a \text{ an involution} \iff a^2 = 1, \ a = a^*\;} .
+\boxed{\;L_a \text{ self-adjoint} \iff a = a^* ; \quad L_a \text{ anti-Hermitian} \iff a = -a^* ; \quad L_a \text{ unitary} \iff a \text{ unitary} ; \quad L_a \text{ an involution} \iff a^2 = 1, \ a = a^*\;} .
 $$
 
 The same dictionary holds for the right multiplications, and it holds on the image of the regular representation in $\mathcal{A}(A)$.
 
-**Proof.** The left regular representation is injective, since $L_a = L_b$ forces $a = L_a(1) = L_b(1) = b$. Hence $L_a$ is self-adjoint iff $L_{\sigma(a)} = L_a$, that is $\sigma(a) = a$, and the skew case is the same with the sign; $L_a$ is unitary iff $L_{\sigma(a)}L_a = L_{\sigma(a)a} = L_{a^*a} = \mathrm{id}$ and $L_aL_{\sigma(a)} = L_{aa^*} = \mathrm{id}$, that is $a^*a = aa^* = 1$; and $L_a$ is an involution iff $L_a^2 = L_{a^2} = \mathrm{id}$, that is $a^2 = 1$, with $a = a^*$ from self-adjointness.
+**Proof.** The left regular representation is injective, since $L_a = L_b$ forces $a = L_a(1) = L_b(1) = b$. Hence $L_a$ is self-adjoint iff $L_{\sigma(a)} = L_a$, that is $\sigma(a) = a$, and the anti-Hermitian case is the same with the sign; $L_a$ is unitary iff $L_{\sigma(a)}L_a = L_{\sigma(a)a} = L_{a^*a} = \mathrm{id}$ and $L_aL_{\sigma(a)} = L_{aa^*} = \mathrm{id}$, that is $a^*a = aa^* = 1$; and $L_a$ is an involution iff $L_a^2 = L_{a^2} = \mathrm{id}$, that is $a^2 = 1$, with $a = a^*$ from self-adjointness.
 
 **Corollary (unitary elements and the operator norm).** If $A$ is a $\mathrm{C}^*$-algebra with the form positive definite, the unitary elements give isometric operators, $\lVert L_u\rVert = 1$, and the self-adjoint elements give self-adjoint operators with real spectrum; the map $a \mapsto L_a$ is an isometric `*`-homomorphism when the form is the Hilbert–Schmidt form and the norm is the operator norm.
 
@@ -65,7 +65,7 @@ The same dictionary holds for the right multiplications, and it holds on the ima
 
 **Example (the matrix algebra).** For $A = M_n(\mathbb{C})$ with the conjugate transpose and the trace form, $(L_X)^\dagger = L_{X^*}$ and $(R_Y)^\dagger = R_{Y^*}$; the self-adjoint left multiplications are those by Hermitian matrices, the unitary ones those by unitary matrices, and the regular representation embeds $M_n$ into its own Hilbert–Schmidt operators as a `*`-representation.
 
-**Example (the function algebra).** For $A = C(X,\mathbb{C})$ with the form $\{f,g\} = \int f\bar g$, the adjoint of $L_f$ is $L_{\bar f}$, and the dictionary reads that multiplication by $f$ is self-adjoint, skew or unitary exactly when $f$ is real, purely imaginary or unimodular.
+**Example (the function algebra).** For $A = C(X,\mathbb{C})$ with the form $\{f,g\} = \int f\bar g$, the adjoint of $L_f$ is $L_{\bar f}$, and the dictionary reads that multiplication by $f$ is self-adjoint, anti-Hermitian or unitary exactly when $f$ is real, purely imaginary or unimodular.
 
 ## The Commutant of the Regular Representation
 
@@ -83,7 +83,7 @@ so the commutant of $\{L_a\}$ is the algebra of the right multiplications, isomo
 
 ## Summary
 
-For an involutive Banach algebra with the form of the category, the one-sided multiplications are adjointable with $(L_a)^\dagger = L_{\sigma(a)}$ and $(R_b)^\dagger = R_{\sigma(b)}$, the unsigned two-sided operator with $(\Sigma_{a,b})^\dagger = \Sigma_{\sigma(a),\sigma(b)}$, and the left regular representation $a \mapsto L_a$ is a `*`-representation: the involution of the elements is the adjoint of the operators on its image. The dictionary between the operator and the element holds on the image: $L_a$ is self-adjoint, skew, unitary or an involution exactly when $a$ is self-adjoint, skew, unitary or an involutive self-adjoint element; unitary elements give isometric left multiplications when $A$ is a $\mathrm{C}^*$-algebra. The regular representation is bounded with norm one for an isometric involution, the adjointable operators form a closed subalgebra of $B(A)$, and the whole structure passes to the completion. The signed versions are the articles that follow.
+For an involutive Banach algebra with the form of the category, the one-sided multiplications are adjointable with $(L_a)^\dagger = L_{\sigma(a)}$ and $(R_b)^\dagger = R_{\sigma(b)}$, the unsigned two-sided operator with $(\Sigma_{a,b})^\dagger = \Sigma_{\sigma(a),\sigma(b)}$, and the left regular representation $a \mapsto L_a$ is a `*`-representation: the involution of the elements is the adjoint of the operators on its image. The dictionary between the operator and the element holds on the image: $L_a$ is self-adjoint, anti-Hermitian, unitary or an involution exactly when $a$ is self-adjoint, anti-Hermitian, unitary or an involutive self-adjoint element; unitary elements give isometric left multiplications when $A$ is a $\mathrm{C}^*$-algebra. The regular representation is bounded with norm one for an isometric involution, the adjointable operators form a closed subalgebra of $B(A)$, and the whole structure passes to the completion. The signed versions are the articles that follow.
 
 ## Summary of Notation
 
@@ -95,7 +95,7 @@ For an involutive Banach algebra with the form of the category, the one-sided mu
 | $(L_a)^\dagger = L_{\sigma(a)}$ | The adjoint of the left multiplication |
 | $(\Sigma_{a,b})^\dagger=\Sigma_{\sigma(a),\sigma(b)}$ | The adjoint of the unsigned two-sided operator |
 | $a \mapsto L_a$ | A `*`-representation, injective |
-| Dictionary | Self-adjoint/skew/unitary/involution on the element |
+| Dictionary | Self-adjoint/anti-Hermitian/unitary/involution on the element |
 | $\{T : TL_a = L_aT\} = \{R_b\}$ | Commutant of the regular representation |
 
 ## Further Reading

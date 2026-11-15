@@ -5,7 +5,7 @@
 
 The algebra of bounded operators of a Banach algebra is an algebra without an involution, but a **form** on the algebra turns it into one: the **adjoint** of a bounded operator $T$ is the operator $T^\dagger$ determined by $\{Tx,y\} = \{x,T^\dagger y\}$, and the map $T \mapsto T^\dagger$ is additive, involutive and anti-multiplicative, so it is an anti-automorphism of the operator algebra of order two. The form of the category is the **trace pairing** $\{x,y\} = \tau(x\sigma(y))$ attached to a continuous $\sigma$-invariant trace $\tau$; when it is nondegenerate the adjoint exists and is unique, the adjointable operators form a closed subalgebra, and the left regular representation $a \mapsto L_a$ becomes a `*`-representation, $(L_a)^\dagger = L_{\sigma(a)}$. This article fixes the form of the category, defines the adjoint and proves that it is an order-two anti-automorphism of the operator algebra.
 
-The article assumes the Banach algebra, the bounded operators, the operator norm and the left and right multiplications from *Operators on a Banach Algebra*; the involution, its continuity, the fixed and skew elements and the isometry of the involution from *Involutive Banach Algebras and the Gelfand–Naimark Theorem*; the self-adjoint and unitary elements from *Adjoints in a Banach Algebra*; the completeness and closed subalgebras of the operator algebra from *The Operator Algebra of a Banach Space*; and the trace, the pairing and the operator involution of the finite-dimensional case from *Frobenius Algebras* and *The Adjoint in an Involutive Algebra*. The signed and reflection adjoints are the articles that follow; the grade involution $\alpha$ appears there.
+The article assumes the Banach algebra, the bounded operators, the operator norm and the left and right multiplications from *Operators on a Banach Algebra*; the involution, its continuity, the fixed and anti-Hermitian elements and the isometry of the involution from *Involutive Banach Algebras and the Gelfand–Naimark Theorem*; the self-adjoint and unitary elements from *Adjoints in a Banach Algebra*; the completeness and closed subalgebras of the operator algebra from *The Operator Algebra of a Banach Space*; and the trace, the pairing and the operator involution of the finite-dimensional case from *Frobenius Algebras* and *The Adjoint in an Involutive Algebra*. The signed and reflection adjoints are the articles that follow; the grade involution $\alpha$ appears there.
 
 Throughout, $A$ is a unital Banach algebra over $\mathbb{C}$ with a **continuous involution** $\sigma$, $a^* = \sigma(a)$; $\tau : A \to \mathbb{C}$ is a **continuous $\sigma$-invariant trace**, $\tau(xy) = \tau(yx)$ and $\tau(\sigma(x)) = \tau(x)$, whose **trace pairing**
 
@@ -41,15 +41,15 @@ Hence the adjoint is an anti-automorphism of the algebra $\mathcal{A}(A)$ of ord
 
 **Proof.** Uniqueness and additivity are the nondegeneracy of the form: $\{x,(S+T)^\dagger y\} = \{(S+T)x,y\} = \{Sx,y\} + \{Tx,y\} = \{x,S^\dagger y\} + \{x,T^\dagger y\}$, and the form is conjugate-linear in the second argument. For the product, $\{x,(ST)^\dagger y\} = \{STx,y\} = \{Tx,S^\dagger y\} = \{x,T^\dagger S^\dagger y\}$. The order two is $\{x,Ty\} = \{T^\dagger x,y\} = \{x,(T^\dagger)^\dagger y\}$, and the compatibility with the scalars is the conjugation.
 
-**Theorem (self-adjoint and skew operators).** An operator $T$ is **self-adjoint** when $T^\dagger = T$ and **skew** when $T^\dagger = -T$; the self-adjoint operators form a real linear subspace and the skew operators the real subspace $i\mathcal{A}(A)^+$; every adjointable $T$ decomposes as
+**Theorem (self-adjoint and anti-self-adjoint operators).** An operator $T$ is **self-adjoint** when $T^\dagger = T$ and **anti-Hermitian** when $T^\dagger = -T$; the self-adjoint operators form a real linear subspace and the anti-self-adjoint operators the real subspace $i\mathcal{A}(A)^+$; every adjointable $T$ decomposes as
 
 $$
 \boxed{\;T = \tfrac12(T + T^\dagger) + \tfrac12(T - T^\dagger)\;} ,
 $$
 
-and the self-adjoint and the skew operators are closed when the adjoint is continuous. The self-adjoint operators are exactly the operators fixed by the involution, and they are the analogue in $\mathcal{A}(A)$ of the self-adjoint elements of $A$.
+and the self-adjoint and the anti-self-adjoint operators are closed when the adjoint is continuous. The self-adjoint operators are exactly the operators fixed by the involution, and they are the analogue in $\mathcal{A}(A)$ of the self-adjoint elements of $A$.
 
-**Proof.** The decomposition is formal and the parts are self-adjoint and skew by the involutivity and conjugate-linearity; closedness is the closedness of the fixed set of a continuous map, the adjoint being continuous for the topology of bounded convergence when $\sigma$ and $\tau$ are.
+**Proof.** The decomposition is formal and the parts are self-adjoint and anti-Hermitian by the involutivity and conjugate-linearity; closedness is the closedness of the fixed set of a continuous map, the adjoint being continuous for the topology of bounded convergence when $\sigma$ and $\tau$ are.
 
 **Theorem (the left regular representation is a `*`-representation).** The left and right multiplications are adjointable, with
 
@@ -89,7 +89,7 @@ so the adjoint is the transpose conjugated by the involution; the transpose is l
 
 ## Summary
 
-The form of the category of the operator theory on a Banach algebra $A$ with a continuous involution $\sigma$ and a continuous $\sigma$-invariant trace $\tau$ is the trace pairing $\{x,y\} = \tau(x\sigma(y))$, nondegenerate by hypothesis and sesquilinear; it defines the adjoint $T^\dagger$ by $\{Tx,y\} = \{x,T^\dagger y\}$. The adjoint is unique, additive, conjugate-linear and anti-multiplicative, $(ST)^\dagger = T^\dagger S^\dagger$ and $(T^\dagger)^\dagger = T$, so it is an order-two anti-automorphism of the algebra of adjointable operators, an isomorphism onto its opposite; the self-adjoint ($T^\dagger = T$) and skew ($T^\dagger = -T$) operators are real subspaces of the adjointable operators, closed when the adjoint is continuous, and every adjointable operator is their average. The left and right multiplications are adjointable with $(L_a)^\dagger = L_{\sigma(a)}$ and $(R_b)^\dagger = R_{\sigma(b)}$, so the left regular representation is a `*`-representation, and the adjointable operators form a closed subalgebra that is complete with $B(A)$. The signed, reflection and graded adjoints are the articles that follow.
+The form of the category of the operator theory on a Banach algebra $A$ with a continuous involution $\sigma$ and a continuous $\sigma$-invariant trace $\tau$ is the trace pairing $\{x,y\} = \tau(x\sigma(y))$, nondegenerate by hypothesis and sesquilinear; it defines the adjoint $T^\dagger$ by $\{Tx,y\} = \{x,T^\dagger y\}$. The adjoint is unique, additive, conjugate-linear and anti-multiplicative, $(ST)^\dagger = T^\dagger S^\dagger$ and $(T^\dagger)^\dagger = T$, so it is an order-two anti-automorphism of the algebra of adjointable operators, an isomorphism onto its opposite; the self-adjoint ($T^\dagger = T$) and anti-Hermitian ($T^\dagger = -T$) operators are real subspaces of the adjointable operators, closed when the adjoint is continuous, and every adjointable operator is their average. The left and right multiplications are adjointable with $(L_a)^\dagger = L_{\sigma(a)}$ and $(R_b)^\dagger = R_{\sigma(b)}$, so the left regular representation is a `*`-representation, and the adjointable operators form a closed subalgebra that is complete with $B(A)$. The signed, reflection and graded adjoints are the articles that follow.
 
 ## Summary of Notation
 
@@ -100,7 +100,7 @@ The form of the category of the operator theory on a Banach algebra $A$ with a c
 | $\{x,y\} = \tau(x\sigma(y))$ | The form of the category (trace pairing), nondegenerate |
 | $T^\dagger$, $\{Tx,y\} = \{x,T^\dagger y\}$ | The adjoint of an operator |
 | $(ST)^\dagger = T^\dagger S^\dagger$, $(T^\dagger)^\dagger = T$ | Anti-multiplicativity and order two |
-| $T^\dagger = T$, $T^\dagger = -T$ | Self-adjoint and skew operators |
+| $T^\dagger = T$, $T^\dagger = -T$ | Self-adjoint and anti-self-adjoint operators |
 | $\mathcal{A}(A)$ | The adjointable operators, a closed subalgebra |
 | $(L_a)^\dagger = L_{\sigma(a)}$ | The regular representation is a `*`-representation |
 | $T^{\mathsf t}$, $T^\dagger = \sigma T^{\mathsf t}\sigma$ | Transpose for the plain pairing; the adjoint |
@@ -109,6 +109,6 @@ The form of the category of the operator theory on a Banach algebra $A$ with a c
 
 - Charles E. Rickart, *General Theory of Banach Algebras* (Van Nostrand, 1960), for the operators of a Banach algebra and the adjoints with respect to a form.
 - Theodore W. Palmer, *Banach Algebras and the General Theory of ${}^*$-Algebras, Volume II* (Cambridge University Press, 2001), for the involutive Banach algebras and the operator involution.
-- Richard V. Kadison and John R. Ringrose, *Fundamentals of the Theory of Operator Algebras, Volume I* (Academic Press, 1983), for the Hilbert-space adjoint and the self-adjoint and skew operators.
+- Richard V. Kadison and John R. Ringrose, *Fundamentals of the Theory of Operator Algebras, Volume I* (Academic Press, 1983), for the Hilbert-space adjoint and the self-adjoint and anti-self-adjoint operators.
 - F. R. Gantmacher, *The Theory of Matrices, Volume I* (Chelsea, 1959), for the trace form, the adjoint of an operator and the Kronecker structure.
 - Béla Bollobás, *Linear Analysis* (Cambridge University Press, second edition, 1999), for the bounded operators, the topologies and the completeness of the operator algebra.

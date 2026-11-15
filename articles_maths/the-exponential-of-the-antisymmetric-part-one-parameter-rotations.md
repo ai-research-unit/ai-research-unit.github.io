@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The exponential of a skew matrix is a rotation, every rotation is such an exponential, and the map is never injective: the angles are defined modulo $2\pi$, and the rotation by $\pi$ has two preimages.**
+**The exponential of an antisymmetric matrix is a rotation, every rotation is such an exponential, and the map is never injective: the angles are defined modulo $2\pi$, and the rotation by $\pi$ has two preimages.**
 
 The article proves that $t\mapsto\exp(tK)$ is a one-parameter subgroup of $\mathrm{SO}(n)$, that $\exp$ maps $\operatorname{Skew}_n$ onto $\mathrm{SO}(n)$, and that it is never a diffeomorphism: the image is right, the injectivity is absent. It gives the angle formula at $n=2$, the axis formula of Rodrigues at $n=3$, the position of the eigenvalues on the unit circle, the block normal form, the dimension count, and the exact points at which the derivative is singular. It assumes *The Exponential of a Real Matrix and Its Image*, and defers the multiplicity of the angles to *Simple and Non-Simple Rotations: One Angle at $n\le3$, $\lfloor n/2\rfloor$ Planes at $n\ge4$*.
 
@@ -10,7 +10,7 @@ Throughout $n\ge2$, $J=\begin{pmatrix}0&-1\\1&0\end{pmatrix}$, and $[u]$ is the 
 
 ## The One-Parameter Subgroup
 
-**A skew matrix generates a one-parameter subgroup of rotations.** Let $K\in\operatorname{Skew}_n$, so that $K^{\mathsf T}=-K$. The matrices $sK$ and $tK$ commute, so
+**An antisymmetric matrix generates a one-parameter subgroup of rotations.** Let $K\in\operatorname{Skew}_n$, so that $K^{\mathsf T}=-K$. The matrices $sK$ and $tK$ commute, so
 
 $$
 \exp(sK)\,\exp(tK)=\exp\big((s+t)K\big),
@@ -32,7 +32,7 @@ is a one-parameter subgroup, and the map $K\mapsto\exp K$ is a map from the Lie 
 
 ## The Angle at $n=2$
 
-**At $n=2$ the antisymmetric space is a line and the exponential is a circle.** Every skew $2\times2$ matrix is $\theta J$, and the powers of $J$ are $J^{2}=-\mathrm{I}$, $J^{3}=-J$, $J^{4}=\mathrm{I}$. Splitting the series into even and odd parts gives
+**At $n=2$ the antisymmetric space is a line and the exponential is a circle.** Every antisymmetric $2\times2$ matrix is $\theta J$, and the powers of $J$ are $J^{2}=-\mathrm{I}$, $J^{3}=-J$, $J^{4}=\mathrm{I}$. Splitting the series into even and odd parts gives
 
 $$
 \exp(\theta J)=\Big(\sum_{k\ge0}\frac{(-1)^{k}\theta^{2k}}{(2k)!}\Big)\mathrm{I}+\Big(\sum_{k\ge0}\frac{(-1)^{k}\theta^{2k+1}}{(2k+1)!}\Big)J=\cos\theta\,\mathrm{I}+\sin\theta\,J .
@@ -46,7 +46,7 @@ Over $20$ random angles the formula holds with maximum error $7.9\cdot10^{-16}$.
 
 ## The Axis at $n=3$: Rodrigues
 
-**Every skew $3\times3$ matrix is an axis times an angle.** The space $\operatorname{Skew}_3$ is three-dimensional, and the map $u\mapsto[u]$ from $\mathbb{R}^{3}$ to it is a linear isomorphism, because the entries of $[u]$ are the three numbers $u_{1},u_{2},u_{3}$ with signs. So every $K\in\operatorname{Skew}_3$ is
+**Every anti-Hermitian $3\times3$ matrix is an axis times an angle.** The space $\operatorname{Skew}_3$ is three-dimensional, and the map $u\mapsto[u]$ from $\mathbb{R}^{3}$ to it is a linear isomorphism, because the entries of $[u]$ are the three numbers $u_{1},u_{2},u_{3}$ with signs. So every $K\in\operatorname{Skew}_3$ is
 
 $$
 K=\theta\,[u],\qquad \lVert u\rVert=1,\quad \theta\ge0,
@@ -72,13 +72,13 @@ Over $100$ random unit vectors and angles the two sides agree with maximum error
 
 ## The Spectrum on the Unit Circle
 
-**The eigenvalues of a skew matrix are purely imaginary.** If $Ku=\lambda u$ with $u\ne0$ complex, then
+**The eigenvalues of an antisymmetric matrix are purely imaginary.** If $Ku=\lambda u$ with $u\ne0$ complex, then
 
 $$
 \lambda\lVert u\rVert^{2}=\langle Ku,u\rangle=\langle u,K^{\mathsf T}u\rangle=-\langle u,Ku\rangle=-\bar\lambda\lVert u\rVert^{2},
 $$
 
-so $\lambda=-\bar\lambda$, and $\lambda$ is purely imaginary. Real skew matrices have real entries, so the nonzero eigenvalues come in conjugate pairs $\pm i\theta_{j}$ with $\theta_{j}>0$, and $0$ fills the rest.
+so $\lambda=-\bar\lambda$, and $\lambda$ is purely imaginary. Real antisymmetric matrices have real entries, so the nonzero eigenvalues come in conjugate pairs $\pm i\theta_{j}$ with $\theta_{j}>0$, and $0$ fills the rest.
 
 **The eigenvalues of the exponential are on the unit circle.** The eigenvalues of $\exp K$ are $e^{\lambda}$ for the eigenvalues $\lambda$ of $K$, so they are $e^{\pm i\theta_{j}}$, of modulus one, and $1$ for each zero eigenvalue. So
 
@@ -92,7 +92,7 @@ and the product of the eigenvalues, the determinant, is $1$.
 
 ## The Image Is Exactly $\mathrm{SO}(n)$
 
-**The spectral theorem for skew matrices puts every skew matrix in a block form.** For $K\in\operatorname{Skew}_n$ there are an orthogonal $U$ and angles $\theta_{1},\dots,\theta_{s}$ with $s=\lfloor n/2\rfloor$ such that
+**The spectral theorem for antisymmetric matrices puts every antisymmetric matrix in a block form.** For $K\in\operatorname{Skew}_n$ there are an orthogonal $U$ and angles $\theta_{1},\dots,\theta_{s}$ with $s=\lfloor n/2\rfloor$ such that
 
 $$
 K=U\operatorname{diag}\big(\theta_{1}J,\dots,\theta_{s}J,0,\dots,0\big)U^{\mathsf T}.
@@ -142,7 +142,7 @@ $$
 
 **The fibre over a rotation by $\pi$ has two points in the fundamental domain.** The general fibre is the orbit of $\theta[u]$ under $\theta\mapsto-\theta$ and under the translations $2\pi\mathbb{Z}$, and the two families meet exactly when $\theta$ is a multiple of $\pi$. So at $\pi$ the sign of the axis is lost.
 
-**The kernel of the exponential is the lattice of full turns.** A skew matrix $K$ satisfies $\exp K=\mathrm{I}$ exactly when every one of its angles is a multiple of $2\pi$:
+**The kernel of the exponential is the lattice of full turns.** An antisymmetric matrix $K$ satisfies $\exp K=\mathrm{I}$ exactly when every one of its angles is a multiple of $2\pi$:
 
 $$
 \ker\exp=\Big\{U\operatorname{diag}(2\pi k_{1}J,\dots,2\pi k_{s}J,0)U^{\mathsf T}\Big\}.
@@ -166,7 +166,7 @@ The factor $(\mathrm{I}-e^{-\operatorname{ad}K})/\operatorname{ad}K$ takes the v
 
 ## The Dimension and the Parameters
 
-**The two spaces have the same dimension.** A skew matrix is fixed by its entries above the diagonal, so
+**The two spaces have the same dimension.** An antisymmetric matrix is fixed by its entries above the diagonal, so
 
 $$
 \dim\operatorname{Skew}_n=\frac{n(n-1)}{2}=\dim\mathrm{SO}(n).
@@ -184,7 +184,7 @@ At $n=2$ there is one angle and no plane to choose; at $n=3$ one angle and an ax
 
 ## Summary
 
-For a skew matrix $K$, the path $t\mapsto\exp(tK)$ is a one-parameter subgroup of $\mathrm{SO}(n)$, and its derivative at the origin is $K$. At $n=2$, $\exp(\theta J)=\cos\theta\,\mathrm{I}+\sin\theta\,J$, with the angle defined modulo $2\pi$. At $n=3$, every skew matrix is $\theta[u]$ and the Rodrigues formula gives the rotation by $\theta$ about $u$. The eigenvalues of $\exp K$ lie on the unit circle, and $\exp K$ is orthogonal of determinant one. The spectral theorem for skew matrices gives the block form, and it proves that the image is exactly $\mathrm{SO}(n)$, in every dimension. The map is never injective: the angle is periodic, and at $n=3$ the rotation by $\pi$ about $u$ is also the exponential of $-\pi[u]$. On $\operatorname{Skew}_3$ the derivative has determinant $(2\sin(\theta/2)/\theta)^{2}$, so it is singular exactly at the full turns and invertible elsewhere. Both spaces have dimension $n(n-1)/2$, which is the number of angles plus the number of plane parameters.
+For an antisymmetric matrix $K$, the path $t\mapsto\exp(tK)$ is a one-parameter subgroup of $\mathrm{SO}(n)$, and its derivative at the origin is $K$. At $n=2$, $\exp(\theta J)=\cos\theta\,\mathrm{I}+\sin\theta\,J$, with the angle defined modulo $2\pi$. At $n=3$, every antisymmetric matrix is $\theta[u]$ and the Rodrigues formula gives the rotation by $\theta$ about $u$. The eigenvalues of $\exp K$ lie on the unit circle, and $\exp K$ is orthogonal of determinant one. The spectral theorem for antisymmetric matrices gives the block form, and it proves that the image is exactly $\mathrm{SO}(n)$, in every dimension. The map is never injective: the angle is periodic, and at $n=3$ the rotation by $\pi$ about $u$ is also the exponential of $-\pi[u]$. On $\operatorname{Skew}_3$ the derivative has determinant $(2\sin(\theta/2)/\theta)^{2}$, so it is singular exactly at the full turns and invertible elsewhere. Both spaces have dimension $n(n-1)/2$, which is the number of angles plus the number of plane parameters.
 
 ## Summary of Notation
 
@@ -193,7 +193,7 @@ For a skew matrix $K$, the path $t\mapsto\exp(tK)$ is a one-parameter subgroup o
 | $\operatorname{Skew}_n$ | the antisymmetric matrices, of dimension $n(n-1)/2$ |
 | $J$ | the block $\begin{pmatrix}0&-1\\1&0\end{pmatrix}$ |
 | $R(\theta)$ | $\cos\theta\,\mathrm{I}+\sin\theta\,J$ |
-| $[u]$ | the skew matrix of the cross product with $u$ |
+| $[u]$ | the antisymmetric matrix of the cross product with $u$ |
 | $\theta_{j}$ | the rotation angles, positive, in $[0,\pi]$ |
 | $s=\lfloor n/2\rfloor$ | the number of angles |
 | $d\exp_{K}$ | the derivative of the exponential at $K$ |

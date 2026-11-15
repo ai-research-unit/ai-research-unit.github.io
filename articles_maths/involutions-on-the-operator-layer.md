@@ -51,11 +51,11 @@ Consequently the adjoint is an **anti-involution** of $\operatorname{End}_k(k[G]
 
 **Proof.** From $(TT^{-1})^{*}=(T^{-1})^{*}T^{*}=\mathrm{id}$ and $(T^{-1}T)^{*}=T^{*}(T^{-1})^{*}=\mathrm{id}$, the operator $T^{*}$ has two-sided inverse $(T^{-1})^{*}$.
 
-**Definition (self-adjoint, skew-adjoint, unitary).** An operator $T$ is **self-adjoint** if $T^{*}=T$, **skew-adjoint** if $T^{*}=-T$, and **unitary** if $T^{*}T=TT^{*}=\mathrm{id}$.
+**Definition (self-adjoint, anti-self-adjoint, unitary).** An operator $T$ is **self-adjoint** if $T^{*}=T$, **anti-self-adjoint** if $T^{*}=-T$, and **unitary** if $T^{*}T=TT^{*}=\mathrm{id}$.
 
-**Proposition (the elementary criteria).** $T$ is unitary if and only if $T$ is invertible with $T^{*}=T^{-1}$; $T$ is self-adjoint if and only if its matrix is symmetric in the basis $G$; $T$ is skew-adjoint if and only if its matrix is antisymmetric. The identity is self-adjoint and unitary, and the self-adjoint operators and the skew-adjoint operators are the $+1$ and $-1$ eigenspaces of the adjoint.
+**Proposition (the elementary criteria).** $T$ is unitary if and only if $T$ is invertible with $T^{*}=T^{-1}$; $T$ is self-adjoint if and only if its matrix is symmetric in the basis $G$; $T$ is anti-self-adjoint if and only if its matrix is antisymmetric. The identity is self-adjoint and unitary, and the self-adjoint operators and the anti-self-adjoint operators are the $+1$ and $-1$ eigenspaces of the adjoint.
 
-**Proof.** The unitary criterion is the uniqueness of the inverse. In the orthonormal basis the adjoint is the transpose, so $T^{*}=T$ is symmetry of the matrix and $T^{*}=-T$ is antisymmetry. The last statement is that the adjoint is an involution, so its fixed elements are the self-adjoint ones and its $(-1)$-eigenspace is the skew-adjoint ones.
+**Proof.** The unitary criterion is the uniqueness of the inverse. In the orthonormal basis the adjoint is the transpose, so $T^{*}=T$ is symmetry of the matrix and $T^{*}=-T$ is antisymmetry. The last statement is that the adjoint is an involution, so its fixed elements are the self-adjoint ones and its $(-1)$-eigenspace is the anti-self-adjoint ones.
 
 ## The Inversion on the Operator Layer
 
@@ -79,7 +79,7 @@ $$
 
 ## Summary
 
-The **operator layer** of the group is the algebra $\operatorname{End}_k(k[G])$ of linear operators on the group algebra. The **natural pairing** is $\langle x,y\rangle=\sum_g x_g y_g$, orthonormal on the basis $G$, symmetric and nondegenerate, and invariant under the inversion. The **adjoint** $T^{*}$ is defined by $\langle Tx,y\rangle=\langle x,T^{*}y\rangle$; it is an anti-involution of the operator algebra, $(ST)^{*}=T^{*}S^{*}$ and $(T^{*})^{*}=T$, an invertible operator has invertible adjoint with $(T^{-1})^{*}=(T^{*})^{-1}$, and the self-adjoint, skew-adjoint and unitary operators are the familiar classes.
+The **operator layer** of the group is the algebra $\operatorname{End}_k(k[G])$ of linear operators on the group algebra. The **natural pairing** is $\langle x,y\rangle=\sum_g x_g y_g$, orthonormal on the basis $G$, symmetric and nondegenerate, and invariant under the inversion. The **adjoint** $T^{*}$ is defined by $\langle Tx,y\rangle=\langle x,T^{*}y\rangle$; it is an anti-involution of the operator algebra, $(ST)^{*}=T^{*}S^{*}$ and $(T^{*})^{*}=T$, an invertible operator has invertible adjoint with $(T^{-1})^{*}=(T^{*})^{-1}$, and the self-adjoint, anti-self-adjoint and unitary operators are the familiar classes.
 
 The inversion contributes two operations: the adjoint of the translations, $(L_a)^{*}=L_{a^{-1}}$ and $(R_b)^{*}=R_{b^{-1}}$, and the conjugation by the linear extension of the inversion, $\mathrm{ad}_{\iota}(T)=\Sigma_{\iota}T\Sigma_{\iota}$, which is an automorphism of order two of the operator algebra, respects the adjoint, and exchanges the translations, $\mathrm{ad}_{\iota}(L_a)=R_{a^{-1}}$ and $\mathrm{ad}_{\iota}(R_b)=L_{b^{-1}}$. The two operations differ, and they agree on a left translation exactly when its parameter is central. The conventions fixed here are used by the six articles of the `* Operator Theory` group that follow.
 

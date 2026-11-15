@@ -57,7 +57,7 @@ $$
 \tilde Q_{X}=\tfrac12(\tilde Q-\tilde Q^{*})\in\mathbb{B}_{\Phi} .
 $$
 
-This is the Hermitian/anti-Hermitian decomposition, and it is the matrix decomposition of an operator into its self-adjoint and skew-adjoint parts. It is also the operation performed by the complex structure: since $i\,\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$, multiplication by $i$ is exactly the map that exchanges the two sectors. The complexification that defines $\mathbb{B}$ and the two-sector decomposition are therefore the same structure.
+This is the Hermitian/anti-Hermitian decomposition, and it is the matrix decomposition of an operator into its self-adjoint and anti-self-adjoint parts. It is also the operation performed by the complex structure: since $i\,\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$, multiplication by $i$ is exactly the map that exchanges the two sectors. The complexification that defines $\mathbb{B}$ and the two-sector decomposition are therefore the same structure.
 
 Now consider the complex amplitude of the mode. Writing $a=\tilde{Q}_1+i\tilde{Q}_2$ with $\tilde{Q}_1,\tilde{Q}_2$ Hermitian,
 

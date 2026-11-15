@@ -211,7 +211,7 @@ When $R$ is a field of characteristic zero, or more generally a ring in which $n
 
 **Definition.** A multilinear map $f:M^n \to P$ is **symmetric** if $f(m_{\sigma(1)},\dots,m_{\sigma(n)})=f(m_1,\dots,m_n)$ for every $\sigma$, and **antisymmetric** if $f(m_{\sigma(1)},\dots,m_{\sigma(n)})=\operatorname{sgn}(\sigma)f(m_1,\dots,m_n)$ for every $\sigma$. It is **alternating** if $f$ vanishes whenever two of its arguments are equal.
 
-**Proposition.** An alternating multilinear map is antisymmetric; conversely a antisymmetric map is alternating when $2$ is invertible in $R$. Over a ring in which $2$ is not invertible the two conditions differ, and being alternating is the stronger of the two.
+**Proposition.** An alternating multilinear map is antisymmetric; conversely an antisymmetric map is alternating when $2$ is invertible in $R$. Over a ring in which $2$ is not invertible the two conditions differ, and being alternating is the stronger of the two.
 
 *Proof.* Suppose $f$ is alternating. For fixed arguments $x,y$ in two positions, multilinearity applied to $x+y$ in both positions gives
 $$

@@ -73,7 +73,7 @@ to $A$ as the anti-automorphism with $(uv)^{\natural}=v^{\natural}u^{\natural}$.
 corpus; the name *Dirac operator* is the classical name of the operator $\partial/\partial x_t+\sum_{i\ge1}e_i\partial/\partial x_i$
 in the literature, and the corpus reserves it for the self-adjoint family $\sum_jc(e_j)\nabla_{e_j}$
 of *Dirac Differential Operators*. The two are not the same operator: the family of that article has
-all its coefficients skew for the fibre metric, while $D$ carries the single Hermitian coefficient
+all its coefficients anti-self-adjoint for the fibre metric, while $D$ carries the single Hermitian coefficient
 $e_t=1$, which is the origin of the failure of symmetry recorded below. The present article uses the
 symbol $D$ throughout and the name *Dirac operator* only in its title and in this remark. That $D$
 and the self-adjoint vector operator $\sum_{i\ge1}e_i\partial/\partial x_i$ are the two faces of one
@@ -150,7 +150,7 @@ Operator*.
 ### The Adjoint and the Split into Hermitian Parts
 
 The operator is read with the module form of Part II, so let $(\cdot,\cdot)$ be a Hermitian form on
-$\mathcal{S}$ for which the Clifford coefficients are skew, $(e_iv,w)=-(v,e_iw)$ for $i\ge1$; the
+$\mathcal{S}$ for which the Clifford coefficients are anti-Hermitian, $(e_iv,w)=-(v,e_iw)$ for $i\ge1$; the
 form exists on a Hermitian Clifford module and is the one of *Hermitian Modules over a Hermitian
 Algebra with Hermitian Adjoint*. The adjoint of an operator is taken with respect to it, as in *The
 Adjoint of the One-Sided Action with Hermitian Adjoint*.
@@ -161,7 +161,7 @@ $$
 D^{*} = -\partial/\partial x_t+\sum_{i=1}^{m}e_i\partial/\partial x_i = -\bar D .
 $$
 
-*Proof.* The Clifford coefficients $e_i$ for $i\ge1$ are skew for the module form, so $e_i^{*}=-e_i$
+*Proof.* The Clifford coefficients $e_i$ for $i\ge1$ are anti-self-adjoint for the module form, so $e_i^{*}=-e_i$
 under the adjoint of the one-sided action, while the scalar coefficient $e_t=1$ is Hermitian;
 the coordinate derivative satisfies $(\partial/\partial x_\mu)^{*}=-\partial/\partial x_\mu$ on compactly
 supported functions. Reversing the factors in the adjoint of a product,
@@ -172,13 +172,13 @@ $D^{*}=-\partial/\partial x_t+\sum_{i\ge1}e_i\partial/\partial x_i=-\bar D$.
 **Corollary (the operator is not symmetric).** $D$ satisfies $D^{*}=-\bar D$, so $D$ is symmetric
 only if $D=-\bar D$, that is only if $\partial/\partial x_t=0$; on the full space of functions $D$ is neither
 symmetric nor normal. Its **self-adjoint part** is the vector operator
-$D_{\mathrm{sa}}=\tfrac12(D-D^{*})=\sum_{i\ge1}e_i\partial/\partial x_i$, and its **skew-adjoint part** is
+$D_{\mathrm{sa}}=\tfrac12(D-D^{*})=\sum_{i\ge1}e_i\partial/\partial x_i$, and its **anti-self-adjoint part** is
 $\partial/\partial x_t$. The factorisation of the Laplacian can be read through the split: $D\bar D=\Delta$ is
 the product of two distinct operators, while $D_{\mathrm{sa}}^2=-\Delta$ is the square of one
 self-adjoint operator.
 
 *Proof.* The split is immediate from the Proposition. For the square, $D_{\mathrm{sa}}$ has all
-coefficients skew, so expanding $D_{\mathrm{sa}}^2$ gives
+coefficients anti-Hermitian, so expanding $D_{\mathrm{sa}}^2$ gives
 $\sum_{i,j}e_ie_j\partial^2/\partial x_i\partial x_j =-\sum_i\partial^2/\partial x_i^2=-\Delta$.
 
 **Remark (the two factorisations, and which article owns which).** The operator $D_{\mathrm{sa}}$
@@ -307,10 +307,10 @@ $\sigma(\zeta)$ is a unit for $\zeta\neq0$, $D$ is elliptic, and $D\bar D=\bar D
 coefficients are constant, $D$ is the divergence of the field with components $e_\mu f$, and the
 divergence theorem applies to it with the conormal element $\nu_B=\nu_t+\sum_{i\ge1}\nu_i e_i$.
 
-The operator is not symmetric: with respect to the module form in which the vectors are skew,
+The operator is not symmetric: with respect to the module form in which the vectors are anti-Hermitian,
 $D^{*}=-\bar D$, so $D$ is neither symmetric nor normal, and it splits into the self-adjoint vector
 part $D_{\mathrm{sa}}=\sum_{i\ge1}e_i\partial/\partial x_i$, with $D_{\mathrm{sa}}^2=-\Delta$, and the
-skew-adjoint scalar part $\partial/\partial x_t$; the two factorisations of the Laplacian by $D\bar D$ and by
+anti-self-adjoint scalar part $\partial/\partial x_t$; the two factorisations of the Laplacian by $D\bar D$ and by
 $D_{\mathrm{sa}}^2$ are the two faces of the split, and the spectral theory of the second is *Dirac
 Differential Operators*. The kernel of $D$ is the class of monogenic functions, organised in
 polynomials by the Fischer decomposition
@@ -337,7 +337,7 @@ Twisted Cauchy–Riemann Operator*.
 | $\Delta=\sum_\mu\partial^2/\partial x_\mu^2$ | Laplacian; $D\bar D=\bar DD=\Delta$ |
 | $\sigma(\zeta)=\zeta_t+\sum_{i\ge1}e_i\zeta_i$ | Principal symbol; $\sigma\bar\sigma=|\zeta|^2$ |
 | $\nu_B=\nu_t+\sum_{i\ge1}\nu_i e_i$ | Conormal element of a boundary |
-| $D^{*}=-\bar D$ | Adjoint for the module form with skew vectors |
+| $D^{*}=-\bar D$ | Adjoint for the module form with anti-Hermitian vectors |
 | $D_{\mathrm{sa}}=\sum_{i\ge1}e_i\partial/\partial x_i$ | Self-adjoint vector part; $D_{\mathrm{sa}}^2=-\Delta$ |
 | $\mathcal{S}$-valued $\mathcal{P}_k$, $\mathcal M_k$ | Homogeneous polynomials of degree $k$; solid spherical monogenics |
 | $E=\bar D\Phi=\omega_m^{-1}x^{\natural}|x|^{-m-1}$ | Fundamental solution of $D$, the Cauchy kernel |

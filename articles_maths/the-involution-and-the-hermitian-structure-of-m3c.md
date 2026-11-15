@@ -34,7 +34,7 @@ It is conjugate-linear, not complex-linear, and it is an anti-automorphism of th
 - $A$ is **anti-Hermitian** when $A^{*}=-A$, equivalently $a_{ij}=-\bar a_{ji}$.
 - $A$ is **$*$-unitary** when $A^{*}A=AA^{*}=I$.
 
-The diagonal entries of a Hermitian matrix are real; the diagonal entries of a anti-Hermitian matrix are purely imaginary. The identity $I$ is Hermitian, and $iI$ is anti-Hermitian.
+The diagonal entries of a Hermitian matrix are real; the diagonal entries of an anti-Hermitian matrix are purely imaginary. The identity $I$ is Hermitian, and $iI$ is anti-Hermitian.
 
 **The Hermitian and anti-Hermitian decomposition.** Every $A$ splits uniquely as
 $$

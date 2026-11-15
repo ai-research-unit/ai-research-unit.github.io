@@ -22,7 +22,7 @@ $$
 \langle PXP^{-1},PYP^{-1}\rangle=\operatorname{tr}(PXY P^{-1})=\operatorname{tr}(XY)=\langle X,Y\rangle .
 $$
 
-So $\mathrm{GL}_n(\mathbb{R})$ acts by isometries of the form, and the form is the invariant bilinear form of the algebra. The invariance is the reason the form is compatible with the derivation $\operatorname{ad}_A$, which is skew for it by *The Derivation $X\mapsto[A,X]$ and Its Skewness for the Trace Form*.
+So $\mathrm{GL}_n(\mathbb{R})$ acts by isometries of the form, and the form is the invariant bilinear form of the algebra. The invariance is the reason the form is compatible with the derivation $\operatorname{ad}_A$, which is anti-self-adjoint for it by *The Derivation $X\mapsto[A,X]$ and Its Skewness for the Trace Form*.
 
 **The invariance does not make the form definite, and that is the point of the indefinite signature.** An invariant form on a non-compact group cannot be definite, and $\mathrm{GL}_n(\mathbb{R})$ is non-compact; the signature computed below is the exact measure of the failure. The form is positive on the symmetric half precisely because the symmetric half is not a Lie subalgebra but a space of stretches.
 
@@ -164,4 +164,4 @@ The form $\langle X,Y\rangle=\operatorname{tr}(XY)$ is symmetric, nondegenerate 
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the associative trace form and its nondegeneracy.
 - [The Two Halves as Orthogonal Complements](the-two-halves-as-orthogonal-complements.html), for the orthogonality of the split that the signature follows.
 - [The Jordan Algebra $\operatorname{Sym}_n$](the-jordan-algebra-sym-n.html), for the positive definiteness on the symmetric half.
-- [The Derivation $X\mapsto[A,X]$ and Its Skewness for the Trace Form](the-derivation-commutator-and-its-skewness-for-the-trace-form.html), for the invariance that makes every derivation skew.
+- [The Derivation $X\mapsto[A,X]$ and Its Skewness for the Trace Form](the-derivation-commutator-and-its-skewness-for-the-trace-form.html), for the invariance that makes every derivation anti-Hermitian.

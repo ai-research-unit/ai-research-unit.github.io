@@ -33,7 +33,7 @@ The map $a\mapsto\alpha(\hat a)$ is an anti-automorphism and an involution of th
 
 ## Self-Adjoint Operators and Isometries
 
-**Proposition (self-adjointness).** The signed left multiplication $\mathrm{L}^{\alpha}_a$ is self-adjoint exactly when $\alpha(\hat a)=a$. The elements with $\alpha(\hat a)=a$ form a subspace of the algebra, they include the scalars and the unit, and a vector $u$ satisfies the condition because $\alpha(\vec u)=u$: **the signed left multiplication by a vector is always self-adjoint**, in contrast with the skew-adjointness $L_u^*=-L_u$ of the ordinary left multiplication.
+**Proposition (self-adjointness).** The signed left multiplication $\mathrm{L}^{\alpha}_a$ is self-adjoint exactly when $\alpha(\hat a)=a$. The elements with $\alpha(\hat a)=a$ form a subspace of the algebra, they include the scalars and the unit, and a vector $u$ satisfies the condition because $\alpha(\vec u)=u$: **the signed left multiplication by a vector is always self-adjoint**, in contrast with the anti-self-adjointness $L_u^*=-L_u$ of the ordinary left multiplication.
 
 **Proof.** $\bigl(\mathrm{L}^{\alpha}_a\bigr)^{*}=\mathrm{L}^{\alpha}_{\alpha(\hat a)}$, and the signed left multiplications are faithful, so self-adjointness is $\alpha(\hat a)=a$; the fixed set of an involution is a subspace; the vector case is the computation $\alpha(\vec u)=\alpha(-u)=u$ above.
 

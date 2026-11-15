@@ -168,7 +168,7 @@ $$
 \mathfrak{su}(4)\longrightarrow SU(4),
 $$
 
-because $\det e^X=e^{\operatorname{tr}X}$ and $(e^X)^*=e^{X^*}$. The exponential of a traceless matrix has determinant one; the exponential of a anti-Hermitian matrix is $*$-unitary; the exponential of a Hermitian matrix is positive definite.
+because $\det e^X=e^{\operatorname{tr}X}$ and $(e^X)^*=e^{X^*}$. The exponential of a traceless matrix has determinant one; the exponential of an anti-Hermitian matrix is $*$-unitary; the exponential of a Hermitian matrix is positive definite.
 
 **The polar decomposition.** Every invertible $A$ is
 
@@ -176,7 +176,7 @@ $$
 A=UP=e^{iK}e^H,
 $$
 
-with $K,H$ Hermitian. The $*$-unitary factor is the exponential of a anti-Hermitian matrix $iK$, and the positive factor is the exponential of the Hermitian matrix $H$. The polar decomposition is the global Cartan decomposition of the group.
+with $K,H$ Hermitian. The $*$-unitary factor is the exponential of an anti-Hermitian matrix $iK$, and the positive factor is the exponential of the Hermitian matrix $H$. The polar decomposition is the global Cartan decomposition of the group.
 
 ## Surjectivity and Non-Injectivity
 

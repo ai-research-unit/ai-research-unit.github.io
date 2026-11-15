@@ -53,11 +53,11 @@ With respect to the **$\sigma$-twisted pairing** $\{x,y\} = \tau(x\sigma(y))$ th
 
 **(c) The commutative case.** For a commutative $A$, $L_a = R_a$ and every $L_a$ is self-adjoint; the adjoint involution is the identity on the image of $A$ in $\operatorname{End}(A)$, which is the content of the centrality criterion.
 
-**(d) The connection with the derivation.** The inner derivation of *Derivations of a Ring* is $D_a = L_a-R_a$, so the adjoint of the inner derivation is the inner derivation of the image, $(L_a-R_a)^{*} = R_a-L_a = -D_a$: the inner derivations are **skew-adjoint** for the natural pairing, and the self-adjoint part of $L_a$ is the centre. This is the ring-level face of the skew-derivation calculus of *Star-Derivations and the Skew Derivations*.
+**(d) The connection with the derivation.** The inner derivation of *Derivations of a Ring* is $D_a = L_a-R_a$, so the adjoint of the inner derivation is the inner derivation of the image, $(L_a-R_a)^{*} = R_a-L_a = -D_a$: the inner derivations are **anti-self-adjoint** for the natural pairing, and the self-adjoint part of $L_a$ is the centre. This is the ring-level face of the anti-Hermitian derivation calculus of *Star-Derivations and the Anti-Hermitian Derivations*.
 
 ## Summary
 
-With respect to the natural pairing $\langle x,y\rangle = \tau(xy)$ of a ring with a trace, the adjoint of the left multiplication is the right multiplication and conversely, $L_a^{*} = R_a$, $R_b^{*} = L_b$; the adjoint is the involution of *Involutions of the Endomorphism Ring* on the subring of the regular representation, and it switches the sides. The right multiplication is the conjugate of a left multiplication, $R_a = \sigma L_{\sigma(a)}\sigma$ for an involution $\sigma$ and a $\sigma$-invariant trace, and with respect to the twisted pairing $\{x,y\} = \tau(x\sigma(y))$ the adjoint is $L_a^{*_\sigma} = L_{\sigma(a)}$. The left multiplication is self-adjoint for the natural pairing exactly when $a$ is central and for the twisted pairing exactly when $a$ is symmetric; the unitary left multiplications are the central involutions. The inner derivation $D_a = L_a-R_a$ is skew-adjoint, which is the ring-level form of the skew derivations of *Star-Derivations and the Skew Derivations*.
+With respect to the natural pairing $\langle x,y\rangle = \tau(xy)$ of a ring with a trace, the adjoint of the left multiplication is the right multiplication and conversely, $L_a^{*} = R_a$, $R_b^{*} = L_b$; the adjoint is the involution of *Involutions of the Endomorphism Ring* on the subring of the regular representation, and it switches the sides. The right multiplication is the conjugate of a left multiplication, $R_a = \sigma L_{\sigma(a)}\sigma$ for an involution $\sigma$ and a $\sigma$-invariant trace, and with respect to the twisted pairing $\{x,y\} = \tau(x\sigma(y))$ the adjoint is $L_a^{*_\sigma} = L_{\sigma(a)}$. The left multiplication is self-adjoint for the natural pairing exactly when $a$ is central and for the twisted pairing exactly when $a$ is symmetric; the unitary left multiplications are the central involutions. The inner derivation $D_a = L_a-R_a$ is anti-self-adjoint, which is the ring-level form of the anti-Hermitian derivations of *Star-Derivations and the Anti-Hermitian Derivations*.
 
 ## Summary of Notation
 
@@ -71,7 +71,7 @@ With respect to the natural pairing $\langle x,y\rangle = \tau(xy)$ of a ring wi
 | $L_a^{*_\sigma} = L_{\sigma(a)}$ | Adjoint under the twisted pairing |
 | $L_a$ self-adjoint $\iff a\in Z(A)$ | Natural pairing |
 | $L_a$ self-adjoint $\iff \sigma(a)=a$ | Twisted pairing |
-| $D_a = L_a-R_a$ | Inner derivation; skew-adjoint |
+| $D_a = L_a-R_a$ | Inner derivation; anti-self-adjoint |
 
 ## Further Reading
 

@@ -21,7 +21,7 @@ $$
 \omega(u, u) = 0
 $$
 
-for all $u \in V$. An alternating bilinear form is also called a **$2$-form**, or a **skew form**.
+for all $u \in V$. An alternating bilinear form is also called a **$2$-form**, or a **antisymmetric form**.
 
 **Proposition.** Let $\omega$ be an alternating bilinear form. Then $\omega(u, v) = -\omega(v, u)$ for all $u, v \in V$. Conversely, if $2$ is invertible in $K$ and $\omega(u, v) = -\omega(v, u)$ for all $u, v$, then $\omega$ is alternating.
 

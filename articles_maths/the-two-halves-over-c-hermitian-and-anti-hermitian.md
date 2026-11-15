@@ -56,7 +56,7 @@ $$
 
 so the commutator stays in the half, and the Jacobi identity holds automatically. The dimension is $n^{2}$, and the traceless part is the Lie algebra $\mathfrak{su}(n)$, of dimension $n^{2}-1$, which is the Lie algebra of $SU(n)$.
 
-**A anti-Hermitian matrix has a purely imaginary spectrum.** If $Kv=\lambda v$ then $\lambda\|v\|^{2}=v^{*}Kv$ and taking conjugates gives $\bar\lambda\|v\|^{2}=v^{*}K^{*}v=-v^{*}Kv=-\lambda\|v\|^{2}$, so $\lambda=-\bar\lambda$. The eigenvalues are therefore purely imaginary, and the matrix is unitarily diagonalisable with imaginary diagonal: $K=Ui\Theta U^{*}$ with $\Theta$ real diagonal.
+**An anti-Hermitian matrix has a purely imaginary spectrum.** If $Kv=\lambda v$ then $\lambda\|v\|^{2}=v^{*}Kv$ and taking conjugates gives $\bar\lambda\|v\|^{2}=v^{*}K^{*}v=-v^{*}Kv=-\lambda\|v\|^{2}$, so $\lambda=-\bar\lambda$. The eigenvalues are therefore purely imaginary, and the matrix is unitarily diagonalisable with imaginary diagonal: $K=Ui\Theta U^{*}$ with $\Theta$ real diagonal.
 
 **The half contains no nonzero real multiple of the identity, and that is what makes it a Lie algebra and not a Jordan algebra.** The identity is Hermitian and not anti-Hermitian, so the half has no unit. The anticommutator of two anti-Hermitian matrices is Hermitian, so the half is not closed under the Jordan product; the commutator is the product it carries.
 
@@ -82,7 +82,7 @@ so the bilinear form $B(A,B)=\operatorname{tr}(AB)$ is positive definite on the 
 
 ## The Exponential of Each Half
 
-**The exponential of a anti-Hermitian matrix is unitary.** If $K^{*}=-K$ then
+**The exponential of an anti-Hermitian matrix is unitary.** If $K^{*}=-K$ then
 
 $$
 (e^{K})^{*}e^{K}=e^{K^{*}}e^{K}=e^{-K}e^{K}=\mathrm{I},\qquad |\det e^{K}|=e^{\operatorname{Re}\operatorname{tr}K}=1 ,
@@ -104,7 +104,7 @@ the second because the eigenvalues of $e^{H}$ are $e^{\lambda_k}>0$ with $\lambd
 
 **At $n=2$ the split is $8=4+4$ in real dimensions.** The Hermitian half is spanned over $\mathbb{R}$ by $\mathrm{I},\sigma_1,\sigma_2,\sigma_3$, and the anti-Hermitian half is $i$ times it, spanned by $i\mathrm{I},i\sigma_1,i\sigma_2,i\sigma_3$. This is the cleanest instance of the equal split, and it is the reason the biquaternion algebra is read through the Hermitian and anti-Hermitian halves rather than through the symmetric and antisymmetric ones.
 
-**The two halves are the two sectors of the biquaternion reading.** A Hermitian element of $M_2(\mathbb{C})$ corresponds to a biquaternion whose four coordinates satisfy a reality condition, and a anti-Hermitian element to one with $i$ times that condition. The Peirce idempotents $\tilde\Pi_\pm$ are Hermitian, so they lie in the first half; the companion nilpotents $\vec\Upsilon_{+-}$ and $\vec\Upsilon_{-+}$ are neither Hermitian nor anti-Hermitian, since they satisfy $\vec\Upsilon_{-+}=\vec\Upsilon_{+-}^{*}$ and their squares vanish. The mixed corners of the Peirce decomposition therefore leave both halves, which is the algebraic reason the Peirce frame is not a Hermitian frame.
+**The two halves are the two sectors of the biquaternion reading.** A Hermitian element of $M_2(\mathbb{C})$ corresponds to a biquaternion whose four coordinates satisfy a reality condition, and an anti-Hermitian element to one with $i$ times that condition. The Peirce idempotents $\tilde\Pi_\pm$ are Hermitian, so they lie in the first half; the companion nilpotents $\vec\Upsilon_{+-}$ and $\vec\Upsilon_{-+}$ are neither Hermitian nor anti-Hermitian, since they satisfy $\vec\Upsilon_{-+}=\vec\Upsilon_{+-}^{*}$ and their squares vanish. The mixed corners of the Peirce decomposition therefore leave both halves, which is the algebraic reason the Peirce frame is not a Hermitian frame.
 
 ## Summary
 

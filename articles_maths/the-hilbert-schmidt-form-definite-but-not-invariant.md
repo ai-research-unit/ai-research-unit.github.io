@@ -62,7 +62,7 @@ $$
 
 The adjoint is $\operatorname{ad}_{A^{\mathsf T}}$. This was checked numerically at $n=2,3,4$ on a hundred random triples, with a maximal deviation of $1.8\times10^{-15}$ at $n=2$ and $7.1\times10^{-15}$ at $n=3$ and $n=4$.
 
-**The sign of the adjoint measures the invariance.** For an invariant form the adjoint of $\operatorname{ad}_A$ is $-\operatorname{ad}_A$, because invariance says $\langle \operatorname{ad}_A X,Y\rangle+\langle X,\operatorname{ad}_A Y\rangle=0$. Here the adjoint is $\operatorname{ad}_{A^{\mathsf T}}$, and the two agree only when $A^{\mathsf T}=-A$. So $\operatorname{ad}_A$ is skew for the Hilbert–Schmidt form exactly for $A\in\mathfrak{so}(n)$, and no minus sign appears in the display above. The missing sign is the defect.
+**The sign of the adjoint measures the invariance.** For an invariant form the adjoint of $\operatorname{ad}_A$ is $-\operatorname{ad}_A$, because invariance says $\langle \operatorname{ad}_A X,Y\rangle+\langle X,\operatorname{ad}_A Y\rangle=0$. Here the adjoint is $\operatorname{ad}_{A^{\mathsf T}}$, and the two agree only when $A^{\mathsf T}=-A$. So $\operatorname{ad}_A$ is anti-self-adjoint for the Hilbert–Schmidt form exactly for $A\in\mathfrak{so}(n)$, and no minus sign appears in the display above. The missing sign is the defect.
 
 **The defect is not small.** The same numerical run measured $\langle \operatorname{ad}_A X,Y\rangle_{\mathrm{HS}}+\langle X,\operatorname{ad}_A Y\rangle_{\mathrm{HS}}$ on the same hundred triples and found a maximum absolute value of $18.58$ at $n=2$, $42.21$ at $n=3$ and $53.92$ at $n=4$. A quantity that vanishes for an invariant form is here of the size of the entries.
 
@@ -122,7 +122,7 @@ $$
 
 The second identity was checked exactly with numpy at $n=3$: the two sides agree to the last bit. So the trace form is the Hilbert–Schmidt form composed with the transpose in the first slot.
 
-**On the symmetric part the two forms agree, and on the skew part they are opposite.** Write $X=S+K$ and $Y=S'+K'$ with $S,S'$ symmetric and $K,K'$ skew. The cross terms vanish, and
+**On the symmetric part the two forms agree, and on the antisymmetric part they are opposite.** Write $X=S+K$ and $Y=S'+K'$ with $S,S'$ symmetric and $K,K'$ antisymmetric. The cross terms vanish, and
 
 $$
 \langle X,Y\rangle=\operatorname{tr}(SS')+\operatorname{tr}(KK'),\qquad \langle X,Y\rangle_{\mathrm{HS}}=\operatorname{tr}(SS')-\operatorname{tr}(KK').
@@ -130,7 +130,7 @@ $$
 
 The second identity uses $K^{\mathsf T}=-K$. So the two forms agree on $\operatorname{Sym}_n$ and differ by a sign on $\operatorname{Skew}_n$.
 
-**The definite form is the difference of two positive forms on the halves.** Since $\langle S,S\rangle_{\mathrm{HS}}=\operatorname{tr}(S^{2})$ for symmetric $S$ and $\langle K,K\rangle_{\mathrm{HS}}=-\operatorname{tr}(K^{2})$ for skew $K$, the Hilbert–Schmidt form is positive on both halves, while the trace form is positive on the first and negative on the second. The signature of the trace form and the definiteness of the Hilbert–Schmidt form are the same computation read with two sign conventions.
+**The definite form is the difference of two positive forms on the halves.** Since $\langle S,S\rangle_{\mathrm{HS}}=\operatorname{tr}(S^{2})$ for symmetric $S$ and $\langle K,K\rangle_{\mathrm{HS}}=-\operatorname{tr}(K^{2})$ for antisymmetric $K$, the Hilbert–Schmidt form is positive on both halves, while the trace form is positive on the first and negative on the second. The signature of the trace form and the definiteness of the Hilbert–Schmidt form are the same computation read with two sign conventions.
 
 ## The Two Isometry Groups
 
@@ -161,7 +161,7 @@ The Hilbert–Schmidt form $\langle X,Y\rangle_{\mathrm{HS}}=\operatorname{tr}(X
 | $A^{\mathsf T}A$ | the operator whose Rayleigh quotient is the ratio of norms |
 | $\sigma_{\min},\sigma_{\max}$ | the extreme singular values of $A$ |
 | $\mathrm{O}(n)$, $\mathrm{O}(n^{2})$ | the orthogonal groups of the algebra and of its $n^{2}$ coordinates |
-| $\mathfrak{so}(n)$ | the skew elements, the Lie algebra of $\mathrm{O}(n)$ |
+| $\mathfrak{so}(n)$ | the antisymmetric elements, the Lie algebra of $\mathrm{O}(n)$ |
 
 ## Further Reading
 

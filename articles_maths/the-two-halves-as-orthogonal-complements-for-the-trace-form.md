@@ -40,7 +40,7 @@ So the form is associative: moving a factor across the comma does not change the
 
 ## The Two Halves Are Orthogonal
 
-**Proposition.** $\operatorname{tr}(SK)=0$ for every symmetric $S$ and every skew $K$.
+**Proposition.** $\operatorname{tr}(SK)=0$ for every symmetric $S$ and every antisymmetric $K$.
 
 *Proof.* $\operatorname{tr}(SK)=\operatorname{tr}((SK)^{\mathsf T})=\operatorname{tr}(K^{\mathsf T}S^{\mathsf T})=\operatorname{tr}(-KS)=-\operatorname{tr}(KS)$, and $\operatorname{tr}(KS)=\operatorname{tr}(SK)$, so the number equals its own negative.
 
@@ -88,7 +88,7 @@ $$
 \langle S,S\rangle=\operatorname{tr}(S^{2})=\sum_{i,j}S_{ij}S_{ji}=\sum_{i,j}S_{ij}^{2}\ge0,
 $$
 
-with equality exactly when $S=0$. For skew $K$,
+with equality exactly when $S=0$. For anti-Hermitian $K$,
 
 $$
 \langle K,K\rangle=\operatorname{tr}(K^{2})=-\sum_{i,j}K_{ij}^{2}\le0,
@@ -138,7 +138,7 @@ $$
 
 so moving the factor across the comma changes the value. So the Hilbert–Schmidt form is an inner product on the algebra and not a form of the algebra.
 
-**The two halves are still orthogonal for it.** $\operatorname{tr}(S^{\mathsf T}K)=\operatorname{tr}(SK)=0$ for symmetric $S$ and skew $K$, so the orthogonal complement statement survives. What fails is the sign: the form is positive definite on both halves, so the split is a decomposition into two positive definite pieces and not into a positive and a negative one.
+**The two halves are still orthogonal for it.** $\operatorname{tr}(S^{\mathsf T}K)=\operatorname{tr}(SK)=0$ for symmetric $S$ and antisymmetric $K$, so the orthogonal complement statement survives. What fails is the sign: the form is positive definite on both halves, so the split is a decomposition into two positive definite pieces and not into a positive and a negative one.
 
 **What the two forms exchange is exactly the pair of properties.** The trace form is invariant and indefinite. The Hilbert–Schmidt form is positive definite and not invariant. No form on $M_n(\mathbb{R})$ is both, and that dichotomy is one of the differences between the real and the complex algebra: over $\mathbb{C}$ the form $\operatorname{tr}(A^{*}B)$ is both.
 

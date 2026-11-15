@@ -34,7 +34,7 @@ and the pair $(\theta,P)$ determines $Q$; conversely $Q$ determines $P$ and $\th
 
 **At $n=2$ every rotation is a rotation of the plane.** The dimension is $2$, the fixed subspace of a rotation by $\theta\ne0$ is $\{0\}$, of codimension $2$, so every rotation is simple. The angle is defined modulo $2\pi$.
 
-**At $n=3$ every rotation is a rotation about an axis.** Every skew $3\times3$ matrix is $\theta[u]$, and the Rodrigues formula gives
+**At $n=3$ every rotation is a rotation about an axis.** Every anti-Hermitian $3\times3$ matrix is $\theta[u]$, and the Rodrigues formula gives
 
 $$
 Q=\exp(\theta[u])=\cos\theta\,\mathrm{I}+\sin\theta\,[u]+(1-\cos\theta)\,uu^{\mathsf T},
@@ -84,7 +84,7 @@ So $Q$ is not simple. It turns two planes, and no vector is fixed.
 
 **The numbers at $\alpha=0.3$ and $\beta=0.7$.** The eigenvalues of $Q$ are $e^{\pm0.3i}$ and $e^{\pm0.7i}$, the angles read from the arguments are $0.3$ and $0.7$, and the rank of $Q-\mathrm{I}$ is $4$, so the fixed subspace is $\{0\}$. A simple rotation of $\mathbb{R}^{4}$ by the same first angle, namely $\operatorname{diag}(R(0.4),1,1)$, has angles $\{0.4\}$ and fixed subspace of dimension $2$.
 
-**A non-simple rotation is still a rotation.** It is orthogonal, of determinant $1$, and it is the exponential of a skew matrix; what it lacks is a fixed direction, not a property of the group.
+**A non-simple rotation is still a rotation.** It is orthogonal, of determinant $1$, and it is the exponential of an antisymmetric matrix; what it lacks is a fixed direction, not a property of the group.
 
 ## The Products of Simple Rotations
 

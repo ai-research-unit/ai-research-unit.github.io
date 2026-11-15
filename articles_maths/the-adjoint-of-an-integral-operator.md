@@ -161,7 +161,7 @@ $K^*(x,y)=\mathbf 1_{0\leq x\leq y}$, so that
 $$
 (V^\dagger f)(x)=\int_x^1f(y)\,dy .
 $$
-The operator is not self-adjoint, and $V+V^\dagger$ and $V-V^\dagger$ are its self-adjoint and skew-adjoint
+The operator is not self-adjoint, and $V+V^\dagger$ and $V-V^\dagger$ are its self-adjoint and anti-self-adjoint
 parts; the example shows that the kernel involution is the sharpening of the operator adjoint for integral
 operators.
 
@@ -175,7 +175,7 @@ of rank one as the self-adjoint case.
 is symmetric, $\mathcal F^{\mathrm t}=\mathcal F$, and unitary, so that its adjoint is its inverse,
 $\mathcal F^\dagger=\mathcal F^{-1}=\overline{\mathcal F}$; the adjoint is worked out in full in *The Adjoint
 of the Fourier Operator*, the last article of this group. The Hilbert transform $H$ of *The Fourier Transform
-and Conjugate Symmetry* has the purely imaginary multiplier $-i\operatorname{sgn}$, so it is skew-adjoint,
+and Conjugate Symmetry* has the purely imaginary multiplier $-i\operatorname{sgn}$, so it is anti-self-adjoint,
 $H^\dagger=-H$, and $iH$ is self-adjoint; this is the multiplier form of the kernel involution.
 
 ## The Distributional Case
@@ -215,7 +215,7 @@ conjugation, $K^*=\overline{K^{\mathrm t}}$, and agree exactly for real kernels.
 self-adjoint exactly when its kernel is Hermitian, $K(y,x)=\overline{K(x,y)}$, which for a real kernel is
 symmetry; examples are the Volterra operator, whose adjoint integrates from $x$ to $1$, the rank-one
 projections, the symmetric unitary Fourier operator with $\mathcal F^\dagger=\mathcal F^{-1}$ and the
-skew-adjoint Hilbert transform $H^\dagger=-H$. The distributional case follows from the Schwartz kernel
+anti-self-adjoint Hilbert transform $H^\dagger=-H$. The distributional case follows from the Schwartz kernel
 theorem, with the same conjugate transpose kernel. The spectral theory of the self-adjoint case, and the
 distinction of symmetric from self-adjoint for unbounded operators, are owned by later articles.
 

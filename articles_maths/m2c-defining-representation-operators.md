@@ -8,7 +8,7 @@ L_{u}R_{\phi}(v)=\phi(v)\,u=u\phi^{\mathsf T},
 $$
 with $u\in V$ a column and $\phi\in V^{*}$ a row.
 
-**The result in one line.** Every two-sided operator of the carrier is a rank-one matrix, that is a point of the determinantal cone $\{\det=0\}$ in $M_2(\mathbb{C})=\mathbb{C}^{4}$; the family is closed under composition, with the scalar absorbed; it has no identity, no inverses, no isometries and no nonzero skew-adjoint member; and its length equals its rank and is at most two. **The pair is a semigroup with zero and not a group, and the reason is arithmetic: the identity has rank two and the cone has rank one.**
+**The result in one line.** Every two-sided operator of the carrier is a rank-one matrix, that is a point of the determinantal cone $\{\det=0\}$ in $M_2(\mathbb{C})=\mathbb{C}^{4}$; the family is closed under composition, with the scalar absorbed; it has no identity, no inverses, no isometries and no nonzero anti-self-adjoint member; and its length equals its rank and is at most two. **The pair is a semigroup with zero and not a group, and the reason is arithmetic: the identity has rank two and the cone has rank one.**
 
 **Why the pair is still worth having.** Three things are gained. The parametrisation by $V\times V^{*}$ modulo scaling, which turns every statement about the cone into a statement about a point of $\mathbb{P}^{1}\times\mathbb{P}^{1}$. The single quadratic criterion $\det M=0$, which at this size is the whole of the rank condition. And the length formula, which makes the rank of a matrix the number of elementary products it needs. **What is lost is exactly the algebra: the identity, the inverses and the isometry group.**
 
@@ -260,12 +260,12 @@ that is $\phi u^{\mathsf T}$ in coordinates.
 | Family | Condition | Description |
 |---|---|---|
 | self-adjoint | $\phi=c\,u$ | the symmetric rank-one matrices $c\,uu^{\mathsf T}$ |
-| skew-adjoint | $\phi=-c\,u$ with $c\neq0$ | empty: $c\,uu^{\mathsf T}=-c\,uu^{\mathsf T}$ forces $c=0$ |
+| anti-self-adjoint | $\phi=-c\,u$ with $c\neq0$ | empty: $c\,uu^{\mathsf T}=-c\,uu^{\mathsf T}$ forces $c=0$ |
 | general | none | the cone |
 
-**Proposition (no nonzero member of the cone is skew-adjoint).** If $T\in\mathcal{C}$ and $T^{\mathsf T}=-T$ then $T=0$.
+**Proposition (no nonzero member of the cone is anti-self-adjoint).** If $T\in\mathcal{C}$ and $T^{\mathsf T}=-T$ then $T=0$.
 
-*Proof.* A antisymmetric matrix of size two is $\lambda J_2=\lambda\begin{pmatrix}0&1\\-1&0\end{pmatrix}$, whose rank is two for $\lambda\neq0$ and which is therefore not in the cone; and $\lambda=0$ is the zero matrix.
+*Proof.* An antisymmetric matrix of size two is $\lambda J_2=\lambda\begin{pmatrix}0&1\\-1&0\end{pmatrix}$, whose rank is two for $\lambda\neq0$ and which is therefore not in the cone; and $\lambda=0$ is the zero matrix.
 
 **The self-adjoint cone is the symmetric rank-one family.** It is the set of matrices $c\,uu^{\mathsf T}$, of complex dimension two, and it is the **complex** analogue of the Hermitian cone: **the same construction with the transpose in place of the dagger, and the two families are as different as a complex line is from a circle.**
 
@@ -367,7 +367,7 @@ and not a linear one. The image is therefore the quadric cone of complex dimensi
 - The **composition rule** $L_{u}R_{\phi}L_{u'}R_{\phi'}=\phi(u')L_{u}R_{\phi'}$, whose scalar is the trace, and with it the whole spectral theory of the family in one number.
 - The **length formula** $\ell=\operatorname{rank}$, the values $0,1,2$ and the identity at length two.
 - The **two cones** and the dagger that relates them, which is the only place in the corpus where the bilinear and the Hermitian rank-one families are compared on the same carrier.
-- The **two adjoints**, with the self-adjoint family, the empty skew-adjoint family and the Hermitian fixed locus.
+- The **two adjoints**, with the self-adjoint family, the empty anti-self-adjoint family and the Hermitian fixed locus.
 
 **What it does not buy.**
 
@@ -402,7 +402,7 @@ The carrier is the module $V=\mathbb{C}^{2}$, and there is no product on it, so 
 
 The composition is $L_{u}R_{\phi}L_{u'}R_{\phi'}=\phi(u')L_{u}R_{\phi'}$, with powers $\phi(u)^{n-1}L_{u}R_{\phi}$; the member is nilpotent exactly when $\phi(u)=0$ and idempotent exactly when $\phi(u)=1$; the trace is $\phi(u)$, the determinant is zero, and the Cayley–Hamilton identity is $T^{2}=\phi(u)T$. The family is a semigroup with zero and without identity, and no member is invertible. The length is the rank, with the values $0,1,2$: zero for the zero matrix, one on the cone, two on the complement, and two for the identity. The two ranks, of the operator and of its coefficient array, coincide identically here, in contrast with the algebra pairs, where the operator basis is $L_{e_\mu}R_{e_\nu}$ and the two separate.
 
-Two rank-one families live in the ambient: the bilinear cone, of real dimension six, with two rulings and fibres $\mathbb{C}^{\times}$, and the Hermitian cone $uu^{\dagger}$, of real dimension three, with one ruling, fibres $S^{1}$, and the future light cone $t^{2}-\lvert\vec x\rvert^{2}=0$, $t\ge0$ in the Pauli coordinates; the second is the fixed locus of the dagger in the first, up to real scale. The transpose adjoint swaps the slots and its fixed locus is the symmetric cone $c\,uu^{\mathsf T}$; the dagger's fixed locus is the Hermitian cone; no nonzero member of the cone is skew-adjoint, and no nonzero member is an isometry. Putting an algebra structure on the carrier moves the cone: the pointwise product gives the two-dimensional diagonal subspace, and the dual-number product gives the quadric cone $\det T=w_{11}^{2}$ minus the punctured line of the matrices $\operatorname{diag}(0,w_{22})$, which is no longer the rank-one locus. **The pair buys the parametrisation, the single criterion, the composition rule, the length and the comparison of the two cones, and it pays with the identity, the inverses, the isometries and the ladder $1,4,7,16$.**
+Two rank-one families live in the ambient: the bilinear cone, of real dimension six, with two rulings and fibres $\mathbb{C}^{\times}$, and the Hermitian cone $uu^{\dagger}$, of real dimension three, with one ruling, fibres $S^{1}$, and the future light cone $t^{2}-\lvert\vec x\rvert^{2}=0$, $t\ge0$ in the Pauli coordinates; the second is the fixed locus of the dagger in the first, up to real scale. The transpose adjoint swaps the slots and its fixed locus is the symmetric cone $c\,uu^{\mathsf T}$; the dagger's fixed locus is the Hermitian cone; no nonzero member of the cone is anti-self-adjoint, and no nonzero member is an isometry. Putting an algebra structure on the carrier moves the cone: the pointwise product gives the two-dimensional diagonal subspace, and the dual-number product gives the quadric cone $\det T=w_{11}^{2}$ minus the punctured line of the matrices $\operatorname{diag}(0,w_{22})$, which is no longer the rank-one locus. **The pair buys the parametrisation, the single criterion, the composition rule, the length and the comparison of the two cones, and it pays with the identity, the inverses, the isometries and the ladder $1,4,7,16$.**
 
 ## Summary of Notation
 

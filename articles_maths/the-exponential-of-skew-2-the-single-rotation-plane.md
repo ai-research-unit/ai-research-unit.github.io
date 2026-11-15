@@ -94,7 +94,7 @@ $$
 
 **Corollary.** The exponential of the anti-Hermitian half is the unitary group $\mathrm{U}(2)$, and the exponential of the antisymmetric line is the circle of the rotations in one real plane.
 
-**Proof.** Every unitary matrix has a anti-Hermitian logarithm by the surjectivity of the exponential, and the antisymmetric line is the real slice whose exponential is the circle.
+**Proof.** Every unitary matrix has an anti-Hermitian logarithm by the surjectivity of the exponential, and the antisymmetric line is the real slice whose exponential is the circle.
 
 **Corollary.** The single rotation plane of the real picture becomes a two-parameter family of phases in the complex picture, because the anti-Hermitian half has the extra imaginary scalars and the third Pauli direction.
 
@@ -118,7 +118,7 @@ The image of the real line is the circle $\mathrm{SO}(2)$, which is the whole ro
 
 ## Further Reading
 
-- Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge University Press, 2013), for the exponential of a antisymmetric matrix.
+- Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge University Press, 2013), for the exponential of an antisymmetric matrix.
 - Jean Dieudonné, *La géométrie des groupes classiques* (Springer, 1971), for the classical groups at low order and their exponentials.
 - [The Lie Algebra $\operatorname{Skew}_2$: One Dimension, Hence Abelian](the-lie-algebra-skew-2-one-dimension-hence-abelian.html), for the bracket that vanishes on the line.
 - [The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$](the-two-halves-over-r-symmetric-and-antisymmetric-at-n-2.html), for the antisymmetric line as one of the two halves.

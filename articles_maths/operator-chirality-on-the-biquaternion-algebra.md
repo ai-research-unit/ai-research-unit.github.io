@@ -158,7 +158,7 @@ $$
 \operatorname{Fix}(\sigma)=\Xi\bigl(\operatorname{Sym}^2\mathbb{B}\bigr),\qquad \dim=10 .
 $$
 
-The negated operators are the skew-adjoint ones, $\sigma(X)=-X$, and they are the image of the exterior square:
+The negated operators are the anti-self-adjoint ones, $\sigma(X)=-X$, and they are the image of the exterior square:
 
 $$
 \operatorname{Neg}(\sigma)=\Xi\bigl(\Lambda^2\mathbb{B}\bigr),\qquad \dim=6 .
@@ -276,7 +276,7 @@ A $\mathbb{Z}/2$ grading of an algebra is a decomposition $E_0\oplus E_1$ with $
 
 **A sign is stronger than a grading, and there is none.** A sign would be a multiplicative map $\chi$ to $\{0,+1,-1\}$, with $\chi(XY)=\chi(X)\chi(Y)$, taking $+1$ on a left multiplier and $-1$ on a right multiplier of a noncentral element. The scalar $\lambda\mathrm I$ is the left multiplier of $\lambda e_t$ and the right multiplier of the same element, so it would carry both values at once. No $\chi$ separates the two sides, and the count of four cases against two values says the same thing without a computation.
 
-What the swap gives instead is an exchange, and an exchange is not a sign. It carries one side to the other, answers the question "which side" by moving the operator rather than by labelling it, and splits the algebra into a self-adjoint and a skew-adjoint part of dimensions ten and six, with two different closing operations.
+What the swap gives instead is an exchange, and an exchange is not a sign. It carries one side to the other, answers the question "which side" by moving the operator rather than by labelling it, and splits the algebra into a self-adjoint and an anti-self-adjoint part of dimensions ten and six, with two different closing operations.
 
 A sign, when the physics wants one, has to be chosen as an operator. Any $R_u$ with $u$ traceless and $u^2=-e_t$ supplies it, and its two projectors are the two halves. The sign is therefore an object of the algebra and not a functional on it, which is why no sign is ever exhibited as a functional: there is none, and the sign is a choice of $u$. The contrast is the moral of the article. The label is fixed before anything is chosen, and the sign moves when $u$ moves; confusing the two is what produces the impression that chirality is a matrix.
 

@@ -2,11 +2,11 @@
 
 ## Introduction
 
-On a commutative algebra every anti-automorphism is an automorphism, so an **involution of a commutative algebra** is simply an algebra automorphism of order two; and every such automorphism makes the algebra a module over its **fixed subalgebra** $A^\sigma$ with a descent datum. The two subjects of this article are the **fixed subalgebra** and the **descent to the self-adjoint part**: the fixed subalgebra is the ring of invariants, the skew part is a module over it whose products fall back into it, and a module over the involutive algebra with a compatible semilinear involution descends to a module over the fixed subalgebra. This is the commutative case of the picture of *Involutive Algebras*, specialised and read with the descent, and it is the case that the symmetric algebra of *The Symmetric Algebra of a Module with an Involution* and the polynomial ring exhibit.
+On a commutative algebra every anti-automorphism is an automorphism, so an **involution of a commutative algebra** is simply an algebra automorphism of order two; and every such automorphism makes the algebra a module over its **fixed subalgebra** $A^\sigma$ with a descent datum. The two subjects of this article are the **fixed subalgebra** and the **descent to the self-adjoint part**: the fixed subalgebra is the ring of invariants, the anti-Hermitian part is a module over it whose products fall back into it, and a module over the involutive algebra with a compatible semilinear involution descends to a module over the fixed subalgebra. This is the commutative case of the picture of *Involutive Algebras*, specialised and read with the descent, and it is the case that the symmetric algebra of *The Symmetric Algebra of a Module with an Involution* and the polynomial ring exhibit.
 
 The article shows that the fixed subalgebra of an involution of a commutative algebra is a subalgebra, that the algebra decomposes as $A = A^\sigma\oplus A^-$ when $2$ is invertible, and that $A^-$ is an $A^\sigma$-module with $A^-\cdot A^-\subseteq A^\sigma$, so that $A$ is generated over $A^\sigma$ by $A^-$ as a square-zero-compatible extension. When $A^-$ is a free $A^\sigma$-module of rank one, $A = A^\sigma\oplus A^\sigma t$ with $\sigma(t) = -t$ and $t^2 \in A^\sigma$, and $A$ is a quadratic algebra over $A^\sigma$; this is the model for the descent. The article then states the **descent**: the category of $A$-modules with a $\sigma$-semilinear involution $\tau$ is equivalent to the category of $A^\sigma$-modules, by the functors $M\mapsto H(M) = \{m : \tau(m) = m\}$ and $N\mapsto N\otimes_{A^\sigma}A$, the equivalence holding under the flatness that the quadratic model provides. The worked examples are the polynomial ring with $\sigma(x) = -x$, whose fixed subalgebra is the ring of even polynomials, and the quadratic field extension, which is the classical Galois descent of a vector space with a semilinear involution.
 
-The article assumes *Involutive Algebras* for the involution of an associative algebra and the symmetric and skew elements, *Algebras* and *Commutative Algebras* for the objects, *Modules over a Ring* and *Extension of Scalars* for the module theory, *Tensor Products of Modules* for the tensor product, and *Galois Theory* for the quadratic extension. The Jordan case is *Jordan Algebras with an Involution*, the symmetric algebra is *The Symmetric Algebra of a Module with an Involution*, and the real forms are *Real Forms and the Descent of an Algebra*, in this group. Throughout, $R$ is a commutative ring with identity, $A$ is a commutative unital $R$-algebra, $\sigma$ is an $R$-algebra involution (an automorphism of order two) of $A$, $A^\sigma = A^+$ is the fixed subalgebra, and $A^-$ is the skew part; no form, norm or distance occurs.
+The article assumes *Involutive Algebras* for the involution of an associative algebra and the symmetric and anti-Hermitian elements, *Algebras* and *Commutative Algebras* for the objects, *Modules over a Ring* and *Extension of Scalars* for the module theory, *Tensor Products of Modules* for the tensor product, and *Galois Theory* for the quadratic extension. The Jordan case is *Jordan Algebras with an Involution*, the symmetric algebra is *The Symmetric Algebra of a Module with an Involution*, and the real forms are *Real Forms and the Descent of an Algebra*, in this group. Throughout, $R$ is a commutative ring with identity, $A$ is a commutative unital $R$-algebra, $\sigma$ is an $R$-algebra involution (an automorphism of order two) of $A$, $A^\sigma = A^+$ is the fixed subalgebra, and $A^-$ is the anti-Hermitian part; no form, norm or distance occurs.
 
 ## Involution of a Commutative Algebra
 
@@ -16,7 +16,7 @@ The article assumes *Involutive Algebras* for the involution of an associative a
 
 *Proof.* In a commutative algebra $ba = ab$, so multiplicativity and anti-multiplicativity are the same condition.
 
-**Definition.** An **involutive commutative algebra** is a commutative unital $R$-algebra $A$ with an $R$-algebra automorphism $\sigma$ of order two; its **fixed subalgebra** is $A^\sigma = \{a : \sigma(a) = a\}$, its **skew part** is $A^- = \{a : \sigma(a) = -a\}$, and an element of $A^\sigma$ is **symmetric**.
+**Definition.** An **involutive commutative algebra** is a commutative unital $R$-algebra $A$ with an $R$-algebra automorphism $\sigma$ of order two; its **fixed subalgebra** is $A^\sigma = \{a : \sigma(a) = a\}$, its **antisymmetric part** is $A^- = \{a : \sigma(a) = -a\}$, and an element of $A^\sigma$ is **symmetric**.
 
 ### The Decomposition
 
@@ -30,15 +30,15 @@ and both summands are $A^\sigma$-submodules of $A$.
 
 *Proof.* The projections $a\mapsto\tfrac12(a+\sigma(a))$ and $a\mapsto\tfrac12(a-\sigma(a))$ are $A^\sigma$-linear and split the identity; their images are $A^\sigma$ and $A^-$.
 
-**Proposition.** The fixed subalgebra is a subalgebra of $A$, and it is generated as an $R$-algebra by the images $\tfrac12(a+\sigma(a))$ of the generators of $A$; the skew part is an $A^\sigma$-module and it is closed under the commutator trivially, while
+**Proposition.** The fixed subalgebra is a subalgebra of $A$, and it is generated as an $R$-algebra by the images $\tfrac12(a+\sigma(a))$ of the generators of $A$; the anti-Hermitian part is an $A^\sigma$-module and it is closed under the commutator trivially, while
 
 $$
 A^-\cdot A^- \subseteq A^\sigma , \qquad A^\sigma\cdot A^- \subseteq A^- .
 $$
 
-*Proof.* Products of fixed elements are fixed and the skew part is carried by the sign rule: $(-1)(-1) = +1$, $(+1)(-1) = -1$; these are the inclusions.
+*Proof.* Products of fixed elements are fixed and the anti-Hermitian part is carried by the sign rule: $(-1)(-1) = +1$, $(+1)(-1) = -1$; these are the inclusions.
 
-**Corollary (the square of a skew element).** For $t \in A^-$ one has $t^2 \in A^\sigma$; the skew part obeys the parity rule $A^-\cdot A^-\subseteq A^\sigma$, and $A$ is generated over $A^\sigma$ by $A^-$ together with $A^\sigma$ itself.
+**Corollary (the square of an anti-Hermitian element).** For $t \in A^-$ one has $t^2 \in A^\sigma$; the anti-Hermitian part obeys the parity rule $A^-\cdot A^-\subseteq A^\sigma$, and $A$ is generated over $A^\sigma$ by $A^-$ together with $A^\sigma$ itself.
 
 ### The Quadratic Model
 
@@ -64,7 +64,7 @@ $$
 
 The **self-adjoint part** of $(M,\tau)$ is $H(M) = \{m \in M : \tau(m) = m\}$.
 
-**Proposition.** $H(M)$ is an $A^\sigma$-submodule of $M$, and the map $h\mapsto h$ identifies it with a subset of $M$ on which $A^\sigma$ acts; if $2$ is invertible then $M = H(M)\oplus S(M)$ with $S(M) = \{m : \tau(m) = -m\}$, as $A^\sigma$-modules, and $\tau$ is the multiplication by $-1$ on the skew part.
+**Proposition.** $H(M)$ is an $A^\sigma$-submodule of $M$, and the map $h\mapsto h$ identifies it with a subset of $M$ on which $A^\sigma$ acts; if $2$ is invertible then $M = H(M)\oplus S(M)$ with $S(M) = \{m : \tau(m) = -m\}$, as $A^\sigma$-modules, and $\tau$ is the multiplication by $-1$ on the anti-Hermitian part.
 
 *Proof.* If $a \in A^\sigma$ and $h \in H(M)$ then $\tau(ah) = \sigma(a)\tau(h) = ah$, so $H(M)$ is an $A^\sigma$-submodule; the projections $\tfrac12(m\pm\tau(m))$ give the decomposition as in the algebra case.
 
@@ -102,9 +102,9 @@ An involution of a commutative algebra $A$ is the same thing as an involutive au
 | $A$ | Commutative unital $R$-algebra |
 | $\sigma$ | Involutive automorphism of $A$ |
 | $A^\sigma = A^+$ | Fixed subalgebra |
-| $A^-$ | Skew part, $\sigma(a) = -a$ |
+| $A^-$ | Anti-Hermitian part, $\sigma(a) = -a$ |
 | $A = A^\sigma\oplus A^-$ | Decomposition when $2$ invertible |
-| $A^-\cdot A^-\subseteq A^\sigma$ | Skew elements square into the fixed subalgebra |
+| $A^-\cdot A^-\subseteq A^\sigma$ | Anti-Hermitian elements square into the fixed subalgebra |
 | $A = A^\sigma\oplus A^\sigma t$, $t^2\in A^\sigma$ | Quadratic model |
 | $\tau(am) = \sigma(a)\tau(m)$, $\tau^2=\mathrm{id}$ | Semilinear involution of a module |
 | $H(M)$ | Self-adjoint part, an $A^\sigma$-module |

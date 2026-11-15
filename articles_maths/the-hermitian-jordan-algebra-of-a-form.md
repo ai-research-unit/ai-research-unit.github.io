@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The self-adjoint operators of *Self-Adjoint and Skew Operators of a Form* close under the anticommutator, and the resulting structure is a **Jordan algebra**: commutative, with the Jordan identity but without associativity. This article identifies it, computes its product and its unit, and links it to the two structures that surround it — the Lie algebra of the skew operators (*The Unitary Group of a Form and Its Lie Algebra*) and the Hermitian forms of the layer (*Polarisation and the Hermitian Square*).
+The self-adjoint operators of *Self-Adjoint and Anti-Self-Adjoint Operators of a Form* close under the anticommutator, and the resulting structure is a **Jordan algebra**: commutative, with the Jordan identity but without associativity. This article identifies it, computes its product and its unit, and links it to the two structures that surround it — the Lie algebra of the anti-self-adjoint operators (*The Unitary Group of a Form and Its Lie Algebra*) and the Hermitian forms of the layer (*Polarisation and the Hermitian Square*).
 
 Three facts are the substance. The product $T \circ S = \tfrac{1}{2}(TS + ST)$ of two self-adjoint operators is self-adjoint by the sign rule, so the self-adjoint part of the operator algebra is closed under the symmetrised product; the identity operator is the unit; the Jordan identity holds because the underlying product of the operators is associative, which makes the structure a **special** Jordan algebra, that is, one embedded in an associative algebra under the symmetrised product. The correspondence $T \mapsto Q_{T}$, $Q_{T}(x) = h(Tx,x)$, identifies the self-adjoint operators with the Hermitian forms of the shape $h(T\cdot,\cdot)$, and it is additive: the Jordan algebra of the form is a space of Hermitian forms with the anticommutator transported to the forms. And the **two-sided operator** $\mathrm{Sd}_{T}(y) = TyT^{*}$ coincides with the **quadratic representation** $U_{T}(S) = TST$ of the Jordan theory exactly when $T$ is self-adjoint, which is the identity that carries the two-sided operators of the category into the Jordan structure.
 
@@ -22,7 +22,7 @@ $$
 \boxed{\;(T \circ S)\circ T^{2} = T \circ (S \circ T^{2}), \qquad T^{2} = T \circ T\;} .
 $$
 
-**Proof.** Closure: the sign rule of *Self-Adjoint and Skew Operators of a Form* gives $(TS+ST)^{*} = TS+ST$ for self-adjoint $S, T$. Commutativity is the definition. The identity is self-adjoint and $1 \circ T = T$. The Jordan identity is the standard identity of the special Jordan algebras: it holds in every associative algebra for the symmetrised product, and the verification is the expansion of the two sides in the associative product combined with the associativity.
+**Proof.** Closure: the sign rule of *Self-Adjoint and Anti-Self-Adjoint Operators of a Form* gives $(TS+ST)^{*} = TS+ST$ for self-adjoint $S, T$. Commutativity is the definition. The identity is self-adjoint and $1 \circ T = T$. The Jordan identity is the standard identity of the special Jordan algebras: it holds in every associative algebra for the symmetrised product, and the verification is the expansion of the two sides in the associative product combined with the associativity.
 
 **Corollary.** The operator algebra with the involution $T \mapsto T^{*}$ is an associative algebra with an involution whose **hermitian part** is a Jordan algebra with the symmetrised product; the structure is special, and the general theory of the Jordan algebras with an involution is *The Hermitian Jordan Algebra* and *Hermitian and Anti-Hermitian Elements*.
 
@@ -36,7 +36,7 @@ $$
 
 is an injective $R^{\varsigma}$-linear map onto the Hermitian forms of the shape $h(T\cdot,\cdot)$ when the sesquilinear forms are determined by their diagonals — in particular over a field containing a scalar $\mathrm{i}$ with $\varsigma(\mathrm{i}) = -\mathrm{i}$; its inverse sends such a form back to its operator through the polarisation $\tfrac{1}{2}\bigl(\mathfrak{Q}(x+y) - \mathfrak{Q}(x) - \mathfrak{Q}(y)\bigr) = \tfrac{1}{2}\bigl(h(Tx,y) + h(Ty,x)\bigr)$ and the non-degeneracy of $h$.
 
-**Proof.** The map is additive in $T$; it is valued in the Hermitian forms by the equivalence of *Self-Adjoint and Skew Operators of a Form*, and the polarisation formula is the polarisation identity of *Polarisation and the Hermitian Square* applied to $Q_{T}$. Its kernel is the set of the self-adjoint operators with $h(Tx,x) = 0$ for every $x$, which is zero under the hypothesis on the diagonal and is otherwise the part that the diagonal loses, by the remark of *The Form-Adjoint of an Operator*; the non-degeneracy of $h$ gives the injectivity on that kernel.
+**Proof.** The map is additive in $T$; it is valued in the Hermitian forms by the equivalence of *Self-Adjoint and Anti-Self-Adjoint Operators of a Form*, and the polarisation formula is the polarisation identity of *Polarisation and the Hermitian Square* applied to $Q_{T}$. Its kernel is the set of the self-adjoint operators with $h(Tx,x) = 0$ for every $x$, which is zero under the hypothesis on the diagonal and is otherwise the part that the diagonal loses, by the remark of *The Form-Adjoint of an Operator*; the non-degeneracy of $h$ gives the injectivity on that kernel.
 
 **Corollary.** The Jordan algebra of the self-adjoint operators is a space of Hermitian forms of the layer, and the symmetrised product corresponds to the product of the forms given by $Q_{T\circ S}(x) = \tfrac{1}{2}\bigl(h(TSx,x) + h(STx,x)\bigr)$; the compatibility of the operator product and the sesquilinearity of the form is what makes the correspondence a statement of the layer and not only of the operators.
 
@@ -54,7 +54,7 @@ $$
 
 **Corollary.** The quadratic representation preserves the Jordan algebra when $T$ is self-adjoint: $U_{T}$ maps $\operatorname{Herm}(A,h)$ to itself, and for invertible $T$ it is an automorphism of the Jordan structure up to the inverse, $U_{T}^{-1} = U_{T^{-1}}$; the structure group of the Jordan algebra is the group generated by the quadratic representations, and its linear part contains the unitary group acting by $S \mapsto USU^{-1}$.
 
-**Proposition.** Let $u$ be unitary. The conjugation $S \mapsto uSu^{-1}$ is an automorphism of the Jordan algebra $\operatorname{Herm}(A,h)$, and its infinitesimal form is the derivation $S \mapsto [T,S]$ with $T$ skew-adjoint.
+**Proposition.** Let $u$ be unitary. The conjugation $S \mapsto uSu^{-1}$ is an automorphism of the Jordan algebra $\operatorname{Herm}(A,h)$, and its infinitesimal form is the derivation $S \mapsto [T,S]$ with $T$ anti-self-adjoint.
 
 **Proof.** The conjugation by a unitary element is an algebra automorphism of the operators and commutes with the adjoint operation because $u^{*} = u^{-1}$; it therefore preserves the self-adjoint part and the symmetrised product. The infinitesimal statement is the derivative at $u = 1$ of the conjugation, which is the commutator, and the commutator is a derivation of the Jordan product by the associativity of the underlying product.
 
@@ -66,7 +66,7 @@ On $M_n(\mathbb{C})$ with the trace form the self-adjoint operators are the Herm
 
 ### The Orthogonal Case
 
-At the trivial base involution and $* = \mathrm{id}$ the Jordan algebra is the space of the symmetric operators of the form with the anticommutator, and the derivations are the commutators with the skew operators of $\mathfrak{so}(G)$; the structure is the symmetric part of the theory of *The Orthogonal Lie Algebra*.
+At the trivial base involution and $* = \mathrm{id}$ the Jordan algebra is the space of the symmetric operators of the form with the anticommutator, and the derivations are the commutators with the anti-self-adjoint operators of $\mathfrak{so}(G)$; the structure is the symmetric part of the theory of *The Orthogonal Lie Algebra*.
 
 ### The Biquaternions
 
@@ -78,7 +78,7 @@ On $\mathbb{B}$ with the dagger the self-adjoint operators are the Hermitian for
 - The Jordan identity holds by the associativity of the operators, and the closure under $\circ$ is the sign rule of the adjoint involution.
 - The map $T \mapsto Q_{T}$, $Q_{T}(x) = h(Tx,x)$, identifies the self-adjoint operators with the Hermitian forms of the shape $h(T\cdot,\cdot)$, and it is additive and injective.
 - The **quadratic representation** $U_{T}(S) = TST$ coincides with the two-sided operator exactly for self-adjoint $T$, and it preserves the Jordan algebra.
-- The unitary group acts on the Jordan algebra by conjugation, and its infinitesimal action is the derivation $S \mapsto [T,S]$ with $T$ skew-adjoint.
+- The unitary group acts on the Jordan algebra by conjugation, and its infinitesimal action is the derivation $S \mapsto [T,S]$ with $T$ anti-self-adjoint.
 - The positivity, the cone and the completely positive maps of the layer are Part II; the Jordan algebra of the elements of a sesqualgebra is *The Hermitian Jordan Algebra*.
 
 ## Summary of Notation

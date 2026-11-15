@@ -74,9 +74,9 @@ $$
 [A,B]\in\mathbb{B}_{\Phi},
 $$
 
-so the bracket maps the Hermitian half into the skew half, and the two halves form a symmetric pair. The computation confirms the inclusion on random pairs, and it is the bracket relation $[\mathfrak{p},\mathfrak{p}]\subset\mathfrak{k}$ of *Symmetric Pairs and Cartan Pairs: the Reductivity Criterion* at $n=2$.
+so the bracket maps the Hermitian half into the antisymmetric half, and the two halves form a symmetric pair. The computation confirms the inclusion on random pairs, and it is the bracket relation $[\mathfrak{p},\mathfrak{p}]\subset\mathfrak{k}$ of *Symmetric Pairs and Cartan Pairs: the Reductivity Criterion* at $n=2$.
 
-**The bracket of the skew half is the Lie algebra of the unitary group.** The anti-Hermitian sector is closed under the bracket and is
+**The bracket of the anti-Hermitian half is the Lie algebra of the unitary group.** The anti-Hermitian sector is closed under the bracket and is
 
 $$
 \mathbb{B}_{\Phi}\cong\mathfrak{u}(2),\qquad \dim_{\mathbb{R}}=4,
@@ -148,7 +148,7 @@ $$
 e^{X}\in\mathrm{U}(2),\qquad e^{S}\text{ positive definite},
 $$
 
-so the exponential of the skew half gives the rotations and the exponential of the Hermitian half the stretches, each rotation having the two rotor signs $\pm e^{X/2}$. The computation confirms the unitarity of the first exponential, the positivity of the second and the two roots of a random unitary, and it is the polar decomposition of *The Polar Decomposition from the Two Halves* at $n=2$.
+so the exponential of the anti-Hermitian half gives the rotations and the exponential of the Hermitian half the stretches, each rotation having the two rotor signs $\pm e^{X/2}$. The computation confirms the unitarity of the first exponential, the positivity of the second and the two roots of a random unitary, and it is the polar decomposition of *The Polar Decomposition from the Two Halves* at $n=2$.
 
 ## The Norm and the Signature $(2,2)$
 
@@ -172,7 +172,7 @@ whose Gram matrix is $\tfrac12\begin{pmatrix}0&1\\1&0\end{pmatrix}\oplus\tfrac12
 
 ## Summary
 
-At $n=2$ the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is $M_2(\mathbb{C})$, of real dimension eight, with the rank in $\{0,1,2\}$ and the characteristic polynomial of the left multiplication of degree four with the two eigenvalues doubled. The quaternion conjugation cuts it into the centre and the vector part of dimensions $2$ and $6$, the Hermitian conjugation into the Hermitian and the anti-Hermitian sectors of four real dimensions each, carrying the forms of signature $(1,3)$ and $(3,1)$; the commutator of the Hermitian half lands in the skew half and the adjoint action of the skew half lands in the Hermitian half, and the skew half is $\mathfrak{u}(2)$. The trace form has signature $(4,4)$ with the two halves definite, and the Killing form has rank six, signature $(3,3)$ and the two-dimensional radical $\mathbb{C}e_t$. A pure root $\vec{Ζ}$ gives the idempotent pair $\tilde\Pi_\pm$, the four corners $\mathbb{B}_{st}$ of two real dimensions each, and the companion nilpotents $\vec\Upsilon_{+-}$, $\vec\Upsilon_{-+}$ normalised by $uv=\tilde\Pi_+$, with the single reciprocal rescaling as the whole gauge. The spectrum has the two points doubled, the Hermitian sector has a real spectrum, the exponential gives the rotations and the stretches, and the algebraic norm $N$ equals $\alpha_+\alpha_-$ on the diagonal subalgebra, with the signature $(2,2)$ there and $(4,4)$ on the whole algebra.
+At $n=2$ the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is $M_2(\mathbb{C})$, of real dimension eight, with the rank in $\{0,1,2\}$ and the characteristic polynomial of the left multiplication of degree four with the two eigenvalues doubled. The quaternion conjugation cuts it into the centre and the vector part of dimensions $2$ and $6$, the Hermitian conjugation into the Hermitian and the anti-Hermitian sectors of four real dimensions each, carrying the forms of signature $(1,3)$ and $(3,1)$; the commutator of the Hermitian half lands in the anti-Hermitian half and the adjoint action of the anti-Hermitian half lands in the Hermitian half, and the anti-Hermitian half is $\mathfrak{u}(2)$. The trace form has signature $(4,4)$ with the two halves definite, and the Killing form has rank six, signature $(3,3)$ and the two-dimensional radical $\mathbb{C}e_t$. A pure root $\vec{Ζ}$ gives the idempotent pair $\tilde\Pi_\pm$, the four corners $\mathbb{B}_{st}$ of two real dimensions each, and the companion nilpotents $\vec\Upsilon_{+-}$, $\vec\Upsilon_{-+}$ normalised by $uv=\tilde\Pi_+$, with the single reciprocal rescaling as the whole gauge. The spectrum has the two points doubled, the Hermitian sector has a real spectrum, the exponential gives the rotations and the stretches, and the algebraic norm $N$ equals $\alpha_+\alpha_-$ on the diagonal subalgebra, with the signature $(2,2)$ there and $(4,4)$ on the whole algebra.
 
 ## Summary of Notation
 

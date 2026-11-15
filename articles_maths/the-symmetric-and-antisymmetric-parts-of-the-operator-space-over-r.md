@@ -80,7 +80,7 @@ which is the count above. At $n=2$ this is $6$, the dimension of $\mathrm{O}(4)$
 
 **The condition $L_A=R_{A^{\mathsf T}}$ is a different one.** It says $AX=XA^{\mathsf T}$ for all $X$. At $X=\mathrm{I}$ it gives $A=A^{\mathsf T}$, and then it says that $A$ commutes with every $X$, so $A=\lambda\mathrm{I}$. So the left multiplications that are also right multiplications are the scalars, of dimension $1$, while the left multiplications that are self-adjoint are the symmetric matrices, of dimension $n(n+1)/2$. The two conditions are not the same, and only the second is self-adjointness.
 
-**The one-sided operators sit in the halves as follows.** $L_A$ is self-adjoint for $A\in\operatorname{Sym}_n$ and neither self-adjoint nor antisymmetric otherwise; measured at $n=3$, $L_A$ is self-adjoint for a symmetric $A$ and not for a skew or a generic one. The operator $L_A-R_{A^{\mathsf T}}$ is antisymmetric for every $A$, since its adjoint is $L_{A^{\mathsf T}}-R_A=-(L_A-R_{A^{\mathsf T}})$. So the space of these operators, of dimension $n^{2}-1$, lies in the antisymmetric half.
+**The one-sided operators sit in the halves as follows.** $L_A$ is self-adjoint for $A\in\operatorname{Sym}_n$ and neither self-adjoint nor antisymmetric otherwise; measured at $n=3$, $L_A$ is self-adjoint for a symmetric $A$ and not for an anti-Hermitian or a generic one. The operator $L_A-R_{A^{\mathsf T}}$ is antisymmetric for every $A$, since its adjoint is $L_{A^{\mathsf T}}-R_A=-(L_A-R_{A^{\mathsf T}})$. So the space of these operators, of dimension $n^{2}-1$, lies in the antisymmetric half.
 
 ## The Derivations
 

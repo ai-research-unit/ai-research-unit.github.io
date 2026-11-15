@@ -34,11 +34,11 @@ Hence ${}^{\dagger}$ is an involution of the associative algebra $\operatorname{
 
 ## The Adjoint Involution and the Self-Adjoint Part
 
-### Self-Adjoint and Skew-Adjoint Operators
+### Self-Adjoint and Anti-Self-Adjoint Operators
 
-**Definition.** An operator $F$ is **self-adjoint** when $F^{\dagger} = F$, **skew-adjoint** when $F^{\dagger} = -F$, and **unitary** when $F^{\dagger}F = FF^{\dagger} = 1$; the set of the self-adjoint operators is $E^+$ and the set of the skew-adjoint operators is $E^-$, with $E = \operatorname{End}_R(A)$.
+**Definition.** An operator $F$ is **self-adjoint** when $F^{\dagger} = F$, **anti-self-adjoint** when $F^{\dagger} = -F$, and **unitary** when $F^{\dagger}F = FF^{\dagger} = 1$; the set of the self-adjoint operators is $E^+$ and the set of the anti-self-adjoint operators is $E^-$, with $E = \operatorname{End}_R(A)$.
 
-**Proposition.** The self-adjoint operators form a Jordan algebra under $F\bullet G = \tfrac12(FG+GF)$ and the skew-adjoint operators form a Lie algebra under the commutator; $E = E^+\oplus E^-$ when $2$ is invertible, and the unitary operators form a group.
+**Proposition.** The self-adjoint operators form a Jordan algebra under $F\bullet G = \tfrac12(FG+GF)$ and the anti-self-adjoint operators form a Lie algebra under the commutator; $E = E^+\oplus E^-$ when $2$ is invertible, and the unitary operators form a group.
 
 *Proof.* This is *Involutive Algebras* applied to the involution ${}^{\dagger}$ of $E$: the fixed set is closed under the symmetrised product, the anti-fixed under the commutator, and the units fixed up to the inverse form the unitary group.
 
@@ -57,7 +57,7 @@ $$
 $$
 L_aL_a^{\dagger} = L_{a\sigma(a)} = L_a^{\dagger}L_a ,
 $$
-because the algebra is commutative; the multiplication operators therefore lie in the **normal** part of $\operatorname{End}_R(A)$, and $L_a$ is self-adjoint exactly when $\sigma(a) = a$ and skew-adjoint exactly when $\sigma(a) = -a$.
+because the algebra is commutative; the multiplication operators therefore lie in the **normal** part of $\operatorname{End}_R(A)$, and $L_a$ is self-adjoint exactly when $\sigma(a) = a$ and anti-self-adjoint exactly when $\sigma(a) = -a$.
 
 *Proof.* $L_aL_a^{\dagger} = L_aL_{\sigma(a)} = L_{a\sigma(a)}$ and $L_a^{\dagger}L_a = L_{\sigma(a)}L_a = L_{\sigma(a)a}$, and $a\sigma(a) = \sigma(a)a$.
 
@@ -65,11 +65,11 @@ because the algebra is commutative; the multiplication operators therefore lie i
 
 **Example (the coordinate algebra).** Let $A = R^n$ with the standard pairing $B(x,y) = \sum_ix_iy_i$ and let $\sigma$ be an involution of $A$ permuting or negating the coordinates. Then the adjoint of an operator $F$, represented by a matrix, is $F^{\dagger} = \sigma F^{\mathsf{T}}\sigma^{-1}$, that is, the transpose composed with the coordinate involution on both sides. The multiplications $L_a$ for $a$ a diagonal matrix are diagonal, and $L_a^{\dagger} = L_{\sigma(a)}$ is the diagonal matrix with the permuted or negated diagonal, confirming the theorem.
 
-**Example (the polynomial ring).** Let $A = R[x]$ with $\sigma(x) = -x$ and let $B$ be the $R$-bilinear pairing with $B(x^i,x^j) = \delta_{ij}$, reflexive and non-degenerate on the polynomials of bounded degree; then $L_x^{\dagger} = L_{-x} = -L_x$, so the multiplication by $x$ is skew-adjoint, and the multiplication by $x^2$ is self-adjoint. The fixed subalgebra of the multiplication operators is the multiplication by the even polynomials.
+**Example (the polynomial ring).** Let $A = R[x]$ with $\sigma(x) = -x$ and let $B$ be the $R$-bilinear pairing with $B(x^i,x^j) = \delta_{ij}$, reflexive and non-degenerate on the polynomials of bounded degree; then $L_x^{\dagger} = L_{-x} = -L_x$, so the multiplication by $x$ is anti-self-adjoint, and the multiplication by $x^2$ is self-adjoint. The fixed subalgebra of the multiplication operators is the multiplication by the even polynomials.
 
 ## Summary
 
-A non-degenerate reflexive $\sigma$-sesquilinear pairing on a commutative involutive algebra $(A,\sigma)$ defines the **adjoint** $F^{\dagger}$ of every operator by $B(Fx,y) = B(x,F^{\dagger}y)$; the adjoint exists, is unique, and the assignment ${}^{\dagger}$ is an **involution** of $\operatorname{End}_R(A)$, additive, $R$-linear, of order two and anti-multiplicative. The **self-adjoint** operators form a Jordan algebra under the symmetrised product and the **skew-adjoint** operators a Lie algebra under the commutator, with the decomposition into the two when $2$ is invertible; the **unitary** operators form a group. The adjoint of a multiplication is $L_a^{\dagger} = L_{\sigma(a)}$, so the adjoint involution restricted to the multiplication operators is the induced involution of *Involutions of the Multiplication Operators* and every multiplication operator is **normal**. The coordinate algebra and the polynomial ring are the worked examples. No norm, distance, positivity or operator spectrum occurs.
+A non-degenerate reflexive $\sigma$-sesquilinear pairing on a commutative involutive algebra $(A,\sigma)$ defines the **adjoint** $F^{\dagger}$ of every operator by $B(Fx,y) = B(x,F^{\dagger}y)$; the adjoint exists, is unique, and the assignment ${}^{\dagger}$ is an **involution** of $\operatorname{End}_R(A)$, additive, $R$-linear, of order two and anti-multiplicative. The **self-adjoint** operators form a Jordan algebra under the symmetrised product and the **anti-self-adjoint** operators a Lie algebra under the commutator, with the decomposition into the two when $2$ is invertible; the **unitary** operators form a group. The adjoint of a multiplication is $L_a^{\dagger} = L_{\sigma(a)}$, so the adjoint involution restricted to the multiplication operators is the induced involution of *Involutions of the Multiplication Operators* and every multiplication operator is **normal**. The coordinate algebra and the polynomial ring are the worked examples. No norm, distance, positivity or operator spectrum occurs.
 
 ## Summary of Notation
 
@@ -79,7 +79,7 @@ A non-degenerate reflexive $\sigma$-sesquilinear pairing on a commutative involu
 | $B(ax,y) = B(x,\sigma(a)y)$ | $\sigma$-sesquilinear pairing |
 | $B(Fx,y) = B(x,F^{\dagger}y)$ | Definition of the adjoint |
 | $(FG)^{\dagger} = G^{\dagger}F^{\dagger}$, $(F^\dagger)^\dagger = F$ | The adjoint involution |
-| $E^+, E^-$ | Self-adjoint and skew-adjoint operators |
+| $E^+, E^-$ | Self-adjoint and anti-self-adjoint operators |
 | $F^{\dagger}F = FF^{\dagger} = 1$ | Unitary operator |
 | $L_a^{\dagger} = L_{\sigma(a)} = L_a^{*}$ | Adjoint of a multiplication |
 | $L_aL_a^{\dagger} = L_a^{\dagger}L_a$ | Normality of the multiplications |

@@ -10,7 +10,7 @@ $$
 \rho^{\alpha}_a = \rho_{L_a}\circ\alpha_M , \qquad \bigl(\rho^{\alpha}_a\bigr)^{*} = \alpha_M^{*}\circ\rho_{L_a}^{*} = \alpha_M\circ\rho_{L_a} = \rho_{L_{\alpha(a)}}\circ\alpha_M = \rho^{\alpha}_{\alpha(a)} ,
 $$
 
-so the **adjoint of the graded action is the graded action at the image of the parameter**, and the even elements act by **self-adjoint** operators while the odd elements act by **skew-adjoint** operators, which is the **sign rule** the grading imposes on the adjoint layer. The product of two graded actions composes by the twisted product $\rho^{\alpha}_a\rho^{\alpha}_b = \rho_{L_aL_{\alpha(b)}}$, and the adjoint of the product is the product of the adjoints in the reverse order, $\rho^{\alpha}_{\alpha(b)}\rho^{\alpha}_{\alpha(a)}$.
+so the **adjoint of the graded action is the graded action at the image of the parameter**, and the even elements act by **self-adjoint** operators while the odd elements act by **anti-self-adjoint** operators, which is the **sign rule** the grading imposes on the adjoint layer. The product of two graded actions composes by the twisted product $\rho^{\alpha}_a\rho^{\alpha}_b = \rho_{L_aL_{\alpha(b)}}$, and the adjoint of the product is the product of the adjoints in the reverse order, $\rho^{\alpha}_{\alpha(b)}\rho^{\alpha}_{\alpha(a)}$.
 
 The article assumes *The Graded Action on a Module over a Jordan Algebra* for the module, the grading, the graded action and the sign rule; *The Jordan Multiplication Operators* for the multiplication algebra $\operatorname{Mult}(J)$; *The Adjoint of the Left Multiplication on a Jordan Algebra* for the trace form and the self-adjointness of the multiplications; *The Signed Adjoint of the Left Multiplication on a Jordan Algebra* for the algebra case $M = J$; *Module Operators with an Involution* for the adjoint involution of the endomorphism ring of a module; and *Involutive Algebras* for the involution of an endomorphism algebra. Throughout, $R$ is a commutative ring with identity in which $2$ is invertible, $J = A^+$ is a special unital Jordan algebra with grade involution $\alpha$, $M$ is a graded module over $\operatorname{Mult}(J)$ with a compatible grade involution $\alpha_M$ and a non-degenerate reflexive pairing, $E = \operatorname{End}_{\operatorname{Mult}(J)}(M)$ carries the adjoint involution ${}^{*}$, and $\rho^{\alpha}_a = \rho_{L_a}\circ\alpha_M$ is the graded action; no norm, form, distance or positivity occurs.
 
@@ -42,7 +42,7 @@ $$
 
 *Proof.* The adjoint is anti-multiplicative, $(\Phi\circ\Psi)^{*} = \Psi^{*}\circ\Phi^{*}$, so $(\rho^{\alpha}_a)^{*} = (\rho_{L_a}\circ\alpha_M)^{*} = \alpha_M^{*}\circ\rho_{L_a}^{*} = \alpha_M\circ\rho_{L_a}$. Since the grade involution intertwines the multiplication operators by $\alpha_M\rho_{L_a}\alpha_M^{-1} = \rho_{L_{\alpha(a)}}$, one has $\alpha_M\circ\rho_{L_a} = \rho_{L_{\alpha(a)}}\circ\alpha_M = \rho^{\alpha}_{\alpha(a)}$.
 
-**Corollary (the sign rule).** The even elements of $J$ act by self-adjoint operators and the odd elements by skew-adjoint operators:
+**Corollary (the sign rule).** The even elements of $J$ act by self-adjoint operators and the odd elements by anti-self-adjoint operators:
 
 $$
 \boxed{\;a \in J^+ \Longrightarrow \bigl(\rho^{\alpha}_a\bigr)^{*} = \rho^{\alpha}_a, \qquad a \in J^- \Longrightarrow \bigl(\rho^{\alpha}_a\bigr)^{*} = -\rho^{\alpha}_a\;} ,
@@ -66,7 +66,7 @@ $$
 
 ## Examples
 
-**Example (the regular module).** For $M = J$ with the regular action the pairing is the trace form, the graded action is the signed left multiplication, and the adjoint action is the signed left multiplication at the image of the parameter; the even elements act self-adjointly and the odd elements skew-adjointly.
+**Example (the regular module).** For $M = J$ with the regular action the pairing is the trace form, the graded action is the signed left multiplication, and the adjoint action is the signed left multiplication at the image of the parameter; the even elements act self-adjointly and the odd elements anti-self-adjointly.
 
 **Example (the identity grade involutions).** For $\alpha = \mathrm{id}$ and $\alpha_M = \mathrm{id}$ the graded action is the unsigned action $\rho_{L_a}$, which is self-adjoint for every $a$; the adjoint action is the same action, and the sign rule is vacuous.
 
@@ -80,7 +80,7 @@ $$
 \bigl(\rho^{\alpha}_a\bigr)^{*} = \rho^{\alpha}_{\alpha(a)} .
 $$
 
-The even elements act by **self-adjoint** operators and the odd elements by **skew-adjoint** operators, which is the **sign rule** of the grading on the adjoint layer; the product of two graded actions is the twisted product $\rho^{\alpha}_a\rho^{\alpha}_b = \rho_{L_aL_{\alpha(b)}}$, whose adjoint is $\rho^{\alpha}_{\alpha(b)}\rho^{\alpha}_{\alpha(a)}$, and the adjoint operation reverses the parity of the action. The regular module recovers the signed left multiplication. No norm, form, distance or positivity occurs.
+The even elements act by **self-adjoint** operators and the odd elements by **anti-self-adjoint** operators, which is the **sign rule** of the grading on the adjoint layer; the product of two graded actions is the twisted product $\rho^{\alpha}_a\rho^{\alpha}_b = \rho_{L_aL_{\alpha(b)}}$, whose adjoint is $\rho^{\alpha}_{\alpha(b)}\rho^{\alpha}_{\alpha(a)}$, and the adjoint operation reverses the parity of the action. The regular module recovers the signed left multiplication. No norm, form, distance or positivity occurs.
 
 ## Summary of Notation
 

@@ -29,7 +29,7 @@ $$
 
 of dimension $\tfrac{1}{2}\langle N-1\rangle_{\natural}$; and its identity component has index at most four in it.
 
-*Proof.* Closure is continuity of the defining equations. The differential condition is obtained by differentiating $g(\exp(tX)\mathbf{Q}, \exp(tX)\mathbf{P}) = g(\mathbf{Q},\mathbf{P})$ at $t = 0$. The dimension is the dimension of the space of $g$-skew endomorphisms, which is $\tfrac{1}{2}\langle N-1\rangle_{\natural}$ because $g$ identifies $V$ with $V^{*}$ and skewness is a condition of that dimension. The four components are separated by the sign of the determinant and by the sign of the restriction of the form to the invariant subspace on which it is definite; for a Lorentzian form the invariant is $\det T$ together with the sign of $g(Tu,u)$ for one timelike $u$.
+*Proof.* Closure is continuity of the defining equations. The differential condition is obtained by differentiating $g(\exp(tX)\mathbf{Q}, \exp(tX)\mathbf{P}) = g(\mathbf{Q},\mathbf{P})$ at $t = 0$. The dimension is the dimension of the space of $g$-anti-self-adjoint endomorphisms, which is $\tfrac{1}{2}\langle N-1\rangle_{\natural}$ because $g$ identifies $V$ with $V^{*}$ and skewness is a condition of that dimension. The four components are separated by the sign of the determinant and by the sign of the restriction of the form to the invariant subspace on which it is definite; for a Lorentzian form the invariant is $\det T$ together with the sign of $g(Tu,u)$ for one timelike $u$.
 
 ### The Groups $O(3,1)$, $SO(3,1)$ and $SO^{+}(3,1)$
 
@@ -397,7 +397,7 @@ In $(\mathbb{B}_{\Phi},g)$ the level set $g = -1$ is a hyperboloid of two sheets
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Hermitian and anti-Hermitian subspaces, signatures $(1,3)$, $(3,1)$ |
 | $\mathbb{C}_{\mathrm{spl}}e_\mu\oplus\mathbb{C}_{\mathrm{spl}}e_\nu$ | Neutral four-plane, signature $(2,2)$ |
 | $O(n,m)$, $SO(n,m)$, $SO^{+}(n,m)$ | Orthogonal group of a form, its determinant-one part, its identity component |
-| $\mathrm{SO}(n,m)$ | Lie algebra of $g$-skew endomorphisms, dimension $\tfrac{1}{2}\langle N-1\rangle_{\natural}$ |
+| $\mathrm{SO}(n,m)$ | Lie algebra of $g$-anti-self-adjoint endomorphisms, dimension $\tfrac{1}{2}\langle N-1\rangle_{\natural}$ |
 | $\mathrm{U}(\mathbb{B}_{\mathrm{spl}}) = \{\tilde S : \tilde S\tilde{S}^{*} = e_t\}\cong Sp(1)\times\mathbb{R}$ | $*$-Unitary group |
 | $\operatorname{H}_{\tilde U}(\tilde Q) = \tilde U\tilde Q\tilde U^{*}$ | The bilinear two-sided operator of a general unit; the inner automorphism on the $*$-unitary subgroup |
 | $\langle\tilde U\rangle_{\natural,+}\langle\tilde U\rangle_{\natural,-}$ | The defect of the two-sided operator, the real scaling of the split-biquaternion norm |

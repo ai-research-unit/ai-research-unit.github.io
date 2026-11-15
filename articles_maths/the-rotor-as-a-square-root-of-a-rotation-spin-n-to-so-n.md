@@ -118,7 +118,7 @@ is the rotation by the angle $2\theta$ about the axis $u$. Over $200$ random pai
 
 ## Square Roots of a Rotation
 
-**Every rotation is the square of a rotation.** Let $Q\in\mathrm{SO}(n)$ and write $Q=\exp K$ with $K$ skew, as *The Exponential of the Antisymmetric Part: One-Parameter Rotations* allows. Then
+**Every rotation is the square of a rotation.** Let $Q\in\mathrm{SO}(n)$ and write $Q=\exp K$ with $K$ antisymmetric, as *The Exponential of the Antisymmetric Part: One-Parameter Rotations* allows. Then
 
 $$
 P=\exp(K/2)\in\mathrm{SO}(n),\qquad P^{2}=\exp K=Q .
@@ -126,7 +126,7 @@ $$
 
 In angles, the square root of $Q$ is the rotation with the same invariant planes and half of every angle. So the answer to the question of this section is that no rotation of $\mathrm{SO}(n)$ fails to be a square: the half-angle construction always exists.
 
-**The construction is checked numerically.** Over $150$ random rotations at $n=3,4,5$, built as $\exp K$ from a random skew $K$, the root $P=\exp(K/2)$ satisfies
+**The construction is checked numerically.** Over $150$ random rotations at $n=3,4,5$, built as $\exp K$ from a random anti-Hermitian $K$, the root $P=\exp(K/2)$ satisfies
 
 $$
 \max\lVert P^{2}-Q\rVert=1.45\cdot10^{-15},\qquad \det P\in[1-7\cdot10^{-16},\,1+7\cdot10^{-16}].
@@ -190,5 +190,5 @@ The even part of $\mathrm{Cl}_n$ has dimension $2^{n-1}$, and a rotor is an even
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for rotors, the sandwich action and the quaternion case.
 - H. Blaine Lawson and Marie-Louise Michelsohn, *Spin Geometry* (Princeton, 1989), for the spin groups, the spin representation and the fundamental groups.
 - [The Exponential of the Antisymmetric Part: One-Parameter Rotations](the-exponential-of-the-antisymmetric-part-one-parameter-rotations.html), for the logarithm of a rotation used in §*Square Roots of a Rotation*.
-- [Rotors Acting on the Bivector Space: the Adjoint Action](rotors-acting-on-the-bivector-space-the-adjoint-action.html), for the action of the rotations on the skew matrices.
+- [Rotors Acting on the Bivector Space: the Adjoint Action](rotors-acting-on-the-bivector-space-the-adjoint-action.html), for the action of the rotations on the antisymmetric matrices.
 - [Simple and Non-Simple Rotations: One Angle at $n\le3$, $\lfloor n/2\rfloor$ Planes at $n\ge4$](simple-and-non-simple-rotations-one-angle-at-n-le-3-floor-n-2-planes-at-n-ge-4.html), for the angles and the planes of a rotation.

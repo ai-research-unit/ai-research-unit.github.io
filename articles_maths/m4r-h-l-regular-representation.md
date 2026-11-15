@@ -278,7 +278,7 @@ and the compact part is a copy of $SU(2)$ inside $SO(4)$, acting on the carrier 
 
 **The Frobenius form is the metric.** It is positive definite, equal to $4$ times the Euclidean form on the coordinates, and it is the inner product with respect to which the transpose is the adjoint. Its restriction to the image is $4N$, so the image is a conformal copy of $\mathbb{R}^{4}$ inside the ambient.
 
-**The absence.** There is no complex Hermitian form on the regular model, because there is no complex structure. The Hermitian/anti-Hermitian splitting of the complex model is replaced here by the symmetric/skew splitting with respect to the transpose, of the next section, and the two are not the same decomposition: the first needs the complex scalar, the second does not.
+**The absence.** There is no complex Hermitian form on the regular model, because there is no complex structure. The Hermitian/anti-Hermitian splitting of the complex model is replaced here by the symmetric/anti-Hermitian splitting with respect to the transpose, of the next section, and the two are not the same decomposition: the first needs the complex scalar, the second does not.
 
 ## The Subspaces
 
@@ -292,11 +292,11 @@ and the compact part is a copy of $SU(2)$ inside $SO(4)$, acting on the carrier 
 | complex line $L_y$ | $q_x=q_z=0$ | the matrix of $q_te_t+q_y\vec e_y$ | $2$ |
 | complex line $L_z$ | $q_x=q_y=0$ | the matrix of $q_te_t+q_z\vec e_z$ | $2$ |
 | symmetric part | — | $\tfrac12(\mathsf{M}_4+\mathsf{M}_4^{\mathsf T})=q_tI_4$ | $1$ |
-| skew part | $q_t=0$ | $\tfrac12(\mathsf{M}_4-\mathsf{M}_4^{\mathsf T})=\mathsf{M}_4(\vec v)$ | $3$ |
+| antisymmetric part | $q_t=0$ | $\tfrac12(\mathsf{M}_4-\mathsf{M}_4^{\mathsf T})=\mathsf{M}_4(\vec v)$ | $3$ |
 
 **The symmetric part is scalar.** This is the exact analogue of the statement, in the complex model, that the Hermitian part of an element of the image is scalar. The decomposition is $1+3$ in both models, and in both it is the decomposition into the scalar line and the traceless part; what differs is the involution used to define it, the conjugate transpose there and the ordinary transpose here.
 
-**Proof of the symmetric part.** A Cayley matrix is $q_tI_4$ plus a antisymmetric part, because the three generators $A_1,A_2,A_3$ are antisymmetric. Hence $\tfrac12(\mathsf{M}_4+\mathsf{M}_4^{\mathsf T})=q_tI_4$ and $\tfrac12(\mathsf{M}_4-\mathsf{M}_4^{\mathsf T})=\mathsf{M}_4(\vec v)$.
+**Proof of the symmetric part.** A Cayley matrix is $q_tI_4$ plus an antisymmetric part, because the three generators $A_1,A_2,A_3$ are antisymmetric. Hence $\tfrac12(\mathsf{M}_4+\mathsf{M}_4^{\mathsf T})=q_tI_4$ and $\tfrac12(\mathsf{M}_4-\mathsf{M}_4^{\mathsf T})=\mathsf{M}_4(\vec v)$.
 
 **The complex lines are not matrix subalgebras of the ambient.** The image of $L_x$ is a two-dimensional subspace of the ambient consisting of matrices commuting with $\mathsf{M}_4(\vec e_x)$; it is a subalgebra of the image, and hence a copy of $\mathbb{C}$, but it is not a subalgebra of $M_4(\mathbb{R})$ closed under transposition. The distinction matters for the operators article, where the complex lines index the strata of the length.
 
@@ -327,7 +327,7 @@ Two models, one representation, and the table is the complete dictionary between
 6. The characteristic polynomial is $(\lambda^{2}-2q_t\lambda+N)^{2}$, the eigenvalues are $q_t\pm i\lVert\vec v\rVert$ each twice, and the matrix is similar to two identical rotation-scaling blocks.
 7. The adjugate is $N\mathsf{M}_4(\tilde q^{*})$, the inverse is $\mathsf{M}_4(\tilde q^{*})/N$, and every member of the image is conformal normal with singular values $\sqrt N$ four times.
 8. The right multiplication is the signed transpose of the left one, $R_{\tilde q}=D\mathsf{M}_4(\tilde q)^{\mathsf T}D$, and the two families are mutual centralisers meeting in the scalars.
-9. The symmetric part of a Cayley matrix is scalar and the skew part is the pure part, which is the regular form of the Hermitian/anti-Hermitian splitting of the complex model.
+9. The symmetric part of a Cayley matrix is scalar and the antisymmetric part is the pure part, which is the regular form of the Hermitian/anti-Hermitian splitting of the complex model.
 10. The two models are one representation read twice; the table of the last section is the complete dictionary between them.
 
 ## Summary of Notation

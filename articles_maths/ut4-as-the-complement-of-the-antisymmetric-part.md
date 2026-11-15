@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The upper triangular matrices form a subspace of dimension $10$, the antisymmetric matrices one of dimension $6$, and the two are direct complements: every matrix is a skew matrix plus an upper triangular one, in exactly one way.**
+**The upper triangular matrices form a subspace of dimension $10$, the antisymmetric matrices one of dimension $6$, and the two are direct complements: every matrix is an antisymmetric matrix plus an upper triangular one, in exactly one way.**
 
 The article proves the direct sum, writes the projection down entry by entry, contrasts this complement of $\operatorname{Skew}_4$ with the symmetric one, and states what each complement buys: the triangular one carries a flag and a solvable algebra, the symmetric one carries a Jordan product and a cone.
 
@@ -93,7 +93,7 @@ Then $U$ has the diagonal $1,6,11,16$, the strict upper entries $2+5=7$, $3+9=12
 
 **The count of the discarded information.** In both cases six numbers are lost: the lower entries $a_{ij}$ with $i>j$ in the triangular reading, the differences $a_{ij}-a_{ji}$ in the symmetric reading. The information lost is the same size and a different content.
 
-**Corollary.** The projection onto $UT_4$ along the skew half is the map that keeps the upper triangle and replaces the strict lower part by zero, so the two coordinates of an element are its upper triangle and its strictly lower triangle read as a skew matrix.
+**Corollary.** The projection onto $UT_4$ along the antisymmetric half is the map that keeps the upper triangle and replaces the strict lower part by zero, so the two coordinates of an element are its upper triangle and its strictly lower triangle read as an antisymmetric matrix.
 
 **Proof.** Decompose an arbitrary matrix into its upper triangular part and the negative of its strictly lower triangular part.
 

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The Hermitian half carries the trace metric of nonpositive curvature, the skew half carries a flat Ad-invariant form, and the isometries of the cone are exactly the two-sided operators $A\mapsto gAg^{*}$, which brings back the two-sided operators of the operator articles in geometric form.**
+**The Hermitian half carries the trace metric of nonpositive curvature, the anti-Hermitian half carries a flat Ad-invariant form, and the isometries of the cone are exactly the two-sided operators $A\mapsto gAg^{*}$, which brings back the two-sided operators of the operator articles in geometric form.**
 
 The article proves that the trace metric $g_A(H,K)=\operatorname{tr}(A^{-1}HA^{-1}K)$ is invariant under the two-sided action, computes the geodesics through a point and the distance between two points, proves the nonpositive curvature by a recomputation of the sectional curvature on random planes at $n=2,3,4$, proves that at $n=2$ the curvature is constant on the traceless directions so that the cone is a hyperbolic space times a line, and proves that the isometry group of the cone is the group of the two-sided operators modulo the scalars. It assumes *The Positive Cone and Its Boundary* and *The Two-Sided Operators and the Segre Cone of $M_n(\mathbb{C})$*. It defers the global identification to *The Symmetric Space $\mathrm{GL}_n/O(n)$ and Its Complex Twin* and the boundary to *The Cone of Positive Semidefinite Matrices*.
 
@@ -108,9 +108,9 @@ $$
 
 and the cone has rank two or more. The computation confirms the spread at $n=3$ and the negativity at $n=4$, and it is the reason the curvature of the cone is a two-parameter phenomenon, the two eigenvalues of the direction.
 
-## The Skew Half: Flat with a Bi-Invariant Form
+## The Anti-Hermitian Half: Flat with a Bi-Invariant Form
 
-**The trace form is definite on the skew half.** For $X,Y$ anti-Hermitian,
+**The trace form is definite on the anti-Hermitian half.** For $X,Y$ anti-Hermitian,
 
 $$
 \langle X,Y\rangle=-\operatorname{tr}(XY)
@@ -134,7 +134,7 @@ $$
 
 which was confirmed at $n=2$ by the flatness of the tangent space and the roundness of the circle factor. So the two halves carry opposite curvature signs, the Hermitian half negative and the compact group nonnegative.
 
-**The two metrics agree at the identity.** The trace metric of the cone at the identity and the form of the skew half are the real and the imaginary parts of the same Hermitian form on the whole space, so
+**The two metrics agree at the identity.** The trace metric of the cone at the identity and the form of the anti-Hermitian half are the real and the imaginary parts of the same Hermitian form on the whole space, so
 
 $$
 g_{\mathrm{I}}(H,K)=\operatorname{Re}\langle H,K\rangle_{\mathrm{HS}},\qquad \langle X,Y\rangle=\operatorname{Im}\langle iX,Y\rangle_{\mathrm{HS}},
@@ -212,7 +212,7 @@ so the two corners are two flat directions and the off-diagonal directions carry
 
 ## Summary
 
-The Hermitian half carries the trace metric $g_A(H,K)=\operatorname{tr}(A^{-1}HA^{-1}K)$, invariant under the two-sided action, equal at the identity to the trace form and equal to minus the Hessian of $\log\det$; its geodesics are $A^{1/2}\exp(tA^{-1/2}HA^{-1/2})A^{1/2}$ with constant speed, and its distance is the Frobenius norm of $\log(A^{-1/2}BA^{-1/2})$. The curvature is never positive, vanishes exactly on the planes through the scalars, is constant $-1/2$ on the traceless part at $n=2$ so that the cone is a hyperbolic three-space times a line, and varies for $n\ge3$. The skew half carries the definite Ad-invariant form $-\operatorname{tr}(XY)$, and the isometries of the cone are exactly the two-sided operators $L_gR_{g^{*}}$, which is the return of the two-sided operators in geometric form, with the isometry group the invertible matrices modulo the scalars.
+The Hermitian half carries the trace metric $g_A(H,K)=\operatorname{tr}(A^{-1}HA^{-1}K)$, invariant under the two-sided action, equal at the identity to the trace form and equal to minus the Hessian of $\log\det$; its geodesics are $A^{1/2}\exp(tA^{-1/2}HA^{-1/2})A^{1/2}$ with constant speed, and its distance is the Frobenius norm of $\log(A^{-1/2}BA^{-1/2})$. The curvature is never positive, vanishes exactly on the planes through the scalars, is constant $-1/2$ on the traceless part at $n=2$ so that the cone is a hyperbolic three-space times a line, and varies for $n\ge3$. The anti-Hermitian half carries the definite Ad-invariant form $-\operatorname{tr}(XY)$, and the isometries of the cone are exactly the two-sided operators $L_gR_{g^{*}}$, which is the return of the two-sided operators in geometric form, with the isometry group the invertible matrices modulo the scalars.
 
 ## Summary of Notation
 
@@ -223,7 +223,7 @@ The Hermitian half carries the trace metric $g_A(H,K)=\operatorname{tr}(A^{-1}HA
 | $d(A,B)=\|\log(A^{-1/2}BA^{-1/2})\|_{\mathrm{F}}$ | the distance |
 | $K(A;H,K)\le0$ | the nonpositive sectional curvature |
 | $K=-\tfrac12$ on the traceless part at $n=2$ | the constant curvature |
-| $\langle X,Y\rangle=-\operatorname{tr}(XY)$ | the form of the skew half |
+| $\langle X,Y\rangle=-\operatorname{tr}(XY)$ | the form of the antisymmetric half |
 | $L_gR_{g^{*}}$ | the two-sided operator, the isometry |
 | $\mathrm{PD}_n=\mathrm{GL}_n(\mathbb{C})/\mathrm{U}(n)$ | the symmetric space |
 

@@ -97,7 +97,7 @@ L(\vec e_x) = \begin{pmatrix} 0 & -1 & 0 & 0 \\ 1 & 0 & 0 & 0 \\ 0 & 0 & 0 & -1 
 R(\vec e_x) = \begin{pmatrix} 0 & -1 & 0 & 0 \\ 1 & 0 & 0 & 0 \\ 0 & 0 & 0 & 1 \\ 0 & 0 & -1 & 0 \end{pmatrix}.
 $$
 
-The two agree on their first two rows and differ in the sign of the last two, and both are skew, $L(\vec e_x)^{\mathsf T} = -L(\vec e_x)$ and likewise for $R(\vec e_x)$.
+The two agree on their first two rows and differ in the sign of the last two, and both are anti-Hermitian, $L(\vec e_x)^{\mathsf T} = -L(\vec e_x)$ and likewise for $R(\vec e_x)$.
 
 ### The $A$-Linear Operators
 
@@ -153,7 +153,7 @@ Collecting the classes, and reading the containments off the dimensions, gives o
 | class | dimension over $\mathbb{C}$ | defined by |
 |---|---|---|
 | all $\mathbb{C}$-linear operators | 16 | none |
-| $\mathfrak{skew}_4(\mathbb{C})$, the skew operators | 6 | $X^{\mathsf T} + X = 0$ |
+| $\mathfrak{anti-Hermitian}_4(\mathbb{C})$, the anti-self-adjoint operators | 6 | $X^{\mathsf T} + X = 0$ |
 | $L(\mathbb{B})$, the left multiplications | 4 | $M = L(a)$ |
 | $R(\mathbb{B})$, the $A$-linear maps | 4 | centralizer of $L(\mathbb{B})$ |
 | $\operatorname{Der}_{\mathbb{C}}(\mathbb{B})$ | 3 | Leibniz |
@@ -168,24 +168,24 @@ The containments that hold, all of them dimension checks that have been verified
 
 $$
 \mathbb{C}\cdot I \subset L(\mathbb{B}) \subset M_4(\mathbb{C}), \qquad
-\operatorname{Der}_{\mathbb{C}}(\mathbb{B}) \subset \mathfrak{skew}_4(\mathbb{C}) \subset M_4(\mathbb{C}).
+\operatorname{Der}_{\mathbb{C}}(\mathbb{B}) \subset \mathfrak{anti-Hermitian}_4(\mathbb{C}) \subset M_4(\mathbb{C}).
 $$
 
-Both inclusions on the right have been checked on explicit bases: the three derivation matrices are skew, as are $L(\vec e_x)$, $L(\vec e_y)$ and $L(\vec e_z)$, while $L(e_t) = I$ is not. The transposition is the one of the trace pairing, a bare pairing used only to define the subspace; no length, no signature and no orthogonal group is formed from it, so this is the boundary *The Orthogonal Lie Algebra* of Part II supplies.
+Both inclusions on the right have been checked on explicit bases: the three derivation matrices are antisymmetric, as are $L(\vec e_x)$, $L(\vec e_y)$ and $L(\vec e_z)$, while $L(e_t) = I$ is not. The transposition is the one of the trace pairing, a bare pairing used only to define the subspace; no length, no signature and no orthogonal group is formed from it, so this is the boundary *The Orthogonal Lie Algebra* of Part II supplies.
 
-Two finer statements sharpen the picture. First, the element $L(e_t) = I$ is the identity operator and is not skew, while $L(\vec e_x)$, $L(\vec e_y)$, $L(\vec e_z)$ are skew, so that
+Two finer statements sharpen the picture. First, the element $L(e_t) = I$ is the identity operator and is not anti-Hermitian, while $L(\vec e_x)$, $L(\vec e_y)$, $L(\vec e_z)$ are anti-Hermitian, so that
 
 $$
 L(\mathbb{B}) = \mathbb{C}\cdot I \ \oplus\ L(\text{pure}),
 $$
 
-with $L(\text{pure})$ of dimension $3$. Second, the two three-dimensional pieces add up to the whole skew Lie algebra:
+with $L(\text{pure})$ of dimension $3$. Second, the two three-dimensional pieces add up to the whole anti-Hermitian Lie algebra:
 
 $$
-\mathfrak{skew}_4(\mathbb{C}) = L(\text{pure}) \ \oplus\ \operatorname{Der}_{\mathbb{C}}(\mathbb{B}), \qquad 3 + 3 = 6 .
+\mathfrak{anti-Hermitian}_4(\mathbb{C}) = L(\text{pure}) \ \oplus\ \operatorname{Der}_{\mathbb{C}}(\mathbb{B}), \qquad 3 + 3 = 6 .
 $$
 
-The identity has been verified by exhibiting both spaces as subspaces of the sixteen-dimensional operator space and computing their intersection and their sum. It says that a skew operator splits uniquely into the part that is a left multiplication by a vector of $\mathbb{B}$ and the part that is a derivation, and that the two parts have nothing else in common.
+The identity has been verified by exhibiting both spaces as subspaces of the sixteen-dimensional operator space and computing their intersection and their sum. It says that an anti-self-adjoint operator splits uniquely into the part that is a left multiplication by a vector of $\mathbb{B}$ and the part that is a derivation, and that the two parts have nothing else in common.
 
 ## Worked Example: The Complex Numbers as a Real Algebra
 
@@ -277,13 +277,13 @@ $$
 
 The automorphism group is finite, so its Lie algebra is zero. The check is not vacuous, and it is what would fail if a derivation or an automorphism had been missed.
 
-**The skew operators.** The condition $X^{\mathsf T} + X = 0$ on the operator matrix cuts out
+**The anti-self-adjoint operators.** The condition $X^{\mathsf T} + X = 0$ on the operator matrix cuts out
 
 $$
 \operatorname{span}_{\mathbb{R}} \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix} = \operatorname{span}_{\mathbb{R}} L(i),
 $$
 
-a one-dimensional subspace of the four-dimensional ambient space. This is the sharpest of the statements for this example: the nonzero skew operator is exactly multiplication by the imaginary unit, up to scale. The transposition is the one of the trace pairing, and the pairing is used only to define the subspace. The reading of this line as the orthogonal group of the plane, with its rotations and its unit circle, needs the norm and belongs to Part IV, where the distance is available, and is named only.
+a one-dimensional subspace of the four-dimensional ambient space. This is the sharpest of the statements for this example: the nonzero anti-self-adjoint operator is exactly multiplication by the imaginary unit, up to scale. The transposition is the one of the trace pairing, and the pairing is used only to define the subspace. The reading of this line as the orthogonal group of the plane, with its rotations and its unit circle, needs the norm and belongs to Part IV, where the distance is available, and is named only.
 
 ## The Three Two-Dimensional Algebras
 
@@ -349,11 +349,11 @@ The $r_k$ span a three-dimensional subalgebra, and the $b_k$ span a complementar
 
 ## Summary
 
-Fixing a $k$-algebra $A$ with $n = \dim_k A$ places every linear operator on $A$ in the one ambient space $\operatorname{End}_k(A) \cong M_n(k)$, of dimension $n^2$, and the classes of operators worth naming are subspaces and groups inside it. A condition linear in the operator defines a subspace: the derivations by the Leibniz rule, the $A$-linear operators as the centralizer of the left multiplications, and the skew operators. A condition nonlinear in the operator defines a set that is not a subspace, and a group once invertibility is added: the algebra automorphisms, which are the units of the endomorphism monoid. The derivations are the tangent space of the automorphism group at the identity, so the dimension of the one equals the dimension of the other.
+Fixing a $k$-algebra $A$ with $n = \dim_k A$ places every linear operator on $A$ in the one ambient space $\operatorname{End}_k(A) \cong M_n(k)$, of dimension $n^2$, and the classes of operators worth naming are subspaces and groups inside it. A condition linear in the operator defines a subspace: the derivations by the Leibniz rule, the $A$-linear operators as the centralizer of the left multiplications, and the anti-self-adjoint operators. A condition nonlinear in the operator defines a set that is not a subspace, and a group once invertibility is added: the algebra automorphisms, which are the units of the endomorphism monoid. The derivations are the tangent space of the automorphism group at the identity, so the dimension of the one equals the dimension of the other.
 
-The ladder for the biquaternion algebra inside $M_4(\mathbb{C})$ has the all-operators rung of dimension $16$, the skew-operator rung of dimension $6$, the derivations and the pure left multiplications of dimension $3$ each, the left and right multiplication spaces of dimension $4$ each, and the scalars of dimension $1$. The two three-dimensional pieces satisfy $\mathfrak{skew}_4(\mathbb{C}) = L(\text{pure}) \oplus \operatorname{Der}_{\mathbb{C}}(\mathbb{B})$, and the left multiplication space is $\mathbb{C}\cdot I$ plus the pure part. The automorphism group $PSL_2(\mathbb{C})$ sits inside the ambient space as a group.
+The ladder for the biquaternion algebra inside $M_4(\mathbb{C})$ has the all-operators rung of dimension $16$, the anti-Hermitian-operator rung of dimension $6$, the derivations and the pure left multiplications of dimension $3$ each, the left and right multiplication spaces of dimension $4$ each, and the scalars of dimension $1$. The two three-dimensional pieces satisfy $\mathfrak{anti-Hermitian}_4(\mathbb{C}) = L(\text{pure}) \oplus \operatorname{Der}_{\mathbb{C}}(\mathbb{B})$, and the left multiplication space is $\mathbb{C}\cdot I$ plus the pure part. The automorphism group $PSL_2(\mathbb{C})$ sits inside the ambient space as a group.
 
-The worked case of $\mathbb{C}$ over $\mathbb{R}$ exhibits the whole scheme in the smallest nontrivial dimension. The ambient space $M_2(\mathbb{R})$ has dimension $4$ and splits as $L(\mathbb{C}) \oplus \{\text{conjugate-linear maps}\}$, of dimensions $2 + 2$; the derivations are zero, because $0 = \delta(i^2) = 2i\,\delta(i)$ kills the generator; the automorphisms are $\mathbb{Z}/2$, generated by a reflection; and the skew operators span the one-dimensional subspace generated by $L(i)$.
+The worked case of $\mathbb{C}$ over $\mathbb{R}$ exhibits the whole scheme in the smallest nontrivial dimension. The ambient space $M_2(\mathbb{R})$ has dimension $4$ and splits as $L(\mathbb{C}) \oplus \{\text{conjugate-linear maps}\}$, of dimensions $2 + 2$; the derivations are zero, because $0 = \delta(i^2) = 2i\,\delta(i)$ kills the generator; the automorphisms are $\mathbb{Z}/2$, generated by a reflection; and the anti-self-adjoint operators span the one-dimensional subspace generated by $L(i)$.
 
 Running the same computation over the three two-dimensional algebras shows the derivation dimension to be the invariant that separates them: it is $0$ for $\mathbb{C}$ and $\mathbb{C}_{\mathrm{spl}}$ and $1$ for $\mathbb{C}_{\mathrm{dln}}$, and the asymmetry is caused by the nilpotent generator of $\mathbb{C}_{\mathrm{dln}}$, which the Leibniz rule does not obstruct. These three algebras are commutative, so all their inner derivations vanish and $\dim Z(A) = n$ for each; the one-dimensional derivation space of $\mathbb{C}_{\mathrm{dln}}$ is therefore entirely outer, and it is the case in which the formula $\dim \operatorname{Der} = n - \dim Z(A)$ fails, since it predicts $0$. The formula holds for $\mathbb{H}$ over $\mathbb{R}$ and for $\mathbb{B}$ over $\mathbb{C}$, where it gives $\dim \operatorname{Der} = 3$, and over $\mathbb{R}$ the biquaternion derivation space is six-dimensional. The orthogonal and Lorentz readings of these spaces need a form and belong to Part II and Part IV, where the form and the distance are available.
 
@@ -374,7 +374,7 @@ Running the same computation over the three two-dimensional algebras shows the d
 | $\operatorname{Aut}_k(A)$ | Group of $k$-algebra automorphisms of $A$ |
 | $Z(A)$ | Centre of $A$, a subspace of $A$ |
 | $\exp(\delta)$ | Exponential of a nilpotent derivation, an automorphism |
-| $\mathfrak{skew}_n(k) = \{X : X^{\mathsf T} + X = 0\}$ | Skew operators relative to the trace pairing |
+| $\mathfrak{anti-Hermitian}_n(k) = \{X : X^{\mathsf T} + X = 0\}$ | Anti-self-adjoint operators relative to the trace pairing |
 | $r_k = \mathrm{ad}_{\vec e_k}$, $b_k = \mathrm{ad}_{i\vec e_k}$ | The two three-dimensional pieces of $\operatorname{Der}_{\mathbb{R}}(\mathbb{B})$ |
 | $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$, $\mathbb{B}$ | Real, complex, quaternion and biquaternion algebras |
 | $\mathbb{C}_{\mathrm{spl}}$, $\mathbb{C}_{\mathrm{dln}}$ | Split complex numbers and dual numbers |

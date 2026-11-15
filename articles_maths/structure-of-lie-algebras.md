@@ -119,7 +119,7 @@ $$
 \kappa([x, y], z) = \operatorname{tr}(\operatorname{ad}_{[x,y]}\operatorname{ad}_z) = \operatorname{tr}([\operatorname{ad}_x, \operatorname{ad}_y]\operatorname{ad}_z) = \operatorname{tr}(\operatorname{ad}_x[\operatorname{ad}_y, \operatorname{ad}_z]) = \operatorname{tr}(\operatorname{ad}_x \operatorname{ad}_{[y,z]}) = \kappa(x, [y, z]).
 $$
 
-**Corollary.** Every algebra automorphism of $\mathrm{G}$ preserves $\kappa$, and every derivation of $\mathrm{G}$ is skew with respect to $\kappa$: $\kappa(D(x), y) + \kappa(x, D(y)) = 0$.
+**Corollary.** Every algebra automorphism of $\mathrm{G}$ preserves $\kappa$, and every derivation of $\mathrm{G}$ is anti-self-adjoint with respect to $\kappa$: $\kappa(D(x), y) + \kappa(x, D(y)) = 0$.
 
 ### The Radical of the Killing Form
 

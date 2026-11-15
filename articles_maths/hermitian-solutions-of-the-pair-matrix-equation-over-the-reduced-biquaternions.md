@@ -96,7 +96,7 @@ because $X_{0}^{\mathsf T}=X_{0}$ and $X_{1}^{\mathsf T}=-X_{1}$ are the two con
 | $V=X_{2}+iX_{3}$ | $V^{\mathsf T}=-V$ | complex antisymmetric matrices | $n(n-1)$ |
 | $X=U+Vj$ | both | the product of the two | $2n^{2}-n$ |
 
-The two conditions are not those of the star applied entrywise and transposed: the star fixes $1$ and $ij$ and negates $i$ and $j$, so it would keep the sign of the $ij$-block and ask $X_{3}$ to be symmetric, while the source's conjugation negates all three imaginary units and asks $X_{3}$ to be skew. The difference is exactly the sign with which the $ij$-block enters the conjugation. The corpus's matrix adjoint, the bar-transpose of the Conventions, gives a third set, which differs in the $j$-block instead.
+The two conditions are not those of the star applied entrywise and transposed: the star fixes $1$ and $ij$ and negates $i$ and $j$, so it would keep the sign of the $ij$-block and ask $X_{3}$ to be symmetric, while the source's conjugation negates all three imaginary units and asks $X_{3}$ to be antisymmetric. The difference is exactly the sign with which the $ij$-block enters the conjugation. The corpus's matrix adjoint, the bar-transpose of the Conventions, gives a third set, which differs in the $j$-block instead.
 
 ## The Half-Vectorisation
 

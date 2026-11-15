@@ -146,7 +146,7 @@ $$
 T : J \times J \longrightarrow R, \qquad T(x, y) = \operatorname{tr}(L_{x \bullet y}) .
 $$
 
-By *Jordan Algebras* it is symmetric and $R$-bilinear, and every derivation of $J$ is skew for it, $T(\delta x, y) + T(x, \delta y) = 0$.
+By *Jordan Algebras* it is symmetric and $R$-bilinear, and every derivation of $J$ is anti-self-adjoint for it, $T(\delta x, y) + T(x, \delta y) = 0$.
 
 **Theorem.** The trace form is **associative**,
 
@@ -172,7 +172,7 @@ $$
 T(L_a x, y) = T(a \bullet x, y) = T(x, a \bullet y) = T(x, L_a y).
 $$
 
-**Remark.** The associativity of the trace form is the statement that the trace form of a Jordan algebra is **associative** in the sense of Jordan theory; for a general Jordan algebra it follows from the linearised Jordan identity exactly as the special case above follows from associativity of $A$. The identity $T(\delta x, y) = -T(x, \delta y)$ for derivations and the identity $T(L_a x, y) = T(x, L_a y)$ are then two readings of the same associativity, with $\delta$ skew and $L_a$ symmetric because a derivation reverses one factor and a multiplication does not.
+**Remark.** The associativity of the trace form is the statement that the trace form of a Jordan algebra is **associative** in the sense of Jordan theory; for a general Jordan algebra it follows from the linearised Jordan identity exactly as the special case above follows from associativity of $A$. The identity $T(\delta x, y) = -T(x, \delta y)$ for derivations and the identity $T(L_a x, y) = T(x, L_a y)$ are then two readings of the same associativity, with $\delta$ antisymmetric and $L_a$ symmetric because a derivation reverses one factor and a multiplication does not.
 
 **Corollary.** The trace form is invariant under the inner structure group in the sense $T(U_a x, U_a y) = T(x, U_a U_a y)$, which follows from the self-adjointness of $U_a$; since $U_a$ is self-adjoint and $U_a^2 = U_{a^2}$ up to the fundamental formula, this is a statement about the quadratic representations and not about the operator $U_a$ being orthogonal. An automorphism of $J$ that lies in the multiplication algebra therefore preserves $T$ exactly when its own action on the coefficients does, and the invariance statements are algebraic: no positivity, no signature and no norm of the form occurs.
 

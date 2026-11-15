@@ -2,7 +2,7 @@
 
 ## Introduction
 
-An involution of the endomorphism algebra $E = \operatorname{End}_F(V)$ is an additive map $E \to E$ of order two that reverses products, and the standard one is the **adjoint** with respect to a non-degenerate pairing on $V$: the endomorphism $A^{*}$ determined by $B(Ax,y) = B(x,A^{*}y)$. This article develops the involutions of $E$ from that example, the laws that make the adjoint an anti-automorphism of order two, the decomposition of $E$ into its self-adjoint and skew-adjoint parts, the matrix description of the involution, and the unitary elements it singles out — the endomorphisms that preserve the pairing.
+An involution of the endomorphism algebra $E = \operatorname{End}_F(V)$ is an additive map $E \to E$ of order two that reverses products, and the standard one is the **adjoint** with respect to a non-degenerate pairing on $V$: the endomorphism $A^{*}$ determined by $B(Ax,y) = B(x,A^{*}y)$. This article develops the involutions of $E$ from that example, the laws that make the adjoint an anti-automorphism of order two, the decomposition of $E$ into its self-adjoint and anti-self-adjoint parts, the matrix description of the involution, and the unitary elements it singles out — the endomorphisms that preserve the pairing.
 
 The pairing-based adjoint of a single endomorphism, its existence and uniqueness, its kernel and image and its relation to the transpose, is *The Adjoint of an Endomorphism*, in the `*`-operator group, and the group that the unitary elements form, with its Lie algebra, is *Unitary Endomorphisms*; this article is the `*`-theory counterpart, and it treats the involution as a structure on the algebra rather than the adjoint as an operator. The transposed involution on the dual, and the comparison of the duality of the dual with the duality of the pairing, are *Involutions of the Dual Space* and *The Involution on the Dual Operator*. The automorphism $X \mapsto T X T^{-1}$ induced by a linear involution, which is an **algebra automorphism** of order two and not an anti-automorphism, belongs to *Involutive Algebras*; the two are different kinds of involution of the same algebra and are not conflated here. The forms themselves, their norms and the way they measure, are *Hilbert Algebras*, in Part II, and only the pairing is used here, evaluated to a scalar and never measured.
 
@@ -28,11 +28,11 @@ $$
 
 **Remark (the kinds).** If $\varsigma = \mathrm{id}$ the involution is **of the first kind**, and it is $F$-linear; if $\varsigma \neq \mathrm{id}$ it is **of the second kind**, and it is conjugate-linear. The reflexive hypothesis is what makes the involution have order two; a general bilinear pairing gives an adjoint with $(A^{*})^{*} = A$ only after the pairing is replaced by its reflexivisation.
 
-### The Fixed and Skew Parts
+### The Fixed and Anti-Hermitian Parts
 
-**Definition.** An endomorphism is **self-adjoint** when $A^{*} = A$, **skew-adjoint** when $A^{*} = -A$, and **normal** when $AA^{*} = A^{*}A$.
+**Definition.** An endomorphism is **self-adjoint** when $A^{*} = A$, **anti-self-adjoint** when $A^{*} = -A$, and **normal** when $AA^{*} = A^{*}A$.
 
-**Proposition.** If $\varsigma = \mathrm{id}$ and $2 \neq 0$ in $F$, then $E$ is the direct sum of its self-adjoint and skew-adjoint parts,
+**Proposition.** If $\varsigma = \mathrm{id}$ and $2 \neq 0$ in $F$, then $E$ is the direct sum of its self-adjoint and anti-self-adjoint parts,
 
 $$
 \boxed{\;E = E^{+} \oplus E^{-}, \qquad E^{\pm} = \{A : A^{*} = \pm A\}\;} ,
@@ -40,7 +40,7 @@ $$
 
 and the dimensions are $\dim_F E^{+} = n(n+1)/2$ and $\dim_F E^{-} = n(n-1)/2$ for a symmetric pairing, and the two dimensions exchanged for an antisymmetric one. In the sesquilinear case the self-adjoint elements form an $F^{\varsigma}$-linear space only, and the decomposition is not an $F$-linear decomposition.
 
-**Proof.** For $A \in E$ write $A = \tfrac12(A+A^{*}) + \tfrac12(A-A^{*})$, a sum of a self-adjoint and a skew-adjoint element; the sum is direct because an element that is both satisfies $A = -A$, hence $A = 0$ when $2 \neq 0$. The dimensions are those of the two eigenspaces of the involution $A \mapsto A^{*}$ and are computed in the matrix form below; an antisymmetric pairing exchanges them because the adjoint of $A$ with respect to $-B$ is the negative of its adjoint with respect to $B$.
+**Proof.** For $A \in E$ write $A = \tfrac12(A+A^{*}) + \tfrac12(A-A^{*})$, a sum of a self-adjoint and an anti-self-adjoint element; the sum is direct because an element that is both satisfies $A = -A$, hence $A = 0$ when $2 \neq 0$. The dimensions are those of the two eigenspaces of the involution $A \mapsto A^{*}$ and are computed in the matrix form below; an antisymmetric pairing exchanges them because the adjoint of $A$ with respect to $-B$ is the negative of its adjoint with respect to $B$.
 
 ### The Matrix Form
 
@@ -76,11 +76,11 @@ and they form a subgroup $\mathrm{U}(V,B)$ of $E^{\times}$; in the bilinear symm
 
 **Proof.** The first part is multiplicativity of the determinant and $\det A^{*}=\det A$; the antisymmetric case is the standard determinant identity for the symplectic group, quoted from the theory of the classical groups and belonging to *Symmetric Algebras* and *Anti-symmetric Algebras*.
 
-**Remark (the unitary elements as a set, not yet a group of operators).** This article owns the unitary elements of the involution: the fixed part, the skew part, the matrix description and the preservation criterion. The group structure of $\mathrm{U}(V,B)$ as a transformation group, its action on $V$, the subspace it preserves and the Lie algebra of self-adjoint elements under the commutator are *Unitary Endomorphisms*, which follows.
+**Remark (the unitary elements as a set, not yet a group of operators).** This article owns the unitary elements of the involution: the fixed part, the anti-Hermitian part, the matrix description and the preservation criterion. The group structure of $\mathrm{U}(V,B)$ as a transformation group, its action on $V$, the subspace it preserves and the Lie algebra of self-adjoint elements under the commutator are *Unitary Endomorphisms*, which follows.
 
 ## Summary
 
-A non-degenerate reflexive pairing $B$ on a finite-dimensional space $V$ defines an involution $A \mapsto A^{*}$ of the endomorphism algebra $E = \operatorname{End}_F(V)$ by $B(Ax,y) = B(x,A^{*}y)$; the adjoint exists and is unique, and the assignment is an additive, anti-multiplicative, order-two map, $F$-linear for a bilinear pairing and $\varsigma$-semilinear for a sesquilinear one. Over a field with $2 \neq 0$ and a bilinear pairing the algebra is the direct sum of the self-adjoint and the skew-adjoint parts, of dimensions $n(n+1)/2$ and $n(n-1)/2$ for a symmetric pairing and exchanged for an antisymmetric one; in the sesquilinear case the fixed part is only $F^{\varsigma}$-linear. In a basis the involution is $A \mapsto \Phi^{-1}\overline{A}^{\mathsf{T}}\Phi$ with $\Phi$ the Gram matrix, so it depends on the congruence class of the pairing; the trace and, in the bilinear case, the determinant are preserved. The unitary elements, $A^{*}A = AA^{*} = \mathrm{id}$, are exactly the endomorphisms preserving $B$ and form a subgroup containing the appropriate scalars, with determinant satisfying $\det(A)^{2}=1$ in the symmetric bilinear case and $\det A = 1$ in the antisymmetric case. The classification of the involutions of the matrix algebra, the group structure of the unitary elements and the analytic theory of the forms belong to *Involutive Rings*, *Unitary Endomorphisms* and *Hilbert Algebras* respectively.
+A non-degenerate reflexive pairing $B$ on a finite-dimensional space $V$ defines an involution $A \mapsto A^{*}$ of the endomorphism algebra $E = \operatorname{End}_F(V)$ by $B(Ax,y) = B(x,A^{*}y)$; the adjoint exists and is unique, and the assignment is an additive, anti-multiplicative, order-two map, $F$-linear for a bilinear pairing and $\varsigma$-semilinear for a sesquilinear one. Over a field with $2 \neq 0$ and a bilinear pairing the algebra is the direct sum of the self-adjoint and the anti-self-adjoint parts, of dimensions $n(n+1)/2$ and $n(n-1)/2$ for a symmetric pairing and exchanged for an antisymmetric one; in the sesquilinear case the fixed part is only $F^{\varsigma}$-linear. In a basis the involution is $A \mapsto \Phi^{-1}\overline{A}^{\mathsf{T}}\Phi$ with $\Phi$ the Gram matrix, so it depends on the congruence class of the pairing; the trace and, in the bilinear case, the determinant are preserved. The unitary elements, $A^{*}A = AA^{*} = \mathrm{id}$, are exactly the endomorphisms preserving $B$ and form a subgroup containing the appropriate scalars, with determinant satisfying $\det(A)^{2}=1$ in the symmetric bilinear case and $\det A = 1$ in the antisymmetric case. The classification of the involutions of the matrix algebra, the group structure of the unitary elements and the analytic theory of the forms belong to *Involutive Rings*, *Unitary Endomorphisms* and *Hilbert Algebras* respectively.
 
 ## Summary of Notation
 
@@ -92,7 +92,7 @@ A non-degenerate reflexive pairing $B$ on a finite-dimensional space $V$ defines
 | $B$ | a non-degenerate reflexive pairing on $V$ |
 | $A^{*}$ | the adjoint of $A$: $B(Ax,y)=B(x,A^{*}y)$ |
 | $(A^{*})^{*}=A$, $(AB)^{*}=B^{*}A^{*}$ | the involution laws |
-| $E^{+}$, $E^{-}$ | self-adjoint and skew-adjoint parts, $A^{*}=\pm A$ |
+| $E^{+}$, $E^{-}$ | self-adjoint and anti-self-adjoint parts, $A^{*}=\pm A$ |
 | $\Phi_{ij}=B(v_i,v_j)$ | the Gram matrix |
 | $[A^{*}]=\Phi^{-1}\overline{[A]}^{\mathsf{T}}\Phi$ | the matrix form of the involution |
 | $\mathrm{U}(V,B)$ | the unitary elements, $A^{*}A=AA^{*}=\mathrm{id}$ |

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**A anti-Hermitian $2\times2$ matrix is $X=ia\,I+ir\,\vec n\cdot\vec\sigma$ with $a$ real, $r\ge0$ and $\vec n$ a unit vector, and its two eigenvalues are the purely imaginary numbers $i(a+r)$ and $i(a-r)$, symmetric about $ia$.**
+**An anti-Hermitian $2\times2$ matrix is $X=ia\,I+ir\,\vec n\cdot\vec\sigma$ with $a$ real, $r\ge0$ and $\vec n$ a unit vector, and its two eigenvalues are the purely imaginary numbers $i(a+r)$ and $i(a-r)$, symmetric about $ia$.**
 
 The article describes the anti-Hermitian space, proves the anti-Hermitian form of the spectral theorem, reads the two imaginary eigenvalues and their sum and product from the trace and the determinant, computes the traceless part and its Lie algebra $\mathfrak{su}(2)$, states the negative definiteness of the trace form on it, and compares the complex anti-Hermitian picture with the real antisymmetric one. It assumes *The Spectral Theorem: the Hermitian Case and the Sphere of Idempotents*, *Normal $2\times2$ Matrices and the Common Spectral Theorem* and *The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian at $n=2$*.
 
@@ -22,13 +22,13 @@ It keeps to the spectral statement; the exponential of the anti-Hermitian half b
 
 **Proof.** It is $i$ times a Hermitian matrix, and the Hermitian matrices are $aI+r\,\vec n\cdot\vec\sigma$.
 
-**Corollary.** The trace of a anti-Hermitian matrix is purely imaginary, and its diagonal entries are purely imaginary.
+**Corollary.** The trace of an anti-Hermitian matrix is purely imaginary, and its diagonal entries are purely imaginary.
 
 **Proof.** The diagonal of an anti-Hermitian matrix satisfies $\bar x=-x$, so each diagonal entry is imaginary and their sum is imaginary.
 
 ## The Spectral Theorem
 
-**Theorem.** A anti-Hermitian matrix has purely imaginary eigenvalues, an orthonormal basis of eigenvectors, and the reconstruction
+**Theorem.** An anti-Hermitian matrix has purely imaginary eigenvalues, an orthonormal basis of eigenvectors, and the reconstruction
 
 $$
 X=i\mu_{+}\rho_{+}+i\mu_{-}\rho_{-},\qquad \mu_{\pm}=a\pm r\in\mathbb{R},
@@ -52,7 +52,7 @@ with $\rho_{\pm}$ the Hermitian spectral projections of the direction $\vec n$.
 
 **Proof.** The determinant is the product $i(a+r)\cdot i(a-r)=-(a^{2}-r^{2})=r^{2}+a^{2}$ by the relation $i^{2}=-1$; and the trace is the sum $2ia$.
 
-**Corollary.** A anti-Hermitian matrix is invertible exactly when it is nonzero, so the nonzero elements of the space are all invertible.
+**Corollary.** An anti-Hermitian matrix is invertible exactly when it is nonzero, so the nonzero elements of the space are all invertible.
 
 **Proof.** The determinant is $a^{2}+r^{2}$, which vanishes only at $a=r=0$, and that is the zero matrix.
 
@@ -108,7 +108,7 @@ $$
 
 ## Summary
 
-A anti-Hermitian $2\times2$ matrix is $iaI+ir\,\vec n\cdot\vec\sigma$, and its eigenvalues are $i(a+r)$ and $i(a-r)$: purely imaginary, symmetric about $ia$, conjugate exactly when the trace vanishes. The determinant is $a^{2}+r^{2}$, so every nonzero anti-Hermitian matrix is invertible, and the trace of the square is nonpositive.
+An anti-Hermitian $2\times2$ matrix is $iaI+ir\,\vec n\cdot\vec\sigma$, and its eigenvalues are $i(a+r)$ and $i(a-r)$: purely imaginary, symmetric about $ia$, conjugate exactly when the trace vanishes. The determinant is $a^{2}+r^{2}$, so every nonzero anti-Hermitian matrix is invertible, and the trace of the square is nonpositive.
 
 The traceless part is $\mathfrak{su}(2)$, of real dimension three, with the brackets of the Pauli basis, and the whole space is $\mathfrak{su}(2)\oplus\mathbb{R}iI$ with the imaginary scalars in the centre. The trace form is negative definite on the traceless part and degenerate on the centre, and the real antisymmetric line is the real slice of this complex picture.
 

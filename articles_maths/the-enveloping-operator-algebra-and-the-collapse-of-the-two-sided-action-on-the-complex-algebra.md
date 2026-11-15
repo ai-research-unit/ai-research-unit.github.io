@@ -76,15 +76,15 @@ $$
 
 *Proof.* $H(L_AX,Y)=AX\bar Y$ and $H(X,L_{\bar A}Y)=X\overline{\bar AY}=XA\bar Y$, and the two agree.
 
-**Theorem.** The self-adjoint multiplications are those with real parameter, and the skew-adjoint ones those with imaginary parameter; the two sets are the real line and the imaginary line.
+**Theorem.** The self-adjoint multiplications are those with real parameter, and the anti-self-adjoint ones those with imaginary parameter; the two sets are the real line and the imaginary line.
 
 *Proof.* $L_A=L_{\bar A}$ reads $A=\bar A$, and $L_A=-L_{\bar A}$ reads $A=-\bar A$.
 
-**Corollary.** Every realised operator splits uniquely as the sum of a self-adjoint and a skew-adjoint one, $L_A=L_{\operatorname{Re}A}+L_{i\operatorname{Im}A}$, and the two parts commute.
+**Corollary.** Every realised operator splits uniquely as the sum of a self-adjoint and an anti-self-adjoint one, $L_A=L_{\operatorname{Re}A}+L_{i\operatorname{Im}A}$, and the two parts commute.
 
 *Proof.* The decomposition of $A$ into real and imaginary parts, and the commutativity of the multiplications.
 
-**Remark (the two lines).** The image of the action is the real plane of the multiplications, and the adjoint cuts it into two real lines, the symmetric and the skew. That is the whole of the operator geometry: no further direction exists, because the image has dimension two.
+**Remark (the two lines).** The image of the action is the real plane of the multiplications, and the adjoint cuts it into two real lines, the symmetric and the anti-Hermitian. That is the whole of the operator geometry: no further direction exists, because the image has dimension two.
 
 ## The Conjugate-Linear Operators Outside the Image
 
@@ -100,7 +100,7 @@ $$
 
 ## Summary
 
-The enveloping algebra $\mathbb{C}^{\mathrm{e}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ has real dimension four and is the product $\mathbb{C}\oplus\mathbb{C}$. Its action on the carrier collapses, $\sum_iB_iXC_i=X\sum_iB_iC_i$, so the whole enveloping algebra acts as the multiplication by one element: the image has real dimension two on a carrier of real dimension four and the kernel is the line $\mathbb{C}u$ of real dimension two, so the action is not faithful and the two-sided operators add nothing to the one-sided ones. The two one-sided families coincide, $L_A=R_A$, they form a commutative algebra isomorphic to $\mathbb{C}$, and the adjoint $L_A^{\dagger}=L_{\bar A}$ cuts the image into the real self-adjoint line and the imaginary skew line. The conjugate-linear endomorphisms are outside the image, the conjugation among them, because every realised operator is complex-linear; the tensor over $\mathbb{R}$ is what makes the missing half missing.
+The enveloping algebra $\mathbb{C}^{\mathrm{e}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ has real dimension four and is the product $\mathbb{C}\oplus\mathbb{C}$. Its action on the carrier collapses, $\sum_iB_iXC_i=X\sum_iB_iC_i$, so the whole enveloping algebra acts as the multiplication by one element: the image has real dimension two on a carrier of real dimension four and the kernel is the line $\mathbb{C}u$ of real dimension two, so the action is not faithful and the two-sided operators add nothing to the one-sided ones. The two one-sided families coincide, $L_A=R_A$, they form a commutative algebra isomorphic to $\mathbb{C}$, and the adjoint $L_A^{\dagger}=L_{\bar A}$ cuts the image into the real self-adjoint line and the imaginary anti-Hermitian line. The conjugate-linear endomorphisms are outside the image, the conjugation among them, because every realised operator is complex-linear; the tensor over $\mathbb{R}$ is what makes the missing half missing.
 
 ## Summary of Notation
 

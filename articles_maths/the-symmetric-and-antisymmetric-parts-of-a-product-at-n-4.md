@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**Every product splits as $AB=\tfrac12\{A,B\}+\tfrac12[A,B]$, and whether the two terms are the symmetric and the antisymmetric part of $AB$ depends on the parities of the factors: for two matrices of the same parity the anticommutator is symmetric and the commutator skew, and for opposite parities the roles exchange.**
+**Every product splits as $AB=\tfrac12\{A,B\}+\tfrac12[A,B]$, and whether the two terms are the symmetric and the antisymmetric part of $AB$ depends on the parities of the factors: for two matrices of the same parity the anticommutator is symmetric and the commutator antisymmetric, and for opposite parities the roles exchange.**
 
 The article proves the identity, states the parity rule with its four cases, computes the two traces $\operatorname{tr}[A,B]=0$ and $\operatorname{tr}\{A,B\}=2\operatorname{tr}(AB)$, determines the image of each of the four products, and reads the left and right multiplications as sums and differences of the same two maps.
 
@@ -18,7 +18,7 @@ $$
 
 **Proof.** Add and subtract: $\tfrac12(AB+BA)+\tfrac12(AB-BA)=AB$.
 
-**Corollary.** The identity is the decomposition of the product into its **symmetric** and **skew** parts whenever those two combinations happen to be symmetric and skew; it is a decomposition of $AB$ into two named combinations, not automatically into the two eigenspaces of the transpose.
+**Corollary.** The identity is the decomposition of the product into its **symmetric** and **antisymmetric** parts whenever those two combinations happen to be symmetric and antisymmetric; it is a decomposition of $AB$ into two named combinations, not automatically into the two eigenspaces of the transpose.
 
 **Proof.** The two combinations sum to $AB$ in every case; being eigenvalues of the transpose is an extra property that depends on $A$ and $B$.
 
@@ -40,10 +40,10 @@ $$
 
 | Factors | Anticommutator | Commutator |
 |---|---|---|
-| symmetric, symmetric | symmetric | skew |
-| antisymmetric, antisymmetric | symmetric | skew |
-| symmetric, antisymmetric | skew | symmetric |
-| antisymmetric, symmetric | skew | symmetric |
+| symmetric, symmetric | symmetric | antisymmetric |
+| antisymmetric, antisymmetric | symmetric | antisymmetric |
+| symmetric, antisymmetric | antisymmetric | symmetric |
+| antisymmetric, symmetric | antisymmetric | symmetric |
 
 **Proof.** The product of the parities is $+1$ in the first two rows and $-1$ in the last two, and the theorem gives the two signs.
 
@@ -51,7 +51,7 @@ $$
 
 **Proof.** The two combinations sum to $AB$ and, by the table, each lies in the stated eigenspace.
 
-**The example that shows the antisymmetric product misbehaving.** $K=E_{12}-E_{21}$ and $K'=E_{23}-E_{32}$ are antisymmetric and $KK'=E_{13}$, whose symmetric part is $\tfrac12(E_{13}+E_{31})$ and whose skew part is $\tfrac12(E_{13}-E_{31})$, both nonzero.
+**The example that shows the antisymmetric product misbehaving.** $K=E_{12}-E_{21}$ and $K'=E_{23}-E_{32}$ are antisymmetric and $KK'=E_{13}$, whose symmetric part is $\tfrac12(E_{13}+E_{31})$ and whose antisymmetric part is $\tfrac12(E_{13}-E_{31})$, both nonzero.
 
 **Proof.** $KK'=E_{13}$ was computed above; its transpose is $E_{31}$, and the two combinations are the displayed halves.
 
@@ -83,15 +83,15 @@ $$
 
 and likewise $\{S,K\}$ spans $\operatorname{Skew}_4$ and $[S,K]$ spans $\operatorname{Sym}_4$.
 
-**Proof.** For the symmetric ones, $\tfrac12\{E_{ii},E_{ii}\}=E_{ii}$ and $\tfrac12\{E_{ij}+E_{ji},E_{jj}\}=\tfrac12(E_{ij}+E_{ji})$ give all ten; $[E_{ii},E_{ij}+E_{ji}]=E_{ij}-E_{ji}$ gives all six skew units. For the antisymmetric ones, $(E_{ij}-E_{ji})^{2}=-(E_{ii}+E_{jj})$ and $\{E_{ij}-E_{ji},E_{jk}-E_{kj}\}=E_{ik}+E_{ki}$ give the symmetric ones, and the commutator of two skew units is a skew unit. For the mixed ones, $\{E_{ii},E_{ij}-E_{ji}\}=E_{ij}-E_{ji}$ and $[E_{ii},E_{ij}-E_{ji}]=E_{ij}+E_{ji}$.
+**Proof.** For the symmetric ones, $\tfrac12\{E_{ii},E_{ii}\}=E_{ii}$ and $\tfrac12\{E_{ij}+E_{ji},E_{jj}\}=\tfrac12(E_{ij}+E_{ji})$ give all ten; $[E_{ii},E_{ij}+E_{ji}]=E_{ij}-E_{ji}$ gives all six antisymmetric units. For the antisymmetric ones, $(E_{ij}-E_{ji})^{2}=-(E_{ii}+E_{jj})$ and $\{E_{ij}-E_{ji},E_{jk}-E_{kj}\}=E_{ik}+E_{ki}$ give the symmetric ones, and the commutator of two antisymmetric units is an antisymmetric unit. For the mixed ones, $\{E_{ii},E_{ij}-E_{ji}\}=E_{ij}-E_{ji}$ and $[E_{ii},E_{ij}-E_{ji}]=E_{ij}+E_{ji}$.
 
 **Corollary.** The four products are surjective onto the half they must land in, and none of them lands in a proper subspace of it.
 
 **Proof.** A spanning set inside the half is a spanning set of the half.
 
-**The mixed product is always traceless.** For any $S$ and $K$, $\operatorname{tr}(SK)=0$, so the image of the mixed multiplication lies in $\mathfrak{sl}_4$ even though it spans the ten symmetric directions and the six skew ones.
+**The mixed product is always traceless.** For any $S$ and $K$, $\operatorname{tr}(SK)=0$, so the image of the mixed multiplication lies in $\mathfrak{sl}_4$ even though it spans the ten symmetric directions and the six antisymmetric ones.
 
-**Proof.** The vanishing of the trace is the orthogonality of the halves; the symmetric and skew directions are all traceless except the scalar, and the scalar is not attained.
+**Proof.** The vanishing of the trace is the orthogonality of the halves; the symmetric and antisymmetric directions are all traceless except the scalar, and the scalar is not attained.
 
 **$SK$ and $KS$ differ.** With $S=E_{11}$ and $K=E_{12}-E_{21}$ one has $SK=E_{12}$ and $KS=-E_{21}$.
 
@@ -115,15 +115,15 @@ and likewise $\{S,K\}$ spans $\operatorname{Skew}_4$ and $[S,K]$ spans $\operato
 
 **Proof.** $\langle L_AX,Y\rangle=\operatorname{tr}((AX)^{\ast}Y)=\operatorname{tr}(X^{\ast}A^{\ast}Y)=\langle X,A^{\ast}Y\rangle$.
 
-**Corollary.** $L_A$ is self-adjoint exactly when $A$ is Hermitian, and skew-adjoint exactly when $A$ is anti-Hermitian; the same for $R_A$.
+**Corollary.** $L_A$ is self-adjoint exactly when $A$ is Hermitian, and anti-self-adjoint exactly when $A$ is anti-Hermitian; the same for $R_A$.
 
 **Proof.** $L_A^{\ast}=L_A$ is $L_{A^{\ast}}=L_A$, which by faithfulness is $A^{\ast}=A$.
 
-**The reading on the halves.** A symmetric $A$ gives $L_A$ self-adjoint for the trace pairing as well, because $\operatorname{tr}((AX)Y)=\operatorname{tr}(X(AY))$ always holds for the plain pairing once $A$ is symmetric; an antisymmetric $A$ gives $L_A$ skew for that pairing. The full statement of the plain adjoint is *The Adjoints and the Polar Decomposition of an Operator at $n=4$*.
+**The reading on the halves.** A symmetric $A$ gives $L_A$ self-adjoint for the trace pairing as well, because $\operatorname{tr}((AX)Y)=\operatorname{tr}(X(AY))$ always holds for the plain pairing once $A$ is symmetric; an antisymmetric $A$ gives $L_A$ anti-self-adjoint for that pairing. The full statement of the plain adjoint is *The Adjoints and the Polar Decomposition of an Operator at $n=4$*.
 
 ## Summary
 
-The product splits as half the anticommutator plus half the commutator, and the parity of the factors decides which half is symmetric: same parity gives a symmetric anticommutator and a skew commutator, opposite parity the reverse. The naive statement that the product of two antisymmetric matrices is symmetric fails at order four, and the example $E_{13}$ shows it.
+The product splits as half the anticommutator plus half the commutator, and the parity of the factors decides which half is symmetric: same parity gives a symmetric anticommutator and an antisymmetric commutator, opposite parity the reverse. The naive statement that the product of two antisymmetric matrices is symmetric fails at order four, and the example $E_{13}$ shows it.
 
 The trace of a commutator is zero and the trace of an anticommutator is twice the trace pairing, so every mixed product is traceless and the image of each of the four products is the full half that the parity rule predicts.
 

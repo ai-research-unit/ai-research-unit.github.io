@@ -215,7 +215,7 @@ The two forms are the two halves of the same structure: $T_{\operatorname{red}}$
 
 ## What Belongs Elsewhere
 
-- The **involutions of a ring** for their own sake — the first and the second kind, the orthogonal and symplectic types over a central simple algebra, the symmetric and skew decomposition, the adjoint involution of a form — belong to *Involutive Rings*. Nothing of that layer is repeated here.
+- The **involutions of a ring** for their own sake — the first and the second kind, the orthogonal and symplectic types over a central simple algebra, the symmetric and anti-Hermitian decomposition, the adjoint involution of a form — belong to *Involutive Rings*. Nothing of that layer is repeated here.
 - The **general theory of $\sigma$-sesquilinear and Hermitian forms** over an involution ring — the Gram matrix, the radical, the isometry group, the Dieudonné extension and cancellation theorems, the unitary Witt group — belongs to *Hermitian Forms over an Involution Ring and the Unitary Witt Group*, and the bilinear case $\sigma = \mathrm{id}$ over a commutative base to *Bilinear Forms*.
 - The **norms of an algebra** — the regular norm, the reduced norm and trace of a central simple algebra, the norms of the complex, quaternion and biquaternion algebras and Hurwitz's theorem — belong to *Quadratic Forms over Algebras and Norms*.
 - The **algebraic base without positivity** — the involution, the Hermitian form, the adjoint axiom, the radical, the isometry group and the unitary slice — is *Hermitian Algebras*, the Part I entry of `Sesqualgebras with a degree-2 form`. This article is its positive definite and completed case.

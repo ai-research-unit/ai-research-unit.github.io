@@ -18,11 +18,11 @@ It assumes *Symmetric Pairs and Cartan Pairs: the Reductivity Criterion at $n=4$
 
 **Corollary.** The decomposition $\mathfrak{gl}_4=\mathfrak{so}(4)\oplus\operatorname{Sym}_4$ is a Cartan decomposition: $[\mathfrak{k},\mathfrak{k}]\subset\mathfrak{k}$, $[\mathfrak{k},\mathfrak{p}]\subset\mathfrak{p}$ and $[\mathfrak{p},\mathfrak{p}]\subset\mathfrak{k}$.
 
-**Proof.** The bracket of a skew and a symmetric matrix is symmetric; the bracket of two symmetric matrices is skew.
+**Proof.** The bracket of an antisymmetric and a symmetric matrix is symmetric; the bracket of two symmetric matrices is antisymmetric.
 
 **Corollary.** The form $\langle X,Y\rangle=-\operatorname{tr}(XY)$ is positive definite on $\mathfrak{so}(4)$ and negative definite on $\operatorname{Sym}_4$, so $\theta$ is the involution associated with this form.
 
-**Proof.** On a real skew matrix $\operatorname{tr}(X^{2})$ is negative, and on a symmetric one positive.
+**Proof.** On a real antisymmetric matrix $\operatorname{tr}(X^{2})$ is negative, and on a symmetric one positive.
 
 **Corollary.** $\mathfrak{so}(4)$ is a maximal compact subalgebra, and the pair is a symmetric pair of the noncompact type.
 
@@ -32,7 +32,7 @@ It assumes *Symmetric Pairs and Cartan Pairs: the Reductivity Criterion at $n=4$
 
 **Proposition.** Over $\mathbb{R}$: $\dim\mathfrak{gl}_4=16$, $\dim\mathfrak{so}(4)=6$, $\dim\operatorname{Sym}_4=10$, and $16=6+10$.
 
-**Proof.** The dimension of the general linear algebra is $n^{2}=16$; the skew matrices of order four are $\binom{4}{2}=6$; the symmetric ones are $\binom{5}{2}=10$.
+**Proof.** The dimension of the general linear algebra is $n^{2}=16$; the antisymmetric matrices of order four are $\binom{4}{2}=6$; the symmetric ones are $\binom{5}{2}=10$.
 
 **Corollary.** Over $\mathbb{C}$ the same numbers hold with complex dimensions, and the real dimensions are doubled: $32=12+20$.
 

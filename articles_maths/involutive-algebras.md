@@ -10,7 +10,7 @@ $$
 
 an anti-automorphism of order two, the same map as in *Involutive Rings*, now read together with the scalars and the product that the algebra carries. Two kinds of order-two map live on an algebra, and they must not be confused. The **involution** reverses the product, and an **involutive automorphism** preserves it; on a commutative algebra the two are the same maps, on a non-commutative algebra they are not, and every statement about fixed elements must therefore say which map it is about. The involution is the notion of this article; the involutive automorphism is the second notion that the product makes possible.
 
-The involution contributes one structure on the algebra: the decomposition into the elements fixed by $\sigma$ and the elements negated by it, $A = A^+ \oplus A^-$ when $2 \neq 0$. The two parts are not subalgebras in general, and the product laws they inherit are studied in the two categories that own them: *The Self-Adjoint Part of an Algebra*, in *Symmetric Algebras*, for the fixed part, and *The Skew Part of an Algebra*, in *Anti-symmetric Algebras*, for the negated part. This article defines the decomposition and does not develop either product. For an involutive automorphism the fixed set is always a subalgebra and the whole algebra is $\mathbb{Z}/2$-graded, so the grading is the property that an anti-automorphism fails to have; the contrast between the two kinds of order-two map is one of the subjects below.
+The involution contributes one structure on the algebra: the decomposition into the elements fixed by $\sigma$ and the elements negated by it, $A = A^+ \oplus A^-$ when $2 \neq 0$. The two parts are not subalgebras in general, and the product laws they inherit are studied in the two categories that own them: *The Self-Adjoint Part of an Algebra*, in *Symmetric Algebras*, for the fixed part, and *The Anti-Hermitian Part of an Algebra*, in *Anti-symmetric Algebras*, for the negated part. This article defines the decomposition and does not develop either product. For an involutive automorphism the fixed set is always a subalgebra and the whole algebra is $\mathbb{Z}/2$-graded, so the grading is the property that an anti-automorphism fails to have; the contrast between the two kinds of order-two map is one of the subjects below.
 
 The scalars contribute a third. An involution of the $F$-algebra $A$ may be $F$-linear, or it may be twisted by an involution $\varsigma$ of $F$ so that $\sigma(\lambda a) = \varsigma(\lambda)\sigma(a)$; the twisted case is the one that produces the involutions of the second kind and the descent from $B \otimes_F K$ to $B$. The algebra case carries one sign only: $\sigma(1) = 1$ forces $\sigma^2(1) = 1$, so the sign $\sigma^2 = -\mathrm{id}$ of the linear-space article has no unital counterpart here.
 
@@ -32,7 +32,7 @@ $$
 A^\sigma = \{ a \in A : \sigma(a) = a \},
 $$
 
-whose elements are the **symmetric** elements; an element with $\sigma(a) = -a$ is **skew**. When the base field matters the map above is called an $F$-linear involution, and we write $A^+ = A^\sigma$ for the symmetric elements and $A^-$ for the skew elements.
+whose elements are the **symmetric** elements; an element with $\sigma(a) = -a$ is **antisymmetric**. When the base field matters the map above is called an $F$-linear involution, and we write $A^+ = A^\sigma$ for the symmetric elements and $A^-$ for the antisymmetric elements.
 
 **Definition (semilinear).** Let $\varsigma$ be an involution of the field $F$. A **$\varsigma$-semilinear involution** of $A$ is a map $\sigma : A \to A$ with
 
@@ -44,7 +44,7 @@ The $F$-linear case is the case $\varsigma = \mathrm{id}$, so the semilinear not
 
 **Definition (involutive automorphism).** An **involutive automorphism** of $A$ is an algebra automorphism $\alpha$ with $\alpha^2 = \mathrm{id}$, and its fixed set is $A^\alpha$. An automorphism is $F$-linear by definition, so no semilinear variant is needed here; the order-two condition is the only one, and $\alpha^2 = \mathrm{id}$ again forces no second sign.
 
-**Remark.** An involution is bijective, because $\sigma^2 = \mathrm{id}$, so the word "anti-automorphism" is accurate. The definition imposes no condition on $F$; in particular $2$ need not be invertible, and the two places where that matters — the decomposition into symmetric and skew elements, and the closure of the symmetric elements under the symmetrised product — are marked in the text.
+**Remark.** An involution is bijective, because $\sigma^2 = \mathrm{id}$, so the word "anti-automorphism" is accurate. The definition imposes no condition on $F$; in particular $2$ need not be invertible, and the two places where that matters — the decomposition into symmetric and antisymmetric elements, and the closure of the symmetric elements under the symmetrised product — are marked in the text.
 
 **Definition (morphisms).** A **homomorphism** $(A,\sigma) \to (B,\tau)$ of involutive algebras is a unital algebra homomorphism $\varphi : A \to B$ with $\varphi \circ \sigma = \tau \circ \varphi$. Two involutions of the same algebra are **equivalent** when $\sigma' = \varphi \sigma \varphi^{-1}$ for an algebra automorphism $\varphi$; an automorphism of $(A,\sigma)$ is an algebra automorphism commuting with $\sigma$. With $B = A$ the condition says that the automorphism commutes with the involution, so the automorphism group of $(A,\sigma)$ is the centraliser of $\sigma$ in $\operatorname{Aut}(A)$.
 
@@ -78,7 +78,7 @@ The $F$-linear case is the case $\varsigma = \mathrm{id}$, so the semilinear not
 
 **(d)** The centre $Z(A)$ is $\sigma$-stable, and $\sigma|_{Z(A)}$ is an automorphism of $Z(A)$ with $(\sigma|_{Z(A)})^2 = \mathrm{id}$; its fixed subring is $Z(A) \cap A^+$.
 
-**(e)** The elements $a + \sigma(a)$, $a\sigma(a)$ and $\sigma(a)a$ are symmetric, and $a - \sigma(a)$ is skew.
+**(e)** The elements $a + \sigma(a)$, $a\sigma(a)$ and $\sigma(a)a$ are symmetric, and $a - \sigma(a)$ is antisymmetric.
 
 **Proof.** (a) is immediate from additivity and $\sigma^2 = \mathrm{id}$. (b) $\sigma(u)\sigma(u^{-1}) = \sigma(u^{-1}u) = \sigma(1) = 1$ and likewise in the other order, so $\sigma(u)$ is a unit with the stated inverse; the restriction is a group map of order two, and it reverses a product because $\sigma$ does. (c) If $rA \subseteq I$ then $A\sigma(r) = \sigma(rA) \subseteq \sigma(I)$, and the two-sided case follows by applying the same computation on both sides. (d) For $z$ central and $a$ arbitrary, $z\sigma(a) = \sigma(az) = \sigma(za) = \sigma(a)z$, so $\sigma(z)$ is central; the restriction is a ring automorphism of order two. (e) Apply $\sigma$: $\sigma(a+\sigma(a)) = \sigma(a)+a$, $\sigma(a\sigma(a)) = \sigma(\sigma(a))\sigma(a) = a\sigma(a)$, and $\sigma(\sigma(a)a) = \sigma(a)a$; and $\sigma(a-\sigma(a)) = -(a-\sigma(a))$.
 
@@ -86,9 +86,9 @@ The $F$-linear case is the case $\varsigma = \mathrm{id}$, so the semilinear not
 
 ### Examples
 
-**Example (the transpose).** On $M_n(F)$ the transpose $X \mapsto X^{\mathsf{T}}$ is an $F$-linear involution, since $(XY)^{\mathsf{T}} = Y^{\mathsf{T}}X^{\mathsf{T}}$, $(X^{\mathsf{T}})^{\mathsf{T}} = X$ and $(\lambda X)^{\mathsf{T}} = \lambda X^{\mathsf{T}}$. Its symmetric elements are the symmetric matrices and its skew elements the antisymmetric matrices; it is the prototype, and it fixes the centre $F\cdot 1$ pointwise.
+**Example (the transpose).** On $M_n(F)$ the transpose $X \mapsto X^{\mathsf{T}}$ is an $F$-linear involution, since $(XY)^{\mathsf{T}} = Y^{\mathsf{T}}X^{\mathsf{T}}$, $(X^{\mathsf{T}})^{\mathsf{T}} = X$ and $(\lambda X)^{\mathsf{T}} = \lambda X^{\mathsf{T}}$. Its symmetric elements are the symmetric matrices and its antisymmetric elements the antisymmetric matrices; it is the prototype, and it fixes the centre $F\cdot 1$ pointwise.
 
-**Example (the exchange involution).** On $A \times A_{\mathrm{opp}}$, with the product $(a_1,a_2)(b_1,b_2) = (a_1b_1,\; b_2a_2)$, the swap $\sigma(a_1,a_2) = (a_2,a_1)$ is an $F$-linear involution; its fixed set is the diagonal $\{(a,a)\}$ and its skew elements are the antidiagonal $\{(a,-a)\}$. The construction makes every algebra the fixed set of an involution on an algebra that contains it, and it is used below.
+**Example (the exchange involution).** On $A \times A_{\mathrm{opp}}$, with the product $(a_1,a_2)(b_1,b_2) = (a_1b_1,\; b_2a_2)$, the swap $\sigma(a_1,a_2) = (a_2,a_1)$ is an $F$-linear involution; its fixed set is the diagonal $\{(a,a)\}$ and its anti-Hermitian elements are the antidiagonal $\{(a,-a)\}$. The construction makes every algebra the fixed set of an involution on an algebra that contains it, and it is used below.
 
 **Example (a group algebra).** On the group algebra $F[G]$, the linear extension of $g \mapsto g^{-1}$ is an $F$-linear involution, because $(gh)^{-1} = h^{-1}g^{-1}$ and $(g^{-1})^{-1} = g$. Its symmetric elements are the sums $\sum a_g g$ with $a_g = a_{g^{-1}}$; on an abelian $G$ the inversion is the identity on $G$ and every element is symmetric.
 
@@ -102,7 +102,7 @@ The $F$-linear case is the case $\varsigma = \mathrm{id}$, so the semilinear not
 
 ---
 
-## The Symmetric and Skew Elements
+## The Symmetric and Antisymmetric Elements
 
 ### The Additive Decomposition
 
@@ -124,11 +124,11 @@ $$
 
 **Proof.** A linear involution is an $F$-linear map of order two, which $\sigma$ is, and the summands of the general theory are $A^+$ and $A^-$.
 
-**Remark (characteristic two).** Let $2 = 0$ in $F$. Then $x = -x$ for every $x$, so the skew elements and the symmetric elements coincide, $A^+ = A^-$, the sum $A^+ + A^-$ is all of $A$ but not direct, and the map $p_+$ of the theorem is not available. The point of the failure is the same as in *Involutive Linear Spaces*: the classifications and the decompositions that use the two eigenvalues $\pm 1$ are not available, and the article says which of its statements survive. The skew part still carries its Lie structure in characteristic two, because the sign that distinguishes the bracket from the anticommutator disappears there; the Jordan structure on the symmetric part is not available, because $\tfrac12$ does not exist. Both readings are developed in the two articles that own them.
+**Remark (characteristic two).** Let $2 = 0$ in $F$. Then $x = -x$ for every $x$, so the antisymmetric elements and the symmetric elements coincide, $A^+ = A^-$, the sum $A^+ + A^-$ is all of $A$ but not direct, and the map $p_+$ of the theorem is not available. The point of the failure is the same as in *Involutive Linear Spaces*: the classifications and the decompositions that use the two eigenvalues $\pm 1$ are not available, and the article says which of its statements survive. The antisymmetric part still carries its Lie structure in characteristic two, because the sign that distinguishes the bracket from the anticommutator disappears there; the Jordan structure on the symmetric part is not available, because $\tfrac12$ does not exist. Both readings are developed in the two articles that own them.
 
 ### The Two Parts
 
-The two summands are studied in the categories that own them. The skew part $A^-$ is closed under the commutator and is a Lie algebra; the theory is *The Skew Part of an Algebra*, in *Anti-symmetric Algebras*, where the bracket, the graded structure formed with $A^+$ and the examples are developed. The symmetric part $A^+$ is closed under the symmetrised product and is a Jordan algebra; the theory is *The Self-Adjoint Part of an Algebra*, in *Symmetric Algebras*, where the Jordan axioms, the quadratic representation and the examples are developed. Neither product is used in this article, and the characteristic-two caveat is recorded with each.
+The two summands are studied in the categories that own them. The antisymmetric part $A^-$ is closed under the commutator and is a Lie algebra; the theory is *The Antisymmetric Part of an Algebra*, in *Anti-symmetric Algebras*, where the bracket, the graded structure formed with $A^+$ and the examples are developed. The symmetric part $A^+$ is closed under the symmetrised product and is a Jordan algebra; the theory is *The Self-Adjoint Part of an Algebra*, in *Symmetric Algebras*, where the Jordan axioms, the quadratic representation and the examples are developed. Neither product is used in this article, and the characteristic-two caveat is recorded with each.
 
 ### Involutive Automorphisms and the Fixed Subalgebra
 
@@ -188,7 +188,7 @@ exhibits $a$ as a symmetric element plus an element of $I$.
 
 **Definition.** On the algebra $A \times A_{\mathrm{opp}}$ the product is $(a_1,a_2)(b_1,b_2) = (a_1b_1,\; b_2a_2)$ and the **exchange** is $\sigma(a_1,a_2) = (a_2,a_1)$.
 
-**Theorem.** The exchange is an $F$-linear involution of $A \times A_{\mathrm{opp}}$, its fixed set is the diagonal $\{(a,a) : a \in A\}$, of the same dimension as $A$, and its skew elements are the antidiagonal $\{(a,-a) : a \in A\}$. The diagonal is a subalgebra if and only if $A$ is commutative.
+**Theorem.** The exchange is an $F$-linear involution of $A \times A_{\mathrm{opp}}$, its fixed set is the diagonal $\{(a,a) : a \in A\}$, of the same dimension as $A$, and its anti-Hermitian elements are the antidiagonal $\{(a,-a) : a \in A\}$. The diagonal is a subalgebra if and only if $A$ is commutative.
 
 **Proof.** For $x = (a_1,a_2)$ and $y = (b_1,b_2)$ the products are $xy = (a_1b_1, b_2a_2)$ and $\sigma(y)\sigma(x) = (b_2,b_1)(a_2,a_1) = (b_2a_2,\; a_1b_1)$, so $\sigma(xy) = (b_2a_2, a_1b_1) = \sigma(y)\sigma(x)$; the map is additive, $F$-linear, fixes $(1,1)$ and has square the identity. An element is fixed exactly when $a_1 = a_2$ and is negated exactly when $a_1 = -a_2$. For the closure, $(a,a)(b,b) = (ab,ba)$, so the diagonal is stable under the ordinary product exactly when $ab = ba$ for all $a, b$.
 
@@ -208,7 +208,7 @@ $$
 
 **Proof.** The map is the tensor product of two $F$-linear maps, hence $F$-linear; it reverses a product because the two factors do, fixes $1 \otimes 1$, and has square the identity because each factor has. For the decomposition, $A \otimes B$ is spanned by the four spaces on the right, and each of them lies in the stated eigenvalue space by the multiplicativity of $\sigma \otimes \tau$; the sum is direct because the decomposition of each factor is direct and tensor products of independent subspaces are independent.
 
-**Example.** For $A = B = M_2(F)$ with the transpose and $2 \neq 0$, the symmetric part has dimension $3 \cdot 3 + 1 \cdot 1 = 10$ and the skew part has dimension $3 \cdot 1 + 1 \cdot 3 = 6$, and $10 + 6 = 16 = 4^2$; the involution $\sigma \otimes \tau$ on the sixteen-dimensional algebra $M_2(F) \otimes M_2(F)$ is thus a linear involution of the underlying space of type $(10,6)$.
+**Example.** For $A = B = M_2(F)$ with the transpose and $2 \neq 0$, the symmetric part has dimension $3 \cdot 3 + 1 \cdot 1 = 10$ and the anti-Hermitian part has dimension $3 \cdot 1 + 1 \cdot 3 = 6$, and $10 + 6 = 16 = 4^2$; the involution $\sigma \otimes \tau$ on the sixteen-dimensional algebra $M_2(F) \otimes M_2(F)$ is thus a linear involution of the underlying space of type $(10,6)$.
 
 **Theorem (endomorphisms).** Let $V$ be a finite-dimensional linear space over $F$ and let $T \in \operatorname{GL}(V)$ with $T^2 = \mathrm{id}$. Then $\Phi_T(X) = TXT$ is an involutive automorphism of the algebra $\operatorname{End}_F(V)$. If moreover $T$ is symmetric with respect to a basis, $T^{\mathsf{T}} = T$ in that basis, then $X \mapsto TX^{\mathsf{T}}T$ is an involution of $\operatorname{End}_F(V)$, and its fixed algebra is the set of the matrices $X$ with $TX^{\mathsf{T}}T = X$.
 
@@ -272,7 +272,7 @@ so the commutative $F$-algebra $B$ is recovered from its scalar extension $B \ot
 
 **Remark (the trap in the non-commutative case).** For a non-commutative $B$ the map $\mathrm{id}_B \otimes \varsigma$ is multiplicative and **not** anti-multiplicative, so it is an involutive automorphism and not an involution; the fixed algebra of that map is $B \otimes 1$, but the map is the wrong kind, and the involution of the second kind is $\tau \otimes \varsigma$, whose fixed algebra is the twist $B^+ \oplus B^-t$ rather than $B$. The two maps coincide as maps only when $\tau = \mathrm{id}_B$, that is only when $B$ is commutative. In particular the descent in the non-commutative case recovers the pair $(B,\tau)$ and not $B$ alone.
 
-**Example (the complex case).** For $F = \mathbb{R}$, $K = \mathbb{C}$, $t = i$ and $B = M_2(\mathbb{R})$ with $\tau$ the transpose, the algebra $A$ is $M_2(\mathbb{C})$ and $\sigma$ is the conjugate transpose; the fixed algebra $A^+ = \mathrm{sym}_2(\mathbb{R}) \oplus i\,\mathrm{Skew}_2(\mathbb{R})$ is the algebra of Hermitian matrices, of real dimension $3 + 1 = 4$, and the skew part $A^- = \mathrm{sym}_2(\mathbb{R})\,i \oplus \mathrm{Skew}_2(\mathbb{R})$ has the same real dimension $4$, with $4 + 4 = 8$ the real dimension of $M_2(\mathbb{C})$. With $B = \mathbb{R}$ in place of $M_2(\mathbb{R})$ the same computation gives $A = \mathbb{C}$, $\sigma$ the conjugation, $A^+ = \mathbb{R}$ and $A^- = \mathbb{R}i$, which is the corollary.
+**Example (the complex case).** For $F = \mathbb{R}$, $K = \mathbb{C}$, $t = i$ and $B = M_2(\mathbb{R})$ with $\tau$ the transpose, the algebra $A$ is $M_2(\mathbb{C})$ and $\sigma$ is the conjugate transpose; the fixed algebra $A^+ = \mathrm{sym}_2(\mathbb{R}) \oplus i\,\mathrm{Skew}_2(\mathbb{R})$ is the algebra of Hermitian matrices, of real dimension $3 + 1 = 4$, and the anti-Hermitian part $A^- = \mathrm{sym}_2(\mathbb{R})\,i \oplus \mathrm{Skew}_2(\mathbb{R})$ has the same real dimension $4$, with $4 + 4 = 8$ the real dimension of $M_2(\mathbb{C})$. With $B = \mathbb{R}$ in place of $M_2(\mathbb{R})$ the same computation gives $A = \mathbb{C}$, $\sigma$ the conjugation, $A^+ = \mathbb{R}$ and $A^- = \mathbb{R}i$, which is the corollary.
 
 **Remark.** The descent is the algebra case of the conjugate-linear involution $\kappa$ of the complexification in *Involutive Linear Spaces*, and of the real form that a conjugate-linear structure defines there; the difference is that the fixed set is now closed under the product in the commutative case, where it is the copy $B \otimes 1$, so what descends is an algebra and not only a space, while in the non-commutative case the fixed set is the twist $B^+ \oplus B^-t$ and the datum that descends is the pair $(B,\tau)$. The extension of scalars itself, the complexification and the behaviour of the involution under it, are *Extension of Scalars*.
 
@@ -290,9 +290,9 @@ so the commutative $F$-algebra $B$ is recovered from its scalar extension $B \ot
 
 An involution of a unital associative $F$-algebra $A$ is an $F$-linear anti-automorphism $\sigma$ with $\sigma^2 = \mathrm{id}$, the same datum as an $F$-algebra isomorphism $A \to A_{\mathrm{opp}}$ of order two; a second kind of order-two map, the involutive automorphism, preserves the product, and the two coincide exactly on a commutative algebra. When $A$ carries an involution the anti-automorphisms of $A$ form a coset $\operatorname{Anti}(A) = \sigma\operatorname{Aut}(A)$, the composite of two of them is an automorphism, and the involutions among them are those $\sigma\alpha$ with $(\sigma\alpha)^2 = \mathrm{id}$. The centre and the group of units are stable, the restriction to the units is an anti-automorphism of order two of the group, and the elements $a+\sigma(a)$, $a\sigma(a)$ and $\sigma(a)a$ are symmetric.
 
-Over a field with $2 \neq 0$ the involution decomposes the algebra, $A = A^+ \oplus A^-$, into the symmetric and the skew elements, the eigenspaces of $\sigma$ for the eigenvalues $1$ and $-1$; the decomposition is the eigenvalue decomposition of the involution, and the two parts are studied in *The Self-Adjoint Part of an Algebra* and *The Skew Part of an Algebra*. For an involutive automorphism $\alpha$ the fixed set $A^+$ is always a subalgebra and $A = A^+ \oplus A^-$ is a $\mathbb{Z}/2$-grading, and an inner $\alpha$ is $\operatorname{ad}_u$ with $u^2$ central. In characteristic two the symmetric and the skew elements coincide, and the decomposition is unavailable.
+Over a field with $2 \neq 0$ the involution decomposes the algebra, $A = A^+ \oplus A^-$, into the symmetric and the anti-Hermitian elements, the eigenspaces of $\sigma$ for the eigenvalues $1$ and $-1$; the decomposition is the eigenvalue decomposition of the involution, and the two parts are studied in *The Self-Adjoint Part of an Algebra* and *The Anti-Hermitian Part of an Algebra*. For an involutive automorphism $\alpha$ the fixed set $A^+$ is always a subalgebra and $A = A^+ \oplus A^-$ is a $\mathbb{Z}/2$-grading, and an inner $\alpha$ is $\operatorname{ad}_u$ with $u^2$ central. In characteristic two the symmetric and the anti-Hermitian elements coincide, and the decomposition is unavailable.
 
-A $\sigma$-stable ideal has an induced involution on its quotient, with $(A^+ + I)/I \subseteq (A/I)^{\bar\sigma}$ and equality when $2 \neq 0$; the exchange involution on $A \times A_{\mathrm{opp}}$ has the diagonal as its fixed set, so every algebra is the fixed set of an involution of an algebra, and the swap on $A \times A$ is the involutive automorphism with the diagonal as its fixed subalgebra; the tensor product carries $\sigma \otimes \tau$, with symmetric part $A^+ \otimes B^+ \oplus A^- \otimes B^-$; and on $\operatorname{End}_F(V)$ the map $\Phi_T$ is an involutive automorphism while the transpose is an involution. A $\varsigma$-semilinear involution twists the scalars, is $F$-linear exactly when $\varsigma = \mathrm{id}$, and is of the first or the second kind according to its restriction to the centre; for a quadratic extension $K/F$ the involution $\tau \otimes \varsigma$ on $B \otimes_F K$, with $\tau$ an involution of $B$, is of the second kind, its fixed algebra is $(B^+ \otimes 1) \oplus (B^- \otimes t)$ with $t$ the $\varsigma$-skew element of $K$, and in the commutative case it is the descent, with fixed algebra $B \otimes 1 \cong B$.
+A $\sigma$-stable ideal has an induced involution on its quotient, with $(A^+ + I)/I \subseteq (A/I)^{\bar\sigma}$ and equality when $2 \neq 0$; the exchange involution on $A \times A_{\mathrm{opp}}$ has the diagonal as its fixed set, so every algebra is the fixed set of an involution of an algebra, and the swap on $A \times A$ is the involutive automorphism with the diagonal as its fixed subalgebra; the tensor product carries $\sigma \otimes \tau$, with symmetric part $A^+ \otimes B^+ \oplus A^- \otimes B^-$; and on $\operatorname{End}_F(V)$ the map $\Phi_T$ is an involutive automorphism while the transpose is an involution. A $\varsigma$-semilinear involution twists the scalars, is $F$-linear exactly when $\varsigma = \mathrm{id}$, and is of the first or the second kind according to its restriction to the centre; for a quadratic extension $K/F$ the involution $\tau \otimes \varsigma$ on $B \otimes_F K$, with $\tau$ an involution of $B$, is of the second kind, its fixed algebra is $(B^+ \otimes 1) \oplus (B^- \otimes t)$ with $t$ the $\varsigma$-anti-self-adjoint element of $K$, and in the commutative case it is the descent, with fixed algebra $B \otimes 1 \cong B$.
 
 ## Summary of Notation
 
@@ -304,13 +304,13 @@ A $\sigma$-stable ideal has an induced involution on its quotient, with $(A^+ + 
 | $\tau$ | an involution of a second algebra, for instance of $B$ in the descent |
 | $\alpha$ | an involutive automorphism of $A$, that is an automorphism with $\alpha^2 = \mathrm{id}$ |
 | $A^\sigma$, $A^+$ | the symmetric elements, $\{a : \sigma(a) = a\}$, the fixed set |
-| $A^-$ | the skew elements, $\{a : \sigma(a) = -a\}$ |
+| $A^-$ | the anti-Hermitian elements, $\{a : \sigma(a) = -a\}$ |
 | $A_{\mathrm{opp}}$ | the opposite algebra, $a \cdot b = ba$ |
 | $\operatorname{Anti}(A)$ | the anti-automorphisms of $A$, a coset $\sigma \operatorname{Aut}(A)$ |
 | $A \times A_{\mathrm{opp}}$ | with the product $(a_1,a_2)(b_1,b_2) = (a_1b_1, b_2a_2)$, and the exchange $\sigma(a_1,a_2) = (a_2,a_1)$ |
 | $\Phi_T$ | the involutive automorphism $X \mapsto TXT$ of $\operatorname{End}_F(V)$, $T^2 = \mathrm{id}$ |
 | $\varsigma$ | an involution of the field $F$ |
-| $K/F$, $t$ | a quadratic extension, and a $\varsigma$-skew element $t$ with $K = F \oplus Ft$ |
+| $K/F$, $t$ | a quadratic extension, and a $\varsigma$-anti-self-adjoint element $t$ with $K = F \oplus Ft$ |
 | $A^\varsigma$ | the fixed field of $\varsigma$, when $\varsigma$ is an involution of a field $A$ |
 | $B \otimes_F K$ | with the second-kind involution $\tau \otimes \varsigma$, whose fixed algebra is $(B^+ \otimes 1) \oplus (B^- \otimes t)$ |
 
@@ -318,6 +318,6 @@ A $\sigma$-stable ideal has an induced involution on its quotient, with $(A^+ + 
 
 - Paul M. Cohn, *Algebra*, volume 1 (Wiley, second edition, 1982), for algebras with involution, the opposite algebra and the elementary properties of an anti-automorphism.
 - Serge Lang, *Algebra* (Springer, third edition, 2002), for the semilinear maps, the descent from a quadratic extension and the trace of a quadratic extension.
-- Nathan Jacobson, *Structure of Rings* (American Mathematical Society, 1956), for the symmetric and skew elements of a ring with involution.
+- Nathan Jacobson, *Structure of Rings* (American Mathematical Society, 1956), for the symmetric and anti-Hermitian elements of a ring with involution.
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the involutions of a simple algebra, the first and the second kind and the descent of a central simple algebra over a quadratic extension.
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions* (American Mathematical Society, 1998), for the classification of the involutions of a central simple algebra, which is Part II work and is named here only at the boundary.

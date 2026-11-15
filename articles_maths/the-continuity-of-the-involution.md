@@ -44,7 +44,7 @@ is a topological embedding. Then the twisted action is continuous if and only if
 
 ### The Algebra Involution
 
-**Definition.** A **topological involution** of a topological $R$-algebra $A$, relative to the involution $\varsigma$ of $R$, is a $\varsigma$-semilinear involution $*$ of $A$ that is continuous for the topology; the notion, its continuity criteria and the topological theory of the symmetric and skew parts are *Involutive Topological Algebras*, §*Definition and First Properties* and §*The Criterion*. The layer uses it through the derived operation of *Sesqualgebras*, §*The Derived Operation of an Involutive Algebra*.
+**Definition.** A **topological involution** of a topological $R$-algebra $A$, relative to the involution $\varsigma$ of $R$, is a $\varsigma$-semilinear involution $*$ of $A$ that is continuous for the topology; the notion, its continuity criteria and the topological theory of the symmetric and anti-Hermitian parts are *Involutive Topological Algebras*, §*Definition and First Properties* and §*The Criterion*. The layer uses it through the derived operation of *Sesqualgebras*, §*The Derived Operation of an Involutive Algebra*.
 
 **Proposition (the derived operation inherits the continuity).** Let $A$ be a topological $R$-algebra whose product is separately continuous and let $*$ be a continuous $\varsigma$-semilinear involution. Then the derived operation
 

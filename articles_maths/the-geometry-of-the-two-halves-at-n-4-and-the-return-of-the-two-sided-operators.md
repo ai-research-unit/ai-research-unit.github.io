@@ -26,7 +26,7 @@ It assumes *The Positive Cone and Its Boundary at $n=4$*, *The Space of Idempote
 
 **Proof.** The rank-stratum dimension $r(8-r)$ and the face description.
 
-## The Skew Half and the Lie Algebra
+## The Anti-Hermitian Half and the Lie Algebra
 
 **Proposition.** $\mathfrak{u}(4)$ is a real Lie algebra of dimension $16$ under the commutator, it is the Lie algebra of $U(4)$, and the exponential maps it onto $U(4)$.
 
@@ -104,7 +104,7 @@ It assumes *The Positive Cone and Its Boundary at $n=4$*, *The Space of Idempote
 
 ## Summary
 
-The Hermitian half is a real space of dimension sixteen carrying the open convex self-dual cone; the skew half is the Lie algebra of the unitary group; the Hermitian idempotents of rank $k$ are the Grassmannians inside the Hermitian half, of real dimension $2k(4-k)$, and the cone is stratified by the same flags.
+The Hermitian half is a real space of dimension sixteen carrying the open convex self-dual cone; the anti-Hermitian half is the Lie algebra of the unitary group; the Hermitian idempotents of rank $k$ are the Grassmannians inside the Hermitian half, of real dimension $2k(4-k)$, and the cone is stratified by the same flags.
 
 $\mathrm{GL}_4/U(4)$ is a symmetric space of noncompact type of dimension sixteen, contractible, with nonpositive curvature and the invariant trace metric; its compact dual replaces the cone by the compact section.
 

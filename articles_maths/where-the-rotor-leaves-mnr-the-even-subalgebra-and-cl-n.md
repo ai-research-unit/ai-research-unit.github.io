@@ -4,7 +4,7 @@
 
 **The rotor of a rotation in $n$ dimensions is an element of a Clifford algebra, and from $n=7$ that algebra has more dimensions than $M_n(\mathbb{R})$ has: the rotor stops being an $n\times n$ matrix.** The rotor acts on a vector by two multiplications, $X\mapsto RX\widetilde{R}$, and the product lands back in the $n$-dimensional space. What does not survive is the reading of $R$ itself as a matrix of size $n$.
 
-The article builds $Cl(n)$ from the relations $e_ie_j+e_je_i=-2\delta_{ij}$, isolates the even subalgebra $Cl^0(n)$ of dimension $2^{n-1}$, identifies the bivectors with the skew matrices, defines the rotor group and counts its map onto $\mathrm{SO}(n)$ as two-to-one, then compares $2^{n-1}$ with $n^2$ and $n$ with the size of the smallest faithful module. It assumes *The Matrix Algebra $M_n(\mathbb{R})$* and *The Involutions of the First Kind: Transpose and Symplectic*, and it defers the exponential of a skew matrix to *The Exponential of the Antisymmetric Part: One-Parameter Rotations*.
+The article builds $Cl(n)$ from the relations $e_ie_j+e_je_i=-2\delta_{ij}$, isolates the even subalgebra $Cl^0(n)$ of dimension $2^{n-1}$, identifies the bivectors with the antisymmetric matrices, defines the rotor group and counts its map onto $\mathrm{SO}(n)$ as two-to-one, then compares $2^{n-1}$ with $n^2$ and $n$ with the size of the smallest faithful module. It assumes *The Matrix Algebra $M_n(\mathbb{R})$* and *The Involutions of the First Kind: Transpose and Symplectic*, and it defers the exponential of an antisymmetric matrix to *The Exponential of the Antisymmetric Part: One-Parameter Rotations*.
 
 ## The Clifford Algebra
 
@@ -50,7 +50,7 @@ So the $f_i$ obey the relations of $n-1$ generators, and they generate the even 
 
 **The dimension $2^{n-1}$ is the source of every later count.** It grows exponentially while $n^2$ grows quadratically, and the crossing of the two is the subject of the last three sections.
 
-## Bivectors and Skew Matrices
+## Bivectors and Anti-Hermitian Matrices
 
 **The bivectors are the degree-two elements.** For $i<j$ put $e_{ij}=e_ie_j$. The $\binom n2$ bivectors are a basis of the degree-two part, of dimension $n(n-1)/2=\dim\operatorname{Skew}_n$. For $A\in\operatorname{Skew}_n$ define
 
@@ -74,7 +74,7 @@ $$
 
 so $[e_{12},e_{23}]=-2e_{13}$, and $[E_{12}-E_{21},E_{23}-E_{32}]=E_{13}-E_{31}$. The general case is the same computation on each pair of indices, and both sides are bilinear.
 
-**Corollary.** The map $A\mapsto-\tfrac12\omega(A)$ is an isomorphism of Lie algebras from $\operatorname{Skew}_n$ to the bivectors under the commutator, and $\dim\operatorname{Skew}_n=n(n-1)/2=\dim\mathfrak{so}(n)$. The factor $-\tfrac12$ is the normalisation that makes the bivector act as the skew matrix in the spin representation. Numerically the identity $[\omega(A),\omega(B)]=-2\omega([A,B])$ holds to $10^{-16}$ at $n=4$ on random skew pairs.
+**Corollary.** The map $A\mapsto-\tfrac12\omega(A)$ is an isomorphism of Lie algebras from $\operatorname{Skew}_n$ to the bivectors under the commutator, and $\dim\operatorname{Skew}_n=n(n-1)/2=\dim\mathfrak{so}(n)$. The factor $-\tfrac12$ is the normalisation that makes the bivector act as the antisymmetric matrix in the spin representation. Numerically the identity $[\omega(A),\omega(B)]=-2\omega([A,B])$ holds to $10^{-16}$ at $n=4$ on random antisymmetric pairs.
 
 ## The Rotor Group
 

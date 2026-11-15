@@ -5,7 +5,7 @@
 
 Every two-sided operator of *The Family of Two-Sided Operators on a Clifford Algebra* is a product of two factors, one multiplying on the left and one on the right. This article treats the factors themselves. A **one-sided operator** is a left multiplication $y\mapsto a\,y$ or a right multiplication $y\mapsto y\,b$, together with the variants in which the multiplying element is replaced by its image under the grade involution or by its image under an anti-involution. The one-sided operators are the elementary operators out of which the two-sided family is built, and they are the operators for which the Hermitian adjoint has the cleanest form.
 
-Two facts organise the theory. The first is that the two one-sided families are separately multiplicative, with the same order of composition, even though the right factor carries an anti-automorphism; this is why a product of two elements gives the composites in both families and why the homogeneity of a two-sided operator follows from its two factors. The second is that the **adjoint of a one-sided operator is the one-sided operator of the dagger**: $L_a^{*} = L_{a^{\dagger}}$ and $R_b^{*} = R_{b^{\dagger}}$. From that identity the whole Hermitian theory of the one-sided operators follows in three lines: an operator is self-adjoint when its element is, it is skew-adjoint when its element is, and it is unitary exactly when its element lies in the unitary slice. The left and the right multiplications are mutual commutants, and the algebra they generate is the image of the enveloping algebra $\mathrm{Cl}(V,\mathfrak{Q})\otimes_F\mathrm{Cl}(V,\mathfrak{Q})_{\mathrm{opp}}$, which is the whole endomorphism algebra exactly when the Clifford algebra is central simple over the base and a proper subalgebra otherwise; this is the double centraliser theorem read in this setting, and the failure of generation is worked out in *One-Sided Operators on a Clifford Algebra*.
+Two facts organise the theory. The first is that the two one-sided families are separately multiplicative, with the same order of composition, even though the right factor carries an anti-automorphism; this is why a product of two elements gives the composites in both families and why the homogeneity of a two-sided operator follows from its two factors. The second is that the **adjoint of a one-sided operator is the one-sided operator of the dagger**: $L_a^{*} = L_{a^{\dagger}}$ and $R_b^{*} = R_{b^{\dagger}}$. From that identity the whole Hermitian theory of the one-sided operators follows in three lines: an operator is self-adjoint when its element is, it is anti-self-adjoint when its element is, and it is unitary exactly when its element lies in the unitary slice. The left and the right multiplications are mutual commutants, and the algebra they generate is the image of the enveloping algebra $\mathrm{Cl}(V,\mathfrak{Q})\otimes_F\mathrm{Cl}(V,\mathfrak{Q})_{\mathrm{opp}}$, which is the whole endomorphism algebra exactly when the Clifford algebra is central simple over the base and a proper subalgebra otherwise; this is the double centraliser theorem read in this setting, and the failure of generation is worked out in *One-Sided Operators on a Clifford Algebra*.
 
 The algebra and the dagger are *Hermitian Algebras*; the two-sided family and the composition law are *The Family of Two-Sided Operators on a Clifford Algebra*; the scalar forms and the adjoints of left and right multiplication are *The Blade Form and the Hermitian Structure with Hermitian Adjoint*, from which the identity $L_x^{*} = L_{x^{\dagger}}$ is taken; the Hermitian structures on modules are *Hermitian Modules over a Hermitian Algebra with Hermitian Adjoint*; the unitary slice is *The Unitary Slice and the Compact Real Form with Hermitian Adjoint*; the left ideals and the spinor module are *Peirce Carriers and Inner Conjugation*; and the adjoint of the one-sided action on a module is *The Adjoint of the One-Sided Action with Hermitian Adjoint*.
 
@@ -73,13 +73,13 @@ where the middle equality moves the factor $b^{\dagger}$ past the product by two
 
 **Remark (why the dagger and not the conjugate element).** The adjoint is the one-sided operator of the **dagger** of the element, not of the element itself and not of the other anti-involution: reversion gives the adjoint for the blade form, the dagger gives the adjoint for the form of the dagger, and the two differ by the parity sign as in *The Blade Form and the Hermitian Structure with Hermitian Adjoint*. A sibling must use the dagger for the form $\mathrm{Sc}(x^{\dagger}y)$ and reversion for the form $\mathrm{Sc}(x^{r}y)$.
 
-### Self-Adjoint, Skew and Unitary One-Sided Operators
+### Self-Adjoint, Anti-Hermitian and Unitary One-Sided Operators
 
 **Corollary.** For $a \in \mathrm{Cl}(V,\mathfrak{Q})$,
 
 $$
 \boxed{\;L_a \text{ is self-adjoint} \iff a^{\dagger} = a, \qquad
-L_a \text{ is skew-adjoint} \iff a^{\dagger} = -a, \qquad
+L_a \text{ is anti-self-adjoint} \iff a^{\dagger} = -a, \qquad
 L_a \text{ is unitary} \iff a^{\dagger}a = 1\;},
 $$
 
@@ -87,7 +87,7 @@ and the same with $R_a$ in place of $L_a$.
 
 **Proof.** Immediate from the theorem; unitarity means $L_a^{*}L_a = \mathrm{id}$, that is $L_{a^{\dagger}a} = \mathrm{id}$, that is $a^{\dagger}a = 1$ by the injectivity of $a\mapsto L_a$ proved below.
 
-**Corollary (the slice and the vectors).** The left multiplications by the elements of the unitary slice are the unitary one-sided operators, so $a\mapsto L_a$ restricts to a unitary representation $U\to \mathrm{U}(\mathrm{Cl}(V,\mathfrak{Q}),(\cdot,\cdot))$ of the slice; and **every vector acts by a skew-adjoint operator**, $L_v^{*} = L_{v^{\dagger}} = -L_v$, because the dagger negates the vectors. When the involution is positive, a vector also satisfies $v^{\dagger}v = -v^{2} = \mathfrak{Q}(v)\cdot(-1)$, so $L_v$ is unitary exactly on the norm-one vectors, and the left multiplications by an orthonormal frame are the **complex structures** of the algebra: each is skew-adjoint, unitary and of square $-1$.
+**Corollary (the slice and the vectors).** The left multiplications by the elements of the unitary slice are the unitary one-sided operators, so $a\mapsto L_a$ restricts to a unitary representation $U\to \mathrm{U}(\mathrm{Cl}(V,\mathfrak{Q}),(\cdot,\cdot))$ of the slice; and **every vector acts by an anti-self-adjoint operator**, $L_v^{*} = L_{v^{\dagger}} = -L_v$, because the dagger negates the vectors. When the involution is positive, a vector also satisfies $v^{\dagger}v = -v^{2} = \mathfrak{Q}(v)\cdot(-1)$, so $L_v$ is unitary exactly on the norm-one vectors, and the left multiplications by an orthonormal frame are the **complex structures** of the algebra: each is anti-self-adjoint, unitary and of square $-1$.
 
 ### The Generated $*$-Algebra
 
@@ -139,13 +139,13 @@ $$
 
 ### The Positive Case: the Quaternion Algebra
 
-Let $\mathrm{Cl}_{0,2}(\mathbb{R}) = \mathbb{H}$ with $e_1^{2} = e_2^{2} = -1$ and the dagger positive, so $v^{\dagger} = -v$ for every vector. For a vector $v$, $v^{\dagger}v = -v^{2} = 1$, so the left and right multiplications $L_v$ and $R_v$ are **unitary**; and $v^{\dagger} = -v$ makes them **skew-adjoint**, while $v^{2} = -1$ makes them of **square $-1$**:
+Let $\mathrm{Cl}_{0,2}(\mathbb{R}) = \mathbb{H}$ with $e_1^{2} = e_2^{2} = -1$ and the dagger positive, so $v^{\dagger} = -v$ for every vector. For a vector $v$, $v^{\dagger}v = -v^{2} = 1$, so the left and right multiplications $L_v$ and $R_v$ are **unitary**; and $v^{\dagger} = -v$ makes them **anti-self-adjoint**, while $v^{2} = -1$ makes them of **square $-1$**:
 
 $$
 L_v^{*} = -L_v, \qquad L_v^{2} = L_{-1} = -\,\mathrm{id}, \qquad (L_vx, L_vy) = (x,y).
 $$
 
-So each of $L_{e_1}, L_{e_2}, L_{e_1e_2}$ is simultaneously skew-adjoint, unitary and a complex structure on the four-dimensional real space $\mathbb{H}$, and they satisfy the quaternion relations $L_{e_1}L_{e_2} = L_{e_1e_2}$. The vectors therefore give the three almost complex structures that make the quaternion algebra a module over the quaternions, all of them one-sided operators.
+So each of $L_{e_1}, L_{e_2}, L_{e_1e_2}$ is simultaneously anti-self-adjoint, unitary and a complex structure on the four-dimensional real space $\mathbb{H}$, and they satisfy the quaternion relations $L_{e_1}L_{e_2} = L_{e_1e_2}$. The vectors therefore give the three almost complex structures that make the quaternion algebra a module over the quaternions, all of them one-sided operators.
 
 ### The Split Case: an Involution
 
@@ -155,13 +155,13 @@ $$
 L_{e_1}^{*} = -L_{e_1}, \qquad L_{e_1}^{2} = \mathrm{id},
 $$
 
-a skew-adjoint involution; it is not unitary, and its action on the form reverses the sign, $(L_{e_1}x, L_{e_1}y) = -(x,y)$, because $e_1^{\dagger}e_1 = -e_1^{2} = -1$. The same vector is a unit of $\Gamma(V,\mathfrak{Q})$ with norm $1$ and gives an honest reflection on $V$, so the one-sided operator and the two-sided operator divide the labour: the two-sided signed inner conjugation by $e_1$ is the reflection, while the one-sided $L_{e_1}$ is a skew-adjoint involution of the whole algebra that reverses the sign of the Hermitian form.
+an anti-self-adjoint involution; it is not unitary, and its action on the form reverses the sign, $(L_{e_1}x, L_{e_1}y) = -(x,y)$, because $e_1^{\dagger}e_1 = -e_1^{2} = -1$. The same vector is a unit of $\Gamma(V,\mathfrak{Q})$ with norm $1$ and gives an honest reflection on $V$, so the one-sided operator and the two-sided operator divide the labour: the two-sided signed inner conjugation by $e_1$ is the reflection, while the one-sided $L_{e_1}$ is an anti-self-adjoint involution of the whole algebra that reverses the sign of the Hermitian form.
 
 ## Summary
 
 A **one-sided operator** on a Clifford algebra is a left multiplication $\Lambda^{\mathrm{J}}_x(y) = \mathrm{J}(x)y$ or a right multiplication $\mathrm P^{c}_x(y) = y\,c(x)$ attached to an automorphism $\mathrm{J}$ and an anti-automorphism $c$. Both families are **multiplicative with the same order**, $\Lambda^{\mathrm{J}}_{xz} = \Lambda^{\mathrm{J}}_x\Lambda^{\mathrm{J}}_z$ and $\mathrm P^{c}_{xz} = \mathrm P^{c}_x\mathrm P^{c}_z$, because the reversal inside $c$ is cancelled by the reversal of the order of composition; left and right operators commute, and the two-sided operator is their product, $\Phi^{\mathrm{J},c}_x = \Lambda^{\mathrm{J}}_x\mathrm P^{c}_x$, so the multiplicativity of the two-sided family is inherited from its factors.
 
-With respect to the form $(x,y) = \mathrm{Sc}(x^{\dagger}y)$ the **adjoint of a one-sided operator is the one-sided operator of the dagger**, $L_a^{*} = L_{a^{\dagger}}$ and $R_b^{*} = R_{b^{\dagger}}$, whence a one-sided operator is self-adjoint, skew-adjoint or unitary exactly when its element is self-adjoint, skew-adjoint or in the unitary slice; every vector acts by a skew-adjoint operator, and in the positive case by a skew-adjoint unitary complex structure. The left multiplications give the **regular $*$-representation**, the right multiplications its commutant, and the two together generate the image of the enveloping algebra $\mathrm{Cl}\otimes_F\mathrm{Cl}_{\mathrm{opp}}$, which is all of $\mathrm{End}_F(\mathrm{Cl}(V,\mathfrak{Q}))$ exactly when the Clifford algebra is central simple and a proper subalgebra otherwise. Finally $L_a(1) = R_a(1) = a$, so both maps are injective; the kernel of a one-sided operator is an annihilator and its image an ideal, and the spinor module is the image of $R_\pi$ for a primitive idempotent $\pi$.
+With respect to the form $(x,y) = \mathrm{Sc}(x^{\dagger}y)$ the **adjoint of a one-sided operator is the one-sided operator of the dagger**, $L_a^{*} = L_{a^{\dagger}}$ and $R_b^{*} = R_{b^{\dagger}}$, whence a one-sided operator is self-adjoint, anti-self-adjoint or unitary exactly when its element is self-adjoint, anti-self-adjoint or in the unitary slice; every vector acts by an anti-self-adjoint operator, and in the positive case by an anti-self-adjoint unitary complex structure. The left multiplications give the **regular $*$-representation**, the right multiplications its commutant, and the two together generate the image of the enveloping algebra $\mathrm{Cl}\otimes_F\mathrm{Cl}_{\mathrm{opp}}$, which is all of $\mathrm{End}_F(\mathrm{Cl}(V,\mathfrak{Q}))$ exactly when the Clifford algebra is central simple and a proper subalgebra otherwise. Finally $L_a(1) = R_a(1) = a$, so both maps are injective; the kernel of a one-sided operator is an annihilator and its image an ideal, and the spinor module is the image of $R_\pi$ for a primitive idempotent $\pi$.
 
 ## Summary of Notation
 

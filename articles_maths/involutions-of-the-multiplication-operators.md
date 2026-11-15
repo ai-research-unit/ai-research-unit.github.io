@@ -10,7 +10,7 @@ $$
 
 the **induced involution of the multiplication operators**. Because $A$ is commutative the anti-multiplicativity and the multiplicativity of this map coincide, so ${}^{*}$ is a ring automorphism of order two of $\operatorname{Mult}(A)$; its **fixed part** is the set of the multiplications by the self-adjoint elements, and it is itself a multiplication algebra, $\operatorname{Mult}(A)^* = L_{A^\sigma}\cong A^\sigma$. This is the operator-level counterpart of the element-level involution, and it is the object through which the involution of an algebra acts on the modules and on the bimodules of the next articles of this group.
 
-The article sets up the isomorphism $\operatorname{Mult}(A)\cong A$, transports the involution of $A$ to the multiplication operators, and proves that the transported map is an automorphism of order two compatible with the product and with the module structure: $(L_aL_b)^* = L_b^*L_a^*$, and $L_a^*$ acts on an $A$-module by the same scalar as $L_a$ twisted by $\sigma$ on the scalars. It computes the fixed part, the skew part and the commutant of the involution, and it records the naturality: a $\sigma$-equivariant homomorphism of involutive commutative algebras intertwines the induced involutions of the multiplication operators. The two closed forms are the polynomial ring with the negation and with the swap, where the induced involution is the substitution and the exchange of the variables respectively. The article assumes *Commutative Algebras with an Involution* for the involution and the fixed subalgebra, *The Operators on an Algebra* and *Left and Right Multiplication in a Ring* for the multiplications, *Jordan Algebras* for the multiplication algebra of a Jordan algebra in the companion case, and *Modules over a Ring* for the module action. No form, norm, distance or order occurs; the adjoint with respect to a pairing is *Adjoints in a Commutative Involutive Algebra*, and the module-level object is *The Graded Adjoint Action on a Module over a Jordan Algebra* and *The Involution on the Multiplication Operators*.
+The article sets up the isomorphism $\operatorname{Mult}(A)\cong A$, transports the involution of $A$ to the multiplication operators, and proves that the transported map is an automorphism of order two compatible with the product and with the module structure: $(L_aL_b)^* = L_b^*L_a^*$, and $L_a^*$ acts on an $A$-module by the same scalar as $L_a$ twisted by $\sigma$ on the scalars. It computes the fixed part, the anti-Hermitian part and the commutant of the involution, and it records the naturality: a $\sigma$-equivariant homomorphism of involutive commutative algebras intertwines the induced involutions of the multiplication operators. The two closed forms are the polynomial ring with the negation and with the swap, where the induced involution is the substitution and the exchange of the variables respectively. The article assumes *Commutative Algebras with an Involution* for the involution and the fixed subalgebra, *The Operators on an Algebra* and *Left and Right Multiplication in a Ring* for the multiplications, *Jordan Algebras* for the multiplication algebra of a Jordan algebra in the companion case, and *Modules over a Ring* for the module action. No form, norm, distance or order occurs; the adjoint with respect to a pairing is *Adjoints in a Commutative Involutive Algebra*, and the module-level object is *The Graded Adjoint Action on a Module over a Jordan Algebra* and *The Involution on the Multiplication Operators*.
 
 ## The Multiplication Operators and Their Involution
 
@@ -36,15 +36,15 @@ extended linearly to the combinations of the $L_a$.
 
 *Proof.* Well definedness is the linearity of the assignment over the span of the $L_a$. Multiplicativity: $(L_aL_b)^* = L_{ab}^* = L_{\sigma(ab)} = L_{\sigma(a)\sigma(b)} = L_{\sigma(a)}L_{\sigma(b)} = L_a^*L_b^*$. Order two: $(L_a^*)^* = L_{\sigma^2(a)} = L_a$. The identification with $\sigma$ is the definition.
 
-**Corollary.** The multiplication algebra is an **involutive commutative algebra** in the sense of *Involutive Algebras*, with the involution ${}^{*}$; its fixed subalgebra is $\operatorname{Mult}(A)^*\cong A^\sigma$ and its skew part is $L_{A^-}$.
+**Corollary.** The multiplication algebra is an **involutive commutative algebra** in the sense of *Involutive Algebras*, with the involution ${}^{*}$; its fixed subalgebra is $\operatorname{Mult}(A)^*\cong A^\sigma$ and its anti-Hermitian part is $L_{A^-}$.
 
-*Proof.* The involution is an automorphism of order two; the fixed elements are the $L_a$ with $\sigma(a) = a$, giving the first identification; the skew elements are the $L_a$ with $\sigma(a) = -a$.
+*Proof.* The involution is an automorphism of order two; the fixed elements are the $L_a$ with $\sigma(a) = a$, giving the first identification; the anti-Hermitian elements are the $L_a$ with $\sigma(a) = -a$.
 
 ## The Fixed Part and Compatibility
 
 ### The Fixed Part
 
-**Theorem.** The fixed part and the skew part of the multiplication operators are
+**Theorem.** The fixed part and the anti-Hermitian part of the multiplication operators are
 
 $$
 \boxed{\;\operatorname{Mult}(A)^* = \{L_a : \sigma(a) = a\} \cong A^\sigma, \qquad \operatorname{Mult}(A)^- = \{L_a : \sigma(a) = -a\} \cong A^-\;} ,
@@ -52,7 +52,7 @@ $$
 
 and $\operatorname{Mult}(A) = \operatorname{Mult}(A)^*\oplus\operatorname{Mult}(A)^-$ when $2$ is invertible.
 
-*Proof.* The isomorphism $a\mapsto L_a$ carries the fixed elements of $A$ to the fixed elements of the operators and the skew elements to the skew elements, and preserves the direct sum.
+*Proof.* The isomorphism $a\mapsto L_a$ carries the fixed elements of $A$ to the fixed elements of the operators and the anti-Hermitian elements to the anti-Hermitian elements, and preserves the direct sum.
 
 **Corollary.** The fixed part is the multiplication algebra of the fixed subalgebra, $\operatorname{Mult}(A)^*\cong\operatorname{Mult}(A^\sigma)$; the multiplication operators invariant under the involution are exactly the multiplications by the invariant elements of the algebra.
 
@@ -72,13 +72,13 @@ and $\operatorname{Mult}(A) = \operatorname{Mult}(A)^*\oplus\operatorname{Mult}(
 
 ## Examples
 
-**Example (the negated variable).** Let $A = R[x]$ with $\sigma(x) = -x$. The multiplication operators are $L_f$ for $f \in R[x]$, and $L_x^* = L_{-x} = -L_x$; the fixed part is $L_{R[x^2]}$, the multiplications by the even polynomials, and the skew part is $L_{xR[x^2]}$. On the quotient $R[x]/(x^k)$ of *Involution-Invariant Ideals of the Symmetric Algebra* the induced involution of the multiplication operators is the same substitution $x\mapsto -x$.
+**Example (the negated variable).** Let $A = R[x]$ with $\sigma(x) = -x$. The multiplication operators are $L_f$ for $f \in R[x]$, and $L_x^* = L_{-x} = -L_x$; the fixed part is $L_{R[x^2]}$, the multiplications by the even polynomials, and the anti-Hermitian part is $L_{xR[x^2]}$. On the quotient $R[x]/(x^k)$ of *Involution-Invariant Ideals of the Symmetric Algebra* the induced involution of the multiplication operators is the same substitution $x\mapsto -x$.
 
-**Example (the swap).** Let $A = R[x,y]$ with $\sigma$ exchanging $x$ and $y$. Then $L_x^* = L_y$, $L_y^* = L_x$, and the fixed part is the multiplication algebra of $R[x+y,xy]$; the operator $L_{x+y}$ and $L_{xy}$ are fixed, while $L_{x-y}$ is skew. The induced involution exchanges the two variable multiplications, exactly as $\sigma$ exchanges the two variables.
+**Example (the swap).** Let $A = R[x,y]$ with $\sigma$ exchanging $x$ and $y$. Then $L_x^* = L_y$, $L_y^* = L_x$, and the fixed part is the multiplication algebra of $R[x+y,xy]$; the operator $L_{x+y}$ and $L_{xy}$ are fixed, while $L_{x-y}$ is anti-Hermitian. The induced involution exchanges the two variable multiplications, exactly as $\sigma$ exchanges the two variables.
 
 ## Summary
 
-The **multiplication operators** of a unital commutative algebra $A$ are the $L_a$, and $\operatorname{Mult}(A)\cong A$ through $a\mapsto L_a$. An involution $\sigma$ of $A$ induces the **involution of the multiplication operators** $L_a^* = L_{\sigma(a)}$, an $R$-algebra automorphism of order two which, the algebra being commutative, is also an anti-automorphism; its **fixed part** is $\operatorname{Mult}(A)^*\cong A^\sigma$, the multiplications by the self-adjoint elements, and its skew part is $L_{A^-}$. The induced involution is compatible with the composition, with the action on a module through the twisted scalar, and with the equalities $L_aL_b = L_{ab}$; it is natural in $\sigma$-equivariant homomorphisms. The polynomial ring with the negation and with the swap are the worked examples. No form, norm, distance or order occurs.
+The **multiplication operators** of a unital commutative algebra $A$ are the $L_a$, and $\operatorname{Mult}(A)\cong A$ through $a\mapsto L_a$. An involution $\sigma$ of $A$ induces the **involution of the multiplication operators** $L_a^* = L_{\sigma(a)}$, an $R$-algebra automorphism of order two which, the algebra being commutative, is also an anti-automorphism; its **fixed part** is $\operatorname{Mult}(A)^*\cong A^\sigma$, the multiplications by the self-adjoint elements, and its anti-Hermitian part is $L_{A^-}$. The induced involution is compatible with the composition, with the action on a module through the twisted scalar, and with the equalities $L_aL_b = L_{ab}$; it is natural in $\sigma$-equivariant homomorphisms. The polynomial ring with the negation and with the swap are the worked examples. No form, norm, distance or order occurs.
 
 ## Summary of Notation
 
@@ -90,7 +90,7 @@ The **multiplication operators** of a unital commutative algebra $A$ are the $L_
 | $\operatorname{Mult}(A)\cong A$ | Multiplication algebra |
 | $L_a^* = L_{\sigma(a)}$ | Induced involution of the operators |
 | $\operatorname{Mult}(A)^*\cong A^\sigma$ | Fixed part |
-| $\operatorname{Mult}(A)^-\cong A^-$ | Skew part |
+| $\operatorname{Mult}(A)^-\cong A^-$ | Anti-Hermitian part |
 | $(FG)^* = G^*F^* = F^*G^*$ | Compatibility with composition |
 | $\rho(L_a^*)(m) = \sigma(a)\cdot m$ | Action on a module |
 

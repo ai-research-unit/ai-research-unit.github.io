@@ -74,7 +74,7 @@ the remaining components being determined by these and the conjugate relation; a
 
 ### The Contorsion Tensor
 
-**Proposition.** The canonical connection and the Levi-Civita connection are both metric-compatible, so their difference is a $1$-form with values in the $g$-skew endomorphisms of the tangent bundle,
+**Proposition.** The canonical connection and the Levi-Civita connection are both metric-compatible, so their difference is a $1$-form with values in the $g$-anti-self-adjoint endomorphisms of the tangent bundle,
 
 $$
 \nabla^{Ch}_XY = \nabla^{LC}_XY + A(X,Y), \qquad g(A(X,Y),Z) = -g(A(X,Z),Y),

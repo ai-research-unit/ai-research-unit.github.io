@@ -37,7 +37,7 @@ This article states the foundational global theorems — Moser's stability theor
 
 **Remark.** The obstruction used above is the cohomological one, $[\omega]\neq0$ and $[\omega]^{\wedge n}\neq0$, and it is only the first of a hierarchy. In dimension four the deeper obstructions come from gauge theory: a closed symplectic four-manifold has $b_2^+ \geq 1$ and its Seiberg–Witten invariants are severely constrained, and there are simply connected almost symplectic four-manifolds — for instance certain connected sums — that violate these constraints and hence admit no symplectic structure. The general principle is that the $h$-principle for a closed manifold holds exactly when there is no topology left for the closedness condition to detect, and in dimensions two and four there is a great deal.
 
-**Definition.** A **contact structure** on a manifold $M$ of dimension $2n+1$ is a maximally nonintegrable hyperplane field $\zeta = \ker\alpha$, where $\alpha$ is a contact form: $\alpha\wedge(d\alpha)^{\wedge n}$ is nowhere zero. A formal contact structure is the homotopy-theoretic datum of a hyperplane field with a nondegenerate skew form on it, with no integrability condition.
+**Definition.** A **contact structure** on a manifold $M$ of dimension $2n+1$ is a maximally nonintegrable hyperplane field $\zeta = \ker\alpha$, where $\alpha$ is a contact form: $\alpha\wedge(d\alpha)^{\wedge n}$ is nowhere zero. A formal contact structure is the homotopy-theoretic datum of a hyperplane field with a nondegenerate antisymmetric form on it, with no integrability condition.
 
 **Theorem (Gromov; the $h$-principle for open contact manifolds).** On an open manifold of dimension $2n+1$, the inclusion of contact structures into formal contact structures is a weak homotopy equivalence: every formal contact structure is homotopic to a genuine contact structure.
 
@@ -150,7 +150,7 @@ In the presence of a torus action the symplectic structure reduces to a Delzant 
 | $\zeta$ | Contact structure, a maximally nonintegrable hyperplane field |
 | $[\omega]$ | Cohomology class; symplectic requires $[\omega]^{\wedge n}\neq0$ |
 | Almost symplectic | Nondegenerate $2$-form without closedness; reduction to $Sp(2n,\mathbb{R})\sim \mathrm{U}(n)$ |
-| Formal contact structure | Homotopy-theoretic hyperplane field with a nondegenerate skew form; no integrability |
+| Formal contact structure | Homotopy-theoretic hyperplane field with a nondegenerate antisymmetric form; no integrability |
 | Moser equation | $\iota_{X_t}\omega_t = -\alpha_t$ along a path with constant cohomology class |
 | $h$-principle | Existence/classification of structures by their formal homotopy data |
 | Overtwisted disc, tight | Local model of flexibility; a contact structure is overtwisted if it contains one, tight otherwise |

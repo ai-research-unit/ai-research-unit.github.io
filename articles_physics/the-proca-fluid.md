@@ -89,7 +89,7 @@ $$
 
 where $\partial_\mu(u^\nu u_\nu)=0$ removes the middle term. The last two terms are $-\nabla_\mu r-r a_\mu$, and dividing by $r$ gives the display.
 
-**The residual was checked symbolically and it is zero in all four components.** The configuration was $r=2+\sin r_x$ with rapidity $r_x+r'_t r_y$ and direction in the $r_xr_y$ plane, chosen so that the density gradient, the flow and the vorticity are all non-trivial and mutually skew; $a_\mu+(E_\mu+\nabla_\mu r)/r$ vanished identically in each slot. The acceleration is orthogonal to the flow, $a_\mu u^\mu=0$, as it must be for a unit timelike field.
+**The residual was checked symbolically and it is zero in all four components.** The configuration was $r=2+\sin r_x$ with rapidity $r_x+r'_t r_y$ and direction in the $r_xr_y$ plane, chosen so that the density gradient, the flow and the vorticity are all non-trivial and mutually antisymmetric; $a_\mu+(E_\mu+\nabla_\mu r)/r$ vanished identically in each slot. The acceleration is orthogonal to the flow, $a_\mu u^\mu=0$, as it must be for a unit timelike field.
 
 **The first force is a pressure force, and the equation of state it implies is stiff.** The gradient term is $-\nabla_\mu\ln r$, which is the enthalpy gradient of a fluid with
 

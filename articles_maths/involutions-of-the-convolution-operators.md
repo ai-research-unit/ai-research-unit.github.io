@@ -144,7 +144,7 @@ and the adjoint is the multiplication by the conjugate multiplier,
 $$
 T_k^\dagger=\mathcal F^{-1}M_{\overline{\mathcal F k}}\mathcal F,\qquad \mathcal F(k^*)=\overline{\mathcal F k} ,
 $$
-so that the operator is self-adjoint exactly when $\mathcal F k$ is real, skew-adjoint exactly when $\mathcal F k$ is
+so that the operator is self-adjoint exactly when $\mathcal F k$ is real, anti-self-adjoint exactly when $\mathcal F k$ is
 purely imaginary, and normal for every $k$.
 
 **Proof.** The convolution theorem gives $\mathcal F(k*f)=\mathcal F k\,\mathcal F f$, so $\mathcal F$ intertwines $T_k$
@@ -152,14 +152,14 @@ with the multiplication by $\mathcal F k$; the Fourier transform is unitary by P
 $\mathcal F^{-1}M_{\mathcal F k}\mathcal F$ is $\mathcal F^{-1}M_{\mathcal F k}^\dagger\mathcal F$, and the adjoint of a
 multiplication operator is the multiplication by the conjugate function. The identity
 $\mathcal F(k^*)=\overline{\mathcal F k}$ is the conjugate-symmetry theorem of *The Fourier Transform and Conjugate
-Symmetry*; the self-adjoint and skew-adjoint cases are the reality and the pure-imaginariness of $\mathcal F k$, and
+Symmetry*; the self-adjoint and anti-self-adjoint cases are the reality and the pure-imaginariness of $\mathcal F k$, and
 normality is automatic for a multiplication operator.
 
 **Example (the Hilbert and Riesz transforms).** The Hilbert transform of *The Fourier Transform and
 Conjugate Symmetry* is convolution with the kernel $1/(\pi x)$ on $\mathbb R$ and has the multiplier
-$-i\operatorname{sgn}\zeta$, purely imaginary, so it is skew-adjoint, $H^\dagger=-H$, as recorded there; the
+$-i\operatorname{sgn}\zeta$, purely imaginary, so it is anti-self-adjoint, $H^\dagger=-H$, as recorded there; the
 Riesz transforms $R_j$ on $\mathbb R^n$ have the multipliers $-i\zeta_j/\lvert\zeta\rvert$, also purely
-imaginary, so each is skew-adjoint, $R_j^\dagger=-R_j$, and their symbols are unimodular, so each $R_j$ is
+imaginary, so each is anti-self-adjoint, $R_j^\dagger=-R_j$, and their symbols are unimodular, so each $R_j$ is
 unitary after the sign. The examples show both extremities of the multiplier dictionary.
 
 ### The Unitary Multipliers
@@ -207,10 +207,10 @@ isometric anti-automorphism of the convolution, $(k*l)^*=l^**k^*$, and the corre
 carries it to the adjoint, being a $\ast$-homomorphism of the convolution algebra into the bounded operators.
 On the Fourier side the operator is multiplication by $\mathcal F k$, the adjoint is multiplication by
 $\overline{\mathcal F k}$ since $\mathcal F(k^*)=\overline{\mathcal F k}$, and the operator is self-adjoint exactly for
-real $\mathcal F k$, skew-adjoint exactly for purely imaginary $\mathcal F k$ and unitary exactly for unimodular
+real $\mathcal F k$, anti-self-adjoint exactly for purely imaginary $\mathcal F k$ and unitary exactly for unimodular
 $\mathcal F k$; the unitary convolution operators are the **unitary multipliers**, and they form a group under
 composition, identified by the Fourier transform with the group of unimodular multipliers. The Hilbert
-transform and the Riesz transforms are the skew-adjoint unimodular examples, and the Hermitian measures are
+transform and the Riesz transforms are the anti-self-adjoint unimodular examples, and the Hermitian measures are
 the self-adjoint measure-profiles. On a non-unimodular group the involution carries the modular function and
 the two convolutions differ, which is the concern of the convolution-algebra articles of *Analysis on
 Groups*.
@@ -225,7 +225,7 @@ Groups*.
 | $K(x,y)=k(x-y)$ | Kernel of the convolution operator |
 | $T_k^\dagger=T_{k^*}$ | Adjoint of the convolution operator |
 | $\mathcal F(k^*)=\overline{\mathcal F k}$ | Involution on the Fourier side |
-| $\mathcal F k$ real / purely imaginary / unimodular | self-adjoint / skew-adjoint / unitary $T_k$ |
+| $\mathcal F k$ real / purely imaginary / unimodular | self-adjoint / anti-self-adjoint / unitary $T_k$ |
 | unitary multipliers | The unitary convolution operators under composition |
 | $f^*(x)=\overline{f(x^{-1})}\Delta(x)^{-1}$ | The general-group involution (forward reference) |
 

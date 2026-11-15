@@ -25,15 +25,15 @@ The algebra, the involution and the Hilbert algebra are *Hilbert Algebras* and *
 
 ### The Involution
 
-**Definition.** An **involutive algebra** is an associative algebra $A$ over $\mathbb{C}$ with a map $a\mapsto a^{*}$ that is conjugate-linear, is an anti-automorphism of order two, and fixes the scalars; the elements with $a^{*} = a$ are **Hermitian**, those with $a^{*} = -a$ are **skew**, and every element decomposes as
+**Definition.** An **involutive algebra** is an associative algebra $A$ over $\mathbb{C}$ with a map $a\mapsto a^{*}$ that is conjugate-linear, is an anti-automorphism of order two, and fixes the scalars; the elements with $a^{*} = a$ are **Hermitian**, those with $a^{*} = -a$ are **anti-Hermitian**, and every element decomposes as
 
 $$
 a = \operatorname{Re}a + i\operatorname{Im}a, \qquad \operatorname{Re}a = \tfrac12(a+a^{*}), \quad \operatorname{Im}a = \tfrac1{2i}(a - a^{*}) ,
 $$
 
-into the sum of a Hermitian and a skew element in the complex sense, so that $H(A)$ is a real vector subspace.
+into the sum of a Hermitian and an anti-Hermitian element in the complex sense, so that $H(A)$ is a real vector subspace.
 
-*Proof.* The conjugate-linearity and the order-two property make the real and imaginary parts Hermitian and skew-adjoint as stated; the decomposition is unique because a Hermitian and a skew element can only add to the real part of $a$.
+*Proof.* The conjugate-linearity and the order-two property make the real and imaginary parts Hermitian and anti-self-adjoint as stated; the decomposition is unique because a Hermitian and an anti-Hermitian element can only add to the real part of $a$.
 
 **Definition.** The **positive cone** of the involutive algebra is
 

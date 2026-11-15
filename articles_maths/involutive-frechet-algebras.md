@@ -5,7 +5,7 @@
 
 A **Fréchet algebra** is a complete metrisable locally convex topological algebra, and an **involutive Fréchet algebra** is one with a continuous involution. It is the natural home of the algebras of smooth and holomorphic functions, which are not Banach algebras in any natural norm but are complete for a countable sequence of seminorms, and it is the projective limit of the Banach $*$-algebras its seminorm quotients. The involution of a Fréchet algebra is required to be continuous for the Fréchet topology, and the spectral theory extends from the Banach case with one change of language: the spectrum of an element is defined by invertibility as before, and the involution moves it by conjugation, but the norm no longer bounds the spectrum, and the place of the norm is taken by the family of seminorms. This article develops the involutive Fréchet algebras, the continuity of the involution, the projective limit description and the spectral theory.
 
-The article assumes the Fréchet algebra, the sequence of seminorms, the projective limit and the spectrum from *Locally Convex and Fréchet Algebras*, which owns the topological algebra and the spectral theory of a Fréchet algebra; the topological algebra, the submultiplicative norm and the Banach algebras from *Topological Algebras and Banach Algebras*; the involutive Banach algebra, the $\mathrm{C}^*$-identity and the Hermitian elements from *Involutive Banach Algebras and the Gelfand–Naimark Theorem* and *Hermitian and Self-Adjoint Elements of a Banach Algebra*; the continuous involution and the fixed and skew parts from *Involutive Topological Algebras*; and the abstract involution from *Involutive Algebras*. The grade involution $\alpha$ of the signed block is not used.
+The article assumes the Fréchet algebra, the sequence of seminorms, the projective limit and the spectrum from *Locally Convex and Fréchet Algebras*, which owns the topological algebra and the spectral theory of a Fréchet algebra; the topological algebra, the submultiplicative norm and the Banach algebras from *Topological Algebras and Banach Algebras*; the involutive Banach algebra, the $\mathrm{C}^*$-identity and the Hermitian elements from *Involutive Banach Algebras and the Gelfand–Naimark Theorem* and *Hermitian and Self-Adjoint Elements of a Banach Algebra*; the continuous involution and the fixed and anti-Hermitian parts from *Involutive Topological Algebras*; and the abstract involution from *Involutive Algebras*. The grade involution $\alpha$ of the signed block is not used.
 
 Throughout, $A$ is a unital commutative-compatible associative Fréchet algebra over $\mathbb{C}$ with a countable increasing family of submultiplicative seminorms $(p_n)_{n\geq0}$ defining the topology, $p_0 \leq p_1 \leq \cdots$, and with a **continuous involution** $a \mapsto a^*$; $A_n = A/\ker p_n$ is the Banach algebra completion of the quotient and $A \cong \varprojlim_n A_n$; $\sigma(a)$ is the spectrum, the complement of the set of $\lambda$ for which $a - \lambda$ is invertible; $A^+ = \{a : a^* = a\}$ is the Hermitian part; and an **A*-algebra** is an involutive Fréchet algebra in which the Hermitian elements are real and span the algebra.
 
@@ -49,7 +49,7 @@ a compact subset of $\mathbb{C}$. The involution moves the spectrum by conjugati
 
 ## The Spectral Geometry
 
-**Definition.** Let $A$ be an involutive Fréchet algebra. The **Hermitian part** is $A^+ = \{a : a^* = a\}$, and the **skew part** $A^-$; the **spectrum** $\Sigma(A)$ is the space of continuous characters, and an involution is **Hermitian** when every Hermitian element has real image in each $\sigma_{A_n}$, and **A*** when, in addition, $A^+$ spans $A$ over $\mathbb{C}$.
+**Definition.** Let $A$ be an involutive Fréchet algebra. The **Hermitian part** is $A^+ = \{a : a^* = a\}$, and the **anti-Hermitian part** $A^-$; the **spectrum** $\Sigma(A)$ is the space of continuous characters, and an involution is **Hermitian** when every Hermitian element has real image in each $\sigma_{A_n}$, and **A*** when, in addition, $A^+$ spans $A$ over $\mathbb{C}$.
 
 **Proposition (Hermitian involutions and real spectra).** An involution is Hermitian if and only if every self-adjoint element has real spectrum; it is then continuous when the topology is m-convex. For an A*-algebra the self-adjoint part $A^+$ is a real Fréchet space with $A = A^+ \oplus iA^+$, and the algebra is the complexification of its Hermitian part.
 
@@ -85,7 +85,7 @@ An involutive Fréchet algebra is a complete metrisable locally convex algebra w
 | $A \cong \varprojlim_n A_n$ | Projective limit description |
 | $\sigma(a)$, $\sigma_{A_n}(\pi_n(a))$ | Spectra in the algebra and the quotients |
 | $\sigma(a) = \bigcup_n\sigma_{A_n}(\pi_n(a))$ | The spectrum as a union |
-| $A^+$, $A^-$ | Hermitian and skew parts |
+| $A^+$, $A^-$ | Hermitian and anti-Hermitian parts |
 | Hermitian / A* involution | Real spectra; Hermitian part spans |
 | $\chi(a^*) = \overline{\chi(a)}$ | Characters are `*`-homomorphisms (Hermitian case) |
 

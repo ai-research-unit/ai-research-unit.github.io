@@ -3,7 +3,7 @@
 
 ## Introduction
 
-When the endomorphism ring of *Involutions of the Endomorphism Ring* is a matrix ring, the adjoint becomes a concrete formula: with respect to a sesquilinear form with Gram matrix $\Phi$ and coefficient involution $\sigma$, the adjoint of a matrix $X$ is $\Phi^{-1}\sigma(X)^{\mathrm t}\Phi$, and with respect to the $\sigma$-twisted trace pairing of the category it is read off from the left and the right multiplications. Three objects come together in the matrix case and are easy to confuse: the **adjoint involution** $X \mapsto \Phi^{-1}\sigma(X)^{\mathrm t}\Phi$ defined by a form, the **self-adjoint** and **skew-adjoint** matrices it picks out, and the **unitary group** of the matrices with $X^{*}X = XX^{*} = I$, which are exactly the matrices preserving the form. This article computes the adjoint in the matrix ring, identifies the self-adjoint matrices and the unitary group, and relates them to the trace pairing of the ring.
+When the endomorphism ring of *Involutions of the Endomorphism Ring* is a matrix ring, the adjoint becomes a concrete formula: with respect to a sesquilinear form with Gram matrix $\Phi$ and coefficient involution $\sigma$, the adjoint of a matrix $X$ is $\Phi^{-1}\sigma(X)^{\mathrm t}\Phi$, and with respect to the $\sigma$-twisted trace pairing of the category it is read off from the left and the right multiplications. Three objects come together in the matrix case and are easy to confuse: the **adjoint involution** $X \mapsto \Phi^{-1}\sigma(X)^{\mathrm t}\Phi$ defined by a form, the **self-adjoint** and **anti-self-adjoint** matrices it picks out, and the **unitary group** of the matrices with $X^{*}X = XX^{*} = I$, which are exactly the matrices preserving the form. This article computes the adjoint in the matrix ring, identifies the self-adjoint matrices and the unitary group, and relates them to the trace pairing of the ring.
 
 It assumes *Matrix Rings with an Involution*, *Involutions of the Endomorphism Ring* for the adjoint, and *The Transpose as an Adjoint* for the trace duality; the sesquilinear forms themselves and their classification are Part II, and the Gram matrix is used only as a matrix. Throughout, $R$ is a commutative ring with $1 \neq 0$ and an involution $\sigma$, $\Phi \in M_n(R)$ is a matrix with $\Phi$ invertible when it is used as a Gram matrix, $\tau$ is the matrix trace, and $X^{*} = \Phi^{-1}\sigma(X)^{\mathrm t}\Phi$.
 
@@ -35,7 +35,7 @@ $$
 
 the middle factor being $\sigma(X)^{\mathrm t}$; and with $\Phi = I$ the same involution is the conjugate transpose, $X^{*} = \begin{pmatrix}-i&0\\1&2\end{pmatrix}$.
 
-**Proposition (self-adjoint and skew-adjoint).** The **self-adjoint** matrices are those with $\sigma(X)^{\mathrm t}\Phi = \Phi X$, equivalently $X^{*} = X$; the **skew-adjoint** ones are those with $X^{*} = -X$. For $\Phi = \operatorname{diag}(1,-1)$ the self-adjoint matrices are $\begin{pmatrix}a&b\\-\bar b&d\end{pmatrix}$ with $a,d$ real, the matrix $\Phi$ itself among them. With $2$ invertible the ring is the sum of the two, and for $\Phi = I$ they are the matrices with $\sigma(X)^{\mathrm t} = \pm X$, the Hermitian and anti-Hermitian matrices of the coefficient involution.
+**Proposition (self-adjoint and anti-self-adjoint).** The **self-adjoint** matrices are those with $\sigma(X)^{\mathrm t}\Phi = \Phi X$, equivalently $X^{*} = X$; the **anti-self-adjoint** ones are those with $X^{*} = -X$. For $\Phi = \operatorname{diag}(1,-1)$ the self-adjoint matrices are $\begin{pmatrix}a&b\\-\bar b&d\end{pmatrix}$ with $a,d$ real, the matrix $\Phi$ itself among them. With $2$ invertible the ring is the sum of the two, and for $\Phi = I$ they are the matrices with $\sigma(X)^{\mathrm t} = \pm X$, the Hermitian and anti-Hermitian matrices of the coefficient involution.
 
 **Proof.** $X^{*} = X$ is $\Phi^{-1}\sigma(X)^{\mathrm t}\Phi = X$, i.e. $\sigma(X)^{\mathrm t}\Phi = \Phi X$; the rest is *Involutive Rings* applied to the adjoint involution.
 
@@ -67,7 +67,7 @@ Hence the trace pairing is $\sigma$-semilinear in the appropriate sense and its 
 
 ## Examples
 
-**(a) The real orthogonal case.** $R = \mathbb{R}$, $\sigma = \mathrm{id}$, $\Phi = I$: $X^{*} = X^{\mathrm t}$, the self-adjoint matrices are the symmetric ones, $\begin{pmatrix}1&2\\2&3\end{pmatrix}$ among them against the skew-adjoint $\begin{pmatrix}0&1\\-1&0\end{pmatrix}$, and $U_n$ is the orthogonal group.
+**(a) The real orthogonal case.** $R = \mathbb{R}$, $\sigma = \mathrm{id}$, $\Phi = I$: $X^{*} = X^{\mathrm t}$, the self-adjoint matrices are the symmetric ones, $\begin{pmatrix}1&2\\2&3\end{pmatrix}$ among them against the anti-self-adjoint $\begin{pmatrix}0&1\\-1&0\end{pmatrix}$, and $U_n$ is the orthogonal group.
 
 **(b) The complex unitary case.** $R = \mathbb{C}$, $\sigma$ the conjugation, $\Phi = I$: $X^{*} = \overline{X}^{\mathrm t}$, the self-adjoint matrices are the Hermitian ones, and $U_n$ is the unitary group. For $n = 2$ the Pauli matrix
 
@@ -77,13 +77,13 @@ $$
 
 is Hermitian, and $\tfrac{1}{\sqrt2}\begin{pmatrix}1&-1\\1&1\end{pmatrix}$ is unitary. The adjoint involution is of the second kind.
 
-**(c) The symplectic case.** $\Phi = J$ with $J^{\mathrm t} = -J$, $J^2 = -1$, in the degree-two model $J=\begin{pmatrix}0&1\\-1&0\end{pmatrix}$: $X^{*} = -JX^{\mathrm t}J$, the self-adjoint matrices are the scalar matrices, $-JX^{\mathrm t}J=X$ being equivalent to $X=\lambda I$, so that the matrix $J$ and its multiples are skew-adjoint, and $U_n$ is the symplectic group of *Matrix Rings with an Involution*.
+**(c) The symplectic case.** $\Phi = J$ with $J^{\mathrm t} = -J$, $J^2 = -1$, in the degree-two model $J=\begin{pmatrix}0&1\\-1&0\end{pmatrix}$: $X^{*} = -JX^{\mathrm t}J$, the self-adjoint matrices are the scalar matrices, $-JX^{\mathrm t}J=X$ being equivalent to $X=\lambda I$, so that the matrix $J$ and its multiples are anti-self-adjoint, and $U_n$ is the symplectic group of *Matrix Rings with an Involution*.
 
 **(d) The indefinite case.** $\Phi = \operatorname{diag}(1,\dots,1,-1,\dots,-1)$, in the degree-two model $\Phi=\begin{pmatrix}1&0\\0&-1\end{pmatrix}$: the self-adjoint matrices are the Hermitian matrices of a signature, and the unitary group is the corresponding indefinite unitary group; the signature is a Part II invariant and is only named here.
 
 ## Summary
 
-In the matrix ring with a coefficient involution $\sigma$ and an invertible Gram matrix $\Phi$, the adjoint is $X^{*} = \Phi^{-1}\sigma(X)^{\mathrm t}\Phi$, defined by the sesquilinear form $\langle x,y\rangle = \sigma(x)^{\mathrm t}\Phi y$; for $\Phi = I$ it is $\sigma(X)^{\mathrm t}$. The self-adjoint matrices satisfy $\sigma(X)^{\mathrm t}\Phi = \Phi X$, the skew-adjoint ones the same with the opposite sign, and the unitary group $U_n(R,\Phi,\sigma) = \{X : X^{*}X = XX^{*} = I\}$ is the group of matrices preserving the form; the transpose, the orthogonal, the symplectic and the unitary groups are the cases $\Phi = I$ with $\sigma = \mathrm{id}$, a symmetric $\Phi$, an antisymmetric $\Phi$, and $R = \mathbb{C}$ with the conjugation. Under the trace pairing $\beta(X,Y) = \tau(XY)$ the adjoint of the left multiplication is the right multiplication and $\tau(X^{*}) = \sigma(\tau(X))$, so the trace pairing restricts to a symmetric form on the self-adjoint part.
+In the matrix ring with a coefficient involution $\sigma$ and an invertible Gram matrix $\Phi$, the adjoint is $X^{*} = \Phi^{-1}\sigma(X)^{\mathrm t}\Phi$, defined by the sesquilinear form $\langle x,y\rangle = \sigma(x)^{\mathrm t}\Phi y$; for $\Phi = I$ it is $\sigma(X)^{\mathrm t}$. The self-adjoint matrices satisfy $\sigma(X)^{\mathrm t}\Phi = \Phi X$, the anti-self-adjoint ones the same with the opposite sign, and the unitary group $U_n(R,\Phi,\sigma) = \{X : X^{*}X = XX^{*} = I\}$ is the group of matrices preserving the form; the transpose, the orthogonal, the symplectic and the unitary groups are the cases $\Phi = I$ with $\sigma = \mathrm{id}$, a symmetric $\Phi$, an antisymmetric $\Phi$, and $R = \mathbb{C}$ with the conjugation. Under the trace pairing $\beta(X,Y) = \tau(XY)$ the adjoint of the left multiplication is the right multiplication and $\tau(X^{*}) = \sigma(\tau(X))$, so the trace pairing restricts to a symmetric form on the self-adjoint part.
 
 ## Summary of Notation
 

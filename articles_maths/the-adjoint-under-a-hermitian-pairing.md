@@ -5,7 +5,7 @@
 
 A Hermitian pairing on a vector space over a field with an involution assigns to every linear operator $T$ an **adjoint** $T^{\dagger}$, the operator characterised by the identity $h(Tx,y) = h(x,T^{\dagger}y)$; in a basis the adjoint is the conjugate transpose of the matrix placed between the matrix of the pairing and its inverse, $T^{\dagger} = H^{-1}T^{*}H$, so the adjoint is a **two-sided operator with adjoint**, built from the pairing by a two-sided operator. The article develops the adjoint in this layer of the corpus: the pairing is the datum, the adjoint is the operator it induces on the algebra of the operators, and the **self-adjoint elements**, the operators equal to their own adjoints, are the Hermitian elements of the geometry. The two involutions of the corpus are kept apart: the involution on the **elements** is the field conjugation with which the pairing is sesquilinear, and the adjoint on the **operators** is the structure of the present article, induced by the pairing; they agree only in the unitary case, and the article proves where.
 
-The article develops the Hermitian pairing and the existence and the uniqueness of the adjoint, its explicit matrix form and its properties, the self-adjoint and the skew-adjoint elements with their decomposition, the unitary elements and the group they form, the adjoint as the two-sided operator $H^{-1}(\cdot)^{*}H$ with its relation to the algebra involution, and the standard examples. The spectral theory of the self-adjoint operators is *Self-Adjoint Operators and the Spectral Theorem*, and the geometry of the unitary group is *Unitary Geometry over a Field with Involution*; the article owns the adjoint construction and its algebraic properties.
+The article develops the Hermitian pairing and the existence and the uniqueness of the adjoint, its explicit matrix form and its properties, the self-adjoint and the anti-self-adjoint elements with their decomposition, the unitary elements and the group they form, the adjoint as the two-sided operator $H^{-1}(\cdot)^{*}H$ with its relation to the algebra involution, and the standard examples. The spectral theory of the self-adjoint operators is *Self-Adjoint Operators and the Spectral Theorem*, and the geometry of the unitary group is *Unitary Geometry over a Field with Involution*; the article owns the adjoint construction and its algebraic properties.
 
 The article assumes *Unitary Geometry over a Field with Involution* for the field with an involution, the Hermitian forms and the unitary group; *Bilinear Forms* and *Quadratic Forms and Polarisation* of Part II for the pairings and their nondegeneracy; *The Operators on an Algebra* of Part III for the two-sided operators and the two-sided operator; and *Linear Maps and Matrices* and *Vector Spaces* of Part I for the linear operators and the matrices. The spectral theory of the self-adjoint operators and the analytic adjoint on a Hilbert space are Part III and later in this Part, named as forward references. No distance and no physics is invoked.
 
@@ -55,9 +55,9 @@ so the adjoint is a **conjugate-linear anti-automorphism of order two** of the a
 
 **Remark (the two involutions).** The involution on the **elements** of $V$ is the field conjugation extended to the coefficients, and the adjoint on the **operators** is the involution of the previous theorem; the two are different structures, and the adjoint is defined only after the pairing is chosen. Two pairings give two adjoints on the same algebra, the transpose with respect to a bilinear pairing and the Hermitian adjoint with respect to a Hermitian one being the standard example; when the two coincide the representation is a $*$-representation, and the agreement is proved and not assumed.
 
-### The Self-Adjoint and the Skew-Adjoint Elements
+### The Self-Adjoint and the Anti-Self-Adjoint Elements
 
-**Definition.** An operator $T$ is **self-adjoint** or **Hermitian** when $T^{\dagger} = T$, **skew-adjoint** or **anti-Hermitian** when $T^{\dagger} = -T$, and **unitary** when $T^{\dagger}T = T T^{\dagger} = \mathrm{id}$; the sets of the Hermitian and the anti-Hermitian operators are written $\operatorname{Herm}(V,h)$ and $\operatorname{Skew}(V,h)$.
+**Definition.** An operator $T$ is **self-adjoint** or **Hermitian** when $T^{\dagger} = T$, **anti-self-adjoint** or **anti-Hermitian** when $T^{\dagger} = -T$, and **unitary** when $T^{\dagger}T = T T^{\dagger} = \mathrm{id}$; the sets of the Hermitian and the anti-Hermitian operators are written $\operatorname{Herm}(V,h)$ and $\operatorname{Skew}(V,h)$.
 
 **Theorem.** When $2$ is invertible in $K$ the algebra of the operators decomposes as the direct sum
 
@@ -65,7 +65,7 @@ $$
 \boxed{\;\operatorname{End}_K(V) = \operatorname{Herm}(V,h) \oplus \operatorname{Skew}(V,h), \qquad T = \tfrac12(T + T^{\dagger}) + \tfrac12(T - T^{\dagger})\;} ,
 $$
 
-the Hermitian part and the anti-Hermitian part; the Hermitian operators form a $K_0$-vector space of the dimension $n^2$ over $K_0$ in the quadratic case, and the anti-Hermitian operators form the complement; the trace of a self-adjoint operator lies in the fixed field $K_0$, and the trace of a skew-adjoint operator lies in the trace-zero part of $K$ over $K_0$.
+the Hermitian part and the anti-Hermitian part; the Hermitian operators form a $K_0$-vector space of the dimension $n^2$ over $K_0$ in the quadratic case, and the anti-Hermitian operators form the complement; the trace of a self-adjoint operator lies in the fixed field $K_0$, and the trace of an anti-self-adjoint operator lies in the trace-zero part of $K$ over $K_0$.
 
 **Proof.** The two summands are the eigenspaces of the adjoint involution for the eigenvalues $+1$ and $-1$, and an involution of order two over a field in which $2$ is invertible decomposes the algebra as the direct sum of its fixed parts; the dimensions are the number of the independent entries of a Hermitian matrix and its complement. The statement is the elementary decomposition of an algebra with involution, in *Hilbert Algebras* and *Involutive Algebras*.
 
@@ -77,15 +77,15 @@ the Hermitian part and the anti-Hermitian part; the Hermitian operators form a $
 
 **Definition.** The **unitary elements** of $\operatorname{End}_K(V)$ are the operators with $T^{\dagger}T = \mathrm{id}$; they form the **unitary group** $\mathrm{U}(V,h)$ of the pairing, and they are exactly the isometries of the form, $h(Tx,Ty) = h(x,y)$ for all $x,y$.
 
-**Theorem.** The unitary elements form a group under the composition, equal to the group of the isometries of $h$; the determinant of a unitary element has norm one, $N(\det T) = 1$ in the nontrivial case, and the special unitary group is the subgroup of determinant one. The self-adjoint and the skew-adjoint elements are the tangent spaces of the unitary group at the identity,
+**Theorem.** The unitary elements form a group under the composition, equal to the group of the isometries of $h$; the determinant of a unitary element has norm one, $N(\det T) = 1$ in the nontrivial case, and the special unitary group is the subgroup of determinant one. The self-adjoint and the anti-self-adjoint elements are the tangent spaces of the unitary group at the identity,
 
 $$
 \boxed{\;\mathfrak{u}(V,h) = \operatorname{Skew}(V,h)\;} ,
 $$
 
-the Lie algebra of the unitary group, and the exponential of a skew-adjoint operator is unitary.
+the Lie algebra of the unitary group, and the exponential of an anti-self-adjoint operator is unitary.
 
-**Proof.** The isometry condition is $h(Tx,Ty) = h(x,y)$ for all $x,y$, which is $T^{\dagger}T = \mathrm{id}$ after the identity $h(Tx,Ty) = h(x,T^\dagger T y)$; the norm-one determinant is the computation of the previous articles; the Lie algebra is the derivative of the condition $T^\dagger T = \mathrm{id}$ at the identity, which gives $X^\dagger + X = 0$, that is, the skew-adjoint operators. The statement is in *Unitary Geometry over a Field with Involution* and *Lie Algebras*.
+**Proof.** The isometry condition is $h(Tx,Ty) = h(x,y)$ for all $x,y$, which is $T^{\dagger}T = \mathrm{id}$ after the identity $h(Tx,Ty) = h(x,T^\dagger T y)$; the norm-one determinant is the computation of the previous articles; the Lie algebra is the derivative of the condition $T^\dagger T = \mathrm{id}$ at the identity, which gives $X^\dagger + X = 0$, that is, the anti-self-adjoint operators. The statement is in *Unitary Geometry over a Field with Involution* and *Lie Algebras*.
 
 **Remark (the unitary group as the fixed group).** The unitary group is the group of the fixed elements of the antiautomorphism $T \mapsto (T^{\dagger})^{-1}$ of the general linear group, and it is the group of the isometries of the pairing; the adjoint involution and the unitary group are the operator-layer structures of the Hermitian geometry, while the self-adjoint elements are the elements of the Lie algebra of the group and the fixed elements of the involution.
 
@@ -99,7 +99,7 @@ $$
 
 the two-sided operator of the conjugate transpose between the matrix $H$ of the pairing and its inverse.
 
-**Theorem.** The adjoint map is the composite of the conjugate transpose and the two-sided operator by $H$; it is a two-sided operator with the two parameters $H^{-1}$ and $H$, its fixed elements are the self-adjoint operators, its fixed elements up to the sign are the skew-adjoint ones, and the composite $\mathrm{ad}_h^2 = \mathrm{id}$; the adjoint map is the operator-layer involution that the corpus pairs with the element-layer involution of the field, and it is the archetype of the group `- * Operator Theory`.
+**Theorem.** The adjoint map is the composite of the conjugate transpose and the two-sided operator by $H$; it is a two-sided operator with the two parameters $H^{-1}$ and $H$, its fixed elements are the self-adjoint operators, its fixed elements up to the sign are the anti-self-adjoint ones, and the composite $\mathrm{ad}_h^2 = \mathrm{id}$; the adjoint map is the operator-layer involution that the corpus pairs with the element-layer involution of the field, and it is the archetype of the group `- * Operator Theory`.
 
 **Proof.** The map is the composition of the conjugate transpose, an anti-automorphism, with the conjugation by $H$, an inner automorphism; the fixed points are $T^\dagger = T$ by definition, and the square is the identity because the conjugate transpose and the inner automorphism each square to the identity and they commute up to the automorphism. The statement is the definition of the adjoint involution, in *The Operators on an Algebra* and *Hilbert Algebras*.
 
@@ -107,15 +107,15 @@ the two-sided operator of the conjugate transpose between the matrix $H$ of the 
 
 ## Examples
 
-**Example (the matrix algebra and the standard pairing).** Let $V = K^n$ and $h$ the standard pairing, $H = I$; the adjoint is the conjugate transpose $T^{\dagger} = T^{*}$, the self-adjoint operators are the Hermitian matrices, the skew-adjoint are the anti-Hermitian matrices, and the unitary group is the classical unitary group $\mathrm{U}(n)$ over $\mathbb{C}$ or the orthogonal group $O(n)$ over $\mathbb{R}$ with the trivial involution.
+**Example (the matrix algebra and the standard pairing).** Let $V = K^n$ and $h$ the standard pairing, $H = I$; the adjoint is the conjugate transpose $T^{\dagger} = T^{*}$, the self-adjoint operators are the Hermitian matrices, the anti-self-adjoint are the anti-Hermitian matrices, and the unitary group is the classical unitary group $\mathrm{U}(n)$ over $\mathbb{C}$ or the orthogonal group $O(n)$ over $\mathbb{R}$ with the trivial involution.
 
-**Example (the hyperbolic pairing).** Let $\dim V = 2$ and let $h$ have the matrix of the hyperbolic plane; then the adjoint of $T = \begin{pmatrix} a & b \\ c & d\end{pmatrix}$ is $T^{\dagger} = H^{-1}T^{*}H$ with the sign on the off-diagonal entries reversed, and the skew-adjoint operators of the hyperbolic plane form a real Lie algebra isomorphic to $\mathfrak{su}(1,1)$, which is isomorphic to $\mathfrak{sl}_2(\mathbb{R})$. The hyperbolic pairing is the local model of the unitary group of signature $(1,1)$.
+**Example (the hyperbolic pairing).** Let $\dim V = 2$ and let $h$ have the matrix of the hyperbolic plane; then the adjoint of $T = \begin{pmatrix} a & b \\ c & d\end{pmatrix}$ is $T^{\dagger} = H^{-1}T^{*}H$ with the sign on the off-diagonal entries reversed, and the anti-self-adjoint operators of the hyperbolic plane form a real Lie algebra isomorphic to $\mathfrak{su}(1,1)$, which is isomorphic to $\mathfrak{sl}_2(\mathbb{R})$. The hyperbolic pairing is the local model of the unitary group of signature $(1,1)$.
 
 **Example (the finite field).** Let $K = \mathbb{F}_{q^2}$ with the Frobenius involution and the standard Hermitian pairing on $K^n$; the adjoint is the conjugate transpose, the self-adjoint operators are the Hermitian matrices over the finite field, and the unitary group is the finite group $GU(n,q)$ of *Unitary Geometry over a Field with Involution*. The example shows that the adjoint construction is algebraic and needs no order and no topology.
 
 ## Summary
 
-A nondegenerate Hermitian pairing $h$ induces on the algebra of the operators the **adjoint** $T^{\dagger}$, the unique operator with $h(Tx,y) = h(x,T^{\dagger}y)$; in a basis it is the two-sided operator $T^{\dagger} = H^{-1}T^{*}H$ of the conjugate transpose between the matrix of the pairing and its inverse. The adjoint is a conjugate-linear anti-automorphism of order two, $(ST)^\dagger = T^\dagger S^\dagger$, $(\lambda T)^\dagger = \bar\lambda T^\dagger$, $(T^\dagger)^\dagger = T$; when $2$ is invertible the algebra decomposes into the self-adjoint and the skew-adjoint operators, the eigenspaces of the involution, and the self-adjoint operators have their trace in the fixed field. The unitary elements, those with $T^\dagger T = \mathrm{id}$, are exactly the isometries of the pairing and form the unitary group, whose Lie algebra is the space of the skew-adjoint operators; the self-adjoint operators are the fixed elements of the adjoint map and the elements of the tangent space under the identification by the pairing. The adjoint map is the two-sided operator $H^{-1}(\cdot)^{*}H$ with the parameters $H^{-1}$ and $H$, the archetype of the operator-layer involution, and it agrees with the element-layer involution exactly when the pairing is standard.
+A nondegenerate Hermitian pairing $h$ induces on the algebra of the operators the **adjoint** $T^{\dagger}$, the unique operator with $h(Tx,y) = h(x,T^{\dagger}y)$; in a basis it is the two-sided operator $T^{\dagger} = H^{-1}T^{*}H$ of the conjugate transpose between the matrix of the pairing and its inverse. The adjoint is a conjugate-linear anti-automorphism of order two, $(ST)^\dagger = T^\dagger S^\dagger$, $(\lambda T)^\dagger = \bar\lambda T^\dagger$, $(T^\dagger)^\dagger = T$; when $2$ is invertible the algebra decomposes into the self-adjoint and the anti-self-adjoint operators, the eigenspaces of the involution, and the self-adjoint operators have their trace in the fixed field. The unitary elements, those with $T^\dagger T = \mathrm{id}$, are exactly the isometries of the pairing and form the unitary group, whose Lie algebra is the space of the anti-self-adjoint operators; the self-adjoint operators are the fixed elements of the adjoint map and the elements of the tangent space under the identification by the pairing. The adjoint map is the two-sided operator $H^{-1}(\cdot)^{*}H$ with the parameters $H^{-1}$ and $H$, the archetype of the operator-layer involution, and it agrees with the element-layer involution exactly when the pairing is standard.
 
 ## Summary of Notation
 
@@ -127,8 +127,8 @@ A nondegenerate Hermitian pairing $h$ induces on the algebra of the operators th
 | $T^{\dagger}$ | Adjoint, $h(Tx,y) = h(x,T^{\dagger}y)$ |
 | $T^{\dagger} = H^{-1}T^{*}H$ | Matrix form of the adjoint |
 | $T^{*} = \overline{T}^{\mathsf T}$ | Conjugate transpose |
-| $\operatorname{Herm}(V,h)$, $\operatorname{Skew}(V,h)$ | Self-adjoint and skew-adjoint operators |
-| $T^{\dagger} = T$, $T^{\dagger} = -T$ | Self-adjoint and skew-adjoint conditions |
+| $\operatorname{Herm}(V,h)$, $\operatorname{Skew}(V,h)$ | Self-adjoint and anti-self-adjoint operators |
+| $T^{\dagger} = T$, $T^{\dagger} = -T$ | Self-adjoint and anti-self-adjoint conditions |
 | $\mathrm{U}(V,h) = \{T : T^{\dagger}T = \mathrm{id}\}$ | Unitary group, the isometries |
 | $\mathfrak{u}(V,h) = \operatorname{Skew}(V,h)$ | Lie algebra of the unitary group |
 | $\mathrm{ad}_h(T) = H^{-1}T^{*}H$ | Adjoint map, the two-sided involution |

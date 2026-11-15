@@ -32,7 +32,7 @@ It follows the biquaternion article *The Endomorphisms of the Biquaternion Algeb
 
 **Corollary.** The Lie algebra splits as $\mathfrak{gl}_2(\mathbb{C})=\mathfrak{u}(2)\oplus\operatorname{Herm}_2$, with the anti-Hermitian part of real dimension four and the Hermitian part of real dimension four.
 
-**Proof.** The two eigenspaces have real dimension four each, because a anti-Hermitian matrix has four independent real entries and a Hermitian one has four as well.
+**Proof.** The two eigenspaces have real dimension four each, because an anti-Hermitian matrix has four independent real entries and a Hermitian one has four as well.
 
 **Corollary.** The summand $\mathfrak{p}=\operatorname{Herm}_2$ is not a Lie subalgebra, while $\mathfrak{u}(2)$ is one.
 

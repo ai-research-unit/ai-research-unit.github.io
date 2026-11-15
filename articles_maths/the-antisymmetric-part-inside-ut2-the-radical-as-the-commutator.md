@@ -88,7 +88,7 @@ $$
 
 ## Why the Antisymmetric Part Cannot Live Inside
 
-**Proposition.** The map $U\mapsto\operatorname{skew}U$ sends $UT_2$ onto the line $\mathbb{R}J$, and the image meets $UT_2$ only at zero.
+**Proposition.** The map $U\mapsto\operatorname{antisym}U$ sends $UT_2$ onto the line $\mathbb{R}J$, and the image meets $UT_2$ only at zero.
 
 **Proof.** The antisymmetric part is $\tfrac b2J$, which runs over the whole line as $b$ runs over the reals, and $J$ is not upper triangular.
 
@@ -96,7 +96,7 @@ $$
 
 **Proof.** The map $\operatorname{sym}$ is the identity on $UT_2\cap\operatorname{Sym}_2$ and has kernel $UT_2\cap\Lambda^{2}=0$, so it is injective, and both spaces have dimension $3$.
 
-**Corollary.** The commutator measures the antisymmetric part of the product, and it is blind to the symmetric part: $\operatorname{skew}(UV)$ depends only on the diagonal differences and the off-diagonal entries.
+**Corollary.** The commutator measures the antisymmetric part of the product, and it is blind to the symmetric part: $\operatorname{antisymmetric}(UV)$ depends only on the diagonal differences and the off-diagonal entries.
 
 **Proof.** The commutator formula is linear in the off-diagonal entries and in the differences of the diagonal entries, and it vanishes when the two diagonal entries agree.
 
@@ -114,7 +114,7 @@ The commutator is $[U,V]=\bigl(b'(a-d)-b(a'-d')\bigr)E_{12}$, so the derived alg
 | $n_+$ | the strictly upper triangular line $\mathbb{R}E_{12}$ |
 | $h$ | the diagonal algebra |
 | $J$ | the antisymmetric unit |
-| $\operatorname{skew}U$ | $\tfrac12(U-U^{\mathsf T})$, equal to $\tfrac b2J$ on $UT_2$ |
+| $\operatorname{antisymmetric}U$ | $\tfrac12(U-U^{\mathsf T})$, equal to $\tfrac b2J$ on $UT_2$ |
 | $[U,V]$ | the commutator, always in $n_+$ |
 
 ## Further Reading

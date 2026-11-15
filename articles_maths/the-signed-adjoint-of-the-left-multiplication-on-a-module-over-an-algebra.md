@@ -61,7 +61,7 @@ The one-sided case is therefore not an analogy but a factorisation: the two-side
 
 ## Self-Adjointness and Unitarity
 
-### Self-adjoint and skew-adjoint signed left multiplications
+### Self-adjoint and anti-self-adjoint signed left multiplications
 
 **Proposition.** The kernel of the parameter map $a \mapsto L^{\alpha}_a$ is the annihilator $\operatorname{Ann}_A(M)=\{a : aM=0\}$. Consequently
 
@@ -129,7 +129,7 @@ $$
 
 ## Summary
 
-For a graded module with an $\alpha$-invariant balanced $\sigma$-sesquilinear pairing, the adjoint of the signed left multiplication is the signed left multiplication by the composite $\beta=\alpha\sigma$, $\bigl(L^{\alpha}_a\bigr)^{*}=L^{\alpha}_{\beta(a)}$; this is the one-sided case of the signed adjoint two-sided operator, obtained directly from $\alpha^{*}=\alpha$, $(L_a)^{*}=L_{\sigma(a)}$ and the identity $\alpha L_b=L^{\alpha}_{\alpha(b)}$. The adjoint preserves the grading parity. Because the signed left multiplication is the signed two-sided operator with right parameter $1$, the two-sided operator adjoint factors through the one-sided adjoints. Self-adjointness holds exactly when $\beta(a)-a$ annihilates the module, skew-adjointness when $\beta(a)+a$ does, and unitarity exactly when the parameter is unitary in $A$; for a faithful module the criteria are the equalities $\beta(a)=a$, $\beta(a)=-a$ and $\sigma(a)a=a\sigma(a)=1$. The kernel and the image of the adjoint are described by the paired complements: $\ker(L^{\alpha}_a)^{*}=\ker L_{\sigma(a)}$ and $\operatorname{im}(L^{\alpha}_a)^{*}=\beta(a)M$, in agreement with the general theory.
+For a graded module with an $\alpha$-invariant balanced $\sigma$-sesquilinear pairing, the adjoint of the signed left multiplication is the signed left multiplication by the composite $\beta=\alpha\sigma$, $\bigl(L^{\alpha}_a\bigr)^{*}=L^{\alpha}_{\beta(a)}$; this is the one-sided case of the signed adjoint two-sided operator, obtained directly from $\alpha^{*}=\alpha$, $(L_a)^{*}=L_{\sigma(a)}$ and the identity $\alpha L_b=L^{\alpha}_{\alpha(b)}$. The adjoint preserves the grading parity. Because the signed left multiplication is the signed two-sided operator with right parameter $1$, the two-sided operator adjoint factors through the one-sided adjoints. Self-adjointness holds exactly when $\beta(a)-a$ annihilates the module, anti-self-adjointness when $\beta(a)+a$ does, and unitarity exactly when the parameter is unitary in $A$; for a faithful module the criteria are the equalities $\beta(a)=a$, $\beta(a)=-a$ and $\sigma(a)a=a\sigma(a)=1$. The kernel and the image of the adjoint are described by the paired complements: $\ker(L^{\alpha}_a)^{*}=\ker L_{\sigma(a)}$ and $\operatorname{im}(L^{\alpha}_a)^{*}=\beta(a)M$, in agreement with the general theory.
 
 ## Summary of Notation
 

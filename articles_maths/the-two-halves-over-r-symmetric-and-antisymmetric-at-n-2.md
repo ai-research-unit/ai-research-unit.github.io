@@ -16,7 +16,7 @@ $$
 M_2(\mathbb{R})=\operatorname{Sym}_2(\mathbb{R})\oplus\Lambda^{2}\mathbb{R}^{2},\qquad \dim=3+1=4.
 $$
 
-**Proof.** $A=H+K$ with $H=\tfrac12(A+A^{\mathsf T})$ and $K=\tfrac12(A-A^{\mathsf T})$; the two pieces are fixed and negated by the transpose. If $H+K=0$ with $H$ symmetric and $K$ skew, then transposing gives $H-K=0$, so both vanish.
+**Proof.** $A=H+K$ with $H=\tfrac12(A+A^{\mathsf T})$ and $K=\tfrac12(A-A^{\mathsf T})$; the two pieces are fixed and negated by the transpose. If $H+K=0$ with $H$ symmetric and $K$ antisymmetric, then transposing gives $H-K=0$, so both vanish.
 
 **The two halves are the eigenspaces of the transpose.** The map $\tau(A)=A^{\mathsf T}$ has $+1$ on $\operatorname{Sym}_2$ and $-1$ on $\Lambda^{2}\mathbb{R}^{2}$, so the split is the eigenspace decomposition and the projections are the two halves of the formula above.
 
@@ -130,7 +130,7 @@ on the traceless plane $\mathfrak{p}$.
 
 **Proposition.** On the whole space $M_2(\mathbb{R})$ the same pairing has signature $(3,1)$: it is positive on the symmetric half and negative on the antisymmetric line.
 
-**Proof.** $\operatorname{tr}(K^{2})=-2k^{2}$ on $K=kJ$, and the two halves are orthogonal because $\operatorname{tr}(HK)=0$ for $H$ symmetric and $K$ skew. The signature is $(3,1)$, the Minkowski signature.
+**Proof.** $\operatorname{tr}(K^{2})=-2k^{2}$ on $K=kJ$, and the two halves are orthogonal because $\operatorname{tr}(HK)=0$ for $H$ symmetric and $K$ antisymmetric. The signature is $(3,1)$, the Minkowski signature.
 
 **Corollary.** The antisymmetric line is the unique negative direction of the trace form, and it is a timelike line.
 
@@ -175,7 +175,7 @@ Two symmetric matrices bracket to a multiple of $J$, and the multiple is $2(s_{1
 
 ## Further Reading
 
-- Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge University Press, 2013), for the symmetric-skew split and the definiteness of the trace pairing.
+- Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge University Press, 2013), for the symmetric-anti-self-adjoint split and the definiteness of the trace pairing.
 - Sigurdur Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces* (AMS, 2001), for the pair $\mathfrak{k},\mathfrak{p}$ and the symmetric-space correspondence.
 - [The Involutions of $M_2(\mathbb{C})$ over $\mathbb{R}$ and over $\mathbb{C}$](the-involutions-of-m2c-over-r-and-over-c.html), for the transpose whose eigenspaces these halves are.
 - [The Two Base Fields: $M_2(\mathbb{R})$ inside $M_2(\mathbb{C})$](the-two-base-fields-m2r-inside-m2c.html), for the real algebra and its complex structure.

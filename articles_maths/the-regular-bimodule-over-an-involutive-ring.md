@@ -4,7 +4,7 @@
 
 An involution of a ring $A$ is an anti-automorphism of order two, and it is the same datum as an isomorphism $A \cong A_{\mathrm{opp}}$. Carried to the regular bimodule it produces three structures: the twist that turns the left regular module into the right one, a symmetry of the regular bimodule with its swap through the involution, and a Hermitian form on the module with values in $A$ itself, whose isometries are the unitary elements. The left and the right regular modules, indistinguishable in general, become interchangeable, and the module over itself becomes a module with a form.
 
-The article specialises *Modules over an Involutive Ring* to the case $M = A$: that article defines the twist $M^{\sigma}$, the dual module and the induced map on the endomorphisms for an arbitrary module, and this one reads the same three constructions on the regular object, where they acquire their ring-theoretic form. It assumes *Involutive Rings* for the definition, the fixed and the skew elements, and the opposite ring, and *The Regular Module and the Regular Bimodule* and *The Regular Representation as an Algebra of Operators* for the regular object and its operators. The forms with positivity, the Hilbert structures and the sesquilinear pairings on a general module are *Hilbert Algebras*, in Part II; here everything is algebraic and the form takes its values in $A$. The involutions of the biquaternions and their lattice are *The Group of Involutions* and *Subspaces and Decompositions*, in Part VI.
+The article specialises *Modules over an Involutive Ring* to the case $M = A$: that article defines the twist $M^{\sigma}$, the dual module and the induced map on the endomorphisms for an arbitrary module, and this one reads the same three constructions on the regular object, where they acquire their ring-theoretic form. It assumes *Involutive Rings* for the definition, the fixed and the anti-Hermitian elements, and the opposite ring, and *The Regular Module and the Regular Bimodule* and *The Regular Representation as an Algebra of Operators* for the regular object and its operators. The forms with positivity, the Hilbert structures and the sesquilinear pairings on a general module are *Hilbert Algebras*, in Part II; here everything is algebraic and the form takes its values in $A$. The involutions of the biquaternions and their lattice are *The Group of Involutions* and *Subspaces and Decompositions*, in Part VI.
 
 Throughout, $A$ is a ring with $1 \neq 0$ and an involution $\sigma$, and $\sigma$ is written on the right of the argument or as the mark ${}^{*} = \sigma$ where no confusion arises. The fixed set is $A^{\sigma}$, the antisymmetric part is $A^{-} = \{x : \sigma(x) = -x\}$, and the left and right multiplications are $L_a(x) = ax$ and $R_a(x) = xa$. No trace, no positivity and no topology is used.
 
@@ -104,11 +104,11 @@ whenever $2$ is invertible in $A$; for $A = M_n(F)$ over a field of characterist
 
 ### The matrix algebra with the conjugate transpose
 
-Let $F$ be a field with an involution, for instance $F = \mathbb{C}$ with complex conjugation, let $A = M_n(F)$, and let $\sigma(X) = \overline{X}^{\mathsf{T}} = X^{*}$ be the conjugate transpose. Then the symmetric elements are the Hermitian matrices and the skew elements the anti-Hermitian ones, the unitary elements are the matrices with $UU^{*} = 1$, and the canonical form is $h(X,Y) = XY^{*}$. Its $A$-linear isometries are the right multiplications by the unitary matrices, which is the natural right action of $\mathrm{U}(n)$ on the space of matrices; the left multiplications by unitary matrices are isometries only for the scalars, since those are the central unitary elements. The form $h$ is the algebraic Hilbert–Schmidt form of the matrix algebra, and its positivity is Part II.
+Let $F$ be a field with an involution, for instance $F = \mathbb{C}$ with complex conjugation, let $A = M_n(F)$, and let $\sigma(X) = \overline{X}^{\mathsf{T}} = X^{*}$ be the conjugate transpose. Then the symmetric elements are the Hermitian matrices and the anti-Hermitian elements the anti-Hermitian ones, the unitary elements are the matrices with $UU^{*} = 1$, and the canonical form is $h(X,Y) = XY^{*}$. Its $A$-linear isometries are the right multiplications by the unitary matrices, which is the natural right action of $\mathrm{U}(n)$ on the space of matrices; the left multiplications by unitary matrices are isometries only for the scalars, since those are the central unitary elements. The form $h$ is the algebraic Hilbert–Schmidt form of the matrix algebra, and its positivity is Part II.
 
 ### The group algebra
 
-Let $A = F[G]$ for a group $G$, with the involution $\sigma(g) = g^{-1}$ extended $F$-linearly, as in *Involutions of a Group Ring*. The symmetric elements are the group-ring elements fixed by the antipode, the skew elements those negated by it, the unitary elements are the $x$ with $x^{*}x = 1$, and these include the elements of $G$; the canonical form is $h(x,y) = x\sigma(y)$, and the right multiplications by the group elements are isometries. For $G$ finite and $F$ a field in which $|G|$ is invertible the form is the algebraic descendant of the standard orthogonality of the character table, whose positivity is Part II.
+Let $A = F[G]$ for a group $G$, with the involution $\sigma(g) = g^{-1}$ extended $F$-linearly, as in *Involutions of a Group Ring*. The symmetric elements are the group-ring elements fixed by the antipode, the anti-Hermitian elements those negated by it, the unitary elements are the $x$ with $x^{*}x = 1$, and these include the elements of $G$; the canonical form is $h(x,y) = x\sigma(y)$, and the right multiplications by the group elements are isometries. For $G$ finite and $F$ a field in which $|G|$ is invertible the form is the algebraic descendant of the standard orthogonality of the character table, whose positivity is Part II.
 
 ### The commutative case
 
@@ -126,7 +126,7 @@ For a ring $A$ with an involution $\sigma$ the regular object acquires three str
 
 | Symbol | Meaning |
 |---|---|
-| $\sigma$, $A^{\sigma}$, $A^{-}$ | the involution, the symmetric and the skew elements |
+| $\sigma$, $A^{\sigma}$, $A^{-}$ | the involution, the symmetric and the anti-Hermitian elements |
 | $M^{\sigma}$, $x \cdot a = \sigma(a)x$ | the twist of a left module |
 | $\sigma : ({}_AA)^{\sigma} \to A_A$ | the twist of the regular left module is the right one |
 | ${}_{\mathrm{sw}}{}_AA_A^{\sigma}$, $a \cdot y = y\sigma(a)$, $y \cdot b = \sigma(b)y$ | the $\sigma$-swap of the regular bimodule |
@@ -144,7 +144,7 @@ For a ring $A$ with an involution $\sigma$ the regular object acquires three str
 ## Further Reading
 
 - Nicolas Bourbaki, *Algebra I: Chapters 1–3* (Springer, 1998), for involutions, sesquilinear and Hermitian forms, and the unitary group.
-- I. N. Herstein, *Rings with Involution* (University of Chicago Press, 1976), for the symmetric and skew elements and the structure of involutive rings.
+- I. N. Herstein, *Rings with Involution* (University of Chicago Press, 1976), for the symmetric and anti-Hermitian elements and the structure of involutive rings.
 - Nathan Jacobson, *Structure of Rings* (American Mathematical Society, 1956), for the regular module of a ring with involution and the bilinear forms on it.
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions* (American Mathematical Society, 1998), for involutions, the forms they define and the unitary groups.
 - Tsit-Yuen Lam, *Lectures on Modules and Rings* (Springer, 1999), for the regular module, its endomorphism ring and the sesquilinear forms over an involutive ring.

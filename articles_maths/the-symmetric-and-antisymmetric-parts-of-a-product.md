@@ -31,7 +31,7 @@ $$
 \pi_{-}(AB)=\pi_{-}(SS')+\pi_{-}(KK')+\pi_{-}(SK'+KS'),
 $$
 
-because $SS'$ and $KK'$ contribute skew parts and $SK'+KS'$ contributes both. The computation of the four pieces is the content of the next section.
+because $SS'$ and $KK'$ contribute anti-Hermitian parts and $SK'+KS'$ contributes both. The computation of the four pieces is the content of the next section.
 
 ## The Four Contributions
 

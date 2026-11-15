@@ -306,7 +306,7 @@ so the transpose corresponds to the linear involution that negates the coefficie
 | split-complex plane | $q_x=q_z=0$ | $X$ symmetric with equal diagonal entries | $2$ |
 | split-complex plane | $q_x=q_y=0$ | $X$ diagonal | $2$ |
 | symmetric part | $q_x=0$ | $X=X^{\mathsf T}$ | $3$ |
-| skew part | $q_t=q_y=q_z=0$ | $X=-X^{\mathsf T}$ | $1$ |
+| antisymmetric part | $q_t=q_y=q_z=0$ | $X=-X^{\mathsf T}$ | $1$ |
 | centre | $q_x=q_y=q_z=0$ | $X=\lambda I$ | $1$ |
 
 **The two isotropic planes.** The complex plane $\operatorname{span}\{e_t,\vec e_x\}$ is a copy of $\mathbb{C}$ inside the algebra, spanned by $I$ and $J$, and it is the only two-dimensional subalgebra on which the norm is definite. The planes $\operatorname{span}\{e_t,\vec e_y\}$ and $\operatorname{span}\{e_t,\vec e_z\}$ are copies of the split-complex numbers, on which the norm is indefinite and the idempotents live. The model shows the difference at a glance: $J$ is a rotation, $K$ and $D$ are reflections.

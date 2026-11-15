@@ -23,7 +23,7 @@ $$
 
 so that $\rho_a^{*}\rho_a = \rho_a\rho_a^{*} = \mathrm{id}$: every reflection preserves the form $H$.
 
-*Proof.* The adjoint of the composite is the composite of the adjoints in the reverse order, $\rho_a^{*} = \alpha^{*}\bigl(\exp(\operatorname{ad}_a)\bigr)^{*}$; the isometry $\alpha$ has $\alpha^{*} = \alpha$, and the exponential of the skew-adjoint $\operatorname{ad}_a$ has adjoint the exponential of $-\operatorname{ad}_a$, $\bigl(\exp(\operatorname{ad}_a)\bigr)^{*} = \exp(-\operatorname{ad}_a)$; hence $\rho_a^{*} = \alpha \exp(-\operatorname{ad}_a)$, which is the inverse of $\exp(\operatorname{ad}_a)\alpha$ computed in *Reflections as Signed Two-Sided Operators on a Lie Algebra*.
+*Proof.* The adjoint of the composite is the composite of the adjoints in the reverse order, $\rho_a^{*} = \alpha^{*}\bigl(\exp(\operatorname{ad}_a)\bigr)^{*}$; the isometry $\alpha$ has $\alpha^{*} = \alpha$, and the exponential of the anti-self-adjoint $\operatorname{ad}_a$ has adjoint the exponential of $-\operatorname{ad}_a$, $\bigl(\exp(\operatorname{ad}_a)\bigr)^{*} = \exp(-\operatorname{ad}_a)$; hence $\rho_a^{*} = \alpha \exp(-\operatorname{ad}_a)$, which is the inverse of $\exp(\operatorname{ad}_a)\alpha$ computed in *Reflections as Signed Two-Sided Operators on a Lie Algebra*.
 
 **Corollary.** The reflection is a unitary operator of the form and its adjoint is another reflection, the signed conjugation by $-\alpha(a)$,
 

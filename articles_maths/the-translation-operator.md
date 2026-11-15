@@ -104,12 +104,12 @@ $$
 \boxed{\;\tau_{te_j}=\exp(tA_j),\qquad
 A_jf=\lim_{t\to0}\frac{\tau_{te_j}f-f}{t}=-\partial/\partial x_j\,f\;} ,
 $$
-the limit being in $L^2$. The operator $A_j$ is closed, densely defined, and skew-adjoint,
+the limit being in $L^2$. The operator $A_j$ is closed, densely defined, and anti-self-adjoint,
 $A_j^\dagger=-A_j$; under the Fourier operator it becomes multiplication by the purely imaginary function
 $2\pi i\zeta_j$.
 
 **Proof.** On the Schwartz class the difference quotient converges to $-\partial/\partial x_j\,f$ in $L^2$ by Taylor's
-formula and the integrability of the second derivative. The operator $-\partial/\partial x_j$ is skew-adjoint because
+formula and the integrability of the second derivative. The operator $-\partial/\partial x_j$ is anti-self-adjoint because
 integration by parts gives $\langle-\partial/\partial x_j\,f,g\rangle=\langle f,\partial/\partial x_j\,g\rangle=\langle f,-(-\partial/\partial x_j)g\rangle$
 on $\mathcal S$, and $\mathcal S$ is a core. The identification with the Fourier side is
 $\mathcal F(-\partial/\partial x_j)\mathcal F^{-1}=M_{-2\pi i\zeta_j}$, the differentiation identity of the Fourier
@@ -209,7 +209,7 @@ $\tau_g\tau_h=\tau_{gh}$, $\tau_e=\mathrm{id}$. On $L^{n}$ of a group with invar
 isometry, and on $L^2$ a unitary; on $L^{n}(\mathbb R^n)$, $1\leq p<\infty$, it is strongly continuous in the
 group variable but not continuous in the operator norm, $\lVert\tau_y-\mathrm{id}\rVert=\sqrt2$ for
 $y\neq0$. Its
-infinitesimal generator on the one-parameter subgroup $t\mapsto\tau_{te_j}$ is the skew-adjoint operator
+infinitesimal generator on the one-parameter subgroup $t\mapsto\tau_{te_j}$ is the anti-self-adjoint operator
 $-\partial/\partial x_j$, which the Fourier operator turns into multiplication by $2\pi i\zeta_j$; the characters are
 eigenfunctions of every translation, $\tau_ge_\zeta=\overline{e_\zeta(g)}e_\zeta$, and they diagonalise the
 representation, discretely on a finite group and in the spectral sense on $\mathbb R^n$ and $\mathbb Z$. The
@@ -226,7 +226,7 @@ instance belongs to the group-theoretic category of this Part.
 | $\tau_y^\dagger=\tau_{-y}$ | Adjoint of a translation, a unitary on $L^2$ |
 | $e_\zeta$, $e_m$ | Characters $\exp(2\pi ix\cdot\zeta)$, $\exp(2\pi imx)$ |
 | $S$ | Shift on $\ell^2(\mathbb Z)$, $S=\tau_1$ |
-| $A_j=-\partial/\partial x_j$ | Infinitesimal generator of $t\mapsto\tau_{te_j}$, skew-adjoint |
+| $A_j=-\partial/\partial x_j$ | Infinitesimal generator of $t\mapsto\tau_{te_j}$, anti-self-adjoint |
 | $\Delta_h=\tau_{-h}-\mathrm{id}$ | Forward difference, the discrete generator |
 | $T_k$, $T_m$ | Convolution and multiplier operators, the commutant of the translations |
 

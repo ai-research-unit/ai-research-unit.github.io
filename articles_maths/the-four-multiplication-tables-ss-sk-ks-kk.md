@@ -141,7 +141,7 @@ Then $\star$ is commutative on pairs of the same half and $\wedge$ is the bracke
 
 ## The Case $n=2$
 
-**At $n=2$ the four tables have one-dimensional entries of the second kind.** With $\operatorname{Sym}_2$ three-dimensional and $\operatorname{Skew}_2$ one-dimensional, the $SS$ entry is a three-dimensional symmetric output plus a one-dimensional skew output, and the $KK$ entry is the reverse:
+**At $n=2$ the four tables have one-dimensional entries of the second kind.** With $\operatorname{Sym}_2$ three-dimensional and $\operatorname{Skew}_2$ one-dimensional, the $SS$ entry is a three-dimensional symmetric output plus a one-dimensional antisymmetric output, and the $KK$ entry is the reverse:
 
 $$
 K\circ K'=-\theta\theta'\,\mathrm{I},\qquad [K,K']=0 ,

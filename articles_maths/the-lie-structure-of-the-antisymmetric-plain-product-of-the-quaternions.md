@@ -86,12 +86,12 @@ the cyclic rule with the structure constants $\varepsilon_{abc}$, and $\vec e_a\
 $$
 \vec w\longmapsto \mathrm{ad}_{\vec w}=\bigl[\vec w,\cdot\bigr]\colon\mathbb{H}\to\mathrm{End}(\mathbb{H})
 $$
-sends $V$ isomorphically onto the algebra of the skew maps of $V$, and
+sends $V$ isomorphically onto the algebra of the anti-self-adjoint maps of $V$, and
 $$
 \mathrm{ad}_{\vec w}\mathrm{ad}_{\vec v}-\mathrm{ad}_{\vec v}\mathrm{ad}_{\vec w}=\mathrm{ad}_{\vec w\times\vec v}.
 $$
 
-*Proof.* $\mathrm{ad}_{\vec w}$ kills $e_t$ and acts on $V$ by $\vec u\mapsto\vec w\times\vec u$, which is skew, since $\langle\vec w\times\vec u,\vec u\rangle=0$, and has matrix
+*Proof.* $\mathrm{ad}_{\vec w}$ kills $e_t$ and acts on $V$ by $\vec u\mapsto\vec w\times\vec u$, which is anti-Hermitian, since $\langle\vec w\times\vec u,\vec u\rangle=0$, and has matrix
 $$
 [\vec w]_{\times}=\begin{pmatrix}0&-w_3&w_2\\ w_3&0&-w_1\\ -w_2&w_1&0\end{pmatrix}.
 $$
@@ -192,7 +192,7 @@ The exponential of $t\vec u$ is the versor $\cos t+\vec u\sin t$, the adjoint ac
 | $\tilde q_1\wedge\tilde q_2$ | the antisymmetric plain product |
 | $\mathrm{ad}_{\tilde q}$ | the bracket with $\tilde q$ |
 | $\kappa$ | the Killing form |
-| $[\vec w]_{\times}$ | the skew matrix of the cross product |
+| $[\vec w]_{\times}$ | the antisymmetric matrix of the cross product |
 | $S^3$ | the group of the versors |
 
 ## Further Reading

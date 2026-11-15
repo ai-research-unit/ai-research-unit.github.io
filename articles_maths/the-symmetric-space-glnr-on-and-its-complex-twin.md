@@ -84,7 +84,7 @@ since $\log P$ has eigenvalues $\log\lambda_k$ and the metric at the origin is t
 
 **The two spaces have the same rank and the same Weyl group.** The maximal flats are again the diagonal matrices with positive entries in some unitary basis, of dimension $n$, and the Weyl group is again $S_n$. So the real and the complex space differ in dimension and in curvature, and not in rank.
 
-**They differ in dimension by $n(n-1)/2$.** $\dim_{\mathbb{R}}\mathrm{GL}_n(\mathbb{C})/\mathrm{U}(n)=2n^{2}-n^{2}=n^{2}$ against $n(n+1)/2$. The difference is the dimension of the skew half, which in the complex case is a real subspace of the Hermitian complement.
+**They differ in dimension by $n(n-1)/2$.** $\dim_{\mathbb{R}}\mathrm{GL}_n(\mathbb{C})/\mathrm{U}(n)=2n^{2}-n^{2}=n^{2}$ against $n(n+1)/2$. The difference is the dimension of the anti-Hermitian half, which in the complex case is a real subspace of the Hermitian complement.
 
 **The complex twin at $n=2$ is $\mathbb{H}^{3}\times\mathbb{R}$.** Its dimension is $8-4=4$; the rank-one factor is $\mathrm{SL}_2(\mathbb{C})/\mathrm{SU}(2)$, the hyperbolic three-space, and the scalars give the flat factor. So the passage from $\mathbb{R}$ to $\mathbb{C}$ at $n=2$ replaces $\mathbb{H}^{2}$ by $\mathbb{H}^{3}$ and keeps the line.
 

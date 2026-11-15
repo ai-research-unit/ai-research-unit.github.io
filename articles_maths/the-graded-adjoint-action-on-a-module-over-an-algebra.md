@@ -46,7 +46,7 @@ The graded adjoint is therefore an anti-automorphism of order two **up to the Ko
 
 *Proof.* Existence and uniqueness are those of *Involutions of the Operator Algebra* applied to each homogeneous degree: the functional $x\mapsto(-1)^{|T||x|}\langle Tx,y\rangle$ is linear and is represented by a unique $T^{*}y$, and the representing element is homogeneous of degree $|T|+|y|$ because the pairing has degree zero. For the sign rule, move $S$ and then $T$ across the pairing: $\langle STx,y\rangle=(-1)^{|S||Tx|}\langle Tx,S^{*}y\rangle=(-1)^{|S|(|T|+|x|)}(-1)^{|T||x|}\langle x,T^{*}S^{*}y\rangle=(-1)^{|S||T|}(-1)^{(|S|+|T|)|x|}\langle x,T^{*}S^{*}y\rangle$, which is the defining identity of $(-1)^{|S||T|}T^{*}S^{*}$; the sign-free rule is the same computation with both signs dropped; the order-two and the unit statements are the defining identity read twice and at the identity.
 
-**Corollary.** On the even operators the Koszul sign is $1$ and the graded adjoint is the sign-free adjoint of *Involutions of the Operator Algebra*; on products of odd operators the sign survives, and the composite of two odd operators is adjointed with the sign $-1$. The **self-adjoint** operators satisfy $T^{*}=T$ and the **skew-adjoint** ones $T^{*}=-T$ on each degree, and the decomposition $T=\tfrac12(T+T^{*})+\tfrac12(T-T^{*})$ is the one of *The Self-Adjoint Part of an Algebra*, taken degree by degree.
+**Corollary.** On the even operators the Koszul sign is $1$ and the graded adjoint is the sign-free adjoint of *Involutions of the Operator Algebra*; on products of odd operators the sign survives, and the composite of two odd operators is adjointed with the sign $-1$. The **self-adjoint** operators satisfy $T^{*}=T$ and the **anti-self-adjoint** ones $T^{*}=-T$ on each degree, and the decomposition $T=\tfrac12(T+T^{*})+\tfrac12(T-T^{*})$ is the one of *The Self-Adjoint Part of an Algebra*, taken degree by degree.
 
 *Proof.* The sign $(-1)^{|S||T|}$ is $1$ unless both operators are odd, which gives the first two statements; the decomposition is the splitting of a degree-zero operator into fixed and negated parts, and each homogeneous component is carried to itself because the adjoint preserves the degree.
 
@@ -150,7 +150,7 @@ $$
 \mathrm{ad}_x^{\dagger}=\mathrm{ad}_x^{*}=-\mathrm{ad}_x ,
 $$
 
-so the graded adjoint action of an even element is skew-adjoint for both pairings; for **odd** $x$ the two adjoints are the mirrored one-sided operators
+so the graded adjoint action of an even element is anti-self-adjoint for both pairings; for **odd** $x$ the two adjoints are the mirrored one-sided operators
 
 $$
 \mathrm{ad}_x^{\dagger}=R_x-\alpha L_x, \qquad \mathrm{ad}_x^{*}=\alpha R_x-L_x ,
@@ -160,7 +160,7 @@ which are **not** of the form $-\mathrm{ad}_z$: the sign of the graded commutato
 
 *Proof.* Adjoint the two terms of $\mathrm{ad}_x=L_x-R_x\alpha^{|x|}$ for the sign-free pairing: $L_x^{\dagger}=R_x$, and $(R_x\alpha^{|x|})^{\dagger}=(\alpha^{|x|})^{\dagger}R_x^{\dagger}=\alpha^{|x|}L_x$ because the grade involution is self-adjoint and of degree zero; this gives the first identity, and the second is $T^{*}=\alpha_M^{|T|}T^{\dagger}$ at $\lvert T\rvert=\lvert x\rvert$. For even $x$ the power of the grade involution is the identity, so both adjoints are $R_x-L_x=-\mathrm{ad}_x$. For odd $x$ the sign-free adjoint is $R_x-\alpha L_x$, whose second term carries the involution to the left of the argument, while $-\mathrm{ad}_z=-L_z+R_z\alpha$ carries it to the right; the two agree for no $z$ unless $\alpha$ fixes every element, which is the trivial grading.
 
-**Corollary.** The graded adjoint action of an even element is the ordinary inner derivation $\mathrm{ad}_x=L_x-R_x$ of *The Commutator Operator*, and it is skew-adjoint for both the graded and the sign-free pairings; the adjoint action of an odd element is the graded derivation $L_x-R_x\alpha$ of *The Graded Action on a Module over an Algebra*, whose adjoints are the mirrored one-sided operators above. In particular the graded adjoint action of an even element is self-adjoint for no nonzero $x$.
+**Corollary.** The graded adjoint action of an even element is the ordinary inner derivation $\mathrm{ad}_x=L_x-R_x$ of *The Commutator Operator*, and it is anti-self-adjoint for both the graded and the sign-free pairings; the adjoint action of an odd element is the graded derivation $L_x-R_x\alpha$ of *The Graded Action on a Module over an Algebra*, whose adjoints are the mirrored one-sided operators above. In particular the graded adjoint action of an even element is self-adjoint for no nonzero $x$.
 
 *Proof.* Both statements are the theorem written for each parity; the even case is the inner derivation of the cited article, and self-adjointness would require $-\mathrm{ad}_x=\mathrm{ad}_x$, that is $2\,\mathrm{ad}_x=0$.
 
@@ -168,7 +168,7 @@ which are **not** of the form $-\mathrm{ad}_z$: the sign of the graded commutato
 
 **(a) The exterior algebra.** For $A=\Lambda(V)$ with the degree grading and the natural graded pairing, the graded adjoint action of a vector $v$ is $\mathrm{ad}_v(\omega)=v\omega-(-1)^{\lvert\omega\rvert}\omega v$, a graded derivation of degree one; its sign-free adjoint is $R_v-\alpha L_v$ and its graded adjoint is $\alpha R_v-L_v$, the two mirrored odd operators of the theorem.
 
-**(b) The Clifford algebra.** With the Clifford product and the grading by degree, the adjoint action of a vector is the commutator on the even part and the anticommutator on the odd part; the even part of the algebra acts by skew-adjoint derivations for the plain pairing, and the odd part by the operators of the odd case above. The metric reading is Part II.
+**(b) The Clifford algebra.** With the Clifford product and the grading by degree, the adjoint action of a vector is the commutator on the even part and the anticommutator on the odd part; the even part of the algebra acts by anti-self-adjoint derivations for the plain pairing, and the odd part by the operators of the odd case above. The metric reading is Part II.
 
 **(c) The matrix superalgebra.** $A=M_{p|q}$ with the transpose and the grading by blocks: the adjoint action is the graded commutator of matrices, the Koszul sign appears the moment two odd matrices are multiplied, and the adjoint of a product is $(ST)^{*}=(-1)^{|S||T|}T^{*}S^{*}$.
 

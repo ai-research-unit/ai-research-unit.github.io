@@ -90,9 +90,9 @@ It defers the exponential of the line to *The Exponential of $\operatorname{Skew
 
 **Proof.** The commutator of two symmetric matrices is antisymmetric, hence a multiple of $J$; in the Pauli coordinates $u=\vec a\cdot\vec\sigma$ and $v=\vec b\cdot\vec\sigma$, and $[\sigma_{i},\sigma_{j}]=2i\epsilon_{ijk}\sigma_{k}$ gives the cross product.
 
-**Corollary.** The bracket on the traceless plane is a skew form $\Lambda^{2}V\to\mathbb{R}$, hence a multiple of the area form, and the algebra $\operatorname{Skew}_2(\mathbb{R})$ is the one-dimensional target of that form.
+**Corollary.** The bracket on the traceless plane is an anti-Hermitian form $\Lambda^{2}V\to\mathbb{R}$, hence a multiple of the area form, and the algebra $\operatorname{Skew}_2(\mathbb{R})$ is the one-dimensional target of that form.
 
-**Proof.** A skew bilinear form on a two-dimensional space is a multiple of the determinant, and the target is one-dimensional.
+**Proof.** An antisymmetric bilinear form on a two-dimensional space is a multiple of the determinant, and the target is one-dimensional.
 
 **The scale on the orthonormal pair.** With $u=\sigma_{3}/\sqrt2$ and $v=\sigma_{1}/\sqrt2$ the bracket is $J$, so the pairing $\langle[u,v],J\rangle=\operatorname{tr}(J^{2})=-2$; the constant $-2$ is the normalisation of the identification of the line with the reals.
 

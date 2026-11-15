@@ -95,19 +95,19 @@ $$
 
 ### The Dirac Adjoint and the Dirac Operator
 
-**Theorem (adjointness of the Dirac operator for the Dirac pairing).** Let the frame be orthogonal to $v$, so that $v$ anticommutes with each $e_j$, and let $D$ be self-adjoint or skew-adjoint for the module form, $D^{*} = \varepsilon D$ with $\varepsilon = \pm1$. Then
+**Theorem (adjointness of the Dirac operator for the Dirac pairing).** Let the frame be orthogonal to $v$, so that $v$ anticommutes with each $e_j$, and let $D$ be self-adjoint or anti-self-adjoint for the module form, $D^{*} = \varepsilon D$ with $\varepsilon = \pm1$. Then
 
 $$
 \boxed{\;\beta_{v}(D\cdot s, t) = -\,\varepsilon\,\beta_{v}(s, D\cdot t)\;} .
 $$
 
-In particular, an operator that is **skew**-adjoint for the module form $(\varepsilon = -1)$ is self-adjoint for the Dirac pairing, and an operator that is **self**-adjoint for the module form $(\varepsilon = +1)$ is skew-adjoint for the Dirac pairing.
+In particular, an operator that is **anti-Hermitian**-adjoint for the module form $(\varepsilon = -1)$ is self-adjoint for the Dirac pairing, and an operator that is **self**-adjoint for the module form $(\varepsilon = +1)$ is anti-self-adjoint for the Dirac pairing.
 
 **Proof.** $\beta_{v}(Ds,t) = (Ds,v t) = (s, D^{*}v t) = \varepsilon\,(s, Dv t) = \varepsilon\,(s, -v D t) = -\varepsilon\,(s,v D t) = -\varepsilon\,\beta_{v}(s,Dt)$, using the definition $\beta_{v}(s,t) = (s,v t)$ with $(\cdot,\cdot)$ the module form, the adjointness $D^{*} = \varepsilon D$, and the anticommutation $v e_j = -e_jv$ which gives $v D = -Dv$ so that $Dv = -v D$.
 
-**Corollary (the finite-dimensional model and the PDE model).** In the finite-dimensional model of *Dirac Operators with Hermitian Adjoint*, $D_{\mathrm{alg}} = \sum_jL_{e_j}$ is skew-adjoint, $\varepsilon = -1$, so it is **self-adjoint** for the Dirac pairing; in the PDE model $D = \sum_j\rho(e_j)\partial/\partial x_j$ is self-adjoint, $\varepsilon = +1$, so it is **skew-adjoint** for the Dirac pairing. Both were checked by computation, and the two cases are the two signs of $\varepsilon$.
+**Corollary (the finite-dimensional model and the PDE model).** In the finite-dimensional model of *Dirac Operators with Hermitian Adjoint*, $D_{\mathrm{alg}} = \sum_jL_{e_j}$ is anti-self-adjoint, $\varepsilon = -1$, so it is **self-adjoint** for the Dirac pairing; in the PDE model $D = \sum_j\rho(e_j)\partial/\partial x_j$ is self-adjoint, $\varepsilon = +1$, so it is **anti-self-adjoint** for the Dirac pairing. Both were checked by computation, and the two cases are the two signs of $\varepsilon$.
 
-**Remark.** The $v$-twisted pairing is the one whose scalar part $\bar s\,t$ is the invariant bilinear of the physics, and the sign in front of the adjointness is the reason the Dirac adjoint is introduced: the pairing with the spinor adjoint alone is Hermitian, while the physical bilinear is the $v$-twisted pairing, whose sign structure differs by the self- or skew-adjointness of the operator. The analysis of the operator is *Dirac Operators with Hermitian Adjoint*; what the Dirac adjoint adds is the pairing.
+**Remark.** The $v$-twisted pairing is the one whose scalar part $\bar s\,t$ is the invariant bilinear of the physics, and the sign in front of the adjointness is the reason the Dirac adjoint is introduced: the pairing with the spinor adjoint alone is Hermitian, while the physical bilinear is the $v$-twisted pairing, whose sign structure differs by the self- or anti-self-adjointness of the operator. The analysis of the operator is *Dirac Operators with Hermitian Adjoint*; what the Dirac adjoint adds is the pairing.
 
 ## Worked Cases
 
@@ -145,7 +145,7 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 
 The **spinor adjoint** is the conjugate-linear map $J : S\to S^{*}$, $J(s) = (s,\cdot)$, induced by the Hermitian form of a Hermitian Clifford module; it intertwines the action with the adjoint action, $J(x\cdot s) = x\cdot J(s)$, and on an irreducible module it is unique up to a scalar by Schur's lemma. It is the same data as the form, read as a map to the dual, and it is the algebraic object every spin-invariant bilinear form is built from; its **type** — symmetric, alternating or Hermitian — is determined by the type of the involution of the algebra and by the division algebra over the module, which is the real/complex/quaternionic trichotomy in the complex case.
 
-The naive scalar form $\mathrm{Sc}(s^{\dagger}t)$ on a minimal left ideal with $\pi^{\dagger}\pi = 0$ is **totally isotropic**, as computed in $\mathrm{Cl}_{1,1}(\mathbb{R})$, and it is the **spinor adjoint of a self-adjoint idempotent** that repairs it: the definite case has a positive definite spinor form and the split case a hyperbolic one. The **Dirac adjoint** is the pairing $\beta_{v}(s,t) = \mathrm{Sc}(s^{\dagger}v t)$ with a non-isotropic vector $v$ inserted, written $\bar s = s^{\dagger}v$ in the physical normalisation; for a vector it is **anti-Hermitian** because $v_{\dagger} = -v$, so $i\beta_{v}$ is Hermitian, it is non-degenerate, and it is invariant under the stabiliser of $v$ in the unitary slice — in the Lorentzian case the maximal compact subgroup. The Dirac operator is formally self-adjoint for the spinor adjoint pairing and skew-adjoint for the $v$-twisted pairing, and the two pairings are the two faces of the Hermitian structure of a spinor module.
+The naive scalar form $\mathrm{Sc}(s^{\dagger}t)$ on a minimal left ideal with $\pi^{\dagger}\pi = 0$ is **totally isotropic**, as computed in $\mathrm{Cl}_{1,1}(\mathbb{R})$, and it is the **spinor adjoint of a self-adjoint idempotent** that repairs it: the definite case has a positive definite spinor form and the split case a hyperbolic one. The **Dirac adjoint** is the pairing $\beta_{v}(s,t) = \mathrm{Sc}(s^{\dagger}v t)$ with a non-isotropic vector $v$ inserted, written $\bar s = s^{\dagger}v$ in the physical normalisation; for a vector it is **anti-Hermitian** because $v_{\dagger} = -v$, so $i\beta_{v}$ is Hermitian, it is non-degenerate, and it is invariant under the stabiliser of $v$ in the unitary slice — in the Lorentzian case the maximal compact subgroup. The Dirac operator is formally self-adjoint for the spinor adjoint pairing and anti-self-adjoint for the $v$-twisted pairing, and the two pairings are the two faces of the Hermitian structure of a spinor module.
 
 ## Summary of Notation
 

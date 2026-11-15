@@ -13,9 +13,9 @@ Throughout, $R = R^0\oplus R^1$ is a graded ring, unital, with grade involution 
 
 **Definition.** A **graded ring** is a ring $R = R^0\oplus R^1$ with $R^iR^j\subseteq R^{i+j}$ (indices modulo $2$); a **graded left module** over $R$ is a module $M = M^0\oplus M^1$ with $R^iM^j\subseteq M^{i+j}$. An element is **homogeneous** if it lies in $R^0\cup R^1$ or $M^0\cup M^1$, and its **degree** is $0$ or $1$ accordingly.
 
-**Proposition (the grade involution and the parity operator).** The grade involution $\alpha(r) = (-1)^i r$ for $r \in R^i$ is an involutive ring automorphism, with fixed subring $R^0$ and skew part $R^1$; the parity operator $\pi(m) = (-1)^j m$ for $m \in M^j$ is an involutive additive operator, with fixed part $M^0$ and skew part $M^1$, and the decompositions $R = R^0\oplus R^1$ and $M = M^0\oplus M^1$ are the eigenspace decompositions of $\alpha$ and $\pi$.
+**Proposition (the grade involution and the parity operator).** The grade involution $\alpha(r) = (-1)^i r$ for $r \in R^i$ is an involutive ring automorphism, with fixed subring $R^0$ and anti-Hermitian part $R^1$; the parity operator $\pi(m) = (-1)^j m$ for $m \in M^j$ is an involutive additive operator, with fixed part $M^0$ and anti-Hermitian part $M^1$, and the decompositions $R = R^0\oplus R^1$ and $M = M^0\oplus M^1$ are the eigenspace decompositions of $\alpha$ and $\pi$.
 
-**Proof.** For $\alpha$: on homogeneous elements $\alpha(rs) = (-1)^{i+j}rs = \alpha(r)\alpha(s)$ and $\alpha(r+s) = \alpha(r)+\alpha(s)$, so $\alpha$ is a ring automorphism, and $\alpha^2$ is the identity because $(-1)^{2i}=1$; the eigenspaces of an involution are the fixed and skew parts, which are exactly $R^0$ and $R^1$. The same for $\pi$ with additivity, which is the only structure the module has in this respect.
+**Proof.** For $\alpha$: on homogeneous elements $\alpha(rs) = (-1)^{i+j}rs = \alpha(r)\alpha(s)$ and $\alpha(r+s) = \alpha(r)+\alpha(s)$, so $\alpha$ is a ring automorphism, and $\alpha^2$ is the identity because $(-1)^{2i}=1$; the eigenspaces of an involution are the fixed and anti-Hermitian parts, which are exactly $R^0$ and $R^1$. The same for $\pi$ with additivity, which is the only structure the module has in this respect.
 
 ## The Parity Operator
 

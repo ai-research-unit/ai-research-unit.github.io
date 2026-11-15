@@ -119,7 +119,7 @@ The reflection $\rho_u(x) = u\alpha(x)u^{-1} = \Sigma^\alpha_{u,u^{-1}}$ has squ
 ## Further Reading
 
 - Nathan Jacobson, *Structure of Rings*, American Mathematical Society Colloquium Publications 37 (1964), for the conjugations and the reflections of the regular representation and their adjoints.
-- I. N. Herstein, *Rings with Involution* (University of Chicago Press, 1976), for the self-adjoint and the skew operators of a ring with involution.
+- I. N. Herstein, *Rings with Involution* (University of Chicago Press, 1976), for the self-adjoint and the anti-self-adjoint operators of a ring with involution.
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions* (American Mathematical Society, 1998), for the reflections of a unitary group and their relation to the involution.
 - Nicolas Bourbaki, *Algebra I*, Chapters 1–3 (Springer, 1998), for the reflections, the hyperplane of fixed vectors and the adjoint under a form.
 - Seth Warner, *Topological Fields* (North-Holland, 1989), for the continuous operators and the closed fixed sets of a topological ring.

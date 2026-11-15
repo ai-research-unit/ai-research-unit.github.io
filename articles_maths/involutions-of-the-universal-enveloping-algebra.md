@@ -41,7 +41,7 @@ $$
 
 and the **unitary elements** are those with $u^{*}u=uu^{*}=1$.
 
-**Theorem.** The star structure satisfies $\tau^2=\mathrm{id}$ and $\tau(ab)=\tau(b)\tau(a)$; when $\mathrm{J}=\mathrm{id}$ it is the principal anti-automorphism, and when $\mathrm{J}$ is the Cartan involution of a real form it restricts on the skew elements of $\mathrm{G}$ to $x^{*}=-x$.
+**Theorem.** The star structure satisfies $\tau^2=\mathrm{id}$ and $\tau(ab)=\tau(b)\tau(a)$; when $\mathrm{J}=\mathrm{id}$ it is the principal anti-automorphism, and when $\mathrm{J}$ is the Cartan involution of a real form it restricts on the anti-Hermitian elements of $\mathrm{G}$ to $x^{*}=-x$.
 
 **Proof.** The composite of the two commuting anti-involutions is an anti-involution; the specialisations are the definitions.
 

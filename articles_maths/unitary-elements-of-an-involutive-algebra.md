@@ -2,11 +2,11 @@
 
 ## Introduction
 
-An involution of an algebra carries an element $u$ to its **adjoint** $u^* = \sigma(u)$, and the elements whose adjoint is their inverse, $u^*u = uu^* = 1$, are the **unitary elements**. They form a group under multiplication, they sit inside the group of units, and they are the algebraic group that an involution produces: the solutions of the quadratic equation $u^*u = 1$. Two companion objects live beside them — the **self-adjoint** elements, with $h^* = h$, and the **skew** elements, with $k^* = -k$ — and every unitary decomposes as $u = \tfrac12(u+u^*) + \tfrac12(u-u^*)$ into a self-adjoint and a skew part.
+An involution of an algebra carries an element $u$ to its **adjoint** $u^* = \sigma(u)$, and the elements whose adjoint is their inverse, $u^*u = uu^* = 1$, are the **unitary elements**. They form a group under multiplication, they sit inside the group of units, and they are the algebraic group that an involution produces: the solutions of the quadratic equation $u^*u = 1$. Two companion objects live beside them — the **self-adjoint** elements, with $h^* = h$, and the **anti-Hermitian** elements, with $k^* = -k$ — and every unitary decomposes as $u = \tfrac12(u+u^*) + \tfrac12(u-u^*)$ into a self-adjoint and an anti-Hermitian part.
 
-This article develops the unitary elements, the group they form as the fixed subgroup of an order-two automorphism of the units, and the relation between a unitary and its self-adjoint part. The involution on the elements and the decomposition $A = A^+ \oplus A^-$ are *Involutive Algebras*; the skew part, its Lie algebra, the tangent space at the identity and the Cayley transform are *The Skew Part of an Algebra*, in *Anti-symmetric Algebras*; the self-adjoint part and the symmetrised product are *The Self-Adjoint Part of an Algebra*, in *Symmetric Algebras*; and the forms, the adjoint involution that a form defines and the orthogonal and unitary groups of a form are Part II and *Hilbert Algebras*, which own them.
+This article develops the unitary elements, the group they form as the fixed subgroup of an order-two automorphism of the units, and the relation between a unitary and its self-adjoint part. The involution on the elements and the decomposition $A = A^+ \oplus A^-$ are *Involutive Algebras*; the anti-Hermitian part, its Lie algebra, the tangent space at the identity and the Cayley transform are *The Anti-Hermitian Part of an Algebra*, in *Anti-symmetric Algebras*; the self-adjoint part and the symmetrised product are *The Self-Adjoint Part of an Algebra*, in *Symmetric Algebras*; and the forms, the adjoint involution that a form defines and the orthogonal and unitary groups of a form are Part II and *Hilbert Algebras*, which own them.
 
-Throughout, $k$ is a field of characteristic not two, $A$ is a unital associative $k$-algebra, and $\sigma$ is an involution of $A$; the image of an element is written $u^* = \sigma(u)$, so that $(uv)^* = v^*u^*$ and $(u^*)^* = u$. The fixed elements $A^+ = \{h : h^* = h\}$ are **self-adjoint** and the negated elements $A^- = \{k : k^* = -k\}$ are **skew**; the group of units is $A^\times$, and the group of unitary elements is written $\mathrm{U}(A) = \mathrm{U}(A,\sigma)$.
+Throughout, $k$ is a field of characteristic not two, $A$ is a unital associative $k$-algebra, and $\sigma$ is an involution of $A$; the image of an element is written $u^* = \sigma(u)$, so that $(uv)^* = v^*u^*$ and $(u^*)^* = u$. The fixed elements $A^+ = \{h : h^* = h\}$ are **self-adjoint** and the negated elements $A^- = \{k : k^* = -k\}$ are **anti-Hermitian**; the group of units is $A^\times$, and the group of unitary elements is written $\mathrm{U}(A) = \mathrm{U}(A,\sigma)$.
 
 ## The Unitary Elements
 
@@ -46,7 +46,7 @@ is its fixed subgroup.
 
 ## The Self-Adjoint Elements of a Unitary
 
-**Proposition.** Let $u$ be unitary. Then $u + u^*$ and $u u^*$ are self-adjoint, $u - u^*$ is skew, and
+**Proposition.** Let $u$ be unitary. Then $u + u^*$ and $u u^*$ are self-adjoint, $u - u^*$ is anti-Hermitian, and
 
 $$
 (u + u^*)^* = u + u^*, \qquad (u - u^*)^* = -(u - u^*), \qquad (u u^*)^* = u u^* = 1 .
@@ -60,17 +60,17 @@ $$
 \boxed{\;u = \tfrac12(u + u^*) + \tfrac12(u - u^*)\;}
 $$
 
-into a self-adjoint and a skew part, which is the decomposition $A = A^+\oplus A^-$ applied to $u$. The skew part $u - u^*$ and the Cayley transform that produces unitary elements from skew ones are *The Skew Part of an Algebra*; the self-adjoint part and its Jordan product are *The Self-Adjoint Part of an Algebra*.
+into a self-adjoint and an anti-Hermitian part, which is the decomposition $A = A^+\oplus A^-$ applied to $u$. The anti-Hermitian part $u - u^*$ and the Cayley transform that produces unitary elements from anti-Hermitian ones are *The Anti-Hermitian Part of an Algebra*; the self-adjoint part and its Jordan product are *The Self-Adjoint Part of an Algebra*.
 
 ## The Examples
 
 ### The Trivial Involution
 
-Let $\sigma = \mathrm{id}_A$. Then $u^* = u$, the group $\mathrm{U}(A,\mathrm{id})$ is the set of the units $u$ with $u^2 = 1$, that is the involutions of the group of units, and the skew part $A^- = \{k : k = -k\}$ is zero in characteristic not two. The example is the degenerate one, and it shows that the unitary group measures the involution and not the algebra.
+Let $\sigma = \mathrm{id}_A$. Then $u^* = u$, the group $\mathrm{U}(A,\mathrm{id})$ is the set of the units $u$ with $u^2 = 1$, that is the involutions of the group of units, and the anti-Hermitian part $A^- = \{k : k = -k\}$ is zero in characteristic not two. The example is the degenerate one, and it shows that the unitary group measures the involution and not the algebra.
 
 ### The Transpose on a Matrix Algebra
 
-Let $A = M_n(k)$ with the transpose, $X^* = X^{\mathsf{T}}$, and $2 \neq 0$. Then $\mathrm{U}(A) = \{X \in GL_n(k) : X^{\mathsf{T}}X = 1\} = O_n(k)$ is the orthogonal group of the standard symmetric form; the skew part is the space of the alternating matrices, the self-adjoint part the space of the symmetric matrices, and the decomposition $M_n = \mathrm{sym}\oplus \mathrm{Alt}$ is the one of *Involutive Algebras*. The form that makes $O_n(k)$ the orthogonal group, and its classification among the symmetric and the alternating forms, belong to *Hilbert Algebras*.
+Let $A = M_n(k)$ with the transpose, $X^* = X^{\mathsf{T}}$, and $2 \neq 0$. Then $\mathrm{U}(A) = \{X \in GL_n(k) : X^{\mathsf{T}}X = 1\} = O_n(k)$ is the orthogonal group of the standard symmetric form; the antisymmetric part is the space of the alternating matrices, the self-adjoint part the space of the symmetric matrices, and the decomposition $M_n = \mathrm{sym}\oplus \mathrm{Alt}$ is the one of *Involutive Algebras*. The form that makes $O_n(k)$ the orthogonal group, and its classification among the symmetric and the alternating forms, belong to *Hilbert Algebras*.
 
 ### The Inversion on a Group Algebra
 
@@ -88,11 +88,11 @@ and the unitary group of the exchange involution is the group of units of $B$.
 
 ### The Conjugate Transpose
 
-Let $A = M_n(\mathbb{C})$ with the $\varsigma$-semilinear conjugate transpose $X^* = \overline{X}^{\mathsf{T}}$. The unitary elements are the matrices with $X^*X = 1$, that is the unitary group $U_n$; the self-adjoint elements are the Hermitian matrices and the skew elements the anti-Hermitian ones. The conjugation $\varsigma$ of $\mathbb{C}$ is a semilinear involution of the scalars, the case of the second kind, and the form of the associated sesquilinear pairing belongs to *Hilbert Algebras*.
+Let $A = M_n(\mathbb{C})$ with the $\varsigma$-semilinear conjugate transpose $X^* = \overline{X}^{\mathsf{T}}$. The unitary elements are the matrices with $X^*X = 1$, that is the unitary group $U_n$; the self-adjoint elements are the Hermitian matrices and the anti-Hermitian elements the anti-Hermitian ones. The conjugation $\varsigma$ of $\mathbb{C}$ is a semilinear involution of the scalars, the case of the second kind, and the form of the associated sesquilinear pairing belongs to *Hilbert Algebras*.
 
 ## Summary
 
-For an involution $\sigma$ of $A$, written $u^* = \sigma(u)$, the **unitary elements** are those with $u^*u = uu^* = 1$, equivalently the units with $u^* = u^{-1}$. They form the subgroup $\mathrm{U}(A) \leq A^\times$, which is the fixed subgroup of the order-two automorphism $\mathrm{J}(g) = (g^*)^{-1}$ of $A^\times$; this is the passage from the involutive algebra to the involutive group of units of *Involutive Groups*. The **self-adjoint** elements are the fixed elements $A^+ = H(A)$ and the **skew** elements the negated ones $A^- = K(A)$; every unitary decomposes as $u = \tfrac12(u+u^*) + \tfrac12(u-u^*)$ into a self-adjoint and a skew part. The examples are the orthogonal group for the transpose, the image of $G$ for the inversion of a group algebra, the group of units for the exchange involution, and the unitary group for the conjugate transpose. The involution on the elements is *Involutive Algebras*, the self-adjoint part is *The Self-Adjoint Part of an Algebra*, the skew part, its Lie algebra, the tangent space and the Cayley transform are *The Skew Part of an Algebra*, and the forms and the linear groups belong to *Hilbert Algebras* and to Part II.
+For an involution $\sigma$ of $A$, written $u^* = \sigma(u)$, the **unitary elements** are those with $u^*u = uu^* = 1$, equivalently the units with $u^* = u^{-1}$. They form the subgroup $\mathrm{U}(A) \leq A^\times$, which is the fixed subgroup of the order-two automorphism $\mathrm{J}(g) = (g^*)^{-1}$ of $A^\times$; this is the passage from the involutive algebra to the involutive group of units of *Involutive Groups*. The **self-adjoint** elements are the fixed elements $A^+ = H(A)$ and the **anti-Hermitian** elements the negated ones $A^- = K(A)$; every unitary decomposes as $u = \tfrac12(u+u^*) + \tfrac12(u-u^*)$ into a self-adjoint and an anti-Hermitian part. The examples are the orthogonal group for the transpose, the image of $G$ for the inversion of a group algebra, the group of units for the exchange involution, and the unitary group for the conjugate transpose. The involution on the elements is *Involutive Algebras*, the self-adjoint part is *The Self-Adjoint Part of an Algebra*, the anti-Hermitian part, its Lie algebra, the tangent space and the Cayley transform are *The Anti-Hermitian Part of an Algebra*, and the forms and the linear groups belong to *Hilbert Algebras* and to Part II.
 
 ## Summary of Notation
 
@@ -103,7 +103,7 @@ For an involution $\sigma$ of $A$, written $u^* = \sigma(u)$, the **unitary elem
 | $\sigma$ | an involution of $A$ |
 | $u^* = \sigma(u)$ | the adjoint of an element |
 | $A^+ = H(A)$ | the self-adjoint elements, $h^* = h$ |
-| $A^-$ | the skew elements, $k^* = -k$ |
+| $A^-$ | the anti-Hermitian elements, $k^* = -k$ |
 | $\mathrm{U}(A) = \mathrm{U}(A,\sigma)$ | the unitary elements, $u^*u = uu^* = 1$ |
 | $\mathrm{J}(g) = (g^*)^{-1}$ | the order-two automorphism of $A^\times$ |
 | $O_n(k)$ | the orthogonal group, for the transpose |

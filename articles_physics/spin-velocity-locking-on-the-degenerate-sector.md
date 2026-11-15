@@ -90,7 +90,7 @@ and $\lvert\vec u\times\vec v\rvert^{2}=1-\kappa^{2}$. Replacing $s_a^{2}$ by $1
 
 So on the complement of the scalar line the imaginary part forces $\kappa=0$, and then the real part forces the identity. The scalar line itself is contained in the first case.
 
-**The theorem's content is that the sector has no skew configurations.** A spectrally degenerate unit cannot have two frames whose axes are at any angle other than a right angle. That is a strong statement and it is what makes the sector a two-parameter family rather than a four-parameter one.
+**The theorem's content is that the sector has no anti-Hermitian configurations.** A spectrally degenerate unit cannot have two frames whose axes are at any angle other than a right angle. That is a strong statement and it is what makes the sector a two-parameter family rather than a four-parameter one.
 
 ### The Identity's Two Branches
 

@@ -3,7 +3,7 @@
 
 ## Introduction
 
-An involution of a Banach algebra is an **adjoint** operation on the elements: it is additive, it reverses the product, it is conjugate-linear and it has order two, and it is the algebra-side analogue of the Hilbert-space adjoint. The elements it fixes are the **self-adjoint** ones, the elements it negates are the **skew** ones, and the elements it inverts on the product are the **unitary** ones; these three classes carry the elementary calculus that the whole `- * Theory` block uses — the adjoint of a product, of an inverse, of a power, of an exponential, of a commutator — and they turn the unit group into the unitary group of the involution. This article gathers the adjoint operation on a Banach algebra and its elementary calculus, the self-adjoint, skew, unitary and normal elements, and the structural statement that the adjoint is an anti-automorphism of the algebra and an isomorphism onto the opposite algebra.
+An involution of a Banach algebra is an **adjoint** operation on the elements: it is additive, it reverses the product, it is conjugate-linear and it has order two, and it is the algebra-side analogue of the Hilbert-space adjoint. The elements it fixes are the **self-adjoint** ones, the elements it negates are the **anti-Hermitian** ones, and the elements it inverts on the product are the **unitary** ones; these three classes carry the elementary calculus that the whole `- * Theory` block uses — the adjoint of a product, of an inverse, of a power, of an exponential, of a commutator — and they turn the unit group into the unitary group of the involution. This article gathers the adjoint operation on a Banach algebra and its elementary calculus, the self-adjoint, anti-Hermitian, unitary and normal elements, and the structural statement that the adjoint is an anti-automorphism of the algebra and an isomorphism onto the opposite algebra.
 
 The article assumes the involutive Banach algebra, the $\mathrm{C}^*$-identity, the isometry of the involution, the Gelfand–Naimark theorem and the contractivity of the $*$-homomorphisms from *Involutive Banach Algebras and the Gelfand–Naimark Theorem*; the self-adjoint elements, the positive cone and the order from *Hermitian and Self-Adjoint Elements of a Banach Algebra*; the spectrum, the spectral radius and the functional calculus from *The Spectrum of a Self-Adjoint Element* and *The Functional Calculus of a Self-Adjoint Element*; the abstract involution, the opposite algebra and the unitary elements from *Involutive Algebras* and *Unitary Elements of an Involutive Algebra*; and the operator adjoint from *Operator Algebras*. The grade involution $\alpha$ of the signed block is not used.
 
@@ -27,11 +27,11 @@ and, for $a$ invertible, $(a^{-1})^* = (a^*)^{-1}$, so the adjoint preserves inv
 
 **Proof.** The anti-multiplicativity is the isomorphism onto the opposite algebra, and the order two is $a^{**} = a$; the converse uniqueness is the standard statement that two isomorphisms onto the opposite algebra differ by an automorphism.
 
-## Self-Adjoint, Skew and Unitary Elements
+## Self-Adjoint, Anti-Hermitian and Unitary Elements
 
-**Proposition (the three classes).** The self-adjoint elements satisfy $a^* = a$, the skew elements $a^* = -a$, and $A = A^+ \oplus iA^+$ with $A^- = iA^+$; an element is unitary exactly when $u^* = u^{-1}$, the unitary elements form a subgroup $\mathrm{U}(A)$ of the unit group, and the adjoint is an isometry of $\mathrm{U}(A)$. If $a$ is skew and the involution is continuous then $\exp(a)$ is unitary in the $\mathrm{C}^*$-case, $\lVert \exp(a)\rVert = 1$; in a $\mathrm{C}^*$-algebra the unitary group is the exponential image of the skew elements.
+**Proposition (the three classes).** The self-adjoint elements satisfy $a^* = a$, the anti-Hermitian elements $a^* = -a$, and $A = A^+ \oplus iA^+$ with $A^- = iA^+$; an element is unitary exactly when $u^* = u^{-1}$, the unitary elements form a subgroup $\mathrm{U}(A)$ of the unit group, and the adjoint is an isometry of $\mathrm{U}(A)$. If $a$ is anti-Hermitian and the involution is continuous then $\exp(a)$ is unitary in the $\mathrm{C}^*$-case, $\lVert \exp(a)\rVert = 1$; in a $\mathrm{C}^*$-algebra the unitary group is the exponential image of the anti-Hermitian elements.
 
-**Proof.** $(\exp(a))^* = \exp(a^*) = \exp(-a) = (\exp(a))^{-1}$ for skew $a$, so $\exp(a)$ is unitary, and $\lVert \exp(a)\rVert = 1$ when the algebra is a $\mathrm{C}^*$-algebra because $\exp(a)$ is unitary; the decomposition is *Hermitian and Self-Adjoint Elements of a Banach Algebra*, and the group law is $(uv)^* = v^*u^* = v^{-1}u^{-1} = (uv)^{-1}$.
+**Proof.** $(\exp(a))^* = \exp(a^*) = \exp(-a) = (\exp(a))^{-1}$ for anti-Hermitian $a$, so $\exp(a)$ is unitary, and $\lVert \exp(a)\rVert = 1$ when the algebra is a $\mathrm{C}^*$-algebra because $\exp(a)$ is unitary; the decomposition is *Hermitian and Self-Adjoint Elements of a Banach Algebra*, and the group law is $(uv)^* = v^*u^* = v^{-1}u^{-1} = (uv)^{-1}$.
 
 **Corollary (normal, positive, involutive).** An element is normal when $a^*a = aa^*$, equivalently when $h = \operatorname{Re}a$ and $k = \operatorname{Im}a$ commute; the positive elements are the self-adjoint $a$ with $a \geq 0$; a self-adjoint $a$ is involutive exactly when $a^2 = 1$, equivalently when $\sigma(a) \subseteq \{-1,1\}$. The Cayley transform $a \mapsto (a-i)(a+i)^{-1}$ sends the self-adjoint elements into the unitary ones.
 
@@ -39,15 +39,15 @@ and, for $a$ invertible, $(a^{-1})^* = (a^*)^{-1}$, so the adjoint preserves inv
 
 ## Examples
 
-**Example (the matrix algebra).** For $A = M_n(\mathbb{C})$ with the conjugate transpose the adjoint is the transpose-conjugate, the self-adjoint elements are the Hermitian matrices, the skew ones the anti-Hermitian matrices, the unitary ones the unitary group $\mathrm{U}(n)$, and the Cayley transform is the standard map from the Hermitian matrices onto the unitary group with the identity removed.
+**Example (the matrix algebra).** For $A = M_n(\mathbb{C})$ with the conjugate transpose the adjoint is the transpose-conjugate, the self-adjoint elements are the Hermitian matrices, the anti-Hermitian ones the anti-Hermitian matrices, the unitary ones the unitary group $\mathrm{U}(n)$, and the Cayley transform is the standard map from the Hermitian matrices onto the unitary group with the identity removed.
 
-**Example (the function algebra).** For $A = C(X,\mathbb{C})$ the adjoint is $f \mapsto \bar f$, the self-adjoint elements are the real-valued functions, the unitary ones the functions of modulus one, and $\exp(a)$ for a skew $a$ is $\exp(i\,\mathrm{Im}\,a)$, a unimodular function.
+**Example (the function algebra).** For $A = C(X,\mathbb{C})$ the adjoint is $f \mapsto \bar f$, the self-adjoint elements are the real-valued functions, the unitary ones the functions of modulus one, and $\exp(a)$ for an anti-Hermitian $a$ is $\exp(i\,\mathrm{Im}\,a)$, a unimodular function.
 
 **Example (the group algebra).** For the group algebra of a finite group with the involution $u_g^* = u_{g^{-1}}$, the adjoint extends the group inversion; the unitaries include the group elements, the self-adjoint elements are the symmetric elements $\sum a_g u_g$ with $a_{g^{-1}} = \overline{a_g}$, and the group is the unitary group of its own algebra.
 
 ## The Unitary Group and the Gelfand Transform
 
-**Theorem (the unitary group).** The unitary elements $\mathrm{U}(A)$ form a subgroup of the unit group, closed under the adjoint, and inversion is the adjoint; for the norm topology $\mathrm{U}(A)$ is a topological group, and in a $\mathrm{C}^*$-algebra it is closed and bounded, hence compact when $A$ is finite-dimensional. The exponential sends the skew part into $\mathrm{U}(A)$, and in a $\mathrm{C}^*$-algebra the unitary group is the image of the skew part.
+**Theorem (the unitary group).** The unitary elements $\mathrm{U}(A)$ form a subgroup of the unit group, closed under the adjoint, and inversion is the adjoint; for the norm topology $\mathrm{U}(A)$ is a topological group, and in a $\mathrm{C}^*$-algebra it is closed and bounded, hence compact when $A$ is finite-dimensional. The exponential sends the anti-Hermitian part into $\mathrm{U}(A)$, and in a $\mathrm{C}^*$-algebra the unitary group is the image of the anti-Hermitian part.
 
 **Proof.** Closure under products and inverses is the calculus of the adjoint, $(uv)^* = v^*u^* = v^{-1}u^{-1} = (uv)^{-1}$; the adjoint is continuous for an isometric involution, so $\mathrm{U}(A)$ is a topological group; in a $\mathrm{C}^*$-algebra the unitaries have norm one and form a closed subset of the unit sphere, compact in finite dimension. The exponential statement is the proposition of this article.
 
@@ -63,14 +63,14 @@ so the self-adjoint elements are the elements with real-valued transforms, the p
 
 ## Summary
 
-The adjoint of an involutive Banach algebra is the involution $a \mapsto a^*$, an anti-automorphism of order two and a topological isomorphism onto the opposite algebra; its elementary calculus is $(ab)^* = b^*a^*$, $(a^{-1})^* = (a^*)^{-1}$, $(a^n)^* = (a^*)^n$, $(\exp(a))^* = \exp(a^*)$, and it moves the spectrum by conjugation, $\sigma(a^*) = \overline{\sigma(a)}$. The fixed points are the self-adjoint elements $A^+$, the negated ones the skew elements $A^- = iA^+$, and the elements with $u^* = u^{-1}$ are the unitary ones, forming the unitary group; a skew element exponentiates to a unitary one, and in a $\mathrm{C}^*$-algebra the unitary group is the exponential image of the skew part. An element is normal exactly when its real and imaginary parts commute, the positive elements carry the order of *Hermitian and Self-Adjoint Elements of a Banach Algebra*, and the Cayley transform sends the self-adjoint elements into the unitary ones. The involutions of the operator algebra are *The Involution on the Operator Algebra*, and the spectral theory is *The Spectrum of a Self-Adjoint Element*.
+The adjoint of an involutive Banach algebra is the involution $a \mapsto a^*$, an anti-automorphism of order two and a topological isomorphism onto the opposite algebra; its elementary calculus is $(ab)^* = b^*a^*$, $(a^{-1})^* = (a^*)^{-1}$, $(a^n)^* = (a^*)^n$, $(\exp(a))^* = \exp(a^*)$, and it moves the spectrum by conjugation, $\sigma(a^*) = \overline{\sigma(a)}$. The fixed points are the self-adjoint elements $A^+$, the negated ones the anti-Hermitian elements $A^- = iA^+$, and the elements with $u^* = u^{-1}$ are the unitary ones, forming the unitary group; an anti-Hermitian element exponentiates to a unitary one, and in a $\mathrm{C}^*$-algebra the unitary group is the exponential image of the anti-Hermitian part. An element is normal exactly when its real and imaginary parts commute, the positive elements carry the order of *Hermitian and Self-Adjoint Elements of a Banach Algebra*, and the Cayley transform sends the self-adjoint elements into the unitary ones. The involutions of the operator algebra are *The Involution on the Operator Algebra*, and the spectral theory is *The Spectrum of a Self-Adjoint Element*.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $a \mapsto a^*$ | The adjoint (involution), an anti-automorphism of order two |
-| $A^+$, $A^-$ | Self-adjoint and skew elements, $A = A^+\oplus iA^+$ |
+| $A^+$, $A^-$ | Self-adjoint and anti-Hermitian elements, $A = A^+\oplus iA^+$ |
 | $u^* = u^{-1}$, $\mathrm{U}(A)$ | Unitary elements and the unitary group |
 | $(ab)^* = b^*a^*$, $(a^{-1})^* = (a^*)^{-1}$ | The calculus of the adjoint |
 | $(\exp(a))^* = \exp(a^*)$ | Adjoint commutes with the exponential |
@@ -84,5 +84,5 @@ The adjoint of an involutive Banach algebra is the involution $a \mapsto a^*$, a
 - Charles E. Rickart, *General Theory of Banach Algebras* (Van Nostrand, 1960), for the involutions of Banach algebras and the unitary elements.
 - Theodore W. Palmer, *Banach Algebras and the General Theory of ${}^*$-Algebras, Volume II* (Cambridge University Press, 2001), for the adjoint operation and the elementary calculus.
 - Richard V. Kadison and John R. Ringrose, *Fundamentals of the Theory of Operator Algebras, Volume I* (Academic Press, 1983), for the adjoint of the operators and the unitary group.
-- Nathan Jacobson, *Structure of Rings*, American Mathematical Society Colloquium Publications 37 (1964), for the involutions, the self-adjoint and skew elements and the opposite algebra.
-- Gérard J. Murphy, *$\mathrm{C}^*$-Algebras and Operator Theory* (Academic Press, 1990), for the unitary group and the exponential of the skew elements.
+- Nathan Jacobson, *Structure of Rings*, American Mathematical Society Colloquium Publications 37 (1964), for the involutions, the self-adjoint and anti-Hermitian elements and the opposite algebra.
+- Gérard J. Murphy, *$\mathrm{C}^*$-Algebras and Operator Theory* (Academic Press, 1990), for the unitary group and the exponential of the anti-Hermitian elements.

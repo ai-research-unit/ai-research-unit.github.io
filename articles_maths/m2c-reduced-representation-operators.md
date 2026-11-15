@@ -6,7 +6,7 @@
 
 **The three facts that shape the article.** First, left and right multiplication coincide, so the envelope $\mathbb{B}_{\mathrm{red}}\otimes_{\mathbb{C}}\mathbb{B}_{\mathrm{red}}$ acts through the product and its image is the **algebra itself**, a two-dimensional linear subspace of $\mathrm{End}_{\mathbb{C}}(\mathbb{B}_{\mathrm{red}})=M_{2}(\mathbb{C})$ and not a cone: the family of two-sided operators is closed under sums. Second, the model is symmetric, $L_{\breve Q}^{\mathsf T}=L_{\breve Q}$, so the transpose leaves the family pointwise fixed and all three adjoints of the article — the transpose one, the Frobenius one and the $J$-conjugated one — stay inside it. Third, the algebra is reduced, so the family contains no nilpotent but zero, and the two-sided operator is injective.
 
-**What follows and what fails.** There is no length ladder beyond one: $\ell\in\{0,1\}$ inside the family, and no length outside it, because sums of multiplications are multiplications. There is no Kronecker support beyond a two-block pattern: the Kronecker display is $M_{2}(\mathbb{C})^{\mathsf T}\otimes M_{2}(\mathbb{C})$ of rank in $\{0,1,2,4\}$, so the second rank is not vacuous even though the first is. There is no derivation and no nonzero skew-adjoint member for the transpose form; the isometry groups are the torus $T^{2}$ for the Frobenius form and the four-group $\{\pm1,\pm j\}$ for the transpose form; and the normaliser of the family in $GL_{2}(\mathbb{C})$ induces only the identity and the tessarine sign, so the outer automorphism group is $\mathbb{Z}_{2}$.
+**What follows and what fails.** There is no length ladder beyond one: $\ell\in\{0,1\}$ inside the family, and no length outside it, because sums of multiplications are multiplications. There is no Kronecker support beyond a two-block pattern: the Kronecker display is $M_{2}(\mathbb{C})^{\mathsf T}\otimes M_{2}(\mathbb{C})$ of rank in $\{0,1,2,4\}$, so the second rank is not vacuous even though the first is. There is no derivation and no nonzero anti-self-adjoint member for the transpose form; the isometry groups are the torus $T^{2}$ for the Frobenius form and the four-group $\{\pm1,\pm j\}$ for the transpose form; and the normaliser of the family in $GL_{2}(\mathbb{C})$ induces only the identity and the tessarine sign, so the outer automorphism group is $\mathbb{Z}_{2}$.
 
 **The boundaries.** The operator framework — the envelope, the two-sided operator, the Kronecker display, the coefficient matrix and the length — is set out in *Operators on the Biquaternions*, and this article uses its definitions without repeating them. The multiplication operators of the algebra, their kernels, their spectra and their semigroup, are *The Multiplication Operators of the Algebra of the Reduced Biquaternions*; the algebra side of the model is *$M_{2}(\mathbb{C})$ Reduced Representation*; the spectral operators are *Operators on the Reduced Biquaternions*. This article is the operator reading of the model, and it takes the model in the basis $(1,j)$ throughout.
 
@@ -88,7 +88,7 @@ again inside the family, because the tessarine sign is $\mathbb{C}$-linear and m
 
 So the family is closed under all three adjoints, and the three involutions of the algebra of *The Two Involutions and the Group of Involutions of the Reduced Biquaternions* are exactly the three adjoint operations, the fourth element of the Klein group being the composite. There is no adjoint of the family that leaves it, which is the precise sense in which this category, unlike the dual-number one, is a good category for Hilbert-space methods.
 
-**The self-adjoint, the skew-adjoint and the normal members.** For the transpose form every member is self-adjoint and the skew-adjoint sector is $\{0\}$. For the Frobenius form the self-adjoint members are those with $\bar{\breve Q}=\breve Q$, that is the plane $\mathbb{R}\{1,j\}$; the skew-adjoint ones those with $Q_{\blacktriangle},Q_{\blacktriangledown}$ purely imaginary, that is the plane $\mathbb{R}\{i,ij\}$; and every member is normal, because every member is normal as a symmetric matrix, $L_{\breve Q}^{\dagger}L_{\breve Q}=\bar{\mathsf M}\mathsf M=\mathsf M\mathsf M^{\dagger}=L_{\breve Q}L_{\breve Q}^{\dagger}$. So the family is a commutative $*$-algebra of normal operators, the smallest nontrivial one of the block, and it is the reason the spectral theory of the algebra is diagonal.
+**The self-adjoint, the anti-self-adjoint and the normal members.** For the transpose form every member is self-adjoint and the anti-self-adjoint sector is $\{0\}$. For the Frobenius form the self-adjoint members are those with $\bar{\breve Q}=\breve Q$, that is the plane $\mathbb{R}\{1,j\}$; the anti-self-adjoint ones those with $Q_{\blacktriangle},Q_{\blacktriangledown}$ purely imaginary, that is the plane $\mathbb{R}\{i,ij\}$; and every member is normal, because every member is normal as a symmetric matrix, $L_{\breve Q}^{\dagger}L_{\breve Q}=\bar{\mathsf M}\mathsf M=\mathsf M\mathsf M^{\dagger}=L_{\breve Q}L_{\breve Q}^{\dagger}$. So the family is a commutative $*$-algebra of normal operators, the smallest nontrivial one of the block, and it is the reason the spectral theory of the algebra is diagonal.
 
 **The isometries.** For the Frobenius form,
 $$
@@ -312,11 +312,11 @@ so a derivation of the ambient that preserves the family is a commutator with an
 
 ## The Ambient Against the Image
 
-**The ambient splits into three pieces: the family, the traceless symmetric line and the skew line, and each carries one of the three structures of the article.**
+**The ambient splits into three pieces: the family, the traceless symmetric line and the antisymmetric line, and each carries one of the three structures of the article.**
 
-**The decomposition.** Every matrix of $M_{2}(\mathbb{C})$ is the sum of a symmetric and a antisymmetric part, and the symmetric part is the sum of a scalar multiple of the identity and an element of the image and a traceless symmetric matrix. Precisely,
+**The decomposition.** Every matrix of $M_{2}(\mathbb{C})$ is the sum of a symmetric and an antisymmetric part, and the symmetric part is the sum of a scalar multiple of the identity and an element of the image and a traceless symmetric matrix. Precisely,
 $$
-M_{2}(\mathbb{C})=\underbrace{\mathbb{C}\{\mathrm I_{2},\sigma_{1}\}}_{\text{the family}}\ \oplus\ \underbrace{\mathbb{C}\sigma_{3}}_{\text{traceless symmetric}}\ \oplus\ \underbrace{\mathbb{C}\,i\sigma_{2}}_{\text{skew}},
+M_{2}(\mathbb{C})=\underbrace{\mathbb{C}\{\mathrm I_{2},\sigma_{1}\}}_{\text{the family}}\ \oplus\ \underbrace{\mathbb{C}\sigma_{3}}_{\text{traceless symmetric}}\ \oplus\ \underbrace{\mathbb{C}\,i\sigma_{2}}_{\text{antisymmetric}},
 $$
 of dimensions $2+1+1=4$. The family is the image of the model; $\sigma_{3}$ realises the tessarine sign by conjugation; $i\sigma_{2}$ is the quarter turn, the unique antisymmetric direction, and it is the element that the transpose leaves out.
 
@@ -326,7 +326,7 @@ $$
 $$
 that is, the family is carried by an **orthogonal** change of basis to the diagonal subalgebra of $M_{2}(\mathbb{C})$. So the image is unitarily conjugate to the prototype of $\mathbb{C}\times\mathbb{C}$, and the whole operator theory of the category is the operator theory of the diagonal matrices read in a fixed rotated basis. The reader who knows the diagonal subalgebra knows this article; the content is that the diagonal form is reached by a fixed orthogonal matrix and not by a spectral theorem that depends on the element.
 
-**The three slots.** The three pieces of the decomposition carry the three questions of the article. The family carries the two-sided operator and the length, and it is closed and commutative. The traceless symmetric line carries the automorphism, because $\sigma_{3}$ is the conjugating element of the tessarine sign. The skew line carries the failure of the transpose, because $i\sigma_{2}$ is the only direction the transpose sends out of the symmetric part. Nothing else exists: there is no nilpotent corner, no radical, no residue and no derivation, and the deficit of the ambient is exactly two lines.
+**The three slots.** The three pieces of the decomposition carry the three questions of the article. The family carries the two-sided operator and the length, and it is closed and commutative. The traceless symmetric line carries the automorphism, because $\sigma_{3}$ is the conjugating element of the tessarine sign. The antisymmetric line carries the failure of the transpose, because $i\sigma_{2}$ is the only direction the transpose sends out of the symmetric part. Nothing else exists: there is no nilpotent corner, no radical, no residue and no derivation, and the deficit of the ambient is exactly two lines.
 
 **The double centraliser.** Two computations close the structure. The centraliser of the family is the family, and the double centraliser is the family again,
 $$
@@ -351,7 +351,7 @@ so the bicommutant theorem holds for a reason that has nothing to do with finite
 
 **What it buys.** A frame that is fixed and canonical, so the spectral decomposition is the same for every element and Lagrange's formula is a convenience and not a theorem. A determinant that is multiplicative and complex-valued, so the singular locus is a pair of transverse planes and the zero divisors are semisimple. A $*$-structure for the bar, and a second one for the tessarine sign through the $J$-adjoint, so the family is closed under three adjoints and every member is normal. A rank theory of two independent slots, so the operator rank and the Kronecker rank are proportional and computable.
 
-**What it does not buy.** A cone of two-sided operators: the image is closed under sums, so no additive theory survives and the length collapses at one. A derivation, a nilpotent, a shear group or a Jordan block: the algebra is reduced and rigid. A spin structure or a double cover: the model is faithful. An ambient larger than twice the family: the deficit of the ambient over the family is exactly two lines, the traceless symmetric and the skew, and nothing else.
+**What it does not buy.** A cone of two-sided operators: the image is closed under sums, so no additive theory survives and the length collapses at one. A derivation, a nilpotent, a shear group or a Jordan block: the algebra is reduced and rigid. A spin structure or a double cover: the model is faithful. An ambient larger than twice the family: the deficit of the ambient over the family is exactly two lines, the traceless symmetric and the antisymmetric, and nothing else.
 
 **The reading of the category.** The reduced biquaternion pair sits between the complex and the quaternionic ones, and it is the only category of the block where the model is a **proper subspace of the ambient defined by linear conditions**, where the two-sided operator is a subspace, and where the algebra nevertheless has a genuine Peirce frame of order two. It is the category in which the matrix method is at its most transparent and least informative: everything holds, and everything holds because the algebra is a product of two fields.
 
@@ -366,7 +366,7 @@ so the bicommutant theorem holds for a reason that has nothing to do with finite
 7. The Kronecker display is $\mathsf M(\breve P)^{\mathsf T}\otimes\mathsf M(\breve Q)$, with trace $4Q_{\blacktriangle}P_{\blacktriangle}$, determinant $(\langle\breve Q\rangle_{\mathrm{ts}}\langle\breve P\rangle_{\mathrm{ts}})^{2}$ and rank in $\{0,1,2,4\}$: the four values are all attained, so the second rank is not vacuous.
 8. The coefficient array in the basis $L_{e_{\mu}}R_{e_{\nu}}$ is defined only modulo a two-dimensional space of relations, $L_{e_1}R_{e_1}=L_{e_2}R_{e_2}$ and $L_{e_1}R_{e_2}=L_{e_2}R_{e_1}$, and the array of a pair is always of rank at most one.
 9. The length is $0$ or $1$ on the family and undefined outside it, because the family is a subspace: the ladder of the biquaternion category collapses, and the collapse is the operator-theoretic content of semisimplicity.
-10. The automorphism group is $\mathbb{Z}_{2}$, realised by the conjugation with $\sigma_{3}$, which is outer in the algebra and inner in the ambient; there is no derivation; the ambient splits into the family, the traceless symmetric line and the skew line, and the frame is an orthogonal change of basis carrying the family to the diagonal subalgebra.
+10. The automorphism group is $\mathbb{Z}_{2}$, realised by the conjugation with $\sigma_{3}$, which is outer in the algebra and inner in the ambient; there is no derivation; the ambient splits into the family, the traceless symmetric line and the anti-Hermitian line, and the frame is an orthogonal change of basis carrying the family to the diagonal subalgebra.
 
 ## Summary of Notation
 
@@ -381,7 +381,7 @@ so the bicommutant theorem holds for a reason that has nothing to do with finite
 | $\Phi_{\breve Q}$ | the modulus two-sided operator, $=\operatorname{diag}(\lvert Q_{+}\rvert^{2},\lvert Q_{-}\rvert^{2})$ in the frame | this article |
 | $\ell$ | the length, in $\{0,1\}$ inside the family and undefined outside | this article |
 | $J=\operatorname{diag}(1,-1)$ | the conjugating element realising the tessarine sign | *$M_{2}(\mathbb{C})$ Reduced Representation* |
-| $\sigma_{3},i\sigma_{2}$ | the traceless symmetric and skew directions of the ambient | this article |
+| $\sigma_{3},i\sigma_{2}$ | the traceless symmetric and antisymmetric directions of the ambient | this article |
 
 ## Further Reading
 

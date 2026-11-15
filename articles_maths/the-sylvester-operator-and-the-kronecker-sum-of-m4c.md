@@ -133,7 +133,7 @@ $$
 =-\operatorname{tr}\bigl([A,Y]X\bigr),
 $$
 
-so $\operatorname{ad}_A$ is skew-adjoint for the trace form and its image is orthogonal to its kernel; the two dimensions add to sixteen because the form is nondegenerate.
+so $\operatorname{ad}_A$ is anti-self-adjoint for the trace form and its image is orthogonal to its kernel; the two dimensions add to sixteen because the form is nondegenerate.
 
 ## The Kronecker Sum and the Linear Equations
 

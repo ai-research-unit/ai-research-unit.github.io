@@ -121,15 +121,15 @@ $$
 
 *Proof.* The form is nondegenerate, so $F^{\flat}$ is an isomorphism; the second map is the canonical isomorphism above. The composite sends $u\otimes v$ to $u\otimes F(v,\cdot)$, that is to the map $w\mapsto F(v,w)u$.
 
-**Corollary (the two summands).** For $F$ symmetric, the isomorphism sends $\operatorname{sym}^2V$ onto the symmetric endomorphisms with respect to $F$, of dimension $3$, and $\Lambda^2V$ onto the skew endomorphisms, of dimension $1$.
+**Corollary (the two summands).** For $F$ symmetric, the isomorphism sends $\operatorname{sym}^2V$ onto the symmetric endomorphisms with respect to $F$, of dimension $3$, and $\Lambda^2V$ onto the anti-self-adjoint endomorphisms, of dimension $1$.
 
 *Proof.* The adjoint of the map $\Phi(u\otimes v):w\mapsto F(v,w)u$ with respect to $F$ is $\Phi(v\otimes u)$, because
 $$
 F(\Phi(u\otimes v)x,y)=F(v,x)F(u,y)=F(x,\Phi(v\otimes u)y).
 $$
-Hence the fixed tensors of the swap correspond to the self-adjoint operators and the anti-fixed ones to the skew operators. The dimensions are those of the two eigenspaces.
+Hence the fixed tensors of the swap correspond to the self-adjoint operators and the anti-fixed ones to the anti-self-adjoint operators. The dimensions are those of the two eigenspaces.
 
-**Remark (the alternating case).** For $F$ alternating, the adjoint of $\Phi(u\otimes v)$ is $-\Phi(v\otimes u)$; the symmetric tensors correspond to the operators that are skew for $F$, the Lie algebra $\mathfrak{sp}(2)$ of dimension $3$, and the alternating tensors to the scalars. **The decomposition $3+1$ is the same, but its interpretation as symmetric and skew operators depends on the symmetry of the form.**
+**Remark (the alternating case).** For $F$ alternating, the adjoint of $\Phi(u\otimes v)$ is $-\Phi(v\otimes u)$; the symmetric tensors correspond to the operators that are anti-self-adjoint for $F$, the Lie algebra $\mathfrak{sp}(2)$ of dimension $3$, and the alternating tensors to the scalars. **The decomposition $3+1$ is the same, but its interpretation as symmetric and anti-self-adjoint operators depends on the symmetry of the form.**
 
 **Remark (what the choice of form changes).** The isomorphism $V\otimes V\cong\operatorname{End}(V)$ depends on $F$: two forms give two isomorphisms, and their composite is not the identity on the square. **Without a form there is only the canonical isomorphism $V\otimes V^{*}\cong\operatorname{End}(V)$**, which uses the duality and not a metric.
 
@@ -178,9 +178,9 @@ $$
 $$
 A=\begin{pmatrix}1&1\\1&0\end{pmatrix},\qquad C=\begin{pmatrix}0&1\\1&1\end{pmatrix},
 $$
-the product $AC=\begin{pmatrix}1&2\\0&1\end{pmatrix}$ is not symmetric. The alternating square corresponds to the skew matrices, and in this dimension the product of two skew matrices is always symmetric, so it also leaves the line.
+the product $AC=\begin{pmatrix}1&2\\0&1\end{pmatrix}$ is not symmetric. The alternating square corresponds to the antisymmetric matrices, and in this dimension the product of two antisymmetric matrices is always symmetric, so it also leaves the line.
 
-**Remark (the biquaternion reading).** The algebra $(V\otimes V,\cdot_F)$ is isomorphic to $M_2(\mathbb{C})$, hence to the biquaternion algebra $\mathbb{B}$. **The tensor square with the twisted product is a second copy of the biquaternion algebra, built from the space and a form rather than from the tensor product of the field and the quaternions**; the symmetric and alternating squares are the fixed and anti-fixed spaces of the involution induced by the swap, and they correspond to the symmetric and skew matrices in the model. The algebra is *The Biquaternion Algebra*, and the matrix model is *$M_2(\mathbb{C})$ Pauli Representation*.
+**Remark (the biquaternion reading).** The algebra $(V\otimes V,\cdot_F)$ is isomorphic to $M_2(\mathbb{C})$, hence to the biquaternion algebra $\mathbb{B}$. **The tensor square with the twisted product is a second copy of the biquaternion algebra, built from the space and a form rather than from the tensor product of the field and the quaternions**; the symmetric and alternating squares are the fixed and anti-fixed spaces of the involution induced by the swap, and they correspond to the symmetric and antisymmetric matrices in the model. The algebra is *The Biquaternion Algebra*, and the matrix model is *$M_2(\mathbb{C})$ Pauli Representation*.
 
 ## The Decomposition under the Groups
 
@@ -209,7 +209,7 @@ where $\operatorname{sym}^2V$ is irreducible of dimension $3$ and $\Lambda^2V$ i
 
 The tensor square $V\otimes V$ has dimension $4$ and decomposes canonically under the swap into the symmetric square of dimension $3$ and the alternating square of dimension $1$: $4=3+1$, or $6+2$ over $\mathbb{R}$. The symmetric square is, after a basis, the space of binary quadratic forms $aQ_{\blacktriangle}^2+bQ_{\blacktriangle}Q_{\blacktriangledown}+cQ_{\blacktriangledown}^2$, with the rank-one elements forming the Veronese conic $b^2-4ac=0$ in $\mathbb{CP}^2$; the alternating square is the line of the determinant, on which $g$ acts by $\det g$, and it has no canonical generator.
 
-The square is canonically the endomorphism algebra only as $V\otimes V^{*}\cong\operatorname{End}(V)$, by $u\otimes\ell\mapsto(Q\mapsto\ell(Q)u)$. A nondegenerate bilinear form $F$ gives an isomorphism $V\otimes V\cong\operatorname{End}(V)$, $u\otimes v\mapsto(Q\mapsto F(v,Q)u)$, and a twisted product $(u\otimes v)(u'\otimes v')=F(v,u')u\otimes v'$ with identity $\sum_{ij}(F^{-1})_{ij}e_i\otimes e_j$; the resulting algebra is $M_2(\mathbb{C})\cong\mathbb{B}$. For $F$ symmetric the two summands correspond to the symmetric and the skew operators; for $F$ alternating they correspond to $\mathfrak{sp}(2)$ and the scalars. Under $\mathrm{SL}_2(\mathbb{C})$ the square is the sum of the irreducible representation of dimension $3$ and the trivial one, and under $\mathrm{GL}_2(\mathbb{C})$ the second summand is the determinant character.
+The square is canonically the endomorphism algebra only as $V\otimes V^{*}\cong\operatorname{End}(V)$, by $u\otimes\ell\mapsto(Q\mapsto\ell(Q)u)$. A nondegenerate bilinear form $F$ gives an isomorphism $V\otimes V\cong\operatorname{End}(V)$, $u\otimes v\mapsto(Q\mapsto F(v,Q)u)$, and a twisted product $(u\otimes v)(u'\otimes v')=F(v,u')u\otimes v'$ with identity $\sum_{ij}(F^{-1})_{ij}e_i\otimes e_j$; the resulting algebra is $M_2(\mathbb{C})\cong\mathbb{B}$. For $F$ symmetric the two summands correspond to the symmetric and the anti-self-adjoint operators; for $F$ alternating they correspond to $\mathfrak{sp}(2)$ and the scalars. Under $\mathrm{SL}_2(\mathbb{C})$ the square is the sum of the irreducible representation of dimension $3$ and the trivial one, and under $\mathrm{GL}_2(\mathbb{C})$ the second summand is the determinant character.
 
 ## Summary of Notation
 

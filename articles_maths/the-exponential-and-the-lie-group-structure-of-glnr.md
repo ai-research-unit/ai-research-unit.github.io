@@ -90,11 +90,11 @@ Meanwhile $X+Y=\begin{pmatrix}0&1\\1&0\end{pmatrix}$ has $(X+Y)^{2}=\mathrm{I}$,
 
 **The Lie algebra of $\mathrm{SL}_n(\mathbb{R})$ is the traceless part.** $\det e^{tX}=e^{t\operatorname{tr}X}=1$ for all $t$ exactly when $\operatorname{tr}X=0$, so the tangent space at the identity is the traceless subspace.
 
-**The Lie algebra of $\mathrm{O}(n)$ is the skew part.** Differentiate $Q(t)^{\mathsf T}Q(t)=\mathrm{I}$ at $t=0$ along $Q(t)=e^{tX}$: $X^{\mathsf T}+X=0$. Conversely $e^{tX}$ is orthogonal for all $t$ when $X$ is skew, because $(e^{tX})^{\mathsf T}=e^{tX^{\mathsf T}}=e^{-tX}=(e^{tX})^{-1}$.
+**The Lie algebra of $\mathrm{O}(n)$ is the antisymmetric part.** Differentiate $Q(t)^{\mathsf T}Q(t)=\mathrm{I}$ at $t=0$ along $Q(t)=e^{tX}$: $X^{\mathsf T}+X=0$. Conversely $e^{tX}$ is orthogonal for all $t$ when $X$ is antisymmetric, because $(e^{tX})^{\mathsf T}=e^{tX^{\mathsf T}}=e^{-tX}=(e^{tX})^{-1}$.
 
 **The Lie algebra of the upper triangular group is the upper triangular algebra.** The exponential of an upper triangular matrix is upper triangular, and the logarithm of an upper triangular matrix with positive diagonal is upper triangular; the group is connected and simply connected, so the exponential is a diffeomorphism onto it.
 
-**The dimension count is consistent with the decompositions.** $n^{2}=n(n-1)/2+n(n+1)/2$ is the split of the algebra into the skew and symmetric parts, and that is the Cartan decomposition at the level of the algebras.
+**The dimension count is consistent with the decompositions.** $n^{2}=n(n-1)/2+n(n+1)/2$ is the split of the algebra into the antisymmetric and symmetric parts, and that is the Cartan decomposition at the level of the algebras.
 
 ## The Exponential Is Not Global
 
@@ -104,7 +104,7 @@ Meanwhile $X+Y=\begin{pmatrix}0&1\\1&0\end{pmatrix}$ has $(X+Y)^{2}=\mathrm{I}$,
 
 **Theorem.** Every element of $\mathrm{GL}_n(\mathbb{R})^{+}$ is a product of at most two exponentials.
 
-*Proof.* By the polar decomposition $A=QP$ with $Q\in\mathrm{SO}(n)$ and $P$ positive definite. Every rotation is a rotation in a family of orthogonal planes, so $Q=e^{K}$ with $K$ skew, using the block form of *The Exponential of the Antisymmetric Part: One-Parameter Rotations*. And $P=e^{S}$ with $S=\log P$ symmetric, by the spectral theorem. So $A=e^{K}e^{S}$, a product of two exponentials.
+*Proof.* By the polar decomposition $A=QP$ with $Q\in\mathrm{SO}(n)$ and $P$ positive definite. Every rotation is a rotation in a family of orthogonal planes, so $Q=e^{K}$ with $K$ antisymmetric, using the block form of *The Exponential of the Antisymmetric Part: One-Parameter Rotations*. And $P=e^{S}$ with $S=\log P$ symmetric, by the spectral theorem. So $A=e^{K}e^{S}$, a product of two exponentials.
 
 **So the exponential covers the group after one multiplication, and the failure is confined to a single factor.** This is the sharp form of the statement that the image of the exponential is not the whole group.
 
@@ -118,7 +118,7 @@ $\mathrm{GL}_n(\mathbb{R})$ is an open subset of $M_n(\mathbb{R})$, hence a Lie 
 |---|---|
 | $\mathfrak{gl}_n(\mathbb{R})$ | the Lie algebra $M_n(\mathbb{R})$ with the commutator |
 | $\mathfrak{sl}_n(\mathbb{R})$ | the traceless matrices, of dimension $n^{2}-1$ |
-| $\mathfrak{so}(n)$ | the skew matrices, of dimension $n(n-1)/2$ |
+| $\mathfrak{so}(n)$ | the antisymmetric matrices, of dimension $n(n-1)/2$ |
 | $\gamma(t)=e^{tX}$ | the one-parameter subgroup of the tangent vector $X$ |
 | $\operatorname{BCH}$ | the Baker–Campbell–Hausdorff series for $\log(e^{X}e^{Y})$ |
 | $UT_n$ | the upper triangular group, of dimension $n(n+1)/2$ |
