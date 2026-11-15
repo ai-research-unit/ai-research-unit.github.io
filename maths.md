@@ -5189,16 +5189,34 @@
 <a href="articles_maths/worked-examples-in-the-complex-algebra.html">Worked Examples in the Complex Algebra</a>
 <!-- the computed case: the two involutions and their fixed-point subspaces exhibited on concrete elements; the matrix model of an element; the Galois action on a worked element. The norm criterion is a form and a distance and belongs to *Complex Norm and Invertibility*. -->
 
+<a href="articles_maths/the-group-of-involutions-and-the-two-subspaces-of-the-complex-space.html">The Group of Involutions and the Two Subspaces of the Complex Space</a>
+<!-- the involution group of the complex algebra: the two $\mathbb{R}$-linear involutions, the identity and the conjugation, forming $V_2$ against the Klein four-group of $\mathbb{B}$; the sign table of the two; the four fixed and anti-fixed spaces, the two trivial ones of the identity and the real line and the imaginary line of the conjugation; the single content-bearing decomposition $\mathbb{C}=\mathbb{R}\oplus i\mathbb{R}$ against the three of $\mathbb{B}$; the one non-zero intersection, the real line, against the fifteen of $\mathbb{B}$; and why the count is forced, the algebra being commutative and its only proper involution the one that generates the Galois group. -->
+
 #### The Products and the Classes
 
 <a href="articles_maths/complex-algebra.html">Complex Algebra</a>
 <!-- $\mathbb{C}=\mathbb{R}[x]/(x^2+1)$; the two fixed-point subspaces; the complex and conjugate decompositions; non-orderability. The quadratic form and the inner product are a form and a distance and belong to *Complex Norm and Invertibility*. -->
+
+<a href="articles_maths/the-two-products-of-the-complex-space.html">The Two Products of the Complex Space</a>
+<!-- the two products the complex space carries, $AC$ and $A\bar C$, the four general products of $\mathbb{B}$ falling to two because the quaternionic conjugation ${}^{\natural}$ is the identity here; the two each fixed by its own exchange, the plain one by the interchange and the sesquilinear one by the interchange composed with the conjugation of the value, so that neither splits and the four antisymmetric products of $\mathbb{B}$ have no object; the classes, both $\mathbb{C}$-linear in the first slot and differing in the second; the laws, associativity and the two-sided unit for $AC$ against non-associativity and the right unit alone for $A\bar C$; the two pairings $B$ and $H$ and the two adjoints; and the collapse proved as the degenerate case of *The Conjugate-Symmetric and Skew-Conjugate-Symmetric Parts of a Sesquilinear Product*. -->
+
+<a href="articles_maths/the-ternary-product-and-the-associator-of-the-complex-space.html">The Ternary Product and the Associator of the Complex Space</a>
+<!-- the ternary product $\{A,B,C\}=A\bar BC$ forced by the failure of associativity of $A\bar C$, although the plain product is associative; the outer and Hermitian symmetries; the contractions to the two binary products; the Jordan triple identity, which holds because the algebra is commutative; the algebraic $J^{*}$-structure, which names no binary product; the associator $[A,B,C]=A\bar B(\bar C-C)$, confined to the sesquilinear shape and vanishing exactly when the third slot is real; and the comparison with $\mathbb{B}$, where the identity holds but the associator is not confined to the shape. -->
 
 <a href="articles_maths/the-classes-of-element-of-the-complex-algebra.html">The Classes of Element of the Complex Algebra</a>
 <!-- the classes of element of the complex field, read on the classes the two products distinguish: the zero divisors, absent, every nonzero element being invertible, and the trivial left and right annihilators of every nonzero element; the idempotents, the two points $0$ and $1$ alone; the nilpotents, the zero element alone; the square roots of minus one, zero and plus one, the two of minus one and the two of plus one; the square roots of a general element, the two of each nonzero value and the trivial solvability criterion $A\neq0$; and the ideals, $\{0\}$ and $\mathbb{C}$ alone with the algebra simple and the Peirce decomposition degenerate, together with the modules, every module over a field being free, so that the finitely generated ones are classified by dimension alone. The field property behind all of them is *The Specificities of the Complex Algebra*. -->
 
 <a href="articles_maths/the-specificities-of-the-complex-algebra.html">The Specificities of the Complex Algebra</a>
 <!-- the properties that single out the general plain algebra of the complex numbers: it is a field, hence commutative, associative, without zero divisors, without nilpotents and without nontrivial idempotents; it is algebraically closed and complete; and it is the only commutative non-ordered finite-dimensional real division algebra; the consequences for the classes of element, the emptiness of the zero-divisor, idempotent and nilpotent classes, and the identity of the field with the group of units of its definite form. -->
+
+<a href="articles_maths/the-scalar-extension-of-the-complex-numbers-and-its-two-idempotents.html">The Scalar Extension of the Complex Numbers and Its Two Idempotents</a>
+<!-- the scalar extension $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$ and the only nontrivial idempotents in the complex family, $u=\tfrac12(1\otimes1+i\otimes i)$ and $v=\tfrac12(1\otimes1-i\otimes i)$, orthogonal, of sum $1\otimes1$ and outside the image of $Q\mapsto Q\otimes1$; the two projections they define and the Peirce decomposition they force on the extension; the reason the extension carries them and the algebra does not, $\mathbb{C}$ being a field; the tensor reading of the two factors, one the algebra and one the scalars; and the comparison with $\mathbb{C}^{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{C}^{\mathrm{spl}}\cong\mathbb{R}^{4}$, whose four idempotents are the two-point reading in each factor. -->
+
+<a href="articles_maths/the-two-forms-and-the-two-algebraic-norms-of-the-complex-space.html">The Two Forms and the Two Algebraic Norms of the Complex Space</a>
+<!-- the two forms the two products carry, $P(A,C)=AC$ and $H(A,C)=A\bar C$, the four forms of $\mathbb{B}$ falling to two, $P=N$ and $H=\mathrm{Kr}$; $P$ symmetric and isotropic of realified signature $(1,1)$, with no cone and no order; $H$ conjugate-symmetric, positive definite and multiplicative, of signature $(2,0)$; the two algebraic norms $A^{2}$ and $A\bar A$, the second the only one real, definite and multiplicative; the two forms on the real and on the imaginary line, where they coincide and are opposite; and the one function $H$ that is at once a form, a norm and a square. -->
+
+<a href="articles_maths/the-positivity-and-the-ray-of-squares-of-the-complex-space.html">The Positivity and the Ray of Squares of the Complex Space</a>
+<!-- the positivity of the Hermitian side: $H\ge0$ with equality only at the origin; the cone of squares, which is the ray of the non-negative reals and not a cone with interior, against the double cone of $\mathbb{C}^{\mathrm{spl}}$ and the Krein cone of $\mathbb{B}$; the order it defines, total on the ray and complete; the algebra as the Hilbert algebra of rank one; the Cauchy-Schwarz inequality and the case of equality, the proportionality by a real ray; the unitary group $U(1)$; and the Witt group of the Hermitian forms, which is $\mathbb{Z}$. -->
 
 #### The Forms and the Modulus
 
@@ -5242,6 +5260,16 @@
 
 <a href="articles_maths/m2r-cayley-representation-operators.html">$M_2(\mathbb{R})$ Cayley Representation : Operators</a>
 <!-- the carrier of dimension two against the ambient $M_2(\mathbb{R})$ of dimension four; the one-sided families equal, and the two-sided operator $X\mapsto QXP$ equal to the multiplication by $QP$, so that four parameters fall to two; the plain adjoint equal to the operator itself and the Frobenius adjoint equal to the operator of the conjugate; the Kronecker display $\mathsf{M}_2(P)^{\mathsf T}\otimes\mathsf{M}_2(Q)$ of rank four, of trace $4\operatorname{Re}Q\operatorname{Re}P$ and determinant $N(Q)^2N(P)^2$; the inner automorphisms trivial on the carrier and a rotation by $2\theta$ on the traceless symmetric plane, the smallest double cover $\mathrm{SO}(2)\to SO(3)$; the linear membership test $MJ=JM$; the span closed at the family itself, because $\mathbb{C}$ is simple but not central; the operator rank two against the coefficient rank one; the transpose as the one operator outside the family. -->
+
+#### The Modules
+
+<a href="articles_maths/the-hermitian-modules-and-the-unitary-witt-group-over-the-complex-algebra.html">The Hermitian Modules and the Unitary Witt Group over the Complex Algebra</a>
+<!-- the Hermitian modules over the complex algebra: every module free by the field property, so that a Hermitian module is classified by its rank alone; the canonical form on the free module of rank $n$, its Gram matrix and its definiteness; the unitary group $U(n)$, transitive on the forms of a fixed rank; the classification of the Hermitian forms by rank and signature over $\mathbb{R}$ and the Witt group $\mathbb{Z}$; the isotropic forms of the plain product, which have no Hermitian counterpart; and the comparison with the indefinite split case, where the isotropic vectors exist. -->
+
+#### Operators
+
+<a href="articles_maths/the-enveloping-operator-algebra-and-the-collapse-of-the-two-sided-action-on-the-complex-algebra.html">The Enveloping Operator Algebra and the Collapse of the Two-Sided Action on the Complex Algebra</a>
+<!-- the enveloping algebra $\mathbb{C}^{\mathrm{e}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$, of real dimension four and isomorphic to $\mathbb{C}\oplus\mathbb{C}$, and its action on $\mathbb{C}$; the collapse of the two-sided action, $\sum_i B_iXC_i=X\sum_iB_iC_i$, so that the action of the whole enveloping algebra is the multiplication by one element, of image real dimension two on a carrier of real dimension four, with a kernel of real dimension two: the action is not faithful and the two-sided operators add nothing to the one-sided ones; the one family $L_A=R_A$, the adjoint $L_A^{\dagger}=L_{\bar A}$ and the real self-adjoint line and imaginary skew line it cuts; the conjugate-linear operators outside the image, the conjugation itself among them; and the comparison with $\mathbb{B}$, where the action is faithful and the two-sided operators form a four-parameter family. -->
 
 ### Topology
 
@@ -5360,10 +5388,22 @@
 <a href="articles_maths/worked-examples-in-the-split-complex-algebra.html">Worked Examples in the Split-Complex Algebra</a>
 <!-- the computed case: the two involutions and their fixed-point subspaces; the idempotents and the two minimal ideals; explicit zero-divisor pairs $Q_1Q_2=0$ with $Q_1,Q_2\neq0$; worked hyperbolic and parabolic elements. The norm criterion is a form and a distance and belongs to *Norm and Invertibility in the General Split-Complex Algebra*. -->
 
+<a href="articles_maths/the-involutions-the-subspaces-and-the-idempotent-lines-of-the-split-complex-space.html">The Involutions, the Subspaces and the Idempotent Lines of the Split-Complex Space</a>
+<!-- the involution group of the split-complex ring, the identity and the conjugation $j\mapsto-j$, which coincides here with the idempotent conjugation, of order two against the Klein four-group of $\mathbb{B}$; the two decompositions, the degenerate one of the identity and $\mathbb{C}^{\mathrm{spl}}=\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}\oplus j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$ of the conjugation; the finer idempotent split $\mathbb{R}\Pi_+\oplus\mathbb{R}\Pi_-$, the finest of all; the one non-zero intersection, the real line; the closure of the real line and the failure of closure of the split imaginary line; and the two isotropic idempotent lines, which have no counterpart in the complex algebra. -->
+
+<a href="articles_maths/the-spectrum-and-the-two-point-structure-of-the-split-complex-numbers-over-r.html">The Spectrum and the Two-Point Structure of $\mathbb{C}^{\mathrm{spl}}$ over $\mathbb{R}$</a>
+<!-- $\mathbb{C}^{\mathrm{spl}}$ over $\mathbb{R}$ read through its spectrum: the algebra $\mathbb{R}\times\mathbb{R}$, its two characters, which are the evaluation at the two idempotents $Q\mapsto Q_\pm$, and the two points of the spectrum; the etale structure, the algebra being a product of two copies of the base and not a field; the exchange $j\mapsto-j$ acting on the two points as the only automorphism; the form the Galois correspondence takes here, a discrete two-point space instead of a degree-two extension; and the comparison with *Galois Theory of $\mathbb{C}/\mathbb{R}$, of which this is the split counterpart with the opposite conclusion. -->
+
 #### The Products and the Classes
 
 <a href="articles_maths/the-specificities-of-the-split-complex-algebra.html">The Specificities of the Split-Complex Algebra</a>
 <!-- the properties that single out the ring: commutative, associative, dimension two, reduced but not a field, the two idempotents and the null cone, isomorphic to $\mathbb{R}\oplus\mathbb{R}$, semisimple and not simple, the split analogue of the complex field, the consequences for the classes and the degeneracy of the matrix models. -->
+
+<a href="articles_maths/the-two-products-of-the-split-complex-space.html">The Two Products of the Split-Complex Space</a>
+<!-- the two products the split-complex space carries, $AC$ and $A\bar C$, and the collapse of the four general products to two; each fixed by its own exchange, so that no antisymmetric part exists and the four antisymmetric products of $\mathbb{B}$ have no object; the two on the coordinates, $A\bar C=(ac-bd)+(bc-ad)j$; the laws, associativity and the two-sided unit for $AC$ against the right unit alone for $A\bar C$; the two pairings $B$ and $H$; and the point that separates the split case from the complex one, the values and not the count, the idempotent coordinates making the second product componentwise. -->
+
+<a href="articles_maths/the-ternary-product-and-the-associator-of-the-split-complex-space.html">The Ternary Product and the Associator of the Split-Complex Space</a>
+<!-- the ternary product $\{A,B,C\}=A\bar BC$ in the idempotent coordinates, where it is componentwise; the outer and Hermitian symmetries; the contractions to the two binary products; the Jordan triple identity, which holds; the algebraic $J^{*}$-structure over the involutive ring; the associator $[A,B,C]=A\bar B(\bar C-C)$, confined to the sesquilinear shape and vanishing exactly when the third slot is real, its value a hyperbolic vector when it does not vanish; and the comparison with the complex case, where the two components coincide. -->
 
 <a href="articles_maths/the-classes-of-element-of-the-split-complex-algebra.html">The Classes of Element of the Split-Complex Algebra</a>
 <!-- the hub of the classes: the table of the classes and their articles; the partition into units, zero and zero divisors; the inclusions and disjointness among the classes; the roots of the central values and their cardinalities $4,1,0$; the order cone of squares $q\ge|q'|$ and its order; the two algebraic norms and the classes; the three central values compared. -->
@@ -5377,6 +5417,9 @@
 <a href="articles_maths/square-roots-of-a-general-element-in-the-split-complex-algebra.html">Square Roots of a General Element in the Split-Complex Algebra</a>
 <!-- the reduction to $\Xi_\pm^2=Q_\pm$; four roots when both coordinates are positive, two on the boundary minus the origin, one at the origin, none outside; the roots of a real scalar, of units and of zero divisors; the three central values recovered; the worked examples; the image of the square and the forward cone $q\ge|q'|$; the fibres of the square map. The order cone is *The Classes of Element of the Split-Complex Algebra*. -->
 
+<a href="articles_maths/the-square-map-of-the-split-complex-space.html">The Square Map of the Split-Complex Space</a>
+<!-- the square map $Q\mapsto Q^{2}$: its image, the forward cone $\{q\ge\lvert q\rvert\}$ of the coordinate $q\ge\lvert q^{\prime}\rvert$; its Jacobian $4(q^{2}-q^{\prime 2})$, the determinant of the multiplication by $2Q$, vanishing exactly on the null pair of lines, so that the null cone is the branch locus and the map is a local diffeomorphism off it; the two sheets over the interior of the cone, one over its boundary minus the origin, and none outside; the identification of the four inverse branches with the four roots of *Square Roots of a General Element in the Split-Complex Algebra*; and the contrast with $\mathbb{C}$, where the square is onto and the only critical point is the origin. -->
+
 <a href="articles_maths/ideals-and-peirce-decomposition-of-the-split-complex-algebra.html">Ideals and Peirce Decomposition of the Split-Complex Algebra</a>
 <!-- the ideals of the commutative algebra: the four ideals, the two minimal and maximal lines, the failure of simplicity and the reason; Artinian, semisimple, reduced and length two; the idempotents and the Peirce decomposition with its multiplication table, the Peirce coordinates, the collapse for the standard idempotent, the involutions and the real structure; the lattice of ideals, Boolean of four elements; the radical. -->
 
@@ -5389,6 +5432,12 @@
 <a href="articles_maths/spinors-as-peirce-coordinates-in-the-split-complex-algebra.html">Spinors as Peirce Coordinates in the Split-Complex Algebra</a>
 <!-- the rows $(Q_+,0)$ and $(0,Q_-)$; a spinor as a single real scalar; no gauge because the basis is canonical; no chiral split, the two rows being the two factors; no half-angle, the family having no continuous parameter. -->
 
+<a href="articles_maths/the-two-forms-and-the-two-algebraic-norms-of-the-split-complex-space.html">The Two Forms and the Two Algebraic Norms of the Split-Complex Space</a>
+<!-- $B(A,C)=AC$ and $H(A,C)=A\bar C$, the four forms falling to two, $P=N$ and $H=\mathrm{Kr}$; $B$ symmetric and definite of signature $(2,0)$, with the plane as its cone of squares; $H$ conjugate-symmetric and indefinite of signature $(1,1)$, with the null pair of lines as its isotropic set; the two algebraic norms $A^{2}$, $\mathbb{C}^{\mathrm{spl}}$-valued and anisotropic, and $N(A)=a^{2}-b^{2}$, real and indefinite; and the reversal of the complex case, where the definite form is the sesquilinear one and the isotropic set is a point. -->
+
+<a href="articles_maths/the-hermitian-form-the-double-cone-and-the-reversed-cauchy-schwarz-inequality.html">The Hermitian Form, the Double Cone and the Reversed Cauchy-Schwarz Inequality</a>
+<!-- the indefinite positivity of $H$: the cone of $H$-squares, the double cone $a^{2}\ge b^{2}$ with its two components, its interior of units and its boundary of zero divisors; the vanishing of $H$ on both idempotent lines, so that the form is totally isotropic there and the algebra is not a Hilbert algebra; the reversed Cauchy-Schwarz and triangle inequalities the indefiniteness forces; the order the cone defines, partial and not total; the unitary group of the module of rank one, which is the group of norm-one elements, the two branches of the hyperbola; and the comparison with the ray of the complex case. -->
+
 #### The Forms and the Split Norm
 
 <a href="articles_maths/norm-and-invertibility-in-the-general-split-complex-algebra.html">Norm and Invertibility in the General Split-Complex Algebra</a>
@@ -5399,6 +5448,9 @@
 
 <a href="articles_maths/annihilators-of-the-split-complex-algebra.html">Annihilators of the Split-Complex Algebra</a>
 <!-- the annihilator of a general product and the coincidence of the two sides in the commutative case; the annihilator as an ideal and as the kernel of $L_Q$; the matrix $\left(\begin{smallmatrix}q&q'\\q'&q\end{smallmatrix}\right)$, trace $2q$, determinant $Q\bar Q$, rank $2/1/0$; the annihilator $\{0\}$ off the cone, the opposite null line on the cone, the whole algebra at the origin; the annihilator of an ideal, the double annihilator and the two extremes; the distribution on the distinguished subspaces and the matrix model. -->
+
+<a href="articles_maths/the-level-sets-of-the-split-norm-and-the-hyperbolic-structure.html">The Level Sets of the Split Norm and the Hyperbolic Structure</a>
+<!-- the level sets of the split norm, the families of hyperbolas $a^{2}-b^{2}=c$, one for each sign of $c$, and the null pair of lines at $c=0$; the four components of a level set of non-zero value and the two branches of each; the action of the hyperbolic rotations, transitive on each branch, so that the level set of norm one is the orbit of $1$ under $O(1,1)$; the quotient of the plane by the group and the invariant it leaves; the null cone as the common boundary where the level sets meet; and the comparison with the circles of the complex plane, which are compact level sets of a definite form. -->
 
 #### Algebra with the Split Norm
 
@@ -5445,6 +5497,19 @@
 
 <a href="articles_maths/norm-and-invertibility-in-the-split-complex-algebra.html">Norm and Invertibility in the Split-Complex Algebra</a>
 <!-- the algebraic norm of the plain product, $\langle Q\rangle=Q^2=(q^2+q'^2)+2qq'j$, $\mathbb{C}^{\mathrm{spl}}$-valued and anisotropic, of realified Gram matrix $\operatorname{diag}(1,1)$; multiplicativity and invariance under conjugation; its real part the Euclidean form and its imaginary part $2qq'$; not a real norm; it does not decide invertibility, the zero divisor $1+j$ being the witness; the unit and the group of units named but not read from this norm. The criterion is *Norm and Invertibility in the General Split-Complex Algebra*. -->
+
+#### The Modules
+
+<a href="articles_maths/modules-over-the-split-complex-ring.html">Modules over the Split-Complex Ring</a>
+<!-- the modules over the split-complex ring, which is not a field: the two simple modules $S_+=\mathbb{R}\Pi_+$ and $S_-=\mathbb{R}\Pi_-$, the minimal ideals of *Ideals and Peirce Decomposition of the Split-Complex Algebra*; the finitely generated modules, which are pairs of real vector spaces through the isomorphism $\mathbb{C}^{\mathrm{spl}}\cong\mathbb{R}\oplus\mathbb{R}$, and their classification; the projective modules, $S_+$ being projective and not free, the sharpest difference from the field case; the submodules of the regular module; and the comparison with the complex algebra, where every module is free. -->
+
+<a href="articles_maths/the-hermitian-modules-and-the-hyperbolic-witt-group-over-the-split-complex-ring.html">The Hermitian Modules and the Hyperbolic Witt Group over the Split-Complex Ring</a>
+<!-- the Hermitian forms over the split-complex ring: a module read as a pair, a form as a pair of real forms, and the signature read as the pair of signs; the hyperbolic plane, its totally isotropic lines and its unitary group; the classification by rank and by the pair of signatures; the Witt group $\mathbb{Z}\oplus\mathbb{Z}$, one copy of $\mathbb{Z}$ to each idempotent component, against the single $\mathbb{Z}$ of the complex case; the isotropic forms of the plain product, which have a Hermitian counterpart here and none in the field; and the comparison with the definite case, where an isotropic vector does not exist. -->
+
+#### Operators
+
+<a href="articles_maths/the-enveloping-operator-algebra-and-the-collapse-of-the-two-sided-action-on-the-split-complex-ring.html">The Enveloping Operator Algebra and the Collapse of the Two-Sided Action on the Split-Complex Ring</a>
+<!-- the enveloping algebra $\mathbb{C}^{\mathrm{spl},\mathrm{e}}=\mathbb{C}^{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{C}^{\mathrm{spl}}\cong\mathbb{R}^{4}$, its four orthogonal idempotents $\tfrac14(1\pm j)\otimes(1\pm j)$, of sum $1\otimes1$ and outside the image of $Q\otimes1$, and its action on $\mathbb{C}^{\mathrm{spl}}$; the collapse $\sum_i B_iXC_i=X\sum_iB_iC_i$, so that the action is the multiplication by one element, of image and kernel of real dimension two each, hence not faithful; the two-sided operators adding nothing to the one-sided ones; the left and right families equal; the adjoint of the multiplication and the two lines it cuts; and the comparison with $\mathbb{B}$, where the action is faithful. -->
 
 ### Topology
 

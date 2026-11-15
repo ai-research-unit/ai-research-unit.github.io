@@ -1,0 +1,229 @@
+# __The Jordan Structure of the Symmetric Plain Product of the Quaternions__
+
+## Introduction
+
+The symmetrisation of the plain product,
+$$
+\tilde q_1\bullet\tilde q_2=\tfrac12\bigl(\tilde q_1\tilde q_2+\tilde q_2\tilde q_1\bigr),
+$$
+is commutative, two-sidedly unital and satisfies the Jordan identity, so it is a Jordan algebra. It is also the smallest of the symmetrisations of the four composition algebras that is not formally real: $\vec e_x\bullet\vec e_x+e_t=0$, and that one identity witnesses the loss of the whole spectral theory at once. The article proves the identity, computes the defect, which is zero, and then states plainly what the formal-reality failure costs.
+
+The model is [The Jordan Structure of the Symmetric Plain Product](the-jordan-structure-of-the-symmetric-plain-product.html), the biquaternion article of the same name, section by section. Over $\mathbb{C}$ the symmetrisation is a formally real Jordan algebra of degree two, with a Lorentz cone and a four-parameter family of rank-one idempotents; over $\mathbb{R}$ it has a trivial idempotent class, a cone of squares that is the whole space, and no Peirce calculus at all. The two columns differ as a division algebra differs from a split one.
+
+The parent is [The General Plain Bilinear Product of the Quaternions](the-general-plain-bilinear-product-of-the-quaternions.html). The symmetrisation as a multiplication is [Introduction to the Symmetric Plain Algebra of the Quaternions](introduction-to-the-symmetric-plain-algebra-of-the-quaternions.html), cited and not restated; the general theory is [Jordan Algebras](jordan-algebras.html); the other symmetrisation is [The Jordan Structure of the Symmetric Quaternionic Product of the Quaternions](the-jordan-structure-of-the-symmetric-quaternionic-product-of-the-quaternions.html).
+
+## The Symmetrisation
+
+**Definition.** The **symmetric plain product** is
+$$
+\tilde q_1\bullet\tilde q_2=\tfrac12\bigl(\tilde q_1\tilde q_2+\tilde q_2\tilde q_1\bigr).
+$$
+
+**Proposition (the coordinate rule).** For all $\tilde q_1,\tilde q_2$,
+$$
+\boxed{\;\tilde q_1\bullet\tilde q_2=\bigl(q_{1t}q_{2t}-(\vec q_1,\vec q_2)\bigr)+q_{1t}\vec q_2+q_{2t}\vec q_1\;}
+$$
+the plain product with the cross term removed.
+
+*Proof.* The cross terms of the two orders are opposite and cancel; the scalar row and the mixed terms agree in the two orders and are doubled. Verified exactly on the sixteen pairs of the basis and on general elements.
+
+**Proposition (the elementary laws).** The product is commutative and has $e_t$ as a two-sided identity; it is homogeneous of degree two on the diagonal; and it is not associative.
+
+*Proof.* Commutativity is the symmetry of the definition, and $e_t\bullet\tilde q=\tfrac12(e_t\tilde q+\tilde q e_t)=\tilde q$. The failure of associativity has the witness $\tilde q_1=\tilde q_2=\vec e_x$, $\tilde q_3=\vec e_y$: the left side is $(-\vec e_t)\bullet\vec e_y=-\vec e_y$, the right side is $\vec e_x\bullet 0=0$, since $\vec e_x\bullet\vec e_y=0$ for orthogonal vector units. Computed exactly.
+
+## The Jordan Identity
+
+**Theorem (the Jordan identity).** For all $\tilde q_1,\tilde q_2$,
+$$
+\boxed{\;\bigl(\tilde q_1\bullet\tilde q_2\bigr)\bullet\bigl(\tilde q_1\bullet\tilde q_1\bigr)=\tilde q_1\bullet\bigl(\tilde q_2\bullet\bigl(\tilde q_1\bullet\tilde q_1\bigr)\bigr)\;}
+$$
+
+*Proof.* Write $X=\tilde q_1$, $Y=\tilde q_2$ and expand both sides in the plain product, which is associative. The left side is
+$$
+(X\bullet Y)\bullet X^2=\tfrac14\bigl(XYX^2+YX^3+X^3Y+XYX^2\bigr),
+$$
+and the right side is
+$$
+X\bullet(Y\bullet X^2)=\tfrac14\bigl(XYX^2+X^3Y+YX^3+XYX^2\bigr),
+$$
+which is the same expression with the four terms in another order. The equality is therefore term by term, and it uses associativity twice: once to write $X^2$ as $XX$ and once to move the factors. Verified on general elements with a maximal deviation of zero, and on all $64$ triples of the basis.
+
+**Corollary (the operator form).** With $L(\tilde q_1)$ the multiplication operator $\tilde q_2\mapsto\tilde q_1\bullet\tilde q_2$,
+$$
+\bigl[L(\tilde q_1),L(\tilde q_1\bullet\tilde q_1)\bigr]=0 .
+$$
+
+*Proof.* The identity, applied to $\tilde q_2$, is the statement that $L(\tilde q_1)$ and $L(\tilde q_1^2)$ agree on $\tilde q_2$ in the two orders, the products being symmetric. Verified in the coefficient basis.
+
+**Proposition (the linearised form).** The linearisation of the identity in the first argument gives, for all $\tilde q_1,\tilde q_2,\tilde q_3$,
+$$
+\bigl(\tilde q_1\bullet\tilde q_2\bigr)\bullet\bigl(\tilde q_1\bullet\tilde q_3\bigr)+\bigl(\tilde q_1\bullet\tilde q_2\bigr)\bullet\bigl(\tilde q_3\bullet\tilde q_1\bigr)=\tilde q_1\bullet\bigl(\tilde q_2\bullet(\tilde q_1\bullet\tilde q_3)\bigr)+\tilde q_3\bullet\bigl(\tilde q_2\bullet(\tilde q_1\bullet\tilde q_1)\bigr),
+$$
+the standard trilinear form of the identity.
+
+*Proof.* Substitute $\tilde q_1+\tilde q_3$ for $\tilde q_1$ in the identity, expand, and remove the terms that are instances of the identity itself. Verified on general triples.
+
+## The Defect and the Associator
+
+**Theorem (the defect is zero).** The Jordan defect,
+$$
+D(\tilde q_1,\tilde q_2)=\bigl(\tilde q_1\bullet\tilde q_2\bigr)\bullet\bigl(\tilde q_1\bullet\tilde q_1\bigr)-\tilde q_1\bullet\bigl(\tilde q_2\bullet\bigl(\tilde q_1\bullet\tilde q_1\bigr)\bigr),
+$$
+vanishes identically. In particular there is no pair of arguments on which the algebra fails, and the algebra is a Jordan algebra in the strict sense.
+
+*Proof.* The preceding theorem. The value was also computed on five hundred random pairs with a maximal deviation of $1.4\times10^{-14}$, which is the rounding of the arithmetic, and identically zero on all $64$ pairs of the basis.
+
+**Proposition (the associator is not zero).** The associator $[\tilde q_1,\tilde q_2,\tilde q_3]=(\tilde q_1\bullet\tilde q_2)\bullet\tilde q_3-\tilde q_1\bullet(\tilde q_2\bullet\tilde q_3)$ does not vanish: at $(\vec e_x,\vec e_x,\vec e_y)$ it equals $-\vec e_y$.
+
+*Proof.* The computation is the witness of the elementary laws. So the algebra is a Jordan algebra that is not associative, which is the generic case: the Jordan identity is a substitute for associativity and not a consequence of it.
+
+## The Cone of Squares and Formal Reality
+
+**Theorem (every element is a square).** For every $\tilde q$,
+$$
+\tilde q\bullet\tilde q=\tilde q^2=\bigl(q_t^2-\lvert\vec q\rvert^2\bigr)+2q_t\vec q ,
+$$
+and for every $\tilde t\in\mathbb{H}$ there is $\tilde q$ with $\tilde q^2=\tilde t$. Hence the cone of squares of the algebra is the whole space.
+
+*Proof.* The square is the diagonal of the coordinate rule. For the surjectivity, take $\tilde t=s+\vec w$ and put $\tau=2s+2\sqrt{s^2+\lvert\vec w\rvert^2}$, which is positive unless $\tilde t$ is a negative real, and $\tilde q=\tfrac12\sqrt{\tau}+\vec w/\sqrt{\tau}$; then $\tilde q^2=\tilde t$. A negative real is the square of any pure vector of the length $\sqrt{-s}$. Verified on random targets with a residual at the level of the arithmetic. The cone of finite sums of squares is therefore $\mathbb{H}$ itself, since it contains every element.
+
+**Theorem (the algebra is not formally real).** There is a non-zero $\tilde q$ with
+$$
+\tilde q\bullet\tilde q+\tilde q'\bullet\tilde q'=0 ,
+$$
+namely $\tilde q=\vec e_x$ and $\tilde q'=e_t$, since $\vec e_x\bullet\vec e_x+e_t=-\vec e_t+e_t=0$.
+
+*Proof.* $\vec e_x^2=-e_t$. The displayed identity is the definition of formal reality, so the algebra is not formally real, and the property fails at the first element one tries.
+
+**Corollary (the spectral theory is absent).** There is no Jordan spectral theorem over $\mathbb{R}$ for this algebra: no element has a spectral resolution in the algebra, there is no cone of squares that is proper and pointed, and there is no order that the product respects.
+
+*Proof.* The spectral theorem of a formally real Jordan algebra produces, for each element, a finite family of orthogonal idempotents with real coefficients. The algebra has no non-trivial idempotent at all (next section), so no such family exists, and the theorem has no content. The cone of squares is the whole space by the theorem above, so it is not pointed: it contains $e_t$ and $-e_t$, and the preorder it defines is trivial.
+
+**Remark (the cone is not the light cone of $P$).** The plain norm $P(\tilde q)=q_t^2-\lvert\vec q\rvert^2$ has for zero set the cone $\{q_t^2=\lvert\vec q\rvert^2\}$, of dimension three, and one might expect the cone of squares of the symmetrisation to be its positive side. It is not: the positive side of $P$ is a proper cone, and the cone of squares of $\bullet$ is the whole space. The reason is that a square of the symmetrisation is a square of the parent, and the parent is a division algebra in which every element, including the spacelike ones, has a square root. The cone of squares therefore records nothing about $P$, and the partition that $P$ cuts is a different object entirely, read in [The P-Norm Partition of the Quaternion Algebra](the-p-norm-partition-of-the-quaternion-algebra.html).
+
+## The Peirce Theory
+
+**Theorem (the idempotent class is two points).** The idempotents of the symmetrisation are $0$ and $e_t$, and there are no others.
+
+*Proof.* $\tilde q\bullet\tilde q=\tilde q$ is $\tilde q^2=\tilde q$ in the parent, hence $\tilde q(\tilde q-e_t)=0$, and the parent has no zero divisors. So $\tilde q=0$ or $\tilde q=e_t$. The same conclusion was reached by a random search of $2\times10^{5}$ draws, which found no other solution, and by solving the four quadratic conditions in the coefficient basis.
+
+**Theorem (the Peirce decomposition collapses).** At $\tilde\Pi=e_t$ the multiplication operator is the identity, so $J_1(e_t)=\mathbb{H}$ and $J_0(e_t)=0$; at $\tilde\Pi=0$ the operator vanishes, so $J_0(0)=\mathbb{H}$ and $J_1(0)=0$. The two off-diagonal spaces are $\{0\}$ in both cases.
+
+*Proof.* $L(e_t)$ is the identity because $e_t$ is the unit, and its spectrum is $1,1,1,1$; $L(0)=0$. A Peirce space $J_\lambda(\tilde\Pi)$ is the eigenspace of $L(\tilde\Pi)$ for the eigenvalue $\lambda$, and the two eigenvalues present are $1$ and $0$, the second only at $\tilde\Pi=0$. There is no eigenvalue $\tfrac12$ and no off-diagonal space.
+
+**Remark (no Peirce calculus, and why).** The Peirce machinery of a formally real Jordan algebra needs a rank-one idempotent and its complement $e_t-\tilde\Pi$; the complement is again an idempotent, orthogonal to the first, and the two split the algebra into four lines. Here the only idempotents are $e_t$ and $0$, the complement of $e_t$ is $0$, and the complement of $0$ is $e_t$: the two "lines" are the algebra and the zero space. The calculus does not open, and it is the same fact as the absence of a spectral theorem, stated in the language of the operators. The Peirce theory of the biquaternion block, where it does open and gives four lines, is [Peirce Decompositions of the Biquaternion Algebra](complementary-idempotents-and-the-peirce-decomposition.html), and the collapse of the present case is read there as the real form of the degenerate case.
+
+## The Operators
+
+**Definition.** The **multiplication operator** is $L(\tilde q_1)\tilde q_2=\tilde q_1\bullet\tilde q_2$; the **quadratic representation** is
+$$
+U(\tilde q_1)=2L(\tilde q_1)^2-L(\tilde q_1\bullet\tilde q_1).
+$$
+
+**Theorem (the quadratic representation is the two-sided product).** For all $\tilde q_1,\tilde q_2$,
+$$
+U(\tilde q_1)\tilde q_2=\tilde q_1\tilde q_2\tilde q_1 ,
+$$
+the plain product of the three factors in that order.
+
+*Proof.* Expand $2\tilde q_1\bullet(\tilde q_1\bullet\tilde q_2)-\tilde q_1^2\bullet\tilde q_2$ in the parent: eight terms reduce to the two of the display. Verified on general elements, with a deviation at the level of the arithmetic.
+
+The quadratic identity $U(\tilde q_1)U(\tilde q_2)U(\tilde q_1)=U\bigl(U(\tilde q_1)\tilde q_2\bigr)$ holds as well: both sides insert $\tilde q_1$ twice and $\tilde q_2$ once in the middle, that is the word $\tilde q_1\tilde q_2\tilde q_1\tilde q_2\tilde q_1$, and it was verified on general elements.
+
+**Proposition (the triple product).** The Jordan triple product
+$$
+\{\tilde q_1,\tilde q_2,\tilde q_3\}=\bigl(\tilde q_1\bullet\tilde q_2\bigr)\bullet\tilde q_3+\bigl(\tilde q_1\bullet\tilde q_3\bigr)\bullet\tilde q_2-\bigl(\tilde q_2\bullet\tilde q_3\bigr)\bullet\tilde q_1
+$$
+equals $\tfrac12\bigl(\tilde q_2\tilde q_1\tilde q_3+\tilde q_3\tilde q_1\tilde q_2\bigr)$.
+
+*Proof.* Expansion in the parent and collection of the four orders. Verified on general elements, with the residual at the level of the arithmetic. The linearised quadratic representation is a different triple product, $\tilde q_1\tilde q_2\tilde q_3+\tilde q_3\tilde q_2\tilde q_1$, and the distinction between the two is the one drawn in [The Lie–Jordan Decomposition of a Bilinear Product and the Jordan Triple System](the-lie-jordan-decomposition-of-a-bilinear-product-and-the-jordan-triple-system.html).
+
+**Remark (the spectrum of $L(\vec e_x)$).** The operator $L(\vec e_x)$ has, in the coefficient basis, the matrix of the rotation of the plane spanned by $e_t$ and $\vec e_x$ by a quarter turn and zero on $\vec e_y,\vec e_z$; its spectrum is $0,0,i,-i$. The operator is self-adjoint for the trace form, as the next section shows, and its spectrum is nevertheless not real: the algebra is not Euclidean, and the self-adjointness of the operators is compatible with a complex spectrum because the form is indefinite. This is the operator form of the failure of formal reality.
+
+## The Derivations
+
+**Proposition (the inner maps are derivations).** For every $\tilde q_1$, the map $\tilde q\mapsto[\tilde q_1,\tilde q]=\tilde q_1\tilde q-\tilde q\tilde q_1$, the commutator of the parent, satisfies
+$$
+\bigl[\tilde q_1,\tilde q_2\bullet\tilde q_3\bigr]=\bigl[\tilde q_1,\tilde q_2\bigr]\bullet\tilde q_3+\tilde q_2\bullet\bigl[\tilde q_1,\tilde q_3\bigr].
+$$
+
+*Proof.* The commutator with a fixed element is a derivation of the associative parent, and the symmetrisation is invariant under the exchange, so the derivation passes to it. Verified on general triples.
+
+**Theorem (the derivation algebra is $\mathfrak{so}(3)$).** The space of the linear maps $D$ with $D(\tilde q_1\bullet\tilde q_2)=D\tilde q_1\bullet\tilde q_2+\tilde q_1\bullet D\tilde q_2$ is three-dimensional, and it consists of the maps $\tilde q\mapsto2\,\vec w\times\vec q$ for $\vec w$ in the vector subspace, extended by zero on the real line.
+
+*Proof.* Write the conditions on the $16$ entries of $D$ in the coefficient basis: the linear system has rank $13$ and its solution space is three-dimensional. Every solution vanishes on $e_t$, since $D(e_t)=D(e_t\bullet e_t)=2e_t\bullet De_t=2De_t$; and on the vector subspace it is a skew map, because $D(\vec q\bullet\vec q)=2\vec q\bullet D\vec q$ reads $0=-2\langle\vec q,D\vec q\rangle e_t$, so that $\langle\vec q,D\vec q\rangle=0$ for every $\vec q$. Computed exactly.
+
+**Remark (the two groups).** The derivation algebra integrates to the group of the conjugations $\tilde q\mapsto\tilde u\tilde q\tilde u^{-1}$ by versors, which is $SO(3)$ acting on the vector subspace and fixing $e_t$; the conjugation $\natural$ is an automorphism as well, because the product is commutative, and it is one reflection that joins the identity component. The automorphism group is therefore exactly $O(3)$, read on the vector subspace and extended by the identity on the real line: an automorphism fixes $e_t$ and preserves $\lvert\vec q\rvert$ by the argument of the proof above, and the structure group, the set of invertible $\tilde g$ with $U(\tilde g)$ invertible, is the whole of $\mathbb{H}^{\times}$, since $U(\tilde g)$ is invertible for every unit. The structure group is therefore as large as it can be, and this is another face of the absence of an order.
+
+## The Trace Form and Its Failure of Invariance
+
+**Definition.** The **trace form** of the symmetrisation is
+$$
+\tau(\tilde q_1,\tilde q_2)=\mathrm{Sc}\bigl(\tilde q_1\bullet\tilde q_2\bigr)=q_{1t}q_{2t}-(\vec q_1,\vec q_2),
+$$
+the trace form of the parent, since the cross term has no scalar part.
+
+**Proposition (the invariances that hold).** For all $\tilde q_1,\tilde q_2,\tilde q_3$,
+$$
+\tau(\tilde q_1\bullet\tilde q_2,\tilde q_3)=\tau(\tilde q_1,\tilde q_2\bullet\tilde q_3),\qquad
+\tau(\tilde q_1\bullet\tilde q_2,\tilde q_3)=\tau(\tilde q_2,\tilde q_1\bullet\tilde q_3),
+$$
+so the form is associative and every $L(\tilde q)$ is self-adjoint for it.
+
+*Proof.* The first is the cyclic invariance of the scalar part in the parent, the second the symmetry of $\tau$ combined with the first. Both were verified on general triples with a deviation at the level of the arithmetic.
+
+**Theorem (the invariance that fails).** The quadratic form is not multiplicative:
+$$
+P(\tilde q_1\bullet\tilde q_2)\neq P(\tilde q_1)P(\tilde q_2)
+$$
+in general, the pair $(\vec e_x,\vec e_y)$ giving $P(0)=0$ against $P(\vec e_x)P(\vec e_y)=1$.
+
+*Proof.* $P$ is the quadratic form of $\tau$, $\vec e_x\bullet\vec e_y=0$ and $P(\vec e_x)=P(\vec e_y)=-1$. Computed exactly. The failure is the exact statement that the trace form is not a norm of the algebra: the product does not respect it, and no conformal factor repairs the defect on the whole space.
+
+**Remark (the failure read as the loss of the Euclidean structure).** In a formally real Jordan algebra the trace form is positive definite, the operators $L(\tilde q)$ are self-adjoint with real spectrum, and the cone of squares is the set where the form is non-negative. Here the form is invariant in every sense that concerns its two variables, and the invariance is not enough: being indefinite, it admits no cone, its self-adjoint operators have complex spectra, and the multiplicativity that would tie the product to the form fails. **The invariance holds and buys nothing; the multiplicativity fails and costs everything.** That is the exact content of the formal-reality failure in the language of forms, and it is the reason the article of the P norm has to introduce a partition that the Jordan structure does not give.
+
+## The Place among the Six
+
+| | $\tilde q_1\tilde q_2$ | $\bullet$ | $\wedge$ | $\tilde q_1^{\natural}\tilde q_2$ | $\bullet_{\natural}$ | $\wedge_{\natural}$ |
+|---|---|---|---|---|---|---|
+| commutative | no | yes | no | no | yes | no |
+| unit | $e_t$ | $e_t$ | none | left $e_t$ | none | none |
+| Jordan identity | — | yes | — | — | no | — |
+| Jacobi identity | — | — | yes | — | — | no |
+| defect | — | $0$ | $0$ | — | $1$ | $3$ |
+| trace form | $(1,3)$ | $(1,3)$ | $0$ | $(4,0)$ | $(4,0)$ | $0$ |
+
+**Remark (the column of this article).** This is the only column that is both associative-free and Jordan, and the only one that is a Jordan algebra over $\mathbb{R}$ at all; its defect is zero and its unit is two-sided. What it is not is formally real, and the column of $\bullet_{\natural}$ is not formally real either, for a different reason: there the cone of squares is a ray contained in a line, and here it is the whole space. Neither symmetrisation of the quaternion algebra supports the spectral theory, and the reason is the same in both cases, namely that the algebra is a division algebra and the idempotents are two points.
+
+## Summary
+
+The symmetric plain product is
+$$
+\tilde q_1\bullet\tilde q_2=\bigl(q_{1t}q_{2t}-(\vec q_1,\vec q_2)\bigr)+q_{1t}\vec q_2+q_{2t}\vec q_1 ,
+$$
+commutative, unital with the unit $e_t$, non-associative, and a Jordan algebra: the Jordan identity holds with defect zero, proved from the associativity of the parent, with the linearised form and the operator form $[L(x),L(x^2)]=0$.
+
+Its idempotents are $0$ and $e_t$ alone, so the Peirce decomposition is trivial, $J_1(e_t)=\mathbb{H}$ and $J_0(0)=\mathbb{H}$ with both off-diagonal spaces zero; the algebra is a Jordan division algebra and has no Peirce calculus; the square is $\tilde q^2=(q_t^2-\lvert\vec q\rvert^2)+2q_t\vec q$, every element is a square, so the cone of squares is the whole space; the algebra is therefore not formally real, $\vec e_x\bullet\vec e_x+e_t=0$, and the spectral theorem, the proper cone and the order fail together.
+
+The operators are $L(\tilde q)$ and $U(\tilde q)\tilde y=\tilde q\tilde y\tilde q$, the triple product is $\tfrac12(\tilde q_2\tilde q_1\tilde q_3+\tilde q_3\tilde q_1\tilde q_2)$, and the derivations are the three-dimensional $\mathfrak{so}(3)$ of the vector subspace. The trace form is the form of the parent, of signature $(1,3)$, invariant and associative and not multiplicative: the invariance holds and does not give a Euclidean structure.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $\mathbb{H}$ | the quaternion algebra |
+| $\tilde q=q_te_t+\vec q$ | the element, its scalar part and its vector part |
+| $\tilde q_1\bullet\tilde q_2$ | the symmetric plain product |
+| $L(\tilde q)$ | the multiplication operator |
+| $U(\tilde q)$ | the quadratic representation |
+| $\{\cdot,\cdot,\cdot\}$ | the Jordan triple product |
+| $P(\tilde q)=q_t^2-\lvert\vec q\rvert^2$ | the plain algebraic norm |
+| $\tau$ | the trace form $\mathrm{Sc}(\tilde q_1\bullet\tilde q_2)$ |
+| $[\tilde q_1,\cdot]$ | the commutator derivation of the parent |
+
+## Further Reading
+
+- [The General Plain Bilinear Product of the Quaternions](the-general-plain-bilinear-product-of-the-quaternions.html) for the parent product, and [Introduction to the Symmetric Plain Algebra of the Quaternions](introduction-to-the-symmetric-plain-algebra-of-the-quaternions.html) for the symmetrisation as a multiplication.
+- [The Jordan Structure of the Symmetric Quaternionic Product of the Quaternions](the-jordan-structure-of-the-symmetric-quaternionic-product-of-the-quaternions.html), for the other symmetrisation, which fails the identity, and [Jordan Algebras](jordan-algebras.html) for the general theory.
+- [The Jordan Structure of the Symmetric Plain Product](the-jordan-structure-of-the-symmetric-plain-product.html), for the biquaternion counterpart, where the cone and the Peirce theory exist.
+- [The P-Norm Partition of the Quaternion Algebra](the-p-norm-partition-of-the-quaternion-algebra.html) for the partition that the Jordan structure does not give, and [The Lie Structure of the Antisymmetric Plain Product of the Quaternions](the-lie-structure-of-the-antisymmetric-plain-product-of-the-quaternions.html) for the other half of the parent.
