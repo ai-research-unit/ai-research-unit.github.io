@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Rotation Factor in the Complexified Defining Representation — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-rotation-factor-in-the-complexified-defining-representation"><strong>The Rotation Factor in the Complexified Defining Representation</strong></h1>
+<h2 id="the-claim">The Claim</h2>
+<p><strong>One sentence.</strong> The rotation factor $\tilde u_{\mathrm r}$ of the polar decomposition of a biquaternion is an element of $SU(2)$, and the rotation it performs can be written instead as a real $3\times3$ matrix $R$, read over $\mathbb{C}$ inside $SU(3)$ and padded to $\operatorname{diag}(R,1)$ inside $SU(4)$; the second writing is direction-free, needs no covering group, and is exactly the bottom-right block of a matrix the corpus already prints.</p>
+<p><strong>Why this is worth an article.</strong> The corpus reads the rotation factor in one display only, the $2\times2$ block of the Peirce frame, and that display privileges one axis. The paper under reading develops a second display in the abstract, and the corpus has never written it down for the rotor. This article transposes the paper into the corpus's own objects, with the matrices written out, and states exactly what changes.</p>
+<p><strong>The two writings in one line each.</strong></p>
+<ul>
+<li>The <strong>spinor writing</strong>: $\tilde u_{\mathrm r}$ itself, a unit real quaternion, an element of $SU(2)=S^3$, read in the $2\times2$ block of a frame.</li>
+<li>The <strong>vector writing</strong>: the matrix $R(\tilde u_{\mathrm r})$ of the map $\vec v\mapsto\tilde u_{\mathrm r}\vec v\tilde u_{\mathrm r}^{\natural}$ on the vector subspace, a real orthogonal matrix of determinant one, read with no frame at all.</li>
+</ul>
+<p><strong>What the article establishes.</strong> Five statements, each with a recomputation.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>statement</th>
+<th>where</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the vector image of the rotor is a real orthogonal matrix of determinant one, and it equals the Rodrigues matrix of the same axis and angle</td>
+<td>§<em>The Vector Image of the Rotor</em></td>
+</tr>
+<tr>
+<td>its three generators have the same shape, none is diagonal, and a cyclic relabelling of the axes permutes them</td>
+<td>§<em>The Three Generators, and What Makes the Display Direction-Free</em></td>
+</tr>
+<tr>
+<td>the same array read over $\mathbb{C}$ lies in $SU(3)$, and $\operatorname{diag}(R,1)$ lies in $SU(4)$ with the fourth entry forced to $1$</td>
+<td>§<em>The Complexification</em>, §<em>The Padding to SU(4)</em></td>
+</tr>
+<tr>
+<td>the padded matrix is the bottom-right block of the axis-free matrix of the two-sided operator $L_{\mathrm{axf}}(\tilde u_{\mathrm r})R_{\mathrm{axf}}(\tilde u_{\mathrm r}^{\natural})$, whose top-left block is $1$</td>
+<td>§<em>The Matrix the Corpus Already Prints</em></td>
+</tr>
+<tr>
+<td>the vector writing is two-to-one in $\tilde u_{\mathrm r}$, and the surviving kernel is the central sign $\pm e_t$, which the branch cut of the polar decomposition also produces</td>
+<td>§<em>The Sign, and Where It Goes</em></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>What the article does not claim.</strong> It does not claim that the defining representation replaces $SU(2)$. It does not carry the double cover, and it cannot: a $3\times3$ real matrix has no half-angle and no sign under $2\pi$. It does not claim that the biquaternion should be abandoned for a matrix algebra: the division algebra, the quaternionic norm and the orientation are in the algebra and not in the matrix. It claims a division of labour: the vector writing for the vector sector, the spinor writing for the spinor sector.</p>
+<p><strong>The conventions.</strong> The algebra, the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and the four conjugations are those of <em>Algebra and Element Conventions</em> and <em>The Biquaternion Algebra</em>. The four-factor word is that of <em>The Polar Decomposition of an N-Regular Biquaternion</em>, whose symbols this article keeps: $\Rho$, $r$, $\varkappa_{\mathrm{phs}}$, $\tilde U_{\mathrm b}$, $\tilde u_{\mathrm r}$. The two matrix frames are those of <em>$M_4(\mathbb{C})$ Axis-Free Representation</em> and <em>$M_4(\mathbb{C})$ Pauli Representation</em>, and the rule on the two legacy arrays is that of <em>Matrix Representations Conventions</em>, §<em>The Rule on Pauli and Gamma Matrices</em>. No legacy array is written in this article.</p>
+<h2 id="the-object-the-word-and-its-rotor">The Object: the Word and Its Rotor</h2>
+<p><strong>The word.</strong> On the $\natural$-regular set, the element is written uniquely as four factors,</p>
+<p>$$
+\tilde Q=r\,\varkappa_{\mathrm{phs}}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},
+$$</p>
+<p>with $r>0$ the scale, $\varkappa_{\mathrm{phs}}$ the central phase of modulus one, $\tilde U_{\mathrm b}$ the boost, Hermitian positive definite of norm one, and $\tilde u_{\mathrm r}$ the rotor.</p>
+<p><strong>The rotor.</strong> It is</p>
+<p>$$
+\tilde u_{\mathrm r}=\tilde U_{\mathrm b}^{-1}\tilde U,\qquad \tilde U=\tilde Q/\Rho,
+$$</p>
+<p>and it has three properties at once: it is $*$-unitary, $\tilde u_{\mathrm r}\tilde u_{\mathrm r}^{*}=e_t$; it has quaternionic norm one, $\langle\tilde u_{\mathrm r}\rangle_{\natural}=1$; and its four coefficients are real. The third property follows from the first two, because the determinant of the $2\times2$ image is the quaternionic norm, so the two conditions say that the image is unitary of unit determinant: the versor group, and therefore a real quaternion of norm one.</p>
+<p><strong>Its closed form.</strong> With $s=\operatorname{Sc}(\tilde U\tilde U^{*})$,</p>
+<p>$$
+\tilde u_{\mathrm r}=\frac{(2s+1)e_t-\tilde U\tilde U^{*}}{\sqrt{2(1+s)}}\;\tilde U .
+$$</p>
+<p>The scalar $s$ is real and at least one, so the denominator is real and positive.</p>
+<p><strong>What the rotor is, as a set.</strong> The rotors are the unit sphere</p>
+<p>$$
+SU(2)=\{\tilde u\in\mathbb{H}_{\mathbb{B}}:\langle\tilde u\rangle_{\natural}=1\}=S^{3},
+$$</p>
+<p>of real dimension three. The scale and the phase are central; the boost and the rotor are not, and their order is part of the definition.</p>
+<p><strong>The four dimensions.</strong> They add to eight, $8=1+1+3+3$, the real dimension of the algebra. The word is a coordinate system on the group of units, and the rotor is three of the eight coordinates.</p>
+<p><strong>Why the rotor is the only factor that acts by conjugation.</strong> The phase is central, so it multiplies every element of the algebra by one scalar; the boost is positive and its one-parameter subgroups are non-compact; the rotor is the only factor that moves the vector part relative to the scalar line, because it is the only factor that acts by conjugation. The polar article puts it this way: the circle inside the rotor is a one-parameter subgroup of $SU(2)$, it acts by conjugation, it fixes the scalar line and it acts on the vector part.</p>
+<p><strong>The one fact this article takes from that sentence.</strong> The action of the rotor on the vector subspace is already the object that the defining representation writes. Everything else in the article is the matrix form of that action.</p>
+<p><strong>The notation of the paper.</strong> The source paper writes $u_r$ and calls it the rotation factor. This article writes $\tilde u_{\mathrm r}$, as the corpus does, and keeps the word <em>rotor</em> where the group is meant and <em>rotation factor</em> where the word of the decomposition is meant. The two names are one object.</p>
+<h2 id="the-vector-image-of-the-rotor">The Vector Image of the Rotor</h2>
+<h3 id="the-map">The Map</h3>
+<p><strong>Definition.</strong> Let $\tilde Q\in\mathbb{B}$ and let $\vec v\in\mathbb{B}_{V}$ be a vector. Put</p>
+<p>$$
+\Phi_{\tilde Q}(\vec v)=\tilde Q\,\vec v\,\tilde Q^{\natural}.
+$$</p>
+<p>This is a $\mathbb{C}$-linear map on the three-dimensional complex space $\mathbb{B}_{V}$, because $\natural$ is $\mathbb{C}$-linear and the coefficients are central.</p>
+<p><strong>The scalar part vanishes.</strong> For every $\tilde Q$ and every $\vec v\in\mathbb{B}_{V}$,</p>
+<p>$$
+\operatorname{Sc}\bigl(\tilde Q\vec v\tilde Q^{\natural}\bigr)=\operatorname{Sc}\bigl(\tilde Q^{\natural}\tilde Q\vec v\bigr)=\operatorname{Sc}\bigl(\langle\tilde Q\rangle_{\natural}\vec v\bigr)=\langle\tilde Q\rangle_{\natural}\operatorname{Sc}(\vec v)=0,
+$$</p>
+<p>the first equality by the cyclic invariance of the scalar part, the second by $\tilde Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}e_t$, the third by $\vec v$ being pure. So the image of $\mathbb{B}_{V}$ lies in $\mathbb{B}_{V}$, and $\Phi_{\tilde Q}$ is a map of $\mathbb{B}_{V}$ into itself.</p>
+<p><strong>Definition of the matrix.</strong> Write $T(\tilde Q)$ for the matrix of $\Phi_{\tilde Q}$ in the basis $(\vec e_x,\vec e_y,\vec e_z)$ of $\mathbb{B}_{V}$,</p>
+<p>$$
+\Phi_{\tilde Q}(\vec v)=T(\tilde Q)\,\vec v,\qquad
+T(\tilde Q)\in M_3(\mathbb{C}).
+$$</p>
+<p>The matrix is complex, and it is the $3\times3$ array this article is about.</p>
+<p><strong>Multiplicativity.</strong> For every pair,</p>
+<p>$$
+T(\tilde Q_1\tilde Q_2)=T(\tilde Q_1)T(\tilde Q_2).
+$$</p>
+<p><em>Proof.</em> $(\tilde Q_1\tilde Q_2)\vec v(\tilde Q_1\tilde Q_2)^{\natural}=\tilde Q_1\tilde Q_2\vec v\tilde Q_2^{\natural}\tilde Q_1^{\natural}$, because $\natural$ reverses the order, and the right side is $\Phi_{\tilde Q_1}\bigl(\Phi_{\tilde Q_2}(\vec v)\bigr)$. Verified on one hundred random pairs with residual $5.1\times10^{-14}$.</p>
+<p><strong>Homogeneity, and the reason the map is not an algebra representation.</strong> For a central scalar $\lambda$,</p>
+<p>$$
+T(\lambda\tilde Q)=\lambda^{2}T(\tilde Q),
+$$</p>
+<p>because $\lambda^{\natural}=\lambda$ and $\lambda$ passes through $\vec v$. So the map is quadratic in the element. It is a homomorphism of the multiplicative monoid and not a linear representation of the algebra: it respects products, it does not respect sums. This is the algebraic reason the vector picture sees the element only through its square, and §<em>The Sign, and Where It Goes</em> reads the consequence.</p>
+<h3 id="the-rotor-case">The Rotor Case</h3>
+<p><strong>Proposition (the rotor gives a real orthogonal matrix).</strong> Let $\tilde u$ be a rotor. Then $T(\tilde u)$ is a real $3\times3$ matrix and</p>
+<p>$$
+T(\tilde u)^{\mathsf T}T(\tilde u)=\mathrm I_3,\qquad \det T(\tilde u)=1 .
+$$</p>
+<p><em>Proof.</em> The rotor is a real quaternion, so $\tilde u^{\natural}=\tilde u^{-1}$ and the map is $\vec v\mapsto\tilde u\vec v\tilde u^{-1}$. The coefficients of the result are real, because the product of three real quaternions is a real quaternion and the vector part of a product of real quaternions has real coefficients. For the orthogonality, use the real symmetric form on $\mathbb{B}_{V}$,</p>
+<p>$$
+b(\vec v_1,\vec v_2)=-\operatorname{Sc}(\vec v_1\vec v_2)=\vec v_1\cdot\vec v_2 ,
+$$</p>
+<p>which is positive definite on real vectors. Then</p>
+<p>$$
+b\bigl(\Phi(\vec v_1),\Phi(\vec v_2)\bigr)=-\operatorname{Sc}\bigl(\tilde u\vec v_1\vec v_2\tilde u^{-1}\bigr)=-\operatorname{Sc}\bigl(\vec v_1\vec v_2\bigr)=b(\vec v_1,\vec v_2),
+$$</p>
+<p>by the cyclic invariance of the scalar part. A real matrix that preserves $\vec v_1\cdot\vec v_2$ is orthogonal. The determinant is multiplicative and equals $1$ at $\tilde u=e_t$; the versor sphere is connected, so the determinant is constant on it and equals $1$ everywhere.</p>
+<p><strong>The Rodrigues form.</strong> Write the rotor by its axis and angle,</p>
+<p>$$
+\tilde u=\cos\frac{\theta}{2}\,e_t+\sin\frac{\theta}{2}\,\vec n,\qquad \vec n\in\mathbb{R}^{3},\quad \lvert\vec n\rvert=1 .
+$$</p>
+<p>Then</p>
+<p>$$
+T(\tilde u)=\mathrm I_3+\sin\theta\,K_{\vec n}+(1-\cos\theta)\,K_{\vec n}^{2},
+\qquad K_{\vec n}=n_xK_x+n_yK_y+n_zK_z,
+$$</p>
+<p>with the three matrices of the next section. This is the Rodrigues formula, and it is the statement that the vector image of the rotor is the rotation of axis $\vec n$ and angle $\theta$.</p>
+<p><strong>The check.</strong> Over one hundred random rotors the largest entry of $T(\tilde u)$ minus the Rodrigues matrix is $4.4\times10^{-16}$.</p>
+<p><strong>The Rodrigues matrix written out.</strong> With $c_\theta=\cos\theta$, $s_\theta=\sin\theta$,</p>
+<p>$$
+T(\tilde u)=
+\begin{pmatrix}
+c_\theta+n_x^{2}(1-c_\theta)&n_xn_y(1-c_\theta)-n_zs_\theta&n_xn_z(1-c_\theta)+n_ys_\theta\\
+n_yn_x(1-c_\theta)+n_zs_\theta&c_\theta+n_y^{2}(1-c_\theta)&n_yn_z(1-c_\theta)-n_xs_\theta\\
+n_zn_x(1-c_\theta)-n_ys_\theta&n_zn_y(1-c_\theta)+n_xs_\theta&c_\theta+n_z^{2}(1-c_\theta)
+\end{pmatrix}.
+$$</p>
+<p>The diagonal carries the squares of the components of the axis; the off-diagonal carries the products and the single terms in $s_\theta$. The symmetric part of the array depends on $\vec n$ only through $\vec n\vec n^{\mathsf T}$, which is the projector on the axis, and the antisymmetric part is $\sin\theta$ times the generator of the axis.</p>
+<p><strong>The same formula as a map.</strong> On a vector $\vec v$,</p>
+<p>$$
+R\vec v=\cos\theta\,\vec v+\sin\theta\,(\vec n\times\vec v)+(1-\cos\theta)(\vec n\cdot\vec v)\,\vec n,
+$$</p>
+<p>which is Rodrigues' formula in its usual form. The first term keeps the vector, the second turns it by a quarter turn about the axis, and the third restores its component along the axis.</p>
+<p><strong>The three coordinate cases, written out.</strong></p>
+<p>$$
+T\Bigl(\cos\frac{\theta}{2}+\sin\frac{\theta}{2}\vec e_x\Bigr)=
+\begin{pmatrix}
+1&0&0\\
+0&\cos\theta&-\sin\theta\\
+0&\sin\theta&\cos\theta
+\end{pmatrix},
+$$</p>
+<p>$$
+T\Bigl(\cos\frac{\theta}{2}+\sin\frac{\theta}{2}\vec e_y\Bigr)=
+\begin{pmatrix}
+\cos\theta&0&\sin\theta\\
+0&1&0\\
+-\sin\theta&0&\cos\theta
+\end{pmatrix},
+$$</p>
+<p>$$
+T\Bigl(\cos\frac{\theta}{2}+\sin\frac{\theta}{2}\vec e_z\Bigr)=
+\begin{pmatrix}
+\cos\theta&-\sin\theta&0\\
+\sin\theta&\cos\theta&0\\
+0&0&1
+\end{pmatrix}.
+$$</p>
+<p>Each is the elementary rotation about one coordinate axis, and each leaves one coordinate untouched. The three are the same matrix with the letters permuted: the first fixes the $x$ coordinate, the second the $y$, the third the $z$.</p>
+<p><strong>The adjoint reading.</strong> The same array acts on the Lie algebra. For every rotor and every $j$,</p>
+<p>$$
+R(\tilde u)\,K_j\,R(\tilde u)^{\mathsf T}=\sum_{i=1}^{3}R_{ij}(\tilde u)\,K_i,
+$$</p>
+<p>checked on one hundred random rotors with residual $4.4\times10^{-16}$. The defining representation and the adjoint representation coincide for $\mathrm{SO}(3)$, because the group is its own adjoint group: the conjugation that sends $\vec v$ to $R\vec v$ is the same formula as the conjugation that sends $K_j$ to $RK_jR^{\mathsf T}$. The two carriers differ and the array is one.</p>
+<p><strong>The trace and the spectrum.</strong> For a rotation of angle $\theta$,</p>
+<p>$$
+\operatorname{tr}T(\tilde u)=1+2\cos\theta,\qquad
+\operatorname{spec}T(\tilde u)=\{1,e^{i\theta},e^{-i\theta}\}.
+$$</p>
+<p>The trace is checked on fifty random rotors against $1+2\cos\theta$ with residual $4.4\times10^{-16}$, and the spectrum at $\theta=0.5$ is $\{1,0.8776\pm0.4794i\}$, at $\theta=\pi/2$ it is $\{1,\pm i\}$, and at $\theta=2$ it is $\{1,-0.4161\pm0.9093i\}$.</p>
+<p><strong>The eigenvalues are the character of the three-dimensional representation.</strong> The trace $1+2\cos\theta$ is the character of the adjoint representation of $SU(2)$, the spin-one representation. The spinor trace is $2\cos(\theta/2)$, and the two are tied by</p>
+<p>$$
+\operatorname{tr}T(\tilde u)+1=\bigl\lvert\operatorname{tr}\mathsf M_2(\tilde u)\bigr\rvert^{2},
+$$</p>
+<p>checked on fifty random rotors with residual $4.4\times10^{-16}$, and by the symmetric-square identity</p>
+<p>$$
+\operatorname{tr}T(\tilde u)=\tfrac12\Bigl(\bigl(\operatorname{tr}\mathsf M_2(\tilde u)\bigr)^{2}+\operatorname{tr}\mathsf M_2(\tilde u^{2})\Bigr).
+$$</p>
+<p>The left side is the character of the symmetric square of the spinor; the right side is the standard formula for that character. The vector picture is therefore the spin-one representation and not a new object.</p>
+<p><strong>The half-angle, visible in one line.</strong> The spinor trace is $2\cos(\theta/2)$ and the vector trace is $1+2\cos\theta$. The half-angle of the spinor disappears in the vector picture, and with it the sign under $2\pi$: at $\theta=2\pi$ the spinor trace is $-2$ and the vector trace is $3$, the trace of the identity.</p>
+<h2 id="the-three-generators-and-what-makes-the-display-direction-free">The Three Generators, and What Makes the Display Direction-Free</h2>
+<h3 id="the-matrices">The Matrices</h3>
+<p><strong>The generators.</strong> Put</p>
+<p>$$
+K_x=\begin{pmatrix}0&0&0\\0&0&-1\\0&1&0\end{pmatrix},\qquad
+K_y=\begin{pmatrix}0&0&1\\0&0&0\\-1&0&0\end{pmatrix},\qquad
+K_z=\begin{pmatrix}0&-1&0\\1&0&0\\0&0&0\end{pmatrix}.
+$$</p>
+<p>Each is the matrix of the map $\vec v\mapsto\vec e_k\times\vec v$ in the basis $(\vec e_x,\vec e_y,\vec e_z)$, with the quaternion product $\vec e_x\vec e_y=\vec e_z$.</p>
+<p><strong>The bracket.</strong> They satisfy</p>
+<p>$$
+[K_x,K_y]=K_z,\qquad [K_y,K_z]=K_x,\qquad [K_z,K_x]=K_y,
+$$</p>
+<p>that is $[K_i,K_j]=\varepsilon_{ijk}K_k$, the relations of $\mathfrak{so}(3,\mathbb{R})$. All three residual entries are $0$ exactly.</p>
+<p><strong>The exponentiation.</strong></p>
+<p>$$
+\exp(\theta K_{\vec n})=T\Bigl(\cos\frac{\theta}{2}\,e_t+\sin\frac{\theta}{2}\,\vec n\Bigr),
+$$</p>
+<p>checked on twenty-five values of $\theta$ with residual $8.9\times10^{-16}$.</p>
+<p><strong>The doubling of the derivative.</strong> The exponential of the rotor group is $\exp(\vec v)=\cos\lvert\vec v\rvert+\frac{\vec v}{\lvert\vec v\rvert}\sin\lvert\vec v\rvert$, and the two exponentials are related by</p>
+<p>$$
+\exp\bigl(\theta K_{\vec n}\bigr)=T\Bigl(\exp\bigl(\tfrac{\theta}{2}\vec n\bigr)\Bigr).
+$$</p>
+<p>So the derivative of the covering map at the identity doubles: the tangent vector $\tfrac12\vec e_k$ of the rotor group goes to the generator $K_k$. That factor $\tfrac12$ is the double cover, written as a scale in the Lie algebra and nowhere else. On the coordinates, $T(\exp(t\vec e_x/2))$ is the rotation of angle $t$ for $t=0.3$ and $t=1.2$, both checked to six decimals.</p>
+<h3 id="why-no-direction-is-privileged">Why No Direction Is Privileged</h3>
+<p><strong>The shape of the three.</strong> Each of the three matrices has exactly two nonzero entries, $+1$ and $-1$, placed symmetrically about the diagonal in the plane of the two coordinates it moves, and a zero row and a zero column in the coordinate it fixes. Each has zero diagonal. Each is antisymmetric. The three are the same array with the letters permuted, and no one of them occupies a distinguished place in the page.</p>
+<p><strong>The cyclic symmetry.</strong> Conjugation by the cyclic permutation matrix</p>
+<p>$$
+P=\begin{pmatrix}0&0&1\\1&0&0\\0&1&0\end{pmatrix},
+\qquad P^{-1}K_xP=K_z,\quad P^{-1}K_zP=K_y,\quad P^{-1}K_yP=K_x,
+$$</p>
+<p>permutes the three generators with no sign. The permutation is the relabelling $x\mapsto y\mapsto z\mapsto x$ of the three axes. Verified exactly.</p>
+<p><strong>The transposition reverses the orientation.</strong> Conjugation by the transposition</p>
+<p>$$
+S=\begin{pmatrix}0&1&0\\1&0&0\\0&0&1\end{pmatrix},
+\qquad S^{-1}K_zS=-K_z,
+$$</p>
+<p>changes the sign of one generator, and only one. Verified exactly. The sign is not a defect of the display: it is the orientation of the quaternion product, which distinguishes a cyclic permutation from an anticyclic one. A display that made the three generators agree under transposition would have lost the orientation of $\mathbb{B}$.</p>
+<p><strong>The comparison with the Peirce frame.</strong> The corpus's canonical frame is the Peirce frame of the root $\vec Z=i\vec e_z$: the idempotents $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$ and the mixed units $\vec\Upsilon_\pm=\tfrac12(i\vec e_x\pm\vec e_y)$. That frame is generated by one direction, the $z$ direction, and the article that builds it says so: the root is one of the three coordinate directions, and the choice of $z$ is a genuine choice of direction.</p>
+<p><strong>What the frame does to the display.</strong> In the Peirce frame the rotor's $2\times2$ block is $\mathsf M_2(\tilde u_{\mathrm r})=c\,\mathrm I_2-s\,(n_x\mathsf M_2(\vec e_x)+n_y\mathsf M_2(\vec e_y)+n_z\mathsf M_2(\vec e_z))$, and the three summands are not of one shape: the $z$ summand is diagonal and the other two are not. A rotation about the privileged axis is a diagonal matrix,</p>
+<p>$$
+\mathsf M_2\Bigl(\cos\frac{\theta}{2}+\sin\frac{\theta}{2}\vec e_z\Bigr)=
+\begin{pmatrix}
+e^{-i\theta/2}&0\\
+0&e^{i\theta/2}
+\end{pmatrix},
+$$</p>
+<p>and a rotation about any other axis is not. That is the precise sense in which the spinor display in this frame writes one direction into the page: one of the three elementary rotations is diagonal and the other two are not.</p>
+<p><strong>What the vector display does instead.</strong> In $T$ the three elementary rotations are the three matrices of §<em>The Matrices</em>, all of one shape, and the rotation about $\vec e_z$ is no more diagonal than the other two. The display has no diagonal member, so the diagnosis that applies to the Peirce display does not apply to it.</p>
+<p><strong>The cost of the change of frame, stated honestly.</strong> The vector display is not a display of the same object in another frame. It is a different representation: the spinor carries the rotor itself, and the vector carries the rotation the rotor performs. The frame contrast is a contrast of frames on the spinor side; the vector side is a different carrier.</p>
+<h2 id="the-complexification">The Complexification</h2>
+<h3 id="the-same-array-over-the-larger-field">The Same Array over the Larger Field</h3>
+<p><strong>The map.</strong> Let $R$ be a real $3\times3$ matrix. Complexify by keeping the entries and enlarging the scalars:</p>
+<p>$$
+\rho_{\mathbb{C}}:\mathrm{SO}(3,\mathbb{R})\longrightarrow GL_3(\mathbb{C}),\qquad R\longmapsto R .
+$$</p>
+<p>No new matrix is introduced. The array is the same, and the field of scalars is larger.</p>
+<p><strong>Proposition.</strong> $\rho_{\mathbb{C}}\bigl(\mathrm{SO}(3,\mathbb{R})\bigr)\subset\mathrm{SU}(3)$.</p>
+<p><em>Proof.</em> Let $R\in\mathrm{SO}(3,\mathbb{R})$. The conjugate transpose of a real matrix is its transpose, $R^{\dagger}=\bar R^{\mathsf T}=R^{\mathsf T}$, so unitarity and real orthogonality are the same equation:</p>
+<p>$$
+R^{\mathsf T}R=\mathrm I_3\quad\Longrightarrow\quad R^{\dagger}R=\mathrm I_3 .
+$$</p>
+<p>The determinant is the same polynomial in the entries whether it is evaluated over $\mathbb{R}$ or over $\mathbb{C}$, so</p>
+<p>$$
+\det R=1\quad\Longrightarrow\quad \det_{\mathbb{C}}R=1 .
+$$</p>
+<p>Hence $R$ is complex unitary and of complex determinant one.</p>
+<p><strong>Injectivity and the homomorphism property.</strong> The map is the identity on entries, so it is injective; matrix multiplication is the same operation over the two fields, so it is a homomorphism. It is therefore an injective homomorphism of real Lie groups, $\mathrm{SO}(3,\mathbb{R})\hookrightarrow\mathrm{SU}(3)$, of real dimension three.</p>
+<p><strong>The corpus statement of the same fact.</strong> The special unitary group of the complex article meets the complex orthogonal group in the real one,</p>
+<p>$$
+\mathrm{SU}(3)\cap\mathrm{SO}(3,\mathbb{C})=\mathrm{SO}(3,\mathbb{R}),
+$$</p>
+<p>and $\mathrm{SO}(3)$ is the real locus of $\mathrm{SU}(3)$, acting irreducibly on $\mathbb{R}^{3}$. The same article records the centraliser: the centraliser of that real locus in $\mathrm{SU}(3)$ is the scalar centre $\mathbb{Z}/3$, because a unitary matrix that normalises an irreducible real representation commutes with it by Schur's lemma.</p>
+<p><strong>The consequence for the display.</strong> There are three scalars in $SU(3)$ that commute with every real rotation, the matrices $\omega\mathrm I_3$ with $\omega^{3}=1$. They are in the centre and they carry no direction. The embedding is therefore determined up to a cube root of unity in the scalar slot, and no further freedom.</p>
+<h3 id="what-the-complexification-costs-and-buys">What the Complexification Costs and Buys</h3>
+<p><strong>It buys nothing for the rotor itself.</strong> A real rotation is already a complex rotation, so the complexification only names the ambient group in which the rotor's matrix is to be compared with other matrices.</p>
+<p><strong>It buys the comparison with the biquaternion.</strong> The biquaternion is a complex algebra, and its matrices are complex. The complexified defining representation is in the same field, so a sum and a product with the other matrices of the corpus are legal.</p>
+<p><strong>It costs the real form.</strong> Inside $SU(3)$ the real rotations are a three-dimensional real subgroup of an eight-dimensional real group. The quotient has five real dimensions, and none of them carries a rotation. A statement about the rotor must therefore name the real form, or it names nothing.</p>
+<p><strong>The table.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>object</th>
+<th>real dimension</th>
+<th>field</th>
+<th>determinant</th>
+<th>unitary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{SO}(3,\mathbb{R})$</td>
+<td>$3$</td>
+<td>$\mathbb{R}$</td>
+<td>$1$</td>
+<td>yes, orthogonality is unitarity</td>
+</tr>
+<tr>
+<td>$\rho_{\mathbb{C}}(\mathrm{SO}(3,\mathbb{R}))$</td>
+<td>$3$</td>
+<td>$\mathbb{C}$</td>
+<td>$1$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$\mathrm{SU}(3)$</td>
+<td>$8$</td>
+<td>$\mathbb{C}$</td>
+<td>$1$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$\mathrm{SO}(3,\mathbb{C})$</td>
+<td>$6$</td>
+<td>$\mathbb{C}$</td>
+<td>$1$</td>
+<td>no</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The last row is the warning.</strong> The complex orthogonal group is not compact, and its elements do not preserve the Hermitian form. The complexified defining representation lands in the unitary group and not in the complex orthogonal group, and the difference is the Hermitian form, which a real orthogonal matrix preserves by accident of being real.</p>
+<h2 id="the-padding-to-su4">The Padding to SU(4)</h2>
+<h3 id="the-embedding">The Embedding</h3>
+<p><strong>The padding.</strong> Extend by a trivial summand,</p>
+<p>$$
+\iota:\mathrm{SU}(3)\hookrightarrow\mathrm{SU}(4),\qquad U\longmapsto\begin{pmatrix}U&0\\0&1\end{pmatrix}.
+$$</p>
+<p>Composing with the complexified defining representation,</p>
+<p>$$
+\iota\circ\rho_{\mathbb{C}}:\mathrm{SO}(3,\mathbb{R})\hookrightarrow\mathrm{SU}(4),\qquad
+R\longmapsto\begin{pmatrix}R&0\\0&1\end{pmatrix}.
+$$</p>
+<p><strong>The three checks.</strong> Injective, because the top-left block recovers $R$. A homomorphism, because block-diagonal multiplication multiplies the blocks. Unitary and of determinant one, because</p>
+<p>$$
+\begin{pmatrix}R&0\\0&1\end{pmatrix}^{\dagger}\begin{pmatrix}R&0\\0&1\end{pmatrix}
+=\begin{pmatrix}R^{\dagger}R&0\\0&1\end{pmatrix}=\mathrm I_4,
+\qquad
+\det\begin{pmatrix}R&0\\0&1\end{pmatrix}=\det R\cdot1=1 .
+$$</p>
+<p><strong>So the group sits in $SU(4)$ and not merely in $PU(4)$.</strong> There is no double cover and no quotient at this step: the map is one-to-one, the image is a three-dimensional real Lie subgroup of $SU(4)$ isomorphic to $\mathrm{SO}(3,\mathbb{R})$, and the whole of $\mathrm{SO}(3)$ is present.</p>
+<p><strong>The forced spectator.</strong> Suppose the fourth entry is a phase $\lambda$ instead of $1$. Unitarity gives $\lvert\lambda\rvert=1$, and the determinant gives $\det R\cdot\lambda=\lambda=1$. So $\lambda=1$: the padding entry is forced. Nothing else fills the slot in a unitary determinant-one way.</p>
+<p><strong>The spectrum of the padded matrix.</strong> For a rotation of angle $\theta$,</p>
+<p>$$
+\operatorname{spec}\begin{pmatrix}R&0\\0&1\end{pmatrix}=\{1,1,e^{i\theta},e^{-i\theta}\},\qquad
+\operatorname{tr}\begin{pmatrix}R&0\\0&1\end{pmatrix}=2+2\cos\theta=4\cos^{2}\frac{\theta}{2}.
+$$</p>
+<p>The trace is the squared modulus of the spinor trace. The padding adds one eigenvalue $1$, and one only.</p>
+<h3 id="the-spectator-is-not-a-direction">The Spectator Is Not a Direction</h3>
+<p><strong>What the fourth coordinate is.</strong> The padded matrix acts on $\mathbb{C}^{4}=\mathbb{C}^{3}\oplus\mathbb{C}$, and on the last summand it acts as the identity. The representation is $3\oplus1$: the vector and a scalar.</p>
+<p><strong>Why it is not a spatial direction.</strong> A spatial direction is a direction in the carrier of the defining representation, that is in the $\mathbb{C}^{3}$ block. The fourth coordinate is outside that block. The group acts on it by the identity, so no sense attaches to the phrase <em>the fourth axis is rotated</em>: there is nothing there to rotate.</p>
+<p><strong>Why it is harmless.</strong> Every statement about the rotation is a statement about the $3$ block, where the representation is faithful. The $1$ block carries no parameter and no invariant. Two paddings that differ only in the phase of the spectator differ by a scalar that the determinant kills, and no experiment and no computation can distinguish them.</p>
+<p><strong>Why it is necessary on this route.</strong> The biquaternion is four-dimensional, so a matrix of the algebra's own size is $4\times4$; the exterior algebra of the vector subspace is four-dimensional; and the two-sided display of the algebra is $4\times4$. The padding is the price of matching a four-slot object with a three-dimensional representation.</p>
+<p><strong>If $SU(4)$ is not wanted, stop at $SU(3)$.</strong> The chain $\mathrm{SO}(3)\hookrightarrow\mathrm{SU}(3)$ needs no spectator. The spectator is an artifact of the four-slot destination and of nothing else.</p>
+<h3 id="the-slot-is-a-frame-choice">The Slot Is a Frame Choice</h3>
+<p><strong>The two paddings.</strong> The matrices</p>
+<p>$$
+A=\begin{pmatrix}R&0\\0&1\end{pmatrix}
+\qquad\text{and}\qquad
+B=\begin{pmatrix}1&0\\0&R\end{pmatrix}
+$$</p>
+<p>are both in $SU(4)$ for every $R\in\mathrm{SO}(3)$. They are not equal, and they are conjugate.</p>
+<p><strong>The conjugation.</strong> Let $P$ be the cyclic permutation of the four slots,</p>
+<p>$$
+P=\begin{pmatrix}0&0&0&1\\1&0&0&0\\0&1&0&0\\0&0&1&0\end{pmatrix},
+\qquad \det P=-1 .
+$$</p>
+<p>Then $P^{-1}AP$ is a matrix with a trivial block in a slot other than the last and the rotated block in the remaining three, and the three coordinates inside the block are relabelled by the same permutation. Verified on a generic rotation of angle $0.83$ about the axis $(0.3,1,-0.7)$: the conjugated matrix has determinant $1$, one coordinate untouched, and the other three carrying the same rotation in the relabelled order.</p>
+<p><strong>The parity of the permutation.</strong> A four-cycle has determinant $-1$, so $P$ is not in $SU(4)$. The matrix $\lambda P$ is unitary for every $\lvert\lambda\rvert=1$ and has determinant $\lambda^{4}\det P=-\lambda^{4}$; the choice $\lambda=e^{i\pi/4}$ gives determinant $1$ and puts the conjugation inside $SU(4)$.</p>
+<p><strong>So the slot of the spectator is a frame choice.</strong> No slot is preferred by the group, and the parity of the permutation that moves it is absorbed by an eighth root of unity. What the group does prefer is the number of trivial summands, which is one.</p>
+<h2 id="the-matrix-the-corpus-already-prints">The Matrix the Corpus Already Prints</h2>
+<h3 id="the-two-sided-operator-of-the-rotor">The Two-Sided Operator of the Rotor</h3>
+<p><strong>The object.</strong> The corpus's axis-free frame writes, for every element, the two families $L_{\mathrm{axf}}(\tilde Q)$ and $R_{\mathrm{axf}}(\tilde Q_2)$, whose product is the matrix of the two-sided operator</p>
+<p>$$
+X\longmapsto\tilde Q\,X\,\tilde Q_2 .
+$$</p>
+<p>For the rotor the two-sided operator with $\tilde Q_2=\tilde u_{\mathrm r}^{\natural}$ is exactly the map $\Phi$ of §<em>The Vector Image of the Rotor</em>, extended to the whole algebra, and its matrix is</p>
+<p>$$
+L_{\mathrm{axf}}(\tilde u_{\mathrm r})\,R_{\mathrm{axf}}(\tilde u_{\mathrm r}^{\natural}).
+$$</p>
+<p><strong>Theorem (the block form).</strong> For every $\tilde Q\in\mathbb{B}$,</p>
+<p>$$
+L_{\mathrm{axf}}(\tilde Q)\,R_{\mathrm{axf}}(\tilde Q^{\natural})=
+\begin{pmatrix}
+\langle\tilde Q\rangle_{\natural}&0\\
+0&T(\tilde Q)
+\end{pmatrix},
+$$</p>
+<p>with $T$ the $3\times3$ matrix of §<em>The Vector Image of the Rotor</em>, written in the coordinates $(\vec e_x,\vec e_y,\vec e_z)$.</p>
+<p><em>Proof.</em> The composite sends $e_t$ to $\tilde Qe_t\tilde Q^{\natural}=\langle\tilde Q\rangle_{\natural}e_t$, a scalar, so the first column is $(\langle\tilde Q\rangle_{\natural},0,0,0)^{\mathsf T}$. It sends a vector $\vec v$ to an element whose scalar part vanishes, by the computation of §<em>The Vector Image of the Rotor</em>, so the first row of the last three columns is zero. The remaining block is the matrix of the restriction to $\mathbb{B}_{V}$, which is the definition of $T(\tilde Q)$.</p>
+<p><strong>The recomputation.</strong> On sixty random complex elements the largest off-diagonal entry of the block form is $9.0\times10^{-16}$, the scalar slot minus $\langle\tilde Q\rangle_{\natural}$ is $2.0\times10^{-15}$, and the determinant of the $3\times3$ block minus $\langle\tilde Q\rangle_{\natural}^{3}$ is $8.4\times10^{-12}$.</p>
+<p><strong>The consequence for the rotor.</strong> For a rotor $\langle\tilde u_{\mathrm r}\rangle_{\natural}=1$, so</p>
+<p>$$
+L_{\mathrm{axf}}(\tilde u_{\mathrm r})\,R_{\mathrm{axf}}(\tilde u_{\mathrm r}^{\natural})=
+\begin{pmatrix}1&0\\0&R(\tilde u_{\mathrm r})\end{pmatrix},
+$$</p>
+<p>which is the padded matrix of §<em>The Padding to SU(4)</em> with the spectator in the first slot rather than the last. Checked on one hundred random rotors with residual $4.4\times10^{-16}$.</p>
+<p><strong>This is the point of the whole article.</strong> The corpus already prints the complexified defining representation of the rotor. It prints it as the bottom-right block of the axis-free matrix of a two-sided operator, and it prints the spectator as the top-left block, which for the rotor is the scalar $1$ because the conjugation fixes the scalar line.</p>
+<h3 id="two-consequences-of-the-block-form">Two Consequences of the Block Form</h3>
+<p><strong>The two factors are separately orthogonal.</strong> For a rotor, $L_{\mathrm{axf}}(\tilde u_{\mathrm r})$ and $R_{\mathrm{axf}}(\tilde u_{\mathrm r}^{\natural})$ are both in $SO(4)$. The reason is the transpose identity of the axis-free frame,</p>
+<p>$$
+L_{\mathrm{axf}}(\tilde Q)^{\mathsf T}=L_{\mathrm{axf}}(\tilde Q^{\natural}),
+$$</p>
+<p>which gives $L(\tilde u)^{\mathsf T}L(\tilde u)=L(\tilde u^{\natural}\tilde u)=L(e_t)=\mathrm I_4$, and $\det L(\tilde u)=\langle\tilde u\rangle_{\natural}^{2}=1$. The same computation on the other side gives $R(\tilde u^{\natural})\in SO(4)$.</p>
+<p><strong>So the rotor appears in four displays.</strong> As a versor in the algebra; as two rotations of $\mathbb{R}^{4}$, one on each side; and as one rotation of $\mathbb{R}^{3}$ in their product. Only the last three are matrices, of sizes $4$, $4$ and $3$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>display</th>
+<th>object</th>
+<th>size</th>
+<th>entries</th>
+<th>determinant</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the rotor</td>
+<td>$\tilde u_{\mathrm r}$</td>
+<td>algebra</td>
+<td>real coefficients</td>
+<td>norm $1$</td>
+</tr>
+<tr>
+<td>the left matrix</td>
+<td>$L_{\mathrm{axf}}(\tilde u_{\mathrm r})$</td>
+<td>$4\times4$ real</td>
+<td>coefficients with the signs of the table</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>the right matrix</td>
+<td>$R_{\mathrm{axf}}(\tilde u_{\mathrm r}^{\natural})$</td>
+<td>$4\times4$ real</td>
+<td>the same signs on the other side</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>the two-sided product</td>
+<td>$\operatorname{diag}(1,R)$</td>
+<td>$4\times4$ real</td>
+<td>$1$ and the rotation</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>the vector block</td>
+<td>$R(\tilde u_{\mathrm r})$</td>
+<td>$3\times3$ real</td>
+<td>the Rodrigues entries</td>
+<td>$1$</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="one-worked-case-exactly">One Worked Case, Exactly</h3>
+<p><strong>A quarter turn about $\vec e_z$.</strong> Take $\theta=\pi/2$, so $c=s=\tfrac{\sqrt2}{2}$ and $\tilde u_{\mathrm r}=c\,e_t+s\,\vec e_z$. The axis-free left matrix is</p>
+<p>$$
+L_{\mathrm{axf}}(\tilde u_{\mathrm r})=
+\begin{pmatrix}
+c&0&0&-s\\
+0&c&-s&0\\
+0&s&c&0\\
+s&0&0&c
+\end{pmatrix},
+$$</p>
+<p>and, since $\tilde u_{\mathrm r}^{\natural}=c\,e_t-s\,\vec e_z$, the axis-free right matrix of the conjugate is</p>
+<p>$$
+R_{\mathrm{axf}}(\tilde u_{\mathrm r}^{\natural})=
+\begin{pmatrix}
+c&0&0&s\\
+0&c&-s&0\\
+0&s&c&0\\
+-s&0&0&c
+\end{pmatrix}.
+$$</p>
+<p><strong>The product is exact and integral.</strong></p>
+<p>$$
+L_{\mathrm{axf}}(\tilde u_{\mathrm r})\,R_{\mathrm{axf}}(\tilde u_{\mathrm r}^{\natural})=
+\begin{pmatrix}
+1&0&0&0\\
+0&0&-1&0\\
+0&1&0&0\\
+0&0&0&1
+\end{pmatrix}
+=
+\begin{pmatrix}
+1&0\\
+0&R
+\end{pmatrix},
+\qquad
+R=\begin{pmatrix}0&-1&0\\1&0&0\\0&0&1\end{pmatrix}.
+$$</p>
+<p>Every entry is an integer. The half-angle square roots of the two factors cancel in the product, and what remains is the exact quarter turn.</p>
+<p><strong>The padded form of the paper.</strong> In the paper's slot order the same rotation is</p>
+<p>$$
+\begin{pmatrix}
+0&-1&0&0\\
+1&0&0&0\\
+0&0&1&0\\
+0&0&0&1
+\end{pmatrix}\in\mathrm{SU}(4).
+$$</p>
+<p>The two arrays are the same element with the spectator at opposite ends.</p>
+<p><strong>The spinor display of the same rotor.</strong> In the Peirce frame the $2\times2$ block is diagonal,</p>
+<p>$$
+\mathsf M_2(\tilde u_{\mathrm r})=
+\begin{pmatrix}
+e^{-i\pi/4}&0\\
+0&e^{i\pi/4}
+\end{pmatrix},
+$$</p>
+<p>with trace $\sqrt2=2\cos(\pi/4)$ and determinant one. The trace identity of §<em>The Rotor Case</em> reads, at this angle,</p>
+<p>$$
+\operatorname{tr}R+1=1+1=2=\bigl\lvert\operatorname{tr}\mathsf M_2(\tilde u_{\mathrm r})\bigr\rvert^{2}=(\sqrt2)^{2}.
+$$</p>
+<p><strong>The same rotor at twice the angle.</strong> At $\theta=2\pi$ the rotor is $-e_t$, the spinor block is $-\mathrm I_2$ of trace $-2$, and the vector block is</p>
+<p>$$
+T(-e_t)=\begin{pmatrix}1&0&0\\0&1&0\\0&0&1\end{pmatrix},
+$$</p>
+<p>of trace $3$. The half-angle and the sign are gone, and the trace identity still holds: $3+1=4=(-2)^{2}$.</p>
+<h3 id="a-second-worked-case-the-letters-permuted">A Second Worked Case, the Letters Permuted</h3>
+<p><strong>A quarter turn about $\vec e_x$.</strong> Take $\tilde u_{\mathrm r}=c\,e_t+s\,\vec e_x$ with $c=\cos(\theta/2)$ and $s=\sin(\theta/2)$. The two axis-free factors are block-diagonal in this case, with the same $2\times2$ block in both planes,</p>
+<p>$$
+L_{\mathrm{axf}}(\tilde u_{\mathrm r})=
+\begin{pmatrix}
+c&-s&0&0\\
+s&c&0&0\\
+0&0&c&-s\\
+0&0&s&c
+\end{pmatrix},
+\qquad
+R_{\mathrm{axf}}(\tilde u_{\mathrm r}^{\natural})=
+\begin{pmatrix}
+c&s&0&0\\
+-s&c&0&0\\
+0&0&c&-s\\
+0&0&s&c
+\end{pmatrix}.
+$$</p>
+<p><strong>The product.</strong> The block in the first two slots cancels, because the two factors turn that plane in opposite senses; the block in the last two doubles the angle,</p>
+<p>$$
+L_{\mathrm{axf}}(\tilde u_{\mathrm r})\,R_{\mathrm{axf}}(\tilde u_{\mathrm r}^{\natural})=
+\begin{pmatrix}
+1&0&0&0\\
+0&1&0&0\\
+0&0&\cos\theta&-\sin\theta\\
+0&0&\sin\theta&\cos\theta
+\end{pmatrix}
+=\begin{pmatrix}1&0\\0&R_x(\theta)\end{pmatrix},
+\qquad
+R_x(\theta)=\begin{pmatrix}1&0&0\\0&\cos\theta&-\sin\theta\\0&\sin\theta&\cos\theta\end{pmatrix}.
+$$</p>
+<p><strong>The quarter turn, in integers.</strong></p>
+<p>$$
+\begin{pmatrix}
+1&0&0&0\\
+0&1&0&0\\
+0&0&0&-1\\
+0&0&1&0
+\end{pmatrix},
+\qquad
+R_x\Bigl(\frac{\pi}{2}\Bigr)=\begin{pmatrix}1&0&0\\0&0&-1\\0&1&0\end{pmatrix}.
+$$</p>
+<p><strong>The comparison with the $z$ case.</strong> The scalar slot is the first in both products, and the difference is which coordinate of the rotation is left untouched: $z$ for the rotation about $\vec e_z$, $x$ for the rotation about $\vec e_x$. Because a rotation about $\vec e_x$ leaves the $x$ row and column of the $3\times3$ block trivial, the product happens to split into two $2\times2$ blocks; for a general axis it does not.</p>
+<h2 id="the-sign-and-where-it-goes">The Sign, and Where It Goes</h2>
+<h3 id="two-to-one">Two-to-One</h3>
+<p><strong>The kernel.</strong> For every element,</p>
+<p>$$
+T(-\tilde Q)=T(\tilde Q),
+$$</p>
+<p>because $(-\tilde Q)\vec v(-\tilde Q)^{\natural}=\tilde Q\vec v\tilde Q^{\natural}$. Verified exactly on a random complex element. So the map factors through the antipodal identification, and on the rotor sphere it is the standard two-to-one cover</p>
+<p>$$
+SU(2)\longrightarrow SO(3),\qquad \tilde u_{\mathrm r}\longmapsto R(\tilde u_{\mathrm r}),\qquad \ker=\{\pm e_t\}.
+$$</p>
+<p><strong>The period of the two objects.</strong> The rotor has period $4\pi$ in the angle and the rotation has period $2\pi$:</p>
+<p>$$
+\tilde u_{\mathrm r}(\theta+2\pi)=-\tilde u_{\mathrm r}(\theta),\qquad
+R(\theta+2\pi)=R(\theta).
+$$</p>
+<p>Verified on random axes with residuals $1.4\times10^{-16}$ and $3.3\times10^{-16}$.</p>
+<p><strong>The quarter-turn check.</strong> At $\theta=\pi/2$ the rotor is $c+s\vec e_z$ and at $\theta=\pi/2+2\pi$ it is its negative; the two vector images are entrywise equal. At the angle $4\pi$ the rotor returns to itself exactly, with residual $6.9\times10^{-17}$.</p>
+<h3 id="the-kernel-is-central-and-this-is-the-new-fact">The Kernel Is Central, and This Is the New Fact</h3>
+<p><strong>What survives.</strong> The kernel of the vector picture is not a spinorial sign. It is the central element $-e_t$, and the square of the scalar is what the map sees:</p>
+<p>$$
+T(\lambda\tilde Q)=\lambda^{2}T(\tilde Q),\qquad T(-e_t)=\mathrm I_3 .
+$$</p>
+<p><strong>The comparison with the spinor side.</strong> On the spinor side the surviving ambiguity is the sign of the element itself: $\tilde u_{\mathrm r}$ and $-\tilde u_{\mathrm r}$ are different points of $S^3$ and different matrices, and the two matrices differ by the scalar $-\mathrm I_2$. The spinor carries that scalar; the rotation does not.</p>
+<p><strong>On the vector side the ambiguity is a scalar and nothing else.</strong> So the vector picture is still two-to-one, and the two-to-one is <em>central</em>: the pair $\{\tilde u_{\mathrm r},-\tilde u_{\mathrm r}\}$ maps to one rotation, and the difference of the pair is the scalar $-1$.</p>
+<p><strong>The consequence for the whole word.</strong> The phase is central, so</p>
+<p>$$
+T(\varkappa_{\mathrm{phs}}\tilde u_{\mathrm r})=\varkappa_{\mathrm{phs}}^{2}\,R(\tilde u_{\mathrm r}),
+$$</p>
+<p>checked on a random phase and a random rotor with residual $1.5\times10^{-16}$. The vector picture of the compact part of the unit group is the pair (phase squared, rotation), inside $U(3)$.</p>
+<p><strong>The kernel of the compact part.</strong> The map $U(2)\to U(3)$ so defined has kernel $\{\pm e_t\}$: an element is in the kernel when $\varkappa_{\mathrm{phs}}^{2}R=\mathrm I_3$, that is $R=\varkappa_{\mathrm{phs}}^{-2}\mathrm I_3$, and a scalar rotation is the identity rotation only for the scalar $1$, since $-1$ has determinant $-1$ in odd dimension; then $\varkappa_{\mathrm{phs}}^{2}=1$. The four solutions in $U(1)\times SU(2)$ have two images in $U(2)$, the pair $\pm e_t$. So the compact group keeps a double cover in the vector picture, and the cover is the central one.</p>
+<h3 id="the-branch-cut">The Branch Cut</h3>
+<p><strong>The discontinuity of the word.</strong> The modulus $\Rho$ is a square root of the norm, so when the norm crosses the negative real axis the branch of the square root jumps and $\Rho$ changes sign. Then $\varkappa_{\mathrm{phs}}$ and $\tilde u_{\mathrm r}$ both change sign, while their product does not. The four-factor word is discontinuous there, although the Cartan pair is continuous.</p>
+<p><strong>What the vector picture does with it.</strong> The vector picture sees the product of the two signs, and the product does not change:</p>
+<p>$$
+T\bigl((-\varkappa_{\mathrm{phs}})(-\tilde u_{\mathrm r})\bigr)=T(\varkappa_{\mathrm{phs}}\tilde u_{\mathrm r}).
+$$</p>
+<p>So the vector image of the compact part is continuous across the cut, while the rotor is not. The discontinuity is a central sign, and the vector picture quotients it away.</p>
+<p><strong>The statement to keep.</strong> The sign jump of the four-factor word is not a geometric event in the vector sector. It is the double cover showing through the spinor writing, and it disappears in the vector writing.</p>
+<h2 id="the-rest-of-the-word-under-the-same-map">The Rest of the Word under the Same Map</h2>
+<h3 id="the-four-factors">The Four Factors</h3>
+<p><strong>The scale.</strong> Central, so $T(r\,e_t)=r^{2}\mathrm I_3$, through the substitution $\lambda\mapsto\lambda^{2}$.</p>
+<p><strong>The phase.</strong> Central of modulus one, so $T(\varkappa_{\mathrm{phs}}e_t)=\varkappa_{\mathrm{phs}}^{2}\mathrm I_3$, a scalar of modulus one.</p>
+<p><strong>The boost.</strong> Hermitian positive definite of norm one. Its image is a Hermitian positive definite $3\times3$ matrix of determinant one, and it is not orthogonal: the boost is not a rotation and has no place in $\mathrm{SO}(3)$.</p>
+<p><strong>The rotor.</strong> Real orthogonal of determinant one, as above.</p>
+<p><strong>The table.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>factor</th>
+<th>algebra object</th>
+<th>$T$, the $3\times3$ image</th>
+<th>lies in</th>
+<th>determinant</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>scale $r$</td>
+<td>$re_t$</td>
+<td>$r^{2}\mathrm I_3$</td>
+<td>positive scalars</td>
+<td>$r^{6}$</td>
+</tr>
+<tr>
+<td>phase $\varkappa_{\mathrm{phs}}$</td>
+<td>$\varkappa_{\mathrm{phs}}e_t$</td>
+<td>$\varkappa_{\mathrm{phs}}^{2}\mathrm I_3$</td>
+<td>scalar circle</td>
+<td>$\varkappa_{\mathrm{phs}}^{6}$</td>
+</tr>
+<tr>
+<td>boost $\tilde U_{\mathrm b}$</td>
+<td>Hermitian positive, norm $1$</td>
+<td>Hermitian positive, norm $1$</td>
+<td>$H^{3}\subset SL_3(\mathbb{C})$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>rotor $\tilde u_{\mathrm r}$</td>
+<td>unit real quaternion</td>
+<td>real orthogonal</td>
+<td>$SO(3)\subset SU(3)$</td>
+<td>$1$</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="the-split-is-the-polar-decomposition-of-the-image">The Split Is the Polar Decomposition of the Image</h3>
+<p><strong>Theorem.</strong> Let $\tilde U$ be of norm one and let $\tilde U=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ be its boost–rotor split. Then</p>
+<p>$$
+T(\tilde U)=T(\tilde U_{\mathrm b})\,T(\tilde u_{\mathrm r}),
+$$</p>
+<p>with $T(\tilde U_{\mathrm b})$ Hermitian positive definite of determinant one and $T(\tilde u_{\mathrm r})$ orthogonal of determinant one. The right side is the polar decomposition of the complex $3\times3$ matrix $T(\tilde U)$, and $T(\tilde U)\in SL_3(\mathbb{C})$.</p>
+<p><em>Proof.</em> The multiplicativity is the multiplicativity of $T$. The two factors are Hermitian positive and orthogonal by the two propositions above. The decomposition of an invertible matrix into a Hermitian positive factor and a unitary factor is unique, so this pair is the polar pair of $T(\tilde U)$. The determinant is one because each factor has determinant one.</p>
+<p><strong>The recomputation.</strong> On sixty random unit factors the largest entry of $T(\tilde U)-T(\tilde U_{\mathrm b})T(\tilde u_{\mathrm r})$ is $1.0\times10^{-13}$; on the same sixty, $\lvert\det T(\tilde U)-1\rvert$ is at most $8.2\times10^{-14}$; the Hermiticity of $T(\tilde U_{\mathrm b})$ is exact at $8.9\times10^{-16}$, its determinant is one at $8.0\times10^{-14}$, and its smallest eigenvalue over the sample is $0.404$, so it is positive definite; the reality of $T(\tilde u_{\mathrm r})$ is at $2.2\times10^{-15}$ and its orthogonality at $8.5\times10^{-15}$.</p>
+<p><strong>The general element.</strong> For the whole word,</p>
+<p>$$
+T(\tilde Q)=\langle\tilde Q\rangle_{\natural}\,T(\tilde U_{\mathrm b})\,T(\tilde u_{\mathrm r}),
+$$</p>
+<p>checked on the same sixty elements at $3.2\times10^{-14}$. The complex number $\langle\tilde Q\rangle_{\natural}$ is the top-left slot, and the two remaining factors are the polar pair of the bottom-right block divided by it.</p>
+<p><strong>So the vector picture of the polar decomposition is the polar decomposition of a matrix.</strong> The four factors of the word become: a scalar on the scalar line, a scalar multiple of the identity, a Hermitian positive matrix of determinant one, and a real rotation. The first two are the modulus, the third is the Cartan Hermitian factor, the fourth is the compact factor. The structure survives the change of carrier, and the names do not have to change.</p>
+<h3 id="the-boost-under-the-map-written-out">The Boost under the Map, Written Out</h3>
+<p><strong>A boost along $\vec e_z$.</strong> Take $\tilde U_{\mathrm b}=a\,e_t+ib\,\vec e_z$ with $a^{2}-b^{2}=1$, $a>0$. Its image is</p>
+<p>$$
+T(\tilde U_{\mathrm b})=
+\begin{pmatrix}
+a^{2}+b^{2}&-2iab&0\\
+2iab&a^{2}+b^{2}&0\\
+0&0&1
+\end{pmatrix}.
+$$</p>
+<p>With $a=\cosh 0.7$ and $b=\sinh 0.7$ the numerical matrix is</p>
+<p>$$
+\begin{pmatrix}
+2.1509&-1.9043i&0\\
+1.9043i&2.1509&0\\
+0&0&1
+\end{pmatrix},
+$$</p>
+<p>Hermitian, positive definite, of eigenvalues $4.0552$, $1$ and $0.2466$, that is $e^{2\sigma}$, $1$ and $e^{-2\sigma}$. The boost stretches the plane transverse to its axis by the two factors $e^{2\sigma}$ and $e^{-2\sigma}$, and fixes the axis exactly.</p>
+<p><strong>The choice of conjugation on the second factor.</strong> The operator written in this article is the two-sided product with $\natural$ on the right. For a rotor the two conjugations agree, because the coefficients are real and $\tilde u_{\mathrm r}^{\natural}=\tilde u_{\mathrm r}^{*}=\tilde u_{\mathrm r}^{-1}$; for the boost they do not, and the block above is the block of the $\natural$ version. Every rotor section of the article is therefore independent of the choice, and the boost section is not: the Lorentz action of the algebra on a four-vector is the subject of <em>Biquaternion Rotations and Lorentz Transformations</em>, and it is a different operator.</p>
+<p><strong>The general boost.</strong> For $\tilde U_{\mathrm b}=a\,e_t+i\vec w$, the image is complex, Hermitian, positive definite and of determinant one, and its eigenvalues are $e^{\pm2\sigma}$ and $1$ with $\sigma$ the rapidity. The three real parameters of the boost survive as three parameters of a positive Hermitian matrix, a three-dimensional slice of the eight-dimensional space $SL_3(\mathbb{C})/SU(3)$ of positive Hermitian matrices of determinant one.</p>
+<p><strong>The consequence, stated plainly.</strong> The vector picture carries the boost as well as the rotor, but the boost is not a rotation and the chain $\mathrm{SO}(3)\hookrightarrow\mathrm{SU}(3)\hookrightarrow\mathrm{SU}(4)$ does not contain it. The chain writes the compact factor. The boost needs the Hermitian cone, and the Hermitian cone is a different object from the unitary group.</p>
+<h3 id="one-formula-for-the-rotation-and-the-boost">One Formula for the Rotation and the Boost</h3>
+<p><strong>The single-axis element.</strong> Let $\tilde Q=t\,e_t+z\,\vec e_z$ with $t,z$ complex. Then</p>
+<p>$$
+T(\tilde Q)=
+\begin{pmatrix}
+t^{2}-z^{2}&-2tz&0\\
+2tz&t^{2}-z^{2}&0\\
+0&0&t^{2}+z^{2}
+\end{pmatrix}.
+$$</p>
+<p>Checked on fifty random complex pairs with residual $1.3\times10^{-15}$, and $\det T(\tilde Q)=(t^{2}+z^{2})^{3}$ with residual $1.8\times10^{-13}$.</p>
+<p><strong>The two real forms of the same formula.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>choice</th>
+<th>parameter</th>
+<th>the plane block</th>
+<th>its character</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rotor</td>
+<td>$t=\cos(\theta/2)$, $z=\sin(\theta/2)$ real</td>
+<td>the rotation by $\theta$</td>
+<td>orthogonal, determinant $1$, unitary</td>
+</tr>
+<tr>
+<td>boost</td>
+<td>$t=\cosh\sigma$, $z=i\sinh\sigma$</td>
+<td>the hyperbolic block of rapidity $2\sigma$</td>
+<td>Hermitian, positive, not unitary</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The two blocks written out.</strong> For the rotor,</p>
+<p>$$
+\begin{pmatrix}
+t^{2}-z^{2}&-2tz\\
+2tz&t^{2}-z^{2}
+\end{pmatrix}
+=
+\begin{pmatrix}
+\cos\theta&-\sin\theta\\
+\sin\theta&\cos\theta
+\end{pmatrix},
+$$</p>
+<p>and for the boost,</p>
+<p>$$
+\begin{pmatrix}
+t^{2}-z^{2}&-2tz\\
+2tz&t^{2}-z^{2}
+\end{pmatrix}
+=
+\begin{pmatrix}
+\cosh2\sigma&-i\sinh2\sigma\\
+i\sinh2\sigma&\cosh2\sigma
+\end{pmatrix}.
+$$</p>
+<p><strong>What the table says.</strong> The rotation and the boost are the same formula with a real and with an imaginary parameter. The passage $z\mapsto iz$ is the analytic continuation that turns the compact real form into the Hermitian one, and it leaves the unitary group: the boost matrix has eigenvalues $e^{\pm2\sigma}$ and is not unitary for $\sigma\neq0$.</p>
+<p><strong>Why this matters for the paper's argument.</strong> The complexification of the defining representation is not decoration. One complex family $t^{2}-z^{2}$, $2tz$, $t^{2}+z^{2}$ contains both the rotation of the vector sector and the boost of the Hermitian cone, and the two are told apart by which real slice of $z$ is taken. The group $\mathrm{SO}(3,\mathbb{R})$ is the compact slice and nothing else; the rest of the complex family is the boost, and it is not in the unitary group.</p>
+<h2 id="what-is-lost">What Is Lost</h2>
+<p><strong>The list, with the reason for each entry.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>lost</th>
+<th>why it cannot be recovered</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the double cover, and the two signs of the rotor</td>
+<td>a real $3\times3$ matrix has no half-angle, and $R(\theta+2\pi)=R(\theta)$</td>
+</tr>
+<tr>
+<td>the spinor</td>
+<td>the carrier of the defining representation is $\mathbb{C}^{3}$, and no irreducible summand of it is two-dimensional</td>
+</tr>
+<tr>
+<td>the division algebra</td>
+<td>$M_3(\mathbb{C})$ has zero divisors, and no quaternionic inverse or norm lives in it</td>
+</tr>
+<tr>
+<td>the natural complex structure</td>
+<td>the central $i$ of $\mathbb{B}$ multiplies the algebra; in the defining representation the $i$ only multiplies vectors</td>
+</tr>
+<tr>
+<td>the quaternionic orientation as a multiplication table</td>
+<td>the determinant of $R$ records the orientation of $\mathbb{R}^{3}$, and the table $\vec e_x\vec e_y=\vec e_z$ is not in the matrix</td>
+</tr>
+<tr>
+<td>the structure-constant entries</td>
+<td>the entries of $T$ are quadratic in the coefficients of the element, not the constants $\varepsilon_{\mu\nu}^{\ \ \rho}$</td>
+</tr>
+<tr>
+<td>the element itself</td>
+<td>$T(\tilde Q)$ is quadratic, so the element is recovered only up to sign, and for a rotor only up to $\pm\tilde u_{\mathrm r}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The first entry is the serious one.</strong> The whole point of the spinor sector of the corpus is the double cover: the sign under $2\pi$, the two sheets, the topology of the boosts, the reality conditions. None of it is in a $3\times3$ real matrix. A reader who replaces the rotor by $R$ everywhere loses those articles, and the loss is not repairable inside the matrix.</p>
+<p><strong>The second entry follows from the first.</strong> A spinor is a vector of the module $S=\mathbb{C}^{2}$ on which the rotor acts by left multiplication. No such module exists for $\mathrm{SO}(3)$ inside $M_3(\mathbb{C})$; the modules of $M_3(\mathbb{C})$ are sums of copies of $\mathbb{C}^{3}$.</p>
+<p><strong>The third entry is the division algebra.</strong> The quaternion inverse, the norm $q q^{\natural}=\lvert q\rvert^{2}e_t$, and the identity $q^{-1}=q^{\natural}/\lvert q\rvert^{2}$ are statements in a division algebra. The matrix $R$ has an inverse because it is orthogonal, and the inverse is the transpose; that is orthogonality and not division.</p>
+<p><strong>The fourth entry is the role of $i$.</strong> In the biquaternion the central $i$ is an element of the algebra and multiplies every element. In the defining representation the $i$ belongs to the field of the carrier and multiplies vectors only. The two roles coincide numerically and differ structurally, and the article that reads the two halves of $\mathbb{B}$ depends on the first role.</p>
+<p><strong>The fifth entry is the orientation.</strong> The quaternion product distinguishes $\vec e_x\vec e_y=\vec e_z$ from $\vec e_y\vec e_x=-\vec e_z$ by a sign in the multiplication table. The determinant distinguishes the two orientations of $\mathbb{R}^{3}$ by a sign in $\pm1$. The two signs agree, and the quaternionic one is the finer object: it tells a cyclic permutation of the axes from a transposition, which the permutation matrix records only through the sign of its determinant.</p>
+<p><strong>The sixth entry is the shape of the display.</strong> The axis-free matrices have entries in $\{0,\pm1\}$ and the coefficients, and their determinant is $\langle\tilde Q\rangle_{\natural}^{2}$. The matrix $T(\tilde Q)$ has entries quadratic in the coefficients and determinant $\langle\tilde Q\rangle_{\natural}^{3}$. Neither reading gives the structure constants of the algebra, because the defining representation is not the regular representation.</p>
+<h2 id="what-is-gained">What Is Gained</h2>
+<p><strong>The list.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>gained</th>
+<th>how</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>no privileged axis</td>
+<td>the three generators have one shape, and none is diagonal</td>
+</tr>
+<tr>
+<td>no cover on $\mathrm{SO}(3)$</td>
+<td>the map is one-to-one from the rotation group</td>
+</tr>
+<tr>
+<td>real entries</td>
+<td>every entry of $R(\tilde u_{\mathrm r})$ is real, and the entries are integers for the quarter turn, the half turn and the third of a turn</td>
+</tr>
+<tr>
+<td>the exponential is the ordinary one</td>
+<td>$\exp(\theta K_{\vec n})=R(\theta,\vec n)$, the matrix exponential of a real antisymmetric matrix</td>
+</tr>
+<tr>
+<td>the composition is matrix multiplication</td>
+<td>the group law is the multiplication of the arrays</td>
+</tr>
+<tr>
+<td>the character is readable</td>
+<td>$1+2\cos\theta$ is the trace, and the spectrum is $\{1,e^{\pm i\theta}\}$</td>
+</tr>
+<tr>
+<td>the polar decomposition survives</td>
+<td>$T$ carries the boost–rotor split to the Hermitian–unitary split</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The gain that matters most.</strong> The display has no privileged axis. The Peirce frame singles out the $z$ direction by construction, and the spinor display written in it has one diagonal elementary rotation. The vector display has none, and its three elementary rotations are the same matrix with the letters permuted.</p>
+<p><strong>The gain that matters second.</strong> The vector display carries no frame at all in its definition: the map $\vec v\mapsto\tilde u_{\mathrm r}\vec v\tilde u_{\mathrm r}^{\natural}$ uses the multiplication table and the vector subspace, and the matrix is read in any orthonormal basis of that subspace. A change of orthonormal basis conjugates $R$ by an orthogonal matrix, which is a symmetry of the set of rotations and not a change of the display's content.</p>
+<p><strong>The gain that is easy to miss.</strong> The trace identity $\operatorname{tr}R+1=\lvert\operatorname{tr}\mathsf M_2\rvert^{2}$ gives a numerical bridge between the two writings that uses no frame and no basis. Both sides are invariants, and the identity holds for every rotor.</p>
+<h2 id="the-two-sectors-side-by-side">The Two Sectors Side by Side</h2>
+<p><strong>The table.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>spinor sector</th>
+<th>vector sector</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>carrier</td>
+<td>$\mathbb{C}^{2}$</td>
+<td>$\mathbb{C}^{3}$</td>
+</tr>
+<tr>
+<td>element</td>
+<td>$\tilde u_{\mathrm r}\in SU(2)$</td>
+<td>$R(\tilde u_{\mathrm r})\in SO(3)$</td>
+</tr>
+<tr>
+<td>dimension of the group</td>
+<td>$3$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>Lie algebra</td>
+<td>$\mathfrak{su}(2)$, the vector subspace with the cross product</td>
+<td>$\mathfrak{so}(3)$, the antisymmetric matrices</td>
+</tr>
+<tr>
+<td>generators</td>
+<td>$3$, one diagonal in the Peirce frame</td>
+<td>$3$, none diagonal</td>
+</tr>
+<tr>
+<td>kernel of the map to the rotation</td>
+<td>$\{\pm e_t\}$</td>
+<td>$\{\pm e_t\}$, central</td>
+</tr>
+<tr>
+<td>trace</td>
+<td>$2\cos(\theta/2)$</td>
+<td>$1+2\cos\theta$</td>
+</tr>
+<tr>
+<td>spectrum</td>
+<td>$\{e^{\pm i\theta/2}\}$</td>
+<td>$\{1,e^{\pm i\theta}\}$</td>
+</tr>
+<tr>
+<td>period in $\theta$</td>
+<td>$4\pi$</td>
+<td>$2\pi$</td>
+</tr>
+<tr>
+<td>frame needed</td>
+<td>yes, the Peirce frame or another</td>
+<td>no</td>
+</tr>
+<tr>
+<td>padded size</td>
+<td>$2$</td>
+<td>$4$, with one spectator</td>
+</tr>
+<tr>
+<td>ambient group of the display</td>
+<td>$SU(2)$</td>
+<td>$SU(4)$</td>
+</tr>
+<tr>
+<td>what it carries</td>
+<td>the rotor and its sign</td>
+<td>the rotation the rotor performs</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The two traces are not independent.</strong> The vector trace is the sum of the squares of the spinor eigenvalues, which is the character of the symmetric square:</p>
+<p>$$
+1+e^{i\theta}+e^{-i\theta}=1+2\cos\theta,\qquad
+\bigl(e^{i\theta/2}\bigr)^{2}=e^{i\theta},\qquad
+\bigl(e^{-i\theta/2}\bigr)^{2}=e^{-i\theta}.
+$$</p>
+<p>So the vector display is the spinor display <em>squared</em>, in the representation-theoretic sense: it is $\operatorname{Sym}^{2}$ of the spinor. That is the precise relation, and it explains both the loss of the sign and the absence of a cover on the rotation group.</p>
+<h2 id="the-strongest-objection">The Strongest Objection</h2>
+<p><strong>The objection.</strong> The defining representation cannot replace $SU(2)$, because it does not contain the spinors, and the biquaternion is a spinorial object. The corpus's whole reading of the rotation factor uses the double cover, the half-angle and the two signs. A $3\times3$ real matrix has none of the three, so the proposal is a step backwards.</p>
+<p><strong>The answer, in three parts.</strong></p>
+<p><strong>First, the proposal is not a replacement.</strong> The vector writing is offered for the vector sector, where the object that acts is a rotation of $\mathbb{R}^{3}$ and where no spinor is involved. The polar decomposition's rotor acts on the vector part by a rotation; that action is the vector object. The rotor itself remains a spinor, and the spinor articles keep it.</p>
+<p><strong>Second, the vector writing is already in the corpus.</strong> It is the bottom-right block of $L_{\mathrm{axf}}(\tilde u_{\mathrm r})R_{\mathrm{axf}}(\tilde u_{\mathrm r}^{\natural})$, with the scalar $1$ in the top-left block. The article adds no object; it names a block that the axis-free article prints and reads it as the defining representation of the rotation group. A reader who computes the two-sided operator of a rotor has already computed $R$.</p>
+<p><strong>Third, the loss is the double cover and only the double cover.</strong> Everything else of the biquaternion survives in the vector picture: the four factors, the order of the word, the polar structure, the Cartan split, the determinant, the trace, the spectrum. What does not survive is the sign, and the sign is exactly what the spinor sector is for.</p>
+<p><strong>The second objection, and its answer.</strong> The objection says that the paper's $\mathrm{SU}(4)$ is a contrivance, because the fourth coordinate is nothing. The answer is that the fourth slot is not nothing in the corpus: it is the scalar line of the algebra, the line that the conjugation fixes. The paper pads by hand; the corpus finds the slot already there, carrying the scalar part of the element, and for a rotor that scalar part is $1$.</p>
+<p><strong>The third objection.</strong> The objection says that the padded matrix is not a faithful record of the element, because $\operatorname{diag}(R,1)$ and $\operatorname{diag}(R',1)$ can agree for different elements. The answer is that this is true and is the point: the vector writing records the rotation and not the element, and the element is recorded by the rotor up to sign. A display that recorded the element would have to be two-dimensional over $\mathbb{C}$ and would have to be the spinor.</p>
+<h2 id="the-verdict">The Verdict</h2>
+<p><strong>What the article establishes.</strong> The rotation factor of the polar decomposition can be written in three ways that carry the same information: as the versor $\tilde u_{\mathrm r}$ in $SU(2)$; as the real orthogonal matrix $R(\tilde u_{\mathrm r})$ of the conjugation action on the vector subspace; and as the padded matrix $\operatorname{diag}(R,1)$ in $SU(4)$, which is the bottom-right block of the axis-free two-sided matrix of the rotor.</p>
+<p><strong>What each writing costs.</strong> The spinor writing costs a frame and carries a privileged axis in the Peirce display. The vector writing loses the double cover and carries a spectator slot. The two-sided writing costs nothing beyond the axis-free frame and prints both blocks: the scalar $1$ and the rotation.</p>
+<p><strong>What to use when.</strong> Use the spinor writing when the sign matters, that is in the spinor sector, in the reality conditions, in the two sheets and in the topology of the boosts. Use the vector writing when the rotation is the object, that is in the geometry of the vector sector, in the trace and spectrum computations, and wherever a direction-free display is wanted.</p>
+<p><strong>One sentence to close.</strong> The rotor is a spinor that performs a rotation; the defining representation writes the rotation and forgets the spinor; the axis-free frame of the corpus writes both, in one $4\times4$ matrix, as $\operatorname{diag}(1,R)$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde Q$</td>
+<td>a biquaternion, $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$</td>
+</tr>
+<tr>
+<td>$e_t,\vec e_x,\vec e_y,\vec e_z$</td>
+<td>the coefficient basis, with $\vec e_x\vec e_y=\vec e_z$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{V}$</td>
+<td>the vector subspace, the $\mathbb{C}$-span of the three vector units</td>
+</tr>
+<tr>
+<td>$\natural$</td>
+<td>the quaternion conjugation, fixing $e_t$ and negating the vector part</td>
+</tr>
+<tr>
+<td>$*$</td>
+<td>the Hermitian conjugation, $\bar{\cdot}\circ\natural$</td>
+</tr>
+<tr>
+<td>$\langle\tilde Q\rangle_{\natural}$</td>
+<td>the quaternionic norm, $Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$</td>
+</tr>
+<tr>
+<td>$r,\varkappa_{\mathrm{phs}},\tilde U_{\mathrm b},\tilde u_{\mathrm r}$</td>
+<td>scale, central phase, boost, rotor</td>
+</tr>
+<tr>
+<td>$T(\tilde Q)$</td>
+<td>the matrix of $\vec v\mapsto\tilde Q\vec v\tilde Q^{\natural}$ on $\mathbb{B}_{V}$</td>
+</tr>
+<tr>
+<td>$R(\tilde u_{\mathrm r})$</td>
+<td>$T(\tilde u_{\mathrm r})$, real orthogonal, the rotation of the rotor</td>
+</tr>
+<tr>
+<td>$K_x,K_y,K_z$</td>
+<td>the three generators of $\mathfrak{so}(3,\mathbb{R})$</td>
+</tr>
+<tr>
+<td>$L_{\mathrm{axf}},R_{\mathrm{axf}}$</td>
+<td>the axis-free left and right matrices</td>
+</tr>
+<tr>
+<td>$\mathsf M_2$</td>
+<td>the $2\times2$ image of the element</td>
+</tr>
+<tr>
+<td>$\Phi_{\tilde Q}$</td>
+<td>the map $\vec v\mapsto\tilde Q\vec v\tilde Q^{\natural}$</td>
+</tr>
+<tr>
+<td>$\mathrm{SU}(3),\mathrm{SU}(4)$</td>
+<td>the special unitary groups over $\mathbb{C}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html">The Polar Decomposition of an N-Regular Biquaternion</a>, for the four-factor word, the rotor and the branch cut.</li>
+<li><a href="../articles_maths/the-polar-decomposition-of-a-biquaternion.html">The Polar Decomposition of a Biquaternion</a>, for the Cartan pair without the regular assumption.</li>
+<li><a href="the-polar-word-and-the-general-solution.html">The Polar Word and the General Solution in the Biquaternionic Schrödinger Equation</a>, for the same word applied to a field rather than to an element.</li>
+<li><a href="../articles_maths/the-quaternion-versors-and-the-unitary-group.html">The Quaternion Versors and the Unitary Group</a>, for $SU(2)=S^{3}$ and the two double covers.</li>
+<li><a href="../articles_maths/the-rotor-as-a-square-root-of-a-rotation-the-two-signs-and-the-double-cover.html">The Rotor as a Square Root of a Rotation: the Two Signs and the Double Cover</a>, for the sign of the rotor.</li>
+<li><a href="../articles_maths/m4c-axis-free-representation.html">$M_4(\mathbb{C})$ Axis-Free Representation</a>, for $L_{\mathrm{axf}}$, $R_{\mathrm{axf}}$, the transpose identity and the structure constants.</li>
+<li><a href="../articles_maths/m4c-pauli-representation.html">$M_4(\mathbb{C})$ Pauli Representation</a>, for the Peirce frame and the root $\vec Z=i\vec e_z$.</li>
+<li><a href="../articles_maths/matrix-representations-conventions.html">Matrix Representations Conventions</a>, for the two frames and the rule on the legacy arrays.</li>
+<li><a href="../articles_maths/the-unitary-group-of-the-biquaternion-algebra.html">The Unitary Group of the Biquaternion Algebra</a>, for $U(2)$ as the phase times the rotor.</li>
+<li><a href="su-n-over-the-complexes.html">The Special Unitary Groups: $\mathrm{SU}(1)$, $\mathrm{SU}(2)$, $\mathrm{SU}(3)$, $\mathrm{SU}(4)$, $\mathrm{SU}(n)$</a>, for $\mathrm{SU}(3)\cap\mathrm{SO}(3,\mathbb{C})=\mathrm{SO}(3,\mathbb{R})$ and the centraliser $\mathbb{Z}/3$.</li>
+<li><a href="so-n-over-the-reals.html">The Special Orthogonal Groups over the Reals: $\mathrm{SO}(1)$, $\mathrm{SO}(2)$, $\mathrm{SO}(3)$, $\mathrm{SO}(4)$, $\mathrm{SO}(n)$</a>, for the ladder and the covering at $n=3$.</li>
+<li><a href="../articles_maths/biquaternion-rotations-and-lorentz-transformations.html">Biquaternion Rotations and Lorentz Transformations</a>, for the action of the rotor on the vector part.</li>
+</ul>
+<h2 id="the-verification">The Verification</h2>
+<p><strong>The rule.</strong> Every claim is recomputed on at most one hundred elements, and the largest residual is quoted. The scripts are throwaway and are not kept.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>claim</th>
+<th>elements</th>
+<th>residual</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$T(\tilde u)$ equals the Rodrigues matrix of the same axis and angle</td>
+<td>$100$</td>
+<td>$4.4\times10^{-16}$</td>
+</tr>
+<tr>
+<td>$T(\tilde u)^{\mathsf T}T(\tilde u)=\mathrm I_3$ and $\det T(\tilde u)=1$</td>
+<td>$100$</td>
+<td>$1.1\times10^{-15}$</td>
+</tr>
+<tr>
+<td>$L_{\mathrm{axf}}(\tilde u)R_{\mathrm{axf}}(\tilde u^{\natural})=\operatorname{diag}(1,R)$</td>
+<td>$100$</td>
+<td>$4.4\times10^{-16}$</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}T(\tilde u)=1+2\cos\theta$</td>
+<td>$50$</td>
+<td>$4.4\times10^{-16}$</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}T(\tilde u)+1=\lvert\operatorname{tr}\mathsf M_2(\tilde u)\rvert^{2}$</td>
+<td>$50$</td>
+<td>$4.4\times10^{-16}$</td>
+</tr>
+<tr>
+<td>the symmetric-square character identity</td>
+<td>$50$</td>
+<td>$4.4\times10^{-16}$</td>
+</tr>
+<tr>
+<td>$R K_j R^{\mathsf T}=\sum_i R_{ij}K_i$</td>
+<td>$100$</td>
+<td>$4.4\times10^{-16}$</td>
+</tr>
+<tr>
+<td>$L_{\mathrm{axf}}(\tilde u)$ and $R_{\mathrm{axf}}(\tilde u^{\natural})$ both in $SO(4)$</td>
+<td>$100$</td>
+<td>$7.8\times10^{-16}$</td>
+</tr>
+<tr>
+<td>the single-axis formula for $T(t\,e_t+z\,\vec e_z)$</td>
+<td>$50$</td>
+<td>$1.3\times10^{-15}$</td>
+</tr>
+<tr>
+<td>$\exp(\theta K_{\vec n})=T(\exp(\tfrac{\theta}{2}\vec n))$</td>
+<td>$25$</td>
+<td>$8.9\times10^{-16}$</td>
+</tr>
+<tr>
+<td>$[K_i,K_j]=\varepsilon_{ijk}K_k$ and the same after padding</td>
+<td>$3$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>the cyclic permutation permutes the generators without sign</td>
+<td>$1$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>the transposition changes the sign of one generator</td>
+<td>$1$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$T(\tilde Q_1\tilde Q_2)=T(\tilde Q_1)T(\tilde Q_2)$</td>
+<td>$100$</td>
+<td>$5.1\times10^{-14}$</td>
+</tr>
+<tr>
+<td>the block form with $\langle\tilde Q\rangle_{\natural}$ in the scalar slot</td>
+<td>$60$</td>
+<td>$2.0\times10^{-15}$</td>
+</tr>
+<tr>
+<td>$\det T(\tilde Q)=\langle\tilde Q\rangle_{\natural}^{3}$</td>
+<td>$60$</td>
+<td>$8.4\times10^{-12}$</td>
+</tr>
+<tr>
+<td>$T(-\tilde Q)=T(\tilde Q)$</td>
+<td>$1$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$T(\lambda\tilde Q)=\lambda^{2}T(\tilde Q)$</td>
+<td>$1$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$R(\theta+2\pi)=R(\theta)$ and $\tilde u_{\mathrm r}(\theta+2\pi)=-\tilde u_{\mathrm r}(\theta)$</td>
+<td>$25$</td>
+<td>$3.3\times10^{-16}$</td>
+</tr>
+<tr>
+<td>$\operatorname{diag}(R,1)$ is unitary of determinant one</td>
+<td>$100$</td>
+<td>$2.2\times10^{-16}$</td>
+</tr>
+<tr>
+<td>$T(\tilde U)=T(\tilde U_{\mathrm b})T(\tilde u_{\mathrm r})$</td>
+<td>$60$</td>
+<td>$1.0\times10^{-13}$</td>
+</tr>
+<tr>
+<td>$T(\tilde U_{\mathrm b})$ Hermitian, positive, determinant one</td>
+<td>$60$</td>
+<td>$8.0\times10^{-14}$</td>
+</tr>
+<tr>
+<td>$T(\tilde u_{\mathrm r})$ real and orthogonal</td>
+<td>$60$</td>
+<td>$8.5\times10^{-15}$</td>
+</tr>
+<tr>
+<td>$\det T(\tilde U)=1$ for a unit factor</td>
+<td>$60$</td>
+<td>$8.2\times10^{-14}$</td>
+</tr>
+<tr>
+<td>$T(\varkappa_{\mathrm{phs}}\tilde u_{\mathrm r})=\varkappa_{\mathrm{phs}}^{2}R$</td>
+<td>$1$</td>
+<td>$1.5\times10^{-16}$</td>
+</tr>
+<tr>
+<td>$u^{3}=-e_t$ and $T(u)^{3}=\mathrm I_3$ for $u=\tfrac12(e_t+\vec e_x+\vec e_y+\vec e_z)$</td>
+<td>$1$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The exact cases.</strong> The quarter turn about $\vec e_z$ and the third of a turn about $(1,1,1)$ are computed in exact arithmetic, and every entry of the result is a rational number. The quarter turn gives $\operatorname{diag}(1,R)$ with $R$ integral, and the third of a turn gives $\operatorname{diag}(1,P)$ with $P$ the cyclic permutation matrix.</p>
+<p><strong>The third-of-a-turn case, for the record.</strong> With $u=\tfrac12(e_t+\vec e_x+\vec e_y+\vec e_z)$,</p>
+<p>$$
+u^{2}=-\tfrac12e_t+\tfrac12\vec e_x+\tfrac12\vec e_y+\tfrac12\vec e_z,\qquad
+u^{3}=-e_t,\qquad
+u^{6}=e_t,
+$$</p>
+<p>and</p>
+<p>$$
+T(u)=\begin{pmatrix}0&0&1\\1&0&0\\0&1&0\end{pmatrix},\qquad
+T(u)^{3}=\mathrm I_3 .
+$$</p>
+<p>The rotor has order six and its rotation has order three: the double cover is visible as the ratio of the two orders. The two-sided matrix is</p>
+<p>$$
+L_{\mathrm{axf}}(u)R_{\mathrm{axf}}(u^{\natural})=
+\begin{pmatrix}
+1&0&0&0\\
+0&0&0&1\\
+0&1&0&0\\
+0&0&1&0
+\end{pmatrix}
+=\begin{pmatrix}1&0\\0&P\end{pmatrix},
+$$</p>
+<p>with every entry an integer.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
