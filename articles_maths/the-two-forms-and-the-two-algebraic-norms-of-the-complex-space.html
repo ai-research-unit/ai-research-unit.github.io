@@ -70,51 +70,38 @@
       <div class="article-body">
         <h1 id="the-two-forms-and-the-two-algebraic-norms-of-the-complex-space"><strong>The Two Forms and the Two Algebraic Norms of the Complex Space</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>A form on an algebra is the scalar part of a product, with a conjugation named on each slot. The complex space carries two products, so it carries two forms, and each form read at its two equal arguments is an algebraic norm. The forms are $P(Q_1,Q_2)=Q_1Q_2$, the plain form, and $H(Q_1,Q_2)=Q_1\bar Q_2$, the Hermitian form. The norms are $P(Q)=Q^{2}$ and $H(Q)=Q\bar Q$.</p>
+<p>A form on an algebra is the scalar part of a product. The complex space carries two products, so it carries two forms, and each form read at its two equal arguments is an algebraic norm. The forms are $P(Q_1,Q_2)=Q_1Q_2$, the plain form, and $H(Q_1,Q_2)=Q_1\bar Q_2$, the Hermitian form. The norms are $P(Q)=Q^{2}$ and $H(Q)=Q\bar Q$.</p>
 <p>The two are as different as two forms on one space can be. The plain form is symmetric, complex-valued, of realified signature $(1,1)$, isotropic, with no positive cone and no order; its norm is complex, anisotropic and not real. The Hermitian form is conjugate-symmetric, positive definite, of realified signature $(2,0)$, multiplicative; its norm is the squared modulus. One function, $H$, is at once a form, a norm and a square of the algebra.</p>
 <p>The two products are <em>The Two Products of the Complex Space</em>, and the general convention of a form is <em>Product and Form Conventions</em>; the norm of the definite form, its multiplicativity, the invertibility criterion and the group of units are <em>Complex Norm and Invertibility</em>. The positivity and the cone are <em>The Positivity and the Ray of Squares of the Complex Space</em>, and the Hermitian modules over the algebra are <em>The Hermitian Modules and the Unitary Witt Group over the Complex Algebra</em>.</p>
-<p><strong>Interpretation.</strong> The elements are $Q_1=q_1+iq'_1$ and $Q_2=q_2+iq'_2$, with real coordinates. A form is written with two arguments and a norm with one, and the brackets $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{\natural}$, $\langle\cdot,\cdot\rangle_{*}$ and $\langle\cdot,\cdot\rangle_{\natural*}$ name the four forms of the general theory. A bracket is reserved for a form and is never an element. The letters of the forms are $P$ and $H$; the letter $B$ is not used for a form here, the corpus keeping it for the complex modulus of a vector part and for a right annihilator.</p>
-<h2 id="the-four-forms-and-the-two-that-survive">The Four Forms and the Two That Survive</h2>
-<p>The general theory reads a form by the two conjugations its product carries, and the table lists the four and their images.</p>
+<p><strong>Interpretation.</strong> The elements are $Q_1=q_1+iq'_1$ and $Q_2=q_2+iq'_2$, with real coordinates. A form is written with two arguments and a norm with one, and the brackets $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{*}$ name the two forms, the plain and the Hermitian. A bracket is reserved for a form and is never an element. The letters of the forms are $P$ and $H$.</p>
+<h2 id="the-two-forms">The Two Forms</h2>
+<p><strong>Definition.</strong> The <strong>plain form</strong> is $P(Q_1,Q_2)=Q_1Q_2$, the scalar part of the plain product, and the <strong>Hermitian form</strong> is $H(Q_1,Q_2)=Q_1\bar Q_2$, the scalar part of the sesquilinear product.</p>
+<p><strong>Proposition (there is no third form).</strong> A form of the space is the scalar part of a product of the space, so the space carries two forms, and any other reading of the two slots is a conjugate of one of them.</p>
+<p><em>Proof.</em> The space carries the two products $Q_1Q_2$ and $Q_1\bar Q_2$ (<em>The Two Products of the Complex Space</em>), so it carries at most their two scalar parts. A reading with the bar in the first slot gives $\bar Q_1Q_2=\overline{Q_1\bar Q_2}$, whose value is the conjugate of $H(Q_1,Q_2)$, and a form and its conjugate form are one object with two signs, not two forms.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>the general form</th>
-<th>its product</th>
-<th>its image on $\mathbb{C}$</th>
-<th>its norm</th>
+<th>form</th>
+<th>product</th>
+<th>the form</th>
+<th>the algebraic norm</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>$\langle\cdot,\cdot\rangle$</td>
+<td>plain</td>
 <td>$Q_1Q_2$</td>
 <td>$P(Q_1,Q_2)=Q_1Q_2$</td>
 <td>$P(Q)=Q^{2}$</td>
 </tr>
 <tr>
-<td>$\langle\cdot,\cdot\rangle_{\natural}$</td>
-<td>$Q_1^{\natural}Q_2$</td>
-<td>$P(Q_1,Q_2)=Q_1Q_2$</td>
-<td>$N(Q)=Q^{2}$</td>
-</tr>
-<tr>
-<td>$\langle\cdot,\cdot\rangle_{*}$</td>
-<td>$Q_1Q_2^{*}$</td>
+<td>Hermitian</td>
+<td>$Q_1\bar Q_2$</td>
 <td>$H(Q_1,Q_2)=Q_1\bar Q_2$</td>
 <td>$H(Q)=Q\bar Q$</td>
 </tr>
-<tr>
-<td>$\langle\cdot,\cdot\rangle_{\natural*}$</td>
-<td>$Q_1^{\natural}Q_2^{*}$</td>
-<td>$H(Q_1,Q_2)=Q_1\bar Q_2$</td>
-<td>$\mathrm{Kr}(Q)=Q\bar Q$</td>
-</tr>
 </tbody>
 </table></div>
-<p><strong>Proposition.</strong> The four forms fall two-and-two onto two, and the two identities $N=P$ and $\mathrm{Kr}=H$ hold.</p>
-<p><em>Proof.</em> The intrinsic conjugation ${}^{\natural}$ is the identity on $\mathbb{C}$, so the second and the fourth rows coincide with the first and the third.</p>
-<p><strong>Remark (the general letter survives without an object).</strong> The letters $N$ and $\mathrm{Kr}$ keep their place in the corpus's list of four, and on $\mathbb{C}$ they name the two forms of the plain and Hermitian kinds. A reader who sees $N$ in a general article must not read it as a complex norm: the coincidence is a coincidence of the complex layer, and it is recorded here once so that it is not read as an identity in general.</p>
 <h2 id="the-plain-form">The Plain Form</h2>
 <p><strong>Definition.</strong> The <strong>plain form</strong> is $P(Q_1,Q_2)=Q_1Q_2$, the multiplication of the field.</p>
 <p><strong>Proposition.</strong> The plain form is $\mathbb{C}$-bilinear, symmetric and non-degenerate.</p>
@@ -217,7 +204,7 @@ $$</p>
 <p><em>Proof.</em> $H(Q_1+Q_2)=H(Q_1)+H(Q_2)+2\operatorname{Re}H(Q_1,Q_2)$ and $H(Q_1+iQ_2)=H(Q_1)+H(Q_2)+2\operatorname{Im}H(Q_1,Q_2)$, so the two brackets are $2\operatorname{Re}H(Q_1,Q_2)$ and $2\operatorname{Im}H(Q_1,Q_2)$.</p>
 <p><strong>Remark (why two terms and four).</strong> A square polarises in two terms exactly when the form is bilinear, and in four when it is sesquilinear. The plain norm is the square of a bilinear form and the Hermitian norm is the square of a sesquilinear one, and the arity of the polarisation is the arity of the form. This is the same distinction as the one between the two products, read on the diagonal.</p>
 <h2 id="summary">Summary</h2>
-<p>The complex space carries two forms, $P(Q_1,Q_2)=Q_1Q_2$ and $H(Q_1,Q_2)=Q_1\bar Q_2$, because the intrinsic conjugation is the identity and the four forms of the general theory fall two-and-two, with $N=P$ and $\mathrm{Kr}=H$. The plain form is symmetric, non-degenerate, of realified signature $(1,1)$, isotropic on the two null lines $q=\pm q'$, with no positive cone and no order; its norm $Q^{2}$ is complex, anisotropic and multiplicative. The Hermitian form is conjugate-symmetric, positive definite, of realified signature $(2,0)$, multiplicative; its norm $Q\bar Q$ is real, non-negative and definite, and it polarises in four terms where the plain norm polarises in two. On the real line the two forms coincide, on the imaginary line they are opposite, and the whole difference between the two signatures is the sign of the square of an imaginary number. One function, $H$, is at once a form, a norm and a square.</p>
+<p>The complex space carries two forms, $P(Q_1,Q_2)=Q_1Q_2$ and $H(Q_1,Q_2)=Q_1\bar Q_2$, one for each of its two products, and no third. The plain form is symmetric, non-degenerate, of realified signature $(1,1)$, isotropic on the two null lines $q=\pm q'$, with no positive cone and no order; its norm $Q^{2}$ is complex, anisotropic and multiplicative. The Hermitian form is conjugate-symmetric, positive definite, of realified signature $(2,0)$, multiplicative; its norm $Q\bar Q$ is real, non-negative and definite, and it polarises in four terms where the plain norm polarises in two. On the real line the two forms coincide, on the imaginary line they are opposite, and the whole difference between the two signatures is the sign of the square of an imaginary number. One function, $H$, is at once a form, a norm and a square.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -229,19 +216,19 @@ $$</p>
 <tbody>
 <tr>
 <td>$P(Q_1,Q_2)=Q_1Q_2$</td>
-<td>the plain form, also $N$; the plain norm is $P(Q)=Q^{2}$</td>
+<td>the plain form; the plain norm is $P(Q)=Q^{2}$</td>
 </tr>
 <tr>
 <td>$H(Q_1,Q_2)=Q_1\bar Q_2$</td>
-<td>the Hermitian form, also $\mathrm{Kr}$; the norm is $H(Q)=Q\bar Q$</td>
+<td>the Hermitian form; the norm is $H(Q)=Q\bar Q$</td>
 </tr>
 <tr>
-<td>$\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{\natural}$</td>
-<td>the two bilinear brackets, both equal to $P$</td>
+<td>$\langle\cdot,\cdot\rangle$</td>
+<td>the bracket of the plain form</td>
 </tr>
 <tr>
-<td>$\langle\cdot,\cdot\rangle_{*}$, $\langle\cdot,\cdot\rangle_{\natural*}$</td>
-<td>the two sesquilinear brackets, both equal to $H$</td>
+<td>$\langle\cdot,\cdot\rangle_{*}$</td>
+<td>the bracket of the Hermitian form</td>
 </tr>
 <tr>
 <td>$\operatorname{Re}P$, $\operatorname{Re}H$</td>
