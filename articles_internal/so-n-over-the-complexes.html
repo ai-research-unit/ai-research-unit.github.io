@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Special Orthogonal Groups over the Complexes: $\mathrm{SO}(1,\mathbb{C})$, $\mathrm{SO}(2,\mathbb{C})$, $\mathrm{SO}(3,\mathbb{C})$, $\mathrm{SO}(4,\mathbb{C})$, $\mathrm{SO}(n,\mathbb{C})$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-special-orthogonal-groups-over-the-complexes-math0-math1-math2-math3-math4"><strong>The Special Orthogonal Groups over the Complexes: $\mathrm{SO}(1,\mathbb{C})$, $\mathrm{SO}(2,\mathbb{C})$, $\mathrm{SO}(3,\mathbb{C})$, $\mathrm{SO}(4,\mathbb{C})$, $\mathrm{SO}(n,\mathbb{C})$</strong></h1>
+<h2 id="the-plan">The Plan</h2>
+<p><strong>The same equation over another field.</strong> The group is cut by $A^{\mathsf T}A=\mathrm I$ with $\det A=1$, but now the entries are complex numbers. The equation is unchanged; everything that follows from <em>compactness</em> is gone, and everything that follows from <em>polynomial algebra over an algebraically closed field</em> is stronger.</p>
+<p><strong>The four questions survive and one of them changes its answer qualitatively.</strong> The dimension doubles. The centre and the rank are unchanged. The conjugacy classes become continuous families of parameters that can be arbitrary complex numbers, so the "angles" are no longer angles. The topology does not change at all, for a reason that this article proves: the complex group deformation-retracts onto the real one.</p>
+<p><strong>The two structural surprises.</strong> First, $\mathrm{SO}(2,\mathbb{C})$ is not a circle but the multiplicative group $\mathbb{C}^{\times}$, so the two-dimensional rung is already non-compact and already has nontrivial nilpotent-free algebra. Second, and much more important, the Lie algebra now contains <strong>nilpotent elements</strong>, which the real algebra cannot have. The exponential therefore has unipotent images, and the group acquires a whole unipotent geometry that the compact group lacks.</p>
+<p><strong>The small ladder over $\mathbb{C}$ in one line each.</strong> $\mathrm{SO}(1,\mathbb{C})$ is trivial; $\mathrm{SO}(2,\mathbb{C})\cong\mathbb{C}^{\times}$; $\mathrm{SO}(3,\mathbb{C})\cong\mathrm{PSL}_2(\mathbb{C})$; $\mathrm{SO}(4,\mathbb{C})\cong(\mathrm{SL}_2(\mathbb{C})\times\mathrm{SL}_2(\mathbb{C}))/\{\pm1\}$; and $\mathrm{SO}(n,\mathbb{C})$ is simple for $n\ge3$ except at $n=4$, exactly as over $\mathbb{R}$.</p>
+<p><strong>What is proved and what is quoted.</strong> The parametrisations of the first four rungs, the pairing of the spectrum under inversion, the existence of nilpotents at $n=3$ and $n=4$, the surjectivity of the exponential, the identity $\mathrm{SO}(n,\mathbb{C})\cap\mathrm{SU}(n)=\mathrm{SO}(n,\mathbb{R})$ and the Cartan decomposition are proved or recomputed in the closing verification. The classification of nilpotent orbits and the finer conjugacy theory are quoted from the standard literature and marked as such.</p>
+<h2 id="the-shift-from-the-reals-to-the-complexes">The Shift from the Reals to the Complexes</h2>
+<h3 id="the-two-products-split">The Two Products Split</h3>
+<p>Over $\mathbb{R}$ the two writings $A^{\mathsf T}A=\mathrm I$ and $AA^{\mathsf T}=\mathrm I$ are equivalent, and they are also equivalent to $A^{-1}=A^{\mathsf T}$. Over $\mathbb{C}$ a third product appears and the equivalence breaks:</p>
+<p>$$
+A^{\mathsf T}A=\mathrm I
+\quad\text{(complex orthogonal)},\qquad
+A^{*}A=\mathrm I
+\quad\text{(unitary)},\qquad
+A^{*}=\bar A^{\mathsf T}.
+$$</p>
+<p>The two conditions are different, and the difference is a real structure. The orthogonal condition is $\mathbb{C}$-bilinear: it says that the columns are orthonormal for the symmetric form $\sum x_iy_i$. The unitary condition is sesquilinear: it says that the columns are orthonormal for the Hermitian form $\sum \bar x_iy_i$. A complex matrix cannot satisfy both unless it is real:</p>
+<p><strong>Proposition.</strong> $A\in\mathrm{SO}(n,\mathbb{C})$ and $A\in\mathrm{SU}(n)$ together imply $A\in\mathrm{SO}(n,\mathbb{R})$.</p>
+<p><strong>Proof.</strong> The two conditions give $A^{\mathsf T}A=\mathrm I$ and $\bar A^{\mathsf T}A=\mathrm I$. Subtracting, $(\bar A-A)^{\mathsf T}A=0$. Since $A$ is invertible, $(\bar A-A)^{\mathsf T}=0$, hence $\bar A=A$. A real matrix that is complex orthogonal is real orthogonal, and $\det A=1$ puts it in $\mathrm{SO}(n,\mathbb{R})$.</p>
+<p>So the real orthogonal group sits inside both complex groups, and this is the cleanest statement of the relation between this article and the companion on $\mathrm{SU}$:</p>
+<p>$$
+\mathrm{SO}(n,\mathbb{C})\cap\mathrm{SU}(n)=\mathrm{SO}(n,\mathbb{R}).
+$$</p>
+<p>The verification checks the two inclusions numerically: one hundred real rotations of determinant one are unitary with error at $10^{-15}$, and over one hundred elements of $\mathrm{SU}(n)$ the truth value of "the matrix is real" agrees with the truth value of "$A^{\mathsf T}A=\mathrm I$" in every case.</p>
+<h3 id="the-determinant-is-now-a-sign">The Determinant Is Now a Sign</h3>
+<p>Over $\mathbb{C}$ the determinant of a complex orthogonal matrix satisfies $\det(A)^{2}=1$, so it is $\pm1$ exactly as over $\mathbb{R}$, and the two values separate $\mathrm{O}(n,\mathbb{C})$ into two cosets. The verification generates complex orthogonal matrices by complex Gram–Schmidt and finds $|\det|=1$ in every case.</p>
+<p><strong>But nothing forces the group to be bounded.</strong> The determinant condition is discrete, the orthogonality condition is polynomial, and the solution set is an affine algebraic variety of complex dimension $n(n-1)/2$. It is not compact, because a complex orthogonal matrix can have arbitrarily large entries: the matrix</p>
+<p>$$
+\begin{pmatrix}\cosh t&i\sinh t\\ -i\sinh t&\cosh t\end{pmatrix}
+$$</p>
+<p>satisfies $A^{\mathsf T}A=\mathrm I_2$ for every real $t$, and its operator norm grows like $e^{t}$.</p>
+<h3 id="complex-dimension-and-real-dimension">Complex Dimension and Real Dimension</h3>
+<p>The complex dimension is the number of independent complex parameters, and it is the same count as over $\mathbb{R}$:</p>
+<p>$$
+\dim_{\mathbb{C}}\mathrm{SO}(n,\mathbb{C})=\frac{n(n-1)}{2},
+\qquad
+\dim_{\mathbb{R}}\mathrm{SO}(n,\mathbb{C})=n(n-1).
+$$</p>
+<p>The count is read from the algebra. The complex skew matrices $X^{\mathsf T}=-X$ have $n(n-1)/2$ free complex entries above the diagonal, hence complex dimension $n(n-1)/2$; as a real vector space the same set has twice that dimension.</p>
+<p><strong>The real dimension is the count of the orthogonality equations over $\mathbb{R}$.</strong> Writing each complex equation as two real equations gives $n(n+1)$ real conditions on $2n^{2}$ real entries, and $2n^{2}-n(n+1)=n(n-1)$.</p>
+<h3 id="what-is-lost-and-what-is-gained">What Is Lost, and What Is Gained</h3>
+<p><strong>Lost: definiteness.</strong> The Killing form of $\mathfrak{so}(n,\mathbb{C})$ is the complexification of a negative definite form, so it is nondegenerate but indefinite as a real form; the group is not compact; there is no invariant Riemannian metric of either sign that makes the group bounded.</p>
+<p><strong>Lost: the unit circle.</strong> The eigenvalues of a complex orthogonal matrix are still constrained, but no longer to the unit circle; they are constrained only by the reciprocal pairing $\lambda\leftrightarrow\lambda^{-1}$, which the next sections use.</p>
+<p><strong>Gained: nilpotents.</strong> Over $\mathbb{R}$ a skew matrix is normal, hence diagonalisable over $\mathbb{C}$, hence nilpotent only if zero. Over $\mathbb{C}$ a complex skew matrix need not be normal: the isotropy of the symmetric form allows vectors with $u\cdot u=0$, and those vectors build nilpotent elements. This single gain is responsible for the unipotent part of the group and for the whole difference in the exponential's image.</p>
+<p><strong>Gained: algebraicity.</strong> The group is the zero set of polynomials over $\mathbb{C}$, so it is an affine algebraic group, its subgroups are algebraic, and its representation theory is the representation theory of a complex reductive group. That is the reason this article can write the small rungs as explicit algebraic isomorphisms.</p>
+<h2 id="the-lie-algebra">The Lie Algebra</h2>
+<h3 id="complex-skew-matrices">Complex Skew Matrices</h3>
+<p>$$
+\mathfrak{so}(n,\mathbb{C})=\{X\in M_n(\mathbb{C}):X^{\mathsf T}=-X\},
+\qquad [X,Y]=XY-YX .
+$$</p>
+<p>The bracket closes by the same one-line proof as over $\mathbb{R}$, using the transpose and not the conjugate transpose. The complexification of the real algebra is the whole complex algebra:</p>
+<p>$$
+\mathfrak{so}(n,\mathbb{C})=\mathfrak{so}(n,\mathbb{R})\otimes_{\mathbb{R}}\mathbb{C}
+=\mathfrak{so}(n,\mathbb{R})\oplus i\,\mathfrak{so}(n,\mathbb{R}),
+$$</p>
+<p>because every complex skew matrix is the sum of its real and imaginary parts and each part is real skew. This decomposition is the Lie algebra shadow of the Cartan decomposition of the group, proved below.</p>
+<p>The Killing form is the complexification of the real one, $\kappa(X,Y)=(n-2)\operatorname{tr}(XY)$, and for $n\ge3$ it is nondegenerate; $\mathfrak{so}(n,\mathbb{C})$ is simple for $n\ge3$ with $n\ne4$, and $\mathfrak{so}(4,\mathbb{C})=\mathfrak{so}(3,\mathbb{C})\oplus\mathfrak{so}(3,\mathbb{C})$.</p>
+<h3 id="the-exponential">The Exponential</h3>
+<p>The exponential is defined by the same series, and the same computation gives $\exp(X)^{\mathsf T}\exp(X)=\mathrm I$ and $\det\exp(X)=1$, so the image lies in the group. The kernel is larger than over $\mathbb{R}$: on a complex rotation plane the period lattice is generated by $2\pi J$ and by $2\pi i J$, so the preimage of the identity is a two-dimensional lattice per plane.</p>
+<p><strong>Theorem.</strong> $\exp:\mathfrak{so}(n,\mathbb{C})\to\mathrm{SO}(n,\mathbb{C})$ is surjective.</p>
+<p><strong>Proof.</strong> Take $A$ in the group and its Jordan form. The spectrum is stable under inversion, so the eigenvalues come in pairs $\lambda,1/\lambda$; choose a logarithm on each pair with $\ell(1/\lambda)=-\ell(\lambda)$, and on each Jordan block take the logarithm of the block with that eigenvalue. Assembling the blocks gives a complex matrix $L$ with $\exp(L)=A$, and the pairing makes $L$ skew: $L^{\mathsf T}=-L$, because $A^{\mathsf T}=A^{-1}$ and the branch was chosen symmetrically. The verification carries out the construction with the paired branch on ninety random elements and reports residuals at $10^{-15}$ for both $\exp(L)-A$ and $L+L^{\mathsf T}$.</p>
+<p>The pairing of the branch is the whole content. Away from the negative real axis the principal branch already satisfies $\ell(1/\lambda)=-\ell(\lambda)$, so the principal logarithm is automatically skew; the failure is localised at the eigenvalue $-1$. At $A=\operatorname{diag}(-1,-1,1)$, which lies in $\mathrm{SO}(3,\mathbb{C})$, the principal logarithm is $\operatorname{diag}(i\pi,i\pi,0)$: it exponentiates back to $A$, but $\lVert L+L^{\mathsf T}\rVert=2\pi\sqrt2=8.89$, so it is not skew. The repair replaces the two diagonal entries $i\pi$ by the block $\pi J$, which is skew, has the same exponential, and closes the defect to zero. The verification checks both the failure and the repair.</p>
+<h3 id="the-killing-form-and-the-real-forms-it-sees">The Killing Form and the Real Forms It Sees</h3>
+<p>The Killing form of the complex algebra is one object, and the real forms of the algebra are the real subspaces on which its real part has a definite sign structure. The forms are</p>
+<p>$$
+\mathfrak{so}(p,q),\qquad p+q=n,
+$$</p>
+<p>with the compact one at $q=0$ and the split one at $p=q$ (or $(p,q)=(r,r+1)$ when $n$ is odd), and up to isomorphism there are $\lfloor n/2\rfloor+1$ of them. The verification confirms the count by listing the signatures at the first rungs: two at $n=2$ and $n=3$, three at $n=4$, and the general formula thereafter.</p>
+<p>The complex group does not see the signature, and this is the exact sense in which the passage from $\mathbb{R}$ to $\mathbb{C}$ forgets the metric: the signature is extra data, a real structure on the complex algebra, and the complex group is the union of all its real forms.</p>
+<h2 id="the-dimension-ladder-over-math119">The Dimension Ladder over $\mathbb{C}$</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$n$</th>
+<th>$\dim_{\mathbb{C}}$</th>
+<th>$\dim_{\mathbb{R}}$</th>
+<th>the group</th>
+<th>first occurrence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>the trivial group</td>
+<td>—</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>$1$</td>
+<td>$2$</td>
+<td>$\mathbb{C}^{\times}$</td>
+<td>the first non-compact case</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$3$</td>
+<td>$6$</td>
+<td>$\mathrm{PSL}_2(\mathbb{C})$</td>
+<td>the first nilpotent</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$6$</td>
+<td>$12$</td>
+<td>$(\mathrm{SL}_2\times\mathrm{SL}_2)/\pm$</td>
+<td>the split of the algebra</td>
+</tr>
+<tr>
+<td>$5$</td>
+<td>$10$</td>
+<td>$20$</td>
+<td>simple, rank two</td>
+<td>—</td>
+</tr>
+<tr>
+<td>$6$</td>
+<td>$15$</td>
+<td>$30$</td>
+<td>$\mathrm{PSL}_4(\mathbb{C})$</td>
+<td>$D_3\cong A_3$</td>
+</tr>
+<tr>
+<td>$n$</td>
+<td>$n(n-1)/2$</td>
+<td>$n(n-1)$</td>
+<td>simple, $n\ge3$, $n\ne4$</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="math151-the-trivial-group">$\mathrm{SO}(1,\mathbb{C})$: The Trivial Group</h2>
+<p>The equation $a^{2}=1$ over $\mathbb{C}$ has the two solutions $\pm1$, so $\mathrm{O}(1,\mathbb{C})=\{\pm1\}$ and the determinant condition leaves</p>
+<p>$$
+\mathrm{SO}(1,\mathbb{C})=\{(1)\}.
+$$</p>
+<p>Everything is empty in the same way as over $\mathbb{R}$: dimension zero, one class, one point, trivial topology, exponential a bijection from the zero algebra. The rung is recorded only because the ladder must start somewhere and because the complex and real ladders agree exactly here.</p>
+<h2 id="math158-the-multiplicative-group">$\mathrm{SO}(2,\mathbb{C})$: The Multiplicative Group</h2>
+<h3 id="the-parametrisation-by-a-nonzero-complex-number">The Parametrisation by a Nonzero Complex Number</h3>
+<p>The condition $a^{2}+b^{2}=1$ has the rational parametrisation by $z\in\mathbb{C}^{\times}$:</p>
+<p>$$
+a=\frac{z+z^{-1}}{2},
+\qquad
+b=\frac{z-z^{-1}}{2i},
+\qquad
+A(z)=\begin{pmatrix}a&-b\\ b&a\end{pmatrix}.
+$$</p>
+<p><strong>Proposition.</strong> $z\mapsto A(z)$ is an isomorphism of groups $\mathbb{C}^{\times}\to\mathrm{SO}(2,\mathbb{C})$.</p>
+<p><strong>Proof.</strong> The identity $a^{2}+b^{2}=1$ follows from $(z+z^{-1})^{2}-(z-z^{-1})^{2}=4$ together with $1/i^{2}=-1$. Multiplicativity is</p>
+<p>$$
+A(z)A(w)=A(zw),
+$$</p>
+<p>which is checked entry by entry from the addition formulas for $(z+z^{-1})/2$ and $(z-z^{-1})/2i$, and which the verification confirms on one hundred random pairs with residual at $10^{-15}$. Injectivity is the recovery $z=a+ib$, and surjectivity is the same formula. The inverse is $A(z)^{-1}=A(z^{-1})$.</p>
+<p><strong>The two explicit families.</strong> At $z$ real the matrix is hyperbolic: the diagonal entry $a=(z+z^{-1})/2$ exceeds $1$ in modulus and the off-diagonal entry $b=(z-z^{-1})/2i$ is purely imaginary, so</p>
+<p>$$
+A(2)=\begin{pmatrix}1.25&0.75i\\ -0.75i&1.25\end{pmatrix},
+$$</p>
+<p>with $a=1.25$ and $b=-0.75i$. Conjugating by $\operatorname{diag}(1,i)$ turns it into the real hyperbolic rotation $\begin{pmatrix}a&ib\\ ib&a\end{pmatrix}$ with $ib=(z-z^{-1})/2$ real, so this family is the split real form $\mathrm{SO}(1,1)$ up to a complex change of coordinates. At $|z|=1$ instead the matrix is real, since $z=e^{i\theta}$ gives $a=\cos\theta$ and $b=\sin\theta$:</p>
+<p>$$
+A(e^{i\theta})=\begin{pmatrix}\cos\theta&-\sin\theta\\ \sin\theta&\cos\theta\end{pmatrix}.
+$$</p>
+<p>These two families are the two real forms inside the complex group: the compact circle $\mathrm{SO}(2,\mathbb{R})$ and the split group $\mathrm{SO}(1,1)$. The same complex group contains both, which is the concrete meaning of "the complex group forgets the signature".</p>
+<h3 id="the-eigenvalues-the-trace-and-the-classes">The Eigenvalues, the Trace and the Classes</h3>
+<p>The characteristic polynomial of $A(z)$ is $\lambda^{2}-2a\lambda+1$, so the eigenvalues are $z$ and $z^{-1}$. The verification confirms this on examples, for instance $z=3+i$ giving the eigenvalues $0.3-0.1i$ and $3+i$.</p>
+<p><strong>The spectrum is closed under inversion.</strong> This is the general constraint over $\mathbb{C}$: $\det(\lambda\mathrm I-A)=0$ if and only if $\det(\lambda^{-1}\mathrm I-A)=0$, because $A^{\mathsf T}=A^{-1}$ and the characteristic polynomial is, up to a power of $\lambda$, invariant under $A\mapsto A^{-1}$. The verification confirms it with zero defects over one hundred random elements at $n=2,\dots,5$.</p>
+<p><strong>The classes.</strong> The group is abelian, so every element is its own class; and $z$ and $z^{-1}$ give transposed matrices, hence conjugate matrices, so the class of a matrix is the pair $\{z,z^{-1}\}$. Nothing splits, nothing is discrete, and the class space is the quotient of $\mathbb{C}^{\times}$ by inversion.</p>
+<h3 id="unboundedness-and-the-exponential">Unboundedness and the Exponential</h3>
+<p>The group is not compact, and the parametrisation shows exactly how: the Frobenius norm of $A(z)$ is $\sqrt{2|a|^{2}+2|b|^{2}}$, which is roughly $|z|$ for large $|z|$. The verification computes the norm at $z=3,1,1/2$ and finds $3.02,1.41,2.06$.</p>
+<p>The exponential is the map $\mathbb{C}\to\mathbb{C}^{\times}$, $\ell\mapsto e^{\ell}$, transported to the matrix coordinates. The logarithm is explicit: for $A(z)=a\mathrm I+bJ$ with $J^{2}=-\mathrm I_2$,</p>
+<p>$$
+\log A(z)=\theta J,
+\qquad
+\theta=-i\log z,
+\qquad
+e^{i\theta}=z,
+$$</p>
+<p>because $A(z)=a\mathrm I+bJ=\cos\theta\,\mathrm I+\sin\theta\,J=\exp(\theta J)$ with $\cos\theta=a$ and $\sin\theta=b$. The verification confirms that a skew logarithm exists for every element of the group at $n=2,3,4$ with residuals at $10^{-15}$.</p>
+<p>The exponential is onto but not injective, and the kernel is a lattice of rank one:</p>
+<p>$$
+\ker\exp=\bigl\{2\pi kJ:k\in\mathbb{Z}\bigr\}.
+$$</p>
+<p>The rank is one and not two, because $\cos\theta=1$ with $\sin\theta=0$ forces $\theta\in2\pi\mathbb{Z}$ even for complex $\theta$: writing $\theta=\alpha+i\beta$, the condition $\sin\theta=0$ gives $\sin\alpha=0$, and then $\cos\theta=\pm\cosh\beta$ can equal $1$ only with $\cos\alpha=1$ and $\cosh\beta=1$, hence $\beta=0$ and $\alpha\in2\pi\mathbb{Z}$. The verification confirms that $2\pi J$ is in the kernel while $2\pi iJ$ is not, the second exponentiating to a matrix with diagonal entries $267.7$. So the exponential is the universal cover $\mathbb{C}\to\mathbb{C}^{\times}$, with deck group $\mathbb{Z}$.</p>
+<h3 id="the-cayley-chart">The Cayley Chart</h3>
+<p>The chart of the real circle survives with complex parameters. Setting $t=\tan(\theta/2)$ over $\mathbb{C}$ gives</p>
+<p>$$
+A=\frac{1}{1+t^{2}}\begin{pmatrix}1-t^{2}&-2t\\ 2t&1-t^{2}\end{pmatrix},
+\qquad t\in\mathbb{C}\setminus\{\pm i\},
+$$</p>
+<p>and the value $t=\infty$ gives $A=-\mathrm I$, which is exactly the point where $\det(\mathrm I+A)=2+2a=0$ vanishes; the two values $t=\pm i$ are where the denominator vanishes, and they are not the image of any point of the group but the two points at infinity of the parametrising projective line. The general Cayley transform</p>
+<p>$$
+X=(\mathrm I-A)(\mathrm I+A)^{-1},
+\qquad
+A=(\mathrm I-X)(\mathrm I+X)^{-1},
+$$</p>
+<p>is a bijection between the skew matrices and the open dense set $\{\det(\mathrm I+A)\ne0\}$ of the group, and the verification confirms both directions on one hundred random complex skew matrices with residuals at $10^{-13}$.</p>
+<h3 id="what-dimension-two-cannot-do">What Dimension Two Cannot Do</h3>
+<p><strong>No axis, no angle classes, no cone of classes.</strong> The group is abelian, so the classification is trivial and the interesting structure is the field.</p>
+<p><strong>No nilpotent.</strong> The algebra is one-dimensional, spanned by $J$ with $J^{2}=-\mathrm I$, so every element is semisimple. The first nilpotent appears at $n=3$.</p>
+<p><strong>No simple algebra.</strong> A line is abelian. The first simple case is $n=3$.</p>
+<h2 id="math258-the-projective-linear-group">$\mathrm{SO}(3,\mathbb{C})$: The Projective Linear Group</h2>
+<h3 id="the-algebra-is-math259">The Algebra Is $\mathfrak{sl}_2(\mathbb{C})$</h3>
+<p>The algebra $\mathfrak{so}(3,\mathbb{C})$ has dimension three, and it is isomorphic to $\mathfrak{sl}_2(\mathbb{C})$, the traceless $2\times2$ complex matrices. Two explicit isomorphisms are worth recording, because the article uses both.</p>
+<p><strong>The Pauli basis.</strong> With</p>
+<p>$$
+\sigma_1=\begin{pmatrix}0&1\\1&0\end{pmatrix},
+\qquad
+\sigma_2=\begin{pmatrix}0&-i\\ i&0\end{pmatrix},
+\qquad
+\sigma_3=\begin{pmatrix}1&0\\0&-1\end{pmatrix},
+$$</p>
+<p>the three matrices $X_k=\tfrac{i}{2}\sigma_k$ are traceless and satisfy $[X_i,X_j]=-\epsilon_{ijk}X_k$, the brackets of $\mathfrak{su}(2)$; complexifying gives $\mathfrak{sl}_2(\mathbb{C})=\mathfrak{su}(2)\otimes\mathbb{C}$, and the three $X_k$ form a complex basis.</p>
+<p><strong>The adjoint action.</strong> The group $\mathrm{SL}_2(\mathbb{C})$ acts on its traceless part by $X\mapsto gXg^{-1}$, and this action preserves the quadratic form $\det X$. On a traceless $X=c_1X_1+c_2X_2+c_3X_3$ one has $X^{2}=-\lVert c\rVert^{2}\mathrm I_2$, hence $\det X=-\lVert c\rVert^{2}$, so the form is nondegenerate and in the basis $X_k$ it is minus the standard form. Choosing a basis identifies $\det$ with the standard symmetric form and the action with a homomorphism</p>
+<p>$$
+\mathrm{SL}_2(\mathbb{C})\longrightarrow \mathrm{SO}(3,\mathbb{C}),
+$$</p>
+<p>whose kernel is $\{\pm\mathrm I\}$ and whose image is everything. The verification computes the matrix of $X\mapsto gXg^{-1}$ in the Pauli basis for one hundred random elements of $\mathrm{SL}_2(\mathbb{C})$ and finds orthogonal with determinant one every time, with residual at $10^{-13}$; it also confirms that $g$ and $-g$ give the same matrix exactly, and that the determinant form is preserved.</p>
+<p>So</p>
+<p>$$
+\mathrm{SO}(3,\mathbb{C})\cong\mathrm{PSL}_2(\mathbb{C})=\mathrm{SL}_2(\mathbb{C})/\{\pm\mathrm I\},
+$$</p>
+<p>and since over $\mathbb{C}$ every element of $\mathrm{GL}_2$ can be rescaled into $\mathrm{SL}_2$, also $\mathrm{PSL}_2(\mathbb{C})\cong\mathrm{PGL}_2(\mathbb{C})$.</p>
+<h3 id="nilpotents-the-first-unipotent-elements">Nilpotents: The First Unipotent Elements</h3>
+<p><strong>Proposition.</strong> The algebra $\mathfrak{so}(3,\mathbb{C})$ has nonzero nilpotent elements, of index three.</p>
+<p><strong>Proof and example.</strong> Let $u=(1,i,0)$, so that $u\cdot u=1+i^{2}=0$; the vector is isotropic for the symmetric form. Put</p>
+<p>$$
+N=\hat u=\begin{pmatrix}0&0&i\\ 0&0&-1\\ -i&1&0\end{pmatrix}.
+$$</p>
+<p>Then $N$ is complex skew, and the identity $\hat u^{2}=uu^{\mathsf T}-(u\cdot u)\mathrm I=uu^{\mathsf T}$ gives</p>
+<p>$$
+N^{2}=\begin{pmatrix}-1&0&i\\ 0&0&0\\ -i&0&-1\end{pmatrix}\ne0,
+\qquad
+N^{3}=0 .
+$$</p>
+<p>The verification computes the three powers and finds $\lVert N^{2}\rVert=2$, $\lVert N^{3}\rVert=0$, and rank two. The exponential truncates,</p>
+<p>$$
+\exp(N)=\mathrm I+N+\tfrac12N^{2}
+=\begin{pmatrix}1.5&0.5i&i\\ 0.5i&0.5&-1\\ -i&1&1\end{pmatrix},
+$$</p>
+<p>which is unipotent, lies in the group, and is not the identity; the verification confirms $\exp(N)-\mathrm I-N-\tfrac12N^{2}=0$ exactly, $\det\exp(N)=1$, and $\lVert\exp(N)-\mathrm I\rVert=2.24$.</p>
+<p><strong>The contrast with $\mathbb{R}$ is a one-line proof.</strong> A real skew matrix is normal, hence diagonalisable over $\mathbb{C}$, hence nilpotent only if zero. So $\mathfrak{so}(n,\mathbb{R})$ contains no nilpotent element, and every element of the real group is semisimple. The verification confirms the normal property $\lVert K^{\mathsf T}K-KK^{\mathsf T}\rVert=0$ on one hundred real skew matrices.</p>
+<h3 id="the-conjugacy-classes">The Conjugacy Classes</h3>
+<p>The classification over $\mathbb{C}$ is the Jordan classification cut down by the reciprocal pairing.</p>
+<p><strong>Semisimple elements.</strong> A semisimple element is conjugate to a block-diagonal matrix of rotation blocks with complex "angles" $\theta_k$, that is, blocks</p>
+<p>$$
+\begin{pmatrix}\cos\theta_k&-\sin\theta_k\\ \sin\theta_k&\cos\theta_k\end{pmatrix},
+\qquad \theta_k\in\mathbb{C},
+$$</p>
+<p>with eigenvalues $e^{\pm i\theta_k}$. The pairing $\lambda\leftrightarrow\lambda^{-1}$ is automatic. Two semisimple elements with the same characteristic polynomial are conjugate, so the polynomial is the complete invariant, and this is the standard statement for the classical groups over an algebraically closed field; the verification confirms the invariant property (the spectrum is closed under inversion) without claiming the converse.</p>
+<p><strong>Three shapes at $n=3$.</strong> A semisimple element with eigenvalues $1,e^{\pm i\theta}$; the identity; and the unipotent $\exp(N)$ above, which is neither semisimple nor the identity. The last is the new shape over $\mathbb{C}$.</p>
+<p><strong>Jordan blocks pair.</strong> A Jordan block of size $k$ with eigenvalue $\lambda$ forces a block of the same size with eigenvalue $1/\lambda$, because the transpose-inverse identity exchanges the two. So the Jordan type is symmetric under inversion.</p>
+<h2 id="math318-the-split">$\mathrm{SO}(4,\mathbb{C})$: The Split</h2>
+<h3 id="the-two-ideals-over-math319">The Two Ideals over $\mathbb{C}$</h3>
+<p>The Hodge star of the real article is a real operator, and it complexifies: on $\Lambda^{2}\mathbb{C}^{4}$ it has the eigenvalues $\pm1$ with multiplicity three each, and the two eigenspaces are complex three-dimensional ideals. So</p>
+<p>$$
+\mathfrak{so}(4,\mathbb{C})=\mathfrak{so}(3,\mathbb{C})\oplus\mathfrak{so}(3,\mathbb{C}),
+$$</p>
+<p>and the group is not simple. The two ideals are spanned by the same combinations as over $\mathbb{R}$,</p>
+<p>$$
+X_{+}^{1}=\tfrac12(X_{12}+X_{34}),\quad
+X_{+}^{2}=\tfrac12(X_{13}-X_{24}),\quad
+X_{+}^{3}=\tfrac12(X_{14}+X_{23}),
+$$</p>
+<p>$$
+X_{-}^{1}=\tfrac12(X_{12}-X_{34}),\quad
+X_{-}^{2}=\tfrac12(X_{13}+X_{24}),\quad
+X_{-}^{3}=\tfrac12(X_{14}-X_{23}).
+$$</p>
+<h3 id="the-group-is-a-quotient-of-a-product">The Group Is a Quotient of a Product</h3>
+<p>The covering is the complex analogue of the quaternion formula, with the quaternions replaced by biquaternions of <em>Biquaternion Rotations and Lorentz Transformations</em>, and the statement is</p>
+<p>$$
+\mathrm{SO}(4,\mathbb{C})\cong\bigl(\mathrm{SL}_2(\mathbb{C})\times\mathrm{SL}_2(\mathbb{C})\bigr)\big/\{\pm(\mathrm I,\mathrm I)\}.
+$$</p>
+<p>The two factors are the two ideals. Every element is a product of a left and a right complex isoclinic rotation, the two factors commute, and the pair is unique up to a simultaneous sign change. The verification of the real article's corresponding theorem carries over word for word, since the proof used only associativity and the tangent map: the tangent rank of the product map is six, the image is open and closed, and the kernel is $\{\pm(\mathrm I,\mathrm I)\}$.</p>
+<h3 id="the-two-complex-angles">The Two Complex Angles</h3>
+<p>The normal form has two complex parameters:</p>
+<p>$$
+A\ \sim\ \begin{pmatrix}R(\theta_1)&0\\0&R(\theta_2)\end{pmatrix},
+\qquad
+R(\theta)=\begin{pmatrix}\cos\theta&-\sin\theta\\ \sin\theta&\cos\theta\end{pmatrix},
+\qquad \theta_1,\theta_2\in\mathbb{C},
+$$</p>
+<p>and the two "angles" are now complex numbers, so the class space is two-dimensional over $\mathbb{C}$ and four-dimensional over $\mathbb{R}$. The real rung is the locus where both angles are real, the compact case is the further locus where both lie in $[0,\pi]$, and the split case is the locus where the angles are purely imaginary.</p>
+<h3 id="nilpotents-of-index-two">Nilpotents of Index Two</h3>
+<p>Over $\mathbb{C}$ the four-dimensional algebra has nilpotent elements whose square already vanishes. Take two isotropic and orthogonal vectors, for instance</p>
+<p>$$
+u=(1,i,0,0),
+\qquad
+v=(0,0,1,i),
+\qquad
+u\cdot u=v\cdot v=u\cdot v=0,
+$$</p>
+<p>and put $N=uv^{\mathsf T}-vu^{\mathsf T}$. Then $N$ is complex skew, $N^{2}=0$, and the rank is two; the verification computes both facts exactly, with residuals $0$. The exponential is then exactly $\mathrm I+N$:</p>
+<p>$$
+N=\begin{pmatrix}
+0&0&1&i\\
+0&0&i&-1\\
+-1&-i&0&0\\
+-i&1&0&0
+\end{pmatrix},
+\qquad
+\exp(N)=\mathrm I+N=\begin{pmatrix}
+1&0&1&i\\
+0&1&i&-1\\
+-1&-i&1&0\\
+-i&1&0&1
+\end{pmatrix},
+$$</p>
+<p>which is unipotent and lies in the group. Over $\mathbb{R}$ there is no such element, because there are no isotropic vectors; the existence of an isotropic vector is exactly the existence of a nilpotent, and over $\mathbb{C}$ the isotropic cone of an indefinite form is a genuine algebraic variety of positive dimension.</p>
+<h2 id="math342-the-general-rung">$\mathrm{SO}(n,\mathbb{C})$: The General Rung</h2>
+<h3 id="rank-torus-and-weyl-group">Rank, Torus and Weyl Group</h3>
+<p>The rank is the same as over $\mathbb{R}$,</p>
+<p>$$
+\operatorname{rank}\mathrm{SO}(n,\mathbb{C})=\Bigl\lfloor\frac{n}{2}\Bigr\rfloor,
+$$</p>
+<p>with maximal torus the block-diagonal matrices with $\lfloor n/2\rfloor$ complex rotation blocks, a torus $(\mathbb{C}^{\times})^{r}$, and Weyl group $W(B_r)$ or $W(D_r)$ with the same orders $2^{r}r!$ and $2^{r-1}r!$ as over $\mathbb{R}$. The Weyl group sees only the combinatorics of the coordinates, so the passage from $\mathbb{R}$ to $\mathbb{C}$ does not change it.</p>
+<p><strong>The normal form</strong> is the same block decomposition as over $\mathbb{R}$, with complex angles and with no constraint on the moduli of the eigenvalues:</p>
+<p>$$
+A\ \sim\ \operatorname{diag}\bigl(R(\theta_1),\dots,R(\theta_r)\bigr)
+\quad\text{or}\quad
+\operatorname{diag}\bigl(R(\theta_1),\dots,R(\theta_r),1\bigr),
+$$</p>
+<p>the second line in odd dimension. The eigenvalues are $e^{\pm i\theta_k}$, so the "angle" is determined by the eigenvalue up to sign and up to $2\pi i$, and the moduli $|e^{\pm i\theta_k}|$ are free positive numbers.</p>
+<h3 id="conjugacy-and-the-reciprocal-spectrum">Conjugacy and the Reciprocal Spectrum</h3>
+<p>Three statements summarise the classification, the first two proved, the third quoted.</p>
+<p><strong>The spectrum is inversion-stable.</strong> Proved above from $A^{\mathsf T}=A^{-1}$; verified with zero defects.</p>
+<p><strong>The Jordan type is inversion-symmetric.</strong> A block $J_k(\lambda)$ forces $J_k(1/\lambda)$, because the identity exchanges the Jordan forms of $A$ and $A^{-1}$.</p>
+<p><strong>The semisimple classification is by the characteristic polynomial.</strong> This is the standard theorem for classical groups over an algebraically closed field, and it is quoted, not recomputed.</p>
+<p><strong>Nilpotent orbits are classified by partitions.</strong> For $\mathfrak{so}(n,\mathbb{C})$ the nilpotent orbits are the partitions of $n$ in which every even part occurs an even number of times; this is the standard classification, quoted. The two examples of this article are the partition $(3)$ in $\mathfrak{so}(3,\mathbb{C})$ and the partition $(2,2)$ in $\mathfrak{so}(4,\mathbb{C})$.</p>
+<p><strong>Unipotent elements are the exponentials of nilpotents</strong>, so the group has a unipotent part for $n\ge3$ and none for $n=2$. The unipotent variety is a union of finitely many orbits, one for each nilpotent orbit.</p>
+<h3 id="the-exponential-is-onto-and-the-fibres-are-lattices">The Exponential Is Onto, and the Fibres Are Lattices</h3>
+<p>The theorem of the second section holds at every rung, and the fibre over a general element is a lattice of rank $r$ in the $r$ rotation planes, since each plane contributes the generator $2\pi J$ and nothing else. So the exponential is a surjection whose fibres are countable, and the group is the image of its algebra in the strongest sense short of a diffeomorphism.</p>
+<h3 id="the-centre-and-the-simplicity">The Centre and the Simplicity</h3>
+<p>The centre is calculated exactly as over $\mathbb{R}$ and gives the same answer, because the computation is a polynomial one:</p>
+<p>$$
+Z\bigl(\mathrm{SO}(n,\mathbb{C})\bigr)=\begin{cases}\{\mathrm I\},& n\ \text{odd},\\ \{\pm\mathrm I\},& n\ \text{even}.\end{cases}
+$$</p>
+<p>The algebra is simple for $n\ge3$, $n\ne4$, and splits at $n=4$.</p>
+<h3 id="the-topology-the-cartan-decomposition">The Topology: The Cartan Decomposition</h3>
+<p>The topology of the complex group is the topology of the real group, and the reason is a decomposition that is worth stating in full.</p>
+<p><strong>Theorem (Cartan decomposition).</strong> Every $A\in\mathrm{SO}(n,\mathbb{C})$ is uniquely</p>
+<p>$$
+A=K\exp(iB),
+\qquad
+K\in\mathrm{SO}(n,\mathbb{R}),
+\qquad
+B\in\mathfrak{so}(n,\mathbb{R})\ \text{real skew}.
+$$</p>
+<p><strong>Proof.</strong> The matrix $A^{*}A$ is Hermitian positive definite, so it has a unique Hermitian positive definite square root $P$, and $K=AP^{-1}$ is unitary. From $A^{\mathsf T}A=\mathrm I$ one gets $P^{\mathsf T}P=\mathrm I$, that is $\bar PP=\mathrm I$, and then $K$ is also complex orthogonal: $K^{\mathsf T}K=P^{-1}A^{\mathsf T}AP^{-1}=P^{-2}$ combined with $\bar PP=\mathrm I$ forces $K^{\mathsf T}K=\mathrm I$. A matrix both unitary and complex orthogonal is real by the proposition of the first section, so $K\in\mathrm{SO}(n,\mathbb{R})$. Writing $P=\exp(H)$ with $H$ Hermitian and using $\bar PP=\mathrm I$ gives $\bar H=-H$, and in the decomposition $H=S+iT$ with $S$ real symmetric and $T$ real skew this forces $S=0$, so $H=iB$ with $B$ real skew.</p>
+<p>The verification confirms every clause on eighty random elements at $n=2,\dots,5$: $K$ real with residual $10^{-14}$, orthogonal with determinant one, $P$ Hermitian positive definite with $\bar PP=\mathrm I$, $B$ real skew, $\exp(iB)=P$, and $KP=A$.</p>
+<p><strong>Corollary.</strong> $\mathrm{SO}(n,\mathbb{C})$ deformation-retracts onto $\mathrm{SO}(n,\mathbb{R})$ by $K\exp(iB)\mapsto K\exp(t\,iB)$, $t\in[0,1]$.</p>
+<p><strong>Corollary.</strong> All homotopy invariants agree with the real ones:</p>
+<p>$$
+\pi_{1}\bigl(\mathrm{SO}(n,\mathbb{C})\bigr)=\begin{cases}1,&n=1,\\ \mathbb{Z},&n=2,\\ \mathbb{Z}/2,&n\ge3,\end{cases}
+\qquad
+\pi_{3}\bigl(\mathrm{SO}(n,\mathbb{C})\bigr)=\begin{cases}\mathbb{Z},&n=3,\ 5,6,\dots\\ \mathbb{Z}\oplus\mathbb{Z},&n=4.\end{cases}
+$$</p>
+<p><strong>Corollary.</strong> $\mathrm{SO}(n,\mathbb{C})$ is not contractible, is not compact, and has the homotopy type of a compact Lie group. This is the sharpest available statement of the slogan that complexification changes the algebra and the geometry but not the homotopy.</p>
+<h2 id="the-real-forms">The Real Forms</h2>
+<h3 id="the-list">The List</h3>
+<p>A real form of $\mathrm{SO}(n,\mathbb{C})$ is a real Lie algebra $\mathfrak{g}_0$ with $\mathfrak{g}_0\otimes\mathbb{C}=\mathfrak{so}(n,\mathbb{C})$, equivalently a real subgroup with the same complexification. The list is</p>
+<p>$$
+\mathfrak{so}(p,q),\qquad p+q=n,\quad p\ge q\ge0,
+$$</p>
+<p>and the number of isomorphism classes is $\lfloor n/2\rfloor+1$, with the compact form at $q=0$ and the split form at $q=\lfloor n/2\rfloor$. The verification lists the first rungs: two forms at $n=2$ and $n=3$, three at $n=4$.</p>
+<h3 id="the-invariant-that-distinguishes-them">The Invariant That Distinguishes Them</h3>
+<p>The forms differ by the signature of the real part of the Killing form, which is the inertia of the invariant symmetric form. On the group the signature is visible as the shape of the maximal compact:</p>
+<p>$$
+\mathrm{SO}(p,q)\ \text{has maximal compact}\ \mathrm{SO}(p)\times\mathrm{SO}(q),
+\qquad
+\mathrm{SO}(n,\mathbb{R})\ \text{has maximal compact}\ \mathrm{SO}(n).
+$$</p>
+<p>So the complex group contains all the signatures, and reading the maximal compact of a real subgroup recovers the signature.</p>
+<h3 id="math428">$\mathrm{SO}(n,\mathbb{C})\cap\mathrm{SU}(n)=\mathrm{SO}(n,\mathbb{R})$</h3>
+<p>This identity, proved in the first section, is the cleanest statement of the relation between the two complex groups: the compact real form of the complex orthogonal group is the real orthogonal group, and it sits inside the unitary group as the real locus. The verification confirms it on one hundred samples with zero mismatches.</p>
+<h3 id="the-symmetric-space">The Symmetric Space</h3>
+<p>The quotient $\mathrm{SO}(n,\mathbb{C})/\mathrm{SO}(n,\mathbb{R})$ is a symmetric space of dimension $n(n-1)/2$ over $\mathbb{R}$, namely the space of the factors $\exp(iB)$ above: Hermitian positive definite matrices $P$ with $\bar PP=\mathrm I$ and $\det P=1$. At $n=2$ it is one-dimensional and can be read explicitly from the parametrisation</p>
+<p>$$
+P(t)=\begin{pmatrix}\cosh t&i\sinh t\\ -i\sinh t&\cosh t\end{pmatrix},
+$$</p>
+<p>which is the geodesic through the identity in the direction of the imaginary generator. The companion real article has the analogous quotient $\mathrm{SL}_n(\mathbb{R})/\mathrm{SO}(n)$ of positive definite symmetric matrices.</p>
+<h2 id="the-two-ladders-side-by-side">The Two Ladders Side by Side</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>$\mathrm{SO}(n,\mathbb{R})$</th>
+<th>$\mathrm{SO}(n,\mathbb{C})$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>equation</td>
+<td>$A^{\mathsf T}A=\mathrm I$, $\det A=1$</td>
+<td>same, complex entries</td>
+</tr>
+<tr>
+<td>dimension</td>
+<td>$n(n-1)/2$ real</td>
+<td>$n(n-1)/2$ complex, $n(n-1)$ real</td>
+</tr>
+<tr>
+<td>compact</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>eigenvalues</td>
+<td>on the unit circle, conjugate pairs</td>
+<td>reciprocal pairs, free modulus</td>
+</tr>
+<tr>
+<td>nilpotents</td>
+<td>none</td>
+<td>present for $n\ge3$</td>
+</tr>
+<tr>
+<td>unipotents</td>
+<td>none but the identity</td>
+<td>present for $n\ge3$</td>
+</tr>
+<tr>
+<td>exponential</td>
+<td>onto, fibres lattices of rank $r$</td>
+<td>onto, fibres lattices of rank $r$</td>
+</tr>
+<tr>
+<td>centre</td>
+<td>same</td>
+<td>same</td>
+</tr>
+<tr>
+<td>algebra</td>
+<td>simple, $n\ge3$, $n\ne4$</td>
+<td>same</td>
+</tr>
+<tr>
+<td>$\pi_{1}$</td>
+<td>$1,\mathbb{Z},\mathbb{Z}/2$</td>
+<td>same</td>
+</tr>
+<tr>
+<td>maximal compact</td>
+<td>itself</td>
+<td>$\mathrm{SO}(n,\mathbb{R})$</td>
+</tr>
+<tr>
+<td>rank</td>
+<td>$\lfloor n/2\rfloor$</td>
+<td>$\lfloor n/2\rfloor$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-correspondences">The Correspondences</h2>
+<h3 id="the-chain-math457-over-math458">The Chain $1\to2\to3\to4\to n$ over $\mathbb{C}$</h3>
+<p><strong>The chain of the field.</strong> At $n=1$ the group is trivial. At $n=2$ it is the multiplicative group of the field, so the group and the field are the same object up to a change of coordinates. At $n=3$ the group is the projective linear group of the field, so the group is the field's own projective geometry. At $n=4$ the group is a quotient of a product of two copies of the rank-one group. From $n=5$ on the pattern stops: there is no field model.</p>
+<p><strong>The chain of the nilpotent.</strong> At $n=1$ and $n=2$ there is none. At $n=3$ the first, of index three, built from one isotropic vector. At $n=4$ the first of index two, built from two isotropic vectors. In general the smallest nonzero nilpotent has index two as soon as a totally isotropic plane exists, which is $n\ge4$.</p>
+<p><strong>The chain of the ideal.</strong> At $n=2$ the algebra is abelian. At $n=3$ it is simple. At $n=4$ it splits. From $n=5$ it is simple again. This is identical to the real chain, because the split is a complex phenomenon inherited from the real one.</p>
+<p><strong>The chain of the cover.</strong> At $n=2$ the fundamental group is $\mathbb{Z}$, at $n=3$ it is $\mathbb{Z}/2$, and the covering group is $\mathrm{Spin}(n,\mathbb{C})$, which is $\mathrm{SL}_2(\mathbb{C})$ at $n=3$, $\mathrm{SL}_2\times\mathrm{SL}_2$ at $n=4$, and $\mathrm{SL}_4(\mathbb{C})$ at $n=6$.</p>
+<h3 id="the-dictionary">The Dictionary</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>object here</th>
+<th>corpus entry</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the complex matrix algebra</td>
+<td><em>The Matrix Algebras $M_n(\mathbb{C})$</em></td>
+</tr>
+<tr>
+<td>the real matrices inside the complex ones</td>
+<td><em>The Split Real Form: $M_n(\mathbb{R})$ inside $M_n(\mathbb{C})$</em></td>
+</tr>
+<tr>
+<td>the passage to the complex group</td>
+<td><em>Coda: $M_n(\mathbb{R})$, the Split Form, and the Passage to $M_n(\mathbb{C})$</em></td>
+</tr>
+<tr>
+<td>the exponential and its image</td>
+<td><em>The Exponential of a Real Matrix and Its Image</em></td>
+</tr>
+<tr>
+<td>the biquaternion model of $\mathrm{SO}(4,\mathbb{C})$</td>
+<td><em>Biquaternion Rotations and Lorentz Transformations</em></td>
+</tr>
+<tr>
+<td>the star and the split of two-forms</td>
+<td><em>The Hodge Star and the Real Structure of the Exterior Algebra</em></td>
+</tr>
+<tr>
+<td>the spinors over $\mathbb{C}$</td>
+<td><em>Spin Representations and Clifford Modules with Inner Conjugation</em></td>
+</tr>
+<tr>
+<td>the unitary form inside</td>
+<td><em>The Unitary Lie Algebra</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p><strong>One equation, one algebra, one exponential.</strong> The complex ladder is cut by the same equation as the real one, with the same skew algebra, and the exponential is onto for the same reason, namely that the spectrum pairs under inversion.</p>
+<p><strong>The dimension doubles over $\mathbb{R}$ and the topology does not change.</strong> $\mathrm{SO}(n,\mathbb{C})$ has real dimension $n(n-1)$, complex dimension $n(n-1)/2$, and the homotopy type of $\mathrm{SO}(n,\mathbb{R})$, because every element is $K\exp(iB)$.</p>
+<p><strong>The small rungs are field models.</strong> $\mathrm{SO}(1,\mathbb{C})$ is trivial, $\mathrm{SO}(2,\mathbb{C})$ is $\mathbb{C}^{\times}$, $\mathrm{SO}(3,\mathbb{C})$ is $\mathrm{PSL}_2(\mathbb{C})$, $\mathrm{SO}(4,\mathbb{C})$ is a quotient of $\mathrm{SL}_2\times\mathrm{SL}_2$.</p>
+<p><strong>The gain over $\mathbb{R}$ is the nilpotent.</strong> Isotropy produces nilpotents, nilpotents produce unipotents, and the unipotent part is the whole of the new geometry: the algebra is the same size but its orbit structure is richer by exactly the isotropic cone.</p>
+<p><strong>The gain over $\mathbb{C}$ is the real form.</strong> The complex group forgets the signature; the real forms are the signatures, and $\mathrm{SO}(n,\mathbb{R})$ is the compact one, cut out by the unitary condition inside the complex group.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A^{\mathsf T}$, $A^{*}$</td>
+<td>transpose, conjugate transpose</td>
+</tr>
+<tr>
+<td>$\mathrm O(n,\mathbb{C})$, $\mathrm{SO}(n,\mathbb{C})$</td>
+<td>complex orthogonal groups</td>
+</tr>
+<tr>
+<td>$\mathfrak{so}(n,\mathbb{C})$</td>
+<td>complex skew matrices</td>
+</tr>
+<tr>
+<td>$A(z)$</td>
+<td>the parametrisation of $\mathrm{SO}(2,\mathbb{C})$ by $z\in\mathbb{C}^{\times}$</td>
+</tr>
+<tr>
+<td>$\hat u$</td>
+<td>the complex skew matrix of a vector</td>
+</tr>
+<tr>
+<td>$X_{\pm}^{k}$</td>
+<td>the self-dual and anti-self-dual generators</td>
+</tr>
+<tr>
+<td>$\mathrm{PSL}_2(\mathbb{C})$</td>
+<td>$\mathrm{SL}_2(\mathbb{C})/\{\pm\mathrm I\}$</td>
+</tr>
+<tr>
+<td>$\exp(iB)$</td>
+<td>the Hermitian factor of the Cartan decomposition</td>
+</tr>
+<tr>
+<td>$\mathfrak{so}(p,q)$</td>
+<td>the real forms</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Matrix Algebras $M_n(\mathbb{C})$</em>, for the ambient algebra.</li>
+<li><em>The Split Real Form: $M_n(\mathbb{R})$ inside $M_n(\mathbb{C})$</em>, for the real locus.</li>
+<li><em>The Exponential of a Real Matrix and Its Image</em>, for the exponential and its image over both fields.</li>
+<li><em>The Hodge Star and the Real Structure of the Exterior Algebra</em>, for the split of two-forms.</li>
+<li><em>Biquaternion Rotations and Lorentz Transformations</em>, for the complex quaternion model of $\mathrm{SO}(4,\mathbb{C})$.</li>
+<li><em>The Low-Dimensional Spin Groups and the Exceptional Isomorphisms with Inner Conjugation</em>, for $\mathrm{SL}_2=\mathrm{Spin}(3)$ and $\mathrm{Spin}(6)=\mathrm{SL}_4$.</li>
+<li><em>The Unitary Lie Algebra</em>, for the compact form inside.</li>
+<li><em>The Special Linear Group and the Determinant</em>, for the determinant and its two signs.</li>
+</ul>
+<h2 id="verification">Verification</h2>
+<p>Six scratch scripts under <code>/tmp/vso/</code> (not part of the corpus) recompute the claims on examples. The table gives the computation and the printed result.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>claim</th>
+<th>computation</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>complex orthogonality</td>
+<td>complex Gram–Schmidt, $100$ samples, $n=1,\dots,5$</td>
+<td>$A^{\mathsf T}A-\mathrm I$ at $2\times10^{-14}$</td>
+</tr>
+<tr>
+<td>the determinant is a sign</td>
+<td>the same samples</td>
+<td>$\lvert\det\rvert=1$ in every case</td>
+</tr>
+<tr>
+<td>the spectrum is inversion-stable</td>
+<td>$100$ samples, $n=2,\dots,5$</td>
+<td>$0$ defects</td>
+</tr>
+<tr>
+<td>the exponential is onto</td>
+<td>paired-branch log, $90$ samples</td>
+<td>$\exp(L)-A$ and $L+L^{\mathsf T}$ at $10^{-15}$</td>
+</tr>
+<tr>
+<td>the $\pm1$ eigenvalue needs the block repair</td>
+<td>$A=\operatorname{diag}(-1,-1,1)$</td>
+<td>naive $\lVert L+L^{\mathsf T}\rVert=8.89$; repaired $0$</td>
+</tr>
+<tr>
+<td>the Cayley transform over $\mathbb{C}$</td>
+<td>$100$ skew matrices, both directions</td>
+<td>$4\times10^{-13}$ and $3\times10^{-15}$</td>
+</tr>
+<tr>
+<td>$\mathrm{SO}(2,\mathbb{C})\cong\mathbb{C}^{\times}$</td>
+<td>parametrisation, $100$ samples</td>
+<td>$A^{\mathsf T}A-\mathrm I$ at $10^{-14}$</td>
+</tr>
+<tr>
+<td>multiplicativity of $A(z)$</td>
+<td>$100$ random pairs</td>
+<td>$2\times10^{-15}$</td>
+</tr>
+<tr>
+<td>the eigenvalues of $A(z)$ are $z,z^{-1}$</td>
+<td>example $z=3+i$</td>
+<td>$\{0.3-0.1i,\ 3+i\}$</td>
+</tr>
+<tr>
+<td>unboundedness</td>
+<td>Frobenius norm at $z=3,1,1/2$</td>
+<td>$3.02,\ 1.41,\ 2.06$</td>
+</tr>
+<tr>
+<td>$\mathfrak{sl}_2\to\mathfrak{so}(3,\mathbb{C})$</td>
+<td>adjoint action, $100$ samples</td>
+<td>residual $10^{-13}$</td>
+</tr>
+<tr>
+<td>$g$ and $-g$ agree</td>
+<td>the same samples</td>
+<td>exactly $0$</td>
+</tr>
+<tr>
+<td>the determinant form is preserved</td>
+<td>$100$ samples</td>
+<td>$5\times10^{-14}$</td>
+</tr>
+<tr>
+<td>a nilpotent of index $3$</td>
+<td>$N=\hat u$, $u=(1,i,0)$</td>
+<td>$\lVert N^{2}\rVert=2$, $\lVert N^{3}\rVert=0$, rank $2$</td>
+</tr>
+<tr>
+<td>its exponential is unipotent</td>
+<td>$\exp(N)-\mathrm I-N-N^{2}/2$</td>
+<td>exactly $0$</td>
+</tr>
+<tr>
+<td>a nilpotent of index $2$</td>
+<td>$N=uv^{\mathsf T}-vu^{\mathsf T}$, $n=4$</td>
+<td>$N^{2}=0$, rank $2$</td>
+</tr>
+<tr>
+<td>real skew is normal, hence semisimple</td>
+<td>$100$ samples</td>
+<td>$\lVert K^{\mathsf T}K-KK^{\mathsf T}\rVert=0$</td>
+</tr>
+<tr>
+<td>the Cartan decomposition</td>
+<td>polar decomposition, $80$ samples</td>
+<td>$K$ real, $\det 1$; $P=\exp(iB)$, $B$ real skew; $KP-A$ at $10^{-14}$</td>
+</tr>
+<tr>
+<td>$\mathrm{SO}(n,\mathbb{C})\cap\mathrm{SU}(n)=\mathrm{SO}(n,\mathbb{R})$</td>
+<td>$100$ samples of $\mathrm{SU}(n)$</td>
+<td>$0$ mismatches</td>
+</tr>
+<tr>
+<td>real rotations lie in $\mathrm{SU}(n)$</td>
+<td>$100$ samples, $n=2,\dots,5$</td>
+<td>$100/100$</td>
+</tr>
+<tr>
+<td>the count of real forms</td>
+<td>signatures $p+q=n$ up to exchange</td>
+<td>$2,2,3$ at $n=2,3,4$</td>
+</tr>
+<tr>
+<td>root systems $B_2\cong C_2$, $D_3\cong A_3$</td>
+<td>matching of Gram matrices</td>
+<td>both matched; $D_4$ not $A_4$</td>
+</tr>
+</tbody>
+</table></div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
