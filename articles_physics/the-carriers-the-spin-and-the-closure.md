@@ -63,6 +63,8 @@
 
 **No fourth.** The elementary list is closed on $\mathbb{B}$ alone. Higher spin requires a tensor product, and the algebra does not forbid it; it forbids only a fourth elementary value.
 
+**The match.** The three values are the spins the established particles realise: the Higgs boson $0$, the six quarks and six leptons $\tfrac12$, the photon, the $W^{\pm}$, the $Z$ and the eight gluons $1$. The hadrons of higher spin are composites, and the massless spin-one field keeps two of its three states.
+
 ## What a Carrier Is
 
 **The two actions.** The algebra acts on itself in two ways, and the classification uses both.
@@ -296,13 +298,25 @@ The carrier is the vector part and the closure is $\mathbb{B}_\Phi=\{X:X^{*}=-X\
 
 **IV.2.i — The three carriers are three readings and not three summands.** The carriers are $1+2+3=6$ dimensions against an algebra of $8$, and the closures $2+4+8+4=18$. The warrant is the arithmetic and the overlaps. The boundary is that the two decompositions that exist, by the star and by the Peirce basis, are not the list.
 
+**IV.2.j — The three values are the spins of the observed elementary particles.** The set $\{0,\tfrac12,1\}$ is not only the algebra's list; it is the list that the established particles realise, and no established particle carries another value. The warrant is the classification and the table.
+
+| $s$ | established elementary particles | carrier |
+| --- | --- | --- |
+| $0$ | the Higgs boson $H$ | the line |
+| $\tfrac12$ | the six quarks $u,d,c,s,t,b$ and the six leptons $e,\mu,\tau,\nu_e,\nu_\mu,\nu_\tau$ | the plane |
+| $1$ | the photon $\gamma$, the $W^{\pm}$ and the $Z$, and the eight gluons $g$ | the vector part |
+
+The boundary is that the match is a match of labels. The algebra supplies the set and does not select which particle carries which value, and it says nothing about masses, generations, charges or colour. The quarks and the gluons are counted by flavour and by colour although they are observed only as confined constituents of hadrons and jets, and the gluon's colour octet is an $SU(3)$ structure that the algebra does not host: what the vector part carries for a gluon is its free kinematics and not its colour.
+
+**IV.2.k — Two boundaries hold the match in place.** The first is that hadrons are composites. The values $\tfrac32$, $2$ and $\tfrac52$ do occur, and the particles that carry them — the $\mathcal{B}(1232)$ and the $\Omega^-$, the tensor mesons, the $N(1680)$ — are bound states of quarks and gluons and not elementary, so they are excluded from the table rather than left unexplained by it. The second is that the massless spin-one field keeps two states and not three: the carrier has three dimensions, and for a massless field the longitudinal state is removed by gauge invariance, leaving the two helicities of the photon and of the gluon. The warrant is the count $2s+1=3$ and the gauge reduction. The boundary is that the reduction is an input of the massless theory and not a consequence of the carrier: the algebra supplies the triplet, and the two-state count is what gauge invariance does to it.
+
 ## The Limits
 
 - **No dynamics.** The entry states which subspaces carry a field and what the operator preserves. It does not write an equation of motion, an action or a propagation.
 - **No mass value.** The pairing is a shape; the number is dynamical and belongs to the equations.
 - **The rotation spin only.** The label $s$ is the highest weight of the rotation generator. The Lorentz label is a pair, and the massless case is a helicity.
 - **No spin-statistics.** The split between the associative carrier and the adjoint carriers is algebraic. The link from that split to Fermi and Bose statistics is a separate theorem, and the entry does not make it.
-- **No prediction of the particle content.** The three values match the observed elementary spins. The match is a label match, and the algebra does not select which particle carries which.
+- **The particle match is a label match.** The three values are the observed elementary spins, stated in IV.2.j with its two boundaries in IV.2.k. The algebra supplies the set and does not select which particle carries which, the hadrons of higher spin are composites and not elementary, and the massless spin-one field keeps two states and not three.
 - **The closure is not positivity.** The material sector is indefinite, and the norm on the ideal vanishes. Nothing in the entry produces a positive definite form on a carrier.
 - **No canonical axis.** The bispinor family is indexed by the real projective plane and the algebra singles out no member. Whether a condition internal to the algebra could fix one is an open question of the mathematics.
 - **Families, not spaces.** The bispinor spaces coincide as sets and differ as splittings. A statement about one of them is a statement about a decomposition, not about a subspace.

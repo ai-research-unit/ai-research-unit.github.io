@@ -36,8 +36,9 @@
 | the list of three carriers, the criterion of the weight string, the four closure rules | [The Carriers, the Representation, the Spin and the Closure](../articles_maths/the-carriers-the-representation-the-spin-and-the-closure.html) |
 | the two predicates, the four sectors and the placement of the carriers among them | [Relations between the N Norm and Spectral Regularity and Degeneracy](../articles_maths/relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html) |
 | the multiplicativity of the norm and its vanishing exactly on the elements without an inverse | [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
+| the simple module $\mathbb{C}^{2}$, every module a sum of copies of it, the multiplicity as the complex dimension | [The Category of Modules](../articles_maths/the-category-of-modules.html) |
 
-**The three rows that own the carrier.** The first row states the subspace and the action, the second states the first predicate, and the third states the second. The other three supply what those three use: the place of the carrier in the list of three, the sector notation that places it among the four regions, and the multiplicativity that turns the vanishing of the norm into a statement about invertibility.
+**The three rows that own the carrier.** The first row states the subspace and the action, the second states the first predicate, and the third states the second. The other four supply what those three use: the place of the carrier in the list of three, the sector notation that places it among the four regions, the multiplicativity that turns the vanishing of the norm into a statement about invertibility, and the classification of the modules that excludes a module of odd complex dimension.
 
 ## The Results in Brief
 
@@ -68,6 +69,8 @@
 **The failure of the covariant square.** The square of a gauged gradient produces a pure-vector term proportional to the field strength, so the centre is not invariant under it; the component form of the same equation does preserve the centre.
 
 **The two modes.** The two real dimensions of the closure are the amplitude and the phase, and in the broken phase they are the radial mode and the angular one.
+
+**The module.** The simple module is $\mathbb{C}^{2}$, the action on it is irreducible, and no module of complex dimension one exists, so the scalar is a value of its carrier and not a ray of the module.
 
 ## The Line and the Centre
 
@@ -274,6 +277,8 @@ does preserve the centre, because each derivative is central. The two writings, 
 
 **No internal vector.** The value space is the rotationally invariant subspace, so a field valued there has no internal direction for a rotation to act on and no internal vector to precess. Everything that an internal vector produces is therefore absent by construction and not by suppression.
 
+**No scalar ray in the module.** The algebra's simple module is $\mathbb{C}^{2}$, and the Lorentz group acts on it by the spin-$\tfrac12$ representation, which is irreducible. A spin-zero ray would be a complex line carried into itself by every transformation of the group, and the only vector fixed by all of them is $0$: verified, the orbit of a random nonzero vector spans the plane on one hundred draws, and the common fixed space of the group is trivial. The algebra has no one-dimensional module either, since a nonzero element has rank two and generates the whole algebra as a left ideal, and every module is a sum of copies of $\mathbb{C}^{2}$. A scalar is therefore a value of this carrier and not a ray of the module, and a spin-zero object can appear only as a singlet inside a tensor power: the antisymmetric vector of $\mathbb{C}^{2}\otimes\mathbb{C}^{2}$ is fixed by the action, verified to $3.2\times10^{-16}$.
+
 **No intrinsic magnetic moment.** A magnetic moment needs either an intrinsic spin or an internal current distribution, and a single complex scalar has neither. The Zeeman coupling, the Stern–Gerlach splitting and the spin–orbit coupling are all couplings of an internal vector, and the carrier does not have one. The statement is algebraic and exact: the obstruction is the vanishing of the vector part, not a smallness of it.
 
 **No magnetic field.** The field equation is one scalar equation, so there is no gauge connection, no field-strength tensor and no electric–magnetic split. The static solution of a central scalar source is a scalar potential with no vector counterpart, and the moving solution has a scalar Liénard–Wiechert form. The absence of magnetism here is not a limit and not an approximation; the theory has no object out of which a magnetic field could be built.
@@ -329,6 +334,8 @@ the radial field $h$ has the mass $m_h^{2}=2\beta v^{2}$ and the angular field h
 **The algebraic norm is not the modulus.** $N(\xi e_t)=\xi^{2}$ is complex, multiplicative and two-to-one; $\lvert\xi\rvert^{2}$ is the Hermitian square, real and non-negative. The warrant is $N(-\xi)=N(\xi)$ and $(\xi e_t)(\xi e_t)^{*}=\lvert\xi\rvert^{2}e_t$. The boundary is that the algebra's quadratic form is the right object for invertibility and the wrong one for probability.
 
 **A scalar has a mass and no spectrum.** Every nonzero central element is norm-regular and spectrally degenerate, so the centre away from the origin is $\Sigma_{10}$. The warrant is the vanishing of the vector part. The boundary is that mass here means a nonzero norm and not a dynamical mass, which is a parameter of the equation.
+
+**A scalar is a value and not a ray of the module.** The simple module of the algebra is $\mathbb{C}^{2}$ and the Lorentz action on it is irreducible, so it contains no fixed complex line, and no module of complex dimension one exists; the scalar is a value of its own carrier and never a state of the defining module. The warrant is the triviality of the common fixed space and the classification of the modules. The boundary is that a spin-zero object appears as a singlet of a tensor power and not as a ray of this module.
 
 **Spin zero forbids intrinsic magnetism.** No internal vector, hence no Zeeman, Stern–Gerlach or spin–orbit coupling of intrinsic origin, and no field strength out of which to build a magnetic field. The warrant is the rotational invariance of the value space. The boundary is that orbital magnetic effects are untouched.
 
