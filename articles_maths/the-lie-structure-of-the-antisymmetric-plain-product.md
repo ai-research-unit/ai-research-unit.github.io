@@ -6,7 +6,7 @@ The antisymmetrisation of the plain product is $\tilde Q_1\wedge\tilde Q_2=\tfra
 
 This article reads the Lie structure of that bracket: the antisymmetrisation and its coordinate rule, the Jacobi identity and its proof, the defect, which is empty, the bracket table on the basis, the ideals and the radical, the Killing form and its radical, the exponential and the versors, the rotor and its action, and the row of the bracket in the comparison of the four.
 
-The setting is [The General Plain Bilinear Product](the-general-plain-bilinear-product.html), whose second half is this product, and [The Jordan Structure of the Symmetric Plain Product](the-jordan-structure-of-the-symmetric-plain-product.html), which reads the first half. The general theory is [Lie Algebras](lie-algebras-a-general-introduction.html), and the rotations are [The Lie Algebra of the Antisymmetric Plain Algebra of the Biquaternions](the-lie-algebra-of-the-antisymmetric-plain-algebra-of-the-biquaternions.html).
+The setting is [The General Plain Bilinear Product](the-general-plain-bilinear-product.html), whose second half is this product, and [The Jordan Structure of the Symmetric Plain Product](the-jordan-structure-of-the-symmetric-plain-product.html), which reads the first half. The general theory is [Lie Algebras](lie-algebras-a-general-introduction.html), and the rotations are The Lie Algebra of the Antisymmetric Plain Algebra of the Biquaternions.
 
 ## The Antisymmetrisation
 
@@ -199,7 +199,6 @@ The Killing form is $\operatorname{diag}(0,-2,-2,-2)$, invariant, of radical the
 
 - [The General Plain Bilinear Product](the-general-plain-bilinear-product.html), for the product of which this is the antisymmetrisation.
 - [The Jordan Structure of the Symmetric Plain Product](the-jordan-structure-of-the-symmetric-plain-product.html), for the other half of the same product.
-- [The Lie Algebra of the Antisymmetric Plain Algebra of the Biquaternions](the-lie-algebra-of-the-antisymmetric-plain-algebra-of-the-biquaternions.html), for the algebra read as a whole.
 - [The Lie Structure of the Antisymmetric Quaternionic Product](the-lie-structure-of-the-antisymmetric-quaternionic-product.html), for the companion bracket with a defect.
 - [Lie Algebras](lie-algebras-a-general-introduction.html), for the Jacobi identity, the Killing form and the exponential in general.
 - [Biquaternion Lie Group and Exponential Structure](biquaternion-lie-group-and-exponential-structure.html), for the exponential and the spin cover.

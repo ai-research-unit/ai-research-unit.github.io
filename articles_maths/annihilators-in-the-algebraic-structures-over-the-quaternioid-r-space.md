@@ -142,4 +142,3 @@ Three facts summarize the three structures.
 - [The 2 Forms over the Quaternioid $\mathbb{R}$ Space](the-2-forms-over-the-quaternioid-r-space.html), for the radicals of the two forms.
 - [The 2 Algebraic Norms over the Quaternioid $\mathbb{R}$ Space](the-2-algebraic-norms-over-the-quaternioid-r-space.html), for the two algebraic norms and the invertibility criteria.
 - [Annihilators of the Quaternion Algebra](annihilators-of-the-quaternion-algebra.html), in the *Quaternions* category, for the algebra-product operator, its rank and its determinant.
-- [Annihilators in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](annihilators-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the companion reading over the biquaternion space, where an element of the cone carries two planes.

@@ -159,4 +159,3 @@ with inverse $\breve Q^{-1}=\langle \breve Q\rangle_{\mathrm{ts}}^{-1}(Q_{\black
 - [Zero Divisors of the Algebra of the Reduced Biquaternions](zero-divisors-of-the-algebra-of-the-reduced-biquaternions.html), below this article, for the null cone and its structure.
 - [Annihilators of the Algebra of the Reduced Biquaternions](annihilators-of-the-algebra-of-the-reduced-biquaternions.html), below this article, for the annihilators of the zero divisors.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), the non-commutative counterpart, for the same separation of the algebraic norm from the criterion.
-- [Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.html), §*The Unit and the Inverse*, for the definitions used here.

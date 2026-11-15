@@ -327,12 +327,10 @@ Every nonzero nilpotent annihilates itself, so it is a two-sided zero divisor; t
 
 ## Further Reading
 
-- [Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.html), for the general definition of a root of a central value and of the nilpotent, with the index of nilpotency and the square-zero element.
 - [Idempotents](idempotents.html), for the roots of $+1$ and the idempotents, the other two central element classes.
 - [Square Roots of an Element](square-roots-of-an-element.html), for the roots of the general quadratic $\tilde{Ζ}^2=\tilde Q$, of which the roots of $0$ here are one case.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the two families of the zero-divisor set, the pure family being exactly these nilpotents.
 - [Peirce Decompositions of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the off-diagonal units $\vec\Upsilon_x,\vec\Upsilon_y$ and the Peirce basis.
-- [Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](square-roots-of-zero-and-the-nilpotents-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the same problem read in all twelve products.
 - [The $M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the isomorphism $\mathsf M_2$, the trace and determinant, and the strictly triangular form.
 - [Subspaces and Decompositions](subspaces-and-decompositions-of-the-biquaternion-algebra.html), for the vector subspace, the nilpotent cone it carries and the absence of a nilpotent in the other five subspaces.
 - [Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the same class read against the four general products, where only the plain product has this square-zero set.

@@ -437,7 +437,6 @@ with $G_5=iG_0G_1G_2G_3$, and the complexified even algebra $M_2\oplus M_2$. The
 - [The Two-Sided Operators Method to Build $M_4(\mathbb{C})$](the-two-sided-operators-method-to-build-m4c.html), for the sixteen $L_{\mathrm{axf},e_\mu} R_{\mathrm{axf},e_\nu}$ and their multiplication table.
 - [The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$](the-operators-of-the-peirce-decomposition-of-m4c.html), for $L_a$, $R_a$ and $L_{a}R_{b}$ on the sixteen-dimensional algebra.
 - [The Quaternionic Structure and the Real Forms of $M_4(\mathbb{C})$](the-quaternionic-structure-and-the-real-forms-of-m4c.html), for the antilinear involutions and the real forms.
-- [The Sesquilinear Two-Sided Operator on the Biquaternion](the-sesquilinear-two-sided-operator-on-the-biquaternion.html), for the star in the argument of a two-sided operator.
 - [Conventions of the Matrix Models](../articles_physics/matrix-representations-conventions.html), for the explicit matrices and the even-part identification, §*The Clifford Structure and the Frame*.
 - [Conventions in Mathematics](algebra-and-element-conventions.html), for the bar, the quaternion conjugation and the star.
 - [The Pin and the Spin Groups with Signed Hermitian Adjoint](the-pin-and-spin-groups-with-signed-hermitian-adjoint.html), for the group of the antilinear operations.

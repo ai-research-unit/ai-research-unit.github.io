@@ -157,4 +157,3 @@ There are no minimal left ideals, no polarization and no Peirce carrier, and the
 - [The Peirce Decomposition of the Quaternion Algebra and Its Collapse](the-peirce-decomposition-of-the-quaternion-algebra-and-its-collapse.html), for the absent idempotents.
 - [The Spin Carriers of the Quaternion Algebra](the-spin-carriers-of-the-quaternion-algebra.html), for the carriers that must be lent.
 - [The Regular Representation of the Quaternion Algebra](the-left-and-the-right-regular-representation.html), for the regular module computed.
-- [Modules over the Biquaternion Algebra](the-canonical-hermitian-form-on-the-regular-module-of-the-biquaternion-algebra.html), for the length-two case.

@@ -164,4 +164,3 @@ An element is $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with scalar 
 - [Norm and Invertibility in the Algebra of the Reduced Biquaternions](norm-and-invertibility-in-the-algebra-of-the-reduced-biquaternions.html), below this article, for the algebraic norm of the multiplication and the criterion of invertibility.
 - [Zero Divisors of the Algebra of the Reduced Biquaternions](zero-divisors-of-the-algebra-of-the-reduced-biquaternions.html), below this article, for the null cone and its structure.
 - [The Biquaternion Algebra](the-biquaternion-algebra.html), the non-commutative counterpart, for the same data of an algebra with a division-adjacent structure absent here.
-- [Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.html), for the definitions of the unit, the inverse and the group of units used in the block.

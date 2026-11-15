@@ -153,4 +153,3 @@ As a level set the cone carries an induced form of rank two with radical the rul
 - [The P-Regular Sector of the Quaternion Algebra](the-p-regular-sector-of-the-quaternion-algebra.html) for the two open halves.
 - [The P Level Sets and the Hyperbolic Structure of the Quaternion Algebra](the-p-level-sets-and-the-hyperbolic-structure-of-the-quaternion-algebra.html) for the other level sets.
 - [The Topology of the P-Null Cone of the Quaternion Algebra](the-topology-of-the-p-null-cone-of-the-quaternion-algebra.html) for the homotopy type of the cone.
-- [The Isotropic Structure of the General Quaternionic Algebra of the Biquaternions](the-isotropic-structure-of-the-general-quaternionic-algebra-of-the-biquaternions.html) for the complex case in which nullity and non-invertibility coincide.

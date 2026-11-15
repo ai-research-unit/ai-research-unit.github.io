@@ -166,5 +166,4 @@ In the axis-free frame the two ideals are the spans of the left and of the right
 - William Fulton and Joe Harris, *Representation Theory: A First Course* (Springer, 1991), for $\Lambda^{2}$ and the exceptional isomorphisms in low dimension.
 - Sigurdur Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces* (AMS, 2001), for $\mathfrak{so}(4)$ and its two ideals.
 - [The Killing Form, Its Radical and the Triangular Case](the-killing-form-its-radical-and-the-triangular-case.html), for the form computed here.
-- [The Lie Algebra of the Antisymmetric Plain Algebra of the Biquaternions](the-lie-algebra-of-the-antisymmetric-plain-algebra-of-the-biquaternions.html), for the biquaternion side of the same algebra.
 - [The Lie Algebra $\operatorname{Skew}_2$: One Dimension, Hence Abelian](the-lie-algebra-skew-2-one-dimension-hence-abelian.html), for the case that this article generalises.

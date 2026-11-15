@@ -304,7 +304,6 @@ Two forms on one algebra give two gradients of one function, related by $v_2=G_2
 - [Sesquilinear Forms and the Lax–Milgram Theorem](sesquilinear-forms-and-the-lax-milgram-theorem.html), for the bounded forms, the operator they represent and the coercive case.
 - [The Two Metrics of the Complex Numbers](the-two-metrics-of-the-complex-numbers.html), for the two forms on the plane, their Gram matrices, their signatures and the two realified quadratics read here as two gradients.
 - [Analysis on $M_5(\mathbb{C})$](analysis-on-m5c.html), for the halved Wirtinger calculus and the complex differential in several complex variables.
-- [The Canonical Hermitian Form on the Regular Module of the Biquaternion Algebra](the-canonical-hermitian-form-on-the-regular-module-of-the-biquaternion-algebra.html), for the Hermitian form $\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ whose real part is the inner product of the biquaternion case.
 - [Operator and Calculus Conventions](operator-and-calculus-conventions.html), §*The Gradient*, for the two derivative operators of the corpus and the unhalved normalisation.
 - [Biquaternion Analysis](biquaternion-analysis.html), for the gradient $\tilde\nabla$ as an operator and the four products read on it.
 - [Automorphisms and Derivations of Algebras](automorphisms-and-derivations-of-algebras.html), for the derivations contrasted with the gradient in the closing section.

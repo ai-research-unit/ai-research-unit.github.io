@@ -81,4 +81,3 @@ The $2\times2$ matrix element representation $\mathsf{M}_2:\mathbb{H}\hookrighta
 - [Introduction to the Symmetric Plain Algebra of the Quaternions](introduction-to-the-symmetric-plain-algebra-of-the-quaternions.html), for the product.
 - [*$M_2(\mathbb{C})_{\mathbb{H}}$ Standard Representation*](m2c-h-standard-representation.html), for the embedding, its multiplicativity and its invariants.
 - [The Trace Form and the Invariance of the Symmetric Plain Algebra of the Quaternions](the-trace-form-and-the-invariance-of-the-symmetric-plain-algebra-of-the-quaternions.html), for the trace form.
-- [Norm and Invertibility in the Symmetric Plain Algebra](norm-and-invertibility-in-the-symmetric-plain-algebra.html), for the norm, the inverse and the invertibility criterion.

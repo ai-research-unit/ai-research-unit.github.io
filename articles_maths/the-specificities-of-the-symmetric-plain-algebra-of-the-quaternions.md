@@ -155,7 +155,6 @@ The symmetric plain algebra of $\mathbb{H}$ is a commutative unital special Jord
 ## Further Reading
 
 - [Introduction to the Symmetric Plain Algebra of the Quaternions](introduction-to-the-symmetric-plain-algebra-of-the-quaternions.html), for the product, the unit and the Jordan identity.
-- [Norm and Invertibility in the Symmetric Plain Algebra](norm-and-invertibility-in-the-symmetric-plain-algebra.html), for the norm, the trace and the inverse.
 - [Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the zero divisors that are not nilpotents.
 - [The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra of the Quaternions](the-square-the-idempotents-and-the-jordan-inverse-of-the-symmetric-plain-algebra-of-the-quaternions.html), below this article in this category, for the square and the inverse in full.
 - [Jordan Algebras](jordan-algebras.html), for the special Jordan algebras, the formal reality and the classification of the formally real ones.

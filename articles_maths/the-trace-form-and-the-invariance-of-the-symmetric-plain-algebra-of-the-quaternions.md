@@ -102,7 +102,6 @@ The trace form of the block is $\tau(\tilde q_1,\tilde q_2)=\mathrm{Sc}(\tilde q
 ## Further Reading
 
 - [Introduction to the Symmetric Plain Algebra of the Quaternions](introduction-to-the-symmetric-plain-algebra-of-the-quaternions.html), for the product.
-- [Norm and Invertibility in the Symmetric Plain Algebra](norm-and-invertibility-in-the-symmetric-plain-algebra.html), for the norm, the quaternion form and the contrast with the trace form.
 - [Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the isotropic cone of the trace form against the zero-divisor set.
 - [The Multiplication Operators of the Symmetric Plain Algebra of the Quaternions](the-multiplication-operators-of-the-symmetric-plain-algebra-of-the-quaternions.html), below this article in this category, for the operators and the derivations that are self-adjoint and skew.
 - [The 2 Forms over the Quaternioid $\mathbb{R}$ Space](the-2-forms-over-the-quaternioid-r-space.html), for the plain and quaternionic forms.

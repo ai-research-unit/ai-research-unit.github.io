@@ -23,7 +23,7 @@ The article is a catalogue in the genre of the subspace and obstruction catalogu
 | The four conjugations as a Klein four-group, their commutativity and their fixed spaces | [The Group of Involutions](../articles_maths/the-group-of-involutions.html) |
 | The norm, its multiplicativity and the identity $\tilde Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}e_t$ | [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
 | The four general products and their behaviour on the sectors | [The Four General Products and Their Relations over the Biquaternion Algebra](../articles_maths/the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html), [Remarkable Subspaces and the Four General Products, Forms and Norms](../articles_maths/remarkable-subspaces-and-the-four-general-products-forms-and-norms.html) |
-| The two-sided operator by a Hermitian rotor and the adjoint action | [Two-Sided Operators on the General Plain Sesqualgebra](../articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra.html), [Biquaternion Rotations and Lorentz Transformations](../articles_maths/biquaternion-rotations-and-lorentz-transformations.html) |
+| The two-sided operator by a Hermitian rotor and the adjoint action | [Biquaternion Rotations and Lorentz Transformations](../articles_maths/biquaternion-rotations-and-lorentz-transformations.html) |
 
 ## The Split
 
@@ -237,7 +237,7 @@ The algebra splits into the material and the informational sectors, the eigenspa
 - [The Group of Involutions](../articles_maths/the-group-of-involutions.html), for the Klein four-group and its fixed spaces.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the norm identity and its multiplicativity.
 - [The Four General Products and Their Relations over the Biquaternion Algebra](../articles_maths/the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html) and [Remarkable Subspaces and the Four General Products, Forms and Norms](../articles_maths/remarkable-subspaces-and-the-four-general-products-forms-and-norms.html), for the products and their sector behaviour.
-- [Two-Sided Operators on the General Plain Sesqualgebra](../articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra.html) and [Biquaternion Rotations and Lorentz Transformations](../articles_maths/biquaternion-rotations-and-lorentz-transformations.html), for the two-sided operator and the rotors.
+- [Biquaternion Rotations and Lorentz Transformations](../articles_maths/biquaternion-rotations-and-lorentz-transformations.html), for the two-sided operator and the rotors.
 - [Four-Vectors and the Interval](four-vectors-and-the-interval.html), for the interval and the Lorentz action read at length.
 - [States, Observables and the Born Weight](states-observables-and-the-born-weight.html), for the state space and the Born pairing.
 - [The Material-Informational Split as a Superselection Structure in Biquaternionic Form](the-material-informational-split-as-a-superselection-structure-in-biquaternionic-form.html), for the negative statement and the real-structure grading.

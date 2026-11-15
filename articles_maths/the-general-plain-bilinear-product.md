@@ -113,7 +113,7 @@ $$
 $$
 (\tilde Q_1+\tilde Q_2)^2-\tilde Q_1^2-\tilde Q_2^2=2\,\tilde Q_1\bullet\tilde Q_2,
 $$
-because the antisymmetric half is alternating and cancels on the diagonal. The antisymmetric half is therefore invisible to every power map and is recovered from the product only through the commutator. The consequence for the block is [The Specificities of the Symmetric Plain Algebra of the Biquaternions](the-specificities-of-the-symmetric-plain-algebra-of-the-biquaternions.html), where the identity of the two squares is the first of the specificities.
+because the antisymmetric half is alternating and cancels on the diagonal. The antisymmetric half is therefore invisible to every power map and is recovered from the product only through the commutator. The consequence for the block is The Specificities of the Symmetric Plain Algebra of the Biquaternions, where the identity of the two squares is the first of the specificities.
 
 **The scalar part.** The scalar part of the product is the form $P$, with Gram matrix $\operatorname{diag}(1,-1,-1,-1)$ and rank $4$. It is symmetric and nondegenerate, its radical is zero, and its isotropic cone is $\langle\tilde Q\rangle_{P}=Q_t^2-Q_x^2-Q_y^2-Q_z^2=0$.
 

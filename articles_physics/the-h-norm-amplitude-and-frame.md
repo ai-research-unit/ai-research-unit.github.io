@@ -33,7 +33,6 @@ $$
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
 | the two-factor decomposition, the Moore–Penrose inverse, the isometry factor, uniqueness by the four conditions, the invariants of the positive factor, the continuity of one factor and the discontinuity of the other, the six worked elements | [The Polar Decomposition of a Biquaternion](../articles_maths/the-polar-decomposition-of-a-biquaternion.html) |
-| the positive cone, the uniqueness of the square root in the cone, the Cartan involution of the group of units | [Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint](../articles_maths/positivity-and-the-hermitian-cone-of-the-biquaternion-algebra-with-hermitian-adjoint.html) |
 | the two ideals of an element and the two orthogonal projections that generate them | [The Peirce Decomposition of the Biquaternion Algebra](../articles_maths/the-peirce-decomposition-of-the-biquaternion-algebra.html) |
 | the minimal Hermitian idempotents, their normal form and their traces | [Hermitian Idempotents and the Peirce Decomposition](../articles_maths/hermitian-idempotents-and-the-peirce-decomposition.html) |
 | the two spectral values of a Hermitian element and the criterion of positivity | [The Spectrum](../articles_maths/the-spectrum.html) |

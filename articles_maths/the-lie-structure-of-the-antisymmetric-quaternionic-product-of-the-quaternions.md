@@ -10,7 +10,7 @@ It is alternating and purely vector valued, and it is not a Lie bracket. On the 
 
 The article is the real mirror of [The Lie Structure of the Antisymmetric Quaternionic Product](the-lie-structure-of-the-antisymmetric-quaternionic-product.html), with one point of difference, stated in the section of the failure: the biquaternion article attributes the failure to the scalar part, and over $\mathbb{R}$ the scalar parts are the coefficients of the defect and not its values.
 
-The parent is [The General Quaternionic Bilinear Product of the Quaternions](the-general-quaternionic-bilinear-product-of-the-quaternions.html); the bracket as a multiplication is [Introduction to the Antisymmetric Quaternionic Algebra of the Quaternions](introduction-to-the-antisymmetric-quaternionic-algebra.html), cited and not restated. The other half is [The Jordan Structure of the Symmetric Quaternionic Product of the Quaternions](the-jordan-structure-of-the-symmetric-quaternionic-product-of-the-quaternions.html), and the bracket that works is [The Lie Structure of the Antisymmetric Plain Product of the Quaternions](the-lie-structure-of-the-antisymmetric-plain-product-of-the-quaternions.html).
+The parent is [The General Quaternionic Bilinear Product of the Quaternions](the-general-quaternionic-bilinear-product-of-the-quaternions.html); the bracket as a multiplication is Introduction to the Antisymmetric Quaternionic Algebra of the Quaternions, cited and not restated. The other half is [The Jordan Structure of the Symmetric Quaternionic Product of the Quaternions](the-jordan-structure-of-the-symmetric-quaternionic-product-of-the-quaternions.html), and the bracket that works is [The Lie Structure of the Antisymmetric Plain Product of the Quaternions](the-lie-structure-of-the-antisymmetric-plain-product-of-the-quaternions.html).
 
 ## The Bracket
 
@@ -188,7 +188,6 @@ The Killing form is $3q_{1t}q_{2t}-2(\vec q_1,\vec q_2)$, of signature $(1,3)$ a
 
 ## Further Reading
 
-- [Introduction to the Antisymmetric Quaternionic Algebra of the Quaternions](introduction-to-the-antisymmetric-quaternionic-algebra.html), for the bracket as a multiplication.
 - [The General Quaternionic Bilinear Product of the Quaternions](the-general-quaternionic-bilinear-product-of-the-quaternions.html), for the parent product.
 - [The Lie Structure of the Antisymmetric Quaternionic Product](the-lie-structure-of-the-antisymmetric-quaternionic-product.html), for the biquaternion counterpart and its attribution of the failure.
 - [The Lie Structure of the Antisymmetric Plain Product of the Quaternions](the-lie-structure-of-the-antisymmetric-plain-product-of-the-quaternions.html), for the bracket that is a Lie algebra.

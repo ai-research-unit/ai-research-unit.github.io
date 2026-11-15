@@ -680,12 +680,10 @@ The idempotents are the trivial elements $0$ and $e_t$ and the elements $\tilde\
 
 ## Further Reading
 
-- [Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.html), for the general definition of a root of a central value, of a square and of an idempotent, with the orthogonal, complete and primitive families, the Hermitian idempotent and the Peirce decomposition.
 - [Square Roots of an Element](square-roots-of-an-element.html), for the roots of the general quadratic $\tilde{Ζ}^2=\tilde Q$, of which the roots of $+1$ here are one case.
 - [Nilpotents](nilpotents.html), for the roots of $0$ and the nilpotents, the second central value.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the two families of the zero-divisor set, of which the non-pure family consists of the complex multiples of the non-trivial idempotents.
 - [Peirce Decompositions of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the Peirce decomposition the standard idempotents drive.
-- [Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](square-roots-of-one-and-the-idempotents-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the four root sets and the four idempotent sets compared.
 - [Square Roots of One and the Idempotents of the Split-Complex Algebra](square-roots-of-one-and-the-idempotents-of-the-split-complex-algebra.html), the real commutative case, where the roots of $+1$ and the idempotents are four points and there is no root of $-1$.
 - [Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions](square-roots-of-one-and-the-idempotents-of-the-algebra-of-the-reduced-biquaternions.html), the complex commutative case, where the roots of $+1$ and the idempotents are four points and the roots of $-1$ are four.
 - S. J. Sangwine, "Biquaternion (complexified quaternion) roots of $-1$", *Advances in Applied Clifford Algebras* **16** (2006) 63–68.

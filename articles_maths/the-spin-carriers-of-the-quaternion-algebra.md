@@ -147,4 +147,3 @@ The Weyl reading fails because the chirality projector is a unit, and the Majora
 - [The Peirce Decomposition of the Quaternion Algebra and Its Collapse](the-peirce-decomposition-of-the-quaternion-algebra-and-its-collapse.html) for the idempotents and their absence.
 - [The M2C-H Standard Representation](m2c-h-standard-representation.html) for the matrix model and the columns.
 - [Spinors and Dirac Spinors in the Biquaternion Algebra](spinors-and-dirac-spinors-in-the-biquaternion-algebra.html) for the carriers of the complexified block and the Dirac reading.
-- [The Pin and Spin Groups of the General Quaternionic Algebra of the Biquaternions](the-pin-and-spin-groups-of-the-general-quaternionic-algebra-of-the-biquaternions.html) for the spin groups of the complexified algebra.
