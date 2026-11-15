@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Involutions over $\mathbb{R}$ and over $\mathbb{C}$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-involutions-over-math0-and-over-math1"><strong>The Involutions over $\mathbb{R}$ and over $\mathbb{C}$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>An involution of the algebra is a map of order two that either preserves or reverses the product, and the classification of those maps is short: two of the reversing kind over either field, and a signature's worth of the preserving kind.</strong></p>
+<p>The article separates the two kinds, classifies the involutions of $M_n(\mathbb{C})$ and of $M_n(\mathbb{R})$ up to conjugacy, and records the split that every involution produces, the fixed part and the anti-fixed part. It counts the two parts: for the transpose the symmetric half has dimension $n(n+1)/2$ and the skew half $n(n-1)/2$, while for the symplectic involution the two dimensions are exchanged and the fixed half has dimension $n(n-1)/2$. It assumes <em>The Ideals, the Centre and the Simplicity of $M_n(\mathbb{C})$</em> for the inner automorphisms and <em>The Two Base Fields: $M_n(\mathbb{R})$ inside $M_n(\mathbb{C})$</em> for the antilinear structures. It defers the two halves themselves to <em>The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric</em> and to <em>The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian</em>, and the multiplication tables to <em>The Four Multiplication Tables: $SS$, $SK$, $KS$, $KK$</em>.</p>
+<h2 id="two-kinds-of-involution">Two Kinds of Involution</h2>
+<p><strong>An involution is a bijective linear map $\sigma$ of the algebra with $\sigma^{2}=\mathrm{id}$ which is either an automorphism or an anti-automorphism.</strong> The two cases are</p>
+<p>$$
+\sigma(AB)=\sigma(A)\sigma(B)\quad\text{(automorphism)},\qquad
+\sigma(AB)=\sigma(B)\sigma(A)\quad\text{(anti-automorphism)} .
+$$</p>
+<p>An anti-automorphism of order two is what the word <em>involution</em> names in the theory of algebras with a form, and it is the kind that produces the symmetric and the skew halves. An automorphism of order two produces a grading instead.</p>
+<p><strong>The first kind is complex-linear and the second kind is conjugate-linear.</strong> Write $\sigma$ for an involution. If $\sigma(zA)=z\sigma(A)$ for all complex $z$, the involution is of the <strong>first kind</strong>; if $\sigma(zA)=\bar z\sigma(A)$, it is of the <strong>second kind</strong>. Over $\mathbb{R}$ there is only the first kind, since the scalars are real. Over $\mathbb{C}$ both occur, and the second kind is the one that carries the Hermitian structure.</p>
+<p><strong>The three examples that matter are the transpose, the conjugate transpose and the symplectic transpose.</strong> They are</p>
+<p>$$
+\sigma_1(A)=A^{\mathsf T},\qquad \sigma_2(A)=A^{*}=\bar A^{\mathsf T},\qquad \sigma_3(A)=JA^{\mathsf T}J^{-1},
+$$</p>
+<p>with $J$ the block-diagonal matrix of $\tfrac{n}{2}$ copies of $\begin{pmatrix}0&1\\-1&0\end{pmatrix}$. The first two are anti-automorphisms of order two over $\mathbb{C}$; the first is of the first kind and the second of the second kind. The third is of the first kind and is defined only for even $n$.</p>
+<h2 id="the-involutions-of-the-first-kind">The Involutions of the First Kind</h2>
+<p><strong>Every complex-linear anti-automorphism of order two is $A\mapsto SA^{\mathsf T}S^{-1}$ with $S^{\mathsf T}=\pm S$.</strong> An anti-automorphism $\sigma$ sends the matrix units to $E_{ij}\mapsto c_{ij}E_{\tau(i)\tau(j)}$ for a permutation $\tau$ and scalars, and the condition $\sigma^{2}=\mathrm{id}$ forces $\tau$ to be the identity or the reversal of the order of the units; the reversal case reduces to the identity composed with the transpose. So $\sigma(A)=SA^{\mathsf T}S^{-1}$, and $\sigma^{2}=\mathrm{id}$ reads $SS^{-{\mathsf T}}=\lambda\mathrm{I}$, that is $S=\pm S^{\mathsf T}$ after rescaling. Hence</p>
+<p>$$
+\sigma(A)=SA^{\mathsf T}S^{-1},\qquad S^{\mathsf T}=S\ \text{or}\ S^{\mathsf T}=-S .
+$$</p>
+<p><strong>There are exactly two classes, and the second needs $n$ even.</strong> If $S$ is symmetric and invertible, a change of basis carries it to the identity and $\sigma$ to the transpose. If $S$ is skew and invertible, then $n$ is even, because a skew matrix of odd size has vanishing determinant; a change of basis carries $S$ to $J$ and $\sigma$ to the symplectic transpose. So the classes are</p>
+<p>$$
+\text{transpose type},\qquad \text{symplectic type}\ (n\ \text{even}),
+$$</p>
+<p>and at odd $n$ only the transpose type exists.</p>
+<p><strong>The preserving kind has $n+1$ classes, indexed by a rank.</strong> A complex-linear automorphism of order two is inner by Skolem–Noether, so it is $A\mapsto SAS^{-1}$ with $S^{2}=\lambda\mathrm{I}$. After scaling, $S$ has eigenvalues $\pm1$ and is diagonalisable, so it is conjugate to $\operatorname{diag}(\mathrm{I}_p,-\mathrm{I}_{n-p})$. The classes are therefore indexed by $p=0,1,\dots,n$, and the fixed algebra of the $p$-th class is $M_p(\mathbb{C})\oplus M_{n-p}(\mathbb{C})$, of dimension $p^{2}+(n-p)^{2}$.</p>
+<h2 id="the-involutions-of-the-second-kind">The Involutions of the Second Kind</h2>
+<p><strong>An antilinear anti-automorphism of order two is a Hermitian structure, and its classes are the signatures.</strong> Let $\sigma$ be conjugate-linear and an anti-automorphism with $\sigma^{2}=\mathrm{id}$. Then $\sigma(A)=SA^{*}S^{-1}$ with $S$ Hermitian, and the condition on $S$ is only that it be invertible and self-adjoint up to scale. A change of basis carries $S$ to a diagonal matrix with $p$ entries $+1$ and $q$ entries $-1$, so the classes are indexed by the <strong>signature</strong> $(p,q)$ with $p+q=n$, and there are $n+1$ of them. The case $p=n$ is the conjugate transpose $\sigma(A)=A^{*}$.</p>
+<p><strong>The count over $\mathbb{C}$ is therefore $2+(n+1)$ of the reversing kind and $n+1$ of the preserving kind.</strong> Over $\mathbb{R}$ the antilinear cases disappear and the counts are: two reversing classes, transpose and symplectic, and $n+1$ preserving classes. The table summarises the four families.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Kind</th>
+<th>Product</th>
+<th>Classes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{C}$</td>
+<td>linear</td>
+<td>reversed</td>
+<td>$2$: transpose, symplectic</td>
+</tr>
+<tr>
+<td>$\mathbb{C}$</td>
+<td>linear</td>
+<td>preserved</td>
+<td>$n+1$: inner by $\operatorname{diag}(\mathrm{I}_p,-\mathrm{I}_{n-p})$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}$</td>
+<td>antilinear</td>
+<td>reversed</td>
+<td>$n+1$: signatures $(p,q)$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}$</td>
+<td>antilinear</td>
+<td>preserved</td>
+<td>$2$: $M_n(\mathbb{R})$ and $M_{n/2}(\mathbb{H})$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-split-into-fixed-and-anti-fixed">The Split into Fixed and Anti-Fixed</h2>
+<p><strong>Every involution splits the algebra into the fixed part and the anti-fixed part.</strong> For $\sigma^{2}=\mathrm{id}$ the eigenvalues are $\pm1$ and</p>
+<p>$$
+M_n(\mathbb{C})=\operatorname{Fix}\sigma\oplus\operatorname{Anti}\sigma,\qquad
+A=\tfrac12(A+\sigma A)+\tfrac12(A-\sigma A).
+$$</p>
+<p>The two projections $\tfrac12(\mathrm{I}\pm\sigma)$ are idempotent and add to the identity. They are linear maps on the algebra, not elements of it, and they are the only two projections produced by $\sigma$ alone.</p>
+<p><strong>For the transpose the halves are the symmetric and the skew matrices.</strong> With $\sigma(A)=A^{\mathsf T}$,</p>
+<p>$$
+\operatorname{Sym}_n=\{A:A^{\mathsf T}=A\},\qquad \operatorname{Skew}_n=\{A:A^{\mathsf T}=-A\}.
+$$</p>
+<p>The first is closed under the product and the second is closed under the commutator; this is the whole content of the following two articles and the source of the four multiplication tables.</p>
+<p><strong>For the symplectic involution the halves are the two symplectic symmetry classes.</strong> With $\sigma(A)=JA^{\mathsf T}J^{-1}$, the fixed part is $\{A:AJ\ \text{skew}\}$ and the anti-fixed part is $\{A:AJ\ \text{symmetric}\}$, and the two have the dimensions $n(n-1)/2$ and $n(n+1)/2$. So the symplectic involution exchanges the dimensions that the transpose gives, and the exchange is the reason a symplectic form has no preferred half of larger size.</p>
+<h2 id="the-two-dimensions">The Two Dimensions</h2>
+<p><strong>The symmetric half has dimension $n(n+1)/2$ and the skew half $n(n-1)/2$.</strong> The symmetric matrices are determined by their entries on and above the diagonal, and there are $n(n+1)/2$ of those; the skew matrices are determined by their entries above the diagonal, and there are $n(n-1)/2$. The sum is</p>
+<p>$$
+\frac{n(n+1)}{2}+\frac{n(n-1)}{2}=n^{2},
+$$</p>
+<p>and the values for $n=2,\dots,6$ are</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$n$</th>
+<th>$\dim\operatorname{Sym}_n$</th>
+<th>$\dim\operatorname{Skew}_n$</th>
+<th>sum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$2$</td>
+<td>$3$</td>
+<td>$1$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$6$</td>
+<td>$3$</td>
+<td>$9$</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$10$</td>
+<td>$6$</td>
+<td>$16$</td>
+</tr>
+<tr>
+<td>$5$</td>
+<td>$15$</td>
+<td>$10$</td>
+<td>$25$</td>
+</tr>
+<tr>
+<td>$6$</td>
+<td>$21$</td>
+<td>$15$</td>
+<td>$36$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The Hermitian and skew-Hermitian halves have equal real dimension $n^{2}$.</strong> For $\sigma(A)=A^{*}$ the two halves are complex subspaces of real dimension $n^{2}$ each, since a Hermitian matrix is determined by $n$ real diagonal entries and $\binom{n}{2}$ complex off-diagonal ones, $n+2\binom{n}{2}=n^{2}$. So the transpose split halves $n^{2}$ into two unequal parts, while the conjugate-transpose split halves $2n^{2}$ into two equal parts.</p>
+<p><strong>Every Hermitian involution has a fixed space of real dimension $n^{2}$, whatever its signature.</strong> For $\sigma(A)=SA^{*}S^{-1}$ with $S$ Hermitian of signature $(p,q)$, the fixed space is the set of $S$-Hermitian matrices, and the count of parameters is again $n$ real diagonal entries and $\binom{n}{2}$ complex off-diagonal ones. The signature does not change the dimension; it changes the signature of the trace form restricted to the half, which is computed in <em>The Trace Form and Its Signature on the Two Halves</em>.</p>
+<h2 id="what-transposition-does-to-math151">What Transposition Does to $UT_n$</h2>
+<p><strong>The transpose does not preserve the triangular algebra; it exchanges it with the lower triangular one.</strong> For $A\in UT_n$ the transpose $A^{\mathsf T}$ is lower triangular, so</p>
+<p>$$
+UT_n^{\mathsf T}=LT_n,\qquad UT_n\cap UT_n^{\mathsf T}=\{\text{diagonal matrices}\}.
+$$</p>
+<p>The fixed set of the transpose inside $UT_n$ is therefore the diagonal, of dimension $n$, and the anti-fixed set is $\{0\}$: a triangular matrix that is skew-symmetric is zero, since its diagonal entries vanish and its entries above the diagonal are the negatives of entries below it, which are absent.</p>
+<p><strong>The symmetric half of the algebra is the natural model of the carrier space of $UT_n$, not its product.</strong> Both spaces have dimension $n(n+1)/2$, and the projection $\tfrac12(\mathrm{I}+{}^{\mathsf T})$ maps $M_n(\mathbb{C})$ onto $\operatorname{Sym}_n$. That projection is a linear map of the algebra and it is not of the form $A\mapsto eA$ for an element $e$, which is the precise reason $UT_n$ is not a Peirce corner of the transpose split; see <em>$UT_n$ as the Complement of the Antisymmetric Part (Transpose Case)</em>.</p>
+<h2 id="the-case-math167">The Case $n=2$</h2>
+<p><strong>At $n=2$ the transpose split is $4=3+1$.</strong> The symmetric half is spanned by $\mathrm{I}$, $\sigma_3=\operatorname{diag}(1,-1)$, $\sigma_1$, and the skew half by the single matrix $i\sigma_2$, the rotation. So</p>
+<p>$$
+\operatorname{Sym}_2=\operatorname{span}\{\mathrm{I},\sigma_1,\sigma_3\},\qquad \operatorname{Skew}_2=\mathbb{C}\cdot i\sigma_2 ,
+$$</p>
+<p>and the three Pauli matrices together with $\mathrm{I}$ are a basis of the algebra in which the split is visible.</p>
+<p><strong>At $n=2$ the symplectic type exists and is not conjugate to the transpose.</strong> Since $2$ is even both classes of the reversing kind are present. With $J=i\sigma_2$ the symplectic involution $A\mapsto JA^{\mathsf T}J^{-1}$ has a fixed half of dimension $1$ and an anti-fixed half of dimension $3$. A conjugation $A\mapsto TAT^{-1}$ carries $SA^{\mathsf T}S^{-1}$ to $(TST^{\mathsf T})A^{\mathsf T}(TST^{\mathsf T})^{-1}$, which keeps $S$ symmetric or skew, so no inner automorphism exchanges the two classes.</p>
+<h2 id="summary">Summary</h2>
+<p>An involution is an automorphism or an anti-automorphism of order two, of the first kind if complex-linear and of the second if conjugate-linear. The reversing complex-linear involutions of $M_n(\mathbb{C})$ are the transpose and, for even $n$, the symplectic transpose; the preserving ones are inner by $\operatorname{diag}(\mathrm{I}_p,-\mathrm{I}_{n-p})$, $n+1$ classes; the antilinear reversing ones are the Hermitian structures, $n+1$ classes indexed by signature; the antilinear preserving ones are the two real structures. Every involution splits the algebra into a fixed and an anti-fixed part by $\tfrac12(\mathrm{I}\pm\sigma)$. The transpose gives halves of dimensions $n(n+1)/2$ and $n(n-1)/2$, the symplectic involution exchanges them, and the conjugate transpose gives two halves of real dimension $n^{2}$ whatever the signature. Transposition exchanges $UT_n$ with $LT_n$ and fixes only the diagonal.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\sigma$</td>
+<td>an involution, automorphism or anti-automorphism with $\sigma^{2}=\mathrm{id}$</td>
+</tr>
+<tr>
+<td>$A^{\mathsf T}$</td>
+<td>the transpose, a reversing involution of the first kind</td>
+</tr>
+<tr>
+<td>$A^{*}=\bar A^{\mathsf T}$</td>
+<td>the conjugate transpose, a reversing involution of the second kind</td>
+</tr>
+<tr>
+<td>$J$</td>
+<td>the symplectic matrix, $\tfrac{n}{2}$ blocks of $\begin{pmatrix}0&1\\-1&0\end{pmatrix}$</td>
+</tr>
+<tr>
+<td>$\operatorname{Fix}\sigma$, $\operatorname{Anti}\sigma$</td>
+<td>the $\pm1$ eigenspaces of $\sigma$</td>
+</tr>
+<tr>
+<td>$\operatorname{Sym}_n$, $\operatorname{Skew}_n$</td>
+<td>the fixed and anti-fixed halves of the transpose, of dimensions $n(n\pm1)/2$</td>
+</tr>
+<tr>
+<td>$(p,q)$</td>
+<td>the signature of a Hermitian structure, $p+q=n$</td>
+</tr>
+<tr>
+<td>$UT_n$, $LT_n$</td>
+<td>the upper and the lower triangular algebras</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for involutions of the first and second kind and their classification.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (AMS, 1998), for the classification of involutions on central simple algebras.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for symmetric, skew-symmetric, Hermitian and skew-Hermitian matrices.</li>
+<li><a href="the-two-base-fields-mnr-inside-mnc.html">The Two Base Fields: $M_n(\mathbb{R})$ inside $M_n(\mathbb{C})$</a>, for the antilinear involutions and the two real structures.</li>
+<li><a href="the-ideals-the-centre-and-the-simplicity-of-mnc.html">The Ideals, the Centre and the Simplicity of $M_n(\mathbb{C})$</a>, for the inner automorphisms used in the classification.</li>
+<li><a href="the-matrix-algebra-mnc.html">The Matrix Algebra $M_n(\mathbb{C})$</a>, for the conjugate transpose and the trace form.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

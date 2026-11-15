@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$UT_2$ as the Complement of the Antisymmetric Part — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="math0-as-the-complement-of-the-antisymmetric-part"><strong>$UT_2$ as the Complement of the Antisymmetric Part</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The upper triangular matrices form a three-dimensional complement to the antisymmetric line, and that complement is not the orthogonal one: the trace form on it is degenerate, with the nilpotent line as radical.</strong></p>
+<p>The article proves the vector space decomposition $M_2(\mathbb{R})=UT_2\oplus\Lambda^{2}\mathbb{R}^{2}$, writes the projection onto $UT_2$ along the antisymmetric line, compares it with the orthogonal complement that is the symmetric half, computes the radical of the restricted trace form, and shows that the radical is exactly the nilradical of $UT_2$. It assumes <em>The Triangular Decomposition $h\oplus n_+\oplus n_-$ of $M_2(\mathbb{C})$</em>, <em>The Two Halves as Orthogonal Complements at $n=2$</em> and <em>The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$</em>.</p>
+<p>It defers the question of the product carried by a complement of the same dimension to <em>$UT_2$ as a Linear Model of $\operatorname{Sym}_2$: Same Space, Wrong Product</em>, and the bracket of the triangular algebra to <em>The Antisymmetric Part inside $UT_2$: the Radical as the Commutator</em>.</p>
+<h2 id="the-two-subspaces">The Two Subspaces</h2>
+<p><strong>The dimensions match.</strong> $\dim_{\mathbb{R}}UT_2=3$ and $\dim_{\mathbb{R}}\Lambda^{2}\mathbb{R}^{2}=1$, so the two dimensions add to $4$, the dimension of $M_2(\mathbb{R})$.</p>
+<p><strong>Theorem.</strong> The intersection is zero and the sum is the whole space:</p>
+<p>$$
+M_2(\mathbb{R})=UT_2\oplus\Lambda^{2}\mathbb{R}^{2},\qquad \dim=3+1=4 .
+$$</p>
+<p><strong>Proof.</strong> An upper triangular matrix has a zero lower-left entry, and the antisymmetric matrices are the multiples of $J=\begin{pmatrix}0&1\\ -1&0\end{pmatrix}$, whose lower-left entry is $-1$; an antisymmetric matrix that is also upper triangular is therefore zero. The dimensions then give the sum.</p>
+<p><strong>Corollary.</strong> $UT_2$ is a complement of the antisymmetric line, so every matrix splits as an upper triangular part plus a multiple of $J$ in exactly one way.</p>
+<p><strong>Proof.</strong> A direct sum decomposition gives existence and uniqueness of the two components.</p>
+<h2 id="the-projection-onto-math21">The Projection onto $UT_2$</h2>
+<p><strong>Proposition.</strong> The projection onto $UT_2$ along the antisymmetric line is</p>
+<p>$$
+P\begin{pmatrix}a&b\\ c&d\end{pmatrix}=\begin{pmatrix}a&b+c\\ 0&d\end{pmatrix},
+$$</p>
+<p>and the antisymmetric part of a matrix is $-cJ$.</p>
+<p><strong>Proof.</strong> $A-P(A)=\begin{pmatrix}0&-c\\ c&0\end{pmatrix}=-cJ$, which is antisymmetric; and $P(A)$ is upper triangular. The map $P$ is linear, its image is $UT_2$, and its kernel is the antisymmetric line.</p>
+<p><strong>Corollary.</strong> $P$ is a projection: $P^{2}=P$, its rank is $3$ and its kernel is one-dimensional.</p>
+<p><strong>Proof.</strong> For $U$ upper triangular one has $P(U)=U$, since the lower-left entry is zero and adds nothing to the upper-right one.</p>
+<p><strong>The projection changes an entry that the reader does not expect.</strong> The corner $(1,2)$ is modified: its new value is $b+c$, not $b$. The correction is exactly the antisymmetric part, which has to be moved into the symmetric direction of the off-diagonal plane.</p>
+<p><strong>In complex form.</strong> Over $\mathbb{C}$ the same formulas hold, with $UT_2$ of complex dimension $3$ and the complex line $\mathbb{C}J$ of dimension $1$; the real statement is the restriction to real matrices.</p>
+<h2 id="the-other-complement">The Other Complement</h2>
+<p><strong>Proposition.</strong> The orthogonal complement of the antisymmetric line for the trace form is the symmetric half, not $UT_2$.</p>
+<p><strong>Proof.</strong> That complement is the symmetric half by <em>The Two Halves as Orthogonal Complements at $n=2$</em>; the two spaces $\operatorname{Sym}_2(\mathbb{R})$ and $UT_2$ are both three-dimensional complements of the same line, so they are different complements of the same subspace.</p>
+<p><strong>They cut the off-diagonal plane in different lines.</strong> Inside the two-dimensional plane of off-diagonal matrices the symmetric half is the line spanned by $E_{12}+E_{21}$ and the triangular algebra is the line spanned by $E_{12}$; the two complements differ only in that plane.</p>
+<p><strong>Proposition.</strong> The two complements meet in the diagonal, so they share a two-dimensional piece and differ in the off-diagonal plane.</p>
+<p><strong>Proof.</strong> A matrix that is both upper triangular and symmetric has $b=c$ and $c=0$, hence is diagonal.</p>
+<p><strong>Corollary.</strong> The pair of complements shows that a subspace of codimension one has many complements but only one orthogonal complement, and the two are related by a shear in the two-dimensional off-diagonal plane.</p>
+<h2 id="the-restricted-trace-form">The Restricted Trace Form</h2>
+<p><strong>Theorem.</strong> In the basis $E_{11},E_{22},E_{12}$ of $UT_2$ the Gram matrix of the trace form is</p>
+<p>$$
+\begin{pmatrix}1&0&0\\ 0&1&0\\ 0&0&0\end{pmatrix},
+$$</p>
+<p>so the restriction is degenerate and its radical is the line $n_+=\mathbb{R}E_{12}$.</p>
+<p><strong>Proof.</strong> $\operatorname{tr}(E_{11}^{2})=\operatorname{tr}(E_{22}^{2})=1$, $\operatorname{tr}(E_{11}E_{22})=0$, and $E_{12}^{2}=0$ with $\operatorname{tr}(E_{11}E_{12})=\operatorname{tr}(E_{22}E_{12})=0$; so the last row and the last column vanish and the radical is spanned by $E_{12}$.</p>
+<p><strong>Corollary.</strong> $\operatorname{rad}(UT_2)=n_+$ and $UT_2^{\perp}=\mathbb{R}E_{12}$ for the trace form on $M_2(\mathbb{R})$.</p>
+<p><strong>Proof.</strong> The radical of the restriction is $UT_2\cap UT_2^{\perp}$; the orthogonal complement is computed from $\operatorname{tr}(E_{11}X)=\operatorname{tr}(E_{22}X)=\operatorname{tr}(E_{12}X)=0$, which force $x_{11}=x_{22}=x_{21}=0$.</p>
+<p><strong>Corollary.</strong> $UT_2$ is not isotropic, and it is not a maximal isotropic subspace either.</p>
+<p><strong>The radical is the nilradical.</strong> The two notions agree at this order: the radical of the trace form on $UT_2$ is the nilpotent radical $n_+$, the largest nilpotent ideal, which is the content of <em>The Antisymmetric Part inside $UT_2$: the Radical as the Commutator</em>.</p>
+<h2 id="the-dimension-count-and-what-it-does-not-give">The Dimension Count and What It Does Not Give</h2>
+<p><strong>$UT_2$ and $\operatorname{Sym}_2$ have the same dimension.</strong> Both are three-dimensional real spaces, so there are linear isomorphisms between them, for example</p>
+<p>$$
+\begin{pmatrix}a&b\\ 0&d\end{pmatrix}\longmapsto\begin{pmatrix}a&b/2\\ b/2&d\end{pmatrix}.
+$$</p>
+<p><strong>Proof.</strong> The map is linear, injective, and its image is the symmetric half; the inverse is $\begin{pmatrix}a&s\\ s&d\end{pmatrix}\mapsto\begin{pmatrix}a&2s\\ 0&d\end{pmatrix}$.</p>
+<p><strong>The isomorphism is not multiplicative.</strong> It carries the identity to the identity, but it does not carry products to products, so it is only a linear identification.</p>
+<p><strong>Proof.</strong> Take the upper triangular matrix $U=E_{12}$ and its image $S=\tfrac12(E_{12}+E_{21})$. In $UT_2$ one has $U^{2}=0$, while $S^{2}=\tfrac14 I$; the two products do not correspond.</p>
+<p><strong>Corollary.</strong> A common dimension is not a common algebra, and the comparison of the products is the subject of <em>$UT_2$ as a Linear Model of $\operatorname{Sym}_2$: Same Space, Wrong Product</em>.</p>
+<h2 id="why-the-complement-is-useful">Why the Complement Is Useful</h2>
+<p><strong>The complement gives the flag coordinates.</strong> $UT_2$ is the stabiliser of the line $\mathbb{C}e_{1}$, so its elements are the matrices that preserve the first step of the flag; the antisymmetric line is the direction that moves the line most, in the sense that $J$ sends $e_{1}$ to $-e_{2}$.</p>
+<p><strong>Proof.</strong> The first column of an upper triangular matrix is a multiple of $e_{1}$, and the first column of $J$ is $-e_{2}$.</p>
+<p><strong>The complement is the tangent space of the parabolic.</strong> The matrices preserving the line form the closed subgroup of the upper triangular matrices, of complex dimension $3$, and its tangent space at the identity is $UT_2$; the antisymmetric line lies outside that tangent space, since $J$ does not preserve the line.</p>
+<p><strong>The two complements answer two different questions.</strong> The symmetric complement answers the question of the orthogonal projection for the trace form; the triangular complement answers the question of the flag and of the parabolic subalgebra.</p>
+<h2 id="summary">Summary</h2>
+<p>$M_2(\mathbb{R})$ is the direct sum of the three-dimensional upper triangular algebra and the antisymmetric line, and the projection onto $UT_2$ along that line sends $\begin{pmatrix}a&b\\ c&d\end{pmatrix}$ to $\begin{pmatrix}a&b+c\\ 0&d\end{pmatrix}$.</p>
+<p>The symmetric half is the orthogonal complement of the antisymmetric line, so the triangular complement is a non-orthogonal one; the two complements differ by a shear of the off-diagonal plane and meet in the diagonal. The trace form on $UT_2$ has Gram matrix $\operatorname{diag}(1,1,0)$, so its radical is the nilpotent line $n_+$, which is also the nilradical of the algebra, and $UT_2^{\perp}=\mathbb{R}E_{12}$. The linear isomorphism $UT_2\cong\operatorname{Sym}_2$ is not multiplicative.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$UT_2$</td>
+<td>the upper triangular algebra</td>
+</tr>
+<tr>
+<td>$J$</td>
+<td>$\begin{pmatrix}0&1\\ -1&0\end{pmatrix}$, spanning the antisymmetric line</td>
+</tr>
+<tr>
+<td>$P$</td>
+<td>the projection onto $UT_2$ along $\mathbb{R}J$</td>
+</tr>
+<tr>
+<td>$n_+$</td>
+<td>$\mathbb{R}E_{12}$, the nilpotent line</td>
+</tr>
+<tr>
+<td>$\operatorname{rad}(UT_2)$</td>
+<td>the radical of the restricted trace form, equal to $n_+$</td>
+</tr>
+<tr>
+<td>$UT_2^{\perp}$</td>
+<td>the orthogonal complement, also $\mathbb{R}E_{12}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Armand Borel, <em>Linear Algebraic Groups</em> (Springer, 1991), for parabolics, flags and their tangent spaces.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge University Press, 2013), for degenerate restrictions of the trace pairing.</li>
+<li><a href="the-two-halves-as-orthogonal-complements-at-n-2.html">The Two Halves as Orthogonal Complements at $n=2$</a>, for the orthogonal complement of the antisymmetric line.</li>
+<li><a href="the-triangular-decomposition-h-n-plus-n-minus-of-m2c.html">The Triangular Decomposition $h\oplus n_+\oplus n_-$ of $M_2(\mathbb{C})$</a>, for the triangular algebra and its nilradical.</li>
+<li><a href="the-ideals-the-centre-and-the-simplicity-of-m2c.html">The Ideals, the Centre and the Simplicity of $M_2(\mathbb{C})$</a>, for the ideals of the triangular algebra.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

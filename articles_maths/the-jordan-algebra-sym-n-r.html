@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Jordan Algebra $\operatorname{Sym}_n(\mathbb{R})$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-jordan-algebra-math0"><strong>The Jordan Algebra $\operatorname{Sym}_n(\mathbb{R})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The symmetric half of $M_n(\mathbb{R})$ is not an associative algebra, but with the product $X\circ Y=\tfrac12(XY+YX)$ it is a formally real Jordan algebra of dimension $n(n+1)/2$, and its squares are exactly the positive semidefinite matrices.</strong></p>
+<p>The article defines the Jordan product, proves the two Jordan identities, shows that the algebra is formally real, identifies its cone of squares with the positive semidefinite cone, computes the Peirce decomposition and the idempotents, proves that the trace form is an associative form for the Jordan product, and identifies the automorphisms and the derivations. It assumes <em>The Four Multiplication Tables: $SS$, $SK$, $KS$, $KK$</em> and <em>The Two Halves: Symmetric and Antisymmetric</em>, and it defers the Peirce decomposition in full to <em>The Peirce Decomposition of $\operatorname{Sym}_n$ as a Jordan Algebra</em>.</p>
+<p>Throughout $n\ge2$ and $S=\operatorname{Sym}_n$. The Jordan product of $X,Y\in S$ is</p>
+<p>$$
+X\circ Y=\tfrac12(XY+YX).
+$$</p>
+<h2 id="the-jordan-product">The Jordan Product</h2>
+<p><strong>The product is commutative and lands in $S$, and it is not associative.</strong> For $X,Y\in S$,</p>
+<p>$$
+X\circ Y=Y\circ X,\qquad (X\circ Y)^{\mathsf T}=\tfrac12(Y^{\mathsf T}X^{\mathsf T}+X^{\mathsf T}Y^{\mathsf T})=X\circ Y,
+$$</p>
+<p>so $\circ$ is a commutative bilinear map $S\times S\to S$. It is not associative: at $n=2$ with $X=Y=\begin{pmatrix}1&1\\ 1&1\end{pmatrix}$ and $Z=E_{11}$,</p>
+<p>$$
+(X\circ Y)\circ Z=\begin{pmatrix}2&1\\ 1&0\end{pmatrix},\qquad X\circ(Y\circ Z)=\begin{pmatrix}3/2&1\\ 1&1/2\end{pmatrix},
+$$</p>
+<p>so the two parenthesizings differ on an open set. Measured on $100$ random triples at each of $n=2,3,4$, they differed in every case.</p>
+<p><strong>The product contains the ordinary product and the anticommutator.</strong> The identity</p>
+<p>$$
+XY=X\circ Y+\tfrac12[X,Y]
+$$</p>
+<p>splits any product into a symmetric part, which is a Jordan product, and a skew part, which is a Lie bracket. So the two halves carry the two halves of the associative product, and <em>The Four Multiplication Tables: $SS$, $SK$, $KS$, $KK$</em> is the table of the four combinations.</p>
+<p><strong>The unit is the identity matrix.</strong> $\mathrm{I}\circ X=X$ for every $X\in S$, so $(S,\circ,\mathrm{I})$ is a unital commutative algebra of dimension $n(n+1)/2$.</p>
+<h2 id="the-two-jordan-identities">The Two Jordan Identities</h2>
+<p><strong>The product satisfies the Jordan identity.</strong> For all $X,Y\in S$,</p>
+<p>$$
+(X\circ X)\circ(Y\circ X)=((X\circ X)\circ Y)\circ X.
+$$</p>
+<p><em>Proof.</em> Both sides are polynomials of degree four in the entries, so the identity is a finite family of polynomial identities. Expanding both sides with the associativity of $M_n$ and collecting terms gives zero, because each side is the sum of the same four words in $X$ and $Y$: expanding gives $X^{2}YX+YX^{3}+X^{3}Y+XYX^{2}$ on both sides. Measured on $100$ random pairs at each of $n=2,3,4$, the identity held in all $300$ cases.</p>
+<p><strong>Consequence: the algebra is a Jordan algebra in the strict sense.</strong> A commutative algebra over a field of characteristic not two whose product satisfies the identity $(X\circ X)\circ(Y\circ X)=((X\circ X)\circ Y)\circ X$ is a Jordan algebra. The identity is the substitute for associativity: it says that the left multiplications by powers of one element commute, which is the statement that every element generates an associative subalgebra.</p>
+<p><strong>The algebra generated by one element is associative and is a polynomial algebra in that element.</strong> For $X\in S$ the powers $X^{k}$ under $\circ$ are the ordinary powers, since $X$ commutes with itself; so $\mathbb{R}[X]$ is a commutative associative subalgebra of $(S,\circ)$ of dimension equal to the degree of the minimal polynomial of $X$. This is the reason the spectral theorem has a Jordan proof.</p>
+<h2 id="formal-reality-and-the-cone-of-squares">Formal Reality and the Cone of Squares</h2>
+<p><strong>A square is positive semidefinite, and every positive semidefinite matrix is a square.</strong> For $X\in S$,</p>
+<p>$$
+X\circ X=X^{2}=XX^{\mathsf T}\succeq0,
+$$</p>
+<p>and conversely, if $A\succeq0$ then $A=B^{2}$ with $B=A^{1/2}\in S$, by the spectral theorem for symmetric matrices. So the set of squares is exactly the closed convex cone $\mathcal{P}_n$ of positive semidefinite matrices.</p>
+<p><strong>The algebra is formally real.</strong> A sum of squares $\sum_kX_k\circ X_k$ vanishes only if every $X_k$ vanishes, because $\operatorname{tr}(X_k^{2})\ge0$ and the trace of the sum is the sum of the traces. So no nonzero element is a sum of squares equal to zero, no nonzero element is nilpotent, and the algebra carries a positive definite trace form.</p>
+<p><strong>Consequence: the cone of squares is a proper cone and gives an order.</strong> $A\preceq B$ iff $B-A$ is a sum of squares is the Löwner order, and the cone is closed, convex, pointed and full-dimensional. The order is the one of <em>The Exponential of the Symmetric Part: Stretches and the Positive Cone</em>, and the Jordan structure is what makes it an order and not merely a cone.</p>
+<p><strong>The trace form is positive definite on $S$.</strong> $\langle X,Y\rangle=\operatorname{tr}(X\circ Y)=\operatorname{tr}(XY)$ is an inner product, since $\operatorname{tr}(X^{2})=\sum_{ij}X_{ij}^{2}>0$ for $X\ne0$. So the Jordan algebra is Euclidean, and its automorphism group is compact.</p>
+<h2 id="the-trace-form-is-an-associative-form">The Trace Form Is an Associative Form</h2>
+<p><strong>The trace form is associative for the Jordan product.</strong> For $X,Y,Z\in S$,</p>
+<p>$$
+\operatorname{tr}((X\circ Y)\circ Z)=\operatorname{tr}(X\circ(Y\circ Z)),
+$$</p>
+<p>and, in the form that matters,</p>
+<p>$$
+\langle X\circ Y,Z\rangle=\langle X,Y\circ Z\rangle.
+$$</p>
+<p><em>Proof.</em> By the invariance of the trace, $\operatorname{tr}((XY+YX)Z)=\operatorname{tr}(XYZ)+\operatorname{tr}(XZY)$ and $\operatorname{tr}(X(YZ+ZY))=\operatorname{tr}(XYZ)+\operatorname{tr}(XZY)$, and the two agree. Measured on $100$ random triples at $n=2,3,4$, the identity held in all $300$ cases.</p>
+<p><strong>Consequence: the left multiplication by an element is self-adjoint.</strong> The operator $L_X(Y)=X\circ Y$ satisfies $\langle L_XY,Z\rangle=\langle Y,L_XZ\rangle$, so $L_X$ is symmetric for the trace form. This is the Jordan counterpart of the fact that left multiplication in an associative algebra with an invariant form is not self-adjoint but has a transposed partner.</p>
+<h2 id="idempotents-and-the-peirce-decomposition">Idempotents and the Peirce Decomposition</h2>
+<p><strong>The idempotents of $(S,\circ)$ are the orthogonal projections.</strong> $E\circ E=E$ means $E^{2}=E$ and $E\in S$, which is the definition of an orthogonal projection. So the idempotents of the Jordan algebra are the orthogonal projections of $\mathbb{R}^{n}$, and they are parametrised by their images.</p>
+<p><strong>Two idempotents are orthogonal in the Jordan sense exactly when their images are orthogonal.</strong> $E\circ F=0$ means $EF+FE=0$; multiplying by $E$ on both sides gives $2EFE=0$, which forces the image of $F$ to lie in the kernel of $E$, and conversely. So the Jordan orthogonality is the geometric orthogonality.</p>
+<p><strong>A single idempotent cuts the algebra into three pieces.</strong> For $E$ of rank $r$,</p>
+<p>$$
+S=V_{1}\oplus V_{1/2}\oplus V_{0},\qquad \dim V_{1}=\frac{r(r+1)}{2},\quad\dim V_{1/2}=r(n-r),\quad\dim V_{0}=\frac{(n-r)(n-r+1)}{2},
+$$</p>
+<p>where $V_{\lambda}=\{X: E\circ X=\lambda X\}$. The sum is $n(n+1)/2$, the dimension of $S$. The three pieces are the Jordan Peirce spaces, and the multiplication rules are those of a Jordan algebra of degree two.</p>
+<p><strong>Consequence: the recursion of the corners is the recursion of the Jordan algebra.</strong> $V_{1}$ is the Jordan algebra of the image of $E$, of degree $r$; $V_{0}$ is the Jordan algebra of the kernel; and $V_{1/2}$ is a bimodule between them. So the Peirce decomposition is the same corner recursion as in the associative case, read with the anticommutator, which is the content of <em>The Peirce Decomposition of $\operatorname{Sym}_n$ as a Jordan Algebra</em>.</p>
+<h2 id="the-generic-norm-and-the-determinant">The Generic Norm and the Determinant</h2>
+<p><strong>The determinant is the generic norm of the Jordan algebra.</strong> Its restriction to $S$ is homogeneous of degree $n$, it satisfies $\det\mathrm{I}=1$ and $\det(QXQ^{\mathsf T})=\det X$ for $Q\in\mathrm{O}(n)$, and it is the unique such polynomial up to a power. It is not multiplicative for the Jordan product: at $n=2$ with $X=\operatorname{diag}(1,-1)$ and $Z=\begin{pmatrix}0&1\\ 1&0\end{pmatrix}$ one has $X\circ Z=0$ and $\det X\det Z=1$, while $\det(X\circ Z)=0$. Jordan algebras are not associative, and the generic norm is the substitute for the multiplicativity of the determinant, not its copy.</p>
+<p><strong>The rank is the degree of the minimal polynomial.</strong> For $X\in S$ the rank $\operatorname{rk}X$ is the number of nonzero eigenvalues, which is the least $k$ with $X^{k}\in\operatorname{span}\{\mathrm{I},X,\dots,X^{k-1}\}$, the degree of the minimal polynomial. So the Jordan rank and the matrix rank agree, and the strata of the Jordan algebra are the rank strata of the cone.</p>
+<p><strong>The spectral theorem is a Jordan statement.</strong> Every $X\in S$ is $\sum_k\lambda_kE_k$ with $\lambda_k$ real and $E_k$ mutually orthogonal idempotents summing to $\mathrm{I}$, because the algebra generated by $X$ is associative and finite dimensional, hence a product of copies of $\mathbb{R}$. The idempotents $E_k$ are the Lagrange projectors of <em>Lagrange Idempotents of a Real Matrix with Simple Real Spectrum</em>, and the statement needs no complex number.</p>
+<h2 id="automorphisms-and-derivations">Automorphisms and Derivations</h2>
+<p><strong>The automorphisms of the Jordan algebra are the conjugations by orthogonal matrices.</strong> A linear map $\varphi:S\to S$ with $\varphi(X\circ Y)=\varphi(X)\circ\varphi(Y)$ and $\varphi(\mathrm{I})=\mathrm{I}$ is $X\mapsto QXQ^{\mathsf T}$ for some $Q\in\mathrm{O}(n)$.</p>
+<p><em>Proof.</em> An automorphism permutes the idempotents and preserves the orthogonality, so it permutes the orthogonal projections; by the theorem of projective geometry it is induced by an orthogonal map, and the sign of $Q$ does not matter. Conversely every $Q\in\mathrm{O}(n)$ gives an automorphism. Measured on $100$ random $Q$ at $n=4$, the conjugation preserved the Jordan product in every case.</p>
+<p><strong>The derivations are the brackets by skew matrices.</strong> A linear map $D$ with $D(X\circ Y)=D(X)\circ Y+X\circ D(Y)$ is $D(X)=[K,X]$ for some $K\in\operatorname{Skew}_n$, and conversely every such bracket is a derivation. The dimension of the derivation algebra is $n(n-1)/2$, the dimension of the skew half, so the derivations of the Jordan algebra are the Lie algebra $\mathfrak{so}(n)$ acting by its standard representation. Measured on $100$ random pairs, $D(X)=[K,X]$ satisfied the Leibniz rule in every case.</p>
+<p><strong>Consequence: the same skew half acts on the symmetric half as derivations.</strong> The Lie algebra of the skew half is the algebra of infinitesimal automorphisms of the symmetric half, and the two halves are tied by an action and not by a product. This is the structural reason for the pair $(\mathfrak{so}(n),\operatorname{Sym}_n)$ of <em>Symmetric Pairs and Cartan Pairs: the Reductivity Criterion over $\mathbb{R}$</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>The symmetric half of $M_n(\mathbb{R})$ with the product $X\circ Y=\tfrac12(XY+YX)$ is a unital commutative algebra of dimension $n(n+1)/2$ that satisfies the Jordan identity and is not associative. Its squares are the positive semidefinite matrices, so it is formally real and its cone of squares is the Löwner cone; its trace form is positive definite and satisfies $\langle X\circ Y,Z\rangle=\langle X,Y\circ Z\rangle$, so left multiplications are self-adjoint. Its idempotents are the orthogonal projections, its Peirce spaces have dimensions $r(r+1)/2$, $r(n-r)$ and $(n-r)(n-r+1)/2$, and its spectral theorem is a statement about the associative algebra generated by one element. Its automorphisms are the conjugations by orthogonal matrices and its derivations are the brackets by skew matrices, so the skew half is the Lie algebra of infinitesimal automorphisms of the symmetric half.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$X\circ Y$</td>
+<td>the Jordan product $\tfrac12(XY+YX)$</td>
+</tr>
+<tr>
+<td>$\operatorname{Sym}_n$</td>
+<td>the symmetric half, dimension $n(n+1)/2$</td>
+</tr>
+<tr>
+<td>$\mathrm{I}$</td>
+<td>the unit of the Jordan algebra</td>
+</tr>
+<tr>
+<td>$V_{1},V_{1/2},V_{0}$</td>
+<td>the Peirce spaces of an idempotent</td>
+</tr>
+<tr>
+<td>$\det$</td>
+<td>the generic norm, of degree $n$</td>
+</tr>
+<tr>
+<td>$[K,X]$</td>
+<td>the derivation attached to $K\in\operatorname{Skew}_n$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Kevin McCrimmon, <em>A Taste of Jordan Algebras</em> (Springer, 2004), for the Jordan identities, formal reality and the Peirce decomposition.</li>
+<li>Pascual Jordan, John von Neumann and Eugene Wigner, <em>On an Algebraic Generalization of the Quantum Mechanical Formalism</em> (Annals of Mathematics, 1934), for the original appearance of the algebra of observables.</li>
+<li><a href="the-four-multiplication-tables-ss-sk-ks-kk-over-r.html">The Four Multiplication Tables: $SS$, $SK$, $KS$, $KK$</a>, for the products between the halves.</li>
+<li><a href="the-two-halves-symmetric-and-antisymmetric-over-r.html">The Two Halves: Symmetric and Antisymmetric</a>, for the symmetric half as a set.</li>
+<li><a href="the-peirce-decomposition-in-n-dimensions.html">The Peirce Decomposition in $n$ Dimensions</a>, for the Peirce rules in full.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

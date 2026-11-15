@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$UT_n$ as a Linear Model of $\operatorname{Sym}_n$: Same Space, Wrong Product — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="math0-as-a-linear-model-of-math1-same-space-wrong-product"><strong>$UT_n$ as a Linear Model of $\operatorname{Sym}_n$: Same Space, Wrong Product</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The triangular algebra and the symmetric half have the same dimension $n(n+1)/2$ and are linearly isomorphic by symmetrisation, but the isomorphism carries the associative product of $UT_n$ to something that is not the Jordan product of $\operatorname{Sym}_n$, so the two algebras are the same vector space with two incompatible products.</strong></p>
+<p>The article proves the isomorphism $U\mapsto\tfrac12(U+U^{\mathsf T})$, exhibits the failure of multiplicativity with explicit numbers, compares the two trace forms and their radicals, shows that the projection onto the symmetric half is not a Peirce projection $A\mapsto EAE$, and reads the difference through the nilpotents and the cone. It assumes <em>$UT_n$ as the Complement of the Antisymmetric Part (Transpose Case)</em> for the two spaces and <em>The Jordan Algebra $\operatorname{Sym}_n$</em> for the Jordan structure. It defers the Peirce theory to <em>The Peirce Decomposition and the Two Halves</em> and the cone to <em>The Cone of Positive Semidefinite Matrices</em>.</p>
+<h2 id="two-algebras-on-one-dimension">Two Algebras on One Dimension</h2>
+<p><strong>The two spaces have the same dimension and are both subspaces of $M_n(\mathbb{R})$.</strong> A symmetric matrix is determined by its entries on and above the diagonal, and an upper triangular matrix by the same number of entries, so</p>
+<p>$$
+\dim\operatorname{Sym}_n=\dim UT_n=\frac{n(n+1)}{2}=3,6,10,15\quad(n=2,3,4,5).
+$$</p>
+<p>The two spaces are different subspaces of the same $n^{2}$-dimensional space: their intersection is the diagonal, of dimension $n$, since a matrix that is both symmetric and upper triangular is diagonal.</p>
+<p><strong>The products are different in kind.</strong> $\operatorname{Sym}_n$ carries the Jordan product $X\circ Y=\tfrac12(XY+YX)$, which is commutative and not closed under the ordinary product; $UT_n$ carries the ordinary product, which is associative and not commutative. So the two algebras have the same carrier dimension and no product in common, and the question of the article is what a linear identification between them can and cannot preserve.</p>
+<p><strong>The spectra are as different as the products.</strong> Every element of $\operatorname{Sym}_n$ has real spectrum and is diagonalisable by an orthogonal change of basis; an element of $UT_n$ has spectrum equal to its diagonal, and a strictly upper triangular element has spectrum $\{0\}$ and is nilpotent. So the two spaces have the same dimension and opposite spectral behaviour, and the difference is visible in every element rather than only in the algebra laws.</p>
+<h2 id="the-linear-isomorphism-by-symmetrisation">The Linear Isomorphism by Symmetrisation</h2>
+<p><strong>The symmetrisation map is a linear isomorphism.</strong> Put</p>
+<p>$$
+S(U)=\tfrac12\big(U+U^{\mathsf T}\big).
+$$</p>
+<p>For $U\in UT_n$ the matrix $S(U)$ is symmetric, and $S$ is injective on $UT_n$: if $S(U)=0$ then $U$ is upper triangular and antisymmetric, hence zero by the computation of <em>$UT_n$ as the Complement of the Antisymmetric Part (Transpose Case)</em>. Since the two spaces have the same dimension, $S$ is an isomorphism, and its inverse on the units is</p>
+<p>$$
+S^{-1}(E_{ii})=E_{ii},\qquad S^{-1}(E_{ij}+E_{ji})=E_{ij}\quad(i<j).
+$$</p>
+<p>The rank of $S$ on $UT_n$ was computed as $3,6,15,36$ at $n=2,3,5,8$, equal to $\dim\operatorname{Sym}_n$ in each case.</p>
+<p><strong>The inverse is the projection onto the upper triangle.</strong> The map $U\mapsto S(U)$ forgets nothing on $UT_n$, and its inverse takes a symmetric matrix to its upper triangular part, with the diagonal kept whole and each off-diagonal pair halved and sent to the upper entry. So the linear identification between the two spaces is the identity on the diagonal and the choice of one of the two off-diagonal entries.</p>
+<p><strong>A linear isomorphism of this kind is not canonical and cannot be, because the two spaces sit differently inside $M_n$.</strong> The symmetric half is the fixed space of an involution and is defined by a symmetry of the whole algebra; the triangular algebra is defined by a flag and by a choice of basis. The isomorphism $S$ uses both structures, and that is why it preserves nothing but the dimension.</p>
+<h2 id="the-products-do-not-agree">The Products Do Not Agree</h2>
+<p><strong>Symmetrisation does not carry the product to the Jordan product.</strong> For $U,V\in UT_n$,</p>
+<p>$$
+S(UV)\neq S(U)\circ S(V)\qquad\text{in general,}
+$$</p>
+<p>and the failure is not a small perturbation: at $n=2,3,4$ the largest entry of the difference $S(UV)-S(U)\circ S(V)$ is $0.84,0.37,1.37$ on random unit-triangular inputs, so the two products disagree at the size of the inputs themselves.</p>
+<p><strong>The reason is that the symmetrisation of a product sees the antisymmetric parts.</strong> Writing $U=S_1+K_1$ and $V=S_2+K_2$ with $S_i$ symmetric and $K_i$ antisymmetric,</p>
+<p>$$
+S(UV)=\tfrac12\big(UV+(UV)^{\mathsf T}\big)=S_1\circ S_2+K_1\circ K_2+\tfrac12[S_1,K_2]+\tfrac12[K_1,S_2],
+$$</p>
+<p>which is the symmetric part of a product from <em>The Symmetric and Antisymmetric Parts of a Product</em>. The Jordan product $S(U)\circ S(V)=S_1\circ S_2$ keeps only the first term, so the disagreement is exactly the three remaining terms, and it vanishes exactly when $U$ and $V$ are both symmetric, that is when the triangular matrices are diagonal.</p>
+<p><strong>So the isomorphism is not an algebra isomorphism in either direction.</strong> It does not carry the associative product to the Jordan product, and it does not carry the Jordan product to the associative product either, since $\operatorname{Sym}_n$ is not closed under the latter. The two algebras are therefore linearly isomorphic and algebraically unrelated, and the article's title is the exact statement: same space, wrong product.</p>
+<p><strong>What the isomorphism does preserve is the diagonal.</strong> The diagonal is the intersection of the two spaces and the fixed set of both the transpose and the flag, so $S$ is the identity there. Every statement that involves only the diagonal, such as the trace or the determinant of a diagonal element, transfers; every statement that involves an off-diagonal entry does not.</p>
+<h2 id="the-trace-forms-and-the-radicals">The Trace Forms and the Radicals</h2>
+<p><strong>The trace form is positive definite on one space and degenerate on the other.</strong> On $\operatorname{Sym}_n$,</p>
+<p>$$
+\operatorname{tr}(XY)=\sum_{i,j}X_{ij}Y_{ij}
+$$</p>
+<p>is the Euclidean form, of rank $n(n+1)/2$ and radical zero. On $UT_n$ the same formula gives a form of rank $n$ and radical $n_+$ of dimension $n(n-1)/2$, by the computation of <em>The Antisymmetric Part inside $UT_n$: the Radical as the Commutator</em>.</p>
+<p><strong>The isomorphism $S$ does not preserve the form.</strong> For $U,V\in UT_n$,</p>
+<p>$$
+\operatorname{tr}\big(S(U)S(V)\big)\neq\operatorname{tr}(UV)
+$$</p>
+<p>in general, since the right side sees only the diagonal pairs and the left side sees all the off-diagonal entries as well. So the linear isomorphism carries a form with a large radical to a form with none, and it is therefore not an isometry for any scalar multiple of the two forms.</p>
+<p><strong>The two radicals measure the two failures.</strong> The radical $n_+$ of the trace form on $UT_n$ is the set of elements invisible to the form, and it is also the commutator; the radical zero on $\operatorname{Sym}_n$ is the statement that the form is an inner product and that the cone of squares has an interior. So the degeneracy of the form on the triangular algebra is the same phenomenon as the absence of a cone there.</p>
+<h2 id="not-a-peirce-corner">Not a Peirce Corner</h2>
+<p><strong>The projection onto the symmetric half is defined by the involution, not by a multiplication.</strong> The map</p>
+<p>$$
+\pi_{+}(A)=\tfrac12\big(A+A^{\mathsf T}\big)
+$$</p>
+<p>is the spectral projection of the involution $A\mapsto A^{\mathsf T}$ for the eigenvalue $+1$. A Peirce projection of the algebra has the form $A\mapsto EAE$ for an idempotent $E$, and its image is the corner $EM_nE$, which is a subalgebra of dimension $r^{2}$ with unit $E$.</p>
+<p><strong>The two kinds of projection are different, and the dimensions decide it in almost every case.</strong> A Peirce corner has dimension $r^{2}$, a perfect square; the symmetric half has dimension $n(n+1)/2$, which is a perfect square only for $n=1$ and $n=8$, where $8\cdot9/2=36=6^{2}$. So at $n=2,3,4,5,6$ the dimension alone excludes $\operatorname{Sym}_n$ from being a Peirce corner, and at $n=8$ the algebra structure excludes it: a corner is closed under the associative product, and $\operatorname{Sym}_8$ is not.</p>
+<p><strong>The triangular algebra is not a Peirce corner either.</strong> Its dimension is the same $n(n+1)/2$, so the dimension argument excludes $UT_n$ at the same values of $n$; and at every $n$ the structure excludes it, since a corner contains the idempotent $E$ as its unit and $UT_n$ has unit $\mathrm{I}$, whose Peirce corner is the whole algebra. So the split into halves is not a Peirce decomposition of the algebra, and the two subspaces that look alike are alike only in dimension.</p>
+<p><strong>The Peirce decomposition of $\operatorname{Sym}_n$ is a decomposition of the half, not of the algebra.</strong> The three Peirce spaces of an idempotent of $\operatorname{Sym}_n$ have dimensions $r(r+1)/2$, $r(n-r)$ and $(n-r)(n-r+1)/2$, and they sum to $n(n+1)/2$; the Peirce decomposition of the algebra has four parts and sums to $n^{2}$. The two decompositions are different objects, and the article's comparison is the smallest case of that difference.</p>
+<h2 id="the-case-math98">The Case $n=2$</h2>
+<p><strong>At $n=2$ the isomorphism is an explicit map between two three-dimensional spaces.</strong> With the basis $E_{11},E_{12},E_{22}$ of $UT_2$ and the basis $\mathrm{I},\sigma_1,\sigma_3$ of $\operatorname{Sym}_2$,</p>
+<p>$$
+S(E_{11})=\tfrac12(\mathrm{I}+\sigma_3),\qquad S(E_{22})=\tfrac12(\mathrm{I}-\sigma_3),\qquad S(E_{12})=\tfrac12\sigma_1,
+$$</p>
+<p>so the isomorphism is the identity on the diagonal and halves the off-diagonal unit. The three images are a basis, and the computation confirms that the matrix of $S$ is invertible.</p>
+<p><strong>The products are compared on one example.</strong> Take $U=E_{12}$ and $V=E_{12}$, so that $UV=0$. Then $S(UV)=0$, while $S(U)\circ S(V)=\tfrac14\sigma_1\circ\sigma_1=\tfrac14\mathrm{I}\neq0$. So the product of the images is nonzero although the image of the product is zero, and the failure is a factor of a quarter of the identity.</p>
+<p><strong>The biquaternion reading names the two structures.</strong> The idempotents $\tilde\Pi_\pm=\tfrac12(e_t\pm\tilde{Ζ})$ are a basis of the diagonal of $\operatorname{Sym}_2$, and the corner $\mathbb{B}_{+-}$ is the off-diagonal line, so $S$ identifies the corner with the off-diagonal symmetric line. The two companion nilpotents $\vec\Upsilon_{+-}$ and $\vec\Upsilon_{-+}$ are the two directions of that corner, and their product is the idempotent $\tilde\Pi_+$: an associative product with no Jordan counterpart, which is exactly the failure that the article measures.</p>
+<h2 id="summary">Summary</h2>
+<p>The triangular algebra and the symmetric half have the same dimension $n(n+1)/2$ and are linearly isomorphic by symmetrisation $U\mapsto\tfrac12(U+U^{\mathsf T})$, with inverse the upper triangular part. The isomorphism is not an algebra isomorphism: $S(UV)$ differs from $S(U)\circ S(V)$ by the three mixed terms of the product formula, and it is the identity only on the diagonal. The trace form is positive definite on $\operatorname{Sym}_n$ and degenerate with radical $n_+$ on $UT_n$, and the isomorphism preserves neither form. The projection onto the symmetric half is the spectral projection of the transpose, not a Peirce projection $A\mapsto EAE$, and the dimension $n(n+1)/2$ is a perfect square only at $n=1,8$, so the two spaces are not corners of the algebra.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$S(U)=\tfrac12(U+U^{\mathsf T})$</td>
+<td>the symmetrisation, a linear isomorphism $UT_n\to\operatorname{Sym}_n$</td>
+</tr>
+<tr>
+<td>$n(n+1)/2$</td>
+<td>the common dimension of the two spaces</td>
+</tr>
+<tr>
+<td>$X\circ Y=\tfrac12(XY+YX)$</td>
+<td>the Jordan product of the symmetric half</td>
+</tr>
+<tr>
+<td>$n_+$</td>
+<td>the radical of the trace form on $UT_n$</td>
+</tr>
+<tr>
+<td>$\pi_{+}=\tfrac12(1+T^{\mathsf T})$</td>
+<td>the spectral projection of the transpose</td>
+</tr>
+<tr>
+<td>$EM_nE$</td>
+<td>a Peirce corner, of dimension $r^{2}$</td>
+</tr>
+<tr>
+<td>$8\cdot9/2=36=6^{2}$</td>
+<td>the only case beyond $n=1$ where the dimension is a square</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for Peirce corners and their dimensions.</li>
+<li>Nathan Jacobson, <em>Structure and Representations of Jordan Algebras</em> (AMS, 1968), for the Jordan product and the cone of squares.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for the upper triangular part and the QR decomposition of a matrix.</li>
+<li><a href="utn-as-the-complement-of-the-antisymmetric-part-transpose-case.html">$UT_n$ as the Complement of the Antisymmetric Part (Transpose Case)</a>, for the two spaces as complements.</li>
+<li><a href="the-jordan-algebra-sym-n.html">The Jordan Algebra $\operatorname{Sym}_n$</a>, for the product that the isomorphism fails to carry.</li>
+<li><a href="the-antisymmetric-part-inside-utn-the-radical-as-the-commutator.html">The Antisymmetric Part inside $UT_n$: the Radical as the Commutator</a>, for the radical of the trace form on the triangular algebra.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

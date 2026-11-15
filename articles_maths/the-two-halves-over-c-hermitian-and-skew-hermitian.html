@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-two-halves-over-math0-hermitian-and-skew-hermitian"><strong>The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>Over the complex field the conjugate transpose cuts the algebra into the Hermitian matrices and the skew-Hermitian ones, and the cut is even: two real subspaces of the same real dimension $n^{2}$, unlike the unequal halves of the transpose over $\mathbb{R}$.</strong></p>
+<p>The article proves the direct sum, computes the dimensions, identifies the skew-Hermitian half with the Lie algebra $\mathfrak{u}(n)$ and with $i$ times the Hermitian half, and settles the orthogonality question: the two halves are orthogonal for the real part of the trace form and not for the form itself. It computes the signature of the trace bilinear form on each half, which is $(n^{2},0)$ and $(0,n^{2})$, and it reads the exponentials, which are the unitary group and the positive definite Hermitian matrices. It assumes <em>The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric</em> for the real case and <em>The Involutions over $\mathbb{R}$ and over $\mathbb{C}$</em> for the classification of the conjugate transpose among the involutions. It defers the spectral theorems to <em>The Spectral Theorem: the Hermitian Case</em> and <em>The Spectral Theorem: the Skew-Hermitian Case and the Reality of the Spectrum</em>, and the polar decomposition to <em>The Polar Decomposition from the Two Halves</em>.</p>
+<h2 id="the-split">The Split</h2>
+<p><strong>Every complex matrix is Hermitian plus skew-Hermitian, uniquely.</strong> With $A^{*}=\bar A^{\mathsf T}$,</p>
+<p>$$
+A=\underbrace{\tfrac12(A+A^{*})}_{H}+\underbrace{\tfrac12(A-A^{*})}_{K},\qquad H^{*}=H,\quad K^{*}=-K .
+$$</p>
+<p>The two summands are real, the decomposition is the eigenspace decomposition of the conjugate transpose, and the half is determined by its diagonal: the diagonal entries of $H$ are real and those of $K$ are purely imaginary. The decomposition is additive and real-linear, and it is not complex-linear, since $iA$ has halves $iH$ and $iK$ with the roles of Hermitian and skew-Hermitian exchanged.</p>
+<p><strong>The two halves have real dimension $n^{2}$ each.</strong> A Hermitian matrix is determined by $n$ real diagonal entries and $\binom{n}{2}$ complex entries above the diagonal, so</p>
+<p>$$
+\dim_{\mathbb{R}}\operatorname{Herm}_n=n+2\binom{n}{2}=n^{2},\qquad \dim_{\mathbb{R}}\operatorname{SkewHerm}_n=n^{2},
+$$</p>
+<p>and the two dimensions add to the real dimension $2n^{2}$ of the algebra. The equality of the dimensions is the structural difference from the real case, where the halves have dimensions $n(n+1)/2$ and $n(n-1)/2$.</p>
+<p><strong>The halves are exchanged by multiplication by $i$.</strong> For Hermitian $H$ the product $iH$ is skew-Hermitian, since $(iH)^{*}=-iH^{*}=-iH$. So</p>
+<p>$$
+\operatorname{SkewHerm}_n=i\,\operatorname{Herm}_n ,
+$$</p>
+<p>an isomorphism of real vector spaces. The two halves are therefore the same real space up to the complex structure, and no invariant of the pair can distinguish them except the ones that see $i$.</p>
+<h2 id="the-hermitian-half">The Hermitian Half</h2>
+<p><strong>The Hermitian half is a real Jordan algebra, and its spectrum is real.</strong> For Hermitian $H$ the anticommutator $\tfrac12(HK+KH)$ of two Hermitian matrices is Hermitian, and the Jordan identity holds as in the real case, so $\operatorname{Herm}_n$ is a Jordan algebra over $\mathbb{R}$, of dimension $n^{2}$. Its elements have real eigenvalues: from $Hv=\lambda v$ and $H=H^{*}$,</p>
+<p>$$
+\lambda\|v\|^{2}=v^{*}Hv=\overline{v^{*}Hv}=\bar\lambda\|v\|^{2},
+$$</p>
+<p>so $\lambda=\bar\lambda$. The spectral theorem gives the sharper statement: $H=U\Lambda U^{*}$ with $U$ unitary and $\Lambda$ real diagonal.</p>
+<p><strong>The positive definite elements form an open cone.</strong> The set $\{H\succ0\}$ is open in $\operatorname{Herm}_n$, convex, and closed under the product only when the factors commute. The cone is the image of the Hermitian half under the exponential, and its boundary is the set of singular positive semidefinite matrices; the whole geometry is in <em>The Positive Cone and Its Boundary</em> and <em>The Cone of Positive Semidefinite Matrices</em>.</p>
+<p><strong>The Hermitian half is the fixed set of the conjugate transpose, and its elements are the observables of the corpus.</strong> The name <em>observable</em> is the physical reading of a Hermitian matrix: real spectrum, orthonormal eigenbasis, and a real expectation value $\operatorname{tr}(H\rho)$ against a positive semidefinite matrix of trace one. The mathematics used below needs only the first two.</p>
+<h2 id="the-skew-hermitian-half">The Skew-Hermitian Half</h2>
+<p><strong>The skew-Hermitian half is the Lie algebra $\mathfrak{u}(n)$.</strong> For skew-Hermitian $K,L$,</p>
+<p>$$
+[K,L]^{*}=(KL-LK)^{*}=L^{*}K^{*}-K^{*}L^{*}=LK-KL=-[K,L],
+$$</p>
+<p>so the commutator stays in the half, and the Jacobi identity holds automatically. The dimension is $n^{2}$, and the traceless part is the Lie algebra $\mathfrak{su}(n)$, of dimension $n^{2}-1$, which is the Lie algebra of $SU(n)$.</p>
+<p><strong>A skew-Hermitian matrix has a purely imaginary spectrum.</strong> If $Kv=\lambda v$ then $\lambda\|v\|^{2}=v^{*}Kv$ and taking conjugates gives $\bar\lambda\|v\|^{2}=v^{*}K^{*}v=-v^{*}Kv=-\lambda\|v\|^{2}$, so $\lambda=-\bar\lambda$. The eigenvalues are therefore purely imaginary, and the matrix is unitarily diagonalisable with imaginary diagonal: $K=Ui\Theta U^{*}$ with $\Theta$ real diagonal.</p>
+<p><strong>The half contains no nonzero real multiple of the identity, and that is what makes it a Lie algebra and not a Jordan algebra.</strong> The identity is Hermitian and not skew-Hermitian, so the half has no unit. The anticommutator of two skew-Hermitian matrices is Hermitian, so the half is not closed under the Jordan product; the commutator is the product it carries.</p>
+<h2 id="the-two-forms">The Two Forms</h2>
+<p><strong>The two halves are orthogonal for the real part of the trace form and not for the form itself.</strong> With $\langle A,B\rangle=\operatorname{tr}(A^{*}B)$ and $H$ Hermitian, $K$ skew-Hermitian,</p>
+<p>$$
+\overline{\operatorname{tr}(H^{*}K)}=\operatorname{tr}(K^{*}H)=-\operatorname{tr}(KH)=-\operatorname{tr}(HK),
+$$</p>
+<p>so $\operatorname{tr}(HK)$ is purely imaginary. Its real part vanishes identically, which is all that orthogonality of two real subspaces needs for the Euclidean form, and its imaginary part generally does not, so the Hermitian form itself does not vanish on the pair. The computation at $n=2,3,4$ gives a real part of zero to machine precision and an imaginary part of order one.</p>
+<p><strong>The trace bilinear form has signature $(n^{2},n^{2})$, with opposite signs on the halves.</strong> For Hermitian $H$ and skew-Hermitian $K$,</p>
+<p>$$
+\operatorname{tr}(H^{2})=\operatorname{tr}(H^{*}H)>0,\qquad \operatorname{tr}(K^{2})=-\operatorname{tr}(K^{*}K)<0 ,
+$$</p>
+<p>so the bilinear form $B(A,B)=\operatorname{tr}(AB)$ is positive definite on the Hermitian half of dimension $n^{2}$ and negative definite on the skew-Hermitian half of the same dimension. The total signature is $(n^{2},n^{2})$, a split form, against the Euclidean form $\operatorname{tr}(A^{*}B)$ which is positive definite on the whole algebra.</p>
+<p><strong>The two forms must not be confused.</strong> The form $\operatorname{tr}(A^{*}B)$ is the Hilbert–Schmidt form, positive definite and used for the metric; the form $\operatorname{tr}(AB)$ is the trace bilinear form, indefinite and used for the adjoints and for the Killing form. On the Hermitian half the first restricts to the second, and on the skew-Hermitian half the two differ by a sign. The article <em>The Hilbert–Schmidt Form</em> keeps the two apart.</p>
+<h2 id="the-exponential-of-each-half">The Exponential of Each Half</h2>
+<p><strong>The exponential of a skew-Hermitian matrix is unitary.</strong> If $K^{*}=-K$ then</p>
+<p>$$
+(e^{K})^{*}e^{K}=e^{K^{*}}e^{K}=e^{-K}e^{K}=\mathrm{I},\qquad |\det e^{K}|=e^{\operatorname{Re}\operatorname{tr}K}=1 ,
+$$</p>
+<p>so $e^{K}\in\mathrm{U}(n)$, and $e^{K}\in\mathrm{SU}(n)$ when $\operatorname{tr}K=0$. Both checks were verified at $n=2,3,4$ by summing the series. The map is surjective onto $\mathrm{U}(n)$, since a unitary matrix is unitarily diagonalisable with eigenvalues on the circle.</p>
+<p><strong>The exponential of $i$ times a Hermitian matrix is unitary, and the exponential of a Hermitian matrix is positive definite.</strong> For Hermitian $H$,</p>
+<p>$$
+e^{iH}\in\mathrm{U}(n),\qquad e^{H}\ \text{Hermitian and positive definite},
+$$</p>
+<p>the second because the eigenvalues of $e^{H}$ are $e^{\lambda_k}>0$ with $\lambda_k$ real. Conversely every positive definite Hermitian matrix is $e^{H}$ for a unique Hermitian $H=\log P$, so $\exp$ is a bijection from the Hermitian half onto the positive cone.</p>
+<p><strong>The two exponentials generate the group and the cone.</strong> The polar decomposition of an invertible element is $A=UP$ with $U$ unitary and $P$ positive definite, and the two factors are the exponentials of the two halves of the polar data. The decomposition is proved in <em>The Polar Decomposition from the Two Halves</em>; the version for the group $GL_n(\mathbb{C})$ is the Cartan decomposition of <em>The Cartan Decomposition of $\mathrm{GL}_n(\mathbb{C})$</em>.</p>
+<h2 id="the-case-math95">The Case $n=2$</h2>
+<p><strong>At $n=2$ the split is $8=4+4$ in real dimensions.</strong> The Hermitian half is spanned over $\mathbb{R}$ by $\mathrm{I},\sigma_1,\sigma_2,\sigma_3$, and the skew-Hermitian half is $i$ times it, spanned by $i\mathrm{I},i\sigma_1,i\sigma_2,i\sigma_3$. This is the cleanest instance of the equal split, and it is the reason the biquaternion algebra is read through the Hermitian and skew-Hermitian halves rather than through the symmetric and antisymmetric ones.</p>
+<p><strong>The two halves are the two sectors of the biquaternion reading.</strong> A Hermitian element of $M_2(\mathbb{C})$ corresponds to a biquaternion whose four coordinates satisfy a reality condition, and a skew-Hermitian element to one with $i$ times that condition. The Peirce idempotents $\tilde\Pi_\pm$ are Hermitian, so they lie in the first half; the companion nilpotents $\vec\Upsilon_{+-}$ and $\vec\Upsilon_{-+}$ are neither Hermitian nor skew-Hermitian, since they satisfy $\vec\Upsilon_{-+}=\vec\Upsilon_{+-}^{*}$ and their squares vanish. The mixed corners of the Peirce decomposition therefore leave both halves, which is the algebraic reason the Peirce frame is not a Hermitian frame.</p>
+<h2 id="summary">Summary</h2>
+<p>The conjugate transpose splits $M_n(\mathbb{C})$ into the Hermitian half and the skew-Hermitian half, two real subspaces of dimension $n^{2}$ each, exchanged by multiplication by $i$. The Hermitian half is a real Jordan algebra with real spectrum and unitary diagonalisation; the skew-Hermitian half is $\mathfrak{u}(n)$, of dimension $n^{2}$ with traceless part $\mathfrak{su}(n)$ of dimension $n^{2}-1$, and its elements have purely imaginary spectrum. The halves are orthogonal for the real part of the trace form and not for the form, and the trace bilinear form has signature $(n^{2},0)$ on the first and $(0,n^{2})$ on the second, totalling the split signature $(n^{2},n^{2})$. The exponential of the skew-Hermitian half is the unitary group and the exponential of the Hermitian half is the positive cone.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{Herm}_n$</td>
+<td>the Hermitian half, of real dimension $n^{2}$</td>
+</tr>
+<tr>
+<td>$\operatorname{SkewHerm}_n=i\operatorname{Herm}_n$</td>
+<td>the skew-Hermitian half, of real dimension $n^{2}$</td>
+</tr>
+<tr>
+<td>$A^{*}=\bar A^{\mathsf T}$</td>
+<td>the conjugate transpose</td>
+</tr>
+<tr>
+<td>$\mathfrak{u}(n)$</td>
+<td>the skew-Hermitian half as a Lie algebra, of dimension $n^{2}$</td>
+</tr>
+<tr>
+<td>$\mathfrak{su}(n)$</td>
+<td>its traceless part, of dimension $n^{2}-1$</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}(A^{*}B)$</td>
+<td>the Hilbert–Schmidt form, positive definite</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}(AB)$</td>
+<td>the trace bilinear form, of signature $(n^{2},n^{2})$</td>
+</tr>
+<tr>
+<td>$\mathrm{I},\sigma_1,\sigma_2,\sigma_3$</td>
+<td>the Pauli list, a real basis of $\operatorname{Herm}_2$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for Hermitian and skew-Hermitian matrices, their spectra and the trace forms.</li>
+<li>Brian C. Hall, <em>Lie Groups, Lie Algebras, and Representations</em> (Springer, 2015), for $\mathfrak{u}(n)$, $\mathfrak{su}(n)$ and the exponential map.</li>
+<li>Rajendra Bhatia, <em>Positive Definite Matrices</em> (Princeton, 2007), for the cone of positive definite Hermitian matrices and its logarithm.</li>
+<li><a href="the-two-halves-over-r-symmetric-and-antisymmetric.html">The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric</a>, for the real case that this one completes.</li>
+<li><a href="the-involutions-over-r-and-over-c.html">The Involutions over $\mathbb{R}$ and over $\mathbb{C}$</a>, for the conjugate transpose as an involution of the second kind.</li>
+<li><a href="the-matrix-algebra-mnc.html">The Matrix Algebra $M_n(\mathbb{C})$</a>, for the trace form and the algebra $\mathfrak{u}(n)$.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

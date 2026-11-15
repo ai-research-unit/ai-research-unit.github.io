@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Peirce Decomposition of $\operatorname{Sym}_n$ as a Jordan Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-peirce-decomposition-of-math0-as-a-jordan-algebra"><strong>The Peirce Decomposition of $\operatorname{Sym}_n$ as a Jordan Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>A real orthogonal projection $E$ cuts the symmetric matrices into three Peirce spaces of dimensions $r(r+1)/2$, $r(n-r)$ and $(n-r)(n-r+1)/2$, and these three numbers add to $n(n+1)/2$.</strong> The cut is the one of a formally real Jordan algebra, written in coordinates.</p>
+<p>The article defines the Jordan product $X\circ Y=\tfrac12(XY+YX)$, shows that an idempotent of the Jordan algebra is an orthogonal projection, computes the three Peirce spaces with their dimensions, states the five multiplication rules, and reads the Jordan axioms and the trace form in the block coordinates of a projection of rank $r$. The case $n=3$ with a rank-one idempotent gives dimensions $1$, $2$ and $3$. It assumes <em>The Peirce Basis and the Corners over $\mathbb{R}$</em> for the corners of the associative algebra, and it defers the interaction with the transpose to <em>The Peirce Decomposition and the Two Halves over $\mathbb{R}$</em>.</p>
+<h2 id="the-jordan-product-on-math14">The Jordan Product on $\operatorname{Sym}_n$</h2>
+<p><strong>The symmetric matrices form a Jordan algebra under the anticommutator.</strong></p>
+<p>$$
+X\circ Y=\tfrac12\big(XY+YX\big).
+$$</p>
+<p>The product is bilinear and symmetric, and it lands in $\operatorname{Sym}_n$ because $(XY+YX)^{\mathsf T}=YX+XY$. The unit is $\mathrm{I}$, since $\mathrm{I}\circ X=X$.</p>
+<p><strong>The algebra is formally real.</strong> For $X\in\operatorname{Sym}_n$,</p>
+<p>$$
+X\circ X=X^{2},\qquad \operatorname{tr}(X^{2})=\sum_{i,j}X_{ij}^{2}\ \ge 0,
+$$</p>
+<p>with equality only at $X=0$. A sum of squares that vanishes only at zero is the formal reality of the algebra. It is what fails on $\operatorname{Skew}_n$ for the same product, where $K\circ K=-K^{\mathsf T}K$ has nonpositive trace.</p>
+<p><strong>The product obeys the Jordan identity.</strong></p>
+<p>$$
+(X\circ Y)\circ(X\circ X)=X\circ\big(Y\circ(X\circ X)\big).
+$$</p>
+<p>Both sides are polynomials of degree four in the entries, and the identity holds because the associative product does. With commutativity, a unit and this identity, $\operatorname{Sym}_n$ is a Jordan algebra over $\mathbb{R}$.</p>
+<h2 id="the-idempotents">The Idempotents</h2>
+<p><strong>An idempotent of the Jordan algebra is a real orthogonal projection.</strong> An element $E\in\operatorname{Sym}_n$ satisfies $E\circ E=E$ exactly when</p>
+<p>$$
+E^{2}=E,\qquad E^{\mathsf T}=E .
+$$</p>
+<p>The first equation is the idempotent condition and the second is membership in $\operatorname{Sym}_n$; together they say that $E$ is the orthogonal projection onto its image. The rank $r=\operatorname{rk}E=\operatorname{tr}E$ is an integer between $0$ and $n$.</p>
+<p><strong>The decomposition depends on $E$ through its two eigenspaces.</strong> Put $U=\operatorname{im}E$ and $W=\ker E=U^{\perp}$, of dimensions $r$ and $n-r$, and $\mathrm{I}=E+(\mathrm{I}-E)$. In an orthonormal basis adapted to $U$ and $W$ every symmetric matrix reads</p>
+<p>$$
+X=\begin{pmatrix} A & B\\ B^{\mathsf T} & C\end{pmatrix},
+$$</p>
+<p>with $A$ of order $r$, $C$ of order $n-r$ and $B$ of size $r\times(n-r)$.</p>
+<h2 id="the-three-peirce-spaces">The Three Peirce Spaces</h2>
+<p><strong>The Peirce spaces are the three ways a symmetric matrix can sit inside the two eigenspaces of $E$.</strong></p>
+<p>$$
+\operatorname{Sym}(1)=E\operatorname{Sym}_nE,\qquad
+\operatorname{Sym}(\tfrac12)=\{X\in\operatorname{Sym}_n:EX+XE=X\},\qquad
+\operatorname{Sym}(0)=(\mathrm{I}-E)\operatorname{Sym}_n(\mathrm{I}-E).
+$$</p>
+<p><strong>Proposition.</strong> The three spaces are the eigenspaces of the operator $X\mapsto E\circ X$ with eigenvalues $1$, $\tfrac12$ and $0$, and</p>
+<p>$$
+\operatorname{Sym}_n=\operatorname{Sym}(1)\oplus\operatorname{Sym}(\tfrac12)\oplus\operatorname{Sym}(0).
+$$</p>
+<p><em>Proof.</em> In the block form above, $E\circ X=\tfrac12\begin{pmatrix}2A&B\\ B^{\mathsf T}&0\end{pmatrix}$. The eigenvalue $1$ forces $B=0$ and $C=0$, which is $E\operatorname{Sym}_nE$; the eigenvalue $\tfrac12$ forces $A=0$ and $C=0$; the eigenvalue $0$ forces $A=0$ and $B=0$. The three conditions are complementary, so every $X$ splits uniquely.</p>
+<p><strong>The middle space is the annihilator of the corner.</strong> The condition $EX+XE=X$ reads $EXE=0$: multiply on both sides by $E$ and use $E^{2}=E$. So</p>
+<p>$$
+\operatorname{Sym}(\tfrac12)=\{X\in\operatorname{Sym}_n:EXE=0\},
+$$</p>
+<p>the symmetric part of the two off-diagonal corners taken together.</p>
+<h2 id="the-dimensions">The Dimensions</h2>
+<p><strong>The three dimensions are $r(r+1)/2$, $r(n-r)$ and $(n-r)(n-r+1)/2$.</strong> A basis of $\operatorname{Sym}(1)$ is $E_{ii}$ for $i\in U$ together with $E_{ij}+E_{ji}$ for $i<j$ in $U$, which gives $r+r(r-1)/2=r(r+1)/2$. A basis of $\operatorname{Sym}(\tfrac12)$ is $E_{ij}+E_{ji}$ with $i\in U$ and $j\in W$, which gives $r(n-r)$. A basis of $\operatorname{Sym}(0)$ is the same construction inside $W$, which gives $(n-r)(n-r+1)/2$.</p>
+<p><strong>The three numbers add to the dimension of the algebra.</strong> Writing $s=n-r$,</p>
+<p>$$
+\frac{r(r+1)}{2}+rs+\frac{s(s+1)}{2}=\frac{r^{2}+r+2rs+s^{2}+s}{2}=\frac{(r+s)^{2}+(r+s)}{2}=\frac{n(n+1)}{2}.
+$$</p>
+<p>So the Peirce decomposition is a decomposition of the whole of $\operatorname{Sym}_n$ and loses nothing.</p>
+<p><strong>The dimensions are not $r^{2}$, $2r(n-r)$ and $(n-r)^{2}$.</strong> Those are the dimensions of the corners of the associative algebra $M_{n}(\mathbb{R})$, and they add to $n^{2}$. The Jordan algebra is the smaller space of dimension $n(n+1)/2$: the diagonal corner contributes only its symmetric part $A_{kk}\cap\operatorname{Sym}_n$, of dimension $r(r+1)/2$, and the middle space takes one copy of the off-diagonal corner pair, not two.</p>
+<h2 id="the-coordinates-at-the-standard-idempotent">The Coordinates at the Standard Idempotent</h2>
+<p><strong>With $E=\operatorname{diag}(1,\dots,1,0,\dots,0)$ the three spaces are the three block positions.</strong></p>
+<p>$$
+X_{1}=\begin{pmatrix}A&0\\ 0&0\end{pmatrix},\qquad
+X_{1/2}=\begin{pmatrix}0&B\\ B^{\mathsf T}&0\end{pmatrix},\qquad
+X_{0}=\begin{pmatrix}0&0\\ 0&C\end{pmatrix},
+$$</p>
+<p>with $A$ symmetric of order $r$, $B$ arbitrary of size $r\times(n-r)$ and $C$ symmetric of order $n-r$. The dimensions follow at once: $r(r+1)/2$, $r(n-r)$ and $(n-r)(n-r+1)/2$.</p>
+<p><strong>A general element is the sum of its three components.</strong></p>
+<p>$$
+X_{1}=EXE,\qquad X_{0}=(\mathrm{I}-E)X(\mathrm{I}-E),\qquad X_{1/2}=X-X_{1}-X_{0},
+$$</p>
+<p>and the three pieces satisfy $EX_{1}E=X_{1}$, $EX_{1/2}E=0$, $(\mathrm{I}-E)X_{0}(\mathrm{I}-E)=X_{0}$. The reconstruction is exact and the components are unique.</p>
+<h2 id="the-multiplication-rules">The Multiplication Rules</h2>
+<p><strong>The five Peirce rules are the multiplication table of the three spaces.</strong></p>
+<p>$$
+\operatorname{Sym}(1)\circ\operatorname{Sym}(1)\subseteq\operatorname{Sym}(1),\qquad
+\operatorname{Sym}(1)\circ\operatorname{Sym}(\tfrac12)\subseteq\operatorname{Sym}(\tfrac12),
+$$</p>
+<p>$$
+\operatorname{Sym}(\tfrac12)\circ\operatorname{Sym}(\tfrac12)\subseteq\operatorname{Sym}(1)\oplus\operatorname{Sym}(0),\qquad
+\operatorname{Sym}(\tfrac12)\circ\operatorname{Sym}(0)\subseteq\operatorname{Sym}(\tfrac12),
+$$</p>
+<p>$$
+\operatorname{Sym}(0)\circ\operatorname{Sym}(0)\subseteq\operatorname{Sym}(0).
+$$</p>
+<p><em>Proof.</em> A block-diagonal matrix times a matrix with only the $B$ block has only the $B$ block, which gives the second and fourth rules. Two matrices with only the $B$ block multiply to a block-diagonal matrix, which gives the third rule. Two block-diagonal matrices multiply blockwise, which gives the first and fifth rules.</p>
+<p><strong>The middle square is one dimension smaller than the direct sum.</strong> From the second display,</p>
+<p>$$
+\operatorname{tr}(BB'^{\mathsf T})=\operatorname{tr}(B^{\mathsf T}B'),
+$$</p>
+<p>so the two diagonal blocks of $X_{1/2}\circ Y_{1/2}$ have equal trace. The image is therefore the block-diagonal matrices with matched traces, of dimension</p>
+<p>$$
+\frac{r(r+1)}{2}+\frac{(n-r)(n-r+1)}{2}-1,
+$$</p>
+<p>one less than $\operatorname{Sym}(1)\oplus\operatorname{Sym}(0)$.</p>
+<p><strong>The Peirce grading is compatible with the product.</strong> Since $X^{2}=X_{1}^{2}+2X_{1}\circ X_{1/2}+X_{1/2}^{2}+2X_{1/2}\circ X_{0}+X_{0}^{2}$ and the five summands lie in the spaces named by their subscripts, the algebra generated by $X$ is graded by the Peirce spaces.</p>
+<h2 id="the-example-math131-with-a-rank-one-idempotent">The Example $n=3$ with a Rank-One Idempotent</h2>
+<p><strong>At $n=3$ with $\operatorname{rk}E=1$ the dimensions are $1$, $2$ and $3$, and they add to $6$.</strong></p>
+<p>$$
+\frac{1\cdot2}{2}=1,\qquad 1\cdot2=2,\qquad \frac{2\cdot3}{2}=3,\qquad 1+2+3=6=\frac{3\cdot4}{2}.
+$$</p>
+<p>A rank-one projection in $\operatorname{Sym}_3$ fixes a line, its orthogonal plane, and the two-dimensional space of symmetric maps between them.</p>
+<p><strong>In a basis adapted to $E$ the element reads as one entry, two entries and a symmetric $2\times2$ block.</strong></p>
+<p>$$
+E=\operatorname{diag}(1,0,0),\qquad
+X_{1}=aE_{11},\qquad
+X_{1/2}=b(E_{12}+E_{21})+c(E_{13}+E_{31}),\qquad
+X_{0}=dE_{22}+e(E_{23}+E_{32})+fE_{33},
+$$</p>
+<p>with $a,b,c,d,e,f$ real: $1+2+3=6$ parameters, which is $\dim\operatorname{Sym}_3$.</p>
+<p><strong>The middle square has dimension $3$ at $n=3$ and $r=1$.</strong> The matched-trace condition cuts the direct sum of dimensions $1+3=4$ down to $3$, in agreement with the formula $1+3-1=3$.</p>
+<h2 id="the-axioms-in-coordinates">The Axioms in Coordinates</h2>
+<p><strong>The Peirce rules are the Jordan axioms written block by block.</strong> Commutativity is the symmetry of each block product, the unit is $\mathrm{I}=E+(\mathrm{I}-E)$, and the Jordan identity is the identity of the two block products displayed above. The Peirce rules add the information that the three spaces are eigenspaces of a single operator, and that is what makes the coordinate description complete: the blocks multiply by the rules, and the associative product of the ambient algebra supplies the numbers.</p>
+<p><strong>The trace form is the coordinate form of formal reality.</strong> With</p>
+<p>$$
+\langle X,Y\rangle=\operatorname{tr}(XY),
+$$</p>
+<p>the three Peirce spaces are mutually orthogonal. For $X_{1}=EXE$ and $Y_{1/2}$ with $EY_{1/2}E=0$,</p>
+<p>$$
+\langle X_{1},Y_{1/2}\rangle=\operatorname{tr}(EXEY_{1/2})=\operatorname{tr}(XEY_{1/2}E)=0,
+$$</p>
+<p>and the same computation with $\mathrm{I}-E$ gives $\langle Y_{1/2},Z_{0}\rangle=0$, while $\langle X_{1},Z_{0}\rangle=0$ because $EZ_{0}=0$.</p>
+<p><strong>The form is positive definite on each space.</strong> On $\operatorname{Sym}(1)$ it is the trace form of $\operatorname{Sym}_r$, on $\operatorname{Sym}(1/2)$ it is $2\sum B_{ij}^{2}$, on $\operatorname{Sym}(0)$ it is the trace form of $\operatorname{Sym}_{n-r}$; each is positive definite, and the three signatures reproduce the three dimensions $r(r+1)/2$, $r(n-r)$ and $(n-r)(n-r+1)/2$.</p>
+<p><strong>The automorphisms are the orthogonal conjugations.</strong> A map $X\mapsto QXQ^{\mathsf T}$ with $Q\in\mathrm{O}(n)$ preserves the product, and every automorphism is of this form, because it preserves the unit and the cone of squares. So $\operatorname{Aut}(\operatorname{Sym}_n)=\mathrm{O}(n)$ and the derivations form $\mathfrak{so}(n)$, of dimension $n(n-1)/2$. A conjugation carries the Peirce spaces of $E$ to those of $QEQ^{\mathsf T}$, which is why the dimension formula depends on $E$ through $r$ alone.</p>
+<h2 id="summary">Summary</h2>
+<p>The symmetric matrices form a formally real Jordan algebra under $X\circ Y=\tfrac12(XY+YX)$, with unit $\mathrm{I}$ and automorphism group $\mathrm{O}(n)$. An idempotent of this algebra is an orthogonal projection $E$ of rank $r$, and it cuts the algebra into the three Peirce spaces $\operatorname{Sym}(1)=E\operatorname{Sym}_nE$, $\operatorname{Sym}(1/2)=\{X:EX+XE=X\}=\{X:EXE=0\}$ and $\operatorname{Sym}(0)=(\mathrm{I}-E)\operatorname{Sym}_n(\mathrm{I}-E)$, of dimensions $r(r+1)/2$, $r(n-r)$ and $(n-r)(n-r+1)/2$, which sum to $n(n+1)/2$. The five multiplication rules say that the first and third spaces are subalgebras, that the middle space is a bimodule over both, and that the square of the middle space lies in their direct sum, with image the block-diagonal matrices whose two blocks have equal trace. At $n=3$ with $r=1$ the dimensions are $1$, $2$ and $3$, summing to $6=3\cdot4/2$. The three spaces are mutually orthogonal for the positive definite trace form $\langle X,Y\rangle=\operatorname{tr}(XY)$, so the Peirce decomposition is an orthogonal decomposition of a space of dimension $n(n+1)/2$; this is the Jordan algebra of a formally real form, and its Peirce rules are its axioms in coordinates.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$X\circ Y=\tfrac12(XY+YX)$</td>
+<td>The Jordan product on $\operatorname{Sym}_n$</td>
+</tr>
+<tr>
+<td>$E$</td>
+<td>An idempotent of the Jordan algebra, $E=E^{2}=E^{\mathsf T}$</td>
+</tr>
+<tr>
+<td>$r=\operatorname{rk}E$</td>
+<td>The rank of $E$, equal to $\operatorname{tr}E$</td>
+</tr>
+<tr>
+<td>$\operatorname{Sym}(1)=E\operatorname{Sym}_nE$</td>
+<td>The Peirce space of eigenvalue $1$</td>
+</tr>
+<tr>
+<td>$\operatorname{Sym}(\tfrac12)=\{X:EXE=0\}$</td>
+<td>The Peirce space of eigenvalue $\tfrac12$</td>
+</tr>
+<tr>
+<td>$\operatorname{Sym}(0)=(\mathrm{I}-E)\operatorname{Sym}_n(\mathrm{I}-E)$</td>
+<td>The Peirce space of eigenvalue $0$</td>
+</tr>
+<tr>
+<td>$A,B,C$</td>
+<td>The two diagonal blocks and the off-diagonal block</td>
+</tr>
+<tr>
+<td>$\langle X,Y\rangle=\operatorname{tr}(XY)$</td>
+<td>The trace form on $\operatorname{Sym}_n$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nathan Jacobson, <em>Structure and Representations of Jordan Algebras</em> (American Mathematical Society, 1968), for Peirce decompositions of Jordan algebras and their axioms.</li>
+<li>Pascual Jordan, John von Neumann and Eugene Wigner, <em>On an Algebraic Generalization of the Quantum Mechanical Formalism</em> (Annals of Mathematics 35, 1935), for the origin of the formally real Jordan algebras.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the Peirce corners of the associative algebra that the Jordan spaces refine.</li>
+<li><a href="the-peirce-basis-and-the-corners-over-r.html">The Peirce Basis and the Corners over $\mathbb{R}$</a>, for the corners of $M_n(\mathbb{R})$ whose symmetric parts appear here.</li>
+<li><a href="the-matrix-algebra-mnr.html">The Matrix Algebra $M_n(\mathbb{R})$</a>, for the trace form and the split into symmetric and antisymmetric matrices.</li>
+<li><a href="the-peirce-decomposition-and-the-two-halves-over-r.html">The Peirce Decomposition and the Two Halves over $\mathbb{R}$</a>, for the grading of the two halves by a frame.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

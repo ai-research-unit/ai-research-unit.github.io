@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Jordan Algebra $\operatorname{Sym}_n$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-jordan-algebra-math0"><strong>The Jordan Algebra $\operatorname{Sym}_n$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The symmetric half with the anticommutator is a Jordan algebra: commutative, satisfying the Jordan identity, formally real, of degree $n$, and its squares generate the cone of positive semidefinite matrices.</strong></p>
+<p>The article proves the three axioms in the matrix case, shows that the identity $(X\circ X)\circ(Y\circ X)=((X\circ X)\circ Y)\circ X$ holds for symmetric matrices and fails for the ordinary product, establishes formal reality from $\operatorname{tr}(X^{2})=\sum X_{ij}^{2}$, computes the Peirce dimensions $r(r+1)/2$, $(n-r)(n-r+1)/2$ and $r(n-r)$ for an idempotent of rank $r$, and identifies the quadratic representation $U_X(Y)=XYX$. It contrasts the half with $UT_n$, which is a Jordan algebra with the same product and is not formally real. It assumes <em>The Four Multiplication Tables: $SS$, $SK$, $KS$, $KK$</em> for the product and <em>The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric</em> for the spectrum. It defers the Peirce decomposition itself to <em>The Peirce Decomposition of $\operatorname{Sym}_n$ as a Jordan Algebra</em> and the cone to <em>The Cone of Positive Semidefinite Matrices</em>.</p>
+<h2 id="the-product">The Product</h2>
+<p><strong>The anticommutator makes the symmetric half a commutative algebra.</strong> Put</p>
+<p>$$
+X\circ Y=\tfrac12(XY+YX)\qquad(X,Y\in\operatorname{Sym}_n).
+$$</p>
+<p>The product is symmetric in its arguments, and it is closed because $(XY+YX)^{\mathsf T}=Y^{\mathsf T}X^{\mathsf T}+X^{\mathsf T}Y^{\mathsf T}=YX+XY$. The identity matrix is a unit, and the product is not associative: for symmetric matrices,</p>
+<p>$$
+(X\circ Y)\circ Z-X\circ(Y\circ Z)=\tfrac14\big[Y,[X,Z]\big] ,
+$$</p>
+<p>which vanishes exactly when the three matrices commute. The defect is a triple bracket, so the algebra is associative on every commutative subalgebra and non-associative as soon as two elements fail to commute.</p>
+<p><strong>The square of an element is its ordinary square, and the polarisation recovers the product.</strong> Since $X\circ X=X^{2}$,</p>
+<p>$$
+X\circ Y=\tfrac12\big((X+Y)^{2}-X^{2}-Y^{2}\big),
+$$</p>
+<p>so the whole product is determined by the squaring map. This is the definition of a Jordan algebra in the general theory: a commutative algebra in which the product is the polarisation of a quadratic map.</p>
+<p><strong>The automorphisms include the orthogonal group.</strong> For $Q\in\mathrm{O}(n)$ the map $X\mapsto QXQ^{\mathsf T}$ preserves symmetry and satisfies</p>
+<p>$$
+(QXQ^{\mathsf T})\circ(QYQ^{\mathsf T})=Q(X\circ Y)Q^{\mathsf T},
+$$</p>
+<p>so $\mathrm{O}(n)$ acts by automorphisms, with kernel $\{\pm\mathrm{I}\}$. The action is the conjugation action of the corpus read on the symmetric half, and it is the group that diagonalises every element at once in the spectral theorem of <em>The Spectral Theorem: the Hermitian Case</em>.</p>
+<h2 id="the-jordan-identity">The Jordan Identity</h2>
+<p><strong>The Jordan identity holds, and it is the axiom that separates a Jordan algebra from an arbitrary commutative algebra.</strong> For symmetric $X,Y$,</p>
+<p>$$
+(X\circ X)\circ(Y\circ X)=((X\circ X)\circ Y)\circ X .
+$$</p>
+<p><em>Proof.</em> Write the left side as $\tfrac14(X^{2}(YX+XY)+(YX+XY)X^{2})$ and the right side as $\tfrac14((X^{2}Y+YX^{2})X+X(X^{2}Y+YX^{2}))$. Expanding both gives the same eight terms, using $X^{2}X=XX^{2}$ and the symmetry of the three factors under transposition. The identity was verified on random symmetric matrices at $n=2,3,4,6$.</p>
+<p><strong>The identity is the linearised form of the associativity of powers.</strong> It is equivalent to the statement that the powers of an element generate an associative subalgebra, which is why the spectral theorem can be applied to a single element without leaving the Jordan category: the algebra generated by $X$ and the identity is $\mathbb{R}[X]$, and $\mathbb{R}[X]$ is associative because it is commutative.</p>
+<p><strong>The ordinary product fails the identity, which is why the anticommutator is needed.</strong> For general symmetric $X,Y$ the two sides of the Jordan identity differ by a triple bracket, and for the ordinary product the expression $(X^{2})(YX)$ against $(X^{2}Y)X$ differs by $X^{2}[Y,X]$. The symmetrisation is exactly what cancels the bracket, and that is the whole reason the symmetric half carries a Jordan structure rather than an associative one.</p>
+<h2 id="formal-reality">Formal Reality</h2>
+<p><strong>The algebra is formally real: a sum of squares vanishes only if every term does.</strong> For symmetric $X$,</p>
+<p>$$
+\operatorname{tr}(X^{2})=\sum_{i,j}X_{ij}^{2}\ \ge0,
+$$</p>
+<p>with equality only at $X=0$. If $X_1^{2}+\dots+X_r^{2}=0$ then taking traces gives $\sum_{k}\operatorname{tr}(X_k^{2})=0$, hence every $\operatorname{tr}(X_k^{2})=0$ and every $X_k=0$. So no nonzero element is a sum of squares with a zero sum, and the algebra is <strong>formally real</strong>.</p>
+<p><strong>Formal reality is equivalent to the existence of a linear functional positive on squares.</strong> The trace is such a functional: $\operatorname{tr}(X^{2})>0$ for $X\neq0$, and it is linear. In the general theory this is the criterion for the algebra to be a Jordan algebra of a positive definite quadratic form, and it is what makes the cone of squares a pointed cone with interior.</p>
+<p><strong>The triangular algebra is a Jordan algebra with the same product and is not formally real.</strong> Since the product of two upper triangular matrices is upper triangular, $UT_n$ is closed under $\circ$ and satisfies the Jordan identity, being a subspace of an associative algebra. But a strictly upper triangular $N$ satisfies $N^{2}=0$, so</p>
+<p>$$
+N\circ N=0\qquad\text{with } N\neq0,
+$$</p>
+<p>and the algebra has nilpotents whose square vanishes. The trace form is not positive there either: $\operatorname{tr}(N^{2})=0$. So the two algebras share the product and differ in the axiom that gives the cone, and the difference is the same difference as between the two halves and the two complements.</p>
+<p><strong>The cone of squares is the cone of positive semidefinite matrices.</strong> Every square $X^{2}$ is positive semidefinite, and every positive semidefinite $P$ is a square, $P=(\sqrt{P})^{2}$ with $\sqrt{P}$ symmetric. So</p>
+<p>$$
+\{X^{2}:X\in\operatorname{Sym}_n\}=\{P\succeq0\},
+$$</p>
+<p>which is the closed convex cone whose interior is the positive definite cone. The identification is the content of <em>The Positive Cone and Its Boundary</em> read in the Jordan language.</p>
+<h2 id="idempotents-and-the-peirce-grading">Idempotents and the Peirce Grading</h2>
+<p><strong>An idempotent of the Jordan algebra is an orthogonal projection.</strong> From $E\circ E=E$ and $E^{\mathsf T}=E$,</p>
+<p>$$
+E^{2}=E,
+$$</p>
+<p>so the idempotents are exactly the orthogonal projections of $\mathbb{R}^{n}$, of rank $r=0,1,\dots,n$. Each has eigenvalues $0$ and $1$ and is determined by its image, a subspace of dimension $r$.</p>
+<p><strong>The Peirce spaces of an idempotent have dimensions $r(r+1)/2$, $(n-r)(n-r+1)/2$ and $r(n-r)$.</strong> For $E=\operatorname{diag}(\mathrm{I}_r,0)$ and a symmetric $X$ written in blocks,</p>
+<p>$$
+X=\begin{pmatrix}A&B\\B^{\mathsf T}&C\end{pmatrix},\qquad
+E\circ X=\tfrac12\begin{pmatrix}2A&B\\B^{\mathsf T}&0\end{pmatrix},
+$$</p>
+<p>so the eigenvalue $1$ of the multiplication operator $L(E)$ is the space of $A$ with $B=0$, $C=0$, of dimension $r(r+1)/2$; the eigenvalue $0$ is the space of $C$ with $A=0$, $B=0$, of dimension $(n-r)(n-r+1)/2$; and the eigenvalue $\tfrac12$ is the space of $B$, of dimension $r(n-r)$. The three add to</p>
+<p>$$
+\frac{r(r+1)}{2}+\frac{(n-r)(n-r+1)}{2}+r(n-r)=\frac{n(n+1)}{2},
+$$</p>
+<p>which was checked for every $r$ at $n=2,\dots,6$.</p>
+<p><strong>Only three eigenvalues occur, and that is the defining property of a Jordan algebra of degree two or more.</strong> The eigenvalues of $L(E)$ for an idempotent are $1$, $\tfrac12$ and $0$, so the Peirce decomposition has three parts rather than the four of the associative case. The associative Peirce decomposition of an idempotent has eigenvalues $1$, $0$ and two off-diagonal parts that are counted together; the Jordan one has a single off-diagonal part with eigenvalue $\tfrac12$.</p>
+<p><strong>The rank of the algebra is $n$.</strong> A family of orthogonal idempotents $E_1,\dots,E_n$ with sum $\mathrm{I}$ exists, namely the coordinate projections, and no family has more than $n$ members, since the images are independent subspaces. So the degree of $\operatorname{Sym}_n$ as a Jordan algebra is $n$, and the determinant is its generic norm of degree $n$.</p>
+<h2 id="the-trace-form">The Trace Form</h2>
+<p><strong>The trace form is associative for the Jordan product.</strong> For symmetric $X,Y,Z$,</p>
+<p>$$
+\operatorname{tr}\big((X\circ Y)\circ Z\big)=\operatorname{tr}\big(X\circ(Y\circ Z)\big),
+$$</p>
+<p>since both sides expand into the same four traces by cyclicity, and the equality was verified on random triples at $n=2,3,4,6$. So $\langle X,Y\rangle=\operatorname{tr}(XY)$ is an associative form in the sense of the Jordan theory, and it is positive definite.</p>
+<p><strong>The form is the Killing form of the Jordan algebra.</strong> The trace form of the Jordan algebra is $\operatorname{tr}(L(X\circ Y))$, and a direct computation gives</p>
+<p>$$
+\operatorname{tr}\big(L(X\circ Y)\big)=\frac{n+1}{2}\operatorname{tr}(XY),
+$$</p>
+<p>with $L$ taken on an orthonormal basis of $\operatorname{Sym}_n$ for the trace form, so the Jordan trace form is a scalar multiple of the matrix trace form. The computation at $n=2,3,4$ gives the factors $1.5,2,2.5$, and the restriction of the form to the half is positive definite.</p>
+<p><strong>The quadratic representation is $U_X(Y)=XYX$.</strong> The general definition $U_X=2L(X)^{2}-L(X^{2})$ evaluates on a symmetric $Y$ to</p>
+<p>$$
+U_X(Y)=2X\circ(X\circ Y)-X^{2}\circ Y=XYX,
+$$</p>
+<p>which was verified at $n=2,3,4,6$. For $X$ invertible the map $U_X$ is an automorphism of the cone, since $U_X(P)=XPX$ is positive definite for positive definite $P$, and the formula is the matrix form of the general $U$-operator of the Jordan theory.</p>
+<h2 id="the-case-math124">The Case $n=2$</h2>
+<p><strong>At $n=2$ the algebra is three-dimensional and is the Jordan algebra of a quadratic form.</strong> With the basis $\mathrm{I},\sigma_1,\sigma_3$ the product is determined by</p>
+<p>$$
+\sigma_1\circ\sigma_1=\sigma_3\circ\sigma_3=\mathrm{I},\qquad \sigma_1\circ\sigma_3=0,\qquad \mathrm{I}\circ X=X ,
+$$</p>
+<p>so $\sigma_1,\sigma_3$ are a pair of orthogonal idempotents only after the change of basis to $\tfrac12(\mathrm{I}\pm\sigma_1)$, and the algebra is the Jordan algebra of the quadratic form $\det$, of degree two, in the sense of the general theory.</p>
+<p><strong>The Peirce dimensions at $n=2$ are $1,1,1$ for $r=1$.</strong> An idempotent of rank one has a one-dimensional Peirce-1 space (the line through it), a one-dimensional Peirce-0 space, and a one-dimensional Peirce-$\tfrac12$ space, and the three add to $3$. The idempotent $\tilde\Pi_+=\tfrac12(e_t+\tilde{Ζ})$ of the biquaternion frame is such a rank-one idempotent, and its Peirce-1 line is the corner $\mathbb{B}_{++}$.</p>
+<p><strong>The formal reality at $n=2$ is the definiteness of the trace form on the three coordinates.</strong> With $X=a\mathrm{I}+b\sigma_1+c\sigma_3$,</p>
+<p>$$
+\operatorname{tr}(X^{2})=2(a^{2}+b^{2}+c^{2}),
+$$</p>
+<p>positive for $X\neq0$, so the trace form is positive definite and the algebra is formally real. The idempotents are the elements with $X^{2}=X$ and $\operatorname{tr}X$ equal to $1$ or $2$; they are the orthogonal projections of rank one and two, and the rank-one ones are the points of the conic $a^{2}=b^{2}+c^{2}$ inside the cone of squares.</p>
+<h2 id="summary">Summary</h2>
+<p>The symmetric half with $X\circ Y=\tfrac12(XY+YX)$ is a commutative non-associative algebra, with $X\circ X=X^{2}$ and with the Jordan identity holding and the ordinary product failing it. It is formally real, since $\operatorname{tr}(X^{2})=\sum X_{ij}^{2}$ is positive definite, and its cone of squares is the cone of positive semidefinite matrices. Its idempotents are the orthogonal projections, and the Peirce spaces of an idempotent of rank $r$ have dimensions $r(r+1)/2$, $(n-r)(n-r+1)/2$ and $r(n-r)$, summing to $\dim\operatorname{Sym}_n$. Its degree is $n$, its trace form is associative and positive definite, and its quadratic representation is $U_X(Y)=XYX$. The triangular algebra carries the same product and is not formally real, since $N\circ N=0$ for a nonzero nilpotent.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$X\circ Y=\tfrac12(XY+YX)$</td>
+<td>the Jordan product on $\operatorname{Sym}_n$</td>
+</tr>
+<tr>
+<td>$L(X)$</td>
+<td>the multiplication operator $Y\mapsto X\circ Y$</td>
+</tr>
+<tr>
+<td>$U_X=2L(X)^{2}-L(X^{2})$</td>
+<td>the quadratic representation, equal to $Y\mapsto XYX$</td>
+</tr>
+<tr>
+<td>$E$</td>
+<td>an idempotent, that is an orthogonal projection of rank $r$</td>
+</tr>
+<tr>
+<td>$\operatorname{Pierce}_1,\operatorname{Pierce}_{1/2},\operatorname{Pierce}_0$</td>
+<td>the three Peirce spaces, of dimensions $r(r+1)/2$, $r(n-r)$, $(n-r)(n-r+1)/2$</td>
+</tr>
+<tr>
+<td>$\langle X,Y\rangle=\operatorname{tr}(XY)$</td>
+<td>the associative trace form</td>
+</tr>
+<tr>
+<td>$n$</td>
+<td>the degree of the algebra, the maximal number of orthogonal idempotents</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nathan Jacobson, <em>Structure and Representations of Jordan Algebras</em> (AMS, 1968), for the axioms, the Peirce decomposition and the $U$-operator.</li>
+<li>Kevin McCrimmon, <em>A Taste of Jordan Algebras</em> (Springer, 2004), for formal reality, the cone of squares and the degree of an algebra.</li>
+<li>Pascual Jordan, John von Neumann and Eugene Wigner, <em>On an Algebraic Generalization of the Quantum Mechanical Formalism</em> (Annals of Mathematics, 1934), for the original construction of the algebra of observables.</li>
+<li><a href="the-two-halves-over-r-symmetric-and-antisymmetric.html">The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric</a>, for the anticommutator as the product of the half.</li>
+<li><a href="the-four-multiplication-tables-ss-sk-ks-kk.html">The Four Multiplication Tables: $SS$, $SK$, $KS$, $KK$</a>, for the table that the product belongs to.</li>
+<li><a href="the-peirce-decomposition-in-n-dimensions.html">The Peirce Decomposition in $n$ Dimensions</a>, for the associative version of the Peirce split.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Four Multiplication Tables: $SS$, $SK$, $KS$, $KK$ at $n=2$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-four-multiplication-tables-math0-math1-math2-math3-at-math4"><strong>The Four Multiplication Tables: $SS$, $SK$, $KS$, $KK$ at $n=2$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>With the basis $I,\sigma_{3},\sigma_{1},J$ of the real matrix algebra, the sixteen products fall into four tables of sizes $3\times3$, $3\times1$, $1\times3$ and $1\times1$, and the two mixed tables differ by a sign in every entry.</strong></p>
+<p>The article writes the four multiplication tables, reads the symmetric block, shows that the symmetric half is not closed under the plain product because two entries of the $SS$ table leave it, computes the tables for the anticommutator and the commutator, and checks associativity on the structure constants. It assumes <em>The Symmetric and Antisymmetric Parts of a Product at $n=2$</em> and <em>The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$</em>.</p>
+<p>It defers the algebra axioms of the symmetric half to <em>The Jordan Algebra $\operatorname{Sym}_2$</em> and the bracket to <em>The Lie Algebra $\operatorname{Skew}_2$: One Dimension, Hence Abelian</em>.</p>
+<h2 id="the-basis">The Basis</h2>
+<p><strong>Definition.</strong> The basis of $M_2(\mathbb{R})$ used throughout is</p>
+<p>$$
+I=\begin{pmatrix}1&0\\ 0&1\end{pmatrix},\qquad
+\sigma_{3}=\begin{pmatrix}1&0\\ 0&-1\end{pmatrix},\qquad
+\sigma_{1}=\begin{pmatrix}0&1\\ 1&0\end{pmatrix},\qquad
+J=\begin{pmatrix}0&1\\ -1&0\end{pmatrix}.
+$$</p>
+<p><strong>Proposition.</strong> The first three are symmetric, form a basis of $\operatorname{Sym}_2(\mathbb{R})$, and the last is antisymmetric and spans $\Lambda^{2}\mathbb{R}^{2}$.</p>
+<p><strong>Proof.</strong> Reading the entries, the first three are symmetric and independent, and $J$ is antisymmetric; the dimensions are $3$ and $1$.</p>
+<p><strong>The basis is orthogonal for the trace form.</strong> The pairings are $\operatorname{tr}(I^{2})=\operatorname{tr}(\sigma_{3}^{2})=\operatorname{tr}(\sigma_{1}^{2})=2$ and $\operatorname{tr}(J^{2})=-2$, and every mixed pairing vanishes.</p>
+<p><strong>Proof.</strong> $\operatorname{tr}(I\sigma_{3})=\operatorname{tr}(\sigma_{3}\sigma_{1})=\operatorname{tr}(\sigma_{1}J)=\operatorname{tr}(IJ)=0$ is a direct computation of the two-by-two products.</p>
+<p><strong>The scaling by a half makes the basis orthonormal.</strong> The matrices $I/\sqrt2$, $\sigma_{3}/\sqrt2$, $\sigma_{1}/\sqrt2$ are orthonormal for the trace form on the symmetric half and $J/\sqrt2$ has squared length $-1$.</p>
+<p><strong>Proof.</strong> Divide the four squared lengths by $2$; three are $+1$ and one is $-1$, which is the signature $(3,1)$.</p>
+<h2 id="the-table-math35">The Table $SS$</h2>
+<p><strong>Theorem.</strong> The products of two symmetric basis elements are</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\cdot$</th>
+<th>$I$</th>
+<th>$\sigma_{3}$</th>
+<th>$\sigma_{1}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$I$</td>
+<td>$I$</td>
+<td>$\sigma_{3}$</td>
+<td>$\sigma_{1}$</td>
+</tr>
+<tr>
+<td>$\sigma_{3}$</td>
+<td>$\sigma_{3}$</td>
+<td>$I$</td>
+<td>$J$</td>
+</tr>
+<tr>
+<td>$\sigma_{1}$</td>
+<td>$\sigma_{1}$</td>
+<td>$-J$</td>
+<td>$I$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proof.</strong> Each entry is a two-by-two product: $I$ is the identity, $\sigma_{3}^{2}=\sigma_{1}^{2}=I$, and $\sigma_{3}\sigma_{1}=-\sigma_{1}\sigma_{3}=J$. The last identity is the computation $\sigma_{3}\sigma_{1}=\begin{pmatrix}0&1\\ -1&0\end{pmatrix}=J$ and $\sigma_{1}\sigma_{3}=\begin{pmatrix}0&-1\\ 1&0\end{pmatrix}=-J$.</p>
+<p><strong>Corollary.</strong> The symmetric half is not closed under the plain product: two of the nine entries, $\sigma_{3}\sigma_{1}$ and $\sigma_{1}\sigma_{3}$, lie in the antisymmetric line.</p>
+<p><strong>Proof.</strong> The two entries are $\pm J$, and $J$ is not symmetric.</p>
+<p><strong>Corollary.</strong> The table is symmetric apart from those two entries, and the antisymmetric entries are antisymmetric in the two factors: swapping $\sigma_{3}$ and $\sigma_{1}$ changes the sign of the out-of-half entry.</p>
+<p><strong>Proof.</strong> $I$ commutes with everything and the two other basis elements commute up to sign, with the sign carried by the $J$ entry.</p>
+<p><strong>The symmetrised table is closed.</strong> Replacing each entry by the average of the two orders gives the anticommutators, and all of them stay in the symmetric half: $\{I,X\}=2X$, $\{\sigma_{3},\sigma_{1}\}=0$, $\{\sigma_{3},\sigma_{3}\}=\{I,I\}=2I$.</p>
+<p><strong>Proof.</strong> The average of the $(3,1)$ and $(1,3)$ entries of the table is $\tfrac12(J-J)=0$, and the other averages are the diagonal entries.</p>
+<h2 id="the-table-math71">The Table $SK$</h2>
+<p><strong>Theorem.</strong> The products of a symmetric basis element with $J$ are</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\cdot$</th>
+<th>$J$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$I$</td>
+<td>$J$</td>
+</tr>
+<tr>
+<td>$\sigma_{3}$</td>
+<td>$\sigma_{1}$</td>
+</tr>
+<tr>
+<td>$\sigma_{1}$</td>
+<td>$-\sigma_{3}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proof.</strong> $J$ commutes with the scalars; $\sigma_{3}J=\sigma_{3}(i\sigma_{2})=\sigma_{1}$ and $\sigma_{1}J=-\sigma_{3}$ are the two-by-two products $\begin{pmatrix}0&1\\ -1&0\end{pmatrix}$ times the respective factor.</p>
+<p><strong>Corollary.</strong> Two of the three mixed products are symmetric and one is antisymmetric, so the mixed table does not stay in either half.</p>
+<p><strong>Proof.</strong> $\sigma_{3}J=\sigma_{1}$ and $\sigma_{1}J=-\sigma_{3}$ are symmetric, while $IJ=J$ is antisymmetric.</p>
+<h2 id="the-table-math88">The Table $KS$</h2>
+<p><strong>Theorem.</strong> The products of $J$ with a symmetric basis element are</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\cdot$</th>
+<th>$I$</th>
+<th>$\sigma_{3}$</th>
+<th>$\sigma_{1}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$J$</td>
+<td>$J$</td>
+<td>$-\sigma_{1}$</td>
+<td>$\sigma_{3}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proof.</strong> $J$ commutes with the scalars, and $J\sigma_{3}=-\sigma_{3}J=-\sigma_{1}$ with $J\sigma_{1}=-\sigma_{1}J=\sigma_{3}$.</p>
+<p><strong>Corollary.</strong> The two mixed tables differ by a sign in every entry: $J\sigma_{3}=-\sigma_{3}J$ and $J\sigma_{1}=-\sigma_{1}J$, while both equal $J$ at the identity.</p>
+<p><strong>Proof.</strong> Compare the two displays entry by entry.</p>
+<p><strong>Corollary.</strong> The mixed tables are related by the transpose, since $(SK)^{\mathsf T}=-KS$ for $S$ symmetric and $K$ antisymmetric.</p>
+<p><strong>Proof.</strong> $(SK)^{\mathsf T}=K^{\mathsf T}S^{\mathsf T}=-KS$, and the transpose of each basis element is itself.</p>
+<h2 id="the-table-math108">The Table $KK$</h2>
+<p><strong>Theorem.</strong> The single product is</p>
+<p>$$
+J^{2}=-I .
+$$</p>
+<p><strong>Proof.</strong> $\begin{pmatrix}0&1\\ -1&0\end{pmatrix}^{2}=\begin{pmatrix}-1&0\\ 0&-1\end{pmatrix}$.</p>
+<p><strong>Corollary.</strong> The one-dimensional antisymmetric half contains the scalar $-1$ in its square, so the algebra generated by $J$ alone is the complex numbers $\mathbb{R}\oplus\mathbb{R}J$ with $J^{2}=-1$.</p>
+<p><strong>Proof.</strong> The span of $I$ and $J$ is closed under products and is a two-dimensional real algebra with an element whose square is $-1$, hence isomorphic to $\mathbb{C}$.</p>
+<p><strong>That subalgebra is the standard complex structure of the real plane.</strong> Multiplication by $J$ is the rotation of angle $\pi/2$, so the complex numbers inside $M_2(\mathbb{R})$ are exactly the matrices of the form $aI+bJ$.</p>
+<h2 id="the-four-tables-together">The Four Tables Together</h2>
+<p><strong>The full table.</strong> Reading the four blocks as one array of size $4\times4$ gives</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\cdot$</th>
+<th>$I$</th>
+<th>$\sigma_{3}$</th>
+<th>$\sigma_{1}$</th>
+<th>$J$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$I$</td>
+<td>$I$</td>
+<td>$\sigma_{3}$</td>
+<td>$\sigma_{1}$</td>
+<td>$J$</td>
+</tr>
+<tr>
+<td>$\sigma_{3}$</td>
+<td>$\sigma_{3}$</td>
+<td>$I$</td>
+<td>$J$</td>
+<td>$\sigma_{1}$</td>
+</tr>
+<tr>
+<td>$\sigma_{1}$</td>
+<td>$\sigma_{1}$</td>
+<td>$-J$</td>
+<td>$I$</td>
+<td>$-\sigma_{3}$</td>
+</tr>
+<tr>
+<td>$J$</td>
+<td>$J$</td>
+<td>$-\sigma_{1}$</td>
+<td>$\sigma_{3}$</td>
+<td>$-I$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proposition.</strong> Of the sixteen entries, twelve lie in the symmetric half and four lie in the antisymmetric line; the four antisymmetric entries are $(\sigma_{3},\sigma_{1})$, $(\sigma_{1},\sigma_{3})$, $(I,J)$ and $(J,I)$.</p>
+<p><strong>Proof.</strong> Read the array; the antisymmetric entries are exactly the products of two elements one of which is $J$ with the identity, and the two off-diagonal products of $\sigma_{3}$ and $\sigma_{1}$.</p>
+<p><strong>Corollary.</strong> The antisymmetric entries of the table are exactly the products whose two factors have different symmetry or whose factors are the identity and $J$; the count of four matches $\dim\Lambda^{2}=1$ times four pairings.</p>
+<p><strong>Proof.</strong> The antisymmetric part of each product is computed by the rules of <em>The Symmetric and Antisymmetric Parts of a Product at $n=2$</em>, and the four listed entries are the only ones where the rule gives a nonzero result.</p>
+<p><strong>Associativity on the table.</strong> The four tables satisfy $(XY)Z=X(YZ)$ for all triples of basis elements, which is the check that the structure constants are those of an associative algebra and not only of a nonassociative one.</p>
+<p><strong>Proof.</strong> Each side is the product of three of the four matrices and the products of two-by-two matrices are associative; the tables are consistent with threefold products, for example $(JJ)J=-J=J(JJ)$ and $(\sigma_{3}J)\sigma_{1}=\sigma_{1}\sigma_{1}=I=\sigma_{3}(J\sigma_{1})=\sigma_{3}\sigma_{3}$.</p>
+<h2 id="the-anticommutator-and-the-commutator-tables">The Anticommutator and the Commutator Tables</h2>
+<p><strong>The anticommutator table on the symmetric half.</strong> For the three symmetric basis elements,</p>
+<p>$$
+\{I,I\}=2I,\quad \{\sigma_{3},\sigma_{3}\}=\{\sigma_{1},\sigma_{1}\}=2I,\quad \{I,\sigma_{3}\}=2\sigma_{3},\quad \{I,\sigma_{1}\}=2\sigma_{1},\quad \{\sigma_{3},\sigma_{1}\}=0 .
+$$</p>
+<p><strong>Proof.</strong> The products in both orders are read from the $SS$ table, where the only entries that change sign are those in the antisymmetric line, and those are the entries whose symmetrised value vanishes.</p>
+<p><strong>The commutator table on the symmetric half.</strong> The only nonzero commutator of two symmetric basis elements is $[\sigma_{3},\sigma_{1}]=2J$.</p>
+<p><strong>Proof.</strong> $[I,X]=0$ and $[\sigma_{3},\sigma_{1}]=\sigma_{3}\sigma_{1}-\sigma_{1}\sigma_{3}=J-(-J)=2J$.</p>
+<p><strong>Corollary.</strong> The bracket of two traceless symmetric basis elements is twice the antisymmetric unit, so on the traceless plane the bracket is a cross product followed by the identification of $\Lambda^{2}\mathbb{R}^{2}$ with $\mathbb{R}$.</p>
+<p><strong>Proof.</strong> The traceless plane has basis $\sigma_{3},\sigma_{1}$, the bracket of the two is $2J$, and $J$ spans the one-dimensional second exterior power; the constant $2$ is the scale of the identification.</p>
+<h2 id="the-tables-in-the-biquaternion-language">The Tables in the Biquaternion Language</h2>
+<p><strong>The corpus organises the same sixteen products differently.</strong> In the biquaternion algebra the four general products are the products of two elements taken with or without the conjugation, and the two halves are the corners $\mathbb{B}_{st}$ rather than the symmetric and antisymmetric parts.</p>
+<p><strong>The translation.</strong> Under the identification of the biquaternion algebra with $M_2(\mathbb{C})$, the biquaternion conjugation corresponds to the conjugate transpose, so the four general products of <em>The Four General Products and Their Relations over the Biquaternion Algebra</em> correspond to the four tables of this article with the Hermitian and skew-Hermitian halves in place of the symmetric and antisymmetric ones.</p>
+<p><strong>Proof.</strong> Conjugation in the biquaternion algebra reverses the order of a product, and the conjugate transpose does the same, $(XY)^{*}=Y^{*}X^{*}$; the correspondence of the halves follows.</p>
+<p><strong>Corollary.</strong> The four tables of this article and the four tables of the biquaternion article are the same table seen in two bases, and the sign difference between the mixed tables is the statement that the conjugation is antilinear.</p>
+<h2 id="summary">Summary</h2>
+<p>In the basis $I,\sigma_{3},\sigma_{1},J$ the sixteen products fall into the $3\times3$ block $SS$, the column $SK$, the row $KS$ and the scalar $KK$. The $SS$ block has two entries, $\sigma_{3}\sigma_{1}=J$ and $\sigma_{1}\sigma_{3}=-J$, in the antisymmetric line, so the symmetric half is not closed under the plain product; the mixed tables differ by a sign in every entry and are exchanged by the transpose; and $J^{2}=-I$ makes the span of $I$ and $J$ a copy of the complex numbers inside the real matrices.</p>
+<p>The symmetrised $SS$ table is closed and gives the anticommutator table $\{u,v\}=2\operatorname{tr}(uv)I$ on the traceless plane, while the commutator table has the single nonzero entry $[\sigma_{3},\sigma_{1}]=2J$. The four tables are the matrix form of the four general products of the biquaternion algebra under the correspondence that sends the conjugation to the conjugate transpose.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$I,\sigma_{3},\sigma_{1}$</td>
+<td>the symmetric basis of $\operatorname{Sym}_2(\mathbb{R})$</td>
+</tr>
+<tr>
+<td>$J$</td>
+<td>$i\sigma_{2}$, the antisymmetric unit</td>
+</tr>
+<tr>
+<td>$SS$, $SK$, $KS$, $KK$</td>
+<td>the four blocks of the multiplication table</td>
+</tr>
+<tr>
+<td>$\{X,Y\}$</td>
+<td>the anticommutator</td>
+</tr>
+<tr>
+<td>$[X,Y]$</td>
+<td>the commutator</td>
+</tr>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>the biquaternion algebra</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for multiplication tables and structure constants of finite dimensional algebras.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge University Press, 2001), for the multiplication table of the Pauli matrices and the quaternion units.</li>
+<li><a href="the-symmetric-and-antisymmetric-parts-of-a-product-at-n-2.html">The Symmetric and Antisymmetric Parts of a Product at $n=2$</a>, for the rules that produce these tables.</li>
+<li><a href="the-two-halves-over-r-symmetric-and-antisymmetric-at-n-2.html">The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$</a>, for the two halves and their closure properties.</li>
+<li><a href="the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html">The Four General Products and Their Relations over the Biquaternion Algebra</a>, for the same four tables on the biquaternion side.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

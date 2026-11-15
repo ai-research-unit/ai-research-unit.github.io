@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Topology of $M_2(\mathbb{C})$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-topology-of-math0"><strong>The Topology of $M_2(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The matrix algebra is a real vector space of dimension eight with its Euclidean topology, hence contractible; the singular matrices form a closed cone, of real codimension two over the complex field and of codimension one over the real field, and the invertible matrices are its open dense complement.</strong></p>
+<p>The article sets the topology of the matrix algebra, compares the norms that define it, describes the rank strata and the zero set of the determinant, proves that the invertible elements are dense and that the bounded closed sets are compact, and computes the dimensions of the strata. It assumes <em>The Matrix Algebra $M_2(\mathbb{C})$</em>, <em>The Element: Rank, Trace, Determinant, Characteristic Polynomial at $n=2$</em> and <em>The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$</em>.</p>
+<p>It defers the homotopy of the invertible group to <em>The Homotopy of $\mathrm{GL}_2(\mathbb{C})$ and of the Two Halves</em> and the measure theory to <em>The Analysis on $M_2(\mathbb{C})$</em>.</p>
+<h2 id="the-underlying-space">The Underlying Space</h2>
+<p><strong>The matrix algebra is the real vector space of dimension eight, and its topology is the Euclidean one.</strong></p>
+<p><strong>Proposition.</strong> The identification of a matrix with its four complex entries is a linear isomorphism onto $\mathbb{C}^{4}$, and composing with the real and imaginary parts gives a linear isomorphism onto $\mathbb{R}^{8}$.</p>
+<p><strong>Proof.</strong> The four entries determine the matrix and are determined by it, and each complex entry is a pair of real numbers.</p>
+<p><strong>Corollary.</strong> The matrix algebra is contractible, hence connected and simply connected, and all its homotopy groups vanish.</p>
+<p><strong>Proof.</strong> A vector space is contracted to the origin by the homotopy $Z\mapsto(1-t)Z$.</p>
+<p><strong>Corollary.</strong> The matrix algebra is locally compact, metrisable and second countable, and it is complete for the Euclidean metric.</p>
+<p><strong>Proof.</strong> These properties hold for every finite-dimensional real vector space.</p>
+<h2 id="the-norms">The Norms</h2>
+<p><strong>All norms on the matrix algebra are equivalent, and the operator norm, the Hilbert–Schmidt norm and the maximum norm define the same topology.</strong></p>
+<p><strong>Proposition.</strong> The three norms are mutually bounded by constants depending only on the dimension.</p>
+<p><strong>Proof.</strong> The maximum of the entries bounds the Hilbert–Schmidt norm, which bounds the operator norm times two; the operator norm bounds twice the maximum of the entries, because the image of a unit vector has two coordinates, each a sum of two terms.</p>
+<p><strong>Corollary.</strong> The convergence of a sequence of matrices is the entrywise convergence, and the limit operations of the algebra are continuous.</p>
+<p><strong>Proof.</strong> Entrywise convergence is convergence for the maximum norm, and the sum and the product are polynomial in the entries.</p>
+<p><strong>Corollary.</strong> The group of invertible matrices is a topological group with the induced topology, and the inversion is continuous on it.</p>
+<p><strong>Proof.</strong> The determinant is a continuous polynomial that does not vanish on the group, and the inverse is given by the adjugate divided by the determinant, which is continuous there.</p>
+<h2 id="the-rank-strata">The Rank Strata</h2>
+<p><strong>The sets of matrices of rank at most $k$ are closed algebraic cones, and the set of matrices of rank two is their open complement.</strong></p>
+<p><strong>Proposition.</strong> The set of matrices of rank at most one is the zero set of the determinant, a real algebraic cone of real dimension six, and it has a singularity only at the origin.</p>
+<p><strong>Proof.</strong> The determinant is a single polynomial equation on a real space of dimension eight, the cone is parametrised by two vectors, and the derivative of the determinant vanishes exactly at the zero matrix.</p>
+<p><strong>Corollary.</strong> The set of matrices of rank two is open, dense and connected.</p>
+<p><strong>Proof.</strong> It is the complement of a closed set with empty interior, so it is open and dense; and it is the orbit of the identity under the group of invertible matrices, which is connected.</p>
+<p><strong>Corollary.</strong> The strata are the two sets: rank two of real dimension eight, and rank at most one of real dimension six, the second being the boundary of the first.</p>
+<p><strong>Proof.</strong> The dimensions are those of the manifold and of its boundary hypersurface.</p>
+<h2 id="the-determinant-and-its-zero-set">The Determinant and Its Zero Set</h2>
+<p><strong>Theorem.</strong> The determinant is a continuous function whose zero set separates the matrix algebra over the real field, and over the complex field its zero set has real codimension two.</p>
+<p><strong>Proof.</strong> Over the real field the determinant is a quadratic form of signature $(2,2)$ on the eight real coordinates, so its zero set is a cone that separates the space; over the complex field the determinant is a complex-valued polynomial, and its zero set is a complex hypersurface, of real codimension two.</p>
+<p><strong>Corollary.</strong> The complement of the zero set has two connected components over the real field and one over the complex field.</p>
+<p><strong>Proof.</strong> The signature computation of <em>The Two-Sided Operators and the Segre Cone at $n=2$</em> gives the two real components, and the connectedness of the nonzero complex numbers gives the single complex component.</p>
+<p><strong>Corollary.</strong> Over the complex field a path of matrices can avoid the singular set, because the codimension is two.</p>
+<p><strong>Proof.</strong> A path in a space of real dimension eight can be perturbed off a set of codimension two.</p>
+<h2 id="density-and-approximation">Density and Approximation</h2>
+<p><strong>Proposition.</strong> Every matrix is the limit of invertible matrices, and the approximation can be chosen along the ray $Z+\varepsilon I$.</p>
+<p><strong>Proof.</strong> The determinant of $Z+\varepsilon I$ is a polynomial in $\varepsilon$ of degree two whose roots are the negated eigenvalues of $Z$; there are at most two roots, so for all but finitely many small values the matrix is invertible.</p>
+<p><strong>Corollary.</strong> The group of invertible matrices is dense in the matrix algebra, and its complement has empty interior.</p>
+<p><strong>Proof.</strong> The approximation shows density, and a set with dense complement has empty interior.</p>
+<p><strong>Corollary.</strong> A continuous function that vanishes on the invertible matrices vanishes everywhere, because the singular set has empty interior.</p>
+<p><strong>Proof.</strong> A continuous function is determined by its values on a dense subset, and the invertibles are dense.</p>
+<h2 id="the-distance-to-the-singular-set">The Distance to the Singular Set</h2>
+<p><strong>Proposition.</strong> The distance from a matrix $Z$ to the singular set, measured with the Hilbert–Schmidt norm, is the smallest singular value of $Z$.</p>
+<p><strong>Proof.</strong> A singular matrix has rank at most one, and the nearest matrix of rank at most one is obtained by deleting the smallest singular value of $Z$ from its singular value decomposition, so the distance is that singular value.</p>
+<p><strong>Corollary.</strong> For a normal matrix the distance to the singular set is the smallest modulus of an eigenvalue.</p>
+<p><strong>Proof.</strong> The singular values of a normal matrix are the moduli of its eigenvalues.</p>
+<p><strong>Corollary.</strong> The distance to the singular set is a continuous function on the matrix algebra, it is positive exactly on the invertible matrices, and it vanishes exactly on the singular ones.</p>
+<p><strong>Proof.</strong> The smallest singular value depends continuously on the matrix, since the singular values do.</p>
+<h2 id="compactness">Compactness</h2>
+<p><strong>Proposition.</strong> A subset of the matrix algebra is compact exactly when it is closed and bounded, and the closed balls are compact.</p>
+<p><strong>Proof.</strong> The space is a finite-dimensional Euclidean space, where the two notions agree.</p>
+<p><strong>Corollary.</strong> The unitary group and the set of idempotents of bounded norm are compact.</p>
+<p><strong>Proof.</strong> The unitary group is closed and bounded by one, and the idempotents of norm at most one are closed and bounded.</p>
+<p><strong>Corollary.</strong> A continuous function on a compact set of matrices attains its maximum and its minimum.</p>
+<p><strong>Proof.</strong> This is the extreme value theorem in a metric space.</p>
+<h2 id="summary">Summary</h2>
+<p>The matrix algebra is a real vector space of dimension eight, so it is contractible, locally compact and complete, and all its norms define the same topology. The sets of matrices of bounded rank are closed algebraic cones: the determinant vanishes on the cone of rank at most one, of real dimension six, and its complement of rank two is open, dense and connected.</p>
+<p>Over the real field the zero set of the determinant separates the space into two components; over the complex field it has real codimension two and does not separate. The invertible matrices are dense, and the closed bounded sets are compact.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{R}^{8}$</td>
+<td>the real coordinates of the matrix algebra</td>
+</tr>
+<tr>
+<td>$\det$</td>
+<td>the continuous polynomial defining the singular set</td>
+</tr>
+<tr>
+<td>$\operatorname{rank}\le 1$</td>
+<td>the singular cone of real dimension six</td>
+</tr>
+<tr>
+<td>$\overline{Z}$</td>
+<td>the closure of a set of matrices</td>
+</tr>
+<tr>
+<td>$\|\cdot\|$</td>
+<td>any of the equivalent norms</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>James R. Munkres, <em>Topology</em> (Pearson, 2000), for the topology of Euclidean spaces.</li>
+<li>John W. Milnor and James D. Stasheff, <em>Characteristic Classes</em> (Princeton University Press, 1974), for determinantal varieties and their codimensions.</li>
+<li><a href="the-matrix-algebra-m2c.html">The Matrix Algebra $M_2(\mathbb{C})$</a>, for the space whose topology is studied here.</li>
+<li><a href="the-element-rank-trace-determinant-characteristic-polynomial-at-n-2.html">The Element: Rank, Trace, Determinant, Characteristic Polynomial at $n=2$</a>, for the determinant and the rank used here.</li>
+<li><a href="the-two-sided-operators-and-the-segre-cone-at-n-2.html">The Two-Sided Operators and the Segre Cone at $n=2$</a>, for the cone over the singular set.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Killing Form, Its Radical and the Triangular Case — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-killing-form-its-radical-and-the-triangular-case"><strong>The Killing Form, Its Radical and the Triangular Case</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The Killing form of $\mathfrak{gl}_n$ is $2n\operatorname{tr}(XY)-2\operatorname{tr}(X)\operatorname{tr}(Y)$, its radical is the centre $\mathbb{C}\mathrm{I}$, and on the antisymmetric half it takes the two different values $(n-2)\operatorname{tr}(XY)$ and $2n\operatorname{tr}(XY)$ according to whether it is computed inside the half or in the whole algebra; on $UT_n$ it has rank $n-1$ and radical $n_+\oplus\mathbb{R}\mathrm{I}$.</strong></p>
+<p>The article computes the form from the derivation matrices, identifies the radical, gives the signature on the traceless algebra, resolves the two values on $\mathfrak{so}(n)$, and computes the triangular case as the contrast. It assumes <em>The Derivation $X\mapsto[A,X]$ and Its Skewness for the Trace Form</em> for the derivation trace form and <em>The Trace Form and Its Signature on the Two Halves</em> for the signatures. It defers the Cartan criterion to <em>Symmetric Pairs and Cartan Pairs: the Reductivity Criterion</em> and the group theory to <em>The Cartan Decomposition of $\mathrm{GL}_n(\mathbb{C})$</em>.</p>
+<h2 id="the-killing-form-of-math11">The Killing Form of $\mathfrak{gl}_n$</h2>
+<p><strong>The Killing form is computed from the derivation matrices.</strong> With $\operatorname{ad}$ as in <em>The Derivation $X\mapsto[A,X]$ and Its Skewness for the Trace Form</em>,</p>
+<p>$$
+B(X,Y)=\operatorname{tr}\big(\operatorname{ad}_X\operatorname{ad}_Y\big).
+$$</p>
+<p>Building the matrices of $\operatorname{ad}$ in the basis of the $n^{2}$ units and taking the trace gives</p>
+<p>$$
+B(X,Y)=2n\operatorname{tr}(XY)-2\operatorname{tr}(X)\operatorname{tr}(Y),
+$$</p>
+<p>which was verified at $n=2,3,4$ on random pairs, the two sides agreeing to machine precision. The formula is symmetric, bilinear and vanishes when either argument is a scalar matrix.</p>
+<p><strong>The formula is the trace form corrected by the trace terms.</strong> Since $\operatorname{tr}(XY)$ alone is not invariant under the full adjoint action of $\mathfrak{gl}_n$ up to the centre, the correction $-2\operatorname{tr}(X)\operatorname{tr}(Y)$ is exactly what removes the contribution of the scalar part. On the traceless part the correction vanishes and</p>
+<p>$$
+B(X,Y)=2n\operatorname{tr}(XY)\qquad(X,Y\in\mathfrak{sl}_n),
+$$</p>
+<p>so the Killing form of $\mathfrak{sl}_n$ is $2n$ times the trace form, which was verified at $n=2,3,4$.</p>
+<p><strong>The form is invariant under all derivations.</strong> For every $A$,</p>
+<p>$$
+B([A,X],Y)+B(X,[A,Y])=0,
+$$</p>
+<p>which follows from the formula and was checked numerically. So the Killing form is the invariant form that the derivation algebra acts by skew maps, and it is the form used in the reductivity criterion.</p>
+<h2 id="the-radical-and-the-reductive-splitting">The Radical and the Reductive Splitting</h2>
+<p><strong>The radical is the centre.</strong> Write $X=X_0+\tfrac1n\operatorname{tr}(X)\mathrm{I}$ with $X_0$ traceless. Then</p>
+<p>$$
+B(X,Y)=2n\operatorname{tr}(X_0Y),
+$$</p>
+<p>so $B(X,Y)=0$ for all $Y$ exactly when $\operatorname{tr}(X_0Y)=0$ for all traceless $Y$, which happens exactly when $X_0=0$. Hence</p>
+<p>$$
+\operatorname{rad}B=\mathbb{C}\mathrm{I},\qquad \dim\operatorname{rad}B=1 .
+$$</p>
+<p>So the algebra is reductive and not semisimple, with a one-dimensional radical spanned by the identity.</p>
+<p><strong>The Killing form is the orthogonal sum of a nondegenerate form and a zero form.</strong> The line $\mathbb{C}\mathrm{I}$ is orthogonal to everything and carries the zero form, and on $\mathfrak{sl}_n$ the form is nondegenerate. So</p>
+<p>$$
+\mathfrak{gl}_n=\mathfrak{sl}_n\perp\mathbb{C}\mathrm{I},\qquad B|_{\mathfrak{sl}_n}\ \text{nondegenerate},\qquad B|_{\mathbb{C}\mathrm{I}}=0,
+$$</p>
+<p>which is Cartan's criterion read in the simplest case: a Lie algebra is semisimple exactly when its Killing form is nondegenerate, and $\mathfrak{gl}_n$ fails by exactly the centre.</p>
+<p><strong>The two halves are not orthogonal for the Killing form.</strong> Since the correction term involves traces, a symmetric and an antisymmetric matrix still pair through $2n\operatorname{tr}(SK)$, so the Killing form is $2n$ times the trace form on the whole algebra and the orthogonality of the halves is inherited from the trace form. What changes is the sign pattern, not the blocks.</p>
+<h2 id="the-signature-on-math43">The Signature on $\mathfrak{sl}_n$</h2>
+<p><strong>On the real traceless algebra the signature is inherited from the trace form, scaled by $2n$.</strong> Since $B=2n\operatorname{tr}$ there and $2n>0$, the signs are those of <em>The Trace Form and Its Signature on the Two Halves</em>:</p>
+<p>$$
+\operatorname{sig}\big(B|_{\mathfrak{sl}_n(\mathbb{R})}\big)=\Big(\frac{n(n+1)}{2}-1,\ \frac{n(n-1)}{2}\Big)=(2,1),\ (5,3),\ (9,6)\quad(n=2,3,4).
+$$</p>
+<p>So the form is indefinite for every $n\ge2$, of positive index $\tfrac12n(n+1)-1$ and negative index $\tfrac12n(n-1)$, and the two add to $n^{2}-1$.</p>
+<p><strong>The negative directions are the rotations and the positive directions are the stretches.</strong> The antisymmetric matrices give the negative part and the traceless symmetric matrices the positive part, with the split at the level of the trace form. So the Killing form of $\mathfrak{sl}_n(\mathbb{R})$ is negative on the compact direction and positive on the non-compact one, and the compact form $\mathfrak{su}(n)$ is the subalgebra on which it is negative definite.</p>
+<p><strong>On $\mathfrak{su}(n)$ the form is negative definite.</strong> For $X\in\mathfrak{su}(n)$, $X^{*}=-X$ and $X$ is traceless, so</p>
+<p>$$
+B(X,X)=2n\operatorname{tr}(X^{2})=-2n\operatorname{tr}(XX^{*})<0 .
+$$</p>
+<p>So the compact real form is exactly the negative definite part, and the index of the form on $\mathfrak{sl}_n(\mathbb{R})$ counts the non-compact directions.</p>
+<h2 id="the-two-halves-and-the-two-values-of-the-form">The Two Halves and the Two Values of the Form</h2>
+<p><strong>Inside the antisymmetric half the Killing form is $(n-2)\operatorname{tr}(XY)$, and in the whole algebra it is $2n\operatorname{tr}(XY)$.</strong> Both statements are correct and they refer to different algebras:</p>
+<p>$$
+B_{\mathfrak{so}(n)}(X,Y)=(n-2)\operatorname{tr}(XY),\qquad B_{\mathfrak{gl}_n}(X,Y)\big|_{X,Y\in\mathfrak{so}(n)}=2n\operatorname{tr}(XY),
+$$</p>
+<p>which were computed separately at $n=2,3,4$: the first by building the derivations inside $\mathfrak{so}(n)$ alone, the second by building them in $\mathfrak{gl}_n$. At $n=2$ the first value is zero, since $\mathfrak{so}(2)$ is abelian, while the second is $4\operatorname{tr}(XY)\neq0$.</p>
+<p><strong>The difference is the contribution of the symmetric half.</strong> The adjoint action of $\mathfrak{so}(n)$ on the complement $\operatorname{Sym}_n$ is nontrivial, so the trace over $\mathfrak{gl}_n$ is the trace over $\mathfrak{so}(n)$ plus the trace over the module $\operatorname{Sym}_n$:</p>
+<p>$$
+2n\operatorname{tr}(XY)=(n-2)\operatorname{tr}(XY)+c_n\operatorname{tr}(XY),\qquad c_n=n+2 .
+$$</p>
+<p>So the two values differ by the trace of the action on the symmetric square, and the identity was verified at $n=3,4$ with the computed constant.</p>
+<p><strong>The intrinsic value is the one that decides the structure.</strong> Since $(n-2)\operatorname{tr}(XY)$ is negative definite for $n\ge3$, $\mathfrak{so}(n)$ is compact and semisimple; the ambient value $2n\operatorname{tr}(XY)$ is also negative definite there, so the two agree in sign but differ in scale, and only the intrinsic one is the Killing form of the algebra.</p>
+<h2 id="the-triangular-case">The Triangular Case</h2>
+<p><strong>The Killing form of $UT_n$ vanishes on the commutator.</strong> By Cartan's criterion a Lie algebra is solvable exactly when $B(\mathfrak{g},[\mathfrak{g},\mathfrak{g}])=0$, and $UT_n$ is solvable with commutator $n_+$. So</p>
+<p>$$
+B\big(UT_n,\,[UT_n,UT_n]\big)=0,
+$$</p>
+<p>and the radical of $B$ contains $n_+$. The computation confirms it: the form is carried entirely by the diagonal.</p>
+<p><strong>On the diagonal the form is $B(D_\lambda,D_\mu)=n\sum_i\lambda_i\mu_i-\big(\sum_i\lambda_i\big)\big(\sum_i\mu_i\big)$.</strong> With $D_\lambda=\operatorname{diag}(\lambda_1,\dots,\lambda_n)$, the adjoint action on $E_{ij}$ is multiplication by $\lambda_i-\lambda_j$, and only the strictly upper part contributes, so</p>
+<p>$$
+B(D_\lambda,D_\mu)=\sum_{i<j}(\lambda_i-\lambda_j)(\mu_i-\mu_j)=n\sum_i\lambda_i\mu_i-\sum_i\lambda_i\sum_i\mu_i .
+$$</p>
+<p>On the units this gives $B(E_{ii},E_{jj})=n\delta_{ij}-1$, which the computation reproduces at $n=2,3,4,5$, and the rank is $n-1$.</p>
+<p><strong>The radical is $n_+\oplus\mathbb{R}\mathrm{I}$.</strong> The kernel of the diagonal form is the line of scalars, and $n_+$ is in the radical by Cartan's criterion, so</p>
+<p>$$
+\operatorname{rad}B_{UT_n}=n_+\oplus\mathbb{R}\mathrm{I},\qquad \dim=1+\frac{n(n-1)}{2},
+$$</p>
+<p>which was verified by the rank of the Gram matrix: the ranks are $1,2,3,4$ and the nullities $2,4,7,11$ at $n=2,3,4,5$, equal to $1+n(n-1)/2$ in each case.</p>
+<p><strong>So the two algebras of dimension $n(n+1)/2$ have Killing forms of rank $n(n+1)/2$ and $n-1$.</strong> The symmetric half is not a Lie algebra and has no Killing form of its own, but the comparison is with the antisymmetric half, whose form has full rank: $n(n-1)/2$ on $\mathfrak{so}(n)$ and $n^{2}-1$ on $\mathfrak{sl}_n$. The triangular algebra is the degenerate case, and its degeneracy is the exact measure of its solvability.</p>
+<h2 id="the-case-math109">The Case $n=2$</h2>
+<p><strong>At $n=2$ the form is $4\operatorname{tr}(XY)-2\operatorname{tr}(X)\operatorname{tr}(Y)$ with one-dimensional radical.</strong> In the basis $\mathrm{I},J$ of the diagonal algebra,</p>
+<p>$$
+B(\mathrm{I},\mathrm{I})=0,\qquad B(\mathrm{I},J)=0,\qquad B(J,J)=-8,
+$$</p>
+<p>which the computation confirms, so the radical is $\mathbb{R}\mathrm{I}$ and the traceless line is negative definite. The antisymmetric half is the traceless line, and the value $-8$ is $2n\operatorname{tr}(J^{2})=4\cdot(-2)$.</p>
+<p><strong>The two values on the antisymmetric line are $0$ and $-8$.</strong> The intrinsic Killing form of $\mathfrak{so}(2)$ vanishes because the algebra is abelian, and the ambient form takes the value $-8$ on $J$; the difference is the action on $\operatorname{Sym}_2$, of constant $c_2=4$. So at $n=2$ the discrepancy between the two values is as large as it can be, since one of them is zero.</p>
+<p><strong>At $n=2$ the triangular algebra has a rank-one Killing form.</strong> $UT_2$ has dimension $3$, the form has rank $1$ and nullity $2$, and on the units</p>
+<p>$$
+B(E_{11},E_{11})=B(E_{22},E_{22})=1,\qquad B(E_{11},E_{22})=-1,\qquad B(E_{12},\cdot)=0,
+$$</p>
+<p>which the computation reproduces. So the radical is $n_+\oplus\mathbb{R}\mathrm{I}$, the line of the companion nilpotent plus the line of the identity, and the only nondegenerate direction is the traceless diagonal.</p>
+<h2 id="summary">Summary</h2>
+<p>The Killing form of $\mathfrak{gl}_n$ is $2n\operatorname{tr}(XY)-2\operatorname{tr}(X)\operatorname{tr}(Y)$, its radical is the centre $\mathbb{C}\mathrm{I}$, and on $\mathfrak{sl}_n$ it reduces to $2n\operatorname{tr}(XY)$ with signature $(n(n+1)/2-1,n(n-1)/2)$, negative definite on the compact form $\mathfrak{su}(n)$. On the antisymmetric half the intrinsic value is $(n-2)\operatorname{tr}(XY)$ and the ambient value is $2n\operatorname{tr}(XY)$, differing by the trace of the action on the symmetric square with constant $n+2$. On $UT_n$ the form vanishes on the commutator $n_+$, is $n\sum\lambda_i\mu_i-\sum\lambda\sum\mu$ on the diagonal with rank $n-1$, and has radical $n_+\oplus\mathbb{R}\mathrm{I}$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$B(X,Y)=\operatorname{tr}(\operatorname{ad}_X\operatorname{ad}_Y)$</td>
+<td>the Killing form</td>
+</tr>
+<tr>
+<td>$2n\operatorname{tr}(XY)-2\operatorname{tr}(X)\operatorname{tr}(Y)$</td>
+<td>its value on $\mathfrak{gl}_n$</td>
+</tr>
+<tr>
+<td>$\operatorname{rad}B=\mathbb{C}\mathrm{I}$</td>
+<td>the radical, the centre</td>
+</tr>
+<tr>
+<td>$(n-2)\operatorname{tr}(XY)$</td>
+<td>the Killing form of $\mathfrak{so}(n)$ computed inside itself</td>
+</tr>
+<tr>
+<td>$2n\operatorname{tr}(XY)$</td>
+<td>the restriction of the ambient form to $\mathfrak{so}(n)$</td>
+</tr>
+<tr>
+<td>$n+2$</td>
+<td>the constant of the difference, the trace on the symmetric square</td>
+</tr>
+<tr>
+<td>$n\sum\lambda_i\mu_i-\sum\lambda_i\sum\mu_i$</td>
+<td>the form on the diagonal of $UT_n$</td>
+</tr>
+<tr>
+<td>$n_+\oplus\mathbb{R}\mathrm{I}$</td>
+<td>the radical of the form on $UT_n$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>James E. Humphreys, <em>Introduction to Lie Algebras and Representation Theory</em> (Springer, 1972), for the Killing form, Cartan's criterion and reductive algebras.</li>
+<li>Karin Erdmann and Mark J. Wildon, <em>Introduction to Lie Algebras</em> (Springer, 2006), for the computation of the Killing form from the adjoint matrices.</li>
+<li>Sigurdur Helgason, <em>Differential Geometry, Lie Groups, and Symmetric Spaces</em> (AMS, 2001), for the signature of the Killing form and the compact forms.</li>
+<li><a href="the-derivation-commutator-and-its-skewness-for-the-trace-form.html">The Derivation $X\mapsto[A,X]$ and Its Skewness for the Trace Form</a>, for the derivation trace form that the Killing form is.</li>
+<li><a href="the-trace-form-and-its-signature-on-the-two-halves.html">The Trace Form and Its Signature on the Two Halves</a>, for the signatures that the form inherits.</li>
+<li><a href="the-antisymmetric-part-inside-utn-the-radical-as-the-commutator.html">The Antisymmetric Part inside $UT_n$: the Radical as the Commutator</a>, for the solvability that makes the triangular form degenerate.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

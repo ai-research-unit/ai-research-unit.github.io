@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Topology of $M_n(\mathbb{R})$ and the Sign of the Determinant — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-topology-of-math0-and-the-sign-of-the-determinant"><strong>The Topology of $M_n(\mathbb{R})$ and the Sign of the Determinant</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The algebra $M_n(\mathbb{R})$ is a Euclidean space and its unit group has exactly two connected components, cut by the sign of the determinant; the sign is the only obstruction to a path.</strong> The space itself is contractible, so all of its topology sits in the complement of the singular set. That complement retracts onto the orthogonal group, and the two components of the orthogonal group are the two signs.</p>
+<p>The article proves that $M_n(\mathbb{R})$ is homeomorphic to $\mathbb{R}^{n^{2}}$ and contractible, that $\mathrm{GL}_n(\mathbb{R})$ is open and dense with two path-connected components, that the components are homeomorphic, that $\mathrm{O}(n)$ is a deformation retract, that the fundamental group of the identity component is $\mathbb{Z}$ at $n=2$ and $\mathbb{Z}/2$ at $n\ge3$, and that the singular set $\{\det=0\}$ is an algebraic hypersurface of dimension $n^{2}-1$. It assumes <em>The Matrix Algebra $M_n(\mathbb{R})$</em> for the determinant and the unit group, and it defers the topology of the two halves to <em>The Two Halves and Their Topology</em>.</p>
+<p>Throughout $n\ge2$ and $M_n=M_n(\mathbb{R})$.</p>
+<h2 id="the-space-is-euclidean">The Space Is Euclidean</h2>
+<p><strong>Theorem.</strong> $M_n$ is homeomorphic to $\mathbb{R}^{n^{2}}$.</p>
+<p><em>Proof.</em> The map that lists the $n^{2}$ entries in a fixed order is a linear bijection $M_n\to\mathbb{R}^{n^{2}}$, and a linear bijection of finite-dimensional real spaces is a homeomorphism.</p>
+<p><strong>The space is contractible.</strong> The map $H(A,t)=(1-t)A$ is continuous on $M_n\times[0,1]$, it starts at the identity of the space and ends at the zero matrix. So every point is joined to $0$ by a path, and the whole space is contractible. In particular $M_n$ is simply connected and all of its homotopy groups vanish.</p>
+<h2 id="the-unit-group-is-open-and-dense">The Unit Group Is Open and Dense</h2>
+<p><strong>Theorem.</strong> $\mathrm{GL}_n(\mathbb{R})=\{\det\ne0\}$ is open and dense in $M_n$, and its complement $\Sigma=\{\det=0\}$ is closed with empty interior.</p>
+<p><em>Proof.</em> The determinant is a polynomial in the entries, hence continuous, so the preimage of the open set $\mathbb{R}^{\times}$ is open and the preimage of $\{0\}$ is closed. For density, let $A$ be singular and let $A_{k}=A+\tfrac1k\mathrm{I}$. Then $\det A_{k}$ is a polynomial in $1/k$ with constant term $\det A=0$ and leading term $1$, so it is nonzero for all large $k$, and $A_{k}\to A$.</p>
+<p><strong>The singular set has measure zero.</strong> It is the zero set of a nonzero polynomial, and a nonzero polynomial vanishes on a set of Lebesgue measure zero. So a random matrix is invertible with probability one, and the two open sets $\{\det>0\}$ and $\{\det<0\}$ cover almost everything.</p>
+<p><strong>The singular set is a hypersurface of dimension $n^{2}-1$.</strong> It is a real algebraic variety, defined by the single equation $\det=0$, and it contains the hyperplane of matrices with last row zero, of dimension $n^{2}-n$. Its dimension is at most $n^{2}-1$ and at least $n^{2}-n$; the exact value $n^{2}-1$ follows because the differential of $\det$ at $\mathrm{I}$ is $H\mapsto\operatorname{tr}H$, which is nonzero, so the level set is smooth of codimension one near $\mathrm{I}$. The complement is a manifold of dimension $n^{2}$.</p>
+<h2 id="the-sign-of-the-determinant">The Sign of the Determinant</h2>
+<p><strong>The determinant is a continuous surjection onto $\mathbb{R}^{\times}$.</strong> It is a polynomial in the entries, and it is onto because $\det\operatorname{diag}(\lambda,1,\dots,1)=\lambda$ for every nonzero $\lambda$.</p>
+<p><strong>The sign is a continuous map onto two points.</strong></p>
+<p>$$
+\operatorname{sgn}\det:\mathrm{GL}_n(\mathbb{R})\longrightarrow\{+1,-1\}.
+$$</p>
+<p>Since $\{+1,-1\}$ is discrete, the sign is constant on each connected component of the unit group. So the unit group has at least two components, one of each sign.</p>
+<p><strong>The two sets are homeomorphic.</strong> Let $D=\operatorname{diag}(-1,1,\dots,1)$. Then $\det D=-1$ and the map $A\mapsto DA$ is a homeomorphism of $\mathrm{GL}_n(\mathbb{R})$ carrying $\mathrm{GL}^{+}$ onto $\mathrm{GL}^{-}$, with inverse $A\mapsto DA$. Multiplication by $D$ is its own inverse, so the two halves of the unit group are homeomorphic and have the same homotopy type. Measured at $n=3$, $\det D=-1$ and $\det(DA)=-\det A$ for random $A$.</p>
+<h2 id="the-two-components">The Two Components</h2>
+<p><strong>Theorem.</strong> $\mathrm{GL}_n(\mathbb{R})^{+}$ and $\mathrm{GL}_n(\mathbb{R})^{-}$ are path connected, and they are the two connected components of $\mathrm{GL}_n(\mathbb{R})$.</p>
+<p><em>Proof.</em> Let $A$ have $\det A>0$ and write its polar decomposition $A=UP$ with $U$ orthogonal and $P$ positive definite. Then $\det U=\det A/\det P>0$, so $U\in\mathrm{SO}(n)$. Every element of $\mathrm{SO}(n)$ is $\exp(S)$ for a skew $S$, so $t\mapsto\exp(tS)$ joins $U$ to $\mathrm{I}$ inside $\mathrm{SO}(n)$, and $t\mapsto P^{t}$ joins $P$ to $\mathrm{I}$ inside the positive definite matrices, a convex set. The product $t\mapsto\exp(tS)P^{t}$ is a path in $\mathrm{GL}^{+}$ from $A$ to $\mathrm{I}$. The same argument after multiplication by $D$ handles $\mathrm{GL}^{-}$, which is the homeomorphic image $D\,\mathrm{GL}^{+}$.</p>
+<p><strong>The two components are the two signs.</strong> The sign is continuous and the unit group has exactly two path-connected pieces, so two matrices lie in the same component exactly when their determinants have the same sign. Measured at $n=3$, the segment from $\mathrm{I}$ to $D$ has determinant $1-2t$, with values $1.0,0.8,0.6,0.4,0.2,0.0,-0.2,-0.4,-0.6,-0.8,-1.0$ at the eleven points $t=0,0.1,\dots,1$: the path crosses the singular set at $t=1/2$ and changes component there.</p>
+<p><strong>The two components are not the two halves of the algebra.</strong> $\det(-\mathrm{I})=(-1)^{n}$, so $-\mathrm{I}$ lies in $\mathrm{GL}^{+}$ for even $n$ and in $\mathrm{GL}^{-}$ for odd $n$; and the symmetric half meets both components, since $\mathrm{I}$ and $-\mathrm{I}$ are both symmetric. So the cut by the sign is topological, not linear, as in <em>The Matrix Algebra $M_n(\mathbb{R})$</em>.</p>
+<p><strong>Neither component is contractible.</strong> Both retract onto $\mathrm{SO}(n)$, as the next section shows, and $\mathrm{SO}(n)$ has a nontrivial fundamental group for $n\ge2$.</p>
+<h2 id="the-maximal-compact-subgroup">The Maximal Compact Subgroup</h2>
+<p><strong>Theorem.</strong> $\mathrm{O}(n)$ is a deformation retract of $\mathrm{GL}_n(\mathbb{R})$.</p>
+<p><em>Proof.</em> The polar decomposition writes every invertible $A$ uniquely as $UP$ with $U\in\mathrm{O}(n)$ and $P$ positive definite, both depending continuously on $A$. The map $r(A)=U$ is continuous, it is the identity on $\mathrm{O}(n)$, and $H(A,t)=U\,P^{t}$ deforms the identity of $\mathrm{GL}$ to $r$ through maps that fix $\mathrm{O}(n)$. So $\mathrm{O}(n)$ is a deformation retract.</p>
+<p><strong>The unit group and the orthogonal group have the same homotopy type.</strong> Hence</p>
+<p>$$
+\mathrm{GL}_n(\mathbb{R})\simeq\mathrm{O}(n),\qquad \mathrm{GL}_n(\mathbb{R})^{+}\simeq\mathrm{SO}(n),
+$$</p>
+<p>and the second retraction is the first followed by the observation that $U$ has the sign of $\det A$. So the topology of the unit group is the topology of the orthogonal group, and the two components are the two components of $\mathrm{O}(n)$.</p>
+<p><strong>The dimensions agree.</strong> $\dim\mathrm{GL}_n(\mathbb{R})=n^{2}$ and $\dim\mathrm{O}(n)=n(n-1)/2$, so the retraction drops $n^{2}-n(n-1)/2=n(n+1)/2$ dimensions, the dimension of the positive definite cone. Measured at $n=3$, the retraction of a random invertible matrix is orthogonal to machine precision.</p>
+<h2 id="the-fundamental-group">The Fundamental Group</h2>
+<p><strong>Theorem.</strong> $\pi_1(\mathrm{GL}_n(\mathbb{R})^{+})=\mathbb{Z}$ for $n=2$ and $\mathbb{Z}/2$ for $n\ge3$.</p>
+<p><strong>The case $n=2$.</strong> $\mathrm{GL}_2(\mathbb{R})^{+}\simeq\mathrm{SO}(2)$, and $\mathrm{SO}(2)$ is the circle, by $t\mapsto\begin{pmatrix}\cos t&-\sin t\\ \sin t&\cos t\end{pmatrix}$. So the fundamental group is $\pi_1(S^{1})=\mathbb{Z}$.</p>
+<p><strong>The case $n\ge3$.</strong> $\mathrm{SO}(n)$ is the quotient of its universal cover, the spin group, by a group of order two, and $\pi_1(\mathrm{SO}(n))=\mathbb{Z}/2$ for $n\ge3$. The generator is the loop of rotations by a full turn in a fixed plane, which is not null-homotopic for $n\ge3$ although it lifts to a path in the spin group joining the two preimages of the identity. So the fundamental group has order two.</p>
+<p><strong>The non-identity component has the same fundamental group.</strong> $\mathrm{GL}^{-}=D\,\mathrm{GL}^{+}$ and multiplication by $D$ is a homeomorphism, so $\pi_1(\mathrm{GL}^{-})=\pi_1(\mathrm{GL}^{+})$. The unit group as a whole is disconnected, so it has no single fundamental group: the groupoid of paths has two objects, one for each component, and each object has the group above.</p>
+<h2 id="the-singular-set">The Singular Set</h2>
+<p><strong>The singular set is a real algebraic hypersurface.</strong> $\Sigma=\{\det=0\}$ is defined by one polynomial of degree $n$, of dimension $n^{2}-1$. It is not a manifold at every point: the matrices of rank $n-1$ form its smooth part, and the matrices of lower rank form its singular locus, of dimension $n^{2}-4$ at the stratum of rank $n-2$ and lower.</p>
+<p><strong>The strata of the singular set are the rank strata.</strong> The set of matrices of rank exactly $r$ is a manifold of dimension $r(2n-r)$, so the singular set is the union of the strata of ranks $0,1,\dots,n-1$, of dimensions $0,2n-1,\dots,n^{2}-1$. The largest stratum, of rank $n-1$, is the smooth part of the hypersurface, and the lower strata are its singular locus. So the hypersurface has the dimension of its largest stratum, and a singular locus of dimension $n^{2}-4$, which is $5$ at $n=3$ and $12$ at $n=4$.</p>
+<h2 id="the-sign-is-the-only-obstruction">The Sign Is the Only Obstruction</h2>
+<p><strong>Theorem.</strong> Two invertible matrices lie in the same path component exactly when their determinants have the same sign.</p>
+<p><em>Proof.</em> Each component has a constant sign, so matrices in the same component have determinants of the same sign. Conversely, let $\det A$ and $\det B$ have the same sign. If the sign is positive, both lie in $\mathrm{GL}^{+}$, which is path connected, so they are joined. If the sign is negative, $DA$ and $DB$ lie in $\mathrm{GL}^{+}$ and are joined by a path; multiplying that path by $D$ joins $A$ to $B$ inside $\mathrm{GL}^{-}$.</p>
+<p><strong>The sign is a complete invariant.</strong> The theorem says that the sign of the determinant is the only obstruction to a path. Nothing else separates two invertible matrices: rank, spectrum, eigenvalues, the size of the entries all vary continuously inside a component. So the component is a homotopy class, and the map $\operatorname{sgn}\det$ is a homotopy equivalence of $\mathrm{GL}_n(\mathbb{R})$ onto the two-point space in degree zero.</p>
+<p><strong>The statement is false over $\mathbb{C}$.</strong> Over $\mathbb{C}$ the determinant is a surjection onto $\mathbb{C}^{\times}$, which is connected, and $\mathrm{GL}_n(\mathbb{C})$ is path connected. So the two components are a real phenomenon, and they come from the two components of $\mathbb{R}^{\times}$ exactly as in <em>The Matrix Algebra $M_n(\mathbb{R})$</em>.</p>
+<p><strong>The two components are the two halves of the orthogonal group.</strong> Under the retraction onto $\mathrm{O}(n)$, the positive component goes to $\mathrm{SO}(n)$ and the negative one to the other component of $\mathrm{O}(n)$, the set of orthogonal matrices with determinant $-1$. That set is $D\,\mathrm{SO}(n)$, a homeomorphic copy of $\mathrm{SO}(n)$, so the unit group is the disjoint union of two copies of $\mathrm{SO}(n)$.</p>
+<h2 id="summary">Summary</h2>
+<p>$M_n(\mathbb{R})$ is homeomorphic to $\mathbb{R}^{n^{2}}$, hence contractible and simply connected, and all of its topology sits in the subsets defined by polynomial conditions. The unit group $\mathrm{GL}_n(\mathbb{R})=\{\det\ne0\}$ is open and dense, and the singular set $\Sigma=\{\det=0\}$ is a real algebraic hypersurface of dimension $n^{2}-1$ whose smooth part is the stratum of rank $n-1$. The determinant has two signs, so the unit group has exactly two components, $\mathrm{GL}^{+}$ and $\mathrm{GL}^{-}$, each path connected and each homeomorphic to the other by multiplication by $\operatorname{diag}(-1,1,\dots,1)$. The orthogonal group $\mathrm{O}(n)$ is a deformation retract, so $\mathrm{GL}^{\pm}\simeq\mathrm{SO}(n)$, and $\pi_1(\mathrm{GL}^{+})=\mathbb{Z}$ at $n=2$ and $\mathbb{Z}/2$ at $n\ge3$. The sign of the determinant is a complete invariant of the component: it is the only obstruction to a path.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M_n(\mathbb{R})\cong\mathbb{R}^{n^{2}}$</td>
+<td>the algebra as a topological space, contractible</td>
+</tr>
+<tr>
+<td>$\mathrm{GL}_n(\mathbb{R})$</td>
+<td>the unit group, the open dense set $\{\det\ne0\}$</td>
+</tr>
+<tr>
+<td>$\Sigma=\{\det=0\}$</td>
+<td>the singular set, an algebraic hypersurface of dimension $n^{2}-1$</td>
+</tr>
+<tr>
+<td>$\mathrm{GL}^{+}$, $\mathrm{GL}^{-}$</td>
+<td>the components of positive and of negative determinant</td>
+</tr>
+<tr>
+<td>$D=\operatorname{diag}(-1,1,\dots,1)$</td>
+<td>the matrix carrying $\mathrm{GL}^{+}$ onto $\mathrm{GL}^{-}$</td>
+</tr>
+<tr>
+<td>$\mathrm{O}(n)$, $\mathrm{SO}(n)$</td>
+<td>the orthogonal group and its identity component, the deformation retracts</td>
+</tr>
+<tr>
+<td>$\pi_1(\mathrm{GL}^{+})$</td>
+<td>$\mathbb{Z}$ at $n=2$, $\mathbb{Z}/2$ at $n\ge3$</td>
+</tr>
+<tr>
+<td>$\operatorname{sgn}\det$</td>
+<td>the continuous surjection onto $\{+1,-1\}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Allen Hatcher, <em>Algebraic Topology</em> (Cambridge, 2002), for the fundamental group of the orthogonal groups and the covering by the spin group.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for the determinant, the polar decomposition and the orthogonal group.</li>
+<li><a href="the-matrix-algebra-mnr.html">The Matrix Algebra $M_n(\mathbb{R})$</a>, for the determinant, the unit group and the two components.</li>
+<li><a href="the-adjoints-and-the-polar-decomposition-of-an-operator-over-r.html">The Adjoints and the Polar Decomposition of an Operator</a>, for the polar decomposition as a retraction.</li>
+<li><a href="the-two-halves-and-their-topology-over-r.html">The Two Halves and Their Topology</a>, for the symmetric and antisymmetric halves and their strata.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

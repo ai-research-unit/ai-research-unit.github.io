@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Symmetric and Antisymmetric Parts of a Product — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-symmetric-and-antisymmetric-parts-of-a-product"><strong>The Symmetric and Antisymmetric Parts of a Product</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The symmetric part of a product is $S\circ S'+K\circ K'$ plus two brackets, and the antisymmetric part is $\tfrac12[S,S']+\tfrac12[K,K']$ plus two anticommutators: each of the four pieces of the product contributes to both halves, and the contributions are the four products of the next article.</strong></p>
+<p>The article derives the two formulas from the split $A=S+K$, verifies them for random elements at $n=2,3,4,6$, and draws three consequences: the trace of a product sees only the like pieces, $\operatorname{tr}(AB)=\operatorname{tr}(SS')+\operatorname{tr}(KK')$; the commutator and the anticommutator split by the same rule with the brackets and the anticommutators exchanged; and the two projections commute with the product only for commuting factors. It assumes <em>The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric</em> for the split and <em>The Two Halves as Orthogonal Complements</em> for the orthogonality used in the trace computation. It defers the systematic tables to <em>The Four Multiplication Tables: $SS$, $SK$, $KS$, $KK$</em> and the operator version to <em>The Symmetric and Antisymmetric Parts of the Operator Space</em>.</p>
+<h2 id="the-product-of-two-elements">The Product of Two Elements</h2>
+<p><strong>Write each factor as its two halves and multiply out.</strong> For $A=S+K$ and $B=S'+K'$ with $S,S'$ symmetric and $K,K'$ antisymmetric,</p>
+<p>$$
+AB=SS'+SK'+KS'+KK' .
+$$</p>
+<p>The four terms are distinct in general and none of them vanishes identically, so the product of two elements of the algebra is a sum of four products of halves. The two halves of $A$ and the two of $B$ give the four terms of the table, and the order matters: $SK'$ and $K'S$ are different matrices.</p>
+<p><strong>Taking the transpose exchanges the halves and reverses the order.</strong> Since $(XY)^{\mathsf T}=Y^{\mathsf T}X^{\mathsf T}$,</p>
+<p>$$
+(AB)^{\mathsf T}=S'S-S'K-K'S+K'K ,
+$$</p>
+<p>so the transpose of the product is the product of the transposed factors in the reversed order, and each term of the expansion changes its half: $SS'$ stays symmetric and $KK'$ stays symmetric, while $SK'$ and $KS'$ become $-S'K$ and $-K'S$. The two halves of $AB$ are therefore read from the same four terms with signs.</p>
+<p><strong>The projections onto the halves are applied term by term.</strong> With $\pi_{\pm}(X)=\tfrac12(X\pm X^{\mathsf T})$,</p>
+<p>$$
+\pi_{+}(AB)=\pi_{+}(SS')+\pi_{+}(KK')+\pi_{+}(SK'+KS'),\qquad
+\pi_{-}(AB)=\pi_{-}(SS')+\pi_{-}(KK')+\pi_{-}(SK'+KS'),
+$$</p>
+<p>because $SS'$ and $KK'$ contribute skew parts and $SK'+KS'$ contributes both. The computation of the four pieces is the content of the next section.</p>
+<h2 id="the-four-contributions">The Four Contributions</h2>
+<p><strong>The symmetric parts of the four terms are computable one at a time.</strong> For symmetric $S,S'$ and antisymmetric $K,K'$,</p>
+<p>$$
+\pi_{+}(SS')=\tfrac12(SS'+S'S)=S\circ S',\qquad \pi_{+}(KK')=\tfrac12(KK'+K'K)=K\circ K',
+$$</p>
+<p>$$
+\pi_{+}(SK')=\tfrac12(SK'-K'S)=\tfrac12[S,K'],\qquad \pi_{+}(KS')=\tfrac12(KS'-S'K)=\tfrac12[K,S'] .
+$$</p>
+<p>The first two are the Jordan products, and the second two are the brackets of a symmetric with an antisymmetric matrix, which are symmetric by the closure rule of <em>The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric</em>. Hence</p>
+<p>$$
+\pi_{+}(AB)=S\circ S'+K\circ K'+\tfrac12[S,K']+\tfrac12[K,S'] .
+$$</p>
+<p><strong>The antisymmetric parts are computed the same way, and the signs flip.</strong> For the same four terms,</p>
+<p>$$
+\pi_{-}(SS')=\tfrac12(SS'-S'S)=\tfrac12[S,S'],\qquad \pi_{-}(KK')=\tfrac12[K,K'],
+$$</p>
+<p>$$
+\pi_{-}(SK')=\tfrac12(SK'+K'S)=\tfrac12\{S,K'\},\qquad \pi_{-}(KS')=\tfrac12\{K,S'\},
+$$</p>
+<p>so that</p>
+<p>$$
+\pi_{-}(AB)=\tfrac12[S,S']+\tfrac12[K,K']+\tfrac12\{S,K'\}+\tfrac12\{K,S'\} .
+$$</p>
+<p>Both formulas were verified at $n=2,3,4,6$ against the direct computation of $\tfrac12(AB\pm(AB)^{\mathsf T})$, with agreement to machine precision.</p>
+<p><strong>The rule behind the signs is the parity of the two factors.</strong> A product of two elements of the same half contributes a symmetric part equal to the Jordan product and an antisymmetric part equal to the bracket; a product of two elements of opposite halves contributes the other way round, a bracket to the symmetric part and an anticommutator to the antisymmetric part. In one line,</p>
+<p>$$
+\pi_{\epsilon}(XY)=\tfrac12\big(XY+\epsilon\,Y^{\mathsf T}X^{\mathsf T}\big)
+$$</p>
+<p>takes the symmetric part at $\epsilon=+1$ and the antisymmetric part at $\epsilon=-1$, and the four formulas are its four evaluations.</p>
+<p><strong>The four terms of the expansion are not independent.</strong> They satisfy the single identity $SK'+KS'=(SK'+K'S)+(KS'-S'K)$ split into an anticommutator and a bracket, which is the polarisation of the product. The identity is what allows the mixed terms to be distributed between the two halves, and it is the reason the two formulas above contain four terms each rather than two.</p>
+<h2 id="the-trace-of-a-product">The Trace of a Product</h2>
+<p><strong>The trace of a product sees only the like pieces.</strong> Since $\operatorname{tr}(SK')=\operatorname{tr}(KS')=0$ for a symmetric $S$ and an antisymmetric $K'$,</p>
+<p>$$
+\operatorname{tr}(AB)=\operatorname{tr}(SS')+\operatorname{tr}(KK') .
+$$</p>
+<p>The cross terms of the expansion are traceless one by one, so the trace pairing between $A$ and $B$ is the sum of the pairings of the symmetric halves and of the antisymmetric halves. The identity was verified at $n=2,3,4,6$ and it holds for every $n$, since $\operatorname{tr}(XY)=\operatorname{tr}(YX)$ makes $\operatorname{tr}(SK')=-\operatorname{tr}(SK')$.</p>
+<p><strong>The trace of a product is therefore the sum of a positive and a negative definite pairing.</strong> On the symmetric halves $\operatorname{tr}(SS')$ is the positive definite trace form, and on the antisymmetric halves $\operatorname{tr}(KK')$ is the negative definite one. So</p>
+<p>$$
+\operatorname{tr}(A^{2})=\operatorname{tr}(S^{2})+\operatorname{tr}(K^{2})
+$$</p>
+<p>with the first term positive and the second negative, which is the signature statement of <em>The Trace Form and Its Signature on the Two Halves</em> read on a single element.</p>
+<p><strong>The trace of a product is not the product of the traces, and the defect is the cross term.</strong> For $A=S+K$ and $B=S'+K'$ the difference $\operatorname{tr}(A)\operatorname{tr}(B)-\operatorname{tr}(AB)$ equals $\operatorname{tr}(S)\operatorname{tr}(K')+\operatorname{tr}(K)\operatorname{tr}(S')+\operatorname{tr}(K)\operatorname{tr}(K')-\operatorname{tr}(KK')$, which vanishes only under conditions on the pieces. The comparison is the standard one between a form and a product and it is not used further in the category.</p>
+<h2 id="the-commutator-and-the-anticommutator">The Commutator and the Anticommutator</h2>
+<p><strong>The commutator splits by the same rule with the two products exchanged.</strong> Since $[A,B]=AB-BA$ and the expansion of $BA$ is the same four terms in the other order,</p>
+<p>$$
+\pi_{+}([A,B])=[S,K']+[K,S'],\qquad \pi_{-}([A,B])=[S,S']+[K,K'] .
+$$</p>
+<p>So the symmetric part of a commutator is made of the two mixed brackets and the antisymmetric part of the two like brackets; both identities were verified at $n=2,3,4,6$. In particular $[S,S']$ and $[K,K']$ are antisymmetric, which is the statement $[\operatorname{Sym},\operatorname{Sym}]\subseteq\operatorname{Skew}$ and $[\mathfrak{so},\mathfrak{so}]\subseteq\mathfrak{so}$ at once.</p>
+<p><strong>The anticommutator splits with the anticommutators in the symmetric part.</strong> Since $\{A,B\}=AB+BA$,</p>
+<p>$$
+\pi_{+}(\{A,B\})=2S\circ S'+2K\circ K',\qquad \pi_{-}(\{A,B\})=\{S,K'\}+\{K,S'\} .
+$$</p>
+<p>The symmetric part of the anticommutator depends only on the like pieces, and the antisymmetric part only on the mixed ones. So the two operations $\{A,B\}$ and $[A,B]$ separate the four pieces of the table completely: the anticommutator sees the like pieces in its symmetric part, the commutator sees them in its antisymmetric part.</p>
+<p><strong>The two operations together recover the product and its transpose.</strong> From $AB=\tfrac12\{A,B\}+\tfrac12[A,B]$ and the two splits, the four formulas of §<em>The Four Contributions</em> are the same statement written twice. The economy is not an accident: the product, its transpose, the commutator and the anticommutator are four readings of one bilinear map, and the split of the algebra into two halves is what makes the four readings visible.</p>
+<h2 id="the-case-math78">The Case $n=2$</h2>
+<p><strong>At $n=2$ the formulas reduce to products of Pauli matrices.</strong> With $S=a\mathrm{I}+b\sigma_1+c\sigma_3$ and $K=\theta J$,</p>
+<p>$$
+S\circ S'=(aa'+bb'+cc')\mathrm{I}+(ab'+a'b)\sigma_1+(ac'+a'c)\sigma_3,\qquad K\circ K'=-\theta\theta'\mathrm{I},
+$$</p>
+<p>the second because $J^{2}=-\mathrm{I}$, so two rotations compose to a negative scalar in the Jordan product. The brackets are $[S,K']=2\theta'(b\sigma_3-c\sigma_1)$ and $[K,S']=2\theta(c'\sigma_1-b'\sigma_3)$, which the computation confirms, and their sum is the symmetric part of the mixed contribution.</p>
+<p><strong>The trace identity is the Euclidean one.</strong> At $n=2$, $\operatorname{tr}(SS')=2(aa'+bb'+cc')$ and $\operatorname{tr}(KK')=-2\theta\theta'$, so</p>
+<p>$$
+\operatorname{tr}(AB)=2(aa'+bb'+cc'-\theta\theta'),
+$$</p>
+<p>the signature $(3,1)$ of <em>The Two Halves as Orthogonal Complements</em> written on the four coordinates.</p>
+<p><strong>The biquaternion reading makes the split visible in one product.</strong> The Peirce idempotents $\tilde\Pi_\pm=\tfrac12(e_t\pm\tilde{Ζ})$ are symmetric, so a product of two of them has a symmetric part given by the Jordan product and an antisymmetric part given by the bracket, and the bracket of the two idempotents is $\tfrac12[\tilde{Ζ},\cdot]$ read on the frame. The companion nilpotents $\vec\Upsilon_{+-}$ and $\vec\Upsilon_{-+}$ are neither symmetric nor antisymmetric, so they contribute to both halves of every product they enter, which is the algebraic form of the statement that a mixed corner is not stable under the transpose.</p>
+<h2 id="summary">Summary</h2>
+<p>For $A=S+K$ and $B=S'+K'$ the product expands into the four terms $SS'$, $SK'$, $KS'$ and $KK'$, and its two halves are $\pi_{+}(AB)=S\circ S'+K\circ K'+\tfrac12[S,K']+\tfrac12[K,S']$ and $\pi_{-}(AB)=\tfrac12[S,S']+\tfrac12[K,K']+\tfrac12\{S,K'\}+\tfrac12\{K,S'\}$. The trace of a product is $\operatorname{tr}(SS')+\operatorname{tr}(KK')$, so the cross terms are invisible to the trace and the trace form splits into a positive definite part on $\operatorname{Sym}_n$ and a negative definite part on $\operatorname{Skew}_n$. The commutator has symmetric part $[S,K']+[K,S']$ and antisymmetric part $[S,S']+[K,K']$, the anticommutator has symmetric part $2S\circ S'+2K\circ K'$ and antisymmetric part $\{S,K'\}+\{K,S'\}$, and the four readings together are the product and its transpose.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A=S+K$</td>
+<td>the split into symmetric and antisymmetric halves</td>
+</tr>
+<tr>
+<td>$S\circ S'=\tfrac12(SS'+S'S)$</td>
+<td>the Jordan product of two symmetric matrices</td>
+</tr>
+<tr>
+<td>$[S,S']=SS'-S'S$</td>
+<td>the commutator</td>
+</tr>
+<tr>
+<td>$\{S,K'\}=SK'+K'S$</td>
+<td>the anticommutator, antisymmetric for a symmetric and an antisymmetric factor</td>
+</tr>
+<tr>
+<td>$\pi_{\pm}(X)=\tfrac12(X\pm X^{\mathsf T})$</td>
+<td>the two projections onto the halves</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}(AB)=\operatorname{tr}(SS')+\operatorname{tr}(KK')$</td>
+<td>the trace of a product, blind to the cross terms</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the polarisation of a product into its symmetric and antisymmetric parts.</li>
+<li>Nathan Jacobson, <em>Structure and Representations of Jordan Algebras</em> (AMS, 1968), for the Jordan product and the identity $S\circ S'=\pi_{+}(SS')$.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for the transpose of a product and the trace identities.</li>
+<li><a href="the-two-halves-over-r-symmetric-and-antisymmetric.html">The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric</a>, for the closure rules used in the two formulas.</li>
+<li><a href="the-two-halves-as-orthogonal-complements.html">The Two Halves as Orthogonal Complements</a>, for the trace form and its signature on each half.</li>
+<li><a href="the-triangular-decomposition-h-n-plus-n-minus.html">The Triangular Decomposition $h\oplus n_+\oplus n_-$</a>, for the trace pairing computed on the summands.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

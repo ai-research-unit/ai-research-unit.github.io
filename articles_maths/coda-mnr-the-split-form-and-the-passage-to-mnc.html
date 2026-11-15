@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coda: $M_n(\mathbb{R})$, the Split Form, and the Passage to $M_n(\mathbb{C})$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="coda-math0-the-split-form-and-the-passage-to-math1"><strong>Coda: $M_n(\mathbb{R})$, the Split Form, and the Passage to $M_n(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>Three things exist over $\mathbb{R}$ and nowhere over $\mathbb{C}$: two classes of involutions of the first kind with the same fixed-space dimension, a spectrum that leaves the base field, and a trace form that is indefinite while the invariant forms are all indefinite too; these three facts are the whole difference between the two categories.</strong></p>
+<p>The coda collects the three phenomena, states the sense in which $M_n(\mathbb{R})$ is the split real form of $M_n(\mathbb{C})$, gives a dictionary of what happens to each structure under complexification and under the real form, and states what the real case teaches that the complex case cannot. It assumes the whole of the real series and cites it by title. It defers nothing; it is the last article.</p>
+<h2 id="the-three-phenomena">The Three Phenomena</h2>
+<p><strong>The first is the pair of involution classes.</strong> Transpose $\sigma(X)=X^{\mathsf T}$ and the symplectic involution $\sigma(X)=-JX^{\mathsf T}J^{-1}$ are both involutions of the first kind, both anti-automorphisms of the algebra, and both conjugate to their own transpose. Their fixed spaces have the same dimension,</p>
+<p>$$
+\dim\operatorname{Sym}_n=\frac{n(n+1)}{2}=\dim\{X:-JX^{\mathsf T}J^{-1}=X\},
+$$</p>
+<p>but one fixed space is a Jordan algebra and the other a Lie algebra. The fixed space of the transpose is closed under the anticommutator and not under the commutator; the fixed space of the symplectic involution is closed under the commutator and not under the anticommutator. Measured on $100$ random pairs, the symplectic fixed space is closed under the bracket on all $100$ and the symmetric space on none.</p>
+<p><strong>Over $\mathbb{C}$ the dichotomy survives and the signature does not.</strong> The sign in the product rule separates the two classes over every field, so the symplectic type is not conjugate to the transpose over $\mathbb{C}$ either. What complexification removes is the refinement inside the orthogonal class: over $\mathbb{C}$ every nondegenerate symmetric form is congruent to the identity, so all orthogonal involutions are conjugate, while over $\mathbb{R}$ Sylvester's law leaves one class per signature.</p>
+<p><strong>The second is the spectrum.</strong> The characteristic polynomial of a real matrix has real coefficients, so its roots are real or in complex conjugate pairs; the eigenvalues of an antisymmetric matrix are purely imaginary; the eigenvalues of a rotation come in planes with angles. None of this is visible over $\mathbb{C}$, where the fundamental theorem of algebra makes every polynomial split and every matrix triangularisable.</p>
+<p><strong>The third is the trace form.</strong> On $M_n(\mathbb{R})$ the form $\operatorname{tr}(XY)$ has signature $(n(n+1)/2,\,n(n-1)/2)$, so it is indefinite for $n\ge2$. The Hilbert–Schmidt form $\operatorname{tr}(X^{\mathsf T}Y)$ is definite but is not invariant and does not see the algebra structure. No form on $M_n(\mathbb{R})$ is both definite and invariant.</p>
+<p><strong>Over $\mathbb{C}$ there is such a form.</strong> $\operatorname{tr}(A^{*}B)$ is positive definite and invariant under unitary conjugation, so the two properties that are incompatible over $\mathbb{R}$ are compatible over $\mathbb{C}$. This is the sharpest single statement of the difference between the categories.</p>
+<h2 id="the-split-real-form">The Split Real Form</h2>
+<p><strong>Definition.</strong> $M_n(\mathbb{R})$ is a real form of $M_n(\mathbb{C})$: a real subalgebra whose complexification is the complex algebra, $M_n(\mathbb{R})\otimes_{\mathbb{R}}\mathbb{C}\cong M_n(\mathbb{C})$.</p>
+<p><strong>Theorem.</strong> The form is split: the real algebra contains a subalgebra isomorphic to $\mathbb{R}^{n}$, namely the diagonal matrices, of the maximal possible dimension for a commutative subalgebra of $M_n(\mathbb{R})$.</p>
+<p><em>Proof.</em> The diagonal matrices form an $n$-dimensional commutative subalgebra, and a commutative subalgebra of $M_n$ has dimension at most $n$ because a commuting family is simultaneously triangularisable and a triangular commutative algebra has dimension at most $n$. So $n$ is the maximal dimension, and a real form is split exactly when its Cartan subalgebra has the maximal dimension, which is the rank $n$ of the complex algebra.</p>
+<p><strong>The other real form is different, and it exists only for even $n$.</strong> For $n=2m$ the quaternion algebra $M_m(\mathbb{H})$, read as a real algebra of dimension $4m^{2}=n^{2}$, is a second real form: its complexification is $M_n(\mathbb{C})$, and its maximal commutative subalgebra has dimension $m=n/2$. For odd $n$ there is no second form. So $M_n(\mathbb{R})$ is the unique real form for odd $n$ and the split one for even $n$, and it is the form with the largest flats.</p>
+<p><strong>Consequence: the two real forms give different geometry.</strong> For the split form the symmetric space $\mathrm{GL}_n(\mathbb{R})/\mathrm{O}(n)$ has rank $n$; for $M_m(\mathbb{H})$ the analogous quotient $\mathrm{GL}_m(\mathbb{H})/\mathrm{Sp}(m)$ has rank $m=n/2$. The rank is a real invariant, invisible to the complex algebra.</p>
+<p><strong>Consequence: the real dimension of the algebra is fixed but the real dimension of the group is not.</strong> Both real forms of $M_n(\mathbb{C})$ have real dimension $n^{2}$; their groups of invertible elements have different topology, and one is homotopy equivalent to a compact group of the same rank while the other is not.</p>
+<h2 id="the-dictionary">The Dictionary</h2>
+<p><strong>The same construction, read over each field.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Structure</th>
+<th>over $\mathbb{R}$</th>
+<th>over $\mathbb{C}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the algebra</td>
+<td>$M_n(\mathbb{R})$, dimension $n^{2}$</td>
+<td>$M_n(\mathbb{C})$, real dimension $2n^{2}$</td>
+</tr>
+<tr>
+<td>the involution</td>
+<td>two types, and one orthogonal class per signature</td>
+<td>the same two types, one orthogonal class</td>
+</tr>
+<tr>
+<td>symmetric part</td>
+<td>$\operatorname{Sym}_n$, dimension $n(n+1)/2$</td>
+<td>$\operatorname{Sym}_n(\mathbb{C})$, complex dimension $n(n+1)/2$</td>
+</tr>
+<tr>
+<td>skew part</td>
+<td>$\operatorname{Skew}_n=\mathfrak{so}(n)$</td>
+<td>$\operatorname{Skew}_n(\mathbb{C})=\mathfrak{so}(n,\mathbb{C})$</td>
+</tr>
+<tr>
+<td>the trace form</td>
+<td>signature $(n(n+1)/2,\,n(n-1)/2)$</td>
+<td>the complex bilinear form, no signature</td>
+</tr>
+<tr>
+<td>the invariant definite form</td>
+<td>none</td>
+<td>$\operatorname{tr}(A^{*}B)$</td>
+</tr>
+<tr>
+<td>the unit group</td>
+<td>two components</td>
+<td>one component</td>
+</tr>
+<tr>
+<td>the spectrum</td>
+<td>real roots and conjugate pairs</td>
+<td>all roots, no pairs</td>
+</tr>
+<tr>
+<td>the Jordan form</td>
+<td>rotation blocks $2\times2$</td>
+<td>no rotation blocks</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Every entry of the real column is a restriction of the complex column, and the restriction loses information in a controlled way.</strong> The loss is the passage from a complex vector space to its real points, and the three phenomena of the first section are exactly the three places where the loss is visible.</p>
+<p><strong>The dictionary is not symmetric.</strong> Complexification is canonical; coming back is a choice of real form. So the real theory is not a special case of the complex theory but a family of choices inside it.</p>
+<h2 id="what-complexification-does-to-the-two-halves">What Complexification Does to the Two Halves</h2>
+<p><strong>Complexification preserves the two halves but not their definiteness.</strong> $\operatorname{Sym}_n\otimes\mathbb{C}=\operatorname{Sym}_n(\mathbb{C})$ and $\operatorname{Skew}_n\otimes\mathbb{C}=\operatorname{Skew}_n(\mathbb{C})$, so the splitting survives. What does not survive is the positivity: over $\mathbb{C}$ the form $\operatorname{tr}(X^{2})$ is complex-valued, so there is no positive and no negative half, only two isotropic halves.</p>
+<p><strong>Consequence: the cone disappears.</strong> The positive definite cone is defined by $v^{\mathsf T}Xv>0$ for real $v$, and over $\mathbb{C}$ the same condition with $v\ne0$ defines the set of Hermitian matrices, which is a real vector space, not a complex one. So the cone is a real object attached to a complex algebra, and it is the cone of a real form.</p>
+<p><strong>Consequence: the exponential keeps its local properties and loses its global ones.</strong> Over both fields the exponential is a local diffeomorphism at $0$ with derivative the identity. Over $\mathbb{R}$ its image misses part of the identity component; over $\mathbb{C}$ the image of $\exp$ on $M_n(\mathbb{C})$ is all of $\mathrm{GL}_n(\mathbb{C})$, because every invertible complex matrix has a logarithm, by the Jordan form without rotation blocks. So the failure of surjectivity is a real phenomenon.</p>
+<p><strong>Consequence: the two components are real.</strong> $\mathrm{GL}_n(\mathbb{C})$ is connected, so the sign of the determinant does not split it; over $\mathbb{R}$ the sign is the only continuous invariant available, and it cuts the group exactly in two.</p>
+<h2 id="the-spectrum">The Spectrum</h2>
+<p><strong>Real eigenvalues and conjugate pairs.</strong> For $A\in M_n(\mathbb{R})$ the characteristic polynomial has real coefficients, so the nonreal roots occur in conjugate pairs with the same multiplicity, and the real Jordan form pairs each conjugate pair into a $2\times2$ rotation block tensor a nilpotent Jordan block. The number of real roots and the number of pairs are the two integers that classify the spectral type.</p>
+<p><strong>The discriminant cuts the strata.</strong> The discriminant of the characteristic polynomial is a polynomial in the entries, and its zero set is the set of matrices with a repeated eigenvalue. The complement has components indexed by the number of real roots, and crossing the discriminant changes that number by two or by one at a real collision.</p>
+<p><strong>The symmetric and antisymmetric cases are the two extremes.</strong> For symmetric matrices the spectrum is real and the discriminant strata are the collisions; for antisymmetric matrices the spectrum is purely imaginary, so the eigenvalues are $i\theta$ and the collision is $\theta=0$. Both are the spectra of the two halves, and both are invisible over $\mathbb{C}$ where the eigenvalue type carries no information.</p>
+<p><strong>Consequence: the spectral theorem is richer over $\mathbb{R}$.</strong> Over $\mathbb{R}$ there are two spectral theorems, one for symmetric and one for antisymmetric matrices, with two different canonical forms: diagonal and block diagonal by rotations. Over $\mathbb{C}$ there is one, and the antisymmetric case becomes the diagonalisable case with imaginary eigenvalues.</p>
+<h2 id="what-the-real-case-teaches">What the Real Case Teaches</h2>
+<p><strong>The real theory carries the extra structure, not less.</strong> Every real statement has a complex shadow, and the shadow loses the three phenomena.</p>
+<p><strong>The real theory is the one that connects to the cone, the order and the group.</strong> The positive cone, the Löwner order, the polar decomposition with its sign, the two components and the covering $\mathrm{Spin}(n)\to\mathrm{SO}(n)$ all require real scalars. Over $\mathbb{C}$ the first becomes a Hermitian cone, the second survives, the third loses its sign, the fourth disappears and the fifth becomes a complex covering.</p>
+<p><strong>The split form is the one with the largest flats.</strong> Its symmetric space has maximal rank $n$, equal to the rank of the complex algebra, so its geometry sees the complex combinatorics most directly.</p>
+<p><strong>Consequence: the passage to $\mathbb{C}$ is a passage to the algebra of the combinatorics, and the passage back is a choice of positivity.</strong> That is the shape of the whole subject: the complex algebra carries the incidence, the real forms carry the metrics, and the three phenomena of the first section are the three places where a metric is chosen.</p>
+<h2 id="the-shape-of-the-series">The Shape of the Series</h2>
+<p><strong>The series added one structure at a time to the same space, and the three phenomena recurred at every stage.</strong> The two involution classes gave the two fixed spaces and the two decompositions; the spectrum gave the discriminant, the Jordan form and the two spectral theorems; the indefinite trace form gave the signature, the curvature and the absence of a definite invariant form.</p>
+<p><strong>The last statement of the series is the first.</strong> $M_n(\mathbb{R})$ is a simple real algebra of dimension $n^{2}$ with centre $\mathbb{R}\mathrm{I}$, its trace form has signature $(n(n+1)/2,\,n(n-1)/2)$, its unit group has two components cut by the sign of the determinant, and the whole structure is the split real form of the complex algebra. Everything else is a consequence.</p>
+<h2 id="summary">Summary</h2>
+<p>The real category differs from the complex one in exactly three ways: two conjugacy classes of involutions of the first kind with fixed spaces $\operatorname{Sym}_n$ and $\mathfrak{sp}_n$ of the same dimension $n(n+1)/2$, one a Jordan algebra and the other a Lie algebra; a spectrum that leaves the base field, giving conjugate pairs, a discriminant and rotation blocks in the Jordan form; and a trace form of signature $(n(n+1)/2,\,n(n-1)/2)$, indefinite, with no definite invariant form anywhere. $M_n(\mathbb{R})$ is the split real form of $M_n(\mathbb{C})$, with the diagonal matrices as a maximal commutative subalgebra of dimension $n$. The dictionary between the two fields loses the definiteness of the halves, the cone, the two components and the failure of the exponential, and keeps the algebra, the corners, the bracket and the combinatorics.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\sigma(X)=X^{\mathsf T}$</td>
+<td>the transpose involution, fixed space $\operatorname{Sym}_n$</td>
+</tr>
+<tr>
+<td>$\sigma(X)=-JX^{\mathsf T}J^{-1}$</td>
+<td>the symplectic involution, fixed space $\mathfrak{sp}_n$</td>
+</tr>
+<tr>
+<td>$M_n(\mathbb{R})\otimes\mathbb{C}$</td>
+<td>the complexification, isomorphic to $M_n(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$(p,q)$</td>
+<td>the signature $(n(n+1)/2,\,n(n-1)/2)$ of the trace form</td>
+</tr>
+<tr>
+<td>the split form</td>
+<td>the real form whose maximal commutative subalgebra has dimension $n$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nathan Jacobson, <em>Lie Algebras</em> (Dover, 1979), for real forms, split forms and the classification of involutions.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for the real Jordan form, the discriminant and the spectral theorems.</li>
+<li><a href="the-split-real-form-mnr-inside-mnc.html">The Split Real Form: $M_n(\mathbb{R})$ inside $M_n(\mathbb{C})$</a>, for the complexification.</li>
+<li><a href="the-involutions-of-the-first-kind-transpose-and-symplectic.html">The Involutions of the First Kind: Transpose and Symplectic</a>, for the first phenomenon.</li>
+<li><a href="the-trace-form-and-its-indefinite-signature.html">The Trace Form and Its Indefinite Signature</a>, for the third phenomenon.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

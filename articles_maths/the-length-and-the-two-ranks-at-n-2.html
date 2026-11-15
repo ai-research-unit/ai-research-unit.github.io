@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Length and the Two Ranks at $n=2$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-length-and-the-two-ranks-at-math0"><strong>The Length and the Two Ranks at $n=2$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>An operator on the matrix space has a length, its Hilbert–Schmidt norm, and two ranks, the rank of the operator and the rank of the matrix it represents; for a two-sided operator the length is the product of the two lengths and the rank is the product of the two ranks.</strong></p>
+<p>The article defines the length of an operator, computes it for the one-sided and the two-sided families, relates the length to the ranks, and shows how the two ranks of a two-sided operator are read from its two parameters. It assumes <em>The Two-Sided Operators and the Segre Cone at $n=2$</em>, <em>The One-Sided Operators at $n=2$</em> and <em>The Hilbert–Schmidt Form at $n=2$</em>.</p>
+<p>It follows the biquaternion article <em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em> for the four lengths of an element.</p>
+<h2 id="the-length-of-an-operator">The Length of an Operator</h2>
+<p><strong>The endomorphism algebra carries the Hilbert–Schmidt form, and its norm is the length of an operator.</strong></p>
+<p><strong>Definition.</strong> The <strong>length</strong> of an operator $T$ is $\|T\|=\bigl(\operatorname{tr}(T^{*}T)\bigr)^{1/2}$, the Hilbert–Schmidt norm computed on the sixteen real coordinates.</p>
+<p><strong>Proposition.</strong> The length is a norm on the endomorphism algebra, it is invariant under unitary conjugation, and it satisfies $\|T^{*}\|=\|T\|$.</p>
+<p><strong>Proof.</strong> The trace of $T^{*}T$ is a sum of squares of the sixteen real coordinates, so the length is the Euclidean norm in the real vector space; unitary conjugation preserves the trace of a product, and the adjoint changes nothing in the sum of squares.</p>
+<p><strong>Corollary.</strong> The length of the identity operator is two, the square root of the dimension of the matrix space.</p>
+<p><strong>Proof.</strong> The identity operator has the trace of $T^{*}T$ equal to four, the dimension of the space.</p>
+<p><strong>Corollary.</strong> The length is unchanged by the conjugation $T\mapsto U TU^{*}$ with $U$ unitary, so the length is a unitary invariant of the operator.</p>
+<p><strong>Proof.</strong> $(UTU^{*})^{*}(UTU^{*})=UT^{*}U^{*}UTU^{*}=UT^{*}TU^{*}$, whose trace is the trace of $T^{*}T$.</p>
+<p><strong>Corollary.</strong> The operators of length one form a compact manifold of real dimension thirty-one, the unit sphere of the endomorphism algebra.</p>
+<p><strong>Proof.</strong> The endomorphism algebra has real dimension thirty-two, and the unit sphere in a Euclidean space of that dimension is compact of dimension one less.</p>
+<h2 id="the-length-of-a-one-sided-operator">The Length of a One-Sided Operator</h2>
+<p><strong>Proposition.</strong> The length of the left multiplication $L_{X}$ is $\sqrt2$ times the length of $X$, and the same holds for the right multiplication.</p>
+<p><strong>Proof.</strong> The squared length of $L_{X}$ is the sum of the squared lengths of the images of the four matrix units, and each column of $X$ is counted twice, which gives twice the squared length of $X$.</p>
+<p><strong>Corollary.</strong> The left multiplications by the matrices of length one form a sphere of real dimension seven inside the endomorphism algebra.</p>
+<p><strong>Proof.</strong> The map $X\mapsto L_{X}$ is an injective linear map, and it scales the length by the constant factor $\sqrt2$.</p>
+<p><strong>Corollary.</strong> The left multiplications have the same length as the corresponding right multiplications, because transposition preserves the length.</p>
+<p><strong>Proof.</strong> The right multiplication by $X$ is the transpose of the left multiplication by $X^{\mathsf T}$, and the lengths of $X$ and of $X^{\mathsf T}$ agree.</p>
+<h2 id="the-length-of-a-two-sided-operator">The Length of a Two-Sided Operator</h2>
+<p><strong>Theorem.</strong> The length of the two-sided operator $T_{X,Y}$ is the product of the lengths of $X$ and $Y$.</p>
+<p><strong>Proof.</strong> In the basis of matrix units the operator $T_{X,Y}$ is the tensor product of $X$ with $Y^{\mathsf T}$, and the Hilbert–Schmidt norm of a tensor product is the product of the norms.</p>
+<p><strong>Corollary.</strong> The length is multiplicative over the composition of two-sided operators.</p>
+<p><strong>Proof.</strong> The composition multiplies the two parameters on each side, and the lengths multiply.</p>
+<p><strong>Corollary.</strong> The two-sided operator of length one built from two unit vectors is a rank-one operator of length one, and it is the projection onto a decomposable element composed with a functional.</p>
+<p><strong>Proof.</strong> The length is one times one, and the rank is one times one.</p>
+<h2 id="the-two-ranks">The Two Ranks</h2>
+<p><strong>Proposition.</strong> A two-sided operator has two ranks, the rank of the left parameter and the rank of the right parameter, and the rank of the operator is their product.</p>
+<p><strong>Proof.</strong> This is the rank formula of <em>The Two-Sided Operators and the Segre Cone at $n=2$</em>.</p>
+<p><strong>Corollary.</strong> The rank of an operator is at most the product of the two maximal ranks, which is four, and this is attained exactly by the invertible two-sided operators.</p>
+<p><strong>Proof.</strong> The product of two ranks is at most four, with equality exactly when both are two.</p>
+<p><strong>Corollary.</strong> An operator of rank one has exactly one pair of ranks, namely $(1,1)$, so its two parameters are both of rank one.</p>
+<p><strong>Proof.</strong> The product of two positive integers is one only for the pair $(1,1)$.</p>
+<h2 id="the-length-against-the-ranks">The Length against the Ranks</h2>
+<p><strong>Proposition.</strong> The squared length of an operator is the sum of the squares of its four singular values.</p>
+<p><strong>Proof.</strong> The operator is a $4\times4$ complex matrix in the basis of matrix units, and the trace of $T^{*}T$ is the sum of the squares of its singular values.</p>
+<p><strong>Corollary.</strong> The squared length lies between the square of the largest singular value and four times that square.</p>
+<p><strong>Proof.</strong> The sum of four nonnegative numbers lies between the largest of them and four times the largest.</p>
+<p><strong>Corollary.</strong> If all the singular values of an operator are at least one, then its rank is at most its squared length.</p>
+<p><strong>Proof.</strong> Each of the $r$ nonzero singular values contributes at least one to the sum of their squares.</p>
+<h2 id="the-operator-norm">The Operator Norm</h2>
+<p><strong>Proposition.</strong> For the length as the norm on the matrix space, the operator norm of $T_{X,Y}$ is the product of the operator norms of $X$ and $Y$, and the operator norm of $L_{X}$ is the operator norm of $X$.</p>
+<p><strong>Proof.</strong> The inequality $\|XZY\|\le\|X\|_{\mathrm{op}}\|Z\|\|Y\|_{\mathrm{op}}$ gives the upper bound, and taking $Z$ to be the rank-one map on the leading singular direction of $X$ and $Y$ attains it.</p>
+<p><strong>Corollary.</strong> The length of an operator lies between its operator norm and twice its operator norm, because the space has four dimensions.</p>
+<p><strong>Proof.</strong> The squared length is the sum of four squares of singular values, each at most the square of the largest.</p>
+<p><strong>Corollary.</strong> A one-sided operator is an isometry of the matrix space exactly when its parameter is unitary.</p>
+<p><strong>Proof.</strong> The operator norm of $L_{X}$ equals that of $X$, and the operator is an isometry exactly when the norm is one.</p>
+<h2 id="the-extreme-cases">The Extreme Cases</h2>
+<p><strong>Proposition.</strong> The unitary operators of the matrix space are exactly the operators whose four singular values equal one, and their length is two.</p>
+<p><strong>Proof.</strong> A unitary operator preserves the Hilbert–Schmidt form, so all its singular values are one; conversely an operator with all singular values one is unitary, and the squared length is the sum of four ones.</p>
+<p><strong>Corollary.</strong> The length and the rank together do not determine unitarity: an operator of length two and rank four is unitary exactly when its four singular values are equal, and there are such operators with unequal singular values.</p>
+<p><strong>Proof.</strong> Squared length four means the four squares sum to four, which forces all of them to be one only when they are equal; for instance the singular values $\tfrac12,\tfrac12,\tfrac12,\tfrac{\sqrt{13}}{2}$ also give the sum four.</p>
+<p><strong>Corollary.</strong> The rank-one two-sided operators of length one form the product of two unit spheres, a compact set of real dimension six.</p>
+<p><strong>Proof.</strong> Each parameter runs over the unit sphere of real dimension three, and the product has dimension six.</p>
+<h2 id="summary">Summary</h2>
+<p>The length of an operator is its Hilbert–Schmidt norm, computed as the square root of the trace of $T^{*}T$. The one-sided operator $L_{X}$ has length $\sqrt2$ times the length of $X$, and the two-sided operator $T_{X,Y}$ has length the product of the two lengths.</p>
+<p>The two ranks of a two-sided operator are the ranks of its two parameters, and the rank of the operator is their product. The length bounds the rank, and the unitary operators are exactly the operators of length two and rank four.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\|T\|$</td>
+<td>the length of an operator</td>
+</tr>
+<tr>
+<td>$T^{*}$</td>
+<td>the adjoint for the Hilbert–Schmidt form</td>
+</tr>
+<tr>
+<td>$L_{X}$, $R_{Y}$</td>
+<td>the one-sided operators</td>
+</tr>
+<tr>
+<td>$T_{X,Y}$</td>
+<td>the two-sided operator</td>
+</tr>
+<tr>
+<td>$\operatorname{rank}$</td>
+<td>the rank of an operator or a matrix</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Rajendra Bhatia, <em>Matrix Analysis</em> (Springer, 1997), for norms of operators and tensor products.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge University Press, 2013), for singular values and ranks.</li>
+<li><a href="the-two-sided-operators-and-the-segre-cone-at-n-2.html">The Two-Sided Operators and the Segre Cone at $n=2$</a>, for the rank formula used here.</li>
+<li><a href="the-one-sided-operators-at-n-2.html">The One-Sided Operators at $n=2$</a>, for the one-sided lengths.</li>
+<li><a href="the-hilbert-schmidt-form-at-n-2.html">The Hilbert–Schmidt Form at $n=2$</a>, for the form that defines the length.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

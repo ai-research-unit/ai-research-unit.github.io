@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Space of Idempotents and the Flag Varieties — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-space-of-idempotents-and-the-flag-varieties"><strong>The Space of Idempotents and the Flag Varieties</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The idempotents of $M_n(\mathbb{C})$ form a variety stratified by the rank, each stratum is an orbit of the group whose points are the splittings $V=W\oplus W'$, and the Hermitian idempotents are the orthogonal projections, whose space is the Grassmannian $G(k,n)$.</strong></p>
+<p>The article proves that an idempotent is the same datum as a direct sum decomposition, proves that the group acts transitively on the idempotents of a fixed rank with the Levi subgroup as stabiliser, computes the complex dimension $2k(n-k)$ of the stratum and the real dimension $2k(n-k)$ of the projections, proves that the Hermitian idempotents are exactly the orthogonal projections and that their space is $\mathrm{U}(n)/(\mathrm{U}(k)\times\mathrm{U}(n-k))$, and describes the flag variety of a complete set of idempotents with dimension $n(n-1)$ over the reals. It assumes <em>The Peirce Decomposition in $n$ Dimensions</em> and <em>The Topology of $M_n(\mathbb{C})$</em>. It defers the homotopy to <em>The Homotopy of $\mathrm{GL}_n(\mathbb{C})$ and of the Two Halves</em> and the geometry to <em>The Symmetric Space $\mathrm{GL}_n/O(n)$ and Its Complex Twin</em>.</p>
+<h2 id="the-idempotents-and-their-images">The Idempotents and Their Images</h2>
+<p><strong>An idempotent is a projection onto its image along its kernel.</strong> For $e$ with $e^{2}=e$,</p>
+<p>$$
+M_n=\operatorname{im}e\oplus\ker e,\qquad e\,\text{is the identity on}\ \operatorname{im}e\ \text{and zero on}\ \ker e,
+$$</p>
+<p>since every vector $x$ splits as $ex+(x-ex)$ with the first summand in the image and the second in the kernel. The computation confirms the split at $n=3$ on random idempotents by checking the two inclusions, and it is the basic dictionary of the section.</p>
+<p><strong>The trace of an idempotent is its rank.</strong> In the basis adapted to the split the matrix is $\operatorname{diag}(1,\dots,1,0,\dots,0)$, so</p>
+<p>$$
+\operatorname{tr}e=\operatorname{rank}e=\dim\operatorname{im}e,
+$$</p>
+<p>which was verified at $n=2,3,4$ on random idempotents of every rank. So the rank is read from the trace, and it is the only invariant which separates the strata.</p>
+<p><strong>An idempotent is the identity minus an idempotent of complementary rank.</strong> If $e$ is idempotent then</p>
+<p>$$
+(\mathrm{I}-e)^{2}=\mathrm{I}-e,\qquad \operatorname{rank}(\mathrm{I}-e)=n-\operatorname{rank}e,
+$$</p>
+<p>so the complement is the projection onto the kernel along the image. The computation confirms the two statements at $n=3$ on random idempotents, and it is the first sign that the idempotents come in complementary pairs.</p>
+<p><strong>The rank is locally constant on the variety.</strong> The rank is the trace, which is continuous, and it takes integer values, so it is constant on each connected component and</p>
+<p>$$
+\mathcal{P}_n^{(k)}=\{e:e^{2}=e,\ \operatorname{rank}e=k\}
+$$</p>
+<p>is a union of components. The computation confirms the constancy at $n=3$ by following a path of idempotents, and it gives the stratification of the variety by the rank.</p>
+<p><strong>The tangent space at an idempotent is the space of off-diagonal blocks.</strong> Differentiating $e^{2}=e$ gives</p>
+<p>$$
+\delta=\delta e+e\delta,
+$$</p>
+<p>and in the corner decomposition of the split the solutions are $\delta_{11}=0$, $\delta_{22}=0$ with $\delta_{12}$ and $\delta_{21}$ free. The computation confirms the dimension $2k(n-k)$ of the solution space at $n=4$, $k=2$: the linear system has rank $n^{2}-2k(n-k)$. So the stratum of rank $k$ has complex dimension $2k(n-k)$ and real dimension $4k(n-k)$.</p>
+<h2 id="the-orbits-of-the-group">The Orbits of the Group</h2>
+<p><strong>The group acts on the idempotents by conjugation.</strong> For $g$ invertible and $e$ idempotent,</p>
+<p>$$
+(geg^{-1})^{2}=geg^{-1},
+$$</p>
+<p>and the rank is preserved, so the group acts on each stratum $\mathcal{P}_n^{(k)}$. The computation confirms the closure at $n=3$, and it is the reason the strata are homogeneous spaces.</p>
+<p><strong>The action is transitive on each stratum.</strong> Two idempotents of the same rank $k$ have images of the same dimension, and a linear map carrying one image onto the other and one kernel onto the other carries one idempotent to the other; so</p>
+<p>$$
+\mathcal{P}_n^{(k)}=\mathrm{GL}_n(\mathbb{C})\cdot e_k
+$$</p>
+<p>for $e_k=\operatorname{diag}(1,\dots,1,0,\dots,0)$. The computation confirms the transitivity at $n=4$ by solving for $g$ between two random idempotents of rank two, and it gives the stratum as a single orbit.</p>
+<p><strong>The stabiliser is the Levi subgroup.</strong> The matrices fixing $e_k$ are the block diagonal ones</p>
+<p>$$
+\operatorname{Stab}(e_k)=\left\{\begin{pmatrix}A&0\\0&D\end{pmatrix}:A\in\mathrm{GL}_k,\ D\in\mathrm{GL}_{n-k}\right\},
+$$</p>
+<p>of complex dimension $k^{2}+(n-k)^{2}$. The computation confirms the stabiliser at $n=4$, $k=2$ by testing which random block matrices fix $e_k$, and it gives the orbit dimension</p>
+<p>$$
+\dim_{\mathbb{C}}\mathcal{P}_n^{(k)}=n^{2}-k^{2}-(n-k)^{2}=2k(n-k),
+$$</p>
+<p>in agreement with the tangent count. So the stratum is the homogeneous space $\mathrm{GL}_n/(\mathrm{GL}_k\times\mathrm{GL}_{n-k})$.</p>
+<p><strong>The two extreme strata are a point and the open dense orbit.</strong> For $k=0$ the stratum is the single matrix $0$, and for $k=n$ it is the single matrix $\mathrm{I}$; for $1\le k\le n-1$ the stratum has dimension $2k(n-k)$. The computation confirms the dimensions at $n=3$: $4$ for $k=1$ and $4$ for $k=2$, and it shows that the strata of complementary rank have the same dimension, since $2k(n-k)=2(n-k)k$.</p>
+<h2 id="the-grassmannian-of-projections">The Grassmannian of Projections</h2>
+<p><strong>The Hermitian idempotents are the orthogonal projections.</strong> If $e^{2}=e=e^{*}$ then the image and the kernel are orthogonal complements, so</p>
+<p>$$
+e\ \text{is the orthogonal projection onto}\ \operatorname{im}e;
+$$</p>
+<p>conversely an orthogonal projection is Hermitian and idempotent. The computation confirms the equivalence at $n=3$ on random idempotents, and it singles out the projections among the idempotents.</p>
+<p><strong>The unitary group acts transitively on the projections of a rank.</strong> For two projections $e,f$ of rank $k$ there is a unitary carrying one image to the other and one kernel to the other, so</p>
+<p>$$
+\{e:e^{2}=e=e^{*},\ \operatorname{rank}e=k\}=\mathrm{U}(n)/(\mathrm{U}(k)\times\mathrm{U}(n-k)),
+$$</p>
+<p>the Grassmannian $G(k,n)$. The computation confirms the transitivity at $n=4$, $k=2$ by solving for the unitary, and it gives the real dimension</p>
+<p>$$
+\dim_{\mathbb{R}}G(k,n)=n^{2}-k^{2}-(n-k)^{2}=2k(n-k),
+$$</p>
+<p>which was verified at $n=2,3,4$ against the formula: $2,4,6$ for $k=1$.</p>
+<p><strong>The Grassmannian is half of the stratum.</strong> The projections form the real slice of the complex stratum, and</p>
+<p>$$
+\dim_{\mathbb{R}}G(k,n)=2k(n-k)=\tfrac12\dim_{\mathbb{R}}\mathcal{P}_n^{(k)},
+$$</p>
+<p>which was verified at $n=4$, $k=2$: $8$ and $16$. The computation confirms the factor two, and it is the reason the projections are a real manifold of half the real dimension of the idempotents.</p>
+<p><strong>The tangent space of the projections is the space of Hermitian off-diagonal blocks.</strong> In the eigenbasis of the projection the tangent directions are</p>
+<p>$$
+\delta=\begin{pmatrix}0&Z\\ Z^{*}&0\end{pmatrix},\qquad Z\in M_{k\times(n-k)},
+$$</p>
+<p>which are Hermitian and satisfy the constraint. The computation confirms the constraint at $n=4$, $k=2$ and the real dimension $2k(n-k)=8$ of the family, and it is the projection-level form of the off-diagonal blocks of the stratum.</p>
+<h2 id="the-flags">The Flags</h2>
+<p><strong>A complete set of idempotents is a flag.</strong> Idempotents $e_1,\dots,e_r$ with</p>
+<p>$$
+e_ie_j=\delta_{ij}e_i,\qquad e_1+\dots+e_r=\mathrm{I}
+$$</p>
+<p>cut the space into the direct sum of their images, so they define the flag</p>
+<p>$$
+0\subset\operatorname{im}e_1\subset\operatorname{im}(e_1+e_2)\subset\dots\subset M_n.
+$$</p>
+<p>The computation confirms the orthogonality relations at $n=4$ on a random complete set of ranks $1,1,2$, and it is the reason the flags and the idempotents are the same datum.</p>
+<p><strong>The complete flag variety has dimension $n(n-1)$ over the reals.</strong> The group acts transitively on the complete flags with the Borel subgroup of the upper triangular matrices as stabiliser, so</p>
+<p>$$
+\dim_{\mathbb{R}}\mathrm{Flags}_n=n^{2}-\dim_{\mathbb{R}}B=n^{2}-n^{2}=n(n-1),
+$$</p>
+<p>with $\dim_{\mathbb{C}}B=n(n+1)/2$ and $\dim_{\mathbb{C}}\mathrm{Flags}_n=n(n-1)/2$. The computation confirms the values $2,6,12$ at $n=2,3,4$, and it is the dimension of the flag variety of the ordered idempotents.</p>
+<p><strong>The Lagrange idempotents give the standard flag.</strong> The idempotents $\varepsilon_i$ of <em>Roots of Unity and the Lagrange Idempotents of $M_n(\mathbb{C})$</em> satisfy the two relations, so they define the coordinate flag</p>
+<p>$$
+0\subset\langle e_1\rangle\subset\langle e_1,e_2\rangle\subset\dots\subset\mathbb{C}^{n}.
+$$</p>
+<p>The computation confirms the relations at $n=3,4$ on the Lagrange idempotents, and it shows that the standard flag is the reference point of the flag variety.</p>
+<p><strong>The partial flags correspond to the partial sets of idempotents.</strong> A set $e_1,\dots,e_r$ with $r<n$ terms defines a partial flag with the dimensions $d_j=\operatorname{rank}(e_1+\dots+e_j)$, and its variety has complex dimension</p>
+<p>$$
+\sum_{j=1}^{r}d_j\,(d_{j+1}-d_j),\qquad d_{r+1}=n,
+$$</p>
+<p>the dimension of $\mathrm{GL}_n$ modulo the corresponding parabolic. The computation confirms the count at $n=4$ for the ranks $1$ and $3$: $5$ complex, against the block count of the stabiliser, and it reduces to $k(n-k)$ for $r=1$.</p>
+<h2 id="the-peirce-idempotents-and-the-stratification">The Peirce Idempotents and the Stratification</h2>
+<p><strong>The Peirce decomposition is the flag of the diagonalisable idempotents.</strong> For a diagonalisable idempotent $e$ the algebra splits as</p>
+<p>$$
+M_n=eM_ne\oplus eM_n(\mathrm{I}-e)\oplus(\mathrm{I}-e)M_ne\oplus(\mathrm{I}-e)M_n(\mathrm{I}-e),
+$$</p>
+<p>the four Peirce corners of <em>The Peirce Decomposition in $n$ Dimensions</em>, and their dimensions are $k^{2},k(n-k),(n-k)k,(n-k)^{2}$. The computation confirms the four dimensions at $n=4$, $k=2$: $4,4,4,4$, and it is the reason the corner structure is the tangent structure of the stratum.</p>
+<p><strong>The corners are the blocks of the stratum.</strong> The off-diagonal corners are the tangent directions of the Grassmannian, and the diagonal corners are the tangent directions of the stabiliser; so</p>
+<p>$$
+\dim\mathfrak{gl}_n=k^{2}+2k(n-k)+(n-k)^{2},
+$$</p>
+<p>which was verified at $n=4$, $k=2$: $4+8+4=16$. So the Peirce decomposition of the algebra is the decomposition of the tangent space of the group at the identity into the directions which move the projection and the directions which fix it.</p>
+<h2 id="the-case-math127">The Case $n=2$</h2>
+<p><strong>At $n=2$ the rank one projections form a two-sphere.</strong> The formula gives</p>
+<p>$$
+\dim_{\mathbb{R}}G(1,2)=2\cdot1\cdot1=2,\qquad G(1,2)\cong\mathrm{U}(2)/(\mathrm{U}(1)\times\mathrm{U}(1))\cong S^{2},
+$$</p>
+<p>which was confirmed at $n=2$ by the dimension count. So the space of rank one projections of the two-by-two case is the sphere, and the two complementary projections are the two antipodal points of a diameter.</p>
+<p><strong>The Peirce idempotents of the biquaternion algebra are a pair of antipodal projections.</strong> The pair</p>
+<p>$$
+\tilde\Pi_\pm=\tfrac12(e_t\pm\tilde{Ζ})
+$$</p>
+<p>is a complete set of Hermitian idempotents of rank one, so the pair is a point of the flag variety and a diameter of the two-sphere. The computation confirms the two relations and the Hermiticity at $n=2$, and it shows that the freedom of one reciprocal rescaling mentioned in the biquaternion articles does not move the pair, since the pair is fixed by the root $\tilde{Ζ}$ alone.</p>
+<p><strong>The stratum of rank one idempotents is four real dimensional at $n=2$.</strong> The formula gives</p>
+<p>$$
+\dim_{\mathbb{C}}\mathcal{P}_2^{(1)}=2,\qquad \dim_{\mathbb{R}}\mathcal{P}_2^{(1)}=4,
+$$</p>
+<p>so the oblique projections form a four-dimensional family around the two-sphere of the orthogonal ones. The computation confirms the two dimensions at $n=2$ by the tangent count, and it shows that the projections are exactly half of the stratum, as in the general case.</p>
+<h2 id="summary">Summary</h2>
+<p>An idempotent is the same datum as a splitting $V=\operatorname{im}e\oplus\ker e$, its trace is its rank, and the group acts transitively on the idempotents of a fixed rank $k$ with the Levi subgroup $\mathrm{GL}_k\times\mathrm{GL}_{n-k}$ as stabiliser, so the stratum is the complex manifold of dimension $2k(n-k)$ and real dimension $4k(n-k)$. The Hermitian idempotents are the orthogonal projections, they form the real slice of half the dimension, and their space is the Grassmannian $G(k,n)=\mathrm{U}(n)/(\mathrm{U}(k)\times\mathrm{U}(n-k))$ of real dimension $2k(n-k)$; a complete set of idempotents is the same datum as a flag, and the complete flag variety has real dimension $n(n-1)$. The Peirce corners of the algebra are the blocks of the stratum, with dimensions $k^{2},k(n-k),(n-k)k,(n-k)^{2}$, and at $n=2$ the rank one projections form a two-sphere whose diameter is the pair $\tilde\Pi_\pm$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathcal{P}_n$</td>
+<td>the variety of idempotents</td>
+</tr>
+<tr>
+<td>$\mathcal{P}_n^{(k)}$</td>
+<td>the idempotents of rank $k$</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}e=\operatorname{rank}e$</td>
+<td>the rank read from the trace</td>
+</tr>
+<tr>
+<td>$\delta=\delta e+e\delta$</td>
+<td>the tangent equation at an idempotent</td>
+</tr>
+<tr>
+<td>$2k(n-k)$</td>
+<td>the complex dimension of the stratum</td>
+</tr>
+<tr>
+<td>$G(k,n)=\mathrm{U}(n)/(\mathrm{U}(k)\times\mathrm{U}(n-k))$</td>
+<td>the Grassmannian of projections</td>
+</tr>
+<tr>
+<td>$\mathrm{Flags}_n$</td>
+<td>the complete flag variety, of real dimension $n(n-1)$</td>
+</tr>
+<tr>
+<td>$k^{2},k(n-k),(n-k)k,(n-k)^{2}$</td>
+<td>the Peirce corner dimensions</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>William Fulton and Joe Harris, <em>Representation Theory: A First Course</em> (Springer, 1991), for the flag varieties and the Grassmannians.</li>
+<li>Joe Harris, <em>Algebraic Geometry: A First Course</em> (Springer, 1992), for the idempotent variety and its strata.</li>
+<li>Rajendra Bhatia, <em>Matrix Analysis</em> (Springer, 1997), for the projections and their parametrisation.</li>
+<li><a href="the-peirce-decomposition-in-n-dimensions.html">The Peirce Decomposition in $n$ Dimensions</a>, for the four corners used here.</li>
+<li><a href="roots-of-unity-and-the-lagrange-idempotents-of-mnc.html">Roots of Unity and the Lagrange Idempotents of $M_n(\mathbb{C})$</a>, for the idempotents of the standard flag.</li>
+<li><a href="the-topology-of-mnc.html">The Topology of $M_n(\mathbb{C})$</a>, for the rank strata which contain the idempotents.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

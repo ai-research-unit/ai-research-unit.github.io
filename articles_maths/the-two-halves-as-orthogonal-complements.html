@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Two Halves as Orthogonal Complements — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-two-halves-as-orthogonal-complements"><strong>The Two Halves as Orthogonal Complements</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>Whenever an involution preserves a form, its two eigenspaces are orthogonal for that form, and that single lemma produces the orthogonality of the two halves in every case the category uses.</strong></p>
+<p>The article states and proves the lemma, applies it to the transpose with the trace bilinear form and to the conjugate transpose with the Hilbert–Schmidt form, and checks that in each case the two halves are not only orthogonal but complementary: the orthogonal complement of one half is the other. It then reads the two halves as the summands of an orthogonal direct sum, computes the restrictions of the form, notes that the matrix units are an orthonormal system for the Hilbert–Schmidt form while the two halves are not spanned by orthogonal lines of the coarse kind, and closes at $n=2$. It assumes <em>The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric</em> and <em>The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian</em> for the two splits, and <em>The Involutions over $\mathbb{R}$ and over $\mathbb{C}$</em> for the involutions. It defers the signatures of the restrictions to <em>The Trace Form and Its Signature on the Two Halves</em> and the Hilbert–Schmidt form itself to <em>The Hilbert–Schmidt Form</em>.</p>
+<h2 id="the-complement-and-the-lemma">The Complement and the Lemma</h2>
+<p><strong>Two subspaces are orthogonal complements for a form when each is the annihilator of the other.</strong> Let $B$ be a bilinear or Hermitian form on a space $V$ and $U\subseteq V$. Put</p>
+<p>$$
+U^{\perp}=\{v: B(u,v)=0\ \text{for all }u\in U\}.
+$$</p>
+<p>If $B$ is nondegenerate, then $\dim U^{\perp}=\dim V-\dim U$, and $V=U\oplus U^{\perp}$ as soon as $U\cap U^{\perp}=0$. The two conditions to check in each case are therefore the vanishing and the count.</p>
+<p><strong>Lemma.</strong> Let $\sigma$ be an involution of the algebra and $B$ a form with $B(\sigma A,\sigma C)=B(A,C)$ for all $A,C$. Then</p>
+<p>$$
+B(A,C)=0\qquad\text{for }A\in\operatorname{Fix}\sigma,\ C\in\operatorname{Anti}\sigma .
+$$</p>
+<p><em>Proof.</em> Apply the invariance and then the eigenvalues:</p>
+<p>$$
+B(A,C)=B(\sigma A,\sigma C)=B(A,-C)=-B(A,C),
+$$</p>
+<p>so $2B(A,C)=0$. The same proof works for a Hermitian form and it works for the real part of a Hermitian form.</p>
+<p><strong>The lemma is the whole content of the orthogonality, and it holds for every involution of the classification.</strong> The transpose preserves the trace bilinear form, the conjugate transpose preserves the Hilbert–Schmidt form up to conjugation, the symplectic transpose preserves the same bilinear form, and the inner involutions preserve it too because they are conjugations by a unit. So the two halves are orthogonal in each case, and no case needs a separate computation.</p>
+<h2 id="the-real-case">The Real Case</h2>
+<p><strong>The symmetric and antisymmetric halves are orthogonal complements for the trace bilinear form.</strong> On $M_n(\mathbb{R})$ put $B(A,C)=\operatorname{tr}(A^{\mathsf T}C)$. The transpose satisfies $B(A^{\mathsf T},C^{\mathsf T})=\operatorname{tr}(AC^{\mathsf T})=\operatorname{tr}(C^{\mathsf T}A)=B(C,A)=B(A,C)$, so the lemma applies and</p>
+<p>$$
+\operatorname{tr}(S^{\mathsf T}K)=\operatorname{tr}(SK)=0\qquad(S^{\mathsf T}=S,\ K^{\mathsf T}=-K).
+$$</p>
+<p>The count closes the argument: $\dim\operatorname{Skew}_n=n(n-1)/2=n^{2}-n(n+1)/2$, so $\operatorname{Sym}_n^{\perp}=\operatorname{Skew}_n$ and</p>
+<p>$$
+M_n(\mathbb{R})=\operatorname{Sym}_n\perp\operatorname{Skew}_n .
+$$</p>
+<p><strong>The form is nondegenerate and its restriction to each half is definite.</strong> For real $A$, $B(A,A)=\operatorname{tr}(A^{\mathsf T}A)=\sum_{ij}A_{ij}^{2}\ge0$ with equality only at $A=0$, so the form is positive definite on the whole algebra. On the symmetric half it is positive definite, of signature $\big(\tfrac{n(n+1)}{2},0\big)$; on the antisymmetric half it is negative definite, since $\operatorname{tr}(K^{2})=-\sum_{i<j}2K_{ij}^{2}$, of signature $\big(0,\tfrac{n(n-1)}{2}\big)$.</p>
+<p><strong>The two projections are orthogonal projections for this form.</strong> The maps $A\mapsto\tfrac12(A+A^{\mathsf T})$ and $A\mapsto\tfrac12(A-A^{\mathsf T})$ are idempotent with orthogonal images, and they are self-adjoint for $B$:</p>
+<p>$$
+B\big(\tfrac12(A+A^{\mathsf T}),C\big)=B\big(A,\tfrac12(C+C^{\mathsf T})\big),
+$$</p>
+<p>which was verified for random pairs at $n=2,3,4$. A self-adjoint idempotent is the orthogonal projection onto its image, so the split is the orthogonal direct sum in the strongest sense.</p>
+<h2 id="the-complex-case">The Complex Case</h2>
+<p><strong>The Hermitian and skew-Hermitian halves are orthogonal complements for the real part of the Hilbert–Schmidt form.</strong> Put $\langle A,C\rangle=\operatorname{tr}(A^{*}C)$ and let $B=\operatorname{Re}\langle\cdot,\cdot\rangle$, a real inner product on $M_n(\mathbb{C})$ of real dimension $2n^{2}$. The conjugate transpose satisfies</p>
+<p>$$
+\overline{\langle A^{*},C^{*}\rangle}=\operatorname{tr}(A C^{*})=\overline{\operatorname{tr}(A^{*}C)}=\overline{\langle A,C\rangle},
+$$</p>
+<p>so $\operatorname{Re}\langle A^{*},C^{*}\rangle=\operatorname{Re}\langle A,C\rangle$ and the lemma applies. Hence</p>
+<p>$$
+\operatorname{Re}\operatorname{tr}(H^{*}K)=0\qquad(H^{*}=H,\ K^{*}=-K),
+$$</p>
+<p>and since $\dim_{\mathbb{R}}\operatorname{Herm}_n=\dim_{\mathbb{R}}\operatorname{SkewHerm}_n=n^{2}$ with $2n^{2}$ the total,</p>
+<p>$$
+M_n(\mathbb{C})=\operatorname{Herm}_n\perp\operatorname{SkewHerm}_n .
+$$</p>
+<p><strong>The Hermitian form itself does not vanish on the pair, and the lemma is applied to its real part.</strong> The number $\operatorname{tr}(H^{*}K)=\operatorname{tr}(HK)$ is purely imaginary, so its real part is zero and its imaginary part generally is not. The distinction is the one recorded in <em>The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian</em>: the two halves are orthogonal for the Euclidean structure and not for the Hermitian one, and every statement about orthogonality in the category means the Euclidean statement.</p>
+<p><strong>The two forms give the same complement and different restrictions.</strong> For the Hermitian form $\langle A,C\rangle$ the two halves have restrictions of signature $(n^{2},0)$ and $(0,n^{2})$ in the real sense, so each restriction is definite and the direct sum is orthogonal for the real part. What fails is only the vanishing of the complex-valued form on the pair, and that failure is the source of the symplectic structure of the following articles.</p>
+<h2 id="the-matrix-units-as-an-orthonormal-system">The Matrix Units as an Orthonormal System</h2>
+<p><strong>The matrix units are orthonormal for the Hilbert–Schmidt form.</strong> For all indices,</p>
+<p>$$
+\langle E_{ij},E_{kl}\rangle=\operatorname{tr}(E_{ij}^{*}E_{kl})=\operatorname{tr}(E_{ji}E_{kl})=\delta_{il}\delta_{jk},
+$$</p>
+<p>so the $n^{2}$ units form an orthonormal basis of $M_n(\mathbb{C})$ for the form, and the coordinates of $A$ in that basis are its entries. The identity was verified for all quadruples at $n=2,3,4$.</p>
+<p><strong>The fine decomposition is therefore an orthogonal direct sum, and the coarse one is not spanned by its own lines.</strong> The grading of <em>The Fine Decomposition against the Diagonal</em> splits the algebra into the $n^{2}$ lines $\mathbb{C}E_{ij}$, and those lines are mutually orthogonal for the Hilbert–Schmidt form. The two halves are spanned by these lines combined in pairs: the symmetric line $\mathbb{C}(E_{ij}+E_{ji})$ is orthogonal to the skew line $\mathbb{C}(E_{ij}-E_{ji})$, and this orthogonality is again the lemma applied to the transposed pair.</p>
+<p><strong>Orthonormality gives the coordinates of the trace forms.</strong> For $A=\sum A_{ij}E_{ij}$ and $C=\sum C_{ij}E_{ij}$,</p>
+<p>$$
+\operatorname{tr}(A^{*}C)=\sum_{i,j}\overline{A_{ij}}C_{ij},\qquad \operatorname{tr}(A^{\mathsf T}C)=\sum_{i,j}A_{ij}C_{ij}
+$$</p>
+<p>for real matrices, which are the two forms of the article written in the basis of units. The real part of the first is the Euclidean form of $\mathbb{R}^{2n^{2}}$, and the real part of the second is indefinite of signature $(n^{2},n^{2})$ on the complex algebra and of signature $(n(n+1)/2,\,n(n-1)/2)$ on the real matrices.</p>
+<h2 id="what-the-complementarity-gives">What the Complementarity Gives</h2>
+<p><strong>An orthogonal direct sum splits every form into two forms and every quadratic form into two squares.</strong> Since $M_n=\operatorname{Sym}\perp\operatorname{Skew}$,</p>
+<p>$$
+\operatorname{tr}(A^{2})=\operatorname{tr}(S^{2})+\operatorname{tr}(K^{2})
+$$</p>
+<p>for $A=S+K$ real, the cross term vanishing by orthogonality. The quadratic form $\operatorname{tr}(A^{2})$ is therefore the sum of a positive definite form on the symmetric half and a negative definite one on the skew half, and its signature is read from the two halves separately.</p>
+<p><strong>The complementarity makes the projections computable and the adjoints visible.</strong> The orthogonal projection onto a half is $\tfrac12(\mathrm{I}\pm\sigma)$, and the adjoint of a map that preserves the split is computed half by half. The same mechanism is used for the operator space of <em>The Symmetric and Antisymmetric Parts of the Operator Space</em>, where the two-sided operators carry their own split.</p>
+<p><strong>The complementarity does not survive every form.</strong> For a form that the involution does not preserve, the two halves are not orthogonal: the Killing form of $\mathfrak{so}(n)$ vanishes at $n=2$ while the trace form does not, and on a non-reductive algebra the radical is its own orthogonal complement. The condition of the lemma is a real hypothesis, and the article <em>The Killing Form, Its Radical and the Triangular Case</em> records what happens when it fails.</p>
+<h2 id="the-case-math75">The Case $n=2$</h2>
+<p><strong>At $n=2$ the real split is $4=3\perp1$.</strong> The symmetric half is spanned by $\mathrm{I},\sigma_1,\sigma_3$ and the antisymmetric half by $J=\begin{pmatrix}0&-1\\1&0\end{pmatrix}$, and</p>
+<p>$$
+\operatorname{tr}(\mathrm{I}J)=\operatorname{tr}(\sigma_1J)=\operatorname{tr}(\sigma_3J)=0,
+$$</p>
+<p>so the single skew direction is orthogonal to the three symmetric ones. The form has signature $(3,1)$ on $M_2(\mathbb{R})$.</p>
+<p><strong>At $n=2$ the complex split is $8=4\perp4$.</strong> The Hermitian half is spanned over $\mathbb{R}$ by the Pauli list and the skew-Hermitian half by $i$ times it, and the two four-dimensional real spaces are orthogonal for the Euclidean form. In the biquaternion reading this is the split into the two sectors, and the orthogonality is the statement that the sectors do not mix under the Hilbert–Schmidt form.</p>
+<p><strong>The complementarity is the statement the two halves are the annihilator of each other, and that is what makes them a split and not a choice.</strong> Any complement of $\operatorname{Skew}_n$ has dimension $n(n+1)/2$; only one of them is orthogonal to it and only one is the fixed half of the involution, and in the transpose case the two coincide. The triangular algebra $UT_n$ is a complement with the right dimension and neither property, which is the precise content of the next comparison.</p>
+<h2 id="summary">Summary</h2>
+<p>If an involution preserves a form, its two eigenspaces are orthogonal for that form. Applied to the transpose and the trace bilinear form this gives $M_n(\mathbb{R})=\operatorname{Sym}_n\perp\operatorname{Skew}_n$, with $\operatorname{Sym}_n^{\perp}=\operatorname{Skew}_n$ by the dimension count $n(n+1)/2+n(n-1)/2=n^{2}$; applied to the conjugate transpose and the real part of the Hilbert–Schmidt form it gives $M_n(\mathbb{C})=\operatorname{Herm}_n\perp\operatorname{SkewHerm}_n$ with $n^{2}+n^{2}=2n^{2}$. The Hermitian form itself is purely imaginary on the pair and does not vanish, so the orthogonality is Euclidean. The matrix units are orthonormal for the Hilbert–Schmidt form, so the fine decomposition is orthogonal, and the projections $\tfrac12(\mathrm{I}\pm\sigma)$ are the orthogonal projections. The complementarity fails exactly when the form is not preserved by the involution.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$B(A,C)=\operatorname{tr}(A^{\mathsf T}C)$</td>
+<td>the trace bilinear form on the real algebra</td>
+</tr>
+<tr>
+<td>$\langle A,C\rangle=\operatorname{tr}(A^{*}C)$</td>
+<td>the Hilbert–Schmidt form on the complex algebra</td>
+</tr>
+<tr>
+<td>$U^{\perp}$</td>
+<td>the annihilator of $U$ for the chosen form</td>
+</tr>
+<tr>
+<td>$\operatorname{Fix}\sigma$, $\operatorname{Anti}\sigma$</td>
+<td>the two eigenspaces of the involution</td>
+</tr>
+<tr>
+<td>$E_{ij}$</td>
+<td>the matrix unit, orthonormal for $\langle\cdot,\cdot\rangle$</td>
+</tr>
+<tr>
+<td>$\tfrac12(\mathrm{I}\pm\sigma)$</td>
+<td>the two projections onto the halves</td>
+</tr>
+<tr>
+<td>$(3,1)$ and $(4,4)$</td>
+<td>the signatures at $n=2$ of the two forms</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for orthogonal projections, self-adjoint idempotents and orthogonal direct sums.</li>
+<li>Werner Greub, <em>Linear Algebra</em> (Springer, 1975), for nondegenerate forms, annihilators and the dimension count of a complement.</li>
+<li>Rajendra Bhatia, <em>Positive Definite Matrices</em> (Princeton, 2007), for the Hilbert–Schmidt form and the geometry of the cone.</li>
+<li><a href="the-two-halves-over-r-symmetric-and-antisymmetric.html">The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric</a>, for the real split and the trace form on each half.</li>
+<li><a href="the-two-halves-over-c-hermitian-and-skew-hermitian.html">The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian</a>, for the complex split and the purely imaginary cross term.</li>
+<li><a href="the-fine-decomposition-against-the-diagonal.html">The Fine Decomposition against the Diagonal</a>, for the weight lines that the orthonormal units span.</li>
+<li><a href="the-involutions-over-r-and-over-c.html">The Involutions over $\mathbb{R}$ and over $\mathbb{C}$</a>, for the classification of the involutions that the lemma applies to.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

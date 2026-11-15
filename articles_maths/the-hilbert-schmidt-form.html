@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Hilbert–Schmidt Form — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-hilbertschmidt-form"><strong>The Hilbert–Schmidt Form</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The form $\langle X,Y\rangle=\operatorname{tr}(X^{*}Y)$ is a positive definite Hermitian form on $M_n(\mathbb{C})$, its real part is the Euclidean form on the $2n^{2}$ real coordinates, its norm is the square root of the sum of the squares of the singular values, and it is invariant under unitary conjugation but not under the full linear group.</strong></p>
+<p>The article proves the Hermitian axioms, computes the norm through the singular values, shows unitary invariance and the failure of invariance under general conjugation, computes the adjoints of the one-sided and the two-sided operators and of the derivation, shows that the form is definite on both halves in contrast with the trace form, and compares the Hilbert–Schmidt norm with the operator norm. It assumes <em>The Trace Form and Its Signature on the Two Halves</em> for the indefinite form it replaces and <em>The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian</em> for the complex split. It defers the operator theory to <em>The Symmetric and Antisymmetric Parts of the Operator Space</em> and the analysis to <em>The Analysis on $M_n(\mathbb{C})$</em>.</p>
+<h2 id="the-form">The Form</h2>
+<p><strong>The form is Hermitian and positive definite.</strong> Put</p>
+<p>$$
+\langle X,Y\rangle=\operatorname{tr}(X^{*}Y).
+$$</p>
+<p>It is linear in the second argument and conjugate linear in the first, and</p>
+<p>$$
+\overline{\langle X,Y\rangle}=\overline{\operatorname{tr}(X^{*}Y)}=\operatorname{tr}(Y^{*}X)=\langle Y,X\rangle ,
+$$</p>
+<p>so it is Hermitian. It is positive definite because</p>
+<p>$$
+\langle X,X\rangle=\operatorname{tr}(X^{*}X)=\sum_{i,j}|X_{ij}|^{2}\ \ge0,
+$$</p>
+<p>with equality only at $X=0$. So it is an inner product on the $2n^{2}$-dimensional real space $M_n(\mathbb{C})$, and it is the form that makes the matrix space a Hilbert space.</p>
+<p><strong>Its real part is the Euclidean form.</strong> Writing $X=P+iQ$ with $P,Q$ real matrices,</p>
+<p>$$
+\operatorname{Re}\operatorname{tr}(X^{*}Y)=\operatorname{tr}(P^{\mathsf T}R+Q^{\mathsf T}S)=\sum_{i,j}\big(P_{ij}R_{ij}+Q_{ij}S_{ij}\big),
+$$</p>
+<p>which is the Euclidean pairing of the real and imaginary parts. So the Hilbert–Schmidt form is not a new form on a new space: it is the Euclidean form on $\mathbb{R}^{2n^{2}}$ written in complex notation, and the $2n^{2}$ count was verified by the Gram matrix of the real basis $E_{ij},iE_{ij}$.</p>
+<p><strong>The form is the complexification of the trace form.</strong> Its real part restricts on the real matrices to $\operatorname{tr}(P^{\mathsf T}R)=\operatorname{tr}(PR)$, which is the trace form of <em>The Trace Form and Its Signature on the Two Halves</em>. The two forms therefore agree on $M_n(\mathbb{R})$ and differ elsewhere: the Hilbert–Schmidt form is positive definite on the whole complex space, while the trace form is indefinite already on the real subspace.</p>
+<p><strong>The form is nondegenerate and perfect.</strong> It pairs $X$ with $X$ to a positive number and pairs distinct matrix units to zero,</p>
+<p>$$
+\langle E_{ij},E_{kl}\rangle=\delta_{ik}\delta_{jl},
+$$</p>
+<p>so the matrix units are an orthonormal basis. The Gram matrix is the identity of size $n^{2}$ over $\mathbb{C}$, and the whole space is its own dual under the form.</p>
+<h2 id="the-norm-and-its-values">The Norm and Its Values</h2>
+<p><strong>The norm is the square root of the sum of the squares of the singular values.</strong> If $X=U\Sigma V^{*}$ is a singular value decomposition with singular values $s_1,\dots,s_n$, then</p>
+<p>$$
+\|X\|^{2}=\operatorname{tr}(X^{*}X)=\operatorname{tr}(V\Sigma^{2}V^{*})=\sum_{i=1}^{n}s_i^{2},
+$$</p>
+<p>which was verified at $n=4$ against the singular values computed numerically. So the Hilbert–Schmidt norm is the Euclidean norm of the vector of singular values, and it vanishes exactly at $X=0$.</p>
+<p><strong>The norm is comparable with the operator norm.</strong> Since the largest singular value is at most the Euclidean norm of the list and at least its largest entry divided by $\sqrt n$,</p>
+<p>$$
+\|X\|_{2}\ \le\ \|X\|_{HS}\ \le\ \sqrt{n}\,\|X\|_{2},
+$$</p>
+<p>where $\|X\|_{2}=s_{\max}$ is the operator norm. At $n=4$ the computed ratios on a random matrix were $1.19$ and $0.59$ against $\sqrt4=2$, inside the interval. Both bounds are attained: the first by a rank-one matrix and the second by a scalar multiple of the identity.</p>
+<p><strong>The norm is multiplicative on rank-one matrices and submultiplicative in general.</strong> For $X=uv^{*}$ the norm is $\|u\|\|v\|$, so a rank-one matrix has norm equal to the product of the norms of its factors; for general $X,Y$,</p>
+<p>$$
+\|XY\|_{HS}\le\|X\|_{2}\|Y\|_{HS},
+$$</p>
+<p>which is the standard inequality and is strict unless $Y$ is supported on the maximal singular direction of $X$.</p>
+<p><strong>The norm of a projection is the square root of its rank.</strong> For an orthogonal projection $P$ of rank $r$ the singular values are $r$ ones and $n-r$ zeros, so</p>
+<p>$$
+\|P\|_{HS}=\sqrt{r},
+$$</p>
+<p>which is the statement that the idempotents of rank $r$ lie on the sphere of radius $\sqrt r$ inside the Hilbert space. At $n=2$ the idempotents $\tilde\Pi_\pm$ have norm $1$, and the two other idempotents of the frame have the same norm.</p>
+<h2 id="unitary-invariance-and-the-failure-of-full-invariance">Unitary Invariance and the Failure of Full Invariance</h2>
+<p><strong>The form is invariant under unitary conjugation.</strong> For unitary $U,V$,</p>
+<p>$$
+\langle UXV,UYW\rangle=\operatorname{tr}(V^{*}X^{*}U^{*}UYW)=\operatorname{tr}(V^{*}X^{*}YW)=\langle X,Y\rangle ,
+$$</p>
+<p>using $U^{*}U=\mathrm{I}$ and the cyclicity of the trace. The identity was verified on random unitary matrices at $n=4$. So $\mathrm{U}(n)\times\mathrm{U}(n)$ acts by isometries, and the norm is a unitary invariant of the matrix.</p>
+<p><strong>The form is not invariant under general conjugation.</strong> For an invertible $P$,</p>
+<p>$$
+\langle PXP^{-1},PYP^{-1}\rangle=\operatorname{tr}\big((P^{*})^{-1}X^{*}P^{*}PYP^{-1}\big),
+$$</p>
+<p>which is not $\operatorname{tr}(X^{*}Y)$ in general, and the computation at $n=4$ confirms the failure on a random invertible matrix. The reason is that the form is definite: an invariant definite form would make the group compact, and $\mathrm{GL}_n(\mathbb{C})$ is not.</p>
+<p><strong>The trade-off with the trace form is exact.</strong> The trace form is invariant under all of $\mathrm{GL}_n$ and indefinite; the Hilbert–Schmidt form is definite and invariant only under the compact subgroup. Each form sees one of the two structures, and no form sees both, which is the dichotomy that the category reads as the difference between the algebra as a group and the algebra as a Hilbert space.</p>
+<h2 id="the-adjoints-of-the-operators">The Adjoints of the Operators</h2>
+<p><strong>The adjoint of left multiplication is left multiplication by the conjugate transpose.</strong> For the operator $L_A(X)=AX$,</p>
+<p>$$
+\langle L_AX,Y\rangle=\operatorname{tr}(X^{*}A^{*}Y)=\langle X,L_{A^{*}}Y\rangle ,
+$$</p>
+<p>so $L_A^{*}=L_{A^{*}}$, and likewise $R_B^{*}=R_{B^{*}}$ for $R_B(X)=XB$. Both identities were verified at $n=4$ on random complex matrices.</p>
+<p><strong>The adjoint of a two-sided operator is two-sided.</strong> For $T(X)=AXB$,</p>
+<p>$$
+\langle T X,Y\rangle=\operatorname{tr}(X^{*}A^{*}YB^{*})=\langle X,T^{*}Y\rangle,\qquad T^{*}(Y)=A^{*}YB^{*},
+$$</p>
+<p>which the computation confirms. So the two-sided operators form a $*$-closed family, and the adjoint is the entrywise conjugate transpose in the two-sided reading of <em>The Two-Sided Operators and the Segre Cone of $M_n(\mathbb{C})$</em>.</p>
+<p><strong>The adjoint of the derivation is the derivation by the conjugate transpose, without a sign.</strong> For $\operatorname{ad}_A(X)=[A,X]$,</p>
+<p>$$
+\langle [A,X],Y\rangle=\operatorname{tr}\big(X^{*}A^{*}Y-A^{*}X^{*}Y\big)=\langle X,[A^{*},Y]\rangle ,
+$$</p>
+<p>so</p>
+<p>$$
+\operatorname{ad}_A^{*}=\operatorname{ad}_{A^{*}} .
+$$</p>
+<p>The identity was verified at $n=4$, and the sign is absent because the conjugate transpose is used twice with no transposition of the product order. For the trace form the corresponding statement has a minus sign, since there the adjoint of the multiplication is multiplication by the transpose and the order reverses.</p>
+<p><strong>The derivation is therefore not skew for the Hilbert–Schmidt form.</strong> Since $\operatorname{ad}_A^{*}=\operatorname{ad}_{A^{*}}$ and $\operatorname{ad}_A$ is skew only when $A$ is skew-Hermitian up to the sign of the adjoint, the skewness statement holds for the trace form and not for this one. The two forms split the theory: the trace form is the natural form for the Lie structure, the Hilbert–Schmidt form the natural form for the operator structure.</p>
+<h2 id="definiteness-on-the-two-halves">Definiteness on the Two Halves</h2>
+<p><strong>The form is positive definite on each half.</strong> On the Hermitian matrices, $\operatorname{tr}(X^{*}X)=\operatorname{tr}(X^{2})=\sum X_{ij}^{2}>0$; on the skew-Hermitian matrices, $\operatorname{tr}(X^{*}X)=-\operatorname{tr}(X^{2})=\sum|X_{ij}|^{2}>0$. Both were verified on random elements at $n=4$.</p>
+<p><strong>So the split of the complex algebra is not a signature split.</strong> The trace form has signature $(n^{2},n^{2})$ on $M_n(\mathbb{C})$ read over $\mathbb{R}$, with the Hermitian and skew-Hermitian parts on opposite sides; the Hilbert–Schmidt form has signature $(2n^{2},0)$, and both halves are positive. The involution $X\mapsto X^{*}$ is therefore an isometry of the Hilbert–Schmidt form and an anti-isometry of the trace form, and the two behaviours are the two readings of the same involution.</p>
+<p><strong>The two halves are orthogonal but not definite for the trace form, and orthogonal and definite for this one.</strong> For $H$ Hermitian and $K$ skew-Hermitian,</p>
+<p>$$
+\operatorname{tr}(H^{*}K)=\operatorname{tr}(HK)\in i\mathbb{R},\qquad \operatorname{Re}\operatorname{tr}(H^{*}K)=0,
+$$</p>
+<p>so the halves are orthogonal for the real part of the Hilbert–Schmidt form as well. The orthogonality is common to the two forms; only the definiteness differs.</p>
+<h2 id="the-case-math91">The Case $n=2$</h2>
+<p><strong>At $n=2$ the form is the Euclidean form on four complex coordinates.</strong> With the basis $\mathrm{I},\sigma_1,\sigma_2,\sigma_3$ and the Pauli matrices Hermitian and traceless,</p>
+<p>$$
+\langle\sigma_i,\sigma_j\rangle=\operatorname{tr}(\sigma_i\sigma_j)=2\delta_{ij},\qquad \langle\mathrm{I},\mathrm{I}\rangle=2,\qquad \langle\mathrm{I},\sigma_i\rangle=0 .
+$$</p>
+<p>So the four matrices are orthogonal, of equal norm $\sqrt2$, and the form is $2$ times the standard form in that basis, which the computation confirms.</p>
+<p><strong>The Hilbert–Schmidt form and the biquaternion norm are different forms on the same algebra.</strong> The biquaternion norm $N$ is the determinant, indefinite of signature $(2,2)$, while the Hilbert–Schmidt form is definite; the two are related by the identity</p>
+<p>$$
+N(X)=\det X,\qquad \|X\|^{2}=\operatorname{tr}(X^{*}X),
+$$</p>
+<p>and for $2\times2$ matrices they satisfy $N(X)\le\tfrac12\|X\|^{2}$, with equality exactly on the scalar multiples of unitary matrices. So the definite form dominates the indefinite norm, and the equality case is the group $\mathrm{U}(2)$.</p>
+<p><strong>The idempotents of the frame lie on a sphere.</strong> The four idempotents $\tfrac12(\mathrm{I}\pm\sigma_1)$ and $\tfrac12(\mathrm{I}\pm\sigma_3)$ all have norm $1$, and a companion nilpotent with a single unit entry has norm $1$, which the computation confirms. So the sphere of radius $1$ contains both the idempotent variety of $M_2(\mathbb{C})$ and the two companion nilpotents of the frame.</p>
+<h2 id="summary">Summary</h2>
+<p>The form $\langle X,Y\rangle=\operatorname{tr}(X^{*}Y)$ is Hermitian, positive definite, with the matrix units as an orthonormal basis, and its real part is the Euclidean form on $\mathbb{R}^{2n^{2}}$. Its norm is the Euclidean norm of the singular values, it is bounded between the operator norm and $\sqrt n$ times it, and it equals $\sqrt r$ on a projection of rank $r$. The form is invariant under unitary conjugation and not under general conjugation, which is the exact trade-off against the indefinite invariant trace form. The adjoints are $L_A^{*}=L_{A^{*}}$, $R_B^{*}=R_{B^{*}}$, $(X\mapsto AXB)^{*}=(Y\mapsto A^{*}YB^{*})$ and $\operatorname{ad}_A^{*}=\operatorname{ad}_{A^{*}}$, so the derivation is skew for the trace form and not for this one. The form is positive definite on both halves, so the split by the involution is orthogonal for it but not a signature split.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\langle X,Y\rangle=\operatorname{tr}(X^{*}Y)$</td>
+<td>the Hilbert–Schmidt form</td>
+</tr>
+<tr>
+<td>$\|X\|^{2}=\operatorname{tr}(X^{*}X)$</td>
+<td>the Hilbert–Schmidt norm, the sum of the squares of the singular values</td>
+</tr>
+<tr>
+<td>$2n^{2}$</td>
+<td>the real dimension of the space</td>
+</tr>
+<tr>
+<td>$\delta_{ik}\delta_{jl}$</td>
+<td>the pairing of the matrix units</td>
+</tr>
+<tr>
+<td>$L_A^{*}=L_{A^{*}}$, $R_B^{*}=R_{B^{*}}$</td>
+<td>the adjoints of the one-sided operators</td>
+</tr>
+<tr>
+<td>$\operatorname{ad}_A^{*}=\operatorname{ad}_{A^{*}}$</td>
+<td>the adjoint of the derivation, without a sign</td>
+</tr>
+<tr>
+<td>$\sqrt{r}$</td>
+<td>the norm of a projection of rank $r$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Rajendra Bhatia, <em>Matrix Analysis</em> (Springer, 1997), for the Hilbert–Schmidt norm, the singular values and the comparison with the operator norm.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for the Hilbert–Schmidt inner product and the adjoints of the standard operators.</li>
+<li>Paul R. Halmos, <em>A Hilbert Space Problem Book</em> (Springer, 1982), for the two-sided operators and their adjoints.</li>
+<li><a href="the-trace-form-and-its-signature-on-the-two-halves.html">The Trace Form and Its Signature on the Two Halves</a>, for the indefinite form that this one replaces.</li>
+<li><a href="the-two-halves-over-c-hermitian-and-skew-hermitian.html">The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian</a>, for the split that is orthogonal but not definite here.</li>
+<li><a href="the-derivation-commutator-and-its-skewness-for-the-trace-form.html">The Derivation $X\mapsto[A,X]$ and Its Skewness for the Trace Form</a>, for the skewness that fails for this form.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

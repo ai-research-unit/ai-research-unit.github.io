@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Cartan Decomposition of $\mathrm{GL}_2(\mathbb{C})$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-cartan-decomposition-of-math0"><strong>The Cartan Decomposition of $\mathrm{GL}_2(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The group $\mathrm{GL}_2(\mathbb{C})$ is the product of the unitary group with the exponential of the Hermitian half, each element has a unique such product, and the two factors are the eigenspaces of the Cartan involution $g\mapsto(g^{*})^{-1}$.</strong></p>
+<p>The article defines the Cartan involution, computes its two eigenspaces, proves that the involution is an automorphism of the group and that its derivative is the map $X\mapsto-X^{*}$ on the Lie algebra, derives the group decomposition from the polar decomposition of the previous article, proves the bracket relations between the two summands, and identifies the symmetric space and the two real forms. It assumes <em>The Polar Decomposition from the Two Halves at $n=2$</em>, <em>The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian at $n=2$</em> and <em>The Exponential of a $2\times2$ Matrix and Its Image</em>.</p>
+<p>It follows the biquaternion article <em>The Endomorphisms of the Biquaternion Algebra</em> for the involution read on the eight real coordinates.</p>
+<h2 id="the-cartan-involution">The Cartan Involution</h2>
+<p><strong>Definition.</strong> The <strong>Cartan involution</strong> is $\theta(g)=(g^{*})^{-1}$ for an invertible $g$.</p>
+<p><strong>Proposition.</strong> The map $\theta$ is an involutive automorphism of the group $\mathrm{GL}_2(\mathbb{C})$, and its fixed subgroup is the unitary group.</p>
+<p><strong>Proof.</strong> $\theta(gh)=((gh)^{*})^{-1}=(h^{*}g^{*})^{-1}=(g^{*})^{-1}(h^{*})^{-1}=\theta(g)\theta(h)$, and $\theta(\theta(g))=(g^{-1})^{*}{}^{-1}=g$. A matrix is fixed exactly when $g^{*}=g^{-1}$, which is the definition of unitarity.</p>
+<p><strong>Corollary.</strong> The fixed subgroup is compact and is the unitary group $\mathrm{U}(2)$.</p>
+<p><strong>Proof.</strong> The unitary matrices are closed and bounded in the space of matrices, and they form a group.</p>
+<p><strong>Corollary.</strong> On the scalars the involution is complex conjugation, so its fixed points on the scalar circle are the two signs.</p>
+<p><strong>Proof.</strong> For $g=cI$ the involution gives $\bar cI$, and the fixed scalars of modulus one are $\pm1$.</p>
+<h2 id="the-two-eigenspaces">The Two Eigenspaces</h2>
+<p><strong>Proposition.</strong> The derivative of $\theta$ at the identity is the map $X\mapsto-X^{*}$, whose eigenvalues are $+1$ and $-1$ with the skew-Hermitian and the Hermitian matrices as eigenspaces.</p>
+<p><strong>Proof.</strong> Differentiating $g\mapsto(g^{*})^{-1}$ at $g=I$ in the direction $X$ gives $-X^{*}$; a matrix satisfying $X^{*}=-X$ is skew-Hermitian and one satisfying $X^{*}=X$ is Hermitian, and every matrix splits accordingly as $X=\tfrac12(X-X^{*})+\tfrac12(X+X^{*})$.</p>
+<p><strong>Corollary.</strong> The Lie algebra splits as $\mathfrak{gl}_2(\mathbb{C})=\mathfrak{u}(2)\oplus\operatorname{Herm}_2$, with the skew-Hermitian part of real dimension four and the Hermitian part of real dimension four.</p>
+<p><strong>Proof.</strong> The two eigenspaces have real dimension four each, because a skew-Hermitian matrix has four independent real entries and a Hermitian one has four as well.</p>
+<p><strong>Corollary.</strong> The summand $\mathfrak{p}=\operatorname{Herm}_2$ is not a Lie subalgebra, while $\mathfrak{u}(2)$ is one.</p>
+<p><strong>Proof.</strong> The bracket of two Hermitian matrices is skew-Hermitian, so it leaves the summand; the bracket of two skew-Hermitian matrices stays skew-Hermitian.</p>
+<h2 id="the-bracket-relations">The Bracket Relations</h2>
+<p><strong>Theorem.</strong> The three bracket relations hold: $[\mathfrak{k},\mathfrak{k}]\subseteq\mathfrak{k}$, $[\mathfrak{k},\mathfrak{p}]\subseteq\mathfrak{p}$ and $[\mathfrak{p},\mathfrak{p}]\subseteq\mathfrak{k}$, where $\mathfrak{k}=\mathfrak{u}(2)$ and $\mathfrak{p}=\operatorname{Herm}_2$.</p>
+<p><strong>Proof.</strong> For skew-Hermitian $K_{1},K_{2}$ the bracket has adjoint $[K_{2},K_{1}]=-[K_{1},K_{2}]$, so it is skew-Hermitian; for skew-Hermitian $K$ and Hermitian $H$ the bracket has adjoint $[H,K]=-[K,H]$, so it is Hermitian; for Hermitian $H_{1},H_{2}$ the bracket has adjoint $[H_{2},H_{1}]$, so it is skew-Hermitian.</p>
+<p><strong>Corollary.</strong> The pair $(\mathfrak{gl}_2(\mathbb{C}),\mathfrak{k})$ is a symmetric Lie algebra, and the summand $\mathfrak{p}$ is a module for $\mathfrak{k}$.</p>
+<p><strong>Proof.</strong> The relations are exactly the axioms of a symmetric Lie algebra, and the second relation says that the bracket with $\mathfrak{k}$ preserves $\mathfrak{p}$.</p>
+<p><strong>Corollary.</strong> The pair $(\mathrm{GL}_2(\mathbb{C}),\mathrm{U}(2))$ is a symmetric pair, and its infinitesimal data are the two summands.</p>
+<p><strong>Proof.</strong> The involution $\theta$ fixes the group $\mathrm{U}(2)$ and its derivative fixes $\mathfrak{k}$.</p>
+<h2 id="the-group-decomposition">The Group Decomposition</h2>
+<p><strong>Theorem.</strong> Every invertible matrix is uniquely $g=up$ with $u$ unitary and $p$ positive definite Hermitian, so $\mathrm{GL}_2(\mathbb{C})=\mathrm{U}(2)\exp(\operatorname{Herm}_2)$.</p>
+<p><strong>Proof.</strong> This is the polar decomposition of <em>The Polar Decomposition from the Two Halves at $n=2$</em>, and the positive factor is the exponential of a Hermitian matrix by the logarithm of the symmetric half.</p>
+<p><strong>Corollary.</strong> The multiplication map $\mathrm{U}(2)\times\operatorname{Herm}_2\to\mathrm{GL}_2(\mathbb{C})$, $(u,H)\mapsto u\,e^{H}$, is a bijection.</p>
+<p><strong>Proof.</strong> The polar decomposition gives existence and the uniqueness of the positive factor plus the logarithm gives uniqueness of $H$.</p>
+<p><strong>Corollary.</strong> The map is a diffeomorphism, so the group is diffeomorphic to the product of a compact group and a vector space.</p>
+<p><strong>Proof.</strong> The factors depend smoothly on the matrix, and the product is smooth with smooth inverse.</p>
+<h2 id="the-symmetric-space">The Symmetric Space</h2>
+<p><strong>Proposition.</strong> The quotient $\mathrm{GL}_2(\mathbb{C})/\mathrm{U}(2)$ is diffeomorphic to the Hermitian half, and the group acts on it by left multiplication, which in the model sends $H$ to the logarithm of the positive factor of $ge^{H}$.</p>
+<p><strong>Proof.</strong> The quotient is the set of left cosets, and the map sending a coset to the logarithm of the positive factor of its elements is a bijection with the Hermitian half.</p>
+<p><strong>Corollary.</strong> The quotient is a symmetric space with the involution induced by $\theta$, and the geodesics through the origin are the one-parameter groups $e^{tH}$.</p>
+<p><strong>Proof.</strong> The symmetric space structure comes from the involution, and the geodesics are the exponentials of the summand $\mathfrak{p}$.</p>
+<p><strong>Corollary.</strong> The scalar circle acts on the quotient and the action is nontrivial only through the modulus of the scalar.</p>
+<p><strong>Proof.</strong> A scalar $cI$ has the polar decomposition with the unitary factor of phase $c/|c|$ and the positive factor $|c|I$, so only the modulus survives in the quotient.</p>
+<h2 id="the-real-form">The Real Form</h2>
+<p><strong>Proposition.</strong> For the real form $M_2(\mathbb{R})$ the same construction gives $\mathrm{GL}_2(\mathbb{R})=\mathrm{O}(2)\exp(\operatorname{Sym}_2(\mathbb{R}))$.</p>
+<p><strong>Proof.</strong> The involution is now $\theta(g)=(g^{\mathsf T})^{-1}$, whose fixed group is the orthogonal group; the polar decomposition of a real matrix has an orthogonal factor and a positive definite symmetric factor.</p>
+<p><strong>Corollary.</strong> The Hermitian half is replaced by the symmetric half, and the skew-Hermitian half by the antisymmetric line.</p>
+<p><strong>Proof.</strong> The transpose involution has the symmetric matrices as the $+1$ eigenspace and the antisymmetric line as the $-1$ eigenspace.</p>
+<p><strong>Corollary.</strong> The quotient $\mathrm{GL}_2(\mathbb{R})/\mathrm{O}(2)$ is diffeomorphic to the symmetric half, a space of dimension three.</p>
+<p><strong>Proof.</strong> The same map to the logarithm of the positive factor is a bijection.</p>
+<h2 id="the-comparison-with-the-trace-form">The Comparison with the Trace Form</h2>
+<p><strong>Proposition.</strong> The two summands are orthogonal for the form $\operatorname{Re}\operatorname{tr}(X^{*}Y)$, and the form is positive definite on the whole Lie algebra.</p>
+<p><strong>Proof.</strong> For skew-Hermitian $K$ and Hermitian $H$ one has $\overline{\operatorname{tr}(K^{*}H)}=\operatorname{tr}(H^{*}K)=\operatorname{tr}(HK)=-\operatorname{tr}(K^{*}H)$, so the number is purely imaginary and its real part vanishes; on each summand the form is a sum of squares on the four real entries, which gives positive definiteness.</p>
+<p><strong>Corollary.</strong> The Hilbert–Schmidt form makes the decomposition into the two summands an orthogonal decomposition.</p>
+<p><strong>Proof.</strong> The two summands are the eigenspaces of a self-adjoint involution for a positive definite form, so they are orthogonal.</p>
+<p><strong>Corollary.</strong> The Cartan decomposition is the group version of the orthogonal splitting of the Lie algebra.</p>
+<p><strong>Proof.</strong> Both come from the same involution, and the group decomposition integrates the algebra one.</p>
+<h2 id="summary">Summary</h2>
+<p>The Cartan involution $\theta(g)=(g^{*})^{-1}$ is an involutive automorphism of $\mathrm{GL}_2(\mathbb{C})$ whose fixed subgroup is the unitary group. Its derivative is $X\mapsto-X^{*}$, with the skew-Hermitian matrices as the $+1$ eigenspace and the Hermitian matrices as the $-1$ eigenspace, and the three bracket relations hold with $[\mathfrak{p},\mathfrak{p}]\subseteq\mathfrak{k}$.</p>
+<p>The group is the product $\mathrm{U}(2)\exp(\operatorname{Herm}_2)$, and the product map is a diffeomorphism. The quotient by the unitary group is the Hermitian half with its symmetric space structure, and the real form replaces the unitary group by the orthogonal group and the Hermitian half by the symmetric half.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\theta(g)=(g^{*})^{-1}$</td>
+<td>the Cartan involution</td>
+</tr>
+<tr>
+<td>$\mathfrak{k}=\mathfrak{u}(2)$</td>
+<td>the skew-Hermitian summand</td>
+</tr>
+<tr>
+<td>$\mathfrak{p}=\operatorname{Herm}_2$</td>
+<td>the Hermitian summand</td>
+</tr>
+<tr>
+<td>$\mathrm{U}(2)\exp(\mathfrak{p})$</td>
+<td>the Cartan decomposition</td>
+</tr>
+<tr>
+<td>$\mathrm{GL}_2(\mathbb{C})/\mathrm{U}(2)$</td>
+<td>the symmetric space</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Sigurdur Helgason, <em>Differential Geometry, Lie Groups, and Symmetric Spaces</em> (American Mathematical Society, 2001), for Cartan decompositions and symmetric pairs.</li>
+<li>Anthony W. Knapp, <em>Lie Groups Beyond an Introduction</em> (Birkhäuser, 2002), for the structure theory of the decomposition.</li>
+<li><a href="the-polar-decomposition-from-the-two-halves-at-n-2.html">The Polar Decomposition from the Two Halves at $n=2$</a>, for the group decomposition used here.</li>
+<li><a href="the-two-halves-over-c-hermitian-and-skew-hermitian-at-n-2.html">The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian at $n=2$</a>, for the two summands of the Lie algebra.</li>
+<li><a href="the-exponential-of-sym-2-stretches-and-the-positive-cone.html">The Exponential of $\operatorname{Sym}_2$: Stretches and the Positive Cone</a>, for the logarithm used on the Hermitian summand.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

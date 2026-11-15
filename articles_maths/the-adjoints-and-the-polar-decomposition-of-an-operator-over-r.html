@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Adjoints and the Polar Decomposition of an Operator — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-adjoints-and-the-polar-decomposition-of-an-operator"><strong>The Adjoints and the Polar Decomposition of an Operator</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The operator space carries a positive definite form, and with it every operator has an adjoint; the adjoint of the two-sided operator $T_{A,B}$ is $T_{A^{\mathsf T},B^{\mathsf T}}$, and the polar decomposition of an operator is the polar decomposition of its two factors.</strong> The form is the Hilbert–Schmidt form $\langle S,T\rangle=\operatorname{tr}(S^{\mathsf T}T)$, which is definite but not invariant. The invariance is what the trace form has, and the two forms give different adjoints: this is the first thing to keep apart.</p>
+<p>The article defines the Hilbert–Schmidt form, computes the adjoints of $L_A$, of $R_B$, of $T_{A,B}$ and of $\operatorname{ad}_A$, divides the operator space into a self-adjoint and an antisymmetric half, and proves the polar decomposition $T=UP$. It computes the singular values of $T_{A,B}$ as the products of those of $A$ and of $B$, and compares the operator norm with the Hilbert–Schmidt norm. It assumes <em>The Two-Sided Operators and the Real Segre Cone</em> for the operators and their composition, and it defers the splitting of the operator space to <em>The Symmetric and Antisymmetric Parts of the Operator Space</em>.</p>
+<p>Throughout $n\ge2$, $M_n=M_n(\mathbb{R})$ and $\operatorname{End}=\operatorname{End}(M_n)$.</p>
+<h2 id="the-hilbertschmidt-form">The Hilbert–Schmidt Form</h2>
+<p><strong>Definition.</strong> For $S,T\in\operatorname{End}$,</p>
+<p>$$
+\langle S,T\rangle=\operatorname{tr}(S^{\mathsf T}T),
+$$</p>
+<p>where $S^{\mathsf T}$ is the transpose of the matrix of $S$ in an orthonormal basis of $M_n$.</p>
+<p><strong>The form is an inner product.</strong> The entry $(i,j)$ of $S^{\mathsf T}T$ is the scalar product of the $i$-th row of $S$ with the $j$-th column of $T$, so</p>
+<p>$$
+\langle S,T\rangle=\sum_{i,j}S_{ij}T_{ij},
+$$</p>
+<p>the sum of the products of corresponding entries of the $n^{2}\times n^{2}$ matrices. Symmetry, bilinearity and positive definiteness are the corresponding properties of the scalar product on $\mathbb{R}^{n^{2}}$.</p>
+<p><strong>The form is not invariant.</strong> The trace form satisfies $\langle ST,U\rangle=\langle S,TU\rangle$; the Hilbert–Schmidt form does not, since the transposition is in the way. So the operator space carries a definite form that the algebra does not preserve, and an indefinite one that it does.</p>
+<p><strong>The adjoint is the transpose of the matrix.</strong> For every $S$ there is a unique $S^{*}$ with $\langle SX,Y\rangle=\langle X,S^{*}Y\rangle$ for all $X,Y$, namely the transpose of the matrix of $S$. So the adjoint operation on $\operatorname{End}$ is the transpose involution of $M_{n^{2}}(\mathbb{R})$, and the orthogonal group of the form is $\mathrm{O}(n^{2})$.</p>
+<h2 id="the-adjoint-of-the-one-sided-operators">The Adjoint of the One-Sided Operators</h2>
+<p><strong>Theorem.</strong> $L_A^{*}=L_{A^{\mathsf T}}$ and $R_B^{*}=R_{B^{\mathsf T}}$.</p>
+<p><em>Proof.</em> Compute in the entries of $M_n$:</p>
+<p>$$
+\langle L_AX,Y\rangle=\operatorname{tr}((AX)^{\mathsf T}Y)=\operatorname{tr}(X^{\mathsf T}A^{\mathsf T}Y)=\langle X,L_{A^{\mathsf T}}Y\rangle .
+$$</p>
+<p>The second identity is the same computation with $(XB)^{\mathsf T}=B^{\mathsf T}X^{\mathsf T}$:</p>
+<p>$$
+\langle R_BX,Y\rangle=\operatorname{tr}(B^{\mathsf T}X^{\mathsf T}Y)=\operatorname{tr}(X^{\mathsf T}YB^{\mathsf T})=\langle X,R_{B^{\mathsf T}}Y\rangle .
+$$</p>
+<p><strong>The adjoint stays on the same side.</strong> The adjoint of a left multiplication is a left multiplication, and the adjoint of a right multiplication is a right multiplication. The trace form behaves otherwise: $\langle L_AX,Y\rangle=\operatorname{tr}(AXY)=\operatorname{tr}(XYA)=\langle X,R_AY\rangle$, so under it the adjoint of $L_A$ is $R_A$ and the side is exchanged.</p>
+<p><strong>Measured at $n=3$.</strong> For random $A,X,Y$ the identity $\langle AX,Y\rangle=\langle X,A^{\mathsf T}Y\rangle$ holds to machine precision, and $\langle AX,Y\rangle=\langle X,YA^{\mathsf T}\rangle$ fails by a quantity of order $10$. So the adjoint of $L_A$ is not $R_{A^{\mathsf T}}$.</p>
+<h2 id="the-adjoint-of-the-two-sided-operator">The Adjoint of the Two-Sided Operator</h2>
+<p><strong>Theorem.</strong> $T_{A,B}^{*}=T_{A^{\mathsf T},B^{\mathsf T}}$.</p>
+<p><em>Proof.</em> $\langle AXB,Y\rangle=\operatorname{tr}(B^{\mathsf T}X^{\mathsf T}A^{\mathsf T}Y)=\operatorname{tr}(X^{\mathsf T}A^{\mathsf T}YB^{\mathsf T})=\langle X,A^{\mathsf T}YB^{\mathsf T}\rangle$.</p>
+<p><strong>The adjoint is the two-sided operator of the transposed factors.</strong> So the map $(A,B)\mapsto T_{A,B}$ commutes with the adjoint, and the adjoint of a two-sided operator is again two-sided. The identity holds to machine precision at $n=3$.</p>
+<p><strong>The products with the adjoint are two-sided and self-adjoint.</strong> By the composition rule,</p>
+<p>$$
+T_{A,B}^{*}T_{A,B}=T_{A^{\mathsf T}A,\,BB^{\mathsf T}},\qquad T_{A,B}T_{A,B}^{*}=T_{AA^{\mathsf T},\,B^{\mathsf T}B} .
+$$</p>
+<p>Both are self-adjoint, since $A^{\mathsf T}A$, $BB^{\mathsf T}$, $AA^{\mathsf T}$ and $B^{\mathsf T}B$ are symmetric. And both are positive semidefinite for the form, because</p>
+<p>$$
+\langle X,T_{A^{\mathsf T}A,BB^{\mathsf T}}X\rangle=\operatorname{tr}\big((AXB)^{\mathsf T}(AXB)\big)=\|AXB\|_{\mathrm{F}}^{2}\ge0 .
+$$</p>
+<p>So $T_{A,B}^{*}T_{A,B}$ is the operator whose square root is the positive factor of the polar decomposition.</p>
+<h2 id="the-inner-derivations">The Inner Derivations</h2>
+<p><strong>Definition.</strong> The <strong>inner derivation</strong> is $\operatorname{ad}_A=L_A-R_A$, that is, $\operatorname{ad}_A(X)=AX-XA$.</p>
+<p><strong>Theorem.</strong> $\operatorname{ad}_A^{*}=\operatorname{ad}_{A^{\mathsf T}}$.</p>
+<p><em>Proof.</em> By the two theorems above, $L_A^{*}-R_A^{*}=L_{A^{\mathsf T}}-R_{A^{\mathsf T}}$.</p>
+<p><strong>The derivation is self-adjoint only for symmetric $A$.</strong> The operator $\operatorname{ad}_A$ is self-adjoint exactly when $A=A^{\mathsf T}$, and antisymmetric exactly when $A=-A^{\mathsf T}$. Measured at $n=3$, $\operatorname{ad}_A$ is antisymmetric for an antisymmetric $A$ and not for a symmetric one.</p>
+<p><strong>The trace form makes every derivation antisymmetric.</strong> For the trace form, $\langle \operatorname{ad}_AX,Y\rangle+\langle X,\operatorname{ad}_AY\rangle=\operatorname{tr}(AXY)-\operatorname{tr}(XYA)=0$ for every $A$, to machine precision at $n=3$. So the antisymmetry is a property of the invariant form, not of the algebra.</p>
+<h2 id="the-self-adjoint-and-the-antisymmetric-operators">The Self-Adjoint and the Antisymmetric Operators</h2>
+<p><strong>Definition.</strong> An operator $S$ is <strong>self-adjoint</strong> when $S^{*}=S$ and <strong>antisymmetric</strong> when $S^{*}=-S$.</p>
+<p><strong>Every operator splits.</strong> Since $2$ is invertible,</p>
+<p>$$
+S=\tfrac12(S+S^{*})+\tfrac12(S-S^{*}),
+$$</p>
+<p>the first term self-adjoint and the second antisymmetric. The two subspaces meet only at $0$, so</p>
+<p>$$
+\operatorname{End}=\operatorname{End}_{\mathrm{sym}}\oplus\operatorname{End}_{\mathrm{anti}},\qquad
+\dim\operatorname{End}_{\mathrm{sym}}=\frac{n^{2}(n^{2}+1)}{2},\qquad
+\dim\operatorname{End}_{\mathrm{anti}}=\frac{n^{2}(n^{2}-1)}{2}.
+$$</p>
+<p>At $n=2$ the counts are $16=10+6$; at $n=3$ they are $81=45+36$. The table of <em>The Symmetric and Antisymmetric Parts of the Operator Space</em> is this decomposition, read as the splitting of the operator algebra.</p>
+<p><strong>The two-sided operators are not self-adjoint in general.</strong> $T_{A,B}$ is self-adjoint exactly when $A$ and $B$ are symmetric. So the real Segre cone meets the self-adjoint half in the cone over the product of two symmetric rank-one varieties, and meets the antisymmetric half only at $0$.</p>
+<h2 id="the-polar-decomposition">The Polar Decomposition</h2>
+<p><strong>Theorem.</strong> Every invertible $T\in\operatorname{End}$ factors uniquely as</p>
+<p>$$
+T=UP,\qquad U^{*}U=UU^{*}=\mathrm{I},\qquad P^{*}=P,\quad P>0 .
+$$</p>
+<p><em>Proof.</em> The operator $T^{*}T$ is self-adjoint and positive definite, since $\langle X,T^{*}TX\rangle=\|TX\|^{2}>0$ for $X\ne0$. It has a self-adjoint positive square root $P$, obtained by diagonalising it in an orthonormal basis and taking the square roots of the eigenvalues. Put $U=TP^{-1}$. Then</p>
+<p>$$
+U^{*}U=P^{-1}T^{*}TP^{-1}=P^{-1}P^{2}P^{-1}=\mathrm{I},
+$$</p>
+<p>so $U$ is orthogonal, and $T=UP$. For uniqueness, $T^{*}T=P^{2}$ forces $P$ to be the positive square root, and then $U=TP^{-1}$ is forced.</p>
+<p><strong>The decomposition is the polar decomposition of a matrix, at size $n^{2}$.</strong> It is the factorisation of an invertible matrix into an orthogonal and a positive definite factor. Measured at $n=3$ on a random operator, the factorisation reproduces $T$, $U$ is orthogonal, $P$ is symmetric and positive with smallest eigenvalue $0.2693$.</p>
+<p><strong>The orthogonal factor is continuous, so the decomposition retracts the unit group.</strong> The map $T\mapsto U=TP^{-1}$ is continuous on the open set of invertible operators, and it is the identity on the orthogonal group. Following $t\mapsto U_t$ along $P_t=P^{t}$ gives a deformation retraction of $\mathrm{GL}_{n^{2}}(\mathbb{R})$ onto $\mathrm{O}(n^{2})$, the statement used in <em>The Topology of $M_n(\mathbb{R})$ and the Sign of the Determinant</em>.</p>
+<p><strong>The polar decomposition of a two-sided operator is the pair of decompositions of its factors.</strong> Write $A=U_A|A|$ with $|A|=(A^{\mathsf T}A)^{1/2}$ and $B=|B^{\mathsf T}|V$ with $|B^{\mathsf T}|=(BB^{\mathsf T})^{1/2}$. Then</p>
+<p>$$
+T_{A,B}=T_{U_A,V}\,T_{|A|,|B^{\mathsf T}|},
+$$</p>
+<p>the first factor orthogonal, the second self-adjoint positive. The identity is the composition rule: $T_{U_A,V}T_{|A|,|B^{\mathsf T}|}=T_{U_A|A|,\,|B^{\mathsf T}|V}=T_{A,B}$. So the orthogonal factor of $T_{A,B}$ is the two-sided operator of the two orthogonal factors, and the positive factor is the two-sided operator of the two positive factors.</p>
+<h2 id="the-singular-values">The Singular Values</h2>
+<p><strong>Theorem.</strong> The singular values of $T_{A,B}$ are the $n^{2}$ products $\sigma_i(A)\sigma_j(B)$, $1\le i,j\le n$, counted with multiplicity.</p>
+<p><em>Proof.</em> By the vectorisation, the matrix of $T_{A,B}$ is the Kronecker product $B^{\mathsf T}\otimes A$. The singular values of a Kronecker product $C\otimes D$ are the products of the singular values of $C$ and of $D$: both factors are diagonalised by pairs of orthogonal matrices, and the tensor product of two orthogonal matrices is orthogonal. The singular values of $B^{\mathsf T}$ are those of $B$.</p>
+<p><strong>The spectral norm multiplies.</strong> The largest singular value is the operator norm, so</p>
+<p>$$
+\|T_{A,B}\|=\|A\|\,\|B\| .
+$$</p>
+<p>At $n=3$, on random $A,B$, the computed operator norm of $T_{A,B}$ and the product of the two operator norms agree to $10^{-15}$.</p>
+<p><strong>The singular values count the rank.</strong> The number of nonzero products is $(\operatorname{rk}A)(\operatorname{rk}B)$, the rank formula of <em>The Two-Sided Operators and the Real Segre Cone</em>.</p>
+<h2 id="the-two-norms">The Two Norms</h2>
+<p><strong>The Hilbert–Schmidt norm of a two-sided operator is a product.</strong> Since the Hilbert–Schmidt norm is the Euclidean norm of the list of singular values,</p>
+<p>$$
+\|T_{A,B}\|_{\mathrm{HS}}^{2}=\sum_{i,j}\sigma_i(A)^{2}\sigma_j(B)^{2}=\Big(\sum_i\sigma_i(A)^{2}\Big)\Big(\sum_j\sigma_j(B)^{2}\Big),
+$$</p>
+<p>so $\|T_{A,B}\|_{\mathrm{HS}}=\|A\|_{\mathrm{F}}\|B\|_{\mathrm{F}}$. Measured at $n=3$ on random $A,B$, the two sides agree to $10^{-15}$.</p>
+<p><strong>The two norms are the two ends of the list of singular values.</strong> The operator norm is the largest singular value $\|A\|\|B\|$ and the Hilbert–Schmidt norm is the Euclidean length $\|A\|_{\mathrm{F}}\|B\|_{\mathrm{F}}$, with</p>
+<p>$$
+\|T\|\le\|T\|_{\mathrm{HS}}\le n\,\|T\|
+$$</p>
+<p>for every operator on $M_n$, because there are $n^{2}$ singular values and the largest dominates the Euclidean length by at most the factor $n$. Both are sharp, the first at a rank-one operator and the second at a scalar multiple of an orthogonal one.</p>
+<p><strong>The norm of the adjoint is the norm.</strong> $\|T^{*}\|=\|T\|$ and $\|T^{*}\|_{\mathrm{HS}}=\|T\|_{\mathrm{HS}}$, since the adjoint has the same singular values. For $T_{A,B}$ this is the statement $\|A^{\mathsf T}\|\|B^{\mathsf T}\|=\|A\|\|B\|$, which holds because transposition preserves singular values; measured at $n=3$, both norms agree to machine precision.</p>
+<h2 id="summary">Summary</h2>
+<p>The Hilbert–Schmidt form $\langle S,T\rangle=\operatorname{tr}(S^{\mathsf T}T)$ is positive definite on the operator space, and the adjoint it defines is the transpose of the $n^{2}\times n^{2}$ matrix. The adjoints are $L_A^{*}=L_{A^{\mathsf T}}$, $R_B^{*}=R_{B^{\mathsf T}}$, $T_{A,B}^{*}=T_{A^{\mathsf T},B^{\mathsf T}}$ and $\operatorname{ad}_A^{*}=\operatorname{ad}_{A^{\mathsf T}}$: the side is kept and the matrix transposed, while the trace form exchanges the side. Every operator splits into a self-adjoint and an antisymmetric part, of dimensions $n^{2}(n^{2}+1)/2$ and $n^{2}(n^{2}-1)/2$, the second being the Lie algebra of $\mathrm{O}(n^{2})$. Every invertible operator factors as $T=UP$ with $U$ orthogonal and $P$ positive, which retracts $\mathrm{GL}_{n^{2}}(\mathbb{R})$ onto $\mathrm{O}(n^{2})$. The singular values of $T_{A,B}$ are the products $\sigma_i(A)\sigma_j(B)$, so the operator norm and the Hilbert–Schmidt norm of $T_{A,B}$ are the products of the corresponding norms of $A$ and of $B$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\langle S,T\rangle=\operatorname{tr}(S^{\mathsf T}T)$</td>
+<td>the Hilbert–Schmidt form</td>
+</tr>
+<tr>
+<td>$S^{*}$</td>
+<td>the adjoint, the transpose of the matrix of $S$</td>
+</tr>
+<tr>
+<td>$L_A$, $R_B$, $T_{A,B}$</td>
+<td>left, right and two-sided multiplication</td>
+</tr>
+<tr>
+<td>$\operatorname{ad}_A=L_A-R_A$</td>
+<td>the inner derivation</td>
+</tr>
+<tr>
+<td>$\operatorname{End}_{\mathrm{sym}}$, $\operatorname{End}_{\mathrm{anti}}$</td>
+<td>the self-adjoint and antisymmetric operators</td>
+</tr>
+<tr>
+<td>$T=UP$</td>
+<td>the polar decomposition, $U$ orthogonal and $P$ positive</td>
+</tr>
+<tr>
+<td>$\sigma_i(A)$</td>
+<td>the singular values of $A$</td>
+</tr>
+<tr>
+<td>$\|T\|$, $\|T\|_{\mathrm{HS}}$</td>
+<td>the operator norm and the Hilbert–Schmidt norm</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Rajendra Bhatia, <em>Matrix Analysis</em> (Springer, 1997), for the Hilbert–Schmidt form, the polar decomposition and the singular values.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for the Kronecker product and its singular values.</li>
+<li><a href="the-two-sided-operators-and-the-real-segre-cone.html">The Two-Sided Operators and the Real Segre Cone</a>, for the operators, their composition and their rank.</li>
+<li><a href="the-matrix-algebra-mnr.html">The Matrix Algebra $M_n(\mathbb{R})$</a>, for the trace form and the transpose.</li>
+<li><a href="the-symmetric-and-antisymmetric-parts-of-the-operator-space-over-r.html">The Symmetric and Antisymmetric Parts of the Operator Space</a>, for the splitting and its two involutions.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

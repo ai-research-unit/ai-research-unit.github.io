@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian at $n=2$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-two-halves-over-math0-hermitian-and-skew-hermitian-at-math1"><strong>The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian at $n=2$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>Over $\mathbb{C}$ the two halves are the Hermitian matrices of real dimension $4$ and the skew-Hermitian ones of real dimension $4$, and the determinant of a Hermitian matrix of order two is a Minkowski form of signature $(1,3)$.</strong></p>
+<p>The article proves the split $M_2(\mathbb{C})=\operatorname{Herm}_2\oplus\mathfrak{u}(2)$ as the eigenspaces of the conjugate transpose, identifies $\operatorname{Herm}_2$ with Minkowski space through the determinant and with the Pauli coordinates, identifies the skew-Hermitian half with the Lie algebra $\mathfrak{u}(2)=\mathbb{R}iI\oplus\mathfrak{su}(2)$, computes the product rules $\{H,K\}$ Hermitian and $[H,K]$ skew-Hermitian, and reads the light cone and the rank-one elements. It assumes <em>The Involutions of $M_2(\mathbb{C})$ over $\mathbb{R}$ and over $\mathbb{C}$</em> for the conjugate transpose, and <em>The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$</em> for the real slice.</p>
+<p>It defers the orthogonal complement to <em>The Two Halves as Orthogonal Complements at $n=2$</em>, the spectral statement to <em>The Spectral Theorem: the Hermitian Case and the Sphere of Idempotents</em>, and the complex structure on the algebra to <em>The Element: The Coordinates and the Conjugations</em>.</p>
+<h2 id="the-split-over-math17">The Split over $\mathbb{C}$</h2>
+<p><strong>Theorem.</strong> Every complex matrix is the sum of a Hermitian and a skew-Hermitian one in exactly one way:</p>
+<p>$$
+M_2(\mathbb{C})=\operatorname{Herm}_2\oplus\mathfrak{u}(2),\qquad \dim_{\mathbb{R}}=4+4=8 .
+$$</p>
+<p><strong>Proof.</strong> $A=H+K$ with $H=\tfrac12(A+A^{*})$ and $K=\tfrac12(A-A^{*})$; the two pieces satisfy $H^{*}=H$ and $K^{*}=-K$. If $H+K=0$, applying the conjugate transpose gives $H-K=0$, so both vanish.</p>
+<p><strong>The two halves are the eigenspaces of the conjugate transpose.</strong> The map $\theta(A)=A^{*}$ has $+1$ on $\operatorname{Herm}_2$ and $-1$ on the skew-Hermitian half, so the split is the eigenspace decomposition of an involution, exactly as over $\mathbb{R}$ with the transpose.</p>
+<p><strong>The halves have the same real dimension.</strong> Each is four-dimensional over $\mathbb{R}$: the Hermitian condition fixes two real equations on the four complex entries, and the skew-Hermitian condition fixes the other two.</p>
+<p><strong>The real slice.</strong> The real matrices inside $\operatorname{Herm}_2$ are the real symmetric matrices, and the real matrices inside the skew-Hermitian half are the real antisymmetric ones. So the two halves of this article restrict on $M_2(\mathbb{R})$ to the two halves of <em>The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$</em>.</p>
+<h2 id="the-hermitian-half-as-minkowski-space">The Hermitian Half as Minkowski Space</h2>
+<p><strong>Proposition.</strong> Every Hermitian matrix of order two is</p>
+<p>$$
+X=x_{0}I+x_{1}\sigma_{1}+x_{2}\sigma_{3}+x_{3}\sigma_{2}
+=\begin{pmatrix}x_{0}+x_{1}&x_{2}-ix_{3}\\ x_{2}+ix_{3}&x_{0}-x_{1}\end{pmatrix}
+$$</p>
+<p>with real $x_{0},x_{1},x_{2},x_{3}$, and the four matrices $I,\sigma_{1},\sigma_{3},\sigma_{2}$ form a real basis.</p>
+<p><strong>Proof.</strong> A Hermitian matrix has real diagonal entries and conjugate off-diagonal entries, so it has four real parameters; the four displayed matrices are Hermitian and independent, and the display inverts the coordinates.</p>
+<p><strong>Theorem.</strong> In these coordinates</p>
+<p>$$
+\det X=x_{0}^{2}-x_{1}^{2}-x_{2}^{2}-x_{3}^{2},
+$$</p>
+<p>so the determinant is a quadratic form of signature $(1,3)$ on $\operatorname{Herm}_2$.</p>
+<p><strong>Proof.</strong> $\det$ of the displayed matrix is $(x_{0}+x_{1})(x_{0}-x_{1})-(x_{2}-ix_{3})(x_{2}+ix_{3})=x_{0}^{2}-x_{1}^{2}-x_{2}^{2}-x_{3}^{2}$. The Gram matrix of the form in the basis is $\operatorname{diag}(1,-1,-1,-1)$.</p>
+<p><strong>Corollary (the light cone).</strong> The Hermitian matrices of determinant zero form the cone of the three space directions plus the time axis; the cone is the set of rank-one positive semidefinite Hermitian matrices.</p>
+<p><strong>Proof.</strong> A Hermitian matrix of order two with determinant zero has rank one or zero. It is positive semidefinite exactly when $x_{0}\ge0$ and $x_{0}^{2}\ge x_{1}^{2}+x_{2}^{2}+x_{3}^{2}$, that is on the forward cone.</p>
+<p><strong>The group action.</strong> For $g\in\mathrm{SL}_2(\mathbb{C})$ the map $X\mapsto gXg^{*}$ preserves $\operatorname{Herm}_2$ and multiplies the determinant by $|\det g|^{2}=1$, so it acts by Lorentz transformations of the Minkowski space of the Hermitian half.</p>
+<p><strong>The traces are positive definite.</strong> $\operatorname{tr}(X^{2})=2(x_{0}^{2}+x_{1}^{2}+x_{2}^{2}+x_{3}^{2})$, so the trace form is positive definite on $\operatorname{Herm}_2$, unlike the determinant.</p>
+<h2 id="the-skew-hermitian-half-as-math53">The Skew-Hermitian Half as $\mathfrak{u}(2)$</h2>
+<p><strong>Proposition.</strong> The skew-Hermitian matrices are exactly the products $iX$ with $X$ Hermitian, and they form the Lie algebra $\mathfrak{u}(2)$ of the unitary group.</p>
+<p><strong>Proof.</strong> $K^{*}=-K$ is equivalent to $(iK)^{*}=-iK^{*}=iK$, so $iK$ is Hermitian. The unitary group consists of the matrices with $g^{*}g=I$, and differentiating at the identity gives $K^{*}+K=0$.</p>
+<p><strong>Corollary.</strong> $\mathfrak{u}(2)=\mathbb{R}iI\oplus\mathfrak{su}(2)$, with $\mathfrak{su}(2)$ the traceless skew-Hermitian matrices, of real dimension $3$.</p>
+<p><strong>Proof.</strong> A skew-Hermitian matrix has a purely imaginary trace; subtracting the scalar part leaves the traceless skew-Hermitian matrices, which are three real dimensions.</p>
+<p><strong>Proposition (the structure constants).</strong> With $S_{a}=i\sigma_{a}$,</p>
+<p>$$
+[S_{a},S_{b}]=-2i\,\epsilon_{abc}S_{c},
+$$</p>
+<p>so $\mathfrak{su}(2)$ is isomorphic to $\mathfrak{so}(3)$.</p>
+<p><strong>Proof.</strong> The Pauli matrices satisfy $[\sigma_{a},\sigma_{b}]=2i\epsilon_{abc}\sigma_{c}$; multiplying both factors by $i$ multiplies the bracket by $i^{2}=-1$.</p>
+<p><strong>Example.</strong> $[S_{1},S_{2}]=-2S_{3}$, and the three brackets are the multiplication table of the rotations of three-dimensional space.</p>
+<h2 id="the-products-of-the-two-halves">The Products of the Two Halves</h2>
+<p><strong>Proposition.</strong> For Hermitian $H,K$,</p>
+<p>$$
+(HK)^{*}=KH,
+$$</p>
+<p>so $HK+KH$ is Hermitian and $HK-KH$ is skew-Hermitian.</p>
+<p><strong>Proof.</strong> $(HK)^{*}=K^{*}H^{*}=KH$. Then $(HK+KH)^{*}=KH+HK$ and $(HK-KH)^{*}=KH-HK=-(HK-KH)$.</p>
+<p><strong>Corollary.</strong> The Hermitian half is a Jordan algebra under the product $\tfrac12(HK+KH)$ and the skew-Hermitian half is a Lie algebra under the commutator, and both are closed.</p>
+<p><strong>Proof.</strong> The two statements are the two halves of the proposition; the axioms of a Jordan algebra are checked by polarising the associativity of the ambient product.</p>
+<p><strong>Proposition.</strong> For skew-Hermitian $S$ and Hermitian $H$ the commutator $[S,H]$ is traceless Hermitian.</p>
+<p><strong>Proof.</strong> $[S,H]^{*}=[H^{*},S^{*}]=[H,-S]=[S,H]$, so it is Hermitian; its trace is zero because the trace is a linear functional vanishing on commutators.</p>
+<p><strong>The product rules are the ones of the four tables.</strong> At order two the tables $HH$, $HK$, $KH$, $KK$ are written out in <em>The Four Multiplication Tables: $SS$, $SK$, $KS$, $KK$ at $n=2$</em>, where the letters denote the two halves.</p>
+<h2 id="the-traces-and-the-real-part">The Traces and the Real Part</h2>
+<p><strong>Proposition.</strong> The trace is real on $\operatorname{Herm}_2$ and purely imaginary on $\mathfrak{u}(2)$.</p>
+<p><strong>Proof.</strong> A Hermitian matrix has real diagonal, so its trace is real; a skew-Hermitian one has purely imaginary diagonal.</p>
+<p><strong>Proposition.</strong> For Hermitian $H,K$ the number $\operatorname{tr}(HK)$ is real and nonnegative when $H=K$; for $H$ Hermitian and $K$ skew-Hermitian the number $\operatorname{tr}(HK)$ is purely imaginary.</p>
+<p><strong>Proof.</strong> $\overline{\operatorname{tr}(HK)}=\operatorname{tr}((HK)^{*})=\operatorname{tr}(KH)=\operatorname{tr}(HK)$ by cyclicity, so it is real. If $K=iS$ with $S$ Hermitian then $\operatorname{tr}(HK)=i\operatorname{tr}(HS)$ is purely imaginary. Positivity follows because $H$ is diagonalisable by a unitary matrix with real eigenvalues.</p>
+<p><strong>Corollary (the subtlety of the complex form).</strong> The two halves are not orthogonal for the complex bilinear form $\operatorname{tr}(XY)$: with $H=I$ and $K=iI$ one has $\operatorname{tr}(HK)=2i$. They are orthogonal for the real form $\operatorname{Re}\operatorname{tr}(X^{*}Y)$, since then the pairing is $\operatorname{Re}\operatorname{tr}(H^{*}K)=0$.</p>
+<p><strong>The Hermitian form is the right one over $\mathbb{C}$.</strong> The form $\langle X,Y\rangle=\operatorname{tr}(X^{*}Y)$ is positive definite Hermitian on $M_2(\mathbb{C})$, and the two halves are orthogonal for its real part; that form is <em>The Hilbert–Schmidt Form at $n=2$</em>.</p>
+<h2 id="the-idempotents-and-the-two-halves">The Idempotents and the Two Halves</h2>
+<p><strong>Proposition.</strong> A Hermitian idempotent of order two is exactly a matrix $\tfrac12(I+\vec n\cdot\vec\sigma)$ with $\vec n$ a unit vector in $\mathbb{R}^{3}$, and every such matrix has rank one.</p>
+<p><strong>Proof.</strong> $P$ Hermitian and $P^{2}=P$ has eigenvalues $0$ and $1$, so $\operatorname{tr}P$ is $0,1,2$; the values $0$ and $2$ give $P=0$ and $P=I$, and the value $1$ gives $P=\tfrac12(I+\vec n\cdot\vec\sigma)$ with $\vec n$ of norm $1$ because $\operatorname{tr}(P^{2})=\operatorname{tr}(P)$ forces $|\vec n|^{2}=1$.</p>
+<p><strong>Corollary.</strong> The rank-one Hermitian idempotents form a sphere $S^{2}$, and the projections onto the lines of $\mathbb{C}^{2}$ are exactly them.</p>
+<p><strong>Proof.</strong> Each is the projection onto the eigenspace of the eigenvalue $1$, which is a line, and every line has a projection of this form.</p>
+<p><strong>The two halves meet the idempotents differently.</strong> A symmetric idempotent is a Hermitian idempotent with real $\vec n$, so the symmetric ones form the equator $S^{1}$ of the sphere; a skew-Hermitian matrix is never an idempotent except $0$, because its eigenvalues are purely imaginary.</p>
+<h2 id="summary">Summary</h2>
+<p>The complex matrices split into the Hermitian half and the skew-Hermitian half, each of real dimension $4$, as the eigenspaces of the conjugate transpose. In the Pauli coordinates $X=x_{0}I+x_{1}\sigma_{1}+x_{2}\sigma_{3}+x_{3}\sigma_{2}$ the determinant of a Hermitian matrix is $x_{0}^{2}-x_{1}^{2}-x_{2}^{2}-x_{3}^{2}$, of signature $(1,3)$, and the light cone is the set of rank-one positive semidefinite matrices.</p>
+<p>The skew-Hermitian half is $\mathfrak{u}(2)=\mathbb{R}iI\oplus\mathfrak{su}(2)$, with $[S_{a},S_{b}]=-2i\epsilon_{abc}S_{c}$. For Hermitian $H,K$ the sum $HK+KH$ is Hermitian and the difference is skew-Hermitian, the trace is real on the Hermitian half and purely imaginary on the other, and $\operatorname{tr}(HK)$ is real while $\operatorname{tr}(HK)$ with $K$ skew is purely imaginary. The Hermitian idempotents form the sphere $S^{2}$, and the symmetric ones form its equator $S^{1}$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{Herm}_2$</td>
+<td>the fixed space of $A\mapsto A^{*}$, real dimension $4$</td>
+</tr>
+<tr>
+<td>$\mathfrak{u}(2)$</td>
+<td>the skew-Hermitian matrices, the Lie algebra of $\mathrm{U}(2)$</td>
+</tr>
+<tr>
+<td>$\mathfrak{su}(2)$</td>
+<td>the traceless skew-Hermitian matrices, dimension $3$</td>
+</tr>
+<tr>
+<td>$S_{a}$</td>
+<td>$i\sigma_{a}$, the traceless skew-Hermitian basis</td>
+</tr>
+<tr>
+<td>$x_{0},x_{1},x_{2},x_{3}$</td>
+<td>the Pauli coordinates of a Hermitian matrix</td>
+</tr>
+<tr>
+<td>$\det$</td>
+<td>on $\operatorname{Herm}_2$, the form of signature $(1,3)$</td>
+</tr>
+<tr>
+<td>$P$</td>
+<td>a Hermitian idempotent, $\tfrac12(I+\vec n\cdot\vec\sigma)$</td>
+</tr>
+<tr>
+<td>$\vec n$</td>
+<td>a unit vector of $\mathbb{R}^{3}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge University Press, 2013), for the Hermitian and skew-Hermitian decomposition and its traces.</li>
+<li>John Stillwell, <em>Naive Lie Theory</em> (Springer, 2008), for $\mathfrak{su}(2)\cong\mathfrak{so}(3)$ and the structure constants of the Pauli matrices.</li>
+<li><a href="the-involutions-of-m2c-over-r-and-over-c.html">The Involutions of $M_2(\mathbb{C})$ over $\mathbb{R}$ and over $\mathbb{C}$</a>, for the conjugate transpose whose eigenspaces these halves are.</li>
+<li><a href="the-two-halves-over-r-symmetric-and-antisymmetric-at-n-2.html">The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$</a>, for the real slice of this split.</li>
+<li><a href="the-peirce-decomposition-in-n-dimensions.html">The Peirce Decomposition in $n$ Dimensions</a>, for the idempotents and the corner recursion at general order.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

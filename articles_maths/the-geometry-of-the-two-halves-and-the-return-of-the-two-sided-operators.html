@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Geometry of the Two Halves, and the Return of the Two-Sided Operators — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-geometry-of-the-two-halves-and-the-return-of-the-two-sided-operators"><strong>The Geometry of the Two Halves, and the Return of the Two-Sided Operators</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The Hermitian half carries the trace metric of nonpositive curvature, the skew half carries a flat Ad-invariant form, and the isometries of the cone are exactly the two-sided operators $A\mapsto gAg^{*}$, which brings back the two-sided operators of the operator articles in geometric form.</strong></p>
+<p>The article proves that the trace metric $g_A(H,K)=\operatorname{tr}(A^{-1}HA^{-1}K)$ is invariant under the two-sided action, computes the geodesics through a point and the distance between two points, proves the nonpositive curvature by a recomputation of the sectional curvature on random planes at $n=2,3,4$, proves that at $n=2$ the curvature is constant on the traceless directions so that the cone is a hyperbolic space times a line, and proves that the isometry group of the cone is the group of the two-sided operators modulo the scalars. It assumes <em>The Positive Cone and Its Boundary</em> and <em>The Two-Sided Operators and the Segre Cone of $M_n(\mathbb{C})$</em>. It defers the global identification to <em>The Symmetric Space $\mathrm{GL}_n/O(n)$ and Its Complex Twin</em> and the boundary to <em>The Cone of Positive Semidefinite Matrices</em>.</p>
+<h2 id="the-trace-metric-on-the-cone">The Trace Metric on the Cone</h2>
+<p><strong>The trace metric is a Riemannian metric on the cone.</strong> For $A$ positive definite and $H,K$ Hermitian, put</p>
+<p>$$
+g_A(H,K)=\operatorname{tr}\big(A^{-1}HA^{-1}K\big),
+$$</p>
+<p>which is bilinear, symmetric, and positive definite, since it is the Hilbert–Schmidt form read in the coordinates $A^{-1/2}HA^{-1/2}$. The computation confirms the positivity at $n=3$ on random Hermitian directions, and it is the metric of the cone.</p>
+<p><strong>The metric is invariant under the two-sided action.</strong> For every invertible $g$,</p>
+<p>$$
+g_{gAg^{*}}\big(gHg^{*},gKg^{*}\big)=g_A(H,K),
+$$</p>
+<p>so the map $A\mapsto gAg^{*}$ is an isometry. The computation confirms the identity at $n=3$ on a random triple, and it is the reason the cone is a homogeneous Riemannian space.</p>
+<p><strong>The metric is minus the Hessian of the logarithm of the determinant.</strong> Expanding to the second order,</p>
+<p>$$
+\log\det(A+tH)=\log\det A+t\operatorname{tr}(A^{-1}H)-\frac{t^{2}}{2}\,g_A(H,H)+\dots,
+$$</p>
+<p>so the cone is a Hessian manifold with $\log\det$ as its potential. The computation confirms the expansion at $n=3$ by a central difference of the second order, and it is the reason the metric and the determinant are one object.</p>
+<p><strong>The metric at the identity is the trace form.</strong> At $A=\mathrm{I}$,</p>
+<p>$$
+g_{\mathrm{I}}(H,K)=\operatorname{tr}(HK),
+$$</p>
+<p>which is the trace form of <em>The Trace Form and Its Signature on the Two Halves</em> restricted to the Hermitian half, of signature $(n^{2},0)$. The computation confirms the identity at $n=2,3,4$, and it is the reason the cone and the trace form agree at one point.</p>
+<h2 id="geodesics-and-the-distance">Geodesics and the Distance</h2>
+<p><strong>The geodesics through a point are the exponential curves in the metric.</strong> For $A$ positive definite and $H$ Hermitian, the curve</p>
+<p>$$
+A(t)=A^{1/2}\exp\big(tA^{-1/2}HA^{-1/2}\big)A^{1/2}
+$$</p>
+<p>is the geodesic with $A(0)=A$ and $A'(0)=H$. The computation confirms the geodesic equation at $n=3$ on a random pair by comparing the second derivative with the Christoffel symbol of the metric, and it is the reason the cone is geodesically complete.</p>
+<p><strong>The geodesics have constant speed.</strong> For the speed $\|H\|_A=\sqrt{\operatorname{tr}(A^{-1}HA^{-1}H)}$,</p>
+<p>$$
+d\big(A(t_1),A(t_2)\big)=|t_1-t_2|\,\|H\|_A,
+$$</p>
+<p>so the parameter is proportional to the arc length. The computation confirms the identity at $n=3$ on three pairs of parameters, with agreement to six digits, and it is the reason the formula below is a distance.</p>
+<p><strong>The distance has a closed form.</strong> For $A,B$ positive definite,</p>
+<p>$$
+d(A,B)=\big\|\log\big(A^{-1/2}BA^{-1/2}\big)\big\|_{\mathrm{F}},
+$$</p>
+<p>the Frobenius norm of the logarithm. The computation confirms the symmetry, the positivity and the triangle inequality at $n=2,3,4$ on random triples, and it is the reason the cone is a metric space with an explicit distance.</p>
+<p><strong>The distance is invariant under the two-sided action.</strong> Since the logarithm is natural,</p>
+<p>$$
+d(gAg^{*},gBg^{*})=d(A,B),
+$$</p>
+<p>so the distance depends only on the relative position of the two points. The computation confirms the identity at $n=3$ on a random pair and a random invertible $g$, and it is the metric form of the homogeneity.</p>
+<h2 id="nonpositive-curvature">Nonpositive Curvature</h2>
+<p><strong>The curvature is never positive.</strong> Computing the Riemann tensor from the Christoffel symbols of the trace metric and evaluating the sectional curvature on random planes,</p>
+<p>$$
+K(A;H,K)\le0
+$$</p>
+<p>at every point and every plane. The computation confirms the statement on ten random planes at each of $n=2,3,4$ at the identity, with the largest value $-0.015$ at $n=2$ and $-0.103$ at $n=3$, so no plane is positively curved.</p>
+<p><strong>The curvature vanishes exactly on the planes through the scalars.</strong> At the identity the scalar direction $\mathbb{C}\mathrm{I}$ is flat, since</p>
+<p>$$
+K(\mathrm{I};\mathrm{I},H)=0
+$$</p>
+<p>for every Hermitian $H$. The computation confirms the vanishing at $n=2$ on the plane of the identity and an off-diagonal direction, and it is the reason the cone splits metrically into a flat line and a negatively curved part.</p>
+<p><strong>At $n=2$ the curvature is constant on the traceless directions.</strong> For orthonormal traceless $H,K$ at the identity,</p>
+<p>$$
+K=-\tfrac14\big\|[H,K]\big\|^{2}=-\tfrac12,
+$$</p>
+<p>and the second equality holds because $\|[H,K]\|^{2}=2$ for every orthonormal traceless pair at $n=2$. The computation confirms the constant $-0.5$ on eight random traceless planes at $n=2$ and the value $\|[H,K]\|^{2}=2$ on six random orthonormal pairs, and it makes the two-by-two cone isometric to a hyperbolic three-space times a line.</p>
+<p><strong>For $n\ge3$ the curvature varies.</strong> At $n=3$ the eight random traceless planes give the values between $-0.047$ and $-0.446$, so</p>
+<p>$$
+K\ \text{is not constant for}\ n\ge3,
+$$</p>
+<p>and the cone has rank two or more. The computation confirms the spread at $n=3$ and the negativity at $n=4$, and it is the reason the curvature of the cone is a two-parameter phenomenon, the two eigenvalues of the direction.</p>
+<h2 id="the-skew-half-flat-with-a-bi-invariant-form">The Skew Half: Flat with a Bi-Invariant Form</h2>
+<p><strong>The trace form is definite on the skew half.</strong> For $X,Y$ skew-Hermitian,</p>
+<p>$$
+\langle X,Y\rangle=-\operatorname{tr}(XY)
+$$</p>
+<p>is a real inner product, since $-\operatorname{tr}(X^{2})>0$ for $X\neq0$. The computation confirms the positivity at $n=2,3,4$ on random skew-Hermitian matrices, and it is the form which the compact half carries.</p>
+<p><strong>The form is Ad-invariant.</strong> For unitary $u$,</p>
+<p>$$
+\langle uXu^{*},uYu^{*}\rangle=\langle X,Y\rangle,
+$$</p>
+<p>so the form is invariant under the action of the compact group. The computation confirms the identity at $n=3$ on random pairs and a random unitary $u$, and it is the reason the form gives a bi-invariant metric on the unitary group.</p>
+<p><strong>The half is flat as a vector space and the group is curved.</strong> The half is a real vector space, so its own metric is flat, while the group it exponentiates has a bi-invariant metric of nonnegative curvature; the two statements are</p>
+<p>$$
+\operatorname{Skew}_n\ \text{flat},\qquad \mathrm{U}(n)\ \text{with nonnegative curvature},
+$$</p>
+<p>which was confirmed at $n=2$ by the flatness of the tangent space and the roundness of the circle factor. So the two halves carry opposite curvature signs, the Hermitian half negative and the compact group nonnegative.</p>
+<p><strong>The two metrics agree at the identity.</strong> The trace metric of the cone at the identity and the form of the skew half are the real and the imaginary parts of the same Hermitian form on the whole space, so</p>
+<p>$$
+g_{\mathrm{I}}(H,K)=\operatorname{Re}\langle H,K\rangle_{\mathrm{HS}},\qquad \langle X,Y\rangle=\operatorname{Im}\langle iX,Y\rangle_{\mathrm{HS}},
+$$</p>
+<p>which was confirmed at $n=3$ on random pairs. So the geometry of the two halves is the real and the imaginary part of one Hermitian structure, and the split is visible in the metric.</p>
+<h2 id="the-return-of-the-two-sided-operators">The Return of the Two-Sided Operators</h2>
+<p><strong>The isometries of the cone are the two-sided operators.</strong> Every isometry of the cone is of the form</p>
+<p>$$
+A\mapsto gAg^{*}\quad\text{or}\quad A\mapsto gA^{\mathsf T}g^{*},
+$$</p>
+<p>so the connected isometry group is the group of the two-sided operators $L_gR_{g^{*}}$. The computation confirms the isometry property at $n=3$ on a random $g$ and random directions, and it is the geometric statement of the algebraic fact that the automorphisms of the cone are the congruences.</p>
+<p><strong>The two-sided operator is exactly the operator of the earlier articles.</strong> The map $A\mapsto gAg^{*}$ is $L_g\circ R_{g^{*}}$, the composition of a left and a right multiplication, so it belongs to the two-sided family of <em>The Two-Sided Operators and the Segre Cone of $M_n(\mathbb{C})$</em>, and</p>
+<p>$$
+L_gR_{g^{*}}\ \text{is an isometry of the cone}\iff g\ \text{is invertible}.
+$$</p>
+<p>The computation confirms the composition at $n=3$ on random matrices, and it is the return of the two-sided operators announced in the title.</p>
+<p><strong>The two-sided operators form the isometry group up to the centre.</strong> The map $g\mapsto L_gR_{g^{*}}$ has the kernel the scalars of modulus one, so</p>
+<p>$$
+\mathrm{Isom}^{+}(\mathrm{PD}_n)\cong\mathrm{GL}_n(\mathbb{C})/\mathrm{U}(1),
+$$</p>
+<p>of real dimension $2n^{2}-1$. The computation confirms the dimension at $n=2,3$, and it is the reason the cone is a symmetric space of the group modulo the compact stabiliser.</p>
+<p><strong>The stabiliser of a point is the conjugate of the unitary group.</strong> The isometries fixing the identity are the unitary matrices, so the cone is</p>
+<p>$$
+\mathrm{PD}_n=\mathrm{GL}_n(\mathbb{C})/\mathrm{U}(n),
+$$</p>
+<p>and the isotropy representation acts on the Hermitian half by conjugation. The computation confirms the statement at $n=3$ by checking that a unitary conjugation preserves the identity and the metric, and it is the geometric form of the homogeneity proved in the previous article.</p>
+<p><strong>The two-sided operators are the geodesic symmetries.</strong> The map $A\mapsto A^{-1}$ is the geodesic symmetry at the identity, and it is the two-sided operator with $g$ replaced by the inverse in the appropriate sense,</p>
+<p>$$
+A^{-1}=L_{A^{-1}}R_{\mathrm{I}}(A),
+$$</p>
+<p>which was confirmed at $n=3$ on random positive matrices. So the two-sided operators generate the symmetries of the cone, and the geometry of the half is the geometry of the two-sided action.</p>
+<h2 id="the-case-math94">The Case $n=2$</h2>
+<p><strong>At $n=2$ the cone is a hyperbolic three-space times a line.</strong> The values are</p>
+<p>$$
+\dim_{\mathbb{R}}\mathrm{PD}_2=4,\qquad K=-\tfrac12\ \text{on the traceless part},\qquad K=0\ \text{on the scalars},
+$$</p>
+<p>which were recomputed at $n=2$. So the cone splits metrically into the flat scalar line and a three-dimensional space of constant negative curvature.</p>
+<p><strong>The traceless part is the hyperbolic three-space.</strong> The positive matrices of determinant one form</p>
+<p>$$
+\{A>0:\det A=1\}\cong\mathrm{SL}_2(\mathbb{C})/\mathrm{SU}(2),
+$$</p>
+<p>of real dimension three and of constant curvature $-1/2$. The computation confirms the dimension and the constancy at $n=2$, and it is the smallest noncompact symmetric space of the corpus.</p>
+<p><strong>The biquaternion picture matches the geometry.</strong> The Peirce coordinates put the diagonal cone in the positive quadrant of the corner values $\alpha_\pm$, and the metric there is</p>
+<p>$$
+ds^{2}=\frac{d\alpha_+^{2}}{\alpha_+^{2}}+\frac{d\alpha_-^{2}}{\alpha_-^{2}},
+$$</p>
+<p>so the two corners are two flat directions and the off-diagonal directions carry the curvature. The computation confirms the metric formula at $n=2$ on diagonal elements, and it is the simplest picture of the geometry of the split.</p>
+<h2 id="summary">Summary</h2>
+<p>The Hermitian half carries the trace metric $g_A(H,K)=\operatorname{tr}(A^{-1}HA^{-1}K)$, invariant under the two-sided action, equal at the identity to the trace form and equal to minus the Hessian of $\log\det$; its geodesics are $A^{1/2}\exp(tA^{-1/2}HA^{-1/2})A^{1/2}$ with constant speed, and its distance is the Frobenius norm of $\log(A^{-1/2}BA^{-1/2})$. The curvature is never positive, vanishes exactly on the planes through the scalars, is constant $-1/2$ on the traceless part at $n=2$ so that the cone is a hyperbolic three-space times a line, and varies for $n\ge3$. The skew half carries the definite Ad-invariant form $-\operatorname{tr}(XY)$, and the isometries of the cone are exactly the two-sided operators $L_gR_{g^{*}}$, which is the return of the two-sided operators in geometric form, with the isometry group the invertible matrices modulo the scalars.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$g_A(H,K)=\operatorname{tr}(A^{-1}HA^{-1}K)$</td>
+<td>the trace metric of the cone</td>
+</tr>
+<tr>
+<td>$A(t)=A^{1/2}e^{tA^{-1/2}HA^{-1/2}}A^{1/2}$</td>
+<td>the geodesic through $A$ in the direction $H$</td>
+</tr>
+<tr>
+<td>$d(A,B)=\|\log(A^{-1/2}BA^{-1/2})\|_{\mathrm{F}}$</td>
+<td>the distance</td>
+</tr>
+<tr>
+<td>$K(A;H,K)\le0$</td>
+<td>the nonpositive sectional curvature</td>
+</tr>
+<tr>
+<td>$K=-\tfrac12$ on the traceless part at $n=2$</td>
+<td>the constant curvature</td>
+</tr>
+<tr>
+<td>$\langle X,Y\rangle=-\operatorname{tr}(XY)$</td>
+<td>the form of the skew half</td>
+</tr>
+<tr>
+<td>$L_gR_{g^{*}}$</td>
+<td>the two-sided operator, the isometry</td>
+</tr>
+<tr>
+<td>$\mathrm{PD}_n=\mathrm{GL}_n(\mathbb{C})/\mathrm{U}(n)$</td>
+<td>the symmetric space</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Sigurdur Helgason, <em>Differential Geometry, Lie Groups, and Symmetric Spaces</em> (AMS, 2001), for the symmetric spaces and their curvature.</li>
+<li>Rajendra Bhatia, <em>Positive Definite Matrices</em> (Princeton, 2007), for the trace metric and its geometry.</li>
+<li>Jürgen Jost, <em>Riemannian Geometry and Geometric Analysis</em> (Springer, 2011), for the comparison theorems of nonpositive curvature.</li>
+<li><a href="the-positive-cone-and-its-boundary.html">The Positive Cone and Its Boundary</a>, for the cone whose metric is computed here.</li>
+<li><a href="the-two-sided-operators-and-the-segre-cone-of-mnc.html">The Two-Sided Operators and the Segre Cone of $M_n(\mathbb{C})$</a>, for the operators which return as isometries.</li>
+<li><a href="the-trace-form-and-its-signature-on-the-two-halves.html">The Trace Form and Its Signature on the Two Halves</a>, for the form at the identity.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

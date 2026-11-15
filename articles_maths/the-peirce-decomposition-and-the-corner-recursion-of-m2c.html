@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Peirce Decomposition and the Corner Recursion of $M_2(\mathbb{C})$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-peirce-decomposition-and-the-corner-recursion-of-math0"><strong>The Peirce Decomposition and the Corner Recursion of $M_2(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>At order two the corner recursion has one step: an idempotent of rank one cuts the algebra into four corner lines, and each corner is a copy of $M_1(\mathbb{C})=\mathbb{C}$, so the recursion that runs $M_n\to M_{n-1}\to\cdots$ stops at the first move.</strong></p>
+<p>The article states the spectral flag at order two, the Peirce lines of a root with simple spectrum, the coarse split by a single idempotent with the dimensions $p^{2}$, $p(2-p)$, $(2-p)p$ and $(2-p)^{2}$, the corner isomorphisms, and the recursion, and it states what the decomposition is not. It assumes <em>The Peirce Decomposition in Two Dimensions</em>, <em>The Peirce Basis and the Corners at $n=2$</em> and <em>Lagrange Idempotents of a $2\times2$ Matrix with Simple Spectrum</em>.</p>
+<p>It defers the full general-order recursion to <em>The Peirce Decomposition and the Corner Recursion of $M_n(\mathbb{C})$</em>, and the general frame to <em>The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$</em>.</p>
+<h2 id="the-spectral-flag-at-order-two">The Spectral Flag at Order Two</h2>
+<p><strong>A root of unity with simple spectrum at order two is an involution of trace zero, and it produces the flag of two lines.</strong> Let $H^{2}=I$ have the distinct eigenvalues $\omega_{+}=1$ and $\omega_{-}=-1$, with the projectors $P_{\pm}=\tfrac12(I\pm H)$. Put $V_{\pm}=\operatorname{im}P_{\pm}$, a line each. The two lines are independent and sum to $\mathbb{C}^{2}$, and the partial sums give the flag</p>
+<p>$$
+0\subset F_{1}=V_{+}\subset F_{2}=\mathbb{C}^{2},\qquad \dim F_{k}=k .
+$$</p>
+<p><strong>Proposition.</strong> The root of simple spectrum at order two is exactly an involution with trace zero, and every such involution gives a complete flag.</p>
+<p><strong>Proof.</strong> An involution has the eigenvalues $\pm1$; the spectrum is simple exactly when both eigenvalues occur; and the trace is the sum of the eigenvalues, so it is zero. Conversely an involution with trace zero has the eigenvalues $1$ and $-1$, and its eigenspaces are two independent lines.</p>
+<p><strong>Corollary.</strong> The flag at order two is the single choice of a line, so the space of flags is the projective line.</p>
+<p><strong>Proof.</strong> The flag is $0\subset V_{+}\subset\mathbb{C}^{2}$, and it is determined by $V_{+}$, which is a line; the lines form the projective line.</p>
+<p><strong>Corollary.</strong> The standard flag is the case $H=\operatorname{diag}(1,-1)$, and every other involution of trace zero gives a flag in general position.</p>
+<p><strong>Proof.</strong> At the diagonal involution the two lines are the coordinate axes, and a non-diagonal involution rotates them off the axes.</p>
+<h2 id="the-peirce-lines">The Peirce Lines</h2>
+<p><strong>The Peirce corner $A_{kl}$ is the space of maps from the $l$-th line to the $k$-th line.</strong> Put</p>
+<p>$$
+A_{kl}=P_{k}M_2(\mathbb{C})P_{l},\qquad k,l\in\{+,-\}.
+$$</p>
+<p><strong>Proposition.</strong> Each $A_{kl}$ is a complex line, the four lines are independent and sum to the algebra, and the dimensions are $1,1,1,1$.</p>
+<p><strong>Proof.</strong> Each corner is the image of a nonzero linear map between two one-dimensional spaces, so it is a line; the four lines are independent because their sum has the dimension $1+1+1+1=4$, which is the dimension of the algebra; and the sum is the whole algebra by the Peirce decomposition.</p>
+<p><strong>Corollary.</strong> The Peirce line $A_{kl}$ multiplies by the index rule, $A_{kl}A_{lm}\subseteq A_{km}$ and $A_{kl}A_{lm}=0$ when $l\ne l'$.</p>
+<p><strong>Proof.</strong> $P_{k}XP_{l}\cdot P_{l}YP_{m}=P_{k}XP_{l}YP_{m}$ because $P_{l}^{2}=P_{l}$, and the product is zero when the intermediate projectors are orthogonal.</p>
+<p><strong>Corollary.</strong> The four lines are the four corners of <em>The Peirce Basis and the Corners at $n=2$</em>, with $\upsilon_{+}$ a generator of $A_{+-}$ and $\upsilon_{-}$ a generator of $A_{-+}$.</p>
+<p><strong>Proof.</strong> The two constructions use the same projectors, and the generators are the elements of the mixed lines normalised so that their product is the idempotent.</p>
+<h2 id="the-coarse-split">The Coarse Split</h2>
+<p><strong>A single idempotent of rank $p$ cuts the algebra into four blocks of dimensions $p^{2}$, $p(2-p)$, $(2-p)p$ and $(2-p)^{2}$.</strong> Let $e$ be an idempotent of rank $p$.</p>
+<p><strong>Proposition.</strong> At order two the four dimensions are $p^{2}$, $p(2-p)$, $(2-p)p$ and $(2-p)^{2}$, which gives $1,1,1,1$ for $p=1$ and $4,0,0,0$ for $p=2$.</p>
+<p><strong>Proof.</strong> The corner $eMe$ consists of the matrices that are the composition of a map into the image of $e$, a map of the algebra and a map out of the kernel of $1-e$; its dimension is $p\cdot p$. The other three are the same count with one or both factors replaced by the rank of the complementary idempotent, which is $2-p$.</p>
+<p><strong>Corollary.</strong> The sum of the four dimensions is four in both cases, and the two extreme idempotents give a single nonempty block.</p>
+<p><strong>Proof.</strong> $p^{2}+2p(2-p)+(2-p)^{2}=(p+(2-p))^{2}=4$, and for $p=2$ the three other entries vanish.</p>
+<p><strong>Corollary.</strong> A rank-one idempotent gives the finest split of the algebra, since all four blocks are one-dimensional.</p>
+<p><strong>Proof.</strong> At $p=1$ the four entries are one each, so no block can be split further.</p>
+<h2 id="the-corner-isomorphisms">The Corner Isomorphisms</h2>
+<p><strong>Theorem.</strong> Each corner at order two is isomorphic to $M_1(\mathbb{C})=\mathbb{C}$, and the isomorphism sends the unit of the corner to the idempotent.</p>
+<p><strong>Proof.</strong> The corner $eMe$ is one-dimensional, so every element is a scalar multiple of $e$; the product is $(\lambda e)(\mu e)=\lambda\mu e$, which is the multiplication of scalars, and $e$ is the unit of the corner.</p>
+<p><strong>Corollary.</strong> The two diagonal corners are copies of the scalars, and the two mixed corners are one-dimensional bimodules over them.</p>
+<p><strong>Proof.</strong> The diagonal corners are the ends of the algebra and their products are scalar products; the mixed corners are modules over the diagonal corners on the two sides, and each is one line.</p>
+<p><strong>Corollary.</strong> The algebra is generated by the four corner lines together with the products that pair them.</p>
+<p><strong>Proof.</strong> The four lines span the algebra, and every product of two elements is a sum of products of corner elements, each of which is again a corner element or zero.</p>
+<h2 id="the-recursion-stops">The Recursion Stops</h2>
+<p><strong>The general corner recursion replaces a frame of order $n$ by a diagonal corner isomorphic to $M_{n-1}(\mathbb{C})$ and a mixed corner, and the process continues until the order is one.</strong> At order two the first step already reaches order one.</p>
+<p><strong>Proposition.</strong> The corner $eMe$ of an idempotent of rank $n-1$ is isomorphic to $M_{n-1}(\mathbb{C})$; at order two with $p=1$ this is $M_1(\mathbb{C})=\mathbb{C}$.</p>
+<p><strong>Proof.</strong> Choose a basis whose first $n-1$ vectors span the image of $e$; in that basis $e$ is the diagonal idempotent with the first $n-1$ entries equal to one, and $eMe$ is the block of the first $n-1$ rows and columns.</p>
+<p><strong>Corollary.</strong> The recursion at order two has exactly one step, and the terminal algebra is the field itself.</p>
+<p><strong>Proof.</strong> The first step gives $M_1(\mathbb{C})$, which is the field, and the corner of the identity of the field is the field again, so nothing further happens.</p>
+<p><strong>Corollary.</strong> The recursion embeds $M_1(\mathbb{C})$ in $M_2(\mathbb{C})$ twice, once in each diagonal corner, and the two embeddings are conjugate.</p>
+<p><strong>Proof.</strong> The two diagonal corners are the corners of $e$ and of $1-e$, which are idempotents of the same rank, and a conjugating matrix carries one to the other.</p>
+<h2 id="the-biquaternion-case">The Biquaternion Case</h2>
+<p><strong>Proposition.</strong> In the biquaternion language the coarse split is the splitting of the algebra into the four corners $\mathbb{B}_{st}$, and the recursion at order two is the statement that each corner is a copy of the scalars.</p>
+<p><strong>Proof.</strong> The corners $\mathbb{B}_{st}$ are the four products of the idempotent pair $\tilde\Pi_{\pm}$ with the algebra on the two sides, which is the same construction as the four corners here, and each corner is one complex line over the field.</p>
+<p><strong>Corollary.</strong> The companion nilpotents $\vec\Upsilon_{+-}$ and $\vec\Upsilon_{-+}$ generate the two mixed corners, and their product is the idempotent of the diagonal corner.</p>
+<p><strong>Proof.</strong> The companion pair of the corpus is the pair of generators of the mixed corners normalised so that the product is $\tilde\Pi_{+}$, which is the normalisation used here.</p>
+<h2 id="what-the-decomposition-is-not">What the Decomposition Is Not</h2>
+<p><strong>Proposition.</strong> The Peirce decomposition is not a direct-sum decomposition of the algebra into subalgebras, and the corners other than the diagonal ones are not closed under multiplication.</p>
+<p><strong>Proof.</strong> A mixed corner is square-zero, so it is not a subalgebra; and the product of two elements of different mixed corners lands in a diagonal corner, so the sum of the mixed corners is not closed either.</p>
+<p><strong>Corollary.</strong> The decomposition is a decomposition of the vector space with a multiplication rule across the pieces, not an isomorphism with a product of four algebras.</p>
+<p><strong>Proof.</strong> The four pieces span the space directly, and the multiplication rule is the index rule, which mixes the pieces.</p>
+<p><strong>Corollary.</strong> The only subalgebras among the four pieces are the two diagonal corners, and they are unital subalgebras with their own units.</p>
+<p><strong>Proof.</strong> The diagonal corners are closed under multiplication and contain $e$ and $1-e$, which are idempotents acting as units there.</p>
+<h2 id="summary">Summary</h2>
+<p>At order two a root of unity with simple spectrum is an involution of trace zero, and it gives the flag $0\subset V_{+}\subset\mathbb{C}^{2}$, a single line. The Peirce corners are the four lines $A_{kl}=P_{k}MP_{l}$, each of dimension one, and a single idempotent of rank $p$ gives the dimensions $p^{2}$, $p(2-p)$, $(2-p)p$ and $(2-p)^{2}$, which are $1,1,1,1$ at $p=1$.</p>
+<p>Each corner is isomorphic to $M_1(\mathbb{C})=\mathbb{C}$, so the corner recursion has one step and stops at the field. The decomposition is a splitting of the vector space with a multiplication rule across the pieces, not a product of subalgebras, and in the biquaternion language it is the splitting into the four corners $\mathbb{B}_{st}$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$H$</td>
+<td>the involution of simple spectrum</td>
+</tr>
+<tr>
+<td>$P_{\pm}$</td>
+<td>its projectors, $\tfrac12(I\pm H)$</td>
+</tr>
+<tr>
+<td>$A_{kl}$</td>
+<td>the Peirce corner $P_{k}MP_{l}$</td>
+</tr>
+<tr>
+<td>$p$</td>
+<td>the rank of the idempotent of the coarse split</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{st}$</td>
+<td>the corners of the biquaternion algebra</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the corner decomposition of a finite-dimensional algebra and the corner isomorphisms.</li>
+<li>Kevin McCrimmon, <em>A Taste of Jordan Algebras</em> (Springer, 2004), for the recursive use of the Peirce decomposition.</li>
+<li><a href="the-peirce-decomposition-in-two-dimensions.html">The Peirce Decomposition in Two Dimensions</a>, for the four spaces and the index rule.</li>
+<li><a href="the-peirce-basis-and-the-corners-at-n-2.html">The Peirce Basis and the Corners at $n=2$</a>, for the corners and the gauge.</li>
+<li><a href="the-peirce-decomposition-and-the-corner-recursion-of-mnc.html">The Peirce Decomposition and the Corner Recursion of $M_n(\mathbb{C})$</a>, for the recursion at general order.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

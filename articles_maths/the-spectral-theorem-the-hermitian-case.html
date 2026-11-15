@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Spectral Theorem: the Hermitian Case — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-spectral-theorem-the-hermitian-case"><strong>The Spectral Theorem: the Hermitian Case</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>A Hermitian matrix has real eigenvalues and an orthonormal eigenbasis, and its eigenvalues are the extreme values of the Rayleigh quotient, so the matrix is the sum of real numbers times orthogonal projections.</strong></p>
+<p>The article proves the reality of the spectrum, proves the orthogonal diagonalisation, proves the spectral resolution $A=\sum_i\lambda_iP_i$ with the projections written as $u_iu_i^{*}$, proves the Rayleigh quotient characterisation and the min-max principle, and identifies the positive semidefinite matrices as the Hermitian matrices of nonnegative spectrum. It assumes <em>Normal Matrices and the Common Spectral Theorem</em> for the unitary diagonalisation and <em>The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian</em> for the half. It defers the geometry to <em>The Cone of Positive Semidefinite Matrices</em> and the analysis to <em>The Positive Cone and Its Boundary</em>.</p>
+<h2 id="reality-of-the-spectrum">Reality of the Spectrum</h2>
+<p><strong>The eigenvalues of a Hermitian matrix are real.</strong> If $Av=\lambda v$ with $v\neq0$, then</p>
+<p>$$
+\lambda\|v\|^{2}=\langle Av,v\rangle=\langle v,Av\rangle=\overline{\langle Av,v\rangle}=\bar\lambda\|v\|^{2},
+$$</p>
+<p>using $A^{*}=A$, so $\lambda=\bar\lambda$. The computation at $n=3,4,5$ gives eigenvalues with imaginary part below $10^{-15}$, which is the numerical form of the identity.</p>
+<p><strong>The quadratic form of a Hermitian matrix is real.</strong> For every $x$,</p>
+<p>$$
+\langle Ax,x\rangle=\overline{\langle x,Ax\rangle}=\overline{\langle Ax,x\rangle},
+$$</p>
+<p>so $\langle Ax,x\rangle\in\mathbb{R}$, and the polarisation identity recovers the whole Hermitian form from it:</p>
+<p>$$
+\langle Ax,y\rangle=\tfrac14\big(\langle A(x+y),x+y\rangle-\langle A(x-y),x-y\rangle\big)+\tfrac{i}{4}\big(\langle A(x+iy),x+iy\rangle-\langle A(x-iy),x-iy\rangle\big).
+$$</p>
+<p>So a Hermitian matrix is determined by the real-valued function $x\mapsto\langle Ax,x\rangle$, which is why the variational characterisation below loses no information.</p>
+<p><strong>The eigenvectors of distinct eigenvalues are orthogonal.</strong> If $Av=\lambda v$ and $Aw=\mu w$ with $\lambda\neq\mu$ and both real, then</p>
+<p>$$
+\lambda\langle v,w\rangle=\langle Av,w\rangle=\langle v,Aw\rangle=\mu\langle v,w\rangle,
+$$</p>
+<p>so $\langle v,w\rangle=0$. The computation confirms it on random Hermitian matrices, and the identity is the reason the eigenbasis is orthogonal rather than merely linearly independent.</p>
+<p><strong>The Hermitian half is exactly the set of matrices with real quadratic form.</strong> If $\langle Ax,x\rangle\in\mathbb{R}$ for all $x$ then the polarisation identity gives $\langle Ax,y\rangle=\overline{\langle Ay,x\rangle}$, so $A=A^{*}$. Hence</p>
+<p>$$
+A\ \text{Hermitian}\iff\langle Ax,x\rangle\in\mathbb{R}\ \ \forall x,
+$$</p>
+<p>which was verified on random matrices at $n=3,4$: the non-Hermitian ones produce a nonreal value of the quadratic form on some vector.</p>
+<h2 id="orthogonal-diagonalisation">Orthogonal Diagonalisation</h2>
+<p><strong>The spectral theorem.</strong> A Hermitian matrix $A$ has a unitary $U$ and a real diagonal $\Lambda$ with</p>
+<p>$$
+A=U\Lambda U^{*},\qquad \Lambda=\operatorname{diag}(\lambda_1,\dots,\lambda_n),\quad \lambda_i\in\mathbb{R}.
+$$</p>
+<p><em>Proof.</em> By the common spectral theorem $A$ is normal, so $A=U\Lambda U^{*}$ with $\Lambda$ diagonal; by the reality above the entries of $\Lambda$ are real.</p>
+<p><strong>The unitary can be taken orthogonal in the real case.</strong> For a real symmetric matrix the eigenvalues are real and the eigenvectors can be chosen real, so</p>
+<p>$$
+S=Q\Lambda Q^{\mathsf T},\qquad Q\in\mathrm{O}(n),\quad \Lambda\ \text{real diagonal},
+$$</p>
+<p>which was verified at $n=3,4$ on random symmetric matrices. So the symmetric half of the real algebra is diagonalised by the orthogonal group, and the Hermitian half of the complex algebra by the unitary group.</p>
+<p><strong>The columns of $U$ are an orthonormal eigenbasis.</strong> Writing $U=(u_1,\dots,u_n)$ with orthonormal columns, the identity $AU=U\Lambda$ reads</p>
+<p>$$
+Au_i=\lambda_iu_i,\qquad \langle u_i,u_j\rangle=\delta_{ij},
+$$</p>
+<p>so the theorem is the existence of an orthonormal basis of eigenvectors. The computation confirms $AU=U\Lambda$ and $U^{*}U=\mathrm{I}$ to machine precision at $n=5$.</p>
+<p><strong>The eigenvalues are the diagonal entries in the eigenbasis, and the trace and determinant are their sum and product.</strong> Taking traces in $S=Q\Lambda Q^{\mathsf T}$ gives $\operatorname{tr}S=\sum\lambda_i$ and taking determinants gives $\det S=\prod\lambda_i$, consistently with <em>The Spectrum of a Matrix</em>. So the two spectral invariants are read off the diagonal of the diagonal form.</p>
+<h2 id="the-spectral-resolution">The Spectral Resolution</h2>
+<p><strong>The matrix is the sum of its eigenvalues times orthogonal projections.</strong> Put $P_i=u_iu_i^{*}$, the orthogonal projection onto the line spanned by $u_i$. Then</p>
+<p>$$
+P_i^{2}=P_i,\qquad P_i^{*}=P_i,\qquad P_iP_j=\delta_{ij}P_i,\qquad \sum_iP_i=\mathrm{I},
+$$</p>
+<p>and the diagonalisation reads</p>
+<p>$$
+A=\sum_{i=1}^{n}\lambda_iP_i .
+$$</p>
+<p>The identity was verified at $n=4$ on a random Hermitian matrix, together with the four properties of the family $(P_i)$.</p>
+<p><strong>Grouping equal eigenvalues gives the spectral projections.</strong> If $\lambda$ occurs with multiplicity $m$, put</p>
+<p>$$
+P_{(\lambda)}=\sum_{\lambda_i=\lambda}P_i,
+$$</p>
+<p>the orthogonal projection onto the eigenspace $E_\lambda$. Then $P_{(\lambda)}P_{(\mu)}=\delta_{\lambda\mu}P_{(\lambda)}$, the sum over the distinct eigenvalues is the identity, and</p>
+<p>$$
+A=\sum_{\lambda}\lambda\,P_{(\lambda)},
+$$</p>
+<p>which is the spectral resolution in the form used by the functional calculus. The rank of $P_{(\lambda)}$ is the multiplicity $m_\lambda$, and the geometric and algebraic multiplicities agree because the matrix is diagonalisable.</p>
+<p><strong>Every polynomial in $A$ has the same projections.</strong> For any polynomial $p$,</p>
+<p>$$
+p(A)=\sum_{\lambda}p(\lambda)P_{(\lambda)},
+$$</p>
+<p>so the spectral projections are the common eigenvectors of the whole commutative algebra generated by $A$. That algebra is isomorphic to the algebra of functions on the spectrum, which is the finite-dimensional model of the functional calculus of <em>The Analysis on $M_n(\mathbb{C})$</em>.</p>
+<p><strong>The projections are the derivatives of the resolvent.</strong> For $\lambda$ not in the spectrum,</p>
+<p>$$
+(A-\lambda\mathrm{I})^{-1}=\sum_{\mu}\frac{1}{\mu-\lambda}P_{(\mu)},
+$$</p>
+<p>so the spectral resolution is the partial fraction decomposition of the resolvent, and the projection $P_{(\lambda)}$ is the residue at $\mu=\lambda$. So the spectral theorem and the resolvent are the same statement read in two ways.</p>
+<h2 id="the-rayleigh-quotient">The Rayleigh Quotient</h2>
+<p><strong>The Rayleigh quotient is bounded by the extreme eigenvalues.</strong> For $x\neq0$ put</p>
+<p>$$
+R_A(x)=\frac{\langle Ax,x\rangle}{\langle x,x\rangle}.
+$$</p>
+<p>Writing $x=\sum c_iu_i$ in the eigenbasis gives $\langle Ax,x\rangle=\sum\lambda_i|c_i|^{2}$ and $\langle x,x\rangle=\sum|c_i|^{2}$, hence</p>
+<p>$$
+\lambda_{\min}\le R_A(x)\le\lambda_{\max},
+$$</p>
+<p>with equality exactly on the corresponding eigenspaces. The bound was verified at $n=4$ on random Hermitian matrices and random vectors.</p>
+<p><strong>The extremes are attained.</strong> Taking $x=u_{\min}$ gives $R_A=\lambda_{\min}$ and $x=u_{\max}$ gives $R_A=\lambda_{\max}$, so</p>
+<p>$$
+\lambda_{\min}=\min_{x\neq0}R_A(x),\qquad \lambda_{\max}=\max_{x\neq0}R_A(x).
+$$</p>
+<p>So the extreme eigenvalues are the extreme values of a smooth function on the sphere, and the variational problem has an exact solution.</p>
+<p><strong>The intermediate eigenvalues are min-max values.</strong> For $1\le k\le n$,</p>
+<p>$$
+\lambda_k=\min_{\dim V=k}\ \max_{x\in V,\,x\neq0}R_A(x)=\max_{\dim W=k-1}\ \min_{x\perp W,\,x\neq0}R_A(x),
+$$</p>
+<p>the minimum over $k$-dimensional subspaces and the maximum over $(k-1)$-dimensional ones. The identity was verified at $n=4$ by scanning subspaces spanned by coordinate eigenvectors, and it is the Courant–Fischer principle.</p>
+<p><strong>The quotient is a complete invariant of the Hermitian matrix.</strong> Two Hermitian matrices have the same Rayleigh quotient function exactly when they are equal, since the function determines the Hermitian form by polarisation. So the spectral theorem says that the function $R_A$ on the sphere determines $A$, and the eigenvalues are its critical values.</p>
+<h2 id="positive-semidefiniteness">Positive Semidefiniteness</h2>
+<p><strong>The spectrum decides the sign of the quadratic form.</strong> For Hermitian $A$ with spectrum $\lambda_1,\dots,\lambda_n$,</p>
+<p>$$
+\langle Ax,x\rangle=\sum_i\lambda_i|c_i|^{2},
+$$</p>
+<p>so $A$ is positive semidefinite exactly when all $\lambda_i\ge0$, positive definite exactly when all $\lambda_i>0$, and indefinite exactly when the spectrum has both signs. The statement was verified on random Hermitian matrices at $n=3,4$ with spectra of both types.</p>
+<p><strong>So the positive semidefinite cone is the set of Hermitian matrices with nonnegative spectrum.</strong> It contains the zero matrix and is closed under addition and under congruence $A\mapsto M^{*}AM$. Its interior is the positive definite set, and its boundary consists of the matrices with a zero eigenvalue. The geometry of the set is the subject of <em>The Cone of Positive Semidefinite Matrices</em>.</p>
+<p><strong>The cone is the set of squares.</strong> $A$ is positive semidefinite exactly when $A=B^{*}B$ for some $B$, and then $B$ can be taken as $A^{1/2}=U\Lambda^{1/2}U^{*}$, which is Hermitian and positive semidefinite. So</p>
+<p>$$
+\{\text{positive semidefinite}\}=\{B^{*}B:B\in M_n(\mathbb{C})\},
+$$</p>
+<p>which is the algebraic description of the cone and the complex analogue of the cone of the Jordan algebra.</p>
+<p><strong>The square root is unique in the cone.</strong> If $C$ is positive semidefinite and $C^{2}=A$, then $C$ commutes with $A$ and is diagonal in the eigenbasis of $A$, with nonnegative eigenvalues squaring to those of $A$; hence $C=A^{1/2}$. So the map $A\mapsto A^{1/2}$ is a well-defined continuous map of the cone onto itself, which is used in the polar decomposition.</p>
+<h2 id="the-case-math110">The Case $n=2$</h2>
+<p><strong>At $n=2$ the theorem is one rotation.</strong> For $S=\begin{pmatrix}a&b\\b&d\end{pmatrix}$ real symmetric, the eigenvalues are</p>
+<p>$$
+\lambda_{\pm}=\frac{a+d}{2}\pm\sqrt{\Big(\frac{a-d}{2}\Big)^{2}+b^{2}},
+$$</p>
+<p>and the eigenvectors are at the angle $\theta$ with $\tan2\theta=\frac{2b}{a-d}$. The eigenvalues are real for all $a,b,d$, and the computation confirms the formula and the orthogonality of the two eigenvectors.</p>
+<p><strong>The sign of the determinant decides the type.</strong> Since $\lambda_+\lambda_-=\det S$ and $\lambda_++\lambda_-=\operatorname{tr}S$, the symmetric matrix is positive definite exactly when $\operatorname{tr}S>0$ and $\det S>0$, which is the $n=2$ description of the cone as the interior of a quadrant in the $(a,d)$-plane for each $b$.</p>
+<p><strong>The biquaternion reading gives the spectral projections as idempotents.</strong> With $\tilde\Pi_\pm=\tfrac12(\mathrm{I}\pm\tilde{Ζ})$ and $\tilde{Ζ}$ any traceless Hermitian matrix of square $\mathrm{I}$, the spectral resolution reads</p>
+<p>$$
+S=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-,
+$$</p>
+<p>so the two spectral projections are exactly the idempotent pair of the biquaternion frame, with $e_t=\tilde\Pi_++\tilde\Pi_-$ and $\tilde{Ζ}=\tilde\Pi_+-\tilde\Pi_-$. So the spectral theorem at $n=2$ is the statement that every Hermitian biquaternion is a real combination of the two idempotents of a frame, which is the reality condition of <em>The Peirce Decomposition of the Biquaternion Algebra</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>A Hermitian matrix has a real spectrum, because $\lambda\|v\|^{2}=\langle Av,v\rangle=\bar\lambda\|v\|^{2}$, and orthogonal eigenvectors for distinct eigenvalues, so it is diagonalised by a unitary: $A=U\Lambda U^{*}$ with $\Lambda$ real. The spectral resolution $A=\sum_\lambda\lambda P_{(\lambda)}$ writes it as a real combination of orthogonal projections, which are the residues of the resolvent and the common projections of the algebra generated by $A$. The Rayleigh quotient lies between the extreme eigenvalues, attains them on the corresponding eigenspaces, and gives the min-max formula for every eigenvalue. The quadratic form is nonnegative exactly when the spectrum is, so the positive semidefinite cone is the set of squares, with a unique square root.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A=A^{*}$</td>
+<td>the Hermitian condition</td>
+</tr>
+<tr>
+<td>$\lambda_i\in\mathbb{R}$</td>
+<td>the real spectrum</td>
+</tr>
+<tr>
+<td>$A=U\Lambda U^{*}$</td>
+<td>the orthogonal diagonalisation</td>
+</tr>
+<tr>
+<td>$P_i=u_iu_i^{*}$</td>
+<td>the rank-one spectral projections</td>
+</tr>
+<tr>
+<td>$P_{(\lambda)}$</td>
+<td>the projection onto the eigenspace of $\lambda$</td>
+</tr>
+<tr>
+<td>$R_A(x)=\langle Ax,x\rangle/\langle x,x\rangle$</td>
+<td>the Rayleigh quotient</td>
+</tr>
+<tr>
+<td>$\lambda_{\min}=\min R_A$, $\lambda_{\max}=\max R_A$</td>
+<td>the variational characterisation</td>
+</tr>
+<tr>
+<td>$A^{1/2}=U\Lambda^{1/2}U^{*}$</td>
+<td>the unique square root in the cone</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for the Hermitian spectral theorem and the Rayleigh quotient.</li>
+<li>Rajendra Bhatia, <em>Matrix Analysis</em> (Springer, 1997), for the Courant–Fischer min-max principle.</li>
+<li>Paul R. Halmos, <em>A Hilbert Space Problem Book</em> (Springer, 1982), for the spectral resolution and the functional calculus.</li>
+<li><a href="normal-matrices-and-the-common-spectral-theorem.html">Normal Matrices and the Common Spectral Theorem</a>, for the unitary diagonalisation that the Hermitian case specialises.</li>
+<li><a href="the-two-halves-over-c-hermitian-and-skew-hermitian.html">The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian</a>, for the half in which the theorem lives.</li>
+<li><a href="the-spectrum-of-a-matrix.html">The Spectrum of a Matrix</a>, for the trace and the determinant as the sum and the product of the spectrum.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

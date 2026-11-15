@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Symmetric and Antisymmetric Parts of a Product at $n=2$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-symmetric-and-antisymmetric-parts-of-a-product-at-math0"><strong>The Symmetric and Antisymmetric Parts of a Product at $n=2$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>Every product of two matrices splits into a symmetric and an antisymmetric part, the two parts have dimensions $3$ and $1$, and the product of a symmetric with an antisymmetric matrix exchanges the roles of the anticommutator and the commutator.</strong></p>
+<p>The article proves the split $XY=\operatorname{sym}(XY)+\operatorname{skew}(XY)$, shows that the trace reads only the symmetric part, treats the three kinds of product by the halves of the two factors, proves that $\operatorname{sym}(SK)=\tfrac12[S,K]$ and $\operatorname{skew}(SK)=\tfrac12\{S,K\}$, and records the Clifford identity $\{u,v\}=2\operatorname{tr}(uv)I$ for traceless symmetric matrices. It assumes <em>The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$</em> and <em>The Two Halves as Orthogonal Complements at $n=2$</em>.</p>
+<p>It defers the collection of the four tables to <em>The Four Multiplication Tables: $SS$, $SK$, $KS$, $KK$ at $n=2$</em>, the algebra axioms of the symmetric half to <em>The Jordan Algebra $\operatorname{Sym}_2$</em>, and the bracket of the antisymmetric half to <em>The Lie Algebra $\operatorname{Skew}_2$: One Dimension, Hence Abelian</em>.</p>
+<h2 id="the-two-parts-of-a-product">The Two Parts of a Product</h2>
+<p><strong>Definition.</strong> For a square matrix $P$ the <strong>symmetric part</strong> is $\operatorname{sym}P=\tfrac12(P+P^{\mathsf T})$ and the <strong>antisymmetric part</strong> is $\operatorname{skew}P=\tfrac12(P-P^{\mathsf T})$.</p>
+<p><strong>Theorem.</strong> Every matrix splits in one way as a symmetric plus an antisymmetric matrix, so every product splits too:</p>
+<p>$$
+XY=\operatorname{sym}(XY)+\operatorname{skew}(XY),\qquad
+\operatorname{sym}(XY)=\tfrac12\bigl(XY+(XY)^{\mathsf T}\bigr),\qquad
+\operatorname{skew}(XY)=\tfrac12\bigl(XY-(XY)^{\mathsf T}\bigr).
+$$</p>
+<p><strong>Proof.</strong> $P=\tfrac12(P+P^{\mathsf T})+\tfrac12(P-P^{\mathsf T})$ and the two terms are symmetric and antisymmetric. The sum is direct because a matrix that is both symmetric and antisymmetric satisfies $P=-P$.</p>
+<p><strong>Corollary.</strong> The product $XY$ is symmetric exactly when $XY=Y^{\mathsf T}X^{\mathsf T}$, and antisymmetric exactly when $XY=-Y^{\mathsf T}X^{\mathsf T}$.</p>
+<p><strong>Proof.</strong> The condition $P=P^{\mathsf T}$ reads $XY=Y^{\mathsf T}X^{\mathsf T}$ after applying the transpose to each factor.</p>
+<p><strong>The transpose of a product turns the order around.</strong> $(XY)^{\mathsf T}=Y^{\mathsf T}X^{\mathsf T}$, so the two parts of a product are written with the transposes of the factors and not with the factors themselves.</p>
+<h2 id="the-trace-reads-only-the-symmetric-part">The Trace Reads Only the Symmetric Part</h2>
+<p><strong>Proposition.</strong> $\operatorname{tr}(P)=\operatorname{tr}(\operatorname{sym}P)$ and $\operatorname{tr}(\operatorname{skew}P)=0$.</p>
+<p><strong>Proof.</strong> The trace of a matrix equals the trace of its transpose, so $\operatorname{tr}(P^{\mathsf T})=\operatorname{tr}(P)$ and the antisymmetric part has trace $\tfrac12(\operatorname{tr}P-\operatorname{tr}P)=0$.</p>
+<p><strong>Corollary.</strong> $\operatorname{tr}(XY)=\tfrac12\operatorname{tr}\bigl(XY+Y^{\mathsf T}X^{\mathsf T}\bigr)$, and $\operatorname{tr}([X,Y])=0$ while $\operatorname{tr}(\{X,Y\})=2\operatorname{tr}(XY)$.</p>
+<p><strong>Proof.</strong> The first identity is the proposition applied to $XY$; the second follows from the cyclicity of the trace, $\operatorname{tr}(YX)=\operatorname{tr}(XY)$.</p>
+<p><strong>The determinant is not blind to the antisymmetric part.</strong> For $X=I$ and $Y=J$ the sum $I+J$ has determinant $2$ and the symmetric part alone has determinant $1$, so the antisymmetric part does change the determinant.</p>
+<p><strong>Proof.</strong> $\det(I+J)=\det\begin{pmatrix}1&1\\ -1&1\end{pmatrix}=2$, and $\operatorname{sym}(I+J)=I$.</p>
+<h2 id="products-of-two-symmetric-matrices">Products of Two Symmetric Matrices</h2>
+<p><strong>Theorem.</strong> For symmetric $S,T$,</p>
+<p>$$
+\operatorname{sym}(ST)=\tfrac12\{S,T\},\qquad \operatorname{skew}(ST)=\tfrac12[S,T].
+$$</p>
+<p><strong>Proof.</strong> $(ST)^{\mathsf T}=T^{\mathsf T}S^{\mathsf T}=TS$, so $\operatorname{sym}(ST)=\tfrac12(ST+TS)$ and $\operatorname{skew}(ST)=\tfrac12(ST-TS)$.</p>
+<p><strong>Corollary.</strong> The symmetric part of a product of two symmetric matrices is symmetric and the antisymmetric part is antisymmetric, and both are nonzero in general.</p>
+<p><strong>Proof.</strong> The two formulas express the parts by the anticommutator and the commutator, which are symmetric and antisymmetric respectively.</p>
+<p><strong>Example.</strong> With $S=\sigma_{3}$ and $T=\sigma_{1}$ one has $\{S,T\}=0$ and $[S,T]=2J$, so the product $\sigma_{3}\sigma_{1}=J$ is purely antisymmetric.</p>
+<p><strong>Proof.</strong> $\sigma_{3}\sigma_{1}=J$ and $\sigma_{1}\sigma_{3}=-J$, so the sum vanishes and the difference is $2J$.</p>
+<p><strong>The product is symmetric exactly when the two matrices commute.</strong> For symmetric $S,T$ the product $ST$ is symmetric iff $[S,T]=0$.</p>
+<p><strong>Proof.</strong> $ST$ is symmetric iff $ST=TS$, which is the vanishing of the commutator.</p>
+<h2 id="products-of-a-symmetric-and-an-antisymmetric-matrix">Products of a Symmetric and an Antisymmetric Matrix</h2>
+<p><strong>Theorem.</strong> For symmetric $S$ and antisymmetric $K$,</p>
+<p>$$
+\operatorname{sym}(SK)=\tfrac12(SK-KS)=\tfrac12[S,K],\qquad
+\operatorname{skew}(SK)=\tfrac12(SK+KS)=\tfrac12\{S,K\}.
+$$</p>
+<p><strong>Proof.</strong> $(SK)^{\mathsf T}=K^{\mathsf T}S^{\mathsf T}=(-K)S=-KS$, so the symmetric part is $\tfrac12(SK-KS)$ and the antisymmetric part is $\tfrac12(SK+KS)$.</p>
+<p><strong>Corollary (the roles are exchanged).</strong> For a mixed product the symmetric part is the commutator term and the antisymmetric part is the anticommutator term, which is the reverse of the rule for two symmetric factors.</p>
+<p><strong>Proof.</strong> Compare the two theorems: for $S,T$ symmetric the symmetric part carries the anticommutator, and for the mixed product it carries the commutator.</p>
+<p><strong>Example.</strong> With $S=\sigma_{3}$ and $K=J$ one has $SK=\sigma_{1}$ and $KS=-\sigma_{1}$, so the product is symmetric, the commutator term is $\sigma_{1}$ and the anticommutator term vanishes.</p>
+<p><strong>Proof.</strong> $\sigma_{3}J=\sigma_{1}$ and $J\sigma_{3}=-\sigma_{1}$, hence $SK-KS=2\sigma_{1}$ and $SK+KS=0$.</p>
+<p><strong>Corollary.</strong> A product $SK$ with $S$ symmetric and $K$ antisymmetric is symmetric iff the two matrices anticommute.</p>
+<p><strong>Proof.</strong> By the theorem, the antisymmetric part vanishes exactly when $\{S,K\}=0$.</p>
+<p><strong>The reversed product.</strong> For $KS$ the same computation gives $\operatorname{sym}(KS)=-\tfrac12[S,K]$ and $\operatorname{skew}(KS)=\tfrac12\{S,K\}$, so the two mixed products have opposite symmetric parts and equal antisymmetric parts.</p>
+<p><strong>Proof.</strong> Apply the transpose to the theorem, or recompute with $(KS)^{\mathsf T}=S(-K)=-SK$.</p>
+<h2 id="products-of-two-antisymmetric-matrices">Products of Two Antisymmetric Matrices</h2>
+<p><strong>Proposition.</strong> The antisymmetric matrices of order two form the line $\mathbb{R}J$ with $J^{2}=-I$, so every product of two of them is a scalar multiple of the identity.</p>
+<p><strong>Proof.</strong> The antisymmetric matrices are the multiples of $J$ and $J^{2}=-I$.</p>
+<p><strong>Corollary.</strong> Every product $KK'$ of two antisymmetric matrices is symmetric, and its antisymmetric part vanishes.</p>
+<p><strong>Proof.</strong> $KK'=cc'J^{2}=-cc'I$, which is symmetric, and a scalar matrix has zero antisymmetric part.</p>
+<p><strong>The trace of the product is negative.</strong> For $K=cJ$ and $K'=c'J$ one has $\operatorname{tr}(KK')=-2cc'$, so the trace form is negative definite on the antisymmetric line.</p>
+<p><strong>Proof.</strong> $\operatorname{tr}(J^{2})=\operatorname{tr}(-I)=-2$.</p>
+<p><strong>The mixed and the pure cases are the whole list.</strong> Every product of two matrices falls in one of the three cases according to the halves of its factors, since every factor is symmetric or antisymmetric.</p>
+<h2 id="the-traceless-symmetric-matrices">The Traceless Symmetric Matrices</h2>
+<p><strong>Theorem.</strong> For traceless symmetric $u,v$ of order two,</p>
+<p>$$
+\{u,v\}=2\operatorname{tr}(uv)\,I .
+$$</p>
+<p><strong>Proof.</strong> In the Pauli basis $u=\vec a\cdot\vec\sigma$ and $v=\vec b\cdot\vec\sigma$ with real vectors $\vec a,\vec b$, the anticommutator of two Pauli matrices is $\{\sigma_{i},\sigma_{j}\}=2\delta_{ij}I$, hence $\{u,v\}=2(\vec a\cdot\vec b)I$ and $\vec a\cdot\vec b=\tfrac12\operatorname{tr}(uv)$.</p>
+<p><strong>Corollary.</strong> The anticommutator of two traceless symmetric matrices is a scalar, and its determinant vanishes unless the scalar is zero.</p>
+<p><strong>Proof.</strong> The result is a multiple of the identity, whose determinant is the square of the scalar.</p>
+<p><strong>Corollary.</strong> The commutator $[u,v]$ is antisymmetric and its size is governed by the cross product: $[u,v]=2i\,(\vec a\times\vec b)\cdot\vec\sigma$, a multiple of the antisymmetric unit, since a commutator of two symmetric matrices is antisymmetric and the line is one-dimensional.</p>
+<p><strong>Proof.</strong> $[\sigma_{i},\sigma_{j}]=2i\epsilon_{ijk}\sigma_{k}$, so the commutator is $2i$ times the Pauli combination of the cross product.</p>
+<p><strong>The traceless part is closed under the anticommutator up to the scalar term.</strong> The product $\{u,v\}$ leaves the traceless space and lands in the scalars, which is why the symmetric half with its trace is the right object and not the traceless part alone.</p>
+<h2 id="summary">Summary</h2>
+<p>Every product splits into a symmetric and an antisymmetric part, of dimensions $3$ and $1$, and the trace reads only the symmetric part, so commutators are traceless and $\operatorname{tr}\{X,Y\}=2\operatorname{tr}(XY)$.</p>
+<p>For two symmetric factors the symmetric part of the product is the anticommutator and the antisymmetric part is the commutator; for a mixed product the roles are exchanged, with $\operatorname{sym}(SK)=\tfrac12[S,K]$ and $\operatorname{skew}(SK)=\tfrac12\{S,K\}$; for two antisymmetric factors the product is a scalar matrix because $J^{2}=-I$. For traceless symmetric matrices the anticommutator is the scalar $2\operatorname{tr}(uv)I$, and the commutator is a cross product in the antisymmetric direction.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{sym}P$</td>
+<td>$\tfrac12(P+P^{\mathsf T})$</td>
+</tr>
+<tr>
+<td>$\operatorname{skew}P$</td>
+<td>$\tfrac12(P-P^{\mathsf T})$</td>
+</tr>
+<tr>
+<td>$\{X,Y\}$</td>
+<td>the anticommutator $XY+YX$</td>
+</tr>
+<tr>
+<td>$[X,Y]$</td>
+<td>the commutator $XY-YX$</td>
+</tr>
+<tr>
+<td>$\sigma_{1},\sigma_{3}$</td>
+<td>the two real Pauli matrices, symmetric</td>
+</tr>
+<tr>
+<td>$J$</td>
+<td>$i\sigma_{2}$, the antisymmetric unit</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge University Press, 2013), for the symmetric and antisymmetric parts of a matrix and their traces.</li>
+<li>V. S. Varadarajan, <em>Lie Groups, Lie Algebras, and Their Representations</em> (Springer, 1984), for the anticommutator identities of the Pauli matrices.</li>
+<li><a href="the-two-halves-over-r-symmetric-and-antisymmetric-at-n-2.html">The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$</a>, for the two halves and their bracket.</li>
+<li><a href="the-two-halves-as-orthogonal-complements-at-n-2.html">The Two Halves as Orthogonal Complements at $n=2$</a>, for the trace form that separates the two parts.</li>
+<li><a href="the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html">The Four General Products and Their Relations over the Biquaternion Algebra</a>, for the same product splitting in the biquaternion language.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

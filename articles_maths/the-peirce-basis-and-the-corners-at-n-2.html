@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Peirce Basis and the Corners at $n=2$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-peirce-basis-and-the-corners-at-math0"><strong>The Peirce Basis and the Corners at $n=2$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>A rank-one idempotent $e$, one nonzero element $\upsilon_{+}$ of the corner $A_{12}$, and the partner $\upsilon_{-}$ fixed by $\upsilon_{+}\upsilon_{-}=e$ form a Peirce basis $(e,\upsilon_{+},\upsilon_{-},1-e)$ in which the multiplication is the multiplication of the matrix units.</strong></p>
+<p>The article builds the basis, states the eight nonzero products that define it, proves that the gauge freedom is exactly one reciprocal rescaling $\upsilon_{+}\mapsto\lambda\upsilon_{+}$, $\upsilon_{-}\mapsto\lambda^{-1}\upsilon_{-}$ with $\lambda\in\mathbb{C}^{\times}$, reads the corners in the basis, and identifies the basis with the system of matrix units $E_{11}$, $E_{12}$, $E_{21}$, $E_{22}$. It assumes <em>The Peirce Decomposition in Two Dimensions</em> and <em>Lagrange Idempotents of a $2\times2$ Matrix with Simple Spectrum</em>, and it takes the nilpotent background from <em>The Minimal Polynomial and the Two Jordan Regimes of $M_2(\mathbb{C})$</em>.</p>
+<p>It defers the frame in general dimension to <em>The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$</em> and the recursion to <em>The Peirce Decomposition and the Corner Recursion of $M_n(\mathbb{C})$</em>.</p>
+<h2 id="the-frame">The Frame</h2>
+<p><strong>Definition.</strong> A <strong>frame</strong> at order two is a pair of orthogonal idempotents $e$ and $f=1-e$, each of rank one.</p>
+<p><strong>Proposition.</strong> The pair is determined by its first member, and any two frames are conjugate.</p>
+<p><strong>Proof.</strong> The second member is the complement of the first, and any two rank-one idempotents are conjugate because they have the same rank, so a conjugating matrix carries one frame to the other.</p>
+<p><strong>Corollary.</strong> Every rank-one idempotent is conjugate to $E_{11}$, so the study of the frame reduces to the standard one.</p>
+<p><strong>Proof.</strong> The rank of an idempotent is the dimension of its image, and a matrix of full rank is invertible and conjugates the images.</p>
+<p><strong>The frame is the matrix form of the corpus's root of one.</strong> The corpus builds the frame from a root $\tilde{Ζ}$ of the identity and the pair $\tilde\Pi_{\pm}=\tfrac12(e_t\pm\tilde{Ζ})$; on the matrix side the root is the involution $\zeta$ of <em>Lagrange Idempotents of a $2\times2$ Matrix with Simple Spectrum</em> and the pair is $\rho_{\pm}$.</p>
+<p><strong>Proof.</strong> The identities $\tilde{Ζ}^{2}=e_t$ and $\tilde\Pi_{\pm}^{2}=\tilde\Pi_{\pm}$ are the identities $\zeta^{2}=I$ and $\rho_{\pm}^{2}=\rho_{\pm}$ proved there.</p>
+<h2 id="the-nilpotent-pair">The Nilpotent Pair</h2>
+<p><strong>Definition.</strong> The <strong>companion pair</strong> of the frame is a pair $(\upsilon_{+},\upsilon_{-})$ with $\upsilon_{+}\in A_{12}$, $\upsilon_{-}\in A_{21}$ and $\upsilon_{+}\upsilon_{-}=e$.</p>
+<p><strong>Proposition.</strong> The companion pair exists, and for every frame and every choice of $\upsilon_{+}\ne0$ in $A_{12}$ there is exactly one partner.</p>
+<p><strong>Proof.</strong> At the standard frame the pair $E_{12},E_{21}$ works. In general the corner $A_{12}$ is one-dimensional, spanned by some $\upsilon_{+}$; the product $\upsilon_{+}A_{21}\subseteq A_{11}$ is the whole line of $e$ when $\upsilon_{+}\ne0$, so there is a unique $\upsilon_{-}$ in $A_{21}$ with $\upsilon_{+}\upsilon_{-}=e$.</p>
+<p><strong>Corollary.</strong> The pair is automatically nilpotent and satisfies $\upsilon_{+}^{2}=0$, $\upsilon_{-}^{2}=0$ and $\upsilon_{-}\upsilon_{+}=f$.</p>
+<p><strong>Proof.</strong> The mixed spaces are square-zero by <em>The Peirce Decomposition in Two Dimensions</em>, and $\upsilon_{-}\upsilon_{+}$ lies in $A_{00}$, which is the line of $f$; its trace is $\operatorname{tr}(\upsilon_{-}\upsilon_{+})=\operatorname{tr}(\upsilon_{+}\upsilon_{-})=\operatorname{tr}e=1$, so it is $f$.</p>
+<p><strong>Corollary.</strong> The four elements $e$, $\upsilon_{+}$, $\upsilon_{-}$, $f$ are linearly independent, hence a basis.</p>
+<p><strong>Proof.</strong> They lie in four different Peirce spaces, whose direct sum is the whole space.</p>
+<h2 id="the-structure-constants">The Structure Constants</h2>
+<p><strong>Theorem.</strong> In the basis $(e,\upsilon_{+},\upsilon_{-},f)$ the eight nonzero products are</p>
+<p>$$
+e^{2}=e,\quad e\upsilon_{+}=\upsilon_{+},\quad \upsilon_{+}f=\upsilon_{+},\quad \upsilon_{+}\upsilon_{-}=e,\quad
+\upsilon_{-}e=\upsilon_{-},\quad f\upsilon_{-}=\upsilon_{-},\quad \upsilon_{-}\upsilon_{+}=f,\quad f^{2}=f,
+$$</p>
+<p>and every other product of two basis elements vanishes.</p>
+<p><strong>Proof.</strong> Each product is read from the index rule of <em>The Peirce Decomposition in Two Dimensions</em> together with the normalisation $\upsilon_{+}\upsilon_{-}=e$ and the identity $\upsilon_{-}\upsilon_{+}=f$; the products with a wrong middle index vanish by the second Peirce rule.</p>
+<p><strong>Corollary.</strong> The table is the table of the matrix units, with $e$ playing $E_{11}$, $\upsilon_{+}$ playing $E_{12}$, $\upsilon_{-}$ playing $E_{21}$ and $f$ playing $E_{22}$.</p>
+<p><strong>Proof.</strong> The eight products listed are exactly the eight nonzero products of the four matrix units.</p>
+<p><strong>Corollary.</strong> The algebra has no room for a second relation: the table determines the product of any two elements from their coordinates in the basis.</p>
+<p><strong>Proof.</strong> The product is bilinear, so it is determined on the basis, and the table gives it there.</p>
+<h2 id="the-gauge">The Gauge</h2>
+<p><strong>Theorem.</strong> The pair $(\upsilon_{+},\upsilon_{-})$ is determined by $\upsilon_{+}$ up to the reciprocal rescaling</p>
+<p>$$
+\upsilon_{+}\mapsto\lambda\upsilon_{+},\qquad \upsilon_{-}\mapsto\lambda^{-1}\upsilon_{-},\qquad \lambda\in\mathbb{C}^{\times}.
+$$</p>
+<p><strong>Proof.</strong> The product of the rescaled pair is $\lambda\lambda^{-1}\upsilon_{+}\upsilon_{-}=e$, so every such rescaling gives a companion pair; conversely, if $(\upsilon_{+}',\upsilon_{-}')$ is another pair then $\upsilon_{+}'=\lambda\upsilon_{+}$ for some $\lambda\ne0$ because the corner is a line, and the normalisation forces $\upsilon_{-}'=\lambda^{-1}\upsilon_{-}$.</p>
+<p><strong>Corollary.</strong> The gauge is one complex parameter, and the frame itself has no gauge freedom once $e$ is fixed.</p>
+<p><strong>Proof.</strong> The idempotent $e$ is fixed and the complement is determined by it; only the choice of the generator of the mixed line and its reciprocal partner is free.</p>
+<p><strong>Corollary.</strong> The element $\upsilon_{+}\upsilon_{-}$ and the element $\upsilon_{-}\upsilon_{+}$ are gauge invariant, and the two products $\upsilon_{+}^{2}$ and $\upsilon_{-}^{2}$ vanish in every gauge.</p>
+<p><strong>Proof.</strong> The first two products are $e$ and $f$ independently of $\lambda$, and the squares vanish because the mixed spaces are square-zero.</p>
+<p><strong>The gauge is what remains of the diagonal matrix of the diagonalisation.</strong> A matrix that diagonalises an element is determined up to the diagonal rescalings, and at order two those rescalings act on the two mixed lines reciprocally.</p>
+<p><strong>Proof.</strong> Conjugating by a diagonal matrix $\operatorname{diag}(\lambda,\mu)$ multiplies $E_{12}$ by $\lambda\mu^{-1}$ and $E_{21}$ by $\mu\lambda^{-1}$; the normalisation $\upsilon_{+}\upsilon_{-}=e$ then forces $\mu=1$, leaving the single parameter $\lambda$.</p>
+<h2 id="the-system-of-matrix-units">The System of Matrix Units</h2>
+<p><strong>Theorem.</strong> The assignment $E_{11}\mapsto e$, $E_{12}\mapsto\upsilon_{+}$, $E_{21}\mapsto\upsilon_{-}$, $E_{22}\mapsto f$ extends to an algebra isomorphism $M_2(\mathbb{C})\to M_2(\mathbb{C})$, namely the conjugation by the matrix whose columns are the images of the standard basis.</p>
+<p><strong>Proof.</strong> The assignment preserves the eight nonzero products, so it preserves every product by bilinearity, and an algebra map of a simple algebra to itself with nonzero image is injective and hence bijective.</p>
+<p><strong>Corollary.</strong> Every frame is the image of the standard frame under an automorphism, and the automorphisms of the algebra are the inner ones.</p>
+<p><strong>Proof.</strong> The map constructed is an automorphism, and every automorphism of a full matrix algebra is inner.</p>
+<p><strong>Corollary.</strong> The corners are the four lines of the basis, and their products are the products of the corners of the standard frame.</p>
+<p><strong>Proof.</strong> The isomorphism carries corners to corners, and at the standard frame the corners are the four lines.</p>
+<h2 id="the-coordinates">The Coordinates</h2>
+<p><strong>Proposition.</strong> In the Peirce coordinates $x=x_{0}e+x_{+}\upsilon_{+}+x_{-}\upsilon_{-}+x_{1}f$ the product is</p>
+<p>$$
+(xy)_{0}=x_{0}y_{0}+x_{+}y_{-},\quad (xy)_{+}=x_{0}y_{+}+x_{+}y_{1},\quad (xy)_{-}=x_{-}y_{0}+x_{1}y_{-},\quad (xy)_{1}=x_{-}y_{+}+x_{1}y_{1}.
+$$</p>
+<p><strong>Proof.</strong> Multiply the two coordinate expressions and collect the four basis elements using the structure constants.</p>
+<p><strong>Corollary.</strong> The trace is $x_{0}+x_{1}$ and the determinant is $x_{0}x_{1}-x_{+}x_{-}$.</p>
+<p><strong>Proof.</strong> The trace is the sum of the two idempotent coordinates because $\operatorname{tr}\upsilon_{\pm}=0$, and the determinant is the product of the diagonal coordinates minus the product of the two mixed ones, as at the standard frame.</p>
+<p><strong>Corollary.</strong> The element is invertible exactly when $x_{0}x_{1}\ne x_{+}x_{-}$, and the inverse has the coordinates $\dfrac{1}{x_{0}x_{1}-x_{+}x_{-}}(x_{1},-x_{+},-x_{-},x_{0})$.</p>
+<p><strong>Proof.</strong> The inverse of a two-by-two matrix in the matrix-unit coordinates is the adjugate divided by the determinant, and the Peirce coordinates are the matrix-unit coordinates.</p>
+<h2 id="summary">Summary</h2>
+<p>A frame at order two is a pair of orthogonal rank-one idempotents $e$ and $f=1-e$. Adjoining a nonzero $\upsilon_{+}$ in the corner $A_{12}$ and the unique partner $\upsilon_{-}$ with $\upsilon_{+}\upsilon_{-}=e$ gives the Peirce basis $(e,\upsilon_{+},\upsilon_{-},f)$, in which the eight nonzero products are those of the matrix units.</p>
+<p>The pair $(\upsilon_{+},\upsilon_{-})$ is determined up to the reciprocal rescaling by $\lambda\in\mathbb{C}^{\times}$, and that is the only freedom of the frame. The coordinates in the basis carry the trace $x_{0}+x_{1}$ and the determinant $x_{0}x_{1}-x_{+}x_{-}$, and the assignment of the basis to the matrix units is an inner automorphism.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e,f$</td>
+<td>the two idempotents of the frame, $f=1-e$</td>
+</tr>
+<tr>
+<td>$\upsilon_{+},\upsilon_{-}$</td>
+<td>the companion pair, $\upsilon_{+}\upsilon_{-}=e$</td>
+</tr>
+<tr>
+<td>$A_{12},A_{21}$</td>
+<td>the mixed corners</td>
+</tr>
+<tr>
+<td>$\lambda$</td>
+<td>the gauge parameter in $\mathbb{C}^{\times}$</td>
+</tr>
+<tr>
+<td>$x_{0},x_{+},x_{-},x_{1}$</td>
+<td>the Peirce coordinates</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the Peirce basis and the system of matrix units.</li>
+<li>Kevin McCrimmon, <em>A Taste of Jordan Algebras</em> (Springer, 2004), for the frame and the gauge in the Peirce language.</li>
+<li><a href="the-peirce-decomposition-in-two-dimensions.html">The Peirce Decomposition in Two Dimensions</a>, for the four spaces that the basis linearises.</li>
+<li><a href="the-peirce-basis-of-the-biquaternion-algebra.html">The Peirce Basis of the Biquaternion Algebra</a>, for the same basis in the biquaternion language.</li>
+<li><a href="the-frame-the-simple-nilpotents-and-the-gauge-of-mnc.html">The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$</a>, for the frame carried to the general order.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

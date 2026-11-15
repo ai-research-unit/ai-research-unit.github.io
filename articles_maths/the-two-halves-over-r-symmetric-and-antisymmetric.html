@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-two-halves-over-math0-symmetric-and-antisymmetric"><strong>The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>Over the real field the transpose cuts the algebra into the symmetric matrices and the antisymmetric ones, and the two halves carry the two products that the category needs: the symmetric half is a Jordan algebra under the anticommutator and the antisymmetric half is the Lie algebra $\mathfrak{so}(n)$ under the commutator.</strong></p>
+<p>The article proves the direct sum, the orthogonality of the two halves for the trace form, the closure rules $[\operatorname{Sym},\operatorname{Sym}]\subseteq\operatorname{Skew}$, $[\operatorname{Skew},\operatorname{Skew}]\subseteq\operatorname{Sym}$ and $[\operatorname{Sym},\operatorname{Skew}]\subseteq\operatorname{Sym}$, and the properties that make each half what it is: even rank and purely imaginary spectrum for the antisymmetric half, real spectrum and orthogonal diagonalisation for the symmetric one. It computes the Killing form of $\mathfrak{so}(n)$, which is $(n-2)\operatorname{tr}(XY)$ and vanishes at $n=2$, and it shows that the exponential of each half lands in the corresponding group. It assumes <em>The Involutions over $\mathbb{R}$ and over $\mathbb{C}$</em> for the split and <em>The Two Base Fields: $M_n(\mathbb{R})$ inside $M_n(\mathbb{C})$</em> for the real trace form. It defers the multiplication tables to <em>The Four Multiplication Tables: $SS$, $SK$, $KS$, $KK$</em> and the complex case to <em>The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian</em>.</p>
+<h2 id="the-split">The Split</h2>
+<p><strong>Every real matrix is a symmetric matrix plus an antisymmetric one, uniquely.</strong> With $A^{\mathsf T}$ the transpose,</p>
+<p>$$
+A=\underbrace{\tfrac12(A+A^{\mathsf T})}_{S}+\underbrace{\tfrac12(A-A^{\mathsf T})}_{K},\qquad S^{\mathsf T}=S,\quad K^{\mathsf T}=-K .
+$$</p>
+<p>The two summands are the projections onto the eigenspaces of the transpose, and they are orthogonal for the trace form:</p>
+<p>$$
+\operatorname{tr}(S^{\mathsf T}K)=\operatorname{tr}(SK)=-\operatorname{tr}(KS)=-\operatorname{tr}(SK)=0 .
+$$</p>
+<p>The last equality uses the cyclicity of the trace, so the vanishing holds for every pair, not only for a pair in general position.</p>
+<p><strong>The dimensions are $n(n+1)/2$ and $n(n-1)/2$, and they sum to $n^{2}$.</strong> A symmetric matrix is free on and above the diagonal, an antisymmetric one is free strictly above it, and</p>
+<p>$$
+\frac{n(n+1)}{2}+\frac{n(n-1)}{2}=n^{2}.
+$$</p>
+<p>At $n=2$ the split is $4=3+1$, at $n=3$ it is $9=6+3$, and at $n=4$ it is $16=10+6$. The antisymmetric half has dimension $n(n-1)/2$ and the dimension of the Lie algebra $\mathfrak{so}(n)$. The triangular algebra $UT_n$ is the other complement of the antisymmetric half in the vector space, with the same dimension as $\operatorname{Sym}_n$ and a different product; the comparison is in <em>$UT_n$ as the Complement of the Antisymmetric Part (Transpose Case)</em>.</p>
+<p><strong>The halves are not subalgebras for the ordinary product.</strong> The product of two symmetric matrices is symmetric exactly when they commute, and the product of two antisymmetric matrices is antisymmetric exactly when they commute. So neither half is closed under the matrix product, and the two closure rules of §<em>The Closure Rules</em> are the correct substitute. The vector space splits; the algebra does not.</p>
+<h2 id="the-symmetric-half">The Symmetric Half</h2>
+<p><strong>The symmetric half is a Jordan algebra under the anticommutator.</strong> Put</p>
+<p>$$
+S\circ T=\tfrac12(ST+TS).
+$$</p>
+<p>The product is commutative and it satisfies the Jordan identity $(S\circ S)\circ(T\circ S)=((S\circ S)\circ T)\circ S$, so $\operatorname{Sym}_n$ with $\circ$ is a <strong>Jordan algebra</strong>, of dimension $n(n+1)/2$. The unit is the identity matrix, and the product of two symmetric matrices is again symmetric because $(ST+TS)^{\mathsf T}=T^{\mathsf T}S^{\mathsf T}+S^{\mathsf T}T^{\mathsf T}=TS+ST$.</p>
+<p><strong>A symmetric matrix has a real spectrum and is diagonalisable by an orthogonal matrix.</strong> The spectral theorem gives $S=Q\Lambda Q^{\mathsf T}$ with $Q\in\mathrm{O}(n)$ and $\Lambda$ real diagonal, so the eigenvalues of $S$ are real and the eigenvectors can be chosen orthonormal. The trace and the determinant are the sum and the product of those eigenvalues, and both are real.</p>
+<p><strong>The quadratic form of the half is the trace of the square.</strong> For symmetric $S$,</p>
+<p>$$
+\operatorname{tr}(S^{2})=\sum_{i,j}S_{ij}^{2}\ge0,
+$$</p>
+<p>with equality only for $S=0$. So the trace form restricted to the symmetric half is positive definite, of signature $\big(\tfrac{n(n+1)}{2},0\big)$, and the same computation on the antisymmetric half gives $\operatorname{tr}(K^{2})=-\sum_{i<j}K_{ij}^{2}<0$.</p>
+<h2 id="the-antisymmetric-half">The Antisymmetric Half</h2>
+<p><strong>The antisymmetric half is the Lie algebra $\mathfrak{so}(n)$ under the commutator.</strong> For antisymmetric $K,L$ the commutator is antisymmetric, since</p>
+<p>$$
+[K,L]^{\mathsf T}=(KL-LK)^{\mathsf T}=L^{\mathsf T}K^{\mathsf T}-K^{\mathsf T}L^{\mathsf T}=LK-KL=-[K,L],
+$$</p>
+<p>and the Jacobi identity holds because the commutator of matrices always satisfies it. The dimension is $n(n-1)/2$, and the rank of the algebra, the dimension of a maximal torus, is $\lfloor n/2\rfloor$.</p>
+<p><strong>An antisymmetric matrix has even rank and a purely imaginary spectrum.</strong> If $Kv=\lambda v$ then $K\bar v=\bar\lambda\bar v$ and $\bar v^{\mathsf T}Kv=\lambda\bar v^{\mathsf T}v$, while transposing gives $\bar v^{\mathsf T}Kv=-(\bar v^{\mathsf T}Kv)$, so $\lambda$ is purely imaginary or zero. The eigenvalues are therefore $0$ and pairs $\pm i\theta$ with $\theta\in\mathbb{R}\setminus\{0\}$, and the rank, which is twice the number of nonzero pairs, is even:</p>
+<p>$$
+\operatorname{rank}K\in\{0,2,4,\dots\},\qquad \operatorname{rank}K\le 2\Big\lfloor\frac{n}{2}\Big\rfloor .
+$$</p>
+<p>The computation at $n=3,4,5,6$ gives ranks $2,4,4,6$ for a generic antisymmetric matrix, and the eigenvalues have vanishing real part to machine precision.</p>
+<p><strong>The determinant of an antisymmetric matrix vanishes at odd $n$ and is a square at even $n$.</strong> For odd $n$ the matrix is singular, since a nonzero determinant would make the rank odd. For even $n=2m$ there is a polynomial $\operatorname{Pf}$ of degree $m$, the <strong>Pfaffian</strong>, with</p>
+<p>$$
+\det K=\operatorname{Pf}(K)^{2},\qquad \operatorname{Pf}(K)=\sum_{\text{pairings}}\operatorname{sgn}\prod K_{i j}.
+$$</p>
+<p>At $n=4$ the formula reads $\operatorname{Pf}=K_{12}K_{34}-K_{13}K_{24}+K_{14}K_{23}$, and the identity $\det K=\operatorname{Pf}^{2}$ was verified on a random antisymmetric matrix.</p>
+<h2 id="the-closure-rules">The Closure Rules</h2>
+<p><strong>The four products land in the two halves according to a sign rule.</strong> For symmetric $S,T$ and antisymmetric $K,L$,</p>
+<p>$$
+[S,T]=ST-TS\in\operatorname{Skew}_n,\qquad \{K,L\}=KL+LK\in\operatorname{Sym}_n,\qquad [S,K]=SK-KS\in\operatorname{Sym}_n .
+$$</p>
+<p>The first two say that the commutator exchanges the halves and that the anticommutator also exchanges them; the third says that the commutator of a symmetric with an antisymmetric matrix stays in the symmetric half. All three were verified on random elements at $n=2,\dots,6$.</p>
+<p><strong>The rule is a grading and not a decomposition into ideals.</strong> In the language of the split, $\operatorname{Sym}$ is the $+1$ part and $\operatorname{Skew}$ the $-1$ part, and the commutator carries $(+1,+1)$ and $(-1,-1)$ to $-1$ while it carries $(+1,-1)$ to $+1$. The symmetric half is therefore a Lie subalgebra only under the commutator of its own elements composed with a sign, and the correct object is the pair $(\mathfrak{so}(n),\operatorname{Sym}_n)$ with $\operatorname{Sym}_n$ a module.</p>
+<p><strong>The product of two symmetric matrices has both parts, and each part is forced.</strong> For symmetric $S,T$,</p>
+<p>$$
+ST=\tfrac12\{S,T\}+\tfrac12[S,T],
+$$</p>
+<p>with the first term symmetric and the second antisymmetric. The decomposition of $ST$ is therefore the decomposition of the product into its symmetric and antisymmetric parts, which is the content of <em>The Symmetric and Antisymmetric Parts of a Product</em>. Neither part vanishes identically, and the two are exchanged by the transpose.</p>
+<h2 id="the-two-forms">The Two Forms</h2>
+<p><strong>The trace form is definite on each half, with opposite signs.</strong> For symmetric $S$ and antisymmetric $K$,</p>
+<p>$$
+\operatorname{tr}(S^{2})=\sum_{i,j}S_{ij}^{2}>0,\qquad \operatorname{tr}(K^{2})=-\sum_{i<j}2K_{ij}^{2}<0 ,
+$$</p>
+<p>so the restriction to $\operatorname{Sym}_n$ has signature $\big(\tfrac{n(n+1)}{2},0\big)$ and the restriction to $\operatorname{Skew}_n$ has signature $\big(0,\tfrac{n(n-1)}{2}\big)$. The form on the whole algebra is the sum of the two, of signature $(n(n+1)/2,\,n(n-1)/2)$ in the ordered pair, which is the split form of $\operatorname{tr}(A^{2})$ on $M_n(\mathbb{R})$.</p>
+<p><strong>The Killing form of $\mathfrak{so}(n)$ is $(n-2)\operatorname{tr}(XY)$.</strong> A direct computation from the structure constants gives</p>
+<p>$$
+B(X,Y)=\operatorname{tr}(\operatorname{ad}_X\operatorname{ad}_Y)=(n-2)\operatorname{tr}(XY),
+$$</p>
+<p>and the identity was verified at $n=2,\dots,6$ by building the matrices of the adjoint action in the basis $E_{ij}-E_{ji}$ and comparing. The factor $n-2$ is the whole story: the form is negative definite for $n\ge3$ and vanishes identically at $n=2$, where $\mathfrak{so}(2)$ is one-dimensional and abelian. The consequences for the radical and for the triangular case are in <em>The Killing Form, Its Radical and the Triangular Case</em>.</p>
+<p><strong>The two forms are different objects.</strong> The trace form is a form on the algebra, defined without a Lie structure; the Killing form is built from the adjoint action. On $\mathfrak{so}(n)$ they differ by the scalar $n-2$, and at $n=2$ the Killing form degenerates while the trace form does not. A statement about one is not a statement about the other, and the article <em>The Trace Form and Its Signature on the Two Halves</em> keeps them apart.</p>
+<h2 id="the-exponential-of-each-half">The Exponential of Each Half</h2>
+<p><strong>The exponential of an antisymmetric matrix is a rotation.</strong> If $K^{\mathsf T}=-K$ then</p>
+<p>$$
+(e^{K})^{\mathsf T}e^{K}=e^{K^{\mathsf T}}e^{K}=e^{-K}e^{K}=\mathrm{I},\qquad \det e^{K}=e^{\operatorname{tr}K}=1 ,
+$$</p>
+<p>so $e^{K}\in\mathrm{SO}(n)$. Both identities were verified at $n=2,\dots,5$ by summing the series. The map $K\mapsto e^{K}$ is a local diffeomorphism near $0$ and its image is the identity component of $\mathrm{SO}(n)$, which is the whole group.</p>
+<p><strong>The exponential of a symmetric matrix is a positive definite symmetric matrix.</strong> If $S^{\mathsf T}=S$ then $(e^{S})^{\mathsf T}=e^{S}$, and the eigenvalues of $e^{S}$ are $e^{\lambda_i}>0$. Conversely every positive definite symmetric matrix is $e^{S}$ for a unique symmetric $S$, namely $S=\log P$ computed in the eigenbasis. So</p>
+<p>$$
+\exp:\operatorname{Sym}_n\longrightarrow\{P\ \text{symmetric, positive definite}\}
+$$</p>
+<p>is a bijection, and it is the model of the polar decomposition of <em>The Polar Decomposition from the Two Halves</em>.</p>
+<h2 id="the-case-math131">The Case $n=2$</h2>
+<p><strong>At $n=2$ the split is $4=3+1$ and the antisymmetric half is one line.</strong> The antisymmetric matrices are $\theta J$ with $J=\begin{pmatrix}0&-1\\1&0\end{pmatrix}$, so $\mathfrak{so}(2)=\mathbb{R}J$ is abelian of dimension $1$ and rank $1$. The symmetric half is spanned by $\mathrm{I}$, $\sigma_3=\operatorname{diag}(1,-1)$ and $\sigma_1$, of dimension $3$.</p>
+<p><strong>The exponential of the line is the circle.</strong> Since $J^{2}=-\mathrm{I}$,</p>
+<p>$$
+e^{\theta J}=(\cos\theta)\mathrm{I}+(\sin\theta)J=\begin{pmatrix}\cos\theta&-\sin\theta\\ \sin\theta&\cos\theta\end{pmatrix},
+$$</p>
+<p>so $\exp:\mathfrak{so}(2)\to\mathrm{SO}(2)$ is surjective with kernel $2\pi\mathbb{Z}$, and $\mathrm{SO}(2)$ is a circle. The period is the first instance of the double cover of <em>The Rotor as a Square Root of a Rotation: the Two Signs and the Double Cover</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>The transpose splits $M_n(\mathbb{R})$ into the symmetric half, of dimension $n(n+1)/2$, and the antisymmetric half, of dimension $n(n-1)/2$, orthogonal for the trace form. The symmetric half is a Jordan algebra under $S\circ T=\tfrac12(ST+TS)$, with real spectrum and orthogonal diagonalisation, and the trace form is positive definite on it. The antisymmetric half is the Lie algebra $\mathfrak{so}(n)$ under the commutator, of rank $\lfloor n/2\rfloor$, with even rank, purely imaginary spectrum, vanishing determinant at odd $n$ and $\det K=\operatorname{Pf}(K)^{2}$ at even $n$. The closure rules send $[\operatorname{Sym},\operatorname{Sym}]$ and $\{K,L\}$ across the halves and keep $[S,K]$ in $\operatorname{Sym}$. The Killing form of $\mathfrak{so}(n)$ is $(n-2)\operatorname{tr}(XY)$, degenerate exactly at $n=2$. The exponentials are the rotations and the positive stretches.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{Sym}_n$</td>
+<td>the symmetric half, of dimension $n(n+1)/2$</td>
+</tr>
+<tr>
+<td>$\operatorname{Skew}_n$</td>
+<td>the antisymmetric half, of dimension $n(n-1)/2$</td>
+</tr>
+<tr>
+<td>$S\circ T=\tfrac12(ST+TS)$</td>
+<td>the anticommutator, the Jordan product</td>
+</tr>
+<tr>
+<td>$[S,T]=ST-TS$</td>
+<td>the commutator, the Lie product</td>
+</tr>
+<tr>
+<td>$\mathfrak{so}(n)$</td>
+<td>the antisymmetric half as a Lie algebra, of rank $\lfloor n/2\rfloor$</td>
+</tr>
+<tr>
+<td>$\operatorname{Pf}(K)$</td>
+<td>the Pfaffian, with $\det K=\operatorname{Pf}(K)^{2}$ at even $n$</td>
+</tr>
+<tr>
+<td>$B(X,Y)=(n-2)\operatorname{tr}(XY)$</td>
+<td>the Killing form of $\mathfrak{so}(n)$</td>
+</tr>
+<tr>
+<td>$J=\begin{pmatrix}0&-1\\1&0\end{pmatrix}$</td>
+<td>the generator of $\mathfrak{so}(2)$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for symmetric and skew-symmetric matrices, their spectra and the Pfaffian.</li>
+<li>Nathan Jacobson, <em>Structure and Representations of Jordan Algebras</em> (AMS, 1968), for the Jordan product on symmetric matrices.</li>
+<li>Karin Erdmann and Mark Wildon, <em>Introduction to Lie Algebras</em> (Springer, 2006), for $\mathfrak{so}(n)$, its rank and its Killing form.</li>
+<li><a href="the-involutions-over-r-and-over-c.html">The Involutions over $\mathbb{R}$ and over $\mathbb{C}$</a>, for the transpose involution and the classification of its kind.</li>
+<li><a href="the-two-base-fields-mnr-inside-mnc.html">The Two Base Fields: $M_n(\mathbb{R})$ inside $M_n(\mathbb{C})$</a>, for the real trace form and its definiteness.</li>
+<li><a href="the-matrix-algebra-mnc.html">The Matrix Algebra $M_n(\mathbb{C})$</a>, for the trace, the determinant and the skew-Hermitian algebra $\mathfrak{u}(n)$.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

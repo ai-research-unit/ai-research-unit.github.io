@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Element: Rank, Trace, Determinant, Characteristic Polynomial at $n=2$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-element-rank-trace-determinant-characteristic-polynomial-at-math0"><strong>The Element: Rank, Trace, Determinant, Characteristic Polynomial at $n=2$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>An element of $M_2(\mathbb{C})$ is four complex numbers, and its whole invariant theory is carried by the trace, the determinant and the rank.</strong></p>
+<p>The article treats one element at a time: the coordinates in the two readings, the split into a scalar and a traceless part, the three possible ranks, the characteristic polynomial and its discriminant, the pair of invariants $(\operatorname{tr},\det)$ that classifies the conjugacy classes, and the Cayley–Hamilton identity with the adjugate it produces. It assumes <em>The Matrix Algebra $M_2(\mathbb{C})$</em> for the product and the matrix units. It defers the symmetric functions of the two eigenvalues to <em>The Elementary Symmetric Functions: $\operatorname{tr}$ and $\det$ in Dimension Two</em>, the two Jordan regimes to <em>The Minimal Polynomial and the Two Jordan Regimes of $M_2(\mathbb{C})$</em>, and the spectral classification itself to <em>The Spectrum of a $2\times2$ Matrix</em>.</p>
+<p>What the dimension adds is arithmetic. At order two the scalar part is one half of the trace, the traceless part has the single relation $A_0^{2}=-\det(A_0)I$, and the discriminant is minus four times the determinant of the traceless part.</p>
+<h2 id="the-coordinates">The Coordinates</h2>
+<p><strong>Definition.</strong> Write an element in the matrix units,</p>
+<p>$$
+A=\begin{pmatrix}a&b\\c&d\end{pmatrix}=aE_{11}+bE_{12}+cE_{21}+dE_{22},
+\qquad a,b,c,d\in\mathbb{C}.
+$$</p>
+<p>The four numbers $a,b,c,d$ are the <strong>complex coordinates</strong> of $A$; the eight numbers $\operatorname{Re}a,\operatorname{Im}a,\dots,\operatorname{Im}d$ are its <strong>real coordinates</strong>. The element is a linear map $\mathbb{C}^{2}\to\mathbb{C}^{2}$, and it is also a bilinear form $(x,y)\mapsto x^{\mathsf T}Ay$ on $\mathbb{C}^{2}$.</p>
+<p><strong>Proposition.</strong> The three readings carry the same eight real coordinates and differ only in which structure is emphasised; the passage from the map to the form is the identity on the array, and the passage to the transpose is the exchange of the two slots of the form.</p>
+<p><strong>Proof.</strong> The map is fixed by its four entries, since $Ae_{j}$ is the $j$-th column; the form is fixed by its four values on the standard basis, which are the same entries; and $x^{\mathsf T}Ay=y^{\mathsf T}A^{\mathsf T}x$.</p>
+<p><strong>Two entries decide the symmetry.</strong> The element is symmetric exactly when $b=c$ and Hermitian exactly when $c=\bar b$ with $a,d$ real. The eight real coordinates are therefore distributed as $4$ for a Hermitian element and $4$ for the real matrices, and the two conditions are independent, which is why the Hermitian and the real readings of the algebra are different readings and not the same one.</p>
+<h2 id="the-scalar-and-traceless-parts">The Scalar and Traceless Parts</h2>
+<p><strong>Definition.</strong> The <strong>scalar part</strong> of $A$ is $\tfrac12(\operatorname{tr}A)I$ and the <strong>traceless part</strong> is</p>
+<p>$$
+A_{0}=A-\tfrac12(\operatorname{tr}A)I .
+$$</p>
+<p><strong>Proposition.</strong> The two parts commute, $A_{0}$ is traceless, the split $A=\tfrac12(\operatorname{tr}A)I+A_{0}$ is unique, and the space of traceless elements is three-dimensional over $\mathbb{C}$.</p>
+<p><strong>Proof.</strong> The scalar part is central, so it commutes with everything. The trace of $A_{0}$ is $\operatorname{tr}A-\tfrac12(\operatorname{tr}A)\operatorname{tr}I=\operatorname{tr}A-\operatorname{tr}A=0$. If $A=\lambda I+N$ with $N$ traceless then taking traces gives $2\lambda=\operatorname{tr}A$. The traceless elements are the kernel of the trace on a four-dimensional space.</p>
+<p><strong>Theorem (the traceless square is a scalar).</strong> Every traceless element $N$ of $M_2(\mathbb{C})$ satisfies</p>
+<p>$$
+N^{2}=-\det(N)\,I .
+$$</p>
+<p><strong>Proof.</strong> Write $N=\begin{pmatrix}p&q\\ r&-p\end{pmatrix}$, which is the general traceless array. Then $N^{2}=(p^{2}+qr)I$ and $\det N=-p^{2}-qr$, so $N^{2}=-\det(N)I$. Both sides are polynomials in the entries, and every traceless element is of that form.</p>
+<p><strong>Corollary (the discriminant).</strong> For any $A$,</p>
+<p>$$
+A_{0}^{2}=\tfrac14\bigl((\operatorname{tr}A)^{2}-4\det A\bigr)I ,
+$$</p>
+<p>so the discriminant of the characteristic polynomial is $-4\det(A_{0})$.</p>
+<p><strong>Proof.</strong> By Cayley–Hamilton for $A$, $\det A=\tfrac14\bigl((\operatorname{tr}A)^{2}-\operatorname{tr}(A^{2})\bigr)$; substituting $A=\tfrac12(\operatorname{tr}A)I+A_{0}$ and using $A_{0}^{2}=-\det(A_{0})I$ gives the identity.</p>
+<p><strong>Example.</strong> For $A=\begin{pmatrix}1&2\\3&4\end{pmatrix}$ the scalar part is $\tfrac52I$ and $A_{0}=\begin{pmatrix}-\tfrac32&2\\ 3&\tfrac32\end{pmatrix}$, with $\det A_{0}=-\tfrac{33}{4}$ and $A_{0}^{2}=\tfrac{33}{4}I$. The discriminant of $\chi_A=\lambda^{2}-5\lambda-2$ is $25+8=33$, which is $-4\det A_{0}$.</p>
+<h2 id="the-rank">The Rank</h2>
+<p><strong>The rank is the dimension of the image, and at order two it takes three values.</strong> By rank–nullity,</p>
+<p>$$
+\mathrm{rank}\,A=2-\dim\ker A ,
+$$</p>
+<p>so the rank is $2$ for an invertible element, $1$ for an element whose kernel is a line, and $0$ only for $A=0$.</p>
+<p><strong>Proposition.</strong> The rank is $2$ exactly when $\det A\neq0$. The rank is $1$ exactly when $\det A=0$ and $A\neq0$.</p>
+<p><strong>Proof.</strong> The determinant is nonzero exactly when the two columns are independent, that is exactly when the image is the whole plane. If the determinant vanishes and $A\neq0$, at least one column is nonzero, so the image is the line it spans.</p>
+<p><strong>Proposition (the rank-one form).</strong> Every rank-one element is $uv^{\mathsf T}$ with $u,v\in\mathbb{C}^{2}$ nonzero, its image is the line $\mathbb{C}u$, its kernel is the line $\{v\}^{\perp}=\{x:v^{\mathsf T}x=0\}$, and its trace is $v^{\mathsf T}u$.</p>
+<p><strong>Proof.</strong> The image of $x\mapsto uv^{\mathsf T}x=u(v^{\mathsf T}x)$ is contained in $\mathbb{C}u$ and equals it because $v^{\mathsf T}x\neq0$ for some $x$; the kernel is the orthogonal complement of $v$ for the standard bilinear form, a line because $v\neq0$. The trace of $uv^{\mathsf T}$ is $\sum_{i}u_{i}v_{i}=v^{\mathsf T}u$.</p>
+<p><strong>Corollary (rank one is a square-zero condition away from the trace).</strong> A rank-one element is nilpotent exactly when $v^{\mathsf T}u=0$, that is exactly when its trace vanishes. The nilpotent rank-one elements are therefore the nonzero traceless elements of rank one, and they form the cone $\{A\neq0,\operatorname{tr}A=0,\det A=0\}$.</p>
+<h2 id="the-characteristic-polynomial">The Characteristic Polynomial</h2>
+<p><strong>Definition.</strong> The characteristic polynomial is $\chi_A(\lambda)=\lambda^{2}-(\operatorname{tr}A)\lambda+\det A$. Its <strong>discriminant</strong> is $\Delta=(\operatorname{tr}A)^{2}-4\det A$, and its roots are</p>
+<p>$$
+\lambda_{\pm}=\tfrac12\Bigl(\operatorname{tr}A\pm\sqrt{\Delta}\Bigr).
+$$</p>
+<p><strong>Proposition.</strong> The roots of $\chi_A$ are the eigenvalues of $A$, the sum of the roots is $\operatorname{tr}A$ and their product is $\det A$; the roots coincide exactly when $\Delta=0$.</p>
+<p><strong>Proof.</strong> An eigenvalue is a root of $\chi_A$ by definition of the determinant of $\lambda I-A$; the two statements about the roots are the Vieta formulas for a monic quadratic. A double root is exactly a vanishing discriminant.</p>
+<p><strong>The discriminant is a quadratic form in the entries, and it is not the determinant.</strong> For $A=\begin{pmatrix}a&b\\ c&d\end{pmatrix}$,</p>
+<p>$$
+\Delta=(a-d)^{2}+4bc ,
+$$</p>
+<p>which is indefinite over the reals and vanishes on a cone of real dimension $3$. The vanishing of $\Delta$ is the condition that the two eigenvalues merge; the vanishing of $\det A$ is the condition that one of them vanishes. The two conditions meet only at the nilpotent cone.</p>
+<p><strong>The spectrum is read from the pair $(\operatorname{tr},\det)$.</strong> The map $A\mapsto(\operatorname{tr}A,\det A)$ is polynomial, of degree one and two, and it is invariant under conjugation. It is not injective: its fibres are three-dimensional, and the fibre over a generic pair is a single conjugacy class. The classification is completed in <em>The Spectrum of a $2\times2$ Matrix</em>.</p>
+<h2 id="the-trace-and-the-determinant-as-invariants">The Trace and the Determinant as Invariants</h2>
+<p><strong>Theorem (the classification).</strong> Two elements of $M_2(\mathbb{C})$ with the same trace, the same determinant and the same discriminant are conjugate, except for the scalar multiples of the identity and the nonzero nilpotents, which are separated by the rank.</p>
+<p><strong>Proof.</strong> If $\Delta\neq0$ the two eigenvalues are distinct, both elements are diagonalisable with the same two eigenvalues, and a change of basis matches the two eigenlines. If $\Delta=0$ and the element is not scalar, the single eigenvalue is $\tfrac12\operatorname{tr}A$ and the element is $\lambda I+N$ with $N\neq0$ nilpotent; two such elements are conjugate by a change of basis sending one nonzero nilpotent to the other, since every nonzero nilpotent of order two has rank one and the same Jordan form.</p>
+<p><strong>Corollary (the two scalar invariants and the two exceptional strata).</strong> The conjugation orbits of $M_2(\mathbb{C})$ are: the single point $0$; the family $\{\lambda I\}$ of scalars, one orbit for each $\lambda$; the cone $\{N\neq0,\ N^{2}=0\}$ of nonzero nilpotents, which is one orbit; and the generic stratum $\{\Delta\neq0\}$, on which $(\operatorname{tr},\det)$ is a complete invariant.</p>
+<p><strong>The trace is additive and the determinant is multiplicative.</strong> For $A,C$ arbitrary, $\operatorname{tr}(A+C)=\operatorname{tr}A+\operatorname{tr}C$ and $\det(AC)=\det A\det C$; the determinant is not additive, and the trace is not multiplicative. The pair is the pair of elementary symmetric functions of the eigenvalues, and the identities that relate the two are <em>The Elementary Symmetric Functions: $\operatorname{tr}$ and $\det$ in Dimension Two</em>.</p>
+<h2 id="cayleyhamilton-and-the-adjugate">Cayley–Hamilton and the Adjugate</h2>
+<p><strong>Theorem.</strong> Every $A$ satisfies $A^{2}-(\operatorname{tr}A)A+(\det A)I=0$.</p>
+<p><strong>Proof.</strong> On the general array, the identity has entries $a^{2}+bc-(a+d)a+ad=0$, $ab+bd-(a+d)b=0$, $ca+dc-(a+d)c=0$ and $cb+d^{2}-(a+d)d+ad=0$; all four vanish identically.</p>
+<p><strong>Corollary (the adjugate).</strong> The adjugate of $A$ is $\operatorname{adj}A=(\operatorname{tr}A)I-A$, and $A\operatorname{adj}A=(\det A)I$. For $\det A\neq0$,</p>
+<p>$$
+A^{-1}=\frac{1}{\det A}\bigl((\operatorname{tr}A)I-A\bigr).
+$$</p>
+<p><strong>Proof.</strong> The Cayley–Hamilton identity rearranges to $A\bigl((\operatorname{tr}A)I-A\bigr)=(\det A)I$; the adjugate is characterised by $A\operatorname{adj}A=(\det A)I$, and it is unique when $\det A\neq0$.</p>
+<p><strong>The adjugate at rank one.</strong> If $\mathrm{rank}\,A=1$ then $\det A=0$, so $\operatorname{adj}A=(\operatorname{tr}A)I-A$, of rank at most one, and $A\operatorname{adj}A=0$; the adjugate spans the same line as $A$ exactly when $\operatorname{tr}A\neq0$. At rank zero the adjugate vanishes.</p>
+<h2 id="the-real-element-and-the-biquaternion-coordinates">The Real Element and the Biquaternion Coordinates</h2>
+<p><strong>A real element is an element fixed by the entrywise conjugation, and a biquaternion is four complex coordinates.</strong> The matrix $A$ is real exactly when $b,c$ are real together with $a,d$; in the Pauli model of <em>$M_2(\mathbb{C})$ Pauli Representation</em> the same element is</p>
+<p>$$
+A=Q_tI-i(Q_x\sigma_1+Q_y\sigma_2+Q_z\sigma_3),
+$$</p>
+<p>with $Q_t=\tfrac12\operatorname{tr}A$ and the three other coordinates read off the traceless part.</p>
+<p><strong>Proposition.</strong> In these coordinates $\det A=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$ and the traceless part satisfies $A_{0}^{2}=-(Q_x^{2}+Q_y^{2}+Q_z^{2})I$.</p>
+<p><strong>Proof.</strong> The determinant is the algebraic norm $N$ of the biquaternion, and the traceless part is $-i(Q_x\sigma_1+Q_y\sigma_2+Q_z\sigma_3)$, whose square is $-(Q_x^{2}+Q_y^{2}+Q_z^{2})I$ because the three Pauli matrices anticommute and each squares to $I$.</p>
+<p><strong>Corollary.</strong> The element is singular exactly when $Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}=0$, which over the complex coordinates is a cone and over the real coordinates is the single point $Q=0$.</p>
+<h2 id="summary">Summary</h2>
+<p>An element of $M_2(\mathbb{C})$ has four complex coordinates and eight real ones, and reads as a map, as a bilinear form and as a biquaternion. It splits uniquely as $\tfrac12(\operatorname{tr}A)I+A_{0}$ with $A_{0}$ traceless, and at order two the traceless part obeys the single relation $A_{0}^{2}=-\det(A_{0})I$, so that $A_{0}^{2}=\tfrac14\Delta I$ with $\Delta=(\operatorname{tr}A)^{2}-4\det A$ the discriminant. The rank takes the values $0,1,2$, the rank-one elements are $uv^{\mathsf T}$ with trace $v^{\mathsf T}u$, and the nilpotent ones among them are exactly those of trace zero.</p>
+<p>The characteristic polynomial is $\lambda^{2}-(\operatorname{tr}A)\lambda+\det A$ with roots $\tfrac12(\operatorname{tr}\pm\sqrt{\Delta})$. Cayley–Hamilton gives $A^{2}-(\operatorname{tr}A)A+(\det A)I=0$ and the adjugate $\operatorname{adj}A=(\operatorname{tr}A)I-A$. The pair $(\operatorname{tr},\det)$ classifies the conjugacy classes on the generic stratum; the scalars and the nonzero nilpotents are the two exceptional families.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$a,b,c,d$</td>
+<td>the four complex coordinates of $A$</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}A=a+d$</td>
+<td>the trace</td>
+</tr>
+<tr>
+<td>$\det A=ad-bc$</td>
+<td>the determinant</td>
+</tr>
+<tr>
+<td>$\chi_A$</td>
+<td>the characteristic polynomial</td>
+</tr>
+<tr>
+<td>$\Delta$</td>
+<td>the discriminant $(\operatorname{tr}A)^{2}-4\det A$</td>
+</tr>
+<tr>
+<td>$\lambda_{\pm}$</td>
+<td>the two roots of $\chi_A$</td>
+</tr>
+<tr>
+<td>$A_{0}$</td>
+<td>the traceless part $A-\tfrac12(\operatorname{tr}A)I$</td>
+</tr>
+<tr>
+<td>$\mathrm{rank}\,A$</td>
+<td>the dimension of the image, $2-\dim\ker A$</td>
+</tr>
+<tr>
+<td>$\operatorname{adj}A$</td>
+<td>the adjugate, equal to $(\operatorname{tr}A)I-A$</td>
+</tr>
+<tr>
+<td>$Q_t,Q_x,Q_y,Q_z$</td>
+<td>the biquaternion coordinates, $Q_t=\tfrac12\operatorname{tr}A$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge University Press, 2013), for the characteristic polynomial, the adjugate and the rank at order two.</li>
+<li>F. R. Gantmacher, <em>The Theory of Matrices</em> (Chelsea, 1959), for the Jordan form and the classification of conjugacy classes.</li>
+<li><a href="the-matrix-algebra-m2c.html">The Matrix Algebra $M_2(\mathbb{C})$</a>, for the product, the trace and the determinant of the algebra.</li>
+<li><a href="the-two-base-fields-m2r-inside-m2c.html">The Two Base Fields: $M_2(\mathbb{R})$ inside $M_2(\mathbb{C})$</a>, for the real elements and the reality of the spectrum.</li>
+<li><a href="m2c-pauli-representation.html">$M_2(\mathbb{C})$ Pauli Representation</a>, for the biquaternion coordinates of an element.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

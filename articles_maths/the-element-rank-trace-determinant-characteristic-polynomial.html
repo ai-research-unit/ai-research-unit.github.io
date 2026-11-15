@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Element: Rank, Trace, Determinant, Characteristic Polynomial — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-element-rank-trace-determinant-characteristic-polynomial"><strong>The Element: Rank, Trace, Determinant, Characteristic Polynomial</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>Four invariants measure an element of $M_n(\mathbb{C})$, and they are ordered by how much of it they remember: the rank remembers the image, the trace and the determinant remember two symmetric functions of the spectrum, and the characteristic polynomial remembers all the symmetric functions but not the element.</strong></p>
+<p>The article defines the four invariants, proves their elementary properties, and states exactly what each one loses. The rank is computed from the minors and from the kernel, the trace is characterised as the only invariant linear functional, the determinant is characterised as the multiplicative polynomial of degree $n$, and the characteristic polynomial collects the coefficients. The article ends with the failure: two matrices with the same characteristic polynomial and different ranks. It assumes <em>The Matrix Algebra $M_n(\mathbb{C})$</em> for the algebra and <em>The Two Base Fields: $M_n(\mathbb{R})$ inside $M_n(\mathbb{C})$</em> for the behaviour of the invariants under conjugation. It defers the classification of the elements to <em>The Minimal Polynomial and the Jordan Form</em> and the finer symmetric functions to <em>The Elementary Symmetric Functions and $\det(\mathrm{I}+tA)$</em>.</p>
+<h2 id="the-rank">The Rank</h2>
+<p><strong>The rank is the dimension of the image, and it is also the dimension of the image of the transpose.</strong> For $A\in M_n(\mathbb{C})$,</p>
+<p>$$
+\operatorname{rank}A=\dim\operatorname{im}A=n-\dim\ker A=\dim\operatorname{im}A^{\mathsf T}.
+$$</p>
+<p>The last equality is the statement that the row rank equals the column rank: the row space of $A$ is the column space of $A^{\mathsf T}$, and both have dimension equal to the size of the largest nonvanishing minor. The rank is an integer between $0$ and $n$, it is invariant under conjugation by a unit, and $\operatorname{rank}A=n$ is exactly invertibility.</p>
+<p><strong>The rank is the number of nonzero singular values.</strong> For every $A$ there are unitaries $U,V$ with $A=U\Sigma V^{*}$ and $\Sigma$ diagonal with entries $\sigma_1\ge\cdots\ge\sigma_n\ge0$. Then $\operatorname{rank}A$ is the number of nonzero $\sigma_k$, and</p>
+<p>$$
+\operatorname{tr}(A^{*}A)=\sum_{k}\sigma_k^{2}.
+$$</p>
+<p>This is the reading of the rank through the positive definite trace form of <em>The Matrix Algebra $M_n(\mathbb{C})$</em>, and it is the reason the rank of $A$ equals the rank of $A^{*}A$ and of $AA^{*}$.</p>
+<p><strong>The rank is subadditive and multiplicative in the weak sense.</strong> For all $A,B$,</p>
+<p>$$
+\operatorname{rank}(A+B)\le\operatorname{rank}A+\operatorname{rank}B,\qquad
+\operatorname{rank}(AB)\le\min(\operatorname{rank}A,\operatorname{rank}B),\qquad
+\operatorname{rank}(AB)\ge\operatorname{rank}A+\operatorname{rank}B-n .
+$$</p>
+<p>The middle inequality is the inclusion $\operatorname{im}AB\subseteq\operatorname{im}A$ together with $\ker AB\supseteq\ker B$. The last is Sylvester's inequality, and it is sharp: the deficiency of $AB$ is at most the sum of the deficiencies of the factors.</p>
+<p><strong>The strata by rank are the orbits of the group on the singular set.</strong> Let $\Sigma_r=\{A:\operatorname{rank}A=r\}$. Then $\Sigma_r$ is a single orbit under $A\mapsto UAV$ with $U,V$ invertible, and its complex dimension is</p>
+<p>$$
+\dim_{\mathbb{C}}\Sigma_r=r(2n-r),\qquad r=0,\dots,n .
+$$</p>
+<p>At $n=3$ the values are $0,5,8$ for $r=0,1,2$, and at $n=4$ they are $0,7,12,15$. The formula is the count of an $r$-dimensional subspace of the domain and an $r$-dimensional subspace of the codomain together with an invertible map between them: $r(n-r)+r(n-r)+r^{2}=r(2n-r)$.</p>
+<h2 id="the-trace">The Trace</h2>
+<p><strong>The trace is linear, vanishes on commutators, and is the only such functional up to scale.</strong> Linearity is clear, and</p>
+<p>$$
+\operatorname{tr}(AB)=\sum_{i,j}A_{ij}B_{ji}=\operatorname{tr}(BA)
+$$</p>
+<p>is the cyclic rule. Conversely, let $f$ be a linear functional with $f(AB)=f(BA)$ for all $A,B$. Taking $A=E_{ij}$ and $B=E_{ji}$ for $i\ne j$ gives $f(E_{ii})=f(E_{jj})$, and taking $A=E_{ij}$, $B=E_{kl}$ with $j\ne k$ gives $f(E_{il})=0$ for $i\ne l$. So</p>
+<p>$$
+f(A)=f(I)\cdot\frac{\operatorname{tr}A}{n},
+$$</p>
+<p>and the space of invariant linear functionals is one-dimensional. A direct count at $n=3$ confirms it: the annihilator of the commutator span has dimension $1$ inside the $9$ dimensions of $M_3(\mathbb{C})$.</p>
+<p><strong>The trace is the sum of the eigenvalues, counted with multiplicity.</strong> In a triangular basis every matrix is upper triangular, and the diagonal carries the eigenvalues. So</p>
+<p>$$
+\operatorname{tr}A=\sum_{k=1}^{n}\lambda_k,\qquad \operatorname{tr}(A^{m})=\sum_{k=1}^{n}\lambda_k^{m},
+$$</p>
+<p>the second identity following from the first applied to $A^{m}$. The trace is therefore the first symmetric function of the spectrum, and it is blind to everything else.</p>
+<p><strong>The trace of a commutator is zero, and the converse fails.</strong> Every commutator $[A,B]=AB-BA$ has trace zero, and the traceless matrices are exactly $\mathfrak{sl}_n$, of complex dimension $n^{2}-1$. Over $\mathbb{C}$ the trace is the only obstruction: for $n\ge2$ every traceless matrix is a commutator $[A,B]$.</p>
+<h2 id="the-determinant">The Determinant</h2>
+<p><strong>The determinant is the multiplicative polynomial of degree $n$ normalised at the identity.</strong> It is defined by</p>
+<p>$$
+\det A=\sum_{\pi\in S_n}\operatorname{sgn}(\pi)\prod_{i=1}^{n}A_{i\pi(i)},
+$$</p>
+<p>it satisfies $\det(AB)=\det A\det B$, $\det I=1$, and $\det(\lambda A)=\lambda^{n}\det A$. It vanishes exactly on the non-invertible matrices, and then the cofactor formula gives the inverse,</p>
+<p>$$
+A\cdot\operatorname{adj}A=(\det A)I .
+$$</p>
+<p><strong>The determinant is the product of the eigenvalues, and it is the last coefficient of the characteristic polynomial.</strong> With $\lambda_1,\dots,\lambda_n$ the eigenvalues counted with multiplicity,</p>
+<p>$$
+\det A=\prod_{k=1}^{n}\lambda_k,\qquad \det A=(-1)^{n}\chi_A(0).
+$$</p>
+<p>A multiplicative polynomial normalised at $I$ and homogeneous of degree $n$ equals $\det$, and every multiplicative polynomial normalised at $I$ is a power of $\det$. The uniqueness is what makes the determinant canonical rather than a choice.</p>
+<p><strong>The determinant of a sum is not the sum of the determinants, and the defect is measured by the mixed discriminant.</strong> For $n=2$,</p>
+<p>$$
+\det(A+B)=\det A+\det B+\operatorname{tr}A\operatorname{tr}B-\operatorname{tr}(AB),
+$$</p>
+<p>which shows that $\det$ is a quadratic form on $M_2(\mathbb{C})$ but not an additive function. The general expansion, with $\binom{n}{k}^{2}$ terms, is the subject of <em>The Elementary Symmetric Functions and $\det(\mathrm{I}+tA)$</em>.</p>
+<h2 id="the-characteristic-polynomial">The Characteristic Polynomial</h2>
+<p><strong>The characteristic polynomial is monic of degree $n$, and its coefficients are the elementary symmetric functions of the spectrum.</strong> Define</p>
+<p>$$
+\chi_A(t)=\det(tI-A)=t^{n}-e_1t^{n-1}+e_2t^{n-2}-\cdots+(-1)^{n}e_n,
+$$</p>
+<p>with $e_1=\operatorname{tr}A$, $e_n=\det A$, and $e_k$ the sum of the principal $k\times k$ minors. The $e_k$ are the elementary symmetric functions of $\lambda_1,\dots,\lambda_n$, and the identity is a polynomial identity in the entries.</p>
+<p><strong>Cayley and Hamilton: the polynomial annihilates the matrix.</strong> For every $A$,</p>
+<p>$$
+\chi_A(A)=0 .
+$$</p>
+<p><em>Proof.</em> Over a dense open set $A$ is diagonalisable, and the statement is then the eigenvalue equation applied in an eigenbasis: $\prod_k(A-\lambda_k I)=0$ because the factors commute and each kills one eigendirection. Both sides of $\chi_A(A)=0$ are polynomial in the entries, and a polynomial that vanishes on a dense open set vanishes everywhere.</p>
+<p><strong>The characteristic polynomial is conjugacy invariant and its degree is the size of the matrix.</strong> For $S$ invertible, $\chi_{SAS^{-1}}=\chi_A$, since $\det(tI-SAS^{-1})=\det(S(tI-A)S^{-1})$. So $\chi$ is a function of the conjugacy class. It is a complete invariant at $n=2$ and at no larger $n$: the two nilpotents of §<em>What the Four Do Not Determine</em> share it and are not conjugate. The classification is in <em>The Minimal Polynomial and the Jordan Form</em>.</p>
+<h2 id="what-the-four-do-not-determine">What the Four Do Not Determine</h2>
+<p><strong>The characteristic polynomial does not determine the rank.</strong> The two nilpotents</p>
+<p>$$
+N_1=\begin{pmatrix}0&1&0\\0&0&1\\0&0&0\end{pmatrix},\qquad N_2=\begin{pmatrix}0&1&0\\0&0&0\\0&0&0\end{pmatrix}
+$$</p>
+<p>both have $\chi(t)=t^{3}$, and $\operatorname{rank}N_1=2$ against $\operatorname{rank}N_2=1$. The two are not conjugate, since the rank is a conjugacy invariant. So the four invariants together do not determine the element, and two matrices with equal trace, equal determinant and equal characteristic polynomial may still be far apart.</p>
+<p><strong>The pair $(\operatorname{tr},\det)$ determines the characteristic polynomial only up to $n=2$.</strong> For $n=2$ the polynomial is $t^{2}-(\operatorname{tr}A)t+\det A$, so the two numbers are the whole of it. For $n\ge3$ the intermediate coefficients $e_2,\dots,e_{n-1}$ are independent data, and $(\operatorname{tr},\det)$ loses them.</p>
+<p><strong>The rank and the characteristic polynomial together do not determine the class either.</strong> A matrix and its transpose have the same rank, the same trace, the same determinant and the same characteristic polynomial, and they are not always conjugate: a Jordan block of size $n\ge3$ is not conjugate to its transpose. What the invariants do give is a stratification, and the classification inside a stratum is the Jordan form.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Invariant</th>
+<th>What it remembers</th>
+<th>What it loses</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{rank}$</td>
+<td>the dimension of the image</td>
+<td>everything about the eigenvalues</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}$</td>
+<td>the sum of the eigenvalues</td>
+<td>the individual eigenvalues</td>
+</tr>
+<tr>
+<td>$\det$</td>
+<td>the product of the eigenvalues</td>
+<td>the individual eigenvalues, and invertibility is the only dichotomy it sees</td>
+</tr>
+<tr>
+<td>$\chi_A$</td>
+<td>all the symmetric functions</td>
+<td>the Jordan type inside a fixed spectrum</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-case-math123">The Case $n=2$</h2>
+<p><strong>At $n=2$ the invariants collapse to two numbers and one identity.</strong> For $A\in M_2(\mathbb{C})$,</p>
+<p>$$
+\chi_A(t)=t^{2}-(\operatorname{tr}A)t+\det A,\qquad A^{2}-(\operatorname{tr}A)A+(\det A)I=0 ,
+$$</p>
+<p>so the algebra generated by $A$ has dimension at most two unless $A$ is scalar. This is the identity used in the biquaternion articles: a biquaternion $q$ satisfies its own quadratic, and the two coefficients are the trace and the determinant of the matrix representing it.</p>
+<p><strong>The rank at $n=2$ has three values and the middle one is split by the trace.</strong> The rank is $0$ for $A=0$, it is $2$ exactly when $\det A\ne0$, and it is $1$ when $\det A=0$ and $A\ne0$. A rank-one matrix satisfies $A^{2}=(\operatorname{tr}A)A$, so it is a nonzero scalar multiple of an idempotent exactly when $\operatorname{tr}A\ne0$; when $\operatorname{tr}A=0$ it is nilpotent of index two. The two cases are the two kinds of Peirce line of <em>The Peirce Decomposition in $n$ Dimensions</em> at $n=2$.</p>
+<h2 id="summary">Summary</h2>
+<p>The four invariants of $A\in M_n(\mathbb{C})$ are the rank, the trace, the determinant and the characteristic polynomial. The rank is the dimension of the image, equal to the number of nonzero singular values, subadditive, and the strata $\Sigma_r$ have complex dimension $r(2n-r)$. The trace is the only invariant linear functional up to scale, and it is the sum of the eigenvalues. The determinant is the multiplicative polynomial of degree $n$, equal to the product of the eigenvalues and to $(-1)^{n}\chi_A(0)$. The characteristic polynomial is monic of degree $n$ with the elementary symmetric functions as coefficients, and Cayley–Hamilton says $\chi_A(A)=0$. The four do not determine the element: two nilpotents can share $\chi(t)=t^{3}$ and differ in rank, and the pair $(\operatorname{tr},\det)$ determines $\chi$ only for $n=2$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{rank}A$</td>
+<td>the dimension of $\operatorname{im}A$, an integer in $[0,n]$</td>
+</tr>
+<tr>
+<td>$\Sigma_r$</td>
+<td>the set of matrices of rank $r$, of complex dimension $r(2n-r)$</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}A$</td>
+<td>the sum of the diagonal entries, and the sum of the eigenvalues</td>
+</tr>
+<tr>
+<td>$\det A$</td>
+<td>the product of the eigenvalues, the multiplicative polynomial of degree $n$</td>
+</tr>
+<tr>
+<td>$\operatorname{adj}A$</td>
+<td>the adjugate, with $A\operatorname{adj}A=(\det A)I$</td>
+</tr>
+<tr>
+<td>$\chi_A(t)=\det(tI-A)$</td>
+<td>the characteristic polynomial</td>
+</tr>
+<tr>
+<td>$e_k$</td>
+<td>the $k$-th elementary symmetric function, the sum of the principal $k\times k$ minors</td>
+</tr>
+<tr>
+<td>$[A,B]=AB-BA$</td>
+<td>the commutator, of trace zero</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for the rank, its inequalities, the determinant and the characteristic polynomial.</li>
+<li>Peter Lancaster and Miron Tismenetsky, <em>The Theory of Matrices</em> (Academic Press, 1985), for the uniqueness of the trace functional and the cofactor formula.</li>
+<li>Sheldon Axler, <em>Linear Algebra Done Right</em> (Springer, 2015), for the determinant as the unique alternating multilinear form.</li>
+<li><a href="the-matrix-algebra-mnc.html">The Matrix Algebra $M_n(\mathbb{C})$</a>, for the trace, the determinant and the singular set.</li>
+<li><a href="the-two-base-fields-mnr-inside-mnc.html">The Two Base Fields: $M_n(\mathbb{R})$ inside $M_n(\mathbb{C})$</a>, for the reality of the invariants and the conjugation-stable spectrum.</li>
+<li><a href="the-peirce-decomposition-in-n-dimensions.html">The Peirce Decomposition in $n$ Dimensions</a>, for the two kinds of line at $n=2$.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spinors as Peirce Coordinates over the Reals — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="spinors-as-peirce-coordinates-over-the-reals"><strong>Spinors as Peirce Coordinates over the Reals</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The off-diagonal Peirce coordinates of a real matrix are maps between the lines of a frame, and at $n=2$ those coordinates are a pair of real numbers that the transpose exchanges the way a spinor is exchanged with its conjugate.</strong></p>
+<p>The article defines the Peirce coordinates of an element, reads the off-diagonal part as a family of real maps, treats the case $n=2$ in full, shows that the transpose exchanges the two chiralities and that the trace form pairs them, counts the dimensions at $n=2,3,4$, compares the real case with the complex one, and identifies the pure spinors with the rank-one matrices. It assumes <em>The Peirce Basis and the Corners over $\mathbb{R}$</em> for the frame and its corners, and it defers the symmetric reading of the coordinates to <em>The Peirce Decomposition and the Two Halves over $\mathbb{R}$</em>.</p>
+<h2 id="the-peirce-coordinates-of-an-element">The Peirce Coordinates of an Element</h2>
+<p><strong>Every real matrix is the sum of its corner components, and the components are its Peirce coordinates.</strong> For a frame $P_{1},\dots,P_{n}$ with subspaces $V_{k}=\operatorname{im}P_{k}$ of ranks $r_{k}$,</p>
+<p>$$
+X=\sum_{k,l=1}^{n}X_{kl},\qquad X_{kl}=P_{k}XP_{l}\in A_{kl}=\operatorname{Hom}(V_{l},V_{k}).
+$$</p>
+<p>The coordinates are unique, because the corners are independent. The sum of the diagonal coordinates $X_{kk}$ is the part of $X$ that preserves each $V_{k}$, and the sum of the off-diagonal ones is the part that moves between them.</p>
+<p><strong>The diagonal coordinates are square matrices and the off-diagonal ones are rectangular.</strong> In a basis adapted to the frame, $X_{kk}$ is an $r_{k}\times r_{k}$ array and $X_{kl}$ is an $r_{k}\times r_{l}$ array. The off-diagonal coordinates are the maps $V_{l}\to V_{k}$, and that is what a spinor coordinate is here: a map between two lines of the frame, not a column of an ambient array.</p>
+<p><strong>The coordinates multiply by the corner rule.</strong></p>
+<p>$$
+(XY)_{kl}=\sum_{m=1}^{n}X_{km}Y_{ml},
+$$</p>
+<p>so the algebra reads as an $n\times n$ array of blocks with the matrix product, as in <em>The Peirce Basis in $n$ Dimensions</em> for the complex case.</p>
+<h2 id="the-off-diagonal-coordinates-as-maps">The Off-Diagonal Coordinates as Maps</h2>
+<p><strong>The off-diagonal part of an element is a collection of real maps, one for each ordered pair of distinct lines.</strong></p>
+<p>$$
+X_{\text{off}}=\sum_{k\ne l}X_{kl},\qquad X_{kl}:V_{l}\longrightarrow V_{k}.
+$$</p>
+<p>For a complete frame each $V_{k}$ is a line, each $X_{kl}$ is a scalar multiple of a chosen unit, and the off-diagonal part is an $n\times n$ array with zero diagonal. That array is the spinor data of the element.</p>
+<p><strong>The diagonal part is not spinor data.</strong> It carries the endomorphisms of the lines, of dimension $\sum_{k}r_{k}^{2}$, and the spinorial content of the frame is the off-diagonal part, of real dimension</p>
+<p>$$
+\sum_{k\ne l}r_{k}r_{l}=n^{2}-\sum_{k}r_{k}^{2}.
+$$</p>
+<p>At a complete frame this is $n^{2}-n=n(n-1)$: two real dimensions for each unordered pair of lines.</p>
+<p><strong>The diagonal corners form a subalgebra and the off-diagonal ones a bimodule over it.</strong> A spinor is an element of that bimodule, and the frame is what makes the bimodule visible.</p>
+<h2 id="the-case-math27">The Case $n=2$</h2>
+<p><strong>At $n=2$ the off-diagonal corner is one-dimensional and the off-diagonal part is a pair of real numbers.</strong></p>
+<p>$$
+E=\begin{pmatrix}1&0\\0&0\end{pmatrix},\qquad
+X=aE_{12}+bE_{21}=\begin{pmatrix}0&a\\ b&0\end{pmatrix},\qquad (a,b)\in\mathbb{R}^{2}.
+$$</p>
+<p>The pair $(a,b)$ is the <strong>spinor</strong> of $X$ in the frame: one real number for the map $V_{2}\to V_{1}$ and one for the map $V_{1}\to V_{2}$.</p>
+<p><strong>The spinor determines the element and the element determines the spinor.</strong> The diagonal part of $X$ is separate data, so the off-diagonal corner $A_{12}\oplus A_{21}$ is isomorphic to $\mathbb{R}^{2}$ as a real vector space, and the two numbers $a$ and $b$ are its coordinates.</p>
+<p><strong>The square of the element is the product of the two components.</strong></p>
+<p>$$
+X^{2}=ab\,\mathrm{I},
+$$</p>
+<p>so the element is nilpotent exactly when $ab=0$, that is, when one of the two spinor components vanishes. For $a,b$ both nonzero the element has eigenvalues $\pm\sqrt{ab}$, which are real exactly when $ab>0$ and a conjugate pair when $ab<0$. The sign of the product is a real invariant of the spinor.</p>
+<p><strong>The transpose swaps the two components.</strong></p>
+<p>$$
+X^{\mathsf T}=bE_{12}+aE_{21},
+$$</p>
+<p>so the transpose acts on the spinor by $(a,b)\mapsto(b,a)$. The symmetric elements are those with $a=b$ and the antisymmetric ones are those with $a=-b$; the symmetric part of $X$ is $\tfrac12(a+b)(E_{12}+E_{21})$ and the antisymmetric part is $\tfrac12(a-b)(E_{12}-E_{21})$. The two halves of the spinor space are the diagonal and the antidiagonal of the pair.</p>
+<p><strong>The pairing between the two chiralities is the trace form.</strong> With $X=aE_{12}+bE_{21}$ and $Y=a'E_{12}+b'E_{21}$,</p>
+<p>$$
+\langle X,Y\rangle=\operatorname{tr}(XY)=ab'+ba',
+$$</p>
+<p>because $\operatorname{tr}(E_{12}E_{21})=1$ and $\operatorname{tr}(E_{12}E_{12})=\operatorname{tr}(E_{21}E_{21})=0$. The form is symmetric, nondegenerate, and its matrix in the basis $E_{12},E_{21}$ is $\begin{pmatrix}0&1\\ 1&0\end{pmatrix}$, of signature $(1,1)$. It is the perfect pairing between the two one-dimensional spaces $A_{12}$ and $A_{21}$.</p>
+<p><strong>The pairing is invariant and indefinite.</strong> The space $A_{12}\oplus A_{21}$ has the invariant form $\operatorname{tr}(XY)$, of signature $(1,1)$, and the positive definite form $\operatorname{tr}(X^{\mathsf T}Y)$ is not invariant. So a real spinor pair comes with a symmetric indefinite pairing.</p>
+<h2 id="the-two-chiralities">The Two Chiralities</h2>
+<p><strong>The two off-diagonal corners are the two chiralities of the frame.</strong> Write</p>
+<p>$$
+S^{+}=\bigoplus_{k<l}A_{kl},\qquad S^{-}=\bigoplus_{k<l}A_{lk}.
+$$</p>
+<p>An element of $S^{+}$ raises the index, an element of $S^{-}$ lowers it, and the off-diagonal part of every element splits as $X_{\text{off}}=X^{+}+X^{-}$ with $X^{+}\in S^{+}$ and $X^{-}\in S^{-}$.</p>
+<p><strong>The transpose exchanges the two chiralities.</strong> For a symmetric frame, $A_{kl}^{\mathsf T}=A_{lk}$, so</p>
+<p>$$
+(S^{+})^{\mathsf T}=S^{-},\qquad (S^{-})^{\mathsf T}=S^{+}.
+$$</p>
+<p>The transpose is $\mathbb{R}$-linear, so the exchange is an isomorphism of real vector spaces. The fixed points of the exchange are the symmetric off-diagonal elements and the anti-fixed points are the antisymmetric ones.</p>
+<p><strong>The trace form pairs $S^{+}$ with $S^{-}$ and vanishes on each chirality separately.</strong> For $X\in A_{kl}$ and $Y\in A_{pq}$ with $k\ne l$ and $p\ne q$, the trace $\operatorname{tr}(XY)$ is nonzero only when $l=p$ and $q=k$, that is, only when $Y$ lies in the corner $A_{lk}$ opposite to $X$. Hence</p>
+<p>$$
+\langle S^{+},S^{+}\rangle=0,\qquad \langle S^{-},S^{-}\rangle=0,\qquad \langle S^{+},S^{-}\rangle\ \text{nondegenerate}.
+$$</p>
+<p>This is the real form of the statement that the two spinor spaces are dual to each other.</p>
+<p><strong>There is one real spinor space, not two.</strong> The two chiralities are subspaces of the one real algebra $M_{n}(\mathbb{R})$, and the transpose moves one to the other. Nothing is added by naming them separately: a real spinor is an element of the off-diagonal part, and its two chiral components are read off from the corners.</p>
+<h2 id="the-dimension-counts">The Dimension Counts</h2>
+<p><strong>The off-diagonal part has dimension $n(n-1)$ at a complete frame.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$n$</th>
+<th>$S^{+}$</th>
+<th>$S^{-}$</th>
+<th>off-diagonal total</th>
+<th>$\dim M_{n}(\mathbb{R})$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$2$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$2$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$3$</td>
+<td>$3$</td>
+<td>$6$</td>
+<td>$9$</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$6$</td>
+<td>$6$</td>
+<td>$12$</td>
+<td>$16$</td>
+</tr>
+</tbody>
+</table></div>
+<p>At $n=2$ each chirality is a line, at $n=3$ each is a plane, and at $n=4$ each has six dimensions. The two chiralities always have equal dimension, $\tfrac12 n(n-1)$, and the two together with the $n$ diagonal coordinates rebuild the algebra:</p>
+<p>$$
+n+\frac{n(n-1)}{2}+\frac{n(n-1)}{2}=n^{2}.
+$$</p>
+<p><strong>At a coarse frame the counts change with the ranks.</strong> The chirality $S^{+}$ has dimension $\sum_{k<l}r_{k}r_{l}$ and $S^{-}$ the same, while the diagonal part has dimension $\sum_{k}r_{k}^{2}$. For the rank vector $(2,1,1)$ at $n=4$ the three numbers are $5$, $5$ and $6$, which add to $16$.</p>
+<p><strong>Each entry is the dimension of a real space.</strong> Over $\mathbb{C}$ the corner $A_{kl}$ has complex dimension $r_{k}r_{l}$, the same number, so the passage to $\mathbb{C}$ doubles the real dimension of every corner and leaves the table unchanged.</p>
+<h2 id="the-complex-case">The Complex Case</h2>
+<p><strong>Over $\mathbb{C}$ the two chiralities are exchanged by the conjugate transpose.</strong> For a Hermitian frame, with $P_{k}^{*}=P_{k}$, the conjugate transpose sends $A_{kl}$ to $A_{lk}$, and it is conjugate linear. The two spinor spaces are then complex conjugate spaces, and the pairing between them is Hermitian, not symmetric.</p>
+<p><strong>Over $\mathbb{R}$ the exchanging map is linear and the pairing is symmetric.</strong> The transpose sends $A_{kl}$ to $A_{lk}$ and satisfies $\operatorname{tr}(XY)=\operatorname{tr}(YX)$ with no conjugation. The bilinear form on $A_{12}\oplus A_{21}$ at $n=2$ is $\operatorname{tr}(XY)=ab'+ba'$, with signature $(1,1)$, and its matrix is symmetric with integer entries.</p>
+<p><strong>The difference is the difference between a real and a Hermitian form.</strong> A Hermitian form is conjugate linear in one argument and positive definite for the standard frame; the real form $\operatorname{tr}(XY)$ is bilinear and indefinite. So the real spinor of this article is a pair of real components with an indefinite pairing, and the complex spinor of <em>Spinors as Peirce Coordinates in $n$ Dimensions</em> is a pair of conjugate components with a Hermitian pairing.</p>
+<h2 id="the-pure-spinors-are-the-rank-one-elements">The Pure Spinors Are the Rank-One Elements</h2>
+<p><strong>A rank-one matrix has a spinor whose two chiral components factor through one vector on each side.</strong> Let $X=uv^{\mathsf T}$ with $u,v\in\mathbb{R}^{n}$ nonzero. Then</p>
+<p>$$
+X_{kl}=P_{k}uv^{\mathsf T}P_{l}=(P_{k}u)(P_{l}^{\mathsf T}v)^{\mathsf T},
+$$</p>
+<p>so each corner component of $X$ is the rank-one map $(P_{l}^{\mathsf T}v)\mapsto P_{k}u$ followed by a scalar, and the whole off-diagonal part is determined by the two vectors $P_{k}u$ and $P_{l}^{\mathsf T}v$ together with the frame.</p>
+<p><strong>Conversely, a spinor whose components factor through one vector on each side is rank one.</strong> If $X^{+}$ is built from a single vector $u$ and $X^{-}$ from a single vector $v$ in the sense of the display, then $X=uv^{\mathsf T}$ has rank one. So the <strong>pure spinors</strong> are the rank-one matrices, read in the frame.</p>
+<p><strong>The rank of a random rank-one matrix is one.</strong> Ten random real $3\times 3$ matrices of the form $uv^{\mathsf T}$, with $u$ and $v$ with independent Gaussian entries, all have rank exactly $1$, as computed with numpy. A rank-one matrix is nilpotent exactly when $v^{\mathsf T}u=0$, which is the spinor condition at $n=2$ written in general.</p>
+<p><strong>At $n=2$ the pure spinors are the pairs with exactly one nonzero component.</strong> With $X=aE_{12}+bE_{21}$ the rank is $2$ when $ab\ne0$ and $1$ when $ab=0$; the trace is zero in both cases. So the pure spinors of the frame are the two coordinate axes of $\mathbb{R}^{2}$, and the general spinor is a sum of two pure ones. This is the real form of the statement that a spinor is a sum of decomposable pieces.</p>
+<h2 id="summary">Summary</h2>
+<p>For a real frame with subspaces $V_{k}$ of ranks $r_{k}$, every matrix splits into Peirce coordinates $X=\sum_{k,l}X_{kl}$ with $X_{kl}:V_{l}\to V_{k}$ of dimension $r_{k}r_{l}$. The off-diagonal coordinates are the spinor data: at a complete frame they form two blocks of dimension $n(n-1)/2$ each, one raising the index and one lowering it, and at $n=2$ they are a single pair $(a,b)\in\mathbb{R}^{2}$ with $X=aE_{12}+bE_{21}$ and $X^{2}=ab\,\mathrm{I}$. The transpose exchanges the two blocks, so the symmetric and antisymmetric parts of the pair are its diagonal and antidiagonal; the trace form pairs the blocks perfectly, with $\operatorname{tr}(E_{12}E_{21})=1$ and matrix $\begin{pmatrix}0&1\\ 1&0\end{pmatrix}$ of signature $(1,1)$ on the pair at $n=2$. The off-diagonal dimension is $2$ at $n=2$, $6$ at $n=3$ and $12$ at $n=4$, and the diagonal part of dimension $n$ completes the algebra. Over $\mathbb{C}$ with a Hermitian frame the two blocks are exchanged by a conjugate-linear map, while over $\mathbb{R}$ they are exchanged by the linear transpose and paired by a symmetric indefinite form. The pure spinors are the rank-one matrices, and a random rank-one real matrix has rank one.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$P_{k}$, $V_{k}=\operatorname{im}P_{k}$</td>
+<td>The frame and the line of its $k$-th idempotent</td>
+</tr>
+<tr>
+<td>$r_{k}=\operatorname{rk}P_{k}$</td>
+<td>The rank, with $\sum_{k}r_{k}=n$</td>
+</tr>
+<tr>
+<td>$X_{kl}=P_{k}XP_{l}$</td>
+<td>The Peirce coordinate in the corner $A_{kl}$</td>
+</tr>
+<tr>
+<td>$S^{+}=\bigoplus_{k<l}A_{kl}$</td>
+<td>The raising chirality</td>
+</tr>
+<tr>
+<td>$S^{-}=\bigoplus_{k<l}A_{lk}$</td>
+<td>The lowering chirality</td>
+</tr>
+<tr>
+<td>$(a,b)$</td>
+<td>The spinor of $aE_{12}+bE_{21}$ at $n=2$</td>
+</tr>
+<tr>
+<td>$\langle X,Y\rangle=\operatorname{tr}(XY)$</td>
+<td>The pairing between the chiralities</td>
+</tr>
+<tr>
+<td>$uv^{\mathsf T}$</td>
+<td>A pure spinor, a rank-one matrix</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for Peirce coordinates and the corner decomposition of an algebra as an array of maps.</li>
+<li>Elie Cartan, <em>The Theory of Spinors</em> (Hermann, 1966), for the classical construction of spinors as coordinates relative to a maximal isotropic family.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for rank-one matrices, the trace form and its signature.</li>
+<li><a href="the-peirce-basis-and-the-corners-over-r.html">The Peirce Basis and the Corners over $\mathbb{R}$</a>, for the corners and the frame that the coordinates use.</li>
+<li><a href="spinors-as-peirce-coordinates-in-n-dimensions.html">Spinors as Peirce Coordinates in $n$ Dimensions</a>, for the complex version of the same reading.</li>
+<li><a href="the-peirce-decomposition-and-the-two-halves-over-r.html">The Peirce Decomposition and the Two Halves over $\mathbb{R}$</a>, for the transpose, the two halves and the corner pair.</li>
+<li><a href="the-matrix-algebra-mnr.html">The Matrix Algebra $M_n(\mathbb{R})$</a>, for the trace form and the indefinite pairing.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

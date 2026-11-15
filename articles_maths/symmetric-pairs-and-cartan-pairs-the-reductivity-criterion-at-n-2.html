@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Symmetric Pairs and Cartan Pairs: the Reductivity Criterion at $n=2$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="symmetric-pairs-and-cartan-pairs-the-reductivity-criterion-at-math0"><strong>Symmetric Pairs and Cartan Pairs: the Reductivity Criterion at $n=2$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>A symmetric pair is an involution of a Lie algebra together with its two eigenspaces, the criterion of reductivity asks for an invariant complement, and at order two every pair of $\mathfrak{sl}_2$ passes the criterion while the nilpotent direction of the triangular algebra shows how it fails.</strong></p>
+<p>The article defines symmetric pairs and Cartan pairs, proves the structure equations $[\mathfrak{h},\mathfrak{h}]\subseteq\mathfrak{h}$, $[\mathfrak{h},\mathfrak{p}]\subseteq\mathfrak{p}$, $[\mathfrak{p},\mathfrak{p}]\subseteq\mathfrak{h}$, proves the reductivity criterion and shows that semisimple algebras satisfy it with $\mathfrak{p}=\mathfrak{h}^{\perp}$ for the Killing form. At order two it lists the two pairs of $\mathfrak{sl}_2(\mathbb{R})$ with their Killing forms, identifies the Cartan pair, and exhibits the degenerate trace form on the triangular algebra where the criterion has no input. It assumes <em>The Triangular Decomposition $h\oplus n_+\oplus n_-$ of $M_2(\mathbb{C})$</em> and <em>The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$</em>.</p>
+<p>It defers the four forms and their norms to <em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em>, where the same two halves carry the corresponding real forms.</p>
+<h2 id="symmetric-pairs">Symmetric Pairs</h2>
+<p><strong>Definition.</strong> A <strong>symmetric pair</strong> $(\mathfrak{g},\mathfrak{h},\mathfrak{p})$ is a Lie algebra $\mathfrak{g}$ with an involutive automorphism $\sigma$, a subalgebra $\mathfrak{h}=\{X:\sigma X=X\}$, and the space $\mathfrak{p}=\{X:\sigma X=-X\}$.</p>
+<p><strong>Proposition.</strong> The two eigenspaces satisfy</p>
+<p>$$
+\mathfrak{g}=\mathfrak{h}\oplus\mathfrak{p},\qquad [\mathfrak{h},\mathfrak{h}]\subseteq\mathfrak{h},\qquad [\mathfrak{h},\mathfrak{p}]\subseteq\mathfrak{p},\qquad [\mathfrak{p},\mathfrak{p}]\subseteq\mathfrak{h}.
+$$</p>
+<p><strong>Proof.</strong> Every $X$ is $\tfrac12(X+\sigma X)+\tfrac12(X-\sigma X)$, and the two terms lie in the two eigenspaces; the sum is direct because an element in both is zero. For the brackets, apply $\sigma$ to $[X,Y]$ and use that $\sigma$ is an automorphism: $\sigma[X,Y]=[\sigma X,\sigma Y]$, and the signs multiply.</p>
+<p><strong>Definition.</strong> A <strong>Cartan pair</strong> is a symmetric pair together with a symmetric pair $(\mathfrak{g},\mathfrak{k},\mathfrak{p})$ whose $\mathfrak{k}$ is the fixed algebra of a Cartan involution; the involution is then required to make the form $\langle X,\sigma Y\rangle$ positive definite.</p>
+<p><strong>The two notions differ.</strong> Every Cartan pair is a symmetric pair, and a symmetric pair is Cartan exactly when the fixed algebra is the compact one.</p>
+<h2 id="the-reduction-to-two-pieces">The Reduction to Two Pieces</h2>
+<p><strong>Proposition.</strong> The pair is determined by $\mathfrak{h}$ and $\mathfrak{p}$, and the Jacobi identity is equivalent to the three conditions: $\mathfrak{p}$ is an $\mathfrak{h}$-module and the bracket on $\mathfrak{p}$ is $\mathfrak{h}$-equivariant.</p>
+<p><strong>Proof.</strong> The three inclusions of the previous section are the content of the Jacobi identity applied to the signs of the three elements; the module statement is the middle inclusion.</p>
+<p><strong>Proposition.</strong> For $X,Y\in\mathfrak{p}$ the operator $\operatorname{ad}X$ maps $\mathfrak{h}$ to $\mathfrak{p}$ and $\mathfrak{p}$ to $\mathfrak{h}$, so in the splitting of the space it is off-diagonal.</p>
+<p><strong>Proof.</strong> The bracket of $\mathfrak{p}$ with $\mathfrak{h}$ lands in $\mathfrak{p}$ and the bracket of $\mathfrak{p}$ with itself lands in $\mathfrak{h}$.</p>
+<p><strong>The pair is the same object as a grading.</strong> The map $\sigma$ gives the algebra a grading by $\mathbb{Z}/2$, with $\mathfrak{h}$ in degree $0$ and $\mathfrak{p}$ in degree $1$; the structure equations are the statement that the grading is compatible with the bracket.</p>
+<h2 id="the-reductivity-criterion">The Reductivity Criterion</h2>
+<p><strong>Definition.</strong> The pair is <strong>reductive</strong> when there is a subspace $\mathfrak{q}$ with $\mathfrak{g}=\mathfrak{h}\oplus\mathfrak{q}$ and $[\mathfrak{h},\mathfrak{q}]\subseteq\mathfrak{q}$.</p>
+<p><strong>Proposition (the criterion).</strong> The pair is reductive as soon as $\mathfrak{h}$ is reductive and $\mathfrak{p}$ is completely reducible as an $\mathfrak{h}$-module; and it fails to be reductive as soon as $\mathfrak{p}$ contains an invariant subspace with no invariant complement.</p>
+<p><strong>Proof.</strong> Complete reducibility writes $\mathfrak{p}$ as a sum of invariant subspaces, and together with $\mathfrak{h}$ they give an invariant decomposition of $\mathfrak{g}$, so the pair is reductive. For the second statement, an invariant complement to the invariant subspace would be an invariant complement inside $\mathfrak{p}$, which does not exist.</p>
+<p><strong>The criterion is a statement about the module, not about the algebra.</strong> What can fail is the existence of an invariant complement; the bracket itself always satisfies the three structure equations.</p>
+<p><strong>Corollary.</strong> If $\mathfrak{h}$ is abelian and $\mathfrak{p}$ splits as a sum of one-dimensional $\mathfrak{h}$-modules, the pair is reductive.</p>
+<p><strong>Proof.</strong> A one-dimensional module is irreducible, so the sum of such modules is completely reducible, and an abelian algebra is reductive by definition.</p>
+<h2 id="why-semisimple-algebras-pass">Why Semisimple Algebras Pass</h2>
+<p><strong>Theorem.</strong> Let $\mathfrak{g}$ be semisimple with Killing form $\langle,\rangle$, and let $\sigma$ be an automorphism with $\sigma^{2}=\mathrm{id}$. Then $\mathfrak{p}=\mathfrak{h}^{\perp}$, so the pair is reductive.</p>
+<p><strong>Proof.</strong> Automorphisms preserve the Killing form: $\langle\sigma X,\sigma Y\rangle=\langle X,Y\rangle$. Hence $\langle\sigma X,Y\rangle=\langle X,\sigma Y\rangle$, so $\sigma$ is self-adjoint and the eigenspaces are orthogonal by the criterion of <em>The Two Halves as Orthogonal Complements at $n=2$</em>. Since $\mathfrak{p}$ is the orthogonal complement of $\mathfrak{h}$ and the form is nondegenerate, $\mathfrak{p}$ is an $\mathfrak{h}$-invariant complement.</p>
+<p><strong>Corollary.</strong> Every symmetric pair of a semisimple Lie algebra is reductive, and the decomposition $\mathfrak{g}=\mathfrak{h}\oplus\mathfrak{p}$ is orthogonal for the Killing form.</p>
+<p><strong>Proof.</strong> The theorem gives the invariance and the orthogonality at once.</p>
+<p><strong>The trace form works the same way on a semisimple algebra of matrices.</strong> For $\mathfrak{g}=\mathfrak{sl}_2(\mathbb{R})$ the trace form is a nonzero multiple of the Killing form, so the same argument applies with either form.</p>
+<h2 id="the-two-symmetric-pairs-of-math78">The Two Symmetric Pairs of $\mathfrak{sl}_2(\mathbb{R})$</h2>
+<p><strong>The first pair.</strong> Let $\sigma(A)=A^{\mathsf T}$ on $\mathfrak{sl}_2(\mathbb{R})$. Then $\mathfrak{h}=\mathfrak{so}(2)=\mathbb{R}J$ and $\mathfrak{p}$ is the space of traceless symmetric matrices, of dimension $2$.</p>
+<p><strong>Proof.</strong> The transpose is an involutive automorphism of $\mathfrak{sl}_2(\mathbb{R})$, its fixed space is the antisymmetric traceless matrices, and the traceless symmetric matrices form the other eigenspace.</p>
+<p><strong>The structure equations hold.</strong> $[\mathfrak{so}(2),\mathfrak{p}]\subseteq\mathfrak{p}$ and $[\mathfrak{p},\mathfrak{p}]\subseteq\mathfrak{so}(2)$, the second because the bracket of two symmetric matrices is antisymmetric.</p>
+<p><strong>Proof.</strong> $[J,S]=JS-SJ$ is symmetric for symmetric $S$ and has trace zero; $[S_{1},S_{2}]$ is antisymmetric for symmetric $S_{i}$. Numerically, with $S_{1}=\begin{pmatrix}1&2\\ 2&-1\end{pmatrix}$ and $S_{2}=\begin{pmatrix}0&1\\ 1&3\end{pmatrix}$, the bracket is $8J$.</p>
+<p><strong>The second pair.</strong> Let $\sigma(A)=DAD^{-1}$ with $D=\operatorname{diag}(1,-1)$. Then $\mathfrak{h}=\mathbb{R}(E_{11}-E_{22})$ and $\mathfrak{p}=n_+\oplus n_-$.</p>
+<p><strong>Proof.</strong> Conjugation by $D$ preserves the diagonal and multiplies $E_{12}$ and $E_{21}$ by $-1$; it is an involutive automorphism, and $\mathfrak{sl}_2(\mathbb{R})$ is spanned by the three lines.</p>
+<p><strong>The structure equations hold.</strong> $[H,E_{12}]=2E_{12}$ and $[H,E_{21}]=-2E_{21}$, so each root line is stable; $[E_{12},E_{21}]=H$ lands in $\mathfrak{h}$.</p>
+<p><strong>Corollary.</strong> Both pairs are reductive, and they are not conjugate: the first has a one-dimensional compact fixed algebra and the second does not.</p>
+<p><strong>Proof.</strong> Reductivity is the theorem for semisimple algebras; $\mathfrak{so}(2)$ is compact since the Killing form is negative definite on it, and $\mathbb{R}H$ is not compact since the Killing form is positive on $H$.</p>
+<p><strong>The Killing form separates them.</strong> In the basis $H,E_{12},E_{21}$ the matrix of the Killing form is $\operatorname{diag}(8)\oplus\begin{pmatrix}0&4\\ 4&0\end{pmatrix}$, whose eigenvalues are $-4,4,8$.</p>
+<p><strong>Proof.</strong> The brackets of the three basis elements in themselves are the structure constants of $\mathfrak{sl}_2$, and the trace of the product of the two adjoint matrices gives the displayed entries; the eigenvalues are computed from the characteristic polynomial.</p>
+<h2 id="the-cartan-pair">The Cartan Pair</h2>
+<p><strong>Definition.</strong> The pair $(\mathfrak{sl}_2(\mathbb{R}),\mathfrak{so}(2),\mathfrak{p})$ with $\sigma(A)=A^{\mathsf T}$ is the Cartan pair of $\mathfrak{sl}_2(\mathbb{R})$.</p>
+<p><strong>Proposition.</strong> The form $\langle X,Y\rangle_{\sigma}=\langle X,\sigma Y\rangle$ built from the Killing form is positive definite, so $\sigma$ is a Cartan involution.</p>
+<p><strong>Proof.</strong> On $\mathfrak{h}=\mathfrak{so}(2)$ the form is $-\langle X,X\rangle$, which is positive because the Killing form is negative definite on the compact line; on $\mathfrak{p}$ the form is $\langle X,X\rangle$, which is positive because the form is positive definite on the two-dimensional space of traceless symmetric matrices; the two spaces are orthogonal.</p>
+<p><strong>Corollary.</strong> $\mathfrak{sl}_2(\mathbb{R})=\mathfrak{so}(2)\oplus\mathfrak{p}$ is a Cartan decomposition, and $\mathrm{SO}(2)$ is a maximal compact subgroup of $\mathrm{SL}_2(\mathbb{R})$.</p>
+<p><strong>Proof.</strong> The decomposition is orthogonal for the positive definite form, and the global statement is the theorem that the fixed group of a Cartan involution is maximal compact.</p>
+<p><strong>The signature of the two pairs is the same and the packaging differs.</strong> Both pairs have $\dim\mathfrak{h}=1$ and $\dim\mathfrak{p}=2$; in the Cartan pair the fixed line is the one on which the form is negative, and in the second pair the fixed line is the one on which the form is positive.</p>
+<h2 id="where-the-criterion-fails-at-math128">Where the Criterion Fails at $n=2$</h2>
+<p><strong>The hypothesis that fails is the nondegeneracy of the form.</strong> The criterion is applied through the Killing form or the trace form; on a subalgebra where that form is degenerate, the orthogonal complement is larger than the complementary dimension and the argument gives nothing.</p>
+<p><strong>Proposition.</strong> On the two-dimensional subalgebra spanned by $H=E_{11}-E_{22}$ and $E_{12}$ the trace form has matrix $\begin{pmatrix}2&0\\ 0&0\end{pmatrix}$, of rank one, with radical $\mathbb{R}E_{12}$.</p>
+<p><strong>Proof.</strong> $\operatorname{tr}(H^{2})=2$, $\operatorname{tr}(HE_{12})=0$ and $\operatorname{tr}(E_{12}^{2})=0$.</p>
+<p><strong>Corollary.</strong> The line $\mathbb{R}E_{12}$ is an ideal of that subalgebra and lies in the radical of the form, so no complement of the ideal can be found from the form.</p>
+<p><strong>Proof.</strong> $[H,E_{12}]=2E_{12}$ shows that the line is an ideal; the radical contains it by the computation above, so the form vanishes on the quotient direction.</p>
+<p><strong>The lesson at order two.</strong> Reductivity is a property of semisimple algebras and of their symmetric pairs; it fails first at the nilpotent directions, which are exactly the directions that the trace form cannot see.</p>
+<h2 id="summary">Summary</h2>
+<p>A symmetric pair is an involutive automorphism of a Lie algebra with its two eigenspaces $\mathfrak{h}$ and $\mathfrak{p}$, satisfying $[\mathfrak{h},\mathfrak{h}]\subseteq\mathfrak{h}$, $[\mathfrak{h},\mathfrak{p}]\subseteq\mathfrak{p}$ and $[\mathfrak{p},\mathfrak{p}]\subseteq\mathfrak{h}$. The pair is reductive when an $\mathfrak{h}$-invariant complement exists, and for a semisimple algebra the Killing form supplies one, namely $\mathfrak{p}=\mathfrak{h}^{\perp}$.</p>
+<p>At order two $\mathfrak{sl}_2(\mathbb{R})$ has two symmetric pairs: the transpose with fixed algebra $\mathfrak{so}(2)$, which is the Cartan pair, and the conjugation by $\operatorname{diag}(1,-1)$ with fixed algebra the split Cartan, which is not Cartan. The Killing form has matrix $\operatorname{diag}(8)\oplus\begin{pmatrix}0&4\\4&0\end{pmatrix}$ in the basis $H,E_{12},E_{21}$, with eigenvalues $-4,4,8$. On the triangular subalgebra the trace form is degenerate with radical the nilpotent line, and that is where the criterion loses its input.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\sigma$</td>
+<td>the involutive automorphism of the pair</td>
+</tr>
+<tr>
+<td>$\mathfrak{h}$</td>
+<td>the fixed algebra, the $+1$ eigenspace</td>
+</tr>
+<tr>
+<td>$\mathfrak{p}$</td>
+<td>the other eigenspace, the $-1$ eigenspace</td>
+</tr>
+<tr>
+<td>$\mathfrak{q}$</td>
+<td>an $\mathfrak{h}$-invariant complement</td>
+</tr>
+<tr>
+<td>$\mathfrak{so}(2)$</td>
+<td>$\mathbb{R}J$, the compact fixed algebra</td>
+</tr>
+<tr>
+<td>$\mathbb{R}H$</td>
+<td>the split Cartan, the noncompact fixed line</td>
+</tr>
+<tr>
+<td>$\langle,\rangle$</td>
+<td>the Killing form</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Sigurdur Helgason, <em>Differential Geometry, Lie Groups, and Symmetric Spaces</em> (AMS, 2001), for symmetric pairs, Cartan involutions and the reductivity criterion.</li>
+<li>Anthony W. Knapp, <em>Lie Groups Beyond an Introduction</em> (Birkhäuser, 2002), for the classification of the symmetric pairs of the classical algebras.</li>
+<li><a href="the-triangular-decomposition-h-n-plus-n-minus-of-m2c.html">The Triangular Decomposition $h\oplus n_+\oplus n_-$ of $M_2(\mathbb{C})$</a>, for the bracket data used on both pairs.</li>
+<li><a href="the-two-halves-as-orthogonal-complements-at-n-2.html">The Two Halves as Orthogonal Complements at $n=2$</a>, for the symmetry that makes $\mathfrak{p}$ the orthogonal complement.</li>
+<li><a href="the-involutions-of-m2c-over-r-and-over-c.html">The Involutions of $M_2(\mathbb{C})$ over $\mathbb{R}$ and over $\mathbb{C}$</a>, for the full list of involutions from which the pairs are built.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

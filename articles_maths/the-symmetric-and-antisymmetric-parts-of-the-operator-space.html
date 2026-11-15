@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Symmetric and Antisymmetric Parts of the Operator Space — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-symmetric-and-antisymmetric-parts-of-the-operator-space"><strong>The Symmetric and Antisymmetric Parts of the Operator Space</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The space of linear operators on $M_n(\mathbb{C})$ carries its own involution, the adjoint for the Hilbert–Schmidt form, and its fixed and anti-fixed parts are the self-adjoint and the anti-self-adjoint operators, so the split of the algebra repeats itself one level up.</strong></p>
+<p>The article defines the operator space, its Hilbert–Schmidt form and the adjoint of an operator, proves the adjoint formulas for the left and the right multiplications and for their products, proves that anti-self-adjointness of the commutator operator is exactly the skewness of its generator, proves that the exponential of an anti-self-adjoint operator is a unitary operator on the matrix space, and counts the dimensions. It assumes <em>The Hilbert–Schmidt Form</em> and <em>The Four Multiplication Tables: $SS$, $SK$, $KS$, $KK$</em>. It defers the geometric reading to <em>The Geometry of the Two Halves, and the Return of the Two-Sided Operators</em> and the group level to <em>The Cartan Decomposition of $\mathrm{GL}_n(\mathbb{C})$</em>.</p>
+<h2 id="the-operator-space-and-its-form">The Operator Space and Its Form</h2>
+<p><strong>The operator space is the algebra of the linear maps of the matrix space.</strong> Write</p>
+<p>$$
+\operatorname{End}(M_n)=\{L:M_n\to M_n\ \text{complex linear}\},\qquad \dim_{\mathbb{C}}\operatorname{End}(M_n)=n^{4},
+$$</p>
+<p>so the complex dimension is the fourth power of $n$ and the real dimension is twice that. The computation confirms the values $16,81,256$ for $n=2,3,4$ and the real dimensions $32,162,512$.</p>
+<p><strong>The Hilbert–Schmidt form makes the operator space a Hilbert space.</strong> Define</p>
+<p>$$
+\langle X,Y\rangle_{\mathrm{HS}}=\operatorname{tr}(X^{*}Y),
+$$</p>
+<p>which is a positive definite Hermitian form on $M_n$. The computation confirms the positivity at $n=2,3,4$ on random matrices, and it is the form with respect to which the adjoint is taken.</p>
+<p><strong>Every operator has an adjoint.</strong> For $L\in\operatorname{End}(M_n)$ there is a unique operator $L^{\dagger}$ with</p>
+<p>$$
+\langle LX,Y\rangle_{\mathrm{HS}}=\langle X,L^{\dagger}Y\rangle_{\mathrm{HS}},
+$$</p>
+<p>which is the usual adjoint of linear algebra applied to the $n^{2}$-dimensional Hilbert space. The computation confirms the defining identity at $n=3$ on random operators, and it is the involution of the operator space.</p>
+<p><strong>The matrix of the adjoint is the conjugate transpose of the matrix of the operator.</strong> In an orthonormal basis of $M_n$ the operator is an $n^{2}\times n^{2}$ matrix and</p>
+<p>$$
+[L^{\dagger}]=[L]^{*},
+$$</p>
+<p>which was verified at $n=3$ by building the matrix of a random operator and comparing its conjugate transpose with the matrix of the adjoint. So the abstract adjoint is the conjugate transpose of the large matrix, and the operator space is a matrix algebra of size $n^{2}$.</p>
+<h2 id="the-adjoint-of-an-operator">The Adjoint of an Operator</h2>
+<p><strong>The left and the right multiplications are adjoint to each other's conjugates.</strong> For $A\in M_n$ put $L_A(X)=AX$ and $R_A(X)=XA$; then</p>
+<p>$$
+L_A^{\dagger}=L_{A^{*}},\qquad R_A^{\dagger}=R_{A^{*}},
+$$</p>
+<p>since $\operatorname{tr}((AX)^{*}Y)=\operatorname{tr}(X^{*}A^{*}Y)$. The computation confirms the two formulas at $n=3$ on random matrices, and it is the reason the adjoint of a multiplication is the multiplication by the conjugate transpose.</p>
+<p><strong>A two-sided operator has the adjoint with both factors conjugated.</strong> For $L(X)=AXB$,</p>
+<p>$$
+L^{\dagger}(Y)=A^{*}YB^{*},
+$$</p>
+<p>which follows by applying the two formulas in turn. The computation confirms the identity at $n=3$ on random matrices, and it is the basic computation of the operator space, since every operator of the tensor form is a sum of two-sided ones.</p>
+<p><strong>A two-sided operator is self-adjoint when both factors are Hermitian.</strong> From $L^{\dagger}=L_{A^{*}}R_{B^{*}}$, the operator $L_AR_B$ equals its adjoint exactly when</p>
+<p>$$
+A^{*}XB^{*}=AXB\qquad\text{for all}\ X,
+$$</p>
+<p>which holds when $A$ and $B$ are Hermitian. The computation confirms the self-adjointness at $n=3$ for Hermitian factors and the anti-self-adjointness for one Hermitian and one skew-Hermitian factor, so the parity of the operator is the product of the parities of the factors.</p>
+<p><strong>The parity is multiplicative.</strong> For operators $L_1$ of parity $\epsilon_1$ and $L_2$ of parity $\epsilon_2$, with $\epsilon=\pm1$ meaning self-adjoint or anti-self-adjoint,</p>
+<p>$$
+(L_1L_2)^{\dagger}=L_2^{\dagger}L_1^{\dagger}=\epsilon_1\epsilon_2\,L_2L_1,
+$$</p>
+<p>which is the composition rule of the parities. The computation confirms the rule at $n=3$ on products of random two-sided operators, and it is the same rule as the one of the two halves of the algebra.</p>
+<h2 id="the-two-halves-of-the-operator-space">The Two Halves of the Operator Space</h2>
+<p><strong>The operator space splits into its two halves.</strong> Every operator is</p>
+<p>$$
+L=\underbrace{\tfrac12(L+L^{\dagger})}_{\text{self-adjoint}}+\underbrace{\tfrac12(L-L^{\dagger})}_{\text{anti-self-adjoint}},
+$$</p>
+<p>so the operator space is the direct sum of the self-adjoint and the anti-self-adjoint operators. The computation confirms the split at $n=3$ on random operators, and it is the repetition of the split of <em>The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian</em> one level up.</p>
+<p><strong>The anti-self-adjoint operators are a Lie algebra.</strong> Since</p>
+<p>$$
+[L_1,L_2]^{\dagger}=[L_2^{\dagger},L_1^{\dagger}]=[L_1,L_2]
+$$</p>
+<p>for anti-self-adjoint $L_1,L_2$, the commutator of two of them is anti-self-adjoint, and the anti-self-adjoint operators form the Lie algebra $\mathfrak{u}(n^{2})$. The computation confirms the closure at $n=3$ on random pairs, and the dimension is $n^{4}$, which equals the real dimension of the operator space.</p>
+<p><strong>The self-adjoint operators are the observables of the operator space.</strong> A self-adjoint operator has real eigenvalues and an orthonormal eigenbasis in the Hilbert–Schmidt form, so</p>
+<p>$$
+L=\sum_i\lambda_i\,|X_i\rangle\langle X_i|,
+$$</p>
+<p>with $X_i$ an orthonormal basis of $M_n$. The computation confirms the spectral decomposition at $n=3$ by diagonalising the large matrix of a random self-adjoint operator, and it is the operator-level spectral theorem.</p>
+<p><strong>The two halves are orthogonal.</strong> For self-adjoint $S$ and anti-self-adjoint $K$,</p>
+<p>$$
+\langle S,K\rangle_{\mathrm{HS}}=\operatorname{tr}([S]^{*}[K])=-\overline{\operatorname{tr}([S][K]^{*})},
+$$</p>
+<p>so the inner product is purely imaginary and its real part vanishes. The computation confirms the orthogonality at $n=3$ on random elements of the two halves, and it is the operator-level form of <em>The Two Halves as Orthogonal Complements</em>.</p>
+<h2 id="the-left-and-right-multiplications">The Left and Right Multiplications</h2>
+<p><strong>The left multiplication is self-adjoint exactly for Hermitian matrices.</strong> From $L_A^{\dagger}=L_{A^{*}}$,</p>
+<p>$$
+L_A=L_A^{\dagger}\iff A=A^{*},
+$$</p>
+<p>which was verified at $n=3$ on random matrices: the operator is self-adjoint exactly when the matrix is Hermitian, anti-self-adjoint exactly when it is skew-Hermitian. So the split of the algebra induces the split of the left multiplications, one level up and with the same criterion.</p>
+<p><strong>The right multiplications behave the same way.</strong> Since $R_A^{\dagger}=R_{A^{*}}$,</p>
+<p>$$
+R_A\ \text{self-adjoint}\iff A^{*}=A,
+$$</p>
+<p>which was verified at $n=3$ on random matrices. So the two families of one-sided operators carry the same parity as their matrices, and the one-sided operators of <em>The One-Sided Operators of $M_n(\mathbb{C})$</em> split into the same two halves.</p>
+<p><strong>The two-sided operators split by the parities of the two factors.</strong> For $L=L_AR_B$,</p>
+<p>$$
+L^{\dagger}=L_{A^{*}}R_{B^{*}},
+$$</p>
+<p>so the operator is self-adjoint when both factors are Hermitian and anti-self-adjoint when one is Hermitian and the other skew-Hermitian. The computation confirms the four cases at $n=3$ on random pairs, and it gives the table of parities of the four multiplication types.</p>
+<p><strong>The parities of the four tables are the parities of the operator.</strong> The multiplication tables $SS$, $SK$, $KS$, $KK$ of <em>The Four Multiplication Tables: $SS$, $SK$, $KS$, $KK$</em> are read on the operator space as the four parity classes:</p>
+<p>$$
+SS,\ KK\ \text{self-adjoint};\qquad SK,\ KS\ \text{anti-self-adjoint}
+$$</p>
+<p>for Hermitian and skew-Hermitian factors. The computation confirms the four cases at $n=3$, and it shows that the operator space repeats the multiplication table of the algebra with the parity as the grading.</p>
+<h2 id="the-commutator-as-the-model">The Commutator as the Model</h2>
+<p><strong>The commutator operator is anti-self-adjoint exactly for a skew-Hermitian generator.</strong> For $\operatorname{ad}_X(Z)=XZ-ZX$,</p>
+<p>$$
+\operatorname{ad}_X^{\dagger}=\operatorname{ad}_{X^{*}},
+$$</p>
+<p>so $\operatorname{ad}_X^{\dagger}=-\operatorname{ad}_X$ iff $X^{*}=-X$. The computation confirms both statements at $n=3$ on random matrices: the commutator operator with a skew-Hermitian generator is anti-self-adjoint, and with a Hermitian generator it is self-adjoint.</p>
+<p><strong>The commutator operator with a skew-Hermitian generator lies in $\mathfrak{u}(n^{2})$.</strong> By the previous paragraph the map</p>
+<p>$$
+\mathfrak{u}(n)\to\mathfrak{u}(n^{2}),\qquad X\mapsto\operatorname{ad}_X
+$$</p>
+<p>is a homomorphism of Lie algebras, since $\operatorname{ad}_{[X,Y]}=[\operatorname{ad}_X,\operatorname{ad}_Y]$. The computation confirms the homomorphism property at $n=3$ on random skew-Hermitian pairs, and it is the infinitesimal form of the conjugation action.</p>
+<p><strong>The exponential of the commutator operator is the conjugation.</strong> For skew-Hermitian $K$,</p>
+<p>$$
+e^{t\operatorname{ad}_K}(X)=e^{tK}Xe^{-tK},
+$$</p>
+<p>which was verified at $n=3$ by building the matrix of $\operatorname{ad}_K$, exponentiating it and comparing with the conjugation on a random matrix. So the one-parameter group of the operator space is the conjugation by the one-parameter group of the algebra, and the operator exponential is unitary on the matrix space.</p>
+<p><strong>The conjugation operators form a subgroup of the unitary group of the matrix space.</strong> Since $e^{t\operatorname{ad}_K}$ is anti-self-adjoint generated, it is unitary, and</p>
+<p>$$
+K\mapsto\operatorname{Ad}_{e^{K}}\in\mathrm{U}(n^{2}),
+$$</p>
+<p>which was verified at $n=3$ by checking the unitarity of the exponential of the large matrix. The computation confirms the determinant has modulus one, and the subgroup is the image of the conjugation action of <em>Rotors Acting on the Bivector Space: the Adjoint Action</em>, now read on the whole matrix space.</p>
+<h2 id="the-case-math98-and-the-biquaternion-reading">The Case $n=2$ and the Biquaternion Reading</h2>
+<p><strong>At $n=2$ the operator space has complex dimension sixteen.</strong> The values are</p>
+<p>$$
+\dim_{\mathbb{C}}\operatorname{End}(M_2)=16,\qquad \dim_{\mathbb{R}}=32,\qquad \dim\mathfrak{u}(4)=16,
+$$</p>
+<p>which were recomputed at $n=2$. So the operator space is a sixteen-dimensional complex Hilbert space, and the anti-self-adjoint operators form a sixteen-dimensional real Lie algebra.</p>
+<p><strong>In the Peirce frame the multiplication operators are diagonal or nilpotent.</strong> Multiplication by a diagonal element acts on each corner by a scalar, and multiplication by a corner element maps one corner to the other; so</p>
+<p>$$
+L_{\tilde\Pi_+}\,|\,\mathbb{B}_{+-}=\mathrm{id},\qquad L_{\tilde\Pi_+}\,|\,\mathbb{B}_{-+}=0,
+$$</p>
+<p>which was verified numerically for the four corners. So the corners are the eigenspaces of the multiplication operators, and the Peirce decomposition of the biquaternion algebra is the diagonalisation of those operators.</p>
+<p><strong>The parity of a multiplication is the parity of its matrix in the biquaternion frame.</strong> A Hermitian element of $\mathbb{B}$ gives a self-adjoint multiplication and a skew-Hermitian element an anti-self-adjoint one, so the two halves of the algebra give the two halves of the operator space. The computation confirms the correspondence at $n=2$ on random elements, and it shows that the split of the operator space is generated by the split of the algebra, exactly as in the general case.</p>
+<h2 id="summary">Summary</h2>
+<p>The operator space $\operatorname{End}(M_n)$ is a complex Hilbert space of dimension $n^{4}$ with the Hilbert–Schmidt form, and its adjoint is the conjugate transpose of the large matrix, with $L_A^{\dagger}=L_{A^{*}}$, $R_A^{\dagger}=R_{A^{*}}$ and $(L_AR_B)^{\dagger}=L_{A^{*}}R_{B^{*}}$. It splits into the self-adjoint and the anti-self-adjoint operators, which are respectively the fixed and the anti-fixed parts of the adjoint involution, the anti-self-adjoint ones forming the Lie algebra $\mathfrak{u}(n^{2})$ of dimension $n^{4}$ and the two halves being orthogonal. The left and right multiplications are self-adjoint exactly when their matrices are Hermitian, the parity of a two-sided operator is the product of the parities of its factors, and the commutator operator is anti-self-adjoint exactly for a skew-Hermitian generator, its exponential being the conjugation $X\mapsto e^{tK}Xe^{-tK}$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{End}(M_n)$</td>
+<td>the operator space, of complex dimension $n^{4}$</td>
+</tr>
+<tr>
+<td>$\langle X,Y\rangle_{\mathrm{HS}}=\operatorname{tr}(X^{*}Y)$</td>
+<td>the Hilbert–Schmidt form</td>
+</tr>
+<tr>
+<td>$L^{\dagger}$</td>
+<td>the adjoint of the operator $L$</td>
+</tr>
+<tr>
+<td>$L_A(X)=AX$, $R_A(X)=XA$</td>
+<td>the left and right multiplications</td>
+</tr>
+<tr>
+<td>$L_A^{\dagger}=L_{A^{*}}$</td>
+<td>the adjoint of a multiplication</td>
+</tr>
+<tr>
+<td>$\mathfrak{u}(n^{2})$</td>
+<td>the anti-self-adjoint operators</td>
+</tr>
+<tr>
+<td>$\operatorname{ad}_X(Z)=XZ-ZX$</td>
+<td>the commutator operator</td>
+</tr>
+<tr>
+<td>$e^{t\operatorname{ad}_K}(X)=e^{tK}Xe^{-tK}$</td>
+<td>the conjugation as an operator exponential</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Rajendra Bhatia, <em>Matrix Analysis</em> (Springer, 1997), for the Hilbert–Schmidt form and the adjoint of an operator.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Topics in Matrix Analysis</em> (Cambridge, 1991), for the Kronecker description of the operator space.</li>
+<li>Anthony W. Knapp, <em>Lie Groups Beyond an Introduction</em> (Birkhäuser, 2002), for the Lie algebra of the anti-self-adjoint operators.</li>
+<li><a href="the-hilbert-schmidt-form.html">The Hilbert–Schmidt Form</a>, for the form with respect to which the adjoint is taken.</li>
+<li><a href="the-four-multiplication-tables-ss-sk-ks-kk.html">The Four Multiplication Tables: $SS$, $SK$, $KS$, $KK$</a>, for the parities of the four products.</li>
+<li><a href="the-one-sided-operators-of-mnc.html">The One-Sided Operators of $M_n(\mathbb{C})$</a>, for the multiplications whose adjoints are computed here.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

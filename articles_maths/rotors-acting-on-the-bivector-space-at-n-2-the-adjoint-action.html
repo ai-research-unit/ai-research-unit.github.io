@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rotors Acting on the Bivector Space at $n=2$: the Adjoint Action — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="rotors-acting-on-the-bivector-space-at-math0-the-adjoint-action"><strong>Rotors Acting on the Bivector Space at $n=2$: the Adjoint Action</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The adjoint action $X\mapsto qXq^{-1}$ of a rotor preserves the trace and the determinant, it preserves the two halves exactly when the rotor is orthogonal, and on the antisymmetric line an orthogonal rotor acts by the sign of its determinant, so at order two the bivector line carries only a sign.</strong></p>
+<p>The article defines the adjoint action, lists its invariants, splits the algebra as the trace line plus the traceless part, proves that the traceless part carries the quadratic form $\operatorname{tr}(X^{2})$ with signature $(2,1)$ over $\mathbb{R}$ and negative definite over the imaginary form, computes the kernel as the two scalars, and treats the orthogonal rotor case where the two halves are preserved and the bivector line is fixed or reversed. It assumes <em>The Rotor as a Square Root of a Rotation: the Two Signs and the Double Cover</em>, <em>The Derivation $X\mapsto[A,X]$ and Its Skewness for the Trace Form</em> and <em>The Trace Form and Its Signature on the Two Halves of $M_2(\mathbb{R})$</em>.</p>
+<p>It follows the biquaternion account of <em>The Endomorphisms of the Biquaternion Algebra</em> for the same action read on the eight real coordinates.</p>
+<h2 id="the-adjoint-action">The Adjoint Action</h2>
+<p><strong>Definition.</strong> For an invertible $q$ the <strong>adjoint action</strong> is $\operatorname{Ad}_{q}(X)=qXq^{-1}$.</p>
+<p><strong>Proposition.</strong> The adjoint action is an algebra automorphism of $M_2(\mathbb{C})$, and $\operatorname{Ad}_{q}\circ\operatorname{Ad}_{r}=\operatorname{Ad}_{qr}$.</p>
+<p><strong>Proof.</strong> $(qXq^{-1})(qYq^{-1})=qXYq^{-1}$ shows that products are preserved; the composition law is immediate from the definition.</p>
+<p><strong>Corollary.</strong> The adjoint action is a homomorphism from $\mathrm{GL}_2(\mathbb{C})$ into the group of automorphisms of the algebra.</p>
+<p><strong>Proof.</strong> The composition law is that of a group action, and every $\operatorname{Ad}_{q}$ is invertible with inverse $\operatorname{Ad}_{q^{-1}}$.</p>
+<p><strong>Corollary.</strong> Two matrices are conjugate exactly when they lie in the same orbit of the adjoint action.</p>
+<p><strong>Proof.</strong> Conjugacy is the definition of the orbit relation.</p>
+<h2 id="the-invariants">The Invariants</h2>
+<p><strong>Theorem.</strong> The adjoint action preserves the trace, the determinant and the spectrum, and every polynomial in the matrix is carried to the same polynomial in the image.</p>
+<p><strong>Proof.</strong> The trace is invariant by the cyclic property, $\operatorname{tr}(qXq^{-1})=\operatorname{tr}(Xq^{-1}q)=\operatorname{tr}X$; the determinant is multiplicative, $\det(qXq^{-1})=\det q\det X\det q^{-1}=\det X$; and a polynomial in $qXq^{-1}$ equals $q$ times the polynomial in $X$ times $q^{-1}$.</p>
+<p><strong>Corollary.</strong> The characteristic polynomial and the spectrum are invariants of the orbit, so the discriminant is one as well.</p>
+<p><strong>Proof.</strong> Both are functions of the trace and the determinant at order two.</p>
+<p><strong>Corollary.</strong> The rank and the nullity are preserved, and so is the property of being an idempotent, a nilpotent or a scalar.</p>
+<p><strong>Proof.</strong> These properties are read from the spectrum and from the polynomial identities, which are preserved.</p>
+<h2 id="the-trace-line-and-the-traceless-part">The Trace Line and the Traceless Part</h2>
+<p><strong>Proposition.</strong> The adjoint action fixes the trace line pointwise and preserves the traceless part, so the decomposition $M_2(\mathbb{C})=\mathbb{C}I\oplus\mathfrak{sl}_2$ is equivariant.</p>
+<p><strong>Proof.</strong> The scalars commute with everything, so $\operatorname{Ad}_{q}(cI)=cI$; and the traceless part is the kernel of the trace, which is preserved because the trace is.</p>
+<p><strong>Corollary.</strong> The adjoint action on the four complex dimensions reduces to an action on the three-dimensional traceless part.</p>
+<p><strong>Proof.</strong> The action on the trace line is trivial, and the traceless part is three-dimensional.</p>
+<p><strong>Corollary.</strong> The decomposition of the traceless part into the traceless symmetric plane and the antisymmetric line is preserved exactly by the orthogonal rotors.</p>
+<p><strong>Proof.</strong> Conjugation preserves the transpose classes when $q$ is orthogonal, because then $(qXq^{-1})^{\mathsf T}=qX^{\mathsf T}q^{-1}$; and for a general $q$ the conjugate of an antisymmetric matrix need not be antisymmetric.</p>
+<h2 id="the-preserved-form-on-the-traceless-part">The Preserved Form on the Traceless Part</h2>
+<p><strong>Theorem.</strong> On $\mathfrak{sl}_2$ the adjoint action preserves the quadratic form $\operatorname{tr}(X^{2})$.</p>
+<p><strong>Proof.</strong> $\operatorname{tr}((qXq^{-1})^{2})=\operatorname{tr}(qX^{2}q^{-1})=\operatorname{tr}(X^{2})$ by the invariance of the trace.</p>
+<p><strong>Corollary.</strong> Over $\mathbb{R}$ the form has signature $(2,1)$ in the basis $\operatorname{diag}(1,-1)$, $\sigma_{1}$, $J$, whose Gram matrix is $\operatorname{diag}(2,2,-2)$.</p>
+<p><strong>Proof.</strong> The three matrices are traceless and pairwise orthogonal for the form, with the squares computed directly; the two symmetric directions have the value $2$ and the antisymmetric direction has $-2$.</p>
+<p><strong>Corollary.</strong> Over the imaginary form the same computation gives the negative definite form on $\mathfrak{su}(2)$, so the real form of the group is $\mathrm{SO}(2,1)$ in one case and $\mathrm{SO}(3)$ in the other.</p>
+<p><strong>Proof.</strong> The traceless skew-Hermitian matrices have $\operatorname{tr}(X^{2})=-\operatorname{tr}(Y^{2})$ for $X=iY$, which is negative definite; the real traceless matrices have the mixed signature.</p>
+<h2 id="the-kernel-and-the-image">The Kernel and the Image</h2>
+<p><strong>Proposition.</strong> The kernel of the adjoint action on $\mathrm{GL}_2(\mathbb{C})$ is the scalars, and on $\mathrm{SL}_2(\mathbb{C})$ it is the pair $\{\pm I\}$.</p>
+<p><strong>Proof.</strong> $\operatorname{Ad}_{q}$ is the identity exactly when $q$ commutes with every matrix, which forces $q$ to be a scalar; among the scalars of determinant one only $\pm I$ remain.</p>
+<p><strong>Corollary.</strong> The adjoint action of $\mathrm{SL}_2(\mathbb{C})$ is faithful only up to sign, and the group $\mathrm{PSL}_2(\mathbb{C})$ acts faithfully.</p>
+<p><strong>Proof.</strong> The two scalars act identically, and the quotient by them is the projective group.</p>
+<p><strong>Corollary.</strong> The image inside the orthogonal group of the traceless part is $\mathrm{SO}(2,1)$ for the real form and $\mathrm{SO}(3)$ for the imaginary form, and in the second case the map is onto.</p>
+<p><strong>Proof.</strong> The action preserves the form and has the right dimension in each case, and the standard identification of the double cover of the rotation group gives the surjectivity in the definite case.</p>
+<h2 id="the-orthogonal-case-and-the-two-halves">The Orthogonal Case and the Two Halves</h2>
+<p><strong>Theorem.</strong> For an orthogonal rotor $q$ the adjoint action preserves the antisymmetric line and the symmetric plane, and on the antisymmetric line it acts by $\det(q)$.</p>
+<p><strong>Proof.</strong> Orthogonality gives $q^{-1}=q^{\mathsf T}$, so the conjugate of $X$ has the transpose class of $X$; and since the antisymmetric line is one-dimensional, $qJq^{-1}$ is a scalar multiple of $J$, and comparing determinants gives the scalar $\det q$.</p>
+<p><strong>Corollary.</strong> A rotation fixes the bivector line pointwise, and a reflection reverses it.</p>
+<p><strong>Proof.</strong> The determinant is one for a rotation and minus one for a reflection.</p>
+<p><strong>Corollary.</strong> The rotor action on the symmetric plane is a rotation of that plane, and the angle is twice the angle of the rotor.</p>
+<p><strong>Proof.</strong> The action preserves the form $\operatorname{tr}(X^{2})$, which is positive definite on the symmetric plane, so it is a rotation there; the doubling of the angle is the statement of the double cover computed for the traceless Hermitian space.</p>
+<h2 id="the-bivector-line-as-a-sign">The Bivector Line as a Sign</h2>
+<p><strong>Proposition.</strong> The antisymmetric line of the biquaternion description, spanned by $J$, carries only the sign of the rotor, so at order two the bivector space has no angular information.</p>
+<p><strong>Proof.</strong> The line is one-dimensional and the action on it is multiplication by $\det q$, which is a sign for an orthogonal rotor and a general nonzero scalar for a general one.</p>
+<p><strong>Corollary.</strong> The angular information of a rotor at order two is carried by the symmetric plane and by the traceless part, not by the bivector line.</p>
+<p><strong>Proof.</strong> The bivector line carries one sign, and the symmetric plane carries a full angle.</p>
+<p><strong>Corollary.</strong> In the biquaternion language the same statement is that the pure part of the biquaternion is four-dimensional and the rotor acts on it by orthogonal transformations, of which only one sign lands on the antisymmetric direction.</p>
+<p><strong>Proof.</strong> The pure part of the biquaternion algebra is the orthogonal complement of the unit, and its antisymmetric direction is the one-dimensional line whose transformation is a sign.</p>
+<h2 id="summary">Summary</h2>
+<p>The adjoint action $X\mapsto qXq^{-1}$ is an algebra automorphism preserving the trace, the determinant and the spectrum. It fixes the trace line and acts on the three-dimensional traceless part, preserving the quadratic form $\operatorname{tr}(X^{2})$, which has signature $(2,1)$ over the real form and is negative definite over the imaginary form; the kernel is the scalars, and on $\mathrm{SL}_2(\mathbb{C})$ it is the pair $\{\pm I\}$.</p>
+<p>For an orthogonal rotor the two halves are preserved and the antisymmetric line is multiplied by $\det q$: rotations fix it and reflections reverse it. The symmetric plane then carries a rotation by twice the rotor angle, and the bivector line carries only a sign.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{Ad}_{q}$</td>
+<td>the map $X\mapsto qXq^{-1}$</td>
+</tr>
+<tr>
+<td>$\mathfrak{sl}_2$</td>
+<td>the traceless part</td>
+</tr>
+<tr>
+<td>$J$</td>
+<td>the antisymmetric generator</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}(X^{2})$</td>
+<td>the invariant quadratic form</td>
+</tr>
+<tr>
+<td>$\mathrm{PSL}_2(\mathbb{C})$</td>
+<td>the adjoint group</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Brian C. Hall, <em>Lie Groups, Lie Algebras, and Representations</em> (Springer, 2015), for adjoint actions and their kernels.</li>
+<li>Richard S. Hamilton, <em>Harmonic Maps of Manifolds with Boundary</em> (Springer, 1975), for the low-dimensional identifications of orthogonal groups.</li>
+<li><a href="the-rotor-as-a-square-root-of-a-rotation-the-two-signs-and-the-double-cover.html">The Rotor as a Square Root of a Rotation: the Two Signs and the Double Cover</a>, for the double cover used in the angle statement.</li>
+<li><a href="the-derivation-commutator-and-its-skewness-for-the-trace-form.html">The Derivation $X\mapsto[A,X]$ and Its Skewness for the Trace Form</a>, for the infinitesimal form of the action.</li>
+<li><a href="the-trace-form-and-its-signature-on-the-two-halves-of-m2r.html">The Trace Form and Its Signature on the Two Halves of $M_2(\mathbb{R})$</a>, for the signature computation on the two halves.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

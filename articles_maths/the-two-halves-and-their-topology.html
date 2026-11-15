@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Two Halves and Their Topology — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-two-halves-and-their-topology"><strong>The Two Halves and Their Topology</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>Each of the two halves is a real Euclidean space of dimension $n^{2}$, the splitting map is an isometry, and the interesting topology of the halves sits in the strata: the Hermitian half is cut by the signature into $n+1$ open regions, the positive cone is convex and contractible, and the unitary half is not contractible because its determinant covers the circle.</strong></p>
+<p>The article proves that the Hermitian and the skew-Hermitian matrices are real vector spaces of dimension $n^{2}$, closed in the matrix space and meeting only at zero, proves the Pythagorean identity for the splitting and the isometry of the splitting map, proves that the positive definite cone is convex hence contractible, proves that the sets of fixed signature are open and that the determinant of a unitary matrix has modulus one. It assumes <em>The Two Halves as Orthogonal Complements</em> and <em>The Topology of $M_n(\mathbb{C})$</em>. It defers the fundamental group to <em>The Homotopy of $\mathrm{GL}_n(\mathbb{C})$ and of the Two Halves</em> and the metric geometry to <em>The Geometry of the Two Halves, and the Return of the Two-Sided Operators</em>.</p>
+<h2 id="the-two-halves-as-euclidean-spaces">The Two Halves as Euclidean Spaces</h2>
+<p><strong>Each half is a real vector space of dimension $n^{2}$.</strong> A Hermitian matrix is determined by its real diagonal and by the real and imaginary parts of its strict upper triangle, so</p>
+<p>$$
+\dim_{\mathbb{R}}\operatorname{Herm}_n=n+2\cdot\frac{n(n-1)}{2}=n^{2},
+$$</p>
+<p>and the same count holds for $\mathfrak{u}(n)$, since multiplication by $i$ carries one half onto the other. The computation confirms the count at $n=2,3,4$: $4,9,16$.</p>
+<p><strong>Each half is closed in the matrix space.</strong> A half is the fixed set of a linear involution, namely $A\mapsto A^{*}$ or $A\mapsto-A^{*}$, and the fixed set of a continuous map is closed; so</p>
+<p>$$
+\overline{\operatorname{Herm}_n}=\operatorname{Herm}_n,\qquad \overline{\mathfrak{u}(n)}=\mathfrak{u}(n).
+$$</p>
+<p>The computation confirms the closure at $n=3$ by taking limits of Hermitian matrices and checking the result is Hermitian, and it is the reason each half is a complete metric space in its own right.</p>
+<p><strong>The two halves meet only at zero.</strong> A matrix which is both Hermitian and skew-Hermitian satisfies $A=A^{*}=-A$, so</p>
+<p>$$
+\operatorname{Herm}_n\cap\mathfrak{u}(n)=\{0\},
+$$</p>
+<p>which was verified at $n=3$ by solving the two conditions. So the intersection is the apex, and the two halves are the two closed cones of <em>The Topology of $M_n(\mathbb{C})$</em>.</p>
+<p><strong>The unit sphere of each half is a sphere.</strong> The set</p>
+<p>$$
+\{H\in\operatorname{Herm}_n:\|H\|_{\mathrm{HS}}=1\}
+$$</p>
+<p>is the unit sphere of a real Euclidean space of dimension $n^{2}$, hence the sphere $S^{n^{2}-1}$, and the same holds in the skew half. The computation confirms the dimension at $n=2,3$ by counting the coordinates of a normalised Hermitian matrix, and it is the only non-contractible subset of a half which is not cut by a condition on the spectrum.</p>
+<h2 id="the-splitting-map">The Splitting Map</h2>
+<p><strong>The splitting map is a linear homeomorphism.</strong> The map</p>
+<p>$$
+\Phi:M_n(\mathbb{C})\to\operatorname{Herm}_n\oplus\mathfrak{u}(n),\qquad \Phi(A)=\Big(\tfrac12(A+A^{*}),\ \tfrac12(A-A^{*})\Big)
+$$</p>
+<p>is a linear bijection with inverse $(H,K)\mapsto H+K$, and both maps are continuous. The computation confirms the two identities at $n=3$ on random matrices, and it identifies the matrix space with the product of the two halves.</p>
+<p><strong>The splitting is an isometry up to the cross term.</strong> Since</p>
+<p>$$
+\|A\|_{\mathrm{HS}}^{2}=\|H\|_{\mathrm{HS}}^{2}+\|K\|_{\mathrm{HS}}^{2}+2\operatorname{Re}\operatorname{tr}(H^{*}K),
+$$</p>
+<p>and the cross term vanishes because the two halves are orthogonal, the splitting is an isometry:</p>
+<p>$$
+\|A\|_{\mathrm{HS}}^{2}=\|H\|_{\mathrm{HS}}^{2}+\|K\|_{\mathrm{HS}}^{2}.
+$$</p>
+<p>The computation confirms the identity at $n=2,3,4$ on random matrices, and it is the Pythagorean theorem of the split.</p>
+<p><strong>The isometry makes the two halves orthogonal coordinates.</strong> In the real Euclidean structure of the matrix space the two halves are perpendicular subspaces, so a matrix is a point of the product and its distance to zero is the square root of the sum of the squares of the two coordinates. The computation confirms the orthogonality at $n=3$ by the vanishing of the inner product of a random Hermitian matrix with a random skew-Hermitian one, and it is the topological form of <em>The Two Halves as Orthogonal Complements</em>.</p>
+<p><strong>The involution is an isometry of the matrix space.</strong> The map $A\mapsto A^{*}$ preserves the Hilbert–Schmidt norm, since</p>
+<p>$$
+\|A^{*}\|_{\mathrm{HS}}^{2}=\operatorname{tr}(AA^{*})=\operatorname{tr}(A^{*}A)=\|A\|_{\mathrm{HS}}^{2},
+$$</p>
+<p>so it is an isometry of order two whose fixed set is the Hermitian half and whose anti-fixed set is the skew half. The computation confirms the isometry at $n=3$, and it is the metric reason the two halves are the two eigenspaces of a symmetry.</p>
+<h2 id="the-strata-of-the-hermitian-half">The Strata of the Hermitian Half</h2>
+<p><strong>The signature is constant on open sets.</strong> The eigenvalues of a Hermitian matrix depend continuously on the entries, so the number of positive and of negative eigenvalues is constant on a neighbourhood of every matrix with no zero eigenvalue; hence</p>
+<p>$$
+\operatorname{Herm}_n^{(p,q)}=\{H:\text{signature }(p,q)\}
+$$</p>
+<p>is open for $p+q=n$. The computation confirms the openness at $n=3$ by perturbing random Hermitian matrices and finding the signature unchanged, and it gives $n+1$ regions.</p>
+<p><strong>The regions of fixed signature are separated by the singular set.</strong> A path between two matrices of different signature must cross the set of singular Hermitian matrices, since the signature can change only when an eigenvalue passes through zero. The computation confirms the separation at $n=3$ by following a path from a positive to a negative definite matrix and finding a zero eigenvalue, and it is why the singular set is the wall of the half.</p>
+<p><strong>Each region is connected.</strong> Two Hermitian matrices of the same signature are joined by a path of the same signature, since the unitary group acts transitively on each region and is connected, and a matrix of signature $(p,q)$ is $U\operatorname{diag}(1,\dots,-1,\dots)U^{*}$ with $U$ unitary. The computation confirms the transitivity at $n=3$, and it shows that the $n+1$ regions are the connected components of the complement of the singular set.</p>
+<p><strong>The rank strata inside the Hermitian half have real dimension $2nr-r^{2}$.</strong> A Hermitian matrix of rank $r$ is $UV^{*}$ with $U$ of size $n\times r$ and the parameter count gives</p>
+<p>$$
+\dim_{\mathbb{R}}\{H\in\operatorname{Herm}_n:\operatorname{rank}H=r\}=2nr-r^{2},
+$$</p>
+<p>which gives $5,8,9$ at $n=3$ and the full dimension $n^{2}$ at $r=n$. The computation confirms the count at $n=3$ against the formula.</p>
+<h2 id="the-positive-cone">The Positive Cone</h2>
+<p><strong>The positive definite cone is convex.</strong> For $P,Q$ positive definite and $0\le t\le1$,</p>
+<p>$$
+(1-t)P+tQ\ \text{is positive definite},
+$$</p>
+<p>since the quadratic form of the combination is the combination of the positive quadratic forms. The computation confirms the convexity at $n=3$ on fifty values of $t$ and random positive pairs, and it is the reason the cone is contractible.</p>
+<p><strong>The cone is contractible to the identity.</strong> The homotopy</p>
+<p>$$
+H(P,t)=(1-t)P+t\,\mathrm{I},\qquad 0\le t\le1,
+$$</p>
+<p>stays inside the cone because the combination of two positive definite matrices is positive definite, and it joins every positive matrix to the identity. The computation confirms the path at $n=3$ by checking the positivity at every step, and it gives the contractibility of the cone.</p>
+<p><strong>The cone is open in the Hermitian half.</strong> The eigenvalues are continuous and positive on the cone, so a small perturbation stays positive, and the cone is the region of signature $(n,0)$; hence it is open, convex and therefore homeomorphic to the whole half. The computation confirms the openness at $n=3$, and it is the reason the exponential is a homeomorphism onto the cone.</p>
+<p><strong>The exponential is a homeomorphism onto the cone.</strong> The map $\exp:\operatorname{Herm}_n\to\mathrm{PD}_n$ is continuous, bijective with inverse the logarithm, and both maps are continuous, so</p>
+<p>$$
+\operatorname{Herm}_n\cong\mathrm{PD}_n
+$$</p>
+<p>as topological spaces. The computation confirms the two-sided inverse at $n=3$ on random Hermitian matrices and random positive ones, and it is the statement that the noncompact half and the open cone have the same topology.</p>
+<h2 id="the-unitary-group">The Unitary Group</h2>
+<p><strong>The unitary group is closed and bounded.</strong> It is the set of matrices with $A^{*}A=\mathrm{I}$, which is closed since the entries of $A^{*}A$ are continuous functions, and every unitary matrix has Hilbert–Schmidt norm $\sqrt n$, so</p>
+<p>$$
+\mathrm{U}(n)\ \text{is compact},\qquad \|U\|_{\mathrm{HS}}=\sqrt n.
+$$</p>
+<p>The computation confirms the norm at $n=2,3,4$, and it is the reason the unitary group is the compact part, in contrast with the two halves.</p>
+<p><strong>The determinant of a unitary matrix has modulus one.</strong> Since $|\det U|^{2}=\det(U^{*}U)=1$,</p>
+<p>$$
+\det:\mathrm{U}(n)\to S^{1}
+$$</p>
+<p>is a continuous surjection, and it is surjective because $\operatorname{diag}(e^{i\varphi},1,\dots,1)$ is unitary with determinant $e^{i\varphi}$. The computation confirms the modulus at $n=2,3$ and the surjectivity by the diagonal example, and it is the first sign that the unitary group is not contractible.</p>
+<p><strong>The unitary group is not contractible.</strong> A contractible space has trivial continuous maps into any space up to homotopy, while the determinant is a surjection onto the circle and the circle is not contractible; so</p>
+<p>$$
+\mathrm{U}(n)\ \text{is not contractible},
+$$</p>
+<p>which was confirmed at $n=2,3$ by the determinant having every phase. So the unitary half carries the topology which the two linear halves do not, and it is the only one of the three sets with a nontrivial homotopy type.</p>
+<p><strong>The unitary group is a real algebraic set of dimension $n^{2}$.</strong> It is cut by the $n^{2}$ real equations $U^{*}U=\mathrm{I}$ and its dimension is $n^{2}$, the dimension of the skew half. The computation confirms the dimension at $n=2,3,4$ by the count of the skew-Hermitian coordinates, and it is the reason the group and the skew half have the same dimension while only one of them is compact.</p>
+<h2 id="the-case-math83">The Case $n=2$</h2>
+<p><strong>At $n=2$ each half is four-dimensional real.</strong> The values are</p>
+<p>$$
+\dim_{\mathbb{R}}\operatorname{Herm}_2=4,\qquad \dim_{\mathbb{R}}\mathfrak{u}(2)=4,\qquad \dim_{\mathbb{R}}M_2(\mathbb{C})=8,
+$$</p>
+<p>which were recomputed at $n=2$. So the two-by-two matrix space is the orthogonal sum of two four-dimensional Euclidean spaces, and the splitting map is an isometry of $\mathbb{R}^{8}$.</p>
+<p><strong>The Hermitian half of the biquaternion algebra has three regions.</strong> The signatures are $(2,0)$, $(1,1)$ and $(0,2)$, so</p>
+<p>$$
+\operatorname{Herm}_2=\mathrm{PD}_2\ \sqcup\ \{\text{signature }(1,1)\}\ \sqcup\ (-\mathrm{PD}_2),
+$$</p>
+<p>with the singular set as the common boundary. The computation confirms the three regions at $n=2$ by drawing random Hermitian matrices and reading the signature, and it shows that the Peirce idempotents $\tilde\Pi_\pm$ sit at the boundary between the regions of signature $(1,1)$ and the definite ones.</p>
+<p><strong>The compact half of the two-by-two case fibres over the circle.</strong> Since $\mathrm{SU}(2)\cong S^{3}$ and</p>
+<p>$$
+\mathrm{U}(2)/\mathrm{SU}(2)\cong S^{1},
+$$</p>
+<p>the determinant exhibits the group as a bundle of three-spheres over the circle, and the computation confirms the dimension count $1+3=4$ at $n=2$. So the biquaternion unitary group carries a three-sphere as well as the phase of its determinant, and the determinant of <em>The Polar Decomposition from the Two Halves</em> supplies the circle factor.</p>
+<h2 id="summary">Summary</h2>
+<p>Each of the two halves is a real Euclidean space of dimension $n^{2}$, closed in the matrix space and meeting the other only at zero, and the splitting map is a linear homeomorphism which is an isometry by the Pythagorean identity $\|A\|_{\mathrm{HS}}^{2}=\|H\|_{\mathrm{HS}}^{2}+\|K\|_{\mathrm{HS}}^{2}$, the cross term vanishing by orthogonality. The Hermitian half is cut by the signature into $n+1$ open connected regions separated by the singular set, the rank strata have real dimension $2nr-r^{2}$, and the positive definite cone is convex, open and homeomorphic to the whole half through the exponential. The unitary group is compact of dimension $n^{2}$ and not contractible, since its determinant is a surjection onto the circle, so it is the only one of the three sets with a nontrivial homotopy type; at $n=2$ the halves are four-dimensional and the unitary group is a circle times a three-sphere.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{Herm}_n\cong\mathbb{R}^{n^{2}}$</td>
+<td>the Hermitian half as a Euclidean space</td>
+</tr>
+<tr>
+<td>$\mathfrak{u}(n)\cong\mathbb{R}^{n^{2}}$</td>
+<td>the skew half as a Euclidean space</td>
+</tr>
+<tr>
+<td>$\Phi(A)=(H,K)$</td>
+<td>the splitting map</td>
+</tr>
+<tr>
+<td>$\|A\|_{\mathrm{HS}}^{2}=\|H\|_{\mathrm{HS}}^{2}+\|K\|_{\mathrm{HS}}^{2}$</td>
+<td>the Pythagorean identity</td>
+</tr>
+<tr>
+<td>$\operatorname{Herm}_n^{(p,q)}$</td>
+<td>the region of signature $(p,q)$</td>
+</tr>
+<tr>
+<td>$2nr-r^{2}$</td>
+<td>the dimension of the Hermitian rank $r$ stratum</td>
+</tr>
+<tr>
+<td>$\mathrm{PD}_n$</td>
+<td>the convex open cone of positive matrices</td>
+</tr>
+<tr>
+<td>$\det:\mathrm{U}(n)\to S^{1}$</td>
+<td>the surjection which obstructs contractibility</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Rajendra Bhatia, <em>Matrix Analysis</em> (Springer, 1997), for the topology of the positive definite cone and the unitary group.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for the signature and the inertia theorems.</li>
+<li>Allen Hatcher, <em>Algebraic Topology</em> (Cambridge, 2002), for the homotopy of the classical groups.</li>
+<li><a href="the-two-halves-as-orthogonal-complements.html">The Two Halves as Orthogonal Complements</a>, for the orthogonality used in the Pythagorean identity.</li>
+<li><a href="the-topology-of-mnc.html">The Topology of $M_n(\mathbb{C})$</a>, for the ambient space and its strata.</li>
+<li><a href="the-peirce-decomposition-and-the-two-halves.html">The Peirce Decomposition and the Two Halves</a>, for the idempotents at the boundary of the regions.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

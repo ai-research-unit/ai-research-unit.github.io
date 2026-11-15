@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Matrix Algebra $M_2(\mathbb{C})$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-matrix-algebra-math0"><strong>The Matrix Algebra $M_2(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The algebra $M_2(\mathbb{C})$ is the algebra of $2\times2$ complex matrices, and everything in it is decided by four matrix units and one product rule.</strong></p>
+<p>This article fixes the algebra that the whole category reads: the matrix units and the rule $E_{ij}E_{kl}=\delta_{jk}E_{il}$, the trace, the determinant and the rank, the centre and the simplicity, the real dimension $8$, the unit group and the projective group, and the identification with the biquaternion algebra $\mathbb{B}$. It assumes only the linear algebra of $\mathbb{C}^{2}$. It defers the element to <em>The Element: Rank, Trace, Determinant, Characteristic Polynomial at $n=2$</em>, the real matrices to <em>The Two Base Fields: $M_2(\mathbb{R})$ inside $M_2(\mathbb{C})$</em>, and the ideal theory to <em>The Ideals, the Centre and the Simplicity of $M_2(\mathbb{C})$</em>.</p>
+<p>No quadratic form is used in the proofs. The trace pairing is recorded as symmetric and nondegenerate, nothing more; its signature is <em>The Trace Form and Its Signature on the Two Halves of $M_2(\mathbb{R})$</em>.</p>
+<h2 id="the-algebra">The Algebra</h2>
+<p><strong>Definition.</strong> $M_2(\mathbb{C})$ is the set of $2\times2$ arrays of complex numbers with the entrywise sum and the product $(AB)_{ij}=\sum_{k}a_{ik}b_{kj}$. The <strong>matrix units</strong> $E_{ij}$ have a $1$ in position $(i,j)$ and $0$ elsewhere.</p>
+<p><strong>Proposition (the product rule).</strong> The four units are a $\mathbb{C}$-basis, and</p>
+<p>$$
+\boxed{\;E_{ij}E_{kl}=\delta_{jk}E_{il}.\;}
+$$</p>
+<p><strong>Proof.</strong> The $(p,q)$-entry of $E_{ij}E_{kl}$ is $\sum_{r}\delta_{ip}\delta_{jr}\delta_{kr}\delta_{lq}=\delta_{jk}\delta_{ip}\delta_{lq}$, which is that of $\delta_{jk}E_{il}$. Independence holds because the $(i,j)$-entry of a combination is its own coefficient.</p>
+<p><strong>Theorem.</strong> With this product the algebra is associative, unital, non-commutative, of complex dimension $4$ and real dimension $8$.</p>
+<p><strong>Proof.</strong> Both $(AB)C$ and $A(BC)$ have $(i,l)$-entry $\sum_{j,k}a_{ij}b_{jk}c_{kl}$. The unit is $I$. Non-commutativity: $E_{12}E_{21}=E_{11}$ while $E_{21}E_{12}=E_{22}$.</p>
+<p><strong>The product is composition.</strong> The map $A\mapsto(x\mapsto Ax)$ is an isomorphism onto $\operatorname{End}_{\mathbb{C}}(\mathbb{C}^{2})$: injective because $Ae_{j}$ is the $j$-th column, surjective because a map is fixed by the images of a basis. The transpose is an anti-isomorphism onto the opposite algebra, since $(AB)^{\mathsf T}=B^{\mathsf T}A^{\mathsf T}$.</p>
+<h2 id="trace-and-determinant">Trace and Determinant</h2>
+<p><strong>Definition.</strong> For $A=\begin{pmatrix}a&b\\c&d\end{pmatrix}$, the trace is $\operatorname{tr}A=a+d$, the determinant is $\det A=ad-bc$, and the characteristic polynomial is</p>
+<p>$$
+\chi_A(\lambda)=\det(\lambda I-A)=\lambda^{2}-(\operatorname{tr}A)\lambda+\det A .
+$$</p>
+<p><strong>Proposition (the trace).</strong> The trace is linear, cyclic, $\operatorname{tr}(AB)=\operatorname{tr}(BA)$, and it is the only linear functional vanishing on all commutators, up to a scalar.</p>
+<p><strong>Proof.</strong> The cyclic identity is the equality $a_{11}b_{11}+a_{12}b_{21}+a_{21}b_{12}+a_{22}b_{22}=\operatorname{tr}(BA)$. A functional vanishes on commutators exactly when it is invariant under transposing the two factors. The commutator subspace is the traceless part, of dimension $3$, so its annihilator in the dual is one-dimensional, and the trace spans it.</p>
+<p><strong>Proposition (the determinant).</strong> The determinant is multiplicative, $\det(AB)=\det A\det B$, and it is the only multiplicative polynomial of degree two, normalised to $1$ at $I$, that vanishes on singular matrices.</p>
+<p><strong>Proof.</strong> Multiplicativity is that of the determinant of a linear map. The normalisation is the Leibniz formula over the two permutations of $S_2$.</p>
+<p><strong>Cayley–Hamilton.</strong> Substituting $A$ gives $A^{2}-(\operatorname{tr}A)A+(\det A)I=0$. At order two this is a four-entry computation: the diagonal identities are $a^{2}+bc=(a+d)a-ad$ and $cb+d^{2}=(a+d)d-ad$. Whenever $\det A\neq0$ the identity gives the inverse</p>
+<p>$$
+A^{-1}=\frac{1}{ad-bc}\begin{pmatrix}d&-b\\-c&a\end{pmatrix}.
+$$</p>
+<p><strong>Worked example.</strong> For $A=\begin{pmatrix}1&2\\3&4\end{pmatrix}$ one has $\operatorname{tr}A=5$ and $\det A=-2$, so $\chi_A=\lambda^{2}-5\lambda-2$, with roots $(5\pm\sqrt{33})/2$, and $A^{-1}=-\tfrac12\begin{pmatrix}4&-2\\-3&1\end{pmatrix}$.</p>
+<h2 id="rank-and-the-singular-set">Rank and the Singular Set</h2>
+<p><strong>The rank is the dimension of the image and takes the three values $0,1,2$.</strong> It is $2$ exactly off the determinant hypersurface and $0$ only at the origin, so the rank-one matrices are the remaining stratum.</p>
+<p><strong>Proposition (the strata).</strong> The rank-$r$ set has complex dimension $r(4-r)$: that is $0,3,4$ for $r=0,1,2$.</p>
+<p><strong>Proof.</strong> A rank-one matrix is $uv^{\mathsf T}$ with $u,v\neq0$, and the pair is fixed up to $u\mapsto\lambda u$, $v\mapsto\lambda^{-1}v$, a count of $2+2-1=3$. The rank-two set is open in the four-dimensional space.</p>
+<p><strong>The singular set is the determinant hypersurface.</strong> It has complex dimension $3$ and real codimension $2$, and it is singular only at $0$, because the gradient of the determinant is the cofactor matrix, which vanishes only at rank $0$. <strong>It is not the null cone of a form on the algebra</strong>: the determinant is quadratic, but the singular set is its zero set inside the algebra, and the algebra is read with a positive definite form.</p>
+<h2 id="the-centre-and-the-simplicity">The Centre and the Simplicity</h2>
+<p><strong>Theorem (the centre).</strong> $Z(M_2(\mathbb{C}))=\mathbb{C}I$.</p>
+<p><strong>Proof.</strong> If $A$ commutes with $E_{11}$ then $a_{12}=a_{21}=0$, so $A$ is diagonal; commuting with $E_{12}$ then gives $a_{11}=a_{22}$; conversely a scalar matrix is central.</p>
+<p><strong>Theorem (simplicity).</strong> The only two-sided ideals are $0$ and the algebra.</p>
+<p><strong>Proof.</strong> Let $I\neq0$ and $0\neq A\in I$ with $a_{ij}\neq0$. Then $E_{ii}AE_{jj}=a_{ij}E_{ij}\in I$, so $E_{ij}\in I$, and $E_{ki}E_{ij}E_{jl}=E_{kl}\in I$ for all $k,l$.</p>
+<p><strong>Corollary.</strong> The algebra is central simple. Every automorphism is inner and every derivation is inner, by Skolem–Noether and Noether; the proofs are <em>The Ideals, the Centre and the Simplicity of $M_2(\mathbb{C})$</em>.</p>
+<p><strong>The algebra is not a division algebra.</strong> Every off-diagonal unit is a nonzero nilpotent, $E_{12}^{2}=0$, so there are zero divisors and the non-units are exactly the singular matrices.</p>
+<h2 id="the-unit-group-and-the-projective-group">The Unit Group and the Projective Group</h2>
+<p><strong>Proposition.</strong> $GL_2(\mathbb{C})=\{\det\neq0\}$ is a complex algebraic group of complex dimension $4$. The determinant maps it onto $\mathbb{C}^{\times}$, with kernel $SL_2(\mathbb{C})$ of complex dimension $3$.</p>
+<p><strong>Proof.</strong> The unit group is the complement of a hypersurface in $\mathbb{C}^{4}$; the determinant is polynomial, multiplicative and onto, since $\operatorname{diag}(d,1)$ has determinant $d$; its kernel is a hypersurface, of dimension $3$.</p>
+<p><strong>Proposition.</strong> $PGL_2(\mathbb{C})=GL_2(\mathbb{C})/\mathbb{C}^{\times}I\cong SL_2(\mathbb{C})/\{\pm I\}$, of complex dimension $3$.</p>
+<p><strong>Proof.</strong> Multiply a class by $\lambda$ with $\lambda^{2}=(\det A)^{-1}$ to reach determinant $1$; two such representatives differ by a scalar of square $1$.</p>
+<p><strong>The action.</strong> $PGL_2$ acts by $[g]\cdot A=gAg^{-1}$, and the orbits are the conjugacy classes, classified by $(\operatorname{tr},\det)$ in <em>The Spectrum of a $2\times2$ Matrix</em>. On the projective line the action is the Möbius action, which is strictly three-transitive.</p>
+<h2 id="the-reading-over-the-real-numbers">The Reading over the Real Numbers</h2>
+<p><strong>Every matrix splits into a Hermitian and a skew-Hermitian part.</strong> Put $A^{*}=\bar A^{\mathsf T}$; the <strong>Hermitian</strong> matrices satisfy $H^{*}=H$ and the <strong>skew-Hermitian</strong> ones $S^{*}=-S$.</p>
+<p><strong>Proposition.</strong> Every $A$ splits uniquely as</p>
+<p>$$
+A=H+S,\qquad H=\tfrac12(A+A^{*}),\quad S=\tfrac12(A-A^{*}),
+$$</p>
+<p>so $M_2(\mathbb{C})=\mathfrak{u}(2)\oplus i\mathfrak{u}(2)$ over $\mathbb{R}$, with $\dim_{\mathbb{R}}\mathfrak{u}(2)=4$ and $\dim_{\mathbb{R}}\mathfrak{su}(2)=3$.</p>
+<p><strong>Proof.</strong> The star is conjugate-linear and involutive, so the two parts have the required symmetry and sum to $A$; they meet only at $0$ because $H=-H$ forces $H=0$. A Hermitian matrix has two real diagonal entries and one free off-diagonal complex entry, hence $4$ real parameters.</p>
+<p><strong>Worked example.</strong> For $A=\begin{pmatrix}1&2\\3&4\end{pmatrix}$,</p>
+<p>$$
+H=\tfrac12(A+A^{*})=\begin{pmatrix}1&\tfrac52\\ \tfrac52&4\end{pmatrix},
+\qquad
+S=\tfrac12(A-A^{*})=\begin{pmatrix}0&-\tfrac12\\ \tfrac12&0\end{pmatrix},
+$$</p>
+<p>with $\operatorname{tr}H=5$ and $\operatorname{tr}S=0$.</p>
+<p><strong>The product preserves neither half.</strong> For skew-Hermitian $S,T$ one has $(ST)^{*}=TS$, which equals $-ST$ only when $S$ and $T$ anticommute. The split is one of the real vector space and of the real Lie algebra.</p>
+<h2 id="the-identification-with-the-biquaternion-algebra">The Identification with the Biquaternion Algebra</h2>
+<p><strong>The algebra is the biquaternion algebra.</strong> The following is the dictionary between the two languages.</p>
+<p><strong>Theorem.</strong> There is an isomorphism of $\mathbb{C}$-algebras $\mathsf M_2:\mathbb{B}\to M_2(\mathbb{C})$ with</p>
+<p>$$
+\mathsf M_2(e_t)=I,\qquad
+\mathsf M_2(\vec e_x)=-i\sigma_1,\qquad
+\mathsf M_2(\vec e_y)=-i\sigma_2,\qquad
+\mathsf M_2(\vec e_z)=-i\sigma_3 .
+$$</p>
+<p><strong>Proof.</strong> The images are independent and reproduce the relations: $\mathsf M_2(\vec e_k)^{2}=-I$ because $\sigma_k^{2}=I$, and $(-i\sigma_1)(-i\sigma_2)=-\sigma_1\sigma_2=-i\sigma_3$ is the image of $\vec e_z$. A linear map agreeing with the products on a basis is a homomorphism, and it is bijective because both spaces have dimension four. The details are <em>$M_2(\mathbb{C})$ Pauli Representation</em>.</p>
+<p><strong>Corollary.</strong> $\operatorname{tr}\mathsf M_2(\tilde Q)=2Q_t$ and $\det\mathsf M_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$.</p>
+<p><strong>The determinant is the algebraic norm $N$.</strong> Multiplicativity of the determinant is multiplicativity of $N$, and the zero divisors of $\mathbb{B}$ are the singular matrices. This is what the dimension adds: at $n=2$ the determinant is a quadratic form with a genuine cone of real dimension $6$, while at $n\ge3$ the singular set is a hypersurface. The cone is <em>N-Regularity and N-Degeneracy in the Biquaternion Algebra</em>.</p>
+<p><strong>Corollary (the four corners).</strong> A complete family of two idempotents of $\mathbb{B}$ maps to a pair of complementary rank-one projections $P_{+}$ and $P_{-}=I-P_{+}$, and the Peirce lines $\mathbb{B}_{st}$ map onto the matrix corners $A_{kl}=P_kM_2(\mathbb{C})P_l$, each one-dimensional. The companion nilpotents $\vec\Upsilon_{+-},\vec\Upsilon_{-+}$ of <em>The Companion Nilpotents of the Biquaternion Algebra</em> map onto $E_{12},E_{21}$, and a Peirce basis onto the four matrix units.</p>
+<p><strong>What the identification does not carry.</strong> It is $\mathbb{C}$-linear, so it does not send the real form $\mathbb{H}$ to a real subalgebra; the image is a four-real-dimensional subspace. The two real forms are $M_2(\mathbb{R})$ and $\mathbb{H}$, treated in <em>The Two Base Fields: $M_2(\mathbb{R})$ inside $M_2(\mathbb{C})$</em>. The transpose is an anti-automorphism of the matrix algebra and not the quaternion conjugation of $\mathbb{B}$.</p>
+<h2 id="summary">Summary</h2>
+<p>$M_2(\mathbb{C})$ is the associative unital non-commutative $\mathbb{C}$-algebra of $2\times2$ complex matrices, with</p>
+<p>$$
+\boxed{\;E_{ij}E_{kl}=\delta_{jk}E_{il},\qquad \dim_{\mathbb{C}}=4,\qquad \dim_{\mathbb{R}}=8.\;}
+$$</p>
+<p>Its centre is $\mathbb{C}I$ and it is simple, hence central simple. The trace is the only commutator-vanishing functional up to scale, the determinant is multiplicative, and the two are the coefficients of $\chi_A=\lambda^{2}-(\operatorname{tr}A)\lambda+\det A$. The rank takes the values $0,1,2$ on strata of dimensions $0,3,4$, and the singular set is the determinant hypersurface of real codimension two. The unit group is $GL_2(\mathbb{C})$ of dimension $4$, and $PGL_2(\mathbb{C})\cong SL_2(\mathbb{C})/\{\pm I\}$ has dimension $3$. Over $\mathbb{R}$ the algebra is $\mathfrak{u}(2)\oplus i\mathfrak{u}(2)$. It is the biquaternion algebra under $\mathsf M_2(\vec e_k)=-i\sigma_k$, with $\operatorname{tr}=2Q_t$ and $\det=N$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value for $M_2(\mathbb{C})$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Complex dimension</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>Real dimension</td>
+<td>$8$</td>
+</tr>
+<tr>
+<td>Centre</td>
+<td>$\mathbb{C}I$</td>
+</tr>
+<tr>
+<td>Simple</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Division algebra</td>
+<td>no; $E_{12}^{2}=0$</td>
+</tr>
+<tr>
+<td>Unit group</td>
+<td>$GL_2(\mathbb{C})$, dimension $4$</td>
+</tr>
+<tr>
+<td>Projective group</td>
+<td>$PGL_2\cong SL_2/\{\pm I\}$, dimension $3$</td>
+</tr>
+<tr>
+<td>Real reading</td>
+<td>$\mathfrak{u}(2)\oplus i\mathfrak{u}(2)$, real dimensions $4+4$</td>
+</tr>
+<tr>
+<td>Biquaternion model</td>
+<td>$\vec e_k\mapsto-i\sigma_k$; $\det=N$, $\operatorname{tr}=2Q_t$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M_2(\mathbb{C})$</td>
+<td>the algebra of $2\times2$ complex matrices</td>
+</tr>
+<tr>
+<td>$E_{ij}$</td>
+<td>the matrix unit with $1$ in position $(i,j)$</td>
+</tr>
+<tr>
+<td>$I$</td>
+<td>the identity matrix</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}$, $\det$</td>
+<td>the trace and the determinant</td>
+</tr>
+<tr>
+<td>$\chi_A$</td>
+<td>the characteristic polynomial $\det(\lambda I-A)$</td>
+</tr>
+<tr>
+<td>$\mathrm{rank}\,A$</td>
+<td>the dimension of the image</td>
+</tr>
+<tr>
+<td>$A^{*}=\bar A^{\mathsf T}$</td>
+<td>the conjugate transpose</td>
+</tr>
+<tr>
+<td>$\mathfrak{u}(2)$, $\mathfrak{su}(2)$</td>
+<td>the skew-Hermitian matrices, and the traceless ones</td>
+</tr>
+<tr>
+<td>$GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$</td>
+<td>the invertible matrices, and those of determinant $1$</td>
+</tr>
+<tr>
+<td>$PGL_2(\mathbb{C})$</td>
+<td>$GL_2(\mathbb{C})/\mathbb{C}^{\times}I$</td>
+</tr>
+<tr>
+<td>$\mathsf M_2$</td>
+<td>the isomorphism $\mathbb{B}\to M_2(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$N$</td>
+<td>the algebraic norm, equal to $\det$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge University Press, 2013), for the matrix units, the trace and the determinant at order two.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for central simple algebras and the centre.</li>
+<li><a href="m2c-pauli-representation.html">$M_2(\mathbb{C})$ Pauli Representation</a>, for the identification with the biquaternion algebra in full.</li>
+<li><a href="the-biquaternion-algebra.html">The Biquaternion Algebra</a>, for the algebra $\mathbb{B}$ identified with this one.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

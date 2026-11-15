@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Length and the Two Ranks — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-length-and-the-two-ranks"><strong>The Length and the Two Ranks</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The length of an operator is the least number of two-sided operators whose sum it is, and it is a rank: the rank of the operator written in the basis of the $n^{2}$ matrix-unit two-sided operators.</strong> So an operator carries two ranks. The first is the rank of the map on $\mathbb{R}^{n^{2}}$. The second is the length. The two are the ranks of two matrices that differ by a partial transposition, and neither bounds the other beyond the inequality $\text{length}\ge\operatorname{rank}/n^{2}$.</p>
+<p>The article defines the length, proves that it equals the rank of the coefficient matrix, computes it for the identity operator, for the transpose and for the two-sided operators, gives the bound $\ell(T)\le n^{2}$ with equality on the complement of a hypersurface, and compares the count with the complex case. It assumes <em>The Two-Sided Operators and the Real Segre Cone</em> for the bilinear map $(A,B)\mapsto T_{A,B}$, its cone and its rank formula, and it defers the topology of the operator space to <em>The Symmetric and Antisymmetric Parts of the Operator Space</em>.</p>
+<p>Throughout $n\ge2$, $M_n=M_n(\mathbb{R})$ and $\ell(T)$ is the length.</p>
+<h2 id="the-definition">The Definition</h2>
+<p><strong>Definition.</strong> Let $T\in\operatorname{End}(M_n)$. The <strong>length</strong> $\ell(T)$ is the least integer $k$ such that</p>
+<p>$$
+T=T_{A_1,B_1}+\cdots+T_{A_k,B_k}
+$$</p>
+<p>for some $A_i,B_i\in M_n$. The length of the zero operator is $0$.</p>
+<p><strong>The two-sided operator is the length-one case.</strong> $\ell(T)=1$ exactly when $T=T_{A,B}$ for some nonzero pair, since a single summand is a two-sided operator. So the set of operators of length one is the real Segre cone of <em>The Two-Sided Operators and the Real Segre Cone</em>, minus the origin.</p>
+<p><strong>The length is finite and at most $n^{2}$.</strong> The $n^{2}$ operators $T_{E_{ij},E_{kl}}$, for fixed $(i,j)$ and varying $(k,l)$, already span the space of operators of the form $X\mapsto E_{ij}XC$. Hence every $T$ is a sum of $n^{2}$ two-sided operators, all with a left factor equal to a matrix unit. The bound is attained, as the transpose below shows.</p>
+<h2 id="the-coefficient-matrix">The Coefficient Matrix</h2>
+<p><strong>Definition.</strong> Write $c_{(ij),(kl)}$ for the coefficient of $T_{E_{ij},E_{kl}}$ in $T$:</p>
+<p>$$
+T=\sum_{i,j,k,l}c_{(ij),(kl)}\,T_{E_{ij},E_{kl}} .
+$$</p>
+<p>The array $c$ is the <strong>coefficient matrix</strong> of $T$. It is an $n^{2}\times n^{2}$ matrix, with rows indexed by the pair $(i,j)$ and columns by the pair $(k,l)$, and it is unique because the $n^{4}$ operators $T_{E_{ij},E_{kl}}$ are a basis.</p>
+<p><strong>The coefficient matrix is the operator in the basis of matrix units.</strong> Evaluating on $X$,</p>
+<p>$$
+T(X)=\sum_{i,j,k,l}c_{(ij),(kl)}X_{jk}E_{il},
+$$</p>
+<p>because $E_{ij}XE_{kl}=X_{jk}E_{il}$. So the entries of $X$ enter with the middle index of the first factor and the first index of the second.</p>
+<p><strong>The two-sided operators are exactly the coefficient matrices of rank one.</strong> For $T_{A,B}$ the coefficient is $A_{ij}B_{kl}$, so</p>
+<p>$$
+c_{(ij),(kl)}=A_{ij}B_{kl},
+$$</p>
+<p>which is the outer product of the vector of entries of $A$ with the vector of entries of $B$. Conversely, a coefficient matrix of the form $c=uv^{\mathsf T}$ is the matrix of the two-sided operator $T_{A,B}$ with $A_{ij}=u_{ij}$ and $B_{kl}=v_{kl}$. So</p>
+<p>$$
+\{T_{A,B}\}=\{T:\operatorname{rank}c(T)=1\}\cup\{0\},
+$$</p>
+<p>which is the statement that the cone of the two-sided operators is the cone of the rank-one elements of the operator algebra.</p>
+<h2 id="the-length-is-a-matrix-rank">The Length Is a Matrix Rank</h2>
+<p><strong>Theorem.</strong> $\ell(T)=\operatorname{rank}c(T)$.</p>
+<p><em>Proof.</em> A decomposition with $k$ summands gives $c(T)=\sum_{i\le k}u_iv_i^{\mathsf T}$, a sum of $k$ matrices of rank one, so $\operatorname{rank}c(T)\le k$ and hence $\operatorname{rank}c(T)\le\ell(T)$. Conversely let $c$ have rank $r$ and write $c=\sum_{i\le r}u_iv_i^{\mathsf T}$ with $u_i,v_i\in\mathbb{R}^{n^{2}}$. Reading $u_i$ and $v_i$ as matrices $A_i$ and $B_i$ gives $c=\sum_{i\le r}c(T_{A_i,B_i})$, and the coefficient matrix determines the operator, so $T=\sum_{i\le r}T_{A_i,B_i}$ and $\ell(T)\le r$.</p>
+<p><strong>Three consequences follow at once.</strong> The length is an integer between $0$ and $n^{2}$. It is one exactly on the cone of the two-sided operators. And it is a <em>rank</em>, so it obeys the semicontinuity of ranks: the sets $\{\ell\le k\}$ are closed, and they are the determinantal varieties of the coefficient matrix.</p>
+<p><strong>The length is computed from the coefficients, not from the image.</strong> The operator $T(X)=\operatorname{tr}(X)\mathrm{I}$ has rank one as a map on $\mathbb{R}^{n^{2}}$, and its coefficient matrix is $\sum_{i,j}E_{ij}\otimes E_{ij}$ read in the basis, of rank $n^{2}$. So $\ell=n^{2}$ for an operator of linear rank one. Measured at $n=3$, the coefficient rank is $9$ and the operator rank is $1$.</p>
+<h2 id="the-two-ranks">The Two Ranks</h2>
+<p><strong>The two ranks are the ranks of two matrices.</strong> The <strong>linear rank</strong> is $\operatorname{rk}T=\dim\operatorname{im}T$, the rank of the matrix of $T$ on $\mathbb{R}^{n^{2}}$. The <strong>length</strong> is $\ell(T)=\operatorname{rank}c(T)$. Both are ranks of $n^{2}\times n^{2}$ matrices, and the two matrices are partial transposes of each other: the entry of the operator matrix in the row $(i,l)$ and the column $(j,k)$ is the entry of $c(T)$ in the row $(i,j)$ and the column $(k,l)$. Passing from one to the other swaps $j$ and $l$, one index of the row with one index of the column.</p>
+<p><strong>Partial transposition does not preserve rank.</strong> For $T_{A,B}$ the first matrix is the Kronecker product $B^{\mathsf T}\otimes A$ and the second is the outer product of the entries of $A$ with the entries of $B$; the first has rank $(\operatorname{rk}A)(\operatorname{rk}B)$ and the second rank one. So the two ranks coincide on the cone and separate away from it.</p>
+<p><strong>The comparison table at $n=3$.</strong> Measured on four operators:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Length</th>
+<th>Linear rank</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>identity</td>
+<td>$1$</td>
+<td>$9$</td>
+</tr>
+<tr>
+<td>transpose</td>
+<td>$9$</td>
+<td>$9$</td>
+</tr>
+<tr>
+<td>$X\mapsto\operatorname{tr}(X)\mathrm{I}$</td>
+<td>$9$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>random $T_{A,B}$</td>
+<td>$1$</td>
+<td>$9$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The table shows that the length and the linear rank are independent: each can be large while the other is small.</p>
+<p><strong>One inequality holds in general.</strong> Since $\operatorname{rank}T_{A,B}=(\operatorname{rk}A)(\operatorname{rk}B)\le n^{2}$ and the rank is subadditive,</p>
+<p>$$
+\operatorname{rk}T\le n^{2}\,\ell(T),\qquad\text{that is}\qquad \ell(T)\ge\frac{\operatorname{rk}T}{n^{2}} .
+$$</p>
+<p>The bound is attained by the transpose, where both sides are $n^{2}$, and it is far from attained by the identity, where the right side is $1$ and the left is $n^{2}$.</p>
+<h2 id="the-identity-and-the-transpose">The Identity and the Transpose</h2>
+<p><strong>The identity operator has length one.</strong> $T_{\mathrm{I},\mathrm{I}}(X)=\mathrm{I}\,X\,\mathrm{I}=X$, so the identity is a single two-sided operator and $\ell(\operatorname{id})=1$. Its coefficient matrix is the outer product of the vector of entries of $\mathrm{I}$ with itself, of rank one. Measured at $n=2$ and $n=3$, the coefficient rank is $1$ in both cases and the linear rank is $n^{2}$.</p>
+<p><strong>The matrix $\mathrm{I}$ is not the identity operator.</strong> The matrix $\mathrm{I}$ is an element of $M_n$, and as a sum of rank-one matrices it needs $n$ terms: $\mathrm{I}=E_{11}+\cdots+E_{nn}$, with each $E_{ii}$ of rank one. That count is the length of the matrix in the module $M_n$, a different object from the length of the operator in $\operatorname{End}(M_n)$. The identity operator is one term, not $n$.</p>
+<p><strong>The transpose has length $n^{2}$.</strong> $\tau(X)=X^{\mathsf T}$ is</p>
+<p>$$
+\tau=\sum_{i,j}T_{E_{ij},E_{ij}},
+$$</p>
+<p>since $E_{ij}XE_{ij}=X_{ji}E_{ij}$ and the sum over $i,j$ reproduces $X^{\mathsf T}$. So $\ell(\tau)\le n^{2}$. For the lower bound, the coefficient matrix of $\tau$ has entries $\delta_{ik}\delta_{jl}$, which is the identity matrix of order $n^{2}$; its rank is $n^{2}$, and the theorem gives $\ell(\tau)=n^{2}$. Measured at $n=2$ and $n=3$, the coefficient rank is $4$ and $9$.</p>
+<p><strong>The transpose is the extreme case.</strong> It has the largest possible length, and its length equals its linear rank. It is also the operator whose coefficient matrix is the identity, so it is the case in which the basis of the two-sided operators and the operator itself are aligned.</p>
+<h2 id="the-hypersurface-of-shorter-length">The Hypersurface of Shorter Length</h2>
+<p><strong>The operators of length less than $n^{2}$ form a hypersurface.</strong> By the theorem, $\{\ell\le k\}$ is the set of operators whose coefficient matrix has rank at most $k$, the determinantal variety of dimension</p>
+<p>$$
+k(2n^{2}-k)
+$$</p>
+<p>inside $\mathbb{R}^{n^{4}}$. At $k=n^{2}-1$ the dimension is $(n^{2}-1)(n^{2}+1)=n^{4}-1$, a hypersurface, defined by $\det c=0$. So a generic operator has length exactly $n^{2}$: the length is maximal exactly when $\det c\ne0$.</p>
+<p><strong>The generic value is the maximum.</strong> The polynomial $\det c$ is not identically zero, since the transpose has $\det c=1$. Hence the complement of the hypersurface is a nonempty open set, dense in the operator space, and every operator in it has length $n^{2}$.</p>
+<p><strong>The strata are the strata of a determinantal variety.</strong> The operators of length at most $k$ have dimension $k(2n^{2}-k)$, and the operators of length exactly $k$ have dimension $k(2n^{2}-k)-(k-1)(2n^{2}-k+1)=2n^{2}-2k+1$. At $k=1$ this is $2n^{2}-1$, the dimension of the Segre cone, and at $k=n^{2}$ it is $1$, the open cone of the operators of full length.</p>
+<h2 id="the-length-over-math163">The Length over $\mathbb{C}$</h2>
+<p><strong>The length does not change under complexification.</strong> The coefficient matrix of $T$ has real entries, and the rank of a real matrix is the same whether it is read over $\mathbb{R}$ or over $\mathbb{C}$: the rank is the largest order of a nonvanishing minor, and the minors are the same real polynomials. So $\ell_{\mathbb{C}}(T)=\ell_{\mathbb{R}}(T)$ for every real operator $T$, and the two-sided operators over $\mathbb{C}$ have length one as well.</p>
+<p><strong>What changes is the geometry of the cone, not the count.</strong> Over $\mathbb{C}$ the Segre cone has the same dimension $2n^{2}-1$ and the same rank-one locus, but the cone is the complex cone of a complex variety, and the real points of the rank-one locus are the products of real lines, as in <em>The Two-Sided Operators and the Real Segre Cone</em>.</p>
+<p><strong>The count is a count of tensors.</strong> The algebra $\operatorname{End}(M_n)$ is $M_n\otimes M_n^{\mathrm{op}}$, so a decomposition of $T$ into two-sided operators is a decomposition of a tensor into pure tensors. For a two-way tensor the least number of pure tensors is the rank of the tensor as a matrix, in any basis, and that number is the same over $\mathbb{R}$ and over $\mathbb{C}$.</p>
+<h2 id="summary">Summary</h2>
+<p>The length of $T\in\operatorname{End}(M_n(\mathbb{R}))$ is the least number of two-sided operators whose sum is $T$. It equals the rank of the coefficient matrix of $T$ in the basis $T_{E_{ij},E_{kl}}$, so it is an integer between $0$ and $n^{2}$. The two-sided operators are the operators of length one, the identity operator has length one, and the transpose has length $n^{2}$. The linear rank and the length are the ranks of two matrices related by a partial transposition, so neither bounds the other except through $\ell\ge\operatorname{rk}/n^{2}$. The operators of length below the maximum form the determinantal hypersurface $\{\det c=0\}$, so a generic operator has length $n^{2}$. The count is unchanged by complexification.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\ell(T)$</td>
+<td>the length, the least number of two-sided operators summing to $T$</td>
+</tr>
+<tr>
+<td>$T_{A,B}$</td>
+<td>the two-sided operator $X\mapsto AXB$</td>
+</tr>
+<tr>
+<td>$c(T)$</td>
+<td>the coefficient matrix of $T$ in the basis $T_{E_{ij},E_{kl}}$, of size $n^{2}\times n^{2}$</td>
+</tr>
+<tr>
+<td>$\operatorname{rk}T$</td>
+<td>the linear rank, the rank of $T$ as a map on $\mathbb{R}^{n^{2}}$</td>
+</tr>
+<tr>
+<td>$\tau$</td>
+<td>the transpose operator $X\mapsto X^{\mathsf T}$, of length $n^{2}$</td>
+</tr>
+<tr>
+<td>$k(2n^{2}-k)$</td>
+<td>the dimension of the operators of length at most $k$</td>
+</tr>
+<tr>
+<td>$\{\det c=0\}$</td>
+<td>the hypersurface of operators of length less than $n^{2}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the tensor product $M_n\otimes M_n^{\mathrm{op}}$ and the decomposition into pure tensors.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for the rank, the minors and the Kronecker product.</li>
+<li><a href="the-two-sided-operators-and-the-real-segre-cone.html">The Two-Sided Operators and the Real Segre Cone</a>, for the cone, its rank formula and its two rulings.</li>
+<li><a href="the-matrix-algebra-mnr.html">The Matrix Algebra $M_n(\mathbb{R})$</a>, for the matrix units and the rank.</li>
+<li><a href="the-symmetric-and-antisymmetric-parts-of-the-operator-space-over-r.html">The Symmetric and Antisymmetric Parts of the Operator Space</a>, for the decomposition of the operator space and its dimensions.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

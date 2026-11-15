@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Ideals, the Centre and the Simplicity of $M_2(\mathbb{C})$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-ideals-the-centre-and-the-simplicity-of-math0"><strong>The Ideals, the Centre and the Simplicity of $M_2(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The left ideals of $M_2(\mathbb{C})$ are the spaces of maps killing a fixed subspace of $\mathbb{C}^{2}$, and the two-sided ideals are only the two trivial ones.</strong></p>
+<p>The article classifies the left and the right ideals, exhibits the minimal left ideals as the two columns and as one line's worth of them, computes the socle, proves the simplicity and the centrality, and derives that every automorphism and every derivation is inner. It assumes <em>The Matrix Algebra $M_2(\mathbb{C})$</em> for the product, the units and the trace. It defers the module reading of the minimal left ideals to <em>The Minimal Left Ideals of the Biquaternion Algebra</em> and to <em>The Regular Module</em>, and the operators on the algebra to <em>The Two-Sided Operators and the Segre Cone at $n=2$</em>.</p>
+<p>Two facts are particular to order two. The lattice of left ideals has three levels only, with a projective line of middle elements. The socle has complex dimension $3$ and is the union of the pencil of minimal left ideals.</p>
+<h2 id="left-and-right-ideals">Left and Right Ideals</h2>
+<p><strong>Definition.</strong> A <strong>left ideal</strong> is a subspace $L$ with $M_2(\mathbb{C})L\subseteq L$; a <strong>right ideal</strong> is a subspace $R$ with $RM_2(\mathbb{C})\subseteq R$; a <strong>two-sided ideal</strong> is both.</p>
+<p><strong>Proposition.</strong> For a subspace $U\subseteq\mathbb{C}^{2}$ the set</p>
+<p>$$
+L_U=\{A:U\subseteq\ker A\}
+$$</p>
+<p>is a left ideal, and for a subspace $W\subseteq\mathbb{C}^{2}$ the set</p>
+<p>$$
+R_W=\{A:\operatorname{im}A\subseteq W\}
+$$</p>
+<p>is a right ideal.</p>
+<p><strong>Proof.</strong> If $U\subseteq\ker A$ then $U\subseteq\ker(BA)$ for every $B$, because $BA$ kills whatever $A$ kills; so $L_U$ is closed under left multiplication. If $\operatorname{im}A\subseteq W$ then $\operatorname{im}(AB)=A(\operatorname{im}B)\subseteq\operatorname{im}A\subseteq W$; so $R_W$ is closed under right multiplication.</p>
+<p><strong>The two constructions are dual.</strong> Taking kernels gives left ideals and taking images gives right ideals, and the transpose exchanges the two: $\mathrm{im}A^{\mathsf T}=(\ker A)^{\perp}$, so $A\in L_U$ exactly when $A^{\mathsf T}\in R_{U^{\perp}}$.</p>
+<p><strong>The dimensions.</strong> $L_U$ is the space of maps from $\mathbb{C}^{2}/U$ to $\mathbb{C}^{2}$, of dimension $2(2-\dim U)$; $R_W$ is the space of maps from $\mathbb{C}^{2}$ to $W$, of dimension $2\dim W$. Both take the values $0,2,4$ as the subspace grows.</p>
+<h2 id="the-lattice-of-left-ideals">The Lattice of Left Ideals</h2>
+<p><strong>Theorem.</strong> Every left ideal of $M_2(\mathbb{C})$ is $L_U$ for exactly one subspace $U\subseteq\mathbb{C}^{2}$.</p>
+<p><strong>Proof.</strong> Let $L$ be a left ideal and $U=\bigcap_{A\in L}\ker A$; then $L\subseteq L_U$. Choose $A_{0}\in L$ with $\ker A_{0}=U$, possible because the intersection of finitely many kernels is one of them. For any $C$ with $U\subseteq\ker C$, the map $C$ factors through $\mathbb{C}^{2}/U$ and $A_{0}$ induces an isomorphism $\mathbb{C}^{2}/U\to\operatorname{im}A_{0}$; so $C=B A_{0}$ for a suitable $B$, and since $L$ is a left ideal $C\in L$. Hence $L_U\subseteq L$.</p>
+<p><strong>Corollary (the three levels).</strong> The left ideals are $0$ for $U=\mathbb{C}^{2}$, the ideals $L_U$ for a hyperplane $U$, of complex dimension $2$, and the algebra for $U=0$.</p>
+<p><strong>Corollary (the projective line of middle elements).</strong> The two-dimensional left ideals are parametrised by the hyperplanes of $\mathbb{C}^{2}$, that is by $\mathbb{P}^{1}$, and they are the minimal left ideals.</p>
+<p><strong>Proof.</strong> A left ideal of dimension $2$ contains no nonzero left ideal of smaller dimension, since the dimensions are $0,2,4$. The hyperplanes of a two-dimensional space form a projective line.</p>
+<p><strong>The lattice at order two is thin.</strong> At order $n$ the left ideals correspond to the subspaces of $\mathbb{C}^{n}$ and the lattice has $n+1$ levels; at order two there are three, and only the middle one is nontrivial. That lattice is what the biquaternion article <em>Subspaces and Decompositions of the Biquaternion Algebra</em> reads as the lattice of the algebra's subspaces.</p>
+<h2 id="the-minimal-left-ideals-and-the-two-columns">The Minimal Left Ideals and the Two Columns</h2>
+<p><strong>Example.</strong> Take $U=\mathbb{C}e_{2}$, the second coordinate axis. Then $L_U$ is the set of matrices with second column zero:</p>
+<p>$$
+L_{\mathbb{C}e_{2}}=\left\{\begin{pmatrix}a&0\\ c&0\end{pmatrix}\right\}=M_2(\mathbb{C})E_{11},
+$$</p>
+<p>of complex dimension $2$.</p>
+<p><strong>Proof.</strong> $A\in L_U$ exactly when $Ae_{2}=0$, that is exactly when the second column vanishes. Every such matrix is $AE_{11}$, since $E_{11}$ keeps the first column and kills the second.</p>
+<p><strong>Proposition.</strong> Every minimal left ideal is $M_2(\mathbb{C})P$ for a rank-one projection $P$, and it consists of the maps that kill $\ker P$.</p>
+<p><strong>Proof.</strong> A minimal left ideal is $L_U$ for a hyperplane $U$; choose $P$ the projection onto a complement of $U$ along $U$. Then $\ker P=U$ and the maps killing $U$ are exactly the products $AP$.</p>
+<p><strong>Corollary (the two columns).</strong> The left ideals $M_2E_{11}$ and $M_2E_{22}$ are the two coordinate columns; they meet at $0$ and their sum is the algebra.</p>
+<p><strong>Proof.</strong> The first consists of the matrices with second column zero and the second of those with first column zero; such a matrix has both columns zero, and every matrix is the sum of its two columns read as matrices.</p>
+<p><strong>The biquaternion reading.</strong> For a complete family $P_{+},P_{-}=I-P_{+}$ the two minimal left ideals are $M_2P_+$ and $M_2P_-$, and in the Peirce basis they are the two columns $\mathbb{B}_{++}\oplus\mathbb{B}_{-+}$ and $\mathbb{B}_{+-}\oplus\mathbb{B}_{--}$. A minimal left ideal is the image of a $\tilde\Pi_+$ of the corpus, and the choice of $P$ inside its line is the gauge of the frame; the corners are <em>The Minimal Left Ideals of the Biquaternion Algebra</em>.</p>
+<h2 id="the-socle">The Socle</h2>
+<p><strong>Definition.</strong> The <strong>socle</strong> is the sum of all minimal left ideals.</p>
+<p><strong>Proposition.</strong> The socle of $M_2(\mathbb{C})$ is the set of elements of rank at most one, of complex dimension $3$, and it is the union of the pencil of minimal left ideals.</p>
+<p><strong>Proof.</strong> Every minimal left ideal consists of elements of rank at most one, so the socle lies in that set. Conversely an element $uv^{\mathsf T}$ of rank one kills the hyperplane $v^{\perp}$, so it lies in $L_{v^{\perp}}$. The rank-one set is the cone $\{\det=0\}$ minus the origin, of complex dimension $3$, and it is the union of the $L_U$, each of dimension $2$, any two of which meet only at $0$.</p>
+<p><strong>The product of two elements of the socle stays in the socle.</strong> For $A,B$ of rank at most one the product $AB$ has rank at most one, by $\operatorname{rank}(AB)\le\min(\operatorname{rank}A,\operatorname{rank}B)$; concretely $uv^{\mathsf T}xy^{\mathsf T}=(v^{\mathsf T}x)\,uy^{\mathsf T}$.</p>
+<p><strong>The socle is the Segre quadric.</strong> Its projectivisation is the smooth quadric in $\mathbb{P}^{3}$ of the rank-one matrices, the Segre quadric $\mathbb{P}^{1}\times\mathbb{P}^{1}$, whose two rulings are the pencil of minimal left ideals and the pencil of minimal right ideals. The quadric is the geometric object of <em>The Two-Sided Operators and the Segre Cone at $n=2$</em>.</p>
+<h2 id="two-sided-ideals-and-simplicity">Two-Sided Ideals and Simplicity</h2>
+<p><strong>Theorem.</strong> The only two-sided ideals of $M_2(\mathbb{C})$ are $0$ and the algebra.</p>
+<p><strong>Proof.</strong> Let $J\neq0$ be two-sided. It is a left ideal, so $J=L_U$ for some $U$, and $U\neq\mathbb{C}^{2}$ because $J\neq0$; choose $A\in J$ with $\ker A=U$. Since $J$ is also a right ideal, $AB\in J$ for every $B$, and $\ker(AB)\supseteq\ker B$. If $U\neq0$ pick $B$ invertible on $U$, so that $\ker(AB)\cap U=0$; then $\bigcap_{C\in J}\ker C\subsetneq U$, contradicting the definition of $U$. Hence $U=0$ and $J=M_2(\mathbb{C})$.</p>
+<p><strong>Corollary.</strong> For $0\neq A$ the two-sided ideal generated by $A$ is the whole algebra.</p>
+<p><strong>Proof.</strong> That ideal is nonzero, so it is the algebra by the theorem.</p>
+<p><strong>Theorem (the centre).</strong> $Z(M_2(\mathbb{C}))=\mathbb{C}I$.</p>
+<p><strong>Proof.</strong> If $A$ is central then $E_{11}A=AE_{11}$ gives $a_{12}=a_{21}=0$, so $A$ is diagonal, and $E_{12}A=AE_{12}$ gives $a_{11}=a_{22}$. A scalar matrix is central.</p>
+<p><strong>Corollary.</strong> $M_2(\mathbb{C})$ is a central simple $\mathbb{C}$-algebra of degree $2$, and its dimension is the square of its degree.</p>
+<p><strong>The algebra is not a division algebra.</strong> It is simple and finite-dimensional, so it is a full matrix algebra over a division ring; that ring is $\mathbb{C}$, and the degree is $2$. The zero divisors are exactly the non-units.</p>
+<h2 id="automorphisms-and-derivations">Automorphisms and Derivations</h2>
+<p><strong>Theorem (Skolem–Noether).</strong> Every $\mathbb{C}$-algebra automorphism of $M_2(\mathbb{C})$ is inner, of the form $A\mapsto gAg^{-1}$ with $g\in GL_2(\mathbb{C})$ unique up to a scalar.</p>
+<p><strong>Proof.</strong> Let $V=\mathbb{C}^{2}$ and let $V_{\phi}$ be the twisted module, on which $A$ acts as $\phi(A)$. It is simple of dimension $2$, so an isomorphism $g:V_{\phi}\to V$ exists, and it satisfies $g\phi(A)=Ag$, that is $\phi(A)=g^{-1}Ag$. Two choices of $g$ differ by an element of the centre.</p>
+<p><strong>Corollary.</strong> $\operatorname{Aut}(M_2(\mathbb{C}))\cong PGL_2(\mathbb{C})$, of complex dimension $3$.</p>
+<p><strong>Theorem (Noether).</strong> Every derivation of $M_2(\mathbb{C})$ is inner, $\delta(A)=[D,A]$, with $D$ unique up to a central element.</p>
+<p><strong>Proof.</strong> A derivation satisfies $\delta(I)=0$, since $\delta(I)=\delta(I^{2})=2\delta(I)$. Put $D=\sum_{i}\delta(E_{i1})E_{1i}$; the derivation $A\mapsto[D,A]$ agrees with $\delta$ on the four units, because $\delta(E_{ij})=\delta(E_{i1}E_{1j})=\delta(E_{i1})E_{1j}+E_{i1}\delta(E_{1j})$ and $E_{1j}=E_{11}E_{1j}$, $E_{i1}=E_{i1}E_{11}$ reduce both terms to the two defining values. Two derivations agreeing on a basis agree everywhere.</p>
+<p><strong>Corollary.</strong> $\operatorname{Der}(M_2(\mathbb{C}))=\mathfrak{sl}_2(\mathbb{C})$, of complex dimension $3$.</p>
+<p><strong>The two results are one statement.</strong> The Lie algebra of the automorphism group is the space of derivations, and the Lie algebra of $PGL_2$ is $\mathfrak{sl}_2$. The real forms of the derivation are the subject of <em>The Derivation $X\mapsto[A,X]$ and Its Skewness for the Trace Form</em>.</p>
+<h2 id="modules">Modules</h2>
+<p><strong>Theorem (Wedderburn).</strong> Every left $M_2(\mathbb{C})$-module is a direct sum of copies of the defining module $\mathbb{C}^{2}$.</p>
+<p><strong>Proof.</strong> The algebra is simple and finite-dimensional, and the defining module is simple; by the density theorem the algebra is the full endomorphism algebra of that module, so a module is a sum of copies of it. Equivalently, the algebra is semisimple, so every module is a sum of simple ones, and a simple module is a quotient of the regular module, which is $\mathbb{C}^{2}\oplus\mathbb{C}^{2}$.</p>
+<p><strong>Corollary (the regular module).</strong> $M_2(\mathbb{C})\cong\mathbb{C}^{2}\oplus\mathbb{C}^{2}$ as a left module, the two summands being the two columns.</p>
+<p><strong>Proof.</strong> The two columns are the minimal left ideals $M_2E_{11}$ and $M_2E_{22}$, each isomorphic to $\mathbb{C}^{2}$ under $v\mapsto(x\mapsto x_{1}v)$, and they sum directly to the algebra.</p>
+<p><strong>The module picture.</strong> A minimal left ideal is a copy of $\mathbb{C}^{2}$ read as a space of maps, and the choice of the copy is the choice of the hyperplane $U$; the two coordinate choices give the two columns. The carrier of <em>The Regular Module</em> is this module, and the Peirce coordinates of <em>Spinors as Peirce Coordinates in Two Dimensions</em> are its coordinates.</p>
+<h2 id="summary">Summary</h2>
+<p>The left ideals of $M_2(\mathbb{C})$ are the spaces $L_U=\{A:U\subseteq\ker A\}$ and the right ideals are the spaces $R_W=\{A:\operatorname{im}A\subseteq W\}$; the transpose exchanges the two families. The lattice of left ideals has three levels: $0$, a projective line of two-dimensional minimal left ideals indexed by the hyperplanes of $\mathbb{C}^{2}$, and the algebra. The two coordinate columns are minimal left ideals, they meet at $0$ and span the algebra.</p>
+<p>The socle is the rank-one set, of complex dimension $3$, projectivised to the Segre quadric $\mathbb{P}^{1}\times\mathbb{P}^{1}$. The only two-sided ideals are $0$ and the algebra, the centre is $\mathbb{C}I$, and the algebra is central simple of degree $2$. Every automorphism is inner with group $PGL_2(\mathbb{C})$, every derivation is inner with space $\mathfrak{sl}_2(\mathbb{C})$, and every module is a sum of copies of $\mathbb{C}^{2}$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>At order two</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Left ideals</td>
+<td>$L_U=\{A:U\subseteq\ker A\}$, dimensions $0,2,4$</td>
+</tr>
+<tr>
+<td>Minimal left ideals</td>
+<td>one for each hyperplane of $\mathbb{C}^{2}$, a $\mathbb{P}^{1}$ of them</td>
+</tr>
+<tr>
+<td>Socle</td>
+<td>rank $\le1$, complex dimension $3$</td>
+</tr>
+<tr>
+<td>Two-sided ideals</td>
+<td>$0$ and $M_2(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>Centre</td>
+<td>$\mathbb{C}I$</td>
+</tr>
+<tr>
+<td>$\operatorname{Aut}$</td>
+<td>$PGL_2(\mathbb{C})$, dimension $3$</td>
+</tr>
+<tr>
+<td>$\operatorname{Der}$</td>
+<td>$\mathfrak{sl}_2(\mathbb{C})$, dimension $3$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_U$</td>
+<td>the left ideal of maps killing $U$</td>
+</tr>
+<tr>
+<td>$R_W$</td>
+<td>the right ideal of maps with image inside $W$</td>
+</tr>
+<tr>
+<td>$J$</td>
+<td>a two-sided ideal</td>
+</tr>
+<tr>
+<td>$P$</td>
+<td>a rank-one projection, $\ker P$ a hyperplane</td>
+</tr>
+<tr>
+<td>socle</td>
+<td>the sum of the minimal left ideals</td>
+</tr>
+<tr>
+<td>$Z(A)$</td>
+<td>the centre of the algebra $A$</td>
+</tr>
+<tr>
+<td>$\operatorname{Aut}$, $\operatorname{Der}$</td>
+<td>the automorphisms and the derivations</td>
+</tr>
+<tr>
+<td>$\mathbb{C}^{2}$</td>
+<td>the defining module, the carrier</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the ideals of a full matrix algebra, the density theorem and the simplicity.</li>
+<li>Joseph H. M. Wedderburn, <em>Lectures on Matrices</em> (AMS, 1934), for the structure theory and the minimal left ideals.</li>
+<li><a href="the-matrix-algebra-m2c.html">The Matrix Algebra $M_2(\mathbb{C})$</a>, for the units, the trace and the centre used here.</li>
+<li><a href="the-minimal-left-ideals-of-the-biquaternion-algebra.html">The Minimal Left Ideals of the Biquaternion Algebra</a>, for the same ideals in the biquaternion language.</li>
+<li><a href="the-regular-module.html">The Regular Module</a>, for the module reading of the algebra acting on itself.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

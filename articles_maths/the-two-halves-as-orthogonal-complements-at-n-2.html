@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Two Halves as Orthogonal Complements at $n=2$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-two-halves-as-orthogonal-complements-at-math0"><strong>The Two Halves as Orthogonal Complements at $n=2$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The symmetric and the antisymmetric halves are exact orthogonal complements for the trace form, and the reason is that the transpose is self-adjoint for that form.</strong></p>
+<p>The article proves the orthogonality of the two halves over $\mathbb{R}$ and over $\mathbb{C}$, computes the Gram matrices of the trace form on each half with the eigenvalues $1,1,2$ and $-2$, states the general criterion by which the eigenspaces of an involution are orthogonal, and lists the orthogonal complements of the subspaces that recur in the series. It assumes <em>The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$</em>, <em>The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian at $n=2$</em> and <em>The Involutions of $M_2(\mathbb{C})$ over $\mathbb{R}$ and over $\mathbb{C}$</em>.</p>
+<p>It defers the definite form on the complex algebra to <em>The Hilbert–Schmidt Form at $n=2$</em>, the signature statements to <em>The Trace Form and Its Signature on the Two Halves of $M_2(\mathbb{R})$</em>, and the subspaces of the triangular kind to <em>The Triangular Decomposition $h\oplus n_+\oplus n_-$ of $M_2(\mathbb{C})$</em>.</p>
+<h2 id="the-two-forms-on-the-real-matrices">The Two Forms on the Real Matrices</h2>
+<p><strong>Definition.</strong> On $M_2(\mathbb{R})$ the <strong>trace form</strong> is $\langle X,Y\rangle=\operatorname{tr}(XY)$ and the <strong>Hilbert–Schmidt form</strong> is $\langle X,Y\rangle_{\mathrm{HS}}=\operatorname{tr}(X^{\mathsf T}Y)$.</p>
+<p><strong>Proposition.</strong> On the real matrices the two forms agree.</p>
+<p><strong>Proof.</strong> On real matrices $\operatorname{tr}(X^{\mathsf T}Y)=\sum_{i,j}x_{ij}y_{ij}$ and $\operatorname{tr}(XY)=\sum_{i,j}x_{ij}y_{ji}$, and the second sum is the first after renaming the indices.</p>
+<p><strong>Both forms are nondegenerate.</strong> The trace pairing of two matrix units is $\operatorname{tr}(E_{ij}E_{kl})=\delta_{jk}\delta_{il}$, so the four units form a basis dual to themselves and the form is nondegenerate; its signature on the four real dimensions is $(3,1)$, as <em>The Trace Form and Its Signature on the Two Halves of $M_2(\mathbb{R})$</em> proves.</p>
+<h2 id="orthogonality-of-the-two-halves">Orthogonality of the Two Halves</h2>
+<p><strong>Theorem.</strong> For symmetric $H$ and antisymmetric $K$ one has $\operatorname{tr}(HK)=0$, so the two halves are orthogonal for the trace form.</p>
+<p><strong>Proof.</strong> $\operatorname{tr}(HK)=\operatorname{tr}((HK)^{\mathsf T})=\operatorname{tr}(K^{\mathsf T}H^{\mathsf T})=\operatorname{tr}((-K)H)=-\operatorname{tr}(KH)=-\operatorname{tr}(HK)$, using cyclicity in the last step; a real number equal to its negative is zero.</p>
+<p><strong>Corollary.</strong> $\Lambda^{2}\mathbb{R}^{2}=\operatorname{Sym}_2(\mathbb{R})^{\perp}$ and $\operatorname{Sym}_2(\mathbb{R})=(\Lambda^{2}\mathbb{R}^{2})^{\perp}$.</p>
+<p><strong>Proof.</strong> The two spaces are orthogonal, their dimensions add to $4$, and the form is nondegenerate, so each is the orthogonal complement of the other.</p>
+<p><strong>The symmetry is what does the work.</strong> The two halves are the eigenspaces of the transpose, and the transpose is self-adjoint for the trace form: $ \langle A^{\mathsf T},B\rangle=\operatorname{tr}(A^{\mathsf T}B)$ and $\langle A,B^{\mathsf T}\rangle=\operatorname{tr}(AB^{\mathsf T})$ agree.</p>
+<h2 id="the-gram-matrices">The Gram Matrices</h2>
+<p><strong>Proposition.</strong> In the basis $E_{11},E_{22},E_{12}+E_{21}$ of $\operatorname{Sym}_2(\mathbb{R})$ the Gram matrix of the trace form is</p>
+<p>$$
+\begin{pmatrix}1&0&0\\ 0&1&0\\ 0&0&2\end{pmatrix},
+$$</p>
+<p>with eigenvalues $1,1,2$, all positive.</p>
+<p><strong>Proof.</strong> $\operatorname{tr}(E_{11}^{2})=\operatorname{tr}(E_{22}^{2})=1$, the cross term $\operatorname{tr}(E_{11}E_{22})=0$, and $\operatorname{tr}((E_{12}+E_{21})^{2})=\operatorname{tr}(E_{12}E_{21}+E_{21}E_{12})=2$.</p>
+<p><strong>Proposition.</strong> On the antisymmetric line, spanned by $J$, the trace form is $-2$.</p>
+<p><strong>Proof.</strong> $J^{2}=-I$, so $\operatorname{tr}(J^{2})=-2$.</p>
+<p><strong>Corollary.</strong> The trace form is positive definite on the symmetric half and negative definite on the antisymmetric line, so its signature on $M_2(\mathbb{R})$ is $(3,1)$.</p>
+<p><strong>Proof.</strong> The two halves are orthogonal and carry definite forms of ranks $3$ and $1$.</p>
+<p><strong>The antisymmetric direction is the timelike one.</strong> A matrix $H+kJ$ with $H$ symmetric has $\operatorname{tr}((H+kJ)^{2})=\operatorname{tr}(H^{2})-2k^{2}$, so the set $\{\operatorname{tr}(X^{2})=0\}$ is a genuine cone in four real dimensions, with the line $\mathbb{R}J$ inside it.</p>
+<h2 id="the-involution-criterion">The Involution Criterion</h2>
+<p><strong>Theorem.</strong> Let $\theta$ be an involution of $M_2(\mathbb{R})$ or of $M_2(\mathbb{C})$ that is self-adjoint for a bilinear form, that is $\langle\theta X,Y\rangle=\langle X,\theta Y\rangle$. Then the two eigenspaces of $\theta$ are orthogonal.</p>
+<p><strong>Proof.</strong> For $X$ in the $+1$ eigenspace and $Y$ in the $-1$ eigenspace, $\langle X,Y\rangle=\langle\theta X,Y\rangle=\langle X,\theta Y\rangle=-\langle X,Y\rangle$, so the pairing vanishes.</p>
+<p><strong>Corollary (the real case).</strong> The transpose is self-adjoint for the trace form, so the symmetric and the antisymmetric halves are orthogonal.</p>
+<p><strong>Corollary (the complex case).</strong> The conjugate transpose is self-adjoint for the Hermitian form $\langle X,Y\rangle=\operatorname{tr}(X^{*}Y)$, so $\operatorname{Herm}_2$ and $\mathfrak{u}(2)$ are orthogonal for it.</p>
+<p><strong>Proof.</strong> For that form $\langle\theta X,Y\rangle=\operatorname{tr}(XY)$ and $\langle X,\theta Y\rangle=\operatorname{tr}(X^{*}Y^{*})=\operatorname{tr}((YX)^{*})=\overline{\operatorname{tr}(YX)}=\overline{\operatorname{tr}(XY)}$, so the two sides are conjugate and the form is Hermitian, which is the self-adjointness required.</p>
+<p><strong>The criterion is the whole mechanism.</strong> Every orthogonal split in the series comes from an involution that is self-adjoint for the form in use, and the list of splits is the list of involutions of <em>The Involutions of $M_2(\mathbb{C})$ over $\mathbb{R}$ and over $\mathbb{C}$</em>.</p>
+<h2 id="the-complex-case-and-the-two-forms">The Complex Case and the Two Forms</h2>
+<p><strong>Theorem.</strong> For $H$ Hermitian and $K$ skew-Hermitian the real number $\operatorname{Re}\operatorname{tr}(H^{*}K)$ is zero, so the two halves are orthogonal for the real part of the Hermitian form.</p>
+<p><strong>Proof.</strong> $\operatorname{tr}(H^{*}K)=\operatorname{tr}(HK)$ and $K=iS$ with $S$ Hermitian, so $\operatorname{tr}(HK)=i\operatorname{tr}(HS)$ is purely imaginary by the trace statement of <em>The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian at $n=2$</em>; its real part vanishes.</p>
+<p><strong>Proposition.</strong> The two halves are not orthogonal for the complex bilinear form $\operatorname{tr}(XY)$.</p>
+<p><strong>Proof.</strong> With $H=I$ and $K=iI$ one has $\operatorname{tr}(HK)=2i\neq0$, and $I$ is Hermitian while $iI$ is skew-Hermitian.</p>
+<p><strong>Corollary.</strong> Over $\mathbb{C}$ the correct orthogonal complement statement uses the real part of the Hilbert–Schmidt form, and the complex bilinear form does not see the split.</p>
+<p><strong>Proof.</strong> The real part is positive definite, so the orthogonal complement of a subspace has the complementary dimension; the complex bilinear form is not definite and pairs the two halves.</p>
+<h2 id="the-complements-of-the-recurring-subspaces">The Complements of the Recurring Subspaces</h2>
+<p><strong>Proposition.</strong> For the trace form on $M_2(\mathbb{C})$,</p>
+<p>$$
+(\mathbb{C}I)^{\perp}=\mathfrak{sl}_2(\mathbb{C}),\qquad
+(\mathfrak{sl}_2(\mathbb{C}))^{\perp}=\mathbb{C}I,\qquad
+(\text{diagonal})^{\perp}=\mathbb{C}E_{12}\oplus\mathbb{C}E_{21} .
+$$</p>
+<p><strong>Proof.</strong> $\operatorname{tr}(X)=0$ is the condition $\langle X,I\rangle=0$, and it defines the traceless space of dimension $3$. For the diagonal space, $\langle E_{ii},E_{12}\rangle=\operatorname{tr}(E_{ii}E_{12})=0$, and the off-diagonal space has dimension $2$, which is $4-2$.</p>
+<p><strong>Proposition.</strong> In the standard frame the orthogonal complement of the corner $A_{kl}$ is spanned by the three units other than $E_{lk}$.</p>
+<p><strong>Proof.</strong> $\operatorname{tr}(E_{kl}E_{mn})=\delta_{lm}\delta_{kn}$, so two matrix units pair nontrivially exactly when each is the transpose of the other.</p>
+<p><strong>The corner statement is the origin of the transpose pairing.</strong> The matrix units are paired by the trace exactly along the transpose, which is why the corner decomposition of <em>The Fine Decomposition against the Diagonal at $n=2$</em> and the trace form fit together.</p>
+<h2 id="summary">Summary</h2>
+<p>On the real matrices the trace form and the Hilbert–Schmidt form agree and are nondegenerate of signature $(3,1)$. The symmetric and the antisymmetric halves are orthogonal, because the transpose is self-adjoint for the trace form; the Gram matrix on the symmetric half is $\operatorname{diag}(1,1,2)$ and the form on the antisymmetric line is $-2$, so the symmetric half is positive definite and the antisymmetric line is negative definite and timelike.</p>
+<p>The same argument with the conjugate transpose gives the orthogonality of $\operatorname{Herm}_2$ and $\mathfrak{u}(2)$ for the real part of the Hermitian form, while the complex bilinear form $\operatorname{tr}(XY)$ does not vanish on the pair $I,iI$ and therefore does not see the split. The complements of the recurring subspaces are $\mathfrak{sl}_2$ for the scalars, the off-diagonal span for the diagonal, and all units but the transpose for a corner.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\langle X,Y\rangle$</td>
+<td>the trace form $\operatorname{tr}(XY)$</td>
+</tr>
+<tr>
+<td>$\langle X,Y\rangle_{\mathrm{HS}}$</td>
+<td>the Hilbert–Schmidt form $\operatorname{tr}(X^{\mathsf T}Y)$</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}(X^{*}Y)$</td>
+<td>the Hermitian form on the complex algebra</td>
+</tr>
+<tr>
+<td>$W^{\perp}$</td>
+<td>the orthogonal complement for the form in use</td>
+</tr>
+<tr>
+<td>$(3,1)$</td>
+<td>the signature of the trace form on $M_2(\mathbb{R})$</td>
+</tr>
+<tr>
+<td>$\operatorname{Herm}_2$, $\mathfrak{u}(2)$</td>
+<td>the two complex halves</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge University Press, 2013), for the trace pairing, its definiteness and the Gram matrices of the symmetric and skew spaces.</li>
+<li>Sigurdur Helgason, <em>Differential Geometry, Lie Groups, and Symmetric Spaces</em> (AMS, 2001), for the criterion by which the eigenspaces of a self-adjoint involution are orthogonal.</li>
+<li><a href="the-two-halves-over-r-symmetric-and-antisymmetric-at-n-2.html">The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$</a>, for the two halves and their bracket.</li>
+<li><a href="the-two-halves-over-c-hermitian-and-skew-hermitian-at-n-2.html">The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian at $n=2$</a>, for the complex halves and their traces.</li>
+<li><a href="the-involutions-of-m2c-over-r-and-over-c.html">The Involutions of $M_2(\mathbb{C})$ over $\mathbb{R}$ and over $\mathbb{C}$</a>, for the list of involutions that produce the splits.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

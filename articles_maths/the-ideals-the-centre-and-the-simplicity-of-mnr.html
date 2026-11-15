@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Ideals, the Centre and the Simplicity of $M_n(\mathbb{R})$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-ideals-the-centre-and-the-simplicity-of-math0"><strong>The Ideals, the Centre and the Simplicity of $M_n(\mathbb{R})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The algebra $M_n(\mathbb{R})$ has exactly two two-sided ideals, its centre is $\mathbb{R}\mathrm{I}$, and every automorphism and every derivation is inner; the same statements hold over $\mathbb{C}$, and the proofs over $\mathbb{R}$ are not weaker.</strong> The one-sided ideals are richer, and they are the objects that the Peirce decomposition uses.</p>
+<p>The article proves the simplicity from the matrix units, computes the centre, classifies the right and left ideals by subspaces of $\mathbb{R}^{n}$ with their dimensions, identifies the minimal ones with the rows and the columns, proves that every automorphism and every derivation is inner, records the single irreducible module, and contrasts the algebra with the triangular algebra $UT_n$, which is not simple and has a radical. It assumes <em>The Matrix Algebra $M_n(\mathbb{R})$</em>. It defers the corners to <em>The Peirce Decomposition in $n$ Dimensions over $\mathbb{R}$</em>.</p>
+<h2 id="the-two-sided-ideals">The Two-Sided Ideals</h2>
+<p><strong>Definition.</strong> A two-sided ideal is a real subspace $J\subseteq M_n(\mathbb{R})$ with $AJ\subseteq J$ and $JA\subseteq J$ for every $A$. The algebra is <strong>simple</strong> when its only two-sided ideals are $0$ and itself.</p>
+<p><strong>Theorem.</strong> $M_n(\mathbb{R})$ is simple.</p>
+<p><em>Proof.</em> Let $J\ne0$ and pick $0\ne X\in J$ with $X_{kl}\ne0$. For all $i,j$,</p>
+<p>$$
+E_{ik}XE_{lj}=X_{kl}E_{ij}\in J,
+$$</p>
+<p>so $E_{ij}\in J$ for every pair, because $X_{kl}\ne0$ is a nonzero real scalar and $J$ is a real subspace. The $n^{2}$ matrix units span the algebra, so $J=M_n(\mathbb{R})$.</p>
+<p><strong>The proof uses only that the scalar $X_{kl}$ is invertible.</strong> Over any field the same line gives simplicity, so simplicity is not a real phenomenon. What is a real phenomenon is the classification of the <em>forms</em> of the algebra, which is <em>The Split Real Form: $M_n(\mathbb{R})$ inside $M_n(\mathbb{C})$</em>.</p>
+<p><strong>A consequence: no decomposition into two-sided ideals exists.</strong> When the algebra is later written as a sum of corner subspaces $A_{kl}=P_kM_nP_l$, that sum is a decomposition of the vector space and a block-diagonal subalgebra, never a decomposition into ideals. The Peirce decomposition is not a Wedderburn decomposition into simple summands.</p>
+<h2 id="the-centre">The Centre</h2>
+<p><strong>Theorem.</strong> The centre is $\mathbb{R}\mathrm{I}$.</p>
+<p><em>Proof.</em> Let $Z$ commute with every matrix unit. Then $ZE_{ij}=E_{ij}Z$. The entry $(i,j)$ of the left side is $Z_{ii}$ and of the right side is $Z_{jj}$, so all diagonal entries are equal, say $\lambda$. The entry $(i,l)$ with $l\ne i$ of the left side is $0$ for $j=i$; comparing the off-diagonal entries for $i\ne j$ gives $Z_{il}=0$ when $i\ne l$. So $Z=\lambda\mathrm{I}$. Conversely a scalar matrix commutes with everything.</p>
+<p><strong>Central simplicity.</strong> The algebra is simple and its centre is the base field, so it is a <strong>central simple algebra</strong> over $\mathbb{R}$. The dimension is $n^{2}$, so the degree is $n$, and the algebra is the split one of degree $n$.</p>
+<p><strong>The centre is one-dimensional over $\mathbb{R}$ and therefore two-dimensional over $\mathbb{R}$ when read in the complex algebra.</strong> Inside $M_n(\mathbb{C})$ the centre of the complex algebra is $\mathbb{C}\mathrm{I}$, of real dimension two; the centre of $M_n(\mathbb{R})$ is $\mathbb{R}\mathrm{I}$, of real dimension one. So the centre doubles on complexification, exactly like the algebra.</p>
+<h2 id="right-and-left-ideals">Right and Left Ideals</h2>
+<p><strong>A right ideal is the set of matrices whose image lies in a fixed subspace.</strong> Let $W\subseteq\mathbb{R}^{n}$ be a subspace and put</p>
+<p>$$
+J_W=\{X:X(\mathbb{R}^{n})\subseteq W\}.
+$$</p>
+<p>Then $J_W$ is a right ideal, because $(XA)(\mathbb{R}^{n})=X(A\mathbb{R}^{n})\subseteq X(\mathbb{R}^{n})\subseteq W$. Conversely, if $J$ is a right ideal and $W=\sum_{X\in J}\operatorname{im}X$, then $J=J_W$: the inclusion $J\subseteq J_W$ is the definition of $W$, and the reverse holds because $W$ is spanned by images of elements of $J$ and $J$ is closed under right multiplication by the projections onto the summands.</p>
+<p><strong>The dimension of $J_W$ is $n\dim W$.</strong> Choosing a basis adapted to $W$, the matrices of $J_W$ are those whose last $n-\dim W$ rows vanish, so the free entries are $\dim W$ per column.</p>
+<p><strong>A left ideal is the set of matrices whose kernel contains a fixed subspace.</strong> For $U\subseteq\mathbb{R}^{n}$ put</p>
+<p>$$
+I_U=\{X:U\subseteq\ker X\}.
+$$</p>
+<p>Then $I_U$ is a left ideal, because $\ker(AX)\supseteq\ker X$. Conversely every left ideal is of this form, with $U=\bigcap_{X\in J}\ker X$. Its dimension is $n(n-\dim U)$, the matrices whose first $\dim U$ columns vanish in adapted coordinates.</p>
+<p><strong>The two classifications are exchanged by the transpose.</strong> Transposition sends a right ideal to a left ideal and $J_W$ to $I_W$, since $\operatorname{im}X\subseteq W$ is equivalent to $W\subseteq\ker X^{\mathsf T}$. So the asymmetry between the two lists is only apparent.</p>
+<p><strong>At $n=2$ the count is small enough to write out.</strong> The right ideals are $0$, the three-dimensional set of matrices with image in a line, and the whole algebra. The left ideals are $0$, the three-dimensional set of matrices vanishing on a line, and the whole algebra. There are as many of each as there are lines in $\mathbb{R}^{2}$, that is a circle's worth.</p>
+<h2 id="the-minimal-ideals-are-the-rows-and-the-columns">The Minimal Ideals Are the Rows and the Columns</h2>
+<p><strong>The minimal nonzero right ideals are the columns of the Peirce array.</strong> Take $W$ of dimension one, spanned by $v$. Then $J_W=\{v\ell:\ell\in(\mathbb{R}^{n})^{*}\}$, of dimension $n$, and no proper nonzero right ideal sits inside it, because a subspace of $W$ of dimension less than one is zero. So the minimal right ideals are the sets $v\ell$, one for each line of $\mathbb{R}^{n}$.</p>
+<p><strong>The minimal nonzero left ideals are the rows.</strong> Take $U$ of codimension one. Then $I_U=\{v\ell:U\subseteq\ker(v\ell)\}$, again of dimension $n$, and minimal.</p>
+<p><strong>In a Peirce basis these are the rows and the columns of the matrix of coordinates.</strong> With $E_{kl}=v_k\ell_l$, the minimal right ideal for the line $V_k$ is spanned by $E_{k1},\dots,E_{kn}$, the $k$-th row; the minimal left ideal for the hyperplane $\bigoplus_{l\ne k}V_l$ is spanned by $E_{1k},\dots,E_{nk}$, the $k$-th column. So the minimal one-sided ideals are exactly the rows and the columns of the Peirce array, which is the statement the Peirce articles use.</p>
+<p><strong>The algebra is the sum of its minimal right ideals, and the sum is direct only in a coarse sense.</strong> $M_n(\mathbb{R})=\bigoplus_k(\text{row }k)$, of dimension $n^{2}=n\cdot n$, and each summand is minimal as a right ideal. The same space is also a left ideal only for $n=1$; for $n\ge2$ a row is not a left ideal.</p>
+<h2 id="automorphisms-and-derivations">Automorphisms and Derivations</h2>
+<p><strong>Theorem (Skolem–Noether over $\mathbb{R}$).</strong> Every automorphism of $M_n(\mathbb{R})$ is inner: $\varphi=\operatorname{Ad}_S$ for some $S\in\mathrm{GL}_n(\mathbb{R})$, unique up to a nonzero scalar.</p>
+<p><em>Proof.</em> Let $V=\mathbb{R}^{n}$ and let $\varphi$ act on the algebra. The algebra is $\operatorname{End}(V)$, so $\varphi$ carries the minimal right ideals to minimal right ideals; these are the rank-one maps $v\ell$. So $\varphi$ permutes the lines of $V$ by a map induced by a linear $S$, and $\varphi$ agrees with $\operatorname{Ad}_S$ on every rank-one map, hence on the whole algebra because the rank-one maps span it. If $\operatorname{Ad}_S=\operatorname{Ad}_{S'}$ then $S^{-1}S'$ commutes with everything, hence is a scalar.</p>
+<p><strong>Theorem.</strong> Every derivation of $M_n(\mathbb{R})$ is inner: $D=\operatorname{ad}_A$ with $\operatorname{ad}_A(X)=AX-XA$ for some $A$, unique up to a scalar.</p>
+<p><em>Proof.</em> A derivation is determined by its values on a generating set, and the matrix units generate. Write $D(E_{ij})=\sum_{p,q}c^{ij}_{pq}E_{pq}$ and impose $D(E_{ij}E_{kl})=\delta_{jk}D(E_{il})$. The resulting relations force $D(E_{ij})=E_{ij}B-BE_{ij}$ for the matrix $B=\sum_p D(E_{pj})E_{jp}$ with $j$ fixed; then $D=\operatorname{ad}_B$ on the units, hence everywhere. Two inner derivations agree exactly when the matrices differ by a scalar.</p>
+<p><strong>The dimension of the derivation algebra is $n^{2}-1$.</strong> The map $A\mapsto\operatorname{ad}_A$ is linear with kernel the centre $\mathbb{R}\mathrm{I}$, of dimension one, so</p>
+<p>$$
+\dim\operatorname{Der}\bigl(M_n(\mathbb{R})\bigr)=n^{2}-1,
+$$</p>
+<p>which is also the dimension of $\mathfrak{sl}_n(\mathbb{R})$ and of the Lie algebra of $PGL_n(\mathbb{R})$.</p>
+<p><strong>These statements hold over any field, and they are what makes the real and the complex categories run in parallel.</strong> The proofs use only the matrix units and the invertibility of scalars. The real content of the real category is elsewhere: in the involution, the spectrum and the form.</p>
+<h2 id="the-modules">The Modules</h2>
+<p><strong>The algebra has exactly one irreducible module up to isomorphism, namely $\mathbb{R}^{n}$.</strong> A module is a real vector space with an action of the algebra; an irreducible one is a nonzero space with no invariant subspace. Since the algebra is the full endomorphism algebra of $\mathbb{R}^{n}$, any nonzero vector generates the whole space under the action: the rank-one maps send it to any other vector. So an irreducible module is spanned by one vector and is a quotient of $\mathbb{R}^{n}$, hence isomorphic to it.</p>
+<p><strong>Every module is a direct sum of copies of $\mathbb{R}^{n}$.</strong> A module is a vector space $V$ with an algebra map $M_n(\mathbb{R})\to\operatorname{End}(V)$, and such a map is determined by the images of the matrix units, which are the projections onto the summands of a decomposition of $V$ into $n$ isomorphic pieces. So $V\cong(\mathbb{R}^{n})^{\oplus m}$ and $M_n(\mathbb{R})$ is a simple algebra with a single simple module.</p>
+<p><strong>The module picture explains the one-sided ideals.</strong> A right ideal is a submodule of the regular module, and the regular module is $\mathbb{R}^{n}\otimes(\mathbb{R}^{n})^{*}$; the minimal right ideals are the summands $\mathbb{R}^{n}\otimes\ell$ for a line $\ell$ in the dual. This is the tensor form of §<em>The Minimal Ideals Are the Rows and the Columns</em>.</p>
+<h2 id="the-contrast-with-math154">The Contrast with $UT_n$</h2>
+<p><strong>The triangular algebra is not simple, and its radical is explicit.</strong> Let $UT_n$ be the algebra of upper triangular matrices, of dimension $n(n+1)/2$. Its strictly upper triangular part</p>
+<p>$$
+\mathfrak{n}=\{N\in UT_n:N_{ii}=0\}
+$$</p>
+<p>is a two-sided ideal, nilpotent of index $n$, and the quotient $UT_n/\mathfrak{n}$ is the diagonal algebra $\mathbb{R}^{n}$, which is commutative. So $UT_n$ has a nonzero nilpotent ideal and is not semisimple.</p>
+<p><strong>At $n=3$ the ideal lattice is small and visible.</strong> $UT_3$ has dimension $6$ and contains the ideals $0$, $\mathfrak{n}$ of dimension $3$, the span of $E_{13}$ of dimension $1$, the span of $E_{12},E_{13}$ and the span of $E_{23},E_{13}$, each of dimension $2$, and the whole algebra. The nilpotent radical is $\mathfrak{n}$.</p>
+<p><strong>The two algebras have the same dimension of diagonal but different products.</strong> $\operatorname{Sym}_n$ has dimension $n(n+1)/2$, the same as $UT_n$, and it is not an algebra under the matrix product; $UT_n$ is an algebra and is not simple. <em>The Triangular Decomposition $h\oplus n_+\oplus n_-$</em> and <em>$UT_n$ as a Linear Model of $\operatorname{Sym}_n$: Same Space, Wrong Product</em> make the comparison exact.</p>
+<h2 id="summary">Summary</h2>
+<p>$M_n(\mathbb{R})$ is simple and its centre is $\mathbb{R}\mathrm{I}$, so it is a central simple algebra of degree $n$. The right ideals are the sets of matrices with image in a fixed subspace, of dimension $n\dim W$, and the left ideals are the sets vanishing on a fixed subspace, of dimension $n(n-\dim U)$; the minimal ones are the rows and the columns of a Peirce basis. Every automorphism and every derivation is inner, with $\dim\operatorname{Der}=n^{2}-1$. There is one irreducible module, $\mathbb{R}^{n}$, and every module is a sum of copies of it. The triangular algebra $UT_n$ of the same dimension $n(n+1)/2$ as $\operatorname{Sym}_n$ is not simple and has the strictly upper triangular part as nilpotent radical.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$J_W$</td>
+<td>the right ideal of matrices with image in $W$</td>
+</tr>
+<tr>
+<td>$I_U$</td>
+<td>the left ideal of matrices vanishing on $U$</td>
+</tr>
+<tr>
+<td>$\operatorname{Ad}_S(X)=SXS^{-1}$</td>
+<td>the inner automorphism</td>
+</tr>
+<tr>
+<td>$\operatorname{ad}_A(X)=AX-XA$</td>
+<td>the inner derivation</td>
+</tr>
+<tr>
+<td>$\operatorname{Der}(A)$</td>
+<td>the Lie algebra of derivations, of dimension $n^{2}-1$</td>
+</tr>
+<tr>
+<td>$UT_n$, $\mathfrak{n}$</td>
+<td>the upper triangular algebra and its strictly upper triangular radical</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Tsit-Yuen Lam, <em>A First Course in Noncommutative Rings</em> (Springer, 2001), for simple rings, the Skolem–Noether theorem and the density theorem.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the ideals of a matrix algebra and the Peirce decomposition.</li>
+<li><a href="the-matrix-algebra-mnr.html">The Matrix Algebra $M_n(\mathbb{R})$</a>, for the algebra, its centre and its matrix units.</li>
+<li><a href="the-ideals-the-centre-and-the-simplicity-of-mnc.html">The Ideals, the Centre and the Simplicity of $M_n(\mathbb{C})$</a>, for the complex case.</li>
+<li><a href="the-matrix-algebra-m3c.html">The Matrix Algebra $M_3(\mathbb{C})$</a>, for the ideal lattice at $n=3$.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

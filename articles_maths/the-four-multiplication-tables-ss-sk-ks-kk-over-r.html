@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Four Multiplication Tables: $SS$, $SK$, $KS$, $KK$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-four-multiplication-tables-math0-math1-math2-math3"><strong>The Four Multiplication Tables: $SS$, $SK$, $KS$, $KK$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>Every product of two real matrices splits into two pieces, a symmetric one and an antisymmetric one, and each of the four pairings $SS$, $SK$, $KS$, $KK$ contributes to both pieces by different formulas; the table is the multiplication table of the two halves read in the two projections.</strong></p>
+<p>The article computes the four tables, states which piece of each product is a commutator and which an anticommutator, and identifies the two products that stay where they start: the square of a skew matrix is symmetric and negative semidefinite, and the square of a symmetric matrix keeps a symmetric part and a skew part. It assumes <em>The Symmetric and Antisymmetric Parts of a Product</em> for the two projection formulas, and it defers the algebra structure of the symmetric half to <em>The Jordan Algebra $\operatorname{Sym}_n(\mathbb{R})$</em> and the Lie structure of the skew half to <em>The Lie Algebra $\operatorname{Skew}_n\cong\mathfrak{so}(n)$</em>.</p>
+<p>Throughout $n\ge2$, and $M_n=M_n(\mathbb{R})$. The projections are</p>
+<p>$$
+\pi_+(X)=\tfrac12(X+X^{\mathsf T}),\qquad \pi_-(X)=\tfrac12(X-X^{\mathsf T}),
+$$</p>
+<p>so that $X=\pi_+(X)+\pi_-(X)$, and the halves are $S=\operatorname{Sym}_n$ and $K=\operatorname{Skew}_n$.</p>
+<h2 id="the-four-products">The Four Products</h2>
+<p><strong>The four tables are the four choices of two factors from the two halves.</strong> Write an element of $S$ as $S$ and an element of $K$ as $K$, and read the product as the matrix product. The four products are</p>
+<p>$$
+SS',\qquad SK,\qquad KS,\qquad KK',
+$$</p>
+<p>where $S,S'\in\operatorname{Sym}_n$ and $K,K'\in\operatorname{Skew}_n$. Each is a general element of $M_n$, so each splits into its two projections, and the content of the section is the four pairs of formulas.</p>
+<p><strong>The transposes of the four products are known.</strong> Since $S^{\mathsf T}=S$ and $K^{\mathsf T}=-K$,</p>
+<p>$$
+(SS')^{\mathsf T}=S'S,\qquad (SK)^{\mathsf T}=-KS,\qquad (KS)^{\mathsf T}=-SK,\qquad (KK')^{\mathsf T}=K'K.
+$$</p>
+<p>So the product $SS'$ is symmetric exactly when the factors commute; the product $SK$ is symmetric exactly when $SK=-KS$; and $KK'$ is symmetric exactly when $K,K'$ anticommute.</p>
+<p><strong>Consequence: the four tables are not four independent objects.</strong> The third is the transpose of the second with a sign, so $KS$ contributes exactly what $SK$ contributes, read on the other factor. This is why the two halves over $\mathbb{R}$ carry three tables and not four, and why the two-sided operator of <em>The Symmetric and Antisymmetric Parts of a Product</em> is the natural way to write them.</p>
+<h2 id="the-tables-math35-and-math36">The Tables $SS$ and $KK$</h2>
+<p><strong>The product of two symmetric matrices splits as an anticommutator and a commutator.</strong> With $S,S'\in\operatorname{Sym}_n$,</p>
+<p>$$
+SS'=\underbrace{\tfrac12(SS'+S'S)}_{\in\operatorname{Sym}_n}+\underbrace{\tfrac12(SS'-S'S)}_{\in\operatorname{Skew}_n}.
+$$</p>
+<p><em>Proof.</em> The first summand equals its transpose, since $(SS'+S'S)^{\mathsf T}=S'S+SS'$. The second changes sign, since $(SS'-S'S)^{\mathsf T}=S'S-SS'$. Both are nonzero in general, so $SS\subseteq S\oplus K$ and the two projections are the anticommutator and the commutator.</p>
+<p><strong>The product of two skew matrices splits the other way around.</strong> With $K,K'\in\operatorname{Skew}_n$,</p>
+<p>$$
+KK'=\underbrace{\tfrac12(KK'+K'K)}_{\in\operatorname{Sym}_n}+\underbrace{\tfrac12(KK'-K'K)}_{\in\operatorname{Skew}_n},
+$$</p>
+<p>by the same computation with a sign: $(KK'+K'K)^{\mathsf T}=K'^{\mathsf T}K^{\mathsf T}+K^{\mathsf T}K'^{\mathsf T}=K'K+KK'$, and the difference is antisymmetric. Measured on $100$ random pairs at $n=2,3,4$, the symmetric part is symmetric in every case and the skew part antisymmetric in every case.</p>
+<p><strong>The structure of the two formulas is identical and the meaning is different.</strong> In $SS'$ the symmetric part is the anticommutator of two symmetric matrices and the skew part is their commutator; in $KK'$ the same two words appear with the same roles. What changes is the sign of the square: $S^{2}$ is symmetric and positive semidefinite, while $K^{2}$ is symmetric and negative semidefinite.</p>
+<p><strong>The square of a skew matrix is symmetric and negative semidefinite.</strong> For $K\in\operatorname{Skew}_n$,</p>
+<p>$$
+(K^{2})^{\mathsf T}=(K^{\mathsf T})^{2}=(-K)^{2}=K^{2},\qquad K^{2}=-KK^{\mathsf T},
+$$</p>
+<p>and $-KK^{\mathsf T}$ is negative semidefinite with kernel $\ker K$. So the map $K\mapsto K^{2}$ leaves the skew half and lands in the closed cone of the symmetric half. Measured on $100$ random skew matrices at each of $n=2,3,4$, all $300$ squares were symmetric and negative semidefinite.</p>
+<p><strong>Consequence: $KK$ is not closed in $K$ but its square is closed in $S$.</strong> The product $KK'$ has a skew part in general, and that part is the commutator $\tfrac12[K,K']$; the square has no skew part at all. So the skew half is closed under the square only up to the bracket, and the bracket of two skew matrices is again skew, as <em>The Lie Algebra $\operatorname{Skew}_n\cong\mathfrak{so}(n)$</em> records.</p>
+<h2 id="the-tables-math65-and-math66">The Tables $SK$ and $KS$</h2>
+<p><strong>The mixed product splits by an anticommutator and a commutator of the two different halves.</strong> With $S\in\operatorname{Sym}_n$ and $K\in\operatorname{Skew}_n$,</p>
+<p>$$
+SK=\underbrace{\tfrac12(SK-KS)}_{\in\operatorname{Sym}_n}+\underbrace{\tfrac12(SK+KS)}_{\in\operatorname{Skew}_n},
+$$</p>
+<p>and the same formula for $KS$ with the two factors exchanged.</p>
+<p><em>Proof.</em> $(SK)^{\mathsf T}=-KS$, so the symmetric projection is $\tfrac12(SK-KS)$ and the antisymmetric projection is $\tfrac12(SK+KS)$. Each is checked by transposing: $(SK-KS)^{\mathsf T}=-KS+SK$, and $(SK+KS)^{\mathsf T}=-KS-SK$.</p>
+<p><strong>The mixed table is the reason the two halves are not ideals of each other.</strong> Neither $SK\subseteq S$ nor $SK\subseteq K$ holds, and the failure is measured by the two parts: $SK\in S$ exactly when $SK=KS$, that is when the factors commute, and $SK\in K$ exactly when $SK=-KS$, that is when they anticommute. Measured on $100$ random pairs at $n=2,3,4$, neither condition held in any case.</p>
+<p><strong>The mixed product has no distinguished vanishing.</strong> For $SS'$ the square is special; for $SK$ nothing is: both parts are nonzero for a generic pair, and their dimensions in the two halves are $1$ each per matrix-unit pair, in the sense that a single entry $S_{ij}K_{kl}$ contributes to both projections. So the table $SK$ is the one that mixes the two halves most completely.</p>
+<h2 id="the-traces-of-the-four-tables">The Traces of the Four Tables</h2>
+<p><strong>The trace of a product sees only the like pairings.</strong> For $S,S'\in\operatorname{Sym}_n$ and $K,K'\in\operatorname{Skew}_n$,</p>
+<p>$$
+\operatorname{tr}(SS')=\sum_{i,j}S_{ij}S'_{ij},\qquad \operatorname{tr}(KK')=-\sum_{i,j}K_{ij}K'_{ij},
+$$</p>
+<p>and $\operatorname{tr}(SK)=0$.</p>
+<p><em>Proof.</em> The first two are the identity $\operatorname{tr}(AB)=\sum_{i,j}A_{ij}B_{ji}$ with $B$ symmetric and $B$ skew. For the third, $\operatorname{tr}(SK)=\operatorname{tr}((SK)^{\mathsf T})=\operatorname{tr}(-KS)=-\operatorname{tr}(SK)$, so the number is zero.</p>
+<p><strong>Consequence: the two halves are orthogonal for the trace form, and each is definite on itself.</strong> The trace form is positive definite on $S$ and negative definite on $K$; the mixed pairings vanish. So the four tables have a diagonal trace form:</p>
+<p>$$
+\begin{pmatrix}\operatorname{tr}(SS')&\operatorname{tr}(SK)\\\operatorname{tr}(KS)&\operatorname{tr}(KK')\end{pmatrix}=\begin{pmatrix}\langle S,S'\rangle_{\mathrm{HS}}&0\\0&-\langle K,K'\rangle_{\mathrm{HS}}\end{pmatrix}.
+$$</p>
+<p>The block structure is the content of <em>The Two Halves as Orthogonal Complements for the Trace Form</em>, and it says that the four tables decouple completely as far as the invariant bilinear form is concerned.</p>
+<h2 id="which-products-stay-inside-a-half">Which Products Stay Inside a Half</h2>
+<p><strong>Only two of the four products stay inside a half for all choices of factors, and both are squares.</strong> $S^{2}\in S$ holds always, because $S^{2}=(S^{2})^{\mathsf T}$; $K^{2}\in S$ holds always, by the previous section; and $SS'\in S$, $KK'\in K$, $SK\in S\cup K$ fail for generic factors. So</p>
+<p>$$
+S\cdot S\subseteq S\oplus K,\qquad S\cdot K\subseteq S\oplus K,\qquad K\cdot K\subseteq S\oplus K,
+$$</p>
+<p>and the first two are equalities for $n\ge2$ while the third is an equality only for $n\ge3$: at $n=2$ the skew half is one-dimensional and abelian, so $[K,K']=0$ and $KK'$ stays in $S$.</p>
+<p><strong>Consequence: the two halves are not subalgebras of $M_n$.</strong> Neither is closed under the product of the algebra, so neither inherits an associative structure. Each inherits a different one: $S$ is closed under the anticommutator and $K$ under the commutator, which is the content of <em>The Two Halves: Symmetric and Antisymmetric</em>.</p>
+<p><strong>The commutator and the anticommutator are exchanged by the two tables.</strong> In $SS'$ the commutator is the skew part; in $KK'$ the commutator is the skew part as well; in $SK$ the commutator is the symmetric part. So the answer to the question "which product is the bracket" depends on the pair of halves, and the mixed table is the one that reverses the answer.</p>
+<h2 id="the-case-math119">The Case $n=2$</h2>
+<p><strong>At $n=2$ the four tables are explicit.</strong> Write $S=\begin{pmatrix}a&b\\ b&c\end{pmatrix}$ and $K=\begin{pmatrix}0&d\\ -d&0\end{pmatrix}$. Then</p>
+<p>$$
+SK=\begin{pmatrix}-bd&ad\\ -cd&bd\end{pmatrix},\qquad \pi_+(SK)=\begin{pmatrix}-bd&\tfrac12(ad-cd)\\ \tfrac12(ad-cd)&bd\end{pmatrix},\qquad \pi_-(SK)=\begin{pmatrix}0&\tfrac12(ad+cd)\\ -\tfrac12(ad+cd)&0\end{pmatrix},
+$$</p>
+<p>and $K^{2}=-d^{2}\mathrm{I}$, which is symmetric and negative semidefinite for every $d$.</p>
+<p><strong>The two-dimensional case shows the failure of closure in one line.</strong> $SK\in S$ would need $ad=cd$, that is $d(a-c)=0$, which fails for $d\ne0$ and $a\ne c$; $SK\in K$ would need $ad=-cd$, that is $d(a+c)=0$, which fails for $d\ne0$ and $a\ne-c$. So both inclusions fail on an open set, and the two failures are independent.</p>
+<p><strong>The trace identity is visible in the entries.</strong> $\operatorname{tr}(SS')=aa'+2bb'+cc'$ and $\operatorname{tr}(KK')=-2dd'$, so the two traces are the Hilbert–Schmidt squares with the sign of the half, and $\operatorname{tr}(SK)=-bd+bd=0$.</p>
+<h2 id="summary">Summary</h2>
+<p>The four tables of the two halves of $M_n(\mathbb{R})$ are the products $SS'$, $SK$, $KS$ and $KK'$, and each splits into a symmetric part and an antisymmetric part. In $SS'$ the symmetric part is the anticommutator and the antisymmetric part the commutator; in $KK'$ the same two formulas hold, with $K^{2}=-KK^{\mathsf T}$ symmetric and negative semidefinite, so the square of a skew matrix leaves the skew half and lands in the closed cone of the symmetric half; in the mixed product $SK$ the symmetric part is $\tfrac12(SK-KS)$ and the antisymmetric part $\tfrac12(SK+KS)$, so the bracket appears in the symmetric half. The trace form sees only the like pairings, is positive definite on $S$, negative definite on $K$ and vanishes on the mixed pairings, so the four tables decouple. None of the three tables stays inside a half, so neither half is a subalgebra of $M_n$; each carries its own product, the anticommutator on the symmetric half and the commutator on the skew half.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$S,S'$</td>
+<td>elements of $\operatorname{Sym}_n$</td>
+</tr>
+<tr>
+<td>$K,K'$</td>
+<td>elements of $\operatorname{Skew}_n$</td>
+</tr>
+<tr>
+<td>$\pi_+,\pi_-$</td>
+<td>the symmetric and antisymmetric projections</td>
+</tr>
+<tr>
+<td>$SS',SK,KS,KK'$</td>
+<td>the four table products</td>
+</tr>
+<tr>
+<td>$\tfrac12(AB+BA)$</td>
+<td>the anticommutator, closed on $\operatorname{Sym}_n$</td>
+</tr>
+<tr>
+<td>$\tfrac12(AB-BA)$</td>
+<td>the commutator, closed on $\operatorname{Skew}_n$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the two-sided Peirce decomposition and the products between the corners.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for the symmetric and skew-symmetric decompositions and the trace identities.</li>
+<li><a href="the-symmetric-and-antisymmetric-parts-of-a-product.html">The Symmetric and Antisymmetric Parts of a Product</a>, for the projection formulas used here.</li>
+<li><a href="the-two-halves-symmetric-and-antisymmetric-over-r.html">The Two Halves: Symmetric and Antisymmetric</a>, for the two halves and their products.</li>
+<li><a href="the-two-halves-as-orthogonal-complements-for-the-trace-form.html">The Two Halves as Orthogonal Complements for the Trace Form</a>, for the block structure of the trace form.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

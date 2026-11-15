@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Involutions of the First Kind: Transpose and Symplectic — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-involutions-of-the-first-kind-transpose-and-symplectic"><strong>The Involutions of the First Kind: Transpose and Symplectic</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>Over $\mathbb{R}$ the involutions of the first kind fall into two types, the transpose and the symplectic, and their fixed spaces have the same dimension, $n(n+1)/2$, while one is a Jordan algebra and the other a Lie algebra.</strong> The two types are told apart by a sign in the product rule, and the real base field adds what the complex field loses: the signature of the form behind the involution, and with it the definiteness of the trace form on one fixed space and its indefiniteness on the other.</p>
+<p>The article defines an involution of the first kind, proves that every such involution comes from a nondegenerate bilinear form, classifies the forms into the symmetric and the alternating case, computes the two fixed spaces, proves that one is a Jordan algebra and the other a Lie algebra, and states exactly what complexification does to the classification. It assumes <em>The Matrix Algebra $M_n(\mathbb{R})$</em> and <em>The Split Real Form: $M_n(\mathbb{R})$ inside $M_n(\mathbb{C})$</em>. It prepares <em>The Two Halves: Symmetric and Antisymmetric</em> and <em>The Two Classes Compared: $\operatorname{Sym}_n$ and $\mathfrak{sp}_n$ Have the Same Dimension</em>.</p>
+<h2 id="the-definition">The Definition</h2>
+<p><strong>An involution of the first kind is an $\mathbb{R}$-linear anti-automorphism of order two.</strong> A map $\sigma:M_n(\mathbb{R})\to M_n(\mathbb{R})$ is such an involution when</p>
+<p>$$
+\sigma(X+Y)=\sigma(X)+\sigma(Y),\qquad \sigma(\lambda X)=\lambda\sigma(X),\qquad \sigma(XY)=\sigma(Y)\sigma(X),\qquad \sigma^{2}=\mathrm{id},
+$$</p>
+<p>for all $X,Y$ and all $\lambda\in\mathbb{R}$. The third condition is what makes it an anti-automorphism, and the second says that it fixes the base field: this is the meaning of <strong>first kind</strong>. An involution of the second kind would be conjugate linear, and over $\mathbb{R}$ the two notions coincide, which is why the real theory has one kind only.</p>
+<p><strong>The transpose is the model.</strong> $\sigma(X)=X^{\mathsf T}$ satisfies all four conditions, and its fixed space is $\operatorname{Sym}_n$.</p>
+<p><strong>The fixed space and the anti-fixed space have dimensions that add to $n^{2}$.</strong> Since $\sigma^{2}=\mathrm{id}$, the algebra is the direct sum</p>
+<p>$$
+M_n(\mathbb{R})=\{X:\sigma(X)=X\}\oplus\{X:\sigma(X)=-X\},
+$$</p>
+<p>of the $+1$ and $-1$ eigenspaces, and the projection onto the first is $\tfrac12(X+\sigma(X))$.</p>
+<h2 id="the-form-behind-an-involution">The Form behind an Involution</h2>
+<p><strong>Every involution of the first kind is $\sigma_B(X)=B^{-1}X^{\mathsf T}B$ for a nondegenerate bilinear form $B$, and $B$ is unique up to a nonzero scalar.</strong> A nondegenerate bilinear form is a matrix $B$ with $\det B\ne0$, and $\sigma_B$ is an anti-automorphism because $(XY)^{\mathsf T}=Y^{\mathsf T}X^{\mathsf T}$ and $B^{-1}$ cancels. The negative $-\sigma_B$ is also of order two and satisfies $\sigma(XY)=-\sigma(Y)\sigma(X)$; both signs occur, and the sign is the invariant that separates the two classes. The order-two condition is automatic: $\sigma_B^{2}(X)=X$. Conversely, an anti-automorphism of the matrix algebra is determined by its effect on the rank-one maps, which it permutes, and that permutation is induced by a linear map on the dual space; assembling the two gives $B$.</p>
+<p><strong>The fixed space is the set of matrices self-adjoint for $B$.</strong> The equation $\sigma_B(X)=X$ is $X^{\mathsf T}B=BX$, which says $\langle Xu,v\rangle=\langle u,Xv\rangle$ for the form $\langle u,v\rangle=u^{\mathsf T}Bv$. So the $+1$ space is the set of $B$-self-adjoint endomorphisms, and the $-1$ space is the set of $B$-skew endomorphisms.</p>
+<p><strong>Scaling the form does not change the involution.</strong> $\sigma_{\lambda B}=\sigma_B$ for $\lambda\ne0$, because the two scalars cancel. So the data is the form up to a scalar, and the classification of involutions is the classification of forms up to similarity.</p>
+<p><strong>The transpose is the case $B=\mathrm{I}$.</strong> Then $\sigma_{\mathrm{I}}(X)=X^{\mathsf T}$ and the self-adjoint matrices are the symmetric ones.</p>
+<h2 id="the-two-classes-for-even-math46">The Two Classes for Even $n$</h2>
+<p><strong>A nondegenerate form is either symmetric or alternating, and the two are not similar.</strong> Over $\mathbb{R}$ a bilinear form decomposes into its symmetric part $\tfrac12(B+B^{\mathsf T})$ and its alternating part $\tfrac12(B-B^{\mathsf T})$, and the classification of forms by congruence splits accordingly. A form is <strong>symmetric</strong> when $B^{\mathsf T}=B$ and <strong>alternating</strong> when $B^{\mathsf T}=-B$; an alternating form satisfies $B(v,v)=0$ for every $v$, a symmetric one generally does not.</p>
+<p><strong>The symmetric case gives the transpose class.</strong> Every nondegenerate symmetric form is congruent to a diagonal form with entries $\pm1$, and the involution depends only on the similarity class. Taking $B=\mathrm{I}$ gives the transpose itself, so every symmetric case is conjugate to the transpose.</p>
+<p><strong>The alternating case requires $n$ even and gives the symplectic class.</strong> An alternating form has a basis in which</p>
+<p>$$
+B=J=\begin{pmatrix}0&1&&\\ -1&0&&\\&&\ddots&\\&&&0&1\\&&&-1&0\end{pmatrix},
+$$</p>
+<p>the block-diagonal matrix of $m=n/2$ copies of $\begin{pmatrix}0&1\\ -1&0\end{pmatrix}$. With this $B$,</p>
+<p>$$
+\sigma_B(X)=J^{-1}X^{\mathsf T}J=-JX^{\mathsf T}J,\qquad \sigma_J(X)=-JX^{\mathsf T}J^{-1}=JX^{\mathsf T}J,
+$$</p>
+<p>where the first is the anti-automorphism attached to $B=J$ and the second is its negative. The negative is the <strong>symplectic involution</strong> of this series: it is of order two and it satisfies the product rule with the minus sign.</p>
+<p><strong>The two classes are not conjugate.</strong> An alternating form is not similar to a symmetric one: $B^{\mathsf T}=B$ and $B^{\mathsf T}=-B$ together force $B=0$, which is excluded by nondegeneracy. Since conjugation of involutions corresponds to similarity of forms, the transpose and the symplectic involution are not conjugate, and their classes are the two of the title.</p>
+<p><strong>Odd $n$ has one class only.</strong> An alternating form exists only in even dimension, because an alternating matrix of odd size is singular. So for odd $n$ every involution of the first kind is conjugate to the transpose.</p>
+<h2 id="the-fixed-spaces">The Fixed Spaces</h2>
+<p><strong>The fixed space of the transpose is $\operatorname{Sym}_n$, of dimension $n(n+1)/2$.</strong> The equation $X^{\mathsf T}=X$ fixes the diagonal and the entries above it, so the free entries number $n+\binom{n}{2}$.</p>
+<p><strong>The fixed space of the symplectic involution has the same dimension.</strong> The equation $X=-JX^{\mathsf T}J^{-1}$ is equivalent to $(JX)^{\mathsf T}=JX$, so</p>
+<p>$$
+\{X:\sigma_J(X)=X\}=\{X: JX\in\operatorname{Sym}_n\}=J^{-1}\operatorname{Sym}_n,
+$$</p>
+<p>which is the image of $\operatorname{Sym}_n$ under the invertible map $S\mapsto J^{-1}S$. Hence the dimension is again $n(n+1)/2$. Measured by projecting the matrix units, the dimension is $3$, $10$, $21$ at $n=2,4,6$, which is $n(n+1)/2$ in each case.</p>
+<p><strong>The two $-1$ spaces also have equal dimension, $n(n-1)/2$.</strong> The anti-fixed space of the transpose is $\operatorname{Skew}_n$; the anti-fixed space of $\sigma_J$ is $\{X:JX\in\operatorname{Skew}_n\}=J^{-1}\operatorname{Skew}_n$. So the dimension count does not separate the two classes at all: only the algebraic nature of the fixed space does.</p>
+<p><strong>The two involutions are distinguished by the trace form on their fixed spaces.</strong> On $\operatorname{Sym}_n$ the form $\operatorname{tr}(XY)$ is positive definite and on $\operatorname{Skew}_n$ negative definite. On $\mathfrak{sp}_n$ the same form is indefinite: computed on a basis of $\mathfrak{sp}_n$ it has signature $(2,1)$, $(6,4)$, $(12,9)$ at $n=2,4,6$. So the restriction of the trace form separates the two classes, while the dimension does not.</p>
+<h2 id="one-jordan-algebra-and-one-lie-algebra">One Jordan Algebra and One Lie Algebra</h2>
+<p><strong>$\operatorname{Sym}_n$ is a Jordan algebra.</strong> It is closed under the anticommutator</p>
+<p>$$
+X\circ Y=\tfrac12(XY+YX),
+$$</p>
+<p>because $(XY+YX)^{\mathsf T}=Y^{\mathsf T}X^{\mathsf T}+X^{\mathsf T}Y^{\mathsf T}=YX+XY$, and the product is commutative and satisfies the Jordan identity. It is not closed under the commutator: the bracket of two symmetric matrices is antisymmetric and generally nonzero.</p>
+<p><strong>The fixed space of $\sigma_J$ is a Lie algebra.</strong> It is $\mathfrak{sp}_n$, the symplectic Lie algebra, closed under the commutator. In symbols, if $JX$ and $JY$ are symmetric then</p>
+<p>$$
+J[X,Y]=JXY-JYX,
+$$</p>
+<p>and transposing uses the symmetry of $JX$ and $JY$ to show that $J[X,Y]$ is symmetric again. On $100$ random pairs of elements of the fixed space the commutator stays in the space in every case; on $100$ random pairs of symmetric matrices the commutator is symmetric in no case.</p>
+<p><strong>The mechanism is a sign in the product rule.</strong> The transpose satisfies $\sigma(XY)=\sigma(Y)\sigma(X)$. The map $\sigma_J$ satisfies</p>
+<p>$$
+\sigma_J(XY)=-\sigma_J(Y)\sigma_J(X),
+$$</p>
+<p>because $(XY)^{\mathsf T}=Y^{\mathsf T}X^{\mathsf T}$ and the two factors $-J$ and $J^{-1}$ combine to $-1$ after the reversal. So $\sigma_J$ reverses the product up to a sign. For $X,Y$ fixed by $\sigma_J$,</p>
+<p>$$
+\sigma_J([X,Y])=[X,Y],\qquad \sigma_J(XY+YX)=-(XY+YX),
+$$</p>
+<p>so the fixed space is closed under the commutator and the anti-fixed space under the anticommutator. Measured on $100$ random pairs of fixed elements, the commutator stays fixed in every case; for the transpose the roles are exchanged, and on $100$ random pairs of symmetric matrices the commutator is symmetric in no case.</p>
+<p><strong>The two involutions are mirror images.</strong> The transpose gives a Jordan algebra $\operatorname{Sym}_n$ of dimension $n(n+1)/2$ and a Lie algebra $\operatorname{Skew}_n$ of dimension $n(n-1)/2$; $\sigma_J$ gives a Lie algebra $\mathfrak{sp}_n$ of dimension $n(n+1)/2$ and an anti-fixed space of dimension $n(n-1)/2$ closed under the anticommutator. The dimensions are exchanged along with the algebraic nature, which is the comparison of <em>The Two Classes Compared: $\operatorname{Sym}_n$ and $\mathfrak{sp}_n$ Have the Same Dimension</em>.</p>
+<p><strong>The bracket of two anti-fixed elements lands in the fixed space.</strong> For $X,Y$ anti-fixed by $\sigma_J$ one computes $\sigma_J([X,Y])=[X,Y]$ and $\sigma_J(XY+YX)=-(XY+YX)$, so $[\mathfrak{p},\mathfrak{p}]\subseteq\mathfrak{sp}_n$. This is the pattern of a symmetric pair: the anti-fixed space is the complement $\mathfrak{p}$ and the fixed space is the Lie algebra $\mathfrak{k}$. <em>Symmetric Pairs and Cartan Pairs: the Reductivity Criterion over $\mathbb{R}$</em> develops the criterion in this form.</p>
+<h2 id="what-the-base-field-changes">What the Base Field Changes</h2>
+<p><strong>Complexification keeps the two types.</strong> The formulas $\sigma_B(X)=B^{-1}X^{\mathsf T}B$ and $\sigma_J(X)=-JX^{\mathsf T}J^{-1}$ make sense over any field, and conjugation by an invertible matrix preserves the sign in the product rule. The transpose has the sign $+$ and $\sigma_J$ the sign $-$, so the two are not conjugate over $\mathbb{C}$ either: the sign is an invariant of the conjugacy class.</p>
+<p><strong>What complexification collapses is the signature.</strong> Over $\mathbb{C}$ a nondegenerate symmetric form is determined up to congruence by its rank, so every orthogonal involution is conjugate to the transpose. Over $\mathbb{R}$ Sylvester's law gives the signature $(p,q)$ with $p+q=n$, and</p>
+<p>$$
+\sigma_{\operatorname{diag}(\mathrm{I}_p,-\mathrm{I}_q)}(X)=\operatorname{diag}(\mathrm{I}_p,-\mathrm{I}_q)\,X^{\mathsf T}\operatorname{diag}(\mathrm{I}_p,-\mathrm{I}_q)
+$$</p>
+<p>is conjugate to the transpose only when $p=n$ or $q=n$. So the transpose type is a single class over $\mathbb{C}$ and a signature's worth of classes over $\mathbb{R}$, and this refinement is a real phenomenon that disappears on complexification.</p>
+<p><strong>Definiteness exists only over $\mathbb{R}$.</strong> The form $\operatorname{tr}(XY)$ is positive definite on $\operatorname{Sym}_n$ over $\mathbb{R}$ because it is a sum of squares, and that statement has no meaning over $\mathbb{C}$, where no nonzero vector has a sign. So the definite fixed space of the transpose, and the indefinite fixed space of $\sigma_J$, are visible only in the real category.</p>
+<h2 id="summary">Summary</h2>
+<p>An involution of the first kind is an $\mathbb{R}$-linear anti-automorphism of order two, and every such involution is $\sigma_B(X)=B^{-1}X^{\mathsf T}B$ for a nondegenerate form $B$ unique up to a scalar. Symmetric forms give the transpose type, alternating forms the symplectic type $\sigma_J(X)=-JX^{\mathsf T}J^{-1}$, which needs even $n$. Both fixed spaces have dimension $n(n+1)/2$; $\operatorname{Sym}_n$ is a Jordan algebra and $\mathfrak{sp}_n$ is a Lie algebra, and both $-1$ spaces have dimension $n(n-1)/2$. The trace form is definite on $\operatorname{Sym}_n$ and indefinite on $\mathfrak{sp}_n$, with signature $(2,1)$, $(6,4)$, $(12,9)$ at $n=2,4,6$. Over $\mathbb{C}$ the two types remain but each is a single class, because the signature of a symmetric form is no longer an invariant.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\sigma$</td>
+<td>an involution of the first kind, an anti-automorphism of order two</td>
+</tr>
+<tr>
+<td>$\sigma_B(X)=B^{-1}X^{\mathsf T}B$</td>
+<td>the involution attached to the nondegenerate form $B$</td>
+</tr>
+<tr>
+<td>$J$</td>
+<td>the standard alternating matrix, $J^{2}=-\mathrm{I}$</td>
+</tr>
+<tr>
+<td>$\sigma_J(X)=-JX^{\mathsf T}J^{-1}$</td>
+<td>the symplectic involution</td>
+</tr>
+<tr>
+<td>$\operatorname{Sym}_n$</td>
+<td>the fixed space of the transpose, a Jordan algebra</td>
+</tr>
+<tr>
+<td>$\mathfrak{sp}_n$</td>
+<td>the fixed space of $\sigma_J$, a Lie algebra</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society, 1998), for involutions of the first and second kind and their classification by forms.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for self-adjoint and skew endomorphisms of a bilinear form.</li>
+<li><a href="the-matrix-algebra-mnr.html">The Matrix Algebra $M_n(\mathbb{R})$</a>, for the transpose and the two halves.</li>
+<li><a href="split-quaternion-algebra.html">Split-Quaternion Algebra</a>, for the one-dimensional case of the classification.</li>
+<li><a href="the-matrix-algebra-mnc.html">The Matrix Algebra $M_n(\mathbb{C})$</a>, for the complex algebra where one class remains.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Spectrum of a $2\times2$ Matrix — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-spectrum-of-a-math0-matrix"><strong>The Spectrum of a $2\times2$ Matrix</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The spectrum of a $2\times2$ matrix is the multiset of the two roots of $\lambda^{2}-t\lambda+\delta$, with $t$ the trace and $\delta$ the determinant, and it is a good invariant of the conjugacy class except at the double root.</strong></p>
+<p>The article defines the spectrum, computes the roots from trace and determinant with the discriminant, describes the eigenspaces, shows by example that the spectrum does not determine the conjugacy class, proves the spectral mapping theorem for polynomials and for the inverse, records the reality properties of the eigenvalues for the two halves, and states the dependence of the eigenvalues on the entries. It assumes <em>The Element: Rank, Trace, Determinant, Characteristic Polynomial at $n=2$</em>, <em>The Minimal Polynomial and the Two Jordan Regimes of $M_2(\mathbb{C})$</em> and <em>The Elementary Symmetric Functions: $\operatorname{tr}$ and $\det$ in Dimension Two</em>.</p>
+<p>It defers the diagonalisation and the projections to <em>Lagrange Idempotents of a $2\times2$ Matrix with Simple Spectrum</em>, and the two spectral theorems to <em>Normal $2\times2$ Matrices and the Common Spectral Theorem</em>.</p>
+<h2 id="the-characteristic-polynomial">The Characteristic Polynomial</h2>
+<p><strong>Definition.</strong> The <strong>characteristic polynomial</strong> of a matrix $X$ is</p>
+<p>$$
+\chi_{X}(\lambda)=\det(\lambda I-X)=\lambda^{2}-t\lambda+\delta,\qquad t=\operatorname{tr}X,\quad \delta=\det X .
+$$</p>
+<p><strong>Proposition.</strong> The characteristic polynomial is invariant under conjugation, and its constant term is the determinant while the coefficient of $\lambda$ is minus the trace.</p>
+<p><strong>Proof.</strong> $\det(\lambda I-gXg^{-1})=\det(g(\lambda I-X)g^{-1})=\det(\lambda I-X)$; expanding the two-by-two determinant gives $\lambda^{2}-(\operatorname{tr}X)\lambda+\det X$.</p>
+<p><strong>Corollary.</strong> The spectrum depends only on the conjugacy class, so it is a conjugacy invariant.</p>
+<p><strong>Proof.</strong> The roots of the characteristic polynomial are determined by the polynomial, and the polynomial is invariant.</p>
+<p><strong>Corollary.</strong> The two coefficients are continuous functions of the entries, and so is the unordered pair of roots.</p>
+<p><strong>Proof.</strong> The trace and the determinant are polynomials in the entries, and the roots of a monic quadratic are continuous functions of its coefficients.</p>
+<h2 id="the-two-roots-and-the-discriminant">The Two Roots and the Discriminant</h2>
+<p><strong>Definition.</strong> The <strong>discriminant</strong> is $\Delta=t^{2}-4\delta$, and the two roots are</p>
+<p>$$
+\lambda_{\pm}=\frac{t\pm\sqrt{\Delta}}{2}.
+$$</p>
+<p><strong>Proposition.</strong> The roots are distinct exactly when $\Delta\ne0$, they coincide exactly when $\Delta=0$, and their sum and product are $t$ and $\delta$.</p>
+<p><strong>Proof.</strong> The quadratic formula gives the roots; they coincide exactly when the square root vanishes; and the sum and the product are read from the coefficients by the elementary symmetric functions.</p>
+<p><strong>Corollary.</strong> The discriminant is itself a conjugacy invariant, and it is the square of the difference of the roots.</p>
+<p><strong>Proof.</strong> $\Delta=(\lambda_{+}-\lambda_{-})^{2}$, and both roots are conjugacy invariants.</p>
+<p><strong>Corollary.</strong> At the double root the matrix satisfies $(X-\lambda I)^{2}=0$, so it is either the scalar $\lambda I$ or a single Jordan block.</p>
+<p><strong>Proof.</strong> The characteristic polynomial is $(\lambda-\lambda_{0})^{2}$, and the minimal polynomial divides it and has the same root, so the minimal polynomial is $\lambda-\lambda_{0}$ or $(\lambda-\lambda_{0})^{2}$; the first case is the scalar and the second is the Jordan block.</p>
+<h2 id="eigenvectors-and-eigenspaces">Eigenvectors and Eigenspaces</h2>
+<p><strong>Proposition.</strong> For an eigenvalue $\lambda$ the eigenspace $\ker(\lambda I-X)$ is nonzero, it has dimension one when the two roots are distinct, and it has dimension two exactly when $X=\lambda I$.</p>
+<p><strong>Proof.</strong> The kernel is nonzero because the determinant vanishes; with distinct roots the matrix $\lambda I-X$ has rank one, so its kernel has dimension one; with a double root the kernel has dimension two exactly when the matrix is zero.</p>
+<p><strong>Corollary.</strong> With distinct roots the matrix is diagonalisable, with the two eigenspaces as the two coordinate lines of the diagonal form.</p>
+<p><strong>Proof.</strong> Two eigenvectors of distinct eigenvalues are independent, and two independent vectors form a basis in which the matrix is diagonal.</p>
+<p><strong>Corollary.</strong> At a double root the matrix is diagonalisable exactly when it is the scalar, so the spectrum plus the diagonalisability determines the class.</p>
+<p><strong>Proof.</strong> The scalar is diagonal in every basis, and a non-scalar with a double root has a one-dimensional eigenspace and hence a nontrivial Jordan block.</p>
+<h2 id="the-spectrum-is-not-a-complete-invariant">The Spectrum Is Not a Complete Invariant</h2>
+<p><strong>Theorem.</strong> The matrices $I$ and $\begin{pmatrix}1&1\\0&1\end{pmatrix}$ have the same spectrum and are not conjugate.</p>
+<p><strong>Proof.</strong> Both characteristic polynomials are $(\lambda-1)^{2}$, so both spectra are $\{1,1\}$; and $J-I$ has rank one, so $J$ is not the scalar, while every conjugate of $I$ is $I$.</p>
+<p><strong>Corollary.</strong> The spectrum together with the rank of $X-\lambda I$ at the repeated eigenvalue is a complete invariant at order two, because it distinguishes the scalar from the Jordan block.</p>
+<p><strong>Proof.</strong> The rank of $X-\lambda I$ is zero at the scalar and one at the Jordan block, and with distinct roots the rank is one at each eigenvalue.</p>
+<p><strong>Corollary.</strong> The classification is: two distinct roots, one double root with $X$ scalar, one double root with $X$ not scalar.</p>
+<p><strong>Proof.</strong> The three cases are exhaustive because the characteristic polynomial has at most two distinct roots, and the double-root case splits on whether the matrix is the scalar.</p>
+<h2 id="the-spectrum-of-functions">The Spectrum of Functions</h2>
+<p><strong>Theorem.</strong> For a polynomial $p$ the spectrum of $p(X)$ is $p$ applied to the spectrum of $X$, and for an invertible $X$ the spectrum of $X^{-1}$ is the reciprocal of the spectrum.</p>
+<p><strong>Proof.</strong> If $Xv=\lambda v$ then $p(X)v=p(\lambda)v$ and $X^{-1}v=\lambda^{-1}v$; when the roots are distinct the two eigenvectors already give both eigenvalues of the image, counted with multiplicity.</p>
+<p><strong>Corollary.</strong> The determinant of $p(X)$ is $p(\lambda_{+})p(\lambda_{-})$, and the trace is the sum of the two values.</p>
+<p><strong>Proof.</strong> The trace and the determinant of a two-by-two matrix are the elementary symmetric functions of its spectrum.</p>
+<p><strong>Corollary.</strong> The spectral mapping holds for the exponential and for every power series that converges on the spectrum.</p>
+<p><strong>Proof.</strong> The polynomial case passes to the limit in the uniform topology on the spectrum, and the exponential is such a limit at order two.</p>
+<h2 id="the-spectral-projections">The Spectral Projections</h2>
+<p><strong>Proposition.</strong> With distinct roots the two spectral projections are $\rho_{\pm}=\dfrac{X-\lambda_{\mp}I}{\lambda_{\pm}-\lambda_{\mp}}$, and they satisfy $\rho_{+}+\rho_{-}=I$, $\rho_{\pm}^{2}=\rho_{\pm}$ and $X=\lambda_{+}\rho_{+}+\lambda_{-}\rho_{-}$.</p>
+<p><strong>Proof.</strong> These are the Lagrange idempotents of <em>Lagrange Idempotents of a $2\times2$ Matrix with Simple Spectrum</em>, evaluated at the two nodes.</p>
+<p><strong>Corollary.</strong> The spectrum determines the matrix through the two projections, which are polynomials of degree one in the matrix.</p>
+<p><strong>Proof.</strong> The reconstruction writes the matrix as a combination of the identity and itself, with coefficients the two eigenvalues.</p>
+<p><strong>Corollary.</strong> The projections are continuous on the set of matrices with distinct roots and have no limit at the discriminant locus.</p>
+<p><strong>Proof.</strong> The denominators are the difference of the roots, which vanishes on the discriminant locus, while the numerators stay bounded.</p>
+<h2 id="the-reality-of-the-spectrum">The Reality of the Spectrum</h2>
+<p><strong>Proposition.</strong> The eigenvalues of a Hermitian matrix are real, those of a skew-Hermitian matrix are purely imaginary, and those of a unitary matrix have modulus one.</p>
+<p><strong>Proof.</strong> For a Hermitian $X$ and an eigenvector $v$ of norm one, $\lambda=v^{*}Xv$ is real because it equals its conjugate; for a skew-Hermitian $X$ the same computation gives $\lambda=-\bar\lambda$; and for a unitary $X$ it gives $|\lambda|^{2}=v^{*}X^{*}Xv=1$.</p>
+<p><strong>Corollary.</strong> A real symmetric $2\times2$ matrix has a real spectrum, and a real skew-symmetric $2\times2$ matrix has the spectrum $\{\mu i,-\mu i\}$ with $\mu$ real.</p>
+<p><strong>Proof.</strong> The real symmetric case is the Hermitian case, and the real skew-symmetric matrix is $c$ times the rotation by a right angle, whose square is $-c^{2}I$.</p>
+<p><strong>Corollary.</strong> A Hermitian matrix with the spectrum $\{1,1\}$ is the identity, and one with the spectrum $\{0,0\}$ is zero.</p>
+<p><strong>Proof.</strong> A Hermitian matrix is diagonalisable with real eigenvalues, so a double eigenvalue forces the scalar, and the scalar is fixed by the two values.</p>
+<h2 id="summary">Summary</h2>
+<p>The spectrum of a $2\times2$ matrix is the pair of roots of $\lambda^{2}-t\lambda+\delta$, with the discriminant $\Delta=t^{2}-4\delta$ deciding whether the roots are distinct. With distinct roots the matrix is diagonalisable with two one-dimensional eigenspaces; at a double root it is either the scalar or a single Jordan block.</p>
+<p>The spectrum is a conjugacy invariant but not a complete one: the scalar and the Jordan block share the spectrum $\{1,1\}$. The spectrum of a polynomial or of the inverse is the polynomial or the reciprocal applied to the spectrum, the spectral projections reconstruct the matrix with distinct roots, and the two halves carry real, imaginary or unit-modulus spectra.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$t,\delta$</td>
+<td>trace and determinant</td>
+</tr>
+<tr>
+<td>$\chi_{X}$</td>
+<td>the characteristic polynomial</td>
+</tr>
+<tr>
+<td>$\Delta$</td>
+<td>the discriminant $t^{2}-4\delta$</td>
+</tr>
+<tr>
+<td>$\lambda_{\pm}$</td>
+<td>the two eigenvalues</td>
+</tr>
+<tr>
+<td>$\rho_{\pm}$</td>
+<td>the spectral projections</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge University Press, 2013), for the characteristic polynomial, the spectrum and the spectral mapping theorem.</li>
+<li>Sheldon Axler, <em>Linear Algebra Done Right</em> (Springer, 2015), for eigenvalues, eigenspaces and diagonalisability.</li>
+<li><a href="the-element-rank-trace-determinant-characteristic-polynomial-at-n-2.html">The Element: Rank, Trace, Determinant, Characteristic Polynomial at $n=2$</a>, for the coefficients of the characteristic polynomial.</li>
+<li><a href="the-minimal-polynomial-and-the-two-jordan-regimes-of-m2c.html">The Minimal Polynomial and the Two Jordan Regimes of $M_2(\mathbb{C})$</a>, for the two regimes at the double root.</li>
+<li><a href="lagrange-idempotents-of-a-2x2-matrix-with-simple-spectrum.html">Lagrange Idempotents of a $2\times2$ Matrix with Simple Spectrum</a>, for the spectral projections.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Frame, the Simple Nilpotent and the Gauge of $M_2(\mathbb{C})$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-frame-the-simple-nilpotent-and-the-gauge-of-math0"><strong>The Frame, the Simple Nilpotent and the Gauge of $M_2(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>At order two a frame is an idempotent of rank one together with a nonzero element of one mixed corner, a simple nilpotent is a rank-one matrix with square zero, and the gauge that remains after the idempotent is fixed is the single group $\mathbb{C}^{\times}$ of reciprocal rescalings.</strong></p>
+<p>The article separates the three data of a frame, namely the idempotent, the simple nilpotent and the normalisation, computes the stabilisers and the orbit dimensions, proves that all frames are conjugate, and identifies the gauge with the stabiliser of the ordered frame. It assumes <em>The Peirce Basis and the Corners at $n=2$</em>, <em>The Peirce Decomposition and the Corner Recursion of $M_2(\mathbb{C})$</em> and <em>Lagrange Idempotents of a $2\times2$ Matrix with Simple Spectrum</em>.</p>
+<p>It defers the general-order frame to <em>The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$</em>. The orbit count here is self-contained.</p>
+<h2 id="the-three-data-of-a-frame">The Three Data of a Frame</h2>
+<p><strong>A frame carries an idempotent, a nilpotent and a normalisation, and each is determined by the others only up to a choice.</strong></p>
+<p><strong>Definition.</strong> A <strong>frame</strong> at order two is a quadruple $(e,\upsilon_{+},\upsilon_{-},f)$ with $e$ and $f$ orthogonal idempotents of rank one summing to $I$ and with $\upsilon_{+}\upsilon_{-}=e$.</p>
+<p><strong>Proposition.</strong> The frame is determined by the pair $(e,\upsilon_{+})$ with $\upsilon_{+}$ a nonzero element of the corner $eM(1-e)$, and $\upsilon_{-}$ is then unique.</p>
+<p><strong>Proof.</strong> The idempotent $f$ is the complement of $e$; the corner $eM(1-e)$ is one-dimensional; and the normalisation $\upsilon_{+}\upsilon_{-}=e$ fixes the partner in the other mixed corner uniquely, as proved in <em>The Peirce Basis and the Corners at $n=2$</em>.</p>
+<p><strong>Corollary.</strong> The frame is determined by the idempotent together with a point of a punctured line, so the set of frames is a bundle over the set of idempotents with fibre $\mathbb{C}^{\times}$.</p>
+<p><strong>Proof.</strong> The corner is a complex line and the admissible $\upsilon_{+}$ are its nonzero points, which form a copy of $\mathbb{C}^{\times}$.</p>
+<h2 id="the-simple-nilpotent">The Simple Nilpotent</h2>
+<p><strong>Definition.</strong> A <strong>simple nilpotent</strong> at order two is a matrix $N\ne0$ with $N^{2}=0$.</p>
+<p><strong>Proposition.</strong> Every simple nilpotent has rank one, its image equals its kernel, and it is the mixed generator of exactly those frames whose idempotent has the line of the image as its kernel.</p>
+<p><strong>Proof.</strong> The square zero gives $\operatorname{im}N\subseteq\ker N$; both are nonzero or zero together, and $N\ne0$ forces both to be the same line by the dimension count $1+1=2$. A frame with $\upsilon_{+}=N$ has $eN=N$ and $Ne=0$, so the image of $N$ lies in the image of $e$ and the kernel of $N$ contains the kernel of $e$; the two lines agree, so the image of $N$ is the image of $e$.</p>
+<p><strong>Corollary.</strong> The simple nilpotent fixes the line but not the idempotent: the idempotents whose mixed generator is $N$ are exactly those with image the line of $N$.</p>
+<p><strong>Proof.</strong> The image of $e$ must contain the image of $N$, which is a line, so the image of $e$ is that line; and every idempotent with that image satisfies $eN=N$ and $Ne=0$.</p>
+<p><strong>Corollary.</strong> All nonzero simple nilpotents are conjugate.</p>
+<p><strong>Proof.</strong> Each is the mixed generator of some frame, and all frames are conjugate by the theorem of the next section.</p>
+<h2 id="all-frames-are-conjugate">All Frames Are Conjugate</h2>
+<p><strong>Theorem.</strong> The group $\mathrm{GL}_2(\mathbb{C})$ acts transitively on the frames by conjugation.</p>
+<p><strong>Proof.</strong> Every idempotent of rank one is conjugate to $E_{11}$, so a frame may be carried to a frame with the idempotent $E_{11}$; then $\upsilon_{+}$ is a nonzero multiple of $E_{12}$, and the diagonal matrix $\operatorname{diag}(\lambda,\lambda^{-1})$ with $\lambda^{2}$ equal to that multiple carries it to $E_{12}$, with the partner carried to $E_{21}$.</p>
+<p><strong>Corollary.</strong> The conjugacy class of a frame is the class of the standard frame, and the orbit is the whole variety of frames.</p>
+<p><strong>Proof.</strong> The theorem gives the transitivity, so there is one orbit.</p>
+<p><strong>Corollary.</strong> Two frames are conjugate exactly when their idempotents have the same rank, which at order two is the only invariant.</p>
+<p><strong>Proof.</strong> Idempotents of the same rank are conjugate, and the frame is determined by the idempotent together with a point of the corner, which a conjugating matrix can always adjust.</p>
+<h2 id="the-stabilisers-and-the-orbit-dimensions">The Stabilisers and the Orbit Dimensions</h2>
+<p><strong>Theorem.</strong> The stabilisers in $\mathrm{GL}_2(\mathbb{C})$ of the four data have the complex dimensions</p>
+<p>$$
+\dim\operatorname{Stab}(e)=2,\qquad \dim\operatorname{Stab}(e,f)=2,\qquad \dim\operatorname{Stab}(N)=2,\qquad \dim\operatorname{Stab}(\text{frame})=1 .
+$$</p>
+<p><strong>Proof.</strong> The matrices commuting with $E_{11}$ are the diagonal ones, of dimension two; the same diagonal matrices fix $E_{22}$; the matrices commuting with $E_{12}$ are the matrices $\begin{pmatrix}a&b\\0&a\end{pmatrix}$, of dimension two; and the matrices fixing all four elements of the frame must commute with $E_{11}$ and with $E_{12}$, which forces the scalars.</p>
+<p><strong>Corollary.</strong> The orbit of the idempotent has dimension two, the orbit of the nilpotent has dimension two, and the orbit of the frame has dimension three.</p>
+<p><strong>Proof.</strong> The orbit dimension is the dimension of the group minus the dimension of the stabiliser, $4-2=2$ and $4-1=3$.</p>
+<p><strong>Corollary.</strong> The gauge is the quotient of the stabiliser of the idempotent by the stabiliser of the frame, and that quotient is the group $\mathbb{C}^{\times}$ of reciprocal rescalings.</p>
+<p><strong>Proof.</strong> Both stabilisers consist of diagonal matrices, of dimension two and one respectively; the quotient is one-dimensional and acts on the mixed line by rescaling, with the partner rescaled reciprocally to keep the normalisation.</p>
+<h2 id="the-normalisation">The Normalisation</h2>
+<p><strong>The normalisation $\upsilon_{+}\upsilon_{-}=e$ is what pins the gauge, and it is the only place where a choice is made.</strong></p>
+<p><strong>Proposition.</strong> The rescaling $\upsilon_{+}\mapsto\lambda\upsilon_{+}$ forces $\upsilon_{-}\mapsto\lambda^{-1}\upsilon_{-}$, and the two products $\upsilon_{+}\upsilon_{-}$ and $\upsilon_{-}\upsilon_{+}$ are invariant.</p>
+<p><strong>Proof.</strong> The product of the rescaled pair is $\lambda\lambda^{-1}\upsilon_{+}\upsilon_{-}=e$, and the second product is $\lambda^{-1}\lambda\upsilon_{-}\upsilon_{+}=f$; both are unchanged.</p>
+<p><strong>Corollary.</strong> The gauge is a torsor over $\mathbb{C}^{\times}$, with no preferred point, so a frame is a point of the bundle and not a canonical object.</p>
+<p><strong>Proof.</strong> Any two normalisations differ by a unique rescaling, and no rescaling is distinguished by the algebra alone.</p>
+<p><strong>Corollary.</strong> The modulus of the rescaling can be fixed by requiring $\operatorname{tr}(\upsilon_{-}\upsilon_{+})=\operatorname{tr}e$ together with a Hermitian condition, which selects a circle inside the gauge.</p>
+<p><strong>Proof.</strong> The trace condition is automatic, and the Hermitian condition $\upsilon_{-}=\upsilon_{+}^{*}$ is preserved exactly by the rescalings of modulus one.</p>
+<h2 id="the-biquaternion-case">The Biquaternion Case</h2>
+<p><strong>Proposition.</strong> In the biquaternion language the idempotent is the root of one $\tilde{Ζ}$ read through the pair $\tilde\Pi_{\pm}$, and the simple nilpotent is the companion nilpotent $\vec\Upsilon_{+-}$ with its partner $\vec\Upsilon_{-+}$.</p>
+<p><strong>Proof.</strong> The corpus builds the pair $\tilde\Pi_{\pm}=\tfrac12(e_t\pm\tilde{Ζ})$ from the root, which is the idempotent of the frame; and the companion nilpotents are the generators of the mixed corners normalised so that their product is $\tilde\Pi_{+}$.</p>
+<p><strong>Corollary.</strong> The gauge of the corpus is the same one complex parameter, and the normalisation is the same product condition.</p>
+<p><strong>Proof.</strong> The corpus states the freedom as one reciprocal rescaling $\lambda\in\mathbb{C}^{\times}$, which is the structure proved here.</p>
+<p><strong>Corollary.</strong> The correction recorded in the corpus applies here: the frame is built from the root and the idempotent pair, and no second anticommuting root is assumed.</p>
+<p><strong>Proof.</strong> The construction of the frame uses one idempotent, one nilpotent and one normalisation, and the involution that models the root is one point of the gauge, not a primitive datum.</p>
+<h2 id="summary">Summary</h2>
+<p>A frame at order two is an idempotent of rank one, a nonzero element of one mixed corner and the unique normalised partner, and it is determined by the idempotent together with a point of a punctured line. A simple nilpotent is a rank-one matrix with square zero; it fixes a line but not an idempotent, and all simple nilpotents are conjugate.</p>
+<p>The stabilisers have complex dimensions two, two, two and one for the idempotent, the pair, the nilpotent and the ordered frame, so the orbits have dimensions two, two and three. The gauge after fixing the idempotent is $\mathbb{C}^{\times}$ of reciprocal rescalings, and the normalisation $\upsilon_{+}\upsilon_{-}=e$ is the only choice made.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e,f$</td>
+<td>the idempotent and its complement</td>
+</tr>
+<tr>
+<td>$\upsilon_{+},\upsilon_{-}$</td>
+<td>the mixed generators of the frame</td>
+</tr>
+<tr>
+<td>$N$</td>
+<td>a simple nilpotent, $N^{2}=0$, $N\ne0$</td>
+</tr>
+<tr>
+<td>$\lambda$</td>
+<td>the gauge parameter in $\mathbb{C}^{\times}$</td>
+</tr>
+<tr>
+<td>$\operatorname{Stab}$</td>
+<td>the stabiliser in $\mathrm{GL}_2(\mathbb{C})$ under conjugation</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for frames, the gauge and the conjugacy of idempotents.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge University Press, 2013), for the Jordan form of a nilpotent matrix at order two.</li>
+<li><a href="the-peirce-basis-and-the-corners-at-n-2.html">The Peirce Basis and the Corners at $n=2$</a>, for the basis and the structure constants.</li>
+<li><a href="the-peirce-decomposition-and-the-corner-recursion-of-m2c.html">The Peirce Decomposition and the Corner Recursion of $M_2(\mathbb{C})$</a>, for the corner language used here.</li>
+<li><a href="the-frame-the-simple-nilpotents-and-the-gauge-of-mnc.html">The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$</a>, for the frame at general order.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

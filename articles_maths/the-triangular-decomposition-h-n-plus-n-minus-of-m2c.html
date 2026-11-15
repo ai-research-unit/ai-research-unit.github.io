@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Triangular Decomposition $h\oplus n_+\oplus n_-$ of $M_2(\mathbb{C})$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-triangular-decomposition-math0-of-math1"><strong>The Triangular Decomposition $h\oplus n_+\oplus n_-$ of $M_2(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The algebra splits into the diagonal algebra of dimension $2$ and the two strictly triangular lines, and the brackets of the three pieces form the root system $A_{1}$.</strong></p>
+<p>The article proves the decomposition $M_2(\mathbb{C})=h\oplus n_+\oplus n_-$, identifies $h\oplus n_+$ with the algebra $UT_2$ of upper triangular matrices and with the stabiliser of a line, computes the brackets between the three pieces, reads the roots $\pm\alpha$ and the coroot, and shows that $n_+$ is the nilradical of $UT_2$. It assumes <em>The Fine Decomposition against the Diagonal at $n=2$</em> for the corner coordinates and <em>The Ideals, the Centre and the Simplicity of $M_2(\mathbb{C})$</em> for the ideals.</p>
+<p>It defers the antisymmetric part inside $UT_2$ to <em>The Antisymmetric Part inside $UT_2$: the Radical as the Commutator</em> and the warning about the wrong product to <em>$UT_2$ as a Linear Model of $\operatorname{Sym}_2$: Same Space, Wrong Product</em>. The biquaternion version of the same split is <em>The Peirce Basis of the Biquaternion Algebra</em>, where the two triangular lines are the mixed corners.</p>
+<h2 id="the-decomposition">The Decomposition</h2>
+<p><strong>Definition.</strong> In the standard frame the three pieces are</p>
+<p>$$
+h=\left\{\begin{pmatrix}a&0\\ 0&d\end{pmatrix}\right\},\qquad
+n_+=\mathbb{C}E_{12}=\left\{\begin{pmatrix}0&b\\ 0&0\end{pmatrix}\right\},\qquad
+n_-=\mathbb{C}E_{21}=\left\{\begin{pmatrix}0&0\\ c&0\end{pmatrix}\right\}.
+$$</p>
+<p><strong>Theorem.</strong> The sum is direct and equal to the algebra:</p>
+<p>$$
+M_2(\mathbb{C})=h\oplus n_+\oplus n_-,\qquad \dim_{\mathbb{C}}=2+1+1=4 .
+$$</p>
+<p><strong>Proof.</strong> Every matrix is $\begin{pmatrix}a&b\\ c&d\end{pmatrix}$, with $a,d$ in $h$ and $b,c$ in the two lines; independence follows by reading the four entries separately.</p>
+<p><strong>Corollary.</strong> $M_2(\mathbb{C})=(h\oplus n_+)\oplus n_-$ is also the sum of the upper triangular algebra and the strictly lower line, and that is the form used in <em>$UT_2$ as the Complement of the Antisymmetric Part</em>.</p>
+<p><strong>The decomposition refines the split into the two halves.</strong> The diagonal $h$ lies inside the symmetric half, and each of the two lines $n_\pm$ splits into a symmetric and an antisymmetric part.</p>
+<h2 id="the-algebra-math26">The Algebra $UT_2$</h2>
+<p><strong>Definition.</strong> $UT_2=h\oplus n_+$ is the algebra of upper triangular matrices.</p>
+<p><strong>Proposition.</strong> $UT_2$ is a subalgebra of dimension $3$, the line $n_+$ is a two-sided ideal of it, and $UT_2/n_+\cong h\cong\mathbb{C}\times\mathbb{C}$.</p>
+<p><strong>Proof.</strong> The product of two upper triangular matrices is upper triangular, and the product of an upper triangular matrix with a strictly upper one is strictly upper. The quotient by $n_+$ is the image of the diagonal, and diagonal matrices multiply entrywise.</p>
+<p><strong>Proposition.</strong> $UT_2=\{A:A(\mathbb{C}e_{1})\subseteq\mathbb{C}e_{1}\}$ is the stabiliser of the line $\mathbb{C}e_{1}$, so it is the parabolic subalgebra attached to that line.</p>
+<p><strong>Proof.</strong> The first column of $A$ is the image of $e_{1}$, and the condition that it be a multiple of $e_{1}$ is $c=0$, that is $A\in h\oplus n_+$.</p>
+<p><strong>Corollary.</strong> The parabolic subalgebras of $M_2(\mathbb{C})$ are the stabilisers of the lines of $\mathbb{C}^{2}$; they are parametrised by $\mathbb{P}^{1}$ and they are all conjugate.</p>
+<p><strong>Proof.</strong> Each line gives one stabiliser, and $\mathrm{GL}_2(\mathbb{C})$ acts transitively on the lines.</p>
+<p><strong>The nilradical.</strong> The line $n_+$ is nilpotent, since $E_{12}^{2}=0$, and it is the largest nilpotent ideal of $UT_2$; so the nilpotent radical of $UT_2$ is $n_+$ and $UT_2$ is not reductive.</p>
+<h2 id="the-brackets-of-the-three-pieces">The Brackets of the Three Pieces</h2>
+<p><strong>Theorem.</strong> The three pieces satisfy</p>
+<p>$$
+[h,h]=0,\qquad [h,n_+]\subseteq n_+,\qquad [h,n_-]\subseteq n_-,\qquad [n_+,n_-]\subseteq h,\qquad [n_+,n_+]=[n_-,n_-]=0 .
+$$</p>
+<p><strong>Proof.</strong> The diagonal matrices commute and act diagonally on the two matrix units: for $D=\operatorname{diag}(a,d)$ one has $[D,E_{12}]=(a-d)E_{12}$ and $[D,E_{21}]=(d-a)E_{21}$. The bracket $[E_{12},E_{21}]=E_{11}-E_{22}$ is diagonal, and a one-dimensional space brackets to zero with itself.</p>
+<p><strong>Corollary.</strong> The traceless diagonal $h_{0}=\mathbb{C}(E_{11}-E_{22})$ is a Cartan subalgebra of $\mathfrak{sl}_2(\mathbb{C})$, and $\mathfrak{sl}_2(\mathbb{C})=h_{0}\oplus n_+\oplus n_-$ is its root space decomposition.</p>
+<p><strong>Proof.</strong> The three spaces lie inside the traceless algebra, their dimensions are $1+1+1=3$, and the brackets above are the root space axioms.</p>
+<p><strong>The roots are $\pm\alpha$.</strong> Define $\alpha\in h_{0}^{*}$ by $\alpha(\operatorname{diag}(a,-a))=2a$. Then $[X,E_{12}]=\alpha(X)E_{12}$ and $[X,E_{21}]=-\alpha(X)E_{21}$ for $X\in h_{0}$, so the two lines are the root spaces of $\alpha$ and of $-\alpha$.</p>
+<p><strong>The coroot.</strong> With $H=E_{11}-E_{22}$ one has $\alpha(H)=2$ and $\operatorname{tr}(H^{2})=2$, so $\langle H,X\rangle=\alpha(X)$ for every $X\in h_{0}$; the element $H$ is the coroot of $\alpha$, and the normalisation by the trace form is what makes the pairing return the structural constant $2$.</p>
+<p><strong>The root system is $A_{1}$.</strong> There are two roots, opposite to one another, and the Weyl group is the group of order two that exchanges them. At order $n$ the root system is $A_{n-1}$ and the Weyl group is the symmetric group, which is <em>The Matrix Algebra $M_n(\mathbb{C})$</em>.</p>
+<h2 id="the-triangular-decomposition-and-the-flag">The Triangular Decomposition and the Flag</h2>
+<p><strong>Proposition.</strong> The decomposition records the flag $0\subset\mathbb{C}e_{1}\subset\mathbb{C}^{2}$: the line $n_+$ moves the line, the diagonal $h$ preserves it, and the line $n_-$ sends it to $0$.</p>
+<p><strong>Proof.</strong> $E_{12}$ sends $e_{1}$ to $e_{2}$, which leaves the line; a diagonal matrix keeps $e_{1}$ inside the line; $E_{21}$ kills $e_{1}$.</p>
+<p><strong>Corollary.</strong> $n_+\oplus n_-$ is the space of matrices with zero diagonal, of dimension $2$, that is the tangent space to the set of matrices killing the flag.</p>
+<p><strong>Proof.</strong> A matrix of $n_+\oplus n_-$ has both diagonal entries zero, and conversely a matrix with zero diagonal lies in the sum of the two lines.</p>
+<p><strong>The split is orthogonal in one direction only.</strong> The diagonal $h$ is orthogonal to the off-diagonal plane for the trace form, since $\operatorname{tr}(E_{ii}E_{12})=\operatorname{tr}(E_{ii}E_{21})=0$; but $n_+$ and $n_-$ are not orthogonal, since $\operatorname{tr}(E_{12}E_{21})=1$.</p>
+<p><strong>Proof.</strong> The two computations are immediate from $\operatorname{tr}(E_{ij}E_{kl})=\delta_{jk}\delta_{il}$.</p>
+<h2 id="the-two-lines-and-the-two-halves">The Two Lines and the Two Halves</h2>
+<p><strong>Proposition.</strong> The symmetric half meets $n_+$ in the real line spanned by $E_{12}+E_{21}$ and meets $n_-$ in the same real line; the antisymmetric half meets $n_+$ in the real line spanned by $E_{12}-E_{21}$.</p>
+<p><strong>Proof.</strong> A matrix $bE_{12}+cE_{21}$ is symmetric exactly when $b=c$, and antisymmetric exactly when $b=-c$.</p>
+<p><strong>Corollary.</strong> Inside the off-diagonal plane the two halves are two lines, orthogonal for the trace form and exchanged by a rotation of angle $\pi/4$ of that plane.</p>
+<p><strong>Proof.</strong> The pairing of $E_{12}+E_{21}$ with $E_{12}-E_{21}$ is $\operatorname{tr}(E_{12}E_{21}-E_{21}E_{12})=1-1=0$.</p>
+<p><strong>Corollary.</strong> $UT_2$ contains the two-dimensional part $h\oplus\mathbb{R}(E_{12}+E_{21})$ of the symmetric half, and its third direction $E_{12}-E_{21}$ is antisymmetric.</p>
+<p><strong>Proof.</strong> The diagonal is symmetric and $E_{12}+E_{21}$ is symmetric, while $E_{12}-E_{21}$ is antisymmetric and completes a basis with them.</p>
+<p><strong>The antisymmetric direction is the radical.</strong> In $UT_2$ the antisymmetric line is exactly the commutator subspace, which is the content of <em>The Antisymmetric Part inside $UT_2$: the Radical as the Commutator</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>$M_2(\mathbb{C})$ splits as the diagonal algebra of dimension $2$ and the two strictly triangular lines $n_+=\mathbb{C}E_{12}$ and $n_-=\mathbb{C}E_{21}$. The sum $h\oplus n_+$ is the upper triangular algebra $UT_2$, of dimension $3$, the stabiliser of the line $\mathbb{C}e_{1}$ and the parabolic attached to it, with nilradical $n_+$.</p>
+<p>The brackets are $[h,n_\pm]\subseteq n_\pm$ and $[n_+,n_-]\subseteq h$, and each of the two nilpotent lines brackets to zero with itself. The traceless diagonal is a Cartan subalgebra of $\mathfrak{sl}_2(\mathbb{C})$ with roots $\pm\alpha$, where $\alpha(\operatorname{diag}(a,-a))=2a$, coroot $E_{11}-E_{22}$, and root system $A_{1}$. The diagonal is orthogonal to the off-diagonal plane, but the two nilpotent lines pair to $1$ and are not orthogonal. Inside the off-diagonal plane the symmetric and the antisymmetric halves are two orthogonal lines.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$h$</td>
+<td>the diagonal algebra, dimension $2$</td>
+</tr>
+<tr>
+<td>$n_+$</td>
+<td>$\mathbb{C}E_{12}$, the strictly upper line</td>
+</tr>
+<tr>
+<td>$n_-$</td>
+<td>$\mathbb{C}E_{21}$, the strictly lower line</td>
+</tr>
+<tr>
+<td>$UT_2$</td>
+<td>$h\oplus n_+$, the upper triangular algebra</td>
+</tr>
+<tr>
+<td>$h_{0}$</td>
+<td>the traceless diagonal, a Cartan subalgebra</td>
+</tr>
+<tr>
+<td>$\alpha$</td>
+<td>the root, $\alpha(\operatorname{diag}(a,-a))=2a$</td>
+</tr>
+<tr>
+<td>$H$</td>
+<td>$E_{11}-E_{22}$, the coroot direction</td>
+</tr>
+<tr>
+<td>$A_{1}$</td>
+<td>the root system of $\mathfrak{sl}_2$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>James E. Humphreys, <em>Introduction to Lie Algebras and Representation Theory</em> (Springer, 1972), for root space decompositions and the system $A_{1}$.</li>
+<li>Armand Borel, <em>Linear Algebraic Groups</em> (Springer, 1991), for parabolics as stabilisers of flags.</li>
+<li><a href="the-fine-decomposition-against-the-diagonal-at-n-2.html">The Fine Decomposition against the Diagonal at $n=2$</a>, for the corner coordinates used here.</li>
+<li><a href="the-two-halves-over-r-symmetric-and-antisymmetric-at-n-2.html">The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$</a>, for the symmetric and antisymmetric lines inside the triangular pieces.</li>
+<li><a href="the-peirce-basis-of-the-biquaternion-algebra.html">The Peirce Basis of the Biquaternion Algebra</a>, for the mixed corners in the biquaternion language.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

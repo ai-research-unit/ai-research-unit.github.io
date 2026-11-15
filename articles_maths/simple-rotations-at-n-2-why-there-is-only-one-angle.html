@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Rotations at $n=2$: Why There Is Only One Angle — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="simple-rotations-at-math0-why-there-is-only-one-angle"><strong>Simple Rotations at $n=2$: Why There Is Only One Angle</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>At order two the antisymmetric matrices form a single line, so a rotation has one plane and one angle, every rotation is simple, and the rotation group is a circle parametrised by that angle modulo $2\pi$.</strong></p>
+<p>The article explains what a simple rotation is, shows that the antisymmetric line is the only plane available at order two, proves that a rotation is determined by a single angle, computes the angle from the trace, compares the situation with the two angles of a rotation in four dimensions, and reads the single angle inside the complex and Hermitian pictures. It assumes <em>The Exponential of $\operatorname{Skew}_2$: the Single Rotation Plane</em>, <em>The Lie Algebra $\operatorname{Skew}_2$: One Dimension, Hence Abelian</em> and <em>The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$</em>.</p>
+<p>It follows the biquaternion account of <em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em> for the norm that the single angle leaves fixed.</p>
+<h2 id="simple-rotations">Simple Rotations</h2>
+<p><strong>Definition.</strong> A <strong>simple rotation</strong> of a real vector space with an inner product is a rotation that fixes pointwise the orthogonal complement of a single plane.</p>
+<p><strong>Proposition.</strong> Every rotation at order two is simple, with the whole plane as its plane of rotation.</p>
+<p><strong>Proof.</strong> The space has dimension two, so the orthogonal complement of the whole plane is zero and the condition is vacuous.</p>
+<p><strong>Corollary.</strong> At order two there is no room for a rotation to mix two independent planes.</p>
+<p><strong>Proof.</strong> A second independent plane would need two more dimensions, and the space has only two.</p>
+<p><strong>Corollary.</strong> In four dimensions the general rotation is not simple: it is the composition of two rotations in two orthogonal planes with two independent angles.</p>
+<p><strong>Proof.</strong> The Lie algebra $\mathfrak{so}(4)$ has dimension six and splits as the sum of two three-dimensional ideals, each contributing one angle, so a general element has two angles; such an element is simple only when one of the two angles vanishes.</p>
+<h2 id="the-single-plane">The Single Plane</h2>
+<p><strong>Theorem.</strong> The antisymmetric matrices at order two form the line $\mathbb{R}J$, and the exponential of that line is the whole rotation group.</p>
+<p><strong>Proof.</strong> A real antisymmetric matrix is $tJ$ with $t$ real, by <em>The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$</em>; and its exponential runs over all the rotations by <em>The Exponential of $\operatorname{Skew}_2$: the Single Rotation Plane</em>.</p>
+<p><strong>Corollary.</strong> The rotation group at order two has dimension one, and its Lie algebra is the antisymmetric line.</p>
+<p><strong>Proof.</strong> The exponential of a line is at most one-dimensional, and it is onto the rotation group, which is therefore one-dimensional.</p>
+<p><strong>Corollary.</strong> A rotation at order two is determined by a single real parameter, which is its angle.</p>
+<p><strong>Proof.</strong> The group is a circle and every point of it is reached by one angle modulo $2\pi$.</p>
+<h2 id="why-there-is-only-one-angle">Why There Is Only One Angle</h2>
+<p><strong>The absence of a second angle is a dimension count, and it can be seen in three ways.</strong></p>
+<p><strong>Proposition.</strong> The tangent space of the rotation group at the identity is one-dimensional, so the group has one infinitesimal generator and one angle.</p>
+<p><strong>Proof.</strong> The tangent space is the antisymmetric line, which is one-dimensional.</p>
+<p><strong>Corollary.</strong> The trace of a rotation determines the cosine of the angle, and the off-diagonal entry determines its sine, so the two together fix the angle modulo $2\pi$.</p>
+<p><strong>Proof.</strong> The rotation is $(\cos t)I+(\sin t)J$, so the trace is $2\cos t$ and the upper right entry is $\sin t$.</p>
+<p><strong>Corollary.</strong> A rotation at order two commutes with every other rotation, so the group is abelian and every element lies in a one-parameter subgroup.</p>
+<p><strong>Proof.</strong> All the rotations are polynomials in the single matrix $J$, and polynomials in one matrix commute.</p>
+<h2 id="the-angle-from-the-trace">The Angle from the Trace</h2>
+<p><strong>Proposition.</strong> For a rotation $R$ the angle satisfies $\operatorname{tr}R=2\cos t$ and $\det R=1$, so the angle is determined up to sign by the trace alone.</p>
+<p><strong>Proof.</strong> The Euler formula gives the trace as twice the cosine and the determinant as one.</p>
+<p><strong>Corollary.</strong> The map from rotations to traces is two-to-one except at the two rotations $\pm I$, where the angle is $0$ or $\pi$.</p>
+<p><strong>Proof.</strong> The cosine takes the same value at $t$ and $-t$, and at the two endpoints of the interval the two angles coincide.</p>
+<p><strong>Corollary.</strong> The trace is a function of the angle alone, and it is injective on the rotations whose angle lies in the interval $[0,\pi)$.</p>
+<p><strong>Proof.</strong> The trace is $2\cos t$, which is strictly decreasing on that interval.</p>
+<h2 id="the-complex-reading">The Complex Reading</h2>
+<p><strong>Proposition.</strong> Over $\mathbb{C}$ the antisymmetric line is a complex line, and a rotation is $e^{tJ}$ with $t$ complex, so the single angle becomes a single complex parameter.</p>
+<p><strong>Proof.</strong> The complex antisymmetric matrices are $tJ$ with $t\in\mathbb{C}$, and the exponential is computed by the same Euler formula.</p>
+<p><strong>Corollary.</strong> The complex rotation group is the quadric $X^{\mathsf T}X=I$ with determinant one, which is a cylinder parametrised by one complex number modulo $2\pi$.</p>
+<p><strong>Proof.</strong> The parametrisation by $t$ has the period lattice $2\pi\mathbb{Z}$, so the group is the quotient of the complex line by that lattice.</p>
+<p><strong>Corollary.</strong> There is still only one complex angle, because the complex antisymmetric space has complex dimension one and real dimension two.</p>
+<p><strong>Proof.</strong> The real dimension of the complex line is two, and it is the whole Lie algebra of the complex rotation group.</p>
+<h2 id="the-hidden-second-parameter">The Hidden Second Parameter</h2>
+<p><strong>The single angle does not mean that the rotation group is trivial: the group has a second real direction coming from the scalar phase.</strong></p>
+<p><strong>Proposition.</strong> The rotation circle sits inside the unitary group as the subgroup generated by $J$, and the unitary group has real dimension four, so three further real directions surround it.</p>
+<p><strong>Proof.</strong> The unitary group at order two has real dimension four; the circle generated by $J$ is one-dimensional; the scalar phases form a second circle commuting with it; and the two remaining directions are the other two traceless skew-Hermitian directions, which complete the three-dimensional space $\mathfrak{su}(2)$ together with $J$.</p>
+<p><strong>Corollary.</strong> The single rotation plane of the real picture is one circle inside the four-dimensional unitary group.</p>
+<p><strong>Proof.</strong> The rotations sit inside the unitaries as the matrices of the form $e^{tJ}$, and these form a circle.</p>
+<p><strong>Corollary.</strong> At order two the count of angles is one for the rotations of the plane and one for the phase, and the two circles commute.</p>
+<p><strong>Proof.</strong> The scalar phases commute with the rotations, so the two circles generate a torus inside the unitary group.</p>
+<h2 id="summary">Summary</h2>
+<p>A simple rotation fixes the orthogonal complement of one plane, and at order two every rotation is simple because the whole plane is the only plane. The antisymmetric matrices form the single line $\mathbb{R}J$, its exponential is the whole rotation group, and the group is a circle parametrised by one angle modulo $2\pi$.</p>
+<p>The angle is read from the trace as $2\cos t$ and from the off-diagonal entry as $\sin t$, and the absence of a second angle is the one-dimensionality of the antisymmetric line. Over $\mathbb{C}$ the single real angle becomes a single complex parameter, and the four-dimensional unitary group contains the rotation circle as one factor of a torus.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$J$</td>
+<td>the generator of the antisymmetric line</td>
+</tr>
+<tr>
+<td>$t$</td>
+<td>the single angle</td>
+</tr>
+<tr>
+<td>$\mathrm{SO}(2)$</td>
+<td>the rotation group at order two</td>
+</tr>
+<tr>
+<td>$\mathfrak{so}(2)$</td>
+<td>the antisymmetric line as a Lie algebra</td>
+</tr>
+<tr>
+<td>$\mathrm{SO}(4)$</td>
+<td>the comparison case with two angles</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Morton L. Curtis, <em>Matrix Groups</em> (Springer, 1984), for rotation groups and their angles in low dimensions.</li>
+<li>Jean Dieudonné, <em>La géométrie des groupes classiques</em> (Springer, 1971), for simple rotations and their planes.</li>
+<li><a href="the-exponential-of-skew-2-the-single-rotation-plane.html">The Exponential of $\operatorname{Skew}_2$: the Single Rotation Plane</a>, for the Euler formula and the group of rotations.</li>
+<li><a href="the-lie-algebra-skew-2-one-dimension-hence-abelian.html">The Lie Algebra $\operatorname{Skew}_2$: One Dimension, Hence Abelian</a>, for the one-dimensional Lie algebra.</li>
+<li><a href="the-two-halves-over-r-symmetric-and-antisymmetric-at-n-2.html">The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$</a>, for the antisymmetric line as a half.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

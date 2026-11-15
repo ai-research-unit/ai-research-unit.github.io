@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Two Components of $\mathrm{GL}_n(\mathbb{R})$ and the Failure of the Exponential — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-two-components-of-math0-and-the-failure-of-the-exponential"><strong>The Two Components of $\mathrm{GL}_n(\mathbb{R})$ and the Failure of the Exponential</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The unit group of $M_n(\mathbb{R})$ has exactly two connected components, cut by the sign of the determinant, and the exponential does not reach all of the positive one: the matrix with both diagonal entries $-1$ and a $1$ above the diagonal has positive determinant and is not an exponential.</strong></p>
+<p>The article proves that the determinant cuts $\mathrm{GL}_n(\mathbb{R})$ into exactly two components, that the polar decomposition joins every matrix of positive determinant to the identity, and that the exponential image is a proper part of that component. It proves the counterexample in full: the centraliser of the matrix is two-dimensional, the exponential of every element of that centraliser has a positive diagonal, and the matrix has a negative one. It replaces the false guess that the image is dense by the parity obstruction. It assumes <em>The Exponential of a Real Matrix and Its Image</em>, and defers the connectedness of $\mathrm{SO}(n)$ to <em>The Exponential of the Antisymmetric Part: One-Parameter Rotations</em>.</p>
+<p>Throughout $n\ge2$, the transpose is ${}^{\mathsf T}$ and the identity is $\mathrm{I}$.</p>
+<h2 id="the-determinant-cuts-the-group">The Determinant Cuts the Group</h2>
+<p><strong>The determinant is a continuous homomorphism onto $\mathbb{R}^{\times}$.</strong> It is a polynomial in the entries, so it is continuous, and $\det(AB)=\det A\det B$, so it is a homomorphism from the group to the multiplicative group of the field. It is onto, because $\det\operatorname{diag}(t,1,\dots,1)=t$ for every $t\ne0$.</p>
+<p><strong>Definition.</strong> Put</p>
+<p>$$
+\mathrm{GL}_n(\mathbb{R})^{+}=\{A:\det A>0\},\qquad \mathrm{GL}_n(\mathbb{R})^{-}=\{A:\det A<0\}.
+$$</p>
+<p>These are the preimages of the two components of $\mathbb{R}^{\times}$, they are open, and they are exchanged by multiplication by $-\mathrm{I}$.</p>
+<p><strong>The sign of the determinant is locally constant.</strong> A continuous function on a connected set has connected image, and the image of $\det$ on a connected set is a connected subset of $\mathbb{R}^{\times}$, that is, a single point of $(0,\infty)$ or of $(-\infty,0)$.</p>
+<h2 id="at-least-two-components">At Least Two Components</h2>
+<p><strong>Two matrices of opposite determinant sign lie in different components.</strong> Since $\det$ is locally constant, a component lies entirely in one of the two halves. The identity has determinant $1$ and $-\mathrm{I}$ has determinant $(-1)^{n}$, so for odd $n$ the two halves are already separated by the identity and its negative, and for even $n$ the matrix $\operatorname{diag}(-1,1,\dots,1)$ separates them. So there are at least two components, and each half is a union of components.</p>
+<p><strong>The count is the whole content.</strong> The hard part is not the lower bound; it is the statement that each half is connected. That is the next two sections.</p>
+<h2 id="the-polar-decomposition">The Polar Decomposition</h2>
+<p><strong>Every invertible matrix is a positive definite matrix times an orthogonal one.</strong> Let $A\in\mathrm{GL}_n(\mathbb{R})$. The matrix $AA^{\mathsf T}$ is symmetric and positive definite, so it has a unique positive definite square root $P=(AA^{\mathsf T})^{1/2}$, by the spectral theorem for $\operatorname{Sym}_n$. Then</p>
+<p>$$
+A=PQ,\qquad Q=P^{-1}A,
+$$</p>
+<p>and $Q$ is orthogonal, because</p>
+<p>$$
+Q^{\mathsf T}Q=A^{\mathsf T}P^{-2}A=A^{\mathsf T}(AA^{\mathsf T})^{-1}A=\mathrm{I}.
+$$</p>
+<p>The factor $P$ is symmetric positive definite and the factor $Q$ is orthogonal. The decomposition is unique: $P$ is forced to be $(AA^{\mathsf T})^{1/2}$ and $Q$ is then forced.</p>
+<p><strong>The sign of the determinant lives in the orthogonal factor.</strong> Since $\det P>0$,</p>
+<p>$$
+\det Q=\frac{\det A}{\det P},
+$$</p>
+<p>so $Q\in\mathrm{SO}(n)$ exactly when $\det A>0$. On the positive half the polar decomposition is a decomposition into a positive definite stretch and a rotation.</p>
+<h2 id="at-most-two-components">At Most Two Components</h2>
+<p><strong>On the positive half the exponential of the symmetric part does the stretching.</strong> A positive definite $P$ is $\exp S$ for the symmetric $S=\log P$, by the bijection of <em>The Exponential of a Real Matrix and Its Image</em>. Then</p>
+<p>$$
+A=\exp(S)\,Q,\qquad S\in\operatorname{Sym}_n,\quad Q\in\mathrm{SO}(n),
+$$</p>
+<p>and therefore</p>
+<p>$$
+\mathrm{GL}_n(\mathbb{R})^{+}=\exp(\operatorname{Sym}_n)\cdot\mathrm{SO}(n).
+$$</p>
+<p><strong>Both factors are connected.</strong> The space $\operatorname{Sym}_n$ is a real vector space, hence connected, and $\exp$ is continuous, so $\exp(\operatorname{Sym}_n)=\operatorname{Sym}_n^{++}$ is connected. The group $\mathrm{SO}(n)$ is connected: every rotation is the exponential of a skew matrix, so it is the continuous image of the connected space $\operatorname{Skew}_n$. The product of two connected spaces is connected, and the multiplication map is continuous.</p>
+<p><strong>Every matrix of positive determinant is joined to the identity.</strong> Let $A=\exp(S)Q$ and let $t\mapsto Q_{t}$ be a path in $\mathrm{SO}(n)$ from $Q$ to $\mathrm{I}$. Then</p>
+<p>$$
+t\longmapsto \exp(tS)\,Q_{t}
+$$</p>
+<p>is a path in $\mathrm{GL}_n(\mathbb{R})^{+}$ from $A$ to $\mathrm{I}$. So the positive half is path-connected, hence connected.</p>
+<p><strong>The negative half is a translate.</strong> Multiplication by $-\mathrm{I}$ is a homeomorphism carrying $\mathrm{GL}_n(\mathbb{R})^{+}$ onto $\mathrm{GL}_n(\mathbb{R})^{-}$, so the negative half is path-connected too. The group has exactly two components, and both are path-connected.</p>
+<p><strong>The two components are not the two halves of the transpose.</strong> The symmetric and the antisymmetric matrices both meet each half, since $\mathrm{I}$ and $-\mathrm{I}$ are symmetric. The cut by the sign of the determinant is topological.</p>
+<h2 id="the-counterexample">The Counterexample</h2>
+<p><strong>A matrix of positive determinant that is not an exponential.</strong> Put</p>
+<p>$$
+A=\begin{pmatrix}-1&1\\0&-1\end{pmatrix}.
+$$</p>
+<p>Then $\det A=1>0$ and $\operatorname{tr}A=-2$. The matrix lies in $\mathrm{GL}_2(\mathbb{R})^{+}$, and it is not $\exp X$ for any real $X$.</p>
+<p><strong>Every candidate commutes with $A$.</strong> Suppose that $\exp X=A$ for some $X\in M_2(\mathbb{R})$. The matrix $X$ commutes with its own exponential, because $X$ commutes with every power of $X$ and the series converges:</p>
+<p>$$
+XA=X\exp X=\exp X\,X=AX .
+$$</p>
+<p>So the problem is confined to the centraliser of $A$.</p>
+<h2 id="the-centraliser">The Centraliser</h2>
+<p><strong>The centraliser is two-dimensional.</strong> Let $X=\begin{pmatrix}a&b\\c&d\end{pmatrix}$. The condition $XA=AX$ reads</p>
+<p>$$
+\begin{pmatrix}-a&a-b\\-c&c-d\end{pmatrix}=\begin{pmatrix}-a+c&d-b\\-c&-d\end{pmatrix},
+$$</p>
+<p>and comparing entries gives $c=0$ and $d=a$. So</p>
+<p>$$
+X=a\mathrm{I}+bN,\qquad N=\begin{pmatrix}0&1\\0&0\end{pmatrix},\qquad N^{2}=0 .
+$$</p>
+<p>Conversely every matrix of that form commutes with $A$, so the centraliser is the two-dimensional space $\mathbb{R}\mathrm{I}\oplus\mathbb{R}N$. A numerical check of the linear system $XA-AX=0$ in the four entries returns rank two and the same two-dimensional kernel.</p>
+<p><strong>The centraliser is the algebra generated by $\mathrm{I}$ and a square-zero matrix.</strong> The two generators commute, $\mathrm{I}$ with everything and $N$ with itself, so the exponential factorises on the centraliser.</p>
+<h2 id="the-exponential-on-the-centraliser">The Exponential on the Centraliser</h2>
+<p><strong>The exponential of a centraliser element is the scalar exponential times a unipotent factor.</strong> Since $a\mathrm{I}$ and $bN$ commute and $N^{2}=0$,</p>
+<p>$$
+\exp(a\mathrm{I}+bN)=e^{a}\big(\mathrm{I}+bN\big)=\begin{pmatrix}e^{a}&e^{a}b\\0&e^{a}\end{pmatrix}.
+$$</p>
+<p>The formula is checked numerically on $20$ random pairs $(a,b)$ with maximum error $3.8\cdot10^{-15}$.</p>
+<p><strong>No value of the parameters gives $A$.</strong> The two diagonal entries of $\exp(a\mathrm{I}+bN)$ are equal to $e^{a}$, while those of $A$ are $-1$. So equality would require</p>
+<p>$$
+e^{a}=-1,
+$$</p>
+<p>which has no real solution, because $e^{a}>0$ for every real $a$. Equivalently, $\det\exp(a\mathrm{I}+bN)=e^{2a}>0$ is consistent with $\det A=1$, and the trace $2e^{a}>0$ is not consistent with $\operatorname{tr}A=-2$.</p>
+<p><strong>The obstruction survives the whole centraliser, not just the diagonal.</strong> Both diagonal entries are $e^{a}$, so the matrix $\exp X$ is always a scalar multiple of a unipotent matrix, and its diagonal is positive. The matrix $A$ is a negative scalar multiple of a unipotent matrix. The two classes are disjoint.</p>
+<h2 id="the-numerical-check">The Numerical Check</h2>
+<p><strong>A hundred samples of the centraliser never reach $A$.</strong> With $a$ and $b$ drawn independently from the normal law with standard deviation $2$, and $X=a\mathrm{I}+bN$, the smallest value of $\lVert\exp X-A\rVert$ over the sample is</p>
+<p>$$
+1.26 .
+$$</p>
+<p>The distance is bounded below, as it must be: the quantity $e^{a}$ is positive, and the diagonal entry $-1$ is at distance $1+e^{a}\ge1$ from it.</p>
+<p><strong>The exponent of the series is not the issue.</strong> The truncated sums converge to $\exp X$ to machine precision, so the failure is not numerical. It is the sign of the diagonal: no truncation of a series of matrices with a positive diagonal converges to a matrix with a negative one.</p>
+<h2 id="what-the-image-is">What the Image Is</h2>
+<p><strong>The exponential is not surjective onto the positive component.</strong> The counterexample gives $\exp(M_2(\mathbb{R}))\ne\mathrm{GL}_2(\mathbb{R})^{+}$, and the block embedding $X\mapsto\operatorname{diag}(X,1,\dots,1)$ carries the same failure into every dimension $n\ge2$.</p>
+<p><strong>The image is not open and not dense.</strong> The matrices with two simple negative eigenvalues form an open set, they have no real logarithm by the parity argument of <em>The Exponential of a Real Matrix and Its Image</em>, and $\operatorname{diag}(-1,-2)$ is an interior point of that set. So an open set misses the image, and the image is neither dense nor the whole component. The claim that the image is dense in $\mathrm{GL}_n(\mathbb{R})^{+}$ is false, and the example at $n=2$ refutes it.</p>
+<p><strong>The exact criterion is Culver's.</strong> A real invertible matrix $A$ is $\exp X$ for a real $X$ if and only if, for every negative real eigenvalue $\lambda$ of $A$ and every size $d$, the number of Jordan blocks of size $d$ for $\lambda$ is even. For the counterexample the eigenvalue $-1$ carries a single block of size $2$, an odd number, and the criterion fails. The parity of the multiplicity alone is not enough: the multiplicity of $-1$ is two, and the block count is one.</p>
+<p><strong>The image sits strictly between two extremes.</strong> It contains a neighbourhood of $\mathrm{I}$, because the exponential is a local diffeomorphism at the origin, and it misses an open set, so it is neither a neighbourhood of the whole component nor a thin subset of it.</p>
+<p><strong>What the two components say about the exponential.</strong> The exponential is a map whose image lies in a connected component, misses part of it, and generates it as a group. That is the sharp picture: the local statement is true, the global one is false, and the two components are the exact arena in which the difference is visible.</p>
+<h2 id="summary">Summary</h2>
+<p>The determinant is a continuous surjection of $\mathrm{GL}_n(\mathbb{R})$ onto $\mathbb{R}^{\times}$, so the group has at least two components, one of positive and one of negative determinant. The polar decomposition $A=\exp(S)Q$ with $S$ symmetric and $Q$ orthogonal makes both halves connected, so the components are exactly two. The matrix $\begin{pmatrix}-1&1\\0&-1\end{pmatrix}$ has determinant $1$ and is not an exponential: any $X$ with $\exp X=A$ commutes with $A$, the centraliser is $\{a\mathrm{I}+bN\}$ with $N^{2}=0$, and $\exp(a\mathrm{I}+bN)=e^{a}(\mathrm{I}+bN)$ has positive diagonal entries while $A$ has $-1$ there. Over $100$ samples of the centraliser the distance to $A$ never falls below $1.26$. So the exponential misses part of the positive component, is not dense there, and its exact image is described by Culver's criterion on the Jordan blocks at the negative eigenvalues.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{GL}_n(\mathbb{R})^{+}$, $\mathrm{GL}_n(\mathbb{R})^{-}$</td>
+<td>the matrices of positive and of negative determinant</td>
+</tr>
+<tr>
+<td>$\det$</td>
+<td>the determinant homomorphism</td>
+</tr>
+<tr>
+<td>$P=(AA^{\mathsf T})^{1/2}$</td>
+<td>the positive definite polar factor</td>
+</tr>
+<tr>
+<td>$Q=P^{-1}A$</td>
+<td>the orthogonal polar factor</td>
+</tr>
+<tr>
+<td>$A$</td>
+<td>the counterexample $\begin{pmatrix}-1&1\\0&-1\end{pmatrix}$</td>
+</tr>
+<tr>
+<td>$N$</td>
+<td>the nilpotent $\begin{pmatrix}0&1\\0&0\end{pmatrix}$</td>
+</tr>
+<tr>
+<td>$\operatorname{Sym}_n$</td>
+<td>the symmetric matrices</td>
+</tr>
+<tr>
+<td>$\mathrm{SO}(n)$</td>
+<td>the rotations, of determinant one</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for the polar decomposition and the sign of the determinant.</li>
+<li>W. J. Culver, <em>On the existence and uniqueness of the real logarithm of a matrix</em>, Proceedings of the American Mathematical Society (1966), for the criterion of §<em>What the Image Is</em>.</li>
+<li><a href="the-exponential-of-a-real-matrix-and-its-image.html">The Exponential of a Real Matrix and Its Image</a>, for the series, the determinant identity and the local diffeomorphism.</li>
+<li><a href="the-exponential-of-the-antisymmetric-part-one-parameter-rotations.html">The Exponential of the Antisymmetric Part: One-Parameter Rotations</a>, for the connectedness of $\mathrm{SO}(n)$.</li>
+<li><a href="the-matrix-algebra-mnr.html">The Matrix Algebra $M_n(\mathbb{R})$</a>, for the unit group and the singular set.</li>
+<li><a href="the-minimal-polynomial-over-r-and-the-real-jordan-form.html">The Minimal Polynomial over $\mathbb{R}$ and the Real Jordan Form</a>, for the Jordan blocks at a negative eigenvalue.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

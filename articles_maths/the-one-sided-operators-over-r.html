@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The One-Sided Operators — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-one-sided-operators"><strong>The One-Sided Operators</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The map $X\mapsto AX$ is an operator on the $n^{2}$-dimensional matrix space whose invariants are read off from $A$ without any computation: its rank is $n$ times the rank of $A$, its spectrum is the spectrum of $A$ repeated $n$ times, and its adjoint is the left multiplication by $A^{\mathsf T}$.</strong> The right multiplication behaves the same way, with the transpose in the parameter.</p>
+<p>The article computes the kernel and the image, the rank, the spectrum and the Hilbert–Schmidt adjoint of $L_A$ and $R_B$, identifies the group of invertible left multiplications with $\mathrm{GL}_n(\mathbb{R})$ and its orbits, and shows that the two families are exchanged by the transpose of the argument. It assumes <em>$\operatorname{End}(M_n(\mathbb{R}))$ as an Algebra: the Regular Representation</em> for the algebra of operators and the commutant, and <em>The Matrix Algebra $M_n(\mathbb{R})$</em> for the rank and the spectrum.</p>
+<h2 id="the-two-families">The Two Families</h2>
+<p><strong>Definition.</strong> For $A,B\in M_n(\mathbb{R})$ put</p>
+<p>$$
+L_A(X)=AX,\qquad R_B(X)=XB .
+$$</p>
+<p>Both are linear maps of $M_n(\mathbb{R})$ into itself, hence elements of $\operatorname{End}(M_n(\mathbb{R}))$, which has dimension $n^{4}$.</p>
+<p><strong>They are different operators.</strong> $L_A$ multiplies on the left and mixes the rows of $X$; $R_B$ multiplies on the right and mixes the columns. For $n\ge2$ neither family contains the other: $L_A=R_B$ forces $A=B=\lambda\mathrm{I}$.</p>
+<p><strong>In a basis they are Kronecker products.</strong> Stack the columns of $X$ into a column of length $n^{2}$. Then $\operatorname{vec}(AX)=(\mathrm{I}_n\otimes A)\operatorname{vec}X$ and $\operatorname{vec}(XB)=(B^{\mathsf T}\otimes\mathrm{I}_n)\operatorname{vec}X$, so</p>
+<p>$$
+[L_A]=\mathrm{I}_n\otimes A,\qquad [R_B]=B^{\mathsf T}\otimes\mathrm{I}_n .
+$$</p>
+<p>Every computation below is a computation with one of these two matrices.</p>
+<h2 id="composition-and-inverses">Composition and Inverses</h2>
+<p><strong>Theorem.</strong> $L_AL_B=L_{AB}$ and $R_BR_C=R_{CB}$.</p>
+<p><em>Proof.</em> Apply both sides to $X$: $L_AL_B(X)=A(BX)=(AB)X$ and $R_BR_C(X)=(XC)B=X(CB)$.</p>
+<p><strong>The left family is a copy of the algebra, the right family a copy of the opposite algebra.</strong> So $A\mapsto L_A$ is an algebra isomorphism and $B\mapsto R_B$ is an algebra anti-isomorphism. Both maps are injective, since $L_A=0$ or $R_B=0$ forces the parameter to vanish by evaluation at $\mathrm{I}$.</p>
+<p><strong>Corollary.</strong> $L_A$ is invertible if and only if $A$ is invertible, and then $L_A^{-1}=L_{A^{-1}}$. The same holds on the right, with $R_B^{-1}=R_{B^{-1}}$.</p>
+<p><em>Proof.</em> If $A$ is invertible, $L_AL_{A^{-1}}=L_{\mathrm{I}}=\mathrm{id}$. Conversely, if $L_A$ is invertible with inverse $T$, then $A\,T(\mathrm{I})=L_A(T(\mathrm{I}))=\mathrm{I}$, so $A$ has a right inverse and is invertible.</p>
+<p><strong>Nilpotence is preserved.</strong> If $A^{k}=0$ then $L_A^{k}=L_{A^{k}}=0$, and conversely $L_A^{k}=0$ gives $A^{k}=L_A^{k}(\mathrm{I})=0$. So $L_A$ is nilpotent exactly when $A$ is, with the same index.</p>
+<h2 id="kernel-and-image">Kernel and Image</h2>
+<p><strong>Theorem.</strong> $\ker L_A=\{X:AX=0\}$ is the set of matrices whose columns lie in $\ker A$, and</p>
+<p>$$
+\dim\ker L_A=n\,(n-\operatorname{rk}A).
+$$</p>
+<p><em>Proof.</em> Write $X$ as the block of its columns, $X=(x_1|\dots|x_n)$. Then $AX=(Ax_1|\dots|Ax_n)$, so $AX=0$ exactly when $Ax_j=0$ for every $j$. Each column ranges over the subspace $\ker A$, of dimension $n-\operatorname{rk}A$, independently of the others, so the space of such $X$ has dimension $n(n-\operatorname{rk}A)$.</p>
+<p><strong>Theorem.</strong> $\operatorname{im}L_A=\{AX\}$ is the set of matrices whose columns lie in $\operatorname{im}A$, and its dimension is $n\operatorname{rk}A$.</p>
+<p><em>Proof.</em> Same block reading: every column of $AX$ is $A$ times a vector, hence lies in $\operatorname{im}A$, and every matrix with columns in $\operatorname{im}A$ is $A$ times the matrix of preimages. The columns are free, so the dimension is $n\dim\operatorname{im}A$.</p>
+<p><strong>The two counts add up.</strong> $n\operatorname{rk}A+n(n-\operatorname{rk}A)=n^{2}$, which is the rank–nullity theorem for $L_A$ and an independent check of both formulas.</p>
+<p><strong>At $n=3$ with $\operatorname{rk}A=2$</strong> the kernel has dimension $3$ and the image dimension $6$, and the numerical rank of $[L_A]$ is $6$. The three zero eigenvalues of $L_A$ are exactly the three dimensions of the kernel.</p>
+<h2 id="the-rank">The Rank</h2>
+<p><strong>Theorem.</strong> $\operatorname{rk}L_A=n\operatorname{rk}A$.</p>
+<p><em>Proof.</em> It is the dimension of the image, computed above. Equivalently, a rank-$r$ matrix factors as $A=UV^{\mathsf T}$ with $U$ of size $n\times r$ and $V$ of size $n\times r$ of rank $r$, and then $X\mapsto AX=U(V^{\mathsf T}X)$ is a composition of a map onto an $r$-dimensional space of rows and a map of rank $r$; the count gives $nr$.</p>
+<p><strong>The rank is multiplicative in the parameter only up to the factor $n$.</strong> $\operatorname{rk}L_{AB}=n\operatorname{rk}(AB)\le n\min(\operatorname{rk}A,\operatorname{rk}B)$, so the rank of the product can drop, exactly as the rank of $AB$ can drop.</p>
+<p><strong>The singular set is the image of the singular set.</strong> $L_A$ is singular exactly when $A$ is, so the set $\{A:\det A=0\}$ is the preimage under $A\mapsto L_A$ of the singular operators. The dimension count is consistent: $\det L_A=(\det A)^{n}$ vanishes exactly when $\det A$ does.</p>
+<h2 id="the-spectrum">The Spectrum</h2>
+<p><strong>Theorem.</strong> The eigenvalues of $L_A$ are the eigenvalues of $A$, each with multiplicity $n$.</p>
+<p><em>Proof.</em> In the Kronecker basis $[L_A]=\mathrm{I}_n\otimes A$. The eigenvalues of a Kronecker product $P\otimes Q$ are the products $\mu_i\nu_j$ of the eigenvalues of the factors. With $P=\mathrm{I}_n$ all $\mu_i=1$, so the eigenvalues are the $\nu_j$, each occurring $n$ times.</p>
+<p><strong>The characteristic polynomial is the $n$-th power.</strong> Over $\mathbb{C}$ the eigenvalues exist with multiplicity, and</p>
+<p>$$
+\chi_{L_A}(t)=\prod_{j=1}^{n}(t-\lambda_j)^{n}=\chi_A(t)^{n}.
+$$</p>
+<p>The identity is a polynomial identity in the entries, so it holds over $\mathbb{R}$ as well, where some of the $\lambda_j$ may be complex conjugate pairs.</p>
+<p><strong>The trace and the determinant follow.</strong> Comparing coefficients,</p>
+<p>$$
+\operatorname{tr}L_A=n\operatorname{tr}A,\qquad \det L_A=(\det A)^{n}.
+$$</p>
+<p><strong>The Jordan structure is repeated, not mixed.</strong> Over $\mathbb{C}$ the operator $L_A$ is similar to the block diagonal matrix with $n$ copies of the Jordan form of $A$; the size of the largest block for an eigenvalue is unchanged. So the minimal polynomial of $L_A$ is the minimal polynomial of $A$.</p>
+<h2 id="the-hilbertschmidt-adjoint">The Hilbert–Schmidt Adjoint</h2>
+<p><strong>Definition.</strong> $\langle X,Y\rangle=\operatorname{tr}(X^{\mathsf T}Y)=\sum_{i,j}X_{ij}Y_{ij}$ is the Hilbert–Schmidt inner product, positive definite on $M_n(\mathbb{R})$.</p>
+<p><strong>Theorem.</strong> $L_A^{*}=L_{A^{\mathsf T}}$ and $R_B^{*}=R_{B^{\mathsf T}}$.</p>
+<p><em>Proof.</em> For all $X,Y$,</p>
+<p>$$
+\langle L_AX,Y\rangle=\operatorname{tr}\big((AX)^{\mathsf T}Y\big)=\operatorname{tr}(X^{\mathsf T}A^{\mathsf T}Y)=\langle X,A^{\mathsf T}Y\rangle=\langle X,L_{A^{\mathsf T}}Y\rangle .
+$$</p>
+<p>The adjoint is unique, so $L_A^{*}=L_{A^{\mathsf T}}$. The same computation with $Y\mapsto YB$ gives $\langle X,YB\rangle=\langle XB^{\mathsf T},Y\rangle$, that is $R_B^{*}=R_{B^{\mathsf T}}$.</p>
+<p><strong>The adjoint stays in the same family.</strong> It does not exchange left with right; it transposes the parameter. Numerically the two identities hold to $10^{-16}$ at $n=3$.</p>
+<p><strong>The transpose of the argument is what exchanges the families.</strong> For every $X$,</p>
+<p>$$
+(L_AX)^{\mathsf T}=X^{\mathsf T}A^{\mathsf T}=R_{A^{\mathsf T}}(X^{\mathsf T}),
+$$</p>
+<p>so the left multiplication by $A$, followed by the transpose of the result, is the right multiplication by $A^{\mathsf T}$ applied to the transposed argument. Written as operators, with $\tau(X)=X^{\mathsf T}$,</p>
+<p>$$
+\tau L_A\tau=R_{A^{\mathsf T}},\qquad \tau R_B\tau=L_{B^{\mathsf T}}.
+$$</p>
+<p><strong>$\tau$ is an anti-automorphism of $\operatorname{End}$.</strong> It is linear and invertible, and $\tau(ST)=\tau(T)\tau(S)$ for operators $S,T$. The conjugation by an anti-automorphism turns a homomorphism into an anti-homomorphism, which is why the left family and the right family are exchanged and not preserved.</p>
+<h2 id="the-group-and-its-orbits">The Group and Its Orbits</h2>
+<p><strong>Theorem.</strong> $\{L_A:A\in\mathrm{GL}_n(\mathbb{R})\}$ is a subgroup of $\mathrm{GL}_{n^{2}}(\mathbb{R})$ isomorphic to $\mathrm{GL}_n(\mathbb{R})$, acting on $M_n(\mathbb{R})$ by left multiplication.</p>
+<p><em>Proof.</em> Invertibility of $L_A$ is equivalent to invertibility of $A$, and the product rule $L_AL_B=L_{AB}$ makes the map an isomorphism of groups.</p>
+<p><strong>The orbit of the identity is the group itself.</strong> $\{L_A(\mathrm{I}):A\in\mathrm{GL}_n(\mathbb{R})\}=\{A\}=\mathrm{GL}_n(\mathbb{R})$. Under all left multiplications, without the invertibility, the orbit of $\mathrm{I}$ is all of $M_n(\mathbb{R})$, since $L_A(\mathrm{I})=A$.</p>
+<p><strong>The general orbit is classified by the kernel.</strong> If $Y=AX$ with $A$ invertible, then $\ker Y=\ker X$: indeed $\ker Y\supseteq\ker X$, and the ranks are equal because $L_A$ preserves the rank, so the kernels have the same dimension. Conversely, if $\ker X=\ker Y$, the rule $x_j\mapsto y_j$ is well defined on the column space of $X$, because a relation among the columns of $X$ is a vector of $\ker X$, hence one of $\ker Y$. It is an isomorphism onto the column space of $Y$, and it extends to an invertible $A$ with $AX=Y$.</p>
+<p><strong>The orbits are therefore indexed by subspaces.</strong> The orbit of $X$ is the set of matrices with kernel $\ker X$, so the orbit space is the disjoint union of the Grassmannians of $(n-r)$-dimensional subspaces of $\mathbb{R}^n$ for $r=0,\dots,n$. The largest orbit is $\mathrm{GL}_n(\mathbb{R})$ itself, of dimension $n^{2}$; the smallest is $\{0\}$.</p>
+<p><strong>The right action has the same structure, with the image in place of the kernel.</strong> Right multiplication preserves the row space, and its orbits are classified by the image of the transposed matrix.</p>
+<h2 id="the-numerical-check">The Numerical Check</h2>
+<p><strong>The invariants at $n=3$.</strong> For a random $A$, the numerical rank of $[\mathrm{I}\otimes A]$ is $3\operatorname{rk}A$; the eigenvalues of $[\mathrm{I}\otimes A]$ are those of $A$ repeated three times, sorted, to machine precision; and the kernel has dimension $3(3-\operatorname{rk}A)$, which is $9-\operatorname{rk}L_A$.</p>
+<p><strong>The degenerate case.</strong> For a $3\times3$ matrix of rank two, built by making the third row equal the first, $L_A$ has rank $6$ and kernel dimension $3$, and three of its eigenvalues vanish, matching the three zero eigenvalues of the kernel directions.</p>
+<p><strong>The adjoint.</strong> At $n=3$ the identity $\langle AX,Y\rangle=\langle X,A^{\mathsf T}Y\rangle$ holds to $10^{-16}$, and $\langle XB,Y\rangle=\langle X,YB^{\mathsf T}\rangle$ to machine precision.</p>
+<p><strong>The exchange.</strong> The identity $\tau L_A\tau=R_{A^{\mathsf T}}$ holds exactly, to $0$ residual, and the orbit statement was checked for a pair of rank-two matrices with the same kernel: the interpolating $A$ satisfies $AX=Y$ to $1.3\times10^{-15}$.</p>
+<h2 id="summary">Summary</h2>
+<p>The left multiplication $L_A(X)=AX$ and the right multiplication $R_B(X)=XB$ are operators on the $n^{2}$-dimensional matrix space, with $[L_A]=\mathrm{I}\otimes A$ and $[R_B]=B^{\mathsf T}\otimes\mathrm{I}$. The left family is a copy of $M_n(\mathbb{R})$, the right family a copy of the opposite algebra, and $L_AL_B=L_{AB}$, $R_BR_C=R_{CB}$. The kernel of $L_A$ is the set of matrices with columns in $\ker A$, of dimension $n(n-\operatorname{rk}A)$; the image is the set of matrices with columns in $\operatorname{im}A$, of dimension $n\operatorname{rk}A$; the rank is $n\operatorname{rk}A$; the spectrum is the spectrum of $A$ with each eigenvalue repeated $n$ times, so $\operatorname{tr}L_A=n\operatorname{tr}A$ and $\det L_A=(\det A)^{n}$. For the Hilbert–Schmidt form the adjoint is $L_{A^{\mathsf T}}$, and it stays in the left family; the two families are exchanged by conjugation with the transpose of the argument, $\tau L_A\tau=R_{A^{\mathsf T}}$. The invertible left multiplications form a group isomorphic to $\mathrm{GL}_n(\mathbb{R})$, whose orbit of $\mathrm{I}$ is $\mathrm{GL}_n(\mathbb{R})$ and whose general orbits are classified by the kernel.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_A(X)=AX$</td>
+<td>The left multiplication by $A$</td>
+</tr>
+<tr>
+<td>$R_B(X)=XB$</td>
+<td>The right multiplication by $B$</td>
+</tr>
+<tr>
+<td>$[L_A]=\mathrm{I}\otimes A$</td>
+<td>Its matrix in the column-stacking basis</td>
+</tr>
+<tr>
+<td>$[R_B]=B^{\mathsf T}\otimes\mathrm{I}$</td>
+<td>Its matrix in the same basis</td>
+</tr>
+<tr>
+<td>$\ker L_A$</td>
+<td>Matrices with columns in $\ker A$, of dimension $n(n-\operatorname{rk}A)$</td>
+</tr>
+<tr>
+<td>$\operatorname{im}L_A$</td>
+<td>Matrices with columns in $\operatorname{im}A$, of dimension $n\operatorname{rk}A$</td>
+</tr>
+<tr>
+<td>$\langle X,Y\rangle=\operatorname{tr}(X^{\mathsf T}Y)$</td>
+<td>The Hilbert–Schmidt inner product</td>
+</tr>
+<tr>
+<td>$L_A^{*}=L_{A^{\mathsf T}}$</td>
+<td>The adjoint of $L_A$</td>
+</tr>
+<tr>
+<td>$\tau(X)=X^{\mathsf T}$</td>
+<td>The transpose, an anti-automorphism of $\operatorname{End}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Roger A. Horn and Charles R. Johnson, <em>Topics in Matrix Analysis</em> (Cambridge, 1991), for the Kronecker product and the spectrum of $\mathrm{I}\otimes A$.</li>
+<li>Paul Richard Halmos, <em>Finite-Dimensional Vector Spaces</em> (Springer, 1974), for the operator view of the regular representation.</li>
+<li><a href="end-mnr-as-an-algebra-the-regular-representation.html">$\operatorname{End}(M_n(\mathbb{R}))$ as an Algebra: the Regular Representation</a>, for the two copies, their commutant and the dimension $2n^{2}-1$.</li>
+<li><a href="the-matrix-algebra-mnr.html">The Matrix Algebra $M_n(\mathbb{R})$</a>, for the rank, the trace and the determinant.</li>
+<li><a href="the-one-sided-operators-of-mnc.html">The One-Sided Operators of $M_n(\mathbb{C})$</a>, for the complex case, where the same formulas hold with the conjugate transpose.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

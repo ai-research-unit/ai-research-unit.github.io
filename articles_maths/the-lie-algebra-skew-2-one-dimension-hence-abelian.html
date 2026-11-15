@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Lie Algebra $\operatorname{Skew}_2$: One Dimension, Hence Abelian — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-lie-algebra-math0-one-dimension-hence-abelian"><strong>The Lie Algebra $\operatorname{Skew}_2$: One Dimension, Hence Abelian</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The antisymmetric matrices of order two form a one-dimensional Lie algebra, so the bracket vanishes identically, the Killing form is zero, and the trace form is the single number $-2$.</strong></p>
+<p>The article proves the identification $\Lambda^{2}\mathbb{R}^{2}=\mathbb{R}J$ with $J^{2}=-I$, proves that the bracket is identically zero, computes the Killing form and the trace form, identifies the universal enveloping algebra with the complex numbers, computes the centraliser of $J$ as the span of $I$ and $J$, shows that the antisymmetric line is not a Lie ideal of $\mathfrak{gl}_2$, and reads the bracket of two symmetric matrices as a scalar with the value $-2$ on an orthonormal pair. It assumes <em>The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$</em>, <em>The Four Multiplication Tables: $SS$, $SK$, $KS$, $KK$ at $n=2$</em> and <em>The Triangular Decomposition $h\oplus n_+\oplus n_-$ of $M_2(\mathbb{C})$</em>.</p>
+<p>It defers the exponential of the line to <em>The Exponential of $\operatorname{Skew}_2$: the Single Rotation Plane</em>, the absence of a second angle to <em>Simple Rotations at $n=2$: Why There Is Only One Angle</em>, and the antisymmetric direction of the triangular algebra to <em>The Antisymmetric Part inside $UT_2$: the Radical as the Commutator</em>.</p>
+<h2 id="the-space-and-the-bracket">The Space and the Bracket</h2>
+<p><strong>Definition.</strong> $\operatorname{Skew}_2(\mathbb{R})=\Lambda^{2}\mathbb{R}^{2}=\{K:K^{\mathsf T}=-K\}=\mathbb{R}J$ with $J=\begin{pmatrix}0&1\\ -1&0\end{pmatrix}$.</p>
+<p><strong>Proposition.</strong> The space is one-dimensional, and the bracket of any two elements vanishes.</p>
+<p><strong>Proof.</strong> An antisymmetric two-by-two matrix has the form $\begin{pmatrix}0&c\\ -c&0\end{pmatrix}=cJ$, so the space is the line spanned by $J$; the bracket of two multiples of $J$ is a multiple of $[J,J]=0$.</p>
+<p><strong>Corollary.</strong> $\operatorname{Skew}_2(\mathbb{R})$ is an abelian Lie algebra of dimension one, and it is the Lie algebra $\mathfrak{so}(2)$ of the rotation group.</p>
+<p><strong>Proof.</strong> Every one-dimensional Lie algebra is abelian, and the antisymmetric matrices are the derivatives at the identity of the orthogonal matrices with determinant one.</p>
+<p><strong>The dimension is degenerate at order two.</strong> At order $n$ the space $\Lambda^{2}\mathbb{R}^{n}$ has dimension $n(n-1)/2$, which is $3$ at $n=3$ and $6$ at $n=4$; at $n=2$ it collapses to a line, so the bracket has no room for structure.</p>
+<p><strong>Proof.</strong> The dimension formula is $n(n-1)/2$, and the value at $n=2$ is $1$.</p>
+<h2 id="the-two-forms">The Two Forms</h2>
+<p><strong>Proposition.</strong> The Killing form of $\operatorname{Skew}_2(\mathbb{R})$ vanishes.</p>
+<p><strong>Proof.</strong> The adjoint representation of an abelian algebra is zero, so $\operatorname{ad}J=0$ and the trace of any product of adjoint operators is zero.</p>
+<p><strong>Proposition.</strong> The trace form is $\operatorname{tr}(J^{2})=-2$, so it is negative definite on the line.</p>
+<p><strong>Proof.</strong> $J^{2}=-I$ and $\operatorname{tr}I=2$.</p>
+<p><strong>Corollary.</strong> The antisymmetric line is the negative definite direction of the trace form on $M_2(\mathbb{R})$, of signature $(3,1)$.</p>
+<p><strong>Proof.</strong> The form is $-2c^{2}$ at $cJ$, and the symmetric half is positive definite by <em>The Two Halves as Orthogonal Complements at $n=2$</em>.</p>
+<p><strong>The two forms say opposite things.</strong> The Killing form cannot see the line because the bracket vanishes there, and the trace form sees it as the unique timelike direction of the algebra.</p>
+<h2 id="the-enveloping-algebra">The Enveloping Algebra</h2>
+<p><strong>Theorem.</strong> The universal enveloping algebra of $\operatorname{Skew}_2(\mathbb{R})$ is $\mathbb{R}[J]/(J^{2}+1)$, which is the field $\mathbb{C}$.</p>
+<p><strong>Proof.</strong> A one-dimensional abelian Lie algebra has the polynomial algebra in one generator as its enveloping algebra, and the relation $J^{2}=-1$ comes from the matrix, so the quotient is the field of complex numbers realised as $\mathbb{R}\oplus\mathbb{R}J$.</p>
+<p><strong>Corollary.</strong> The line acts on the real plane by a complex structure, and the two-dimensional real space becomes a one-dimensional complex space.</p>
+<p><strong>Proof.</strong> Multiplication by $J$ is a real-linear map with square $-1$, which is exactly the datum of a complex structure.</p>
+<p><strong>The complex structure is the one of the plane.</strong> In the standard coordinates $J(x,y)=(-y,x)$, which is the rotation by $\pi/2$; the identification of $\mathbb{R}^{2}$ with $\mathbb{C}$ sends $(x,y)$ to $x+iy$.</p>
+<p><strong>Proof.</strong> The matrix $J$ sends the first basis vector to $-e_{2}$ and the second to $e_{1}$.</p>
+<h2 id="the-centraliser-of-math66">The Centraliser of $J$</h2>
+<p><strong>Proposition.</strong> The centraliser of $J$ in $M_2(\mathbb{R})$ is the span of $I$ and $J$, of dimension $2$.</p>
+<p><strong>Proof.</strong> A matrix commuting with $J$ commutes with the complex structure, hence is complex linear as a real map, hence of the form $\begin{pmatrix}a&-b\\ b&a\end{pmatrix}=aI+bJ$; the two parameters are the dimension.</p>
+<p><strong>Corollary.</strong> The centraliser is a copy of $\mathbb{C}$, and it is the largest subalgebra of $M_2(\mathbb{R})$ in which the antisymmetric line is central.</p>
+<p><strong>Proof.</strong> The centraliser is closed under products, contains $J$, and is isomorphic to $\mathbb{C}$ through $aI+bJ\mapsto a+ib$.</p>
+<p><strong>The other centralisers are larger.</strong> The centraliser of the identity is the whole algebra, and the centraliser of a matrix with two distinct eigenvalues is the two-dimensional algebra of the diagonal matrices in its eigenbasis.</p>
+<p><strong>Proof.</strong> A matrix commuting with the identity is arbitrary, and a matrix commuting with a diagonal matrix with distinct entries is diagonal.</p>
+<h2 id="the-line-is-not-an-ideal">The Line Is Not an Ideal</h2>
+<p><strong>Proposition.</strong> The antisymmetric line is not an ideal of $\mathfrak{gl}_2(\mathbb{R})$.</p>
+<p><strong>Proof.</strong> For symmetric $A$ the commutator $[A,J]=AJ-JA$ is symmetric and traceless, hence not a multiple of $J$ unless it vanishes; with $A=\sigma_{3}$ it is $2\sigma_{1}\neq0$.</p>
+<p><strong>Corollary.</strong> The line is a subalgebra and a subspace invariant under no large group, and the derived algebra of $\mathfrak{gl}_2(\mathbb{R})$ is $\mathfrak{sl}_2(\mathbb{R})$.</p>
+<p><strong>Proof.</strong> The derived algebra is spanned by the commutators, which generate the traceless matrices; the line lies inside it but is not stable under it.</p>
+<p><strong>The diagonal algebra does not preserve the line either.</strong> For $D=\operatorname{diag}(a,d)$ one has $[D,J]=(a-d)\sigma_{1}$, which leaves the line as soon as $a\neq d$.</p>
+<p><strong>Proof.</strong> The computation is the same as the previous one with a diagonal $A$.</p>
+<p><strong>Corollary.</strong> The antisymmetric direction is the one that the whole algebra moves, which is why it appears in the off-diagonal corner of the Peirce decomposition and not on the diagonal.</p>
+<h2 id="the-bracket-of-two-symmetric-matrices">The Bracket of Two Symmetric Matrices</h2>
+<p><strong>Theorem.</strong> For traceless symmetric $u,v$ the bracket is a multiple of $J$, and the scalar is the cross product of the two vectors of coefficients.</p>
+<p><strong>Proof.</strong> The commutator of two symmetric matrices is antisymmetric, hence a multiple of $J$; in the Pauli coordinates $u=\vec a\cdot\vec\sigma$ and $v=\vec b\cdot\vec\sigma$, and $[\sigma_{i},\sigma_{j}]=2i\epsilon_{ijk}\sigma_{k}$ gives the cross product.</p>
+<p><strong>Corollary.</strong> The bracket on the traceless plane is a skew form $\Lambda^{2}V\to\mathbb{R}$, hence a multiple of the area form, and the algebra $\operatorname{Skew}_2(\mathbb{R})$ is the one-dimensional target of that form.</p>
+<p><strong>Proof.</strong> A skew bilinear form on a two-dimensional space is a multiple of the determinant, and the target is one-dimensional.</p>
+<p><strong>The scale on the orthonormal pair.</strong> With $u=\sigma_{3}/\sqrt2$ and $v=\sigma_{1}/\sqrt2$ the bracket is $J$, so the pairing $\langle[u,v],J\rangle=\operatorname{tr}(J^{2})=-2$; the constant $-2$ is the normalisation of the identification of the line with the reals.</p>
+<p><strong>Proof.</strong> $[\sigma_{3},\sigma_{1}]=2J$ gives $[u,v]=J$ after the division by $2$, and the trace form at $J$ is $-2$.</p>
+<p><strong>Corollary.</strong> The bracket of the symmetric half into the antisymmetric line is onto, so the two halves generate the traceless algebra.</p>
+<p><strong>Proof.</strong> The bracket of the two traceless basis elements is $2J\neq0$, and $J$ together with the traceless symmetric elements spans $\mathfrak{sl}_2(\mathbb{R})$.</p>
+<h2 id="summary">Summary</h2>
+<p>$\operatorname{Skew}_2(\mathbb{R})$ is the line $\mathbb{R}J$ with $J^{2}=-I$, an abelian Lie algebra of dimension one, which is $\mathfrak{so}(2)$. Its Killing form vanishes because the bracket does, and its trace form is the single negative number $-2$, which makes it the timelike direction of the trace form of signature $(3,1)$.</p>
+<p>The universal enveloping algebra is $\mathbb{R}[J]/(J^{2}+1)=\mathbb{C}$, the centraliser of $J$ is the copy of $\mathbb{C}$ spanned by $I$ and $J$, and the line is not an ideal of $\mathfrak{gl}_2$ since $[\sigma_{3},J]=2\sigma_{1}$ is symmetric. The bracket of two traceless symmetric matrices is a multiple of $J$ given by a cross product, with the value $J$ on the orthonormal Pauli pair and the trace pairing $-2$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$J$</td>
+<td>$\begin{pmatrix}0&1\\ -1&0\end{pmatrix}$, the antisymmetric unit</td>
+</tr>
+<tr>
+<td>$\mathfrak{so}(2)$</td>
+<td>the line $\mathbb{R}J$, the Lie algebra of the rotations</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}(J^{2})$</td>
+<td>$-2$, the trace form on the line</td>
+</tr>
+<tr>
+<td>$\operatorname{ad}J$</td>
+<td>the zero operator, since the bracket vanishes</td>
+</tr>
+<tr>
+<td>$U(\operatorname{Skew}_2)$</td>
+<td>$\mathbb{R}[J]/(J^{2}+1)\cong\mathbb{C}$</td>
+</tr>
+<tr>
+<td>$C(J)$</td>
+<td>the centraliser, $\mathbb{R}I\oplus\mathbb{R}J$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>James E. Humphreys, <em>Introduction to Lie Algebras and Representation Theory</em> (Springer, 1972), for abelian Lie algebras, their Killing forms and their enveloping algebras.</li>
+<li>John Stillwell, <em>Naive Lie Theory</em> (Springer, 2008), for $\mathfrak{so}(2)$ and the rotation group.</li>
+<li><a href="the-two-halves-over-r-symmetric-and-antisymmetric-at-n-2.html">The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$</a>, for the two halves and their dimensions.</li>
+<li><a href="the-four-multiplication-tables-ss-sk-ks-kk-at-n-2.html">The Four Multiplication Tables: $SS$, $SK$, $KS$, $KK$ at $n=2$</a>, for the products involving $J$.</li>
+<li><a href="the-two-halves-as-orthogonal-complements-at-n-2.html">The Two Halves as Orthogonal Complements at $n=2$</a>, for the trace form and its signature.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

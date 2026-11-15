@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Peirce Decomposition and the Two Halves at $n=2$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-peirce-decomposition-and-the-two-halves-at-math0"><strong>The Peirce Decomposition and the Two Halves at $n=2$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>At a symmetric rank-one idempotent the transpose fixes the two diagonal corners and exchanges the two mixed ones, so the symmetric half is the two diagonal lines together with the diagonal of the mixed block, of dimension three, and the antisymmetric half is the single off-diagonal of that block, of dimension one.</strong></p>
+<p>The article computes the action of the transpose and of the conjugate transpose on the four Peirce spaces, writes the symmetric and the antisymmetric halves in Peirce coordinates, counts the dimensions in the two splittings, and compares the Peirce orthogonality with the orthogonality of the halves for the trace form. It assumes <em>The Peirce Decomposition in Two Dimensions</em>, <em>The Peirce Basis and the Corners at $n=2$</em>, <em>The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$</em> and <em>The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian at $n=2$</em>.</p>
+<p>It defers the Hermitian idempotents and the sphere to <em>The Spectral Theorem: the Hermitian Case and the Sphere of Idempotents</em>, and the corner recursion to <em>The Peirce Decomposition and the Corner Recursion of $M_2(\mathbb{C})$</em>.</p>
+<h2 id="the-transpose-on-the-corners">The Transpose on the Corners</h2>
+<p><strong>Proposition.</strong> At a symmetric idempotent $e$ the transpose fixes $A_{11}$ and $A_{00}$ and exchanges $A_{12}$ and $A_{21}$.</p>
+<p><strong>Proof.</strong> For $x\in A_{11}$ one has $x=\lambda e$, and $e^{\mathsf T}=e$ gives $\lambda e^{\mathsf T}=\lambda e$, so $x^{\mathsf T}\in A_{11}$; for $x=ey(1-e)$ the transpose is $(1-e)y^{\mathsf T}e$, which lies in $A_{21}$; and the same computation in the other order gives the exchange.</p>
+<p><strong>Corollary.</strong> The transpose acts on the four-dimensional space with the eigenvalues $+1$ on $A_{11}$, $A_{00}$ and on the diagonal of $A_{12}\oplus A_{21}$, and $-1$ on the off-diagonal of that block.</p>
+<p><strong>Proof.</strong> The exchange of two one-dimensional spaces has the two eigenvalues $\pm1$, with the eigenvectors the sum and the difference of a generator and its transpose, and the diagonal corners are fixed pointwise.</p>
+<p><strong>Corollary.</strong> The two eigenvectors in the mixed block are $E_{12}+E_{21}$ and $E_{12}-E_{21}$, the first symmetric and the second antisymmetric.</p>
+<p><strong>Proof.</strong> The transpose of $E_{12}$ is $E_{21}$, so the sum is fixed and the difference changes sign.</p>
+<h2 id="the-symmetric-half-in-peirce-coordinates">The Symmetric Half in Peirce Coordinates</h2>
+<p><strong>Theorem.</strong> The symmetric half is $A_{11}\oplus A_{00}\oplus(A_{12}\oplus A_{21})^{+}$, of dimension $1+1+1=3$.</p>
+<p><strong>Proof.</strong> A symmetric element has a symmetric part in each corner; the diagonal corners are one-dimensional and entirely symmetric; the mixed block splits into a symmetric line and an antisymmetric line; the sum of the dimensions is three, which is the dimension of the symmetric half.</p>
+<p><strong>Corollary.</strong> In Peirce coordinates a symmetric element is $x_{0}e+x_{1}f+t\,\varsigma$ with $\varsigma=E_{12}+E_{21}$, so it is determined by three numbers.</p>
+<p><strong>Proof.</strong> The mixed component of a symmetric element is a multiple of the symmetric generator, and the two diagonal components are multiples of $e$ and $f$.</p>
+<p><strong>Corollary.</strong> The antisymmetric half is the single line of $\varsigma'=E_{12}-E_{21}$, and its square is $-e-f$.</p>
+<p><strong>Proof.</strong> The antisymmetric part of the mixed block is one-dimensional; and $(E_{12}-E_{21})^{2}=-E_{11}-E_{22}$ by the multiplication of the matrix units.</p>
+<p><strong>Corollary.</strong> The Jordan Peirce space $V_{1}$ of <em>The Peirce Decomposition of $\operatorname{Sym}_2$ as a Jordan Algebra</em> is exactly the symmetric line of the mixed block.</p>
+<p><strong>Proof.</strong> The Jordan space $V_{1}$ is spanned by $\varsigma$, which is the symmetric generator of the mixed block.</p>
+<h2 id="the-star-and-the-hermitian-case">The Star and the Hermitian Case</h2>
+<p><strong>Proposition.</strong> At a Hermitian idempotent $e$ the conjugate transpose exchanges $A_{12}$ and $A_{21}$ and fixes the two diagonal corners.</p>
+<p><strong>Proof.</strong> For $x=ey(1-e)$ the conjugate transpose is $(1-e)y^{*}e$, which lies in the corner with the indices exchanged; and $e^{*}=e$ makes the diagonal corners stable.</p>
+<p><strong>Corollary.</strong> The Hermitian half is the two diagonal lines together with the diagonal of the mixed block under the star, of real dimension four.</p>
+<p><strong>Proof.</strong> Each diagonal corner is a complex line all of whose elements are Hermitian up to a real scalar, and the mixed block contributes two real dimensions, one from the diagonal and one from the antidiagonal, which gives four real dimensions in total.</p>
+<p><strong>Corollary.</strong> The skew-Hermitian half is the complementary real space, of real dimension four, and the two halves are the eigenspaces of the star with the eigenvalues $+1$ and $-1$.</p>
+<p><strong>Proof.</strong> The star is an involution of the real space, so its eigenspaces have dimensions four and four and sum to eight.</p>
+<h2 id="the-two-counts">The Two Counts</h2>
+<p><strong>Proposition.</strong> The Peirce splitting and the splitting into halves are transverse: the symmetric half is not a sum of Peirce spaces, and no mixed corner is contained in a half.</p>
+<p><strong>Proof.</strong> The symmetric half meets the mixed block in one of its two real lines, so it contains an element with a nonzero component in each mixed corner and is not a sum of Peirce spaces; and each mixed corner contains a symmetric and an antisymmetric element, so it is not contained in a half.</p>
+<p><strong>Corollary.</strong> The four counts are $1+1+1+1$ for the Peirce splitting, $3+1$ for the real halves, $4+4$ for the complex halves and $2+2$ for the two sides of the diagonal.</p>
+<p><strong>Proof.</strong> The Peirce splitting is over the complex field; the real halves are the symmetric and the antisymmetric; the complex halves are the Hermitian and the skew-Hermitian; and the two sides of the diagonal are the upper and the lower triangles.</p>
+<p><strong>Corollary.</strong> The only Peirce space that lies inside a half is a diagonal corner, and only in the symmetric or the Hermitian half.</p>
+<p><strong>Proof.</strong> The diagonal corner is a line of a symmetric matrix at a symmetric idempotent, and it is Hermitian at a Hermitian idempotent; the mixed corners are not stable under the transpose or the star.</p>
+<h2 id="the-orthogonality-of-the-splittings">The Orthogonality of the Splittings</h2>
+<p><strong>Proposition.</strong> The two halves are orthogonal for the trace form, and the four Peirce spaces are orthogonal except the two mixed ones.</p>
+<p><strong>Proof.</strong> The first statement is <em>The Two Halves as Orthogonal Complements at $n=2$</em>, and the second is <em>The Peirce Decomposition in Two Dimensions</em>.</p>
+<p><strong>Corollary.</strong> The two orthogonalities are different: the halves are orthogonal for the trace form, while the mixed Peirce spaces pair to one.</p>
+<p><strong>Proof.</strong> The trace of the product of a symmetric and an antisymmetric matrix vanishes, and the trace of $E_{12}E_{21}$ equals one.</p>
+<p><strong>Corollary.</strong> No Peirce splitting is orthogonal for the trace form, so the Peirce decomposition is not the spectral decomposition of a self-adjoint operator.</p>
+<p><strong>Proof.</strong> The single nonzero pairing between the two mixed spaces shows that they are not orthogonal, and an orthogonal decomposition into eigenspaces of a self-adjoint operator would have all the pairings zero.</p>
+<h2 id="the-trace-form-on-the-corners">The Trace Form on the Corners</h2>
+<p><strong>Proposition.</strong> The trace form pairs the diagonal corners with each other and the mixed corners with each other, and it is degenerate on each corner separately.</p>
+<p><strong>Proof.</strong> $\operatorname{tr}(ee)=1$ pairs $A_{11}$ with itself, $\operatorname{tr}(ef)=0$ kills the pairing of the two diagonal corners, and $\operatorname{tr}(E_{12}E_{21})=1$ pairs the two mixed corners; restricted to a single mixed corner the form vanishes because the corner is square-zero.</p>
+<p><strong>Corollary.</strong> The four-dimensional trace form is the sum of a two-dimensional form on the mixed block and a form on the diagonal pair, and the second is degenerate.</p>
+<p><strong>Proof.</strong> The mixed block carries the hyperbolic form with the two isotropic lines $A_{12}$ and $A_{21}$, and the diagonal pair carries the form $\operatorname{diag}(1,0)$ in the basis $e,f$.</p>
+<h2 id="summary">Summary</h2>
+<p>At a symmetric rank-one idempotent the transpose fixes the two diagonal corners and exchanges the two mixed ones, so the symmetric half is the two diagonal lines together with the symmetric line of the mixed block, of dimension three, and the antisymmetric half is the antisymmetric line of that block, of dimension one.</p>
+<p>At a Hermitian idempotent the conjugate transpose does the same, and the Hermitian and skew-Hermitian halves have real dimension four each. The Peirce splitting and the splitting into halves are transverse, the halves are orthogonal for the trace form while the two mixed corners are not, and the trace form pairs the mixed corners with each other and is degenerate on the diagonal pair.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A_{ij}$</td>
+<td>the Peirce spaces</td>
+</tr>
+<tr>
+<td>$\varsigma$</td>
+<td>$E_{12}+E_{21}$, the symmetric generator</td>
+</tr>
+<tr>
+<td>$\varsigma'$</td>
+<td>$E_{12}-E_{21}$, the antisymmetric generator</td>
+</tr>
+<tr>
+<td>$e,f$</td>
+<td>the idempotent and its complement</td>
+</tr>
+<tr>
+<td>$x^{*}$</td>
+<td>the conjugate transpose</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the Peirce spaces and their behaviour under an involution.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge University Press, 2013), for the transpose and the conjugate transpose as involutions of the matrix space.</li>
+<li><a href="the-peirce-decomposition-in-two-dimensions.html">The Peirce Decomposition in Two Dimensions</a>, for the four spaces used here.</li>
+<li><a href="the-two-halves-over-r-symmetric-and-antisymmetric-at-n-2.html">The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$</a>, for the real halves.</li>
+<li><a href="the-peirce-decomposition-of-sym-2-as-a-jordan-algebra.html">The Peirce Decomposition of $\operatorname{Sym}_2$ as a Jordan Algebra</a>, for the Jordan reading of the mixed block.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

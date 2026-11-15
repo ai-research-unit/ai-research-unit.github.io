@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Lie Algebra $\operatorname{Skew}_n\cong\mathfrak{so}(n)$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-lie-algebra-math0"><strong>The Lie Algebra $\operatorname{Skew}_n\cong\mathfrak{so}(n)$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The antisymmetric half is a Lie algebra of dimension $n(n-1)/2$ and rank $\lfloor n/2\rfloor$, it is simple for $n\ge3$ except at $n=4$, where it splits into two three-dimensional ideals, and it is the Lie algebra of the rotation group.</strong></p>
+<p>The article proves closure under the bracket, identifies the half with the exterior square $\Lambda^{2}\mathbb{R}^{n}$, computes the dimension and the rank, gives the simplicity statement with the exception at $n=4$ verified by exhibiting the self-dual and anti-self-dual ideals, computes the Killing form $(n-2)\operatorname{tr}(XY)$ with its definiteness, and relates the algebra to $\mathrm{SO}(n)$ through the exponential. It assumes <em>The Four Multiplication Tables: $SS$, $SK$, $KS$, $KK$</em> for the bracket table and <em>The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric</em> for the split. It defers the Killing form to <em>The Killing Form, Its Radical and the Triangular Case</em>, the rotations to <em>The Exponential of the Antisymmetric Part: One-Parameter Rotations</em>, and the group to <em>The Cartan Decomposition of $\mathrm{GL}_n(\mathbb{C})$</em>.</p>
+<h2 id="the-algebra">The Algebra</h2>
+<p><strong>The antisymmetric half is closed under the bracket, and the bracket is the commutator.</strong> For $X,Y\in\operatorname{Skew}_n$,</p>
+<p>$$
+[X,Y]^{\mathsf T}=(XY-YX)^{\mathsf T}=Y^{\mathsf T}X^{\mathsf T}-X^{\mathsf T}Y^{\mathsf T}=YX-XY=-[X,Y],
+$$</p>
+<p>so $[X,Y]\in\operatorname{Skew}_n$. The bracket is bilinear, antisymmetric, and satisfies the Jacobi identity because it is the commutator in an associative algebra:</p>
+<p>$$
+[[X,Y],Z]+[[Y,Z],X]+[[Z,X],Y]=0 .
+$$</p>
+<p>So $\operatorname{Skew}_n$ is a Lie algebra, and it is the Lie subalgebra $\mathfrak{so}(n)$ of $\mathfrak{gl}_n(\mathbb{R})$.</p>
+<p><strong>The dimension is $n(n-1)/2$.</strong> A skew matrix has zero diagonal and $n(n-1)/2$ free entries above it, so</p>
+<p>$$
+\dim\mathfrak{so}(n)=\frac{n(n-1)}{2}=1,3,6,10,15\quad(n=2,3,4,5,6),
+$$</p>
+<p>which was checked by counting the basis elements at those orders. The complement has dimension $n(n+1)/2$, and the two add to $n^{2}$.</p>
+<p><strong>The standard basis is the family $X_{ij}=E_{ij}-E_{ji}$.</strong> For $i<j$ these are the elementary rotations, and their brackets are</p>
+<p>$$
+[X_{ij},X_{kl}]=\delta_{jk}X_{il}-\delta_{ik}X_{jl}-\delta_{jl}X_{ik}+\delta_{il}X_{jk},
+$$</p>
+<p>which was verified on all index combinations with $i\neq j$ and $k\neq l$ at $n=3,4,5$. In particular $[X_{ij},X_{jk}]=X_{ik}$ and $[X_{ij},X_{kl}]=0$ when the four indices are distinct.</p>
+<h2 id="the-identification-with-math35">The Identification with $\Lambda^{2}$</h2>
+<p><strong>A skew matrix is a two-form, and the identification is canonical.</strong> The map</p>
+<p>$$
+u\wedge v\longmapsto uv^{\mathsf T}-vu^{\mathsf T}
+$$</p>
+<p>sends a decomposable two-vector to a skew matrix of rank two, and it extends by linearity to an isomorphism $\Lambda^{2}\mathbb{R}^{n}\to\operatorname{Skew}_n$. Both sides have dimension $\binom{n}{2}=n(n-1)/2$, and the map is injective because $uv^{\mathsf T}-vu^{\mathsf T}=0$ forces $u$ and $v$ to be dependent.</p>
+<p><strong>Under the identification the bracket is the commutator of the two operators.</strong> For $X=u\wedge v$ and $Y=w\wedge z$ the matrix $X$ acts on $\mathbb{R}^{n}$ by $p\mapsto u\langle v,p\rangle-v\langle u,p\rangle$, which is the infinitesimal rotation in the plane spanned by $u$ and $v$. The commutator of two such operators is again of the form $\sum u_{k}\wedge v_{k}$, and the identity</p>
+<p>$$
+[X,Y]=XY-YX
+$$</p>
+<p>is the statement that $\Lambda^{2}\mathbb{R}^{n}$ with the commutator is $\mathfrak{so}(n)$. The Killing form of the Lie algebra is then the form induced by the Euclidean form on $\Lambda^{2}$, up to the factor $n-2$.</p>
+<p><strong>The rank-two elements are the simple rotations.</strong> An element of $\operatorname{Skew}_n$ has even rank, and rank two exactly when it is decomposable, $X=u\wedge v$. Such an element generates a one-parameter group of rotations in a single plane, which is the subject of <em>The Exponential of the Antisymmetric Part: One-Parameter Rotations</em>. The higher-rank elements are sums of several plane rotations and are treated in <em>Simple and Non-Simple Rotations: One Angle at $n\le3$, Two Angles at $n\ge4$</em>.</p>
+<h2 id="simplicity-and-the-exception-at-math59">Simplicity and the Exception at $n=4$</h2>
+<p><strong>For $n\ge3$ the algebra has no proper ideal, except at $n=4$.</strong> A nonzero ideal $\mathfrak{a}$ of $\mathfrak{so}(n)$ is invariant under the adjoint action, and the adjoint action of $\mathfrak{so}(n)$ on $\Lambda^{2}\mathbb{R}^{n}$ is irreducible for $n\ge3$, $n\neq4$; so $\mathfrak{a}$ is everything. The irreducibility is the standard statement that $\mathrm{SO}(n)$ acts transitively on the decomposable two-vectors and their span. As a numerical check, the ideal generated by a random element together with its first brackets spans the whole algebra: the span has dimension $3,6,10,15$ at $n=3,4,5,6$.</p>
+<p><strong>At $n=4$ the algebra splits into two three-dimensional ideals.</strong> The Hodge star on $\Lambda^{2}\mathbb{R}^{4}$ satisfies $\star^{2}=1$, so $\Lambda^{2}\mathbb{R}^{4}$ splits into the self-dual and anti-self-dual two-forms, each of dimension three. In the basis</p>
+<p>$$
+X_{01}\pm X_{23},\qquad X_{02}\mp X_{13},\qquad X_{03}\pm X_{12},
+$$</p>
+<p>the two eigenspaces are each closed under the bracket, of dimension three, and the brackets between them vanish, so</p>
+<p>$$
+\mathfrak{so}(4)\cong\mathfrak{so}(3)\oplus\mathfrak{so}(3),\qquad 6=3+3 .
+$$</p>
+<p>The closure of each three-dimensional space and the dimension of the algebra they span were verified numerically on the explicit basis above, and the eigenvalue list of $\star$ is $+1,+1,+1,-1,-1,-1$.</p>
+<p><strong>At $n=2$ the algebra is one-dimensional and abelian.</strong> The single basis element is $J=E_{12}-E_{21}$, and $[J,J]=0$, so $\mathfrak{so}(2)$ is commutative, of dimension one and rank one. The simplicity statement therefore needs $n\ge3$, and the exception at $n=4$ shows that $\mathfrak{so}(n)$ is not simple for every larger $n$ either: it is simple for $n\ge3$, $n\neq4$.</p>
+<h2 id="the-rank-and-the-cartan-subalgebra">The Rank and the Cartan Subalgebra</h2>
+<p><strong>The rank is $\lfloor n/2\rfloor$.</strong> A maximal torus is spanned by the $\lfloor n/2\rfloor$ commuting rotations in the disjoint coordinate planes,</p>
+<p>$$
+\mathfrak{h}=\langle X_{12},X_{34},\dots\rangle,
+$$</p>
+<p>and no larger commutative subalgebra of semisimple elements exists, since a skew matrix has pure imaginary eigenvalues occurring in conjugate pairs and each pair needs its own plane. The ranks at $n=2,3,4,5,6$ are $1,1,2,2,3$.</p>
+<p><strong>The roots are the differences and the sums of the plane coordinates.</strong> Writing an element of the torus as $\mathrm{diag}(i\theta_1,-i\theta_1,\dots)$, the roots of the complexified algebra are $\pm\epsilon_k\pm\epsilon_l$ with $k\neq l$, and each root space is one-dimensional, spanned by a complex combination of $E_{kl}$ and $E_{lk}$. Their number is</p>
+<p>$$
+\dim\mathfrak{so}(n)-\operatorname{rank}=2,4,8,12\quad(n=3,4,5,6),
+$$</p>
+<p>which was checked by subtracting the rank from the dimension at those orders. Over $\mathbb{R}$ the root spaces pair into two-dimensional real planes, one pair per complex root, which is why the real form has no real root decomposition.</p>
+<p><strong>The compact form is the real algebra itself.</strong> Since $\mathfrak{so}(n)$ has negative definite Killing form, it is the compact real form of the complex Lie algebra $\mathfrak{so}(n,\mathbb{C})=\mathfrak{so}(n)\otimes\mathbb{C}$. The complexification is the algebra of complex skew matrices, the fixed points of the conjugation $X\mapsto\overline{X}$, and it is the Lie algebra of $\mathrm{SO}(n,\mathbb{C})$.</p>
+<h2 id="the-exponential-and-the-group">The Exponential and the Group</h2>
+<p><strong>The exponential of a skew matrix is orthogonal.</strong> For $X^{\mathsf T}=-X$,</p>
+<p>$$
+\big(e^{X}\big)^{\mathsf T}=e^{X^{\mathsf T}}=e^{-X}=\big(e^{X}\big)^{-1},
+$$</p>
+<p>so $e^{X}\in\mathrm{O}(n)$, and since $t\mapsto e^{tX}$ is continuous with value $\mathrm{I}$ at $t=0$ and $\det e^{X}=e^{\operatorname{tr}X}=1$, the image lies in $\mathrm{SO}(n)$. The map $\exp\colon\mathfrak{so}(n)\to\mathrm{SO}(n)$ is surjective, with kernel containing $2\pi$ times the integral points of the torus, which is the statement that every rotation is a rotation in a family of planes.</p>
+<p><strong>The exponential is a local diffeomorphism and a covering for $n\ge3$.</strong> Its differential at the origin is the identity, so it is a local diffeomorphism there; the group $\mathrm{SO}(n)$ is connected and has fundamental group $\mathbb{Z}/2$ for $n\ge3$, so the exponential is the universal covering map only after passing to $\mathrm{Spin}(n)$. The double cover is the subject of <em>The Rotor as a Square Root of a Rotation: the Two Signs and the Double Cover</em>.</p>
+<p><strong>The Killing form is $(n-2)\operatorname{tr}(XY)$ and it is negative definite for $n\ge3$.</strong> Since $\mathfrak{so}(n)$ is simple for $n\ge3$, $n\neq4$, its Killing form is a multiple of the trace form, and the multiple is $n-2$:</p>
+<p>$$
+B(X,Y)=(n-2)\operatorname{tr}(XY),\qquad B(X,X)=-(n-2)\operatorname{tr}(XX^{\mathsf T})<0 .
+$$</p>
+<p>At $n=2$ the factor vanishes and the algebra is abelian, so the Killing form is identically zero there; at $n=4$ the form is the sum of the two Killing forms of the two ideals and is still negative definite. The values of the factor at $n=3,4,5$ are $1,2,3$, and the computation of the form on the standard basis reproduces them.</p>
+<h2 id="the-case-math132">The Case $n=2$</h2>
+<p><strong>At $n=2$ the algebra is the line $\mathbb{R}J$ and the bracket vanishes.</strong> With $J=\begin{pmatrix}0&-1\\1&0\end{pmatrix}$ and $J^{2}=-\mathrm{I}$,</p>
+<p>$$
+\mathfrak{so}(2)=\mathbb{R}J,\qquad [J,J]=0,\qquad \exp(\theta J)=\cos\theta\,\mathrm{I}+\sin\theta\,J,
+$$</p>
+<p>so the group is the circle and the algebra is the tangent line at the identity. The element $J$ is a complex structure: it satisfies $J^{2}=-\mathrm{I}$ and it turns $\mathbb{R}^{2}$ into a one-dimensional complex space.</p>
+<p><strong>The identification with $\Lambda^{2}\mathbb{R}^{2}$ is an isomorphism of one-dimensional spaces.</strong> There is one basis two-vector $e_1\wedge e_2$, and it maps to $E_{12}-E_{21}=J$. So the whole exterior square is the line of the rotation, and the statement that the bracket vanishes is the statement that $\Lambda^{2}$ of a two-dimensional space has no decomposable products left to bracket with.</p>
+<p><strong>The biquaternion reading is the statement that the rotation direction is one line.</strong> In the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ the antisymmetric part is the line $\mathbb{C}J$, and the idempotents $\tilde\Pi_\pm=\tfrac12(e_t\pm\tilde{Ζ})$ are symmetric. The rotation direction is therefore the unique complement of the Jordan algebra $\operatorname{Sym}_2$ inside $M_2(\mathbb{C})$, and the pair $(\operatorname{Sym}_2,\mathbb{R}J)$ is the smallest symmetric pair of the category.</p>
+<h2 id="summary">Summary</h2>
+<p>The antisymmetric half is closed under the bracket and is the Lie algebra $\mathfrak{so}(n)$, of dimension $n(n-1)/2$ and rank $\lfloor n/2\rfloor$, isomorphic to $\Lambda^{2}\mathbb{R}^{n}$ with the commutator of operators. It is simple for $n\ge3$ except at $n=4$, where the Hodge star splits it into the self-dual and anti-self-dual ideals $\mathfrak{so}(3)\oplus\mathfrak{so}(3)$, and it is abelian at $n=2$. Its exponential is the rotation group, its Killing form is $(n-2)\operatorname{tr}(XY)$ and is negative definite for $n\ge3$, and its complexification is the algebra of complex skew matrices.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathfrak{so}(n)=\operatorname{Skew}_n$</td>
+<td>the Lie algebra of skew matrices</td>
+</tr>
+<tr>
+<td>$X_{ij}=E_{ij}-E_{ji}$</td>
+<td>the standard basis elements, one per pair $i<j$</td>
+</tr>
+<tr>
+<td>$\Lambda^{2}\mathbb{R}^{n}$</td>
+<td>the exterior square, isomorphic to $\mathfrak{so}(n)$ by $u\wedge v\mapsto uv^{\mathsf T}-vu^{\mathsf T}$</td>
+</tr>
+<tr>
+<td>$\star$</td>
+<td>the Hodge star, with $\star^{2}=1$ on $\Lambda^{2}\mathbb{R}^{4}$</td>
+</tr>
+<tr>
+<td>$\lfloor n/2\rfloor$</td>
+<td>the rank, the dimension of a maximal torus</td>
+</tr>
+<tr>
+<td>$B(X,Y)=(n-2)\operatorname{tr}(XY)$</td>
+<td>the Killing form of $\mathfrak{so}(n)$</td>
+</tr>
+<tr>
+<td>$\mathrm{Spin}(n)$</td>
+<td>the double cover of $\mathrm{SO}(n)$ for $n\ge3$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Karin Erdmann and Mark J. Wildon, <em>Introduction to Lie Algebras</em> (Springer, 2006), for the simplicity of $\mathfrak{so}(n)$ and the rank of a classical algebra.</li>
+<li>James E. Humphreys, <em>Introduction to Lie Algebras and Representation Theory</em> (Springer, 1972), for root systems, Cartan subalgebras and the Killing form.</li>
+<li>William Fulton and Joe Harris, <em>Representation Theory: A First Course</em> (Springer, 1991), for the identification of $\mathfrak{so}(n)$ with $\Lambda^{2}$ and the triality at $n=4$.</li>
+<li><a href="the-four-multiplication-tables-ss-sk-ks-kk.html">The Four Multiplication Tables: $SS$, $SK$, $KS$, $KK$</a>, for the bracket table of the antisymmetric half.</li>
+<li><a href="the-jordan-algebra-sym-n.html">The Jordan Algebra $\operatorname{Sym}_n$</a>, for the other half and its product.</li>
+<li><a href="the-two-halves-over-r-symmetric-and-antisymmetric.html">The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric</a>, for the closure rules and the dimensions.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

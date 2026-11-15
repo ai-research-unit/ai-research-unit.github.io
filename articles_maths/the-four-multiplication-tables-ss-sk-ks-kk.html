@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Four Multiplication Tables: $SS$, $SK$, $KS$, $KK$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-four-multiplication-tables-math0-math1-math2-math3"><strong>The Four Multiplication Tables: $SS$, $SK$, $KS$, $KK$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The four products of the halves are governed by one identity, $(XY)^{\mathsf T}=\epsilon\delta\,YX$ for $X$ in the $\epsilon$-half and $Y$ in the $\delta$-half, and every entry of every table is a consequence of it.</strong></p>
+<p>The article proves the identity, derives from it the four tables: the table of the product, the table of the commutator, the table of the anticommutator and the table of the twisted products, each a $2\times2$ array of halves. It shows that the commutator lands in the half $-\epsilon\delta$ and the anticommutator in the half $+\epsilon\delta$, so the two operations exchange the tables, and it verifies all four tables by direct computation at $n=2,3,4,6$. It assumes <em>The Symmetric and Antisymmetric Parts of a Product</em> for the expansion of a single product and <em>The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric</em> for the closure rules. It defers the Jordan structure to <em>The Jordan Algebra $\operatorname{Sym}_n$</em>, the Lie structure to <em>The Lie Algebra $\operatorname{Skew}_n\cong\mathfrak{so}(n)$</em>, and the operator version to <em>The Symmetric and Antisymmetric Parts of the Operator Space</em>.</p>
+<h2 id="the-master-identity">The Master Identity</h2>
+<p><strong>The transpose of a product of two homogeneous elements is the product in the other order times the product of the signs.</strong> For $X^{\mathsf T}=\epsilon X$ and $Y^{\mathsf T}=\delta Y$ with $\epsilon,\delta=\pm1$,</p>
+<p>$$
+(XY)^{\mathsf T}=Y^{\mathsf T}X^{\mathsf T}=\delta\epsilon\,YX .
+$$</p>
+<p>Write $\epsilon\delta$ for the product of the two signs. The identity was verified for all four combinations at $n=2,3,4,6$ with random elements of the two halves, and it holds for every $n$ because it is the multiplicativity of the transpose.</p>
+<p><strong>The identity splits a product into a fixed and an anti-fixed part at once.</strong> Adding and subtracting the identity from $XY$ itself,</p>
+<p>$$
+XY+\epsilon\delta\,YX\in\operatorname{Sym}_n,\qquad XY-\epsilon\delta\,YX\in\operatorname{Skew}_n ,
+$$</p>
+<p>since the first is fixed by the transpose and the second is negated by it. Both statements were checked for all four combinations at $n=2,3,4,6$. So the parity of a product is not a property of $XY$ alone: it is a property of the two combinations $XY\pm\epsilon\delta\,YX$, and the ordinary product is the average of the two.</p>
+<p><strong>When the signs agree the two combinations are the anticommutator and the commutator; when they differ they are exchanged.</strong> For $\epsilon\delta=+1$ the fixed combination is $XY+YX$ and the anti-fixed one is $XY-YX$; for $\epsilon\delta=-1$ the fixed combination is $XY-YX$ and the anti-fixed one is $XY+YX$. Hence</p>
+<p>$$
+\epsilon\delta=+1:\ \{X,Y\}\in\operatorname{Sym}_n,\ [X,Y]\in\operatorname{Skew}_n;\qquad
+\epsilon\delta=-1:\ [X,Y]\in\operatorname{Sym}_n,\ \{X,Y\}\in\operatorname{Skew}_n .
+$$</p>
+<h2 id="the-table-of-the-product">The Table of the Product</h2>
+<p><strong>Each product of two halves gives one entry in each half.</strong> Combining the identity with the expansion of <em>The Symmetric and Antisymmetric Parts of a Product</em>,</p>
+<p>$$
+SS':\quad \pi_{+}=S\circ S',\ \pi_{-}=\tfrac12[S,S'],\qquad
+SK':\quad \pi_{+}=\tfrac12[S,K'],\ \pi_{-}=\tfrac12\{S,K'\},
+$$</p>
+<p>$$
+KS':\quad \pi_{+}=\tfrac12[K,S'],\ \pi_{-}=\tfrac12\{K,S'\},\qquad
+KK':\quad \pi_{+}=K\circ K',\ \pi_{-}=\tfrac12[K,K'] .
+$$</p>
+<p>So the table of the product, read as four entries each carrying two halves, is</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>product</th>
+<th>symmetric part</th>
+<th>antisymmetric part</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$SS'$</td>
+<td>$S\circ S'$</td>
+<td>$\tfrac12[S,S']$</td>
+</tr>
+<tr>
+<td>$SK'$</td>
+<td>$\tfrac12[S,K']$</td>
+<td>$\tfrac12\{S,K'\}$</td>
+</tr>
+<tr>
+<td>$KS'$</td>
+<td>$\tfrac12[K,S']$</td>
+<td>$\tfrac12\{K,S'\}$</td>
+</tr>
+<tr>
+<td>$KK'$</td>
+<td>$K\circ K'$</td>
+<td>$\tfrac12[K,K']$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The rule of the table is the sign product.</strong> A product whose two factors have the same sign contributes its symmetric part through the Jordan product and its antisymmetric part through the bracket; a product whose factors have opposite signs contributes the other way round. The sign product of the two factors is the same for $SS'$ and $KK'$ and the same for $SK'$ and $KS'$, which is why the table has two rows of one kind and two of the other.</p>
+<p><strong>The table is symmetric under exchanging the two factors up to the transposition of the entry.</strong> Since $(XY)^{\mathsf T}=\epsilon\delta\,YX$, exchanging $X$ and $Y$ multiplies the antisymmetric part by $\epsilon\delta$ and leaves the symmetric part alone. So the $SK$ and $KS$ entries differ by the sign and the $SS$, $KK$ entries are symmetric in their arguments up to a transpose.</p>
+<h2 id="the-table-of-the-commutator">The Table of the Commutator</h2>
+<p><strong>The commutator lands in the half $-\epsilon\delta$.</strong> From the master identity,</p>
+<p>$$
+(XY-YX)^{\mathsf T}=\epsilon\delta\,YX-XY=-\epsilon\delta\,(XY-YX),
+$$</p>
+<p>so $[X,Y]\in\operatorname{Anti}\sigma$ when $\epsilon\delta=+1$ and $[X,Y]\in\operatorname{Fix}\sigma$ when $\epsilon\delta=-1$. The table is therefore</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>commutator</th>
+<th>$\operatorname{Sym}$</th>
+<th>$\operatorname{Skew}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{Sym}$</td>
+<td>$\operatorname{Skew}$</td>
+<td>$\operatorname{Sym}$</td>
+</tr>
+<tr>
+<td>$\operatorname{Skew}$</td>
+<td>$\operatorname{Sym}$</td>
+<td>$\operatorname{Skew}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>with the entries</p>
+<p>$$
+[S,S']\in\operatorname{Skew}_n,\qquad [S,K']\in\operatorname{Sym}_n,\qquad [K,S']\in\operatorname{Sym}_n,\qquad [K,K']\in\operatorname{Skew}_n .
+$$</p>
+<p>All four inclusions were verified at $n=2,3,4,6$ on random elements.</p>
+<p><strong>The commutator table is the statement that the antisymmetric half is a Lie algebra and the symmetric half is a module over it.</strong> The two diagonal entries put $[S,S']$ and $[K,K']$ in the antisymmetric half, so $\operatorname{Skew}_n$ is closed and $\operatorname{Sym}_n$ is not. The two off-diagonal entries put the mixed brackets in the symmetric half, which is the closure rule $[\operatorname{Skew}_n,\operatorname{Sym}_n]\subseteq\operatorname{Sym}_n$ that makes the pair reductive.</p>
+<p><strong>The commutator of two elements of the algebra is a sum of four brackets, two in each half.</strong> For $A=S+K$ and $B=S'+K'$,</p>
+<p>$$
+[A,B]=[S,S']+[K,K']+[S,K']+[K,S'],
+$$</p>
+<p>with the first two in $\operatorname{Skew}_n$ and the last two in $\operatorname{Sym}_n$. So the commutator is graded by the same parity, and the two halves of the commutator are read from the two diagonals and the two off-diagonals of the table.</p>
+<h2 id="the-table-of-the-anticommutator">The Table of the Anticommutator</h2>
+<p><strong>The anticommutator lands in the half $+\epsilon\delta$, so its table is the other one.</strong> From the master identity,</p>
+<p>$$
+(XY+YX)^{\mathsf T}=\epsilon\delta\,YX+XY=+\epsilon\delta\,(XY+YX),
+$$</p>
+<p>hence the anticommutator is fixed when $\epsilon\delta=+1$ and anti-fixed when $\epsilon\delta=-1$:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>anticommutator</th>
+<th>$\operatorname{Sym}$</th>
+<th>$\operatorname{Skew}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{Sym}$</td>
+<td>$\operatorname{Sym}$</td>
+<td>$\operatorname{Skew}$</td>
+</tr>
+<tr>
+<td>$\operatorname{Skew}$</td>
+<td>$\operatorname{Skew}$</td>
+<td>$\operatorname{Sym}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>with</p>
+<p>$$
+\{S,S'\}\in\operatorname{Sym}_n,\qquad \{S,K'\}\in\operatorname{Skew}_n,\qquad \{K,S'\}\in\operatorname{Skew}_n,\qquad \{K,K'\}\in\operatorname{Sym}_n .
+$$</p>
+<p>Again all four were verified on random elements at $n=2,3,4,6$.</p>
+<p><strong>The two tables are exchanged by the sign and coincide at $n=1$.</strong> The commutator table sends $(\epsilon,\delta)$ to $-\epsilon\delta$ and the anticommutator table to $+\epsilon\delta$; the two agree only when $-\epsilon\delta=+\epsilon\delta$, which never happens. The tables are therefore genuinely different, and the difference is the sign that separates a Lie algebra from a Jordan algebra.</p>
+<p><strong>The product is the average of the two tables, and the transpose is the difference.</strong> For any two elements,</p>
+<p>$$
+XY=\tfrac12\{X,Y\}+\tfrac12[X,Y],\qquad (XY)^{\mathsf T}=\tfrac12\{X,Y\}-\tfrac12[X,Y],
+$$</p>
+<p>so the four entries of the product table are the averages of the entries of the other two, and the transpose is their difference. The three tables are one table read three times.</p>
+<h2 id="the-twisted-products-and-the-two-structures">The Twisted Products and the Two Structures</h2>
+<p><strong>The twisted products are the maps that land in a definite half.</strong> For $X$ in the $\epsilon$-half and $Y$ in the $\delta$-half put</p>
+<p>$$
+X\star Y=\tfrac12\big(XY+\epsilon\delta\,YX\big)\in\operatorname{Fix}\sigma,\qquad
+X\wedge Y=\tfrac12\big(XY-\epsilon\delta\,YX\big)\in\operatorname{Anti}\sigma .
+$$</p>
+<p>Then $\star$ is commutative on pairs of the same half and $\wedge$ is the bracket there, while on pairs of opposite halves $\star$ is the bracket and $\wedge$ is the anticommutator. So the two maps $\star$ and $\wedge$ are the entries of the tables with the signs absorbed.</p>
+<p><strong>The Jordan structure lives in $\star$ and the Lie structure in $\wedge$.</strong> On the symmetric half, $\star$ is the Jordan product $S\circ S'$ and $\wedge$ is $\tfrac12[S,S']$; on the antisymmetric half, $\star$ is $K\circ K'$ and $\wedge$ is $\tfrac12[K,K']$. So each half carries both products, one of which is a Jordan product and the other a Lie bracket, and the two halves differ by which of them is closed.</p>
+<p><strong>The mixed entries make the symmetric half a module and the antisymmetric half an operator space.</strong> On pairs of opposite halves, $\star$ gives $\tfrac12[S,K']\in\operatorname{Sym}_n$, which is the action of $\mathfrak{so}(n)$ on $\operatorname{Sym}_n$, and $\wedge$ gives $\tfrac12\{S,K'\}\in\operatorname{Skew}_n$, which is the corresponding infinitesimal strain. The two mixed entries of the four tables are therefore the two sides of the same operator.</p>
+<h2 id="the-case-math134">The Case $n=2$</h2>
+<p><strong>At $n=2$ the four tables have one-dimensional entries of the second kind.</strong> With $\operatorname{Sym}_2$ three-dimensional and $\operatorname{Skew}_2$ one-dimensional, the $SS$ entry is a three-dimensional symmetric output plus a one-dimensional skew output, and the $KK$ entry is the reverse:</p>
+<p>$$
+K\circ K'=-\theta\theta'\,\mathrm{I},\qquad [K,K']=0 ,
+$$</p>
+<p>the second because $\operatorname{Skew}_2$ is abelian. So the $KK$ row of the product table has a scalar symmetric part and no antisymmetric part at all.</p>
+<p><strong>The mixed rows are computed by the Pauli brackets.</strong> For $S=a\mathrm{I}+b\sigma_1+c\sigma_3$ and $K'=\theta'J$,</p>
+<p>$$
+[S,K']=2\theta'(b\sigma_3-c\sigma_1)\in\operatorname{Sym}_2,\qquad \{S,K'\}=2\theta'a\,J\in\operatorname{Skew}_2 ,
+$$</p>
+<p>with $a$ the coefficient of $\mathrm{I}$, so the mixed entry of the product table is $\theta'(b\sigma_3-c\sigma_1)+\theta'aJ$, a sum of one vector in each half. Both identities were verified numerically, and the second shows that the anticommutator of a symmetric matrix with $J$ sees only the scalar part of the symmetric matrix.</p>
+<p><strong>The biquaternion reading names the four entries.</strong> The idempotents $\tilde\Pi_\pm$ are symmetric and the corners $\mathbb{B}_{+-}$, $\mathbb{B}_{-+}$ are mixed, so a product of two corner elements uses the $KS$ and $SK$ rows, and a product of two idempotents uses the $SS$ row. The companion nilpotents $\vec\Upsilon_{+-}$ and $\vec\Upsilon_{-+}$ satisfy $\vec\Upsilon_{-+}=\vec\Upsilon_{+-}^{*}$ and $\vec\Upsilon_{+-}\vec\Upsilon_{-+}=\tilde\Pi_+$, which is a $KS$ product whose two halves are the idempotent and the bracket; the normalisation is the statement that one of the two halves is fixed by the gauge.</p>
+<h2 id="summary">Summary</h2>
+<p>The master identity $(XY)^{\mathsf T}=\epsilon\delta\,YX$ for homogeneous $X$ and $Y$ produces every entry of the four tables. The product table has $SS'=S\circ S'+\tfrac12[S,S']$, $SK'=\tfrac12[S,K']+\tfrac12\{S,K'\}$, $KS'=\tfrac12[K,S']+\tfrac12\{K,S'\}$ and $KK'=K\circ K'+\tfrac12[K,K']$. The commutator lands in the half $-\epsilon\delta$, so $[S,S']$ and $[K,K']$ are antisymmetric and $[S,K']$, $[K,S']$ symmetric; the anticommutator lands in the half $+\epsilon\delta$, with the signs reversed. The twisted products $X\star Y$ and $X\wedge Y$ absorb the signs and carry the Jordan structure and the Lie structure on each half and the module structure on the mixed pairs.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\epsilon,\delta$</td>
+<td>the signs of the two homogeneous factors, $+1$ for $\operatorname{Sym}$, $-1$ for $\operatorname{Skew}$</td>
+</tr>
+<tr>
+<td>$(XY)^{\mathsf T}=\epsilon\delta\,YX$</td>
+<td>the master identity of the four tables</td>
+</tr>
+<tr>
+<td>$X\star Y=\tfrac12(XY+\epsilon\delta\,YX)$</td>
+<td>the twisted product, landing in $\operatorname{Fix}\sigma$</td>
+</tr>
+<tr>
+<td>$X\wedge Y=\tfrac12(XY-\epsilon\delta\,YX)$</td>
+<td>the twisted bracket, landing in $\operatorname{Anti}\sigma$</td>
+</tr>
+<tr>
+<td>$S\circ S'$, $K\circ K'$</td>
+<td>the Jordan products of the two halves</td>
+</tr>
+<tr>
+<td>$[S,K']\in\operatorname{Sym}_n$, $\{S,K'\}\in\operatorname{Skew}_n$</td>
+<td>the two mixed entries</td>
+</tr>
+<tr>
+<td>$\operatorname{Fix}\sigma,\operatorname{Anti}\sigma$</td>
+<td>the two halves of the involution</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the graded products of a Peirce decomposition and the sign rules.</li>
+<li>Nathan Jacobson, <em>Structure and Representations of Jordan Algebras</em> (AMS, 1968), for the Jordan product as the symmetric combination of a product.</li>
+<li>James E. Humphreys, <em>Introduction to Lie Algebras and Representation Theory</em> (Springer, 1972), for the bracket as the antisymmetric combination and the module structure.</li>
+<li><a href="the-symmetric-and-antisymmetric-parts-of-a-product.html">The Symmetric and Antisymmetric Parts of a Product</a>, for the expansion that the tables refine.</li>
+<li><a href="the-two-halves-over-r-symmetric-and-antisymmetric.html">The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric</a>, for the closure rules that the tables record.</li>
+<li><a href="symmetric-pairs-and-cartan-pairs-the-reductivity-criterion.html">Symmetric Pairs and Cartan Pairs: the Reductivity Criterion</a>, for the module property of the mixed entries.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

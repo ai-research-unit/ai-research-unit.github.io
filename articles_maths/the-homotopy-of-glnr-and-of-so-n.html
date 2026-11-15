@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Homotopy of $\mathrm{GL}_n(\mathbb{R})$ and of $\mathrm{SO}(n)$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-homotopy-of-math0-and-of-math1"><strong>The Homotopy of $\mathrm{GL}_n(\mathbb{R})$ and of $\mathrm{SO}(n)$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The general linear group over $\mathbb{R}$ has the homotopy type of the orthogonal group, so all of its topology is the topology of the compact form, and the noncompact directions contribute nothing.</strong></p>
+<p>The article proves the polar decomposition as a deformation retraction, deduces that $\mathrm{GL}_n(\mathbb{R})$ is homotopy equivalent to $\mathrm{O}(n)$ and that its two components are each homotopy equivalent to $\mathrm{SO}(n)$, computes $\pi_0,\pi_1,\pi_2$ for small $n$ from the fibrations $\mathrm{SO}(n)\to S^{n-1}$ and $\mathrm{SO}(n)\to\mathrm{SO}(n)/\mathrm{SO}(n-1)$, identifies $\mathrm{SO}(3)$ with $\mathbb{RP}^{3}$ and $\mathrm{SO}(4)$ with $(S^{3}\times S^{3})/(\mathbb{Z}/2)$, and states the Bott periodicity result that stops the pattern at $n=5$. It assumes <em>The Topology of $M_n(\mathbb{R})$ and the Sign of the Determinant</em> and <em>The Polar Decomposition from the Two Halves and the Sign of the Determinant</em>. It defers the cone and the analysis to <em>The Positive Cone and Its Boundary</em>.</p>
+<h2 id="the-deformation-retraction">The Deformation Retraction</h2>
+<p><strong>Theorem.</strong> $\mathrm{O}(n)$ is a strong deformation retract of $\mathrm{GL}_n(\mathbb{R})$, and $\mathrm{SO}(n)$ is a strong deformation retract of $\mathrm{GL}_n(\mathbb{R})^{+}$.</p>
+<p><em>Proof.</em> Write $A=QP$ with $Q\in\mathrm{O}(n)$ and $P$ symmetric positive definite. For $t\in[0,1]$ put $P_t=P^{t}$, the positive power defined by the spectral theorem, and $A_t=QP_t$. Then $A_0=Q$, $A_1=A$, and each $A_t$ is invertible with $A_t^{\mathsf T}A_t=P_t^{2}$, so $A_t\in\mathrm{GL}_n(\mathbb{R})$. The map $(A,t)\mapsto A_t$ is continuous in $(A,t)$ because $P_t$ is, and it fixes every orthogonal matrix. The determinant is $\det Q\cdot\det P_t>0$, so the retraction respects the two components.</p>
+<p><strong>The retraction is the same as the polar decomposition run backwards.</strong> The path $t\mapsto A_t$ removes the stretch continuously and leaves the rotation. In the language of <em>The Cartan Decomposition of $\mathrm{GL}_n(\mathbb{R})$</em> it is the geodesic from $A$ to $K$ in the symmetric space.</p>
+<p><strong>Consequence.</strong> The inclusions $\mathrm{O}(n)\subset\mathrm{GL}_n(\mathbb{R})$ and $\mathrm{SO}(n)\subset\mathrm{GL}_n(\mathbb{R})^{+}$ induce isomorphisms on every homotopy group, and the two spaces have the same homology and cohomology. So nothing about $\mathrm{GL}_n(\mathbb{R})$ needs to be computed in the noncompact group.</p>
+<p><strong>The same argument works with the transpose on the other side.</strong> Writing $A=P'Q'$ with $P'$ positive definite gives the retraction $A\mapsto P_t'Q'$, and the two retractions are homotopic.</p>
+<h2 id="the-two-components">The Two Components</h2>
+<p><strong>$\mathrm{GL}_n(\mathbb{R})$ has exactly two components, and each is homotopy equivalent to $\mathrm{SO}(n)$.</strong> The determinant is a continuous surjection onto $\mathbb{R}^{\times}$, so there are at least two components. The retraction of the previous section shows that each component retracts onto a component of $\mathrm{O}(n)$, and $\mathrm{O}(n)$ has exactly two components, cut by the determinant. Hence</p>
+<p>$$
+\mathrm{GL}_n(\mathbb{R})\simeq\mathrm{O}(n)=\mathrm{SO}(n)\sqcup(-\mathrm{I})\,\mathrm{SO}(n).
+$$</p>
+<p>The second component is a copy of the first, translated by any orthogonal matrix of determinant $-1$, for instance $\operatorname{diag}(-1,1,\dots,1)$.</p>
+<p><strong>The two components are homeomorphic and the homeomorphism is a group automorphism up to a sign.</strong> Multiplication by $\operatorname{diag}(-1,1,\dots,1)$ is a homeomorphism of one component onto the other, and it is not an inner automorphism; it is conjugation by a matrix of determinant $-1$.</p>
+<p><strong>So the homotopy groups of $\mathrm{GL}_n(\mathbb{R})$ are those of $\mathrm{SO}(n)$, and $\pi_0=\mathbb{Z}/2$.</strong> For $n=1$ the group is $\mathbb{R}^{\times}$, with two contractible components, and $\pi_0=\mathbb{Z}/2$ as well.</p>
+<h2 id="the-fibration-over-the-sphere">The Fibration over the Sphere</h2>
+<p><strong>Theorem.</strong> $\mathrm{SO}(n)$ acts transitively on $S^{n-1}$, and the stabiliser of a unit vector is $\mathrm{SO}(n-1)$. Hence $\mathrm{SO}(n)\to S^{n-1}$ is a fibre bundle with fibre $\mathrm{SO}(n-1)$.</p>
+<p><em>Proof.</em> Transitivity: any unit vector is the first column of some orthogonal matrix, and the determinant can be corrected to $+1$ by changing the sign of another column. The stabiliser of $e_1$ consists of the orthogonal matrices fixing $e_1$ and acting orthogonally on $e_1^{\perp}$, that is of $\mathrm{O}(n-1)$, and the determinant condition selects $\mathrm{SO}(n-1)$.</p>
+<p><strong>The long exact sequence of the fibration computes the low homotopy groups by induction.</strong> From $\mathrm{SO}(n-1)\to\mathrm{SO}(n)\to S^{n-1}$ one gets</p>
+<p>$$
+\pi_k\bigl(\mathrm{SO}(n)\bigr)\cong\pi_k\bigl(\mathrm{SO}(n-1)\bigr)\quad\text{for }k\le n-3,
+$$</p>
+<p>because $\pi_k(S^{n-1})=0$ in that range. So the homotopy groups of $\mathrm{SO}(n)$ stabilise as $n$ grows, and the stable values are the homotopy groups of the infinite orthogonal group.</p>
+<p><strong>The first two groups.</strong> $\pi_2(S^{n-1})=0$ for $n\ge3$, so $\pi_2(\mathrm{SO}(n))=0$ for every $n\ge3$. $\pi_1(S^{n-1})=0$ for $n\ge3$, so $\pi_1(\mathrm{SO}(n))\cong\pi_1(\mathrm{SO}(n-1))$ for $n\ge4$; together with $\pi_1(\mathrm{SO}(3))=\mathbb{Z}/2$ this gives</p>
+<p>$$
+\pi_1\bigl(\mathrm{SO}(n)\bigr)=\mathbb{Z}/2\quad(n\ge3),\qquad \pi_1\bigl(\mathrm{SO}(2)\bigr)=\mathbb{Z}.
+$$</p>
+<p><strong>The third group.</strong> $\pi_3(S^{3})=\mathbb{Z}$, and the segment $\pi_3(\mathrm{SO}(4))\to\pi_3(S^{3})\to\pi_2(\mathrm{SO}(3))$ with $\pi_2(\mathrm{SO}(3))=0$ shows that $\pi_3(\mathrm{SO}(4))$ contains a $\mathbb{Z}$; the full value is $\mathbb{Z}\oplus\mathbb{Z}$, matching the double cover $S^{3}\times S^{3}$.</p>
+<p><strong>A table of the low groups.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$n$</th>
+<th>$\pi_1(\mathrm{SO}(n))$</th>
+<th>$\pi_2$</th>
+<th>$\pi_3$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$2$</td>
+<td>$\mathbb{Z}$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$\mathbb{Z}/2$</td>
+<td>$0$</td>
+<td>$\mathbb{Z}$</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$\mathbb{Z}/2$</td>
+<td>$0$</td>
+<td>$\mathbb{Z}\oplus\mathbb{Z}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The entries for $n=2$ follow from $\mathrm{SO}(2)=S^{1}$; those for $n\ge5$ agree with $n=4$ in these three degrees because of the stabilisation range.</p>
+<h2 id="the-two-model-spaces">The Two Model Spaces</h2>
+<p><strong>$\mathrm{SO}(3)$ is the real projective space $\mathbb{RP}^{3}$.</strong> The unit quaternions form $S^{3}$, and conjugation by a unit quaternion is a rotation of the imaginary quaternions, which are $\mathbb{R}^{3}$; the map $S^{3}\to\mathrm{SO}(3)$ is a surjective group homomorphism with kernel $\{\pm1\}$. Hence $\mathrm{SO}(3)\cong S^{3}/\{\pm1\}=\mathbb{RP}^{3}$, with $\pi_1=\mathbb{Z}/2$ and $\pi_3=\mathbb{Z}$.</p>
+<p><strong>$\mathrm{SO}(4)$ is $(S^{3}\times S^{3})/(\mathbb{Z}/2)$.</strong> Identify $\mathbb{R}^{4}$ with the quaternions and let $S^{3}\times S^{3}$ act by $(u,v)\cdot x=uxv^{-1}$. The kernel of the action is $\{(1,1),(-1,-1)\}$, so $\mathrm{SO}(4)\cong(S^{3}\times S^{3})/(\mathbb{Z}/2)$, and correspondingly $\mathfrak{so}(4)\cong\mathfrak{so}(3)\oplus\mathfrak{so}(3)$.</p>
+<p><strong>The two models explain the exceptional behaviour at $n=4$.</strong> For $n\ge5$ the group $\mathrm{SO}(n)$ is simple; at $n=4$ it is not, because of the two quaternionic factors. At $n=3$ it is simple but not simply connected. The two facts are the two exceptional cases of the general theorem that $\mathrm{SO}(n)$ is simple for $n\ge3$ and $n\ne4$.</p>
+<p><strong>The identifications are verified by the dimension and the cover.</strong> $\dim\mathrm{SO}(3)=3=\dim\mathbb{RP}^{3}$ and $\dim\mathrm{SO}(4)=6=\dim(S^{3}\times S^{3})$, and in both cases the covering map has degree two with kernel of order two, matching $\pi_1=\mathbb{Z}/2$.</p>
+<h2 id="what-happens-at-math142">What Happens at $n=2$</h2>
+<p><strong>$\mathrm{SO}(2)$ is the circle, so its topology is the topology of $\mathbb{Z}$.</strong> The group is</p>
+<p>$$
+\mathrm{SO}(2)=\left\{\begin{pmatrix}\cos\theta&-\sin\theta\\ \sin\theta&\cos\theta\end{pmatrix}\right\},
+$$</p>
+<p>homeomorphic to $S^{1}$ by $\theta\mapsto$ the matrix, with $\pi_1=\mathbb{Z}$ and all higher homotopy groups zero.</p>
+<p><strong>Consequently $\mathrm{GL}_2(\mathbb{R})^{+}$ has fundamental group $\mathbb{Z}$.</strong> The retraction onto $\mathrm{SO}(2)$ gives the isomorphism, and the generator is the loop $t\mapsto$ rotation by $2\pi t$. This is the one dimension in which the fundamental group of the positive component is infinite.</p>
+<p><strong>The loop is detected by the angle of the rotation, not by the matrix.</strong> The path returns to the identity at $t=1$, but the rotation angle has advanced by $2\pi$; this is the same phenomenon that makes the exponential not injective, and it is the reason $\mathrm{SO}(2)\to\mathrm{SO}(2)$, $\theta\mapsto2\theta$, is a covering of degree two.</p>
+<p><strong>At $n\ge3$ the loop becomes contractible as a loop in the bigger group.</strong> The rotation in a plane can be deformed, inside $\mathrm{SO}(n)$, to a rotation in another plane and then undone; the obstruction reduces to $\mathbb{Z}/2$, and the surviving element is the path that reverses the orientation of a plane twice.</p>
+<h2 id="why-the-pattern-stops">Why the Pattern Stops</h2>
+<p><strong>Bott periodicity: the stable homotopy of $\mathrm{SO}$ is periodic with period eight.</strong> For $k\le n-2$ the group $\pi_k(\mathrm{SO}(n))$ depends only on $k$, and the stable values are</p>
+<p>$$
+\mathbb{Z}/2,\ \mathbb{Z}/2,\ 0,\ \mathbb{Z},\ 0,\ 0,\ 0,\ \mathbb{Z}
+$$</p>
+<p>for $k=0,1,2,3,4,5,6,7$ and then repeat with period eight. So the induction of the previous sections cannot be continued past $k\approx n$: the groups do not stabilise to a simple answer but to a periodic one.</p>
+<p><strong>The real meaning is that the orthogonal group is the stable object, not the single $\mathrm{SO}(n)$.</strong> The sequence $\mathrm{SO}(1)\subset\mathrm{SO}(2)\subset\cdots$ has a homotopy limit $\mathrm{SO}$, and the periodicity is a statement about that limit. For a fixed $n$ the low groups are the stable ones and the high groups are not.</p>
+<p><strong>The unstable range is where the real geometry lives.</strong> The class in $\pi_{n-1}(\mathrm{SO}(n))$ that generates is the class of the identity map of $S^{n-1}$ seen through the action on the sphere, and it is not stable: it disappears when $n$ increases. This is the homotopy form of the statement that the rotation group acts on the sphere of its own dimension.</p>
+<h2 id="summary">Summary</h2>
+<p>$\mathrm{O}(n)$ is a strong deformation retract of $\mathrm{GL}_n(\mathbb{R})$ and $\mathrm{SO}(n)$ of $\mathrm{GL}_n(\mathbb{R})^{+}$, so the topology of the general linear group is the topology of the orthogonal group and $\pi_0=\mathbb{Z}/2$. The fibrations $\mathrm{SO}(n)\to S^{n-1}$ with fibre $\mathrm{SO}(n-1)$ give $\pi_2=0$ for $n\ge3$ and $\pi_1=\mathbb{Z}/2$ for $n\ge3$, while $\pi_1(\mathrm{SO}(2))=\mathbb{Z}$. The models $\mathrm{SO}(3)=\mathbb{RP}^{3}$ and $\mathrm{SO}(4)=(S^{3}\times S^{3})/(\mathbb{Z}/2)$ explain the two exceptional dimensions. Beyond the stable range the groups are given by Bott periodicity, with period eight.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{GL}_n(\mathbb{R})^{+}$</td>
+<td>the identity component, $\det>0$</td>
+</tr>
+<tr>
+<td>$A_t=QP^{t}$</td>
+<td>the retraction path from $A$ to its orthogonal part</td>
+</tr>
+<tr>
+<td>$\pi_k$</td>
+<td>the $k$-th homotopy group</td>
+</tr>
+<tr>
+<td>$\mathbb{RP}^{3}$</td>
+<td>the real projective space, homeomorphic to $\mathrm{SO}(3)$</td>
+</tr>
+<tr>
+<td>$S^{3}\times S^{3}/(\mathbb{Z}/2)$</td>
+<td>the model of $\mathrm{SO}(4)$</td>
+</tr>
+<tr>
+<td>$\mathrm{SO}$</td>
+<td>the stable orthogonal group, the homotopy limit</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Allen Hatcher, <em>Algebraic Topology</em> (Cambridge, 2002), for fibrations, the long exact sequence and the homotopy of classical groups.</li>
+<li>Mimura Mamoru and Hirosi Toda, <em>Topology of Lie Groups</em> (American Mathematical Society, 1991), for the homotopy groups of the classical groups in the unstable range.</li>
+<li><a href="the-topology-of-mnr-and-the-sign-of-the-determinant.html">The Topology of $M_n(\mathbb{R})$ and the Sign of the Determinant</a>, for the two components and the singular set.</li>
+<li><a href="the-polar-decomposition-from-the-two-halves-and-the-sign-of-the-determinant.html">The Polar Decomposition from the Two Halves and the Sign of the Determinant</a>, for the retraction used here.</li>
+<li><a href="homotopy-groups-and-fibrations.html">Homotopy Groups and Fibrations</a>, for the long exact sequence used here.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

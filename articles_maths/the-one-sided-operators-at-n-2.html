@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The One-Sided Operators at $n=2$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-one-sided-operators-at-math0"><strong>The One-Sided Operators at $n=2$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The left multiplication $L_{X}:Z\mapsto XZ$ is an operator of rank twice the rank of $X$, with the eigenvalues of $X$ each repeated twice, and its image is the set of matrices whose columns lie in the image of $X$; the right multiplications are the mirror image.</strong></p>
+<p>The article studies the two one-sided families of operators on the matrix space, computes their rank, kernel, spectrum and adjoint, identifies the images of the rank-one elements as the minimal left ideals, and shows how the two families sit inside the endomorphism algebra. It assumes <em>$\operatorname{End}(M_2(\mathbb{C}))$ as an Algebra: the Regular Representation</em>, <em>The Minimal Left Ideals of the Biquaternion Algebra</em> and <em>The Hilbert–Schmidt Form at $n=2$</em>.</p>
+<p>It follows the biquaternion article <em>The Endomorphisms of the Biquaternion Algebra</em> for the same operators on the eight real coordinates.</p>
+<h2 id="the-left-regular-representation">The Left Regular Representation</h2>
+<p><strong>The map $X\mapsto L_{X}$ is an injective algebra homomorphism, so the matrix algebra acts on itself by left multiplication.</strong></p>
+<p><strong>Proposition.</strong> The map $X\mapsto L_{X}$ is a homomorphism of algebras and its kernel is zero, so the left multiplications form a copy of $M_2(\mathbb{C})$.</p>
+<p><strong>Proof.</strong> $L_{X}L_{X'}=L_{XX'}$ by associativity, and $L_{X}=0$ forces $X=L_{X}I=0$.</p>
+<p><strong>Corollary.</strong> The eight real dimensions of the matrix algebra sit inside the thirty-two real dimensions of the endomorphism algebra as the left multiplications.</p>
+<p><strong>Proof.</strong> The copy is a real subspace of dimension eight.</p>
+<p><strong>Corollary.</strong> The left multiplication by the identity is the identity operator, and the left multiplication by a scalar is the scalar operator.</p>
+<p><strong>Proof.</strong> Both statements are immediate from the definition.</p>
+<h2 id="rank-and-kernel">Rank and Kernel</h2>
+<p><strong>Theorem.</strong> For a matrix $X$ of rank $r$ the operator $L_{X}$ has rank $2r$ over $\mathbb{C}$ and kernel of dimension $4-2r$.</p>
+<p><strong>Proof.</strong> The image of $L_{X}$ is the set of matrices $XZ$ with $Z$ arbitrary; the columns of $XZ$ are the images under $X$ of the columns of $Z$, so the image consists exactly of the matrices whose columns lie in $\operatorname{im}X$, a space of dimension $2r$. The rank-nullity theorem then gives the kernel dimension.</p>
+<p><strong>Corollary.</strong> The operator $L_{X}$ is invertible exactly when $X$ is invertible, and its kernel is the set of matrices whose columns lie in the kernel of $X$.</p>
+<p><strong>Proof.</strong> The rank is the full four exactly when $r=2$; and $XZ=0$ means that each column of $Z$ is annihilated by $X$.</p>
+<p><strong>Corollary.</strong> For a rank-one matrix the operator $L_{X}$ has rank two, so its image is a minimal left ideal of the algebra.</p>
+<p><strong>Proof.</strong> The image is a two-dimensional left ideal, and the minimal left ideals are exactly the two-dimensional left ideals.</p>
+<h2 id="the-spectrum">The Spectrum</h2>
+<p><strong>Proposition.</strong> The eigenvalues of $L_{X}$ are the eigenvalues of $X$, each with multiplicity two; in particular the trace of $L_{X}$ is twice the trace of $X$.</p>
+<p><strong>Proof.</strong> The operator $L_{X}$ is the tensor product of $X$ with the identity on the two-dimensional column space, so every eigenvalue of $X$ occurs once for each basis vector of that space.</p>
+<p><strong>Corollary.</strong> The determinant of $L_{X}$ is the square of the determinant of $X$, and the operator is singular exactly when $X$ is.</p>
+<p><strong>Proof.</strong> The product of the eigenvalues with multiplicity is the square of the product of the eigenvalues of $X$.</p>
+<p><strong>Corollary.</strong> A left multiplication is diagonalisable exactly when $X$ is, and it is nilpotent exactly when $X$ is.</p>
+<p><strong>Proof.</strong> The Jordan form of a tensor product with the identity repeats the Jordan blocks of $X$.</p>
+<h2 id="the-right-multiplications">The Right Multiplications</h2>
+<p><strong>Proposition.</strong> The right multiplication $R_{Y}$ has rank $2\operatorname{rank}Y$, kernel the matrices whose rows are annihilated by $Y$, and the eigenvalues of $Y$ each twice.</p>
+<p><strong>Proof.</strong> The image consists of the matrices $ZY$, whose rows are linear combinations of the rows of $Y$; the same computation as for the left family applies with the two factors interchanged.</p>
+<p><strong>Corollary.</strong> The right multiplication is the transpose of the left multiplication under the identification of a matrix with its transpose, so the two families have the same rank and spectrum.</p>
+<p><strong>Proof.</strong> $R_{Y}(Z)^{\mathsf T}=Y^{\mathsf T}Z^{\mathsf T}$, which is the left multiplication by $Y^{\mathsf T}$ applied to the transpose.</p>
+<p><strong>Corollary.</strong> The two families have the same singular values, and the same minimal left and right ideals up to transposition.</p>
+<p><strong>Proof.</strong> Transposition is an isometry for the Hilbert–Schmidt form and exchanges left and right.</p>
+<h2 id="the-adjoints">The Adjoints</h2>
+<p><strong>Proposition.</strong> The adjoint of $L_{X}$ for the Hilbert–Schmidt form is $L_{X^{*}}$, and the adjoint of $R_{Y}$ is $R_{Y^{*}}$.</p>
+<p><strong>Proof.</strong> $\langle L_{X}Z,W\rangle=\operatorname{tr}((XZ)^{*}W)=\operatorname{tr}(Z^{*}X^{*}W)=\langle Z,L_{X^{*}}W\rangle$.</p>
+<p><strong>Corollary.</strong> A left multiplication is self-adjoint exactly when $X$ is Hermitian, and unitary exactly when $X$ is unitary.</p>
+<p><strong>Proof.</strong> The adjoint is the left multiplication by the conjugate transpose, and the identity of the two operators is the identity of the parameters.</p>
+<p><strong>Corollary.</strong> The Hilbert–Schmidt norm of $L_{X}$ is $\sqrt2$ times the Hilbert–Schmidt norm of $X$.</p>
+<p><strong>Proof.</strong> The squared norm of $L_{X}$ is the sum of the squared norms of the images of the four matrix units, and the image of a matrix unit is the corresponding column of $X$, so each column is counted twice.</p>
+<p><strong>Corollary.</strong> The left multiplications by Hermitian matrices form a real subspace of dimension four inside the self-adjoint operators, and the left multiplications by skew-Hermitian matrices form the corresponding skew subspace.</p>
+<p><strong>Proof.</strong> The four real dimensions of the Hermitian half carry over to the four real dimensions of the subspace of self-adjoint one-sided operators.</p>
+<h2 id="where-the-two-families-meet">Where the Two Families Meet</h2>
+<p><strong>Proposition.</strong> The left multiplication by $X$ equals the right multiplication by $X$ exactly when $X$ is a scalar.</p>
+<p><strong>Proof.</strong> The identity $XZ=ZX$ for every $Z$ is the statement that $X$ is in the centre, and the centre of the algebra is the scalars.</p>
+<p><strong>Corollary.</strong> The intersection of the two copies is the two real dimensions of the scalars, and the sum of the two copies has real dimension fourteen.</p>
+<p><strong>Proof.</strong> The intersection is the scalars, and the dimensions add with the intersection subtracted: eight plus eight minus two.</p>
+<p><strong>Corollary.</strong> The product $L_{X}R_{Y}$ is the operator $Z\mapsto XZY$, and its rank is at most twice the smaller of the two ranks.</p>
+<p><strong>Proof.</strong> The image is contained in the set of matrices whose columns lie in the image of $X$, which has dimension at most $2\operatorname{rank}X$; and symmetrically for the rows and $Y$.</p>
+<h2 id="the-one-sided-ideals">The One-Sided Ideals</h2>
+<p><strong>Proposition.</strong> The image of $L_{X}$ is a left ideal of the algebra, and it is the left ideal generated by the columns of $X$.</p>
+<p><strong>Proof.</strong> For any $A$ the matrix $A(XZ)=(AX)Z$ is again in the image, so the image is closed under left multiplication by the algebra.</p>
+<p><strong>Corollary.</strong> The images of the rank-one elements are exactly the minimal left ideals, and they are parametrised by the lines of the plane.</p>
+<p><strong>Proof.</strong> The image of a rank-one element is the set of matrices with columns in a fixed line, which is a minimal left ideal, and the line is the parameter.</p>
+<p><strong>Corollary.</strong> The algebra is the direct sum of any two minimal left ideals carried by independent lines, so the four complex dimensions split into two halves of dimension two.</p>
+<p><strong>Proof.</strong> Choosing two independent lines gives two minimal left ideals whose intersection is zero, and their dimensions add to four.</p>
+<h2 id="summary">Summary</h2>
+<p>The left multiplication by $X$ is an operator of rank twice the rank of $X$, with the eigenvalues of $X$ repeated twice, kernel the matrices whose columns lie in the kernel of $X$, and image the matrices whose columns lie in the image of $X$. Its adjoint for the Hilbert–Schmidt form is the left multiplication by $X^{*}$.</p>
+<p>The right multiplications are the transposed mirror of the left ones, with the same rank, spectrum and singular values. The images of the rank-one elements are the minimal left ideals, parametrised by the lines of the plane, and two independent lines split the algebra into two halves.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_{X}$</td>
+<td>the left multiplication $Z\mapsto XZ$</td>
+</tr>
+<tr>
+<td>$R_{Y}$</td>
+<td>the right multiplication $Z\mapsto ZY$</td>
+</tr>
+<tr>
+<td>$\operatorname{rank}X$</td>
+<td>the rank of the matrix</td>
+</tr>
+<tr>
+<td>$X^{*}$</td>
+<td>the conjugate transpose</td>
+</tr>
+<tr>
+<td>$\langle,\rangle$</td>
+<td>the Hilbert–Schmidt form</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Paul R. Halmos, <em>A Hilbert Space Problem Book</em> (Springer, 1982), for one-sided multiplication operators.</li>
+<li>Rajendra Bhatia, <em>Matrix Analysis</em> (Springer, 1997), for ranks and spectra of tensor products.</li>
+<li><a href="end-m2c-as-an-algebra-the-regular-representation.html">$\operatorname{End}(M_2(\mathbb{C}))$ as an Algebra: the Regular Representation</a>, for the ambient algebra of the operators.</li>
+<li><a href="the-minimal-left-ideals-of-the-biquaternion-algebra.html">The Minimal Left Ideals of the Biquaternion Algebra</a>, for the ideals that appear as images.</li>
+<li><a href="the-hilbert-schmidt-form-at-n-2.html">The Hilbert–Schmidt Form at $n=2$</a>, for the form used to take adjoints.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

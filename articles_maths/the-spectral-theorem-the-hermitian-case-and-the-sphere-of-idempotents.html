@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Spectral Theorem: the Hermitian Case and the Sphere of Idempotents — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-spectral-theorem-the-hermitian-case-and-the-sphere-of-idempotents"><strong>The Spectral Theorem: the Hermitian Case and the Sphere of Idempotents</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>A Hermitian $2\times2$ matrix is $X=aI+r\,\vec n\cdot\vec\sigma$ with $a$ real, $r\ge0$ and $\vec n$ a unit vector, its eigenvalues are $a\pm r$, and its two spectral projections are $\tfrac12(I\pm\vec n\cdot\vec\sigma)$; the rank-one Hermitian idempotents are exactly the matrices $\tfrac12(I+\vec n\cdot\vec\sigma)$ with $\vec n\in S^{2}$, so they form a two-sphere.</strong></p>
+<p>The article proves the spectral theorem for Hermitian matrices at order two, gives the Pauli parametrisation with its three real parameters, identifies the sphere of idempotents, reads the ordering of the eigenvalues as the choice of a hemisphere, and describes the positive semidefinite cone inside the Hermitian space. It assumes <em>Normal $2\times2$ Matrices and the Common Spectral Theorem</em>, <em>The Spectrum of a $2\times2$ Matrix</em> and <em>The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian at $n=2$</em>.</p>
+<p>It keeps to the spectral statement; the exponential of the symmetric half belongs to the analysis of the two halves.</p>
+<h2 id="the-hermitian-matrices-as-a-real-space">The Hermitian Matrices as a Real Space</h2>
+<p><strong>The Hermitian matrices form a real vector space of dimension four, spanned by the identity and the three Pauli matrices.</strong></p>
+<p><strong>Definition.</strong> The <strong>Pauli matrices</strong> are</p>
+<p>$$
+\sigma_{1}=\begin{pmatrix}0&1\\1&0\end{pmatrix},\qquad
+\sigma_{2}=\begin{pmatrix}0&-i\\ i&0\end{pmatrix},\qquad
+\sigma_{3}=\begin{pmatrix}1&0\\0&-1\end{pmatrix}.
+$$</p>
+<p><strong>Proposition.</strong> Every Hermitian matrix is $aI+x\sigma_{1}+y\sigma_{2}+z\sigma_{3}$ with $a,x,y,z$ real, and the four matrices $I,\sigma_{1},\sigma_{2},\sigma_{3}$ are a real basis of the Hermitian space.</p>
+<p><strong>Proof.</strong> A Hermitian matrix has real diagonal entries and conjugate off-diagonal entries, which is four real parameters; the four displayed matrices are Hermitian and independent, and the expansion reproduces any such matrix.</p>
+<p><strong>Corollary.</strong> The imaginary multiples of the Pauli matrices span the traceless Hermitian matrices, and the identity spans the trace line.</p>
+<p><strong>Proof.</strong> The Pauli matrices are traceless, and the trace of $aI$ is $2a$.</p>
+<p><strong>Corollary.</strong> The Pauli matrices satisfy $\sigma_{j}^{2}=I$ and $\sigma_{j}\sigma_{k}=-\sigma_{k}\sigma_{j}$ for $j\ne k$, with $\sigma_{1}\sigma_{2}=i\sigma_{3}$ and its cyclic permutations.</p>
+<p><strong>Proof.</strong> Direct multiplication of the three matrices.</p>
+<h2 id="the-spectral-theorem">The Spectral Theorem</h2>
+<p><strong>Theorem.</strong> A Hermitian matrix has real eigenvalues and an orthonormal basis of eigenvectors, and it is</p>
+<p>$$
+X=\lambda_{+}\rho_{+}+\lambda_{-}\rho_{-},\qquad \rho_{\pm}=\tfrac12\bigl(I\pm\vec n\cdot\vec\sigma\bigr),
+$$</p>
+<p>with $\rho_{\pm}$ Hermitian orthogonal idempotents of rank one and $\lambda_{\pm}\in\mathbb{R}$.</p>
+<p><strong>Proof.</strong> The matrix is normal, so it is unitarily diagonalisable by <em>Normal $2\times2$ Matrices and the Common Spectral Theorem</em>; its eigenvalues are real because $\lambda=v^{*}Xv=\bar\lambda$; the two spectral projections of <em>The Spectrum of a $2\times2$ Matrix</em> are Hermitian because they are polynomials in $X$ with real coefficients.</p>
+<p><strong>Corollary.</strong> The two projections are the projections onto the two orthogonal eigenlines, and their sum is the identity.</p>
+<p><strong>Proof.</strong> The reconstruction $X=\lambda_{+}\rho_{+}+\lambda_{-}\rho_{-}$ with $\rho_{+}+\rho_{-}=I$ gives $\rho_{+}=(X-\lambda_{-}I)/(\lambda_{+}-\lambda_{-})$, which projects onto the first eigenline along the second.</p>
+<p><strong>Corollary.</strong> A Hermitian matrix with a double eigenvalue is a real scalar, and its projections are not determined by the matrix.</p>
+<p><strong>Proof.</strong> A double eigenvalue forces the matrix to be the scalar, and every pair of orthogonal lines gives a pair of projections summing to the identity.</p>
+<h2 id="the-pauli-form-and-the-three-parameters">The Pauli Form and the Three Parameters</h2>
+<p><strong>Theorem.</strong> Every Hermitian matrix is $X=aI+r\,\vec n\cdot\vec\sigma$ with $a=\tfrac12\operatorname{tr}X$, $r=\sqrt{a^{2}-\det X}\ge0$ and $\vec n\in S^{2}$, and its eigenvalues are $a\pm r$.</p>
+<p><strong>Proof.</strong> Write $X=aI+Y$ with $Y$ traceless Hermitian; then $Y=x\sigma_{1}+y\sigma_{2}+z\sigma_{3}$ and $r=\sqrt{x^{2}+y^{2}+z^{2}}$ is the length of the vector $(x,y,z)$, with $\vec n$ its direction when $r\ne0$. The identity $(\vec n\cdot\vec\sigma)^{2}=I$ for a unit vector gives the eigenvalues $a\pm r$ by the spectral theorem.</p>
+<p><strong>Corollary.</strong> The four real parameters are the trace, the length of the traceless part and the two angles of the direction, and the spectrum depends only on the first two.</p>
+<p><strong>Proof.</strong> The pair $(a,r)$ is the unordered pair of eigenvalues up to the translation by $a$, and the direction does not enter the spectrum.</p>
+<p><strong>Corollary.</strong> The determinant is $a^{2}-r^{2}$, so the Hermitian matrix is singular exactly when $r=|a|$.</p>
+<p><strong>Proof.</strong> The determinant is the product of the eigenvalues, $(a+r)(a-r)=a^{2}-r^{2}$.</p>
+<h2 id="the-sphere-of-idempotents">The Sphere of Idempotents</h2>
+<p><strong>Theorem.</strong> The rank-one Hermitian idempotents are exactly the matrices $\tfrac12(I+\vec n\cdot\vec\sigma)$ with $\vec n\in S^{2}$, and the set of them is a two-sphere.</p>
+<p><strong>Proof.</strong> A Hermitian idempotent has the eigenvalues $0$ and $1$ or is the identity or zero; the non-trivial ones have $a=\tfrac12$ and $r=\tfrac12$, so they are $\tfrac12(I+\vec n\cdot\vec\sigma)$ with $\vec n$ a unit vector. Conversely such a matrix is Hermitian with the eigenvalues $1$ and $0$, hence an idempotent of rank one.</p>
+<p><strong>Corollary.</strong> The map $\vec n\mapsto\tfrac12(I+\vec n\cdot\vec\sigma)$ is a bijection from the unit sphere onto the set of rank-one Hermitian idempotents.</p>
+<p><strong>Proof.</strong> The direction $\vec n$ is recovered from the idempotent as $2\rho-I$, which is Hermitian of square $I$ and trace zero, and such a matrix is $\vec n\cdot\vec\sigma$ for exactly one unit vector.</p>
+<p><strong>Corollary.</strong> The two idempotents of a frame are antipodal points of the sphere, and a frame is a pair of antipodal points together with a phase.</p>
+<p><strong>Proof.</strong> The complementary idempotent of $\tfrac12(I+\vec n\cdot\vec\sigma)$ is $\tfrac12(I-\vec n\cdot\vec\sigma)$, which is the antipodal point.</p>
+<h2 id="the-ordering-and-the-hemisphere">The Ordering and the Hemisphere</h2>
+<p><strong>Proposition.</strong> The spectral projections of $X=aI+r\,\vec n\cdot\vec\sigma$ are the two antipodal idempotents of the direction $\vec n$, and the assignment of the larger eigenvalue to one of them is the choice of a hemisphere.</p>
+<p><strong>Proof.</strong> The projection onto the eigenvalue $a+r$ is $\tfrac12(I+\vec n\cdot\vec\sigma)$, and the two projections are exchanged when $\vec n$ is replaced by $-\vec n$; the larger eigenvalue goes with the $+\vec n$ side, which is one of the two hemispheres.</p>
+<p><strong>Corollary.</strong> The unordered spectrum of a Hermitian matrix is the pair $(a-r,a+r)$, and the ordered spectrum requires the extra choice of a sign.</p>
+<p><strong>Proof.</strong> The unordered pair is determined by $a$ and $r$, and the ordering is decided by which of the two antipodal idempotents carries the larger value.</p>
+<p><strong>Corollary.</strong> The set of Hermitian matrices with a fixed unordered spectrum is a sphere, and the set with a fixed ordered spectrum is a hemisphere pair identified along the boundary.</p>
+<p><strong>Proof.</strong> The direction $\vec n$ runs over the sphere, and the ordering adds the choice of the positive side, whose boundary is the discriminant locus $r=0$.</p>
+<h2 id="the-positive-semidefinite-cone">The Positive Semidefinite Cone</h2>
+<p><strong>Proposition.</strong> A Hermitian matrix is positive semidefinite exactly when $a\ge r$, and positive definite exactly when $a>r$.</p>
+<p><strong>Proof.</strong> The eigenvalues are $a\pm r$, so both are nonnegative exactly when $a-r\ge0$; strict positivity of both is $a>r$.</p>
+<p><strong>Corollary.</strong> The positive semidefinite cone is a circular cone over the sphere of idempotents, of opening angle a quarter turn at the apex.</p>
+<p><strong>Proof.</strong> In the coordinates $(a,r)$ with the direction $\vec n$, the cone is $a\ge r\ge0$, which is a cone of revolution whose section at $a=1$ is the ball $r\le1$; the slice at $a=r$ is the sphere of the directions.</p>
+<p><strong>Corollary.</strong> The rank-one positive semidefinite matrices are the boundary rays of the cone, and each is a nonnegative multiple of a Hermitian idempotent.</p>
+<p><strong>Proof.</strong> Rank one with both eigenvalues nonnegative means the smaller eigenvalue is zero, which is $a=r$, and the matrix is then $2a\,\rho$ with $\rho$ the idempotent of the direction.</p>
+<h2 id="summary">Summary</h2>
+<p>A Hermitian $2\times2$ matrix is $aI+r\,\vec n\cdot\vec\sigma$ with $a$ real, $r\ge0$ and $\vec n$ a unit vector, and its eigenvalues are $a\pm r$; the determinant is $a^{2}-r^{2}$. The spectral projections are $\tfrac12(I\pm\vec n\cdot\vec\sigma)$, and the rank-one Hermitian idempotents are exactly the matrices $\tfrac12(I+\vec n\cdot\vec\sigma)$, which form a two-sphere with antipodal points for complementary idempotents.</p>
+<p>The ordering of the spectrum is the choice of a hemisphere, and the positive semidefinite cone is $a\ge r$, a cone of revolution over the sphere of idempotents, whose boundary rays are the rank-one positive semidefinite matrices.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\sigma_{1},\sigma_{2},\sigma_{3}$</td>
+<td>the Pauli matrices</td>
+</tr>
+<tr>
+<td>$a$</td>
+<td>half the trace</td>
+</tr>
+<tr>
+<td>$r$</td>
+<td>the length of the traceless part</td>
+</tr>
+<tr>
+<td>$\vec n$</td>
+<td>a unit vector in $\mathbb{R}^{3}$</td>
+</tr>
+<tr>
+<td>$\rho_{\pm}$</td>
+<td>the Hermitian spectral projections</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge University Press, 2013), for the spectral theorem for Hermitian matrices.</li>
+<li>Roger Penrose and Wolfgang Rindler, <em>Spinors and Space-Time</em>, volume 1 (Cambridge University Press, 1984), for the Pauli matrices and the Bloch sphere.</li>
+<li><a href="normal-2x2-matrices-and-the-common-spectral-theorem.html">Normal $2\times2$ Matrices and the Common Spectral Theorem</a>, for the unitary diagonalisation used here.</li>
+<li><a href="spinors-as-peirce-coordinates-in-two-dimensions.html">Spinors as Peirce Coordinates in Two Dimensions</a>, for the Hopf fibration over the sphere of idempotents.</li>
+<li><a href="the-polar-decomposition-of-a-biquaternion.html">The Polar Decomposition of a Biquaternion</a>, for the positive factor that the cone provides in the biquaternion language.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

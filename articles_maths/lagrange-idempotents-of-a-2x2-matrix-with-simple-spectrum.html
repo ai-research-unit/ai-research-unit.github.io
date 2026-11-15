@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lagrange Idempotents of a $2\times2$ Matrix with Simple Spectrum — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="lagrange-idempotents-of-a-math0-matrix-with-simple-spectrum"><strong>Lagrange Idempotents of a $2\times2$ Matrix with Simple Spectrum</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>A two-by-two matrix with two distinct eigenvalues has exactly two Lagrange idempotents $\rho_{\pm}$, each of rank one and trace one, and they reconstruct the matrix as $\lambda_{+}\rho_{+}+\lambda_{-}\rho_{-}$.</strong></p>
+<p>The article defines the idempotents by interpolation at the two eigenvalues, proves the four identities that characterise them, exhibits the involution $\rho_{+}-\rho_{-}$ as the normalised shift of the matrix, writes the idempotents in the trace and the determinant through the discriminant, and identifies them with the spectral projectors of the resolvent. It assumes <em>The Elementary Symmetric Functions: $\operatorname{tr}$ and $\det$ in Dimension Two</em> and <em>The Minimal Polynomial and the Two Jordan Regimes of $M_2(\mathbb{C})$</em>, and it defers the general spectral theory to <em>The Spectrum of a $2\times2$ Matrix</em>.</p>
+<p>On the biquaternion side the same pair is $\tilde\Pi_{\pm}=\tfrac12(e_t\pm\tilde{Ζ})$ in <em>Idempotents</em> and <em>The Peirce Basis of the Biquaternion Algebra</em>, and the translation is the one of <em>$M_2(\mathbb{C})$ Pauli Representation</em>.</p>
+<h2 id="the-interpolation-problem">The Interpolation Problem</h2>
+<p><strong>The Lagrange problem asks for a polynomial of degree one taking prescribed values at two points.</strong> For two distinct numbers $\lambda_{+}$ and $\lambda_{-}$ there are exactly two such polynomials for the two values $1$ and $0$.</p>
+<p><strong>Proposition.</strong> The polynomials are $\ell_{+}(z)=\dfrac{z-\lambda_{-}}{\lambda_{+}-\lambda_{-}}$ and $\ell_{-}(z)=\dfrac{z-\lambda_{+}}{\lambda_{-}-\lambda_{+}}$.</p>
+<p><strong>Proof.</strong> Each is of degree one, $\ell_{+}(\lambda_{+})=1$ and $\ell_{+}(\lambda_{-})=0$, and the two conditions determine a polynomial of degree one uniquely.</p>
+<p><strong>Corollary.</strong> For every $z$ one has $\ell_{+}(z)+\ell_{-}(z)=1$ and $\ell_{+}(z)\ell_{-}(z)=0$ exactly at $z=\lambda_{\pm}$.</p>
+<p><strong>Proof.</strong> The two numerators add to $\lambda_{+}-\lambda_{-}$ up to the denominator, and the product vanishes at the two nodes.</p>
+<p><strong>Definition.</strong> The <strong>Lagrange idempotents</strong> of a matrix $X$ with simple spectrum are $\rho_{\pm}=\ell_{\pm}(X)$.</p>
+<p><strong>Corollary.</strong> The idempotents are polynomials of degree one in $X$, so they commute with $X$ and with every matrix that commutes with $X$.</p>
+<p><strong>Proof.</strong> A polynomial in $X$ commutes with $X$, and it commutes with everything in the centraliser of $X$.</p>
+<h2 id="the-four-identities">The Four Identities</h2>
+<p><strong>Theorem.</strong> For a matrix with two distinct eigenvalues the Lagrange idempotents satisfy</p>
+<p>$$
+\rho_{+}+\rho_{-}=I,\qquad \rho_{+}\rho_{-}=0,\qquad \rho_{\pm}^{2}=\rho_{\pm},\qquad X=\lambda_{+}\rho_{+}+\lambda_{-}\rho_{-}.
+$$</p>
+<p><strong>Proof.</strong> The first two follow from the two scalar identities of interpolation applied to $X$; the third follows from the second and the first; the fourth is the interpolation of the identity function $z\mapsto z$, which is of degree one and takes the values $\lambda_{\pm}$ at the two nodes.</p>
+<p><strong>Corollary.</strong> Each idempotent has rank one, trace one and determinant zero.</p>
+<p><strong>Proof.</strong> The trace is additive and $\operatorname{tr}(I)=2$, so $\operatorname{tr}\rho_{+}+\operatorname{tr}\rho_{-}=2$; the products $X\rho_{\pm}=\lambda_{\pm}\rho_{\pm}$ show that the image of $\rho_{\pm}$ lies in the eigenspace of $\lambda_{\pm}$, which is one-dimensional; hence the rank is one and the trace is the rank.</p>
+<p><strong>Corollary.</strong> $X\rho_{\pm}=\lambda_{\pm}\rho_{\pm}$ and $\rho_{\pm}X=\lambda_{\pm}\rho_{\pm}$, so the columns of $\rho_{+}$ are eigenvectors of $\lambda_{+}$ and its rows are left eigenvectors.</p>
+<p><strong>Proof.</strong> Multiply the reconstruction identity by $\rho_{\pm}$ and use orthogonality and idempotence.</p>
+<p><strong>Corollary.</strong> The pair is unique: any two idempotents summing to the identity and satisfying the reconstruction identity are the Lagrange ones.</p>
+<p><strong>Proof.</strong> The reconstruction identity forces $X\rho_{\pm}=\lambda_{\pm}\rho_{\pm}$, and an idempotent with a one-dimensional image spanned by an eigenvector is determined by that eigenvector.</p>
+<h2 id="the-involution-of-the-pair">The Involution of the Pair</h2>
+<p><strong>Theorem.</strong> The difference $\zeta=\rho_{+}-\rho_{-}$ is an involution: $\zeta^{2}=I$, and $\rho_{\pm}=\tfrac12(I\pm\zeta)$.</p>
+<p><strong>Proof.</strong> Expand $\zeta^{2}=\rho_{+}+\rho_{-}$ using orthogonality and idempotence, which gives $I$; the second formula is the sum and the difference of the two.</p>
+<p><strong>Corollary.</strong> In terms of the matrix, $\zeta=\dfrac{2X-(\operatorname{tr}X)I}{\sqrt{\Delta}}$ with $\Delta=(\operatorname{tr}X)^{2}-4\det X$ and the sign of the square root fixed by $\lambda_{+}-\lambda_{-}$.</p>
+<p><strong>Proof.</strong> Adding the two formulas $\rho_{\pm}=\pm\dfrac{X-\lambda_{\mp}I}{\lambda_{+}-\lambda_{-}}$ gives $\zeta=\dfrac{2X-(\lambda_{+}+\lambda_{-})I}{\lambda_{+}-\lambda_{-}}$, and the denominator is the square root of the discriminant.</p>
+<p><strong>Corollary.</strong> The involution $\zeta$ has trace zero and determinant $-1$, and it is the normalised traceless part of the matrix.</p>
+<p><strong>Proof.</strong> $\operatorname{tr}\zeta=\operatorname{tr}\rho_{+}-\operatorname{tr}\rho_{-}=1-1=0$; an involution with trace zero has the eigenvalues $\pm1$, so its determinant is $-1$.</p>
+<p><strong>The involution separates the two eigenvalues without diagonalising.</strong> The matrix is recovered as $X=\tfrac12(\operatorname{tr}X)I+\tfrac12\sqrt{\Delta}\,\zeta$, which is the spectral decomposition written in the basis of the identity and the involution.</p>
+<p><strong>Proof.</strong> Substitute $\rho_{\pm}=\tfrac12(I\pm\zeta)$ into the reconstruction identity and collect the two terms.</p>
+<h2 id="the-coordinates-in-trace-and-determinant">The Coordinates in Trace and Determinant</h2>
+<p><strong>Proposition.</strong> With $t=\operatorname{tr}X$ and $\delta=\det X$ the eigenvalues are the roots of $z^{2}-tz+\delta$, namely $\lambda_{\pm}=\tfrac12\bigl(t\pm\sqrt{t^{2}-4\delta}\bigr)$.</p>
+<p><strong>Proof.</strong> The characteristic polynomial is $z^{2}-tz+\delta$ by <em>The Elementary Symmetric Functions: $\operatorname{tr}$ and $\det$ in Dimension Two</em>, and the quadratic formula gives the two roots.</p>
+<p><strong>Corollary.</strong> The idempotents are</p>
+<p>$$
+\rho_{\pm}=\frac{X-\lambda_{\mp}I}{\lambda_{+}-\lambda_{-}}=\pm\frac{2X-tI\mp\sqrt{\Delta}\,I}{2\sqrt{\Delta}}.
+$$</p>
+<p><strong>Proof.</strong> Substitute the roots into the definition and clear the denominators.</p>
+<p><strong>Corollary.</strong> The idempotents are rational functions of $X$ with the discriminant in the denominator, so they are defined exactly where the spectrum is simple.</p>
+<p><strong>Proof.</strong> The square root appears only through $\sqrt{\Delta}$, which divides, and the denominator vanishes exactly when the two eigenvalues coincide.</p>
+<h2 id="simple-spectrum-and-the-discriminant">Simple Spectrum and the Discriminant</h2>
+<p><strong>Theorem.</strong> The spectrum is simple exactly when the discriminant $\Delta=t^{2}-4\delta$ is nonzero, and then the two idempotents exist and are distinct.</p>
+<p><strong>Proof.</strong> The eigenvalues coincide exactly when the square root vanishes, which is the vanishing of the discriminant; and the two idempotents differ by the involution, which is nonzero when the eigenvalues differ.</p>
+<p><strong>Corollary.</strong> At $\Delta=0$ the two formulas degenerate, and the pair is replaced by the Jordan regime of <em>The Minimal Polynomial and the Two Jordan Regimes of $M_2(\mathbb{C})$</em>.</p>
+<p><strong>Proof.</strong> The denominator of both idempotents is $\sqrt{\Delta}$, which vanishes at the double eigenvalue, while the matrix still has a single eigenvalue and possibly a nontrivial Jordan block.</p>
+<p><strong>Corollary.</strong> The discriminant is the square of the difference of the eigenvalues, so it is the invariant that measures the distance from the diagonalisable case.</p>
+<p><strong>Proof.</strong> $(\lambda_{+}-\lambda_{-})^{2}=(\lambda_{+}+\lambda_{-})^{2}-4\lambda_{+}\lambda_{-}=t^{2}-4\delta$.</p>
+<h2 id="the-spectral-projectors">The Spectral Projectors</h2>
+<p><strong>Proposition.</strong> The idempotents are the residues of the resolvent: $\rho_{\pm}=\dfrac{1}{2\pi i}\oint_{\gamma_{\pm}}(zI-X)^{-1}\,dz$ around a small circle enclosing $\lambda_{\pm}$ alone.</p>
+<p><strong>Proof.</strong> The spectral decomposition writes $zI-X=(z-\lambda_{+})\rho_{+}+(z-\lambda_{-})\rho_{-}$ with orthogonal idempotents, so the inverse is $\dfrac{\rho_{+}}{z-\lambda_{+}}+\dfrac{\rho_{-}}{z-\lambda_{-}}$; the residue at $\lambda_{+}$ is $\rho_{+}$ and the residue at $\lambda_{-}$ is $\rho_{-}$.</p>
+<p><strong>Corollary.</strong> The inverse is a sum of two simple fractions, so the resolvent has two simple poles and no other singularity.</p>
+<p><strong>Corollary.</strong> The projection is the derivative of the reconstruction: $\rho_{+}=\dfrac{X-\lambda_{-}I}{\lambda_{+}-\lambda_{-}}$ is the Lagrange polynomial evaluated at the matrix, and the two readings agree.</p>
+<p><strong>Proof.</strong> Both are polynomials in $X$ taking the values $1$ and $0$ at the two eigenvalues, and such a polynomial of degree one is unique.</p>
+<p><strong>Corollary.</strong> The trace of $\rho_{+}X$ is $\lambda_{+}$, so the eigenvalue is read as a trace against the projector.</p>
+<p><strong>Proof.</strong> $\operatorname{tr}(\rho_{+}X)=\lambda_{+}\operatorname{tr}(\rho_{+})=\lambda_{+}$, since $\operatorname{tr}\rho_{+}=1$.</p>
+<h2 id="the-corpus-translation">The Corpus Translation</h2>
+<p><strong>Proposition.</strong> Under the matrix model the pair $\rho_{\pm}$ is the pair $\tilde\Pi_{\pm}$, and the involution $\zeta$ is the root of one $\tilde{Ζ}$.</p>
+<p><strong>Proof.</strong> The corpus defines $\tilde\Pi_{\pm}=\tfrac12(e_t\pm\tilde{Ζ})$ with $\tilde{Ζ}^{2}=e_t$, which is the pair of identities proved above for $\rho_{\pm}$ and $\zeta$.</p>
+<p><strong>Corollary.</strong> The reconstruction $X=\tfrac12(\operatorname{tr}X)I+\tfrac12\sqrt{\Delta}\,\zeta$ is the corpus's polar form of the element in its root and its modulus.</p>
+<p><strong>Proof.</strong> The coefficient of the identity is the scalar part and the coefficient of the involution is the modulus, both read on the matrix side.</p>
+<h2 id="summary">Summary</h2>
+<p>A two-by-two matrix with two distinct eigenvalues has the Lagrange idempotents $\rho_{\pm}=\ell_{\pm}(X)$, the unique polynomials of degree one in $X$ taking the values $1$ and $0$ at the two eigenvalues. They satisfy $\rho_{+}+\rho_{-}=I$, $\rho_{+}\rho_{-}=0$, $\rho_{\pm}^{2}=\rho_{\pm}$ and $X=\lambda_{+}\rho_{+}+\lambda_{-}\rho_{-}$, each has rank one and trace one, and their difference is the involution $\zeta=(2X-tI)/\sqrt{\Delta}$ with $\rho_{\pm}=\tfrac12(I\pm\zeta)$.</p>
+<p>The pair exists exactly where the discriminant $\Delta=t^{2}-4\delta$ is nonzero, and the same objects are the spectral projectors of the resolvent, the residues at the two poles. On the biquaternion side the pair is $\tilde\Pi_{\pm}$ and the involution is the root of one $\tilde{Ζ}$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\lambda_{\pm}$</td>
+<td>the two eigenvalues</td>
+</tr>
+<tr>
+<td>$\rho_{\pm}$</td>
+<td>the Lagrange idempotents</td>
+</tr>
+<tr>
+<td>$\zeta$</td>
+<td>$\rho_{+}-\rho_{-}$, the involution</td>
+</tr>
+<tr>
+<td>$t,\delta$</td>
+<td>the trace and the determinant</td>
+</tr>
+<tr>
+<td>$\Delta$</td>
+<td>$t^{2}-4\delta$, the discriminant</td>
+</tr>
+<tr>
+<td>$\ell_{\pm}$</td>
+<td>the interpolating polynomials of degree one</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge University Press, 2013), for the spectral projectors and the Lagrange interpolation of a matrix.</li>
+<li>Nicholas J. Higham, <em>Functions of Matrices</em> (SIAM, 2008), for the resolvent, the residues and the polynomial interpolation of matrix functions.</li>
+<li><a href="the-elementary-symmetric-functions-trace-and-determinant-in-dimension-two.html">The Elementary Symmetric Functions: $\operatorname{tr}$ and $\det$ in Dimension Two</a>, for the characteristic polynomial and the discriminant.</li>
+<li><a href="the-minimal-polynomial-and-the-two-jordan-regimes-of-m2c.html">The Minimal Polynomial and the Two Jordan Regimes of $M_2(\mathbb{C})$</a>, for the degenerate case of a double eigenvalue.</li>
+<li><a href="the-peirce-basis-of-the-biquaternion-algebra.html">The Peirce Basis of the Biquaternion Algebra</a>, for the pair used as the frame of the Peirce decomposition.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

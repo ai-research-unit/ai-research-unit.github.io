@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Peirce Basis and the Corners over $\mathbb{R}$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-peirce-basis-and-the-corners-over-math0"><strong>The Peirce Basis and the Corners over $\mathbb{R}$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>A real frame cuts $M_{n}(\mathbb{R})$ into $n^{2}$ real corners, the corners multiply by the matrix-unit table, and the residual freedom is conjugation by an invertible real matrix, so the frame variety has dimension $n^{2}-n$.</strong></p>
+<p>The article states the corners, proves that they sum directly to the algebra, states the products $E_{ij}E_{kl}=\delta_{jk}E_{il}$, defines a system of matrix units over $\mathbb{R}$, reads the corners as joint eigenspaces of two commuting families of operators, and computes the real gauge. Frames of equal ranks are conjugate by $\mathrm{GL}_{n}(\mathbb{R})$, the stabiliser is the diagonal subgroup $D$, and the frame variety is $\mathrm{GL}_{n}(\mathbb{R})/D$, of dimension $n^{2}-n$. It assumes <em>The Peirce Basis in $n$ Dimensions</em>, which runs the same list over $\mathbb{C}$, and defers the symmetric half of the corners to <em>The Peirce Decomposition of $\operatorname{Sym}_n$ as a Jordan Algebra</em>.</p>
+<h2 id="the-frame">The Frame</h2>
+<p><strong>A frame is an ordered family of orthogonal idempotents summing to the identity.</strong></p>
+<p>$$
+P_{k}P_{l}=\delta_{kl}P_{k},\qquad \sum_{k=1}^{n}P_{k}=\mathrm{I}.
+$$</p>
+<p>The rank $r_{k}=\operatorname{rk}P_{k}$ is part of the data and $\sum_{k}r_{k}=n$. The frame is <strong>complete</strong> when every $r_{k}=1$, and the standard frame is $F_{k}=E_{kk}$.</p>
+<p><strong>The subspaces $V_{k}=\operatorname{im}P_{k}$ are independent and sum to $\mathbb{R}^{n}$.</strong> The idempotent $P_{k}$ is the identity on $V_{k}$ and kills the other $V_{l}$, so $\mathbb{R}^{n}=\bigoplus_{k}V_{k}$ with $\dim V_{k}=r_{k}$. A frame is the same datum as a decomposition of $\mathbb{R}^{n}$ into ordered real subspaces of dimensions $r_{k}$.</p>
+<h2 id="the-corners">The Corners</h2>
+<p><strong>A corner is the space of maps from one subspace of the frame to another.</strong></p>
+<p>$$
+A_{kl}=P_{k}M_{n}(\mathbb{R})P_{l}=\{P_{k}XP_{l}:X\in M_{n}(\mathbb{R})\}.
+$$</p>
+<p><strong>Proposition.</strong> $\dim A_{kl}=r_{k}r_{l}$, the corners are independent, and</p>
+<p>$$
+M_{n}(\mathbb{R})=\bigoplus_{k,l=1}^{n}A_{kl},\qquad \sum_{k,l}r_{k}r_{l}=\Big(\sum_{k}r_{k}\Big)^{2}=n^{2}.
+$$</p>
+<p><em>Proof.</em> As a space of maps, $A_{kl}=\operatorname{Hom}(V_{l},V_{k})$, so its dimension is $r_{k}r_{l}$. Expanding the identity on both sides of $X$,</p>
+<p>$$
+X=\Big(\sum_{k}P_{k}\Big)X\Big(\sum_{l}P_{l}\Big)=\sum_{k,l}P_{k}XP_{l},
+$$</p>
+<p>gives the sum. For independence, multiply $\sum_{k,l}X_{kl}=0$ on the left by $P_{i}$ and on the right by $P_{j}$; every term dies except $X_{ij}$.</p>
+<p><strong>The diagonal corner is the endomorphism algebra of its subspace.</strong> $A_{kk}=\operatorname{End}(V_{k})$ has dimension $r_{k}^{2}$, and the off-diagonal corner is the space of maps $V_{l}\to V_{k}$, of dimension $r_{k}r_{l}$. At a complete frame all $n^{2}$ corners have dimension one.</p>
+<h2 id="the-multiplication-table">The Multiplication Table</h2>
+<p><strong>The product of the corner $(k,l)$ with the corner $(p,q)$ lands in the corner $(k,q)$, and only when $l=p$.</strong> From $P_{l}P_{p}=\delta_{lp}P_{l}$,</p>
+<p>$$
+A_{kl}A_{pq}\subseteq\delta_{lp}A_{kq}.
+$$</p>
+<p><strong>One nonzero element per corner gives the table of the matrix units.</strong> For a complete frame and $E_{kl}\in A_{kl}$ nonzero, the rule is</p>
+<p>$$
+E_{ij}E_{kl}=\delta_{jk}E_{il},
+$$</p>
+<p>which is the table of the elementary matrices read in the frame. It forces $E_{kk}=P_{k}$: the diagonal element is $c_{k}P_{k}$, and the rule with all indices equal gives $c_{k}^{2}=c_{k}$, hence $c_{k}=1$.</p>
+<p><strong>A complete real frame realises the table with real rank-one matrices.</strong> Let $v_{k}\in V_{k}$ be nonzero and let $\ell_{k}$ be the real form with $\ell_{k}(v_{l})=\delta_{kl}$. Then $E_{kl}=v_{k}\ell_{l}$ is real, lies in $A_{kl}$, and</p>
+<p>$$
+E_{kl}E_{pq}=v_{k}\ell_{l}(v_{p})\ell_{q}=\delta_{lp}E_{kq},\qquad E_{kk}=P_{k}.
+$$</p>
+<p>The $v_{k}$ are a real basis of $\mathbb{R}^{n}$ and the $\ell_{k}$ its real dual basis.</p>
+<h2 id="systems-of-matrix-units">Systems of Matrix Units</h2>
+<p><strong>A system of $n\times n$ matrix units over $\mathbb{R}$ is a family $E_{ij}\in M_{n}(\mathbb{R})$ with that table and diagonal sum the identity.</strong></p>
+<p>$$
+E_{ij}E_{kl}=\delta_{jk}E_{il},\qquad \sum_{k=1}^{n}E_{kk}=\mathrm{I}.
+$$</p>
+<p><strong>Proposition.</strong> Such a family is a basis of the algebra, its diagonal members are the idempotents of a frame, and $E_{ij}\mapsto$ elementary array is an isomorphism of algebras.</p>
+<p><em>Proof.</em> The table gives $E_{kk}^{2}=E_{kk}$ and $E_{kk}E_{ll}=0$ for $k\ne l$, so the $E_{kk}$ are a frame, and the second condition makes it sum to the identity. The products span the algebra by the table and $\mathrm{I}=\sum_{k}E_{kk}$; by the corner decomposition of that frame each corner is the line spanned by $E_{kl}$, so the $n^{2}$ elements are independent. The assignment $E_{ij}\mapsto$ elementary array is linear and bijective, and both sides obey the same table, so it is multiplicative.</p>
+<p><strong>Every system of units is conjugate to the standard one.</strong> The $E_{kk}$ have rank one and are mutually orthogonal, so $\mathbb{R}^{n}=\bigoplus_{k}\operatorname{im}E_{kk}$. For $v_{k}\in\operatorname{im}E_{kk}$ nonzero, the real matrix $S$ with columns $v_{k}$ is invertible, and $S^{-1}E_{ij}S$ sends $v_{j}$ to $v_{i}$ and kills the other $v_{m}$, hence is the elementary array. The conjugating matrix is unique up to the diagonal subgroup.</p>
+<h2 id="the-two-peirce-operators">The Two Peirce Operators</h2>
+<p><strong>The corners are the joint eigenspaces of two commuting families of operators.</strong></p>
+<p>$$
+L_{k}(X)=P_{k}X,\qquad R_{k}(X)=XP_{k}.
+$$</p>
+<p><strong>Proposition.</strong> The $2n$ operators commute, and</p>
+<p>$$
+A_{kl}=\{X:L_{k}X=X,\ R_{l}X=X,\ L_{i}X=R_{j}X=0\ \text{for}\ i\ne k,\ j\ne l\}.
+$$</p>
+<p><em>Proof.</em> $L_{k}L_{i}=\delta_{ki}L_{k}$ and $L_{k}R_{j}=R_{j}L_{k}$, so the family commutes. The displayed conditions say $P_{k}XP_{l}=X$, which leaves exactly the $r_{k}r_{l}$ entries that define the corner.</p>
+<p><strong>The eigenvalues are the real numbers $0$ and $1$.</strong> Each $L_{k}$ and $R_{k}$ is $\mathbb{R}$-linear with spectrum $\{0,1\}$, so the joint eigenspaces of a real frame are real subspaces, and no complex number enters the cut.</p>
+<h2 id="the-real-gauge">The Real Gauge</h2>
+<p><strong>Two frames with the same rank vector differ by conjugation by an invertible real matrix.</strong> There is $S\in\mathrm{GL}_{n}(\mathbb{R})$ with</p>
+<p>$$
+P'_{k}=SP_{k}S^{-1},\qquad k=1,\dots,n .
+$$</p>
+<p><em>Proof.</em> Take a real basis adapted to $P$, with the first $r_{1}$ vectors in $V_{1}$, the next $r_{2}$ in $V_{2}$, and so on, and a real basis $v'_{m}$ adapted to $P'$ in the same way. The matrix $S$ with $Sv_{m}=v'_{m}$ is real and invertible, and it carries $V_{k}$ isomorphically to $V'_{k}$; such a map conjugates the projection onto $V_{k}$ into the projection onto $V'_{k}$.</p>
+<p><strong>The group acting is $\mathrm{GL}_{n}(\mathbb{R})$, not $\mathrm{GL}_{n}(\mathbb{C})$.</strong> Both bases above are real, so $S$ is real. A complex $S$ that carries the standard frame to a real frame is real up to a diagonal factor: the $k$-th idempotent is sent to the projection onto the line spanned by the $k$-th column, so that column is a complex multiple of a real vector, and $S=A\operatorname{diag}(u_{1},\dots,u_{n})$ with $A$ real and all $u_{k}\ne0$. Diagonal matrices act trivially on the standard frame, so the complex matrices producing a given real frame are the real ones times the diagonal ones.</p>
+<p><strong>The stabiliser is the diagonal subgroup.</strong> If $S$ commutes with every $E_{kk}$, comparing entries in $SE_{kk}=E_{kk}S$ gives $S_{ij}=0$ for $i\ne j$. Hence</p>
+<p>$$
+D=\{\operatorname{diag}(t_{1},\dots,t_{n}):t_{k}\in\mathbb{R}^{\times}\},
+$$</p>
+<p>of dimension $n$.</p>
+<p><strong>The gauge acts on the units by ratios.</strong> Conjugation sends $E_{kl}=v_{k}\ell_{l}$ to $(Sv_{k})(\ell_{l}S^{-1})$; for diagonal $S$ with entries $t_{k}$,</p>
+<p>$$
+E_{kl}\longmapsto t_{k}t_{l}^{-1}E_{kl},
+$$</p>
+<p>and the idempotents $E_{kk}$ are fixed.</p>
+<h2 id="the-frame-variety">The Frame Variety</h2>
+<p><strong>The complete frames form the homogeneous space $\mathrm{GL}_{n}(\mathbb{R})/D$, of dimension $n^{2}-n$.</strong> The map $S\mapsto(SE_{11}S^{-1},\dots,SE_{nn}S^{-1})$ is surjective by the conjugation theorem and has fibres the right cosets of $D$, so</p>
+<p>$$
+\dim(\text{frames})=n^{2}-n,\qquad n^{2}=\underbrace{(n^{2}-n)}_{\text{frames}}+\underbrace{n}_{\dim D}.
+$$</p>
+<p><strong>At $n=3$ the dimension is $6$.</strong> The numbers are $9-3=6$. A frame is a decomposition of $\mathbb{R}^{3}$ into three lines, which costs $3\cdot 2=6$ parameters. Over $\mathbb{C}$ the same quotient has complex dimension $n^{2}-n$, hence real dimension $2(n^{2}-n)$: the real variety has half that, and the factor two is the passage from $\mathbb{R}$ to $\mathbb{C}$ in the group.</p>
+<p><strong>The tangent space confirms the count.</strong> With $S=\mathrm{I}+\epsilon X$ the frame moves by $P_{k}(\epsilon)=\mathrm{I}+\epsilon[X,P_{k}]$, so the tangent space at the standard frame is spanned by the commutators $[X,E_{kk}]$. That span has dimension $6$ at $n=3$ and $12$ at $n=4$, and the kernel of $X\mapsto([X,E_{kk}])_{k}$ is the diagonal matrices.</p>
+<h2 id="the-real-content-simultaneous-diagonalisation">The Real Content: Simultaneous Diagonalisation</h2>
+<p><strong>A frame of real idempotents exists exactly when the idempotents are simultaneously diagonalisable over $\mathbb{R}$.</strong> For commuting real idempotents $P_{k}$ with $\sum_{k}P_{k}=\mathrm{I}$ and ranks $r_{k}$ there is $S\in\mathrm{GL}_{n}(\mathbb{R})$ with</p>
+<p>$$
+S^{-1}P_{k}S=\operatorname{diag}(\underbrace{1,\dots,1}_{r_{k}},\underbrace{0,\dots,0}_{n-r_{k}})
+$$</p>
+<p>in block position $k$. This is the adapted-basis argument again: the images $V_{k}$ are independent and sum to $\mathbb{R}^{n}$, and a real basis chosen block by block diagonalises all the $P_{k}$ at once.</p>
+<p><strong>The diagonalising matrix is real because the eigenvalues are real.</strong> The real content is not commutativity, which holds over $\mathbb{C}$ too, but the fact that the eigenvalues are the real numbers $0$ and $1$. For distinct real $\lambda_{k}$ the combination $H=\sum_{k}\lambda_{k}P_{k}$ has eigenvalues $\lambda_{k}$; every eigenvector of $H$ is an eigenvector of every $P_{k}$, and the eigenvectors of a real matrix with distinct real eigenvalues are real.</p>
+<p><strong>The ranks are arbitrary and they are the only invariant.</strong> For every composition $n=r_{1}+\cdots+r_{n}$ with $r_{k}\ge1$, a real invertible $S$ and the diagonal blocks $\Delta_{k}$ give the frame $P_{k}=S\Delta_{k}S^{-1}$. Two frames are conjugate by $\mathrm{GL}_{n}(\mathbb{R})$ exactly when their rank vectors agree.</p>
+<p><strong>The frame comes from a real basis.</strong> The unit $E_{kl}=v_{k}\ell_{l}$ is a real matrix only if $v_{k}$ and $\ell_{l}$ are real, and a real frame supplies them, since each $\operatorname{im}P_{k}$ is a real line. No real frame needs complex vectors in its Peirce basis.</p>
+<p><strong>A frame need not be symmetric.</strong> The corner $A_{kl}=\operatorname{Hom}(V_{l},V_{k})$ requires real subspaces only. The frames fixed by the transpose, with $P_{k}^{\mathsf T}=P_{k}$, are treated in <em>The Peirce Decomposition and the Two Halves over $\mathbb{R}$</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>A frame of $M_{n}(\mathbb{R})$ is an ordered family of orthogonal real idempotents summing to the identity, equivalently a decomposition of $\mathbb{R}^{n}$ into ordered real subspaces $V_{k}$ of ranks $r_{k}$. The corners $A_{kl}=P_{k}M_{n}(\mathbb{R})P_{l}=\operatorname{Hom}(V_{l},V_{k})$ have dimension $r_{k}r_{l}$, sum directly to the algebra, and multiply by $A_{kl}A_{pq}\subseteq\delta_{lp}A_{kq}$; a system of matrix units is one real element $E_{kl}$ per corner with $E_{ij}E_{kl}=\delta_{jk}E_{il}$ and $\sum_{k}E_{kk}=\mathrm{I}$, and it is a basis of the algebra. The corners are the joint eigenspaces of the Peirce operators $L_{k}(X)=P_{k}X$ and $R_{k}(X)=XP_{k}$, with eigenvalues $0$ and $1$. Frames of equal ranks are conjugate by $\mathrm{GL}_{n}(\mathbb{R})$, with stabiliser the diagonal group $D$ of dimension $n$, so the frame variety is $\mathrm{GL}_{n}(\mathbb{R})/D$ of real dimension $n^{2}-n$; at $n=3$ that is $9-3=6$, half the real dimension $12$ of the complex frame space. The real content is that a frame of real idempotents exists exactly when the idempotents are simultaneously diagonalisable over $\mathbb{R}$, which holds because the eigenvalues are real; then the ranks are arbitrary and the units come from a real basis.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$P_{k}$</td>
+<td>The $k$-th idempotent of the frame</td>
+</tr>
+<tr>
+<td>$V_{k}=\operatorname{im}P_{k}$</td>
+<td>The real subspace of the $k$-th idempotent</td>
+</tr>
+<tr>
+<td>$r_{k}=\operatorname{rk}P_{k}$</td>
+<td>The rank, with $\sum_{k}r_{k}=n$</td>
+</tr>
+<tr>
+<td>$A_{kl}=P_{k}M_{n}(\mathbb{R})P_{l}$</td>
+<td>The corner, isomorphic to $\operatorname{Hom}(V_{l},V_{k})$</td>
+</tr>
+<tr>
+<td>$E_{kl}$</td>
+<td>The chosen element of $A_{kl}$</td>
+</tr>
+<tr>
+<td>$L_{k},R_{k}$</td>
+<td>The Peirce operators $X\mapsto P_{k}X$ and $X\mapsto XP_{k}$</td>
+</tr>
+<tr>
+<td>$D$</td>
+<td>The diagonal subgroup of $\mathrm{GL}_{n}(\mathbb{R})$</td>
+</tr>
+<tr>
+<td>$\mathrm{GL}_{n}(\mathbb{R})/D$</td>
+<td>The frame variety, of dimension $n^{2}-n$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for Peirce corners, systems of matrix units and their uniqueness up to conjugation.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for idempotents, adapted bases and simultaneous diagonalisation over $\mathbb{R}$.</li>
+<li><a href="the-peirce-basis-in-n-dimensions.html">The Peirce Basis in $n$ Dimensions</a>, for the complex version of the same table and the gauge on the units.</li>
+<li><a href="the-matrix-algebra-mnr.html">The Matrix Algebra $M_n(\mathbb{R})$</a>, for the matrix units and the transpose over $\mathbb{R}$.</li>
+<li><a href="the-peirce-decomposition-of-sym-n-r-as-a-jordan-algebra.html">The Peirce Decomposition of $\operatorname{Sym}_n$ as a Jordan Algebra</a>, for the symmetric half of the corners.</li>
+<li><a href="the-frame-the-simple-nilpotents-and-the-real-gauge-of-mnr.html">The Frame, the Simple Nilpotents and the Real Gauge of $M_n(\mathbb{R})$</a>, for the nilpotents attached to a frame.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

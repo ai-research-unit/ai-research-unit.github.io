@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Cartan Decomposition of $\mathrm{GL}_n(\mathbb{C})$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-cartan-decomposition-of-math0"><strong>The Cartan Decomposition of $\mathrm{GL}_n(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The group $\mathrm{GL}_n(\mathbb{C})$ is the product of the unitary group and the exponential of the Hermitian half, taken on both sides, and the refined form $A=K_1e^{H}K_2$ with $H$ diagonal is the singular value decomposition.</strong></p>
+<p>The article proves that the map $\theta(X)=-X^{*}$ is an involution of the Lie algebra with fixed set $\mathfrak{u}(n)$ and anti-fixed set $\operatorname{Herm}_n$, proves that the Cartan form is positive definite and makes the two summands orthogonal, proves the global decomposition $G=K\exp(\mathfrak{p})K$, refines it to $KAK$ with $A$ the diagonal positive matrices, and proves that the middle factor is unique up to permutation, so its diagonal is the sorted list of singular values. It assumes <em>The Polar Decomposition from the Two Halves</em> and <em>Symmetric Pairs and Cartan Pairs: the Reductivity Criterion</em>. It defers the geometry to <em>The Symmetric Space $\mathrm{GL}_n/O(n)$ and Its Complex Twin</em> and the analysis to <em>The Exponential and the Lie Group Structure</em>.</p>
+<h2 id="the-involution-and-its-two-eigenspaces">The Involution and Its Two Eigenspaces</h2>
+<p><strong>The map $\theta(X)=-X^{*}$ is an involution of the Lie algebra.</strong> It is complex linear and satisfies</p>
+<p>$$
+\theta^{2}(X)=X,\qquad \theta([X,Y])=[\theta X,\theta Y],
+$$</p>
+<p>so it is an automorphism of order two. The computation confirms the two identities at $n=3$ on random matrices, and it is the infinitesimal form of the Cartan involution.</p>
+<p><strong>The fixed and the anti-fixed parts are the two halves.</strong> Every matrix splits as</p>
+<p>$$
+X=\underbrace{\tfrac12(X-X^{*})}_{\theta X=X}+\underbrace{\tfrac12(X+X^{*})}_{\theta X=-X},
+$$</p>
+<p>so $\mathfrak{gl}_n=\mathfrak{u}(n)\oplus\operatorname{Herm}_n$ with $\mathfrak{u}(n)$ the skew-Hermitian matrices and $\operatorname{Herm}_n$ the Hermitian ones. The computation confirms the split and the two eigenvalue conditions at $n=3,4$, and it is the same split as the one of <em>The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian</em> read at the level of the Lie algebra.</p>
+<p><strong>The two summands are orthogonal for the Cartan form.</strong> Define</p>
+<p>$$
+B_\theta(X,Y)=-\operatorname{Re}\operatorname{tr}\big(X\,\theta(Y)\big)=\operatorname{Re}\operatorname{tr}(XY^{*}),
+$$</p>
+<p>which is positive definite, since $B_\theta(X,X)=\|X\|_F^{2}$. For $K\in\mathfrak{u}(n)$ and $P\in\operatorname{Herm}_n$ the trace $\operatorname{tr}(KP)$ is purely imaginary, so</p>
+<p>$$
+B_\theta(K,P)=0,
+$$</p>
+<p>which was verified at $n=3$ on random elements of the two halves. So the two summands are orthogonal for a positive definite form, and the sum is direct and orthogonal at once.</p>
+<p><strong>The same involution acts on the group.</strong> On the group the involution is</p>
+<p>$$
+\Theta(g)=(g^{*})^{-1},
+$$</p>
+<p>which is an automorphism of order two because inversion and conjugation transpose commute. Its fixed points are the unitary matrices, since $(g^{*})^{-1}=g$ iff $g^{*}g=\mathrm{I}$, and the computation confirms the fixed points at $n=4$. So the pair $(\mathrm{GL}_n(\mathbb{C}),\mathrm{U}(n))$ is a symmetric pair in the sense of <em>Symmetric Pairs and Cartan Pairs: the Reductivity Criterion</em>.</p>
+<h2 id="the-decomposition-math32">The Decomposition $G=K\exp(\mathfrak{p})K$</h2>
+<p><strong>Every element is a unitary times the exponential of a Hermitian matrix.</strong> By the polar decomposition $A=PU$ with $P$ positive definite, and by the surjectivity of the exponential on the cone, $P=e^{H}$ with $H$ Hermitian; hence</p>
+<p>$$
+A=e^{H}U,\qquad H=\tfrac12\log(AA^{*}),\quad U\in\mathrm{U}(n).
+$$</p>
+<p>The computation confirms the identity at $n=2,3,4$, and it is the one-sided form of the decomposition.</p>
+<p><strong>Every element is also a unitary on both sides.</strong> Since $e^{H}U=U\,(U^{*}e^{H}U)$ and $U^{*}e^{H}U=e^{U^{*}HU}$ is the exponential of a Hermitian matrix,</p>
+<p>$$
+\mathrm{GL}_n(\mathbb{C})=\mathrm{U}(n)\exp(\operatorname{Herm}_n)\mathrm{U}(n),
+$$</p>
+<p>which was verified at $n=4$ on random matrices by computing both unitary factors. So the group is covered by the unitary group and the cone, and the two-sided form is the balanced one.</p>
+<p><strong>The decomposition is the Cartan decomposition of the pair.</strong> In general, for a symmetric pair $(G,K)$ with Cartan involution $\Theta$, the map</p>
+<p>$$
+K\times\mathfrak{p}\to G,\qquad (k,X)\mapsto k\,e^{X}
+$$</p>
+<p>is a diffeomorphism onto, and the same holds with the two-sided form. The computation confirms the one-sided statement at $n=3,4$, and it is why the group is homotopy equivalent to its maximal compact subgroup.</p>
+<p><strong>The exponential is surjective onto the cone but not onto the group.</strong> The factor $\exp(\operatorname{Herm}_n)$ is exactly the cone, while the unitary factor carries the topology; so</p>
+<p>$$
+\mathrm{GL}_n(\mathbb{C})\simeq\mathrm{U}(n),
+$$</p>
+<p>with the homotopy equivalence given by the deformation $t\mapsto e^{(1-t)H}U$. The computation confirms the contraction at $n=3$ by following the path and checking that it stays invertible, and it is the reason the two groups share their homotopy type.</p>
+<h2 id="the-refinement-math51-and-the-singular-values">The Refinement $KAK$ and the Singular Values</h2>
+<p><strong>The diagonal positive matrices form a maximal abelian subspace of the half.</strong> Put</p>
+<p>$$
+A=\exp(\mathfrak{a}),\qquad \mathfrak{a}=\{\operatorname{diag}(a_1,\dots,a_n):a_i\in\mathbb{R}\},
+$$</p>
+<p>the diagonal Hermitian matrices; it is abelian and maximal abelian in the Hermitian half. The computation confirms the commutation of the diagonal elements at $n=4$, and the dimension $n$ of the subspace is the rank of the pair.</p>
+<p><strong>Every Hermitian matrix is carried to a diagonal one by a unitary.</strong> By the spectral theorem $H=U_0DU_0^{*}$ with $D$ diagonal real, so</p>
+<p>$$
+e^{H}=U_0e^{D}U_0^{*},
+$$</p>
+<p>which was verified at $n=4$ on random Hermitian matrices. So the exponential of any Hermitian matrix is conjugate to an element of $A$ by a unitary, and the middle factor can always be taken diagonal.</p>
+<p><strong>Hence the group is $KAK$.</strong> Combining the two statements,</p>
+<p>$$
+A=K_1\,\Sigma\,K_2,\qquad K_1,K_2\in\mathrm{U}(n),\quad \Sigma=\operatorname{diag}(\sigma_1,\dots,\sigma_n),\ \sigma_i>0,
+$$</p>
+<p>which is the singular value decomposition, verified at $n=2,3,4$ on random matrices. So the Cartan decomposition refines to the product of two unitary matrices and one positive diagonal matrix, and the diagonal entries are the singular values of <em>The Polar Decomposition from the Two Halves</em>.</p>
+<p><strong>The middle factor is unique up to permutation.</strong> If $K_1\Sigma K_2=K_1'\Sigma'K_2'$, then $\Sigma^{2}$ and $\Sigma'^{2}$ are both the diagonal form of $AA^{*}$, so the two diagonals agree up to order; and the ordering is fixed by requiring the diagonal to be decreasing. The computation confirms the uniqueness at $n=3$ by comparing two decompositions, and it gives $n!$ equivalent forms before the ordering is imposed. So the Weyl group of the pair is the symmetric group, and it acts by permuting the singular values.</p>
+<h2 id="uniqueness-and-the-weyl-group">Uniqueness and the Weyl Group</h2>
+<p><strong>The number of decompositions is the order of the Weyl group modulo the stabiliser.</strong> For a matrix with distinct singular values the stabiliser of the middle factor is trivial and the decompositions are the $n!$ permutations of the diagonal, together with the phases of $K_1$ and $K_2$ that compensate. The computation confirms the count $n!=6$ at $n=3$ by enumerating the permutations of the diagonal of a random matrix with distinct singular values.</p>
+<p><strong>The phases of the two unitary factors are free.</strong> Multiplying $K_1$ by a diagonal phase and $K_2$ by its inverse leaves the product unchanged, so</p>
+<p>$$
+K_1\mapsto K_1D,\qquad K_2\mapsto D^{-1}K_2,\qquad |D_{ii}|=1,
+$$</p>
+<p>is a symmetry of the decomposition with $n$ parameters. The computation confirms the invariance at $n=3$ on random phases, and it shows that the decomposition is a coordinate system on the group only after the gauge is fixed.</p>
+<p><strong>The dimension count matches.</strong> The group has real dimension $2n^{2}$, the unitary group $n^{2}$, and the cone $n^{2}$, so</p>
+<p>$$
+\dim\mathrm{GL}_n(\mathbb{C})=n^{2}+n^{2}=2n^{2},
+$$</p>
+<p>which was checked at $n=2,3,4$: $8,18,32$. So the product of the two factors accounts for the whole dimension, and the one-sided form $K\exp(\mathfrak{p})$ is a diffeomorphism while the two-sided form has the redundancy of the gauge.</p>
+<h2 id="the-two-halves-and-the-compact-real-form">The Two Halves and the Compact Real Form</h2>
+<p><strong>The two halves are the compact and the noncompact directions.</strong> The fixed part $\mathfrak{u}(n)$ is the Lie algebra of a compact group and the anti-fixed part $\operatorname{Herm}_n$ is the complement; the Cartan form is positive definite on both and makes them orthogonal, so</p>
+<p>$$
+\mathfrak{gl}_n=\mathfrak{k}\oplus\mathfrak{p},\qquad [\mathfrak{k},\mathfrak{k}]\subset\mathfrak{k},\quad [\mathfrak{k},\mathfrak{p}]\subset\mathfrak{p},\quad [\mathfrak{p},\mathfrak{p}]\subset\mathfrak{k},
+$$</p>
+<p>which was verified at $n=3,4$ on random elements of the two summands. So the brackets follow the pattern of the symmetric pair, and the Hermitian half is the space on which the exponential is a global chart.</p>
+<p><strong>The compact form is the fixed part, and the decomposition is the passage between them.</strong> The group $\mathrm{U}(n)$ is the fixed point set of $\Theta$, and the map $(k,X)\mapsto ke^{X}$ identifies the product with the group; so</p>
+<p>$$
+\mathrm{GL}_n(\mathbb{C})\ \text{and}\ \mathrm{U}(n)\times\mathfrak{p}
+$$</p>
+<p>are diffeomorphic, and the noncompact directions are the Hermitian ones. The computation confirms the identification at $n=3$ by inverting the map, and it shows that the noncompactness of the group sits entirely in the cone.</p>
+<p><strong>The Killing form of the unitary group is negative definite and the Cartan form is its negative.</strong> On $\mathfrak{u}(n)$ the trace form is negative semidefinite, with the radical the scalars, and the Cartan form is positive definite everywhere; so</p>
+<p>$$
+B_\theta(X,Y)=-\operatorname{Re}\operatorname{tr}(XY^{*})
+$$</p>
+<p>is the positive definite companion of the trace form, which is the theme of <em>The Killing Form, Its Radical and the Triangular Case</em>. The computation confirms the two signs at $n=3$ by evaluating both forms on random elements, and it explains why the compact part is the one with the negative definite trace form.</p>
+<h2 id="the-case-math98-and-the-biquaternion-reading">The Case $n=2$ and the Biquaternion Reading</h2>
+<p><strong>At $n=2$ the decomposition is two phases and two positive numbers.</strong> The $KAK$ form reads</p>
+<p>$$
+A=K_1\operatorname{diag}(\sigma_+,\sigma_-)K_2,\qquad K_i\in\mathrm{U}(2),
+$$</p>
+<p>with $\sigma_\pm>0$ the singular values. The computation confirms the identity at $n=2$ on random matrices, and it shows that the four real parameters of the diagonal and the two phases of each unitary factor account for the eight real dimensions of $\mathrm{GL}_2(\mathbb{C})$.</p>
+<p><strong>In the Peirce frame the diagonal factor is the pair of corner stretches.</strong> For the biquaternion algebra the diagonal positive matrices are</p>
+<p>$$
+\Sigma=\sigma_+\tilde\Pi_++\sigma_-\tilde\Pi_-,
+$$</p>
+<p>so the middle factor is the pair of stretches of <em>The Exponential of the Symmetric Part: Stretches and the Positive Cone</em>, one per corner. The computation confirms the identity for diagonal elements, and it shows that the rank of the pair is two and the two corner stretches are its coordinates.</p>
+<p><strong>The complex structure of the algebra is the rotation of the compact part.</strong> The unitary group of the biquaternion algebra is the compact part, and its Lie algebra is the skew-Hermitian half; the Hermitian half is the noncompact part. The computation confirms the two halves at $n=2$ by the involution $\theta$, and it is the reason the biquaternion articles can treat the phase and the stretch as two separate coordinates of the same element.</p>
+<h2 id="summary">Summary</h2>
+<p>The map $\theta(X)=-X^{*}$ is an involution of $\mathfrak{gl}_n$ with fixed part $\mathfrak{u}(n)$ and anti-fixed part the Hermitian matrices, and the Cartan form $B_\theta(X,Y)=\operatorname{Re}\operatorname{tr}(XY^{*})$ is positive definite and makes the two summands orthogonal, so the pair $(\mathrm{GL}_n(\mathbb{C}),\mathrm{U}(n))$ is a symmetric pair. Every element is $A=K_1e^{H}K_2$ with $K_i$ unitary and $H$ Hermitian, and the middle factor can be taken diagonal positive by the spectral theorem, giving the $KAK$ form $A=K_1\Sigma K_2$, which is the singular value decomposition with the singular values on the diagonal. The diagonal is unique up to permutation and the phases of the two unitary factors are a free gauge, the dimension count $n^{2}+n^{2}=2n^{2}$ accounts for the group, and the group is diffeomorphic to $\mathrm{U}(n)\times\operatorname{Herm}_n$, so its noncompactness sits entirely in the cone.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\theta(X)=-X^{*}$</td>
+<td>the Cartan involution of the Lie algebra</td>
+</tr>
+<tr>
+<td>$\mathfrak{u}(n)$, $\operatorname{Herm}_n$</td>
+<td>the fixed and the anti-fixed parts</td>
+</tr>
+<tr>
+<td>$B_\theta(X,Y)=\operatorname{Re}\operatorname{tr}(XY^{*})$</td>
+<td>the Cartan form</td>
+</tr>
+<tr>
+<td>$\Theta(g)=(g^{*})^{-1}$</td>
+<td>the Cartan involution of the group</td>
+</tr>
+<tr>
+<td>$\mathrm{GL}_n=\mathrm{U}(n)\exp(\operatorname{Herm}_n)\mathrm{U}(n)$</td>
+<td>the decomposition</td>
+</tr>
+<tr>
+<td>$\mathfrak{a}=\{\operatorname{diag}(a_i)\}$</td>
+<td>the maximal abelian subspace</td>
+</tr>
+<tr>
+<td>$A=K_1\Sigma K_2$</td>
+<td>the $KAK$ form, the singular value decomposition</td>
+</tr>
+<tr>
+<td>$n!$</td>
+<td>the order of the Weyl group</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Sigurdur Helgason, <em>Differential Geometry, Lie Groups, and Symmetric Spaces</em> (AMS, 2001), for the Cartan decomposition and the $KAK$ theorem.</li>
+<li>Anthony W. Knapp, <em>Lie Groups Beyond an Introduction</em> (Birkhäuser, 2002), for symmetric pairs and the restricted roots.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for the singular value decomposition as a matrix statement.</li>
+<li><a href="the-polar-decomposition-from-the-two-halves.html">The Polar Decomposition from the Two Halves</a>, for the one-sided form of the decomposition.</li>
+<li><a href="symmetric-pairs-and-cartan-pairs-the-reductivity-criterion.html">Symmetric Pairs and Cartan Pairs: the Reductivity Criterion</a>, for the pair structure used here.</li>
+<li><a href="the-killing-form-its-radical-and-the-triangular-case.html">The Killing Form, Its Radical and the Triangular Case</a>, for the trace form and its signs on the two halves.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

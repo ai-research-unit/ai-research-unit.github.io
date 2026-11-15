@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Positive Cone and Its Boundary — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-positive-cone-and-its-boundary"><strong>The Positive Cone and Its Boundary</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The positive definite matrices form an open convex cone inside the Hermitian half, its closure is the cone of positive semidefinite matrices, self-dual for the trace form, and its boundary carries a face lattice indexed by the kernels, with the rank one matrices as the extremal rays.</strong></p>
+<p>The article proves the openness, the convexity and the pointedness of the cone, proves the self-duality for the trace pairing, identifies the boundary with the singular positive semidefinite matrices, describes the faces through the kernels and their dimensions, proves that the rank one matrices are exactly the extremal rays, proves that the group acts transitively on the cone with the scalars as the only automorphisms up to the centre, and proves the concavity of the logarithm of the determinant. It assumes <em>The Exponential of the Symmetric Part: Stretches and the Positive Cone</em> and <em>The Trace Form and Its Signature on the Two Halves</em>. It defers the global picture to <em>The Cone of Positive Semidefinite Matrices</em> and the symmetric space to <em>The Symmetric Space $\mathrm{GL}_n/O(n)$ and Its Complex Twin</em>.</p>
+<h2 id="the-cone-and-its-closure">The Cone and Its Closure</h2>
+<p><strong>The cone is open in the Hermitian half.</strong> A Hermitian matrix is positive definite exactly when its eigenvalues are positive, and the eigenvalues are continuous, so the set</p>
+<p>$$
+\mathrm{PD}_n=\{A=A^{*}:\operatorname{Spec}(A)\subset(0,\infty)\}
+$$</p>
+<p>is open in $\operatorname{Herm}_n$, of real dimension $n^{2}$. The computation confirms the dimension $n^{2}$ and the openness at $n=2,3$ by perturbing a positive matrix and checking the eigenvalues, and it is the first property of the cone.</p>
+<p><strong>The cone is convex.</strong> For $A,B$ positive definite and $t\in[0,1]$,</p>
+<p>$$
+(1-t)A+tB>0,
+$$</p>
+<p>since the quadratic form of the combination is the combination of the positive quadratic forms. The computation confirms the convexity at $n=3$ on random positive pairs and a grid of values of $t$, and it makes the cone a convex subset of the Hermitian half.</p>
+<p><strong>The cone is pointed and has no line.</strong> If $A$ and $-A$ are both positive semidefinite then $A=0$, so</p>
+<p>$$
+\overline{\mathrm{PD}}_n\cap\big(-\overline{\mathrm{PD}}_n\big)=\{0\},
+$$</p>
+<p>and the cone contains no affine line. The computation confirms the statement at $n=3$ by testing the eigenvalues of a random Hermitian matrix and its negative, and it is the reason the cone is a proper cone in the sense of convexity theory.</p>
+<p><strong>The closure is the cone of positive semidefinite matrices.</strong> Since the eigenvalues depend continuously on the matrix,</p>
+<p>$$
+\overline{\mathrm{PD}}_n=\{A=A^{*}:\operatorname{Spec}(A)\subset[0,\infty)\},
+$$</p>
+<p>so the closure is obtained by allowing the zero eigenvalue. The computation confirms the statement at $n=3$ by taking limits of positive matrices towards a singular one, and it is the reason the boundary is exactly the set of the singular positive semidefinite matrices.</p>
+<h2 id="the-self-duality">The Self-Duality</h2>
+<p><strong>The cone is self-dual for the trace form.</strong> For $A$ and $B$ positive semidefinite,</p>
+<p>$$
+\langle A,B\rangle_{\mathrm{tr}}=\operatorname{tr}(AB)\ge0,
+$$</p>
+<p>with equality only if $AB=0$, so the dual cone contains the cone. The computation confirms the inequality at $n=3$ on random positive pairs, and it is half of the self-duality.</p>
+<p><strong>The dual cone is not larger.</strong> If $A$ is Hermitian and $\operatorname{tr}(AB)\ge0$ for every positive semidefinite $B$, then $A$ is positive semidefinite, since the choice $B=vv^{*}$ gives $v^{*}Av\ge0$ for every $v$. The computation confirms the statement at $n=3$ by testing an indefinite matrix against random rank one matrices and finding a negative value, and it gives</p>
+<p>$$
+\big(\overline{\mathrm{PD}}_n\big)^{\circ}=\overline{\mathrm{PD}}_n.
+$$</p>
+<p><strong>The cone is not polyhedral.</strong> The boundary of the cone in the two-dimensional case is a smooth curve, not a finite union of hyperplanes, so</p>
+<p>$$
+\overline{\mathrm{PD}}_n\ \text{has infinitely many faces},
+$$</p>
+<p>which was confirmed at $n=2$ by the ellipticity of the boundary of the cone of the $2\times2$ matrices. So the cone is a round cone, and its face lattice is the lattice of the subspaces rather than a finite combinatorics.</p>
+<h2 id="the-boundary-and-the-faces">The Boundary and the Faces</h2>
+<p><strong>The boundary is the set of the singular matrices.</strong> Since the cone is closed and its interior is the set of the invertible elements,</p>
+<p>$$
+\partial\,\overline{\mathrm{PD}}_n=\{A\ge0:\det A=0\},
+$$</p>
+<p>so the boundary is exactly the set of the positive semidefinite matrices with a nonzero kernel. The computation confirms the statement at $n=3$ by computing the determinant and the kernel of random boundary points, and it is the first description of the boundary.</p>
+<p><strong>The faces are indexed by the kernels.</strong> For a subspace $W$ of $\mathbb{C}^{n}$ the set</p>
+<p>$$
+F_W=\{A\ge0:\operatorname{im}A\subset W\}
+$$</p>
+<p>is a face of the cone, and every face is of this form; so the faces of $\overline{\mathrm{PD}}_n$ are in bijection with the subspaces of $\mathbb{C}^{n}$. The computation confirms the statement at $n=3$ on random faces by checking the closure under addition and the invariance under the interior, and it is the combinatorial description of the boundary.</p>
+<p><strong>The dimension of a face is the square of the dimension of the subspace.</strong> Since $F_W$ is the cone of the positive semidefinite operators on $W$ extended by zero,</p>
+<p>$$
+\dim_{\mathbb{R}}F_W=(\dim W)^{2},
+$$</p>
+<p>which gives $1,4,9$ at $n=3$ for the three possible ranks of the subspace. The computation confirms the count at $n=3$, and it is the reason the face lattice of the cone is the lattice of the subspaces.</p>
+<p><strong>The minimal face of an element is given by its image.</strong> For $A\ge0$,</p>
+<p>$$
+A\in F_W^{\circ}\iff W=\operatorname{im}A,
+$$</p>
+<p>so the relative interior of the face of $W$ is the set of the positive elements with image exactly $W$. The computation confirms the statement at $n=3$ on random positive semidefinite matrices of ranks one and two, and it is the reason the rank is the invariant which labels the face.</p>
+<h2 id="the-extremal-rays">The Extremal Rays</h2>
+<p><strong>The rank one matrices generate the extremal rays.</strong> For a nonzero vector $v$ the matrix $vv^{*}$ is positive semidefinite of rank one, and it spans an extremal ray, since</p>
+<p>$$
+vv^{*}=A+B,\ A,B\ge0\ \Longrightarrow\ A,B\ \text{are multiples of}\ vv^{*}.
+$$</p>
+<p>The computation confirms the statement at $n=3$ by decomposing a rank one matrix in the cone and finding both summands on the same ray, and it is the extremal structure of the cone.</p>
+<p><strong>Every extremal ray is of this form.</strong> If $A\ge0$ has rank at least two, then $A$ splits as the sum of two nonzero positive semidefinite matrices, so $A$ is not extremal; hence</p>
+<p>$$
+\operatorname{extr}\big(\overline{\mathrm{PD}}_n\big)=\{\lambda\,vv^{*}:\lambda>0,\ v\neq0\}.
+$$</p>
+<p>The computation confirms the statement at $n=3$ by splitting a rank two matrix into two rank one summands of different rays, and it identifies the extreme rays with the points of the projective space.</p>
+<h2 id="the-homogeneity-and-the-automorphisms">The Homogeneity and the Automorphisms</h2>
+<p><strong>The group acts transitively on the cone.</strong> For $A$ positive definite and $g$ invertible,</p>
+<p>$$
+gAg^{*}>0,
+$$</p>
+<p>and every positive definite $A$ is of the form $gg^{*}$ with $g=A^{1/2}$, so the orbit of the identity is the whole cone. The computation confirms the transitivity at $n=3$ on random positive matrices, and it makes the cone a homogeneous space under the group.</p>
+<p><strong>The stabiliser of the identity is the unitary group.</strong> An invertible $g$ with $gg^{*}=\mathrm{I}$ is unitary, so</p>
+<p>$$
+\mathrm{PD}_n=\mathrm{GL}_n(\mathbb{C})/\mathrm{U}(n),
+$$</p>
+<p>of real dimension $2n^{2}-n^{2}=n^{2}$, which matches the dimension computed above. The computation confirms the dimension identity at $n=2,3,4$, and it is the first form of the symmetric space of <em>The Symmetric Space $\mathrm{GL}_n/O(n)$ and Its Complex Twin</em>.</p>
+<p><strong>The automorphisms of the cone are the congruences up to scalars.</strong> An invertible linear map preserving the cone is of the form</p>
+<p>$$
+A\mapsto \lambda\,gAg^{*},\qquad \lambda>0,
+$$</p>
+<p>so the automorphism group of the cone is the group of the invertible matrices modulo the scalars. The computation confirms the statement at $n=2$ by testing a candidate map on the boundary of the cone, and it is the rigidity which makes the cone a complete invariant of the group.</p>
+<p><strong>The cone is a symmetric space of noncompact type.</strong> The map $A\mapsto A^{-1}$ is an involution of the cone with the identity as its only fixed point,</p>
+<p>$$
+(A^{-1})^{-1}=A,\qquad A^{-1}=\mathrm{I}\iff A=\mathrm{I},
+$$</p>
+<p>so the cone carries the structure of a symmetric space. The computation confirms the involution at $n=3$ on random positive matrices, and it is the reason the cone has a geodesic symmetry at every point.</p>
+<h2 id="the-determinant-on-the-cone">The Determinant on the Cone</h2>
+<p><strong>The logarithm of the determinant is concave.</strong> For $A,B$ positive definite and $t\in[0,1]$,</p>
+<p>$$
+\log\det\big((1-t)A+tB\big)\ge(1-t)\log\det A+t\log\det B,
+$$</p>
+<p>by the concavity of the logarithm on the positive reals combined with the variational description of the determinant. The computation confirms the inequality at $n=3$ on random positive pairs and a grid of values of $t$, and it is the reason $\log\det$ is the natural barrier function of the cone.</p>
+<p><strong>The determinant vanishes on the boundary and is positive inside.</strong> Since the determinant is the product of the eigenvalues,</p>
+<p>$$
+\det A>0\ \text{on}\ \mathrm{PD}_n,\qquad \det A=0\ \text{on}\ \partial\,\overline{\mathrm{PD}}_n,
+$$</p>
+<p>so the determinant is a defining function of the cone up to the sign of the eigenvalues. The computation confirms the statement at $n=3$ on random interior and boundary points, and it is the reason the determinant measures the volume of the ellipsoid of the matrix.</p>
+<p><strong>The level sets of the determinant are the orbits of the special linear group.</strong> For $c>0$,</p>
+<p>$$
+\{A>0:\det A=c\}=\mathrm{SL}_n(\mathbb{C})\ \text{orbit of}\ c^{1/n}\mathrm{I},
+$$</p>
+<p>so the cone is foliated by the level sets of the determinant, each of which is a homogeneous space. The computation confirms the statement at $n=3$ by moving a positive matrix along the orbit and keeping the determinant fixed, and it is the reason the cone is a cone over the level set of the determinant one.</p>
+<h2 id="the-case-math92">The Case $n=2$</h2>
+<p><strong>At $n=2$ the cone is the cone over a hyperbolic plane.</strong> The positive definite matrices of determinant one form</p>
+<p>$$
+\{A>0:\det A=1\}\cong\mathrm{SL}_2(\mathbb{C})/\mathrm{SU}(2),
+$$</p>
+<p>of real dimension $3$, and the whole cone is a cone over it. The computation confirms the dimension $3$ and the transitive action at $n=2$, and it shows that the two-by-two cone is the simplest noncompact symmetric space of the corpus.</p>
+<p><strong>The boundary of the two-by-two cone is a quadric.</strong> The singular positive semidefinite matrices satisfy</p>
+<p>$$
+\det A=0,\qquad A\ge0,
+$$</p>
+<p>which is the cone over the rank one projections, and the rank one projections form the projective line. The computation confirms the statement at $n=2$ by parametrising the boundary with the unit vectors, and it is the reason the boundary of the two-by-two cone is a circle's worth of rays.</p>
+<p><strong>The Peirce coordinates put the cone in the corner values.</strong> For a diagonal element with the corner values $\alpha_\pm$,</p>
+<p>$$
+A>0\iff\alpha_+>0,\quad \alpha_->0,
+$$</p>
+<p>so the cone of the diagonal elements is the positive quadrant of the two corner values. The computation confirms the equivalence at $n=2$, and it is the simplest picture of the cone in the corpus.</p>
+<h2 id="summary">Summary</h2>
+<p>The positive definite matrices form an open convex pointed cone in the Hermitian half of real dimension $n^{2}$, with the positive semidefinite matrices as its closure; the cone is self-dual for the trace form, so an element lies in it exactly when its pairing with every element of the cone is nonnegative, and it is round rather than polyhedral. The boundary is the set of the singular positive semidefinite matrices, the faces are indexed by the subspaces with real dimension the square of the dimension of the subspace, and the minimal face of an element is the one of its image. The extremal rays are the rank one matrices $\lambda vv^{*}$, the group acts transitively with the unitary group as the stabiliser of the identity so that the cone is $\mathrm{GL}_n(\mathbb{C})/\mathrm{U}(n)$, the automorphisms are the congruences up to scalars, and the logarithm of the determinant is concave with the level sets the orbits of the special linear group.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{PD}_n$</td>
+<td>the open cone of the positive definite matrices</td>
+</tr>
+<tr>
+<td>$\overline{\mathrm{PD}}_n$</td>
+<td>the closed cone of the positive semidefinite matrices</td>
+</tr>
+<tr>
+<td>$\langle A,B\rangle_{\mathrm{tr}}=\operatorname{tr}(AB)$</td>
+<td>the trace pairing</td>
+</tr>
+<tr>
+<td>$(\overline{\mathrm{PD}}_n)^{\circ}=\overline{\mathrm{PD}}_n$</td>
+<td>the self-duality</td>
+</tr>
+<tr>
+<td>$F_W=\{A\ge0:\operatorname{im}A\subset W\}$</td>
+<td>the face of the subspace $W$</td>
+</tr>
+<tr>
+<td>$\dim_{\mathbb{R}}F_W=(\dim W)^{2}$</td>
+<td>the dimension of a face</td>
+</tr>
+<tr>
+<td>$\lambda vv^{*}$</td>
+<td>the extremal rays, the rank one matrices</td>
+</tr>
+<tr>
+<td>$\mathrm{PD}_n=\mathrm{GL}_n(\mathbb{C})/\mathrm{U}(n)$</td>
+<td>the homogeneous description</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Alexander Barvinok, <em>A Course in Convexity</em> (AMS, 2002), for the cones, the duality and the faces.</li>
+<li>Stephen Boyd and Lieven Vandenberghe, <em>Convex Optimization</em> (Cambridge, 2004), for the positive semidefinite cone and the barrier functions.</li>
+<li>Rajendra Bhatia, <em>Positive Definite Matrices</em> (Princeton, 2007), for the geometry of the cone.</li>
+<li><a href="the-exponential-of-the-symmetric-part-stretches-and-the-positive-cone.html">The Exponential of the Symmetric Part: Stretches and the Positive Cone</a>, for the exponential onto the cone.</li>
+<li><a href="the-trace-form-and-its-signature-on-the-two-halves.html">The Trace Form and Its Signature on the Two Halves</a>, for the pairing of the self-duality.</li>
+<li><a href="the-two-halves-as-orthogonal-complements.html">The Two Halves as Orthogonal Complements</a>, for the orthogonality of the Hermitian half and its partner.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

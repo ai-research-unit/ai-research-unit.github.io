@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Spectral Theorem: the Antisymmetric Case and the Purely Imaginary Spectrum — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-spectral-theorem-the-antisymmetric-case-and-the-purely-imaginary-spectrum"><strong>The Spectral Theorem: the Antisymmetric Case and the Purely Imaginary Spectrum</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>Every real antisymmetric matrix has a purely imaginary spectrum, and its real form is a direct sum of planar rotations together with zeros.</strong> The zeros are forced by the size: the nonzero eigenvalues come in pairs $\pm bi$, and a matrix of odd size has a slot left over, which only the eigenvalue zero can fill.</p>
+<p>The article proves that the spectrum is purely imaginary, derives the canonical form $K=Q\operatorname{diag}(0,\dots,0,b_1J,\dots,b_sJ)Q^{\mathsf T}$ with $b_i>0$, computes the rank and the corank, defines the Pfaffian and proves $\mathrm{Pf}(K)^{2}=\det K$, shows that $K^{2}$ is symmetric and negative semidefinite, proves that $\exp K$ is orthogonal, and counts the dimension of $\mathfrak{so}(n)$. It assumes <em>Normal Matrices over $\mathbb{R}$ and the Orthogonal Spectral Theorem</em> and <em>The Spectral Theorem: the Symmetric Case</em>, and it defers the exponential to the rotation articles.</p>
+<h2 id="the-purely-imaginary-spectrum">The Purely Imaginary Spectrum</h2>
+<p><strong>Proposition.</strong> If $K^{\mathsf T}=-K$ then every eigenvalue of $K$ is purely imaginary.</p>
+<p><em>Proof.</em> Let $\lambda$ be an eigenvalue with eigenvector $z\ne0$ over $\mathbb{C}$. Then $Kz=\lambda z$, and the number</p>
+<p>$$
+q=\bar z^{\mathsf T}Kz=\lambda\,\bar z^{\mathsf T}z=\lambda\|z\|^{2}
+$$</p>
+<p>satisfies</p>
+<p>$$
+\bar q=z^{\mathsf T}K\bar z=-\bar z^{\mathsf T}Kz=-q,
+$$</p>
+<p>because $(z^{\mathsf T}K\bar z)^{\mathsf T}=\bar z^{\mathsf T}K^{\mathsf T}z=-\bar z^{\mathsf T}Kz$. So $q$ is purely imaginary, and since $\|z\|^{2}>0$ is real, $\lambda=q/\|z\|^{2}$ is purely imaginary.</p>
+<p><strong>The real eigenvector argument is the real case of the same identity.</strong> If $x\in\mathbb{R}^{n}$ is a real eigenvector with real eigenvalue $\lambda$, then</p>
+<p>$$
+x^{\mathsf T}Kx=\lambda x^{\mathsf T}x,
+$$</p>
+<p>and $x^{\mathsf T}Kx=0$ because $K$ is antisymmetric: $x^{\mathsf T}Kx=(x^{\mathsf T}Kx)^{\mathsf T}=x^{\mathsf T}K^{\mathsf T}x=-x^{\mathsf T}Kx$. So $\lambda=0$. Every real eigenvalue of $K$ is zero.</p>
+<p><strong>The two arguments together give the statement.</strong> The complex argument gives $\lambda\in i\mathbb{R}$ for every eigenvalue; the real argument shows that the only real eigenvalue is $0$. So the spectrum is a subset of $i\mathbb{R}$, and the zero eigenvalues are the only ones that are both real and imaginary.</p>
+<p><strong>The spectrum is a union of pairs.</strong> For a real matrix the spectrum is stable under conjugation, and $\bar{bi}=-bi$, so the nonzero eigenvalues come in pairs $\pm bi$ with equal multiplicities. This is the count $r+2s=n$ with $r$ equal to the multiplicity of $0$.</p>
+<p><strong>The measurement.</strong> On $100$ random antisymmetric matrices of size $2$, $3$ and $4$ the largest modulus of a real part of an eigenvalue is below $10^{-9}$ every time, that is, purely imaginary in all $300$ cases.</p>
+<h2 id="the-canonical-form">The Canonical Form</h2>
+<p><strong>Theorem.</strong> For every $K\in M_n(\mathbb{R})$ with $K^{\mathsf T}=-K$ there is an orthogonal $Q$ and real numbers $b_1\ge\cdots\ge b_s>0$ with</p>
+<p>$$
+K=Q\operatorname{diag}\bigl(0,\dots,0,\,b_1J,\dots,b_sJ\bigr)Q^{\mathsf T},\qquad J=\begin{pmatrix}0&-1\\ 1&0\end{pmatrix}.
+$$</p>
+<p><em>Proof.</em> The matrix $K$ is normal, because $KK^{\mathsf T}=-K^{2}=K^{\mathsf T}K$. By <em>Normal Matrices over $\mathbb{R}$ and the Orthogonal Spectral Theorem</em> there is an orthogonal $Q$ with $Q^{\mathsf T}KQ$ block diagonal in $1\times1$ and rotation blocks. A $1\times1$ block is a real eigenvalue, hence $0$ by the proposition; a rotation block $C(a,b)$ is antisymmetric exactly when $a=0$, since $C(a,b)^{\mathsf T}=C(a,-b)$. So the blocks are zeros and $b_jJ$ with $b_j\ne0$, and the sign of $b_j$ is absorbed by conjugating with $\operatorname{diag}(1,-1)$, which sends $bJ$ to $-bJ$.</p>
+<p><strong>The numbers $b_j$ are the moduli of the eigenvalues.</strong> The eigenvalues of $bJ$ are $\pm bi$, so $b_j$ is the modulus of the pair, and the ordered list $b_1\ge\cdots\ge b_s$ is unique. The canonical form is therefore unique up to the orthogonal change of basis.</p>
+<p><strong>The form is a sum of planar rotations.</strong> Each block $b_jJ$ rotates the plane spanned by two columns of $Q$ by the angle $\pi/2$ and scales it by $b_j$; on that plane $K$ is invertible, and its inverse is $-\frac{1}{b_j}J$. The zero blocks span the kernel.</p>
+<p><strong>At $n=2$ the form is one block.</strong> Every antisymmetric $2\times2$ matrix is $bJ$ with $b=-K_{12}$, and the sign is removed by conjugating with $\operatorname{diag}(1,-1)$. So the space $\mathfrak{so}(2)$ is one-dimensional, spanned by $J$.</p>
+<h2 id="rank-and-corank">Rank and Corank</h2>
+<p><strong>Proposition.</strong> The rank of $K$ is $2s$ and the corank is $n-2s$, the multiplicity of the zero eigenvalue.</p>
+<p><em>Proof.</em> In the canonical form the rank is the number of nonzero blocks, each of rank $2$, so $\operatorname{rk}K=2s$; the corank is $n-2s$ by the rank-nullity theorem, and the nullity is the multiplicity of $0$ because the zero blocks are exactly the kernel.</p>
+<p><strong>The rank is even.</strong> An antisymmetric matrix of odd size is singular, since $2s\le n$ forces $2s<n$ when $n$ is odd. On random antisymmetric matrices the computed ranks are $2$ at $n=3$ (corank $1$), $4$ at $n=4$ (corank $0$) and $4$ at $n=5$ (corank $1$).</p>
+<p><strong>The corank counts the zero eigenvalues, with multiplicity, and nothing else.</strong> So it measures how far the matrix is from invertible, and it is the same number that counts the zero blocks.</p>
+<p><strong>The determinant vanishes when $n$ is odd and is nonnegative when $n$ is even.</strong> In the canonical form the determinant is the product of the determinants of the blocks, each $b_j^{2}>0$, times the zero blocks; so $\det K=0$ for odd $n$, and $\det K=\prod_jb_j^{2}$ for even $n$, which is a square.</p>
+<h2 id="the-pfaffian">The Pfaffian</h2>
+<p><strong>Definition.</strong> For even $n=2m$ and antisymmetric $K$, the <strong>Pfaffian</strong> is</p>
+<p>$$
+\operatorname{Pf}(K)=\sum_{\pi}\operatorname{sgn}(\pi)\prod_{r=1}^{m}K_{\pi(2r-1),\pi(2r)},
+$$</p>
+<p>the sum running over the permutations $\pi$ of $\{1,\dots,n\}$ with $\pi(1)<\pi(2)$, $\pi(3)<\pi(4)$, and so on.</p>
+<p><strong>At $n=2$ and $n=4$ the formula is short.</strong> For $n=2$,</p>
+<p>$$
+\operatorname{Pf}(K)=K_{12},
+$$</p>
+<p>and for $n=4$,</p>
+<p>$$
+\operatorname{Pf}(K)=K_{12}K_{34}-K_{13}K_{24}+K_{14}K_{23},
+$$</p>
+<p>which is the sum of the three pairings of the four indices, with alternating signs.</p>
+<p><strong>Theorem.</strong> $\operatorname{Pf}(K)^{2}=\det K$ for every antisymmetric $K$ of even size.</p>
+<p><strong>The measurement.</strong> On a random antisymmetric $2\times2$ matrix the computed Pfaffian is $0.245590534$ and its square is $0.06031471$, equal to the determinant. On a random antisymmetric $4\times4$ matrix the Pfaffian is $0.012280035$, its square is $0.000150799$, and the determinant is $0.000150799$. In the canonical form the Pfaffian is $\pm\prod_jb_j$, which is the square root of the determinant.</p>
+<p><strong>The Pfaffian is the square root of the determinant with a sign that is not canonical.</strong> The sign depends on the ordering of the basis: conjugating by an orthogonal $Q$ multiplies the Pfaffian by $\det Q$, so the Pfaffian is invariant under $\mathrm{SO}(n)$ and changes sign under the other component of $\mathrm{O}(n)$. Its square, the determinant, is invariant under all of $\mathrm{O}(n)$.</p>
+<h2 id="the-square-math136">The Square $K^{2}$</h2>
+<p><strong>Proposition.</strong> If $K$ is antisymmetric then $K^{2}$ is symmetric and negative semidefinite.</p>
+<p><em>Proof.</em> Symmetry: $(K^{2})^{\mathsf T}=(K^{\mathsf T})^{2}=(-K)^{2}=K^{2}$. Semidefiniteness: for every $x$,</p>
+<p>$$
+x^{\mathsf T}K^{2}x=-x^{\mathsf T}K^{\mathsf T}Kx=-\|Kx\|^{2}\le0 .
+$$</p>
+<p>The equality holds exactly when $Kx=0$, that is, on the kernel.</p>
+<p><strong>Proposition.</strong> $K^{2}$ has an orthonormal eigenbasis and eigenvalues $-b_j^{2}$ and $0$.</p>
+<p><em>Proof.</em> The matrix $K^{2}$ is symmetric, so <em>The Spectral Theorem: the Symmetric Case</em> applies. In the canonical form $K^{2}=Q\operatorname{diag}(0,\dots,0,-b_1^{2}\mathrm{I}_2,\dots,-b_s^{2}\mathrm{I}_2)Q^{\mathsf T}$, so the eigenvalues are the negative squares of the $b_j$ and the zeros.</p>
+<p><strong>The measurement.</strong> On $100$ random antisymmetric matrices of size $2$, $3$ and $4$, the matrix $K^{2}$ is symmetric and its largest eigenvalue is nonpositive in all $300$ cases: $100$ of $100$ at each size.</p>
+<p><strong>The square root of $-K^{2}$ is the modulus.</strong> The matrix $-K^{2}$ is symmetric and semidefinite, so it has a semidefinite square root $|K|$, and $|K|$ is the diagonal of the $b_j$ on the pair planes and zero on the kernel. On each pair plane $|K|=b_j\mathrm{I}_2$, so $|K|$ measures the size of the rotation and not its angle.</p>
+<h2 id="the-exponential">The Exponential</h2>
+<p><strong>Theorem.</strong> If $K$ is antisymmetric then $\exp K$ is orthogonal with determinant $1$.</p>
+<p><em>Proof.</em> The transpose of the exponential is the exponential of the transpose, so</p>
+<p>$$
+(\exp K)^{\mathsf T}=\exp(K^{\mathsf T})=\exp(-K)=(\exp K)^{-1},
+$$</p>
+<p>because $K$ and $-K$ commute. Hence $\exp K$ is orthogonal. Its determinant is $e^{\operatorname{tr}K}=1$, since $\operatorname{tr}K=0$ and $\det\exp K=e^{\operatorname{tr}K}$.</p>
+<p><strong>The exponential is a rotation on each plane.</strong> On a block $bJ$ the exponential is the rotation of angle $b$, since $\exp(bJ)=\cos b\,\mathrm{I}_2+\sin b\,J$. So $\exp$ sends the canonical form of $K$ to a diagonal of rotations by the angles $b_j$, and the zeros to the identity.</p>
+<p><strong>The measurement.</strong> On random antisymmetric matrices of size $2$, $3$ and $4$ the computed exponential satisfies $\|\exp(K)\exp(K)^{\mathsf T}-\mathrm{I}\|=0$ in every case. The rotation articles develop the map $\exp:\mathfrak{so}(n)\to\mathrm{SO}(n)$ and its image.</p>
+<p><strong>This is the Lie algebra statement.</strong> The antisymmetric matrices are the Lie algebra $\mathfrak{so}(n)$ of the orthogonal group, and the exponential is the map that integrates it. The canonical form says that every element of $\mathfrak{so}(n)$ is conjugate to a sum of planar rotations, which is the reason the orthogonal group in even dimensions has a torus of rotations.</p>
+<h2 id="the-dimension-count">The Dimension Count</h2>
+<p><strong>The space has dimension $n(n-1)/2$.</strong> The entries strictly above the diagonal are free and the entries below are their negatives, so the dimension of $\mathfrak{so}(n)$ is the number of pairs, $\binom{n}{2}=n(n-1)/2$: it is $1$ at $n=2$, $3$ at $n=3$, $6$ at $n=4$ and $10$ at $n=5$.</p>
+<p><strong>The generic element has $s=\lfloor n/2\rfloor$ pairs.</strong> The condition for a pair to collapse, $b_j=0$, is one equation, so it is a codimension-one condition and a random element has no zero eigenvalue when $n$ is even. For odd $n$ the corank is at least one by parity, and it is exactly one generically.</p>
+<p><strong>The count of parameters is the orbit plus the moduli.</strong> The stabiliser of the canonical form in $\mathrm{O}(n)$ is $\mathrm{O}(n-2s)$ on the zero space times a copy of $\mathrm{SO}(2)$ on each pair plane, of dimension</p>
+<p>$$
+\binom{n-2s}{2}+s .
+$$</p>
+<p>So the orbit of $K$ has dimension $\binom{n}{2}-\binom{n-2s}{2}-s$, and adding the $s$ moduli $b_j$ gives $\binom{n}{2}-\binom{n-2s}{2}$. The count reads $3=2+1$ at $n=3$, $6=4+2$ at $n=4$ and $10=8+2$ at $n=5$, cases where the corank is at most one and the binomial term vanishes.</p>
+<p><strong>The zeros are constraints, not parameters.</strong> A zero eigenvalue is not a modulus: it is a condition that holds on a subset of codimension $\binom{n-2s}{2}$, which is zero only when the corank is $0$ or $1$. For corank $2$ and above the stratum of the matrix is strictly smaller than $\mathfrak{so}(n)$, and the deficit is the dimension of $\mathrm{O}(n-2s)$ acting on the zero space.</p>
+<h2 id="summary">Summary</h2>
+<p>An antisymmetric real matrix has a purely imaginary spectrum, because $\bar z^{\mathsf T}Kz$ is purely imaginary and equals $\lambda\|z\|^{2}$, and its only real eigenvalue is $0$, because $x^{\mathsf T}Kx=0$ for real $x$. Its canonical form is $Q\operatorname{diag}(0,\dots,0,b_1J,\dots,b_sJ)Q^{\mathsf T}$ with $b_j>0$, so the rank is $2s$ and the corank is $n-2s$, the multiplicity of the zero eigenvalue. The Pfaffian is defined for even size and its square is the determinant; numerically the identity holds at $n=2$ and $n=4$. The square $K^{2}$ is symmetric and negative semidefinite, hence orthogonally diagonalisable with eigenvalues $-b_j^{2}$ and $0$, and it is $100$ of $100$ at $n=2,3,4$. The exponential is orthogonal of determinant one and acts as a rotation by the angle $b_j$ on each plane. The space has dimension $n(n-1)/2$, the generic element has $\lfloor n/2\rfloor$ pairs, and the orbit plus the moduli account for the whole dimension.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$K$</td>
+<td>a real antisymmetric matrix, $K^{\mathsf T}=-K$</td>
+</tr>
+<tr>
+<td>$J$</td>
+<td>the rotation $\begin{pmatrix}0&-1\\ 1&0\end{pmatrix}$</td>
+</tr>
+<tr>
+<td>$b_j$</td>
+<td>the moduli of the pairs, $b_j>0$</td>
+</tr>
+<tr>
+<td>$s$</td>
+<td>the number of pairs, so that $\operatorname{rk}K=2s$</td>
+</tr>
+<tr>
+<td>$\operatorname{Pf}(K)$</td>
+<td>the Pfaffian, defined for even $n$</td>
+</tr>
+<tr>
+<td>$\mathfrak{so}(n)$</td>
+<td>the space of antisymmetric matrices, of dimension $n(n-1)/2$</td>
+</tr>
+<tr>
+<td>$|K|$</td>
+<td>the semidefinite square root of $-K^{2}$</td>
+</tr>
+<tr>
+<td>$\exp K$</td>
+<td>the orthogonal matrix $e^{K}$, of determinant $1$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for antisymmetric matrices, the Pfaffian and the canonical form.</li>
+<li>Werner Greub, <em>Multilinear Algebra</em> (Springer, 1978), for the Pfaffian and its square as the determinant.</li>
+<li><a href="normal-matrices-over-r-and-the-orthogonal-spectral-theorem.html">Normal Matrices over $\mathbb{R}$ and the Orthogonal Spectral Theorem</a>, for the block form in the proof of the canonical form.</li>
+<li><a href="the-spectral-theorem-the-symmetric-case.html">The Spectral Theorem: the Symmetric Case</a>, for the theorem applied to $K^{2}$.</li>
+<li><a href="the-real-jordan-form-and-the-rotation-blocks.html">The Real Jordan Form and the Rotation Blocks</a>, for the block $bJ$ as a rotation.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

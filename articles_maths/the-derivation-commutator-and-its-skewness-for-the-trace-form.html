@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Derivation $X\mapsto[A,X]$ and Its Skewness for the Trace Form — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-derivation-math0-and-its-skewness-for-the-trace-form"><strong>The Derivation $X\mapsto[A,X]$ and Its Skewness for the Trace Form</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The map $\operatorname{ad}_A(X)=[A,X]$ is a derivation of $M_2(\mathbb{C})$ for every $A$, it is skew for the trace form for every $A$, and it is skew for the Hilbert–Schmidt form exactly when $A$ is antisymmetric.</strong></p>
+<p>The article proves the Leibniz rule, the representation property $\operatorname{ad}_{[A,B]}=[\operatorname{ad}_A,\operatorname{ad}_B]$, the skewness of $\operatorname{ad}_A$ for the trace form, the formula $\operatorname{ad}_A^{\mathrm{HS}*}=\operatorname{ad}_{A^{\mathsf T}}$, the spectrum of $\operatorname{ad}_A$ as the two differences of the eigenvalues, the identification of the kernel with the centre and the dimension of the space of inner derivations, and the nilpotency of $\operatorname{ad}_A$ for a nilpotent $A$. It assumes <em>The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$</em> and <em>The Lie Algebra $\operatorname{Skew}_2$: One Dimension, Hence Abelian</em>.</p>
+<p>It defers the Killing form to <em>The Killing Form of $\mathfrak{sl}_2$ and Its Three Signatures</em>, the Hilbert–Schmidt form to <em>The Hilbert–Schmidt Form at $n=2$</em>, and the operator viewpoint to <em>The One-Sided Operators at $n=2$</em>.</p>
+<h2 id="the-commutator-is-a-derivation">The Commutator Is a Derivation</h2>
+<p><strong>Theorem.</strong> For every $A$ the map $\operatorname{ad}_A(X)=[A,X]$ satisfies the Leibniz rule</p>
+<p>$$
+[A,XY]=[A,X]\,Y+X\,[A,Y].
+$$</p>
+<p><strong>Proof.</strong> Expand: $[A,XY]=AXY-XYA$ and the right side is $AXY-XAY+XAY-XYA$, which is the same.</p>
+<p><strong>Corollary.</strong> $\operatorname{ad}_A$ is a derivation of the associative algebra, and it is traceless as an operator on the algebra because its values lie in the traceless subspace.</p>
+<p><strong>Proof.</strong> The Leibniz rule is the derivation property; and $\operatorname{tr}([A,X])=0$ for every $X$, so every value of $\operatorname{ad}_A$ is traceless.</p>
+<p><strong>Corollary.</strong> $\operatorname{ad}_A$ annihilates the identity and preserves the traceless subspace $\mathfrak{sl}_2$.</p>
+<p><strong>Proof.</strong> $[A,I]=0$, and the traceless matrices are exactly the kernel of the trace, which $\operatorname{ad}_A$ respects since its images are traceless.</p>
+<h2 id="the-adjoint-representation">The Adjoint Representation</h2>
+<p><strong>Theorem.</strong> The map $A\mapsto\operatorname{ad}_A$ is a representation of the Lie algebra $\mathfrak{gl}_2$:</p>
+<p>$$
+\operatorname{ad}_{[A,B]}=[\operatorname{ad}_A,\operatorname{ad}_B].
+$$</p>
+<p><strong>Proof.</strong> Both sides applied to $X$ give $[[A,B],X]$ and $[A,[B,X]]-[B,[A,X]]$, which are equal by the Jacobi identity.</p>
+<p><strong>Corollary.</strong> The map $\operatorname{ad}$ is a homomorphism of Lie algebras with kernel the centre $\mathbb{C}I$, so its image is a Lie algebra of dimension $3$ over $\mathbb{C}$.</p>
+<p><strong>Proof.</strong> $\operatorname{ad}_A=0$ iff $A$ commutes with the whole algebra iff $A$ is scalar; the domain has dimension $4$ and the kernel has dimension $1$.</p>
+<p><strong>The kernel is the centre and nothing else.</strong> At order two the central simple algebra has a one-dimensional centre, so the adjoint representation is faithful exactly on the traceless part.</p>
+<p><strong>Proof.</strong> The scalar matrices commute with everything and no other matrix does, since the algebra is simple.</p>
+<h2 id="skewness-for-the-trace-form">Skewness for the Trace Form</h2>
+<p><strong>Theorem.</strong> For every $A$ and all $X,Y$,</p>
+<p>$$
+\operatorname{tr}\bigl([A,X]\,Y\bigr)+\operatorname{tr}\bigl(X\,[A,Y]\bigr)=0 .
+$$</p>
+<p><strong>Proof.</strong> $\operatorname{tr}([A,X]Y)=\operatorname{tr}(AXY)-\operatorname{tr}(XAY)=\operatorname{tr}(A[XY])$ using cyclicity, and $\operatorname{tr}(X[A,Y])=\operatorname{tr}(XAY)-\operatorname{tr}(XYA)=-\operatorname{tr}(A[XY])$ by the same cyclicity; the sum vanishes.</p>
+<p><strong>Corollary.</strong> Every $\operatorname{ad}_A$ is skew for the trace form, so the image of $\operatorname{ad}$ lies in the Lie algebra of the orthogonal group of the trace form, which is $\mathfrak{so}(3,1)$.</p>
+<p><strong>Proof.</strong> The skewness is the theorem, and the Lie algebra of the orthogonal group of a form of signature $(3,1)$ is the set of skew endomorphisms.</p>
+<p><strong>The trace form cannot detect the skewness condition.</strong> Here the freedom is total: no hypothesis on $A$ is needed, because the trace is invariant under the cyclic permutation of three factors, and the invariance is what produces the skewness.</p>
+<p><strong>Proof.</strong> The proof above uses only cyclicity, with no symmetry of $A$.</p>
+<h2 id="skewness-for-the-hilbertschmidt-form">Skewness for the Hilbert–Schmidt Form</h2>
+<p><strong>Theorem.</strong> For the Hilbert–Schmidt form $\langle X,Y\rangle=\operatorname{tr}(X^{*}Y)$ the adjoint of $\operatorname{ad}_A$ is $\operatorname{ad}_{A^{\mathsf T}}$.</p>
+<p><strong>Proof.</strong> $\langle[A,X],Y\rangle=\operatorname{tr}((AX-XA)^{*}Y)=\operatorname{tr}(X^{*}A^{*}Y)-\operatorname{tr}(A^{*}X^{*}Y)$ and $\langle X,[A^{\mathsf T},Y]\rangle=\operatorname{tr}(X^{*}A^{\mathsf T}Y)-\operatorname{tr}(X^{*}YA^{\mathsf T})$; the two agree after cyclicity.</p>
+<p><strong>Corollary.</strong> $\operatorname{ad}_A$ is skew for the Hilbert–Schmidt form exactly when $A$ is antisymmetric, and it is self-adjoint exactly when $A$ is symmetric.</p>
+<p><strong>Proof.</strong> $\operatorname{ad}_{A^{\mathsf T}}=-\operatorname{ad}_A$ iff $A^{\mathsf T}=-A$, since $\operatorname{ad}$ is injective on the traceless part and the antisymmetric matrices are traceless.</p>
+<p><strong>The two forms divide the algebra.</strong> The trace form sees every derivation as skew, while the Hilbert–Schmidt form separates the symmetric directions, where the derivation is self-adjoint, from the antisymmetric direction, where it is skew.</p>
+<h2 id="the-spectrum-of-math68">The Spectrum of $\operatorname{ad}_A$</h2>
+<p><strong>Theorem.</strong> If $A$ has eigenvalues $\lambda_{1},\lambda_{2}$ then $\operatorname{ad}_A$ has eigenvalues $0,0,\lambda_{1}-\lambda_{2},\lambda_{2}-\lambda_{1}$, with the two zeros on the eigen-directions $E_{11}$ and $E_{22}$.</p>
+<p><strong>Proof.</strong> In the basis of matrix units, $\operatorname{ad}_A(E_{ij})=(\lambda_{i}-\lambda_{j})E_{ij}$, so the four eigenvalues are the four differences, two of which vanish on the diagonal units.</p>
+<p><strong>Corollary.</strong> The trace of $\operatorname{ad}_A$ is zero and the determinant of $\operatorname{ad}_A$ is zero, and the rank of $\operatorname{ad}_A$ is $2$ when the two eigenvalues differ and $0$ when they coincide.</p>
+<p><strong>Proof.</strong> The four eigenvalues sum to zero and contain two zeros; the rank is the number of nonzero eigenvalues.</p>
+<p><strong>Corollary.</strong> The spectrum of $\operatorname{ad}_A$ is real for every complex matrix $A$ whose eigenvalues are real, and it is purely imaginary for a skew-Hermitian $A$ with imaginary eigenvalues.</p>
+<p><strong>Proof.</strong> The differences of two real numbers are real, and the differences of two purely imaginary numbers are purely imaginary.</p>
+<h2 id="the-kernel-and-the-inner-derivations">The Kernel and the Inner Derivations</h2>
+<p><strong>Theorem.</strong> Every derivation of $M_2(\mathbb{C})$ is inner, and the space of derivations is $\mathfrak{sl}_2(\mathbb{C})$, of dimension $3$.</p>
+<p><strong>Proof.</strong> The algebra is central simple, so every derivation is of the form $\operatorname{ad}_A$; the kernel of $\operatorname{ad}$ is the centre, so the space of derivations is the quotient by the scalars, which is $\mathfrak{sl}_2$.</p>
+<p><strong>Corollary.</strong> The commutator subspace of $M_2(\mathbb{C})$ is $\mathfrak{sl}_2(\mathbb{C})$, of dimension $3$, and the commutator of two matrix units is another matrix unit or zero.</p>
+<p><strong>Proof.</strong> The commutators span the traceless part, and $[E_{ij},E_{kl}]=\delta_{jk}E_{il}-\delta_{li}E_{kj}$.</p>
+<p><strong>The derivations of the two halves.</strong> A derivation that preserves the symmetric half is the restriction of some $\operatorname{ad}_A$ with $A$ antisymmetric, and at order two that space is one-dimensional.</p>
+<p><strong>Proof.</strong> The antisymmetric matrices form the line $\mathbb{R}J$, and $\operatorname{ad}_J$ is the single derivation of the symmetric half into itself up to scale.</p>
+<h2 id="the-nilpotent-case">The Nilpotent Case</h2>
+<p><strong>Theorem.</strong> If $A$ is nilpotent then $\operatorname{ad}_A$ is nilpotent, and at order two its index is $3$.</p>
+<p><strong>Proof.</strong> For $A=E_{12}$ the eigenvalues of $A$ coincide, so all four eigenvalues of $\operatorname{ad}_A$ vanish; a direct computation gives $\operatorname{ad}_{E_{12}}^{2}\neq0$ and $\operatorname{ad}_{E_{12}}^{3}=0$.</p>
+<p><strong>Corollary.</strong> The derivation attached to a nilpotent element lies in the nilpotent cone of $\mathfrak{gl}(\mathfrak{gl}_2)$, and its powers cut the algebra into the filtration of the associated graded space.</p>
+<p><strong>Proof.</strong> The vanishing of the cube is the statement, and the filtration by the kernels of the powers is the standard one.</p>
+<p><strong>The matrix of $\operatorname{ad}_{E_{12}}$.</strong> In the basis $I,\sigma_{3},\sigma_{1},J$ the operator is</p>
+<p>$$
+\operatorname{ad}_{E_{12}}=\begin{pmatrix}0&0&0&0\\ 0&0&1&-1\\ 0&-1&0&0\\ 0&-1&0&0\end{pmatrix}.
+$$</p>
+<p><strong>Proof.</strong> The columns are the coordinates of the images of the four basis elements, computed with $E_{12}I-IE_{12}=E_{12}$ and $E_{12}J-JE_{12}=-\sigma_{3}$.</p>
+<p><strong>Corollary.</strong> The image of $\operatorname{ad}_{E_{12}}$ is two-dimensional, spanned by $\sigma_{3}$ and $\sigma_{1}+J$, and its kernel is the same span together with $I$.</p>
+<p><strong>Proof.</strong> Read the column space and the null space of the displayed matrix.</p>
+<h2 id="summary">Summary</h2>
+<p>$\operatorname{ad}_A(X)=[A,X]$ is a derivation for every $A$, the map $A\mapsto\operatorname{ad}_A$ is a representation of $\mathfrak{gl}_2$ with kernel the scalars, and every derivation of $M_2(\mathbb{C})$ is inner, so the derivations form $\mathfrak{sl}_2(\mathbb{C})$ of dimension $3$.</p>
+<p>For the trace form every $\operatorname{ad}_A$ is skew, with no condition on $A$, while for the Hilbert–Schmidt form the adjoint is $\operatorname{ad}_{A^{\mathsf T}}$, which makes the derivation skew for antisymmetric $A$ and self-adjoint for symmetric $A$. The spectrum of $\operatorname{ad}_A$ is $0,0,\pm(\lambda_{1}-\lambda_{2})$, and for a nilpotent element the derivation is nilpotent of index $3$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{ad}_A$</td>
+<td>the derivation $X\mapsto[A,X]$</td>
+</tr>
+<tr>
+<td>$[A,B]$</td>
+<td>the commutator $AB-BA$</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}(X^{*}Y)$</td>
+<td>the Hilbert–Schmidt form</td>
+</tr>
+<tr>
+<td>$\operatorname{ad}_A^{\mathrm{HS}*}$</td>
+<td>the adjoint for the Hilbert–Schmidt form</td>
+</tr>
+<tr>
+<td>$\mathfrak{sl}_2$</td>
+<td>the traceless matrices, the space of derivations</td>
+</tr>
+<tr>
+<td>$E_{ij}$</td>
+<td>the matrix units</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nathan Jacobson, <em>Lie Algebras</em> (Dover, 1979), for inner derivations of central simple algebras and the Jacobi identity.</li>
+<li>James E. Humphreys, <em>Introduction to Lie Algebras and Representation Theory</em> (Springer, 1972), for the adjoint representation and the Killing form.</li>
+<li><a href="the-lie-algebra-skew-2-one-dimension-hence-abelian.html">The Lie Algebra $\operatorname{Skew}_2$: One Dimension, Hence Abelian</a>, for the antisymmetric line on which the derivation is skew.</li>
+<li><a href="the-two-halves-over-r-symmetric-and-antisymmetric-at-n-2.html">The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$</a>, for the splitting that the two forms detect.</li>
+<li><a href="the-four-multiplication-tables-ss-sk-ks-kk-at-n-2.html">The Four Multiplication Tables: $SS$, $SK$, $KS$, $KK$ at $n=2$</a>, for the products used in the computation of the matrix of $\operatorname{ad}_{E_{12}}$.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

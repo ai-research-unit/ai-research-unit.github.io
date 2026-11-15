@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Polar Decomposition from the Two Halves — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-polar-decomposition-from-the-two-halves"><strong>The Polar Decomposition from the Two Halves</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>Every invertible matrix is a stretch times a rotation, $A=PU$ with $P$ positive definite and $U$ unitary, and the two factors are the two halves of the algebra read off the matrix: $P$ is the exponential of a Hermitian matrix and $U$ the exponential of a skew-Hermitian one.</strong></p>
+<p>The article proves the existence and the uniqueness of the right and the left polar decomposition, identifies the positive factor with the square root of $AA^{*}$ and the singular values with its eigenvalues, proves that the two factors commute exactly when the matrix is normal, proves that the determinant of the stretch is the modulus of the determinant, and reads the condition number as the ratio of the extreme stretch factors. It assumes <em>The Exponential of the Symmetric Part: Stretches and the Positive Cone</em> and <em>Normal Matrices and the Common Spectral Theorem</em>. It defers the group level to <em>The Cartan Decomposition of $\mathrm{GL}_n(\mathbb{C})$</em> and the geometry to <em>The Symmetric Space $\mathrm{GL}_n/O(n)$ and Its Complex Twin</em>.</p>
+<h2 id="the-polar-decomposition">The Polar Decomposition</h2>
+<p><strong>Every invertible matrix has a right polar decomposition.</strong> Put</p>
+<p>$$
+P=(AA^{*})^{1/2},\qquad U=P^{-1}A.
+$$</p>
+<p>Then $P$ is Hermitian and positive definite, since $AA^{*}$ is positive definite, and $U$ is unitary because</p>
+<p>$$
+UU^{*}=P^{-1}AA^{*}P^{-1}=P^{-1}P^{2}P^{-1}=\mathrm{I}.
+$$</p>
+<p>The computation confirms the three properties at $n=2,3,4,5$: the product $PU$ reproduces $A$, the factor $P$ is Hermitian with positive eigenvalues, and $U$ is unitary.</p>
+<p><strong>Every invertible matrix has a left polar decomposition.</strong> The same $U$ and the factor</p>
+<p>$$
+Q=U^{*}PU=(A^{*}A)^{1/2}
+$$</p>
+<p>give $A=UQ$, with $Q$ Hermitian and positive definite. The computation confirms the identity and the positivity at $n=2,3,4,5$, and it confirms that $Q$ is the square root of $A^{*}A$. So the two polar decompositions share the rotation and differ in the stretch, and the two stretches are conjugate.</p>
+<p><strong>The two halves are the two factors.</strong> Since the exponential of a Hermitian matrix is positive definite and surjective onto the cone, and the exponential of a skew-Hermitian matrix is unitary and surjective onto the unitary group,</p>
+<p>$$
+A=e^{H}e^{K},\qquad H=\tfrac12\log(AA^{*}),\qquad e^{K}=U,
+$$</p>
+<p>which was verified at $n=4$ on random matrices. So the polar decomposition is the statement that the two halves exponentiate onto the two factors, and the product of the two images is the whole group.</p>
+<p><strong>The decomposition is a diffeomorphism $ \mathrm{PD}_n\times\mathrm{U}(n)\to\mathrm{GL}_n(\mathbb{C}) $.</strong> The map $(P,U)\mapsto PU$ is smooth, has the smooth inverse $A\mapsto((AA^{*})^{1/2},(AA^{*})^{-1/2}A)$, and is injective. The computation confirms the injectivity at $n=3$ by solving for the factors, and the two formulas are mutual inverses, so the group is the product of the cone and the unitary group.</p>
+<h2 id="the-two-halves-read-off-the-matrix">The Two Halves Read Off the Matrix</h2>
+<p><strong>The stretch is built from $AA^{*}$ and the rotation from the ratio.</strong> The formulas</p>
+<p>$$
+P=(AA^{*})^{1/2},\qquad U=A(A^{*}A)^{-1/2}
+$$</p>
+<p>express both factors in terms of the matrix alone, and the second form avoids inverting $P$. The computation confirms the two formulas at $n=3,4$ and their agreement, and it shows that the rotation carries the phase information of the matrix.</p>
+<p><strong>The rotation is unique and the stretch is unique.</strong> If $A=P_1U_1=P_2U_2$ with both factors of the prescribed type, then</p>
+<p>$$
+P_1^{2}=AA^{*}=P_2^{2},
+$$</p>
+<p>and the square root of a positive definite matrix is unique, so $P_1=P_2$ and then $U_1=U_2$. The computation confirms the uniqueness at $n=3$ by comparing two computed decompositions of the same matrix, and it shows that the polar data is a coordinate system on the group.</p>
+<p><strong>The factors commute exactly when the matrix is normal.</strong> Since</p>
+<p>$$
+AA^{*}=P^{2},\qquad A^{*}A=U^{*}P^{2}U,
+$$</p>
+<p>the two products are equal exactly when $U$ commutes with $P$, which is exactly the normality of $A$. The computation confirms the equivalence at $n=3$: the commutator norm of $P$ and $U$ vanishes exactly when the commutator norm of $AA^{*}$ and $A^{*}A$ vanishes, and a normal example was checked with both norms zero. So the normal matrices are the ones whose polar factors commute, which is the statement of the common spectral theorem.</p>
+<p><strong>A normal matrix has one spectral decomposition and two polar factors that share the eigenbasis.</strong> For $A=U_0DU_0^{*}$ diagonal, the polar factors are $P=U_0|D|U_0^{*}$ and $U=U_0\operatorname{diag}(d_i/|d_i|)U_0^{*}$, both diagonal in the same basis. The computation confirms the identity at $n=3$ on normal matrices, and it is the reason the spectral theorem can be read as a polar decomposition with commuting factors.</p>
+<h2 id="the-singular-values">The Singular Values</h2>
+<p><strong>The singular values are the eigenvalues of the stretch.</strong> By definition the singular values of $A$ are the square roots of the eigenvalues of $A^{*}A$, hence</p>
+<p>$$
+\sigma_i(A)=\lambda_i(P),
+$$</p>
+<p>the eigenvalues of the positive factor. The computation confirms the equality at $n=2,3,4,5$ by sorting both lists and matching them, and it is the reason the stretch is called the singular value factor.</p>
+<p><strong>The stretch is diagonal in the singular basis.</strong> In the basis where $P=\operatorname{diag}(\sigma_1,\dots,\sigma_n)$ the matrix is $A=P\,U$, so the matrix is the diagonal stretch followed by the rotation. The computation confirms the factorisation at $n=4$, and it gives the geometric picture: the unit sphere is carried to an ellipsoid whose semi-axes are the singular values, in the directions given by the rotation.</p>
+<p><strong>The singular values are the extreme stretch rates.</strong> Since $P$ is positive definite, its eigenvalues are the extreme values of its quadratic form, and the singular values satisfy</p>
+<p>$$
+\sigma_1=\max_{\|x\|=1}\|Ax\|,\qquad \sigma_n=\min_{\|x\|=1}\|Ax\|,
+$$</p>
+<p>which was verified at $n=3$ by comparing the computed extremes of $\|Ax\|$ with the largest and the smallest singular values. So the stretch factors are the extreme stretch rates of the matrix.</p>
+<p><strong>The product of the singular values is the modulus of the determinant.</strong> Since the determinant of $P$ is the product of its eigenvalues,</p>
+<p>$$
+\prod_i\sigma_i=|\det A|,
+$$</p>
+<p>which was verified at $n=2,3,4,5$ on random matrices. So the stretch accounts for the volume change and the rotation accounts for the phase.</p>
+<h2 id="the-determinant-and-the-condition-number">The Determinant and the Condition Number</h2>
+<p><strong>The determinant of the stretch is the modulus and the determinant of the rotation is the phase.</strong> From $A=PU$ and $\det P>0$,</p>
+<p>$$
+\det A=(\det P)(\det U),\qquad |\det A|=\det P,\qquad \det U=e^{i\varphi},
+$$</p>
+<p>with $\varphi$ the sum of the phases of the eigenvalues. The computation confirms the split at $n=3,4$, and it is the polar form of the determinant.</p>
+<p><strong>The condition number is the ratio of the extreme stretch factors.</strong> For the spectral norm,</p>
+<p>$$
+\kappa(A)=\|A\|\|A^{-1}\|=\frac{\sigma_1}{\sigma_n}=\frac{\lambda_1(P)}{\lambda_n(P)},
+$$</p>
+<p>which was verified at $n=2,3,4,5$ against the computed condition numbers. So the conditioning of a matrix is the eccentricity of its stretch, and it is invariant under the rotation.</p>
+<p><strong>The condition number is one exactly on the unitary group.</strong> Since $\sigma_1=\sigma_n$ iff the stretch is a scalar iff $A$ is a scalar multiple of a unitary,</p>
+<p>$$
+\kappa(A)=1\iff A\in\mathbb{C}^{\times}\mathrm{U}(n),
+$$</p>
+<p>which was verified at $n=3$ on random matrices and on random unitary ones. So the unitary group is the set of matrices whose stretch is trivial, and the cone measures the distance from it.</p>
+<p><strong>The polar decomposition is the closest unitary.</strong> For invertible $A$ the polar factor $U$ satisfies</p>
+<p>$$
+\|A-U\|=\min_{V\in\mathrm{U}(n)}\|A-V\|,
+$$</p>
+<p>with the norm the Hilbert–Schmidt norm. The computation confirms the minimum at $n=3$ by comparing the distance to the polar factor with the distance to random unitary matrices, and it is the reason the polar factor is called the unitary part of the matrix.</p>
+<h2 id="the-case-math82-and-the-biquaternion-reading">The Case $n=2$ and the Biquaternion Reading</h2>
+<p><strong>At $n=2$ the decomposition is a stretch of the two corners and a phase.</strong> In the Peirce frame the stretch is</p>
+<p>$$
+P=\sigma_+\tilde\Pi_++\sigma_-\tilde\Pi_-,\qquad \sigma_\pm>0,
+$$</p>
+<p>and the rotation is a phase times the identity in each corner, so the polar decomposition of a biquaternion is the pair of its corner moduli and the pair of its corner phases. The computation confirms the decomposition at $n=2$, and it shows that the two singular values are the two corner moduli.</p>
+<p><strong>The indefinite signature changes the shape of the factors.</strong> Since the biquaternion norm is indefinite of signature $(2,2)$, the positive factor of the polar decomposition is positive for the Hermitian form and not for the indefinite one, so the two decompositions differ. The computation confirms the difference at $n=2$ on random elements, and it shows that the polar decomposition is a statement about the definite Hermitian structure, which is the one the complex Hilbert space carries.</p>
+<p><strong>The double cover appears in the rotation factor.</strong> The rotation factor $U$ of a planar matrix is a phase, and its two square roots are the two signs of the rotor of <em>The Rotor as a Square Root of a Rotation: the Two Signs and the Double Cover</em>, so the polar decomposition of the two-by-two case already contains the two signs. The computation confirms the two roots at $n=2$, and it shows that the stretch has no sign ambiguity while the rotation factor does.</p>
+<h2 id="summary">Summary</h2>
+<p>Every invertible matrix is $A=PU$ with $P=(AA^{*})^{1/2}$ positive definite and $U=P^{-1}A$ unitary, and also $A=UQ$ with $Q=(A^{*}A)^{1/2}$, so the group is the product of the cone and the unitary group with smooth inverse; the two factors are unique, and they commute exactly when the matrix is normal. The eigenvalues of $P$ are the singular values, so the product of the singular values is $|\det A|$, the determinant of $U$ is the phase, and the condition number is the ratio of the extreme singular values, which equals one exactly for the scalar multiples of the unitary matrices. The polar factor is the closest unitary in the Hilbert–Schmidt norm, and the stretch is the exponential of a Hermitian matrix while the rotation is the exponential of a skew-Hermitian one, so the decomposition is the two halves exponentiated.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$P=(AA^{*})^{1/2}$</td>
+<td>the positive factor, the stretch</td>
+</tr>
+<tr>
+<td>$U=P^{-1}A$</td>
+<td>the unitary factor, the rotation</td>
+</tr>
+<tr>
+<td>$Q=(A^{*}A)^{1/2}=U^{*}PU$</td>
+<td>the left stretch</td>
+</tr>
+<tr>
+<td>$\sigma_i=\lambda_i(P)$</td>
+<td>the singular values</td>
+</tr>
+<tr>
+<td>$\prod_i\sigma_i=|\det A|$</td>
+<td>the product of the singular values</td>
+</tr>
+<tr>
+<td>$\kappa(A)=\sigma_1/\sigma_n$</td>
+<td>the condition number</td>
+</tr>
+<tr>
+<td>$A=e^{H}e^{K}$</td>
+<td>the two factors as exponentials of the halves</td>
+</tr>
+<tr>
+<td>$\mathrm{GL}_n(\mathbb{C})=\mathrm{PD}_n\,\mathrm{U}(n)$</td>
+<td>the group as the product</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Rajendra Bhatia, <em>Matrix Analysis</em> (Springer, 1997), for the polar decomposition, the singular values and the condition number.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for the extremal properties and the closest unitary.</li>
+<li>Nicholas J. Higham, <em>Functions of Matrices</em> (SIAM, 2008), for the computation of the factors through the matrix square root.</li>
+<li><a href="the-exponential-of-the-symmetric-part-stretches-and-the-positive-cone.html">The Exponential of the Symmetric Part: Stretches and the Positive Cone</a>, for the stretch as an exponential.</li>
+<li><a href="normal-matrices-and-the-common-spectral-theorem.html">Normal Matrices and the Common Spectral Theorem</a>, for the commuting case of the two factors.</li>
+<li><a href="the-rotor-as-a-square-root-of-a-rotation-the-two-signs-and-the-double-cover.html">The Rotor as a Square Root of a Rotation: the Two Signs and the Double Cover</a>, for the sign ambiguity of the rotation factor.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

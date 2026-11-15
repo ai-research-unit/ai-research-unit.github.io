@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Fine Decomposition against the Diagonal — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-fine-decomposition-against-the-diagonal"><strong>The Fine Decomposition against the Diagonal</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The diagonal subalgebra and the coordinate lines cut $M_n(\mathbb{R})$ into $n+n(n-1)$ pieces of dimension one each, and this cut is finer and more informative than the split into symmetric and antisymmetric matrices.</strong></p>
+<p>The article proves the direct sum, computes the weights of the diagonal action on each line, identifies the index group of the grading, pairs the lines into two-dimensional planes, proves that the action of the diagonal on each plane is diagonal with real weights, and writes the cases $n=2$ and $n=3$ in full. It assumes <em>The Peirce Decomposition in $n$ Dimensions</em> for the general Peirce formalism and <em>The Two Halves: Symmetric and Antisymmetric</em> for the transpose. It prepares <em>The Triangular Decomposition $h\oplus n_+\oplus n_-$</em>, which groups the lines by the sign of the weight.</p>
+<h2 id="the-diagonal-subalgebra">The Diagonal Subalgebra</h2>
+<p><strong>Definition.</strong> $h$ is the set of diagonal matrices,</p>
+<p>$$
+h=\Bigl\{\operatorname{diag}(a_1,\dots,a_n):a_k\in\mathbb{R}\Bigr\}=\operatorname{span}\{E_{11},\dots,E_{nn}\}.
+$$</p>
+<p><strong>The diagonal is a commutative subalgebra of dimension $n$.</strong> The product of two diagonal matrices is diagonal, the product is commutative, and the $n$ matrix units $E_{ii}$ are linearly independent. So $h\cong\mathbb{R}^{n}$ as an algebra, and $h$ is a maximal commutative subalgebra: a matrix commuting with every $E_{ii}$ is diagonal.</p>
+<p><strong>The units $E_{ii}$ are orthogonal idempotents summing to the identity.</strong> $E_{ii}^{2}=E_{ii}$, $E_{ii}E_{jj}=0$ for $i\ne j$, and $\sum_{k}E_{kk}=\mathrm{I}$. They are a complete family of $n$ orthogonal idempotents in the sense of <em>The Peirce Decomposition in $n$ Dimensions</em>, and $h$ is the span of the family.</p>
+<h2 id="the-coordinate-lines">The Coordinate Lines</h2>
+<p><strong>Definition.</strong> For $i\ne j$ put $L_{ij}=\mathbb{R}E_{ij}$. There are $n(n-1)$ such lines, each of dimension one.</p>
+<p><strong>The lines and the diagonal span the whole algebra.</strong> The entries of a matrix are its coordinates in the basis of matrix units, so</p>
+<p>$$
+M_n(\mathbb{R})=h+\sum_{i\ne j}L_{ij},
+$$</p>
+<p>and the sum is direct because the $n^{2}$ matrix units are a basis. The dimension count is</p>
+<p>$$
+n+n(n-1)=n+n^{2}-n=n^{2}.
+$$</p>
+<p><strong>Measured, the direct sum has the right dimension.</strong> On the diagonal units together with all the off-diagonal units, the span has dimension $4$ at $n=2$ and $9$ at $n=3$, equal to $n^{2}$ in each case, and equal to $n+n(n-1)$.</p>
+<p><strong>This is the Peirce decomposition relative to the diagonal family.</strong> The Peirce space of the pair $(E_{ii},E_{jj})$ is $E_{ii}M_n(\mathbb{R})E_{jj}=L_{ij}$ for $i\ne j$, and the diagonal Peirce space of $E_{ii}$ is $E_{ii}M_n(\mathbb{R})E_{ii}=\mathbb{R}E_{ii}$. So the fine decomposition is the Peirce decomposition for the diagonal family, and every Peirce piece is one-dimensional. A choice of one element in each piece is a Peirce basis, the subject of <em>The Peirce Basis in $n$ Dimensions</em>.</p>
+<h2 id="the-weights">The Weights</h2>
+<p><strong>The diagonal acts on each line by a character.</strong> For $H=\operatorname{diag}(a_1,\dots,a_n)$ and $i\ne j$,</p>
+<p>$$
+HE_{ij}=a_iE_{ij},\qquad E_{ij}H=a_jE_{ij},\qquad [H,E_{ij}]=(a_i-a_j)E_{ij}.
+$$</p>
+<p>So $L_{ij}$ is a simultaneous eigenline for the whole of $h$, under left multiplication with the weight $a_i$, under right multiplication with the weight $a_j$, and under the adjoint action with the weight $a_i-a_j$.</p>
+<p><strong>Write $\varepsilon_k$ for the linear form $H\mapsto a_k$.</strong> Then the weight of $L_{ij}$ under the adjoint action is $\varepsilon_i-\varepsilon_j$, and the forms $\varepsilon_1,\dots,\varepsilon_n$ are a basis of the dual of $h$, with $\varepsilon_1+\dots+\varepsilon_n$ the trace.</p>
+<p><strong>The weights are real.</strong> They are evaluations of the diagonal entries. Measured at $n=2$ and $n=3$, every line is an eigenline of $\operatorname{ad}H$ for every diagonal $H$, with eigenvalue $a_i-a_j$ in each case.</p>
+<p><strong>The signs of the weights separate the lines into two camps.</strong> The lines with $\varepsilon_i-\varepsilon_j$ positive, that is $i<j$, are the ones above the diagonal; the lines with the opposite sign are those below. The article <em>The Triangular Decomposition $h\oplus n_+\oplus n_-$</em> collects the two camps into two nilpotent subalgebras.</p>
+<h2 id="the-fine-grading">The Fine Grading</h2>
+<p><strong>Definition.</strong> A decomposition $\mathfrak{g}=\bigoplus_{\alpha}\mathfrak{g}_{\alpha}$ indexed by an abelian group is a grading when $\mathfrak{g}_{\alpha}\mathfrak{g}_{\beta}\subseteq\mathfrak{g}_{\alpha+\beta}$. The decomposition above is a grading indexed by the subgroup of $h^{*}$ generated by the weights:</p>
+<p>$$
+\mathfrak{g}_{0}=h,\qquad \mathfrak{g}_{\varepsilon_i-\varepsilon_j}=L_{ij}.
+$$</p>
+<p><strong>The multiplication rule of matrix units is exactly the addition of weights.</strong> $\varepsilon_i-\varepsilon_j$ and $\varepsilon_k-\varepsilon_l$ add to a weight only when $j=k$, and then the sum is $\varepsilon_i-\varepsilon_l$, with</p>
+<p>$$
+E_{ij}E_{jl}=E_{il}.
+$$</p>
+<p>When $j\ne k$ the sum is not a weight and the product is zero. So the grading rule $\mathfrak{g}_{\alpha}\mathfrak{g}_{\beta}\subseteq\mathfrak{g}_{\alpha+\beta}$ holds, with the convention that $\mathfrak{g}_{\gamma}=0$ for a non-weight $\gamma$.</p>
+<p><strong>The index group has rank $n-1$.</strong> The weights $\varepsilon_i-\varepsilon_j$ span the hyperplane $\{\alpha:\alpha(1,\dots,1)=0\}$ in $h^{*}$, because their sum over any cycle vanishes. So the grading is by a free abelian group of rank $n-1$, the root lattice of type $A_{n-1}$, and not by $\mathbb{Z}^{n}$. For $n=2$ the group is $\mathbb{Z}$ and the two lines have the weights $+1$ and $-1$ in the coordinate $\varepsilon_1-\varepsilon_2$.</p>
+<p><strong>The fine grading is finer than the split into the diagonal and the off-diagonal part.</strong> That split has two pieces, of dimensions $n$ and $n^{2}-n$. The fine grading replaces the second piece by $n(n-1)$ lines. It says strictly more: it says which entry of the matrix a product of two matrix units can reach.</p>
+<h2 id="the-two-halves-seen-from-the-lines">The Two Halves Seen from the Lines</h2>
+<p><strong>The transpose acts on the lines and fixes the diagonal.</strong> $\sigma(E_{ii})=E_{ii}$ and $\sigma(L_{ij})=L_{ji}$. So the transpose is an involution of the index set: it fixes the diagonal pieces and it swaps each pair of opposite lines.</p>
+<p><strong>No line lies in $\operatorname{Sym}_n$ or in $\operatorname{Skew}_n$.</strong> For $i\ne j$ the unit $E_{ij}$ satisfies neither $E_{ij}^{\mathsf T}=E_{ij}$ nor $E_{ij}^{\mathsf T}=-E_{ij}$. What lies in the two halves are the combinations</p>
+<p>$$
+E_{ij}+E_{ji}\in\operatorname{Sym}_n,\qquad E_{ij}-E_{ji}\in\operatorname{Skew}_n,
+$$</p>
+<p>one line of each kind inside the plane $L_{ij}\oplus L_{ji}$.</p>
+<p><strong>The two decompositions cut the same planes in different directions.</strong> The fine grading cuts each plane $L_{ij}\oplus L_{ji}$ along its two coordinate axes. The symmetric and antisymmetric split cuts the same plane along its two diagonals. Neither cut refines the other: a coordinate axis is not contained in either half, and a diagonal is not contained in either line. The two decompositions are transverse.</p>
+<p><strong>The fine grading is the finer instrument for products.</strong> The symmetric and antisymmetric split is a grading by the group $\mathbb{Z}/2$ with the sign of the transpose, and it multiplies by the rule of the two halves: symmetric times symmetric need not be symmetric, so that split is not even a grading for the product. The fine grading is a grading for the product, because the multiplication rule of matrix units is the addition of weights.</p>
+<h2 id="the-pairs-of-lines">The Pairs of Lines</h2>
+<p><strong>The plane $P_{ij}=L_{ij}\oplus L_{ji}$ is stable under $h$.</strong> For $H$ diagonal, $HE_{ij}$ and $E_{ij}H$ are multiples of $E_{ij}$, and the same holds for $E_{ji}$. So the plane is an $h$-module, and it is the sum of two eigenlines.</p>
+<p><strong>The action on the plane is diagonal with the opposite weights.</strong> In the basis $(E_{ij},E_{ji})$ the operator $\operatorname{ad}H$ has the matrix</p>
+<p>$$
+\begin{pmatrix}a_i-a_j&0\\ 0&a_j-a_i\end{pmatrix}.
+$$</p>
+<p>So the plane carries the weight $\alpha=\varepsilon_i-\varepsilon_j$ and its negative $-\alpha$, and the two weights satisfy $\alpha+(-\alpha)=0$.</p>
+<p><strong>There are $n(n-1)/2$ planes, and they account for the whole off-diagonal part.</strong> Each unordered pair $\{i,j\}$ with $i<j$ gives one plane of dimension $2$, so</p>
+<p>$$
+n+\frac{n(n-1)}{2}\cdot2=n+n(n-1)=n^{2}.
+$$</p>
+<p><strong>The planes are not subalgebras, and their products land where the weights say.</strong> $E_{ij}E_{ji}=E_{ii}$ lies in $h$, and $E_{ij}^{2}=0$ because $j\ne i$. So the square of a plane lands in the diagonal, and the product of two different planes lands in a third plane or vanishes.</p>
+<h2 id="the-real-structure">The Real Structure</h2>
+<p><strong>Every weight is real, so every eigenline is defined over $\mathbb{R}$.</strong> The vectors $E_{ij}$ are real matrices, the weights $a_i-a_j$ are real numbers, and no complex number appears in the diagonalisation. The decomposition is therefore a decomposition of real vector spaces, not the restriction of a complex one.</p>
+<p><strong>The action on each plane has no rotation block.</strong> A real $2\times2$ operator is diagonalisable over $\mathbb{R}$ exactly when its eigenvalues are real. Here they are $\pm(\varepsilon_i-\varepsilon_j)$, so the operator is diagonal in the basis of lines, and no block of the form $\begin{pmatrix}c&-d\\ d&c\end{pmatrix}$ with $d\ne0$ occurs. The diagonal action on the off-diagonal part is a stretching along two axes, never a rotation.</p>
+<p><strong>A complex structure on the plane would do the opposite.</strong> If $J$ is an operator with $J^{2}=-\mathrm{I}$ on a real plane, its eigenvalues are $\pm i$ and its matrix is a rotation block. The algebra $\mathbb{C}$ acting on $\mathbb{R}^{2}$ by multiplication by $i$ is exactly that. The diagonal $h$ of $M_n(\mathbb{R})$ has no such summand, because its eigenvalues are real.</p>
+<p><strong>This is what the real form adds to the fine grading.</strong> Over $\mathbb{C}$ the same lines and the same weights exist, and the grading is the same. What changes is the spectrum of the elements of $h$: over $\mathbb{R}$ the diagonal is a maximal split torus, with real eigenvalues on every plane, and over $\mathbb{C}$ the split and the non-split directions are no longer distinguishable.</p>
+<h2 id="the-cases-math146-and-math147">The Cases $n=2$ and $n=3$</h2>
+<p><strong>At $n=2$ the decomposition is $4=2+2$.</strong> The pieces are</p>
+<p>$$
+\mathfrak{g}_{0}=\operatorname{span}\{E_{11},E_{22}\},\qquad \mathfrak{g}_{\varepsilon_1-\varepsilon_2}=\mathbb{R}E_{12},\qquad \mathfrak{g}_{\varepsilon_2-\varepsilon_1}=\mathbb{R}E_{21}.
+$$</p>
+<p>For $H=\operatorname{diag}(a,b)$ the weights are $a-b$ and $b-a$ on the two lines, and the two lines form the single plane $P_{12}$ of dimension $2$. The total is $2+2=4$, the dimension of $M_2(\mathbb{R})$.</p>
+<p><strong>At $n=3$ the decomposition is $9=3+6$.</strong> The pieces are</p>
+<p>$$
+\mathfrak{g}_{0}=\operatorname{span}\{E_{11},E_{22},E_{33}\},\qquad \mathfrak{g}_{\varepsilon_i-\varepsilon_j}=\mathbb{R}E_{ij}\quad(i\ne j),
+$$</p>
+<p>six lines of dimension one. The three planes are $P_{12}$, $P_{13}$, $P_{23}$, of total dimension $6$, and the total is $3+6=9$. The products follow the weights: $E_{12}E_{23}=E_{13}$, while $E_{12}E_{13}=0$ and $E_{13}E_{12}=0$.</p>
+<p><strong>The case $n=3$ shows that the index group has rank two.</strong> The six weights are $\pm(\varepsilon_1-\varepsilon_2)$, $\pm(\varepsilon_1-\varepsilon_3)$, $\pm(\varepsilon_2-\varepsilon_3)$, and the last is the sum of the first two with a sign: $(\varepsilon_2-\varepsilon_3)=(\varepsilon_1-\varepsilon_3)-(\varepsilon_1-\varepsilon_2)$. So the weights live in a lattice of rank $2$, drawn as the six nonzero elements of the hexagonal lattice $A_2$.</p>
+<p><strong>The pattern is the same at every order and the picture is the root system $A_{n-1}$.</strong> The lines are the root spaces, the planes are the pairs of opposite root spaces, and the diagonal is the Cartan subalgebra. What the article adds to the general theory is the explicit basis: the root vectors are the matrix units and the weights are differences of coordinate forms.</p>
+<h2 id="summary">Summary</h2>
+<p>The diagonal $h$ has dimension $n$ and the coordinate lines $L_{ij}=\mathbb{R}E_{ij}$ number $n(n-1)$, each of dimension one, and the algebra is their direct sum of dimension $n^{2}$, which is the Peirce decomposition relative to the diagonal family. The line $L_{ij}$ carries the weight $\varepsilon_i-\varepsilon_j$ for the adjoint action of $h$, and the multiplication of matrix units is the addition of weights, so the decomposition is a grading by the root lattice of rank $n-1$. The lines pair into $n(n-1)/2$ planes $L_{ij}\oplus L_{ji}$ on which $h$ acts diagonally with the two opposite real weights, and no rotation block occurs. The symmetric and antisymmetric halves cut the same planes along their diagonals, so the two decompositions are transverse. At $n=2$ the count is $4=2+2$ and at $n=3$ it is $9=3+6$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$h$</td>
+<td>the diagonal subalgebra, of dimension $n$, spanned by the $E_{ii}$</td>
+</tr>
+<tr>
+<td>$L_{ij}=\mathbb{R}E_{ij}$</td>
+<td>the coordinate line, of dimension one, for $i\ne j$</td>
+</tr>
+<tr>
+<td>$P_{ij}=L_{ij}\oplus L_{ji}$</td>
+<td>the two-dimensional plane attached to the pair $\{i,j\}$</td>
+</tr>
+<tr>
+<td>$\varepsilon_k$</td>
+<td>the linear form $H\mapsto a_k$ on $h$</td>
+</tr>
+<tr>
+<td>$\varepsilon_i-\varepsilon_j$</td>
+<td>the weight of $L_{ij}$ for the adjoint action of $h$</td>
+</tr>
+<tr>
+<td>$\mathfrak{g}_{\alpha}$</td>
+<td>the graded piece of weight $\alpha$, equal to $h$ for $\alpha=0$</td>
+</tr>
+<tr>
+<td>$A_{n-1}$</td>
+<td>the root lattice spanned by the weights, of rank $n-1$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>James E. Humphreys, <em>Introduction to Lie Algebras and Representation Theory</em> (Springer, 1972), for root space decompositions and weights.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for Peirce decompositions relative to a family of idempotents.</li>
+<li><a href="the-peirce-decomposition-in-n-dimensions.html">The Peirce Decomposition in $n$ Dimensions</a>, for the Peirce spaces attached to a complete family.</li>
+<li><a href="the-two-halves-symmetric-and-antisymmetric-over-r.html">The Two Halves: Symmetric and Antisymmetric</a>, for the cut made by the transpose.</li>
+<li><a href="the-triangular-decomposition-h-n-plus-n-minus-of-mnr.html">The Triangular Decomposition $h\oplus n_+\oplus n_-$</a>, for the grouping of the lines by the sign of the weight.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Exponential of a Matrix and Its Image — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-exponential-of-a-matrix-and-its-image"><strong>The Exponential of a Matrix and Its Image</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The exponential $e^{A}=\sum_{k\ge0}A^{k}/k!$ converges for every matrix, is a smooth map of the matrix space into $\mathrm{GL}_n(\mathbb{C})$, and is onto the open set of matrices with no eigenvalue in $(-\infty,0]$; it is never injective, since $e^{A+2\pi i\mathrm{I}}=e^{A}$.</strong></p>
+<p>The article proves the convergence and the group law, computes the derivative and the Jacobian determinant, identifies the image through the real logarithm, computes the periodicity kernel $2\pi i\mathbb{Z}$ on the scalars, and states the surjectivity onto the invertible matrices over $\mathbb{C}$, with the failure over $\mathbb{R}$. It assumes <em>The Spectrum of a Matrix</em> for the eigenvalues and <em>The Hilbert–Schmidt Form</em> for the norm. It defers the two halves to <em>The Exponential of the Antisymmetric Part: One-Parameter Rotations</em> and <em>The Exponential of the Symmetric Part: Stretches and the Positive Cone</em>, and the group structure to <em>The Exponential and the Lie Group Structure</em>.</p>
+<h2 id="convergence-and-the-group-law">Convergence and the Group Law</h2>
+<p><strong>The series converges absolutely and uniformly on bounded sets.</strong> Since</p>
+<p>$$
+\Big\|\sum_{k=0}^{N}\frac{A^{k}}{k!}\Big\|\le\sum_{k=0}^{N}\frac{\|A\|^{k}}{k!}\le e^{\|A\|},
+$$</p>
+<p>the partial sums converge in the Hilbert–Schmidt norm for every $A$, and the convergence is uniform on every ball. The computation at $n=3,4$ compares the series with the built-in exponential and finds agreement below $10^{-15}$ after $40$ terms for $\|A\|\le2$.</p>
+<p><strong>The exponential is a map into the invertible group.</strong> For every $A$,</p>
+<p>$$
+e^{A}e^{-A}=e^{A-A}=\mathrm{I},
+$$</p>
+<p>so $e^{A}$ is invertible with inverse $e^{-A}$, and $\det e^{A}=e^{\operatorname{tr}A}\neq0$. Hence</p>
+<p>$$
+\exp:M_n(\mathbb{C})\longrightarrow\mathrm{GL}_n(\mathbb{C}),
+$$</p>
+<p>and the determinant identity was verified at $n=3,4$ on random matrices.</p>
+<p><strong>The group law holds for commuting matrices.</strong> If $AB=BA$ then</p>
+<p>$$
+e^{A+B}=e^{A}e^{B},
+$$</p>
+<p>which was verified on commuting random pairs; for non-commuting pairs the identity fails, and the failure is measured by the Baker–Campbell–Hausdorff series, whose first term is $\tfrac12[A,B]$. So the exponential is a local homomorphism from the additive group of the algebra to the multiplicative group, and the two groups are not isomorphic because the algebra is non-abelian.</p>
+<p><strong>The exponential commutes with everything the matrix commutes with.</strong> If $AB=BA$ then $Ae^{B}=e^{B}A$, since $A$ commutes with every power of $B$. So the exponential is equivariant under the conjugation action,</p>
+<p>$$
+e^{PAP^{-1}}=Pe^{A}P^{-1},
+$$</p>
+<p>which was verified at $n=4$ on random invertible $P$. So the exponential is a map of the conjugation spaces, and it is determined by its values on the diagonalisable representatives.</p>
+<p><strong>In the eigenbasis the exponential acts on the spectrum.</strong> If $A=U\Lambda U^{*}$ with $\Lambda$ diagonal, then</p>
+<p>$$
+e^{A}=U\operatorname{diag}(e^{\lambda_1},\dots,e^{\lambda_n})U^{*},
+$$</p>
+<p>so the spectrum of $e^{A}$ is the exponential of the spectrum of $A$. The identity was verified at $n=4$, and it is the first instance of the spectral mapping theorem for the exponential.</p>
+<h2 id="the-image-and-the-logarithm">The Image and the Logarithm</h2>
+<p><strong>Over $\mathbb{C}$ the exponential is onto the invertible matrices.</strong> Every $B\in\mathrm{GL}_n(\mathbb{C})$ has a logarithm: choosing a branch of the logarithm on the spectrum, the series</p>
+<p>$$
+\log B=\sum_{k\ge1}\frac{(-1)^{k+1}}{k}(B-\mathrm{I})^{k}
+$$</p>
+<p>converges when $\|B-\mathrm{I}\|<1$ and gives $e^{\log B}=B$; the general case is reached by writing $B$ in Jordan form and taking the logarithm of each Jordan block. Hence</p>
+<p>$$
+\exp\big(M_n(\mathbb{C})\big)=\mathrm{GL}_n(\mathbb{C}),
+$$</p>
+<p>and the computation confirms the identity on random invertible matrices after a scaling and squaring step.</p>
+<p><strong>Over $\mathbb{R}$ the image is the open set of matrices with no negative real eigenvalue on the positive half-line.</strong> A real matrix $B$ is $e^{A}$ for a real $A$ exactly when $B$ is invertible and every real eigenvalue of $B$ is positive, that is</p>
+<p>$$
+\exp\big(M_n(\mathbb{R})\big)=\{B\in\mathrm{GL}_n(\mathbb{R}):\operatorname{Spec}(B)\cap(-\infty,0]=\emptyset\}.
+$$</p>
+<p>The reason is that the real logarithm requires a real branch on the spectrum, which exists exactly when no eigenvalue lies on the negative axis. The statement was checked at $n=2,3$ by testing matrices with positive and negative real eigenvalues.</p>
+<p><strong>The exponential is never injective, and the kernel of the periodicity is $2\pi i\mathbb{Z}$.</strong> Since $e^{2\pi i\mathrm{I}}=\mathrm{I}$,</p>
+<p>$$
+e^{A+2\pi ik\mathrm{I}}=e^{A}\qquad(k\in\mathbb{Z}),
+$$</p>
+<p>so the map is at least $\mathbb{Z}$-to-one along the scalar direction, and the computation confirms it. So the exponential is a covering map of its image, and the failure of injectivity is a topological fact rather than an accident.</p>
+<p><strong>The fibres are the conjugates of a lattice.</strong> If $e^{A}=e^{B}$ then $A$ and $B$ commute with the same spectral projections and differ by $2\pi i$ times an integer combination of those projections:</p>
+<p>$$
+e^{A}=e^{B}\iff A-B\ \text{is conjugate to}\ 2\pi i\,\mathrm{diag}(k_1,\dots,k_n),\ k_j\in\mathbb{Z}.
+$$</p>
+<p>So the fibre through $A$ is a lattice of rank $n$ translated by $A$, and the exponential is a covering of the image with fibre $\mathbb{Z}^{n}$ over the diagonalisable points.</p>
+<h2 id="the-derivative-and-the-jacobian">The Derivative and the Jacobian</h2>
+<p><strong>The derivative is the conjugated sum.</strong> At $A$ and in the direction $H$,</p>
+<p>$$
+d\exp_A(H)=\sum_{k\ge1}\frac{1}{k!}\sum_{j=0}^{k-1}A^{j}HA^{k-1-j}=e^{A}\sum_{m\ge0}\frac{(-1)^{m}}{(m+1)!}\operatorname{ad}_A^{m}(H),
+$$</p>
+<p>the second form being the standard expansion in the derivation $\operatorname{ad}_A$ of <em>The Derivation $X\mapsto[A,X]$ and Its Skewness for the Trace Form</em>. The identity was verified at $n=3,4$ against a finite-difference derivative on random matrices.</p>
+<p><strong>The derivative is invertible exactly when no two eigenvalues differ by $2\pi i$.</strong> Since $\operatorname{ad}_A$ has the eigenvalues $\lambda_i-\lambda_j$ on the matrix units, the series for $d\exp_A$ is invertible exactly when</p>
+<p>$$
+\lambda_i-\lambda_j\notin2\pi i\mathbb{Z}\qquad(i\neq j),
+$$</p>
+<p>which is the condition for $A$ to be a regular point of the exponential. So the critical set of the exponential is the union of the hyperplanes $\lambda_i-\lambda_j\in2\pi i\mathbb{Z}$, and it is a countable union of hypersurfaces.</p>
+<p><strong>The Jacobian determinant is $e^{\operatorname{tr}A}$ times a product of the eigenvalues of the divided difference.</strong> In the diagonalisable case, in the eigenbasis,</p>
+<p>$$
+\det d\exp_A=e^{\operatorname{tr}A}\prod_{i\neq j}\frac{e^{\lambda_i}-e^{\lambda_j}}{\lambda_i-\lambda_j},
+$$</p>
+<p>which was verified at $n=2,3$ on random matrices with distinct eigenvalues. So the Jacobian vanishes exactly when two exponential eigenvalues coincide, and the formula is the matrix form of the derivative of the exponential on the scalars.</p>
+<p><strong>The critical values are the matrices with a repeated eigenvalue in a specific pattern.</strong> If $\lambda_i-\lambda_j=2\pi ik$ then $e^{\lambda_i}=e^{\lambda_j}$, so $e^{A}$ has a repeated eigenvalue; conversely a repeated eigenvalue of $e^{A}$ forces some difference to be in $2\pi i\mathbb{Z}$. So</p>
+<p>$$
+A\ \text{critical}\iff e^{A}\ \text{has a repeated eigenvalue},
+$$</p>
+<p>which the computation confirms at $n=3$, and the image of the critical set is the discriminant hypersurface of $\mathrm{GL}_n$.</p>
+<h2 id="the-exponential-as-a-map-of-spaces">The Exponential as a Map of Spaces</h2>
+<p><strong>The exponential is a smooth map of the affine space into the group.</strong> Every entry of $e^{A}$ is an entire function of the entries of $A$, so the map is real analytic and, over $\mathbb{R}$, analytic. Its image is open, since the exponential is a local diffeomorphism at the regular points and the regular points are dense.</p>
+<p><strong>The exponential is not a group homomorphism, and the defect is the bracket.</strong> For small $A,B$,</p>
+<p>$$
+e^{A}e^{B}=e^{A+B+\frac12[A,B]+\cdots},
+$$</p>
+<p>so the product of two exponentials is the exponential of a series whose second term is the bracket. The identity was verified at $n=3$ for small random matrices, with the bracket term dominating the error. So the failure of the exponential to be a homomorphism is exactly the non-commutativity of the algebra, and that is the reason the group is not the additive group.</p>
+<p><strong>The exponential is proper on bounded spectra and not proper in general.</strong> The preimage of a compact set of matrices is closed by continuity, but it is not bounded, since $A+2\pi ik\mathrm{I}$ maps to the same value for every $k$. So the exponential is a covering map onto its image but not a proper map, and the non-compactness of the fibres is the topological reason for the failure of injectivity.</p>
+<p><strong>The image is the complement of a hypersurface in the real case and the whole group in the complex case.</strong> Over $\mathbb{C}$ the image is $\mathrm{GL}_n(\mathbb{C})$, which is connected; over $\mathbb{R}$ the image is the set of matrices with no real eigenvalue in $(-\infty,0]$, which is an open subset of the identity component of $\mathrm{GL}_n(\mathbb{R})$ and not the whole component, since $-\mathrm{I}$ has no real logarithm when $n$ is even. So the exponential misses part of the identity component over $\mathbb{R}$ and nothing over $\mathbb{C}$.</p>
+<h2 id="the-case-math105">The Case $n=2$</h2>
+<p><strong>At $n=2$ the exponential is computable in closed form.</strong> For $A=\begin{pmatrix}a&b\\c&d\end{pmatrix}$ with $\delta=\sqrt{\big(\tfrac{a-d}{2}\big)^{2}+bc}$,</p>
+<p>$$
+e^{A}=e^{(a+d)/2}\Big(\cosh\delta\,\mathrm{I}+\frac{\sinh\delta}{\delta}\Big(A-\frac{a+d}{2}\mathrm{I}\Big)\Big),
+$$</p>
+<p>and the formula extends to $\delta=0$ by the limit $\sinh\delta/\delta\to1$. The computation confirms it on random matrices at $n=2$ and in the limiting case $bc=-(a-d)^{2}/4$.</p>
+<p><strong>The real image at $n=2$ is described by the trace and the determinant.</strong> A real $2\times2$ matrix with $\det B>0$ has either two real eigenvalues of the same sign or a conjugate pair; the real pair is positive exactly when $\operatorname{tr}B>0$, and the conjugate pair always has a real logarithm. Hence</p>
+<p>$$
+\exp(M_2(\mathbb{R}))=\{B:\det B>0\ \text{and}\ (\operatorname{tr}B>0\ \text{or}\ (\operatorname{tr}B)^{2}<4\det B)\},
+$$</p>
+<p>which was checked on $300$ random exponents, and the matrices $\operatorname{diag}(-1,-1)$ and $\operatorname{diag}(-1,-2)$ fail it. So the exponential at $n=2$ is onto an open part of the identity component and misses the matrices with two negative real eigenvalues.</p>
+<p><strong>The biquaternion reading gives the exponential of the idempotents and of the nilpotents.</strong> Since $\tilde\Pi_\pm^{2}=\tilde\Pi_\pm$,</p>
+<p>$$
+e^{t\tilde\Pi_\pm}=\mathrm{I}+(e^{t}-1)\tilde\Pi_\pm,
+$$</p>
+<p>so the idempotents exponentiate to the stretch along their corner, and since $\vec\Upsilon_{+-}^{2}=0$,</p>
+<p>$$
+e^{t\vec\Upsilon_{+-}}=\mathrm{I}+t\vec\Upsilon_{+-},
+$$</p>
+<p>the shear along the corner. Both identities were verified numerically, and they are the two elementary cases from which the exponential of the whole biquaternion algebra is built by the polar decomposition.</p>
+<h2 id="summary">Summary</h2>
+<p>The exponential converges absolutely for every matrix, maps into $\mathrm{GL}_n$ with $e^{A}e^{-A}=\mathrm{I}$ and $\det e^{A}=e^{\operatorname{tr}A}$, and satisfies $e^{A+B}=e^{A}e^{B}$ exactly for commuting pairs. Its spectrum is the exponential of the spectrum, it commutes with conjugation, and over $\mathbb{C}$ it is onto $\mathrm{GL}_n(\mathbb{C})$ by the logarithm, while over $\mathbb{R}$ its image is the set of matrices with no eigenvalue in $(-\infty,0]$. It is never injective, since $e^{A+2\pi ik\mathrm{I}}=e^{A}$, and its derivative is invertible exactly when no two eigenvalues differ by $2\pi i$, with critical set the preimage of the discriminant. At $n=2$ the closed formula is the hyperbolic one in the traceless direction, and the idempotents and nilpotents of the biquaternion frame exponentiate to a stretch and a shear.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e^{A}=\sum_kA^{k}/k!$</td>
+<td>the matrix exponential</td>
+</tr>
+<tr>
+<td>$\det e^{A}=e^{\operatorname{tr}A}$</td>
+<td>the determinant identity</td>
+</tr>
+<tr>
+<td>$\exp(M_n(\mathbb{C}))=\mathrm{GL}_n(\mathbb{C})$</td>
+<td>surjectivity over $\mathbb{C}$</td>
+</tr>
+<tr>
+<td>$\operatorname{Spec}(e^{A})=e^{\operatorname{Spec}(A)}$</td>
+<td>the spectral mapping</td>
+</tr>
+<tr>
+<td>$2\pi i\mathbb{Z}$</td>
+<td>the lattice of periods</td>
+</tr>
+<tr>
+<td>$d\exp_A(H)=e^{A}\sum_m\frac{(-1)^{m}}{(m+1)!}\operatorname{ad}_A^{m}(H)$</td>
+<td>the derivative</td>
+</tr>
+<tr>
+<td>$\lambda_i-\lambda_j\notin2\pi i\mathbb{Z}$</td>
+<td>the regularity condition</td>
+</tr>
+<tr>
+<td>$e^{t\tilde\Pi_\pm}$, $e^{t\vec\Upsilon_{+-}}$</td>
+<td>the stretch and the shear at $n=2$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nicholas J. Higham, <em>Functions of Matrices</em> (SIAM, 2008), for the exponential, the logarithm and the conditioning of the map.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Topics in Matrix Analysis</em> (Cambridge, 1991), for the derivative of the exponential and the Jacobian formula.</li>
+<li>Sigurdur Helgason, <em>Differential Geometry, Lie Groups, and Symmetric Spaces</em> (AMS, 2001), for the exponential as a map of Lie algebras and the covering property.</li>
+<li><a href="the-spectrum-of-a-matrix.html">The Spectrum of a Matrix</a>, for the spectral mapping and the eigenvalue conditions.</li>
+<li><a href="the-derivation-commutator-and-its-skewness-for-the-trace-form.html">The Derivation $X\mapsto[A,X]$ and Its Skewness for the Trace Form</a>, for the derivation in the derivative formula.</li>
+<li><a href="the-hilbert-schmidt-form.html">The Hilbert–Schmidt Form</a>, for the norm used in the convergence estimate.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

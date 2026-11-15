@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Normal Matrices over $\mathbb{R}$ and the Orthogonal Spectral Theorem — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="normal-matrices-over-math0-and-the-orthogonal-spectral-theorem"><strong>Normal Matrices over $\mathbb{R}$ and the Orthogonal Spectral Theorem</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>A real matrix is normal when it commutes with its transpose, and that single condition is exactly what makes the matrix orthogonally block diagonalisable, with rotation blocks of size two for the conjugate pairs.</strong> Normality is the real condition behind every spectral theorem over $\mathbb{R}$: the symmetric, the antisymmetric and the orthogonal cases are the three ways of choosing the blocks.</p>
+<p>The article defines normality, proves the real Schur form by induction on the dimension, deduces the orthogonal spectral theorem from it, identifies the three special cases, computes the commutant of a normal matrix and its dimension, shows by example how the theorem fails without normality, and proves that the Euclidean operator norm of a normal matrix is its spectral radius. It assumes <em>The Real Jordan Form and the Rotation Blocks</em> for the blocks and <em>The Real Spectrum: Real Roots and Conjugate Pairs</em> for the count of the pairs, and it prepares <em>The Spectral Theorem: the Symmetric Case</em> and <em>The Spectral Theorem: the Antisymmetric Case and the Purely Imaginary Spectrum</em>.</p>
+<h2 id="normality">Normality</h2>
+<p><strong>Definition.</strong> A matrix $X\in M_n(\mathbb{R})$ is <strong>normal</strong> when</p>
+<p>$$
+XX^{\mathsf T}=X^{\mathsf T}X .
+$$</p>
+<p><strong>Normality is the equality of two norms on every vector.</strong> For every $v\in\mathbb{R}^{n}$,</p>
+<p>$$
+\|Xv\|^{2}=v^{\mathsf T}X^{\mathsf T}Xv,\qquad \|X^{\mathsf T}v\|^{2}=v^{\mathsf T}XX^{\mathsf T}v,
+$$</p>
+<p>so $X$ is normal exactly when $\|Xv\|=\|X^{\mathsf T}v\|$ for all $v$. The condition is therefore a statement about the lengths of the images, not about the entries.</p>
+<p><strong>The three classical families are normal.</strong> A symmetric matrix has $X^{\mathsf T}=X$, an antisymmetric one has $X^{\mathsf T}=-X$, and an orthogonal one has $X^{\mathsf T}=X^{-1}$; in each case the two products of the definition coincide. The converse fails: the block diagonal matrix with a $1\times1$ block and a rotation block is normal and belongs to none of the three families.</p>
+<p><strong>The rotation block is the model normal matrix with a nonreal spectrum.</strong> For $C(a,b)$,</p>
+<p>$$
+CC^{\mathsf T}=\begin{pmatrix}a^{2}+b^{2}&0\\ 0&a^{2}+b^{2}\end{pmatrix}=C^{\mathsf T}C .
+$$</p>
+<p>So a normal real matrix may have a spectrum that is not real, and the rotation blocks are the only source of nonreal eigenvalues.</p>
+<h2 id="the-real-schur-form">The Real Schur Form</h2>
+<p><strong>Theorem.</strong> For every $X\in M_n(\mathbb{R})$ there is an orthogonal $Q$ such that $Q^{\mathsf T}XQ$ is block upper triangular, with blocks of size $1$ and $2$ on the diagonal and zeros below them.</p>
+<p><em>Proof.</em> Induct on $n$; the case $n=1$ is empty. If $X$ has a real eigenvalue, take a real eigenvector $u$ of unit length and let $W=\mathbb{R}u$; then $XW\subseteq W$. If $X$ has no real eigenvalue, take a nonreal eigenvalue $\mu$ with eigenvector $z=u+iv$; then $u$ and $v$ are linearly independent, $Xu$ and $Xv$ lie in $W=\operatorname{span}\{u,v\}$ because $Xz=\mu z$ and $X\bar z=\bar\mu\bar z$, and $W$ is a real plane with $XW\subseteq W$. Choose an orthonormal basis of $\mathbb{R}^{n}$ whose first one or two vectors span $W$. In that basis the matrix of $X$ is</p>
+<p>$$
+\begin{pmatrix}B&C\\ 0&D\end{pmatrix},\qquad B\in M_1(\mathbb{R})\ \text{or}\ M_2(\mathbb{R}),
+$$</p>
+<p>because $XW\subseteq W$ kills the lower-left block. Let $\pi$ be the orthogonal projection onto $W^{\perp}$. The compression $w\mapsto\pi(Xw)$, from $W^{\perp}$ to itself, is a real matrix of size $n-\dim W$, and the induction hypothesis applied to it, in a suitable orthonormal basis of $W^{\perp}$, gives the rest of the block form.</p>
+<p><strong>The diagonal blocks are the eigenvalues.</strong> A $1\times1$ block is a real eigenvalue and a $2\times2$ block is a conjugate pair, by the definition of the construction. So the block structure of the Schur form already displays the count $r+2s=n$.</p>
+<p><strong>The Schur form is not unique and not diagonal.</strong> The matrix $Q$ depends on the choices of $u$ or $z$, and the off-diagonal blocks $C$ are not zero in general. Normality is exactly the extra hypothesis that removes them.</p>
+<h2 id="the-orthogonal-spectral-theorem">The Orthogonal Spectral Theorem</h2>
+<p><strong>Theorem.</strong> $X\in M_n(\mathbb{R})$ is normal if and only if there is an orthogonal $Q$ such that</p>
+<p>$$
+Q^{\mathsf T}XQ=\operatorname{diag}\bigl(\lambda_1,\dots,\lambda_r,\ C(a_1,b_1),\dots,C(a_s,b_s)\bigr),
+$$</p>
+<p>with $\lambda_k\in\mathbb{R}$ and $C(a_j,b_j)$ the $2\times2$ rotation block, and $r+2s=n$.</p>
+<p><em>Proof.</em> Suppose first that $X$ is normal and take the real Schur form $T=Q^{\mathsf T}XQ$ with $Q$ orthogonal. Then $T$ is normal, since normality is invariant under orthogonal conjugation. Write $T$ in blocks $T_{ij}$ of the sizes of the Schur blocks, with $T_{ij}=0$ for $i>j$. The identity $TT^{\mathsf T}=T^{\mathsf T}T$, compared in the first diagonal block and traced, gives</p>
+<p>$$
+\|T_{11}\|_F^{2}+\sum_{k\ge2}\|T_{1k}\|_F^{2}=\|T_{11}\|_F^{2},
+$$</p>
+<p>because $\operatorname{tr}(T_{11}T_{11}^{\mathsf T})=\operatorname{tr}(T_{11}^{\mathsf T}T_{11})$. Hence $\sum_{k\ge2}\|T_{1k}\|_F^{2}=0$ and the first block row is diagonal. Apply the same argument to the trailing block, which is normal, and induction clears every block row. So $T$ is block diagonal. Each diagonal block is normal with the spectrum of a $1\times1$ or $2\times2$ real matrix: a $1\times1$ block is a real eigenvalue, and a normal $2\times2$ block with a nonreal spectrum satisfies</p>
+<p>$$
+\begin{pmatrix}p&q\\ s&t\end{pmatrix}\begin{pmatrix}p&s\\ q&t\end{pmatrix}=\begin{pmatrix}p&s\\ q&t\end{pmatrix}\begin{pmatrix}p&q\\ s&t\end{pmatrix},
+$$</p>
+<p>which, with the hypothesis of a nonreal spectrum, forces $q=-s$ and $p=t$, that is, the block is $C(p,q)$. The converse is immediate: a block diagonal matrix whose blocks are real scalars and rotation blocks is normal, since each block is.</p>
+<p><strong>The theorem is a spectral theorem without eigenvectors.</strong> It gives an orthonormal basis, grouped in one vector for each real eigenvalue and two vectors for each pair, in which $X$ acts as a scalar on the first and as a rotation on the second. The size of the blocks is forced: no single real eigenvector exists for a pair.</p>
+<h2 id="the-three-special-cases">The Three Special Cases</h2>
+<p><strong>Symmetric matrices have all blocks of size one.</strong> A symmetric $X$ is normal, and a rotation block $C(a,b)$ is symmetric only when $b=0$, so the theorem gives $X=Q\operatorname{diag}(\lambda)Q^{\mathsf T}$ with $\lambda$ real. The spectrum is real and the eigenbasis is orthonormal. This is <em>The Spectral Theorem: the Symmetric Case</em>.</p>
+<p><strong>Antisymmetric matrices have all rotation blocks with $a=0$.</strong> An antisymmetric $X$ is normal, and its transpose is $-X$, so the eigenvalues are purely imaginary; in the real form this means that every block is $C(0,b)=bJ$ with $J=\begin{pmatrix}0&-1\\ 1&0\end{pmatrix}$, together with some zero eigenvalues. This is <em>The Spectral Theorem: the Antisymmetric Case and the Purely Imaginary Spectrum</em>.</p>
+<p><strong>Orthogonal matrices have every block normalised.</strong> An orthogonal $X$ is normal, and $X^{\mathsf T}X=\mathrm{I}$ forces each real eigenvalue to be $\pm1$ and each pair to satisfy $a^{2}+b^{2}=1$. So the real form of an orthogonal matrix is a diagonal of signs and rotations of unit ratio.</p>
+<p><strong>The three families are the three possible block types.</strong> A normal matrix is symmetric when it has only real blocks, antisymmetric when it has only imaginary blocks $bJ$ and zeros, and orthogonal when every block has modulus one. A general normal matrix mixes the three.</p>
+<h2 id="the-commutant">The Commutant</h2>
+<p><strong>Definition.</strong> The commutant of $X$ is $Z(X)=\{Y\in M_n(\mathbb{R}):XY=YX\}$.</p>
+<p><strong>For a normal matrix the commutant is a product of full matrix algebras.</strong> By the spectral theorem, $\mathbb{R}^{n}$ splits into the orthogonal sum of the real eigenspaces and the real planes of the pairs, and $X$ acts as a scalar on each real eigenspace and as $C(a,b)$ on each plane. Hence</p>
+<p>$$
+Z(X)\cong\prod_{\lambda}\mathrm{M}_{m_\lambda}(\mathbb{R})\times\prod_{\{\mu,\bar\mu\}}\mathrm{M}_{s_\mu}(\mathbb{C}),
+$$</p>
+<p>where $m_\lambda$ is the multiplicity of the real eigenvalue $\lambda$ and $s_\mu$ is the number of copies of the pair. The dimension is</p>
+<p>$$
+\dim Z(X)=\sum_{\lambda}m_\lambda^{2}+2\sum_{\{\mu,\bar\mu\}}s_\mu^{2}.
+$$</p>
+<p><strong>The factor $\mathrm{M}_{s}(\mathbb{C})$ is a real matrix algebra of dimension $2s^{2}$.</strong> On a plane of a pair with $s$ copies, $X$ is $C\otimes\mathrm{I}_s$, whose commutant is $\mathbb{R}[C]\otimes\mathrm{M}_s(\mathbb{R})$; and $\mathbb{R}[C]\cong\mathbb{C}$ because $C$ is nonderogatory. So the commutant of one pair with multiplicity $s$ is $M_s(\mathbb{C})$, of real dimension $2s^{2}$.</p>
+<p><strong>For a simple spectrum the commutant is the algebra generated by $X$ and $X^{\mathsf T}$.</strong> If every real eigenvalue is simple and every pair occurs once, then $m_\lambda=1$ and $s_\mu=1$, so $\dim Z(X)=r+2s=n$. The algebra $\mathbb{R}[X]$ already has dimension $n$, since the minimal polynomial is $\prod(t-\lambda)\prod((t-a)^{2}+b^{2})$ of degree $n$; hence</p>
+<p>$$
+Z(X)=\mathbb{R}[X]=\mathbb{R}[X,X^{\mathsf T}],
+$$</p>
+<p>and the two generators are needed only formally, because $X^{\mathsf T}$ is already a polynomial in $X$ when the spectrum is simple.</p>
+<p><strong>The measurement.</strong> For random normal matrices with simple spectrum the nullity of $Y\mapsto XY-YX$ is $3$ at $n=3$, $4$ at $n=4$ and $5$ at $n=5$, equal to $r+2s=n$ each time. For $\operatorname{diag}(C,C)$, which has $s=2$ copies of one pair, the nullity is $8$, equal to $2s^{2}$.</p>
+<p><strong>The commutant is not always the polynomial algebra.</strong> With multiplicities the commutant is strictly larger: for $\operatorname{diag}(C,C)$ the algebra $\mathbb{R}[X]$ has dimension $2$, because $(t-a)^{2}+b^{2}$ annihilates $X$, while the commutant has dimension $8$.</p>
+<h2 id="where-normality-fails">Where Normality Fails</h2>
+<p><strong>A matrix with real eigenvalues need not have an orthonormal eigenbasis.</strong> Take</p>
+<p>$$
+S=\begin{pmatrix}1&1\\ 0&2\end{pmatrix}.
+$$</p>
+<p>Its eigenvalues are $1$ and $2$ and its eigenvectors are $(1,0)$ and $(1,1)$, with scalar product $0.707107$; they are not orthogonal. And</p>
+<p>$$
+SS^{\mathsf T}-S^{\mathsf T}S=\begin{pmatrix}0&1\\ 1&-2\end{pmatrix}
+$$</p>
+<p>is nonzero, of Frobenius norm $2$. So $S$ is not normal, and no orthogonal $Q$ makes $Q^{\mathsf T}SQ$ diagonal.</p>
+<p><strong>A nilpotent matrix fails in the extreme.</strong> For $N=\begin{pmatrix}0&1\\ 0&0\end{pmatrix}$ the two products differ by a matrix of norm $1.414$, the only eigenvalue is $0$, and the eigenspace is one-dimensional; there is no eigenbasis at all, orthonormal or not.</p>
+<p><strong>The Schur form shows the failure.</strong> For a non-normal matrix the Schur form is genuinely triangular: the off-diagonal block does not vanish, so the compression to the invariant line or plane is not the restriction. The norm of that block measures the failure, and it is zero exactly when the matrix is normal.</p>
+<h2 id="the-operator-norm">The Operator Norm</h2>
+<p><strong>Theorem.</strong> If $X$ is normal then $\|X\|_2=\rho(X)$, the spectral radius.</p>
+<p><em>Proof.</em> By the spectral theorem $X=QDQ^{\mathsf T}$ with $Q$ orthogonal and $D$ block diagonal. The Euclidean norm is invariant under $Q$, so $\|X\|_2=\|D\|_2=\max(\|D_{kk}\|_2)$. A $1\times1$ block has norm $|\lambda|$ and a rotation block has $C^{\mathsf T}C=(a^{2}+b^{2})\mathrm{I}$, hence $\|C(a,b)\|_2=\sqrt{a^{2}+b^{2}}$. The maximum is exactly the largest modulus of an eigenvalue.</p>
+<p><strong>The equality characterises the normal matrices.</strong> The converse is classical: if $\|X\|_2=\rho(X)$ then the Schur form of $X$ has a vanishing off-diagonal part, so $X$ is normal.</p>
+<p><strong>The measurement.</strong> At $n=3$ a random normal matrix with eigenvalues $3,-2,1$ has Euclidean norm $2.999999999999999$ and spectral radius $2.999999999999999$. The non-normal matrix $S$ of the previous section has norm $2.288$ and radius $2$, so the inequality $\rho\le\|X\|_2$ is strict there, as it must be.</p>
+<h2 id="summary">Summary</h2>
+<p>A real matrix is normal when $XX^{\mathsf T}=X^{\mathsf T}X$, that is, when $\|Xv\|=\|X^{\mathsf T}v\|$ for every vector. The real Schur form, proved by induction using a real invariant line or plane, reduces any matrix to block triangular form with $1\times1$ and $2\times2$ blocks; normality kills the off-diagonal blocks by a trace identity, and the $2\times2$ blocks become rotation blocks $C(a,b)$. So $X$ is normal exactly when $Q^{\mathsf T}XQ$ is block diagonal in real scalars and rotation blocks, with $Q$ orthogonal. The symmetric, antisymmetric and orthogonal matrices are the cases of scalars, of $bJ$ and zeros, and of blocks of modulus one. The commutant is a product of matrix algebras over the eigenspaces and the pair planes, of dimension $\sum m_\lambda^{2}+2\sum s_\mu^{2}$, equal to $n$ for a simple spectrum. Without normality the Schur form stays triangular, and the Euclidean norm exceeds the spectral radius.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$X^{\mathsf T}$</td>
+<td>the transpose of $X$</td>
+</tr>
+<tr>
+<td>$XX^{\mathsf T}=X^{\mathsf T}X$</td>
+<td>the normality condition</td>
+</tr>
+<tr>
+<td>$Q$</td>
+<td>an orthogonal matrix, $Q^{\mathsf T}Q=\mathrm{I}$</td>
+</tr>
+<tr>
+<td>$C(a,b)$</td>
+<td>the rotation block $\begin{pmatrix}a&-b\\ b&a\end{pmatrix}$</td>
+</tr>
+<tr>
+<td>$J$</td>
+<td>the rotation $C(0,1)$</td>
+</tr>
+<tr>
+<td>$Z(X)$</td>
+<td>the commutant of $X$</td>
+</tr>
+<tr>
+<td>$m_\lambda$</td>
+<td>the multiplicity of the real eigenvalue $\lambda$</td>
+</tr>
+<tr>
+<td>$s_\mu$</td>
+<td>the number of copies of the pair $\mu,\bar\mu$</td>
+</tr>
+<tr>
+<td>$\|X\|_2$</td>
+<td>the Euclidean operator norm</td>
+</tr>
+<tr>
+<td>$\rho(X)$</td>
+<td>the spectral radius</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for normal matrices, the Schur form and the spectral theorem.</li>
+<li>Paul R. Halmos, <em>A Hilbert Space Problem Book</em> (Springer, 1982), for the commutant of a normal operator.</li>
+<li><a href="the-real-jordan-form-and-the-rotation-blocks.html">The Real Jordan Form and the Rotation Blocks</a>, for the rotation blocks that the theorem produces.</li>
+<li><a href="the-real-spectrum-real-roots-and-conjugate-pairs.html">The Real Spectrum: Real Roots and Conjugate Pairs</a>, for the count $r+2s=n$ of the blocks.</li>
+<li><a href="the-spectral-theorem-the-symmetric-case.html">The Spectral Theorem: the Symmetric Case</a>, for the case where all blocks are scalars.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

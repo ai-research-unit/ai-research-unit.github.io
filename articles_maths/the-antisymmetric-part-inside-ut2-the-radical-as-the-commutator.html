@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Antisymmetric Part inside $UT_2$: the Radical as the Commutator — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-antisymmetric-part-inside-math0-the-radical-as-the-commutator"><strong>The Antisymmetric Part inside $UT_2$: the Radical as the Commutator</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>Inside the upper triangular matrices the antisymmetric part of an element is never available, and the three subspaces that the algebra produces — the derived algebra, the nilradical and the radical of the trace form — coincide with the single nilpotent line $n_+$.</strong></p>
+<p>The article computes the antisymmetric part of an upper triangular matrix, shows that the intersection $UT_2\cap\Lambda^{2}$ is zero and that the antisymmetric part of an element lies outside the algebra, proves the commutator formula, proves that the derived algebra is the nilpotent line, proves that the radical of the trace form is the same line, and states the coincidence of the three subspaces. It assumes <em>The Triangular Decomposition $h\oplus n_+\oplus n_-$ of $M_2(\mathbb{C})$</em>, <em>$UT_2$ as the Complement of the Antisymmetric Part</em> and <em>The Two Halves as Orthogonal Complements at $n=2$</em>.</p>
+<p>It defers the comparison of the two models of the symmetric half to <em>$UT_2$ as a Linear Model of $\operatorname{Sym}_2$: Same Space, Wrong Product</em> and the geometric reading to <em>The Geometry of the Two Halves at $n=2$, and the Return of the Two-Sided Operators</em>.</p>
+<h2 id="the-elements-and-their-antisymmetric-parts">The Elements and Their Antisymmetric Parts</h2>
+<p><strong>Proposition.</strong> An element $U=\begin{pmatrix}a&b\\ 0&d\end{pmatrix}$ of $UT_2$ has symmetric part $\tfrac12\begin{pmatrix}2a&b\\ b&2d\end{pmatrix}$ and antisymmetric part $\tfrac b2 J$.</p>
+<p><strong>Proof.</strong> The transpose is $\begin{pmatrix}a&0\\ b&d\end{pmatrix}$, so the difference of the matrix and its transpose is $\begin{pmatrix}0&b\\ -b&0\end{pmatrix}=bJ$.</p>
+<p><strong>Corollary.</strong> The intersection $UT_2\cap\Lambda^{2}\mathbb{R}^{2}$ is zero, and the antisymmetric part of an element of $UT_2$ belongs to $UT_2$ only when $b=0$.</p>
+<p><strong>Proof.</strong> An antisymmetric matrix has a nonzero lower left entry as soon as it is nonzero, and an upper triangular matrix has a zero there.</p>
+<p><strong>The off-diagonal entry is the whole obstruction.</strong> The number $b$ measures how far the element is from being symmetric, and the antisymmetric part that measures it is $\tfrac b2J$, a matrix outside the algebra.</p>
+<p><strong>Proof.</strong> The symmetric part is symmetric and the sum of the two parts is $U$; the antisymmetric part is $\tfrac b2J$, which is not upper triangular.</p>
+<h2 id="the-commutator-formula">The Commutator Formula</h2>
+<p><strong>Theorem.</strong> For $U=\begin{pmatrix}a&b\\ 0&d\end{pmatrix}$ and $V=\begin{pmatrix}a'&b'\\ 0&d'\end{pmatrix}$,</p>
+<p>$$
+[U,V]=\begin{pmatrix}0&b'(a-d)-b(a'-d')\\ 0&0\end{pmatrix}.
+$$</p>
+<p><strong>Proof.</strong> $UV=\begin{pmatrix}aa'&ab'+bd'\\ 0&dd'\end{pmatrix}$ and $VU=\begin{pmatrix}aa'&a'b+b'd\\ 0&dd'\end{pmatrix}$; the diagonal entries agree and the difference of the off-diagonal entries is $b'(a-d)-b(a'-d')$.</p>
+<p><strong>Corollary.</strong> Every commutator lies in $n_+$, so the derived algebra of $UT_2$ is contained in the nilpotent line.</p>
+<p><strong>Proof.</strong> The display has only one possibly nonzero entry, in the upper right corner.</p>
+<p><strong>Corollary.</strong> With $U=D=\operatorname{diag}(a,d)$ one has $[D,E_{12}]=(a-d)E_{12}$, so the line $n_+$ is reached as soon as the diagonal entries differ.</p>
+<p><strong>Proof.</strong> Put $b=0$, $a'=0$, $b'=1$, $d'=0$ in the formula; the value is $a-d$.</p>
+<p><strong>Corollary.</strong> The derived algebra is exactly $n_+$, and $UT_2$ is solvable of derived length two.</p>
+<p><strong>Proof.</strong> The derived algebra contains $(a-d)E_{12}$ for suitable $D$, hence contains the whole line, and $[n_+,n_+]=0$ because $E_{12}^{2}=0$.</p>
+<h2 id="the-radical-of-the-trace-form">The Radical of the Trace Form</h2>
+<p><strong>Proposition.</strong> The trace form on $UT_2$ has Gram matrix $\operatorname{diag}(1,0,1)$ in the basis $E_{11},E_{12},E_{22}$, of rank $2$ and signature $(2,0)$ with a one-dimensional radical.</p>
+<p><strong>Proof.</strong> $\operatorname{tr}(E_{11}^{2})=\operatorname{tr}(E_{22}^{2})=1$, $\operatorname{tr}(E_{12}^{2})=\operatorname{tr}(E_{11}E_{12})=\operatorname{tr}(E_{12}E_{22})=0$.</p>
+<p><strong>Corollary.</strong> The radical of the trace form on $UT_2$ is the nilpotent line $n_+$.</p>
+<p><strong>Proof.</strong> The radical is the null space of the Gram matrix, which is spanned by $E_{12}$ in these coordinates; and $\operatorname{tr}(UE_{12})=0$ for every upper triangular $U$ because the product has zero diagonal.</p>
+<p><strong>The form is semidefinite and not definite.</strong> On $UT_2$ the form is positive semidefinite with a one-dimensional kernel, whereas on the symmetric half it is positive definite with eigenvalues $1,1,2$.</p>
+<p><strong>Proof.</strong> $\operatorname{tr}(U^{2})=a^{2}+d^{2}$ for upper triangular $U$, which is a sum of squares and vanishes exactly on the nilpotent line.</p>
+<h2 id="the-three-subspaces-coincide">The Three Subspaces Coincide</h2>
+<p><strong>Theorem.</strong> In $UT_2$ the derived algebra, the nilradical and the radical of the trace form are all the line $n_+$.</p>
+<p><strong>Proof.</strong> The derived algebra is $n_+$ by the commutator formula. A nilpotent ideal must lie in the nilpotent line, since $E_{11}$ and $E_{22}$ are not nilpotent and every element with a nonzero diagonal entry has a nonzero eigenvalue; and $n_+$ itself is a nilpotent ideal. The radical of the form is $n_+$ by the Gram computation.</p>
+<p><strong>Corollary.</strong> The algebra is the semidirect product of the diagonal algebra with the line $n_+$, and the line is simultaneously the commutator subspace, the nilpotent ideal and the orthogonal degenerate direction.</p>
+<p><strong>Proof.</strong> The vector space splits as $h\oplus n_+$, the line is an ideal, and the three descriptions of the line are the three theorems above.</p>
+<p><strong>The equality of the three spaces is not special to order two, but the collapse into one line is.</strong> At every order the radical of the trace form on $UT_n$ is the strictly upper triangular algebra, which is also the derived algebra and the nilradical; what is special to order two is that this algebra is a single line, so the three descriptions name the same one-dimensional space with no filtration above it.</p>
+<p><strong>Proof.</strong> Pairing a matrix with $E_{ii}$ reads its diagonal entry and pairing it with $E_{ji}$ reads the entry $m_{ij}$ with $j>i$, so a matrix in the radical has zero diagonal and zero entries below it, hence is strictly upper triangular; and the commutator of two upper triangular matrices is strictly upper triangular.</p>
+<h2 id="solvability-and-the-filtration">Solvability and the Filtration</h2>
+<p><strong>Proposition.</strong> The lower central series of $UT_2$ is $UT_2$, then $n_+$, then $0$, so the algebra is nilpotent of class two.</p>
+<p><strong>Proof.</strong> The commutator of two elements lies in $n_+$ and the commutator with $n_+$ vanishes because $n_+$ is one-dimensional and abelian.</p>
+<p><strong>Corollary.</strong> The algebra is solvable and nilpotent, and its Killing form vanishes identically.</p>
+<p><strong>Proof.</strong> A nilpotent Lie algebra has a vanishing Killing form, since every adjoint operator is nilpotent and the trace of a product of nilpotent operators is zero.</p>
+<p><strong>Corollary.</strong> The trace form and the Killing form differ completely on $UT_2$: the trace form has rank $2$ and the Killing form is zero.</p>
+<p><strong>Proof.</strong> The trace form is computed above; the Killing form vanishes by nilpotency.</p>
+<h2 id="why-the-antisymmetric-part-cannot-live-inside">Why the Antisymmetric Part Cannot Live Inside</h2>
+<p><strong>Proposition.</strong> The map $U\mapsto\operatorname{skew}U$ sends $UT_2$ onto the line $\mathbb{R}J$, and the image meets $UT_2$ only at zero.</p>
+<p><strong>Proof.</strong> The antisymmetric part is $\tfrac b2J$, which runs over the whole line as $b$ runs over the reals, and $J$ is not upper triangular.</p>
+<p><strong>Corollary.</strong> The algebra $UT_2$ is a graph over the symmetric half for the projection $\operatorname{sym}$, and the antisymmetric line is the complementary direction that the algebra does not contain.</p>
+<p><strong>Proof.</strong> The map $\operatorname{sym}$ is the identity on $UT_2\cap\operatorname{Sym}_2$ and has kernel $UT_2\cap\Lambda^{2}=0$, so it is injective, and both spaces have dimension $3$.</p>
+<p><strong>Corollary.</strong> The commutator measures the antisymmetric part of the product, and it is blind to the symmetric part: $\operatorname{skew}(UV)$ depends only on the diagonal differences and the off-diagonal entries.</p>
+<p><strong>Proof.</strong> The commutator formula is linear in the off-diagonal entries and in the differences of the diagonal entries, and it vanishes when the two diagonal entries agree.</p>
+<h2 id="summary">Summary</h2>
+<p>For $U=\begin{pmatrix}a&b\\ 0&d\end{pmatrix}$ the antisymmetric part is $\tfrac b2J$, which lies outside $UT_2$ unless $b=0$, so the intersection of the algebra with the antisymmetric line is zero and the off-diagonal entry $b$ is the only obstruction to symmetry.</p>
+<p>The commutator is $[U,V]=\bigl(b'(a-d)-b(a'-d')\bigr)E_{12}$, so the derived algebra is the nilpotent line $n_+$, the algebra is nilpotent of class two and solvable of derived length two, and the trace form has Gram matrix $\operatorname{diag}(1,0,1)$ with radical $n_+$. The derived algebra, the nilradical and the radical of the trace form are the same line, and the Killing form vanishes identically while the trace form has rank $2$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$UT_2$</td>
+<td>the upper triangular matrices</td>
+</tr>
+<tr>
+<td>$n_+$</td>
+<td>the strictly upper triangular line $\mathbb{R}E_{12}$</td>
+</tr>
+<tr>
+<td>$h$</td>
+<td>the diagonal algebra</td>
+</tr>
+<tr>
+<td>$J$</td>
+<td>the antisymmetric unit</td>
+</tr>
+<tr>
+<td>$\operatorname{skew}U$</td>
+<td>$\tfrac12(U-U^{\mathsf T})$, equal to $\tfrac b2J$ on $UT_2$</td>
+</tr>
+<tr>
+<td>$[U,V]$</td>
+<td>the commutator, always in $n_+$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Anthony W. Knapp, <em>Lie Groups Beyond an Introduction</em> (Birkhäuser, 2002), for solvable and nilpotent Lie algebras, radicals and their Killing forms.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge University Press, 2013), for the trace form on the triangular algebra and its degeneracy.</li>
+<li><a href="the-triangular-decomposition-h-n-plus-n-minus-of-m2c.html">The Triangular Decomposition $h\oplus n_+\oplus n_-$ of $M_2(\mathbb{C})$</a>, for the three subspaces and the product rule.</li>
+<li><a href="ut2-as-the-complement-of-the-antisymmetric-part.html">$UT_2$ as the Complement of the Antisymmetric Part</a>, for the trace form on the triangular algebra.</li>
+<li><a href="the-lie-algebra-skew-2-one-dimension-hence-abelian.html">The Lie Algebra $\operatorname{Skew}_2$: One Dimension, Hence Abelian</a>, for the antisymmetric line that the algebra does not contain.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

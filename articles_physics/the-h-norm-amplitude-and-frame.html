@@ -327,31 +327,33 @@ $$</p>
 <p><strong>The origin is worse.</strong> At $\tilde Q=0$ both factors vanish, while along $\tilde Q=\epsilon e_t$ the amplitude is $\epsilon e_t$ and the frame is $e_t$. The frame jumps from $e_t$ to $0$, which is the collapse of the rank from two to zero in one step.</p>
 <p><strong>The half-norm of the frame on the cone is a physical number and not a curiosity.</strong> A minimal projection has H-norm $\tfrac12$, so an element on the cone has a frame whose norm is half of the norm of a unit. The missing half is the second rank, and it is the same half that appears in the purity of a pure state.</p>
 <h2 id="the-operator-to-state-map">The Operator-to-State Map</h2>
+<p><strong>The name is not the operator–state correspondence of a conformal field theory.</strong> That correspondence is a theorem of radial quantisation: it needs a conformal boundary and a radial time, and it is an isomorphism of Hilbert spaces. This map has no boundary, no radial time and no inverse, and it is many-to-one onto the state space. The two share a name and nothing else, and the name is used here in the plain sense only.</p>
 <p><strong>Every nonzero element defines a state, and the definition is the amplitude normalised.</strong></p>
 <p>$$
-\boxed{\;\tilde\varpi_Q=\frac{\tilde Q\tilde Q^{*}}{2H(\tilde Q)}=\frac{\tilde Q_H^{2}}{2H(\tilde Q)}\;}
+\boxed{\;\tilde{Ϛ}_{\Psi,Q}=\frac{\tilde Q\tilde Q^{*}}{2H(\tilde Q)}=\frac{\tilde Q_H^{2}}{2H(\tilde Q)}\;}
 $$</p>
-<p><strong>The image is Hermitian, positive semidefinite and of trace one.</strong> $\operatorname{Tr}\tilde\varpi_Q=\operatorname{Tr}(\tilde Q\tilde Q^{*})/(2H)=2H/(2H)=1$, and the positivity is the positivity of the Hermitian square. So the image is a state of the informational sector, of the form $\tfrac12(e_t+i\vec r)$ with $\lvert\vec r\rvert\le1$.</p>
+<p><strong>The image is Hermitian, positive semidefinite and of trace one.</strong> $\operatorname{Tr}\tilde{Ϛ}_{\Psi,Q}=\operatorname{Tr}(\tilde Q\tilde Q^{*})/(2H)=2H/(2H)=1$, and the positivity is the positivity of the Hermitian square. So the image is a state of the informational sector, of the form $\tfrac12(e_t+i\vec r)$ with $\lvert\vec r\rvert\le1$.</p>
 <p><strong>The map forgets the frame and the scale, in that order.</strong> A right multiplication by a $*$-unitary leaves the image alone, because $\tilde V\tilde V^{*}=e_t$. A multiplication by a nonzero complex scalar leaves it alone, because the numerator and the denominator carry the same factor. A left multiplication by a $*$-unitary conjugates the image, because it conjugates the amplitude.</p>
 <p><strong>The image depends on the amplitude through its singular values only.</strong></p>
 <p>$$
-\tilde\varpi_Q=\tilde U_{\mathrm{s}}\operatorname{diag}(p_1,p_2)\tilde U_{\mathrm{s}}^{*},\qquad
+\tilde{Ϛ}_{\Psi,Q}=\tilde U_{\mathrm{s}}\operatorname{diag}(p_1,p_2)\tilde U_{\mathrm{s}}^{*},\qquad
 p_i=\frac{\sigma_i^{2}}{\sigma_1^{2}+\sigma_2^{2}},\qquad p_1+p_2=1 ,
 $$</p>
 <p>with $\sigma_1\ge\sigma_2\ge0$ the two singular values of $\tilde Q$. The state is the normalised distribution of the squared singular values, which is the same statement as: the state is the amplitude with its scale removed, conjugated into the frame that diagonalises it.</p>
 <p><strong>Written through the rapidity, the state is the boost.</strong></p>
 <p>$$
-\tilde\varpi_Q=\tfrac12\bigl(e_t+i\tanh\Xi\ \vec u_{\mathrm b}\bigr),
+\tilde{Ϛ}_{\Psi,Q}=\tfrac12\bigl(e_t+i\tanh\Xi\ \vec u_{\mathrm b}\bigr),
 $$</p>
 <p>with $\Xi$ the rapidity of the boost factor and $\vec u_{\mathrm b}$ its axis. The phase, the rotor angle and the rotor axis do not appear, and neither does the scale. Three of the four factors of the polar word leave no trace in the state; the fourth is the state.</p>
 <p><strong>The purity is a function of the rapidity alone.</strong></p>
 <p>$$
-\operatorname{Tr}\tilde\varpi_Q^{2}=1-\frac{\lvert N(\tilde Q)\rvert^{2}}{2H(\tilde Q)^{2}}
+\operatorname{Tr}\tilde{Ϛ}_{\Psi,Q}^{2}=1-\frac{\lvert N(\tilde Q)\rvert^{2}}{2H(\tilde Q)^{2}}
 =\frac{1+\tanh^{2}\Xi}{2},\qquad
 \lvert\vec r\rvert=\tanh\Xi .
 $$</p>
 <p><strong>The two ends of the range are the two degenerations of the frame.</strong> At $\Xi=0$ the state is maximally mixed, purity $\tfrac12$, and the element is a central phase times a real quaternion: no boost, two equal singular values, a frame of full rank. As $\Xi\to\infty$ the state becomes pure, purity $1$, and the element approaches the cone: infinite boost, one singular value zero, a frame of rank one.</p>
 <p><strong>The map is therefore the statement that a pure state is a degenerate amplitude and a mixed state is a boosted one.</strong> This is the backward-feeling half of the correspondence, and it is forced by the formulas: purity is rank deficiency, and rank deficiency is what the cone means.</p>
+<p><strong>The same map is the input-free shadow of four constructions, and the four differ only in the physical name of the state.</strong> The Kraus operator of an instrument, the Jones matrix of a polariser, the S-matrix element of a scattering and the field strength of a field all define their state as this normalised Hermitian square, and the unity is algebraic: one map, four vocabularies. The measurement reading is the one that adds a datum, since the post-measurement state takes an input state as well, $\tilde{Ϛ}_{\Psi}\mapsto\tilde M_{\mathrm{kraus}}\tilde{Ϛ}_{\Psi}\tilde M_{\mathrm{kraus}}^{*}/p$, and it coincides with the map here only when that input is $\tfrac12 e_t$. The witnesses are in the archive until they are rewritten: <a href="the-polar-decomposition-of-a-kraus-operator-effect-backaction-and-the-measurement-boundary.html">The Polar Decomposition of a Kraus Operator: Effect, Backaction and the Measurement Boundary</a>, <a href="pancharatnams-phase-and-the-polarization-sphere-in-biquaternionic-form.html">Pancharatnam's Phase and the Polarization Sphere in Biquaternionic Form</a>, <a href="the-s-matrix-in-biquaternionic-form.html">The S-Matrix in Biquaternionic Form</a> and <a href="the-field-strength-biquaternion-and-its-invariants.html">The Field-Strength Biquaternion and Its Invariants</a>.</p>
 <h2 id="the-two-singular-values">The Two Singular Values</h2>
 <p><strong>The amplitude is a pair of numbers and not one.</strong> The Hermitian square $\tilde Q\tilde Q^{*}$ has two spectral values, and they are non-negative because the element is positive semidefinite. Their square roots are the two singular values.</p>
 <p>$$
@@ -452,7 +454,7 @@ $$</p>
 <p><strong>The identity follows from the last section in one line.</strong> $2H=\sigma_1^{2}+\sigma_2^{2}=r^{2}(e^{\Xi}+e^{-\Xi})=2r^{2}\cosh\Xi$ and $\lvert N\rvert=r^{2}$. A check on a hundred elements built from the four-factor word confirmed it to ten digits.</p>
 <p><strong>Three consequences follow, and each is a statement about what the two measures are for.</strong> The amplitude is never smaller than the modulus of the interval, because $\cosh\Xi\ge1$. The two are equal exactly when the boost is absent, which is the case of a central phase times a real quaternion. And the ratio $H/\lvert N\rvert$ is the Lorentz factor of the element's boost.</p>
 <p><strong>The amplitude is therefore the mass times the boost factor and not the mass.</strong> This is the honest statement of what the polar decomposition adds to the interval. The interval answers how much invariant mass the element carries. The amplitude answers how much mass and motion together, and the extra is the boost. Any reading that identifies the amplitude with the mass will fail on the first element with a nonzero rapidity, and the table of the last section exhibits four of them.</p>
-<p><strong>The same number appears in the state.</strong> The Bloch length of $\tilde\varpi_Q$ is $\tanh\Xi$, so the state's departure from maximal mixing is the velocity of the boost and the amplitude's excess over the mass is the Lorentz factor of the same velocity. The two are one statement written twice, through the identity $\cosh\Xi=1/\sqrt{1-\tanh^{2}\Xi}$.</p>
+<p><strong>The same number appears in the state.</strong> The Bloch length of $\tilde{Ϛ}_{\Psi,Q}$ is $\tanh\Xi$, so the state's departure from maximal mixing is the velocity of the boost and the amplitude's excess over the mass is the Lorentz factor of the same velocity. The two are one statement written twice, through the identity $\cosh\Xi=1/\sqrt{1-\tanh^{2}\Xi}$.</p>
 <p><strong>The H-norm sees the scale and the boost and nothing else.</strong></p>
 <p>$$
 H(\tilde Q)=r^{2}\cosh\Xi,\qquad
@@ -550,7 +552,7 @@ $$</p>
 <p><strong>The physical interpretation is that magnitude and orientation are separate questions with separate answers.</strong> An element's size and its boost answer what it is. Its phase and its rotation answer how it is turned. A theory that asks both questions needs both factors, and it must not expect either factor to answer the other's question.</p>
 <p><strong>The boundary.</strong> The split is not the split of the algebra into the two sectors. Both factors are complex elements. The amplitude happens to be Hermitian and the frame happens to be unitary, and neither fact follows from a sector assignment of the original element.</p>
 <h3 id="i8d-the-state-is-the-boost">I.8.d — The State Is the Boost</h3>
-<p><strong>Read:</strong> $\tilde\varpi_Q=\tfrac12(e_t+i\tanh\Xi\,\vec u_{\mathrm b})$, with $\vec u_{\mathrm b}$ the boost axis and $\Xi$ its rapidity.</p>
+<p><strong>Read:</strong> $\tilde{Ϛ}_{\Psi,Q}=\tfrac12(e_t+i\tanh\Xi\,\vec u_{\mathrm b})$, with $\vec u_{\mathrm b}$ the boost axis and $\Xi$ its rapidity.</p>
 <p><strong>The normalised amplitude is the boost and nothing else.</strong> The scale cancels in the quotient, the central phase cancels because it is unitary on the right, and the rotor cancels because a real unit quaternion is unitary on the right. What survives is the boost, and the boost is a positive Hermitian element of trace one, with one spectral value possibly vanishing.</p>
 <p><strong>The physical interpretation is that the mixedness of a state is the motion of the element that produced it.</strong> A state's departure from maximal mixing is $\tanh\Xi$, the velocity of the boost in units where the cone is the speed of light. A pure state is an element on the light cone. A maximally mixed state is an element at rest.</p>
 <p><strong>The boundary.</strong> The statement uses the four-factor word and therefore the complement of the cone. On the cone it holds as a limit, $\tanh\Xi\to1$, and the limit is the pure state. At the origin the state is undefined.</p>
@@ -640,7 +642,7 @@ $$</p>
 </tr>
 <tr>
 <td>the state</td>
-<td>$\tilde\varpi_Q=\tilde Q\tilde Q^{*}/(2H)=\tfrac12(e_t+i\tanh\Xi\,\vec u_{\mathrm b})$</td>
+<td>$\tilde{Ϛ}_{\Psi,Q}=\tilde Q\tilde Q^{*}/(2H)=\tfrac12(e_t+i\tanh\Xi\,\vec u_{\mathrm b})$</td>
 </tr>
 <tr>
 <td>the purity</td>
@@ -717,7 +719,7 @@ $$</p>
 <td>the modulus of the interval, the invariant mass</td>
 </tr>
 <tr>
-<td>$\tilde\varpi_Q$</td>
+<td>$\tilde{Ϛ}_{\Psi,Q}$</td>
 <td>the state, $\tilde Q\tilde Q^{*}/(2H)$, of trace one</td>
 </tr>
 <tr>

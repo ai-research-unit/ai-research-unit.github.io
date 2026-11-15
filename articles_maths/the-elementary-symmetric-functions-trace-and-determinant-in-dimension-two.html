@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Elementary Symmetric Functions: $\operatorname{tr}$ and $\det$ in Dimension Two — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-elementary-symmetric-functions-math0-and-math1-in-dimension-two"><strong>The Elementary Symmetric Functions: $\operatorname{tr}$ and $\det$ in Dimension Two</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The trace and the determinant are the two elementary symmetric functions of the two eigenvalues, and at order two they generate every conjugation-invariant polynomial.</strong></p>
+<p>The article proves the identification $e_1=\operatorname{tr}$, $e_2=\det$, derives Newton's identities and the power-sum recursion they obey at order two, shows that the invariant ring of $M_2(\mathbb{C})$ is the free polynomial ring $\mathbb{C}[\operatorname{tr},\det]$, computes the Jacobian of the pair and locates its rank drop exactly at the scalar matrices, and separates the additive function from the multiplicative one. It assumes <em>The Element: Rank, Trace, Determinant, Characteristic Polynomial at $n=2$</em> for the element and its invariants. It defers the four products built from the trace to <em>The Symmetric and Antisymmetric Parts of a Product at $n=2$</em>, and the four norms to <em>The Four Forms and Their Algebraic Norms at $n=2$</em>.</p>
+<p>The general statement of the invariant ring is in <em>The Trace Form and Its Signature on the Two Halves of $M_2(\mathbb{R})$</em> only for the form; the invariant theory at general order is <em>The Element, the Coordinates and the Trace of $M_n(\mathbb{C})$</em>. At order two the theory is the classical theory of symmetric functions in two variables, and that is the point of the article.</p>
+<h2 id="the-symmetric-functions-of-two-numbers">The Symmetric Functions of Two Numbers</h2>
+<p><strong>Definition.</strong> For two numbers $\lambda_1,\lambda_2$ the elementary symmetric functions are</p>
+<p>$$
+e_1=\lambda_1+\lambda_2,\qquad e_2=\lambda_1\lambda_2 ,
+$$</p>
+<p>and the power sums are $p_k=\lambda_1^{k}+\lambda_2^{k}$ for $k\ge1$.</p>
+<p><strong>Proposition.</strong> The ring of symmetric polynomials in two variables is $\mathbb{C}[e_1,e_2]$, freely generated.</p>
+<p><strong>Proof.</strong> The polynomials $e_1,e_2$ are algebraically independent: if $P(e_1,e_2)=0$ as a polynomial in $\lambda_1,\lambda_2$, then setting $\lambda_1=\lambda_2=t$ gives $P(2t,t^{2})=0$ for all $t$, which forces $P=0$ by the substitution $t\mapsto(2t,t^{2})$, an injection on monomials of the same degree. Every symmetric polynomial is a polynomial in the two elementary ones by the fundamental theorem of symmetric functions.</p>
+<p><strong>Corollary.</strong> Every symmetric polynomial in two variables has a unique expression in $e_1$ and $e_2$, of degree equal to its degree in each variable.</p>
+<p><strong>Only two functions are needed at order two.</strong> In $n$ variables there are $n$ elementary symmetric functions; at $n=2$ there are two, and every symmetric function is a polynomial in them. That count is the reason the whole invariant theory of the matrix algebra collapses to a plane.</p>
+<h2 id="the-two-coefficients-of-the-characteristic-polynomial">The Two Coefficients of the Characteristic Polynomial</h2>
+<p><strong>Theorem.</strong> For $A\in M_2(\mathbb{C})$ with eigenvalues $\lambda_1,\lambda_2$,</p>
+<p>$$
+\boxed{\;e_1(A)=\operatorname{tr}A,\qquad e_2(A)=\det A.\;}
+$$</p>
+<p><strong>Proof.</strong> The characteristic polynomial is $\lambda^{2}-(\operatorname{tr}A)\lambda+\det A$ and also $(\lambda-\lambda_1)(\lambda-\lambda_2)=\lambda^{2}-(\lambda_1+\lambda_2)\lambda+\lambda_1\lambda_2$; comparing coefficients gives both identities. The comparison is legitimate because the roots are the eigenvalues and the polynomial is monic of degree two.</p>
+<p><strong>The functions are polynomials in the entries.</strong> In coordinates, $e_1=a+d$ and $e_2=ad-bc$; the first is linear and the second is quadratic. Both are invariant under conjugation, because similar matrices have the same characteristic polynomial.</p>
+<p><strong>The pair separates the generic element from its spectrum.</strong> Two elements with the same $e_1$ and the same $e_2$ have the same characteristic polynomial, hence the same unordered pair of eigenvalues. Conversely the unordered pair fixes the two functions. The information lost in passing from $A$ to $(e_1,e_2)$ is exactly the choice of basis, on the generic stratum.</p>
+<h2 id="newtons-identities-at-order-two">Newton's Identities at Order Two</h2>
+<p><strong>Theorem (Newton).</strong> For $k\ge1$,</p>
+<p>$$
+p_k=e_1p_{k-1}-e_2p_{k-2},\qquad p_0=2,\quad p_1=e_1 .
+$$</p>
+<p><strong>Proof.</strong> Each eigenvalue satisfies $\lambda^{2}=e_1\lambda-e_2$, so $\lambda^{k}=e_1\lambda^{k-1}-e_2\lambda^{k-2}$ for $k\ge2$; summing over the two eigenvalues gives the identity. For $k=1$ the identity is $p_1=e_1p_0-e_2p_{-1}$ with the convention $p_{-1}=0$, which is the definition of $e_1$.</p>
+<p><strong>Corollary (the first three power sums).</strong> In terms of the matrix,</p>
+<p>$$
+\operatorname{tr}(A^{2})=(\operatorname{tr}A)^{2}-2\det A,\qquad
+\operatorname{tr}(A^{3})=(\operatorname{tr}A)^{3}-3(\operatorname{tr}A)(\det A).
+$$</p>
+<p><strong>Proof.</strong> $p_2=e_1^{2}-2e_2$ and $p_3=e_1p_2-e_2p_1=e_1^{3}-3e_1e_2$. At order two the two identities are also direct consequences of Cayley–Hamilton, which reads $A^{2}=(\operatorname{tr}A)A-(\det A)I$ and turns every power into a linear combination of $A$ and $I$.</p>
+<p><strong>Inversion.</strong> The two functions are recovered from the power sums by</p>
+<p>$$
+e_1=p_1,\qquad e_2=\tfrac12\bigl(p_1^{2}-p_2\bigr),
+$$</p>
+<p>so the pair $(p_1,p_2)$ and the pair $(e_1,e_2)$ carry the same information. The inversion is the content of the identity $\operatorname{tr}(A^{2})=(\operatorname{tr}A)^{2}-2\det A$ read backwards.</p>
+<p><strong>The power sums are the moments of a measure of two atoms.</strong> The recursion is the recursion of the moments of the spectral measure $\delta_{\lambda_1}+\delta_{\lambda_2}$, and at order two the measure is determined by two moments. This reading is the one used for the trace of a function of a matrix in <em>The Analysis on $M_2(\mathbb{C})$</em>.</p>
+<h2 id="the-ring-of-invariants">The Ring of Invariants</h2>
+<p><strong>Theorem.</strong> The conjugation-invariant polynomial functions on $M_2(\mathbb{C})$ form the polynomial ring $\mathbb{C}[\operatorname{tr},\det]$, freely generated by the two functions.</p>
+<p><strong>Proof.</strong> An invariant polynomial is constant on every conjugacy class, hence on the dense set of diagonalisable elements, where it is a symmetric polynomial in the two eigenvalues, hence a polynomial in $e_1,e_2$ by §<em>The Symmetric Functions of Two Numbers</em>. Independence holds because $e_1,e_2$ are algebraically independent as functions of the eigenvalues, and the diagonal matrices realise every pair of eigenvalues.</p>
+<p><strong>Corollary (the quotient).</strong> The categorical quotient of $M_2(\mathbb{C})$ by conjugation is the plane $\mathbb{C}^{2}$, with quotient map $A\mapsto(\operatorname{tr}A,\det A)$.</p>
+<p><strong>The degeneration of the ring.</strong> The invariant ring is polynomial, so the quotient is smooth; the fibres of the quotient map are not. The fibre over $(\tau,\delta)$ with discriminant $\tau^{2}-4\delta\neq0$ is a single conjugacy class, of dimension $3$; the fibre over the parabola $\tau^{2}=4\delta$ is the union of the scalars and the Jordan classes, and its structure is <em>The Minimal Polynomial and the Two Jordan Regimes of $M_2(\mathbb{C})$</em>.</p>
+<p><strong>The degrees.</strong> The two generators have degrees $1$ and $2$; the product of the degrees is $2$, the order of the Weyl group of $GL_2$, and the sum of the degrees minus the rank, $1+2-2=1$, is the number of positive roots. Those coincidences are the general Chevalley statement read at rank two.</p>
+<h2 id="the-jacobian-and-the-two-strata">The Jacobian and the Two Strata</h2>
+<p><strong>The pair $(\operatorname{tr},\det)$ is a map to a plane, and its differential is computed by the two gradients.</strong></p>
+<p><strong>Proposition.</strong> At $A$ the differential is</p>
+<p>$$
+D(\operatorname{tr},\det)_{A}(H)=\bigl(\operatorname{tr}H,\ \operatorname{tr}(\operatorname{adj}A\,H)\bigr),
+$$</p>
+<p>with $\operatorname{adj}A=(\operatorname{tr}A)I-A$.</p>
+<p><strong>Proof.</strong> The trace is linear. The determinant is differentiable with derivative $\operatorname{tr}(\operatorname{adj}A\,H)$, the classical formula; at order two it is the direct computation $\det(A+tH)=\det A+t\operatorname{tr}(\operatorname{adj}A\,H)+t^{2}\det H$, and the coefficient of $t$ is $\operatorname{tr}(\operatorname{adj}A\,H)$.</p>
+<p><strong>Theorem (the rank of the Jacobian).</strong> The two linear forms are dependent exactly at the scalar matrices, and independent everywhere else. So the map is a submersion of rank $2$ off $\mathbb{C}I$ and of rank $1$ on $\mathbb{C}I$.</p>
+<p><strong>Proof.</strong> The forms $\operatorname{tr}$ and $\operatorname{tr}(\operatorname{adj}A\,\cdot)$ are dependent exactly when $\operatorname{adj}A$ is a scalar, since the trace pairing is nondegenerate: $\operatorname{adj}A=\mu I$ means $(\operatorname{tr}A)I-A=\mu I$, that is $A=(\operatorname{tr}A-\mu)I$. Conversely at $A=\lambda I$ one has $\operatorname{adj}A=\lambda I$ and the second form is $\lambda$ times the first.</p>
+<p><strong>Corollary.</strong> The generic fibre is a smooth submanifold of complex dimension $2$; the fibre over the discriminant parabola is singular along the scalars. The dimension count is $4-2=2$ off the scalars, and the conjugacy class inside that fibre has dimension $4-2=2$, the dimension of $GL_2$ minus that of a maximal torus.</p>
+<h2 id="additive-and-multiplicative">Additive and Multiplicative</h2>
+<p><strong>The trace is additive on the algebra and the determinant is multiplicative on the group; neither is both.</strong></p>
+<p><strong>Proposition.</strong> $\operatorname{tr}(A+C)=\operatorname{tr}A+\operatorname{tr}C$ for all $A,C$, and $\det(AC)=\det A\det C$ for all $A,C$. But $\det(A+C)\neq\det A+\det C$ in general and $\operatorname{tr}(AC)\neq\operatorname{tr}A\operatorname{tr}C$ in general.</p>
+<p><strong>Proof.</strong> The first two are the linearity of the trace and the multiplicativity of the determinant. For the failures: with $A=C=I$, $\det(2I)=4\neq2=\det I+\det I$; with $A=C=I$ one has $\operatorname{tr}(AC)=\operatorname{tr}I=2$ while $\operatorname{tr}A\operatorname{tr}C=4$.</p>
+<p><strong>The trace is a homomorphism on the additive group and the determinant on the multiplicative group.</strong> The logarithm of the absolute value of the determinant is the additive character that the exponential converts into the trace: near the identity, $\log\det e^{H}=\operatorname{tr}H$. That identity is the reason the trace is the infinitesimal form of the determinant, and it is used in <em>The Exponential and the Lie Group Structure of $\mathrm{GL}_2(\mathbb{C})$</em>.</p>
+<p><strong>The two functions on the two halves.</strong> Restricted to $\operatorname{Herm}_2$ the trace is real and the determinant is real but not of a fixed sign; restricted to $\operatorname{Skew}_2$ the trace vanishes identically, because the single antisymmetric matrix of order two is traceless. The restrictions are computed in <em>The Trace Form and Its Signature on the Two Halves of $M_2(\mathbb{R})$</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>The trace and the determinant are the elementary symmetric functions $e_1$ and $e_2$ of the two eigenvalues, in coordinates $a+d$ and $ad-bc$. They generate the ring of symmetric polynomials in two variables and the ring of conjugation-invariant polynomials on the algebra, freely, so the quotient by conjugation is the plane. Newton's identities give $p_k=e_1p_{k-1}-e_2p_{k-2}$ with $p_0=2$, hence $\operatorname{tr}(A^{2})=(\operatorname{tr}A)^{2}-2\det A$ and $\operatorname{tr}(A^{3})=(\operatorname{tr}A)^{3}-3(\operatorname{tr}A)(\det A)$, and the pair is recovered from $(p_1,p_2)$ by $e_2=\tfrac12(p_1^{2}-p_2)$.</p>
+<p>The Jacobian of the pair is $\bigl(\operatorname{tr}H,\operatorname{tr}(\operatorname{adj}A\,H)\bigr)$, of rank $2$ off the scalar matrices and of rank $1$ on them. The trace is additive and the determinant multiplicative, and the log-determinant is the primitive of the trace on the unit group.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Power sum</th>
+<th>Value at order two</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$p_0$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$p_1$</td>
+<td>$\operatorname{tr}A$</td>
+</tr>
+<tr>
+<td>$p_2$</td>
+<td>$(\operatorname{tr}A)^{2}-2\det A$</td>
+</tr>
+<tr>
+<td>$p_3$</td>
+<td>$(\operatorname{tr}A)^{3}-3(\operatorname{tr}A)(\det A)$</td>
+</tr>
+<tr>
+<td>$p_4$</td>
+<td>$(\operatorname{tr}A)^{4}-4(\operatorname{tr}A)^{2}(\det A)+2(\det A)^{2}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e_1,e_2$</td>
+<td>the elementary symmetric functions of the two eigenvalues</td>
+</tr>
+<tr>
+<td>$p_k$</td>
+<td>the power sum $\operatorname{tr}(A^{k})$</td>
+</tr>
+<tr>
+<td>$\operatorname{tr},\det$</td>
+<td>the trace and the determinant, equal to $e_1$ and $e_2$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}[\operatorname{tr},\det]$</td>
+<td>the ring of conjugation-invariant polynomials</td>
+</tr>
+<tr>
+<td>$\operatorname{adj}A$</td>
+<td>the adjugate, equal to $(\operatorname{tr}A)I-A$</td>
+</tr>
+<tr>
+<td>$\tau,\delta$</td>
+<td>the values $\operatorname{tr}A$ and $\det A$</td>
+</tr>
+<tr>
+<td>$D(\operatorname{tr},\det)_{A}$</td>
+<td>the Jacobian at $A$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>I. G. Macdonald, <em>Symmetric Functions and Hall Polynomials</em> (Oxford University Press, 1995), for the elementary symmetric functions, Newton's identities and the fundamental theorem.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge University Press, 2013), for the derivative of the determinant and the power sums at order two.</li>
+<li><a href="the-element-rank-trace-determinant-characteristic-polynomial-at-n-2.html">The Element: Rank, Trace, Determinant, Characteristic Polynomial at $n=2$</a>, for the element and the Cayley–Hamilton identity used here.</li>
+<li><a href="the-matrix-algebra-m2c.html">The Matrix Algebra $M_2(\mathbb{C})$</a>, for the trace and the determinant on the algebra.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

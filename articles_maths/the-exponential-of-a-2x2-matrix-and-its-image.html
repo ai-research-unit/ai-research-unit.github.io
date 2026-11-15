@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Exponential of a $2\times2$ Matrix and Its Image — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-exponential-of-a-math0-matrix-and-its-image"><strong>The Exponential of a $2\times2$ Matrix and Its Image</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The exponential of a $2\times2$ complex matrix converges everywhere, always has nonzero determinant, satisfies $\det e^{X}=e^{\operatorname{tr}X}$, and its image is the whole of $\mathrm{GL}_2(\mathbb{C})$.</strong></p>
+<p>The article defines the exponential series at order two, proves the determinant formula, computes the derivative at the origin, proves the surjectivity onto the invertible matrices, describes the period lattice of the exponential and the fibres, and states what the image becomes on the two halves and on the Hermitian space. It assumes <em>The Spectrum of a $2\times2$ Matrix</em>, <em>The Minimal Polynomial and the Two Jordan Regimes of $M_2(\mathbb{C})$</em> and <em>The Element: Rank, Trace, Determinant, Characteristic Polynomial at $n=2$</em>.</p>
+<p>It follows the biquaternion account of <em>The Polar Decomposition of a Biquaternion</em> for the split into a length and a direction.</p>
+<h2 id="the-series">The Series</h2>
+<p><strong>Definition.</strong> The <strong>exponential</strong> of a matrix $X$ is</p>
+<p>$$
+e^{X}=\sum_{k\ge0}\frac{X^{k}}{k!}.
+$$</p>
+<p><strong>Proposition.</strong> The series converges for every complex matrix, and the convergence is absolute and uniform on every bounded set of matrices.</p>
+<p><strong>Proof.</strong> With $\|X\|\le R$ the norm of the $k$-th term is at most $R^{k}/k!$, whose sum converges; the comparison is uniform on the set where the bound holds.</p>
+<p><strong>Corollary.</strong> The exponential is a continuous map from the eight-dimensional real space $M_2(\mathbb{C})$ into itself.</p>
+<p><strong>Proof.</strong> It is the uniform limit of the continuous partial sums on every bounded set.</p>
+<p><strong>Corollary.</strong> The exponential of a scalar matrix is the scalar exponential, and the exponential of a diagonal matrix is the diagonal of the exponentials.</p>
+<p><strong>Proof.</strong> The powers of a diagonal matrix are the diagonal powers, and the series is applied entry by entry.</p>
+<h2 id="the-determinant-formula">The Determinant Formula</h2>
+<p><strong>Theorem.</strong> For every matrix, $\det e^{X}=e^{\operatorname{tr}X}$.</p>
+<p><strong>Proof.</strong> In a basis where $X$ is upper triangular, $e^{X}$ is upper triangular with the exponentials of the diagonal entries on the diagonal, so the determinant is the product $e^{\lambda_{1}}e^{\lambda_{2}}=e^{\lambda_{1}+\lambda_{2}}=e^{\operatorname{tr}X}$; and by <em>The Minimal Polynomial and the Two Jordan Regimes of $M_2(\mathbb{C})$</em> such a basis exists over $\mathbb{C}$.</p>
+<p><strong>Corollary.</strong> The exponential of a matrix is always invertible, and its inverse is the exponential of the negative.</p>
+<p><strong>Proof.</strong> The determinant is a nonzero exponential, and $e^{X}e^{-X}=e^{X-X}=I$ because $X$ commutes with $-X$.</p>
+<p><strong>Corollary.</strong> The exponential lands in $\mathrm{GL}_2(\mathbb{C})$, and it lands in $\mathrm{SL}_2(\mathbb{C})$ on the matrices whose trace lies in $2\pi i\mathbb{Z}$, in particular on every traceless matrix.</p>
+<p><strong>Proof.</strong> The determinant of $e^{X}$ is $e^{\operatorname{tr}X}$, which is one exactly when the trace is a multiple of $2\pi i$, and that holds for every traceless $X$.</p>
+<h2 id="the-derivative-at-the-origin">The Derivative at the Origin</h2>
+<p><strong>Proposition.</strong> The derivative of the exponential at the origin is the identity, so the exponential is a local diffeomorphism near the zero matrix.</p>
+<p><strong>Proof.</strong> The series is $I+X+O(X^{2})$, so the linear part at the origin is $X\mapsto X$; the inverse function theorem then applies in the eight real dimensions.</p>
+<p><strong>Corollary.</strong> Every matrix near the identity has a unique logarithm near zero.</p>
+<p><strong>Proof.</strong> The local inverse of the exponential at the identity is the logarithm series $\log(I+Y)=Y-\tfrac12Y^{2}+\cdots$, which converges for $\|Y\|<1$.</p>
+<p><strong>Corollary.</strong> The exponential restricted to a small ball around the zero matrix is a homeomorphism onto a neighbourhood of the identity, with the logarithm as its inverse.</p>
+<p><strong>Proof.</strong> The derivative at the origin is the identity, and the logarithm series converges on the open ball of radius one; the two maps are inverse on the two balls by the identity $\exp(\log(I+Y))=I+Y$.</p>
+<h2 id="the-image">The Image</h2>
+<p><strong>Theorem.</strong> The exponential maps $M_2(\mathbb{C})$ onto $\mathrm{GL}_2(\mathbb{C})$.</p>
+<p><strong>Proof.</strong> Let $A$ be invertible. Over $\mathbb{C}$ it has a basis in which it is diagonal or a single Jordan block, by <em>The Minimal Polynomial and the Two Jordan Regimes of $M_2(\mathbb{C})$</em>. In the diagonal case with eigenvalues $\lambda_{1},\lambda_{2}\ne0$ take $X$ diagonal with entries $\log\lambda_{1},\log\lambda_{2}$; in the Jordan case with the eigenvalue $\lambda\ne0$ take $X=(\log\lambda)I+N/\lambda$, and then $e^{X}=\lambda\bigl(I+N/\lambda\bigr)=\lambda I+N$ because $N^{2}=0$. In both cases $e^{X}=A$.</p>
+<p><strong>Corollary.</strong> Every invertible matrix is the exponential of some matrix, so the exponential is surjective onto the group of units.</p>
+<p><strong>Proof.</strong> The theorem treats an arbitrary invertible matrix.</p>
+<p><strong>Corollary.</strong> The exponential is not injective, and its fibres are infinite.</p>
+<p><strong>Proof.</strong> The matrices $X$ and $X+2\pi i\,I$ have the same exponential because the scalar $2\pi i\,I$ commutes with $X$; iterating gives infinitely many preimages of each point.</p>
+<h2 id="the-period-lattice">The Period Lattice</h2>
+<p><strong>Proposition.</strong> The set of matrices $P$ with $e^{P}=I$ is the set of matrices with all eigenvalues in $2\pi i\mathbb{Z}$ and no Jordan part, that is, the diagonalisable matrices whose eigenvalues lie in $2\pi i\mathbb{Z}$.</p>
+<p><strong>Proof.</strong> If $e^{P}=I$ then every eigenvalue of $e^{P}$ is one, so every eigenvalue of $P$ lies in $2\pi i\mathbb{Z}$, and $P$ must be diagonalisable because a Jordan block with a nonzero eigenvalue gives a nontrivial unipotent factor; conversely such a $P$ has $e^{P}=I$ by the spectral mapping.</p>
+<p><strong>Corollary.</strong> The kernel contains the lattice $2\pi i\mathbb{Z}\,I$ and no nonzero nilpotent, so the kernel is not a linear subspace of the space of matrices.</p>
+<p><strong>Proof.</strong> The scalar $2\pi i n\,I$ has $e^{2\pi i n I}=I$; and for $N\ne0$ with $N^{2}=0$ the exponential is $I+2\pi iN$, which differs from $I$. The sum of a matrix in the kernel and a nilpotent is therefore outside the kernel in general.</p>
+<p><strong>Corollary.</strong> If $P$ commutes with $X$ and has all eigenvalues in $2\pi i\mathbb{Z}$ with no Jordan part, then $e^{X+P}=e^{X}$, so the ambiguity of the logarithm contains the addition of every such $P$.</p>
+<p><strong>Proof.</strong> A commuting pair satisfies $e^{X+P}=e^{X}e^{P}$, and $e^{P}=I$ for such a $P$ by the proposition.</p>
+<h2 id="the-two-halves-and-the-hermitian-space">The Two Halves and the Hermitian Space</h2>
+<p><strong>Proposition.</strong> The exponential of a Hermitian matrix is Hermitian and positive definite, and the exponential of a skew-Hermitian matrix is unitary.</p>
+<p><strong>Proof.</strong> If $X^{*}=\pm X$ then $(e^{X})^{*}=e^{X^{*}}=e^{\pm X}$, which is $e^{X}$ in the Hermitian case and $(e^{X})^{-1}$ in the skew-Hermitian case; and the eigenvalues of $e^{X}$ in the Hermitian case are the exponentials of the real eigenvalues, hence positive.</p>
+<p><strong>Corollary.</strong> The exponential of a real symmetric matrix is real symmetric positive definite, and the exponential of a real antisymmetric matrix is a rotation.</p>
+<p><strong>Proof.</strong> The real symmetric case is the Hermitian case under conjugation by a real basis, and the real antisymmetric matrix is skew-Hermitian with a real form.</p>
+<p><strong>Corollary.</strong> The exponential carries the Hermitian space onto the positive definite cone, and the map is a homeomorphism onto that cone.</p>
+<p><strong>Proof.</strong> The logarithm of a positive definite matrix is Hermitian, and the two maps are continuous and inverse to each other on the cone.</p>
+<h2 id="summary">Summary</h2>
+<p>The exponential of a $2\times2$ complex matrix is defined by an everywhere convergent series, and it satisfies $\det e^{X}=e^{\operatorname{tr}X}$, so its values are always invertible. Its derivative at the origin is the identity, so it is a local diffeomorphism near zero, and it is surjective onto $\mathrm{GL}_2(\mathbb{C})$: the logarithm is built from the diagonal case and the Jordan case.</p>
+<p>The exponential is far from injective: the scalar $2\pi iI$ lies in its kernel together with the diagonal matrices with integer imaginary eigenvalues, and adding $2\pi iI$ to any matrix does not change its exponential. On the Hermitian space the exponential is a homeomorphism onto the positive definite cone, and on the skew-Hermitian space it lands in the unitary group.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e^{X}$</td>
+<td>the exponential series</td>
+</tr>
+<tr>
+<td>$\mathrm{GL}_2(\mathbb{C})$</td>
+<td>the invertible matrices</td>
+</tr>
+<tr>
+<td>$\mathrm{SL}_2(\mathbb{C})$</td>
+<td>the matrices of determinant one</td>
+</tr>
+<tr>
+<td>$N$</td>
+<td>a nilpotent with $N^{2}=0$</td>
+</tr>
+<tr>
+<td>$\ker\exp$</td>
+<td>the matrices whose exponential is the identity</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Roger A. Horn and Charles R. Johnson, <em>Topics in Matrix Analysis</em> (Cambridge University Press, 1991), for the matrix exponential and the determinant formula.</li>
+<li>Brian C. Hall, <em>Lie Groups, Lie Algebras, and Representations</em> (Springer, 2015), for the exponential map and its local inverse.</li>
+<li><a href="the-minimal-polynomial-and-the-two-jordan-regimes-of-m2c.html">The Minimal Polynomial and the Two Jordan Regimes of $M_2(\mathbb{C})$</a>, for the diagonal and Jordan cases used in the proof of surjectivity.</li>
+<li><a href="the-element-rank-trace-determinant-characteristic-polynomial-at-n-2.html">The Element: Rank, Trace, Determinant, Characteristic Polynomial at $n=2$</a>, for the trace and the determinant.</li>
+<li><a href="the-polar-decomposition-of-a-biquaternion.html">The Polar Decomposition of a Biquaternion</a>, for the length and direction factors that the exponential produces.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

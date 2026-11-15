@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Normal $2\times2$ Matrices and the Common Spectral Theorem — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="normal-math0-matrices-and-the-common-spectral-theorem"><strong>Normal $2\times2$ Matrices and the Common Spectral Theorem</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>A $2\times2$ matrix is normal exactly when it is unitarily diagonalisable, and a commuting family of normal matrices is diagonalised by one unitary frame.</strong></p>
+<p>The article defines normality, proves the equivalence with unitary diagonalisability at order two, derives the three special cases of the Hermitian, skew-Hermitian and unitary matrices from the position of the two eigenvalues, computes the commutant of a normal matrix with simple spectrum, proves the common spectral theorem for a commuting pair, and reads normality as the equality of the two norms $\|Xv\|$ and $\|X^{*}v\|$. It assumes <em>The Spectrum of a $2\times2$ Matrix</em>, <em>Lagrange Idempotents of a $2\times2$ Matrix with Simple Spectrum</em> and <em>The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian at $n=2$</em>.</p>
+<p>It defers the two halves of the spectral theorem to <em>The Spectral Theorem: the Hermitian Case and the Sphere of Idempotents</em> and <em>The Spectral Theorem: the Skew-Hermitian Case and the Two Imaginary Eigenvalues</em>.</p>
+<h2 id="normality">Normality</h2>
+<p><strong>Definition.</strong> A matrix $X$ is <strong>normal</strong> when $XX^{*}=X^{*}X$.</p>
+<p><strong>Proposition.</strong> The Hermitian, the skew-Hermitian and the unitary matrices are normal, and every polynomial in a normal matrix is normal.</p>
+<p><strong>Proof.</strong> If $X^{*}=\pm X$ then both products equal $\pm X^{2}$; if $X$ is unitary then both products are the identity.</p>
+<p><strong>Corollary.</strong> The normal matrices are not a linear subspace: the sum of two normal matrices need not be normal.</p>
+<p><strong>Proof.</strong> Take $X=\begin{pmatrix}0&1\\-1&0\end{pmatrix}$, the rotation by a right angle, and $Y=\begin{pmatrix}0&1\\1&0\end{pmatrix}$, a reflection; both are Hermitian or skew-Hermitian and hence normal, and the sum $\begin{pmatrix}0&2\\0&0\end{pmatrix}$ is not normal because $AA^{*}$ and $A^{*}A$ are the diagonal matrices with $4$ in the two different corners.</p>
+<p><strong>Corollary.</strong> Normality is invariant under unitary conjugation and under the star.</p>
+<p><strong>Proof.</strong> $(UXU^{*})(UXU^{*})^{*}=UXX^{*}U^{*}$ and the same with the reversed order, so the equality is preserved; and the star exchanges the two sides of the equation.</p>
+<h2 id="the-spectral-theorem-at-order-two">The Spectral Theorem at Order Two</h2>
+<p><strong>Theorem.</strong> A matrix is normal exactly when there is a unitary $U$ and a diagonal $\Lambda$ with $X=U\Lambda U^{*}$.</p>
+<p><strong>Proof.</strong> If $X=U\Lambda U^{*}$ then $XX^{*}=U\Lambda\bar\Lambda U^{*}=X^{*}X$. Conversely a normal matrix has the eigenvectors of <em>The Spectrum of a $2\times2$ Matrix</em>, and the eigenspaces of distinct eigenvalues are orthogonal because $\lambda_{1}\langle v_{1},v_{2}\rangle=\langle Xv_{1},v_{2}\rangle=\langle v_{1},X^{*}v_{2}\rangle=\bar\lambda_{2}\langle v_{1},v_{2}\rangle$ forces the product to vanish when the eigenvalues differ; the eigenvectors are orthonormalised and form a unitary frame.</p>
+<p><strong>Corollary.</strong> A normal matrix with distinct eigenvalues is diagonalised by every unitary frame of its eigenvectors, and the diagonal entries are the eigenvalues.</p>
+<p><strong>Proof.</strong> The two eigenspaces are orthogonal lines, and the unitary frame is unique up to the phases of the two lines.</p>
+<p><strong>Corollary.</strong> The normal matrices with simple spectrum form an open dense set in the space of normal matrices, and the exceptional set is the locus where the discriminant vanishes.</p>
+<p><strong>Proof.</strong> The discriminant is a continuous function of the entries, and it vanishes on a closed set of real codimension one inside the normal matrices; the scalars are normal, and they are the only normal matrices with a double eigenvalue that are not diagonalised in a single way.</p>
+<h2 id="the-three-special-cases">The Three Special Cases</h2>
+<p><strong>Proposition.</strong> A normal matrix is Hermitian exactly when its two eigenvalues are real, skew-Hermitian exactly when they are purely imaginary, and unitary exactly when they have modulus one.</p>
+<p><strong>Proof.</strong> In a unitary diagonalisation the star of the matrix is the diagonal of the conjugates of the eigenvalues, so $X^{*}=\pm X$ holds exactly when each eigenvalue satisfies $\bar\lambda=\pm\lambda$; and $X^{*}X=I$ holds exactly when each eigenvalue has modulus one.</p>
+<p><strong>Corollary.</strong> Each of the three classes is described inside the normal matrices by a condition on the spectrum alone.</p>
+<p><strong>Proof.</strong> The conditions are conditions on each of the two eigenvalues, and the spectrum is the pair.</p>
+<p><strong>Corollary.</strong> The Hermitian normal matrices form a real vector space of dimension four, the skew-Hermitian ones another of dimension four, and the unitary ones a group of real dimension four.</p>
+<p><strong>Proof.</strong> The Hermitian matrices are the fixed points of the star, a real-linear involution of the eight-dimensional real space, so each eigenspace has dimension four; the unitary matrices are the solutions of $X^{*}X=I$, which is a group of real dimension four.</p>
+<h2 id="the-commutant">The Commutant</h2>
+<p><strong>Proposition.</strong> The commutant of a matrix with simple spectrum is the two-dimensional algebra of polynomials in the matrix, and for a normal matrix it is the algebra of the two spectral projections.</p>
+<p><strong>Proof.</strong> Commuting with $X$ preserves each eigenspace, which is a line, so the commutant is the set of matrices diagonal in the frame of the eigenvectors; that set is spanned by the two projections, which are polynomials in $X$ by <em>Lagrange Idempotents of a $2\times2$ Matrix with Simple Spectrum</em>.</p>
+<p><strong>Corollary.</strong> The commutant of a matrix with simple spectrum is commutative and consists of the normal matrices exactly when the two projections are orthogonal.</p>
+<p><strong>Proof.</strong> The commutant is spanned by the two projections, and it is commutative because the projections are orthogonal idempotents; the projections are Hermitian exactly when the frame is unitary.</p>
+<p><strong>Corollary.</strong> The commutant of a scalar is the whole algebra, so the simple-spectrum hypothesis cannot be dropped.</p>
+<p><strong>Proof.</strong> The scalar commutes with everything.</p>
+<h2 id="the-common-spectral-theorem">The Common Spectral Theorem</h2>
+<p><strong>Theorem.</strong> If $X$ and $Y$ are normal and commute, then there is one unitary frame in which both are diagonal.</p>
+<p><strong>Proof.</strong> The eigenspaces of $X$ are preserved by $Y$ because $Y$ commutes with $X$: for $Xv=\lambda v$ one has $X(Yv)=YXv=\lambda Yv$, so $Yv$ lies in the same eigenspace. On each eigenspace of $X$, which is one line, $Y$ acts as a scalar; choosing a unit vector in each eigenspace diagonalises $X$ and $Y$ at once.</p>
+<p><strong>Corollary.</strong> A commuting family of normal matrices is simultaneously diagonalisable, and the family is contained in one commutative algebra of dimension at most two.</p>
+<p><strong>Proof.</strong> Apply the theorem to each pair; the common frame diagonalises every member, and the diagonal matrices in two dimensions form a commutative algebra of dimension two.</p>
+<p><strong>Corollary.</strong> Two normal matrices commute exactly when they are simultaneously diagonalisable by one unitary.</p>
+<p><strong>Proof.</strong> The forward direction is the theorem, and the reverse direction is the commutativity of diagonal matrices.</p>
+<h2 id="normality-as-an-isometry-condition">Normality as an Isometry Condition</h2>
+<p><strong>Proposition.</strong> A matrix is normal exactly when $\|Xv\|=\|X^{*}v\|$ for every vector $v$.</p>
+<p><strong>Proof.</strong> The difference of the two squared norms is $v^{*}(X^{*}X-XX^{*})v$, which vanishes for every $v$ exactly when the matrix in the middle is zero.</p>
+<p><strong>Corollary.</strong> The kernel of a normal matrix is the kernel of its star, and the image of a normal matrix is the image of its star.</p>
+<p><strong>Proof.</strong> The equality of the norms makes the two kernels equal, and the images are the orthogonal complements of the two kernels.</p>
+<p><strong>Corollary.</strong> A normal matrix with a one-dimensional kernel has the star with the same kernel, so the two mixed lines of the frame coincide.</p>
+<p><strong>Proof.</strong> The kernel of $X$ is a line, and the kernel of $X^{*}$ is the orthogonal complement of the image of $X$, which is the same line.</p>
+<h2 id="summary">Summary</h2>
+<p>A $2\times2$ matrix is normal when it commutes with its star, and that holds exactly when it is unitarily diagonalisable. The three classical classes sit inside the normal matrices as conditions on the two eigenvalues: real for Hermitian, purely imaginary for skew-Hermitian, of modulus one for unitary, each of real dimension four.</p>
+<p>The commutant of a matrix with simple spectrum is the two-dimensional algebra of polynomials in it, spanned by the two spectral projections, and a commuting family of normal matrices is diagonalised by one unitary frame. Normality is also the equality of the two norms $\|Xv\|$ and $\|X^{*}v\|$ for every vector.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$X^{*}$</td>
+<td>the conjugate transpose</td>
+</tr>
+<tr>
+<td>$U,\Lambda$</td>
+<td>the unitary frame and the diagonal form</td>
+</tr>
+<tr>
+<td>$\rho_{\pm}$</td>
+<td>the spectral projections</td>
+</tr>
+<tr>
+<td>$\operatorname{Com}(X)$</td>
+<td>the commutant of $X$</td>
+</tr>
+<tr>
+<td>$\lambda_{\pm}$</td>
+<td>the two eigenvalues</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge University Press, 2013), for normal matrices and the spectral theorem.</li>
+<li>Paul R. Halmos, <em>A Hilbert Space Problem Book</em> (Springer, 1982), for the spectral theorem and simultaneous diagonalisation.</li>
+<li><a href="the-spectrum-of-a-2x2-matrix.html">The Spectrum of a $2\times2$ Matrix</a>, for the eigenvalues and the eigenspaces.</li>
+<li><a href="the-two-halves-over-c-hermitian-and-skew-hermitian-at-n-2.html">The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian at $n=2$</a>, for the two halves as the fixed points of the star.</li>
+<li><a href="lagrange-idempotents-of-a-2x2-matrix-with-simple-spectrum.html">Lagrange Idempotents of a $2\times2$ Matrix with Simple Spectrum</a>, for the projections that span the commutant.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
