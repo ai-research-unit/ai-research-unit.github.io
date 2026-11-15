@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The General Plain Sesquilinear Product — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-general-plain-sesquilinear-product"><strong>The General Plain Sesquilinear Product</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The third of the four general products leaves the first slot as it stands and conjugates the second by the Hermitian involution. It is written $\tilde Q_1\tilde Q_2^{*}$, it is the derived operation of the sesqualgebra $\mathbb{B}$ with its involution ${}^{*}$, and it is the product the whole sesquilinear half of the corpus is built on. The insertion of ${}^{*}$ in the second slot costs the same three laws as the insertion of ${}^{\natural}$ in the first, keeps a unit on the opposite side, and buys something the other three products do not have: a positive definite scalar part, and a diagonal with no isotropic element.</p>
+<p>This article reads the product alone: the coordinate rule, the scalar–vector form, the laws, the units, the image and the diagonal, the two halves, the four composites, the trace form against the halves, and the row of the product in the comparison of the four. The notation is that of <a href="the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html">The Four General Products and Their Relations over the Biquaternion Algebra</a>: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, coefficient basis $\mathcal{E}=(e_t,\vec e_x,\vec e_y,\vec e_z)$, $\tilde Q=Q_te_t+\vec Q$, the three conjugations, and the two pairings. The sesqualgebra setting is <a href="introduction-to-the-general-plain-sesqualgebra.html">Introduction to the General Plain Sesqualgebra</a>; the forms are <a href="the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html">The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</a>; the twelve products are <a href="symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html">Symmetric and Antisymmetric Decomposition of the Four General Products</a>.</p>
+<p>The product is $\mathbb{C}$-linear in the first slot and conjugate-linear in the second. Every statement below respects that asymmetry: a right unit and not a left one, an involution on the left rather than on the right, a diagonal that is Hermitian rather than central, and a defect of the symmetrisation of one dimension against a defect of the antisymmetrisation of three.</p>
+<h2 id="the-product-and-its-coordinate-rule">The Product and Its Coordinate Rule</h2>
+<p><strong>Definition.</strong> The <strong>general plain sesquilinear product</strong> is
+$$
+\tilde Q_1\tilde Q_2^{*}=\sum_{\mu}\sum_{\nu}Q_{1\mu}\overline{Q_{2\nu}}\,e_\mu e_\nu .
+$$</p>
+<p><strong>Proposition (the coordinate rule).</strong> For all $\tilde Q_1,\tilde Q_2$,
+$$
+\tilde Q_1\tilde Q_2^{*}=\bigl(Q_{1t}\overline{Q_{2t}}+Q_{1x}\overline{Q_{2x}}+Q_{1y}\overline{Q_{2y}}+Q_{1z}\overline{Q_{2z}}\bigr)
++\bigl(Q_{1t}\overline{Q_{2x}}-Q_{1x}\overline{Q_{2t}}+Q_{1y}\overline{Q_{2z}}-Q_{1z}\overline{Q_{2y}}\bigr)\vec e_x
++\bigl(Q_{1t}\overline{Q_{2y}}-Q_{1x}\overline{Q_{2z}}-Q_{1y}\overline{Q_{2t}}+Q_{1z}\overline{Q_{2x}}\bigr)\vec e_y
++\bigl(Q_{1t}\overline{Q_{2z}}+Q_{1x}\overline{Q_{2y}}-Q_{1y}\overline{Q_{2x}}-Q_{1z}\overline{Q_{2t}}\bigr)\vec e_z .
+$$</p>
+<p><em>Proof.</em> The plain coordinate rule with every coordinate of the second factor conjugated, the conjugation being an automorphism of the structure constants because they are real. Verified exactly on the sixteen pairs of the basis and on general elements with coefficients in $\mathbb{Q}(i)$.</p>
+<p><strong>Remark (the scalar rule).</strong> The product satisfies $\tilde Q_1(\lambda\tilde Q_2)^{*}=\overline{\lambda}\,\tilde Q_1\tilde Q_2^{*}$ and $(\lambda\tilde Q_1)\tilde Q_2^{*}=\lambda\,\tilde Q_1\tilde Q_2^{*}$. The first slot is linear and the second is conjugate-linear, and no conjugation can move from one slot to the other without changing the product. This is the defining asymmetry of every sesquilinear object in the corpus.</p>
+<h2 id="the-scalarvector-form">The Scalar–Vector Form</h2>
+<p><strong>Theorem (the scalar–vector form).</strong> For all $\tilde Q_1,\tilde Q_2$,
+$$
+\boxed{\;\tilde Q_1\tilde Q_2^{*}=\bigl(Q_{1t}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})\bigr)-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\,\vec Q_1-\vec Q_1\times\overline{\vec Q_2}\;}
+$$</p>
+<p><em>Proof.</em> The scalar coefficient is the four products with the three vector signs negative and every second coordinate conjugated, that is $Q_{1t}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})$. The three vector coefficients group into the two mixed terms and the cross term with the conjugation on the second factor. Computed exactly on general elements.</p>
+<p><strong>Proposition (the scalar part is a Hermitian form).</strong> The scalar part of the product is
+$$
+\mathrm{Sc}\bigl(\tilde Q_1\tilde Q_2^{*}\bigr)=Q_{1t}\overline{Q_{2t}}+Q_{1x}\overline{Q_{2x}}+Q_{1y}\overline{Q_{2y}}+Q_{1z}\overline{Q_{2z}}=H(\tilde Q_1,\tilde Q_2),
+$$
+a Hermitian form, $\mathbb{C}$-linear in the first slot and conjugate-linear in the second, of Gram matrix the identity, and positive definite:
+$$
+H(\tilde Q,\tilde Q)=\lvert Q_t\rvert^2+\lvert Q_x\rvert^2+\lvert Q_y\rvert^2+\lvert Q_z\rvert^2>0\qquad(\tilde Q\neq0).
+$$</p>
+<p><em>Proof.</em> The four signs of the scalar row are positive and each second coordinate carries a bar, which is the definition of $H$. The diagonal value is a sum of four squares of moduli, and it vanishes only when all four coordinates vanish.</p>
+<p><strong>Remark (the definite column).</strong> This is the only one of the four general products whose scalar part is positive definite. The plain product carries the split form, the general quaternionic bilinear product the anisotropic but indefinite norm form of $N$ over $\mathbb{C}$, and the general quaternionic sesquilinear product the indefinite Krein form. The consequence is immediate and it is used in the next sections: the product has no isotropic element, $\tilde Q\tilde Q^{*}=0$ forces $\tilde Q=0$.</p>
+<h2 id="the-laws-it-keeps-and-the-laws-it-loses">The Laws It Keeps and the Laws It Loses</h2>
+<p><strong>Theorem (the four laws of the ladder fail).</strong> The product is not associative, not flexible, not left alternative, not right alternative, and not power associative.</p>
+<p><em>Proof.</em> Four witnesses, each computed exactly.</p>
+<p><em>Not associative.</em> With $\tilde Q_1=\tilde Q_2=e_t$, $\tilde Q_3=\vec e_x$: $(\tilde Q_1\tilde Q_2^{*})\tilde Q_3^{*}=e_t\vec e_x^{*}=-\vec e_x$ against $\tilde Q_1(\tilde Q_2\tilde Q_3^{*})^{*}=\vec e_x$.</p>
+<p><em>Not flexible.</em> With $\tilde Q_1=\vec e_x$, $\tilde Q_2=e_t$: $(\vec e_xe_t^{*})\vec e_x^{*}=\vec e_x\vec e_x^{*}=e_t$ against $\vec e_x(e_t\vec e_x^{*})^{*}=\vec e_x(-\vec e_x)^{*}=-e_t$.</p>
+<p><em>Not alternative.</em> Left, with $\tilde Q_1=e_t$, $\tilde Q_2=\vec e_x$: $(e_te_t^{*})\vec e_x^{*}=-\vec e_x$ against $e_t(e_t\vec e_x^{*})^{*}=\vec e_x$. Right, with the same pair: $(e_t\vec e_x^{*})\vec e_x^{*}=-e_t$ against $e_t(\vec e_x\vec e_x^{*})^{*}=e_t$.</p>
+<p><em>Not power associative.</em> For $\tilde Q=e_t+\vec e_x$: $\tilde Q(\tilde Q\tilde Q^{*})=2e_t+2\vec e_x$ and $(\tilde Q\tilde Q^{*})\tilde Q^{*}=2e_t-2\vec e_x$.</p>
+<p><strong>Remark (the same reason as the quaternionic case, on the other side).</strong> The product is the plain product composed with an anti-automorphism on the right, and every failure above is the movement of the conjugation into the inner factor at a rebracketing. The two bilinear-conjugation products of the batch, $\tilde Q_1^{\natural}\tilde Q_2$ and $\tilde Q_1\tilde Q_2^{*}$, are mirror images of one another, and their failures are the same failures with the slots exchanged.</p>
+<p><strong>Proposition (the exact identity).</strong> The involution reverses the product,
+$$
+\bigl(\tilde Q_1\tilde Q_2^{*}\bigr)^{*}=\tilde Q_2\tilde Q_1^{*}.
+$$</p>
+<p><em>Proof.</em> ${}^{*}$ is an anti-automorphism of the plain product and an involution, so $(\tilde Q_1\tilde Q_2^{*})^{*}=\tilde Q_2\tilde Q_1^{*}$. Verified on general elements.</p>
+<p><strong>Proposition (the product is not commutative).</strong> $\tilde Q_1\tilde Q_2^{*}\neq\tilde Q_2\tilde Q_1^{*}$ in general; with $\tilde Q_1=\vec e_x$ and $\tilde Q_2=\vec e_y$ the two values are $-\vec e_z$ and $+\vec e_z$.</p>
+<p><em>Proof.</em> The coordinate rule at the two orders, with the conjugation moving from the second factor to the first.</p>
+<p><strong>Remark (what is not lost).</strong> The product keeps no law of the ladder, and it keeps the two identities that matter for the sesquilinear theory: the reversal above, and the Hermitian symmetry of the scalar part, $H(\tilde Q_1,\tilde Q_2)=\overline{H(\tilde Q_2,\tilde Q_1)}$. Those two are what makes the product the natural one for the unitary group and for the cone of squares.</p>
+<h2 id="the-one-sided-units">The One-Sided Units</h2>
+<p><strong>Theorem (a right unit and no left unit).</strong> The element $e_t$ is a right identity, $\tilde Qe_t^{*}=\tilde Q$ for every $\tilde Q$, and there is no left identity.</p>
+<p><em>Proof.</em> $e_t^{*}=e_t$ and $\tilde Qe_t=\tilde Q$ in the algebra. For the left side, $e_t\tilde Q^{*}=\tilde Q^{*}$, which equals $\tilde Q$ only for $\tilde Q\in\mathbb{B}_{H}$, the real quaternion subspace; the left multiplication by $e_t$ is the involution ${}^{*}$, whose eigenvalues $1$ and $-1$ are both present. The linear system for a left unit has no solution; the least-squares residual is $\tfrac32$.</p>
+<p><strong>Corollary (the right unit is unique).</strong> If $\tilde U\tilde Q^{*}=\tilde Q$ for all $\tilde Q$ then $\tilde U=e_t$.</p>
+<p><em>Proof.</em> Put $\tilde Q=e_t$: $\tilde Ue_t=e_t$, and $\tilde Ue_t=\tilde U$. Computed as a linear system, the solution is $(1,0,0,0)$ with zero residual.</p>
+<p><strong>Remark (the involution on the left).</strong> The left multiplication by $e_t$ is the involution ${}^{*}$, verified on the coefficient basis. It has the two eigenspaces $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ of real dimension four each, and it is the operator that appears in every Peirce computation of the sesquilinear block. The right multiplication by $e_t$ is the identity, and that is exactly the statement that $e_t$ is a right unit.</p>
+<h2 id="the-image-the-diagonal-and-the-scalar-part">The Image, the Diagonal and the Scalar Part</h2>
+<p><strong>Proposition (the image is the whole space).</strong> The image of the product is $\mathbb{B}$, of complex dimension $4$.</p>
+<p><em>Proof.</em> $\tilde Q_1\tilde Q_2^{*}$ with $\tilde Q_2=e_t$ is $\tilde Q_1$, so the image is everything; the span of the sixteen basis products is four-dimensional, computed exactly.</p>
+<p><strong>Theorem (the diagonal is Hermitian).</strong> For every $\tilde Q$,
+$$
+\tilde Q\tilde Q^{*}=H(\tilde Q,\tilde Q)\,e_t-Q_t\overline{\vec Q}+\overline{Q_t}\,\vec Q-\vec Q\times\overline{\vec Q},
+$$
+and $\tilde Q\tilde Q^{*}$ lies in the Hermitian subspace $\mathbb{B}_{\Psi}$. Its scalar part is the nonnegative real $H(\tilde Q,\tilde Q)$, which vanishes only at $\tilde Q=0$.</p>
+<p><em>Proof.</em> The scalar–vector form at equal arguments. For the Hermiticity, $(\tilde Q\tilde Q^{*})^{*}=\tilde Q\tilde Q^{*}$ by the reversal identity, and the fixed set of ${}^{*}$ is $\mathbb{B}_{\Psi}$. The scalar part is the diagonal of $H$, positive definite by the proposition above. Verified on general elements, with the maximal imaginary part of the four coefficients equal to zero.</p>
+<p><strong>Remark (the diagonal against the others).</strong> The diagonal of the plain product fills the whole space; the diagonal of the general quaternionic bilinear product collapses onto the centre; the diagonal here fills a real four-dimensional subspace and carries a scalar part that is a genuine norm. The diagonal is the Hermitian square of the sesqualgebra, and the cone it generates is the algebraic positive cone of <a href="hermitian-squares-and-the-algebraic-positive-cone.html">Hermitian Squares and the Algebraic Positive Cone</a>, restricted to this algebra.</p>
+<p><strong>Proposition (no isotropic element).</strong> $\tilde Q\tilde Q^{*}=0$ if and only if $\tilde Q=0$.</p>
+<p><em>Proof.</em> The scalar part of $\tilde Q\tilde Q^{*}$ is $H(\tilde Q,\tilde Q)$, a sum of four moduli, and it must vanish. Conversely $\tilde Q=0$ gives $0$.</p>
+<p><strong>Remark (the two real dimensions).</strong> The image of the diagonal is contained in $\mathbb{B}_{\Psi}$ and it is four-dimensional over $\mathbb{R}$; its complex span is the whole of $\mathbb{B}$, because $i$ times a value of the diagonal is not a value of the diagonal but is in the span. The vector part of the diagonal lies in $i\,\mathrm{Vect}_{\mathbb{R}}(\mathbb{B})$, and the scalar part is real, so the two parts are of different natures, as the table of diagonals in <a href="the-vector-parts-of-the-products-over-the-biquaternion-algebra.html">The Vector Parts of the Products over the Biquaternion Algebra</a> records.</p>
+<h2 id="the-two-halves-of-this-product">The Two Halves of This Product</h2>
+<p><strong>Definition.</strong> The <strong>symmetric plain sesquilinear product</strong> and the <strong>antisymmetric plain sesquilinear product</strong> are
+$$
+\tilde Q_1\bullet_{*}\tilde Q_2=\tfrac12\bigl(\tilde Q_1\tilde Q_2^{*}+\overline{\tilde Q_2\tilde Q_1^{*}}\bigr),\qquad
+\tilde Q_1\wedge_{*}\tilde Q_2=\tfrac12\bigl(\tilde Q_1\tilde Q_2^{*}-\overline{\tilde Q_2\tilde Q_1^{*}}\bigr).
+$$</p>
+<p><strong>Theorem (the reconstruction and the two forms).</strong> For all $\tilde Q_1,\tilde Q_2$,
+$$
+\boxed{\;\tilde Q_1\tilde Q_2^{*}=\tilde Q_1\bullet_{*}\tilde Q_2+\tilde Q_1\wedge_{*}\tilde Q_2\;},
+$$
+$$
+\tilde Q_1\bullet_{*}\tilde Q_2=H(\tilde Q_1,\tilde Q_2)\,e_t,\qquad
+\tilde Q_1\wedge_{*}\tilde Q_2=-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\,\vec Q_1-\vec Q_1\times\overline{\vec Q_2}.
+$$</p>
+<p><em>Proof.</em> The scalar part $H$ is Hermitian, so it is fixed by the exchange-with-conjugation and stays in the symmetrisation; the vector part changes sign under that operation and stays in the antisymmetrisation. Verified on general elements.</p>
+<p><strong>Corollary (the symmetrisation is central and Hermitian).</strong> $\tilde Q_1\bullet_{*}\tilde Q_2$ is a multiple of $e_t$ by the Hermitian form $H$, so the symmetrisation is a commutative product with a one-dimensional image and a positive definite associated form.</p>
+<p><strong>Remark (the degenerate Jordan product, the definite one).</strong> The symmetrisation is the rank-one product of the Hermitian form, and its square is $\tilde Q\bullet_{*}\tilde Q=H(\tilde Q,\tilde Q)e_t$, a nonnegative real multiple of the identity. Its Jordan defect is one-dimensional, with the witness $\tilde Q_1=\tilde Q_2=\vec e_x$ giving $e_t$, so the identity is not automatic even here; the reason is the absence of a left unit. This is <a href="the-jordan-structure-of-the-symmetric-plain-sesquilinear-product.html">The Jordan Structure of the Symmetric Plain Sesquilinear Product</a>.</p>
+<p><strong>Remark (the antisymmetrisation).</strong> The antisymmetrisation carries the three vector pieces, has zero diagonal, and lands in the vector subspace. Its Jacobi defect is three-dimensional, the image of the failure is the whole vector subspace, and the witness $(\tilde Q_1,\tilde Q_2,\tilde Q_3)=(e_t,\vec e_x,\vec e_y)$ gives $\vec e_z$. On real vector arguments the bracket is minus the cross product and the identity holds there, so the failure is produced by the conjugation in the second slot. This is <a href="the-lie-structure-of-the-antisymmetric-plain-sesquilinear-product.html">The Lie Structure of the Antisymmetric Plain Sesquilinear Product</a>.</p>
+<h2 id="the-four-composites">The Four Composites</h2>
+<p><strong>Theorem (the table of the composites).</strong> For the plain sesquilinear family the images and the scalar parts of the four composites are</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>composite</th>
+<th>image, complex dimension</th>
+<th>scalar part</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$ss$</td>
+<td>$1$</td>
+<td>present</td>
+</tr>
+<tr>
+<td>$sa$</td>
+<td>$1$</td>
+<td>present</td>
+</tr>
+<tr>
+<td>$as$</td>
+<td>$3$</td>
+<td>zero</td>
+</tr>
+<tr>
+<td>$aa$</td>
+<td>$3$</td>
+<td>zero</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Proof.</em> The symmetrisation is central, so an inner $s$ collapses the image to the centre and an outer $s$ produces a scalar part; an outer $a$ is alternating and kills it. The dimensions are the spans over all triples of the complex basis, computed exactly.</p>
+<p><strong>Remark (the same table as the quaternionic bilinear family).</strong> The two central-symmetrisation families share the row $1,1,3,3$, and the two non-central families share $4,4,3,3$. The table of the twelve composites therefore separates the four families into two pairs, and the separator is the dimension of the image of the symmetrisation, not the class of the product. The full table is <a href="symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html">Symmetric and Antisymmetric Decomposition of the Four General Products</a>.</p>
+<p><strong>Corollary (the antisymmetrised composites never leave the vector subspace).</strong> $as$ and $aa$ take their values in $\mathbb{B}_{V}$ and have no scalar part.</p>
+<h2 id="the-trace-form-and-the-halves">The Trace Form and the Halves</h2>
+<p><strong>Definition.</strong> The trace form of the family is $\tau(\tilde Q_1,\tilde Q_2)=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$, the Hermitian form $H$.</p>
+<p><strong>Theorem (the exact split).</strong> For all $\tilde Q_1,\tilde Q_2,\tilde Q_3,\tilde Q_4$,
+$$
+\mathrm{Sc}\bigl(\tilde Q_1\bullet_{*}\tilde Q_2\;\cdot\;\tilde Q_3\wedge_{*}\tilde Q_4^{*}\bigr)=0 ,
+$$
+and consequently, for the two halves of a single pair,
+$$
+\tau(\tilde Q_1,\tilde Q_2)=\tau\bigl(s(\tilde Q_1,\tilde Q_2),s(\tilde Q_1,\tilde Q_2)\bigr)+\tau\bigl(a(\tilde Q_1,\tilde Q_2),a(\tilde Q_1,\tilde Q_2)\bigr).
+$$</p>
+<p><em>Proof.</em> The symmetric value is a multiple of $e_t$, and the scalar part of a multiple of $e_t$ times anything is that multiple times the scalar part of the other factor, which is zero for an antisymmetric value. The consequence is the expansion of $\tau$ with the cross term removed. Verified on the basis and on random quadruples.</p>
+<p><strong>Remark (the definiteness enters here).</strong> The identity above is the reason the form of this family is the one used to build the positive cone: the split of the Hermitian form over the symmetric and antisymmetric halves is exact, and the symmetric half is a scalar, so the norm of an element is the sum of two nonnegative contributions, one from the scalar product of the pair and one from the antisymmetric part. With an indefinite form the same algebra would give a split with a difference of signs and no cone.</p>
+<p><strong>Remark (the two exclusive families).</strong> The four-argument vanishing holds here and for the general quaternionic bilinear product, and it fails for the plain product and for the general quaternionic sesquilinear product. The split identity at a single pair is weaker and holds for the plain product too, so the discriminator is the four-argument statement. The proof of the general claim is in <a href="symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html">Symmetric and Antisymmetric Decomposition of the Four General Products</a>.</p>
+<h2 id="the-place-among-the-four">The Place among the Four</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>this product</th>
+<th>$\tilde Q_1\tilde Q_2$</th>
+<th>$\tilde Q_1^{\natural}\tilde Q_2$</th>
+<th>$\tilde Q_1^{\natural}\tilde Q_2^{*}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>class</td>
+<td>sesquilinear</td>
+<td>$\mathbb{C}$-bilinear</td>
+<td>$\mathbb{C}$-bilinear</td>
+<td>sesquilinear</td>
+</tr>
+<tr>
+<td>associative</td>
+<td>no</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>unit</td>
+<td>right</td>
+<td>both</td>
+<td>left</td>
+<td>none</td>
+</tr>
+<tr>
+<td>diagonal</td>
+<td>Hermitian, positive scalar part</td>
+<td>$\mathbb{B}$</td>
+<td>$\mathbb{B}_{C}$</td>
+<td>$\mathbb{B}$</td>
+</tr>
+<tr>
+<td>trace form</td>
+<td>$H$, positive definite</td>
+<td>$P$, split</td>
+<td>$N$, indefinite over $\mathbb{C}$</td>
+<td>$K$, indefinite</td>
+</tr>
+<tr>
+<td>isotropic elements</td>
+<td>none</td>
+<td>many</td>
+<td>many</td>
+<td>many</td>
+</tr>
+<tr>
+<td>$\tau(s,a)=0$ for all arguments</td>
+<td>yes</td>
+<td>no</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Jacobi defect</td>
+<td>$3$</td>
+<td>$0$</td>
+<td>$3$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>Jordan defect</td>
+<td>$1$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$4$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Remark (what this column owns).</strong> This is the only column with a positive definite trace form, the only one with no isotropic element, and the only one whose diagonal is confined to the Hermitian subspace by an involution rather than by the collapse of the image. Those three facts are one fact: the product is the derived operation of a sesqualgebra whose involution is definite on the algebra, and the biquaternion algebra with ${}^{*}$ is the only one of the four readings of $\mathbb{H}$ with that property.</p>
+<h2 id="summary">Summary</h2>
+<p>The general plain sesquilinear product is $\tilde Q_1\tilde Q_2^{*}=[Q_{1t}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})]-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}$, linear in the first slot and conjugate-linear in the second. It fails associativity, flexibility, alternation, power associativity and commutativity, and it satisfies the reversal identity $(\tilde Q_1\tilde Q_2^{*})^{*}=\tilde Q_2\tilde Q_1^{*}$.</p>
+<p>The element $e_t$ is a right unit and not a left one, and the right unit is unique; the left multiplication by $e_t$ is the Hermitian involution. The image is the whole space, the diagonal lies in the Hermitian subspace with the positive definite scalar part $H(\tilde Q,\tilde Q)$, and the product has no isotropic element.</p>
+<p>The symmetrisation is central, $\tilde Q_1\bullet_{*}\tilde Q_2=H(\tilde Q_1,\tilde Q_2)e_t$; the antisymmetrisation carries the three vector pieces and lands in the vector subspace. The four composites have images of dimensions $1,1,3,3$. The trace form $H$ is positive definite and orthogonal to the halves in the four-argument sense, so the Hermitian norm of a product splits exactly over the symmetric and antisymmetric parts.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$</td>
+<td>the biquaternion algebra</td>
+</tr>
+<tr>
+<td>$\mathcal{E}=(e_t,\vec e_x,\vec e_y,\vec e_z)$</td>
+<td>the coefficient basis</td>
+</tr>
+<tr>
+<td>$\tilde Q=Q_te_t+\vec Q$</td>
+<td>the element, its scalar part and its vector part</td>
+</tr>
+<tr>
+<td>$\tilde Q_1\tilde Q_2^{*}$</td>
+<td>the general plain sesquilinear product</td>
+</tr>
+<tr>
+<td>${}^{*}={}^{\natural}\circ\overline{\phantom{x}}$</td>
+<td>the Hermitian involution</td>
+</tr>
+<tr>
+<td>$H(\tilde Q_1,\tilde Q_2)$</td>
+<td>the Hermitian form $\sum_\mu Q_{1\mu}\overline{Q_{2\mu}}$</td>
+</tr>
+<tr>
+<td>$(\vec Q_1,\overline{\vec Q_2})$, $\vec Q_1\times\overline{\vec Q_2}$</td>
+<td>the sesquilinear dot and cross products</td>
+</tr>
+<tr>
+<td>$\tilde Q_1\bullet_{*}\tilde Q_2$</td>
+<td>the symmetric plain sesquilinear product</td>
+</tr>
+<tr>
+<td>$\tilde Q_1\wedge_{*}\tilde Q_2$</td>
+<td>the antisymmetric plain sesquilinear product</td>
+</tr>
+<tr>
+<td>$s$, $a$</td>
+<td>the two halves of the product</td>
+</tr>
+<tr>
+<td>$ss,sa,as,aa$</td>
+<td>the four composites of the family</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$</td>
+<td>the Hermitian and anti-Hermitian subspaces</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{C}$, $\mathbb{B}_{V}$</td>
+<td>the centre and the vector subspace</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html">The Four General Products and Their Relations over the Biquaternion Algebra</a>, for the four products and the identities between them.</li>
+<li><a href="symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html">Symmetric and Antisymmetric Decomposition of the Four General Products</a>, for the halves and the twelve composites.</li>
+<li><a href="the-vector-parts-of-the-products-over-the-biquaternion-algebra.html">The Vector Parts of the Products over the Biquaternion Algebra</a>, for the vector half and the diagonal table.</li>
+<li><a href="the-jordan-structure-of-the-symmetric-plain-sesquilinear-product.html">The Jordan Structure of the Symmetric Plain Sesquilinear Product</a> and <a href="the-lie-structure-of-the-antisymmetric-plain-sesquilinear-product.html">The Lie Structure of the Antisymmetric Plain Sesquilinear Product</a>, for the two halves of this product.</li>
+<li><a href="introduction-to-the-general-plain-sesqualgebra.html">Introduction to the General Plain Sesqualgebra</a>, for the derived sesquilinear product and its laws.</li>
+<li><a href="the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html">The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</a>, for $H$ and its three companions.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

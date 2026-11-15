@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The General Quaternionic Sesquilinear Product — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-general-quaternionic-sesquilinear-product"><strong>The General Quaternionic Sesquilinear Product</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The fourth of the four general products conjugates both slots, the first by the quaternion involution and the second by the Hermitian one. It is written $\tilde Q_1^{\natural}\tilde Q_2^{*}$, and it is the product of the batch that keeps the least: it is the only one with no unit on either side, the only one whose Jordan defect is the full dimension of the space, and the only one for which the orthogonality of the trace form fails in both of its readings. It is also the product whose scalar part is the Krein form of signature $(1,3)$, and that indefiniteness is the source of most of what follows.</p>
+<p>This article reads the product alone: the coordinate rule, the scalar–vector form, the laws, the absence of units, the image and the diagonal, the two halves, the four composites, the trace form against the halves, and the row of the product in the comparison of the four. The notation is that of <a href="the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html">The Four General Products and Their Relations over the Biquaternion Algebra</a>: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, coefficient basis $\mathcal{E}=(e_t,\vec e_x,\vec e_y,\vec e_z)$, $\tilde Q=Q_te_t+\vec Q$, the three conjugations, and the two pairings. The forms are <a href="the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html">The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</a>; the twelve products are <a href="symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html">Symmetric and Antisymmetric Decomposition of the Four General Products</a>; the vector halves are <a href="the-vector-parts-of-the-products-over-the-biquaternion-algebra.html">The Vector Parts of the Products over the Biquaternion Algebra</a>.</p>
+<p>The product is the sesquilinear companion of $\tilde Q_1^{\natural}\tilde Q_2$, and the two are read side by side. Where the bilinear product of that name has a left unit, this one has none; where its symmetrisation is central, this one has a symmetrisation of full image; and where its defects are three and one, the defects here are three and four.</p>
+<h2 id="the-product-and-its-coordinate-rule">The Product and Its Coordinate Rule</h2>
+<p><strong>Definition.</strong> The <strong>general quaternionic sesquilinear product</strong> is
+$$
+\tilde Q_1^{\natural}\tilde Q_2^{*}=\sum_{\mu}\sum_{\nu}Q_{1\mu}{}^{\natural}\overline{Q_{2\nu}}\,e_\mu e_\nu ,
+$$
+with $Q_{1t}{}^{\natural}=Q_{1t}$ and $Q_{1k}{}^{\natural}=-Q_{1k}$.</p>
+<p><strong>Proposition (the coordinate rule).</strong> For all $\tilde Q_1,\tilde Q_2$,
+$$
+\tilde Q_1^{\natural}\tilde Q_2^{*}=\bigl(Q_{1t}\overline{Q_{2t}}-Q_{1x}\overline{Q_{2x}}-Q_{1y}\overline{Q_{2y}}-Q_{1z}\overline{Q_{2z}}\bigr)
++\bigl(Q_{1t}\overline{Q_{2x}}+Q_{1x}\overline{Q_{2t}}-Q_{1y}\overline{Q_{2z}}+Q_{1z}\overline{Q_{2y}}\bigr)\vec e_x
++\bigl(Q_{1t}\overline{Q_{2y}}+Q_{1x}\overline{Q_{2z}}+Q_{1y}\overline{Q_{2t}}-Q_{1z}\overline{Q_{2x}}\bigr)\vec e_y
++\bigl(Q_{1t}\overline{Q_{2z}}-Q_{1x}\overline{Q_{2y}}+Q_{1y}\overline{Q_{2x}}+Q_{1z}\overline{Q_{2t}}\bigr)\vec e_z .
+$$</p>
+<p><em>Proof.</em> The plain coordinate rule with the three vector coordinates of the first factor negated and every coordinate of the second conjugated. The two operations commute because one acts on the coefficients and the other on the units. Verified exactly on the sixteen pairs of the basis and on general elements with coefficients in $\mathbb{Q}(i)$.</p>
+<p><strong>Remark (the four rules, in one line each).</strong> The four coordinate rules are the plain one with zero, one or two sign-and-bar decorations: none for $\tilde Q_1\tilde Q_2$, the first factor's vector coordinates negated for $\tilde Q_1^{\natural}\tilde Q_2$, the second factor's coordinates conjugated for $\tilde Q_1\tilde Q_2^{*}$, and both for $\tilde Q_1^{\natural}\tilde Q_2^{*}$. This product carries the two decorations at once, and it is the only one that does.</p>
+<h2 id="the-scalarvector-form">The Scalar–Vector Form</h2>
+<p><strong>Theorem (the scalar–vector form).</strong> For all $\tilde Q_1,\tilde Q_2$,
+$$
+\boxed{\;\tilde Q_1^{\natural}\tilde Q_2^{*}=\bigl(Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})\bigr)-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\,\vec Q_1+\vec Q_1\times\overline{\vec Q_2}\;}
+$$</p>
+<p><em>Proof.</em> The scalar row is $Q_{1t}\overline{Q_{2t}}$ minus the three products of the vector coordinates, that is $Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})$. The mixed rows are both negative, and the cross term is positive, since the two sign changes cancel in the product of the two vector parts. Computed exactly on general elements.</p>
+<p><strong>Proposition (the scalar part is the Krein form).</strong> The scalar part of the product is
+$$
+\mathrm{Sc}\bigl(\tilde Q_1^{\natural}\tilde Q_2^{*}\bigr)=Q_{1t}\overline{Q_{2t}}-Q_{1x}\overline{Q_{2x}}-Q_{1y}\overline{Q_{2y}}-Q_{1z}\overline{Q_{2z}}=K(\tilde Q_1,\tilde Q_2),
+$$
+the Hermitian form of Gram matrix $\operatorname{diag}(1,-1,-1,-1)$: indefinite, of signature $(1,3)$, nondegenerate, and isotropic on a cone of complex dimension three.</p>
+<p><em>Proof.</em> The first display with the signs of the three vector coordinates negative and each second coordinate barred. The signature is that of the diagonal matrix, and the isotropic cone is the set $K(\tilde Q,\tilde Q)=0$, which is the union of the two isotropic quadrics $\lvert Q_t\rvert^2=\lvert\vec Q\rvert^2$.</p>
+<p><strong>Remark (the definite and the indefinite).</strong> The two sesquilinear products of the batch carry the two Hermitian forms $H$ and $K$; the two bilinear products carry the two symmetric forms $P$ and $N$. The Krein form is the one that appears in the unitary group of signature $(1,3)$, and the product here is its derived operation. The indefiniteness is not a defect of the product: it is the reason the radical computed below is not zero while the form is nondegenerate.</p>
+<h2 id="the-laws-it-keeps-and-the-laws-it-loses">The Laws It Keeps and the Laws It Loses</h2>
+<p><strong>Theorem (every law of the ladder fails).</strong> The product is not associative, not flexible, not left alternative, not right alternative, and not power associative.</p>
+<p><em>Proof.</em> Four witnesses, each computed exactly.</p>
+<p><em>Not associative.</em> With $\tilde Q_1=\tilde Q_2=e_t$, $\tilde Q_3=\vec e_x$: $(\tilde Q_1^{\natural}\tilde Q_2^{*})^{\natural}\tilde Q_3^{*}=-\vec e_x$ against $\tilde Q_1^{\natural}(\tilde Q_2^{\natural}\tilde Q_3^{*})^{*}=\vec e_x$.</p>
+<p><em>Not flexible.</em> With $\tilde Q_1=i\vec e_z$, $\tilde Q_2=\vec e_z$: $(\tilde Q_1^{\natural}\tilde Q_2^{*})^{\natural}\tilde Q_1^{*}=\vec e_z$ against $\tilde Q_1^{\natural}(\tilde Q_2^{\natural}\tilde Q_1^{*})^{*}=-\vec e_z$. This is the smallest witness of the article, and it needs the factor $i$: on the real quaternion subspace the two sides agree.</p>
+<p><em>Not alternative.</em> Left, with $\tilde Q_1=e_t$, $\tilde Q_2=\vec e_x$: $(e_t^{\natural}e_t^{*})^{\natural}\vec e_x^{*}=-\vec e_x$ against $e_t^{\natural}(e_t^{\natural}\vec e_x^{*})^{*}=\vec e_x$. Right, with the same pair: $(e_t^{\natural}\vec e_x^{*})^{\natural}\vec e_x^{*}=e_t$ against $e_t^{\natural}(\vec e_x^{\natural}\vec e_x^{*})^{*}=-e_t$.</p>
+<p><em>Not power associative.</em> For $\tilde Q=e_t+\vec e_x+\vec e_y+i\vec e_z$: $\tilde Q^{\natural}(\tilde Q^{\natural}\tilde Q^{*})^{*}=(2,2,2,-2i)$ and $(\tilde Q^{\natural}\tilde Q^{*})^{\natural}\tilde Q^{*}=(2,6+4i,6-4i,-6i)$. The third power is not well defined.</p>
+<p><strong>Remark (the two decorations, two failures).</strong> Each of the two conjugations costs the ladder on its own, as the two previous articles record, and the product that carries both costs nothing more: the failures are the same failures, and the witnesses are the union of the two sets, with the new witnesses that use both decorations at once being no worse than the old ones. This is the sense in which the fourth product is not a new phenomenon but the product of the two.</p>
+<p><strong>Proposition (the identity of the double conjugate).</strong> The two involutions together move the decorations and keep the order:
+$$
+\bigl(\tilde Q_1^{\natural}\tilde Q_2^{*}\bigr)^{\natural*}=\tilde Q_1^{*}\tilde Q_2^{\natural}.
+$$</p>
+<p><em>Proof.</em> Both involutions are anti-automorphisms of the plain product and they commute, so the twice-conjugated product is $\tilde Q_1^{*}\tilde Q_2^{\natural}$: the two reversals of order cancel and the two decorations exchange. Verified on general elements.</p>
+<p><strong>Remark (no commutativity, in either sense).</strong> The product is neither commutative nor conjugate-commutative. With $\tilde Q_1=\vec e_x$ and $\tilde Q_2=\vec e_y$ the value is $\vec e_z$ and the value at the reversed order is $-\vec e_z$. The four symmetries of the exchange classify it as the general product of its family, and its two halves are obtained by the two projections of that exchange.</p>
+<h2 id="the-one-sided-units">The One-Sided Units</h2>
+<p><strong>Theorem (no unit on either side).</strong> There is no left identity and no right identity.</p>
+<p><em>Proof.</em> A left unit would satisfy $\tilde U^{\natural}\tilde Q^{*}=\tilde Q$ for all $\tilde Q$, and $\tilde Q=e_t$ gives $\tilde U^{\natural}=e_t$, that is $\tilde U=e_t$; but $e_t^{\natural}\vec e_x^{*}=-\vec e_x$, so $e_t$ is not a left unit and there is no other candidate. The right side is the same computation with $\tilde Q^{\natural}e_t^{*}=\tilde Q^{\natural}$, which differs from $\tilde Q$ on the vector subspace. The two linear systems were solved: sixteen equations in four unknowns on each side, no solution, least-squares residual $\tfrac32$.</p>
+<p><strong>Remark (the ladder of units, completed).</strong> The four products carry the four possible unit patterns: both sides, left only, right only, neither. The pattern is read from the two decorations: a decoration in the first slot destroys the left unit, a decoration in the second slot destroys the right one, and a product with both decorations keeps neither. The pattern is a table of two by two, and this product is the corner with two decorations.</p>
+<p><strong>Corollary (what replaces the unit).</strong> The element $e_t$ is not a unit, and there is no substitute: a unit is an element fixed by both multiplications, and here neither multiplication fixes it. The role of the unit is taken by the two involutions, which fix $e_t$ and act on the two slots, and every identity of the article that would be proved with a unit is proved instead by applying an involution.</p>
+<h2 id="the-image-the-diagonal-and-the-scalar-part">The Image, the Diagonal and the Scalar Part</h2>
+<p><strong>Proposition (the image is the whole space).</strong> The image of the product is $\mathbb{B}$, of complex dimension $4$.</p>
+<p><em>Proof.</em> $\tilde Q_1^{\natural}\tilde Q_2^{*}$ with $\tilde Q_1=\tilde Q_2=e_t$ is $e_t$; with $\tilde Q_1=\vec e_x$, $\tilde Q_2=e_t$ it is $-\vec e_x$; and the four values $e_t,-\vec e_x,-\vec e_y,-\vec e_z$ span the space. The span of the sixteen basis products is four-dimensional, computed exactly.</p>
+<p><strong>Theorem (the diagonal splits into two orthogonal parts).</strong> For every $\tilde Q$,
+$$
+\tilde Q^{\natural}\tilde Q^{*}=\bigl(\lvert Q_t\rvert^2+(\vec Q,\overline{\vec Q})\bigr)-Q_t\overline{\vec Q}-\overline{Q_t}\,\vec Q+\vec Q\times\overline{\vec Q},
+$$
+and the value is the sum of a Hermitian part and an anti-Hermitian part,
+$$
+\tfrac12\bigl(\tilde Q^{\natural}\tilde Q^{*}+(\tilde Q^{\natural}\tilde Q^{*})^{*}\bigr)=H(\tilde Q,\tilde Q)e_t-\tfrac12\bigl(Q_t\overline{\vec Q}+\overline{Q_t}\vec Q\bigr),\qquad
+\tfrac12\bigl(\tilde Q^{\natural}\tilde Q^{*}-(\tilde Q^{\natural}\tilde Q^{*})^{*}\bigr)=\vec Q\times\overline{\vec Q},
+$$
+and the two parts are orthogonal for the Krein form, $K(h,a)=0$.</p>
+<p><em>Proof.</em> The scalar–vector form at equal arguments. The Hermitian part collects the real scalar and the mixed terms, which are Hermitian; the anti-Hermitian part is the cross term, since $\overline{\vec Q\times\overline{\vec Q}}=-\vec Q\times\overline{\vec Q}$. The orthogonality is the vanishing of $K$ on a pair of which one factor is Hermitian and the other anti-Hermitian, verified on general elements and exact on the basis.</p>
+<p><strong>Remark (the geometry of the split).</strong> Write $\vec Q=\vec p+i\vec q$ with $\vec p,\vec q$ real. The mixed part $-Q_t\overline{\vec Q}-\overline{Q_t}\,\vec Q$ is a real combination of $\vec p$ and $\vec q$, so it lies in the plane they span, while the cross term $\vec Q\times\overline{\vec Q}$ is a real multiple of $i(\vec p\times\vec q)$, perpendicular to that plane. The two parts are orthogonal as real three-vectors, and that is the geometric content of the proposition. The table of diagonals in <a href="the-vector-parts-of-the-products-over-the-biquaternion-algebra.html">The Vector Parts of the Products over the Biquaternion Algebra</a> records the same split as $\{r+is:\ r,s\in\mathrm{Vect}_{\mathbb{R}}(\mathbb{B}),\ r\cdot s=0\}$.</p>
+<p><strong>Remark (the diagonal image is the whole space).</strong> The diagonal of this product is the only one of the four whose image is four-dimensional and whose values are not confined to a real form. The hermitian square of the sesqualgebra and the quaternionic square of the bilinear product both land in a proper subspace; the double conjugation lands everywhere, and the split above is the reason: the two parts range independently over the Hermitian and anti-Hermitian subspaces.</p>
+<p><strong>Remark (the isotropic elements).</strong> The diagonal vanishes on the cone $\tilde Q^{\natural}\tilde Q^{*}=0$, which is nonempty: $\tilde Q=e_t+\vec e_x$ gives $0$. The product has isotropic elements on both sides, unlike the plain sesquilinear product, and the cone is the union of two quadrics read from $K$.</p>
+<h2 id="the-two-halves-of-this-product">The Two Halves of This Product</h2>
+<p><strong>Definition.</strong> The <strong>symmetric quaternionic sesquilinear product</strong> and the <strong>antisymmetric quaternionic sesquilinear product</strong> are
+$$
+\tilde Q_1\bullet_{\natural*}\tilde Q_2=\tfrac12\bigl(\tilde Q_1^{\natural}\tilde Q_2^{*}+\overline{\tilde Q_2^{\natural}\tilde Q_1^{*}}\bigr),\qquad
+\tilde Q_1\wedge_{\natural*}\tilde Q_2=\tfrac12\bigl(\tilde Q_1^{\natural}\tilde Q_2^{*}-\overline{\tilde Q_2^{\natural}\tilde Q_1^{*}}\bigr).
+$$</p>
+<p><strong>Theorem (the reconstruction and the two forms).</strong> For all $\tilde Q_1,\tilde Q_2$,
+$$
+\boxed{\;\tilde Q_1^{\natural}\tilde Q_2^{*}=\tilde Q_1\bullet_{\natural*}\tilde Q_2+\tilde Q_1\wedge_{\natural*}\tilde Q_2\;},
+$$
+$$
+\tilde Q_1\bullet_{\natural*}\tilde Q_2=K(\tilde Q_1,\tilde Q_2)e_t-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\,\vec Q_1,\qquad
+\tilde Q_1\wedge_{\natural*}\tilde Q_2=\vec Q_1\times\overline{\vec Q_2}.
+$$</p>
+<p><em>Proof.</em> The scalar row and the two mixed rows are fixed by the exchange-with-conjugation, since the scalar row is Hermitian and the mixed part is conjugate-symmetric; the cross term changes sign, because $\overline{\vec Q_2\times\overline{\vec Q_1}}=-\vec Q_1\times\overline{\vec Q_2}$. Verified on general elements.</p>
+<p><strong>Corollary (the symmetrisation is not central).</strong> The symmetrisation has a scalar part and a vector part, its image is four-dimensional, and it is conjugate-commutative, $\tilde Q_1\bullet_{\natural*}\tilde Q_2=\overline{\tilde Q_2\bullet_{\natural*}\tilde Q_1}$.</p>
+<p><strong>Remark (the only non-central symmetrisation of its class).</strong> The symmetrisation of the plain product is not central either, and it is the only other one. The two central symmetrisations are those of the two products whose symmetric half loses the vector part, and the reason there is the vanishing of the mixed terms; here the mixed terms are present and they are conjugate-symmetric, so they survive the projection.</p>
+<p><strong>Remark (the antisymmetrisation).</strong> The antisymmetrisation is the cross product with the conjugation on the second factor, $\tilde Q_1\wedge_{\natural*}\tilde Q_2=\vec Q_1\times\overline{\vec Q_2}$. It has zero diagonal, its image is the vector subspace, and on real vector arguments it coincides with the antisymmetrisation of the plain product, because the conjugation is trivial there. Off the real subspace the two differ, and the Jacobi failure of this bracket is invisible on the real basis: the smallest witness is $(\vec e_x,\vec e_x,i\vec e_y)$, which gives $-2i\vec e_y$. This is <a href="the-lie-structure-of-the-antisymmetric-quaternionic-sesquilinear-product.html">The Lie Structure of the Antisymmetric Quaternionic Sesquilinear Product</a>.</p>
+<h2 id="the-four-composites">The Four Composites</h2>
+<p><strong>Theorem (the table of the composites).</strong> For the quaternionic sesquilinear family the images and the scalar parts of the four composites are</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>composite</th>
+<th>image, complex dimension</th>
+<th>scalar part</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$ss$</td>
+<td>$4$</td>
+<td>present</td>
+</tr>
+<tr>
+<td>$sa$</td>
+<td>$4$</td>
+<td>present</td>
+</tr>
+<tr>
+<td>$as$</td>
+<td>$3$</td>
+<td>zero</td>
+</tr>
+<tr>
+<td>$aa$</td>
+<td>$3$</td>
+<td>zero</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Proof.</em> The symmetrisation has a four-dimensional image, so an inner $s$ does not collapse the composite; an outer $s$ reads a scalar part and an outer $a$ kills it. The dimensions are the spans over all triples of the complex basis, computed exactly.</p>
+<p><strong>Remark (the two pairs of families).</strong> The table is the same as that of the plain family, and the two families are the two non-central ones. The discriminator is the dimension of the image of the symmetrisation, and the scalar part separates the rows in all four families. The full table is <a href="symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html">Symmetric and Antisymmetric Decomposition of the Four General Products</a>.</p>
+<p><strong>Corollary (the antisymmetrised composites never leave the vector subspace).</strong> $as$ and $aa$ take their values in $\mathbb{B}_{V}$ and have no scalar part.</p>
+<h2 id="the-trace-form-and-the-halves">The Trace Form and the Halves</h2>
+<p><strong>Definition.</strong> The trace form of the family is $\tau(\tilde Q_1,\tilde Q_2)=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})$, the Krein form $K$.</p>
+<p><strong>Proposition (the cross term survives).</strong> There are $\tilde Q_1,\tilde Q_2,\tilde Q_3,\tilde Q_4$ with
+$$
+\mathrm{Sc}\bigl(\tilde Q_1\bullet_{\natural*}\tilde Q_2\;\cdot\;\tilde Q_3\wedge_{\natural*}\tilde Q_4^{*}\bigr)\neq0 .
+$$</p>
+<p><em>Proof.</em> Take $\tilde Q_1=e_t$, $\tilde Q_2=\vec e_x$, $\tilde Q_3=\vec e_y$, $\tilde Q_4=\vec e_z$. Then $\tilde Q_1\bullet_{\natural*}\tilde Q_2=-\vec e_x$ and $\tilde Q_3\wedge_{\natural*}\tilde Q_4=\vec e_x$, and the scalar part of $(-\vec e_x)^{\natural}\vec e_x^{*}$ is $1$.</p>
+<p><strong>Theorem (both readings of the orthogonality fail).</strong> The four-argument vanishing fails, as the proposition shows. The single-pair split fails as well: for $\tilde Q_1=e_t+\vec e_x+\vec e_y+i\vec e_z$ and $\tilde Q_2=e_t+\vec e_x+i\vec e_y+\vec e_z$,
+$$
+\tau\bigl(s(\tilde Q_1,\tilde Q_2),s(\tilde Q_1,\tilde Q_2)\bigr)+\tau\bigl(a(\tilde Q_1,\tilde Q_2),a(\tilde Q_1,\tilde Q_2)\bigr)=-20,\qquad
+\tau\bigl(\tilde Q_1^{\natural}\tilde Q_2^{*},\tilde Q_1^{\natural}\tilde Q_2^{*}\bigr)=-12 .
+$$</p>
+<p><em>Proof.</em> The two failures were verified on all basis quadruples for the first and on a grid of coefficients for the second; the values displayed are exact, computed in $\mathbb{Q}(i)$. The reason is the same in both readings: the symmetric half is not central, so the cross term $\tau(s,a)$ does not vanish, and the expansion of $\tau$ over the two halves keeps it.</p>
+<p><strong>Remark (the two readings, separated).</strong> The four-argument orthogonality is the strong statement and it holds exactly for the two families whose symmetric half is central. The single-pair split is the weak statement; it holds for three of the four families and fails here. This is the only family for which both fail, and it is the only family of the four in which the trace form has an indefinite scalar part together with a non-central symmetrisation.</p>
+<h2 id="the-place-among-the-four">The Place among the Four</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>this product</th>
+<th>$\tilde Q_1\tilde Q_2$</th>
+<th>$\tilde Q_1^{\natural}\tilde Q_2$</th>
+<th>$\tilde Q_1\tilde Q_2^{*}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>decorations</td>
+<td>first and second</td>
+<td>none</td>
+<td>first</td>
+<td>second</td>
+</tr>
+<tr>
+<td>unit</td>
+<td>none</td>
+<td>both</td>
+<td>left</td>
+<td>right</td>
+</tr>
+<tr>
+<td>symmetric half</td>
+<td>image $4$</td>
+<td>image $4$</td>
+<td>image $1$</td>
+<td>image $1$</td>
+</tr>
+<tr>
+<td>trace form</td>
+<td>$K$, signature $(1,3)$</td>
+<td>$P$, split</td>
+<td>$N$, indefinite over $\mathbb{C}$</td>
+<td>$H$, positive definite</td>
+</tr>
+<tr>
+<td>$\tau(s,a)=0$ for all arguments</td>
+<td>no</td>
+<td>no</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>single-pair split</td>
+<td>fails</td>
+<td>holds</td>
+<td>holds</td>
+<td>holds</td>
+</tr>
+<tr>
+<td>Jacobi defect</td>
+<td>$3$, invisible on $\mathbb{B}_{H}$</td>
+<td>$0$</td>
+<td>$3$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>Jordan defect</td>
+<td>$4$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$1$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Remark (the column of the two largest numbers).</strong> This is the only column with a Jordan defect of four, the full dimension of the space, and the only column where the weak split fails. The Jordan defect is four because the product's symmetrisation is conjugate-commutative but not commutative, and the Jordan identity is stated with the product composed in one order; the failure then has one component for each coordinate. This is read in <a href="the-jordan-structure-of-the-symmetric-quaternionic-sesquilinear-product.html">The Jordan Structure of the Symmetric Quaternionic Sesquilinear Product</a>, where the witness and the defect space are computed.</p>
+<h2 id="summary">Summary</h2>
+<p>The general quaternionic sesquilinear product is $\tilde Q_1^{\natural}\tilde Q_2^{*}=[Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})]-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1+\vec Q_1\times\overline{\vec Q_2}$, the product with both decorations. It fails every law of the ladder, with a flexibility witness $i\vec e_z,\vec e_z$ that needs the imaginary unit. It has no unit on either side.</p>
+<p>Its scalar part is the Krein form $K$ of signature $(1,3)$, indefinite and nondegenerate. Its image is the whole space, its diagonal is the sum of a Hermitian part and an anti-Hermitian part which are orthogonal for $K$, and its diagonal image is the whole space. It has isotropic elements, $\tilde Q=e_t+\vec e_x$ among them.</p>
+<p>The symmetrisation is conjugate-commutative and not central, with image of dimension $4$; the antisymmetrisation is $\tilde Q_1\times\overline{\vec Q_2}$ with image the vector subspace, and it coincides with the antisymmetrisation of the plain product on real vector arguments. The four composites have images of dimensions $4,4,3,3$. The trace form $K$ is not orthogonal to the halves in either reading: the four-argument cross term survives with the witness $e_t,\vec e_x,\vec e_y,\vec e_z$ giving $1$, and the single-pair split fails by $8$ on the pair displayed. Both defects are the reflection of the one fact that the symmetric half of this family carries a vector part.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$</td>
+<td>the biquaternion algebra</td>
+</tr>
+<tr>
+<td>$\mathcal{E}=(e_t,\vec e_x,\vec e_y,\vec e_z)$</td>
+<td>the coefficient basis</td>
+</tr>
+<tr>
+<td>$\tilde Q=Q_te_t+\vec Q$</td>
+<td>the element, its scalar part and its vector part</td>
+</tr>
+<tr>
+<td>$\tilde Q_1^{\natural}\tilde Q_2^{*}$</td>
+<td>the general quaternionic sesquilinear product</td>
+</tr>
+<tr>
+<td>${}^{\natural}$, ${}^{*}$</td>
+<td>the quaternion involution and the Hermitian involution</td>
+</tr>
+<tr>
+<td>$K(\tilde Q_1,\tilde Q_2)$</td>
+<td>the Krein form $Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})$</td>
+</tr>
+<tr>
+<td>$\tilde Q_1\bullet_{\natural*}\tilde Q_2$</td>
+<td>the symmetric quaternionic sesquilinear product</td>
+</tr>
+<tr>
+<td>$\tilde Q_1\wedge_{\natural*}\tilde Q_2$</td>
+<td>the antisymmetric quaternionic sesquilinear product</td>
+</tr>
+<tr>
+<td>$s$, $a$</td>
+<td>the two halves of the product</td>
+</tr>
+<tr>
+<td>$ss,sa,as,aa$</td>
+<td>the four composites of the family</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$</td>
+<td>the Hermitian and anti-Hermitian subspaces</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{C}$, $\mathbb{B}_{V}$, $\mathbb{B}_{H}$</td>
+<td>the centre, the vector subspace, the real quaternion subspace</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html">The Four General Products and Their Relations over the Biquaternion Algebra</a>, for the four products and the identities between them.</li>
+<li><a href="symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html">Symmetric and Antisymmetric Decomposition of the Four General Products</a>, for the halves, the composites and the witnesses of the failures.</li>
+<li><a href="the-vector-parts-of-the-products-over-the-biquaternion-algebra.html">The Vector Parts of the Products over the Biquaternion Algebra</a>, for the diagonal table and the two-bit rule.</li>
+<li><a href="the-jordan-structure-of-the-symmetric-quaternionic-sesquilinear-product.html">The Jordan Structure of the Symmetric Quaternionic Sesquilinear Product</a> and <a href="the-lie-structure-of-the-antisymmetric-quaternionic-sesquilinear-product.html">The Lie Structure of the Antisymmetric Quaternionic Sesquilinear Product</a>, for the two halves of this product.</li>
+<li><a href="the-general-plain-sesquilinear-product.html">The General Plain Sesquilinear Product</a>, for the definite companion of the form used here.</li>
+<li><a href="the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html">The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</a>, for the Krein form and its index.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

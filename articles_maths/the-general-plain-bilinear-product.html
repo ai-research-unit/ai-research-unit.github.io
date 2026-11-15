@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The General Plain Bilinear Product — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-general-plain-bilinear-product"><strong>The General Plain Bilinear Product</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The underlying complex vector space of $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries four general products, obtained by reading each slot of a pair as it stands or through a conjugation. This article reads the first of them alone: the <strong>general plain bilinear product</strong> $\tilde Q_1\tilde Q_2$, in which neither slot is conjugated. The rule is the multiplication of the algebra and nothing else, and it is the one product of the four that makes $\mathbb{B}$ an associative algebra with unit over $\mathbb{C}$.</p>
+<p>The article is organised along the product and not along the family: the coordinate rule and the scalar–vector form, the laws it keeps and the one it loses, the units, the image and the diagonal, the two halves and the four composites they generate, the trace form read against the halves, and the row of the product in the comparison of the four.</p>
+<p>The coordinate basis is $\mathcal{E}=(e_t,\vec e_x,\vec e_y,\vec e_z)$, with $e_t$ the identity, $\vec e_k^{2}=-e_t$ and $\vec e_x\vec e_y=\vec e_z$ cyclically, so that $\vec e_y\vec e_x=-\vec e_z$. An element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$, the scalar part is $\langle\tilde Q\rangle_{*}=Q_t$, and $\mathrm{Sc}$ and $\mathrm{Vec}$ are the two projections. The three conjugations are the coefficientwise $\overline{\tilde Q}$, the quaternion involution ${}^{\natural}$ fixing $e_t$ and negating the $\vec e_k$, and the Hermitian ${}^{*}={}^{\natural}\circ\overline{\phantom{x}}$. The pairings are the complex bilinear dot product $(\vec Q_1,\vec Q_2)=\sum_k Q_{1k}Q_{2k}$ and the complex bilinear cross product $\vec Q_1\times\vec Q_2$.</p>
+<p>The comparison of the four is <a href="the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html">The Four General Products and Their Relations over the Biquaternion Algebra</a>; the twelve operations are <a href="symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html">Symmetric and Antisymmetric Decomposition of the Four General Products</a>; the vector halves are <a href="the-vector-parts-of-the-products-over-the-biquaternion-algebra.html">The Vector Parts of the Products over the Biquaternion Algebra</a>; the forms are <a href="the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html">The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</a>. The algebra, the element and the four conjugations are <a href="the-biquaternion-algebra.html">The Biquaternion Algebra</a>.</p>
+<h2 id="the-split-of-a-space-and-the-split-of-a-product">The Split of a Space and the Split of a Product</h2>
+<p>Two splits are used throughout the twelve articles, and they are different in kind. The first is a split of the <strong>space</strong> by an involution; the second is a split of a <strong>product</strong> by the exchange of its arguments. They give the counts $2$ and $12$, and confusing them is the one error the notation invites.</p>
+<p><strong>The split of the space.</strong> The quaternion involution ${}^{\natural}$ is $\mathbb{C}$-linear, of order two, and an anti-automorphism. Its eigenspaces are the centre $\mathbb{B}_{C}=\mathbb{C}e_t$, of complex dimension $1$, and the vector subspace $\mathbb{B}_{V}=\mathbb{C}\vec e_x\oplus\mathbb{C}\vec e_y\oplus\mathbb{C}\vec e_z$, of complex dimension $3$,
+$$
+\mathbb{B}=\mathbb{B}_{C}\oplus\mathbb{B}_{V},\qquad
+\tilde Q=\tfrac12(\tilde Q+\tilde Q^{\natural})+\tfrac12(\tilde Q-\tilde Q^{\natural})=Q_te_t+\vec Q .
+$$
+The Hermitian involution ${}^{*}$ is conjugate-linear instead, and its fixed sets $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ are real subspaces of real dimension $4$, not complex ones. A conjugate-linear involution does not split a complex space into complex lines, and the two cases are not parallel.</p>
+<p><strong>The split of the product.</strong> The exchange of a product is a second involution, acting on the space of binary operations and not on $\mathbb{B}$. For the two $\mathbb{C}$-bilinear products it is the interchange of the arguments, and for the two sesquilinear products it is the interchange followed by the coefficientwise conjugation of the value. Applied to a product $f$ it returns the symmetric part $f^{\mathrm{s}}$ and the antisymmetric part $f^{\mathrm{a}}$, and the reconstruction $f=f^{\mathrm{s}}+f^{\mathrm{a}}$ is the only relation needed.</p>
+<p><strong>Proposition (the two counts).</strong> The involution ${}^{\natural}$ produces two summands. Each of the four general products produces two halves, and each half is again a product of the class of its parent, so the space carries $4\cdot 3=12$ products: the four general products and their eight halves.</p>
+<p><em>Proof.</em> The first count is the dimension count of the eigenspaces above, $1+3=4$. The second is the closure of the class under the exchange, proved in <a href="the-symmetric-and-antisymmetric-parts-of-an-algebra-product.html">The Symmetric and Antisymmetric Parts of an Algebra Product</a> for the bilinear case and in <a href="the-symmetric-and-antisymmetric-parts-of-a-sesqualgebra-product.html">The Symmetric and Antisymmetric Parts of a Sesqualgebra Product</a> for the sesquilinear one; it is verified on the twelve coordinate rules of the decomposition article.</p>
+<p><strong>Remark (why the two must not be confused).</strong> The split of the space is one involution acting on one space, and its count is fixed at two. The split of the product runs over four products and is governed by the class of each, and its count is twelve. A subspace of $\mathbb{B}$ is an eigenspace of ${}^{\natural}$ or of ${}^{*}$; a half of a product is an operation on $\mathbb{B}$, not a subspace of it.</p>
+<h2 id="the-product-and-its-coordinate-rule">The Product and Its Coordinate Rule</h2>
+<p><strong>Definition.</strong> The <strong>general plain bilinear product</strong> multiplies the coordinates on the basis,
+$$
+\tilde Q_1\tilde Q_2=\sum_{\mu}\sum_{\nu}Q_{1\mu}Q_{2\nu}\,e_\mu e_\nu ,
+$$
+the indices running over $\{t,x,y,z\}$.</p>
+<p><strong>Proposition (the coordinate rule).</strong> For all $\tilde Q_1,\tilde Q_2$,
+$$
+\tilde Q_1\tilde Q_2=\bigl(Q_{1t}Q_{2t}-Q_{1x}Q_{2x}-Q_{1y}Q_{2y}-Q_{1z}Q_{2z}\bigr)
++\bigl(Q_{1t}Q_{2x}+Q_{1x}Q_{2t}+Q_{1y}Q_{2z}-Q_{1z}Q_{2y}\bigr)\vec e_x
++\bigl(Q_{1t}Q_{2y}-Q_{1x}Q_{2z}+Q_{1y}Q_{2t}+Q_{1z}Q_{2x}\bigr)\vec e_y
++\bigl(Q_{1t}Q_{2z}+Q_{1x}Q_{2y}-Q_{1y}Q_{2x}+Q_{1z}Q_{2t}\bigr)\vec e_z .
+$$</p>
+<p><em>Proof.</em> The four products of units are $e_te_\mu=e_\mu e_t=e_\mu$, $\vec e_x\vec e_x=\vec e_y\vec e_y=\vec e_z\vec e_z=-e_t$, and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$ with the reversed products negated. Collecting the coefficients of each unit gives the display. Verified exactly on the sixteen pairs of the basis and on general elements with coefficients in $\mathbb{Q}(i)$.</p>
+<p>The rule is linear in the four coordinates of $\tilde Q_1$ and linear in the four coordinates of $\tilde Q_2$. The sixteen structure constants $c_{\mu\nu}{}^{\lambda}$, defined by $e_\mu e_\nu=\sum_\lambda c_{\mu\nu}{}^{\lambda}e_\lambda$, are integers, and they are the structure constants of the real quaternion algebra read on the complexification.</p>
+<h2 id="the-scalarvector-form">The Scalar–Vector Form</h2>
+<p>Adding and subtracting the ranks of the two factors gives the compact form.</p>
+<p><strong>Theorem (the scalar–vector form).</strong> For all $\tilde Q_1,\tilde Q_2$,
+$$
+\boxed{\;\tilde Q_1\tilde Q_2=\bigl(Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)\bigr)+Q_{1t}\vec Q_2+Q_{2t}\vec Q_1+\vec Q_1\times\vec Q_2\;}
+$$</p>
+<p><em>Proof.</em> In the coordinate rule, the coefficient of $e_t$ is the sum of the four products with the three vector signs negative, that is $Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)$. The coefficient of $\vec e_x$ has the two diagonal terms $Q_{1t}Q_{2x}+Q_{1x}Q_{2t}$ plus $Q_{1y}Q_{2z}-Q_{1z}Q_{2y}$, which is the $\vec e_x$-coordinate of $\vec Q_1\times\vec Q_2$; the other two coordinates are the same computation. Computed exactly on general elements.</p>
+<p>The scalar part is $\mathrm{Sc}(\tilde Q_1\tilde Q_2)=\sum_{\mu}\varepsilon_\mu Q_{1\mu}Q_{2\mu}$ with $\varepsilon=(1,-1,-1,-1)$, and the vector part is the two mixed terms and the cross term. Three readings follow at once.</p>
+<p><strong>Remark (the three pieces).</strong> The scalar part is the <strong>plain form</strong> $P(\tilde Q_1,\tilde Q_2)$, a symmetric $\mathbb{C}$-bilinear form of Gram matrix $\operatorname{diag}(1,-1,-1,-1)$ and rank $4$, read with its hyperbolic basis and its index in <a href="the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html">The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</a>. The mixed part $Q_{1t}\vec Q_2+Q_{2t}\vec Q_1$ is symmetric in the two factors. The cross term $\vec Q_1\times\vec Q_2$ is the only piece that changes sign under the interchange, and it is the whole of the antisymmetric part.</p>
+<h2 id="the-laws-it-keeps-and-the-laws-it-loses">The Laws It Keeps and the Laws It Loses</h2>
+<p><strong>Theorem (associativity).</strong> The product is associative,
+$$
+(\tilde Q_1\tilde Q_2)\tilde Q_3=\tilde Q_1(\tilde Q_2\tilde Q_3)
+$$
+for all $\tilde Q_1,\tilde Q_2,\tilde Q_3\in\mathbb{B}$.</p>
+<p><em>Proof.</em> On the basis the product is the quaternion product, which is associative, and the complex bilinear extension of an associative product is associative. The identity was also verified on all sixty-four triples of the basis and on general elements of $\mathbb{Q}(i)$; the maximal deviation is zero.</p>
+<p><strong>Corollary (flexibility, alternation, degree three).</strong> The product is flexible, $\tilde Q_1(\tilde Q_2\tilde Q_1)=(\tilde Q_1\tilde Q_2)\tilde Q_1$; it is left and right alternative, $\tilde Q_1(\tilde Q_1\tilde Q_2)=(\tilde Q_1\tilde Q_1)\tilde Q_2$ and $(\tilde Q_1\tilde Q_2)\tilde Q_2=\tilde Q_1(\tilde Q_2\tilde Q_2)$; it satisfies the degree-three identity $\tilde Q_1(\tilde Q_1\tilde Q_1)=(\tilde Q_1\tilde Q_1)\tilde Q_1$; and it is power associative.</p>
+<p><em>Proof.</em> Each identity is a rearrangement of a product of three or four factors in an associative algebra, and each is obtained from associativity by inserting brackets. The ladder of implications is <a href="non-associative-algebras-and-the-property-ladder.html">Non-Associative Algebras and the Property Ladder</a>; the verification here is on the sixty-four and the two hundred fifty-six basis instances, all exact.</p>
+<p><strong>Proposition (the law that fails).</strong> The product is not commutative.</p>
+<p><em>Proof.</em> $\vec e_x\vec e_y=\vec e_z$ while $\vec e_y\vec e_x=-\vec e_z$, and the two values differ. The defect of commutativity is the cross term, and it is measured by $\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1=2\,\vec Q_1\times\vec Q_2$, which is the antisymmetrisation of the next sections.</p>
+<p><strong>Remark (the shape of the four laws).</strong> Associativity, flexibility, alternation and the degree-three identity hold together, and commutativity fails alone. This is the pattern of a unital associative algebra that is not commutative, and it is why the element theory, the idempotents, the nilpotents and the zero divisors, is read on this product and not on its halves. Of the four general products it is the only one for which the whole ladder holds.</p>
+<h2 id="the-one-sided-units">The One-Sided Units</h2>
+<p><strong>Proposition (the two-sided unit).</strong> The element $e_t$ is a two-sided identity, $e_t\tilde Q=\tilde Qe_t=\tilde Q$ for every $\tilde Q$.</p>
+<p><em>Proof.</em> $e_t$ is the identity of the quaternion product and the complex bilinear extension keeps it.</p>
+<p><strong>Theorem (uniqueness).</strong> The identity is unique: if $\tilde U\tilde Q=\tilde Q$ for all $\tilde Q$ then $\tilde U=e_t$, and the same holds on the right.</p>
+<p><em>Proof.</em> Put $\tilde Q=e_t$: a left unit satisfies $\tilde Ue_t=e_t$, and $\tilde Ue_t=\tilde U$, so $\tilde U=e_t$. The right side is the same computation. The linear system for a left unit, sixteen equations in four unknowns, has the unique solution $(1,0,0,0)$ and no residual.</p>
+<p><strong>Remark (the pattern, and the check behind it).</strong> The three other products have $e_t$ on the left alone, on the right alone, and on neither side. Each of the eight linear systems, two sides to a product, was solved here and has the residual zero exactly where the pattern says; the solution is unique wherever it exists.</p>
+<h2 id="the-image-the-diagonal-and-the-scalar-part">The Image, the Diagonal and the Scalar Part</h2>
+<p><strong>Proposition (the image is the whole space).</strong> The image of the product is $\mathbb{B}$, of complex dimension $4$.</p>
+<p><em>Proof.</em> $e_te_t=e_t$, $e_t\vec e_x=\vec e_x$, $e_t\vec e_y=\vec e_y$ and $e_t\vec e_z=\vec e_z$ are four values that span the space. The span of the sixteen products of basis elements has dimension $4$, computed exactly.</p>
+<p><strong>Proposition (the diagonal is the square).</strong> The diagonal map $\tilde Q\mapsto\tilde Q\tilde Q=\tilde Q^2$ has image $\mathbb{B}$, and it is homogeneous of degree two,
+$$
+\tilde Q^2=\bigl(Q_t^2-(\vec Q,\vec Q)\bigr)+2Q_t\vec Q .
+$$</p>
+<p><em>Proof.</em> The scalar–vector form at the two equal arguments, with $\vec Q\times\vec Q=0$. The image is four-dimensional: the squares $\vec e_x^2=-e_t$, $(\vec e_x+\vec e_y)^2=-2e_t+2\vec e_z$, $(\vec e_x+i\vec e_y)^2=-2e_t+2i\vec e_z$ and $(\tilde Q)^2$ for a general element span $\mathbb{B}$, computed exactly.</p>
+<p><strong>Remark (what the diagonal sees).</strong> The square sees the symmetric half alone,
+$$
+(\tilde Q_1+\tilde Q_2)^2-\tilde Q_1^2-\tilde Q_2^2=2\,\tilde Q_1\bullet\tilde Q_2,
+$$
+because the antisymmetric half is alternating and cancels on the diagonal. The antisymmetric half is therefore invisible to every power map and is recovered from the product only through the commutator. The consequence for the block is <a href="the-specificities-of-the-symmetric-plain-algebra-of-the-biquaternions.html">The Specificities of the Symmetric Plain Algebra of the Biquaternions</a>, where the identity of the two squares is the first of the specificities.</p>
+<p><strong>The scalar part.</strong> The scalar part of the product is the form $P$, with Gram matrix $\operatorname{diag}(1,-1,-1,-1)$ and rank $4$. It is symmetric and nondegenerate, its radical is zero, and its isotropic cone is $\langle\tilde Q\rangle_{P}=Q_t^2-Q_x^2-Q_y^2-Q_z^2=0$.</p>
+<h2 id="the-two-halves-of-this-product">The Two Halves of This Product</h2>
+<p><strong>Definition.</strong> The <strong>symmetric plain product</strong> and the <strong>antisymmetric plain product</strong> are the two halves of the product under the interchange of the arguments,
+$$
+\tilde Q_1\bullet\tilde Q_2=\tfrac12\bigl(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1\bigr),\qquad
+\tilde Q_1\wedge\tilde Q_2=\tfrac12\bigl(\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1\bigr).
+$$</p>
+<p><strong>Theorem (the reconstruction and the two forms).</strong> For all $\tilde Q_1,\tilde Q_2$,
+$$
+\boxed{\;\tilde Q_1\tilde Q_2=\tilde Q_1\bullet\tilde Q_2+\tilde Q_1\wedge\tilde Q_2\;},
+$$
+$$
+\tilde Q_1\bullet\tilde Q_2=\bigl(Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)\bigr)+Q_{1t}\vec Q_2+Q_{2t}\vec Q_1,\qquad
+\tilde Q_1\wedge\tilde Q_2=\vec Q_1\times\vec Q_2 .
+$$</p>
+<p><em>Proof.</em> Adding and subtracting the two orders of the product, whose scalar parts and mixed terms agree and whose cross terms are opposite. The reconstruction is the sum of the two displays. Verified on general elements.</p>
+<p><strong>Remark (the two halves are of different kinds).</strong> The symmetrisation is commutative and unital, with $e_t$ on both sides, and satisfies the Jordan identity; it is the only one of the four symmetrisations that does. The antisymmetrisation is alternating, has zero diagonal, has no unit, and satisfies the Jacobi identity; it is the only one of the four antisymmetrisations that does. The two are read in <a href="the-jordan-structure-of-the-symmetric-plain-product.html">The Jordan Structure of the Symmetric Plain Product</a> and <a href="the-lie-structure-of-the-antisymmetric-plain-product.html">The Lie Structure of the Antisymmetric Plain Product</a>.</p>
+<p><strong>Corollary (the alternation of the second half).</strong> $\tilde Q\wedge\tilde Q=0$ and $\tilde Q_1\wedge\tilde Q_2=-\tilde Q_2\wedge\tilde Q_1$. The second half is therefore not a product with a diagonal: every square in it vanishes, and it carries no idempotent, no norm and no inverse.</p>
+<h2 id="the-four-composites">The Four Composites</h2>
+<p>The two halves can be composed with one another, and the four composites carry a table that is the same in shape for the four families.</p>
+<p><strong>Definition.</strong> The four <strong>composites</strong> of the family are the operations
+$$
+ss(x,y,z)=s\bigl(s(x,y),z\bigr),\quad sa(x,y,z)=s\bigl(a(x,y),z\bigr),\quad as(x,y,z)=a\bigl(s(x,y),z\bigr),\quad aa(x,y,z)=a\bigl(a(x,y),z\bigr),
+$$
+with $s$ and $a$ the two halves.</p>
+<p><strong>Theorem (the table of the composites).</strong> For the plain family the images and the scalar parts are</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>composite</th>
+<th>image, complex dimension</th>
+<th>scalar part</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$ss$</td>
+<td>$4$</td>
+<td>present</td>
+</tr>
+<tr>
+<td>$sa$</td>
+<td>$4$</td>
+<td>present</td>
+</tr>
+<tr>
+<td>$as$</td>
+<td>$3$</td>
+<td>zero</td>
+</tr>
+<tr>
+<td>$aa$</td>
+<td>$3$</td>
+<td>zero</td>
+</tr>
+</tbody>
+</table></div>
+<p>and the two composites whose outer operation is the antisymmetrisation have image $\mathbb{B}_{V}$.</p>
+<p><em>Proof.</em> $s(\tilde Q_1,\tilde Q_2)$ has the scalar part $Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)$ and the vector part $Q_{1t}\vec Q_2+Q_{2t}\vec Q_1$; multiplying it by $\tilde Q_3$ by $s$ or by $a$ keeps the scalar part in the first case and kills it in the second, since $a$ is alternating. The dimension count is the span of the values over all triples of the complex basis $\{e_\mu,ie_\mu\}$, computed exactly: $4,4,3,3$.</p>
+<p><strong>Remark (the discriminator).</strong> The scalar part separates the two rows: an outer symmetrisation keeps a scalar part, an outer antisymmetrisation has none. The inner operation separates the entries of a row: a family with a central symmetric part carries a one-dimensional image into the composite, and the dimension falls from $4$ to $1$. The twelve-row table is <a href="symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html">Symmetric and Antisymmetric Decomposition of the Four General Products</a>.</p>
+<p><strong>Corollary (the composites never leave the vector subspace).</strong> The two antisymmetrised composites $as$ and $aa$ take their values in $\mathbb{B}_{V}$: applied twice in the antisymmetric slot, the operation cannot produce a scalar part.</p>
+<h2 id="the-trace-form-and-the-halves">The Trace Form and the Halves</h2>
+<p><strong>Definition.</strong> The <strong>trace form</strong> of a family is the scalar part of its product read as a form, $\tau(\tilde Q_1,\tilde Q_2)=\mathrm{Sc}\bigl(\tilde Q_1\tilde Q_2\bigr)$. For the plain family it is the form $P$.</p>
+<p><strong>Proposition (the cross term survives here).</strong> There are $\tilde Q_1,\tilde Q_2,\tilde Q_3,\tilde Q_4$ with
+$$
+\mathrm{Sc}\bigl(\tilde Q_1\bullet\tilde Q_2\;\cdot\;\tilde Q_3\wedge\tilde Q_4\bigr)\neq0 .
+$$</p>
+<p><em>Proof.</em> Take $\tilde Q_1=e_t$, $\tilde Q_2=\vec e_x$, $\tilde Q_3=\vec e_y$, $\tilde Q_4=\vec e_z$. Then $\tilde Q_1\bullet\tilde Q_2=\vec e_x$ and $\tilde Q_3\wedge\tilde Q_4=\vec e_x$, so the product is $\vec e_x^2=-e_t$ and the scalar part is $-1$. Verified exactly.</p>
+<p><strong>Theorem (the failure of the split of the form).</strong> Since the cross term survives, the form does not split over the halves:
+$$
+\tau(\tilde Q_1,\tilde Q_2)=\tau\bigl(s(\tilde Q_1,\tilde Q_2),s(\tilde Q_1,\tilde Q_2)\bigr)+2\,\tau\bigl(s(\tilde Q_1,\tilde Q_2),a(\tilde Q_1,\tilde Q_2)\bigr)+\tau\bigl(a(\tilde Q_1,\tilde Q_2),a(\tilde Q_1,\tilde Q_2)\bigr),
+$$
+and the middle term is not zero in general. On a <strong>single pair</strong> the middle term does vanish, $\mathrm{Sc}\bigl(s(x,y)\,a(x,y)\bigr)=0$ for all $x,y$, and the split holds there; the failure appears only when the two halves are evaluated on different pairs.</p>
+<p><em>Proof.</em> The expansion of $\tau$ on the decomposition $f=s+a$ is the bilinearity of $\tau$ and of the product. The single-pair vanishing was verified on the basis and on random pairs, the four-argument value on the witness above.</p>
+<p><strong>Remark (which families are orthogonal).</strong> The four-argument vanishing of $\tau(s,a)$ holds for the general quaternionic bilinear product and for the general plain sesquilinear product, and for those two the split of the form is exact. It fails for the plain product and for the general quaternionic sesquilinear product. The reason is the same in both cases: the vanishing needs one of the two halves to be central, which happens only for the two central symmetrisations.</p>
+<h2 id="the-place-among-the-four">The Place among the Four</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>$\tilde Q_1\tilde Q_2$</th>
+<th>$\tilde Q_1^{\natural}\tilde Q_2$</th>
+<th>$\tilde Q_1\tilde Q_2^{*}$</th>
+<th>$\tilde Q_1^{\natural}\tilde Q_2^{*}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>class</td>
+<td>$\mathbb{C}$-bilinear</td>
+<td>$\mathbb{C}$-bilinear</td>
+<td>sesquilinear</td>
+<td>sesquilinear</td>
+</tr>
+<tr>
+<td>associative</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>unit</td>
+<td>$e_t$, both sides</td>
+<td>$e_t$, left</td>
+<td>$e_t$, right</td>
+<td>none</td>
+</tr>
+<tr>
+<td>image</td>
+<td>$\mathbb{B}$</td>
+<td>$\mathbb{B}$</td>
+<td>$\mathbb{B}$</td>
+<td>$\mathbb{B}$</td>
+</tr>
+<tr>
+<td>diagonal image</td>
+<td>$\mathbb{B}$</td>
+<td>$\mathbb{B}_{C}$</td>
+<td>$\mathbb{B}_{\Psi}$</td>
+<td>$\mathbb{B}$</td>
+</tr>
+<tr>
+<td>trace form</td>
+<td>$P$, rank $4$</td>
+<td>$N$, rank $4$</td>
+<td>$H$, rank $4$</td>
+<td>$K$, rank $4$</td>
+</tr>
+<tr>
+<td>$\tau(s,a)=0$ for all arguments</td>
+<td>no</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Jacobi defect of the bracket</td>
+<td>$0$</td>
+<td>$3$</td>
+<td>$3$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>Jordan defect of the symmetrisation</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$4$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Remark (the two rows that are this product's own).</strong> The plain product is the only column with yes in the associativity row, the only column with a two-sided unit, and the only column whose two defects vanish. These three facts are one: associativity. The three other columns read the same multiplication through a conjugation in one or both slots; each insertion destroys associativity, restricts or removes the unit, and leaves a defect in one of the two identities of the halves.</p>
+<p>The product is read as a multiplication in its own right in <a href="the-biquaternion-algebra.html">The Biquaternion Algebra</a>, and its element theory, the idempotents, the nilpotents and the zero divisors, is the element theory of the algebra. Its two halves are the subjects of the two companion articles of this block.</p>
+<h2 id="summary">Summary</h2>
+<p>The general plain bilinear product of $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is the multiplication of the algebra, $\tilde Q_1\tilde Q_2=[Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)]+Q_{1t}\vec Q_2+Q_{2t}\vec Q_1+\vec Q_1\times\vec Q_2$, with structure constants the structure constants of the quaternion algebra read on the complexification. It is $\mathbb{C}$-bilinear, associative, flexible, alternative, power associative and of degree three, and it is not commutative; its failure of commutativity is exactly the cross term. The unit $e_t$ is two-sided and unique.</p>
+<p>The image of the product is the whole space, the image of the diagonal is the whole space, and the diagonal is the square, $\tilde Q^2=(Q_t^2-(\vec Q,\vec Q))+2Q_t\vec Q$. The scalar part is the form $P$ of Gram matrix $\operatorname{diag}(1,-1,-1,-1)$ and rank $4$.</p>
+<p>The product splits into the symmetrisation $\tilde Q_1\bullet\tilde Q_2$, the plain product with the cross term dropped, and the antisymmetrisation $\tilde Q_1\wedge\tilde Q_2=\vec Q_1\times\vec Q_2$, and the two halves are a Jordan product and a Lie bracket respectively, the only ones of their kinds in the batch. The four composites have images of dimensions $4,4,3,3$, the two antisymmetrised ones landing in the vector subspace, and the scalar part is the discriminator between the rows.</p>
+<p>The trace form $P$ does not split over the halves: the cross term $\mathrm{Sc}(s\,a)$ survives, with the witness $x=e_t$, $y=\vec e_x$, $u=\vec e_y$, $v=\vec e_z$ giving $-1$. On a single pair it vanishes, so the failure is a failure of the four-argument orthogonality and not of the split at the equal pairs.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$</td>
+<td>the biquaternion algebra</td>
+</tr>
+<tr>
+<td>$\mathcal{E}=(e_t,\vec e_x,\vec e_y,\vec e_z)$</td>
+<td>the coefficient basis, $e_t$ the identity, $\vec e_k^{2}=-e_t$</td>
+</tr>
+<tr>
+<td>$\tilde Q=Q_te_t+\vec Q$</td>
+<td>the element, its scalar part and its vector part</td>
+</tr>
+<tr>
+<td>$\tilde Q_1\tilde Q_2$</td>
+<td>the general plain bilinear product</td>
+</tr>
+<tr>
+<td>$\mathrm{Sc}$, $\mathrm{Vec}$</td>
+<td>the scalar part and the vector part of an element</td>
+</tr>
+<tr>
+<td>$(\vec Q_1,\vec Q_2)$, $\vec Q_1\times\vec Q_2$</td>
+<td>the complex bilinear dot product and cross product</td>
+</tr>
+<tr>
+<td>$\varepsilon=(1,-1,-1,-1)$</td>
+<td>the sign vector of the plain product</td>
+</tr>
+<tr>
+<td>$\tilde Q_1\bullet\tilde Q_2$</td>
+<td>the symmetric plain product, the symmetrisation</td>
+</tr>
+<tr>
+<td>$\tilde Q_1\wedge\tilde Q_2$</td>
+<td>the antisymmetric plain product, the antisymmetrisation</td>
+</tr>
+<tr>
+<td>$s$, $a$</td>
+<td>the two halves of a product</td>
+</tr>
+<tr>
+<td>$ss,sa,as,aa$</td>
+<td>the four composites of a family</td>
+</tr>
+<tr>
+<td>$P(\tilde Q_1,\tilde Q_2)=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$</td>
+<td>the plain form, the scalar part of the product</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{C}$, $\mathbb{B}_{V}$</td>
+<td>the centre and the vector subspace</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$</td>
+<td>the Hermitian and anti-Hermitian subspaces</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html">The Four General Products and Their Relations over the Biquaternion Algebra</a>, for the four products, the identities that link them and the comparison.</li>
+<li><a href="symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html">Symmetric and Antisymmetric Decomposition of the Four General Products</a>, for the twelve products of the space and the table of the halves.</li>
+<li><a href="the-vector-parts-of-the-products-over-the-biquaternion-algebra.html">The Vector Parts of the Products over the Biquaternion Algebra</a>, for the vector halves and the two-bit rule.</li>
+<li><a href="the-jordan-structure-of-the-symmetric-plain-product.html">The Jordan Structure of the Symmetric Plain Product</a> and <a href="the-lie-structure-of-the-antisymmetric-plain-product.html">The Lie Structure of the Antisymmetric Plain Product</a>, for the two halves of this product read as algebras.</li>
+<li><a href="the-biquaternion-algebra.html">The Biquaternion Algebra</a>, for the algebra, the basis and the four conjugations.</li>
+<li><a href="non-associative-algebras-and-the-property-ladder.html">Non-Associative Algebras and the Property Ladder</a>, for the laws tested above and their implications.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
