@@ -73,6 +73,6 @@ On the real subspace the two forms of the complex space coincide, $\langle\cdot,
 
 ## Further Reading
 
-- [The Two Forms and the Two Algebraic Norms of the Complexoid Space](the-two-forms-and-the-two-algebraic-norms-of-the-complexoid-space.html), above this article in this category, for the two forms, their algebraic norms and their definiteness.
+- [The Two Forms and the Two Algebraic Norms of the Complex Space](the-two-forms-and-the-two-algebraic-norms-of-the-complex-space.html), above this article in this category, for the two forms, their algebraic norms and their definiteness.
 - *Complexoid Subspaces*, for the two subspaces, their bases and their dimensions.
 - [Complex Norm and Invertibility](complex-norm-and-invertibility.html), below this article in this category, for the definite norm that the two restrictions carry.

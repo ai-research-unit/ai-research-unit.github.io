@@ -189,13 +189,12 @@ The two metrics are the two readings of the two forms and satisfy $d_{H}^{2}-d_{
 
 ## Further Reading
 
-- [The Two Forms and the Two Algebraic Norms of the Complexoid Space](the-two-forms-and-the-two-algebraic-norms-of-the-complex-space.html), for the two forms and the two algebraic norms whose diagonals are their squares.
-- [The Two Products of the Complexoid Space](the-two-products-of-the-complex-space.html), for the two products $Q_1Q_2$ and $Q_1\bar Q_2$ whose forms are realified here.
+- [The Two Forms and the Two Algebraic Norms of the Complex Space](the-two-forms-and-the-two-algebraic-norms-of-the-complex-space.html), for the two forms and the two algebraic norms whose diagonals are their squares.
+- [The Two Products of the Complex Space](the-two-products-of-the-complex-space.html), for the two products $Q_1Q_2$ and $Q_1\bar Q_2$ whose forms are realified here.
 - [The Realification and the Effect of the Change of Scalars](the-realification-and-the-effect-of-the-change-of-scalars.html), the complex article of that name, for the realification rules that give the signatures $(1,1)$ and $(2,0)$.
 - [Complex Algebra](complex-algebra.html), for the algebra, its basis and its one nontrivial involution.
 - [Complex Norm and Invertibility](complex-norm-and-invertibility.html), for the modulus, its multiplicativity, its triangle inequality and the group of units.
 - [Rotations and Reflections in the Complex Plane](rotations-and-reflections-in-the-complex-plane.html), for the identification of the form-preserving multiplications with $\mathrm{SO}(2)$, the reflections and the group $O(2)$.
-- *The Group of Involutions and the Two Subspaces of the Complex Space*, for the real and imaginary subspaces on which the split metric is definite of opposite signs.
-- [Remarkable Subspaces of the Complexoid and the Two Forms](the-group-of-involutions-and-the-two-subspaces-of-the-complex-space.html), for the restrictions of the two forms to the two subspaces.
+- [The Group of Involutions and the Two Subspaces of the Complex Space](the-group-of-involutions-and-the-two-subspaces-of-the-complex-space.html), for the real and imaginary subspaces on which the split metric is definite of opposite signs, and for the restrictions of the two forms to them.
 - Werner Greub, *Linear Algebra*, 4th edition (Springer, 1981), for Gram matrices, inertia and the groups preserving a symmetric or Hermitian form.
 - Pertti Lounesto, *Clifford Algebras and Spinors*, 2nd edition (Cambridge University Press, 2001), for the definite and indefinite forms of the plane and their groups.

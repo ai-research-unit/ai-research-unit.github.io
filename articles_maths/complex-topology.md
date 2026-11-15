@@ -32,7 +32,7 @@ Thus every map into $\mathbb{C}$ is null-homotopic, and the same homotopy contra
 $$ \boxed{\;\mathbb{R}_{\mathbb{C}} \cong \mathbb{R}, \qquad i\mathbb{R}_{\mathbb{C}} \cong \mathbb{R}\;}.
 $$
 
-The two subspaces carry no topology beyond that of the line; the content on the norm of *The Group of Involutions and the Two Subspaces of the Complex Space* lies in the quadratic form restricted to them, not in their topology.
+The two subspaces carry no topology beyond that of the line; the content on the norm that the two subspaces carry lies in the quadratic form restricted to them, not in their topology.
 
 ## The Unit Circle
 

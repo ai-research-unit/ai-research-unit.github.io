@@ -134,7 +134,7 @@ The realification reads the one-dimensional complex space as the two-dimensional
 ## Further Reading
 
 - *The Complex Numbers as a Vector Space over $\mathbb{R}$*, above this article in this category, for the two scalar readings of $\mathbb{C}$, the complex structure $J$, the criteria $TJ=JT$ and $SJ=-JS$ and the block shapes.
-- [The Two Forms and the Two Algebraic Norms of the Complexoid Space](the-two-forms-and-the-two-algebraic-norms-of-the-complex-space.html), above this article in this category, for the two forms whose realified signatures are derived here.
+- [The Two Forms and the Two Algebraic Norms of the Complex Space](the-two-forms-and-the-two-algebraic-norms-of-the-complex-space.html), above this article in this category, for the two forms whose realified signatures are derived here.
 - *The Matrix Element Representations of the Complex Numbers*, above this article in this category, for the two matrices at $n=1$ read as element representations and for the identification of their determinant and trace with the algebraic norms.
-- [Remarkable Subspaces of the Complexoid and the Two Forms](the-group-of-involutions-and-the-two-subspaces-of-the-complex-space.html), above this article in this category, for the coincidence of the two products on the real subspace.
+- [The Group of Involutions and the Two Subspaces of the Complex Space](the-group-of-involutions-and-the-two-subspaces-of-the-complex-space.html), above this article in this category, for the coincidence of the two products on the real subspace.
 - *The Group of Involutions and the Two Subspaces of the Complex Space* and [Complex Algebra](complex-algebra.html), for the two subspaces and the field of the algebra.

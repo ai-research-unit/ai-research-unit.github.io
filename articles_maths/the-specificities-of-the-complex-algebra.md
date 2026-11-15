@@ -10,7 +10,7 @@ The article closes the specific theory of the complex algebra: it is the verdict
 
 ## What the Twelve Structures Collapse To
 
-The two slots of the general product are its two arguments, the first carrying the conjugation of the coefficient ring and the second the identity or the Hermitian conjugation. On $\mathbb{C}$ the first slot carries the identity, so the four settings of the general theory collapse two-and-two onto two objects: the field product $Q_1Q_2$, with the identity in the second slot, and the sesquilinear product $Q_1\bar Q_2$, with the bar. The bilinear settings name the multiplication of the field and the sesquilinear settings name the derived product with the bar, and the four antisymmetrised products vanish, each being the antisymmetric part of a product whose two slots commute in the class-preserving exchange. The two surviving structures are the field under $Q_1Q_2$ and the sesquilinear structure under $Q_1\bar Q_2$, and they are not the same structure: the first is associative with a two-sided unit, the second is non-associative with a right unit alone. The statements are *The Two Products of the Complex Space*; the two surviving products are the subject of *The Two Products of the Complex Space*, below this article in this category.
+The two slots of the general product are its two arguments, the first carrying the conjugation of the coefficient ring and the second the identity or the Hermitian conjugation. On $\mathbb{C}$ the first slot carries the identity, so the four settings of the general theory collapse two-and-two onto two objects: the field product $Q_1Q_2$, with the identity in the second slot, and the sesquilinear product $Q_1\bar Q_2$, with the bar. The bilinear settings name the multiplication of the field and the sesquilinear settings name the derived product with the bar, and the four antisymmetrised products vanish, each being the antisymmetric part of a product whose two slots commute in the class-preserving exchange. The two surviving structures are the field under $Q_1Q_2$ and the sesquilinear structure under $Q_1\bar Q_2$, and they are not the same structure: the first is associative with a two-sided unit, the second is non-associative with a right unit alone. The statements are *The Two Products of the Complex Space*, above this article in this category, which also treats the two surviving products and the two exchanges that fix them.
 
 ## The Field Laws
 
@@ -58,7 +58,7 @@ $$
 \boxed{\; \langle Q_1,Q_2\rangle=\langle Q_1,Q_2\rangle_{\natural}=Q_1Q_2, \qquad \langle Q_1,Q_2\rangle_{*}=\langle Q_1,Q_2\rangle_{\natural*}=Q_1\bar Q_2 \;}
 $$
 
-and the two algebraic norms are $Q_1^{2}$ and $Q_1\bar Q_1$. The forms are *The Two Forms and the Two Algebraic Norms of the Complex Space*; the definiteness of $\langle\cdot,\cdot\rangle_{*}$, its cone and its modules are *The Positivity and the Ray of Squares of the Complex Space*, below this article in this category.
+and the two algebraic norms are $Q_1^{2}$ and $Q_1\bar Q_1$. The forms are *The Two Forms and the Two Algebraic Norms of the Complex Space*; the definiteness of $\langle\cdot,\cdot\rangle_{*}$, its cone and its order are *The Positivity and the Ray of Squares of the Complex Space*, below this article in this category, and the modules over the algebra are *The Hermitian Modules and the Unitary Witt Group over the Complex Algebra*.
 
 ## Summary
 
