@@ -4,7 +4,7 @@
 
 $M_6(\mathbb{C})$ is the algebra of complex $6\times6$ matrices, of complex dimension $36$ and real dimension $72$. It has centre $\mathbb{C}I_6$, it is simple, its commutator subspace is the trace-zero hyperplane $\mathfrak{sl}_6$, and its unit group is $GL_6(\mathbb{C})$, of dimension $36$, with projective quotient $PGL_6(\mathbb{C})$, of dimension $35$.
 
-This article fixes the ambient algebra: the matrix units, the trace and the determinant, the centre, the simplicity, the commutator subalgebra, the real structure of Hermitian and skew-Hermitian parts, and the two-sided module structure. It is the foundation on which the frame of *The Frame, the Simple Nilpotents and the Gauge of $M_6(\mathbb{C})$* and the coordinates of *The Element, the Coordinates and the Trace of $M_6(\mathbb{C})$* are built.
+This article fixes the ambient algebra: the matrix units, the trace and the determinant, the centre, the simplicity, the commutator subalgebra, the real structure of Hermitian and anti-Hermitian parts, and the two-sided module structure. It is the foundation on which the frame of *The Frame, the Simple Nilpotents and the Gauge of $M_6(\mathbb{C})$* and the coordinates of *The Element, the Coordinates and the Trace of $M_6(\mathbb{C})$* are built.
 
 No form and no topology are used here. The positive definite trace form is *The Involution and the Hermitian Structure of $M_6(\mathbb{C})$*; the exponential and the Lie group are *The Exponential and the Lie Group of $M_6(\mathbb{C})$*; the modules are *The Modules and the Minimal Left Ideals of $M_6(\mathbb{C})$*.
 
@@ -170,9 +170,9 @@ The units $E_{ij}$ with $i\neq j$ and the differences $E_{ii}-E_{jj}$ (for $j=2,
 
 **Proof.** The $36$ complex units are a complex basis; multiplying by $1$ and $\mathrm i$ gives $72$ real basis vectors.
 
-### Hermitian and Skew-Hermitian Parts
+### Hermitian and Anti-Hermitian Parts
 
-**Definition.** The **conjugate transpose** of $A$ is $A^*=\bar A^{\mathsf T}$, with entries $(A^*)_{ij}=\overline{A_{ji}}$. An element is **Hermitian** if $A^*=A$, **skew-Hermitian** if $A^*=-A$, and **$*$-unitary** if $A^*A=I_6$.
+**Definition.** The **conjugate transpose** of $A$ is $A^*=\bar A^{\mathsf T}$, with entries $(A^*)_{ij}=\overline{A_{ji}}$. An element is **Hermitian** if $A^*=A$, **anti-Hermitian** if $A^*=-A$, and **$*$-unitary** if $A^*A=I_6$.
 
 **Proposition.** Every $A\in M_6(\mathbb{C})$ splits uniquely as
 
@@ -180,7 +180,7 @@ $$
 A=\frac{A+A^*}{2}+\frac{A-A^*}{2},
 $$
 
-a Hermitian part plus a skew-Hermitian part. The real vector spaces
+a Hermitian part plus a anti-Hermitian part. The real vector spaces
 
 $$
 \mathfrak{u}(6)=\{A:A^*=-A\},\qquad
@@ -189,7 +189,7 @@ $$
 
 have real dimensions $36$ and $35$.
 
-**Proof.** The two parts are Hermitian and skew-Hermitian, and the sum is $A$; uniqueness follows by applying the conjugate transpose. A skew-Hermitian matrix has purely imaginary diagonal entries ($6$ real parameters) and arbitrary complex entries above the diagonal ($15$ complex $=30$ real parameters), so $\dim_{\mathbb{R}}\mathfrak{u}(6)=36$. The trace is a nonzero real-linear functional on $\mathfrak{u}(6)$ (with values in $\mathrm i\mathbb{R}$), so its kernel has real dimension $35$.
+**Proof.** The two parts are Hermitian and anti-Hermitian, and the sum is $A$; uniqueness follows by applying the conjugate transpose. A anti-Hermitian matrix has purely imaginary diagonal entries ($6$ real parameters) and arbitrary complex entries above the diagonal ($15$ complex $=30$ real parameters), so $\dim_{\mathbb{R}}\mathfrak{u}(6)=36$. The trace is a nonzero real-linear functional on $\mathfrak{u}(6)$ (with values in $\mathrm i\mathbb{R}$), so its kernel has real dimension $35$.
 
 **Theorem (the complexification).** As real vector spaces,
 
@@ -366,7 +366,7 @@ The real structure is $M_6=\mathfrak{u}(6)\oplus\mathrm i\mathfrak{u}(6)$, with 
 | $\chi_A(t)$ | the characteristic polynomial $\det(tI_6-A)$ |
 | $\mathfrak{sl}_6$ | the trace-zero matrices, $[M_6,M_6]$ |
 | $A^*$ | the conjugate transpose |
-| $\mathfrak{u}(6),\mathfrak{su}(6)$ | skew-Hermitian and trace-zero skew-Hermitian matrices |
+| $\mathfrak{u}(6),\mathfrak{su}(6)$ | anti-Hermitian and trace-zero anti-Hermitian matrices |
 | $\langle A,B\rangle=\operatorname{tr}(AB)$ | the trace pairing |
 | $\operatorname{ad}_A(B)=[A,B]$ | the inner derivation |
 

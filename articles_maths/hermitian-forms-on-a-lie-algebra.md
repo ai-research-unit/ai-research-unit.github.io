@@ -59,17 +59,17 @@ $$
 H(\operatorname{ad}_X Y, Z) = -H(Y,\operatorname{ad}_X Z) ,
 $$
 
-so the adjoint operators of the algebra are skew-Hermitian.
+so the adjoint operators of the algebra are anti-Hermitian.
 
-*Proof.* The bracket is alternating, so $H([X,Y],Z) = -H([Y,X],Z)$; substituting the first identity and using conjugate symmetry gives the second, and conversely. Reading either identity as the definition of the adjoint of $\operatorname{ad}_X$ gives the skew-Hermitian statement.
+*Proof.* The bracket is alternating, so $H([X,Y],Z) = -H([Y,X],Z)$; substituting the first identity and using conjugate symmetry gives the second, and conversely. Reading either identity as the definition of the adjoint of $\operatorname{ad}_X$ gives the anti-Hermitian statement.
 
 ## The Unitary Structure
 
 ### The Definite Case
 
-**Theorem.** Let $\mathrm{G}$ be a complex Lie algebra with a positive definite invariant Hermitian form $H$. Then the real Lie algebra $\mathrm{G}_{\mathbb{R}}$ of the Hermitian operators of $H$ is compact, its adjoint operators are skew-Hermitian, and $H$ is the negative of a compact form; conversely a compact real form $\mathrm{K}$ of a complex semisimple Lie algebra carries a positive definite invariant form, and the algebra is identified with a space of skew-Hermitian operators.
+**Theorem.** Let $\mathrm{G}$ be a complex Lie algebra with a positive definite invariant Hermitian form $H$. Then the real Lie algebra $\mathrm{G}_{\mathbb{R}}$ of the Hermitian operators of $H$ is compact, its adjoint operators are anti-Hermitian, and $H$ is the negative of a compact form; conversely a compact real form $\mathrm{K}$ of a complex semisimple Lie algebra carries a positive definite invariant form, and the algebra is identified with a space of anti-Hermitian operators.
 
-*Proof.* The algebra of the skew-Hermitian operators of a positive definite Hermitian form on $\mathbb{C}^n$ is $\mathrm{u}(n)$, which is compact, and the invariance of $H$ says exactly that $\operatorname{ad}_X$ is skew-Hermitian, so the image of $\mathrm{G}$ lies in $\mathrm{u}(n)$ for a faithful representation and $\mathrm{G}$ is compact; the Killing form of a compact algebra is negative definite by *Structure of Lie Algebras*, hence $-B$ is positive definite and invariant. The converse is the same argument read for $\mathrm{K}$ acting on the complexification.
+*Proof.* The algebra of the anti-Hermitian operators of a positive definite Hermitian form on $\mathbb{C}^n$ is $\mathrm{u}(n)$, which is compact, and the invariance of $H$ says exactly that $\operatorname{ad}_X$ is anti-Hermitian, so the image of $\mathrm{G}$ lies in $\mathrm{u}(n)$ for a faithful representation and $\mathrm{G}$ is compact; the Killing form of a compact algebra is negative definite by *Structure of Lie Algebras*, hence $-B$ is positive definite and invariant. The converse is the same argument read for $\mathrm{K}$ acting on the complexification.
 
 **Corollary.** A complex semisimple Lie algebra carries a positive definite invariant Hermitian form exactly when it has a compact real form, and then the form is unique up to a positive scalar; the form is the negative of the Killing form of the compact form.
 
@@ -91,7 +91,7 @@ $$
 \boxed{\;\operatorname{ad}_X^{\dagger} = -\operatorname{ad}_X = \operatorname{ad}_{\sigma(X)} \qquad (X\in\mathrm{G})\;},
 $$
 
-and a representation of $\mathrm{G}$ by skew-Hermitian operators with respect to $H$ is a star-representation of $\mathrm{U}(\mathrm{G})$; conversely a star-representation of $\mathrm{U}(\mathrm{G})$ whose operators are skew-Hermitian for $H$ is unitarisable.
+and a representation of $\mathrm{G}$ by anti-Hermitian operators with respect to $H$ is a star-representation of $\mathrm{U}(\mathrm{G})$; conversely a star-representation of $\mathrm{U}(\mathrm{G})$ whose operators are anti-Hermitian for $H$ is unitarisable.
 
 *Proof.* The identity is the invariance of $H$; the equivalence of the two formulations on the enveloping algebra is that both are generated on the first order, by the universality of $\mathrm{U}(\mathrm{G})$. This is the content of *The Involution on the Enveloping Algebra of a Lie Group*, read with the form as the geometric datum.
 
@@ -105,11 +105,11 @@ and a representation of $\mathrm{G}$ by skew-Hermitian operators with respect to
 
 ### The Unitary Algebra
 
-Let $\mathrm{G} = \mathrm{u}(n)$ with $H(X,Y) = \operatorname{tr}(X\overline{Y}^{t}) = -\operatorname{tr}(XY)$ on the skew-Hermitian matrices, using that the conjugate transpose of a skew-Hermitian matrix is its negative. The form is positive definite and invariant under the commutator, the adjoint operators are skew-Hermitian, and the algebra is the model compact case.
+Let $\mathrm{G} = \mathrm{u}(n)$ with $H(X,Y) = \operatorname{tr}(X\overline{Y}^{t}) = -\operatorname{tr}(XY)$ on the anti-Hermitian matrices, using that the conjugate transpose of a anti-Hermitian matrix is its negative. The form is positive definite and invariant under the commutator, the adjoint operators are anti-Hermitian, and the algebra is the model compact case.
 
 ### The Special Linear Algebra
 
-Let $\mathrm{G} = \mathrm{su}(n)$ with $H(X,Y) = -\operatorname{tr}(XY)$ on the traceless skew-Hermitian matrices. The form is positive definite and invariant, it is a positive multiple of $-\frac{1}{2n}B$ with $B$ the Killing form, and the Casimir element is positive; the unitary representations of the compact group act by skew-Hermitian operators, which is the Peter--Weyl situation of *Unitary Representations of a Lie Group*.
+Let $\mathrm{G} = \mathrm{su}(n)$ with $H(X,Y) = -\operatorname{tr}(XY)$ on the traceless anti-Hermitian matrices. The form is positive definite and invariant, it is a positive multiple of $-\frac{1}{2n}B$ with $B$ the Killing form, and the Casimir element is positive; the unitary representations of the compact group act by anti-Hermitian operators, which is the Peter--Weyl situation of *Unitary Representations of a Lie Group*.
 
 ### An Indefinite Form
 
@@ -121,7 +121,7 @@ Let $\mathrm{G}$ be the Heisenberg algebra with the central element $Z$ and the 
 
 ## Summary
 
-A **Hermitian form** on a complex Lie algebra is sesquilinear, conjugate-symmetric and real-valued on the diagonal, and it is **invariant** when $H([X,Y],Z) = H(X,[Y,Z])$, equivalently when $H([X,Y],Z) + H(Y,[X,Z]) = 0$; the two forms of the condition are equivalent and they say that each adjoint operator $\operatorname{ad}_X$ is skew-Hermitian for $H$. A positive definite invariant Hermitian form makes the algebra a compact real form, and conversely every compact form carries such a form, unique up to a positive scalar and equal to the negative of the Killing form; non-degenerate indefinite forms have a signature and put the algebra inside the isometry algebra $\mathrm{u}(n,m)$, whose compact part gives the Cartan involution. The adjoint operation of the form coincides with the star of the principal anti-automorphism of the enveloping algebra, so the unitary representations are exactly the star-representations by skew-Hermitian operators, and the Casimir element $-\sum X_i^2$ of an orthonormal basis is a positive central Hermitian element whose images are positive self-adjoint operators. The definite case is the compact theory, the indefinite case is the theory of the real forms, and the degenerate case — in which the form vanishes on the radical — exhibits the limits of the construction, as the Heisenberg algebra shows.
+A **Hermitian form** on a complex Lie algebra is sesquilinear, conjugate-symmetric and real-valued on the diagonal, and it is **invariant** when $H([X,Y],Z) = H(X,[Y,Z])$, equivalently when $H([X,Y],Z) + H(Y,[X,Z]) = 0$; the two forms of the condition are equivalent and they say that each adjoint operator $\operatorname{ad}_X$ is anti-Hermitian for $H$. A positive definite invariant Hermitian form makes the algebra a compact real form, and conversely every compact form carries such a form, unique up to a positive scalar and equal to the negative of the Killing form; non-degenerate indefinite forms have a signature and put the algebra inside the isometry algebra $\mathrm{u}(n,m)$, whose compact part gives the Cartan involution. The adjoint operation of the form coincides with the star of the principal anti-automorphism of the enveloping algebra, so the unitary representations are exactly the star-representations by anti-Hermitian operators, and the Casimir element $-\sum X_i^2$ of an orthonormal basis is a positive central Hermitian element whose images are positive self-adjoint operators. The definite case is the compact theory, the indefinite case is the theory of the real forms, and the degenerate case — in which the form vanishes on the radical — exhibits the limits of the construction, as the Heisenberg algebra shows.
 
 ## Summary of Notation
 
@@ -130,7 +130,7 @@ A **Hermitian form** on a complex Lie algebra is sesquilinear, conjugate-symmetr
 | $H(X,Y)$ | a Hermitian form, linear in the first and conjugate-linear in the second argument |
 | $H(X,Y) = \overline{H(Y,X)}$ | conjugate symmetry |
 | $H([X,Y],Z) = H(X,[Y,Z])$ | invariance of the form |
-| $\operatorname{ad}_X^{\dagger} = -\operatorname{ad}_X$ | skew-Hermitian adjoint operators |
+| $\operatorname{ad}_X^{\dagger} = -\operatorname{ad}_X$ | anti-Hermitian adjoint operators |
 | $\flat(X)(Y) = H(X,Y)$ | the associated antilinear map to the dual |
 | $(n,m)$ | the signature of a non-degenerate form |
 | $\mathrm{u}(n,m)$ | the isometry algebra of a form of signature $(n,m)$ |

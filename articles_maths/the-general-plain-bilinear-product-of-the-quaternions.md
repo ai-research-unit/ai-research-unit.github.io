@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Over $\mathbb{R}$ the space of the quaternions carries exactly two general bilinear products, and this article reads the first of them alone, the plain product $\tilde q_1\tilde q_2$. *General* is a term of the batch: a general product is a bilinear map whose two slots are read through the identity or through the conjugation, and [The Two General Products and the Reason There Are Only Two](the-two-general-products-and-the-reason-there-are-only-two.html) proves that the two slots read the same involution over $\mathbb{R}$, so that exactly two products arise, this one of the pairing $(\mathrm{id},\mathrm{id})$ and the quaternionic one of the pairing $({}^{\natural},\mathrm{id})$.
+Over $\mathbb{R}$ the space of the quaternions carries exactly two general bilinear products, and this article reads the first of them alone, the plain product $\tilde q_1\tilde q_2$. *General* is a term of the batch: a general product is a bilinear map whose two slots are read through the identity or through the conjugation; the two slots read the same involution over $\mathbb{R}$, so exactly two products arise, this one of the pairing $(\mathrm{id},\mathrm{id})$ and the quaternionic one of the pairing $({}^{\natural},\mathrm{id})$.
 
 The biquaternion counterpart is [The General Plain Bilinear Product](the-general-plain-bilinear-product.html), and the two articles are one computation read over $\mathbb{R}$ and over $\mathbb{C}$. What changes is worth naming at once: over $\mathbb{C}$ the plain product has zero divisors and its trace form has signature $(2,2)$; over $\mathbb{R}$ the product is a division product, there are no zero divisors, and the trace form has signature $(1,3)$.
 
@@ -205,4 +205,3 @@ Its trace form is $\tau=\mathrm{Sc}(\tilde q_1\tilde q_2)$, of signature $(1,3)$
 - [The Lie Structure of the Antisymmetric Plain Product of the Quaternions](the-lie-structure-of-the-antisymmetric-plain-product-of-the-quaternions.html), for the second half.
 - [Introduction to the Quaternion Algebra](introduction-to-the-quaternion-algebra.html), for the algebra the product makes of the space.
 - [The General Plain Bilinear Product](the-general-plain-bilinear-product.html), for the biquaternion counterpart.
-- [The Two General Products and the Reason There Are Only Two](the-two-general-products-and-the-reason-there-are-only-two.html), for the count of the batch.

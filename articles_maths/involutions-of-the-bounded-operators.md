@@ -67,7 +67,7 @@ so the unitary group of the form is the group of bounded operators preserving $B
 
 1. for $B$ the inner product on a complex Hilbert space, $\mathrm{U}(H)$, the unitary group, and on a real Hilbert space $O(H)$, the orthogonal group;
 2. for $B$ a non-degenerate symmetric bilinear form on a real space, the orthogonal group of $B$;
-3. for $B$ a non-degenerate alternating (skew-symmetric) form, the symplectic group $Sp(H,B)$;
+3. for $B$ a non-degenerate alternating (antisymmetric) form, the symplectic group $Sp(H,B)$;
 4. for $B$ an indefinite non-degenerate Hermitian form of signature $(n,m)$ on $\mathbb{K}^{n}$, the indefinite unitary group $\mathrm{U}(n,m)$.
 
 **Proof.** These are the definitions read through the theorem: the preservation of the form is the defining condition in each case, the group being unitary, orthogonal or symplectic according to the symmetry type of $B$. The indefinite Hermitian forms and their geometry are Part III, named here and not developed; the finite-dimensional forms and the groups are *Hilbert Algebras*.

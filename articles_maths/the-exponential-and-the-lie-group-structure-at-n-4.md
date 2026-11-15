@@ -128,13 +128,13 @@ so the group law in exponential coordinates is the addition corrected by the com
 
 **Theorem.** The exponential maps $\operatorname{Herm}_4$ diffeomorphically onto $\operatorname{Herm}_4^{++}$ and maps $\mathfrak{u}(4)$ onto $U(4)$.
 
-**Proof.** A Hermitian $H$ has real eigenvalues, so $e^{H}$ is positive definite Hermitian; the inverse is the logarithm of the eigenvalues, which is smooth on the positive axis. A skew-Hermitian $K$ satisfies $(e^{K})^{\ast}=e^{K^{\ast}}=e^{-K}=(e^{K})^{-1}$, so the image is unitary; and every unitary is $e^{K}$ for some skew-Hermitian $K$ by the spectral theorem.
+**Proof.** A Hermitian $H$ has real eigenvalues, so $e^{H}$ is positive definite Hermitian; the inverse is the logarithm of the eigenvalues, which is smooth on the positive axis. A anti-Hermitian $K$ satisfies $(e^{K})^{\ast}=e^{K^{\ast}}=e^{-K}=(e^{K})^{-1}$, so the image is unitary; and every unitary is $e^{K}$ for some anti-Hermitian $K$ by the spectral theorem.
 
 **Corollary.** $\exp$ is a diffeomorphism from the Hermitian half onto the open cone, and a surjection with non-discrete fibres from the skew half onto the unitary group.
 
 **Proof.** The first is a diffeomorphism by the two smooth inverse constructions; the second is onto with the ambiguity of the angles by $2\pi$.
 
-**Corollary.** The composition gives the polar decomposition: every invertible matrix is $e^{H}e^{K}$ with $H$ Hermitian and $K$ skew-Hermitian.
+**Corollary.** The composition gives the polar decomposition: every invertible matrix is $e^{H}e^{K}$ with $H$ Hermitian and $K$ anti-Hermitian.
 
 **Proof.** The polar decomposition and the two surjectivities.
 

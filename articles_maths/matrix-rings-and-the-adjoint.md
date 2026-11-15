@@ -35,7 +35,7 @@ $$
 
 the middle factor being $\sigma(X)^{\mathrm t}$; and with $\Phi = I$ the same involution is the conjugate transpose, $X^{*} = \begin{pmatrix}-i&0\\1&2\end{pmatrix}$.
 
-**Proposition (self-adjoint and skew-adjoint).** The **self-adjoint** matrices are those with $\sigma(X)^{\mathrm t}\Phi = \Phi X$, equivalently $X^{*} = X$; the **skew-adjoint** ones are those with $X^{*} = -X$. For $\Phi = \operatorname{diag}(1,-1)$ the self-adjoint matrices are $\begin{pmatrix}a&b\\-\bar b&d\end{pmatrix}$ with $a,d$ real, the matrix $\Phi$ itself among them. With $2$ invertible the ring is the sum of the two, and for $\Phi = I$ they are the matrices with $\sigma(X)^{\mathrm t} = \pm X$, the Hermitian and skew-Hermitian matrices of the coefficient involution.
+**Proposition (self-adjoint and skew-adjoint).** The **self-adjoint** matrices are those with $\sigma(X)^{\mathrm t}\Phi = \Phi X$, equivalently $X^{*} = X$; the **skew-adjoint** ones are those with $X^{*} = -X$. For $\Phi = \operatorname{diag}(1,-1)$ the self-adjoint matrices are $\begin{pmatrix}a&b\\-\bar b&d\end{pmatrix}$ with $a,d$ real, the matrix $\Phi$ itself among them. With $2$ invertible the ring is the sum of the two, and for $\Phi = I$ they are the matrices with $\sigma(X)^{\mathrm t} = \pm X$, the Hermitian and anti-Hermitian matrices of the coefficient involution.
 
 **Proof.** $X^{*} = X$ is $\Phi^{-1}\sigma(X)^{\mathrm t}\Phi = X$, i.e. $\sigma(X)^{\mathrm t}\Phi = \Phi X$; the rest is *Involutive Rings* applied to the adjoint involution.
 
@@ -103,5 +103,5 @@ In the matrix ring with a coefficient involution $\sigma$ and an invertible Gram
 
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions*, American Mathematical Society Colloquium Publications 44 (1998), for the adjoint involution, the Gram matrix and the classical groups.
 - Nathan Jacobson, *Structure of Rings*, American Mathematical Society Colloquium Publications 37 (1964), for the adjoint involution and the unitary elements of a matrix ring.
-- I. N. Herstein, *Rings with Involution* (University of Chicago Press, 1976), for the Hermitian and skew-Hermitian matrices and the trace.
+- I. N. Herstein, *Rings with Involution* (University of Chicago Press, 1976), for the Hermitian and anti-Hermitian matrices and the trace.
 - Nicolas Bourbaki, *Algebra I*, Chapters 1–3 (Springer, 1998), for sesquilinear forms, their Gram matrices and the groups that preserve them.

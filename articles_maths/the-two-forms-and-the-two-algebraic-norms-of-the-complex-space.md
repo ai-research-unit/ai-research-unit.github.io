@@ -4,7 +4,7 @@
 
 A form on an algebra is the scalar part of a product, with a conjugation named on each slot. The complex space carries two products, so it carries two forms, and each form read at its two equal arguments is an algebraic norm. The forms are $P(Q_1,Q_2)=Q_1Q_2$, the plain form, and $H(Q_1,Q_2)=Q_1\bar Q_2$, the Hermitian form. The norms are $P(Q)=Q^{2}$ and $H(Q)=Q\bar Q$.
 
-The two are as different as two forms on one space can be. The plain form is symmetric, complex-valued, of realified signature $(1,1)$, isotropic, with no cone and no order; its norm is complex, anisotropic and not real. The Hermitian form is conjugate-symmetric, positive definite, of realified signature $(2,0)$, multiplicative; its norm is the squared modulus. One function, $H$, is at once a form, a norm and a square of the algebra.
+The two are as different as two forms on one space can be. The plain form is symmetric, complex-valued, of realified signature $(1,1)$, isotropic, with no positive cone and no order; its norm is complex, anisotropic and not real. The Hermitian form is conjugate-symmetric, positive definite, of realified signature $(2,0)$, multiplicative; its norm is the squared modulus. One function, $H$, is at once a form, a norm and a square of the algebra.
 
 The two products are *The Two Products of the Complex Space*, and the general convention of a form is *Product and Form Conventions*; the norm of the definite form, its multiplicativity, the invertibility criterion and the group of units are *Complex Norm and Invertibility*. The positivity and the cone are *The Positivity and the Ray of Squares of the Complex Space*, and the Hermitian modules over the algebra are *The Hermitian Modules and the Unitary Witt Group over the Complex Algebra*.
 
@@ -23,9 +23,9 @@ The general theory reads a form by the two conjugations its product carries, and
 
 **Proposition.** The four forms fall two-and-two onto two, and the two identities $N=P$ and $\mathrm{Kr}=H$ hold.
 
-*Proof.* The quaternionic conjugation ${}^{\natural}$ is the identity on $\mathbb{C}$, so the second and the fourth rows coincide with the first and the third.
+*Proof.* The intrinsic conjugation ${}^{\natural}$ is the identity on $\mathbb{C}$, so the second and the fourth rows coincide with the first and the third.
 
-**Remark (the general letter survives without an object).** The letters $N$ and $\mathrm{Kr}$ keep their place in the corpus's list of four, and on $\mathbb{C}$ they name the two forms of the plain and Hermitian kinds. A reader who sees $N$ in a biquaternion article must not read it as a complex norm: the coincidence is a coincidence of the complex layer, and it is recorded here once so that it is not read as an identity in general.
+**Remark (the general letter survives without an object).** The letters $N$ and $\mathrm{Kr}$ keep their place in the corpus's list of four, and on $\mathbb{C}$ they name the two forms of the plain and Hermitian kinds. A reader who sees $N$ in a general article must not read it as a complex norm: the coincidence is a coincidence of the complex layer, and it is recorded here once so that it is not read as an identity in general.
 
 ## The Plain Form
 
@@ -55,7 +55,7 @@ The null cone of $\operatorname{Re}P$ is therefore the pair of real lines spanne
 
 **Remark (the two readings of isotropy).** The complex-valued form $Q_1Q_2$ has no non-zero isotropic vector, because $Q^{2}=0$ forces $Q=0$ in a field. The realified form does have them. The two statements do not conflict: isotropy is a property of a real form, and the complex form is not a real form. The word *isotropic* is therefore read on the realification throughout this article.
 
-**Remark (no cone, no order).** The plain form takes complex values and its real part is indefinite, so there is no set of positive elements and no order attached to it. The signature $(1,1)$ says exactly why: a form with one positive and one negative direction cannot define a cone, and a space whose only quadratic form is of that signature cannot be ordered. The only order of the complex field is the order it inherits from its real part, and that order is not compatible with the multiplication, as *The Specificities of the Complex Algebra* shows.
+**Remark (no positive cone, no order).** The plain form takes complex values and its real part is indefinite, so there is no set of positive elements for it and no order attached to it. The signature $(1,1)$ says exactly why: the set where $\operatorname{Re}P$ is non-negative is a double cone of two opposite components, not a positive cone, and a double cone with two components defines no order. The Hermitian form is the one that carries positivity, and the only order of the complex field is the order inherited from its real part, which is not compatible with the multiplication, as *The Specificities of the Complex Algebra* shows.
 
 ## The Hermitian Form
 
@@ -154,7 +154,7 @@ $$
 
 ## Summary
 
-The complex space carries two forms, $P(Q_1,Q_2)=Q_1Q_2$ and $H(Q_1,Q_2)=Q_1\bar Q_2$, because the quaternionic conjugation is the identity and the four forms of the general theory fall two-and-two, with $N=P$ and $\mathrm{Kr}=H$. The plain form is symmetric, non-degenerate, of realified signature $(1,1)$, isotropic on the two null lines $q=\pm q'$, with no cone and no order; its norm $Q^{2}$ is complex, anisotropic and multiplicative. The Hermitian form is conjugate-symmetric, positive definite, of realified signature $(2,0)$, multiplicative; its norm $Q\bar Q$ is real, non-negative and definite, and it polarises in four terms where the plain norm polarises in two. On the real line the two forms coincide, on the imaginary line they are opposite, and the whole difference between the two signatures is the sign of the square of an imaginary number. One function, $H$, is at once a form, a norm and a square.
+The complex space carries two forms, $P(Q_1,Q_2)=Q_1Q_2$ and $H(Q_1,Q_2)=Q_1\bar Q_2$, because the intrinsic conjugation is the identity and the four forms of the general theory fall two-and-two, with $N=P$ and $\mathrm{Kr}=H$. The plain form is symmetric, non-degenerate, of realified signature $(1,1)$, isotropic on the two null lines $q=\pm q'$, with no positive cone and no order; its norm $Q^{2}$ is complex, anisotropic and multiplicative. The Hermitian form is conjugate-symmetric, positive definite, of realified signature $(2,0)$, multiplicative; its norm $Q\bar Q$ is real, non-negative and definite, and it polarises in four terms where the plain norm polarises in two. On the real line the two forms coincide, on the imaginary line they are opposite, and the whole difference between the two signatures is the sign of the square of an imaginary number. One function, $H$, is at once a form, a norm and a square.
 
 ## Summary of Notation
 

@@ -154,7 +154,7 @@ $$
 \end{cases}
 $$
 
-The doubling is therefore a property of the non-central factors, and of the Hermitian central one; the cancellation is a property of the skew-Hermitian central one. "Half-angle" is the name of the boost and rotor rows; it is not a property of the phase.
+The doubling is therefore a property of the non-central factors, and of the Hermitian central one; the cancellation is a property of the anti-Hermitian central one. "Half-angle" is the name of the boost and rotor rows; it is not a property of the phase.
 
 ## Summary
 

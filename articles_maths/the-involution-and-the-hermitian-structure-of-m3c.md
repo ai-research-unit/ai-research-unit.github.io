@@ -6,13 +6,13 @@ The conjugate transpose
 $$
 A^{*}=\bar A^{\mathsf T},\qquad (A^{*})_{ij}=\overline{a_{ji}},
 $$
-is a real-linear involution of $M_{3}(\mathbb{C})$. It is not complex-linear: $(iA)^{*}=-iA^{*}$. Its fixed points are the Hermitian matrices, its anti-fixed points are the skew-Hermitian matrices, and the elements that preserve the Hermitian form are the $*$-unitary matrices. The involution gives the algebra a **Hermitian structure**, and the trace form
+is a real-linear involution of $M_{3}(\mathbb{C})$. It is not complex-linear: $(iA)^{*}=-iA^{*}$. Its fixed points are the Hermitian matrices, its anti-fixed points are the anti-Hermitian matrices, and the elements that preserve the Hermitian form are the $*$-unitary matrices. The involution gives the algebra a **Hermitian structure**, and the trace form
 $$
 \langle A,B\rangle=\operatorname{tr}(A^{*}B)
 $$
 is a positive definite Hermitian inner product. This is the form that is used throughout the category; it is not the complex bilinear trace pairing $\operatorname{tr}(AB)$ of *The Element, the Coordinates and the Trace of $M_3(\mathbb{C})$*, which is indefinite.
 
-The article defines the involution and its three distinguished sets, proves the decomposition into Hermitian and skew-Hermitian parts, establishes the positive definiteness of the trace form and the Frobenius norm, identifies the real forms $\mathfrak{u}(3)$ and $\mathfrak{su}(3)$, and compares the definite form with the null cone of the biquaternion algebra. The comparison is the reason for the article: the biquaternion algebra has a quadratic form with nonzero isotropic vectors, while $M_{3}(\mathbb{C})$ with the Hermitian trace form has none. The singular set $\det A=0$ is not a null cone; it is a complex hypersurface of real codimension two, treated in *The Forms, the Norms and the Singular Set of $M_3(\mathbb{C})$*.
+The article defines the involution and its three distinguished sets, proves the decomposition into Hermitian and anti-Hermitian parts, establishes the positive definiteness of the trace form and the Frobenius norm, identifies the real forms $\mathfrak{u}(3)$ and $\mathfrak{su}(3)$, and compares the definite form with the null cone of the biquaternion algebra. The comparison is the reason for the article: the biquaternion algebra has a quadratic form with nonzero isotropic vectors, while $M_{3}(\mathbb{C})$ with the Hermitian trace form has none. The singular set $\det A=0$ is not a null cone; it is a complex hypersurface of real codimension two, treated in *The Forms, the Norms and the Singular Set of $M_3(\mathbb{C})$*.
 
 The construction is root-first. The matrix units $E_{ij}$ are those of *The Matrix Algebra $M_{3}(\mathbb{C})$*; the involution acts on them by $E_{ij}^{*}=E_{ji}$, and the standard root $H_{0}=\operatorname{diag}(1,\omega,\omega^{2})$ is $*$-unitary, because its eigenvalues have modulus one. The Hermitian structure is compatible with the frame but does not depend on it.
 
@@ -31,28 +31,28 @@ It is conjugate-linear, not complex-linear, and it is an anti-automorphism of th
 **The three distinguished sets.**
 
 - $A$ is **Hermitian** when $A^{*}=A$, equivalently $a_{ij}=\bar a_{ji}$.
-- $A$ is **skew-Hermitian** when $A^{*}=-A$, equivalently $a_{ij}=-\bar a_{ji}$.
+- $A$ is **anti-Hermitian** when $A^{*}=-A$, equivalently $a_{ij}=-\bar a_{ji}$.
 - $A$ is **$*$-unitary** when $A^{*}A=AA^{*}=I$.
 
-The diagonal entries of a Hermitian matrix are real; the diagonal entries of a skew-Hermitian matrix are purely imaginary. The identity $I$ is Hermitian, and $iI$ is skew-Hermitian.
+The diagonal entries of a Hermitian matrix are real; the diagonal entries of a anti-Hermitian matrix are purely imaginary. The identity $I$ is Hermitian, and $iI$ is anti-Hermitian.
 
-**The Hermitian and skew-Hermitian decomposition.** Every $A$ splits uniquely as
+**The Hermitian and anti-Hermitian decomposition.** Every $A$ splits uniquely as
 $$
 A=\tfrac12(A+A^{*})+\tfrac12(A-A^{*}),
 $$
-where the first term is Hermitian and the second is skew-Hermitian. Hence
+where the first term is Hermitian and the second is anti-Hermitian. Hence
 $$
 M_{3}(\mathbb{C})=\operatorname{Herm}_{3}\oplus\operatorname{Skew}_{3},\qquad 18=9+9,
 $$
 as real vector spaces. The two summands are the $+1$ and $-1$ eigenspaces of the real-linear involution $A\mapsto A^{*}$.
 
-**Proof.** The first term is fixed by the star, the second is anti-fixed, and their sum is $A$; the decomposition is unique because the intersection of the two eigenspaces is zero. The real dimensions are $9$ each: a Hermitian matrix is determined by the three real diagonal entries and the three complex entries above the diagonal, $3+2\cdot3=9$; the skew-Hermitian matrices are $i$ times the Hermitian ones, also of dimension $9$.
+**Proof.** The first term is fixed by the star, the second is anti-fixed, and their sum is $A$; the decomposition is unique because the intersection of the two eigenspaces is zero. The real dimensions are $9$ each: a Hermitian matrix is determined by the three real diagonal entries and the three complex entries above the diagonal, $3+2\cdot3=9$; the anti-Hermitian matrices are $i$ times the Hermitian ones, also of dimension $9$.
 
-**The real forms.** The skew-Hermitian matrices form the real Lie algebra
+**The real forms.** The anti-Hermitian matrices form the real Lie algebra
 $$
 \mathfrak{u}(3)=\{A:A^{*}=-A\},\qquad \dim_{\mathbb{R}}\mathfrak{u}(3)=9,
 $$
-and the traceless skew-Hermitian matrices form
+and the traceless anti-Hermitian matrices form
 $$
 \mathfrak{su}(3)=\{A:A^{*}=-A,\ \operatorname{tr}A=0\},\qquad \dim_{\mathbb{R}}\mathfrak{su}(3)=8.
 $$
@@ -166,7 +166,7 @@ and the Hermitian form of $H$ with itself is $16$. The matrix
 $$
 K=iH=\begin{pmatrix}i&-1&0\\1&2i&0\\0&0&3i\end{pmatrix}
 $$
-is skew-Hermitian, $K^{*}=-K$; its eigenvalues are $i$ times the eigenvalues of $H$, purely imaginary. The matrix $U=\exp(iH)$ is $*$-unitary, because $(e^{iH})^{*}=e^{-iH}=(e^{iH})^{-1}$.
+is anti-Hermitian, $K^{*}=-K$; its eigenvalues are $i$ times the eigenvalues of $H$, purely imaginary. The matrix $U=\exp(iH)$ is $*$-unitary, because $(e^{iH})^{*}=e^{-iH}=(e^{iH})^{-1}$.
 
 ## The Real Forms and the Comparison with the Biquaternion Cone
 
@@ -175,8 +175,8 @@ is skew-Hermitian, $K^{*}=-K$; its eigenvalues are $i$ times the eigenvalues of 
 | Real form | Definition | Real dimension |
 |---|---|---|
 | $M_{3}(\mathbb{R})$ | real entries | $9$ |
-| $\mathfrak{u}(3)$ | skew-Hermitian | $9$ |
-| $\mathfrak{su}(3)$ | traceless skew-Hermitian | $8$ |
+| $\mathfrak{u}(3)$ | anti-Hermitian | $9$ |
+| $\mathfrak{su}(3)$ | traceless anti-Hermitian | $8$ |
 | $\operatorname{Herm}_{3}$ | Hermitian | $9$ |
 
 The first is a real algebra; the second and third are real Lie algebras; the fourth is a real vector space, not closed under multiplication. The $*$-unitary group $U(3)$ is the compact real form of $GL_{3}(\mathbb{C})$, and $SU(3)$ is the compact real form of $SL_{3}(\mathbb{C})$.
@@ -227,7 +227,7 @@ The Hermitian spectral theorem gives $H=U\Lambda U^{*}$ with $\Lambda$ real diag
 |---|---|
 | Real dimension | $18$ |
 | Hermitian dimension | $9$ |
-| Skew-Hermitian dimension | $9$ |
+| Anti-Hermitian dimension | $9$ |
 | $\mathfrak{u}(3)$ dimension | $9$ |
 | $\mathfrak{su}(3)$ dimension | $8$ |
 | $U(3)$ dimension | $9$ |
@@ -242,9 +242,9 @@ The Hermitian spectral theorem gives $H=U\Lambda U^{*}$ with $\Lambda$ real diag
 |---|---|
 | $A^{*}=\bar A^{\mathsf T}$ | the conjugate transpose |
 | $\operatorname{Herm}_{3}$ | the Hermitian matrices, real dimension $9$ |
-| $\operatorname{Skew}_{3}$ | the skew-Hermitian matrices, real dimension $9$ |
-| $\mathfrak{u}(3)$ | the skew-Hermitian Lie algebra |
-| $\mathfrak{su}(3)$ | the traceless skew-Hermitian Lie algebra |
+| $\operatorname{Skew}_{3}$ | the anti-Hermitian matrices, real dimension $9$ |
+| $\mathfrak{u}(3)$ | the anti-Hermitian Lie algebra |
+| $\mathfrak{su}(3)$ | the traceless anti-Hermitian Lie algebra |
 | $U(3),SU(3)$ | the $*$-unitary and special $*$-unitary groups |
 | $\langle A,B\rangle=\operatorname{tr}(A^{*}B)$ | the positive definite Hermitian trace form |
 | $\langle A\rangle_*^{1/2}$ | the Frobenius norm |

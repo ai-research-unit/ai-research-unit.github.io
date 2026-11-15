@@ -4,7 +4,7 @@
 
 **A Hermitian matrix has real eigenvalues and an orthonormal eigenbasis, and its eigenvalues are the extreme values of the Rayleigh quotient, so the matrix is the sum of real numbers times orthogonal projections.**
 
-The article proves the reality of the spectrum, proves the orthogonal diagonalisation, proves the spectral resolution $A=\sum_i\lambda_iP_i$ with the projections written as $u_iu_i^{*}$, proves the Rayleigh quotient characterisation and the min-max principle, and identifies the positive semidefinite matrices as the Hermitian matrices of nonnegative spectrum. It assumes *Normal Matrices and the Common Spectral Theorem* for the unitary diagonalisation and *The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian* for the half. It defers the geometry to *The Cone of Positive Semidefinite Matrices* and the analysis to *The Positive Cone and Its Boundary*.
+The article proves the reality of the spectrum, proves the orthogonal diagonalisation, proves the spectral resolution $A=\sum_i\lambda_iP_i$ with the projections written as $u_iu_i^{*}$, proves the Rayleigh quotient characterisation and the min-max principle, and identifies the positive semidefinite matrices as the Hermitian matrices of nonnegative spectrum. It assumes *Normal Matrices and the Common Spectral Theorem* for the unitary diagonalisation and *The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian* for the half. It defers the geometry to *The Cone of Positive Semidefinite Matrices* and the analysis to *The Positive Cone and Its Boundary*.
 
 ## Reality of the Spectrum
 
@@ -219,5 +219,5 @@ A Hermitian matrix has a real spectrum, because $\lambda\|v\|^{2}=\langle Av,v\r
 - Rajendra Bhatia, *Matrix Analysis* (Springer, 1997), for the Courant–Fischer min-max principle.
 - Paul R. Halmos, *A Hilbert Space Problem Book* (Springer, 1982), for the spectral resolution and the functional calculus.
 - [Normal Matrices and the Common Spectral Theorem](normal-matrices-and-the-common-spectral-theorem.html), for the unitary diagonalisation that the Hermitian case specialises.
-- [The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian](the-two-halves-over-c-hermitian-and-skew-hermitian.html), for the half in which the theorem lives.
+- [The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian](the-two-halves-over-c-hermitian-and-skew-hermitian.html), for the half in which the theorem lives.
 - [The Spectrum of a Matrix](the-spectrum-of-a-matrix.html), for the trace and the determinant as the sum and the product of the spectrum.

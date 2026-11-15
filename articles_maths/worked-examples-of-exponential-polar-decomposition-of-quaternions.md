@@ -735,7 +735,7 @@ The quaternion case is the definite compact companion of the biquaternion case: 
 | $D(\tilde h)$ | the defect of a candidate exponent |
 | $\ker\exp=\{0\}\cup\bigcup_{k\ge1}\{\vec v:\langle\vec v\rangle_{\natural}=(2\pi k)^2\}$ | the kernel, not a subgroup |
 | $\mathsf M(\tilde q)=q_tI-iq_x\sigma_x-iq_y\sigma_y-iq_z\sigma_z$ | the matrix of the element |
-| $N=-i\vec n\cdot\vec\sigma$ | the skew-Hermitian matrix of the axis |
+| $N=-i\vec n\cdot\vec\sigma$ | the anti-Hermitian matrix of the axis |
 | $c=\cos\theta$, $s=\sin\theta$ | the half-angle cosine and sine |
 
 ## Further Reading

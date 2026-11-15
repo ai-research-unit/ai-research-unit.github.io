@@ -10,7 +10,7 @@ a commutative product with a one-dimensional image. It is as close to a scalar p
 
 The article is the real mirror of [The Jordan Structure of the Symmetric Quaternionic Product](the-jordan-structure-of-the-symmetric-quaternionic-product.html): the symmetrisation, the closed form, the absent unit, the identity $L_{\tilde X}^2=X_0L_{\tilde X}$, the failure of the Jordan identity and its closed defect, the cone of squares, the Peirce theory, the operators, and the radical and the isotropic set, which are trivial here because the form is definite and are not trivial in the biquaternion block.
 
-The parent is [The General Quaternionic Bilinear Product of the Quaternions](the-general-quaternionic-bilinear-product-of-the-quaternions.html); the product read as a form is [The Symmetrised Quaternionic Product and the Hermitian Subspace of the Quaternions](the-symmetrised-quaternionic-product-and-the-hermitian-subspace-of-the-quaternions.html), and the form itself is [The 2 Forms over the Quaternioid $\mathbb{R}$ Space](the-2-forms-over-the-quaternioid-r-space.html), both cited and not restated.
+The parent is [The General Quaternionic Bilinear Product of the Quaternions](the-general-quaternionic-bilinear-product-of-the-quaternions.html); the product read as a form is the symmetrisation of the quaternionic form, whose matrix is $I_4$, cited and not restated.
 
 ## The Symmetrisation
 
@@ -125,7 +125,7 @@ $$
 
 *Proof.* The Gram matrix is read on the basis, where $\tau(e_t,e_t)=1$ and $\tau(\vec e_k,\vec e_k)=1$ with all mixed entries zero, and a positive definite form has no isotropic vector. The computation was made on the basis and on random elements.
 
-**Remark (the contrast with the biquaternion block).** In the biquaternion block the same construction gives a form of signature $(4,0)$ over $\mathbb{C}$, hence a form with a non-trivial isotropic cone over $\mathbb{C}$: the cone $t^2+\lvert\vec s\rvert^2=0$ has complex dimension three, and the algebra has a rich isotropic structure, with nilpotents, zero divisors and an isotropic plane. Over $\mathbb{R}$ the cone is the origin alone, the radical is zero for a trivial reason, and the isotropic structure of [The Isotropic Structure of the General Quaternionic Algebra of the Quaternions](the-isotropic-structure-of-the-general-quaternionic-algebra-of-the-quaternions.html) is empty. **The definiteness is not a detail: it is the whole difference between a form and a form with a cone.**
+**Remark (the contrast with the biquaternion block).** In the biquaternion block the same construction gives a form of signature $(4,0)$ over $\mathbb{C}$, hence a form with a non-trivial isotropic cone over $\mathbb{C}$: the cone $t^2+\lvert\vec s\rvert^2=0$ has complex dimension three, and the algebra has a rich isotropic structure, with nilpotents, zero divisors and an isotropic plane. Over $\mathbb{R}$ the cone is the origin alone, the radical is zero for a trivial reason, and the isotropic structure of the quaternionic algebra is empty. **The definiteness is not a detail: it is the whole difference between a form and a form with a cone.**
 
 **Remark (the radical is not the defect).** The radical of the trace form is zero and the Jordan defect is not: the two notions are independent, and the example shows it in the smallest possible way. A nondegenerate form does not make an algebra a Jordan algebra, and a Jordan algebra does not need a nondegenerate form: the other symmetrisation has a form of signature $(1,3)$ and defect zero.
 
@@ -178,6 +178,5 @@ The trace form is the quaternion form, positive definite, with radical $\{0\}$ a
 
 - [The General Quaternionic Bilinear Product of the Quaternions](the-general-quaternionic-bilinear-product-of-the-quaternions.html), for the parent product.
 - [The Jordan Structure of the Symmetric Plain Product of the Quaternions](the-jordan-structure-of-the-symmetric-plain-product-of-the-quaternions.html), for the other symmetrisation, which satisfies the identity.
-- [The Symmetrised Quaternionic Product and the Hermitian Subspace of the Quaternions](the-symmetrised-quaternionic-product-and-the-hermitian-subspace-of-the-quaternions.html), for the same object read as a form.
 - [The Jordan Structure of the Symmetric Quaternionic Product](the-jordan-structure-of-the-symmetric-quaternionic-product.html), for the biquaternion counterpart and its isotropic structure.
 - [The Lie Structure of the Antisymmetric Quaternionic Product of the Quaternions](the-lie-structure-of-the-antisymmetric-quaternionic-product-of-the-quaternions.html), for the other half of the same parent.

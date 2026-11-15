@@ -414,7 +414,7 @@ $$
 \log M_{\tilde q}=\ln r\,I+\theta N
 $$
 
-on the principal branch. Adding $2\pi kN$ gives another logarithm, because $\exp(2\pi kN)=I$, and at $M_{\tilde q}=-rI$ every traceless skew-Hermitian $N$ with $N^2=-I$ gives a logarithm $\ln r\,I+\pi N$. The matrix logarithm inherits exactly the ambiguity of §*Existence and Uniqueness*.
+on the principal branch. Adding $2\pi kN$ gives another logarithm, because $\exp(2\pi kN)=I$, and at $M_{\tilde q}=-rI$ every traceless anti-Hermitian $N$ with $N^2=-I$ gives a logarithm $\ln r\,I+\pi N$. The matrix logarithm inherits exactly the ambiguity of §*Existence and Uniqueness*.
 
 The differential of the exponential is
 
@@ -589,7 +589,7 @@ with pure exponent $\vec v=\theta\vec n$, angle $\theta=\sqrt{\langle\vec v\rang
 
 The kernel is $\{0\}\cup2\pi S^2\cup4\pi S^2\cup\cdots$, a union of spheres and not a subgroup. The exponential is therefore not a homomorphism: the bracket of two pure exponents is twice their cross product, and $\exp(\tilde q_1+\tilde q_2)\neq\exp(\tilde q_1)\exp(\tilde q_2)$ for non-commuting exponents. The group of units is not $\mathbb{H}/\ker\exp$: off the real axis the fibres are lines, on the real axis they are spheres, and only the positive real axis gives cosets of the kernel. The amalgamation into one exponential survives because the logarithmic scale is central; the group law survives in the modulus–unit form, $\mathbb{H}^{\times}\cong\mathbb{R}_{>0}\times S^3$.
 
-The differential of the exponential is invertible exactly off the spheres $\sqrt{\langle\vec v\rangle_{\natural}}=\pi k$, $k\ge1$, whose image is the nonzero real axis; its determinant is $\exp(4q_t)(\sin\theta/\theta)^2$. In the matrix picture the exponential is $\exp(\ln r\,I+\theta N)$ with $N$ skew-Hermitian and $N^2=-I$, and the matrix polar decomposition of the conformal matrix has positive factor $rI$ and special $*$-unitary factor. The exponential coordinates are a diffeomorphism from the cylinder $\sqrt{\langle\vec v\rangle_{\natural}}<\pi$ onto the cut space; they are conformal from the cylinder $\mathbb{R}\times S^3$, not from the Euclidean metric on that cylinder.
+The differential of the exponential is invertible exactly off the spheres $\sqrt{\langle\vec v\rangle_{\natural}}=\pi k$, $k\ge1$, whose image is the nonzero real axis; its determinant is $\exp(4q_t)(\sin\theta/\theta)^2$. In the matrix picture the exponential is $\exp(\ln r\,I+\theta N)$ with $N$ anti-Hermitian and $N^2=-I$, and the matrix polar decomposition of the conformal matrix has positive factor $rI$ and special $*$-unitary factor. The exponential coordinates are a diffeomorphism from the cylinder $\sqrt{\langle\vec v\rangle_{\natural}}<\pi$ onto the cut space; they are conformal from the cylinder $\mathbb{R}\times S^3$, not from the Euclidean metric on that cylinder.
 
 ## Summary of Notation
 
@@ -610,7 +610,7 @@ The differential of the exponential is invertible exactly off the spheres $\sqrt
 | $\tilde q_{\log}=q_{\log}e_t+\vec q_{\log}$ | the exponent, principal when $\sqrt{\langle\vec v\rangle_{\natural}}<\pi$ |
 | $q_{\log}=\ln r$, $\vec q_{\log}=\vec v=\theta\vec n$ | the scalar and vector coordinates of the exponent |
 | $\log\tilde q=\ln r+\theta\vec n$ | the principal logarithm, on $\mathbb{H}\setminus(-\infty,0]$ |
-| $N=\operatorname{Mat}(\vec n)$ | the skew-Hermitian matrix of the unit axis |
+| $N=\operatorname{Mat}(\vec n)$ | the anti-Hermitian matrix of the unit axis |
 | $M_{\tilde q}=\exp(\ln r\,I+\theta N)$ | the matrix exponential |
 | $\mathbb{H}\setminus(-\infty,0]$ | the image of the principal coordinates |
 

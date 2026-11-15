@@ -2,9 +2,9 @@
 
 ## Introduction
 
-A sesquilinear product carries a second product, its transpose $y\star x$, and the difference of the two is the antisymmetric half of the split of the product. This article treats that difference for its own sake: the bracket $[x,y]_{\varsigma}=x\star y-y\star x$. Three things are done. The bracket is antisymmetric for free, but it is linear over the fixed ring $R^{\varsigma}$ alone, and the correction term $(\lambda-\varsigma(\lambda))(y\star x)$ is the whole of the difference from the bilinear case. It takes its values in the skew-Hermitian part, $[A,A]_{\varsigma}\subseteq S(A)$, and on the two halves it is one of the classical operations of the envelope: the ordinary commutator on the Hermitian part, its negative on the skew-Hermitian part, and the symmetrised product across the two. And it is not a Lie bracket: the Jacobi identity fails, with the witness $E_{11},E_{22},E_{12}$ of $M_{2}(\mathbb{C})$ and with the observation that the failure needs the noncommutativity and not the twist, since it vanishes for the sesquilinear field. The Lie structure that a sesqualgebra carries instead lives on the skew-Hermitian half, and it is *Lie Algebras of Sesqualgebras*.
+A sesquilinear product carries a second product, its transpose $y\star x$, and the difference of the two is the antisymmetric half of the split of the product. This article treats that difference for its own sake: the bracket $[x,y]_{\varsigma}=x\star y-y\star x$. Three things are done. The bracket is antisymmetric for free, but it is linear over the fixed ring $R^{\varsigma}$ alone, and the correction term $(\lambda-\varsigma(\lambda))(y\star x)$ is the whole of the difference from the bilinear case. It takes its values in the anti-Hermitian part, $[A,A]_{\varsigma}\subseteq S(A)$, and on the two halves it is one of the classical operations of the envelope: the ordinary commutator on the Hermitian part, its negative on the anti-Hermitian part, and the symmetrised product across the two. And it is not a Lie bracket: the Jacobi identity fails, with the witness $E_{11},E_{22},E_{12}$ of $M_{2}(\mathbb{C})$ and with the observation that the failure needs the noncommutativity and not the twist, since it vanishes for the sesquilinear field. The Lie structure that a sesqualgebra carries instead lives on the anti-Hermitian half, and it is *Lie Algebras of Sesqualgebras*.
 
-The article is the narrow companion of two others: the symmetric half of the same split is *The Sesquilinear Symmetrised Product*, and the bracket, its name and the transposition theorem are introduced in *The Sesquilinear Product*; the whole question of Lie-admissibility, with the collapse theorem and the Lie algebra that the sesqualgebra does carry, is *Lie Algebras of Sesqualgebras* and *The Unitary Lie Algebra*, which are the owners of those results. The Hermitian and the skew-Hermitian elements are *Hermitian and Skew-Hermitian Elements*; the ternary product forced by the failure of associativity is *The Sesquilinear Associator and the Ternary Product*.
+The article is the narrow companion of two others: the symmetric half of the same split is *The Sesquilinear Symmetrised Product*, and the bracket, its name and the transposition theorem are introduced in *The Sesquilinear Product*; the whole question of Lie-admissibility, with the collapse theorem and the Lie algebra that the sesqualgebra does carry, is *Lie Algebras of Sesqualgebras* and *The Unitary Lie Algebra*, which are the owners of those results. The Hermitian and the anti-Hermitian elements are *Hermitian and Anti-Hermitian Elements*; the ternary product forced by the failure of associativity is *The Sesquilinear Associator and the Ternary Product*.
 
 The setting is the standard example of *Sesqualgebras*: $A$ is an associative unital $R$-algebra with a $\varsigma$-semilinear involution $*$, the sesquilinear product is the derived operation $x\star y=xy^{*}$, and juxtaposition is the associative product. The bracket is $[x,y]_{\varsigma}=x\star y-y\star x$, the ordinary commutator of the envelope is $[x,y]=xy-yx$, the two halves are $H(A)=\{x:x^{*}=x\}$ and $S(A)=\{x:x^{*}=-x\}$, and $2$ is invertible in $R$.
 
@@ -54,7 +54,7 @@ so the bracket is $R^{\varsigma}$-bilinear as a map $A\times A\to A$. It is $R$-
 
 **Remark.** The correction term is the whole difference from the bilinear case, and it is the same term that the transposed product and the symmetrised product carry: an operation that reads the two slots of the product in one expression inherits the difference of the two scalar rules. The bracket is therefore an $R^{\varsigma}$-bilinear object and not an $R$-bilinear one, which is the first respect, after the antisymmetry, in which it parts company with a Lie bracket over $R$.
 
-## The Values in the Skew-Hermitian Part
+## The Values in the Anti-Hermitian Part
 
 **Proposition (the split of the product).** With $2$ invertible in $R$,
 
@@ -72,17 +72,17 @@ $$
 [x,y]_{\varsigma}^{*}=-[x,y]_{\varsigma} .
 $$
 
-So the bracket takes its values in the skew-Hermitian part,
+So the bracket takes its values in the anti-Hermitian part,
 
 $$
 [A,A]_{\varsigma}\subseteq S(A),
 $$
 
-and it is a skew-symmetric $R^{\varsigma}$-bilinear map $A\times A\to S(A)$.
+and it is a antisymmetric $R^{\varsigma}$-bilinear map $A\times A\to S(A)$.
 
 **Proof.** The conjugate of a product reverses it, $(x\star y)^{*}=y\star x$, so $[x,y]_{\varsigma}^{*}=(y\star x)-(x\star y)=-[x,y]_{\varsigma}$.
 
-**Remark.** The values are skew-Hermitian for every pair and not merely for skew-Hermitian arguments, so the bracket is an operator $A\times A\to S(A)$ and its image never meets $H(A)$ unless it vanishes. This is the second sharp difference from the ordinary commutator, which moves between the two halves: the commutator of two Hermitian elements is skew-Hermitian, of a Hermitian and a skew-Hermitian element Hermitian, of two skew-Hermitian elements skew-Hermitian, so that $S(A)$ is its even part and $H(A)$ its odd part. The sesquilinear bracket has only the first of those three behaviours, and it has it everywhere.
+**Remark.** The values are anti-Hermitian for every pair and not merely for anti-Hermitian arguments, so the bracket is an operator $A\times A\to S(A)$ and its image never meets $H(A)$ unless it vanishes. This is the second sharp difference from the ordinary commutator, which moves between the two halves: the commutator of two Hermitian elements is anti-Hermitian, of a Hermitian and a anti-Hermitian element Hermitian, of two anti-Hermitian elements anti-Hermitian, so that $S(A)$ is its even part and $H(A)$ its odd part. The sesquilinear bracket has only the first of those three behaviours, and it has it everywhere.
 
 ## The Two Halves
 
@@ -92,15 +92,15 @@ $$
 \boxed{\;[h,h']_{\varsigma}=[h,h'], \qquad [s,s']_{\varsigma}=-[s,s'], \qquad [s,h]_{\varsigma}=sh+hs\;} .
 $$
 
-So on the Hermitian part the sesquilinear bracket is the ordinary commutator of the envelope, on the skew-Hermitian part it is the negative of the ordinary commutator, and across the two halves it is the **symmetrised** product $sh+hs$.
+So on the Hermitian part the sesquilinear bracket is the ordinary commutator of the envelope, on the anti-Hermitian part it is the negative of the ordinary commutator, and across the two halves it is the **symmetrised** product $sh+hs$.
 
-**Proof.** For Hermitian $h$ the derived operation is the algebra product in the first slot, $h\star h'=hh'^{*}=hh'$, and the transposed product is the same in the other order, so $[h,h']_{\varsigma}=hh'-h'h=[h,h']$. For skew-Hermitian $s$ the involution contributes a sign, $s^{*}=-s$, so $[s,s']_{\varsigma}=(-ss')-(-s's)=-[s,s']$, and $[s,h]_{\varsigma}=sh^{*}-hs^{*}=sh+hs$.
+**Proof.** For Hermitian $h$ the derived operation is the algebra product in the first slot, $h\star h'=hh'^{*}=hh'$, and the transposed product is the same in the other order, so $[h,h']_{\varsigma}=hh'-h'h=[h,h']$. For anti-Hermitian $s$ the involution contributes a sign, $s^{*}=-s$, so $[s,s']_{\varsigma}=(-ss')-(-s's)=-[s,s']$, and $[s,h]_{\varsigma}=sh^{*}-hs^{*}=sh+hs$.
 
-**Corollary (the Lie algebra of the skew-Hermitian half).** On $S(A)$ the sesquilinear bracket is $R$-bilinear, antisymmetric and satisfies the Jacobi identity, being the negative of the commutator of the associative envelope; the negation being an isomorphism of brackets, the sesquilinear bracket and the ordinary commutator make $S(A)$ one and the same Lie algebra, up to the sign of the bracket. That Lie algebra is *The Unitary Lie Algebra*, and its place in the sesqualgebra is *Lie Algebras of Sesqualgebras*, §*The Skew-Hermitian Half*.
+**Corollary (the Lie algebra of the anti-Hermitian half).** On $S(A)$ the sesquilinear bracket is $R$-bilinear, antisymmetric and satisfies the Jacobi identity, being the negative of the commutator of the associative envelope; the negation being an isomorphism of brackets, the sesquilinear bracket and the ordinary commutator make $S(A)$ one and the same Lie algebra, up to the sign of the bracket. That Lie algebra is *The Unitary Lie Algebra*, and its place in the sesqualgebra is *Lie Algebras of Sesqualgebras*, §*The Anti-Hermitian Half*.
 
 **Proof.** By the theorem, $[s,s']_{\varsigma}=-[s,s']$ on $S(A)$, and $[S,S]\subseteq S$ for the ordinary commutator; the commutator of an associative algebra is $R$-bilinear, antisymmetric and satisfies the Jacobi identity, and the sign carries through the three terms.
 
-**Remark (why the Hermitian half does not work).** The Hermitian half is not stable under the bracket, since $[h,h']_{\varsigma}=[h,h']$ is skew-Hermitian and not Hermitian unless it vanishes; and it does not satisfy the Jacobi identity either. The reason is the substance of the next section: three Hermitian elements produce inner brackets in $S(A)$, and the outer brackets that meet those values obey the symmetrised rule of the theorem and not the commutator rule, so the reassociation a Jacobi identity performs is performed with a different operation. The failing triple of the next section can be taken with all three elements Hermitian, so the failure is not a defect of the mixed case alone.
+**Remark (why the Hermitian half does not work).** The Hermitian half is not stable under the bracket, since $[h,h']_{\varsigma}=[h,h']$ is anti-Hermitian and not Hermitian unless it vanishes; and it does not satisfy the Jacobi identity either. The reason is the substance of the next section: three Hermitian elements produce inner brackets in $S(A)$, and the outer brackets that meet those values obey the symmetrised rule of the theorem and not the commutator rule, so the reassociation a Jacobi identity performs is performed with a different operation. The failing triple of the next section can be taken with all three elements Hermitian, so the failure is not a defect of the mixed case alone.
 
 ## The Failure of the Jacobi Identity
 
@@ -144,13 +144,13 @@ so $[x^{*},y^{*}]_{\varsigma}$ is neither $[x,y]_{\varsigma}^{*}$ nor its negati
 
 ### The Complex Matrices
 
-For $A=M_{n}(\mathbb{C})$ with the conjugate transpose the bracket is $[X,Y]_{\varsigma}=XY^{*}-YX^{*}$, with values in $S(A)$, the skew-Hermitian matrices. On the Hermitian matrices it is the ordinary commutator $XY-YX$, on the skew-Hermitian matrices its negative; the ordinary commutator makes $S(A)$ a Lie algebra and the sesquilinear bracket makes it the same Lie algebra with the sign reversed, which is *The Unitary Lie Algebra*. The witness of the theorem is in $M_{2}(\mathbb{C})$, and the failure is already produced there by the three Hermitian elements $E_{11}$, $E_{22}$ and $E_{12}+E_{21}$.
+For $A=M_{n}(\mathbb{C})$ with the conjugate transpose the bracket is $[X,Y]_{\varsigma}=XY^{*}-YX^{*}$, with values in $S(A)$, the anti-Hermitian matrices. On the Hermitian matrices it is the ordinary commutator $XY-YX$, on the anti-Hermitian matrices its negative; the ordinary commutator makes $S(A)$ a Lie algebra and the sesquilinear bracket makes it the same Lie algebra with the sign reversed, which is *The Unitary Lie Algebra*. The witness of the theorem is in $M_{2}(\mathbb{C})$, and the failure is already produced there by the three Hermitian elements $E_{11}$, $E_{22}$ and $E_{12}+E_{21}$.
 
 ### The Field
 
 For $A=\mathbb{C}$ over $(\mathbb{C},\varsigma)$ with $x\star y=x\overline{y}$ the bracket is $[x,y]_{\varsigma}=2i\,\mathrm{Im}(x\overline{y})$, antisymmetric and linear over $\mathbb{R}$, with values in the purely imaginary numbers, which are $S(A)$. The Jacobi identity holds, so the bracket is a Lie bracket over the fixed field $\mathbb{R}$; it does not vanish, since $[1,i]_{\varsigma}=-2i$, so a commutative algebra carries a non-abelian bracket of this kind. The failure of the Jacobi identity in the noncommutative case is therefore produced by the noncommutativity of the coefficients and not by the twist.
 
-### The Skew-Hermitian Half
+### The Anti-Hermitian Half
 
 The Lie structure that a sesqualgebra carries is on $S(A)$, where the bracket is the negative of the commutator of the envelope, so that antisymmetry, the two scalar rules and the Jacobi identity all hold; the Hermitian half carries no Lie algebra under the sesquilinear bracket, its bracket leaving it and the Jacobi identity failing on it. This is the sense in which the sesqualgebra replaces the antisymmetrisation of its own product by the commutator of the associative structure, and the replacement is *Lie Algebras of Sesqualgebras* and *The Unitary Lie Algebra*.
 
@@ -160,7 +160,7 @@ The bracket is the antisymmetric half of the **plain** exchange, the swap of the
 
 ## Summary
 
-The sesquilinear commutator is the difference of the product and its transpose, $[x,y]_{\varsigma}=x\star y-y\star x$, the antisymmetric half of the split of the product whose symmetric half is the symmetrised product. It is antisymmetric for free; it is linear over the fixed ring $R^{\varsigma}$ and not over $R$, the correction term $(\lambda-\varsigma(\lambda))(y\star x)$ being the whole difference from the bilinear case; and it takes its values in the skew-Hermitian part, $[A,A]_{\varsigma}\subseteq S(A)$, for all arguments. On the two halves it is one of the operations of the envelope: the ordinary commutator on $H(A)$, its negative on $S(A)$, and the symmetrised product across the two. It is not a Lie bracket. The Jacobi identity fails, with the witness $E_{11},E_{22},E_{12}$ in $M_{2}(\mathbb{C})$, whose sum is $E_{21}-E_{12}$; three Hermitian elements already fail; and the failure needs the noncommutativity and not the twist, since on the commutative sesquilinear field the identity holds identically. The bracket does not commute with the involution either. The Lie algebra that a sesqualgebra does carry is on the skew-Hermitian half, where the sesquilinear bracket is the negative of the commutator of the associative envelope and therefore satisfies the identity; that Lie algebra is *Lie Algebras of Sesqualgebras* and *The Unitary Lie Algebra*.
+The sesquilinear commutator is the difference of the product and its transpose, $[x,y]_{\varsigma}=x\star y-y\star x$, the antisymmetric half of the split of the product whose symmetric half is the symmetrised product. It is antisymmetric for free; it is linear over the fixed ring $R^{\varsigma}$ and not over $R$, the correction term $(\lambda-\varsigma(\lambda))(y\star x)$ being the whole difference from the bilinear case; and it takes its values in the anti-Hermitian part, $[A,A]_{\varsigma}\subseteq S(A)$, for all arguments. On the two halves it is one of the operations of the envelope: the ordinary commutator on $H(A)$, its negative on $S(A)$, and the symmetrised product across the two. It is not a Lie bracket. The Jacobi identity fails, with the witness $E_{11},E_{22},E_{12}$ in $M_{2}(\mathbb{C})$, whose sum is $E_{21}-E_{12}$; three Hermitian elements already fail; and the failure needs the noncommutativity and not the twist, since on the commutative sesquilinear field the identity holds identically. The bracket does not commute with the involution either. The Lie algebra that a sesqualgebra does carry is on the anti-Hermitian half, where the sesquilinear bracket is the negative of the commutator of the associative envelope and therefore satisfies the identity; that Lie algebra is *Lie Algebras of Sesqualgebras* and *The Unitary Lie Algebra*.
 
 ## Summary of Notation
 
@@ -172,10 +172,10 @@ The sesquilinear commutator is the difference of the product and its transpose, 
 | $x\circ y=\tfrac12(x\star y+y\star x)$ | the symmetrised product, the symmetric half of the split |
 | $R^{\varsigma}$ | the fixed ring, over which the bracket alone is linear |
 | $(\lambda-\varsigma(\lambda))(y\star x)$ | the correction term of the scalar rule |
-| $H(A)$, $S(A)$ | the Hermitian and the skew-Hermitian elements |
+| $H(A)$, $S(A)$ | the Hermitian and the anti-Hermitian elements |
 | $[A,A]_{\varsigma}\subseteq S(A)$ | the values of the bracket |
 | $[h,h']_{\varsigma}=[h,h']$ | the bracket on the Hermitian part |
-| $[s,s']_{\varsigma}=-[s,s']$ | the bracket on the skew-Hermitian part |
+| $[s,s']_{\varsigma}=-[s,s']$ | the bracket on the anti-Hermitian part |
 | $[s,h]_{\varsigma}=sh+hs$ | the bracket across the two halves |
 | $E_{11},E_{22},E_{12}$ | the witness triple in $M_{2}(\mathbb{C})$ |
 
@@ -184,4 +184,4 @@ The sesquilinear commutator is the difference of the product and its transpose, 
 - I. N. Herstein, *Rings with Involution* (University of Chicago Press, 1976), for the two halves of a ring with involution and the operations they carry.
 - Nathan Jacobson, *Structure of Rings*, American Mathematical Society Colloquium Publications 37 (1964), for the antisymmetrisation of an associative algebra and the Lie algebra of the skew elements.
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions*, American Mathematical Society Colloquium Publications 44 (1998), for the skew elements of an algebra with involution and the Lie structure they carry.
-- The companion articles of this series: [Sesqualgebras](sesqualgebras.html), [The Sesquilinear Product](the-sesquilinear-product.html), [The Sesquilinear Symmetrised Product](the-sesquilinear-symmetrised-product.html), [Hermitian and Skew-Hermitian Elements](hermitian-and-skew-hermitian-elements.html), [The Sesquilinear Associator and the Ternary Product](the-sesquilinear-associator-and-the-ternary-product.html), [Lie Algebras of Sesqualgebras](lie-algebras-of-sesqualgebras.html) and [The Unitary Lie Algebra](the-unitary-lie-algebra.html).
+- The companion articles of this series: [Sesqualgebras](sesqualgebras.html), [The Sesquilinear Product](the-sesquilinear-product.html), [The Sesquilinear Symmetrised Product](the-sesquilinear-symmetrised-product.html), [Hermitian and Anti-Hermitian Elements](hermitian-and-skew-hermitian-elements.html), [The Sesquilinear Associator and the Ternary Product](the-sesquilinear-associator-and-the-ternary-product.html), [Lie Algebras of Sesqualgebras](lie-algebras-of-sesqualgebras.html) and [The Unitary Lie Algebra](the-unitary-lie-algebra.html).

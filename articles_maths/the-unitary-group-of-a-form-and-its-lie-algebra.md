@@ -74,7 +74,7 @@ with the commutator inside the Lie algebra and the anticommutator leaving it; th
 
 ### The Unitary Group
 
-On $M_n(\mathbb{C})$ with the trace form the Lie algebra is the space of the skew-Hermitian matrices, $\mathfrak{u}(n) = \{T : T^{\dagger} = -T\}$, of real dimension $n^{2}$; its traceless part is $\mathfrak{su}(n)$ of dimension $n^{2}-1$, the Lie algebra of the special unitary group.
+On $M_n(\mathbb{C})$ with the trace form the Lie algebra is the space of the anti-Hermitian matrices, $\mathfrak{u}(n) = \{T : T^{\dagger} = -T\}$, of real dimension $n^{2}$; its traceless part is $\mathfrak{su}(n)$ of dimension $n^{2}-1$, the Lie algebra of the special unitary group.
 
 ### The Orthogonal Group
 

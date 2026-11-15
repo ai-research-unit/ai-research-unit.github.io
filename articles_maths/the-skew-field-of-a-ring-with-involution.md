@@ -65,11 +65,11 @@ $$
 
 **Proof.** For skew $x$ one has $\tau(x) = \tau(\sigma(x)) = \tau(-x) = -\tau(x)$, so $2\tau(x) = 0$ and $\tau(x) = 0$. For symmetric $x$ and skew $y$, $\tau(xy) = \tau(\sigma(xy)) = \tau(\sigma(y)\sigma(x)) = \tau((-y)x) = -\tau(yx) = -\tau(xy)$, so again $2\tau(xy) = 0$.
 
-**Corollary.** For the matrix ring $M_n(k)$ with the transpose and $\tau = $ the matrix trace, which is invariant under the transpose, the skew-symmetric matrices have trace zero and the product of a symmetric and a skew matrix has trace zero; the latter is the orthogonality of the symmetric and the skew parts under the trace pairing $(X,Y)\mapsto \operatorname{tr}(XY)$. The same computation gives the vanishing of the trace on the pure quaternions for the conjugation of the quaternion algebra and on the odd part of a graded matrix algebra with the graded trace.
+**Corollary.** For the matrix ring $M_n(k)$ with the transpose and $\tau = $ the matrix trace, which is invariant under the transpose, the antisymmetric matrices have trace zero and the product of a symmetric and a skew matrix has trace zero; the latter is the orthogonality of the symmetric and the skew parts under the trace pairing $(X,Y)\mapsto \operatorname{tr}(XY)$. The same computation gives the vanishing of the trace on the pure quaternions for the conjugation of the quaternion algebra and on the odd part of a graded matrix algebra with the graded trace.
 
 ## Examples
 
-**(a) The transpose.** In $M_n(k)$ with the transpose the skew elements are the skew-symmetric matrices and the symmetric elements the symmetric matrices; the commutator of two skew-symmetric matrices is skew-symmetric, the anti-commutator is symmetric, and the trace vanishes on the skew part. For $n = 3$ the skew-symmetric matrices have dimension $3$ and form, under the commutator and the identification with $k^3$, the cross-product Lie algebra.
+**(a) The transpose.** In $M_n(k)$ with the transpose the skew elements are the antisymmetric matrices and the symmetric elements the symmetric matrices; the commutator of two antisymmetric matrices is antisymmetric, the anti-commutator is symmetric, and the trace vanishes on the skew part. For $n = 3$ the antisymmetric matrices have dimension $3$ and form, under the commutator and the identification with $k^3$, the cross-product Lie algebra.
 
 **(b) The quaternion conjugation.** In the quaternion algebra $\mathbb{H}$ over $\mathbb{R}$ with the conjugation the symmetric part is the real line and the skew part is the space of pure quaternions; the commutator of two pure quaternions is pure, $[i,j] = 2k$, and the anti-commutator is real, $\{i,j\} = 0$, so the pure quaternions form a three-dimensional Lie algebra.
 

@@ -125,7 +125,7 @@ so the positive and negative multiplicities are equal, $n^{2}$ each, and the sig
 
 **The isotropic directions are the complex structures.** Every complex matrix $X$ gives an isotropic pair $X$ and $iX$, since $\operatorname{Re}\operatorname{tr}(X\cdot iX)=0$ and both are isotropic when $X$ is nilpotent in the appropriate sense. So the real form on the complex algebra has a large isotropic subspace, of dimension $n^{2}$, and the real structure of $\mathbb{C}$ is what produces it.
 
-**The Hermitian form is definite, and it is the form that the two halves split into Hermitian and skew-Hermitian.** The positive definite form $\operatorname{tr}(X^{*}Y)$ has no negative direction, and the involution $X\mapsto X^{*}$ splits the complex algebra into the Hermitian and the skew-Hermitian parts, on which the form is respectively positive and negative. So the two pictures agree: the real case of the trace form is the real part of the Hermitian case, and the split by the involution is the same split in both.
+**The Hermitian form is definite, and it is the form that the two halves split into Hermitian and anti-Hermitian.** The positive definite form $\operatorname{tr}(X^{*}Y)$ has no negative direction, and the involution $X\mapsto X^{*}$ splits the complex algebra into the Hermitian and the anti-Hermitian parts, on which the form is respectively positive and negative. So the two pictures agree: the real case of the trace form is the real part of the Hermitian case, and the split by the involution is the same split in both.
 
 ## The Case $n=2$
 

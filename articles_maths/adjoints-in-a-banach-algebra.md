@@ -39,7 +39,7 @@ and, for $a$ invertible, $(a^{-1})^* = (a^*)^{-1}$, so the adjoint preserves inv
 
 ## Examples
 
-**Example (the matrix algebra).** For $A = M_n(\mathbb{C})$ with the conjugate transpose the adjoint is the transpose-conjugate, the self-adjoint elements are the Hermitian matrices, the skew ones the skew-Hermitian matrices, the unitary ones the unitary group $\mathrm{U}(n)$, and the Cayley transform is the standard map from the Hermitian matrices onto the unitary group with the identity removed.
+**Example (the matrix algebra).** For $A = M_n(\mathbb{C})$ with the conjugate transpose the adjoint is the transpose-conjugate, the self-adjoint elements are the Hermitian matrices, the skew ones the anti-Hermitian matrices, the unitary ones the unitary group $\mathrm{U}(n)$, and the Cayley transform is the standard map from the Hermitian matrices onto the unitary group with the identity removed.
 
 **Example (the function algebra).** For $A = C(X,\mathbb{C})$ the adjoint is $f \mapsto \bar f$, the self-adjoint elements are the real-valued functions, the unitary ones the functions of modulus one, and $\exp(a)$ for a skew $a$ is $\exp(i\,\mathrm{Im}\,a)$, a unimodular function.
 

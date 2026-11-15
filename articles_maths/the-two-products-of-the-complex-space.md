@@ -2,13 +2,13 @@
 
 ## Introduction
 
-The complex space carries two products and not twelve. The general theory builds four general products by choosing, on each slot, between the identity and a conjugation, and then splits each of the four into a symmetric and an antisymmetric part. On the complex field the quaternionic conjugation is the identity, the four settings collapse two-and-two, and each of the two survivors is fixed by its own exchange, so no split occurs. The result is the field product $Q_1Q_2$ and the sesquilinear product $Q_1\bar Q_2$, and nothing else.
+The complex space carries two products and not twelve. The general theory builds four general products by choosing, on each slot, between the identity and a conjugation, and then splits each of the four into a symmetric and an antisymmetric part. On the complex field the intrinsic conjugation is the identity, the four settings collapse two-and-two, and each of the two survivors is fixed by its own exchange, so no split occurs. The result is the field product $Q_1Q_2$ and the sesquilinear product $Q_1\bar Q_2$, and nothing else.
 
 The article states the collapse, proves the two exchange identities, separates the two products by their slots, proves the laws that one keeps and the other loses, exhibits the two pairings and their two adjoints, and shows that the collapse is the degenerate case of the general theorem on the conjugate-symmetric and skew-conjugate-symmetric parts of a sesquilinear product.
 
 The multiplication of the field and the definition of $\mathbb{C}$ are *Complex Algebra*. The classes of element read in the two products are *The Classes of Element of the Complex Algebra*, and the field property that forces the collapse is *The Specificities of the Complex Algebra*. The forms and norms carried by the two products are *The Two Forms and the Two Algebraic Norms of the Complex Space*; the ternary product forced by the failure of associativity is *The Ternary Product and the Associator of the Complex Space*; the two-sided operators are *The Enveloping Operator Algebra and the Collapse of the Two-Sided Action on the Complex Algebra*.
 
-**Interpretation.** The element is $Q_1=q_1+iq'_1$ with real coordinates $q_1$ and $q'_1$, and a second element is $Q_2=q_2+iq'_2$. The base involution is the bar, $\bar Q_1=q_1-iq'_1$, and the Hermitian conjugation is the same map, ${}^{*}=\bar{\cdot}$; the quaternionic conjugation ${}^{\natural}$ is the identity, the algebra having no vector part. The four general products are written with the slots of *Product and Form Conventions*: the first slot read as it stands or through ${}^{\natural}$, the second as it stands or through ${}^{*}$.
+**Interpretation.** The element is $Q_1=q_1+iq'_1$ with real coordinates $q_1$ and $q'_1$, and a second element is $Q_2=q_2+iq'_2$. The base involution is the bar, $\bar Q_1=q_1-iq'_1$, and the Hermitian conjugation is the same map, ${}^{*}=\bar{\cdot}$; the intrinsic conjugation ${}^{\natural}$ is the identity, the algebra having no vector part. The four general products are written with the slots of *Product and Form Conventions*: the first slot read as it stands or through ${}^{\natural}$, the second as it stands or through ${}^{*}$.
 
 ## The Four Products of the General Theory
 
@@ -17,9 +17,9 @@ The general theory reads a product by the conjugation each slot carries. The tab
 | the general product | the slots | its image on $\mathbb{C}$ |
 |---|---|---|
 | the general plain bilinear product | $(\mathrm{id},\mathrm{id})$ | $Q_1Q_2$ |
-| the general quaternionic bilinear product | $({}^{\natural},\mathrm{id})$ | $Q_1Q_2$ |
+| the general intrinsic-bilinear product | $({}^{\natural},\mathrm{id})$ | $Q_1Q_2$ |
 | the general plain sesquilinear product | $(\mathrm{id},{}^{*})$ | $Q_1\bar Q_2$ |
-| the general quaternionic sesquilinear product | $({}^{\natural},{}^{*})$ | $Q_1\bar Q_2$ |
+| the general intrinsic-sesquilinear product | $({}^{\natural},{}^{*})$ | $Q_1\bar Q_2$ |
 
 **Proposition.** The four general products fall two-and-two onto two products.
 
@@ -132,7 +132,7 @@ The two products define two structures on one space. The plain product makes $\m
 
 ## Summary
 
-The complex space carries two products, $Q_1Q_2$ and $Q_1\bar Q_2$, because the quaternionic conjugation is the identity and the four settings of the general product collapse two-and-two. Each product is fixed by its own exchange, the plain one by the interchange and the sesquilinear one by the interchange composed with the conjugation of the value, so neither splits: the four symmetric parts coincide with their parents and the four antisymmetric parts vanish identically. Both products are $\mathbb{C}$-linear in the first slot and differ in the second, linear against conjugate-linear. The plain product is associative with a two-sided unit; the sesquilinear one is not associative, has the right unit alone, and is commutative only in the twisted sense. The plain pairing is symmetric with a self-adjoint multiplication, the Hermitian pairing is conjugate-symmetric with the adjoint $L_{Q_1}^{\dagger}=L_{\bar Q_1}$, and the collapse of the general split is exactly the degenerate case of *The Conjugate-Symmetric and Skew-Conjugate-Symmetric Parts of a Sesquilinear Product*.
+The complex space carries two products, $Q_1Q_2$ and $Q_1\bar Q_2$, because the intrinsic conjugation is the identity and the four settings of the general product collapse two-and-two. Each product is fixed by its own exchange, the plain one by the interchange and the sesquilinear one by the interchange composed with the conjugation of the value, so neither splits: the four symmetric parts coincide with their parents and the four antisymmetric parts vanish identically. Both products are $\mathbb{C}$-linear in the first slot and differ in the second, linear against conjugate-linear. The plain product is associative with a two-sided unit; the sesquilinear one is not associative, has the right unit alone, and is commutative only in the twisted sense. The plain pairing is symmetric with a self-adjoint multiplication, the Hermitian pairing is conjugate-symmetric with the adjoint $L_{Q_1}^{\dagger}=L_{\bar Q_1}$, and the collapse of the general split is exactly the degenerate case of *The Conjugate-Symmetric and Skew-Conjugate-Symmetric Parts of a Sesquilinear Product*.
 
 ## Summary of Notation
 
@@ -141,7 +141,7 @@ The complex space carries two products, $Q_1Q_2$ and $Q_1\bar Q_2$, because the 
 | $Q_1=q_1+iq'_1$, $Q_2=q_2+iq'_2$ | two complex elements, with real coordinates |
 | $Q_1Q_2$ | the plain product, the multiplication of the field |
 | $Q_1\bar Q_2$ | the sesquilinear product, the second factor conjugated |
-| ${}^{\natural}$, ${}^{*}$ | the quaternionic conjugation, the identity here, and the Hermitian conjugation, the bar |
+| ${}^{\natural}$, ${}^{*}$ | the intrinsic conjugation, the identity here, and the Hermitian conjugation, the bar |
 | $P(Q_1,Q_2)=Q_1Q_2$ | the plain pairing |
 | $H(Q_1,Q_2)=Q_1\bar Q_2$ | the Hermitian pairing |
 | $L_{Q_1}$, $R_{Q_1}$ | the left and right multiplications; they coincide |

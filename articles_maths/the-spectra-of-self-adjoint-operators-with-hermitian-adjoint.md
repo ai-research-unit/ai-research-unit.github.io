@@ -47,7 +47,7 @@ so the spectrum is read off from the extremes of the Rayleigh quotient; in parti
 
 ### Imaginary Spectrum
 
-**Theorem (skew-adjoint operators).** If $K$ is skew-adjoint then $iK$ is self-adjoint, so the eigenvalues of $K$ are **purely imaginary** and the eigenspaces of $K$ are orthogonal; $K$ generates a one-parameter unitary group $\exp(tK)$ whose eigenvalues are $\exp(it\lambda)$ on the unit circle. This was checked: on the definite regular module the skew-adjoint operators are the skew-symmetric matrices, so their eigenvalues are the purely imaginary numbers $\pm i\theta$ and the eigenvalues of $iK$ are real.
+**Theorem (skew-adjoint operators).** If $K$ is skew-adjoint then $iK$ is self-adjoint, so the eigenvalues of $K$ are **purely imaginary** and the eigenspaces of $K$ are orthogonal; $K$ generates a one-parameter unitary group $\exp(tK)$ whose eigenvalues are $\exp(it\lambda)$ on the unit circle. This was checked: on the definite regular module the skew-adjoint operators are the antisymmetric matrices, so their eigenvalues are the purely imaginary numbers $\pm i\theta$ and the eigenvalues of $iK$ are real.
 
 ### Normal Operators and Simultaneous Diagonalisation
 
@@ -87,7 +87,7 @@ Here the Hermitian part of the algebra is $\mathrm{span}\{1,\omega\}$, **central
 
 ### The Skew-Adjoint and the Unitary Group
 
-The skew-adjoint operators of the definite module are the skew-symmetric matrices; their eigenvalues are purely imaginary, the eigenvalues of $\exp(K)$ lie on the unit circle, and the exponential of the skew-adjoint part of a two-sided operator is a slice element of *The Unitary Slice and the Compact Real Form with Hermitian Adjoint*. So the spectrum of the skew-adjoint operators is the infinitesimal form of the spectrum of the unitary group, and the spectral theorem for the two is the same statement in the definite case.
+The skew-adjoint operators of the definite module are the antisymmetric matrices; their eigenvalues are purely imaginary, the eigenvalues of $\exp(K)$ lie on the unit circle, and the exponential of the skew-adjoint part of a two-sided operator is a slice element of *The Unitary Slice and the Compact Real Form with Hermitian Adjoint*. So the spectrum of the skew-adjoint operators is the infinitesimal form of the spectrum of the unitary group, and the spectral theorem for the two is the same statement in the definite case.
 
 ## Summary
 

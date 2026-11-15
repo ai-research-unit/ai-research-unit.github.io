@@ -84,7 +84,7 @@ of dimension $15$. In particular there is no outer automorphism.
 
 **Definition.** A $*$-derivation is a derivation $D$ with $D(A^{*})=D(A)^{*}$ for all $A$. A $*$-automorphism is an automorphism $\varphi$ with $\varphi(A^{*})=\varphi(A)^{*}$.
 
-**Proposition.** A derivation $\operatorname{ad}_X$ is a $*$-derivation exactly when $X$ is skew-Hermitian, $X^{*}=-X$. The $*$-derivations form the real Lie algebra $\mathfrak{u}(4)$ modulo its centre, isomorphic to $\mathfrak{su}(4)$, of real dimension $15$.
+**Proposition.** A derivation $\operatorname{ad}_X$ is a $*$-derivation exactly when $X$ is anti-Hermitian, $X^{*}=-X$. The $*$-derivations form the real Lie algebra $\mathfrak{u}(4)$ modulo its centre, isomorphic to $\mathfrak{su}(4)$, of real dimension $15$.
 
 **Proof.** For $Y$ arbitrary,
 
@@ -92,7 +92,7 @@ $$
 \operatorname{ad}_X(Y)^{*}=[Y,X]^{*}=[X^{*},Y^{*}]=-\operatorname{ad}_{X^{*}}(Y^{*}).
 $$
 
-The condition $\operatorname{ad}_X(Y^{*})=\operatorname{ad}_X(Y)^{*}$ for all $Y$ is therefore $\operatorname{ad}_X=\operatorname{ad}_{-X^{*}}$, that is, $X+X^{*}$ is scalar. The scalar part acts trivially, so the condition is that the traceless part of $X$ is skew-Hermitian; the skew-Hermitian matrices form $\mathfrak{u}(4)$ of real dimension $16$, and the scalars $i\theta I$ act trivially, leaving $\mathfrak{su}(4)$ of dimension $15$.
+The condition $\operatorname{ad}_X(Y^{*})=\operatorname{ad}_X(Y)^{*}$ for all $Y$ is therefore $\operatorname{ad}_X=\operatorname{ad}_{-X^{*}}$, that is, $X+X^{*}$ is scalar. The scalar part acts trivially, so the condition is that the traceless part of $X$ is anti-Hermitian; the anti-Hermitian matrices form $\mathfrak{u}(4)$ of real dimension $16$, and the scalars $i\theta I$ act trivially, leaving $\mathfrak{su}(4)$ of dimension $15$.
 
 **The $*$-automorphisms.** The automorphism $\operatorname{Inn}_U$ is a $*$-automorphism exactly when $U$ is unitary:
 
@@ -158,7 +158,7 @@ and the right factor gives a second, commuting copy. The two copies are the two 
 
 ## Summary
 
-Every derivation of $M_4(\mathbb{C})$ is inner, $\operatorname{Der}(M_4)=\operatorname{ad}\mathfrak{sl}_4\cong\mathfrak{sl}_4$ of dimension $15$, with kernel $\mathbb{C}I$; every automorphism is inner, $\operatorname{Aut}(M_4)=PGL_4(\mathbb{C})$ of dimension $15$, with no outer automorphisms. The $*$-derivations are the skew-Hermitian ones, forming $\mathfrak{su}(4)$, and the $*$-automorphisms are $PU(4)$; the antilinear automorphisms form the coset $PGL_4\rtimes\mathbb{Z}/2$. The biquaternion algebra has only a three-dimensional derivation algebra, embedded twice in the fifteen, and the remaining nine derivations mix the two Kronecker factors.
+Every derivation of $M_4(\mathbb{C})$ is inner, $\operatorname{Der}(M_4)=\operatorname{ad}\mathfrak{sl}_4\cong\mathfrak{sl}_4$ of dimension $15$, with kernel $\mathbb{C}I$; every automorphism is inner, $\operatorname{Aut}(M_4)=PGL_4(\mathbb{C})$ of dimension $15$, with no outer automorphisms. The $*$-derivations are the anti-Hermitian ones, forming $\mathfrak{su}(4)$, and the $*$-automorphisms are $PU(4)$; the antilinear automorphisms form the coset $PGL_4\rtimes\mathbb{Z}/2$. The biquaternion algebra has only a three-dimensional derivation algebra, embedded twice in the fifteen, and the remaining nine derivations mix the two Kronecker factors.
 
 | Quantity | Value |
 |---|---|

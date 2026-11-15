@@ -4,7 +4,7 @@
 
 The enveloping algebra of the split-complex ring over $\mathbb{R}$ is $\mathbb{R}^4$, and it acts on the ring by $\sum B_i\otimes C_i:X\mapsto\sum B_iXC_i$. The action collapses: every such operator is the multiplication by a single element, and the map from $\mathbb{R}^4$ to the operators has a kernel of dimension two. This article computes the enveloping algebra, the four idempotents that generate it, the image and the kernel of the action, and the sense in which the two-sided operators add nothing to the one-sided ones.
 
-The claim is that the collapse is exactly commutativity. In a commutative ring the left and the right multiplication by an element agree, so a product $BXC$ depends on $B$ and $C$ only through $BC$; the two-sided family is therefore not a family of two parameters but the image of the multiplication map, and the multiplication map of $\mathbb{R}^4$ onto $\mathbb{R}^2$ loses half the enveloping algebra. Over the biquaternions, where the left and right multiplications differ, no such collapse happens, and that comparison is the sharpest way to see what the split ring is missing.
+The claim is that the collapse is exactly commutativity. In a commutative ring the left and the right multiplication by an element agree, so a product $BXC$ depends on $B$ and $C$ only through $BC$; the two-sided family is therefore not a family of two parameters but the image of the multiplication map, and the multiplication map of $\mathbb{R}^4$ onto $\mathbb{R}^2$ loses half the enveloping algebra. In a non-commutative ring, where the left and right multiplications differ, no such collapse happens, and that contrast is the sharpest way to see what the split ring is missing.
 
 The ring is *Split-Complex Algebra*, its idempotents are *Ideals and Peirce Decomposition of the Split-Complex Algebra*, the multiplication operators are *Split-Complex Linear Representations*, and the modules on which the algebra acts are *Modules over the Split-Complex Ring*.
 
@@ -110,10 +110,6 @@ Over $\mathbb{C}$ the ring is commutative, so the collapse holds there too: $\su
 
 What differs is the arithmetic of the surviving parameters: over $\mathbb{C}$ the multiplication operator $L_Q$ is the multiplication by a complex number and its matrix is a rotation-dilation, invertible for every $Q\neq0$; here the matrix is the one displayed above and it is singular on the two null lines. The collapse of the action is the same, and the invertibility of the collapse is not.
 
-### The Biquaternion Case
-
-Over $\mathbb{B}$ the ring is not commutative, and $BXC$ is not $XBC$. The left multiplication by $B$ and the right multiplication by $C$ are different operators, the map $B\otimes C\mapsto(B\mapsto BXC)$ has no kernel, and the two-sided operators are strictly more than the one-sided ones. The biquaternion enveloping algebra is therefore a genuine operator algebra, and the split ring's is not: the whole difference is the commutativity that the split ring has and $\mathbb{B}$ has not.
-
 ### Why the Collapse Happens
 
 The collapse has one cause and one measure. **The cause** is the identity $BXC=XBC$, which is commutativity. **The measure** is the kernel of the multiplication $m:E\to\mathbb{C}_{\mathrm{spl}}$, of dimension two, spanned by the two idempotents that mix the components. Where the ring is a product of two copies of a field, the enveloping algebra is a product of four, and the action of the product is the action of its diagonal: the two off-diagonal factors act by zero.
@@ -124,7 +120,7 @@ The enveloping algebra of the split ring over $\mathbb{R}$ is $\mathbb{R}^4$, wi
 
 The image of the action has real dimension two and its kernel has real dimension two, spanned by the two off-diagonal idempotents $\Pi_+\otimes\Pi_-$ and $\Pi_-\otimes\Pi_+$; the action is not faithful, and the two-sided operators add nothing to the one-sided ones. The composition of the operators is the multiplication of the parameters, and the image is a copy of the ring inside the endomorphism algebra.
 
-The collapse is commutativity. Over $\mathbb{C}$ it happens as well, the enveloping algebra over $\mathbb{R}$ being $\mathbb{C}\oplus\mathbb{C}$ with two of its four real parameters surviving; over $\mathbb{B}$ it does not happen, because the left and right multiplications differ and the two-sided operators form a strictly larger family.
+The collapse is commutativity. Over $\mathbb{C}$ it happens as well, the enveloping algebra over $\mathbb{R}$ being $\mathbb{C}\oplus\mathbb{C}$ with two of its four real parameters surviving; in a non-commutative ring it does not happen, because the left and right multiplications differ and the two-sided operators form a strictly larger family.
 
 ## Summary of Notation
 

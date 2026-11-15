@@ -38,7 +38,7 @@ on the domain of the logarithm.
 
 ## The Real Structure, the Involution and the Form
 
-**Every element splits into a Hermitian and a skew-Hermitian part.** Let $A^{*}=\bar A^{\mathsf T}$ be the conjugate transpose. Then $A=\tfrac12(A+A^{*})+\tfrac12(A-A^{*})$, and the two summands satisfy $H^{*}=H$ and $K^{*}=-K$. The real subspace of skew-Hermitian elements is the Lie algebra
+**Every element splits into a Hermitian and a anti-Hermitian part.** Let $A^{*}=\bar A^{\mathsf T}$ be the conjugate transpose. Then $A=\tfrac12(A+A^{*})+\tfrac12(A-A^{*})$, and the two summands satisfy $H^{*}=H$ and $K^{*}=-K$. The real subspace of anti-Hermitian elements is the Lie algebra
 
 $$
 \mathfrak{u}(n)=\{K: K^{*}=-K\},\qquad \dim_{\mathbb{R}}\mathfrak{u}(n)=n^{2},
@@ -129,7 +129,7 @@ The algebra $M_n(\mathbb{C})$ is central simple of real dimension $2n^{2}$, with
 | $A^{*}=\bar A^{\mathsf T}$ | the conjugate transpose |
 | $\langle A,B\rangle=\operatorname{tr}(A^{*}B)$ | the positive definite trace form |
 | $\langle A\rangle_*^{1/2}$ | the Frobenius norm |
-| $\mathfrak{u}(n)$, $\mathfrak{su}(n)$ | the skew-Hermitian and traceless skew-Hermitian algebras, of dimensions $n^{2}$ and $n^{2}-1$ |
+| $\mathfrak{u}(n)$, $\mathfrak{su}(n)$ | the anti-Hermitian and traceless anti-Hermitian algebras, of dimensions $n^{2}$ and $n^{2}-1$ |
 | $GL_n(\mathbb{C})$, $SL_n(\mathbb{C})$, $PGL_n(\mathbb{C})$ | the unit group, its determinant-one subgroup and the projective group |
 | $\Sigma=\{\det=0\}$ | the singular set, of real codimension $2$ |
 | $B$ | the Borel subgroup of upper triangular matrices |

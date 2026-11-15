@@ -688,7 +688,7 @@ $$
 (\mathbb{B}_{\Phi},[\cdot,\cdot])\cong\mathfrak{u}(2)\cong\mathbb{R}(ie_t)\oplus B_1\;},
 $$
 
-the bracket of two anti-Hermitian elements being twice the real cross product of their two real vector parts, a real pure vector. The derived subalgebra is $B_1$, which under the cross product is $\mathfrak{su}(2)$, and the line $\mathbb{R}(ie_t)$ is central; the algebra is therefore the direct sum of a central line and $\mathfrak{su}(2)$, which is the **Lie algebra $\mathfrak{u}(2)$** of $\mathrm{U}(2)$, the skew-Hermitian complex $2\times2$ matrices, with centre $\mathbb{R}(ie_t)$ and derived subalgebra $\mathfrak{su}(2)$. The general plain sesquilinear bracket is the negative of the commutator, since ${}^{*}$ negates an anti-Hermitian element:
+the bracket of two anti-Hermitian elements being twice the real cross product of their two real vector parts, a real pure vector. The derived subalgebra is $B_1$, which under the cross product is $\mathfrak{su}(2)$, and the line $\mathbb{R}(ie_t)$ is central; the algebra is therefore the direct sum of a central line and $\mathfrak{su}(2)$, which is the **Lie algebra $\mathfrak{u}(2)$** of $\mathrm{U}(2)$, the anti-Hermitian complex $2\times2$ matrices, with centre $\mathbb{R}(ie_t)$ and derived subalgebra $\mathfrak{su}(2)$. The general plain sesquilinear bracket is the negative of the commutator, since ${}^{*}$ negates an anti-Hermitian element:
 
 $$
 [\mathbb{B}_{\Phi},\mathbb{B}_{\Phi}]_{*}=-[\mathbb{B}_{\Phi},\mathbb{B}_{\Phi}],

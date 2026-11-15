@@ -4,7 +4,7 @@
 
 The split-complex ring $\mathbb{C}_{\mathrm{spl}}=\mathbb{R}[j]$, $j^2=1$, carries exactly two involutions: the identity and the conjugation $\bar\cdot$, $j\mapsto-j$. The two form the group $V_2$ of order two. This article computes what the two involutions cut: the four subspaces, fixed and anti-fixed, the two decompositions of the plane they give, the finer decomposition into the two idempotent lines, and the two lines on which the Hermitian form vanishes.
 
-The count is the point. The biquaternion algebra $\mathbb{B}$ carries four marks, the identity, the bar, the quaternion sign ${}^{\natural}$ and the star, and they form the Klein four-group; on $\mathbb{C}_{\mathrm{spl}}$ the four marks act as two maps, because the bar is an automorphism of order two and the quaternion sign has nothing to reverse. The degeneracy is not an accident of notation: it is the commutativity of the ring together with the absence of a vector part.
+The count is the point. The general theory carries four marks, the identity, the bar, the intrinsic conjugation ${}^{\natural}$ and the star; on a non-commutative algebra with a vector part they are four distinct maps and form a Klein four-group, while on $\mathbb{C}_{\mathrm{spl}}$ they act as two maps, because the bar is an automorphism of order two and the intrinsic conjugation has nothing to reverse. The degeneracy is not an accident of notation: it is the commutativity of the ring together with the absence of a vector part.
 
 The article assumes the algebra of *Split-Complex Algebra* and the idempotents of *Square Roots of One and the Idempotents of the Split-Complex Algebra*. The forms used in the last section are *The Two Forms and the Two Algebraic Norms of the Split-Complex Space*, and the ideals the idempotent lines define are *Ideals and Peirce Decomposition of the Split-Complex Algebra*.
 
@@ -12,7 +12,7 @@ The article assumes the algebra of *Split-Complex Algebra* and the idempotents o
 
 **Definition.** An **involution** of $\mathbb{C}_{\mathrm{spl}}$ is an $\mathbb{R}$-linear map $\sigma$ with $\sigma(AC)=\sigma(A)\sigma(C)$ for all $A,C$ and $\sigma^2=\mathrm{id}$.
 
-The ring is commutative, so an anti-automorphism is an automorphism and the two words name one notion. This is the first place where the split case is simpler than the biquaternion one, where the quaternion sign reverses the order of a product.
+The ring is commutative, so an anti-automorphism is an automorphism and the two words name one notion. This is the first place where the split case is simpler than the non-commutative one, where the intrinsic conjugation reverses the order of a product.
 
 **Theorem (the involution group).** The involutions of $\mathbb{C}_{\mathrm{spl}}$ are the identity and the conjugation
 
@@ -49,15 +49,15 @@ $$
 
 Both spaces are one-dimensional, and the algebra is their direct sum. The conjugation is also the exchange of the idempotent coordinates, $\overline{Q_+}=Q_-$ and $\overline{Q_-}=Q_+$, and it exchanges the two idempotents, $\overline{\Pi_+}=\Pi_-$ and $\overline{\Pi_-}=\Pi_+$. The exchange of coordinates is the reason the bar can be read on the spectrum as the transposition of the two points, which is *The Spectrum and the Two-Point Structure of $\mathbb{C}^{\mathrm{spl}}$ over $\mathbb{R}$*.
 
-### The One Map under Three Names
+### The Conjugation and the Two Other Marks
 
-Three descriptions of one map occur in the corpus, and on $\mathbb{C}_{\mathrm{spl}}$ they coincide.
+Three descriptions of the involution occur in the corpus, and on $\mathbb{C}_{\mathrm{spl}}$ two of them coincide while the third is the identity.
 
 - The **conjugation** of the ring, $j\mapsto-j$, is the involution above.
 - The **exchange of the idempotent coordinates**, $Q_+\leftrightarrow Q_-$, is the same map, since $\overline{q\pm q'}=q\mp q'$.
-- The **quaternionic mark** ${}^{\natural}$ of the biquaternion corpus, which reverses the sign of the vector part, is the identity here: there is no vector part to reverse.
+- The **intrinsic conjugation** ${}^{\natural}$ of the general theory, which reverses the sign of the vector part, is the identity here: there is no vector part to reverse.
 
-The biquaternion algebra carries four marks and they form the Klein four-group; here the four act as two maps, the identity and the bar, and the group is $V_2$. The collapse has two causes and no third: the ring is commutative, so no involution can be an anti-automorphism without being an automorphism, and the element has no vector part, so the quaternion sign has no carrier.
+A non-commutative algebra with a vector part carries four distinct marks and they form the Klein four-group; here the four act as two maps, the identity and the bar, and the group is $V_2$. The collapse has two causes and no third: the ring is commutative, so no involution can be an anti-automorphism without being an automorphism, and the element has no vector part, so the intrinsic conjugation has no carrier.
 
 ## The Three Decompositions of the Plane
 
@@ -91,7 +91,7 @@ and it is the finest decomposition of the algebra into ideals: the two lines are
 
 **The answer.** Fineness is a property of a decomposition into ideals, and there the order is exact: the idempotent split refines every decomposition of the algebra into ideals, and the bar split is not one of those, its summands being the eigenspaces of a map and not ideals. The two splits answer different questions, and the idempotent one is the finest answer to the algebraic question.
 
-The bar permutes the two idempotent lines and preserves the two bar lines, so the two splits are exchanged by the group and not nested. This is *The Peirce Basis of the Split-Complex Algebra* read on the involution, and the same relation holds in the biquaternion algebra, where the bar permutes a family the quaternion sign preserves.
+The bar permutes the two idempotent lines and preserves the two bar lines, so the two splits are exchanged by the group and not nested. This is *The Peirce Basis of the Split-Complex Algebra* read on the involution, and the same relation holds in a larger algebra, where the bar permutes a family the intrinsic conjugation preserves.
 
 ## The Four Subspaces and Their Intersections
 
@@ -106,7 +106,7 @@ To the two involutions belong four subspaces, and their intersections state how 
 
 ### The Fixed Spaces Meet in the Real Line
 
-The fixed space of the identity is the whole algebra and the fixed space of the conjugation is the real line, so their intersection is the real line. It is the one non-zero subspace fixed by both involutions. In the biquaternion algebra the same computation gives many more non-zero intersections, because four marks give four fixed and four anti-fixed spaces; here two marks give four spaces in all, and only the two displayed carry a line.
+The fixed space of the identity is the whole algebra and the fixed space of the conjugation is the real line, so their intersection is the real line. It is the one non-zero subspace fixed by both involutions. In a larger algebra with four distinct marks the same computation gives many more non-zero intersections, because four marks give four fixed and four anti-fixed spaces; here two marks give four spaces in all, and only the two displayed carry a line.
 
 ### The Anti-Fixed Spaces Meet in Zero
 
@@ -136,7 +136,7 @@ The two idempotent lines are isotropic for the Hermitian form and for the split 
 
 A line is **isotropic** for $H$ when the form vanishes on its square. The two idempotent lines are isotropic, and they are the only ones: $H(Q,Q)=q^2-q'^2$ vanishes exactly when $q^2=q'^2$, which is $Q\in\mathbb{R}\Pi_+\cup\mathbb{R}\Pi_-$ (*Zero Divisors of the Split-Complex Algebra*). The isotropic set is therefore a pair of lines and not a point, and it is exactly the set of non-units with the origin adjoined.
 
-The lines are also the two Peirce components, so the isotropic set is the union of the two minimal ideals. This coincidence is special to dimension two: in $\mathbb{B}$ the null set is larger than the union of the minimal ideals, as *The Krein Level Sets and the Hyperbolic Structure* shows.
+The lines are also the two Peirce components, so the isotropic set is the union of the two minimal ideals. This coincidence is special to dimension two: in a higher-dimensional algebra the null set is larger than the union of the minimal ideals.
 
 ### The Comparison with the Complex Field
 
@@ -144,7 +144,7 @@ Over $\mathbb{C}$ with the conjugation $i\mapsto-i$ the group is again $V_2$, th
 
 ## Summary
 
-The split-complex ring has exactly two involutions, the identity and the conjugation $j\mapsto-j$, and they form $V_2=\{\mathrm{id},\bar\cdot\}$: an involution is determined by the image of $j$, which satisfies $\xi^2=1$, and the bar is the exchange of the idempotent coordinates. The four marks of the biquaternion corpus act here as two maps because the ring is commutative and has no vector part.
+The split-complex ring has exactly two involutions, the identity and the conjugation $j\mapsto-j$, and they form $V_2=\{\mathrm{id},\bar\cdot\}$: an involution is determined by the image of $j$, which satisfies $\xi^2=1$, and the bar is the exchange of the idempotent coordinates. The four marks of the general theory act here as two maps because the ring is commutative and has no vector part.
 
 The identity gives the degenerate decomposition $\mathbb{C}_{\mathrm{spl}}\oplus\{0\}$, the conjugation the eigenspace decomposition $\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}\oplus j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$, and the idempotents the split $\mathbb{R}\Pi_+\oplus\mathbb{R}\Pi_-$ into the two minimal ideals, which is the finest decomposition into ideals and is neither finer nor coarser than the bar split.
 

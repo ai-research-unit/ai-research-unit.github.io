@@ -4,7 +4,7 @@
 
 **The form $\langle X,Y\rangle=\operatorname{tr}(X^{*}Y)$ is a positive definite Hermitian form on $M_n(\mathbb{C})$, its real part is the Euclidean form on the $2n^{2}$ real coordinates, its norm is the square root of the sum of the squares of the singular values, and it is invariant under unitary conjugation but not under the full linear group.**
 
-The article proves the Hermitian axioms, computes the norm through the singular values, shows unitary invariance and the failure of invariance under general conjugation, computes the adjoints of the one-sided and the two-sided operators and of the derivation, shows that the form is definite on both halves in contrast with the trace form, and compares the Hilbert–Schmidt norm with the operator norm. It assumes *The Trace Form and Its Signature on the Two Halves* for the indefinite form it replaces and *The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian* for the complex split. It defers the operator theory to *The Symmetric and Antisymmetric Parts of the Operator Space* and the analysis to *The Analysis on $M_n(\mathbb{C})$*.
+The article proves the Hermitian axioms, computes the norm through the singular values, shows unitary invariance and the failure of invariance under general conjugation, computes the adjoints of the one-sided and the two-sided operators and of the derivation, shows that the form is definite on both halves in contrast with the trace form, and compares the Hilbert–Schmidt norm with the operator norm. It assumes *The Trace Form and Its Signature on the Two Halves* for the indefinite form it replaces and *The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian* for the complex split. It defers the operator theory to *The Symmetric and Antisymmetric Parts of the Operator Space* and the analysis to *The Analysis on $M_n(\mathbb{C})$*.
 
 ## The Form
 
@@ -132,15 +132,15 @@ $$
 
 The identity was verified at $n=4$, and the sign is absent because the conjugate transpose is used twice with no transposition of the product order. For the trace form the corresponding statement has a minus sign, since there the adjoint of the multiplication is multiplication by the transpose and the order reverses.
 
-**The derivation is therefore not skew for the Hilbert–Schmidt form.** Since $\operatorname{ad}_A^{*}=\operatorname{ad}_{A^{*}}$ and $\operatorname{ad}_A$ is skew only when $A$ is skew-Hermitian up to the sign of the adjoint, the skewness statement holds for the trace form and not for this one. The two forms split the theory: the trace form is the natural form for the Lie structure, the Hilbert–Schmidt form the natural form for the operator structure.
+**The derivation is therefore not skew for the Hilbert–Schmidt form.** Since $\operatorname{ad}_A^{*}=\operatorname{ad}_{A^{*}}$ and $\operatorname{ad}_A$ is skew only when $A$ is anti-Hermitian up to the sign of the adjoint, the skewness statement holds for the trace form and not for this one. The two forms split the theory: the trace form is the natural form for the Lie structure, the Hilbert–Schmidt form the natural form for the operator structure.
 
 ## Definiteness on the Two Halves
 
-**The form is positive definite on each half.** On the Hermitian matrices, $\operatorname{tr}(X^{*}X)=\operatorname{tr}(X^{2})=\sum X_{ij}^{2}>0$; on the skew-Hermitian matrices, $\operatorname{tr}(X^{*}X)=-\operatorname{tr}(X^{2})=\sum|X_{ij}|^{2}>0$. Both were verified on random elements at $n=4$.
+**The form is positive definite on each half.** On the Hermitian matrices, $\operatorname{tr}(X^{*}X)=\operatorname{tr}(X^{2})=\sum X_{ij}^{2}>0$; on the anti-Hermitian matrices, $\operatorname{tr}(X^{*}X)=-\operatorname{tr}(X^{2})=\sum|X_{ij}|^{2}>0$. Both were verified on random elements at $n=4$.
 
-**So the split of the complex algebra is not a signature split.** The trace form has signature $(n^{2},n^{2})$ on $M_n(\mathbb{C})$ read over $\mathbb{R}$, with the Hermitian and skew-Hermitian parts on opposite sides; the Hilbert–Schmidt form has signature $(2n^{2},0)$, and both halves are positive. The involution $X\mapsto X^{*}$ is therefore an isometry of the Hilbert–Schmidt form and an anti-isometry of the trace form, and the two behaviours are the two readings of the same involution.
+**So the split of the complex algebra is not a signature split.** The trace form has signature $(n^{2},n^{2})$ on $M_n(\mathbb{C})$ read over $\mathbb{R}$, with the Hermitian and anti-Hermitian parts on opposite sides; the Hilbert–Schmidt form has signature $(2n^{2},0)$, and both halves are positive. The involution $X\mapsto X^{*}$ is therefore an isometry of the Hilbert–Schmidt form and an anti-isometry of the trace form, and the two behaviours are the two readings of the same involution.
 
-**The two halves are orthogonal but not definite for the trace form, and orthogonal and definite for this one.** For $H$ Hermitian and $K$ skew-Hermitian,
+**The two halves are orthogonal but not definite for the trace form, and orthogonal and definite for this one.** For $H$ Hermitian and $K$ anti-Hermitian,
 
 $$
 \operatorname{tr}(H^{*}K)=\operatorname{tr}(HK)\in i\mathbb{R},\qquad \operatorname{Re}\operatorname{tr}(H^{*}K)=0,
@@ -190,5 +190,5 @@ The form $\langle X,Y\rangle=\operatorname{tr}(X^{*}Y)$ is Hermitian, positive d
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the Hilbert–Schmidt inner product and the adjoints of the standard operators.
 - Paul R. Halmos, *A Hilbert Space Problem Book* (Springer, 1982), for the two-sided operators and their adjoints.
 - [The Trace Form and Its Signature on the Two Halves](the-trace-form-and-its-signature-on-the-two-halves.html), for the indefinite form that this one replaces.
-- [The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian](the-two-halves-over-c-hermitian-and-skew-hermitian.html), for the split that is orthogonal but not definite here.
+- [The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian](the-two-halves-over-c-hermitian-and-skew-hermitian.html), for the split that is orthogonal but not definite here.
 - [The Derivation $X\mapsto[A,X]$ and Its Skewness for the Trace Form](the-derivation-commutator-and-its-skewness-for-the-trace-form.html), for the skewness that fails for this form.

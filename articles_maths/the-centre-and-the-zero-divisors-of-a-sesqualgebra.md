@@ -36,9 +36,9 @@ It is the **centralizer** of $A$ in itself, $Z(A) = C_{A}(A)$, where the central
 
 **Proof.** For $z \in Z(A)$ and any $x$, $z^{*}x = (x^{*}z)^{*} = (zx^{*})^{*} = xz^{*}$: the first and the last steps are the anti-multiplicativity of the involution, and the middle step is the centrality of $z$ at the element $x^{*}$. Since $*^{2} = \mathrm{id}$ the map is onto.
 
-### The Hermitian and the Skew-Hermitian Parts
+### The Hermitian and the Anti-Hermitian Parts
 
-Let $H(A) = \{a : a^{*} = a\}$ and $S(A) = \{a : a^{*} = -a\}$ be the Hermitian and the skew-Hermitian elements of $A$, as in *Hermitian and Skew-Hermitian Elements*.
+Let $H(A) = \{a : a^{*} = a\}$ and $S(A) = \{a : a^{*} = -a\}$ be the Hermitian and the anti-Hermitian elements of $A$, as in *Hermitian and Anti-Hermitian Elements*.
 
 **Proposition.** The sets $Z(A) \cap H(A)$ and $Z(A) \cap S(A)$ are the fixed part and the anti-fixed part of the involution on $Z(A)$. If $2$ is invertible in $R$, every $z \in Z(A)$ has the unique decomposition
 $$
@@ -46,7 +46,7 @@ $$
 $$
 with $z_{+} \in Z(A) \cap H(A)$ and $z_{-} \in Z(A) \cap S(A)$.
 
-**Proof.** The centre is an $R$-submodule by the proposition on the scalars, hence closed under sums and under the halving, and the involution is additive and carries the centre to itself, so the two parts lie in the centre; they are fixed and anti-fixed by the involution, and the decomposition is the one of *Hermitian and Skew-Hermitian Elements*, unique when $2$ is invertible.
+**Proof.** The centre is an $R$-submodule by the proposition on the scalars, hence closed under sums and under the halving, and the involution is additive and carries the centre to itself, so the two parts lie in the centre; they are fixed and anti-fixed by the involution, and the decomposition is the one of *Hermitian and Anti-Hermitian Elements*, unique when $2$ is invertible.
 
 **Remark.** Each of the two parts is an $R$-submodule of the centre, and the involution acts on the first as the identity and on the second as the negation. When $2$ is invertible in $R$ the centre is the direct sum of the two parts, and in the associative case, where the centre is a commutative algebra, the involution acts on it as a $\pm 1$-grading.
 
@@ -173,7 +173,7 @@ Let $A$ be associative with a $\varsigma$-semilinear involution, let $\star$ be 
 
 ## Summary
 
-The centre of a sesqualgebra is the set of the elements that commute with every element, an additive subgroup, an $R$-submodule, and a subset stable under the involution; the parts it cuts by the involution are the Hermitian central elements and the skew-Hermitian central elements, which decompose the centre when $2$ is invertible. In the associative case the centre is a commutative $*$-subalgebra. The second scalar rule does not restrict it, unlike the derivations, which form a module over the fixed ring only, because the centrality of an element can be tested at the element $\lambda x$ and the two rules then agree. The centre is the set of the elements whose inner map vanishes, and in the twisted case over the complex numbers with the conjugation it is either zero or annihilating: if some $\lambda - \varsigma(\lambda)$ acts injectively then every central element kills the whole algebra, so a unital or annihilator-free sesqualgebra over $(\mathbb{C},\varsigma)$ has zero centre. The zero divisors come as one-sided and two-sided, and their annihilators are $R$-submodules with no scalar defect; the involution exchanges the left and the right classes, and the derived operation takes the left annihilator of an element to the conjugate of its left annihilator for the product, without changing which elements are one-sided zero divisors. A central element has equal left and right annihilators, and they are a two-sided ideal. The left and the right annihilators of the whole algebra are two-sided ideals exchanged by the involution, and their vanishing is the full-type hypothesis of the collapse theorems.
+The centre of a sesqualgebra is the set of the elements that commute with every element, an additive subgroup, an $R$-submodule, and a subset stable under the involution; the parts it cuts by the involution are the Hermitian central elements and the anti-Hermitian central elements, which decompose the centre when $2$ is invertible. In the associative case the centre is a commutative $*$-subalgebra. The second scalar rule does not restrict it, unlike the derivations, which form a module over the fixed ring only, because the centrality of an element can be tested at the element $\lambda x$ and the two rules then agree. The centre is the set of the elements whose inner map vanishes, and in the twisted case over the complex numbers with the conjugation it is either zero or annihilating: if some $\lambda - \varsigma(\lambda)$ acts injectively then every central element kills the whole algebra, so a unital or annihilator-free sesqualgebra over $(\mathbb{C},\varsigma)$ has zero centre. The zero divisors come as one-sided and two-sided, and their annihilators are $R$-submodules with no scalar defect; the involution exchanges the left and the right classes, and the derived operation takes the left annihilator of an element to the conjugate of its left annihilator for the product, without changing which elements are one-sided zero divisors. A central element has equal left and right annihilators, and they are a two-sided ideal. The left and the right annihilators of the whole algebra are two-sided ideals exchanged by the involution, and their vanishing is the full-type hypothesis of the collapse theorems.
 
 ## Summary of Notation
 
@@ -181,7 +181,7 @@ The centre of a sesqualgebra is the set of the elements that commute with every 
 |---|---|
 | $Z(A) = C_{A}(A)$ | the centre, the centralizer of $A$ in itself |
 | $C_{A}(S) = \{a : as = sa \text{ for } s \in S\}$ | the centralizer of a subset |
-| $H(A)$, $S(A)$ | the Hermitian and the skew-Hermitian elements |
+| $H(A)$, $S(A)$ | the Hermitian and the anti-Hermitian elements |
 | $\mathrm{ad}_{a}(x) = ax - xa$ | the inner map; $\mathrm{ad}_{a} = 0$ exactly when $a \in Z(A)$, so the centre is the kernel of $a \mapsto \mathrm{ad}_{a}$ |
 | $\operatorname{Ann}_{\ell}(z) = \{w : zw = 0\}$ | the left annihilator of $z$, a right ideal in the associative case |
 | $\operatorname{Ann}_{r}(z) = \{w : wz = 0\}$ | the right annihilator of $z$, a left ideal in the associative case |

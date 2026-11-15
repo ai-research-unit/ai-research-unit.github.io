@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**Every invertible matrix is a stretch times a rotation, $A=PU$ with $P$ positive definite and $U$ unitary, and the two factors are the two halves of the algebra read off the matrix: $P$ is the exponential of a Hermitian matrix and $U$ the exponential of a skew-Hermitian one.**
+**Every invertible matrix is a stretch times a rotation, $A=PU$ with $P$ positive definite and $U$ unitary, and the two factors are the two halves of the algebra read off the matrix: $P$ is the exponential of a Hermitian matrix and $U$ the exponential of a anti-Hermitian one.**
 
 The article proves the existence and the uniqueness of the right and the left polar decomposition, identifies the positive factor with the square root of $AA^{*}$ and the singular values with its eigenvalues, proves that the two factors commute exactly when the matrix is normal, proves that the determinant of the stretch is the modulus of the determinant, and reads the condition number as the ratio of the extreme stretch factors. It assumes *The Exponential of the Symmetric Part: Stretches and the Positive Cone* and *Normal Matrices and the Common Spectral Theorem*. It defers the group level to *The Cartan Decomposition of $\mathrm{GL}_n(\mathbb{C})$* and the geometry to *The Symmetric Space $\mathrm{GL}_n/O(n)$ and Its Complex Twin*.
 
@@ -30,7 +30,7 @@ $$
 
 give $A=UQ$, with $Q$ Hermitian and positive definite. The computation confirms the identity and the positivity at $n=2,3,4,5$, and it confirms that $Q$ is the square root of $A^{*}A$. So the two polar decompositions share the rotation and differ in the stretch, and the two stretches are conjugate.
 
-**The two halves are the two factors.** Since the exponential of a Hermitian matrix is positive definite and surjective onto the cone, and the exponential of a skew-Hermitian matrix is unitary and surjective onto the unitary group,
+**The two halves are the two factors.** Since the exponential of a Hermitian matrix is positive definite and surjective onto the cone, and the exponential of a anti-Hermitian matrix is unitary and surjective onto the unitary group,
 
 $$
 A=e^{H}e^{K},\qquad H=\tfrac12\log(AA^{*}),\qquad e^{K}=U,
@@ -146,7 +146,7 @@ and the rotation is a phase times the identity in each corner, so the polar deco
 
 ## Summary
 
-Every invertible matrix is $A=PU$ with $P=(AA^{*})^{1/2}$ positive definite and $U=P^{-1}A$ unitary, and also $A=UQ$ with $Q=(A^{*}A)^{1/2}$, so the group is the product of the cone and the unitary group with smooth inverse; the two factors are unique, and they commute exactly when the matrix is normal. The eigenvalues of $P$ are the singular values, so the product of the singular values is $|\det A|$, the determinant of $U$ is the phase, and the condition number is the ratio of the extreme singular values, which equals one exactly for the scalar multiples of the unitary matrices. The polar factor is the closest unitary in the Hilbert–Schmidt norm, and the stretch is the exponential of a Hermitian matrix while the rotation is the exponential of a skew-Hermitian one, so the decomposition is the two halves exponentiated.
+Every invertible matrix is $A=PU$ with $P=(AA^{*})^{1/2}$ positive definite and $U=P^{-1}A$ unitary, and also $A=UQ$ with $Q=(A^{*}A)^{1/2}$, so the group is the product of the cone and the unitary group with smooth inverse; the two factors are unique, and they commute exactly when the matrix is normal. The eigenvalues of $P$ are the singular values, so the product of the singular values is $|\det A|$, the determinant of $U$ is the phase, and the condition number is the ratio of the extreme singular values, which equals one exactly for the scalar multiples of the unitary matrices. The polar factor is the closest unitary in the Hilbert–Schmidt norm, and the stretch is the exponential of a Hermitian matrix while the rotation is the exponential of a anti-Hermitian one, so the decomposition is the two halves exponentiated.
 
 ## Summary of Notation
 

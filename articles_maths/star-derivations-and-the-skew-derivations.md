@@ -63,7 +63,7 @@ In particular a central element gives the zero derivation, a **symmetric** eleme
 
 ## Examples
 
-**(a) The matrix transpose.** $A = M_n(R)$ with the transpose; the inner derivation $D_X$ is a star-derivation exactly when $X+X^{\mathrm t}$ is a scalar matrix and a skew derivation exactly when $X-X^{\mathrm t}$ is scalar. The symmetric matrices therefore give skew derivations and the skew-symmetric matrices give star-derivations, and the derivations of the matrix ring are all inner by the matrix case of *Derivations of a Ring*.
+**(a) The matrix transpose.** $A = M_n(R)$ with the transpose; the inner derivation $D_X$ is a star-derivation exactly when $X+X^{\mathrm t}$ is a scalar matrix and a skew derivation exactly when $X-X^{\mathrm t}$ is scalar. The symmetric matrices therefore give skew derivations and the antisymmetric matrices give star-derivations, and the derivations of the matrix ring are all inner by the matrix case of *Derivations of a Ring*.
 
 **(b) The quaternion conjugation.** For the quaternion algebra with $D_x(y)=xy-yx$, a pure quaternion is a skew element and so gives a star-derivation, while a real scalar is symmetric and gives the zero or a skew derivation according as it is central; the embedding of the pure quaternions in the star-derivations is the three-dimensional Lie algebra of *The Skew Field of a Ring with Involution* read through the adjoint representation $a\mapsto D_a$.
 

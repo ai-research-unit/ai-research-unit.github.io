@@ -32,7 +32,7 @@ The conditions defining such domains are the **self-adjoint boundary conditions*
 
 ## The Regular Case
 
-**Definition.** The endpoint $\mathfrak{a}$ is **regular** if it is finite and $1/p$, $q$, $w$ are integrable near it; the problem is **regular** if both endpoints are regular. For a regular problem the boundary values $y(a),(py')(a),y(b),(py')(b)$ are defined and the bracket is a skew-Hermitian form in them.
+**Definition.** The endpoint $\mathfrak{a}$ is **regular** if it is finite and $1/p$, $q$, $w$ are integrable near it; the problem is **regular** if both endpoints are regular. For a regular problem the boundary values $y(a),(py')(a),y(b),(py')(b)$ are defined and the bracket is a anti-Hermitian form in them.
 
 **Theorem (the self-adjoint conditions of a regular problem).** For a regular Sturm–Liouville problem every self-adjoint extension is given by two separated conditions
 

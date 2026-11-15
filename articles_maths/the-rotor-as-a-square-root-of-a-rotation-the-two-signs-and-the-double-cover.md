@@ -86,7 +86,7 @@ It follows the corpus article *The Polar Decomposition of a Biquaternion* for th
 
 **Proposition.** The matrices $\pm e^{i\theta(\vec n\cdot\vec\sigma)/2}$ are unitary with determinant one, and they are the two elements of $\mathrm{SU}(2)$ with the same conjugation action.
 
-**Proof.** The matrix $i\theta(\vec n\cdot\vec\sigma)/2$ is skew-Hermitian and traceless, so its exponential is unitary with determinant one; and the sign does not change the conjugation, since $(-q)X(-q)^{*}=qXq^{*}$.
+**Proof.** The matrix $i\theta(\vec n\cdot\vec\sigma)/2$ is anti-Hermitian and traceless, so its exponential is unitary with determinant one; and the sign does not change the conjugation, since $(-q)X(-q)^{*}=qXq^{*}$.
 
 **Corollary.** The conjugation action of $\mathrm{SU}(2)$ on the traceless Hermitian matrices depends only on the class of the rotor up to sign.
 

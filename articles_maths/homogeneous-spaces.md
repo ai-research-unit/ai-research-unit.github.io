@@ -163,7 +163,7 @@ $$
 
 for $\zeta, \eta \in \mathrm{M}$ extended to invariant vector fields. The canonical connection has parallel curvature and torsion, and it coincides with the Levi-Civita connection if and only if the decomposition satisfies $[\mathrm{M},\mathrm{M}] \subseteq \mathrm{H}$, which is exactly the condition that $(G/H, g)$ be a Riemannian symmetric space.
 
-**Proof sketch.** The invariance and the skew-symmetry requirements determine the connection uniquely; the comparison with the Levi-Civita connection is the Koszul formula of *Riemannian Geometry* applied to invariant fields, whose structure constants are the brackets of $\mathrm{G}$.
+**Proof sketch.** The invariance and the antisymmetry requirements determine the connection uniquely; the comparison with the Levi-Civita connection is the Koszul formula of *Riemannian Geometry* applied to invariant fields, whose structure constants are the brackets of $\mathrm{G}$.
 
 **Corollary.** The homogeneous space is symmetric precisely when $[\mathrm{M},\mathrm{M}]\subseteq\mathrm{H}$; then the canonical connection is the Levi-Civita connection, its curvature is parallel, and the space is a Riemannian symmetric space. The presence of a nonzero component $[\mathrm{M},\mathrm{M}]_{\mathrm{M}}$ is the obstruction to symmetry, and it is the torsion of the canonical connection.
 

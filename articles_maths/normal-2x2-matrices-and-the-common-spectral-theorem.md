@@ -4,21 +4,21 @@
 
 **A $2\times2$ matrix is normal exactly when it is unitarily diagonalisable, and a commuting family of normal matrices is diagonalised by one unitary frame.**
 
-The article defines normality, proves the equivalence with unitary diagonalisability at order two, derives the three special cases of the Hermitian, skew-Hermitian and unitary matrices from the position of the two eigenvalues, computes the commutant of a normal matrix with simple spectrum, proves the common spectral theorem for a commuting pair, and reads normality as the equality of the two norms $\|Xv\|$ and $\|X^{*}v\|$. It assumes *The Spectrum of a $2\times2$ Matrix*, *Lagrange Idempotents of a $2\times2$ Matrix with Simple Spectrum* and *The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian at $n=2$*.
+The article defines normality, proves the equivalence with unitary diagonalisability at order two, derives the three special cases of the Hermitian, anti-Hermitian and unitary matrices from the position of the two eigenvalues, computes the commutant of a normal matrix with simple spectrum, proves the common spectral theorem for a commuting pair, and reads normality as the equality of the two norms $\|Xv\|$ and $\|X^{*}v\|$. It assumes *The Spectrum of a $2\times2$ Matrix*, *Lagrange Idempotents of a $2\times2$ Matrix with Simple Spectrum* and *The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian at $n=2$*.
 
-It defers the two halves of the spectral theorem to *The Spectral Theorem: the Hermitian Case and the Sphere of Idempotents* and *The Spectral Theorem: the Skew-Hermitian Case and the Two Imaginary Eigenvalues*.
+It defers the two halves of the spectral theorem to *The Spectral Theorem: the Hermitian Case and the Sphere of Idempotents* and *The Spectral Theorem: the Anti-Hermitian Case and the Two Imaginary Eigenvalues*.
 
 ## Normality
 
 **Definition.** A matrix $X$ is **normal** when $XX^{*}=X^{*}X$.
 
-**Proposition.** The Hermitian, the skew-Hermitian and the unitary matrices are normal, and every polynomial in a normal matrix is normal.
+**Proposition.** The Hermitian, the anti-Hermitian and the unitary matrices are normal, and every polynomial in a normal matrix is normal.
 
 **Proof.** If $X^{*}=\pm X$ then both products equal $\pm X^{2}$; if $X$ is unitary then both products are the identity.
 
 **Corollary.** The normal matrices are not a linear subspace: the sum of two normal matrices need not be normal.
 
-**Proof.** Take $X=\begin{pmatrix}0&1\\-1&0\end{pmatrix}$, the rotation by a right angle, and $Y=\begin{pmatrix}0&1\\1&0\end{pmatrix}$, a reflection; both are Hermitian or skew-Hermitian and hence normal, and the sum $\begin{pmatrix}0&2\\0&0\end{pmatrix}$ is not normal because $AA^{*}$ and $A^{*}A$ are the diagonal matrices with $4$ in the two different corners.
+**Proof.** Take $X=\begin{pmatrix}0&1\\-1&0\end{pmatrix}$, the rotation by a right angle, and $Y=\begin{pmatrix}0&1\\1&0\end{pmatrix}$, a reflection; both are Hermitian or anti-Hermitian and hence normal, and the sum $\begin{pmatrix}0&2\\0&0\end{pmatrix}$ is not normal because $AA^{*}$ and $A^{*}A$ are the diagonal matrices with $4$ in the two different corners.
 
 **Corollary.** Normality is invariant under unitary conjugation and under the star.
 
@@ -40,7 +40,7 @@ It defers the two halves of the spectral theorem to *The Spectral Theorem: the H
 
 ## The Three Special Cases
 
-**Proposition.** A normal matrix is Hermitian exactly when its two eigenvalues are real, skew-Hermitian exactly when they are purely imaginary, and unitary exactly when they have modulus one.
+**Proposition.** A normal matrix is Hermitian exactly when its two eigenvalues are real, anti-Hermitian exactly when they are purely imaginary, and unitary exactly when they have modulus one.
 
 **Proof.** In a unitary diagonalisation the star of the matrix is the diagonal of the conjugates of the eigenvalues, so $X^{*}=\pm X$ holds exactly when each eigenvalue satisfies $\bar\lambda=\pm\lambda$; and $X^{*}X=I$ holds exactly when each eigenvalue has modulus one.
 
@@ -48,7 +48,7 @@ It defers the two halves of the spectral theorem to *The Spectral Theorem: the H
 
 **Proof.** The conditions are conditions on each of the two eigenvalues, and the spectrum is the pair.
 
-**Corollary.** The Hermitian normal matrices form a real vector space of dimension four, the skew-Hermitian ones another of dimension four, and the unitary ones a group of real dimension four.
+**Corollary.** The Hermitian normal matrices form a real vector space of dimension four, the anti-Hermitian ones another of dimension four, and the unitary ones a group of real dimension four.
 
 **Proof.** The Hermitian matrices are the fixed points of the star, a real-linear involution of the eight-dimensional real space, so each eigenspace has dimension four; the unitary matrices are the solutions of $X^{*}X=I$, which is a group of real dimension four.
 
@@ -96,7 +96,7 @@ It defers the two halves of the spectral theorem to *The Spectral Theorem: the H
 
 ## Summary
 
-A $2\times2$ matrix is normal when it commutes with its star, and that holds exactly when it is unitarily diagonalisable. The three classical classes sit inside the normal matrices as conditions on the two eigenvalues: real for Hermitian, purely imaginary for skew-Hermitian, of modulus one for unitary, each of real dimension four.
+A $2\times2$ matrix is normal when it commutes with its star, and that holds exactly when it is unitarily diagonalisable. The three classical classes sit inside the normal matrices as conditions on the two eigenvalues: real for Hermitian, purely imaginary for anti-Hermitian, of modulus one for unitary, each of real dimension four.
 
 The commutant of a matrix with simple spectrum is the two-dimensional algebra of polynomials in it, spanned by the two spectral projections, and a commuting family of normal matrices is diagonalised by one unitary frame. Normality is also the equality of the two norms $\|Xv\|$ and $\|X^{*}v\|$ for every vector.
 
@@ -115,5 +115,5 @@ The commutant of a matrix with simple spectrum is the two-dimensional algebra of
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge University Press, 2013), for normal matrices and the spectral theorem.
 - Paul R. Halmos, *A Hilbert Space Problem Book* (Springer, 1982), for the spectral theorem and simultaneous diagonalisation.
 - [The Spectrum of a $2\times2$ Matrix](the-spectrum-of-a-2x2-matrix.html), for the eigenvalues and the eigenspaces.
-- [The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian at $n=2$](the-two-halves-over-c-hermitian-and-skew-hermitian-at-n-2.html), for the two halves as the fixed points of the star.
+- [The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian at $n=2$](the-two-halves-over-c-hermitian-and-skew-hermitian-at-n-2.html), for the two halves as the fixed points of the star.
 - [Lagrange Idempotents of a $2\times2$ Matrix with Simple Spectrum](lagrange-idempotents-of-a-2x2-matrix-with-simple-spectrum.html), for the projections that span the commutant.

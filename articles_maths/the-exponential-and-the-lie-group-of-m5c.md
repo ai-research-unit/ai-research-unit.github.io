@@ -158,7 +158,7 @@ $$
 
 **Corollary.** The Lie algebra of $SL_5$ is $\mathfrak{sl}_5$, of dimension $24$; the Lie algebra of $U(5)$ is $\mathfrak{u}(5)$, of real dimension $25$; the Lie algebra of $SU(5)$ is $\mathfrak{su}(5)$, of real dimension $24$.
 
-**Proof.** The subgroups are the zero sets of the determinant, of $U^*U=I$, and of both; their tangent spaces are the traceless, skew-Hermitian, and traceless skew-Hermitian matrices.
+**Proof.** The subgroups are the zero sets of the determinant, of $U^*U=I$, and of both; their tangent spaces are the traceless, anti-Hermitian, and traceless anti-Hermitian matrices.
 
 ### The Exponential Is a Local Diffeomorphism
 
@@ -218,11 +218,11 @@ because the two matrices commute. The logarithm series terminates because $\lamb
 
 **Theorem.** $U(5)$ is a compact real Lie group of dimension $25$, with Lie algebra $\mathfrak{u}(5)$; the exponential maps $\mathfrak{u}(5)$ onto $U(5)$. $SU(5)$ is compact of dimension $24$, with Lie algebra $\mathfrak{su}(5)$, and the exponential maps $\mathfrak{su}(5)$ onto $SU(5)$.
 
-**Proof.** The $*$-unitary group is the zero set of $U^*U=I$, closed and bounded, hence compact; the tangent space at $I$ is $\mathfrak{u}(5)$; the exponential of a skew-Hermitian matrix is $*$-unitary. The surjectivity is the $*$-unitary diagonalization: $U=VDV^*$ with $D=\operatorname{diag}(e^{i\theta_k})$, and $U=e^{iH}$ with $H=VD_0V^*$, $D_0=\operatorname{diag}(\theta_k)$, skew-Hermitian. For $SU(5)$, choose the angles with sum zero modulo $2\pi$.
+**Proof.** The $*$-unitary group is the zero set of $U^*U=I$, closed and bounded, hence compact; the tangent space at $I$ is $\mathfrak{u}(5)$; the exponential of a anti-Hermitian matrix is $*$-unitary. The surjectivity is the $*$-unitary diagonalization: $U=VDV^*$ with $D=\operatorname{diag}(e^{i\theta_k})$, and $U=e^{iH}$ with $H=VD_0V^*$, $D_0=\operatorname{diag}(\theta_k)$, anti-Hermitian. For $SU(5)$, choose the angles with sum zero modulo $2\pi$.
 
-**Corollary.** The exponential of a Hermitian matrix is positive definite; the exponential of a skew-Hermitian matrix is $*$-unitary; the exponential of a nilpotent matrix is unipotent.
+**Corollary.** The exponential of a Hermitian matrix is positive definite; the exponential of a anti-Hermitian matrix is $*$-unitary; the exponential of a nilpotent matrix is unipotent.
 
-**Proof.** If $H$ is Hermitian, $e^H$ is Hermitian with positive eigenvalues $e^{\lambda_k}$; if $X$ is skew-Hermitian, $(e^X)^*=e^{X^*}=e^{-X}=(e^X)^{-1}$; if $N$ is nilpotent, $e^N=I+N+\cdots+N^{k-1}/(k-1)!$ is unipotent.
+**Proof.** If $H$ is Hermitian, $e^H$ is Hermitian with positive eigenvalues $e^{\lambda_k}$; if $X$ is anti-Hermitian, $(e^X)^*=e^{X^*}=e^{-X}=(e^X)^{-1}$; if $N$ is nilpotent, $e^N=I+N+\cdots+N^{k-1}/(k-1)!$ is unipotent.
 
 ### The Borel and the Unipotent Group
 
@@ -327,8 +327,8 @@ The Lie algebra $\mathfrak{gl}_5$ has the commutator bracket; the one-parameter 
 | $e^A$ | The matrix exponential |
 | $\mathfrak{gl}_5$ | The Lie algebra $M_5$ with the commutator |
 | $\mathfrak{sl}_5$ | The traceless matrices |
-| $\mathfrak{u}(5)$ | The skew-Hermitian matrices |
-| $\mathfrak{su}(5)$ | The traceless skew-Hermitian matrices |
+| $\mathfrak{u}(5)$ | The anti-Hermitian matrices |
+| $\mathfrak{su}(5)$ | The traceless anti-Hermitian matrices |
 | $\mathfrak{n}$ | The strictly upper triangular matrices |
 | $\mathfrak{t}$ | The diagonal matrices |
 | $B=T\ltimes U$ | The Borel group |

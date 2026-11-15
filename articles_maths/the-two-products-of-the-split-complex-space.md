@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The split-complex space carries two products: the plain one, $AC$, and the sesquilinear one, $A\bar C$. The biquaternion layer carries four, the plain, the quaternionic, the conjugated and the quaternionic-conjugated, and here they collapse pairwise to two. This article counts the two, writes them on the coordinates and on the idempotent coordinates, states what fixes each of them, computes their laws and their pairings, and isolates the point that separates the split case from the complex one.
+The split-complex space carries two products: the plain one, $AC$, and the sesquilinear one, $A\bar C$. The general theory carries four, the plain, the intrinsic-bilinear, the conjugated and the intrinsic-sesquilinear, and here they collapse pairwise to two. This article counts the two, writes them on the coordinates and on the idempotent coordinates, states what fixes each of them, computes their laws and their pairings, and isolates the point that separates the split case from the complex one.
 
 The separation is not the count. Over the complex field the same two products exist and the same four collapse to two; exactly two products are built from a commutative ring and one involution, in either case. The separation is the **values**: over $\mathbb{C}$ the sesquilinear product is positive definite and its diagonal is a modulus, while over $\mathbb{C}_{\mathrm{spl}}$ it is indefinite, vanishes on two lines, and reads as a componentwise multiplication in the idempotent coordinates.
 
@@ -12,11 +12,11 @@ The algebra is *Split-Complex Algebra*, the idempotents *Square Roots of One and
 
 ### The Four General Products
 
-On a space with one involution and two slots, four products are available: the plain product $AC$, the product with the second slot read through the involution $A\bar C$, and the two with the first slot read through the quaternionic mark, $A^{\natural}C$ and $A^{\natural}\bar C$. On $\mathbb{B}$ the mark ${}^{\natural}$ reverses the vector part, and the four are four different products.
+On a space with one involution and two slots, four products are available: the plain product $AC$, the product with the second slot read through the involution $A\bar C$, and the two with the first slot read through the intrinsic conjugation, $A^{\natural}C$ and $A^{\natural}\bar C$. In a non-commutative algebra with a vector part the mark ${}^{\natural}$ reverses the vector part, and the four are four different products.
 
 ### The Collapse to Two
 
-**Proposition.** On $\mathbb{C}_{\mathrm{spl}}$ the quaternionic mark is the identity, so $A^{\natural}C=AC$ and $A^{\natural}\bar C=A\bar C$, and the four general products are two.
+**Proposition.** On $\mathbb{C}_{\mathrm{spl}}$ the intrinsic conjugation is the identity, so $A^{\natural}C=AC$ and $A^{\natural}\bar C=A\bar C$, and the four general products are two.
 
 **Proof.** The mark ${}^{\natural}$ reverses the sign of the vector part of an element and fixes its scalar part. An element of $\mathbb{C}_{\mathrm{spl}}$ has no vector part, so the mark fixes every element.
 
@@ -98,7 +98,7 @@ $$
 
 ### The Four Antisymmetric Products Have No Object
 
-On $\mathbb{B}$ the four general products give four antisymmetric parts, and they are the object of a theory of their own. Here all four vanish identically, because the mark ${}^{\natural}$ is the identity and each of the four products coincides with the product whose exchange fixes it. There is nothing to skew-symmetrise, and a theory of the antisymmetric products of $\mathbb{C}_{\mathrm{spl}}$ would have one object, zero.
+In a non-commutative algebra the four general products give four antisymmetric parts, and they are the object of a theory of their own. Here all four vanish identically, because the intrinsic conjugation is the identity and each of the four products coincides with the product whose exchange fixes it. There is nothing to antisymmetrise, and a theory of the antisymmetric products of $\mathbb{C}_{\mathrm{spl}}$ would have one object, zero.
 
 ### What $A\bar C-C\bar A$ Is, and What It Is Not
 
@@ -138,13 +138,13 @@ which vanishes exactly when $D$ is real. The defect is confined to the third slo
 
 ## The Two Pairings
 
-Each product is also a pairing of two elements with a value in the ring, and the two pairings carry the names $B$ and $H$:
+Each product is also a pairing of two elements with a value in the ring, and the two pairings carry the names $P$ and $H$:
 
 $$
 P(A,C)=AC, \qquad H(A,C)=A\bar C .
 $$
 
-$P$ is symmetric and $H$ is conjugate-symmetric, by the two exchanges above. The four letters of the biquaternion layer collapse here to these two, $P=N$ and $H=\mathrm{Kr}$, because the quaternionic mark is the identity. The two pairings are the object of *The Two Forms and the Two Algebraic Norms of the Split-Complex Space*, where their realified signatures are computed, and of *The Hermitian Form, the Double Cone and the Reversed Cauchy-Schwarz Inequality*, where the cone of $H$ is read.
+$P$ is symmetric and $H$ is conjugate-symmetric, by the two exchanges above. The four letters of the general theory collapse here to these two, $P=N$ and $H=\mathrm{Kr}$, because the intrinsic conjugation is the identity. The two pairings are the object of *The Two Forms and the Two Algebraic Norms of the Split-Complex Space*, where their realified signatures are computed, and of *The Hermitian Form, the Double Cone and the Reversed Cauchy-Schwarz Inequality*, where the cone of $H$ is read.
 
 ## The Point That Separates the Split Case from the Complex One
 
@@ -174,11 +174,11 @@ The reason the values differ is the idempotent coordinates. Over $\mathbb{C}$ th
 
 ## Summary
 
-The split-complex space carries two products, the plain $AC=(ac+bd)+(ad+bc)j$ and the sesquilinear $A\bar C=(ac-bd)+(bc-ad)j$. The four general products of the biquaternion layer collapse to these two because the quaternionic mark is the identity on an element with no vector part; the count of two is the count the complex field also has.
+The split-complex space carries two products, the plain $AC=(ac+bd)+(ad+bc)j$ and the sesquilinear $A\bar C=(ac-bd)+(bc-ad)j$. The four general products of the general theory collapse to these two because the intrinsic conjugation is the identity on an element with no vector part; the count of two is the count the complex field also has.
 
-Each product is fixed by its own exchange, the interchange for the plain product and the adapted exchange $A\star C\mapsto\overline{C\star A}$ for the sesquilinear one, so both antisymmetric parts vanish identically. There is no antisymmetric part on the split-complex space, and the four antisymmetric products of $\mathbb{B}$ have no object here. The difference $A\bar C-C\bar A=2(bc-ad)j$ is not an antisymmetric part: it is the area form, it is not linear in the first slot, and it belongs to the section on the sesquilinear product.
+Each product is fixed by its own exchange, the interchange for the plain product and the adapted exchange $A\star C\mapsto\overline{C\star A}$ for the sesquilinear one, so both antisymmetric parts vanish identically. There is no antisymmetric part on the split-complex space, and the four antisymmetric products have no object here. The difference $A\bar C-C\bar A=2(bc-ad)j$ is not an antisymmetric part: it is the area form, it is not linear in the first slot, and it belongs to the section on the sesquilinear product.
 
-The plain product is associative and two-sidedly unital; the sesquilinear one has a right unit and no left unit, and its associativity defect is $A\bar C(\bar D-D)$. The two forms $P(A,C)=AC$ and $H(A,C)=A\bar C$ are symmetric and conjugate-symmetric, and the four forms of the biquaternion layer collapse to them, $P=N$ and $H=\mathrm{Kr}$. The point that separates the split case from the complex one is the value and not the count: $A\bar A=a^2-b^2$ is indefinite here and definite there, and the idempotent coordinates make the second product componentwise, which is why the split algebra is $\mathbb{R}\times\mathbb{R}$ read twice.
+The plain product is associative and two-sidedly unital; the sesquilinear one has a right unit and no left unit, and its associativity defect is $A\bar C(\bar D-D)$. The two forms $P(A,C)=AC$ and $H(A,C)=A\bar C$ are symmetric and conjugate-symmetric, and the four forms of the general theory collapse to them, $P=N$ and $H=\mathrm{Kr}$. The point that separates the split case from the complex one is the value and not the count: $A\bar A=a^2-b^2$ is indefinite here and definite there, and the idempotent coordinates make the second product componentwise, which is why the split algebra is $\mathbb{R}\times\mathbb{R}$ read twice.
 
 ## Summary of Notation
 
@@ -186,7 +186,7 @@ The plain product is associative and two-sidedly unital; the sesquilinear one ha
 |---|---|
 | $AC=(ac+bd)+(ad+bc)j$ | The plain product, the multiplication of the ring |
 | $A\bar C=(ac-bd)+(bc-ad)j$ | The sesquilinear product, the second slot conjugated |
-| ${}^{\natural}$ | The quaternionic mark, the identity on $\mathbb{C}_{\mathrm{spl}}$ |
+| ${}^{\natural}$ | The intrinsic conjugation, the identity on $\mathbb{C}_{\mathrm{spl}}$ |
 | $(AC)_\pm=A_\pm C_\pm$ | The plain product in idempotent coordinates |
 | $(A\bar C)_\pm=A_\pm C_\mp$ | The sesquilinear product in idempotent coordinates |
 | $A\bar C-C\bar A=2(bc-ad)j$ | The area form, not an antisymmetric part |

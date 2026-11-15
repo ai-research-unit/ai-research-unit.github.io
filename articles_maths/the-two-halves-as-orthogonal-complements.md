@@ -4,7 +4,7 @@
 
 **Whenever an involution preserves a form, its two eigenspaces are orthogonal for that form, and that single lemma produces the orthogonality of the two halves in every case the category uses.**
 
-The article states and proves the lemma, applies it to the transpose with the trace bilinear form and to the conjugate transpose with the Hilbert–Schmidt form, and checks that in each case the two halves are not only orthogonal but complementary: the orthogonal complement of one half is the other. It then reads the two halves as the summands of an orthogonal direct sum, computes the restrictions of the form, notes that the matrix units are an orthonormal system for the Hilbert–Schmidt form while the two halves are not spanned by orthogonal lines of the coarse kind, and closes at $n=2$. It assumes *The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric* and *The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian* for the two splits, and *The Involutions over $\mathbb{R}$ and over $\mathbb{C}$* for the involutions. It defers the signatures of the restrictions to *The Trace Form and Its Signature on the Two Halves* and the Hilbert–Schmidt form itself to *The Hilbert–Schmidt Form*.
+The article states and proves the lemma, applies it to the transpose with the trace bilinear form and to the conjugate transpose with the Hilbert–Schmidt form, and checks that in each case the two halves are not only orthogonal but complementary: the orthogonal complement of one half is the other. It then reads the two halves as the summands of an orthogonal direct sum, computes the restrictions of the form, notes that the matrix units are an orthonormal system for the Hilbert–Schmidt form while the two halves are not spanned by orthogonal lines of the coarse kind, and closes at $n=2$. It assumes *The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric* and *The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian* for the two splits, and *The Involutions over $\mathbb{R}$ and over $\mathbb{C}$* for the involutions. It defers the signatures of the restrictions to *The Trace Form and Its Signature on the Two Halves* and the Hilbert–Schmidt form itself to *The Hilbert–Schmidt Form*.
 
 ## The Complement and the Lemma
 
@@ -58,7 +58,7 @@ which was verified for random pairs at $n=2,3,4$. A self-adjoint idempotent is t
 
 ## The Complex Case
 
-**The Hermitian and skew-Hermitian halves are orthogonal complements for the real part of the Hilbert–Schmidt form.** Put $\langle A,C\rangle=\operatorname{tr}(A^{*}C)$ and let $B=\operatorname{Re}\langle\cdot,\cdot\rangle$, a real inner product on $M_n(\mathbb{C})$ of real dimension $2n^{2}$. The conjugate transpose satisfies
+**The Hermitian and anti-Hermitian halves are orthogonal complements for the real part of the Hilbert–Schmidt form.** Put $\langle A,C\rangle=\operatorname{tr}(A^{*}C)$ and let $B=\operatorname{Re}\langle\cdot,\cdot\rangle$, a real inner product on $M_n(\mathbb{C})$ of real dimension $2n^{2}$. The conjugate transpose satisfies
 
 $$
 \overline{\langle A^{*},C^{*}\rangle}=\operatorname{tr}(A C^{*})=\overline{\operatorname{tr}(A^{*}C)}=\overline{\langle A,C\rangle},
@@ -76,7 +76,7 @@ $$
 M_n(\mathbb{C})=\operatorname{Herm}_n\perp\operatorname{SkewHerm}_n .
 $$
 
-**The Hermitian form itself does not vanish on the pair, and the lemma is applied to its real part.** The number $\operatorname{tr}(H^{*}K)=\operatorname{tr}(HK)$ is purely imaginary, so its real part is zero and its imaginary part generally is not. The distinction is the one recorded in *The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian*: the two halves are orthogonal for the Euclidean structure and not for the Hermitian one, and every statement about orthogonality in the category means the Euclidean statement.
+**The Hermitian form itself does not vanish on the pair, and the lemma is applied to its real part.** The number $\operatorname{tr}(H^{*}K)=\operatorname{tr}(HK)$ is purely imaginary, so its real part is zero and its imaginary part generally is not. The distinction is the one recorded in *The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian*: the two halves are orthogonal for the Euclidean structure and not for the Hermitian one, and every statement about orthogonality in the category means the Euclidean statement.
 
 **The two forms give the same complement and different restrictions.** For the Hermitian form $\langle A,C\rangle$ the two halves have restrictions of signature $(n^{2},0)$ and $(0,n^{2})$ in the real sense, so each restriction is definite and the direct sum is orthogonal for the real part. What fails is only the vanishing of the complex-valued form on the pair, and that failure is the source of the symplectic structure of the following articles.
 
@@ -124,7 +124,7 @@ $$
 
 so the single skew direction is orthogonal to the three symmetric ones. The form has signature $(3,1)$ on $M_2(\mathbb{R})$.
 
-**At $n=2$ the complex split is $8=4\perp4$.** The Hermitian half is spanned over $\mathbb{R}$ by the Pauli list and the skew-Hermitian half by $i$ times it, and the two four-dimensional real spaces are orthogonal for the Euclidean form. In the biquaternion reading this is the split into the two sectors, and the orthogonality is the statement that the sectors do not mix under the Hilbert–Schmidt form.
+**At $n=2$ the complex split is $8=4\perp4$.** The Hermitian half is spanned over $\mathbb{R}$ by the Pauli list and the anti-Hermitian half by $i$ times it, and the two four-dimensional real spaces are orthogonal for the Euclidean form. In the biquaternion reading this is the split into the two sectors, and the orthogonality is the statement that the sectors do not mix under the Hilbert–Schmidt form.
 
 **The complementarity is the statement the two halves are the annihilator of each other, and that is what makes them a split and not a choice.** Any complement of $\operatorname{Skew}_n$ has dimension $n(n+1)/2$; only one of them is orthogonal to it and only one is the fixed half of the involution, and in the transpose case the two coincide. The triangular algebra $UT_n$ is a complement with the right dimension and neither property, which is the precise content of the next comparison.
 
@@ -150,6 +150,6 @@ If an involution preserves a form, its two eigenspaces are orthogonal for that f
 - Werner Greub, *Linear Algebra* (Springer, 1975), for nondegenerate forms, annihilators and the dimension count of a complement.
 - Rajendra Bhatia, *Positive Definite Matrices* (Princeton, 2007), for the Hilbert–Schmidt form and the geometry of the cone.
 - [The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric](the-two-halves-over-r-symmetric-and-antisymmetric.html), for the real split and the trace form on each half.
-- [The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian](the-two-halves-over-c-hermitian-and-skew-hermitian.html), for the complex split and the purely imaginary cross term.
+- [The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian](the-two-halves-over-c-hermitian-and-skew-hermitian.html), for the complex split and the purely imaginary cross term.
 - [The Fine Decomposition against the Diagonal](the-fine-decomposition-against-the-diagonal.html), for the weight lines that the orthonormal units span.
 - [The Involutions over $\mathbb{R}$ and over $\mathbb{C}$](the-involutions-over-r-and-over-c.html), for the classification of the involutions that the lemma applies to.

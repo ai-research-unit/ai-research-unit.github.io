@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The Hermitian half and the skew-Hermitian half are real manifolds of dimension $16$, each is the tangent space of the other at every point through the exponential, the maps $A\mapsto A^{\ast}$, $\operatorname{tr}A$ and $\det A$ are analytic with computable derivatives, the derivative of the determinant at $A$ being $B\mapsto\det(A)\operatorname{tr}(A^{-1}B)$, and the polar decomposition is a diffeomorphism $\mathrm{GL}_4\to\operatorname{Herm}_4^{++}\times U(4)$; the article separates what is genuine analysis from what is algebra written in analytic language.**
+**The Hermitian half and the anti-Hermitian half are real manifolds of dimension $16$, each is the tangent space of the other at every point through the exponential, the maps $A\mapsto A^{\ast}$, $\operatorname{tr}A$ and $\det A$ are analytic with computable derivatives, the derivative of the determinant at $A$ being $B\mapsto\det(A)\operatorname{tr}(A^{-1}B)$, and the polar decomposition is a diffeomorphism $\mathrm{GL}_4\to\operatorname{Herm}_4^{++}\times U(4)$; the article separates what is genuine analysis from what is algebra written in analytic language.**
 
 The article describes the two halves as smooth submanifolds and their tangent spaces, treats the exponential on each half and the image it reaches, computes the differentials of the elementary analytic maps, proves the polar decomposition is a diffeomorphism with a smooth inverse, reads the symmetric half through the Jordan algebra, and marks the boundary between analysis and algebra.
 
@@ -30,7 +30,7 @@ It assumes *The Exponential and the Lie Group Structure at $n=4$*, *The Exponent
 
 **Theorem.** The exponential restricts to an analytic diffeomorphism $\operatorname{Herm}_4\to\operatorname{Herm}_4^{++}$ with analytic inverse, and to a surjective analytic map $\mathfrak{u}(4)\to U(4)$ whose fibres are discrete.
 
-**Proof.** For Hermitian $H$ the eigenvalues are real and $e^{H}$ has positive eigenvalues; the inverse sends a positive definite $A$ to $\sum\log\lambda_k\,P_k$ in its spectral decomposition, which is analytic. For skew-Hermitian $K$ the exponential is unitary and every unitary has a skew-Hermitian logarithm; two logarithms of the same unitary differ by $2\pi i$ times an integral matrix in the eigenbasis, so the fibres are discrete.
+**Proof.** For Hermitian $H$ the eigenvalues are real and $e^{H}$ has positive eigenvalues; the inverse sends a positive definite $A$ to $\sum\log\lambda_k\,P_k$ in its spectral decomposition, which is analytic. For anti-Hermitian $K$ the exponential is unitary and every unitary has a anti-Hermitian logarithm; two logarithms of the same unitary differ by $2\pi i$ times an integral matrix in the eigenbasis, so the fibres are discrete.
 
 **Corollary.** The image of the Hermitian half is exactly the open cone, so the exponential identifies the two halves as manifolds of the same dimension and the cone as a model of the linear space.
 
@@ -129,7 +129,7 @@ $$
 
 ## Summary
 
-The Hermitian and skew-Hermitian halves are linear subspaces of real dimension sixteen, complementary at every point, and each is its own tangent space. The exponential is a diffeomorphism from the Hermitian half onto the open cone and a surjection with discrete fibres from the skew half onto the unitary group.
+The Hermitian and anti-Hermitian halves are linear subspaces of real dimension sixteen, complementary at every point, and each is its own tangent space. The exponential is a diffeomorphism from the Hermitian half onto the open cone and a surjection with discrete fibres from the skew half onto the unitary group.
 
 The maps $A\mapsto A^{\ast}$, $\operatorname{tr}$, $\det$ and $A\mapsto A^{-1}$ are analytic, with derivatives $B^{\ast}$, $\operatorname{tr}B$, $\det(A)\operatorname{tr}(A^{-1}B)$ and $-A^{-1}BA^{-1}$; the map $A\mapsto A^{\ast}A$ is a submersion onto the Hermitian half with the unitary orbits as fibres.
 

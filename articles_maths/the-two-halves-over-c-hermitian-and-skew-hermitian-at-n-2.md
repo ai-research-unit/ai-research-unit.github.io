@@ -1,16 +1,16 @@
-# __The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian at $n=2$__
+# __The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian at $n=2$__
 
 ## Introduction
 
-**Over $\mathbb{C}$ the two halves are the Hermitian matrices of real dimension $4$ and the skew-Hermitian ones of real dimension $4$, and the determinant of a Hermitian matrix of order two is a Minkowski form of signature $(1,3)$.**
+**Over $\mathbb{C}$ the two halves are the Hermitian matrices of real dimension $4$ and the anti-Hermitian ones of real dimension $4$, and the determinant of a Hermitian matrix of order two is a Minkowski form of signature $(1,3)$.**
 
-The article proves the split $M_2(\mathbb{C})=\operatorname{Herm}_2\oplus\mathfrak{u}(2)$ as the eigenspaces of the conjugate transpose, identifies $\operatorname{Herm}_2$ with Minkowski space through the determinant and with the Pauli coordinates, identifies the skew-Hermitian half with the Lie algebra $\mathfrak{u}(2)=\mathbb{R}iI\oplus\mathfrak{su}(2)$, computes the product rules $\{H,K\}$ Hermitian and $[H,K]$ skew-Hermitian, and reads the light cone and the rank-one elements. It assumes *The Involutions of $M_2(\mathbb{C})$ over $\mathbb{R}$ and over $\mathbb{C}$* for the conjugate transpose, and *The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$* for the real slice.
+The article proves the split $M_2(\mathbb{C})=\operatorname{Herm}_2\oplus\mathfrak{u}(2)$ as the eigenspaces of the conjugate transpose, identifies $\operatorname{Herm}_2$ with Minkowski space through the determinant and with the Pauli coordinates, identifies the anti-Hermitian half with the Lie algebra $\mathfrak{u}(2)=\mathbb{R}iI\oplus\mathfrak{su}(2)$, computes the product rules $\{H,K\}$ Hermitian and $[H,K]$ anti-Hermitian, and reads the light cone and the rank-one elements. It assumes *The Involutions of $M_2(\mathbb{C})$ over $\mathbb{R}$ and over $\mathbb{C}$* for the conjugate transpose, and *The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$* for the real slice.
 
 It defers the orthogonal complement to *The Two Halves as Orthogonal Complements at $n=2$*, the spectral statement to *The Spectral Theorem: the Hermitian Case and the Sphere of Idempotents*, and the complex structure on the algebra to *The Element: The Coordinates and the Conjugations*.
 
 ## The Split over $\mathbb{C}$
 
-**Theorem.** Every complex matrix is the sum of a Hermitian and a skew-Hermitian one in exactly one way:
+**Theorem.** Every complex matrix is the sum of a Hermitian and a anti-Hermitian one in exactly one way:
 
 $$
 M_2(\mathbb{C})=\operatorname{Herm}_2\oplus\mathfrak{u}(2),\qquad \dim_{\mathbb{R}}=4+4=8 .
@@ -18,11 +18,11 @@ $$
 
 **Proof.** $A=H+K$ with $H=\tfrac12(A+A^{*})$ and $K=\tfrac12(A-A^{*})$; the two pieces satisfy $H^{*}=H$ and $K^{*}=-K$. If $H+K=0$, applying the conjugate transpose gives $H-K=0$, so both vanish.
 
-**The two halves are the eigenspaces of the conjugate transpose.** The map $\theta(A)=A^{*}$ has $+1$ on $\operatorname{Herm}_2$ and $-1$ on the skew-Hermitian half, so the split is the eigenspace decomposition of an involution, exactly as over $\mathbb{R}$ with the transpose.
+**The two halves are the eigenspaces of the conjugate transpose.** The map $\theta(A)=A^{*}$ has $+1$ on $\operatorname{Herm}_2$ and $-1$ on the anti-Hermitian half, so the split is the eigenspace decomposition of an involution, exactly as over $\mathbb{R}$ with the transpose.
 
-**The halves have the same real dimension.** Each is four-dimensional over $\mathbb{R}$: the Hermitian condition fixes two real equations on the four complex entries, and the skew-Hermitian condition fixes the other two.
+**The halves have the same real dimension.** Each is four-dimensional over $\mathbb{R}$: the Hermitian condition fixes two real equations on the four complex entries, and the anti-Hermitian condition fixes the other two.
 
-**The real slice.** The real matrices inside $\operatorname{Herm}_2$ are the real symmetric matrices, and the real matrices inside the skew-Hermitian half are the real antisymmetric ones. So the two halves of this article restrict on $M_2(\mathbb{R})$ to the two halves of *The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$*.
+**The real slice.** The real matrices inside $\operatorname{Herm}_2$ are the real symmetric matrices, and the real matrices inside the anti-Hermitian half are the real antisymmetric ones. So the two halves of this article restrict on $M_2(\mathbb{R})$ to the two halves of *The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$*.
 
 ## The Hermitian Half as Minkowski Space
 
@@ -55,15 +55,15 @@ so the determinant is a quadratic form of signature $(1,3)$ on $\operatorname{He
 
 **The traces are positive definite.** $\operatorname{tr}(X^{2})=2(x_{0}^{2}+x_{1}^{2}+x_{2}^{2}+x_{3}^{2})$, so the trace form is positive definite on $\operatorname{Herm}_2$, unlike the determinant.
 
-## The Skew-Hermitian Half as $\mathfrak{u}(2)$
+## The Anti-Hermitian Half as $\mathfrak{u}(2)$
 
-**Proposition.** The skew-Hermitian matrices are exactly the products $iX$ with $X$ Hermitian, and they form the Lie algebra $\mathfrak{u}(2)$ of the unitary group.
+**Proposition.** The anti-Hermitian matrices are exactly the products $iX$ with $X$ Hermitian, and they form the Lie algebra $\mathfrak{u}(2)$ of the unitary group.
 
 **Proof.** $K^{*}=-K$ is equivalent to $(iK)^{*}=-iK^{*}=iK$, so $iK$ is Hermitian. The unitary group consists of the matrices with $g^{*}g=I$, and differentiating at the identity gives $K^{*}+K=0$.
 
-**Corollary.** $\mathfrak{u}(2)=\mathbb{R}iI\oplus\mathfrak{su}(2)$, with $\mathfrak{su}(2)$ the traceless skew-Hermitian matrices, of real dimension $3$.
+**Corollary.** $\mathfrak{u}(2)=\mathbb{R}iI\oplus\mathfrak{su}(2)$, with $\mathfrak{su}(2)$ the traceless anti-Hermitian matrices, of real dimension $3$.
 
-**Proof.** A skew-Hermitian matrix has a purely imaginary trace; subtracting the scalar part leaves the traceless skew-Hermitian matrices, which are three real dimensions.
+**Proof.** A anti-Hermitian matrix has a purely imaginary trace; subtracting the scalar part leaves the traceless anti-Hermitian matrices, which are three real dimensions.
 
 **Proposition (the structure constants).** With $S_{a}=i\sigma_{a}$,
 
@@ -85,15 +85,15 @@ $$
 (HK)^{*}=KH,
 $$
 
-so $HK+KH$ is Hermitian and $HK-KH$ is skew-Hermitian.
+so $HK+KH$ is Hermitian and $HK-KH$ is anti-Hermitian.
 
 **Proof.** $(HK)^{*}=K^{*}H^{*}=KH$. Then $(HK+KH)^{*}=KH+HK$ and $(HK-KH)^{*}=KH-HK=-(HK-KH)$.
 
-**Corollary.** The Hermitian half is a Jordan algebra under the product $\tfrac12(HK+KH)$ and the skew-Hermitian half is a Lie algebra under the commutator, and both are closed.
+**Corollary.** The Hermitian half is a Jordan algebra under the product $\tfrac12(HK+KH)$ and the anti-Hermitian half is a Lie algebra under the commutator, and both are closed.
 
 **Proof.** The two statements are the two halves of the proposition; the axioms of a Jordan algebra are checked by polarising the associativity of the ambient product.
 
-**Proposition.** For skew-Hermitian $S$ and Hermitian $H$ the commutator $[S,H]$ is traceless Hermitian.
+**Proposition.** For anti-Hermitian $S$ and Hermitian $H$ the commutator $[S,H]$ is traceless Hermitian.
 
 **Proof.** $[S,H]^{*}=[H^{*},S^{*}]=[H,-S]=[S,H]$, so it is Hermitian; its trace is zero because the trace is a linear functional vanishing on commutators.
 
@@ -103,9 +103,9 @@ so $HK+KH$ is Hermitian and $HK-KH$ is skew-Hermitian.
 
 **Proposition.** The trace is real on $\operatorname{Herm}_2$ and purely imaginary on $\mathfrak{u}(2)$.
 
-**Proof.** A Hermitian matrix has real diagonal, so its trace is real; a skew-Hermitian one has purely imaginary diagonal.
+**Proof.** A Hermitian matrix has real diagonal, so its trace is real; a anti-Hermitian one has purely imaginary diagonal.
 
-**Proposition.** For Hermitian $H,K$ the number $\operatorname{tr}(HK)$ is real and nonnegative when $H=K$; for $H$ Hermitian and $K$ skew-Hermitian the number $\operatorname{tr}(HK)$ is purely imaginary.
+**Proposition.** For Hermitian $H,K$ the number $\operatorname{tr}(HK)$ is real and nonnegative when $H=K$; for $H$ Hermitian and $K$ anti-Hermitian the number $\operatorname{tr}(HK)$ is purely imaginary.
 
 **Proof.** $\overline{\operatorname{tr}(HK)}=\operatorname{tr}((HK)^{*})=\operatorname{tr}(KH)=\operatorname{tr}(HK)$ by cyclicity, so it is real. If $K=iS$ with $S$ Hermitian then $\operatorname{tr}(HK)=i\operatorname{tr}(HS)$ is purely imaginary. Positivity follows because $H$ is diagonalisable by a unitary matrix with real eigenvalues.
 
@@ -123,22 +123,22 @@ so $HK+KH$ is Hermitian and $HK-KH$ is skew-Hermitian.
 
 **Proof.** Each is the projection onto the eigenspace of the eigenvalue $1$, which is a line, and every line has a projection of this form.
 
-**The two halves meet the idempotents differently.** A symmetric idempotent is a Hermitian idempotent with real $\vec n$, so the symmetric ones form the equator $S^{1}$ of the sphere; a skew-Hermitian matrix is never an idempotent except $0$, because its eigenvalues are purely imaginary.
+**The two halves meet the idempotents differently.** A symmetric idempotent is a Hermitian idempotent with real $\vec n$, so the symmetric ones form the equator $S^{1}$ of the sphere; a anti-Hermitian matrix is never an idempotent except $0$, because its eigenvalues are purely imaginary.
 
 ## Summary
 
-The complex matrices split into the Hermitian half and the skew-Hermitian half, each of real dimension $4$, as the eigenspaces of the conjugate transpose. In the Pauli coordinates $X=x_{0}I+x_{1}\sigma_{1}+x_{2}\sigma_{3}+x_{3}\sigma_{2}$ the determinant of a Hermitian matrix is $x_{0}^{2}-x_{1}^{2}-x_{2}^{2}-x_{3}^{2}$, of signature $(1,3)$, and the light cone is the set of rank-one positive semidefinite matrices.
+The complex matrices split into the Hermitian half and the anti-Hermitian half, each of real dimension $4$, as the eigenspaces of the conjugate transpose. In the Pauli coordinates $X=x_{0}I+x_{1}\sigma_{1}+x_{2}\sigma_{3}+x_{3}\sigma_{2}$ the determinant of a Hermitian matrix is $x_{0}^{2}-x_{1}^{2}-x_{2}^{2}-x_{3}^{2}$, of signature $(1,3)$, and the light cone is the set of rank-one positive semidefinite matrices.
 
-The skew-Hermitian half is $\mathfrak{u}(2)=\mathbb{R}iI\oplus\mathfrak{su}(2)$, with $[S_{a},S_{b}]=-2i\epsilon_{abc}S_{c}$. For Hermitian $H,K$ the sum $HK+KH$ is Hermitian and the difference is skew-Hermitian, the trace is real on the Hermitian half and purely imaginary on the other, and $\operatorname{tr}(HK)$ is real while $\operatorname{tr}(HK)$ with $K$ skew is purely imaginary. The Hermitian idempotents form the sphere $S^{2}$, and the symmetric ones form its equator $S^{1}$.
+The anti-Hermitian half is $\mathfrak{u}(2)=\mathbb{R}iI\oplus\mathfrak{su}(2)$, with $[S_{a},S_{b}]=-2i\epsilon_{abc}S_{c}$. For Hermitian $H,K$ the sum $HK+KH$ is Hermitian and the difference is anti-Hermitian, the trace is real on the Hermitian half and purely imaginary on the other, and $\operatorname{tr}(HK)$ is real while $\operatorname{tr}(HK)$ with $K$ skew is purely imaginary. The Hermitian idempotents form the sphere $S^{2}$, and the symmetric ones form its equator $S^{1}$.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\operatorname{Herm}_2$ | the fixed space of $A\mapsto A^{*}$, real dimension $4$ |
-| $\mathfrak{u}(2)$ | the skew-Hermitian matrices, the Lie algebra of $\mathrm{U}(2)$ |
-| $\mathfrak{su}(2)$ | the traceless skew-Hermitian matrices, dimension $3$ |
-| $S_{a}$ | $i\sigma_{a}$, the traceless skew-Hermitian basis |
+| $\mathfrak{u}(2)$ | the anti-Hermitian matrices, the Lie algebra of $\mathrm{U}(2)$ |
+| $\mathfrak{su}(2)$ | the traceless anti-Hermitian matrices, dimension $3$ |
+| $S_{a}$ | $i\sigma_{a}$, the traceless anti-Hermitian basis |
 | $x_{0},x_{1},x_{2},x_{3}$ | the Pauli coordinates of a Hermitian matrix |
 | $\det$ | on $\operatorname{Herm}_2$, the form of signature $(1,3)$ |
 | $P$ | a Hermitian idempotent, $\tfrac12(I+\vec n\cdot\vec\sigma)$ |
@@ -146,7 +146,7 @@ The skew-Hermitian half is $\mathfrak{u}(2)=\mathbb{R}iI\oplus\mathfrak{su}(2)$,
 
 ## Further Reading
 
-- Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge University Press, 2013), for the Hermitian and skew-Hermitian decomposition and its traces.
+- Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge University Press, 2013), for the Hermitian and anti-Hermitian decomposition and its traces.
 - John Stillwell, *Naive Lie Theory* (Springer, 2008), for $\mathfrak{su}(2)\cong\mathfrak{so}(3)$ and the structure constants of the Pauli matrices.
 - [The Involutions of $M_2(\mathbb{C})$ over $\mathbb{R}$ and over $\mathbb{C}$](the-involutions-of-m2c-over-r-and-over-c.html), for the conjugate transpose whose eigenspaces these halves are.
 - [The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$](the-two-halves-over-r-symmetric-and-antisymmetric-at-n-2.html), for the real slice of this split.

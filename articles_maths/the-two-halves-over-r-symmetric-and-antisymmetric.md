@@ -4,7 +4,7 @@
 
 **Over the real field the transpose cuts the algebra into the symmetric matrices and the antisymmetric ones, and the two halves carry the two products that the category needs: the symmetric half is a Jordan algebra under the anticommutator and the antisymmetric half is the Lie algebra $\mathfrak{so}(n)$ under the commutator.**
 
-The article proves the direct sum, the orthogonality of the two halves for the trace form, the closure rules $[\operatorname{Sym},\operatorname{Sym}]\subseteq\operatorname{Skew}$, $[\operatorname{Skew},\operatorname{Skew}]\subseteq\operatorname{Sym}$ and $[\operatorname{Sym},\operatorname{Skew}]\subseteq\operatorname{Sym}$, and the properties that make each half what it is: even rank and purely imaginary spectrum for the antisymmetric half, real spectrum and orthogonal diagonalisation for the symmetric one. It computes the Killing form of $\mathfrak{so}(n)$, which is $(n-2)\operatorname{tr}(XY)$ and vanishes at $n=2$, and it shows that the exponential of each half lands in the corresponding group. It assumes *The Involutions over $\mathbb{R}$ and over $\mathbb{C}$* for the split and *The Two Base Fields: $M_n(\mathbb{R})$ inside $M_n(\mathbb{C})$* for the real trace form. It defers the multiplication tables to *The Four Multiplication Tables: $SS$, $SK$, $KS$, $KK$* and the complex case to *The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian*.
+The article proves the direct sum, the orthogonality of the two halves for the trace form, the closure rules $[\operatorname{Sym},\operatorname{Sym}]\subseteq\operatorname{Skew}$, $[\operatorname{Skew},\operatorname{Skew}]\subseteq\operatorname{Sym}$ and $[\operatorname{Sym},\operatorname{Skew}]\subseteq\operatorname{Sym}$, and the properties that make each half what it is: even rank and purely imaginary spectrum for the antisymmetric half, real spectrum and orthogonal diagonalisation for the symmetric one. It computes the Killing form of $\mathfrak{so}(n)$, which is $(n-2)\operatorname{tr}(XY)$ and vanishes at $n=2$, and it shows that the exponential of each half lands in the corresponding group. It assumes *The Involutions over $\mathbb{R}$ and over $\mathbb{C}$* for the split and *The Two Base Fields: $M_n(\mathbb{R})$ inside $M_n(\mathbb{C})$* for the real trace form. It defers the multiplication tables to *The Four Multiplication Tables: $SS$, $SK$, $KS$, $KK$* and the complex case to *The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian*.
 
 ## The Split
 
@@ -167,9 +167,9 @@ The transpose splits $M_n(\mathbb{R})$ into the symmetric half, of dimension $n(
 
 ## Further Reading
 
-- Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for symmetric and skew-symmetric matrices, their spectra and the Pfaffian.
+- Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for symmetric and antisymmetric matrices, their spectra and the Pfaffian.
 - Nathan Jacobson, *Structure and Representations of Jordan Algebras* (AMS, 1968), for the Jordan product on symmetric matrices.
 - Karin Erdmann and Mark Wildon, *Introduction to Lie Algebras* (Springer, 2006), for $\mathfrak{so}(n)$, its rank and its Killing form.
 - [The Involutions over $\mathbb{R}$ and over $\mathbb{C}$](the-involutions-over-r-and-over-c.html), for the transpose involution and the classification of its kind.
 - [The Two Base Fields: $M_n(\mathbb{R})$ inside $M_n(\mathbb{C})$](the-two-base-fields-mnr-inside-mnc.html), for the real trace form and its definiteness.
-- [The Matrix Algebra $M_n(\mathbb{C})$](the-matrix-algebra-mnc.html), for the trace, the determinant and the skew-Hermitian algebra $\mathfrak{u}(n)$.
+- [The Matrix Algebra $M_n(\mathbb{C})$](the-matrix-algebra-mnc.html), for the trace, the determinant and the anti-Hermitian algebra $\mathfrak{u}(n)$.

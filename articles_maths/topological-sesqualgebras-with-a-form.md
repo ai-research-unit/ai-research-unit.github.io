@@ -26,7 +26,7 @@ $$
 h(\lambda x, y) = \lambda\,h(x,y), \qquad h(x, \lambda y) = \varsigma(\lambda)\,h(x,y)
 $$
 
-for all $\lambda \in R$ and all $x, y \in A$. The form is **Hermitian** when $h(y,x) = \varsigma(h(x,y))$ for all $x, y$, and **skew-Hermitian** when $h(y,x) = -\varsigma(h(x,y))$. It is **continuous** when it is continuous as a map $A \times A \to R$ for the product topology, and **nondegenerate** when its **radical**
+for all $\lambda \in R$ and all $x, y \in A$. The form is **Hermitian** when $h(y,x) = \varsigma(h(x,y))$ for all $x, y$, and **anti-Hermitian** when $h(y,x) = -\varsigma(h(x,y))$. It is **continuous** when it is continuous as a map $A \times A \to R$ for the product topology, and **nondegenerate** when its **radical**
 
 $$
 A^{\perp} = \{x \in A : h(x,y) = 0 \text{ for all } y \in A\}
@@ -36,7 +36,7 @@ is zero. A **topological sesqualgebra with a form** is an associative topologica
 
 The conventions are those of the sesqualgebra block, the pairing $\varphi(x,y) = \tau(xy^{*})$ of *The Sesquilinear Adjoint Operator*, §*The Two Parities*: $R$-linear in the first slot and $\varsigma$-semilinear in the second, with the values in $R$ rather than in an algebra, and with $\varepsilon = 1$ in the sense of *Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint*, §*Hermitian Forms over a Ring with Involution*, where it is the first slot that carries the twist; the bilinear forms that return at the collapse are those of *Bilinear Forms*, §*Definition*.
 
-**Proposition (the diagonal).** Let $h$ be Hermitian. Then $h(x,x) = \varsigma(h(x,x))$ for every $x$, so the diagonal takes its values in the fixed ring $R^{\varsigma}$ of the base involution. If $h$ is skew-Hermitian then $h(x,x) = -\varsigma(h(x,x))$, so the diagonal vanishes when $2$ is invertible and $\varsigma = \mathrm{id}$.
+**Proposition (the diagonal).** Let $h$ be Hermitian. Then $h(x,x) = \varsigma(h(x,x))$ for every $x$, so the diagonal takes its values in the fixed ring $R^{\varsigma}$ of the base involution. If $h$ is anti-Hermitian then $h(x,x) = -\varsigma(h(x,x))$, so the diagonal vanishes when $2$ is invertible and $\varsigma = \mathrm{id}$.
 
 *Proof.* $h(x,x) = \varsigma(h(x,x))$ is the Hermitian condition on the pair $(x,x)$, and the skew case is the other condition on the same pair. For the last statement, $h(x,x) = -h(x,x)$ gives $2h(x,x) = 0$.
 
@@ -211,7 +211,7 @@ At $\varsigma = \mathrm{id}$ the form is $R$-bilinear and symmetric and the laye
 | symbol | meaning |
 |---|---|
 | $h(x,y)$ | a sesquilinear form, $R$-linear in $x$ and $\varsigma$-semilinear in $y$ |
-| $h(y,x) = \varsigma(h(x,y))$ | the Hermitian condition; the skew-Hermitian one has $-\varsigma$ in its place |
+| $h(y,x) = \varsigma(h(x,y))$ | the Hermitian condition; the anti-Hermitian one has $-\varsigma$ in its place |
 | $A^{\perp}$ | the radical $\{x : h(x,y) = 0 \text{ for all } y\}$; the form is nondegenerate when it is zero |
 | $h(xy,z) = h(y,x^{*}z)$ | the compatibility of the form with the product |
 | $h(x,yz) = h(y^{*}x,z)$ | the equivalent form of the compatibility |

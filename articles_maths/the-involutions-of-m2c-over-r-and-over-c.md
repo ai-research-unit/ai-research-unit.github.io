@@ -4,7 +4,7 @@
 
 **An involution of $M_2(\mathbb{C})$ is one of six maps up to conjugacy, and each fixes one of the spaces the rest of the series uses.**
 
-The article classifies the involutions of order two, both the complex-linear and the conjugate-linear ones, computes the fixed space of each in explicit matrices, and identifies the fixed spaces with $\operatorname{Sym}_2$, $\operatorname{Herm}_2$, the line of scalars, the diagonal algebra and the quaternion algebra. It assumes *The Matrix Algebra $M_2(\mathbb{C})$* for the product and the transpose, and *The Two Base Fields: $M_2(\mathbb{R})$ inside $M_2(\mathbb{C})$* for the two real forms. It defers the two halves themselves to *The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$* and *The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian at $n=2$*.
+The article classifies the involutions of order two, both the complex-linear and the conjugate-linear ones, computes the fixed space of each in explicit matrices, and identifies the fixed spaces with $\operatorname{Sym}_2$, $\operatorname{Herm}_2$, the line of scalars, the diagonal algebra and the quaternion algebra. It assumes *The Matrix Algebra $M_2(\mathbb{C})$* for the product and the transpose, and *The Two Base Fields: $M_2(\mathbb{R})$ inside $M_2(\mathbb{C})$* for the two real forms. It defers the two halves themselves to *The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$* and *The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian at $n=2$*.
 
 The biquaternion article to read alongside is *The Element: The Coordinates and the Conjugations*, where the three conjugations of $\mathbb{B}$ play the role of the three complex-linear involutions below. The dictionary is exact: the reversion, the conjugation and the reversion-conjugation of $\mathbb{B}$ are the transpose, the symplectic involution and conjugation by a reflection.
 
@@ -58,7 +58,7 @@ of real dimension $4$.
 
 **Proof.** $\theta(AB)=B^{*}A^{*}$ and $\theta^{2}=\mathrm{id}$; a matrix is fixed exactly when $\bar a_{ji}=a_{ij}$, that is when it is Hermitian.
 
-**The skew-Hermitian space is the other eigenspace.** The matrices with $A^{*}=-A$ form the space $i\operatorname{Herm}_2$ of real dimension $4$, and
+**The anti-Hermitian space is the other eigenspace.** The matrices with $A^{*}=-A$ form the space $i\operatorname{Herm}_2$ of real dimension $4$, and
 
 $$
 M_2(\mathbb{C})=\operatorname{Herm}_2\oplus i\operatorname{Herm}_2
@@ -66,7 +66,7 @@ $$
 
 is the real eigenspace decomposition of $\theta$.
 
-**The trace is real on the fixed space.** For $A$ Hermitian the diagonal entries $a_{ii}$ are real, so $\operatorname{tr}A\in\mathbb{R}$; for $A$ skew-Hermitian the trace is purely imaginary. The two halves are therefore distinguished by the trace as well as by the involution, and that is the start of *The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian at $n=2$*.
+**The trace is real on the fixed space.** For $A$ Hermitian the diagonal entries $a_{ii}$ are real, so $\operatorname{tr}A\in\mathbb{R}$; for $A$ anti-Hermitian the trace is purely imaginary. The two halves are therefore distinguished by the trace as well as by the involution, and that is the start of *The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian at $n=2$*.
 
 ## The Symplectic Involution and the Line of Scalars
 

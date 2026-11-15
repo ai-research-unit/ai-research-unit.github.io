@@ -144,7 +144,7 @@ It is a subgroup of the group of units: it is closed under the product because $
 ## What Belongs Elsewhere
 
 - The **general theory of $\sigma$-sesquilinear and Hermitian forms** over an involution ring — the Gram matrix, congruence, the unitary Witt group and the Wall group — belongs to *Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint* and to *Hermitian Forms on a Hermitian Algebra with Hermitian Adjoint*.
-- The **symmetric and antisymmetric decomposition of a form**, its dictionary of Hermitian, skew-Hermitian and alternating kinds, and the collapse at the trivial involution belong to *The Sesquilinear Form and the Conjugation*.
+- The **symmetric and antisymmetric decomposition of a form**, its dictionary of Hermitian, anti-Hermitian and alternating kinds, and the collapse at the trivial involution belong to *The Sesquilinear Form and the Conjugation*.
 - The **positivity of the form**, the **positive cone** $\{\sum_i x_i^{\dagger}x_i\}$, **Cauchy–Schwarz**, the **completion** and the **modular theory** are *Hilbert Algebras*, *Self-Adjoint Elements and the Positive Cone* and *The Modular Structure of a Hermitian Algebra* in Part II; nothing of that layer is used here.
 - The **operators built from the dagger** — the blade form, the Hermitian pair $\mathrm{Sd}_x(y) = xyx^{\dagger}$, the one-sided operators and their signed variants — are the four groups of this category that follow.
 - The **Clifford algebra**, its grading, its intrinsic anti-involutions and the trace form are *Clifford Algebras*, *The Grading of the Clifford Algebra with Signed Inner Conjugation* and *Hilbert Algebras*.

@@ -64,7 +64,7 @@ $$
 A^{*}XB^{*}=AXB\qquad\text{for all}\ X,
 $$
 
-which holds when $A$ and $B$ are Hermitian. The computation confirms the self-adjointness at $n=3$ for Hermitian factors and the anti-self-adjointness for one Hermitian and one skew-Hermitian factor, so the parity of the operator is the product of the parities of the factors.
+which holds when $A$ and $B$ are Hermitian. The computation confirms the self-adjointness at $n=3$ for Hermitian factors and the anti-self-adjointness for one Hermitian and one anti-Hermitian factor, so the parity of the operator is the product of the parities of the factors.
 
 **The parity is multiplicative.** For operators $L_1$ of parity $\epsilon_1$ and $L_2$ of parity $\epsilon_2$, with $\epsilon=\pm1$ meaning self-adjoint or anti-self-adjoint,
 
@@ -82,7 +82,7 @@ $$
 L=\underbrace{\tfrac12(L+L^{\dagger})}_{\text{self-adjoint}}+\underbrace{\tfrac12(L-L^{\dagger})}_{\text{anti-self-adjoint}},
 $$
 
-so the operator space is the direct sum of the self-adjoint and the anti-self-adjoint operators. The computation confirms the split at $n=3$ on random operators, and it is the repetition of the split of *The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian* one level up.
+so the operator space is the direct sum of the self-adjoint and the anti-self-adjoint operators. The computation confirms the split at $n=3$ on random operators, and it is the repetition of the split of *The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian* one level up.
 
 **The anti-self-adjoint operators are a Lie algebra.** Since
 
@@ -116,7 +116,7 @@ $$
 L_A=L_A^{\dagger}\iff A=A^{*},
 $$
 
-which was verified at $n=3$ on random matrices: the operator is self-adjoint exactly when the matrix is Hermitian, anti-self-adjoint exactly when it is skew-Hermitian. So the split of the algebra induces the split of the left multiplications, one level up and with the same criterion.
+which was verified at $n=3$ on random matrices: the operator is self-adjoint exactly when the matrix is Hermitian, anti-self-adjoint exactly when it is anti-Hermitian. So the split of the algebra induces the split of the left multiplications, one level up and with the same criterion.
 
 **The right multiplications behave the same way.** Since $R_A^{\dagger}=R_{A^{*}}$,
 
@@ -132,7 +132,7 @@ $$
 L^{\dagger}=L_{A^{*}}R_{B^{*}},
 $$
 
-so the operator is self-adjoint when both factors are Hermitian and anti-self-adjoint when one is Hermitian and the other skew-Hermitian. The computation confirms the four cases at $n=3$ on random pairs, and it gives the table of parities of the four multiplication types.
+so the operator is self-adjoint when both factors are Hermitian and anti-self-adjoint when one is Hermitian and the other anti-Hermitian. The computation confirms the four cases at $n=3$ on random pairs, and it gives the table of parities of the four multiplication types.
 
 **The parities of the four tables are the parities of the operator.** The multiplication tables $SS$, $SK$, $KS$, $KK$ of *The Four Multiplication Tables: $SS$, $SK$, $KS$, $KK$* are read on the operator space as the four parity classes:
 
@@ -140,27 +140,27 @@ $$
 SS,\ KK\ \text{self-adjoint};\qquad SK,\ KS\ \text{anti-self-adjoint}
 $$
 
-for Hermitian and skew-Hermitian factors. The computation confirms the four cases at $n=3$, and it shows that the operator space repeats the multiplication table of the algebra with the parity as the grading.
+for Hermitian and anti-Hermitian factors. The computation confirms the four cases at $n=3$, and it shows that the operator space repeats the multiplication table of the algebra with the parity as the grading.
 
 ## The Commutator as the Model
 
-**The commutator operator is anti-self-adjoint exactly for a skew-Hermitian generator.** For $\operatorname{ad}_X(Z)=XZ-ZX$,
+**The commutator operator is anti-self-adjoint exactly for a anti-Hermitian generator.** For $\operatorname{ad}_X(Z)=XZ-ZX$,
 
 $$
 \operatorname{ad}_X^{\dagger}=\operatorname{ad}_{X^{*}},
 $$
 
-so $\operatorname{ad}_X^{\dagger}=-\operatorname{ad}_X$ iff $X^{*}=-X$. The computation confirms both statements at $n=3$ on random matrices: the commutator operator with a skew-Hermitian generator is anti-self-adjoint, and with a Hermitian generator it is self-adjoint.
+so $\operatorname{ad}_X^{\dagger}=-\operatorname{ad}_X$ iff $X^{*}=-X$. The computation confirms both statements at $n=3$ on random matrices: the commutator operator with a anti-Hermitian generator is anti-self-adjoint, and with a Hermitian generator it is self-adjoint.
 
-**The commutator operator with a skew-Hermitian generator lies in $\mathfrak{u}(n^{2})$.** By the previous paragraph the map
+**The commutator operator with a anti-Hermitian generator lies in $\mathfrak{u}(n^{2})$.** By the previous paragraph the map
 
 $$
 \mathfrak{u}(n)\to\mathfrak{u}(n^{2}),\qquad X\mapsto\operatorname{ad}_X
 $$
 
-is a homomorphism of Lie algebras, since $\operatorname{ad}_{[X,Y]}=[\operatorname{ad}_X,\operatorname{ad}_Y]$. The computation confirms the homomorphism property at $n=3$ on random skew-Hermitian pairs, and it is the infinitesimal form of the conjugation action.
+is a homomorphism of Lie algebras, since $\operatorname{ad}_{[X,Y]}=[\operatorname{ad}_X,\operatorname{ad}_Y]$. The computation confirms the homomorphism property at $n=3$ on random anti-Hermitian pairs, and it is the infinitesimal form of the conjugation action.
 
-**The exponential of the commutator operator is the conjugation.** For skew-Hermitian $K$,
+**The exponential of the commutator operator is the conjugation.** For anti-Hermitian $K$,
 
 $$
 e^{t\operatorname{ad}_K}(X)=e^{tK}Xe^{-tK},
@@ -194,11 +194,11 @@ $$
 
 which was verified numerically for the four corners. So the corners are the eigenspaces of the multiplication operators, and the Peirce decomposition of the biquaternion algebra is the diagonalisation of those operators.
 
-**The parity of a multiplication is the parity of its matrix in the biquaternion frame.** A Hermitian element of $\mathbb{B}$ gives a self-adjoint multiplication and a skew-Hermitian element an anti-self-adjoint one, so the two halves of the algebra give the two halves of the operator space. The computation confirms the correspondence at $n=2$ on random elements, and it shows that the split of the operator space is generated by the split of the algebra, exactly as in the general case.
+**The parity of a multiplication is the parity of its matrix in the biquaternion frame.** A Hermitian element of $\mathbb{B}$ gives a self-adjoint multiplication and a anti-Hermitian element an anti-self-adjoint one, so the two halves of the algebra give the two halves of the operator space. The computation confirms the correspondence at $n=2$ on random elements, and it shows that the split of the operator space is generated by the split of the algebra, exactly as in the general case.
 
 ## Summary
 
-The operator space $\operatorname{End}(M_n)$ is a complex Hilbert space of dimension $n^{4}$ with the Hilbert–Schmidt form, and its adjoint is the conjugate transpose of the large matrix, with $L_A^{\dagger}=L_{A^{*}}$, $R_A^{\dagger}=R_{A^{*}}$ and $(L_AR_B)^{\dagger}=L_{A^{*}}R_{B^{*}}$. It splits into the self-adjoint and the anti-self-adjoint operators, which are respectively the fixed and the anti-fixed parts of the adjoint involution, the anti-self-adjoint ones forming the Lie algebra $\mathfrak{u}(n^{2})$ of dimension $n^{4}$ and the two halves being orthogonal. The left and right multiplications are self-adjoint exactly when their matrices are Hermitian, the parity of a two-sided operator is the product of the parities of its factors, and the commutator operator is anti-self-adjoint exactly for a skew-Hermitian generator, its exponential being the conjugation $X\mapsto e^{tK}Xe^{-tK}$.
+The operator space $\operatorname{End}(M_n)$ is a complex Hilbert space of dimension $n^{4}$ with the Hilbert–Schmidt form, and its adjoint is the conjugate transpose of the large matrix, with $L_A^{\dagger}=L_{A^{*}}$, $R_A^{\dagger}=R_{A^{*}}$ and $(L_AR_B)^{\dagger}=L_{A^{*}}R_{B^{*}}$. It splits into the self-adjoint and the anti-self-adjoint operators, which are respectively the fixed and the anti-fixed parts of the adjoint involution, the anti-self-adjoint ones forming the Lie algebra $\mathfrak{u}(n^{2})$ of dimension $n^{4}$ and the two halves being orthogonal. The left and right multiplications are self-adjoint exactly when their matrices are Hermitian, the parity of a two-sided operator is the product of the parities of its factors, and the commutator operator is anti-self-adjoint exactly for a anti-Hermitian generator, its exponential being the conjugation $X\mapsto e^{tK}Xe^{-tK}$.
 
 ## Summary of Notation
 

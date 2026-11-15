@@ -6,13 +6,13 @@
 
 The article proves the equivalence of normality with unitary diagonalisability, writes the four diagonal forms, identifies the four spectral families and their constraints on the eigenvalues, exhibits a Jordan block of size four as the failure, and reads the result in the axis-free frame, where the left matrix of a real element is a scalar multiple of an orthogonal matrix.
 
-It assumes *The Spectral Theorem: the Hermitian Case at $n=4$* and *The Spectral Theorem: the Skew-Hermitian Case at $n=4$*. The model at order two is *Normal $2\times2$ Matrices and the Common Spectral Theorem*; the fine structure of the spectrum is in *The Minimal Polynomial and the Jordan Form of a $4\times4$ Matrix*.
+It assumes *The Spectral Theorem: the Hermitian Case at $n=4$* and *The Spectral Theorem: the Anti-Hermitian Case at $n=4$*. The model at order two is *Normal $2\times2$ Matrices and the Common Spectral Theorem*; the fine structure of the spectrum is in *The Minimal Polynomial and the Jordan Form of a $4\times4$ Matrix*.
 
 ## Normal Matrices
 
 **Definition.** $A$ is **normal** when $A^{\ast}A=AA^{\ast}$.
 
-**Proposition.** Hermitian, skew-Hermitian and unitary matrices are normal; a scalar multiple of a unitary matrix is normal; sums and products of normal matrices need not be normal.
+**Proposition.** Hermitian, anti-Hermitian and unitary matrices are normal; a scalar multiple of a unitary matrix is normal; sums and products of normal matrices need not be normal.
 
 **Proof.** For $A^{\ast}=\pm A$ the two products $A^{\ast}A$ and $AA^{\ast}$ are equal because $A$ commutes with itself; for $A^{\ast}=A^{-1}$ both products are the identity. For the failure of additivity, the diagonal $D=\operatorname{diag}(1,i,1,i)$ and the symmetric $S=E_{12}+E_{21}$ are both normal, while $D+S$ has the upper-left block $\begin{pmatrix}1&1\\1&i\end{pmatrix}$, for which $X^{\ast}X$ and $XX^{\ast}$ differ in the off-diagonal entries.
 
@@ -61,13 +61,13 @@ so the unitary $U$ diagonalises $A$ and $A^{\ast}$, and the conjugate unitary $\
 | family | condition | spectral constraint |
 |---|---|---|
 | Hermitian | $A^{\ast}=A$ | $\lambda_k\in\mathbb{R}$ |
-| skew-Hermitian | $A^{\ast}=-A$ | $\lambda_k\in i\mathbb{R}$ |
+| anti-Hermitian | $A^{\ast}=-A$ | $\lambda_k\in i\mathbb{R}$ |
 | unitary | $A^{\ast}=A^{-1}$ | $|\lambda_k|=1$ |
 | positive definite | $A^{\ast}=A$, $\langle v,Av\rangle>0$ | $\lambda_k>0$ |
 
 **Proof.** From $A=U\Lambda U^{\ast}$ each condition becomes the corresponding condition on the diagonal entries, and conversely.
 
-**Corollary.** The Hermitian and skew-Hermitian families are the fixed sets of the involutions $A\mapsto A^{\ast}$ and $A\mapsto-A^{\ast}$, the unitary family is the fixed set of $A\mapsto(A^{\ast})^{-1}$ on the invertible matrices, and each of the four is a real algebraic subset of the normal set.
+**Corollary.** The Hermitian and anti-Hermitian families are the fixed sets of the involutions $A\mapsto A^{\ast}$ and $A\mapsto-A^{\ast}$, the unitary family is the fixed set of $A\mapsto(A^{\ast})^{-1}$ on the invertible matrices, and each of the four is a real algebraic subset of the normal set.
 
 **Proof.** The table, read as equations in the spectral data.
 
@@ -123,7 +123,7 @@ so the unitary $U$ diagonalises $A$ and $A^{\ast}$, and the conjugate unitary $\
 
 Normality $A^{\ast}A=AA^{\ast}$ is equivalent to unitary diagonalisability, which is equivalent to the vanishing of the strictly upper part of the Schur form. For a normal $A=U\Lambda U^{\ast}$ the four matrices $A$, $A^{\ast}$, $A^{\mathsf T}$ and $\bar A$ are diagonalised by the pair $U$, $\bar U$, with $A^{\mathsf T}=\bar U\Lambda\bar U^{\ast}$ and $\bar A=\bar U\bar\Lambda\bar U^{\ast}$; one unitary suffices when the eigenbasis is closed under conjugation, as for a real symmetric matrix.
 
-The four spectral families — Hermitian, skew-Hermitian, unitary, positive definite — are the normal matrices whose spectrum lies on the real line, the imaginary line, the unit circle and the positive half-line. The Jordan block of size four is the extreme failure, with a flag of length four.
+The four spectral families — Hermitian, anti-Hermitian, unitary, positive definite — are the normal matrices whose spectrum lies on the real line, the imaginary line, the unit circle and the positive half-line. The Jordan block of size four is the extreme failure, with a flag of length four.
 
 In the axis-free frame the left matrix of a real element satisfies $L^{\mathsf T}L=N\mathrm I_4$ and is normal; for a complex element normality holds exactly when the element commutes with its conjugate transpose.
 
@@ -141,6 +141,6 @@ In the axis-free frame the left matrix of a real element satisfies $L^{\mathsf T
 
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for normality, the Schur form and the spectral theorem.
 - [The Spectral Theorem: the Hermitian Case at $n=4$](the-spectral-theorem-the-hermitian-case-at-n-4.html), for the real spectrum and the projectors.
-- [The Spectral Theorem: the Skew-Hermitian Case at $n=4$](the-spectral-theorem-the-skew-hermitian-case-at-n-4.html), for the imaginary spectrum.
+- [The Spectral Theorem: the Anti-Hermitian Case at $n=4$](the-spectral-theorem-the-skew-hermitian-case-at-n-4.html), for the imaginary spectrum.
 - [The Minimal Polynomial and the Jordan Form of a $4\times4$ Matrix](the-minimal-polynomial-and-the-jordan-form-of-a-4x4-matrix.html), for the Jordan block that fails normality.
 - [Normal $2\times2$ Matrices and the Common Spectral Theorem](normal-2x2-matrices-and-the-common-spectral-theorem.html), for the case at order two.

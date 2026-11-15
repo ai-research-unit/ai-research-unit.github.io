@@ -19,7 +19,7 @@ and it is **alternating** when in addition $\varphi(x,x) = 0$ and $\varepsilon =
 
 **Examples.** (a) $A = \mathbb{R}$ with the trivial involution and $\varepsilon = +1$: the symmetric bilinear forms $\mathfrak{Q}(x,y) = \mathfrak{Q}(y,x)$. (b) $A = \mathbb{C}$ with complex conjugation and $\varepsilon = +1$: the Hermitian forms $\varphi(y,x) = \overline{\varphi(x,y)}$. (c) $A = \mathbb{Z}[\pi]$ with the involution $g\mapsto g^{-1}$ and $\varepsilon = \pm1$: the forms of the surgery theory. (d) The intersection form of a closed oriented $2k$-manifold is symmetric for $k$ even and alternating for $k$ odd, that is, $(-1)^k$-Hermitian over $\mathbb{Z}$ with the trivial involution.
 
-**Proposition (symmetry and the sign).** Over a field $F$ of characteristic not two, every alternating form is skew-symmetric and conversely; a symmetric form has $\varphi(x,x)$ arbitrary and an antisymmetric one has $\varphi(x,x) = 0$. The intersection form of a closed oriented $2k$-manifold is $\varepsilon$-Hermitian with $\varepsilon = (-1)^k$, so the alternating case is the odd middle dimension.
+**Proposition (symmetry and the sign).** Over a field $F$ of characteristic not two, every alternating form is antisymmetric and conversely; a symmetric form has $\varphi(x,x)$ arbitrary and an antisymmetric one has $\varphi(x,x) = 0$. The intersection form of a closed oriented $2k$-manifold is $\varepsilon$-Hermitian with $\varepsilon = (-1)^k$, so the alternating case is the odd middle dimension.
 
 **Proof.** The statements are the definitions and the parity computation of *Poincaré Duality*: the commutativity of the cup product up to $(-1)^k$ on the middle cohomology gives the sign.
 

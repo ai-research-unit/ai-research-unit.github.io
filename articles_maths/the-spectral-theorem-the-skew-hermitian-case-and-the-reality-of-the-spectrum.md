@@ -1,20 +1,20 @@
-# __The Spectral Theorem: the Skew-Hermitian Case and the Reality of the Spectrum__
+# __The Spectral Theorem: the Anti-Hermitian Case and the Reality of the Spectrum__
 
 ## Introduction
 
-**A skew-Hermitian matrix has a purely imaginary spectrum and is diagonalised by a unitary with a purely imaginary diagonal, while a real skew-symmetric matrix is not diagonalisable over $\mathbb{R}$ but is orthogonally similar to a block diagonal of rotations, so its spectrum is described by a list of real angles.**
+**A anti-Hermitian matrix has a purely imaginary spectrum and is diagonalised by a unitary with a purely imaginary diagonal, while a real antisymmetric matrix is not diagonalisable over $\mathbb{R}$ but is orthogonally similar to a block diagonal of rotations, so its spectrum is described by a list of real angles.**
 
-The article proves that the skew-Hermitian matrices are exactly $i$ times the Hermitian ones, derives the purely imaginary spectrum and the diagonal form, proves the real canonical block form with its $2\times2$ rotation blocks, identifies the angles as the invariants of the orthogonal similarity class, and reads the count of blocks as the rank. It assumes *The Spectral Theorem: the Hermitian Case* for the diagonalisation and *The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian* for the half. It defers the exponential of the half to *The Exponential of the Antisymmetric Part: One-Parameter Rotations* and the compact group to *The Homotopy of $\mathrm{GL}_n(\mathbb{C})$ and of the Two Halves*.
+The article proves that the anti-Hermitian matrices are exactly $i$ times the Hermitian ones, derives the purely imaginary spectrum and the diagonal form, proves the real canonical block form with its $2\times2$ rotation blocks, identifies the angles as the invariants of the orthogonal similarity class, and reads the count of blocks as the rank. It assumes *The Spectral Theorem: the Hermitian Case* for the diagonalisation and *The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian* for the half. It defers the exponential of the half to *The Exponential of the Antisymmetric Part: One-Parameter Rotations* and the compact group to *The Homotopy of $\mathrm{GL}_n(\mathbb{C})$ and of the Two Halves*.
 
 ## The Half and Its Spectrum
 
-**The skew-Hermitian half is $i$ times the Hermitian half.** If $K^{*}=-K$ then $H=iK$ satisfies
+**The anti-Hermitian half is $i$ times the Hermitian half.** If $K^{*}=-K$ then $H=iK$ satisfies
 
 $$
 H^{*}=(iK)^{*}=-iK^{*}=iK=H,
 $$
 
-and conversely $K=iH$ is skew-Hermitian for Hermitian $H$. So the map $H\mapsto iH$ is a real linear isomorphism between the two halves, and the skew-Hermitian matrices are exactly the Hermitian matrices multiplied by $i$.
+and conversely $K=iH$ is anti-Hermitian for Hermitian $H$. So the map $H\mapsto iH$ is a real linear isomorphism between the two halves, and the anti-Hermitian matrices are exactly the Hermitian matrices multiplied by $i$.
 
 **The spectrum is purely imaginary.** For $Kv=\lambda v$ with $v\neq0$,
 
@@ -22,7 +22,7 @@ $$
 \lambda\|v\|^{2}=\langle Kv,v\rangle,\qquad \bar\lambda\|v\|^{2}=\langle v,Kv\rangle=-\langle Kv,v\rangle ,
 $$
 
-so $\lambda=-\bar\lambda$, that is $\lambda\in i\mathbb{R}$. The computation at $n=3,4,5$ gives real parts below $10^{-15}$ for random skew-Hermitian matrices, and the spectrum of $K=iH$ is $i$ times the spectrum of $H$.
+so $\lambda=-\bar\lambda$, that is $\lambda\in i\mathbb{R}$. The computation at $n=3,4,5$ gives real parts below $10^{-15}$ for random anti-Hermitian matrices, and the spectrum of $K=iH$ is $i$ times the spectrum of $H$.
 
 **The quadratic form is purely imaginary.** For every $x$,
 
@@ -42,7 +42,7 @@ and $K^{*}K$ is positive semidefinite, so $K^{2}\preceq0$ and $\operatorname{tr}
 
 ## Orthogonal Diagonalisation over $\mathbb{C}$
 
-**The theorem.** A skew-Hermitian matrix $K$ has a unitary $U$ and a real diagonal $\Theta$ with
+**The theorem.** A anti-Hermitian matrix $K$ has a unitary $U$ and a real diagonal $\Theta$ with
 
 $$
 K=U(i\Theta)U^{*},\qquad \Theta=\operatorname{diag}(\theta_1,\dots,\theta_n).
@@ -56,7 +56,7 @@ $$
 Ku_j=i\theta_ju_j,\qquad \langle u_j,u_k\rangle=\delta_{jk},
 $$
 
-which the computation confirms at $n=4$. So the skew-Hermitian half is diagonalised by the same unitary group that diagonalises the Hermitian half, and the diagonal entries are the imaginary numbers $i\theta_j$.
+which the computation confirms at $n=4$. So the anti-Hermitian half is diagonalised by the same unitary group that diagonalises the Hermitian half, and the diagonal entries are the imaginary numbers $i\theta_j$.
 
 **The spectral resolution has imaginary coefficients.** With $P_j=u_ju_j^{*}$,
 
@@ -64,7 +64,7 @@ $$
 K=i\sum_{j=1}^{n}\theta_jP_j,\qquad \sum_jP_j=\mathrm{I},
 $$
 
-so the skew-Hermitian matrix is an imaginary combination of the same orthogonal projections. The identity was verified at $n=4$ on a random skew-Hermitian matrix, and it shows that the two halves share the projection structure and differ only in the factor $i$.
+so the anti-Hermitian matrix is an imaginary combination of the same orthogonal projections. The identity was verified at $n=4$ on a random anti-Hermitian matrix, and it shows that the two halves share the projection structure and differ only in the factor $i$.
 
 **The exponential of the half is unitary, and the diagonal form makes it explicit.** Since $i\theta$ is purely imaginary, $|e^{i\theta}|=1$, so
 
@@ -72,11 +72,11 @@ $$
 e^{K}=U\operatorname{diag}(e^{i\theta_1},\dots,e^{i\theta_n})U^{*}
 $$
 
-is unitary. So the exponential of the skew-Hermitian half lands in the unitary group, and the angles $\theta_j$ are the arguments of the eigenvalues of the unitary matrix.
+is unitary. So the exponential of the anti-Hermitian half lands in the unitary group, and the angles $\theta_j$ are the arguments of the eigenvalues of the unitary matrix.
 
 ## The Real Skew Matrices and the Block Form
 
-**A real skew-symmetric matrix is skew-Hermitian and its spectrum is purely imaginary, in conjugate pairs.** For $K\in\mathfrak{so}(n)$ the characteristic polynomial has real coefficients, so its roots come in conjugate pairs; since all roots are purely imaginary, the spectrum is
+**A real antisymmetric matrix is anti-Hermitian and its spectrum is purely imaginary, in conjugate pairs.** For $K\in\mathfrak{so}(n)$ the characteristic polynomial has real coefficients, so its roots come in conjugate pairs; since all roots are purely imaginary, the spectrum is
 
 $$
 \operatorname{Spec}(K)=\{0,\dots,0,\pm i\theta_1,\dots,\pm i\theta_m\},\qquad \theta_j>0,
@@ -140,7 +140,7 @@ $$
 
 and its canonical form is itself, with the single angle $|\theta|$ and the sign of $\theta$ as the orientation. The spectrum is $\{\pm i\theta\}$, the norm is $\sqrt2|\theta|$, and the determinant is $\theta^{2}$, all of which the computation confirms.
 
-**The complex skew-Hermitian matrices of size two are three-dimensional over $\mathbb{R}$.** They are $i$ times the traceless Hermitian matrices, so
+**The complex anti-Hermitian matrices of size two are three-dimensional over $\mathbb{R}$.** They are $i$ times the traceless Hermitian matrices, so
 
 $$
 \{K:K^{*}=-K\}=\{i(a\sigma_1+b\sigma_2+c\sigma_3):a,b,c\in\mathbb{R}\},
@@ -148,17 +148,17 @@ $$
 
 with $K^{2}=-(a^{2}+b^{2}+c^{2})\mathrm{I}$ and $\operatorname{Spec}(K)=\{\pm i\sqrt{a^{2}+b^{2}+c^{2}}\}$. The computation confirms the square and the spectrum, and the single angle is the Euclidean norm of the triple.
 
-**The biquaternion reading gives the angle to the rotation direction.** The line $\mathbb{R}J$ is the antisymmetric half of $M_2(\mathbb{R})$, and in the biquaternion frame the element $i\tilde{Ζ}$ is a pure root, whose square is $-\mathrm{I}$; so the skew-Hermitian elements of square $-1$ are the pure roots $\vec{Ζ}$ rotated by the angle $\pi/2$. So the spectrum theorem at $n=2$ is the statement that the pure roots of the biquaternion algebra form the unit sphere of the three-dimensional skew-Hermitian space, and the angle of a skew element is its distance from the origin in that sphere.
+**The biquaternion reading gives the angle to the rotation direction.** The line $\mathbb{R}J$ is the antisymmetric half of $M_2(\mathbb{R})$, and in the biquaternion frame the element $i\tilde{Ζ}$ is a pure root, whose square is $-\mathrm{I}$; so the anti-Hermitian elements of square $-1$ are the pure roots $\vec{Ζ}$ rotated by the angle $\pi/2$. So the spectrum theorem at $n=2$ is the statement that the pure roots of the biquaternion algebra form the unit sphere of the three-dimensional anti-Hermitian space, and the angle of a skew element is its distance from the origin in that sphere.
 
 ## Summary
 
-The skew-Hermitian matrices are exactly $i$ times the Hermitian ones, so their spectrum is purely imaginary, with $\lambda\|v\|^{2}=\langle Kv,v\rangle=-\overline{\langle Kv,v\rangle}$, and they are diagonalised by a unitary as $K=U(i\Theta)U^{*}$ with $\Theta$ real; the exponential is then unitary with eigenvalues $e^{i\theta_j}$. A real skew matrix has the same purely imaginary spectrum in conjugate pairs, is not diagonalisable over $\mathbb{R}$, and has the orthogonal canonical form of $m$ rotation blocks with angles $\theta_j>0$ and $n-2m$ zeros, of rank $2m$. The angles are the complete invariants of the orthogonal class, the norm satisfies $\|K\|^{2}=2\sum\theta_j^{2}$, the determinant is $\prod\theta_j^{2}$, and at $n=2$ the single angle is the length of the vector $\theta J$.
+The anti-Hermitian matrices are exactly $i$ times the Hermitian ones, so their spectrum is purely imaginary, with $\lambda\|v\|^{2}=\langle Kv,v\rangle=-\overline{\langle Kv,v\rangle}$, and they are diagonalised by a unitary as $K=U(i\Theta)U^{*}$ with $\Theta$ real; the exponential is then unitary with eigenvalues $e^{i\theta_j}$. A real skew matrix has the same purely imaginary spectrum in conjugate pairs, is not diagonalisable over $\mathbb{R}$, and has the orthogonal canonical form of $m$ rotation blocks with angles $\theta_j>0$ and $n-2m$ zeros, of rank $2m$. The angles are the complete invariants of the orthogonal class, the norm satisfies $\|K\|^{2}=2\sum\theta_j^{2}$, the determinant is $\prod\theta_j^{2}$, and at $n=2$ the single angle is the length of the vector $\theta J$.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $K^{*}=-K$ | the skew-Hermitian condition |
+| $K^{*}=-K$ | the anti-Hermitian condition |
 | $K=iH$ with $H=H^{*}$ | the isomorphism with the Hermitian half |
 | $\lambda\in i\mathbb{R}$ | the purely imaginary spectrum |
 | $K=U(i\Theta)U^{*}$ | the unitary diagonalisation |
@@ -169,9 +169,9 @@ The skew-Hermitian matrices are exactly $i$ times the Hermitian ones, so their s
 
 ## Further Reading
 
-- Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the skew-symmetric canonical form and the orthogonal similarity.
+- Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the antisymmetric canonical form and the orthogonal similarity.
 - Werner Greub, *Linear Algebra* (Springer, 1975), for the real canonical form of a skew operator and the invariant planes.
 - Sigurdur Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces* (AMS, 2001), for the angles of a skew matrix as the invariants of the compact group action.
 - [The Spectral Theorem: the Hermitian Case](the-spectral-theorem-the-hermitian-case.html), for the diagonalisation that the factor $i$ carries over.
-- [The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian](the-two-halves-over-c-hermitian-and-skew-hermitian.html), for the half and its properties.
+- [The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian](the-two-halves-over-c-hermitian-and-skew-hermitian.html), for the half and its properties.
 - [The Lie Algebra $\operatorname{Skew}_n\cong\mathfrak{so}(n)$](the-lie-algebra-skew-n-and-so-n.html), for the algebra structure of the real skew matrices.

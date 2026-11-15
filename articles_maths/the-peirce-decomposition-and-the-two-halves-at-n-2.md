@@ -4,7 +4,7 @@
 
 **At a symmetric rank-one idempotent the transpose fixes the two diagonal corners and exchanges the two mixed ones, so the symmetric half is the two diagonal lines together with the diagonal of the mixed block, of dimension three, and the antisymmetric half is the single off-diagonal of that block, of dimension one.**
 
-The article computes the action of the transpose and of the conjugate transpose on the four Peirce spaces, writes the symmetric and the antisymmetric halves in Peirce coordinates, counts the dimensions in the two splittings, and compares the Peirce orthogonality with the orthogonality of the halves for the trace form. It assumes *The Peirce Decomposition in Two Dimensions*, *The Peirce Basis and the Corners at $n=2$*, *The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$* and *The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian at $n=2$*.
+The article computes the action of the transpose and of the conjugate transpose on the four Peirce spaces, writes the symmetric and the antisymmetric halves in Peirce coordinates, counts the dimensions in the two splittings, and compares the Peirce orthogonality with the orthogonality of the halves for the trace form. It assumes *The Peirce Decomposition in Two Dimensions*, *The Peirce Basis and the Corners at $n=2$*, *The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$* and *The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian at $n=2$*.
 
 It defers the Hermitian idempotents and the sphere to *The Spectral Theorem: the Hermitian Case and the Sphere of Idempotents*, and the corner recursion to *The Peirce Decomposition and the Corner Recursion of $M_2(\mathbb{C})$*.
 
@@ -50,7 +50,7 @@ It defers the Hermitian idempotents and the sphere to *The Spectral Theorem: the
 
 **Proof.** Each diagonal corner is a complex line all of whose elements are Hermitian up to a real scalar, and the mixed block contributes two real dimensions, one from the diagonal and one from the antidiagonal, which gives four real dimensions in total.
 
-**Corollary.** The skew-Hermitian half is the complementary real space, of real dimension four, and the two halves are the eigenspaces of the star with the eigenvalues $+1$ and $-1$.
+**Corollary.** The anti-Hermitian half is the complementary real space, of real dimension four, and the two halves are the eigenspaces of the star with the eigenvalues $+1$ and $-1$.
 
 **Proof.** The star is an involution of the real space, so its eigenspaces have dimensions four and four and sum to eight.
 
@@ -62,7 +62,7 @@ It defers the Hermitian idempotents and the sphere to *The Spectral Theorem: the
 
 **Corollary.** The four counts are $1+1+1+1$ for the Peirce splitting, $3+1$ for the real halves, $4+4$ for the complex halves and $2+2$ for the two sides of the diagonal.
 
-**Proof.** The Peirce splitting is over the complex field; the real halves are the symmetric and the antisymmetric; the complex halves are the Hermitian and the skew-Hermitian; and the two sides of the diagonal are the upper and the lower triangles.
+**Proof.** The Peirce splitting is over the complex field; the real halves are the symmetric and the antisymmetric; the complex halves are the Hermitian and the anti-Hermitian; and the two sides of the diagonal are the upper and the lower triangles.
 
 **Corollary.** The only Peirce space that lies inside a half is a diagonal corner, and only in the symmetric or the Hermitian half.
 
@@ -96,7 +96,7 @@ It defers the Hermitian idempotents and the sphere to *The Spectral Theorem: the
 
 At a symmetric rank-one idempotent the transpose fixes the two diagonal corners and exchanges the two mixed ones, so the symmetric half is the two diagonal lines together with the symmetric line of the mixed block, of dimension three, and the antisymmetric half is the antisymmetric line of that block, of dimension one.
 
-At a Hermitian idempotent the conjugate transpose does the same, and the Hermitian and skew-Hermitian halves have real dimension four each. The Peirce splitting and the splitting into halves are transverse, the halves are orthogonal for the trace form while the two mixed corners are not, and the trace form pairs the mixed corners with each other and is degenerate on the diagonal pair.
+At a Hermitian idempotent the conjugate transpose does the same, and the Hermitian and anti-Hermitian halves have real dimension four each. The Peirce splitting and the splitting into halves are transverse, the halves are orthogonal for the trace form while the two mixed corners are not, and the trace form pairs the mixed corners with each other and is degenerate on the diagonal pair.
 
 ## Summary of Notation
 

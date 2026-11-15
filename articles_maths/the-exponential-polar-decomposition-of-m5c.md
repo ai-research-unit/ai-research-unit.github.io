@@ -69,7 +69,7 @@ $$
 
 is surjective and is a local diffeomorphism; it is not injective, and at a point where $e^{iH}$ has distinct eigenvalues its fibre is the lattice translate described above.
 
-**Proof.** Surjectivity is the theorem; the derivative at $(0,0)$ is $(H,S)\mapsto iH+S$, which is an isomorphism because $iH$ is skew-Hermitian, $S$ is Hermitian, and the two summands meet only at $0$. The map is the composition of the exponential on Hermitian matrices, the exponential on skew-Hermitian matrices and the group product, so it is a local diffeomorphism everywhere. The non-injectivity is $e^{2\pi iI}=I$.
+**Proof.** Surjectivity is the theorem; the derivative at $(0,0)$ is $(H,S)\mapsto iH+S$, which is an isomorphism because $iH$ is anti-Hermitian, $S$ is Hermitian, and the two summands meet only at $0$. The map is the composition of the exponential on Hermitian matrices, the exponential on anti-Hermitian matrices and the group product, so it is a local diffeomorphism everywhere. The non-injectivity is $e^{2\pi iI}=I$.
 
 **Remark.** **The exponential-polar decomposition is unique in the group, not in the Lie algebra.** The group elements $e^{iH}$ and $e^S$ are unique; the Lie algebra element $H$ is not, because the exponential is not injective on the $*$-unitary directions. The positive part $S$ is unique because the exponential is injective on the Hermitian matrices. The lattice ambiguity is the price of the exponential coordinates.
 
@@ -99,11 +99,11 @@ $$
 
 where $\mathfrak{p}$ is the space of Hermitian matrices. The decomposition is the $+1$ and $-1$ eigenspaces of the Cartan involution $\theta(X)=-X^*$.
 
-**Proof.** Every $X$ is $X=\frac12(X-X^*)+\frac12(X+X^*)$, skew-Hermitian plus Hermitian; the intersection is zero. The involution $\theta(X)=-X^*$ has $+1$ eigenspace $\mathfrak{u}(5)$ and $-1$ eigenspace $i\mathfrak{u}(5)$; the two are orthogonal for the trace form.
+**Proof.** Every $X$ is $X=\frac12(X-X^*)+\frac12(X+X^*)$, anti-Hermitian plus Hermitian; the intersection is zero. The involution $\theta(X)=-X^*$ has $+1$ eigenspace $\mathfrak{u}(5)$ and $-1$ eigenspace $i\mathfrak{u}(5)$; the two are orthogonal for the trace form.
 
 **Corollary.** $[\mathfrak{u},\mathfrak{u}]\subseteq\mathfrak{u}$, $[\mathfrak{u},\mathfrak{p}]\subseteq\mathfrak{p}$, $[\mathfrak{p},\mathfrak{p}]\subseteq\mathfrak{u}$; the decomposition is a symmetric Lie algebra.
 
-**Proof.** The bracket of skew-Hermitian matrices is skew-Hermitian; the bracket of a skew-Hermitian and a Hermitian is Hermitian; the bracket of two Hermitian is skew-Hermitian.
+**Proof.** The bracket of anti-Hermitian matrices is anti-Hermitian; the bracket of a anti-Hermitian and a Hermitian is Hermitian; the bracket of two Hermitian is anti-Hermitian.
 
 ### The Global Decomposition
 

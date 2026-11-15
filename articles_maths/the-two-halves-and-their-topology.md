@@ -4,7 +4,7 @@
 
 **Each of the two halves is a real Euclidean space of dimension $n^{2}$, the splitting map is an isometry, and the interesting topology of the halves sits in the strata: the Hermitian half is cut by the signature into $n+1$ open regions, the positive cone is convex and contractible, and the unitary half is not contractible because its determinant covers the circle.**
 
-The article proves that the Hermitian and the skew-Hermitian matrices are real vector spaces of dimension $n^{2}$, closed in the matrix space and meeting only at zero, proves the Pythagorean identity for the splitting and the isometry of the splitting map, proves that the positive definite cone is convex hence contractible, proves that the sets of fixed signature are open and that the determinant of a unitary matrix has modulus one. It assumes *The Two Halves as Orthogonal Complements* and *The Topology of $M_n(\mathbb{C})$*. It defers the fundamental group to *The Homotopy of $\mathrm{GL}_n(\mathbb{C})$ and of the Two Halves* and the metric geometry to *The Geometry of the Two Halves, and the Return of the Two-Sided Operators*.
+The article proves that the Hermitian and the anti-Hermitian matrices are real vector spaces of dimension $n^{2}$, closed in the matrix space and meeting only at zero, proves the Pythagorean identity for the splitting and the isometry of the splitting map, proves that the positive definite cone is convex hence contractible, proves that the sets of fixed signature are open and that the determinant of a unitary matrix has modulus one. It assumes *The Two Halves as Orthogonal Complements* and *The Topology of $M_n(\mathbb{C})$*. It defers the fundamental group to *The Homotopy of $\mathrm{GL}_n(\mathbb{C})$ and of the Two Halves* and the metric geometry to *The Geometry of the Two Halves, and the Return of the Two-Sided Operators*.
 
 ## The Two Halves as Euclidean Spaces
 
@@ -24,7 +24,7 @@ $$
 
 The computation confirms the closure at $n=3$ by taking limits of Hermitian matrices and checking the result is Hermitian, and it is the reason each half is a complete metric space in its own right.
 
-**The two halves meet only at zero.** A matrix which is both Hermitian and skew-Hermitian satisfies $A=A^{*}=-A$, so
+**The two halves meet only at zero.** A matrix which is both Hermitian and anti-Hermitian satisfies $A=A^{*}=-A$, so
 
 $$
 \operatorname{Herm}_n\cap\mathfrak{u}(n)=\{0\},
@@ -64,7 +64,7 @@ $$
 
 The computation confirms the identity at $n=2,3,4$ on random matrices, and it is the Pythagorean theorem of the split.
 
-**The isometry makes the two halves orthogonal coordinates.** In the real Euclidean structure of the matrix space the two halves are perpendicular subspaces, so a matrix is a point of the product and its distance to zero is the square root of the sum of the squares of the two coordinates. The computation confirms the orthogonality at $n=3$ by the vanishing of the inner product of a random Hermitian matrix with a random skew-Hermitian one, and it is the topological form of *The Two Halves as Orthogonal Complements*.
+**The isometry makes the two halves orthogonal coordinates.** In the real Euclidean structure of the matrix space the two halves are perpendicular subspaces, so a matrix is a point of the product and its distance to zero is the square root of the sum of the squares of the two coordinates. The computation confirms the orthogonality at $n=3$ by the vanishing of the inner product of a random Hermitian matrix with a random anti-Hermitian one, and it is the topological form of *The Two Halves as Orthogonal Complements*.
 
 **The involution is an isometry of the matrix space.** The map $A\mapsto A^{*}$ preserves the Hilbert–Schmidt norm, since
 
@@ -150,7 +150,7 @@ $$
 
 which was confirmed at $n=2,3$ by the determinant having every phase. So the unitary half carries the topology which the two linear halves do not, and it is the only one of the three sets with a nontrivial homotopy type.
 
-**The unitary group is a real algebraic set of dimension $n^{2}$.** It is cut by the $n^{2}$ real equations $U^{*}U=\mathrm{I}$ and its dimension is $n^{2}$, the dimension of the skew half. The computation confirms the dimension at $n=2,3,4$ by the count of the skew-Hermitian coordinates, and it is the reason the group and the skew half have the same dimension while only one of them is compact.
+**The unitary group is a real algebraic set of dimension $n^{2}$.** It is cut by the $n^{2}$ real equations $U^{*}U=\mathrm{I}$ and its dimension is $n^{2}$, the dimension of the skew half. The computation confirms the dimension at $n=2,3,4$ by the count of the anti-Hermitian coordinates, and it is the reason the group and the skew half have the same dimension while only one of them is compact.
 
 ## The Case $n=2$
 

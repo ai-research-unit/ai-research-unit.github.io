@@ -91,7 +91,7 @@ where $\gamma_{x,v}$ is the geodesic with the initial point $x$ and the initial 
 
 **Proposition.** The geodesic flow is a one-parameter group of diffeomorphisms of $S\mathbb{H}^n$, $\phi_{t+s} = \phi_t\circ\phi_s$, and it is the flow of the **geodesic spray**, the vector field on $S\mathbb{H}^n$ whose value at $(x,v)$ is the tangent vector of the curve $t \mapsto \phi_t(x,v)$ at $t = 0$; the flow preserves the volume of the Liouville measure on the unit tangent bundle, and it commutes with the isometries acting on the bundle by the differentials.
 
-**Proof.** The geodesic equation is a second-order ordinary differential equation on the base with the solution depending smoothly on the initial data, so the flow is a one-parameter group of diffeomorphisms; the computation of the Lie derivative of the Liouville volume in the geodesic spray shows that it vanishes by the skew-symmetry of the Riemannian connection, and the isometries carry the geodesics to the geodesics and commute with the flow by definition. The statement is the standard one, in *Hyperbolic Geometry* and *Riemannian Geometry*.
+**Proof.** The geodesic equation is a second-order ordinary differential equation on the base with the solution depending smoothly on the initial data, so the flow is a one-parameter group of diffeomorphisms; the computation of the Lie derivative of the Liouville volume in the geodesic spray shows that it vanishes by the antisymmetry of the Riemannian connection, and the isometries carry the geodesics to the geodesics and commute with the flow by definition. The statement is the standard one, in *Hyperbolic Geometry* and *Riemannian Geometry*.
 
 ### The Generator and the Signed Structure
 

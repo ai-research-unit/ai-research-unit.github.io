@@ -64,7 +64,7 @@ It follows the biquaternion account of *The Endomorphisms of the Biquaternion Al
 
 **Corollary.** Over the imaginary form the same computation gives the negative definite form on $\mathfrak{su}(2)$, so the real form of the group is $\mathrm{SO}(2,1)$ in one case and $\mathrm{SO}(3)$ in the other.
 
-**Proof.** The traceless skew-Hermitian matrices have $\operatorname{tr}(X^{2})=-\operatorname{tr}(Y^{2})$ for $X=iY$, which is negative definite; the real traceless matrices have the mixed signature.
+**Proof.** The traceless anti-Hermitian matrices have $\operatorname{tr}(X^{2})=-\operatorname{tr}(Y^{2})$ for $X=iY$, which is negative definite; the real traceless matrices have the mixed signature.
 
 ## The Kernel and the Image
 

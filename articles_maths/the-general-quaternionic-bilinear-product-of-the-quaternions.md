@@ -6,11 +6,11 @@ The second of the two general products of the batch reads the first slot of the 
 $$
 \tilde q_1\cdot\tilde q_2=\tilde q_1^{\natural}\tilde q_2 ,
 $$
-and it is the product of the slot pairing $({}^{\natural},\mathrm{id})$. The article [The Two General Products and the Reason There Are Only Two](the-two-general-products-and-the-reason-there-are-only-two.html) proves that the two slots read the same involution over $\mathbb{R}$, so this is the second and the last general product; the biquaternion counterpart, with two conjugations available, has four and not two.
+and it is the product of the slot pairing $({}^{\natural},\mathrm{id})$. The two slots read the same involution over $\mathbb{R}$, so this is the second and the last general product; the biquaternion counterpart, with two conjugations available, has four and not two.
 
 The product is a deliberate distortion of the plain one: the same multiplication, with the first factor reflected in the conjugation. It destroys associativity, flexibility and power associativity and it keeps only the left unit, while leaving the diagonal and the division property untouched, because the conjugation is an anti-automorphism of the plain algebra and the norm is invariant under it. The result is a product that is normed in the strong sense and is nevertheless not associative.
 
-The article reads the product as a product of the batch. The algebra it defines is the general quaternionic algebra of [The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space](the-algebraic-structures-over-the-quaternioid-r-space.html) and [Introduction to the General Quaternionic Algebra of the Quaternions](introduction-to-the-general-quaternionic-algebra-of-the-quaternions.html), cited and not restated; its two halves are [The Jordan Structure of the Symmetric Quaternionic Product of the Quaternions](the-jordan-structure-of-the-symmetric-quaternionic-product-of-the-quaternions.html) and [The Lie Structure of the Antisymmetric Quaternionic Product of the Quaternions](the-lie-structure-of-the-antisymmetric-quaternionic-product-of-the-quaternions.html).
+The article reads the product as a product of the batch. The algebra it defines is the general quaternionic algebra of this space, cited and not restated; its two halves are [The Jordan Structure of the Symmetric Quaternionic Product of the Quaternions](the-jordan-structure-of-the-symmetric-quaternionic-product-of-the-quaternions.html) and [The Lie Structure of the Antisymmetric Quaternionic Product of the Quaternions](the-lie-structure-of-the-antisymmetric-quaternionic-product-of-the-quaternions.html).
 
 ## The Product and Its Coordinate Rule
 
@@ -95,7 +95,7 @@ so $e_t$ is a left unit and not a right one, and it is the only left unit.
 $$
 L_{\tilde q_1}L_{\tilde q_2}=L_{\tilde q_2\tilde q_1},
 $$
-the opposite of the plain product, which is the content of [The Left Multiplications of the Quaternionic Product and the Opposite Monoid of the Quaternions](the-left-multiplications-of-the-quaternionic-product-and-the-opposite-monoid-of-the-quaternions.html). The right multiplications do not compose at all, and this asymmetry between the two sides is the algebraic form of the absence of a right unit.
+the opposite of the plain product: the left multiplications close under the opposite law, which is the algebraic form of the left-handedness of the block. The right multiplications do not compose at all, and this asymmetry between the two sides is the algebraic form of the absence of a right unit.
 
 ## The Image, the Diagonal and the Scalar Part
 
@@ -225,5 +225,4 @@ Its two halves are the scalar form $\langle\tilde q_1,\tilde q_2\rangle_{\natura
 - [The General Plain Bilinear Product of the Quaternions](the-general-plain-bilinear-product-of-the-quaternions.html), for the first of the two general products.
 - [The Jordan Structure of the Symmetric Quaternionic Product of the Quaternions](the-jordan-structure-of-the-symmetric-quaternionic-product-of-the-quaternions.html), for the first half.
 - [The Lie Structure of the Antisymmetric Quaternionic Product of the Quaternions](the-lie-structure-of-the-antisymmetric-quaternionic-product-of-the-quaternions.html), for the second half.
-- [The Symmetrised Quaternionic Product and the Hermitian Subspace of the Quaternions](the-symmetrised-quaternionic-product-and-the-hermitian-subspace-of-the-quaternions.html), for the same object read as a form.
-- [The General Quaternionic Bilinear Product](the-general-quaternionic-bilinear-product.html), for the biquaternion counterpart, and [The Two General Products and the Reason There Are Only Two](the-two-general-products-and-the-reason-there-are-only-two.html) for the count of the batch.
+- [The General Quaternionic Bilinear Product](the-general-quaternionic-bilinear-product.html), for the biquaternion counterpart.

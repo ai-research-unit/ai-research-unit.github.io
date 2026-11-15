@@ -24,7 +24,7 @@ $$
 
 **Proof.** Closure: the sign rule of *Self-Adjoint and Skew Operators of a Form* gives $(TS+ST)^{*} = TS+ST$ for self-adjoint $S, T$. Commutativity is the definition. The identity is self-adjoint and $1 \circ T = T$. The Jordan identity is the standard identity of the special Jordan algebras: it holds in every associative algebra for the symmetrised product, and the verification is the expansion of the two sides in the associative product combined with the associativity.
 
-**Corollary.** The operator algebra with the involution $T \mapsto T^{*}$ is an associative algebra with an involution whose **hermitian part** is a Jordan algebra with the symmetrised product; the structure is special, and the general theory of the Jordan algebras with an involution is *The Hermitian Jordan Algebra* and *Hermitian and Skew-Hermitian Elements*.
+**Corollary.** The operator algebra with the involution $T \mapsto T^{*}$ is an associative algebra with an involution whose **hermitian part** is a Jordan algebra with the symmetrised product; the structure is special, and the general theory of the Jordan algebras with an involution is *The Hermitian Jordan Algebra* and *Hermitian and Anti-Hermitian Elements*.
 
 ## The Correspondence with the Hermitian Forms
 

@@ -399,8 +399,8 @@ the Artin–Schreier equation of a quadratic Galois extension.
 | $A$ | $\sigma$ | Symmetric | Skew |
 |---|---|---|---|
 | any $A$ | $\mathrm{id}$ | $A$ | $(0)$ |
-| $M_n(R)$, any $R$ | transpose | symmetric matrices | skew-symmetric matrices, $2$ invertible |
-| $M_n(R)$, $R$ commutative | $(a_{ij}) \mapsto (\sigma(a_{ji}))$ | the $\sigma$-symmetric matrices | the $\sigma$-skew-symmetric matrices |
+| $M_n(R)$, any $R$ | transpose | symmetric matrices | antisymmetric matrices, $2$ invertible |
+| $M_n(R)$, $R$ commutative | $(a_{ij}) \mapsto (\sigma(a_{ji}))$ | the $\sigma$-symmetric matrices | the $\sigma$-antisymmetric matrices |
 | $K[G]$ | $\sum a_g g \mapsto \sum a_g g^{-1}$ | those with $a_g = a_{g^{-1}}$ | those with $a_g = -a_{g^{-1}}$ |
 | $K\langle x_1,\ldots,x_n\rangle$ | word reversal | those with $a_w = a_{\mathrm{rev}(w)}$ | those with $a_w = -a_{\mathrm{rev}(w)}$ |
 | $A \times A$ | swap | the diagonal | the anti-diagonal |

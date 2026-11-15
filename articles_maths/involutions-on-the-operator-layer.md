@@ -53,9 +53,9 @@ Consequently the adjoint is an **anti-involution** of $\operatorname{End}_k(k[G]
 
 **Definition (self-adjoint, skew-adjoint, unitary).** An operator $T$ is **self-adjoint** if $T^{*}=T$, **skew-adjoint** if $T^{*}=-T$, and **unitary** if $T^{*}T=TT^{*}=\mathrm{id}$.
 
-**Proposition (the elementary criteria).** $T$ is unitary if and only if $T$ is invertible with $T^{*}=T^{-1}$; $T$ is self-adjoint if and only if its matrix is symmetric in the basis $G$; $T$ is skew-adjoint if and only if its matrix is skew-symmetric. The identity is self-adjoint and unitary, and the self-adjoint operators and the skew-adjoint operators are the $+1$ and $-1$ eigenspaces of the adjoint.
+**Proposition (the elementary criteria).** $T$ is unitary if and only if $T$ is invertible with $T^{*}=T^{-1}$; $T$ is self-adjoint if and only if its matrix is symmetric in the basis $G$; $T$ is skew-adjoint if and only if its matrix is antisymmetric. The identity is self-adjoint and unitary, and the self-adjoint operators and the skew-adjoint operators are the $+1$ and $-1$ eigenspaces of the adjoint.
 
-**Proof.** The unitary criterion is the uniqueness of the inverse. In the orthonormal basis the adjoint is the transpose, so $T^{*}=T$ is symmetry of the matrix and $T^{*}=-T$ is skew-symmetry. The last statement is that the adjoint is an involution, so its fixed elements are the self-adjoint ones and its $(-1)$-eigenspace is the skew-adjoint ones.
+**Proof.** The unitary criterion is the uniqueness of the inverse. In the orthonormal basis the adjoint is the transpose, so $T^{*}=T$ is symmetry of the matrix and $T^{*}=-T$ is antisymmetry. The last statement is that the adjoint is an involution, so its fixed elements are the self-adjoint ones and its $(-1)$-eigenspace is the skew-adjoint ones.
 
 ## The Inversion on the Operator Layer
 

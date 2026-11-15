@@ -2,15 +2,15 @@
 
 ## Introduction
 
-The curvature tensor of a Riemannian manifold is a tensor of four arguments with a rigid pattern of symmetries, and the pattern is best described by two **involutions**. The first is the **skew-symmetry**: the tensor is alternating in the first pair of arguments and in the second pair separately, so it is a two-form in each pair and lives in $\Lambda^2\otimes\Lambda^2$. The second is the **pair symmetry**: the tensor is unchanged when the two pairs are exchanged, and this is exactly the statement that the **curvature operator** $\mathcal{R}$ of *The Curvature Operator* is a self-adjoint operator on the space of the bivectors $\Lambda^2$. The two involutions, together with the first Bianchi identity, characterise the curvature tensors among all the symmetric bilinear forms on the bivectors. A third involution enters in even dimension, the Hodge star on $\Lambda^2$, and its $\pm1$-eigenspaces decompose the curvature operator into the **self-dual** and the **anti-self-dual** parts, the decomposition that organises the curvature of a four-manifold.
+The curvature tensor of a Riemannian manifold is a tensor of four arguments with a rigid pattern of symmetries, and the pattern is best described by two **involutions**. The first is the **antisymmetry**: the tensor is alternating in the first pair of arguments and in the second pair separately, so it is a two-form in each pair and lives in $\Lambda^2\otimes\Lambda^2$. The second is the **pair symmetry**: the tensor is unchanged when the two pairs are exchanged, and this is exactly the statement that the **curvature operator** $\mathcal{R}$ of *The Curvature Operator* is a self-adjoint operator on the space of the bivectors $\Lambda^2$. The two involutions, together with the first Bianchi identity, characterise the curvature tensors among all the symmetric bilinear forms on the bivectors. A third involution enters in even dimension, the Hodge star on $\Lambda^2$, and its $\pm1$-eigenspaces decompose the curvature operator into the **self-dual** and the **anti-self-dual** parts, the decomposition that organises the curvature of a four-manifold.
 
-The article develops the involutions that the curvature tensor carries. It reads the skew-symmetry of the curvature as the statement that the tensor is a section of $\Lambda^2\otimes\Lambda^2$; it proves that the pair symmetry is the self-adjointness of the curvature operator and that the first Bianchi identity is the vanishing of the Bianchi map, so that the curvature tensors are the self-adjoint operators lying in the kernel of the Bianchi map; it proves that the curvature operator is diagonalisable with real eigenvalues and that the sectional curvature is the quadratic form it defines; it develops the Hodge star as an involution of $\Lambda^2$ in even dimension and the self-dual and anti-self-dual splitting it induces on the curvature operator; and it shows how an isometric involution, a real structure and a complex structure act on the curvature operator by an involution that preserves its symmetries.
+The article develops the involutions that the curvature tensor carries. It reads the antisymmetry of the curvature as the statement that the tensor is a section of $\Lambda^2\otimes\Lambda^2$; it proves that the pair symmetry is the self-adjointness of the curvature operator and that the first Bianchi identity is the vanishing of the Bianchi map, so that the curvature tensors are the self-adjoint operators lying in the kernel of the Bianchi map; it proves that the curvature operator is diagonalisable with real eigenvalues and that the sectional curvature is the quadratic form it defines; it develops the Hodge star as an involution of $\Lambda^2$ in even dimension and the self-dual and anti-self-dual splitting it induces on the curvature operator; and it shows how an isometric involution, a real structure and a complex structure act on the curvature operator by an involution that preserves its symmetries.
 
 The article assumes the curvature, the curvature tensor and the sectional curvature of *Curvature and Geodesics* and *Riemannian Geometry*, the curvature operator $\mathcal R$ on the bivectors and its expression in an orthonormal frame from *The Curvature Operator*, and the isometric involutions from the preceding articles of this category; the Hodge star and the exterior algebra are Part III's. The Einstein condition, the Ricci flow and the four-dimensional geometry are *Ricci Flow* and *Curvature and Geodesics* elsewhere in this Part, and the Kähler geometry is the Hermitian article of this group. No physics is invoked.
 
 ## The Symmetries of the Curvature Tensor
 
-### The Skew-Symmetry
+### The Antisymmetry
 
 **Definition.** The curvature tensor of a Riemannian manifold is the tensor
 
@@ -74,7 +74,7 @@ If the operator is positive semidefinite then all the sectional curvatures are n
 
 **Proof.** The self-adjointness is the pair symmetry of the previous theorem; a self-adjoint operator on a finite-dimensional inner product space is diagonalisable with real eigenvalues by the spectral theorem; the sectional curvature is the quadratic form by the definition of the curvature operator and the identification of the bivectors. The sign statements follow because a semidefinite quadratic form is nonnegative, respectively nonpositive, on the decomposable cone contained in the whole space; the converse is the dimension count recorded in *The Curvature Operator*. The Einstein condition is the trace statement, developed in the references.
 
-### The Symmetry and the Skew-Symmetry Together
+### The Symmetry and the Antisymmetry Together
 
 **Proposition.** The two involutions of the curvature are the antisymmetry and the symmetry of the same object seen in the two tensor factors: the antisymmetry is the sign of the exchange of the order inside a factor, and the pair symmetry is the exchange of the two factors. The curvature operator is the same datum as the pair-symmetric, factor-alternating tensor, and the two involutions generate the group of the symmetries of the curvature tensor.
 
@@ -117,7 +117,7 @@ $$
 \mathrm{ad}_\sigma(\mathcal{R}) = \mathcal{R}\;},
 $$
 
-so the curvature operator is a **fixed operator** of the involution, and it commutes with the involution of the bivectors induced by $d\sigma$; the two involutions of the curvature tensor — the skew-symmetry and the pair symmetry — are preserved by $\sigma$, and the Hodge involution is preserved by an orientation-preserving $\sigma$ and conjugated by an orientation-reversing one.
+so the curvature operator is a **fixed operator** of the involution, and it commutes with the involution of the bivectors induced by $d\sigma$; the two involutions of the curvature tensor — the antisymmetry and the pair symmetry — are preserved by $\sigma$, and the Hodge involution is preserved by an orientation-preserving $\sigma$ and conjugated by an orientation-reversing one.
 
 **Proof.** The conjugation by an isometry carries the curvature to the curvature by the naturality of the curvature under an isometry, which is the formula displayed; the curvature operator is therefore fixed under the conjugation, which is the statement of *Isometric Involutions on the Operator Layer*. The symmetry of the curvature is preserved because $\sigma$ is a metric isometry, hence preserves the two involutions of the tensor; the Hodge involution is built from the metric and the orientation, so an orientation-preserving $\sigma$ commutes with it and an orientation-reversing one conjugates it by the sign.
 
@@ -137,7 +137,7 @@ so the curvature operator is a **fixed operator** of the involution, and it comm
 
 ## Summary
 
-The curvature tensor carries two **involutions**: the **skew-symmetry**, alternating in each of its two pairs of arguments, which makes it a section of $\Lambda^2\otimes\Lambda^2$, and the **pair symmetry**, the exchange of the two pairs, which is exactly the **self-adjointness** of the curvature operator $\mathcal{R}$ on the bivectors. The **first Bianchi identity** is the additional relation that characterises the curvature among the self-adjoint operators: the curvature tensors are the self-adjoint operators in the kernel of the Bianchi map, $\mathcal R\in S^2(\Lambda^2)\cap\ker b$, and they decompose into the Ricci and the Weyl parts under the orthogonal group.
+The curvature tensor carries two **involutions**: the **antisymmetry**, alternating in each of its two pairs of arguments, which makes it a section of $\Lambda^2\otimes\Lambda^2$, and the **pair symmetry**, the exchange of the two pairs, which is exactly the **self-adjointness** of the curvature operator $\mathcal{R}$ on the bivectors. The **first Bianchi identity** is the additional relation that characterises the curvature among the self-adjoint operators: the curvature tensors are the self-adjoint operators in the kernel of the Bianchi map, $\mathcal R\in S^2(\Lambda^2)\cap\ker b$, and they decompose into the Ricci and the Weyl parts under the orthogonal group.
 
 The curvature operator is self-adjoint, hence diagonalisable with real eigenvalues, and the sectional curvature is its quadratic form $K(\omega) = \langle\mathcal R(\omega),\omega\rangle$: a positive semidefinite operator gives nonnegative sectional curvature and a negative semidefinite one gives nonpositive sectional curvature, the converse failing in dimension at least four, and the Einstein condition is the trace statement. In even dimension the **Hodge star** is an involution of the bivectors, $\star^2=+1$ on $\Lambda^2$, and in dimension four it splits them into the **self-dual** and the **anti-self-dual** parts $\Lambda^2_\pm$; the curvature operator splits into the four blocks, the Einstein condition is the vanishing of the mixed blocks, and the Weyl tensor splits into the self-dual and the anti-self-dual parts. An isometric involution fixes the curvature operator, and the conjugation by $\sigma$ preserves the two symmetries of the curvature and commutes with or conjugates the Hodge involution according to the orientation; on a Kähler manifold the complex structure is a parallel involution whose curvature invariance organises the curvature into the $(1,1)$ and the $(2,0)+(0,2)$ parts.
 
@@ -146,7 +146,7 @@ The curvature operator is self-adjoint, hence diagonalisable with real eigenvalu
 | Symbol | Meaning |
 |---|---|
 | $R(X,Y,Z,W) = \langle R(X,Y)Z,W\rangle$ | Curvature tensor as a four-linear form |
-| $R(X,Y,Z,W)=-R(Y,X,Z,W)$, $=-R(X,Y,W,Z)$ | Skew-symmetry: a two-form in each pair |
+| $R(X,Y,Z,W)=-R(Y,X,Z,W)$, $=-R(X,Y,W,Z)$ | Antisymmetry: a two-form in each pair |
 | $R(X,Y,Z,W)=R(Z,W,X,Y)$ | Pair symmetry: self-adjointness of $\mathcal R$ |
 | $R(X,Y)Z+R(Y,Z)X+R(Z,X)Y=0$ | First Bianchi identity |
 | $\mathcal{R} : \Lambda^2\to\Lambda^2$, $\mathcal{R}^{*}=\mathcal{R}$ | Self-adjoint curvature operator on the bivectors |

@@ -4,7 +4,7 @@
 
 **A rotation is simple when it turns a single plane and fixes the rest, and the count of the independent angles is the rank $\lfloor n/2\rfloor$: one angle at $n=2$ and at $n=3$, where every rotation is simple, and two or more angles at $n\ge4$, where the generic rotation is not simple.**
 
-The article defines simplicity, proves that every rotation of two- and three-space is simple, proves Euler's axis theorem and the trace formula for the angle, shows that the generic rotation of four-space has two angles and no fixed vector, and computes the number of angles as the rank of the orthogonal group, which is the dimension of a maximal torus. It assumes *The Exponential of the Antisymmetric Part: One-Parameter Rotations* and *The Spectral Theorem: the Skew-Hermitian Case and the Reality of the Spectrum*. It defers the geometric reading to *The Geometry of the Two Halves, and the Return of the Two-Sided Operators* and the covering to *The Rotor as a Square Root of a Rotation: the Two Signs and the Double Cover*.
+The article defines simplicity, proves that every rotation of two- and three-space is simple, proves Euler's axis theorem and the trace formula for the angle, shows that the generic rotation of four-space has two angles and no fixed vector, and computes the number of angles as the rank of the orthogonal group, which is the dimension of a maximal torus. It assumes *The Exponential of the Antisymmetric Part: One-Parameter Rotations* and *The Spectral Theorem: the Anti-Hermitian Case and the Reality of the Spectrum*. It defers the geometric reading to *The Geometry of the Two Halves, and the Return of the Two-Sided Operators* and the covering to *The Rotor as a Square Root of a Rotation: the Two Signs and the Double Cover*.
 
 ## Simplicity
 
@@ -161,5 +161,5 @@ A rotation is simple when it turns one plane and fixes the rest, which is the ca
 - Morton L. Curtis, *Matrix Groups* (Springer, 1984), for Euler's theorem and the canonical forms of the rotations.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the planar rotation and the biquaternion picture.
 - [The Exponential of the Antisymmetric Part: One-Parameter Rotations](the-exponential-of-the-antisymmetric-part-one-parameter-rotations.html), for the one-parameter groups whose angles are counted here.
-- [The Spectral Theorem: the Skew-Hermitian Case and the Reality of the Spectrum](the-spectral-theorem-the-skew-hermitian-case-and-the-reality-of-the-spectrum.html), for the canonical block form and the angles.
+- [The Spectral Theorem: the Anti-Hermitian Case and the Reality of the Spectrum](the-spectral-theorem-the-skew-hermitian-case-and-the-reality-of-the-spectrum.html), for the canonical block form and the angles.
 - [Rotors Acting on the Bivector Space: the Adjoint Action](rotors-acting-on-the-bivector-space-the-adjoint-action.html), for the two commuting factors of $\mathfrak{so}(4)$.

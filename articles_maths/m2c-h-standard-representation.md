@@ -164,7 +164,7 @@ $$
 \mathsf{M}_2(V)=\mathfrak{su}(2)=\{A\in\mathsf{M}_2(\mathbb{H}):\operatorname{tr}A=0\},
 $$
 
-spanned by the three images of $\vec e_x,\vec e_y,\vec e_z$, which are skew-Hermitian. So the traceless part of the image is a three-dimensional real space of skew-Hermitian matrices, and the scalar part is recovered as $\tfrac12\operatorname{tr}$.
+spanned by the three images of $\vec e_x,\vec e_y,\vec e_z$, which are anti-Hermitian. So the traceless part of the image is a three-dimensional real space of anti-Hermitian matrices, and the scalar part is recovered as $\tfrac12\operatorname{tr}$.
 
 **The trace is an anti-Hermitian functional.** The trace of a matrix in the image is real, but the trace does not see the sign of the pure part and cannot distinguish a unit from a unit: every nonzero quaternion is a unit here, so the trace is a functional and not a criterion. Its role is to split the image into the scalar line and the traceless part, and the second is the Lie algebra of the unit group.
 
@@ -344,7 +344,7 @@ so the Hermitian part is the scalar part, of dimension one, and the anti-Hermiti
 1. The model is the embedding $\mathsf{M}_2:\mathbb{H}\to M_2(\mathbb{C})$ with image $\{A:A_{21}=-\overline{A_{12}},\ A_{22}=\overline{A_{11}}\}$, a real form of $M_2(\mathbb{C})$ fixed by the anti-linear involution $A\mapsto J\overline{A}J^{-1}$.
 2. There is no faithful real model of degree two, and the least real degree is four; the image has real dimension four inside eight.
 3. Left and right multiplication stay inside the image and are two commuting copies of the algebra in $M_4(\mathbb{R})$, related by $R_{\tilde q}=C L_{\tilde q^{*}}C$ with $C$ the conjugate transpose, intersecting in the scalars.
-4. The trace is $2q_t$ and the traceless part is the three-dimensional space of skew-Hermitian matrices.
+4. The trace is $2q_t$ and the traceless part is the three-dimensional space of anti-Hermitian matrices.
 5. The determinant is the norm $N$, positive definite, with no null cone; every nonzero element is a unit and the rank is two or zero.
 6. The discriminant is $-4\lVert\vec v\rVert^{2}$, so the eigenvalues are the conjugate pair $q_t\pm i\lVert\vec v\rVert$ and every non-scalar element is diagonalisable.
 7. The spectral projectors are $\tfrac12(I_2\pm i\mathsf{M}_2(u))$, Hermitian, rank one, orthogonal, and they are the images of the idempotents of the complexified algebra.

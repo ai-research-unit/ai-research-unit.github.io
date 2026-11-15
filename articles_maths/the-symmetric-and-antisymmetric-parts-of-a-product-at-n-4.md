@@ -115,7 +115,7 @@ and likewise $\{S,K\}$ spans $\operatorname{Skew}_4$ and $[S,K]$ spans $\operato
 
 **Proof.** $\langle L_AX,Y\rangle=\operatorname{tr}((AX)^{\ast}Y)=\operatorname{tr}(X^{\ast}A^{\ast}Y)=\langle X,A^{\ast}Y\rangle$.
 
-**Corollary.** $L_A$ is self-adjoint exactly when $A$ is Hermitian, and skew-adjoint exactly when $A$ is skew-Hermitian; the same for $R_A$.
+**Corollary.** $L_A$ is self-adjoint exactly when $A$ is Hermitian, and skew-adjoint exactly when $A$ is anti-Hermitian; the same for $R_A$.
 
 **Proof.** $L_A^{\ast}=L_A$ is $L_{A^{\ast}}=L_A$, which by faithfulness is $A^{\ast}=A$.
 

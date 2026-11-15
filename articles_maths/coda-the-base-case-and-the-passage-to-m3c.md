@@ -12,7 +12,7 @@ It follows the biquaternion article *The Biquaternion Algebra* for the same base
 
 **The base case has eight real dimensions, four complex dimensions, two halves in each of the two base fields, and one spectral invariant beyond the trace.**
 
-**Proposition.** The algebra has real dimension eight and complex dimension four; the symmetric and antisymmetric halves have dimensions three and one over the reals, and the Hermitian and skew-Hermitian halves have dimensions four and four.
+**Proposition.** The algebra has real dimension eight and complex dimension four; the symmetric and antisymmetric halves have dimensions three and one over the reals, and the Hermitian and anti-Hermitian halves have dimensions four and four.
 
 **Proof.** These are the counts of the independent real and imaginary parts of the four entries, split by the transposition and the conjugate transposition.
 

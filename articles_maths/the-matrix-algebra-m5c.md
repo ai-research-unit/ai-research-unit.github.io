@@ -4,7 +4,7 @@
 
 The algebra $M_5(\mathbb{C})$ is the algebra of complex $5\times5$ matrices with the ordinary product. It is the model on which every structure of this category is read: the root $H$, the Lagrange idempotents, the Peirce lines, the frame, the principal $\mathfrak{sl}_2$ and the adjoint action are all structures on this one algebra. This article fixes the algebra itself: the matrix units and their product rule, the trace and the determinant, the centre, the simplicity, the real dimension $50$, the unit group $GL_5(\mathbb{C})$, the projective group $PGL_5(\mathbb{C})$ of complex dimension $24$, and the reading of the algebra as the complexification of the real Lie algebra $\mathfrak{u}(5)$.
 
-The article uses **no form and no topology**. The conjugate transpose appears only to exhibit the real form $\mathfrak{u}(5)$ and the Hermitian and skew-Hermitian parts; the positive definite trace form, the Frobenius norm and the $*$-unitary group as a metric object are *The Involution and the Hermitian Structure of $M_5(\mathbb{C})$*. The determinant is used as a polynomial and as the criterion of invertibility, not as a volume. The root and the idempotents are later articles; the algebra is their common ground.
+The article uses **no form and no topology**. The conjugate transpose appears only to exhibit the real form $\mathfrak{u}(5)$ and the Hermitian and anti-Hermitian parts; the positive definite trace form, the Frobenius norm and the $*$-unitary group as a metric object are *The Involution and the Hermitian Structure of $M_5(\mathbb{C})$*. The determinant is used as a polynomial and as the criterion of invertibility, not as a volume. The root and the idempotents are later articles; the algebra is their common ground.
 
 The article assumes the general theory of associative algebras of *Associative Algebras* and *Matrix Algebras*: the matrix units, the trace, the determinant, the centre and the two-sided ideals. It proves the facts in the case $n=5$ so that the rest of the category can cite them without returning to the general theory.
 
@@ -214,7 +214,7 @@ where $\mathbb{C}^\times I$ is the group of nonzero scalar matrices, the centre 
 | $PGL_5/T$ (root set) | $20$ | $40$ |
 | $T$ (gauge) | $4$ | $8$ |
 
-## The Hermitian and Skew-Hermitian Parts
+## The Hermitian and Anti-Hermitian Parts
 
 ### The Conjugate Transpose
 
@@ -236,7 +236,7 @@ $$
 
 ### The Two Real Subspaces
 
-**Definition.** An element $A$ is **Hermitian** if $A^*=A$ and **skew-Hermitian** if $A^*=-A$. The real vector spaces are
+**Definition.** An element $A$ is **Hermitian** if $A^*=A$ and **anti-Hermitian** if $A^*=-A$. The real vector spaces are
 
 $$
 \mathfrak{u}(5)=\{A:A^*=-A\},\qquad
@@ -252,10 +252,10 @@ $$
 and the two summands have real dimension $25$ each. The decomposition of an element is
 
 $$
-A=\underbrace{\tfrac12(A-A^*)}_{\text{skew-Hermitian}}+\underbrace{\tfrac12(A+A^*)}_{\text{Hermitian}} .
+A=\underbrace{\tfrac12(A-A^*)}_{\text{anti-Hermitian}}+\underbrace{\tfrac12(A+A^*)}_{\text{Hermitian}} .
 $$
 
-**Proof.** The two projections are idempotent and sum to the identity; the first is skew-Hermitian, the second Hermitian, and the intersection is zero because a matrix that is both Hermitian and skew-Hermitian is zero. The real dimension of $\mathfrak{u}(5)$ is $25$: a skew-Hermitian matrix has purely imaginary diagonal entries (five real parameters) and arbitrary complex entries above the diagonal ($10$ complex $=20$ real), total $5+20=25$; the Hermitian part has real diagonal entries (five) and arbitrary complex entries above the diagonal (twenty), also $25$.
+**Proof.** The two projections are idempotent and sum to the identity; the first is anti-Hermitian, the second Hermitian, and the intersection is zero because a matrix that is both Hermitian and anti-Hermitian is zero. The real dimension of $\mathfrak{u}(5)$ is $25$: a anti-Hermitian matrix has purely imaginary diagonal entries (five real parameters) and arbitrary complex entries above the diagonal ($10$ complex $=20$ real), total $5+20=25$; the Hermitian part has real diagonal entries (five) and arbitrary complex entries above the diagonal (twenty), also $25$.
 
 **Corollary.** The **special $*$-unitary** algebra
 
@@ -265,7 +265,7 @@ $$
 
 has real dimension $24$. The trace is a real linear functional on $\mathfrak{u}(5)$ (the diagonal entries are purely imaginary, and the trace is their sum), and its kernel has dimension $24$.
 
-**Proof.** The trace of a skew-Hermitian matrix is purely imaginary; the condition $\operatorname{tr}A=0$ is one real linear equation on the $25$-dimensional space.
+**Proof.** The trace of a anti-Hermitian matrix is purely imaginary; the condition $\operatorname{tr}A=0$ is one real linear equation on the $25$-dimensional space.
 
 ### The Complexification of $\mathfrak{u}(5)$
 
@@ -280,7 +280,7 @@ Similarly, $\mathbb{C}\otimes_{\mathbb{R}}\mathfrak{su}(5)\cong\mathfrak{sl}_5(\
 
 **Proof.** The map is complex bilinear and surjective: every $A$ is $X+iY$ with $X=\frac12(A-A^*)\in\mathfrak{u}(5)$ and $Y=\frac12(A+A^*)\in i\mathfrak{u}(5)$, and $Y=i(-iY)$ with $-iY\in\mathfrak{u}(5)$. The complex dimensions are both $25$, so the surjection is an isomorphism. The traceless case is the same with the trace condition, and the complex dimension $24$ matches.
 
-**Corollary.** The algebra $M_5(\mathbb{C})$ is the **complexification of the compact real form** $\mathfrak{u}(5)$. The Hermitian and skew-Hermitian parts are the two real halves of the complexification; the compact real form is the skew-Hermitian half, and the Hermitian half is its image under multiplication by $i$.
+**Corollary.** The algebra $M_5(\mathbb{C})$ is the **complexification of the compact real form** $\mathfrak{u}(5)$. The Hermitian and anti-Hermitian parts are the two real halves of the complexification; the compact real form is the anti-Hermitian half, and the Hermitian half is its image under multiplication by $i$.
 
 **Remark.** The reading is a reading of the **real** algebra. The complex algebra $M_5(\mathbb{C})$ does not see the star: the same complex algebra is the complexification of several real forms, and the choice of $\mathfrak{u}(5)$ is the choice of the compact one. The other real forms, and the Cartan involution that selects them, are *Real Forms of a Complex Lie Group and the Cartan Involution*.
 
@@ -328,8 +328,8 @@ The trace is linear, cyclic and nondegenerate as a complex bilinear pairing; the
 | $GL_5(\mathbb{C})$ | The group of invertible matrices |
 | $SL_5(\mathbb{C})$ | The group of determinant one |
 | $PGL_5(\mathbb{C})$ | The quotient $GL_5/\mathbb{C}^\times I$ |
-| $\mathfrak{u}(5)$ | The skew-Hermitian matrices, real dimension $25$ |
-| $\mathfrak{su}(5)$ | The traceless skew-Hermitian matrices, real dimension $24$ |
+| $\mathfrak{u}(5)$ | The anti-Hermitian matrices, real dimension $25$ |
+| $\mathfrak{su}(5)$ | The traceless anti-Hermitian matrices, real dimension $24$ |
 | $\mathfrak{gl}_5(\mathbb{C})$ | The Lie algebra $M_5(\mathbb{C})$ with the commutator |
 
 ## Further Reading

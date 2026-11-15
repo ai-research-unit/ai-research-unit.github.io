@@ -39,7 +39,7 @@ $$
 
 ## The Classes of Elements
 
-**Definition.** An element $f \in \mathcal{A}$ is **Hermitian** (or self-adjoint) when $f^* = f$, **skew-Hermitian** when $f^* = -f$, **normal** when $f^*\!*f = f*\!f^*$, **unitary** when $f^*\!*f = f*\!f^* = 1_{\mathcal{A}}$, and **positive**, written $f\geq0$, when $f = g^*\!*g$ for some $g \in \mathcal{A}$; the involution $f\mapsto f^*$ is the **conjugation**, and $\mathrm{Re}\,f = \tfrac12(f + f^*)$, $\mathrm{Im}\,f = \tfrac1{2i}(f - f^*)$ are its real and imaginary parts.
+**Definition.** An element $f \in \mathcal{A}$ is **Hermitian** (or self-adjoint) when $f^* = f$, **anti-Hermitian** when $f^* = -f$, **normal** when $f^*\!*f = f*\!f^*$, **unitary** when $f^*\!*f = f*\!f^* = 1_{\mathcal{A}}$, and **positive**, written $f\geq0$, when $f = g^*\!*g$ for some $g \in \mathcal{A}$; the involution $f\mapsto f^*$ is the **conjugation**, and $\mathrm{Re}\,f = \tfrac12(f + f^*)$, $\mathrm{Im}\,f = \tfrac1{2i}(f - f^*)$ are its real and imaginary parts.
 
 **Theorem (the Hermitian decomposition).** Every $f\in\mathcal{A}$ is uniquely $f = u + iv$ with $u, v$ Hermitian, and the map $f\mapsto (u,v)$ is an $\mathbb{R}$-linear isomorphism $\mathcal{A}\cong \mathcal{A}_h\oplus i\mathcal{A}_h$ of real Banach spaces; the Hermitian elements form a closed real subspace, and
 

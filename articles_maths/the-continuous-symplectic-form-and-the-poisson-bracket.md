@@ -20,7 +20,7 @@ $$
 
 into the algebraic dual of *Bilinear Forms*, §*Rank and the Radical*; when $V$ carries a norm and the form is continuous, the image lies in the continuous dual $V'$. The **radical** is $\operatorname{rad}(\omega)=\{v : \omega(v,w)=0 \text{ for every } w\}$.
 
-The definition is the algebraic one of *Bilinear Forms*, §*Alternating Forms*, with the continuity added. Alternation is stated through $\omega(v,v)=0$ rather than through skew-symmetry, since the two agree in characteristic not $2$ and the first is the condition available over every base, as *Exterior Powers* records. The contraction is the form read in one slot, and it is the device that makes the topology of the form a statement about an operator.
+The definition is the algebraic one of *Bilinear Forms*, §*Alternating Forms*, with the continuity added. Alternation is stated through $\omega(v,v)=0$ rather than through antisymmetry, since the two agree in characteristic not $2$ and the first is the condition available over every base, as *Exterior Powers* records. The contraction is the form read in one slot, and it is the device that makes the topology of the form a statement about an operator.
 
 **Proposition (the contraction is continuous).** Let $\omega$ be a continuous alternating form. Then $\omega^{\flat}$ is a continuous linear map $V\to V^{*}$ when $V^{*}$ carries the topology of uniform convergence on the unit ball of $V$, and $\ker\omega^{\flat}=\operatorname{rad}(\omega)$; the radical is closed. In particular $\omega$ is non-degenerate if and only if $\omega^{\flat}$ is injective.
 

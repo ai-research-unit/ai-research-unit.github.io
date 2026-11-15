@@ -146,7 +146,7 @@ So the form is positive definite on $\operatorname{Sym}_n$ and negative definite
 
 ## The Complex Contrast
 
-**Over $\mathbb{C}$ the split is made by the conjugate transpose, not by the transpose.** Put $A^{*}=\overline{A^{\mathsf T}}$. Then $A^{*}$ is conjugate linear, $A^{**}=A$, and $(AB)^{*}=B^{*}A^{*}$. Its eigenspaces are the Hermitian matrices and the skew-Hermitian matrices.
+**Over $\mathbb{C}$ the split is made by the conjugate transpose, not by the transpose.** Put $A^{*}=\overline{A^{\mathsf T}}$. Then $A^{*}$ is conjugate linear, $A^{**}=A$, and $(AB)^{*}=B^{*}A^{*}$. Its eigenspaces are the Hermitian matrices and the anti-Hermitian matrices.
 
 **The two complex halves have equal real dimension.** A Hermitian matrix of order $n$ is determined by $n$ real diagonal entries and $\binom{n}{2}$ complex entries above the diagonal, so its real dimension is
 
@@ -154,7 +154,7 @@ $$
 n+2\binom{n}{2}=n^{2}.
 $$
 
-A skew-Hermitian matrix is $i$ times a Hermitian one, so its real dimension is also $n^{2}$, and $n^{2}+n^{2}=2n^{2}$ is the real dimension of $M_n(\mathbb{C})$. The complex split is even; the real split by the transpose is not, because $n(n+1)/2$ and $n(n-1)/2$ differ by $n$.
+A anti-Hermitian matrix is $i$ times a Hermitian one, so its real dimension is also $n^{2}$, and $n^{2}+n^{2}=2n^{2}$ is the real dimension of $M_n(\mathbb{C})$. The complex split is even; the real split by the transpose is not, because $n(n+1)/2$ and $n(n-1)/2$ differ by $n$.
 
 **The reason is that the conjugate transpose is of the second kind, and the transpose is of the first kind.** The map $A^{*}$ fixes only the real scalars, so its fixed space is a real subspace and not a complex one. The transpose is complex linear on $M_n(\mathbb{C})$ as well, and its two complex eigenspaces $\operatorname{Sym}_n(\mathbb{C})$ and $\operatorname{Skew}_n(\mathbb{C})$ have complex dimensions $n(n+1)/2$ and $n(n-1)/2$, hence real dimensions $n(n+1)$ and $n(n-1)$, which again differ.
 
@@ -164,7 +164,7 @@ A skew-Hermitian matrix is $i$ times a Hermitian one, so its real dimension is a
 
 ## Summary
 
-The transpose is an involution of $M_n(\mathbb{R})$, and its eigenspaces are the $\tfrac{n(n+1)}{2}$-dimensional symmetric half and the $\tfrac{n(n-1)}{2}$-dimensional skew half. The symmetric half is a Jordan algebra under the anticommutator and the skew half is a Lie algebra under the commutator. Neither is a subalgebra for the ordinary product: two symmetric matrices multiply to a symmetric matrix only when they commute, and two skew matrices always multiply to a symmetric one. The square of a skew matrix is symmetric and negative semidefinite, the rank of a skew matrix is even, and a skew matrix of odd order is singular. The two halves are orthogonal for the trace form, with a positive sign on the symmetric half and a negative one on the skew half. Over $\mathbb{C}$ the roles pass to the Hermitian and skew-Hermitian halves, which have equal real dimension $n^{2}$, because the conjugate transpose is conjugate linear.
+The transpose is an involution of $M_n(\mathbb{R})$, and its eigenspaces are the $\tfrac{n(n+1)}{2}$-dimensional symmetric half and the $\tfrac{n(n-1)}{2}$-dimensional skew half. The symmetric half is a Jordan algebra under the anticommutator and the skew half is a Lie algebra under the commutator. Neither is a subalgebra for the ordinary product: two symmetric matrices multiply to a symmetric matrix only when they commute, and two skew matrices always multiply to a symmetric one. The square of a skew matrix is symmetric and negative semidefinite, the rank of a skew matrix is even, and a skew matrix of odd order is singular. The two halves are orthogonal for the trace form, with a positive sign on the symmetric half and a negative one on the skew half. Over $\mathbb{C}$ the roles pass to the Hermitian and anti-Hermitian halves, which have equal real dimension $n^{2}$, because the conjugate transpose is conjugate linear.
 
 ## Summary of Notation
 

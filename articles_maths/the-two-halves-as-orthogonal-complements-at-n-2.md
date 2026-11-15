@@ -4,7 +4,7 @@
 
 **The symmetric and the antisymmetric halves are exact orthogonal complements for the trace form, and the reason is that the transpose is self-adjoint for that form.**
 
-The article proves the orthogonality of the two halves over $\mathbb{R}$ and over $\mathbb{C}$, computes the Gram matrices of the trace form on each half with the eigenvalues $1,1,2$ and $-2$, states the general criterion by which the eigenspaces of an involution are orthogonal, and lists the orthogonal complements of the subspaces that recur in the series. It assumes *The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$*, *The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian at $n=2$* and *The Involutions of $M_2(\mathbb{C})$ over $\mathbb{R}$ and over $\mathbb{C}$*.
+The article proves the orthogonality of the two halves over $\mathbb{R}$ and over $\mathbb{C}$, computes the Gram matrices of the trace form on each half with the eigenvalues $1,1,2$ and $-2$, states the general criterion by which the eigenspaces of an involution are orthogonal, and lists the orthogonal complements of the subspaces that recur in the series. It assumes *The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$*, *The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian at $n=2$* and *The Involutions of $M_2(\mathbb{C})$ over $\mathbb{R}$ and over $\mathbb{C}$*.
 
 It defers the definite form on the complex algebra to *The Hilbert–Schmidt Form at $n=2$*, the signature statements to *The Trace Form and Its Signature on the Two Halves of $M_2(\mathbb{R})$*, and the subspaces of the triangular kind to *The Triangular Decomposition $h\oplus n_+\oplus n_-$ of $M_2(\mathbb{C})$*.
 
@@ -68,13 +68,13 @@ with eigenvalues $1,1,2$, all positive.
 
 ## The Complex Case and the Two Forms
 
-**Theorem.** For $H$ Hermitian and $K$ skew-Hermitian the real number $\operatorname{Re}\operatorname{tr}(H^{*}K)$ is zero, so the two halves are orthogonal for the real part of the Hermitian form.
+**Theorem.** For $H$ Hermitian and $K$ anti-Hermitian the real number $\operatorname{Re}\operatorname{tr}(H^{*}K)$ is zero, so the two halves are orthogonal for the real part of the Hermitian form.
 
-**Proof.** $\operatorname{tr}(H^{*}K)=\operatorname{tr}(HK)$ and $K=iS$ with $S$ Hermitian, so $\operatorname{tr}(HK)=i\operatorname{tr}(HS)$ is purely imaginary by the trace statement of *The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian at $n=2$*; its real part vanishes.
+**Proof.** $\operatorname{tr}(H^{*}K)=\operatorname{tr}(HK)$ and $K=iS$ with $S$ Hermitian, so $\operatorname{tr}(HK)=i\operatorname{tr}(HS)$ is purely imaginary by the trace statement of *The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian at $n=2$*; its real part vanishes.
 
 **Proposition.** The two halves are not orthogonal for the complex bilinear form $\operatorname{tr}(XY)$.
 
-**Proof.** With $H=I$ and $K=iI$ one has $\operatorname{tr}(HK)=2i\neq0$, and $I$ is Hermitian while $iI$ is skew-Hermitian.
+**Proof.** With $H=I$ and $K=iI$ one has $\operatorname{tr}(HK)=2i\neq0$, and $I$ is Hermitian while $iI$ is anti-Hermitian.
 
 **Corollary.** Over $\mathbb{C}$ the correct orthogonal complement statement uses the real part of the Hilbert–Schmidt form, and the complex bilinear form does not see the split.
 
@@ -120,5 +120,5 @@ The same argument with the conjugate transpose gives the orthogonality of $\oper
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge University Press, 2013), for the trace pairing, its definiteness and the Gram matrices of the symmetric and skew spaces.
 - Sigurdur Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces* (AMS, 2001), for the criterion by which the eigenspaces of a self-adjoint involution are orthogonal.
 - [The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$](the-two-halves-over-r-symmetric-and-antisymmetric-at-n-2.html), for the two halves and their bracket.
-- [The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian at $n=2$](the-two-halves-over-c-hermitian-and-skew-hermitian-at-n-2.html), for the complex halves and their traces.
+- [The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian at $n=2$](the-two-halves-over-c-hermitian-and-skew-hermitian-at-n-2.html), for the complex halves and their traces.
 - [The Involutions of $M_2(\mathbb{C})$ over $\mathbb{R}$ and over $\mathbb{C}$](the-involutions-of-m2c-over-r-and-over-c.html), for the list of involutions that produce the splits.

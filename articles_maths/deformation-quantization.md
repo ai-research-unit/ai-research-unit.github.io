@@ -111,7 +111,7 @@ $$
 
 The bracket is the **Poisson bracket**, and the axiom relating it to the product is the **Leibniz rule**. A Poisson algebra is thus a commutative algebra and a Lie algebra in a compatible way, and the two structures are precisely the data of a Gerstenhaber algebra concentrated in degrees $0$ and $1$ with the bracket of degree $-1$.
 
-**Example.** For $A = k[x_1,\dots,x_n]$ and a skew-symmetric matrix $\omega = (\omega_{ij})$ of constants, the bracket
+**Example.** For $A = k[x_1,\dots,x_n]$ and a antisymmetric matrix $\omega = (\omega_{ij})$ of constants, the bracket
 
 $$
 \{f,g\} = \sum_{i,j}\omega_{ij}\,\partial/\partial x_i\,f\,\partial/\partial x_j\,g

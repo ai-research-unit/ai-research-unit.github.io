@@ -165,7 +165,7 @@ $$
 \mathfrak{u}(1,3)=J\cdot\mathfrak{u}(4)=\{JM:M\in\mathfrak{u}(4)\},
 $$
 
-since $(JN)^{\dagger}=-JN$ exactly when $N$ is skew-Hermitian; the identification is not a Lie algebra isomorphism, because $J$ is not central.
+since $(JN)^{\dagger}=-JN$ exactly when $N$ is anti-Hermitian; the identification is not a Lie algebra isomorphism, because $J$ is not central.
 
 ## The Krein Involution of the Group
 
@@ -223,7 +223,7 @@ the compact part followed by the hyperbolic part, whose exponentials are the boo
 
 **Theorem (the trace form).** The pairing $(M,N)\mapsto\operatorname{Tr}(MN)$ is a non-degenerate complex bilinear form on $\mathfrak{g}$, symmetric and invariant under conjugation. Restricted to $\mathfrak{u}(1,3)$, its real part $(M,N)\mapsto\operatorname{Re}\operatorname{Tr}(MN)$ has signature $(6,10)$ on the real vector space of dimension $16$, positive on $\mathfrak{p}_{0}$ and negative on $\mathfrak{k}_{0}$.
 
-*Proof.* The trace form is non-degenerate on $M_4(\mathbb{C})$, and $\operatorname{Tr}(MN)=\operatorname{Tr}(NM)$ makes it symmetric and invariant under $M\mapsto QMQ^{-1}$. For $\mathfrak{u}(n,m)$ it has signature $(2pq,p^{2}+q^{2})$, which for $p=1,q=3$ is $(6,10)$; the signs are read on the diagonal blocks $\mathfrak{u}(1)\oplus\mathfrak{u}(3)$, where $M$ is skew-Hermitian and $\operatorname{Tr}(M^{2})\le0$, and on the off-diagonal block $\mathfrak{p}_{0}$, where $\operatorname{Tr}(M^{2})=2\operatorname{Tr}(Z^{*}Z)\ge0$.
+*Proof.* The trace form is non-degenerate on $M_4(\mathbb{C})$, and $\operatorname{Tr}(MN)=\operatorname{Tr}(NM)$ makes it symmetric and invariant under $M\mapsto QMQ^{-1}$. For $\mathfrak{u}(n,m)$ it has signature $(2pq,p^{2}+q^{2})$, which for $p=1,q=3$ is $(6,10)$; the signs are read on the diagonal blocks $\mathfrak{u}(1)\oplus\mathfrak{u}(3)$, where $M$ is anti-Hermitian and $\operatorname{Tr}(M^{2})\le0$, and on the off-diagonal block $\mathfrak{p}_{0}$, where $\operatorname{Tr}(M^{2})=2\operatorname{Tr}(Z^{*}Z)\ge0$.
 
 **Definition.** An operator $T\in\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ is **$J$-positive** when it is $J$-self-adjoint and $\langle\tilde Q,T\tilde Q\rangle_{\natural*}\ge0$ for every $\tilde Q$. The **$J$-positive cone** is
 $$

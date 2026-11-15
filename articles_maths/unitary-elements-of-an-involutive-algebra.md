@@ -88,7 +88,7 @@ and the unitary group of the exchange involution is the group of units of $B$.
 
 ### The Conjugate Transpose
 
-Let $A = M_n(\mathbb{C})$ with the $\varsigma$-semilinear conjugate transpose $X^* = \overline{X}^{\mathsf{T}}$. The unitary elements are the matrices with $X^*X = 1$, that is the unitary group $U_n$; the self-adjoint elements are the Hermitian matrices and the skew elements the skew-Hermitian ones. The conjugation $\varsigma$ of $\mathbb{C}$ is a semilinear involution of the scalars, the case of the second kind, and the form of the associated sesquilinear pairing belongs to *Hilbert Algebras*.
+Let $A = M_n(\mathbb{C})$ with the $\varsigma$-semilinear conjugate transpose $X^* = \overline{X}^{\mathsf{T}}$. The unitary elements are the matrices with $X^*X = 1$, that is the unitary group $U_n$; the self-adjoint elements are the Hermitian matrices and the skew elements the anti-Hermitian ones. The conjugation $\varsigma$ of $\mathbb{C}$ is a semilinear involution of the scalars, the case of the second kind, and the form of the associated sesquilinear pairing belongs to *Hilbert Algebras*.
 
 ## Summary
 

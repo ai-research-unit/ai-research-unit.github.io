@@ -4,7 +4,7 @@
 
 **An involution of the algebra is a map of order two that either preserves or reverses the product, and the classification of those maps is short: two of the reversing kind over either field, and a signature's worth of the preserving kind.**
 
-The article separates the two kinds, classifies the involutions of $M_n(\mathbb{C})$ and of $M_n(\mathbb{R})$ up to conjugacy, and records the split that every involution produces, the fixed part and the anti-fixed part. It counts the two parts: for the transpose the symmetric half has dimension $n(n+1)/2$ and the skew half $n(n-1)/2$, while for the symplectic involution the two dimensions are exchanged and the fixed half has dimension $n(n-1)/2$. It assumes *The Ideals, the Centre and the Simplicity of $M_n(\mathbb{C})$* for the inner automorphisms and *The Two Base Fields: $M_n(\mathbb{R})$ inside $M_n(\mathbb{C})$* for the antilinear structures. It defers the two halves themselves to *The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric* and to *The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian*, and the multiplication tables to *The Four Multiplication Tables: $SS$, $SK$, $KS$, $KK$*.
+The article separates the two kinds, classifies the involutions of $M_n(\mathbb{C})$ and of $M_n(\mathbb{R})$ up to conjugacy, and records the split that every involution produces, the fixed part and the anti-fixed part. It counts the two parts: for the transpose the symmetric half has dimension $n(n+1)/2$ and the skew half $n(n-1)/2$, while for the symplectic involution the two dimensions are exchanged and the fixed half has dimension $n(n-1)/2$. It assumes *The Ideals, the Centre and the Simplicity of $M_n(\mathbb{C})$* for the inner automorphisms and *The Two Base Fields: $M_n(\mathbb{R})$ inside $M_n(\mathbb{C})$* for the antilinear structures. It defers the two halves themselves to *The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric* and to *The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian*, and the multiplication tables to *The Four Multiplication Tables: $SS$, $SK$, $KS$, $KK$*.
 
 ## Two Kinds of Involution
 
@@ -97,7 +97,7 @@ and the values for $n=2,\dots,6$ are
 | $5$ | $15$ | $10$ | $25$ |
 | $6$ | $21$ | $15$ | $36$ |
 
-**The Hermitian and skew-Hermitian halves have equal real dimension $n^{2}$.** For $\sigma(A)=A^{*}$ the two halves are complex subspaces of real dimension $n^{2}$ each, since a Hermitian matrix is determined by $n$ real diagonal entries and $\binom{n}{2}$ complex off-diagonal ones, $n+2\binom{n}{2}=n^{2}$. So the transpose split halves $n^{2}$ into two unequal parts, while the conjugate-transpose split halves $2n^{2}$ into two equal parts.
+**The Hermitian and anti-Hermitian halves have equal real dimension $n^{2}$.** For $\sigma(A)=A^{*}$ the two halves are complex subspaces of real dimension $n^{2}$ each, since a Hermitian matrix is determined by $n$ real diagonal entries and $\binom{n}{2}$ complex off-diagonal ones, $n+2\binom{n}{2}=n^{2}$. So the transpose split halves $n^{2}$ into two unequal parts, while the conjugate-transpose split halves $2n^{2}$ into two equal parts.
 
 **Every Hermitian involution has a fixed space of real dimension $n^{2}$, whatever its signature.** For $\sigma(A)=SA^{*}S^{-1}$ with $S$ Hermitian of signature $(p,q)$, the fixed space is the set of $S$-Hermitian matrices, and the count of parameters is again $n$ real diagonal entries and $\binom{n}{2}$ complex off-diagonal ones. The signature does not change the dimension; it changes the signature of the trace form restricted to the half, which is computed in *The Trace Form and Its Signature on the Two Halves*.
 
@@ -109,7 +109,7 @@ $$
 UT_n^{\mathsf T}=LT_n,\qquad UT_n\cap UT_n^{\mathsf T}=\{\text{diagonal matrices}\}.
 $$
 
-The fixed set of the transpose inside $UT_n$ is therefore the diagonal, of dimension $n$, and the anti-fixed set is $\{0\}$: a triangular matrix that is skew-symmetric is zero, since its diagonal entries vanish and its entries above the diagonal are the negatives of entries below it, which are absent.
+The fixed set of the transpose inside $UT_n$ is therefore the diagonal, of dimension $n$, and the anti-fixed set is $\{0\}$: a triangular matrix that is antisymmetric is zero, since its diagonal entries vanish and its entries above the diagonal are the negatives of entries below it, which are absent.
 
 **The symmetric half of the algebra is the natural model of the carrier space of $UT_n$, not its product.** Both spaces have dimension $n(n+1)/2$, and the projection $\tfrac12(\mathrm{I}+{}^{\mathsf T})$ maps $M_n(\mathbb{C})$ onto $\operatorname{Sym}_n$. That projection is a linear map of the algebra and it is not of the form $A\mapsto eA$ for an element $e$, which is the precise reason $UT_n$ is not a Peirce corner of the transpose split; see *$UT_n$ as the Complement of the Antisymmetric Part (Transpose Case)*.
 
@@ -146,7 +146,7 @@ An involution is an automorphism or an anti-automorphism of order two, of the fi
 
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for involutions of the first and second kind and their classification.
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions* (AMS, 1998), for the classification of involutions on central simple algebras.
-- Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for symmetric, skew-symmetric, Hermitian and skew-Hermitian matrices.
+- Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for symmetric, antisymmetric, Hermitian and anti-Hermitian matrices.
 - [The Two Base Fields: $M_n(\mathbb{R})$ inside $M_n(\mathbb{C})$](the-two-base-fields-mnr-inside-mnc.html), for the antilinear involutions and the two real structures.
 - [The Ideals, the Centre and the Simplicity of $M_n(\mathbb{C})$](the-ideals-the-centre-and-the-simplicity-of-mnc.html), for the inner automorphisms used in the classification.
 - [The Matrix Algebra $M_n(\mathbb{C})$](the-matrix-algebra-mnc.html), for the conjugate transpose and the trace form.

@@ -265,7 +265,7 @@ that is $\phi u^{\mathsf T}$ in coordinates.
 
 **Proposition (no nonzero member of the cone is skew-adjoint).** If $T\in\mathcal{C}$ and $T^{\mathsf T}=-T$ then $T=0$.
 
-*Proof.* A skew-symmetric matrix of size two is $\lambda J_2=\lambda\begin{pmatrix}0&1\\-1&0\end{pmatrix}$, whose rank is two for $\lambda\neq0$ and which is therefore not in the cone; and $\lambda=0$ is the zero matrix.
+*Proof.* A antisymmetric matrix of size two is $\lambda J_2=\lambda\begin{pmatrix}0&1\\-1&0\end{pmatrix}$, whose rank is two for $\lambda\neq0$ and which is therefore not in the cone; and $\lambda=0$ is the zero matrix.
 
 **The self-adjoint cone is the symmetric rank-one family.** It is the set of matrices $c\,uu^{\mathsf T}$, of complex dimension two, and it is the **complex** analogue of the Hermitian cone: **the same construction with the transpose in place of the dagger, and the two families are as different as a complex line is from a circle.**
 

@@ -4,9 +4,9 @@
 
 The plain product of the complex field is associative, and the sesquilinear product is not. The failure is small and exact: the two groupings of three factors differ by the factor $\bar Q_3-Q_3$. A multiplication that fails to be associative carries a ternary product in place of the missing associativity, and the ternary product of the complex space is $\{Q_1,Q_2,Q_3\}=Q_1\bar Q_2Q_3$, the first grouping followed by the multiplication by the third slot.
 
-The article computes the associator, derives the ternary product from it, proves the two symmetries, the contractions, the Jordan triple identity, and the associator's confinement to the sesquilinear shape. It closes with the comparison to the biquaternion algebra, where the identity holds too but the associator is not confined.
+The article computes the associator, derives the ternary product from it, proves the two symmetries, the contractions, the Jordan triple identity, and the associator's confinement to the sesquilinear shape. It closes with the reason the identity holds and the associator stays confined: the commutativity of the field.
 
-The two binary products are *The Two Products of the Complex Space*; the general passage from an associator to a ternary product is *The Sesquilinear Associator and the Ternary Product*, and the axioms of the structure are *Algebraic J\*-Algebras*. The plain multiplication of the field is *Complex Algebra*. The associator of the biquaternion sesqualgebra is *The Ternary Product and the Associator of the Biquaternion Sesqualgebra*.
+The two binary products are *The Two Products of the Complex Space*; the general passage from an associator to a ternary product is *The Sesquilinear Associator and the Ternary Product*, and the axioms of the structure are *Algebraic J\*-Algebras*. The plain multiplication of the field is *Complex Algebra*. 
 
 **Interpretation.** The element is $Q_1=q_1+iq'_1$, with real coordinates, and the further elements are $Q_2,Q_3,Q_4,Q_5,Q_6$, written the same way. The conjugation is the bar, and the Hermitian conjugation is the same map, ${}^{*}=\bar{\cdot}$. The associator is written with a bracket and the ternary product with braces; a bracket is never an element.
 
@@ -52,7 +52,7 @@ $$
 
 *Proof.* Both sides equal $Q_1\bar Q_2Q_3$, the multiplication being commutative.
 
-**Remark.** This symmetry is the one the general article calls the plain symmetry, and it fails on any non-commutative algebra. On $\mathbb{B}$ it fails at $(\vec e_x,\vec e_y,e_t)$, where the two sides are $-\vec e_z$ and $\vec e_z$. Here it holds, and it holds for the reason the whole article keeps meeting: the algebra is commutative.
+**Remark.** This symmetry is the one the general article calls the plain symmetry, and it fails on a non-commutative algebra. Here it holds, and it holds for the reason the whole article keeps meeting: the algebra is commutative.
 
 ### The Hermitian Symmetry
 
@@ -108,7 +108,7 @@ The operator is therefore the conjugation followed by the multiplication by $Q_1
 
 **Remark (the structure names no binary product).** The axioms of the structure speak of one operation of three arguments and of one involution. No multiplication of two arguments occurs in them. The binary products are recovered from the triple by inserting the unit, and two different insertions give the two products of the space. The structure is therefore blind to which binary product produced it, and that blindness is the point: the two products of the complex space are two shadows of one triple.
 
-**Remark (flatness).** The triple system is one-dimensional over $\mathbb{C}$. A triple system of higher rank carries a space of tripotents and a Peirce decomposition; here the only tripotents are $0$ and $1$, and the Peirce decomposition is the trivial one, in agreement with the degenerate Peirce decomposition of the field recorded in *The Classes of Element of the Complex Algebra*.
+**Remark (flatness).** The triple system is one-dimensional over $\mathbb{C}$. A triple system of higher rank carries a space of tripotents and a Peirce decomposition; here the tripotents are $0$ and the elements of modulus one, and for every non-zero tripotent the Peirce decomposition is the trivial one, in agreement with the degenerate Peirce decomposition of the field recorded in *The Classes of Element of the Complex Algebra*.
 
 ## The Associator Confined to the Shape
 
@@ -120,13 +120,9 @@ The operator is therefore the conjugation followed by the multiplication by $Q_1
 
 **Remark (the vanishing criterion).** The associator vanishes exactly when the third slot is real, or when the first product vanishes. The first alternative is the generic one; the second is the degenerate case that every product has and that no algebra avoids. A reader who wants a clean criterion should read the vanishing set as the union of the real third slot and the degenerate pair.
 
-## The Comparison with the Biquaternion Sesqualgebra
-
-On $\mathbb{B}$ the ternary product is $\tilde Q_1\tilde Q_2^{*}\tilde Q_4$, the same middle model, and the Jordan triple identity holds there too; the biquaternion algebra is an algebraic $J^{*}$-algebra for the same reason the complex algebra is. The similarity stops at the associator. On $\mathbb{B}$ the associator is $\tilde Q_1(\tilde Q_2^{*}\tilde Q_4^{*}-\tilde Q_4\tilde Q_2^{*})$, a difference of two products of different shapes, not a scalar multiple of one product; and the outer symmetry fails, because $\mathbb{B}$ is not commutative. So the complex case is the biquaternion case with two degenerations at once: the associator collapses to the shape, and the outer symmetry comes back. Both degenerations have the same cause, and the cause is the commutativity of the field.
-
 ## Summary
 
-The sesquilinear product is not associative, and its associator is $[Q_1,Q_2,Q_3]=Q_1\bar Q_2(\bar Q_3-Q_3)$, confined to the shape of the product and vanishing exactly on the real third slot, apart from the degenerate pair. The ternary product is $\{Q_1,Q_2,Q_3\}=Q_1\bar Q_2Q_3$, $\mathbb{C}$-linear in the outer slots and conjugate-linear in the middle, symmetric in the outer slots and Hermitian-symmetric in all three; its contractions recover both binary products, so it adds no operation. It satisfies the Jordan triple identity, as the general middle-model theorem requires and as the commutativity of the field makes immediate, and $\mathbb{C}$ with this triple is an algebraic $J^{*}$-algebra whose axioms name no binary product. The quadratic representation is the conjugation followed by the multiplication by $Q_1^{2}$, which scales the Hermitian norm by $|Q_1|^{4}$. Against the biquaternion algebra the identity survives and the confinement of the associator does not.
+The sesquilinear product is not associative, and its associator is $[Q_1,Q_2,Q_3]=Q_1\bar Q_2(\bar Q_3-Q_3)$, confined to the shape of the product and vanishing exactly on the real third slot, apart from the degenerate pair. The ternary product is $\{Q_1,Q_2,Q_3\}=Q_1\bar Q_2Q_3$, $\mathbb{C}$-linear in the outer slots and conjugate-linear in the middle, symmetric in the outer slots and Hermitian-symmetric in all three; its contractions recover both binary products, so it adds no operation. It satisfies the Jordan triple identity, as the general middle-model theorem requires and as the commutativity of the field makes immediate, and $\mathbb{C}$ with this triple is an algebraic $J^{*}$-algebra whose axioms name no binary product. The quadratic representation is the conjugation followed by the multiplication by $Q_1^{2}$, which scales the Hermitian norm by $|Q_1|^{4}$. The confinement of the associator is a consequence of the commutativity of the field.
 
 ## Summary of Notation
 

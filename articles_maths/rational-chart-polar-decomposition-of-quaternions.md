@@ -339,7 +339,7 @@ The cut and the missing point are exactly as in the complex case: one unit facto
 
 ### The Cayley Transform in SU(2)
 
-Let $V=\operatorname{Mat}(\vec v)$ be the image of the pure quaternion $\vec v$ under the embedding of *Modulus–Unit Polar Decomposition of Quaternions*, §*The Embedding in M_2(C)*. Since $\vec v$ is pure, $V$ is skew-Hermitian and traceless, and
+Let $V=\operatorname{Mat}(\vec v)$ be the image of the pure quaternion $\vec v$ under the embedding of *Modulus–Unit Polar Decomposition of Quaternions*, §*The Embedding in M_2(C)*. Since $\vec v$ is pure, $V$ is anti-Hermitian and traceless, and
 
 $$
 V^{\dagger}=-V, \qquad V^2=-\langle \vec v\rangle_{\natural} I .
@@ -375,7 +375,7 @@ M(\vec v)=\frac{1}{1+\langle \vec v\rangle_{\natural}}
 \end{pmatrix}.
 $$
 
-The Cayley transform is the matrix analogue of the chart: it maps the skew-Hermitian space onto $SU(2)$ minus the matrix $-I$, and its inverse is $V=(I-M)(I+M)^{-1}$. The two-sided operator of §*The Product Formula* is the coordinate expression of the noncommutativity of $SU(2)$, not an artefact of the chart.
+The Cayley transform is the matrix analogue of the chart: it maps the anti-Hermitian space onto $SU(2)$ minus the matrix $-I$, and its inverse is $V=(I-M)(I+M)^{-1}$. The two-sided operator of §*The Product Formula* is the coordinate expression of the noncommutativity of $SU(2)$, not an artefact of the chart.
 
 ## Worked Examples
 
@@ -465,7 +465,7 @@ The chart is rational in both directions and misses the unit factor $-1$, so the
 | $\vec v=(1-u)(1+u)^{-1}$ | the inverse chart |
 | $\mathbb{H}\setminus(-\infty,0]$ | the domain of the chart decomposition |
 | $\vec v_3=(1+\vec v_1)^{-1}(\vec v_1+\vec v_2)(1+\vec v_1\vec v_2)^{-1}(1+\vec v_1)$ | the group law in the coordinate |
-| $V=\operatorname{Mat}(\vec v)$ | the skew-Hermitian matrix of $\vec v$ |
+| $V=\operatorname{Mat}(\vec v)$ | the anti-Hermitian matrix of $\vec v$ |
 | $M(\vec v)=(I-V)(I+V)^{-1}$ | the Cayley transform into $SU(2)$ |
 
 ## Further Reading

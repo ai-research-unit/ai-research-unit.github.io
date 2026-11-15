@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The preceding articles developed the general theory of the sesqualgebras: the two scalar rules and the conjugate module, the associator and the ternary product, the Hermitian and skew-Hermitian elements, the ideals and the quotients, the units, the centre and the zero divisors, the simplicity, the tensor and direct products, the real forms and the involutions. This article collects the standard examples and records, for each, the data the theory associates with it: the **datum** $(R,\varsigma)$, the involution, the product, whether the product is associative, commutative or unital, and whether the object is of **full type** — faithful over $R$, with products generating $A$ and no nonzero element annihilating $A$ on the left. It is a reference article: each example is treated in its own article, and the purpose here is to make the data comparable at a glance and to separate the examples that are genuinely sesquilinear from those that are the bilinear case in disguise.
+The preceding articles developed the general theory of the sesqualgebras: the two scalar rules and the conjugate module, the associator and the ternary product, the Hermitian and anti-Hermitian elements, the ideals and the quotients, the units, the centre and the zero divisors, the simplicity, the tensor and direct products, the real forms and the involutions. This article collects the standard examples and records, for each, the data the theory associates with it: the **datum** $(R,\varsigma)$, the involution, the product, whether the product is associative, commutative or unital, and whether the object is of **full type** — faithful over $R$, with products generating $A$ and no nonzero element annihilating $A$ on the left. It is a reference article: each example is treated in its own article, and the purpose here is to make the data comparable at a glance and to separate the examples that are genuinely sesquilinear from those that are the bilinear case in disguise.
 
 The distinction the whole tabulation is built on is the collapse of *Sesqualgebras*, §*The Collapse at the Identity*: a sesqualgebra with $\varsigma = \mathrm{id}$ **is** an ordinary algebra, and every ordinary algebra is a sesqualgebra for the trivial involution. An example is therefore genuinely sesquilinear exactly when its datum has $\varsigma \neq \mathrm{id}$, and an example read over the trivial involution is a bilinear example, however sesquilinear the product looks in coordinates. The same algebra appears twice in the list when it carries both readings, and the two entries are different objects of the category, because the involution is part of the datum. The collapse also supplies the sharp test of the list: by the theorem of that section an object of full type with $\varsigma \neq \mathrm{id}$ is **neither associative nor commutative**, so every associative entry of the table below is either a collapsed one or fails full type.
 
@@ -114,7 +114,7 @@ $$
 
 ### The Direct Products
 
-**Example.** If $A$ and $B$ are sesqualgebras over the same datum, the module $A\times B$ with the componentwise product and the componentwise involution, $(a,b)^{*} = (a^{*}, b^{*})$, is a sesqualgebra over that datum; it is associative, commutative or unital exactly when both factors are, and its Hermitian, skew-Hermitian and unitary elements are the pairs of such elements. The construction, its idempotents and its decomposition by a central idempotent are *Direct Products of Sesqualgebras*, and it is recorded here because it is the operation that produces new examples from the ones of the list: the product of two collapsed examples is collapsed, and the product of a genuinely sesquilinear example with another is genuinely sesquilinear.
+**Example.** If $A$ and $B$ are sesqualgebras over the same datum, the module $A\times B$ with the componentwise product and the componentwise involution, $(a,b)^{*} = (a^{*}, b^{*})$, is a sesqualgebra over that datum; it is associative, commutative or unital exactly when both factors are, and its Hermitian, anti-Hermitian and unitary elements are the pairs of such elements. The construction, its idempotents and its decomposition by a central idempotent are *Direct Products of Sesqualgebras*, and it is recorded here because it is the operation that produces new examples from the ones of the list: the product of two collapsed examples is collapsed, and the product of a genuinely sesquilinear example with another is genuinely sesquilinear.
 
 ## Genuinely Sesquilinear and Collapsed
 
@@ -145,7 +145,7 @@ The governing fact is the **collapse**: with $\varsigma = \mathrm{id}$ the objec
 | $R$, $\varsigma$ | the base ring and its involution |
 | $A$, $(R,\varsigma)$ | a sesqualgebra and its datum |
 | $x\star y = xy^{*}$ | the derived operation of an algebra with an involution |
-| $H(A)$, $S(A)$ | the Hermitian and the skew-Hermitian elements |
+| $H(A)$, $S(A)$ | the Hermitian and the anti-Hermitian elements |
 | full type | faithful over $R$, generating products, no nonzero left annihilator |
 | $\mathbb{C},\mathbb{C}_{\mathrm{spl}},\mathbb{C}_{\mathrm{dln}},\mathbb{H},\mathbb{B}$ | the complex, split complex, dual, quaternion and biquaternion algebras |
 | ${}^{\natural}$, ${}^{*}$ | the quaternion conjugation and the biquaternion star |

@@ -4,7 +4,7 @@
 
 **The two halves over the real field are a three-dimensional and a one-dimensional vector space, both contractible; the two halves over the complex field are two copies of a four-dimensional space; and the only nontrivial topology in the halves comes from the sign of the determinant, which cuts the symmetric half into three pieces and the Hermitian half into two.**
 
-The article computes the dimensions and the contractibility of the four halves, studies the quadratic form given by the determinant on the symmetric and the Hermitian halves, describes the positive semidefinite cone and its boundary, and lists the strata of the halves by rank. It assumes *The Topology of $M_2(\mathbb{C})$*, *The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$* and *The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian at $n=2$*.
+The article computes the dimensions and the contractibility of the four halves, studies the quadratic form given by the determinant on the symmetric and the Hermitian halves, describes the positive semidefinite cone and its boundary, and lists the strata of the halves by rank. It assumes *The Topology of $M_2(\mathbb{C})$*, *The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$* and *The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian at $n=2$*.
 
 It follows the biquaternion article *Subspaces and Decompositions of the Biquaternion Algebra* for the same subspaces in the eight real coordinates.
 
@@ -20,9 +20,9 @@ It follows the biquaternion article *Subspaces and Decompositions of the Biquate
 
 **Proof.** Contracting along the rays to the origin gives the homotopy.
 
-**Corollary.** The skew-Hermitian half is the image of the Hermitian half under multiplication by $i$, and it is a real subspace but not a complex one.
+**Corollary.** The anti-Hermitian half is the image of the Hermitian half under multiplication by $i$, and it is a real subspace but not a complex one.
 
-**Proof.** Multiplying a Hermitian matrix by $i$ gives a skew-Hermitian one, and the product of a complex scalar with a skew-Hermitian matrix is Hermitian again only for the real scalars.
+**Proof.** Multiplying a Hermitian matrix by $i$ gives a anti-Hermitian one, and the product of a complex scalar with a anti-Hermitian matrix is Hermitian again only for the real scalars.
 
 ## The Trace Form on the Halves
 

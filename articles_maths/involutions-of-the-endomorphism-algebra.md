@@ -56,7 +56,7 @@ where the bar applies $\varsigma$ to each entry and the transpose is the matrix 
 
 **Corollary (the involution is determined by $\Phi$).** Two non-degenerate reflexive pairings give conjugate involutions exactly when their Gram matrices are congruent, $\Phi' = C^{\mathsf{T}}\Phi\overline{C}$ for an invertible $C$; the involution is therefore a function of the congruence class of the pairing.
 
-**Remark (the classification).** Over a field, the involutions of the first kind of the matrix algebra $M_n(F)$ are exactly the maps $A \mapsto \Phi^{-1}A^{\mathsf{T}}\Phi$ with $\Phi$ the Gram matrix of a non-degenerate symmetric or antisymmetric pairing, in the two families **orthogonal** and **symplectic**; the involutions of the second kind arise from sesquilinear pairings and are classified over a field with an involution by the hermitian and the skew-hermitian families. The classification is standard and is *Involutive Rings* and *Central Simple Algebras and the Brauer Group*.
+**Remark (the classification).** Over a field, the involutions of the first kind of the matrix algebra $M_n(F)$ are exactly the maps $A \mapsto \Phi^{-1}A^{\mathsf{T}}\Phi$ with $\Phi$ the Gram matrix of a non-degenerate symmetric or antisymmetric pairing, in the two families **orthogonal** and **symplectic**; the involutions of the second kind arise from sesquilinear pairings and are classified over a field with an involution by the hermitian and the anti-Hermitian families. The classification is standard and is *Involutive Rings* and *Central Simple Algebras and the Brauer Group*.
 
 ## The Unitary Elements
 

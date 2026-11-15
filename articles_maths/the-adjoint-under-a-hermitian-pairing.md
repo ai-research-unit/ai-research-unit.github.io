@@ -57,7 +57,7 @@ so the adjoint is a **conjugate-linear anti-automorphism of order two** of the a
 
 ### The Self-Adjoint and the Skew-Adjoint Elements
 
-**Definition.** An operator $T$ is **self-adjoint** or **Hermitian** when $T^{\dagger} = T$, **skew-adjoint** or **skew-Hermitian** when $T^{\dagger} = -T$, and **unitary** when $T^{\dagger}T = T T^{\dagger} = \mathrm{id}$; the sets of the Hermitian and the skew-Hermitian operators are written $\operatorname{Herm}(V,h)$ and $\operatorname{Skew}(V,h)$.
+**Definition.** An operator $T$ is **self-adjoint** or **Hermitian** when $T^{\dagger} = T$, **skew-adjoint** or **anti-Hermitian** when $T^{\dagger} = -T$, and **unitary** when $T^{\dagger}T = T T^{\dagger} = \mathrm{id}$; the sets of the Hermitian and the anti-Hermitian operators are written $\operatorname{Herm}(V,h)$ and $\operatorname{Skew}(V,h)$.
 
 **Theorem.** When $2$ is invertible in $K$ the algebra of the operators decomposes as the direct sum
 
@@ -65,11 +65,11 @@ $$
 \boxed{\;\operatorname{End}_K(V) = \operatorname{Herm}(V,h) \oplus \operatorname{Skew}(V,h), \qquad T = \tfrac12(T + T^{\dagger}) + \tfrac12(T - T^{\dagger})\;} ,
 $$
 
-the Hermitian part and the skew-Hermitian part; the Hermitian operators form a $K_0$-vector space of the dimension $n^2$ over $K_0$ in the quadratic case, and the skew-Hermitian operators form the complement; the trace of a self-adjoint operator lies in the fixed field $K_0$, and the trace of a skew-adjoint operator lies in the trace-zero part of $K$ over $K_0$.
+the Hermitian part and the anti-Hermitian part; the Hermitian operators form a $K_0$-vector space of the dimension $n^2$ over $K_0$ in the quadratic case, and the anti-Hermitian operators form the complement; the trace of a self-adjoint operator lies in the fixed field $K_0$, and the trace of a skew-adjoint operator lies in the trace-zero part of $K$ over $K_0$.
 
 **Proof.** The two summands are the eigenspaces of the adjoint involution for the eigenvalues $+1$ and $-1$, and an involution of order two over a field in which $2$ is invertible decomposes the algebra as the direct sum of its fixed parts; the dimensions are the number of the independent entries of a Hermitian matrix and its complement. The statement is the elementary decomposition of an algebra with involution, in *Hilbert Algebras* and *Involutive Algebras*.
 
-**Proposition.** The Hermitian operators of a Hermitian space over the real or the complex field have real eigenvalues, and the skew-Hermitian operators have purely imaginary eigenvalues; the Hermitian operators are diagonalisable in an orthonormal basis, and the eigenvalues of a Hermitian form are the eigenvalues of its matrix with respect to the standard pairing. The spectral theory is *Self-Adjoint Operators and the Spectral Theorem*.
+**Proposition.** The Hermitian operators of a Hermitian space over the real or the complex field have real eigenvalues, and the anti-Hermitian operators have purely imaginary eigenvalues; the Hermitian operators are diagonalisable in an orthonormal basis, and the eigenvalues of a Hermitian form are the eigenvalues of its matrix with respect to the standard pairing. The spectral theory is *Self-Adjoint Operators and the Spectral Theorem*.
 
 **Proof.** For a self-adjoint $T$ and an eigenvector $x$ with eigenvalue $\lambda$ the identity $\lambda h(x,x) = h(Tx,x) = \overline{h(x,Tx)} = \bar\lambda h(x,x)$ gives $\lambda = \bar\lambda$, so the eigenvalue lies in the fixed field; the diagonalisation is the spectral theorem over $\mathbb{R}$ and $\mathbb{C}$. The statement is in *Self-Adjoint Operators and the Spectral Theorem*.
 
@@ -107,7 +107,7 @@ the two-sided operator of the conjugate transpose between the matrix $H$ of the 
 
 ## Examples
 
-**Example (the matrix algebra and the standard pairing).** Let $V = K^n$ and $h$ the standard pairing, $H = I$; the adjoint is the conjugate transpose $T^{\dagger} = T^{*}$, the self-adjoint operators are the Hermitian matrices, the skew-adjoint are the skew-Hermitian matrices, and the unitary group is the classical unitary group $\mathrm{U}(n)$ over $\mathbb{C}$ or the orthogonal group $O(n)$ over $\mathbb{R}$ with the trivial involution.
+**Example (the matrix algebra and the standard pairing).** Let $V = K^n$ and $h$ the standard pairing, $H = I$; the adjoint is the conjugate transpose $T^{\dagger} = T^{*}$, the self-adjoint operators are the Hermitian matrices, the skew-adjoint are the anti-Hermitian matrices, and the unitary group is the classical unitary group $\mathrm{U}(n)$ over $\mathbb{C}$ or the orthogonal group $O(n)$ over $\mathbb{R}$ with the trivial involution.
 
 **Example (the hyperbolic pairing).** Let $\dim V = 2$ and let $h$ have the matrix of the hyperbolic plane; then the adjoint of $T = \begin{pmatrix} a & b \\ c & d\end{pmatrix}$ is $T^{\dagger} = H^{-1}T^{*}H$ with the sign on the off-diagonal entries reversed, and the skew-adjoint operators of the hyperbolic plane form a real Lie algebra isomorphic to $\mathfrak{su}(1,1)$, which is isomorphic to $\mathfrak{sl}_2(\mathbb{R})$. The hyperbolic pairing is the local model of the unitary group of signature $(1,1)$.
 

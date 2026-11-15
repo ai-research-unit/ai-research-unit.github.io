@@ -53,7 +53,7 @@ $$
 \boxed{\;2\,g(\nabla_XY, Z) = X\,g(Y, Z) + Y\,g(Z, X) - Z\,g(X, Y) - g(X, [Y, Z]) + g(Y, [Z, X]) + g(Z, [X, Y])\;}.
 $$
 
-**Proof.** The right-hand side is manifestly $\mathbb{R}$-linear in $X$ and, by the Leibniz rule for $X, Y, Z$ acting on functions, it is $C^\infty(M)$-linear in each of $X, Y, Z$. It therefore defines a tensor, and since $g$ is nondegenerate it determines the vector field $\nabla_XY$ uniquely. The two required properties follow by substituting into the formula and cancelling terms: metricity uses the first three terms and the skew symmetry of the bracket, torsion-freeness uses the last three and the identity $[X, Y] = -[Y, X]$.
+**Proof.** The right-hand side is manifestly $\mathbb{R}$-linear in $X$ and, by the Leibniz rule for $X, Y, Z$ acting on functions, it is $C^\infty(M)$-linear in each of $X, Y, Z$. It therefore defines a tensor, and since $g$ is nondegenerate it determines the vector field $\nabla_XY$ uniquely. The two required properties follow by substituting into the formula and cancelling terms: metricity uses the first three terms and the antisymmetry of the bracket, torsion-freeness uses the last three and the identity $[X, Y] = -[Y, X]$.
 
 **Definition.** In a chart the Christoffel symbols are
 

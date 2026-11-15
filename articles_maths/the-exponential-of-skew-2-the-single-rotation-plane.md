@@ -86,25 +86,25 @@ $$
 
 **Proof.** The quadric is parametrised by $t\mapsto(\cos t,\sin t)$, and the parametrisation factors through the period lattice, giving the cylinder $\mathbb{C}/2\pi\mathbb{Z}$.
 
-## The Comparison with the Skew-Hermitian Half
+## The Comparison with the Anti-Hermitian Half
 
-**Proposition.** The real antisymmetric line is contained in the skew-Hermitian half, and the exponential of the larger skew-Hermitian half is a larger group, of real dimension four against one.
+**Proposition.** The real antisymmetric line is contained in the anti-Hermitian half, and the exponential of the larger anti-Hermitian half is a larger group, of real dimension four against one.
 
-**Proof.** A real antisymmetric matrix is skew-Hermitian, and the skew-Hermitian half has real dimension four while the antisymmetric line has dimension one.
+**Proof.** A real antisymmetric matrix is anti-Hermitian, and the anti-Hermitian half has real dimension four while the antisymmetric line has dimension one.
 
-**Corollary.** The exponential of the skew-Hermitian half is the unitary group $\mathrm{U}(2)$, and the exponential of the antisymmetric line is the circle of the rotations in one real plane.
+**Corollary.** The exponential of the anti-Hermitian half is the unitary group $\mathrm{U}(2)$, and the exponential of the antisymmetric line is the circle of the rotations in one real plane.
 
-**Proof.** Every unitary matrix has a skew-Hermitian logarithm by the surjectivity of the exponential, and the antisymmetric line is the real slice whose exponential is the circle.
+**Proof.** Every unitary matrix has a anti-Hermitian logarithm by the surjectivity of the exponential, and the antisymmetric line is the real slice whose exponential is the circle.
 
-**Corollary.** The single rotation plane of the real picture becomes a two-parameter family of phases in the complex picture, because the skew-Hermitian half has the extra imaginary scalars and the third Pauli direction.
+**Corollary.** The single rotation plane of the real picture becomes a two-parameter family of phases in the complex picture, because the anti-Hermitian half has the extra imaginary scalars and the third Pauli direction.
 
-**Proof.** The skew-Hermitian half splits as $\mathfrak{su}(2)\oplus\mathbb{R}iI$, and the exponential of the centre is the circle of scalar phases, which is a second circle independent of the rotation.
+**Proof.** The anti-Hermitian half splits as $\mathfrak{su}(2)\oplus\mathbb{R}iI$, and the exponential of the centre is the circle of scalar phases, which is a second circle independent of the rotation.
 
 ## Summary
 
 The antisymmetric matrices at order two form a single line spanned by $J$, whose square is $-I$. The exponential of $tJ$ is the rotation by the angle $t$, with the Euler formula $e^{tJ}=(\cos t)I+(\sin t)J$, so the exponential of the line is periodic with period $2\pi J$ and its kernel is $2\pi\mathbb{Z}J$.
 
-The image of the real line is the circle $\mathrm{SO}(2)$, which is the whole rotation group at order two; the image of the complex line is the complex quadric $X^{\mathsf T}X=I$ with determinant one, a cylinder. The skew-Hermitian half contains the antisymmetric line and has four real dimensions, and its exponential is the whole unitary group.
+The image of the real line is the circle $\mathrm{SO}(2)$, which is the whole rotation group at order two; the image of the complex line is the complex quadric $X^{\mathsf T}X=I$ with determinant one, a cylinder. The anti-Hermitian half contains the antisymmetric line and has four real dimensions, and its exponential is the whole unitary group.
 
 ## Summary of Notation
 
@@ -118,8 +118,8 @@ The image of the real line is the circle $\mathrm{SO}(2)$, which is the whole ro
 
 ## Further Reading
 
-- Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge University Press, 2013), for the exponential of a skew-symmetric matrix.
+- Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge University Press, 2013), for the exponential of a antisymmetric matrix.
 - Jean Dieudonné, *La géométrie des groupes classiques* (Springer, 1971), for the classical groups at low order and their exponentials.
 - [The Lie Algebra $\operatorname{Skew}_2$: One Dimension, Hence Abelian](the-lie-algebra-skew-2-one-dimension-hence-abelian.html), for the bracket that vanishes on the line.
 - [The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$](the-two-halves-over-r-symmetric-and-antisymmetric-at-n-2.html), for the antisymmetric line as one of the two halves.
-- [The Spectral Theorem: the Skew-Hermitian Case and the Two Imaginary Eigenvalues](the-spectral-theorem-the-skew-hermitian-case-and-the-two-imaginary-eigenvalues.html), for the complex half that contains the real line.
+- [The Spectral Theorem: the Anti-Hermitian Case and the Two Imaginary Eigenvalues](the-spectral-theorem-the-skew-hermitian-case-and-the-two-imaginary-eigenvalues.html), for the complex half that contains the real line.

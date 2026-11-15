@@ -8,9 +8,9 @@ $$
 S\star T=S\,T^{*} ,
 $$
 
-which is $\mathbb{C}$-linear in the first slot and conjugate-linear in the second. The elements selected by the involution are the **Hermitian** matrices $X^{*}=X$, the **skew-Hermitian** ones $X^{*}=-X$, and the **unitary** ones $U^{*}=U^{-1}$, and the trace functional $\tau(X)=\operatorname{tr}(X)$ is central and compatible with the involution, $\operatorname{tr}(X^{*})=\varsigma\bigl(\operatorname{tr}(X)\bigr)$, so that the pairing $\varphi(X,Y)=\operatorname{tr}(XY^{*})$ is the standard Hermitian form. The present article collects this structure, works the case $n=2$ on the Pauli basis, and identifies the resulting two-product structure with that of the biquaternion algebra, of which $M_{2}(\mathbb{C})$ is a matrix model.
+which is $\mathbb{C}$-linear in the first slot and conjugate-linear in the second. The elements selected by the involution are the **Hermitian** matrices $X^{*}=X$, the **anti-Hermitian** ones $X^{*}=-X$, and the **unitary** ones $U^{*}=U^{-1}$, and the trace functional $\tau(X)=\operatorname{tr}(X)$ is central and compatible with the involution, $\operatorname{tr}(X^{*})=\varsigma\bigl(\operatorname{tr}(X)\bigr)$, so that the pairing $\varphi(X,Y)=\operatorname{tr}(XY^{*})$ is the standard Hermitian form. The present article collects this structure, works the case $n=2$ on the Pauli basis, and identifies the resulting two-product structure with that of the biquaternion algebra, of which $M_{2}(\mathbb{C})$ is a matrix model.
 
-The subject belongs to the applications of the sesqualgebras, in the group *Applications*, and it is the matrix instance that the whole operator theory of the category is computed on. The definition of the sesqualgebra, its involution, its units and its collapse at the identity are *Sesqualgebras*; the derived product, its parities and its one-sided reads are *The Sesquilinear Product*; the pairing, its two slots, its perfection and the trace $\tau$ that defines it are *The Sesquilinear Adjoint Operator*; the endomorphism algebra of a module with a form, of which this is the case $M=\mathbb{C}^{n}$, is *The Sesquilinear Structure of the Endomorphism Algebra*; the Hermitian elements and the positive ones are *Hermitian and Skew-Hermitian Elements* and *Hermitian Squares and the Algebraic Positive Cone*; and the four general products of the biquaternion algebra, compared with the two here, are *The Four General Products and Their Relations over the Biquaternion Algebra*.
+The subject belongs to the applications of the sesqualgebras, in the group *Applications*, and it is the matrix instance that the whole operator theory of the category is computed on. The definition of the sesqualgebra, its involution, its units and its collapse at the identity are *Sesqualgebras*; the derived product, its parities and its one-sided reads are *The Sesquilinear Product*; the pairing, its two slots, its perfection and the trace $\tau$ that defines it are *The Sesquilinear Adjoint Operator*; the endomorphism algebra of a module with a form, of which this is the case $M=\mathbb{C}^{n}$, is *The Sesquilinear Structure of the Endomorphism Algebra*; the Hermitian elements and the positive ones are *Hermitian and Anti-Hermitian Elements* and *Hermitian Squares and the Algebraic Positive Cone*; and the four general products of the biquaternion algebra, compared with the two here, are *The Four General Products and Their Relations over the Biquaternion Algebra*.
 
 Throughout, $n\ge 1$, $M_{n}(\mathbb{C})$ is the algebra of the complex square matrices of order $n$ with the ordinary product, the unit $I$, and the centre the scalar matrices $\mathbb{C}I$. The **involution** is the conjugate transpose, $X^{*}=\overline{X}^{T}$, and $\varsigma$ is the complex conjugation. The trace is $\tau(X)=\operatorname{tr}(X)=\sum_{i}X_{ii}$, the standard matrix units are $E_{ij}$, and $M_{n}(\mathbb{C})$ is a sesqualgebra over $\mathbb{C}$ with the base involution $\varsigma$ in the sense of *Sesqualgebras*.
 
@@ -78,21 +78,21 @@ and it is the derived product of the sesqualgebra $M_{n}(\mathbb{C})$ with its c
 
 **Remark (the sesquilinear product is not associative).** The product $\star$ is not associative: $(S\star T)\star U=ST^{*}U^{*}$ while $S\star(T\star U)=S\,U\,T^{*}$, and the two agree exactly when $T^{*}U^{*}=UT^{*}$. This is the matrix form of the general fact that the derived product of a sesqualgebra is the product of the algebra with the involution and not the product of the algebra, so the associativity of $M_{n}(\mathbb{C})$ is the associativity of $ST$ and not of $S\star T$.
 
-## Hermitian, Skew-Hermitian and Unitary Matrices
+## Hermitian, Anti-Hermitian and Unitary Matrices
 
-### Hermitian and Skew-Hermitian
+### Hermitian and Anti-Hermitian
 
-**Definition.** A matrix $X$ is **Hermitian** when $X^{*}=X$ and **skew-Hermitian** when $X^{*}=-X$. Both classes are closed under real linear combinations, and each is a real form of the complex space $M_{n}(\mathbb{C})$.
+**Definition.** A matrix $X$ is **Hermitian** when $X^{*}=X$ and **anti-Hermitian** when $X^{*}=-X$. Both classes are closed under real linear combinations, and each is a real form of the complex space $M_{n}(\mathbb{C})$.
 
-**Theorem (the decomposition).** Every matrix is the sum of a Hermitian and a skew-Hermitian matrix, in one way,
+**Theorem (the decomposition).** Every matrix is the sum of a Hermitian and a anti-Hermitian matrix, in one way,
 
 $$
 X=\tfrac{1}{2}(X+X^{*})+\tfrac{1}{2}(X-X^{*}) ,
 $$
 
-and the two parts are Hermitian and skew-Hermitian respectively.
+and the two parts are Hermitian and anti-Hermitian respectively.
 
-**Proof.** The two parts are $\tfrac12(X+X^{*})$ and $\tfrac12(X-X^{*})$, whose adjoints are themselves and their negatives because $(X^{*})^{*}=X$. If $X=H+K$ with $H$ Hermitian and $K$ skew-Hermitian then $X^{*}=H-K$, so $H=\tfrac12(X+X^{*})$ and $K=\tfrac12(X-X^{*})$, which is uniqueness.
+**Proof.** The two parts are $\tfrac12(X+X^{*})$ and $\tfrac12(X-X^{*})$, whose adjoints are themselves and their negatives because $(X^{*})^{*}=X$. If $X=H+K$ with $H$ Hermitian and $K$ anti-Hermitian then $X^{*}=H-K$, so $H=\tfrac12(X+X^{*})$ and $K=\tfrac12(X-X^{*})$, which is uniqueness.
 
 **Remark (the real form of the Hermitian matrices).** A matrix is Hermitian exactly when its diagonal entries are real and its entries satisfy $X_{ij}=\overline{X_{ji}}$; the conjugated entries off the diagonal are therefore free, and the Hermitian matrices are a real form of $M_{n}(\mathbb{C})$ spanned by $n$ real diagonal entries and $\tfrac{n(n-1)}{2}$ complex off-diagonal entries, which is $n+n(n-1)=n^{2}$ real parameters.
 
@@ -104,7 +104,7 @@ and the two parts are Hermitian and skew-Hermitian respectively.
 
 **Proof.** If $U,V$ are unitary then $(UV)^{*}UV=V^{*}U^{*}UV=V^{*}V=I$, so the product is unitary; $I$ is unitary; and $U^{*}=U^{-1}$ is unitary because $(U^{*})^{*}=U$. For the determinant, $\det(U^{*})=\overline{\det U}$ and $\det(U^{*}U)=\det I=1$, so $|\det U|^{2}=1$.
 
-**Remark (comparison with the sesqualgebra).** The group is $\mathrm{U}(n)$, and it is the group $\mathrm{U}(A)$ of the unitary elements of the sesqualgebra $M_{n}(\mathbb{C})$; the skew-Hermitian matrices are its Lie algebra in the sense of *The Unitary Lie Algebra*, and the Hermitian matrices are the $i$-multiple of the skew-Hermitian ones, which is the matrix form of the relation between the two classes.
+**Remark (comparison with the sesqualgebra).** The group is $\mathrm{U}(n)$, and it is the group $\mathrm{U}(A)$ of the unitary elements of the sesqualgebra $M_{n}(\mathbb{C})$; the anti-Hermitian matrices are its Lie algebra in the sense of *The Unitary Lie Algebra*, and the Hermitian matrices are the $i$-multiple of the anti-Hermitian ones, which is the matrix form of the relation between the two classes.
 
 ## The Case $n=2$ and the Biquaternions
 
@@ -156,19 +156,19 @@ under which the relations $i^{2}=j^{2}=k^{2}=-1$, $ij=k$, $jk=i$, $ki=j$ of the 
 
 **Proposition (the involution and the two products).** Under the isomorphism the conjugate transpose of $M_{2}(\mathbb{C})$ is the quaternionic conjugation extended to $\mathbb{B}$, sending $i,j,k$ to their negatives; and the two products correspond, the ordinary product $ST$ to the general plain bilinear product of $\mathbb{B}$ and the sesquilinear product $S\star T=ST^{*}$ to the general plain sesquilinear product $\tilde Q_1\tilde Q_2^{*}$.
 
-**Proof.** The conjugate transpose of the image of a quaternion $a+bi+cj+dk$ is the image of $a-bi-cj-dk$: the images of $i,j,k$ are the matrices $i\sigma_{3}$, $i\sigma_{2}$, $i\sigma_{1}$, and the conjugate transpose of $i\sigma_{1}$ is $-i\sigma_{1}$ because $\sigma_{1}$ is real symmetric while of $i\sigma_{2}$ and $i\sigma_{3}$ is the negative because those are skew-Hermitian; so the involution on $M_{2}(\mathbb{C})$ restricts to the quaternionic conjugation and extends to it on the complexification. The two product statements are then the definition of the two products on each side.
+**Proof.** The conjugate transpose of the image of a quaternion $a+bi+cj+dk$ is the image of $a-bi-cj-dk$: the images of $i,j,k$ are the matrices $i\sigma_{3}$, $i\sigma_{2}$, $i\sigma_{1}$, and the conjugate transpose of $i\sigma_{1}$ is $-i\sigma_{1}$ because $\sigma_{1}$ is real symmetric while of $i\sigma_{2}$ and $i\sigma_{3}$ is the negative because those are anti-Hermitian; so the involution on $M_{2}(\mathbb{C})$ restricts to the quaternionic conjugation and extends to it on the complexification. The two product statements are then the definition of the two products on each side.
 
 **Remark (the place of the four general products).** The biquaternion algebra carries four general products, and exactly two of them are $\mathbb{C}$-bilinear and exactly two are sesquilinear for the base conjugation, the split recorded in *The Four General Products and Their Relations over the Biquaternion Algebra*; the ordinary and the sesquilinear product of this article are the matrix reads of the general plain bilinear and the general plain sesquilinear members of that family, which is why $M_{2}(\mathbb{C})$ is the model in which the biquaternion structure is computed.
 
 ## The General Case
 
-For general $n$ the structure is the same and the tabulation is shorter. The Hermitian matrices $X^{*}=X$ form a real form of $M_{n}(\mathbb{C})$ with $n^{2}$ real parameters, on which the pairing $\varphi(X,Y)=\operatorname{tr}(XY^{*})$ is the standard Hermitian form, and the skew-Hermitian matrices are its $i$-multiple. The unitary matrices form the group $\mathrm{U}(n)$, the determinant has modulus one, and the matrices of determinant one form the subgroup $SU(n)$, which in the case $n=2$ is the unit quaternions read through the matrix model above. The endomorphism algebra of the biquaternion algebra as a complex space is the case $n=4$, $\operatorname{End}_{\mathbb{C}}(\mathbb{B})\cong M_{4}(\mathbb{C})$, so the case $n=4$ of this article is the sesquilinear structure of the biquaternion algebra read on its coordinates, and the case $n=2$ is the biquaternion algebra itself.
+For general $n$ the structure is the same and the tabulation is shorter. The Hermitian matrices $X^{*}=X$ form a real form of $M_{n}(\mathbb{C})$ with $n^{2}$ real parameters, on which the pairing $\varphi(X,Y)=\operatorname{tr}(XY^{*})$ is the standard Hermitian form, and the anti-Hermitian matrices are its $i$-multiple. The unitary matrices form the group $\mathrm{U}(n)$, the determinant has modulus one, and the matrices of determinant one form the subgroup $SU(n)$, which in the case $n=2$ is the unit quaternions read through the matrix model above. The endomorphism algebra of the biquaternion algebra as a complex space is the case $n=4$, $\operatorname{End}_{\mathbb{C}}(\mathbb{B})\cong M_{4}(\mathbb{C})$, so the case $n=4$ of this article is the sesquilinear structure of the biquaternion algebra read on its coordinates, and the case $n=2$ is the biquaternion algebra itself.
 
 ## Summary
 
 The complex matrices $M_{n}(\mathbb{C})$ with the conjugate transpose form the standard sesqualgebra over $\mathbb{C}$: the involution is $\varsigma$-semilinear of order two, $(XY)^{*}=Y^{*}X^{*}$ and $(\lambda X)^{*}=\overline{\lambda}\,X^{*}$; the trace is central and compatible, $\operatorname{tr}(X^{*})=\varsigma(\operatorname{tr}X)$; and the pairing $\varphi(X,Y)=\operatorname{tr}(XY^{*})=\sum_{i,j}X_{ij}\overline{Y_{ij}}$ is the standard Hermitian form, perfect on the $n^{2}$ coordinates.
 
-The structure carries two products: the ordinary product $ST$, which is $\mathbb{C}$-bilinear and associative, and the sesquilinear product $S\star T=ST^{*}$, the derived product of the sesqualgebra, which is $\mathbb{C}$-linear in the first slot and conjugate-linear in the second, has $I$ as a right unit, and is not associative. The elements singled out by the involution are the Hermitian and skew-Hermitian matrices, one the $i$-multiple of the other and together a decomposition $X=\tfrac12(X+X^{*})+\tfrac12(X-X^{*})$ of every matrix, and the unitary matrices, a group with the determinant of modulus one.
+The structure carries two products: the ordinary product $ST$, which is $\mathbb{C}$-bilinear and associative, and the sesquilinear product $S\star T=ST^{*}$, the derived product of the sesqualgebra, which is $\mathbb{C}$-linear in the first slot and conjugate-linear in the second, has $I$ as a right unit, and is not associative. The elements singled out by the involution are the Hermitian and anti-Hermitian matrices, one the $i$-multiple of the other and together a decomposition $X=\tfrac12(X+X^{*})+\tfrac12(X-X^{*})$ of every matrix, and the unitary matrices, a group with the determinant of modulus one.
 
 The case $n=2$ is worked on the Pauli basis $\sigma_{1},\sigma_{2},\sigma_{3}$: the Hermitian matrices are $aI+b\sigma_{1}+c\sigma_{2}+d\sigma_{3}$ with real parameters, the unimodular unitary matrices are the unit quaternions, and the isomorphism $\mathbb{B}=\mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}\cong M_{2}(\mathbb{C})$ by $i\mapsto i\sigma_{3}$, $j\mapsto i\sigma_{2}$, $k\mapsto i\sigma_{1}$ carries the conjugate transpose to the quaternionic conjugation and the two products to two of the four general products. For general $n$ the Hermitian form has $n^{2}$ real parameters, the unitary matrices are $\mathrm{U}(n)$, and the case $n=4$ is $\operatorname{End}_{\mathbb{C}}(\mathbb{B})\cong M_{4}(\mathbb{C})$.
 
@@ -181,7 +181,7 @@ The case $n=2$ is worked on the Pauli basis $\sigma_{1},\sigma_{2},\sigma_{3}$: 
 | $\operatorname{tr}(X)=\sum_{i}X_{ii}$ | the trace, central and compatible |
 | $\varphi(X,Y)=\operatorname{tr}(XY^{*})$ | the pairing, the standard Hermitian form |
 | $S\star T=ST^{*}$ | the sesquilinear product, the derived product |
-| $X^{*}=X$ / $X^{*}=-X$ | Hermitian / skew-Hermitian matrices |
+| $X^{*}=X$ / $X^{*}=-X$ | Hermitian / anti-Hermitian matrices |
 | $X=\tfrac12(X+X^{*})+\tfrac12(X-X^{*})$ | the Hermitian–skew decomposition |
 | $U^{*}=U^{-1}$, $\lvert\det U\rvert=1$ | unitary matrices, the group $\mathrm{U}(n)$ |
 | $\sigma_{1},\sigma_{2},\sigma_{3}$ | the Pauli matrices |
@@ -190,8 +190,8 @@ The case $n=2$ is worked on the Pauli basis $\sigma_{1},\sigma_{2},\sigma_{3}$: 
 
 ## Further Reading
 
-- Roger A. Horn and Charles R. Johnson, *Matrix Analysis*, 2nd ed. (Cambridge University Press, 2013), for the Hermitian, skew-Hermitian and unitary matrices, the Schur and spectral theorems and the unitary group.
+- Roger A. Horn and Charles R. Johnson, *Matrix Analysis*, 2nd ed. (Cambridge University Press, 2013), for the Hermitian, anti-Hermitian and unitary matrices, the Schur and spectral theorems and the unitary group.
 - F. R. Gantmacher, *The Theory of Matrices*, vol. 1 (Chelsea, 1959), for the trace, the matrix units and the canonical forms of the complex matrices.
 - Kenneth Hoffman and Ray Kunze, *Linear Algebra*, 2nd ed. (Prentice-Hall, 1971), for the sesquilinear and Hermitian forms, the adjoint of a linear transformation and the unitary group of a form.
 - Pertti Lounesto, *Clifford Algebras and Spinors*, 2nd ed. (Cambridge University Press, 2001), for the quaternions, the Pauli matrices and the identification of the quaternion algebra with the complex matrices of order two.
-- The companion articles of this series: [Sesqualgebras](sesqualgebras.html), [The Sesquilinear Product](the-sesquilinear-product.html), [The Sesquilinear Structure of the Endomorphism Algebra](the-sesquilinear-structure-of-the-endomorphism-algebra.html), [Hermitian and Skew-Hermitian Elements](hermitian-and-skew-hermitian-elements.html), [Units and the Unitary Elements](units-and-the-unitary-elements.html), [The Unitary Lie Algebra](the-unitary-lie-algebra.html), [The Four General Products and Their Relations over the Biquaternion Algebra](the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html) and [The Four General Products and Their Relations over the Biquaternion Algebra](the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html).
+- The companion articles of this series: [Sesqualgebras](sesqualgebras.html), [The Sesquilinear Product](the-sesquilinear-product.html), [The Sesquilinear Structure of the Endomorphism Algebra](the-sesquilinear-structure-of-the-endomorphism-algebra.html), [Hermitian and Anti-Hermitian Elements](hermitian-and-skew-hermitian-elements.html), [Units and the Unitary Elements](units-and-the-unitary-elements.html), [The Unitary Lie Algebra](the-unitary-lie-algebra.html), [The Four General Products and Their Relations over the Biquaternion Algebra](the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html) and [The Four General Products and Their Relations over the Biquaternion Algebra](the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html).

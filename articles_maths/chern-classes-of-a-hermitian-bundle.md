@@ -2,9 +2,9 @@
 
 ## Introduction
 
-The **Chern classes** of a complex vector bundle are the characteristic classes that measure its twisting; for a bundle with a **Hermitian metric** they are represented by explicit closed forms in the curvature of the Chern connection. The construction is the **Chern–Weil** one — an invariant polynomial evaluated on the curvature — and the Hermitian metric enters by making the curvature skew-Hermitian, so that the forms are real. The classes themselves are topological, independent of the metric and of the connection; the Hermitian metric produces a preferred connection in each cohomology class and hence a preferred representative.
+The **Chern classes** of a complex vector bundle are the characteristic classes that measure its twisting; for a bundle with a **Hermitian metric** they are represented by explicit closed forms in the curvature of the Chern connection. The construction is the **Chern–Weil** one — an invariant polynomial evaluated on the curvature — and the Hermitian metric enters by making the curvature anti-Hermitian, so that the forms are real. The classes themselves are topological, independent of the metric and of the connection; the Hermitian metric produces a preferred connection in each cohomology class and hence a preferred representative.
 
-The general Chern–Weil homomorphism, the closedness of the invariant forms from the Bianchi identity and their independence of the connection are *Fibre Bundles, Connections and Curvature*; the topological Chern classes, their integrality, the splitting principle and the characteristic numbers are *Characteristic Classes*, written in this category. This article owns the **Hermitian** refinement: the invariant polynomials evaluated on the skew-Hermitian curvature of the Chern connection, the realness of the resulting forms, the first Chern class of a Hermitian line bundle, the determinant line bundle and its curvature, and the Chern character of a Hermitian bundle. It uses the Chern connection of *Hermitian Vector Bundles and the Chern Connection*, the previous entry of this group, whose local formulas $\omega=H^{-1}\partial H$ and $\Omega=\bar\partial(H^{-1}\partial H)$ it takes as given.
+The general Chern–Weil homomorphism, the closedness of the invariant forms from the Bianchi identity and their independence of the connection are *Fibre Bundles, Connections and Curvature*; the topological Chern classes, their integrality, the splitting principle and the characteristic numbers are *Characteristic Classes*, written in this category. This article owns the **Hermitian** refinement: the invariant polynomials evaluated on the anti-Hermitian curvature of the Chern connection, the realness of the resulting forms, the first Chern class of a Hermitian line bundle, the determinant line bundle and its curvature, and the Chern character of a Hermitian bundle. It uses the Chern connection of *Hermitian Vector Bundles and the Chern Connection*, the previous entry of this group, whose local formulas $\omega=H^{-1}\partial H$ and $\Omega=\bar\partial(H^{-1}\partial H)$ it takes as given.
 
 The article assumes the complex vector bundles, the connections, the curvature, the Chern–Weil homomorphism and the normalisation of the first Chern class of a Hermitian line bundle of *Fibre Bundles, Connections and Curvature*, and the topological Chern classes, their integrality, the axioms and the splitting principle of *Characteristic Classes*; the Hermitian metrics, the Chern connection and its curvature of the previous entry; the differential forms, the exterior derivative and the de Rham cohomology of *Differential Forms and Stokes' Theorem*; and the type decomposition of the forms of *Hermitian Geometry and Almost Complex Structures* in Part IV. No physics is invoked.
 
@@ -14,15 +14,15 @@ The article assumes the complex vector bundles, the connections, the curvature, 
 
 Let $E \to M$ be a complex vector bundle of rank $k$ with a Hermitian metric $h$ and the Chern connection $\nabla$, with curvature $\Omega \in \Omega^2(M; \operatorname{End}E)$. The **Chern–Weil homomorphism** assigns to an invariant polynomial $P$ on $\mathfrak{gl}_k(\mathbb{C})$, that is, a polynomial in the entries of a matrix invariant under conjugation, the form $P(\Omega)$; the form is closed, $dP(\Omega) = 0$, by the Bianchi identity, and its de Rham class $[P(\Omega)]$ depends only on the bundle, not on the metric nor on the connection. The construction and the two facts are those of *Fibre Bundles, Connections and Curvature*; what the Hermitian hypothesis adds is the algebraic form of the curvature, and that is the content of the next proposition.
 
-**Proposition (the curvature is skew-Hermitian).** With respect to the metric $h$, the curvature of the Chern connection satisfies
+**Proposition (the curvature is anti-Hermitian).** With respect to the metric $h$, the curvature of the Chern connection satisfies
 
 $$
 \boxed{\;\Omega^* = -\Omega, \qquad \text{equivalently} \qquad H\,\Omega + \Omega^*H = 0 \ \text{ in a holomorphic frame}\;},
 $$
 
-so the matrix valued $2$-form $\Omega$ is skew-Hermitian, and $\frac{i}{2\pi}\Omega$ is Hermitian.
+so the matrix valued $2$-form $\Omega$ is anti-Hermitian, and $\frac{i}{2\pi}\Omega$ is Hermitian.
 
-*Proof.* The metric compatibility $dH = \omega^*H+H\omega$ differentiates to $0 = (d\omega)^*H+\omega^*dH + dH\,\omega + H\,d\omega$; substituting $dH=\omega^*H+H\omega$ and comparing with the definition $\Omega = d\omega+\omega\wedge\omega$ gives $\Omega^*H+H\Omega=0$, which is the skew-Hermitian condition. Equivalently, the curvature of a metric connection with respect to the metric is skew-adjoint, as in *The Covariant Derivative*. Multiplying by $\frac{i}{2\pi}$ conjugates the skew-Hermitian matrix into a Hermitian one.
+*Proof.* The metric compatibility $dH = \omega^*H+H\omega$ differentiates to $0 = (d\omega)^*H+\omega^*dH + dH\,\omega + H\,d\omega$; substituting $dH=\omega^*H+H\omega$ and comparing with the definition $\Omega = d\omega+\omega\wedge\omega$ gives $\Omega^*H+H\Omega=0$, which is the anti-Hermitian condition. Equivalently, the curvature of a metric connection with respect to the metric is skew-adjoint, as in *The Covariant Derivative*. Multiplying by $\frac{i}{2\pi}$ conjugates the anti-Hermitian matrix into a Hermitian one.
 
 ### The Chern Forms
 
@@ -58,7 +58,7 @@ $$
 
 a real closed $(1,1)$-form, and its cohomology class is the first Chern class of $L$.
 
-*Proof.* For a line bundle the Chern connection form is $\omega = h^{-1}\partial h = \partial\log h$ and the curvature is $\Omega = \bar\partial\partial\log h$ by the previous article, since $\omega\wedge\omega = 0$ for a $1$-form valued in the abelian Lie algebra. The form is real by the skew-Hermitian theorem of the line bundle case, and closed by Chern–Weil; its class is the first Chern class by the definition of the Chern classes.
+*Proof.* For a line bundle the Chern connection form is $\omega = h^{-1}\partial h = \partial\log h$ and the curvature is $\Omega = \bar\partial\partial\log h$ by the previous article, since $\omega\wedge\omega = 0$ for a $1$-form valued in the abelian Lie algebra. The form is real by the anti-Hermitian theorem of the line bundle case, and closed by Chern–Weil; its class is the first Chern class by the definition of the Chern classes.
 
 **Example.** On $M = \mathbb{C}$ with the constant metric $h = 1$ in the holomorphic frame, $\Omega = 0$ and the bundle is flat; with the metric $h = \exp(-\lvert z\rvert^2)$ of the previous article, $\Omega = dz\wedge d\bar z$ and $c_1 = [\frac{i}{2\pi}dz\wedge d\bar z]$ is the class of the Euclidean area form. On the Riemann sphere $\mathbb{CP}^1$ with the Fubini–Study metric $h = 1+\lvert z\rvert^2$ on the line bundle $\mathcal{O}(1)$, the curvature integrates to $\int_{\mathbb{CP}^1}\frac{i}{2\pi}\Omega = 1$, the normalisation $c_1(\mathcal{O}(1)) = 1$ of *Characteristic Classes*, and the conjugate bundle $\mathcal{O}(-1)$ carries the value $-1$, with $\mathcal{O}(-1)$ the tautological bundle and $c_1(\mathcal{O}(-1)) = -x$.
 
@@ -88,7 +88,7 @@ for Hermitian bundles with the direct-sum and tensor-product metrics, and it is 
 
 ## Summary
 
-For a Hermitian bundle the Chern connection has a skew-Hermitian curvature $\Omega$; the matrix $\frac{i}{2\pi}\Omega$ is Hermitian, and the elementary symmetric functions of its eigenvalues are the **Chern forms**, real closed forms whose de Rham classes are the integral Chern classes. The total Chern form is $\det(I+\frac{i}{2\pi}\Omega)$, the first Chern form is the trace $\frac{i}{2\pi}\operatorname{tr}\Omega$, and it is the class of the determinant line bundle. On a Hermitian line bundle $\Omega=\bar\partial\partial\log h$, and its class is the first Chern class, normalised so that $c_1(\mathcal{O}(1))=1$ on the Riemann sphere and $c_1(\mathcal{O}(-1))=-x$.
+For a Hermitian bundle the Chern connection has a anti-Hermitian curvature $\Omega$; the matrix $\frac{i}{2\pi}\Omega$ is Hermitian, and the elementary symmetric functions of its eigenvalues are the **Chern forms**, real closed forms whose de Rham classes are the integral Chern classes. The total Chern form is $\det(I+\frac{i}{2\pi}\Omega)$, the first Chern form is the trace $\frac{i}{2\pi}\operatorname{tr}\Omega$, and it is the class of the determinant line bundle. On a Hermitian line bundle $\Omega=\bar\partial\partial\log h$, and its class is the first Chern class, normalised so that $c_1(\mathcal{O}(1))=1$ on the Riemann sphere and $c_1(\mathcal{O}(-1))=-x$.
 
 The construction is the Chern–Weil one read with a metric: the invariant polynomials on the curvature give closed forms, their classes are independent of the metric and the connection, and the Hermitian metric supplies the preferred connection and the preferred real representatives. The Chern character $\operatorname{tr}\exp(\frac{i}{2\pi}\Omega)$ is additive and multiplicative, and the normalisations agree with those of *Fibre Bundles, Connections and Curvature* and *Characteristic Classes*, to which the topological content — integrality, the splitting principle, characteristic numbers and cobordism — belongs.
 
@@ -97,7 +97,7 @@ The construction is the Chern–Weil one read with a metric: the invariant polyn
 | Symbol | Meaning |
 |---|---|
 | $E, k, h, \nabla, \Omega$ | Hermitian bundle, rank, metric, Chern connection, curvature |
-| $\Omega^* = -\Omega$ | Skew-Hermitian curvature of a metric connection |
+| $\Omega^* = -\Omega$ | Anti-Hermitian curvature of a metric connection |
 | $A = \frac{i}{2\pi}\Omega$ | Hermitian curvature; real eigenvalues $x_1,\ldots,x_k$ |
 | $c(\Omega) = \det(I_k+\frac{i}{2\pi}\Omega)$ | Total Chern form; $c_j(\Omega)$ its degree-$2j$ part |
 | $c_j(\Omega) = e_j(x_1,\ldots,x_k)$ | Chern forms as elementary symmetric functions |

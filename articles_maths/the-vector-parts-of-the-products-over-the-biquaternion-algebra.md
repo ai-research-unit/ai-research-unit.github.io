@@ -462,11 +462,11 @@ For $f$ bilinear it is a complex bilinear form, with Gram matrix $G_{ij}=\varphi
 | $\tilde Q_1\bullet\tilde Q_2$ | bilinear | symmetric | $2$ |
 | $\tilde Q_1\bullet_{\natural}\tilde Q_2$ | zero | zero | $0$ |
 | $\tilde Q_1\wedge\tilde Q_2$ | bilinear | alternating | $2$ |
-| $\tilde Q_1\tilde Q_2^{*}$, $\tilde Q_1\wedge_{*}\tilde Q_2$ | sesquilinear | conjugate-alternating; skew-Hermitian | $4$ |
+| $\tilde Q_1\tilde Q_2^{*}$, $\tilde Q_1\wedge_{*}\tilde Q_2$ | sesquilinear | conjugate-alternating; anti-Hermitian | $4$ |
 | $\tilde Q_1\bullet_{*}\tilde Q_2$ | zero | zero | $0$ |
 | $\tilde Q_1\bullet_{\natural*}\tilde Q_2$ | sesquilinear | conjugate-symmetric; Hermitian | $2$ |
-| $\tilde Q_1\wedge_{\natural*}\tilde Q_2$ | sesquilinear | conjugate-alternating; skew-Hermitian | $2$ |
-| $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | sesquilinear | sum of a Hermitian rank $2$ and a skew-Hermitian rank $2$ | $4$ |
+| $\tilde Q_1\wedge_{\natural*}\tilde Q_2$ | sesquilinear | conjugate-alternating; anti-Hermitian | $2$ |
+| $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | sesquilinear | sum of a Hermitian rank $2$ and a anti-Hermitian rank $2$ | $4$ |
 
 *Proof.* The ranks and the symmetry types are read from the matrices. For $\tilde Q_1\tilde Q_2$ and $w=\vec e_x$ the matrix is
 
@@ -492,7 +492,7 @@ N_x=
 \end{pmatrix},
 $$
 
-skew of rank $4$; the other two are obtained by the same cyclic relabelling. The zero rows are immediate. For the sesquilinear rows, the Gram matrix of a conjugate-symmetric form is Hermitian and that of a conjugate-alternating form is skew-Hermitian, by the two definitions read in the entries; the ranks are computed from the same matrices. The $\tilde Q_1^{\natural}\tilde Q_2^{*}$ entry is the sum of the $\tilde Q_1\bullet_{\natural*}\tilde Q_2$ and $\tilde Q_1\wedge_{\natural*}\tilde Q_2$ entries; its Hermitian part is the $\tilde Q_1\bullet_{\natural*}\tilde Q_2$ matrix, its skew-Hermitian part is the $\tilde Q_1\wedge_{\natural*}\tilde Q_2$ matrix, and its rank is $4$.
+skew of rank $4$; the other two are obtained by the same cyclic relabelling. The zero rows are immediate. For the sesquilinear rows, the Gram matrix of a conjugate-symmetric form is Hermitian and that of a conjugate-alternating form is anti-Hermitian, by the two definitions read in the entries; the ranks are computed from the same matrices. The $\tilde Q_1^{\natural}\tilde Q_2^{*}$ entry is the sum of the $\tilde Q_1\bullet_{\natural*}\tilde Q_2$ and $\tilde Q_1\wedge_{\natural*}\tilde Q_2$ entries; its Hermitian part is the $\tilde Q_1\bullet_{\natural*}\tilde Q_2$ matrix, its anti-Hermitian part is the $\tilde Q_1\wedge_{\natural*}\tilde Q_2$ matrix, and its rank is $4$.
 
 **Remark (the diagonal of a component form).** At the two equal arguments,
 
@@ -522,7 +522,7 @@ The first row collects the coincidences, the second and third the reconstruction
 
 The vector parts of the twelve products are vector-valued maps into the complex vector subspace, not scalar forms. The four general products obey one two-bit rule: the first slot fixes the sign of the second mixed term, the second slot fixes the sign of the first mixed term, and the cross term carries the product of the two signs. There are twelve vector parts, one to each product. Three coincidences make some of them equal: the two central symmetric products have zero vector part, and the quaternionic bilinear and the plain sesquilinear products share their vector part with their antisymmetric parts. The twelve maps therefore fall into nine distinct classes, separated by three pairs of basis elements, and the vector part alone does not determine the product; the pair of the scalar part and the vector part does.
 
-Each product was read with its own properties: its diagonal, its image, its value on pure vectors, its symmetry and its role in the algebra. The diagonals give the vector parts of the squares: $2Q_t\vec Q$ for the plain bilinear pair; zero for the quaternionic bilinear product, the two central symmetric products and the two bilinear antisymmetric products; the Hermitian square $\mathrm{Vec}(\tilde Q\tilde Q^{*})$ for the plain sesquilinear pair; a real vector for $\tilde Q_1\bullet_{\natural*}\tilde Q_2$; a purely imaginary vector for $\tilde Q_1\wedge_{\natural*}\tilde Q_2$; and a real-plus-imaginary pair with orthogonal parts for $\tilde Q_1^{\natural}\tilde Q_2^{*}$. On the centre all vector parts vanish; on the vector subspace only the cross term survives and the twelve restrictions take five distinct values; on the real subspace they take eight; on the Hermitian subspace they take seven. The component forms are three scalar forms to a vector part: rank $4$ with a rank-$2$ symmetric and a rank-$2$ alternating part for the plain bilinear product, alternating rank $4$ for the quaternionic bilinear product, Hermitian or skew-Hermitian of rank $2$ or $4$ in the sesquilinear families.
+Each product was read with its own properties: its diagonal, its image, its value on pure vectors, its symmetry and its role in the algebra. The diagonals give the vector parts of the squares: $2Q_t\vec Q$ for the plain bilinear pair; zero for the quaternionic bilinear product, the two central symmetric products and the two bilinear antisymmetric products; the Hermitian square $\mathrm{Vec}(\tilde Q\tilde Q^{*})$ for the plain sesquilinear pair; a real vector for $\tilde Q_1\bullet_{\natural*}\tilde Q_2$; a purely imaginary vector for $\tilde Q_1\wedge_{\natural*}\tilde Q_2$; and a real-plus-imaginary pair with orthogonal parts for $\tilde Q_1^{\natural}\tilde Q_2^{*}$. On the centre all vector parts vanish; on the vector subspace only the cross term survives and the twelve restrictions take five distinct values; on the real subspace they take eight; on the Hermitian subspace they take seven. The component forms are three scalar forms to a vector part: rank $4$ with a rank-$2$ symmetric and a rank-$2$ alternating part for the plain bilinear product, alternating rank $4$ for the quaternionic bilinear product, Hermitian or anti-Hermitian of rank $2$ or $4$ in the sesquilinear families.
 
 ## Summary of Notation
 

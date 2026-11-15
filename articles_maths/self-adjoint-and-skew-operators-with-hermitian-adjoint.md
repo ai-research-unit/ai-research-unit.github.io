@@ -47,7 +47,7 @@ $$
 
 as vector spaces, with $\mathrm{Herm}_A(S)$ the self-adjoint operators and $\mathrm{Skew}_A(S)$ the skew-adjoint operators. This was checked for the two-sided operators of the regular module: $H(T)$ self-adjoint, $K(T)$ skew-adjoint, and $H(T)+K(T) = T$.
 
-**Remark (the reality conditions).** Over a real form the self-adjoint and the skew-adjoint operators are the **symmetric** and the **skew-symmetric** operators for the bilinear form; over the complex algebra they are the Hermitian and the anti-Hermitian operators. The involution is the same algebraic object in both cases, and its sign is the only thing the reality condition changes.
+**Remark (the reality conditions).** Over a real form the self-adjoint and the skew-adjoint operators are the **symmetric** and the **antisymmetric** operators for the bilinear form; over the complex algebra they are the Hermitian and the anti-Hermitian operators. The involution is the same algebraic object in both cases, and its sign is the only thing the reality condition changes.
 
 ## The Two Structures
 

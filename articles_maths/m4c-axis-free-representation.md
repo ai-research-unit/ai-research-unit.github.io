@@ -570,7 +570,7 @@ Q_y&Q_z&0&-Q_x\\
 Q_z&-Q_y&Q_x&0
 \end{pmatrix}.
 $$
-The matrix is traceless and skew-symmetric, $M^{\mathsf T}=-M$. The image is the complex span of $L_{\mathrm{axf},\vec e_x},L_{\mathrm{axf},\vec e_y},L_{\mathrm{axf},\vec e_z}$, of real dimension $6$. The trace is $0$, the determinant of the $2\times2$ image is $B^2$, and the determinant of $M$ is $B^4$. Inside the image, the trace condition is equivalent to skew-symmetry, because the transpose is quaternion conjugation and $\tilde Q^{\natural}=-\tilde Q$ exactly when $Q_t=0$. The image is closed under the commutator and not under the product.
+The matrix is traceless and antisymmetric, $M^{\mathsf T}=-M$. The image is the complex span of $L_{\mathrm{axf},\vec e_x},L_{\mathrm{axf},\vec e_y},L_{\mathrm{axf},\vec e_z}$, of real dimension $6$. The trace is $0$, the determinant of the $2\times2$ image is $B^2$, and the determinant of $M$ is $B^4$. Inside the image, the trace condition is equivalent to antisymmetry, because the transpose is quaternion conjugation and $\tilde Q^{\natural}=-\tilde Q$ exactly when $Q_t=0$. The image is closed under the commutator and not under the product.
 
 ### The Quaternion Subspace
 

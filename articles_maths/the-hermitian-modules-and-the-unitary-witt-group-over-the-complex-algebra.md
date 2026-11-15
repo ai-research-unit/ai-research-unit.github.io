@@ -4,9 +4,9 @@
 
 A Hermitian module over the complex algebra is a complex vector space with a Hermitian form. Every module over a field is free, so the module is classified by its rank; the forms of the positive cone are then classified by the rank alone, since every definite form of rank $n$ is congruent to the identity matrix. Beyond the positive cone the invariant is the inertia, and the classes modulo the hyperbolic forms form the unitary Witt group, which is $\mathbb{Z}$.
 
-The article proves the freedom, exhibits the canonical form and the unitary group, classifies the forms by inertia, computes the Witt group by the signature, and separates the isotropic forms of the plain product from the Hermitian ones, which have no isotropic vector in the positive cone. The comparison with the split case closes the account.
+The article proves the freedom, exhibits the canonical form and the unitary group, classifies the forms by inertia, computes the Witt group by the signature, and separates the isotropic vectors of the plain form from the Hermitian forms, which have no isotropic vector in the positive cone. The comparison with the split case closes the account.
 
-The field property that makes every module free is *The Specificities of the Complex Algebra*; the two forms are *The Two Forms and the Two Algebraic Norms of the Complex Space*; the cone is *The Positivity and the Ray of Squares of the Complex Space*; the general theory of the two-sided operators on a Hermitian module is *Bilinear Operators on a Hermitian Module with Hermitian Adjoint*, and the general Witt theory is *Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint*. The biquaternion instance is *Hermitian Forms over the Biquaternion Algebra and the Unitary Witt Group with Hermitian Adjoint*, where the module of rank one is already two-dimensional.
+The field property that makes every module free is *The Specificities of the Complex Algebra*; the two forms are *The Two Forms and the Two Algebraic Norms of the Complex Space*; the cone is *The Positivity and the Ray of Squares of the Complex Space*; the general theory of the two-sided operators on a Hermitian module is *Bilinear Operators on a Hermitian Module with Hermitian Adjoint*, and the general Witt theory is *Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint*.
 
 **Interpretation.** The algebra is $\mathbb{C}$ with the bar, and ${}^{*}=\bar{\cdot}$ is the conjugation. The free module of rank $n$ is $\mathbb{C}^{n}$ with the coordinatewise action, and its elements are $x=(x_1,\dots,x_n)$, $y=(y_1,\dots,y_n)$. A Hermitian form is written $h(x,y)=\sum_{k}x_ky_k^{*}$, and a general one is $h_{G}(x,y)=\sum_{k,l}x_kG_{kl}y_l^{*}$ with $G$ a Hermitian matrix. The inertia of $h$ is the triple $(n,m,r)$ of positive, negative and zero directions, and the signature is $\sigma=n-m$.
 
@@ -32,7 +32,7 @@ The field property that makes every module free is *The Specificities of the Com
 
 **Theorem.** Every positive definite Hermitian form of rank $n$ is congruent to the canonical form: there is an invertible $S$ with $S^{*}GS=I_n$.
 
-*Proof.* A positive definite Hermitian $G$ has a positive definite square root $P$, and $G=P^{2}=P^{*}I_nP$, so $S=P$ works.
+*Proof.* A positive definite Hermitian $G$ has a positive definite square root $P$, and $G=P^{2}=P^{*}I_nP$, so $S=P^{-1}$ works, since $(P^{-1})^{*}GP^{-1}=P^{-1}P^{2}P^{-1}=I_n$.
 
 **Corollary.** The Hermitian modules of the positive cone are classified by their rank alone.
 
@@ -56,7 +56,7 @@ The field property that makes every module free is *The Specificities of the Com
 
 *Proof.* Diagonalise $G$ by a unitary change of coordinates and scale the non-zero diagonal entries by the positive square roots of their moduli; the congruences preserve the signs by the inertia theorem for Hermitian matrices, and the normal form is attained.
 
-**Proposition (the realification).** The real form $\operatorname{Re}h$ on $\mathbb{R}^{2n}$ has signature $(2n,2m)$ and rank $2(n+m)$.
+**Proposition (the realification).** The real form $\operatorname{Re}h$ on $\mathbb{R}^{2(n+m+r)}$ has signature $(2n,2m)$ and rank $2(n+m)$.
 
 *Proof.* A complex line on which $h$ is positive is a real plane on which $\operatorname{Re}h$ is positive definite, since $h(x,x)=|x|^{2}h(u,u)$ for a unit $u$ on the line; a line on which $h$ is negative contributes a negative plane; and a null line contributes a null plane.
 

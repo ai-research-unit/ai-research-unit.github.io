@@ -279,7 +279,7 @@ $$
 \;}.
 $$
 
-So the vector subspace $\operatorname{Im}\mathbb{H}$, equipped with the commutator bracket, is a Lie subalgebra of $\mathbb{H}$ isomorphic to the Lie algebra $\mathrm{SO}(3)$ of skew-symmetric $3\times 3$ real matrices:
+So the vector subspace $\operatorname{Im}\mathbb{H}$, equipped with the commutator bracket, is a Lie subalgebra of $\mathbb{H}$ isomorphic to the Lie algebra $\mathrm{SO}(3)$ of antisymmetric $3\times 3$ real matrices:
 
 $$
 \operatorname{Im}\mathbb{H} \cong \mathrm{SO}(3).

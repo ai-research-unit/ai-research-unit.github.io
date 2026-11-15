@@ -7,7 +7,7 @@ This article lists the forms of the corpus — the bilinear, quadratic, sesquili
 
 Every entry points to the article that introduces the form or the invariant. The article introduces nothing and proves nothing: it records the classifying data the introducing article establishes, and it neither restates a definition nor gives a proof.
 
-The article records examples and non-examples side by side. Beside the forms that the classification separates it lists the cases in which the classification collapses or the correspondence fails: the quadratic forms and the symmetric bilinear forms, which are in bijection only when $2$ is invertible in the base ring; the alternating forms, which are not the skew-symmetric forms in characteristic $2$; the split octonions, whose norm is isotropic although the octonion norm of the division algebra is not; and the forms over $\mathbb{Q}$ and over a number field, whose classification needs the local invariants and is not read from the signature alone, each with the failure named and the article that records it.
+The article records examples and non-examples side by side. Beside the forms that the classification separates it lists the cases in which the classification collapses or the correspondence fails: the quadratic forms and the symmetric bilinear forms, which are in bijection only when $2$ is invertible in the base ring; the alternating forms, which are not the antisymmetric forms in characteristic $2$; the split octonions, whose norm is isotropic although the octonion norm of the division algebra is not; and the forms over $\mathbb{Q}$ and over a number field, whose classification needs the local invariants and is not read from the signature alone, each with the failure named and the article that records it.
 
 ## The Bilinear and Sesquilinear Forms
 
@@ -44,7 +44,7 @@ A quadratic form is homogeneous of degree two, and it is recovered from its pola
 
 ## The Alternating and Symplectic Forms
 
-An alternating form satisfies $\omega(u,u) = 0$, which over a field of characteristic not $2$ is the skew-symmetry of its matrix; the non-degenerate alternating forms are the symplectic forms, and their normal form is the linear Darboux theorem.
+An alternating form satisfies $\omega(u,u) = 0$, which over a field of characteristic not $2$ is the antisymmetry of its matrix; the non-degenerate alternating forms are the symplectic forms, and their normal form is the linear Darboux theorem.
 
 | Form or invariant | Its classifying data | Introduced in |
 |---|---|---|
@@ -92,7 +92,7 @@ The norms of the number systems are the examples through which the general theor
 | Object | Why the expected statement fails | Introduced in |
 |---|---|---|
 | a quadratic form over $\mathbb{F}_2$ | the polar form does not determine the quadratic form when $2$ is not invertible; the correspondence is an obstruction, not a bijection | *Quadratic Forms and Polarisation* |
-| an alternating form in characteristic $2$ | it is not the same as a skew-symmetric form; skew-symmetry with $\omega(u,u) = 0$ is the condition available over every ring | *The Determinant and Alternating Forms*; *Symplectic Forms and Poisson Brackets* |
+| an alternating form in characteristic $2$ | it is not the same as a antisymmetric form; antisymmetry with $\omega(u,u) = 0$ is the condition available over every ring | *The Determinant and Alternating Forms*; *Symplectic Forms and Poisson Brackets* |
 | the split octonions | their norm is isotropic, unlike the norm of the division algebra $\mathbb{O}$; the two are different forms of the same dimension | *Quadratic Forms over Algebras and Norms* |
 | the classification over $\mathbb{Q}$ | it is not read from the signature alone; the Hasse–Minkowski principle needs the local invariants at the completions | *Witt's Theorems* |
 | the Hermitian form over a non-commutative ring | the diagonal $\mathfrak{Q}(x) = s(x,x)$ is a quadratic form over the fixed ring and not over the base; the transfer is part of the theory | *Hilbert Algebras* |

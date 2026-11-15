@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The split norm $N(Q)=a^2-b^2$ is a quadratic form of signature $(1,1)$, and its level sets are the hyperbolas of the hyperbolic plane. This article describes them: the two branches of a positive level, the two of a negative one, the four components of a level of fixed magnitude, and the pair of lines at the value zero. It then reads the hyperbolic structure: the group of norm-one elements acts on the plane, transitively on each branch, so each branch is an orbit and the quotient of the plane by the group is the set of branches with the value of the norm as its coordinate. The null pair of lines is the common boundary, and the comparison with the circles of the complex plane closes the article.
+The split norm $N(Q)=a^2-b^2$ is a quadratic form of signature $(1,1)$, and its level sets are the hyperbolas of the hyperbolic plane. This article describes them: the two branches of a positive level, the two of a negative one, the four components of a level of fixed magnitude, and the pair of lines at the value zero. It then reads the hyperbolic structure: the group of norm-one elements acts on the plane, transitively on each branch, so each branch is an orbit and the quotient of the plane by the group is the set of branches with the value of the norm as its coordinate. The null pair of lines is the common asymptotic boundary, and the comparison with the circles of the complex plane closes the article.
 
 The claim is that the level sets are the orbits, and that the orbit structure is what the indefiniteness produces. Over $\mathbb{C}$ the level sets of the modulus are circles, compact and connected, and each is a single orbit of the circle group; here each level set is a pair of non-compact branches and each branch is a single orbit of a group isomorphic to $\mathbb{R}^\times$. The two pictures are the two faces of the definiteness of the form.
 
@@ -64,11 +64,11 @@ the two isotropic lines of the form. They are the asymptotes of every hyperbola 
 
 ### The Common Boundary
 
-**Theorem.** The null pair of lines is the common boundary of all the level sets: every branch of $\Sigma_c$ for $c>0$ has the two rays $\mathbb{R}_{>0}\Pi_\pm$ as its asymptotic boundary, and every branch of $\Sigma_c$ for $c<0$ has the two rays $\mathbb{R}\Pi_\pm$ likewise.
+**Theorem.** The null pair of lines is the common asymptotic boundary of all the level sets: every branch of $\Sigma_c$ for $c\ne0$ has one ray of each of the two null lines as its asymptotic boundary, and the two branches of a level set approach the four rays between them.
 
-**Proof.** On the right branch of $\Sigma_c$ the coordinate $a=\sqrt{c+b^2}$ tends to $\lvert b\rvert$ as $\lvert b\rvert\to\infty$, so the branch approaches the two rays $b=\pm a$ without meeting them; the other branches are the same computation reflected.
+**Proof.** For $c>0$ the branch $a=\sqrt{c+b^2}$ tends to $\lvert b\rvert$ as $\lvert b\rvert\to\infty$, so it approaches the rays $b=a$ with $a>0$ and $b=-a$ with $a>0$; the branch $a=-\sqrt{c+b^2}$ is its reflection through the origin and approaches the opposite rays. For $c<0$ the branch $b=\sqrt{a^2-c}$ tends to $\lvert a\rvert$ as $\lvert a\rvert\to\infty$, so it approaches the rays $b=a$ with $a>0$ and $b=-a$ with $a<0$; the branch $b=-\sqrt{a^2-c}$ is its reflection and approaches the other two rays. No branch meets a null line, since $a^2-b^2=c\ne0$.
 
-The null lines are therefore the boundary of every level set and the set where the level sets of the two signs are separated. The cone of the form is the union of the level sets of the non-negative values, and its boundary is $\Sigma_0$; the exterior is the union of the negative ones.
+The null lines are therefore the asymptotic boundary of every level set and the set where the level sets of the two signs are separated. The cone of the form is the union of the level sets of the non-negative values, and its boundary is $\Sigma_0$; the exterior is the union of the negative ones.
 
 ## The Hyperbolic Rotations
 
@@ -104,7 +104,7 @@ The two branches of one level set are therefore one orbit, exchanged by the elem
 
 **Proof.** $u\cdot1=u$, so the orbit of $1$ is the group itself, and the group is $\Sigma_1$ by definition.
 
-The level set $\Sigma_1$ is therefore a group acting on itself by left multiplication, and its two branches are the two components of the group. The same holds for every non-zero value up to a scaling: $\Sigma_c=c\,\Sigma_1$ for $c>0$, and $\Sigma_c=\lvert c\rvert\,j\,\Sigma_1$ for $c<0$, since $N(j)=-1$.
+The level set $\Sigma_1$ is therefore a group acting on itself by left multiplication, and its two branches are the two components of the group. The same holds for every non-zero value up to a scaling: $\Sigma_c=\sqrt{c}\,\Sigma_1$ for $c>0$, and $\Sigma_c=\sqrt{\lvert c\rvert}\,j\,\Sigma_1$ for $c<0$, since $N(j)=-1$.
 
 ### The Angle and the Absence of a Period
 
@@ -142,7 +142,7 @@ In both cases the level sets are the orbits of the group of norm-one elements an
 
 ## Summary
 
-The level sets of the split norm are the hyperbolas $a^2-b^2=c$: two branches for $c>0$, two for $c<0$, and the pair of null lines at $c=0$. A level of fixed magnitude has four components, the two branches of each of the two signs, and the null pair of lines is the common boundary of all of them, the asymptotes of every hyperbola.
+The level sets of the split norm are the hyperbolas $a^2-b^2=c$: two branches for $c>0$, two for $c<0$, and the pair of null lines at $c=0$. A level of fixed magnitude has four components, the two branches of each of the two signs, and the null pair of lines is the common asymptotic boundary of all of them, the asymptotes of every hyperbola.
 
 The hyperbolic rotations, the multiplications by elements of norm one, form a group isomorphic to $\mathbb{R}^\times$ whose identity component is parametrised by the hyperbolic angle with no period. The group acts transitively on each level set of non-zero value and its identity component on each branch, so the orbits are the non-zero level sets, the two punctured null lines and the origin, and the level set of norm one is the orbit of $1$. The quotient is the real line with three orbits over the value zero, and the norm is a complete invariant exactly on the units.
 
@@ -154,7 +154,7 @@ Over $\mathbb{C}$ the level sets are circles, compact, connected, one per value,
 |---|---|
 | $\Sigma_c=\{N=c\}$ | The level set of the split norm at the value $c$ |
 | $a^2-b^2=c$ | The hyperbola, with the two null lines as asymptotes |
-| $\Sigma_0=\mathbb{R}\Pi_+\cup\mathbb{R}\Pi_-$ | The null level, the common boundary |
+| $\Sigma_0=\mathbb{R}\Pi_+\cup\mathbb{R}\Pi_-$ | The null level, the common asymptotic boundary |
 | $c>0$, two branches | The timelike hyperbola, right and left |
 | $c<0$, two branches | The spacelike hyperbola, upper and lower |
 | four components | The two branches of $N=c$ and of $N=-c$ |

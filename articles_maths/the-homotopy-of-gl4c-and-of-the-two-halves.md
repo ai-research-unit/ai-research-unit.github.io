@@ -76,7 +76,7 @@ $$
 
 **Corollary.** The dimension $15$ is $4^{2}-1$, and it is also $\dim\mathfrak{su}(4)=\dim\mathfrak{sl}_4$.
 
-**Proof.** The Lie algebra of $SU(4)$ is the skew-Hermitian traceless part, of real dimension $15$.
+**Proof.** The Lie algebra of $SU(4)$ is the anti-Hermitian traceless part, of real dimension $15$.
 
 **Corollary.** The fibration $SU(3)\to SU(4)\to S^{7}$ gives $\pi_k(SU(4))\cong\pi_k(SU(3))$ for $k\le5$, which is how the values are transported.
 

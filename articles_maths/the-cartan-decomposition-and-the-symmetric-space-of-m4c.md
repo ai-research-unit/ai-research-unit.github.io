@@ -51,7 +51,7 @@ This article states the involution, the decomposition, the symmetric space, its 
 **The decomposition.** Every $X\in\mathfrak{gl}_4$ splits uniquely as
 
 $$
-X=\underbrace{\tfrac12(X-X^{*})}_{\text{skew-Hermitian}}+\underbrace{\tfrac12(X+X^{*})}_{\text{Hermitian}},
+X=\underbrace{\tfrac12(X-X^{*})}_{\text{anti-Hermitian}}+\underbrace{\tfrac12(X+X^{*})}_{\text{Hermitian}},
 $$
 
 so
@@ -70,7 +70,7 @@ $$
 [\mathfrak{p},\mathfrak{p}]\subseteq\mathfrak{u},
 $$
 
-with $\mathfrak{p}=\operatorname{Herm}_4$. The first is closure of the unitary algebra; the second is the statement that the commutator of a skew-Hermitian and a Hermitian matrix is Hermitian; the third is the statement that the commutator of two Hermitian matrices is skew-Hermitian.
+with $\mathfrak{p}=\operatorname{Herm}_4$. The first is closure of the unitary algebra; the second is the statement that the commutator of a anti-Hermitian and a Hermitian matrix is Hermitian; the third is the statement that the commutator of two Hermitian matrices is anti-Hermitian.
 
 ## The Symmetric Space
 
@@ -153,7 +153,7 @@ The Cartan involution $\mathrm{J}(g)=(g^{*})^{-1}$ has fixed subgroup $U(4)$ and
 |---|---|
 | $\mathrm{J}(g)=(g^{*})^{-1}$ | the Cartan involution of the group |
 | $\mathrm{J}(X)=-X^{*}$ | the Cartan involution of the Lie algebra |
-| $\mathfrak{u}(4)$ | the skew-Hermitian matrices, the fixed algebra |
+| $\mathfrak{u}(4)$ | the anti-Hermitian matrices, the fixed algebra |
 | $\operatorname{Herm}_4$ | the Hermitian matrices, the $(-1)$-eigenspace |
 | $\operatorname{Herm}_4^{++}$ | the positive definite Hermitian matrices |
 | $P(t)$ | the geodesic through $P$ with velocity $H$ |

@@ -55,7 +55,7 @@ The self-adjoint elements are therefore exactly the elements all of whose expone
 
 ## Examples
 
-**Example (the matrix algebra).** For $A = M_n(\mathbb{C})$ the self-adjoint elements are the Hermitian matrices, the positive cone is the set of positive semidefinite matrices, and the order is the Loewner order; the unitary elements are the unitary matrices, and $a = h + ik$ is the decomposition of a matrix into its Hermitian and skew-Hermitian parts.
+**Example (the matrix algebra).** For $A = M_n(\mathbb{C})$ the self-adjoint elements are the Hermitian matrices, the positive cone is the set of positive semidefinite matrices, and the order is the Loewner order; the unitary elements are the unitary matrices, and $a = h + ik$ is the decomposition of a matrix into its Hermitian and anti-Hermitian parts.
 
 **Example (the function algebra).** For $A = C(X,\mathbb{C})$ the self-adjoint elements are the real-valued continuous functions, $A^+ = C(X,\mathbb{R})$, the positive cone is the cone of non-negative functions, and the order is pointwise; the unitary elements are the functions of modulus one.
 

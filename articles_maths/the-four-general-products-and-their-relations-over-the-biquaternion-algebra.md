@@ -585,5 +585,4 @@ The four are told apart on one element by the square: $\mathrm{Sc}(\tilde Q\tild
 - [Symmetric and Antisymmetric Decomposition of the Four General Products](symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html), for the twelve products and the two halves of each general product.
 - [The Vector Parts of the Products over the Biquaternion Algebra](the-vector-parts-of-the-products-over-the-biquaternion-algebra.html), for the vector parts of the four general products, the two-bit rule and the vector form of the two splitting identities.
 - [Remarkable Subspaces and the Four General Products, Forms and Norms](remarkable-subspaces-and-the-four-general-products-forms-and-norms.html), for the four products read on the remarkable subspaces.
-- [Remarkable Subspaces and the Two General Products](remarkable-subspaces-and-the-two-general-products.html), for the same reading in the algebra over the real scalars.
 - [Algebras: A General Introduction](algebras-a-general-introduction.html) and [Non-Associative Algebras and the Property Ladder](non-associative-algebras-and-the-property-ladder.html), for the algebra axioms and the identities of the table.

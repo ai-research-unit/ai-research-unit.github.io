@@ -282,20 +282,20 @@ $$
 
 It is not complex-linear and it is not an algebra automorphism; it is a **Hermitian involution** of the real algebra.
 
-**Hermitian and skew-Hermitian parts.** Every matrix splits uniquely as
+**Hermitian and anti-Hermitian parts.** Every matrix splits uniquely as
 
 $$
 A=\frac12(A+A^*)+\frac12(A-A^*),
 $$
 
-with $A+A^*$ Hermitian and $A-A^*$ skew-Hermitian. The real subspaces
+with $A+A^*$ Hermitian and $A-A^*$ anti-Hermitian. The real subspaces
 
 $$
 \operatorname{Herm}_4=\{A:A^*=A\},\qquad
 \mathfrak{u}(4)=\{A:A^*=-A\}
 $$
 
-have real dimensions $16$ each, and $M_4=\operatorname{Herm}_4\oplus\mathfrak{u}(4)$ as a real vector space. The skew-Hermitian space is the Lie algebra $\mathfrak{u}(4)$ of the $*$-unitary group; its traceless part is $\mathfrak{su}(4)$, of real dimension $15$. As a complex Lie algebra, $M_4(\mathbb{C})=\mathfrak{u}(4)\otimes_{\mathbb{R}}\mathbb{C}=\mathfrak{u}(4)\oplus i\mathfrak{u}(4)$, with the Hermitian matrices $i\mathfrak{u}(4)$.
+have real dimensions $16$ each, and $M_4=\operatorname{Herm}_4\oplus\mathfrak{u}(4)$ as a real vector space. The anti-Hermitian space is the Lie algebra $\mathfrak{u}(4)$ of the $*$-unitary group; its traceless part is $\mathfrak{su}(4)$, of real dimension $15$. As a complex Lie algebra, $M_4(\mathbb{C})=\mathfrak{u}(4)\otimes_{\mathbb{R}}\mathbb{C}=\mathfrak{u}(4)\oplus i\mathfrak{u}(4)$, with the Hermitian matrices $i\mathfrak{u}(4)$.
 
 **The $*$-unitary groups.** The **$*$-unitary group** is
 
@@ -341,7 +341,7 @@ because the images of the matrix-unit basis of the tensor product are the matrix
 
 ## Summary
 
-The algebra $M_4(\mathbb{C})$ is the algebra of $4\times4$ complex matrices, of complex dimension $16$ and real dimension $32$, with basis the sixteen matrix units $E_{ij}$, product $E_{ij}E_{kl}=\delta_{jk}E_{il}$ and unit $I$. Its trace is the sum of the diagonal entries, its determinant is the usual multiplicative polynomial of degree four, and the two are invariant under conjugation. The centre is $\mathbb{C}I$ and the algebra is central simple: its only two-sided ideals are $0$ and the algebra. The unit group is $GL_4(\mathbb{C})$, of complex dimension $16$, with determinant epimorphism onto $\mathbb{C}^\times$ and kernel $SL_4(\mathbb{C})$ of dimension $15$; the projective group $PGL_4(\mathbb{C})$ has dimension $15$ and acts by conjugation, with kernel the scalars. The real structure is the conjugate transpose, with Hermitian and skew-Hermitian parts of real dimension $16$ each, and the $*$-unitary groups $U(4)$ and $SU(4)$. The $M_4(\mathbb{C})_{\mathbb{B}_L}$ model is a four-dimensional subalgebra of the full sixteen-dimensional algebra; the two have different traces and determinants and must not be identified. A second construction gives the algebra as $M_2(\mathbb{C})\otimes M_2(\mathbb{C})_{\mathrm{opp}}\cong\operatorname{End}_{\mathbb{C}}(M_2(\mathbb{C}))$, hence as $\mathbb{B}\otimes\mathbb{B}_{\mathrm{opp}}$; in the coefficient basis its basis is not the matrix-unit basis, and every matrix unit is a sum of four of its elements.
+The algebra $M_4(\mathbb{C})$ is the algebra of $4\times4$ complex matrices, of complex dimension $16$ and real dimension $32$, with basis the sixteen matrix units $E_{ij}$, product $E_{ij}E_{kl}=\delta_{jk}E_{il}$ and unit $I$. Its trace is the sum of the diagonal entries, its determinant is the usual multiplicative polynomial of degree four, and the two are invariant under conjugation. The centre is $\mathbb{C}I$ and the algebra is central simple: its only two-sided ideals are $0$ and the algebra. The unit group is $GL_4(\mathbb{C})$, of complex dimension $16$, with determinant epimorphism onto $\mathbb{C}^\times$ and kernel $SL_4(\mathbb{C})$ of dimension $15$; the projective group $PGL_4(\mathbb{C})$ has dimension $15$ and acts by conjugation, with kernel the scalars. The real structure is the conjugate transpose, with Hermitian and anti-Hermitian parts of real dimension $16$ each, and the $*$-unitary groups $U(4)$ and $SU(4)$. The $M_4(\mathbb{C})_{\mathbb{B}_L}$ model is a four-dimensional subalgebra of the full sixteen-dimensional algebra; the two have different traces and determinants and must not be identified. A second construction gives the algebra as $M_2(\mathbb{C})\otimes M_2(\mathbb{C})_{\mathrm{opp}}\cong\operatorname{End}_{\mathbb{C}}(M_2(\mathbb{C}))$, hence as $\mathbb{B}\otimes\mathbb{B}_{\mathrm{opp}}$; in the coefficient basis its basis is not the matrix-unit basis, and every matrix unit is a sum of four of its elements.
 
 $$
 \boxed{\ \dim_\mathbb{C}M_4(\mathbb{C})=16,\quad \dim_\mathbb{R}=32,\quad Z(M_4)=\mathbb{C}I,\quad \dim_\mathbb{C}PGL_4=15,\quad \dim_\mathbb{C}SL_4=15.\ }
@@ -371,7 +371,7 @@ $$
 | $A^*=\bar A^{\mathsf T}$ | the conjugate transpose |
 | $Z(M_4)$ | the centre, $\mathbb{C}I$ |
 | $GL_4$, $SL_4$, $PGL_4$ | the unit group, the determinant-one subgroup, the projective group |
-| $\mathfrak{u}(4)$, $\mathfrak{su}(4)$ | the skew-Hermitian algebra and its traceless part |
+| $\mathfrak{u}(4)$, $\mathfrak{su}(4)$ | the anti-Hermitian algebra and its traceless part |
 | $\operatorname{Herm}_4$ | the Hermitian matrices |
 | $\mathbb{B}$ | the biquaternion algebra, $\mathbb{C}\otimes_\mathbb{R}\mathbb{H}\cong M_2(\mathbb{C})$ |
 | $B$ | the Borel subgroup of upper triangular matrices |

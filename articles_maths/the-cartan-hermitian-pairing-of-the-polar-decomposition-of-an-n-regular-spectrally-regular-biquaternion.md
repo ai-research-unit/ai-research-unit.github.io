@@ -47,7 +47,7 @@ The article takes the following results as established and does not prove them a
 | the four factors, their ranges and their order | *The Polar Decomposition of an N-Regular Biquaternion*, §*The Four Factors* | the word that is bracketed |
 | existence and uniqueness of the word on $\langle\tilde Q\rangle_{\natural}\neq0$ | *Exponential Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion*, §*Existence and Uniqueness* | the factorisation $\tilde Q=\tilde Q_H\tilde Q_0$, its uniqueness and its domain |
 | the matrix model and the transport of ${}^{*}$ | *$M_4(\mathbb{C})$ Axis-Free Representation* and *The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$* | the equation $\tilde Q\tilde Q^{*}=\tilde Q_H^{2}$ |
-| the Hermitian and anti-Hermitian split | *Hermitian and Skew-Hermitian Elements*, §*The Two Halves* | the subspaces $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ and the two exponents |
+| the Hermitian and anti-Hermitian split | *Hermitian and Anti-Hermitian Elements*, §*The Two Halves* | the subspaces $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ and the two exponents |
 | the $*$-unitary group | *The Unitary Group of the Biquaternion Algebra*, §*The Structure of the $*$-Unitary Group* | $\mathrm{U}(\mathbb{B})\cong\mathrm{U}(2)\cong\mathrm{U}(1)\cdot\mathrm{Sp}(1)$ |
 | the positive cone and the positive square root | *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*, §*The Polar Decomposition* | $\tilde Q_H=\sqrt{\tilde Q\tilde Q^{*}}$ and its positivity |
 | the Cartan decomposition | *The Cartan Involution and the Cartan Decomposition*, §*The Cartan Decomposition* | the split of the exponents into $\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ |
@@ -128,7 +128,7 @@ $$
 \mathbb{B} = \mathbb{B}_{\Psi} \oplus \mathbb{B}_{\Phi} , \qquad \mathbb{B}_{\Psi}\cup\mathbb{B}_{\Phi} = \{\tilde{Q} : \tilde{Q}^{*} = \pm\tilde{Q}\} .
 $$
 
-This is the split of *Hermitian and Skew-Hermitian Elements*, §*The Two Halves*.
+This is the split of *Hermitian and Anti-Hermitian Elements*, §*The Two Halves*.
 
 | subspace | condition | scalar part | vector part | matrix model | role |
 |---|---|---|---|---|---|
@@ -487,7 +487,7 @@ The pairing is Hermitian because the exponents of its factors lie in the two inv
 - [Exponential Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion](exponential-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html), for the four exponentials and the existence and uniqueness of the word whose two halves the pairing regroups.
 - [The Polar Decomposition of an N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the four factors, the modulus $\Rho = \sqrt{\langle\tilde Q\rangle_{\natural}}$, the exponential trichotomy and the domain.
 - [The Hamilton Root Pairing of the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion](the-hamilton-root-pairing-of-the-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html) and [The Quaternion Pairing of the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion](the-quaternion-pairing-of-the-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html), for the Hamilton and quaternion pairings, the two partial pairings whose moduli are constructed from the parts of the element.
-- [Hermitian and Skew-Hermitian Elements](hermitian-and-skew-hermitian-elements.html), for the involutive split $\mathbb{B} = \mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ and the two sectors.
+- [Hermitian and Anti-Hermitian Elements](hermitian-and-skew-hermitian-elements.html), for the involutive split $\mathbb{B} = \mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ and the two sectors.
 - [The Unitary Group of the Biquaternion Algebra](the-unitary-group-of-the-biquaternion-algebra.html), for $\mathrm{U}(\mathbb{B})\cong \mathrm{U}(2)$ and the structure of the $*$-unitary elements.
 - [Adjoint Pair of $L$ and $R$ Operators](adjoint-pair-of-l-and-r-operators.html), for the isomorphism $\mathbb{B}\cong\mathsf{M}_2(\mathbb{C})$ and the transport of the conjugation ${}^{*}$ to the matrix adjoint.
 - [The Lorentz Group in Biquaternionic Form — Structure and Representations](../articles_physics/the-lorentz-group-in-biquaternionic-form-structure-and-representations.html), for the unit-norm case $\tilde Q_0 = \tilde U_{\mathrm b}\tilde u_{\mathrm r}$, the boost and the rotation of the physical interpretation.

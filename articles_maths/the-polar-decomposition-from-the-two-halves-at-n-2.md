@@ -52,13 +52,13 @@ It follows the biquaternion article *The Polar Decomposition of a Biquaternion* 
 
 ## The Two Halves
 
-**Proposition.** The positive factor lies in the Hermitian half and the unitary factor lies in the exponential of the skew-Hermitian half, so both factors come from the two halves.
+**Proposition.** The positive factor lies in the Hermitian half and the unitary factor lies in the exponential of the anti-Hermitian half, so both factors come from the two halves.
 
-**Proof.** A positive definite matrix is Hermitian, and a unitary matrix is the exponential of a skew-Hermitian matrix by *The Exponential of a $2\times2$ Matrix and Its Image*.
+**Proof.** A positive definite matrix is Hermitian, and a unitary matrix is the exponential of a anti-Hermitian matrix by *The Exponential of a $2\times2$ Matrix and Its Image*.
 
-**Corollary.** The polar decomposition writes the group as the product of the exponential of the skew-Hermitian half with the exponential of the Hermitian half.
+**Corollary.** The polar decomposition writes the group as the product of the exponential of the anti-Hermitian half with the exponential of the Hermitian half.
 
-**Proof.** The unitary factor is the exponential of a skew-Hermitian matrix, and the positive factor is the exponential of a Hermitian matrix, by the logarithm of *The Exponential of $\operatorname{Sym}_2$: Stretches and the Positive Cone*.
+**Proof.** The unitary factor is the exponential of a anti-Hermitian matrix, and the positive factor is the exponential of a Hermitian matrix, by the logarithm of *The Exponential of $\operatorname{Sym}_2$: Stretches and the Positive Cone*.
 
 **Corollary.** The unitary group is the compact factor and the positive cone is the noncompact factor, and the multiplication map from their product to the group of invertible matrices is a bijection.
 
@@ -110,7 +110,7 @@ It follows the biquaternion article *The Polar Decomposition of a Biquaternion* 
 
 Every invertible $2\times2$ complex matrix is $A=UP$ with $U$ unitary and $P$ positive definite Hermitian, and the factors are unique. The positive factor is the square root of $A^{*}A$ and its eigenvalues are the singular values, while the unitary factor is $AP^{-1}$.
 
-Both factors come from the two halves: the positive factor is the exponential of a Hermitian matrix and the unitary factor is the exponential of a skew-Hermitian matrix. For a singular matrix the decomposition survives with a positive semidefinite factor but is not unique, the freedom being the choice of a unitary on the kernel.
+Both factors come from the two halves: the positive factor is the exponential of a Hermitian matrix and the unitary factor is the exponential of a anti-Hermitian matrix. For a singular matrix the decomposition survives with a positive semidefinite factor but is not unique, the freedom being the choice of a unitary on the kernel.
 
 ## Summary of Notation
 

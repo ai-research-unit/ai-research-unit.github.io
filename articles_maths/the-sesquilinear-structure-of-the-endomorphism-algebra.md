@@ -44,7 +44,7 @@ $$
 
 **Proof.** For the first, $\Phi(STu,v)=\Phi(Tu,S^{\dagger}v)=\Phi(u,T^{\dagger}S^{\dagger}v)$ shows that $T^{\dagger}S^{\dagger}$ satisfies the defining identity of $(ST)^{\dagger}$, and the adjoint is unique. For the second, read the defining identity with the roles of the two slots exchanged, $\Phi(Tv,u)=\Phi(v,T^{\dagger}u)$, and apply $\varsigma$; the sesqui-symmetry $\varsigma\bigl(\Phi(a,b)\bigr)=\Phi(b,a)$ turns the two sides into $\Phi(u,Tv)=\Phi(T^{\dagger}u,v)$, which is the defining identity of $(T^{\dagger})^{\dagger}$, so the two endomorphisms agree. For the third, $\Phi(\lambda Tu,v)=\lambda\,\Phi(Tu,v)=\lambda\,\Phi(u,T^{\dagger}v)$, and $\lambda\,\Phi(u,w)=\Phi\bigl(u,\varsigma(\lambda)w\bigr)$ by the second slot's rule, so $\varsigma(\lambda)T^{\dagger}$ is the adjoint of $\lambda T$. The last statement is $\Phi(u,v)=\Phi(u,\mathrm{id}\,v)$.
 
-**Corollary (the involution, and the sesqualgebra).** The adjoint operation $T\mapsto T^{\dagger}$ is a $\varsigma$-semilinear anti-automorphism of order two of $E$; with it, $E$ is a sesqualgebra over $R$ with the base involution $\varsigma$, in the sense of *Sesqualgebras*. Its fixed elements are the **Hermitian endomorphisms**, $T^{\dagger}=T$, and the endomorphisms on which the adjoint acts as $-1$, $T^{\dagger}=-T$, are the **skew-Hermitian** ones.
+**Corollary (the involution, and the sesqualgebra).** The adjoint operation $T\mapsto T^{\dagger}$ is a $\varsigma$-semilinear anti-automorphism of order two of $E$; with it, $E$ is a sesqualgebra over $R$ with the base involution $\varsigma$, in the sense of *Sesqualgebras*. Its fixed elements are the **Hermitian endomorphisms**, $T^{\dagger}=T$, and the endomorphisms on which the adjoint acts as $-1$, $T^{\dagger}=-T$, are the **anti-Hermitian** ones.
 
 **Proof.** The four laws of the theorem are exactly the defining laws of a $\varsigma$-semilinear involution on an associative algebra with unit.
 
@@ -173,7 +173,7 @@ The worked cases are the complex matrices, where the adjoint is the conjugate tr
 | $\mathrm{U}(E)$ | the unitary endomorphisms, $T^{\dagger}=T^{-1}$ |
 | $\alpha_{U}(T)=UTU^{\dagger}$ | the inner $*$-automorphism of a unitary $U$ |
 | $\sigma_{U}(T)=UT^{\dagger}U^{\dagger}$, $\sigma_{U}^{2}=\alpha_{U^{2}}$ | the adjoint-type involutions |
-| $T^{\dagger}=T$ / $T^{\dagger}=-T$ | the Hermitian / skew-Hermitian endomorphisms |
+| $T^{\dagger}=T$ / $T^{\dagger}=-T$ | the Hermitian / anti-Hermitian endomorphisms |
 | $M_{n}(\mathbb{C})$ | the worked case of the complex matrices, $T^{\dagger}=T^{*}$ |
 | $M_{n}(\mathbb{H})$ | the quaternion case, $\varsigma=\mathrm{id}$, $R$-linear involution, $T^{\dagger}=\overline{T}^{T}$ |
 | $\operatorname{End}_{\mathbb{C}}(\mathbb{B})\cong M_{4}(\mathbb{C})$ | the biquaternion case |
@@ -181,7 +181,7 @@ The worked cases are the complex matrices, where the adjoint is the conjugate tr
 
 ## Further Reading
 
-- Nathan Jacobson, *Structure of Rings* (American Mathematical Society, 1956), for the involutions of a ring, the Hermitian and skew-Hermitian elements and the adjoint of an endomorphism against a form.
+- Nathan Jacobson, *Structure of Rings* (American Mathematical Society, 1956), for the involutions of a ring, the Hermitian and anti-Hermitian elements and the adjoint of an endomorphism against a form.
 - Irving Kaplansky, *Linear Algebra and Geometry: A Second Course* (Allyn and Bacon, 1969), for the sesquilinear and Hermitian forms over fields and division rings, the adjoint and the unitary group of a form.
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions* (American Mathematical Society, 1998), for the involution of the endomorphism algebra of a module with a form and the adjoint algebras of the classical groups.
 - Sterling K. Berberian, *Baer $\ast$-Rings* (Springer, 1972), for the conjugate-linear slot of the adjoint and the two rules for the adjoint of a linear and of a conjugate-linear operator.

@@ -106,13 +106,13 @@ $$
 
 ## The Reality of the Spectrum
 
-**Proposition.** The eigenvalues of a Hermitian matrix are real, those of a skew-Hermitian matrix are purely imaginary, and those of a unitary matrix have modulus one.
+**Proposition.** The eigenvalues of a Hermitian matrix are real, those of a anti-Hermitian matrix are purely imaginary, and those of a unitary matrix have modulus one.
 
-**Proof.** For a Hermitian $X$ and an eigenvector $v$ of norm one, $\lambda=v^{*}Xv$ is real because it equals its conjugate; for a skew-Hermitian $X$ the same computation gives $\lambda=-\bar\lambda$; and for a unitary $X$ it gives $|\lambda|^{2}=v^{*}X^{*}Xv=1$.
+**Proof.** For a Hermitian $X$ and an eigenvector $v$ of norm one, $\lambda=v^{*}Xv$ is real because it equals its conjugate; for a anti-Hermitian $X$ the same computation gives $\lambda=-\bar\lambda$; and for a unitary $X$ it gives $|\lambda|^{2}=v^{*}X^{*}Xv=1$.
 
-**Corollary.** A real symmetric $2\times2$ matrix has a real spectrum, and a real skew-symmetric $2\times2$ matrix has the spectrum $\{\mu i,-\mu i\}$ with $\mu$ real.
+**Corollary.** A real symmetric $2\times2$ matrix has a real spectrum, and a real antisymmetric $2\times2$ matrix has the spectrum $\{\mu i,-\mu i\}$ with $\mu$ real.
 
-**Proof.** The real symmetric case is the Hermitian case, and the real skew-symmetric matrix is $c$ times the rotation by a right angle, whose square is $-c^{2}I$.
+**Proof.** The real symmetric case is the Hermitian case, and the real antisymmetric matrix is $c$ times the rotation by a right angle, whose square is $-c^{2}I$.
 
 **Corollary.** A Hermitian matrix with the spectrum $\{1,1\}$ is the identity, and one with the spectrum $\{0,0\}$ is zero.
 

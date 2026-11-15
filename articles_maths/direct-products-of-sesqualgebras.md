@@ -6,7 +6,7 @@ The direct product of two sesqualgebras is the module $A \times B$ with the comp
 
 The construction is the analogue for sesqualgebras of *Tensor Products of Algebras* in the bilinear layer, and it is the simplest way of manufacturing new sesqualgebras out of old ones: no quotient, no completion and no universal property is needed, and every statement is componentwise. Its one genuinely sesquilinear feature is the involution: the component idempotents are Hermitian for free because the unit is Hermitian, but the central idempotents that cut a splitting of an arbitrary sesqualgebra need not be, and it is exactly the Hermitian central ones that cut the splittings for which the involution descends to the two factors.
 
-The setting is that of *Sesqualgebras*: $R$ is a commutative ring with $1$, $\varsigma$ is an involution of $R$, and a sesqualgebra over $(R,\varsigma)$ is an $R$-module $A$ with a product that is $R$-linear in the first variable and $\varsigma$-semilinear in the second. The datum is part of the structure, and both factors of a direct product are taken over the same datum. The involution of the algebra, the two halves and the derived operation are *Hermitian and Skew-Hermitian Elements* and *The Sesquilinear Product*; the idempotents and the Peirce decomposition of the bilinear case are *Unital Algebras*, §*Idempotents and the Peirce Decomposition*; the Hermitian idempotents are *Hermitian Idempotents and the Peirce Decomposition*; the two-sided ideals are *Ideals and Quotients of a Sesqualgebra*; and the comparison with the tensor product and the free product is *Tensor Products of Algebras*.
+The setting is that of *Sesqualgebras*: $R$ is a commutative ring with $1$, $\varsigma$ is an involution of $R$, and a sesqualgebra over $(R,\varsigma)$ is an $R$-module $A$ with a product that is $R$-linear in the first variable and $\varsigma$-semilinear in the second. The datum is part of the structure, and both factors of a direct product are taken over the same datum. The involution of the algebra, the two halves and the derived operation are *Hermitian and Anti-Hermitian Elements* and *The Sesquilinear Product*; the idempotents and the Peirce decomposition of the bilinear case are *Unital Algebras*, §*Idempotents and the Peirce Decomposition*; the Hermitian idempotents are *Hermitian Idempotents and the Peirce Decomposition*; the two-sided ideals are *Ideals and Quotients of a Sesqualgebra*; and the comparison with the tensor product and the free product is *Tensor Products of Algebras*.
 
 ---
 
@@ -76,7 +76,7 @@ $$
 \boxed{\;H(A \times B) = H(A) \times H(B) , \qquad S(A \times B) = S(A) \times S(B)\;} .
 $$
 
-**Proof.** An element $(a,b)$ is fixed by the involution exactly when $a^{*} = a$ and $b^{*} = b$, that is exactly when $a \in H(A)$ and $b \in H(B)$; the skew-Hermitian case is the same computation with a minus sign.
+**Proof.** An element $(a,b)$ is fixed by the involution exactly when $a^{*} = a$ and $b^{*} = b$, that is exactly when $a \in H(A)$ and $b \in H(B)$; the anti-Hermitian case is the same computation with a minus sign.
 
 **Remark.** The Hermitian Jordan algebra of *The Hermitian Jordan Algebra* and the unitary Lie algebra of *The Unitary Lie Algebra* are therefore the direct products of the corresponding objects of the factors, $J(A \times B) = J(A) \times J(B)$ and $\mathfrak{u}(A \times B) = \mathfrak{u}(A) \times \mathfrak{u}(B)$, with the componentwise products. The example of the complex matrices below is the case $M_n(\mathbb{C}) \oplus M_m(\mathbb{C})$ of that statement.
 
@@ -140,7 +140,7 @@ $$
 
 ### The Complex Matrices
 
-For $A = M_n(\mathbb{C})$ and $B = M_m(\mathbb{C})$ with the conjugate transpose, the direct product $A \times B$ is isomorphic to the algebra of the block-diagonal matrices $\mathrm{diag}(U,V)$ of the two sizes, with the conjugate transpose acting on each block, and its component idempotents are the two block projections of the pair $(1,0)$ and $(0,1)$. Its Hermitian part is the pairs of Hermitian matrices of the two sizes and its skew-Hermitian part the pairs of skew-Hermitian ones. Each factor is simple, so the centre of $A \times B$ is the algebra of the pairs of scalar matrices and the central idempotents are only $(0,0)$, $(1,0)$, $(0,1)$ and $(1,1)$: the central Hermitian idempotents are exactly the component idempotents, and the splittings they cut are the two that recover the factors, $A \times B = (A \times 0) \oplus (0 \times B)$. The remaining Hermitian idempotents are the pairs of orthogonal projections, and a general pair such as $\bigl(\mathrm{diag}(1,0,\dots,0), \mathrm{diag}(1,0,\dots,0)\bigr)$ is idempotent and Hermitian and **not** central: it does not cut a direct product, it gives the Peirce decomposition of *Hermitian Idempotents and the Peirce Decomposition*, and this is exactly the distinction that the criterion above draws.
+For $A = M_n(\mathbb{C})$ and $B = M_m(\mathbb{C})$ with the conjugate transpose, the direct product $A \times B$ is isomorphic to the algebra of the block-diagonal matrices $\mathrm{diag}(U,V)$ of the two sizes, with the conjugate transpose acting on each block, and its component idempotents are the two block projections of the pair $(1,0)$ and $(0,1)$. Its Hermitian part is the pairs of Hermitian matrices of the two sizes and its anti-Hermitian part the pairs of anti-Hermitian ones. Each factor is simple, so the centre of $A \times B$ is the algebra of the pairs of scalar matrices and the central idempotents are only $(0,0)$, $(1,0)$, $(0,1)$ and $(1,1)$: the central Hermitian idempotents are exactly the component idempotents, and the splittings they cut are the two that recover the factors, $A \times B = (A \times 0) \oplus (0 \times B)$. The remaining Hermitian idempotents are the pairs of orthogonal projections, and a general pair such as $\bigl(\mathrm{diag}(1,0,\dots,0), \mathrm{diag}(1,0,\dots,0)\bigr)$ is idempotent and Hermitian and **not** central: it does not cut a direct product, it gives the Peirce decomposition of *Hermitian Idempotents and the Peirce Decomposition*, and this is exactly the distinction that the criterion above draws.
 
 ## Summary
 
@@ -158,7 +158,7 @@ A splitting $A = I \oplus J$ of a unital sesqualgebra into two two-sided ideals 
 | $\pi_{1}, \pi_{2}$ | the two projections, the components of the identity |
 | $e_{1} = (1,0)$, $e_{2} = (0,1)$ | the component idempotents, central and Hermitian |
 | $H(A \times B) = H(A) \times H(B)$ | the Hermitian part of the product |
-| $S(A \times B) = S(A) \times S(B)$ | the skew-Hermitian part of the product |
+| $S(A \times B) = S(A) \times S(B)$ | the anti-Hermitian part of the product |
 | $A = I \oplus J$ | a splitting into two two-sided ideals |
 | $e$ central idempotent | the datum of the splitting, $I = eA$, $J = (1-e)A$ |
 | $e^{*} = e$ | the Hermitian condition that lets the involution descend |

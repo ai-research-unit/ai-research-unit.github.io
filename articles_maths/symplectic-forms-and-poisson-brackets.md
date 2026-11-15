@@ -7,7 +7,7 @@ Among the alternating bilinear forms on a module, the nondegenerate ones occupy 
 
 A symplectic form also makes the commutative algebra of functions on the space into a Lie algebra: the **Poisson bracket** $\{f, g\}$ is a derivation in each argument, so it is a bracket on a commutative algebra, and the Jacobi identity for it is the single identity that makes the bracket a Lie bracket. The Hamiltonian vector fields are the derivations produced by the bracket, the map $f \mapsto X_f$ is a homomorphism of Lie algebras onto them, and its kernel is the constants. Finally, the Poisson bracket is the first-order term of the commutator of a formal deformation of the commutative product, the star product; in this precise sense a symplectic space is the classical shadow of a noncommutative associative algebra.
 
-This article is algebraic throughout: a symplectic form is a form on a module and a Poisson bracket is a bracket on a commutative algebra. Throughout, $R$ denotes a commutative ring with identity $1 \neq 0$ and $K$ denotes a field of characteristic different from $2$ unless a statement says otherwise; $V$ is a free $K$-module of finite rank, that is, a finite-dimensional vector space, and $n$ always denotes half its dimension when a symplectic structure is present, so that $\dim V = 2n$. At the few points where the base is a general commutative ring they are flagged; the alternating-form remark of *Exterior Powers*, that alternation is the condition available over every ring while skew-symmetry needs $2$ invertible, explains why the definitions below are stated through $\omega(u,u)=0$. No physics is invoked.
+This article is algebraic throughout: a symplectic form is a form on a module and a Poisson bracket is a bracket on a commutative algebra. Throughout, $R$ denotes a commutative ring with identity $1 \neq 0$ and $K$ denotes a field of characteristic different from $2$ unless a statement says otherwise; $V$ is a free $K$-module of finite rank, that is, a finite-dimensional vector space, and $n$ always denotes half its dimension when a symplectic structure is present, so that $\dim V = 2n$. At the few points where the base is a general commutative ring they are flagged; the alternating-form remark of *Exterior Powers*, that alternation is the condition available over every ring while antisymmetry needs $2$ invertible, explains why the definitions below are stated through $\omega(u,u)=0$. No physics is invoked.
 
 The notation of *Exterior Powers*, *The Exterior Algebra* and *The Determinant and Alternating Forms* is kept: $\Lambda^n V$ is the $n$-th exterior power, a $2$-form is an element of $\Lambda^2(V^*)$, and the determinant is the scalar action on $\Lambda^{2n}V$.
 
@@ -25,9 +25,9 @@ for all $u \in V$. An alternating bilinear form is also called a **$2$-form**, o
 
 **Proposition.** Let $\omega$ be an alternating bilinear form. Then $\omega(u, v) = -\omega(v, u)$ for all $u, v \in V$. Conversely, if $2$ is invertible in $K$ and $\omega(u, v) = -\omega(v, u)$ for all $u, v$, then $\omega$ is alternating.
 
-**Proof.** Expanding $0 = \omega(u + v, u + v)$ by bilinearity gives $\omega(u, u) + \omega(u, v) + \omega(v, u) + \omega(v, v) = \omega(u, v) + \omega(v, u)$, so the first claim follows. For the second, put $u = v$ in the skew-symmetry to obtain $\omega(u, u) = -\omega(u, u)$, that is $2\omega(u, u) = 0$, and invertibility of $2$ gives $\omega(u, u) = 0$.
+**Proof.** Expanding $0 = \omega(u + v, u + v)$ by bilinearity gives $\omega(u, u) + \omega(u, v) + \omega(v, u) + \omega(v, v) = \omega(u, v) + \omega(v, u)$, so the first claim follows. For the second, put $u = v$ in the antisymmetry to obtain $\omega(u, u) = -\omega(u, u)$, that is $2\omega(u, u) = 0$, and invertibility of $2$ gives $\omega(u, u) = 0$.
 
-**Remark.** Over a field of characteristic $2$ skew-symmetry and symmetry coincide, and the alternating condition is strictly stronger; the symplectic theory is stated through alternation so that it is correct in every characteristic. Over characteristic different from $2$ the two notions agree and the reader may substitute skew-symmetry everywhere.
+**Remark.** Over a field of characteristic $2$ antisymmetry and symmetry coincide, and the alternating condition is strictly stronger; the symplectic theory is stated through alternation so that it is correct in every characteristic. Over characteristic different from $2$ the two notions agree and the reader may substitute antisymmetry everywhere.
 
 ### The Matrix of a Form and the Radical
 
@@ -227,7 +227,7 @@ which is nonzero because $\omega$ is nondegenerate; in a symplectic basis, where
 
 **Definition.** Let $A$ be a commutative $R$-algebra with product written $fg$. A **Poisson bracket** on $A$ is an $R$-bilinear map $\{\cdot, \cdot\} : A \times A \to A$ such that for all $f, g, h \in A$:
 
-**(a)** $\{f, g\} = -\{g, f\}$ (skew-symmetry);
+**(a)** $\{f, g\} = -\{g, f\}$ (antisymmetry);
 
 **(b)** $\{f, gh\} = \{f, g\}h + g\{f, h\}$ (the Leibniz rule, or derivation property);
 

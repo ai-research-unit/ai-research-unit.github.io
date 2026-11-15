@@ -6,7 +6,7 @@
 
 The article proves the split $M_2(\mathbb{R})=\operatorname{Sym}_2(\mathbb{R})\oplus\Lambda^{2}\mathbb{R}^{2}$, exhibits the antisymmetric half as the line $\mathbb{R}J$, computes the bracket of two symmetric matrices as a cross product on that line, shows that the adjoint of $J$ is a complex structure on the traceless symmetric plane, and reads the cone and the idempotents of the symmetric half. It assumes *The Involutions of $M_2(\mathbb{C})$ over $\mathbb{R}$ and over $\mathbb{C}$* for the transpose and its fixed space, and *The Two Base Fields: $M_2(\mathbb{R})$ inside $M_2(\mathbb{C})$* for the real algebra.
 
-It defers the product rules to *The Four Multiplication Tables: $SS$, $SK$, $KS$, $KK$ at $n=2$*, the orthogonal-complement statement to *The Two Halves as Orthogonal Complements at $n=2$*, and the same split over $\mathbb{C}$ to *The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian at $n=2$*. In the biquaternion language the two halves are the vectors and the bivectors, which is *Subspaces and Decompositions of the Biquaternion Algebra*.
+It defers the product rules to *The Four Multiplication Tables: $SS$, $SK$, $KS$, $KK$ at $n=2$*, the orthogonal-complement statement to *The Two Halves as Orthogonal Complements at $n=2$*, and the same split over $\mathbb{C}$ to *The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian at $n=2$*. In the biquaternion language the two halves are the vectors and the bivectors, which is *Subspaces and Decompositions of the Biquaternion Algebra*.
 
 ## The Split over $\mathbb{R}$
 

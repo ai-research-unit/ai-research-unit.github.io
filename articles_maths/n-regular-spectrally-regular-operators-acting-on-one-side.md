@@ -32,7 +32,7 @@ O_{\tilde Q} & D_{\tilde Q}
 \end{pmatrix},
 $$
 
-with the symmetrized and the skew-symmetrized parts
+with the symmetrized and the antisymmetrized parts
 
 $$
 D_{\tilde Q}(\tilde X)=\tfrac12\bigl(\tilde Q\tilde X+\tilde X\tilde Q^{*}\bigr),\qquad
@@ -276,7 +276,7 @@ Multiplication by $\tilde Q$ is left multiplication by $\Delta$ on the matrix, h
 
 ### The Block Decomposition
 
-**Definition.** For a parameter $\tilde Q$ the **symmetrized** and the **skew-symmetrized** multiplication operators are
+**Definition.** For a parameter $\tilde Q$ the **symmetrized** and the **antisymmetrized** multiplication operators are
 
 $$
 D_{\tilde Q}(\tilde X)=\tfrac12\bigl(\tilde Q\tilde X+\tilde X\tilde Q^{*}\bigr),\qquad
@@ -337,7 +337,7 @@ the entry $i\operatorname{Im}(c)$ being the multiplication by $i$ on a sector ti
 
 *Proof.* $D_c(\tilde X)=\tfrac12(c\tilde X+\tilde X\bar c)=\operatorname{Re}(c)\tilde X$ and $O_c(\tilde X)=\tfrac12(c\tilde X-\tilde X\bar c)=i\operatorname{Im}(c)\tilde X$.
 
-**Remark (the off-diagonal block).** The block $O_{\tilde Q}$ is the skew-symmetrized part of the multiplication. It vanishes for a real scalar, and for a central imaginary scalar it is the complex structure times the imaginary part. It is the part of the multiplication that changes the sector, and it is the part that the two-sided operator removes: the product $L_{\tilde Q}R_{\tilde Q^{*}}$ is block diagonal, because the right factor restores the sector that the left factor changes.
+**Remark (the off-diagonal block).** The block $O_{\tilde Q}$ is the antisymmetrized part of the multiplication. It vanishes for a real scalar, and for a central imaginary scalar it is the complex structure times the imaginary part. It is the part of the multiplication that changes the sector, and it is the part that the two-sided operator removes: the product $L_{\tilde Q}R_{\tilde Q^{*}}$ is block diagonal, because the right factor restores the sector that the left factor changes.
 
 ### The Sector Criterion
 
@@ -724,7 +724,7 @@ The one-sided multiplication is a left translation of the algebra. The two-sided
 | $r>0$, $\theta_{\mathrm{pha}}\in\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right]$ | the scale and the phase angle |
 | $\tilde U_{\mathrm b}=\exp(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})$ | the Hermitian positive unit-norm boost |
 | $\tilde u_{\mathrm r}=\exp(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r})$ | the unit real quaternion rotor |
-| $D_{\tilde Q},O_{\tilde Q}$ | the symmetrized and skew-symmetrized multiplication blocks |
+| $D_{\tilde Q},O_{\tilde Q}$ | the symmetrized and antisymmetrized multiplication blocks |
 | $\lambda_\pm=Q_t\pm iB$, $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$ | the two eigenvalues of $L_{\tilde Q}$ |
 | $\tilde\Pi_\pm,\vec\Upsilon_\pm$ | the eigenprojections and the normalised nilpotents of the eigenbasis |
 | $S_+=\mathbb{B}\tilde\Pi_+$, $S_-=\mathbb{B}\tilde\Pi_-$ | the two spinor spaces (Peirce copy), the Peirce carriers (minimal left ideals here) |

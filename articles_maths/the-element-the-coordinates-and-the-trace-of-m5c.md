@@ -52,7 +52,7 @@ $$
 
 **Proof.** The product formula is polynomial with real coefficients in the real and imaginary parts; the conjugation negates the imaginary part. The complex structure is the multiplication by $i$, a real-linear map $J$ with $J^2=-1$; the real algebra with $J$ is the complex algebra.
 
-**Remark.** **The real dimension $50$ is the dimension of the algebra as a real vector space, not the dimension of a real form.** The real form $\mathfrak{u}(5)$ has dimension $25$ and is not the whole algebra; it is the skew-Hermitian half of *The Matrix Algebra*. The fifty real coordinates are the coordinates of the complex algebra read over $\mathbb{R}$; the twenty-five complex coordinates are the coordinates over $\mathbb{C}$.
+**Remark.** **The real dimension $50$ is the dimension of the algebra as a real vector space, not the dimension of a real form.** The real form $\mathfrak{u}(5)$ has dimension $25$ and is not the whole algebra; it is the anti-Hermitian half of *The Matrix Algebra*. The fifty real coordinates are the coordinates of the complex algebra read over $\mathbb{R}$; the twenty-five complex coordinates are the coordinates over $\mathbb{C}$.
 
 ### The Element as a Vector
 

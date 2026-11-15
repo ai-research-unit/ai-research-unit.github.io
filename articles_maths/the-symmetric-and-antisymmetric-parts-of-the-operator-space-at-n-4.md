@@ -74,7 +74,7 @@ and they sum to $512$.
 
 **Proof.** The adjoint of a difference is the difference of the adjoints.
 
-**Corollary.** Its Hilbert–Schmidt adjoint is $T\mapsto[A^{\ast},T]$, so the commutator operator is skew-Hermitian exactly when $A$ is skew-Hermitian up to a scalar.
+**Corollary.** Its Hilbert–Schmidt adjoint is $T\mapsto[A^{\ast},T]$, so the commutator operator is anti-Hermitian exactly when $A$ is anti-Hermitian up to a scalar.
 
 **Proof.** $\Phi_{A,I}^{\ast}-\Phi_{I,A}^{\ast}=\Phi_{A^{\ast},I}-\Phi_{I,A^{\ast}}$, and $\operatorname{ad}_{A^{\ast}}=-\operatorname{ad}_A$ forces $A^{\ast}+A$ to be a scalar.
 
@@ -87,7 +87,7 @@ $$
 
 **Proof.** The derivation property is the Jacobi identity for the associator; for the skewness, $\operatorname{tr}([A,T]U)+\operatorname{tr}(T[A,U])=\operatorname{tr}(ATU-TAU+TAU-TUA)=\operatorname{tr}(ATU)-\operatorname{tr}(TUA)=0$ by cyclicity.
 
-**Corollary.** The derivation is skew for the Hilbert–Schmidt pairing exactly when $A$ is skew-Hermitian, since $\langle[A,T],U\rangle+\langle T,[A,U]\rangle=\operatorname{tr}(T^{\ast}[A^{\ast},U])$ up to a commutator.
+**Corollary.** The derivation is skew for the Hilbert–Schmidt pairing exactly when $A$ is anti-Hermitian, since $\langle[A,T],U\rangle+\langle T,[A,U]\rangle=\operatorname{tr}(T^{\ast}[A^{\ast},U])$ up to a commutator.
 
 **Proof.** The second computation with $A^{\ast}$ in place of $A$, and the vanishing of the mixed term exactly when $A^{\ast}=-A$.
 
@@ -129,7 +129,7 @@ $$
 
 The operator space has complex dimension $256$ and carries two commuting involutions, the plain transpose and the Hilbert–Schmidt adjoint. The four simultaneous eigenspaces have real dimensions $136$, $136$, $120$ and $120$, and they sum to the real dimension $512$; the two complex-linear halves have dimensions $136$ and $120$, the symmetric and antisymmetric parts of a $16\times16$ matrix space.
 
-The model operator $X\mapsto AXB$ has plain adjoint $X\mapsto BXA$ and Hilbert–Schmidt adjoint $X\mapsto A^{\ast}XB^{\ast}$, and the commutator $T\mapsto[A,T]$ is a difference of two model operators. The commutator is always skew for the trace pairing and is skew for the Hilbert–Schmidt pairing exactly when $A$ is skew-Hermitian.
+The model operator $X\mapsto AXB$ has plain adjoint $X\mapsto BXA$ and Hilbert–Schmidt adjoint $X\mapsto A^{\ast}XB^{\ast}$, and the commutator $T\mapsto[A,T]$ is a difference of two model operators. The commutator is always skew for the trace pairing and is skew for the Hilbert–Schmidt pairing exactly when $A$ is anti-Hermitian.
 
 The two scales must be kept apart: the halves of the algebra are a ten and a six inside a sixteen, the halves of the operator space a $136$ and a $120$ inside a $256$, and the left regular representation does not carry one to the other in the naive way.
 

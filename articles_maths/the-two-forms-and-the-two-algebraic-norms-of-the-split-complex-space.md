@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The split-complex space carries two forms and two algebraic norms, and they are the collapse of the four and the four of the biquaternion layer. This article writes the two forms on the coordinates, gives their Gram matrices, computes their realified signatures, and reads the two algebraic norms as the diagonals of the forms. It closes on the reversal: over the complex field the definite form is the sesquilinear one and its isotropic set is a point, and here the definite form is the plain one and the isotropic set is a pair of lines.
+The split-complex space carries two forms and two algebraic norms, and they are the collapse of the four forms and the four norms of the general theory. This article writes the two forms on the coordinates, gives their Gram matrices, computes their realified signatures, and reads the two algebraic norms as the diagonals of the forms. It closes on the reversal: over the complex field the definite form is the sesquilinear one and its isotropic set is a point, and here the definite form is the plain one and the isotropic set is a pair of lines.
 
 The claim is a claim about which form is definite. **The plain form is definite and the Hermitian form is indefinite**, the opposite of the complex field. One sign, $j^2=+1$, does it: the reflection $J$ preserves the plain form and reverses the Hermitian one, so the realification rules exchange places.
 
@@ -12,11 +12,11 @@ The two forms are built in *The Two Products of the Split-Complex Space*, which 
 
 ### The Four Letters
 
-The corpus writes the four forms with two arguments and the four algebraic norms with one, and the four letters are $P$, $N$, $H$ and $\mathrm{Kr}$: plain, quaternionic, Hermitian and Krein (*Product and Form Conventions*, and *Algebra and Element Conventions* for the letters). On $\mathbb{B}$ the four forms are four, because the quaternionic mark reverses the vector part.
+The corpus writes the four forms with two arguments and the four algebraic norms with one, and the four letters are $P$, $N$, $H$ and $\mathrm{Kr}$ (*Product and Form Conventions*, and *Algebra and Element Conventions* for the letters). In a non-commutative algebra with a vector part the four forms are four, because the intrinsic conjugation reverses the vector part.
 
 ### The Collapse
 
-**Proposition.** On $\mathbb{C}_{\mathrm{spl}}$ the quaternionic mark is the identity, so
+**Proposition.** On $\mathbb{C}_{\mathrm{spl}}$ the intrinsic conjugation is the identity, so
 
 $$
 P=N, \qquad H=\mathrm{Kr},
@@ -24,7 +24,7 @@ $$
 
 and the four forms are two.
 
-**Proof.** The quaternionic form is $N(A,C)=A^{\natural}C$ and the Krein form is $\mathrm{Kr}(A,C)=A^{\natural}\bar C$. An element of $\mathbb{C}_{\mathrm{spl}}$ has no vector part, so $A^{\natural}=A$ for every element, and the two reduce to $P$ and $H$.
+**Proof.** The form $N$ is $N(A,C)=A^{\natural}C$ and the Krein form is $\mathrm{Kr}(A,C)=A^{\natural}\bar C$. An element of $\mathbb{C}_{\mathrm{spl}}$ has no vector part, so $A^{\natural}=A$ for every element, and the two reduce to $P$ and $H$.
 
 The collapse is the same collapse as that of the four products (*The Two Products of the Split-Complex Space*), seen at the level of the forms: four letters, two maps.
 
@@ -66,9 +66,9 @@ since $\operatorname{Re}P(1,1)=1$, $\operatorname{Re}P(1,j)=0$ and $\operatornam
 
 **Proof.** $\operatorname{Re}P(A,A)$ is the real part of $A^2=(a^2+b^2)+2ab\,j$, that is $a^2+b^2$, a sum of two squares. The Gram matrix is the identity, so the signature is $(2,0)$.
 
-### The Cone of Squares Is the Whole Plane
+### The Positive Set Is the Whole Plane
 
-A definite form has no isotropic vector, so the set of $A$ with $\operatorname{Re}P(A,A)\ge0$ is the whole plane, the boundary of the set being empty. That is what "the plane as the cone of squares" means: the positivity of $P$ excludes nothing.
+A definite form has no isotropic vector, so the set of $A$ with $\operatorname{Re}P(A,A)\ge0$ is the whole plane, the boundary of the set being empty. That is what "the positive set is the whole plane" means: the positivity of $P$ excludes nothing.
 
 The image of the diagonal of $P$ is a smaller set. The values $P(A,A)=A^2$ fill the forward cone $a^2\ge b^2$ and not the plane, because the squaring is not onto (*The Square Map of the Split-Complex Space*). The two statements are not in conflict: the **positive set** of a definite form is the plane, and the **image of its diagonal map** is the cone. The first is a property of the form, the second of the square.
 
@@ -177,7 +177,7 @@ Over $\mathbb{C}$ the norm $A\bar A$ is definite and gives the modulus, and the 
 
 ## Summary
 
-The space carries two forms, the plain $P(A,C)=AC$ and the Hermitian $H(A,C)=A\bar C$, the four forms of the biquaternion layer collapsing to them because the quaternionic mark is the identity: $P=N$ and $H=\mathrm{Kr}$. Both have the Gram matrix $[1]$ over the free module of rank one and are separated by symmetry, $P$ being symmetric and $H$ conjugate-symmetric.
+The space carries two forms, the plain $P(A,C)=AC$ and the Hermitian $H(A,C)=A\bar C$, the four forms of the general theory collapsing to them because the intrinsic conjugation is the identity: $P=N$ and $H=\mathrm{Kr}$. Both have the Gram matrix $[1]$ over the free module of rank one and are separated by symmetry, $P$ being symmetric and $H$ conjugate-symmetric.
 
 $P$ realifies with signature $(2,0)$ and is positive definite, so its positive set is the whole plane; the image of its diagonal is the forward cone, because the square map is not onto. $H$ realifies with signature $(1,1)$ and is indefinite, with isotropic set the pair of null lines $\mathbb{R}\Pi_+\cup\mathbb{R}\Pi_-$, which is the set of zero divisors with the origin adjoined.
 
@@ -189,7 +189,7 @@ The two algebraic norms are $P(A)=A^2$, $\mathbb{C}_{\mathrm{spl}}$-valued and a
 |---|---|
 | $P(A,C)=AC$ | The plain form, symmetric, definite of signature $(2,0)$ |
 | $H(A,C)=A\bar C$ | The Hermitian form, conjugate-symmetric, indefinite of signature $(1,1)$ |
-| $N=\mathrm{Kr}$ | The quaternionic forms, equal to $P$ and $H$ here |
+| $N=\mathrm{Kr}$ | The forms $N$ and $\mathrm{Kr}$, equal to $P$ and $H$ here |
 | $P(A)=A^2$ | The plain algebraic norm, $\mathbb{C}_{\mathrm{spl}}$-valued, anisotropic |
 | $N(A)=A\bar A=a^2-b^2$ | The Hermitian algebraic norm, real, indefinite |
 | $\operatorname{Re}P$, $\operatorname{Re}H$ | The realifications, with Gram matrices $\mathrm{diag}(1,1)$ and $\mathrm{diag}(1,-1)$ |

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**Every commutator map $\operatorname{ad}_A(X)=[A,X]$ is a derivation of $M_4(\mathbb{C})$, every derivation is of this form because the algebra is central simple, and the space of them is $\mathfrak{sl}_4$ of dimension $15$; the map is skew for the trace form for every $A$ and skew for the Hilbert–Schmidt form only when $A$ is skew-Hermitian, and the difference between the two statements is the involution, not the derivation.**
+**Every commutator map $\operatorname{ad}_A(X)=[A,X]$ is a derivation of $M_4(\mathbb{C})$, every derivation is of this form because the algebra is central simple, and the space of them is $\mathfrak{sl}_4$ of dimension $15$; the map is skew for the trace form for every $A$ and skew for the Hilbert–Schmidt form only when $A$ is anti-Hermitian, and the difference between the two statements is the involution, not the derivation.**
 
 The article proves the Leibniz rule and the representation property, records the inner-derivation theorem with its dimension count, computes the two skewness conditions and their adjoints, determines the spectrum of $\operatorname{ad}_A$, and explains why the trace form cannot distinguish the symmetric from the antisymmetric directions while the Hilbert–Schmidt form can.
 
@@ -78,15 +78,15 @@ $$
 
 **Proof.** $\langle\operatorname{ad}_A X,Y\rangle=\operatorname{tr}((AX-XA)^{\ast}Y)=\operatorname{tr}(X^{\ast}A^{\ast}Y)-\operatorname{tr}(A^{\ast}X^{\ast}Y)=\langle X,A^{\ast}Y\rangle-\langle X,YA^{\ast}\rangle=\langle X,\operatorname{ad}_{A^{\ast}}Y\rangle$ after moving $A^{\ast}$ to the right by cyclicity.
 
-**Corollary.** $\operatorname{ad}_A$ is skew for the Hilbert–Schmidt form exactly when $A$ differs from a skew-Hermitian matrix by a real scalar.
+**Corollary.** $\operatorname{ad}_A$ is skew for the Hilbert–Schmidt form exactly when $A$ differs from a anti-Hermitian matrix by a real scalar.
 
-**Proof.** Skewness is $\operatorname{ad}_{A^{\ast}}=-\operatorname{ad}_A$, that is $A^{\ast}+A\in\mathbb{C}\mathrm I_4$; writing $A^{\ast}+A=\mu\mathrm I$ and taking adjoints gives $\bar\mu=\mu$, so $\mu$ is real and $A-\tfrac{\mu}{2}\mathrm I_4$ is skew-Hermitian, with the same adjoint map since the scalar part is central.
+**Proof.** Skewness is $\operatorname{ad}_{A^{\ast}}=-\operatorname{ad}_A$, that is $A^{\ast}+A\in\mathbb{C}\mathrm I_4$; writing $A^{\ast}+A=\mu\mathrm I$ and taking adjoints gives $\bar\mu=\mu$, so $\mu$ is real and $A-\tfrac{\mu}{2}\mathrm I_4$ is anti-Hermitian, with the same adjoint map since the scalar part is central.
 
 **Corollary.** The derivations that are skew for the Hilbert–Schmidt form are exactly those of $\operatorname{ad}\mathfrak{u}(4)$, of dimension $15$.
 
-**Proof.** The skew-Hermitian matrices form $\mathfrak{u}(4)$ of real dimension $16$, and the scalars in it are the single imaginary line, so the image has dimension $15$.
+**Proof.** The anti-Hermitian matrices form $\mathfrak{u}(4)$ of real dimension $16$, and the scalars in it are the single imaginary line, so the image has dimension $15$.
 
-**The adjoint is a different operator.** For the trace form the adjoint of $\operatorname{ad}_A$ is $-\operatorname{ad}_A$; for the Hilbert–Schmidt form it is $\operatorname{ad}_{A^{\ast}}$, which is a different derivation unless $A$ is skew-Hermitian.
+**The adjoint is a different operator.** For the trace form the adjoint of $\operatorname{ad}_A$ is $-\operatorname{ad}_A$; for the Hilbert–Schmidt form it is $\operatorname{ad}_{A^{\ast}}$, which is a different derivation unless $A$ is anti-Hermitian.
 
 **Proof.** Compare the two displayed formulas.
 
@@ -114,7 +114,7 @@ $$
 
 The commutator map is a derivation for every element, the representation property holds by the Jacobi identity, and every derivation of the algebra is inner, so the derivations form $\mathfrak{sl}_4$ of dimension $15$.
 
-The map is skew for the trace pairing for every $A$, with no condition, because the trace is cyclically invariant; it is skew for the Hilbert–Schmidt form exactly when $A$ is skew-Hermitian up to a real scalar, that is when the derivation lies in $\operatorname{ad}\mathfrak{u}(4)$.
+The map is skew for the trace pairing for every $A$, with no condition, because the trace is cyclically invariant; it is skew for the Hilbert–Schmidt form exactly when $A$ is anti-Hermitian up to a real scalar, that is when the derivation lies in $\operatorname{ad}\mathfrak{u}(4)$.
 
 The difference between the two statements is the involution and not the derivation: the trace form is invariant under all of $\mathrm{GL}_4$, the Hilbert–Schmidt form only under $U(4)$, and the adjoint needed for the second statement is built from the conjugate transpose. The spectrum of $\operatorname{ad}_A$ is the sixteen differences of eigenvalues, and the kernel is the centraliser, of dimension at least four.
 

@@ -147,7 +147,7 @@ $$
 [X, Y](f) = X(Y(f)) - Y(X(f)), \qquad f \in C^\infty(M).
 $$
 
-**Proposition.** The bracket is well defined by the displayed expression, is skew-symmetric and bilinear over $\mathbb{R}$, satisfies the **Jacobi identity**
+**Proposition.** The bracket is well defined by the displayed expression, is antisymmetric and bilinear over $\mathbb{R}$, satisfies the **Jacobi identity**
 
 $$
 [X, [Y, Z]] + [Y, [Z, X]] + [Z, [X, Y]] = 0,
@@ -161,7 +161,7 @@ $$
 
 for $f \in C^\infty(M)$. It is not a tensor: the value of $[X, Y]$ at $p$ depends on the first derivatives of the coefficients of $X$ and $Y$, not merely on their values at $p$.
 
-**Proof.** The expression $X(Y(f)) - Y(X(f))$ is a derivation of $C^\infty(M)$ in $f$: the second-order terms cancel, because $XY(f) - YX(f)$ is the commutator of two first-order differential operators and its symbol is symmetric. Hence it defines a smooth vector field. Skew-symmetry is immediate; the Jacobi identity is the associativity of composition of the operators $X, Y, Z$ arranged cyclically; the Leibniz rule follows by expanding $X(fY)(h) - fY(X(h))$.
+**Proof.** The expression $X(Y(f)) - Y(X(f))$ is a derivation of $C^\infty(M)$ in $f$: the second-order terms cancel, because $XY(f) - YX(f)$ is the commutator of two first-order differential operators and its symbol is symmetric. Hence it defines a smooth vector field. Antisymmetry is immediate; the Jacobi identity is the associativity of composition of the operators $X, Y, Z$ arranged cyclically; the Leibniz rule follows by expanding $X(fY)(h) - fY(X(h))$.
 
 **Theorem.** The pair $(\mathrm{X}(M), [\cdot, \cdot])$ is a real Lie algebra, the **Lie algebra of the manifold** $M$. For a Lie group, the left-invariant vector fields form a subalgebra isomorphic to the Lie algebra of the group, and the two notions agree; this is developed in *Lie Groups* and *The Lie Algebra and the Exponential Map*.
 

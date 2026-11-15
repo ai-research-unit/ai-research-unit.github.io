@@ -18,7 +18,7 @@ M_4(\mathbb{C})=\operatorname{Herm}_4\oplus\mathfrak{u}(4)
 $$
 as real vector spaces, with the projections $\tfrac12(A+A^{\ast})$ and $\tfrac12(A-A^{\ast})$.
 
-**Proof.** A Hermitian matrix has four real diagonal entries and six complex off-diagonal ones, so $4+12=16$ real parameters; the same count for the skew-Hermitian ones with the diagonal purely imaginary; the two projections are idempotent, have the two spaces as images and add to the identity.
+**Proof.** A Hermitian matrix has four real diagonal entries and six complex off-diagonal ones, so $4+12=16$ real parameters; the same count for the anti-Hermitian ones with the diagonal purely imaginary; the two projections are idempotent, have the two spaces as images and add to the identity.
 
 **Corollary.** The real dimension of $M_4(\mathbb{C})$ is $32$, twice the dimension of each half.
 
@@ -26,7 +26,7 @@ as real vector spaces, with the projections $\tfrac12(A+A^{\ast})$ and $\tfrac12
 
 **Corollary.** The two halves are orthogonal for the Hilbert–Schmidt form but not for the trace form.
 
-**Proof.** $\operatorname{tr}(H^{\ast}K)=\operatorname{tr}(HK)$ vanishes for $H$ Hermitian and $K$ skew-Hermitian because the product is skew-Hermitian with real trace; the trace pairing restricted to the two halves is indefinite.
+**Proof.** $\operatorname{tr}(H^{\ast}K)=\operatorname{tr}(HK)$ vanishes for $H$ Hermitian and $K$ anti-Hermitian because the product is anti-Hermitian with real trace; the trace pairing restricted to the two halves is indefinite.
 
 **Corollary.** The decomposition is the eigenspace decomposition of the involution $A\mapsto A^{\ast}$, with eigenvalues $+1$ and $-1$.
 
@@ -124,7 +124,7 @@ as real vector spaces, with the projections $\tfrac12(A+A^{\ast})$ and $\tfrac12
 
 ## Summary
 
-The complex matrix space splits into the Hermitian and the skew-Hermitian halves, each of real dimension sixteen, and the split is the eigenspace decomposition of the adjoint involution. The singular set of each half is a hypersurface, the zero set of the determinant.
+The complex matrix space splits into the Hermitian and the anti-Hermitian halves, each of real dimension sixteen, and the split is the eigenspace decomposition of the adjoint involution. The singular set of each half is a hypersurface, the zero set of the determinant.
 
 The invertible real symmetric matrices have five components indexed by inertia, grouped by the sign of the determinant into three and two, so the sign of the determinant alone does not separate them; the invertible real skew matrices have two components indexed by the sign of the Pfaffian. Each class is a homogeneous space of the general linear group.
 

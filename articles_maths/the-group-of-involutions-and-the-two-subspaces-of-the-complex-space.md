@@ -4,11 +4,11 @@
 
 The complex algebra carries one distinguished map beside its product: the conjugation. Read as an operation of the algebra, that map is an involution, and the family of all such involutions is a group. This article computes the group, gives the sign table of its members, lists the four fixed and anti-fixed spaces, names the one decomposition of the space that carries content, counts the intersections, and shows that every count is forced by the field property.
 
-The answer is short. The group is $V_2$, the two-element group, which is here the Galois group of $\mathbb{C}/\mathbb{R}$. The four spaces are the whole space and the origin for the identity, the real line and the imaginary line for the conjugation. One decomposition carries content, and one intersection is non-zero. The biquaternion algebra, by contrast, has a Klein four-group of involutions, three content-bearing decompositions and fifteen pairwise intersections of its six spaces. The whole difference comes from one fact: $\mathbb{C}$ is commutative, so an anti-automorphism is an automorphism, and there is no room for a second proper involution.
+The answer is short. The group is $V_2$, the two-element group, which is here the Galois group of $\mathbb{C}/\mathbb{R}$. The four spaces are the whole space and the origin for the identity, the real line and the imaginary line for the conjugation. One decomposition carries content, and one intersection is non-zero. Every count is forced by one fact: $\mathbb{C}$ is commutative, so an anti-automorphism is an automorphism, and there is no room for a second proper involution.
 
 The multiplication of the field is *Complex Algebra*; the class catalogue that records the fixed field is *The Classes of Element of the Complex Algebra*; the field property that forces the count is *The Specificities of the Complex Algebra*; the Galois reading of the same two-element group is *Galois Theory of ℂ/ℝ*. The two products the space carries are *The Two Products of the Complex Space*, and the two forms are *The Two Forms and the Two Algebraic Norms of the Complex Space*.
 
-**Interpretation.** The element is $Q=q+iq'$ with the real coordinates $q$ and $q'$, and a second element is $Q_2=q_2+iq'_2$. The base involution is the bar, $\bar Q=q-iq'$, and the Hermitian conjugation is the same map, ${}^{*}=\bar{\cdot}$. The quaternionic conjugation ${}^{\natural}$ of the biquaternion corpus is the identity map on $\mathbb{C}$, because it acts on a vector part and this algebra has none.
+**Interpretation.** The element is $Q=q+iq'$ with the real coordinates $q$ and $q'$, and a second element is $Q_2=q_2+iq'_2$. The base involution is the bar, $\bar Q=q-iq'$, and the Hermitian conjugation is the same map, ${}^{*}=\bar{\cdot}$. The intrinsic conjugation ${}^{\natural}$ of the general theory is the identity map on $\mathbb{C}$, because it acts on a vector part and this algebra has none.
 
 ## The Group of Involutions
 
@@ -20,14 +20,7 @@ The multiplication of the field is *Complex Algebra*; the class catalogue that r
 
 **Remark (why the anti-automorphisms add nothing).** In a commutative ring an anti-automorphism is an automorphism, since the two product rules coincide. The definition above therefore names one class twice, and the count of two is a count of maps, not of kinds.
 
-**Remark (the collapse of the Klein group).** On the biquaternion algebra the four maps $\{\mathrm{id},{}^{\natural},{}^{*},{}^{\natural*}\}$ are distinct involutions and form the Klein four-group $V_4$. Here ${}^{\natural}$ is the identity and ${}^{*}$ is the bar, so the four settings of the general theory collapse two-and-two, and the group falls from $V_4$ to $V_2$. The collapse is not an accident of notation: ${}^{\natural}$ negates the vector part of an element, and a complex element has no vector part. The table records the four and their images.
-
-| the biquaternion involution | its image on $\mathbb{C}$ |
-|---|---|
-| $\mathrm{id}$ | $\mathrm{id}$ |
-| ${}^{\natural}$ | $\mathrm{id}$ |
-| ${}^{*}$ | $\bar{\cdot}$ |
-| ${}^{\natural*}$ | $\bar{\cdot}$ |
+**Remark (the two surviving settings).** The general theory carries four settings of the involution, $\{\mathrm{id},{}^{\natural},{}^{*},{}^{\natural*}\}$. Here ${}^{\natural}$ is the identity and ${}^{*}$ is the bar, so the four settings collapse two-and-two and give the two maps of the theorem. The collapse is not an accident of notation: ${}^{\natural}$ negates the vector part of an element, and a complex element has no vector part.
 
 ## The Sign Table of the Two Involutions
 
@@ -76,7 +69,7 @@ The imaginary line is a real subspace of dimension one, and it is not a subalgeb
 
 *Proof.* The decomposition of the identity is $\mathbb{C}\oplus\{0\}$, and its second summand is zero, so it carries no content. The decomposition of the conjugation has the two lines of dimension one, so both summands are non-zero.
 
-**Remark (the count against the biquaternion algebra).** The biquaternion algebra carries three such decompositions, into centre and vector part, into quaternion and antiquaternion subspaces, and into Hermitian and anti-Hermitian subspaces, one to each of the three proper involutions of $V_4$. Here there is one, because there is one proper involution. The count of decompositions equals the count of non-identity elements of the group, and the group has one non-identity element.
+**Remark (the count of decompositions).** The count of decompositions equals the count of non-identity elements of the group. Here there is one, because there is one proper involution; a larger involution group would give one decomposition per proper involution, and the count would rise with it.
 
 ## The One Non-Zero Intersection
 
@@ -107,7 +100,7 @@ The four spaces are $\mathbb{C}$, $\mathbb{R}$, $\{0\}$ and $i\mathbb{R}$. The t
 
 **Remark (why the count is one and not two).** Read over all six pairs the number of non-zero intersections is two, and the second one adds nothing: $\mathbb{C}\cap i\mathbb{R}$ is the anti-fixed space read once more, not a new space. The count that carries information is the count of the same-kind comparisons, and that count is one. The real line is therefore the one non-zero intersection: it is at once the fixed space of the conjugation, the fixed field of the group, and the meet of the whole algebra with the proper fixed space.
 
-**Remark (the count against the biquaternion algebra).** On $\mathbb{B}$ the same construction gives six spaces and fifteen pairs, and the fifteen intersections have dimensions $0$, $1$ and $3$. Here four spaces give six pairs, and one same-kind pair meets non-trivially. The number falls with the number of spaces, and it falls for the reason the whole article gives: the group has two elements, so it produces four spaces and not six.
+**Remark (the count of pairs).** Here four spaces give six pairs, and one same-kind pair meets non-trivially. The number of pairs rises with the number of spaces, and the number of spaces rises with the number of involutions; the group has two elements, so it produces four spaces.
 
 ## Why the Count Is Forced
 
@@ -115,11 +108,11 @@ Four statements were proved and each reduces to a count of elements of $V_2$. Tw
 
 The strongest objection is that the classification of the real-linear involutions of the plane is larger than the classification of the algebra involutions. There are, for instance, the reflections, and any real-linear map with square one and eigenvalues $+1$ and $-1$ is an involution of the space. The answer is that those maps are not involutions of the algebra: the definition requires the product to be preserved or reversed, and a reflection does not preserve it. If the wider class were admitted, the group would be infinite, the fixed spaces would be arbitrary lines, and no count would be forced at all. The algebra structure is what makes the count finite and what makes it two.
 
-The second objection is that a four-element group might be expected, on the pattern of $\mathbb{B}$. The answer is again the field property: a second proper involution would have to send $i$ to a root of $-1$ different from $\pm i$, and there is none. The Klein group of the biquaternion algebra exists because that algebra is four-dimensional over $\mathbb{C}$ and carries a vector part to negate; the complex algebra is one-dimensional and carries none.
+The second objection is that a larger group might be expected. The answer is again the field property: a second proper involution would have to send $i$ to a root of $-1$ different from $\pm i$, and there is none. A larger group needs a larger algebra, with a vector part to negate; the complex algebra is one-dimensional and carries none.
 
 ## Summary
 
-The involutions of the complex algebra are the identity and the conjugation, and they form $V_2$, not the Klein four-group of $\mathbb{B}$: the quaternionic conjugation is the identity here, and in a commutative ring an anti-automorphism is an automorphism. The sign table has one non-trivial entry, the sign on the imaginary line. The four spaces are $\mathbb{C}$ and $\{0\}$ for the identity, $\mathbb{R}$ and $i\mathbb{R}$ for the conjugation; the real line is a subfield and the imaginary line is a subspace that is not a subalgebra. One decomposition, $\mathbb{C}=\mathbb{R}\oplus i\mathbb{R}$, carries content, against the three of $\mathbb{B}$, and one intersection of two spaces of one kind, the real line, is non-zero, against the fifteen pairs of $\mathbb{B}$. Every count follows from the field property: one proper involution, one proper fixed space, and no second root of $-1$ to build a second one.
+The involutions of the complex algebra are the identity and the conjugation, and they form $V_2$: the intrinsic conjugation is the identity here, and in a commutative ring an anti-automorphism is an automorphism. The sign table has one non-trivial entry, the sign on the imaginary line. The four spaces are $\mathbb{C}$ and $\{0\}$ for the identity, $\mathbb{R}$ and $i\mathbb{R}$ for the conjugation; the real line is a subfield and the imaginary line is a subspace that is not a subalgebra. One decomposition, $\mathbb{C}=\mathbb{R}\oplus i\mathbb{R}$, carries content, and one intersection of two spaces of one kind, the real line, is non-zero. Every count follows from the field property: one proper involution, one proper fixed space, and no second root of $-1$ to build a second one.
 
 ## Summary of Notation
 
@@ -130,7 +123,6 @@ The involutions of the complex algebra are the identity and the conjugation, and
 | $\mathrm{J}$ | an involution of the algebra, real-linear, of order two |
 | $F_{\mathrm{J}}$, $A_{\mathrm{J}}$ | the fixed space and the anti-fixed space of $\mathrm{J}$ |
 | $V_2$ | the two-element group of the involutions, here the Galois group of $\mathbb{C}/\mathbb{R}$ |
-| $V_4$ | the Klein four-group of the four involutions of $\mathbb{B}$ |
 
 ## Further Reading
 

@@ -86,13 +86,13 @@ $$
 
 ## The Two Halves and the Hermitian Space
 
-**Proposition.** The exponential of a Hermitian matrix is Hermitian and positive definite, and the exponential of a skew-Hermitian matrix is unitary.
+**Proposition.** The exponential of a Hermitian matrix is Hermitian and positive definite, and the exponential of a anti-Hermitian matrix is unitary.
 
-**Proof.** If $X^{*}=\pm X$ then $(e^{X})^{*}=e^{X^{*}}=e^{\pm X}$, which is $e^{X}$ in the Hermitian case and $(e^{X})^{-1}$ in the skew-Hermitian case; and the eigenvalues of $e^{X}$ in the Hermitian case are the exponentials of the real eigenvalues, hence positive.
+**Proof.** If $X^{*}=\pm X$ then $(e^{X})^{*}=e^{X^{*}}=e^{\pm X}$, which is $e^{X}$ in the Hermitian case and $(e^{X})^{-1}$ in the anti-Hermitian case; and the eigenvalues of $e^{X}$ in the Hermitian case are the exponentials of the real eigenvalues, hence positive.
 
 **Corollary.** The exponential of a real symmetric matrix is real symmetric positive definite, and the exponential of a real antisymmetric matrix is a rotation.
 
-**Proof.** The real symmetric case is the Hermitian case under conjugation by a real basis, and the real antisymmetric matrix is skew-Hermitian with a real form.
+**Proof.** The real symmetric case is the Hermitian case under conjugation by a real basis, and the real antisymmetric matrix is anti-Hermitian with a real form.
 
 **Corollary.** The exponential carries the Hermitian space onto the positive definite cone, and the map is a homeomorphism onto that cone.
 
@@ -102,7 +102,7 @@ $$
 
 The exponential of a $2\times2$ complex matrix is defined by an everywhere convergent series, and it satisfies $\det e^{X}=e^{\operatorname{tr}X}$, so its values are always invertible. Its derivative at the origin is the identity, so it is a local diffeomorphism near zero, and it is surjective onto $\mathrm{GL}_2(\mathbb{C})$: the logarithm is built from the diagonal case and the Jordan case.
 
-The exponential is far from injective: the scalar $2\pi iI$ lies in its kernel together with the diagonal matrices with integer imaginary eigenvalues, and adding $2\pi iI$ to any matrix does not change its exponential. On the Hermitian space the exponential is a homeomorphism onto the positive definite cone, and on the skew-Hermitian space it lands in the unitary group.
+The exponential is far from injective: the scalar $2\pi iI$ lies in its kernel together with the diagonal matrices with integer imaginary eigenvalues, and adding $2\pi iI$ to any matrix does not change its exponential. On the Hermitian space the exponential is a homeomorphism onto the positive definite cone, and on the anti-Hermitian space it lands in the unitary group.
 
 ## Summary of Notation
 

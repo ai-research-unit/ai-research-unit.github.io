@@ -4,7 +4,7 @@
 
 **A rank-one idempotent $e$ splits $M_2(\mathbb{C})$ into four Peirce spaces $A_{11}$, $A_{12}$, $A_{21}$, $A_{00}$ of dimension one each, and the product of two elements follows the index rule $A_{ij}A_{jk}\subseteq A_{ik}$.**
 
-The article defines the Peirce spaces as the joint eigenspaces of the two multiplication operators $L_{e}$ and $R_{e}$, proves the index rule, computes the four dimensions, writes the spaces explicitly for the idempotent $E_{11}$ and for a general rank-one idempotent $uv^{\mathsf T}$, and compares the decomposition with the splitting into the two halves. It assumes *Lagrange Idempotents of a $2\times2$ Matrix with Simple Spectrum*, *The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$* and *The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian at $n=2$*.
+The article defines the Peirce spaces as the joint eigenspaces of the two multiplication operators $L_{e}$ and $R_{e}$, proves the index rule, computes the four dimensions, writes the spaces explicitly for the idempotent $E_{11}$ and for a general rank-one idempotent $uv^{\mathsf T}$, and compares the decomposition with the splitting into the two halves. It assumes *Lagrange Idempotents of a $2\times2$ Matrix with Simple Spectrum*, *The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$* and *The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian at $n=2$*.
 
 It defers the basis adapted to the frame and the gauge to *The Peirce Basis and the Corners at $n=2$*, and the Jordan-algebra reading to *The Peirce Decomposition of $\operatorname{Sym}_2$ as a Jordan Algebra*.
 

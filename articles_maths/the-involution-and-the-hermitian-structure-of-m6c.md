@@ -8,7 +8,7 @@ $$
 A\longmapsto A^*=\overline{A}^{\mathsf T}
 $$
 
-is a conjugate-linear involution of $M_6(\mathbb{C})$. Its fixed points are the Hermitian matrices, its antiefixed points the skew-Hermitian ones, and its isometries the $*$-unitary matrices. The Hermitian form
+is a conjugate-linear involution of $M_6(\mathbb{C})$. Its fixed points are the Hermitian matrices, its antiefixed points the anti-Hermitian ones, and its isometries the $*$-unitary matrices. The Hermitian form
 
 $$
 \langle A,B\rangle=\operatorname{tr}(A^*B)
@@ -20,7 +20,7 @@ $$
 \langle A\rangle_*=\operatorname{tr}(A^*A)=\sum_{i,j}\lvert a_{ij}\rvert^2 .
 $$
 
-The skew-Hermitian matrices form the real Lie algebra $\mathfrak{u}(6)$ of dimension $36$; the traceless skew-Hermitian matrices form $\mathfrak{su}(6)$ of dimension $35$. The form is definite, so its only isotropic vector is $0$. This is the sharp contrast with the biquaternion algebra, whose conjugation is $\mathbb{C}$-linear and whose trace form has a nonzero null cone.
+The anti-Hermitian matrices form the real Lie algebra $\mathfrak{u}(6)$ of dimension $36$; the traceless anti-Hermitian matrices form $\mathfrak{su}(6)$ of dimension $35$. The form is definite, so its only isotropic vector is $0$. This is the sharp contrast with the biquaternion algebra, whose conjugation is $\mathbb{C}$-linear and whose trace form has a nonzero null cone.
 
 The article assumes the coordinates and the trace pairing of *The Element, the Coordinates and the Trace of $M_6(\mathbb{C})$*. It uses no topology beyond the finite-dimensional metric. The polar decomposition is *The Polar Decomposition of $M_6(\mathbb{C})$*; the $*$-unitary group is *The Exponential and the Lie Group of $M_6(\mathbb{C})$*; the real forms of the biquaternion algebra are *The Biquaternion Algebra*.
 
@@ -54,12 +54,12 @@ $$
 
 **Proof.** The four identities above are the axioms of a *-algebra.
 
-### Hermitian, Skew-Hermitian and $*$-Unitary Elements
+### Hermitian, Anti-Hermitian and $*$-Unitary Elements
 
 **Definition.** An element $A$ is
 
 - **Hermitian** if $A^*=A$;
-- **skew-Hermitian** if $A^*=-A$;
+- **anti-Hermitian** if $A^*=-A$;
 - **$*$-unitary** if $A^*A=AA^*=I_6$;
 - **normal** if $A^*A=AA^*$.
 
@@ -82,9 +82,9 @@ as real vector spaces, of real dimension $72$.
 
 **Proof.** $H$ and $K$ are Hermitian by construction, and $A=H+\mathrm iK$. The Hermitian matrices are the fixed points of the conjugate-linear involution $*$; a conjugate-linear involution on a complex vector space of dimension $36$ has a real fixed space of dimension $36$. The imaginary multiples fill the other half.
 
-**Corollary (the Hermitian coordinates).** A Hermitian matrix has $6$ real diagonal entries and $15$ complex off-diagonal entries, hence $6+2\cdot15=36$ real dimensions. A skew-Hermitian matrix has $6$ purely imaginary diagonal entries and $15$ complex off-diagonal entries, also $36$ real dimensions.
+**Corollary (the Hermitian coordinates).** A Hermitian matrix has $6$ real diagonal entries and $15$ complex off-diagonal entries, hence $6+2\cdot15=36$ real dimensions. A anti-Hermitian matrix has $6$ purely imaginary diagonal entries and $15$ complex off-diagonal entries, also $36$ real dimensions.
 
-**Proof.** The diagonal of a Hermitian matrix is real; the off-diagonal entries are paired by $a_{ji}=\overline{a_{ij}}$. For skew-Hermitian, the diagonal is purely imaginary and $a_{ji}=-\overline{a_{ij}}$.
+**Proof.** The diagonal of a Hermitian matrix is real; the off-diagonal entries are paired by $a_{ji}=\overline{a_{ij}}$. For anti-Hermitian, the diagonal is purely imaginary and $a_{ji}=-\overline{a_{ij}}$.
 
 **Theorem (the $*$-unitary group).** The $*$-unitary elements form the group
 
@@ -134,7 +134,7 @@ $$
 \mathfrak{u}(1)=\mathrm i\mathbb{R}I_6 .
 $$
 
-**Proof.** If $X,Y$ are skew-Hermitian, then $[X,Y]^*=[Y^*,X^*]=[-Y,-X]=-[X,Y]$; the commutator is skew-Hermitian. The trace is linear, so the traceless subspace is an ideal. The scalar skew-Hermitian matrices are $\mathrm i\mathbb{R}I_6$, of dimension one; the traceless skew-Hermitian matrices have dimension $36-1=35$, and every skew-Hermitian matrix is the sum of its scalar trace part and its traceless part.
+**Proof.** If $X,Y$ are anti-Hermitian, then $[X,Y]^*=[Y^*,X^*]=[-Y,-X]=-[X,Y]$; the commutator is anti-Hermitian. The trace is linear, so the traceless subspace is an ideal. The scalar anti-Hermitian matrices are $\mathrm i\mathbb{R}I_6$, of dimension one; the traceless anti-Hermitian matrices have dimension $36-1=35$, and every anti-Hermitian matrix is the sum of its scalar trace part and its traceless part.
 
 **Theorem (the exponential).** The Lie algebra $\mathfrak{u}(6)$ is the tangent space of $U(6)$ at the identity, and the exponential map
 
@@ -144,7 +144,7 @@ $$
 
 is surjective.
 
-**Proof.** The curve $t\mapsto e^{tX}$ is $*$-unitary for $X$ skew-Hermitian, and its derivative at zero is $X$; the tangent space is exactly $\mathfrak{u}(6)$. Every $*$-unitary matrix is diagonalizable with eigenvalues on the unit circle, so it is the exponential of a skew-Hermitian matrix (the diagonal logarithm).
+**Proof.** The curve $t\mapsto e^{tX}$ is $*$-unitary for $X$ anti-Hermitian, and its derivative at zero is $X$; the tangent space is exactly $\mathfrak{u}(6)$. Every $*$-unitary matrix is diagonalizable with eigenvalues on the unit circle, so it is the exponential of a anti-Hermitian matrix (the diagonal logarithm).
 
 ## The Positive Definite Trace Form
 
@@ -237,7 +237,7 @@ $$
 X+\mathrm iY\longmapsto X+\mathrm iY .
 $$
 
-**Proof.** Every complex matrix is $X+\mathrm iY$ with $X,Y$ skew-Hermitian: given $A$, set $X=(A-A^*)/2$ and $Y=(A+A^*)/(2\mathrm i)$; both are skew-Hermitian, and $X+\mathrm iY=A$. The real dimension $36+36=72$ matches.
+**Proof.** Every complex matrix is $X+\mathrm iY$ with $X,Y$ anti-Hermitian: given $A$, set $X=(A-A^*)/2$ and $Y=(A+A^*)/(2\mathrm i)$; both are anti-Hermitian, and $X+\mathrm iY=A$. The real dimension $36+36=72$ matches.
 
 **Corollary (the Cartan decomposition).** The Cartan involution
 
@@ -259,7 +259,7 @@ as real vector spaces, and the symmetric space $GL_6(\mathbb{C})/U(6)$ is the sp
 
 **Theorem.** $\mathfrak{su}(6)$ is a simple real Lie algebra of dimension $35$, and its complexification is $\mathfrak{sl}_6(\mathbb{C})$.
 
-**Proof.** The complexification of the traceless skew-Hermitian matrices is the traceless complex matrices, because the trace is complex-linear and the decomposition $A=X+\mathrm iY$ preserves tracelessness. Simplicity is the standard simplicity of $\mathfrak{su}(n)$ for $n\ge2$.
+**Proof.** The complexification of the traceless anti-Hermitian matrices is the traceless complex matrices, because the trace is complex-linear and the decomposition $A=X+\mathrm iY$ preserves tracelessness. Simplicity is the standard simplicity of $\mathfrak{su}(n)$ for $n\ge2$.
 
 **Theorem (the Killing form).** On $\mathfrak{sl}_6(\mathbb{C})$ the Killing form is $12\operatorname{tr}(XY)$; on $\mathfrak{su}(6)$ it is negative definite.
 
@@ -267,7 +267,7 @@ as real vector spaces, and the symmetric space $GL_6(\mathbb{C})/U(6)$ is the sp
 
 **Corollary (the trace form versus the Killing form).** The Hermitian trace form $\operatorname{tr}(X^*Y)$ is positive definite on $\mathfrak{u}(6)$; the Killing form is negative definite on $\mathfrak{su}(6)$. The two differ by the sign and by the scalar $12$.
 
-**Proof.** For skew-Hermitian $X$, $\operatorname{tr}(X^*X)=-\operatorname{tr}(X^2)$; the first is positive definite, the second is the Killing form up to $12$ and is negative definite.
+**Proof.** For anti-Hermitian $X$, $\operatorname{tr}(X^*X)=-\operatorname{tr}(X^2)$; the first is positive definite, the second is the Killing form up to $12$ and is negative definite.
 
 ## The Definite Form and the Isotropic Set
 
@@ -315,7 +315,7 @@ which has real dimension $6$ in the eight-dimensional algebra.
 
 ## Summary
 
-The conjugate transpose is a conjugate-linear involution. Its Hermitian fixed points have real dimension $36$; its skew-Hermitian antiefixed points form the Lie algebra $\mathfrak{u}(6)$ of dimension $36$, with the traceless ideal $\mathfrak{su}(6)$ of dimension $35$.
+The conjugate transpose is a conjugate-linear involution. Its Hermitian fixed points have real dimension $36$; its anti-Hermitian antiefixed points form the Lie algebra $\mathfrak{u}(6)$ of dimension $36$, with the traceless ideal $\mathfrak{su}(6)$ of dimension $35$.
 
 $$
 \boxed{\ \langle A,B\rangle=\operatorname{tr}(A^*B),\qquad \langle A,A\rangle=\sum_{ij}\lvert a_{ij}\rvert^2,\qquad \langle A,A\rangle=0\iff A=0 .\ }
@@ -338,7 +338,7 @@ The definite form has no nonzero isotropic vector. The biquaternion algebra, who
 |---|---|
 | Conjugate transpose | $A^*=\overline{A}^{\mathsf T}$, conjugate-linear involution |
 | Hermitian matrices | real dimension $36$ |
-| Skew-Hermitian matrices | real dimension $36$ |
+| Anti-Hermitian matrices | real dimension $36$ |
 | $*$-Unitary group | $U(6)$, dimension $36$ |
 | Special $*$-unitary group | $SU(6)$, dimension $35$ |
 | Trace form | $\operatorname{tr}(A^*B)$, positive definite |
@@ -352,8 +352,8 @@ The definite form has no nonzero isotropic vector. The biquaternion algebra, who
 |---|---|
 | $A^*$ | the conjugate transpose $\overline{A}^{\mathsf T}$ |
 | $\operatorname{Herm}_6$ | the Hermitian matrices, real dimension $36$ |
-| $\mathfrak{u}(6)$ | the skew-Hermitian Lie algebra, dimension $36$ |
-| $\mathfrak{su}(6)$ | the traceless skew-Hermitian Lie algebra, dimension $35$ |
+| $\mathfrak{u}(6)$ | the anti-Hermitian Lie algebra, dimension $36$ |
+| $\mathfrak{su}(6)$ | the traceless anti-Hermitian Lie algebra, dimension $35$ |
 | $\langle A,B\rangle$ | the Hermitian trace form $\operatorname{tr}(A^*B)$ |
 | $\langle A\rangle_*^{1/2}$ | the Frobenius norm |
 | $\mathrm{J}(A)=-A^*$ | the Cartan involution |

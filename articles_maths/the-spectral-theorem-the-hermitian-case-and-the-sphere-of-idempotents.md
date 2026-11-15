@@ -4,7 +4,7 @@
 
 **A Hermitian $2\times2$ matrix is $X=aI+r\,\vec n\cdot\vec\sigma$ with $a$ real, $r\ge0$ and $\vec n$ a unit vector, its eigenvalues are $a\pm r$, and its two spectral projections are $\tfrac12(I\pm\vec n\cdot\vec\sigma)$; the rank-one Hermitian idempotents are exactly the matrices $\tfrac12(I+\vec n\cdot\vec\sigma)$ with $\vec n\in S^{2}$, so they form a two-sphere.**
 
-The article proves the spectral theorem for Hermitian matrices at order two, gives the Pauli parametrisation with its three real parameters, identifies the sphere of idempotents, reads the ordering of the eigenvalues as the choice of a hemisphere, and describes the positive semidefinite cone inside the Hermitian space. It assumes *Normal $2\times2$ Matrices and the Common Spectral Theorem*, *The Spectrum of a $2\times2$ Matrix* and *The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian at $n=2$*.
+The article proves the spectral theorem for Hermitian matrices at order two, gives the Pauli parametrisation with its three real parameters, identifies the sphere of idempotents, reads the ordering of the eigenvalues as the choice of a hemisphere, and describes the positive semidefinite cone inside the Hermitian space. It assumes *Normal $2\times2$ Matrices and the Common Spectral Theorem*, *The Spectrum of a $2\times2$ Matrix* and *The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian at $n=2$*.
 
 It keeps to the spectral statement; the exponential of the symmetric half belongs to the analysis of the two halves.
 

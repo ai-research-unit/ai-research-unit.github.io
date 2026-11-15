@@ -217,7 +217,7 @@ $$
 \operatorname{Tr}L(\tilde Q)=4Q_t,\qquad \operatorname{Tr}M=0\iff\tilde Q\in\mathbb{B}_{V} .
 $$
 
-**The split is exact, and it is the scalar–vector split in the image.** The trace is additive, bilinear and blind to everything except $Q_t$; the traceless remainder carries the three directions. In the axis-free display the vector image is skew-symmetric, $M^{\mathsf T}=-M$, so the traceless condition and the antisymmetry coincide inside the image.
+**The split is exact, and it is the scalar–vector split in the image.** The trace is additive, bilinear and blind to everything except $Q_t$; the traceless remainder carries the three directions. In the axis-free display the vector image is antisymmetric, $M^{\mathsf T}=-M$, so the traceless condition and the antisymmetry coincide inside the image.
 
 **The physical reading is the one from the previous entry, in matrix form.** The scalar part is the complex time, so the trace is the clock; the vector part is the three directions, so the traceless part is the motion. A matrix statement about a biquaternion that uses only the trace is a statement about time, and it cannot see a direction.
 

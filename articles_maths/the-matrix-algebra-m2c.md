@@ -88,7 +88,7 @@ $$
 
 ## The Reading over the Real Numbers
 
-**Every matrix splits into a Hermitian and a skew-Hermitian part.** Put $A^{*}=\bar A^{\mathsf T}$; the **Hermitian** matrices satisfy $H^{*}=H$ and the **skew-Hermitian** ones $S^{*}=-S$.
+**Every matrix splits into a Hermitian and a anti-Hermitian part.** Put $A^{*}=\bar A^{\mathsf T}$; the **Hermitian** matrices satisfy $H^{*}=H$ and the **anti-Hermitian** ones $S^{*}=-S$.
 
 **Proposition.** Every $A$ splits uniquely as
 
@@ -110,7 +110,7 @@ $$
 
 with $\operatorname{tr}H=5$ and $\operatorname{tr}S=0$.
 
-**The product preserves neither half.** For skew-Hermitian $S,T$ one has $(ST)^{*}=TS$, which equals $-ST$ only when $S$ and $T$ anticommute. The split is one of the real vector space and of the real Lie algebra.
+**The product preserves neither half.** For anti-Hermitian $S,T$ one has $(ST)^{*}=TS$, which equals $-ST$ only when $S$ and $T$ anticommute. The split is one of the real vector space and of the real Lie algebra.
 
 ## The Identification with the Biquaternion Algebra
 
@@ -168,7 +168,7 @@ Its centre is $\mathbb{C}I$ and it is simple, hence central simple. The trace is
 | $\chi_A$ | the characteristic polynomial $\det(\lambda I-A)$ |
 | $\mathrm{rank}\,A$ | the dimension of the image |
 | $A^{*}=\bar A^{\mathsf T}$ | the conjugate transpose |
-| $\mathfrak{u}(2)$, $\mathfrak{su}(2)$ | the skew-Hermitian matrices, and the traceless ones |
+| $\mathfrak{u}(2)$, $\mathfrak{su}(2)$ | the anti-Hermitian matrices, and the traceless ones |
 | $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ | the invertible matrices, and those of determinant $1$ |
 | $PGL_2(\mathbb{C})$ | $GL_2(\mathbb{C})/\mathbb{C}^{\times}I$ |
 | $\mathsf M_2$ | the isomorphism $\mathbb{B}\to M_2(\mathbb{C})$ |

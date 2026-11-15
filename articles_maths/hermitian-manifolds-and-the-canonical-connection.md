@@ -100,9 +100,9 @@ $$
 \Omega_{ij} = \sum_{k,l} R_{ijk\bar l}\,dz_k\wedge d\bar z_l, \qquad R_{ijk\bar l} = -\partial/\partial\bar z_l\,\Gamma_{ijk},
 $$
 
-up to the ordering convention of the two terms; the curvature has no $(0,2)$-part, and it is $h$-skew-Hermitian, $\Omega^* = -\Omega$, so $\frac{i}{2\pi}\Omega$ is a matrix of Hermitian $(1,1)$-forms. The curvature satisfies the second Bianchi identity $d^\nabla\Omega = 0$.
+up to the ordering convention of the two terms; the curvature has no $(0,2)$-part, and it is $h$-anti-Hermitian, $\Omega^* = -\Omega$, so $\frac{i}{2\pi}\Omega$ is a matrix of Hermitian $(1,1)$-forms. The curvature satisfies the second Bianchi identity $d^\nabla\Omega = 0$.
 
-*Proof.* The holomorphic part $\partial\omega+\omega\wedge\omega$ vanishes for the Chern connection, as computed in *Hermitian Vector Bundles and the Chern Connection*, so the curvature is the $(1,1)$-form $\bar\partial\omega$; the component form is the definition of $\bar\partial$ applied to the coefficient function $\Gamma_{ijk}$; the skew-Hermitian property is the metric-compatibility equation differentiated, and the Bianchi identity is the general identity of *The Covariant Derivative*. The sign in the component formula is fixed by the ordering $dz_k\wedge d\bar z_l$ and the convention that $\bar\partial(dz_k)=0$.
+*Proof.* The holomorphic part $\partial\omega+\omega\wedge\omega$ vanishes for the Chern connection, as computed in *Hermitian Vector Bundles and the Chern Connection*, so the curvature is the $(1,1)$-form $\bar\partial\omega$; the component form is the definition of $\bar\partial$ applied to the coefficient function $\Gamma_{ijk}$; the anti-Hermitian property is the metric-compatibility equation differentiated, and the Bianchi identity is the general identity of *The Covariant Derivative*. The sign in the component formula is fixed by the ordering $dz_k\wedge d\bar z_l$ and the convention that $\bar\partial(dz_k)=0$.
 
 ### The Ricci Form and the First Chern Class
 
@@ -132,7 +132,7 @@ and its de Rham class is the first Chern class of the manifold, $\rho = c_1(T^{1
 
 A Hermitian manifold is a complex manifold with a Hermitian metric on its holomorphic tangent bundle. That bundle is a holomorphic Hermitian bundle, and it carries the canonical (Chern) connection: the unique connection with $\nabla h=0$ and $\nabla^{0,1}=\bar\partial$. In a holomorphic frame the connection coefficients are $\Gamma_{ijk}=\sum_l(h^{-1})_{i\bar l}\partial/\partial z_j\,h_{k\bar l}$, determined by the metric. The torsion of the connection vanishes exactly in the Kähler case; in general it has a $(2,0)$-part and a $(1,1)$-part, its $(0,2)$-part vanishes, and the connection differs from the Levi-Civita connection by the contorsion tensor built from $\nabla^{LC}J$, which vanishes exactly when the manifold is Kähler.
 
-The curvature of the canonical connection is $\Omega=\bar\partial(h^{-1}\partial h)$, a matrix of $(1,1)$-forms, $h$-skew-Hermitian, and its trace is the Ricci form $\rho=\frac{i}{2\pi}\operatorname{tr}\Omega=-\frac{i}{2\pi}\partial\bar\partial\log\det(h_{i\bar j})$, a real closed $(1,1)$-form whose class is the first Chern class of the manifold; it is the curvature of the induced metric on the anticanonical bundle. In the Kähler case the canonical connection is the Levi-Civita connection and the curvature is the Riemann tensor of the metric; the Kähler theory is Part IV's, and the present article is its Hermitian generalisation.
+The curvature of the canonical connection is $\Omega=\bar\partial(h^{-1}\partial h)$, a matrix of $(1,1)$-forms, $h$-anti-Hermitian, and its trace is the Ricci form $\rho=\frac{i}{2\pi}\operatorname{tr}\Omega=-\frac{i}{2\pi}\partial\bar\partial\log\det(h_{i\bar j})$, a real closed $(1,1)$-form whose class is the first Chern class of the manifold; it is the curvature of the induced metric on the anticanonical bundle. In the Kähler case the canonical connection is the Levi-Civita connection and the curvature is the Riemann tensor of the metric; the Kähler theory is Part IV's, and the present article is its Hermitian generalisation.
 
 ## Summary of Notation
 
@@ -146,7 +146,7 @@ The curvature of the canonical connection is $\Omega=\bar\partial(h^{-1}\partial
 | $\Gamma_{ijk}=\sum_l(h^{-1})_{i\bar l}\partial/\partial z_j\,h_{k\bar l}$ | Christoffel symbols of the Hermitian metric |
 | $T(X,Y)=\nabla_XY-\nabla_YX-[X,Y]$ | Torsion; $T^{0,2}=0$; vanishes iff Kähler |
 | $A(X,Y)$, contorsion | Difference $\nabla^{Ch}-\nabla^{LC}$, built from $\nabla^{LC}J$ |
-| $\Omega=\bar\partial(h^{-1}\partial h)$ | Curvature forms; $(1,1)$ and skew-Hermitian |
+| $\Omega=\bar\partial(h^{-1}\partial h)$ | Curvature forms; $(1,1)$ and anti-Hermitian |
 | $\Omega_{ij}=\sum R_{ijk\bar l}dz_k\wedge d\bar z_l$ | Curvature components in a holomorphic frame |
 | $\rho=\frac{i}{2\pi}\operatorname{tr}\Omega=-\frac{i}{2\pi}\partial\bar\partial\log\det(h_{i\bar j})$ | Ricci form; class $c_1(T^{1,0}M)$ |
 | $\det T^{1,0}M=K_M^*$ | Anticanonical bundle; curvature of its metric is $\operatorname{tr}\Omega$ |

@@ -15,7 +15,7 @@ $$
 h(xa, yb) = c(a)\,h(x,y)\,b, \qquad h(y,x) = \varepsilon\,c\bigl(h(x,y)\bigr),
 $$
 
-for all $x, y \in M$ and $a, b \in R$. The case $\varepsilon = 1$ is a **Hermitian** form and $\varepsilon = -1$ a **skew-Hermitian** or **symplectic** form.
+for all $x, y \in M$ and $a, b \in R$. The case $\varepsilon = 1$ is a **Hermitian** form and $\varepsilon = -1$ a **anti-Hermitian** or **symplectic** form.
 
 **Remark (the Clifford forms).** For $R = \mathrm{Cl}(V,\mathfrak{Q})$ the definition is exactly the structure of *Hermitian Forms on a Hermitian Algebra with Hermitian Adjoint*: with $c = {}^{\dagger}$ and $\varepsilon = 1$ one gets $h_{\dagger}(x,y) = x^{\dagger}y$; with $c = \bar\cdot$ one gets $h_{\bar\cdot}(x,y) = \bar xy$; with $c = {}^{r}$ one gets $h_r(x,y) = x^{r}y$. The three forms satisfy their own Hermitian conditions and are therefore $\varepsilon$-Hermitian forms over the algebra with the respective involution.
 

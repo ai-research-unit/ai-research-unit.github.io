@@ -4,7 +4,7 @@
 
 **Choose an orthonormal pair of spinors $\psi$ and $\eta$; then the Peirce coordinates of a matrix $x$ are the four matrix elements $x_{0}=\psi^{*}x\psi$, $x_{+}=\psi^{*}x\eta$, $x_{-}=\eta^{*}x\psi$, $x_{1}=\eta^{*}x\eta$, and the Peirce formula is the change of basis $x=U\begin{pmatrix}x_{0}&x_{+}\\ x_{-}&x_{1}\end{pmatrix}U^{*}$ with $U=(\psi,\eta)$ unitary.**
 
-The article builds the rank-one Hermitian idempotent of a spinor, obtains the Peirce frame from an orthonormal pair, proves that the Peirce coordinates are the matrix elements in that frame, reads the gauge freedom as the phase of the spinor, and interprets the sphere of Hermitian idempotents as a Hopf fibration over the projective line. It assumes *The Peirce Basis and the Corners at $n=2$*, *The Peirce Decomposition and the Two Halves at $n=2$* and *The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian at $n=2$*.
+The article builds the rank-one Hermitian idempotent of a spinor, obtains the Peirce frame from an orthonormal pair, proves that the Peirce coordinates are the matrix elements in that frame, reads the gauge freedom as the phase of the spinor, and interprets the sphere of Hermitian idempotents as a Hopf fibration over the projective line. It assumes *The Peirce Basis and the Corners at $n=2$*, *The Peirce Decomposition and the Two Halves at $n=2$* and *The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian at $n=2$*.
 
 It defers the spectral theorem to *The Spectral Theorem: the Hermitian Case and the Sphere of Idempotents*.
 

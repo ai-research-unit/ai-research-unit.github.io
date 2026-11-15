@@ -79,7 +79,7 @@ so the positive cone of the algebra is carried isomorphically onto the cone of t
 
 ### The Matrix Algebra
 
-Let $A = M_n(\mathbb{C})$ with the trace form. The left multiplication is $L_A(X) = AX$, its adjoint is the multiplication by $A^{*}$, and the inner derivation is $\delta_A(X) = AX - XA$ with adjoint $\delta_{A^{*}}$; the skew-adjoint derivations are the $\delta_A$ with $A$ skew-Hermitian, which are the infinitesimal generators of the unitary conjugations. The positivity of $L_A$ is the positivity of $A$ in the Loewner order. This is the finite-dimensional model.
+Let $A = M_n(\mathbb{C})$ with the trace form. The left multiplication is $L_A(X) = AX$, its adjoint is the multiplication by $A^{*}$, and the inner derivation is $\delta_A(X) = AX - XA$ with adjoint $\delta_{A^{*}}$; the skew-adjoint derivations are the $\delta_A$ with $A$ anti-Hermitian, which are the infinitesimal generators of the unitary conjugations. The positivity of $L_A$ is the positivity of $A$ in the Loewner order. This is the finite-dimensional model.
 
 ### The Self-Adjoint Operators
 

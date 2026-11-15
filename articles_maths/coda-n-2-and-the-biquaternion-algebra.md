@@ -48,7 +48,7 @@ $$
 \mathbb{B}=\mathbb{B}_{H}\oplus\mathbb{B}_{\Phi},\qquad \dim_{\mathbb{R}}=4+4,
 $$
 
-the Hermitian sector and the anti-Hermitian one. The computation confirms the dimensions and the identity $\mathbb{B}_{H}=\{q:q^{*}=q\}$, and it is *The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian* at $n=2$.
+the Hermitian sector and the anti-Hermitian one. The computation confirms the dimensions and the identity $\mathbb{B}_{H}=\{q:q^{*}=q\}$, and it is *The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian* at $n=2$.
 
 **The Hermitian sector carries the Lorentzian form.** On $\mathbb{B}_{H}$ the norm restricts to
 

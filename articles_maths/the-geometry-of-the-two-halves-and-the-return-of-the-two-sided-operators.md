@@ -110,13 +110,13 @@ and the cone has rank two or more. The computation confirms the spread at $n=3$ 
 
 ## The Skew Half: Flat with a Bi-Invariant Form
 
-**The trace form is definite on the skew half.** For $X,Y$ skew-Hermitian,
+**The trace form is definite on the skew half.** For $X,Y$ anti-Hermitian,
 
 $$
 \langle X,Y\rangle=-\operatorname{tr}(XY)
 $$
 
-is a real inner product, since $-\operatorname{tr}(X^{2})>0$ for $X\neq0$. The computation confirms the positivity at $n=2,3,4$ on random skew-Hermitian matrices, and it is the form which the compact half carries.
+is a real inner product, since $-\operatorname{tr}(X^{2})>0$ for $X\neq0$. The computation confirms the positivity at $n=2,3,4$ on random anti-Hermitian matrices, and it is the form which the compact half carries.
 
 **The form is Ad-invariant.** For unitary $u$,
 

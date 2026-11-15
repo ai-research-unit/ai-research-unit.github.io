@@ -4,7 +4,7 @@
 
 **Against the diagonal subalgebra the algebra splits into $n^{2}$ lines, one for each ordered pair of indices, and that is the finest decomposition of the category: the coarse split into two halves and the Peirce split into $n^{2}$ corners are both coarsenings of it.**
 
-The article defines the diagonal subalgebra, grades the algebra by the characters of the diagonal torus, computes the weight of each matrix unit, counts the lines and the roots, and shows how the involution acts on the grading: it fixes the diagonal lines and pairs the two lines of a transposed pair, whose sum and difference are one symmetric and one skew line. It then identifies the Peirce lines of the coordinate flag with the weight lines, and the simple nilpotents of the frame with the simple root vectors. It assumes *The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric* and *The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian* for the splits, and *The Involutions over $\mathbb{R}$ and over $\mathbb{C}$* for the action of the involution. It defers the Peirce construction at a general flag to *The Peirce Decomposition in $n$ Dimensions* and the operator version to *The Symmetric and Antisymmetric Parts of the Operator Space*.
+The article defines the diagonal subalgebra, grades the algebra by the characters of the diagonal torus, computes the weight of each matrix unit, counts the lines and the roots, and shows how the involution acts on the grading: it fixes the diagonal lines and pairs the two lines of a transposed pair, whose sum and difference are one symmetric and one skew line. It then identifies the Peirce lines of the coordinate flag with the weight lines, and the simple nilpotents of the frame with the simple root vectors. It assumes *The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric* and *The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian* for the splits, and *The Involutions over $\mathbb{R}$ and over $\mathbb{C}$* for the action of the involution. It defers the Peirce construction at a general flag to *The Peirce Decomposition in $n$ Dimensions* and the operator version to *The Symmetric and Antisymmetric Parts of the Operator Space*.
 
 ## The Diagonal Subalgebra
 
@@ -79,7 +79,7 @@ $$
 \operatorname{Herm}_n=\{\text{real diagonal}\}\oplus\bigoplus_{i<j}\mathbb{C}(E_{ij}+E_{ji}),
 $$
 
-of real dimension $n+2\cdot\tfrac{n(n-1)}{2}=n^{2}$, and the skew-Hermitian half is $i$ times it. The counting is the one of *The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian*, read pair by pair: the transpose splits each pair into two real lines, the conjugate transpose into two complex ones.
+of real dimension $n+2\cdot\tfrac{n(n-1)}{2}=n^{2}$, and the anti-Hermitian half is $i$ times it. The counting is the one of *The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian*, read pair by pair: the transpose splits each pair into two real lines, the conjugate transpose into two complex ones.
 
 ## The Peirce Lines as Weight Lines
 
@@ -131,6 +131,6 @@ The diagonal subalgebra $\mathfrak{h}$ has dimension $n$ and is a maximal torus;
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the diagonal subalgebra, the maximal torus and the conjugation action.
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the fine decomposition of an algebra into lines and the coordinate form of Peirce.
 - [The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric](the-two-halves-over-r-symmetric-and-antisymmetric.html), for the split that this grading refines.
-- [The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian](the-two-halves-over-c-hermitian-and-skew-hermitian.html), for the complex version of the refinement.
+- [The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian](the-two-halves-over-c-hermitian-and-skew-hermitian.html), for the complex version of the refinement.
 - [The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-mnc.html), for the simple nilpotents as simple root vectors.
 - [The Peirce Decomposition in $n$ Dimensions](the-peirce-decomposition-in-n-dimensions.html), for the general-flag version of the grading.

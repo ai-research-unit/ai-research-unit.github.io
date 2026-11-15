@@ -23,7 +23,7 @@ $$
 \langle s,t\rangle=\sigma\bigl(\langle t,s\rangle\bigr)\quad\text{when }\mathcal{G}=\mathcal{F},
 $$
 
-and **skew-Hermitian** if $\langle s,t\rangle=-\sigma(\langle t,s\rangle)$. A **Hermitian structure** on $\mathcal{F}$ is a Hermitian pairing $\langle-,-\rangle:\mathcal{F}\times\mathcal{F}\to\mathcal{O}_X$.
+and **anti-Hermitian** if $\langle s,t\rangle=-\sigma(\langle t,s\rangle)$. A **Hermitian structure** on $\mathcal{F}$ is a Hermitian pairing $\langle-,-\rangle:\mathcal{F}\times\mathcal{F}\to\mathcal{O}_X$.
 
 **Proposition (the pairing as a morphism to the dual).** A $\sigma$-sesquilinear pairing $\mathcal{F}\times\mathcal{G}\to\mathcal{O}_X$ is the same thing as a morphism of sheaves $\mathcal{G}\to\mathcal{F}^{\vee,\sigma}$, where $\mathcal{F}^{\vee,\sigma}=\mathcal{H}om_{\sigma}(\mathcal{F},\mathcal{O}_X)$ is the sheaf of $\sigma$-antilinear morphisms $\mathcal{F}\to\mathcal{O}_X$; the pairing is **nondegenerate** when this morphism is an isomorphism, and a nondegenerate Hermitian structure on $\mathcal{F}$ is the same thing as an isomorphism $\mathcal{F}\cong\mathcal{F}^{\vee,\sigma}$ that is its own adjoint.
 

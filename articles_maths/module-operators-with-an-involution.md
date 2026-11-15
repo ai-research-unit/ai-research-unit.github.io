@@ -141,7 +141,7 @@ This is how a module with two pairings carries two involutions on one ring, as *
 
 **(a) The orthogonal case.** For $M=R^n$ with the standard bilinear pairing, the self-adjoint operators are the symmetric matrices, the skew-adjoint the alternating matrices, and $\mathrm{U}(M)=O(n)$; unitarily equivalent self-adjoint operators are orthogonally similar.
 
-**(b) The unitary case.** For $M=\mathbb{C}^n$ with the sesquilinear pairing, the self-adjoint operators are the hermitian matrices, the skew-adjoint the skew-hermitian ones, and $\mathrm{U}(M)=\mathrm{U}(n)$.
+**(b) The unitary case.** For $M=\mathbb{C}^n$ with the sesquilinear pairing, the self-adjoint operators are the hermitian matrices, the skew-adjoint the anti-Hermitian ones, and $\mathrm{U}(M)=\mathrm{U}(n)$.
 
 **(c) The symplectic case.** For $M=R^{2n}$ with the alternating pairing, the self-adjoint operators form the symplectic Lie algebra and $\mathrm{U}(M)=Sp(2n)$; the congruence $f \mapsto g^{*}fg$ is the symplectic change of basis.
 

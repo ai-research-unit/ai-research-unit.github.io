@@ -20,7 +20,7 @@ $$
 \det\exp X=e^{\operatorname{tr}X}.
 $$
 
-The real Lie algebra $\mathfrak{gl}_3$ has dimension $18$; the group $GL_3(\mathbb{C})$ has real dimension $18$; the $*$-unitary subgroup $U(3)$ has dimension $9$ and its Lie algebra $\mathfrak{u}(3)$ consists of the skew-Hermitian matrices; the special linear group $SL_3$ and its Lie algebra $\mathfrak{sl}_3$ have complex dimension $8$, and $\mathfrak{su}(3)$ has real dimension $8$.
+The real Lie algebra $\mathfrak{gl}_3$ has dimension $18$; the group $GL_3(\mathbb{C})$ has real dimension $18$; the $*$-unitary subgroup $U(3)$ has dimension $9$ and its Lie algebra $\mathfrak{u}(3)$ consists of the anti-Hermitian matrices; the special linear group $SL_3$ and its Lie algebra $\mathfrak{sl}_3$ have complex dimension $8$, and $\mathfrak{su}(3)$ has real dimension $8$.
 
 The article defines the exponential, computes it on the Jordan forms, proves the determinant and eigenvalue formulas, proves surjectivity and the failure of injectivity, describes the one-parameter subgroups and the Lie algebra, computes the root and the gauge in exponential coordinates, and works explicit matrices. The polar decomposition is *The Polar Decomposition of $M_3(\mathbb{C})$*; the combined exponential polar form is *The Exponential Polar Decomposition of $M_3(\mathbb{C})$*; the analysis of the map is *Analysis on $M_3(\mathbb{C})$*.
 
@@ -74,9 +74,9 @@ because $N^{m}=0$. The eigenvalues of the block are $e^{\lambda}$, with multipli
 
 **The Jordan form of the exponential.** The exponential of a Jordan block of size $m$ is $e^{\lambda}$ times the unipotent block $I+N+\cdots+N^{m-1}/(m-1)!$. It is diagonalisable exactly when $N=0$, that is, when the block was scalar. For $N\neq0$ the unipotent factor is a single Jordan block, so the exponential preserves the Jordan type of each block: it shifts the eigenvalue $\lambda$ to $e^{\lambda}$ and keeps the block size. Different Jordan types are not identified; the non-injectivity comes only from the ambiguity of the logarithm, not from a collapse of the Jordan structure.
 
-**The Hermitian and skew-Hermitian cases.** If $X$ is Hermitian, then $\exp X$ is positive definite Hermitian. If $X$ is skew-Hermitian, then $\exp X$ is $*$-unitary. If $X$ is traceless and skew-Hermitian, then $\exp X\in SU(3)$.
+**The Hermitian and anti-Hermitian cases.** If $X$ is Hermitian, then $\exp X$ is positive definite Hermitian. If $X$ is anti-Hermitian, then $\exp X$ is $*$-unitary. If $X$ is traceless and anti-Hermitian, then $\exp X\in SU(3)$.
 
-**Proof.** For Hermitian $X$, diagonalise $X=UDU^{*}$ with real $D$; then $\exp X=Ue^{D}U^{*}$ with $e^{D}$ real positive diagonal, which is positive definite Hermitian. For skew-Hermitian $X$, $(\exp X)^{*}=\exp(X^{*})=\exp(-X)=(\exp X)^{-1}$. The determinant is $e^{\operatorname{tr}X}=1$ when $\operatorname{tr}X=0$.
+**Proof.** For Hermitian $X$, diagonalise $X=UDU^{*}$ with real $D$; then $\exp X=Ue^{D}U^{*}$ with $e^{D}$ real positive diagonal, which is positive definite Hermitian. For anti-Hermitian $X$, $(\exp X)^{*}=\exp(X^{*})=\exp(-X)=(\exp X)^{-1}$. The determinant is $e^{\operatorname{tr}X}=1$ when $\operatorname{tr}X=0$.
 
 **Worked example.** For
 
@@ -196,7 +196,7 @@ $$
 - $\mathfrak{su}(3)=\mathfrak{u}(3)\cap\mathfrak{sl}_3$, of real dimension $8$, the Lie algebra of $SU(3)$;
 - $\mathfrak{so}(3)=\{X:X^{\mathsf T}=-X,\ \bar X=X\}$, of real dimension $3$, the Lie algebra of $SO(3)$.
 
-**Proof.** The trace of a bracket is zero, the conjugate transpose of a bracket of skew-Hermitian matrices is the negative of the bracket, and the real skew-symmetric matrices are closed under the commutator. The dimensions are the counts of the independent entries: $9$ complex for $\mathfrak{gl}_3$; $8$ complex for the traceless subspace; $9$ real for the skew-Hermitian matrices (three imaginary diagonal entries and three independent complex off-diagonal entries); $8$ real for $\mathfrak{su}(3)$ after removing the trace; $3$ real for $\mathfrak{so}(3)$.
+**Proof.** The trace of a bracket is zero, the conjugate transpose of a bracket of anti-Hermitian matrices is the negative of the bracket, and the real antisymmetric matrices are closed under the commutator. The dimensions are the counts of the independent entries: $9$ complex for $\mathfrak{gl}_3$; $8$ complex for the traceless subspace; $9$ real for the anti-Hermitian matrices (three imaginary diagonal entries and three independent complex off-diagonal entries); $8$ real for $\mathfrak{su}(3)$ after removing the trace; $3$ real for $\mathfrak{so}(3)$.
 
 **The adjoint representation.** The map
 
@@ -220,7 +220,7 @@ H=\exp K,\qquad
 K=\frac{2\pi i}{3}\big(P_2+2P_3\big),
 $$
 
-with $P_k$ the projector for $\omega_k$ and eigenvalues $0,2\pi i/3,4\pi i/3$. The matrix $K$ is skew-Hermitian. For a general root $H=SH_0S^{-1}$ the spectral logarithm $K=SK_0S^{-1}$ satisfies $H=\exp K$ but is skew-Hermitian only when $S$ can be chosen $*$-unitary, that is, when $H$ is normal; a non-normal root is not $*$-unitary. A gauge transformation $E\mapsto e^{t}Ee^{-t}$ with $t=\operatorname{diag}(t_1,t_2,t_3)$ traceless rescales the nilpotents:
+with $P_k$ the projector for $\omega_k$ and eigenvalues $0,2\pi i/3,4\pi i/3$. The matrix $K$ is anti-Hermitian. For a general root $H=SH_0S^{-1}$ the spectral logarithm $K=SK_0S^{-1}$ satisfies $H=\exp K$ but is anti-Hermitian only when $S$ can be chosen $*$-unitary, that is, when $H$ is normal; a non-normal root is not $*$-unitary. A gauge transformation $E\mapsto e^{t}Ee^{-t}$ with $t=\operatorname{diag}(t_1,t_2,t_3)$ traceless rescales the nilpotents:
 
 $$
 e^{t}E_{ij}e^{-t}=e^{t_i-t_j}E_{ij},
@@ -320,7 +320,7 @@ The diagonal torus $T\cong(\mathbb{C}^{\times})^{3}$ has complex dimension $3$ a
 
 **The centre.** The centre of $GL_3$ is $\mathbb{C}^{\times}I$, of real dimension $2$; the centre of $U(3)$ is $U(1)$, of real dimension $1$; the centre of $SU(3)$ is $\mu_3$, finite.
 
-**The adjoint group.** $PGL_3=GL_3/\mathbb{C}^{\times}I$ has real dimension $16$ and complex dimension $8$, and its Lie algebra is $\mathfrak{sl}_3$. The exponential of $\mathfrak{sl}_3$ lands in $SL_3$, and the exponential of $\mathfrak{u}(3)$ lands in $U(3)$; the exponential of the traceless skew-Hermitian matrices lands in $SU(3)$.
+**The adjoint group.** $PGL_3=GL_3/\mathbb{C}^{\times}I$ has real dimension $16$ and complex dimension $8$, and its Lie algebra is $\mathfrak{sl}_3$. The exponential of $\mathfrak{sl}_3$ lands in $SL_3$, and the exponential of $\mathfrak{u}(3)$ lands in $U(3)$; the exponential of the traceless anti-Hermitian matrices lands in $SU(3)$.
 
 **The exponential is not a group homomorphism.** In general $\exp(X+Y)\neq\exp X\exp Y$; the defect is the BCH series. The map is equivariant under conjugation,
 
@@ -334,7 +334,7 @@ which is the statement that the exponential is natural for the adjoint action.
 
 ## Summary
 
-The exponential $\exp X=\sum X^{n}/n!$ is an entire surjection $\mathfrak{gl}_3(\mathbb{C})\to GL_3(\mathbb{C})$, with eigenvalues $e^{\lambda}$ and determinant $e^{\operatorname{tr}X}$. It is a local diffeomorphism at $X$ exactly when no two eigenvalues of $X$ differ by a nonzero multiple of $2\pi i$. It is not injective: $\exp X=I$ exactly when $X$ is diagonalisable with eigenvalues in $2\pi i\mathbb{Z}$. Every invertible matrix has a logarithm, computed on the Jordan blocks by the finite series $(\log\lambda)I+N/\lambda-N^{2}/(2\lambda^{2})$. One-parameter subgroups are exactly the maps $t\mapsto e^{tX}$. The Lie algebra $\mathfrak{gl}_3$ has real dimension $18$; the subalgebras $\mathfrak{sl}_3$, $\mathfrak{u}(3)$, $\mathfrak{su}(3)$, $\mathfrak{so}(3)$ have dimensions $16$, $9$, $8$, $3$ over $\mathbb{R}$. For a $*$-unitary root $H$ one has $H=e^{K}$ with $K=\frac{2\pi i}{3}(P_2+2P_3)$ skew-Hermitian; a non-normal root is not $*$-unitary. The gauge rescales $E_{12},E_{23}$ by $e^{t_1-t_2},e^{t_2-t_3}$, forcing the composite $E_{13}$ to scale by the product.
+The exponential $\exp X=\sum X^{n}/n!$ is an entire surjection $\mathfrak{gl}_3(\mathbb{C})\to GL_3(\mathbb{C})$, with eigenvalues $e^{\lambda}$ and determinant $e^{\operatorname{tr}X}$. It is a local diffeomorphism at $X$ exactly when no two eigenvalues of $X$ differ by a nonzero multiple of $2\pi i$. It is not injective: $\exp X=I$ exactly when $X$ is diagonalisable with eigenvalues in $2\pi i\mathbb{Z}$. Every invertible matrix has a logarithm, computed on the Jordan blocks by the finite series $(\log\lambda)I+N/\lambda-N^{2}/(2\lambda^{2})$. One-parameter subgroups are exactly the maps $t\mapsto e^{tX}$. The Lie algebra $\mathfrak{gl}_3$ has real dimension $18$; the subalgebras $\mathfrak{sl}_3$, $\mathfrak{u}(3)$, $\mathfrak{su}(3)$, $\mathfrak{so}(3)$ have dimensions $16$, $9$, $8$, $3$ over $\mathbb{R}$. For a $*$-unitary root $H$ one has $H=e^{K}$ with $K=\frac{2\pi i}{3}(P_2+2P_3)$ anti-Hermitian; a non-normal root is not $*$-unitary. The gauge rescales $E_{12},E_{23}$ by $e^{t_1-t_2},e^{t_2-t_3}$, forcing the composite $E_{13}$ to scale by the product.
 
 $$
 \boxed{\ \exp:\mathfrak{gl}_3\to GL_3\ \text{surjective, not injective};\quad \det e^{X}=e^{\operatorname{tr}X};\quad \dim_\mathbb{R}\mathfrak{gl}_3=18,\ \dim_\mathbb{R}\mathfrak{u}(3)=9,\ \dim_\mathbb{C}\mathfrak{sl}_3=8.\ }
@@ -354,11 +354,11 @@ $$
 |---|---|
 | $\mathfrak{gl}_3$ | $M_3(\mathbb{C})$ as a Lie algebra |
 | $\mathfrak{sl}_3$ | traceless matrices |
-| $\mathfrak{u}(3)$ | skew-Hermitian matrices |
-| $\mathfrak{su}(3)$ | traceless skew-Hermitian matrices |
+| $\mathfrak{u}(3)$ | anti-Hermitian matrices |
+| $\mathfrak{su}(3)$ | traceless anti-Hermitian matrices |
 | $\operatorname{ad}_X$ | $Y\mapsto[X,Y]$ |
 | $H$ | the root with $H^{3}=I$ |
-| $K$ | the skew-Hermitian logarithm of a $*$-unitary root $H$ |
+| $K$ | the anti-Hermitian logarithm of a $*$-unitary root $H$ |
 
 ## Further Reading
 

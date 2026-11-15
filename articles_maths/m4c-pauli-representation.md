@@ -812,7 +812,7 @@ $$
 A=\begin{pmatrix}-iQ_z&-iQ_x-Q_y\\-iQ_x+Q_y&iQ_z\end{pmatrix},\qquad
 L(\tilde Q)=\mathrm I_2\otimes A .
 $$
-The block $A$ is traceless, and so is $M$. The image is the complex span of $L_{\mathrm{pau},\vec e_x},L_{\mathrm{pau},\vec e_y},L_{\mathrm{pau},\vec e_z}$, of real dimension $6$. The trace is $0$, the determinant of the $2\times2$ image is $B^2$, and the determinant of $M$ is $B^4$. Inside the image, the trace condition is equivalent to $Q_t=0$. The image is closed under the commutator and not under the product. It is not the space of skew-symmetric matrices in this frame; the transpose dictionary of the axis-free basis does not carry over to this frame without the matrices $C_L$ and $C_R$.
+The block $A$ is traceless, and so is $M$. The image is the complex span of $L_{\mathrm{pau},\vec e_x},L_{\mathrm{pau},\vec e_y},L_{\mathrm{pau},\vec e_z}$, of real dimension $6$. The trace is $0$, the determinant of the $2\times2$ image is $B^2$, and the determinant of $M$ is $B^4$. Inside the image, the trace condition is equivalent to $Q_t=0$. The image is closed under the commutator and not under the product. It is not the space of antisymmetric matrices in this frame; the transpose dictionary of the axis-free basis does not carry over to this frame without the matrices $C_L$ and $C_R$.
 
 ### The Quaternion Subspace
 

@@ -54,9 +54,9 @@ $$
 \langle u,v\rangle_\partial = \int_{\partial\Omega}\vec P(u,v)\cdot\nu\,dS ,
 $$
 
-an expression in the boundary data of $u$ and $v$, skew-Hermitian when $L=L^{\dagger}$.
+an expression in the boundary data of $u$ and $v$, anti-Hermitian when $L=L^{\dagger}$.
 
-*Proof.* Integrate the Lagrange identity over $\Omega$ and apply the divergence theorem of *Vector Calculus and the Divergence Theorem*; the left side is the difference of the two pairings and the right side is the flux of the concomitant. The skew-Hermitian property is that of *Self-Adjoint Boundary Value Problems and the Sturm–Liouville Theory*, computed by exchanging $u$ and $v$ and conjugating.
+*Proof.* Integrate the Lagrange identity over $\Omega$ and apply the divergence theorem of *Vector Calculus and the Divergence Theorem*; the left side is the difference of the two pairings and the right side is the flux of the concomitant. The anti-Hermitian property is that of *Self-Adjoint Boundary Value Problems and the Sturm–Liouville Theory*, computed by exchanging $u$ and $v$ and conjugating.
 
 **Example (the second-order operator and the classical bracket).** For $Lu=-(pu')'+qu$ the concomitant vector is $\vec P(u,v)=p\,(u\nabla\bar v-\bar v\nabla u)$ and the boundary form is the classical bracket
 
@@ -82,7 +82,7 @@ and the boundary term of the Lagrange identity is the difference of the boundary
 
 **Theorem (the adjoint system and the pairing).** For the system $y'=Ay$ and its adjoint $z'=-A^*z$ the fibre pairing $\langle y,z\rangle$ is constant on pairs of solutions, $\frac{d}{dx}\langle y,z\rangle=0$, and the boundary form of the pair of problems is $[\langle y,z\rangle]_a^b$; the system is self-adjoint, that is, coincides with its adjoint system, exactly when $A^{*}=-A$, in which case $\omega=\langle\cdot,\cdot\rangle$ is a symplectic form in the sense above.
 
-*Proof.* $\frac{d}{dx}\langle y,z\rangle=\langle y',z\rangle+\langle y,z'\rangle=\langle Ay,z\rangle+\langle y,-A^*z\rangle=\langle Ay,z\rangle-\langle Ay,z\rangle=0$. The self-adjoint case is $-A^{*}=A$; then the two derivatives of the pairing vanish and $\langle Ay,z\rangle+\langle y,Az\rangle=0$ by the skew-Hermitian property of $A$, so the pairing is a symplectic form.
+*Proof.* $\frac{d}{dx}\langle y,z\rangle=\langle y',z\rangle+\langle y,z'\rangle=\langle Ay,z\rangle+\langle y,-A^*z\rangle=\langle Ay,z\rangle-\langle Ay,z\rangle=0$. The self-adjoint case is $-A^{*}=A$; then the two derivatives of the pairing vanish and $\langle Ay,z\rangle+\langle y,Az\rangle=0$ by the anti-Hermitian property of $A$, so the pairing is a symplectic form.
 
 **Theorem (the Sturm–Liouville system).** Let $\ell u=-(pu')'+qu$ on $(a,b)$ with real $p>0$ and real $q$, and write $y=(u,pu')$. Then $\ell u=\lambda w u$ reads as the system $y'=Ay$ with
 
@@ -96,7 +96,7 @@ and the form $\omega(y,z)=y_1\bar z_2-y_2\bar z_1=p(u\bar v'-u'\bar v)$ is sympl
 
 ## Summary
 
-The Lagrange identity states that the difference $\bar v\,Lu-u\,\overline{L^{\dagger}v}$ is a divergence, $\operatorname{div}\vec P(u,v)$, the bilinear concomitant $\vec P$ being sesquilinear and of order one less than $L$ in each variable; for $Lu=-(pu')'+qu$ it is the scalar $p(u\bar v'-u'\bar v)$, and the identity is verified by the product rule. Integrating the identity over a domain and applying the divergence theorem gives the Green formula, whose boundary integral is the boundary form $\langle u,v\rangle_\partial$, an expression in the boundary data and skew-Hermitian when the operator is formally self-adjoint; in one dimension it is the classical bracket $[\,p(u\bar v'-u'\bar v)\,]_a^b$. Written as a first-order system $y'=Ay$, the identity becomes the invariance of a symplectic form: the system is self-adjoint for $\omega$ when $\omega(Ay,z)+\omega(y,Az)=0$, and then $\omega$ is constant on pairs of solutions and its boundary values are the boundary term. The adjoint system $z'=-A^*z$ has the pairing $\langle y,z\rangle$ constant on pairs of solutions and is self-adjoint exactly when $A^{*}=-A$. The Sturm–Liouville equation as the system $y=(u,pu')$ is the instance: its matrix $A$ is symplectic-skew for the classical form $p(u\bar v'-u'\bar v)$, the form is invariant, and the boundary term is the classical bracket whose vanishing is the self-adjointness of the problem.
+The Lagrange identity states that the difference $\bar v\,Lu-u\,\overline{L^{\dagger}v}$ is a divergence, $\operatorname{div}\vec P(u,v)$, the bilinear concomitant $\vec P$ being sesquilinear and of order one less than $L$ in each variable; for $Lu=-(pu')'+qu$ it is the scalar $p(u\bar v'-u'\bar v)$, and the identity is verified by the product rule. Integrating the identity over a domain and applying the divergence theorem gives the Green formula, whose boundary integral is the boundary form $\langle u,v\rangle_\partial$, an expression in the boundary data and anti-Hermitian when the operator is formally self-adjoint; in one dimension it is the classical bracket $[\,p(u\bar v'-u'\bar v)\,]_a^b$. Written as a first-order system $y'=Ay$, the identity becomes the invariance of a symplectic form: the system is self-adjoint for $\omega$ when $\omega(Ay,z)+\omega(y,Az)=0$, and then $\omega$ is constant on pairs of solutions and its boundary values are the boundary term. The adjoint system $z'=-A^*z$ has the pairing $\langle y,z\rangle$ constant on pairs of solutions and is self-adjoint exactly when $A^{*}=-A$. The Sturm–Liouville equation as the system $y=(u,pu')$ is the instance: its matrix $A$ is symplectic-skew for the classical form $p(u\bar v'-u'\bar v)$, the form is invariant, and the boundary term is the classical bracket whose vanishing is the self-adjointness of the problem.
 
 ## Summary of Notation
 

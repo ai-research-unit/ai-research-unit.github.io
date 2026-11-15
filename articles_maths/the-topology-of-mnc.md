@@ -130,7 +130,7 @@ $$
 
 and the cone has apex the zero matrix. The computation confirms the closure at $n=3$ on random pairs, and it is the reason the space is contractible by the linear homotopy.
 
-**The two halves are closed cones inside the space.** The Hermitian matrices and the skew-Hermitian ones are real vector subspaces, and
+**The two halves are closed cones inside the space.** The Hermitian matrices and the anti-Hermitian ones are real vector subspaces, and
 
 $$
 \operatorname{Herm}_n\cap\mathfrak{u}(n)=\{0\},\qquad \operatorname{Herm}_n+\mathfrak{u}(n)=M_n,

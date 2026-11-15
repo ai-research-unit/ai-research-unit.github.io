@@ -275,7 +275,7 @@ $$
 \{f,g\} = \omega(X_f,X_g) .
 $$
 
-**Theorem (properties of the bracket).** The bracket is bilinear and skew-symmetric, satisfies the Leibniz rule $\{f,gh\}=\{f,g\}h+g\{f,h\}$, and satisfies the Jacobi identity
+**Theorem (properties of the bracket).** The bracket is bilinear and antisymmetric, satisfies the Leibniz rule $\{f,gh\}=\{f,g\}h+g\{f,h\}$, and satisfies the Jacobi identity
 
 $$
 \{f,\{g,h\}\}+\{g,\{h,f\}\}+\{h,\{f,g\}\}=0 ;
@@ -283,7 +283,7 @@ $$
 
 consequently $C^\infty(M)$ is a Lie algebra under the bracket and the map $f\mapsto X_f$ is a Lie algebra homomorphism, $[X_f,X_g]=X_{\{f,g\}}$. The bracket is nondegenerate in the sense that $\{f,g\}=0$ for all $g$ implies that $f$ is locally constant.
 
-*Proof.* The bilinearity, skew-symmetry and Leibniz rule follow from the corresponding properties of $\omega$ and of the differential; the Jacobi identity is the identity $d\omega=0$ written in terms of the bracket, and the homomorphism property is the computation $[X_f,X_g]=\omega$-dual of $d\{f,g\}$. The details are those of *Symplectic Forms and Poisson Brackets* and of the symplectic geometry of Part II.
+*Proof.* The bilinearity, antisymmetry and Leibniz rule follow from the corresponding properties of $\omega$ and of the differential; the Jacobi identity is the identity $d\omega=0$ written in terms of the bracket, and the homomorphism property is the computation $[X_f,X_g]=\omega$-dual of $d\{f,g\}$. The details are those of *Symplectic Forms and Poisson Brackets* and of the symplectic geometry of Part II.
 
 **Theorem (Darboux).** Every symplectic manifold is locally symplectomorphic to $(\mathbb{R}^{2n},\sum_{i=1}^n dq_i\wedge dp_i)$: around every point there are coordinates $(q_1,\dots,q_n,p_1,\dots,p_n)$, the **canonical coordinates**, in which the form is the displayed one.
 
@@ -305,7 +305,7 @@ Moreover $\frac{d}{dt}f = \{f,H\}$ along the flow of $X_H$, so that $f$ is conse
 
 *Proof.* The form $\omega = \sum_i dq_i\wedge dp_i$ gives $\omega(X_H,Y)=dq(X_H)\,dp(Y)-dp(X_H)\,dq(Y) = dq/dt\,dp(Y)+dp/dt\,dq(Y)$ for $X_H=(dq/dt,dp/dt)$; requiring this to equal $dH(Y)=H_qdq(Y)+H_pdp(Y)$ for all $Y$ gives the equations. The bracket formula is the same computation applied to $f$ and $g$, and the last statement is $\frac{d}{dt}f = df(X_H)=X_H(f)=\{f,H\}$.
 
-**Definition.** A **Poisson manifold** is a manifold with a bracket on its functions that is bilinear, skew-symmetric, satisfies the Leibniz rule and the Jacobi identity; the bracket need not come from a symplectic form, and its rank may drop on a subvariety. A **Poisson structure** is the corresponding section of $\Lambda^2TM$; when it is nondegenerate it is the inverse of a symplectic form.
+**Definition.** A **Poisson manifold** is a manifold with a bracket on its functions that is bilinear, antisymmetric, satisfies the Leibniz rule and the Jacobi identity; the bracket need not come from a symplectic form, and its rank may drop on a subvariety. A **Poisson structure** is the corresponding section of $\Lambda^2TM$; when it is nondegenerate it is the inverse of a symplectic form.
 
 **Remark (the two formulations).** A symplectic structure is a nondegenerate Poisson structure, and the classical mechanics of a system without constraints is symplectic; a Poisson structure that degenerates occurs for a constrained system, after symmetry reduction, and for the Lie–Poisson structure on the dual of a Lie algebra. The relation between the two is the content of the symplectic geometry of Part II, where the reduction of a symplectic manifold by a group action is treated; here the nondegenerate case is used, and the degenerate case is named only where it occurs, as in the Euler top below.
 

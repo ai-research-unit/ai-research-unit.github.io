@@ -16,7 +16,7 @@ The article recalls what each block established, states the Kronecker reading an
 
 **The forms.** The trace form with signature $(10,6)$, the keystone of the category; the Killing form $8\operatorname{tr}(XY)-2\operatorname{tr}X\operatorname{tr}Y$ with radical $\mathbb{C}\mathrm I$; the Hilbert–Schmidt form with the two orthonormal bases; the four forms and their algebraic norms, with $P=Q_t^{2}-B^{2}$, $N=Q_t^{2}+B^{2}$ and $\det=\langle\tilde Q\rangle_\natural^{2}$.
 
-**The idempotents and the spectrum.** The Peirce decompositions of the Jordan algebra and of the algebra, with the dimensions $k^{2}$, $(4-k)^{2}$ and $2k(4-k)$ and the corner recursion; the common spectral theorem for normal matrices; the Hermitian and the skew-Hermitian spectral theorems.
+**The idempotents and the spectrum.** The Peirce decompositions of the Jordan algebra and of the algebra, with the dimensions $k^{2}$, $(4-k)^{2}$ and $2k(4-k)$ and the corner recursion; the common spectral theorem for normal matrices; the Hermitian and the anti-Hermitian spectral theorems.
 
 **The exponential and the rotor.** The rotor as a square root of a rotation with two signs and the double cover; the adjoint action on the six-dimensional bivector space; simple and non-simple rotations with two angles; where the rotor leaves the matrix algebra, in $Cl^{+}(4)\cong M_2\oplus M_2$; the exponential of the symmetric part stretching onto the cone.
 

@@ -4,7 +4,7 @@
 
 Positivity is the choice of a cone. On the complex space the cone of Hermitian squares is the ray of the non-negative reals, and it is the smallest cone any non-trivial positivity can give. A ray is a cone of dimension one: it is closed under addition, closed under the multiplication of the algebra, closed under inversion, and it is its own boundary.
 
-The article defines the cone, proves that it is the ray, explains why the rank of the algebra forces the collapse, reads the order it induces, states what positivity adds beyond the definiteness of the Hermitian form, and compares the count with the split-complex algebra, where the cone of squares is two opposite cones and not a ray.
+The article defines the cone, proves that it is the ray, explains why the rank of the algebra forces the collapse, reads the order it induces, states what positivity adds beyond the definiteness of the Hermitian form, and compares the count with the split-complex algebra, where the set of Hermitian squares is the real line and the set of elements with non-negative Hermitian square is a double cone.
 
 The definiteness of the forms is *The Two Forms and the Two Algebraic Norms of the Complex Space*; the Hermitian square of an element is *The Classes of Element of the Complex Algebra*; the field property that makes the order of the algebra incompatible with its multiplication is *The Specificities of the Complex Algebra*; the triple whose quadratic representation is the norm is *The Ternary Product and the Associator of the Complex Space*.
 
@@ -83,7 +83,7 @@ The four forms of the general theory fall two-and-two on $\mathbb{C}$, and the t
 | $\langle Q,Q\rangle_{*}$ | $Q\bar Q$, real non-negative | the ray $[0,\infty)$ |
 | $\langle Q,Q\rangle_{\natural*}$ | $Q\bar Q$, real non-negative | the ray $[0,\infty)$ |
 
-**Remark (two rows, one cone).** Positivity is carried by the two sesquilinear rows and only by them, and the two carry the same cone. The plain rows define no positivity because a complex-valued form has no non-negative values to single out. On the biquaternion algebra the four rows are genuinely different: the Hermitian row alone is positive definite and the others are not. The complex case has one cone because it has one dimension.
+**Remark (two rows, one cone).** Positivity is carried by the two sesquilinear rows and only by them, and the two carry the same cone. The plain rows define no positivity because a complex-valued form has no non-negative values to single out. In a higher-rank algebra the four rows need not collapse; here the intrinsic conjugation is the identity, so the four forms are two and the two sesquilinear rows carry one cone. The complex case has one cone because it has one dimension.
 
 ## The Hilbert Algebra of Rank One
 
@@ -99,9 +99,9 @@ The four forms of the general theory fall two-and-two on $\mathbb{C}$, and the t
 
 *Proof.* $H(Q_1,Q_2)=Q_1\bar Q_2$, hence $|H(Q_1,Q_2)|^{2}=|Q_1|^{2}|Q_2|^{2}=H(Q_1)H(Q_2)$, the modulus being multiplicative.
 
-**Remark (why the inequality carries no information).** On a space of complex dimension one every two elements are proportional, so the case of equality of Cauchy–Schwarz is the only case. The inequality is empty here, and the statement with content is the next one, which asks when the value is real and non-negative. On the biquaternion algebra the module of rank one is a complex plane, and there the inequality is strict for some pairs.
+**Remark (why the inequality carries no information).** On a space of complex dimension one every two elements are proportional, so the case of equality of Cauchy–Schwarz is the only case. The inequality is empty here, and the statement with content is the next one, which asks when the value is real and non-negative. In a higher-dimensional module the inequality is strict for some pairs.
 
-**Theorem (the real non-negative values).** $H(Q_1,Q_2)$ is real and non-negative exactly when $Q_2=\lambda Q_1$ with $\lambda\ge0$ real.
+**Theorem (the real non-negative values).** $H(Q_1,Q_2)$ is real and non-negative exactly when $Q_1=0$ or $Q_2=\lambda Q_1$ with $\lambda\ge0$ real.
 
 *Proof.* For $Q_1\ne0$ write $Q_2=\lambda Q_1$ with $\lambda=Q_2/Q_1$, which is always possible. Then $H(Q_1,Q_2)=\bar\lambda H(Q_1)$, which is real exactly when $\lambda$ is real, and non-negative exactly when that real number is non-negative; for $Q_1=0$ both sides vanish.
 
@@ -121,21 +121,26 @@ The four forms of the general theory fall two-and-two on $\mathbb{C}$, and the t
 
 ## The Comparison with the Split-Complex Algebra
 
-**Proposition.** In $\mathbb{C}^{\mathrm{spl}}$ the set of Hermitian squares is $\{(a,b):a^{2}\ge b^{2}\}$, the union of the two opposite cones $a\ge|b|$ and $a\le-|b|$.
+**Proposition.** In $\mathbb{C}^{\mathrm{spl}}$ the Hermitian square is $Q\bar Q=a^{2}-b^{2}$, a real number, and it runs over all of $\mathbb{R}$: the set of Hermitian squares is the real line, not a ray.
 
-*Proof.* With $Q=a+jb$ and $j^{2}=1$, the conjugate is $a-jb$ and the product is $Q\bar Q=a^{2}-b^{2}$, a real number; the Hermitian squares are therefore the pairs $(a,b)$ with $a^{2}\ge b^{2}$, that is, the union of $a\ge|b|$ and $a\le-|b|$.
+*Proof.* With $Q=a+jb$ and $j^{2}=1$, the conjugate is $a-jb$ and the product is $Q\bar Q=a^{2}-b^{2}$. The value $t\ge0$ is attained at $Q=\sqrt{t}$, and the value $t<0$ at $Q=\sqrt{-t}\,j$; every value is real.
 
-**Corollary.** The set of Hermitian squares of $\mathbb{C}^{\mathrm{spl}}$ is not a ray, is not convex, and has non-empty interior in $\mathbb{R}^{2}$.
+**Proposition.** The set of elements of $\mathbb{C}^{\mathrm{spl}}$ whose Hermitian square is non-negative is the double cone
+$$
+\{Q=a+jb : a^{2}\ge b^{2}\}=\{a\ge|b|\}\cup\{a\le-|b|\}.
+$$
 
-*Proof.* The two cones are opposite and disjoint apart from their common vertex, so their union is not convex; each of them contains a ball of small radius around a point of its axis, so the union has interior.
+*Proof.* $Q\bar Q=a^{2}-b^{2}$, which is non-negative exactly when $a^{2}\ge b^{2}$.
 
-**Remark (the contrast).** In $\mathbb{C}$ the Hermitian square of $Q$ carries no trace of the direction of $Q$: it is $|Q|^{2}$, one real number, and every non-negative real is attained on a whole circle of elements. In $\mathbb{C}^{\mathrm{spl}}$ the Hermitian square is $a^{2}-b^{2}$, which is positive on a genuine two-dimensional region and negative on another, and the positive region has two components. The complex cone is a ray precisely because its square loses the direction; the loss is the multiplication by $i$, which is an isometry and a rotation.
+**Remark (the two split sets and the two complex sets).** The two notions must be kept apart. The set of Hermitian *values* is a ray in $\mathbb{C}$ and the whole real line in $\mathbb{C}^{\mathrm{spl}}$; the set of *elements* whose Hermitian square is non-negative is the whole plane in $\mathbb{C}$ and the double cone in $\mathbb{C}^{\mathrm{spl}}$. The double cone is not the set of Hermitian squares, and it is not convex: the two components are opposite and meet only at the origin.
 
-**Remark (the order of the split algebra).** $\mathbb{C}^{\mathrm{spl}}$ is the product $\mathbb{R}\oplus\mathbb{R}$, and the order that makes it an ordered ring is the product order, whose cone is $\{(a,b):a\ge0,\;b\ge0\}$. That cone is not the set of Hermitian squares, and the two must not be confused: the product order comes from the splitting into idempotents, and the cone of Hermitian squares comes from the Krein form, which is indefinite there.
+**Remark (the contrast).** In $\mathbb{C}$ the Hermitian square of $Q$ carries no trace of the direction of $Q$: it is $|Q|^{2}$, one real number, and every non-negative real is attained on a whole circle of elements. In $\mathbb{C}^{\mathrm{spl}}$ the Hermitian square is $a^{2}-b^{2}$, positive on the interior of the forward cone, negative on the interior of the backward one, and zero on the two null lines; its level sets are the hyperbolas of *The Level Sets of the Split Norm and the Hyperbolic Structure*. The complex square loses the direction because the multiplication by $i$ is a rotation; the split square keeps a sign because the multiplication by $j$ is a reflection.
+
+**Remark (the order of the split algebra).** $\mathbb{C}^{\mathrm{spl}}$ is the product $\mathbb{R}\oplus\mathbb{R}$, and the order that makes it an ordered ring is the product order, whose cone is $\{(a,b):a\ge0,\;b\ge0\}$. That cone is neither the set of Hermitian squares, which is the real line, nor the set of elements with non-negative Hermitian square, which is the double cone; the product order comes from the splitting into idempotents, and the double cone comes from the indefinite form $H$.
 
 ## Summary
 
-The cone of Hermitian squares of the complex space is the ray $[0,\infty)$, closed under addition, under the multiplication of the algebra and under inversion, of empty interior in the algebra and coinciding with its own boundary. It is a ray because the algebra has rank one: the spectrum of a self-adjoint element is a single real number and the state space is a point. It induces a total order on the self-adjoint part and no compatible order on the algebra, $-1$ being a square. Positivity adds to the definiteness of the Hermitian form the closure properties of a set, and only the two sesquilinear rows of the four forms carry it. The form makes the algebra a Hilbert algebra of rank one: Cauchy–Schwarz holds as an identity, the value is real and non-negative exactly on the real rays, the unitary group is the circle $\mathrm{U}(1)$, and the Witt group of the Hermitian forms is $\mathbb{Z}$. Against the split-complex algebra, whose Hermitian squares form two opposite cones of non-empty interior, the complex cone is the smallest possible: one ray, one dimension, one point of spectrum.
+The cone of Hermitian squares of the complex space is the ray $[0,\infty)$, closed under addition, under the multiplication of the algebra and under inversion, of empty interior in the algebra and coinciding with its own boundary. It is a ray because the algebra has rank one: the spectrum of a self-adjoint element is a single real number and the state space is a point. It induces a total order on the self-adjoint part and no compatible order on the algebra, $-1$ being a square. Positivity adds to the definiteness of the Hermitian form the closure properties of a set, and only the two sesquilinear rows of the four forms carry it. The form makes the algebra a Hilbert algebra of rank one: Cauchy–Schwarz holds as an identity, the value is real and non-negative exactly on the real rays, the unitary group is the circle $\mathrm{U}(1)$, and the Witt group of the Hermitian forms is $\mathbb{Z}$. Against the split-complex algebra, whose Hermitian squares form the real line and whose set of elements with non-negative Hermitian square is a double cone of non-empty interior, the complex cone is the smallest possible: one ray, one dimension, one point of spectrum.
 
 ## Summary of Notation
 
@@ -145,7 +150,7 @@ The cone of Hermitian squares of the complex space is the ray $[0,\infty)$, clos
 | $Q\bar Q=q^{2}+(q')^{2}$ | the Hermitian square, the square of the modulus |
 | $\mathcal{C}=[0,\infty)$ | the cone of Hermitian squares, a ray |
 | $r\ge s$ | the quadratic order on the self-adjoint part, $r-s\in\mathcal{C}$ |
-| $\mathbb{C}^{\mathrm{spl}}$ | the split-complex algebra, whose Hermitian squares are $\{(a,b):a^{2}\ge b^{2}\}$ |
+| $\mathbb{C}^{\mathrm{spl}}$ | the split-complex algebra, whose Hermitian squares are $\mathbb{R}$ and whose $H$-positive set is $\{(a,b):a^{2}\ge b^{2}\}$ |
 
 ## Further Reading
 

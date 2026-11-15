@@ -40,7 +40,7 @@ $$
 \dim L(\mathbb{H})=4,\qquad \dim R(\mathbb{H})=4,\qquad \dim\bigl(L(\mathbb{H})+R(\mathbb{H})\bigr)=7 .
 $$
 
-The seven is visible in the Cayley frame without any computation: a general element of the sum is $q_tI_4$ plus the three skew-symmetric generators plus the three signed transposes of them, and these seven matrices are linearly independent while the identity is counted once.
+The seven is visible in the Cayley frame without any computation: a general element of the sum is $q_tI_4$ plus the three antisymmetric generators plus the three signed transposes of them, and these seven matrices are linearly independent while the identity is counted once.
 
 **The adjoints.** With respect to the Frobenius form of the ambient, the adjoint of $L_{\tilde q}$ is $L_{\tilde q}^{\,T}=D R_{\tilde q}D$, which is not in $L(\mathbb{H})$ but in $R(\mathbb{H})$: the adjoint operation exchanges the two families. With respect to the trace form it is the same statement with the parameters swapped, $\langle L_{\tilde q}X,Y\rangle_{\operatorname{tr}}=\langle X,R_{\tilde q}Y\rangle_{\operatorname{tr}}$. So in the regular frame the two-sidedness of the adjoint is stated once and read twice, and the exchange is a linear map of the ambient rather than a conjugation.
 

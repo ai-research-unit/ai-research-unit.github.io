@@ -4,7 +4,7 @@
 
 **The two halves are the eigenspaces of a smooth involution, so they are embedded submanifolds that split the tangent bundle, and the exponential behaves completely differently on them: a diffeomorphism on the symmetric half and a covering on the antisymmetric one.**
 
-The article proves that $\operatorname{Sym}_n$ and $\operatorname{Skew}_n$ are embedded submanifolds of dimensions $n(n+1)/2$ and $n(n-1)/2$, that the symmetrisation and skew-symmetrisation maps are smooth projections splitting the tangent bundle, that the exponential is a diffeomorphism on one half and a surjective local diffeomorphism on the other, and that the two exponentials do not multiply to the exponential of the sum. It assumes *The Analysis on $M_n(\mathbb{R})$*, *The Exponential of the Symmetric Part: Stretches and the Positive Cone* and *The Exponential of the Antisymmetric Part: One-Parameter Rotations*. It defers the metric to *The Geometry of the Two Halves and the Riemannian Reading*.
+The article proves that $\operatorname{Sym}_n$ and $\operatorname{Skew}_n$ are embedded submanifolds of dimensions $n(n+1)/2$ and $n(n-1)/2$, that the symmetrisation and antisymmetrisation maps are smooth projections splitting the tangent bundle, that the exponential is a diffeomorphism on one half and a surjective local diffeomorphism on the other, and that the two exponentials do not multiply to the exponential of the sum. It assumes *The Analysis on $M_n(\mathbb{R})$*, *The Exponential of the Symmetric Part: Stretches and the Positive Cone* and *The Exponential of the Antisymmetric Part: One-Parameter Rotations*. It defers the metric to *The Geometry of the Two Halves and the Riemannian Reading*.
 
 ## The Two Halves as Submanifolds
 
@@ -116,7 +116,7 @@ $\operatorname{Sym}_n$ and $\operatorname{Skew}_n$ are embedded submanifolds of 
 
 | Symbol | Meaning |
 |---|---|
-| $\pi_{+},\pi_{-}$ | the symmetrisation and skew-symmetrisation projections |
+| $\pi_{+},\pi_{-}$ | the symmetrisation and antisymmetrisation projections |
 | $\Phi$ | the linear isomorphism $\operatorname{Sym}_n\oplus\operatorname{Skew}_n\to M_n(\mathbb{R})$ |
 | $e^{S}$, $e^{K}$ | the stretch and the rotation parts of the exponential |
 | $\Theta(A)=(A^{\mathsf T})^{-1}$ | the Cartan involution of the group |

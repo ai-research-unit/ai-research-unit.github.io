@@ -25,7 +25,7 @@ q_x&q_t&-q_z&q_y\\
 q_y&q_z&q_t&-q_x\\
 q_z&-q_y&q_x&q_t
 \end{pmatrix}.$$
-The matrix of $L_{\vec q}$ is this matrix with $q_t=0$, and it is skew-symmetric.
+The matrix of $L_{\vec q}$ is this matrix with $q_t=0$, and it is antisymmetric.
 
 **Proposition (the square and the characteristic polynomial).** For every $\tilde q=q_t+\vec q$,
 $$L_{\tilde q}=q_t\,\mathrm{id}+L_{\vec q},\qquad L_{\vec q}^{\,2}=-|\vec q|^2\,\mathrm{id},$$

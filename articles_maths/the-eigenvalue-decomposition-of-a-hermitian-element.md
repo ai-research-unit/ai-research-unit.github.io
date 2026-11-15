@@ -6,7 +6,7 @@ A **Hermitian element** of a sesqualgebra is an element fixed by the involution,
 
 The bridge between the two readings is the minimal polynomial. A Hermitian element has its minimal polynomial over $F$ with coefficients in $F_{0}$, so the same polynomial is minimal over the fixed field, and the two spectral theories are governed by the same polynomial. The consequence is a dichotomy. If the polynomial splits over $F_{0}$ with distinct roots, the Hermitian element has a spectral resolution over $F_{0}$, with Hermitian idempotents, and the associative resolution is the same one. If the polynomial has a non-fixed root, it has the conjugate root as well, the associative resolution pairs the two projectors, and no resolution over $F_{0}$ exists. The Hermitian spectral resolution is therefore exactly the associative one whose eigenvalues are all fixed.
 
-The setting is that of *Sesqualgebras*: $F$ is a field of characteristic not two, $\varsigma$ is an involution of $F$, $F_{0}=F^{\varsigma}$, $A$ is a finite-dimensional unital associative $F$-algebra, and $*$ is a $\varsigma$-semilinear involution of $A$. The Hermitian part, the decomposition $A=H(A)\oplus S(A)$ and the Jordan structure of $H(A)$ are from *Hermitian and Skew-Hermitian Elements* and *The Hermitian Jordan Algebra*; the Hermitian idempotents and the Peirce decomposition are *Hermitian Idempotents and the Peirce Decomposition*; the Jordan spectral theorem is *The Eigenvalue Decomposition in a Jordan Algebra*; the associative spectral theory is *The Eigenvalue Decomposition of an Element* and *The Eigenvalue Decomposition of a Self-Adjoint Element*; and the form-theoretic orthogonality of the spectral idempotents is *The Eigenvalue Decomposition with respect to a Degree-2 Form*.
+The setting is that of *Sesqualgebras*: $F$ is a field of characteristic not two, $\varsigma$ is an involution of $F$, $F_{0}=F^{\varsigma}$, $A$ is a finite-dimensional unital associative $F$-algebra, and $*$ is a $\varsigma$-semilinear involution of $A$. The Hermitian part, the decomposition $A=H(A)\oplus S(A)$ and the Jordan structure of $H(A)$ are from *Hermitian and Anti-Hermitian Elements* and *The Hermitian Jordan Algebra*; the Hermitian idempotents and the Peirce decomposition are *Hermitian Idempotents and the Peirce Decomposition*; the Jordan spectral theorem is *The Eigenvalue Decomposition in a Jordan Algebra*; the associative spectral theory is *The Eigenvalue Decomposition of an Element* and *The Eigenvalue Decomposition of a Self-Adjoint Element*; and the form-theoretic orthogonality of the spectral idempotents is *The Eigenvalue Decomposition with respect to a Degree-2 Form*.
 
 ## The Hermitian Element and Its Two Algebras
 
@@ -18,7 +18,7 @@ $$
 (\lambda h)^{*}=\varsigma(\lambda)h .
 $$
 
-Hence $H(A)$ is a module over the fixed field $F_{0}$ and not over $F$ in general. When $F_{0}\neq F$ the extension $F/F_{0}$ is quadratic and there is an element $t\in F$ with $\varsigma(t)=-t$ and $F=F_{0}\oplus F_{0}t$; the multiplication by $t$ carries $H(A)$ to the skew part $S(A)$ and back. This is the scalar theorem of *Hermitian and Skew-Hermitian Elements*, §*The Scalar Action*.
+Hence $H(A)$ is a module over the fixed field $F_{0}$ and not over $F$ in general. When $F_{0}\neq F$ the extension $F/F_{0}$ is quadratic and there is an element $t\in F$ with $\varsigma(t)=-t$ and $F=F_{0}\oplus F_{0}t$; the multiplication by $t$ carries $H(A)$ to the skew part $S(A)$ and back. This is the scalar theorem of *Hermitian and Anti-Hermitian Elements*, §*The Scalar Action*.
 
 **Definition.** The **Hermitian Jordan algebra** of $A$ is $J(A)=(H(A),\circ)$ with
 
@@ -259,7 +259,7 @@ The Jordan spectral theorem is *The Eigenvalue Decomposition in a Jordan Algebra
 | $A$ | a finite-dimensional unital associative $F$-algebra |
 | $*$ | a $\varsigma$-semilinear involution of $A$ |
 | $H(A)$ | the Hermitian elements, $h^{*}=h$ |
-| $S(A)$ | the skew-Hermitian elements, $s^{*}=-s$ |
+| $S(A)$ | the anti-Hermitian elements, $s^{*}=-s$ |
 | $\circ$ | the symmetrised product $\tfrac12(xy+yx)$ on $H(A)$ |
 | $J(A)=(H(A),\circ)$ | the Hermitian Jordan algebra over $F_{0}$ |
 | $T(x,y)=\tau(xy)$ | the trace form of the Hermitian Jordan algebra |

@@ -8,11 +8,11 @@ The claim is that the indefiniteness is not a defect to be repaired but the stru
 
 The form is *The Two Forms and the Two Algebraic Norms of the Split-Complex Space*; the isotropic lines are *The Involutions, the Subspaces and the Idempotent Lines of the Split-Complex Space*; the level sets are *The Level Sets of the Split Norm and the Hyperbolic Structure*; the group of units is *Norm and Invertibility in the General Split-Complex Algebra*.
 
-## The Cone of $H$-Squares
+## The Cone of $H$-Positivity
 
 ### The Definition
 
-**Definition.** The **cone of $H$-squares** is the set of elements whose Hermitian square is non-negative,
+**Definition.** The **cone of $H$-positivity** is the set of elements whose Hermitian square is non-negative,
 
 $$
 \mathcal{C}=\{Q : H(Q,Q)\ge0\}=\{Q : N(Q)\ge0\} .
@@ -158,7 +158,7 @@ $$
 
 The order is not total. The two idempotents are incomparable: $\Pi_+-\Pi_-=j$ has norm $-1$ and $\Pi_--\Pi_+$ has norm $-1$, so neither difference lies in the cone. So there are pairs of elements of which neither is above the other, and the order is a partial order in the strict sense.
 
-The double cone alone does not give an order: it is not pointed, since $\mathcal{C}\cap(-\mathcal{C})=\mathcal{C}$, and the relation it defines is only a preorder. The order comes from one component, and the choice of the forward one is the choice of a time direction.
+The double cone alone does not give an order: it is not convex, since the sum of a vector of one component and a vector of the other can leave the cone, and it is not pointed, since $\mathcal{C}\cap(-\mathcal{C})=\mathcal{C}$. The order comes from one component, and the choice of the forward one is the choice of a time direction.
 
 ### Monotonicity of the Product
 
@@ -223,7 +223,7 @@ The unitary group of rank one is the group of norm-one elements, isomorphic to $
 | Symbol | Meaning |
 |---|---|
 | $H(A,C)=A\bar C$ | The Hermitian form of signature $(1,1)$ |
-| $\mathcal{C}=\{N\ge0\}$ | The double cone, the cone of $H$-squares |
+| $\mathcal{C}=\{N\ge0\}$ | The double cone, the cone of $H$-positivity |
 | $\mathcal{C}_\pm$ | The forward and the backward cone, the two components |
 | $g(A,C)=ac-bd$ | The polar form, the real part of $H$ |
 | $N(Q)=Q_+Q_-=a^2-b^2$ | The split norm |

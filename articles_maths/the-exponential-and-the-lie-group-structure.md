@@ -136,7 +136,7 @@ $$
 
 so the curve is the flow of the right-invariant vector field of $X$. The computation confirms the identity at $n=3$ by a central difference along the curve, and it is the reason the exponential solves the linear differential equation.
 
-**The one-parameter subgroups of the two halves are the rotations and the stretches.** If $X$ is skew-Hermitian the curve $e^{tX}$ is unitary, and if $X$ is Hermitian the curve is positive definite; so
+**The one-parameter subgroups of the two halves are the rotations and the stretches.** If $X$ is anti-Hermitian the curve $e^{tX}$ is unitary, and if $X$ is Hermitian the curve is positive definite; so
 
 $$
 X\in\mathfrak{u}(n)\Rightarrow e^{tX}\in\mathrm{U}(n),\qquad X\in\operatorname{Herm}_n\Rightarrow e^{tX}\in\mathrm{PD}_n.

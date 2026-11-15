@@ -265,11 +265,11 @@ The definitions are collected here, with the invariants used throughout. In the 
 
 | Group | Definition | Dimension | Tangent space at $I$ |
 |---|---|---|---|
-| $O(n)$ | $A^T A = I$, real | $n(n-1)/2$ | skew-symmetric matrices |
-| $SO(n)$ | $A^T A = I$, $\det A = 1$ | $n(n-1)/2$ | skew-symmetric matrices |
-| $\mathrm{U}(n)$ | $A^* A = I$, complex | $n^2$ | skew-Hermitian matrices |
-| $SU(n)$ | $A^* A = I$, $\det A = 1$ | $n^2 - 1$ | skew-Hermitian, trace zero |
-| $Sp(n)$ | $A^* A = I$, quaternionic | $n(2n+1)$ | quaternionic skew-Hermitian |
+| $O(n)$ | $A^T A = I$, real | $n(n-1)/2$ | antisymmetric matrices |
+| $SO(n)$ | $A^T A = I$, $\det A = 1$ | $n(n-1)/2$ | antisymmetric matrices |
+| $\mathrm{U}(n)$ | $A^* A = I$, complex | $n^2$ | anti-Hermitian matrices |
+| $SU(n)$ | $A^* A = I$, $\det A = 1$ | $n^2 - 1$ | anti-Hermitian, trace zero |
+| $Sp(n)$ | $A^* A = I$, quaternionic | $n(2n+1)$ | quaternionic anti-Hermitian |
 
 | Group | Compact | Connected | Centre | Fundamental group |
 |---|---|---|---|---|

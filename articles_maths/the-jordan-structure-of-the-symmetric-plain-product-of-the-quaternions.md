@@ -10,7 +10,7 @@ is commutative, two-sidedly unital and satisfies the Jordan identity, so it is a
 
 The model is [The Jordan Structure of the Symmetric Plain Product](the-jordan-structure-of-the-symmetric-plain-product.html), the biquaternion article of the same name, section by section. Over $\mathbb{C}$ the symmetrisation is a formally real Jordan algebra of degree two, with a Lorentz cone and a four-parameter family of rank-one idempotents; over $\mathbb{R}$ it has a trivial idempotent class, a cone of squares that is the whole space, and no Peirce calculus at all. The two columns differ as a division algebra differs from a split one.
 
-The parent is [The General Plain Bilinear Product of the Quaternions](the-general-plain-bilinear-product-of-the-quaternions.html). The symmetrisation as a multiplication is [Introduction to the Symmetric Plain Algebra of the Quaternions](introduction-to-the-symmetric-plain-algebra-of-the-quaternions.html), cited and not restated; the general theory is [Jordan Algebras](jordan-algebras.html); the other symmetrisation is [The Jordan Structure of the Symmetric Quaternionic Product of the Quaternions](the-jordan-structure-of-the-symmetric-quaternionic-product-of-the-quaternions.html).
+The parent is [The General Plain Bilinear Product of the Quaternions](the-general-plain-bilinear-product-of-the-quaternions.html). The general theory is [Jordan Algebras](jordan-algebras.html); the other symmetrisation is [The Jordan Structure of the Symmetric Quaternionic Product of the Quaternions](the-jordan-structure-of-the-symmetric-quaternionic-product-of-the-quaternions.html).
 
 ## The Symmetrisation
 
@@ -223,7 +223,7 @@ The operators are $L(\tilde q)$ and $U(\tilde q)\tilde y=\tilde q\tilde y\tilde 
 
 ## Further Reading
 
-- [The General Plain Bilinear Product of the Quaternions](the-general-plain-bilinear-product-of-the-quaternions.html) for the parent product, and [Introduction to the Symmetric Plain Algebra of the Quaternions](introduction-to-the-symmetric-plain-algebra-of-the-quaternions.html) for the symmetrisation as a multiplication.
+- [The General Plain Bilinear Product of the Quaternions](the-general-plain-bilinear-product-of-the-quaternions.html) for the parent product.
 - [The Jordan Structure of the Symmetric Quaternionic Product of the Quaternions](the-jordan-structure-of-the-symmetric-quaternionic-product-of-the-quaternions.html), for the other symmetrisation, which fails the identity, and [Jordan Algebras](jordan-algebras.html) for the general theory.
 - [The Jordan Structure of the Symmetric Plain Product](the-jordan-structure-of-the-symmetric-plain-product.html), for the biquaternion counterpart, where the cone and the Peirce theory exist.
 - [The P-Norm Partition of the Quaternion Algebra](the-p-norm-partition-of-the-quaternion-algebra.html) for the partition that the Jordan structure does not give, and [The Lie Structure of the Antisymmetric Plain Product of the Quaternions](the-lie-structure-of-the-antisymmetric-plain-product-of-the-quaternions.html) for the other half of the parent.

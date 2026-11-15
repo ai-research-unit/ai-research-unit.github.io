@@ -12,7 +12,7 @@ The article assumes the base of *Algebra and Element Conventions*; the norm is r
 
 ## The Twelve Products and Their Names
 
-The algebra carries **four general products** — one to each of the four choices of the two slots, the first factor read as it stands or through ${}^{\natural}$ and the second as it stands or through ${}^{*}$ — and each of the four splits into a **symmetric part** and an **antisymmetric part**, so that the complex space carries **twelve products** in all. The names are these, with the three-letter code the band articles write them by:
+The algebra carries **four general products** — one to each of the four choices of the two slots, the first factor read as it stands or through ${}^{\natural}$ and the second as it stands or through ${}^{*}$ — and each of the four splits into a **symmetric part** and an **antisymmetric part**, so that the biquaternion space carries **twelve products** in all. The names are these, with the three-letter code the band articles write them by:
 
 | The general product | Its symmetric part | Its antisymmetric part |
 |---|---|---|
@@ -120,7 +120,7 @@ $$
 [\tilde Q_1,\tilde Q_2]_\varsigma=\tilde Q_1\tilde Q_2^{*}-\tilde Q_2\tilde Q_1^{*},
 $$
 
-whose values lie in the skew-Hermitian part. **The full dot $\bullet$ and the wedge $\wedge$ are reserved for the exchange that keeps the class of the product, so neither names the objects of this paragraph.** The two are not the same operation (*Symmetric and Antisymmetric Decomposition of the Four General Products*; *The Sesquilinear Commutator and the Symmetrised Product on the Biquaternion*), and the current of a scalar field is the commutator, $\tilde J=i[\tilde\Phi^{*}(\tilde\nabla\tilde\Phi)-(\tilde\nabla\tilde\Phi^{*})\tilde\Phi]$.
+whose values lie in the anti-Hermitian part. **The full dot $\bullet$ and the wedge $\wedge$ are reserved for the exchange that keeps the class of the product, so neither names the objects of this paragraph.** The two are not the same operation (*Symmetric and Antisymmetric Decomposition of the Four General Products*; *The Sesquilinear Commutator and the Symmetrised Product on the Biquaternion*), and the current of a scalar field is the commutator, $\tilde J=i[\tilde\Phi^{*}(\tilde\nabla\tilde\Phi)-(\tilde\nabla\tilde\Phi^{*})\tilde\Phi]$.
 
 The products themselves — their coordinates, their laws, their units and their images — are *Symmetric and Antisymmetric Decomposition of the Four General Products*, and the grid of the four general products is *The Four General Products and Their Relations over the Biquaternion Algebra*.
 

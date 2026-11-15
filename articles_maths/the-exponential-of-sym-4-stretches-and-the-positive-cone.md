@@ -126,7 +126,7 @@ with the stratum of rank $k$ of real dimension $2k(4-k)+k^{2}$ inside $\operator
 
 **The ten are the stretch.** The ten symmetric basis elements are the coordinate directions of the stretch, and the six antisymmetric ones are the directions of the rotation; the two halves are the two factors of the polar decomposition at the level of the Lie algebra.
 
-**Proof.** The Hermitian part is the stretch and the skew-Hermitian part is the rotation generator, and the split is the split of the two halves.
+**Proof.** The Hermitian part is the stretch and the anti-Hermitian part is the rotation generator, and the split is the split of the two halves.
 
 ## Summary
 

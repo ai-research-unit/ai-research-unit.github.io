@@ -10,7 +10,7 @@ It forgets everything but the vector parts and the cross product, and what remai
 
 The article is the real mirror of [The Lie Structure of the Antisymmetric Plain Product](the-lie-structure-of-the-antisymmetric-plain-product.html). The biquaternion bracket of the same slot pairing is a Lie algebra over $\mathbb{C}$, of complex dimension three on the same cross product; the real bracket is the same object with the scalar line added as a centre, and the difference between the two is a difference of the ground field and of the scalar part, not of the bracket.
 
-The parent is [The General Plain Bilinear Product of the Quaternions](the-general-plain-bilinear-product-of-the-quaternions.html); the bracket as a multiplication is [Introduction to the Antisymmetric Plain Algebra of the Quaternions](introduction-to-the-antisymmetric-plain-algebra-of-the-quaternions.html), and the Killing form is [The Killing Form of a Bilinear Product and the Scalar Product It Induces](the-killing-form-of-the-antisymmetric-plain-algebra-of-the-quaternions.html), both cited and not restated. The other half of the same parent is [The Jordan Structure of the Symmetric Plain Product of the Quaternions](the-jordan-structure-of-the-symmetric-plain-product-of-the-quaternions.html).
+The parent is [The General Plain Bilinear Product of the Quaternions](the-general-plain-bilinear-product-of-the-quaternions.html). The other half of the same parent is [The Jordan Structure of the Symmetric Plain Product of the Quaternions](the-jordan-structure-of-the-symmetric-plain-product-of-the-quaternions.html).
 
 ## The Bracket
 
@@ -159,7 +159,7 @@ is an automorphism of the Lie algebra, fixes $e_t$, and rotates $V$ by the angle
 
 *Proof.* The conjugation by a versor is an automorphism of the parent, hence of the bracket, and it fixes $e_t$ because $\tilde r$ and $e_t$ commute. On $V$ it is the rotation of the versor representation, whose angle is twice the angle of the versor: $\tilde r\vec v\tilde r^{-1}=\vec v\cos2\theta+(\vec u\times\vec v)\sin2\theta+\vec u(\vec u,\vec v)(1-\cos2\theta)$. Verified numerically on random versors and vectors, with a residual at the level of the arithmetic.
 
-**Remark (the double cover).** The map $\tilde r\mapsto\mathrm{Ad}_{\tilde r}$ is a surjection of $S^3$ onto $SO(3)$ with kernel $\pm e_t$, so the group of the algebra is $S^3$ and the adjoint group is $SO(3)$. The exponential $\vec w\mapsto\exp(\vec w)=\cos\lvert\vec w\rvert+\vec w\sin\lvert\vec w\rvert/\lvert\vec w\rvert$ is a diffeomorphism of the open ball of radius $\pi$ onto $S^3$ minus the point $-e_t$, and it maps the ball of radius $\pi/2$ onto the versors of positive scalar part; the two-to-one character of the cover is the antipodal identification $\tilde r\sim-\tilde r$ of the sphere, not of the ball. The cover is read in [The Pin and Spin Groups of the General Quaternionic Algebra of the Quaternions](the-pin-and-spin-groups-of-the-general-quaternionic-algebra-of-the-quaternions.html) and in [The Exponential of a Quaternion and the Polar Decomposition](quaternion-exponential-and-lie-group-structure.html).
+**Remark (the double cover).** The map $\tilde r\mapsto\mathrm{Ad}_{\tilde r}$ is a surjection of $S^3$ onto $SO(3)$ with kernel $\pm e_t$, so the group of the algebra is $S^3$ and the adjoint group is $SO(3)$. The exponential $\vec w\mapsto\exp(\vec w)=\cos\lvert\vec w\rvert+\vec w\sin\lvert\vec w\rvert/\lvert\vec w\rvert$ is a diffeomorphism of the open ball of radius $\pi$ onto $S^3$ minus the point $-e_t$, and it maps the ball of radius $\pi/2$ onto the versors of positive scalar part; the two-to-one character of the cover is the antipodal identification $\tilde r\sim-\tilde r$ of the sphere, not of the ball. The cover is read in [The Pin and Spin Groups of the Quaternion Algebra](the-pin-and-spin-groups-of-the-quaternion-algebra.html) and in [The Exponential of a Quaternion and the Polar Decomposition](quaternion-exponential-and-lie-group-structure.html).
 
 ## The Place among the Two
 
@@ -197,8 +197,6 @@ The exponential of $t\vec u$ is the versor $\cos t+\vec u\sin t$, the adjoint ac
 
 ## Further Reading
 
-- [Introduction to the Antisymmetric Plain Algebra of the Quaternions](introduction-to-the-antisymmetric-plain-algebra-of-the-quaternions.html), for the bracket as a multiplication.
-- [The Killing Form of a Bilinear Product and the Scalar Product It Induces](the-killing-form-of-the-antisymmetric-plain-algebra-of-the-quaternions.html), for the form and its computation.
 - [The General Plain Bilinear Product of the Quaternions](the-general-plain-bilinear-product-of-the-quaternions.html), for the parent product.
 - [The Lie Structure of the Antisymmetric Plain Product](the-lie-structure-of-the-antisymmetric-plain-product.html), for the biquaternion counterpart.
 - [The Lie Structure of the Antisymmetric Quaternionic Product of the Quaternions](the-lie-structure-of-the-antisymmetric-quaternionic-product-of-the-quaternions.html), for the bracket that fails.

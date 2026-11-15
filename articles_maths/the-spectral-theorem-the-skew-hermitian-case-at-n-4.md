@@ -1,22 +1,22 @@
-# __The Spectral Theorem: the Skew-Hermitian Case and the Reality of the Spectrum at $n=4$__
+# __The Spectral Theorem: the Anti-Hermitian Case and the Reality of the Spectrum at $n=4$__
 
 ## Introduction
 
-**A skew-Hermitian matrix is $i$ times a Hermitian one, so its spectrum is purely imaginary and its exponential is unitary; for a real skew matrix of order four the spectrum is $\{i\theta_1,-i\theta_1,i\theta_2,-i\theta_2\}$, the two angles exist and are independent, the Pfaffian is their product, and the two summands of $\mathfrak{so}(4)=\mathfrak{sl}_2\oplus\mathfrak{sl}_2$ carry the two parameters.**
+**A anti-Hermitian matrix is $i$ times a Hermitian one, so its spectrum is purely imaginary and its exponential is unitary; for a real skew matrix of order four the spectrum is $\{i\theta_1,-i\theta_1,i\theta_2,-i\theta_2\}$, the two angles exist and are independent, the Pfaffian is their product, and the two summands of $\mathfrak{so}(4)=\mathfrak{sl}_2\oplus\mathfrak{sl}_2$ carry the two parameters.**
 
 The article proves the purely imaginary spectrum, identifies the exponential with the map onto the unitary group, derives the real normal form with two rotation blocks, relates the two angles to the two ideals and to the isoclinic families, computes the Pfaffian, and reads the whole picture in the biquaternion algebra as a two-sided rotation $L_{e^{\theta_1 i}}R_{e^{\theta_2 i}}$.
 
-It assumes *Normal Matrices and the Common Spectral Theorem at $n=4$*, *The Lie Algebra $\operatorname{Skew}_4\cong\mathfrak{so}(4)$* and *Simple and Non-Simple Rotations: One Angle at $n\le3$, Two Angles at $n\ge4$*. The model at order two is *The Spectral Theorem: the Skew-Hermitian Case and the Two Imaginary Eigenvalues*.
+It assumes *Normal Matrices and the Common Spectral Theorem at $n=4$*, *The Lie Algebra $\operatorname{Skew}_4\cong\mathfrak{so}(4)$* and *Simple and Non-Simple Rotations: One Angle at $n\le3$, Two Angles at $n\ge4$*. The model at order two is *The Spectral Theorem: the Anti-Hermitian Case and the Two Imaginary Eigenvalues*.
 
-## The Skew-Hermitian Case
+## The Anti-Hermitian Case
 
-**Definition.** $A$ is **skew-Hermitian** when $A^{\ast}=-A$.
+**Definition.** $A$ is **anti-Hermitian** when $A^{\ast}=-A$.
 
-**Proposition.** $A$ is skew-Hermitian exactly when $A=iH$ with $H$ Hermitian, and then the spectrum of $A$ is $i$ times the spectrum of $H$, hence purely imaginary.
+**Proposition.** $A$ is anti-Hermitian exactly when $A=iH$ with $H$ Hermitian, and then the spectrum of $A$ is $i$ times the spectrum of $H$, hence purely imaginary.
 
 **Proof.** $H=-iA$ satisfies $H^{\ast}=iA^{\ast}=-iA=H$; the eigenvalues of $iH$ are $i\lambda$ with $\lambda$ an eigenvalue of $H$, by the spectral resolution.
 
-**Corollary.** $A=i\sum_k\theta_kP_k$ with $\theta_k$ real and $P_k$ the spectral projectors, so a skew-Hermitian matrix is a real linear combination of commuting orthogonal projections after multiplication by $i$.
+**Corollary.** $A=i\sum_k\theta_kP_k$ with $\theta_k$ real and $P_k$ the spectral projectors, so a anti-Hermitian matrix is a real linear combination of commuting orthogonal projections after multiplication by $i$.
 
 **Proof.** Insert the Hermitian resolution of $H$.
 
@@ -24,15 +24,15 @@ It assumes *Normal Matrices and the Common Spectral Theorem at $n=4$*, *The Lie 
 
 **Proof.** The conjugate of an eigenvalue is an eigenvalue of the conjugate matrix, which is the matrix itself.
 
-**The real dimension.** $\mathfrak{u}(4)$ has real dimension $16$, and its skew-Hermitian part is the whole of it, since a skew-Hermitian matrix has $16$ real parameters.
+**The real dimension.** $\mathfrak{u}(4)$ has real dimension $16$, and its anti-Hermitian part is the whole of it, since a anti-Hermitian matrix has $16$ real parameters.
 
-**Proof.** A Hermitian matrix has $16$ real parameters, and multiplication by $i$ is a real-linear isomorphism onto the skew-Hermitian matrices.
+**Proof.** A Hermitian matrix has $16$ real parameters, and multiplication by $i$ is a real-linear isomorphism onto the anti-Hermitian matrices.
 
 ## The Exponential onto the Unitary Group
 
-**Theorem.** If $A$ is skew-Hermitian then $e^{A}$ is unitary, and every unitary matrix is of this form.
+**Theorem.** If $A$ is anti-Hermitian then $e^{A}$ is unitary, and every unitary matrix is of this form.
 
-**Proof.** $(e^{A})^{\ast}=e^{A^{\ast}}=e^{-A}=(e^{A})^{-1}$ for skew-Hermitian $A$. Conversely a unitary $U$ has a spectral resolution $U=V\operatorname{diag}(e^{i\theta_1},\dots,e^{i\theta_4})V^{\ast}$ with real $\theta_k$, so $U=e^{iH}$ with $H=V\operatorname{diag}(\theta_1,\dots,\theta_4)V^{\ast}$ Hermitian, that is $U=e^{A}$ with $A=iH$ skew-Hermitian.
+**Proof.** $(e^{A})^{\ast}=e^{A^{\ast}}=e^{-A}=(e^{A})^{-1}$ for anti-Hermitian $A$. Conversely a unitary $U$ has a spectral resolution $U=V\operatorname{diag}(e^{i\theta_1},\dots,e^{i\theta_4})V^{\ast}$ with real $\theta_k$, so $U=e^{iH}$ with $H=V\operatorname{diag}(\theta_1,\dots,\theta_4)V^{\ast}$ Hermitian, that is $U=e^{A}$ with $A=iH$ anti-Hermitian.
 
 **Corollary.** The exponential maps $\mathfrak{u}(4)$ onto $U(4)$, and it is a local diffeomorphism at every point whose eigenvalues avoid the differences $2\pi i\mathbb{Z}$.
 
@@ -129,7 +129,7 @@ with $J_1=e_1\wedge e_2+e_3\wedge e_4$ self-dual and $J_2=e_1\wedge e_2-e_3\wedg
 
 ## Summary
 
-A skew-Hermitian matrix is $i$ times a Hermitian one, so its spectrum is purely imaginary and its exponential is unitary; every unitary matrix is the exponential of a skew-Hermitian one, and the exponential is onto but not injective.
+A anti-Hermitian matrix is $i$ times a Hermitian one, so its spectrum is purely imaginary and its exponential is unitary; every unitary matrix is the exponential of a anti-Hermitian one, and the exponential is onto but not injective.
 
 A real skew matrix of order four has the normal form with two rotation blocks and the spectrum $\{i\theta_1,-i\theta_1,i\theta_2,-i\theta_2\}$, with $\det A=\theta_1^{2}\theta_2^{2}$, so it is singular exactly when an angle vanishes. The Pfaffian is $\pm\theta_1\theta_2$ and its square is the determinant, so the sign of the Pfaffian separates the two components of the invertible skew matrices.
 
@@ -139,8 +139,8 @@ The two summands of $\mathfrak{so}(4)=\mathfrak{sl}_2\oplus\mathfrak{sl}_2$ carr
 
 | Symbol | Meaning |
 |---|---|
-| $A^{\ast}=-A$ | skew-Hermitian |
-| $A=iH$ | the Hermitian form of a skew-Hermitian matrix |
+| $A^{\ast}=-A$ | anti-Hermitian |
+| $A=iH$ | the Hermitian form of a anti-Hermitian matrix |
 | $R_\theta$ | the real rotation block |
 | $\theta_1,\theta_2$ | the two angles |
 | $\theta_\pm$ | the two parameters of the two ideals |
@@ -152,4 +152,4 @@ The two summands of $\mathfrak{so}(4)=\mathfrak{sl}_2\oplus\mathfrak{sl}_2$ carr
 - [The Lie Algebra $\operatorname{Skew}_4\cong\mathfrak{so}(4)$](the-lie-algebra-skew-4-and-so-4.html), for the two ideals and the brackets.
 - [Simple and Non-Simple Rotations: One Angle at $n\le3$, Two Angles at $n\ge4$](simple-and-non-simple-rotations-one-angle-at-n-le-3-two-angles-at-n-ge-4.html), for the geometry of the two angles.
 - [The Rotor as a Square Root of a Rotation: the Two Signs and the Double Cover at $n=4$](the-rotor-as-a-square-root-of-a-rotation-the-two-signs-and-the-double-cover-at-n-4.html), for the two-sided rotor.
-- [The Spectral Theorem: the Skew-Hermitian Case and the Two Imaginary Eigenvalues](the-spectral-theorem-the-skew-hermitian-case-and-the-two-imaginary-eigenvalues.html), for the case at order two.
+- [The Spectral Theorem: the Anti-Hermitian Case and the Two Imaginary Eigenvalues](the-spectral-theorem-the-skew-hermitian-case-and-the-two-imaginary-eigenvalues.html), for the case at order two.

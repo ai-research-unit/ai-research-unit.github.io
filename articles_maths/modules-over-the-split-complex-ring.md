@@ -116,7 +116,7 @@ A module has no single dimension. The dimension is a pair, and the two entries a
 
 ### The Submodules Need Not Be Free
 
-The free module of rank one has exactly four submodules: $0$, $S_+$, $S_-$ and itself, and two of the four are not free. Over a field every submodule of a free module is free; here the exchange property fails with it, since the single element $1$ spans the free module of rank one and no subset of $\{1\}$ is a basis.
+The free module of rank one has exactly four submodules: $0$, $S_+$, $S_-$ and itself, and two of the four are not free. Over a field every submodule of a free module is free; here the exchange property fails with it, since the single element $\Pi_+$ spans $S_+$ and no subset of $\{\Pi_+\}$ is a basis of $S_+$.
 
 ### The Composition Series
 

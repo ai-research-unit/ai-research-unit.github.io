@@ -10,7 +10,7 @@ $$
 
 does not vanish for admissible pairs $w,v$, but it is a sesquilinear function of the boundary data alone. Self-adjointness is the vanishing of that form on the admissible subspace, and the reality, the orthogonality and the completeness are its consequences.
 
-This article reads the boundary-value problem with the conjugation of the unknown functions, which is the reading of the star group. It fixes the Green formula of the problem, defines the boundary form and the admissible subspace, proves that the boundary form is skew-Hermitian, and shows that self-adjointness is exactly its vanishing; then it proves the reality of the eigenvalues and the orthogonality of the eigenfunctions; and it derives the completeness of the eigenfunction expansion from the compactness and self-adjointness of the inverse. It closes with the one-dimensional Sturm–Liouville theory, where the boundary form is the classical bracket $[\,p(w\bar v'-w'\bar v)\,]_a^b$ and the self-adjoint boundary conditions are the separated and the periodic ones.
+This article reads the boundary-value problem with the conjugation of the unknown functions, which is the reading of the star group. It fixes the Green formula of the problem, defines the boundary form and the admissible subspace, proves that the boundary form is anti-Hermitian, and shows that self-adjointness is exactly its vanishing; then it proves the reality of the eigenvalues and the orthogonality of the eigenfunctions; and it derives the completeness of the eigenfunction expansion from the compactness and self-adjointness of the inverse. It closes with the one-dimensional Sturm–Liouville theory, where the boundary form is the classical bracket $[\,p(w\bar v'-w'\bar v)\,]_a^b$ and the self-adjoint boundary conditions are the separated and the periodic ones.
 
 The differential operator, its formal adjoint $L^{\dagger}$ and the boundary operator are those of *Differential Operators*; the Green operator, the characterisation of the Green function and the compactness of the inverse are those of *The Green Operator*; the Sturm–Liouville operator, the weighted space and the eigenfunction expansion are those of *The Sturm–Liouville Operator*; the spectral theorem for a compact self-adjoint operator and the reality of the spectrum of a self-adjoint operator are those of *Banach and Hilbert Spaces*; and the classical Sturm–Liouville theory of the interval — the eigenvalues, the Rayleigh quotient and the asymptotic law — is that of *Ordinary Differential Equations*, cited and not repeated. The general Lagrange identity and the bilinear concomitant are *The Lagrange Identity and the Self-Adjoint System*, the pairing of the boundary data that selects the self-adjoint conditions is *The Adjoint Boundary Condition*, and the construction of the self-adjoint operator from the form is *Self-Adjoint Sturm–Liouville Operators*, all below.
 
@@ -38,7 +38,7 @@ $$
 
 the domain of the realisation of $L$ under $B$ in the notation of *Differential Operators*.
 
-**Theorem (the boundary form is skew-Hermitian).** For a formally self-adjoint operator $L=L^{\dagger}$ the boundary form is sesquilinear, linear in the first argument and conjugate-linear in the second, and
+**Theorem (the boundary form is anti-Hermitian).** For a formally self-adjoint operator $L=L^{\dagger}$ the boundary form is sesquilinear, linear in the first argument and conjugate-linear in the second, and
 
 $$
 \boxed{\;\langle w,v\rangle_\partial = -\,\overline{\langle v,w\rangle_\partial}\;} ,
@@ -46,7 +46,7 @@ $$
 
 so that $\langle w,w\rangle_\partial$ is purely imaginary and the form is the imaginary part of a Hermitian pairing of the boundary data; it is a function of the traces $\gamma w,\gamma v$ alone.
 
-*Proof.* The concomitant is linear in $w$ and conjugate-linear in $v$, so the form is sesquilinear. Exchanging the roles of $w$ and $v$ in the Green formula and conjugating give $\overline{\langle v,w\rangle_\partial} = -\langle w,v\rangle_\partial$ for $L=L^{\dagger}$, which is the skew-Hermitian identity; taking $v=w$ gives $\langle w,w\rangle_\partial=-\overline{\langle w,w\rangle_\partial}$, so the value is purely imaginary. That the form depends only on the traces follows from the concomitant involving the derivatives of order at most $m-1$: the expression inside the boundary integral is computed from the values of those derivatives at $\partial\Omega$.
+*Proof.* The concomitant is linear in $w$ and conjugate-linear in $v$, so the form is sesquilinear. Exchanging the roles of $w$ and $v$ in the Green formula and conjugating give $\overline{\langle v,w\rangle_\partial} = -\langle w,v\rangle_\partial$ for $L=L^{\dagger}$, which is the anti-Hermitian identity; taking $v=w$ gives $\langle w,w\rangle_\partial=-\overline{\langle w,w\rangle_\partial}$, so the value is purely imaginary. That the form depends only on the traces follows from the concomitant involving the derivatives of order at most $m-1$: the expression inside the boundary integral is computed from the values of those derivatives at $\partial\Omega$.
 
 **Definition.** The boundary-value problem $(L,B)$ is **self-adjoint** if
 
@@ -54,7 +54,7 @@ $$
 \langle w,v\rangle_\partial = 0 \qquad \text{for every } w,v\in\mathcal{A} ,
 $$
 
-that is, if the boundary form vanishes identically on the admissible subspace, equivalently if the admissible subspace is **Lagrangian** for the skew-Hermitian form on the boundary data. The pairing of the boundary data that produces the self-adjoint conditions is *The Adjoint Boundary Condition*, below.
+that is, if the boundary form vanishes identically on the admissible subspace, equivalently if the admissible subspace is **Lagrangian** for the anti-Hermitian form on the boundary data. The pairing of the boundary data that produces the self-adjoint conditions is *The Adjoint Boundary Condition*, below.
 
 **Theorem (self-adjointness as the vanishing of the boundary term).** Let $L$ be formally self-adjoint and let $B$ be a boundary condition. Then the realisation of $L$ under $B$ is symmetric,
 
@@ -66,7 +66,7 @@ if and only if the problem is self-adjoint in the sense above; the difference of
 
 *Proof.* By the Green formula, $\langle Lw,v\rangle-\langle w,Lv\rangle=\int_\Omega(Lw)\bar v-\int_\Omega w\overline{L^{\dagger}v} = \langle w,v\rangle_\partial$, since $L=L^{\dagger}$; the identity vanishes for all admissible pairs exactly when the boundary form does.
 
-**Example (the boundary space).** For a second-order operator on a domain the boundary data are the functions and their normal derivatives, the four numbers $(w,w_\nu)$ at each boundary point, and the boundary form is their skew-Hermitian pairing. A self-adjoint condition is a **Lagrangian subspace** of this pairing: a subspace on which the form vanishes identically. Conditions of the form $\alpha w+\beta w_\nu=0$ with real $\alpha,\beta$ are Lagrangian for the pairing $\overline{w}v_\nu-w\bar v_\nu$, and so is the periodic condition, while a condition that prescribes $w$ on part of the boundary and $w_\nu$ on the rest is Lagrangian as well; the classification of all of them, and the proof that a Lagrangian condition can always be written with half the data, is *The Adjoint Boundary Condition*, below.
+**Example (the boundary space).** For a second-order operator on a domain the boundary data are the functions and their normal derivatives, the four numbers $(w,w_\nu)$ at each boundary point, and the boundary form is their anti-Hermitian pairing. A self-adjoint condition is a **Lagrangian subspace** of this pairing: a subspace on which the form vanishes identically. Conditions of the form $\alpha w+\beta w_\nu=0$ with real $\alpha,\beta$ are Lagrangian for the pairing $\overline{w}v_\nu-w\bar v_\nu$, and so is the periodic condition, while a condition that prescribes $w$ on part of the boundary and $w_\nu$ on the rest is Lagrangian as well; the classification of all of them, and the proof that a Lagrangian condition can always be written with half the data, is *The Adjoint Boundary Condition*, below.
 
 ## Reality and Orthogonality
 
@@ -116,9 +116,9 @@ $$
 \langle w,v\rangle_\partial = \Bigl[p\,(w\bar v'-w'\bar v)\Bigr]_a^b ,
 $$
 
-a skew-Hermitian form in the four boundary values $w(a),w'(a),w(b),w'(b)$ and their conjugates, and the problem is self-adjoint exactly when this form vanishes for all admissible pairs.
+a anti-Hermitian form in the four boundary values $w(a),w'(a),w(b),w'(b)$ and their conjugates, and the problem is self-adjoint exactly when this form vanishes for all admissible pairs.
 
-*Proof.* The Green formula of the interval is the integration by parts, which produces the bracket $[\,p(w\bar v'-w'\bar v)\,]_a^b$; the form is the difference of the two boundary contributions, and the skew-Hermitian property follows from exchanging $w$ and $v$ and conjugating. Vanishing on the admissible pairs is the definition of self-adjointness.
+*Proof.* The Green formula of the interval is the integration by parts, which produces the bracket $[\,p(w\bar v'-w'\bar v)\,]_a^b$; the form is the difference of the two boundary contributions, and the anti-Hermitian property follows from exchanging $w$ and $v$ and conjugating. Vanishing on the admissible pairs is the definition of self-adjointness.
 
 **Theorem (the classical self-adjoint conditions).** For a regular Sturm–Liouville problem the separated conditions and the periodic conditions are self-adjoint, and the eigenfunction expansion they give is the classical Sturm–Liouville theory: the eigenvalues are real, simple and increasing to infinity, and the eigenfunctions are complete in $L^2((a,b),w\,dx)$.
 
@@ -128,7 +128,7 @@ a skew-Hermitian form in the four boundary values $w(a),w'(a),w(b),w'(b)$ and th
 
 ## Summary
 
-The boundary-value problem for a differential operator carries a boundary form, obtained from the Green formula as the difference $\int(Lw)\bar v-\int w\overline{L^{\dagger}v}$ expressed in the boundary data; for a formally self-adjoint $L$ the form is sesquilinear, skew-Hermitian, $\langle w,v\rangle_\partial=-\overline{\langle v,w\rangle_\partial}$, and determined by the traces of $w$ and $v$ up to order $m-1$. The problem is self-adjoint when the form vanishes on the admissible subspace, equivalently when the admissible subspace is Lagrangian for it, and that vanishing is exactly the symmetry of the realisation, $\langle Lw,v\rangle-\langle w,Lv\rangle=\langle w,v\rangle_\partial$. Self-adjointness makes the eigenvalues real, by $(\lambda-\bar\lambda)\|w\|^2=0$, and makes the eigenfunctions belonging to distinct eigenvalues orthogonal; the eigenspaces are mutually orthogonal and the eigenvalue equation is the hermitian problem for the form $\mathfrak{a}(w,v)=\langle Lw,v\rangle$.
+The boundary-value problem for a differential operator carries a boundary form, obtained from the Green formula as the difference $\int(Lw)\bar v-\int w\overline{L^{\dagger}v}$ expressed in the boundary data; for a formally self-adjoint $L$ the form is sesquilinear, anti-Hermitian, $\langle w,v\rangle_\partial=-\overline{\langle v,w\rangle_\partial}$, and determined by the traces of $w$ and $v$ up to order $m-1$. The problem is self-adjoint when the form vanishes on the admissible subspace, equivalently when the admissible subspace is Lagrangian for it, and that vanishing is exactly the symmetry of the realisation, $\langle Lw,v\rangle-\langle w,Lv\rangle=\langle w,v\rangle_\partial$. Self-adjointness makes the eigenvalues real, by $(\lambda-\bar\lambda)\|w\|^2=0$, and makes the eigenfunctions belonging to distinct eigenvalues orthogonal; the eigenspaces are mutually orthogonal and the eigenvalue equation is the hermitian problem for the form $\mathfrak{a}(w,v)=\langle Lw,v\rangle$.
 
 If in addition the Green operator is compact and self-adjoint, the spectral theorem for a compact self-adjoint operator gives a complete orthonormal system of eigenfunctions, the eigenvalues being the reciprocals of its eigenvalues, real, of finite multiplicity and tending to infinity; this is the completeness of the eigenfunction expansion, $f=\sum\langle f,\varphi_n\rangle\varphi_n$. On an interval the boundary form is the classical bracket $[\,p(w\bar v'-w'\bar v)\,]_a^b$, the separated and periodic conditions are self-adjoint, and the resulting theory is the classical Sturm–Liouville theory: real, simple, increasing eigenvalues and a complete expansion in the weighted space, the periodic case differing only in the multiplicity of the eigenvalues.
 

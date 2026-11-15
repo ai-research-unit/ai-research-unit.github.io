@@ -33,7 +33,7 @@ $$
 \{f,g\} = \sum_{i,j}\pi_{ij}\,\frac{\partial f}{\partial x_i}\frac{\partial g}{\partial x_j},
 $$
 
-where the $\pi_{ij}$ are the entries of a skew-symmetric matrix of elements of $A$. The Jacobi identity for the bracket is equivalent to the single condition
+where the $\pi_{ij}$ are the entries of a antisymmetric matrix of elements of $A$. The Jacobi identity for the bracket is equivalent to the single condition
 
 $$
 \sum_{i,j,l}\Bigl(\pi_{il}\frac{\partial\pi_{jk}}{\partial x_l}+\pi_{jl}\frac{\partial\pi_{ki}}{\partial x_l}+\pi_{kl}\frac{\partial\pi_{ij}}{\partial x_l}\Bigr) = 0
@@ -81,7 +81,7 @@ $$
 \boxed{\;\{f,g\} = \pi(df\wedge dg)\;}
 $$
 
-defines a Poisson bracket on $A$ if and only if $[\pi,\pi]_{SN} = 0$; the bracket is the skew-symmetrisation of a biderivation and the condition is the Jacobi identity, which for the bracket of the displayed form is equivalent to the vanishing of the Schouten–Nijenhuis square of the bivector.
+defines a Poisson bracket on $A$ if and only if $[\pi,\pi]_{SN} = 0$; the bracket is the antisymmetrisation of a biderivation and the condition is the Jacobi identity, which for the bracket of the displayed form is equivalent to the vanishing of the Schouten–Nijenhuis square of the bivector.
 
 *Proof.* The Leibniz rule is automatic from the definition of a polyderivation, since $\pi(df\wedge d(g h)) = \pi(df\wedge g\,dh)+\pi(df\wedge h\,dg)$ gives $\{f,gh\} = \{f,g\}h+g\{f,h\}$. For the Jacobi identity, the sum $\{f,\{g,h\}\}+\{g,\{h,f\}\}+\{h,\{f,g\}\}$ is a trilinear alternating expression in the differentials, hence a trivector, and its vanishing for all $f,g,h$ is exactly the vanishing of $[\pi,\pi]_{SN}$, computed in the coordinates of the previous section as the displayed quadratic condition.
 
@@ -188,7 +188,7 @@ an operator with these properties is a **BV operator**, and it is a derivation o
 **Definition.** A **Poisson vertex algebra** is a commutative vertex algebra $V$ in the sense of *Vertex Algebras*, with the multiplication $a_{(-1)}b$ commutative and associative, together with a $\lambda$-bracket $[a_\lambda b] = \sum_{n\geq0}\frac{\lambda^n}{n!}a_{(n)}b$ such that:
 
 1. $[a_\lambda b]$ is a derivation of the commutative product in each variable, $[a_\lambda bc] = [a_\lambda b]c+b[a_\lambda c]$;
-2. the bracket is skew-symmetric, $[a_\lambda b] = -[b_{-\lambda-T}a]$;
+2. the bracket is antisymmetric, $[a_\lambda b] = -[b_{-\lambda-T}a]$;
 3. the **Jacobi identity** $[a_\lambda[b_\mu c]]-[b_\mu[a_\lambda c]] = [[a_\lambda b]_{\lambda+\mu}c]$ holds, an identity of formal series in $\lambda,\mu$;
 
 so that the bracket is a Lie bracket in the parametrised sense with the derivation property, exactly as the bracket of a Poisson algebra is a Lie bracket with the derivation property in the unparametrised case.

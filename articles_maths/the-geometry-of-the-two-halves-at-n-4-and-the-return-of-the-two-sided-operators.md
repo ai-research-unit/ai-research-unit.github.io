@@ -30,7 +30,7 @@ It assumes *The Positive Cone and Its Boundary at $n=4$*, *The Space of Idempote
 
 **Proposition.** $\mathfrak{u}(4)$ is a real Lie algebra of dimension $16$ under the commutator, it is the Lie algebra of $U(4)$, and the exponential maps it onto $U(4)$.
 
-**Proof.** Closedness under the bracket for skew-Hermitian matrices, the identification of the tangent space at the identity, and the spectral theorem for unitaries.
+**Proof.** Closedness under the bracket for anti-Hermitian matrices, the identification of the tangent space at the identity, and the spectral theorem for unitaries.
 
 **Corollary.** The group $U(4)$ is the compact real form of $\mathrm{GL}_4(\mathbb{C})$ inside the complex group, and its Lie algebra is the fixed set of the conjugation $X\mapsto-X^{\ast}$.
 

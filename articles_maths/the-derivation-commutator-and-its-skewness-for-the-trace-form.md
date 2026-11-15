@@ -84,7 +84,7 @@ $$
 
 **Proof.** The four eigenvalues sum to zero and contain two zeros; the rank is the number of nonzero eigenvalues.
 
-**Corollary.** The spectrum of $\operatorname{ad}_A$ is real for every complex matrix $A$ whose eigenvalues are real, and it is purely imaginary for a skew-Hermitian $A$ with imaginary eigenvalues.
+**Corollary.** The spectrum of $\operatorname{ad}_A$ is real for every complex matrix $A$ whose eigenvalues are real, and it is purely imaginary for a anti-Hermitian $A$ with imaginary eigenvalues.
 
 **Proof.** The differences of two real numbers are real, and the differences of two purely imaginary numbers are purely imaginary.
 

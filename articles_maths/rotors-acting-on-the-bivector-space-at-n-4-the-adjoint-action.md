@@ -6,7 +6,7 @@
 
 The article computes the second exterior power of a rotation, proves that the Hodge star splits the bivector space and that a rotation preserves the two halves, identifies the action on each half with the adjoint action of one summand of $\mathfrak{so}(4)$, computes the eigenvalues and the Casimir, and writes the six generators as the three left and the three right matrices of the axis-free frame.
 
-It assumes *The Spectral Theorem: the Skew-Hermitian Case and the Reality of the Spectrum at $n=4$* and *The Rotor as a Square Root of a Rotation: the Two Signs and the Double Cover at $n=4$*. The model at order two is *Rotors Acting on the Bivector Space at $n=2$: the Adjoint Action*; the operator version is *The Two-Sided Operators and the Segre Cone at $n=4$*.
+It assumes *The Spectral Theorem: the Anti-Hermitian Case and the Reality of the Spectrum at $n=4$* and *The Rotor as a Square Root of a Rotation: the Two Signs and the Double Cover at $n=4$*. The model at order two is *Rotors Acting on the Bivector Space at $n=2$: the Adjoint Action*; the operator version is *The Two-Sided Operators and the Segre Cone at $n=4$*.
 
 ## The Second Exterior Power
 

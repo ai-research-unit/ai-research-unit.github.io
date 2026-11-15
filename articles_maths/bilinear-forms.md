@@ -45,19 +45,19 @@ $$
 B\bigl((x_1, y_1), (x_2, y_2)\bigr) = x_1 y_2 - y_1 x_2
 $$
 
-is bilinear, and it is skew-symmetric; it is alternating, since $B(v, v) = 0$ for every $v$.
+is bilinear, and it is antisymmetric; it is alternating, since $B(v, v) = 0$ for every $v$.
 
-### Symmetric, Alternating and Skew-Symmetric Forms
+### Symmetric, Alternating and Antisymmetric Forms
 
 Three symmetry conditions single out the forms that matter.
 
 **Definition.** A bilinear form $B$ on $M$ is
 
 - **symmetric** if $B(u, v) = B(v, u)$ for all $u, v \in M$;
-- **skew-symmetric** if $B(u, v) = -B(v, u)$ for all $u, v \in M$;
+- **antisymmetric** if $B(u, v) = -B(v, u)$ for all $u, v \in M$;
 - **alternating** if $B(v, v) = 0$ for all $v \in M$.
 
-**Proposition.** Every alternating form is skew-symmetric. If $2$ is invertible in $R$, the converse holds, and a form that is both symmetric and skew-symmetric is zero.
+**Proposition.** Every alternating form is antisymmetric. If $2$ is invertible in $R$, the converse holds, and a form that is both symmetric and antisymmetric is zero.
 
 **Proof.** If $B$ is alternating, expanding $B(u + v, u + v) = 0$ by bilinearity gives
 
@@ -65,17 +65,17 @@ $$
 0 = B(u, u) + B(u, v) + B(v, u) + B(v, v) = B(u, v) + B(v, u),
 $$
 
-so $B(u, v) = -B(v, u)$ and $B$ is skew-symmetric. Conversely, if $B$ is skew-symmetric then $B(v, v) = -B(v, v)$, that is $2 B(v, v) = 0$, and invertibility of $2$ gives $B(v, v) = 0$. If $B$ is both symmetric and skew-symmetric then $B(u, v) = B(v, u) = -B(u, v)$, so $2B(u, v) = 0$ and again $B = 0$ when $2$ is invertible.
+so $B(u, v) = -B(v, u)$ and $B$ is antisymmetric. Conversely, if $B$ is antisymmetric then $B(v, v) = -B(v, v)$, that is $2 B(v, v) = 0$, and invertibility of $2$ gives $B(v, v) = 0$. If $B$ is both symmetric and antisymmetric then $B(u, v) = B(v, u) = -B(u, v)$, so $2B(u, v) = 0$ and again $B = 0$ when $2$ is invertible.
 
 **Remark.** Over a ring in which $2$ is not invertible the three notions genuinely differ. Over $\mathbb{F}_2$ the form $B(x, y) = xy$ on $\mathbb{F}_2$ is symmetric because $-1 = 1$, but it is not alternating, since $B(1, 1) = 1$. Symmetric and alternating forms are therefore not interchangeable in characteristic $2$.
 
-We work with symmetric and alternating forms throughout. The skew-symmetric forms are recovered from the alternating ones when $2$ is invertible, and in that case the classification of skew-symmetric forms is the classification of alternating forms.
+We work with symmetric and alternating forms throughout. The antisymmetric forms are recovered from the alternating ones when $2$ is invertible, and in that case the classification of antisymmetric forms is the classification of alternating forms.
 
 ### The Symmetric and Alternating Decomposition
 
 The symmetry conditions do not only classify the forms; when $2$ is invertible they split the whole space of forms.
 
-**Definition.** The **transpose** of a bilinear form $B$ on $M$ is the form $B^{\intercal}(u, v) = B(v, u)$. The assignment $B \mapsto B^{\intercal}$ is an $R$-linear involution of $\operatorname{Bil}_R(M)$; a form is symmetric exactly when $B^{\intercal} = B$, and skew-symmetric exactly when $B^{\intercal} = -B$.
+**Definition.** The **transpose** of a bilinear form $B$ on $M$ is the form $B^{\intercal}(u, v) = B(v, u)$. The assignment $B \mapsto B^{\intercal}$ is an $R$-linear involution of $\operatorname{Bil}_R(M)$; a form is symmetric exactly when $B^{\intercal} = B$, and antisymmetric exactly when $B^{\intercal} = -B$.
 
 **Theorem.** Let $2$ be invertible in $R$. Then every bilinear form $B$ on $M$ has a unique decomposition
 
@@ -91,7 +91,7 @@ $$
 
 Equivalently $\operatorname{Bil}_R(M) = \operatorname{sym}_R(M) \oplus \operatorname{Alt}_R(M)$, the fixed and the anti-fixed part of the transposition.
 
-**Proof.** Each of $B_{s}$, $B_{a}$ is additive and $R$-linear in each variable. The transpose is an involution, so $B_{s}^{\intercal} = \tfrac{1}{2}(B^{\intercal} + B) = B_{s}$ and $B_{a}^{\intercal} = \tfrac{1}{2}(B^{\intercal} - B) = -B_{a}$. Moreover $B_{a}(v, v) = \tfrac{1}{2}(B(v, v) - B(v, v)) = 0$, so $B_{a}$ is alternating, and $B_{s} + B_{a} = B$. For uniqueness, transpose a decomposition $B = S + A$ with $S$ symmetric and $A$ alternating: an alternating form is skew-symmetric, so $A^{\intercal} = -A$ and $B^{\intercal} = S - A$, whence $2S = B + B^{\intercal}$ and $2A = B - B^{\intercal}$, and $2$ is invertible. Uniqueness gives $\operatorname{sym}_R(M) \cap \operatorname{Alt}_R(M) = 0$, so the sum is direct.
+**Proof.** Each of $B_{s}$, $B_{a}$ is additive and $R$-linear in each variable. The transpose is an involution, so $B_{s}^{\intercal} = \tfrac{1}{2}(B^{\intercal} + B) = B_{s}$ and $B_{a}^{\intercal} = \tfrac{1}{2}(B^{\intercal} - B) = -B_{a}$. Moreover $B_{a}(v, v) = \tfrac{1}{2}(B(v, v) - B(v, v)) = 0$, so $B_{a}$ is alternating, and $B_{s} + B_{a} = B$. For uniqueness, transpose a decomposition $B = S + A$ with $S$ symmetric and $A$ alternating: an alternating form is antisymmetric, so $A^{\intercal} = -A$ and $B^{\intercal} = S - A$, whence $2S = B + B^{\intercal}$ and $2A = B - B^{\intercal}$, and $2$ is invertible. Uniqueness gives $\operatorname{sym}_R(M) \cap \operatorname{Alt}_R(M) = 0$, so the sum is direct.
 
 **Corollary (matrix form).** In a basis the Gram matrix splits as
 
@@ -107,7 +107,7 @@ $$
 B(u + v, u + v) = B(u, u) + 2B(u, v) + B(v, v) = B(u, u) + B(v, v),
 $$
 
-so the alternating forms are exactly the symmetric forms whose diagonal vanishes and the quotient is read by the linear functional $v \mapsto B(v, v)$. The passage from a symmetric form to the quadratic form of that diagonal is *Quadratic Forms and Polarisation*, whose characteristic-two section continues this remark; the same splitting on the sesquilinear side, into the Hermitian and the skew-Hermitian parts, is *The Sesquilinear Form and the Conjugation*.
+so the alternating forms are exactly the symmetric forms whose diagonal vanishes and the quotient is read by the linear functional $v \mapsto B(v, v)$. The passage from a symmetric form to the quadratic form of that diagonal is *Quadratic Forms and Polarisation*, whose characteristic-two section continues this remark; the same splitting on the sesquilinear side, into the Hermitian and the anti-Hermitian parts, is *The Sesquilinear Form and the Conjugation*.
 
 ### The Matrix of a Form
 
@@ -125,9 +125,9 @@ $$
 
 where $[u]$ and $[v]$ are the coordinate columns. The matrix $G$ is the **Gram matrix** of $B$ in the basis, and the assignment $B \mapsto G$ is an isomorphism of $R$-modules $\operatorname{Bil}_R(M) \to M_n(R)$.
 
-**Proposition.** The form $B$ is symmetric if and only if $G = G^T$, and skew-symmetric if and only if $G = -G^T$. It is alternating if and only if $G = -G^T$ and every diagonal entry of $G$ is zero.
+**Proposition.** The form $B$ is symmetric if and only if $G = G^T$, and antisymmetric if and only if $G = -G^T$. It is alternating if and only if $G = -G^T$ and every diagonal entry of $G$ is zero.
 
-**Proof.** The first two statements are immediate from $B(e_i, e_j) = G_{ij}$ and the symmetry conditions. For the third, $G = -G^T$ is equivalent to skew-symmetry, and the diagonal entries are $G_{ii} = B(e_i, e_i)$; these vanish for all $i$ if and only if $B(v, v) = 0$ for every $v$, since $B(v, v) = \sum_i v_i^2 G_{ii}$ when $B$ is skew-symmetric.
+**Proof.** The first two statements are immediate from $B(e_i, e_j) = G_{ij}$ and the symmetry conditions. For the third, $G = -G^T$ is equivalent to antisymmetry, and the diagonal entries are $G_{ii} = B(e_i, e_i)$; these vanish for all $i$ if and only if $B(v, v) = 0$ for every $v$, since $B(v, v) = \sum_i v_i^2 G_{ii}$ when $B$ is antisymmetric.
 
 Two bases give two Gram matrices, related by a change of basis.
 
@@ -167,7 +167,7 @@ $$
 S^\perp = \{u \in M : B(u, s) = 0 \text{ for all } s \in S\}.
 $$
 
-The complement $S^\perp$ is a submodule of $M$. For a symmetric or skew-symmetric form the relation of orthogonality is symmetric in $u$ and $v$, and then $S \subseteq (S^\perp)^\perp$. In general the two-sided orthogonal complement may be larger than $S$; the radical defined below records the failure.
+The complement $S^\perp$ is a submodule of $M$. For a symmetric or antisymmetric form the relation of orthogonality is symmetric in $u$ and $v$, and then $S \subseteq (S^\perp)^\perp$. In general the two-sided orthogonal complement may be larger than $S$; the radical defined below records the failure.
 
 ### The Radical
 
@@ -183,7 +183,7 @@ $$
 M \longrightarrow M^*, \qquad u \longmapsto B(u, -),
 $$
 
-where $M^* = \operatorname{Hom}_R(M, R)$ is the dual module. For a symmetric or skew-symmetric form the left radical $\{u : B(v, u) = 0\ \forall v\}$ coincides with the right radical $\operatorname{rad}(B)$.
+where $M^* = \operatorname{Hom}_R(M, R)$ is the dual module. For a symmetric or antisymmetric form the left radical $\{u : B(v, u) = 0\ \forall v\}$ coincides with the right radical $\operatorname{rad}(B)$.
 
 **Proposition.** Let $M$ be free of rank $n$, with Gram matrix $G$. Then $\operatorname{rad}(B)$ is the kernel of the map $R^n \to R^n$ given by $x \mapsto G^{T}x$ in coordinates, and the following are equivalent:
 
@@ -191,7 +191,7 @@ where $M^* = \operatorname{Hom}_R(M, R)$ is the dual module. For a symmetric or 
 2. the map $M \to M^*$, $u \mapsto B(u, -)$, is injective;
 3. $\det G$ is not a zero divisor of $R$.
 
-**Proof.** In coordinates the map $u \mapsto B(u, -)$ sends $x$ to the functional $y \mapsto x^T G y$, that is to the row vector $x^T G$, whose transpose is $G^T x$. Its kernel is $\operatorname{rad}(B)$, and for a symmetric or skew-symmetric form it is also the kernel of $x \mapsto Gx$, since $G^T$ then differs from $\pm G$. Statement 3 is the condition that the square matrix $G$ have no nonzero kernel vector, a condition equivalent to $\det G$ being a non-zero-divisor; this equivalence is a standard corollary of McCoy's theorem for matrices over a commutative ring.
+**Proof.** In coordinates the map $u \mapsto B(u, -)$ sends $x$ to the functional $y \mapsto x^T G y$, that is to the row vector $x^T G$, whose transpose is $G^T x$. Its kernel is $\operatorname{rad}(B)$, and for a symmetric or antisymmetric form it is also the kernel of $x \mapsto Gx$, since $G^T$ then differs from $\pm G$. Statement 3 is the condition that the square matrix $G$ have no nonzero kernel vector, a condition equivalent to $\det G$ being a non-zero-divisor; this equivalence is a standard corollary of McCoy's theorem for matrices over a commutative ring.
 
 ### Non-Degenerate Forms
 
@@ -224,7 +224,7 @@ $$
 (B_1 \perp B_2)\bigl((u_1, u_2), (v_1, v_2)\bigr) = B_1(u_1, v_1) + B_2(u_2, v_2).
 $$
 
-**Proposition.** The orthogonal direct sum $B_1 \perp B_2$ is symmetric, skew-symmetric or alternating if and only if both summands are. It is non-degenerate if and only if both summands are, and its Gram matrix in the concatenated basis is the block sum $\operatorname{diag}(G_1, G_2)$.
+**Proposition.** The orthogonal direct sum $B_1 \perp B_2$ is symmetric, antisymmetric or alternating if and only if both summands are. It is non-degenerate if and only if both summands are, and its Gram matrix in the concatenated basis is the block sum $\operatorname{diag}(G_1, G_2)$.
 
 **Proof.** The symmetry statements are immediate. The subspace $M_1$ is orthogonal to $\mathsf{M}_2$, so the radical of $B_1 \perp B_2$ is $\operatorname{rad}(B_1) \oplus \operatorname{rad}(B_2)$, and the map to the dual is the direct sum of the two maps. Hence it is an isomorphism exactly when both factors are. The Gram matrix is block diagonal by construction.
 
@@ -280,7 +280,7 @@ $$
 B\bigl((x_1, y_1), (x_2, y_2)\bigr) = x_1 y_2 - y_1 x_2, \qquad G = \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}
 $$
 
-is alternating and non-degenerate, and the vectors $u = (1, 0)$ and $v = (0, 1)$ satisfy $B(u, v) = 1$. It is the two-dimensional case of the normal form and the elementary block of the symplectic theory. The name **hyperbolic plane** is used in this category for the quadratic space, whose polar form in a basis $e, f$ with $\mathfrak{Q}(e) = \mathfrak{Q}(f) = 0$ and $B(e, f) = 1$ is the symmetric matrix $\begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}$; the two-dimensional alternating space above is a different object, and the symbol $H$ denotes the quadratic one. The same symmetric matrix, with $2$ invertible, is the symmetric form $\langle 1, -1\rangle$ in a suitable basis, and it is not alternating, by the proposition above relating alternating and skew-symmetric forms.
+is alternating and non-degenerate, and the vectors $u = (1, 0)$ and $v = (0, 1)$ satisfy $B(u, v) = 1$. It is the two-dimensional case of the normal form and the elementary block of the symplectic theory. The name **hyperbolic plane** is used in this category for the quadratic space, whose polar form in a basis $e, f$ with $\mathfrak{Q}(e) = \mathfrak{Q}(f) = 0$ and $B(e, f) = 1$ is the symmetric matrix $\begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}$; the two-dimensional alternating space above is a different object, and the symbol $H$ denotes the quadratic one. The same symmetric matrix, with $2$ invertible, is the symmetric form $\langle 1, -1\rangle$ in a suitable basis, and it is not alternating, by the proposition above relating alternating and antisymmetric forms.
 
 ## Isometries
 
@@ -328,9 +328,9 @@ The discriminant is the first congruence invariant of a non-degenerate symmetric
 
 ## Summary
 
-A **bilinear form** on an $R$-module $M$ is a function $B : M \times M \to R$ linear in each argument. It is **symmetric** if $B(u, v) = B(v, u)$, **skew-symmetric** if $B(u, v) = -B(v, u)$, and **alternating** if $B(v, v) = 0$ for all $v$. Every alternating form is skew-symmetric, and when $2$ is invertible the two notions coincide and a symmetric alternating form is zero. When $2$ is invertible the **transpose** $B^{\intercal}(u, v) = B(v, u)$ splits every form uniquely into a **symmetric part** and an **alternating part**, $\operatorname{Bil}_R(M) = \operatorname{sym}_R(M) \oplus \operatorname{Alt}_R(M)$, with $B_{s} = \tfrac{1}{2}(B + B^{\intercal})$ and $B_{a} = \tfrac{1}{2}(B - B^{\intercal})$; when $2$ is not invertible the splitting degrades to the filtration $\operatorname{Alt}_R(M) \subseteq \operatorname{sym}_R(M)$ read by the diagonal $v \mapsto B(v, v)$.
+A **bilinear form** on an $R$-module $M$ is a function $B : M \times M \to R$ linear in each argument. It is **symmetric** if $B(u, v) = B(v, u)$, **antisymmetric** if $B(u, v) = -B(v, u)$, and **alternating** if $B(v, v) = 0$ for all $v$. Every alternating form is antisymmetric, and when $2$ is invertible the two notions coincide and a symmetric alternating form is zero. When $2$ is invertible the **transpose** $B^{\intercal}(u, v) = B(v, u)$ splits every form uniquely into a **symmetric part** and an **alternating part**, $\operatorname{Bil}_R(M) = \operatorname{sym}_R(M) \oplus \operatorname{Alt}_R(M)$, with $B_{s} = \tfrac{1}{2}(B + B^{\intercal})$ and $B_{a} = \tfrac{1}{2}(B - B^{\intercal})$; when $2$ is not invertible the splitting degrades to the filtration $\operatorname{Alt}_R(M) \subseteq \operatorname{sym}_R(M)$ read by the diagonal $v \mapsto B(v, v)$.
 
-On a free module of finite rank a form is represented by its **Gram matrix** $G_{ij} = B(e_i, e_j)$, with $B(u, v) = [u]^T G [v]$. Symmetry is $G = G^T$, skew-symmetry is $G = -G^T$, and a change of basis replaces $G$ by $P^T G P$; forms related in this way are **congruent**. The **rank** of $B$ is the rank of $G$.
+On a free module of finite rank a form is represented by its **Gram matrix** $G_{ij} = B(e_i, e_j)$, with $B(u, v) = [u]^T G [v]$. Symmetry is $G = G^T$, antisymmetry is $G = -G^T$, and a change of basis replaces $G$ by $P^T G P$; forms related in this way are **congruent**. The **rank** of $B$ is the rank of $G$.
 
 The **radical** $\operatorname{rad}(B) = \{u : B(u, v) = 0 \ \forall v\}$ is the kernel of the map $M \to M^*$, $u \mapsto B(u, -)$. The form is **non-degenerate** when this map is an isomorphism; over a free module of finite rank this means $\det G$ is a unit of $R$. Over a field in finite dimension the conditions collapse: non-degeneracy, vanishing of the radical, invertibility of the Gram matrix, and $\operatorname{rank}(B) = \dim M$ are equivalent, and $\dim \operatorname{rad}(B) = \dim M - \operatorname{rank}(B)$. Over a general ring and in infinite dimension they do not: a form can have zero radical and still be degenerate.
 

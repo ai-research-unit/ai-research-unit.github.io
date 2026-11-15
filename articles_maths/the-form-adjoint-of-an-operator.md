@@ -46,9 +46,9 @@ $$
 - $h(Tx, y) = h(x, Ty)$ for all $x, y$;
 - $Q_{T}$ is real-valued, $Q_{T}(x) = \varsigma(Q_{T}(x))$ for every $x$.
 
-**Proof.** The first two are the definition of the adjoint. If $T$ is self-adjoint then $Q_{T}(x) = h(Tx,x) = h(x,Tx) = \varsigma(h(Tx,x)) = \varsigma(Q_{T}(x))$. Conversely, let $B(x,y) = h\bigl((T - T^{*})x, y\bigr)$; the reality of $Q_{T}$ says that $h((T-T^{*})x,x) = 0$ for every $x$, that is $B(x,x) = 0$, and $B$ is skew-Hermitian, $B(y,x) = -\varsigma(B(x,y))$. A sesquilinear form with vanishing diagonal vanishes as soon as the diagonal determines the sesquilinear forms, so $B = 0$ and $T = T^{*}$.
+**Proof.** The first two are the definition of the adjoint. If $T$ is self-adjoint then $Q_{T}(x) = h(Tx,x) = h(x,Tx) = \varsigma(h(Tx,x)) = \varsigma(Q_{T}(x))$. Conversely, let $B(x,y) = h\bigl((T - T^{*})x, y\bigr)$; the reality of $Q_{T}$ says that $h((T-T^{*})x,x) = 0$ for every $x$, that is $B(x,x) = 0$, and $B$ is anti-Hermitian, $B(y,x) = -\varsigma(B(x,y))$. A sesquilinear form with vanishing diagonal vanishes as soon as the diagonal determines the sesquilinear forms, so $B = 0$ and $T = T^{*}$.
 
-**Remark (the diagonal sees only the trace form).** Over a base in which no polarising scalar is available the third condition is strictly weaker. On $\mathbb{R}$ with the trivial involution, the operator $T(x_{1},x_{2}) = (x_{2},-x_{1})$ — the rotation by a right angle — is skew and has the identically vanishing quadratic form $Q_{T} = 0$, while it is not self-adjoint: the diagonal recovers only the trace form $h(Tx,y) + h(Ty,x)$ of $T$, never the skew-Hermitian part.
+**Remark (the diagonal sees only the trace form).** Over a base in which no polarising scalar is available the third condition is strictly weaker. On $\mathbb{R}$ with the trivial involution, the operator $T(x_{1},x_{2}) = (x_{2},-x_{1})$ — the rotation by a right angle — is skew and has the identically vanishing quadratic form $Q_{T} = 0$, while it is not self-adjoint: the diagonal recovers only the trace form $h(Tx,y) + h(Ty,x)$ of $T$, never the anti-Hermitian part.
 
 **Corollary.** Every operator decomposes as $T = \tfrac{1}{2}(T + T^{*}) + \tfrac{1}{2}(T - T^{*})$ into a self-adjoint and a skew-adjoint part when $2$ is invertible in the fixed ring, and the two parts are the eigenspaces of the involution $T \mapsto T^{*}$.
 

@@ -18,7 +18,7 @@ It follows the biquaternion article *The Four Forms and the Four Algebraic Norms
 
 **Corollary.** The matrix algebra carries a metric of signature $(4,4)$ split as three plus one in the real halves and as four plus four in the complex halves.
 
-**Proof.** The trace form is positive definite on the Hermitian half and negative definite on the skew-Hermitian half, and the real halves split the same way by the symmetric and antisymmetric parts.
+**Proof.** The trace form is positive definite on the Hermitian half and negative definite on the anti-Hermitian half, and the real halves split the same way by the symmetric and antisymmetric parts.
 
 **Corollary.** The orthogonal complement of a half is the other half, so the halves are the eigenspaces of the transposition with the two signs.
 

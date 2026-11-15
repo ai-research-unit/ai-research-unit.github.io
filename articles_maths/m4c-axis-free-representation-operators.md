@@ -290,7 +290,7 @@ L_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y}=\begin{pmatrix}0&-1&0&0\\-1&0
 L_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_z}=\begin{pmatrix}-1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&-1\end{pmatrix}.
 $$
 
-**The pattern.** Each matrix has four nonzero entries, one in each row and each column, and every nonzero entry is $\pm1$. No entry is imaginary: the axis-free basis makes the sixteen products real. The first row and the first column are the four right and the four left matrices; the nine remaining entries are the genuinely two-sided basis operators. A basis operator with exactly one index equal to $t$ is skew-symmetric; a basis operator with both indices equal to $t$ or with neither equal to $t$ is symmetric. The display is the matrix form of the sixteen products $L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$ of *Matrix Representations Conventions*, §*The 4×4 Regular Representation*, read in the axis-free basis.
+**The pattern.** Each matrix has four nonzero entries, one in each row and each column, and every nonzero entry is $\pm1$. No entry is imaginary: the axis-free basis makes the sixteen products real. The first row and the first column are the four right and the four left matrices; the nine remaining entries are the genuinely two-sided basis operators. A basis operator with exactly one index equal to $t$ is antisymmetric; a basis operator with both indices equal to $t$ or with neither equal to $t$ is symmetric. The display is the matrix form of the sixteen products $L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$ of *Matrix Representations Conventions*, §*The 4×4 Regular Representation*, read in the axis-free basis.
 
 **One entry.** The table gives, for example,
 $$

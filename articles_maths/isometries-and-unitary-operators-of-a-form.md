@@ -77,7 +77,7 @@ which vanishes when $\lambda$ is skew; for an **alternating** form $h(x,a) = -h(
 
 ### The Trace Form
 
-On $M_n(\mathbb{C})$ with $h(X,Y) = \tau(XY^{*})$ the operator group is $\mathrm{U}(n)$ and its Lie algebra is the skew-Hermitian algebra $\mathfrak{u}(n)$; the determinant condition is $|\det T| = 1$ and the special group is $\operatorname{SU}(n)$.
+On $M_n(\mathbb{C})$ with $h(X,Y) = \tau(XY^{*})$ the operator group is $\mathrm{U}(n)$ and its Lie algebra is the anti-Hermitian algebra $\mathfrak{u}(n)$; the determinant condition is $|\det T| = 1$ and the special group is $\operatorname{SU}(n)$.
 
 ### The Lorentz Group
 

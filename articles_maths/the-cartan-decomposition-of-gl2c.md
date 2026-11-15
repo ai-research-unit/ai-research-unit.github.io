@@ -4,7 +4,7 @@
 
 **The group $\mathrm{GL}_2(\mathbb{C})$ is the product of the unitary group with the exponential of the Hermitian half, each element has a unique such product, and the two factors are the eigenspaces of the Cartan involution $g\mapsto(g^{*})^{-1}$.**
 
-The article defines the Cartan involution, computes its two eigenspaces, proves that the involution is an automorphism of the group and that its derivative is the map $X\mapsto-X^{*}$ on the Lie algebra, derives the group decomposition from the polar decomposition of the previous article, proves the bracket relations between the two summands, and identifies the symmetric space and the two real forms. It assumes *The Polar Decomposition from the Two Halves at $n=2$*, *The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian at $n=2$* and *The Exponential of a $2\times2$ Matrix and Its Image*.
+The article defines the Cartan involution, computes its two eigenspaces, proves that the involution is an automorphism of the group and that its derivative is the map $X\mapsto-X^{*}$ on the Lie algebra, derives the group decomposition from the polar decomposition of the previous article, proves the bracket relations between the two summands, and identifies the symmetric space and the two real forms. It assumes *The Polar Decomposition from the Two Halves at $n=2$*, *The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian at $n=2$* and *The Exponential of a $2\times2$ Matrix and Its Image*.
 
 It follows the biquaternion article *The Endomorphisms of the Biquaternion Algebra* for the involution read on the eight real coordinates.
 
@@ -26,23 +26,23 @@ It follows the biquaternion article *The Endomorphisms of the Biquaternion Algeb
 
 ## The Two Eigenspaces
 
-**Proposition.** The derivative of $\theta$ at the identity is the map $X\mapsto-X^{*}$, whose eigenvalues are $+1$ and $-1$ with the skew-Hermitian and the Hermitian matrices as eigenspaces.
+**Proposition.** The derivative of $\theta$ at the identity is the map $X\mapsto-X^{*}$, whose eigenvalues are $+1$ and $-1$ with the anti-Hermitian and the Hermitian matrices as eigenspaces.
 
-**Proof.** Differentiating $g\mapsto(g^{*})^{-1}$ at $g=I$ in the direction $X$ gives $-X^{*}$; a matrix satisfying $X^{*}=-X$ is skew-Hermitian and one satisfying $X^{*}=X$ is Hermitian, and every matrix splits accordingly as $X=\tfrac12(X-X^{*})+\tfrac12(X+X^{*})$.
+**Proof.** Differentiating $g\mapsto(g^{*})^{-1}$ at $g=I$ in the direction $X$ gives $-X^{*}$; a matrix satisfying $X^{*}=-X$ is anti-Hermitian and one satisfying $X^{*}=X$ is Hermitian, and every matrix splits accordingly as $X=\tfrac12(X-X^{*})+\tfrac12(X+X^{*})$.
 
-**Corollary.** The Lie algebra splits as $\mathfrak{gl}_2(\mathbb{C})=\mathfrak{u}(2)\oplus\operatorname{Herm}_2$, with the skew-Hermitian part of real dimension four and the Hermitian part of real dimension four.
+**Corollary.** The Lie algebra splits as $\mathfrak{gl}_2(\mathbb{C})=\mathfrak{u}(2)\oplus\operatorname{Herm}_2$, with the anti-Hermitian part of real dimension four and the Hermitian part of real dimension four.
 
-**Proof.** The two eigenspaces have real dimension four each, because a skew-Hermitian matrix has four independent real entries and a Hermitian one has four as well.
+**Proof.** The two eigenspaces have real dimension four each, because a anti-Hermitian matrix has four independent real entries and a Hermitian one has four as well.
 
 **Corollary.** The summand $\mathfrak{p}=\operatorname{Herm}_2$ is not a Lie subalgebra, while $\mathfrak{u}(2)$ is one.
 
-**Proof.** The bracket of two Hermitian matrices is skew-Hermitian, so it leaves the summand; the bracket of two skew-Hermitian matrices stays skew-Hermitian.
+**Proof.** The bracket of two Hermitian matrices is anti-Hermitian, so it leaves the summand; the bracket of two anti-Hermitian matrices stays anti-Hermitian.
 
 ## The Bracket Relations
 
 **Theorem.** The three bracket relations hold: $[\mathfrak{k},\mathfrak{k}]\subseteq\mathfrak{k}$, $[\mathfrak{k},\mathfrak{p}]\subseteq\mathfrak{p}$ and $[\mathfrak{p},\mathfrak{p}]\subseteq\mathfrak{k}$, where $\mathfrak{k}=\mathfrak{u}(2)$ and $\mathfrak{p}=\operatorname{Herm}_2$.
 
-**Proof.** For skew-Hermitian $K_{1},K_{2}$ the bracket has adjoint $[K_{2},K_{1}]=-[K_{1},K_{2}]$, so it is skew-Hermitian; for skew-Hermitian $K$ and Hermitian $H$ the bracket has adjoint $[H,K]=-[K,H]$, so it is Hermitian; for Hermitian $H_{1},H_{2}$ the bracket has adjoint $[H_{2},H_{1}]$, so it is skew-Hermitian.
+**Proof.** For anti-Hermitian $K_{1},K_{2}$ the bracket has adjoint $[K_{2},K_{1}]=-[K_{1},K_{2}]$, so it is anti-Hermitian; for anti-Hermitian $K$ and Hermitian $H$ the bracket has adjoint $[H,K]=-[K,H]$, so it is Hermitian; for Hermitian $H_{1},H_{2}$ the bracket has adjoint $[H_{2},H_{1}]$, so it is anti-Hermitian.
 
 **Corollary.** The pair $(\mathfrak{gl}_2(\mathbb{C}),\mathfrak{k})$ is a symmetric Lie algebra, and the summand $\mathfrak{p}$ is a module for $\mathfrak{k}$.
 
@@ -86,7 +86,7 @@ It follows the biquaternion article *The Endomorphisms of the Biquaternion Algeb
 
 **Proof.** The involution is now $\theta(g)=(g^{\mathsf T})^{-1}$, whose fixed group is the orthogonal group; the polar decomposition of a real matrix has an orthogonal factor and a positive definite symmetric factor.
 
-**Corollary.** The Hermitian half is replaced by the symmetric half, and the skew-Hermitian half by the antisymmetric line.
+**Corollary.** The Hermitian half is replaced by the symmetric half, and the anti-Hermitian half by the antisymmetric line.
 
 **Proof.** The transpose involution has the symmetric matrices as the $+1$ eigenspace and the antisymmetric line as the $-1$ eigenspace.
 
@@ -98,7 +98,7 @@ It follows the biquaternion article *The Endomorphisms of the Biquaternion Algeb
 
 **Proposition.** The two summands are orthogonal for the form $\operatorname{Re}\operatorname{tr}(X^{*}Y)$, and the form is positive definite on the whole Lie algebra.
 
-**Proof.** For skew-Hermitian $K$ and Hermitian $H$ one has $\overline{\operatorname{tr}(K^{*}H)}=\operatorname{tr}(H^{*}K)=\operatorname{tr}(HK)=-\operatorname{tr}(K^{*}H)$, so the number is purely imaginary and its real part vanishes; on each summand the form is a sum of squares on the four real entries, which gives positive definiteness.
+**Proof.** For anti-Hermitian $K$ and Hermitian $H$ one has $\overline{\operatorname{tr}(K^{*}H)}=\operatorname{tr}(H^{*}K)=\operatorname{tr}(HK)=-\operatorname{tr}(K^{*}H)$, so the number is purely imaginary and its real part vanishes; on each summand the form is a sum of squares on the four real entries, which gives positive definiteness.
 
 **Corollary.** The Hilbert–Schmidt form makes the decomposition into the two summands an orthogonal decomposition.
 
@@ -110,7 +110,7 @@ It follows the biquaternion article *The Endomorphisms of the Biquaternion Algeb
 
 ## Summary
 
-The Cartan involution $\theta(g)=(g^{*})^{-1}$ is an involutive automorphism of $\mathrm{GL}_2(\mathbb{C})$ whose fixed subgroup is the unitary group. Its derivative is $X\mapsto-X^{*}$, with the skew-Hermitian matrices as the $+1$ eigenspace and the Hermitian matrices as the $-1$ eigenspace, and the three bracket relations hold with $[\mathfrak{p},\mathfrak{p}]\subseteq\mathfrak{k}$.
+The Cartan involution $\theta(g)=(g^{*})^{-1}$ is an involutive automorphism of $\mathrm{GL}_2(\mathbb{C})$ whose fixed subgroup is the unitary group. Its derivative is $X\mapsto-X^{*}$, with the anti-Hermitian matrices as the $+1$ eigenspace and the Hermitian matrices as the $-1$ eigenspace, and the three bracket relations hold with $[\mathfrak{p},\mathfrak{p}]\subseteq\mathfrak{k}$.
 
 The group is the product $\mathrm{U}(2)\exp(\operatorname{Herm}_2)$, and the product map is a diffeomorphism. The quotient by the unitary group is the Hermitian half with its symmetric space structure, and the real form replaces the unitary group by the orthogonal group and the Hermitian half by the symmetric half.
 
@@ -119,7 +119,7 @@ The group is the product $\mathrm{U}(2)\exp(\operatorname{Herm}_2)$, and the pro
 | Symbol | Meaning |
 |---|---|
 | $\theta(g)=(g^{*})^{-1}$ | the Cartan involution |
-| $\mathfrak{k}=\mathfrak{u}(2)$ | the skew-Hermitian summand |
+| $\mathfrak{k}=\mathfrak{u}(2)$ | the anti-Hermitian summand |
 | $\mathfrak{p}=\operatorname{Herm}_2$ | the Hermitian summand |
 | $\mathrm{U}(2)\exp(\mathfrak{p})$ | the Cartan decomposition |
 | $\mathrm{GL}_2(\mathbb{C})/\mathrm{U}(2)$ | the symmetric space |
@@ -129,5 +129,5 @@ The group is the product $\mathrm{U}(2)\exp(\operatorname{Herm}_2)$, and the pro
 - Sigurdur Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces* (American Mathematical Society, 2001), for Cartan decompositions and symmetric pairs.
 - Anthony W. Knapp, *Lie Groups Beyond an Introduction* (Birkhäuser, 2002), for the structure theory of the decomposition.
 - [The Polar Decomposition from the Two Halves at $n=2$](the-polar-decomposition-from-the-two-halves-at-n-2.html), for the group decomposition used here.
-- [The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian at $n=2$](the-two-halves-over-c-hermitian-and-skew-hermitian-at-n-2.html), for the two summands of the Lie algebra.
+- [The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian at $n=2$](the-two-halves-over-c-hermitian-and-skew-hermitian-at-n-2.html), for the two summands of the Lie algebra.
 - [The Exponential of $\operatorname{Sym}_2$: Stretches and the Positive Cone](the-exponential-of-sym-2-stretches-and-the-positive-cone.html), for the logarithm used on the Hermitian summand.

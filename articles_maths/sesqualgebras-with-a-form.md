@@ -99,7 +99,7 @@ On $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with the dagger of *H
 
 - The **topology of the layer** — the continuity of the involution and of the form and the joint continuity of the product — is *Topological Sesqualgebras with a Form* and the category *Topology on Sesqualgebras*; nothing of it is used here.
 - The **positivity of the form**, the **norm defined by a form** and the **completion** are *Positivity and the Positive Cone of a Hermitian Form*, *The Norm Defined by a Form* and *The Completion of a Sesqualgebra with a Form* in Part II.
-- The **scalar classification** of the forms into Hermitian, skew-Hermitian and alternating, and the correspondence with the functional, are *The Sesquilinear Form and the Conjugation*.
+- The **scalar classification** of the forms into Hermitian, anti-Hermitian and alternating, and the correspondence with the functional, are *The Sesquilinear Form and the Conjugation*.
 - The **inertia and the signature** of the form are *The Indefinite Case and the Signature*, and the **congruence classification** is *Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint*.
 - The **operator theory** of the pair is the rest of this category: the adjoint is *The Form-Adjoint of an Operator*, the group is *Isometries and the Unitary Group of a Form*, the Lie and the Jordan structures are *The Unitary Group of a Form and Its Lie Algebra* and *The Hermitian Jordan Algebra of a Form*.
 

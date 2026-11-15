@@ -314,11 +314,11 @@ so a derivation of the ambient that preserves the family is a commutator with an
 
 **The ambient splits into three pieces: the family, the traceless symmetric line and the skew line, and each carries one of the three structures of the article.**
 
-**The decomposition.** Every matrix of $M_{2}(\mathbb{C})$ is the sum of a symmetric and a skew-symmetric part, and the symmetric part is the sum of a scalar multiple of the identity and an element of the image and a traceless symmetric matrix. Precisely,
+**The decomposition.** Every matrix of $M_{2}(\mathbb{C})$ is the sum of a symmetric and a antisymmetric part, and the symmetric part is the sum of a scalar multiple of the identity and an element of the image and a traceless symmetric matrix. Precisely,
 $$
 M_{2}(\mathbb{C})=\underbrace{\mathbb{C}\{\mathrm I_{2},\sigma_{1}\}}_{\text{the family}}\ \oplus\ \underbrace{\mathbb{C}\sigma_{3}}_{\text{traceless symmetric}}\ \oplus\ \underbrace{\mathbb{C}\,i\sigma_{2}}_{\text{skew}},
 $$
-of dimensions $2+1+1=4$. The family is the image of the model; $\sigma_{3}$ realises the tessarine sign by conjugation; $i\sigma_{2}$ is the quarter turn, the unique skew-symmetric direction, and it is the element that the transpose leaves out.
+of dimensions $2+1+1=4$. The family is the image of the model; $\sigma_{3}$ realises the tessarine sign by conjugation; $i\sigma_{2}$ is the quarter turn, the unique antisymmetric direction, and it is the element that the transpose leaves out.
 
 **The frame as an orthogonal change of basis.** The matrix $P$ of the general article satisfies $P^{\mathsf T}P=2\,\mathrm I_{2}$, so $P/\sqrt2$ is a real orthogonal matrix and
 $$

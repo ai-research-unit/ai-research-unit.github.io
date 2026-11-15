@@ -150,7 +150,7 @@ $$
 
 **The corpus organises the same sixteen products differently.** In the biquaternion algebra the four general products are the products of two elements taken with or without the conjugation, and the two halves are the corners $\mathbb{B}_{st}$ rather than the symmetric and antisymmetric parts.
 
-**The translation.** Under the identification of the biquaternion algebra with $M_2(\mathbb{C})$, the biquaternion conjugation corresponds to the conjugate transpose, so the four general products of *The Four General Products and Their Relations over the Biquaternion Algebra* correspond to the four tables of this article with the Hermitian and skew-Hermitian halves in place of the symmetric and antisymmetric ones.
+**The translation.** Under the identification of the biquaternion algebra with $M_2(\mathbb{C})$, the biquaternion conjugation corresponds to the conjugate transpose, so the four general products of *The Four General Products and Their Relations over the Biquaternion Algebra* correspond to the four tables of this article with the Hermitian and anti-Hermitian halves in place of the symmetric and antisymmetric ones.
 
 **Proof.** Conjugation in the biquaternion algebra reverses the order of a product, and the conjugate transpose does the same, $(XY)^{*}=Y^{*}X^{*}$; the correspondence of the halves follows.
 

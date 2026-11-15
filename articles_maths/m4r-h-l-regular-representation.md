@@ -54,7 +54,7 @@ A_2=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix},\quad
 A_3=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&1&0&0\\1&0&0&0\end{pmatrix},
 $$
 
-which are skew-symmetric and satisfy $A_1^{2}=A_2^{2}=A_3^{2}=-I_4$ and $A_1A_2=A_3$ cyclically. So the model is a real form of $M_4(\mathbb{R})$ in the same sense as before: the three generators behave as the imaginary units, and the four matrices $I_4,A_1,A_2,A_3$ span a four-dimensional subspace.
+which are antisymmetric and satisfy $A_1^{2}=A_2^{2}=A_3^{2}=-I_4$ and $A_1A_2=A_3$ cyclically. So the model is a real form of $M_4(\mathbb{R})$ in the same sense as before: the three generators behave as the imaginary units, and the four matrices $I_4,A_1,A_2,A_3$ span a four-dimensional subspace.
 
 **The left and the right frames.** Two different bases of the ambient are in play and they must not be confused.
 
@@ -296,7 +296,7 @@ and the compact part is a copy of $SU(2)$ inside $SO(4)$, acting on the carrier 
 
 **The symmetric part is scalar.** This is the exact analogue of the statement, in the complex model, that the Hermitian part of an element of the image is scalar. The decomposition is $1+3$ in both models, and in both it is the decomposition into the scalar line and the traceless part; what differs is the involution used to define it, the conjugate transpose there and the ordinary transpose here.
 
-**Proof of the symmetric part.** A Cayley matrix is $q_tI_4$ plus a skew-symmetric part, because the three generators $A_1,A_2,A_3$ are skew-symmetric. Hence $\tfrac12(\mathsf{M}_4+\mathsf{M}_4^{\mathsf T})=q_tI_4$ and $\tfrac12(\mathsf{M}_4-\mathsf{M}_4^{\mathsf T})=\mathsf{M}_4(\vec v)$.
+**Proof of the symmetric part.** A Cayley matrix is $q_tI_4$ plus a antisymmetric part, because the three generators $A_1,A_2,A_3$ are antisymmetric. Hence $\tfrac12(\mathsf{M}_4+\mathsf{M}_4^{\mathsf T})=q_tI_4$ and $\tfrac12(\mathsf{M}_4-\mathsf{M}_4^{\mathsf T})=\mathsf{M}_4(\vec v)$.
 
 **The complex lines are not matrix subalgebras of the ambient.** The image of $L_x$ is a two-dimensional subspace of the ambient consisting of matrices commuting with $\mathsf{M}_4(\vec e_x)$; it is a subalgebra of the image, and hence a copy of $\mathbb{C}$, but it is not a subalgebra of $M_4(\mathbb{R})$ closed under transposition. The distinction matters for the operators article, where the complex lines index the strata of the length.
 

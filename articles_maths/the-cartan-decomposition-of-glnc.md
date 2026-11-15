@@ -22,7 +22,7 @@ $$
 X=\underbrace{\tfrac12(X-X^{*})}_{\theta X=X}+\underbrace{\tfrac12(X+X^{*})}_{\theta X=-X},
 $$
 
-so $\mathfrak{gl}_n=\mathfrak{u}(n)\oplus\operatorname{Herm}_n$ with $\mathfrak{u}(n)$ the skew-Hermitian matrices and $\operatorname{Herm}_n$ the Hermitian ones. The computation confirms the split and the two eigenvalue conditions at $n=3,4$, and it is the same split as the one of *The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian* read at the level of the Lie algebra.
+so $\mathfrak{gl}_n=\mathfrak{u}(n)\oplus\operatorname{Herm}_n$ with $\mathfrak{u}(n)$ the anti-Hermitian matrices and $\operatorname{Herm}_n$ the Hermitian ones. The computation confirms the split and the two eigenvalue conditions at $n=3,4$, and it is the same split as the one of *The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian* read at the level of the Lie algebra.
 
 **The two summands are orthogonal for the Cartan form.** Define
 
@@ -172,7 +172,7 @@ $$
 
 so the middle factor is the pair of stretches of *The Exponential of the Symmetric Part: Stretches and the Positive Cone*, one per corner. The computation confirms the identity for diagonal elements, and it shows that the rank of the pair is two and the two corner stretches are its coordinates.
 
-**The complex structure of the algebra is the rotation of the compact part.** The unitary group of the biquaternion algebra is the compact part, and its Lie algebra is the skew-Hermitian half; the Hermitian half is the noncompact part. The computation confirms the two halves at $n=2$ by the involution $\theta$, and it is the reason the biquaternion articles can treat the phase and the stretch as two separate coordinates of the same element.
+**The complex structure of the algebra is the rotation of the compact part.** The unitary group of the biquaternion algebra is the compact part, and its Lie algebra is the anti-Hermitian half; the Hermitian half is the noncompact part. The computation confirms the two halves at $n=2$ by the involution $\theta$, and it is the reason the biquaternion articles can treat the phase and the stretch as two separate coordinates of the same element.
 
 ## Summary
 

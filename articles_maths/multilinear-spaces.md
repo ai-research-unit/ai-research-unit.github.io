@@ -209,15 +209,15 @@ When $R$ is a field of characteristic zero, or more generally a ring in which $n
 
 ### Symmetric and Alternating Multilinear Maps
 
-**Definition.** A multilinear map $f:M^n \to P$ is **symmetric** if $f(m_{\sigma(1)},\dots,m_{\sigma(n)})=f(m_1,\dots,m_n)$ for every $\sigma$, and **skew-symmetric** if $f(m_{\sigma(1)},\dots,m_{\sigma(n)})=\operatorname{sgn}(\sigma)f(m_1,\dots,m_n)$ for every $\sigma$. It is **alternating** if $f$ vanishes whenever two of its arguments are equal.
+**Definition.** A multilinear map $f:M^n \to P$ is **symmetric** if $f(m_{\sigma(1)},\dots,m_{\sigma(n)})=f(m_1,\dots,m_n)$ for every $\sigma$, and **antisymmetric** if $f(m_{\sigma(1)},\dots,m_{\sigma(n)})=\operatorname{sgn}(\sigma)f(m_1,\dots,m_n)$ for every $\sigma$. It is **alternating** if $f$ vanishes whenever two of its arguments are equal.
 
-**Proposition.** An alternating multilinear map is skew-symmetric; conversely a skew-symmetric map is alternating when $2$ is invertible in $R$. Over a ring in which $2$ is not invertible the two conditions differ, and being alternating is the stronger of the two.
+**Proposition.** An alternating multilinear map is antisymmetric; conversely a antisymmetric map is alternating when $2$ is invertible in $R$. Over a ring in which $2$ is not invertible the two conditions differ, and being alternating is the stronger of the two.
 
 *Proof.* Suppose $f$ is alternating. For fixed arguments $x,y$ in two positions, multilinearity applied to $x+y$ in both positions gives
 $$
 0=f(\dots,x+y,\dots,x+y,\dots)=f(\dots,x,\dots,x,\dots)+f(\dots,x,\dots,y,\dots)+f(\dots,y,\dots,x,\dots)+f(\dots,y,\dots,y,\dots),
 $$
-and the two repeated-argument terms vanish while the left side does, so $f(\dots,x,\dots,y,\dots)=-f(\dots,y,\dots,x,\dots)$; a transposition therefore changes the sign, and $f$ is skew-symmetric. Conversely, if $f$ is skew-symmetric and two arguments are equal to $x$, interchanging them changes the sign while leaving $f$ unchanged, so $f=-f$; this gives $f=0$ when $2$ is invertible, and $f$ is alternating.
+and the two repeated-argument terms vanish while the left side does, so $f(\dots,x,\dots,y,\dots)=-f(\dots,y,\dots,x,\dots)$; a transposition therefore changes the sign, and $f$ is antisymmetric. Conversely, if $f$ is antisymmetric and two arguments are equal to $x$, interchanging them changes the sign while leaving $f$ unchanged, so $f=-f$; this gives $f=0$ when $2$ is invertible, and $f$ is alternating.
 
 The **universal symmetric multilinear map** and the **universal alternating multilinear map** are constructed by factoring the elementary tensors by the relations $m_1\otimes\cdots\otimes m_n = m_{\sigma(1)}\otimes\cdots\otimes m_{\sigma(n)}$ and $m_1\otimes\cdots\otimes m_n=\operatorname{sgn}(\sigma)m_{\sigma(1)}\otimes\cdots\otimes m_{\sigma(n)}$ respectively. The resulting modules are the **symmetric power** $S^nM$ and the **exterior power** $\Lambda^nM$, characterised by
 

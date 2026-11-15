@@ -171,7 +171,7 @@ $$
 \mathfrak{gl}_5=\mathfrak{u}(5)\oplus i\mathfrak{u}(5),
 $$
 
-the skew-Hermitian and Hermitian parts.
+the anti-Hermitian and Hermitian parts.
 
 **Proof.** The group $GL_5$ acts transitively on $\mathcal{P}$ by $g\cdot P=gPg^*$; the stabilizer of $I$ is $U(5)$; the quotient is $\mathcal{P}$. The Cartan involution is $\theta(X)=-X^*$, with fixed space $\mathfrak{u}(5)$ and $-1$ eigenspace $i\mathfrak{u}(5)$; the metric is invariant and the space is symmetric. The noncompact type is the sign of the curvature; the sectional curvature is nonpositive.
 

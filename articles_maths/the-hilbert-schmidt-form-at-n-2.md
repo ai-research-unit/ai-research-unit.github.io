@@ -4,7 +4,7 @@
 
 **The Hilbert–Schmidt form $\langle X,Y\rangle=\operatorname{tr}(X^{*}Y)$ is a Hermitian inner product on $M_2(\mathbb{C})$, positive definite of signature $(8,0)$ over the reals, and its real part gives the matrix space the structure of a real Euclidean space of dimension eight.**
 
-The article defines the form, proves that it is positive definite, identifies its norm with the sum of the squares of the entries, exhibits the eight vectors of an orthonormal real basis, shows that the four corners are mutually orthogonal, that the Hermitian and skew-Hermitian halves are orthogonal, and that on the real symmetric matrices the form agrees with the trace form while on all real matrices it is the entrywise product. It assumes *The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian at $n=2$*, *The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$* and *The Trace Form and Its Signature on the Two Halves of $M_2(\mathbb{R})$*.
+The article defines the form, proves that it is positive definite, identifies its norm with the sum of the squares of the entries, exhibits the eight vectors of an orthonormal real basis, shows that the four corners are mutually orthogonal, that the Hermitian and anti-Hermitian halves are orthogonal, and that on the real symmetric matrices the form agrees with the trace form while on all real matrices it is the entrywise product. It assumes *The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian at $n=2$*, *The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$* and *The Trace Form and Its Signature on the Two Halves of $M_2(\mathbb{R})$*.
 
 It defers the four forms with their norms to *The Four Forms and Their Algebraic Norms at $n=2$*, and the polar decomposition of an operator to *The Adjoints and the Polar Decomposition of an Operator at $n=2$*.
 
@@ -58,13 +58,13 @@ $$
 
 ## The Two Halves over the Complex Numbers
 
-**Proposition.** The Hermitian half and the skew-Hermitian half are orthogonal for the real part of the form.
+**Proposition.** The Hermitian half and the anti-Hermitian half are orthogonal for the real part of the form.
 
-**Proof.** For Hermitian $H$ and skew-Hermitian $K$ the number $\operatorname{tr}(H^{*}K)=\operatorname{tr}(HK)$ equals the negative of its own conjugate, so it is purely imaginary and its real part vanishes.
+**Proof.** For Hermitian $H$ and anti-Hermitian $K$ the number $\operatorname{tr}(H^{*}K)=\operatorname{tr}(HK)$ equals the negative of its own conjugate, so it is purely imaginary and its real part vanishes.
 
-**Corollary.** The real part of the form splits the space as an orthogonal sum of two real spaces of dimension four, and the splitting is the one of *The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian at $n=2$*.
+**Corollary.** The real part of the form splits the space as an orthogonal sum of two real spaces of dimension four, and the splitting is the one of *The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian at $n=2$*.
 
-**Proof.** Every matrix is the sum of its Hermitian and skew-Hermitian parts, the two parts are orthogonal, and each half has real dimension four.
+**Proof.** Every matrix is the sum of its Hermitian and anti-Hermitian parts, the two parts are orthogonal, and each half has real dimension four.
 
 **Corollary.** On the Hermitian half the form is real, $\operatorname{tr}(H_{1}H_{2})$, and it is positive definite there.
 
@@ -94,9 +94,9 @@ $$
 
 **Proof.** $\operatorname{tr}((AX-XA)^{*}Y)=\operatorname{tr}(X^{*}(A^{*}Y-YA^{*}))$ after expanding and cycling the trace.
 
-**Corollary.** The adjoint action of the Hermitian matrices is self-adjoint, and the adjoint action of the skew-Hermitian ones is skew-adjoint.
+**Corollary.** The adjoint action of the Hermitian matrices is self-adjoint, and the adjoint action of the anti-Hermitian ones is skew-adjoint.
 
-**Proof.** The formula of the proposition gives $\operatorname{ad}_{A}^{*}=\operatorname{ad}_{A}$ for Hermitian $A$ and $\operatorname{ad}_{A}^{*}=-\operatorname{ad}_{A}$ for skew-Hermitian $A$.
+**Proof.** The formula of the proposition gives $\operatorname{ad}_{A}^{*}=\operatorname{ad}_{A}$ for Hermitian $A$ and $\operatorname{ad}_{A}^{*}=-\operatorname{ad}_{A}$ for anti-Hermitian $A$.
 
 **Proposition.** The Hilbert–Schmidt norm is submultiplicative against the operator norm: $\lVert XY\rVert\le\lVert X\rVert_{\mathrm{op}}\lVert Y\rVert$.
 
@@ -110,7 +110,7 @@ $$
 
 The Hilbert–Schmidt form $\langle X,Y\rangle=\operatorname{tr}(X^{*}Y)$ is a Hermitian inner product on $M_2(\mathbb{C})$ whose real part is positive definite of signature $(8,0)$; its norm is the Euclidean norm of the four complex entries, and the eight matrices $E_{ij}$ and $iE_{ij}$ are an orthonormal real basis.
 
-The four corners are mutually orthogonal, the Hermitian and skew-Hermitian halves are orthogonal for the real part, and on the real matrices the form is the entrywise product, positive definite of signature $(4,0)$, which agrees with the trace form on the symmetric half and differs from it elsewhere. The adjoint of $\operatorname{ad}_{A}$ is $\operatorname{ad}_{A^{*}}$, and the norm is submultiplicative against the operator norm.
+The four corners are mutually orthogonal, the Hermitian and anti-Hermitian halves are orthogonal for the real part, and on the real matrices the form is the entrywise product, positive definite of signature $(4,0)$, which agrees with the trace form on the symmetric half and differs from it elsewhere. The adjoint of $\operatorname{ad}_{A}$ is $\operatorname{ad}_{A^{*}}$, and the norm is submultiplicative against the operator norm.
 
 ## Summary of Notation
 
@@ -127,6 +127,6 @@ The four corners are mutually orthogonal, the Hermitian and skew-Hermitian halve
 
 - Rajendra Bhatia, *Matrix Analysis* (Springer, 1997), for the Hilbert–Schmidt norm, its inequalities and its comparison with the operator norm.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge University Press, 2013), for the entrywise and the trace products on matrix spaces.
-- [The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian at $n=2$](the-two-halves-over-c-hermitian-and-skew-hermitian-at-n-2.html), for the two orthogonal halves.
+- [The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian at $n=2$](the-two-halves-over-c-hermitian-and-skew-hermitian-at-n-2.html), for the two orthogonal halves.
 - [The Trace Form and Its Signature on the Two Halves of $M_2(\mathbb{R})$](the-trace-form-and-its-signature-on-the-two-halves-of-m2r.html), for the indefinite form that the Hilbert–Schmidt form replaces.
 - [The Derivation $X\mapsto[A,X]$ and Its Skewness for the Trace Form](the-derivation-commutator-and-its-skewness-for-the-trace-form.html), for the adjoint action whose adjoint is computed here.

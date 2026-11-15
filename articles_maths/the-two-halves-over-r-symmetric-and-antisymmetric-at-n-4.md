@@ -141,7 +141,7 @@ Over the reals the trace of a symmetric square is a sum of squares and the trace
 
 ## Further Reading
 
-- Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge University Press, 2013), for symmetric and skew-symmetric matrices and their eigenvalue structure.
+- Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge University Press, 2013), for symmetric and antisymmetric matrices and their eigenvalue structure.
 - [The Involution and the Hermitian Structure of $M_4(\mathbb{C})$](the-involution-and-the-hermitian-structure-of-m4c.html), for the dagger and the Hermitian half.
 - [$M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the sixteen matrices and the coefficient basis.
 - [The Trace Form and Its Signature on the Two Halves of $M_4(\mathbb{C})$](the-trace-form-and-its-signature-on-the-two-halves-of-m4c.html), for the signature computed in full.

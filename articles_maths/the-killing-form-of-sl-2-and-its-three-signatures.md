@@ -72,9 +72,9 @@ $$
 
 **Proof.** The values $8$ and $-2$ differ in sign, and the basis change from $H$ to $X_{3}$ is the multiplication by $i/2$, which changes the real form.
 
-**The compact form is the one of the unitary matrices.** The skew-Hermitian traceless matrices form the Lie algebra of $\mathrm{SU}(2)$, which is diffeomorphic to the sphere $S^{3}$ and hence compact.
+**The compact form is the one of the unitary matrices.** The anti-Hermitian traceless matrices form the Lie algebra of $\mathrm{SU}(2)$, which is diffeomorphic to the sphere $S^{3}$ and hence compact.
 
-**Proof.** $\mathrm{SU}(2)$ is the group of unitary two-by-two matrices of determinant one, and its Lie algebra is the space of traceless skew-Hermitian matrices.
+**Proof.** $\mathrm{SU}(2)$ is the group of unitary two-by-two matrices of determinant one, and its Lie algebra is the space of traceless anti-Hermitian matrices.
 
 ## The Complex Form over the Reals
 

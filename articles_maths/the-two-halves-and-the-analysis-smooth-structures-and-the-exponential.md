@@ -2,9 +2,9 @@
 
 ## Introduction
 
-**The two halves are complementary real subspaces of real dimension $n^{2}$ each, smooth submanifolds with a common smooth structure inherited from the space, and the exponential carries the Hermitian half homeomorphically onto the positive cone while the skew-Hermitian half maps into the unitary group.**
+**The two halves are complementary real subspaces of real dimension $n^{2}$ each, smooth submanifolds with a common smooth structure inherited from the space, and the exponential carries the Hermitian half homeomorphically onto the positive cone while the anti-Hermitian half maps into the unitary group.**
 
-The article proves the linear splitting of the space into the Hermitian and the skew-Hermitian halves with the projection $(A+A^{*})/2$, proves that the two halves are closed linear subspaces hence smooth submanifolds and Banach subspaces of real dimension $n^{2}$, proves that the restriction of the exponential to the Hermitian half is a homeomorphism onto the positive cone and that its restriction to the skew-Hermitian half is a surjection onto the unitary group with the period lattice, and proves that the two restrictions are one-to-one in opposite senses: the first is globally injective, the second is never globally injective. It assumes *The Analysis on $M_n(\mathbb{C})$* and *The Two Halves and Their Topology*. It defers the deformations to *The Cartan Decomposition of $\mathrm{GL}_n(\mathbb{C})$* and the operators to *The Geometry of the Two Halves, and the Return of the Two-Sided Operators*.
+The article proves the linear splitting of the space into the Hermitian and the anti-Hermitian halves with the projection $(A+A^{*})/2$, proves that the two halves are closed linear subspaces hence smooth submanifolds and Banach subspaces of real dimension $n^{2}$, proves that the restriction of the exponential to the Hermitian half is a homeomorphism onto the positive cone and that its restriction to the anti-Hermitian half is a surjection onto the unitary group with the period lattice, and proves that the two restrictions are one-to-one in opposite senses: the first is globally injective, the second is never globally injective. It assumes *The Analysis on $M_n(\mathbb{C})$* and *The Two Halves and Their Topology*. It defers the deformations to *The Cartan Decomposition of $\mathrm{GL}_n(\mathbb{C})$* and the operators to *The Geometry of the Two Halves, and the Return of the Two-Sided Operators*.
 
 ## The Splitting as an Analysis
 
@@ -86,7 +86,7 @@ so the exponential is a bijection onto the cone. The computation confirms the tw
 
 **The exponential is a diffeomorphism onto the cone.** The derivative at $A$ on the Hermitian half is the map $H\mapsto\int_0^1e^{sA}He^{(1-s)A}ds$, which is invertible since the spectrum of $A$ is real and the resonances are purely imaginary; so the bijection is a diffeomorphism. The computation confirms the invertibility at $n=3$ on random Hermitian matrices, and it is the global form of the local diffeomorphism of *The Analysis on $M_n(\mathbb{C})$*.
 
-## The Exponential on the Skew-Hermitian Half
+## The Exponential on the Anti-Hermitian Half
 
 **The exponential maps the skew half into the unitary group.** If $X^{*}=-X$ then $(e^{X})^{*}=e^{-X}=(e^{X})^{-1}$, so
 
@@ -94,9 +94,9 @@ $$
 \exp:\operatorname{Skew}_n\to\mathrm{U}(n),\qquad \exp(\mathfrak{u}(n))\subset\mathrm{U}(n).
 $$
 
-The computation confirms the unitarity at $n=3$ on random skew-Hermitian matrices, and it is the first half of the second correspondence.
+The computation confirms the unitarity at $n=3$ on random anti-Hermitian matrices, and it is the first half of the second correspondence.
 
-**The exponential on the skew half is surjective.** Every unitary matrix is normal with eigenvalues of modulus one, so it has a skew-Hermitian logarithm, and
+**The exponential on the skew half is surjective.** Every unitary matrix is normal with eigenvalues of modulus one, so it has a anti-Hermitian logarithm, and
 
 $$
 \exp\big(\operatorname{Skew}_n\big)=\mathrm{U}(n).
@@ -110,9 +110,9 @@ $$
 e^{X}=e^{X+2\pi k\,\mathrm{I}}\quad\text{for every integer }k,
 $$
 
-and the period is skew-Hermitian since $2\pi k\mathrm{I}$ is, so the exponential on the half has an infinite discrete fibre. The computation confirms the identity at $n=3$ on a random skew-Hermitian matrix, and it is the sharp difference from the Hermitian half.
+and the period is anti-Hermitian since $2\pi k\mathrm{I}$ is, so the exponential on the half has an infinite discrete fibre. The computation confirms the identity at $n=3$ on a random anti-Hermitian matrix, and it is the sharp difference from the Hermitian half.
 
-**The kernel of the exponential is the lattice of the periods.** The matrices $X$ with $e^{X}=\mathrm{I}$ are the skew-Hermitian matrices whose eigenvalues lie in $2\pi i\mathbb{Z}$, so
+**The kernel of the exponential is the lattice of the periods.** The matrices $X$ with $e^{X}=\mathrm{I}$ are the anti-Hermitian matrices whose eigenvalues lie in $2\pi i\mathbb{Z}$, so
 
 $$
 \ker\exp\big|_{\operatorname{Skew}_n}=\{X^{*}=-X:\operatorname{Spec}(X)\subset2\pi i\mathbb{Z}\},
@@ -167,7 +167,7 @@ so the two halves correspond to the real and the imaginary corner values. The co
 
 ## Summary
 
-The space splits into the Hermitian and the skew-Hermitian halves by the real-linear projectors $(A\pm A^{*})/2$, both of norm one and of real dimension $n^{2}$, one self-adjoint and one anti-self-adjoint for the Hilbert–Schmidt form, and each half is a flat smooth submanifold and a real Banach space whose tangent space is itself. The exponential restricted to the Hermitian half is a diffeomorphism onto the positive cone with the logarithm as inverse, injective because the Hermitian logarithms commute and their eigenvalues coincide; restricted to the skew half it is a surjective covering of the unitary group with the period lattice of the skew-Hermitian matrices whose spectrum lies in $2\pi i\mathbb{Z}$, hence never injective. Together the two restrictions give the polar decomposition, the pair of logarithms is unique up to the lattice, and the Hilbert–Schmidt norm is the Pythagorean sum of the norms of the halves.
+The space splits into the Hermitian and the anti-Hermitian halves by the real-linear projectors $(A\pm A^{*})/2$, both of norm one and of real dimension $n^{2}$, one self-adjoint and one anti-self-adjoint for the Hilbert–Schmidt form, and each half is a flat smooth submanifold and a real Banach space whose tangent space is itself. The exponential restricted to the Hermitian half is a diffeomorphism onto the positive cone with the logarithm as inverse, injective because the Hermitian logarithms commute and their eigenvalues coincide; restricted to the skew half it is a surjective covering of the unitary group with the period lattice of the anti-Hermitian matrices whose spectrum lies in $2\pi i\mathbb{Z}$, hence never injective. Together the two restrictions give the polar decomposition, the pair of logarithms is unique up to the lattice, and the Hilbert–Schmidt norm is the Pythagorean sum of the norms of the halves.
 
 ## Summary of Notation
 

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The algebra $M_{3}(\mathbb{C})$ is the algebra of $3\times3$ complex matrices under the ordinary product. It is the model of a central simple algebra, the algebra of endomorphisms of $\mathbb{C}^{3}$, and the ambient algebra of the whole $M_{3}(\mathbb{C})$ category. This article fixes it: the basis of matrix units and the product rule, the trace and the determinant, the centre and the simplicity, the real dimension, the unit group and the projective group, and the reading of the algebra over the real numbers as the complexification of the skew-Hermitian matrices.
+The algebra $M_{3}(\mathbb{C})$ is the algebra of $3\times3$ complex matrices under the ordinary product. It is the model of a central simple algebra, the algebra of endomorphisms of $\mathbb{C}^{3}$, and the ambient algebra of the whole $M_{3}(\mathbb{C})$ category. This article fixes it: the basis of matrix units and the product rule, the trace and the determinant, the centre and the simplicity, the real dimension, the unit group and the projective group, and the reading of the algebra over the real numbers as the complexification of the anti-Hermitian matrices.
 
 No quadratic form is used in the proofs here. The trace form $\operatorname{tr}(AB)$ is mentioned only to record that it is symmetric and nondegenerate; the positive definite Hermitian form $\operatorname{tr}(A^{*}B)$ and the norm it defines are *The Involution and the Hermitian Structure of $M_3(\mathbb{C})$*. The dimensions are algebraic dimensions, not homotopy invariants; the topology of the algebra and of its unit group is *The Topology of $M_{3}(\mathbb{C})$*.
 
@@ -154,7 +154,7 @@ $$
 \langle A,B\rangle=\operatorname{tr}(A^{*}B),
 $$
 
-with $A^{*}=\bar A^{\mathsf T}$, and it is the subject of *The Involution and the Hermitian Structure of $M_3(\mathbb{C})$*. The two forms agree on Hermitian matrices, where $A^{*}=A$, and differ by a sign on skew-Hermitian matrices, where $A^{*}=-A$; the trace form of this article is the complex bilinear one.
+with $A^{*}=\bar A^{\mathsf T}$, and it is the subject of *The Involution and the Hermitian Structure of $M_3(\mathbb{C})$*. The two forms agree on Hermitian matrices, where $A^{*}=A$, and differ by a sign on anti-Hermitian matrices, where $A^{*}=-A$; the trace form of this article is the complex bilinear one.
 
 **No null cone.** The form $\langle A,B\rangle=\operatorname{tr}(A^{*}B)$ is positive definite, so its only isotropic vector is $0$. The singular set $\{\det A=0\}$ is a complex hypersurface of real codimension two, not the null cone of a quadratic form. At $n=2$ the algebra is the biquaternion algebra $\mathbb{B}\cong M_{2}(\mathbb{C})$, where the determinant is the N-norm, an indefinite quadratic form with a genuine null cone; that cone is a feature of the two-dimensional case and is not imported here.
 
@@ -239,9 +239,9 @@ $$
 
 ## The Reading over the Real Numbers
 
-**The real vector space is the complexification of the skew-Hermitian matrices.**
+**The real vector space is the complexification of the anti-Hermitian matrices.**
 
-Let $A^{*}=\bar A^{\mathsf T}$ be the conjugate transpose. The **Hermitian** matrices are the fixed points of the star, $H^{*}=H$, and the **skew-Hermitian** matrices are the anti-fixed points, $S^{*}=-S$. They are real vector subspaces of $M_{3}(\mathbb{C})$, read as a real vector space of dimension $18$.
+Let $A^{*}=\bar A^{\mathsf T}$ be the conjugate transpose. The **Hermitian** matrices are the fixed points of the star, $H^{*}=H$, and the **anti-Hermitian** matrices are the anti-fixed points, $S^{*}=-S$. They are real vector subspaces of $M_{3}(\mathbb{C})$, read as a real vector space of dimension $18$.
 
 **Proposition.** Every matrix splits uniquely as
 
@@ -249,7 +249,7 @@ $$
 A=H+S,\qquad H=\tfrac12(A+A^{*}),\quad S=\tfrac12(A-A^{*}),
 $$
 
-with $H$ Hermitian and $S$ skew-Hermitian. Consequently
+with $H$ Hermitian and $S$ anti-Hermitian. Consequently
 
 $$
 M_{3}(\mathbb{C})=\mathfrak{u}(3)\oplus i\mathfrak{u}(3)
@@ -261,7 +261,7 @@ $$
 \mathfrak{u}(3)=\{S:S^{*}=-S\}
 $$
 
-is the real Lie algebra of skew-Hermitian matrices, of real dimension $9$, and
+is the real Lie algebra of anti-Hermitian matrices, of real dimension $9$, and
 
 $$
 \mathfrak{su}(3)=\{S\in\mathfrak{u}(3):\operatorname{tr}S=0\}
@@ -269,7 +269,7 @@ $$
 
 has real dimension $8$.
 
-**Proof.** The two combinations are Hermitian and skew-Hermitian because the star is conjugate-linear and involutive: $(A+A^{*})^{*}=A^{*}+A=A+A^{*}$ and $(A-A^{*})^{*}=A^{*}-A=-(A-A^{*})$. Their sum is $A$ and their intersection is zero: a matrix both Hermitian and skew-Hermitian satisfies $H=-H$, so $H=0$. The dimension of $\mathfrak{u}(3)$ is the real dimension of the Hermitian matrices, which is $9$: the diagonal is real (three parameters) and each of the three upper entries is complex (six real parameters). The trace is a real linear functional on $\mathfrak{u}(3)$; its kernel has dimension $8$.
+**Proof.** The two combinations are Hermitian and anti-Hermitian because the star is conjugate-linear and involutive: $(A+A^{*})^{*}=A^{*}+A=A+A^{*}$ and $(A-A^{*})^{*}=A^{*}-A=-(A-A^{*})$. Their sum is $A$ and their intersection is zero: a matrix both Hermitian and anti-Hermitian satisfies $H=-H$, so $H=0$. The dimension of $\mathfrak{u}(3)$ is the real dimension of the Hermitian matrices, which is $9$: the diagonal is real (three parameters) and each of the three upper entries is complex (six real parameters). The trace is a real linear functional on $\mathfrak{u}(3)$; its kernel has dimension $8$.
 
 **The complex Lie algebra.** With the commutator bracket $[A,B]=AB-BA$, the real vector space $M_{3}(\mathbb{C})$ is the real Lie algebra $\mathfrak{gl}_{3}(\mathbb{C})$, of real dimension $18$. Its complexification is
 
@@ -279,7 +279,7 @@ $$
 
 because $\mathfrak{u}(3)$ spans $M_{3}$ over $\mathbb{C}$ and the complex dimension of the span is $9$. The real form $\mathfrak{u}(3)$ is compact; $\mathfrak{su}(3)$ is its traceless part, of dimension $8$.
 
-**The associative product does not preserve $\mathfrak{u}(3)$.** The product of two skew-Hermitian matrices is not skew-Hermitian in general: $(ST)^{*}=T^{*}S^{*}=(-T)(-S)=TS$, which equals $-ST$ only when $S$ and $T$ anticommute. The decomposition above is a decomposition of the real vector space and of the real Lie algebra, not of the associative algebra. The associative algebra $M_{3}(\mathbb{C})$ is the complexification of the real vector space $\mathfrak{u}(3)$, and its product is the complex bilinear extension of the product of matrices, not a product internal to $\mathfrak{u}(3)$.
+**The associative product does not preserve $\mathfrak{u}(3)$.** The product of two anti-Hermitian matrices is not anti-Hermitian in general: $(ST)^{*}=T^{*}S^{*}=(-T)(-S)=TS$, which equals $-ST$ only when $S$ and $T$ anticommute. The decomposition above is a decomposition of the real vector space and of the real Lie algebra, not of the associative algebra. The associative algebra $M_{3}(\mathbb{C})$ is the complexification of the real vector space $\mathfrak{u}(3)$, and its product is the complex bilinear extension of the product of matrices, not a product internal to $\mathfrak{u}(3)$.
 
 **Worked example.** For the matrix $A$ of §*Trace and Determinant*,
 
@@ -289,7 +289,7 @@ H=\tfrac12(A+A^{*})=\begin{pmatrix}1&3&5\\3&5&7\\5&7&10\end{pmatrix},
 S=\tfrac12(A-A^{*})=\begin{pmatrix}0&-1&-2\\1&0&-1\\2&1&0\end{pmatrix},
 $$
 
-and $A=H+S$. The matrix $H$ is Hermitian, the matrix $S$ is skew-Hermitian, $\operatorname{tr}H=16$ and $\operatorname{tr}S=0$. The real dimension of the space of such $H$ is $9$, and the real dimension of the space of such $S$ is $9$; the two subspaces meet only at $0$ and span the $18$-dimensional real space.
+and $A=H+S$. The matrix $H$ is Hermitian, the matrix $S$ is anti-Hermitian, $\operatorname{tr}H=16$ and $\operatorname{tr}S=0$. The real dimension of the space of such $H$ is $9$, and the real dimension of the space of such $S$ is $9$; the two subspaces meet only at $0$ and span the $18$-dimensional real space.
 
 ## Summary
 
@@ -312,7 +312,7 @@ Its centre is $\mathbb{C}I$, and it is simple and central simple. Its trace is t
 | Projective group | $PGL_{3}(\mathbb{C})$, $\dim_{\mathbb{C}}=8$ |
 | Real form | $\mathfrak{u}(3)\oplus i\mathfrak{u}(3)$, $\dim_{\mathbb{R}}\mathfrak{u}(3)=9$, $\dim_{\mathbb{R}}\mathfrak{su}(3)=8$ |
 
-The algebra is the complexification of the real vector space $\mathfrak{u}(3)$ of skew-Hermitian matrices, and the Hermitian and skew-Hermitian parts are the real and imaginary readings of one element. No quadratic form is used in the proofs of this article; the positive definite form is *The Involution and the Hermitian Structure of $M_3(\mathbb{C})$*, and the homotopy of the unit group is *The Topology of $M_{3}(\mathbb{C})$*.
+The algebra is the complexification of the real vector space $\mathfrak{u}(3)$ of anti-Hermitian matrices, and the Hermitian and anti-Hermitian parts are the real and imaginary readings of one element. No quadratic form is used in the proofs of this article; the positive definite form is *The Involution and the Hermitian Structure of $M_3(\mathbb{C})$*, and the homotopy of the unit group is *The Topology of $M_{3}(\mathbb{C})$*.
 
 ## Summary of Notation
 
@@ -327,7 +327,7 @@ The algebra is the complexification of the real vector space $\mathfrak{u}(3)$ o
 | $SL_{3}(\mathbb{C})$ | the matrices of determinant $1$ |
 | $PGL_{3}(\mathbb{C})$ | $GL_{3}/\mathbb{C}^{\times}I$ |
 | $A^{*}$ | the conjugate transpose |
-| $\mathfrak{u}(3)$, $\mathfrak{su}(3)$ | the skew-Hermitian matrices, and the traceless ones |
+| $\mathfrak{u}(3)$, $\mathfrak{su}(3)$ | the anti-Hermitian matrices, and the traceless ones |
 | $\mathfrak{gl}_{3}(\mathbb{C})$ | $M_{3}$ with the commutator bracket |
 
 ## Further Reading
