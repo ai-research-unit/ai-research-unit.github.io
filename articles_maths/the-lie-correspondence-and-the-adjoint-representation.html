@@ -71,8 +71,8 @@
         <h1 id="the-lie-correspondence-and-the-adjoint-representation"><strong>The Lie Correspondence and the Adjoint Representation</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The exponential map of the companion article <em>The Lie Algebra and the Exponential Map</em> shows that a Lie group is locally determined by its Lie algebra: exponential coordinates identify a neighbourhood of the identity with a neighbourhood of zero in the algebra, and the Campbell–Baker–Hausdorff product recovers the germ of the group law. This article makes the local statement global. The functor from Lie groups to Lie algebras is an equivalence when restricted to simply connected groups, so the finite-dimensional real Lie algebras are exactly the Lie algebras of Lie groups, and the connected Lie groups with a given algebra are the quotients of its simply connected group by discrete central subgroups. The tool that carries the algebra back to the group is the adjoint representation, which associates to each group element the automorphism of the algebra it induces by conjugation.</p>
-<p>The article states the Lie correspondence in the three forms it usually takes: the bijection between homomorphisms for a simply connected source, the classification of connected groups with a given algebra by discrete central subgroups, and the correspondence between subalgebras, ideals and the analytic subgroups of a given group. It then develops the adjoint representation $\operatorname{Ad}$ of the group and the adjoint representation $\operatorname{ad}$ of the algebra, their relation $d(\operatorname{Ad})_e = \operatorname{ad}$, the identification of the centre with the kernel of $\operatorname{Ad}$, and the description of the automorphism group of a semisimple algebra as an extension of the adjoint group by the diagram automorphisms.</p>
-<p>The manifold and exponential conventions are those of <em>Lie Groups</em> and <em>The Lie Algebra and the Exponential Map</em>: $G$ is a smooth Lie group with Lie algebra $\mathrm{G} = T_eG$, homomorphisms are smooth, and $d\varphi_e$ is the differential at the identity. Lie algebras are written in lowercase fraktur, so $\mathrm{G}, \mathrm{H}, \mathrm{I}, \mathrm{N}$ are Lie algebras, $\mathrm{Z}(\mathrm{G})$ is the centre, $\operatorname{Der}(\mathrm{G})$ and $\operatorname{Aut}(\mathrm{G})$ are the derivations and automorphisms, and $\operatorname{ad}_x(y) = [x, y]$. The base field is $\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$, and Lie's third theorem is stated over $\mathbb{R}$. No physics is invoked.</p>
+<p>The article states the Lie correspondence in the three forms it usually takes: the bijection between homomorphisms for a simply connected source, the classification of connected groups with a given algebra by discrete central subgroups, and the correspondence between subalgebras, ideals and the analytic subgroups of a given group. It then develops the adjoint representation $\operatorname{Ad}$ of the group and the adjoint representation $\operatorname{ad}$ of the algebra, their relation $d(\operatorname{Ad})_e = \operatorname{ad}$, the identification of the centre with the kernel of $\operatorname{Ad}$, and the description of the automorphism group of a semisimple algebra as an extension of the adjoint group by the diagram automorphisms. It closes with the table of the classical groups, one row per algebra and one column each for the cover, the centre, the quotients and the fundamental group, and with the list of what the algebra does not determine: the fundamental group, compactness, the real form and the unitary dual.</p>
+<p>The manifold and exponential conventions are those of <em>Lie Groups</em> and <em>The Lie Algebra and the Exponential Map</em>: $G$ is a smooth Lie group with Lie algebra $\mathrm{G} = T_eG$, homomorphisms are smooth, and $d\varphi_e$ is the differential at the identity. Lie algebras are written in upright capitals, so $\mathrm{G}, \mathrm{H}, \mathrm{I}, \mathrm{N}$ are Lie algebras, $\mathrm{Z}(\mathrm{G})$ is the centre, $\operatorname{Der}(\mathrm{G})$ and $\operatorname{Aut}(\mathrm{G})$ are the derivations and automorphisms, and $\operatorname{ad}_x(y) = [x, y]$. The base field is $\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$, and Lie's third theorem is stated over $\mathbb{R}$. No physics is invoked.</p>
 <h2 id="the-lie-functor">The Lie Functor</h2>
 <h3 id="the-category-of-lie-groups-and-lie-algebras">The Category of Lie Groups and Lie Algebras</h3>
 <p>The construction of <em>The Lie Algebra and the Exponential Map</em> associates to each Lie group $G$ over $\mathbb{K}$ its Lie algebra $\mathrm{G} = \operatorname{Lie}(G)$ and to each smooth homomorphism $\varphi : G \to H$ the linear map $d\varphi_e : \mathrm{G} \to \mathrm{H}$, which is a homomorphism of Lie algebras. This is a functor</p>
@@ -107,6 +107,7 @@ $$</p>
 <p><strong>(c)</strong> The connected Lie groups with Lie algebra $\mathrm{G}$ are exactly the quotients $G_{\mathrm{cov}}/D$ by discrete central subgroups $D \subseteq Z(G_{\mathrm{cov}})$, and two such quotients are isomorphic exactly when the corresponding subgroups are equal under an automorphism of $G_{\mathrm{cov}}$.</p>
 <p>Part (a) is <strong>Lie's third theorem</strong>, and part (b) is the statement that the universal cover of a connected Lie group exists and is a Lie group with the same Lie algebra.</p>
 <p><strong>Proof sketch.</strong> For (b), the universal cover of the manifold $G$ inherits a group structure from the group structure of $G$: the multiplication lifts uniquely because the covering is a local diffeomorphism and the relevant rectangle is simply connected. The kernel of the covering is the fundamental group of $G$, and it is central: the map $G_{\mathrm{cov}} \to G_{\mathrm{cov}}$, $g \mapsto gdg^{-1}$, has discrete image and connected domain, so it is constant, equal to $d$. For (a), one builds the group by exponentiating the Lie algebra, for instance as the set of formal products of one-parameter subgroups modulo the relations imposed by the Campbell–Baker–Hausdorff product; the result is a simply connected Lie group with the given algebra.</p>
+<p><strong>Warning (the bijection is with the simply connected groups).</strong> The bijection is between finite-dimensional Lie algebras and <strong>simply connected</strong> Lie groups, up to isomorphism, and it is not a bijection between Lie algebras and connected Lie groups. The algebra $\mathbb{R}$ is the algebra of $\mathbb{R}$ and of $U(1)$; only the first of the two is simply connected, so no bijection can hold both. The general connected group enters only after the extra datum of a discrete central subgroup is supplied, which is the subject of <em>Coverings and the Lattice of Connected Subgroups</em> below.</p>
 <p><strong>Corollary.</strong> For a connected Lie group $G$ the kernel $D$ of the universal cover is central, so $\pi_1(G)$ is abelian, and the connected Lie groups with a given algebra form a partially ordered set under the quotient relation, with the simply connected group at the top. The order is not a lattice: the intersection of two discrete central subgroups of the universal cover is again discrete and central, but the subgroup they generate need not be discrete, so the two subgroups need not have a join.</p>
 <h3 id="subalgebras-subgroups-and-ideals">Subalgebras, Subgroups and Ideals</h3>
 <p><strong>Theorem (analytic subgroup theorem).</strong> Let $G$ be a Lie group with Lie algebra $\mathrm{G}$ and let $\mathrm{H} \subseteq \mathrm{G}$ be a Lie subalgebra. Then there is a unique connected immersed Lie subgroup $H \subseteq G$ with Lie algebra $\mathrm{H}$, and its underlying set is generated by $\exp(\mathrm{H})$. The subgroup $H$ need not be closed as a subset of $G$.</p>
@@ -127,7 +128,7 @@ $$</p>
 <li>a connected Lie group has discrete centre if and only if $\operatorname{Ad}$ has discrete kernel, which holds for $\mathrm{G}$ semisimple.</li>
 </ul>
 <h2 id="the-adjoint-representation">The Adjoint Representation</h2>
-<h3 id="math142-and-math143">$\operatorname{Ad}$ and $\operatorname{ad}$</h3>
+<h3 id="math145-and-math146">$\operatorname{Ad}$ and $\operatorname{ad}$</h3>
 <p><strong>Definition.</strong> For $g \in G$ let $c_g : G \to G$, $c_g(h) = ghg^{-1}$. The <strong>adjoint representation of the group</strong> is</p>
 <p>$$
 \operatorname{Ad} : G \to GL(\mathrm{G}), \qquad \operatorname{Ad}(g) = d(c_g)_e,
@@ -173,7 +174,7 @@ $$</p>
 <p><strong>(c)</strong> the quotient $\operatorname{Out}(\mathrm{G}) = \operatorname{Aut}(\mathrm{G})/\operatorname{Ad}(G_{\mathrm{cov}})$ is finite, and it embeds into the group of automorphisms of the Dynkin diagram of $\mathrm{G}$; for $\mathrm{G}$ simple the embedding is an isomorphism, so $\operatorname{Out}(\mathrm{G})$ is the diagram automorphism group: trivial for $A_1$, $B_n$, $C_n$, $E_7$, $E_8$, $F_4$, $G_2$; of order $2$ for $A_n$ with $n \geq 2$, $D_n$ with $n \geq 5$, and $E_6$; and the symmetric group $S_3$ of order $6$ for $D_4$.</p>
 <p><strong>Proof sketch.</strong> Part (a) is the vanishing of the centre of a semisimple algebra, so $\operatorname{Ad}$ is injective on $G_{\mathrm{cov}}$, and a Lie group homomorphism with injective differential is a local diffeomorphism, giving discreteness of the kernel. For (b), the Lie algebra of $\operatorname{Aut}(\mathrm{G})$ is $\operatorname{Der}(\mathrm{G})$, which equals $\operatorname{ad}(\mathrm{G}) = \operatorname{Lie}(\operatorname{Ad}(G_{\mathrm{cov}}))$ because every derivation of a semisimple algebra is inner; two connected subgroups of a Lie group with equal Lie algebras coincide, so $\operatorname{Ad}(G_{\mathrm{cov}}) = \operatorname{Aut}(\mathrm{G})_0$. For (c), an automorphism of $\mathrm{G}$ permutes the simple roots and preserves the Cartan matrix, hence induces an automorphism of the Dynkin diagram; the kernel of the resulting map to the diagram automorphisms is the identity component, and the diagram automorphisms of the listed types are the classical outer automorphisms.</p>
 <h2 id="the-automorphism-group">The Automorphism Group</h2>
-<h3 id="math246-and-the-adjoint-group">$\operatorname{Aut}(\mathrm{G})$ and the Adjoint Group</h3>
+<h3 id="math249-and-the-adjoint-group">$\operatorname{Aut}(\mathrm{G})$ and the Adjoint Group</h3>
 <p><strong>Definition.</strong> The <strong>automorphism group</strong> $\operatorname{Aut}(\mathrm{G})$ is the group of Lie algebra automorphisms of $\mathrm{G}$; the <strong>adjoint group</strong> is $\operatorname{Ad}(G) = \operatorname{Int}(\mathrm{G})$, the image of a connected $G$ with Lie algebra $\mathrm{G}$.</p>
 <p><strong>Theorem.</strong> $\operatorname{Aut}(\mathrm{G})$ is a Lie group with Lie algebra $\operatorname{Der}(\mathrm{G})$, the derivations of $\mathrm{G}$ under the commutator. Its identity component is $\operatorname{Aut}(\mathrm{G})_0 = \operatorname{Ad}(G_{\mathrm{cov}})$, and</p>
 <p>$$
@@ -195,10 +196,130 @@ $$</p>
 <p><strong>(c)</strong> if $G$ is simply connected and $H$ is any Lie group with Lie algebra $\mathrm{H}$, then $\operatorname{Hom}(G, H)$ is in bijection with $\operatorname{Hom}(\mathrm{G}, \mathrm{H})$; in particular, when $\mathrm{H} = \mathrm{G}$, the isomorphisms $G \to H$ correspond to the automorphisms of $\mathrm{G}$, and the image of a homomorphism with invertible differential is a connected subgroup with the same algebra.</p>
 <p><strong>Proof.</strong> Parts (a) and (b) are the Lie correspondence above; (c) is the bijection on homomorphisms applied to $\operatorname{Hom}(\mathrm{G}, \mathrm{H})$ and the fact that a homomorphism of connected groups is determined by its differential.</p>
 <p><strong>Example.</strong> For $\mathrm{G} = \mathbb{R}$ the simply connected group is $\mathbb{R}$, and the discrete central subgroups are the lattices $\lambda\mathbb{Z}$; the quotients are $S^1$ for each $\lambda \neq 0$, all isomorphic, together with $\mathbb{R}$ itself. This is the simplest illustration of the partially ordered set of connected groups with a given algebra and of the failure of the Lie functor to be injective on objects: the classification requires the subgroup, not only the algebra.</p>
+<h2 id="the-classical-groups-with-a-given-algebra">The Classical Groups with a Given Algebra</h2>
+<p><strong>The recipe.</strong> Four steps produce every row of the table below. Write the algebra $\mathrm{G}$. Name its simply connected group $G_{\mathrm{cov}}$, which exists and is unique by the correspondence. Compute the centre $Z(G_{\mathrm{cov}})$, which for a connected matrix group is $\ker\operatorname{Ad}$ by <em>The Adjoint Representation</em> above. List the discrete central subgroups $\Gamma \subseteq Z(G_{\mathrm{cov}})$ and read the quotients $G_{\mathrm{cov}}/\Gamma$, whose fundamental group is $\Gamma$.</p>
+<p><strong>Theorem.</strong> For a compact semisimple algebra the fourth column is the complete list of connected groups with that algebra, and the fifth gives their fundamental groups. For $\mathbb{R}$ the list is complete as well, the quotients being $S^1$ for every non-zero lattice together with $\mathbb{R}$ itself. For $\mathrm{U}(n)$ the row records $U(n)$ and its central quotients; the full list is longer, because the centre has a vector factor and the quotients then form a continuous family as in the abelian case.</p>
+<p>The fundamental groups themselves are computed in <em>The Fundamental Group of a Lie Group</em>; the table records them only to show which group a given $\Gamma$ produces.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Lie algebra</th>
+<th>simply connected group</th>
+<th>centre of the cover</th>
+<th>connected groups</th>
+<th>fundamental groups</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{R}$</td>
+<td>$\mathbb{R}$</td>
+<td>$\mathbb{R}$</td>
+<td>$\mathbb{R}$; $\mathbb{R}/a\mathbb{Z} \cong S^1$, $a>0$</td>
+<td>$0$; $\mathbb{Z}$</td>
+</tr>
+<tr>
+<td>$\mathrm{SU}(2)$</td>
+<td>$SU(2)$</td>
+<td>$\mathbb{Z}/2$</td>
+<td>$SU(2)$; $SO(3)$</td>
+<td>$0$; $\mathbb{Z}/2$</td>
+</tr>
+<tr>
+<td>$\mathrm{SL}(2,\mathbb{R})$</td>
+<td>$\widetilde{SL_2(\mathbb{R})}$</td>
+<td>$\mathbb{Z}$</td>
+<td>$\widetilde{SL_2(\mathbb{R})}$; $SL_2(\mathbb{R})$; $PSL_2(\mathbb{R})$</td>
+<td>$0$; $\mathbb{Z}$; $\mathbb{Z}$</td>
+</tr>
+<tr>
+<td>$\mathrm{SO}(3,1)$</td>
+<td>$SL_2(\mathbb{C})$</td>
+<td>$\mathbb{Z}/2$</td>
+<td>$SL_2(\mathbb{C})$; $SO^+(3,1)$</td>
+<td>$0$; $\mathbb{Z}/2$</td>
+</tr>
+<tr>
+<td>$\mathrm{SO}(4)$</td>
+<td>$SU(2)\times SU(2)$</td>
+<td>$\mathbb{Z}/2\times\mathbb{Z}/2$</td>
+<td>$S^3\times S^3$; $SO(4)$; $SO(3)\times SU(2)$; $SU(2)\times SO(3)$; $SO(3)\times SO(3)$</td>
+<td>$0$; $\mathbb{Z}/2$</td>
+</tr>
+<tr>
+<td>$\mathrm{SO}(n)$, $n\geq3$</td>
+<td>$Spin(n)$</td>
+<td>the second table</td>
+<td>$Spin(n)$ and its quotients</td>
+<td>$0$; $\mathbb{Z}/2$; further entries</td>
+</tr>
+<tr>
+<td>$\mathrm{U}(n)$, $n\geq1$</td>
+<td>$SU(n)\times\mathbb{R}$</td>
+<td>$\mathbb{Z}/n\times\mathbb{R}$</td>
+<td>$U(n)$; its central quotients $U(n)/\mu_d$</td>
+<td>$\mathbb{Z}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The centre of the spin group depends on the residue of $n$ modulo four.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$n$</th>
+<th>$Z(Spin(n))$</th>
+<th>number of connected groups with algebra $\mathrm{SO}(n)$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>odd, $n\geq3$</td>
+<td>$\mathbb{Z}/2$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$n\equiv2\pmod4$</td>
+<td>$\mathbb{Z}/4$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>$n\equiv0\pmod4$</td>
+<td>$\mathbb{Z}/2\times\mathbb{Z}/2$</td>
+<td>$5$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Remark (the count is the number of subgroups).</strong> A quotient of the cover is determined by the subgroup, and only the subgroups of the centre give quotients of the same dimension. The group $\mathbb{Z}/2$ has two subgroups, $\mathbb{Z}/4$ has three, and $\mathbb{Z}/2\times\mathbb{Z}/2$ has five. For odd $n$ the two groups are $Spin(n)$ and $SO(n)$; for $n\equiv2\pmod4$ the third is $Spin(n)$ modulo its whole centre, with $\pi_1 = \mathbb{Z}/4$; for $n\equiv0\pmod4$ the three beyond $SO(n)$ are the two semi-spin quotients and the quotient by the whole centre. For $n=2$ the pattern fails at the notation: $SO(2) = S^1$ has algebra $\mathbb{R}$ and cover $\mathbb{R}$, and $Spin(2) = S^1$ is not simply connected.</p>
+<p><strong>Remark ($Spin(4)$ and the quaternions).</strong> $Spin(4) = SU(2)\times SU(2) = S^3\times S^3$ acts on $\mathbb{H}\cong\mathbb{R}^4$ by $(u_1,u_2)(x) = u_1xu_2^{-1}$. The kernel is $\{(\pm1,\pm1)\}$ with the same sign, the map is two-to-one, and its image is $SO(4)$. Quotienting by the three subgroups of order two gives $SO(4)$, $SO(3)\times SU(2)$ and $SU(2)\times SO(3)$, and quotienting by the whole centre gives $SO(3)\times SO(3)$. Five groups, one algebra, all realised on the quaternions.</p>
+<p><strong>Remark (which subgroup gives which quotient).</strong> The order is reversed: a larger $\Gamma$ gives a smaller group. For $\mathrm{SL}(2,\mathbb{R})$ the centre of the cover is infinite cyclic, generated by an element $z$ whose image is $-I$. The subgroup $2\mathbb{Z}$ gives $SL_2(\mathbb{R}) = \widetilde{SL_2(\mathbb{R})}/2\mathbb{Z}$ and the whole $\mathbb{Z}$ gives $PSL_2(\mathbb{R}) = SL_2(\mathbb{R})/\{\pm I\}$; both have fundamental group $\mathbb{Z}$, and the cover has none.</p>
+<p><strong>Remark (the cover need not be a matrix group).</strong> $SL_2(\mathbb{R})$ is a group of matrices and $\widetilde{SL_2(\mathbb{R})}$ is not. Every finite-dimensional representation of the algebra $\mathrm{SL}(2,\mathbb{R})$ exponentiates to the group $SL_2(\mathbb{R})$, since the irreducible ones are the symmetric powers of the defining representation, so every finite-dimensional representation of the cover is trivial on the kernel $\mathbb{Z}$ and none is faithful. The correspondence is therefore not a statement about matrix groups: the cover exists as a Lie group whether or not it can be written with matrices.</p>
+<p><strong>Remark ($\mathrm{U}(n)$).</strong> The centre of $SU(n)$ is $\mu_n = \{\zeta I : \zeta^n = 1\}$, and the cover is $SU(n)\times\mathbb{R}$ with the map $(A,t)\mapsto e^{it}A$. The kernel is generated by $(\zeta^{-1}I,\,2\pi/n)$, cyclic of infinite order, so $U(n) = (SU(n)\times\mathbb{R})/\mathbb{Z}$ and $\pi_1(U(n)) = \mathbb{Z}$, a generator being the loop $t\mapsto\operatorname{diag}(e^{it},1,\dots,1)$.</p>
+<p><strong>Remark (a continuous family).</strong> For $\mathrm{G} = \mathbb{R}^k$ the discrete central subgroups are the lattices, and two lattices give isomorphic tori exactly when one is the image of the other under an automorphism of $\mathbb{R}^k$. The connected groups with an abelian algebra therefore form a continuous family and not a finite list. For a semisimple algebra the list is finite, because the centre of the cover is then finite and has finitely many subgroups.</p>
+<p><strong>Warning (the subgroup is not a function of the algebra).</strong> The algebra fixes the first, second and third columns of the table and stops there. The fourth column is the list of possibilities, and nothing in the bracket selects one of them. Different choices of $\Gamma$ give different groups with the same algebra, and the difference is invisible to every construction made from the bracket. The fundamental group, which is $\Gamma$, is extra data.</p>
+<h2 id="what-the-lie-algebra-does-not-determine">What the Lie Algebra Does Not Determine</h2>
+<p>The correspondence is exact, and it is exact about one thing: the algebra fixes the simply connected group. For any other connected group with that algebra the pair $(\mathrm{G},\Gamma)$ fixes the group, and the second entry leaves no trace in the first. The items below are the ones a reader is most likely to attribute to the algebra and should not.</p>
+<h3 id="the-fundamental-group">The Fundamental Group</h3>
+<p>$SU(2)$ and $SO(3)$ have the same Lie algebra $\mathrm{SU}(2)$ and fundamental groups $0$ and $\mathbb{Z}/2$. $\mathbb{R}$ and $S^1$ have the same Lie algebra $\mathbb{R}$ and fundamental groups $0$ and $\mathbb{Z}$. In both pairs the groups are connected, the bracket is the same, and only the exponential map tells them apart, being injective on $\mathbb{R}$ and $2\pi$-periodic on $S^1$. No computation inside the bracket can separate them, because the bracket is the derivative of the group law at a single point.</p>
+<h3 id="compactness">Compactness</h3>
+<p>The algebra does not fix compactness, but it fixes it modulo the centre, and that is the precise statement.</p>
+<p><strong>Theorem.</strong> Let $\mathrm{G}$ be a compact Lie algebra, that is, a Lie algebra with negative semidefinite Killing form, and let $G$ be a connected group with Lie algebra $\mathrm{G}$. Then $\operatorname{Ad}(G)$ is compact, equivalently $G/Z(G)$ is compact. If $\mathrm{G}$ is semisimple as well, then $G$ is compact.</p>
+<p><strong>Proof.</strong> A compact algebra decomposes as $\mathrm{G} = \mathrm{Z}(\mathrm{G})\oplus[\mathrm{G},\mathrm{G}]$, with $[\mathrm{G},\mathrm{G}]$ compact semisimple, by <em>Structure of Lie Algebras</em>. The adjoint representation kills $\mathrm{Z}(\mathrm{G})$, so $\operatorname{Ad}(G)$ is the adjoint image of the simply connected group $\widetilde S$ of $[\mathrm{G},\mathrm{G}]$, which is compact because its Killing form is negative definite. Hence $\operatorname{Ad}(G) = \widetilde S/Z(\widetilde S)$ is compact. When $\mathrm{G}$ is semisimple the centre of the cover is finite, so $G$ is a finite quotient of a compact group.</p>
+<p><strong>Example.</strong> The algebra $\mathbb{R}$ is compact, its Killing form being zero, and it carries the non-compact $\mathbb{R}$ and the compact $S^1$. The theorem is not contradicted: $Z(\mathbb{R}) = \mathbb{R}$ and $Z(S^1) = S^1$, and in both groups the quotient by the centre is a point. The ambiguity therefore lives in the centre, and it disappears for a semisimple algebra, where the centre of the cover is finite: every connected group with a compact semisimple algebra is compact, and none with a non-compact semisimple algebra is.</p>
+<h3 id="the-real-form">The Real Form</h3>
+<p>A complex algebra has several real forms and the correspondence is run after one of them is chosen. The complex algebra $\mathrm{SL}(2,\mathbb{C})$ has exactly two, $\mathrm{SU}(2)$ and $\mathrm{SL}(2,\mathbb{R})$, as <em>Real Forms of a Complex Lie Algebra</em> states; their simply connected groups are $SU(2)$ and $\widetilde{SL_2(\mathbb{R})}$, and nothing global is shared. The first is compact and simply connected; the second is neither. Reading a complex group as a real one doubles the dimension and gives the realification: $\mathrm{SL}(2,\mathbb{C})$ read over $\mathbb{R}$ is $\mathrm{SO}(3,1)$, the algebra of the Lorentz group. The real form is therefore a choice that precedes the choice of $\Gamma$, and no statement about it follows from the complex algebra alone.</p>
+<h3 id="the-unitary-representations">The Unitary Representations</h3>
+<p>Two different failures are collected here, and they belong to different entries of the pair.</p>
+<p>The first is the choice of $\Gamma$. The spin-$\tfrac12$ representation of $\mathrm{SU}(2)$ has dimension two, and $-I$ acts on it as $-1$; it is a representation of $SU(2)$ and not of $SO(3)$, although the two groups have the same algebra. The algebra fixes the representations of the cover, and $\Gamma$ fixes which of them descend to the group.</p>
+<p>The second is the choice of real form. $SU(2)$ has only finite-dimensional unitary irreducible representations, the spins $j\in\tfrac12\mathbb{Z}_{\geq0}$. The group $\widetilde{SL_2(\mathbb{R})}$ has no nontrivial finite-dimensional unitary representation at all, because the image of such a representation would be a compact subgroup of a unitary group while $\mathrm{SL}(2,\mathbb{R})$ is simple and non-compact, and it has infinite-dimensional unitary irreducible representations instead. The two groups have different real algebras, so this is a case of the previous subsection; the unitary dual is a function of the real algebra and not of its complexification.</p>
+<h3 id="the-exponential-map">The Exponential Map</h3>
+<p>The exponential map is a local diffeomorphism and nothing more, and it cannot be used to pass from the algebra to the group. It is surjective for a compact connected group, and for a simply connected nilpotent group, and it fails for $SL_2(\mathbb{R})$. For $X$ of trace zero the eigenvalues of $\exp X$ are $e^{\lambda}$ and $e^{-\lambda}$ for one complex number $\lambda$, so they are both positive when $\lambda$ is real and a complex conjugate pair when $\lambda$ is imaginary. Two distinct negative real eigenvalues do not occur. The matrix $\operatorname{diag}(-2,-\tfrac12)$ lies in $SL_2(\mathbb{R})$ and has exactly those eigenvalues, so it is not an exponential, and the missed set is precisely the elements conjugate to $\operatorname{diag}(-a,-1/a)$ with $a>0$ and $a\neq1$. A scan of $100$ random traceless matrices produces no exponential with two distinct negative real eigenvalues.</p>
+<p>The failure is not repaired by passing to the cover. If $g\in G_{\mathrm{cov}}$ satisfied $g = \exp(X)$ then its image would satisfy $\pi(g) = \exp(d\pi X)$, so an element of $G$ that is missed by the exponential of $G$ has all its lifts missed by the exponential of $G_{\mathrm{cov}}$. The exponential of $\widetilde{SL_2(\mathbb{R})}$ is therefore not surjective either, and the same argument applies to every group in the same row.</p>
+<p><strong>Warning (what the algebra leaves to $\Gamma$).</strong> The algebra fixes $G_{\mathrm{cov}}$ and the local structure. It fixes nothing else about $G$: the fundamental group, the compactness and the unitary dual are functions of $\Gamma$ once $\mathrm{G}$ is fixed, and none of them is a function of $\mathrm{G}$. When the algebra is complex, the real form is a further choice that precedes $\Gamma$. A statement derived from the Lie algebra alone is therefore a statement about the cover, and it must be checked against $\Gamma$ before it is asserted of the group.</p>
 <h2 id="summary">Summary</h2>
 <p>The functor $\operatorname{Lie}$ from Lie groups to Lie algebras is neither full nor faithful; it preserves exactly the local structure, and a homomorphism is a local isomorphism precisely when it induces an isomorphism of Lie algebras. For a simply connected source $G$ the map $\varphi \mapsto d\varphi_e$ is a bijection from $\operatorname{Hom}(G,H)$ to $\operatorname{Hom}(\mathrm{G},\mathrm{H})$, so the simply connected Lie groups and the finite-dimensional Lie algebras form equivalent categories, and Lie's third theorem says that every finite-dimensional real Lie algebra occurs.</p>
 <p>Every connected Lie group $G$ with algebra $\mathrm{G}$ is a quotient $G_{\mathrm{cov}}/D$ of its simply connected cover by a discrete central subgroup $D \cong \pi_1(G)$, so the connected groups with a given algebra are classified by those subgroups, and the fundamental group of $G$ is abelian. Lie subalgebras correspond to connected immersed subgroups, ideals to normal connected subgroups, and quotients of algebras to quotients of groups; closed subgroups of a Lie group are embedded Lie subgroups by the closed subgroup theorem.</p>
 <p>The adjoint representation $\operatorname{Ad} : G \to GL(\mathrm{G})$ is a group homomorphism with $d(\operatorname{Ad})_e = \operatorname{ad}$ and $\operatorname{Ad}(\exp X) = \exp(\operatorname{ad}_X) = \sum_k (\operatorname{ad}_X)^k/k!$; it preserves the Killing form, its kernel is the centre $Z(G)$ for connected $G$, and its image is the adjoint group. For a semisimple algebra the kernel is discrete, the identity component of the automorphism group is the adjoint group because every derivation is inner, and the outer automorphism group is finite, acting through the automorphisms of the Dynkin diagram.</p>
+<p>The classical groups show what the choice of $\Gamma$ carries. The algebra $\mathrm{SU}(2)$ gives $SU(2)$ and $SO(3)$; $\mathrm{SL}(2,\mathbb{R})$ gives $\widetilde{SL_2(\mathbb{R})}$, $SL_2(\mathbb{R})$ and $PSL_2(\mathbb{R})$; $\mathrm{SO}(4)$ gives five groups, all realised on the quaternions; $\mathrm{U}(n)$ comes from the cover $SU(n)\times\mathbb{R}$. Along each row the fundamental group, the compactness and the unitary dual vary, and none of them is a function of the algebra: the algebra fixes the cover, and $\Gamma$ fixes the rest. The compactness is fixed only modulo the centre, and it is fixed outright for a semisimple algebra, where the centre of the cover is finite. The real form, when the algebra is complex, is a choice that precedes $\Gamma$. The exponential map is a local object, surjective for a compact connected group and not for $SL_2(\mathbb{R})$ or its cover.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -243,6 +364,26 @@ $$</p>
 <tr>
 <td>$G \cong G_{\mathrm{cov}}/D$</td>
 <td>Classification of connected groups with a given algebra by discrete central $D$</td>
+</tr>
+<tr>
+<td>$\Gamma \subseteq Z(G_{\mathrm{cov}})$</td>
+<td>Discrete central subgroup; $G = G_{\mathrm{cov}}/\Gamma$ and $\Gamma \cong \pi_1(G)$</td>
+</tr>
+<tr>
+<td>$Z(G_{\mathrm{cov}})$</td>
+<td>Centre of the cover: finite, a torus, a vector space, or a product</td>
+</tr>
+<tr>
+<td>compact Lie algebra</td>
+<td>Negative semidefinite Killing form; then $\operatorname{Ad}(G)$ is compact for every connected $G$</td>
+</tr>
+<tr>
+<td>$\mu_n$</td>
+<td>The centre $\{\zeta I : \zeta^n = 1\}$ of $SU(n)$</td>
+</tr>
+<tr>
+<td>$Spin(n)$</td>
+<td>The simply connected cover of $SO(n)$ for $n \geq 3$; $Spin(2) = S^1$ is not simply connected</td>
 </tr>
 <tr>
 <td>$\mathrm{H} \subseteq \mathrm{G} \longleftrightarrow H \subseteq G$</td>
@@ -303,6 +444,8 @@ $$</p>
 <li>Brian C. Hall, <em>Lie Groups, Lie Algebras, and Representations</em> (Springer, 2nd ed. 2015), for the Lie correspondence with matrix groups and the adjoint representation.</li>
 <li>Jean-Pierre Serre, <em>Lie Algebras and Lie Groups</em> (Springer, 1992), for Lie's third theorem and the equivalence of categories.</li>
 <li>Nathan Jacobson, <em>Lie Algebras</em> (Dover, 1979), for the automorphism group, inner derivations, and the outer automorphism group.</li>
+<li>A. L. Onishchik and E. B. Vinberg, <em>Lie Groups and Lie Algebras I: Foundations of Lie Theory</em> (Springer, 1994), for the classification of the connected groups with a given Lie algebra and the centres of the classical covers.</li>
+<li>J. J. Duistermaat and J. A. C. Kolk, <em>Lie Groups</em> (Springer, 2000), for the exponential map, its surjectivity on compact groups, and the counterexamples.</li>
 </ul>
       </div>
     </main>

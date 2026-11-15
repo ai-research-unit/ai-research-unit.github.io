@@ -71,8 +71,8 @@
         <h1 id="the-symmetric-and-antisymmetric-parts-of-the-operator-space-at-math0"><strong>The Symmetric and Antisymmetric Parts of the Operator Space at $n=4$</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p><strong>The operator space $\operatorname{End}(M_4(\mathbb{C}))$ has complex dimension $256$ and carries two commuting involutions, the plain transpose and the Hilbert–Schmidt adjoint; the four simultaneous eigenspaces have real dimensions $136$, $136$, $120$ and $120$, the model operator $X\mapsto AXB$ has adjoint $Y\mapsto A^{\ast}YB^{\ast}$, and the commutator $T\mapsto[A,T]$ is always anti-self-adjoint for the trace pairing.</strong></p>
-<p>The article sets up the two involutions, proves that they commute, computes the four eigenspaces and their real dimensions, treats the model operator and its adjoint as an example that mixes the two structures, proves the skewness of the commutator, and separates the two scales: the symmetric and antisymmetric parts of the operator space are about operators of dimension $256$, while the two halves of the algebra are about elements of dimension $16$.</p>
-<p>It assumes <em>The Adjoints and the Polar Decomposition of an Operator at $n=4$</em>, <em>$\operatorname{End}(M_4(\mathbb{C}))$ as an Algebra: the Regular Representation</em> and <em>The Derivation $X\mapsto[A,X]$ and Its Skewness for the Trace Form at $n=4$</em>. The model at order two is <em>The Symmetric and Antisymmetric Parts of the Operator Space at $n=2$</em>.</p>
+<p>The article sets up the two involutions, proves that they commute, computes the four eigenspaces and their real dimensions, treats the model operator and its adjoint as an example that mixes the two structures, proves the anti-self-adjointness of the commutator, and separates the two scales: the symmetric and antisymmetric parts of the operator space are about operators of dimension $256$, while the two halves of the algebra are about elements of dimension $16$.</p>
+<p>It assumes <em>The Adjoints and the Polar Decomposition of an Operator at $n=4$</em>, <em>$\operatorname{End}(M_4(\mathbb{C}))$ as an Algebra: the Regular Representation</em> and <em>The Derivation $X\mapsto[A,X]$ and Its Anti-Self-Adjointness for the Trace Form at $n=4$</em>. The model at order two is <em>The Symmetric and Antisymmetric Parts of the Operator Space at $n=2$</em>.</p>
 <h2 id="the-operator-space-and-the-two-involutions">The Operator Space and the Two Involutions</h2>
 <p><strong>Proposition.</strong> $\operatorname{End}(M_4(\mathbb{C}))$ has complex dimension $256$ and real dimension $512$, and every operator has a representing $16\times16$ matrix in a chosen basis of the matrix space.</p>
 <p><strong>Proof.</strong> A linear map of a complex space of dimension sixteen is a $16\times16$ complex matrix.</p>
@@ -115,10 +115,10 @@ and they sum to $512$.</p>
 $$
 \beta(\operatorname{ad}_A T,U)+\beta(T,\operatorname{ad}_A U)=0 .
 $$</p>
-<p><strong>Proof.</strong> The derivation property is the Jacobi identity for the associator; for the skewness, $\operatorname{tr}([A,T]U)+\operatorname{tr}(T[A,U])=\operatorname{tr}(ATU-TAU+TAU-TUA)=\operatorname{tr}(ATU)-\operatorname{tr}(TUA)=0$ by cyclicity.</p>
+<p><strong>Proof.</strong> The derivation property is the Jacobi identity for the associator; for the anti-self-adjointness, $\operatorname{tr}([A,T]U)+\operatorname{tr}(T[A,U])=\operatorname{tr}(ATU-TAU+TAU-TUA)=\operatorname{tr}(ATU)-\operatorname{tr}(TUA)=0$ by cyclicity.</p>
 <p><strong>Corollary.</strong> The derivation is anti-self-adjoint for the Hilbert–Schmidt pairing exactly when $A$ is anti-Hermitian, since $\langle[A,T],U\rangle+\langle T,[A,U]\rangle=\operatorname{tr}(T^{\ast}[A^{\ast},U])$ up to a commutator.</p>
 <p><strong>Proof.</strong> The second computation with $A^{\ast}$ in place of $A$, and the vanishing of the mixed term exactly when $A^{\ast}=-A$.</p>
-<p><strong>Corollary.</strong> The two skewness statements differ by the involution, not by the derivation, so the same operator is anti-self-adjoint for one pairing and not for the other.</p>
+<p><strong>Corollary.</strong> The two anti-self-adjointness statements differ by the involution, not by the derivation, so the same operator is anti-self-adjoint for one pairing and not for the other.</p>
 <p><strong>Proof.</strong> The two computations.</p>
 <p><strong>The image of the commutator.</strong> The inner derivations are $\operatorname{ad}_{\mathfrak{sl}_4}$ and every derivation of $M_4$ is inner, so the commutator map is onto the derivations of the algebra.</p>
 <p><strong>Proof.</strong> Central simplicity and the derivation theorem.</p>
@@ -178,7 +178,7 @@ $$</p>
 <ul>
 <li><a href="the-adjoints-and-the-polar-decomposition-of-an-operator-at-n-4.html">The Adjoints and the Polar Decomposition of an Operator at $n=4$</a>, for the two adjoints of a single operator.</li>
 <li><a href="end-m4c-as-an-algebra-the-regular-representation.html">$\operatorname{End}(M_4(\mathbb{C}))$ as an Algebra: the Regular Representation</a>, for the operator algebra and the two images.</li>
-<li><a href="the-derivation-commutator-and-its-skewness-for-the-trace-form-at-n-4.html">The Derivation $X\mapsto[A,X]$ and Its Skewness for the Trace Form at $n=4$</a>, for the derivation and the two skewness statements.</li>
+<li><a href="the-derivation-commutator-and-its-anti-self-adjointness-for-the-trace-form-at-n-4.html">The Derivation $X\mapsto[A,X]$ and Its Anti-Self-Adjointness for the Trace Form at $n=4$</a>, for the derivation and the two anti-self-adjointness statements.</li>
 <li><a href="the-two-halves-over-r-symmetric-and-antisymmetric-at-n-4.html">The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric</a>, for the halves of the element space.</li>
 <li><a href="the-symmetric-and-antisymmetric-parts-of-the-operator-space-at-n-2.html">The Symmetric and Antisymmetric Parts of the Operator Space at $n=2$</a>, for the case at order two.</li>
 </ul>

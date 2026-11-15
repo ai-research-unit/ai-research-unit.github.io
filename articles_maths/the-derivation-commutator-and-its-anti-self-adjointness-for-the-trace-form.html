@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Derivation $X\mapsto[A,X]$ and Its Skewness for the Trace Form — Biquaternion Universe</title>
+  <title>The Derivation $X\mapsto[A,X]$ and Its Anti-Self-Adjointness for the Trace Form — Biquaternion Universe</title>
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -68,10 +68,10 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="the-derivation-math0-and-its-skewness-for-the-trace-form"><strong>The Derivation $X\mapsto[A,X]$ and Its Skewness for the Trace Form</strong></h1>
+        <h1 id="the-derivation-math0-and-its-anti-self-adjointness-for-the-trace-form"><strong>The Derivation $X\mapsto[A,X]$ and Its Anti-Self-Adjointness for the Trace Form</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p><strong>The map $\operatorname{ad}_A(X)=[A,X]$ is a derivation of $M_2(\mathbb{C})$ for every $A$, it is anti-self-adjoint for the trace form for every $A$, and it is anti-self-adjoint for the Hilbert–Schmidt form exactly when $A$ is antisymmetric.</strong></p>
-<p>The article proves the Leibniz rule, the representation property $\operatorname{ad}_{[A,B]}=[\operatorname{ad}_A,\operatorname{ad}_B]$, the skewness of $\operatorname{ad}_A$ for the trace form, the formula $\operatorname{ad}_A^{\mathrm{HS}*}=\operatorname{ad}_{A^{\mathsf T}}$, the spectrum of $\operatorname{ad}_A$ as the two differences of the eigenvalues, the identification of the kernel with the centre and the dimension of the space of inner derivations, and the nilpotency of $\operatorname{ad}_A$ for a nilpotent $A$. It assumes <em>The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$</em> and <em>The Lie Algebra $\operatorname{Skew}_2$: One Dimension, Hence Abelian</em>.</p>
+<p>The article proves the Leibniz rule, the representation property $\operatorname{ad}_{[A,B]}=[\operatorname{ad}_A,\operatorname{ad}_B]$, the anti-self-adjointness of $\operatorname{ad}_A$ for the trace form, the formula $\operatorname{ad}_A^{\mathrm{HS}*}=\operatorname{ad}_{A^{\mathsf T}}$, the spectrum of $\operatorname{ad}_A$ as the two differences of the eigenvalues, the identification of the kernel with the centre and the dimension of the space of inner derivations, and the nilpotency of $\operatorname{ad}_A$ for a nilpotent $A$. It assumes <em>The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$</em> and <em>The Lie Algebra $\operatorname{Skew}_2$: One Dimension, Hence Abelian</em>.</p>
 <p>It defers the Killing form to <em>The Killing Form of $\mathfrak{sl}_2$ and Its Three Signatures</em>, the Hilbert–Schmidt form to <em>The Hilbert–Schmidt Form at $n=2$</em>, and the operator viewpoint to <em>The One-Sided Operators at $n=2$</em>.</p>
 <h2 id="the-commutator-is-a-derivation">The Commutator Is a Derivation</h2>
 <p><strong>Theorem.</strong> For every $A$ the map $\operatorname{ad}_A(X)=[A,X]$ satisfies the Leibniz rule</p>
@@ -93,17 +93,17 @@ $$</p>
 <p><strong>Proof.</strong> $\operatorname{ad}_A=0$ iff $A$ commutes with the whole algebra iff $A$ is scalar; the domain has dimension $4$ and the kernel has dimension $1$.</p>
 <p><strong>The kernel is the centre and nothing else.</strong> At order two the central simple algebra has a one-dimensional centre, so the adjoint representation is faithful exactly on the traceless part.</p>
 <p><strong>Proof.</strong> The scalar matrices commute with everything and no other matrix does, since the algebra is simple.</p>
-<h2 id="skewness-for-the-trace-form">Skewness for the Trace Form</h2>
+<h2 id="anti-self-adjointness-for-the-trace-form">Anti-Self-Adjointness for the Trace Form</h2>
 <p><strong>Theorem.</strong> For every $A$ and all $X,Y$,</p>
 <p>$$
 \operatorname{tr}\bigl([A,X]\,Y\bigr)+\operatorname{tr}\bigl(X\,[A,Y]\bigr)=0 .
 $$</p>
 <p><strong>Proof.</strong> $\operatorname{tr}([A,X]Y)=\operatorname{tr}(AXY)-\operatorname{tr}(XAY)=\operatorname{tr}(A[XY])$ using cyclicity, and $\operatorname{tr}(X[A,Y])=\operatorname{tr}(XAY)-\operatorname{tr}(XYA)=-\operatorname{tr}(A[XY])$ by the same cyclicity; the sum vanishes.</p>
 <p><strong>Corollary.</strong> Every $\operatorname{ad}_A$ is anti-self-adjoint for the trace form, so the image of $\operatorname{ad}$ lies in the Lie algebra of the orthogonal group of the trace form, which is $\mathfrak{so}(3,1)$.</p>
-<p><strong>Proof.</strong> The skewness is the theorem, and the Lie algebra of the orthogonal group of a form of signature $(3,1)$ is the set of anti-self-adjoint endomorphisms.</p>
-<p><strong>The trace form cannot detect the skewness condition.</strong> Here the freedom is total: no hypothesis on $A$ is needed, because the trace is invariant under the cyclic permutation of three factors, and the invariance is what produces the skewness.</p>
+<p><strong>Proof.</strong> The anti-self-adjointness is the theorem, and the Lie algebra of the orthogonal group of a form of signature $(3,1)$ is the set of anti-self-adjoint endomorphisms.</p>
+<p><strong>The trace form cannot detect the anti-self-adjointness condition.</strong> Here the freedom is total: no hypothesis on $A$ is needed, because the trace is invariant under the cyclic permutation of three factors, and the invariance is what produces the anti-self-adjointness.</p>
 <p><strong>Proof.</strong> The proof above uses only cyclicity, with no symmetry of $A$.</p>
-<h2 id="skewness-for-the-hilbertschmidt-form">Skewness for the Hilbert–Schmidt Form</h2>
+<h2 id="anti-self-adjointness-for-the-hilbertschmidt-form">Anti-Self-Adjointness for the Hilbert–Schmidt Form</h2>
 <p><strong>Theorem.</strong> For the Hilbert–Schmidt form $\langle X,Y\rangle=\operatorname{tr}(X^{*}Y)$ the adjoint of $\operatorname{ad}_A$ is $\operatorname{ad}_{A^{\mathsf T}}$.</p>
 <p><strong>Proof.</strong> $\langle[A,X],Y\rangle=\operatorname{tr}((AX-XA)^{*}Y)=\operatorname{tr}(X^{*}A^{*}Y)-\operatorname{tr}(A^{*}X^{*}Y)$ and $\langle X,[A^{\mathsf T},Y]\rangle=\operatorname{tr}(X^{*}A^{\mathsf T}Y)-\operatorname{tr}(X^{*}YA^{\mathsf T})$; the two agree after cyclicity.</p>
 <p><strong>Corollary.</strong> $\operatorname{ad}_A$ is anti-self-adjoint for the Hilbert–Schmidt form exactly when $A$ is antisymmetric, and it is self-adjoint exactly when $A$ is symmetric.</p>

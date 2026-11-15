@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Cayley–Dickson Construction of the Biquaternion Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-cayleydickson-construction-of-the-biquaternion-algebra"><strong>The Cayley–Dickson Construction of the Biquaternion Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The biquaternion algebra is the complexification of the quaternion algebra, and this article builds it as a stack of three layers. The first two are the rungs of the Cayley–Dickson doubling that carry the real numbers to the quaternions: the unit $\vec e_z$ adjoined to $\mathbb{R}$ gives $\mathbb{C}$, and the unit $\vec e_x$ adjoined to $\mathbb{C}$ under the twisting rule gives $\mathbb{H}$. The third layer is the scalar imaginary $i$, adjoined to $\mathbb{H}$ as a central element.</p>
+<p>The article asks one question about the third layer and answers it: whether it is a fourth rung of the same ladder. It is not. The Cayley–Dickson double of an associative algebra is associative exactly when that algebra is commutative, so no double of $\mathbb{H}$ is associative, while $\mathbb{B}$ is associative. The move that produces $\mathbb{B}$ is the <strong>scalar extension</strong>: it adjoins a central element, which <em>The Biquaternion Algebra</em> calls the gate, and it leaves the four units of $\mathbb{H}$, their squares and their products untouched.</p>
+<p>The rest follows from reading the third layer against the first two. It keeps the multiplication table, the associativity and the non-commutativity of the quaternion layer, it changes the centre from the real line to the complex line, and it destroys the division property. The mechanism of the last is short: every unit direction of the quaternion layer, multiplied by $i$, has square $+e_t$, so the layer carries the idempotents $\tfrac12(e_t\pm i\vec u)$ and the zero divisors $(e_t+i\vec e_x)(e_t-i\vec e_x)$.</p>
+<p><strong>The boundaries.</strong> The full Cayley–Dickson construction of $\mathbb{H}$, with the nine derivations of Hamilton's rules and the argument that fixes the twist, is <em>The Cayley–Dickson Construction of the Quaternion Algebra</em>, in the Quaternion Algebra category. The algebra $\mathbb{B}$, its table, its axioms and the proof that it is not a division algebra are <em>The Biquaternion Algebra</em>, above this article in this category. The element, its three coordinate systems and the four conjugations are <em>The Element, the Coordinates and the Conjugations</em>; the algebraic norms are <em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em>; the zero divisors and the unit criterion are <em>Zero Divisors and Units</em>; the general doubling and its associativity criterion are <em>Quadratic Forms over Algebras and Norms</em>; the tensor product is <em>Tensor Products of Algebras</em>.</p>
+<p><strong>What the construction uses.</strong> One unit for the first rung, $\vec e_z$; one unit for the second, $\vec e_x$; one scalar for the third, $i$. The third direction of the vector subspace, $\vec e_y$, is computed and not adjoined, $\vec e_y=\vec e_z\vec e_x$. The letters j and k are not used at any layer: the three directions keep the letters $x$, $y$ and $z$, and the remaining letter is the scalar $i$.</p>
+<h2 id="the-units-of-the-three-layers">The Units of the Three Layers</h2>
+<p>Each layer is a real algebra, and the table records what was adjoined to obtain it.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Algebra</th>
+<th>Adjoined</th>
+<th>Real dimension</th>
+<th>Centre</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>$\mathbb{R}$</td>
+<td>—</td>
+<td>1</td>
+<td>$\mathbb{R}$</td>
+</tr>
+<tr>
+<td>1</td>
+<td>$\mathbb{C}=\mathbb{R}[\vec e_z]$</td>
+<td>$\vec e_z$</td>
+<td>2</td>
+<td>$\mathbb{C}$</td>
+</tr>
+<tr>
+<td>2</td>
+<td>$\mathbb{H}=\mathbb{C}\oplus\mathbb{C}\vec e_x$</td>
+<td>$\vec e_x$</td>
+<td>4</td>
+<td>$\mathbb{R}e_t$</td>
+</tr>
+<tr>
+<td>3</td>
+<td>$\mathbb{B}=\mathbb{H}\oplus i\mathbb{H}$</td>
+<td>$i$</td>
+<td>8</td>
+<td>$\mathbb{C}e_t$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The glyphs.</strong> The generic element of the second layer is written $\tilde q$ and the generic element of the third is written $\tilde Q$. The two are told apart by the case of the letter, because the third layer is the second read with complex coefficients: $\tilde Q=\tilde q+i\tilde q'$ with $\tilde q$ and $\tilde q'$ in $\mathbb{H}$. The vector part of $\tilde Q$ is $\vec Q$, and a coefficient is written $Q_\mu=q_\mu+iq'_\mu$ with $q_\mu$ and $q'_\mu$ real. The prime marks the imaginary part throughout.</p>
+<p><strong>The arrows.</strong> The three vector units carry the arrow and the two scalar units do not, at every layer: $\vec e_x,\vec e_y,\vec e_z$ name directions, while $e_t$ and $i$ are scalars. The arrow is a statement about the grade of a unit and not about its layer. The two scalars differ in a respect that the rest of this article is about: $e_t$ is the unit of the algebra and $i$ is a scalar of the coefficient field.</p>
+<h2 id="rung-one-the-complex-algebra">Rung One: The Complex Algebra</h2>
+<p><strong>The square.</strong> The first rung adjoins one unit with the square $\vec e_z^2=-e_t$.</p>
+<p><strong>The algebra.</strong> The span $\mathbb{R}[\vec e_z]=\{u+v\vec e_z\}$ is closed under the product, associative, commutative and two-dimensional, so it is the complex algebra. Its generic element is $w=u+v\vec e_z$ with $u$ and $v$ real.</p>
+<p><strong>The product.</strong> Expanding and using the square gives</p>
+<p>$$
+(u+v\vec e_z)(u'+v'\vec e_z)=(uu'-vv')+(uv'+vu')\vec e_z .
+$$</p>
+<p><strong>The conjugation of the rung.</strong> The map $\bar w=u-v\vec e_z$ reverses the sign of the one imaginary direction, it is an involution, and it reverses the order of a product because the algebra is commutative. Its product with the element is the squared norm of the layer,</p>
+<p>$$
+w\bar w=u^2+v^2 ,
+$$</p>
+<p>a real number, zero only at $w=0$. This is the first rung; the derivation is §<em>The Base Algebra</em> of <em>The Cayley–Dickson Construction of the Quaternion Algebra</em>.</p>
+<h2 id="rung-two-the-quaternion-algebra">Rung Two: The Quaternion Algebra</h2>
+<p><strong>The two rules.</strong> The second rung adjoins the unit $\vec e_x$ with two rules and no others: its square, and the twisting rule that says how it passes a base element,</p>
+<p>$$
+\vec e_x^2=-e_t,\qquad \vec e_xw=\bar w\,\vec e_x\quad\text{for every }w\in\mathbb{C} .
+$$</p>
+<p><strong>The space.</strong> The four elements $1,\vec e_z,\vec e_x,\vec e_z\vec e_x$ are linearly independent over $\mathbb{R}$, and every element is written uniquely as</p>
+<p>$$
+\tilde q=w_1+w_2\vec e_x,\qquad w_1,w_2\in\mathbb{C} .
+$$</p>
+<p>The four units are $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_y:=\vec e_z\vec e_x$.</p>
+<p><strong>The product.</strong> Applying the twist twice, and using that the base is commutative, gives</p>
+<p>$$
+(w_1+w_2\vec e_x)(w_3+w_4\vec e_x)=\bigl(w_1w_3-\bar w_4w_2\bigr)+\bigl(w_4w_1+w_2\bar w_3\bigr)\vec e_x .
+$$</p>
+<p><strong>The nine derivations.</strong> The two rules produce the whole table of the layer, and each entry is one application of them.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Rule</th>
+<th>Derivation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\vec e_z^2=-e_t$</td>
+<td>the square of the base unit, rung one</td>
+</tr>
+<tr>
+<td>$\vec e_x^2=-e_t$</td>
+<td>the square of the new unit, by definition</td>
+</tr>
+<tr>
+<td>$\vec e_x\vec e_z=-\vec e_z\vec e_x$</td>
+<td>the twist at $w=\vec e_z$, whose conjugate is $-\vec e_z$</td>
+</tr>
+<tr>
+<td>$\vec e_y^2=-e_t$</td>
+<td>$(\vec e_z\vec e_x)(\vec e_z\vec e_x)=\vec e_z(\vec e_x\vec e_z)\vec e_x=\vec e_z(-\vec e_z\vec e_x)\vec e_x=-\vec e_z^2\vec e_x^2=-e_t$, by the twist and then associativity</td>
+</tr>
+<tr>
+<td>$\vec e_z\vec e_x=\vec e_y$</td>
+<td>the definition of the third direction</td>
+</tr>
+<tr>
+<td>$\vec e_x\vec e_y=\vec e_z$</td>
+<td>$\vec e_x(\vec e_z\vec e_x)=-\vec e_z\vec e_x^2=\vec e_z$, by the twist and the square</td>
+</tr>
+<tr>
+<td>$\vec e_y\vec e_x=-\vec e_z$</td>
+<td>$(\vec e_z\vec e_x)\vec e_x=\vec e_z\vec e_x^2=-\vec e_z$, by the square</td>
+</tr>
+<tr>
+<td>$\vec e_y\vec e_z=\vec e_x$</td>
+<td>$(\vec e_z\vec e_x)\vec e_z=-\vec e_z^2\vec e_x=\vec e_x$, by the twist and the square</td>
+</tr>
+<tr>
+<td>$\vec e_z\vec e_y=-\vec e_x$</td>
+<td>$\vec e_z(\vec e_z\vec e_x)=\vec e_z^2\vec e_x=-\vec e_x$, by the square</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The table.</strong> The nine rules collected are the multiplication table of the quaternion algebra.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>$e_t$</th>
+<th>$\vec e_x$</th>
+<th>$\vec e_y$</th>
+<th>$\vec e_z$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e_t$</td>
+<td>$e_t$</td>
+<td>$\vec e_x$</td>
+<td>$\vec e_y$</td>
+<td>$\vec e_z$</td>
+</tr>
+<tr>
+<td>$\vec e_x$</td>
+<td>$\vec e_x$</td>
+<td>$-e_t$</td>
+<td>$\vec e_z$</td>
+<td>$-\vec e_y$</td>
+</tr>
+<tr>
+<td>$\vec e_y$</td>
+<td>$\vec e_y$</td>
+<td>$-\vec e_z$</td>
+<td>$-e_t$</td>
+<td>$\vec e_x$</td>
+</tr>
+<tr>
+<td>$\vec e_z$</td>
+<td>$\vec e_z$</td>
+<td>$\vec e_y$</td>
+<td>$-\vec e_x$</td>
+<td>$-e_t$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The cyclic triple.</strong> The three directions multiply in the cycle $\vec e_z\vec e_x=\vec e_y$, $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, and the product of the three in that order is $\vec e_z\vec e_x\vec e_y=-e_t$, because the first two give $\vec e_y$ and $\vec e_y^2=-e_t$. The reversed order gives $+e_t$, and the difference is the whole of the non-commutativity of the layer.</p>
+<p><strong>The ladder so far.</strong> Two rungs, two units, and one rule besides the squares: the twist. The real dimension has doubled twice.</p>
+<h2 id="the-third-layer">The Third Layer</h2>
+<p><strong>The element adjoined.</strong> The third layer adjoins one element $i$ with two properties,</p>
+<p>$$
+i^2=-e_t,\qquad i\,\tilde q=\tilde q\,i\quad\text{for every }\tilde q\in\mathbb{H} .
+$$</p>
+<p>The first is the square; the second says that $i$ is <strong>central</strong>, and it is the property that separates this layer from the two rungs below it. A central element of square $-e_t$ is what <em>The Biquaternion Algebra</em> calls a gate: it is the same datum as a complex algebra structure on a real algebra, with the scalar action $(a+ib)\tilde Q=a\tilde Q+b\,i\tilde Q$. Multiplication by $i$, the map $J(\tilde Q)=i\tilde Q$, is therefore the complex structure of the algebra, and it is the one of <em>The Element, the Coordinates and the Conjugations</em>.</p>
+<p><strong>The space.</strong> Every element of the layer is written uniquely as</p>
+<p>$$
+\tilde Q=\tilde q+i\tilde q',\qquad \tilde q,\tilde q'\in\mathbb{H} ,
+$$</p>
+<p>and the eight elements $e_t,\vec e_x,\vec e_y,\vec e_z,i,i\vec e_x,i\vec e_y,i\vec e_z$ are a real basis. The real dimension is eight and the complex dimension, with $i$ as the scalar, is four. The algebra is the tensor product $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ of the complex algebra and the quaternion algebra, by <em>Tensor Products of Algebras</em> and by §<em>The Tensor Product of the Two Multiplications</em> of <em>The Biquaternion Algebra</em>.</p>
+<p><strong>The product rule.</strong> For two elements,</p>
+<p>$$
+(\tilde q_1+i\tilde q_1')(\tilde q_2+i\tilde q_2')=\bigl(\tilde q_1\tilde q_2-\tilde q_1'\tilde q_2'\bigr)+i\bigl(\tilde q_1\tilde q_2'+\tilde q_1'\tilde q_2\bigr).
+$$</p>
+<p><em>Proof.</em> Expand the four products. The term $\tilde q_1\tilde q_2$ is the first summand. The term $i\tilde q_1'\,i\tilde q_2'$ carries $i^2=-e_t$ and contributes $-\tilde q_1'\tilde q_2'$ to the real half. The two mixed terms are $\tilde q_1\,i\tilde q_2'$ and $i\tilde q_1'\,\tilde q_2$, and in each the central $i$ passes to the front without changing the order of the two quaternions, so they contribute $i\tilde q_1\tilde q_2'$ and $i\tilde q_1'\tilde q_2$. The four terms collected are the display.</p>
+<p><strong>The table does not change.</strong> The sixteen products of $e_t,\vec e_x,\vec e_y,\vec e_z$ are those of §<em>Rung Two: The Quaternion Algebra</em>, unchanged, because $i$ is never a factor of a product of two units: it is central, so it moves to the front of every term. This is why the table of a complex quaternion algebra is a table of real quaternions.</p>
+<p><strong>The scalar-vector split.</strong> The element splits as $\tilde Q=Q_te_t+\vec Q$ with the complex scalar $Q_t$ and the complex vector part $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$, as in <em>The Element, the Coordinates and the Conjugations</em>. The two halves are recovered from the element by</p>
+<p>$$
+\tilde q=\tfrac12\bigl(\tilde Q+\bar{\tilde Q}\bigr),\qquad \tilde q'=\tfrac{1}{2i}\bigl(\tilde Q-\bar{\tilde Q}\bigr),
+$$</p>
+<p>where the bar is the coefficient conjugation of §<em>Conjugation, the Norm and the Inverse</em>.</p>
+<h2 id="why-the-third-layer-is-not-a-rung">Why the Third Layer Is Not a Rung</h2>
+<p>The third layer doubles the real dimension, as each rung did, so it looks like an instance of the same rule. It is not, and the difference is worth stating exactly.</p>
+<p><strong>The doubling rule.</strong> For an algebra $A$ with an involution $\sigma$, the <strong>double</strong> is $A\oplus A$ with the product</p>
+<p>$$
+(a,b)(c,d)=\bigl(ac-\sigma(d)b,\;da+b\sigma(c)\bigr),
+$$</p>
+<p>whose new unit is $(0,e_t)$, of square $(-e_t,0)$.</p>
+<p><strong>The two natural readings of the quaternion layer.</strong> The quaternion algebra carries the conjugation $\natural$, which reverses the order of a product, and the identity, which preserves it; these are the two involutions the construction uses, and the two choices give two different doubles. Neither of them is $\mathbb{B}$.</p>
+<p><strong>With the conjugation.</strong> The choice $\sigma=\natural$ is the standard one, and the double is of real dimension eight. It is not associative, by the criterion proved below, and it is a division algebra. The construction and the loss of associativity are worked in <em>Quadratic Forms over Algebras and Norms</em>, §<em>The Cayley–Dickson Doubling</em>.</p>
+<p><strong>With the identity.</strong> The choice $\sigma=\mathrm{id}$ removes the conjugations from the rule, and the product becomes</p>
+<p>$$
+(a,b)(c,d)=\bigl(ac-db,\;da+bc\bigr).
+$$</p>
+<p>The layer's product, written in the same letters, is $(ac-bd,\,ad+bc)$. Subtracting it from the double leaves the two commutators and nothing else:</p>
+<p>$$
+\bigl(ac-db,\;da+bc\bigr)-\bigl(ac-bd,\;ad+bc\bigr)=\bigl([b,d],\,[d,a]\bigr).
+$$</p>
+<p><em>Proof.</em> In the first slot $ac-db$ and $ac-bd$ differ by $bd-db=[b,d]$; in the second $da+bc$ and $ad+bc$ differ by $da-ad=[d,a]$.</p>
+<p><strong>The consequence of the identity reading.</strong> The two products agree on a pair of elements exactly when the imaginary half of the second factor commutes with the imaginary half of the first and with its real half. The quaternion algebra is not commutative, so they do not agree, and the double with the identity involution is a third algebra of real dimension eight. Its new unit is central, as in $\mathbb{B}$, and it is not $\mathbb{B}$: the difference is exactly the pair of commutators.</p>
+<p><strong>The criterion.</strong> The double of an associative algebra is associative exactly when that algebra is commutative, by <em>Quadratic Forms over Algebras and Norms</em>, §<em>The Cayley–Dickson Doubling</em>. The quaternion algebra is associative and not commutative, so <strong>no Cayley–Dickson double of $\mathbb{H}$ is associative</strong>, whichever involution is used. The algebra $\mathbb{B}$ is associative by §<em>What the Layer Keeps</em>. Therefore $\mathbb{B}$ is not a Cayley–Dickson double of $\mathbb{H}$: the third layer is not a rung of the ladder that produced the first two.</p>
+<p><strong>What the layer is.</strong> It is the scalar extension, the adjunction of a central element of square $-e_t$ to an algebra whose product is kept. The difference from a rung is read on the centre, and the table of §<em>What the Layer Keeps</em> shows it: a rung above the first never enlarges the centre, and the scalar extension always does.</p>
+<h2 id="what-the-layer-keeps">What the Layer Keeps</h2>
+<p><strong>The table and the subalgebra.</strong> The sixteen products of the four units are unchanged, and an element with $\tilde q'=0$ multiplies as in $\mathbb{H}$. The quaternion layer is therefore a real subalgebra of $\mathbb{B}$, of real dimension four, and it is the fixed set of the coefficient conjugation.</p>
+<p><strong>Associativity.</strong> The layer is associative. Each factor of the tensor product is associative and the product of tensors is associative term by term; in coordinates, each of the eight basis elements multiplies by the table of $\mathbb{H}$ with the central $i$ carried as a coefficient, so the signs of a triple product collect exactly as in $\mathbb{H}$. The associativity is inherited from the tensor product and not from a doubling rule, which is the whole point of §<em>Why the Third Layer Is Not a Rung</em>.</p>
+<p><strong>Non-commutativity.</strong> $\vec e_x\vec e_y=\vec e_z$ while $\vec e_y\vec e_x=-\vec e_z$, and the two differ because $\vec e_z$ is a basis element. The layer is not commutative.</p>
+<p><strong>The centre.</strong> The centre of the layer is the complex line of the scalar multiples of the unit,</p>
+<p>$$
+Z(\mathbb{B})=\{Q_te_t\}=\mathbb{C}e_t=\mathbb{B}_{C} ,
+$$</p>
+<p>of real dimension two. <em>Proof.</em> The commutator $[X,Y]=XY-YX$ with a vector unit reads $[\tilde Q,\vec e_x]=2Q_z\vec e_y-2Q_y\vec e_z$, which vanishes exactly when $Q_y=Q_z=0$, and the two other commutators are its cyclic permutations. So centrality forces the three vector coefficients to vanish, and conversely every $Q_te_t$ is central because $i$ commutes with the four units. This is §<em>The Scalars Are the Centre</em> of <em>The Biquaternion Algebra</em>, read in the coordinates of the construction.</p>
+<p><strong>The centre across the layers.</strong> The centre grows at the first rung, shrinks at the second and grows again at the third.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Centre</th>
+<th>Real dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{R}$</td>
+<td>$\mathbb{R}$</td>
+<td>1</td>
+</tr>
+<tr>
+<td>$\mathbb{C}$</td>
+<td>$\mathbb{C}$</td>
+<td>2</td>
+</tr>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>$\mathbb{R}e_t$</td>
+<td>1</td>
+</tr>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>$\mathbb{C}e_t$</td>
+<td>2</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Why a rung does not enlarge the centre.</strong> Beyond the first rung, the unit adjoined is not central: the twist makes $\vec e_x$ anticommute with $\vec e_z$, and the same twist inside the double makes the new unit of a rung above $\mathbb{H}$ non-central. What a later rung does to the centre is to carry the previous scalar direction into the vector subspace: $\vec e_z$ is a scalar at rung one and a direction at rung two. The scalar extension does the opposite. It adjoins a unit that is central by construction, so the centre grows by one real dimension and the vector subspace does not move, and that is the structural difference between the two moves.</p>
+<h2 id="what-the-layer-loses">What the Layer Loses</h2>
+<p><strong>The square of a direction changes sign.</strong> Every unit direction of the quaternion layer, multiplied by $i$, has square $+e_t$:</p>
+<p>$$
+(i\vec u)^2=i^2\vec u^2=(-e_t)(-e_t)=e_t ,
+$$</p>
+<p>for every $\vec u$ in the vector subspace with $\vec u^2=-e_t$, the three coordinate directions included.</p>
+<p><strong>The idempotents.</strong> For every such $\vec u$ the two elements</p>
+<p>$$
+\Pi_\pm=\tfrac12\bigl(e_t\pm i\vec u\bigr)
+$$</p>
+<p>are idempotent and orthogonal,</p>
+<p>$$
+\Pi_\pm^2=\tfrac14\bigl(e_t\pm2i\vec u+(i\vec u)^2\bigr)=\tfrac12\bigl(e_t\pm i\vec u\bigr)=\Pi_\pm,\qquad \Pi_+\Pi_-=\tfrac14\bigl(e_t-(i\vec u)^2\bigr)=0 .
+$$</p>
+<p>Neither vanishes, because $i\vec u$ has no real part and is not a real multiple of $e_t$. The layer therefore carries a continuum of orthogonal idempotent pairs, one pair to each unit direction, indexed by the sphere of directions modulo the sign.</p>
+<p><strong>The zero divisors.</strong> Each pair gives a product of two non-zero elements that vanishes:</p>
+<p>$$
+(e_t+i\vec e_x)(e_t-i\vec e_x)=e_t^2-(i\vec e_x)^2=e_t-e_t=0 .
+$$</p>
+<p>This is the witness of §<em>Central Simplicity and the Absence of Division</em> of <em>The Biquaternion Algebra</em>, and the two accounts agree.</p>
+<p><strong>The division property is gone.</strong> In $\mathbb{H}$ the only idempotents are $0$ and $e_t$, because $x^2=x$ gives $x(x-e_t)=0$ and the algebra has no zero divisors. In $\mathbb{B}$ every $\Pi_+$ of the family is a non-zero idempotent which is not the unit, so no such element is invertible, and the algebra is not a division algebra. The layer has kept the table and the associativity of $\mathbb{H}$ and has lost the property that made the table a division table.</p>
+<p><strong>Why the loss is unavoidable.</strong> The square of $i$ and the square of a direction are both $-e_t$, and the two signs multiply to $+e_t$ for every direction. A central element of square $-e_t$ adjoined to an algebra that already has a direction of square $-e_t$ produces $+e_t$ squares automatically, and with them the idempotents. The loss is not a defect of the construction; it is the construction.</p>
+<h2 id="the-three-two-dimensional-subalgebras">The Three Two-Dimensional Subalgebras</h2>
+<p>The layer contains three copies of a two-dimensional real algebra, and they are three different subalgebras.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Subalgebra</th>
+<th>Unit</th>
+<th>Square of the unit</th>
+<th>Central</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{R}[\vec e_z]$</td>
+<td>$\vec e_z$</td>
+<td>$-e_t$</td>
+<td>no</td>
+<td>the first rung, inside the vector subspace</td>
+</tr>
+<tr>
+<td>$\mathbb{R}[i]$</td>
+<td>$i$</td>
+<td>$-e_t$</td>
+<td>yes</td>
+<td>the scalar field, the centre</td>
+</tr>
+<tr>
+<td>$\mathbb{R}[i\vec e_z]$</td>
+<td>$i\vec e_z$</td>
+<td>$+e_t$</td>
+<td>no</td>
+<td>the split line</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Two copies of the complex algebra.</strong> The first rung $\mathbb{R}[\vec e_z]$ and the coefficient field $\mathbb{R}[i]$ are both isomorphic to $\mathbb{C}$ and they are different subalgebras of $\mathbb{B}$. The first is contained in the vector subspace and is not central, since $\vec e_z\vec e_x=-\vec e_x\vec e_z$; the second is the centre. Their intersection is $\mathbb{R}e_t$. The first rung of the ladder therefore survives inside the third layer as a non-central copy, and the scalar of the third layer is a second copy, central.</p>
+<p><strong>The split line.</strong> The third subalgebra has a unit of square $+e_t$ and is the split-complex algebra of <em>Split-Complex Algebra</em>. It is the one that carries the idempotents of §<em>What the Layer Loses</em>, since $\tfrac12(e_t\pm i\vec e_z)$ are its two idempotents, and it is not central either, since $i\vec e_z$ inherits the non-centrality of $\vec e_z$ from the central factor $i$.</p>
+<p><strong>The reading.</strong> A biquaternion is read over three scalar systems at once, and the three lines say which: the complex line of the rung, the complex line of the scalars, and the split line of the idempotents. The sign $+e_t$ of the third is the signature of the loss of §<em>What the Layer Loses</em>; the sign $-e_t$ of the first two is the signature of the two rungs.</p>
+<h2 id="conjugation-the-norm-and-the-inverse">Conjugation, the Norm and the Inverse</h2>
+<p><strong>The three maps.</strong> The layer carries the quaternion conjugation $\natural$, the coefficient conjugation $\bar{\cdot}$, and their composite ${}^{*}=\bar{\cdot}\circ\natural=\natural\circ\bar{\cdot}$,</p>
+<p>$$
+\tilde Q^{\natural}=Q_te_t-Q_x\vec e_x-Q_y\vec e_y-Q_z\vec e_z,\qquad
+\bar{\tilde Q}=\bar Q_te_t+\bar Q_x\vec e_x+\bar Q_y\vec e_y+\bar Q_z\vec e_z,
+$$</p>
+<p>$$
+\tilde Q^{*}=\bar Q_te_t-\bar Q_x\vec e_x-\bar Q_y\vec e_y-\bar Q_z\vec e_z .
+$$</p>
+<p><strong>What each does.</strong> All three are involutions. The conjugation $\natural$ is $\mathbb{C}$-linear, it fixes the scalar $i$ and the scalar line, and it reverses the three directions. The coefficient conjugation is conjugate-linear, it fixes the quaternion layer and it sends $i$ to $-i$. The star is conjugate-linear, and its fixed space is the Hermitian subspace of <em>Subspaces and Decompositions of the Biquaternion Algebra</em>, of real basis $e_t,i\vec e_x,i\vec e_y,i\vec e_z$.</p>
+<p><strong>Which ones reverse the order.</strong> The conjugation and the star reverse the order of a product, $(\tilde Q_1\tilde Q_2)^{\natural}=\tilde Q_2^{\natural}\tilde Q_1^{\natural}$ and $(\tilde Q_1\tilde Q_2)^{*}=\tilde Q_2^{*}\tilde Q_1^{*}$, and the coefficient conjugation does not: it is an automorphism, $\overline{\tilde Q_1\tilde Q_2}=\bar{\tilde Q_1}\,\bar{\tilde Q_2}$. The reason is that it conjugates the scalar field alone and fixes the quaternion factor, and a field is commutative. The composite of the star and the conjugation is the coefficient conjugation, an automorphism and not an anti-automorphism, and this is the identity $\bar{\cdot}={}^{\natural}{}^{*}$ of <em>The Group of Involutions</em>.</p>
+<p><strong>The norm.</strong> For every element,</p>
+<p>$$
+\tilde Q\tilde Q^{\natural}=N(\tilde Q)\,e_t,\qquad N(\tilde Q)=Q_t^2+Q_x^2+Q_y^2+Q_z^2\in\mathbb{C} .
+$$</p>
+<p><em>Proof.</em> Expand $\sum_{\mu,\nu}Q_\mu Q_\nu\,e_\mu e_\nu^{\natural}$ over the sixteen pairs, with $e_t^{\natural}=e_t$ and $\vec e_k^{\natural}=-\vec e_k$. A pair with $\mu\neq\nu$ contributes $Q_\mu Q_\nu\,e_\mu e_\nu$ and its reverse contributes $-Q_\nu Q_\mu\,e_\nu e_\mu$, and the second is the negative of the first because $e_\nu e_\mu=-e_\mu e_\nu$ and the coefficients commute: the twelve off-diagonal pairs cancel in six pairs. What remains is the diagonal, $Q_t^2e_t$ from the scalar unit and $Q_k^2\vec e_k\vec e_k^{\natural}=-Q_k^2\vec e_k^2=+Q_k^2e_t$ from each of the three directions.</p>
+<p><strong>The norm is complex.</strong> In $\mathbb{H}$ the norm is a sum of four real squares and vanishes only at the origin. In $\mathbb{B}$ the squares are complex and the sum vanishes on non-zero elements:</p>
+<p>$$
+N(e_t+i\vec e_x)=1+i^2=0 .
+$$</p>
+<p>Its real part is $\sum_k q_k^2-\sum_k(q'_k)^2$, a form of signature $(4,4)$ on the eight real coordinates, and its imaginary part is $2\sum_k q_kq'_k$. The norm of the layer is therefore not definite, and the identity $\tilde Q\tilde Q^{\natural}=Ne_t$ no longer forces $\tilde Q=0$.</p>
+<p><strong>Multiplicativity.</strong> The norm is multiplicative, $N(\tilde Q_1\tilde Q_2)=N(\tilde Q_1)N(\tilde Q_2)$, by <em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em>. In the coordinates of the construction it is the reduced norm of the layer, and its multiplicativity is the four-square identity of the quaternion rung read over $\mathbb{C}$.</p>
+<p><strong>The inverse.</strong> If $N(\tilde Q)\neq0$ then</p>
+<p>$$
+\tilde Q^{-1}=\frac{\tilde Q^{\natural}}{N(\tilde Q)} ,
+$$</p>
+<p>two-sided, because $\tilde Q^{\natural}\tilde Q=N(\tilde Q)e_t$ by the same computation on the other side. If $N(\tilde Q)=0$ and $\tilde Q\neq0$, then $\tilde Q\tilde Q^{\natural}=0$ with $\tilde Q^{\natural}\neq0$, so $\tilde Q$ is a zero divisor. Hence <strong>an element is a unit exactly when its norm is non-zero</strong>, which is the criterion of <em>Zero Divisors and Units</em>, and the vanishing set of the norm is the set of the zero divisors of the layer.</p>
+<h2 id="the-place-of-the-layer">The Place of the Layer</h2>
+<p><strong>The ladder.</strong> Three steps, of which two are rungs and one is a layer.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Move</th>
+<th>Algebra</th>
+<th>Real dimension</th>
+<th>Associative</th>
+<th>Division</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>adjoin $\vec e_z$</td>
+<td>$\mathbb{C}$</td>
+<td>2</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>2</td>
+<td>adjoin $\vec e_x$, twisted</td>
+<td>$\mathbb{H}$</td>
+<td>4</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>3</td>
+<td>adjoin $i$, central</td>
+<td>$\mathbb{B}$</td>
+<td>8</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>What a rung at the third step would give.</strong> A rung there is the double of $\mathbb{H}$ by an involution, and it agrees with the layer in two respects: the real dimension, eight, and the square of the adjoined element, $-e_t$. It differs in the rest: its product is not the product of the layer, the difference being the pair of commutators of §<em>Why the Third Layer Is Not a Rung</em>, and it is not associative. The third step therefore admits two moves, and only one of them keeps associativity; the layer is that one, and its price is the division property.</p>
+<p><strong>The place of the layer.</strong> The finite-dimensional associative division algebras over $\mathbb{R}$ are $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$, and by the theorem of Frobenius the list is complete. The layer neither continues that list nor pretends to: it keeps associativity and gives up division. Read the other way, it is the smallest enlargement of $\mathbb{H}$ that makes the algebra a complex algebra, and the enlargement costs the division property and nothing else.</p>
+<p><strong>What the doubling cannot do.</strong> No Cayley–Dickson double of $\mathbb{H}$ is associative, so the ladder cannot be climbed past the quaternions while keeping associativity. The layer is the only move available above $\mathbb{H}$ that keeps it, and it is a change of scalars rather than a change of units. The two operations act on different data: a rung adjoins a direction, and the layer adjoins a scalar.</p>
+<h2 id="summary">Summary</h2>
+<ol>
+<li>The biquaternion algebra is built as a stack of three layers: $\mathbb{R}\to\mathbb{C}$ by the unit $\vec e_z$, $\mathbb{C}\to\mathbb{H}$ by the unit $\vec e_x$ under the twisting rule, and $\mathbb{H}\to\mathbb{B}$ by the central scalar $i$.</li>
+<li>The first two layers are the Cayley–Dickson rungs, and the third direction $\vec e_y$ is computed, $\vec e_y=\vec e_z\vec e_x$, not adjoined.</li>
+<li>The third layer is not a rung. The double of an associative algebra is associative only when the algebra is commutative, and $\mathbb{H}$ is not, so no double of $\mathbb{H}$ is associative while $\mathbb{B}$ is.</li>
+<li>The third layer is the scalar extension, $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, the adjunction of a central element of square $-e_t$ that the companion article calls the gate.</li>
+<li>The product rule is $(\tilde q_1+i\tilde q_1')(\tilde q_2+i\tilde q_2')=(\tilde q_1\tilde q_2-\tilde q_1'\tilde q_2')+i(\tilde q_1\tilde q_2'+\tilde q_1'\tilde q_2)$, and the table of the four units is unchanged because $i$ is never a factor.</li>
+<li>The layer keeps the table, the associativity and the non-commutativity of $\mathbb{H}$, and it changes the centre from $\mathbb{R}e_t$ to $\mathbb{C}e_t$, of real dimension two.</li>
+<li>The layer destroys the division property: $(i\vec u)^2=+e_t$ for every unit direction, so the idempotents $\tfrac12(e_t\pm i\vec u)$ exist and $(e_t+i\vec e_x)(e_t-i\vec e_x)=0$.</li>
+<li>The layer contains three two-dimensional subalgebras: the non-central copy of $\mathbb{C}$ of the first rung, the central copy $\mathbb{R}[i]$ of the scalars, and the split line $\mathbb{R}[i\vec e_z]$ of the idempotents.</li>
+<li>The norm is the complex number $N=Q_t^2+Q_x^2+Q_y^2+Q_z^2$, with $\tilde Q\tilde Q^{\natural}=Ne_t$; it is multiplicative and not definite, and an element is a unit exactly when its norm is non-zero.</li>
+<li>At the third step only the layer keeps associativity: a rung above $\mathbb{H}$ is not associative, whichever involution it uses, while $\mathbb{B}$ is associative and is not a division algebra.</li>
+</ol>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+<th>Article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e_t$</td>
+<td>the scalar unit, $e_t=1$</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$\vec e_x,\vec e_y,\vec e_z$</td>
+<td>the three directions, each of square $-e_t$</td>
+<td>this article, rung two</td>
+</tr>
+<tr>
+<td>$i$</td>
+<td>the central scalar imaginary, $i^2=-e_t$</td>
+<td>this article, the third layer</td>
+</tr>
+<tr>
+<td>$w=u+v\vec e_z$</td>
+<td>the generic element of the base $\mathbb{C}$</td>
+<td>this article, rung one</td>
+</tr>
+<tr>
+<td>$\tilde q$</td>
+<td>the generic element of $\mathbb{H}$, $w_1+w_2\vec e_x$</td>
+<td>this article, rung two</td>
+</tr>
+<tr>
+<td>$\tilde Q=\tilde q+i\tilde q'$</td>
+<td>the generic element of $\mathbb{B}$</td>
+<td><em>The Biquaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$Q_\mu=q_\mu+iq'_\mu$</td>
+<td>a complex coefficient and its two real parts</td>
+<td><em>The Element, the Coordinates and the Conjugations</em></td>
+</tr>
+<tr>
+<td>$\vec Q$</td>
+<td>the vector part, $Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$</td>
+<td><em>The Element, the Coordinates and the Conjugations</em></td>
+</tr>
+<tr>
+<td>$\natural$</td>
+<td>the quaternion conjugation, $\mathbb{C}$-linear</td>
+<td><em>The Group of Involutions</em></td>
+</tr>
+<tr>
+<td>$\bar{\cdot}$</td>
+<td>the coefficient conjugation, $i\mapsto-i$</td>
+<td><em>The Group of Involutions</em></td>
+</tr>
+<tr>
+<td>${}^{*}$</td>
+<td>the composite $\bar{\cdot}\circ\natural$, the Hermitian conjugation</td>
+<td><em>The Group of Involutions</em></td>
+</tr>
+<tr>
+<td>$N(\tilde Q)$</td>
+<td>$Q_t^2+Q_x^2+Q_y^2+Q_z^2$, the scalar of $\tilde Q\tilde Q^{\natural}$</td>
+<td><em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$\Pi_\pm$</td>
+<td>$\tfrac12(e_t\pm i\vec u)$, the idempotents of the layer</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$J$</td>
+<td>the complex structure $\tilde Q\mapsto i\tilde Q$</td>
+<td><em>The Element, the Coordinates and the Conjugations</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Leonard E. Dickson, <em>On Quaternions and Their Generalization and the History of the Eight Square Theorem</em> (Annals of Mathematics, 1919), for the doubling as a construction and its sign choices.</li>
+<li>Richard D. Schafer, <em>An Introduction to Nonassociative Algebras</em> (Dover, 1995), for the doubling rule and its associativity criterion.</li>
+<li>Eduard Study, <em>Geometrie der Dynamen</em> (Leipzig, 1903), for the complex quaternion algebra in its classical use in kinematics, where the scalar imaginary is kept apart from the quaternion units as this article keeps it.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

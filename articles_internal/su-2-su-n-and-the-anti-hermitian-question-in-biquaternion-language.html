@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$\mathfrak{su}(2)$, $\mathfrak{su}(n)$ and the Anti-Hermitian Question in Biquaternion Language — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="math0-math1-and-the-anti-hermitian-question-in-biquaternion-language"><strong>$\mathfrak{su}(2)$, $\mathfrak{su}(n)$ and the Anti-Hermitian Question in Biquaternion Language</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The question is small and it has two answers that look different. In $2\times2$ matrices, $\mathfrak{su}(2)$ is the set of anti-Hermitian traceless matrices, and the element</p>
+<p>$$
+X=\frac{i}{2}\bigl(x\sigma_1+y\sigma_2+z\sigma_3\bigr)
+$$</p>
+<p>belongs to it. In the biquaternion algebra $\mathbb{B}$, the same set is the space of real pure quaternions, and the image of $X$ is $-\tfrac12$ times a real pure quaternion. The two answers agree.</p>
+<p>The agreement is worth writing down because four things go wrong when the translation is made in a hurry. A conjugation is mistaken for another one. A sign is invented inside the dictionary. An $i$ is rescaled away by hand. A one-dimensional subspace is named twice, once for the axis and once for the torus. Each of the four produces a statement that reads well and is false.</p>
+<p>This article states the dictionary, proves the translation condition by condition, answers the question at $n=2$, and says exactly how much of the answer survives at $n>2$. It argues in one direction only: from the matrix statement to the biquaternion statement, with a warrant at each step.</p>
+<p><strong>What is taken as known.</strong> The base, the subspaces and the four conjugations are <em>Algebra and Element Conventions</em>. The $2\times2$ image and its forcing are <em>Matrix Representations Conventions</em>, §<em>The $2\times2$ Pauli Representation</em>. The five statements of the Lie correspondence, the constants $[T_a,T_b]=-2\varepsilon_{abc}T_c$ and the basis $T_a=i\sigma_a$ are <em>The Lie Correspondence for the Special Unitary Groups</em>. The two frames and the material coordinate are <em>Frame and Metric Conventions</em>.</p>
+<p><strong>One rule of use.</strong> The three arrays $\sigma_1,\sigma_2,\sigma_3$ appear here as a dictionary and never as objects of the algebra, in the sense of <em>Matrix Representations Conventions</em>, §<em>The Rule on Pauli and Gamma Matrices</em>. Every statement that this article asserts is a statement about $\mathbb{B}$, and each is verified on the algebra itself, not on the arrays.</p>
+<h2 id="the-dictionary">The Dictionary</h2>
+<p>The base is $e_t,\vec e_x,\vec e_y,\vec e_z$ with</p>
+<p>$$
+\vec e_x^{\,2}=\vec e_y^{\,2}=\vec e_z^{\,2}=-e_t,\qquad
+\vec e_x\vec e_y=\vec e_z,\qquad \vec e_y\vec e_z=\vec e_x,\qquad \vec e_z\vec e_x=\vec e_y .
+$$</p>
+<p>A general element is</p>
+<p>$$
+\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z,\qquad Q_\mu=q_\mu+iq'_\mu\in\mathbb{C}.
+$$</p>
+<h3 id="the-matrix-image">The Matrix Image</h3>
+<p>The $2\times2$ image is the map $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ fixed by</p>
+<p>$$
+\mathsf{M}_2(e_t)=I_2,\qquad
+\mathsf{M}_2(\vec e_x)=-i\sigma_1,\qquad
+\mathsf{M}_2(\vec e_y)=-i\sigma_2,\qquad
+\mathsf{M}_2(\vec e_z)=-i\sigma_3 ,
+$$</p>
+<p>with $\sigma_1,\sigma_2,\sigma_3$ the Pauli matrices of <em>Matrix Representations Conventions</em>, §<em>The Two Tensor Factors</em>. $\mathbb{C}$-linearity then gives the image of every element:</p>
+<p>$$
+\mathsf{M}_2(\tilde Q)=Q_tI_2-i\bigl(Q_x\sigma_1+Q_y\sigma_2+Q_z\sigma_3\bigr)
+=\begin{pmatrix}Q_t-iQ_z & -iQ_x-Q_y\\ -iQ_x+Q_y & Q_t+iQ_z\end{pmatrix}.
+$$</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>unit</th>
+<th>image</th>
+<th>square of the image</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e_t$</td>
+<td>$I_2$</td>
+<td>$I_2$</td>
+</tr>
+<tr>
+<td>$\vec e_x$</td>
+<td>$-i\sigma_1$</td>
+<td>$-I_2$</td>
+</tr>
+<tr>
+<td>$\vec e_y$</td>
+<td>$-i\sigma_2$</td>
+<td>$-I_2$</td>
+</tr>
+<tr>
+<td>$\vec e_z$</td>
+<td>$-i\sigma_3$</td>
+<td>$-I_2$</td>
+</tr>
+<tr>
+<td>$i\vec e_x$</td>
+<td>$\sigma_1$</td>
+<td>$I_2$</td>
+</tr>
+<tr>
+<td>$i\vec e_y$</td>
+<td>$\sigma_2$</td>
+<td>$I_2$</td>
+</tr>
+<tr>
+<td>$i\vec e_z$</td>
+<td>$\sigma_3$</td>
+<td>$I_2$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The assignment is forced, and the forcing is the reason the question has an answer.</strong> The square $\vec e_k^{\,2}=-e_t$ requires an $i$ in each image, so no image of a vector unit is a real matrix. The product $\vec e_x\vec e_y=\vec e_z$ then fixes the relative sign, since $(-i\sigma_1)(-i\sigma_2)=+i\sigma_3$ and not $-i\sigma_3$. A global sign is not free either, because negating all three images is not multiplicative: $(-A)(-B)=AB\ne-AB$. What remains free is a unitary conjugation and the ordering of the three axes, and each of the two is a choice of frame that leaves every statement proved below unchanged.</p>
+<p><strong>The fifth and sixth rows are the answer in advance.</strong> They record that the imaginary vector units, not the real ones, are the Hermitian matrices. The whole of the anti-Hermitian question is the choice between the two blocks of rows.</p>
+<h3 id="the-star-is-the-dagger">The Star Is the Dagger</h3>
+<p>The biquaternion algebra carries three involutions, and the corpus writes the Hermitian one with a star, ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ (<em>Algebra and Element Conventions</em>, §<em>The Conjugations</em>):</p>
+<p>$$
+\tilde Q^{*}=\overline{\tilde Q^{\natural}}=\bar Q_te_t-\bar Q_x\vec e_x-\bar Q_y\vec e_y-\bar Q_z\vec e_z .
+$$</p>
+<p><strong>Two confusions are possible here, and both are common.</strong> Reading the star as the quaternion conjugation alone gives $\tilde Q^{\natural}=-\tilde Q$, which cuts out the vector subspace $\mathbb{B}_V$ and not $\mathfrak{su}(2)$. Reading it as the bar alone gives $\bar{\tilde Q}=\tilde Q$, which cuts out the real half $\mathbb{B}_H$ and again not $\mathfrak{su}(2)$. Only the composite cuts the anti-Hermitian subspace, and the corpus keeps the three marks separate for this reason: ${}^{\natural}$ for the quaternion conjugation, $\bar{\cdot}$ for the coefficient, ${}^{*}$ for the composite.</p>
+<p><strong>Proposition.</strong> For every $\tilde Q\in\mathbb{B}$,</p>
+<p>$$
+\mathsf{M}_2\bigl(\tilde Q^{*}\bigr)=\mathsf{M}_2(\tilde Q)^{\dagger}.
+$$</p>
+<p><strong>Proof.</strong> The star conjugates the scalar coefficient and negates the three vector coefficients. On the image, the scalar coefficient multiplies $I_2$, which is Hermitian, and the vector coefficients multiply $-i\sigma_k$, whose conjugate transpose is $+i\sigma_k$. So conjugating every coefficient and swapping the sign of the three vector terms is exactly taking the conjugate transpose entry by entry:</p>
+<p>$$
+\mathsf{M}_2(\tilde Q)^{\dagger}
+=\bar Q_tI_2+i\bigl(\bar Q_x\sigma_1+\bar Q_y\sigma_2+\bar Q_z\sigma_3\bigr)
+=\mathsf{M}_2\bigl(\bar Q_te_t-\bar Q_x\vec e_x-\bar Q_y\vec e_y-\bar Q_z\vec e_z\bigr).
+$$</p>
+<p>The star is therefore the biquaternion name of the dagger, and the two conditions of the matrix definition translate without a factor and without a sign. Every later statement rests on this one.</p>
+<h2 id="the-trace-is-the-centre">The Trace Is the Centre</h2>
+<p>The trace of the image is read off the diagonal of $\mathsf{M}_2(\tilde Q)$:</p>
+<p>$$
+\operatorname{tr}\mathsf{M}_2(\tilde Q)=(Q_t-iQ_z)+(Q_t+iQ_z)=2Q_t .
+$$</p>
+<p>So the traceless condition is a condition on one coefficient, and only one:</p>
+<p>$$
+\operatorname{tr}\mathsf{M}_2(\tilde Q)=0 \iff Q_t=0 \iff \tilde Q\in\mathbb{B}_V .
+$$</p>
+<p><strong>The trace direction is the centre.</strong> The algebra splits as $\mathbb{B}=\mathbb{B}_C\oplus\mathbb{B}_V$ into the centre, the complex multiples of $e_t$, and the vector subspace (<em>Algebra and Element Conventions</em>, §<em>The Centre and the Vector Subspace</em>). The first is exactly the trace direction: the trace kills $\mathbb{B}_V$ and is twice the scalar coefficient on $\mathbb{B}_C$. So the matrix condition "traceless" is the biquaternion condition "no scalar part", and it names a subspace that the corpus already had.</p>
+<p><strong>The two conditions are independent.</strong> The star maps each of $\mathbb{B}_C$ and $\mathbb{B}_V$ onto itself, since $\bar Q_te_t$ is again a complex multiple of $e_t$ and a vector part goes to a vector part. So neither condition forces the other, and the intersection is obtained by imposing both.</p>
+<h2 id="math81-as-a-subspace-of-the-algebra">$\mathfrak{su}(2)$ as a Subspace of the Algebra</h2>
+<p>The matrix definition is</p>
+<p>$$
+\mathfrak{su}(2)=\{A\in M_2(\mathbb{C}):A^{\dagger}=-A,\ \operatorname{tr}A=0\}.
+$$</p>
+<p>Apply the two translations. The trace condition gives $Q_t=0$. The anti-Hermitian condition $A^{\dagger}=-A$ gives $\tilde Q^{*}=-\tilde Q$, and on a pure element this reads</p>
+<p>$$
+-\bar Q_x\vec e_x-\bar Q_y\vec e_y-\bar Q_z\vec e_z=-Q_x\vec e_x-Q_y\vec e_y-Q_z\vec e_z,
+$$</p>
+<p>so $\bar Q_k=Q_k$ for $k=x,y,z$, that is, each vector coefficient is real.</p>
+<h3 id="the-three-descriptions-of-one-set">The Three Descriptions of One Set</h3>
+<p>Three descriptions are current for this space, and they name the same set.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>description</th>
+<th>condition</th>
+<th>warrant</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>anti-Hermitian and traceless</td>
+<td>$\tilde Q^{*}=-\tilde Q$, $Q_t=0$</td>
+<td>the matrix definition, translated</td>
+</tr>
+<tr>
+<td>the anti-Hermitian subspace taken with the vector subspace</td>
+<td>$\tilde Q\in\mathbb{B}_{\Phi}\cap\mathbb{B}_V$</td>
+<td>$\mathbb{B}_{\Phi}$ is the anti-fixed space of the star</td>
+</tr>
+<tr>
+<td>the real pure quaternions</td>
+<td>$\tilde Q=q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$, $q_k\in\mathbb{R}$</td>
+<td>the two conditions read on the coefficients</td>
+</tr>
+</tbody>
+</table></div>
+<p>The identity of the first two rows is the definition of $\mathbb{B}_{\Phi}$. The identity of the second and third is the computation above: an element of $\mathbb{B}_{\Phi}\cap\mathbb{B}_V$ has no scalar part, and its three vector coefficients are fixed by the bar, hence real. So</p>
+<p>$$
+\mathfrak{su}(2)=\mathbb{B}_{\Phi}\cap\mathbb{B}_V=\mathbb{B}_H\cap\mathbb{B}_V=\operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}.
+$$</p>
+<p>The middle expression, $\mathbb{B}_H\cap\mathbb{B}_V$, is the same set: $\mathbb{B}_H$ is the real half, the elements with real coefficients throughout, and a pure element of the real half is a real pure quaternion.</p>
+<p><strong>The dimension is three, counted over the reals.</strong> The space is spanned by three elements, so its real dimension is at most three, and the three are independent because they are three of the four base units. The matrix count gives the same number from the other side: an anti-Hermitian $2\times2$ matrix has two real parameters on the diagonal and one complex parameter off it, so four real parameters, and the trace removes one.</p>
+<p><strong>The space is not a complex subspace.</strong> The coefficient field of $\mathbb{B}$ is $\mathbb{C}$, and $\mathfrak{su}(2)$ contains no element of the form $i\tilde Q$ with $\tilde Q\in\mathfrak{su}(2)$ and $\tilde Q\ne0$. The reason is structural and is stated once, below, in §<em>Why the Anti-Hermitian Choice Is Forced</em>: multiplication by $i$ exchanges the two sectors. A reader who counts the dimension over $\mathbb{C}$ gets $1.5$ and a contradiction, which is the correct sign that the count must be real.</p>
+<h3 id="the-bracket">The Bracket</h3>
+<p>On the base units,</p>
+<p>$$
+[\vec e_x,\vec e_y]=\vec e_x\vec e_y-\vec e_y\vec e_x=\vec e_z-(-\vec e_z)=2\vec e_z,
+$$</p>
+<p>and cyclically, so $[\vec e_a,\vec e_b]=2\varepsilon_{abc}\vec e_c$. The three real pure quaternions are closed under the commutator, and the constants are those of the vector product, up to the factor two. So the space is a Lie algebra isomorphic to $\mathfrak{so}(3)$, which is the classical fact that Hamilton's three imaginary units, under the commutator, give the rotations.</p>
+<p><strong>The correspondence with the corpus basis.</strong> The corpus writes $T_a=i\sigma_a$ and $[T_a,T_b]=-2\varepsilon_{abc}T_c$. The dictionary gives $T_a=i\sigma_a=-\vec e_a$. Substituting into the bracket,</p>
+<p>$$
+[T_a,T_b]=[-\vec e_a,-\vec e_b]=[\vec e_a,\vec e_b]=2\varepsilon_{abc}\vec e_c=-2\varepsilon_{abc}T_c ,
+$$</p>
+<p>which is the corpus relation. The apparent sign difference between $+2\varepsilon$ and $-2\varepsilon$ is entirely the minus sign inside the dictionary, and it is the first place where a hasty translation invents a sign.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>matrix element</th>
+<th>biquaternion element</th>
+<th>note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$T_a=i\sigma_a$</td>
+<td>$-\vec e_a$</td>
+<td>the corpus basis, eigenvalues $\pm i$</td>
+</tr>
+<tr>
+<td>$J_a=\tfrac{i}{2}\sigma_a$</td>
+<td>$-\tfrac12\vec e_a$</td>
+<td>the physics normalisation</td>
+</tr>
+<tr>
+<td>$[T_a,T_b]=-2\varepsilon_{abc}T_c$</td>
+<td>$[\vec e_a,\vec e_b]=2\varepsilon_{abc}\vec e_c$</td>
+<td>the same relation</td>
+</tr>
+<tr>
+<td>$[J_a,J_b]=-\varepsilon_{abc}J_c$</td>
+<td>$[\vec e_a,\vec e_b]=2\varepsilon_{abc}\vec e_c$</td>
+<td>the same relation, halved</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-element-math128-and-the-factor-math129">The Element $X$ and the Factor $i$</h2>
+<p>The element of the question is $X=\tfrac{i}{2}(x\sigma_1+y\sigma_2+z\sigma_3)$ with $x,y,z$ real. Since $\sigma_k=i\vec e_k$,</p>
+<p>$$
+X=\frac{i}{2}\bigl(x\sigma_1+y\sigma_2+z\sigma_3\bigr)
+=\frac{i}{2}\cdot i\bigl(x\vec e_x+y\vec e_y+z\vec e_z\bigr)
+=-\frac12\bigl(x\vec e_x+y\vec e_y+z\vec e_z\bigr).
+$$</p>
+<p>So the preimage of $X$ is</p>
+<p>$$
+\tilde Q=-\frac12\vec q,\qquad \vec q=x\vec e_x+y\vec e_y+z\vec e_z ,
+$$</p>
+<p>a real pure quaternion, with a real scalar multiple $\tfrac12$ and a global sign that belongs to the dictionary and not to the algebra.</p>
+<p><strong>No rescaling is needed, and this is the second place where a hasty translation invents a factor.</strong> A draft of this translation wrote the preimage as $\tfrac{i}{2}(x\vec e_x+y\vec e_y+z\vec e_z)$ times an unspecified inverse. There is no such factor. The $i$ of the matrix formula is the same $i$ that multiplies $\sigma_k$ in the dictionary, and the two $i$'s multiply to $-1$, which is the global sign. One line of algebra replaces the paragraph of explanation.</p>
+<h3 id="the-answer">The Answer</h3>
+<p><strong>$X$ is anti-Hermitian.</strong> Apply the star to a real pure quaternion:</p>
+<p>$$
+\tilde Q^{*}=-\bar q_x\vec e_x-\bar q_y\vec e_y-\bar q_z\vec e_z
+=-\bigl(q_x\vec e_x+q_y\vec e_y+q_z\vec e_z\bigr)=-\tilde Q ,
+$$</p>
+<p>the coefficients being real. Since the star is the dagger, $\mathsf{M}_2(\tilde Q)^{\dagger}=-\mathsf{M}_2(\tilde Q)$, and $X=\mathsf{M}_2(\tilde Q)$. In one line,</p>
+<p>$$
+\boxed{\ \tilde Q\in\mathbb{B}_{\Phi}\cap\mathbb{B}_V\ \Longrightarrow\ \mathsf{M}_2(\tilde Q)^{\dagger}=-\mathsf{M}_2(\tilde Q)\ }
+$$</p>
+<p><strong>The Hermitian partner.</strong> The three Hermitian matrices $x\sigma_1+y\sigma_2+z\sigma_3$ are the image of $i\vec q$, not of $\vec q$, and $i\vec q$ is a pure <em>imaginary</em> quaternion:</p>
+<p>$$
+(i\tilde Q)^{*}=-i\,\tilde Q^{*}=-i\,(-\tilde Q)=+i\tilde Q .
+$$</p>
+<p>So the pair is clean and it is a pair of sectors:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>matrix</th>
+<th>biquaternion element</th>
+<th>sector</th>
+<th>sign under the star</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$x\sigma_1+y\sigma_2+z\sigma_3$</td>
+<td>$i\vec q$, imaginary pure</td>
+<td>$\mathbb{B}_{\Psi}\cap\mathbb{B}_V$</td>
+<td>$+$</td>
+</tr>
+<tr>
+<td>$\tfrac{i}{2}(x\sigma_1+y\sigma_2+z\sigma_3)$</td>
+<td>$-\tfrac12\vec q$, real pure</td>
+<td>$\mathbb{B}_{\Phi}\cap\mathbb{B}_V$</td>
+<td>$-$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The factor $i$ in front of the Hermitian Pauli matrices is exactly what converts a Hermitian generator into an anti-Hermitian one, and in biquaternion language it is the statement that $i$ exchanges the two sectors. That exchange is not a convention: it is the identity $(i\tilde Q)^{*}=-i\tilde Q^{*}$, which holds because the star is conjugate-linear.</p>
+<h2 id="why-the-anti-hermitian-choice-is-forced">Why the Anti-Hermitian Choice Is Forced</h2>
+<p>The strongest objection to the boxed answer is that it merely reports a convention: one could have chosen Hermitian generators and put the $i$ in the exponential, and textbooks do. The answer is that only one of the two choices closes under the bracket, and closure is a property of the algebra and not of a convention.</p>
+<h3 id="the-star-is-an-anti-automorphism">The Star Is an Anti-Automorphism</h3>
+<p><strong>Lemma.</strong> For all $\tilde Q_1,\tilde Q_2\in\mathbb{B}$,</p>
+<p>$$
+(\tilde Q_1\tilde Q_2)^{*}=\tilde Q_2^{*}\tilde Q_1^{*},\qquad
+(\tilde Q_1+\tilde Q_2)^{*}=\tilde Q_1^{*}+\tilde Q_2^{*},\qquad
+(\lambda\tilde Q)^{*}=\bar\lambda\,\tilde Q^{*}.
+$$</p>
+<p><strong>Proof.</strong> The star is the composite of the bar and the quaternion conjugation. The bar is a field automorphism of $\mathbb{C}$ extended coefficient by coefficient, hence an automorphism of $\mathbb{B}$; the quaternion conjugation of a pair $(a,\vec u)$ fixes the scalar part $ab-\vec u\cdot\vec v$ of a product and negates its vector part $a\vec v+b\vec u+\vec u\times\vec v$, so it is an anti-automorphism. A composite of an automorphism with an anti-automorphism is an anti-automorphism.</p>
+<p>The conjugate-linearity in the third line is the entry that decides the question, and it is proved on the coefficients: the bar sends $\lambda$ to $\bar\lambda$ and the quaternion conjugation leaves the scalar coefficients alone.</p>
+<p><strong>Corollary.</strong> For all $\tilde Q_1,\tilde Q_2$,</p>
+<p>$$
+[\tilde Q_1,\tilde Q_2]^{*}=-[\tilde Q_1^{*},\tilde Q_2^{*}].
+$$</p>
+<p><strong>Proof.</strong> Expand $(\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1)^{*}=\tilde Q_2^{*}\tilde Q_1^{*}-\tilde Q_1^{*}\tilde Q_2^{*}=-[\tilde Q_1^{*},\tilde Q_2^{*}]$.</p>
+<p><strong>Consequence.</strong> The anti-Hermitian subspace $\mathbb{B}_{\Phi}$ is closed under the bracket and the Hermitian subspace $\mathbb{B}_{\Psi}$ is not. If both arguments are anti-Hermitian, $\tilde Q_k^{*}=-\tilde Q_k$, and the corollary gives $[\tilde Q_1,\tilde Q_2]^{*}=-[\tilde Q_1,\tilde Q_2]$, which is the anti-Hermitian condition. If both are Hermitian, $[\tilde Q_1,\tilde Q_2]^{*}=-[\tilde Q_1,\tilde Q_2]$ as well, so the commutator of two Hermitian elements is never Hermitian unless it vanishes.</p>
+<p><strong>The bracket of two Hermitian generators therefore leaves the Hermitian space.</strong> That is the whole content of the choice. A Lie algebra of matrices with $[A,B]=AB-BA$ cannot live in $\mathbb{B}_{\Psi}$; it lives in $\mathbb{B}_{\Phi}$, and the Hermitian description survives only with an $i$ carried in the coefficients.</p>
+<h3 id="the-exponential-agrees">The Exponential Agrees</h3>
+<p>The same conclusion is reached from the group, and the two arguments are independent. For a real parameter $t$ and an element $A$ of the algebra, the curve $\exp(tA)$ is to be unitary: $\exp(tA)^{\dagger}\exp(tA)=I_2$. Expand to first order in $t$,</p>
+<p>$$
+(I_2+tA^{\dagger})(I_2+tA)=I_2+t(A^{\dagger}+A)+O(t^2),
+$$</p>
+<p>so unitarity at first order is $A^{\dagger}=-A$. Once that holds the product is exact rather than approximate: $\exp(tA)^{\dagger}\exp(tA)=\exp(tA^{\dagger})\exp(tA)=\exp(-tA)\exp(tA)=I_2$, the two exponentials being powers of one element. In biquaternion language, the anti-Hermitian condition is what makes the exponential land in the unitary group; the Hermitian condition makes it land in the Hermitian matrices, which is not a group.</p>
+<h3 id="the-hermitian-triple-and-its-complexification">The Hermitian Triple, and its Complexification</h3>
+<p>The corpus's own spin generator is the Hermitian triple</p>
+<p>$$
+\tilde S_k=\tfrac12 i\vec e_k,\qquad \mathsf{M}_2(\tilde S_k)=\tfrac12\sigma_k .
+$$</p>
+<p>It is a legitimate object, and it is not a basis of $\mathfrak{su}(2)$ over the reals. The bracket is</p>
+<p>$$
+[\tilde S_a,\tilde S_b]=i\varepsilon_{abc}\tilde S_c ,
+$$</p>
+<p>with the $i$ on the right-hand side, so the real span of the three is not closed: a real linear combination of $\tilde S_c$ cannot equal $i$ times one. The complex span is closed, and it is the complexification:</p>
+<p>$$
+\operatorname{span}_{\mathbb{C}}\{\tilde S_1,\tilde S_2,\tilde S_3\}
+=\mathfrak{sl}(2,\mathbb{C})=\mathfrak{su}(2)\otimes_{\mathbb{R}}\mathbb{C}.
+$$</p>
+<p>The real form is recovered by multiplying by $-i$, which gives $-\tfrac12\vec e_k$, back in $\mathbb{B}_{\Phi}$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>triple</th>
+<th>element</th>
+<th>sector</th>
+<th>bracket</th>
+<th>real span closed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>physics, Hermitian</td>
+<td>$\tilde S_k=\tfrac12 i\vec e_k$</td>
+<td>$\mathbb{B}_{\Psi}$</td>
+<td>$[\tilde S_a,\tilde S_b]=i\varepsilon_{abc}\tilde S_c$</td>
+<td>no</td>
+</tr>
+<tr>
+<td>anti-Hermitian</td>
+<td>$-\tfrac12\vec e_k$</td>
+<td>$\mathbb{B}_{\Phi}$</td>
+<td>$[-\tfrac12\vec e_a,-\tfrac12\vec e_b]=\tfrac12\varepsilon_{abc}\vec e_c$</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table></div>
+<p>The Casimir of the Hermitian triple is a real number, $\sum_k\tilde S_k^{\,2}=\tfrac34$, which is $s(s+1)$ at $s=\tfrac12$ and agrees with <em>Conceptual Conventions</em>. The anti-Hermitian generator $-\tfrac12\vec e_k$ is $i$ times the Hermitian one, so its square is minus the square of that one and its Casimir is $-\tfrac34$. The sign of the Casimir is the sign of the sector, not a sign of the algebra.</p>
+<h2 id="math216-and-the-central-direction">$\mathfrak{u}(2)$ and the Central Direction</h2>
+<p>Before the trace is removed, the algebra has four real dimensions, and the biquaternion name of the whole space is short.</p>
+<p><strong>$\mathbb{B}_{\Phi}$ is $\mathfrak{u}(2)$.</strong> Its elements are $iq'_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$ with all four coefficients real, so its real dimension is four, and its matrix image is the full space of anti-Hermitian $2\times2$ matrices. Then</p>
+<p>$$
+\mathbb{B}_{\Phi}=\bigl(\mathbb{B}_{\Phi}\cap\mathbb{B}_C\bigr)\oplus\bigl(\mathbb{B}_{\Phi}\cap\mathbb{B}_V\bigr)
+=\mathbb{R}(ie_t)\oplus\operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\},
+$$</p>
+<p>a split of $1+3$. The first summand is the central $\mathfrak{u}(1)$, the imaginary scalar direction; the second is $\mathfrak{su}(2)$. So</p>
+<p>$$
+\mathfrak{u}(2)=\mathfrak{su}(2)\oplus\mathfrak{u}(1),\qquad
+\mathfrak{u}(1)=\mathbb{R}(ie_t),
+$$</p>
+<p>and the traceless condition is the removal of the $ie_t$ line.</p>
+<p><strong>The central direction is the material time direction.</strong> On $\mathbb{B}_{\Phi}$ the corpus writes the material coordinate $Q_t=iq'_t$ with $q'_t=x_0$ real (<em>Frame and Metric Conventions</em>, §<em>The $\mathbb{B}_{\Phi}$ Frame</em>). Each generator of $\mathfrak{u}(2)$ therefore carries one of the four real coordinates of that frame: the coefficient of $ie_t$ is $q'_t=x_0$, and the coefficient of $\vec e_k$ is $q_k=x_k$. The trace is twice the scalar coefficient, $\operatorname{tr}\mathsf{M}_2(\tilde Q)=2Q_t=2ix_0$, so the trace reads the time coordinate. Removing it keeps the three space directions and drops the time direction, which is the cleanest way to see why $\mathfrak{su}(2)$ is three-dimensional.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>element of $\mathbb{B}_{\Phi}$</th>
+<th>matrix</th>
+<th>coefficient</th>
+<th>role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$ie_t$</td>
+<td>$iI_2$</td>
+<td>$q'_t=x_0$</td>
+<td>the central $\mathfrak{u}(1)$, the trace</td>
+</tr>
+<tr>
+<td>$\vec e_x$</td>
+<td>$-i\sigma_1$</td>
+<td>$q_x=x_1$</td>
+<td>$\mathfrak{su}(2)$</td>
+</tr>
+<tr>
+<td>$\vec e_y$</td>
+<td>$-i\sigma_2$</td>
+<td>$q_y=x_2$</td>
+<td>$\mathfrak{su}(2)$</td>
+</tr>
+<tr>
+<td>$\vec e_z$</td>
+<td>$-i\sigma_3$</td>
+<td>$q_z=x_3$</td>
+<td>$\mathfrak{su}(2)$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="math255-beyond-the-algebra">$\mathfrak{su}(n)$ Beyond the Algebra</h2>
+<p>The biquaternion algebra is the case $n=2$ of a matrix algebra, and $\mathfrak{su}(n)$ for $n\ge3$ is not a subspace of $\mathbb{B}$. The translation is therefore not a translation of the object but of the structure, and it has to be stated with the same care.</p>
+<h3 id="the-real-and-imaginary-parts">The Real and Imaginary Parts</h3>
+<p>A matrix $A$ is anti-Hermitian exactly when its real part is real antisymmetric and its imaginary part is $i$ times a real symmetric matrix. Write $A=K+iS$ with $K,S$ real. Then</p>
+<p>$$
+A^{\dagger}=K^{\mathsf T}-iS^{\mathsf T}=-A=-K-iS
+\iff K^{\mathsf T}=-K,\quad S^{\mathsf T}=S,
+$$</p>
+<p>and the trace condition is $\operatorname{tr}A=i\operatorname{tr}S=0$, so $S$ is traceless. Hence</p>
+<p>$$
+\mathfrak{su}(n)=\mathfrak{so}(n)\oplus i\,\mathrm{Sym}_0(n,\mathbb{R}),
+$$</p>
+<p>a direct sum of real vector spaces, with dimension $\tfrac{n(n-1)}{2}+\bigl(\tfrac{n(n+1)}{2}-1\bigr)=n^2-1$.</p>
+<h3 id="the-split-is-a-grading-not-a-direct-sum-of-algebras">The Split Is a Grading, Not a Direct Sum of Algebras</h3>
+<p>The draft of the question called this a splitting, and the word is true of vector spaces only. The bracket mixes the two summands, and the pattern is the one of a symmetric pair.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>bracket</th>
+<th>lands in</th>
+<th>computation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$[\mathfrak{so}(n),\mathfrak{so}(n)]$</td>
+<td>$\mathfrak{so}(n)$</td>
+<td>antisymmetric times antisymmetric: the commutator is antisymmetric</td>
+</tr>
+<tr>
+<td>$[\mathfrak{so}(n),i\,\mathrm{Sym}_0]$</td>
+<td>$i\,\mathrm{Sym}_0$</td>
+<td>$[K,iS]=i[K,S]$, and the commutator of an antisymmetric and a symmetric matrix is symmetric</td>
+</tr>
+<tr>
+<td>$[i\,\mathrm{Sym}_0,i\,\mathrm{Sym}_0]$</td>
+<td>$\mathfrak{so}(n)$</td>
+<td>$[iS_1,iS_2]=-[S_1,S_2]$, and the commutator of two symmetric matrices is antisymmetric</td>
+</tr>
+</tbody>
+</table></div>
+<p>So $\mathfrak{so}(n)$ is a subalgebra and is not an ideal, and $i\mathrm{Sym}_0$ is not a subalgebra. The pair is a $\mathbb{Z}_2$-grading, $\mathfrak{su}(n)=\mathfrak{k}\oplus\mathfrak{p}$ with $[\mathfrak{k},\mathfrak{k}]\subset\mathfrak{k}$, $[\mathfrak{k},\mathfrak{p}]\subset\mathfrak{p}$, $[\mathfrak{p},\mathfrak{p}]\subset\mathfrak{k}$, and the quotient $\mathrm{SU}(n)/\mathrm{SO}(n)$ is the symmetric space the grading comes from. An article that calls the sum a direct sum of Lie algebras asserts that $i\mathrm{Sym}_0$ is an ideal, which is false at every $n\ge2$.</p>
+<h3 id="what-the-algebra-says-at-math287">What the Algebra Says at $n=2$</h3>
+<p>At $n=2$ the grading is visible in biquaternion language, and it is an axis and a plane. The pure real quaternions split along any chosen unit pure quaternion $\vec u$:</p>
+<p>$$
+\operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}=\mathbb{R}\vec u\oplus\bigl(\vec u^{\perp}\cap\mathbb{B}_V\cap\mathbb{B}_H\bigr),
+$$</p>
+<p>with $[\vec u,\vec u^{\perp}]\subset\vec u^{\perp}$ and $[\vec u^{\perp},\vec u^{\perp}]\subset\mathbb{R}\vec u$, since the vector product of two vectors orthogonal to $\vec u$ is parallel to $\vec u$. This is the symmetric pair of the sphere $S^2=\mathrm{SU}(2)/\mathrm{SO}(2)$, written without a matrix. With $\vec u=\vec e_y$ the two summands are $\mathbb{R}\vec e_y$ and $\mathrm{span}\{\vec e_x,\vec e_z\}$, which are the preimages of $\mathfrak{so}(2)$ and of $i\mathrm{Sym}_0(2,\mathbb{R})$.</p>
+<h3 id="the-trap-at-math301-the-math302-of-math303">The Trap at $n=2$: the $i$ of $i\,\mathrm{Sym}_0$</h3>
+<p>The summand $i\mathrm{Sym}_0(2,\mathbb{R})$ is a set of matrices, and its preimages are <em>real</em> pure quaternions, not imaginary ones. The reason is that the dictionary already carries an $i$: for $b,a$ real,</p>
+<p>$$
+i\begin{pmatrix}0&b\\b&0\end{pmatrix}=i\sigma_1b=\mathsf{M}_2(-b\vec e_x),\qquad
+i\begin{pmatrix}a&0\\0&-a\end{pmatrix}=i\sigma_3a=\mathsf{M}_2(-a\vec e_z).
+$$</p>
+<p>So the two summands of $\mathfrak{su}(2)$ read on the algebra are $\mathbb{R}\vec e_y$ and $\mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_z}$, and the "$i$" of the matrix split is absorbed by the $-i$ of the dictionary. A translation that keeps the $i$, and writes the second summand as $\mathrm{span}\{i\vec e_x,i\vec e_z\}$, puts a Hermitian space inside an anti-Hermitian algebra: it is the third place where a hasty translation invents a factor.</p>
+<h3 id="what-the-algebra-cannot-say-at-math315">What the Algebra Cannot Say at $n\ge3$</h3>
+<p>Nothing, and the reason is structural. The split $A=K+iS$ is a statement about a complex matrix and the real structure of its entries, and $\mathbb{B}$ is the algebra $M_2(\mathbb{C})$ and no other. At $n=3$ the real dimensions coincide, $8$ and $8$, and the coincidence does not help: equality of dimension is not an embedding, and $\mathfrak{su}(3)$ is simple while the real Lie algebra of $\mathbb{B}$ carries the central line $\mathbb{R}(ie_t)$. So the general-$n$ statements stay matrix statements, and $\mathbb{B}$ is used for the case $n=2$, where every one of them can be checked in the algebra.</p>
+<h2 id="the-inclusion-math328">The Inclusion $\mathfrak{so}(n)\subset\mathfrak{su}(n)$</h2>
+<p>The inclusion is $S=0$ in $A=K+iS$: the real antisymmetric matrices are anti-Hermitian and traceless, so $\mathfrak{so}(n)\subset\mathfrak{su}(n)$, and the dimension count matches, $\tfrac{n(n-1)}{2}\le n^2-1$ for every $n\ge1$, with equality only at $n=1$, where both sides vanish.</p>
+<p><strong>The inclusion is real, not complex.</strong> This is the point the inclusion shares with the whole article. If $K$ is real antisymmetric then $iK$ is Hermitian, so $iK\in\mathfrak{su}(n)$ only when $K=0$. In biquaternion language, applied at $n=2$,</p>
+<p>$$
+\tilde Q\in\mathbb{B}_{\Phi}\ \Rightarrow\ \tilde Q^{*}=-\tilde Q
+\quad\Rightarrow\quad (i\tilde Q)^{*}=-i\,\tilde Q^{*}=+i\tilde Q ,
+$$</p>
+<p>so $i\tilde Q\in\mathbb{B}_{\Psi}$ and $i\tilde Q\notin\mathfrak{su}(2)$ unless $\tilde Q=0$. The complex line through a real antisymmetric matrix leaves the algebra at the first step.</p>
+<h3 id="at-math344-the-inclusion-is-one-axis">At $n=2$ the Inclusion Is One Axis</h3>
+<p>The images of the real antisymmetric matrices are computed from the dictionary. With $t$ real,</p>
+<p>$$
+-t\vec e_y\ \mapsto\ -t(-i\sigma_2)=t\,i\sigma_2=\begin{pmatrix}0&t\\-t&0\end{pmatrix},
+$$</p>
+<p>so</p>
+<p>$$
+\mathfrak{so}(2)=\mathbb{R}\vec e_y=\mathfrak{su}(2)\cap M_2(\mathbb{R}).
+$$</p>
+<p>The identification is exact: an element of $\mathfrak{su}(2)$ whose matrix is real must have $Q_x=Q_z=0$, since $-iQ_x$ and $-iQ_z$ are real only for $Q_x=Q_z=0$, and then $Q_y$ is real. So $\mathfrak{so}(2)$ is the unique real line inside $\mathfrak{su}(2)$, and it is $\mathbb{R}\vec e_y$.</p>
+<h3 id="the-axis-and-the-torus">The Axis and the Torus</h3>
+<p>Two lines are often named here, and they are different lines.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>line</th>
+<th>image</th>
+<th>shape of the image</th>
+<th>entries</th>
+<th>in $\mathfrak{so}(2)$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{R}\vec e_y$</td>
+<td>$-i\sigma_2$</td>
+<td>off the diagonal</td>
+<td>real, $t$ and $-t$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$\mathbb{R}\vec e_z$</td>
+<td>$-i\sigma_3$</td>
+<td>diagonal</td>
+<td>purely imaginary, $-it$ and $it$</td>
+<td>no</td>
+</tr>
+</tbody>
+</table></div>
+<p>$\mathbb{R}\vec e_z$ is a Cartan subalgebra of $\mathfrak{su}(2)$: one-dimensional, diagonal, abelian, and maximal for that reason. $\mathbb{R}\vec e_y$ is also one-dimensional and abelian, and is therefore also a Cartan subalgebra. The two are conjugate by an inner automorphism — a rotation carrying $\vec e_y$ to $\vec e_z$ — so they are the same line up to the choice of axis, and the choice of axis is a choice of frame and not a statement of the algebra.</p>
+<p><strong>Only one of the two is real.</strong> $\mathbb{R}\vec e_y$ consists of real matrices and $\mathbb{R}\vec e_z$ consists of imaginary diagonal ones. So the phrase "$\mathfrak{so}(2)$ is the diagonal direction" is false, and the phrase "the diagonal torus is $\mathbb{R}\vec e_y$" is false as well. The diagonal torus is $\mathbb{R}\vec e_z$; $\mathfrak{so}(2)$ is the real line $\mathbb{R}\vec e_y$; and the two are exchanged by a rotation.</p>
+<h2 id="the-objection-from-the-dictionary">The Objection from the Dictionary</h2>
+<p><strong>The objection.</strong> The whole translation rests on one assignment of the three vector units to three matrices. Change the assignment — permute the matrices, or conjugate the whole dictionary by a unitary — and the statements about axes change, so the translation is a convention and not a theorem.</p>
+<p><strong>The answer, in three parts.</strong> First, the assignment is not free. It is forced by $\vec e_k^{\,2}=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, as §<em>The Matrix Image</em> records, so the only freedom left is the ordering of the three images, and the ordering is a labelling: the algebra names the three axes and does not rank them.</p>
+<p>Second, the statement that survives is the one about the whole space and not about its axes. The proposition "$X$ is anti-Hermitian because it is the image of a real pure quaternion" is invariant under conjugation by a unitary, since $(UAU^{\dagger})^{\dagger}=-UAU^{\dagger}$ whenever $A^{\dagger}=-A$. What such a conjugation moves is the axis inside $\mathfrak{su}(2)$ — which of $\vec e_x,\vec e_y,\vec e_z$ is the real one, which is the diagonal one — and that is a statement about a frame, not about the algebra.</p>
+<p>Third, the sector statement is invariant in the strongest sense. The identities $\mathsf{M}_2(\tilde Q^{*})=\mathsf{M}_2(\tilde Q)^{\dagger}$ and $(i\tilde Q)^{*}=-i\tilde Q^{*}$ are proved from the definition of the star and from the conjugate-linearity of the bar. They hold for every assignment of the vector units to anti-Hermitian matrices, because every such assignment sends the bar to the entry conjugation and the quaternion conjugation to the anti-Hermitian sign. So the answer to the question depends on the ingredients that are fixed by the algebra, and on none of the ingredients that are chosen.</p>
+<h2 id="the-comparison-table">The Comparison Table</h2>
+<p>The table states every step of the translation in one place. The left column is the matrix statement; the right column is the biquaternion statement, in the notation of <em>Algebra and Element Conventions</em>.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>matrix statement</th>
+<th>biquaternion statement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A\in\mathfrak{su}(2)$</td>
+<td>$\tilde Q\in\mathbb{B}_{\Phi}\cap\mathbb{B}_V$, a real pure quaternion</td>
+</tr>
+<tr>
+<td>$A^{\dagger}=-A$</td>
+<td>$\tilde Q^{*}=-\tilde Q$</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}A=0$</td>
+<td>$Q_t=0$, no $e_t$ component</td>
+</tr>
+<tr>
+<td>$A^{\dagger}=A$</td>
+<td>$\tilde Q^{*}=\tilde Q$, the Hermitian subspace $\mathbb{B}_{\Psi}$</td>
+</tr>
+<tr>
+<td>basis $\{i\sigma_1,i\sigma_2,i\sigma_3\}$</td>
+<td>basis $\{\vec e_x,\vec e_y,\vec e_z\}$, up to the sign of the dictionary</td>
+</tr>
+<tr>
+<td>$[T_a,T_b]=-2\varepsilon_{abc}T_c$</td>
+<td>$[\vec e_a,\vec e_b]=2\varepsilon_{abc}\vec e_c$</td>
+</tr>
+<tr>
+<td>$X=\tfrac{i}{2}(x\sigma_1+y\sigma_2+z\sigma_3)$</td>
+<td>$-\tfrac12(x\vec e_x+y\vec e_y+z\vec e_z)$, a real pure quaternion</td>
+</tr>
+<tr>
+<td>$X$ anti-Hermitian</td>
+<td>a real pure quaternion is anti-Hermitian under the star</td>
+</tr>
+<tr>
+<td>$x\sigma_1+y\sigma_2+z\sigma_3$ Hermitian</td>
+<td>$i(x\vec e_x+y\vec e_y+z\vec e_z)$, an imaginary pure quaternion</td>
+</tr>
+<tr>
+<td>$\mathfrak{u}(2)$</td>
+<td>$\mathbb{B}_{\Phi}$, the anti-Hermitian subspace</td>
+</tr>
+<tr>
+<td>$\mathfrak{u}(1)$ central</td>
+<td>$\mathbb{R}(ie_t)$, the imaginary scalar line</td>
+</tr>
+<tr>
+<td>$\mathfrak{so}(2)\subset\mathfrak{su}(2)$</td>
+<td>$\mathbb{R}\vec e_y\subset\operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$</td>
+</tr>
+<tr>
+<td>the diagonal torus of $\mathfrak{su}(2)$</td>
+<td>$\mathbb{R}\vec e_z$, a Cartan line, not $\mathfrak{so}(2)$</td>
+</tr>
+<tr>
+<td>$iA\notin\mathfrak{su}(n)$ for real antisymmetric $A$</td>
+<td>$(i\tilde Q)^{*}=+i\tilde Q$, so $i\tilde Q\in\mathbb{B}_{\Psi}$</td>
+</tr>
+<tr>
+<td>$\mathfrak{su}(n)=\mathfrak{so}(n)\oplus i\,\mathrm{Sym}_0(n,\mathbb{R})$</td>
+<td>$\mathfrak{su}(2)=\mathbb{R}\vec e_y\oplus\operatorname{span}\{\vec e_x,\vec e_z\}$, an axis and a plane</td>
+</tr>
+<tr>
+<td>the split is a vector split only</td>
+<td>a $\mathbb{Z}_2$-grading, the symmetric pair of $\mathrm{SU}(n)/\mathrm{SO}(n)$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>In biquaternion language, $\mathfrak{su}(2)$ is the space of real pure quaternions, $\mathbb{B}_{\Phi}\cap\mathbb{B}_V$, and the translation is exact at every step. The trace is the centre: $\operatorname{tr}\mathsf{M}_2(\tilde Q)=2Q_t$ kills the scalar part. The dagger is the star: $\mathsf{M}_2(\tilde Q^{*})=\mathsf{M}_2(\tilde Q)^{\dagger}$. The anti-Hermitian condition is $\tilde Q^{*}=-\tilde Q$, which on a pure element forces the three vector coefficients to be real.</p>
+<p>The element $X=\tfrac{i}{2}(x\sigma_1+y\sigma_2+z\sigma_3)$ is anti-Hermitian because it is $-\tfrac12$ times a real pure quaternion, and a real pure quaternion is anti-Hermitian under the star. The factor $i$ in front of the Hermitian Pauli matrices is the same $i$ that the dictionary carries; the two multiply to $-1$, and the $-1$ is the global sign of the dictionary. There is no further rescaling.</p>
+<p>The Hermitian triple is the other sector: $i\vec q$, and its spin form $\tilde S_k=\tfrac12 i\vec e_k$. It satisfies $[\tilde S_a,\tilde S_b]=i\varepsilon_{abc}\tilde S_c$, so its real span is not a Lie algebra; the real form is obtained by multiplying by $-i$, which returns to $\mathbb{B}_{\Phi}$.</p>
+<p>The anti-Hermitian choice is forced twice, by the bracket and by the exponential. The star is an anti-automorphism, so $[\tilde Q_1,\tilde Q_2]^{*}=-[\tilde Q_1^{*},\tilde Q_2^{*}]$, and $\mathbb{B}_{\Phi}$ is closed under the bracket while $\mathbb{B}_{\Psi}$ is not. And $\exp(tA)$ is unitary to first order exactly when $A^{\dagger}=-A$.</p>
+<p>For $n\ge3$ the algebra speaks only through its structure. The statement $\mathfrak{su}(n)=\mathfrak{so}(n)\oplus i\mathrm{Sym}_0(n,\mathbb{R})$ is a direct sum of real vector spaces and a $\mathbb{Z}_2$-grading, not a direct sum of Lie algebras. At $n=2$ the grading is an axis and a plane, and the "$i$" of $i\mathrm{Sym}_0$ is absorbed by the dictionary: the summand is $\operatorname{span}\{\vec e_x,\vec e_z\}$, not $\operatorname{span}\{i\vec e_x,i\vec e_z\}$.</p>
+<p>The inclusion $\mathfrak{so}(n)\subset\mathfrak{su}(n)$ is an inclusion of real spaces. At $n=2$ it is $\mathbb{R}\vec e_y=\mathfrak{su}(2)\cap M_2(\mathbb{R})$, and the diagonal torus $\mathbb{R}\vec e_z$ is a different line, conjugate to it by an inner automorphism.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>the biquaternion algebra, $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$</td>
+</tr>
+<tr>
+<td>$\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$</td>
+<td>the generic element, $Q_\mu=q_\mu+iq'_\mu$</td>
+</tr>
+<tr>
+<td>$\vec Q$</td>
+<td>a pure element, the vector part of an element read on its own</td>
+</tr>
+<tr>
+<td>$\bar{\cdot}$, ${}^{\natural}$, ${}^{*}$, ${}^{\flat}$</td>
+<td>the coefficient bar, the quaternion conjugation, the star ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, and the anti-Hermitian sign ${}^{\flat}=-{}^{*}$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_C$, $\mathbb{B}_V$</td>
+<td>the centre and the vector subspace, $\mathbb{B}_C\oplus\mathbb{B}_V=\mathbb{B}$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_H$, $\mathbb{B}_{iH}$</td>
+<td>the quaternion and antiquaternion subspaces, the real and imaginary halves</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$</td>
+<td>the Hermitian and anti-Hermitian subspaces, the fixed and anti-fixed spaces of the star</td>
+</tr>
+<tr>
+<td>$\mathsf{M}_2(\tilde Q)$</td>
+<td>the $2\times2$ image, $Q_tI_2-i(Q_x\sigma_1+Q_y\sigma_2+Q_z\sigma_3)$</td>
+</tr>
+<tr>
+<td>$\sigma_1,\sigma_2,\sigma_3$</td>
+<td>the Pauli matrices, used as a dictionary only</td>
+</tr>
+<tr>
+<td>$A^{\dagger}$</td>
+<td>the conjugate transpose $\overline{A}^{\mathsf T}$</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}$, $I_2$</td>
+<td>the trace and the $2\times2$ identity</td>
+</tr>
+<tr>
+<td>$T_a=i\sigma_a$</td>
+<td>the corpus basis of $\mathfrak{su}(2)$, equal to $-\vec e_a$</td>
+</tr>
+<tr>
+<td>$J_a=\tfrac{i}{2}\sigma_a$</td>
+<td>the physics basis, equal to $-\tfrac12\vec e_a$</td>
+</tr>
+<tr>
+<td>$\tilde S_k=\tfrac12 i\vec e_k$</td>
+<td>the spin generator, Hermitian, with image $\tfrac12\sigma_k$</td>
+</tr>
+<tr>
+<td>$\mathfrak{su}(n)$, $\mathfrak{u}(n)$</td>
+<td>the anti-Hermitian traceless, and the anti-Hermitian, $n\times n$ matrices</td>
+</tr>
+<tr>
+<td>$\mathrm{Sym}_0(n,\mathbb{R})$</td>
+<td>the real symmetric traceless $n\times n$ matrices</td>
+</tr>
+<tr>
+<td>$\varepsilon_{abc}$</td>
+<td>the Levi-Civita symbol, $\varepsilon_{123}=+1$</td>
+</tr>
+<tr>
+<td>$\vec u$</td>
+<td>a unit pure quaternion, the axis of a rotation</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Algebra and Element Conventions</em>, for the base, the six subspaces and the four conjugations.</li>
+<li><em>Matrix Representations Conventions</em>, for the $2\times2$ image, its forcing, and the rule on the Pauli matrices.</li>
+<li><em>The Lie Correspondence for the Special Unitary Groups: $\mathfrak{su}(n)\leftrightarrow\mathrm{SU}(n)$</em>, for the five statements, the basis $T_a=i\sigma_a$ and the Killing form.</li>
+<li><em>The Special Unitary Groups: $\mathrm{SU}(1)$, $\mathrm{SU}(2)$, $\mathrm{SU}(3)$, $\mathrm{SU}(4)$, $\mathrm{SU}(5)$, $\mathrm{SU}(6)$, $\mathrm{SU}(7)$, $\mathrm{SU}(8)$, $\mathrm{SU}(n)$</em>, for the normal forms, the ladder and the centre.</li>
+<li><em>The Lie Correspondence for the Rotations</em>, for the same correspondence over $\mathbb{R}$, where the algebra is $\mathfrak{so}(n)$.</li>
+<li><em>Frame and Metric Conventions</em>, for the $\mathbb{B}_{\Phi}$ frame, the coordinate $Q_t=iq'_t$ and the material real coordinate.</li>
+<li><em>Conceptual Conventions</em>, for the spin $\tilde S_k=\tfrac12 i\vec e_k$, the Casimir $s(s+1)$ and the rule on the Pauli matrices.</li>
+<li><em>The Hermitian Element: An Inventory of the Real Scalar and the Imaginary Vector</em>, for the sector split $\tilde Q=\tilde Q_{\Psi}+\tilde Q_{\Phi}$ at work.</li>
+</ul>
+<h2 id="verification">Verification</h2>
+<p>Scratch scripts under <code>/tmp/su2chk/</code>, outside the repository, recompute the claims on samples of twenty to one hundred elements. Each entry is a printed residual; a residual of zero is an exact zero in floating point, which happens because the entries are small integers or because the identity is structural.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>claim</th>
+<th>computation</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathsf{M}_2$ is multiplicative</td>
+<td>$50$ random pairs</td>
+<td>$4.0\times10^{-15}$</td>
+</tr>
+<tr>
+<td>$\mathsf{M}_2(\tilde Q^{*})=\mathsf{M}_2(\tilde Q)^{\dagger}$</td>
+<td>$100$ random elements</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}\mathsf{M}_2(\tilde Q)=2Q_t$</td>
+<td>$100$ random elements</td>
+<td>$4.6\times10^{-16}$</td>
+</tr>
+<tr>
+<td>a real pure quaternion is anti-Hermitian</td>
+<td>$30$ random samples</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>a real pure quaternion is traceless</td>
+<td>the same $30$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$[\vec e_a,\vec e_b]=2\varepsilon_{abc}\vec e_c$</td>
+<td>all nine brackets</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\mathfrak{su}(2)$ is closed under the bracket</td>
+<td>$25$ pairs</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>the Hermitian pure space is not closed</td>
+<td>$25$ pairs</td>
+<td>the bracket is anti-Hermitian to $0$ and Hermitian to no closer than $1.05$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{\Phi}$ is closed under the bracket</td>
+<td>$25$ pairs</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$(i\tilde Q)^{*}=-i\tilde Q^{*}$</td>
+<td>$100$ elements from both sectors</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$i\mathfrak{su}(2)$ is Hermitian</td>
+<td>$25$ elements</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\mathsf{M}_2\bigl(-\tfrac12\vec q\bigr)=X$</td>
+<td>$50$ random $(x,y,z)$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>the sign is minus, not plus</td>
+<td>the same $50$ with $+\tfrac12\vec q$</td>
+<td>fails by $2.78$</td>
+</tr>
+<tr>
+<td>$[J_a,J_b]=-\varepsilon_{abc}J_c$</td>
+<td>all nine brackets</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\mathsf{M}_2\bigl(-\tfrac12\vec e_a\bigr)=J_a$</td>
+<td>the three units</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\mathsf{M}_2(-t\vec e_y)$ is the real antisymmetric matrix of the plane</td>
+<td>$20$ random $t$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>only $\mathbb{R}\vec e_y$ is real inside $\mathfrak{su}(2)$</td>
+<td>$100$ random elements; then $-t\vec e_y$ and $-t\vec e_z$</td>
+<td>$0$ of $100$ have a real matrix; $\vec e_y$ real to $0$, $\vec e_z$ imaginary</td>
+</tr>
+<tr>
+<td>$\mathsf{M}_2(\tilde S_k)=\tfrac12\sigma_k$</td>
+<td>the three generators</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$[\tilde S_a,\tilde S_b]=i\varepsilon_{abc}\tilde S_c$</td>
+<td>all nine brackets</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>the Casimir $\sum_k\tilde S_k^{\,2}$</td>
+<td>the sum</td>
+<td>$0.750+0.000i$</td>
+</tr>
+<tr>
+<td>the real dimensions</td>
+<td>$\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$, $\mathbb{B}_V$, $\mathbb{B}_C$, the two traceless halves, $\mathbb{B}_{\Phi}\cap\mathbb{B}_C$</td>
+<td>$4,4,6,2,3,3,1$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{\Phi}=(\mathbb{B}_{\Phi}\cap\mathbb{B}_C)\oplus(\mathbb{B}_{\Phi}\cap\mathbb{B}_V)$</td>
+<td>the intersection ranks</td>
+<td>$1+3=4$</td>
+</tr>
+<tr>
+<td>$\mathfrak{su}(n)=\mathfrak{so}(n)\oplus i\mathrm{Sym}_0$ grades</td>
+<td>$n=2,3,4$, one pair each</td>
+<td>$[\mathfrak{k},\mathfrak{k}]$, $[\mathfrak{k},\mathfrak{p}]$, $[\mathfrak{p},\mathfrak{p}]$ all in their targets, defect $0$</td>
+</tr>
+<tr>
+<td>$\dim_{\mathbb{R}}\mathfrak{su}(n)=n^2-1$</td>
+<td>$n=2,3,4$</td>
+<td>$3,8,15$</td>
+</tr>
+</tbody>
+</table></div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

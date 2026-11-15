@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Cayley–Dickson Construction of the Quaternion Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-cayleydickson-construction-of-the-quaternion-algebra"><strong>The Cayley–Dickson Construction of the Quaternion Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> This article builds the algebra of <em>Quaternion Algebra</em>, above this article in this category, from the complex algebra by one doubling step. The multiplication table of that article is stated there and derived here, from the single rule that defines the doubling.</p>
+<p><strong>What the construction uses.</strong> The base units only: the scalar unit $e_t$ and the three vector units $\vec e_x,\vec e_y,\vec e_z$. The only imaginary unit is $\vec e_z$, and it is the complex unit of the base. The third vector unit is not introduced independently: it is computed, $\vec e_y=\vec e_z\vec e_x$.</p>
+<p><strong>What the construction does not use.</strong> No array, no representation, no second triple of units, and no symbol of its own for the complex unit.</p>
+<p><strong>Why the step is worth writing out.</strong> A table stated is not a table explained, and one feature of the quaternion table invites the reading that it is a convention: the signs of the ordered products. The doubling shows that one sign and one twist produce the whole table with no freedom left. The sign is the square of the new unit, $\vec e_x^2=-e_t$. The twist is the rule that the new unit passes to the other side of a base element conjugated, $\vec e_xw=\bar w\vec e_x$. Those two choices are made in §<em>The Doubling Step</em>, they are cashed in §<em>Hamilton's Rules</em>, and the second of them is shown in §<em>The Twisting Rule</em> to be what keeps the algebra free of zero divisors.</p>
+<p><strong>Boundaries.</strong> The base is <em>Complex Algebra</em>, in the complex category; the general doubling, its recursion, the saturation at the octonions and the Hurwitz theorem are <em>Quadratic Forms over Algebras and Norms</em>, §<em>The Cayley–Dickson Doubling</em>, and are cited and not repeated. The table, the conjugations and the subspaces are <em>Quaternion Algebra</em>, above this article in this category; the classes of element are <em>The Specificities of the Quaternion Algebra</em>, below; and the norm, its multiplicativity and the invertibility criterion it supplies are <em>Norm and Invertibility in the Quaternion Algebra</em>, below. The same step taken with the other sign gives the split quaternions, and it is <em>Split-Quaternion Algebra</em>. The same construction taken one layer up, where the step from $\mathbb{H}$ to $\mathbb{B}$ is a scalar extension rather than a rung, is <em>The Cayley–Dickson Construction of the Biquaternion Algebra</em>, in the Biquaternions category.</p>
+<h2 id="the-base-and-its-units">The Base and Its Units</h2>
+<h3 id="the-units-and-the-coefficients">The Units and the Coefficients</h3>
+<p><strong>One unit to a direction.</strong> The base is written with the letter $e$, one unit to a direction. The scalar unit is $e_t=1$. The three vector units are $\vec e_x,\vec e_y,\vec e_z$. The arrow is the only mark that separates the scalar unit from a vector unit.</p>
+<p><strong>The base letter and the unit-element letter.</strong> The base letter is $e$ and the unit-element letter is $u$, and the two are never exchanged. The unit element of the doubled layer is written $\tilde u$, and it is $e_t$. Because the base units carry $e$, the letter $e$ is not available for the exponential, which is written $\exp(\cdot)$.</p>
+<p><strong>The coefficients.</strong> A coefficient carries the name of the direction it multiplies. The coefficient $q_x$ multiplies $\vec e_x$, the coefficient $q_y$ multiplies $\vec e_y$, and the coefficient $q_z$ multiplies $\vec e_z$. The label on the unit names the direction, and the label on the coefficient names the same direction, so the pair reads without ambiguity.</p>
+<p><strong>The three vector units are the quaternion units</strong>, the corpus's replacement for the three classical imaginaries. In the quaternion layer each squares to the negative of the scalar unit, $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$, and §<em>Hamilton's Rules</em> derives exactly this.</p>
+<h3 id="the-generic-element-and-the-pure-element">The Generic Element and the Pure Element</h3>
+<p><strong>The glyphs.</strong> The case and the tilde of the glyph are fixed first, and the element is written after. The tilde marks the quaternionic factor, that is the presence of the doubling unit $\vec e_x$; a base element carries none, and it is written with the letter $w$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Element</th>
+<th>Scalar part</th>
+<th>Vector part</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{C}$</td>
+<td>$w=u+v\vec e_z$</td>
+<td>$u$, real</td>
+<td>none</td>
+</tr>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>$\tilde q=q_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$</td>
+<td>$q_t$, real</td>
+<td>$q_x\vec e_x$, $q_y\vec e_y$, $q_z\vec e_z$, real</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>One family of letters.</strong> The generic element of the doubled layer is $\tilde q$, and no letter outside that family stands for an arbitrary element of the algebra. A statement that holds for every element is written with $\tilde q$; a statement that needs two elements writes them $\tilde q_1$ and $\tilde q_2$, and a third takes the next number. The number counts the element and never names a direction; a letter names the direction. A letter outside the family names a specific object, or an element bound where it is introduced — the coefficients $a,b,c,d$ of §<em>The Doubling Step</em> are of that kind.</p>
+<p><strong>The pure element.</strong> The element is a scalar part plus, in the doubled layer, a vector part,</p>
+<p>$$
+\tilde q=q_te_t+\vec q .
+$$</p>
+<p>A pure element is one with no scalar part, and it is written with the arrow of the vector part: $\vec q$ is the pure element of the quaternion layer. The arrow marks purity, not magnitude, so a pure element is of arbitrary magnitude; the unit pure element, the axis of a rotation, is written $\vec u$, and its unit length is carried by the construction that names it. The arrow and the tilde are never stacked: the arrow replaces the tilde rather than being laid on it, so a pure element is $\vec q$ and never an arrowed $\tilde q$.</p>
+<h2 id="the-base-algebra">The Base Algebra</h2>
+<p><strong>The base.</strong> The complex algebra of the doubling is the plane spanned by $e_t$ and $\vec e_z$,</p>
+<p>$$
+\mathbb{C}=\mathbb{R}[\vec e_z]=\{\,u+v\vec e_z:u,v\in\mathbb{R}\,\},\qquad \vec e_z^2=-e_t ,
+$$</p>
+<p>with the product read off the square and the commutativity of the two units,</p>
+<p>$$
+(u+v\vec e_z)(u'+v'\vec e_z)=(uu'-vv')+(uv'+vu')\vec e_z .
+$$</p>
+<p>The algebra is that of <em>Complex Algebra</em>, in the complex category, written in the base units of this one.</p>
+<p><strong>No second imaginary symbol.</strong> The complex unit of the doubling is the vector unit $\vec e_z$, and the base is written with it. The coefficient field of the doubling is therefore the plane itself, and the construction needs no symbol of its own for its imaginary unit: the only imaginary unit in this article is $\vec e_z$.</p>
+<h3 id="the-conjugation-of-the-base">The Conjugation of the Base</h3>
+<p><strong>The bar.</strong> The conjugation of the base flips the vector unit and fixes the scalar unit,</p>
+<p>$$
+\bar w=u-v\vec e_z,\qquad \overline{\vec e_z}=-\vec e_z,\qquad \overline{e_t}=e_t ,
+$$</p>
+<p>so that</p>
+<p>$$
+w\bar w=u^2+v^2\in\mathbb{R}_{\geq0} .
+$$</p>
+<p><strong>The bar is an involution.</strong> Applying it twice returns the element, $\overline{\bar w}=w$, because the two signs cancel. It reverses the order of a product, $\overline{ww'}=\bar w'\bar w$, and the base is commutative, so the reversal is invisible and the bar reads as an automorphism of the product as well. That reversal is not invisible on the doubled layer, where it is the content of §<em>Conjugation, the Norm and the Inverse</em>.</p>
+<p><strong>The coefficients of the doubling rule.</strong> In the product rule of §<em>The Doubling Step</em> the coefficients of the base are written $a,b,c,d$. They are bound at the point of use, they are elements of the base and not of the doubled algebra, and $\bar a,\bar b,\bar c,\bar d$ are their bar-conjugates.</p>
+<h2 id="the-doubling-step">The Doubling Step</h2>
+<h3 id="the-space">The Space</h3>
+<p><strong>The double.</strong> The doubled algebra is the real vector space of pairs of base elements,</p>
+<p>$$
+\mathbb{H}=\mathbb{C}\oplus\mathbb{C}\vec e_x=\{\,a+b\vec e_x:a,b\in\mathbb{C}\,\},
+$$</p>
+<p>made into an algebra by the product rule of the next subsection. The new symbol $\vec e_x$ names a vector direction, and it carries the arrow for that reason. The real basis is</p>
+<p>$$
+e_t,\qquad \vec e_z,\qquad \vec e_x,\qquad \vec e_z\vec e_x ,
+$$</p>
+<p>which is four elements because $1,\vec e_z$ is a basis of the base and $b\vec e_x=(u+v\vec e_z)\vec e_x=u\vec e_x+v\vec e_z\vec e_x$ for a base element $b=u+v\vec e_z$. The dimension doubles, as the doubling requires.</p>
+<h3 id="the-product-rule">The Product Rule</h3>
+<p><strong>The rule.</strong> For $a,b,c,d$ in the base,</p>
+<p>$$
+(a+b\vec e_x)(c+d\vec e_x)=(ac-b\bar d)+(ad+b\bar c)\,\vec e_x .
+$$</p>
+<p><strong>The two generating rules.</strong> The product rule is equivalent to the pair</p>
+<p>$$
+\vec e_x^2=-e_t,\qquad \vec e_x\,w=\bar w\,\vec e_x\ \text{ for every }w\in\mathbb{C} .
+$$</p>
+<p><em>Proof.</em> Assume the two rules and expand the left side of the product rule:</p>
+<p>$$
+(a+b\vec e_x)(c+d\vec e_x)=ac+ad\vec e_x+b\vec e_xc+b\vec e_xd\vec e_x .
+$$</p>
+<p>The third term is $b\bar c\vec e_x$ by the twisting rule applied to $c$, and the fourth is $b\bar d\vec e_x^2=-b\bar d$ by the twisting rule applied to $d$ and then the square. Collecting, $ac-b\bar d+(ad+b\bar c)\vec e_x$. Conversely, $a=c=0$ and $b=d=e_t$ in the product rule give $\vec e_x^2=-e_t$, and $a=d=0$, $b=e_t$, $c=w$ give $\vec e_xw=\bar w\vec e_x$. The two forms are therefore the same rule.</p>
+<p><strong>The heart of the construction.</strong> The rule $\vec e_xw=\bar w\vec e_x$ is the twisting rule, and it is what makes the doubled algebra non-commutative. Its effect on the base unit is the sign flip $\vec e_x\vec e_z=-\vec e_z\vec e_x$, which is step 3 of §<em>Hamilton's Rules</em> and the source of every sign in the table.</p>
+<h3 id="the-twisting-rule">The Twisting Rule</h3>
+<p><strong>Why the twist and not the plain rule.</strong> The plain rule $\vec e_xw=w\vec e_x$ is available, and it must be excluded by an argument and not by a choice of notation. Under the plain rule the element $\vec z=\vec e_z\vec e_x$ has square</p>
+<p>$$
+\vec z^2=\vec e_z\vec e_x\vec e_z\vec e_x=\vec e_z^2\vec e_x^2=(-e_t)(-e_t)=e_t ,
+$$</p>
+<p>where the middle equality is the plain rule itself: the second $\vec e_x$ passes $\vec e_z$ unchanged, and the two copies of $\vec e_x$ meet. Then</p>
+<p>$$
+\pi_\pm=\tfrac12\bigl(e_t\pm\vec z\bigr),\qquad \pi_\pm^2=\tfrac14\bigl(e_t\pm2\vec z+\vec z^2\bigr)=\tfrac12\bigl(e_t\pm\vec z\bigr)=\pi_\pm,\qquad \pi_+\pi_-=\tfrac14\bigl(e_t-\vec z^2\bigr)=0 .
+$$</p>
+<p>Neither idempotent is zero: $\vec z=\vec e_z\vec e_x$ has no scalar part, so $\vec z\neq\pm e_t$, and $\pi_\pm$ does not vanish. So the algebra carries two non-zero orthogonal idempotents and their product vanishes: it has zero divisors, and no element of the form $\pi_+$ is invertible. Under the twisting rule the same computation gives $\vec z^2=-e_t$ instead, as step 4 of §<em>Hamilton's Rules</em> shows, and no element of the algebra is a zero divisor, as §<em>Conjugation, the Norm and the Inverse</em> proves. The twist is therefore not a stylistic preference: it is the difference between a division algebra and an algebra with two complementary ideals.</p>
+<p><strong>Why the sign of the square.</strong> The new unit squares to $-e_t$, the same sign as at the first rung, where the base unit $\vec e_z$ was adjoined to $\mathbb{R}$ with $\vec e_z^2=-e_t$. The opposite sign at this second rung gives the split quaternions of <em>Split-Quaternion Algebra</em>, and the two constructions differ in that sign alone. The choice made here is the one that keeps the squared norm a sum of squares, and the four-square identity is what the doubling is built to preserve.</p>
+<h2 id="naming-the-units">Naming the Units</h2>
+<p><strong>The third unit is computed.</strong> Set</p>
+<p>$$
+\vec e_z:=\vec e_z,\qquad \vec e_x:=\vec e_x,\qquad \vec e_y:=\vec e_z\vec e_x .
+$$</p>
+<p>The two units of the doubling carry their own names, and the third is defined as their product. It is not introduced independently, and this is the point at which the construction fixes the third unit.</p>
+<p><strong>Why this order and not the other.</strong> The two orders of the two new units differ by a sign, $\vec e_x\vec e_z=-\vec e_z\vec e_x$, so the definition $\vec e_y=\vec e_x\vec e_z$ would give $-\vec e_y$ instead. The order is fixed by the triple product: with $\vec e_y=\vec e_z\vec e_x$ one has</p>
+<p>$$
+\vec e_z\vec e_x\vec e_y=\vec e_y\vec e_y=-e_t ,
+$$</p>
+<p>whereas the other order gives $+e_t$. The cyclic form of the table is exactly the statement that the three units in the order $z,x,y$ multiply to $-e_t$, and that order is the one the definition must respect.</p>
+<p><strong>The general element.</strong> With the three vector units named,</p>
+<p>$$
+\tilde q=q_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z,\qquad q_\mu\in\mathbb{R},
+$$</p>
+<p>the coefficient carrying the label of its direction. The base sits inside the doubled algebra as the subspace of the elements with $b=0$, that is as $\operatorname{span}\{e_t,\vec e_z\}$.</p>
+<p><strong>The doubling order is not the display order.</strong> Read as a pair, the element is</p>
+<p>$$
+\tilde q=\bigl(q_te_t+q_z\vec e_z\bigr)+\bigl(q_x+q_y\vec e_z\bigr)\vec e_x ,
+$$</p>
+<p>so the base part carries the coordinates $t,z$ and the second slot the coordinates $x,y$. The corpus writes the four coordinates in the order $t,x,y,z$, and that order is a display convention of <em>Quaternion Algebra</em>, not the order in which the doubling produces them.</p>
+<h2 id="hamiltons-rules">Hamilton's Rules</h2>
+<p><strong>The programme.</strong> The two generating rules and the definition of the third unit determine every product. The nine steps below compute them, in the order in which the construction supplies them, and no step uses anything but $\vec e_z$, $\vec e_x$, $\vec e_y=\vec e_z\vec e_x$ and the twisting rule.</p>
+<h3 id="the-two-squares">The Two Squares</h3>
+<p><strong>Step 1.</strong> The base unit squares to $-e_t$ by the definition of the base,</p>
+<p>$$
+\vec e_z^2=-e_t .
+$$</p>
+<p><strong>Step 2.</strong> The doubling unit squares to $-e_t$ by the first generating rule,</p>
+<p>$$
+\vec e_x^2=-e_t .
+$$</p>
+<p>The two squares carry the same sign. The whole sign pattern of the table follows from that agreement together with the twist, and the next subsection applies it.</p>
+<h3 id="the-sign-flip">The Sign Flip</h3>
+<p><strong>Step 3.</strong> The two new units anticommute. Apply the twisting rule with $w=\vec e_z$ and use $\overline{\vec e_z}=-\vec e_z$:</p>
+<p>$$
+\vec e_x\vec e_z=\overline{\vec e_z}\,\vec e_x=-\vec e_z\vec e_x .
+$$</p>
+<p>This is the only place in the article where the bar enters the multiplication table, and it enters as a sign.</p>
+<h3 id="the-third-unit">The Third Unit</h3>
+<p><strong>Step 4.</strong> The third unit squares to $-e_t$. By the definition $\vec e_y=\vec e_z\vec e_x$, by the associativity of the product, and by step 3,</p>
+<p>$$
+\vec e_y^2=(\vec e_z\vec e_x)(\vec e_z\vec e_x)=\vec e_z(\vec e_x\vec e_z)\vec e_x=\vec e_z(-\vec e_z\vec e_x)\vec e_x=-\vec e_z^2\vec e_x^2=-(-e_t)(-e_t)=-e_t .
+$$</p>
+<p>The associativity used in the middle is not an extra assumption: the product of the double is associative because the base is associative and commutative, which is §<em>Associativity and the Ladder</em>.</p>
+<h3 id="the-six-ordered-products">The Six Ordered Products</h3>
+<p><strong>Step 5.</strong> The two orders of the doubling units are fixed by step 3 and by the definition of the third unit:</p>
+<p>$$
+\vec e_z\vec e_x=\vec e_y,\qquad \vec e_x\vec e_z=-\vec e_y .
+$$</p>
+<p><strong>Step 6.</strong> The first unit times the third. Substitute the definition of $\vec e_y$ and apply step 3:</p>
+<p>$$
+\vec e_x\vec e_y=\vec e_x(\vec e_z\vec e_x)=(\vec e_x\vec e_z)\vec e_x=(-\vec e_z\vec e_x)\vec e_x=-\vec e_z\vec e_x^2=\vec e_z .
+$$</p>
+<p><strong>Step 7.</strong> The third unit times the first:</p>
+<p>$$
+\vec e_y\vec e_x=(\vec e_z\vec e_x)\vec e_x=\vec e_z\vec e_x^2=-\vec e_z .
+$$</p>
+<p><strong>Step 8.</strong> The third unit times the base unit:</p>
+<p>$$
+\vec e_y\vec e_z=(\vec e_z\vec e_x)\vec e_z=\vec e_z(\vec e_x\vec e_z)=\vec e_z(-\vec e_z\vec e_x)=-\vec e_z^2\vec e_x=\vec e_x .
+$$</p>
+<p><strong>Step 9.</strong> The base unit times the third:</p>
+<p>$$
+\vec e_z\vec e_y=\vec e_z(\vec e_z\vec e_x)=\vec e_z^2\vec e_x=-\vec e_x .
+$$</p>
+<h3 id="the-table">The Table</h3>
+<p><strong>The collected rules.</strong> The three squares and the six ordered products of the steps are, with $e_t$ the unit,</p>
+<p>$$
+\vec e_z^2=\vec e_x^2=\vec e_y^2=-e_t ,
+$$</p>
+<p>$$
+\vec e_z\vec e_x=\vec e_y,\quad \vec e_x\vec e_z=-\vec e_y,\qquad
+\vec e_x\vec e_y=\vec e_z,\quad \vec e_y\vec e_x=-\vec e_z,\qquad
+\vec e_y\vec e_z=\vec e_x,\quad \vec e_z\vec e_y=-\vec e_x .
+$$</p>
+<p><strong>The full table.</strong> Written as a table of the sixteen products, with the left factor on the row and the right factor on the column:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>$e_t$</th>
+<th>$\vec e_x$</th>
+<th>$\vec e_y$</th>
+<th>$\vec e_z$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e_t$</td>
+<td>$e_t$</td>
+<td>$\vec e_x$</td>
+<td>$\vec e_y$</td>
+<td>$\vec e_z$</td>
+</tr>
+<tr>
+<td>$\vec e_x$</td>
+<td>$\vec e_x$</td>
+<td>$-e_t$</td>
+<td>$\vec e_z$</td>
+<td>$-\vec e_y$</td>
+</tr>
+<tr>
+<td>$\vec e_y$</td>
+<td>$\vec e_y$</td>
+<td>$-\vec e_z$</td>
+<td>$-e_t$</td>
+<td>$\vec e_x$</td>
+</tr>
+<tr>
+<td>$\vec e_z$</td>
+<td>$\vec e_z$</td>
+<td>$\vec e_y$</td>
+<td>$-\vec e_x$</td>
+<td>$-e_t$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The table is the multiplication table of <em>Quaternion Algebra</em>, above this article in this category.</p>
+<h3 id="the-cyclic-form">The Cyclic Form</h3>
+<p><strong>The cyclic triple.</strong> The six ordered products are three cyclic relations and their three negations:</p>
+<p>$$
+\vec e_z\vec e_x=\vec e_y,\qquad \vec e_x\vec e_y=\vec e_z,\qquad \vec e_y\vec e_z=\vec e_x ,
+$$</p>
+<p>$$
+\vec e_x\vec e_z=-\vec e_y,\qquad \vec e_y\vec e_x=-\vec e_z,\qquad \vec e_z\vec e_y=-\vec e_x .
+$$</p>
+<p><strong>The triple product.</strong> The cyclic relations compose to one identity, and it is the sharpest single statement of the table:</p>
+<p>$$
+\vec e_z\vec e_x\vec e_y=-e_t .
+$$</p>
+<p><em>Proof.</em> $\vec e_z\vec e_x\vec e_y=\vec e_y\vec e_y=-e_t$ by the definition of $\vec e_y$ and step 4. The other orders do not give the same sign: $\vec e_x\vec e_z\vec e_y=+e_t$, because the transposition of the first two factors costs one sign and the sign of the triple is odd under a transposition.</p>
+<p><strong>These are Hamilton's relations.</strong> The three cyclic relations with the three negations are the classical quaternion relations, with $(\vec e_z,\vec e_x,\vec e_y)$ in the role of the classical triple. The construction has produced them and has not assumed them: the only inputs are $\vec e_z^2=-e_t$, the twist, and the definition of the third unit as the product of the other two.</p>
+<h2 id="associativity-and-the-ladder">Associativity and the Ladder</h2>
+<p><strong>Associativity.</strong> The product of the double is associative. The associator</p>
+<p>$$
+A(\tilde q_1,\tilde q_2,\tilde q_3)=(\tilde q_1\tilde q_2)\tilde q_3-\tilde q_1(\tilde q_2\tilde q_3)
+$$</p>
+<p>is trilinear, because the product is bilinear, so it vanishes identically once it vanishes on the sixty-four triples of units. On those triples it vanishes: the four units are monomials in $\vec e_z$ and $\vec e_x$ with signs — $e_t$ is the empty monomial, $\vec e_z$ and $\vec e_x$ are the letters, and $\vec e_y=\vec e_z\vec e_x$ is the product of the two — the product of two units is again a signed unit, and the two bracketings of three such monomials reduce to the same signed monomial. The general criterion gives the same answer without a computation: the double of an associative algebra is associative exactly when the doubled algebra is associative and commutative, which is <em>Quadratic Forms over Algebras and Norms</em>, §<em>The Cayley–Dickson Doubling</em>, and the base is both.</p>
+<p><strong>Non-commutativity.</strong> The product is not commutative, because $\vec e_x\vec e_y=\vec e_z$ while $\vec e_y\vec e_x=-\vec e_z$. This is the property the second rung loses, and it is also the reason the third rung is not associative: the criterion above fails at the next doubling, since the doubled algebra is no longer commutative, and the octonions lose associativity. The whole ladder is $\mathbb{R}\to\mathbb{C}\to\mathbb{H}\to\mathbb{O}$ with the same sign at each step, and $\mathbb{H}$ is its last associative division algebra.</p>
+<p><strong>The division property.</strong> Every non-zero element is invertible, so the algebra has no zero divisor. That is §<em>Conjugation, the Norm and the Inverse</em>, and it is the property the twist secured in §<em>The Twisting Rule</em>. With it the doubled algebra is a division algebra, and by the theorem of Frobenius it is one of the three finite-dimensional associative real division algebras, the others being $\mathbb{R}$ and $\mathbb{C}$; the statement is <em>The Specificities of the Quaternion Algebra</em>, below this article in this category.</p>
+<h3 id="the-choice-of-the-doubling">The Choice of the Doubling</h3>
+<p><strong>The ingredients in one table.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>CD ingredient</th>
+<th>Choice for $\mathbb{H}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Base field</td>
+<td>$\mathbb{R}$</td>
+</tr>
+<tr>
+<td>First doubling</td>
+<td>$\mathbb{C}=\mathbb{R}[\vec e_z]$, $\vec e_z^2=-e_t$</td>
+</tr>
+<tr>
+<td>Second doubling</td>
+<td>$\mathbb{H}=\mathbb{C}\oplus\mathbb{C}\vec e_x$</td>
+</tr>
+<tr>
+<td>New unit</td>
+<td>$\vec e_x$, with $\vec e_x^2=-e_t$</td>
+</tr>
+<tr>
+<td>Twisting</td>
+<td>$\vec e_xw=\bar w\vec e_x$ for all $w\in\mathbb{C}$</td>
+</tr>
+<tr>
+<td>Units</td>
+<td>$\vec e_z$, $\vec e_x$, $\vec e_y=\vec e_z\vec e_x$</td>
+</tr>
+<tr>
+<td>Product</td>
+<td>$\vec e_z^2=\vec e_x^2=\vec e_y^2=\vec e_z\vec e_x\vec e_y=-e_t$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>What is not in the table.</strong> No sign of an ordered product appears, and no coordinate. The six ordered products of §<em>The Six Ordered Products</em> are consequences of the five rows above, and the fifth of them is the one that carries the non-commutativity.</p>
+<h2 id="conjugation-the-norm-and-the-inverse">Conjugation, the Norm and the Inverse</h2>
+<h3 id="the-conjugation">The Conjugation</h3>
+<p><strong>The rule of the double.</strong> The conjugation of the double is the bar on the base part together with a sign on the second part,</p>
+<p>$$
+(a+b\vec e_x)^{\natural}=\bar a-b\vec e_x .
+$$</p>
+<p>This is the conjugation of the Cayley–Dickson step, <em>Quadratic Forms over Algebras and Norms</em>, §<em>The Cayley–Dickson Doubling</em>, and it is an involution that reverses the order of a product.</p>
+<p><strong>In the corpus display.</strong> With $a=q_te_t+q_z\vec e_z$ and $b=q_x+q_y\vec e_z$, so that $b\vec e_x=q_x\vec e_x+q_y\vec e_y$,</p>
+<p>$$
+\tilde q^{\natural}=\bar a-b\vec e_x=q_te_t-q_z\vec e_z-q_x\vec e_x-q_y\vec e_y
+=q_te_t-q_x\vec e_x-q_y\vec e_y-q_z\vec e_z .
+$$</p>
+<p>So the quaternion conjugation flips the sign of all three vector units, the base unit $\vec e_z$ included, and it fixes the scalar unit. The display is the one of <em>Quaternion Algebra</em>.</p>
+<p><strong>The order is reversed.</strong> For two elements,</p>
+<p>$$
+(\tilde q_1\tilde q_2)^{\natural}=\tilde q_2^{\natural}\,\tilde q_1^{\natural}.
+$$</p>
+<p><em>Proof.</em> Both sides are bilinear, so it suffices to check the sixteen pairs of units. A product of two units is a signed unit, $\vec e_\mu\vec e_\nu=\varepsilon\vec e_\gamma$ with $\varepsilon=\pm1$, and the conjugation sends each unit to a signed copy of itself, $\vec e_\mu^{\natural}=\sigma_\mu\vec e_\mu$ with $\sigma_t=+1$ and $\sigma_x=\sigma_y=\sigma_z=-1$. The left side is then $\varepsilon\sigma_\gamma\vec e_\gamma$ and the right side is $\sigma_\nu\sigma_\mu\varepsilon\vec e_\gamma$, so the identity holds once $\sigma_\gamma=\sigma_\mu\sigma_\nu$. The four cases exhaust the sixteen pairs: two scalar units, one scalar and one vector, two distinct vector units with the third as their product, and one vector unit twice with the scalar unit as its square. In each the sign of the product unit is the product of the signs of the two factors. Bilinearity extends the identity to the algebra.</p>
+<p><strong>The bar is the restriction.</strong> On the base, the second part vanishes and the conjugation reads $(w+0\vec e_x)^{\natural}=\bar w$. So the bar of §<em>The Conjugation of the Base</em> is the restriction of $\natural$ to the base, and the two signs are one sign. The distinction to keep is that the bar is written on a base element $w$ and $\natural$ on an element $\tilde q$ of the doubled algebra; the marks are different because the objects are.</p>
+<h3 id="the-norm">The Norm</h3>
+<p><strong>Theorem (the norm of the double is the sum of the norms).</strong> For every element,</p>
+<p>$$
+\tilde q\,\tilde q^{\natural}=N(\tilde q)\,e_t,\qquad N(\tilde q)=q_t^2+q_x^2+q_y^2+q_z^2\in\mathbb{R}_{\geq0} .
+$$</p>
+<p><em>Proof.</em> Write $\tilde q=a+b\vec e_x$ with $a=q_te_t+q_z\vec e_z$ and $b=q_x+q_y\vec e_z$. The product rule is applied with $c=\bar a$ and $d=-b$, so that $\bar c=a$ and $\bar d=-\bar b$, and it gives</p>
+<p>$$
+(a+b\vec e_x)(\bar a-b\vec e_x)=\bigl(a\bar a+b\bar b\bigr)+\bigl(-ab+ba\bigr)\vec e_x .
+$$</p>
+<p>The scalar part is the sum of the two base norms, $a\bar a=q_t^2+q_z^2$ and $b\bar b=q_x^2+q_y^2$ by §<em>The Conjugation of the Base</em>, that is $q_t^2+q_x^2+q_y^2+q_z^2$. The coefficient of $\vec e_x$ is $-ab+ba$, which vanishes because the base is commutative. The result is $N'(a,b)=N(a)+N(b)$ of the general doubling, computed in the coordinates of this base.</p>
+<p><strong>The norm is definite.</strong> It is a sum of four squares, so it vanishes only at the origin and is positive on every other element. The doubling has therefore preserved the definiteness of the base norm. Its multiplicativity, cited in §<em>The Inverse</em>, is the four-square identity: a product of two sums of four squares is again a sum of four squares.</p>
+<h3 id="the-inverse">The Inverse</h3>
+<p><strong>Every non-zero element is a unit.</strong> Let $\tilde q\neq0$. Then $N(\tilde q)>0$ is a real number, and</p>
+<p>$$
+\tilde q^{-1}=\frac{\tilde q^{\natural}}{N(\tilde q)} ,
+$$</p>
+<p>because $\tilde q\tilde q^{\natural}=N(\tilde q)e_t$ and the norm is a scalar. The inverse is two-sided, since $\tilde q^{\natural}\tilde q=N(\tilde q)e_t$ by the same computation on the other side.</p>
+<p><strong>The division algebra.</strong> No product of non-zero elements vanishes, because $N(\tilde q_1\tilde q_2)=N(\tilde q_1)N(\tilde q_2)$ by the multiplicativity of the norm, <em>Norm and Invertibility in the Quaternion Algebra</em>, below this article in this category, and a product of positive numbers is positive. So $\mathbb{H}$ is a division algebra, and the theorem of Frobenius places it among the three.</p>
+<p><strong>The star.</strong> In the biquaternion layer the star is the composite of the coefficient bar and the quaternion sign, $\star=\bar{}\circ\natural$. In the quaternion layer the coefficients are real, the bar is the identity on them, and the star coincides with $\natural$. The biquaternion layer is not developed here.</p>
+<h2 id="summary">Summary</h2>
+<ol>
+<li>The quaternion algebra is the double of the complex algebra, $\mathbb{H}=\mathbb{C}\oplus\mathbb{C}\vec e_x$, with the base $\mathbb{C}=\mathbb{R}[\vec e_z]$.</li>
+<li>The product is fixed by the square of the new unit and by the twisting rule: $\vec e_x^2=-e_t$ and $\vec e_xw=\bar w\vec e_x$ for every base element $w$.</li>
+<li>The twisting rule is the heart of the construction. Without it the element $\vec e_z\vec e_x$ squares to $+e_t$, the algebra carries the two idempotents $\tfrac12(e_t\pm\vec e_z\vec e_x)$, and it has zero divisors.</li>
+<li>The third vector unit is not introduced: it is computed, $\vec e_y=\vec e_z\vec e_x$, and that order and not the other is the one that gives $\vec e_z\vec e_x\vec e_y=-e_t$.</li>
+<li>The nine derivations of §<em>Hamilton's Rules</em> produce the squares, the sign flip and the six ordered products, that is the multiplication table of the quaternion algebra, from the two generating rules alone.</li>
+<li>The result is associative, because the base is associative and commutative, and non-commutative, because the two new units anticommute.</li>
+<li>The conjugation $\tilde q^{\natural}=q_te_t-q_x\vec e_x-q_y\vec e_y-q_z\vec e_z$ reverses the order of a product, and it restricts to the bar on the base.</li>
+<li>The norm is the sum of the four squares of the coordinates, it is definite, and it gives the inverse $\tilde q^{-1}=\tilde q^{\natural}/N(\tilde q)$; every non-zero element is a unit, and the algebra is a division algebra.</li>
+<li>The ladder is $\mathbb{R}\to\mathbb{C}\to\mathbb{H}$, with the same sign choice at each rung; the next doubling gives the octonions and loses associativity, so $\mathbb{H}$ is the last associative division algebra of the sequence.</li>
+</ol>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+<th>Article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e_t$</td>
+<td>the scalar unit, $e_t=1$</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$\vec e_x,\vec e_y,\vec e_z$</td>
+<td>the three vector units, each of square $-e_t$</td>
+<td><em>Quaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$w=u+v\vec e_z$</td>
+<td>the generic element of the base $\mathbb{C}$</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$\bar w$</td>
+<td>the conjugation of the base, $u-v\vec e_z$</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$a,b,c,d$</td>
+<td>the coefficients of the doubling rule, bound at the point of use</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$\tilde q$</td>
+<td>the generic element of $\mathbb{H}$, $q_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$</td>
+<td><em>Quaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$\vec q$</td>
+<td>the pure element, the vector part</td>
+<td><em>Quaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$\vec u$</td>
+<td>the unit pure element, the axis of a rotation</td>
+<td><em>Quaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$\tilde u$</td>
+<td>the unit element of the layer, equal to $e_t$</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$\natural$</td>
+<td>the quaternion conjugation, $q_te_t-\vec q$</td>
+<td><em>Quaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$\star$</td>
+<td>the composite $\bar{}\circ\natural$, equal to $\natural$ on this layer</td>
+<td><em>Quaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$N(\tilde q)$</td>
+<td>$\tilde q\tilde q^{\natural}=q_t^2+q_x^2+q_y^2+q_z^2$</td>
+<td><em>Norm and Invertibility in the Quaternion Algebra</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>William Rowan Hamilton, <em>On Quaternions</em> (Proceedings of the Royal Irish Academy, 1844) and <em>Lectures on Quaternions</em> (1853), for the table as it was first stated.</li>
+<li>Leonard E. Dickson, <em>On Quaternions and Their Generalization and the History of the Eight Square Theorem</em> (Annals of Mathematics, 1919), for the doubling as a construction.</li>
+<li>Richard D. Schafer, <em>An Introduction to Nonassociative Algebras</em> (Dover, 1995), for the doubling, the criterion for associativity and the ladder.</li>
+<li>John H. Conway and Derek A. Smith, <em>On Quaternions and Octonions</em> (A K Peters, 2003), for the doubling read through the arithmetic of the units.</li>
+<li>John C. Baez, <em>The Octonions</em> (Bulletin of the American Mathematical Society, 2002), for the ladder, the lost properties at each rung and the place of the quaternions in it.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
