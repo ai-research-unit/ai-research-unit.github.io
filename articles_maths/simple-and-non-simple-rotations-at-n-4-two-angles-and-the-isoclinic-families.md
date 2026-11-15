@@ -163,6 +163,6 @@ The left-isoclinic and right-isoclinic rotations are two three-spheres meeting i
 
 - Morton L. Curtis, *Matrix Groups* (Springer, 1984), for the normal form of a rotation and the two angles.
 - [Simple and Non-Simple Rotations: One Angle at $n\le3$, Two Angles at $n\ge4$](simple-and-non-simple-rotations-one-angle-at-n-le-3-two-angles-at-n-ge-4.html), for the statement at general order.
-- [The Spectral Theorem: the Anti-Hermitian Case and the Reality of the Spectrum at $n=4$](the-spectral-theorem-the-skew-hermitian-case-at-n-4.html), for the eigenvalues and the Pfaffian.
+- [The Spectral Theorem: the Anti-Hermitian Case and the Reality of the Spectrum at $n=4$](the-spectral-theorem-the-anti-hermitian-case-at-n-4.html), for the eigenvalues and the Pfaffian.
 - [The Lie Algebra $\operatorname{Skew}_4\cong\mathfrak{so}(4)$](the-lie-algebra-skew-4-and-so-4.html), for the two summands.
 - [Simple Rotations at $n=2$: Why There Is Only One Angle](simple-rotations-at-n-2-why-there-is-only-one-angle.html), for the case at order two.

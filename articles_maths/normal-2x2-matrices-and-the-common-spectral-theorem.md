@@ -115,5 +115,5 @@ The commutant of a matrix with simple spectrum is the two-dimensional algebra of
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge University Press, 2013), for normal matrices and the spectral theorem.
 - Paul R. Halmos, *A Hilbert Space Problem Book* (Springer, 1982), for the spectral theorem and simultaneous diagonalisation.
 - [The Spectrum of a $2\times2$ Matrix](the-spectrum-of-a-2x2-matrix.html), for the eigenvalues and the eigenspaces.
-- [The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian at $n=2$](the-two-halves-over-c-hermitian-and-skew-hermitian-at-n-2.html), for the two halves as the fixed points of the star.
+- [The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian at $n=2$](the-two-halves-over-c-hermitian-and-anti-hermitian-at-n-2.html), for the two halves as the fixed points of the star.
 - [Lagrange Idempotents of a $2\times2$ Matrix with Simple Spectrum](lagrange-idempotents-of-a-2x2-matrix-with-simple-spectrum.html), for the projections that span the commutant.

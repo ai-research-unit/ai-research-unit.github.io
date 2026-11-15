@@ -192,14 +192,13 @@ The two metrics are the two readings of the two forms and satisfy $d_{B}^{2}-d_{
 
 ## Further Reading
 
-- [The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space](the-two-forms-and-the-two-algebraic-norms-of-the-split-complexoid-space.html), for the two forms and the two algebraic norms whose diagonals are their squares.
-- [The Realification and the Effect of the Change of Scalars on the Split-Complexoid](the-realification-and-the-effect-of-the-change-of-scalars-on-the-split-complexoid.html), for the realification rules that give the signatures $(2,0)$ and $(1,1)$ and the sign of the structure.
+- [The Two Forms and the Two Algebraic Norms of the Split-Complex Space](the-two-forms-and-the-two-algebraic-norms-of-the-split-complex-space.html), for the two forms and the two algebraic norms whose diagonals are their squares.
 - [Norm and Invertibility in the General Split-Complex Algebra](norm-and-invertibility-in-the-general-split-complex-algebra.html), for the norm, its polarisation $g$, the Euclidean form, the modulus and the group of units.
 - [Split-Complex Topology](split-complex-topology.html), for the Euclidean plane, its contractibility and the null cone as a removed pair of lines.
 - [Hyperbolic Rotations](hyperbolic-rotations.html), for the hyperbolic rotations, the unit hyperbola and the classification of the maps preserving the form.
 - [The Versors and the Orthogonal Group of the Split-Complex Numbers](the-versors-and-the-orthogonal-group-of-the-split-complex-numbers.html), for the group preserving the indefinite form, its algebraic name and its cover.
 - [Split-Complex Null Quadric and Projective Geometry](split-complex-null-quadric-and-projective-geometry.html), for the null cone of the indefinite metric read projectively.
-- [Split-Complexoid Subspaces](split-complexoid-subspaces.html), for the real and split imaginary subspaces on which the indefinite metric is definite of opposite signs.
+- [The Involutions, the Subspaces and the Idempotent Lines of the Split-Complex Space](the-involutions-the-subspaces-and-the-idempotent-lines-of-the-split-complex-space.html), for the real and split imaginary subspaces on which the indefinite metric is definite of opposite signs.
 - [The Two Metrics of the Complex Numbers](the-two-metrics-of-the-complex-numbers.html), for the mirror image of the present pair, where the definite slot is on the Hermitian form.
 - Werner Greub, *Linear Algebra*, 4th edition (Springer, 1981), for Gram matrices, inertia and the groups preserving a symmetric or Hermitian form.
 - Pertti Lounesto, *Clifford Algebras and Spinors*, 2nd edition (Cambridge University Press, 2001), for the definite and indefinite forms of the plane and their groups.

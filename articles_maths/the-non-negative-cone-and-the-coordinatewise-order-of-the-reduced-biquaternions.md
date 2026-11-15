@@ -237,7 +237,7 @@ The cone meets the null cone, and it meets it in the interior: the first idempot
 - [Zero Divisors of the Algebra of the Reduced Biquaternions](zero-divisors-of-the-algebra-of-the-reduced-biquaternions.html), for the null cone and the two idempotent lines.
 - [$M_2(\mathbb{C})$ Reduced Representation : Operators](m2c-reduced-representation-operators.html), for the matrix of $L_{\breve Q}$ whose entrywise sign characterises the cone-preserving elements.
 - [The Classes of Element of the Split-Complex Algebra](the-classes-of-element-of-the-split-complex-algebra.html), for the forward cone $\{h_{0}\ge|h_{2}|\}$ of the split-complex companion, compared here with the coordinatewise cone.
-- [The Hermitian Form and the Cone of the Split-Complexoid Algebra](the-hermitian-form-and-the-cone-of-the-split-complexoid-algebra.html), for the third notion of positivity, the cone of the form.
+- [The Hermitian Form, the Double Cone and the Reversed Cauchy-Schwarz Inequality](the-hermitian-form-the-double-cone-and-the-reversed-cauchy-schwarz-inequality.html), for the third notion of positivity, the cone of the form.
 - [Reduced Biquaternions and Hyperbolic Geometry](reduced-biquaternions-and-hyperbolic-geometry.html), for the hyperbolic reading of the split-complex plane and the null cone.
 - [Ordered Vector Spaces and the Order Unit](ordered-vector-spaces-and-the-order-unit.html), for the positive cone, the generating and pointed cases, the order unit and the order-unit norm.
 - [Positive Definite Forms on an Ordered Space](positive-definite-forms-on-an-ordered-space.html), for the self-dual cone and the autopolarity in finite dimension.

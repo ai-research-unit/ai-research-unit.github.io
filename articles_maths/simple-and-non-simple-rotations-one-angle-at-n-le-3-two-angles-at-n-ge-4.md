@@ -161,5 +161,5 @@ A rotation is simple when it turns one plane and fixes the rest, which is the ca
 - Morton L. Curtis, *Matrix Groups* (Springer, 1984), for Euler's theorem and the canonical forms of the rotations.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the planar rotation and the biquaternion picture.
 - [The Exponential of the Antisymmetric Part: One-Parameter Rotations](the-exponential-of-the-antisymmetric-part-one-parameter-rotations.html), for the one-parameter groups whose angles are counted here.
-- [The Spectral Theorem: the Anti-Hermitian Case and the Reality of the Spectrum](the-spectral-theorem-the-skew-hermitian-case-and-the-reality-of-the-spectrum.html), for the canonical block form and the angles.
+- [The Spectral Theorem: the Anti-Hermitian Case and the Reality of the Spectrum](the-spectral-theorem-the-anti-hermitian-case-and-the-reality-of-the-spectrum.html), for the canonical block form and the angles.
 - [Rotors Acting on the Bivector Space: the Adjoint Action](rotors-acting-on-the-bivector-space-the-adjoint-action.html), for the two commuting factors of $\mathfrak{so}(4)$.

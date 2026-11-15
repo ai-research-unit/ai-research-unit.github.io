@@ -129,5 +129,5 @@ The group is the product $\mathrm{U}(2)\exp(\operatorname{Herm}_2)$, and the pro
 - Sigurdur Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces* (American Mathematical Society, 2001), for Cartan decompositions and symmetric pairs.
 - Anthony W. Knapp, *Lie Groups Beyond an Introduction* (Birkhäuser, 2002), for the structure theory of the decomposition.
 - [The Polar Decomposition from the Two Halves at $n=2$](the-polar-decomposition-from-the-two-halves-at-n-2.html), for the group decomposition used here.
-- [The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian at $n=2$](the-two-halves-over-c-hermitian-and-skew-hermitian-at-n-2.html), for the two summands of the Lie algebra.
+- [The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian at $n=2$](the-two-halves-over-c-hermitian-and-anti-hermitian-at-n-2.html), for the two summands of the Lie algebra.
 - [The Exponential of $\operatorname{Sym}_2$: Stretches and the Positive Cone](the-exponential-of-sym-2-stretches-and-the-positive-cone.html), for the logarithm used on the Hermitian summand.

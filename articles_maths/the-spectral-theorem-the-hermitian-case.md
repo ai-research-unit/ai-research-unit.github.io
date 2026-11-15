@@ -219,5 +219,5 @@ A Hermitian matrix has a real spectrum, because $\lambda\|v\|^{2}=\langle Av,v\r
 - Rajendra Bhatia, *Matrix Analysis* (Springer, 1997), for the Courant–Fischer min-max principle.
 - Paul R. Halmos, *A Hilbert Space Problem Book* (Springer, 1982), for the spectral resolution and the functional calculus.
 - [Normal Matrices and the Common Spectral Theorem](normal-matrices-and-the-common-spectral-theorem.html), for the unitary diagonalisation that the Hermitian case specialises.
-- [The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian](the-two-halves-over-c-hermitian-and-skew-hermitian.html), for the half in which the theorem lives.
+- [The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian](the-two-halves-over-c-hermitian-and-anti-hermitian.html), for the half in which the theorem lives.
 - [The Spectrum of a Matrix](the-spectrum-of-a-matrix.html), for the trace and the determinant as the sum and the product of the spectrum.

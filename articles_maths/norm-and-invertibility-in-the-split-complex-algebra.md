@@ -188,7 +188,7 @@ It is **not a real norm**: its value is not real in general, its real part is th
 
 ## Further Reading
 
-- [The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space](the-two-forms-and-the-two-algebraic-norms-of-the-split-complexoid-space.html), for the definition of the algebraic norm as the form at the two equal arguments, the two algebraic norms and their separation.
+- [The Two Forms and the Two Algebraic Norms of the Split-Complex Space](the-two-forms-and-the-two-algebraic-norms-of-the-split-complex-space.html), for the definition of the algebraic norm as the form at the two equal arguments, the two algebraic norms and their separation.
 - [Norm and Invertibility in the General Split-Complex Algebra](norm-and-invertibility-in-the-general-split-complex-algebra.html), for the other algebraic norm, the criterion of invertibility and the group of units.
 - [Split-Complex Algebra](split-complex-algebra.html), for the product, its associativity, its unit and its element theory.
 - [Zero Divisors of the Split-Complex Algebra](zero-divisors-of-the-split-complex-algebra.html), for the zero divisors, which the algebraic norm of the plain product does not detect.

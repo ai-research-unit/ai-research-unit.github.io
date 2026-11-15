@@ -197,6 +197,5 @@ Each complex form realifies to its real and imaginary parts: $\operatorname{Re}H
 - [The Three Canonical Forms on $\mathbb{C}^2$](the-three-canonical-forms-on-c2.html), below in this category, for the Gram matrices and the computations of the real and imaginary parts.
 - [The Subspaces of $\mathbb{C}^2$](the-subspaces-of-c2.html), below in this category, for the $J$-invariant and the totally real subspaces.
 - [The Endomorphisms of $\mathbb{C}^2$](the-endomorphisms-of-c2.html), below in this category, for the matrix form $T(Q)=AQ+B\overline{Q}$ and the trace and determinant identities.
-- [The Realification and the Effect of the Change of Scalars](the-realification-and-the-effect-of-the-change-of-scalars.html), for the general theory of the change of scalars read on an algebra rather than on a space.
 - [The Flat Kähler Structure of $\mathbb{C}^2$](the-flat-kahler-structure-of-c2.html), for the metric, the Kähler form and the isometries.
 - [Real Topology](real-topology.html), for the topology of $\mathbb{R}^4$, which is the topology of the realification.

@@ -165,6 +165,6 @@ A matrix is normal exactly when its Hermitian and anti-Hermitian parts commute, 
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for normality, the spectral theorem and Schur's inequality.
 - Paul R. Halmos, *A Hilbert Space Problem Book* (Springer, 1982), for the operator form of the spectral theorem and the normal operators.
 - Rajendra Bhatia, *Matrix Analysis* (Springer, 1997), for Schur's triangular form and the distance to the normal variety.
-- [The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian](the-two-halves-over-c-hermitian-and-skew-hermitian.html), for the split into the two Hermitian parts.
+- [The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian](the-two-halves-over-c-hermitian-and-anti-hermitian.html), for the split into the two Hermitian parts.
 - [The Spectrum of a Matrix](the-spectrum-of-a-matrix.html), for the invariants of the spectrum used here.
 - [The Hilbert–Schmidt Form](the-hilbert-schmidt-form.html), for the norm in Schur's inequality and the two-sided operators.

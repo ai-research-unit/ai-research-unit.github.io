@@ -173,5 +173,5 @@ The anti-Hermitian matrices are exactly $i$ times the Hermitian ones, so their s
 - Werner Greub, *Linear Algebra* (Springer, 1975), for the real canonical form of a skew operator and the invariant planes.
 - Sigurdur Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces* (AMS, 2001), for the angles of a skew matrix as the invariants of the compact group action.
 - [The Spectral Theorem: the Hermitian Case](the-spectral-theorem-the-hermitian-case.html), for the diagonalisation that the factor $i$ carries over.
-- [The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian](the-two-halves-over-c-hermitian-and-skew-hermitian.html), for the half and its properties.
+- [The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian](the-two-halves-over-c-hermitian-and-anti-hermitian.html), for the half and its properties.
 - [The Lie Algebra $\operatorname{Skew}_n\cong\mathfrak{so}(n)$](the-lie-algebra-skew-n-and-so-n.html), for the algebra structure of the real skew matrices.

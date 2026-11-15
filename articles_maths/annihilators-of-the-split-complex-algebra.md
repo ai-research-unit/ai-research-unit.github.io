@@ -257,5 +257,4 @@ The two null lines annihilate one another, the annihilator of the whole algebra 
 - [Zero Divisors of the Split-Complex Algebra](zero-divisors-of-the-split-complex-algebra.html), for the zero-divisor set, its two families and the criterion.
 - [Norm and Invertibility in the General Split-Complex Algebra](norm-and-invertibility-in-the-general-split-complex-algebra.html), for the invertibility criterion and the group of units.
 - [Ideals and Peirce Decomposition of the Split-Complex Algebra](ideals-and-peirce-decomposition-of-the-split-complex-algebra.html), for the two minimal ideals and the Peirce decomposition.
-- [The Matrix Element Representations of the Split-Complexoid](the-matrix-element-representations-of-the-split-complexoid.html), for the regular matrix model and its kernel.
-- [The Two Products of the Split-Complexoid Space](the-two-products-of-the-split-complexoid-space.html), for the two products and the multiplication operators.
+- [The Two Products of the Split-Complex Space](the-two-products-of-the-split-complex-space.html), for the two products and the multiplication operators.

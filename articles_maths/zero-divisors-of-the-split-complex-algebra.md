@@ -262,4 +262,4 @@ The elements fall into the three classes invertible, zero and zero divisor; the 
 - [Square Roots of One and the Idempotents of the Split-Complex Algebra](square-roots-of-one-and-the-idempotents-of-the-split-complex-algebra.html), for the two idempotents and their arithmetic.
 - [Square Roots of Zero and the Nilpotents of the Split-Complex Algebra](square-roots-of-zero-and-the-nilpotents-of-the-split-complex-algebra.html), for the absence of nonzero nilpotents in the algebra.
 - [Ideals and Peirce Decomposition of the Split-Complex Algebra](ideals-and-peirce-decomposition-of-the-split-complex-algebra.html), for the two minimal ideals and the Peirce decomposition.
-- [The Two Products of the Split-Complexoid Space](the-two-products-of-the-split-complexoid-space.html), for the two products and their comparison.
+- [The Two Products of the Split-Complex Space](the-two-products-of-the-split-complex-space.html), for the two products and their comparison.

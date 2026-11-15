@@ -127,5 +127,5 @@ The traceless part is $\mathfrak{su}(2)$, of real dimension three, with the brac
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge University Press, 2013), for anti-Hermitian matrices and their spectra.
 - Brian C. Hall, *Lie Groups, Lie Algebras, and Representations* (Springer, 2015), for $\mathfrak{su}(2)$, its brackets and its Killing form.
 - [The Spectral Theorem: the Hermitian Case and the Sphere of Idempotents](the-spectral-theorem-the-hermitian-case-and-the-sphere-of-idempotents.html), for the Hermitian case that this article multiplies by $i$.
-- [The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian at $n=2$](the-two-halves-over-c-hermitian-and-skew-hermitian-at-n-2.html), for the anti-Hermitian half as a real space.
+- [The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian at $n=2$](the-two-halves-over-c-hermitian-and-anti-hermitian-at-n-2.html), for the anti-Hermitian half as a real space.
 - [The Killing Form of $\mathfrak{sl}_2$ and Its Three Signatures](the-killing-form-of-sl-2-and-its-three-signatures.html), for the negative definite form on $\mathfrak{su}(2)$.

@@ -131,6 +131,6 @@ The diagonal subalgebra $\mathfrak{h}$ has dimension $n$ and is a maximal torus;
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the diagonal subalgebra, the maximal torus and the conjugation action.
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the fine decomposition of an algebra into lines and the coordinate form of Peirce.
 - [The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric](the-two-halves-over-r-symmetric-and-antisymmetric.html), for the split that this grading refines.
-- [The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian](the-two-halves-over-c-hermitian-and-skew-hermitian.html), for the complex version of the refinement.
+- [The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian](the-two-halves-over-c-hermitian-and-anti-hermitian.html), for the complex version of the refinement.
 - [The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-mnc.html), for the simple nilpotents as simple root vectors.
 - [The Peirce Decomposition in $n$ Dimensions](the-peirce-decomposition-in-n-dimensions.html), for the general-flag version of the grading.

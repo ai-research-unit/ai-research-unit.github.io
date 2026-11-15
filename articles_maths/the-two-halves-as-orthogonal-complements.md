@@ -150,6 +150,6 @@ If an involution preserves a form, its two eigenspaces are orthogonal for that f
 - Werner Greub, *Linear Algebra* (Springer, 1975), for nondegenerate forms, annihilators and the dimension count of a complement.
 - Rajendra Bhatia, *Positive Definite Matrices* (Princeton, 2007), for the Hilbert–Schmidt form and the geometry of the cone.
 - [The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric](the-two-halves-over-r-symmetric-and-antisymmetric.html), for the real split and the trace form on each half.
-- [The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian](the-two-halves-over-c-hermitian-and-skew-hermitian.html), for the complex split and the purely imaginary cross term.
+- [The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian](the-two-halves-over-c-hermitian-and-anti-hermitian.html), for the complex split and the purely imaginary cross term.
 - [The Fine Decomposition against the Diagonal](the-fine-decomposition-against-the-diagonal.html), for the weight lines that the orthonormal units span.
 - [The Involutions over $\mathbb{R}$ and over $\mathbb{C}$](the-involutions-over-r-and-over-c.html), for the classification of the involutions that the lemma applies to.

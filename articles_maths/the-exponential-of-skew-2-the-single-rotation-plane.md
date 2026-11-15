@@ -122,4 +122,4 @@ The image of the real line is the circle $\mathrm{SO}(2)$, which is the whole ro
 - Jean Dieudonné, *La géométrie des groupes classiques* (Springer, 1971), for the classical groups at low order and their exponentials.
 - [The Lie Algebra $\operatorname{Skew}_2$: One Dimension, Hence Abelian](the-lie-algebra-skew-2-one-dimension-hence-abelian.html), for the bracket that vanishes on the line.
 - [The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$](the-two-halves-over-r-symmetric-and-antisymmetric-at-n-2.html), for the antisymmetric line as one of the two halves.
-- [The Spectral Theorem: the Anti-Hermitian Case and the Two Imaginary Eigenvalues](the-spectral-theorem-the-skew-hermitian-case-and-the-two-imaginary-eigenvalues.html), for the complex half that contains the real line.
+- [The Spectral Theorem: the Anti-Hermitian Case and the Two Imaginary Eigenvalues](the-spectral-theorem-the-anti-hermitian-case-and-the-two-imaginary-eigenvalues.html), for the complex half that contains the real line.

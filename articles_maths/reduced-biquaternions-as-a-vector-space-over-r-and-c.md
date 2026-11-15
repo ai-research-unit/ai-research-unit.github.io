@@ -189,4 +189,3 @@ A second complex coordinate system is the idempotent one, $(\Pi_+,\Pi_-)$, in wh
 - [The Four-Vector Element Representation of the Reduced Biquaternions](the-four-vector-element-representation-of-the-reduced-biquaternions.html), for the real quadruple and the complex pair as element representations.
 - [Conventions in Mathematics](algebra-and-element-conventions.html), §*The Elements and their Coefficients*, for the scalar part, the $j$-part and the two complex coordinates.
 - [The Biquaternion Algebra](the-biquaternion-algebra.html), for the coordinate systems of the non-commutative companion, whose quaternionic row is absent here.
-- [The Split-Complexoid as a Vector Space over $\mathbb{R}$](the-split-complexoid-as-a-vector-space-over-r.html), for the real companion $\mathbb{C}_{\mathrm{spl}}$ and its self-interpretation over the algebra.

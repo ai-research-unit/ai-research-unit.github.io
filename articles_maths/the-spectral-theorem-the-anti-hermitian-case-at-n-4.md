@@ -152,4 +152,4 @@ The two summands of $\mathfrak{so}(4)=\mathfrak{sl}_2\oplus\mathfrak{sl}_2$ carr
 - [The Lie Algebra $\operatorname{Skew}_4\cong\mathfrak{so}(4)$](the-lie-algebra-skew-4-and-so-4.html), for the two ideals and the brackets.
 - [Simple and Non-Simple Rotations: One Angle at $n\le3$, Two Angles at $n\ge4$](simple-and-non-simple-rotations-one-angle-at-n-le-3-two-angles-at-n-ge-4.html), for the geometry of the two angles.
 - [The Rotor as a Square Root of a Rotation: the Two Signs and the Double Cover at $n=4$](the-rotor-as-a-square-root-of-a-rotation-the-two-signs-and-the-double-cover-at-n-4.html), for the two-sided rotor.
-- [The Spectral Theorem: the Anti-Hermitian Case and the Two Imaginary Eigenvalues](the-spectral-theorem-the-skew-hermitian-case-and-the-two-imaginary-eigenvalues.html), for the case at order two.
+- [The Spectral Theorem: the Anti-Hermitian Case and the Two Imaginary Eigenvalues](the-spectral-theorem-the-anti-hermitian-case-and-the-two-imaginary-eigenvalues.html), for the case at order two.

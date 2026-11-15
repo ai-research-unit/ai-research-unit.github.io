@@ -500,5 +500,4 @@ With respect to an idempotent $\Pi$ and its complement $\Pi'=1-\Pi$, the Peirce 
 - [Square Roots of One and the Idempotents of the Split-Complex Algebra](square-roots-of-one-and-the-idempotents-of-the-split-complex-algebra.html), for the four idempotents, the halving map and the projectors.
 - [Zero Divisors of the Split-Complex Algebra](zero-divisors-of-the-split-complex-algebra.html), for the two minimal ideals as the two null lines.
 - [Annihilators of the Split-Complex Algebra](annihilators-of-the-split-complex-algebra.html), for the annihilator of an ideal and the double annihilator.
-- [The Matrix Element Representations of the Split-Complexoid](the-matrix-element-representations-of-the-split-complexoid.html), for the regular matrix model and its eigenvalues.
 - [The Specificities of the Split-Complex Algebra](the-specificities-of-the-split-complex-algebra.html), for semisimplicity, the failure of simplicity and the reduced property.

@@ -141,6 +141,6 @@ In the axis-free frame the left matrix of a real element satisfies $L^{\mathsf T
 
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for normality, the Schur form and the spectral theorem.
 - [The Spectral Theorem: the Hermitian Case at $n=4$](the-spectral-theorem-the-hermitian-case-at-n-4.html), for the real spectrum and the projectors.
-- [The Spectral Theorem: the Anti-Hermitian Case at $n=4$](the-spectral-theorem-the-skew-hermitian-case-at-n-4.html), for the imaginary spectrum.
+- [The Spectral Theorem: the Anti-Hermitian Case at $n=4$](the-spectral-theorem-the-anti-hermitian-case-at-n-4.html), for the imaginary spectrum.
 - [The Minimal Polynomial and the Jordan Form of a $4\times4$ Matrix](the-minimal-polynomial-and-the-jordan-form-of-a-4x4-matrix.html), for the Jordan block that fails normality.
 - [Normal $2\times2$ Matrices and the Common Spectral Theorem](normal-2x2-matrices-and-the-common-spectral-theorem.html), for the case at order two.

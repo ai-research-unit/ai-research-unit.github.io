@@ -356,9 +356,9 @@ an abelian group with four connected components and non-compact, in contrast wit
 ## Further Reading
 
 - [Norm and Invertibility in the Split-Complex Algebra](norm-and-invertibility-in-the-split-complex-algebra.html), for the other algebraic norm, the $\mathbb{C}_{\mathrm{spl}}$-valued $Q^{2}$, and the absence of a criterion from it.
-- [The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space](the-two-forms-and-the-two-algebraic-norms-of-the-split-complexoid-space.html), for the two forms and the two algebraic norms, their Gram matrices and their realified signatures.
+- [The Two Forms and the Two Algebraic Norms of the Split-Complex Space](the-two-forms-and-the-two-algebraic-norms-of-the-split-complex-space.html), for the two forms and the two algebraic norms, their Gram matrices and their realified signatures.
 - [Zero Divisors of the Split-Complex Algebra](zero-divisors-of-the-split-complex-algebra.html), for the zero-divisor set and its two families.
 - [Annihilators of the Split-Complex Algebra](annihilators-of-the-split-complex-algebra.html), for the annihilation of a line by a zero divisor.
-- [The Two Products of the Split-Complexoid Space](the-two-products-of-the-split-complexoid-space.html), for the two products and the failure of associativity of the sesquilinear one.
+- [The Two Products of the Split-Complex Space](the-two-products-of-the-split-complex-space.html), for the two products and the failure of associativity of the sesquilinear one.
 - [Split-Complex Algebra](split-complex-algebra.html), for the product, its unit and its element theory.
 - [The Versors and the Orthogonal Group of the Split-Complex Numbers](the-versors-and-the-orthogonal-group-of-the-split-complex-numbers.html), for the unit-norm group and its geometry.
