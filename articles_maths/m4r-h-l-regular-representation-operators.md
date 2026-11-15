@@ -1,4 +1,4 @@
-# __$M_4(\mathbb{R})_{\mathbb{H}_L}$ Regular Representation : Operators__
+# __$M_4(\mathbb{R})_{\mathbb{H}_L}$ Axis-Free Representation : Operators__
 
 ## Introduction
 
@@ -8,13 +8,13 @@ $$
 \operatorname{End}_{\mathbb{R}}(\mathbb{H})\cong M_4(\mathbb{R}),
 $$
 
-of dimension sixteen. That is exactly the carrier and the ambient of *$M_2(\mathbb{C})_{\mathbb{H}}$ Standard Representation : Operators*. The two articles therefore describe the **same** operators. What changes is the frame: there the carrier was reached through the $2\times2$ complex model, here through the Cayley matrix. This article does not repeat the cone, the membership test or the length theorem; it establishes the identity of the two readings, and then records what the regular frame makes visible and what it cannot show.
+of dimension sixteen. That is exactly the carrier and the ambient of *$M_2(\mathbb{C})_{\mathbb{H}}$ Pauli Representation : Operators*. The two articles therefore describe the **same** operators. What changes is the frame: there the carrier was reached through the $2\times2$ complex model, here through the Cayley matrix. This article does not repeat the cone, the membership test or the length theorem; it establishes the identity of the two readings, and then records what the axis-free frame makes visible and what it cannot show.
 
 **What is genuinely new.** One thing, and it is structural. The coefficient array of an operator and the matrix of the operator are both $4\times4$ real arrays in this frame, because the carrier and the ambient are both four-dimensional over $\mathbb{R}$. Nowhere else in Part VI does that happen: in the split-quaternion category the coefficient array was $2\times2$ and the operator matrix $4\times4$; in the complex model the operator matrix is $4\times4$ and the coefficient array $4\times4$ as well, but the carrier of the complex model is eight-real-dimensional and the operator acts on a space of matrices. Here the two arrays are of the same size and describe the same linear map on the same four-dimensional carrier, so they can be compared **entrywise**, and the comparison is the content.
 
 **The frame dictionary, in one line.** A matrix in the ambient acts on coordinate columns in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$; its $(\mu,\nu)$ entry is the $\mu$-th coordinate of the image of $\tilde e_\nu$; and the sixteen matrices $L_{e_\mu}R_{e_\nu}$ are a basis of the ambient in which the coefficient array of an operator is read. The two bases of the ambient — the sixteen matrix units and the sixteen products — are the two readings.
 
-**Boundaries.** The model, the Cayley display, the trace, the determinant, the adjugate and the subspaces are *$M_4(\mathbb{R})_{\mathbb{H}_L}$ Regular Representation*. The operators, the cone, the length theorem and the two-ranks discussion are *$M_2(\mathbb{C})_{\mathbb{H}}$ Standard Representation : Operators*, whose results hold verbatim here and are cited rather than reproved. The abstract one-sided and two-sided operators are *The One-Sided Operators* and *Two-Sided Operators on the Quaternion Algebra*; the enveloping algebra is *The Enveloping Operator Algebra of the Quaternion Algebra and the Bi-module Structure*.
+**Boundaries.** The model, the Cayley display, the trace, the determinant, the adjugate and the subspaces are *$M_4(\mathbb{R})_{\mathbb{H}_L}$ Axis-Free Representation*. The operators, the cone, the length theorem and the two-ranks discussion are *$M_2(\mathbb{C})_{\mathbb{H}}$ Pauli Representation : Operators*, whose results hold verbatim here and are cited rather than reproved. The abstract one-sided and two-sided operators are *The One-Sided Operators* and *Two-Sided Operators on the Quaternion Algebra*; the enveloping algebra is *The Enveloping Operator Algebra of the Quaternion Algebra and the Bi-module Structure*.
 
 **Conventions.** The basis is $(e_t,\vec e_x,\vec e_y,\vec e_z)$; $\mathsf{M}_4$ is the Cayley matrix of left multiplication; $L_{\tilde q}=\mathsf{M}_4(\tilde q)$ and $R_{\tilde q}$ is right multiplication, with $R_{\tilde q}=D\mathsf{M}_4(\tilde q)^{\mathsf T}D$ and $D=\operatorname{diag}(1,-1,-1,-1)$; $L_{\tilde q}R_{\tilde p}$; $c(M)$ is the coefficient array of $M$ in the basis of the sixteen products.
 
@@ -32,7 +32,7 @@ $$
 R(\mathbb{H})=D\,\mathsf{M}_4(\mathbb{H})^{\mathsf T}D .
 $$
 
-**The two frames of one statement.** In the complex model the two families were related by the conjugate transpose, an anti-linear operation of the ambient $M_2(\mathbb{C})$; here they are related by a signed transpose, a linear operation of $M_4(\mathbb{R})$. The regular frame therefore turns an anti-linear relation into a linear one, at the price of losing the complex structure that the anti-linearity encoded. This is the general trade of realification, and it is worth naming: **the conjugate transpose of the complex model becomes the signed transpose of the regular model.**
+**The two frames of one statement.** In the complex model the two families were related by the conjugate transpose, an anti-linear operation of the ambient $M_2(\mathbb{C})$; here they are related by a signed transpose, a linear operation of $M_4(\mathbb{R})$. The axis-free frame therefore turns an anti-linear relation into a linear one. What it gives up is the complex scalar and not the complex structure: for a pure unit quaternion $u$ the Cayley matrix $\mathsf{M}_4(u)$ is still an operator of square $-I_4$, a complex structure on the carrier, and it is an element of the image; the scalar $i$ is not. This is the general trade of realification, and it is worth naming: **the conjugate transpose of the complex model becomes the signed transpose of the axis-free model.**
 
 **The intersection and the sum.** The two families are four-dimensional, they commute, their intersection is the scalar line, and their sum has dimension seven:
 
@@ -42,9 +42,9 @@ $$
 
 The seven is visible in the Cayley frame without any computation: a general element of the sum is $q_tI_4$ plus the three antisymmetric generators plus the three signed transposes of them, and these seven matrices are linearly independent while the identity is counted once.
 
-**The adjoints.** With respect to the Frobenius form of the ambient, the adjoint of $L_{\tilde q}$ is $L_{\tilde q}^{\,T}=D R_{\tilde q}D$, which is not in $L(\mathbb{H})$ but in $R(\mathbb{H})$: the adjoint operation exchanges the two families. With respect to the trace form it is the same statement with the parameters swapped, $\langle L_{\tilde q}X,Y\rangle_{\operatorname{tr}}=\langle X,R_{\tilde q}Y\rangle_{\operatorname{tr}}$. So in the regular frame the two-sidedness of the adjoint is stated once and read twice, and the exchange is a linear map of the ambient rather than a conjugation.
+**The adjoints.** With respect to the Frobenius form of the ambient, the adjoint of $L_{\tilde q}$ is $L_{\tilde q}^{\,T}=D R_{\tilde q}D$, which is not in $L(\mathbb{H})$ but in $R(\mathbb{H})$: the adjoint operation exchanges the two families. With respect to the trace form it is the same statement with the parameters swapped, $\langle L_{\tilde q}X,Y\rangle_{\operatorname{tr}}=\langle X,R_{\tilde q}Y\rangle_{\operatorname{tr}}$. So in the axis-free frame the two-sidedness of the adjoint is stated once and read twice, and the exchange is a linear map of the ambient rather than a conjugation.
 
-**The sixteen products.** In the regular frame the products are the natural matrices of the reading, and their entries are $0,\pm1$: the $\nu'$-th column of $L_{e_\mu}R_{e_\nu}$ is the coordinate column of $e_\mu\tilde e_{\nu'}\tilde e_\nu$, a product of three basis elements and hence a basis element up to sign. So the sixteen matrices are signed permutation matrices, orthogonal, of determinant one:
+**The sixteen products.** In the axis-free frame the products are the natural matrices of the reading, and their entries are $0,\pm1$: the $\nu'$-th column of $L_{e_\mu}R_{e_\nu}$ is the coordinate column of $e_\mu\tilde e_{\nu'}\tilde e_\nu$, a product of three basis elements and hence a basis element up to sign. So the sixteen matrices are signed permutation matrices, orthogonal, of determinant one:
 
 $$
 L_{e_\mu}R_{e_\nu}^{\mathsf T}L_{e_\mu}R_{e_\nu}=I_4,\qquad \det L_{e_\mu}R_{e_\nu}=1,\qquad \operatorname{rank}L_{e_\mu}R_{e_\nu}=4 .
@@ -78,7 +78,7 @@ $$
 
 All three are inherited from the complex reading; the third is the one that needs care, since the trace of the operator is not the product of the traces of its factors.
 
-**Why the trace is $4q_tp_t$.** The bilinear form $(q,p)\mapsto\operatorname{tr}(L_{\tilde q}R_{\tilde p})$ has Gram matrix $4\,E_{tt}$ in the basis of the four units, so it is the rank-one form $4q_tp_t$. In the regular frame this is visible from the trace table of the previous section: only the pair $(e_t,e_t)$ contributes.
+**Why the trace is $4q_tp_t$.** The bilinear form $(q,p)\mapsto\operatorname{tr}(L_{\tilde q}R_{\tilde p})$ has Gram matrix $4\,E_{tt}$ in the basis of the four units, so it is the rank-one form $4q_tp_t$. In the axis-free frame this is visible from the trace table of the previous section: only the pair $(e_t,e_t)$ contributes.
 
 **The scaling.** The pair has eight real parameters and the operator has sixteen entries; the kernel of the map is the line of scalings $(\lambda\tilde q,\lambda^{-1}\tilde p)$, so the effective parameter count is seven and the fibre over a non-zero product is one real line.
 
@@ -88,7 +88,7 @@ $$
 \bigl(\mathbb{H}^{\times}\times\mathbb{H}^{\times}\bigr)/\mathbb{R}^{\times},
 $$
 
-of dimension seven, and the inner automorphisms $L_{\tilde q}R_{\tilde q^{-1}}$ form $\mathbb{H}^{\times}/\mathbb{R}^{\times}\cong SO(3)$, acting on the pure part as the rotation group. In the regular frame the second group is visible as the group of conjugations of the Cayley matrices by the units, which is the classical statement that $SU(2)$ covers $SO(3)$ twice; the double cover is the sign ambiguity of $\tilde q$.
+of dimension seven, and the inner automorphisms $L_{\tilde q}R_{\tilde q^{-1}}$ form $\mathbb{H}^{\times}/\mathbb{R}^{\times}\cong SO(3)$, acting on the pure part as the rotation group. In the axis-free frame the second group is visible as the group of conjugations of the Cayley matrices by the units, which is the classical statement that $SU(2)$ covers $SO(3)$ twice; the double cover is the sign ambiguity of $\tilde q$.
 
 **The real block structure.** A two-sided operator commutes with nothing in general, but its action on the carrier can be read block by block: for a pure parameter the Cayley matrix splits as two identical blocks, so $L_{\tilde q}R_{\tilde p}$ acts as two copies of the same $2\times2$ block on the two invariant planes of the complex structure. The doubling is the realification, and it is the operator-level reason why the determinant of every product is a square.
 
@@ -96,7 +96,7 @@ of dimension seven, and the inner automorphisms $L_{\tilde q}R_{\tilde q^{-1}}$ 
 
 **The failure, restated.** The carrier is a division algebra and not a matrix algebra, so no Kronecker factorisation exists: $L_{\tilde q}$ is not $A\otimes I$ for any $2\times2$ real $A$. The complex model does have a display, because its model is a matrix algebra; so the display is a property of the *complex* reading and not of the carrier.
 
-**The two arrays.** In the regular frame there are two $4\times4$ real arrays attached to an operator $M$:
+**The two arrays.** In the axis-free frame there are two $4\times4$ real arrays attached to an operator $M$:
 
 - the **Cayley array** of $M$, that is the matrix of $M$ in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ of the carrier;
 - the **coefficient array** $c(M)$, that is the coordinates of $M$ in the basis $L_{e_\mu}R_{e_\nu}$ of the ambient.
@@ -121,7 +121,7 @@ for every operator, and $\Phi$ is given in the two bases by the sixteen matrices
 
 **What the comparison buys.** Since the two arrays have the same size, the questions of the operator layer can be asked of either. The rank of the array is the length, in the coefficient reading, and the rank of the operator is the rank of the array in the Cayley reading. So the length and the operator rank become two ranks of two arrays of the *same* size, attached to the *same* operator, and the fact that they differ is no longer a difference of size between the carrier and the algebra but a genuine property of the two coordinate systems. This is the sharpest formulation of the phenomenon, and it is available only in this frame.
 
-**The display that does exist.** Over $\mathbb{C}$, on the complexified carrier, the operator $Y\mapsto AYB$ is $A\otimes B^{\mathsf T}$ in the row-major vectorisation, of size $4\times4$ over $\mathbb{C}$. That is the biquaternion layer, treated in *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*; the regular frame of this article is the real slice on which both parameters lie in $\mathbb{H}$.
+**The display that does exist.** Over $\mathbb{C}$, on the complexified carrier, the operator $Y\mapsto AYB$ is $A\otimes B^{\mathsf T}$ in the row-major vectorisation, of size $4\times4$ over $\mathbb{C}$. That is the biquaternion layer, treated in *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*; the axis-free frame of this article is the real slice on which both parameters lie in $\mathbb{H}$.
 
 ## The Rank and the Invariants
 
@@ -161,9 +161,9 @@ $$
 
 the Segre cone over $\mathbb{P}^{3}(\mathbb{R})\times\mathbb{P}^{3}(\mathbb{R})$. The result is the same as in the complex reading, because the operator is the same; only its coordinates have changed.
 
-**The membership test.** An operator is a single product exactly when its coefficient array has rank one, and then the two parameters are the two singular vectors of that array. In the regular frame the test can be stated without leaving the ambient: $M$ is a product exactly when the sixteen coordinates of $M$ in the basis $L_{e_\mu}R_{e_\nu}$ form a rank-one array.
+**The membership test.** An operator is a single product exactly when its coefficient array has rank one, and then the two parameters are the two singular vectors of that array. In the axis-free frame the test can be stated without leaving the ambient: $M$ is a product exactly when the sixteen coordinates of $M$ in the basis $L_{e_\mu}R_{e_\nu}$ form a rank-one array.
 
-**The two rulings.** Fixing $\tilde p$ gives a copy of the algebra inside the cone, of dimension four, and fixing $\tilde q$ gives another; two members of different families meet in one point. In the regular frame the two rulings are visible as the two statements $L(\mathbb{H})$ and $R(\mathbb{H})$: the first ruling is the left copy parametrised by $\tilde q$, the second the right copy parametrised by $\tilde p$.
+**The two rulings.** Fixing $\tilde p$ gives a copy of the algebra inside the cone, of dimension four, and fixing $\tilde q$ gives another; two members of different families meet in one point. In the axis-free frame the two rulings are visible as the two statements $L(\mathbb{H})$ and $R(\mathbb{H})$: the first ruling is the left copy parametrised by $\tilde q$, the second the right copy parametrised by $\tilde p$.
 
 **The vertex and the base.** The vertex is the zero operator; the base is the Segre variety $\mathbb{P}^{3}\times\mathbb{P}^{3}$, of dimension six, and its two rulings are the two projective families. The base is the projectivisation of the algebra in each slot, which is the projective space of the element: this is the only place in the quaternion category where projective geometry appears, and it appears on the operator side and not on the algebra side, because the algebra has no projective geometry of its own (its null cone is a point).
 
@@ -189,9 +189,9 @@ and the strata $\{\operatorname{rank}c\le r\}$ have dimensions $0,7,12,15,16$.
 
 **Why four is generic.** The generic operator of the sixteen-dimensional ambient has a coefficient array of full rank four, so four products suffice and are generically necessary; three products suffice on a set of dimension fifteen, that is on a hypersurface, and two on a set of dimension twelve.
 
-**The measured behaviour.** A sum of $k$ random products has coefficient rank $\min(k,4)$ for $k=1,2,3,4$ and coefficient rank four for every larger $k$, in this frame as in the other, because the coefficient array is the same array. The regular frame adds nothing to the theorem and everything to the picture: the coefficient array is now the array of the operator's coordinates among the sixteen products, which is the array the next section compares with the operator itself.
+**The measured behaviour.** A sum of $k$ random products has coefficient rank $\min(k,4)$ for $k=1,2,3,4$ and coefficient rank four for every larger $k$, in this frame as in the other, because the coefficient array is the same array. The axis-free frame adds nothing to the theorem and everything to the picture: the coefficient array is now the array of the operator's coordinates among the sixteen products, which is the array the next section compares with the operator itself.
 
-**The extremal witnesses, in the regular frame.** In the Cayley frame the two basis products are diagonal:
+**The extremal witnesses, in the axis-free frame.** In the Cayley frame the two basis products are diagonal:
 
 $$
 L_{e_t}R_{e_t}=I_4=\operatorname{diag}(1,1,1,1),\qquad
@@ -224,9 +224,9 @@ $$
 | $L_{e_t}R_{e_t}+L_{\vec e_x}R_{\vec e_x}$ | $2$ | $2$ | a sum that is singular and not a product |
 | a generic sum of two products | $4$ | $2$ | invertible, length two |
 
-**The reading.** The first column can take the values $0,2,4$ on the cone and on its small sums, and always $4$ on the open dense set; the second takes $0,1,2,3,4$. Neither determines the other: rank four occurs at length one and at length four, and length one occurs at rank two and at rank four. This is the sharpest statement of the independence available in the category, and the regular frame is where it can be written with two arrays of one size.
+**The reading.** The first column can take the values $0,2,4$ on the cone and on its small sums, and always $4$ on the open dense set; the second takes $0,1,2,3,4$. Neither determines the other: rank four occurs at length one and at length four, and length one occurs at rank two and at rank four. This is the sharpest statement of the independence available in the category, and the axis-free frame is where it can be written with two arrays of one size.
 
-**The general rule.** The two ranks measure two different things: the Cayley rank measures the size of the image of the operator on the carrier, the coefficient rank measures the number of products needed. The first is a property of the operator as a map; the second is a property of the operator as a tensor in $\mathbb{H}\otimes\mathbb{H}$. Two different structures on the same sixteen-dimensional space, and the regular frame displays both.
+**The general rule.** The two ranks measure two different things: the Cayley rank measures the size of the image of the operator on the carrier, the coefficient rank measures the number of products needed. The first is a property of the operator as a map; the second is a property of the operator as a tensor in $\mathbb{H}\otimes\mathbb{H}$. Two different structures on the same sixteen-dimensional space, and the axis-free frame displays both.
 
 ## What the Pair Buys and Does Not
 
@@ -238,7 +238,7 @@ $$
 
 **What the two missing structures have in common.** Both the Peirce frame and the chirality come from a system of matrix units, and a division algebra has none. So the two absences are one absence, and the category of the quaternions is the first in Part VI where the operator layer is a purely metric and tensor-theoretic object, with no combinatorial structure at all.
 
-**What stays outside.** The complex structure, the Hermitian forms, the spectral projectors: those belong to the complex model and are read there. The regular frame is the frame of the real form, and it sees the real form only.
+**What stays outside.** The complex structure, the Hermitian forms, the spectral projectors: those belong to the complex model and are read there. The axis-free frame is the frame of the real form, and it sees the real form only.
 
 ## Summary
 
@@ -257,7 +257,7 @@ $$
 
 | Symbol | Meaning | Article |
 |---|---|---|
-| $\mathsf{M}_4$ | the Cayley matrix of left multiplication | *$M_4(\mathbb{R})_{\mathbb{H}_L}$ Regular Representation* |
+| $\mathsf{M}_4$ | the Cayley matrix of left multiplication | *$M_4(\mathbb{R})_{\mathbb{H}_L}$ Axis-Free Representation* |
 | $L_{\tilde q},R_{\tilde q}$ | the two one-sided families, $R_{\tilde q}=D\mathsf{M}_4(\tilde q)^{\mathsf T}D$ | this article |
 | $D$ | the sign matrix $\operatorname{diag}(1,-1,-1,-1)$ | this article |
 | $L_{\tilde q}R_{\tilde p}$ | $L_{\tilde q}R_{\tilde p}$, the operator $\tilde x\mapsto\tilde q\tilde x\tilde p$ | this article |

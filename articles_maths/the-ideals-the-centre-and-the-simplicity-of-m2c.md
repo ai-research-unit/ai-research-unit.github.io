@@ -112,7 +112,7 @@ of complex dimension $2$.
 
 **Corollary.** $\operatorname{Der}(M_2(\mathbb{C}))=\mathfrak{sl}_2(\mathbb{C})$, of complex dimension $3$.
 
-**The two results are one statement.** The Lie algebra of the automorphism group is the space of derivations, and the Lie algebra of $PGL_2$ is $\mathfrak{sl}_2$. The real forms of the derivation are the subject of *The Derivation $X\mapsto[A,X]$ and Its Skewness for the Trace Form*.
+**The two results are one statement.** The Lie algebra of the automorphism group is the space of derivations, and the Lie algebra of $PGL_2$ is $\mathfrak{sl}_2$. The real forms of the derivation are the subject of *The Derivation $X\mapsto[A,X]$ and Its Anti-Self-Adjointness for the Trace Form*.
 
 ## Modules
 

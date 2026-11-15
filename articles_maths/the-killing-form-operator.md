@@ -65,7 +65,7 @@ $$
 
 **Corollary.** For semisimple $\mathrm{G}$ the map $\kappa^{\flat}:\mathrm{G}\to\mathrm{G}^*$ is an isomorphism of $\mathrm{G}$-modules with the actions of the previous section, so the adjoint and the coadjoint representations are equivalent; the inverse $(\kappa^{\flat})^{-1}:\mathrm{G}^*\to\mathrm{G}$ transfers the form to the dual and is used to build the Casimir operator.
 
-**Proposition.** The radical of the form is stable under derivations: if $D$ is a derivation of $\mathrm{G}$ then $\kappa(Dx,y)+\kappa(x,Dy)=0$, so $D$ preserves $\kappa$, and $\kappa^{\flat}\circ D=-D^{*}\circ\kappa^{\flat}$; for $\mathrm{G}$ semisimple every derivation is inner, and the statement reduces to the skewness of $\operatorname{ad}_x$.
+**Proposition.** The radical of the form is stable under derivations: if $D$ is a derivation of $\mathrm{G}$ then $\kappa(Dx,y)+\kappa(x,Dy)=0$, so $D$ preserves $\kappa$, and $\kappa^{\flat}\circ D=-D^{*}\circ\kappa^{\flat}$; for $\mathrm{G}$ semisimple every derivation is inner, and the statement reduces to the anti-self-adjointness of $\operatorname{ad}_x$.
 
 **Proof.** The identity $\operatorname{tr}([D,\operatorname{ad}_x]\operatorname{ad}_y)+\operatorname{tr}(\operatorname{ad}_x[D,\operatorname{ad}_y])=0$, valid for any derivation because $[D,\operatorname{ad}_x]=\operatorname{ad}_{Dx}$, gives the invariance; the inner case is the previous theorem.
 

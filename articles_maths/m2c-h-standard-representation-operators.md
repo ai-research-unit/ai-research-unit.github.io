@@ -1,4 +1,4 @@
-# __$M_2(\mathbb{C})_{\mathbb{H}}$ Standard Representation : Operators__
+# __$M_2(\mathbb{C})_{\mathbb{H}}$ Pauli Representation : Operators__
 
 ## Introduction
 
@@ -14,7 +14,7 @@ of dimension sixteen. The operator layer lives one size above the model, and eve
 
 **The one number that changes.** In the split-quaternion category the operator rank of a single product was $\operatorname{rank}A\cdot\operatorname{rank}B$, ranging over $\{0,1,2,4\}$, because a split quaternion can be a zero divisor. Here every nonzero quaternion is a unit, so the two factors have rank two each and the product has rank four. The operator rank therefore takes only the values four and zero, and **the rank tells nothing at all about the length**. That single collapse is what makes the quaternion operator layer the cleanest of the category.
 
-**Boundaries.** The model, its dictionary, the trace, the determinant, the spectral projectors, the adjugate and the subspaces are the previous article, *$M_2(\mathbb{C})_{\mathbb{H}}$ Standard Representation*. The algebra is *Quaternion Algebra*, the norm is *Quaternion Norm and Invertibility*, the unit group is *Quaternion Exponential and Lie Group Structure*. The abstract operator articles, with no matrix in them, are *The One-Sided Operators*, *Two-Sided Operators* and *The Enveloping Operator Algebra*, which this article does not replace; the two-sided operator on the *matrix space* rather than on the carrier is *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*.
+**Boundaries.** The model, its dictionary, the trace, the determinant, the spectral projectors, the adjugate and the subspaces are the previous article, *$M_2(\mathbb{C})_{\mathbb{H}}$ Pauli Representation*. The algebra is *Quaternion Algebra*, the norm is *Quaternion Norm and Invertibility*, the unit group is *Quaternion Exponential and Lie Group Structure*. The abstract operator articles, with no matrix in them, are *The One-Sided Operators*, *Two-Sided Operators* and *The Enveloping Operator Algebra*, which this article does not replace; the two-sided operator on the *matrix space* rather than on the carrier is *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*.
 
 **Conventions.** The basis of the algebra is $(e_t,\vec e_x,\vec e_y,\vec e_z)$ with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$ cyclically; the model is $\mathsf{M}_2$ with the image $M_2(\mathbb{H})$; the norm is $N$. The left and right multiplication matrices are written $L_{\tilde q},R_{\tilde q}\in M_4(\mathbb{R})$, in the real basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ of the carrier. The coefficient matrix $c(M)$ of an operator is its $4\times4$ array of coordinates in the basis $L_{e_\mu}R_{e_\nu}$.
 
@@ -42,7 +42,7 @@ $$
 
 So the two one-sided families, taken together, span a seven-dimensional subspace of the sixteen-dimensional ambient. That seven is not the seven of the cone of products, and the two numbers coincide for a reason that the section on the cone explains.
 
-**The relation between the copies.** In the model, right multiplication is left multiplication read through the adjoint, $R_{\tilde q}=C L_{\tilde q^{*}}C$ with $C(A)=A^{*}$ the conjugate transpose. Since $C$ is conjugate-linear, the identity does not say that the two copies are equal; it says that they are exchanged by an anti-linear isometry of the carrier.
+**The relation between the copies.** In the model, right multiplication is left multiplication read through the adjoint, $R_{\tilde q}=C L_{\tilde q^{*}}C$ with $C(A)=A^{\dagger}$ the conjugate transpose. Since $C$ is conjugate-linear, the identity does not say that the two copies are equal; it says that they are exchanged by an anti-linear isometry of the carrier.
 
 **The invariants.** For a nonzero element,
 
@@ -291,7 +291,7 @@ which kills both $e_t$ and $\vec e_x$, because $\vec e_x e_t\vec e_x=\vec e_x^{2
 | $L_{e_\mu}R_{e_\nu}$ | the sixteen basis operators of the ambient | this article |
 | $c(M)$ | the coefficient matrix of $M$ in that basis | this article |
 | $\ell(M)$ | the length, equal to $\operatorname{rank}c(M)$ | this article |
-| $\langle\cdot,\cdot\rangle_{\operatorname{tr}}$ | the trace form $\operatorname{tr}(XY)$, of signature $(1,3)$ | *$M_2(\mathbb{C})_{\mathbb{H}}$ Standard Representation* |
+| $\langle\cdot,\cdot\rangle_{\operatorname{tr}}$ | the trace form $\operatorname{tr}(XY)$, of signature $(1,3)$ | *$M_2(\mathbb{C})_{\mathbb{H}}$ Pauli Representation* |
 | $\langle\cdot,\cdot\rangle_F$ | the Frobenius form, positive definite | this article |
 | $SO(3)$ | the group of the inner automorphisms, $\mathbb{H}^{\times}/\mathbb{R}^{\times}$ | *Quaternion Rotations and the Lorentz Group* |
 | $\mathbb{P}^{3}(\mathbb{R})$ | the projectivised algebra, the space of the rulings | this article |

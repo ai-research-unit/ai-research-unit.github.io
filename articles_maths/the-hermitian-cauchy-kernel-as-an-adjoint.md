@@ -71,7 +71,7 @@ $$
 so the four Hermitian Cauchy kernels pair into the four conjugate Hermitian Dirac operators, and the
 matrix $E$ is correspondingly the adjoint partner of the matrix $D$ of the operators.
 
-*Proof.* The oddness is immediate from $(Z_r)^{*}=-Z_r$-type skewness of the variables and the
+*Proof.* The oddness is immediate from $(Z_r)^{*}=-Z_r$-type anti-self-adjointness of the variables and the
 evenness of $|Z|$; the involution statement is the conjugation of the numerator and of the
 coefficients, with the same normalisation; the matrix statement is that $D^{\mathsf T}E=\delta I$ of
 *The Hermitian Cauchy Integral and the Boundary Values*, which exhibits $E$ as the kernel of the

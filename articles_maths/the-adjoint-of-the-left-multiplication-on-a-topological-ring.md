@@ -37,7 +37,7 @@ the two-sided operator of the images, with the order of the parameters restored 
 
 ## The Dictionary between the Operator and the Element
 
-**Theorem (self-adjointness and skewness).** The left multiplication satisfies
+**Theorem (self-adjointness and anti-self-adjointness).** The left multiplication satisfies
 
 $$
 \boxed{\;L_a^\dagger = L_a \iff \sigma(a) = a , \qquad L_a^\dagger = -L_a \iff \sigma(a) = -a\;} ,

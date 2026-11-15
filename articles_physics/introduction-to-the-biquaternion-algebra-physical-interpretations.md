@@ -216,8 +216,8 @@
 
 ##### Matrix Operator Representations
 
-- [$M_2(\mathbb{C})_{\mathbb{H}}$ Standard Representation : Operators](../articles_maths/m2c-h-standard-representation-operators.html)
-- [$M_4(\mathbb{R})_{\mathbb{H}_L}$ Regular Representation : Operators](../articles_maths/m4r-h-l-regular-representation-operators.html)
+- [$M_2(\mathbb{C})_{\mathbb{H}}$ Pauli Representation : Operators](../articles_maths/m2c-h-standard-representation-operators.html)
+- [$M_4(\mathbb{R})_{\mathbb{H}_L}$ Axis-Free Representation : Operators](../articles_maths/m4r-h-l-regular-representation-operators.html)
 
 #### Operators
 

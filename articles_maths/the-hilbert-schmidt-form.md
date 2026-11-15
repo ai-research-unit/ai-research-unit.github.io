@@ -132,7 +132,7 @@ $$
 
 The identity was verified at $n=4$, and the sign is absent because the conjugate transpose is used twice with no transposition of the product order. For the trace form the corresponding statement has a minus sign, since there the adjoint of the multiplication is multiplication by the transpose and the order reverses.
 
-**The derivation is therefore not anti-self-adjoint for the Hilbert–Schmidt form.** Since $\operatorname{ad}_A^{*}=\operatorname{ad}_{A^{*}}$ and $\operatorname{ad}_A$ is anti-Hermitian only when $A$ is anti-Hermitian up to the sign of the adjoint, the skewness statement holds for the trace form and not for this one. The two forms split the theory: the trace form is the natural form for the Lie structure, the Hilbert–Schmidt form the natural form for the operator structure.
+**The derivation is therefore not anti-self-adjoint for the Hilbert–Schmidt form.** Since $\operatorname{ad}_A^{*}=\operatorname{ad}_{A^{*}}$ and $\operatorname{ad}_A$ is anti-Hermitian only when $A$ is anti-Hermitian up to the sign of the adjoint, the anti-self-adjointness statement holds for the trace form and not for this one. The two forms split the theory: the trace form is the natural form for the Lie structure, the Hilbert–Schmidt form the natural form for the operator structure.
 
 ## Definiteness on the Two Halves
 
@@ -191,4 +191,4 @@ The form $\langle X,Y\rangle=\operatorname{tr}(X^{*}Y)$ is Hermitian, positive d
 - Paul R. Halmos, *A Hilbert Space Problem Book* (Springer, 1982), for the two-sided operators and their adjoints.
 - [The Trace Form and Its Signature on the Two Halves](the-trace-form-and-its-signature-on-the-two-halves.html), for the indefinite form that this one replaces.
 - [The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian](the-two-halves-over-c-hermitian-and-anti-hermitian.html), for the split that is orthogonal but not definite here.
-- [The Derivation $X\mapsto[A,X]$ and Its Skewness for the Trace Form](the-derivation-commutator-and-its-skewness-for-the-trace-form.html), for the skewness that fails for this form.
+- [The Derivation $X\mapsto[A,X]$ and Its Anti-Self-Adjointness for the Trace Form](the-derivation-commutator-and-its-anti-self-adjointness-for-the-trace-form.html), for the anti-self-adjointness that fails for this form.

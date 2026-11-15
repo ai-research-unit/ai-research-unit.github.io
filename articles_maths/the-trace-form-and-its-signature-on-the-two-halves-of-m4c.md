@@ -34,7 +34,7 @@ It assumes *The Two Halves as Orthogonal Complements at $n=4$* for the orthogona
 
 **Corollary.** The isometry group of $\beta$ contains $\mathrm{GL}_4$ acting by conjugation, and its Lie algebra of anti-self-adjoint endomorphisms contains every inner derivation.
 
-**Proof.** The invariance under all of $\mathrm{GL}_4$ was proved above; differentiating gives the statement about derivations, which is the content of *The Derivation $X\mapsto[A,X]$ and Its Skewness for the Trace Form*.
+**Proof.** The invariance under all of $\mathrm{GL}_4$ was proved above; differentiating gives the statement about derivations, which is the content of *The Derivation $X\mapsto[A,X]$ and Its Anti-Self-Adjointness for the Trace Form*.
 
 ## The Two Halves and Their Signs
 

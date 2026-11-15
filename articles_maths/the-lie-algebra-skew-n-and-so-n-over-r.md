@@ -96,7 +96,7 @@ $$
 \operatorname{tr}([X,Y]Z)=\operatorname{tr}(X[Y,Z]),
 $$
 
-so the adjoint action is by anti-self-adjoint maps for this form. The algebra is thus a Euclidean Lie algebra, and the bracket is an anti-Hermitian trilinear form on it, which is the structure used in *The Derivation $X\mapsto[A,X]$ and Its Skewness for the Trace Form*.
+so the adjoint action is by anti-self-adjoint maps for this form. The algebra is thus a Euclidean Lie algebra, and the bracket is an anti-Hermitian trilinear form on it, which is the structure used in *The Derivation $X\mapsto[A,X]$ and Its Anti-Self-Adjointness for the Trace Form*.
 
 ## The Cases $n=2$, $n=3$ and $n=4$
 

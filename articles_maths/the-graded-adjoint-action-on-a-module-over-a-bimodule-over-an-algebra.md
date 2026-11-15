@@ -167,7 +167,7 @@ $$
 
 and conversely $T^{*}=T$ follows when this holds for a separating family of such $a$.
 
-*Proof.* By the theorem $[L_a,T]_{\epsilon}^{*}=-\epsilon[L_a,T^{*}]_{\epsilon}$, and with $\sigma(a)=a$ this is $-\epsilon[L_a,T^{*}]_{\epsilon}$. If $T^{*}=T$ it equals $-\epsilon[L_a,T]_{\epsilon}$, which is the displayed skewness. Conversely, if the skewness holds then $[L_a,T^{*}]_{\epsilon}=[L_a,T]_{\epsilon}$ for the family, that is $L_{a(T^{*}-T)-\epsilon(T^{*}-T)a}=0$, and for a separating family this forces $T^{*}=T$.
+*Proof.* By the theorem $[L_a,T]_{\epsilon}^{*}=-\epsilon[L_a,T^{*}]_{\epsilon}$, and with $\sigma(a)=a$ this is $-\epsilon[L_a,T^{*}]_{\epsilon}$. If $T^{*}=T$ it equals $-\epsilon[L_a,T]_{\epsilon}$, which is the displayed anti-self-adjointness. Conversely, if the anti-self-adjointness holds then $[L_a,T^{*}]_{\epsilon}=[L_a,T]_{\epsilon}$ for the family, that is $L_{a(T^{*}-T)-\epsilon(T^{*}-T)a}=0$, and for a separating family this forces $T^{*}=T$.
 
 ## Examples
 

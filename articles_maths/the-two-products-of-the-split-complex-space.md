@@ -86,7 +86,7 @@ $$
 \tfrac12\bigl(AC-CA\bigr)=0, \qquad \tfrac12\bigl(A\bar C-\overline{C\bar A}\bigr)=0 .
 $$
 
-**There is no antisymmetric part.** This is the degenerate case of *The Conjugate-Symmetric and Skew-Conjugate-Symmetric Parts of a Sesquilinear Product*: that article splits a general sesquilinear product into a conjugate-symmetric and a skew-conjugate-symmetric part, and here the second part is zero and the first is the product.
+**There is no antisymmetric part.** This is the degenerate case of *The Conjugate-Symmetric and Anti-Conjugate-Symmetric Parts of a Sesquilinear Product*: that article splits a general sesquilinear product into a conjugate-symmetric and an anti-conjugate-symmetric part, and here the second part is zero and the first is the product.
 
 ### What $A\bar C-C\bar A$ Is, and What It Is Not
 

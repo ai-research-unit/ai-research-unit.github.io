@@ -29,7 +29,7 @@ $$
 
 of dimension $\tfrac{1}{2}\langle N-1\rangle_{\natural}$; and its identity component has index at most four in it.
 
-*Proof.* Closure is continuity of the defining equations. The differential condition is obtained by differentiating $g(\exp(tX)\mathbf{Q}, \exp(tX)\mathbf{P}) = g(\mathbf{Q},\mathbf{P})$ at $t = 0$. The dimension is the dimension of the space of $g$-anti-self-adjoint endomorphisms, which is $\tfrac{1}{2}\langle N-1\rangle_{\natural}$ because $g$ identifies $V$ with $V^{*}$ and skewness is a condition of that dimension. The four components are separated by the sign of the determinant and by the sign of the restriction of the form to the invariant subspace on which it is definite; for a Lorentzian form the invariant is $\det T$ together with the sign of $g(Tu,u)$ for one timelike $u$.
+*Proof.* Closure is continuity of the defining equations. The differential condition is obtained by differentiating $g(\exp(tX)\mathbf{Q}, \exp(tX)\mathbf{P}) = g(\mathbf{Q},\mathbf{P})$ at $t = 0$. The dimension is the dimension of the space of $g$-anti-self-adjoint endomorphisms, which is $\tfrac{1}{2}\langle N-1\rangle_{\natural}$ because $g$ identifies $V$ with $V^{*}$ and anti-self-adjointness is a condition of that dimension. The four components are separated by the sign of the determinant and by the sign of the restriction of the form to the invariant subspace on which it is definite; for a Lorentzian form the invariant is $\det T$ together with the sign of $g(Tu,u)$ for one timelike $u$.
 
 ### The Groups $O(3,1)$, $SO(3,1)$ and $SO^{+}(3,1)$
 

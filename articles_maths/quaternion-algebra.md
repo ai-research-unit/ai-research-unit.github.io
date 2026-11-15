@@ -5,6 +5,8 @@
 
 This article introduces the quaternion algebra as an algebraic structure. The goal is to define the algebra precisely, establish its basic properties, and describe the distinguished real vector subspaces that arise from the conjugations.
 
+The multiplication table is stated here and derived from the complex algebra by one doubling step in *The Cayley–Dickson Construction of the Quaternion Algebra*, below this article in this category.
+
 The quadratic form the algebra carries — its polarisation, the Hermitian form and the inner product — is a form and a distance, and a norm is a distance: these belong to the topology group, in *Quaternion Norm and Invertibility*, and the present article only names them. The geometric reading of the algebra is likewise deferred to the geometry group, in *Quaternion Rotations and Reflections*.
 
 The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given.

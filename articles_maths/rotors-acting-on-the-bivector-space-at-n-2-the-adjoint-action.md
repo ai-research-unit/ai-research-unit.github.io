@@ -4,7 +4,7 @@
 
 **The adjoint action $X\mapsto qXq^{-1}$ of a rotor preserves the trace and the determinant, it preserves the two halves exactly when the rotor is orthogonal, and on the antisymmetric line an orthogonal rotor acts by the sign of its determinant, so at order two the bivector line carries only a sign.**
 
-The article defines the adjoint action, lists its invariants, splits the algebra as the trace line plus the traceless part, proves that the traceless part carries the quadratic form $\operatorname{tr}(X^{2})$ with signature $(2,1)$ over $\mathbb{R}$ and negative definite over the imaginary form, computes the kernel as the two scalars, and treats the orthogonal rotor case where the two halves are preserved and the bivector line is fixed or reversed. It assumes *The Rotor as a Square Root of a Rotation: the Two Signs and the Double Cover*, *The Derivation $X\mapsto[A,X]$ and Its Skewness for the Trace Form* and *The Trace Form and Its Signature on the Two Halves of $M_2(\mathbb{R})$*.
+The article defines the adjoint action, lists its invariants, splits the algebra as the trace line plus the traceless part, proves that the traceless part carries the quadratic form $\operatorname{tr}(X^{2})$ with signature $(2,1)$ over $\mathbb{R}$ and negative definite over the imaginary form, computes the kernel as the two scalars, and treats the orthogonal rotor case where the two halves are preserved and the bivector line is fixed or reversed. It assumes *The Rotor as a Square Root of a Rotation: the Two Signs and the Double Cover*, *The Derivation $X\mapsto[A,X]$ and Its Anti-Self-Adjointness for the Trace Form* and *The Trace Form and Its Signature on the Two Halves of $M_2(\mathbb{R})$*.
 
 It follows the biquaternion account of *The Endomorphisms of the Biquaternion Algebra* for the same action read on the eight real coordinates.
 
@@ -129,5 +129,5 @@ For an orthogonal rotor the two halves are preserved and the antisymmetric line 
 - Brian C. Hall, *Lie Groups, Lie Algebras, and Representations* (Springer, 2015), for adjoint actions and their kernels.
 - Richard S. Hamilton, *Harmonic Maps of Manifolds with Boundary* (Springer, 1975), for the low-dimensional identifications of orthogonal groups.
 - [The Rotor as a Square Root of a Rotation: the Two Signs and the Double Cover](the-rotor-as-a-square-root-of-a-rotation-the-two-signs-and-the-double-cover.html), for the double cover used in the angle statement.
-- [The Derivation $X\mapsto[A,X]$ and Its Skewness for the Trace Form](the-derivation-commutator-and-its-skewness-for-the-trace-form.html), for the infinitesimal form of the action.
+- [The Derivation $X\mapsto[A,X]$ and Its Anti-Self-Adjointness for the Trace Form](the-derivation-commutator-and-its-anti-self-adjointness-for-the-trace-form.html), for the infinitesimal form of the action.
 - [The Trace Form and Its Signature on the Two Halves of $M_2(\mathbb{R})$](the-trace-form-and-its-signature-on-the-two-halves-of-m2r.html), for the signature computation on the two halves.

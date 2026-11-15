@@ -26,7 +26,7 @@ $$
 A^{[*]}=\begin{pmatrix}a^*&-c^*\\-b^*&d^*\end{pmatrix},
 $$
 
-so self-adjointness in the Krein space is the pair of conditions $a=a^*$, $d=d^*$, $c=-b^*$; the off-diagonal pair is anti-Hermitian rather than symmetric, and this skewness is the entire difference from the Hilbert-space case.
+so self-adjointness in the Krein space is the pair of conditions $a=a^*$, $d=d^*$, $c=-b^*$; the off-diagonal pair is anti-Hermitian rather than symmetric, and this anti-Hermiticity is the entire difference from the Hilbert-space case.
 
 ## The General Spectral Theorem in a Pontryagin Space
 

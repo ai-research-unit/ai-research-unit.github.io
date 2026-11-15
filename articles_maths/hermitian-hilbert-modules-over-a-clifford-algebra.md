@@ -55,7 +55,7 @@ the Clifford conjugation, possibly composed with the conjugation of the coeffici
 a generator $e_i$ is **anti-Hermitian**, $(e_i\cdot s,t)=-(s,e_i\cdot t)$ for $i\ge1$, so the multiplication
 by a vector is anti-self-adjoint, and the scalar unit $1$ is Hermitian.
 
-*Proof.* The skewness of $e_i$ is $e_i^{*}=-e_i$, which is the Clifford conjugation; the axiom then
+*Proof.* The anti-self-adjointness of $e_i$ is $e_i^{*}=-e_i$, which is the Clifford conjugation; the axiom then
 reads $(e_i\cdot s,t)=(s,(-e_i)\cdot t)=-(s,e_i\cdot t)$, which is anti-self-adjointness. The existence
 and uniqueness of a compatible definite form on a Clifford module are the results of Part II's
 *Hermitian Modules over a Hermitian Algebra with Hermitian Adjoint*, and the involution is the one

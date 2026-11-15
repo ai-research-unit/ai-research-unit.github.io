@@ -4,11 +4,11 @@
 
 **The Killing form of $\mathfrak{gl}_n$ is $2n\operatorname{tr}(XY)-2\operatorname{tr}(X)\operatorname{tr}(Y)$, its radical is the centre $\mathbb{C}\mathrm{I}$, and on the antisymmetric half it takes the two different values $(n-2)\operatorname{tr}(XY)$ and $2n\operatorname{tr}(XY)$ according to whether it is computed inside the half or in the whole algebra; on $UT_n$ it has rank $n-1$ and radical $n_+\oplus\mathbb{R}\mathrm{I}$.**
 
-The article computes the form from the derivation matrices, identifies the radical, gives the signature on the traceless algebra, resolves the two values on $\mathfrak{so}(n)$, and computes the triangular case as the contrast. It assumes *The Derivation $X\mapsto[A,X]$ and Its Skewness for the Trace Form* for the derivation trace form and *The Trace Form and Its Signature on the Two Halves* for the signatures. It defers the Cartan criterion to *Symmetric Pairs and Cartan Pairs: the Reductivity Criterion* and the group theory to *The Cartan Decomposition of $\mathrm{GL}_n(\mathbb{C})$*.
+The article computes the form from the derivation matrices, identifies the radical, gives the signature on the traceless algebra, resolves the two values on $\mathfrak{so}(n)$, and computes the triangular case as the contrast. It assumes *The Derivation $X\mapsto[A,X]$ and Its Anti-Self-Adjointness for the Trace Form* for the derivation trace form and *The Trace Form and Its Signature on the Two Halves* for the signatures. It defers the Cartan criterion to *Symmetric Pairs and Cartan Pairs: the Reductivity Criterion* and the group theory to *The Cartan Decomposition of $\mathrm{GL}_n(\mathbb{C})$*.
 
 ## The Killing Form of $\mathfrak{gl}_n$
 
-**The Killing form is computed from the derivation matrices.** With $\operatorname{ad}$ as in *The Derivation $X\mapsto[A,X]$ and Its Skewness for the Trace Form*,
+**The Killing form is computed from the derivation matrices.** With $\operatorname{ad}$ as in *The Derivation $X\mapsto[A,X]$ and Its Anti-Self-Adjointness for the Trace Form*,
 
 $$
 B(X,Y)=\operatorname{tr}\big(\operatorname{ad}_X\operatorname{ad}_Y\big).
@@ -174,6 +174,6 @@ The Killing form of $\mathfrak{gl}_n$ is $2n\operatorname{tr}(XY)-2\operatorname
 - James E. Humphreys, *Introduction to Lie Algebras and Representation Theory* (Springer, 1972), for the Killing form, Cartan's criterion and reductive algebras.
 - Karin Erdmann and Mark J. Wildon, *Introduction to Lie Algebras* (Springer, 2006), for the computation of the Killing form from the adjoint matrices.
 - Sigurdur Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces* (AMS, 2001), for the signature of the Killing form and the compact forms.
-- [The Derivation $X\mapsto[A,X]$ and Its Skewness for the Trace Form](the-derivation-commutator-and-its-skewness-for-the-trace-form.html), for the derivation trace form that the Killing form is.
+- [The Derivation $X\mapsto[A,X]$ and Its Anti-Self-Adjointness for the Trace Form](the-derivation-commutator-and-its-anti-self-adjointness-for-the-trace-form.html), for the derivation trace form that the Killing form is.
 - [The Trace Form and Its Signature on the Two Halves](the-trace-form-and-its-signature-on-the-two-halves.html), for the signatures that the form inherits.
 - [The Antisymmetric Part inside $UT_n$: the Radical as the Commutator](the-antisymmetric-part-inside-utn-the-radical-as-the-commutator.html), for the solvability that makes the triangular form degenerate.

@@ -22,9 +22,11 @@ The article assumes the base of *Algebra and Element Conventions* and the Peirce
 
 **What the rule allows.** The names of the frames. The Pauli frame and the gamma frame are bases and not arrays, and the names stay. A reference to a legacy section stays, and so does a historical remark inside one.
 
+**The exception.** The two articles whose subject is the Pauli display print the three arrays once, in the section that fixes the model: *$M_2(\mathbb{C})_{\mathbb{H}}$ Pauli Representation* in the quaternion category and *$M_2(\mathbb{C})$ Pauli Representation* in the biquaternion category. The reason is that in those two the display is the subject and not a notation, and a reader who is told that the images are $-i\sigma_k$ must be able to see what $\sigma_k$ is. The exception is confined to those two articles and to the section that fixes the model; every other body section follows the rule, and a sigma in one is still a violation.
+
 **The replacement.** The basis operators. $L_aR_b$ writes an operator, $L_{\mathrm{axf}}$ and $R_{\mathrm{axf}}$ write a display in the axis-free frame, and $\mathsf{V}_{\mathrm{vol}}=-iL_{e_t}R_{\vec e_z}$ writes the chirality operator of a frame. Every array the rule forbids has a basis operator that says the same thing and names no axis.
 
-**The test.** Open the article at a body section and read the symbols. A sigma or a gamma in a body section is a violation. The display is replaced by its basis operators before the article is published, and the array moves to the legacy section if it is worth keeping.
+**The test.** Open the article at a body section and read the symbols. A sigma or a gamma in a body section is a violation, the two sections named in §*The Rule on Pauli and Gamma Matrices* aside. The display is replaced by its basis operators before the article is published, and the array moves to the legacy section if it is worth keeping.
 
 **Why this is a rule and not a taste.** An array carries a frame, a dimension and a signature inside a symbol, and the sentence that prints it does not say so. A basis operator carries none of the three. That is the defect stated in full in *Why AXF Matrices instead of Pauli and Gamma Matrices*, and it is the reason the two formulations are kept as a record and not used as a language.
 

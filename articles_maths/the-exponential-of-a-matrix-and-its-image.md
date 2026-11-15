@@ -102,7 +102,7 @@ $$
 d\exp_A(H)=\sum_{k\ge1}\frac{1}{k!}\sum_{j=0}^{k-1}A^{j}HA^{k-1-j}=e^{A}\sum_{m\ge0}\frac{(-1)^{m}}{(m+1)!}\operatorname{ad}_A^{m}(H),
 $$
 
-the second form being the standard expansion in the derivation $\operatorname{ad}_A$ of *The Derivation $X\mapsto[A,X]$ and Its Skewness for the Trace Form*. The identity was verified at $n=3,4$ against a finite-difference derivative on random matrices.
+the second form being the standard expansion in the derivation $\operatorname{ad}_A$ of *The Derivation $X\mapsto[A,X]$ and Its Anti-Self-Adjointness for the Trace Form*. The identity was verified at $n=3,4$ against a finite-difference derivative on random matrices.
 
 **The derivative is invertible exactly when no two eigenvalues differ by $2\pi i$.** Since $\operatorname{ad}_A$ has the eigenvalues $\lambda_i-\lambda_j$ on the matrix units, the series for $d\exp_A$ is invertible exactly when
 
@@ -199,5 +199,5 @@ The exponential converges absolutely for every matrix, maps into $\mathrm{GL}_n$
 - Roger A. Horn and Charles R. Johnson, *Topics in Matrix Analysis* (Cambridge, 1991), for the derivative of the exponential and the Jacobian formula.
 - Sigurdur Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces* (AMS, 2001), for the exponential as a map of Lie algebras and the covering property.
 - [The Spectrum of a Matrix](the-spectrum-of-a-matrix.html), for the spectral mapping and the eigenvalue conditions.
-- [The Derivation $X\mapsto[A,X]$ and Its Skewness for the Trace Form](the-derivation-commutator-and-its-skewness-for-the-trace-form.html), for the derivation in the derivative formula.
+- [The Derivation $X\mapsto[A,X]$ and Its Anti-Self-Adjointness for the Trace Form](the-derivation-commutator-and-its-anti-self-adjointness-for-the-trace-form.html), for the derivation in the derivative formula.
 - [The Hilbert–Schmidt Form](the-hilbert-schmidt-form.html), for the norm used in the convergence estimate.

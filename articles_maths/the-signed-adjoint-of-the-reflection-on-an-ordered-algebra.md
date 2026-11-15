@@ -73,7 +73,7 @@ when the parameter is **$\alpha$-Hermitian**, $a = \alpha(a^{*})$; conversely, t
 
 **Corollary (the anti-self-adjoint reflections).** The reflection is **anti-self-adjoint**, $(\tau_a)^{*} = -\tau_a$, exactly when $\tau_{\alpha(a^{*})} = -\tau_a$, which happens for the parameters with $\alpha(a^{*}) = -a$ up to the centre; in particular an **odd** reflection element with $a^{2} = -1$ in a graded algebra with a positive grade involution gives a reflection whose adjoint is the reflection with the parameter $-a^{*} = \alpha(a^{*})$, and the reflection is anti-self-adjoint exactly when $a$ is anti-self-adjoint with respect to $\alpha$.
 
-*Proof.* The anti-self-adjointness is the equation $\tau_{\alpha(a^{*})} = -\tau_a$; the odd reflection-element case uses $\alpha(a) = -a$ and $\alpha(a) = a^{-1}$, so $\alpha(a^{*}) = (a^{-1})^{*} = -a^{*}$ holds exactly when $a^{*} = -a$, the skewness. The centrality ambiguity is the fibre as before.
+*Proof.* The anti-self-adjointness is the equation $\tau_{\alpha(a^{*})} = -\tau_a$; the odd reflection-element case uses $\alpha(a) = -a$ and $\alpha(a) = a^{-1}$, so $\alpha(a^{*}) = (a^{-1})^{*} = -a^{*}$ holds exactly when $a^{*} = -a$, the anti-self-adjointness. The centrality ambiguity is the fibre as before.
 
 **Proposition (the decomposition and the square).** Every reflection decomposes into the self-adjoint and the anti-self-adjoint parts with respect to the adjoint,
 

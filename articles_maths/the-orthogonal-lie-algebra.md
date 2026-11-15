@@ -81,7 +81,7 @@ $$
 
 and its image lies in $\mathrm{SO}(V, B)$. When $B$ is non-degenerate, $\varphi$ is an isomorphism of vector spaces onto $\mathrm{SO}(V, B)$.
 
-**Proof.** The right-hand side is alternating in $u, v$, because swapping $u$ and $v$ negates it; by the universal property of $\Lambda^2 V$ it therefore descends to a well-defined linear map, which we still call $\varphi$. For skewness, compute
+**Proof.** The right-hand side is alternating in $u, v$, because swapping $u$ and $v$ negates it; by the universal property of $\Lambda^2 V$ it therefore descends to a well-defined linear map, which we still call $\varphi$. For antisymmetry, compute
 
 $$
 B\bigl(\varphi(u \wedge v)x, y\bigr) = B(v, x)B(u, y) - B(u, x)B(v, y),
@@ -127,7 +127,7 @@ $$
 C(A) = (I + A)(I - A)^{-1}
 $$
 
-is an orthogonal transformation. With $G$ the Gram matrix, skewness of $A$ reads $A^T G = -G A$, so that $(I + A)^T G = G(I - A)$ and $G(I + A) = (I - A)^T G$; hence
+is an orthogonal transformation. With $G$ the Gram matrix, antisymmetry of $A$ reads $A^T G = -G A$, so that $(I + A)^T G = G(I - A)$ and $G(I + A) = (I - A)^T G$; hence
 
 $$
 C(A)^T G\,C(A) = \bigl((I - A)^{-1}\bigr)^T (I + A)^T G\,(I + A)(I - A)^{-1} = \bigl((I - A)^{-1}\bigr)^T G\,(I - A)(I + A)(I - A)^{-1} = \bigl((I - A)^{-1}\bigr)^T (I - A)^T G = G,

@@ -4,7 +4,7 @@
 
 **The Killing form of $\mathfrak{sl}_2$ is four times the trace form, and its signature is $(2,1)$ on the split real form, $(0,3)$ on the compact form $\mathfrak{su}(2)$ and $(3,3)$ on the complex form read over the reals.**
 
-The article defines the Killing form, proves the formula $K(X,Y)=4\operatorname{tr}(XY)$ on the traceless matrices, computes the Gram matrix in the basis $H,E,F$ with eigenvalues $-4,4,8$, computes the negative definite form of $\mathfrak{su}(2)$ in the basis $i\sigma_{k}/2$ with eigenvalues $-2,-2,-2$, computes the form of $\mathfrak{sl}_2(\mathbb{C})$ over $\mathbb{R}$ with the signature $(3,3)$, and explains what the three signs mean. It assumes *The Lie Algebra $\operatorname{Skew}_2$: One Dimension, Hence Abelian*, *The Derivation $X\mapsto[A,X]$ and Its Skewness for the Trace Form* and *The Trace Form and Its Signature on the Two Halves of $M_2(\mathbb{R})$*.
+The article defines the Killing form, proves the formula $K(X,Y)=4\operatorname{tr}(XY)$ on the traceless matrices, computes the Gram matrix in the basis $H,E,F$ with eigenvalues $-4,4,8$, computes the negative definite form of $\mathfrak{su}(2)$ in the basis $i\sigma_{k}/2$ with eigenvalues $-2,-2,-2$, computes the form of $\mathfrak{sl}_2(\mathbb{C})$ over $\mathbb{R}$ with the signature $(3,3)$, and explains what the three signs mean. It assumes *The Lie Algebra $\operatorname{Skew}_2$: One Dimension, Hence Abelian*, *The Derivation $X\mapsto[A,X]$ and Its Anti-Self-Adjointness for the Trace Form* and *The Trace Form and Its Signature on the Two Halves of $M_2(\mathbb{R})$*.
 
 It defers the Hilbert–Schmidt form to *The Hilbert–Schmidt Form at $n=2$* and the four forms with their norms to *The Four Forms and Their Algebraic Norms at $n=2$*.
 
@@ -126,4 +126,4 @@ On the compact form $\mathfrak{su}(2)$, in the basis $i\sigma_{k}/2$, the form i
 - Anthony W. Knapp, *Lie Groups Beyond an Introduction* (Birkhäuser, 2002), for the real forms of $\mathfrak{sl}_2$ and their Cartan decompositions.
 - [The Trace Form and Its Signature on the Two Halves of $M_2(\mathbb{R})$](the-trace-form-and-its-signature-on-the-two-halves-of-m2r.html), for the trace form that the Killing form multiplies by four.
 - [The Lie Algebra $\operatorname{Skew}_2$: One Dimension, Hence Abelian](the-lie-algebra-skew-2-one-dimension-hence-abelian.html), for the antisymmetric line on which the form is negative.
-- [The Derivation $X\mapsto[A,X]$ and Its Skewness for the Trace Form](the-derivation-commutator-and-its-skewness-for-the-trace-form.html), for the adjoint operators whose traces define the form.
+- [The Derivation $X\mapsto[A,X]$ and Its Anti-Self-Adjointness for the Trace Form](the-derivation-commutator-and-its-anti-self-adjointness-for-the-trace-form.html), for the adjoint operators whose traces define the form.

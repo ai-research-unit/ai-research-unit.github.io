@@ -34,7 +34,13 @@ $$
 \vec\Upsilon_+=\tfrac12(i\vec e_x+\vec e_y),\qquad
 \vec\Upsilon_-=\tfrac12(i\vec e_x-\vec e_y).
 $$
-The labels of the Peirce-coordinates article are $\vec\Upsilon_x=\vec\Upsilon_-$ and $\vec\Upsilon_y=\vec\Upsilon_+$. The matrix units are $E_{ij}$, the Pauli matrices are $\sigma_1,\sigma_2,\sigma_3$, and $\operatorname{Tr}$ is the $2\times2$ trace.
+The labels of the Peirce-coordinates article are $\vec\Upsilon_x=\vec\Upsilon_-$ and $\vec\Upsilon_y=\vec\Upsilon_+$. The matrix units are $E_{ij}$, $\operatorname{Tr}$ is the $2\times2$ trace, and the Pauli matrices are the three arrays fixed in §*The Two Tensor Factors* of *Matrix Representations Conventions*,
+$$
+\sigma_1=\begin{pmatrix}0&1\\1&0\end{pmatrix},\qquad
+\sigma_2=\begin{pmatrix}0&-i\\ i&0\end{pmatrix},\qquad
+\sigma_3=\begin{pmatrix}1&0\\0&-1\end{pmatrix},
+$$
+which are printed here once because the display of this article is built from them and the article is named after them.
 
 **The order of the article.** The article follows the $4\times4$ one step by step, at the size of one block. The root and its two idempotents come first, as the compression of §*The Root and the Peirce Frame* of the $4\times4$ article (§*The Root and the Two Idempotents*), then the Peirce basis in the two orders that the two sides need (§*The Peirce Basis and the Two Orders*). The left and the right matrices are read on the two ideals (§*The Left and Right Matrices*, against §*The Left Family* and §*The Right Family*), then the images of the four units (§*The Images of the Four Units*) and the stitch between the two sides (§*The Stitch Between the Left and the Right*, against §*The Stitch Between the Two Families*). The compression maps and the surviving switch follow (§*The Compression and the Switch*, against §*Every Frame Is a Conjugate of This One*), and then the entry-size quantities: the product, the trace and the determinant (§*The Product*, §*The Trace*, §*The Determinant*). The spectral projectors, the diagonalising matrix, the adjugate and the inverse, and the four norms are new at the element size, with no section of their own in the $4\times4$ article (§*The Spectral Projectors*, §*The Adjugate and the Inverse*, §*The Four Norms*). The six subspaces close the article in their compressed form (§*The Six Subspaces*), and what fails to compress is named at the end of §*The Compression and the Switch*.
 

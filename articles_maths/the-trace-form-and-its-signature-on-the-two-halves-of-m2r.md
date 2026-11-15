@@ -4,7 +4,7 @@
 
 **The form $\langle X,Y\rangle=\operatorname{tr}(XY)$ on $M_2(\mathbb{R})$ is symmetric, nondegenerate and of signature $(3,1)$, positive definite on the symmetric half and negative definite on the antisymmetric line, so the real matrix algebra carries the geometry of a four-dimensional Minkowski space.**
 
-The article polarises the quadratic form $\operatorname{tr}(X^{2})$, exhibits an orthogonal basis with the signs $+1,+1,+1,-1$, describes the isotropic cone and its cone of light, reads the form through Cayley–Hamilton as $(\operatorname{tr}X)^{2}-2\det X$, and identifies the Lie algebra of the isometry group with the image of the adjoint action. It assumes *The Two Halves as Orthogonal Complements at $n=2$*, *The Derivation $X\mapsto[A,X]$ and Its Skewness for the Trace Form* and *The Elementary Symmetric Functions: $\operatorname{tr}$ and $\det$ in Dimension Two*.
+The article polarises the quadratic form $\operatorname{tr}(X^{2})$, exhibits an orthogonal basis with the signs $+1,+1,+1,-1$, describes the isotropic cone and its cone of light, reads the form through Cayley–Hamilton as $(\operatorname{tr}X)^{2}-2\det X$, and identifies the Lie algebra of the isometry group with the image of the adjoint action. It assumes *The Two Halves as Orthogonal Complements at $n=2$*, *The Derivation $X\mapsto[A,X]$ and Its Anti-Self-Adjointness for the Trace Form* and *The Elementary Symmetric Functions: $\operatorname{tr}$ and $\det$ in Dimension Two*.
 
 It defers the Killing form to *The Killing Form of $\mathfrak{sl}_2$ and Its Three Signatures*, the Hilbert–Schmidt form to *The Hilbert–Schmidt Form at $n=2$*, and the four forms with their norms to *The Four Forms and Their Algebraic Norms at $n=2$*.
 
@@ -86,7 +86,7 @@ $$
 
 **Theorem.** The adjoint action embeds $\mathfrak{sl}_2(\mathbb{R})$ into the isometry algebra, as the copy of $\mathfrak{so}(2,1)$.
 
-**Proof.** Every $\operatorname{ad}_A$ is anti-self-adjoint for the form by *The Derivation $X\mapsto[A,X]$ and Its Skewness for the Trace Form*, the kernel of the adjoint action is the scalars, and the traceless algebra has dimension $3$; the compact dual of $\mathfrak{sl}_2(\mathbb{R})$ is $\mathfrak{so}(3)$ and the split one is $\mathfrak{so}(2,1)$, so the image is the split copy.
+**Proof.** Every $\operatorname{ad}_A$ is anti-self-adjoint for the form by *The Derivation $X\mapsto[A,X]$ and Its Anti-Self-Adjointness for the Trace Form*, the kernel of the adjoint action is the scalars, and the traceless algebra has dimension $3$; the compact dual of $\mathfrak{sl}_2(\mathbb{R})$ is $\mathfrak{so}(3)$ and the split one is $\mathfrak{so}(2,1)$, so the image is the split copy.
 
 **Corollary.** The conjugation $X\mapsto gXg^{-1}$ by $g\in\mathrm{SL}_2(\mathbb{R})$ is an isometry, and these are the isometries produced by the adjoint action.
 
@@ -122,5 +122,5 @@ The form is the polar form of $\operatorname{tr}(X^{2})$, which Cayley–Hamilto
 - Barrett O'Neill, *Semi-Riemannian Geometry* (Academic Press, 1983), for forms of signature $(3,1)$ and their isotropic cones.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge University Press, 2013), for the trace form and the Cayley–Hamilton identity.
 - [The Two Halves as Orthogonal Complements at $n=2$](the-two-halves-as-orthogonal-complements-at-n-2.html), for the Gram matrices of the two halves.
-- [The Derivation $X\mapsto[A,X]$ and Its Skewness for the Trace Form](the-derivation-commutator-and-its-skewness-for-the-trace-form.html), for the anti-self-adjoint endomorphisms of the form.
+- [The Derivation $X\mapsto[A,X]$ and Its Anti-Self-Adjointness for the Trace Form](the-derivation-commutator-and-its-anti-self-adjointness-for-the-trace-form.html), for the anti-self-adjoint endomorphisms of the form.
 - [The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$](the-two-halves-over-r-symmetric-and-antisymmetric-at-n-2.html), for the two halves and their dimensions.

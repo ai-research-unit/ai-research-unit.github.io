@@ -1,10 +1,10 @@
-# __The Derivation $X\mapsto[A,X]$ and Its Skewness for the Trace Form__
+# __The Derivation $X\mapsto[A,X]$ and Its Anti-Self-Adjointness for the Trace Form__
 
 ## Introduction
 
 **The map $\operatorname{ad}_A(X)=[A,X]$ is a derivation of $M_2(\mathbb{C})$ for every $A$, it is anti-self-adjoint for the trace form for every $A$, and it is anti-self-adjoint for the Hilbert–Schmidt form exactly when $A$ is antisymmetric.**
 
-The article proves the Leibniz rule, the representation property $\operatorname{ad}_{[A,B]}=[\operatorname{ad}_A,\operatorname{ad}_B]$, the skewness of $\operatorname{ad}_A$ for the trace form, the formula $\operatorname{ad}_A^{\mathrm{HS}*}=\operatorname{ad}_{A^{\mathsf T}}$, the spectrum of $\operatorname{ad}_A$ as the two differences of the eigenvalues, the identification of the kernel with the centre and the dimension of the space of inner derivations, and the nilpotency of $\operatorname{ad}_A$ for a nilpotent $A$. It assumes *The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$* and *The Lie Algebra $\operatorname{Skew}_2$: One Dimension, Hence Abelian*.
+The article proves the Leibniz rule, the representation property $\operatorname{ad}_{[A,B]}=[\operatorname{ad}_A,\operatorname{ad}_B]$, the anti-self-adjointness of $\operatorname{ad}_A$ for the trace form, the formula $\operatorname{ad}_A^{\mathrm{HS}*}=\operatorname{ad}_{A^{\mathsf T}}$, the spectrum of $\operatorname{ad}_A$ as the two differences of the eigenvalues, the identification of the kernel with the centre and the dimension of the space of inner derivations, and the nilpotency of $\operatorname{ad}_A$ for a nilpotent $A$. It assumes *The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$* and *The Lie Algebra $\operatorname{Skew}_2$: One Dimension, Hence Abelian*.
 
 It defers the Killing form to *The Killing Form of $\mathfrak{sl}_2$ and Its Three Signatures*, the Hilbert–Schmidt form to *The Hilbert–Schmidt Form at $n=2$*, and the operator viewpoint to *The One-Sided Operators at $n=2$*.
 
@@ -44,7 +44,7 @@ $$
 
 **Proof.** The scalar matrices commute with everything and no other matrix does, since the algebra is simple.
 
-## Skewness for the Trace Form
+## Anti-Self-Adjointness for the Trace Form
 
 **Theorem.** For every $A$ and all $X,Y$,
 
@@ -56,13 +56,13 @@ $$
 
 **Corollary.** Every $\operatorname{ad}_A$ is anti-self-adjoint for the trace form, so the image of $\operatorname{ad}$ lies in the Lie algebra of the orthogonal group of the trace form, which is $\mathfrak{so}(3,1)$.
 
-**Proof.** The skewness is the theorem, and the Lie algebra of the orthogonal group of a form of signature $(3,1)$ is the set of anti-self-adjoint endomorphisms.
+**Proof.** The anti-self-adjointness is the theorem, and the Lie algebra of the orthogonal group of a form of signature $(3,1)$ is the set of anti-self-adjoint endomorphisms.
 
-**The trace form cannot detect the skewness condition.** Here the freedom is total: no hypothesis on $A$ is needed, because the trace is invariant under the cyclic permutation of three factors, and the invariance is what produces the skewness.
+**The trace form cannot detect the anti-self-adjointness condition.** Here the freedom is total: no hypothesis on $A$ is needed, because the trace is invariant under the cyclic permutation of three factors, and the invariance is what produces the anti-self-adjointness.
 
 **Proof.** The proof above uses only cyclicity, with no symmetry of $A$.
 
-## Skewness for the Hilbert–Schmidt Form
+## Anti-Self-Adjointness for the Hilbert–Schmidt Form
 
 **Theorem.** For the Hilbert–Schmidt form $\langle X,Y\rangle=\operatorname{tr}(X^{*}Y)$ the adjoint of $\operatorname{ad}_A$ is $\operatorname{ad}_{A^{\mathsf T}}$.
 

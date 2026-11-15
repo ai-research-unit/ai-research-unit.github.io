@@ -4,7 +4,7 @@
 
 **The space of linear operators on $M_n(\mathbb{C})$ carries its own involution, the adjoint for the Hilbert–Schmidt form, and its fixed and anti-fixed parts are the self-adjoint and the anti-self-adjoint operators, so the split of the algebra repeats itself one level up.**
 
-The article defines the operator space, its Hilbert–Schmidt form and the adjoint of an operator, proves the adjoint formulas for the left and the right multiplications and for their products, proves that anti-self-adjointness of the commutator operator is exactly the skewness of its generator, proves that the exponential of an anti-self-adjoint operator is a unitary operator on the matrix space, and counts the dimensions. It assumes *The Hilbert–Schmidt Form* and *The Four Multiplication Tables: $SS$, $SK$, $KS$, $KK$*. It defers the geometric reading to *The Geometry of the Two Halves, and the Return of the Two-Sided Operators* and the group level to *The Cartan Decomposition of $\mathrm{GL}_n(\mathbb{C})$*.
+The article defines the operator space, its Hilbert–Schmidt form and the adjoint of an operator, proves the adjoint formulas for the left and the right multiplications and for their products, proves that anti-self-adjointness of the commutator operator is equivalent to the anti-self-adjointness of its generator, proves that the exponential of an anti-self-adjoint operator is a unitary operator on the matrix space, and counts the dimensions. It assumes *The Hilbert–Schmidt Form* and *The Four Multiplication Tables: $SS$, $SK$, $KS$, $KK$*. It defers the geometric reading to *The Geometry of the Two Halves, and the Return of the Two-Sided Operators* and the group level to *The Cartan Decomposition of $\mathrm{GL}_n(\mathbb{C})$*.
 
 ## The Operator Space and Its Form
 

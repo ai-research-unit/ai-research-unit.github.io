@@ -30,11 +30,11 @@ $$
 
 **Proposition.** $UT_n\cap\operatorname{Skew}_n=\{0\}$.
 
-*Proof.* Let $A$ be upper triangular and anti-Hermitian. Antisymmetry forces $A_{ii}=0$ and $A_{ij}=-A_{ji}$. Upper triangularity forces $A_{ij}=0$ for $i>j$. So every entry is zero: the diagonal by skewness, the lower part by triangularity, and the upper part by skewness together with the lower part.
+*Proof.* Let $A$ be upper triangular and anti-Hermitian. Antisymmetry forces $A_{ii}=0$ and $A_{ij}=-A_{ji}$. Upper triangularity forces $A_{ij}=0$ for $i>j$. So every entry is zero: the diagonal by antisymmetry, the lower part by triangularity, and the upper part by antisymmetry together with the lower part.
 
 **The measurement confirms the zero intersection.** On the union of the two bases the rank is the sum of the dimensions: $3+1=4$ at $n=2$, $6+3=9$ at $n=3$ and $10+6=16$ at $n=4$. A nonzero intersection would make the rank smaller.
 
-**The intersection is zero for a structural reason.** An antisymmetric matrix with zero lower part is zero, because skewness turns the upper part into the lower part with a sign. An upper triangular matrix has no lower part to supply, so the two conditions cancel each other.
+**The intersection is zero for a structural reason.** An antisymmetric matrix with zero lower part is zero, because antisymmetry turns the upper part into the lower part with a sign. An upper triangular matrix has no lower part to supply, so the two conditions cancel each other.
 
 ## The Direct Sum
 

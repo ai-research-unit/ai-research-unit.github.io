@@ -1,12 +1,12 @@
-# __The Derivation $X\mapsto[A,X]$ and Its Skewness for the Trace Form at $n=4$__
+# __The Derivation $X\mapsto[A,X]$ and Its Anti-Self-Adjointness for the Trace Form at $n=4$__
 
 ## Introduction
 
 **Every commutator map $\operatorname{ad}_A(X)=[A,X]$ is a derivation of $M_4(\mathbb{C})$, every derivation is of this form because the algebra is central simple, and the space of them is $\mathfrak{sl}_4$ of dimension $15$; the map is anti-self-adjoint for the trace form for every $A$ and anti-self-adjoint for the Hilbert–Schmidt form only when $A$ is anti-Hermitian, and the difference between the two statements is the involution, not the derivation.**
 
-The article proves the Leibniz rule and the representation property, records the inner-derivation theorem with its dimension count, computes the two skewness conditions and their adjoints, determines the spectrum of $\operatorname{ad}_A$, and explains why the trace form cannot distinguish the symmetric from the antisymmetric directions while the Hilbert–Schmidt form can.
+The article proves the Leibniz rule and the representation property, records the inner-derivation theorem with its dimension count, computes the two anti-self-adjointness conditions and their adjoints, determines the spectrum of $\operatorname{ad}_A$, and explains why the trace form cannot distinguish the symmetric from the antisymmetric directions while the Hilbert–Schmidt form can.
 
-It assumes *The Trace Form and Its Signature on the Two Halves of $M_4(\mathbb{C})$* and *The Derivations and the Automorphisms of $M_4(\mathbb{C})$*, where the inner-derivation theorem is proved in full. The case $n=2$ is *The Derivation Commutator and Its Skewness for the Trace Form*; the operator form is *The Adjoints and the Polar Decomposition of an Operator at $n=4$*.
+It assumes *The Trace Form and Its Signature on the Two Halves of $M_4(\mathbb{C})$* and *The Derivations and the Automorphisms of $M_4(\mathbb{C})$*, where the inner-derivation theorem is proved in full. The case $n=2$ is *The Derivation Commutator and Its Anti-Self-Adjointness for the Trace Form*; the operator form is *The Adjoints and the Polar Decomposition of an Operator at $n=4$*.
 
 ## The Commutator Is a Derivation
 
@@ -52,7 +52,7 @@ It assumes *The Trace Form and Its Signature on the Two Halves of $M_4(\mathbb{C
 
 **Proof.** A derivation of a direct sum acts on each summand and can be inner in one and outer in the other; the centre supplies the only ambiguity for a simple algebra.
 
-## Skewness for the Trace Form
+## Anti-Self-Adjointness for the Trace Form
 
 **Theorem.** For every $A$ and all $X,Y$,
 
@@ -64,13 +64,13 @@ $$
 
 **Corollary.** Every inner derivation lies in the orthogonal Lie algebra of $\beta$, which is $\mathfrak{so}(10,6)$ of dimension $120$; the fifteen inner derivations form a subalgebra of it.
 
-**Proof.** Skewness for a bilinear form is the defining equation of its orthogonal Lie algebra, and $\mathfrak{so}(p,q)$ with $p+q=16$ has dimension $16\cdot15/2=120$.
+**Proof.** Anti-Self-Adjointness for a bilinear form is the defining equation of its orthogonal Lie algebra, and $\mathfrak{so}(p,q)$ with $p+q=16$ has dimension $16\cdot15/2=120$.
 
-**The trace form cannot detect the condition.** No hypothesis on $A$ is needed: the skewness is produced by the cyclic invariance of the trace alone, which holds for every triple of factors. The form is invariant under the whole of $\mathrm{GL}_4$, since $\operatorname{tr}(PXP^{-1}\cdot PYP^{-1})=\operatorname{tr}(XY)$, and the invariance is what produces the skewness.
+**The trace form cannot detect the condition.** No hypothesis on $A$ is needed: the anti-self-adjointness is produced by the cyclic invariance of the trace alone, which holds for every triple of factors. The form is invariant under the whole of $\mathrm{GL}_4$, since $\operatorname{tr}(PXP^{-1}\cdot PYP^{-1})=\operatorname{tr}(XY)$, and the invariance is what produces the anti-self-adjointness.
 
 **Proof.** Conjugation invariance of the trace, applied to the invariance identity $\beta(gXg^{-1},gYg^{-1})=\beta(X,Y)$ differentiated at the identity.
 
-## Skewness for the Hilbert–Schmidt Form
+## Anti-Self-Adjointness for the Hilbert–Schmidt Form
 
 **Definition.** $\langle X,Y\rangle=\operatorname{tr}(X^{\ast}Y)$, positive definite.
 
@@ -80,7 +80,7 @@ $$
 
 **Corollary.** $\operatorname{ad}_A$ is anti-self-adjoint for the Hilbert–Schmidt form exactly when $A$ differs from an anti-Hermitian matrix by a real scalar.
 
-**Proof.** Skewness is $\operatorname{ad}_{A^{\ast}}=-\operatorname{ad}_A$, that is $A^{\ast}+A\in\mathbb{C}\mathrm I_4$; writing $A^{\ast}+A=\mu\mathrm I$ and taking adjoints gives $\bar\mu=\mu$, so $\mu$ is real and $A-\tfrac{\mu}{2}\mathrm I_4$ is anti-Hermitian, with the same adjoint map since the scalar part is central.
+**Proof.** Anti-Self-Adjointness is $\operatorname{ad}_{A^{\ast}}=-\operatorname{ad}_A$, that is $A^{\ast}+A\in\mathbb{C}\mathrm I_4$; writing $A^{\ast}+A=\mu\mathrm I$ and taking adjoints gives $\bar\mu=\mu$, so $\mu$ is real and $A-\tfrac{\mu}{2}\mathrm I_4$ is anti-Hermitian, with the same adjoint map since the scalar part is central.
 
 **Corollary.** The derivations that are anti-self-adjoint for the Hilbert–Schmidt form are exactly those of $\operatorname{ad}\mathfrak{u}(4)$, of dimension $15$.
 
@@ -92,7 +92,7 @@ $$
 
 ## The Difference Is the Involution
 
-**Proposition.** The condition for skewness for $\beta$ involves no involution; the condition for skewness for $\langle\cdot,\cdot\rangle$ involves the adjoint ${}^{\ast}$.
+**Proposition.** The condition for anti-self-adjointness for $\beta$ involves no involution; the condition for anti-self-adjointness for $\langle\cdot,\cdot\rangle$ involves the adjoint ${}^{\ast}$.
 
 **Proof.** The first condition is an identity in $A$, the second is the equation $A^{\ast}+A\in\mathbb{C}\mathrm I$.
 
@@ -133,6 +133,6 @@ The difference between the two statements is the involution and not the derivati
 
 - Nathan Jacobson, *Lie Algebras* (Dover, 1979), for the theorem that every derivation of a central simple algebra is inner.
 - [The Derivations and the Automorphisms of $M_4(\mathbb{C})$](the-derivations-and-the-automorphisms-of-m4c.html), for the full proof of the inner-derivation theorem.
-- [The Trace Form and Its Signature on the Two Halves of $M_4(\mathbb{C})$](the-trace-form-and-its-signature-on-the-two-halves-of-m4c.html), for the form whose invariance produces the skewness.
+- [The Trace Form and Its Signature on the Two Halves of $M_4(\mathbb{C})$](the-trace-form-and-its-signature-on-the-two-halves-of-m4c.html), for the form whose invariance produces the anti-self-adjointness.
 - [The Hilbert–Schmidt Form at $n=4$](the-hilbert-schmidt-form-at-n-4.html), for the positive definite form of the second statement.
-- [The Derivation Commutator and Its Skewness for the Trace Form](the-derivation-commutator-and-its-skewness-for-the-trace-form.html), for the same two statements at order two.
+- [The Derivation Commutator and Its Anti-Self-Adjointness for the Trace Form](the-derivation-commutator-and-its-anti-self-adjointness-for-the-trace-form.html), for the same two statements at order two.

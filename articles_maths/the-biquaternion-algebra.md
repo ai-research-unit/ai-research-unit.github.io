@@ -12,7 +12,7 @@ the four quaternion units $e_t, \vec e_x, \vec e_y, \vec e_z$ kept and the new s
 
 The multiplication is stated here at the level of the basis, the table and bilinearity. Its scalar–vector form, the four general products, their relations and their comparison are *The Four General Products and Their Relations over the Biquaternion Algebra*. The four conjugations, their group, their fixed spaces and the lattice they form are *The Element, the Coordinates and the Conjugations*, *The Group of Involutions* and *Subspaces and Decompositions*. The algebra read over the real scalars is in *The Element, the Coordinates and the Conjugations*. No form appears here: the forms and their algebraic norms are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*.
 
-This article opens the group *The Algebra and Its Vector Spaces* and the Biquaternions category. It is self-contained up to the quaternion algebra $\mathbb{H}$, whose basis, multiplication and conjugation are assumed.
+This article opens the group *The Algebra and Its Vector Spaces* and the Biquaternions category. It is self-contained up to the quaternion algebra $\mathbb{H}$, whose basis, multiplication and conjugation are assumed. The construction of $\mathbb{B}$ taken as a stack of three layers, with the proof that the third layer is a scalar extension and not a rung of the Cayley–Dickson doubling, is *The Cayley–Dickson Construction of the Biquaternion Algebra*, below this article in this category.
 
 ## The Construction of the Algebra
 
