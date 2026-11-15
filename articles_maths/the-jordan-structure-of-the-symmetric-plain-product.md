@@ -1,0 +1,221 @@
+# __The Jordan Structure of the Symmetric Plain Product__
+
+## Introduction
+
+The symmetrisation of the plain product is $\tilde Q_1\bullet\tilde Q_2=\tfrac12(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1)$, the plain product with the cross term dropped. It is commutative, it has $e_t$ as a two-sided unit, it is not associative, and it satisfies the Jordan identity. It is therefore a Jordan algebra, and it is the only one of the four symmetrisations of the batch that is.
+
+This article reads the Jordan structure of that algebra: the symmetrisation and its coordinate rule, the Jordan identity and its operator form, the defect, which is zero, and the associator, which is not; the cone of squares, which is the Lorentz cone of the Hermitian subspace; the Peirce decomposition at an idempotent and the multiplication rules of the Peirce spaces; the operators, the quadratic representation, the triple product and the derivations; and the row of the algebra in the comparison of the four symmetrisations.
+
+The setting is that of [The General Plain Bilinear Product](the-general-plain-bilinear-product.html), whose second half is this product. The two companion articles are [Introduction to the Symmetric Plain Algebra of the Biquaternions](introduction-to-the-symmetric-plain-algebra-of-the-biquaternions.html) and [The Specificities of the Symmetric Plain Algebra of the Biquaternions](the-specificities-of-the-symmetric-plain-algebra-of-the-biquaternions.html). The general theory is [Jordan Algebras](jordan-algebras.html); the comparison of the four symmetrisations is [Symmetric and Antisymmetric Decomposition of the Four General Products](symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html).
+
+## The Symmetrisation
+
+**Definition.** The **symmetric plain product** is
+$$
+\tilde Q_1\bullet\tilde Q_2=\tfrac12\bigl(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1\bigr).
+$$
+
+**Proposition (the coordinate rule).** For all $\tilde Q_1,\tilde Q_2$,
+$$
+\tilde Q_1\bullet\tilde Q_2=\bigl(Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)\bigr)+Q_{1t}\vec Q_2+Q_{2t}\vec Q_1 ,
+$$
+the plain product with the cross term removed.
+
+*Proof.* The cross terms of the two orders are opposite and cancel; the scalar row and the mixed rows agree in the two orders and are doubled. Verified exactly on the sixteen pairs of the basis and on general elements.
+
+**Proposition (the elementary laws).** The product is commutative, $\tilde Q_1\bullet\tilde Q_2=\tilde Q_2\bullet\tilde Q_1$; it has $e_t$ as a two-sided identity; it is homogeneous of degree two over $\mathbb{C}$ on the diagonal; and it is not associative.
+
+*Proof.* Commutativity is the symmetry of the definition, and the identity is $e_t\tilde Q=\tilde Q$. The failure of associativity has the witness $\tilde Q_1=\tilde Q_2=\vec e_x$, $\tilde Q_3=\vec e_y$: $(\vec e_x\bullet\vec e_x)\bullet\vec e_y=(-\vec e_t)\bullet\vec e_y=-\vec e_y$, while $\vec e_x\bullet(\vec e_x\bullet\vec e_y)=\vec e_x\bullet 0=0$, because $\vec e_x\bullet\vec e_y=\tfrac12(\vec e_x\vec e_y+\vec e_y\vec e_x)=0$.
+
+**Remark (what the symmetrisation removes and what it keeps).** The symmetrisation removes exactly the cross term, and the cross term is the whole obstruction to commutativity of the plain product. What it keeps is the mixed term $Q_{1t}\vec Q_2+Q_{2t}\vec Q_1$, which is the piece that makes the product non-associative: the associator above is the mixed term of the plain product, read twice. The symmetrisation therefore lands between the plain product, which is associative and not commutative, and the scalar row alone, which is commutative and associative.
+
+## The Jordan Identity
+
+**Theorem (the Jordan identity).** For all $\tilde Q_1,\tilde Q_2$,
+$$
+\boxed{\;\tilde Q_1^2\bullet(\tilde Q_2\bullet\tilde Q_1)=\bigl(\tilde Q_1^2\bullet\tilde Q_2\bigr)\bullet\tilde Q_1\;}
+$$
+
+*Proof.* Write $X=\tilde Q_1$, $Y=\tilde Q_2$ and expand both sides in the plain product, which is associative. The left side is
+$$
+X^2\bullet(Y\bullet X)=\tfrac14\bigl(X^2YX+X^2XY+YXX^2+XYX^2\bigr),
+$$
+and the right side is
+$$
+(X^2\bullet Y)\bullet X=\tfrac14\bigl(X^2YX+YX^3+X^3Y+XYX^2\bigr).
+$$
+The first and fourth terms agree. The second terms agree because $X^2X=XX^2=X^3$ and $X^2XY=X^3Y$; the third terms agree for the same reason. The two sides are therefore equal term by term. Direct verification on general elements gives a maximal deviation of zero, and on the basis the identity was checked on all sixty-four pairs.
+
+**Proposition (the operator form).** With $L(\tilde Q_1)$ the multiplication operator $\tilde Q_2\mapsto\tilde Q_1\bullet\tilde Q_2$,
+$$
+\bigl[L(\tilde Q_1),\,L(\tilde Q_1^2)\bigr]=0
+$$
+for every $\tilde Q_1$.
+
+*Proof.* The Jordan identity is the statement that $L(\tilde Q_1)$ and $L(\tilde Q_1^2)$ commute, applied to $\tilde Q_2$. Verified in the coefficient basis on general elements.
+
+**Remark (the linearised form and the derivations).** The linearisation of the operator identity gives that the commutator map $\tilde Q\mapsto[\tilde Q_1,\tilde Q]=\tilde Q_1\tilde Q-\tilde Q\tilde Q_1$ is a derivation of the symmetrised product for every $\tilde Q_1$,
+$$
+\bigl[\tilde Q_1,\tilde Q_2\bullet\tilde Q_3\bigr]=\bigl[\tilde Q_1,\tilde Q_2\bigr]\bullet\tilde Q_3+\tilde Q_2\bullet\bigl[\tilde Q_1,\tilde Q_3\bigr],
+$$
+the brackets on the right being the commutators of the plain product. The identity was verified on general elements with a deviation at the level of the arithmetic, and it is one line in the plain algebra: the commutator with a fixed element is a derivation of the associative product and therefore of its symmetrisation.
+
+## The Defect
+
+**Proposition (the defect is empty).** The span of the values of the Jordan defect
+$$
+D(\tilde Q_1,\tilde Q_2)=\tilde Q_1^2\bullet(\tilde Q_2\bullet\tilde Q_1)-\bigl(\tilde Q_1^2\bullet\tilde Q_2\bigr)\bullet\tilde Q_1
+$$
+is $\{0\}$, of dimension zero.
+
+*Proof.* The identity of the previous section, evaluated on all pairs of the complex basis $\{e_\mu,ie_\mu\}$, and on two thousand random complex pairs. The maximal deviation is zero and no direction is produced.
+
+**Remark (the defect that is not the identity's).** The defect of the Jordan identity is empty and the defect of associativity is not. The two must not be confused: the identity is a statement about the powers of one element, and associativity is a statement about three. The symmetrisation of an associative algebra is the standard example of the separation, and its associator is measured by the mixed term, $[\tilde Q_1,\tilde Q_2,\tilde Q_3]_{\bullet}=(\tilde Q_1\bullet\tilde Q_2)\bullet\tilde Q_3-\tilde Q_1\bullet(\tilde Q_2\bullet\tilde Q_3)$, which does not vanish.
+
+**Proposition (the associator).** For all $\tilde Q_1,\tilde Q_2,\tilde Q_3$,
+$$
+(\tilde Q_1\bullet\tilde Q_2)\bullet\tilde Q_3-\tilde Q_1\bullet(\tilde Q_2\bullet\tilde Q_3)=\tfrac14\bigl(\tilde Q_2\tilde Q_1\tilde Q_3+\tilde Q_3\tilde Q_1\tilde Q_2-\tilde Q_1\tilde Q_3\tilde Q_2-\tilde Q_2\tilde Q_3\tilde Q_1\bigr).
+$$
+
+*Proof.* Expand both sides with the plain product. The left side is $\tfrac14(\tilde Q_1\tilde Q_2\tilde Q_3+\tilde Q_2\tilde Q_1\tilde Q_3+\tilde Q_3\tilde Q_1\tilde Q_2+\tilde Q_3\tilde Q_2\tilde Q_1)-\tfrac14(\tilde Q_1\tilde Q_2\tilde Q_3+\tilde Q_1\tilde Q_3\tilde Q_2+\tilde Q_2\tilde Q_3\tilde Q_1+\tilde Q_3\tilde Q_2\tilde Q_1)$, and the two words that appear with both signs cancel. Verified on general elements.
+
+**Remark (the shape of the four defects).** The row of the four symmetrisations in the defect column reads $0,1,1,4$. The zero is this algebra's, and the three nonzero values belong to the three symmetrisations whose products carry a conjugation in a slot. The pattern is read in the three companion articles, [The Jordan Structure of the Symmetric Quaternionic Product](the-jordan-structure-of-the-symmetric-quaternionic-product.html), [The Jordan Structure of the Symmetric Plain Sesquilinear Product](the-jordan-structure-of-the-symmetric-plain-sesquilinear-product.html) and [The Jordan Structure of the Symmetric Quaternionic Sesquilinear Product](the-jordan-structure-of-the-symmetric-quaternionic-sesquilinear-product.html).
+
+## The Cone of Squares
+
+**Definition.** The **cone of squares** of the algebra is the set of the finite sums of squares,
+$$
+C=\Bigl\{\sum_{i}\tilde H_i^2:\ \tilde H_i\in\mathbb{B}_{\Psi}\Bigr\},
+$$
+the squares taken in the symmetric plain product and the elements in the Hermitian subspace.
+
+**Theorem (the cone of squares is the Lorentz cone).** An element $\tilde H\in\mathbb{B}_{\Psi}$ is a sum of squares if and only if $\tilde H=te_t+i\vec s$ with $t\geq\lvert\vec s\rvert$; every such element is a single square.
+
+*Proof.* For $\tilde H=te_t+i\vec s$,
+$$
+\tilde H^2=\bigl(t^2+\lvert\vec s\rvert^2\bigr)e_t+2t\,i\vec s ,
+$$
+so a square has scalar part $T=t^2+\lvert\vec s\rvert^2$ and vector part $i\vec w$ with $\vec w=2t\vec s$, and $T^2-\lvert\vec w\rvert^2=(t^2-\lvert\vec s\rvert^2)^2\geq0$ with $T\geq0$. A sum of squares keeps the inequality: for two such elements the triangle inequality gives $\lvert\vec w_1+\vec w_2\rvert\leq\lvert\vec w_1\rvert+\lvert\vec w_2\rvert\leq T_1+T_2$, which is the inequality again. Conversely, given $T\geq\lvert\vec w\rvert$, put $t^2=\tfrac12\bigl(T+\sqrt{T^2-\lvert\vec w\rvert^2}\bigr)$ and $\vec s=\vec w/(2t)$; then $t^2+\lvert\vec s\rvert^2=T$ and $2t\vec s=\vec w$. Verified on five hundred random squares and three hundred random sums, with the inequality exact and the reconstruction exact.
+
+**Remark (the cone in the two forms).** The condition $t\geq\lvert\vec s\rvert$ is the condition $\langle\tilde H\rangle_{P}\geq0$ written in the Hermitian coordinates, and it is also $K(\tilde H,\tilde H)\geq0$ with $\tilde H$ in the closed positive cone of the Krein form; the two forms agree on $\mathbb{B}_{\Psi}$ up to the sign of the vector terms. The cone is proper, pointed, closed, and it has a nonempty interior, the set $t>\lvert\vec s\rvert$. Its boundary $t=\lvert\vec s\rvert$ consists of squares of non-invertible elements, since the Jordan determinant $t^2-\lvert\vec s\rvert^2$ vanishes there, and each ray of the boundary is an extreme ray.
+
+**Remark (the comparison).** Of the four cones of squares, this one is the largest proper one. The symmetric plain sesquilinear product gives the ray $\mathbb{R}_{\geq0}e_t$, and the two remaining symmetrisations give the whole line $\mathbb{R}e_t$, which is not a cone but a line. The four are read together in [Hermitian Squares and the Algebraic Positive Cone](hermitian-squares-and-the-algebraic-positive-cone.html) and in the comparison table of the last section.
+
+## The Peirce Theory
+
+**Proposition (the idempotents).** The idempotents of the algebra are the solutions of $\tilde \Pi^2=\tilde \Pi$. Besides $0$ and $e_t$ there are the rank-one idempotents
+$$
+\tilde \Pi=\tfrac12\bigl(e_t+i\vec u\bigr),\qquad \tilde \Pi'=\tfrac12\bigl(e_t-i\vec u\bigr),\qquad \lvert\vec u\rvert=1,
+$$
+with $\tilde \Pi+\tilde \Pi'=e_t$ and $\tilde \Pi\bullet\tilde \Pi'=0$.
+
+*Proof.* The equation at $\tilde \Pi=\tfrac12(e_t+i\vec u)$ reads $\tfrac14(e_t+2i\vec u-\vec u^2)=\tfrac12(e_t+i\vec u)$, that is $\tfrac14(e_t+2i\vec u+e_t)=\tfrac12(e_t+i\vec u)$. The complement is computed the same way, and the product of the two is $\tfrac14(e_t^2-(i\vec u)^2)=\tfrac14(e_t-e_t)=0$.
+
+**Theorem (the Peirce decomposition).** At $\tilde \Pi=\tfrac12(e_t+i\vec e_x)$ the multiplication operator $L(\tilde \Pi)$ has the eigenvalues $1,\tfrac12,0$ with multiplicities $1,2,1$, and
+$$
+\mathbb{B}=\mathbb{B}_{1}\oplus\mathbb{B}_{1/2}\oplus\mathbb{B}_{0},\qquad
+\mathbb{B}_{1}=\mathbb{C}\tilde \Pi,\quad \mathbb{B}_{1/2}=\mathbb{C}\vec e_y\oplus\mathbb{C}\vec e_z,\quad \mathbb{B}_{0}=\mathbb{C}\tilde \Pi'.
+$$
+
+*Proof.* The matrix of $L(\tilde \Pi)$ in the coefficient basis has the characteristic polynomial $\lambda(\lambda-\tfrac12)^2(\lambda-1)$; the eigenspaces are computed exactly. At $\tilde \Pi=e_t$ the operator is the identity and the decomposition collapses to $\mathbb{B}_1=\mathbb{B}$.
+
+**Proposition (the Peirce rules).** The Peirce spaces multiply as
+
+| | $\mathbb{B}_{1}$ | $\mathbb{B}_{1/2}$ | $\mathbb{B}_{0}$ |
+|---|---|---|---|
+| $\mathbb{B}_{1}$ | $\mathbb{B}_{1}$ | $\mathbb{B}_{1/2}$ | $0$ |
+| $\mathbb{B}_{1/2}$ | $\mathbb{B}_{1/2}$ | $\mathbb{B}_{1}\oplus\mathbb{B}_{0}$ | $\mathbb{B}_{1/2}$ |
+| $\mathbb{B}_{0}$ | $0$ | $\mathbb{B}_{1/2}$ | $\mathbb{B}_{0}$ |
+
+*Proof.* Six inclusions, each verified on the basis of the three spaces. The vanishing of $\mathbb{B}_1\bullet\mathbb{B}_0$ is $\tilde \Pi\bullet\tilde \Pi'=0$; the inclusion $\mathbb{B}_{1/2}\bullet\mathbb{B}_{1/2}\subset\mathbb{B}_1\oplus\mathbb{B}_0$ is $\vec e_y^2=\vec e_z^2=-e_t$ and $\vec e_y\bullet\vec e_z=0$.
+
+**Proposition (degree two).** Every Hermitian element $\tilde H=te_t+i\vec s$ satisfies the quadratic equation
+$$
+\tilde H^2-2t\,\tilde H+\bigl(t^2-\lvert\vec s\rvert^2\bigr)e_t=0 ,
+$$
+so the algebra has degree two, with trace $2t$ and determinant $t^2-\lvert\vec s\rvert^2$, and the determinant is the Krein form $K$ on the Hermitian subspace.
+
+*Proof.* Substitute $\tilde H^2=(t^2+\lvert\vec s\rvert^2)e_t+2t\,i\vec s$ and collect the three terms; the vector parts cancel and the scalar coefficients sum to zero. Verified on general Hermitian elements, with the residual at the level of the arithmetic.
+
+**Remark (the determinant and the cone).** The cone of squares is the set where the trace is nonnegative and the determinant is nonnegative, which is the standard description of the positive cone of a formally real Jordan algebra of degree two. The two open conditions $t>0$ and $t^2>\lvert\vec s\rvert^2$ define its interior, and the boundary is the zero set of the determinant inside the closed half-space of nonnegative trace.
+
+**Remark (what the decomposition says).** The algebra is a Jordan algebra of degree two in the classical sense: at a rank-one idempotent, the space splits into the line of the idempotent, the two-dimensional part that the idempotent moves by one half, and the line of the complement. The two-dimensional part is $\mathbb{B}_{1/2}$ and it is not the vector subspace: the vector subspace is $\mathbb{B}_{1/2}\oplus\mathbb{C}\vec e_x$, and $\vec e_x=i(\tilde \Pi-\tilde \Pi')$ lies in $\mathbb{B}_1\oplus\mathbb{B}_0$. The Peirce theory of the biquaternion algebra as a whole is [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html).
+
+## The Operators
+
+**Definition.** The **multiplication operator** is $L(\tilde Q_1)\tilde Q_2=\tilde Q_1\bullet\tilde Q_2$; the **quadratic representation** is
+$$
+U(\tilde Q_1)=2L(\tilde Q_1)^2-L(\tilde Q_1^2).
+$$
+
+**Theorem (the quadratic representation is the two-sided product).** For all $\tilde Q_1,\tilde Q_2$,
+$$
+U(\tilde Q_1)\tilde Q_2=\tilde Q_1\tilde Q_2\tilde Q_1,
+$$
+the plain product of the three factors in that order.
+
+*Proof.* Expand $2\tilde Q_1\bullet(\tilde Q_1\bullet\tilde Q_2)-\tilde Q_1^2\bullet\tilde Q_2$ in the plain product: eight terms reduce to the two $\tilde Q_1\tilde Q_2\tilde Q_1$. Verified on general elements.
+
+**Proposition (the quadratic identity).** $U(\tilde Q_1)U(\tilde Q_2)U(\tilde Q_1)=U\bigl(U(\tilde Q_1)\tilde Q_2\bigr)$ for all $\tilde Q_1,\tilde Q_2$.
+
+*Proof.* Both sides are $\tilde Q_1\tilde Q_2\tilde Q_1\tilde Q_2\tilde Q_1$ in the plain product, since $U(\tilde Q_1)$ inserts a factor $\tilde Q_1$ on each side. Verified on general elements.
+
+**Proposition (the triple product).** The Jordan triple product
+$$
+\{\tilde Q_1,\tilde Q_2,\tilde Q_3\}=\bigl(\tilde Q_1\bullet\tilde Q_2\bigr)\bullet\tilde Q_3+\bigl(\tilde Q_1\bullet\tilde Q_3\bigr)\bullet\tilde Q_2-\bigl(\tilde Q_2\bullet\tilde Q_3\bigr)\bullet\tilde Q_1
+$$
+equals $\tfrac12\bigl(\tilde Q_2\tilde Q_1\tilde Q_3+\tilde Q_3\tilde Q_1\tilde Q_2\bigr)$, and the linearised quadratic representation $U(\tilde Q_1+\tilde Q_3)\tilde Q_2-U(\tilde Q_1)\tilde Q_2-U(\tilde Q_3)\tilde Q_2$ equals $\tilde Q_1\tilde Q_2\tilde Q_3+\tilde Q_3\tilde Q_2\tilde Q_1$.
+
+*Proof.* Expansion in the plain product and collection of the four orders. Verified on general elements.
+
+**Remark (the two triple products differ).** The two displays are different triple products, and the difference is the placement of the middle factor: the Jordan triple product of the algebra puts the middle argument in the middle of the word only after a symmetrisation, and the linearised quadratic representation puts it in the middle directly. The distinction is the one drawn in [The Lie–Jordan Decomposition of a Bilinear Product and the Jordan Triple System](the-lie-jordan-decomposition-of-a-bilinear-product-and-the-jordan-triple-system.html), and the identity that fails for a general triple product is [The Ternary Product and the Failure of the Jordan Triple Identity](the-ternary-product-and-the-failure-of-the-jordan-triple-identity.html).
+
+**Remark (the automorphisms).** Every automorphism and every anti-automorphism of the plain product is an automorphism of the symmetrisation, since the symmetrisation is invariant under the exchange. In particular $\overline{\phantom{x}}$, ${}^{\natural}$ and ${}^{*}$ are automorphisms of this Jordan algebra, verified on the basis, and so is every conjugation $\tilde Q\mapsto\tilde U\tilde Q\tilde U^{-1}$ by a unit of the algebra. The derivation $\tilde Q\mapsto[\tilde Q_1,\tilde Q]$ of the previous section is inner in the plain algebra and not in general inner in the Jordan algebra.
+
+## The Place among the Four
+
+| | this algebra | $\bullet_{\natural}$ | $\bullet_{*}$ | $\bullet_{\natural*}$ |
+|---|---|---|---|---|
+| image | $4$ | $1$ | $1$ | $4$ |
+| unit | $e_t$ | none | none | none |
+| commutative | yes | yes | no, conjugate | no, conjugate |
+| Jordan identity | yes | no | no | no |
+| defect | $0$ | $1$ | $1$ | $4$ |
+| idempotents | $\tilde \Pi$ of rank one | $0,e_t$ | $0,e_t$ | $\tilde \Pi$ of rank one |
+| cone of squares in $\mathbb{B}_{\Psi}$ | $t\geq\lvert\vec s\rvert$ | $\mathbb{R}e_t$ | $\mathbb{R}_{\geq0}e_t$ | $\mathbb{R}e_t$ |
+| spectrum of $L(e_t)$ | $1,1,1,1$ | $1,0,0,0$ | $1,0,0,0$ | $1,-1,-1,-1$ |
+
+**Remark (the column that is a Jordan algebra).** This is the only column that is a Jordan algebra in the sense of the identity, and it is also the only one with a two-sided unit, the only one with a proper cone of squares that is not a ray, and the only one whose Peirce decomposition has three pieces. The three facts are one: the algebra is the symmetrisation of an associative algebra, and the whole of the classical theory of formally real Jordan algebras applies to it and to none of its three companions.
+
+## Summary
+
+The symmetric plain product is $\tilde Q_1\bullet\tilde Q_2=[Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)]+Q_{1t}\vec Q_2+Q_{2t}\vec Q_1$. It is commutative, unital with unit $e_t$, not associative, and it satisfies the Jordan identity, in the form $\tilde Q_1^2\bullet(\tilde Q_2\bullet\tilde Q_1)=(\tilde Q_1^2\bullet\tilde Q_2)\bullet\tilde Q_1$ and in the operator form $[L(\tilde Q_1),L(\tilde Q_1^2)]=0$. The defect of the identity is zero; the defect of associativity is not, and the associator is the four-term word displayed.
+
+The cone of squares of the Hermitian subspace is the Lorentz cone $t\geq\lvert\vec s\rvert$, every element of which is a single square, and it is the largest proper cone of the batch. The idempotents are $0$, $e_t$ and the rank-one elements $\tfrac12(e_t+i\vec u)$; at a rank-one idempotent the Peirce multiplicities are $1,2,1$ and the six Peirce rules hold.
+
+The quadratic representation is the two-sided product $U(\tilde Q_1)\tilde Q_2=\tilde Q_1\tilde Q_2\tilde Q_1$, it satisfies the quadratic identity, and the Jordan triple product is $\tfrac12(\tilde Q_2\tilde Q_1\tilde Q_3+\tilde Q_3\tilde Q_1\tilde Q_2)$. Every automorphism and anti-automorphism of the plain product is an automorphism of this algebra, and every commutator with a fixed element is a derivation.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | the biquaternion algebra |
+| $\tilde Q=Q_te_t+\vec Q$ | the element, its scalar part and its vector part |
+| $\tilde Q_1\bullet\tilde Q_2$ | the symmetric plain product |
+| $L(\tilde Q_1)$ | the multiplication operator $\tilde Q_2\mapsto\tilde Q_1\bullet\tilde Q_2$ |
+| $U(\tilde Q_1)=2L(\tilde Q_1)^2-L(\tilde Q_1^2)$ | the quadratic representation |
+| $\{\tilde Q_1,\tilde Q_2,\tilde Q_3\}$ | the Jordan triple product |
+| $\mathbb{B}_{\Psi}$ | the Hermitian subspace, $te_t+i\vec s$ with $t,\vec s$ real |
+| $\tilde \Pi=\tfrac12(e_t+i\vec u)$ | a rank-one idempotent |
+| $\mathbb{B}_{1},\mathbb{B}_{1/2},\mathbb{B}_{0}$ | the Peirce spaces at $\tilde \Pi$ |
+| $D$ | the Jordan defect |
+| $C$ | the cone of squares |
+
+## Further Reading
+
+- [The General Plain Bilinear Product](the-general-plain-bilinear-product.html), for the product of which this is the symmetrisation.
+- [Introduction to the Symmetric Plain Algebra of the Biquaternions](introduction-to-the-symmetric-plain-algebra-of-the-biquaternions.html) and [The Specificities of the Symmetric Plain Algebra of the Biquaternions](the-specificities-of-the-symmetric-plain-algebra-of-the-biquaternions.html), for the algebra read as a whole.
+- [The Lie Structure of the Antisymmetric Plain Product](the-lie-structure-of-the-antisymmetric-plain-product.html), for the other half of the same product.
+- [Jordan Algebras](jordan-algebras.html), for the identity, the Peirce theory and the quadratic representation in general.
+- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the decomposition of the algebra.
+- [Hermitian Squares and the Algebraic Positive Cone](hermitian-squares-and-the-algebraic-positive-cone.html), for the cone of squares in general.

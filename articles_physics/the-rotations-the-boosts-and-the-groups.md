@@ -312,11 +312,31 @@ Verified at rapidity two: both ratios are $3.762196=e^{2}$, one up and one down.
 
 ### The Rapidity and the Hyperbolic Angle
 
-The parameter $\theta$ is the rapidity, and it is additive: $\tilde U(\theta_1)\tilde U(\theta_2)=\tilde U(\theta_1+\theta_2)$, because the addition formula for the hyperbolic functions is the multiplication of the two elements. The velocity is $\tanh\theta$, so the rapidity of a composition is the sum of the rapidities, and the velocity composition law is the hyperbolic tangent of that sum.
+The parameter $\theta$ is the rapidity, and it is additive for collinear boosts: $\tilde U(\theta_1)\tilde U(\theta_2)=\tilde U(\theta_1+\theta_2)$ when the two axes agree, because the addition formula for the hyperbolic functions is then the multiplication of two commuting elements. The velocity is $\tanh\theta$, so the rapidity of a composition is the sum of the rapidities, and the velocity composition law is the hyperbolic tangent of that sum.
 
 The two parameters, the angle of the rotation and the rapidity of the boost, are the two real coordinates of the same complex parameter. A rotation has $\theta$ real and the trigonometric functions; a boost has $\theta$ real and the hyperbolic functions; a general motion of the Lorentz group has a complex combination. The complexification of the algebra is what makes one parameter cover both, and it is the reason the compact and the hyperbolic families sit in the same group rather than in two groups glued along the identity.
 
 The null lines of the previous section are the fixed points of the boost in the projective Hermitian sector, and the rapidity is the logarithm of the scale factor on them. That is the cleanest reading of the parameter: the boost is a dilation of the two null directions, one up and one down, by reciprocal factors.
+
+### Two Boosts Are Not a Boost
+
+**The set of boost elements is closed under the inverse and not under multiplication.** The dagger is an anti-automorphism, so $\tilde U_1^{*}=\tilde U_1$ for each factor gives
+$$
+(\tilde U_1\tilde U_2)^{*}=\tilde U_2^{*}\tilde U_1^{*}=\tilde U_2\tilde U_1 ,
+$$
+which differs from $\tilde U_1\tilde U_2$ whenever the two axes are not parallel, because two such elements do not commute. The product is then not Hermitian, so it fails the criterion of §*The Boost Element*. The inverse is not the exception: $\tilde U(\theta,\vec u)^{-1}=\tilde U(-\theta,\vec u)=\tilde U(\theta,-\vec u)$ is again a boost, and an antiparallel pair commutes and composes to $\tilde U(\theta_1-\theta_2,\vec u)$. The failure is of closure under multiplication alone, so the boosts are a subset of the norm-one group and not a subgroup.
+
+**The product is a boost and a rotation.** The polar decomposition of §*The Two Retractions* writes it as
+$$
+\tilde U_1\tilde U_2=\tilde U_{\mathrm{rot}}\,\tilde U_{\mathrm b},
+$$
+with $\tilde U_{\mathrm b}$ Hermitian of norm one, hence a boost, and $\tilde U_{\mathrm{rot}}$ $*$-unitary, acting on the Hermitian sector by congruence as a rotation — the central phase inside it acts trivially there. Since $\mathrm{Sd}$ is a homomorphism, $\mathrm{Sd}_{\tilde U_1}\mathrm{Sd}_{\tilde U_2}=\mathrm{Sd}_{\tilde U_{\mathrm{rot}}}\mathrm{Sd}_{\tilde U_{\mathrm b}}$: the boost is performed first, the rotation second.
+
+Verified at rapidities $1.1$ and $0.9$ about $\vec e_x$ and $\vec e_y$: the dagger defect of the product is $2.5793$, against $4.5589$ for the single boost of rapidity $2$; the Hermitian factor is the boost of rapidity $1.518$ about $0.615\vec e_x+0.789\vec e_y$; and the compact factor is $0.978423-0.206613\vec e_z$, a rotation through $0.4162$ rad.
+
+**The rotation is the Wigner rotation.** The angle is the one a single boost to the resultant velocity cannot account for, and it vanishes only for parallel and antiparallel axes. Interpreted physically, the composition of two changes of frame is not a third change of frame, and the excess is a rotation of the axes rather than an acceleration of the observer.
+
+**The boundary of the reading.** The angle is a property of the composition of two motions, not a derived dynamical effect. The corpus does not integrate it along a world line, so the accumulated angle of an accelerated observer — the precession that carries the name — is not computed here. The algebra supplies the factor, not the history.
 
 ### Why the Difference Is Not a Convention
 

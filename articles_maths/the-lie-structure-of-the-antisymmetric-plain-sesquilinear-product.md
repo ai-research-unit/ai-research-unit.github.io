@@ -1,0 +1,189 @@
+# __The Lie Structure of the Antisymmetric Plain Sesquilinear Product__
+
+## Introduction
+
+The antisymmetrisation of $\tilde Q_1\tilde Q_2^{*}$ is
+$$
+\tilde Q_1\wedge_{*}\tilde Q_2=\tfrac12\bigl(\tilde Q_1\tilde Q_2^{*}-\overline{\tilde Q_2\tilde Q_1^{*}}\bigr)=-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\,\vec Q_1-\vec Q_1\times\overline{\vec Q_2},
+$$
+a bracket with no scalar part, an image of dimension three, and a defect of dimension three. It is the sesquilinear twin of the quaternionic bracket: the two have the same defect, the same Killing form and the same absence of a centre, and they differ in the signs of the mixed part and in the sign of the cross product.
+
+This article reads the Lie structure of the bracket: the antisymmetrisation, the Jacobi identity and its failure, the defect, the bracket table, the ideals and the radical, the Killing form, the exponential and the versors, and the row of the bracket in the comparison of the four.
+
+The setting is [The General Plain Sesquilinear Product](the-general-plain-sesquilinear-product.html), whose second half is this product, and [The Jordan Structure of the Symmetric Plain Sesquilinear Product](the-jordan-structure-of-the-symmetric-plain-sesquilinear-product.html), which reads the first half. The general theory is [Lie Algebras](lie-algebras-a-general-introduction.html).
+
+## The Antisymmetrisation
+
+**Definition.** The **antisymmetric plain sesquilinear product** is
+$$
+\tilde Q_1\wedge_{*}\tilde Q_2=\tfrac12\bigl(\tilde Q_1\tilde Q_2^{*}-\overline{\tilde Q_2\tilde Q_1^{*}}\bigr).
+$$
+
+**Theorem (the closed form).** For all $\tilde Q_1,\tilde Q_2$,
+$$
+\boxed{\;\tilde Q_1\wedge_{*}\tilde Q_2=-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\,\vec Q_1-\vec Q_1\times\overline{\vec Q_2}\;}
+$$
+
+*Proof.* In the general plain sesquilinear product the scalar row is $H(\tilde Q_1,\tilde Q_2)$, Hermitian in the pair, and the vector part is $Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}$. Under the exchange with conjugation the scalar row is fixed and the vector part changes sign, so the half-difference is the vector part with its sign reversed. Verified exactly on the basis and on general elements.
+
+**Corollary (the elementary properties).** The bracket is antisymmetric in the sesquilinear sense, $\tilde Q_1\wedge_{*}\tilde Q_2=-\overline{\tilde Q_2\wedge_{*}\tilde Q_1}$; it has no scalar part; its image is the vector subspace; and its restriction to the real vector subspace is minus the cross product.
+
+*Proof.* The antisymmetry is the definition; the image is spanned by $\vec e_x\wedge_{*}\vec e_y=-\vec e_z$ and its companions; on the real vector subspace the mixed part vanishes because both scalar parts are zero and the cross term is minus the cross product since the conjugation is trivial there.
+
+**Remark (the bracket is conjugate-linear in the second slot).** For every fixed $\tilde Q_1$ the map $\tilde Q_2\mapsto\tilde Q_1\wedge_{*}\tilde Q_2$ is conjugate-linear. The bracket is therefore not a complex Lie bracket in the classical sense even before the Jacobi identity is examined: it is a real bilinear map on the real space of dimension eight, and the complex notation is a shorthand. The consequence is met twice below, in the Killing form and in the exponential.
+
+**Remark (the comparison with the quaternionic bracket on the real subspace).** On the real quaternion subspace $\mathbb{B}_{H}$ the two brackets of the batch that carry a mixed part agree on the vector subspace and differ on the mixed part: with real coefficients, $[e_t,\vec e_x]_{*}=-\vec e_x$ and $[e_t,\vec e_x]_{
+atural}=+\vec e_x$, while $[\vec e_x,\vec e_y]_{*}=[\vec e_x,\vec e_y]_{
+atural}=-\vec e_z$. The two brackets are therefore opposite on the scalar action and equal on the vector action, and the same holds for the two brackets without a mixed part. This is the shape of the two-bit rule at the level of the brackets: the first bit decides the sign of the scalar action, the second the sign of the vector action.
+
+**Remark (the two mixed terms).** The mixed part $-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1$ is conjugate-symmetric, and it is the whole of the difference between this bracket and the plain one: on the vector subspace it contributes nothing, and off it contributes the failure of the identity.
+
+## The Jacobi Identity
+
+**Theorem (the identity fails).** There are $\tilde Q_1,\tilde Q_2,\tilde Q_3$ with
+$$
+\bigl[\tilde Q_1,\tilde Q_2\bigr]_{*}\wedge_{*}\tilde Q_3+\bigl[\tilde Q_2,\tilde Q_3\bigr]_{*}\wedge_{*}\tilde Q_1+\bigl[\tilde Q_3,\tilde Q_1\bigr]_{*}\wedge_{*}\tilde Q_2\neq0 .
+$$
+
+*Proof.* Take $\tilde Q_1=e_t$, $\tilde Q_2=\vec e_x$, $\tilde Q_3=\vec e_y$. The three terms are
+$$
+[e_t,\vec e_x]_{*}\wedge_{*}\vec e_y=(-\vec e_x)\wedge_{*}\vec e_y=+\vec e_z,\qquad
+[\vec e_x,\vec e_y]_{*}\wedge_{*}e_t=(-\vec e_z)\wedge_{*}e_t=-\vec e_z,\qquad
+[\vec e_y,e_t]_{*}\wedge_{*}\vec e_x=(+\vec e_y)\wedge_{*}\vec e_x=+\vec e_z,
+$$
+and the sum is $+\vec e_z$. Computed exactly; the value is the negative of the corresponding value of the quaternionic bracket.
+
+**Proposition (the identity holds on the vector subspace).** For $\tilde Q_1,\tilde Q_2,\tilde Q_3\in\mathbb{B}_V$ the cyclic sum vanishes.
+
+*Proof.* On the vector subspace the bracket is $-\vec Q_1\times\vec Q_2$, and the cyclic sum of a cross product bracket vanishes by the Jacobi identity of $\mathfrak{so}(3,\mathbb{C})$. Verified on the three basis vectors, where every term vanishes because the cross products of distinct units are perpendicular to the third.
+
+**Remark (the sign and the defect).** The two sesquilinear brackets and the two bilinear ones share the same defect dimension, and the two sesquilinear ones share the same defect direction. What differs is the sign of the cross term on the vector subspace, and that sign is invisible in a cyclic sum: it multiplies the whole sum by a constant. The defect is therefore the same object for the two sesquilinear brackets, read in the two different mixed parts.
+
+## The Defect
+
+**Theorem (the defect is three-dimensional).** The span of the values of the cyclic sum over all triples of the complex basis is three-dimensional, equal to the vector subspace.
+
+*Proof.* The values at the triples with one scalar unit and two vector units span the vector subspace, and the values at the triples of three vector units vanish. The singular values of the matrix of values were computed: three nonzero, equally large, with the vector units as left singular vectors. Computed exactly.
+
+**Corollary (no scalar part).** Every value of the defect is a vector.
+
+**Remark (the defect and the mixed part).** The defect is carried by the mixed part $-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1$, and it vanishes identically when the mixed part is removed, that is on the vector subspace. The same is true of the quaternionic bracket, and the two brackets are the same defect read through two different mixed parts. The plain bracket and the quaternionic sesquilinear bracket have no mixed part, and their defects are zero and three respectively: the absence of a mixed part is necessary for the identity and not sufficient.
+
+## The Bracket on the Basis
+
+**Proposition (the table).** In the coefficient basis,
+$$
+[e_t,\vec e_x]_{*}=-\vec e_x,\quad [e_t,\vec e_y]_{*}=-\vec e_y,\quad [e_t,\vec e_z]_{*}=-\vec e_z,\quad [\vec e_x,\vec e_y]_{*}=-\vec e_z,
+$$
+with the cyclic companions and the negatives in the reversed order.
+
+*Proof.* $e_t\wedge_{*}\vec e_x=\tfrac12(\vec e_x^{*}-\overline{\vec e_x^{*}})=-\vec e_x$, since $\vec e_x^{*}=-\vec e_x$ and the coefficient is real. The vector-vector brackets are minus the plain ones. Computed exactly.
+
+| $\wedge_{*}$ | $e_t$ | $\vec e_x$ | $\vec e_y$ | $\vec e_z$ |
+|---|---|---|---|---|
+| $e_t$ | $0$ | $-\vec e_x$ | $-\vec e_y$ | $-\vec e_z$ |
+| $\vec e_x$ | $\vec e_x$ | $0$ | $-\vec e_z$ | $\vec e_y$ |
+| $\vec e_y$ | $\vec e_y$ | $\vec e_z$ | $0$ | $-\vec e_x$ |
+| $\vec e_z$ | $\vec e_z$ | $-\vec e_y$ | $\vec e_x$ | $0$ |
+
+**Remark (the table against the quaternionic one).** The two tables differ only in the first row and the first column: the vector-vector block is the same, and the scalar action changes sign. The scalar unit acts here by minus the identity on the vector subspace and there by the identity; the two brackets are the same bracket with the scalar action reversed, which is the sign difference of the two mixed parts.
+
+**Corollary (the trace of the adjoint).** $\operatorname{tr}(\operatorname{ad}e_t)=-3$ and $\operatorname{tr}(\operatorname{ad}\vec e_x)=0$.
+
+*Proof.* The diagonal of the table, computed exactly.
+
+## The Ideals and the Radical
+
+**Proposition (the ideals are the three).** The subspaces closed under the bracket with the whole algebra are $0$, $\mathbb{B}_V$ and $\mathbb{B}$.
+
+*Proof.* $\mathbb{B}_V$ is closed because the bracket with a vector is a vector and the bracket of two vectors is a vector. The scalar line is not closed, since $[e_t,\vec e_x]_{*}=-\vec e_x$. Any subspace containing an element with nonzero scalar part contains a vector after subtraction, and then all the vector units by bracketing. Verified by computing the invariant subspaces.
+
+**Proposition (there is no radical).** The bracket is not a Lie bracket, so it has no radical in the sense of Lie theory; the radical of the trace form is zero.
+
+*Proof.* A radical presupposes the Jacobi identity. The radical of the trace form is computed in the next section and is zero.
+
+**Remark (the centre).** The centre is zero, since $[e_t,\vec e_x]_{*}=-\vec e_x\neq0$ and $[\vec e_x,e_t]_{*}=\vec e_x\neq0$. Computed by solving the four linear systems.
+
+## The Killing Form
+
+**Definition.** $\kappa(\tilde Q_1,\tilde Q_2)=\operatorname{tr}\bigl(\operatorname{ad}\tilde Q_1\circ\operatorname{ad}\tilde Q_2\bigr)$, with the adjoint maps read on the real space of dimension eight and the trace taken there.
+
+**Theorem (the form in the coefficient basis).** The matrix of $\kappa$ is
+$$
+\kappa(\tilde Q_1,\tilde Q_2)=3Q_{1t}Q_{2t}-2\bigl(\vec Q_1,\vec Q_2\bigr)=\operatorname{diag}(3,-2,-2,-2),
+$$
+nondegenerate.
+
+*Proof.* The adjoint of $\vec e_x$ is minus the cross product matrix on the vector subspace and zero on the scalar line, so its square has trace $-2$; the adjoint of $e_t$ is minus the identity on the vector subspace, so its square has trace $3$. The mixed traces vanish. Computed exactly on the realification, where the complex matrix of the trace is the same.
+
+**Proposition (the form is not invariant).** $\kappa([e_t,\vec e_x]_{*},\vec e_x)+\kappa(\vec e_x,[e_t,\vec e_x]_{*})=4\neq0$.
+
+*Proof.* $[e_t,\vec e_x]_{*}=-\vec e_x$, so the sum is $\kappa(-\vec e_x,\vec e_x)+\kappa(\vec e_x,-\vec e_x)=-2\kappa(\vec e_x,\vec e_x)=-4$, with $\kappa(\vec e_x,\vec e_x)=-2$ from the theorem. Computed exactly in the coefficient basis.
+
+**Corollary (the form on the vector subspace).** The restriction of $\kappa$ to $\mathbb{B}_V$ is $-2$ times the Euclidean form, hence negative definite on the real vector subspace.
+
+*Proof.* The theorem gives the diagonal values $-2$ and no mixed terms. The sign is the sign of the compact real form, as for the plain bracket, and it is the reason the vector-subspace part of the two algebras is the same $\mathfrak{so}(3)$ over the reals.
+
+**Remark (the form and the identity).** The invariance of the Killing form of a Lie algebra is proved from the Jacobi identity by a cyclic rearrangement. Without the identity the proof has no first step, and the form is not invariant. The failure is measured by the same defect that measures the failure of the identity, and the two are not independent: the invariance is the bilinear shadow of the trilinear identity.
+
+## The Exponential and the Versors
+
+**Proposition (the adjoint maps are conjugate-linear).** For every $\tilde Q_1$ the map $\tilde Q_2\mapsto\tilde Q_1\wedge_{*}\tilde Q_2$ is conjugate-linear, so it is not an endomorphism of the complex space and its exponential is defined only on the realification.
+
+*Proof.* The bracket is conjugate-linear in the second slot by construction. On the real space of dimension eight the adjunct map is real-linear, and its exponential is a real endomorphism.
+
+**Proposition (the exponential is not an automorphism).** Read on the real space, $\exp(t\operatorname{ad}\tilde Q_1)$ is not an automorphism of the real bracket for generic $\tilde Q_1$ and $t\neq0$.
+
+*Proof.* The exponential was summed numerically on the realification and compared with the bracket of the images; the deviation on random data is of order $10$. The map is also not complex-linear, with a deviation of order $1$ on the test of the commutation with the multiplication by $i$.
+
+**Proposition (no versor conjugation preserves the bracket).** For a versor $\tilde U$ the map $\tilde Q\mapsto\tilde U\tilde Q\tilde U^{\natural}$ does not preserve this bracket.
+
+*Proof.* The map preserves the plain product and the involution, but the bracket carries the coefficientwise conjugation in its second slot, and the versor conjugation does not commute with that conjugation unless the versor is central. The numerical deviation on random data is of order $1$.
+
+**Remark (what the group is).** The bracket has no group of versor automorphisms and no exponential automorphisms, so the Lie-theoretic apparatus of the plain bracket has no analogue here. What survives is the invariance of the vector subspace and of its cross product under the rotations: the restriction of the bracket to $\mathbb{B}_V$ is minus the cross product, and the group $\mathrm{SO}(3,\mathbb{C})$ acts on that restriction by automorphisms. The pair of properties, a rotation group on the vector subspace and nothing outside it, is the exact residue of the Lie structure of this bracket.
+
+## The Place among the Four
+
+| | this bracket | $\wedge$ | $\wedge_{\natural}$ | $\wedge_{\natural*}$ |
+|---|---|---|---|---|
+| value on $\mathbb{B}_V$ | $-\vec X\times\vec Y$ | $\vec X\times\vec Y$ | $-\vec X\times\vec Y$ | $\vec X\times\overline{\vec Y}$ |
+| mixed part | $-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1$ | none | $Q_{1t}\vec Q_2-Q_{2t}\vec Q_1$ | none |
+| Jacobi | fails, defect $3$ | holds | fails, defect $3$ | fails, defect $3$ |
+| centre | $0$ | $\mathbb{C}e_t$ | $0$ | $\mathbb{C}e_t$ |
+| Killing form | $\operatorname{diag}(3,-2,-2,-2)$ | $\operatorname{diag}(0,-2,-2,-2)$ | $\operatorname{diag}(3,-2,-2,-2)$ | $\operatorname{diag}(0,-2,-2,-2)$ |
+| invariant form | no | yes | no | no |
+| $\exp(\operatorname{ad})$ automorphism | no | yes | no | no |
+
+**Remark (the column of the conjugate mixed part).** This column differs from the quaternionic one in the sign of the mixed part and in the sign of the cross product, and in nothing else. The two columns have the same defect, the same Killing form, the same centre and the same absence of an exponential. The pairing is the pairing of the two decorations: a bracket with a mixed part has a defect, and the two brackets with a mixed part are the two that carry exactly one decoration in the second slot, one of them by the involution and the other by the coefficientwise conjugation.
+
+## Summary
+
+The antisymmetric plain sesquilinear product is $\tilde Q_1\wedge_{*}\tilde Q_2=-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}$, antisymmetric in the sesquilinear sense, with no scalar part and image the vector subspace.
+
+It fails the Jacobi identity with a defect of dimension three equal to the vector subspace, the witness $(e_t,\vec e_x,\vec e_y)$ giving $-\vec e_z$; on the vector subspace the bracket is minus the cross product and the identity holds.
+
+The ideals are $0$, $\mathbb{B}_V$ and $\mathbb{B}$, the centre is zero, and there is no radical. The Killing form is $\operatorname{diag}(3,-2,-2,-2)$, nondegenerate and not invariant, with the witness $(e_t,\vec e_x,\vec e_x)$ giving $4$. The adjoint maps are conjugate-linear, the exponential on the realification is not an automorphism, and no versor conjugation preserves the bracket; the residue of the Lie structure is the rotation group of the vector subspace.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | the biquaternion algebra |
+| $\tilde Q=Q_te_t+\vec Q$ | the element, its scalar part and its vector part |
+| $\tilde Q_1\wedge_{*}\tilde Q_2$ | the antisymmetric plain sesquilinear product |
+| ${}^{*}$ | the Hermitian involution |
+| $\operatorname{ad}\tilde Q$ | the adjoint map of the bracket |
+| $\kappa$ | the trace form of the adjoint representation |
+| $H$ | the positive definite Hermitian form |
+| $\mathbb{B}_V$ | the vector subspace |
+| $\mathbb{B}_{H}$ | the real quaternion subspace |
+| $J$ | the Jacobi defect |
+
+## Further Reading
+
+- [The General Plain Sesquilinear Product](the-general-plain-sesquilinear-product.html), for the product of which this is the antisymmetrisation.
+- [The Jordan Structure of the Symmetric Plain Sesquilinear Product](the-jordan-structure-of-the-symmetric-plain-sesquilinear-product.html), for the other half of the same product.
+- [The Lie Structure of the Antisymmetric Quaternionic Product](the-lie-structure-of-the-antisymmetric-quaternionic-product.html) and [The Lie Structure of the Antisymmetric Quaternionic Sesquilinear Product](the-lie-structure-of-the-antisymmetric-quaternionic-sesquilinear-product.html), for the two companion brackets.
+- [The Lie Structure of the Antisymmetric Plain Product](the-lie-structure-of-the-antisymmetric-plain-product.html), for the bracket that satisfies the identity.
+- [Lie Algebras](lie-algebras-a-general-introduction.html), for the identity, the ideals and the Killing form in general.
+- [Symmetric and Antisymmetric Decomposition of the Four General Products](symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html), for the four brackets.
