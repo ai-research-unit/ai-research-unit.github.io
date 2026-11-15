@@ -86,7 +86,7 @@ $$</p>
 <p><strong>The class is not closed under sums.</strong> Two Hermitian matrices add to a Hermitian one, but $\sigma_1+\sigma_2$ is not normal, since $[\sigma_1,\sigma_2]\neq0$. So the class is a union of families rather than a subspace, and its intersection with each half is the whole half.</p>
 <p><strong>Every normal matrix is diagonalisable by a unitary matrix, and conversely.</strong> If $A=U\Lambda U^{*}$ with $\Lambda$ diagonal, then $AA^{*}=U\Lambda\bar\Lambda U^{*}=A^{*}A$; the converse is the spectral theorem below. So the two statements are equivalent, and the whole content of the article is the construction of $U$.</p>
 <h2 id="the-two-hermitian-halves-of-a-matrix">The Two Hermitian Halves of a Matrix</h2>
-<p><strong>Every matrix splits into a Hermitian and a anti-Hermitian part.</strong> Put</p>
+<p><strong>Every matrix splits into a Hermitian and an anti-Hermitian part.</strong> Put</p>
 <p>$$
 H=\tfrac12(A+A^{*}),\qquad K=\tfrac12(A-A^{*}),\qquad A=H+K .
 $$</p>
@@ -111,7 +111,7 @@ $$</p>
 <p>$$
 \|AA^{*}-A^{*}A\|=2\|[H,J]\|,
 $$</p>
-<p>so the vanishing of one side is the vanishing of the other. The computation confirms the equivalence on random matrices and on the two halves: a Hermitian matrix has $J=0$ and a anti-Hermitian one has $H=0$, so both are normal and the criterion holds trivially.</p>
+<p>so the vanishing of one side is the vanishing of the other. The computation confirms the equivalence on random matrices and on the two halves: a Hermitian matrix has $J=0$ and an anti-Hermitian one has $H=0$, so both are normal and the criterion holds trivially.</p>
 <p><strong>The criterion states the compatibility of the two structures exactly.</strong> The split $M_n(\mathbb{C})=\operatorname{Herm}_n\oplus i\operatorname{Herm}_n$ is a decomposition into two real subspaces, and the commutator is a bilinear map $[\,\cdot,\cdot]:\operatorname{Herm}_n\times\operatorname{Herm}_n\to i\operatorname{Herm}_n$. The normal matrices are the pairs $(H,J)$ in the kernel of that map, so</p>
 <p>$$
 \{\text{normal}\}=\{(H,J):[H,J]=0\},
@@ -130,7 +130,7 @@ $$</p>
 \operatorname{Spec}(A)=\{\lambda_{1j}+i\lambda_{2j}:j=1,\dots,n\},
 $$</p>
 <p>so the spectrum of a normal matrix is the pointwise sum of two real spectra, read in the same order. The order is the choice of eigenbasis, and a different order gives the same spectrum as a multiset, which is why the spectrum is the invariant and the basis is the gauge.</p>
-<p><strong>The theorem contains both of the extreme cases.</strong> If $A$ is Hermitian then $\Lambda$ is real, and the theorem says that a Hermitian matrix is unitarily diagonalisable with a real diagonal; if $A$ is anti-Hermitian then $\Lambda$ is purely imaginary, and the theorem says that a anti-Hermitian matrix is unitarily diagonalisable with a purely imaginary diagonal. So the two spectral theorems are the two real and imaginary slices of the one theorem, and the common spectral theorem is the statement that the two slices fit together.</p>
+<p><strong>The theorem contains both of the extreme cases.</strong> If $A$ is Hermitian then $\Lambda$ is real, and the theorem says that a Hermitian matrix is unitarily diagonalisable with a real diagonal; if $A$ is anti-Hermitian then $\Lambda$ is purely imaginary, and the theorem says that an anti-Hermitian matrix is unitarily diagonalisable with a purely imaginary diagonal. So the two spectral theorems are the two real and imaginary slices of the one theorem, and the common spectral theorem is the statement that the two slices fit together.</p>
 <p><strong>The theorem is the statement that the two halves are simultaneously diagonalisable exactly on the normal set.</strong> For a general matrix the two halves do not commute and no common eigenbasis exists; the best that can be done is the Schur form, in which one of the two is triangular and the other is not diagonal. So the difference between normal and general is exactly the difference between one unitary and one unitary times a triangular factor.</p>
 <p><strong>The unitary is unique up to the torus.</strong> If $A=U\Lambda U^{*}$ with the eigenvalues distinct, then any other diagonalisation is $UW$ with $W$ diagonal unitary, since the eigenspaces are one-dimensional. So the eigenbasis is unique up to phases, and the theorem gives a principal bundle over the normal variety with fibre the torus $\mathrm{U}(1)^{n}$.</p>
 <h2 id="the-schur-inequality-and-its-equality-case">The Schur Inequality and Its Equality Case</h2>

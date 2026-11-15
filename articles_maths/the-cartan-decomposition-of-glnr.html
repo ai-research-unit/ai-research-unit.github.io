@@ -81,26 +81,26 @@ $$</p>
 <p><strong>The two factors are of different natures.</strong> $K$ is compact and bounded in $M_n(\mathbb{R})$; $\mathrm{e}^{\mathfrak{p}}$ is the cone $\operatorname{Sym}_n^{>0}$, open, convex and unbounded. A compact factor and a linear factor, multiplied once, give the group.</p>
 <p><strong>The count is exact.</strong> $\dim K=n(n-1)/2$ and $\dim\mathfrak{p}=n(n+1)/2$, and their sum is $n^{2}=\dim\mathrm{GL}_n(\mathbb{R})$.</p>
 <h2 id="the-lie-algebra-splits">The Lie Algebra Splits</h2>
-<p><strong>The Lie algebra is $\mathfrak{gl}_n(\mathbb{R})=M_n(\mathbb{R})$ with the commutator.</strong> Every matrix is a symmetric plus a skew matrix in exactly one way:</p>
+<p><strong>The Lie algebra is $\mathfrak{gl}_n(\mathbb{R})=M_n(\mathbb{R})$ with the commutator.</strong> Every matrix is a symmetric plus an antisymmetric matrix in exactly one way:</p>
 <p>$$
-A=\underbrace{\tfrac12(A+A^{\mathsf T})}_{\text{symmetric}}+\underbrace{\tfrac12(A-A^{\mathsf T})}_{\text{skew}} .
+A=\underbrace{\tfrac12(A+A^{\mathsf T})}_{\text{symmetric}}+\underbrace{\tfrac12(A-A^{\mathsf T})}_{\text{antisymmetric}} .
 $$</p>
 <p>So, as vector spaces,</p>
 <p>$$
 \mathfrak{gl}_n(\mathbb{R})=\mathfrak{k}\oplus\mathfrak{p},\qquad \mathfrak{k}=\mathfrak{so}(n)=\operatorname{Skew}_n,\quad \mathfrak{p}=\operatorname{Sym}_n,
 $$</p>
-<p>and the sum is direct because a matrix that is both symmetric and skew is zero. The dimensions add, $\frac{n(n-1)}{2}+\frac{n(n+1)}{2}=n^{2}$.</p>
-<p><strong>$\mathfrak{k}$ is a subalgebra and $\mathfrak{p}$ is not.</strong> The skew matrices are closed under the commutator. The symmetric ones are not: the commutator of two symmetric matrices is skew whenever it is nonzero, so $\mathfrak{p}$ is only a subspace.</p>
+<p>and the sum is direct because a matrix that is both symmetric and antisymmetric is zero. The dimensions add, $\frac{n(n-1)}{2}+\frac{n(n+1)}{2}=n^{2}$.</p>
+<p><strong>$\mathfrak{k}$ is a subalgebra and $\mathfrak{p}$ is not.</strong> The antisymmetric matrices are closed under the commutator. The symmetric ones are not: the commutator of two symmetric matrices is antisymmetric whenever it is nonzero, so $\mathfrak{p}$ is only a subspace.</p>
 <h2 id="the-three-brackets">The Three Brackets</h2>
 <p><strong>Theorem.</strong> The three relations hold:</p>
 <p>$$
 [\mathfrak{k},\mathfrak{k}]\subseteq\mathfrak{k},\qquad [\mathfrak{k},\mathfrak{p}]\subseteq\mathfrak{p},\qquad [\mathfrak{p},\mathfrak{p}]\subseteq\mathfrak{k}.
 $$</p>
-<p><em>Proof.</em> Let $X,Y$ be skew and $S,T$ symmetric. Using $(UV)^{\mathsf T}=V^{\mathsf T}U^{\mathsf T}$ and $X^{\mathsf T}=-X$, $S^{\mathsf T}=S$,</p>
+<p><em>Proof.</em> Let $X,Y$ be antisymmetric and $S,T$ symmetric. Using $(UV)^{\mathsf T}=V^{\mathsf T}U^{\mathsf T}$ and $X^{\mathsf T}=-X$, $S^{\mathsf T}=S$,</p>
 <p>$$
 [X,Y]^{\mathsf T}=Y^{\mathsf T}X^{\mathsf T}-X^{\mathsf T}Y^{\mathsf T}=YX-XY=-[X,Y],
 $$</p>
-<p>so $[X,Y]$ is skew. Next,</p>
+<p>so $[X,Y]$ is anti-Hermitian. Next,</p>
 <p>$$
 [X,S]^{\mathsf T}=S^{\mathsf T}X^{\mathsf T}-X^{\mathsf T}S^{\mathsf T}=-SX+XS=[X,S],
 $$</p>
@@ -108,7 +108,7 @@ $$</p>
 <p>$$
 [S,T]^{\mathsf T}=TS-ST=-[S,T],
 $$</p>
-<p>so $[S,T]$ is skew. Numerically all three defects are $0$ at $n=3$ on random pairs.</p>
+<p>so $[S,T]$ is anti-Hermitian. Numerically all three defects are $0$ at $n=3$ on random pairs.</p>
 <h2 id="the-involution">The Involution</h2>
 <p><strong>Definition.</strong> Put $\theta(X)=-X^{\mathsf T}$ for $X\in\mathfrak{gl}_n(\mathbb{R})$.</p>
 <p><strong>$\theta$ is an involutive automorphism.</strong> It is linear, $\theta^{2}=\mathrm{id}$, and</p>
@@ -116,7 +116,7 @@ $$</p>
 \theta([X,Y])=-[X,Y]^{\mathsf T}=-[Y^{\mathsf T},X^{\mathsf T}]=[X^{\mathsf T},Y^{\mathsf T}]=[\theta X,\theta Y],
 $$</p>
 <p>using $[U,V]^{\mathsf T}=[V^{\mathsf T},U^{\mathsf T}]$; numerically the defect is $0$ at $n=3$.</p>
-<p><strong>The eigenspaces are the two summands.</strong> A matrix with $\theta(X)=X$ satisfies $-X^{\mathsf T}=X$ and is skew; a matrix with $\theta(X)=-X$ satisfies $X^{\mathsf T}=X$ and is symmetric. Hence</p>
+<p><strong>The eigenspaces are the two summands.</strong> A matrix with $\theta(X)=X$ satisfies $-X^{\mathsf T}=X$ and is antisymmetric; a matrix with $\theta(X)=-X$ satisfies $X^{\mathsf T}=X$ and is symmetric. Hence</p>
 <p>$$
 \mathfrak{k}=\{X:\theta(X)=X\},\qquad \mathfrak{p}=\{X:\theta(X)=-X\}.
 $$</p>
@@ -185,7 +185,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathfrak{k}=\mathfrak{so}(n)$</td>
-<td>The skew matrices, the Lie algebra of $K$</td>
+<td>The antisymmetric matrices, the Lie algebra of $K$</td>
 </tr>
 <tr>
 <td>$\mathfrak{p}=\operatorname{Sym}_n$</td>

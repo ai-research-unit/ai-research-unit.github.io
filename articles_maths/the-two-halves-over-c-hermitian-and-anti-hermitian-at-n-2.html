@@ -74,7 +74,7 @@
 <p>The article proves the split $M_2(\mathbb{C})=\operatorname{Herm}_2\oplus\mathfrak{u}(2)$ as the eigenspaces of the conjugate transpose, identifies $\operatorname{Herm}_2$ with Minkowski space through the determinant and with the Pauli coordinates, identifies the anti-Hermitian half with the Lie algebra $\mathfrak{u}(2)=\mathbb{R}iI\oplus\mathfrak{su}(2)$, computes the product rules $\{H,K\}$ Hermitian and $[H,K]$ anti-Hermitian, and reads the light cone and the rank-one elements. It assumes <em>The Involutions of $M_2(\mathbb{C})$ over $\mathbb{R}$ and over $\mathbb{C}$</em> for the conjugate transpose, and <em>The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$</em> for the real slice.</p>
 <p>It defers the orthogonal complement to <em>The Two Halves as Orthogonal Complements at $n=2$</em>, the spectral statement to <em>The Spectral Theorem: the Hermitian Case and the Sphere of Idempotents</em>, and the complex structure on the algebra to <em>The Element: The Coordinates and the Conjugations</em>.</p>
 <h2 id="the-split-over-math17">The Split over $\mathbb{C}$</h2>
-<p><strong>Theorem.</strong> Every complex matrix is the sum of a Hermitian and a anti-Hermitian one in exactly one way:</p>
+<p><strong>Theorem.</strong> Every complex matrix is the sum of a Hermitian and an anti-Hermitian one in exactly one way:</p>
 <p>$$
 M_2(\mathbb{C})=\operatorname{Herm}_2\oplus\mathfrak{u}(2),\qquad \dim_{\mathbb{R}}=4+4=8 .
 $$</p>
@@ -104,7 +104,7 @@ $$</p>
 <p><strong>Proposition.</strong> The anti-Hermitian matrices are exactly the products $iX$ with $X$ Hermitian, and they form the Lie algebra $\mathfrak{u}(2)$ of the unitary group.</p>
 <p><strong>Proof.</strong> $K^{*}=-K$ is equivalent to $(iK)^{*}=-iK^{*}=iK$, so $iK$ is Hermitian. The unitary group consists of the matrices with $g^{*}g=I$, and differentiating at the identity gives $K^{*}+K=0$.</p>
 <p><strong>Corollary.</strong> $\mathfrak{u}(2)=\mathbb{R}iI\oplus\mathfrak{su}(2)$, with $\mathfrak{su}(2)$ the traceless anti-Hermitian matrices, of real dimension $3$.</p>
-<p><strong>Proof.</strong> A anti-Hermitian matrix has a purely imaginary trace; subtracting the scalar part leaves the traceless anti-Hermitian matrices, which are three real dimensions.</p>
+<p><strong>Proof.</strong> An anti-Hermitian matrix has a purely imaginary trace; subtracting the scalar part leaves the traceless anti-Hermitian matrices, which are three real dimensions.</p>
 <p><strong>Proposition (the structure constants).</strong> With $S_{a}=i\sigma_{a}$,</p>
 <p>$$
 [S_{a},S_{b}]=-2i\,\epsilon_{abc}S_{c},
@@ -126,7 +126,7 @@ $$</p>
 <p><strong>The product rules are the ones of the four tables.</strong> At order two the tables $HH$, $HK$, $KH$, $KK$ are written out in <em>The Four Multiplication Tables: $SS$, $SK$, $KS$, $KK$ at $n=2$</em>, where the letters denote the two halves.</p>
 <h2 id="the-traces-and-the-real-part">The Traces and the Real Part</h2>
 <p><strong>Proposition.</strong> The trace is real on $\operatorname{Herm}_2$ and purely imaginary on $\mathfrak{u}(2)$.</p>
-<p><strong>Proof.</strong> A Hermitian matrix has real diagonal, so its trace is real; a anti-Hermitian one has purely imaginary diagonal.</p>
+<p><strong>Proof.</strong> A Hermitian matrix has real diagonal, so its trace is real; an anti-Hermitian one has purely imaginary diagonal.</p>
 <p><strong>Proposition.</strong> For Hermitian $H,K$ the number $\operatorname{tr}(HK)$ is real and nonnegative when $H=K$; for $H$ Hermitian and $K$ anti-Hermitian the number $\operatorname{tr}(HK)$ is purely imaginary.</p>
 <p><strong>Proof.</strong> $\overline{\operatorname{tr}(HK)}=\operatorname{tr}((HK)^{*})=\operatorname{tr}(KH)=\operatorname{tr}(HK)$ by cyclicity, so it is real. If $K=iS$ with $S$ Hermitian then $\operatorname{tr}(HK)=i\operatorname{tr}(HS)$ is purely imaginary. Positivity follows because $H$ is diagonalisable by a unitary matrix with real eigenvalues.</p>
 <p><strong>Corollary (the subtlety of the complex form).</strong> The two halves are not orthogonal for the complex bilinear form $\operatorname{tr}(XY)$: with $H=I$ and $K=iI$ one has $\operatorname{tr}(HK)=2i$. They are orthogonal for the real form $\operatorname{Re}\operatorname{tr}(X^{*}Y)$, since then the pairing is $\operatorname{Re}\operatorname{tr}(H^{*}K)=0$.</p>
@@ -136,10 +136,10 @@ $$</p>
 <p><strong>Proof.</strong> $P$ Hermitian and $P^{2}=P$ has eigenvalues $0$ and $1$, so $\operatorname{tr}P$ is $0,1,2$; the values $0$ and $2$ give $P=0$ and $P=I$, and the value $1$ gives $P=\tfrac12(I+\vec n\cdot\vec\sigma)$ with $\vec n$ of norm $1$ because $\operatorname{tr}(P^{2})=\operatorname{tr}(P)$ forces $|\vec n|^{2}=1$.</p>
 <p><strong>Corollary.</strong> The rank-one Hermitian idempotents form a sphere $S^{2}$, and the projections onto the lines of $\mathbb{C}^{2}$ are exactly them.</p>
 <p><strong>Proof.</strong> Each is the projection onto the eigenspace of the eigenvalue $1$, which is a line, and every line has a projection of this form.</p>
-<p><strong>The two halves meet the idempotents differently.</strong> A symmetric idempotent is a Hermitian idempotent with real $\vec n$, so the symmetric ones form the equator $S^{1}$ of the sphere; a anti-Hermitian matrix is never an idempotent except $0$, because its eigenvalues are purely imaginary.</p>
+<p><strong>The two halves meet the idempotents differently.</strong> A symmetric idempotent is a Hermitian idempotent with real $\vec n$, so the symmetric ones form the equator $S^{1}$ of the sphere; an anti-Hermitian matrix is never an idempotent except $0$, because its eigenvalues are purely imaginary.</p>
 <h2 id="summary">Summary</h2>
 <p>The complex matrices split into the Hermitian half and the anti-Hermitian half, each of real dimension $4$, as the eigenspaces of the conjugate transpose. In the Pauli coordinates $X=x_{0}I+x_{1}\sigma_{1}+x_{2}\sigma_{3}+x_{3}\sigma_{2}$ the determinant of a Hermitian matrix is $x_{0}^{2}-x_{1}^{2}-x_{2}^{2}-x_{3}^{2}$, of signature $(1,3)$, and the light cone is the set of rank-one positive semidefinite matrices.</p>
-<p>The anti-Hermitian half is $\mathfrak{u}(2)=\mathbb{R}iI\oplus\mathfrak{su}(2)$, with $[S_{a},S_{b}]=-2i\epsilon_{abc}S_{c}$. For Hermitian $H,K$ the sum $HK+KH$ is Hermitian and the difference is anti-Hermitian, the trace is real on the Hermitian half and purely imaginary on the other, and $\operatorname{tr}(HK)$ is real while $\operatorname{tr}(HK)$ with $K$ skew is purely imaginary. The Hermitian idempotents form the sphere $S^{2}$, and the symmetric ones form its equator $S^{1}$.</p>
+<p>The anti-Hermitian half is $\mathfrak{u}(2)=\mathbb{R}iI\oplus\mathfrak{su}(2)$, with $[S_{a},S_{b}]=-2i\epsilon_{abc}S_{c}$. For Hermitian $H,K$ the sum $HK+KH$ is Hermitian and the difference is anti-Hermitian, the trace is real on the Hermitian half and purely imaginary on the other, and $\operatorname{tr}(HK)$ is real while $\operatorname{tr}(HK)$ with $K$ anti-Hermitian is purely imaginary. The Hermitian idempotents form the sphere $S^{2}$, and the symmetric ones form its equator $S^{1}$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>

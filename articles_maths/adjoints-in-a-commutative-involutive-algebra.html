@@ -88,9 +88,9 @@ $$</p>
 <p>Hence ${}^{\dagger}$ is an involution of the associative algebra $\operatorname{End}_R(A)$, in the sense of <em>Involutive Algebras</em>.</p>
 <p><em>Proof.</em> Additivity and $R$-linearity are the bilinearity of $B$; the order two is the reflexivity: $B(Fx,y) = B(x,F^{\dagger}y) = B((F^\dagger)^\dagger x,y)$ gives $(F^\dagger)^\dagger = F$ by non-degeneracy; the anti-multiplicativity is $B(FGx,y) = B(Gx,F^{\dagger}y) = B(x,G^{\dagger}F^{\dagger}y)$.</p>
 <h2 id="the-adjoint-involution-and-the-self-adjoint-part">The Adjoint Involution and the Self-Adjoint Part</h2>
-<h3 id="self-adjoint-and-skew-adjoint-operators">Self-Adjoint and Skew-Adjoint Operators</h3>
-<p><strong>Definition.</strong> An operator $F$ is <strong>self-adjoint</strong> when $F^{\dagger} = F$, <strong>skew-adjoint</strong> when $F^{\dagger} = -F$, and <strong>unitary</strong> when $F^{\dagger}F = FF^{\dagger} = 1$; the set of the self-adjoint operators is $E^+$ and the set of the skew-adjoint operators is $E^-$, with $E = \operatorname{End}_R(A)$.</p>
-<p><strong>Proposition.</strong> The self-adjoint operators form a Jordan algebra under $F\bullet G = \tfrac12(FG+GF)$ and the skew-adjoint operators form a Lie algebra under the commutator; $E = E^+\oplus E^-$ when $2$ is invertible, and the unitary operators form a group.</p>
+<h3 id="self-adjoint-and-anti-self-adjoint-operators">Self-Adjoint and Anti-Self-Adjoint Operators</h3>
+<p><strong>Definition.</strong> An operator $F$ is <strong>self-adjoint</strong> when $F^{\dagger} = F$, <strong>anti-self-adjoint</strong> when $F^{\dagger} = -F$, and <strong>unitary</strong> when $F^{\dagger}F = FF^{\dagger} = 1$; the set of the self-adjoint operators is $E^+$ and the set of the anti-self-adjoint operators is $E^-$, with $E = \operatorname{End}_R(A)$.</p>
+<p><strong>Proposition.</strong> The self-adjoint operators form a Jordan algebra under $F\bullet G = \tfrac12(FG+GF)$ and the anti-self-adjoint operators form a Lie algebra under the commutator; $E = E^+\oplus E^-$ when $2$ is invertible, and the unitary operators form a group.</p>
 <p><em>Proof.</em> This is <em>Involutive Algebras</em> applied to the involution ${}^{\dagger}$ of $E$: the fixed set is closed under the symmetrised product, the anti-fixed under the commutator, and the units fixed up to the inverse form the unitary group.</p>
 <h3 id="the-adjoint-of-a-multiplication">The Adjoint of a Multiplication</h3>
 <p><strong>Theorem.</strong> For every $a \in A$ the adjoint of the multiplication $L_a$ is the multiplication by the image of $a$ under the involution:
@@ -103,13 +103,13 @@ $$</p>
 $$
 L_aL_a^{\dagger} = L_{a\sigma(a)} = L_a^{\dagger}L_a ,
 $$
-because the algebra is commutative; the multiplication operators therefore lie in the <strong>normal</strong> part of $\operatorname{End}_R(A)$, and $L_a$ is self-adjoint exactly when $\sigma(a) = a$ and skew-adjoint exactly when $\sigma(a) = -a$.</p>
+because the algebra is commutative; the multiplication operators therefore lie in the <strong>normal</strong> part of $\operatorname{End}_R(A)$, and $L_a$ is self-adjoint exactly when $\sigma(a) = a$ and anti-self-adjoint exactly when $\sigma(a) = -a$.</p>
 <p><em>Proof.</em> $L_aL_a^{\dagger} = L_aL_{\sigma(a)} = L_{a\sigma(a)}$ and $L_a^{\dagger}L_a = L_{\sigma(a)}L_a = L_{\sigma(a)a}$, and $a\sigma(a) = \sigma(a)a$.</p>
 <h2 id="examples">Examples</h2>
 <p><strong>Example (the coordinate algebra).</strong> Let $A = R^n$ with the standard pairing $B(x,y) = \sum_ix_iy_i$ and let $\sigma$ be an involution of $A$ permuting or negating the coordinates. Then the adjoint of an operator $F$, represented by a matrix, is $F^{\dagger} = \sigma F^{\mathsf{T}}\sigma^{-1}$, that is, the transpose composed with the coordinate involution on both sides. The multiplications $L_a$ for $a$ a diagonal matrix are diagonal, and $L_a^{\dagger} = L_{\sigma(a)}$ is the diagonal matrix with the permuted or negated diagonal, confirming the theorem.</p>
-<p><strong>Example (the polynomial ring).</strong> Let $A = R[x]$ with $\sigma(x) = -x$ and let $B$ be the $R$-bilinear pairing with $B(x^i,x^j) = \delta_{ij}$, reflexive and non-degenerate on the polynomials of bounded degree; then $L_x^{\dagger} = L_{-x} = -L_x$, so the multiplication by $x$ is skew-adjoint, and the multiplication by $x^2$ is self-adjoint. The fixed subalgebra of the multiplication operators is the multiplication by the even polynomials.</p>
+<p><strong>Example (the polynomial ring).</strong> Let $A = R[x]$ with $\sigma(x) = -x$ and let $B$ be the $R$-bilinear pairing with $B(x^i,x^j) = \delta_{ij}$, reflexive and non-degenerate on the polynomials of bounded degree; then $L_x^{\dagger} = L_{-x} = -L_x$, so the multiplication by $x$ is anti-self-adjoint, and the multiplication by $x^2$ is self-adjoint. The fixed subalgebra of the multiplication operators is the multiplication by the even polynomials.</p>
 <h2 id="summary">Summary</h2>
-<p>A non-degenerate reflexive $\sigma$-sesquilinear pairing on a commutative involutive algebra $(A,\sigma)$ defines the <strong>adjoint</strong> $F^{\dagger}$ of every operator by $B(Fx,y) = B(x,F^{\dagger}y)$; the adjoint exists, is unique, and the assignment ${}^{\dagger}$ is an <strong>involution</strong> of $\operatorname{End}_R(A)$, additive, $R$-linear, of order two and anti-multiplicative. The <strong>self-adjoint</strong> operators form a Jordan algebra under the symmetrised product and the <strong>skew-adjoint</strong> operators a Lie algebra under the commutator, with the decomposition into the two when $2$ is invertible; the <strong>unitary</strong> operators form a group. The adjoint of a multiplication is $L_a^{\dagger} = L_{\sigma(a)}$, so the adjoint involution restricted to the multiplication operators is the induced involution of <em>Involutions of the Multiplication Operators</em> and every multiplication operator is <strong>normal</strong>. The coordinate algebra and the polynomial ring are the worked examples. No norm, distance, positivity or operator spectrum occurs.</p>
+<p>A non-degenerate reflexive $\sigma$-sesquilinear pairing on a commutative involutive algebra $(A,\sigma)$ defines the <strong>adjoint</strong> $F^{\dagger}$ of every operator by $B(Fx,y) = B(x,F^{\dagger}y)$; the adjoint exists, is unique, and the assignment ${}^{\dagger}$ is an <strong>involution</strong> of $\operatorname{End}_R(A)$, additive, $R$-linear, of order two and anti-multiplicative. The <strong>self-adjoint</strong> operators form a Jordan algebra under the symmetrised product and the <strong>anti-self-adjoint</strong> operators a Lie algebra under the commutator, with the decomposition into the two when $2$ is invertible; the <strong>unitary</strong> operators form a group. The adjoint of a multiplication is $L_a^{\dagger} = L_{\sigma(a)}$, so the adjoint involution restricted to the multiplication operators is the induced involution of <em>Involutions of the Multiplication Operators</em> and every multiplication operator is <strong>normal</strong>. The coordinate algebra and the polynomial ring are the worked examples. No norm, distance, positivity or operator spectrum occurs.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -137,7 +137,7 @@ because the algebra is commutative; the multiplication operators therefore lie i
 </tr>
 <tr>
 <td>$E^+, E^-$</td>
-<td>Self-adjoint and skew-adjoint operators</td>
+<td>Self-adjoint and anti-self-adjoint operators</td>
 </tr>
 <tr>
 <td>$F^{\dagger}F = FF^{\dagger} = 1$</td>

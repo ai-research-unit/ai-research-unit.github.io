@@ -71,7 +71,7 @@
         <h1 id="isometries-as-operators"><strong>Isometries as Operators</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>An isometry of a Riemannian manifold is a map, and this article reads it as an <strong>operator</strong>. Its differential is a bundle isomorphism of the tangent bundle that preserves the metric on each fibre, so an isometry is an operator on the tangent bundle and, by extension, on every tensor bundle built from it. The assignment of its differential to an isometry is a faithful representation of the isometry group by operators, and the action of the group on the manifold is the geometric form of that representation: a symmetry of the metric is, at the operator level, a bundle automorphism that fixes the metric, and the infinitesimal version of the same statement is a Killing field.</p>
-<p>The article develops the operator reading. It defines the differential operator of an isometry and proves that it preserves the metric, the Levi-Civita connection, the geodesics, the curvature and the volume form; it shows that the isometry group acts faithfully on the tangent bundle and is a Lie group, the theorem of Myers–Steenrod being cited from <em>Riemannian Geometry</em>; it identifies the Killing fields as the infinitesimal operators and characterises them by the skew-adjointness of $\nabla X$; it develops the isotropy representation at a point and the orbit of the group; and it proves that the fixed set of an isometry is a disjoint union of totally geodesic submanifolds.</p>
+<p>The article develops the operator reading. It defines the differential operator of an isometry and proves that it preserves the metric, the Levi-Civita connection, the geodesics, the curvature and the volume form; it shows that the isometry group acts faithfully on the tangent bundle and is a Lie group, the theorem of Myers–Steenrod being cited from <em>Riemannian Geometry</em>; it identifies the Killing fields as the infinitesimal operators and characterises them by the anti-self-adjointness of $\nabla X$; it develops the isotropy representation at a point and the orbit of the group; and it proves that the fixed set of an isometry is a disjoint union of totally geodesic submanifolds.</p>
 <p>The article assumes the Riemannian metric, the Levi-Civita connection, the geodesics, the curvature and the holonomy of <em>Curvature and Geodesics</em> and <em>Riemannian Geometry</em>, and it cites <em>Smooth Manifolds and Differential Geometry</em> for the tangent bundle, the tensor bundles and the Lie derivative. The <strong>linear</strong> isometries of a quadratic form, their generation by reflections and the orthogonal group $O(V,\mathfrak{Q})$ are <em>Isometries and Orthogonal Transformations</em> later in this Part, and the homogeneity of a space under its isometry group is <em>Homogeneous Spaces</em>; both are cited rather than restated. The spectral theory of the operators induced on a space of functions belongs to Part III and is not developed here. No physics is invoked.</p>
 <h2 id="the-differential-as-a-bundle-operator">The Differential as a Bundle Operator</h2>
 <h3 id="the-differential-of-an-isometry">The Differential of an Isometry</h3>
@@ -125,13 +125,13 @@ $$</p>
 <p><strong>Proposition.</strong> For a connected Riemannian manifold the orbits of the isometry group are disjoint and cover $M$, each orbit is a submanifold, and the isotropy groups at two points of one orbit are conjugate, $\operatorname{Isom}_{F(p)} = F\,\operatorname{Isom}_p\,F^{-1}$. If $M$ is homogeneous with $G = \operatorname{Isom}(M, g)$ and $H = \operatorname{Isom}_p$ for a fixed $p$, then $M \cong G/H$ as a smooth manifold and the metric is $G$-invariant.</p>
 <p><strong>Proof.</strong> Two orbits are equal or disjoint because the group acts by bijections; the orbit is the image of the smooth map $F \mapsto F(p)$ from a Lie group, and it is an immersed submanifold of constant rank, hence a submanifold. The conjugation statement is $(F G F^{-1})(F p) = F p$ for $G \in \operatorname{Isom}_p$, and conversely. The identification $M \cong G/H$ is the orbit–stabiliser theorem, and the invariance of the metric is the fact that the elements of $G$ are isometries; the quotient manifold theory is that of <em>Homogeneous Spaces</em>, where the invariant metrics and the isotropy representation are developed.</p>
 <h2 id="killing-fields-as-infinitesimal-operators">Killing Fields as Infinitesimal Operators</h2>
-<h3 id="definition-and-skew-adjointness">Definition and Skew-Adjointness</h3>
+<h3 id="definition-and-anti-self-adjointness">Definition and Anti-Self-Adjointness</h3>
 <p><strong>Definition.</strong> A <strong>Killing field</strong> on $(M, g)$ is a vector field $X$ whose local flow consists of local isometries, equivalently a vector field with</p>
 <p>$$
 \mathcal{L}_X g = 0,
 $$</p>
 <p>where $\mathcal{L}_X$ is the Lie derivative. The Killing fields form a vector space $\mathfrak{k}(M, g)$, closed under the Lie bracket of vector fields.</p>
-<p><strong>Theorem.</strong> A vector field $X$ is a Killing field if and only if the endomorphism $\nabla X$ of $TM$ defined by $Y \mapsto \nabla_YX$ is skew-adjoint for the metric,</p>
+<p><strong>Theorem.</strong> A vector field $X$ is a Killing field if and only if the endomorphism $\nabla X$ of $TM$ defined by $Y \mapsto \nabla_YX$ is anti-self-adjoint for the metric,</p>
 <p>$$
 g(\nabla_YX, Z) + g(Y, \nabla_ZX) = 0 \qquad (Y, Z),
 $$</p>
@@ -140,8 +140,8 @@ $$</p>
 <p>$$
 (\mathcal{L}_Xg)(Y, Z) = X\,g(Y, Z) - g([X, Y], Z) - g(Y, [X, Z]),
 $$</p>
-<p>and substituting $X\,g(Y,Z) = g(\nabla_XY,Z)+g(Y,\nabla_XZ)$, $[X,Y] = \nabla_XY-\nabla_YX$ and $[X,Z] = \nabla_XZ-\nabla_ZX$ gives $(\mathcal{L}_Xg)(Y,Z) = g(\nabla_YX,Z)+g(Y,\nabla_ZX)$. This vanishes for all $Y, Z$ exactly when $Y \mapsto \nabla_YX$ is skew-adjoint.</p>
-<p>The skew-adjoint endomorphism $\nabla X$ is the <strong>infinitesimal operator</strong> of the isometry: it is the derivative at $t = 0$ of the differential operators $d\varphi_t$ of the flow.</p>
+<p>and substituting $X\,g(Y,Z) = g(\nabla_XY,Z)+g(Y,\nabla_XZ)$, $[X,Y] = \nabla_XY-\nabla_YX$ and $[X,Z] = \nabla_XZ-\nabla_ZX$ gives $(\mathcal{L}_Xg)(Y,Z) = g(\nabla_YX,Z)+g(Y,\nabla_ZX)$. This vanishes for all $Y, Z$ exactly when $Y \mapsto \nabla_YX$ is anti-self-adjoint.</p>
+<p>The anti-self-adjoint endomorphism $\nabla X$ is the <strong>infinitesimal operator</strong> of the isometry: it is the derivative at $t = 0$ of the differential operators $d\varphi_t$ of the flow.</p>
 <h3 id="the-flow-of-a-killing-field">The Flow of a Killing Field</h3>
 <p><strong>Theorem.</strong> Let $X$ be a complete Killing field with flow $\varphi_t$. Then every $\varphi_t$ is an isometry, the flow is a one-parameter subgroup of $\operatorname{Isom}(M, g)$, and</p>
 <p>$$
@@ -154,7 +154,7 @@ $$</p>
 \nabla_iX_j + \nabla_jX_i = 0, \qquad X_j = \sum_i g_{ji}X_i ,
 $$</p>
 <p>a linear first-order system; hence $\dim\mathfrak{k}(M,g) \le \frac{n(n+1)}{2}$, and the equality holds exactly on the spaces of constant curvature.</p>
-<p><strong>Proof.</strong> The equation is the skew-adjointness of the previous theorem written with lowered indices. A Killing field is determined by $X(p)$ and $\nabla X|_p$, and $\nabla X$ is skew-adjoint, so the values at a point span a space of dimension $n + \frac{n(n-1)}{2} = \frac{n(n+1)}{2}$; the bound follows. Equality forces the metric to be of constant curvature, the classical theorem of the maximality of the isometry group.</p>
+<p><strong>Proof.</strong> The equation is the anti-self-adjointness of the previous theorem written with lowered indices. A Killing field is determined by $X(p)$ and $\nabla X|_p$, and $\nabla X$ is anti-self-adjoint, so the values at a point span a space of dimension $n + \frac{n(n-1)}{2} = \frac{n(n+1)}{2}$; the bound follows. Equality forces the metric to be of constant curvature, the classical theorem of the maximality of the isometry group.</p>
 <h2 id="the-isotropy-representation">The Isotropy Representation</h2>
 <h3 id="the-linear-isotropy">The Linear Isotropy</h3>
 <p><strong>Theorem.</strong> For $p \in M$ the map</p>
@@ -186,7 +186,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>An isometry $F$ of a Riemannian manifold $(M, g)$ is an operator through its differential $dF : TM \to TM$, a bundle isomorphism that restricts to a linear isometry on each tangent space; the assignment $F \mapsto dF$ is a faithful representation of the isometry group by bundle automorphisms, an isometry being determined by its value and differential at one point. The differential preserves the Levi-Civita connection, the geodesics, the exponential map, the curvature tensor and the volume form up to the sign of the orientation, and it conjugates the holonomy group at a point to that at the image point.</p>
 <p>The isometry group, with the compact-open topology, is a Lie group by the theorem of Myers–Steenrod, its Lie algebra being that of the Killing fields; it is compact for a compact manifold and acts properly for a proper one. Its orbits are the components of the space under the symmetries, its isotropy group at a point acts linearly on the tangent space by the injective <strong>linear isotropy representation</strong> into the orthogonal group, and a manifold on which the action is transitive is the homogeneous space $G/H$ with an invariant metric, the isotropy representation being the adjoint action on the complement.</p>
-<p>A Killing field is a vector field with $\mathcal{L}_Xg = 0$, equivalently a field whose covariant derivative $\nabla X$ is skew-adjoint; its flow is a one-parameter group of isometries, and $\nabla X$ is the infinitesimal operator of that group, so the Lie algebra of the isometry group is the algebra of the complete Killing fields. The Killing fields are determined at a point by $(X(p), \nabla X|_p)$ with $\nabla X$ skew, which gives the bound $\dim\operatorname{Isom}(M,g) \le \frac{n(n+1)}{2}$. The fixed set of an isometry is a disjoint union of totally geodesic submanifolds, the component through a fixed point $p$ being the exponential image of the fixed subspace of $dF_p$; an isometry fixing a point with identity differential is the identity.</p>
+<p>A Killing field is a vector field with $\mathcal{L}_Xg = 0$, equivalently a field whose covariant derivative $\nabla X$ is anti-self-adjoint; its flow is a one-parameter group of isometries, and $\nabla X$ is the infinitesimal operator of that group, so the Lie algebra of the isometry group is the algebra of the complete Killing fields. The Killing fields are determined at a point by $(X(p), \nabla X|_p)$ with $\nabla X$ anti-Hermitian, which gives the bound $\dim\operatorname{Isom}(M,g) \le \frac{n(n+1)}{2}$. The fixed set of an isometry is a disjoint union of totally geodesic submanifolds, the component through a fixed point $p$ being the exponential image of the fixed subspace of $dF_p$; an isometry fixing a point with identity differential is the identity.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -242,7 +242,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\nabla X$, $\nabla X \in \mathfrak{so}(TM, g)$</td>
-<td>Skew-adjoint infinitesimal operator of the Killing field</td>
+<td>Anti-self-adjoint infinitesimal operator of the Killing field</td>
 </tr>
 <tr>
 <td>$\nabla_iX_j + \nabla_jX_i = 0$</td>

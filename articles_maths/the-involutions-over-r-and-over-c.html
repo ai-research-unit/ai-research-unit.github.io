@@ -71,14 +71,14 @@
         <h1 id="the-involutions-over-math0-and-over-math1"><strong>The Involutions over $\mathbb{R}$ and over $\mathbb{C}$</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p><strong>An involution of the algebra is a map of order two that either preserves or reverses the product, and the classification of those maps is short: two of the reversing kind over either field, and a signature's worth of the preserving kind.</strong></p>
-<p>The article separates the two kinds, classifies the involutions of $M_n(\mathbb{C})$ and of $M_n(\mathbb{R})$ up to conjugacy, and records the split that every involution produces, the fixed part and the anti-fixed part. It counts the two parts: for the transpose the symmetric half has dimension $n(n+1)/2$ and the skew half $n(n-1)/2$, while for the symplectic involution the two dimensions are exchanged and the fixed half has dimension $n(n-1)/2$. It assumes <em>The Ideals, the Centre and the Simplicity of $M_n(\mathbb{C})$</em> for the inner automorphisms and <em>The Two Base Fields: $M_n(\mathbb{R})$ inside $M_n(\mathbb{C})$</em> for the antilinear structures. It defers the two halves themselves to <em>The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric</em> and to <em>The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian</em>, and the multiplication tables to <em>The Four Multiplication Tables: $SS$, $SK$, $KS$, $KK$</em>.</p>
+<p>The article separates the two kinds, classifies the involutions of $M_n(\mathbb{C})$ and of $M_n(\mathbb{R})$ up to conjugacy, and records the split that every involution produces, the fixed part and the anti-fixed part. It counts the two parts: for the transpose the symmetric half has dimension $n(n+1)/2$ and the anti-Hermitian half $n(n-1)/2$, while for the symplectic involution the two dimensions are exchanged and the fixed half has dimension $n(n-1)/2$. It assumes <em>The Ideals, the Centre and the Simplicity of $M_n(\mathbb{C})$</em> for the inner automorphisms and <em>The Two Base Fields: $M_n(\mathbb{R})$ inside $M_n(\mathbb{C})$</em> for the antilinear structures. It defers the two halves themselves to <em>The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric</em> and to <em>The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian</em>, and the multiplication tables to <em>The Four Multiplication Tables: $SS$, $SK$, $KS$, $KK$</em>.</p>
 <h2 id="two-kinds-of-involution">Two Kinds of Involution</h2>
 <p><strong>An involution is a bijective linear map $\sigma$ of the algebra with $\sigma^{2}=\mathrm{id}$ which is either an automorphism or an anti-automorphism.</strong> The two cases are</p>
 <p>$$
 \sigma(AB)=\sigma(A)\sigma(B)\quad\text{(automorphism)},\qquad
 \sigma(AB)=\sigma(B)\sigma(A)\quad\text{(anti-automorphism)} .
 $$</p>
-<p>An anti-automorphism of order two is what the word <em>involution</em> names in the theory of algebras with a form, and it is the kind that produces the symmetric and the skew halves. An automorphism of order two produces a grading instead.</p>
+<p>An anti-automorphism of order two is what the word <em>involution</em> names in the theory of algebras with a form, and it is the kind that produces the symmetric and the anti-Hermitian halves. An automorphism of order two produces a grading instead.</p>
 <p><strong>The first kind is complex-linear and the second kind is conjugate-linear.</strong> Write $\sigma$ for an involution. If $\sigma(zA)=z\sigma(A)$ for all complex $z$, the involution is of the <strong>first kind</strong>; if $\sigma(zA)=\bar z\sigma(A)$, it is of the <strong>second kind</strong>. Over $\mathbb{R}$ there is only the first kind, since the scalars are real. Over $\mathbb{C}$ both occur, and the second kind is the one that carries the Hermitian structure.</p>
 <p><strong>The three examples that matter are the transpose, the conjugate transpose and the symplectic transpose.</strong> They are</p>
 <p>$$
@@ -90,7 +90,7 @@ $$</p>
 <p>$$
 \sigma(A)=SA^{\mathsf T}S^{-1},\qquad S^{\mathsf T}=S\ \text{or}\ S^{\mathsf T}=-S .
 $$</p>
-<p><strong>There are exactly two classes, and the second needs $n$ even.</strong> If $S$ is symmetric and invertible, a change of basis carries it to the identity and $\sigma$ to the transpose. If $S$ is skew and invertible, then $n$ is even, because a skew matrix of odd size has vanishing determinant; a change of basis carries $S$ to $J$ and $\sigma$ to the symplectic transpose. So the classes are</p>
+<p><strong>There are exactly two classes, and the second needs $n$ even.</strong> If $S$ is symmetric and invertible, a change of basis carries it to the identity and $\sigma$ to the transpose. If $S$ is antisymmetric and invertible, then $n$ is even, because an antisymmetric matrix of odd size has vanishing determinant; a change of basis carries $S$ to $J$ and $\sigma$ to the symplectic transpose. So the classes are</p>
 <p>$$
 \text{transpose type},\qquad \text{symplectic type}\ (n\ \text{even}),
 $$</p>
@@ -142,14 +142,14 @@ M_n(\mathbb{C})=\operatorname{Fix}\sigma\oplus\operatorname{Anti}\sigma,\qquad
 A=\tfrac12(A+\sigma A)+\tfrac12(A-\sigma A).
 $$</p>
 <p>The two projections $\tfrac12(\mathrm{I}\pm\sigma)$ are idempotent and add to the identity. They are linear maps on the algebra, not elements of it, and they are the only two projections produced by $\sigma$ alone.</p>
-<p><strong>For the transpose the halves are the symmetric and the skew matrices.</strong> With $\sigma(A)=A^{\mathsf T}$,</p>
+<p><strong>For the transpose the halves are the symmetric and the antisymmetric matrices.</strong> With $\sigma(A)=A^{\mathsf T}$,</p>
 <p>$$
 \operatorname{Sym}_n=\{A:A^{\mathsf T}=A\},\qquad \operatorname{Skew}_n=\{A:A^{\mathsf T}=-A\}.
 $$</p>
 <p>The first is closed under the product and the second is closed under the commutator; this is the whole content of the following two articles and the source of the four multiplication tables.</p>
-<p><strong>For the symplectic involution the halves are the two symplectic symmetry classes.</strong> With $\sigma(A)=JA^{\mathsf T}J^{-1}$, the fixed part is $\{A:AJ\ \text{skew}\}$ and the anti-fixed part is $\{A:AJ\ \text{symmetric}\}$, and the two have the dimensions $n(n-1)/2$ and $n(n+1)/2$. So the symplectic involution exchanges the dimensions that the transpose gives, and the exchange is the reason a symplectic form has no preferred half of larger size.</p>
+<p><strong>For the symplectic involution the halves are the two symplectic symmetry classes.</strong> With $\sigma(A)=JA^{\mathsf T}J^{-1}$, the fixed part is $\{A:AJ\ \text{anti-Hermitian}\}$ and the anti-fixed part is $\{A:AJ\ \text{symmetric}\}$, and the two have the dimensions $n(n-1)/2$ and $n(n+1)/2$. So the symplectic involution exchanges the dimensions that the transpose gives, and the exchange is the reason a symplectic form has no preferred half of larger size.</p>
 <h2 id="the-two-dimensions">The Two Dimensions</h2>
-<p><strong>The symmetric half has dimension $n(n+1)/2$ and the skew half $n(n-1)/2$.</strong> The symmetric matrices are determined by their entries on and above the diagonal, and there are $n(n+1)/2$ of those; the skew matrices are determined by their entries above the diagonal, and there are $n(n-1)/2$. The sum is</p>
+<p><strong>The symmetric half has dimension $n(n+1)/2$ and the antisymmetric half $n(n-1)/2$.</strong> The symmetric matrices are determined by their entries on and above the diagonal, and there are $n(n+1)/2$ of those; the antisymmetric matrices are determined by their entries above the diagonal, and there are $n(n-1)/2$. The sum is</p>
 <p>$$
 \frac{n(n+1)}{2}+\frac{n(n-1)}{2}=n^{2},
 $$</p>
@@ -206,12 +206,12 @@ $$</p>
 <p>The fixed set of the transpose inside $UT_n$ is therefore the diagonal, of dimension $n$, and the anti-fixed set is $\{0\}$: a triangular matrix that is antisymmetric is zero, since its diagonal entries vanish and its entries above the diagonal are the negatives of entries below it, which are absent.</p>
 <p><strong>The symmetric half of the algebra is the natural model of the carrier space of $UT_n$, not its product.</strong> Both spaces have dimension $n(n+1)/2$, and the projection $\tfrac12(\mathrm{I}+{}^{\mathsf T})$ maps $M_n(\mathbb{C})$ onto $\operatorname{Sym}_n$. That projection is a linear map of the algebra and it is not of the form $A\mapsto eA$ for an element $e$, which is the precise reason $UT_n$ is not a Peirce corner of the transpose split; see <em>$UT_n$ as the Complement of the Antisymmetric Part (Transpose Case)</em>.</p>
 <h2 id="the-case-math167">The Case $n=2$</h2>
-<p><strong>At $n=2$ the transpose split is $4=3+1$.</strong> The symmetric half is spanned by $\mathrm{I}$, $\sigma_3=\operatorname{diag}(1,-1)$, $\sigma_1$, and the skew half by the single matrix $i\sigma_2$, the rotation. So</p>
+<p><strong>At $n=2$ the transpose split is $4=3+1$.</strong> The symmetric half is spanned by $\mathrm{I}$, $\sigma_3=\operatorname{diag}(1,-1)$, $\sigma_1$, and the antisymmetric half by the single matrix $i\sigma_2$, the rotation. So</p>
 <p>$$
 \operatorname{Sym}_2=\operatorname{span}\{\mathrm{I},\sigma_1,\sigma_3\},\qquad \operatorname{Skew}_2=\mathbb{C}\cdot i\sigma_2 ,
 $$</p>
 <p>and the three Pauli matrices together with $\mathrm{I}$ are a basis of the algebra in which the split is visible.</p>
-<p><strong>At $n=2$ the symplectic type exists and is not conjugate to the transpose.</strong> Since $2$ is even both classes of the reversing kind are present. With $J=i\sigma_2$ the symplectic involution $A\mapsto JA^{\mathsf T}J^{-1}$ has a fixed half of dimension $1$ and an anti-fixed half of dimension $3$. A conjugation $A\mapsto TAT^{-1}$ carries $SA^{\mathsf T}S^{-1}$ to $(TST^{\mathsf T})A^{\mathsf T}(TST^{\mathsf T})^{-1}$, which keeps $S$ symmetric or skew, so no inner automorphism exchanges the two classes.</p>
+<p><strong>At $n=2$ the symplectic type exists and is not conjugate to the transpose.</strong> Since $2$ is even both classes of the reversing kind are present. With $J=i\sigma_2$ the symplectic involution $A\mapsto JA^{\mathsf T}J^{-1}$ has a fixed half of dimension $1$ and an anti-fixed half of dimension $3$. A conjugation $A\mapsto TAT^{-1}$ carries $SA^{\mathsf T}S^{-1}$ to $(TST^{\mathsf T})A^{\mathsf T}(TST^{\mathsf T})^{-1}$, which keeps $S$ symmetric or anti-Hermitian, so no inner automorphism exchanges the two classes.</p>
 <h2 id="summary">Summary</h2>
 <p>An involution is an automorphism or an anti-automorphism of order two, of the first kind if complex-linear and of the second if conjugate-linear. The reversing complex-linear involutions of $M_n(\mathbb{C})$ are the transpose and, for even $n$, the symplectic transpose; the preserving ones are inner by $\operatorname{diag}(\mathrm{I}_p,-\mathrm{I}_{n-p})$, $n+1$ classes; the antilinear reversing ones are the Hermitian structures, $n+1$ classes indexed by signature; the antilinear preserving ones are the two real structures. Every involution splits the algebra into a fixed and an anti-fixed part by $\tfrac12(\mathrm{I}\pm\sigma)$. The transpose gives halves of dimensions $n(n+1)/2$ and $n(n-1)/2$, the symplectic involution exchanges them, and the conjugate transpose gives two halves of real dimension $n^{2}$ whatever the signature. Transposition exchanges $UT_n$ with $LT_n$ and fixes only the diagonal.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>

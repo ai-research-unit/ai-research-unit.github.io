@@ -91,7 +91,7 @@ $$</p>
 <p><strong>The matrix units pair only with their transposes.</strong> $\langle E_{ij},E_{kl}\rangle=\delta_{il}\delta_{jk}$, so the basis $\{E_{ij}\}$ is not orthogonal but the pairing is a perfect matching: $E_{ij}$ pairs with $E_{ji}$ and with nothing else. Its Gram matrix is the permutation matrix of the involution $(i,j)\mapsto(j,i)$, of determinant $\pm1$.</p>
 <p><strong>Nondegeneracy makes the form a duality.</strong> The map $X\mapsto\langle X,\cdot\rangle$ is an isomorphism of $M_n(\mathbb{R})$ with its dual, and it is the reason why the orthogonal complement of a subspace has the complementary dimension, $\dim V^{\perp}=n^{2}-\dim V$.</p>
 <h2 id="the-two-halves-are-orthogonal">The Two Halves Are Orthogonal</h2>
-<p><strong>Proposition.</strong> $\operatorname{tr}(SK)=0$ for every symmetric $S$ and every skew $K$.</p>
+<p><strong>Proposition.</strong> $\operatorname{tr}(SK)=0$ for every symmetric $S$ and every antisymmetric $K$.</p>
 <p><em>Proof.</em> $\operatorname{tr}(SK)=\operatorname{tr}((SK)^{\mathsf T})=\operatorname{tr}(K^{\mathsf T}S^{\mathsf T})=\operatorname{tr}(-KS)=-\operatorname{tr}(KS)$, and $\operatorname{tr}(KS)=\operatorname{tr}(SK)$, so the number equals its own negative.</p>
 <p><strong>Measured on $100$ random pairs at each order.</strong> At $n=2,3,4,5$ the value of $\operatorname{tr}(SK)$ differed from zero in $0$ cases out of $100$ at each order.</p>
 <p><strong>So each half lies in the orthogonal complement of the other.</strong> $\operatorname{Sym}_n\subseteq\operatorname{Skew}_n^{\perp}$ and $\operatorname{Skew}_n\subseteq\operatorname{Sym}_n^{\perp}$. Since the dimensions add to $n^{2}$,</p>
@@ -119,7 +119,7 @@ $$</p>
 <p>$$
 \langle S,S\rangle=\operatorname{tr}(S^{2})=\sum_{i,j}S_{ij}S_{ji}=\sum_{i,j}S_{ij}^{2}\ge0,
 $$</p>
-<p>with equality exactly when $S=0$. For skew $K$,</p>
+<p>with equality exactly when $S=0$. For anti-Hermitian $K$,</p>
 <p>$$
 \langle K,K\rangle=\operatorname{tr}(K^{2})=-\sum_{i,j}K_{ij}^{2}\le0,
 $$</p>
@@ -148,7 +148,7 @@ $$</p>
 \langle AB,C\rangle_{\mathrm{HS}}=\operatorname{tr}((E_{11})^{\mathsf T})=1,\qquad \langle A,BC\rangle_{\mathrm{HS}}=\operatorname{tr}(E_{21}E_{21})=0,
 $$</p>
 <p>so moving the factor across the comma changes the value. So the Hilbert–Schmidt form is an inner product on the algebra and not a form of the algebra.</p>
-<p><strong>The two halves are still orthogonal for it.</strong> $\operatorname{tr}(S^{\mathsf T}K)=\operatorname{tr}(SK)=0$ for symmetric $S$ and skew $K$, so the orthogonal complement statement survives. What fails is the sign: the form is positive definite on both halves, so the split is a decomposition into two positive definite pieces and not into a positive and a negative one.</p>
+<p><strong>The two halves are still orthogonal for it.</strong> $\operatorname{tr}(S^{\mathsf T}K)=\operatorname{tr}(SK)=0$ for symmetric $S$ and antisymmetric $K$, so the orthogonal complement statement survives. What fails is the sign: the form is positive definite on both halves, so the split is a decomposition into two positive definite pieces and not into a positive and a negative one.</p>
 <p><strong>What the two forms exchange is exactly the pair of properties.</strong> The trace form is invariant and indefinite. The Hilbert–Schmidt form is positive definite and not invariant. No form on $M_n(\mathbb{R})$ is both, and that dichotomy is one of the differences between the real and the complex algebra: over $\mathbb{C}$ the form $\operatorname{tr}(A^{*}B)$ is both.</p>
 <h2 id="two-complements-one-space">Two Complements, One Space</h2>
 <p><strong>The word complement names two different things.</strong> The direct sum $M_n(\mathbb{R})=\operatorname{Sym}_n\oplus\operatorname{Skew}_n$ is a statement about dimensions and intersection. The orthogonal decomposition for the trace form is a statement about the pairing. In this case the two coincide, and the coincidence is what makes the two halves canonical.</p>

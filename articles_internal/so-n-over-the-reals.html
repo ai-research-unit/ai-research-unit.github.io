@@ -118,13 +118,13 @@ $$</p>
 <p><strong>Lemma.</strong> $\mathfrak{so}(n)$ is closed under the commutator.</p>
 <p><strong>Proof.</strong> If $X^{\mathsf T}=-X$ and $Y^{\mathsf T}=-Y$ then $[X,Y]^{\mathsf T}=Y^{\mathsf T}X^{\mathsf T}-X^{\mathsf T}Y^{\mathsf T}=YX-XY=-[X,Y]$.</p>
 <p>The same computation at a general point $A$ gives the tangent space $A\,\mathfrak{so}(n)$, which is the statement that $\mathrm{SO}(n)$ is a Lie group with that algebra and that left translation moves the algebra around.</p>
-<p><strong>The dimension is then the count of skew matrices.</strong> A skew matrix is free above the diagonal and determined below it, and its diagonal vanishes. So</p>
+<p><strong>The dimension is then the count of antisymmetric matrices.</strong> An antisymmetric matrix is free above the diagonal and determined below it, and its diagonal vanishes. So</p>
 <p>$$
 \dim\mathrm{SO}(n)=\dim\mathfrak{so}(n)=\frac{n(n-1)}{2}.
 $$</p>
 <p>The same number comes out of the equations. Orthogonality is a symmetric matrix equation, so it imposes $n(n+1)/2$ scalar conditions on the $n^{2}$ entries, and the determinant is then constant on the solutions; hence $n^{2}-n(n+1)/2=n(n-1)/2$. The two counts must agree, and they do, which is the standard verification that the $n(n+1)/2$ equations are independent.</p>
 <h3 id="the-basis-and-the-count">The Basis and the Count</h3>
-<p>Write $E_{ij}$ for the matrix with a single $1$ in row $i$, column $j$. The skew matrices have the basis</p>
+<p>Write $E_{ij}$ for the matrix with a single $1$ in row $i$, column $j$. The antisymmetric matrices have the basis</p>
 <p>$$
 X_{ij}=E_{ij}-E_{ji},\qquad 1\le i<j\le n,
 $$</p>
@@ -144,18 +144,18 @@ $$</p>
 <p>$$
 [X_{ij},X_{kl}]=\delta_{jk}X_{il}-\delta_{ik}X_{jl}-\delta_{jl}X_{ik}+\delta_{il}X_{jk}.
 $$</p>
-<p>The Killing form is $\kappa(X,Y)=(n-2)\operatorname{tr}(XY)$ for $n\ge3$, negative definite because $\operatorname{tr}(XY)=-\operatorname{tr}(X^{\mathsf T}Y)$ is minus the Hilbert–Schmidt product on skew matrices. Negative definiteness of the Killing form is the algebraic form of compactness, and it is one of the two reasons the ladder behaves so well over $\mathbb{R}$.</p>
+<p>The Killing form is $\kappa(X,Y)=(n-2)\operatorname{tr}(XY)$ for $n\ge3$, negative definite because $\operatorname{tr}(XY)=-\operatorname{tr}(X^{\mathsf T}Y)$ is minus the Hilbert–Schmidt product on antisymmetric matrices. Negative definiteness of the Killing form is the algebraic form of compactness, and it is one of the two reasons the ladder behaves so well over $\mathbb{R}$.</p>
 <h3 id="the-exponential">The Exponential</h3>
-<p>The exponential of a skew matrix is a rotation, and at $n=1,2,3$ the whole of the section rests on this map:</p>
+<p>The exponential of an antisymmetric matrix is a rotation, and at $n=1,2,3$ the whole of the section rests on this map:</p>
 <p>$$
 \exp:\mathfrak{so}(n)\to\mathrm{SO}(n),
 \qquad
 \exp(X)=\sum_{k\ge0}\frac{X^{k}}{k!}.
 $$</p>
 <p><strong>Proposition.</strong> $\exp$ maps $\mathfrak{so}(n)$ into $\mathrm{SO}(n)$, and it is onto.</p>
-<p><strong>Proof of the first part.</strong> Put $A(t)=\exp(tX)$ with $X^{\mathsf T}=-X$. Then $A(t)^{\mathsf T}=\exp(tX^{\mathsf T})=\exp(-tX)=A(t)^{-1}$, so $A(t)$ is orthogonal; and $\det A(t)=\exp(t\operatorname{tr}X)=1$ because a skew matrix is traceless. The same computation gives the stronger statement that $t\mapsto A(t)$ is a one-parameter subgroup.</p>
-<p><strong>Proof of the second part.</strong> Every real matrix has a real Jordan form, and for an orthogonal matrix every block is a rotation block $R(\theta)$ or a block of signs $\pm1$; the signs come in pairs when $n$ is even, because $\det=1$. Each rotation block is $\exp(\theta J)$ with $J$ the two-dimensional generator, and each pair of $-1$ signs is $\exp(\pi J)$ in the plane of the pair. Summing the logarithms of the blocks in an orthonormal basis gives a skew matrix whose exponential is $A$. The verification below carries this construction out on one hundred random elements at $n=2,\dots,6$ and closes the error at $10^{-15}$.</p>
-<p>The exponential is not injective. At $n=2$ the kernel of the exponential is $2\pi\mathbb{Z}J$; in general two skew matrices with the same exponential differ by a sum of integral multiples of $2\pi J$, taken inside one maximal torus when the rotation angles are distinct, and the degenerate cases escape every single torus — a rotation by $\pi$ in several planes has logarithms whose planes need not be the planes of the rotation. Surjectivity is therefore a statement about images of lines, not about injectivity.</p>
+<p><strong>Proof of the first part.</strong> Put $A(t)=\exp(tX)$ with $X^{\mathsf T}=-X$. Then $A(t)^{\mathsf T}=\exp(tX^{\mathsf T})=\exp(-tX)=A(t)^{-1}$, so $A(t)$ is orthogonal; and $\det A(t)=\exp(t\operatorname{tr}X)=1$ because an antisymmetric matrix is traceless. The same computation gives the stronger statement that $t\mapsto A(t)$ is a one-parameter subgroup.</p>
+<p><strong>Proof of the second part.</strong> Every real matrix has a real Jordan form, and for an orthogonal matrix every block is a rotation block $R(\theta)$ or a block of signs $\pm1$; the signs come in pairs when $n$ is even, because $\det=1$. Each rotation block is $\exp(\theta J)$ with $J$ the two-dimensional generator, and each pair of $-1$ signs is $\exp(\pi J)$ in the plane of the pair. Summing the logarithms of the blocks in an orthonormal basis gives an antisymmetric matrix whose exponential is $A$. The verification below carries this construction out on one hundred random elements at $n=2,\dots,6$ and closes the error at $10^{-15}$.</p>
+<p>The exponential is not injective. At $n=2$ the kernel of the exponential is $2\pi\mathbb{Z}J$; in general two antisymmetric matrices with the same exponential differ by a sum of integral multiples of $2\pi J$, taken inside one maximal torus when the rotation angles are distinct, and the degenerate cases escape every single torus — a rotation by $\pi$ in several planes has logarithms whose planes need not be the planes of the rotation. Surjectivity is therefore a statement about images of lines, not about injectivity.</p>
 <h2 id="the-dimension-ladder">The Dimension Ladder</h2>
 <p>The count $n(n-1)/2$ at the first rungs, with the general formula beside it:</p>
 <div class="table-scroll"><table>
@@ -287,7 +287,7 @@ $$</p>
 X=(\mathrm I-A)(\mathrm I+A)^{-1}=\frac{1}{1+a}\begin{pmatrix}0&-b\\ b&0\end{pmatrix}
 =\frac{t}{1+t^{2}}\begin{pmatrix}0&-1\\1&0\end{pmatrix},
 $$</p>
-<p>which for a general $n$ sends the group onto the skew matrices by a rational map, defined on the open dense set $\{\det(\mathrm I+A)\ne0\}$ and therefore missing exactly the rotations with eigenvalue $-1$. The coordinate $t$ is $\tan(\theta/2)$, since $\sin\theta/(1+\cos\theta)=\tan(\theta/2)$. <em>Rational-Chart Polar Decomposition of Complex Numbers</em> works the same chart on the unit circle of $\mathbb{C}$, and the two charts are the same map read in two algebras.</p>
+<p>which for a general $n$ sends the group onto the antisymmetric matrices by a rational map, defined on the open dense set $\{\det(\mathrm I+A)\ne0\}$ and therefore missing exactly the rotations with eigenvalue $-1$. The coordinate $t$ is $\tan(\theta/2)$, since $\sin\theta/(1+\cos\theta)=\tan(\theta/2)$. <em>Rational-Chart Polar Decomposition of Complex Numbers</em> works the same chart on the unit circle of $\mathbb{C}$, and the two charts are the same map read in two algebras.</p>
 <h3 id="the-group-is-abelian-and-every-element-is-its-own-class">The Group Is Abelian, and Every Element Is Its Own Class</h3>
 <p>$R(\theta)R(\varphi)=R(\theta+\varphi)=R(\varphi)R(\theta)$, so $\mathrm{SO}(2)$ is abelian. Three consequences follow, and all three are warnings to the reader who knows only dimension three.</p>
 <p><strong>The centre is the whole group.</strong> There is no shortage of central elements; there are no others.</p>
@@ -310,19 +310,19 @@ $$</p>
 <p><strong>No nonabelian simplicity.</strong> The algebra is a line, and a line is abelian.</p>
 <h2 id="math265-the-rotation-group-of-space">$\mathrm{SO}(3)$: The Rotation Group of Space</h2>
 <h3 id="the-lie-algebra-is-math266-with-the-cross-product">The Lie Algebra Is $\mathbb{R}^{3}$ with the Cross Product</h3>
-<p>Write a skew matrix as the hat of a vector:</p>
+<p>Write an antisymmetric matrix as the hat of a vector:</p>
 <p>$$
 \hat u=\begin{pmatrix}0&-u_3&u_2\\u_3&0&-u_1\\-u_2&u_1&0\end{pmatrix},
 \qquad u=(u_1,u_2,u_3)\in\mathbb{R}^{3}.
 $$</p>
-<p>The three coordinate hatted vectors are the basis of $\mathfrak{so}(3)$, and the map $u\mapsto\hat u$ is a linear isomorphism onto the whole algebra because a skew $3\times3$ matrix has three free entries above the diagonal. Two identities make the algebra computable:</p>
+<p>The three coordinate hatted vectors are the basis of $\mathfrak{so}(3)$, and the map $u\mapsto\hat u$ is a linear isomorphism onto the whole algebra because an antisymmetric $3\times3$ matrix has three free entries above the diagonal. Two identities make the algebra computable:</p>
 <p>$$
 \hat u\,v=u\times v,
 \qquad
 [\hat u,\hat v]=\widehat{u\times v}.
 $$</p>
 <p>The first says that the hat is the matrix of the cross product by $u$; the second says that the commutator of the algebra is the cross product of the vectors. The second is the exact statement that the Lie algebra isomorphism $\mathbb{R}^{3}\to\mathfrak{so}(3)$ is an isomorphism of algebras with the cross product as bracket, and it is the reason $\mathfrak{so}(3)$ is simple: the cross product has no invariant line.</p>
-<p><strong>Proof of the two identities.</strong> The first is a direct expansion in coordinates. For the second, take the trace of the Jacobi identity of the cross product, or expand $\hat u\hat v-\hat v\hat u$ and compare with $\widehat{u\times v}$; both matrices are skew, and the three free entries agree.</p>
+<p><strong>Proof of the two identities.</strong> The first is a direct expansion in coordinates. For the second, take the trace of the Jacobi identity of the cross product, or expand $\hat u\hat v-\hat v\hat u$ and compare with $\widehat{u\times v}$; both matrices are antisymmetric, and the three free entries agree.</p>
 <p>The Killing form is $\kappa(X,Y)=\operatorname{tr}(XY)$, since $n-2=1$, and on hatted vectors it is</p>
 <p>$$
 \operatorname{tr}(\hat u\hat v)=-2\,u\cdot v ,
@@ -522,7 +522,7 @@ $$</p>
 <p>The two angles are the complete invariant of the class, up to the exchange. Three degenerations matter.</p>
 <p><strong>Equal angles.</strong> $\theta_1=\theta_2$ gives the isoclinic rotations, the three-parameter families $L(q)$ and $R(p)$. The two families meet only at $\pm\mathrm I$.</p>
 <p><strong>One angle zero.</strong> $\theta_2=0$ gives a rotation of a single plane fixing a plane pointwise: the elements with a two-dimensional fixed space. These are the elements with eigenvalue $1$ of multiplicity two.</p>
-<p><strong>Both angles $\pi$.</strong> $\theta_1=\theta_2=\pi$ gives $-\mathrm I$, the only element of the centre besides the identity. Its preimage is not a single logarithm but a rank-two lattice: the skew matrices $\exp$ sends to $-\mathrm I$ are exactly the diagonal ones in some orthonormal basis with angles $(2k+1)\pi$ and $(2m+1)\pi$, one independent integer for each plane, together with the two ways of assigning the two angles to the two planes.</p>
+<p><strong>Both angles $\pi$.</strong> $\theta_1=\theta_2=\pi$ gives $-\mathrm I$, the only element of the centre besides the identity. Its preimage is not a single logarithm but a rank-two lattice: the antisymmetric matrices $\exp$ sends to $-\mathrm I$ are exactly the diagonal ones in some orthonormal basis with angles $(2k+1)\pi$ and $(2m+1)\pi$, one independent integer for each plane, together with the two ways of assigning the two angles to the two planes.</p>
 <p>The trace is $2\cos\theta_1+2\cos\theta_2$ and does not separate the class: the two angles are two numbers and the trace is one. This is the quantitative form of the statement that dimension four has more classes than the trace can see.</p>
 <h3 id="the-centre-the-torus-and-the-weyl-group">The Centre, the Torus and the Weyl Group</h3>
 <p>The maximal torus is the group of block-diagonal matrices with two independent rotation blocks,</p>
@@ -647,7 +647,7 @@ $$</p>
 \qquad
 \dim=10-4=6 .
 $$</p>
-<p>The first is the transitivity on the sphere, the same statement as at every rung. The second is the space of orthogonal complex structures on $\mathbb{R}^{5}$ that leave a chosen line out, and it is the twistor space of $S^{4}$: the fibration $\mathbb{CP}^{3}\to S^{4}$ has fibre $\mathbb{CP}^{1}=S^{2}$, and $2+4=6$. The identification $\mathrm{U}(2)\subset\mathrm{SO}(5)$ is the one through $\mathbb{C}^{2}\oplus\mathbb{R}$, and the verification confirms its dimension as the nullspace of the equations $XJ=JX$ on the skew matrices.</p>
+<p>The first is the transitivity on the sphere, the same statement as at every rung. The second is the space of orthogonal complex structures on $\mathbb{R}^{5}$ that leave a chosen line out, and it is the twistor space of $S^{4}$: the fibration $\mathbb{CP}^{3}\to S^{4}$ has fibre $\mathbb{CP}^{1}=S^{2}$, and $2+4=6$. The identification $\mathrm{U}(2)\subset\mathrm{SO}(5)$ is the one through $\mathbb{C}^{2}\oplus\mathbb{R}$, and the verification confirms its dimension as the nullspace of the equations $XJ=JX$ on the antisymmetric matrices.</p>
 <h3 id="what-dimension-five-cannot-do">What Dimension Five Cannot Do</h3>
 <p><strong>No trace classification.</strong> Two angles and one trace, so the trace cannot separate the classes; $\operatorname{tr}A=1+2\cos\theta_1+2\cos\theta_2$, and the pair $(\theta_1,\theta_2)$ is not recoverable from it.</p>
 <p><strong>No Pfaffian.</strong> The algebra is odd-dimensional, and the polynomial of even size has no home here.</p>
@@ -719,7 +719,7 @@ $$</p>
 \qquad
 \dim\mathfrak{u}(3)=9,
 $$</p>
-<p>which the verification confirms as the nullspace dimension of the equations $XJ=JX$ on the fifteen skew matrices. The quotient is the space of orthogonal complex structures on $\mathbb{R}^{6}$:</p>
+<p>which the verification confirms as the nullspace dimension of the equations $XJ=JX$ on the fifteen antisymmetric matrices. The quotient is the space of orthogonal complex structures on $\mathbb{R}^{6}$:</p>
 <p>$$
 \mathrm{SO}(6)/\mathrm{U}(3)=\mathrm{SU}(4)/S\bigl(\mathrm{U}(3)\times\mathrm{U}(1)\bigr)=\mathbb{CP}^{3},
 \qquad
@@ -796,7 +796,7 @@ G_2=\operatorname{Stab}_{\mathrm{GL}(7)}(\varphi),
 \qquad
 G_2\subset\mathrm{SO}(7).
 $$</p>
-<p><strong>The verification.</strong> The Leibniz condition on a matrix $X$, that the derivation $X\cdot\varphi$ vanish on every triple, is a linear system of $105$ equations in the $49$ entries of $X$. Its rank is $35$, so the stabiliser has dimension $49-35=14$, and the seven basis solutions are skew, with residual $5\times10^{-16}$. The inclusion $G_2\subset\mathrm{SO}(7)$ is therefore not an extra hypothesis: it follows from the form, because the stabiliser of a generic three-form is automatically orthogonal for the metric the form determines.</p>
+<p><strong>The verification.</strong> The Leibniz condition on a matrix $X$, that the derivation $X\cdot\varphi$ vanish on every triple, is a linear system of $105$ equations in the $49$ entries of $X$. Its rank is $35$, so the stabiliser has dimension $49-35=14$, and the seven basis solutions are antisymmetric, with residual $5\times10^{-16}$. The inclusion $G_2\subset\mathrm{SO}(7)$ is therefore not an extra hypothesis: it follows from the form, because the stabiliser of a generic three-form is automatically orthogonal for the metric the form determines.</p>
 <p><strong>The quotient.</strong> The action of $G_2$ on the unit sphere is transitive with stabiliser $\mathrm{SU}(3)$, so</p>
 <p>$$
 S^{6}=G_{2}/\mathrm{SU}(3),
@@ -859,7 +859,7 @@ $$</p>
 \qquad
 \dim\mathrm{SO}(8)/\mathrm{U}(4)=28-16=12 ,
 $$</p>
-<p>which the verification confirms as the nullspace dimension of $XJ=JX$ on the skew matrices, sixteen for $n=8$ against four and nine at $n=4$ and $n=6$.</p>
+<p>which the verification confirms as the nullspace dimension of $XJ=JX$ on the antisymmetric matrices, sixteen for $n=8$ against four and nine at $n=4$ and $n=6$.</p>
 <h3 id="the-centre-the-involutions-and-the-topology_1">The Centre, the Involutions and the Topology</h3>
 <p>The centre is $\{\pm\mathrm I\}$, of order two. The involutions form five classes, with fixed space of dimension $8$, $6$, $4$, $2$ and $0$, the last being $-\mathrm I$. The fundamental group is $\mathbb{Z}/2$, the cover is $\mathrm{Spin}(8)$, which is simply connected with centre $\mathbb{Z}/2\times\mathbb{Z}/2$, and $\pi_3=\mathbb{Z}$.</p>
 <h3 id="what-dimension-eight-cannot-do">What Dimension Eight Cannot Do</h3>
@@ -1001,8 +1001,8 @@ $$</p>
 <p><strong>The small cases.</strong> At $n=1$ the empty product is the identity, zero reflections. At $n=2$ every rotation is the product of exactly two reflections, $R(2\varphi)=\sigma_{\varphi}\sigma_{0}$, where $\sigma_{\varphi}$ is the reflection in the line at angle $\varphi$. At $n=3$ every rotation is the product of two half-turns about perpendicular axes, which is the composition theorem of the mechanics texts. The verification builds the factorisation for twenty random elements at $n=2,\dots,5$ and finds exactly two factors at $n=2$ and $n=3$, four at $n=4$ and $n=5$, always even, and reconstructs the matrix to machine accuracy.</p>
 <p><strong>The minimal count is not the theorem.</strong> For a given element the minimal number of reflections can be smaller; the general lower bound is the codimension of the fixed space, and the even-parity constraint in $\mathrm{SO}(n)$ is the only obstruction beyond it.</p>
 <h3 id="the-pfaffian-in-even-dimension">The Pfaffian in Even Dimension</h3>
-<p>On the skew matrices of even size there is a polynomial whose square is the determinant, and it is the invariant that replaces the determinant on the algebra.</p>
-<p><strong>Proposition.</strong> For skew $K$ of size $2r$ there is a polynomial $\operatorname{Pf}$ with</p>
+<p>On the antisymmetric matrices of even size there is a polynomial whose square is the determinant, and it is the invariant that replaces the determinant on the algebra.</p>
+<p><strong>Proposition.</strong> For anti-Hermitian $K$ of size $2r$ there is a polynomial $\operatorname{Pf}$ with</p>
 <p>$$
 \operatorname{Pf}(K)^{2}=\det K,
 \qquad
@@ -1014,7 +1014,7 @@ $$</p>
 =k_{12}k_{34}-k_{13}k_{24}+k_{14}k_{23}.
 $$</p>
 <p>The verification computes the Pfaffian by the recursive expansion and checks the identity $\det K=\operatorname{Pf}(K)^{2}$ at sizes two, four and six, with residuals at $10^{-15}$.</p>
-<p><strong>Why it belongs to this ladder.</strong> The Pfaffian is the invariant that detects the connected components of the space of skew matrices with a given rank, and it is the reason the real logarithms of a rotation can be normalised: on each rotation block the angle is only defined up to sign, and the Pfaffian of the corresponding $2\times2$ block is the sine of that angle, which flips sign with the angle. The complex article uses the same polynomial for the same reason.</p>
+<p><strong>Why it belongs to this ladder.</strong> The Pfaffian is the invariant that detects the connected components of the space of antisymmetric matrices with a given rank, and it is the reason the real logarithms of a rotation can be normalised: on each rotation block the angle is only defined up to sign, and the Pfaffian of the corresponding $2\times2$ block is the sine of that angle, which flips sign with the angle. The complex article uses the same polynomial for the same reason.</p>
 <h3 id="topology">Topology</h3>
 <p>The topology of the ladder is unusually well understood, and four statements cover it.</p>
 <p><strong>Connectedness and components.</strong> $\mathrm{SO}(n)$ is connected and $\mathrm{O}(n)$ has two components, for every $n\ge1$.</p>
@@ -1278,7 +1278,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>The general nesting, which holds at every rung.</strong> Reading $\mathbb{R}^{2n}$ as $\mathbb{C}^{n}$ gives an inclusion of the unitary group in the orthogonal group of twice the size, and the complex-linear part of the skew matrices is the unitary algebra:</p>
+<p><strong>The general nesting, which holds at every rung.</strong> Reading $\mathbb{R}^{2n}$ as $\mathbb{C}^{n}$ gives an inclusion of the unitary group in the orthogonal group of twice the size, and the complex-linear part of the antisymmetric matrices is the unitary algebra:</p>
 <p>$$
 \mathfrak{u}(n)=\{X\in\mathfrak{so}(2n):XJ=JX\},
 \qquad
@@ -1332,7 +1332,7 @@ $$</p>
 <td><em>The Rotation Group and Orientation</em>, §<em>The Orthogonal Group</em></td>
 </tr>
 <tr>
-<td>the algebra of skew matrices</td>
+<td>the algebra of antisymmetric matrices</td>
 <td><em>The Lie Algebra $\operatorname{Skew}_n\cong\mathfrak{so}(n)$</em></td>
 </tr>
 <tr>
@@ -1366,7 +1366,7 @@ $$</p>
 </tbody>
 </table></div>
 <h2 id="summary">Summary</h2>
-<p><strong>The equation is one and the ladder is nine.</strong> $A^{\mathsf T}A=\mathrm I$ with $\det A=1$ cuts a group of dimension $n(n-1)/2$ at every rung, with the same algebra of skew matrices and the same exponential, and the differences between the rungs are entirely in the four invariants: dimension, centre, classes, topology.</p>
+<p><strong>The equation is one and the ladder is nine.</strong> $A^{\mathsf T}A=\mathrm I$ with $\det A=1$ cuts a group of dimension $n(n-1)/2$ at every rung, with the same algebra of antisymmetric matrices and the same exponential, and the differences between the rungs are entirely in the four invariants: dimension, centre, classes, topology.</p>
 <p><strong>Dimension one is trivial and dimension two is abelian.</strong> Both are degenerate, and both are needed as base cases. The circle is the whole group at $n=2$, its classes are its points, and its algebra is a line.</p>
 <p><strong>Dimension three is the first simple case and the first place with an axis.</strong> Every rotation is a rotation about a line, the angle is read from the trace, the classes form the interval $[0,\pi]$, and the group is $\mathbb{RP}^{3}$ covered twice by $S^{3}$.</p>
 <p><strong>Dimension four is the only exceptional rung.</strong> The algebra splits, the group is a quotient of a product of two three-spheres, the classes need two angles, and the third homotopy group doubles. The split is the Hodge star acting on two-forms.</p>
@@ -1392,7 +1392,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathfrak{so}(n)$</td>
-<td>the skew matrices with the commutator</td>
+<td>the antisymmetric matrices with the commutator</td>
 </tr>
 <tr>
 <td>$X_{ij}$</td>
@@ -1400,7 +1400,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\hat u$</td>
-<td>the skew matrix of the cross product by $u$</td>
+<td>the antisymmetric matrix of the cross product by $u$</td>
 </tr>
 <tr>
 <td>$R(\theta)$, $R(u,\theta)$</td>
@@ -1529,7 +1529,7 @@ $$</p>
 </tr>
 <tr>
 <td>the exponential is onto</td>
-<td>skew log of $100$ random elements, $n=2,\dots,6$</td>
+<td>anti-Hermitian log of $100$ random elements, $n=2,\dots,6$</td>
 <td>$5\times10^{-15}$</td>
 </tr>
 <tr>
@@ -1590,7 +1590,7 @@ $$</p>
 <tr>
 <td>$\operatorname{Stab}_{\mathrm{GL}(7)}(\varphi)$</td>
 <td>the $105\times49$ Leibniz system</td>
-<td>rank $35$, dimension $14$, solutions skew to $5\times10^{-16}$</td>
+<td>rank $35$, dimension $14$, solutions anti-Hermitian to $5\times10^{-16}$</td>
 </tr>
 <tr>
 <td>the root lattices of $B_{3}$ and $C_{3}$</td>

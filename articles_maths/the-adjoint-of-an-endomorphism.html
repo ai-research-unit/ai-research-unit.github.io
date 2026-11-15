@@ -80,7 +80,7 @@
 $$</p>
 <p>and the assignment $A \mapsto A^{*}$ is additive, of order two and anti-multiplicative: $(A^{*})^{*} = A$, $(A+B)^{*} = A^{*}+B^{*}$, $(AB)^{*} = B^{*}A^{*}$, and $(\lambda A)^{*} = \varsigma(\lambda)A^{*}$.</p>
 <p><strong>Proof.</strong> For fixed $y$ the map $x \mapsto B(Ax,y)$ is linear; since $z \mapsto B(\cdot,z)$ is a bijection $V \to V^{*}$ by non-degeneracy, there is a unique $A^{*}y$ representing it, and uniqueness in $y$ makes $A^{*}$ a map. Linearity of $A^{*}$ and the four laws follow by uniqueness exactly as in <em>Involutions of the Endomorphism Algebra</em>, which owns them.</p>
-<p><strong>Definition.</strong> An endomorphism is <strong>self-adjoint</strong> when $A^{*}=A$, <strong>skew-adjoint</strong> when $A^{*}=-A$, and <strong>unitary</strong> when $A^{*}A = AA^{*} = \mathrm{id}$.</p>
+<p><strong>Definition.</strong> An endomorphism is <strong>self-adjoint</strong> when $A^{*}=A$, <strong>anti-self-adjoint</strong> when $A^{*}=-A$, and <strong>unitary</strong> when $A^{*}A = AA^{*} = \mathrm{id}$.</p>
 <h2 id="kernel-image-and-the-paired-complement">Kernel, Image and the Paired Complement</h2>
 <p><strong>Definition.</strong> For a subspace $U \subseteq V$ the <strong>paired complement</strong> is</p>
 <p>$$
@@ -107,7 +107,7 @@ $$</p>
 \Bigl(\sum_i A_i\Bigr)^{*} = \sum_i A_i^{*}\;} .
 $$</p>
 <p><strong>Proof.</strong> Induction on $k$ from $(AB)^{*}=B^{*}A^{*}$ and additivity.</p>
-<p><strong>Remark (the involution on the endomorphism algebra).</strong> The assignment $A \mapsto A^{*}$ is an involution of the algebra $E$ in the sense of <em>Involutive Rings</em>, of the first kind for a bilinear pairing and of the second kind for a sesquilinear one; its fixed and skew parts, its matrix description, the classification of the involutions it produces and the unitary elements are the subject of <em>Involutions of the Endomorphism Algebra</em>, and only the operator facts about a single adjoint are established here. The two articles divide the subject: that one treats the involution as a structure on the algebra, this one the adjoint as an operator on $V$.</p>
+<p><strong>Remark (the involution on the endomorphism algebra).</strong> The assignment $A \mapsto A^{*}$ is an involution of the algebra $E$ in the sense of <em>Involutive Rings</em>, of the first kind for a bilinear pairing and of the second kind for a sesquilinear one; its fixed and anti-Hermitian parts, its matrix description, the classification of the involutions it produces and the unitary elements are the subject of <em>Involutions of the Endomorphism Algebra</em>, and only the operator facts about a single adjoint are established here. The two articles divide the subject: that one treats the involution as a structure on the algebra, this one the adjoint as an operator on $V$.</p>
 <p><strong>Remark (the involution and the operator adjoint).</strong> There are two maps that the word "adjoint" names, and the article's symbol $\ast$ is the element involution on $E$ while the operator adjoint of a map on $E$ — the adjoint of $L_A$ for the natural pairing of the endomorphism algebra — is written ${}^{\dagger}$ and is <em>The Adjoint of the Left Multiplication on a Linear Space</em>.</p>
 <h2 id="summary">Summary</h2>
 <p>A non-degenerate reflexive pairing $B$ on a finite-dimensional space $V$ attaches to each endomorphism $A$ its adjoint $A^{*}$, uniquely determined by $B(Ax,y) = B(x,A^{*}y)$; the assignment is additive, of order two, anti-multiplicative and $\varsigma$-semilinear, so it is an involution of the endomorphism algebra, treated as a structure in <em>Involutions of the Endomorphism Algebra</em>. As an operator the adjoint is described by the paired complement: $\ker A^{*} = (\operatorname{im}A)^{\mathrm{c}}$, $\operatorname{im}A^{*} = (\ker A)^{\mathrm{c}}$, the paired complement being the order-reversing bijection $U \mapsto U^{\mathrm{c}}$ of the subspace lattice with $\dim U^{\mathrm{c}} = n - \dim U$. Consequently the rank is preserved, invertibility corresponds, and the inverse passes to the adjoint, $(A^{-1})^{*} = (A^{*})^{-1}$; the trace, determinant and characteristic polynomial are preserved, so the spectrum of $A^{*}$ is that of $A$, and in a basis $A^{*}$ is $\Phi^{-1}A^{\mathsf{T}}\Phi$. The adjoint of a product is the product of the adjoints in the reverse order. The dual-space duality and its compatibility with the pairing duality are <em>The Involution on the Dual Operator</em>.</p>
@@ -158,7 +158,7 @@ $$</p>
 </tr>
 <tr>
 <td>$A^{*}=\pm A$</td>
-<td>self-adjoint and skew-adjoint</td>
+<td>self-adjoint and anti-self-adjoint</td>
 </tr>
 <tr>
 <td>$A^{*}A=AA^{*}=\mathrm{id}$</td>

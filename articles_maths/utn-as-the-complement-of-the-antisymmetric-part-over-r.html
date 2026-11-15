@@ -86,9 +86,9 @@ $$</p>
 <p><strong>Equal dimension is not equality.</strong> $UT_n$ contains the whole diagonal and the identity $\mathrm{I}$, and $\mathrm{I}$ is not antisymmetric. The two spaces are different subspaces of the same dimension, and the article compares them as complements rather than as subspaces.</p>
 <h2 id="the-intersection-is-zero">The Intersection Is Zero</h2>
 <p><strong>Proposition.</strong> $UT_n\cap\operatorname{Skew}_n=\{0\}$.</p>
-<p><em>Proof.</em> Let $A$ be upper triangular and skew. Skewness forces $A_{ii}=0$ and $A_{ij}=-A_{ji}$. Upper triangularity forces $A_{ij}=0$ for $i>j$. So every entry is zero: the diagonal by skewness, the lower part by triangularity, and the upper part by skewness together with the lower part.</p>
+<p><em>Proof.</em> Let $A$ be upper triangular and anti-Hermitian. Antisymmetry forces $A_{ii}=0$ and $A_{ij}=-A_{ji}$. Upper triangularity forces $A_{ij}=0$ for $i>j$. So every entry is zero: the diagonal by skewness, the lower part by triangularity, and the upper part by skewness together with the lower part.</p>
 <p><strong>The measurement confirms the zero intersection.</strong> On the union of the two bases the rank is the sum of the dimensions: $3+1=4$ at $n=2$, $6+3=9$ at $n=3$ and $10+6=16$ at $n=4$. A nonzero intersection would make the rank smaller.</p>
-<p><strong>The intersection is zero for a structural reason.</strong> A skew matrix with zero lower part is zero, because skewness turns the upper part into the lower part with a sign. An upper triangular matrix has no lower part to supply, so the two conditions cancel each other.</p>
+<p><strong>The intersection is zero for a structural reason.</strong> An antisymmetric matrix with zero lower part is zero, because skewness turns the upper part into the lower part with a sign. An upper triangular matrix has no lower part to supply, so the two conditions cancel each other.</p>
 <h2 id="the-direct-sum">The Direct Sum</h2>
 <p><strong>Theorem.</strong> $M_n(\mathbb{R})=UT_n\oplus\operatorname{Skew}_n$.</p>
 <p><em>Proof.</em> The two subspaces span a space whose dimension is the sum of their dimensions, namely $n^{2}$, and $n^{2}$ is the dimension of the algebra. So they span the algebra, and their intersection is zero.</p>
@@ -118,21 +118,21 @@ $$</p>
 <p>$$
 \operatorname{Skew}_n^{\perp}=\operatorname{Sym}_n,\qquad \operatorname{Sym}_n^{\perp}=\operatorname{Skew}_n.
 $$</p>
-<p>This is the content of <em>The Two Halves as Orthogonal Complements for the Trace Form</em>, and the proof is the identity $\operatorname{tr}(SK)=0$ for symmetric $S$ and skew $K$, together with the dimension count.</p>
+<p>This is the content of <em>The Two Halves as Orthogonal Complements for the Trace Form</em>, and the proof is the identity $\operatorname{tr}(SK)=0$ for symmetric $S$ and antisymmetric $K$, together with the dimension count.</p>
 <p><strong>$UT_n$ is not orthogonal to $\operatorname{Skew}_n$: if it were, it would equal $\operatorname{Sym}_n$.</strong> The orthogonal complement $\operatorname{Skew}_n^{\perp}$ has dimension $n(n+1)/2$, and $UT_n\subseteq\operatorname{Skew}_n^{\perp}$ would force the equality $UT_n=\operatorname{Sym}_n$ because the dimensions agree. But $E_{12}$ is upper triangular and is not symmetric, so the inclusion fails.</p>
-<p><strong>An explicit pair is not orthogonal.</strong> Take $T=E_{12}$ and $K=E_{21}-E_{12}$, which is skew. Then</p>
+<p><strong>An explicit pair is not orthogonal.</strong> Take $T=E_{12}$ and $K=E_{21}-E_{12}$, which is antisymmetric. Then</p>
 <p>$$
 TK=E_{12}E_{21}-E_{12}E_{12}=E_{11},
 $$</p>
-<p>so $\operatorname{tr}(TK)=1$. The pairing of an upper triangular matrix with a skew matrix is therefore not always zero, and the complement is not orthogonal.</p>
+<p>so $\operatorname{tr}(TK)=1$. The pairing of an upper triangular matrix with an antisymmetric matrix is therefore not always zero, and the complement is not orthogonal.</p>
 <h2 id="the-projection-along-the-antisymmetric-part">The Projection along the Antisymmetric Part</h2>
 <p><strong>Definition.</strong> Let $\pi:M_n(\mathbb{R})\to UT_n$ be the projection with kernel $\operatorname{Skew}_n$.</p>
 <p><strong>The projection has an explicit formula.</strong></p>
 <p>$$
 \pi(X)_{ii}=X_{ii},\qquad \pi(X)_{ij}=X_{ij}+X_{ji}\ (i<j),\qquad \pi(X)_{ij}=0\ (i>j).
 $$</p>
-<p><em>Proof.</em> Put $T=\pi(X)$ and $K=X-T$. For $i>j$ the entry $T_{ij}$ is zero by the formula and $K_{ij}=X_{ij}$. For $i<j$ the condition $K_{ij}=-K_{ji}$ reads $X_{ij}-T_{ij}=-X_{ji}$, hence $T_{ij}=X_{ij}+X_{ji}$. The diagonal is untouched because a skew matrix has zero diagonal.</p>
-<p><strong>Measured, the remainder is always skew.</strong> On $100$ random matrices at each of $n=2,3,4$ the part $X-\pi(X)$ was skew in $100$ cases out of $100$, and $\pi(X)$ was upper triangular in every case.</p>
+<p><em>Proof.</em> Put $T=\pi(X)$ and $K=X-T$. For $i>j$ the entry $T_{ij}$ is zero by the formula and $K_{ij}=X_{ij}$. For $i<j$ the condition $K_{ij}=-K_{ji}$ reads $X_{ij}-T_{ij}=-X_{ji}$, hence $T_{ij}=X_{ij}+X_{ji}$. The diagonal is untouched because an antisymmetric matrix has zero diagonal.</p>
+<p><strong>Measured, the remainder is always anti-Hermitian.</strong> On $100$ random matrices at each of $n=2,3,4$ the part $X-\pi(X)$ was anti-Hermitian in $100$ cases out of $100$, and $\pi(X)$ was upper triangular in every case.</p>
 <p><strong>The projection is not the symmetrisation.</strong> On the diagonal the two maps agree, because both copy $X_{ii}$. Above the diagonal they differ by a factor two, since</p>
 <p>$$
 \pi(X)_{ij}=X_{ij}+X_{ji}=2\cdot\tfrac12(X_{ij}+X_{ji}).

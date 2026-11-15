@@ -70,7 +70,7 @@
       <div class="article-body">
         <h1 id="the-spectral-theorem-the-anti-hermitian-case-and-the-reality-of-the-spectrum"><strong>The Spectral Theorem: the Anti-Hermitian Case and the Reality of the Spectrum</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p><strong>A anti-Hermitian matrix has a purely imaginary spectrum and is diagonalised by a unitary with a purely imaginary diagonal, while a real antisymmetric matrix is not diagonalisable over $\mathbb{R}$ but is orthogonally similar to a block diagonal of rotations, so its spectrum is described by a list of real angles.</strong></p>
+<p><strong>An anti-Hermitian matrix has a purely imaginary spectrum and is diagonalised by a unitary with a purely imaginary diagonal, while a real antisymmetric matrix is not diagonalisable over $\mathbb{R}$ but is orthogonally similar to a block diagonal of rotations, so its spectrum is described by a list of real angles.</strong></p>
 <p>The article proves that the anti-Hermitian matrices are exactly $i$ times the Hermitian ones, derives the purely imaginary spectrum and the diagonal form, proves the real canonical block form with its $2\times2$ rotation blocks, identifies the angles as the invariants of the orthogonal similarity class, and reads the count of blocks as the rank. It assumes <em>The Spectral Theorem: the Hermitian Case</em> for the diagonalisation and <em>The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian</em> for the half. It defers the exponential of the half to <em>The Exponential of the Antisymmetric Part: One-Parameter Rotations</em> and the compact group to <em>The Homotopy of $\mathrm{GL}_n(\mathbb{C})$ and of the Two Halves</em>.</p>
 <h2 id="the-half-and-its-spectrum">The Half and Its Spectrum</h2>
 <p><strong>The anti-Hermitian half is $i$ times the Hermitian half.</strong> If $K^{*}=-K$ then $H=iK$ satisfies</p>
@@ -92,9 +92,9 @@ $$</p>
 <p>$$
 K^{*}K=-K^{2},
 $$</p>
-<p>and $K^{*}K$ is positive semidefinite, so $K^{2}\preceq0$ and $\operatorname{tr}(K^{2})=-\|K\|^{2}\le0$. The computation confirms the inequality and the trace identity at $n=3,4$, and it is the spectral reason why a skew matrix has no nonzero idempotent.</p>
+<p>and $K^{*}K$ is positive semidefinite, so $K^{2}\preceq0$ and $\operatorname{tr}(K^{2})=-\|K\|^{2}\le0$. The computation confirms the inequality and the trace identity at $n=3,4$, and it is the spectral reason why an antisymmetric matrix has no nonzero idempotent.</p>
 <h2 id="orthogonal-diagonalisation-over-math32">Orthogonal Diagonalisation over $\mathbb{C}$</h2>
-<p><strong>The theorem.</strong> A anti-Hermitian matrix $K$ has a unitary $U$ and a real diagonal $\Theta$ with</p>
+<p><strong>The theorem.</strong> An anti-Hermitian matrix $K$ has a unitary $U$ and a real diagonal $\Theta$ with</p>
 <p>$$
 K=U(i\Theta)U^{*},\qquad \Theta=\operatorname{diag}(\theta_1,\dots,\theta_n).
 $$</p>
@@ -114,7 +114,7 @@ $$</p>
 e^{K}=U\operatorname{diag}(e^{i\theta_1},\dots,e^{i\theta_n})U^{*}
 $$</p>
 <p>is unitary. So the exponential of the anti-Hermitian half lands in the unitary group, and the angles $\theta_j$ are the arguments of the eigenvalues of the unitary matrix.</p>
-<h2 id="the-real-skew-matrices-and-the-block-form">The Real Skew Matrices and the Block Form</h2>
+<h2 id="the-real-anti-hermitian-matrices-and-the-block-form">The Real Anti-Hermitian Matrices and the Block Form</h2>
 <p><strong>A real antisymmetric matrix is anti-Hermitian and its spectrum is purely imaginary, in conjugate pairs.</strong> For $K\in\mathfrak{so}(n)$ the characteristic polynomial has real coefficients, so its roots come in conjugate pairs; since all roots are purely imaginary, the spectrum is</p>
 <p>$$
 \operatorname{Spec}(K)=\{0,\dots,0,\pm i\theta_1,\dots,\pm i\theta_m\},\qquad \theta_j>0,
@@ -124,32 +124,32 @@ $$</p>
 <p>$$
 Q^{\mathsf T}KQ=\operatorname{diag}\Big(\begin{pmatrix}0&-\theta_1\\ \theta_1&0\end{pmatrix},\dots,\begin{pmatrix}0&-\theta_m\\ \theta_m&0\end{pmatrix},0,\dots,0\Big),
 $$</p>
-<p>the block diagonal of $m$ rotation blocks and $n-2m$ zeros. The form was verified at $n=4$ by computing the eigenvalues of a random skew matrix and comparing the characteristic polynomial of the block form with $\chi_K$.</p>
-<p><strong>The matrix is not diagonalisable over $\mathbb{R}$ when $m\ge1$.</strong> A real diagonalisable matrix has a real spectrum, and a nonzero $\theta_j$ gives the nonreal eigenvalues $\pm i\theta_j$; so a real skew matrix with $m\ge1$ has no real eigenbasis. Over $\mathbb{C}$ it is diagonalisable by a unitary, as the previous section shows. So the "reality of the spectrum" is the statement that the invariant data are the real numbers $\theta_j$, not the complex eigenvalues.</p>
+<p>the block diagonal of $m$ rotation blocks and $n-2m$ zeros. The form was verified at $n=4$ by computing the eigenvalues of a random antisymmetric matrix and comparing the characteristic polynomial of the block form with $\chi_K$.</p>
+<p><strong>The matrix is not diagonalisable over $\mathbb{R}$ when $m\ge1$.</strong> A real diagonalisable matrix has a real spectrum, and a nonzero $\theta_j$ gives the nonreal eigenvalues $\pm i\theta_j$; so a real antisymmetric matrix with $m\ge1$ has no real eigenbasis. Over $\mathbb{C}$ it is diagonalisable by a unitary, as the previous section shows. So the "reality of the spectrum" is the statement that the invariant data are the real numbers $\theta_j$, not the complex eigenvalues.</p>
 <p><strong>The rank is twice the number of blocks.</strong> Each rotation block has rank two and the zero block has rank zero, so</p>
 <p>$$
 \operatorname{rank}K=2m,\qquad \dim\ker K=n-2m,
 $$</p>
-<p>which was checked at $n=4,5,6$ on random skew matrices. So a real skew matrix of odd order is singular, and the corank has the same parity as $n$.</p>
+<p>which was checked at $n=4,5,6$ on random antisymmetric matrices. So a real antisymmetric matrix of odd order is singular, and the corank has the same parity as $n$.</p>
 <h2 id="the-angles-as-the-invariants">The Angles as the Invariants</h2>
-<p><strong>The angles are determined by the spectrum and determine the orthogonal class.</strong> Two real skew matrices are orthogonally similar exactly when they have the same list $\theta_1\ge\dots\ge\theta_m>0$ together with the same $n$, by the uniqueness of the canonical form. So</p>
+<p><strong>The angles are determined by the spectrum and determine the orthogonal class.</strong> Two real antisymmetric matrices are orthogonally similar exactly when they have the same list $\theta_1\ge\dots\ge\theta_m>0$ together with the same $n$, by the uniqueness of the canonical form. So</p>
 <p>$$
 \mathfrak{so}(n)\big/\mathrm{O}(n)\ \longleftrightarrow\ \{\theta_1\ge\dots\ge\theta_m>0,\ 2m\le n\},
 $$</p>
-<p>and the angles are the complete invariants of the orthogonal similarity class. The statement was verified at $n=4$ by comparing the sorted moduli of the eigenvalues of random skew matrices.</p>
+<p>and the angles are the complete invariants of the orthogonal similarity class. The statement was verified at $n=4$ by comparing the sorted moduli of the eigenvalues of random antisymmetric matrices.</p>
 <p><strong>The angles are the lengths of the rotation in each invariant plane.</strong> The block $\begin{pmatrix}0&-\theta\\ \theta&0\end{pmatrix}$ rotates the plane by the angle $\theta$ in the sense of the exponential, so the $\theta_j$ are the angular velocities of the $m$ independent rotations that the matrix generates. So the canonical form exhibits the matrix as $m$ independent planar rotations plus a kernel, and the angles are their rates.</p>
 <p><strong>The Frobenius norm is the Euclidean norm of the angles.</strong> Since the block form is orthogonal, $\|K\|^{2}=\|Q^{\mathsf T}KQ\|^{2}$, and each rotation block has norm $2\theta_j^{2}$, so</p>
 <p>$$
 \|K\|^{2}=2\sum_{j=1}^{m}\theta_j^{2},
 $$</p>
-<p>which was verified at $n=4,5$. So the Hilbert–Schmidt norm of a skew matrix is determined by the angles, and the identity is the spectral form of $\operatorname{tr}(K^{2})=-\|K\|^{2}$.</p>
+<p>which was verified at $n=4,5$. So the Hilbert–Schmidt norm of an antisymmetric matrix is determined by the angles, and the identity is the spectral form of $\operatorname{tr}(K^{2})=-\|K\|^{2}$.</p>
 <p><strong>The Pfaffian and the determinant are the two polynomial invariants.</strong> For even $n$ the determinant is</p>
 <p>$$
 \det K=\prod_{j=1}^{m}\theta_j^{2}\ \ge0,
 $$</p>
-<p>the square of the Pfaffian, and the Pfaffian itself is the polynomial of degree $m$ whose square is the determinant. So the top-degree invariant of a skew matrix is a perfect square, which is the algebraic shadow of the pairing of the angles.</p>
+<p>the square of the Pfaffian, and the Pfaffian itself is the polynomial of degree $m$ whose square is the determinant. So the top-degree invariant of an antisymmetric matrix is a perfect square, which is the algebraic shadow of the pairing of the angles.</p>
 <h2 id="the-case-math92">The Case $n=2$</h2>
-<p><strong>At $n=2$ the skew half is one line and the angle is its length.</strong> Every real skew matrix is</p>
+<p><strong>At $n=2$ the antisymmetric half is one line and the angle is its length.</strong> Every real antisymmetric matrix is</p>
 <p>$$
 K=\begin{pmatrix}0&-\theta\\ \theta&0\end{pmatrix}=\theta J,\qquad \theta\in\mathbb{R},
 $$</p>
@@ -159,9 +159,9 @@ $$</p>
 \{K:K^{*}=-K\}=\{i(a\sigma_1+b\sigma_2+c\sigma_3):a,b,c\in\mathbb{R}\},
 $$</p>
 <p>with $K^{2}=-(a^{2}+b^{2}+c^{2})\mathrm{I}$ and $\operatorname{Spec}(K)=\{\pm i\sqrt{a^{2}+b^{2}+c^{2}}\}$. The computation confirms the square and the spectrum, and the single angle is the Euclidean norm of the triple.</p>
-<p><strong>The biquaternion reading gives the angle to the rotation direction.</strong> The line $\mathbb{R}J$ is the antisymmetric half of $M_2(\mathbb{R})$, and in the biquaternion frame the element $i\tilde{Ζ}$ is a pure root, whose square is $-\mathrm{I}$; so the anti-Hermitian elements of square $-1$ are the pure roots $\vec{Ζ}$ rotated by the angle $\pi/2$. So the spectrum theorem at $n=2$ is the statement that the pure roots of the biquaternion algebra form the unit sphere of the three-dimensional anti-Hermitian space, and the angle of a skew element is its distance from the origin in that sphere.</p>
+<p><strong>The biquaternion reading gives the angle to the rotation direction.</strong> The line $\mathbb{R}J$ is the antisymmetric half of $M_2(\mathbb{R})$, and in the biquaternion frame the element $i\tilde{Ζ}$ is a pure root, whose square is $-\mathrm{I}$; so the anti-Hermitian elements of square $-1$ are the pure roots $\vec{Ζ}$ rotated by the angle $\pi/2$. So the spectrum theorem at $n=2$ is the statement that the pure roots of the biquaternion algebra form the unit sphere of the three-dimensional anti-Hermitian space, and the angle of an anti-Hermitian element is its distance from the origin in that sphere.</p>
 <h2 id="summary">Summary</h2>
-<p>The anti-Hermitian matrices are exactly $i$ times the Hermitian ones, so their spectrum is purely imaginary, with $\lambda\|v\|^{2}=\langle Kv,v\rangle=-\overline{\langle Kv,v\rangle}$, and they are diagonalised by a unitary as $K=U(i\Theta)U^{*}$ with $\Theta$ real; the exponential is then unitary with eigenvalues $e^{i\theta_j}$. A real skew matrix has the same purely imaginary spectrum in conjugate pairs, is not diagonalisable over $\mathbb{R}$, and has the orthogonal canonical form of $m$ rotation blocks with angles $\theta_j>0$ and $n-2m$ zeros, of rank $2m$. The angles are the complete invariants of the orthogonal class, the norm satisfies $\|K\|^{2}=2\sum\theta_j^{2}$, the determinant is $\prod\theta_j^{2}$, and at $n=2$ the single angle is the length of the vector $\theta J$.</p>
+<p>The anti-Hermitian matrices are exactly $i$ times the Hermitian ones, so their spectrum is purely imaginary, with $\lambda\|v\|^{2}=\langle Kv,v\rangle=-\overline{\langle Kv,v\rangle}$, and they are diagonalised by a unitary as $K=U(i\Theta)U^{*}$ with $\Theta$ real; the exponential is then unitary with eigenvalues $e^{i\theta_j}$. A real antisymmetric matrix has the same purely imaginary spectrum in conjugate pairs, is not diagonalisable over $\mathbb{R}$, and has the orthogonal canonical form of $m$ rotation blocks with angles $\theta_j>0$ and $n-2m$ zeros, of rank $2m$. The angles are the complete invariants of the orthogonal class, the norm satisfies $\|K\|^{2}=2\sum\theta_j^{2}$, the determinant is $\prod\theta_j^{2}$, and at $n=2$ the single angle is the length of the vector $\theta J$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -208,11 +208,11 @@ $$</p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for the antisymmetric canonical form and the orthogonal similarity.</li>
-<li>Werner Greub, <em>Linear Algebra</em> (Springer, 1975), for the real canonical form of a skew operator and the invariant planes.</li>
-<li>Sigurdur Helgason, <em>Differential Geometry, Lie Groups, and Symmetric Spaces</em> (AMS, 2001), for the angles of a skew matrix as the invariants of the compact group action.</li>
+<li>Werner Greub, <em>Linear Algebra</em> (Springer, 1975), for the real canonical form of an anti-self-adjoint operator and the invariant planes.</li>
+<li>Sigurdur Helgason, <em>Differential Geometry, Lie Groups, and Symmetric Spaces</em> (AMS, 2001), for the angles of an antisymmetric matrix as the invariants of the compact group action.</li>
 <li><a href="the-spectral-theorem-the-hermitian-case.html">The Spectral Theorem: the Hermitian Case</a>, for the diagonalisation that the factor $i$ carries over.</li>
 <li><a href="the-two-halves-over-c-hermitian-and-anti-hermitian.html">The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian</a>, for the half and its properties.</li>
-<li><a href="the-lie-algebra-skew-n-and-so-n.html">The Lie Algebra $\operatorname{Skew}_n\cong\mathfrak{so}(n)$</a>, for the algebra structure of the real skew matrices.</li>
+<li><a href="the-lie-algebra-skew-n-and-so-n.html">The Lie Algebra $\operatorname{Skew}_n\cong\mathfrak{so}(n)$</a>, for the algebra structure of the real antisymmetric matrices.</li>
 </ul>
       </div>
     </main>

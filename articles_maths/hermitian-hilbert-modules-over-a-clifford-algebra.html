@@ -111,18 +111,18 @@ $$</p>
 a compatible Hermitian form exactly when it is of the definite type; the form is unique up to a
 positive scalar on each irreducible summand, and the involution $*$ under which the axiom holds is
 the Clifford conjugation, possibly composed with the conjugation of the coefficient field. Under it
-a generator $e_i$ is <strong>skew</strong>, $(e_i\cdot s,t)=-(s,e_i\cdot t)$ for $i\ge1$, so the multiplication
-by a vector is skew-adjoint, and the scalar unit $1$ is Hermitian.</p>
+a generator $e_i$ is <strong>anti-Hermitian</strong>, $(e_i\cdot s,t)=-(s,e_i\cdot t)$ for $i\ge1$, so the multiplication
+by a vector is anti-self-adjoint, and the scalar unit $1$ is Hermitian.</p>
 <p><em>Proof.</em> The skewness of $e_i$ is $e_i^{*}=-e_i$, which is the Clifford conjugation; the axiom then
-reads $(e_i\cdot s,t)=(s,(-e_i)\cdot t)=-(s,e_i\cdot t)$, which is skew-adjointness. The existence
+reads $(e_i\cdot s,t)=(s,(-e_i)\cdot t)=-(s,e_i\cdot t)$, which is anti-self-adjointness. The existence
 and uniqueness of a compatible definite form on a Clifford module are the results of Part II's
 <em>Hermitian Modules over a Hermitian Algebra with Hermitian Adjoint</em>, and the involution is the one
 fixed there.</p>
 <p><strong>Remark (definite and indefinite).</strong> The definite case is the one in which the form is positive and
 the axiom holds as stated; in the indefinite case, where the form has a signature, the conjugation
 is replaced by the Krein adjoint and the theory becomes the Krein-space theory of Part II, in *
-$J$-Self-Adjoint and $J$-Unitary Operators<em> and </em>Spectral Theory on Krein Spaces<em>. This article is
-the definite case, and the word </em>Hermitian* throughout refers to the positive form and the Clifford
+$J$-Self-Adjoint and $J$-Unitary Operators* and <em>Spectral Theory on Krein Spaces</em>. This article is
+the definite case, and the word <em>Hermitian</em> throughout refers to the positive form and the Clifford
 conjugation.</p>
 <h2 id="the-hilbert-module-of-sections">The Hilbert Module of Sections</h2>
 <h3 id="the-math33-completion">The $L^2$ Completion</h3>
@@ -159,7 +159,7 @@ multiplication $c(x)$ has adjoint $c(x^{*})$:</p>
 <p>$$
 \boxed{\;c(x)^{\dagger} = c(x^{*}) , \qquad x\in A\;} .
 $$</p>
-<p>In particular the multiplication by a generator is skew-adjoint and the multiplication by a unit
+<p>In particular the multiplication by a generator is anti-self-adjoint and the multiplication by a unit
 scalar is unitary.</p>
 <p><em>Proof.</em> The pointwise axiom $(x\cdot s,t)=(s,x^{*}\cdot t)$ integrates to
 $\langle c(x)s,t\rangle=\langle s,c(x^{*})t\rangle$.</p>
@@ -171,13 +171,13 @@ sections, and for sections on a bounded domain with smooth boundary,</p>
 \boxed{\;\langle Df,g\rangle-\langle f,D^{\dagger}g\rangle = \int_{\partial\Omega}\bigl(c(\nu_B)f,g\bigr)\,dS\;} ,
 $$</p>
 <p>the boundary term being the conormal pairing of <em>The Cauchy Integral Operator</em>.</p>
-<p><em>Proof.</em> The derivatives integrate by parts with a sign, the multiplications are skew or Hermitian
+<p><em>Proof.</em> The derivatives integrate by parts with a sign, the multiplications are anti-Hermitian or Hermitian
 as in the preceding theorem, and the boundary term is the flux of the vector field $c(e_\mu)f$
 against $g$; the computation is the one of <em>The Dirac Operator</em> for the formal adjoint
 $D^{\dagger}=-\bar D$.</p>
 <p><strong>Corollary (self-adjointness on a closed domain, and on the Hardy space).</strong> If the boundary term
 vanishes — for example on the boundary values of monogenic functions, or on a domain without
-boundary — then $D$ is skew-adjoint up to the conjugation, and the operator
+boundary — then $D$ is anti-self-adjoint up to the conjugation, and the operator
 $D_{\mathrm{sa}}=\sum_{i\ge1}c(e_i) \partial/\partial x_i$ is self-adjoint on the appropriate domain, with
 $D_{\mathrm{sa}}^2=-\Delta$ and a real spectrum. The spectral theory of that operator is <em>Dirac
 Differential Operators</em>', and the passage from the formal adjoint to the unbounded self-adjoint
@@ -212,10 +212,10 @@ point at which the module structure and the Hilbert structure meet.</p>
 a positive Hermitian form for which the action obeys the self-adjointness axiom
 $(x\cdot s,t)=(s,x^{*}\cdot t)$, completed to a Hilbert space of sections
 $L^2(\Omega;\mathcal{S})=\overline{C_c^\infty(\Omega;\mathcal{S})}$. The algebra acts by bounded
-operators with $c(x)^{\dagger}=c(x^{*})$; a generator is skew-adjoint and the scalar unit is
+operators with $c(x)^{\dagger}=c(x^{*})$; a generator is anti-self-adjoint and the scalar unit is
 unitary. The operator $D$ has formal adjoint $D^{\dagger}=-\bar D$, the failure on a bounded domain
 being the conormal boundary term $\int_{\partial\Omega}(c(\nu_B)f,g)dS$; when that term vanishes,
-$D$ is skew and the vector operator $D_{\mathrm{sa}}$ is self-adjoint with
+$D$ is anti-Hermitian and the vector operator $D_{\mathrm{sa}}$ is self-adjoint with
 $D_{\mathrm{sa}}^2=-\Delta$ and a real spectrum, whose spectral theory is <em>Dirac Differential
 Operators</em>'. The spaces of monogenic $L^2$ functions — the Bergman space
 $\mathcal{A}^2=\ker D\cap L^2$ and the Hardy space $H^2$ — are closed subspaces, hence Hilbert

@@ -124,7 +124,7 @@ $$</p>
 \langle E_{ij},E_{kl}\rangle=\operatorname{tr}(E_{ij}^{*}E_{kl})=\operatorname{tr}(E_{ji}E_{kl})=\delta_{il}\delta_{jk},
 $$</p>
 <p>so the $n^{2}$ units form an orthonormal basis of $M_n(\mathbb{C})$ for the form, and the coordinates of $A$ in that basis are its entries. The identity was verified for all quadruples at $n=2,3,4$.</p>
-<p><strong>The fine decomposition is therefore an orthogonal direct sum, and the coarse one is not spanned by its own lines.</strong> The grading of <em>The Fine Decomposition against the Diagonal</em> splits the algebra into the $n^{2}$ lines $\mathbb{C}E_{ij}$, and those lines are mutually orthogonal for the Hilbert–Schmidt form. The two halves are spanned by these lines combined in pairs: the symmetric line $\mathbb{C}(E_{ij}+E_{ji})$ is orthogonal to the skew line $\mathbb{C}(E_{ij}-E_{ji})$, and this orthogonality is again the lemma applied to the transposed pair.</p>
+<p><strong>The fine decomposition is therefore an orthogonal direct sum, and the coarse one is not spanned by its own lines.</strong> The grading of <em>The Fine Decomposition against the Diagonal</em> splits the algebra into the $n^{2}$ lines $\mathbb{C}E_{ij}$, and those lines are mutually orthogonal for the Hilbert–Schmidt form. The two halves are spanned by these lines combined in pairs: the symmetric line $\mathbb{C}(E_{ij}+E_{ji})$ is orthogonal to the antisymmetric line $\mathbb{C}(E_{ij}-E_{ji})$, and this orthogonality is again the lemma applied to the transposed pair.</p>
 <p><strong>Orthonormality gives the coordinates of the trace forms.</strong> For $A=\sum A_{ij}E_{ij}$ and $C=\sum C_{ij}E_{ij}$,</p>
 <p>$$
 \operatorname{tr}(A^{*}C)=\sum_{i,j}\overline{A_{ij}}C_{ij},\qquad \operatorname{tr}(A^{\mathsf T}C)=\sum_{i,j}A_{ij}C_{ij}
@@ -135,7 +135,7 @@ $$</p>
 <p>$$
 \operatorname{tr}(A^{2})=\operatorname{tr}(S^{2})+\operatorname{tr}(K^{2})
 $$</p>
-<p>for $A=S+K$ real, the cross term vanishing by orthogonality. The quadratic form $\operatorname{tr}(A^{2})$ is therefore the sum of a positive definite form on the symmetric half and a negative definite one on the skew half, and its signature is read from the two halves separately.</p>
+<p>for $A=S+K$ real, the cross term vanishing by orthogonality. The quadratic form $\operatorname{tr}(A^{2})$ is therefore the sum of a positive definite form on the symmetric half and a negative definite one on the antisymmetric half, and its signature is read from the two halves separately.</p>
 <p><strong>The complementarity makes the projections computable and the adjoints visible.</strong> The orthogonal projection onto a half is $\tfrac12(\mathrm{I}\pm\sigma)$, and the adjoint of a map that preserves the split is computed half by half. The same mechanism is used for the operator space of <em>The Symmetric and Antisymmetric Parts of the Operator Space</em>, where the two-sided operators carry their own split.</p>
 <p><strong>The complementarity does not survive every form.</strong> For a form that the involution does not preserve, the two halves are not orthogonal: the Killing form of $\mathfrak{so}(n)$ vanishes at $n=2$ while the trace form does not, and on a non-reductive algebra the radical is its own orthogonal complement. The condition of the lemma is a real hypothesis, and the article <em>The Killing Form, Its Radical and the Triangular Case</em> records what happens when it fails.</p>
 <h2 id="the-case-math75">The Case $n=2$</h2>
@@ -143,7 +143,7 @@ $$</p>
 <p>$$
 \operatorname{tr}(\mathrm{I}J)=\operatorname{tr}(\sigma_1J)=\operatorname{tr}(\sigma_3J)=0,
 $$</p>
-<p>so the single skew direction is orthogonal to the three symmetric ones. The form has signature $(3,1)$ on $M_2(\mathbb{R})$.</p>
+<p>so the single antisymmetric direction is orthogonal to the three symmetric ones. The form has signature $(3,1)$ on $M_2(\mathbb{R})$.</p>
 <p><strong>At $n=2$ the complex split is $8=4\perp4$.</strong> The Hermitian half is spanned over $\mathbb{R}$ by the Pauli list and the anti-Hermitian half by $i$ times it, and the two four-dimensional real spaces are orthogonal for the Euclidean form. In the biquaternion reading this is the split into the two sectors, and the orthogonality is the statement that the sectors do not mix under the Hilbert–Schmidt form.</p>
 <p><strong>The complementarity is the statement the two halves are the annihilator of each other, and that is what makes them a split and not a choice.</strong> Any complement of $\operatorname{Skew}_n$ has dimension $n(n+1)/2$; only one of them is orthogonal to it and only one is the fixed half of the involution, and in the transpose case the two coincide. The triangular algebra $UT_n$ is a complement with the right dimension and neither property, which is the precise content of the next comparison.</p>
 <h2 id="summary">Summary</h2>

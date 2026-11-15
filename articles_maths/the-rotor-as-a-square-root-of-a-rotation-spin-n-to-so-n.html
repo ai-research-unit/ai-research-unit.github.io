@@ -140,12 +140,12 @@ $$</p>
 <p><strong>The quaternion product is the composition of rotations.</strong> For rotors $R$ and $S$, the map $X\mapsto RSX(RS)^{-1}$ is the composition, so $\mathrm{Spin}(3)\to\mathrm{SO}(3)$ is a group homomorphism. Over $200$ random pairs the matrices satisfy $A_{RS}=A_{R}A_{S}$ with maximum error $1.4\cdot10^{-15}$, and $A_{R}$ is orthogonal with determinant $1$ to $10^{-15}$.</p>
 <p><strong>The two preimages are adjacent points of the sphere.</strong> The distance between $R$ and $-R$ is $2\lVert R\rVert=2$, so the two sheets of the cover are nowhere close: no rotation has a unique rotor.</p>
 <h2 id="square-roots-of-a-rotation">Square Roots of a Rotation</h2>
-<p><strong>Every rotation is the square of a rotation.</strong> Let $Q\in\mathrm{SO}(n)$ and write $Q=\exp K$ with $K$ skew, as <em>The Exponential of the Antisymmetric Part: One-Parameter Rotations</em> allows. Then</p>
+<p><strong>Every rotation is the square of a rotation.</strong> Let $Q\in\mathrm{SO}(n)$ and write $Q=\exp K$ with $K$ antisymmetric, as <em>The Exponential of the Antisymmetric Part: One-Parameter Rotations</em> allows. Then</p>
 <p>$$
 P=\exp(K/2)\in\mathrm{SO}(n),\qquad P^{2}=\exp K=Q .
 $$</p>
 <p>In angles, the square root of $Q$ is the rotation with the same invariant planes and half of every angle. So the answer to the question of this section is that no rotation of $\mathrm{SO}(n)$ fails to be a square: the half-angle construction always exists.</p>
-<p><strong>The construction is checked numerically.</strong> Over $150$ random rotations at $n=3,4,5$, built as $\exp K$ from a random skew $K$, the root $P=\exp(K/2)$ satisfies</p>
+<p><strong>The construction is checked numerically.</strong> Over $150$ random rotations at $n=3,4,5$, built as $\exp K$ from a random anti-Hermitian $K$, the root $P=\exp(K/2)$ satisfies</p>
 <p>$$
 \max\lVert P^{2}-Q\rVert=1.45\cdot10^{-15},\qquad \det P\in[1-7\cdot10^{-16},\,1+7\cdot10^{-16}].
 $$</p>
@@ -220,7 +220,7 @@ $$</p>
 <li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), for rotors, the sandwich action and the quaternion case.</li>
 <li>H. Blaine Lawson and Marie-Louise Michelsohn, <em>Spin Geometry</em> (Princeton, 1989), for the spin groups, the spin representation and the fundamental groups.</li>
 <li><a href="the-exponential-of-the-antisymmetric-part-one-parameter-rotations.html">The Exponential of the Antisymmetric Part: One-Parameter Rotations</a>, for the logarithm of a rotation used in §<em>Square Roots of a Rotation</em>.</li>
-<li><a href="rotors-acting-on-the-bivector-space-the-adjoint-action.html">Rotors Acting on the Bivector Space: the Adjoint Action</a>, for the action of the rotations on the skew matrices.</li>
+<li><a href="rotors-acting-on-the-bivector-space-the-adjoint-action.html">Rotors Acting on the Bivector Space: the Adjoint Action</a>, for the action of the rotations on the antisymmetric matrices.</li>
 <li><a href="simple-and-non-simple-rotations-one-angle-at-n-le-3-floor-n-2-planes-at-n-ge-4.html">Simple and Non-Simple Rotations: One Angle at $n\le3$, $\lfloor n/2\rfloor$ Planes at $n\ge4$</a>, for the angles and the planes of a rotation.</li>
 </ul>
       </div>

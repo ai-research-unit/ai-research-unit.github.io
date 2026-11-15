@@ -70,23 +70,23 @@
       <div class="article-body">
         <h1 id="the-orthogonal-lie-algebra"><strong>The Orthogonal Lie Algebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The <strong>orthogonal Lie algebra</strong> is the infinitesimal version of the isometry group of a form: the linear maps that are skew with respect to the polar form. This article develops that Lie algebra, its identification with the bivectors $\Lambda^2 V$, the Cayley transform that returns from the algebra to the group, its structure and rank, and the two low-dimensional isomorphisms that connect it to the vector product and to $\mathrm{SL}(2, \mathbb{C})$.</p>
+<p>The <strong>orthogonal Lie algebra</strong> is the infinitesimal version of the isometry group of a form: the linear maps that are anti-self-adjoint with respect to the polar form. This article develops that Lie algebra, its identification with the bivectors $\Lambda^2 V$, the Cayley transform that returns from the algebra to the group, its structure and rank, and the two low-dimensional isomorphisms that connect it to the vector product and to $\mathrm{SL}(2, \mathbb{C})$.</p>
 <p>The base is a commutative ring $R$ in which $2$ is invertible. The isometry group of the form, the reflections and the special orthogonal group are algebraic objects of <em>Bilinear Forms</em> and <em>Quadratic Forms and Polarisation</em>; their geometry, once a definite form is chosen, is <em>Isometries and Orthogonal Transformations</em> and <em>The Rotation Group and Orientation</em> in Part IV. The exterior power $\Lambda^2 V$ and its universal property are taken from <em>The Exterior Algebra</em> and <em>Exterior Powers</em>; the general theory of Lie algebras, of the commutator bracket and of Cartan subalgebras is assumed from <em>Lie Algebras: A General Introduction</em> and <em>Lie Groups</em>, and is cited rather than rebuilt. The matrix groups belong to category 04; here the Lie algebra is the Lie-theoretic shadow of the isometry group, and the corresponding matrix groups are treated in <em>The Unitary and Symplectic Groups</em>.</p>
-<h2 id="the-lie-algebra-of-skew-transformations">The Lie Algebra of Skew Transformations</h2>
+<h2 id="the-lie-algebra-of-anti-hermitian-transformations">The Lie Algebra of Anti-Hermitian Transformations</h2>
 <h3 id="definition">Definition</h3>
-<p>Let $V$ be a finite-dimensional space over a field $F$ of characteristic not $2$, with non-degenerate quadratic form $\mathfrak{Q}$ and polar form $B$. An $F$-linear map $A : V \to V$ is <strong>skew</strong> with respect to $B$ if</p>
+<p>Let $V$ be a finite-dimensional space over a field $F$ of characteristic not $2$, with non-degenerate quadratic form $\mathfrak{Q}$ and polar form $B$. An $F$-linear map $A : V \to V$ is <strong>anti-Hermitian</strong> with respect to $B$ if</p>
 <p>$$
 B(Au, v) + B(u, Av) = 0 \qquad (u, v \in V).
 $$</p>
-<p>The set of skew maps is written $\mathrm{SO}(V, \mathfrak{Q})$, and its elements are the <strong>infinitesimal isometries</strong> of $q$.</p>
-<p><strong>Proposition.</strong> Let $G$ be the Gram matrix of $B$ in a basis. Then $A$ is skew if and only if its matrix $M$ in that basis satisfies</p>
+<p>The set of anti-self-adjoint maps is written $\mathrm{SO}(V, \mathfrak{Q})$, and its elements are the <strong>infinitesimal isometries</strong> of $q$.</p>
+<p><strong>Proposition.</strong> Let $G$ be the Gram matrix of $B$ in a basis. Then $A$ is antisymmetric if and only if its matrix $M$ in that basis satisfies</p>
 <p>$$
 M^T G + G M = 0.
 $$</p>
-<p>In particular, if the basis is orthonormal, a skew matrix is exactly an antisymmetric matrix $M^T = -M$.</p>
+<p>In particular, if the basis is orthonormal, an antisymmetric matrix is exactly an antisymmetric matrix $M^T = -M$.</p>
 <p><strong>Proof.</strong> In coordinates, $B(u, v) = u^T G v$; the identity $B(Au, v) + B(u, Av) = 0$ becomes $u^T M^T G v + u^T G M v = 0$ for all $u, v$, that is $M^T G + GM = 0$. If $G = I$ this is $M^T = -M$.</p>
-<p><strong>Example.</strong> For $V = F^2$ with the standard form, the skew matrices are $M = \begin{pmatrix} 0 & a \\ -a & 0 \end{pmatrix}$, a one-dimensional space spanned by the rotation generator $J = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}$.</p>
-<p><strong>Example.</strong> For $V = \mathbb{R}^3$ with the standard form, the skew matrices are the antisymmetric $3 \times 3$ matrices, a three-dimensional space, with basis</p>
+<p><strong>Example.</strong> For $V = F^2$ with the standard form, the antisymmetric matrices are $M = \begin{pmatrix} 0 & a \\ -a & 0 \end{pmatrix}$, a one-dimensional space spanned by the rotation generator $J = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}$.</p>
+<p><strong>Example.</strong> For $V = \mathbb{R}^3$ with the standard form, the antisymmetric matrices are the antisymmetric $3 \times 3$ matrices, a three-dimensional space, with basis</p>
 <p>$$
 L_1 = \begin{pmatrix} 0 & 0 & 0 \\ 0 & 0 & -1 \\ 0 & 1 & 0 \end{pmatrix}, \quad
 L_2 = \begin{pmatrix} 0 & 0 & 1 \\ 0 & 0 & 0 \\ -1 & 0 & 0 \end{pmatrix}, \quad
@@ -95,18 +95,18 @@ $$</p>
 <p>These are the infinitesimal rotations about the three coordinate axes.</p>
 <h3 id="the-bracket">The Bracket</h3>
 <p><strong>Proposition.</strong> The space $\mathrm{SO}(V, \mathfrak{Q})$ is closed under the commutator $[A, C] = AC - CA$, and with this bracket it is a Lie algebra over $F$, a Lie subalgebra of $\mathrm{GL}(V)$.</p>
-<p><strong>Proof.</strong> If $A$ and $C$ are skew, then for all $u, v$,</p>
+<p><strong>Proof.</strong> If $A$ and $C$ are anti-Hermitian, then for all $u, v$,</p>
 <p>$$
 B([A, C]u, v) = B(ACu, v) - B(CAu, v) = -B(Cu, Av) + B(Au, Cv) = B(u, CAv) - B(u, ACv) = -B(u, [A, C]v),
 $$</p>
-<p>so $[A, C]$ is skew. The commutator is bilinear and antisymmetric, and the Jacobi identity holds in any associative algebra, as in <em>Lie Algebras: A General Introduction</em>.</p>
+<p>so $[A, C]$ is antisymmetric. The commutator is bilinear and antisymmetric, and the Jacobi identity holds in any associative algebra, as in <em>Lie Algebras: A General Introduction</em>.</p>
 <h3 id="dimension-and-rank">Dimension and Rank</h3>
 <p><strong>Theorem.</strong> Let $V$ be a free module of rank $n$ over $R$ with a non-degenerate symmetric form $B$. Then $\mathrm{SO}(V, B)$ is a free $R$-module of rank</p>
 <p>$$
 \boxed{\;\operatorname{rank}_R \mathrm{SO}(V, B) = \binom{n}{2} = \frac{n(n-1)}{2}\;}.
 $$</p>
 <p><strong>Proof.</strong> Choose a basis and let $G$ be the Gram matrix, which is invertible because $B$ is non-degenerate. The condition $M^T G + GM = 0$ is equivalent to the antisymmetry of $N = GM$, since $N^T = M^T G^T = M^T G = -GM = -N$; the assignment $M \mapsto N$ is an isomorphism of $R$-modules, with inverse $N \mapsto G^{-1}N$. The antisymmetric matrices are freely generated by the $\binom{n}{2}$ entries above the diagonal, and $G$ is invertible, so the rank is $\binom{n}{2}$.</p>
-<p><strong>Remark.</strong> Non-degeneracy is needed. For $q = 0$ the condition becomes vacuous and $\mathrm{SO}(V, 0) = \mathrm{GL}(V)$, of rank $n^2$; there the "skew" condition imposes nothing because $B = 0$. Over a general ring the argument requires $G$ to be invertible, which is exactly the non-degeneracy hypothesis of <em>Bilinear Forms</em>.</p>
+<p><strong>Remark.</strong> Non-degeneracy is needed. For $q = 0$ the condition becomes vacuous and $\mathrm{SO}(V, 0) = \mathrm{GL}(V)$, of rank $n^2$; there the "antisymmetric" condition imposes nothing because $B = 0$. Over a general ring the argument requires $G$ to be invertible, which is exactly the non-degeneracy hypothesis of <em>Bilinear Forms</em>.</p>
 <h2 id="the-identification-with-bivectors">The Identification with Bivectors</h2>
 <h3 id="the-exterior-square">The Exterior Square</h3>
 <p>Let $\Lambda^2 V$ be the second exterior power of $V$, the quotient of $V \otimes V$ by the submodule generated by the elements $v \otimes v$, as in <em>Exterior Powers</em>. It is generated by the wedges $u \wedge v = -v \wedge u$, and if $V$ is free of rank $n$ then $\Lambda^2 V$ is free of rank $\binom{n}{2}$, with basis $e_i \wedge e_j$ for $i < j$. Its universal property is that alternating bilinear maps $V \times V \to W$ factor uniquely through it.</p>
@@ -139,8 +139,8 @@ $$</p>
 $$</p>
 <p>which is the multiplication table of the vector product. This is the precise sense in which the commutator of bivectors in three dimensions is the vector product.</p>
 <h2 id="the-cayley-transform">The Cayley Transform</h2>
-<p>The exponential map that returns from the skew maps to the isometry group needs the exponential series and its convergence, so it is Part III's, in <em>The Lie Algebra and the Exponential Map</em>, and it is cited here rather than rebuilt. The algebraic substitute, which needs no series, is the Cayley transform below: it recovers a group element from the algebra with rational operations alone.</p>
-<p>If $A$ is skew and $I - A$ is invertible, the <strong>Cayley transform</strong></p>
+<p>The exponential map that returns from the anti-self-adjoint maps to the isometry group needs the exponential series and its convergence, so it is Part III's, in <em>The Lie Algebra and the Exponential Map</em>, and it is cited here rather than rebuilt. The algebraic substitute, which needs no series, is the Cayley transform below: it recovers a group element from the algebra with rational operations alone.</p>
+<p>If $A$ is anti-Hermitian and $I - A$ is invertible, the <strong>Cayley transform</strong></p>
 <p>$$
 C(A) = (I + A)(I - A)^{-1}
 $$</p>
@@ -148,7 +148,7 @@ $$</p>
 <p>$$
 C(A)^T G\,C(A) = \bigl((I - A)^{-1}\bigr)^T (I + A)^T G\,(I + A)(I - A)^{-1} = \bigl((I - A)^{-1}\bigr)^T G\,(I - A)(I + A)(I - A)^{-1} = \bigl((I - A)^{-1}\bigr)^T (I - A)^T G = G,
 $$</p>
-<p>using that $I + A$ and $(I - A)^{-1}$ commute because both are polynomials in $A$. The Cayley transform is a birational map from the skew maps to the rotations that do not have $1$ as an eigenvalue; it is the rational counterpart of the exponential map of Part III.</p>
+<p>using that $I + A$ and $(I - A)^{-1}$ commute because both are polynomials in $A$. The Cayley transform is a birational map from the anti-self-adjoint maps to the rotations that do not have $1$ as an eigenvalue; it is the rational counterpart of the exponential map of Part III.</p>
 <h2 id="structure-and-rank">Structure and Rank</h2>
 <h3 id="a-cartan-subalgebra">A Cartan Subalgebra</h3>
 <p>Assume $F = \mathbb{R}$ and $q$ definite, so that $\mathrm{SO}(V, \mathfrak{Q})$ is the definite orthogonal Lie algebra. Choose an orthonormal basis and pair the coordinates $(e_1, e_2), (e_3, e_4), \ldots$; let $\mathrm{H}$ be the space spanned by the block generators</p>
@@ -190,7 +190,7 @@ $$</p>
 $$</p>
 <p><strong>Proof.</strong> Both $\kappa$ and the trace form $\beta$ are symmetric bilinear and invariant under the adjoint action by the proposition above, so on a simple Lie algebra they are proportional. The algebra $\mathrm{SO}(n)$ is simple for $n = 3$ and for $n \geq 5$, so in those dimensions $\kappa = c\,\beta$. Let $L$ be the generator of the rotation in the $(1,2)$-plane, the matrix with $L_{12} = -1$, $L_{21} = 1$ and all other entries zero. Then $\beta(L, L) = \operatorname{tr}(L^2) = -2$, while the bracket relations of the basis $E_{ij} = e_ie_j^{T} - e_je_i^{T}$ give $\kappa(L, L) = -2(n - 2)$, so $c = n - 2$. For $n = 4$ a direct evaluation in the six-dimensional basis $E_{ij}$ gives the same identity.</p>
 <p><strong>Example.</strong> For $n = 3$ the isomorphism $\mathrm{SO}(3) \cong \mathbb{R}^3$ of the next section carries the Killing form to $\kappa(X, Y) = \operatorname{tr}([X]_{\times}[Y]_{\times}) = -2\,X \cdot Y$, twice the negative of the Euclidean product; the isomorphism is therefore not an isometry, and the negative sign is the reflection of the negative definiteness of the trace form. For $n = 4$ the formula reads $\kappa = 2\beta$, the factor reflecting the splitting $\mathrm{SO}(4) \cong \mathrm{SU}(2) \oplus \mathrm{SU}(2)$, on which the invariant forms are the sum of the invariant forms of the two summands.</p>
-<p><strong>Corollary.</strong> For $n \geq 3$ the Killing form of $\mathrm{SO}(n)$ is negative definite, since for skew $X \neq 0$</p>
+<p><strong>Corollary.</strong> For $n \geq 3$ the Killing form of $\mathrm{SO}(n)$ is negative definite, since for anti-Hermitian $X \neq 0$</p>
 <p>$$
 \operatorname{tr}(X^2) = -\operatorname{tr}(X^{T}X) = -\sum_{i,j} X_{ij}^2 < 0 .
 $$</p>
@@ -205,7 +205,7 @@ $$</p>
 $$</p>
 <p>where the bracket on the right is the vector product.</p>
 <p><strong>Proof.</strong> The map sends $L_1 \mapsto e_1$, $L_2 \mapsto e_2$, $L_3 \mapsto e_3$ in the basis of the previous example. The bracket relations $[L_1, L_2] = L_3$ and its cyclic permutations are exactly the relations $e_1 \times e_2 = e_3$ and its cyclic permutations, so the map is an isomorphism of Lie algebras.</p>
-<p><strong>Corollary.</strong> Under the isomorphism a skew map $A$ acts on $\mathbb{R}^3$ by $Ax = \omega \times x$, so a one-parameter group of rotations is generated by an element $\omega$ of $\mathbb{R}^3$, and $\omega$ is the axis of the one-parameter group generated by $A$. The double cover of $\operatorname{SO}(3)$ by the unit quaternions, of which this isomorphism is the infinitesimal shadow, belongs to the Clifford layer of the category.</p>
+<p><strong>Corollary.</strong> Under the isomorphism an anti-self-adjoint map $A$ acts on $\mathbb{R}^3$ by $Ax = \omega \times x$, so a one-parameter group of rotations is generated by an element $\omega$ of $\mathbb{R}^3$, and $\omega$ is the axis of the one-parameter group generated by $A$. The double cover of $\operatorname{SO}(3)$ by the unit quaternions, of which this isomorphism is the infinitesimal shadow, belongs to the Clifford layer of the category.</p>
 <h3 id="the-signature-math237-and-math238">The Signature $(3, 1)$ and $\mathrm{SL}(2, \mathbb{C})$</h3>
 <p><strong>Theorem.</strong> For the form $q = \langle 1, 1, 1, -1\rangle$ on $\mathbb{R}^4$ there is an isomorphism of real Lie algebras</p>
 <p>$$
@@ -224,14 +224,14 @@ $$</p>
 <p><strong>Remark (the bracket relations).</strong> The first relation is the bracket of the rotational generators. For the last, using $K_i = iB_i - iA_i$ and $J_i = A_i + B_i$ gives $[K_i, K_j] = -[A_i,A_j] - [B_i,B_j] + [A_i,B_j] + [B_i,A_j] = -\sum\epsilon_{ijk}A_k - \sum\epsilon_{ijk}B_k = -\sum\epsilon_{ijk}J_k$, which is the stated sign; the middle relation likewise gives $\sum\epsilon_{ijk}K_k$.</p>
 <p><strong>Remark.</strong> The case $n = 4$ is the smallest in which the orthogonal Lie algebra has more than one isomorphism type over $\mathbb{R}$: $\mathrm{SO}(4) \cong \mathrm{SU}(2) \oplus \mathrm{SU}(2)$ is the definite form, while $\mathrm{SO}(3, 1)$ is an indefinite form with the same complexification. This is the Lie-theoretic form of the double-cover phenomena that the Clifford layer of the category describes.</p>
 <h2 id="summary">Summary</h2>
-<p>The <strong>orthogonal Lie algebra</strong> $\mathrm{SO}(V, \mathfrak{Q})$ of a non-degenerate quadratic space is the space of <strong>skew</strong> maps $A$ with $B(Au, v) + B(u, Av) = 0$, equivalently $M^T G + GM = 0$ in a basis, and it is a Lie subalgebra of $\mathrm{GL}(V)$ under the commutator. It is free of rank $\binom{n}{2}$ when $V$ is free of rank $n$ and $B$ is non-degenerate; for $q = 0$ it degenerates to $\mathrm{GL}(V)$, so non-degeneracy is essential.</p>
+<p>The <strong>orthogonal Lie algebra</strong> $\mathrm{SO}(V, \mathfrak{Q})$ of a non-degenerate quadratic space is the space of <strong>antisymmetric</strong> maps $A$ with $B(Au, v) + B(u, Av) = 0$, equivalently $M^T G + GM = 0$ in a basis, and it is a Lie subalgebra of $\mathrm{GL}(V)$ under the commutator. It is free of rank $\binom{n}{2}$ when $V$ is free of rank $n$ and $B$ is non-degenerate; for $q = 0$ it degenerates to $\mathrm{GL}(V)$, so non-degeneracy is essential.</p>
 <p>For any symmetric $B$ the formula $\varphi(u \wedge v)(x) = B(v, x)u - B(u, x)v$ gives a linear map $\Lambda^2 V \to \mathrm{SO}(V, B)$ which is an isomorphism when $B$ is non-degenerate. Transporting the commutator makes the <strong>bivectors</strong> $\Lambda^2 V$ a Lie algebra isomorphic to $\mathrm{SO}(V, B)$; the bracket of bivectors is their commutator as endomorphisms, and in dimension three it is the vector product.</p>
-<p>The <strong>Cayley transform</strong> $C(A) = (I + A)(I - A)^{-1}$ is the rational passage from the skew maps to the rotations that avoid the eigenvalue $1$; the exponential map, which needs the series and its convergence, is Part III's. The algebra has dimension $\binom{n}{2}$ and rank $\lfloor n/2\rfloor$, a Cartan subalgebra being spanned by the block generators of the coordinate planes; the <strong>split and definite forms</strong> $\mathrm{SO}(p, r)$ have a common complexification $\mathrm{SO}(n, \mathbb{C})$ and differ as real forms. In low dimensions $\mathrm{SO}(2)$ is one-dimensional abelian, $\mathrm{SO}(3) \cong \mathbb{R}^3$ with the vector product as bracket, and $\mathrm{SO}(3, 1) \cong \mathrm{SO}(1, 3) \cong \mathrm{SL}(2, \mathbb{C})$ as real Lie algebras, the two signatures being the same up to the order of the signs.</p>
+<p>The <strong>Cayley transform</strong> $C(A) = (I + A)(I - A)^{-1}$ is the rational passage from the anti-self-adjoint maps to the rotations that avoid the eigenvalue $1$; the exponential map, which needs the series and its convergence, is Part III's. The algebra has dimension $\binom{n}{2}$ and rank $\lfloor n/2\rfloor$, a Cartan subalgebra being spanned by the block generators of the coordinate planes; the <strong>split and definite forms</strong> $\mathrm{SO}(p, r)$ have a common complexification $\mathrm{SO}(n, \mathbb{C})$ and differ as real forms. In low dimensions $\mathrm{SO}(2)$ is one-dimensional abelian, $\mathrm{SO}(3) \cong \mathbb{R}^3$ with the vector product as bracket, and $\mathrm{SO}(3, 1) \cong \mathrm{SO}(1, 3) \cong \mathrm{SL}(2, \mathbb{C})$ as real Lie algebras, the two signatures being the same up to the order of the signs.</p>
 <p>The <strong>Killing form</strong> $\kappa(X, Y) = \operatorname{tr}(\operatorname{ad}_X\operatorname{ad}_Y)$ and the trace form $\beta(X, Y) = \operatorname{tr}(XY)$ are symmetric and invariant under the adjoint action. For the standard form on $F^n$ with $n \geq 3$ the two are proportional,</p>
 <p>$$
 \kappa(X, Y) = (n - 2)\operatorname{tr}(XY),
 $$</p>
-<p>and $\kappa$ is negative definite because $\operatorname{tr}(X^2) = -\sum_{ij}X_{ij}^2$ for skew $X$; hence $\mathrm{SO}(n)$ is semisimple, and simple for $n = 3$ and $n \geq 5$. The Killing form of an indefinite $\mathrm{SO}(p, r)$ is non-degenerate but indefinite.</p>
+<p>and $\kappa$ is negative definite because $\operatorname{tr}(X^2) = -\sum_{ij}X_{ij}^2$ for anti-Hermitian $X$; hence $\mathrm{SO}(n)$ is semisimple, and simple for $n = 3$ and $n \geq 5$. The Killing form of an indefinite $\mathrm{SO}(p, r)$ is non-degenerate but indefinite.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -275,7 +275,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathrm{SO}(V, \mathfrak{Q})$</td>
-<td>Orthogonal Lie algebra of skew maps</td>
+<td>Orthogonal Lie algebra of anti-self-adjoint maps</td>
 </tr>
 <tr>
 <td>$\mathrm{SO}(n)$</td>
@@ -303,7 +303,7 @@ $$</p>
 </tr>
 <tr>
 <td>$J$, $L_i$, $H_k$</td>
-<td>Generators of skew maps</td>
+<td>Generators of anti-self-adjoint maps</td>
 </tr>
 <tr>
 <td>$E_{ij} = e_ie_j^{T} - e_je_i^{T}$</td>

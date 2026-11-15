@@ -90,7 +90,7 @@ $$</p>
 <p>$$
 \langle \pi_{\mathrm{H}}(A),B\rangle_{\mathrm{HS}}=\langle A,\pi_{\mathrm{H}}(B)\rangle_{\mathrm{HS}},\qquad \langle \pi_{\mathrm{S}}(A),B\rangle_{\mathrm{HS}}=-\langle A,\pi_{\mathrm{S}}(B)\rangle_{\mathrm{HS}},
 $$</p>
-<p>so the Hermitian projector is self-adjoint and the skew projector is anti-self-adjoint. The computation confirms the two identities at $n=3$ on random pairs, and it is the analytic reason the two halves are orthogonal complements for the real part of the form.</p>
+<p>so the Hermitian projector is self-adjoint and the anti-Hermitian projector is anti-self-adjoint. The computation confirms the two identities at $n=3$ on random pairs, and it is the analytic reason the two halves are orthogonal complements for the real part of the form.</p>
 <p><strong>The halves are Banach subspaces.</strong> Each half is closed, since it is the kernel of a continuous projector, and complete, since a closed subspace of a complete space is complete; so</p>
 <p>$$
 \operatorname{Herm}_n,\ \operatorname{Skew}_n\ \text{are real Banach spaces of dimension}\ n^{2}.
@@ -107,14 +107,14 @@ $$</p>
 <p>$$
 A\mapsto A^{*}\ \text{is a real-analytic isometry with fixed set}\ \operatorname{Herm}_n,
 $$</p>
-<p>and the skew half is the anti-fixed set. The computation confirms the involution and the isometry at $n=3$ on random matrices, and it is the reason the smooth split is the eigenspace split of a single map.</p>
+<p>and the anti-Hermitian half is the anti-fixed set. The computation confirms the involution and the isometry at $n=3$ on random matrices, and it is the reason the smooth split is the eigenspace split of a single map.</p>
 <h2 id="the-exponential-on-the-hermitian-half">The Exponential on the Hermitian Half</h2>
 <p><strong>The exponential maps the Hermitian half into the positive cone.</strong> If $A=A^{*}$ then $e^{A}$ is Hermitian with the eigenvalues $e^{\lambda}$, all positive, so</p>
 <p>$$
 \exp:\operatorname{Herm}_n\to\mathrm{PD}_n,\qquad \operatorname{Spec}(e^{A})=e^{\operatorname{Spec}(A)}.
 $$</p>
 <p>The computation confirms the two statements at $n=3$ on random Hermitian matrices, and it is the first half of the correspondence.</p>
-<p><strong>The exponential on the Hermitian half is injective.</strong> If $e^{A}=e^{B}$ with $A,B$ Hermitian, then $A$ and $B$ commute with $e^{A}$ and hence with each other, so they are simultaneously diagonalisable and their eigenvalues coincide; therefore $A=B$, and the exponential is injective on the half. The computation confirms the statement at $n=3$ by searching at random for a collision and finding none, and it is the sharp difference from the skew half.</p>
+<p><strong>The exponential on the Hermitian half is injective.</strong> If $e^{A}=e^{B}$ with $A,B$ Hermitian, then $A$ and $B$ commute with $e^{A}$ and hence with each other, so they are simultaneously diagonalisable and their eigenvalues coincide; therefore $A=B$, and the exponential is injective on the half. The computation confirms the statement at $n=3$ by searching at random for a collision and finding none, and it is the sharp difference from the anti-Hermitian half.</p>
 <p><strong>The inverse is the logarithm of the positive matrix.</strong> For $P$ positive definite the logarithm is defined by the functional calculus, and</p>
 <p>$$
 \log:\mathrm{PD}_n\to\operatorname{Herm}_n,\qquad \exp\circ\log=\mathrm{id},\quad \log\circ\exp=\mathrm{id},
@@ -122,17 +122,17 @@ $$</p>
 <p>so the exponential is a bijection onto the cone. The computation confirms the two identities at $n=3$ on random Hermitian matrices and random positive matrices, and it makes the cone the exponential image of the Hermitian half.</p>
 <p><strong>The exponential is a diffeomorphism onto the cone.</strong> The derivative at $A$ on the Hermitian half is the map $H\mapsto\int_0^1e^{sA}He^{(1-s)A}ds$, which is invertible since the spectrum of $A$ is real and the resonances are purely imaginary; so the bijection is a diffeomorphism. The computation confirms the invertibility at $n=3$ on random Hermitian matrices, and it is the global form of the local diffeomorphism of <em>The Analysis on $M_n(\mathbb{C})$</em>.</p>
 <h2 id="the-exponential-on-the-anti-hermitian-half">The Exponential on the Anti-Hermitian Half</h2>
-<p><strong>The exponential maps the skew half into the unitary group.</strong> If $X^{*}=-X$ then $(e^{X})^{*}=e^{-X}=(e^{X})^{-1}$, so</p>
+<p><strong>The exponential maps the anti-Hermitian half into the unitary group.</strong> If $X^{*}=-X$ then $(e^{X})^{*}=e^{-X}=(e^{X})^{-1}$, so</p>
 <p>$$
 \exp:\operatorname{Skew}_n\to\mathrm{U}(n),\qquad \exp(\mathfrak{u}(n))\subset\mathrm{U}(n).
 $$</p>
 <p>The computation confirms the unitarity at $n=3$ on random anti-Hermitian matrices, and it is the first half of the second correspondence.</p>
-<p><strong>The exponential on the skew half is surjective.</strong> Every unitary matrix is normal with eigenvalues of modulus one, so it has a anti-Hermitian logarithm, and</p>
+<p><strong>The exponential on the anti-Hermitian half is surjective.</strong> Every unitary matrix is normal with eigenvalues of modulus one, so it has an anti-Hermitian logarithm, and</p>
 <p>$$
 \exp\big(\operatorname{Skew}_n\big)=\mathrm{U}(n).
 $$</p>
-<p>The computation confirms the statement at $n=3$ by taking the logarithm of a random unitary matrix and exponentiating back, and it is the reason the skew half covers the compact group.</p>
-<p><strong>The exponential on the skew half is never injective.</strong> The periods are</p>
+<p>The computation confirms the statement at $n=3$ by taking the logarithm of a random unitary matrix and exponentiating back, and it is the reason the anti-Hermitian half covers the compact group.</p>
+<p><strong>The exponential on the anti-Hermitian half is never injective.</strong> The periods are</p>
 <p>$$
 e^{X}=e^{X+2\pi k\,\mathrm{I}}\quad\text{for every integer }k,
 $$</p>
@@ -146,7 +146,7 @@ $$</p>
 <p>$$
 \exp\big|_{\operatorname{Herm}_n}\ \text{is a diffeomorphism},\qquad \exp\big|_{\operatorname{Skew}_n}\ \text{is a surjective covering},
 $$</p>
-<p>so the Hermitian half gives coordinates of the cone and the skew half gives coordinates of the group up to a lattice. The computation confirms both statements at $n=2,3,4$, and it is the analytic form of the split of the category.</p>
+<p>so the Hermitian half gives coordinates of the cone and the anti-Hermitian half gives coordinates of the group up to a lattice. The computation confirms both statements at $n=2,3,4$, and it is the analytic form of the split of the category.</p>
 <h2 id="the-two-restrictions-together">The Two Restrictions Together</h2>
 <p><strong>The product of the two exponentials is the polar decomposition.</strong> For every matrix $A$ with the polar form $A=UP$,</p>
 <p>$$
@@ -160,7 +160,7 @@ $$</p>
 \dim_{\mathbb{R}}\operatorname{Herm}_2=4,\qquad \dim_{\mathbb{R}}\operatorname{Skew}_2=4,\qquad \dim_{\mathbb{R}}M_2(\mathbb{C})=8,
 $$</p>
 <p>which were recomputed at $n=2$. So the biquaternion algebra splits into two real four-dimensional halves, and the analysis of each is the analysis of $\mathbb{R}^{4}$.</p>
-<p><strong>The Hermitian half is the exponential chart of the cone and the skew half the chart of the group.</strong> At $n=2$,</p>
+<p><strong>The Hermitian half is the exponential chart of the cone and the anti-Hermitian half the chart of the group.</strong> At $n=2$,</p>
 <p>$$
 \exp:\operatorname{Herm}_2\to\mathrm{PD}_2\ \text{is a diffeomorphism},\qquad \exp:\operatorname{Skew}_2\to\mathrm{U}(2)\ \text{is a covering},
 $$</p>
@@ -171,7 +171,7 @@ A\in\operatorname{Herm}_2\iff\alpha_\pm\in\mathbb{R},\qquad A\in\operatorname{Sk
 $$</p>
 <p>so the two halves correspond to the real and the imaginary corner values. The computation confirms the two equivalences at $n=2$, and it is the simplest picture of the split in the corpus.</p>
 <h2 id="summary">Summary</h2>
-<p>The space splits into the Hermitian and the anti-Hermitian halves by the real-linear projectors $(A\pm A^{*})/2$, both of norm one and of real dimension $n^{2}$, one self-adjoint and one anti-self-adjoint for the Hilbert–Schmidt form, and each half is a flat smooth submanifold and a real Banach space whose tangent space is itself. The exponential restricted to the Hermitian half is a diffeomorphism onto the positive cone with the logarithm as inverse, injective because the Hermitian logarithms commute and their eigenvalues coincide; restricted to the skew half it is a surjective covering of the unitary group with the period lattice of the anti-Hermitian matrices whose spectrum lies in $2\pi i\mathbb{Z}$, hence never injective. Together the two restrictions give the polar decomposition, the pair of logarithms is unique up to the lattice, and the Hilbert–Schmidt norm is the Pythagorean sum of the norms of the halves.</p>
+<p>The space splits into the Hermitian and the anti-Hermitian halves by the real-linear projectors $(A\pm A^{*})/2$, both of norm one and of real dimension $n^{2}$, one self-adjoint and one anti-self-adjoint for the Hilbert–Schmidt form, and each half is a flat smooth submanifold and a real Banach space whose tangent space is itself. The exponential restricted to the Hermitian half is a diffeomorphism onto the positive cone with the logarithm as inverse, injective because the Hermitian logarithms commute and their eigenvalues coincide; restricted to the anti-Hermitian half it is a surjective covering of the unitary group with the period lattice of the anti-Hermitian matrices whose spectrum lies in $2\pi i\mathbb{Z}$, hence never injective. Together the two restrictions give the polar decomposition, the pair of logarithms is unique up to the lattice, and the Hilbert–Schmidt norm is the Pythagorean sum of the norms of the halves.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -187,7 +187,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\pi_{\mathrm{S}}(A)=\tfrac12(A-A^{*})$</td>
-<td>the projector onto the skew half</td>
+<td>the projector onto the anti-Hermitian half</td>
 </tr>
 <tr>
 <td>$\operatorname{Herm}_n,\ \operatorname{Skew}_n$</td>

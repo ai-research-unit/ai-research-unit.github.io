@@ -76,7 +76,7 @@
 $$</p>
 <p>an anti-automorphism of order two. The definition presupposes no commutativity. An involution is the same datum as a bijection $A \to A_{\mathrm{opp}}$ of order two onto the ring with the reversed multiplication, so a ring that carries an involution is a ring isomorphic to its opposite ring, and the involution is the certificate of that isomorphism.</p>
 <p>In the commutative case the opposite ring is the ring itself, no reversal is visible, and the anti-multiplicativity of the definition becomes ordinary multiplicativity: an involution of a commutative ring is simply an automorphism of order dividing two. What remains from the involution is then the fixed subring, the two conjugates $x$ and $\sigma(x)$ of an element, and the monic quadratic that every element satisfies over the fixed subring; when the ring is a field the pair is a Galois extension of degree two. The commutative case is therefore not a specialisation of the general theory but a second theory of the same datum, and the two are kept apart below.</p>
-<p>The article has three general sections — the definition and the opposite ring, the symmetric and skew elements, and the ideals, quotients, products and $\sigma$-prime notions — and one for the commutative case, where the fixed set is a ring and the conjugates of an element generate a quadratic extension of it; a section of examples and a record of what commutativity adds close it. Throughout, $A$ is a ring with $1 \neq 0$, <strong>not assumed commutative</strong>, $R$ is a commutative ring with $1 \neq 0$, and $\sigma$ is an involution; $A^\sigma$ and $R^\sigma$ are the <strong>fixed sets</strong>, which are additive subgroups containing $1$, and which are subrings exactly when closure under multiplication holds. Ideals in the general part are two-sided unless the contrary is said; the vocabulary of ideals, quotients and the opposite ring is <em>Rings</em>, and the commutative results cited are those of <em>Commutative Rings</em>.</p>
+<p>The article has three general sections — the definition and the opposite ring, the symmetric and anti-Hermitian elements, and the ideals, quotients, products and $\sigma$-prime notions — and one for the commutative case, where the fixed set is a ring and the conjugates of an element generate a quadratic extension of it; a section of examples and a record of what commutativity adds close it. Throughout, $A$ is a ring with $1 \neq 0$, <strong>not assumed commutative</strong>, $R$ is a commutative ring with $1 \neq 0$, and $\sigma$ is an involution; $A^\sigma$ and $R^\sigma$ are the <strong>fixed sets</strong>, which are additive subgroups containing $1$, and which are subrings exactly when closure under multiplication holds. Ideals in the general part are two-sided unless the contrary is said; the vocabulary of ideals, quotients and the opposite ring is <em>Rings</em>, and the commutative results cited are those of <em>Commutative Rings</em>.</p>
 <p>The article stays inside Algebra. Nothing here is measured: the two conjugates of an element are multiplied and added, and nothing is read off them but the two operations of the ring. The forms that an involution can carry, the classification of the involutions of a central simple algebra, and the notions a form or a pairing defines are <em>Hilbert Algebras</em>, in Part II, and are named in this article only to mark the boundary; no definition or proof below uses them. The involutions of rings of functions and of algebras carrying a topology are Part II and Part III, and are not used here either.</p>
 <hr />
 <h2 id="involutions-of-a-ring">Involutions of a Ring</h2>
@@ -89,7 +89,7 @@ $$</p>
 <p>$$
 A^\sigma = \{ a \in A : \sigma(a) = a \},
 $$</p>
-<p>and its elements are the <strong>symmetric</strong> elements; an element with $\sigma(a) = -a$ is <strong>skew</strong>. The elements $a$ and $\sigma(a)$ are the two <strong>conjugates</strong> of $a$.</p>
+<p>and its elements are the <strong>symmetric</strong> elements; an element with $\sigma(a) = -a$ is <strong>anti-Hermitian</strong>. The elements $a$ and $\sigma(a)$ are the two <strong>conjugates</strong> of $a$.</p>
 <p><strong>Definition (morphisms).</strong> A <strong>homomorphism</strong> $(A,\sigma) \to (B,\tau)$ of involutive rings is a unital ring homomorphism $\varphi : A \to B$ with $\varphi \circ \sigma = \tau \circ \varphi$. Two involutions $\sigma, \sigma'$ of the same ring are <strong>equivalent</strong> when $\sigma' = \varphi \sigma \varphi^{-1}$ for a ring automorphism $\varphi$; an automorphism of the involutive ring is a ring automorphism commuting with the involution. In the commutative case the involutions of a ring are the automorphisms of order dividing two, so the classification of involutions is a question about automorphism groups, which is <em>Ring and Field Automorphisms</em>.</p>
 <h3 id="the-opposite-ring">The Opposite Ring</h3>
 <p><strong>Definition.</strong> The <strong>opposite ring</strong> $A_{\mathrm{opp}}$ has the same additive group as $A$ and the multiplication $a \cdot b = ba$.</p>
@@ -117,29 +117,29 @@ $$</p>
 <p><strong>Example (products).</strong> On a product $A_1 \times A_2$ the componentwise rule $\sigma(a_1,a_2) = (\sigma_1(a_1), \sigma_2(a_2))$ is an involution. On $A \times A$ the <strong>swap</strong> $\varsigma(a_1,a_2) = (a_2,a_1)$ is an involution with fixed set the diagonal, and more generally an <strong>anti-isomorphism</strong> $\tau : A \to B$, that is a bijection with $\tau(ab) = \tau(b)\tau(a)$, gives the involution $(a,b) \mapsto (\tau^{-1}(b), \tau(a))$ of $A \times B$, whose fixed set is the graph of $\tau$. The construction needs $\tau$ anti-multiplicative: with an isomorphism in its place the map still has order two on the underlying set but is not an anti-automorphism unless the two components commute, and the two constructions are of different nature, an involution of a factor being an anti-automorphism while the swap is an automorphism of the product.</p>
 <p><strong>Example (commutative rings).</strong> On $\mathbb{C}$ the conjugation $z \mapsto \bar z$ is an involution with fixed ring $\mathbb{R}$; on $\mathbb{Z}[i]$ the conjugation $a+bi \mapsto a-bi$ has fixed ring $\mathbb{Z}$; and on $\mathbb{R}[x]$ the coefficientwise involution induced by the identity of $\mathbb{R}$ is the identity, the nontrivial involutions of $\mathbb{R}[x]$ being the affine ones of the section on polynomial rings below.</p>
 <hr />
-<h2 id="the-symmetric-and-skew-elements">The Symmetric and Skew Elements</h2>
+<h2 id="the-symmetric-and-antisymmetric-elements">The Symmetric and Antisymmetric Elements</h2>
 <h3 id="the-additive-decomposition">The Additive Decomposition</h3>
-<p><strong>Definition.</strong> Let $\sigma$ be an involution of $A$ and let $2$ be invertible in $A$. The <strong>symmetric</strong> and <strong>skew</strong> elements are</p>
+<p><strong>Definition.</strong> Let $\sigma$ be an involution of $A$ and let $2$ be invertible in $A$. The <strong>symmetric</strong> and <strong>anti-Hermitian</strong> elements are</p>
 <p>$$
 \mathrm{sym}(A,\sigma) = \{a \in A : \sigma(a) = a\} = A^\sigma, \qquad \mathrm{Skew}(A,\sigma) = \{a \in A : \sigma(a) = -a\}.
 $$</p>
-<p><strong>Proposition.</strong> Let $2$ be invertible in $A$. For $a \in A$ put $a_+ = \tfrac12(a+\sigma(a))$ and $a_- = \tfrac12(a-\sigma(a))$. Then $a_+$ is symmetric, $a_-$ is skew, and $a = a_+ + a_-$. The sum</p>
+<p><strong>Proposition.</strong> Let $2$ be invertible in $A$. For $a \in A$ put $a_+ = \tfrac12(a+\sigma(a))$ and $a_- = \tfrac12(a-\sigma(a))$. Then $a_+$ is symmetric, $a_-$ is antisymmetric, and $a = a_+ + a_-$. The sum</p>
 <p>$$
 \boxed{\;A = \mathrm{sym}(A,\sigma) \oplus \mathrm{Skew}(A,\sigma)\;}
 $$</p>
 <p>is direct, and the two summands are the eigenspaces of $\sigma$ for the eigenvalues $+1$ and $-1$.</p>
-<p><strong>Proof.</strong> $\sigma(a_+) = \tfrac12(\sigma(a)+\sigma^2(a)) = \tfrac12(\sigma(a)+a) = a_+$ and $\sigma(a_-) = \tfrac12(\sigma(a)-\sigma^2(a)) = \tfrac12(\sigma(a)-a) = -a_-$, both computations using only additivity and $\sigma^2 = \mathrm{id}$, so no commutativity is needed. If $a$ is both symmetric and skew then $a = -a$, so $2a = 0$ and $a = 0$ because $2$ is invertible.</p>
+<p><strong>Proof.</strong> $\sigma(a_+) = \tfrac12(\sigma(a)+\sigma^2(a)) = \tfrac12(\sigma(a)+a) = a_+$ and $\sigma(a_-) = \tfrac12(\sigma(a)-\sigma^2(a)) = \tfrac12(\sigma(a)-a) = -a_-$, both computations using only additivity and $\sigma^2 = \mathrm{id}$, so no commutativity is needed. If $a$ is both symmetric and antisymmetric then $a = -a$, so $2a = 0$ and $a = 0$ because $2$ is invertible.</p>
 <p><strong>Remark.</strong> When $2$ is not invertible the two sets meet in $\{a : 2a = 0\}$, and the sum need not be direct; over $\mathbb{F}_2$ they coincide, since $-a = a$ there.</p>
 <h3 id="the-failure-of-the-grading-without-commutativity">The Failure of the Grading without Commutativity</h3>
-<p>In the commutative case the involution makes the ring a $\mathbb{Z}/2\mathbb{Z}$-graded ring, with even part the fixed subring and odd part the skew elements. Without commutativity that structure fails at the first product.</p>
-<p><strong>Proposition.</strong> Let $2$ be invertible in $A$. Then $A^\sigma$ is closed under multiplication exactly when $xy = yx$ for all $x, y \in A^\sigma$, and the product of two skew elements is symmetric exactly when $xy = yx$ for all $x, y \in \mathrm{Skew}(A,\sigma)$.</p>
-<p><strong>Proof.</strong> For $x, y$ fixed, $\sigma(xy) = \sigma(y)\sigma(x) = yx$, so $xy$ is fixed exactly when $xy = yx$. For skew $x, y$ one has $\sigma(xy) = (-y)(-x) = yx$, while $xy$ is skew exactly when $\sigma(xy) = -xy$; the two agree exactly when $xy = yx$.</p>
+<p>In the commutative case the involution makes the ring a $\mathbb{Z}/2\mathbb{Z}$-graded ring, with even part the fixed subring and odd part the anti-Hermitian elements. Without commutativity that structure fails at the first product.</p>
+<p><strong>Proposition.</strong> Let $2$ be invertible in $A$. Then $A^\sigma$ is closed under multiplication exactly when $xy = yx$ for all $x, y \in A^\sigma$, and the product of two antisymmetric elements is symmetric exactly when $xy = yx$ for all $x, y \in \mathrm{Skew}(A,\sigma)$.</p>
+<p><strong>Proof.</strong> For $x, y$ fixed, $\sigma(xy) = \sigma(y)\sigma(x) = yx$, so $xy$ is fixed exactly when $xy = yx$. For anti-Hermitian $x, y$ one has $\sigma(xy) = (-y)(-x) = yx$, while $xy$ is anti-Hermitian exactly when $\sigma(xy) = -xy$; the two agree exactly when $xy = yx$.</p>
 <p><strong>Example (a product of two symmetric elements).</strong> In $M_2(F)$ with the transpose, the symmetric elements $x = \begin{pmatrix}1&1\\1&0\end{pmatrix}$ and $y = \begin{pmatrix}0&1\\1&1\end{pmatrix}$ have $xy = \begin{pmatrix}1&2\\0&1\end{pmatrix}$, which is not symmetric; the fixed set is not a subring.</p>
-<p><strong>Example (a product of two skew elements in $M_3$).</strong> Let $A = M_3(F)$ with $2$ invertible in $F$ and $\sigma$ the transpose, and let $a = e_{12}-e_{21}$ and $b = e_{13}-e_{31}$, both skew. Then</p>
+<p><strong>Example (a product of two antisymmetric elements in $M_3$).</strong> Let $A = M_3(F)$ with $2$ invertible in $F$ and $\sigma$ the transpose, and let $a = e_{12}-e_{21}$ and $b = e_{13}-e_{31}$, both antisymmetric. Then</p>
 <p>$$
 ab = (e_{12}-e_{21})(e_{13}-e_{31}) = -e_{23},
 $$</p>
-<p>which is neither symmetric nor skew. So a product of skew elements can be neither, and the grading of the commutative case has no general analogue.</p>
+<p>which is neither symmetric nor antisymmetric. So a product of antisymmetric elements can be neither, and the grading of the commutative case has no general analogue.</p>
 <h3 id="the-fixed-set">The Fixed Set</h3>
 <p><strong>Proposition.</strong> The fixed set $A^\sigma$ is an additive subgroup containing $1$ and is closed under $a \mapsto \sigma(a)$. If $2$ is invertible, the <strong>averaging map</strong></p>
 <p>$$
@@ -196,16 +196,16 @@ $$</p>
 <h2 id="the-commutative-case">The Commutative Case</h2>
 <h3 id="involutions-as-automorphisms">Involutions as Automorphisms</h3>
 <p>From here $R$ is a <strong>commutative ring with identity</strong> $1 \neq 0$ and $\sigma$ is an involution. Because $R = R_{\mathrm{opp}}$, the anti-multiplicativity of the definition is the equation $\sigma(ab) = \sigma(a)\sigma(b)$ itself, so $\sigma$ is an automorphism of $R$ of order dividing two, the fixed set $R^\sigma$ is a <strong>subring</strong>, and the grading of the next section is available. Everything in the general part applies: $\mathrm{sym}(R,\sigma) = R^\sigma$ and $\mathrm{Skew}(R,\sigma) = R^-$.</p>
-<h3 id="the-fixed-subring-and-the-symmetricskew-decomposition">The Fixed Subring and the Symmetric–Skew Decomposition</h3>
+<h3 id="the-fixed-subring-and-the-symmetricantisymmetric-decomposition">The Fixed Subring and the Symmetric–Antisymmetric Decomposition</h3>
 <p><strong>Proposition.</strong> Let $2$ be invertible in $R$. For $a \in R$ put $a_+ = \tfrac12(a+\sigma(a))$ and $a_- = \tfrac12(a-\sigma(a))$. Then $a_+ \in R^\sigma$, $\sigma(a_-) = -a_-$, $a = a_+ + a_-$, and the sum</p>
 <p>$$
 R = R^\sigma \oplus R^-
 $$</p>
 <p>with $R^- = \{a \in R : \sigma(a) = -a\}$ is direct.</p>
-<p><strong>Proof.</strong> The general computation of the symmetric and skew elements plus the fact that $\sigma$ is multiplicative, which makes $a_+$ and $a_-$ fixed-ring elements of the stated kinds.</p>
+<p><strong>Proof.</strong> The general computation of the symmetric and antisymmetric elements plus the fact that $\sigma$ is multiplicative, which makes $a_+$ and $a_-$ fixed-ring elements of the stated kinds.</p>
 <p><strong>Proposition (multiplication).</strong> $R^\sigma R^\sigma \subseteq R^\sigma$, $R^\sigma R^- \subseteq R^-$ and $R^-R^- \subseteq R^\sigma$.</p>
 <p><strong>Proof.</strong> Multiplicativity of the automorphism $\sigma$: for $x, y \in R^-$ one has $\sigma(xy) = \sigma(x)\sigma(y) = (-x)(-y) = xy$, and the other two are immediate.</p>
-<p>So the involution makes $R$ a <strong>$\mathbb{Z}/2\mathbb{Z}$-graded ring</strong>, with even part the fixed subring and odd part the skew elements.</p>
+<p>So the involution makes $R$ a <strong>$\mathbb{Z}/2\mathbb{Z}$-graded ring</strong>, with even part the fixed subring and odd part the anti-Hermitian elements.</p>
 <p><strong>Remark (the hypothesis is needed).</strong> In $\mathbb{F}_2[x]$ the map $\sigma(x) = x+1$ is an involution by the affine criterion below, and $-f = f$ there, so $R^- = R^\sigma$; hence $R^\sigma + R^- = R^\sigma \neq R$ and there is no eigenspace decomposition.</p>
 <h3 id="the-conjugates-and-the-quadratic-relation">The Conjugates and the Quadratic Relation</h3>
 <p><strong>Definition.</strong> For $x \in R$ the <strong>conjugate product</strong> and the <strong>conjugate sum</strong> are</p>
@@ -222,7 +222,7 @@ $$</p>
 X^2 - (x+\sigma(x))\,X + x\sigma(x) = 0
 $$</p>
 <p>with coefficients in $R^\sigma$.</p>
-<p><strong>(f)</strong> The square of the skew element $x-\sigma(x)$ is fixed:</p>
+<p><strong>(f)</strong> The square of the anti-Hermitian element $x-\sigma(x)$ is fixed:</p>
 <p>$$
 (x-\sigma(x))^2 = (x+\sigma(x))^2 - 4\,x\sigma(x) \in R^\sigma .
 $$</p>
@@ -268,7 +268,7 @@ $$</p>
 <p>so $F = F^\sigma(\alpha)$.</p>
 <p><strong>Proof.</strong> The fixed field is proper exactly because $\sigma \neq \mathrm{id}$. Artin's theorem, of <em>Galois Theory</em>, gives $[F:F^\sigma] \leq |\langle\sigma\rangle| = 2$ with equality because the extension is proper, and identifies the Galois group. For $\alpha \notin F^\sigma$ the quadratic relation gives degree at most two over $F^\sigma$, and $\alpha \notin F^\sigma$ gives degree at least two, so that quadratic is the minimal polynomial.</p>
 <p><strong>Theorem (the two characteristics).</strong> Let $F$ be a field with $\sigma \neq \mathrm{id}$ and let $\alpha \in F\setminus F^\sigma$.</p>
-<p><strong>(a)</strong> If $\operatorname{char}F \neq 2$ then $\delta = \alpha-\sigma(\alpha)$ is nonzero and skew, with</p>
+<p><strong>(a)</strong> If $\operatorname{char}F \neq 2$ then $\delta = \alpha-\sigma(\alpha)$ is nonzero and anti-Hermitian, with</p>
 <p>$$
 \delta^2 = (\alpha+\sigma(\alpha))^2 - 4\,\alpha\sigma(\alpha) \in F^\sigma ;
 $$</p>
@@ -294,7 +294,7 @@ $$</p>
 <th>$A$</th>
 <th>$\sigma$</th>
 <th>Symmetric</th>
-<th>Skew</th>
+<th>Antisymmetric</th>
 </tr>
 </thead>
 <tbody>
@@ -349,7 +349,7 @@ $$</p>
 <p>Each item is a statement of the general part that fails without commutativity, with its commutative repair.</p>
 <p><strong>A. The anti-automorphism condition.</strong> In the general case $\sigma(ab) = \sigma(b)\sigma(a)$ is a genuine constraint, and the involutions of a ring are a finer datum than its automorphisms; in the commutative case the two orders of the factors agree and $\sigma$ is an automorphism of order dividing two, so a commutative involution is nothing but an automorphism of order at most two.</p>
 <p><strong>B. The fixed set is a subring.</strong> $A^\sigma$ is closed under multiplication exactly when its elements commute pairwise; $R^\sigma$ is always a subring.</p>
-<p><strong>C. The $\mathbb{Z}/2\mathbb{Z}$-grading.</strong> The product of two skew elements is symmetric in the commutative case and fails in $M_3(F)$ with the transpose, where the product of $e_{12}-e_{21}$ and $e_{13}-e_{31}$ is $-e_{23}$, neither symmetric nor skew.</p>
+<p><strong>C. The $\mathbb{Z}/2\mathbb{Z}$-grading.</strong> The product of two antisymmetric elements is symmetric in the commutative case and fails in $M_3(F)$ with the transpose, where the product of $e_{12}-e_{21}$ and $e_{13}-e_{31}$ is $-e_{23}$, neither symmetric nor antisymmetric.</p>
 <p><strong>D. The two conjugate products.</strong> $x\sigma(x)$ and $\sigma(x)x$ coincide on a commutative ring; in $M_2(F)$ with the transpose they are $e_{11}$ and $e_{22}$ for $x = e_{12}$.</p>
 <p><strong>E. Multiplicativity of the conjugate product.</strong> $(xy)\sigma(xy) = x\sigma(x)\,y\sigma(y)$ holds in the commutative case; in general $(xy)\sigma(xy) = x\,(y\sigma(y))\,\sigma(x)$, and in $M_2(F)$ with the transpose $x = e_{12}$, $y = e_{21}$ the two sides are $e_{11}$ and $0$.</p>
 <p><strong>F. Symmetry of the conjugate sum.</strong> $xy+\sigma(xy) = yx+\sigma(yx)$ holds in the commutative case; in general the two are $xy+\sigma(y)\sigma(x)$ and $yx+\sigma(x)\sigma(y)$, unequal for $x = e_{12}$, $y = e_{21}$ in $M_2(F)$ with the transpose.</p>
@@ -359,7 +359,7 @@ $$</p>
 <hr />
 <h2 id="summary">Summary</h2>
 <p>An involution is an anti-automorphism of order two; the definition needs no commutativity, and it is the same datum as a bijection $A \to A_{\mathrm{opp}}$ of order two, so a ring with an involution is isomorphic to its opposite ring. The opposite ring of a commutative ring is the ring itself, and there the involution is an automorphism of order dividing two, so the commutative case is a second theory of the same datum and not a specialisation of the general one.</p>
-<p>In general the fixed set $A^\sigma$ is an additive subgroup containing $1$ and closed under the involution, and it is a subring exactly when its elements commute pairwise; the symmetric and skew elements are the eigenspaces of $\sigma$ when $2$ is invertible, with $A = \mathrm{sym} \oplus \mathrm{Skew}$, but the product of two skew elements need not be symmetric, and in $M_3$ with the transpose it is neither symmetric nor skew. The conjugate products $x\sigma(x)$ and $\sigma(x)x$ are symmetric but differ in general, the multiplicative law is $(xy)\sigma(xy) = x\,(y\sigma(y))\,\sigma(x)$, the conjugate sum satisfies $xy+\sigma(y)\sigma(x)$ with no symmetry, and the quadratic relation $a^2-(a+\sigma(a))a+\sigma(a)a = 0$ has coefficients in $A^\sigma$ but gives no integrality because $A^\sigma$ need not be central. A $\sigma$-ideal is an ideal with $\sigma(I) = I$; the $\sigma$-prime ideals are those for which a product of $\sigma$-ideals inside forces a factor inside, every prime $\sigma$-ideal is $\sigma$-prime, the condition $aAb^{*} \neq 0$ is a sufficient elementwise criterion for $\sigma$-primality but not a characterisation, and the converse of the ideal-theoretic implication fails: $M_n(F) \times M_n(F)$ with the swap involution is $\sigma$-prime and not prime, and $(x^2+1)$ in $\mathbb{C}[x]$ with the coefficientwise conjugation is a $\sigma$-prime ideal that is not prime. An involution passes to a quotient by a $\sigma$-ideal, where the fixed set of the quotient can be strictly larger than the image of the fixed set, and to a product, where the swap makes the $\sigma$-ideals the $I \times I$.</p>
+<p>In general the fixed set $A^\sigma$ is an additive subgroup containing $1$ and closed under the involution, and it is a subring exactly when its elements commute pairwise; the symmetric and anti-Hermitian elements are the eigenspaces of $\sigma$ when $2$ is invertible, with $A = \mathrm{sym} \oplus \mathrm{Skew}$, but the product of two anti-Hermitian elements need not be symmetric, and in $M_3$ with the transpose it is neither symmetric nor anti-Hermitian. The conjugate products $x\sigma(x)$ and $\sigma(x)x$ are symmetric but differ in general, the multiplicative law is $(xy)\sigma(xy) = x\,(y\sigma(y))\,\sigma(x)$, the conjugate sum satisfies $xy+\sigma(y)\sigma(x)$ with no symmetry, and the quadratic relation $a^2-(a+\sigma(a))a+\sigma(a)a = 0$ has coefficients in $A^\sigma$ but gives no integrality because $A^\sigma$ need not be central. A $\sigma$-ideal is an ideal with $\sigma(I) = I$; the $\sigma$-prime ideals are those for which a product of $\sigma$-ideals inside forces a factor inside, every prime $\sigma$-ideal is $\sigma$-prime, the condition $aAb^{*} \neq 0$ is a sufficient elementwise criterion for $\sigma$-primality but not a characterisation, and the converse of the ideal-theoretic implication fails: $M_n(F) \times M_n(F)$ with the swap involution is $\sigma$-prime and not prime, and $(x^2+1)$ in $\mathbb{C}[x]$ with the coefficientwise conjugation is a $\sigma$-prime ideal that is not prime. An involution passes to a quotient by a $\sigma$-ideal, where the fixed set of the quotient can be strictly larger than the image of the fixed set, and to a product, where the swap makes the $\sigma$-ideals the $I \times I$.</p>
 <p>In the commutative case the fixed set is the subring $R^\sigma$, the ring is $\mathbb{Z}/2\mathbb{Z}$-graded by the eigenspaces when $2$ is invertible, and the conjugate product is multiplicative and the conjugate sum is symmetric, so that every element satisfies the monic quadratic $X^2-(x+\sigma(x))X+x\sigma(x)=0$ with coefficients in $R^\sigma$ and $R$ is integral over $R^\sigma$; the square $(x-\sigma(x))^2$ is a fixed element. Affine involutions of $R[x]$ are classified by $a\sigma(a) = 1$ and $\sigma(a)b+\sigma(b) = 0$, with fixed subrings $R^\sigma[x]$ and $R^\sigma[x^2]+R^-x$ for the two basic cases; an involution on a $\sigma$-stable localization has fixed subring the localization of the fixed subring, and $\operatorname{Frac}(R)^\sigma = \operatorname{Frac}(R^\sigma)$ for a domain. A field with a nontrivial involution is a quadratic Galois extension of its fixed field, quadratic in characteristic not two and Artin–Schreier in characteristic two, and no nontrivial involution of an ordered field preserves the order. The fixed subring is not a rung of the divisibility chain: $k[x^2,xy,y^2]$ is not a unique factorisation domain although $k[x,y]$ is, and $\mathbb{Z}[\sqrt{-5}]$ is not one although its fixed ring $\mathbb{Z}$ is.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -384,7 +384,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathrm{sym}(A,\sigma)$, $\mathrm{Skew}(A,\sigma)$</td>
-<td>Symmetric and skew elements, the eigenspaces of $\sigma$</td>
+<td>Symmetric and anti-Hermitian elements, the eigenspaces of $\sigma$</td>
 </tr>
 <tr>
 <td>$a_+, a_-$</td>
@@ -412,7 +412,7 @@ $$</p>
 </tr>
 <tr>
 <td>$R$, $R^\sigma$, $R^-$</td>
-<td>Commutative ring with involution, fixed subring, skew part</td>
+<td>Commutative ring with involution, fixed subring, anti-Hermitian part</td>
 </tr>
 <tr>
 <td>$x\sigma(x)$, $x+\sigma(x)$</td>

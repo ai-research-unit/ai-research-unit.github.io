@@ -70,7 +70,7 @@
       <div class="article-body">
         <h1 id="the-derivation-math0-and-its-skewness-for-the-trace-form-at-math1"><strong>The Derivation $X\mapsto[A,X]$ and Its Skewness for the Trace Form at $n=4$</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p><strong>Every commutator map $\operatorname{ad}_A(X)=[A,X]$ is a derivation of $M_4(\mathbb{C})$, every derivation is of this form because the algebra is central simple, and the space of them is $\mathfrak{sl}_4$ of dimension $15$; the map is skew for the trace form for every $A$ and skew for the Hilbert–Schmidt form only when $A$ is anti-Hermitian, and the difference between the two statements is the involution, not the derivation.</strong></p>
+<p><strong>Every commutator map $\operatorname{ad}_A(X)=[A,X]$ is a derivation of $M_4(\mathbb{C})$, every derivation is of this form because the algebra is central simple, and the space of them is $\mathfrak{sl}_4$ of dimension $15$; the map is anti-self-adjoint for the trace form for every $A$ and anti-self-adjoint for the Hilbert–Schmidt form only when $A$ is anti-Hermitian, and the difference between the two statements is the involution, not the derivation.</strong></p>
 <p>The article proves the Leibniz rule and the representation property, records the inner-derivation theorem with its dimension count, computes the two skewness conditions and their adjoints, determines the spectrum of $\operatorname{ad}_A$, and explains why the trace form cannot distinguish the symmetric from the antisymmetric directions while the Hilbert–Schmidt form can.</p>
 <p>It assumes <em>The Trace Form and Its Signature on the Two Halves of $M_4(\mathbb{C})$</em> and <em>The Derivations and the Automorphisms of $M_4(\mathbb{C})$</em>, where the inner-derivation theorem is proved in full. The case $n=2$ is <em>The Derivation Commutator and Its Skewness for the Trace Form</em>; the operator form is <em>The Adjoints and the Polar Decomposition of an Operator at $n=4$</em>.</p>
 <h2 id="the-commutator-is-a-derivation">The Commutator Is a Derivation</h2>
@@ -109,9 +109,9 @@ $$</p>
 <p><strong>Definition.</strong> $\langle X,Y\rangle=\operatorname{tr}(X^{\ast}Y)$, positive definite.</p>
 <p><strong>Proposition.</strong> $\operatorname{ad}_A^{\ast}=\operatorname{ad}_{A^{\ast}}$ for the Hilbert–Schmidt form.</p>
 <p><strong>Proof.</strong> $\langle\operatorname{ad}_A X,Y\rangle=\operatorname{tr}((AX-XA)^{\ast}Y)=\operatorname{tr}(X^{\ast}A^{\ast}Y)-\operatorname{tr}(A^{\ast}X^{\ast}Y)=\langle X,A^{\ast}Y\rangle-\langle X,YA^{\ast}\rangle=\langle X,\operatorname{ad}_{A^{\ast}}Y\rangle$ after moving $A^{\ast}$ to the right by cyclicity.</p>
-<p><strong>Corollary.</strong> $\operatorname{ad}_A$ is skew for the Hilbert–Schmidt form exactly when $A$ differs from a anti-Hermitian matrix by a real scalar.</p>
+<p><strong>Corollary.</strong> $\operatorname{ad}_A$ is anti-self-adjoint for the Hilbert–Schmidt form exactly when $A$ differs from an anti-Hermitian matrix by a real scalar.</p>
 <p><strong>Proof.</strong> Skewness is $\operatorname{ad}_{A^{\ast}}=-\operatorname{ad}_A$, that is $A^{\ast}+A\in\mathbb{C}\mathrm I_4$; writing $A^{\ast}+A=\mu\mathrm I$ and taking adjoints gives $\bar\mu=\mu$, so $\mu$ is real and $A-\tfrac{\mu}{2}\mathrm I_4$ is anti-Hermitian, with the same adjoint map since the scalar part is central.</p>
-<p><strong>Corollary.</strong> The derivations that are skew for the Hilbert–Schmidt form are exactly those of $\operatorname{ad}\mathfrak{u}(4)$, of dimension $15$.</p>
+<p><strong>Corollary.</strong> The derivations that are anti-self-adjoint for the Hilbert–Schmidt form are exactly those of $\operatorname{ad}\mathfrak{u}(4)$, of dimension $15$.</p>
 <p><strong>Proof.</strong> The anti-Hermitian matrices form $\mathfrak{u}(4)$ of real dimension $16$, and the scalars in it are the single imaginary line, so the image has dimension $15$.</p>
 <p><strong>The adjoint is a different operator.</strong> For the trace form the adjoint of $\operatorname{ad}_A$ is $-\operatorname{ad}_A$; for the Hilbert–Schmidt form it is $\operatorname{ad}_{A^{\ast}}$, which is a different derivation unless $A$ is anti-Hermitian.</p>
 <p><strong>Proof.</strong> Compare the two displayed formulas.</p>
@@ -119,15 +119,15 @@ $$</p>
 <p><strong>Proposition.</strong> The condition for skewness for $\beta$ involves no involution; the condition for skewness for $\langle\cdot,\cdot\rangle$ involves the adjoint ${}^{\ast}$.</p>
 <p><strong>Proof.</strong> The first condition is an identity in $A$, the second is the equation $A^{\ast}+A\in\mathbb{C}\mathrm I$.</p>
 <p><strong>Corollary.</strong> The trace form sees the whole of $\mathfrak{gl}_4$ inside $\mathfrak{so}(10,6)$, while the Hilbert–Schmidt form sees only $\mathfrak{u}(4)$ inside $\mathfrak{so}(16)$.</p>
-<p><strong>Proof.</strong> The two invariance groups are $\mathrm{GL}_4$ and $U(4)$, and the Lie algebras of skew endomorphisms contain the respective images of $\operatorname{ad}$.</p>
-<p><strong>The moral.</strong> Every derivation is skew for the trace form because that form is invariant under the largest possible group; a derivation is skew for the Hilbert–Schmidt form only when its generator lies in the Lie algebra of the smaller group. The involution ${}^{\ast}$ chooses the smaller group, and the derivation is the same object in both statements.</p>
-<p><strong>The two halves of the statement.</strong> For $A$ symmetric, $\operatorname{ad}_A$ is skew for $\beta$ and self-adjoint for $\langle\cdot,\cdot\rangle$; for $A$ antisymmetric, it is skew for both.</p>
+<p><strong>Proof.</strong> The two invariance groups are $\mathrm{GL}_4$ and $U(4)$, and the Lie algebras of anti-self-adjoint endomorphisms contain the respective images of $\operatorname{ad}$.</p>
+<p><strong>The moral.</strong> Every derivation is anti-self-adjoint for the trace form because that form is invariant under the largest possible group; a derivation is anti-self-adjoint for the Hilbert–Schmidt form only when its generator lies in the Lie algebra of the smaller group. The involution ${}^{\ast}$ chooses the smaller group, and the derivation is the same object in both statements.</p>
+<p><strong>The two halves of the statement.</strong> For $A$ symmetric, $\operatorname{ad}_A$ is anti-self-adjoint for $\beta$ and self-adjoint for $\langle\cdot,\cdot\rangle$; for $A$ antisymmetric, it is anti-self-adjoint for both.</p>
 <p><strong>Proof.</strong> For symmetric $A$, $A^{\ast}=A$, so $\operatorname{ad}_A^{\ast}=\operatorname{ad}_A$; for antisymmetric $A$, $A^{\ast}=-A$, so the adjoint is $-\operatorname{ad}_A$.</p>
 <p><strong>Corollary.</strong> The space of inner derivations has dimension $15$, the dimension of $\mathfrak{sl}_4$, since the scalars act by zero and every traceless matrix gives a nonzero derivation.</p>
 <p><strong>Proof.</strong> The kernel of $A\mapsto\operatorname{ad}_A$ is the centre, which is the scalars.</p>
 <h2 id="summary">Summary</h2>
 <p>The commutator map is a derivation for every element, the representation property holds by the Jacobi identity, and every derivation of the algebra is inner, so the derivations form $\mathfrak{sl}_4$ of dimension $15$.</p>
-<p>The map is skew for the trace pairing for every $A$, with no condition, because the trace is cyclically invariant; it is skew for the Hilbert–Schmidt form exactly when $A$ is anti-Hermitian up to a real scalar, that is when the derivation lies in $\operatorname{ad}\mathfrak{u}(4)$.</p>
+<p>The map is anti-self-adjoint for the trace pairing for every $A$, with no condition, because the trace is cyclically invariant; it is anti-self-adjoint for the Hilbert–Schmidt form exactly when $A$ is anti-Hermitian up to a real scalar, that is when the derivation lies in $\operatorname{ad}\mathfrak{u}(4)$.</p>
 <p>The difference between the two statements is the involution and not the derivation: the trace form is invariant under all of $\mathrm{GL}_4$, the Hilbert–Schmidt form only under $U(4)$, and the adjoint needed for the second statement is built from the conjugate transpose. The spectrum of $\operatorname{ad}_A$ is the sixteen differences of eigenvalues, and the kernel is the centraliser, of dimension at least four.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -160,7 +160,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\operatorname{ad}\mathfrak{u}(4)$</td>
-<td>the derivations skew for the Hilbert–Schmidt form</td>
+<td>the derivations anti-self-adjoint for the Hilbert–Schmidt form</td>
 </tr>
 </tbody>
 </table></div>

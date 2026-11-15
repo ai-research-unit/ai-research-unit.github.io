@@ -71,7 +71,7 @@
         <h1 id="the-two-halves-symmetric-and-antisymmetric"><strong>The Two Halves: Symmetric and Antisymmetric</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p><strong>The transpose cuts $M_n(\mathbb{R})$ into a $+1$ half and a $-1$ half, and the two halves are not alike: one is a Jordan algebra, the other a Lie algebra, and neither is closed under the product of the algebra it came from.</strong></p>
-<p>The article proves the split, counts the two dimensions, and exhibits with explicit matrices at $n=2$ and $n=3$ that the ordinary product leaves both halves. It proves that the square of a skew matrix is symmetric and negative semidefinite, that a skew matrix of odd order is singular, and that the two halves are orthogonal for the trace form. It assumes <em>The Matrix Algebra $M_n(\mathbb{R})$</em> for the matrix units and the trace, and defers the comparison with the symplectic fixed space to <em>The Two Classes Compared: $\operatorname{Sym}_n$ and $\mathfrak{sp}_n$ Have the Same Dimension</em>.</p>
+<p>The article proves the split, counts the two dimensions, and exhibits with explicit matrices at $n=2$ and $n=3$ that the ordinary product leaves both halves. It proves that the square of an antisymmetric matrix is symmetric and negative semidefinite, that an antisymmetric matrix of odd order is singular, and that the two halves are orthogonal for the trace form. It assumes <em>The Matrix Algebra $M_n(\mathbb{R})$</em> for the matrix units and the trace, and defers the comparison with the symplectic fixed space to <em>The Two Classes Compared: $\operatorname{Sym}_n$ and $\mathfrak{sp}_n$ Have the Same Dimension</em>.</p>
 <h2 id="the-transpose">The Transpose</h2>
 <p><strong>The transpose is an $\mathbb{R}$-linear anti-automorphism of order two.</strong> For $A,B\in M_n(\mathbb{R})$ and $\lambda\in\mathbb{R}$,</p>
 <p>$$
@@ -81,13 +81,13 @@ $$</p>
 <p><strong>On matrix units the transpose exchanges the two indices.</strong> $E_{ij}^{\mathsf T}=E_{ji}$. So it fixes each diagonal unit $E_{ii}$ and it swaps the pair $E_{ij}$, $E_{ji}$ for $i\ne j$.</p>
 <p><strong>The trace and the determinant do not see the transpose.</strong> $\operatorname{tr}(A^{\mathsf T})=\operatorname{tr}A$ and $\det(A^{\mathsf T})=\det A$. Both follow from the Leibniz formula, whose right-hand side is unchanged when every permutation is replaced by its inverse.</p>
 <h2 id="the-two-eigenspaces">The Two Eigenspaces</h2>
-<p><strong>Every matrix is the sum of a symmetric and a skew matrix, in exactly one way.</strong></p>
+<p><strong>Every matrix is the sum of a symmetric and an antisymmetric matrix, in exactly one way.</strong></p>
 <p>$$
 A=\underbrace{\tfrac12(A+A^{\mathsf T})}_{S}+\underbrace{\tfrac12(A-A^{\mathsf T})}_{K},\qquad S^{\mathsf T}=S,\qquad K^{\mathsf T}=-K.
 $$</p>
 <p><strong>Definition.</strong> $\operatorname{Sym}_n=\{S\in M_n(\mathbb{R}):S^{\mathsf T}=S\}$ and $\operatorname{Skew}_n=\{K\in M_n(\mathbb{R}):K^{\mathsf T}=-K\}$.</p>
-<p><strong>The two halves are the eigenspaces, so they meet only at zero.</strong> If $X$ is both symmetric and skew then $X=X^{\mathsf T}=-X$, hence $X=0$. The two formulas above give the projections, and they add to the identity map.</p>
-<p><strong>The dimensions are $n(n+1)/2$ and $n(n-1)/2$.</strong> A symmetric matrix is free on the diagonal and above it, which is $n+\binom{n}{2}$ entries. A skew matrix is free strictly above the diagonal, which is $\binom{n}{2}$ entries, and its diagonal is zero. Hence</p>
+<p><strong>The two halves are the eigenspaces, so they meet only at zero.</strong> If $X$ is both symmetric and antisymmetric then $X=X^{\mathsf T}=-X$, hence $X=0$. The two formulas above give the projections, and they add to the identity map.</p>
+<p><strong>The dimensions are $n(n+1)/2$ and $n(n-1)/2$.</strong> A symmetric matrix is free on the diagonal and above it, which is $n+\binom{n}{2}$ entries. An antisymmetric matrix is free strictly above the diagonal, which is $\binom{n}{2}$ entries, and its diagonal is zero. Hence</p>
 <p>$$
 \dim\operatorname{Sym}_n=\frac{n(n+1)}{2},\qquad \dim\operatorname{Skew}_n=\frac{n(n-1)}{2},\qquad \frac{n(n+1)}{2}+\frac{n(n-1)}{2}=n^{2}.
 $$</p>
@@ -98,12 +98,12 @@ $$</p>
 (X\circ Y)^{\mathsf T}=\tfrac12\bigl((XY)^{\mathsf T}+(YX)^{\mathsf T}\bigr)=\tfrac12(YX+XY)=X\circ Y,
 $$</p>
 <p>so $X\circ Y\in\operatorname{Sym}_n$. The product $\circ$ is commutative and $\mathbb{R}$-bilinear, and it satisfies the Jordan identity $X\circ(Y\circ X^{2})=(X\circ Y)\circ X^{2}$. So $\operatorname{Sym}_n$ is a Jordan algebra with unit $\mathrm{I}$.</p>
-<p><strong>The skew half is closed under the commutator.</strong> For skew $X,Y$,</p>
+<p><strong>The anti-Hermitian half is closed under the commutator.</strong> For anti-Hermitian $X,Y$,</p>
 <p>$$
 [X,Y]^{\mathsf T}=(XY-YX)^{\mathsf T}=Y^{\mathsf T}X^{\mathsf T}-X^{\mathsf T}Y^{\mathsf T}=YX-XY=-[X,Y],
 $$</p>
 <p>so $[X,Y]\in\operatorname{Skew}_n$. The bracket is bilinear, alternating and satisfies the Jacobi identity, which holds in every associative algebra. So $\operatorname{Skew}_n=\mathfrak{so}(n)$ is a Lie algebra.</p>
-<p><strong>The two products are exchanged by the sign, and that is the whole story.</strong> The symmetric half is not closed under the commutator, because $[X,Y]$ is skew for symmetric $X,Y$. The skew half is not closed under the anticommutator, because $X\circ Y$ is symmetric for skew $X,Y$. Each half carries the operation that the other one refuses.</p>
+<p><strong>The two products are exchanged by the sign, and that is the whole story.</strong> The symmetric half is not closed under the commutator, because $[X,Y]$ is anti-self-adjoint for symmetric $X,Y$. The antisymmetric half is not closed under the anticommutator, because $X\circ Y$ is symmetric for antisymmetric $X,Y$. Each half carries the operation that the other one refuses.</p>
 <h2 id="neither-half-is-closed-under-the-product">Neither Half Is Closed under the Product</h2>
 <p><strong>The product of two symmetric matrices is symmetric exactly when they commute.</strong> $(XY)^{\mathsf T}=YX$, so $XY$ is symmetric exactly when $XY=YX$. At $n=2$, with</p>
 <p>$$
@@ -115,18 +115,18 @@ $$</p>
 S_1S_2=\begin{pmatrix}0&1&0\\ 2&0&0\\ 0&0&0\end{pmatrix},
 $$</p>
 <p>which is not symmetric. The diagonal matrix and the permutation matrix commute only when the two diagonal entries they involve are equal.</p>
-<p><strong>The product of two skew matrices is symmetric, so it misses the skew half.</strong> $(KK')^{\mathsf T}=K'^{\mathsf T}K^{\mathsf T}=K'K$, which is the transpose of $KK'$; hence $KK'\in\operatorname{Sym}_n$. At $n=2$, with $K_1=E_{12}-E_{21}$ and $K_2=2E_{12}-2E_{21}$,</p>
+<p><strong>The product of two antisymmetric matrices is symmetric, so it misses the antisymmetric half.</strong> $(KK')^{\mathsf T}=K'^{\mathsf T}K^{\mathsf T}=K'K$, which is the transpose of $KK'$; hence $KK'\in\operatorname{Sym}_n$. At $n=2$, with $K_1=E_{12}-E_{21}$ and $K_2=2E_{12}-2E_{21}$,</p>
 <p>$$
 K_1K_2=\begin{pmatrix}-2&0\\ 0&-2\end{pmatrix},
 $$</p>
-<p>symmetric and not skew. At $n=3$, with $K=E_{12}-E_{21}$ and $L=E_{23}-E_{32}$,</p>
+<p>symmetric and not antisymmetric. At $n=3$, with $K=E_{12}-E_{21}$ and $L=E_{23}-E_{32}$,</p>
 <p>$$
 KL=\begin{pmatrix}0&0&1\\ 0&0&0\\ 0&0&0\end{pmatrix}=E_{13},
 $$</p>
-<p>symmetric again, and again not skew. So the product maps $\operatorname{Skew}_n\times\operatorname{Skew}_n$ into $\operatorname{Sym}_n$ and never onto a nonzero element of $\operatorname{Skew}_n$.</p>
-<p><strong>The square of a symmetric matrix stays symmetric.</strong> $(S^{2})^{\mathsf T}=(S^{\mathsf T})^{2}=S^{2}$, for every symmetric $S$. The square of a skew matrix also stays symmetric, by the previous paragraph. So both halves square into the symmetric half, and only the symmetric half is stable under squaring.</p>
-<h2 id="the-square-of-a-skew-matrix">The Square of a Skew Matrix</h2>
-<p><strong>The square of a skew matrix is symmetric and negative semidefinite.</strong> For skew $K$,</p>
+<p>symmetric again, and again not antisymmetric. So the product maps $\operatorname{Skew}_n\times\operatorname{Skew}_n$ into $\operatorname{Sym}_n$ and never onto a nonzero element of $\operatorname{Skew}_n$.</p>
+<p><strong>The square of a symmetric matrix stays symmetric.</strong> $(S^{2})^{\mathsf T}=(S^{\mathsf T})^{2}=S^{2}$, for every symmetric $S$. The square of an antisymmetric matrix also stays symmetric, by the previous paragraph. So both halves square into the symmetric half, and only the symmetric half is stable under squaring.</p>
+<h2 id="the-square-of-a-anti-hermitian-matrix">The Square of a Anti-Hermitian Matrix</h2>
+<p><strong>The square of an antisymmetric matrix is symmetric and negative semidefinite.</strong> For antisymmetric $K$,</p>
 <p>$$
 K^{2}=-K^{\mathsf T}K,
 $$</p>
@@ -135,20 +135,20 @@ $$</p>
 \langle K^{2}v,v\rangle=-\lVert Kv\rVert^{2}\le0
 $$</p>
 <p>for every $v$. The eigenvalues of $K^{2}$ are therefore real and non-positive, and they are the negatives of the squared singular values of $K$.</p>
-<p><strong>The measurement agrees with the proof.</strong> On $100$ random skew matrices at each of $n=2,3,4$, the square was symmetric and had no positive eigenvalue in $100$ cases out of $100$ at each order.</p>
-<p><strong>This is the inclusion $KK\subseteq SS$ in the notation of the cone of squares.</strong> The set $\{K^{2}:K\in\operatorname{Skew}_n\}$ is contained in the cone of squares of $\operatorname{Sym}_n$, and it is contained in the negative semidefinite cone. The two inclusions are strict: a positive definite symmetric matrix is a square of a symmetric matrix and not a square of a skew matrix.</p>
-<p><strong>The rank of the square is the rank of $K$, and it is even.</strong> A skew matrix has $\ker K=\ker K^{2}$, so the rank of $K^{2}$ equals the rank of $K$. The nonzero eigenvalues of $K^{2}$ come in equal pairs, because the spectrum of $K$ is purely imaginary and conjugate. So the rank of a skew matrix is always even.</p>
+<p><strong>The measurement agrees with the proof.</strong> On $100$ random antisymmetric matrices at each of $n=2,3,4$, the square was symmetric and had no positive eigenvalue in $100$ cases out of $100$ at each order.</p>
+<p><strong>This is the inclusion $KK\subseteq SS$ in the notation of the cone of squares.</strong> The set $\{K^{2}:K\in\operatorname{Skew}_n\}$ is contained in the cone of squares of $\operatorname{Sym}_n$, and it is contained in the negative semidefinite cone. The two inclusions are strict: a positive definite symmetric matrix is a square of a symmetric matrix and not a square of an antisymmetric matrix.</p>
+<p><strong>The rank of the square is the rank of $K$, and it is even.</strong> An antisymmetric matrix has $\ker K=\ker K^{2}$, so the rank of $K^{2}$ equals the rank of $K$. The nonzero eigenvalues of $K^{2}$ come in equal pairs, because the spectrum of $K$ is purely imaginary and conjugate. So the rank of an antisymmetric matrix is always even.</p>
 <h2 id="odd-order-the-determinant-vanishes">Odd Order: the Determinant Vanishes</h2>
-<p><strong>A skew matrix of odd order is singular.</strong> $\det K=\det K^{\mathsf T}=\det(-K)=(-1)^{n}\det K$. For odd $n$ this reads $\det K=-\det K$, hence $\det K=0$.</p>
-<p><strong>The measurement confirms it and shows the even case is different.</strong> Over $100$ random skew matrices the largest $|\det|$ was $0$ at $n=3$ and at $n=5$, and it was $15.6$ at $n=2$ and $181.2$ at $n=4$. The value is nonzero in the even case and exactly zero in the odd case, as the sign argument forces.</p>
-<p><strong>For even order the determinant is a square and is non-negative.</strong> A skew matrix of order $2m$ has $\det K=\operatorname{pf}(K)^{2}$ for the Pfaffian $\operatorname{pf}$, a polynomial of degree $m$ in the entries. So $\det K\ge0$ on $\operatorname{Skew}_{2m}$, and the zero set of the determinant is the zero set of the Pfaffian, of codimension one in the skew half.</p>
+<p><strong>An antisymmetric matrix of odd order is singular.</strong> $\det K=\det K^{\mathsf T}=\det(-K)=(-1)^{n}\det K$. For odd $n$ this reads $\det K=-\det K$, hence $\det K=0$.</p>
+<p><strong>The measurement confirms it and shows the even case is different.</strong> Over $100$ random antisymmetric matrices the largest $|\det|$ was $0$ at $n=3$ and at $n=5$, and it was $15.6$ at $n=2$ and $181.2$ at $n=4$. The value is nonzero in the even case and exactly zero in the odd case, as the sign argument forces.</p>
+<p><strong>For even order the determinant is a square and is non-negative.</strong> An antisymmetric matrix of order $2m$ has $\det K=\operatorname{pf}(K)^{2}$ for the Pfaffian $\operatorname{pf}$, a polynomial of degree $m$ in the entries. So $\det K\ge0$ on $\operatorname{Skew}_{2m}$, and the zero set of the determinant is the zero set of the Pfaffian, of codimension one in the antisymmetric half.</p>
 <h2 id="the-two-halves-are-orthogonal-for-the-trace-form">The Two Halves Are Orthogonal for the Trace Form</h2>
-<p><strong>The trace of a product of a symmetric and a skew matrix is zero.</strong> $\operatorname{tr}(SK)=\operatorname{tr}((SK)^{\mathsf T})=\operatorname{tr}(K^{\mathsf T}S^{\mathsf T})=-\operatorname{tr}(KS)=-\operatorname{tr}(SK)$, hence $\operatorname{tr}(SK)=0$. Measured on $100$ random pairs at each of $n=2,3,4,5$, the value never differed from zero.</p>
+<p><strong>The trace of a product of a symmetric and an antisymmetric matrix is zero.</strong> $\operatorname{tr}(SK)=\operatorname{tr}((SK)^{\mathsf T})=\operatorname{tr}(K^{\mathsf T}S^{\mathsf T})=-\operatorname{tr}(KS)=-\operatorname{tr}(SK)$, hence $\operatorname{tr}(SK)=0$. Measured on $100$ random pairs at each of $n=2,3,4,5$, the value never differed from zero.</p>
 <p><strong>The trace form has opposite signs on the two halves.</strong> For symmetric $S$,</p>
 <p>$$
 \operatorname{tr}(S^{2})=\sum_{i,j}S_{ij}S_{ji}=\sum_{i,j}S_{ij}^{2}>0,
 $$</p>
-<p>and for skew $K$,</p>
+<p>and for anti-Hermitian $K$,</p>
 <p>$$
 \operatorname{tr}(K^{2})=-\sum_{i,j}K_{ij}^{2}<0.
 $$</p>
@@ -160,12 +160,12 @@ $$</p>
 <p>$$
 n+2\binom{n}{2}=n^{2}.
 $$</p>
-<p>A anti-Hermitian matrix is $i$ times a Hermitian one, so its real dimension is also $n^{2}$, and $n^{2}+n^{2}=2n^{2}$ is the real dimension of $M_n(\mathbb{C})$. The complex split is even; the real split by the transpose is not, because $n(n+1)/2$ and $n(n-1)/2$ differ by $n$.</p>
+<p>An anti-Hermitian matrix is $i$ times a Hermitian one, so its real dimension is also $n^{2}$, and $n^{2}+n^{2}=2n^{2}$ is the real dimension of $M_n(\mathbb{C})$. The complex split is even; the real split by the transpose is not, because $n(n+1)/2$ and $n(n-1)/2$ differ by $n$.</p>
 <p><strong>The reason is that the conjugate transpose is of the second kind, and the transpose is of the first kind.</strong> The map $A^{*}$ fixes only the real scalars, so its fixed space is a real subspace and not a complex one. The transpose is complex linear on $M_n(\mathbb{C})$ as well, and its two complex eigenspaces $\operatorname{Sym}_n(\mathbb{C})$ and $\operatorname{Skew}_n(\mathbb{C})$ have complex dimensions $n(n+1)/2$ and $n(n-1)/2$, hence real dimensions $n(n+1)$ and $n(n-1)$, which again differ.</p>
 <p><strong>The complex picture has one more feature: the Hermitian part carries a positive definite form.</strong> $A\mapsto\operatorname{tr}(A^{*}A)$ is a norm there. Over $\mathbb{R}$ the analogous form $\operatorname{tr}(A^{\mathsf T}A)$ is also positive definite, but it is not the invariant form $\operatorname{tr}(AB)$, which is indefinite.</p>
 <p><strong>The Jordan and the Lie structure survive the passage to $\mathbb{C}$.</strong> $\operatorname{Sym}_n(\mathbb{C})$ is a Jordan algebra under the anticommutator and $\operatorname{Skew}_n(\mathbb{C})$ a Lie algebra under the commutator, for the same one-line proofs. What the real form adds is the sign of the trace form on each half, since a complex number has no sign.</p>
 <h2 id="summary">Summary</h2>
-<p>The transpose is an involution of $M_n(\mathbb{R})$, and its eigenspaces are the $\tfrac{n(n+1)}{2}$-dimensional symmetric half and the $\tfrac{n(n-1)}{2}$-dimensional skew half. The symmetric half is a Jordan algebra under the anticommutator and the skew half is a Lie algebra under the commutator. Neither is a subalgebra for the ordinary product: two symmetric matrices multiply to a symmetric matrix only when they commute, and two skew matrices always multiply to a symmetric one. The square of a skew matrix is symmetric and negative semidefinite, the rank of a skew matrix is even, and a skew matrix of odd order is singular. The two halves are orthogonal for the trace form, with a positive sign on the symmetric half and a negative one on the skew half. Over $\mathbb{C}$ the roles pass to the Hermitian and anti-Hermitian halves, which have equal real dimension $n^{2}$, because the conjugate transpose is conjugate linear.</p>
+<p>The transpose is an involution of $M_n(\mathbb{R})$, and its eigenspaces are the $\tfrac{n(n+1)}{2}$-dimensional symmetric half and the $\tfrac{n(n-1)}{2}$-dimensional antisymmetric half. The symmetric half is a Jordan algebra under the anticommutator and the antisymmetric half is a Lie algebra under the commutator. Neither is a subalgebra for the ordinary product: two symmetric matrices multiply to a symmetric matrix only when they commute, and two antisymmetric matrices always multiply to a symmetric one. The square of an antisymmetric matrix is symmetric and negative semidefinite, the rank of an antisymmetric matrix is even, and an antisymmetric matrix of odd order is singular. The two halves are orthogonal for the trace form, with a positive sign on the symmetric half and a negative one on the antisymmetric half. Over $\mathbb{C}$ the roles pass to the Hermitian and anti-Hermitian halves, which have equal real dimension $n^{2}$, because the conjugate transpose is conjugate linear.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -205,13 +205,13 @@ $$</p>
 </tr>
 <tr>
 <td>$\operatorname{pf}$</td>
-<td>the Pfaffian, with $\det K=\operatorname{pf}(K)^{2}$ for skew $K$ of even order</td>
+<td>the Pfaffian, with $\det K=\operatorname{pf}(K)^{2}$ for antisymmetric $K$ of even order</td>
 </tr>
 </tbody>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for the symmetric and skew parts, the transpose and the conjugate transpose.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for the symmetric and antisymmetric parts, the transpose and the conjugate transpose.</li>
 <li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the trace form and its behaviour on the two halves.</li>
 <li><a href="the-matrix-algebra-mnr.html">The Matrix Algebra $M_n(\mathbb{R})$</a>, for the matrix units, the trace and the two halves.</li>
 <li><a href="the-two-classes-compared-sym-n-and-sp-n-have-the-same-dimension.html">The Two Classes Compared: $\operatorname{Sym}_n$ and $\mathfrak{sp}_n$ Have the Same Dimension</a>, for the second class of fixed spaces.</li>

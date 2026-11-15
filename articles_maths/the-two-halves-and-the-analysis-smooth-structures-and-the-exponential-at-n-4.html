@@ -84,11 +84,11 @@
 <p><strong>Proof.</strong> The openness of the positivity condition and the closedness of the unitary condition in the group.</p>
 <h2 id="the-exponential-on-each-half">The Exponential on Each Half</h2>
 <p><strong>Theorem.</strong> The exponential restricts to an analytic diffeomorphism $\operatorname{Herm}_4\to\operatorname{Herm}_4^{++}$ with analytic inverse, and to a surjective analytic map $\mathfrak{u}(4)\to U(4)$ whose fibres are discrete.</p>
-<p><strong>Proof.</strong> For Hermitian $H$ the eigenvalues are real and $e^{H}$ has positive eigenvalues; the inverse sends a positive definite $A$ to $\sum\log\lambda_k\,P_k$ in its spectral decomposition, which is analytic. For anti-Hermitian $K$ the exponential is unitary and every unitary has a anti-Hermitian logarithm; two logarithms of the same unitary differ by $2\pi i$ times an integral matrix in the eigenbasis, so the fibres are discrete.</p>
+<p><strong>Proof.</strong> For Hermitian $H$ the eigenvalues are real and $e^{H}$ has positive eigenvalues; the inverse sends a positive definite $A$ to $\sum\log\lambda_k\,P_k$ in its spectral decomposition, which is analytic. For anti-Hermitian $K$ the exponential is unitary and every unitary has an anti-Hermitian logarithm; two logarithms of the same unitary differ by $2\pi i$ times an integral matrix in the eigenbasis, so the fibres are discrete.</p>
 <p><strong>Corollary.</strong> The image of the Hermitian half is exactly the open cone, so the exponential identifies the two halves as manifolds of the same dimension and the cone as a model of the linear space.</p>
 <p><strong>Proof.</strong> The two halves have dimension sixteen and the exponential is a diffeomorphism onto the cone.</p>
-<p><strong>Corollary.</strong> The image of the skew half is the compact group $U(4)$, so the same exponential is injective-up-to-discrete on one half and a covering-like surjection on the other.</p>
-<p><strong>Proof.</strong> The unitary group is compact and of dimension sixteen, equal to the dimension of the skew half.</p>
+<p><strong>Corollary.</strong> The image of the anti-Hermitian half is the compact group $U(4)$, so the same exponential is injective-up-to-discrete on one half and a covering-like surjection on the other.</p>
+<p><strong>Proof.</strong> The unitary group is compact and of dimension sixteen, equal to the dimension of the anti-Hermitian half.</p>
 <p><strong>The derivative of the exponential.</strong> The differential of $\exp$ at $A$ is $B\mapsto e^{A}\sum_{k\ge0}\frac{(-1)^{k}}{(k+1)!}(\operatorname{ad}_A)^{k}(B)$, which is the identity at $A=0$ and is singular whenever two eigenvalues of $A$ differ by $2\pi i n$.</p>
 <p><strong>Proof.</strong> The derivative of $t\mapsto e^{A+tB}$ at $t=0$, computed by the series and regrouped in terms of the commutator.</p>
 <h2 id="the-analytic-maps-and-their-derivatives">The Analytic Maps and Their Derivatives</h2>
@@ -114,7 +114,7 @@ $$</p>
 <p><strong>Proof.</strong> The map is a bijection by the polar decomposition; it is analytic because the square root of a positive definite matrix is analytic in the matrix; the inverse is the product, which is analytic; a bijective analytic map with analytic inverse is a diffeomorphism.</p>
 <p><strong>Corollary.</strong> The two halves together with the compact group give a global product decomposition of the group, and the dimension count $32=16+16$ is exact.</p>
 <p><strong>Proof.</strong> The product of the two manifolds has dimension $16+16$.</p>
-<p><strong>Corollary.</strong> The differential of the polar map at the identity is the direct sum of the identity on the Hermitian half and the identity on the skew half.</p>
+<p><strong>Corollary.</strong> The differential of the polar map at the identity is the direct sum of the identity on the Hermitian half and the identity on the anti-Hermitian half.</p>
 <p><strong>Proof.</strong> Near the identity, $H=\mathrm I+\tfrac12(A+A^{\ast})$ and $U=\mathrm I+\tfrac12(A-A^{\ast})$ to first order.</p>
 <p><strong>The real analogue.</strong> Over $\mathbb{R}$ the same construction gives $\mathrm{GL}_4(\mathbb{R})\to\operatorname{Sym}_4^{++}\times O(4)$, with dimensions $16=10+6$.</p>
 <p><strong>Proof.</strong> The real polar decomposition.</p>
@@ -128,7 +128,7 @@ $$</p>
 <p><strong>The trace form.</strong> The trace form $\operatorname{tr}(A\circ B)=\operatorname{tr}(AB)$ is the associative trace form of the Jordan algebra, and it is positive definite on the real symmetric half.</p>
 <p><strong>Proof.</strong> $\operatorname{tr}(S^{2})$ is the sum of the squares of the entries.</p>
 <h2 id="analysis-against-algebra">Analysis against Algebra</h2>
-<p><strong>Proposition.</strong> The statements that are analysis: the convergence of the exponential series, the inverse and implicit function theorems, the concavity of $\log\det$, the smoothness of the square root and the logarithm, and the discreteness of the fibres of the exponential on the skew half.</p>
+<p><strong>Proposition.</strong> The statements that are analysis: the convergence of the exponential series, the inverse and implicit function theorems, the concavity of $\log\det$, the smoothness of the square root and the logarithm, and the discreteness of the fibres of the exponential on the anti-Hermitian half.</p>
 <p><strong>Proof.</strong> Each uses a limit, a derivative or a completeness argument.</p>
 <p><strong>Corollary.</strong> The statements that are algebra: the identity $\det e^{A}=e^{\operatorname{tr}A}$, the decomposition $M_4=\operatorname{Herm}\oplus\mathfrak{u}$, the polar decomposition as a bijection, the structure of the cone as a set of squares, and the eigenvalues $Q_t\pm iB$.</p>
 <p><strong>Proof.</strong> Each is an identity between algebraic expressions, valid for all matrices without any limit.</p>
@@ -137,7 +137,7 @@ $$</p>
 <p><strong>The moral.</strong> The two halves are one object seen through two structures: the algebra sees the split and the identities, the analysis sees the cone, the smooth structure and the exponential as a map of manifolds.</p>
 <p><strong>Proof.</strong> The two lists.</p>
 <h2 id="summary">Summary</h2>
-<p>The Hermitian and anti-Hermitian halves are linear subspaces of real dimension sixteen, complementary at every point, and each is its own tangent space. The exponential is a diffeomorphism from the Hermitian half onto the open cone and a surjection with discrete fibres from the skew half onto the unitary group.</p>
+<p>The Hermitian and anti-Hermitian halves are linear subspaces of real dimension sixteen, complementary at every point, and each is its own tangent space. The exponential is a diffeomorphism from the Hermitian half onto the open cone and a surjection with discrete fibres from the anti-Hermitian half onto the unitary group.</p>
 <p>The maps $A\mapsto A^{\ast}$, $\operatorname{tr}$, $\det$ and $A\mapsto A^{-1}$ are analytic, with derivatives $B^{\ast}$, $\operatorname{tr}B$, $\det(A)\operatorname{tr}(A^{-1}B)$ and $-A^{-1}BA^{-1}$; the map $A\mapsto A^{\ast}A$ is a submersion onto the Hermitian half with the unitary orbits as fibres.</p>
 <p>The polar decomposition is a global analytic diffeomorphism $\mathrm{GL}_4\to\operatorname{Herm}_4^{++}\times U(4)$, over the reals $\mathrm{GL}_4(\mathbb{R})\to\operatorname{Sym}_4^{++}\times O(4)$. The Jordan structure sits on the symmetric half as the algebraic shadow of the same cone, and the analysis enters only through positivity and completeness.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>

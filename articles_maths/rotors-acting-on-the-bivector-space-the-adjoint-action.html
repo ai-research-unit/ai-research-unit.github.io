@@ -71,10 +71,10 @@
         <h1 id="rotors-acting-on-the-bivector-space-the-adjoint-action"><strong>Rotors Acting on the Bivector Space: the Adjoint Action</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p><strong>A rotation acts on the bivectors by $K\mapsto QKQ^{\mathsf T}$, that action preserves the Killing form, so it is an orthogonal map of the space of bivectors, and at $n=3$ it is nothing but the rotation itself acting on $\mathbb{R}^{3}$.</strong></p>
-<p>The bivector space is the space of skew matrices, of dimension $n(n-1)/2$. The article proves that the action of $\mathrm{SO}(n)$ is a homomorphism into $\mathrm{SO}(N)$, that the invariant form is the Killing form and is negative definite, that at $n=3$ the action is the defining action read through $\operatorname{Skew}_3\cong\mathbb{R}^{3}$, that at $n=4$ the space splits into two invariant halves, and that the orbits are classified by the angles. It assumes <em>The Exponential of the Antisymmetric Part: One-Parameter Rotations</em> and <em>The Rotor as a Square Root of a Rotation: $\mathrm{Spin}(n)\to\mathrm{SO}(n)$</em>.</p>
+<p>The bivector space is the space of antisymmetric matrices, of dimension $n(n-1)/2$. The article proves that the action of $\mathrm{SO}(n)$ is a homomorphism into $\mathrm{SO}(N)$, that the invariant form is the Killing form and is negative definite, that at $n=3$ the action is the defining action read through $\operatorname{Skew}_3\cong\mathbb{R}^{3}$, that at $n=4$ the space splits into two invariant halves, and that the orbits are classified by the angles. It assumes <em>The Exponential of the Antisymmetric Part: One-Parameter Rotations</em> and <em>The Rotor as a Square Root of a Rotation: $\mathrm{Spin}(n)\to\mathrm{SO}(n)$</em>.</p>
 <p>Throughout $n\ge2$, $N=n(n-1)/2$, and $\langle X,Y\rangle=\operatorname{tr}(X^{\mathsf T}Y)$ is the Frobenius form.</p>
 <h2 id="the-bivector-space">The Bivector Space</h2>
-<p><strong>A bivector is a skew matrix, and a skew matrix is a 2-form.</strong> The space $\operatorname{Skew}_n$ is the Lie algebra of $\mathrm{SO}(n)$ under the commutator $[X,Y]=XY-YX$. A skew matrix is the same data as an alternating bilinear form, and the pairing</p>
+<p><strong>A bivector is an antisymmetric matrix, and an antisymmetric matrix is a 2-form.</strong> The space $\operatorname{Skew}_n$ is the Lie algebra of $\mathrm{SO}(n)$ under the commutator $[X,Y]=XY-YX$. An antisymmetric matrix is the same data as an alternating bilinear form, and the pairing</p>
 <p>$$
 K\longleftrightarrow\omega_{K}(u,v)=\langle Ku,v\rangle
 $$</p>
@@ -82,7 +82,7 @@ $$</p>
 <p>$$
 \dim\operatorname{Skew}_n=\binom{n}{2}=\frac{n(n-1)}{2}=N .
 $$</p>
-<p><strong>The elementary bivector is a plane with an area.</strong> The matrix $E_{ij}=e_{i}e_{j}^{\mathsf T}-e_{j}e_{i}^{\mathsf T}$ is skew, and the $E_{ij}$ for $i<j$ form a basis. The pair $(i,j)$ is a plane, and $E_{ij}$ records the plane with its orientation and its unit area. This is the sense in which the bivector space is the space of oriented areas.</p>
+<p><strong>The elementary bivector is a plane with an area.</strong> The matrix $E_{ij}=e_{i}e_{j}^{\mathsf T}-e_{j}e_{i}^{\mathsf T}$ is anti-Hermitian, and the $E_{ij}$ for $i<j$ form a basis. The pair $(i,j)$ is a plane, and $E_{ij}$ records the plane with its orientation and its unit area. This is the sense in which the bivector space is the space of oriented areas.</p>
 <p><strong>The commutator of two bivectors is a bivector.</strong> The space is closed under the commutator, and the identity</p>
 <p>$$
 [E_{ij},E_{kl}]=\delta_{jk}E_{il}-\delta_{ik}E_{jl}-\delta_{jl}E_{ik}+\delta_{il}E_{jk}
@@ -93,7 +93,7 @@ $$</p>
 <p>$$
 \operatorname{Ad}_{Q}(K)=QKQ^{\mathsf T}.
 $$</p>
-<p>The result is skew, since $(QKQ^{\mathsf T})^{\mathsf T}=QK^{\mathsf T}Q^{\mathsf T}=-QKQ^{\mathsf T}$, so the map lands in $\operatorname{Skew}_n$.</p>
+<p>The result is anti-Hermitian, since $(QKQ^{\mathsf T})^{\mathsf T}=QK^{\mathsf T}Q^{\mathsf T}=-QKQ^{\mathsf T}$, so the map lands in $\operatorname{Skew}_n$.</p>
 <p><strong>The action is a homomorphism.</strong> For $Q,R\in\mathrm{SO}(n)$,</p>
 <p>$$
 \operatorname{Ad}_{Q}\operatorname{Ad}_{R}(K)=QRK(QR)^{\mathsf T}=\operatorname{Ad}_{QR}(K),
@@ -110,7 +110,7 @@ $$</p>
 <p>holds with maximum error $1.9\cdot10^{-15}$.</p>
 <p><strong>The rotor acts by the sandwich.</strong> A rotor $R$ acts on vectors by $X\mapsto RX\widetilde{R}$, and on bivectors by $K\mapsto RKR^{-1}$, because a bivector is a product of two vectors. The two actions are the same representation, one in the Clifford algebra and one in matrices.</p>
 <h2 id="the-action-is-an-automorphism">The Action Is an Automorphism</h2>
-<p><strong>The adjoint action preserves the commutator.</strong> For skew $X,Y$ and orthogonal $Q$,</p>
+<p><strong>The adjoint action preserves the commutator.</strong> For anti-Hermitian $X,Y$ and orthogonal $Q$,</p>
 <p>$$
 [QXQ^{\mathsf T},QYQ^{\mathsf T}]=QXQ^{\mathsf T}QYQ^{\mathsf T}-QYQ^{\mathsf T}QXQ^{\mathsf T}=Q[X,Y]Q^{\mathsf T}.
 $$</p>
@@ -120,7 +120,7 @@ $$</p>
 \langle QXQ^{\mathsf T},QYQ^{\mathsf T}\rangle=\operatorname{tr}\big(QXQ^{\mathsf T}QYQ^{\mathsf T}\big)=\operatorname{tr}\big(QXYQ^{\mathsf T}\big)=\operatorname{tr}(XY)=\langle X,Y\rangle .
 $$</p>
 <p>So the representation is orthogonal for the Frobenius form, and its image lies in $\mathrm{O}(N)$.</p>
-<p><strong>The trace form is negative definite on the skew space.</strong> For skew $K\ne0$,</p>
+<p><strong>The trace form is negative definite on the anti-Hermitian space.</strong> For anti-Hermitian $K\ne0$,</p>
 <p>$$
 \operatorname{tr}(K^{\mathsf T}K)=\operatorname{tr}(-K^{2})=-\operatorname{tr}(K^{2})=\sum_{ij}K_{ij}^{2}>0,
 $$</p>
@@ -131,7 +131,7 @@ $$</p>
 B(X,Y)=\operatorname{tr}\big(\operatorname{ad}_{X}\operatorname{ad}_{Y}\big)=(n-2)\operatorname{tr}(XY).
 $$</p>
 <p>The factor vanishes at $n=2$: the algebra is abelian and its Killing form is zero. For $n\ge3$ the factor is positive.</p>
-<p><strong>The form is negative definite.</strong> With $\operatorname{tr}(XY)<0$ for skew $X,Y$ and $X\ne0$,</p>
+<p><strong>The form is negative definite.</strong> With $\operatorname{tr}(XY)<0$ for anti-Hermitian $X,Y$ and $X\ne0$,</p>
 <p>$$
 B(X,X)=(n-2)\operatorname{tr}(X^{2})=-(n-2)\sum_{ij}X_{ij}^{2}<0\qquad(n\ge3).
 $$</p>
@@ -187,7 +187,7 @@ $$</p>
 $$</p>
 <p><strong>The two halves see the two angles separately.</strong> A rotation of $\mathbb{R}^{4}$ has one angle per half, and equal angles in modulus give the isoclinic case, treated in <em>Simple and Non-Simple Rotations: One Angle at $n\le3$, $\lfloor n/2\rfloor$ Planes at $n\ge4$</em>.</p>
 <h2 id="the-orbits">The Orbits</h2>
-<p><strong>The orbit of a bivector is determined by its angles.</strong> Let $K\in\operatorname{Skew}_n$ have angles $\theta_{1},\dots,\theta_{s}$ with $s=\lfloor n/2\rfloor$, in the block form of the spectral theorem for skew matrices. Two bivectors lie in the same orbit exactly when</p>
+<p><strong>The orbit of a bivector is determined by its angles.</strong> Let $K\in\operatorname{Skew}_n$ have angles $\theta_{1},\dots,\theta_{s}$ with $s=\lfloor n/2\rfloor$, in the block form of the spectral theorem for antisymmetric matrices. Two bivectors lie in the same orbit exactly when</p>
 <p>$$
 \{\theta_{1},\dots,\theta_{s}\}=\{\theta'_{1},\dots,\theta'_{s}\}
 $$</p>
@@ -256,7 +256,7 @@ $$</p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li>Sigurdur Helgason, <em>Differential Geometry, Lie Groups, and Symmetric Spaces</em> (Academic Press, 1978), for the adjoint representation and the Killing form.</li>
-<li><a href="the-exponential-of-the-antisymmetric-part-one-parameter-rotations.html">The Exponential of the Antisymmetric Part: One-Parameter Rotations</a>, for the block form and the angles of a skew matrix.</li>
+<li><a href="the-exponential-of-the-antisymmetric-part-one-parameter-rotations.html">The Exponential of the Antisymmetric Part: One-Parameter Rotations</a>, for the block form and the angles of an antisymmetric matrix.</li>
 <li><a href="the-rotor-as-a-square-root-of-a-rotation-spin-n-to-so-n.html">The Rotor as a Square Root of a Rotation: $\mathrm{Spin}(n)\to\mathrm{SO}(n)$</a>, for the sandwich action of the rotor.</li>
 <li><a href="the-matrix-algebra-mnr.html">The Matrix Algebra $M_n(\mathbb{R})$</a>, for the bracket and the trace form.</li>
 </ul>

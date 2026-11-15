@@ -145,25 +145,25 @@ $$</p>
 \operatorname{tr}(X^{2})=\sum_{i}X_{ii}^{2}+2\sum_{i<j}X_{ij}^{2}.
 $$</p>
 <p>The right-hand side is a sum of squares with positive coefficients, and it vanishes only for $X=0$. The restriction is the Euclidean structure of $\mathbb{R}^{n(n+1)/2}$ in the entries, up to the factor two.</p>
-<p><strong>On $\operatorname{Skew}_n$ the form is negative definite.</strong> For skew $X$ the entry formula gives $X_{ji}=-X_{ij}$, so</p>
+<p><strong>On $\operatorname{Skew}_n$ the form is negative definite.</strong> For anti-Hermitian $X$ the entry formula gives $X_{ji}=-X_{ij}$, so</p>
 <p>$$
 \operatorname{tr}(X^{2})=-2\sum_{i<j}X_{ij}^{2}.
 $$</p>
 <p>The right-hand side is negative for every nonzero $X$.</p>
-<p><strong>The two halves are orthogonal.</strong> Let $S$ be symmetric and $K$ skew. Then</p>
+<p><strong>The two halves are orthogonal.</strong> Let $S$ be symmetric and $K$ antisymmetric. Then</p>
 <p>$$
 \operatorname{tr}(SK)=\operatorname{tr}\bigl((SK)^{\mathsf T}\bigr)=\operatorname{tr}(K^{\mathsf T}S^{\mathsf T})=-\operatorname{tr}(KS)=-\operatorname{tr}(SK),
 $$</p>
 <p>so $\operatorname{tr}(SK)=0$. The first step uses the invariance of the trace under transposition, and the last uses $\operatorname{tr}(KS)=\operatorname{tr}(SK)$.</p>
 <p><strong>The halves are the signature decomposition.</strong> They are orthogonal, their dimensions add to $n^{2}$, and the form is positive on one and negative on the other. So $p=\dim\operatorname{Sym}_n$ and $q=\dim\operatorname{Skew}_n$ with no diagonalisation.</p>
-<p><strong>At $n=2$ the count reads $4=3+1$.</strong> The symmetric part is spanned by $E_{11}$, $E_{22}$ and $E_{12}+E_{21}$, and it is positive definite. The skew part is spanned by $J=E_{12}-E_{21}$, and $\operatorname{tr}(J^{2})=-2$. This is the signature $(3,1)$ of the form on the split-quaternion algebra, as in <em>Split-Quaternion Algebra</em>.</p>
+<p><strong>At $n=2$ the count reads $4=3+1$.</strong> The symmetric part is spanned by $E_{11}$, $E_{22}$ and $E_{12}+E_{21}$, and it is positive definite. The antisymmetric part is spanned by $J=E_{12}-E_{21}$, and $\operatorname{tr}(J^{2})=-2$. This is the signature $(3,1)$ of the form on the split-quaternion algebra, as in <em>Split-Quaternion Algebra</em>.</p>
 <h2 id="the-isotropic-cone">The Isotropic Cone</h2>
 <p><strong>The null vectors are the solutions of $\operatorname{tr}(X^{2})=0$.</strong> They form a quadric cone of dimension $n^{2}-1$. The cone is not a linear subspace for $n\ge2$: it contains $E_{12}$ and $E_{21}$ but not their sum, because $\operatorname{tr}\bigl((E_{12}+E_{21})^{2}\bigr)=2$.</p>
 <p><strong>A null vector is built from one positive direction and one negative direction of equal norm.</strong> Take</p>
 <p>$$
 H=E_{11}-E_{22},\qquad K=E_{12}-E_{21}.
 $$</p>
-<p>The first is symmetric and the second is skew, so the two are orthogonal. Their norms are</p>
+<p>The first is symmetric and the second is antisymmetric, so the two are orthogonal. Their norms are</p>
 <p>$$
 \operatorname{tr}(H^{2})=2,\qquad \operatorname{tr}(K^{2})=-2.
 $$</p>
@@ -179,7 +179,7 @@ $$</p>
 \sum_{i,j,k}X_{ij}Y_{jk}Z_{ki}.
 $$</p>
 <p>The identity is the associativity of the matrix product written through the trace, and it is what makes the form natural on an algebra rather than on a vector space.</p>
-<p><strong>Every inner derivation is skew for the form.</strong> For all $A,X,Y$,</p>
+<p><strong>Every inner derivation is anti-self-adjoint for the form.</strong> For all $A,X,Y$,</p>
 <p>$$
 \langle [A,X],Y\rangle+\langle X,[A,Y]\rangle=\operatorname{tr}(AXY)-\operatorname{tr}(XAY)+\operatorname{tr}(XAY)-\operatorname{tr}(XYA)=0,
 $$</p>
@@ -212,7 +212,7 @@ $$</p>
 <p><strong>So definiteness and invariance exclude each other on $M_n(\mathbb{R})$.</strong> The trace form is invariant and indefinite. The Hilbert–Schmidt form is definite and not invariant, and the next article measures its defect.</p>
 <p><strong>Every symmetric associative form is a multiple of the trace form.</strong> Solving the associativity conditions $B(XY,Z)=B(X,YZ)$ for a symmetric $B$ leaves a one-dimensional space, spanned by $\operatorname{tr}(XY)$. The computation was done numerically at $n=2$ with ten unknowns and at $n=3$ with forty-five, and in both cases the solution space has dimension one and its Gram matrix is the transposition permutation of the units. Every member of that line is indefinite, because $\operatorname{tr}(E_{12}^{2})=0$.</p>
 <h2 id="summary">Summary</h2>
-<p>The form $\langle X,Y\rangle=\operatorname{tr}(XY)$ on $M_n(\mathbb{R})$ is symmetric and nondegenerate. Its Gram matrix in the matrix-unit basis is the permutation matrix of the transposition $(i,j)\mapsto(j,i)$, so its signature is $\bigl(n(n+1)/2,n(n-1)/2\bigr)$, measured as $(3,1)$, $(6,3)$, $(10,6)$ and $(15,10)$ at $n=2,3,4,5$. The form is therefore indefinite for every $n\ge2$, with exactly $n(n-1)/2$ negative directions, and the negative directions are the skew ones. The form is positive definite on $\operatorname{Sym}_n$ and negative definite on $\operatorname{Skew}_n$, and the two halves are orthogonal, which is the signature decomposition. The isotropic cone has dimension $n^{2}-1$, and an explicit null vector is $E_{11}-E_{22}+E_{12}-E_{21}$, the sum of a positive direction and a negative direction of equal norm. The form is associative, every inner derivation is skew for it, and it is invariant under conjugation by any invertible matrix. The transpose is an isometric involution and the fundamental symmetry, so the space is a Krein space of type $\bigl(n(n+1)/2,n(n-1)/2\bigr)$. No positive definite form is invariant under the inner derivations, and every symmetric associative form is a scalar multiple of this one.</p>
+<p>The form $\langle X,Y\rangle=\operatorname{tr}(XY)$ on $M_n(\mathbb{R})$ is symmetric and nondegenerate. Its Gram matrix in the matrix-unit basis is the permutation matrix of the transposition $(i,j)\mapsto(j,i)$, so its signature is $\bigl(n(n+1)/2,n(n-1)/2\bigr)$, measured as $(3,1)$, $(6,3)$, $(10,6)$ and $(15,10)$ at $n=2,3,4,5$. The form is therefore indefinite for every $n\ge2$, with exactly $n(n-1)/2$ negative directions, and the negative directions are the antisymmetric ones. The form is positive definite on $\operatorname{Sym}_n$ and negative definite on $\operatorname{Skew}_n$, and the two halves are orthogonal, which is the signature decomposition. The isotropic cone has dimension $n^{2}-1$, and an explicit null vector is $E_{11}-E_{22}+E_{12}-E_{21}$, the sum of a positive direction and a negative direction of equal norm. The form is associative, every inner derivation is anti-self-adjoint for it, and it is invariant under conjugation by any invertible matrix. The transpose is an isometric involution and the fundamental symmetry, so the space is a Krein space of type $\bigl(n(n+1)/2,n(n-1)/2\bigr)$. No positive definite form is invariant under the inner derivations, and every symmetric associative form is a scalar multiple of this one.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -271,7 +271,7 @@ $$</p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the trace form of a central simple algebra and its uniqueness among invariant forms.</li>
-<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for the trace, the transpose and the symmetric and skew halves.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for the trace, the transpose and the symmetric and antisymmetric halves.</li>
 <li>Israel Gohberg, Peter Lancaster and Leiba Rodman, <em>Indefinite Linear Algebra and Applications</em> (Birkhäuser, 2005), for Krein spaces, fundamental symmetries and maximal definite subspaces.</li>
 <li><a href="the-matrix-algebra-mnr.html">The Matrix Algebra $M_n(\mathbb{R})$</a>, for the algebra and the two halves of the transpose.</li>
 <li><a href="the-two-halves-over-r-symmetric-and-antisymmetric.html">The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric</a>, for the dimensions and the algebra of the two eigenspaces.</li>
