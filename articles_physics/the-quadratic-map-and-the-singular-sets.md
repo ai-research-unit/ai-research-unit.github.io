@@ -1,0 +1,382 @@
+# __The Quadratic Map and the Singular Sets__
+
+## Introduction
+
+**This entry reads the one category of the mathematical corpus that is a dynamics and not a carrier: the biquaternion quadratic map and the sets its iteration singles out.** Eight articles supply it, and they are named in the table of the next section. The reading has to answer a question that the seven previous entries of the propagation list did not ask. A carrier is a subspace, a representation is a linear action, and a closure is a space of values; all three are algebra. A map is not. So the question is what a map of the algebra is worth as physics when the algebra carries no time.
+
+**The first claim is that one step of the map is a step and not a small motion, and that the algebra settles this before any physics does.** The differential of the square at $\tilde Q$ is $\tilde Q_2\mapsto\tilde Q\tilde Q_2+\tilde Q_2\tilde Q$, which is the Jordan product with $\tilde Q$ and not a derivation, and no one-parameter group has it as its time-one map. A derivation of $\mathbb{B}$ is a commutator; the differential of the square is an anticommutator. **The step is graded by the symmetric product and the generator by the antisymmetric one, and the two are different operators.** Everything below is read from the identities of the step, and nothing is read from a generator, because there is none.
+
+**The second claim is that the singular set of the step is a set the corpus had already named.** The derivative fails to be invertible exactly where the biquaternion norm vanishes or where the trace vanishes, and inside the material sector the norm-zero set is the light cone. Verified: the determinant of the differential at $\tilde Q$ is $16\,N(\tilde Q)\,Q_t^{2}$, to $1.0\times10^{-12}$ on one hundred random elements, so it vanishes on the cone and on the traceless hyperplane and nowhere else. **The locus where a step of the discrete dynamics cannot be undone is the light cone plus the zero-trace slice.**
+
+**The third claim is that the state space of the qubit lies inside the filled set, and that the pure states are exactly its boundary.** A normalised positive Hermitian element $\tilde\varrho=\tfrac12e_t+i\vec w$ with $\lvert\vec w\rvert\le\tfrac12$ has spectral radius $\tfrac12+\lvert\vec w\rvert\le1$, and the equality holds exactly on the sphere $\lvert\vec w\rvert=\tfrac12$, which is the set of pure states. Verified: one hundred sampled mixed states lie at spectral radius at most $0.987$, one hundred sampled pure states at radius $1$ to $6.7\times10^{-16}$, and the Julia set of the parameter zero is the level set of radius one. **The Bloch sphere is the trace of the Julia set through the state space, and the interior of the Bloch ball is inside the filled set.** The step with no parameter contracts every mixed state to zero and leaves every pure state fixed, so the pure states are the only survivors of the parameterless iteration.
+
+**The fourth claim is that the step prefers a frame.** It is covariant under the rotations, which act by algebra automorphisms, and it is not covariant under the boosts, which do not. Verified: the square of a rotated element is the rotation of the square to $1.8\times10^{-15}$, while the squared boost of a random element differs from the boost of its square by at least $5.0$ in Euclidean norm over one hundred rapidities. **A discrete step is an equal-time step, and equal time is not a Lorentz invariant notion**, which is the same obstruction that a lattice or an iterative regularisation meets in field theory.
+
+**The entry states what it does not claim.** The map is not a field equation: it has no action, no conserved energy, no continuous time, and no boost invariance. Its physics is the physics of a discrete rule, and the readings below are algebraic identifications of sets and operators that the corpus already interprets, not a dynamics of a physical system. Where the identification is with the material sector or with the state space, it is exact and verified; where it is with a clock or with a mass, it is a sharing of a slot and the entry says so.
+
+**Standing convention.** Throughout, $\tilde Q=Q_te_t+\vec Q$ with $Q_t\in\mathbb{C}$ and $\vec Q\in\mathbb{C}^{3}$, the norm is $N(\tilde Q)=Q_t^{2}+(\vec Q,\vec Q)$ with $(\vec a,\vec b)=a_xb_x+a_yb_y+a_zb_z$, the zero-divisor cone is $\mathscr{Z}=\{\tilde Q\neq0: N(\tilde Q)=0\}$, the parameter is written $\tilde C$ and the map is $F_{\tilde C}(\tilde Q)=\tilde Q^{2}+\tilde C$ in the general plain bilinear product, $\mathsf{M}$ is the matrix model $\mathsf{M}(\tilde Q)=Q_tI-i\vec Q\cdot\vec\sigma$, and $\rho$ is the spectral radius of $\mathsf{M}(\tilde Q)$. A central parameter is written $\tilde C=Ce_t$. The mathematical articles write the parameter $\tilde Q_2$ or $\tilde Q_5$; the single letter $\tilde C$ is used here because the article is about one family and not about a sequence of them.
+
+## The Source Table
+
+| mathematical content | source article |
+|---|---|
+| the family, the reading of the square, the filled and Julia sets, the equivariance, the critical set, the eigenvalue reduction | [The Biquaternion Quadratic Map and Its Julia Sets](../articles_maths/the-biquaternion-quadratic-map-and-its-julia-sets.html) |
+| the two kinds of zero divisor, the dynamics on the cone, the singular Julia set | [The Zero Divisors and the Singular Julia Sets](../articles_maths/the-zero-divisors-and-the-singular-julia-sets.html) |
+| the connectedness locus and the critical-orbit locus, the conditional escape radius, the computable slices | [The Biquaternion Mandelbrot Set and the Connectedness Locus](../articles_maths/the-biquaternion-mandelbrot-set-and-the-connectedness-locus.html) |
+| the escaping set, the Green's function, the conditional normalization, the equilibrium measure | [The Escape Radius and the Green's Function for the Biquaternions](../articles_maths/the-escape-radius-and-the-greens-function-for-the-biquaternions.html) |
+| the Peirce components, the idempotent plane, the split fractal and its coupling | [The Idempotent Decomposition and the Split Fractal of the Biquaternions](../articles_maths/the-idempotent-decomposition-and-the-split-fractal-of-the-biquaternions.html) |
+| the slice catalogue, the conjugation symmetries of the slices | [The Slices of the Biquaternion Julia Sets](../articles_maths/the-slices-of-the-biquaternion-julia-sets.html) |
+| the dimension of the slices, of the parameter zero, the bound $4+2\alpha$ and the singular surface | [The Hausdorff Dimension of the Biquaternion Julia Sets](../articles_maths/the-hausdorff-dimension-of-the-biquaternion-julia-sets.html) |
+| the Jacobian and the Fatou theory | [The Biquaternion Holomorphic Dynamics and the Jacobian](../articles_maths/the-biquaternion-holomorphic-dynamics-and-the-jacobian.html) |
+| the entries of the square, the matrix model as the transport of the dynamics | [The Matrix Element Representation and the Biquaternion Dynamics](../articles_maths/the-matrix-element-representation-and-the-biquaternion-dynamics.html) |
+| the contractions and the similarity dimension | [The Biquaternion Iterated Function Systems](../articles_maths/the-biquaternion-iterated-function-systems.html) |
+
+## The Results in Brief
+
+1. **The step has no generator.** Its differential is a Jordan product, not a derivation, so it is not the exponential of anything in the algebra. The reading of the map is a reading of a rule and not of a flow.
+
+2. **The square sends the material sector into the informational one, and the informational sector into itself.** Verified on one hundred elements of each sector. The step is a one-way valve from $\mathbb{B}_{\Phi}$ to $\mathbb{B}_{\Psi}$: the material sector is not stable under it, and the informational one is.
+
+3. **The critical set is the light cone plus the traceless slice.** The determinant of the differential is $16\,NQ_t^{2}$, so the step is locally invertible exactly off $\mathscr{Z}\cup\{\tilde Q: Q_t=0\}$, and $\mathscr{Z}\cap\mathbb{B}_{\Phi}$ is the light cone.
+
+4. **The spin-one carrier lies on the critical set.** The triple $\mathfrak{k}$ is traceless, so $dF$ is singular on the whole carrier of spin one. Verified: the determinant vanishes to machine precision on one hundred random elements of $\mathfrak{k}$.
+
+5. **On the cone the step preserves the complex line and moves only the scale.** $Q^{2}=2Q_tQ$ on $\mathscr{Z}$, to $9.9\times10^{-16}$ on one hundred cone elements, so a lightlike element keeps its direction forever and its size obeys the single real recursion $\mu\mapsto\mu^{2}$ in the variable $\mu=2Q_t$.
+
+6. **The state space is inside the filled set and the pure states are on its boundary.** At the parameter zero the filled set is $\{\rho<1\}$ together with the diagonalisable elements of radius one, its boundary is $\{\rho=1\}$, and the trace-one positive slice meets the boundary exactly on the Bloch sphere.
+
+7. **An exceptional point is annihilated by one step.** A square-zero element has spectrum $\{0,0\}$ and is nilpotent, which is the exceptional degeneracy of the spectrum, and $F_0$ sends it to $0$ whatever its Euclidean norm: an element of norm $1414$ reaches $0$ in one step.
+
+8. **There is no escape radius, and the replacement is conditional on the distance to the cone.** A point of norm greater than $R_\delta$ escapes, where $\delta$ is the reciprocal condition number of its matrix, and $R_\delta$ diverges as $\delta\to0$; verified with no counterexample on one hundred random pairs.
+
+9. **The Green's function doubles along the orbit.** $G\circ F_{\tilde C}=2G_{\tilde C}$, and at a central parameter $G$ is the maximum of the two complex Green's functions of the two eigenvalues.
+
+10. **The product structure is the chiral-diagonal case and the coupling is the off-diagonal parameter.** On the idempotent plane the map is two independent complex quadratic maps; off the plane the trace multiplies the off-diagonal entries and the off-diagonal product enters the diagonal, and no product of two one-variable fractals describes the result.
+
+11. **The dimension splits into four and twice the complex dimension.** At a central parameter the filled set has Hausdorff dimension at most $4+2\,\dim_HK_C$, with equality at the parameter zero, where the filled set is the whole space and the Julia set is a hypersurface of dimension seven.
+
+## The Step
+
+**Rule.** The map is $F_{\tilde C}(\tilde Q)=\tilde Q^{2}+\tilde C$, one map for each parameter, and the orbit of $\tilde Q$ is the sequence $\tilde Q_{n+1}=F_{\tilde C}(\tilde Q_n)$ starting at $\tilde Q_0=\tilde Q$. The square is the diagonal of the general plain bilinear product, the multiplication of $\mathbb{B}$ as a $\mathbb{C}$-algebra; the other readings of the square — the quaternionic $\tilde Q\tilde Q^{\natural}$, the Hermitian $\tilde Q\tilde Q^{*}$, and the left and right multiplications — give different theories and are not used, as *The Biquaternion Quadratic Map and Its Julia Sets* establishes in its first section.
+
+**Proposition (the square in closed form).** Every biquaternion satisfies the Cayley–Hamilton identity of the algebra,
+
+$$
+\boxed{\;\tilde Q^{2}-2Q_t\tilde Q+N(\tilde Q)e_t=0\;},
+$$
+
+so that $\tilde Q^{2}=2Q_t\tilde Q-N(\tilde Q)e_t$. Verified to $1.8\times10^{-15}$ on one hundred random elements.
+
+**Proof.** In the matrix model the characteristic polynomial of $\mathsf{M}(\tilde Q)$ is $\lambda^{2}-2Q_t\lambda+N(\tilde Q)$, and the Cayley–Hamilton theorem of $2\times2$ matrices gives the identity; the model is an algebra isomorphism, so the identity transports.
+
+**Proposition (the differential and its determinant).** The differential of $F_{\tilde C}$ at $\tilde Q$ is the Jordan product with $\tilde Q$,
+
+$$
+dF_{\tilde C}\big|_{\tilde Q}(\tilde Q_2)=\tilde Q\tilde Q_2+\tilde Q_2\tilde Q ,
+$$
+
+and its determinant, as a $\mathbb{C}$-linear map of the four complex coordinates, is
+
+$$
+\boxed{\;\det dF_{\tilde C}\big|_{\tilde Q}=16\,N(\tilde Q)\,Q_t^{2}\;}.
+$$
+
+Verified to $1.0\times10^{-12}$ on one hundred random elements.
+
+**Proof.** In the coordinates $(Q_t,Q_x,Q_y,Q_z)$ the square is $(Q_t^{2}-(\vec Q,\vec Q),\ 2Q_t\vec Q)$, because the cross product of a vector with itself vanishes. The Jacobian is the block matrix with $2Q_t$ in the scalar-scalar entry, $-2Q_j$ in the scalar-vector row, $2Q_j$ in the vector-scalar column and $2Q_t$ times the identity on the vector block; its determinant is $(2Q_t)^{3}\bigl(2Q_t+2(\vec Q,\vec Q)/Q_t\bigr)=16\,Q_t^{2}\bigl(Q_t^{2}+(\vec Q,\vec Q)\bigr)$, which is the displayed value, and the case $Q_t=0$ is the limit of the formula, where the determinant vanishes identically as it must.
+
+**The step is not a flow, and the reason is the symmetry of the differential.** A derivation of $\mathbb{B}$ acting on an element is a commutator, and the exponential of a derivation is an automorphism, so a one-parameter group of the algebra moves elements along the antisymmetric product. The differential of the square is the symmetric product. **The step is the exponential of nothing: it is the square, and the square is the Jordan product composed with the element itself.** This is the sharpest algebraic difference between a discrete rule and a continuous one, and it is why the entry reads identities and not generators.
+
+**Theorem (the one-way valve).** The square maps the material sector into the informational sector, and the informational sector into itself:
+
+$$
+\boxed{\;\mathbb{B}_{\Phi}^{2}\subseteq\mathbb{B}_{\Psi}, \qquad \mathbb{B}_{\Psi}^{2}\subseteq\mathbb{B}_{\Psi}\;}.
+$$
+
+Verified on one hundred random elements of each sector, with no exception, and on the second square as well.
+
+**Proof.** The matrix of an element of $\mathbb{B}_{\Phi}$ is anti-Hermitian, and the square of an anti-Hermitian matrix is Hermitian, $(X^{2})^{*}=(X^{*})^{2}=(-X)^{2}=X^{2}$; the matrix of an element of $\mathbb{B}_{\Psi}$ is Hermitian, and the square of a Hermitian matrix is Hermitian. Transport along the isomorphism $\mathsf{M}$.
+
+**The reading of the valve is a statement about what a step does to matter.** A material element has an imaginary scalar part and a real vector part; its square has a real scalar part and an imaginary vector part, which is the form of an informational element. **One step of the parameterless map turns matter into information, and no number of further steps turns it back.** The informational sector is closed, so once an orbit enters it, it stays. The parameter is the only thing that keeps the material sector populated: with $\tilde C\in\mathbb{B}_{\Phi}$ the image $\tilde Q^{2}+\tilde C$ is the sum of an informational and a material part and is a general element again, and the valve is defeated. This is the discrete counterpart of the exchange that *Each Sector Is the Other's Clock* describes for multiplication by the central imaginary, with one difference that matters: multiplication by $i$ exchanges the sectors in both directions and has order four, and the square exchanges them in one direction only and has no order.
+
+**Proposition (what the step is covariant under).** Let $U$ be a unit with $U^{*}U=e_t$. Then
+
+$$
+\boxed{\;F_{U\tilde CU^{*}}(U\tilde QU^{*})=U\,F_{\tilde C}(\tilde Q)\,U^{*}\;}.
+$$
+
+Verified for rotation rotors on one hundred angles to $1.8\times10^{-15}$, and violated for boost rotors, where the two sides differ by at least $5.0$ in Euclidean norm.
+
+**Proof.** $(U\tilde QU^{*})^{2}=U\tilde Q(U^{*}U)\tilde Q U^{*}$, which is $U\tilde Q^{2}U^{*}$ exactly when $U^{*}U=e_t$; a rotation rotor is real and satisfies it, and a boost rotor $B=\cosh\tfrac\phi2+i\sinh\tfrac\phi2\,\vec u_{\mathrm b}$ satisfies $B^{*}B=\cosh\phi\,e_t+i\sinh\phi\,\vec u_{\mathrm b}\neq e_t$ and does not.
+
+**The step has a preferred frame, and the frame is the one in which it is taken.** A rotation is an automorphism of the algebra, so it commutes with the square; a boost is not, so it does not. **A discrete rule that reads "apply the square" is stated in one frame, and the boost of the rule is a different rule.** This is exactly the situation of a lattice regularisation, where the lattice breaks the boost invariance and keeps the rotation invariance (*Lattice Gauge Theory and the Biquaternion Path Integral*), and the entry records it rather than repairing it: no repair exists inside the algebra, because the repair would be a boost-covariant square, and the square is fixed.
+
+## The Singular Set
+
+**Definition.** The critical set of the family is the zero set of the determinant of the differential,
+
+$$
+\Sigma(\mathbb{B})=\{\tilde Q : \det dF_{\tilde C}\big|_{\tilde Q}=0\}=\mathscr{Z}\cup\mathbb{B}_{V}, \qquad \mathbb{B}_{V}=\{\tilde Q: Q_t=0\},
+$$
+
+the union of the zero-divisor cone and the traceless subspace. The two components are different objects. The first is the cone of non-invertible elements; the second is a linear subspace of complex dimension three, the set of matrices of trace zero, on which the two eigenvalues of $\mathsf{M}(\tilde Q)$ are opposite.
+
+**The first component is the light cone, inside the material sector.** On a material element $\tilde R_{\Phi}=i\lambda e_t+\vec r$ with $\lambda$ and $\vec r$ real the norm is $-\lambda^{2}+\lvert\vec r\rvert^{2}$, so the equation $N=0$ is the equation $\lvert\vec r\rvert=\lvert\lambda\rvert$, which is the light cone of the interval of signature $(1,3)$ (*The Light Cone as the Biquaternion Zero-Divisor Cone*, *The Material Sector: Four-Vectors, Interval and Lorentz Action*). **The component of the critical set that meets the material sector is the physical light cone, and it is not put there by hand: it is the zero set of the algebra's own quadratic form.**
+
+**The second component contains the carrier of spin one.** The traceless subspace $\mathbb{B}_{V}$ is the complex span of the three units $\vec e_x,\vec e_y,\vec e_z$, so it contains the real triple $\mathfrak{k}$ on which the adjoint action of the rotation group acts as the vector representation (*The Spin-One Carrier: The Material Sector*). Verified: the determinant of the differential vanishes to machine precision on one hundred random real vectors and on one hundred random complex vectors of $\mathbb{B}_{V}$.
+
+**The spin-one carrier therefore sits on the singular set of the step.** The rotations move the triple among itself, and every element of it is a point where the step has no local inverse. **The carrier of the integer spin is exactly a component of the locus where the discrete dynamics degenerates**, and this is a statement about the algebra and not about a physical field: the triple is where the derivative of the square loses rank, not where a field is large.
+
+**Definition.** The **singular Julia set** of the parameter is the part of the Julia set that lies on the critical set, $\Sigma_{\tilde C}=J_{\tilde C}\cap\Sigma(\mathbb{B})$, with the zero-divisor part $J_{\tilde C}\cap\mathscr{Z}$ and the pure part $J_{\tilde C}\cap\mathbb{B}_{V}$.
+
+**Proposition (the singular part at the parameter zero).** For $\tilde C=0$ the Julia set is the level set $\{\rho=1\}$ and the singular part is
+
+$$
+\boxed{\;J_0\cap\mathscr{Z}=\{\tilde Q\in\mathscr{Z} : \lvert Q_t\rvert=\tfrac12\}, \qquad J_0\cap\mathbb{B}_{V}=\emptyset\;}.
+$$
+
+Verified: on one hundred random cone elements the spectral radius is $\lvert 2Q_t\rvert$ with no exception, and it equals one exactly when $\lvert Q_t\rvert=\tfrac12$.
+
+**Proof.** On the cone the Cayley–Hamilton identity reads $\tilde Q^{2}=2Q_t\tilde Q$, so $\mathsf{M}(\tilde Q)$ is a rank-one matrix of trace $2Q_t$ and its spectrum is $\{0,2Q_t\}$; hence $\rho=\lvert 2Q_t\rvert$, and the level set $\rho=1$ is the shell $\lvert Q_t\rvert=\tfrac12$ of the cone. A pure vector has $Q_t=0$, hence $\rho=0$, hence it lies in the open set $\{\rho<1\}\subset\mathcal K_0$ and in the interior of the filled set, so it is in no boundary at all.
+
+**The reading of the shell is that the marginal lightlike elements are the ones whose scalar part has modulus one half.** On the material sector $Q_t=i\lambda$, so the condition is $\lvert\lambda\rvert=\tfrac12$: the light cone cut by a level set of the material time coefficient. **Not the whole cone is marginal; the fractal boundary picks one shell of it**, and the shell is exactly where the cone's own scalar recursion changes from contraction to expansion, as the next section shows. For a parameter that is not zero the pure part of the singular Julia set need not be empty, and the case is treated where the slices are treated.
+
+## The Cone
+
+**Theorem (the step on the cone).** Every element of the cone satisfies
+
+$$
+\boxed{\;\tilde Q^{2}=2Q_t\,\tilde Q\;},
+$$
+
+so the step with the parameter zero preserves the complex line $\mathbb{C}\tilde Q$ and acts on it by the multiplication by $2Q_t$. Verified to $9.9\times10^{-16}$ on one hundred cone elements, half of them multiples of idempotents and half of them nilpotents.
+
+**Proof.** The Cayley–Hamilton identity is $\tilde Q^{2}=2Q_t\tilde Q-N(\tilde Q)e_t$, and the last term vanishes on the cone. The right-hand side is a complex multiple of $\tilde Q$, which is the statement about the line; and $2Q_t$ is that multiple.
+
+**Corollary (one recursion for the whole cone).** Write $\tilde Q_n=\tau_n\tilde Q$ on the line. Then $\tau_{n+1}=2Q_t\tau_n^{2}$, and in the variable $w=2Q_t\tau$ the recursion is
+
+$$
+\boxed{\;w_{n+1}=w_n^{2}, \qquad w_0=2Q_t\;}.
+$$
+
+The size of the $n$-th iterate is therefore $\lvert 2Q_t\rvert^{2^{n}}$, so a cone element is bounded exactly when $\lvert Q_t\rvert\le\tfrac12$, escapes when $\lvert Q_t\rvert>\tfrac12$, and is bounded without converging on the shell $\lvert Q_t\rvert=\tfrac12$. Verified on the material rays $\lambda=\tfrac{3}{10},\tfrac12,\tfrac45$: the scalar coefficients reproduce $\lvert 2\lambda\rvert^{2^{n}}$ and the sequence is constant at $\lambda=\tfrac12$.
+
+**Proof.** Multiply $\tilde Q_{n}=\tau_nQ$ by itself: $\tau_{n+1}=2(Q_n)_t\tau_n^{2}=2Q_t\tau_n^{2}$ because $(Q_n)_t=\tau_nQ_t$. Then $w_{n+1}=2Q_t\tau_{n+1}=4Q_t^{2}\tau_n^{2}=w_n^{2}$. The boundedness statement is that of the squaring map on the modulus of a complex number.
+
+**Three consequences are worth separating.**
+- **The direction is fixed and only the scale moves.** The projective point of a cone element is a fixed point of the dynamics, for every parameter value zero, and no orbit on the cone ever leaves its line. **A lightlike element has no direction to change**: the step can only rescale it.
+- **The phase doubles at every step.** Since $w_n=w_0^{2^{n}}$, the argument of $w$ is multiplied by $2^{n}$ modulo $2\pi$: the cone carries a clock whose tick doubles the phase and whose period is not uniform. This is a different clock from the one *Each Sector Is the Other's Clock* reads, which is the quarter turn of multiplication by $i$ and has period four; the entry does not identify the two, because one is an automorphism of order four and the other is a degree-two map.
+- **The shell $\lvert Q_t\rvert=\tfrac12$ is the fixed locus of the scale.** It is the same shell that the singular Julia set of the previous section singles out, and the agreement is not a coincidence: it is the boundary of the set where the scalar recursion is a contraction.
+
+**The cone is invariant for one parameter only.** For $\tilde C=Ce_t\neq0$ a cone element leaves the cone at the first step: verified on one hundred cone elements at each of the central parameters $C\in\{\tfrac12+\tfrac{3}{10}i,-1.2,2,10^{-3}\}$, where $\lvert N(\tilde Q^{2}+\tilde C)\rvert$ stays above $5.6\times10^{-7}$ and is typically of the order of the parameter, while it vanishes identically at $C=0$. **The lightlike set is a dynamical object of the parameterless map and not of the family**, which is the algebraic reason why the corpus treats the cone as a boundary of the algebra and not as a subspace that a field may be confined to.
+
+## The Filled Set and the State Space
+
+**Definitions.** The filled Julia set is the set of points with bounded orbit and the Julia set is its boundary, $\mathcal K_{\tilde C}=\{\tilde Q: (F_{\tilde C}^{n}(\tilde Q))\text{ bounded}\}$ and $J_{\tilde C}=\partial\mathcal K_{\tilde C}$. Both are completely invariant, and the proofs are those of *The Biquaternion Quadratic Map and Its Julia Sets*; the invariance uses no properness, and none holds.
+
+**Theorem (the eigenvalue reduction).** Let $\tilde C=Ce_t$ be central, let $q_n$ be the $n$-th iterate of $\omega\mapsto\omega^{2}+C$, and let $\mathsf{M}(\tilde Q)$ be diagonalisable with spectrum $\{\lambda_1,\lambda_2\}$. Then the spectrum of $\mathsf{M}(F_{\tilde C}^{n}(\tilde Q))$ is $\{q_n(\lambda_1),q_n(\lambda_2)\}$, and $\tilde Q\in\mathcal K_{\tilde C}$ exactly when both eigenvalues lie in the complex filled set $K_C$. Verified on one hundred diagonalisable elements at $C=-\tfrac{3}{10}+\tfrac{4}{10}i$ for five iterations, with no discrepancy.
+
+**Theorem (the parameter zero).** For $\tilde C=0$,
+
+$$
+\boxed{\;\mathcal K_0=\{\rho<1\}\cup\{\tilde Q: \rho=1 \text{ and } \mathsf{M}(\tilde Q) \text{ diagonalisable}\}, \qquad J_0=\{\rho=1\}\;}.
+$$
+
+Verified by comparing the criterion with seventy iterations on one hundred random elements: agreement in every case, and every element of spectral radius above one escaped.
+
+**Proof.** For $\rho<1$ the iterate tends to zero, because a matrix power is bounded by a constant times $\rho^{n}$ up to the Jordan size. For $\rho=1$ and a diagonalisable matrix the iterate stays on a torus and is bounded; for $\rho=1$ and a non-scalar Jordan block the iterate carries a factor $n$ and is unbounded. For $\rho>1$ the iterate grows. The boundary statement is that of a level set of a continuous function with no interior critical value, which is the argument of *The Hausdorff Dimension of the Biquaternion Julia Sets*.
+
+**The state space lies inside the filled set.** A state of the qubit is the normalised positive Hermitian element $\tilde\varrho=\tfrac12e_t+i\vec w$ with $\vec w$ real; its matrix is $\tfrac12I+\vec w\cdot\vec\sigma$, of trace one and spectrum $\{\tfrac12-\lvert\vec w\rvert,\tfrac12+\lvert\vec w\rvert\}$, so its spectral radius is $\tfrac12+\lvert\vec w\rvert$. Three statements follow and all three are verified.
+
+- **Positivity is the ball.** The state is positive exactly when $\lvert\vec w\rvert\le\tfrac12$, and the mixture is pure exactly on the sphere. Verified: one hundred sampled states of the ball have spectral radius at most $0.987$ and one hundred sampled states of the sphere have radius one to $6.7\times10^{-16}$.
+- **Every state is in $\mathcal K_0$.** The spectral radius is at most one and the matrix is Hermitian, hence diagonalisable, so every state satisfies the criterion; verified on the two hundred samples.
+- **The pure states are exactly the part of the state space on $J_0$.** The Julia set at the parameter zero is the level set of radius one, and inside the trace-one positive slice the level set is the sphere. Verified on the same samples.
+
+**The reading is a filter, and the entry states it as one.** At the parameter zero the step maps $\tilde\varrho$ to $\tilde\varrho^{2}$, whose spectral radius is $(\tfrac12+\lvert\vec w\rvert)^{2}$: every mixed state contracts, and twenty steps take the state of $\lvert\vec w\rvert=\tfrac{2}{5}$ to zero to machine precision, while a pure state is a fixed point and stays fixed for every number of steps. **The parameterless step annihilates every state that is not pure and fixes every state that is; the pure states are the only survivors, and they are exactly the boundary of the filled set.** This is a statement about one algebraic map and not about a measurement: the entry does not claim that any physical process performs this contraction, and the reading of the map as a purification is a reading of a slot and not a derivation of a dynamics.
+
+**The filled set is much larger than the state space, and the difference is the point.** The open set $\{\rho<1\}$ has real dimension eight, and it contains elements of no physical interpretation: a nilpotent of arbitrarily large Euclidean norm is inside it because its spectral radius is zero. **Boundedness is not physicality and it is not an energy bound**, and any attempt to read $\mathcal K_0$ as the set of allowed states fails at the first nilpotent.
+
+**The exceptional points are the elements the step annihilates.** A square-zero element satisfies $\tilde Q^{2}=0$; its matrix is nilpotent of rank one, of spectrum $\{0,0\}$, and the two eigenvalues coincide with the eigenvector merged into one, which is exactly the exceptional degeneracy of *Exceptional Points and the Nilpotent Regime in the Biquaternion Spectrum*, as opposed to the diabolic degeneracy of the central elements. **One step sends an exceptional point to the origin whatever its size**: the element $\vec e_x+i\vec e_y$, of Euclidean norm $\sqrt2$, reaches $0$ in one step, and its thousandfold multiple, of norm $1414$, reaches $0$ in one step as well. Verified for both, and the matrix of the multiple is nilpotent to machine precision.
+
+## The Escape Radius and the Green's Function
+
+**The failure of the radius.** In the complex plane a point of modulus above $1+\lvert C\rvert$ escapes, and the bound is uniform in the point. In $\mathbb{B}$ no such bound exists, because the square of a non-zero element can be zero: the estimate that certifies escape needs a lower bound for $\lVert\tilde Q^{2}\rVert$ in terms of $\lVert\tilde Q\rVert$, and the cone supplies none. **An element of any size can collapse in one step, so no radius in any norm can certify escape.**
+
+**Theorem (the conditional radius).** Let $\delta\in(0,1]$ and let $\sigma_1\ge\sigma_2$ be the singular values of $\mathsf{M}(\tilde Q)$. If
+
+$$
+\boxed{\;\lVert\tilde Q\rVert>R_\delta:=\frac{1+\sqrt{1+4\delta^{2}\lVert\tilde C\rVert}}{2\delta^{2}}\;}
+\qquad\text{and}\qquad \frac{\sigma_2}{\sigma_1}\ge\delta ,
+$$
+
+then $\lVert F_{\tilde C}(\tilde Q)\rVert>\lVert\tilde Q\rVert$ and the orbit escapes. Verified on one hundred random pairs of a parameter and a point, with no counterexample.
+
+**The quantity $\delta$ is the reciprocal condition number, and it vanishes exactly on the cone.** So the theorem is the honest replacement of the single radius of the field: a family of radii indexed by the distance to the zero divisors, diverging as that distance goes to zero. **The step certifies escape in proportion to how far the element is from being a zero divisor**, and at the cone there is nothing to certify.
+
+**Definition and theorem (the Green's function).** On the escaping set put
+
+$$
+G_{\tilde C}(\tilde Q)=\lim_{n\to\infty}2^{-n}\log^{+}\lVert F_{\tilde C}^{n}(\tilde Q)\rVert .
+$$
+
+Then $G_{\tilde C}\circ F_{\tilde C}=2G_{\tilde C}$, the function vanishes exactly on the filled set, and at a central parameter with a diagonalisable matrix it is the maximum of the two complex Green's functions,
+
+$$
+\boxed{\;G_{Ce_t}(\tilde Q)=\max\bigl(G_C(\lambda_1),G_C(\lambda_2)\bigr)\;}.
+$$
+
+The normalization $G=\log\lVert\tilde Q\rVert+O(1)$ holds on the $\delta$-regular part of the escaping set for every $\delta>0$ and fails on orbits that meet the cone.
+
+**Proof.** The functional equation is the shift $2^{-n}\log^{+}\lVert F^{n+1}\tilde Q\rVert=2\cdot2^{-(n+1)}\log^{+}\lVert F^{n+1}\tilde Q\rVert$; the vanishing locus is the bounded orbit; the maximum formula is the reduction of the previous section, a matrix norm being comparable to the largest modulus of an eigenvalue up to a constant that the factor $2^{-n}$ kills. The normalization is the conditional estimate of *The Escape Radius and the Green's Function for the Biquaternions*.
+
+**Verified.** The doubling is exact as an identity of the spectral radius, $\rho(\mathsf{M}(\tilde Q)^{2})=\rho(\mathsf{M}(\tilde Q))^{2}$, to $4.1\times10^{-14}$ on one hundred random elements, and the numerical Green's function computed from six iterations agrees with $\log\rho$ to $8.4\times10^{-3}$, the size expected from the $2^{-n}$ rate of convergence.
+
+**The reading: $G$ is the discrete Lyapunov exponent, and it is defined only off the cone.** The factor two in $G\circ F=2G$ is the degree of the square: the $n$-th iterate has degree $2^{n}$ in the initial point, and the limit divides that degree out. **The factor two of the double cover is a different two**, the degree of the covering of the rotation group by its unit sphere, and the entry does not identify them; the coincidence of the numeral is not an identity of the objects. What the doubling does say is that the natural additive coordinate on the escaping set is $G$ itself, on which the step is the multiplication by two.
+
+**The physics of the conditional statement is a statement about scale.** The reciprocal condition number vanishes on the cone, and on the material sector the cone is the lightlike set. So the expansion rate of an element is a function of that element only while the element stays off the light cone. **On the light cone the algebra has no scale to exponentiate**, which is the same fact as the collapse of the square, stated in the language of rates rather than in the language of norms.
+
+## The Parameter Locus
+
+**The two loci.** The connectedness locus is the set of parameters whose Julia set is connected, and the critical-orbit locus is the set of parameters whose orbit of $0$ is bounded. In the complex plane the two coincide, by the theorem of Douady and Hubbard; in $\mathbb{B}$ they are defined separately and their relation is open, because the critical set is not a point but the union of the cone and the traceless subspace, and it contains escaping points for every parameter. **The entry records the definition it uses and the identification it cannot make**: the biquaternion Mandelbrot set is the critical-orbit locus, which is the locus the escape-time algorithm tests, and the connectedness locus is a different set whose equality with it is the central open problem of the category.
+
+**The central slice is the classical theory.** For a central parameter the orbit of the origin is $q_n(0)e_t$, so the critical-orbit locus cut by the centre is the complex Mandelbrot set under $C\mapsto Ce_t$; and the filled set of the slice is the complex filled set read on the two eigenvalues. Verified: the eigenvalue reduction holds on one hundred diagonalisable elements for five iterations, and the criterion of the previous section agrees with iteration on one hundred random elements.
+
+**The two loci on the idempotent plane.** A parameter in the idempotent plane $\tilde C=C_1\tilde\Pi+C_2\tilde\Pi'$ makes the plane invariant, and on it the family is the pair of complex maps $\omega\mapsto\omega^{2}+C_1$ and $\omega\mapsto\omega^{2}+C_2$; so the critical-orbit locus meets the plane in the product $\mathcal M\times\mathcal M$ of two copies of the complex Mandelbrot set. **The parameter locus has a slice on which it is exactly known, and the slice is the one on which the algebra is commutative.**
+
+**The physics of the locus is the physics of a source.** The parameter $\tilde C$ is the only term that is not built from the state, so the locus is the set of sources for which the state does not run away. **Read as a bound-state condition it is a condition on the source and not on the energy**, and the previous sections have shown why: no energy bound exists, because the cone defeats every radius. The entry does not claim that the biquaternion Mandelbrot set is a physical region; it claims that it is the parameter locus of a rule whose singular set the corpus already interprets.
+
+## The Two Halves and the Coupling
+
+**Proposition (the entries of the square).** With $\mathsf{M}(\tilde Q)=\begin{pmatrix}a&b\\c&d\end{pmatrix}$,
+
+$$
+\mathsf{M}(\tilde Q^{2})=\begin{pmatrix}a^{2}+bc & b(a+d)\\ c(a+d) & cb+d^{2}\end{pmatrix},
+$$
+
+verified to $3.6\times10^{-15}$ on one hundred random elements. The off-diagonal entries are multiplied by the trace $a+d=2Q_t$, and the off-diagonal product $bc$ enters the diagonal entries as a parameter.
+
+**Corollary (the diagonal plane).** The elements whose vector part lies along $\vec e_z$ have diagonal matrices and form the commutative plane $W_{\tilde\Pi}=\mathbb{C}\tilde\Pi\oplus\mathbb{C}\tilde\Pi'$ of the idempotent decomposition. The plane is invariant exactly when the parameter lies in it, and then the map is the pair of independent complex maps on the two entries. Verified: for a point of the plane and a parameter of the plane the off-diagonal part of the image is zero to machine precision on one hundred samples, and for a point of the plane and a generic parameter the off-diagonal part of the image equals that of the parameter exactly.
+
+**The split fractal is a product, and the product is the massless case.** On the plane the filled set is $K_{C_1}\times K_{C_2}$, the boundary is the boundary of that product, and the Hausdorff dimension of the slice is the maximum of the two sums of a boundary dimension and a filled dimension. **Two halves, two complex dynamics, no coupling.** Off the plane the coupling is the trace acting on the off-diagonal pair and the off-diagonal product acting on the diagonal pair, and no product of two one-variable fractals describes the result.
+
+**The reading of the coupling is a reading of a slot.** The two halves of the Peirce decomposition are the two chiralities of the spin-half carrier, and the corpus's account of the mass of a spin-half field is that the mass is the pairing of the two ideals and not the modulus of either (*The Spin-Half Carrier: The Bispinors*, *The Carriers, the Spin and the Closure*). The entry observes that the term which destroys the product structure of the fractal is exactly the term which pairs the two halves. **The off-diagonal parameter occupies the slot that the corpus assigns to the mass**, and the entry claims the sharing of the slot and not an identification of the parameter with a mass.
+
+**The contrast with the split algebra is the contrast between a local and a global splitting.** In the split-biquaternion algebra the idempotents $\tfrac12(e_t\pm j)$ are central, the algebra factors as $\mathbb{H}\oplus\mathbb{H}$, and every map is the pair of two quaternion maps with no coupling at all. In $\mathbb{B}$ no non-trivial central idempotent exists, the splitting is a slice and not a decomposition, and the coupling is present off the slice. **The biquaternion case is the case of a real but local splitting**, and the entry inherits that structure rather than inventing it (*The Idempotent Decomposition and the Split Fractal of the Biquaternions*).
+
+## The Slices
+
+**A slice is an intersection with a subspace, and a subspace is a frame.** The slice catalogue is small, and each entry of it is a choice of subalgebra: the centre, the real quaternion subspace, an idempotent plane, and the real form of a conjugation.
+
+| slice | the subspace | the dynamics on it | what the slice is |
+|---|---|---|---|
+| the centre | $Ce_t$, $C\in\mathbb{C}$ | the complex quadratic map | the identity direction, one complex number per step |
+| the real quaternion subspace | $q\in\mathbb{H}$ | the quaternion quadratic map | the real form, the frame of a rotation |
+| the idempotent plane | $C_1\tilde\Pi+C_2\tilde\Pi'$ | two independent complex maps | the chiral basis, the diagonal model |
+| the real slice | real coefficients | the real quadratic family | the fixed point set of the coefficient conjugation |
+
+**The filled set does not depend on the slice and the fractal does.** Boundedness is a set-theoretic property of the algebra and is independent of any norm and any subspace; the shape of the intersection depends on the subspace, because the intersection of a set with different subspaces is different. **A slice is what an observer sees, and the observer is a choice of subalgebra.** The entry takes the phrase seriously and refuses to let it do more work than it can: the choice of a slice is a choice of frame, and a frame is not an observable.
+
+**The conjugation symmetries are the symmetries of the slice.** The three conjugations act coefficientwise on the parameter and commute with the square, so the stabiliser of the parameter acts on its fractal; the reversal does not, because it is anticommutative and carries the even family to the odd one. **The symmetry group of a biquaternion fractal is a subgroup of the Klein group, and which subgroup is decided by the parameter.**
+
+## The Dimension
+
+**The exact values at the parameter zero.** $\dim_H\mathcal K_0=8$, because the filled set contains the open set $\{\rho<1\}$, and $\dim_HJ_0=7$, because the Julia set is the level set of the spectral radius and is a real hypersurface off its singular locus. The idempotent manifold is contained in $J_0$ and has real dimension four, so the singular part of the fractal is not a negligible set.
+
+**The slices.** The central slice has the dimension of the complex Julia set, and the idempotent-plane slice has the dimension
+
+$$
+\dim_H\bigl(J_{\tilde C}\cap W_{\tilde\Pi}\bigr)=\max\bigl(\dim_HJ_{C_1}+\dim_HK_{C_2},\ \dim_HK_{C_1}+\dim_HJ_{C_2}\bigr),
+$$
+
+the maximum of the two products of a boundary and a filled set, which is the dimension of the boundary of a product.
+
+**The bound at a central parameter.** With $\alpha=\dim_HK_C$,
+
+$$
+\boxed{\;\dim_H\mathcal K_{Ce_t}\le4+2\alpha\;},
+$$
+
+with equality at $C=0$, where $\alpha=2$ and the bound is $8$. The four is the real dimension of the conjugacy class of a diagonalisable matrix modulo its centraliser, and the $2\alpha$ is the dimension of the pair of eigenvalues.
+
+**The reading of the split $4+2\alpha$ is the split of the algebra itself.** The four dimensions are what the adjoint action moves: the conjugating matrix modulo the torus that fixes the spectrum, which is the frame. The $2\alpha$ are what the adjoint action does not move: the spectrum itself. **The dimension of a biquaternion fractal is the dimension of the frame plus twice the dimension of the complex fractal that the spectrum carries**, and this is the only clean formula the category has. For a non-central parameter no such formula exists, because the orbit is not a polynomial in one element and the spectrum does not separate.
+
+**The dimension says whether the marginal set is a wall or a dust.** At the parameter zero the filled set is full and its boundary is a hypersurface: the marginal set has codimension one, so a small perturbation of a marginal state decides its fate with probability one in a transverse direction only. For a parameter outside the complex Mandelbrot set the filled set has Hausdorff dimension at most $4+2\alpha<6$, so it has empty interior and its boundary is the set itself. **The parameter decides whether the knife edge is a surface or the whole of the set**, and the transition is the boundary of the complex Mandelbrot set.
+
+## The Interpretations
+
+1. **The step is a rule and not a flow, and that is the first physical statement of the entry.** A differential that is a Jordan product has no generator, so no energy, no action and no conserved quantity of the usual kind is available. A discrete dynamics of the algebra is a dynamics with a rule and without a Hamiltonian, and everything read below is read from the rule.
+
+2. **The square is a one-way valve from the material sector to the informational one.** Verified on one hundred elements of each sector: the square of an anti-Hermitian element is Hermitian, the square of a Hermitian element is Hermitian, and no iterate of either returns to the anti-Hermitian side. **One step turns matter into information, and the parameter is the only thing that puts matter back.**
+
+3. **The critical set of the step is the light cone plus the traceless slice.** The determinant of the differential is $16NQ_t^{2}$, so the step is locally invertible exactly off the zero divisors and off zero trace. Inside the material sector the zero divisors are the lightlike elements, so **the discrete dynamics has no local clock on the light cone**.
+
+4. **The carrier of spin one lies on the critical set.** The triple is traceless, so every element of it is a point of degeneracy of the step. This is the one place in the entry where a carrier of the previous entries appears directly, and it appears as a locus of singularities rather than as a space of values.
+
+5. **On the cone the step preserves the direction and squares the scale.** $Q^{2}=2Q_tQ$, so a lightlike element keeps its projective point forever and its size obeys one recursion, $w\mapsto w^{2}$ with $w=2Q_t$. The cone is invariant for the parameter zero alone: any non-zero central parameter takes it off the cone at the first step.
+
+6. **The state space of the qubit is inside the filled set, and the Bloch sphere is the trace of the Julia set through it.** Every normalised positive Hermitian element has spectral radius at most one, the equality holding exactly for the pure states; verified on two hundred samples. **Pure states are the boundary between the states that the parameterless step annihilates and the elements that run away**, and the boundary is attained: the states themselves are on it.
+
+7. **An exceptional point is annihilated in one step whatever its size.** A square-zero element is nilpotent, its two eigenvalues coincide and merge, and $F_0$ sends it to the origin: an element of norm $1414$ is annihilated as surely as one of norm $\sqrt2$. **The size of a state is not a protection against the collapse of the step**, and this is the algebraic form of the failure of every escape radius.
+
+8. **There is no escape radius, and the conditional radius is a measure of the distance to the cone.** $R_\delta$ diverges as the reciprocal condition number goes to zero, so the certification of escape is strongest for the elements furthest from being zero divisors. **The rate of expansion is defined only for the elements that stay off the light cone**, which is the same fact as the collapse of the square, stated as a statement about scale.
+
+9. **The step has a preferred frame.** It commutes with the rotations and not with the boosts, verified to $1.8\times10^{-15}$ in one case and violated by at least $5.0$ in the other. **A discrete step is an equal-time step, and equal time is frame-dependent**: the discrete dynamics of the algebra is a non-relativistic structure even though the algebra is the relativistic one, which is exactly the status of a lattice regularisation.
+
+10. **The coupling that destroys the product structure is the slot of the mass.** The fractal is a product of two complex fractals exactly on the idempotent plane, which is the chiral-diagonal case, and the term that destroys the product is the off-diagonal parameter, which pairs the two halves. The entry claims the slot and not the identification.
+
+11. **The dimension of a central biquaternion fractal is the dimension of the frame plus twice the dimension of the spectrum.** The four of the conjugacy class and the $2\alpha$ of the eigenvalue pair are the two halves of what the adjoint action does and does not move, and the split is the split of the algebra.
+
+## The Limits
+
+**The map is not the field theory.** The corpus's field equations are linear or quasilinear equations in a continuous variable, with an action, a stress tensor and a boost-invariant propagation; the quadratic map has none of these. It is a polynomial self-map of the algebra, and the readings of this entry are identifications of sets: the singular set with the light cone, the state space with a slice of the filled set, the pure states with the boundary. **No reading here is a derivation of a physical process from a physical premise**, and a reader who takes the Mandelbrot set of the algebra for a region of parameter space measured in an experiment has taken the entry further than it goes.
+
+**The open problems are stated and not hidden.** The relation between the connectedness locus and the critical-orbit locus is open in the full algebra and is the central question of the category. The Hausdorff dimension of a non-central fractal is unknown and no formula is conjectured. The Green's function on the orbits that meet the cone infinitely often is not defined, and its existence there is open. **The cone is the one part of the dynamics that is completely understood, and it is understood because it is one-dimensional.**
+
+**Two notational collisions are recorded rather than smoothed.** The parameter is written $\tilde Q_2$ in one mathematical article and $\tilde Q_5$ in another, and the entry writes $\tilde C$ throughout. And the factor two of the Green's function and the factor two of the double cover are different twos: the first is the degree of the square and the second the degree of a covering. **A numeral that agrees is not an identity of objects**, and the corpus's habit of reading numerals as structure makes the warning worth stating.
+
+**What the entry does not do.** It does not treat the iterated function systems beyond naming them as the inverse-branch description of the same fractal, it does not develop the Fatou theory, and it does not repeat the slice catalogue of the mathematical article. The dimension is cited and not re-derived, and the pluripotential theory of the equilibrium measure is left where it belongs.
+
+## Summary
+
+The biquaternion quadratic map is a discrete rule on the algebra and not a flow: its differential is a Jordan product with the point, not a derivation, so it has no generator, and the entry reads identities of the rule and never a generator. The singular set of the rule is the union of the zero-divisor cone with the traceless subspace, and inside the material sector the cone is the light cone, so the locus where a step cannot be undone is the lightlike set together with the zero-trace slice; the spin-one carrier is contained in the second component. On the cone the rule is transparent: the square is the multiplication by $2Q_t$, so the direction of a lightlike element is fixed forever, its scale obeys the single recursion $w\mapsto w^{2}$ in $w=2Q_t$, and the cone is invariant for the parameter zero alone. At the parameter zero the filled set is the set of elements of spectral radius below one together with the diagonalisable elements of radius one, and its boundary is the level set of radius one; the whole state space of the qubit lies inside it, and the pure states are exactly the part of the state space on the boundary. The step with no parameter annihilates every mixed state and fixes every pure one, and it annihilates every exceptional point in a single step whatever its size, which is why no escape radius exists and why the honest replacement is a radius conditional on the distance to the cone. The step commutes with the rotations and not with the boosts, so a discrete dynamics of the algebra has a preferred frame. And the parameter locus is classical on the slices where the algebra is commutative, while the product structure of the fractal holds exactly on the idempotent plane and is destroyed by the off-diagonal parameter, which occupies the slot that the corpus assigns to the mass.
+
+## Summary of Notation
+
+| symbol | meaning |
+|---|---|
+| $\tilde Q=Q_te_t+\vec Q$ | a biquaternion, complex coefficients |
+| $N(\tilde Q)=Q_t^{2}+(\vec Q,\vec Q)$ | the biquaternion norm |
+| $\mathscr{Z}=\{\tilde Q\neq0: N(\tilde Q)=0\}$ | the zero-divisor cone |
+| $\mathbb{B}_{V}=\{\tilde Q: Q_t=0\}$ | the traceless subspace, the pure bivectors |
+| $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | the material and the informational sectors |
+| $F_{\tilde C}(\tilde Q)=\tilde Q^{2}+\tilde C$ | the quadratic family, $\tilde C$ the parameter |
+| $\mathsf{M}(\tilde Q)=Q_tI-i\vec Q\cdot\vec\sigma$ | the matrix model |
+| $\rho$ | the spectral radius of $\mathsf{M}(\tilde Q)$ |
+| $\Sigma(\mathbb{B})=\mathscr{Z}\cup\mathbb{B}_{V}$ | the critical set |
+| $\mathcal K_{\tilde C},J_{\tilde C}$ | the filled Julia set and the Julia set |
+| $\Sigma_{\tilde C}=J_{\tilde C}\cap\Sigma(\mathbb{B})$ | the singular Julia set |
+| $\tilde\varrho=\tfrac12e_t+i\vec w$ | a state, $\lvert\vec w\rvert\le\tfrac12$ |
+| $R_\delta$ | the conditional escape radius |
+| $G_{\tilde C}$ | the Green's function, the discrete Lyapunov exponent |
+| $W_{\tilde\Pi}=\mathbb{C}\tilde\Pi\oplus\mathbb{C}\tilde\Pi'$ | the idempotent plane, the chiral-diagonal slice |
+| $\alpha=\dim_HK_C$ | the dimension of a complex filled Julia set |
+
+## Further Reading
+
+- [The Biquaternion Quadratic Map and Its Julia Sets](../articles_maths/the-biquaternion-quadratic-map-and-its-julia-sets.html), for the family, the reading of the square and the critical set.
+- [The Zero Divisors and the Singular Julia Sets](../articles_maths/the-zero-divisors-and-the-singular-julia-sets.html), for the two kinds of zero divisor and the singular part of the fractal.
+- [The Biquaternion Mandelbrot Set and the Connectedness Locus](../articles_maths/the-biquaternion-mandelbrot-set-and-the-connectedness-locus.html), for the two loci and the conditional radius.
+- [The Escape Radius and the Green's Function for the Biquaternions](../articles_maths/the-escape-radius-and-the-greens-function-for-the-biquaternions.html), for the escaping set and the conditional normalization.
+- [The Idempotent Decomposition and the Split Fractal of the Biquaternions](../articles_maths/the-idempotent-decomposition-and-the-split-fractal-of-the-biquaternions.html), for the Peirce components, the plane and the coupling.
+- [The Slices of the Biquaternion Julia Sets](../articles_maths/the-slices-of-the-biquaternion-julia-sets.html), for the slice catalogue and its conjugation symmetries.
+- [The Hausdorff Dimension of the Biquaternion Julia Sets](../articles_maths/the-hausdorff-dimension-of-the-biquaternion-julia-sets.html), for the dimensions and the bound $4+2\alpha$.
+- [The Matrix Element Representation and the Biquaternion Dynamics](../articles_maths/the-matrix-element-representation-and-the-biquaternion-dynamics.html), for the entries of the square.
+- [The Light Cone as the Biquaternion Zero-Divisor Cone](../articles_physics/the-light-cone-as-the-biquaternion-zero-divisor-cone.html), for the identification of the cone with the light cone.
+- [The Bloch Ball as the Normalised Slice of the Future Light Cone](../articles_physics/the-bloch-ball-as-the-normalised-slice-of-the-future-light-cone.html), for the state space as a slice of the cone.
+- [Decoherence as Idempotent Projection](../articles_physics/decoherence-as-idempotent-projection.html), for the identification of the pure states with the idempotents.
+- [Exceptional Points and the Nilpotent Regime in the Biquaternion Spectrum](../articles_physics/exceptional-points-and-the-nilpotent-regime-in-the-biquaternion-spectrum.html), for the exceptional degeneracy of the nilpotents.
+- [Each Sector Is the Other's Clock: the Sector Exchange as Relational Time](../articles_physics/each-sector-is-the-others-clock-the-sector-exchange-as-relational-time.html), for the quarter turn of the central imaginary, which is a different clock.
+- [The Spin-Half Carrier: The Bispinors](../articles_physics/the-spin-half-carrier-the-bispinors.html), for the two halves and the mass as their pairing.
+- [The Spin-One Carrier: The Material Sector](../articles_physics/the-spin-one-carrier-the-material-sector.html), for the triple that lies on the critical set.
+- [Lattice Gauge Theory and the Biquaternion Path Integral](../articles_physics/lattice-gauge-theory-and-the-biquaternion-path-integral.html), for the frame that a discrete regularisation needs.
+
