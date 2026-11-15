@@ -70,8 +70,8 @@
       <div class="article-body">
         <h1 id="the-involution-and-the-hermitian-structure-of-math0"><strong>The Involution and the Hermitian Structure of $M_4(\mathbb{C})$</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p><strong>The conjugate transpose $A^*=\bar A^{\mathsf T}$ is a $\mathbb{C}$-antilinear involution of $M_4(\mathbb{C})$, and the form $\langle A,B\rangle=\operatorname{tr}(A^*B)$ is a positive definite Hermitian form.</strong> The form defines the Frobenius norm, the Hermitian and skew-Hermitian subspaces, the $*$-unitary group $U(4)$ and the compact real forms $\mathfrak{u}(4)$ and $\mathfrak{su}(4)$. It is definite: the only isotropic vector is $0$, and there is no null cone. This is the sharp contrast with the biquaternion algebra, whose norm is complex-valued and whose zero divisors form a null cone.</p>
-<p>The article defines the involution, proves its properties, constructs the positive definite trace form and the Frobenius norm, identifies the Hermitian and skew-Hermitian subspaces and the $*$-unitary groups, and contrasts the definite case with the null cone of $\mathbb{B}$.</p>
+<p><strong>The conjugate transpose $A^*=\bar A^{\mathsf T}$ is a $\mathbb{C}$-antilinear involution of $M_4(\mathbb{C})$, and the form $\langle A,B\rangle=\operatorname{tr}(A^*B)$ is a positive definite Hermitian form.</strong> The form defines the Frobenius norm, the Hermitian and anti-Hermitian subspaces, the $*$-unitary group $U(4)$ and the compact real forms $\mathfrak{u}(4)$ and $\mathfrak{su}(4)$. It is definite: the only isotropic vector is $0$, and there is no null cone. This is the sharp contrast with the biquaternion algebra, whose norm is complex-valued and whose zero divisors form a null cone.</p>
+<p>The article defines the involution, proves its properties, constructs the positive definite trace form and the Frobenius norm, identifies the Hermitian and anti-Hermitian subspaces and the $*$-unitary groups, and contrasts the definite case with the null cone of $\mathbb{B}$.</p>
 <p>The algebra is <em>The Matrix Algebra $M_4(\mathbb{C})$</em>; the element and the trace pairing $\operatorname{tr}(AB)$ are <em>The Element, the Coordinates and the Trace of $M_4(\mathbb{C})$</em>; the polar decomposition is <em>The Polar Decomposition of $M_4(\mathbb{C})$</em>; the forms and the singular set are <em>The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$</em>.</p>
 <h2 id="the-conjugate-transpose">The Conjugate Transpose</h2>
 <p><strong>Definition.</strong> The <strong>conjugate transpose</strong> of $A$ is</p>
@@ -88,21 +88,21 @@ $$</p>
 <p>It is not $\mathbb{C}$-linear and it is not an algebra automorphism.</p>
 <p><strong>Proof.</strong> The entries of $(A+B)^*$ are $\overline{A_{ji}+B_{ji}}=\overline{A_{ji}}+\overline{B_{ji}}$. For the scalar, $\overline{\lambda A_{ji}}=\bar\lambda\overline{A_{ji}}$. For the product, the $(i,j)$ entry of $(AB)^*$ is $\overline{(AB)_{ji}}=\sum_k\overline{A_{jk}B_{ki}}=\sum_k\overline{B_{ki}}\overline{A_{jk}}$, which is the $(i,j)$ entry of $B^*A^*$. The double star is the entrywise double conjugate and double transpose, which is the identity.</p>
 <p><strong>The real structure.</strong> The involution is the composition of the entrywise conjugation and the transpose. The fixed points of the conjugation are the real matrices $M_4(\mathbb{R})$, of real dimension $16$; the fixed points of the transpose are the symmetric matrices, of complex dimension $10$. The fixed points of the conjugate transpose are the Hermitian matrices, a real subspace of dimension $16$.</p>
-<p><strong>Hermitian, skew-Hermitian and $*$-unitary elements.</strong> An element is</p>
+<p><strong>Hermitian, anti-Hermitian and $*$-unitary elements.</strong> An element is</p>
 <ul>
 <li><strong>Hermitian</strong> if $A^*=A$;</li>
-<li><strong>skew-Hermitian</strong> if $A^*=-A$;</li>
+<li><strong>anti-Hermitian</strong> if $A^*=-A$;</li>
 <li><strong>$*$-unitary</strong> if $A^*A=AA^*=I$.</li>
 </ul>
-<p>The Hermitian and skew-Hermitian conditions are real-linear conditions, not complex-linear ones: if $A$ is Hermitian, then $iA$ is skew-Hermitian.</p>
-<p><strong>The Hermitian and skew-Hermitian parts.</strong> Every matrix splits uniquely as</p>
+<p>The Hermitian and anti-Hermitian conditions are real-linear conditions, not complex-linear ones: if $A$ is Hermitian, then $iA$ is anti-Hermitian.</p>
+<p><strong>The Hermitian and anti-Hermitian parts.</strong> Every matrix splits uniquely as</p>
 <p>$$
 A=\frac{A+A^*}{2}+\frac{A-A^*}{2}=H+K,
 $$</p>
 <p>with</p>
 <p>$$
 H=\frac{A+A^*}{2}\ \text{Hermitian},\qquad
-K=\frac{A-A^*}{2}\ \text{skew-Hermitian}.
+K=\frac{A-A^*}{2}\ \text{anti-Hermitian}.
 $$</p>
 <p>The decomposition is a <strong>real</strong> direct sum:</p>
 <p>$$
@@ -136,7 +136,7 @@ $$</p>
 <p>$$
 H=\frac12(E_{12}+E_{21})+\frac{i}{2}(E_{34}-E_{43}),
 $$</p>
-<p>and the skew-Hermitian part is</p>
+<p>and the anti-Hermitian part is</p>
 <p>$$
 K=\frac12(E_{12}-E_{21})+\frac{i}{2}(E_{34}+E_{43}).
 $$</p>
@@ -185,7 +185,7 @@ $$</p>
 <p>$$
 \operatorname{Re}\langle H,K\rangle=\operatorname{Re}\operatorname{tr}(HK)=0
 $$</p>
-<p>for $H$ Hermitian and $K$ skew-Hermitian. The complex form has a purely imaginary cross term in general, so the decomposition is orthogonal for the real inner product, not for the complex Hermitian form.</p>
+<p>for $H$ Hermitian and $K$ anti-Hermitian. The complex form has a purely imaginary cross term in general, so the decomposition is orthogonal for the real inner product, not for the complex Hermitian form.</p>
 <p><strong>Proof.</strong> For $H^*=H$ and $K^*=-K$,</p>
 <p>$$
 \overline{\operatorname{tr}(HK)}=\operatorname{tr}((HK)^*)=\operatorname{tr}(K^*H^*)=-\operatorname{tr}(KH)=-\operatorname{tr}(HK),
@@ -222,7 +222,7 @@ $$</p>
 <p>$$
 U(4)=\{U:U^*U=UU^*=I\}.
 $$</p>
-<p>It is a compact Lie group of real dimension $16$. Its Lie algebra is the skew-Hermitian space</p>
+<p>It is a compact Lie group of real dimension $16$. Its Lie algebra is the anti-Hermitian space</p>
 <p>$$
 \mathfrak{u}(4)=\{K:K^*=-K\},
 $$</p>
@@ -254,7 +254,7 @@ $$</p>
 =\operatorname{tr}(UA^*BU^*)
 =\operatorname{tr}(A^*B).
 $$</p>
-<p>It preserves the Hermitian, skew-Hermitian, positive semidefinite and $*$-unitary subsets, and it preserves the Frobenius norm.</p>
+<p>It preserves the Hermitian, anti-Hermitian, positive semidefinite and $*$-unitary subsets, and it preserves the Frobenius norm.</p>
 <h2 id="the-definite-form-and-the-absence-of-a-null-cone">The Definite Form and the Absence of a Null Cone</h2>
 <p><strong>The isotropic set.</strong> For a positive definite form, the <strong>isotropic set</strong> is</p>
 <p>$$
@@ -270,7 +270,7 @@ $$</p>
 <p><strong>The two determinants.</strong> The determinant of the full algebra is the usual $4\times4$ determinant; the determinant of the regular model is the square of the biquaternion norm. The full determinant vanishes on the singular matrices; the biquaternion norm vanishes on the null cone. The two singular sets have different dimensions and different geometry. The full algebra has no null cone; the regular model does.</p>
 <p><strong>The singular set is not the isotropic cone.</strong> The set $\{\det A=0\}$ is the zero locus of a holomorphic polynomial of degree four, of complex dimension $15$ and real codimension $2$. The set $\{\langle A,A\rangle=0\}$ is the origin, of real dimension $0$. The two sets are not comparable: the first is large and complex, the second is a point. The definite form does not detect the zero divisors; the determinant does.</p>
 <h2 id="summary">Summary</h2>
-<p>The conjugate transpose $A^*=\bar A^{\mathsf T}$ is a $\mathbb{C}$-antilinear involution and anti-automorphism of $M_4(\mathbb{C})$. Its fixed real subspace is the Hermitian matrices $\operatorname{Herm}_4$, of real dimension $16$; the skew-Hermitian matrices $\mathfrak{u}(4)$ form the other eigenspace, also of real dimension $16$; the real direct sum $M_4=\operatorname{Herm}_4\oplus\mathfrak{u}(4)$ has real dimension $32$. The trace form $\langle A,B\rangle=\operatorname{tr}(A^*B)$ is positive definite, with Frobenius norm $\langle A\rangle_*=\sum_{i,j}\lvert A_{ij}\rvert^2$; its only isotropic vector is $0$, and there is no null cone. The Hermitian matrices are a Jordan algebra with the positive semidefinite cone; the skew-Hermitian matrices are the Lie algebra $\mathfrak{u}(4)$ of the $*$-unitary group $U(4)$, and the traceless part is $\mathfrak{su}(4)$ of dimension $15$. The compact real forms complexify to $\mathfrak{gl}_4$ and $\mathfrak{sl}_4$. The singular set of the full algebra is the determinantal hypersurface $\{\det A=0\}$, of real codimension $2$, not the isotropic cone of the form; the null cone belongs to the biquaternion algebra and its regular model, not to the full matrix algebra.</p>
+<p>The conjugate transpose $A^*=\bar A^{\mathsf T}$ is a $\mathbb{C}$-antilinear involution and anti-automorphism of $M_4(\mathbb{C})$. Its fixed real subspace is the Hermitian matrices $\operatorname{Herm}_4$, of real dimension $16$; the anti-Hermitian matrices $\mathfrak{u}(4)$ form the other eigenspace, also of real dimension $16$; the real direct sum $M_4=\operatorname{Herm}_4\oplus\mathfrak{u}(4)$ has real dimension $32$. The trace form $\langle A,B\rangle=\operatorname{tr}(A^*B)$ is positive definite, with Frobenius norm $\langle A\rangle_*=\sum_{i,j}\lvert A_{ij}\rvert^2$; its only isotropic vector is $0$, and there is no null cone. The Hermitian matrices are a Jordan algebra with the positive semidefinite cone; the anti-Hermitian matrices are the Lie algebra $\mathfrak{u}(4)$ of the $*$-unitary group $U(4)$, and the traceless part is $\mathfrak{su}(4)$ of dimension $15$. The compact real forms complexify to $\mathfrak{gl}_4$ and $\mathfrak{sl}_4$. The singular set of the full algebra is the determinantal hypersurface $\{\det A=0\}$, of real codimension $2$, not the isotropic cone of the form; the null cone belongs to the biquaternion algebra and its regular model, not to the full matrix algebra.</p>
 <p>$$
 \boxed{\ \langle A,B\rangle=\operatorname{tr}(A^*B)>0\ \text{for }A\ne0,\quad \dim_\mathbb{R}\operatorname{Herm}_4=16,\quad \dim_\mathbb{R}\mathfrak{u}(4)=16,\quad \dim_\mathbb{R}\mathfrak{su}(4)=15. }
 $$</p>
@@ -294,7 +294,7 @@ $$</p>
 <td>$A^*=A$</td>
 </tr>
 <tr>
-<td>Skew-Hermitian matrices</td>
+<td>Anti-Hermitian matrices</td>
 <td>$16$</td>
 <td>$A^*=-A$</td>
 </tr>
@@ -349,11 +349,11 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathfrak{u}(4)$</td>
-<td>the skew-Hermitian matrices</td>
+<td>the anti-Hermitian matrices</td>
 </tr>
 <tr>
 <td>$\mathfrak{su}(4)$</td>
-<td>the traceless skew-Hermitian matrices</td>
+<td>the traceless anti-Hermitian matrices</td>
 </tr>
 <tr>
 <td>$\langle A,B\rangle=\operatorname{tr}(A^*B)$</td>
@@ -369,7 +369,7 @@ $$</p>
 </tr>
 <tr>
 <td>$H,K$</td>
-<td>the Hermitian and skew-Hermitian parts of $A$</td>
+<td>the Hermitian and anti-Hermitian parts of $A$</td>
 </tr>
 </tbody>
 </table></div>

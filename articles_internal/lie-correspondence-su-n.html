@@ -86,7 +86,7 @@ $$</p>
 <li><strong>T5.</strong> The bracket is the second-order term of the group law, so the algebra determines the group locally, and here also globally, because $\mathrm{SU}(n)$ is simply connected.</li>
 </ul>
 <p><strong>Where the work sits.</strong> T1 and T2 are transcriptions of the real case with the transpose replaced by the conjugate transpose; they are proved in full but briefly. T3 has one new feature: the eigenvalues of $\operatorname{ad}_A$ on $\mathfrak{su}(n)$ are differences of purely imaginary numbers, so they can reach $2\pi i$, and the singular set is larger than in the orthogonal case, at the points where the exponential is $-\mathrm I$ as well as $\mathrm I$. T4 is the spectral theorem for normal matrices plus one step with no counterpart in the real case: the sum of the chosen phases is a multiple of $2\pi$, and one phase must be shifted by that multiple so that the logarithm is traceless. The shift is exact, and the integrality is the whole content of the step.</p>
-<p><strong>What is taken as known.</strong> The special unitary groups, their normal forms and their topology are <em>The Special Unitary Groups: $\mathrm{SU}(1)$, $\mathrm{SU}(2)$, $\mathrm{SU}(3)$, $\mathrm{SU}(4)$, $\mathrm{SU}(n)$</em>. The general theory of the exponential and of its differential is <em>The Lie Algebra and the Exponential Map</em>. The Campbell–Baker–Hausdorff series is quoted there and used here only through its first two terms, which are proved directly.</p>
+<p><strong>What is taken as known.</strong> The special unitary groups, their normal forms and their topology are <em>The Special Unitary Groups: $\mathrm{SU}(1)$, $\mathrm{SU}(2)$, $\mathrm{SU}(3)$, $\mathrm{SU}(4)$, $\mathrm{SU}(5)$, $\mathrm{SU}(6)$, $\mathrm{SU}(7)$, $\mathrm{SU}(8)$, $\mathrm{SU}(n)$</em>. The general theory of the exponential and of its differential is <em>The Lie Algebra and the Exponential Map</em>. The Campbell–Baker–Hausdorff series is quoted there and used here only through its first two terms, which are proved directly.</p>
 <p><strong>Conventions.</strong> The conjugate transpose is written $A^{\dagger}=\overline{A}^{\mathsf T}$, the trace $\operatorname{tr}$, the identity $\mathrm I$, the operator norm $\lVert A\rVert$ subordinate to the Hermitian norm on $\mathbb C^{n}$. The Pauli matrices are $\sigma_1,\sigma_2,\sigma_3$, and the basis of $\mathfrak{su}(2)$ used throughout is $T_a=i\sigma_a$, in which each $T_a$ has eigenvalues $\pm i$. A matrix is <strong>anti-Hermitian</strong> when $A^{\dagger}=-A$; it is <strong>Hermitian</strong> when $A^{\dagger}=A$. No physics is invoked, and the Pauli matrices appear only as a basis of a real three-dimensional Lie algebra.</p>
 <h2 id="the-two-objects">The Two Objects</h2>
 <h3 id="the-algebra">The Algebra</h3>
@@ -174,8 +174,8 @@ $$</p>
 <p><strong>Proof.</strong> The statement is quoted from <em>The Special Unitary Groups</em>, §<em>The Topology</em>, where it is proved by induction with the fibration $\mathrm{SU}(n-1)\to\mathrm{SU}(n)\to S^{2n-1}$ and the long exact sequence. Its role here is the following. Every connected Lie group with algebra $\mathfrak{su}(n)$ is a quotient of the simply connected group by a discrete central subgroup, so the only freedom left is the centre. Since that centre is $\{\zeta\mathrm I:\zeta^{n}=1\}$, cyclic of order $n$, the groups with this algebra are the quotients of $\mathrm{SU}(n)$ by the subgroups of a cyclic group of order $n$, and there are as many of them as $n$ has divisors.</p>
 <p><strong>The centre.</strong> The centre of $\mathrm{SU}(n)$ is $\{\zeta\mathrm I:\zeta^{n}=1\}$, cyclic of order $n$; it is the kernel of the adjoint representation, and the quotient is the adjoint group $\mathrm{SU}(n)/Z\cong\mathrm{PSU}(n)$. At $n=2$ the centre is $\{\pm\mathrm I\}$ and the quotient is $\mathrm{SO}(3)$; that is the subject of the next section.</p>
 <p><strong>One consequence worth stating.</strong> At $n=1$ the group is trivial, the algebra is $\{0\}$, and all five statements hold trivially. The ladder really starts at $n=2$.</p>
-<h2 id="the-isomorphism-math347-and-the-non-isomorphism-of-the-groups">The Isomorphism $\mathfrak{su}(2)\cong\mathfrak{so}(3)$ and the Non-Isomorphism of the Groups</h2>
-<p><strong>The algebra isomorphism.</strong> With $T_a=i\sigma_a$ the brackets are $[T_a,T_b]=-2\varepsilon_{abc}T_c$, checked numerically with defect zero. The adjoint maps $\operatorname{ad}_{T_a}$ are therefore three real $3\times3$ matrices, and they are skew-symmetric, since $\operatorname{ad}$ of an anti-Hermitian element is skew for the Hilbert–Schmidt product. In the basis $T_1,T_2,T_3$ they are</p>
+<h2 id="the-isomorphism-math351-and-the-non-isomorphism-of-the-groups">The Isomorphism $\mathfrak{su}(2)\cong\mathfrak{so}(3)$ and the Non-Isomorphism of the Groups</h2>
+<p><strong>The algebra isomorphism.</strong> With $T_a=i\sigma_a$ the brackets are $[T_a,T_b]=-2\varepsilon_{abc}T_c$, checked numerically with defect zero. The adjoint maps $\operatorname{ad}_{T_a}$ are therefore three real $3\times3$ matrices, and they are antisymmetric, since $\operatorname{ad}$ of an anti-Hermitian element is skew for the Hilbert–Schmidt product. In the basis $T_1,T_2,T_3$ they are</p>
 <p>$$
 \operatorname{ad}_{T_1}=-2\begin{pmatrix}0&0&0\\0&0&-1\\0&1&0\end{pmatrix},
 \qquad
@@ -254,6 +254,24 @@ $$</p>
 <td>$\mathbb Z/6$</td>
 </tr>
 <tr>
+<td>$7$</td>
+<td>$48$</td>
+<td>$6$</td>
+<td>$2\pi i\,A_6$</td>
+<td>$0$</td>
+<td>yes</td>
+<td>$\mathbb Z/7$</td>
+</tr>
+<tr>
+<td>$8$</td>
+<td>$63$</td>
+<td>$7$</td>
+<td>$2\pi i\,A_7$</td>
+<td>$0$</td>
+<td>yes</td>
+<td>$\mathbb Z/8$</td>
+</tr>
+<tr>
 <td>$n$</td>
 <td>$n^{2}-1$</td>
 <td>$n-1$</td>
@@ -265,6 +283,75 @@ $$</p>
 </tbody>
 </table></div>
 <p>In the fourth column $A_{n-1}$ denotes the root lattice of integer vectors with zero sum, of rank $n-1$. The dimension grows quadratically as in the orthogonal case; the fundamental group is constant, which is the difference; and the centre grows linearly, which is the new column and the reason the quotients $\mathrm{PSU}(n)$ exist.</p>
+<h2 id="the-correspondence-at-the-upper-rungs">The Correspondence at the Upper Rungs</h2>
+<h3 id="the-five-statements-from-five-to-eight">The Five Statements from Five to Eight</h3>
+<p><strong>Nothing in the proofs refers to $n$.</strong> T1 is the identity $(e^{X})^{*}e^{X}=\mathrm I$ for anti-Hermitian $X$, T2 is the differentiation of the defining equations, T3 is the differential at the origin, T4 is the spectral theorem for a normal matrix with eigenvalues on the unit circle, and T5 is the second-order term. The five statements hold at $n=5,6,7,8$ with the same proofs, and the only changes are numerical: the rank becomes $n-1$, so the kernel lattice on the torus becomes</p>
+<p>$$
+\text{periods}=2\pi\times(\text{the root lattice of }A_{n-1}),
+\qquad
+\operatorname{rank}=n-1,
+$$</p>
+<p>and the torus gains one phase at each rung.</p>
+<p><strong>The exponential is onto, and the group is simply connected.</strong> The lattice of periods has rank $n-1$ and the fibre of the exponential over the identity is a lattice in the Cartan, but the group has no nontrivial cover. So the correspondence here is <em>global</em> as well as local: the algebra determines the group up to a central quotient, and every central quotient of a simply connected group is a quotient by a subgroup of the centre $\mathbb{Z}/n$.</p>
+<h3 id="how-many-groups-the-algebra-determines">How Many Groups the Algebra Determines</h3>
+<p>The count is the number of subgroups of $\mathbb{Z}/n$, which is the number of divisors of $n$, and it grows differently from the orthogonal count:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$n$</th>
+<th>centre</th>
+<th>subgroups</th>
+<th>the groups with algebra $\mathfrak{su}(n)$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$5$</td>
+<td>$\mathbb{Z}/5$</td>
+<td>$2$</td>
+<td>$\mathrm{SU}(5)$, $\mathrm{PSU}(5)$</td>
+</tr>
+<tr>
+<td>$6$</td>
+<td>$\mathbb{Z}/6$</td>
+<td>$4$</td>
+<td>$\mathrm{SU}(6)$, $\mathrm{SU}(6)/\mathbb{Z}_2$, $\mathrm{SU}(6)/\mathbb{Z}_3$, $\mathrm{PSU}(6)$</td>
+</tr>
+<tr>
+<td>$7$</td>
+<td>$\mathbb{Z}/7$</td>
+<td>$2$</td>
+<td>$\mathrm{SU}(7)$, $\mathrm{PSU}(7)$</td>
+</tr>
+<tr>
+<td>$8$</td>
+<td>$\mathbb{Z}/8$</td>
+<td>$4$</td>
+<td>$\mathrm{SU}(8)$, $\mathrm{SU}(8)/\mathbb{Z}_2$, $\mathrm{SU}(8)/\mathbb{Z}_4$, $\mathrm{PSU}(8)$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The odd rungs give two, the even rungs four, and the prime rungs always two.</strong> At $n=6$ the intermediate quotients are not isomorphic to each other, because $\mathbb{Z}/2$ and $\mathbb{Z}/3$ are different subgroups; this is the structural difference from the orthogonal case, where the centre is at most $\mathbb{Z}/2\times\mathbb{Z}/2$ and the count is two, three or four.</p>
+<p><strong>The one quotient that is an orthogonal group.</strong> At $n=4$ the quotient by the subgroup of order two is $\mathrm{SU}(4)/\{\pm\mathrm I\}=\mathrm{SO}(6)$. So a central quotient of the unitary correspondence is the group of the orthogonal correspondence at the neighbouring ladder, and this is the group-theoretic form of the isomorphism $\mathfrak{su}(4)\cong\mathfrak{so}(6)$.</p>
+<h3 id="the-orthogonal-correspondences">The Orthogonal Correspondences</h3>
+<p><strong>Two embeddings, and they are the whole link.</strong> For every $n$ the rung sits inside two orthogonal groups:</p>
+<p>$$
+\mathrm{SU}(n)\subset\mathrm{SO}(2n)
+\quad\text{(realification)},
+\qquad
+\mathrm{SU}(n)\subset\mathrm{SO}(n^{2}-1)
+\quad\text{(adjoint)}.
+$$</p>
+<p>The first is $\mathbb{C}^{n}$ read as $\mathbb{R}^{2n}$: a matrix satisfying $A^{*}A=\mathrm I$ satisfies $A^{\mathsf T}A=\mathrm I$ when it is real, and the realification of a complex matrix is real orthogonal with the same determinant. The second is the adjoint representation, orthogonal for minus the Killing form, whose dimension is $n^{2}-1$. At $n=2$ the second is an isomorphism, $\mathrm{SU}(2)\cong\mathrm{SO}(3)$; at $n=4$ the first is a double cover, $\mathrm{SU}(4)\to\mathrm{SO}(6)$; and at no other rung is either an isomorphism.</p>
+<p><strong>The Killing form and its scale.</strong> The invariant form of the rung is</p>
+<p>$$
+\kappa(X,Y)=2n\operatorname{tr}(XY),
+$$</p>
+<p>so the scale is $10,12,14,16$ at $n=5,6,7,8$, against $n-2$ for the orthogonal ladder. The two ladders normalise their forms differently, and a formula that mixes them has to carry both normalisations.</p>
+<p><strong>The intersection with the complex orthogonal group.</strong> The identity $\mathrm{SU}(n)\cap\mathrm{SO}(n,\mathbb{C})=\mathrm{SO}(n,\mathbb{R})$ holds at every rung, and it is the statement that the compact real form of the complex orthogonal group is the real orthogonal group. At the upper rungs it is the only exact statement linking the two ladders' groups, because no dimension matches and no algebra is isomorphic.</p>
+<h3 id="what-the-upper-rungs-do-not-change">What the Upper Rungs Do Not Change</h3>
+<p><strong>No nilpotent, no resonance.</strong> The algebra is compact at every rung, so every element is semisimple, the exponential is onto, and there is no unipotent geometry. The upper rungs add rank and phases and nothing else.</p>
+<p><strong>No accidental isomorphism above four.</strong> $n^{2}-1=m(m-1)/2$ has only the solutions $n=1,2,4$ in this range, so the correspondence for $\mathrm{SU}(5)$ to $\mathrm{SU}(8)$ never coincides with an orthogonal correspondence. The two meetings $B_1=A_1$ and $D_3=A_3$ are the whole of the coincidence, and the ladder above four is the proof that they were coincidences.</p>
 <h2 id="what-the-correspondence-does-not-say">What the Correspondence Does Not Say</h2>
 <p><strong>It does not say that $\exp$ is a homomorphism.</strong> It is not; the failure is the bracket, and the second-order theorem above is the measure of it.</p>
 <p><strong>It does not preserve the trace.</strong> The trace of $A$ is zero and the trace of $\exp A$ is not one in general, only its determinant is. The two conditions in the definition of $\mathfrak{su}(n)$ go to the two conditions in the definition of $\mathrm{SU}(n)$, but they go to different ones: the anti-Hermitian condition becomes unitarity, and the traceless condition becomes the determinant.</p>
@@ -338,7 +425,7 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><em>The Special Unitary Groups: $\mathrm{SU}(1)$, $\mathrm{SU}(2)$, $\mathrm{SU}(3)$, $\mathrm{SU}(4)$, $\mathrm{SU}(n)$</em>, for the ladder, the normal forms and the topology.</li>
+<li><em>The Special Unitary Groups: $\mathrm{SU}(1)$, $\mathrm{SU}(2)$, $\mathrm{SU}(3)$, $\mathrm{SU}(4)$, $\mathrm{SU}(5)$, $\mathrm{SU}(6)$, $\mathrm{SU}(7)$, $\mathrm{SU}(8)$, $\mathrm{SU}(n)$</em>, for the ladder, the normal forms and the topology.</li>
 <li><em>The Lie Correspondence for the Rotations</em>, for the same five statements over $\mathbb R$ with the orthogonal condition.</li>
 <li><em>The Lie Correspondence over the Complexes</em>, for the complex orthogonal case, where T4 needs a Jordan argument.</li>
 <li><em>The Lie Algebra and the Exponential Map</em>, for the general theory and the differential formula.</li>
@@ -347,7 +434,7 @@ $$</p>
 <li><em>The Fundamental Group of a Lie Group</em>, for the fibrations used in the simply-connectedness statement.</li>
 </ul>
 <h2 id="verification">Verification</h2>
-<p>Six scratch scripts under <code>/tmp/vlie/</code> (not part of the corpus) recompute the claims on samples of one hundred elements. Every number below is a printed residual or a rank.</p>
+<p>Scratch scripts under <code>/tmp/vlie/</code> (not part of the corpus) recompute the claims on samples of forty to one hundred elements. Every number below is a printed residual, rank or count.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -421,6 +508,31 @@ $$</p>
 <td>the Campbell–Baker–Hausdorff second term</td>
 <td>$\lVert\log(e^{tA}e^{tB})-t(A+B)-\tfrac12t^{2}[A,B]\rVert$</td>
 <td>$2.2\times10^{-4}$ and $2.8\times10^{-5}$; ratio $8$ on halving $t$</td>
+</tr>
+<tr>
+<td>T1 at the upper rungs</td>
+<td>$30$ random traceless anti-Hermitian matrices, $n=5,\dots,8$</td>
+<td>$\lVert A^{\dagger}A-\mathrm I\rVert\le6.2\times10^{-14}$, $\lvert\det A-1\rvert\le1.2\times10^{-13}$</td>
+</tr>
+<tr>
+<td>T4 at the upper rungs</td>
+<td>$40$ elements at $n=5,\dots,8$, logarithm with the integer phase shift</td>
+<td>$\lVert X+X^{\dagger}\rVert\le2\times10^{-13}$, $\lvert\operatorname{Re}\operatorname{tr}X\rvert\le1.1\times10^{-15}$, $\lVert e^{X}-U\rVert\le3.5\times10^{-14}$</td>
+</tr>
+<tr>
+<td>the number of groups over one algebra</td>
+<td>subgroups of $\mathbb Z/n$, $n=1,\dots,8$</td>
+<td>$1,2,2,3,2,4,2,4$</td>
+</tr>
+<tr>
+<td>$\kappa=2n\operatorname{tr}$ at the upper rungs</td>
+<td>adjoint representation, $n=5,\dots,8$</td>
+<td>$\le1.4\times10^{-14}$</td>
+</tr>
+<tr>
+<td>the two embeddings</td>
+<td>dimension counts, $n=1,\dots,8$</td>
+<td>$2n$, and $n^{2}-1=0,3,8,15,24,35,48,63$</td>
 </tr>
 <tr>
 <td>the centre and the fundamental group</td>

@@ -292,6 +292,24 @@ $$</p>
 <td>no</td>
 </tr>
 <tr>
+<td>$7$</td>
+<td>$21$</td>
+<td>$3$</td>
+<td>$(2\pi\mathbb Z)^{3}$</td>
+<td>$\mathbb Z/2$</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$8$</td>
+<td>$28$</td>
+<td>$4$</td>
+<td>$(2\pi\mathbb Z)^{4}$</td>
+<td>$\mathbb Z/2$</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
 <td>$n$</td>
 <td>$n(n-1)/2$</td>
 <td>$\lfloor n/2\rfloor$</td>
@@ -303,6 +321,84 @@ $$</p>
 </tbody>
 </table></div>
 <p><strong>Reading the table.</strong> The dimension is the only column that grows without a change of character. The rank grows by one at each even step. The fundamental group settles at $\mathbb Z/2$ from $n=3$ on, which is the same statement as the existence of the double cover by $\mathrm{Spin}(n)$. The last two columns are the ones the article is about, and they are constant: T4 holds from $n=2$ on, and the covering property holds only up to $n=2$. The two are not in tension: surjectivity and the covering property are different requirements, and the singularity of $d\exp$ separates them.</p>
+<h2 id="the-correspondence-at-the-upper-rungs">The Correspondence at the Upper Rungs</h2>
+<h3 id="the-five-statements-from-five-to-eight">The Five Statements from Five to Eight</h3>
+<p><strong>T1, T2, T3 and T5 do not change.</strong> The three identities of T1 are algebraic, the differentiation of T2 uses only the defining equation, the differential of T3 is the identity at the origin whatever the dimension, and the second-order term of T5 is the same series. The upper rungs add no hypothesis, and the proofs of those four sections apply word for word with $n=5,6,7,8$.</p>
+<p><strong>T4 changes only in the block count.</strong> The proof of §<em>The Proof of Surjectivity</em> is the spectral theorem: an orthonormal basis of invariant planes, a zero line when $n$ is odd, the pairing of the $-1$ lines into half-turn blocks when $n$ is even, and the summation of the block logarithms. At $n=5$ and $n=7$ the zero line is there and needs no repair. At $n=6$ and $n=8$ the repair of §<em>The Log, and How Many There Are</em> is the same: an even number of $-1$ eigenvalues, paired into blocks, each block logarithm taken in the branch that sends $-1$ to $\pi$. Nothing in the argument refers to the size of the matrix.</p>
+<p><strong>The rank is what grows.</strong> The maximal torus has $r=\lfloor n/2\rfloor$ plane blocks, so the kernel lattice is $(2\pi\mathbb{Z})^{2}$ at $n=5$, $(2\pi\mathbb{Z})^{3}$ at $n=6$ and $n=7$, and $(2\pi\mathbb{Z})^{4}$ at $n=8$.</p>
+<p><strong>The kernel is not discrete, and it stops being a union of spheres.</strong> The kernel is the union of the orbits of the lattice points under conjugation, and each orbit has dimension $n(n-1)/2-r$ inside the sphere of dimension $n(n-1)/2-1$ that carries it. At $n=3$ the orbit fills the sphere, which is why the kernel there is a union of spheres; from $n=4$ on the orbit is a proper subset, of codimension $r-1$ in the sphere. So the kernel is never discrete, and from four on it no longer meets every ray: a generic element has two incommensurable angles, and no multiple of it has all angles in $2\pi\mathbb{Z}$.</p>
+<h3 id="the-killing-form-and-its-scale">The Killing Form and Its Scale</h3>
+<p>The invariant form has the same shape at every rung and a scale that depends on the rung:</p>
+<p>$$
+\kappa(X,Y)=(n-2)\operatorname{tr}(XY),
+\qquad
+n=5,6,7,8\ \Rightarrow\ \text{scale }3,4,5,6 .
+$$</p>
+<p><strong>Negative definite at every rung</strong>, since $X$ is real skew and $\operatorname{tr}(XY)=-\operatorname{tr}(X^{\mathsf T}X)=-\lVert X\rVert_F^{2}$ with the Frobenius norm. So the group is compact, the algebra is a real form of its complexification, and every invariant bilinear form is a multiple of $\kappa$ because the algebra is simple at each of the four rungs.</p>
+<p><strong>The scale is not a structural invariant.</strong> The multiplier $n-2$ is the one place where the rung enters the form, and it is the reason a statement about "the" Killing form has to carry its normalisation. The verification recomputes $\kappa(X,Y)/(n-2)$ against $\operatorname{tr}(XY)$ on the four rungs and finds the multiplier $3,4,5,6$.</p>
+<h3 id="which-groups-the-algebra-determines">Which Groups the Algebra Determines</h3>
+<p>Lie's third theorem gives the simply connected group, and every other group with the same algebra is a quotient by a discrete central subgroup. Counting those quotients is a small computation with the centre of the spin group, and the answer changes at the upper rungs:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$n$</th>
+<th>centre of $\mathrm{Spin}(n)$</th>
+<th>groups with algebra $\mathfrak{so}(n)$</th>
+<th>the groups</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$3$</td>
+<td>$\mathbb{Z}/2$</td>
+<td>$2$</td>
+<td>$\mathrm{SU}(2)$, $\mathrm{SO}(3)$</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$\mathbb{Z}/2\times\mathbb{Z}/2$</td>
+<td>$4$</td>
+<td>$\mathrm{SU}(2)^{2}$, $\mathrm{SU}(2)\times\mathrm{SO}(3)$, $\mathrm{SO}(4)$, $\mathrm{SO}(3)^{2}$</td>
+</tr>
+<tr>
+<td>$5$</td>
+<td>$\mathbb{Z}/2$</td>
+<td>$2$</td>
+<td>$\mathrm{Sp}(2)$, $\mathrm{SO}(5)$</td>
+</tr>
+<tr>
+<td>$6$</td>
+<td>$\mathbb{Z}/4$</td>
+<td>$3$</td>
+<td>$\mathrm{SU}(4)$, $\mathrm{SO}(6)$, $\mathrm{PSU}(4)$</td>
+</tr>
+<tr>
+<td>$7$</td>
+<td>$\mathbb{Z}/2$</td>
+<td>$2$</td>
+<td>$\mathrm{Spin}(7)$, $\mathrm{SO}(7)$</td>
+</tr>
+<tr>
+<td>$8$</td>
+<td>$\mathbb{Z}/2\times\mathbb{Z}/2$</td>
+<td>$3$</td>
+<td>$\mathrm{Spin}(8)$, $\mathrm{SO}(8)$, $\mathrm{PSO}(8)$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Odd rungs give two.</strong> The centre is $\mathbb{Z}/2$, so the only quotients are the spin group itself and the adjoint group, and the adjoint group of an odd rung is $\mathrm{SO}(n)$, whose centre is trivial.</p>
+<p><strong>Even rungs give three, from $n=6$ on.</strong> At $n=6$ the centre of $\mathrm{SU}(4)$ is $\mathbb{Z}/4$ with three subgroups, so three groups. At $n=8$ the centre is $\mathbb{Z}/2\times\mathbb{Z}/2$ with five subgroups, but the three quotients by subgroups of order two are $\mathrm{SO}(8)$ read three times: triality is an automorphism of $\mathrm{Spin}(8)$ that permutes the three central involutions, so it identifies the three quotients. The count of distinct groups is three, and the count of subgroups is five.</p>
+<p><strong>Dimension four is the exception to the count.</strong> The centre is again $\mathbb{Z}/2\times\mathbb{Z}/2$, but there is no order-three symmetry to identify the quotients of order two, and the quotient by $\{\pm(1,-1)\}$ is $\mathrm{SU}(2)\times\mathrm{SO}(3)$, which is neither the spin group nor $\mathrm{SO}(4)$ nor the adjoint group. So four groups instead of three, and this is the same absence of an automorphism of order three that the article on the real group records.</p>
+<h3 id="the-correspondences-with-the-unitary-and-symplectic-groups">The Correspondences with the Unitary and Symplectic Groups</h3>
+<p>The algebra decides which group the correspondence lands on, and at two rungs that group has a second name.</p>
+<p><strong>$n=3$: the same algebra, two groups.</strong> $\mathfrak{so}(3)\cong\mathfrak{su}(2)$, and T1 to T5 hold for both groups read off the same algebra. T4 for $\mathrm{SU}(2)$ says that every unitary $2\times2$ matrix of determinant one is the exponential of a traceless anti-Hermitian matrix, which is the same statement as T4 for the rotations once the two groups are identified through their common algebra and not through a common representation.</p>
+<p><strong>$n=5$: the compact symplectic group.</strong> $\mathfrak{so}(5)\cong\mathfrak{sp}(2)$, so the simply connected group of the rung is $\mathrm{Sp}(2)=\mathrm{USp}(4)$, and the correspondence is $\mathfrak{so}(5)\leftrightarrow\mathrm{Sp}(2)$. The algebra sits inside $\mathfrak{su}(4)$ of dimension $15$ as a $10$-dimensional subalgebra, so the correspondence for the rotations of $\mathbb{R}^{5}$ is a sub-correspondence of the one for $\mathrm{SU}(4)$, not an isomorphism with it. The dimension count $10<15$ is the whole difference.</p>
+<p><strong>$n=6$: the exact meeting.</strong> $\mathfrak{so}(6)\cong\mathfrak{su}(4)$, so every statement of this article about $\mathfrak{so}(6)$ is a statement about $\mathfrak{su}(4)$ and conversely. T1 becomes "the exponential of a traceless anti-Hermitian $4\times4$ matrix has determinant one"; T4 becomes "every such unitary matrix is an exponential"; T5 becomes the statement that the bracket of $\mathfrak{su}(4)$ is the second-order term of the unitary product. This is the only rung above three where the correspondence for the rotations is literally the correspondence for a unitary group, and it is the source of the identity $\mathrm{Spin}(6)=\mathrm{SU}(4)$.</p>
+<p><strong>$n=7$ and $n=8$: no partner.</strong> $22$ and $29$ are not squares, so no unitary algebra has the dimension of the rung, and the correspondence is purely orthogonal. The general relation $\mathrm{SO}(n,\mathbb{C})\cap\mathrm{SU}(n)=\mathrm{SO}(n,\mathbb{R})$ of the complex companion still holds at every rung, and it is the only surviving link above six: the compact real form of the complexified correspondence is the real one, sitting inside the unitary group as its real locus.</p>
+<h3 id="what-the-upper-rungs-do-not-change">What the Upper Rungs Do Not Change</h3>
+<p><strong>The exponential is still onto and still not a covering.</strong> The singular locus is nonempty at every $n\ge3$, because the eigenvalue $2\pi i$ occurs on every rung, so $d\exp$ degenerates at the points of norm $2\pi$ and the map is not a local homeomorphism there. The verification repeats the check at $n=5,6,7,8$ with the same result: the identity to $10^{-14}$ at norm $2\pi$, a defect of order $10^{-3}$ just below it.</p>
+<p><strong>The local correspondence is still exact.</strong> The bracket is still the second-order term, the exponential is still a diffeomorphism near the origin, and the logarithm is still unique inside the ball of radius $\pi$. Those are statements about a neighbourhood of the identity, and a neighbourhood does not know the rank.</p>
+<p><strong>The global correspondence is still with the spin group.</strong> At $n=5$ that group is symplectic and at $n=6$ it is unitary, but the theorem is the same theorem: the algebra determines the simply connected group, and the rotations are a quotient of it by a central subgroup of order two, except at $n=4$ where the quotient structure is richer.</p>
 <h2 id="what-the-correspondence-does-not-say">What the Correspondence Does Not Say</h2>
 <p><strong>It does not say that $\exp$ is a homomorphism.</strong> It is not, and §<em>The Second-Order Commutator</em> shows the failure is the bracket. The product of two rotations is a rotation, but its logarithm is not the sum of the logarithms, and the correction is the whole Campbell–Baker–Hausdorff series.</p>
 <p><strong>It does not determine the group.</strong> $\mathfrak{so}(3)$ is the algebra of $\mathrm{SO}(3)$ and of $\mathrm{SU}(2)$, and the two groups are not isomorphic: one has fundamental group $\mathbb Z/2$, the other is simply connected. What the algebra determines is the simply connected group and every quotient of it by a discrete central subgroup.</p>
@@ -310,6 +406,7 @@ $$</p>
 <p><strong>It does not bound the logarithm.</strong> The image of $\exp$ is the whole group, but no single chart covers the group, because the kernel is not discrete. The inverse produced in §<em>Explicit Neighbourhoods</em> reaches the ball of radius $\log2$, the uniqueness statement of §<em>The Log, and How Many There Are</em> holds inside the ball of radius $\pi$, and that boundary is attained twice, at the half-turns.</p>
 <h2 id="summary">Summary</h2>
 <p>The algebra is the skew matrices with the commutator, the group is the rotations, and the exponential joins them. T1 is the three identities: transposition moves into the series, commuting signs cancel, and the determinant is the exponential of the trace. T2 is a differentiation of the defining equation in both directions, and it gives equality of dimensions. T3 is the derivative at the origin, which is the identity, and the inverse function theorem, which can be made explicit with the logarithmic series and the radius $\log2$. T4 is the spectral theorem: an orthonormal basis of invariant lines and planes, the even count of $-1$ lines, the pairing of those lines into half-turn blocks, and the summation of the block logarithms. T5 is the second-order term of the product of two one-parameter subgroups, which is the bracket, and the Campbell–Baker–Hausdorff series, which is the same statement to all orders. The kernel is a lattice on each maximal torus and a union of spheres in the algebra, so the exponential is onto and not a covering map from $n=3$ on, and the covering statement belongs to the spin group.</p>
+<p><strong>The upper rungs leave the five statements alone.</strong> The dimension grows, the rank grows by one at each even step, the kernel lattice gains a factor of $2\pi$, and the Killing form changes its scale to $n-2$; T1 to T5 keep their proofs and their conclusions. What changes is the identity of the simply connected group. It is $\mathrm{Sp}(2)$ at $n=5$ and $\mathrm{SU}(4)$ at $n=6$, so the correspondence for the rotations of $\mathbb{R}^{5}$ and $\mathbb{R}^{6}$ lands on a symplectic group and on a unitary group, and the unitary landing is exact because $\mathfrak{so}(6)\cong\mathfrak{su}(4)$. At $n=8$ the algebra has three groups and five central subgroups, because triality identifies three of the quotients, and at $n=4$ it has four groups because no order-three symmetry is there to identify them.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -321,7 +418,7 @@ $$</p>
 <tbody>
 <tr>
 <td>$\mathfrak{so}(n)$</td>
-<td>the skew-symmetric real matrices, with $[X,Y]=XY-YX$</td>
+<td>the antisymmetric real matrices, with $[X,Y]=XY-YX$</td>
 </tr>
 <tr>
 <td>$\mathrm{SO}(n)$</td>
@@ -370,6 +467,18 @@ $$</p>
 <tr>
 <td>$\kappa$</td>
 <td>the Killing form, $(n-2)\operatorname{tr}(XY)$ for $n\ge3$</td>
+</tr>
+<tr>
+<td>$\mathrm{PSO}(n)$</td>
+<td>the adjoint group $\mathrm{SO}(n)/\{\pm\mathrm I\}$</td>
+</tr>
+<tr>
+<td>$\mathrm{Sp}(2)=\mathrm{USp}(4)$</td>
+<td>the simply connected group at $n=5$</td>
+</tr>
+<tr>
+<td>$\mathrm{SU}(4)$</td>
+<td>the simply connected group at $n=6$</td>
 </tr>
 </tbody>
 </table></div>
@@ -470,6 +579,26 @@ $$</p>
 <td>the dimension count</td>
 <td>size and rank of the basis of $X_{ij}$</td>
 <td>$0,1,3,6,10,15,21,28$ at $n=1,\dots,8$</td>
+</tr>
+<tr>
+<td>$d\exp$ at $\lVert X\rVert=2\pi$</td>
+<td>rank deficiency at $2\pi J_{12}$, $n=3,5,6,7,8$</td>
+<td>$1,3,4,5,6$, that is $n-2$; ranks $2,7,11,16,22$</td>
+</tr>
+<tr>
+<td>the nullity of $\operatorname{ad}_X$ for a generic $X$</td>
+<td>eigen-decomposition, $n=3,5,6,7,8$</td>
+<td>$1,2,3,3,4$, that is $\lfloor n/2\rfloor$</td>
+</tr>
+<tr>
+<td>the Killing scale</td>
+<td>$\kappa(X,Y)/(n-2)$ against $\operatorname{tr}(XY)$, $n=5,\dots,8$</td>
+<td>$3,4,5,6$</td>
+</tr>
+<tr>
+<td>the groups with algebra $\mathfrak{so}(n)$</td>
+<td>subgroups of the centre of $\mathrm{Spin}(n)$</td>
+<td>$2,4,2,3,2,3$ at $n=3,\dots,8$</td>
 </tr>
 <tr>
 <td>the fundamental group and the covers</td>

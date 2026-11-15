@@ -246,12 +246,12 @@ $$</p>
 <p>$$
 \{f,g\} = \omega(X_f,X_g) .
 $$</p>
-<p><strong>Theorem (properties of the bracket).</strong> The bracket is bilinear and skew-symmetric, satisfies the Leibniz rule $\{f,gh\}=\{f,g\}h+g\{f,h\}$, and satisfies the Jacobi identity</p>
+<p><strong>Theorem (properties of the bracket).</strong> The bracket is bilinear and antisymmetric, satisfies the Leibniz rule $\{f,gh\}=\{f,g\}h+g\{f,h\}$, and satisfies the Jacobi identity</p>
 <p>$$
 \{f,\{g,h\}\}+\{g,\{h,f\}\}+\{h,\{f,g\}\}=0 ;
 $$</p>
 <p>consequently $C^\infty(M)$ is a Lie algebra under the bracket and the map $f\mapsto X_f$ is a Lie algebra homomorphism, $[X_f,X_g]=X_{\{f,g\}}$. The bracket is nondegenerate in the sense that $\{f,g\}=0$ for all $g$ implies that $f$ is locally constant.</p>
-<p><em>Proof.</em> The bilinearity, skew-symmetry and Leibniz rule follow from the corresponding properties of $\omega$ and of the differential; the Jacobi identity is the identity $d\omega=0$ written in terms of the bracket, and the homomorphism property is the computation $[X_f,X_g]=\omega$-dual of $d\{f,g\}$. The details are those of <em>Symplectic Forms and Poisson Brackets</em> and of the symplectic geometry of Part II.</p>
+<p><em>Proof.</em> The bilinearity, antisymmetry and Leibniz rule follow from the corresponding properties of $\omega$ and of the differential; the Jacobi identity is the identity $d\omega=0$ written in terms of the bracket, and the homomorphism property is the computation $[X_f,X_g]=\omega$-dual of $d\{f,g\}$. The details are those of <em>Symplectic Forms and Poisson Brackets</em> and of the symplectic geometry of Part II.</p>
 <p><strong>Theorem (Darboux).</strong> Every symplectic manifold is locally symplectomorphic to $(\mathbb{R}^{2n},\sum_{i=1}^n dq_i\wedge dp_i)$: around every point there are coordinates $(q_1,\dots,q_n,p_1,\dots,p_n)$, the <strong>canonical coordinates</strong>, in which the form is the displayed one.</p>
 <p><em>Proof.</em> Quoted as standard and belonging to the symplectic geometry of Part II, written in parallel; the proof is a Moser-type argument using the closedness and nondegeneracy of $\omega$ and a homotopy of forms.</p>
 <p><strong>Corollary (Hamilton's equations in canonical coordinates).</strong> In canonical coordinates, $X_H$ has components</p>
@@ -264,7 +264,7 @@ $$</p>
 $$</p>
 <p>Moreover $\frac{d}{dt}f = \{f,H\}$ along the flow of $X_H$, so that $f$ is conserved exactly when $\{f,H\}=0$.</p>
 <p><em>Proof.</em> The form $\omega = \sum_i dq_i\wedge dp_i$ gives $\omega(X_H,Y)=dq(X_H)\,dp(Y)-dp(X_H)\,dq(Y) = dq/dt\,dp(Y)+dp/dt\,dq(Y)$ for $X_H=(dq/dt,dp/dt)$; requiring this to equal $dH(Y)=H_qdq(Y)+H_pdp(Y)$ for all $Y$ gives the equations. The bracket formula is the same computation applied to $f$ and $g$, and the last statement is $\frac{d}{dt}f = df(X_H)=X_H(f)=\{f,H\}$.</p>
-<p><strong>Definition.</strong> A <strong>Poisson manifold</strong> is a manifold with a bracket on its functions that is bilinear, skew-symmetric, satisfies the Leibniz rule and the Jacobi identity; the bracket need not come from a symplectic form, and its rank may drop on a subvariety. A <strong>Poisson structure</strong> is the corresponding section of $\Lambda^2TM$; when it is nondegenerate it is the inverse of a symplectic form.</p>
+<p><strong>Definition.</strong> A <strong>Poisson manifold</strong> is a manifold with a bracket on its functions that is bilinear, antisymmetric, satisfies the Leibniz rule and the Jacobi identity; the bracket need not come from a symplectic form, and its rank may drop on a subvariety. A <strong>Poisson structure</strong> is the corresponding section of $\Lambda^2TM$; when it is nondegenerate it is the inverse of a symplectic form.</p>
 <p><strong>Remark (the two formulations).</strong> A symplectic structure is a nondegenerate Poisson structure, and the classical mechanics of a system without constraints is symplectic; a Poisson structure that degenerates occurs for a constrained system, after symmetry reduction, and for the Lie–Poisson structure on the dual of a Lie algebra. The relation between the two is the content of the symplectic geometry of Part II, where the reduction of a symplectic manifold by a group action is treated; here the nondegenerate case is used, and the degenerate case is named only where it occurs, as in the Euler top below.</p>
 <h3 id="the-bracket-formulation-of-the-dynamics-and-poissons-theorem">The Bracket Formulation of the Dynamics and Poisson's Theorem</h3>
 <p>The bracket turns the differential equations of the flow into an algebraic statement about functions on phase space.</p>

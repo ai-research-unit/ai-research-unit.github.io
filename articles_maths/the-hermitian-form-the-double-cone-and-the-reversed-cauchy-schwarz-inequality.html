@@ -73,9 +73,9 @@
 <p>The Hermitian form $H(A,C)=A\bar C$ is indefinite, and everything in this article follows from that one fact. The set where $H$ is non-negative is a double cone, not a half-space and not the plane; the two idempotent lines are totally isotropic; the sign of the form on a pair of causal vectors is forced, and it forces a Cauchy-Schwarz inequality with the inequality reversed. The cone then defines an order, and the norm-one elements form a group with two branches.</p>
 <p>The claim is that the indefiniteness is not a defect to be repaired but the structure itself. It is what makes the ring a partial order, what makes two idempotent lines isotropic, and what makes the unitary group of rank one non-compact; all three are one property, seen three times. The comparison with the complex field, where the form is definite, gives the contrast at each step.</p>
 <p>The form is <em>The Two Forms and the Two Algebraic Norms of the Split-Complex Space</em>; the isotropic lines are <em>The Involutions, the Subspaces and the Idempotent Lines of the Split-Complex Space</em>; the level sets are <em>The Level Sets of the Split Norm and the Hyperbolic Structure</em>; the group of units is <em>Norm and Invertibility in the General Split-Complex Algebra</em>.</p>
-<h2 id="the-cone-of-math2-squares">The Cone of $H$-Squares</h2>
+<h2 id="the-cone-of-math2-positivity">The Cone of $H$-Positivity</h2>
 <h3 id="the-definition">The Definition</h3>
-<p><strong>Definition.</strong> The <strong>cone of $H$-squares</strong> is the set of elements whose Hermitian square is non-negative,</p>
+<p><strong>Definition.</strong> The <strong>cone of $H$-positivity</strong> is the set of elements whose Hermitian square is non-negative,</p>
 <p>$$
 \mathcal{C}=\{Q : H(Q,Q)\ge0\}=\{Q : N(Q)\ge0\} .
 $$</p>
@@ -160,7 +160,7 @@ $$</p>
 <p><strong>Proof.</strong> $A-C\in\mathcal{C}_+$ reads $(A-C)_+\ge0$ and $(A-C)_-\ge0$, which is the two inequalities displayed. The order is reflexive, transitive and antisymmetric because each of the two coordinate orders is.</p>
 <h3 id="partial-not-total">Partial, Not Total</h3>
 <p>The order is not total. The two idempotents are incomparable: $\Pi_+-\Pi_-=j$ has norm $-1$ and $\Pi_--\Pi_+$ has norm $-1$, so neither difference lies in the cone. So there are pairs of elements of which neither is above the other, and the order is a partial order in the strict sense.</p>
-<p>The double cone alone does not give an order: it is not pointed, since $\mathcal{C}\cap(-\mathcal{C})=\mathcal{C}$, and the relation it defines is only a preorder. The order comes from one component, and the choice of the forward one is the choice of a time direction.</p>
+<p>The double cone alone does not give an order: it is not convex, since the sum of a vector of one component and a vector of the other can leave the cone, and it is not pointed, since $\mathcal{C}\cap(-\mathcal{C})=\mathcal{C}$. The order comes from one component, and the choice of the forward one is the choice of a time direction.</p>
 <h3 id="monotonicity-of-the-product">Monotonicity of the Product</h3>
 <p><strong>Proposition.</strong> If $A\succeq0$ and $C\succeq0$ then $AC\succeq0$.</p>
 <p><strong>Proof.</strong> The coordinates multiply, $A_\pm C_\pm\ge0$, and an element with both coordinates non-negative is in $\mathcal{C}_+$.</p>
@@ -207,7 +207,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathcal{C}=\{N\ge0\}$</td>
-<td>The double cone, the cone of $H$-squares</td>
+<td>The double cone, the cone of $H$-positivity</td>
 </tr>
 <tr>
 <td>$\mathcal{C}_\pm$</td>

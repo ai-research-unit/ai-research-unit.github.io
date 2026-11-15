@@ -107,12 +107,12 @@ $$
 =\operatorname{tr}\bigl(X^{\mathsf T}A^{\mathsf T}YB^{\mathsf T}\bigr)
 =\bigl\langle X,L_{A^{\mathsf T}}R_{B^{\mathsf T}}Y\bigr\rangle_{\mathrm{tr}} .
 $$</p>
-<p><strong>The self-adjoint products.</strong> A nonzero product is self-adjoint for the trace form exactly when its two parameters are symmetric or both skew-symmetric, in the same class:
+<p><strong>The self-adjoint products.</strong> A nonzero product is self-adjoint for the trace form exactly when its two parameters are symmetric or both antisymmetric, in the same class:
 $$
 \bigl(L_{A}R_{B}\bigr)^{\approx}=L_{A}R_{B}\iff A^{\mathsf T}=\lambda A,\quad B^{\mathsf T}=\lambda^{-1}B,\quad\lambda=\pm1 .
 $$
-The sign is an invariant of the class, because the rescaling $(\mu A,\mu^{-1}B)$ leaves $\lambda$ unchanged; the classes with $\lambda=1$ contain a pair of symmetric matrices and the classes with $\lambda=-1$ a pair of skew-symmetric ones.</p>
-<p><strong>The skew classes are not empty, and they are not the Hermitian ones.</strong> At $n=2$, with $J=\begin{pmatrix}0&1\\-1&0\end{pmatrix}$, the pair $(iJ,J)$ is complex skew in both slots, so $L_{iJ}R_{J}$ is self-adjoint for the trace form; it is not self-adjoint for the Hilbert–Schmidt form, because $A^{*}=A$ and $B^{*}=-B$ carry incompatible signs. <strong>The transpose sees the symmetric and the skew-symmetric parameters alike, and the star does not.</strong></p>
+The sign is an invariant of the class, because the rescaling $(\mu A,\mu^{-1}B)$ leaves $\lambda$ unchanged; the classes with $\lambda=1$ contain a pair of symmetric matrices and the classes with $\lambda=-1$ a pair of antisymmetric ones.</p>
+<p><strong>The skew classes are not empty, and they are not the Hermitian ones.</strong> At $n=2$, with $J=\begin{pmatrix}0&1\\-1&0\end{pmatrix}$, the pair $(iJ,J)$ is complex skew in both slots, so $L_{iJ}R_{J}$ is self-adjoint for the trace form; it is not self-adjoint for the Hilbert–Schmidt form, because $A^{*}=A$ and $B^{*}=-B$ carry incompatible signs. <strong>The transpose sees the symmetric and the antisymmetric parameters alike, and the star does not.</strong></p>
 <p><strong>The isometries.</strong> The operator preserves the trace form exactly when the class of its pair contains two complex orthogonal matrices:
 $$
 \langle L_{A}R_{B}X,L_{A}R_{B}Y\rangle_{\mathrm{tr}}=\langle X,Y\rangle_{\mathrm{tr}}\iff A^{\mathsf T}A=\lambda\mathrm I_{n},\quad BB^{\mathsf T}=\lambda^{-1}\mathrm I_{n},\quad\lambda\ne0 .
@@ -142,11 +142,11 @@ because the array of $M^{\dagger}$ is obtained from the array of $M$ by conjugat
 <p><strong>Theorem (the types).</strong> Let $T=L_{A}R_{B}$ be nonzero and put $\lambda$ the scalar of its class, $|\lambda|=1$.</p>
 <ul>
 <li>$T$ is self-adjoint exactly when its class contains a pair of Hermitian matrices.</li>
-<li>$T$ is skew-adjoint exactly when its class contains a pair with $A$ skew-Hermitian and $B$ Hermitian.</li>
+<li>$T$ is skew-adjoint exactly when its class contains a pair with $A$ anti-Hermitian and $B$ Hermitian.</li>
 </ul>
-<p><em>Proof.</em> The equation $T^{\dagger}=T$ reads $L_{A^{*}}R_{B^{*}}=L_{A}R_{B}$, which by the fibre theorem is $A^{*}=\lambda A$, $B^{*}=\lambda^{-1}B$; taking adjoints again gives $|\lambda|=1$, and rescaling the pair by $\mu$ with $\mu/\bar\mu=\lambda$ brings both parameters to the Hermitian case. The skew case reads $L_{A^{*}}R_{B^{*}}=L_{-A}R_{B}$, that is $A^{*}=-\lambda A$ and $B^{*}=\lambda^{-1}B$, and the same rescaling brings the pair to the skew-Hermitian and Hermitian case.</p>
+<p><em>Proof.</em> The equation $T^{\dagger}=T$ reads $L_{A^{*}}R_{B^{*}}=L_{A}R_{B}$, which by the fibre theorem is $A^{*}=\lambda A$, $B^{*}=\lambda^{-1}B$; taking adjoints again gives $|\lambda|=1$, and rescaling the pair by $\mu$ with $\mu/\bar\mu=\lambda$ brings both parameters to the Hermitian case. The skew case reads $L_{A^{*}}R_{B^{*}}=L_{-A}R_{B}$, that is $A^{*}=-\lambda A$ and $B^{*}=\lambda^{-1}B$, and the same rescaling brings the pair to the anti-Hermitian and Hermitian case.</p>
 <p><strong>The sign is carried by the first slot and not by the two.</strong> The asymmetry is not a convention: the two slots enter the product in opposite orders, so the sign of the adjoint equation reaches them with opposite signs, and only the first slot can carry the minus. <strong>At $n=2$ the quaternionic plain form has no skew sector at all among the nonzero products; the Hilbert–Schmidt form has a large one, of real dimension $2n^{2}-1$ in the cone.</strong></p>
-<p><strong>The count of the skew sector.</strong> The pairs $(A,B)$ with $A$ skew-Hermitian and $B$ Hermitian form a real space of dimension $n^{2}+n^{2}=2n^{2}$, and the scaling by the unit circle is one real parameter, so the skew-adjoint products form a real cone of real dimension $2n^{2}-1$: <strong>the count of the two-sided cone, because the condition is real-linear and replaces the complex freedom of a parameter by the real freedom of the anti-Hermitian one.</strong></p>
+<p><strong>The count of the skew sector.</strong> The pairs $(A,B)$ with $A$ anti-Hermitian and $B$ Hermitian form a real space of dimension $n^{2}+n^{2}=2n^{2}$, and the scaling by the unit circle is one real parameter, so the skew-adjoint products form a real cone of real dimension $2n^{2}-1$: <strong>the count of the two-sided cone, because the condition is real-linear and replaces the complex freedom of a parameter by the real freedom of the anti-Hermitian one.</strong></p>
 <h3 id="the-isometries">The Isometries</h3>
 <p><strong>Theorem.</strong> The operator $L_{A}R_{B}$ preserves the Hilbert–Schmidt form exactly when the class of its pair contains two unitary matrices:
 $$

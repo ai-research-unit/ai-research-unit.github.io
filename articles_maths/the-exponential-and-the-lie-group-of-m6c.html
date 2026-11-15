@@ -212,16 +212,16 @@ $$</p>
 36-1=35,
 $$</p>
 <p>a compact real form of $\mathfrak{sl}_6(\mathbb{C})$, and the Lie algebra of $SU(6)$.</p>
-<p><strong>Proof.</strong> The skew-Hermitian matrices have real dimension $36$ (the diagonal is purely imaginary, the upper triangle is free complex, the lower is determined); the traceless condition removes one real dimension. The complexification is $\mathfrak{sl}_6(\mathbb{C})$; the Killing form is negative definite on $\mathfrak{su}(6)$, so the form is compact.</p>
+<p><strong>Proof.</strong> The anti-Hermitian matrices have real dimension $36$ (the diagonal is purely imaginary, the upper triangle is free complex, the lower is determined); the traceless condition removes one real dimension. The complexification is $\mathfrak{sl}_6(\mathbb{C})$; the Killing form is negative definite on $\mathfrak{su}(6)$, so the form is compact.</p>
 <p><strong>Theorem (the exponential).</strong> The exponential maps $\mathfrak{su}(6)$ onto $SU(6)$, and the eigenvalues of $e^X$ for $X\in\mathfrak{su}(6)$ lie on the unit circle.</p>
-<p><strong>Proof.</strong> $SU(6)$ is compact and connected, so the exponential of its Lie algebra is surjective. If $X$ is skew-Hermitian, it is unitarily diagonalizable with purely imaginary eigenvalues $\mathrm i\theta_j$; then $e^X$ has eigenvalues $e^{\mathrm i\theta_j}$ on the unit circle, and $\det e^X=e^{\operatorname{tr}X}=1$.</p>
+<p><strong>Proof.</strong> $SU(6)$ is compact and connected, so the exponential of its Lie algebra is surjective. If $X$ is anti-Hermitian, it is unitarily diagonalizable with purely imaginary eigenvalues $\mathrm i\theta_j$; then $e^X$ has eigenvalues $e^{\mathrm i\theta_j}$ on the unit circle, and $\det e^X=e^{\operatorname{tr}X}=1$.</p>
 <p><strong>Corollary (the dimensions).</strong></p>
 <p>$$
 \dim_{\mathbb{R}}U(6)=36,\qquad
 \dim_{\mathbb{R}}SU(6)=35,\qquad
 \dim_{\mathbb{R}}\mathfrak{gl}_6=72 .
 $$</p>
-<p><strong>Proof.</strong> $U(6)$ is the skew-Hermitian matrices (dimension $36$); $SU(6)$ is the traceless part (dimension $35$); $\mathfrak{gl}_6$ is all matrices (complex dimension $36$, real dimension $72$).</p>
+<p><strong>Proof.</strong> $U(6)$ is the anti-Hermitian matrices (dimension $36$); $SU(6)$ is the traceless part (dimension $35$); $\mathfrak{gl}_6$ is all matrices (complex dimension $36$, real dimension $72$).</p>
 <p><strong>Remark (the center and the quotient).</strong> The center of $SU(6)$ is $\mathbb{Z}/6$, and the adjoint group is $PSU(6)=SU(6)/(\mathbb{Z}/6)$, of dimension $35$, with Lie algebra $\mathfrak{su}(6)$.</p>
 <h2 id="the-closed-form">The Closed Form</h2>
 <h3 id="the-jordan-form">The Jordan Form</h3>
@@ -240,7 +240,7 @@ $$</p>
 \det e^X=\prod_{i=1}^{6}e^{\lambda_i}=e^{\operatorname{tr}X}.
 $$</p>
 <p><strong>Proof.</strong> The eigenvalues of $e^X$ are $e^{\lambda_i}$ with the algebraic multiplicities; the trace is the sum and the determinant the product.</p>
-<p><strong>Corollary (the real eigenvalues).</strong> If $X$ is Hermitian, $e^X$ is Hermitian positive definite; if $X$ is skew-Hermitian, $e^X$ is $*$-unitary.</p>
+<p><strong>Corollary (the real eigenvalues).</strong> If $X$ is Hermitian, $e^X$ is Hermitian positive definite; if $X$ is anti-Hermitian, $e^X$ is $*$-unitary.</p>
 <p><strong>Proof.</strong> The spectral theorem; the exponential acts on the eigenvalues by $e^{\lambda}$.</p>
 <h3 id="the-exponential-of-a-sum">The Exponential of a Sum</h3>
 <p><strong>Theorem (the Baker–Campbell–Hausdorff formula).</strong> For $X,Y$ near $0$,</p>
@@ -264,7 +264,7 @@ $$</p>
 <p><strong>Theorem.</strong> $SU(6)$ is a compact connected Lie group of dimension $35$, with Lie algebra $\mathfrak{su}(6)$; its exponential is surjective.</p>
 <p><strong>Proof.</strong> $SU(6)$ is closed and bounded in $M_6(\mathbb{C})$, hence compact; it is connected; the dimension is the dimension of the Lie algebra; the exponential is surjective on a compact connected Lie group.</p>
 <p><strong>Corollary (the eigenvalues and the determinant).</strong> For $X\in\mathfrak{su}(6)$, the eigenvalues of $X$ are purely imaginary and sum to zero; the eigenvalues of $e^X$ are on the unit circle and their product is $1$.</p>
-<p><strong>Proof.</strong> Skew-Hermitian trace-zero; the exponential maps $\mathrm i\theta_j$ to $e^{\mathrm i\theta_j}$; the sum is zero, so the product is $1$.</p>
+<p><strong>Proof.</strong> Anti-Hermitian trace-zero; the exponential maps $\mathrm i\theta_j$ to $e^{\mathrm i\theta_j}$; the sum is zero, so the product is $1$.</p>
 <p><strong>Remark (the topology).</strong> $\pi_1(SU(6))=\mathbb{Z}/6$ and the center is $\mathbb{Z}/6$; the adjoint group $PSU(6)$ is $SU(6)/(\mathbb{Z}/6)$. The details are <em>The Topology of $M_6(\mathbb{C})$</em>.</p>
 <h2 id="summary">Summary</h2>
 <p>The exponential is</p>
@@ -357,7 +357,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathfrak{su}(6)$</td>
-<td>the skew-Hermitian traceless algebra</td>
+<td>the anti-Hermitian traceless algebra</td>
 </tr>
 <tr>
 <td>$\operatorname{ad}_X$</td>

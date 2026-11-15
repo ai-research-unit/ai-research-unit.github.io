@@ -162,7 +162,7 @@ $$</p>
 <p><strong>Theorem.</strong> $GL_5(\mathbb{C})$ is a complex Lie group of complex dimension $25$; its Lie algebra is $\mathfrak{gl}_5$; the multiplication, the inverse and the exponential are smooth.</p>
 <p><strong>Proof.</strong> $GL_5$ is the open subset $\det\ne0$ of $M_5\cong\mathbb{C}^{25}$; the multiplication is polynomial, the inverse is rational with denominator $\det$, and the exponential is entire. The Lie algebra is the tangent space at $I$, with the bracket of left-invariant fields.</p>
 <p><strong>Corollary.</strong> The Lie algebra of $SL_5$ is $\mathfrak{sl}_5$, of dimension $24$; the Lie algebra of $U(5)$ is $\mathfrak{u}(5)$, of real dimension $25$; the Lie algebra of $SU(5)$ is $\mathfrak{su}(5)$, of real dimension $24$.</p>
-<p><strong>Proof.</strong> The subgroups are the zero sets of the determinant, of $U^*U=I$, and of both; their tangent spaces are the traceless, skew-Hermitian, and traceless skew-Hermitian matrices.</p>
+<p><strong>Proof.</strong> The subgroups are the zero sets of the determinant, of $U^*U=I$, and of both; their tangent spaces are the traceless, anti-Hermitian, and traceless anti-Hermitian matrices.</p>
 <h3 id="the-exponential-is-a-local-diffeomorphism">The Exponential Is a Local Diffeomorphism</h3>
 <p><strong>Theorem.</strong> The derivative of the exponential at $0$ is the identity:</p>
 <p>$$
@@ -196,9 +196,9 @@ $$</p>
 <p><strong>Proof.</strong> The identity $\det(e^X)=e^{\operatorname{tr}X}$ is the determinant-exponential identity; a traceless $X$ gives determinant $1$.</p>
 <h3 id="math179-and-math180">$U(5)$ and $SU(5)$</h3>
 <p><strong>Theorem.</strong> $U(5)$ is a compact real Lie group of dimension $25$, with Lie algebra $\mathfrak{u}(5)$; the exponential maps $\mathfrak{u}(5)$ onto $U(5)$. $SU(5)$ is compact of dimension $24$, with Lie algebra $\mathfrak{su}(5)$, and the exponential maps $\mathfrak{su}(5)$ onto $SU(5)$.</p>
-<p><strong>Proof.</strong> The $*$-unitary group is the zero set of $U^*U=I$, closed and bounded, hence compact; the tangent space at $I$ is $\mathfrak{u}(5)$; the exponential of a skew-Hermitian matrix is $*$-unitary. The surjectivity is the $*$-unitary diagonalization: $U=VDV^*$ with $D=\operatorname{diag}(e^{i\theta_k})$, and $U=e^{iH}$ with $H=VD_0V^*$, $D_0=\operatorname{diag}(\theta_k)$, skew-Hermitian. For $SU(5)$, choose the angles with sum zero modulo $2\pi$.</p>
-<p><strong>Corollary.</strong> The exponential of a Hermitian matrix is positive definite; the exponential of a skew-Hermitian matrix is $*$-unitary; the exponential of a nilpotent matrix is unipotent.</p>
-<p><strong>Proof.</strong> If $H$ is Hermitian, $e^H$ is Hermitian with positive eigenvalues $e^{\lambda_k}$; if $X$ is skew-Hermitian, $(e^X)^*=e^{X^*}=e^{-X}=(e^X)^{-1}$; if $N$ is nilpotent, $e^N=I+N+\cdots+N^{k-1}/(k-1)!$ is unipotent.</p>
+<p><strong>Proof.</strong> The $*$-unitary group is the zero set of $U^*U=I$, closed and bounded, hence compact; the tangent space at $I$ is $\mathfrak{u}(5)$; the exponential of a anti-Hermitian matrix is $*$-unitary. The surjectivity is the $*$-unitary diagonalization: $U=VDV^*$ with $D=\operatorname{diag}(e^{i\theta_k})$, and $U=e^{iH}$ with $H=VD_0V^*$, $D_0=\operatorname{diag}(\theta_k)$, anti-Hermitian. For $SU(5)$, choose the angles with sum zero modulo $2\pi$.</p>
+<p><strong>Corollary.</strong> The exponential of a Hermitian matrix is positive definite; the exponential of a anti-Hermitian matrix is $*$-unitary; the exponential of a nilpotent matrix is unipotent.</p>
+<p><strong>Proof.</strong> If $H$ is Hermitian, $e^H$ is Hermitian with positive eigenvalues $e^{\lambda_k}$; if $X$ is anti-Hermitian, $(e^X)^*=e^{X^*}=e^{-X}=(e^X)^{-1}$; if $N$ is nilpotent, $e^N=I+N+\cdots+N^{k-1}/(k-1)!$ is unipotent.</p>
 <h3 id="the-borel-and-the-unipotent-group">The Borel and the Unipotent Group</h3>
 <p><strong>Definition.</strong> The <strong>Borel subgroup</strong> $B$ is the group of upper triangular matrices; the <strong>unipotent group</strong> $U$ is the group of upper triangular matrices with diagonal entries $1$; the <strong>torus</strong> $T$ is the group of diagonal matrices.</p>
 <p><strong>Theorem.</strong> $B=T\ltimes U$, $\dim B=15$, $\dim U=10$, $\dim T=5$. The Lie algebra of $U$ is the nilpotent strictly upper triangular algebra $\mathfrak{n}$, and the exponential maps $\mathfrak{n}$ bijectively onto $U$.</p>
@@ -317,11 +317,11 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathfrak{u}(5)$</td>
-<td>The skew-Hermitian matrices</td>
+<td>The anti-Hermitian matrices</td>
 </tr>
 <tr>
 <td>$\mathfrak{su}(5)$</td>
-<td>The traceless skew-Hermitian matrices</td>
+<td>The traceless anti-Hermitian matrices</td>
 </tr>
 <tr>
 <td>$\mathfrak{n}$</td>

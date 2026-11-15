@@ -71,7 +71,7 @@
         <h1 id="the-special-unitary-groups-in-physics-spin-colour-and-the-gauge-ladder"><strong>The Special Unitary Groups in Physics: Spin, Colour and the Gauge Ladder</strong></h1>
 <h2 id="the-plan">The Plan</h2>
 <p><strong>The change of field changes everything.</strong> The companion article <em>su-n-over-the-complexes.md</em> builds $\mathrm{SU}(n)$ from $A^{*}A=\mathrm I$ and $\det A=1$. This article says what each rung does in physics. The decisive difference from the orthogonal ladder is the field: the inner product is sesquilinear, so the group is the group of transformations of a complex Hilbert space that preserve the transition probabilities. Probability is the reason the group is unitary and not orthogonal, and it is the reason the determinant is a phase and not a sign.</p>
-<p><strong>The three jobs of the ladder.</strong> $\mathrm{SU}(2)$ is the spin group of three-dimensional space, and therefore the group of the qubit, of the nucleon's isospin, and of the weak interaction. $\mathrm{SU}(3)$ is the colour group of the strong interaction, and therefore the group of the gluon octet and of the hadron multiplets. $\mathrm{SU}(4)$ is the first rung where a lepton is a fourth colour, and the rung at which the spinor of a six-dimensional rotation group becomes a fundamental representation — the $\mathrm{SU}(4)=\mathrm{Spin}(6)$ isomorphism of the companion article, read as physics. Above that, $\mathrm{SU}(n)$ is the general gauge group of $n$ colours, with the large-$n$ limit as the standard approximation scheme.</p>
+<p><strong>The three jobs of the ladder.</strong> $\mathrm{SU}(2)$ is the spin group of three-dimensional space, and therefore the group of the qubit, of the nucleon's isospin, and of the weak interaction. $\mathrm{SU}(3)$ is the colour group of the strong interaction, and therefore the group of the gluon octet and of the hadron multiplets. $\mathrm{SU}(4)$ is the first rung where a lepton is a fourth colour, and the rung at which the spinor of a six-dimensional rotation group becomes a fundamental representation — the $\mathrm{SU}(4)=\mathrm{Spin}(6)$ isomorphism of the companion article, read as physics. Above that, $\mathrm{SU}(n)$ is the general gauge group of $n$ colours, with the large-$n$ limit as the standard approximation scheme. The upper rungs have their own physics and it is not the physics of four dimensions: grand unification at five, spin-flavour at six, nothing at seven, and the R-symmetry of maximal supergravity at eight.</p>
 <p><strong>Spin is the thread.</strong> The spin-$\tfrac12$ representation is the defining representation of $\mathrm{SU}(2)$ and the only place in the ladder where the <em>fundamental</em> representation is the spinor. That accident is why the electron is a two-component object and why a rotation by $2\pi$ changes its sign. Every other rung is a gauge group whose representations are internal, and the word "spin" then generalises: colour is a three-valued label with its own "rotation" group, and the selection rules of colour are the analogue of the selection rules of angular momentum. The article keeps the two senses apart and shows where they meet.</p>
 <p><strong>What is computed.</strong> The Casimirs of $\mathrm{SU}(3)$, its structure constants, its tensor products, the hypercharge anomalies of one generation, the branching of the grand-unified representations, the $2\pi$ sign at eight values of the spin, and the instanton winding number are all recomputed in the closing verification. Statements that are quoted rather than computed are marked as such: the spin-statistics theorem, the confinement of colour, the Gell-Mann–Okubo mass formula, and the values of the Wess–Zumino–Witten central charges.</p>
 <h2 id="why-unitary-and-not-orthogonal">Why Unitary and Not Orthogonal</h2>
@@ -146,8 +146,86 @@ $$</p>
 <p><strong>The $R$-symmetry of the supersymmetric theory.</strong> In the four-dimensional $\mathcal N=4$ super-Yang–Mills theory the sixteen supercharges transform in the $4$ of an $\mathrm{SU}(4)$ $R$-symmetry, the six scalars transform in the antisymmetric square, and the four gauginos in the $4$. The verification confirms $\dim\Lambda^{2}(4)=6$ and $4\otimes\bar 4=15\oplus1$, so the scalars are the $6$, the gauginos the $4$, and the gauge bosons the $15$ which is the adjoint of $\mathrm{SU}(4)$ and also the adjoint of the $\mathrm{SU}(4)$ that is the gauge group. The coincidence of the two $\mathrm{SU}(4)$'s is not an accident: it is the $\mathrm{SU}(4)=\mathrm{Spin}(6)$ of the previous paragraph, applied to the six scalars.</p>
 <p><strong>Why the theory is special.</strong> $\mathcal N=4$ is the maximally supersymmetric gauge theory in four dimensions, it is finite, and it is conjectured to be self-dual under electric-magnetic duality. The $\mathrm{SU}(4)$ of this rung is what makes the duality group visible, and the complexified coupling $\tau$ of the previous article is the coordinate on which the duality acts. The corpus records the supersymmetric side in <em>Supersymmetric Quantum Physics in the Biquaternion Framework</em>.</p>
 <p><strong>The spin–orbital chain.</strong> In a solid with both spin and orbital degeneracy the local degree of freedom can be a four-state object, and the exchange symmetry is then $\mathrm{SU}(4)$ and not $\mathrm{SU}(2)$. The $\mathrm{SU}(4)$ Heisenberg chain has its own physics — a different Haldane structure and a different set of phases — and it is realised in materials with a degenerate orbital doublet. The rung is therefore a model of a real class of materials and not only of a unified theory.</p>
-<h2 id="math202-the-general-gauge-rung">$\mathrm{SU}(n)$: The General Gauge Rung</h2>
-<h3 id="math203-colours">$n$ Colours</h3>
+<h2 id="math202-the-georgiglashow-rung">$\mathrm{SU}(5)$: The Georgi–Glashow Rung</h2>
+<h3 id="the-first-grand-unified-group">The First Grand Unified Group</h3>
+<p><strong>The gauge bosons.</strong> The rung has dimension $24$, and a gauge theory with this group has twenty-four gauge bosons: the eight gluons, the three weak bosons, the photon, and twelve new ones, the $X$ and $Y$ bosons of charge $\pm4/3$ and $\pm1/3$. The count is $24=8+3+1+12$, and the twelve are the ones that mediate proton decay.</p>
+<p><strong>One generation is fifteen states.</strong> The fermions of a single generation sit in the $\bar{\mathbf 5}\oplus\mathbf{10}$:</p>
+<p>$$
+\bar{\mathbf 5}:\ (d^{c}_{1},d^{c}_{2},d^{c}_{3},e^{-},\nu_{e}),
+\qquad
+\mathbf{10}:\ (Q,u^{c},e^{c}),
+$$</p>
+<p>which is $5+10=15$ states, and the electric charges inside each representation are fixed by the tracelessness of the generators: the sum of the charges of the $\bar{\mathbf 5}$ is zero, and the hypercharge generator is one of the twenty-four. This is the reason the rung predicts the ratio of the weak mixing angle, $\sin^{2}\theta_{W}=3/8$ at the scale of unification, and the reason the proton decays: the $X$ and $Y$ bosons couple a quark to a lepton.</p>
+<h3 id="the-orthogonal-shadow">The Orthogonal Shadow</h3>
+<p><strong>A grand unified group two steps up.</strong> The realification of the mathematics article gives $\mathrm{SU}(5)\subset\mathrm{SO}(10)$, and $\mathrm{SO}(10)$ is the next grand unified group. Its sixteen-dimensional spinor representation branches under $\mathrm{SU}(5)$ as</p>
+<p>$$
+\mathbf{16}=\mathbf{10}\oplus\bar{\mathbf 5}\oplus\mathbf{1},
+$$</p>
+<p>so one generation of the previous paragraph plus one right-handed neutrino is exactly one spinor of the orthogonal group. The embedding is not an analogy: it is the statement that a complex five-dimensional space is a real ten-dimensional one, which is the realification of the companion article read at this rung.</p>
+<p><strong>What the physics does with the second embedding.</strong> The adjoint embedding $\mathrm{SU}(5)\subset\mathrm{SO}(24)$ is orthogonal but not unitary in any useful sense, and it plays no role in model building. The rung therefore has exactly one physically significant orthogonal partner, the one at dimension ten, and it is the realification and not the adjoint.</p>
+<h2 id="math221-the-spin-flavour-rung">$\mathrm{SU}(6)$: The Spin-Flavour Rung</h2>
+<h3 id="colour-and-spin-in-one-group">Colour and Spin in One Group</h3>
+<p><strong>The six.</strong> Colour has three values and spin has two, and the product is six. The spin-flavour group $\mathrm{SU}(6)$ of the quark model acts on the six states of a quark with a fixed flavour, and its representations organise the light hadrons:</p>
+<p>$$
+\mathbf{6}\otimes\bar{\mathbf 6}=\mathbf{35}\oplus\mathbf{1},
+\qquad
+(\mathbf{6}\otimes\mathbf{6}\otimes\mathbf{6})_{\text{symmetric}}=\mathbf{56}.
+$$</p>
+<p>The thirty-five is the meson nonet's worth of states at each spin, and the fifty-six is the baryon multiplet of the eightfold way, of dimension $56$, which is the observed count of the light baryons at the lowest level.</p>
+<p><strong>Why it is approximate.</strong> The group is a symmetry only if colour and spin are treated on the same footing, which requires the spin-dependent forces to be neglected. They are not negligible — the hyperfine splitting of the nucleon and the $\Delta$ is the counterexample — so $\mathrm{SU}(6)$ is a classification scheme and not an exact symmetry. The exact group is $\mathrm{SU}(3)_{\text{colour}}\times\mathrm{SU}(2)_{\text{spin}}$, and the six is the fundamental of the product, not of a simple group.</p>
+<h3 id="the-orthogonal-shadow_1">The Orthogonal Shadow</h3>
+<p>The realification gives $\mathrm{SU}(6)\subset\mathrm{SO}(12)$ and the adjoint gives $\mathrm{SU}(6)\subset\mathrm{SO}(35)$. Neither is a grand unified group: the rung has no orthogonal partner of a distinguished dimension, and the nearest orthogonal rung, $\mathrm{SO}(9)$ of dimension $36$, is one dimension away and not related.</p>
+<h2 id="math232-the-rung-without-a-job">$\mathrm{SU}(7)$: The Rung Without a Job</h2>
+<h3 id="what-the-rung-is">What the Rung Is</h3>
+<p>Dimension $48$, so forty-eight gauge bosons in a gauge theory with this group, and rank six. There is no standard model construction attached to this rung, and that is worth stating rather than hiding: the grand unified ladder has a distinguished rung at five and a distinguished completion at ten, and nothing at seven.</p>
+<p><strong>The one general use.</strong> In the large-$N$ limit the number of colours is a parameter, and the planar expansion is a statement about the family of rungs rather than about any one of them. A rung like this one is where the family is seen to be a family: the gauge group $\mathrm{SU}(N)$ with $N=7$ has $48$ generators, and the 't Hooft coupling $\lambda=g^{2}N$ is the parameter that survives as $N\to\infty$.</p>
+<h3 id="the-orthogonal-shadow_2">The Orthogonal Shadow</h3>
+<p>$\mathrm{SU}(7)\subset\mathrm{SO}(14)$ by realification and $\mathrm{SU}(7)\subset\mathrm{SO}(48)$ by the adjoint. The second is the same number as the dimension of the rung, which is a coincidence of the identity $n^{2}-1=48$ at $n=7$ and the dimension $m(m-1)/2=48$ of no orthogonal group.</p>
+<h2 id="math245-the-maximal-supergravity-rung">$\mathrm{SU}(8)$: The Maximal Supergravity Rung</h2>
+<h3 id="the-r-symmetry-of-math246">The R-Symmetry of $\mathcal N=8$</h3>
+<p><strong>The group.</strong> Four-dimensional $\mathcal N=8$ supergravity has an R-symmetry under which the eight gravitini transform in the $\mathbf{8}$, and the group is this rung. The field content is organised by its representations:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>representation</th>
+<th>dimension</th>
+<th>the field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbf{1}$</td>
+<td>$1$</td>
+<td>the graviton</td>
+</tr>
+<tr>
+<td>$\mathbf{8}$</td>
+<td>$8$</td>
+<td>the gravitini</td>
+</tr>
+<tr>
+<td>$\mathbf{28}$</td>
+<td>$28$</td>
+<td>the vectors</td>
+</tr>
+<tr>
+<td>$\mathbf{56}$</td>
+<td>$56$</td>
+<td>the fermions</td>
+</tr>
+<tr>
+<td>$\mathbf{70}$</td>
+<td>$70$</td>
+<td>the scalars</td>
+</tr>
+</tbody>
+</table></div>
+<p>The total is $1+8+28+56+70=163$ and the scalars number seventy. The five dimensions are the binomial coefficients $\binom{8}{0},\dots,\binom{8}{4}$, and the reason they appear is that the fields are antisymmetric tensors of the R-symmetry: the vectors are the two-form, the fermions the three-form, and the scalars the self-dual part of the four-form, which has $70/2=35$ dimensions in each chirality.</p>
+<p><strong>The duality group.</strong> The scalars of the theory parametrise the coset $\mathrm{E}_{7(7)}/\mathrm{SU}(8)$, of dimension $133-63=70$, and the rung is the maximal compact subgroup of the exceptional group. So the R-symmetry is the denominator of the moduli space, and the seventy scalars are the coordinates of that coset.</p>
+<h3 id="the-orthogonal-shadow_3">The Orthogonal Shadow</h3>
+<p>$\mathrm{SU}(8)\subset\mathrm{SO}(16)$ by realification, $\mathrm{SU}(8)\subset\mathrm{SO}(63)$ by the adjoint, and neither is a grand unified group. The physically significant orthogonal group near this rung is not inside it but beside it: the $\mathrm{SO}(8)$ of the transverse little group of the superstring, which is the subject of the orthogonal companion, and whose triality is what makes the ten-dimensional theory consistent. The two rungs, $\mathrm{SU}(8)$ of the supergravity and $\mathrm{SO}(8)$ of the string, are therefore the two ends of the same ten-dimensional construction read in different dimensions.</p>
+<h2 id="math269-the-general-gauge-rung">$\mathrm{SU}(n)$: The General Gauge Rung</h2>
+<h3 id="math270-colours">$n$ Colours</h3>
 <p><strong>The dimension count.</strong> $\dim\mathrm{SU}(n)=n^{2}-1$, so the number of gauge bosons is $n^{2}-1$: three for $n=2$, eight for $n=3$, fifteen for $n=4$, twenty-four for $n=5$. The gluon octet is the case $n=3$, and the number eight is the dimension of the adjoint representation, which is the representation of the gauge boson in every non-abelian gauge theory.</p>
 <p><strong>The large-$n$ limit.</strong> 't Hooft's observation is that the gauge theory simplifies when $n\to\infty$ with $n\,g^{2}$ fixed: the Feynman diagrams organise by genus, the planar diagrams dominate, and the theory becomes a theory of a master field. The expansion parameter is $1/n$, and the limit is the standard approximation scheme for the strong interaction and for the AdS/CFT correspondence, where the string coupling is $1/n$ and the string theory is the dual of the gauge theory. The rung is used as an expansion parameter and not only as a group.</p>
 <p><strong>$n$-ality and the centre.</strong> $Z(\mathrm{SU}(n))=\mathbb{Z}/n$, so the confinement selection rule of the $\mathrm{SU}(3)$ section generalises: a state with $k$ quarks minus antiquarks picks up the phase $\omega^{k}$ with $\omega=e^{2\pi i/n}$, so only the multiples of $n$ can be asymptotic. That is the $n$-ality rule, and it is the statement that the centre of the rung is the order parameter of confinement at every $n$.</p>
@@ -156,7 +234,7 @@ $$</p>
 c=\frac{k(n^{2}-1)}{k+n},
 $$</p>
 <p>which the verification evaluates for the first cases: $c=1$ for $\mathrm{SU}(2)_{1}$, $c=2$ for $\mathrm{SU}(3)_{1}$, $c=3$ for $\mathrm{SU}(4)_{1}$, and $c=\tfrac{16}{5}$ for $\mathrm{SU}(3)_{2}$. The formula is the statement that the rung with a level is the basic building block of two-dimensional rational conformal field theory, and it is the mathematical core of the WZW model, of the coset constructions, and of the string compactifications with a group manifold.</p>
-<h3 id="math236-spin-chains-and-coherent-states">$\mathrm{SU}(n)$ Spin Chains and Coherent States</h3>
+<h3 id="math303-spin-chains-and-coherent-states">$\mathrm{SU}(n)$ Spin Chains and Coherent States</h3>
 <p><strong>The chain.</strong> A chain whose local Hilbert space is the defining representation of $\mathrm{SU}(n)$ is a generalised spin chain. The Lieb–Schultz–Mattis theorem and its $\mathrm{SU}(n)$ generalisations say that a unique ground state with a gap is possible or impossible depending on $n$ and on the representation, and the dichotomy is the same one that produces the Haldane gap for $\mathrm{SU}(2)$. The rung is used to classify phases, and the classification is by the centre.</p>
 <p><strong>The coherent state.</strong> The coherent states of $\mathrm{SU}(n)$ are the orbit of a highest weight vector, which is the flag manifold $\mathrm{SU}(n)/S(\mathrm U(1)^{n})$. The path integral of a spin chain is an integral over that manifold, and the topological term is the Wess–Zumino term whose coefficient is the level. So the semiclassical limit of a generalised spin chain is a sigma model on a flag manifold with a topological term, and the rung's geometry is the phase diagram. The corpus records the technique in <em>Spin-1 Condensates and the Spinor Order Parameter in Biquaternionic Form</em>.</p>
 <p><strong>The entanglement.</strong> A system of $m$ qubits has state space the projective space of $(\mathbb{C}^{2})^{\otimes m}$, and the group of local operations is $\mathrm{SU}(2)^{m}$ inside $\mathrm{SU}(2^{m})$. The classification of entangled states is the classification of orbits of the smaller group inside the larger one, so the ladder appears twice: once as the local group and once as the global one. The corpus records the orbit structure in <em>Entangled Subsystems in the Biquaternion Framework</em> and <em>Mutually Unbiased Bases and the Biquaternion Algebra</em>.</p>
@@ -207,6 +285,30 @@ $$</p>
 <td>$\mathrm{SU}(4)$</td>
 <td>the fourth colour, the $R$-symmetry, the spin–orbital chain</td>
 <td>$\mathrm{SU}(4)=\mathrm{Spin}(6)$, the second spinor rung</td>
+</tr>
+<tr>
+<td>$5$</td>
+<td>$\mathrm{SU}(5)$</td>
+<td>the Georgi–Glashow unification, $\sin^{2}\theta_{W}=3/8$</td>
+<td>the $\bar{\mathbf 5}\oplus\mathbf{10}$, fifteen states</td>
+</tr>
+<tr>
+<td>$6$</td>
+<td>$\mathrm{SU}(6)$</td>
+<td>the spin-flavour group, $\mathbf{35}$ and $\mathbf{56}$</td>
+<td>three colours times two spins</td>
+</tr>
+<tr>
+<td>$7$</td>
+<td>$\mathrm{SU}(7)$</td>
+<td>nothing distinguished, the $N$ of the large-$N$ family</td>
+<td>$48$ generators</td>
+</tr>
+<tr>
+<td>$8$</td>
+<td>$\mathrm{SU}(8)$</td>
+<td>the $\mathcal N=8$ R-symmetry, $\mathrm{E}_{7(7)}/\mathrm{SU}(8)$</td>
+<td>$1+8+28+56+70=163$</td>
 </tr>
 <tr>
 <td>$n$</td>

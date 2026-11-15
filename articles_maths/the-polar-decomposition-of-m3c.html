@@ -79,7 +79,7 @@ $$</p>
 U(3)\times\operatorname{Herm}_{>0}(3)\longrightarrow GL_3(\mathbb{C}),
 \qquad (U,P)\longmapsto UP,
 $$</p>
-<p>and the real dimensions match: $9+9=18$. The positive definite factor is the exponential of a Hermitian matrix, $P=e^{H}$, and the $*$-unitary factor is the exponential of a skew-Hermitian matrix, $U=e^{iK}$, so the polar decomposition is the real splitting</p>
+<p>and the real dimensions match: $9+9=18$. The positive definite factor is the exponential of a Hermitian matrix, $P=e^{H}$, and the $*$-unitary factor is the exponential of a anti-Hermitian matrix, $U=e^{iK}$, so the polar decomposition is the real splitting</p>
 <p>$$
 \mathfrak{gl}_3=\mathfrak{u}(3)\oplus\operatorname{Herm}(3),
 \qquad
@@ -131,13 +131,13 @@ $$</p>
 <p>$$
 A=e^{iK}e^{H},\qquad K=K^{*},\quad H=H^{*},
 $$</p>
-<p>the <strong>polar exponential form</strong>. The real tangent space at the identity splits as the skew-Hermitian part and the Hermitian part:</p>
+<p>the <strong>polar exponential form</strong>. The real tangent space at the identity splits as the anti-Hermitian part and the Hermitian part:</p>
 <p>$$
 \mathfrak{gl}_3=\mathfrak{u}(3)\oplus\operatorname{Herm}(3),\qquad
 X=\tfrac12(X-X^{*})+\tfrac12(X+X^{*}).
 $$</p>
 <p>The first summand is the Lie algebra of $U(3)$, the second is the tangent space of the positive definite cone.</p>
-<p><strong>The metric.</strong> With the real part of the trace form, $\operatorname{Re}\operatorname{tr}(X^{*}Y)$, the two summands are orthogonal. For skew-Hermitian $S$ and Hermitian $H$,</p>
+<p><strong>The metric.</strong> With the real part of the trace form, $\operatorname{Re}\operatorname{tr}(X^{*}Y)$, the two summands are orthogonal. For anti-Hermitian $S$ and Hermitian $H$,</p>
 <p>$$
 \operatorname{tr}(S^{*}H)=-\operatorname{tr}(SH),
 \qquad
@@ -147,7 +147,7 @@ $$</p>
 =-\overline{\operatorname{tr}(HS)}
 =-\overline{\operatorname{tr}(SH)} .
 $$</p>
-<p>The fourth equality uses that the transpose does not change the trace and that $H$ and $S$ are Hermitian and skew-Hermitian, so $H^{\mathsf T}=\bar H$ and $S^{\mathsf T}=-\bar S$. Hence $\operatorname{tr}(SH)$ is purely imaginary, $\operatorname{tr}(S^{*}H)$ is purely imaginary, and the real part of the trace form vanishes on the pair. The real part is the Riemannian metric and the imaginary part is the symplectic form.</p>
+<p>The fourth equality uses that the transpose does not change the trace and that $H$ and $S$ are Hermitian and anti-Hermitian, so $H^{\mathsf T}=\bar H$ and $S^{\mathsf T}=-\bar S$. Hence $\operatorname{tr}(SH)$ is purely imaginary, $\operatorname{tr}(S^{*}H)$ is purely imaginary, and the real part of the trace form vanishes on the pair. The real part is the Riemannian metric and the imaginary part is the symplectic form.</p>
 <p><strong>The singular set.</strong> The map $A\mapsto P=|A|$ is continuous everywhere and smooth away from $\det A=0$. On the singular set the rank drops and the $*$-unitary factor is not unique: the fibre over a matrix of rank $r$ is the $*$-unitary group of the kernel, of real dimension $(3-r)^{2}$. For $r=2$ the fibre is $U(1)$, of dimension $1$; for $r=1$ it is $U(2)$, of dimension $4$; for $r=0$ it is $U(3)$, of dimension $9$.</p>
 <p><strong>Proof.</strong> If $A=UP$ and $A$ has rank $r$, then $P$ has rank $r$ and $\ker P=\ker A$ has dimension $3-r$. The equation $A=U'P$ holds exactly when $U'=U$ on $\operatorname{im}P$ and $U'$ is any $*$-unitary on $\ker P$; the freedom is $U(3-r)$, of real dimension $(3-r)^{2}$.</p>
 <h2 id="worked-example">Worked Example</h2>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Special Orthogonal Groups over the Complexes: $\mathrm{SO}(1,\mathbb{C})$, $\mathrm{SO}(2,\mathbb{C})$, $\mathrm{SO}(3,\mathbb{C})$, $\mathrm{SO}(4,\mathbb{C})$, $\mathrm{SO}(n,\mathbb{C})$ — Biquaternion Universe</title>
+  <title>The Special Orthogonal Groups over the Complexes: $\mathrm{SO}(1,\mathbb{C})$, $\mathrm{SO}(2,\mathbb{C})$, $\mathrm{SO}(3,\mathbb{C})$, $\mathrm{SO}(4,\mathbb{C})$, $\mathrm{SO}(5,\mathbb{C})$, $\mathrm{SO}(6,\mathbb{C})$, $\mathrm{SO}(7,\mathbb{C})$, $\mathrm{SO}(8,\mathbb{C})$, $\mathrm{SO}(n,\mathbb{C})$ — Biquaternion Universe</title>
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -68,12 +68,12 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="the-special-orthogonal-groups-over-the-complexes-math0-math1-math2-math3-math4"><strong>The Special Orthogonal Groups over the Complexes: $\mathrm{SO}(1,\mathbb{C})$, $\mathrm{SO}(2,\mathbb{C})$, $\mathrm{SO}(3,\mathbb{C})$, $\mathrm{SO}(4,\mathbb{C})$, $\mathrm{SO}(n,\mathbb{C})$</strong></h1>
+        <h1 id="the-special-orthogonal-groups-over-the-complexes-math0-math1-math2-math3-math4-math5-math6-math7-math8"><strong>The Special Orthogonal Groups over the Complexes: $\mathrm{SO}(1,\mathbb{C})$, $\mathrm{SO}(2,\mathbb{C})$, $\mathrm{SO}(3,\mathbb{C})$, $\mathrm{SO}(4,\mathbb{C})$, $\mathrm{SO}(5,\mathbb{C})$, $\mathrm{SO}(6,\mathbb{C})$, $\mathrm{SO}(7,\mathbb{C})$, $\mathrm{SO}(8,\mathbb{C})$, $\mathrm{SO}(n,\mathbb{C})$</strong></h1>
 <h2 id="the-plan">The Plan</h2>
 <p><strong>The same equation over another field.</strong> The group is cut by $A^{\mathsf T}A=\mathrm I$ with $\det A=1$, but now the entries are complex numbers. The equation is unchanged; everything that follows from <em>compactness</em> is gone, and everything that follows from <em>polynomial algebra over an algebraically closed field</em> is stronger.</p>
 <p><strong>The four questions survive and one of them changes its answer qualitatively.</strong> The dimension doubles. The centre and the rank are unchanged. The conjugacy classes become continuous families of parameters that can be arbitrary complex numbers, so the "angles" are no longer angles. The topology does not change at all, for a reason that this article proves: the complex group deformation-retracts onto the real one.</p>
 <p><strong>The two structural surprises.</strong> First, $\mathrm{SO}(2,\mathbb{C})$ is not a circle but the multiplicative group $\mathbb{C}^{\times}$, so the two-dimensional rung is already non-compact and already has nontrivial nilpotent-free algebra. Second, and much more important, the Lie algebra now contains <strong>nilpotent elements</strong>, which the real algebra cannot have. The exponential therefore has unipotent images, and the group acquires a whole unipotent geometry that the compact group lacks.</p>
-<p><strong>The small ladder over $\mathbb{C}$ in one line each.</strong> $\mathrm{SO}(1,\mathbb{C})$ is trivial; $\mathrm{SO}(2,\mathbb{C})\cong\mathbb{C}^{\times}$; $\mathrm{SO}(3,\mathbb{C})\cong\mathrm{PSL}_2(\mathbb{C})$; $\mathrm{SO}(4,\mathbb{C})\cong(\mathrm{SL}_2(\mathbb{C})\times\mathrm{SL}_2(\mathbb{C}))/\{\pm1\}$; and $\mathrm{SO}(n,\mathbb{C})$ is simple for $n\ge3$ except at $n=4$, exactly as over $\mathbb{R}$.</p>
+<p><strong>The small ladder over $\mathbb{C}$ in one line each.</strong> $\mathrm{SO}(1,\mathbb{C})$ is trivial; $\mathrm{SO}(2,\mathbb{C})\cong\mathbb{C}^{\times}$; $\mathrm{SO}(3,\mathbb{C})\cong\mathrm{PSL}_2(\mathbb{C})$; $\mathrm{SO}(4,\mathbb{C})\cong(\mathrm{SL}_2(\mathbb{C})\times\mathrm{SL}_2(\mathbb{C}))/\{\pm1\}$; and $\mathrm{SO}(n,\mathbb{C})$ is simple for $n\ge3$ except at $n=4$, exactly as over $\mathbb{R}$. The upper rungs are where the names run out: $\mathrm{SO}(5,\mathbb{C})$ is $\mathrm{Sp}_4(\mathbb{C})$ up to its centre, $\mathrm{SO}(6,\mathbb{C})$ is $\mathrm{PSL}_4(\mathbb{C})$, $\mathrm{SO}(7,\mathbb{C})$ has no second name, and $\mathrm{SO}(8,\mathbb{C})$ has triality.</p>
 <p><strong>What is proved and what is quoted.</strong> The parametrisations of the first four rungs, the pairing of the spectrum under inversion, the existence of nilpotents at $n=3$ and $n=4$, the surjectivity of the exponential, the identity $\mathrm{SO}(n,\mathbb{C})\cap\mathrm{SU}(n)=\mathrm{SO}(n,\mathbb{R})$ and the Cartan decomposition are proved or recomputed in the closing verification. The classification of nilpotent orbits and the finer conjugacy theory are quoted from the standard literature and marked as such.</p>
 <h2 id="the-shift-from-the-reals-to-the-complexes">The Shift from the Reals to the Complexes</h2>
 <h3 id="the-two-products-split">The Two Products Split</h3>
@@ -139,7 +139,7 @@ $$</p>
 $$</p>
 <p>with the compact one at $q=0$ and the split one at $p=q$ (or $(p,q)=(r,r+1)$ when $n$ is odd), and up to isomorphism there are $\lfloor n/2\rfloor+1$ of them. The verification confirms the count by listing the signatures at the first rungs: two at $n=2$ and $n=3$, three at $n=4$, and the general formula thereafter.</p>
 <p>The complex group does not see the signature, and this is the exact sense in which the passage from $\mathbb{R}$ to $\mathbb{C}$ forgets the metric: the signature is extra data, a real structure on the complex algebra, and the complex group is the union of all its real forms.</p>
-<h2 id="the-dimension-ladder-over-math119">The Dimension Ladder over $\mathbb{C}$</h2>
+<h2 id="the-dimension-ladder-over-math129">The Dimension Ladder over $\mathbb{C}$</h2>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -194,6 +194,20 @@ $$</p>
 <td>$D_3\cong A_3$</td>
 </tr>
 <tr>
+<td>$7$</td>
+<td>$21$</td>
+<td>$42$</td>
+<td>simple, no second name</td>
+<td>the first non-simply-laced rung</td>
+</tr>
+<tr>
+<td>$8$</td>
+<td>$28$</td>
+<td>$56$</td>
+<td>simple, triality</td>
+<td>five real forms</td>
+</tr>
+<tr>
 <td>$n$</td>
 <td>$n(n-1)/2$</td>
 <td>$n(n-1)$</td>
@@ -202,13 +216,13 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<h2 id="math151-the-trivial-group">$\mathrm{SO}(1,\mathbb{C})$: The Trivial Group</h2>
+<h2 id="math167-the-trivial-group">$\mathrm{SO}(1,\mathbb{C})$: The Trivial Group</h2>
 <p>The equation $a^{2}=1$ over $\mathbb{C}$ has the two solutions $\pm1$, so $\mathrm{O}(1,\mathbb{C})=\{\pm1\}$ and the determinant condition leaves</p>
 <p>$$
 \mathrm{SO}(1,\mathbb{C})=\{(1)\}.
 $$</p>
 <p>Everything is empty in the same way as over $\mathbb{R}$: dimension zero, one class, one point, trivial topology, exponential a bijection from the zero algebra. The rung is recorded only because the ladder must start somewhere and because the complex and real ladders agree exactly here.</p>
-<h2 id="math158-the-multiplicative-group">$\mathrm{SO}(2,\mathbb{C})$: The Multiplicative Group</h2>
+<h2 id="math174-the-multiplicative-group">$\mathrm{SO}(2,\mathbb{C})$: The Multiplicative Group</h2>
 <h3 id="the-parametrisation-by-a-nonzero-complex-number">The Parametrisation by a Nonzero Complex Number</h3>
 <p>The condition $a^{2}+b^{2}=1$ has the rational parametrisation by $z\in\mathbb{C}^{\times}$:</p>
 <p>$$
@@ -270,8 +284,8 @@ $$</p>
 <p><strong>No axis, no angle classes, no cone of classes.</strong> The group is abelian, so the classification is trivial and the interesting structure is the field.</p>
 <p><strong>No nilpotent.</strong> The algebra is one-dimensional, spanned by $J$ with $J^{2}=-\mathrm I$, so every element is semisimple. The first nilpotent appears at $n=3$.</p>
 <p><strong>No simple algebra.</strong> A line is abelian. The first simple case is $n=3$.</p>
-<h2 id="math258-the-projective-linear-group">$\mathrm{SO}(3,\mathbb{C})$: The Projective Linear Group</h2>
-<h3 id="the-algebra-is-math259">The Algebra Is $\mathfrak{sl}_2(\mathbb{C})$</h3>
+<h2 id="math274-the-projective-linear-group">$\mathrm{SO}(3,\mathbb{C})$: The Projective Linear Group</h2>
+<h3 id="the-algebra-is-math275">The Algebra Is $\mathfrak{sl}_2(\mathbb{C})$</h3>
 <p>The algebra $\mathfrak{so}(3,\mathbb{C})$ has dimension three, and it is isomorphic to $\mathfrak{sl}_2(\mathbb{C})$, the traceless $2\times2$ complex matrices. Two explicit isomorphisms are worth recording, because the article uses both.</p>
 <p><strong>The Pauli basis.</strong> With</p>
 <p>$$
@@ -321,8 +335,8 @@ $$</p>
 <p>with eigenvalues $e^{\pm i\theta_k}$. The pairing $\lambda\leftrightarrow\lambda^{-1}$ is automatic. Two semisimple elements with the same characteristic polynomial are conjugate, so the polynomial is the complete invariant, and this is the standard statement for the classical groups over an algebraically closed field; the verification confirms the invariant property (the spectrum is closed under inversion) without claiming the converse.</p>
 <p><strong>Three shapes at $n=3$.</strong> A semisimple element with eigenvalues $1,e^{\pm i\theta}$; the identity; and the unipotent $\exp(N)$ above, which is neither semisimple nor the identity. The last is the new shape over $\mathbb{C}$.</p>
 <p><strong>Jordan blocks pair.</strong> A Jordan block of size $k$ with eigenvalue $\lambda$ forces a block of the same size with eigenvalue $1/\lambda$, because the transpose-inverse identity exchanges the two. So the Jordan type is symmetric under inversion.</p>
-<h2 id="math318-the-split">$\mathrm{SO}(4,\mathbb{C})$: The Split</h2>
-<h3 id="the-two-ideals-over-math319">The Two Ideals over $\mathbb{C}$</h3>
+<h2 id="math334-the-split">$\mathrm{SO}(4,\mathbb{C})$: The Split</h2>
+<h3 id="the-two-ideals-over-math335">The Two Ideals over $\mathbb{C}$</h3>
 <p>The Hodge star of the real article is a real operator, and it complexifies: on $\Lambda^{2}\mathbb{C}^{4}$ it has the eigenvalues $\pm1$ with multiplicity three each, and the two eigenspaces are complex three-dimensional ideals. So</p>
 <p>$$
 \mathfrak{so}(4,\mathbb{C})=\mathfrak{so}(3,\mathbb{C})\oplus\mathfrak{so}(3,\mathbb{C}),
@@ -379,7 +393,113 @@ N=\begin{pmatrix}
 \end{pmatrix},
 $$</p>
 <p>which is unipotent and lies in the group. Over $\mathbb{R}$ there is no such element, because there are no isotropic vectors; the existence of an isotropic vector is exactly the existence of a nilpotent, and over $\mathbb{C}$ the isotropic cone of an indefinite form is a genuine algebraic variety of positive dimension.</p>
-<h2 id="math342-the-general-rung">$\mathrm{SO}(n,\mathbb{C})$: The General Rung</h2>
+<h2 id="math358-two-free-parameters-and-a-symplectic-name">$\mathrm{SO}(5,\mathbb{C})$: Two Free Parameters and a Symplectic Name</h2>
+<h3 id="the-normal-form-and-the-torus">The Normal Form and the Torus</h3>
+<p>At $n=5$ the complex dimension is $10$ and the rank is $2$. The spectrum of a generic element is a pair of reciprocal pairs together with a fixed eigenvalue $1$:</p>
+<p>$$
+\operatorname{spec}A=\{z_1,z_1^{-1},z_2,z_2^{-1},1\},
+\qquad
+z_1,z_2\in\mathbb{C}^{\times},
+$$</p>
+<p>and the maximal torus is $(\mathbb{C}^{\times})^{2}$. The angles of the real rung are gone, and with them the ordering: there is no interval $[0,\pi]$ over $\mathbb{C}$, no chamber and no trace classification. The class is the unordered set $\{z_1^{\pm1},z_2^{\pm1}\}$, and the Weyl group $W(B_2)$ acts on it by the signed permutations of the two parameters.</p>
+<p><strong>Where the unipotent part enters.</strong> An element with a repeated eigenvalue is not necessarily unipotent, but an element whose eigenvalue $1$ or $-1$ has a Jordan block of size two is. Such a block exists exactly when an isotropic vector is available, which is the same statement as over $\mathbb{R}$ once the field is complex: the equation $Av=v$ with $v$ isotropic has solutions that cannot be diagonalised. So the rung carries nilpotents of index two, and the exponential sends them to unipotents.</p>
+<h3 id="the-isomorphism-math374">The Isomorphism $\mathfrak{so}(5,\mathbb{C})\cong\mathfrak{sp}_4(\mathbb{C})$</h3>
+<p>The identity $B_2\cong C_2$ survives the change of field, and it is exact at the level of algebras:</p>
+<p>$$
+\mathfrak{so}(5,\mathbb{C})\cong\mathfrak{sp}_4(\mathbb{C}),
+\qquad
+\mathrm{Spin}(5,\mathbb{C})=\mathrm{Sp}_4(\mathbb{C}),
+\qquad
+\mathrm{SO}(5,\mathbb{C})=\mathrm{Sp}_4(\mathbb{C})/\{\pm\mathrm I\}.
+$$</p>
+<p><strong>Why the identity holds, and why it stops.</strong> In rank two each root system has four long and four short roots: $B_2$ has four of squared length $1$ and four of squared length $2$, and $C_2$ has four of squared length $2$ and four of squared length $4$. A reflection in the line of the short roots rescales by $\sqrt2$ and exchanges the two orbits, so the two systems are isometric. In rank three the counts are $12$ long against $6$ short in $B_3$ and $6$ long against $12$ short in $C_3$, the sizes no longer match, and no rescaling can repair it. The verification enumerates the roots and prints the four counts. So the accident at five is an accident of rank two, and §<em>$\mathrm{SO}(7,\mathbb{C})$</em> collects the failure.</p>
+<h3 id="the-three-real-forms">The Three Real Forms</h3>
+<p>$$
+\mathfrak{so}(5), \qquad \mathfrak{so}(4,1), \qquad \mathfrak{so}(3,2),
+$$</p>
+<p>with maximal compacts $\mathrm{SO}(5)$, $\mathrm{SO}(4)\times\mathrm{SO}(1)$ and $\mathrm{SO}(3)\times\mathrm{SO}(2)$, of dimensions $10$, $6$ and $4$. Only the first is compact. The other two are the isometry algebras of the four-dimensional de Sitter and anti-de Sitter spaces, and both are ten-dimensional, which is the dimension of the rung.</p>
+<h3 id="what-the-rung-adds">What the Rung Adds</h3>
+<p><strong>The first rank-two complex rung.</strong> Two free complex parameters, so the class space is two-dimensional over $\mathbb{C}$ and has no chamber structure.</p>
+<p><strong>The first rung whose compact form is a cover of a symplectic group.</strong> The compact form of $\mathrm{Sp}_4(\mathbb{C})$ is $\mathrm{USp}(4)$, which is $\mathrm{Spin}(5)$ and not $\mathrm{SO}(5)$.</p>
+<p><strong>Nilpotents of index two, and the split real form $\mathfrak{so}(3,2)$ that carries them as a real phenomenon.</strong> The compact rung has none; the passage to $\mathbb{C}$ makes them algebraic rather than exceptional.</p>
+<h2 id="math405-the-last-linear-isomorphism">$\mathrm{SO}(6,\mathbb{C})$: The Last Linear Isomorphism</h2>
+<h3 id="the-normal-form">The Normal Form</h3>
+<p>At $n=6$ the complex dimension is $15$ and the rank is $3$. The spectrum is three reciprocal pairs $\{z_1^{\pm1},z_2^{\pm1},z_3^{\pm1}\}$ and the torus is $(\mathbb{C}^{\times})^{3}$. The Weyl group is $W(D_3)\cong S_4$, acting by permutations and an even number of inversions of the three parameters.</p>
+<h3 id="math412-and-the-six-is-a-bivector">$\mathfrak{so}(6,\mathbb{C})\cong\mathfrak{sl}_4(\mathbb{C})$, and the Six Is a Bivector</h3>
+<p>The isomorphism $D_3\cong A_3$ is the last one on the ladder, and over $\mathbb{C}$ it is cleaner than over $\mathbb{R}$ because no covering subtlety is left:</p>
+<p>$$
+\mathfrak{so}(6,\mathbb{C})\cong\mathfrak{sl}_4(\mathbb{C}),
+\qquad
+\mathrm{Spin}(6,\mathbb{C})=\mathrm{SL}_4(\mathbb{C}),
+\qquad
+\mathrm{SO}(6,\mathbb{C})=\mathrm{PSL}_4(\mathbb{C}).
+$$</p>
+<p><strong>The six-dimensional representation, written out.</strong> This is the one rung where the vector representation has a linear description. On $V=\mathbb{C}^{4}$ put the symmetric form on the bivectors</p>
+<p>$$
+\langle u\wedge v,\,x\wedge y\rangle=\langle u,x\rangle\langle v,y\rangle-\langle u,y\rangle\langle v,x\rangle .
+$$</p>
+<p>It is nondegenerate on $\Lambda^{2}V$, of dimension $6$, and a matrix $A\in\mathrm{SL}_4(\mathbb{C})$ acts on it by $A(u\wedge v)=Au\wedge Av$, which scales the form by $\det A=1$. So the action is orthogonal, and the map $\mathrm{SL}_4(\mathbb{C})\to\mathrm{SO}(\Lambda^{2}V)=\mathrm{SO}(6,\mathbb{C})$ is a homomorphism with kernel $\{\pm\mathrm I\}$, which is the covering. The six of the orthogonal rung is the bivector of the linear rung, and that is the whole content of $D_3\cong A_3$.</p>
+<h3 id="the-four-real-forms">The Four Real Forms</h3>
+<p>$$
+\mathfrak{so}(6), \qquad \mathfrak{so}(5,1), \qquad \mathfrak{so}(4,2), \qquad \mathfrak{so}(3,3),
+$$</p>
+<p>with maximal compacts of dimensions $15$, $10$, $7$ and $6$, namely $\mathrm{SO}(6)$, $\mathrm{SO}(5)$, $\mathrm{SO}(4)\times\mathrm{SO}(2)$ and $\mathrm{SO}(3)\times\mathrm{SO}(3)$. The split form is $\mathfrak{so}(3,3)\cong\mathfrak{sl}_4(\mathbb{R})$, and $\mathfrak{so}(4,2)$ is the conformal algebra of four-dimensional Minkowski space.</p>
+<h3 id="what-the-rung-adds_1">What the Rung Adds</h3>
+<p><strong>The last rung with a second name.</strong> From $n=7$ on no classical algebra of another family has the dimension of $\mathfrak{so}(n,\mathbb{C})$, because $22$ and $29$ are not of the form $m^{2}-1$ and the coincidences of the low ladder are exhausted.</p>
+<p><strong>A real form that is the split form of the linear rung.</strong> $\mathfrak{so}(3,3)\cong\mathfrak{sl}_4(\mathbb{R})$, so the isomorphism $D_3\cong A_3$ descends to the split real forms on both sides. The compact form $\mathfrak{so}(6)$ has no such partner: $\mathfrak{su}(4)$ is a different real form of the same complex algebra, and it is not the compact form of the linear group.</p>
+<h2 id="math447-the-arrow-that-separates-two-diagrams">$\mathrm{SO}(7,\mathbb{C})$: The Arrow That Separates Two Diagrams</h2>
+<h3 id="the-normal-form_1">The Normal Form</h3>
+<p>At $n=7$ the complex dimension is $21$ and the rank is $3$. The spectrum is three reciprocal pairs and a fixed eigenvalue $1$, and the torus is $(\mathbb{C}^{\times})^{3}$.</p>
+<h3 id="math453-is-not-math454">$\mathfrak{so}(7,\mathbb{C})$ Is Not $\mathfrak{sp}_6(\mathbb{C})$</h3>
+<p>Two simple algebras of dimension $21$, rank $3$ and eighteen roots exist, and they differ. The count of roots does not separate them; the lengths do.</p>
+<p><strong>The proof by lengths.</strong> In $B_3$ the roots of squared length $2$ are the twelve $\pm e_i\pm e_j$ and the roots of squared length $1$ are the six $\pm e_i$. In $C_3$ the roots of squared length $4$ are the six $\pm2e_i$ and the roots of squared length $2$ are the twelve $\pm e_i\pm e_j$. An isometry of root systems multiplies all squared lengths by one common factor, so it preserves the number of long roots, and that number is $12$ on one side and $6$ on the other. The verification enumerates both systems and prints the four counts.</p>
+<p><strong>Why rank two was different.</strong> The same computation at rank two gives four and four on both sides, which is exactly the coincidence that makes $B_2\cong C_2$ possible. So the passing from five to seven is the passing from an accident to a genuine asymmetry, and the asymmetry is visible in one integer.</p>
+<h3 id="the-complex-math470">The Complex $G_2$</h3>
+<p>The stabiliser of the complex three-form is the complex exceptional group:</p>
+<p>$$
+G_2(\mathbb{C})=\operatorname{Stab}_{\mathrm{GL}_7(\mathbb{C})}(\varphi),
+\qquad
+\dim_{\mathbb{C}}G_2(\mathbb{C})=14,
+$$</p>
+<p>with the same $\varphi$ as in the real article, read with complex coefficients. The verification of that article solves the Leibniz system in $49$ unknowns and finds rank $35$, so the dimension is $14$; complexification changes the coefficients and not the rank of an integral system.</p>
+<p><strong>The quotient.</strong> The stabiliser of an isotropic line in $\mathbb{C}^{7}$ is a maximal parabolic of $G_2(\mathbb{C})$, of dimension $8$, and the quotient is the smooth quadric</p>
+<p>$$
+Q^{6}\subset\mathbb{CP}^{7},
+\qquad
+\dim=14-8=6 .
+$$</p>
+<p>The compact real form of the same quotient is $S^{6}=G_{2}/\mathrm{SU}(3)$, the sphere of the real article. So the rung carries the exceptional group over both fields, and the quotient changes from a sphere to a quadric.</p>
+<h3 id="the-four-real-forms_1">The Four Real Forms</h3>
+<p>$$
+\mathfrak{so}(7), \qquad \mathfrak{so}(6,1), \qquad \mathfrak{so}(5,2), \qquad \mathfrak{so}(4,3),
+$$</p>
+<p>with maximal compacts of dimensions $21$, $15$, $11$ and $9$. The split form is $\mathfrak{so}(4,3)$, and $\mathfrak{so}(6,1)$ is the isometry algebra of six-dimensional de Sitter space.</p>
+<h3 id="what-the-rung-adds_2">What the Rung Adds</h3>
+<p><strong>The first rung with no second name.</strong> The complex algebra is simple, of type $B_3$, and nothing else in the classical list has that shape. The reader who expects an isomorphism at every rung has to stop here.</p>
+<p><strong>A second exceptional group in the article.</strong> $G_2(\mathbb{C})$ appears as a stabiliser, not as a member of the ladder, and the distinction is the one recorded in the real companion.</p>
+<h2 id="math490-triality-over-an-algebraically-closed-field">$\mathrm{SO}(8,\mathbb{C})$: Triality over an Algebraically Closed Field</h2>
+<h3 id="the-normal-form_2">The Normal Form</h3>
+<p>At $n=8$ the complex dimension is $28$ and the rank is $4$, and the spectrum is four reciprocal pairs. The Weyl group is $W(D_4)$ of order $192$, the roots number $24$, and all of them have the same length.</p>
+<h3 id="triality">Triality</h3>
+<p>$$
+\operatorname{Out}(\mathfrak{so}(8,\mathbb{C}))=S_3,
+\qquad
+\operatorname{Out}(\mathrm{Spin}(8,\mathbb{C}))=S_3,
+\qquad
+\operatorname{Out}(\mathrm{SO}(8,\mathbb{C}))=\mathbb{Z}/2 .
+$$</p>
+<p><strong>The three eights.</strong> The complex spinor of the rung has dimension $2^{4}=16$, chirality halves it, and the two halves together with the vector representation give three inequivalent irreducible representations of dimension $8$. Triality permutes them.</p>
+<p><strong>The mechanism is the same as over $\mathbb{R}$, and cleaner.</strong> The centre of $\mathrm{Spin}(8,\mathbb{C})$ is $\mathbb{Z}/2\times\mathbb{Z}/2$, the automorphism group of that centre is $\mathrm{GL}(2,\mathbb{F}_2)=S_3$, and triality is that action on the three nonzero central elements. The kernel of the covering is one of the three, and an automorphism descends to $\mathrm{SO}(8,\mathbb{C})$ exactly when it fixes it, which is a stabiliser of order two. So the outer automorphism group drops from $S_3$ to $\mathbb{Z}/2$ on passing to the quotient, exactly as over $\mathbb{R}$.</p>
+<p><strong>What the field does change.</strong> Over $\mathbb{R}$ the three eights are all real, which is itself an accident of the real classification of Clifford modules; over $\mathbb{C}$ there is no reality condition to check, so the three representations are simply three complex vector spaces of dimension eight and the symmetry is transparent. Triality is a property of the diagram $D_4$, and the diagram does not know the field.</p>
+<h3 id="the-five-real-forms">The Five Real Forms</h3>
+<p>$$
+\mathfrak{so}(8), \quad \mathfrak{so}(7,1), \quad \mathfrak{so}(6,2), \quad \mathfrak{so}(5,3), \quad \mathfrak{so}(4,4),
+$$</p>
+<p>with maximal compacts $\mathrm{SO}(8)$, $\mathrm{SO}(7)$, $\mathrm{SO}(6)\times\mathrm{SO}(2)$, $\mathrm{SO}(5)\times\mathrm{SO}(3)$ and $\mathrm{SO}(4)\times\mathrm{SO}(4)$, of dimensions $28$, $21$, $16$, $13$ and $12$. This is the first rung with five real forms, and $\mathfrak{so}(4,4)$ is the split form, of index the rank $4$.</p>
+<h3 id="what-the-rung-adds_3">What the Rung Adds</h3>
+<p><strong>The only order-three symmetry of the ladder.</strong> No other diagram on the ladder has a symmetry group of order three, and no other rung has an outer automorphism that permutes a vector representation with a spin representation.</p>
+<p><strong>The largest number of real forms.</strong> Five signatures, and only one of them compact. From here on the count grows by one every two steps, by $\lfloor n/2\rfloor+1$.</p>
+<h2 id="math525-the-general-rung">$\mathrm{SO}(n,\mathbb{C})$: The General Rung</h2>
 <h3 id="rank-torus-and-weyl-group">Rank, Torus and Weyl Group</h3>
 <p>The rank is the same as over $\mathbb{R}$,</p>
 <p>$$
@@ -443,7 +563,7 @@ $$</p>
 \mathrm{SO}(n,\mathbb{R})\ \text{has maximal compact}\ \mathrm{SO}(n).
 $$</p>
 <p>So the complex group contains all the signatures, and reading the maximal compact of a real subgroup recovers the signature.</p>
-<h3 id="math428">$\mathrm{SO}(n,\mathbb{C})\cap\mathrm{SU}(n)=\mathrm{SO}(n,\mathbb{R})$</h3>
+<h3 id="math611">$\mathrm{SO}(n,\mathbb{C})\cap\mathrm{SU}(n)=\mathrm{SO}(n,\mathbb{R})$</h3>
 <p>This identity, proved in the first section, is the cleanest statement of the relation between the two complex groups: the compact real form of the complex orthogonal group is the real orthogonal group, and it sits inside the unitary group as the real locus. The verification confirms it on one hundred samples with zero mismatches.</p>
 <h3 id="the-symmetric-space">The Symmetric Space</h3>
 <p>The quotient $\mathrm{SO}(n,\mathbb{C})/\mathrm{SO}(n,\mathbb{R})$ is a symmetric space of dimension $n(n-1)/2$ over $\mathbb{R}$, namely the space of the factors $\exp(iB)$ above: Hermitian positive definite matrices $P$ with $\bar PP=\mathrm I$ and $\det P=1$. At $n=2$ it is one-dimensional and can be read explicitly from the parametrisation</p>
@@ -524,11 +644,86 @@ $$</p>
 </tbody>
 </table></div>
 <h2 id="the-correspondences">The Correspondences</h2>
-<h3 id="the-chain-math457-over-math458">The Chain $1\to2\to3\to4\to n$ over $\mathbb{C}$</h3>
+<h3 id="the-chain-math640-over-math641">The Chain $1\to2\to3\to4\to n$ over $\mathbb{C}$</h3>
 <p><strong>The chain of the field.</strong> At $n=1$ the group is trivial. At $n=2$ it is the multiplicative group of the field, so the group and the field are the same object up to a change of coordinates. At $n=3$ the group is the projective linear group of the field, so the group is the field's own projective geometry. At $n=4$ the group is a quotient of a product of two copies of the rank-one group. From $n=5$ on the pattern stops: there is no field model.</p>
 <p><strong>The chain of the nilpotent.</strong> At $n=1$ and $n=2$ there is none. At $n=3$ the first, of index three, built from one isotropic vector. At $n=4$ the first of index two, built from two isotropic vectors. In general the smallest nonzero nilpotent has index two as soon as a totally isotropic plane exists, which is $n\ge4$.</p>
 <p><strong>The chain of the ideal.</strong> At $n=2$ the algebra is abelian. At $n=3$ it is simple. At $n=4$ it splits. From $n=5$ it is simple again. This is identical to the real chain, because the split is a complex phenomenon inherited from the real one.</p>
 <p><strong>The chain of the cover.</strong> At $n=2$ the fundamental group is $\mathbb{Z}$, at $n=3$ it is $\mathbb{Z}/2$, and the covering group is $\mathrm{Spin}(n,\mathbb{C})$, which is $\mathrm{SL}_2(\mathbb{C})$ at $n=3$, $\mathrm{SL}_2\times\mathrm{SL}_2$ at $n=4$, and $\mathrm{SL}_4(\mathbb{C})$ at $n=6$.</p>
+<h3 id="the-dictionary-with-math667">The Dictionary with $\mathrm{SL}_n(\mathbb{C})$</h3>
+<p><strong>Every orthogonal rung sits inside the linear rung of the same size.</strong> The inclusion is $\mathrm{SO}(n,\mathbb{C})\subset\mathrm{SL}_n(\mathbb{C})$, and the quotient is the space of nondegenerate symmetric forms up to a scalar, which is the space of smooth quadrics in $\mathbb{CP}^{n-1}$:</p>
+<p>$$
+\dim\mathrm{SL}_n(\mathbb{C})/\mathrm{SO}(n,\mathbb{C})
+=n^{2}-1-\frac{n(n-1)}{2}
+=\frac{(n-1)(n+2)}{2}.
+$$</p>
+<p>The verification prints $2,5,9,14,20,27,35$ at $n=2,\dots,8$ against the formula.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$n$</th>
+<th>$\mathrm{SO}(n,\mathbb{C})$</th>
+<th>the linear partner</th>
+<th>the warrant</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1$</td>
+<td>trivial</td>
+<td>$\mathrm{SL}_1$, trivial</td>
+<td>both are the one-element group</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>$\mathbb{C}^{\times}$</td>
+<td>a maximal torus of $\mathrm{SL}_2(\mathbb{C})$</td>
+<td>the torus preserving $x^{2}+y^{2}$</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$\mathrm{PSL}_2(\mathbb{C})$</td>
+<td>$\mathrm{SL}_2(\mathbb{C})$, the cover</td>
+<td>$\mathfrak{so}(3,\mathbb{C})\cong\mathfrak{sl}_2(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$(\mathrm{SL}_2\times\mathrm{SL}_2)/\{\pm1\}$</td>
+<td>$\mathrm{SL}_2(\mathbb{C})\times\mathrm{SL}_2(\mathbb{C})$</td>
+<td>the two isoclinic families</td>
+</tr>
+<tr>
+<td>$5$</td>
+<td>$\mathrm{Sp}_4(\mathbb{C})/\{\pm\mathrm I\}$</td>
+<td>$\mathrm{Sp}_4(\mathbb{C})$, symplectic</td>
+<td>$B_2\cong C_2$</td>
+</tr>
+<tr>
+<td>$6$</td>
+<td>$\mathrm{PSL}_4(\mathbb{C})$</td>
+<td>$\mathrm{SL}_4(\mathbb{C})$, the cover</td>
+<td>$D_3\cong A_3$</td>
+</tr>
+<tr>
+<td>$7$</td>
+<td>—</td>
+<td>none</td>
+<td>$B_3$ has no linear name</td>
+</tr>
+<tr>
+<td>$8$</td>
+<td>—</td>
+<td>none</td>
+<td>$D_4$ has no linear name</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The four small rungs over $\mathbb{C}$.</strong> Each is one line of the inclusion above read at its own size.</p>
+<p><strong>$n=1$.</strong> Both groups are trivial. Nothing to say, and the base case is recorded for the same reason as over $\mathbb{R}$.</p>
+<p><strong>$n=2$.</strong> $\mathrm{SO}(2,\mathbb{C})$ is a maximal torus of $\mathrm{SL}_2(\mathbb{C})$, the one that preserves the form $x^{2}+y^{2}$. The diagonal torus preserves $2xy$ instead, and every maximal torus of a group of rank one is conjugate to every other, so the two are the same object in two bases. The quotient has dimension $2$, which is the dimension of the space of nondegenerate forms on $\mathbb{C}^{2}$ up to a scalar, as the formula requires.</p>
+<p><strong>$n=3$.</strong> $\mathrm{SO}(3,\mathbb{C})=\mathrm{PSL}_2(\mathbb{C})=\mathrm{PGL}_2(\mathbb{C})$, so the rung is the projective linear group of the plane. This is the complex form of the identity $\mathrm{SO}(3)=\mathrm{PU}(2)$ of the real article, and the algebra is the same $\mathfrak{sl}_2$ in both readings. The quotient $\mathrm{SL}_3/\mathrm{SO}_3$ has dimension $5$.</p>
+<p><strong>$n=4$.</strong> $\mathrm{SO}(4,\mathbb{C})=(\mathrm{SL}_2(\mathbb{C})\times\mathrm{SL}_2(\mathbb{C}))/\{\pm1\}$, and each of the two isoclinic families is a copy of $\mathrm{SL}_2(\mathbb{C})=\mathrm{Spin}(3,\mathbb{C})$. The maximal torus is $\mathrm{SO}(2,\mathbb{C})\times\mathrm{SO}(2,\mathbb{C})$, of rank two, and it is the diagonal of the two families. The quotient has dimension $9$.</p>
+<p><strong>$n=5$ and $n=6$.</strong> At five the partner is symplectic and not linear: $\mathrm{Spin}(5,\mathbb{C})=\mathrm{Sp}_4(\mathbb{C})$, and no $\mathrm{SL}_m(\mathbb{C})$ has dimension $10$ with $m^{2}-1=10$. At six the partner is linear again, $\mathrm{Spin}(6,\mathbb{C})=\mathrm{SL}_4(\mathbb{C})$, and this is the only rung where the vector representation of the orthogonal group is a functor of the linear one, namely the bivector: the six is $\Lambda^{2}\mathbb{C}^{4}$.</p>
+<p><strong>$n=7$ and $n=8$.</strong> No partner at all. The equation $m^{2}-1=21$ has no integer solution, and neither has $m^{2}-1=28$.</p>
 <h3 id="the-dictionary">The Dictionary</h3>
 <div class="table-scroll"><table>
 <thead>
@@ -578,6 +773,8 @@ $$</p>
 <p><strong>The small rungs are field models.</strong> $\mathrm{SO}(1,\mathbb{C})$ is trivial, $\mathrm{SO}(2,\mathbb{C})$ is $\mathbb{C}^{\times}$, $\mathrm{SO}(3,\mathbb{C})$ is $\mathrm{PSL}_2(\mathbb{C})$, $\mathrm{SO}(4,\mathbb{C})$ is a quotient of $\mathrm{SL}_2\times\mathrm{SL}_2$.</p>
 <p><strong>The gain over $\mathbb{R}$ is the nilpotent.</strong> Isotropy produces nilpotents, nilpotents produce unipotents, and the unipotent part is the whole of the new geometry: the algebra is the same size but its orbit structure is richer by exactly the isotropic cone.</p>
 <p><strong>The gain over $\mathbb{C}$ is the real form.</strong> The complex group forgets the signature; the real forms are the signatures, and $\mathrm{SO}(n,\mathbb{R})$ is the compact one, cut out by the unitary condition inside the complex group.</p>
+<p><strong>The upper rungs are where the names run out.</strong> $\mathrm{SO}(5,\mathbb{C})$ is $\mathrm{Sp}_4(\mathbb{C})$ modulo its centre, and the coincidence is a property of rank two: in rank two the two orbits of roots have the same size, and in rank three they do not, so $\mathrm{SO}(7,\mathbb{C})$ is not $\mathrm{Sp}_6(\mathbb{C})$ although both have dimension $21$, rank $3$ and eighteen roots. $\mathrm{SO}(6,\mathbb{C})$ is $\mathrm{PSL}_4(\mathbb{C})$, with the six given by the bivector. $\mathrm{SO}(8,\mathbb{C})$ has triality, an outer automorphism of order three that permutes three eights and drops to $\mathbb{Z}/2$ on the quotient.</p>
+<p><strong>The real forms grow by one every two steps.</strong> Three at $n=5$, four at $n=6$ and $n=7$, five at $n=8$, by $\lfloor n/2\rfloor+1$. The split form is $\mathfrak{so}(3,2)$, $\mathfrak{so}(3,3)$, $\mathfrak{so}(4,3)$, $\mathfrak{so}(4,4)$, and at $n=6$ it is $\mathfrak{sl}_4(\mathbb{R})$, which is the isomorphism $D_3\cong A_3$ read on the split forms.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -622,6 +819,22 @@ $$</p>
 <tr>
 <td>$\mathfrak{so}(p,q)$</td>
 <td>the real forms</td>
+</tr>
+<tr>
+<td>$\mathrm{Sp}_4(\mathbb{C})$</td>
+<td>the second name of $\mathfrak{so}(5,\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$\mathrm{PSL}_m(\mathbb{C})$</td>
+<td>$\mathrm{SL}_m(\mathbb{C})/\{\pm\mathrm I\}$, the second name at $n=6$</td>
+</tr>
+<tr>
+<td>$G_2(\mathbb{C})$</td>
+<td>the stabiliser of the complex three-form</td>
+</tr>
+<tr>
+<td>$8_v$, $8_s$, $8_c$</td>
+<td>the three eights of triality at $n=8$</td>
 </tr>
 </tbody>
 </table></div>
@@ -756,6 +969,41 @@ $$</p>
 <td>root systems $B_2\cong C_2$, $D_3\cong A_3$</td>
 <td>matching of Gram matrices</td>
 <td>both matched; $D_4$ not $A_4$</td>
+</tr>
+<tr>
+<td>the root lengths of $B_2$ against $C_2$</td>
+<td>enumeration, four and four each</td>
+<td>$4+4$ against $4+4$</td>
+</tr>
+<tr>
+<td>the root lengths of $B_3$ against $C_3$</td>
+<td>enumeration</td>
+<td>$6+12$ against $6+12$, long roots $12$ against $6$</td>
+</tr>
+<tr>
+<td>the real forms at $n=5,\dots,8$</td>
+<td>signatures $p+q=n$ up to exchange</td>
+<td>$3,4,4,5$</td>
+</tr>
+<tr>
+<td>$\dim\mathrm{SL}_n(\mathbb{C})/\mathrm{SO}(n,\mathbb{C})$</td>
+<td>$(n-1)(n+2)/2$, $n=2,\dots,8$</td>
+<td>$2,5,9,14,20,27,35$</td>
+</tr>
+<tr>
+<td>the maximal compacts of the real forms</td>
+<td>$p(p-1)/2+q(q-1)/2$, $n=5,\dots,8$</td>
+<td>$10,6,4$; $15,10,7,6$; $21,15,11,9$; $28,21,16,13,12$</td>
+</tr>
+<tr>
+<td>$\dim_{\mathbb{C}}G_2(\mathbb{C})$</td>
+<td>the $105\times49$ Leibniz system</td>
+<td>rank $35$, dimension $14$</td>
+</tr>
+<tr>
+<td>the split forms</td>
+<td>$p+q=n$, $q=\lfloor n/2\rfloor$</td>
+<td>$\mathfrak{so}(3,2)$, $\mathfrak{so}(3,3)$, $\mathfrak{so}(4,3)$, $\mathfrak{so}(4,4)$</td>
 </tr>
 </tbody>
 </table></div>

@@ -71,7 +71,7 @@
         <h1 id="the-matrix-algebra-math0"><strong>The Matrix Algebra $M_6(\mathbb{C})$</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>$M_6(\mathbb{C})$ is the algebra of complex $6\times6$ matrices, of complex dimension $36$ and real dimension $72$. It has centre $\mathbb{C}I_6$, it is simple, its commutator subspace is the trace-zero hyperplane $\mathfrak{sl}_6$, and its unit group is $GL_6(\mathbb{C})$, of dimension $36$, with projective quotient $PGL_6(\mathbb{C})$, of dimension $35$.</p>
-<p>This article fixes the ambient algebra: the matrix units, the trace and the determinant, the centre, the simplicity, the commutator subalgebra, the real structure of Hermitian and skew-Hermitian parts, and the two-sided module structure. It is the foundation on which the frame of <em>The Frame, the Simple Nilpotents and the Gauge of $M_6(\mathbb{C})$</em> and the coordinates of <em>The Element, the Coordinates and the Trace of $M_6(\mathbb{C})$</em> are built.</p>
+<p>This article fixes the ambient algebra: the matrix units, the trace and the determinant, the centre, the simplicity, the commutator subalgebra, the real structure of Hermitian and anti-Hermitian parts, and the two-sided module structure. It is the foundation on which the frame of <em>The Frame, the Simple Nilpotents and the Gauge of $M_6(\mathbb{C})$</em> and the coordinates of <em>The Element, the Coordinates and the Trace of $M_6(\mathbb{C})$</em> are built.</p>
 <p>No form and no topology are used here. The positive definite trace form is <em>The Involution and the Hermitian Structure of $M_6(\mathbb{C})$</em>; the exponential and the Lie group are <em>The Exponential and the Lie Group of $M_6(\mathbb{C})$</em>; the modules are <em>The Modules and the Minimal Left Ideals of $M_6(\mathbb{C})$</em>.</p>
 <h2 id="the-algebra">The Algebra</h2>
 <h3 id="definition">Definition</h3>
@@ -171,19 +171,19 @@ $$</p>
 <h3 id="complex-and-real-dimensions">Complex and Real Dimensions</h3>
 <p><strong>Proposition.</strong> $M_6(\mathbb{C})$ has complex dimension $36$ and real dimension $72$. The real basis is $E_{ij}$ and $\mathrm iE_{ij}$, $1\le i,j\le6$.</p>
 <p><strong>Proof.</strong> The $36$ complex units are a complex basis; multiplying by $1$ and $\mathrm i$ gives $72$ real basis vectors.</p>
-<h3 id="hermitian-and-skew-hermitian-parts">Hermitian and Skew-Hermitian Parts</h3>
-<p><strong>Definition.</strong> The <strong>conjugate transpose</strong> of $A$ is $A^*=\bar A^{\mathsf T}$, with entries $(A^*)_{ij}=\overline{A_{ji}}$. An element is <strong>Hermitian</strong> if $A^*=A$, <strong>skew-Hermitian</strong> if $A^*=-A$, and <strong>$*$-unitary</strong> if $A^*A=I_6$.</p>
+<h3 id="hermitian-and-anti-hermitian-parts">Hermitian and Anti-Hermitian Parts</h3>
+<p><strong>Definition.</strong> The <strong>conjugate transpose</strong> of $A$ is $A^*=\bar A^{\mathsf T}$, with entries $(A^*)_{ij}=\overline{A_{ji}}$. An element is <strong>Hermitian</strong> if $A^*=A$, <strong>anti-Hermitian</strong> if $A^*=-A$, and <strong>$*$-unitary</strong> if $A^*A=I_6$.</p>
 <p><strong>Proposition.</strong> Every $A\in M_6(\mathbb{C})$ splits uniquely as</p>
 <p>$$
 A=\frac{A+A^*}{2}+\frac{A-A^*}{2},
 $$</p>
-<p>a Hermitian part plus a skew-Hermitian part. The real vector spaces</p>
+<p>a Hermitian part plus a anti-Hermitian part. The real vector spaces</p>
 <p>$$
 \mathfrak{u}(6)=\{A:A^*=-A\},\qquad
 \mathfrak{su}(6)=\{A\in\mathfrak{u}(6):\operatorname{tr}A=0\}
 $$</p>
 <p>have real dimensions $36$ and $35$.</p>
-<p><strong>Proof.</strong> The two parts are Hermitian and skew-Hermitian, and the sum is $A$; uniqueness follows by applying the conjugate transpose. A skew-Hermitian matrix has purely imaginary diagonal entries ($6$ real parameters) and arbitrary complex entries above the diagonal ($15$ complex $=30$ real parameters), so $\dim_{\mathbb{R}}\mathfrak{u}(6)=36$. The trace is a nonzero real-linear functional on $\mathfrak{u}(6)$ (with values in $\mathrm i\mathbb{R}$), so its kernel has real dimension $35$.</p>
+<p><strong>Proof.</strong> The two parts are Hermitian and anti-Hermitian, and the sum is $A$; uniqueness follows by applying the conjugate transpose. A anti-Hermitian matrix has purely imaginary diagonal entries ($6$ real parameters) and arbitrary complex entries above the diagonal ($15$ complex $=30$ real parameters), so $\dim_{\mathbb{R}}\mathfrak{u}(6)=36$. The trace is a nonzero real-linear functional on $\mathfrak{u}(6)$ (with values in $\mathrm i\mathbb{R}$), so its kernel has real dimension $35$.</p>
 <p><strong>Theorem (the complexification).</strong> As real vector spaces,</p>
 <p>$$
 M_6(\mathbb{C})=\mathfrak{u}(6)\oplus\mathrm i\,\mathfrak{u}(6)
@@ -374,7 +374,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathfrak{u}(6),\mathfrak{su}(6)$</td>
-<td>skew-Hermitian and trace-zero skew-Hermitian matrices</td>
+<td>anti-Hermitian and trace-zero anti-Hermitian matrices</td>
 </tr>
 <tr>
 <td>$\langle A,B\rangle=\operatorname{tr}(AB)$</td>

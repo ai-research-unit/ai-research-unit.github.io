@@ -74,7 +74,7 @@
 <p>$$
 A\longmapsto A^*=\overline{A}^{\mathsf T}
 $$</p>
-<p>is a conjugate-linear involution of $M_6(\mathbb{C})$. Its fixed points are the Hermitian matrices, its antiefixed points the skew-Hermitian ones, and its isometries the $*$-unitary matrices. The Hermitian form</p>
+<p>is a conjugate-linear involution of $M_6(\mathbb{C})$. Its fixed points are the Hermitian matrices, its antiefixed points the anti-Hermitian ones, and its isometries the $*$-unitary matrices. The Hermitian form</p>
 <p>$$
 \langle A,B\rangle=\operatorname{tr}(A^*B)
 $$</p>
@@ -82,7 +82,7 @@ $$</p>
 <p>$$
 \langle A\rangle_*=\operatorname{tr}(A^*A)=\sum_{i,j}\lvert a_{ij}\rvert^2 .
 $$</p>
-<p>The skew-Hermitian matrices form the real Lie algebra $\mathfrak{u}(6)$ of dimension $36$; the traceless skew-Hermitian matrices form $\mathfrak{su}(6)$ of dimension $35$. The form is definite, so its only isotropic vector is $0$. This is the sharp contrast with the biquaternion algebra, whose conjugation is $\mathbb{C}$-linear and whose trace form has a nonzero null cone.</p>
+<p>The anti-Hermitian matrices form the real Lie algebra $\mathfrak{u}(6)$ of dimension $36$; the traceless anti-Hermitian matrices form $\mathfrak{su}(6)$ of dimension $35$. The form is definite, so its only isotropic vector is $0$. This is the sharp contrast with the biquaternion algebra, whose conjugation is $\mathbb{C}$-linear and whose trace form has a nonzero null cone.</p>
 <p>The article assumes the coordinates and the trace pairing of <em>The Element, the Coordinates and the Trace of $M_6(\mathbb{C})$</em>. It uses no topology beyond the finite-dimensional metric. The polar decomposition is <em>The Polar Decomposition of $M_6(\mathbb{C})$</em>; the $*$-unitary group is <em>The Exponential and the Lie Group of $M_6(\mathbb{C})$</em>; the real forms of the biquaternion algebra are <em>The Biquaternion Algebra</em>.</p>
 <h2 id="the-conjugate-transpose">The Conjugate Transpose</h2>
 <h3 id="definition">Definition</h3>
@@ -101,13 +101,13 @@ $$</p>
 (AB)^*=B^*A^* .
 $$</p>
 <p><strong>Proof.</strong> The entries of $(AB)^*$ are $\overline{(AB)_{ji}}=\sum_k\overline{a_{jk}b_{ki}}=\sum_k\overline{b_{ki}}\,\overline{a_{jk}}=(B^*A^*)_{ij}$.</p>
-<p><strong>Corollary (the *-algebra).</strong> $M_6(\mathbb{C})$ is a complex *-algebra with the identity $I_6^*=I_6$.</p>
+<p>*<em>Corollary (the <em>-algebra).</em></em> $M_6(\mathbb{C})$ is a complex *-algebra with the identity $I_6^*=I_6$.</p>
 <p><strong>Proof.</strong> The four identities above are the axioms of a *-algebra.</p>
-<h3 id="hermitian-skew-hermitian-and-math25-unitary-elements">Hermitian, Skew-Hermitian and $*$-Unitary Elements</h3>
+<h3 id="hermitian-anti-hermitian-and-math25-unitary-elements">Hermitian, Anti-Hermitian and $*$-Unitary Elements</h3>
 <p><strong>Definition.</strong> An element $A$ is</p>
 <ul>
 <li><strong>Hermitian</strong> if $A^*=A$;</li>
-<li><strong>skew-Hermitian</strong> if $A^*=-A$;</li>
+<li><strong>anti-Hermitian</strong> if $A^*=-A$;</li>
 <li><strong>$*$-unitary</strong> if $A^*A=AA^*=I_6$;</li>
 <li><strong>normal</strong> if $A^*A=AA^*$.</li>
 </ul>
@@ -124,8 +124,8 @@ M_6(\mathbb{C})=\operatorname{Herm}_6\oplus\mathrm i\operatorname{Herm}_6
 $$</p>
 <p>as real vector spaces, of real dimension $72$.</p>
 <p><strong>Proof.</strong> $H$ and $K$ are Hermitian by construction, and $A=H+\mathrm iK$. The Hermitian matrices are the fixed points of the conjugate-linear involution $*$; a conjugate-linear involution on a complex vector space of dimension $36$ has a real fixed space of dimension $36$. The imaginary multiples fill the other half.</p>
-<p><strong>Corollary (the Hermitian coordinates).</strong> A Hermitian matrix has $6$ real diagonal entries and $15$ complex off-diagonal entries, hence $6+2\cdot15=36$ real dimensions. A skew-Hermitian matrix has $6$ purely imaginary diagonal entries and $15$ complex off-diagonal entries, also $36$ real dimensions.</p>
-<p><strong>Proof.</strong> The diagonal of a Hermitian matrix is real; the off-diagonal entries are paired by $a_{ji}=\overline{a_{ij}}$. For skew-Hermitian, the diagonal is purely imaginary and $a_{ji}=-\overline{a_{ij}}$.</p>
+<p><strong>Corollary (the Hermitian coordinates).</strong> A Hermitian matrix has $6$ real diagonal entries and $15$ complex off-diagonal entries, hence $6+2\cdot15=36$ real dimensions. A anti-Hermitian matrix has $6$ purely imaginary diagonal entries and $15$ complex off-diagonal entries, also $36$ real dimensions.</p>
+<p><strong>Proof.</strong> The diagonal of a Hermitian matrix is real; the off-diagonal entries are paired by $a_{ji}=\overline{a_{ij}}$. For anti-Hermitian, the diagonal is purely imaginary and $a_{ji}=-\overline{a_{ij}}$.</p>
 <p><strong>Theorem (the $*$-unitary group).</strong> The $*$-unitary elements form the group</p>
 <p>$$
 U(6)=\{U\in GL_6(\mathbb{C}):U^*U=I_6\},
@@ -157,13 +157,13 @@ $$</p>
 \qquad
 \mathfrak{u}(1)=\mathrm i\mathbb{R}I_6 .
 $$</p>
-<p><strong>Proof.</strong> If $X,Y$ are skew-Hermitian, then $[X,Y]^*=[Y^*,X^*]=[-Y,-X]=-[X,Y]$; the commutator is skew-Hermitian. The trace is linear, so the traceless subspace is an ideal. The scalar skew-Hermitian matrices are $\mathrm i\mathbb{R}I_6$, of dimension one; the traceless skew-Hermitian matrices have dimension $36-1=35$, and every skew-Hermitian matrix is the sum of its scalar trace part and its traceless part.</p>
+<p><strong>Proof.</strong> If $X,Y$ are anti-Hermitian, then $[X,Y]^*=[Y^*,X^*]=[-Y,-X]=-[X,Y]$; the commutator is anti-Hermitian. The trace is linear, so the traceless subspace is an ideal. The scalar anti-Hermitian matrices are $\mathrm i\mathbb{R}I_6$, of dimension one; the traceless anti-Hermitian matrices have dimension $36-1=35$, and every anti-Hermitian matrix is the sum of its scalar trace part and its traceless part.</p>
 <p><strong>Theorem (the exponential).</strong> The Lie algebra $\mathfrak{u}(6)$ is the tangent space of $U(6)$ at the identity, and the exponential map</p>
 <p>$$
 \exp:\mathfrak{u}(6)\longrightarrow U(6)
 $$</p>
 <p>is surjective.</p>
-<p><strong>Proof.</strong> The curve $t\mapsto e^{tX}$ is $*$-unitary for $X$ skew-Hermitian, and its derivative at zero is $X$; the tangent space is exactly $\mathfrak{u}(6)$. Every $*$-unitary matrix is diagonalizable with eigenvalues on the unit circle, so it is the exponential of a skew-Hermitian matrix (the diagonal logarithm).</p>
+<p><strong>Proof.</strong> The curve $t\mapsto e^{tX}$ is $*$-unitary for $X$ anti-Hermitian, and its derivative at zero is $X$; the tangent space is exactly $\mathfrak{u}(6)$. Every $*$-unitary matrix is diagonalizable with eigenvalues on the unit circle, so it is the exponential of a anti-Hermitian matrix (the diagonal logarithm).</p>
 <h2 id="the-positive-definite-trace-form">The Positive Definite Trace Form</h2>
 <h3 id="definition_1">Definition</h3>
 <p><strong>Definition.</strong> The <strong>Hermitian trace form</strong> is</p>
@@ -222,7 +222,7 @@ $$</p>
 \qquad
 X+\mathrm iY\longmapsto X+\mathrm iY .
 $$</p>
-<p><strong>Proof.</strong> Every complex matrix is $X+\mathrm iY$ with $X,Y$ skew-Hermitian: given $A$, set $X=(A-A^*)/2$ and $Y=(A+A^*)/(2\mathrm i)$; both are skew-Hermitian, and $X+\mathrm iY=A$. The real dimension $36+36=72$ matches.</p>
+<p><strong>Proof.</strong> Every complex matrix is $X+\mathrm iY$ with $X,Y$ anti-Hermitian: given $A$, set $X=(A-A^*)/2$ and $Y=(A+A^*)/(2\mathrm i)$; both are anti-Hermitian, and $X+\mathrm iY=A$. The real dimension $36+36=72$ matches.</p>
 <p><strong>Corollary (the Cartan decomposition).</strong> The Cartan involution</p>
 <p>$$
 \mathrm{J}(A)=-A^*
@@ -235,11 +235,11 @@ $$</p>
 <p><strong>Proof.</strong> $\mathrm{J}$ is an involution because $(A^*)^*=A$; $\mathrm{J}(X)=X$ iff $X^*=-X$; $\mathrm{J}(X)=-X$ iff $X^*=X$. The quotient is the symmetric space of the Cartan involution, identified with the positive definite Hermitian matrices by the polar decomposition.</p>
 <h3 id="the-special-math146-unitary-form">The Special $*$-Unitary Form</h3>
 <p><strong>Theorem.</strong> $\mathfrak{su}(6)$ is a simple real Lie algebra of dimension $35$, and its complexification is $\mathfrak{sl}_6(\mathbb{C})$.</p>
-<p><strong>Proof.</strong> The complexification of the traceless skew-Hermitian matrices is the traceless complex matrices, because the trace is complex-linear and the decomposition $A=X+\mathrm iY$ preserves tracelessness. Simplicity is the standard simplicity of $\mathfrak{su}(n)$ for $n\ge2$.</p>
+<p><strong>Proof.</strong> The complexification of the traceless anti-Hermitian matrices is the traceless complex matrices, because the trace is complex-linear and the decomposition $A=X+\mathrm iY$ preserves tracelessness. Simplicity is the standard simplicity of $\mathfrak{su}(n)$ for $n\ge2$.</p>
 <p><strong>Theorem (the Killing form).</strong> On $\mathfrak{sl}_6(\mathbb{C})$ the Killing form is $12\operatorname{tr}(XY)$; on $\mathfrak{su}(6)$ it is negative definite.</p>
 <p><strong>Proof.</strong> The Killing form of $\mathfrak{gl}_6$ is $12\operatorname{tr}(XY)-2\operatorname{tr}(X)\operatorname{tr}(Y)$, and the second term vanishes on the traceless subalgebra. For $X\in\mathfrak{su}(6)$, $\operatorname{tr}(X^2)=-\operatorname{tr}(X^*X)=-\sum_{ij}\lvert x_{ij}\rvert^2<0$ for $X\neq0$.</p>
 <p><strong>Corollary (the trace form versus the Killing form).</strong> The Hermitian trace form $\operatorname{tr}(X^*Y)$ is positive definite on $\mathfrak{u}(6)$; the Killing form is negative definite on $\mathfrak{su}(6)$. The two differ by the sign and by the scalar $12$.</p>
-<p><strong>Proof.</strong> For skew-Hermitian $X$, $\operatorname{tr}(X^*X)=-\operatorname{tr}(X^2)$; the first is positive definite, the second is the Killing form up to $12$ and is negative definite.</p>
+<p><strong>Proof.</strong> For anti-Hermitian $X$, $\operatorname{tr}(X^*X)=-\operatorname{tr}(X^2)$; the first is positive definite, the second is the Killing form up to $12$ and is negative definite.</p>
 <h2 id="the-definite-form-and-the-isotropic-set">The Definite Form and the Isotropic Set</h2>
 <h3 id="the-isotropic-vectors">The Isotropic Vectors</h3>
 <p><strong>Theorem.</strong> The only isotropic vector of the Hermitian trace form is zero:</p>
@@ -267,7 +267,7 @@ $$</p>
 <p><strong>Remark (the two real forms).</strong> The real Lie algebra $\mathfrak{u}(6)$ is a real form of $\mathfrak{gl}_6(\mathbb{C})$; the real associative algebra $M_6(\mathbb{R})$ is a real form of $M_6(\mathbb{C})$ under the conjugation $A\mapsto\overline A$, not under $*$. The Hermitian structure uses $*$; the real structure uses the bar. The two involutions commute, and their composition is the transpose.</p>
 <p><strong>Proof.</strong> $\overline{\overline A}=A$ and $A\mapsto\overline A$ is $\mathbb{C}$-antilinear; its fixed space is $M_6(\mathbb{R})$, of real dimension $36$. The composition $A\mapsto\overline{A}^{\mathsf T}=A^*$ is the conjugate transpose.</p>
 <h2 id="summary">Summary</h2>
-<p>The conjugate transpose is a conjugate-linear involution. Its Hermitian fixed points have real dimension $36$; its skew-Hermitian antiefixed points form the Lie algebra $\mathfrak{u}(6)$ of dimension $36$, with the traceless ideal $\mathfrak{su}(6)$ of dimension $35$.</p>
+<p>The conjugate transpose is a conjugate-linear involution. Its Hermitian fixed points have real dimension $36$; its anti-Hermitian antiefixed points form the Lie algebra $\mathfrak{u}(6)$ of dimension $36$, with the traceless ideal $\mathfrak{su}(6)$ of dimension $35$.</p>
 <p>$$
 \boxed{\ \langle A,B\rangle=\operatorname{tr}(A^*B),\qquad \langle A,A\rangle=\sum_{ij}\lvert a_{ij}\rvert^2,\qquad \langle A,A\rangle=0\iff A=0 .\ }
 $$</p>
@@ -296,7 +296,7 @@ $$</p>
 <td>real dimension $36$</td>
 </tr>
 <tr>
-<td>Skew-Hermitian matrices</td>
+<td>Anti-Hermitian matrices</td>
 <td>real dimension $36$</td>
 </tr>
 <tr>
@@ -344,11 +344,11 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathfrak{u}(6)$</td>
-<td>the skew-Hermitian Lie algebra, dimension $36$</td>
+<td>the anti-Hermitian Lie algebra, dimension $36$</td>
 </tr>
 <tr>
 <td>$\mathfrak{su}(6)$</td>
-<td>the traceless skew-Hermitian Lie algebra, dimension $35$</td>
+<td>the traceless anti-Hermitian Lie algebra, dimension $35$</td>
 </tr>
 <tr>
 <td>$\langle A,B\rangle$</td>

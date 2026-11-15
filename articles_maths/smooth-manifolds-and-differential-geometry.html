@@ -151,7 +151,7 @@ $$</p>
 <p>$$
 [X, Y](f) = X(Y(f)) - Y(X(f)), \qquad f \in C^\infty(M).
 $$</p>
-<p><strong>Proposition.</strong> The bracket is well defined by the displayed expression, is skew-symmetric and bilinear over $\mathbb{R}$, satisfies the <strong>Jacobi identity</strong></p>
+<p><strong>Proposition.</strong> The bracket is well defined by the displayed expression, is antisymmetric and bilinear over $\mathbb{R}$, satisfies the <strong>Jacobi identity</strong></p>
 <p>$$
 [X, [Y, Z]] + [Y, [Z, X]] + [Z, [X, Y]] = 0,
 $$</p>
@@ -160,7 +160,7 @@ $$</p>
 [X, fY] = X(f)\,Y + f\,[X, Y]
 $$</p>
 <p>for $f \in C^\infty(M)$. It is not a tensor: the value of $[X, Y]$ at $p$ depends on the first derivatives of the coefficients of $X$ and $Y$, not merely on their values at $p$.</p>
-<p><strong>Proof.</strong> The expression $X(Y(f)) - Y(X(f))$ is a derivation of $C^\infty(M)$ in $f$: the second-order terms cancel, because $XY(f) - YX(f)$ is the commutator of two first-order differential operators and its symbol is symmetric. Hence it defines a smooth vector field. Skew-symmetry is immediate; the Jacobi identity is the associativity of composition of the operators $X, Y, Z$ arranged cyclically; the Leibniz rule follows by expanding $X(fY)(h) - fY(X(h))$.</p>
+<p><strong>Proof.</strong> The expression $X(Y(f)) - Y(X(f))$ is a derivation of $C^\infty(M)$ in $f$: the second-order terms cancel, because $XY(f) - YX(f)$ is the commutator of two first-order differential operators and its symbol is symmetric. Hence it defines a smooth vector field. Antisymmetry is immediate; the Jacobi identity is the associativity of composition of the operators $X, Y, Z$ arranged cyclically; the Leibniz rule follows by expanding $X(fY)(h) - fY(X(h))$.</p>
 <p><strong>Theorem.</strong> The pair $(\mathrm{X}(M), [\cdot, \cdot])$ is a real Lie algebra, the <strong>Lie algebra of the manifold</strong> $M$. For a Lie group, the left-invariant vector fields form a subalgebra isomorphic to the Lie algebra of the group, and the two notions agree; this is developed in <em>Lie Groups</em> and <em>The Lie Algebra and the Exponential Map</em>.</p>
 <p><strong>Proof.</strong> The module $\mathrm{X}(M)$ is a real vector space and the bracket is bilinear, alternating and satisfies the Jacobi identity, which is the definition of a Lie algebra.</p>
 <p><strong>Definition.</strong> Vector fields $X$ and $Y$ <strong>commute</strong> if $[X, Y] = 0$. In a chart with coordinates $x_i$, the coordinate vector fields satisfy $[\partial/\partial x_i, \partial/\partial x_j] = 0$, and this is exactly the symmetry of the mixed partial derivatives.</p>

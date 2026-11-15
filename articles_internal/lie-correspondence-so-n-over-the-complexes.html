@@ -335,6 +335,24 @@ $$</p>
 <td>no</td>
 </tr>
 <tr>
+<td>$7$</td>
+<td>$21$</td>
+<td>$42$</td>
+<td>yes</td>
+<td>$\mathbb Z/2$</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$8$</td>
+<td>$28$</td>
+<td>$56$</td>
+<td>yes</td>
+<td>$\mathbb Z/2$</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
 <td>$n$</td>
 <td>$n(n-1)/2$</td>
 <td>$n(n-1)$</td>
@@ -345,7 +363,38 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>Reading the table.</strong> The complex dimension is half the number of entries of a skew matrix, and the real dimension is the full count. Nilpotents appear at $n=3$, the first dimension in which the algebra is simple and not a line or a plane rotation algebra. The fundamental group is the same as in the real case, since the group retracts onto its compact form. The last two columns repeat the real pattern with one change of justification: T4 holds everywhere, and the covering property holds only in dimension two.</p>
+<p><strong>Reading the table.</strong> The complex dimension is half the number of entries of a skew matrix, and the real dimension is the full count. Nilpotents appear at $n=3$, the first dimension in which the algebra is simple and not a line or a plane rotation algebra. The fundamental group is the same as in the real case, since the group retracts onto its compact form. The last two columns repeat the real pattern with one change of justification: T4 holds everywhere, and the covering property holds only in dimension two. The upper rungs add dimension and rank and change nothing qualitative: nilpotents are present from three on, the fundamental group is settled at $\mathbb Z/2$, and the two proofs of T4 do not look at the size of the matrix.</p>
+<h2 id="the-correspondence-at-the-upper-rungs">The Correspondence at the Upper Rungs</h2>
+<h3 id="what-the-upper-rungs-add-and-what-they-do-not">What the Upper Rungs Add, and What They Do Not</h3>
+<p><strong>The two proofs of T4 have no dimension in them.</strong> The complex proof is the Jordan decomposition: every element is the commuting product of a semisimple part and a unipotent part, the semisimple part is diagonalisable with nonzero eigenvalues and has a logarithm in the Cartan, and the unipotent part is $\mathrm I+N$ with $N$ nilpotent and has the finite logarithm $\log(\mathrm I+N)$. Neither step refers to the size of the matrix, so T4 holds at $n=5,6,7,8$ with the same proof as at $n=3$.</p>
+<p><strong>The nilpotent does not grow in kind.</strong> A nilpotent of index two exists as soon as a totally isotropic plane exists, which is from $n=4$ on, and no rung of this ladder produces a nilpotent of higher index that was not already available at the rung below. So the upper rungs add rank and dimension and add no new phenomenon to the correspondence.</p>
+<p><strong>The exponential is still not a covering.</strong> The kernel meets the torus in a lattice of rank $r=\lfloor n/2\rfloor$, and the singular locus of $d\exp$ is nonempty at every $n\ge3$, because the eigenvalue $2\pi i$ occurs on every rung. The upper rungs change $r$ and nothing else.</p>
+<h3 id="the-second-names-and-why-they-matter-here">The Second Names, and Why They Matter Here</h3>
+<p>The correspondence attaches a simply connected group to the algebra, and at two of the upper rungs that group has a name from another family:</p>
+<p>$$
+\mathfrak{so}(5,\mathbb{C})\cong\mathfrak{sp}_4(\mathbb{C}),
+\qquad
+\mathfrak{so}(6,\mathbb{C})\cong\mathfrak{sl}_4(\mathbb{C}),
+\qquad
+\mathrm{Spin}(5,\mathbb{C})=\mathrm{Sp}_4(\mathbb{C}),
+\qquad
+\mathrm{Spin}(6,\mathbb{C})=\mathrm{SL}_4(\mathbb{C}).
+$$</p>
+<p><strong>The complex case is exact where the real case is a cover.</strong> Over $\mathbb{R}$ the statement was $\mathrm{Spin}(6)=\mathrm{SU}(4)$, a covering of the compact group, and the unitary group there is a group of a different real form. Over $\mathbb{C}$ the statement is an identity of complex groups, with no covering in the identification: $\mathrm{SO}(6,\mathbb{C})=\mathrm{PSL}_4(\mathbb{C})$ directly. The difference is exactly the difference between the real forms, and it is the reason the complex article can state the correspondence without a spin caveat.</p>
+<p><strong>What the rungs above six have.</strong> None. $\mathfrak{so}(7,\mathbb{C})$ and $\mathfrak{so}(8,\mathbb{C})$ are simple of types $B_3$ and $D_4$, and no linear or symplectic algebra of another family has their dimension, because $22$ and $29$ are not of the form $m^{2}-1$.</p>
+<h3 id="triality-and-the-automorphism-group">Triality and the Automorphism Group</h3>
+<p><strong>The algebra has more automorphisms than the group.</strong> At $n=8$ the outer automorphism group of the algebra and of the spin group is $S_3$, and that of the quotient group is $\mathbb{Z}/2$. For the correspondence this is a statement about what the algebra determines: it determines $\mathrm{Spin}(8,\mathbb{C})$ up to isomorphism, and the isomorphism carries no canonical labelling of the three eights; only the quotient by the central involution fixes one of them. So a statement about $\mathrm{SO}(8,\mathbb{C})$ that uses the vector representation in an essential way is not an automorphism-invariant statement, and a statement about the algebra is.</p>
+<p><strong>The real forms inherit the count, not the symmetry.</strong> Each of the five real forms of the rung is a real slice, and the outer automorphism of order three does not preserve a generic slice, which is why the compact real form $\mathrm{SO}(8)$ has only the $\mathbb{Z}/2$ on its quotient, as the real companion records.</p>
+<h3 id="the-correspondences-with-math560-and-math561">The Correspondences with $\mathrm{GL}$ and $\mathrm{SL}$</h3>
+<p><strong>The complexified nesting.</strong> Over $\mathbb{R}$ the unitary group sits inside the orthogonal group of twice the size. Complexified, that inclusion becomes</p>
+<p>$$
+\mathrm{GL}(n,\mathbb{C})\subset\mathrm{SO}(2n,\mathbb{C}),
+\qquad
+\dim_{\mathbb{C}}\mathrm{SO}(2n,\mathbb{C})-\dim_{\mathbb{C}}\mathrm{GL}(n,\mathbb{C})=n(2n-1)-n^{2}=n(n-1),
+$$</p>
+<p>so the quotient has complex dimension $2,6,12,20,30,42,56$ at $n=2,\dots,8$. The verification confirms the dimension of the complex-linear part as $n^{2}$ by counting the solutions of $XJ=JX$ on the skew matrices.</p>
+<p><strong>The exact meetings.</strong> $\mathfrak{so}(3,\mathbb{C})\cong\mathfrak{sl}_2(\mathbb{C})$ and $\mathfrak{so}(6,\mathbb{C})\cong\mathfrak{sl}_4(\mathbb{C})$, with no others in this range, since $m^{2}-1=n(n-1)/2$ requires $2m^{2}-2=n(n-1)$ and the solutions stop at $n=6$. So the correspondence for the complex rotations is a correspondence for a linear group at exactly two rungs, and at $n=6$ it is the same statement as the one for $\mathrm{SL}_4(\mathbb{C})$.</p>
+<p><strong>The real locus.</strong> The identity $\mathrm{SO}(n,\mathbb{C})\cap\mathrm{SU}(n)=\mathrm{SO}(n,\mathbb{R})$ holds at every rung, and at the upper rungs it is the only exact link between the complex orthogonal correspondence and a unitary one: no dimension matches, so the link is by intersection and not by isomorphism.</p>
 <h2 id="what-the-correspondence-does-not-say">What the Correspondence Does Not Say</h2>
 <p><strong>It does not inherit T4 from the real case.</strong> Surjectivity over $\mathbb R$ is a compactness theorem, and there is no compactness here. The complex proof is separate and uses the Jordan decomposition; the two proofs agree on the intersection, which is the semisimple real case.</p>
 <p><strong>It does not say that the logarithm is the functional calculus.</strong> The principal logarithm of $\operatorname{diag}(-1,-1,1)$ is not antisymmetric, and no branch fixes that, because a branch is a function of the eigenvalue and antisymmetry requires opposite values at equal eigenvalues. The logarithm must be built from the eigenspaces and their pairing, not from a function of the matrix alone.</p>
@@ -424,7 +473,7 @@ $$</p>
 <li><em>The Rotor as a Square Root of a Rotation</em>, for the spin cover in the real and the complex cases.</li>
 </ul>
 <h2 id="verification">Verification</h2>
-<p>Six scratch scripts under <code>/tmp/vlie/</code> (not part of the corpus) recompute the claims on samples of one hundred elements. Every number below is a printed residual or a rank.</p>
+<p>Scratch scripts under <code>/tmp/vlie/</code> (not part of the corpus) recompute the claims on samples of forty to one hundred elements. Every number below is a printed residual, rank or count.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -508,6 +557,21 @@ $$</p>
 <td>the dimensions</td>
 <td>complex and real basis counts</td>
 <td>$1,3,6,10,15$ and $2,6,12,20,30$ at $n=2,\dots,6$</td>
+</tr>
+<tr>
+<td>the complex-linear part of $\mathfrak{so}(2n,\mathbb C)$</td>
+<td>nullity of $X\mapsto(X+X^{\mathsf T},XJ-JX)$ over $\mathbb R$, $n=2,\dots,5$</td>
+<td>$2n^{2}$, so $n^{2}$ over $\mathbb C$</td>
+</tr>
+<tr>
+<td>the quotient by it</td>
+<td>dimension count</td>
+<td>$n(2n-1)-n^{2}=n(n-1)=2,6,12,20$</td>
+</tr>
+<tr>
+<td>the second names at five and six</td>
+<td>dimension arithmetic</td>
+<td>$10=10$ and $15=15$; nothing at $21$ or $28$</td>
 </tr>
 <tr>
 <td>the fundamental group and the covers</td>

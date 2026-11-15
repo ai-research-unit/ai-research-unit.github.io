@@ -78,11 +78,11 @@ $$</p>
 <p>$$
 (A^*)^*=A,\qquad (AB)^*=B^*A^*,\qquad (\lambda A)^*=\bar\lambda A^* .
 $$</p>
-<p>It is an involution of the <strong>real</strong> algebra, not of the complex algebra. Its fixed points are the Hermitian matrices, its anti-fixed points the skew-Hermitian matrices, and the two real subspaces</p>
+<p>It is an involution of the <strong>real</strong> algebra, not of the complex algebra. Its fixed points are the Hermitian matrices, its anti-fixed points the anti-Hermitian matrices, and the two real subspaces</p>
 <p>$$
 \mathfrak{u}(5)=\{X:X^*=-X\},\qquad i\mathfrak{u}(5)=\{H:H^*=H\}
 $$</p>
-<p>give the real decomposition $M_5=\mathfrak{u}(5)\oplus i\mathfrak{u}(5)$, of real dimensions $25+25=50$. The skew-Hermitian part is the compact real form $\mathfrak{u}(5)$, of real dimension $25$, and its traceless part $\mathfrak{su}(5)$ has dimension $24$.</p>
+<p>give the real decomposition $M_5=\mathfrak{u}(5)\oplus i\mathfrak{u}(5)$, of real dimensions $25+25=50$. The anti-Hermitian part is the compact real form $\mathfrak{u}(5)$, of real dimension $25$, and its traceless part $\mathfrak{su}(5)$ has dimension $24$.</p>
 <p>The involution defines the <strong>positive definite</strong> Hermitian form on the algebra,</p>
 <p>$$
 \langle A,B\rangle_F=\operatorname{tr}(A^*B),
@@ -109,17 +109,17 @@ $$</p>
 <p><strong>Corollary.</strong> The conjugate transpose is an involution of the real algebra $M_5(\mathbb{C})$, and the transpose $A^{\mathsf T}$ is a complex-linear anti-automorphism but not the Hermitian involution. The two coincide on real matrices.</p>
 <p><strong>Proof.</strong> The star is conjugate-linear by $(\lambda A)^*=\bar\lambda A^*$; the transpose is complex-linear and satisfies $(AB)^{\mathsf T}=B^{\mathsf T}A^{\mathsf T}$. On real matrices the conjugation is trivial.</p>
 <p><strong>Remark.</strong> <strong>An involution of a complex algebra is by definition conjugate-linear; a complex-linear anti-automorphism is a different notion.</strong> The star is the involution that makes $M_5(\mathbb{C})$ a complex algebra with involution in the sense of <em>The Book of Involutions</em>; the transpose is the transpose. The distinction matters: the Hermitian matrices are the fixed points of the star, not of the transpose.</p>
-<h3 id="hermitian-and-skew-hermitian">Hermitian and Skew-Hermitian</h3>
-<p><strong>Definition.</strong> $A$ is <strong>Hermitian</strong> if $A^*=A$ and <strong>skew-Hermitian</strong> if $A^*=-A$.</p>
-<p><strong>Proposition.</strong> The Hermitian and skew-Hermitian matrices form real subspaces of dimension $25$ each, and</p>
+<h3 id="hermitian-and-anti-hermitian">Hermitian and Anti-Hermitian</h3>
+<p><strong>Definition.</strong> $A$ is <strong>Hermitian</strong> if $A^*=A$ and <strong>anti-Hermitian</strong> if $A^*=-A$.</p>
+<p><strong>Proposition.</strong> The Hermitian and anti-Hermitian matrices form real subspaces of dimension $25$ each, and</p>
 <p>$$
 M_5(\mathbb{C})=\mathfrak{u}(5)\oplus i\mathfrak{u}(5),
 \qquad
-A=\underbrace{\tfrac12(A-A^*)}_{\text{skew-Hermitian}}+\underbrace{\tfrac12(A+A^*)}_{\text{Hermitian}} .
+A=\underbrace{\tfrac12(A-A^*)}_{\text{anti-Hermitian}}+\underbrace{\tfrac12(A+A^*)}_{\text{Hermitian}} .
 $$</p>
-<p><strong>Proof.</strong> The two projections are real-linear, idempotent and sum to the identity; the first is skew-Hermitian and the second Hermitian; their intersection is zero because a matrix both Hermitian and skew-Hermitian satisfies $A=-A$. A skew-Hermitian matrix has purely imaginary diagonal entries (five real parameters) and arbitrary complex entries above the diagonal (ten complex $=20$ real), total $25$; the Hermitian matrices have real diagonal entries and arbitrary complex entries above the diagonal, also $25$.</p>
+<p><strong>Proof.</strong> The two projections are real-linear, idempotent and sum to the identity; the first is anti-Hermitian and the second Hermitian; their intersection is zero because a matrix both Hermitian and anti-Hermitian satisfies $A=-A$. A anti-Hermitian matrix has purely imaginary diagonal entries (five real parameters) and arbitrary complex entries above the diagonal (ten complex $=20$ real), total $25$; the Hermitian matrices have real diagonal entries and arbitrary complex entries above the diagonal, also $25$.</p>
 <p><strong>Corollary.</strong> The real dimension of $\mathfrak{u}(5)$ is $25$, and the real dimension of the traceless subspace $\mathfrak{su}(5)$ is $24$.</p>
-<p><strong>Proof.</strong> The trace of a skew-Hermitian matrix is purely imaginary; the condition $\operatorname{tr}X=0$ is one real linear equation on the $25$-dimensional space.</p>
+<p><strong>Proof.</strong> The trace of a anti-Hermitian matrix is purely imaginary; the condition $\operatorname{tr}X=0$ is one real linear equation on the $25$-dimensional space.</p>
 <h3 id="the-real-form">The Real Form</h3>
 <p><strong>Theorem.</strong> The complexification of the real Lie algebra $\mathfrak{u}(5)$ is $\mathfrak{gl}_5(\mathbb{C})$:</p>
 <p>$$
@@ -128,7 +128,7 @@ $$</p>
 <p>The complexification of $\mathfrak{su}(5)$ is $\mathfrak{sl}_5(\mathbb{C})$.</p>
 <p><strong>Proof.</strong> Every $A$ is $X+iY$ with $X=\frac12(A-A^*)\in\mathfrak{u}(5)$ and $Y=\frac12(A+A^*)\in i\mathfrak{u}(5)$; writing $Y=iH$ with $H=-iY\in\mathfrak{u}(5)$ gives $A=X+iH$. The complex dimensions are $25$ and $25$, so the surjection is an isomorphism. The traceless case is the same with the trace condition.</p>
 <p><strong>Corollary.</strong> $\mathfrak{u}(5)$ is the <strong>compact real form</strong> of $\mathfrak{gl}_5(\mathbb{C})$, and $\mathfrak{su}(5)$ is the compact real form of $\mathfrak{sl}_5(\mathbb{C})$. The Hermitian matrices $i\mathfrak{u}(5)$ are the other real half of the complexification.</p>
-<p><strong>Proof.</strong> The real form $\mathfrak{u}(5)$ is the fixed-point set of the Cartan involution $\mathrm{J}(A)=-A^*$; the fixed points of $\mathrm{J}$ are the skew-Hermitian matrices, and the $-1$ eigenspace is the Hermitian matrices. The form is compact because the Killing form is negative definite on $\mathfrak{u}(5)$.</p>
+<p><strong>Proof.</strong> The real form $\mathfrak{u}(5)$ is the fixed-point set of the Cartan involution $\mathrm{J}(A)=-A^*$; the fixed points of $\mathrm{J}$ are the anti-Hermitian matrices, and the $-1$ eigenspace is the Hermitian matrices. The form is compact because the Killing form is negative definite on $\mathfrak{u}(5)$.</p>
 <h2 id="the-hermitian-form-on-the-carrier">The Hermitian Form on the Carrier</h2>
 <h3 id="the-standard-form">The Standard Form</h3>
 <p><strong>Definition.</strong> The <strong>standard Hermitian form</strong> on $V=\mathbb{C}^5$ is</p>
@@ -160,8 +160,8 @@ iE_{ii},\quad \frac{i(E_{ij}+E_{ji})}{\sqrt2},\quad \frac{E_{ij}-E_{ji}}{\sqrt2}
 \qquad(i<j)
 $$</p>
 <p>is an orthonormal basis of $\mathfrak{u}(5)$ for the positive definite form $\operatorname{tr}(X^*Y)=-\operatorname{tr}(XY)$; its cardinality is $5+10+10=25$.</p>
-<p><strong>Proof.</strong> The matrices $iE_{ii}$ are skew-Hermitian, the matrices $i(E_{ij}+E_{ji})$ are skew-Hermitian, and the matrices $E_{ij}-E_{ji}$ are real skew-symmetric, hence skew-Hermitian. The trace pairings give $\operatorname{tr}(X^*X)=1$ for each normalized basis element and $0$ for distinct ones: for the diagonal, $\operatorname{tr}((iE_{ii})^*(iE_{ii}))=\operatorname{tr}(E_{ii})=1$; for the off-diagonal, the two entries of the symmetric or antisymmetric combination give trace $2$, divided by $2$. The count is $5$ diagonal $+10$ symmetric $+10$ antisymmetric $=25$.</p>
-<p><strong>Corollary.</strong> The form $-\operatorname{tr}(XY)$ is positive definite on $\mathfrak{u}(5)$; it is the restriction of the Frobenius form to the skew-Hermitian half.</p>
+<p><strong>Proof.</strong> The matrices $iE_{ii}$ are anti-Hermitian, the matrices $i(E_{ij}+E_{ji})$ are anti-Hermitian, and the matrices $E_{ij}-E_{ji}$ are real antisymmetric, hence anti-Hermitian. The trace pairings give $\operatorname{tr}(X^*X)=1$ for each normalized basis element and $0$ for distinct ones: for the diagonal, $\operatorname{tr}((iE_{ii})^*(iE_{ii}))=\operatorname{tr}(E_{ii})=1$; for the off-diagonal, the two entries of the symmetric or antisymmetric combination give trace $2$, divided by $2$. The count is $5$ diagonal $+10$ symmetric $+10$ antisymmetric $=25$.</p>
+<p><strong>Corollary.</strong> The form $-\operatorname{tr}(XY)$ is positive definite on $\mathfrak{u}(5)$; it is the restriction of the Frobenius form to the anti-Hermitian half.</p>
 <p><strong>Proof.</strong> For $X\in\mathfrak{u}(5)$, $-\operatorname{tr}(X^2)=\operatorname{tr}(X^*X)=\langle X\rangle_*>0$ for $X\ne0$.</p>
 <h2 id="the-trace-form-on-the-algebra">The Trace Form on the Algebra</h2>
 <h3 id="the-positive-definite-form">The Positive Definite Form</h3>
@@ -211,14 +211,14 @@ $$</p>
 <p>$$
 \operatorname{Ad}_U(A)=UAU^{-1}=UAU^*.
 $$</p>
-<p><strong>Proposition.</strong> The adjoint action is $*$-unitary, and it preserves the Hermitian and skew-Hermitian subspaces; it preserves the trace and the determinant.</p>
-<p><strong>Proof.</strong> It is the composition of the left and right $*$-unitary actions; $(UAU^*)^*=UA^*U^*$, so Hermitian and skew-Hermitian elements are preserved; the trace and determinant are conjugation-invariant.</p>
+<p><strong>Proposition.</strong> The adjoint action is $*$-unitary, and it preserves the Hermitian and anti-Hermitian subspaces; it preserves the trace and the determinant.</p>
+<p><strong>Proof.</strong> It is the composition of the left and right $*$-unitary actions; $(UAU^*)^*=UA^*U^*$, so Hermitian and anti-Hermitian elements are preserved; the trace and determinant are conjugation-invariant.</p>
 <p><strong>Corollary.</strong> The adjoint orbit of $A$ is contained in the set of matrices with the same characteristic polynomial; the orbit is a submanifold of the Frobenius sphere of radius $\langle A\rangle_*^{1/2}$.</p>
 <p><strong>Proof.</strong> The characteristic polynomial is conjugation-invariant; the Frobenius norm is invariant, so the orbit lies in the sphere of that radius.</p>
 <h3 id="the-compact-real-form">The Compact Real Form</h3>
 <p><strong>Theorem.</strong> The Lie algebra $\mathfrak{u}(5)$ is the compact real form of $\mathfrak{gl}_5(\mathbb{C})$, and the exponential map $\mathfrak{u}(5)\to U(5)$ is surjective.</p>
-<p><strong>Proof.</strong> The compactness is the closed boundedness of $U(5)$; the real form is the skew-Hermitian subspace. The surjectivity of the exponential is the standard theorem for compact connected Lie groups: every $*$-unitary matrix is diagonalizable by a $*$-unitary matrix, $U=VDV^*$ with $D=\operatorname{diag}(e^{i\mathrm{J}_1},\dots,e^{i\mathrm{J}_5})$, and $U=e^{iH}$ with $H=V\operatorname{diag}(\mathrm{J}_1,\dots,\mathrm{J}_5)V^*\in\mathfrak{u}(5)$.</p>
-<p><strong>Corollary.</strong> Every $*$-unitary matrix is the exponential of a skew-Hermitian matrix, and every special $*$-unitary matrix is the exponential of a traceless skew-Hermitian matrix.</p>
+<p><strong>Proof.</strong> The compactness is the closed boundedness of $U(5)$; the real form is the anti-Hermitian subspace. The surjectivity of the exponential is the standard theorem for compact connected Lie groups: every $*$-unitary matrix is diagonalizable by a $*$-unitary matrix, $U=VDV^*$ with $D=\operatorname{diag}(e^{i\mathrm{J}_1},\dots,e^{i\mathrm{J}_5})$, and $U=e^{iH}$ with $H=V\operatorname{diag}(\mathrm{J}_1,\dots,\mathrm{J}_5)V^*\in\mathfrak{u}(5)$.</p>
+<p><strong>Corollary.</strong> Every $*$-unitary matrix is the exponential of a anti-Hermitian matrix, and every special $*$-unitary matrix is the exponential of a traceless anti-Hermitian matrix.</p>
 <p><strong>Proof.</strong> The diagonal angles can be chosen with sum zero for determinant one; the traceless condition is the sum of the angles.</p>
 <h2 id="the-singular-set">The Singular Set</h2>
 <h3 id="the-determinant">The Determinant</h3>
@@ -239,7 +239,7 @@ $$</p>
 <p><strong>Proof.</strong> The nilpotent matrices satisfy $\operatorname{tr}(A^2)=0$; the trace pairing is indefinite. The Frobenius form is positive definite, so it has no isotropic vectors.</p>
 <p><strong>Remark.</strong> <strong>The singular set is $\det=0$, of real codimension $2$, and it is not a null cone.</strong> The phrase "null cone" belongs to an indefinite bilinear form; the Frobenius form is positive definite and has none. The complex hypersurface $\det=0$ is a codimension-two real obstacle, and the complement $GL_5$ is connected. This is the metric picture of <em>The Forms, the Norms and the Singular Set of $M_5(\mathbb{C})$</em>, where the determinant and the norm are treated algebraically.</p>
 <h2 id="summary">Summary</h2>
-<p>The conjugate transpose $A^*=\bar A^{\mathsf T}$ is the involution of the real algebra $M_5(\mathbb{C})$; its fixed points are the Hermitian matrices and its anti-fixed points the skew-Hermitian matrices. The real decomposition is</p>
+<p>The conjugate transpose $A^*=\bar A^{\mathsf T}$ is the involution of the real algebra $M_5(\mathbb{C})$; its fixed points are the Hermitian matrices and its anti-fixed points the anti-Hermitian matrices. The real decomposition is</p>
 <p>$$
 M_5(\mathbb{C})=\mathfrak{u}(5)\oplus i\mathfrak{u}(5),
 \qquad 25+25=50,
@@ -266,7 +266,7 @@ $$</p>
 <td>$A^*=A$, real dimension $25$</td>
 </tr>
 <tr>
-<td>Skew-Hermitian matrices</td>
+<td>Anti-Hermitian matrices</td>
 <td>$A^*=-A$, real dimension $25$</td>
 </tr>
 <tr>
@@ -314,11 +314,11 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathfrak{u}(5)$</td>
-<td>The skew-Hermitian matrices, the compact real form</td>
+<td>The anti-Hermitian matrices, the compact real form</td>
 </tr>
 <tr>
 <td>$\mathfrak{su}(5)$</td>
-<td>The traceless skew-Hermitian matrices</td>
+<td>The traceless anti-Hermitian matrices</td>
 </tr>
 <tr>
 <td>$\langle x,y\rangle=\sum\bar x_iy_i$</td>
@@ -346,7 +346,7 @@ $$</p>
 <ul>
 <li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge University Press, second edition, 2013), for the conjugate transpose, the Hermitian matrices and the $*$-unitary group.</li>
 <li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society, 1998), for the involutions of a central simple algebra and the $*$-unitary groups.</li>
-<li>Brian C. Hall, <em>Lie Groups, Lie Algebras, and Representations</em> (Springer, second edition, 2015), for the compact real form $\mathfrak{u}(5)$, the exponential of a skew-Hermitian matrix and the $*$-unitary group.</li>
+<li>Brian C. Hall, <em>Lie Groups, Lie Algebras, and Representations</em> (Springer, second edition, 2015), for the compact real form $\mathfrak{u}(5)$, the exponential of a anti-Hermitian matrix and the $*$-unitary group.</li>
 <li><a href="the-matrix-algebra-m5c.html">The Matrix Algebra $M_5(\mathbb{C})$</a>, for the algebra, the conjugate transpose and the real form.</li>
 <li><a href="the-element-the-coordinates-and-the-trace-of-m5c.html">The Element, the Coordinates and the Trace of $M_5(\mathbb{C})$</a>, for the trace, the trace pairing and the Jordan decomposition.</li>
 <li><a href="the-forms-the-norms-and-the-singular-set-of-m5c.html">The Forms, the Norms and the Singular Set of $M_5(\mathbb{C})$</a>, for the determinant and the singular set.</li>
