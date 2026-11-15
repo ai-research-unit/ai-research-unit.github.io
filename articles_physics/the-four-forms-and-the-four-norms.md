@@ -158,6 +158,29 @@ $$
 
 **On the six subspaces the pairing of the four changes.** The Krein norm is positive definite of signature $(2,0)$ on the centre and negative definite of signature $(0,6)$ on the vector subspace; the plain and the quaternionic forms are $(1,1)$ on the centre and $(3,3)$ on the vector subspace; and the Hermitian form is definite on every one of the six.
 
+**The imaginary part of a sesquilinear form is an alternating form, and the alternating companion is the area.** Write $\omega(\tilde X,\tilde Y)=\operatorname{Im}H(\tilde X,\tilde Y)$. Because $H$ is Hermitian, $\overline{H(\tilde X,\tilde Y)}=H(\tilde Y,\tilde X)$, so $\omega$ is real-valued and alternating, $\omega(\tilde X,\tilde X)=0$. Since $i$ is central and $(i\tilde Y)^{*}=-i\tilde Y$, both $H(\tilde X,i\tilde Y)=-iH(\tilde X,\tilde Y)$ and $H(i\tilde X,\tilde Y)=iH(\tilde X,\tilde Y)$ hold, and the identity that governs $\omega$ is one line,
+
+$$
+\omega(i\tilde X,\tilde Y)=\operatorname{Re}H(\tilde X,\tilde Y).
+$$
+
+The area is the metric with one argument turned by a quarter turn, and it is nothing else; the equivalent form $\omega(\tilde X,i\tilde Y)=-\operatorname{Re}H(\tilde X,\tilde Y)$ carries a minus that is only the bookkeeping of which argument is turned.
+
+**Its rank on the six subspaces is $2$, $6$ and four zeros.**
+
+| subspace | $\dim_{\mathbb{R}}$ | $\operatorname{rank}\omega$ |
+| --- | --- | --- |
+| $\mathbb{B}_{C}$, the centre | $2$ | $2$ |
+| $\mathbb{B}_{V}$ | $6$ | $6$ |
+| $\mathbb{B}_{H}$ | $4$ | $0$ |
+| $\mathbb{B}_{iH}$ | $4$ | $0$ |
+| $\mathbb{B}_{\Psi}$ | $4$ | $0$ |
+| $\mathbb{B}_{\Phi}$ | $4$ | $0$ |
+
+**Both halves of the table follow from the identity.** On a subspace stable under $J$ one has $iU=U$, so if $\omega(\tilde X,\cdot)$ vanishes on $U$ then $\operatorname{Re}H(\tilde X,\cdot)$ vanishes on $U$, and $\operatorname{Re}H$ is positive definite, hence $\tilde X=0$: the area is non-degenerate there. On a real-type subspace the Hermitian form is real-valued — each of them is the fixed space of an antilinear involution under which $H$ is conjugate-symmetric — so its imaginary part vanishes identically. The complex subspaces are exactly the $J$-stable ones, which is why the division falls where it does.
+
+**The companion of the Krein form does the same.** Replacing $H$ by $\mathrm{Kr}$ in the definition gives an alternating form with the same ranks, $2$ and $6$ on the complex subspaces and zero on the four real-type ones; the two differ in value and not in where they live.
+
 **The four-dimensional real-type subspaces carry the four signatures the corpus uses.**
 
 | subspace | $P$ | $N$ | $H$ | $\mathrm{Kr}$ |
@@ -484,6 +507,16 @@ and the two are different objects: the null set of $N$ on the algebra is six-dim
 
 **The boundary.** A real computation is not a cheaper route to the same answers; it is a computation about a different object, and the entry states which object it is about whenever a signature is quoted.
 
+### I.7.m — The Area Belongs to the Complex Subspaces and the Metric to the Sectors
+
+**Read:** the alternating companion $\omega=\operatorname{Im}H$ is non-degenerate on the centre and on the complex space sector, of ranks $2$ and $6$, and it vanishes on the four real-type subspaces.
+
+**The division of labour is between two questions.** The complex sectors carry the area: $\omega$ pairs the two times on $\mathbb{B}_{C}$ and each material direction with its informational partner on $\mathbb{B}_{V}$. The four real-type subspaces carry the metric and the probability, which are symmetric, and no area. *How much* and *how much turns* are two questions, and they are asked on two different subspaces.
+
+**The reason is the identity and not the naming.** $\omega(i\tilde X,\tilde Y)=\operatorname{Re}H(\tilde X,\tilde Y)$ says that the area is the metric with one argument turned by a quarter turn. Where $J$ stays inside the subspace the turn stays inside too, so no direction of the subspace is invisible to $\omega$; on a real-type subspace the Hermitian form is real-valued, and a real form has no imaginary part to give. The complex subspaces are exactly the $J$-stable ones, so the division falls where it does and could not fall elsewhere.
+
+**The boundary.** A subspace without an area pairing is not a subspace without an antisymmetric structure: the commutator is antisymmetric and does not vanish on a sector. The vanishing stated here concerns the scalar-valued alternating part of the two sesquilinear forms, and nothing else. The area also adds no dynamics; it is a property of the restriction of a form, and it supplies neither a Hamiltonian nor a quantisation.
+
 ## The Limits
 
 **The four words are a naming and not a theorem.** The algebra proves that four forms exist, that they are distinct, that their Gram matrices and signatures are $(4,4)$, $(4,4)$, $(8,0)$ and $(2,6)$, that one of them is multiplicative and another definite, and that no function is both. It does not prove that these are the four quantities a physical theory evaluates.
@@ -514,6 +547,7 @@ and the two are different objects: the null set of $N$ on the algebra is six-dim
 - Only the quaternionic cut is the invertibility partition; the plain and Krein norms vanish on units, the Hermitian norm only at the origin, and the four degenerate sets are pairwise distinct.
 - On real coefficients the four collapse to two, $P=\mathrm{Kr}$ and $N=H$, so a real computation cannot tell the plain pairing from the Krein volume, nor the quaternionic norm from the Hermitian one.
 - The four norms are the measures of one element; they are not the four readings of one element — norm, rank, charge and scale — and only the norm is the mass.
+- The imaginary part of a sesquilinear form is an alternating form: it is non-degenerate on the two complex subspaces, of ranks $2$ and $6$, and it vanishes on the four real-type ones, because there the Hermitian form is real-valued.
 
 ## Summary of Notation
 
@@ -528,6 +562,7 @@ and the two are different objects: the null set of $N$ on the algebra is six-dim
 | $\mathrm E$, $\mathrm I_4$ | the two Gram matrices; $\mathrm E$ is also the matrix of the quaternion conjugation |
 | $(4,4)$, $(4,4)$, $(8,0)$, $(2,6)$ | the realified signatures of $P$, $N$, $H$, $\mathrm{Kr}$ |
 | $O_4(\mathbb{C})$, $\mathrm U(4)$, $\mathrm U(1,3)$ | the isometry groups, of real dimensions $12$, $16$ and $16$ |
+| $\omega(\tilde X,\tilde Y)$ | the alternating companion, $\operatorname{Im}H$, of ranks $2$ and $6$ on the complex subspaces and $0$ on the four real-type ones |
 | the complex cone, $\mathcal N$, $\mathcal K$ | the null sets of $P$, of $N$ and of $\mathrm{Kr}$; that of $H$ is $\{0\}$ |
 | $P$-regular, $N$-regular, $H$-regular, $\mathrm{Kr}$-regular | $\Phi(\tilde Q)\neq0$ for the four letters; only $N$-regular is the unit group |
 | $\Phi$-degenerate | $\Phi(\tilde Q)=0$; only the $N$ set is the non-unit set |

@@ -165,7 +165,7 @@ $$
 
 ## The Interpretations
 
-**Fifteen readings, each labelled, each with its boundary.** They are grouped as the results are: the coordinates, the ledgers, the signature, the subspaces, the involutions, the mirror, the square, the cone and the roots.
+**Thirteen readings, each labelled, each with its boundary.** They are grouped as the results are: the coordinates, the ledgers, the signature, the subspaces and their intersections, the involutions, the mirror, the square, the cone and the roots.
 
 ### I.1.a — The Eight Coordinates Are Two Clocks and Two Spaces
 
@@ -228,7 +228,7 @@ The two definite slices are the two coefficient halves; the two indefinite slice
 | $\mathbb{B}_{\Psi}$ | the informational sector | the operator space: the states and the observables |
 | $\mathbb{B}_{\Phi}$ | the material sector | the four-vector space: the events, the interval and the light cone |
 
-**The centre is not the global phase.** The centre has two real dimensions, $e_t$ and $ie_t$. A central element $z e_t$ is a number and takes a definite value at the same time as everything else; its phase is a global phase that no interference experiment detects. The area pairing has rank two on the centre and pairs the two times, which is a different structure from the phase.
+**The centre is not the global phase.** The centre has two real dimensions, $e_t$ and $ie_t$. A central element $z e_t$ is a number and takes a definite value at the same time as everything else; its phase is a global phase that no interference experiment detects. The area pairing has rank two on the centre and pairs the two times, which is a different structure from the phase; its definition, and its rank on all six subspaces, is in I.7.
 
 **The complex space sector holds an object and its generators at once.** Its three real directions generate the rotations and its three imaginary ones the boosts, so the same six-dimensional carrier holds a field configuration and the generators of the transformations that act on it. This is the reason the sector is complex and not real: it is the one space on which a field and its symmetry algebra are the same space.
 
@@ -263,6 +263,10 @@ The two definite slices are the two coefficient halves; the two indefinite slice
 **The linearity matches the symmetry.** Parity is $\mathbb{C}$-linear, which is the algebraic form of the unitarity of parity. Time reversal is antilinear, which is the algebraic form of its anti-unitarity. The match is the content of the table: the two facts are the same fact.
 
 **Charge conjugation is not a fourth group element.** It is minus the third, so it is not a character of the group and there is no fourth factor. The algebra therefore says something specific: $C$ does not join $\{1,P,T,PT\}$ as an independent factor. It is the sign that turns $PT$ into its negative.
+
+**The orbit is a set of descriptions, not a set of states.** The four maps act on one element, so they produce at most four descriptions of it, and the size of the orbit is the number of them that are distinct. Size one is the real line $\mathbb{R}e_t$: no discrete map moves it, which is the reason the central real scale is the one object with a single description. Size two is an element that one non-identity map cannot see, so two of the four descriptions coincide, and the central case $z$ and $\bar z$ is the clean one. Size four is the generic element, and the sectors are in that class: $\mathbb{B}_{V}$, $\mathbb{B}_{iH}$ and $\mathbb{B}_{\Phi}$ all have orbit four, so a sector element carries four distinct descriptions.
+
+**The size is a count of descriptions and not of objects.** An orbit of size four is four describings of one element and not four elements, and the count carries no statistics. It is not the $2s+1$ of a multiplet, which counts the states of a carrier; the two numbers arise from two different actions and must not be identified.
 
 **The boundary.** The assignment is a labelled interpretation and not a theorem. It is offered because it makes four maps carry four physical names and because the linearity of each map matches the linearity of the symmetry it names. It does not derive the discrete symmetries, their conservation or their violation, and a second dictionary — the one used in the Clifford-algebra literature — attaches the names in the transpose order. Both are labelled and neither is proved.
 
@@ -339,6 +343,24 @@ $$
 
 **The boundary.** The root of an element is not a mass. The mass reading is an extra identification, licensed on the four-momentum chart, and it makes the mass the modulus of the polar word rather than the root itself. The algebra is scale-free: it supplies the level set and no number.
 
+### I.1.m — The Intersections Are the Shared Objects
+
+**Read:** every intersection of two distinct subspaces is one block or zero, and a block that two subspaces share is one object that the two descriptions have in common.
+
+| intersection | shared block | the common object |
+| --- | --- | --- |
+| $\mathbb{B}_{H}\cap\mathbb{B}_{\Phi}$ | $B_1$ | the material space |
+| $\mathbb{B}_{H}\cap\mathbb{B}_{\Psi}$ | $A_1$ | the informational time |
+| $\mathbb{B}_{C}\cap\mathbb{B}_{\Phi}$ | $A_2$ | the material time |
+| $\mathbb{B}_{V}\cap\mathbb{B}_{\Psi}$ | $B_2$ | the informational space |
+| $\mathbb{B}_{\Psi}\cap\mathbb{B}_{\Phi}$ | $\{0\}$ | nothing: no non-zero element is both material and informational |
+
+**The first four rows are one representative for each block and the fifth is a complementary pair.** All fifteen pairs of distinct subspaces meet in one of the four blocks or in zero, so the table is the whole of the intersection structure.
+
+**A shared space is agreement on a space, and a shared time is agreement on a time.** A shared vector block has dimension three, so two descriptions that contain it agree on a whole space; a shared scalar block has dimension one, so they agree on one direction of time. An empty intersection is the complementarity the decompositions are built on, and the three empty pairs are exactly the three decompositions, whose sums are all of $\mathbb{B}$.
+
+**The boundary.** An intersection is a subspace and not a collection of physical objects. A shared time is one direction and not one clock reading: the two sectors carry different coordinates on the central plane, $h_t$ and $i r'_t$, and the shared block says only that both descriptions use that axis.
+
 ## The Limits
 
 **The entry reads the linear structure and the two operations.** It does not read the product's full table, the spectrum, the norms beyond their definitions, the topology or the analysis. Each belongs to a later entry, and each entry that uses a result from this one links back to it.
@@ -354,6 +376,8 @@ $$
 - The Lorentzian signature follows from the placement of the central $i$ in the time slot of one sector, not from an independent axiom.
 - The six subspaces are the fixed and anti-fixed spaces of four maps; three of those maps with the identity form a Klein four-group and carry $P$, $T$, $PT$; the fourth carries $C$ and is not a group element.
 - There are exactly three decompositions, one for each pairing of the four coordinate blocks.
+- Every intersection of two distinct subspaces is one block or zero: a shared vector block is agreement on a space, a shared scalar block agreement on a time, and the three empty pairs are the three decompositions.
+- The orbit of an element under the Klein group has size one, two or four, and the size counts distinct descriptions: one on $\mathbb{R}e_t$, two when one map is invisible, four on the generic element and on both sectors.
 - The square of an element of either sector is Hermitian, so the material sector is not closed under squaring.
 - The norm separates the units from the zero divisors: $N\neq0$ is invertibility and $N=0$ is the cone. On the material sector that cone is the light cone.
 - On the material sector the norm is the interval and the square's scalar part is minus the Euclidean length: two geometries, one element.
