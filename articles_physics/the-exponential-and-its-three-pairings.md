@@ -88,7 +88,7 @@ The eighteen articles fall into two blocks of nine, one for each sector. The two
 
 **The doubling.** The scale doubles its exponent, the phase produces nothing, the boost and the rotor double theirs. A boost of rapidity $\theta$ has one-slot eigenvalues $e^{\pm\theta/2}$ and two-slot eigenvalues $e^{\pm\theta}$.
 
-**The logarithm.** The exponential is onto the unit group and its image excludes exactly the null cone; a logarithm exists on the units and only there, and the fibre is the lattice of the kernel.
+**The logarithm.** The exponential is onto the unit group and its image excludes exactly the null cone; a logarithm exists on the units and only there, and the fibre is the kernel, a lattice on the diagonal part and continuous off it.
 
 ## The Word and Its Domain
 
@@ -138,6 +138,18 @@ $$
 $$
 
 the modulus falls as $e^{-\theta_{\mathrm{rpd}}/2}$ and the boost grows as $e^{+\theta_{\mathrm{rpd}}/2}$, and the product converges to $\frac{R\omega}{2}(e_t+i\vec u_{\mathrm b})\tilde u_{\mathrm r}$, a null element of rank one. The word diverges in both of its parameters and the element has a limit: the chart breaks and the group does not.
+
+**Which stratum the limit lands on is decided by the rotor and not by the rate.** Write $\tilde u_{\mathrm r}=a\,e_t+b\,\vec u_{\mathrm b}+\tilde u_\perp$ with $a,b\in\mathbb{R}$ and $\tilde u_\perp$ orthogonal to $\vec u_{\mathrm b}$, and put $L$ for the limit. Then
+
+$$
+\operatorname{Tr}L=R\omega(a-ib),
+\qquad
+L^{2}=R\omega(a-ib)\,L ,
+$$
+
+so $L$ is $R\omega(a-ib)$ times a minimal idempotent when $a-ib\neq0$, and a nilpotent when $a=b=0$. The second case is the rotor that anticommutes with the boost axis, and the trace is the whole of the test. **Verified:** both identities hold exactly on four rotor orientations, and at $\tilde u_{\mathrm r}=\vec e_x$ with $\vec u_{\mathrm b}=\vec e_z$ the limit is $\tfrac{1}{2}(\vec e_x+i\vec e_y)$ with $L^{2}=0$ identically.
+
+**The two strata are therefore two boundary values of one family.** The same divergence, at the same rate, along the same path, reaches an idempotent or a nilpotent according to the relative orientation of the rotor and the boost axis. A statement about a boundary point of the word is a statement about a family and about that orientation, and not about the point alone.
 
 **The spectral wall is the reverse.** The modulus is continuous in $N$ away from zero, the Cartan factors are continuous functions of the unit factor, so the word converges to the word of the limit point. The root $\vec Z=-i\vec Q/B$ diverges, because $\vec Q\to\vec Q_0\neq0$ while $B\to0$, so the idempotents $(e_t\pm\vec Z)/2$ are unbounded and no spectral idempotent has a finite limit. The polar decomposition crosses the wall; the spectral decomposition does not.
 
@@ -272,6 +284,8 @@ and the exponential inverts it: $\exp(Q_t(e_t+\vec\Upsilon))=e^{Q_t}(e_t+Q_t\vec
 The three rows split the same norm $\Rho^{2}=r^{2}e^{2i\theta_{\mathrm{pha}}}$ in three ways. The Hamilton row puts the whole norm in a central first factor and leaves a unit second factor. The other two put the scale in the first factor and the phase in the second, and differ in the kind of the first factor.
 
 **The first factor's kind is the pairing's contribution.** A complex scalar is invariant under every conjugation; a real quaternion is a spatial frame; a Hermitian positive element is an amplitude. The three pairings are therefore three answers to the question *what of an element survives a motion of the algebra*, and the answers differ because the motions differ.
+
+**The three first factors are three readings of one element and not three summands of it.** Their real dimensions are $4$, $2$ and $4$, which add to $10$ against the algebra's $8$, and the redundancy is exactly the scale $r$, which all three carry. The three identities $\tilde Q=\tilde q\exp(i\tilde\Theta)=\Rho\exp(\vec U\Theta)=\tilde Q_H\tilde Q_0$ are each the whole element written three times, so no statement of the form $\tilde Q=\tilde q+\Rho+\tilde Q_H$ exists and no conservation law attaches to a factor.
 
 ### The Quaternion Pairing
 
@@ -439,7 +453,9 @@ The second row is the truncation, and it is the reason the degenerate sector has
 
 ### The Fibre
 
-**A logarithm is a generator, and a generator is not unique.** The kernel of the exponential is the lattice of elements whose exponential is the unit, and a logarithm is fixed only up to that lattice. The mathematics computes the kernel, the principal branch and the fibre, and the three statements belong together: the image says which processes have a generator, the kernel says how many, and the cone says where the answer stops.
+**A logarithm is a generator, and a generator is not unique.** The kernel of the exponential is the set of elements whose exponential is the unit, and a logarithm is fixed only up to the kernel. The mathematics computes the kernel, the principal branch and the fibre, and the three statements belong together: the image says which processes have a generator, the kernel says how many, and the cone says where the answer stops.
+
+**The kernel is not the lattice, and the difference is not pedantic.** On the diagonal part it is the parity-matched lattice $\pi i m\,e_t+\pi n\,\vec U$ with $m\equiv n\pmod 2$, and off it the kernel carries continuous families. It is therefore neither discrete nor a subgroup: $2\pi\vec e_x$ and $2\pi\vec e_y$ both exponentiate to $e_t$, and $2\pi(\vec e_x+\vec e_y)$ does not. It also meets the cone, at $\pi i e_t+\pi\vec e_z$, which has norm zero and exponentiates to $e_t$. So the fibre of a logarithm is a lattice coset only for a non-scalar unit, and the kernel is a union of conjugacy classes rather than a group. **Verified:** the three witnesses exponentiate as stated, and the fourth has $N=0$.
 
 **The non-uniqueness is a physical statement and not a defect.** Two generators that differ by a kernel element generate the same flow, so a flow does not determine its generator. A description that reports a generator has therefore reported more than the flow contains, and the extra is exactly the kernel.
 
@@ -557,7 +573,7 @@ The second row is the truncation, and it is the reason the degenerate sector has
 
 **The doubling rule governs every factor.** The scale doubles, the phase cancels, the boost and the rotor double. A boost of rapidity $0.9$ has one-slot eigenvalues $1.568312$ and $0.637628$ and two-slot eigenvalues $2.459603$, $0.406570$, $1$, $1$.
 
-**The logarithm exists on the units and nowhere else.** The exponential is onto the unit group with the null cone excluded, the fibre is the kernel's lattice, and on the degenerate sector the logarithm is exact and truncated.
+**The logarithm exists on the units and nowhere else.** The exponential is onto the unit group with the null cone excluded, the fibre is the kernel, a lattice only on the diagonal part, and on the degenerate sector the logarithm is exact and truncated.
 
 **Eight readings, each with a boundary.** The word is a flow split into rate and frame; the two modes are the two directions of one flow; the mass is the modulus and the only invariant; the amplitude is the Hermitian factor; the quaternion modulus is the spatial frame; the degenerate case is the flow that cannot be split; the half-angle is the spinor and the full angle is the vector; the factor of two is where the errors live. Each is the archive's, each is bounded, and none is a new physical claim.
 
