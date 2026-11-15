@@ -2,45 +2,19 @@
 
 ## Introduction
 
-The split-complex space carries two forms and two algebraic norms, and they are the collapse of the four forms and the four norms of the general theory. This article writes the two forms on the coordinates, gives their Gram matrices, computes their realified signatures, and reads the two algebraic norms as the diagonals of the forms. It closes on the reversal: over the complex field the definite form is the sesquilinear one and its isotropic set is a point, and here the definite form is the plain one and the isotropic set is a pair of lines.
+The split-complex space carries two forms and two algebraic norms, one for each of its two products. This article writes the two forms on the coordinates, gives their Gram matrices, computes their realified signatures, and reads the two algebraic norms as the diagonals of the forms. It closes on the reversal: over the complex field the definite form is the sesquilinear one and its isotropic set is a point, and here the definite form is the plain one and the isotropic set is a pair of lines.
 
 The claim is a claim about which form is definite. **The plain form is definite and the Hermitian form is indefinite**, the opposite of the complex field. One sign, $j^2=+1$, does it: the reflection $J$ preserves the plain form and reverses the Hermitian one, so the realification rules exchange places.
 
 The two forms are built in *The Two Products of the Split-Complex Space*, which owns the products and their laws; the cone the Hermitian form defines is *The Hermitian Form, the Double Cone and the Reversed Cauchy-Schwarz Inequality*; the criterion of invertibility the norm gives is *Norm and Invertibility in the General Split-Complex Algebra*; the realified signatures are read against *Hermitian Forms over Algebras and Norms*.
 
-## The Four Forms and Their Collapse
+## The Two Forms
 
-### The Four Letters
+**Definition.** A form of the space is the scalar part of a product of the space, so the space carries the **plain form** $P(A,C)=AC$ and the **Hermitian form** $H(A,C)=A\bar C$, and no third.
 
-The corpus writes the four forms with two arguments and the four algebraic norms with one, and the four letters are $P$, $N$, $H$ and $\mathrm{Kr}$ (*Product and Form Conventions*, and *Algebra and Element Conventions* for the letters). In a non-commutative algebra with a vector part the four forms are four, because the intrinsic conjugation reverses the vector part.
+**Proposition (there is no third form).** Any reading of the two slots other than these two is a conjugate of one of them.
 
-### The Collapse
-
-**Proposition.** On $\mathbb{C}_{\mathrm{spl}}$ the intrinsic conjugation is the identity, so
-
-$$
-P=N, \qquad H=\mathrm{Kr},
-$$
-
-and the four forms are two.
-
-**Proof.** The form $N$ is $N(A,C)=A^{\natural}C$ and the Krein form is $\mathrm{Kr}(A,C)=A^{\natural}\bar C$. An element of $\mathbb{C}_{\mathrm{spl}}$ has no vector part, so $A^{\natural}=A$ for every element, and the two reduce to $P$ and $H$.
-
-The collapse is the same collapse as that of the four products (*The Two Products of the Split-Complex Space*), seen at the level of the forms: four letters, two maps.
-
-### The Two Forms
-
-$$
-P(A,C)=AC, \qquad H(A,C)=A\bar C ,
-$$
-
-with the coordinates
-
-$$
-P(A,C)=(ac+bd)+(ad+bc)j, \qquad H(A,C)=(ac-bd)+(bc-ad)j .
-$$
-
-Both are $\mathbb{C}_{\mathrm{spl}}$-valued forms on the free module of rank one, and they are separated by symmetry and by sign.
+*Proof.* The space carries the two products $AC$ and $A\bar C$ (*The Two Products of the Split-Complex Space*), so it carries at most their two scalar parts. The bar in the first slot gives $\bar AC=\overline{A\bar C}$, the conjugate value of $H(A,C)$, and a form and its conjugate are one object with two signs.
 
 ## The Plain Form
 
@@ -127,21 +101,21 @@ It is not a real-valued object and it carries no order and no modulus. It is mul
 The **Hermitian algebraic norm** is $H$ read at one argument,
 
 $$
-H(A)=A\bar A=a^2-b^2=N(A) ,
+H(A)=A\bar A=a^2-b^2 ,
 $$
 
 real, multiplicative, indefinite. Its value is the real part of the form and the whole of the form, since $H(A,A)$ is real.
 
-**Theorem.** $N(AC)=N(A)N(C)$ and $N(A)\neq0$ is the criterion of invertibility of $A$; the units are the elements off the null lines.
+**Theorem.** $H(AC)=H(A)H(C)$ and $H(A)\neq0$ is the criterion of invertibility of $A$; the units are the elements off the null lines.
 
-**Proof.** $N(AC)=(AC)\overline{(AC)}=A\bar A\,C\bar C$ by commutativity, and $A^{-1}=\bar A/N(A)$ when $N(A)\neq0$; the criterion is *Norm and Invertibility in the General Split-Complex Algebra*.
+**Proof.** $H(AC)=(AC)\overline{(AC)}=A\bar A\,C\bar C$ by commutativity, and $A^{-1}=\bar A/H(A)$ when $H(A)\neq0$; the criterion is *Norm and Invertibility in the General Split-Complex Algebra*.
 
 ### Polarisation
 
 The two norms polarise to the two forms:
 
 $$
-P(A+C)-P(A)-P(C)=2P(A,C), \qquad N(A+C)-N(A)-N(C)=2\operatorname{Re}H(A,C) .
+P(A+C)-P(A)-P(C)=2P(A,C), \qquad H(A+C)-H(A)-H(C)=2\operatorname{Re}H(A,C) .
 $$
 
 The second is the split bilinear form $g(A,C)=ac-bd$ of signature $(1,1)$, the polar form of the indefinite norm. The first polarises into a $\mathbb{C}_{\mathrm{spl}}$-valued form, which is the plain form again.
@@ -173,15 +147,15 @@ Over $\mathbb{C}$ the isotropic set of the Hermitian form is the origin, since $
 
 ### The Two Norms Compared
 
-Over $\mathbb{C}$ the norm $A\bar A$ is definite and gives the modulus, and the plain norm $A^2$ is complex-valued and fixes no order; here $N(A)=a^2-b^2$ is real and indefinite, and $P(A)=A^2$ is $\mathbb{C}_{\mathrm{spl}}$-valued. The arities agree and the characters are exchanged: over $\mathbb{C}$ the real norm is the definite one and it gives the modulus, while here the real norm is $N$ and it is indefinite, and no multiple of it is definite. That impossibility is *The Hermitian Form, the Double Cone and the Reversed Cauchy-Schwarz Inequality*, and it is the reason the ring has no modulus.
+Over $\mathbb{C}$ the norm $A\bar A$ is definite and gives the modulus, and the plain norm $A^2$ is complex-valued and fixes no order; here $H(A)=a^2-b^2$ is real and indefinite, and $P(A)=A^2$ is $\mathbb{C}_{\mathrm{spl}}$-valued. The arities agree and the characters are exchanged: over $\mathbb{C}$ the real norm is the definite one and it gives the modulus, while here the real norm is $H$ and it is indefinite, and no multiple of it is definite. That impossibility is *The Hermitian Form, the Double Cone and the Reversed Cauchy-Schwarz Inequality*, and it is the reason the ring has no modulus.
 
 ## Summary
 
-The space carries two forms, the plain $P(A,C)=AC$ and the Hermitian $H(A,C)=A\bar C$, the four forms of the general theory collapsing to them because the intrinsic conjugation is the identity: $P=N$ and $H=\mathrm{Kr}$. Both have the Gram matrix $[1]$ over the free module of rank one and are separated by symmetry, $P$ being symmetric and $H$ conjugate-symmetric.
+The space carries two forms, the plain $P(A,C)=AC$ and the Hermitian $H(A,C)=A\bar C$, one for each product and no third. Both have the Gram matrix $[1]$ over the free module of rank one and are separated by symmetry, $P$ being symmetric and $H$ conjugate-symmetric.
 
 $P$ realifies with signature $(2,0)$ and is positive definite, so its positive set is the whole plane; the image of its diagonal is the forward cone, because the square map is not onto. $H$ realifies with signature $(1,1)$ and is indefinite, with isotropic set the pair of null lines $\mathbb{R}\Pi_+\cup\mathbb{R}\Pi_-$, which is the set of zero divisors with the origin adjoined.
 
-The two algebraic norms are $P(A)=A^2$, $\mathbb{C}_{\mathrm{spl}}$-valued and anisotropic, and $N(A)=A\bar A=a^2-b^2$, real and indefinite, and both are multiplicative. Over the complex field the two forms exchange their signatures and $H$ has the origin alone for its isotropic set; the reversal is caused by the sign of the square of the generator, which makes $J$ preserve $P$ and reverse $H$ here and the other way round over $\mathbb{C}$.
+The two algebraic norms are $P(A)=A^2$, $\mathbb{C}_{\mathrm{spl}}$-valued and anisotropic, and $H(A)=A\bar A=a^2-b^2$, real and indefinite, and both are multiplicative. Over the complex field the two forms exchange their signatures and $H$ has the origin alone for its isotropic set; the reversal is caused by the sign of the square of the generator, which makes $J$ preserve $P$ and reverse $H$ here and the other way round over $\mathbb{C}$.
 
 ## Summary of Notation
 
@@ -189,9 +163,8 @@ The two algebraic norms are $P(A)=A^2$, $\mathbb{C}_{\mathrm{spl}}$-valued and a
 |---|---|
 | $P(A,C)=AC$ | The plain form, symmetric, definite of signature $(2,0)$ |
 | $H(A,C)=A\bar C$ | The Hermitian form, conjugate-symmetric, indefinite of signature $(1,1)$ |
-| $N=\mathrm{Kr}$ | The forms $N$ and $\mathrm{Kr}$, equal to $P$ and $H$ here |
 | $P(A)=A^2$ | The plain algebraic norm, $\mathbb{C}_{\mathrm{spl}}$-valued, anisotropic |
-| $N(A)=A\bar A=a^2-b^2$ | The Hermitian algebraic norm, real, indefinite |
+| $H(A)=A\bar A=a^2-b^2$ | The Hermitian algebraic norm, real, indefinite |
 | $\operatorname{Re}P$, $\operatorname{Re}H$ | The realifications, with Gram matrices $\mathrm{diag}(1,1)$ and $\mathrm{diag}(1,-1)$ |
 | $g(A,C)=ac-bd$ | The polar form of $N$, of signature $(1,1)$ |
 | $\mathbb{R}\Pi_+\cup\mathbb{R}\Pi_-$ | The isotropic set of $H$ |

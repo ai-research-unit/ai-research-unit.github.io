@@ -72,18 +72,16 @@ the set of finite sums of Hermitian squares.
 
 **Remark (admitting square roots).** In $\mathbb{C}$ every element is a square, so the passage from an element to its square root loses nothing and the notion of a square is useless for positivity; the useful notion is the Hermitian square, whose value at $Q$ is real and whose two roots $\pm Q$ include an element of the cone whenever the value is positive. In $\mathbb{C}^{\mathrm{spl}}$ not every element is a square, the set of squares is already a cone, and the two notions part company. The capacity to take square roots therefore does not make positivity easier; it makes the naive definition of positivity vacuous, and the Hermitian definition is what remains.
 
-## The Cone Read in the Four Forms
+## The Cone Read in the Two Forms
 
-The four forms of the general theory fall two-and-two on $\mathbb{C}$, and the table records the positivity each one defines.
+The space carries two forms, and the table records the positivity each one defines.
 
 | the form | its value at $Q$ | the positivity it defines |
 |---|---|---|
-| $\langle Q,Q\rangle$ | $Q^{2}$, complex | none: no cone, no order |
-| $\langle Q,Q\rangle_{\natural}$ | $Q^{2}$, complex | none |
-| $\langle Q,Q\rangle_{*}$ | $Q\bar Q$, real non-negative | the ray $[0,\infty)$ |
-| $\langle Q,Q\rangle_{\natural*}$ | $Q\bar Q$, real non-negative | the ray $[0,\infty)$ |
+| $\langle Q,Q\rangle=Q^{2}$ | $Q^{2}$, complex | none: no cone, no order |
+| $\langle Q,Q\rangle_{*}=Q\bar Q$ | $Q\bar Q$, real non-negative | the ray $[0,\infty)$ |
 
-**Remark (two rows, one cone).** Positivity is carried by the two sesquilinear rows and only by them, and the two carry the same cone. The plain rows define no positivity because a complex-valued form has no non-negative values to single out. In a higher-rank algebra the four rows need not collapse; here the intrinsic conjugation is the identity, so the four forms are two and the two sesquilinear rows carry one cone. The complex case has one cone because it has one dimension.
+**Remark (one form, one cone).** Positivity is carried by the Hermitian form and only by it. The plain form defines none because a complex-valued form has no non-negative values to single out. The complex case has one cone because it has one dimension and one form that takes real values.
 
 ## The Hilbert Algebra of Rank One
 

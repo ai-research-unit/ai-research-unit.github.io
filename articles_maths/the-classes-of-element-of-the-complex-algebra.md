@@ -4,9 +4,9 @@
 
 The complex field is the one-dimensional complex algebra, and this article reads on it the general classes of element: the zero divisors, the annihilators, the idempotents, the nilpotents, the roots, the ideals and the modules. The answer is short and it is the answer of a field. Most of these classes are empty or two-point on $\mathbb{C}$, and the work of the article is to say which, to prove it, and to account for the collapse.
 
-The article is a consolidation, not a translation. On $\mathbb{C}$ the classes are not numerous enough to carry an article each, so they are gathered here as sections. Nothing is proved twice: the products $Q_1Q_2$ and $Q_1\bar Q_2$ are *The Two Products of the Complex Space*, the two forms $\langle Q_1,Q_2\rangle=\langle Q_1,Q_2\rangle_{\natural}=Q_1Q_2$ and $\langle Q_1,Q_2\rangle_{*}=\langle Q_1,Q_2\rangle_{\natural*}=Q_1\bar Q_2$ and the two algebraic norms $Q_1^{2}$ and $Q_1\bar Q_1$ are *The Two Forms and the Two Algebraic Norms of the Complex Space*, and the norm, the invertibility criterion and the group of units are *Complex Norm and Invertibility*. The classes are those of the general study of the twelve algebraic structures. The field property behind every emptiness is *The Specificities of the Complex Algebra*, below this article in this category.
+The article is a consolidation, not a translation. On $\mathbb{C}$ the classes are not numerous enough to carry an article each, so they are gathered here as sections. Nothing is proved twice: the products $Q_1Q_2$ and $Q_1\bar Q_2$ are *The Two Products of the Complex Space*, the two forms $\langle Q_1,Q_2\rangle=Q_1Q_2$ and $\langle Q_1,Q_2\rangle_{*}=Q_1\bar Q_2$ and the two algebraic norms $Q_1^{2}$ and $Q_1\bar Q_1$ are *The Two Forms and the Two Algebraic Norms of the Complex Space*, and the norm, the invertibility criterion and the group of units are *Complex Norm and Invertibility*. Every class below is a class of element of the algebra, taken with respect to a product. The field property behind every emptiness is *The Specificities of the Complex Algebra*, below this article in this category.
 
-**Interpretation and notation.** The base involution is the complex conjugation $\bar Q_1=q_1-iq'_1$; the Hermitian conjugation is the bar, ${}^{*}=\bar{\cdot}$. The two products are the general plain bilinear product $Q_1Q_2$, the multiplication of the field, and the general plain sesquilinear product $Q_1\bar Q_2$. The element is $Q_1=q_1+iq'_1$, a second element is $Q_2=q_2+iq'_2$, and their product is $Q_1Q_2=(q_1q_2-q'_1q'_2)+i(q_1q'_2+q'_1q_2)$. The brackets $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{*}$, with their quaternionic and Krein companions, name the four forms and are never used for elements. A class of element is defined with respect to a product, and every class below is read in both products.
+**Interpretation and notation.** The base involution is the complex conjugation $\bar Q_1=q_1-iq'_1$; the Hermitian conjugation is the bar, ${}^{*}=\bar{\cdot}$. The two products are the plain bilinear product $Q_1Q_2$, the multiplication of the field, and the plain sesquilinear product $Q_1\bar Q_2$. The element is $Q_1=q_1+iq'_1$, a second element is $Q_2=q_2+iq'_2$, and their product is $Q_1Q_2=(q_1q_2-q'_1q'_2)+i(q_1q'_2+q'_1q_2)$. The two brackets $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{*}$ name the two forms, and are never used for elements. A class of element is defined with respect to a product, and every class below is read in both products.
 
 ## The Zero Divisors and the Annihilators
 
@@ -16,7 +16,7 @@ The article is a consolidation, not a translation. On $\mathbb{C}$ the classes a
 
 **Proof.** For the plain product, let $Q_1Q_2=0$ with $Q_1\neq0$. Since $\mathbb{C}$ is a field, $Q_1$ is invertible, and $Q_2=Q_1^{-1}(Q_1Q_2)=0$; the same on the other side. For the sesquilinear product, $Q_1\bar Q_2=0$ with $Q_1\neq0$ gives $\bar Q_2=Q_1^{-1}0=0$, hence $Q_2=0$; and $Q_2\bar Q_1=0$ with $Q_1\neq0$ gives $Q_2=0$. The annihilator statements are the same computation read as a set.
 
-**Remark (the collapse of the cone).** On $\mathbb{C}$ the zero divisors and the nontrivial annihilators both collapse, and they collapse for the same reason: an element is invertible exactly when it is nonzero.
+**Remark (the collapse of the class).** On $\mathbb{C}$ the zero divisors and the nontrivial annihilators both vanish, and for the same reason: an element is invertible exactly when it is nonzero.
 
 ## The Idempotents
 
@@ -30,7 +30,7 @@ The article is a consolidation, not a translation. On $\mathbb{C}$ the classes a
 
 ## The Nilpotents
 
-**Definition.** A nonzero element $\Upsilon$ is a **nilpotent** when some power of it vanishes; over $\mathbb{C}$ the square already vanishes, a nilpotent being an element with $\Upsilon^{2}=0$.
+**Definition.** A nonzero element $\Upsilon$ is a **nilpotent** when some power of it vanishes. Over a field the square already suffices, since $\Upsilon^{n}=0$ with $n$ least factors as $\Upsilon\cdot\Upsilon^{n-1}=0$ and forces $\Upsilon^{n-1}=0$; the theorem below is proved for $\Upsilon^{2}=0$.
 
 **Theorem.** In either product the only element of $\mathbb{C}$ with $\Upsilon^{2}=0$ is $0$.
 
@@ -40,7 +40,7 @@ The article is a consolidation, not a translation. On $\mathbb{C}$ the classes a
 
 ## The Roots of the Distinguished Values
 
-**Definition.** A **root** of a value $W$ in a product is an element $Z$ with $Z^{2}=W$ in that product; a root of $-1$ is written $Ζ$.
+**Definition.** A **root** of a value $W$ in a product is an element $Z$ with $Z^{2}=W$ in that product; a root of a central value is written $Ζ$, the tilde-free glyph of the complex layer, the case rule being the one of *Special Element and Peirce Conventions*, §*The Root Convention*.
 
 **Theorem.** In the plain product the roots are as follows: of $-1$ exactly the two elements $i$ and $-i$; of $+1$ exactly the two elements $1$ and $-1$; of $0$ the element $0$ alone.
 
@@ -91,7 +91,7 @@ Read on the complex field, these classes of element are the classes of a field. 
 | $Q_1Q_2$, $Q_1\bar Q_2$ | the general plain bilinear and the general plain sesquilinear product |
 | $\Pi$ | an idempotent, with no tilde in the complex layer |
 | $\Upsilon$ | a nilpotent, with no tilde in the complex layer |
-| $Ζ$ | a root of $-1$, with no tilde in the complex layer |
+| $Ζ$ | a root of a central value, with no tilde in the complex layer |
 
 ## Further Reading
 

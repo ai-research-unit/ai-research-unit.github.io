@@ -6,7 +6,7 @@ The sesquilinear product $Q_1\bar Q_2$ has a second reading, and it is the readi
 
 The article assumes the form is the general plain sesquilinear form and does not define it twice: the form and the product it comes from are *The Sesquilinear Product of the Complexoid Space*, above this article. It does not treat the topological norm, the modulus or the topology of the cone: those are *Complex Norm and Invertibility*, and the article only names them where the algebra-level statement ends. The general theory is *Positivity and the Positive Cone of a Hermitian Form*, *Hermitian Modules over a Hermitian Algebra with Hermitian Adjoint* and *Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint*.
 
-**Interpretation and notation.** The element is $Q=q+iq'$; the base involution is the bar $\bar Q=q-iq'$ and ${}^{*}=\bar{\cdot}$. The letters $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{\natural}$, $\langle\cdot,\cdot\rangle_{*}$, $\langle\cdot,\cdot\rangle_{\natural*}$ name the four forms, and $\langle\cdot,\cdot\rangle=\langle\cdot,\cdot\rangle_{\natural}=Q_1Q_2$, $\langle\cdot,\cdot\rangle_{*}=\langle\cdot,\cdot\rangle_{\natural*}=Q_1\bar Q_2$ on the complex space; they are never elements. The Hermitian form is written $\langle Q_1,Q_2\rangle_{*}$, its diagonal $\langle Q\rangle_{*}=\langle Q,Q\rangle_{*}$; the algebraic norm $Q\bar Q$ is the same diagonal and is written $Q\bar Q$ in the algebraic statements. The brackets $[\,,\,]$ and the dot product are the commutator and the symmetrised product of *The Sesquilinear Product of the Complexoid Space*, above this article.
+**Interpretation and notation.** The element is $Q=q+iq'$; the base involution is the bar $\bar Q=q-iq'$ and ${}^{*}=\bar{\cdot}$. The letters $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{*}$ name the two forms, $\langle\cdot,\cdot\rangle=Q_1Q_2$ and $\langle\cdot,\cdot\rangle_{*}=Q_1\bar Q_2$, and they are never elements. The Hermitian form is written $\langle Q_1,Q_2\rangle_{*}$, its diagonal $\langle Q\rangle_{*}=\langle Q,Q\rangle_{*}$; the algebraic norm $Q\bar Q$ is the same diagonal and is written $Q\bar Q$ in the algebraic statements. The brackets $[\,,\,]$ and the dot product are the commutator and the symmetrised product of *The Sesquilinear Product of the Complexoid Space*, above this article.
 
 ## The Hermitian Form
 
@@ -152,7 +152,7 @@ The Hermitian form of the complex space is $\langle Q_1,Q_2\rangle_{*}=Q_1\bar Q
 
 | Symbol | Meaning |
 |---|---|
-| $\langle Q_1,Q_2\rangle_{*}=Q_1\bar Q_2$ | the Hermitian form, the general plain sesquilinear form (and $\langle\cdot,\cdot\rangle_{*}=\langle\cdot,\cdot\rangle_{\natural*}$ on $\mathbb{C}$) |
+| $\langle Q_1,Q_2\rangle_{*}=Q_1\bar Q_2$ | the Hermitian form, the plain sesquilinear form |
 | $\langle Q\rangle_{*}=\langle Q,Q\rangle_{*}=Q\bar Q$ | the associated quadratic form, the definite algebraic norm |
 | $Q_1\odot Q_2$, $[Q_1,Q_2]$ | the symmetrised product $2\operatorname{Re}(Q_1\bar Q_2)$ and the commutator $2i\operatorname{Im}(Q_1\bar Q_2)$ |
 | $P=\mathbb{R}_{\ge0}$ | the Hermitian cone, the ray of the non-negative reals |

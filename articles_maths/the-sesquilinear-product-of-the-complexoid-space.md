@@ -12,7 +12,7 @@ $$
 Q_1\star Q_2= Q_1\bar Q_2,
 $$
 
-the superscript star being reserved for the involution and never written as an operator symbol; the plain product is juxtaposition. The elements are written with the letter $Q$, numbered when several occur; the letters $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{\natural}$, $\langle\cdot,\cdot\rangle_{*}$, $\langle\cdot,\cdot\rangle_{\natural*}$ name the four forms of the corpus, and only $\langle\cdot,\cdot\rangle_{*}$ appears in this article, in the adjoint of the two-sided operator. The two-sided parameters are $Q_1$ and $Q_2$.
+the superscript star being reserved for the involution and never written as an operator symbol; the plain product is juxtaposition. The elements are written with the letter $Q$, numbered when several occur; the letters $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{*}$ name the two forms of the space, and only $\langle\cdot,\cdot\rangle_{*}$ appears in this article, in the adjoint of the two-sided operator. The two-sided parameters are $Q_1$ and $Q_2$.
 
 ## The Product and Its Class
 
@@ -26,7 +26,7 @@ $$
 
 **Proof.** The first identity is the associativity-legality of the scalar in the plain product; the second is $\overline{\lambda Q_2}=\bar\lambda\bar Q_2$.
 
-**Proposition (the two one-sided units).** The element $1$ is a right unit and not a left unit: $Q\star1=Q$ for every $Q$, while $1\star Q=\bar Q$, which equals $Q$ only for real $Q$. The product has no two-sided unit.
+**Proposition (the one-sided units).** The element $1$ is a right unit: $Q\star1=Q$ for every $Q$. The product has no left unit and no two-sided unit, since $1$ is not a left unit, $1\star Q=\bar Q$ being different from $Q$ for non-real $Q$.
 
 **Proof.** $Q\star1=Q\bar 1=Q$, and $1\star Q=1\bar Q=\bar Q$. A two-sided unit $\mathrm{U}$ would satisfy $\mathrm{U}\star Q=Q$, that is $\mathrm{U}\bar Q=Q$ for every $Q$; at $Q=i$ this reads $-\mathrm{U}i=i$, so $\mathrm{U}=-1$, while at $Q=1$ it reads $\mathrm{U}=1$, and the two values disagree. No two-sided unit exists.
 

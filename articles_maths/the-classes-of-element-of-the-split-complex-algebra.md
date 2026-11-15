@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The corpus studies, for each algebraic structure of the twelve, the classes of element singled out by the multiplication: the units and the zero divisors, the idempotents, the nilpotents, the square roots of the three central values $-1$, $0$ and $+1$, and the square roots of a general element. This article is the **hub** of those classes for the split-complex algebra $\mathbb{C}_{\mathrm{spl}}$, the two-dimensional member of the family. It names each class with its pointer, records the inclusions and the disjointness among the classes, and owns the one object that none of the specialised articles carries: the **order cone of squares**.
+The corpus studies, for each algebra of the ladder, the classes of element singled out by the multiplication: the units and the zero divisors, the idempotents, the nilpotents, the square roots of the three central values $-1$, $0$ and $+1$, and the square roots of a general element. This article is the **hub** of those classes for the split-complex algebra $\mathbb{C}_{\mathrm{spl}}$, the two-dimensional member of the family. It names each class with its pointer, records the inclusions and the disjointness among the classes, and owns the one object that none of the specialised articles carries: the **order cone of squares**.
 
 **The classes and their articles.** The classes are now developed in the articles of the block, one subject per article:
 

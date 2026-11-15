@@ -4,7 +4,7 @@
 
 The complex space carries two products: the **general plain bilinear product** $Q_1Q_2$, which is the multiplication of the field, and the **general plain sesquilinear product** $Q_1\bar Q_2$, the derived operation of the algebra with its conjugate-linear involution. They are the two products on which the whole `## Complex Numbers` chapter is built.
 
-This article defines the two products, writes them in coordinates, states the defining property of each, and names the two structures they define. The full relations between them and their comparison, as a table with witnesses, are *Relations and Comparison Between the Two Products*, below this article in this category; the multiplication of the field is *Complex Algebra*, below this article in this category, which owns it; and the two forms carried by the two products are *The Two Forms and the Two Algebraic Norms of the Complexoid Space*, also below.
+This article defines the two products, writes them in coordinates, states the defining property of each, and names the two structures they define. The full relations between them and their comparison, as a table with witnesses, are *The Two Products of the Complex Space*, in the category of the complex numbers; the multiplication of the field is *Complex Algebra*, below this article in this category, which owns it; and the two forms carried by the two products are *The Two Forms and the Two Algebraic Norms of the Complexoid Space*, also below.
 
 The elements are written $Q_1 = q_1 + iq'_1$ and $Q_2 = q_2 + iq'_2$. The **bar** is complex conjugation and the **Hermitian star** coincides with it, $Q_1^{*} = \bar Q_1$.
 
@@ -68,15 +68,15 @@ The product $Q_1Q_2$ is the multiplication of the field, the left multiplication
 3. The unit $1$ is a right unit but not a left unit, $Q_1\bar 1 = Q_1$ and $1\bar Q_2 = \bar Q_2$.
 4. It is not associative.
 
-**Proof.** Item 1 follows from the multiplication being bilinear and the bar being an involution. For item 2, $\overline{Q_2\bar Q_1} = \bar Q_2 Q_1 = Q_1\bar Q_2$, the last step by commutativity. For item 3, $\bar 1 = 1$ gives $Q_1\bar 1 = Q_1$, while $1\bar Q_2 = \bar Q_2$, which equals $Q_2$ only for real $Q_2$. For item 4 the witness is $Q_1 = 1$, $Q_2 = 1$, $Q_3 = i$:
+**Proof.** Item 1 follows from the multiplication being bilinear and the bar being an involution. For item 2, $\overline{Q_2\bar Q_1} = \bar Q_2 Q_1 = Q_1\bar Q_2$, the last step by commutativity. For item 3, $\bar 1 = 1$ gives $Q_1\bar 1 = Q_1$, while $1\bar Q_2 = \bar Q_2$, which equals $Q_2$ only for real $Q_2$; and no left unit exists, since a left unit $E$ satisfies $E\bar Q = Q$ for every $Q$ and would have to be $E=1$ at $Q=1$ and $E=-1$ at $Q=i$. For item 4 the witness is $Q_1 = 1$, $Q_2 = 1$, $Q_3 = i$:
 
 $$
 (Q_1\bar Q_2)\bar Q_3 = 1 \cdot \bar i = -i, \qquad Q_1\overline{(Q_2\bar Q_3)} = \overline{1 \cdot \bar i} = \overline{-i} = i.
 $$
 
-The two differ, so the product is not associative; it also fails alternation and flexibility and the degree-three identity, the weaker laws of an associative product, with witnesses in *Relations and Comparison Between the Two Products*, below this article in this category, and the failure is the general one for a sesquilinear product, the second slot carrying the conjugate.
+The two differ, so the product is not associative; it also fails alternation and flexibility and the degree-three identity, the weaker laws of an associative product, with the witnesses of *The Two Products of the Complex Space*, and the failure is the general one for a sesquilinear product, the second slot carrying the conjugate.
 
-The product $Q_1\bar Q_2$ is the derived operation of the algebra with its conjugate-linear involution: it is the sesquilinear form of the algebra read as a multiplication, it is conjugate-commutative, and it has no zero divisor, since $Q_1\bar Q_2 = 0$ with $Q_1 \neq 0$ forces $\bar Q_2 = 0$. Its properties against those of $Q_1Q_2$ are tabulated in *Relations and Comparison Between the Two Products*, below this article in this category.
+The product $Q_1\bar Q_2$ is the derived operation of the algebra with its conjugate-linear involution: it is the sesquilinear form of the algebra read as a multiplication, it is conjugate-commutative, and it has no zero divisor, since $Q_1\bar Q_2 = 0$ with $Q_1 \neq 0$ forces $\bar Q_2 = 0$. Its properties against those of $Q_1Q_2$ are tabulated in *The Two Products of the Complex Space*.
 
 ## The Two Structures the Two Products Define
 

@@ -59,14 +59,14 @@ The two properties are therefore joined here. A definite function is nonzero off
 
 ## Summary
 
-The two products of the complex space carry two forms, $\langle Q_1,Q_2\rangle=Q_1Q_2$ and $\langle Q_1,Q_2\rangle_{*}=Q_1\bar Q_2$, the collapse of the four forms $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{\natural}$, $\langle\cdot,\cdot\rangle_{*}$, $\langle\cdot,\cdot\rangle_{\natural*}$ to the two settings of the second slot; the four products and forms become two, $\langle\cdot,\cdot\rangle=\langle\cdot,\cdot\rangle_{\natural}$ and $\langle\cdot,\cdot\rangle_{*}=\langle\cdot,\cdot\rangle_{\natural*}$. The two forms have the same Gram matrix $[1]$ over $\mathbb{C}$ and are separated by their symmetry alone, $\langle\cdot,\cdot\rangle$ symmetric and $\langle\cdot,\cdot\rangle_{*}$ conjugate-symmetric. Their algebraic norms are $\langle Q\rangle=Q^{2}$, complex and anisotropic, and $\langle Q\rangle_{*}=q^{2}+q'^{2}$, real and positive definite; both are multiplicative. One and the same function $\langle\cdot,\cdot\rangle_{*}$ is both definite and multiplicative.
+The two products of the complex space carry two forms, $\langle Q_1,Q_2\rangle=Q_1Q_2$ and $\langle Q_1,Q_2\rangle_{*}=Q_1\bar Q_2$, one for each product and no third. The two forms have the same Gram matrix $[1]$ over $\mathbb{C}$ and are separated by their symmetry alone, $\langle\cdot,\cdot\rangle$ symmetric and $\langle\cdot,\cdot\rangle_{*}$ conjugate-symmetric. Their algebraic norms are $\langle Q\rangle=Q^{2}$, complex and anisotropic, and $\langle Q\rangle_{*}=q^{2}+q'^{2}$, real and positive definite; both are multiplicative. One and the same function $\langle\cdot,\cdot\rangle_{*}$ is both definite and multiplicative.
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
 | $Q_1$, $Q_2$ | elements of the space |
-| $\langle Q_1,Q_2\rangle_{*}=Q_1\bar Q_2$ | the general plain sesquilinear or Hermitian form, equal to the Krein form $\langle\cdot,\cdot\rangle_{\natural*}$ |
+| $\langle Q_1,Q_2\rangle_{*}=Q_1\bar Q_2$ | the Hermitian form |
 | $\langle Q\rangle=Q^{2}$ | the plain bilinear algebraic norm |
 | $\langle Q\rangle_{*}=Q\bar Q=q^{2}+q'^{2}$ | the Hermitian algebraic norm, real and positive definite |
 | $\bar{\cdot}$ | complex conjugation, the bar |
@@ -76,6 +76,6 @@ The two products of the complex space carry two forms, $\langle Q_1,Q_2\rangle=Q
 ## Further Reading
 
 - [The Two Products of the Complex Space](the-two-products-of-the-complex-space.html), for the two products whose scalar parts the two forms are.
-- *Relations and Comparison Between the Two Products*, for the two products set against each other.
+- *The Two Products of the Complex Space*, for the two products set against each other, with the comparison table and its witnesses.
 - [Complex Norm and Invertibility](complex-norm-and-invertibility.html), below this article in this category, for the topological norm $|\cdot|=\sqrt{\langle\cdot\rangle_{*}}$, its multiplicativity, the invertibility criterion and the group of units.
 - [The Realification and the Effect of the Change of Scalars](the-realification-and-the-effect-of-the-change-of-scalars.html), below this article in this category, for the two rules that give the realified signatures $(1,1)$ and $(2,0)$.

@@ -14,21 +14,21 @@ The article does not define the two forms, which are *The Two Forms and the Two 
 The two forms of the complex space are
 
 $$
-B(Q_1,Q_2)=Q_1Q_2, \qquad H(Q_1,Q_2)=Q_1\bar Q_2,
+P(Q_1,Q_2)=Q_1Q_2, \qquad H(Q_1,Q_2)=Q_1\bar Q_2,
 $$
 
 the first the multiplication of the field, symmetric, and the second the derived operation of the algebra, conjugate-symmetric; the two products of the complex space are exactly these, $Q_1Q_2$ and $Q_1\bar Q_2$ (*The Two Products of the Complex Space*). Both are $\mathbb{C}$-linear in the first slot and both have Gram matrix $[1]$ over $\mathbb{C}$ (*The Two Forms and the Two Algebraic Norms of the Complex Space*). Their diagonals are the two algebraic norms,
 
 $$
-B(Q_1,Q_1)=Q_1^{2}, \qquad H(Q_1,Q_1)=Q_1\bar Q_1=\langle Q_1\rangle_{*},
+P(Q_1,Q_1)=Q_1^{2}, \qquad H(Q_1,Q_1)=Q_1\bar Q_1=\langle Q_1\rangle_{*},
 $$
 
-the first complex and anisotropic and the second real, positive definite and multiplicative. The form $\langle\cdot,\cdot\rangle$ is the two-dimensional case of the general plain bilinear form and $\langle\cdot,\cdot\rangle_{*}$ the case of the general plain sesquilinear form; the two bilinear forms coincide and the two sesquilinear forms coincide, so $B=\langle\cdot,\cdot\rangle_{\natural}$ and $H=\langle\cdot,\cdot\rangle_{\natural*}$, which is the reason the two diagonal norms are written $Q_1^{2}$ and $\langle Q_1\rangle_{*}$.
+the first complex and anisotropic and the second real, positive definite and multiplicative. The form $\langle\cdot,\cdot\rangle$ is the plain bilinear one and $\langle\cdot,\cdot\rangle_{*}$ the sesquilinear one, so $P=\langle\cdot,\cdot\rangle$ and $H=\langle\cdot,\cdot\rangle_{*}$, which is the reason the two diagonal norms are written $Q_1^{2}$ and $\langle Q_1\rangle_{*}$.
 
 Both forms are complex-valued, and a real function is obtained from each by realification. In the real basis $1$, $i$, with $Q_1=q_1+iq'_1$ and $Q_2=q_2+iq'_2$,
 
 $$
-\operatorname{Re}B(Q_1,Q_2)=q_1q_2-q'_1q'_2, \qquad \operatorname{Re}H(Q_1,Q_2)=q_1q_2+q'_1q'_2.
+\operatorname{Re}P(Q_1,Q_2)=q_1q_2-q'_1q'_2, \qquad \operatorname{Re}H(Q_1,Q_2)=q_1q_2+q'_1q'_2.
 $$
 
 **Proposition (the two realified Gram matrices).** The realified forms have the Gram matrices
@@ -74,7 +74,7 @@ on the matrix of the map in the basis $1$, $i$. The maps of determinant $+1$ in 
 **Definition.** The **split metric** of the complex space is the quadratic function induced by the realified bilinear form $\langle\cdot,\cdot\rangle$,
 
 $$
-d_{B}^{2}(Q_1,Q_2)=\operatorname{Re}B(Q_1-Q_2,Q_1-Q_2)=\operatorname{Re}\bigl((Q_1-Q_2)^{2}\bigr)=(q_1-q_2)^{2}-(q'_1-q'_2)^{2}.
+d_{P}^{2}(Q_1,Q_2)=\operatorname{Re}P(Q_1-Q_2,Q_1-Q_2)=\operatorname{Re}\bigl((Q_1-Q_2)^{2}\bigr)=(q_1-q_2)^{2}-(q'_1-q'_2)^{2}.
 $$
 
 It is the diagonal of the realified form read on the difference $Q_1-Q_2$.
@@ -86,12 +86,12 @@ It is the diagonal of the realified form read on the difference $Q_1-Q_2$.
 **The null cone.** The split metric vanishes on the pairs whose separations satisfy $\lvert q_1-q_2\rvert=\lvert q'_1-q'_2\rvert$, that is
 
 $$
-d_{B}^{2}(Q_1,Q_2)=0 \iff q_1-q_2=\pm(q'_1-q'_2).
+d_{P}^{2}(Q_1,Q_2)=0 \iff q_1-q_2=\pm(q'_1-q'_2).
 $$
 
 Through each point $Q_2$ this is a pair of lines, of directions $1+i$ and $1-i$; the two directions are exchanged by conjugation, since $\overline{1+i}=1-i$. The null pair depends only on the difference, as does the metric itself.
 
-**The level sets.** For a constant $\kappa\neq0$ the equation $d_{B}^{2}(Q_1,Q_2)=\kappa$ is a hyperbola; the two families $\kappa>0$ and $\kappa<0$ are exchanged by the multiplication by $i$, and neither meets the null pair. The split metric is thus read by its null pair of lines and its two families of hyperbolas, in contrast with the circles of the Euclidean metric.
+**The level sets.** For a constant $\kappa\neq0$ the equation $d_{P}^{2}(Q_1,Q_2)=\kappa$ is a hyperbola; the two families $\kappa>0$ and $\kappa<0$ are exchanged by the multiplication by $i$, and neither meets the null pair. The split metric is thus read by its null pair of lines and its two families of hyperbolas, in contrast with the circles of the Euclidean metric.
 
 **The group of maps preserving the form.** The $\mathbb{R}$-linear maps preserving the realified form are those whose matrix $M$ in the basis $1$, $i$ satisfies
 
@@ -99,7 +99,7 @@ $$
 M^{\mathsf T}\operatorname{diag}(1,-1)M=\operatorname{diag}(1,-1),
 $$
 
-the group $O(1,1)$. Its subgroup whose elements fix the two null lines of $d_{B}^{2}$ separately consists of the matrices
+the group $O(1,1)$. Its subgroup whose elements fix the two null lines of $d_{P}^{2}$ separately consists of the matrices
 
 $$
 \begin{pmatrix}a & b\\ b & a\end{pmatrix}, \qquad a^{2}-b^{2}=1,
@@ -113,25 +113,25 @@ The two metrics live on the same plane and are read from the two forms.
 
 **Proposition (the two quadratics differ only in the sign of the square).** For all $Q_1,Q_2$,
 
-$$ \boxed{\;d_{H}^{2}(Q_1,Q_2)-d_{B}^{2}(Q_1,Q_2)=2(q'_1-q'_2)^{2}, \qquad d_{H}^{2}(Q_1,Q_2)+d_{B}^{2}(Q_1,Q_2)=2(q_1-q_2)^{2}\;}.
+$$ \boxed{\;d_{H}^{2}(Q_1,Q_2)-d_{P}^{2}(Q_1,Q_2)=2(q'_1-q'_2)^{2}, \qquad d_{H}^{2}(Q_1,Q_2)+d_{P}^{2}(Q_1,Q_2)=2(q_1-q_2)^{2}\;}.
 $$
 
 *Proof.* Add and subtract the two coordinate expressions $(q_1-q_2)^{2}\pm(q'_1-q'_2)^{2}$.
 
-So each metric recovers one of the two squared coordinates from the pair, and the two differ by a positive term: the Euclidean metric is the sum, the split metric the difference, of the two squared coordinate separations. In particular $d_{H}^{2}\geq d_{B}^{2}$ always, and the two agree exactly when the imaginary separations vanish.
+So each metric recovers one of the two squared coordinates from the pair, and the two differ by a positive term: the Euclidean metric is the sum, the split metric the difference, of the two squared coordinate separations. In particular $d_{H}^{2}\geq d_{P}^{2}$ always, and the two agree exactly when the imaginary separations vanish.
 
 **Proposition (the forms are exchanged by conjugation in a slot).** For all $Q_1,Q_2$,
 
-$$ \boxed{\;H(Q_1,Q_2)=B(Q_1,\bar Q_2), \qquad B(Q_1,Q_2)=H(Q_1,\bar Q_2)\;}.
+$$ \boxed{\;H(Q_1,Q_2)=P(Q_1,\bar Q_2), \qquad P(Q_1,Q_2)=H(Q_1,\bar Q_2)\;}.
 $$
 
-*Proof.* $B(Q_1,\bar Q_2)=Q_1\bar Q_2=H(Q_1,Q_2)$, and $H(Q_1,\bar Q_2)=Q_1\overline{\bar Q_2}=Q_1Q_2=B(Q_1,Q_2)$.
+*Proof.* $P(Q_1,\bar Q_2)=Q_1\bar Q_2=H(Q_1,Q_2)$, and $H(Q_1,\bar Q_2)=Q_1\overline{\bar Q_2}=Q_1Q_2=P(Q_1,Q_2)$.
 
 The two metrics are therefore the two readings of the two forms related by conjugation of the second argument.
 
 **Proposition (multiplication by $i$ preserves one and reverses the other).** For the complex structure $J(Q)=iQ$,
 
-$$ \boxed{\;d_{H}^{2}(JQ_1,JQ_2)=d_{H}^{2}(Q_1,Q_2), \qquad d_{B}^{2}(JQ_1,JQ_2)=-d_{B}^{2}(Q_1,Q_2)\;}.
+$$ \boxed{\;d_{H}^{2}(JQ_1,JQ_2)=d_{H}^{2}(Q_1,Q_2), \qquad d_{P}^{2}(JQ_1,JQ_2)=-d_{P}^{2}(Q_1,Q_2)\;}.
 $$
 
 *Proof.* In coordinates $J(q_1,q'_1)=(-q'_1,q_1)$; substituting gives $(q_1-q_2)^{2}+(q'_1-q'_2)^{2}$ unchanged and $(q_1-q_2)^{2}-(q'_1-q'_2)^{2}$ negated. Equivalently, the realified Hermitian form is preserved by $J$ and the realified bilinear form is reversed, as the realification rules record.
@@ -151,24 +151,24 @@ So the complex-linear coincidences are only the central pair, while the two real
 For the worked pair of the category, $Q_1=3+4i$ and $Q_2=1-2i$, the difference is $Q_1-Q_2=2+6i$, so
 
 $$
-d_{H}^{2}(Q_1,Q_2)=2^{2}+6^{2}=40, \qquad d_{B}^{2}(Q_1,Q_2)=2^{2}-6^{2}=-32.
+d_{H}^{2}(Q_1,Q_2)=2^{2}+6^{2}=40, \qquad d_{P}^{2}(Q_1,Q_2)=2^{2}-6^{2}=-32.
 $$
 
-The two identities of the comparison read $d_{H}^{2}-d_{B}^{2}=72=2\cdot6^{2}$ and $d_{H}^{2}+d_{B}^{2}=8=2\cdot2^{2}$. The Euclidean metric is positive on the separation $2+6i$, while the split metric is negative on it; the two metrics disagree on its sign because the second is indefinite.
+The two identities of the comparison read $d_{H}^{2}-d_{P}^{2}=72=2\cdot6^{2}$ and $d_{H}^{2}+d_{P}^{2}=8=2\cdot2^{2}$. The Euclidean metric is positive on the separation $2+6i$, while the split metric is negative on it; the two metrics disagree on its sign because the second is indefinite.
 
 For the null pair, a difference on the line of direction $1+i$ is $Q=t(1+i)$, and indeed
 
 $$
-d_{B}^{2}(t(1+i),0)=t^{2}-t^{2}=0
+d_{P}^{2}(t(1+i),0)=t^{2}-t^{2}=0
 $$
 
 for every real $t$; the same holds on the line of direction $1-i$. On those differences the Euclidean metric is $d_{H}^{2}=2t^{2}$, so the null lines of the split metric are the directions on which the split value vanishes while the Euclidean value stays positive.
 
 ## Summary
 
-The one complex plane carries two real quadratic functions, one from each of the two forms. The definite Hermitian form $\langle Q_1,Q_2\rangle_{*}=Q_1\bar Q_2$ gives the Euclidean metric $d_{H}^{2}(Q_1,Q_2)=(q_1-q_2)^{2}+(q'_1-q'_2)^{2}$, of Gram matrix $\mathrm{I}_{2}$ and signature $(2,0)$, positive definite, whose level sets are the circles, whose group of form-preserving $\mathbb{R}$-linear maps is $O(2)$ and whose genuine distance is the modulus of the difference. The realified plain bilinear form $\langle Q_1,Q_2\rangle=Q_1Q_2$ gives the split metric $d_{B}^{2}(Q_1,Q_2)=(q_1-q_2)^{2}-(q'_1-q'_2)^{2}$, of Gram matrix $\operatorname{diag}(1,-1)$ and signature $(1,1)$, indefinite, whose null set is the pair of lines $q_1-q_2=\pm(q'_1-q'_2)$, whose nonzero level sets are the two families of hyperbolas, and whose group of form-preserving $\mathbb{R}$-linear maps is $O(1,1)$, whose subgroup fixing the two null lines rescales them.
+The one complex plane carries two real quadratic functions, one from each of the two forms. The definite Hermitian form $\langle Q_1,Q_2\rangle_{*}=Q_1\bar Q_2$ gives the Euclidean metric $d_{H}^{2}(Q_1,Q_2)=(q_1-q_2)^{2}+(q'_1-q'_2)^{2}$, of Gram matrix $\mathrm{I}_{2}$ and signature $(2,0)$, positive definite, whose level sets are the circles, whose group of form-preserving $\mathbb{R}$-linear maps is $O(2)$ and whose genuine distance is the modulus of the difference. The realified plain bilinear form $\langle Q_1,Q_2\rangle=Q_1Q_2$ gives the split metric $d_{P}^{2}(Q_1,Q_2)=(q_1-q_2)^{2}-(q'_1-q'_2)^{2}$, of Gram matrix $\operatorname{diag}(1,-1)$ and signature $(1,1)$, indefinite, whose null set is the pair of lines $q_1-q_2=\pm(q'_1-q'_2)$, whose nonzero level sets are the two families of hyperbolas, and whose group of form-preserving $\mathbb{R}$-linear maps is $O(1,1)$, whose subgroup fixing the two null lines rescales them.
 
-The two metrics are the two readings of the two forms and satisfy $d_{H}^{2}-d_{B}^{2}=2(q'_1-q'_2)^{2}$ and $d_{H}^{2}+d_{B}^{2}=2(q_1-q_2)^{2}$; the forms are exchanged by conjugation of the second slot, $\langle Q_1,Q_2\rangle_{*}=B(Q_1,\bar Q_2)$, and multiplication by $i$ preserves the Euclidean metric and reverses the split one.
+The two metrics are the two readings of the two forms and satisfy $d_{H}^{2}-d_{P}^{2}=2(q'_1-q'_2)^{2}$ and $d_{H}^{2}+d_{P}^{2}=2(q_1-q_2)^{2}$; the forms are exchanged by conjugation of the second slot, $\langle Q_1,Q_2\rangle_{*}=P(Q_1,\bar Q_2)$, and multiplication by $i$ preserves the Euclidean metric and reverses the split one.
 
 ## Summary of Notation
 
@@ -176,16 +176,16 @@ The two metrics are the two readings of the two forms and satisfy $d_{H}^{2}-d_{
 |---|---|
 | $Q_1=q_1+iq'_1$, $Q_2=q_2+iq'_2$ | two elements of $\mathbb{C}$, with $q_1,q'_1,q_2,q'_2\in\mathbb{R}$ |
 | $\bar Q_1=q_1-iq'_1$ | complex conjugation, the bar |
-| $B(Q_1,Q_2)=Q_1Q_2$ | the plain bilinear form, $\langle\cdot,\cdot\rangle_{\natural}$; Gram matrix $[1]$ over $\mathbb{C}$ |
-| $H(Q_1,Q_2)=Q_1\bar Q_2$ | the Hermitian form, $\langle\cdot,\cdot\rangle_{\natural*}$; Gram matrix $[1]$ over $\mathbb{C}$ |
-| $\operatorname{Re}B(Q_1,Q_2)=q_1q_2-q'_1q'_2$ | the realified bilinear form; Gram matrix $\operatorname{diag}(1,-1)$; signature $(1,1)$ |
+| $P(Q_1,Q_2)=Q_1Q_2$ | the plain bilinear form, $\langle\cdot,\cdot\rangle$; Gram matrix $[1]$ over $\mathbb{C}$ |
+| $H(Q_1,Q_2)=Q_1\bar Q_2$ | the Hermitian form, $\langle\cdot,\cdot\rangle_{*}$; Gram matrix $[1]$ over $\mathbb{C}$ |
+| $\operatorname{Re}P(Q_1,Q_2)=q_1q_2-q'_1q'_2$ | the realified bilinear form; Gram matrix $\operatorname{diag}(1,-1)$; signature $(1,1)$ |
 | $\operatorname{Re}H(Q_1,Q_2)=q_1q_2+q'_1q'_2$ | the realified Hermitian form; Gram matrix $\mathrm{I}_{2}$; signature $(2,0)$ |
 | $d_{H}^{2}(Q_1,Q_2)=\langle Q_1-Q_2\rangle_{*}$ | Euclidean metric; positive definite; level sets the circles |
-| $d_{B}^{2}(Q_1,Q_2)=\operatorname{Re}\bigl((Q_1-Q_2)^{2}\bigr)$ | split metric; indefinite; level sets the hyperbolas |
+| $d_{P}^{2}(Q_1,Q_2)=\operatorname{Re}\bigl((Q_1-Q_2)^{2}\bigr)$ | split metric; indefinite; level sets the hyperbolas |
 | $q_1-q_2=\pm(q'_1-q'_2)$ | the null pair of lines of the split metric |
 | $M^{\mathsf T}M=\mathrm{I}_{2}$ | the condition for preserving $\operatorname{Re}H$; the group $O(2)$ |
 | $M^{\mathsf T}\operatorname{diag}(1,-1)M=\operatorname{diag}(1,-1)$ | the condition for preserving $\operatorname{Re}B$; the group $O(1,1)$ |
-| $J(Q)=iQ$ | the complex structure; preserves $d_{H}^{2}$, reverses $d_{B}^{2}$ |
+| $J(Q)=iQ$ | the complex structure; preserves $d_{H}^{2}$, reverses $d_{P}^{2}$ |
 
 ## Further Reading
 

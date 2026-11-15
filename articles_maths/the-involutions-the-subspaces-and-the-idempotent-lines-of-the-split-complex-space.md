@@ -4,7 +4,7 @@
 
 The split-complex ring $\mathbb{C}_{\mathrm{spl}}=\mathbb{R}[j]$, $j^2=1$, carries exactly two involutions: the identity and the conjugation $\bar\cdot$, $j\mapsto-j$. The two form the group $V_2$ of order two. This article computes what the two involutions cut: the four subspaces, fixed and anti-fixed, the two decompositions of the plane they give, the finer decomposition into the two idempotent lines, and the two lines on which the Hermitian form vanishes.
 
-The count is the point. The general theory carries four marks, the identity, the bar, the intrinsic conjugation ${}^{\natural}$ and the star; on a non-commutative algebra with a vector part they are four distinct maps and form a Klein four-group, while on $\mathbb{C}_{\mathrm{spl}}$ they act as two maps, because the bar is an automorphism of order two and the intrinsic conjugation has nothing to reverse. The degeneracy is not an accident of notation: it is the commutativity of the ring together with the absence of a vector part.
+The count is the point. The ring offers two marks, the identity and the bar, and no third: the bar is an automorphism of order two and the intrinsic conjugation has nothing to reverse. The shortness of the list is not an accident of notation: it is the commutativity of the ring together with the absence of a vector part.
 
 The article assumes the algebra of *Split-Complex Algebra* and the idempotents of *Square Roots of One and the Idempotents of the Split-Complex Algebra*. The forms used in the last section are *The Two Forms and the Two Algebraic Norms of the Split-Complex Space*, and the ideals the idempotent lines define are *Ideals and Peirce Decomposition of the Split-Complex Algebra*.
 
@@ -55,9 +55,9 @@ Three descriptions of the involution occur in the corpus, and on $\mathbb{C}_{\m
 
 - The **conjugation** of the ring, $j\mapsto-j$, is the involution above.
 - The **exchange of the idempotent coordinates**, $Q_+\leftrightarrow Q_-$, is the same map, since $\overline{q\pm q'}=q\mp q'$.
-- The **intrinsic conjugation** ${}^{\natural}$ of the general theory, which reverses the sign of the vector part, is the identity here: there is no vector part to reverse.
+- The **intrinsic conjugation** ${}^{\natural}$, which reverses the sign of the vector part, is the identity here: there is no vector part to reverse.
 
-A non-commutative algebra with a vector part carries four distinct marks and they form the Klein four-group; here the four act as two maps, the identity and the bar, and the group is $V_2$. The collapse has two causes and no third: the ring is commutative, so no involution can be an anti-automorphism without being an automorphism, and the element has no vector part, so the intrinsic conjugation has no carrier.
+A non-commutative algebra with a vector part carries more marks than this one; here the marks act as two maps, the identity and the bar, and the group is $V_2$. The short list has two causes and no third: the ring is commutative, so no involution can be an anti-automorphism without being an automorphism, and the element has no vector part, so the intrinsic conjugation has no carrier.
 
 ## The Three Decompositions of the Plane
 

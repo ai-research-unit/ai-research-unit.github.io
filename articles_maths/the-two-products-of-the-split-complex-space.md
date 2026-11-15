@@ -2,27 +2,19 @@
 
 ## Introduction
 
-The split-complex space carries two products: the plain one, $AC$, and the sesquilinear one, $A\bar C$. The general theory carries four, the plain, the intrinsic-bilinear, the conjugated and the intrinsic-sesquilinear, and here they collapse pairwise to two. This article counts the two, writes them on the coordinates and on the idempotent coordinates, states what fixes each of them, computes their laws and their pairings, and isolates the point that separates the split case from the complex one.
+The split-complex space carries two products: the plain one, $AC$, and the sesquilinear one, $A\bar C$. The ring has one nontrivial involution, the bar, and no vector part, so a product read off the ring is fixed by where the bar sits: on neither slot, which gives $AC$, or on one, which gives $A\bar C$ and its conjugate $\bar AC$. This article writes the two on the coordinates and on the idempotent coordinates, states what fixes each of them, computes their laws and their pairings, and isolates the point that separates the split case from the complex one.
 
-The separation is not the count. Over the complex field the same two products exist and the same four collapse to two; exactly two products are built from a commutative ring and one involution, in either case. The separation is the **values**: over $\mathbb{C}$ the sesquilinear product is positive definite and its diagonal is a modulus, while over $\mathbb{C}_{\mathrm{spl}}$ it is indefinite, vanishes on two lines, and reads as a componentwise multiplication in the idempotent coordinates.
+The separation is not the count. Over the complex field the same two products exist, and exactly two products are built from a commutative ring with one involution in either case. The separation is the **values**: over $\mathbb{C}$ the sesquilinear product is positive definite and its diagonal is a modulus, while over $\mathbb{C}_{\mathrm{spl}}$ it is indefinite, vanishes on two lines, and reads as a componentwise multiplication in the idempotent coordinates.
 
 The algebra is *Split-Complex Algebra*, the idempotents *Square Roots of One and the Idempotents of the Split-Complex Algebra*, the law of the second product *The Specificities of the Split-Complex Algebra*. The two products continue in *The Ternary Product and the Associator of the Split-Complex Space* and in *The Two Forms and the Two Algebraic Norms of the Split-Complex Space*.
 
-## The Four General Products and Their Collapse
+## The Two Products
 
-### The Four General Products
+**Proposition.** The space carries exactly two products, the plain $AC$ and the sesquilinear $A\bar C$.
 
-On a space with one involution and two slots, four products are available: the plain product $AC$, the product with the second slot read through the involution $A\bar C$, and the two with the first slot read through the intrinsic conjugation, $A^{\natural}C$ and $A^{\natural}\bar C$. In a non-commutative algebra with a vector part the mark ${}^{\natural}$ reverses the vector part, and the four are four different products.
+*Proof.* The bar is the only nontrivial involution of the ring, so a product of the space has the bar on neither slot or on one of them. On neither it is $AC$; on the second it is $A\bar C$; on the first it is $\bar AC=\overline{A\bar C}$, the conjugate of the second, and a conjugate is not a new operation. The two remaining products are distinct because they differ on the split imaginary line.
 
-### The Collapse to Two
-
-**Proposition.** On $\mathbb{C}_{\mathrm{spl}}$ the intrinsic conjugation is the identity, so $A^{\natural}C=AC$ and $A^{\natural}\bar C=A\bar C$, and the four general products are two.
-
-**Proof.** The mark ${}^{\natural}$ reverses the sign of the vector part of an element and fixes its scalar part. An element of $\mathbb{C}_{\mathrm{spl}}$ has no vector part, so the mark fixes every element.
-
-The collapse is a collapse of the alphabet and not of the algebra: the two surviving products are the plain one and the sesquilinear one, and they are distinct because they differ on the split imaginary line.
-
-### The Two Products
+On the coordinates, for $A=a+bj$ and $C=c+dj$,
 
 $$
 \boxed{\; AC=(ac+bd)+(ad+bc)j, \qquad A\bar C=(ac-bd)+(bc-ad)j \;}
@@ -96,10 +88,6 @@ $$
 
 **There is no antisymmetric part.** This is the degenerate case of *The Conjugate-Symmetric and Skew-Conjugate-Symmetric Parts of a Sesquilinear Product*: that article splits a general sesquilinear product into a conjugate-symmetric and a skew-conjugate-symmetric part, and here the second part is zero and the first is the product.
 
-### The Four Antisymmetric Products Have No Object
-
-In a non-commutative algebra the four general products give four antisymmetric parts, and they are the object of a theory of their own. Here all four vanish identically, because the intrinsic conjugation is the identity and each of the four products coincides with the product whose exchange fixes it. There is nothing to antisymmetrise, and a theory of the antisymmetric products of $\mathbb{C}_{\mathrm{spl}}$ would have one object, zero.
-
 ### What $A\bar C-C\bar A$ Is, and What It Is Not
 
 The difference of the sesquilinear product and its transpose is not an antisymmetric part, and it is worth naming what it is:
@@ -144,13 +132,13 @@ $$
 P(A,C)=AC, \qquad H(A,C)=A\bar C .
 $$
 
-$P$ is symmetric and $H$ is conjugate-symmetric, by the two exchanges above. The four letters of the general theory collapse here to these two, $P=N$ and $H=\mathrm{Kr}$, because the intrinsic conjugation is the identity. The two pairings are the object of *The Two Forms and the Two Algebraic Norms of the Split-Complex Space*, where their realified signatures are computed, and of *The Hermitian Form, the Double Cone and the Reversed Cauchy-Schwarz Inequality*, where the cone of $H$ is read.
+$P$ is symmetric and $H$ is conjugate-symmetric, by the two exchanges above. The two pairings are the object of *The Two Forms and the Two Algebraic Norms of the Split-Complex Space*, where their realified signatures are computed, and of *The Hermitian Form, the Double Cone and the Reversed Cauchy-Schwarz Inequality*, where the cone of $H$ is read.
 
 ## The Point That Separates the Split Case from the Complex One
 
 ### The Count Is the Same
 
-On $\mathbb{C}$ the space also carries two products, $AC$ and $A\bar C$, and the four general products also collapse to two, for the same reason: a commutative ring with one involution offers four slot-and-involution combinations and only two distinct maps. The count of two is the count of the complex case, so it does not separate anything.
+On $\mathbb{C}$ the space also carries two products, $AC$ and $A\bar C$, for the same reason: a commutative ring with one involution offers the bar on neither slot, on the second, or on the first, and the last reading is the conjugate of the second. The count of two is the count of the complex case, so it does not separate anything.
 
 ### The Values Differ
 
@@ -174,11 +162,11 @@ The reason the values differ is the idempotent coordinates. Over $\mathbb{C}$ th
 
 ## Summary
 
-The split-complex space carries two products, the plain $AC=(ac+bd)+(ad+bc)j$ and the sesquilinear $A\bar C=(ac-bd)+(bc-ad)j$. The four general products of the general theory collapse to these two because the intrinsic conjugation is the identity on an element with no vector part; the count of two is the count the complex field also has.
+The split-complex space carries two products, the plain $AC=(ac+bd)+(ad+bc)j$ and the sesquilinear $A\bar C=(ac-bd)+(bc-ad)j$, and no third, the bar being the only involution and the reading with the bar in the first slot being the conjugate of the sesquilinear product. The count of two is the count the complex field also has.
 
-Each product is fixed by its own exchange, the interchange for the plain product and the adapted exchange $A\star C\mapsto\overline{C\star A}$ for the sesquilinear one, so both antisymmetric parts vanish identically. There is no antisymmetric part on the split-complex space, and the four antisymmetric products have no object here. The difference $A\bar C-C\bar A=2(bc-ad)j$ is not an antisymmetric part: it is the area form, it is not linear in the first slot, and it belongs to the section on the sesquilinear product.
+Each product is fixed by its own exchange, the interchange for the plain product and the adapted exchange $A\star C\mapsto\overline{C\star A}$ for the sesquilinear one, so both antisymmetric parts vanish identically. There is no antisymmetric part on the split-complex space. The difference $A\bar C-C\bar A=2(bc-ad)j$ is not an antisymmetric part: it is the area form, it is not linear in the first slot, and it belongs to the section on the sesquilinear product.
 
-The plain product is associative and two-sidedly unital; the sesquilinear one has a right unit and no left unit, and its associativity defect is $A\bar C(\bar D-D)$. The two forms $P(A,C)=AC$ and $H(A,C)=A\bar C$ are symmetric and conjugate-symmetric, and the four forms of the general theory collapse to them, $P=N$ and $H=\mathrm{Kr}$. The point that separates the split case from the complex one is the value and not the count: $A\bar A=a^2-b^2$ is indefinite here and definite there, and the idempotent coordinates make the second product componentwise, which is why the split algebra is $\mathbb{R}\times\mathbb{R}$ read twice.
+The plain product is associative and two-sidedly unital; the sesquilinear one has a right unit and no left unit, and its associativity defect is $A\bar C(\bar D-D)$. The two forms $P(A,C)=AC$ and $H(A,C)=A\bar C$ are symmetric and conjugate-symmetric. The point that separates the split case from the complex one is the value and not the count: $A\bar A=a^2-b^2$ is indefinite here and definite there, and the idempotent coordinates make the second product componentwise, which is why the split algebra is $\mathbb{R}\times\mathbb{R}$ read twice.
 
 ## Summary of Notation
 
@@ -186,16 +174,15 @@ The plain product is associative and two-sidedly unital; the sesquilinear one ha
 |---|---|
 | $AC=(ac+bd)+(ad+bc)j$ | The plain product, the multiplication of the ring |
 | $A\bar C=(ac-bd)+(bc-ad)j$ | The sesquilinear product, the second slot conjugated |
-| ${}^{\natural}$ | The intrinsic conjugation, the identity on $\mathbb{C}_{\mathrm{spl}}$ |
 | $(AC)_\pm=A_\pm C_\pm$ | The plain product in idempotent coordinates |
 | $(A\bar C)_\pm=A_\pm C_\mp$ | The sesquilinear product in idempotent coordinates |
 | $A\bar C-C\bar A=2(bc-ad)j$ | The area form, not an antisymmetric part |
-| $P(A,C)=AC$, $H(A,C)=A\bar C$ | The two forms, with $P=N$ and $H=\mathrm{Kr}$ |
+| $P(A,C)=AC$, $H(A,C)=A\bar C$ | The two forms |
 | $A\bar C(\bar D-D)$ | The associativity defect of the sesquilinear product |
 
 ## Further Reading
 
 - Richard S. Pierce, *Associative Algebras* (Springer, Graduate Texts in Mathematics 88, 1982), for a product with an involution in the second slot, the sesquilinear laws and the unit.
-- Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions* (American Mathematical Society, Colloquium Publications 44, 1998), for the four products attached to an algebra with an involution and the collapse in the split case.
+- Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions* (American Mathematical Society, Colloquium Publications 44, 1998), for the products attached to an algebra with an involution and their behaviour over a commutative ring.
 - Tonny A. Springer and Ferdinand D. Veldkamp, *Octonions, Jordan Algebras and Exceptional Groups* (Springer, 2000), for the sesquilinear products of composition algebras and their isotopy.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed. 2001), for the split-complex algebra as a Clifford algebra and the two products as the two Clifford products of its even part.

@@ -65,11 +65,11 @@ On the real subspace the two forms of the complex space coincide, $\langle\cdot,
 |---|---|
 | $\mathbb{R}_{\mathbb{C}}$ | the real subspace, elements $Q_1=q_1$, real dimension $1$ |
 | $i\mathbb{R}_{\mathbb{C}}$ | the imaginary subspace, elements $Q_1=iq'_1$, real dimension $1$ |
-| $\langle Q_1,Q_2\rangle=Q_1Q_2$ | the general plain bilinear form, equal to $\langle\cdot,\cdot\rangle_{\natural}$ |
-| $\langle Q_1,Q_2\rangle_{*}=Q_1\bar Q_2$ | the Hermitian form, equal to $\langle\cdot,\cdot\rangle_{\natural*}$ |
+| $\langle Q_1,Q_2\rangle=Q_1Q_2$ | the plain form |
+| $\langle Q_1,Q_2\rangle_{*}=Q_1\bar Q_2$ | the Hermitian form |
 | $\varphi|_U$ | the restriction of a form to a subspace |
 | $(1,0)$, $(0,1)$ | the signatures of the definite and the negative definite restriction |
-| $\{0\}$ | the null set of each of the four restrictions |
+| $\{0\}$ | the null set of each of the two restrictions |
 
 ## Further Reading
 

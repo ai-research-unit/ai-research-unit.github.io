@@ -2,15 +2,17 @@
 
 ## Introduction
 
-This article states what is peculiar to the complex field among the twelve algebraic structures of the corpus. The four general products, with their symmetrisations and antisymmetrisations, make the twelve; on a commutative base ten of the twelve coincide two-and-two with the two that survive, and the four antisymmetric ones vanish. The specificities of $\mathbb{C}$ are the reasons: the field laws, the absence of zero divisors, the absence of nilpotents and of nontrivial idempotents, the irreducibility of the polynomial that defines it, the algebraic closure, and its place among the finite-dimensional real division algebras.
+This article states what is peculiar to the complex field among the real algebras of the ladder. The field is commutative and has no vector part, so the products and the forms it carries are the fewest any algebra of the ladder admits: two products and two forms, with no other operation behind them. The specificities of $\mathbb{C}$ are the reasons: the field laws, the absence of zero divisors, the absence of nilpotents and of nontrivial idempotents, the irreducibility of the polynomial that defines it, the algebraic closure, and its place among the finite-dimensional real division algebras.
 
 The article closes the specific theory of the complex algebra: it is the verdict, not a catalogue. It does not prove the classes of element — they are *The Classes of Element of the Complex Algebra*, above this article — and it does not restate the products or the forms, which are *The Two Products of the Complex Space* and *The Two Forms and the Two Algebraic Norms of the Complex Space*. The multiplication of the field, the definition of $\mathbb{C}$ as $\mathbb{R}[x]/(x^{2}+1)$, the fundamental theorem of algebra, the algebraic closure of $\mathbb{R}$ and the non-orderability of $\mathbb{C}$ are *Complex Algebra*. The norm, the invertibility criterion and the group of units are *Complex Norm and Invertibility*; completeness is a topological property and belongs to the same place, and the article only points to it.
 
-**Interpretation.** The element is $Q_1=q_1+iq'_1$; the base involution is the bar $\bar Q_1=q_1-iq'_1$; ${}^{*}=\bar{\cdot}$. The unit of the field is written $1$. The four forms are the plain bilinear $\langle Q_1,Q_2\rangle=Q_1Q_2$ and the Hermitian $\langle Q_1,Q_2\rangle_{*}=Q_1\bar Q_2$, the quaternionic and Krein companions coinciding with them, and the two algebraic norms are $\langle Q_1\rangle=Q_1^{2}$ and $\langle Q_1\rangle_{*}=Q_1\bar Q_1$; a bracket is reserved for a form and is never an element.
+**Interpretation.** The element is $Q_1=q_1+iq'_1$; the base involution is the bar $\bar Q_1=q_1-iq'_1$; ${}^{*}=\bar{\cdot}$. The unit of the field is written $1$. The two forms are the plain bilinear $\langle Q_1,Q_2\rangle=Q_1Q_2$ and the Hermitian $\langle Q_1,Q_2\rangle_{*}=Q_1\bar Q_2$, the two algebraic norms are $\langle Q_1\rangle=Q_1^{2}$ and $\langle Q_1\rangle_{*}=Q_1\bar Q_1$, and a bracket is reserved for a form and is never an element.
 
-## What the Twelve Structures Collapse To
+## The Two Products the Field Carries
 
-The two slots of the general product are its two arguments, the first carrying the conjugation of the coefficient ring and the second the identity or the Hermitian conjugation. On $\mathbb{C}$ the first slot carries the identity, so the four settings of the general theory collapse two-and-two onto two objects: the field product $Q_1Q_2$, with the identity in the second slot, and the sesquilinear product $Q_1\bar Q_2$, with the bar. The bilinear settings name the multiplication of the field and the sesquilinear settings name the derived product with the bar, and the four antisymmetrised products vanish, each being the antisymmetric part of a product whose two slots commute in the class-preserving exchange. The two surviving structures are the field under $Q_1Q_2$ and the sesquilinear structure under $Q_1\bar Q_2$, and they are not the same structure: the first is associative with a two-sided unit, the second is non-associative with a right unit alone. The statements are *The Two Products of the Complex Space*, above this article in this category, which also treats the two surviving products and the two exchanges that fix them.
+The multiplication of $\mathbb{C}$ is one product and the bar is one involution, so a product read off the two is fixed by where the bar sits: on neither slot, on the second, or on the first. On neither it gives the field product $Q_1Q_2$; on the second it gives $Q_1\bar Q_2$; on the first it gives $\bar Q_1Q_2$, which is the conjugate $\overline{Q_1\bar Q_2}$ of the second and not a new operation. The space therefore carries two products and no third, and the count is forced by the field itself: one multiplication, one involution, no vector part.
+
+The two structures differ. Under $Q_1Q_2$ the space is the field, associative, commutative, with a two-sided unit and every non-zero element invertible. Under $Q_1\bar Q_2$ it is a sesqualgebra, conjugate-commutative, with the unit on the right alone and no associativity. Neither product has an antisymmetric part, each being fixed by the exchange of its own class. The statements are *The Two Products of the Complex Space*, above this article in this category.
 
 ## The Field Laws
 
@@ -18,7 +20,7 @@ The two slots of the general product are its two arguments, the first carrying t
 
 **Proof.** Associativity and commutativity are read on the product $Q_1Q_2=(q_1q_2-q'_1q'_2)+i(q_1q'_2+q'_1q_2)$, which is the product of the field; the unit is $1$; the absence of zero divisors and the invertibility of every nonzero element are *The Classes of Element of the Complex Algebra*, §*The Zero Divisors and the Annihilators*.
 
-These are the laws that the general non-commutative algebra fails one by one. The consequence for the classes is that the zero divisors, the annihilators, the nilpotents, the non-trivial idempotents and the proper ideals all vanish at once, and the article names that consequence once and does not repeat it.
+These are the laws that a general algebra may fail, one or another of them. The consequence for the classes is that the zero divisors, the annihilators, the nilpotents, the non-trivial idempotents and the proper ideals all vanish at once, and the article names that consequence once and does not repeat it.
 
 ## The Nilpotents and the Idempotents
 
@@ -42,7 +44,7 @@ The algebraic closure of $\mathbb{C}$ is the second specificity: every non-const
 
 **Proof.** Of $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$, the algebra $\mathbb{H}$ is not commutative, and $\mathbb{R}$ is ordered by its usual order, which is compatible with its multiplication; the field $\mathbb{C}$ is commutative and carries no order compatible with its multiplication, since a compatible order would force $-1=i^{2}>0$ from $i\neq0$. Hence $\mathbb{C}$ is the only algebra in the list with both properties.
 
-Frobenius's theorem is cited as standard, as it is in *Complex Algebra*; the non-orderability of $\mathbb{C}$ is *Complex Algebra* and *Galois Theory of $\mathbb{C}/\mathbb{R}$*. The octonions are omitted, the theorem being stated for the associative algebras, and the split system $\mathbb{C}_{\mathrm{spl}}$ is excluded because it is not a division algebra. The place of $\mathbb{C}$ in the list is the reason the chapter is short: the complex field is the largest of the three that is commutative, so that non-commutativity, which is the source of ten of the twelve structures, has no instance here.
+Frobenius's theorem is cited as standard, as it is in *Complex Algebra*; the non-orderability of $\mathbb{C}$ is *Complex Algebra* and *Galois Theory of $\mathbb{C}/\mathbb{R}$*. The octonions are omitted, the theorem being stated for the associative algebras, and the split system $\mathbb{C}_{\mathrm{spl}}$ is excluded because it is not a division algebra. The place of $\mathbb{C}$ in the list is the reason the chapter is short: the complex field is the largest of the three that is commutative, and it has no vector part, so the two operations that multiply the structures elsewhere, the reversal of a vector part and a second slot read through a conjugation, have only the one instance each here.
 
 ## The Consequences
 
@@ -50,19 +52,19 @@ Three consequences close the article.
 
 **On the classes.** Every class of element that depends on a zero divisor, a nilpotent or a nontrivial idempotent is empty or two-point, and the classes are *The Classes of Element of the Complex Algebra*, above this article.
 
-**On the two products.** The field product is associative and has a two-sided unit; the sesquilinear product keeps a right unit and no left unit, since $Q_1\bar 1=Q_1$ but $1\bar Q_1=\bar Q_1$, which equals $Q_1$ only for real $Q_1$. The two products therefore differ on exactly the laws the slot analysis predicts, and the comparison of the two, with the slot reading and the two adjoints, is *Relations and Comparison Between the Two Products*, above this article in this category.
+**On the two products.** The field product is associative and has a two-sided unit; the sesquilinear product keeps a right unit and no left unit, since $Q_1\bar 1=Q_1$, while a left unit $E$ would satisfy $E\bar Q=Q$ for every $Q$ and would have to be both $1$ (at $Q=1$) and $-1$ (at $Q=i$). The two products therefore differ on exactly the laws the slot analysis predicts, and the comparison of the two, with the slot reading and the two adjoints, is *The Two Products of the Complex Space*, above this article in this category.
 
-**On the two forms.** The two bilinear forms coincide with the two sesquilinear ones two-and-two,
+**On the two forms.** The space carries the plain form and the Hermitian form,
 
 $$
-\boxed{\; \langle Q_1,Q_2\rangle=\langle Q_1,Q_2\rangle_{\natural}=Q_1Q_2, \qquad \langle Q_1,Q_2\rangle_{*}=\langle Q_1,Q_2\rangle_{\natural*}=Q_1\bar Q_2 \;}
+\boxed{\; \langle Q_1,Q_2\rangle=Q_1Q_2, \qquad \langle Q_1,Q_2\rangle_{*}=Q_1\bar Q_2 \;}
 $$
 
-and the two algebraic norms are $Q_1^{2}$ and $Q_1\bar Q_1$. The forms are *The Two Forms and the Two Algebraic Norms of the Complex Space*; the definiteness of $\langle\cdot,\cdot\rangle_{*}$, its cone and its order are *The Positivity and the Ray of Squares of the Complex Space*, below this article in this category, and the modules over the algebra are *The Hermitian Modules and the Unitary Witt Group over the Complex Algebra*.
+one for each product and no third, and the two algebraic norms are $Q_1^{2}$ and $Q_1\bar Q_1$. The forms are *The Two Forms and the Two Algebraic Norms of the Complex Space*; the definiteness of $\langle\cdot,\cdot\rangle_{*}$, its cone and its order are *The Positivity and the Ray of Squares of the Complex Space*, below this article in this category, and the modules over the algebra are *The Hermitian Modules and the Unitary Witt Group over the Complex Algebra*.
 
 ## Summary
 
-The complex algebra is the field: associative, commutative, unital, without zero divisors, with $0$ and $1$ as the only idempotents and $0$ as the only nilpotent. Of the twelve structures, ten collapse two-and-two onto the field product $Q_1Q_2$ and the sesquilinear product $Q_1\bar Q_2$ — the four bilinear ones coincide with the multiplication of the field, the four sesquilinear ones with the derived product — and the four antisymmetric ones vanish. The base is the quadratic extension $\mathbb{R}[x]/(x^{2}+1)$ by a root of $-1$, algebraically closed, and it is the only finite-dimensional real division algebra that is both commutative and non-orderable. Every emptiness of the class catalogue and every coincidence of the structures follows from the field laws, which is why the chapter is selective and not mechanical.
+The complex algebra is the field: associative, commutative, unital, without zero divisors, with $0$ and $1$ as the only idempotents and $0$ as the only nilpotent. The two products are the field product $Q_1Q_2$ and the sesquilinear product $Q_1\bar Q_2$, and there is no third: the bar sits on neither slot or on one, and the reading with the bar in the first slot is the conjugate of the reading with the bar in the second. The base is the quadratic extension $\mathbb{R}[x]/(x^{2}+1)$ by a root of $-1$, algebraically closed, and it is the only finite-dimensional real division algebra that is both commutative and non-orderable. Every emptiness of the class catalogue and every coincidence of the structures follows from the field laws, which is why the chapter is selective and not mechanical.
 
 ## Summary of Notation
 
@@ -72,7 +74,7 @@ The complex algebra is the field: associative, commutative, unital, without zero
 | $Q_1=q_1+iq'_1$ | a complex element, with the real coordinates $q_1,q'_1$ |
 | $\bar Q_1=q_1-iq'_1$ | the complex conjugation, the base involution; ${}^{*}=\bar{\cdot}$ |
 | $Q_1Q_2$, $Q_1\bar Q_2$ | the field product and the sesquilinear product |
-| $\langle Q_1,Q_2\rangle=\langle Q_1,Q_2\rangle_{\natural}=Q_1Q_2$, $\langle Q_1,Q_2\rangle_{*}=\langle Q_1,Q_2\rangle_{\natural*}=Q_1\bar Q_2$ | the coincidences of the four forms |
+| $\langle Q_1,Q_2\rangle=Q_1Q_2$, $\langle Q_1,Q_2\rangle_{*}=Q_1\bar Q_2$ | the two forms |
 | the two settings $(\mathrm{id}\text{ or }{}^{*})$ | the two product blocks, $Q_1Q_2$ and $Q_1\bar Q_2$ |
 
 ## Further Reading

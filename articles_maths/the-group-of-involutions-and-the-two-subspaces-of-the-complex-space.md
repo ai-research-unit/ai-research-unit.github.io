@@ -8,7 +8,7 @@ The answer is short. The group is $V_2$, the two-element group, which is here th
 
 The multiplication of the field is *Complex Algebra*; the class catalogue that records the fixed field is *The Classes of Element of the Complex Algebra*; the field property that forces the count is *The Specificities of the Complex Algebra*; the Galois reading of the same two-element group is *Galois Theory of ℂ/ℝ*. The two products the space carries are *The Two Products of the Complex Space*, and the two forms are *The Two Forms and the Two Algebraic Norms of the Complex Space*.
 
-**Interpretation.** The element is $Q=q+iq'$ with the real coordinates $q$ and $q'$, and a second element is $Q_2=q_2+iq'_2$. The base involution is the bar, $\bar Q=q-iq'$, and the Hermitian conjugation is the same map, ${}^{*}=\bar{\cdot}$. The intrinsic conjugation ${}^{\natural}$ of the general theory is the identity map on $\mathbb{C}$, because it acts on a vector part and this algebra has none.
+**Interpretation.** The element is $Q=q+iq'$ with the real coordinates $q$ and $q'$, and a second element is $Q_2=q_2+iq'_2$. The base involution is the bar, $\bar Q=q-iq'$, and the Hermitian conjugation is the same map, ${}^{*}=\bar{\cdot}$. The intrinsic conjugation ${}^{\natural}$, which acts on a vector part, is the identity map on $\mathbb{C}$, because this algebra has none.
 
 ## The Group of Involutions
 
@@ -20,7 +20,7 @@ The multiplication of the field is *Complex Algebra*; the class catalogue that r
 
 **Remark (why the anti-automorphisms add nothing).** In a commutative ring an anti-automorphism is an automorphism, since the two product rules coincide. The definition above therefore names one class twice, and the count of two is a count of maps, not of kinds.
 
-**Remark (the two surviving settings).** The general theory carries four settings of the involution, $\{\mathrm{id},{}^{\natural},{}^{*},{}^{\natural*}\}$. Here ${}^{\natural}$ is the identity and ${}^{*}$ is the bar, so the four settings collapse two-and-two and give the two maps of the theorem. The collapse is not an accident of notation: ${}^{\natural}$ negates the vector part of an element, and a complex element has no vector part.
+**Remark (why the two marks give two maps).** A product of the field is read with the bar on neither slot or on one, so a single mark, the bar, generates every reading, and ${}^{\natural}$ adds nothing: it negates the vector part of an element, and a complex element has no vector part. The two marks of the algebra are the identity and the bar, and they are the two maps of the theorem.
 
 ## The Sign Table of the Two Involutions
 
