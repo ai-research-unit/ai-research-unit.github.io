@@ -76,7 +76,7 @@
 $$</p>
 <p>of complex dimension $16$. The five frame operators $iR_{\vec e_x},iL_{\vec e_x}R_{\vec e_y},iL_{\vec e_y}R_{\vec e_y},iL_{\vec e_z}R_{\vec e_y}$ and $-iR_{\vec e_z}$, defined in §<em>The Frame Operators</em>, are a set of generators of this algebra, and the sixteen graded products</p>
 <p>$$
-I,\quad iR_{\vec e_x},\quad iL_{\vec e_k}R_{\vec e_y},\quad \sigma_{\mu\nu},\quad \sigma_{\mu\nu\rho},\quad -iR_{\vec e_z}
+I,\quad iR_{\vec e_x},\quad iL_{\vec e_k}R_{\vec e_y},\quad \text{the six bivectors},\quad \text{the four trivectors},\quad -iR_{\vec e_z}
 $$</p>
 <p>are a basis of it, each of them a two-sided basis operator up to a nonzero scalar. The frame is a choice <strong>inside</strong> the algebra of this category, not a different algebra: four elements of $M_4(\mathbb{C})$ satisfying the anticommutation relations, together with their product $-iR_{\vec e_z}$, from which the whole sixteen-dimensional algebra is generated. It is a generating set, not a basis: four elements span four dimensions, and the basis is the sixteen graded products.</p>
 <p>This article states the Clifford algebra, its complexification, the frame relations and the chirality, the basis theorem for the graded products, the place of the five frame operators among the sixteen two-sided operators $L_{e_\mu} R_{e_\nu}$, the non-canonicity of the frame, and the comparison with the biquaternion algebra. The inventory of the Clifford layer of the corpus is <em>The Clifford Layer of the Physics Corpus: Inventory and the Odd Sector</em>, in the reserve; the two-sided operators are <em>The Two-Sided Operators Method to Build $M_4(\mathbb{C})$</em>; the even slot and the versors are <em>Biquaternion Versors and the Orthogonal Group</em>.</p>
@@ -124,7 +124,8 @@ $$</p>
 iR_{\vec e_x}=iL_{e_t}R_{\vec e_x},\qquad iL_{\vec e_x}R_{\vec e_y}=iL_{\vec e_x}R_{\vec e_y},\qquad iL_{\vec e_y}R_{\vec e_y}=iL_{\vec e_y}R_{\vec e_y},\qquad iL_{\vec e_z}R_{\vec e_y}=iL_{\vec e_z}R_{\vec e_y},\qquad -iR_{\vec e_z}=-iL_{e_t}R_{\vec e_z}
 $$</p>
 <p>of $M_4(\mathbb{C})$. The four frame operators $iR_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$ carry the operator relation of $\varepsilon=(1,-1,-1,-1)$; see the Gamma section.</p>
-<p><strong>The existence.</strong> The frame operators exist: the product rule $L_aR_bL_{ac}R_{db}$ makes each generator an explicit element of the two-sided basis, the anticommutation relations hold, and the four frame operators generate $M_4(\mathbb{C})$. Some $S\in GL_4(\mathbb{C})$ carries the frame to the block matrices of the chiral representation, whose blocks are built from the Pauli matrices $\sigma_i$: the first with $I_2$ in its off-diagonal blocks and the other three with $\sigma_i$ there. Both frames satisfy the same relations, and this is the non-canonicity of §<em>The Non-Canonicity of the Frame</em> in its simplest form.</p>
+<p><strong>The four units.</strong> The four basis elements are $e_t,\vec e_x,\vec e_y,\vec e_z$, the coefficient basis $\mathcal{E}$ of the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$. The frame is a frame of $\mathbb{B}$: the left factor of a generator is a unit, the right factor a spatial unit, written $\vec e_{\nu(\mu)}$ with $\nu(t)=x$ and $\nu(k)=y$, so the $\mu$-th generator is $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$. The basis, the multiplication table and the four left matrices are <em>$M_4(\mathbb{C})$ Axis-Free Representation</em>; the sixteen matrices of the operators are <em>$M_4(\mathbb{C})$ Axis-Free Representation: Operators</em>.</p>
+<p><strong>The existence.</strong> The frame operators exist: the product rule $L_aR_bL_{ac}R_{db}$ makes each generator an explicit element of the two-sided basis, the anticommutation relations hold, and the four frame operators generate $M_4(\mathbb{C})$. Some $S\in GL_4(\mathbb{C})$ carries the frame to the block matrices of the chiral representation, whose blocks are $2\times2$: the first with $I_2$ in its off-diagonal blocks and the other three with the three Pauli blocks there. Both frames satisfy the same relations, and this is the non-canonicity of §<em>The Non-Canonicity of the Frame</em> in its simplest form.</p>
 <p><strong>The chirality.</strong> Put</p>
 <p>$$
 -iL_{e_t}R_{\vec e_z}=-iL_{e_t}R_{\vec e_z}.
@@ -138,7 +139,7 @@ $$</p>
 P_{\pm}=\tfrac12(I\pm -iR_{\vec e_z})=\tfrac12(I\mp iL_{e_t}R_{\vec e_z})
 $$</p>
 <p>are the chiral projectors. The square makes $-iR_{\vec e_z}$ diagonalisable with eigenvalues $\pm1$; the vanishing trace makes the two eigenspaces equal in dimension, so $\operatorname{rank}P_{\pm}=2$. Both facts are algebraic: neither invokes a Hermitian structure, which the frame does not supply. The label $5$ is the historical one; in four dimensions the fifth frame operator is the product of the four vector basis operators, and it is the pseudoscalar of the Clifford algebra, the reference-frame operator of the chirality.</p>
-<p><strong>The trace orthogonality.</strong> The sixteen two-sided basis operators $L_{e_\mu} R_{e_\nu}$, up to nonzero scalars, are the sixteen graded products: the identity $L_{e_t}R_{e_t}=I$, the four vector operators, the generators, the six bivector products $\sigma_{\mu\nu}=\tfrac12$ times the commutator of the $\mu$-th and $\nu$-th generators, the four trivector products $\sigma_{\mu\nu\rho}=\tfrac16$ times the antisymmetrised triple product of the three generators and the pseudoscalar $-iR_{\vec e_z}$. They satisfy</p>
+<p><strong>The trace orthogonality.</strong> The sixteen two-sided basis operators $L_{e_\mu} R_{e_\nu}$, up to nonzero scalars, are the sixteen graded products: the identity $L_{e_t}R_{e_t}=I$, the four vector operators $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$, the six bivector products $\tfrac12[iL_{e_\mu}R_{\vec e_{\nu(\mu)}},iL_{e_\nu}R_{\vec e_{\nu(\nu)}}]$, the half-commutator of the $\mu$-th and $\nu$-th generators, the four trivector products $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\,iL_{e_\nu}R_{\vec e_{\nu(\nu)}}\,iL_{e_\rho}R_{\vec e_{\nu(\rho)}}$, the antisymmetrised triple product of three generators, and the pseudoscalar $-iR_{\vec e_z}$. They satisfy</p>
 <p>$$
 \operatorname{tr}(L_{e_\mu} R_{e_\nu} L_{e_\rho}R_{e_\sigma})=4\,\eta_{\mu\nu,\rho\sigma},
 $$</p>
@@ -155,7 +156,7 @@ $$</p>
 L_{e_\mu} R_{e_\nu},\qquad \mu,\nu\in\{t,x,y,z\},
 $$</p>
 <p>acting on the biquaternion algebra, and the sixteen of them are a basis of $M_4(\mathbb{C})$ by <em>The Two-Sided Operators Method to Build $M_4(\mathbb{C})$</em>. The frame is a generating set of a different shape: four generators, their product $-iR_{\vec e_z}$, and their graded products, against the sixteen two-sided operators.</p>
-<p><strong>The dictionary.</strong> In the coefficient frame of the method article, the five frame operators are unit-modulus scalar multiples of five of the sixteen $L_{e_\mu} R_{e_\nu}$: the four vector basis operators $iL_{e_t}R_{\vec e_x}$, $iL_{\vec e_x}R_{\vec e_y}$, $iL_{\vec e_y}R_{\vec e_y}$, $iL_{\vec e_z}R_{\vec e_y}$ and the pseudoscalar $-iL_{e_t}R_{\vec e_z}$. The remaining eleven two-sided operators are the bivector products, the trivector products and the scalar of the Clifford basis; the bivectors are the six products $\sigma_{\mu\nu}$, the trivectors the four $\sigma_{\mu\nu\rho}$, and the scalar is the identity basis operator $L_{e_t}R_{e_t}=I$. The two bases are related by a permutation and scalars, not by a general linear change: each element of one basis is a scalar multiple of one element of the other.</p>
+<p><strong>The dictionary.</strong> In the coefficient frame of the method article, the five frame operators are unit-modulus scalar multiples of five of the sixteen $L_{e_\mu} R_{e_\nu}$: the four vector basis operators $iL_{e_t}R_{\vec e_x}$, $iL_{\vec e_x}R_{\vec e_y}$, $iL_{\vec e_y}R_{\vec e_y}$, $iL_{\vec e_z}R_{\vec e_y}$ and the pseudoscalar $-iL_{e_t}R_{\vec e_z}$. The remaining eleven two-sided operators are the bivector products, the trivector products and the scalar of the Clifford basis; the bivectors are the six half-commutators $\tfrac12[iL_{e_\mu}R_{\vec e_{\nu(\mu)}},iL_{e_\nu}R_{\vec e_{\nu(\nu)}}]$, the trivectors the four triple products $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\,iL_{e_\nu}R_{\vec e_{\nu(\nu)}}\,iL_{e_\rho}R_{\vec e_{\nu(\rho)}}$, and the scalar is the identity basis operator $L_{e_t}R_{e_t}=I$. The two bases are related by a permutation and scalars, not by a general linear change: each element of one basis is a scalar multiple of one element of the other.</p>
 <p><strong>The warning.</strong> The identification of the five frame operators with five of the $L_{e_\mu} R_{e_\nu}$ is a statement about a particular coefficient frame, not a canonical identity. A different choice of the biquaternion units, or a different normalisation of the $L_{e_\mu} R_{e_\nu}$, changes the five basis operators and their scalar multiples. The anticommutation relations are invariant under the change; the five-element subset is not.</p>
 <h2 id="the-non-canonicity-of-the-frame">The Non-Canonicity of the Frame</h2>
 <p><strong>The similarity.</strong> If the generators satisfy the anticommutation relations and $S\in GL_4(\mathbb{C})$, then</p>
@@ -293,8 +294,12 @@ The contraction sums follow from the squares. With one index raised, $\gamma^\mu
 <td>the five frame operators, $iR_{\vec e_x}=iL_{e_t}R_{\vec e_x}$, $iL_{\vec e_x}R_{\vec e_y}=iL_{\vec e_x}R_{\vec e_y}$, $iL_{\vec e_y}R_{\vec e_y}=iL_{\vec e_y}R_{\vec e_y}$, $iL_{\vec e_z}R_{\vec e_y}=iL_{\vec e_z}R_{\vec e_y}$, $-iR_{\vec e_z}=-iL_{e_t}R_{\vec e_z}=i\,iR_{\vec e_x}\,iL_{\vec e_x}R_{\vec e_y}\,iL_{\vec e_y}R_{\vec e_y}\,iL_{\vec e_z}R_{\vec e_y}$; $iR_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$ carry the operator relation of $g$</td>
 </tr>
 <tr>
-<td>$\sigma_{\mu\nu}$, $\sigma_{\mu\nu\rho}$</td>
-<td>the bivector and trivector products</td>
+<td>$\tfrac12[iL_{e_\mu}R_{\vec e_{\nu(\mu)}},iL_{e_\nu}R_{\vec e_{\nu(\nu)}}]$</td>
+<td>the six bivector products</td>
+</tr>
+<tr>
+<td>$iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\,iL_{e_\nu}R_{\vec e_{\nu(\nu)}}\,iL_{e_\rho}R_{\vec e_{\nu(\rho)}}$</td>
+<td>the four trivector products</td>
 </tr>
 <tr>
 <td>$P_{\pm}$</td>
@@ -314,6 +319,8 @@ The contraction sums follow from the squares. With one index raised, $\gamma^\mu
 <ul>
 <li><a href="../articles_physics/why-axf-matrices-instead-of-pauli-and-gamma-matrices.html">Why AXF Matrices instead of Pauli and Gamma Matrices</a>, for the comparison of the two notations, the worked Dirac operator and the length table.</li>
 <li><a href="the-two-sided-operators-method-to-build-m4c.html">The Two-Sided Operators Method to Build $M_4(\mathbb{C})$</a>, for the sixteen operators $L_{e_\mu} R_{e_\nu}$ and their product rule.</li>
+<li><a href="m4c-axis-free-representation.html">$M_4(\mathbb{C})$ Axis-Free Representation</a>, for the coefficient basis, the four left matrices and the multiplication table.</li>
+<li><a href="m4c-axis-free-representation-operators.html">$M_4(\mathbb{C})$ Axis-Free Representation: Operators</a>, for the sixteen products in the coefficient frame, their signs and their composition.</li>
 <li><a href="matrix-representations-conventions.html">Matrix Representations Conventions</a>, for the operator symbols, the generator and the frame, in the canonical frame, §<em>The Clifford Structure and the Frame</em>.</li>
 <li><a href="biquaternion-versors-and-the-orthogonal-group.html">Biquaternion Versors and the Orthogonal Group</a>, for the even slot and the versors.</li>
 <li><a href="the-kronecker-factorisation-of-m4c-into-m2c-tensor-m2c.html">The Kronecker Factorisation $M_4(\mathbb{C})\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})$</a>, for the two commuting copies of $\mathbb{B}$.</li>

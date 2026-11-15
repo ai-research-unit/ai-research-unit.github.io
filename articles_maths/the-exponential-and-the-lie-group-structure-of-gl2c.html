@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Exponential and the Lie Group Structure of $\mathrm{GL}_2(\mathbb{C})$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-exponential-and-the-lie-group-structure-of-math0"><strong>The Exponential and the Lie Group Structure of $\mathrm{GL}_2(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The invertible matrices form a complex Lie group of complex dimension four with Lie algebra the whole matrix algebra, and the exponential map from the algebra to the group is surjective and never hits a singular matrix, but it is not injective: its kernel is the lattice of matrices with eigenvalues in $2\pi i\mathbb{Z}$.</strong></p>
+<p>The article presents the group and its Lie algebra, proves that the exponential is a surjection onto the group, computes its kernel, describes the one-parameter subgroups, identifies the differential with the identity and the bracket with the commutator, and shows that the image avoids the singular set. It assumes <em>The Analysis on $M_2(\mathbb{C})$</em>, <em>The Exponential of a $2\times2$ Matrix and Its Image</em> and <em>The Homotopy of $\mathrm{GL}_2(\mathbb{C})$ and of the Two Halves</em>.</p>
+<p>It follows the biquaternion article <em>The Endomorphisms of the Biquaternion Algebra</em> for the same group in the biquaternion coordinates.</p>
+<h2 id="the-group-and-its-lie-algebra">The Group and Its Lie Algebra</h2>
+<p><strong>The invertible matrices form a complex Lie group whose Lie algebra is the matrix algebra with the commutator bracket.</strong></p>
+<p><strong>Proposition.</strong> The invertible matrices form a group under multiplication, an open subset of the matrix algebra, and a complex manifold of complex dimension four.</p>
+<p><strong>Proof.</strong> The determinant is continuous and does not vanish on the group, so the group is open; the inverse is given by the adjugate formula, which is holomorphic on the group.</p>
+<p><strong>Corollary.</strong> The tangent space at the identity is the whole matrix algebra, and the Lie bracket is the commutator.</p>
+<p><strong>Proof.</strong> The tangent space of an open subset of a vector space at a point is the vector space itself, and the bracket of a matrix group is the commutator by the second-order term of the product.</p>
+<p><strong>Corollary.</strong> The real dimension is eight and the complex dimension is four, so the group is a real Lie group of dimension eight.</p>
+<p><strong>Proof.</strong> The underlying real space has dimension eight.</p>
+<h2 id="the-exponential-is-surjective">The Exponential Is Surjective</h2>
+<p><strong>Theorem.</strong> Every invertible complex matrix is the exponential of some matrix.</p>
+<p><strong>Proof.</strong> Over the complex field a matrix has two eigenvalues, counted with multiplicity. If they are distinct, the matrix is diagonalisable and the logarithm is the diagonal matrix of two chosen logarithms. If the matrix is a scalar $\lambda I$ with $\lambda$ nonzero, the matrix $\mu I$ with $e^{\mu}=\lambda$ is a logarithm. If the matrix is $\lambda(I+N)$ with $N$ nonzero and $N^{2}=0$, then $e^{\mu I+N}=\lambda(I+N)$ because $e^{N}=I+N$, so $\mu I+N$ is a logarithm.</p>
+<p><strong>Corollary.</strong> The exponential maps the matrix algebra onto the whole group, so the group is the image of the algebra.</p>
+<p><strong>Proof.</strong> The logarithm constructed in the proof inverts the exponential.</p>
+<p><strong>Corollary.</strong> The exponential is a submersion at every point where its Jacobian does not vanish, so the group is generated by the image of a neighbourhood of the origin.</p>
+<p><strong>Proof.</strong> The inverse function theorem applies at the points of nonzero Jacobian, and a connected group generated by a neighbourhood of the identity is the whole group.</p>
+<h2 id="the-exponential-is-not-injective">The Exponential Is Not Injective</h2>
+<p><strong>Proposition.</strong> The kernel of the exponential is the set of matrices whose eigenvalues all lie in $2\pi i\mathbb{Z}$ and which are diagonalisable.</p>
+<p><strong>Proof.</strong> The exponential of a matrix is the identity exactly when the matrix is diagonalisable with eigenvalues in the lattice, since the exponential acts on the eigenvalues and on the Jordan blocks separately.</p>
+<p><strong>Corollary.</strong> The kernel contains the lattice $2\pi i\mathbb{Z}I$ and, for a diagonalisable matrix with integer eigenvalues in the lattice, an entire two-dimensional family of matrices.</p>
+<p><strong>Proof.</strong> Any matrix similar to a diagonal matrix with eigenvalues in the lattice is in the kernel, and the similarity orbit of such a diagonal matrix has dimension two.</p>
+<p><strong>Corollary.</strong> The exponential is injective on the open set of matrices whose eigenvalues have imaginary parts in the interval $(-\pi,\pi)$.</p>
+<p><strong>Proof.</strong> If two such matrices have the same exponential, their difference is diagonalisable with eigenvalues in $2\pi i\mathbb{Z}$; the imaginary parts of the eigenvalues of the two matrices differ by less than $2\pi$, so every eigenvalue of the difference is zero, and a diagonalisable nilpotent matrix is zero.</p>
+<h2 id="one-parameter-subgroups">One-Parameter Subgroups</h2>
+<p><strong>Proposition.</strong> The one-parameter subgroups of the group are exactly the maps $t\mapsto e^{tZ}$ for a fixed matrix $Z$, and two matrices give the same subgroup exactly when they differ by an element of the kernel.</p>
+<p><strong>Proof.</strong> A continuous homomorphism from the real line to the group is determined by its derivative at the origin, which is a matrix, and the exponential of the linear map agrees with it.</p>
+<p><strong>Corollary.</strong> The subgroup $t\mapsto e^{t}I$ is the ray of positive scalars, and the subgroup $t\mapsto e^{it}I$ is the circle of unit scalars, which is closed and compact.</p>
+<p><strong>Proof.</strong> The first is the exponential of the identity along the real line, and the second is the exponential of the matrix $iI$, whose values at the integer multiples of $2\pi$ return to the identity.</p>
+<p><strong>Corollary.</strong> The group contains a circle of scalars, and the diagonal subgroups give two more circles.</p>
+<p><strong>Proof.</strong> The scalars of unit modulus form a circle, and the diagonal unitary matrices form a torus containing two circles.</p>
+<h2 id="the-differential-and-the-bracket">The Differential and the Bracket</h2>
+<p><strong>Proposition.</strong> The differential of the exponential at the origin is the identity, and the differential of the conjugation by a group element at the identity is the conjugation on the algebra.</p>
+<p><strong>Proof.</strong> The exponential series begins with the identity map, and the conjugation by a fixed invertible matrix is linear.</p>
+<p><strong>Corollary.</strong> The Lie algebra structure is the commutator, and the exponential intertwines the scalar multiplication on the algebra with the one-parameter subgroups.</p>
+<p><strong>Proof.</strong> The second-order term of the product $e^{sX}e^{tY}$ is the commutator, and the scalar multiplication is the parametrisation of the subgroup.</p>
+<p><strong>Corollary.</strong> The exponential of the commutator of two small matrices is the group commutator up to third order.</p>
+<p><strong>Proof.</strong> The Baker–Campbell–Hausdorff formula begins with the sum and the half commutator.</p>
+<h2 id="equivariance-under-conjugation">Equivariance under Conjugation</h2>
+<p><strong>Proposition.</strong> The exponential is equivariant for conjugation: $e^{gZg^{-1}}=g\,e^{Z}g^{-1}$ for every invertible $g$.</p>
+<p><strong>Proof.</strong> Every term of the exponential series is a product of the matrix with itself, and conjugation carries the product of two matrices to the product of their conjugates.</p>
+<p><strong>Corollary.</strong> Each conjugacy class of the algebra is mapped into a single conjugacy class of the group, so the exponential is constant on the orbits of the conjugation.</p>
+<p><strong>Proof.</strong> The equivariance says that the exponential of a conjugate is the conjugate of the exponential, which is the statement for orbits.</p>
+<p><strong>Corollary.</strong> The exponential commutes with the adjoint action, so its differential at the origin is an intertwining operator for the adjoint representation.</p>
+<p><strong>Proof.</strong> The derivative at the origin of $Z\mapsto gZg^{-1}$ is the same map, and the derivative of the exponential at the origin is the identity.</p>
+<h2 id="the-singular-matrices">The Singular Matrices</h2>
+<p><strong>Proposition.</strong> The exponential of any matrix is invertible, so the singular matrices are never in the image.</p>
+<p><strong>Proof.</strong> The determinant of the exponential is the exponential of the trace, which never vanishes.</p>
+<p><strong>Corollary.</strong> The group is exactly the image of the exponential, and the singular set is the complement of that image.</p>
+<p><strong>Proof.</strong> Surjectivity gives one inclusion, and the determinant formula gives the other.</p>
+<p><strong>Corollary.</strong> The singular set is a closed cone that no one-parameter subgroup meets.</p>
+<p><strong>Proof.</strong> A one-parameter subgroup is a curve of exponentials, all invertible, and the singular set is the zero set of the determinant.</p>
+<h2 id="summary">Summary</h2>
+<p>The invertible matrices form a complex Lie group of complex dimension four, with the whole matrix algebra as its Lie algebra and the commutator as bracket. The exponential is surjective onto the group, its differential at the origin is the identity, and its kernel consists of the diagonalisable matrices with eigenvalues in the lattice $2\pi i\mathbb{Z}$.</p>
+<p>The one-parameter subgroups are the exponentials of the individual matrices, and the exponential never reaches a singular matrix because the determinant of an exponential is the exponential of the trace.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{GL}_2(\mathbb{C})$</td>
+<td>the group of invertible matrices</td>
+</tr>
+<tr>
+<td>$\exp$</td>
+<td>the exponential from the algebra to the group</td>
+</tr>
+<tr>
+<td>$[\cdot,\cdot]$</td>
+<td>the commutator bracket</td>
+</tr>
+<tr>
+<td>$2\pi i\mathbb{Z}$</td>
+<td>the lattice of the kernel eigenvalues</td>
+</tr>
+<tr>
+<td>$\operatorname{Ad}$</td>
+<td>the conjugation action on the algebra</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Brian C. Hall, <em>Lie Groups, Lie Algebras, and Representations</em> (Springer, 2015), for the exponential map on matrix groups.</li>
+<li>John Stillwell, <em>Naive Lie Theory</em> (Springer, 2008), for the matrix exponential and one-parameter subgroups.</li>
+<li><a href="the-analysis-on-m2c.html">The Analysis on $M_2(\mathbb{C})$</a>, for the measure and the calculus on the algebra.</li>
+<li><a href="the-exponential-of-a-2x2-matrix-and-its-image.html">The Exponential of a $2\times2$ Matrix and Its Image</a>, for the computation of the exponential.</li>
+<li><a href="the-homotopy-of-gl2c-and-of-the-two-halves.html">The Homotopy of $\mathrm{GL}_2(\mathbb{C})$ and of the Two Halves</a>, for the shape of the group.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

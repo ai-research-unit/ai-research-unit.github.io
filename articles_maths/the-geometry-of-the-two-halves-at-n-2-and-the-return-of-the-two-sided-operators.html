@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Geometry of the Two Halves at $n=2$, and the Return of the Two-Sided Operators — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-geometry-of-the-two-halves-at-math0-and-the-return-of-the-two-sided-operators"><strong>The Geometry of the Two Halves at $n=2$, and the Return of the Two-Sided Operators</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The trace form gives the symmetric half a positive definite metric of signature three and the antisymmetric half a negative definite metric of signature one, the determinant gives the symmetric half a Lorentz metric of signature $(1,2)$, and the two-sided operators act on the matrix algebra as the group $\mathrm{GL}_2\times\mathrm{GL}_2$ whose orbits are the three rank strata.</strong></p>
+<p>The article collects the geometric data of the halves, computes the isometry groups of the two metrics, describes the orbits of the two-sided action, relates the cone of the symmetric half to its Lorentz metric, describes the geodesics, and interprets the two-sided operators as geometric transformations preserving the rank. It assumes <em>The Two Halves and the Analysis: Smooth Structures at $n=2$</em>, <em>The Trace Form and Its Signature on the Two Halves of $M_2(\mathbb{R})$</em> and <em>The Two-Sided Operators and the Segre Cone at $n=2$</em>.</p>
+<p>It follows the biquaternion article <em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em> for the same metric data in the biquaternion coordinates.</p>
+<h2 id="the-metric-on-the-halves">The Metric on the Halves</h2>
+<p><strong>The trace form is a positive definite metric on the symmetric half and a negative definite metric on the antisymmetric half.</strong></p>
+<p><strong>Proposition.</strong> On the symmetric half the trace form has the eigenvalues one, one and two, and on the antisymmetric half it has the single eigenvalue minus two; both are nondegenerate.</p>
+<p><strong>Proof.</strong> The Gram matrix of the trace form on the symmetric half in the basis of the two diagonal units and the off-diagonal unit is diagonal with entries one, one and two; on the antisymmetric half the single basis element has squared trace minus two.</p>
+<p><strong>Corollary.</strong> The matrix algebra carries a metric of signature $(4,4)$ split as three plus one in the real halves and as four plus four in the complex halves.</p>
+<p><strong>Proof.</strong> The trace form is positive definite on the Hermitian half and negative definite on the skew-Hermitian half, and the real halves split the same way by the symmetric and antisymmetric parts.</p>
+<p><strong>Corollary.</strong> The orthogonal complement of a half is the other half, so the halves are the eigenspaces of the transposition with the two signs.</p>
+<p><strong>Proof.</strong> The trace of the product of a symmetric with an antisymmetric matrix is zero, and the dimensions add to the total.</p>
+<h2 id="the-isometry-groups">The Isometry Groups</h2>
+<p><strong>Proposition.</strong> The isometries of the trace metric on the matrix algebra form the unitary group of the four-dimensional complex space of matrices, which contains the conjugation by unitary matrices and the two-sided action with unitary parameters.</p>
+<p><strong>Proof.</strong> The trace metric is the standard Hermitian form on the four complex coordinates, whose linear isometries are the unitary matrices of order four; the conjugation and the two-sided action with unitary parameters are unitary for that form.</p>
+<p><strong>Corollary.</strong> The isometries preserving each half are the conjugation by orthogonal matrices on the real halves and by unitary matrices on the complex ones.</p>
+<p><strong>Proof.</strong> An isometry that preserves the symmetric half also preserves its orthogonal complement, which is the antisymmetric half.</p>
+<p><strong>Corollary.</strong> The cone of the symmetric half is preserved by the Lorentz group of signature $(1,2)$, which is larger than the orthogonal group.</p>
+<p><strong>Proof.</strong> The determinant on the symmetric half is a form of signature $(1,2)$, and its automorphism group is the Lorentz group of that signature.</p>
+<h2 id="the-orbits-of-the-two-sided-action">The Orbits of the Two-Sided Action</h2>
+<p><strong>Theorem.</strong> The group $\mathrm{GL}_2(\mathbb{C})\times\mathrm{GL}_2(\mathbb{C})$ acts on the matrix algebra by $(X,Y)\cdot Z=XZY$, and its orbits are the origin, the rank-one matrices and the invertible matrices.</p>
+<p><strong>Proof.</strong> The action preserves the rank by the product formula, and conversely two matrices of the same rank are carried to each other by choosing bases in their images and kernels.</p>
+<p><strong>Corollary.</strong> The orbit of the identity is the group itself, of real dimension eight, and it is open and dense.</p>
+<p><strong>Proof.</strong> The orbit of the identity is the set of invertible matrices, which is open and dense.</p>
+<p><strong>Corollary.</strong> The orbit of a rank-one matrix is the cone of decomposable elements, of real dimension six, with the origin deleted.</p>
+<p><strong>Proof.</strong> A rank-one matrix is carried to any other by the action, and the set of rank-one matrices is the decomposable cone.</p>
+<h2 id="the-cone-and-the-metric">The Cone and the Metric</h2>
+<p><strong>Proposition.</strong> The positive semidefinite cone of the symmetric half is a cone of the Lorentz metric of signature $(1,2)$, and its boundary is the set of null directions of the rank-one form.</p>
+<p><strong>Proof.</strong> The determinant vanishes exactly on the rank-one matrices, which are the null directions of the Lorentz form, and the cone is one of its two time cones.</p>
+<p><strong>Corollary.</strong> The geodesics of the Lorentz metric that stay inside the cone are the rays through the origin and the curves of constant Lorentz length.</p>
+<p><strong>Proof.</strong> The rays are the null geodesics of the cone, and the curves of constant length are the geodesics through the interior points.</p>
+<p><strong>Corollary.</strong> The cone is homogeneous for the Lorentz group of the half, which acts transitively on its interior.</p>
+<p><strong>Proof.</strong> The Lorentz group acts transitively on the interior of its time cone, and the stabiliser of a point is compact.</p>
+<h2 id="geodesics-and-the-exponential">Geodesics and the Exponential</h2>
+<p><strong>Proposition.</strong> The trace metric on the symmetric half is flat, its geodesics are the straight lines, and its Riemannian exponential at a point $A$ is $S\mapsto A+S$.</p>
+<p><strong>Proof.</strong> The metric is constant in the coordinates of the entries, so the Levi-Civita connection vanishes and the geodesics are the straight lines.</p>
+<p><strong>Proposition.</strong> The matrix exponential is a diffeomorphism from the symmetric half onto the positive definite cone, and it is not the Riemannian exponential of the trace metric.</p>
+<p><strong>Proof.</strong> The exponential of a symmetric matrix is positive definite, its inverse is the logarithm, and the two maps are smooth; it is a different map from the affine displacement of the flat metric.</p>
+<p><strong>Corollary.</strong> The positive definite cone is convex in the flat metric, and every pair of its points is joined by a unique geodesic inside it.</p>
+<p><strong>Proof.</strong> The cone is convex as a set, and the geodesics of the flat metric are the straight segments.</p>
+<p><strong>Corollary.</strong> The exponential map is a diffeomorphism from the symmetric half onto the positive definite cone.</p>
+<p><strong>Proof.</strong> The exponential has the identity as derivative at the origin, is injective on symmetric matrices, and its image is the cone.</p>
+<h2 id="the-return-of-the-two-sided-operators">The Return of the Two-Sided Operators</h2>
+<p><strong>Proposition.</strong> The two-sided operators that preserve the trace metric are exactly those with unitary parameters, and they form the group of isometries preserving the rank strata.</p>
+<p><strong>Proof.</strong> The two-sided operator multiplies the trace of $Z^{*}Z$ by the product of the squared norms of the parameters, and the isometry condition forces both parameters to be unitary.</p>
+<p><strong>Corollary.</strong> The two-sided operators act by similarities of the trace metric, with ratio the product of the two lengths, so the conformal group of the matrix space contains the group of two-sided operators.</p>
+<p><strong>Proof.</strong> The metric is scaled by the product of the squared norms, which is a single scalar.</p>
+<p><strong>Corollary.</strong> The two-sided operators preserve the Segre cone and act transitively on each rank stratum, so the geometry of the strata is homogeneous.</p>
+<p><strong>Proof.</strong> The orbits of the action are the rank strata, and each is a single orbit.</p>
+<h2 id="summary">Summary</h2>
+<p>The trace form gives the symmetric half a positive definite metric with the eigenvalues one, one and two and the antisymmetric half a negative definite metric; the matrix algebra carries a metric of signature $(4,4)$. The isometry group is the unitary group of the Hilbert–Schmidt form, acting by conjugation and by the two-sided action.</p>
+<p>The group of two-sided operators has the origin, the rank-one cone and the invertible matrices as its orbits, so its geometry is the geometry of the rank strata. The positive cone of the symmetric half is a Lorentz cone whose null directions are the rank-one matrices, and the two-sided operators act by conformal similarities of the trace metric.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\langle Z,W\rangle=\operatorname{tr}(Z^{*}W)$</td>
+<td>the trace metric on the algebra</td>
+</tr>
+<tr>
+<td>$(4,4)$</td>
+<td>its signature on the whole algebra</td>
+</tr>
+<tr>
+<td>$(1,2)$</td>
+<td>the signature of the determinant on the symmetric half</td>
+</tr>
+<tr>
+<td>$\mathrm{GL}_2\times\mathrm{GL}_2$</td>
+<td>the group of two-sided operators</td>
+</tr>
+<tr>
+<td>$Z\mapsto XZY$</td>
+<td>the two-sided action</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Sigurdur Helgason, <em>Differential Geometry, Lie Groups, and Symmetric Spaces</em> (American Mathematical Society, 2001), for symmetric spaces and their geodesics.</li>
+<li>Barrett O'Neill, <em>Semi-Riemannian Geometry</em> (Academic Press, 1983), for Lorentz cones and their null directions.</li>
+<li><a href="the-two-halves-and-the-analysis-smooth-structures-at-n-2.html">The Two Halves and the Analysis: Smooth Structures at $n=2$</a>, for the smooth structures used here.</li>
+<li><a href="the-trace-form-and-its-signature-on-the-two-halves-of-m2r.html">The Trace Form and Its Signature on the Two Halves of $M_2(\mathbb{R})$</a>, for the metric of the halves.</li>
+<li><a href="the-two-sided-operators-and-the-segre-cone-at-n-2.html">The Two-Sided Operators and the Segre Cone at $n=2$</a>, for the operators whose geometry is described here.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

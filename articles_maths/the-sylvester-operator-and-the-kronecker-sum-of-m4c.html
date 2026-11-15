@@ -85,6 +85,13 @@ L_A(X)=AX,\qquad R_B(X)=XB,\qquad \mathcal S_{A,B}=L_A-R_B .
 $$</p>
 <p><strong>Proposition.</strong> The operator $\mathcal S_{A,B}$ acts on the sixteen-dimensional complex vector space $M_4(\mathbb{C})$, and it is $\mathbb{C}$-linear.</p>
 <p><strong>Proof.</strong> The product is bilinear, so $X\mapsto AX$ and $X\mapsto XB$ are linear, and so is their difference.</p>
+<p><strong>The axis-free form.</strong> With $A=\sum_\mu a_\mu e_\mu$ and $B=\sum_\nu b_\nu e_\nu$ in the coefficient basis $e_t,\vec e_x,\vec e_y,\vec e_z$ of the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, the two one-sided operators are the combinations</p>
+<p>$$
+L_A=\sum_\mu a_\mu L_{\mathrm{axf},e_\mu},\qquad
+R_B=\sum_\nu b_\nu R_{\mathrm{axf},e_\nu},\qquad
+\mathcal S_{A,B}=\sum_\mu a_\mu L_{\mathrm{axf},e_\mu}-\sum_\nu b_\nu R_{\mathrm{axf},e_\nu}
+$$</p>
+<p>of signed permutation matrices, so each row of the matrix of the Sylvester operator has at most eight nonzero entries. The four left and four right matrices are <em>$M_4(\mathbb{C})$ Axis-Free Representation</em>; the composition table that gives the products $L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$ is <em>$M_4(\mathbb{C})$ Axis-Free Representation: Operators</em>.</p>
 <p><strong>The matrix in the matrix units.</strong> Write $\operatorname{vec}X$ for the column of length sixteen obtained by stacking the columns of $X$. Then</p>
 <p>$$
 \operatorname{vec}\bigl(\mathcal S_{A,B}(X)\bigr)
@@ -331,6 +338,8 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
+<li><a href="m4c-axis-free-representation.html">$M_4(\mathbb{C})$ Axis-Free Representation</a>, for the coefficient basis, the four left matrices and the transpose as the quaternion conjugation.</li>
+<li><a href="m4c-axis-free-representation-operators.html">$M_4(\mathbb{C})$ Axis-Free Representation: Operators</a>, for the sixteen two-sided operators in the coefficient frame, their signs and their composition.</li>
 <li><a href="spectral-theory-and-the-spectral-projectors-of-m4c.html">Spectral Theory and the Spectral Projectors of $M_4(\mathbb{C})$</a>, for the spectrum, the resolvent and the spectral projectors.</li>
 <li><a href="the-kronecker-factorisation-of-m4c-into-m2c-tensor-m2c.html">The Kronecker Factorisation $M_4(\mathbb{C})\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})$</a>, for the Kronecker product and the two factors.</li>
 <li><a href="the-centraliser.html">The Centraliser</a>, for the commutant and its dimension.</li>

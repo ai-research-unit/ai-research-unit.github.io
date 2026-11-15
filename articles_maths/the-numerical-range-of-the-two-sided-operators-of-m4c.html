@@ -94,6 +94,11 @@ L_{a}R_{b}L_{c}R_{d}=L_{ac}R_{db},\qquad L_{a}R_{b}^{*}=L_{a^{*}}R_{b^{*}} .
 $$</p>
 <p>The operator $L_{a}R_{b}$ is invertible exactly when $a$ and $b$ are, and then $L_{a}R_{b}^{-1}=L_{a^{-1}}R_{b^{-1}}$.</p>
 <p><strong>Proof.</strong> The composition is $X\mapsto a(cXd)b=(ac)X(db)$. For the adjoint, $\langle Y,aXb\rangle=\operatorname{tr}(Y^*aXb)=\operatorname{tr}\bigl((a^*Yb^*)^*X\bigr)=\langle a^*Yb^*,X\rangle$. The inverse is the product law with $L_{a}R_{b}L_{a^{-1}}R_{b^{-1}}=L_{I}R_{I}$.</p>
+<p><strong>The axis-free form.</strong> With $a=\sum_\mu a_\mu e_\mu$ and $b=\sum_\nu b_\nu e_\nu$ in the coefficient basis $e_t,\vec e_x,\vec e_y,\vec e_z$ of the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, the operator is a combination of sixteen signed permutation matrices,
+$$
+L_{\mathrm{axf},a}R_{\mathrm{axf},b}=\sum_{\mu,\nu}a_\mu b_\nu\,T_{\mu\nu},\qquad T_{\mu\nu}=L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu},
+$$
+and the Hilbert–Schmidt form is diagonal in that basis: $\operatorname{tr}(T_{\mu\nu}^{\dagger}T_{\rho\sigma})=4\delta_{\mu\rho}\delta_{\nu\sigma}$. The four left matrices are <em>$M_4(\mathbb{C})$ Axis-Free Representation</em>; the sixteen products and their composition are <em>$M_4(\mathbb{C})$ Axis-Free Representation: Operators</em>.</p>
 <p><strong>The matrix.</strong> In the row-stacking basis,</p>
 <p>$$
 L_a=a\otimes I_4,\qquad R_b=I_4\otimes b^{\mathsf T},\qquad L_{a}R_{b}=a\otimes b^{\mathsf T},
@@ -446,6 +451,8 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
+<li><a href="m4c-axis-free-representation.html">$M_4(\mathbb{C})$ Axis-Free Representation</a>, for the coefficient basis, the four left matrices and the transpose as the quaternion conjugation.</li>
+<li><a href="m4c-axis-free-representation-operators.html">$M_4(\mathbb{C})$ Axis-Free Representation: Operators</a>, for the sixteen two-sided operators in the coefficient frame, their signs and their composition.</li>
 <li><a href="hermitian-operators-and-the-numerical-range.html">Hermitian Operators and the Numerical Range</a>, for the general theory, the support function and the Toeplitz–Hausdorff theorem.</li>
 <li><a href="the-numerical-range-and-the-field-of-values-of-m4c.html">The Numerical Range and the Field of Values of $M_4(\mathbb{C})$</a>, for the elliptical range theorem, the block rule, the rank-one case and the nilpotent chain.</li>
 <li><a href="the-operators-of-the-peirce-decomposition-of-m4c.html">The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$</a>, for $L_a$, $R_a$, $L_{a}R_{b}$, their matrices and their spectrum.</li>

@@ -80,6 +80,7 @@ $$</p>
 <p><strong>Definition.</strong> Let $\Lambda^{2}\mathbb{C}^{4}$ be the space of antisymmetric bilinear forms on $\mathbb{C}^{4}$, identified with the matrices $A$ with $A^{\mathsf T}=-A$.</p>
 <p><strong>Proposition.</strong> The space $\Lambda^{2}\mathbb{C}^{4}$ has dimension $6$, with basis $e_{i}\wedge e_{j}$ for $1\le i<j\le4$, and the matrix of $A=\sum_{i<j}a_{ij}e_{i}\wedge e_{j}$ has entries $A_{ij}=a_{ij}$ and $A_{ji}=-a_{ij}$.</p>
 <p><strong>Proof.</strong> An antisymmetric matrix is determined by its entries above the diagonal, of which there are $\binom{4}{2}=6$; the matrices $e_{i}\wedge e_{j}=E_{ij}-E_{ji}$ are linearly independent and span the space.</p>
+<p><strong>The axis-free form.</strong> In the coefficient basis $e_t,\vec e_x,\vec e_y,\vec e_z$ of the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ the antisymmetric sector is spanned by the six axis-free operators $T_{tx},T_{ty},T_{tz},T_{xt},T_{yt},T_{zt}$, and the symmetric sector by the other ten, $T_{tt},T_{xx},T_{yy},T_{zz},T_{xy},T_{xz},T_{yx},T_{yz},T_{zx},T_{zy}$, each of which is a symmetric signed permutation matrix. The six are exactly the mixed time-space pairs, so the split of $M_4(\mathbb{C})$ into symmetric and antisymmetric matrices is a coordinate split in that basis, with no diagonalisation. The sixteen matrices are <em>$M_4(\mathbb{C})$ Axis-Free Representation: Operators</em>; the trace pairing that separates the two halves is <em>The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$</em>.</p>
 <p><strong>The Lie algebra.</strong> The commutator of two antisymmetric matrices is antisymmetric:</p>
 <p>$$
 [A,B]^{\mathsf T}=(AB-BA)^{\mathsf T}=B^{\mathsf T}A^{\mathsf T}-A^{\mathsf T}B^{\mathsf T}=BA-AB=-[A,B].
@@ -163,7 +164,7 @@ $$</p>
 </ul>
 <p>Each family is parametrised by a $\mathbb{P}^{3}$, the dual $\mathbb{P}^{3}$ for the second, and the two families are the <strong>rulings</strong> of $Q$. Two points of $Q$ lie on a common line of $Q$ exactly when the corresponding lines of $\mathbb{P}^{3}$ meet.</p>
 <p><strong>Proof.</strong> The lines through a fixed point $P$ form a $\mathbb{P}^{2}$ in $\mathbb{P}^{3}$, and their Plücker points satisfy the two linear equations $P\wedge\omega=0$, which define a plane in $\mathbb{P}^{5}$; that plane lies in $Q$ because every form in it is decomposable. The same argument applies to the lines in a fixed plane, with the dual equations. The two planes through a point of $Q$ are obtained by taking $P$ on the line and $H$ containing the line. The incidence statement is the Klein correspondence: two lines meet exactly when the corresponding two-forms have a common vector, which is the condition that their Plücker points are joined by a line lying in $Q$.</p>
-<h2 id="the-place-of-the-sector-in-math149">The Place of the Sector in $M_4(\mathbb{C})$</h2>
+<h2 id="the-place-of-the-sector-in-math156">The Place of the Sector in $M_4(\mathbb{C})$</h2>
 <p><strong>The trace form.</strong> On the antisymmetric sector the trace form is nondegenerate, and in the basis $e_{i}\wedge e_{j}$ it is diagonal:</p>
 <p>$$
 \operatorname{tr}\bigl((e_{i}\wedge e_{j})(e_{k}\wedge e_{l})\bigr)=-2\,\delta_{ik}\delta_{jl},
@@ -261,6 +262,8 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
+<li><a href="m4c-axis-free-representation.html">$M_4(\mathbb{C})$ Axis-Free Representation</a>, for the coefficient basis, the four left matrices and the transpose as the quaternion conjugation.</li>
+<li><a href="m4c-axis-free-representation-operators.html">$M_4(\mathbb{C})$ Axis-Free Representation: Operators</a>, for the sixteen two-sided operators in the coefficient frame, their signs and their composition.</li>
 <li><a href="the-forms-the-norms-and-the-singular-set-of-m4c.html">The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$</a>, for the determinant and the singular set of the full algebra.</li>
 <li><a href="the-peirce-su2-and-the-chiral-su2-su2-of-m4c.html">The Peirce $\mathfrak{su}_2$ and the Chiral $\mathfrak{su}_2\times\mathfrak{su}_2$ of $M_4(\mathbb{C})$</a>, for the other pair of chiral subalgebras.</li>
 <li><a href="the-geometry-of-the-idempotents-of-m4c.html">The Geometry of the Idempotents of $M_4(\mathbb{C})$</a>, for the Grassmannians and the flag variety.</li>

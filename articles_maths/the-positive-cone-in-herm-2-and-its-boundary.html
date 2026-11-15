@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Positive Cone in $\mathrm{Herm}_2$ and Its Boundary — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-positive-cone-in-math0-and-its-boundary"><strong>The Positive Cone in $\mathrm{Herm}_2$ and Its Boundary</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The positive semidefinite Hermitian matrices form a closed convex cone of real dimension four with no lines, self-dual for the trace form, whose trace hyperplane section is the Bloch ball and whose boundary is the cone over the two-sphere of pure states.</strong></p>
+<p>The article defines the cone, identifies it with the Lorentz cone, computes its section by the trace hyperplane, proves that the boundary consists exactly of the rank-one matrices, describes the extreme rays and the faces, and shows self-duality. It assumes <em>The Two Halves and Their Topology at $n=2$</em>, <em>The Spectral Theorem: the Hermitian Case and the Sphere of Idempotents</em> and <em>The Trace Form and Its Signature on the Two Halves of $M_2(\mathbb{R})$</em>.</p>
+<p>It follows the biquaternion article <em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em> for the norm whose square is positive on the cone.</p>
+<h2 id="the-cone-and-its-properties">The Cone and Its Properties</h2>
+<p><strong>The positive semidefinite matrices form a closed pointed convex cone with nonempty interior in the Hermitian half.</strong></p>
+<p><strong>Definition.</strong> Let $C=\{A\in\operatorname{Herm}_2 : \langle v,Av\rangle\ge 0 \text{ for every } v\}$ be the positive semidefinite cone.</p>
+<p><strong>Proposition.</strong> The cone $C$ is closed, convex, pointed and has nonempty interior, and it is invariant under conjugation by unitary matrices.</p>
+<p><strong>Proof.</strong> The condition $\langle v,Av\rangle\ge 0$ is a closed condition for each $v$; a convex combination of two positive semidefinite forms is positive semidefinite; the cone contains no line because a matrix and its negative cannot both be nonzero and semidefinite; and the identity lies in the interior.</p>
+<p><strong>Corollary.</strong> The cone is generated by its rank-one elements, which are the matrices $vv^{*}$.</p>
+<p><strong>Proof.</strong> A positive semidefinite matrix is a sum of rank-one terms by the spectral theorem, and each term is a multiple of $vv^{*}$ for an eigenvector $v$.</p>
+<p><strong>Corollary.</strong> The cone has real dimension four, and its interior is the set of positive definite matrices.</p>
+<p><strong>Proof.</strong> The Hermitian half has dimension four, and the positive definite matrices form a nonempty open subset.</p>
+<h2 id="the-lorentz-form">The Lorentz Form</h2>
+<p><strong>Proposition.</strong> The determinant is a quadratic form of signature $(1,3)$ on the Hermitian half, and the cone is the set where the determinant is positive and the trace is positive.</p>
+<p><strong>Proof.</strong> In the coordinates of the two real diagonal entries and the two real components of the off-diagonal entry the determinant is $ac-|b|^{2}$, whose Gram matrix has the eigenvalues $\tfrac12,-\tfrac12,-\tfrac12,-\tfrac12$; the positivity of the form plus a positive trace is exactly the positive semidefinite condition.</p>
+<p><strong>Corollary.</strong> The cone is a Lorentz cone, isometric to the cone of future-directed timelike vectors of four-dimensional Minkowski space.</p>
+<p><strong>Proof.</strong> The map sending a Hermitian matrix to its four coordinates turns the determinant into the Minkowski form and the trace into the time coordinate.</p>
+<p><strong>Corollary.</strong> The cone is not polyhedral, because its extreme rays form a two-sphere rather than a finite set.</p>
+<p><strong>Proof.</strong> A polyhedral cone has finitely many extreme rays, and the extreme rays of the present cone are parametrised by a two-sphere, which is infinite.</p>
+<h2 id="the-trace-hyperplane-and-the-bloch-ball">The Trace Hyperplane and the Bloch Ball</h2>
+<p><strong>Theorem.</strong> The section of the cone by the hyperplane of trace one is a closed ball of radius one in the three-dimensional space of traceless Hermitian matrices, and its boundary is the sphere of rank-one matrices.</p>
+<p><strong>Proof.</strong> A trace-one Hermitian matrix is $\tfrac12(I+\vec r\cdot\vec\sigma)$ with $\vec r$ in three-space, and the eigenvalues are $\tfrac12(1\pm|\vec r|)$; both are nonnegative exactly when $|\vec r|\le 1$. The boundary $|\vec r|=1$ is the set of matrices with one eigenvalue zero, which is the rank-one condition.</p>
+<p><strong>Corollary.</strong> The extreme points of the ball are the rank-one matrices, and they correspond to the points of the two-sphere.</p>
+<p><strong>Proof.</strong> The extreme points of a ball are its boundary sphere, and the boundary is the set of rank-one matrices.</p>
+<p><strong>Corollary.</strong> The centre of the ball is the maximally mixed matrix $\tfrac12 I$, whose two eigenvalues are equal.</p>
+<p><strong>Proof.</strong> The centre has $\vec r=0$, and the matrix is one half of the identity.</p>
+<h2 id="the-boundary">The Boundary</h2>
+<p><strong>Proposition.</strong> The boundary of the cone is exactly the set of nonzero positive semidefinite matrices of rank one, which is the cone over the two-sphere.</p>
+<p><strong>Proof.</strong> A positive semidefinite matrix is on the boundary exactly when it is not positive definite, which for a semidefinite matrix of order two means determinant zero, hence rank one; and the rank-one matrices are $vv^{*}$, parametrised by a ray of the two-sphere.</p>
+<p><strong>Corollary.</strong> The boundary is a cone of real dimension three, and its section by the trace hyperplane is the two-sphere.</p>
+<p><strong>Proof.</strong> The cone over a two-dimensional sphere has dimension three, and the trace-one section is the sphere itself.</p>
+<p><strong>Corollary.</strong> The interior of the cone is the positive definite set, which is the open cone over the open ball, and it retracts onto the ball.</p>
+<p><strong>Proof.</strong> Every interior point can be scaled to trace one, and the scaling gives the retraction.</p>
+<h2 id="the-faces">The Faces</h2>
+<p><strong>Proposition.</strong> The faces of the cone are the cone itself, the boundary cone of rank-one matrices, the single ray of a rank-one matrix, and the origin.</p>
+<p><strong>Proof.</strong> A face is the intersection of the cone with a supporting hyperplane; the supporting hyperplanes at the boundary touch along the extreme rays, and the faces of a Lorentz cone are the cone, the boundary, the extreme rays and the apex.</p>
+<p><strong>Corollary.</strong> The extreme rays are the rays through the rank-one matrices, and each of them is a face of dimension one.</p>
+<p><strong>Proof.</strong> A ray is extreme when it cannot be written as a sum of two other rays, which holds exactly for the rank-one matrices.</p>
+<p><strong>Corollary.</strong> The cone has infinitely many extreme rays, in bijection with the points of the two-sphere.</p>
+<p><strong>Proof.</strong> The rank-one matrices are parametrised by a line in the plane up to phase, which is the two-sphere.</p>
+<h2 id="self-duality">Self-Duality</h2>
+<p><strong>Proposition.</strong> The cone is self-dual for the trace form: the matrices whose pairing with every element of the cone is nonnegative are exactly the elements of the cone.</p>
+<p><strong>Proof.</strong> The trace pairing of two Hermitian matrices is the Minkowski pairing of their four coordinates, and the Lorentz cone is self-dual for the Minkowski form.</p>
+<p><strong>Corollary.</strong> The dual cone of the positive semidefinite cone is itself, so the cone is the polar of itself with respect to the trace form.</p>
+<p><strong>Proof.</strong> Self-duality means that the polar cone equals the cone.</p>
+<p><strong>Corollary.</strong> The trace form is positive definite on the cone, and the pairing of two positive definite matrices is positive.</p>
+<p><strong>Proof.</strong> The trace of the product of two positive definite matrices is the sum of the eigenvalues of a positive definite matrix, which are positive.</p>
+<p><strong>Corollary.</strong> The automorphism group of the cone is the Lorentz group of the four coordinates, of real dimension six, and it contains the unitary conjugations as a subgroup of real dimension four.</p>
+<p><strong>Proof.</strong> A linear automorphism of the Lorentz cone preserves the Minkowski form up to the time orientation, which is the Lorentz group; the unitary conjugations preserve the determinant and act transitively on the boundary sphere.</p>
+<p><strong>Corollary.</strong> The cone is homogeneous: for any two interior points there is an automorphism carrying one to the other.</p>
+<p><strong>Proof.</strong> The Lorentz group acts transitively on the interior of the cone, and it preserves the cone by definition.</p>
+<h2 id="summary">Summary</h2>
+<p>The positive semidefinite Hermitian matrices form a closed pointed convex cone of real dimension four, self-dual for the trace form and linearly isomorphic to the Lorentz cone of Minkowski space. Its trace-one section is the Bloch ball, a closed ball of radius one, centred at one half of the identity.</p>
+<p>The boundary of the cone is the cone over the two-sphere of rank-one matrices, its extreme rays are those rank-one rays, and its faces are the cone, the boundary, the extreme rays and the apex. The interior is the positive definite set and retracts onto the open ball.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$C$</td>
+<td>the positive semidefinite cone in $\operatorname{Herm}_2$</td>
+</tr>
+<tr>
+<td>$vv^{*}$</td>
+<td>a rank-one positive semidefinite matrix</td>
+</tr>
+<tr>
+<td>$\tfrac12(I+\vec r\cdot\vec\sigma)$</td>
+<td>a trace-one Hermitian matrix</td>
+</tr>
+<tr>
+<td>$|\vec r|\le 1$</td>
+<td>the Bloch ball condition</td>
+</tr>
+<tr>
+<td>$(1,3)$</td>
+<td>the signature of the determinant on the half</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Rajendra Bhatia, <em>Positive Definite Matrices</em> (Princeton University Press, 2007), for cones of positive matrices and their faces.</li>
+<li>Michael A. Nielsen and Isaac L. Chuang, <em>Quantum Computation and Quantum Information</em> (Cambridge University Press, 2010), for the Bloch ball of density matrices.</li>
+<li><a href="the-two-halves-and-their-topology-at-n-2.html">The Two Halves and Their Topology at $n=2$</a>, for the cone in its topological setting.</li>
+<li><a href="the-spectral-theorem-the-hermitian-case-and-the-sphere-of-idempotents.html">The Spectral Theorem: the Hermitian Case and the Sphere of Idempotents</a>, for the rank-one Hermitian matrices.</li>
+<li><a href="the-trace-form-and-its-signature-on-the-two-halves-of-m2r.html">The Trace Form and Its Signature on the Two Halves of $M_2(\mathbb{R})$</a>, for the pairing used in self-duality.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

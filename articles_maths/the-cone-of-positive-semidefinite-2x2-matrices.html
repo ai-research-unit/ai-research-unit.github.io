@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Cone of Positive Semidefinite $2\times2$ Matrices — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-cone-of-positive-semidefinite-math0-matrices"><strong>The Cone of Positive Semidefinite $2\times2$ Matrices</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>In dimension two the positive semidefinite cone is described by three scalar inequalities, it is the set of squares of symmetric matrices, it is a spectrahedron cut out by one linear matrix inequality, and its ranks stratify it into the origin, the extreme rays and the interior; the function minus the logarithm of the determinant is a barrier with parameter two.</strong></p>
+<p>The article gives the minor description of the cone, identifies it with the cone of squares, writes it as the feasible set of a linear matrix inequality, describes the stratification by rank, examines the determinant barrier and the analytic centre, and states the semidefinite programme of order two. It assumes <em>The Positive Cone in $\mathrm{Herm}_2$ and Its Boundary</em>, <em>The Jordan Algebra $\operatorname{Sym}_2$</em> and <em>The Elementary Symmetric Functions: $\operatorname{tr}$ and $\det$ in Dimension Two</em>.</p>
+<p>It follows the biquaternion article <em>Idempotents</em> for the rank-one extreme rays of the same cone.</p>
+<h2 id="the-description-by-minors">The Description by Minors</h2>
+<p><strong>Proposition.</strong> A real symmetric matrix is positive semidefinite exactly when its two diagonal entries and its determinant are nonnegative.</p>
+<p><strong>Proof.</strong> The eigenvalues of a symmetric matrix of order two are the roots of a quadratic with the given trace and determinant, and the two conditions say that both roots are nonnegative; the converse is immediate from the spectral theorem.</p>
+<p><strong>Corollary.</strong> The cone is a basic semialgebraic set defined by one linear inequality in each diagonal entry and one quadratic inequality in the three coordinates.</p>
+<p><strong>Proof.</strong> The determinant is $ac-b^{2}$, a quadratic function of the three coordinates.</p>
+<p><strong>Corollary.</strong> Over the region of positive diagonal entries the cone is described by the convex inequality $c\ge b^{2}/a$, so it is the epigraph of a convex quadratic function of the off-diagonal coordinate.</p>
+<p><strong>Proof.</strong> The condition $ac\ge b^{2}$ with positive diagonal entries is the stated inequality, and the function $b^{2}/a$ is convex in $b$.</p>
+<h2 id="the-cone-of-squares">The Cone of Squares</h2>
+<p><strong>Theorem.</strong> The positive semidefinite cone is exactly the set of squares $B^{2}$ of symmetric matrices $B$, and it is exactly the set of products $CC^{\mathsf T}$.</p>
+<p><strong>Proof.</strong> The square of a symmetric matrix has the squared eigenvalues, which are nonnegative, and the spectral theorem writes every positive semidefinite matrix as the square of its own square root; the product $CC^{\mathsf T}$ is positive semidefinite because its quadratic form is a squared norm.</p>
+<p><strong>Corollary.</strong> The cone of squares is closed under addition, and it is the smallest closed convex cone containing the squares of the symmetric matrices.</p>
+<p><strong>Proof.</strong> A sum of squares of symmetric matrices is a positive semidefinite matrix, and every positive semidefinite matrix is a single square.</p>
+<p><strong>Corollary.</strong> The squares of the antisymmetric matrices are negative semidefinite, so they meet the cone only at the origin.</p>
+<p><strong>Proof.</strong> The square of an antisymmetric matrix of order two is a negative multiple of the identity, whose eigenvalues are nonpositive.</p>
+<h2 id="the-spectrahedron-description">The Spectrahedron Description</h2>
+<p><strong>Proposition.</strong> The cone is the feasible set of a single linear matrix inequality: the matrix $\sum x_{i}A_{i}$ is positive semidefinite for three fixed symmetric matrices $A_{i}$ forming a basis.</p>
+<p><strong>Proof.</strong> Writing the matrix in the basis of the three symmetric units gives a linear matrix-valued function of the coordinates, and the inequality is the positive semidefinite condition.</p>
+<p><strong>Corollary.</strong> The cone is a spectrahedron, and in dimension two every spectrahedron defined by one inequality of order two is a cone of this type up to an affine change of coordinates.</p>
+<p><strong>Proof.</strong> A linear matrix inequality of order two is a linear family of symmetric matrices, whose positive semidefinite set is the preimage of the cone under an affine map.</p>
+<p><strong>Corollary.</strong> The dual cone is again a cone of the same type, defined by the dual inequalities.</p>
+<p><strong>Proof.</strong> The cone is self-dual for the trace form, so its dual is itself up to the linear identification.</p>
+<h2 id="the-stratification-by-rank">The Stratification by Rank</h2>
+<p><strong>Proposition.</strong> The cone is the disjoint union of the origin, the two-dimensional set of rank-one matrices, and the three-dimensional interior of positive definite matrices.</p>
+<p><strong>Proof.</strong> The rank of a symmetric matrix is zero, one or two; the rank-one positive semidefinite matrices form the cone over the circle of directions, of real dimension two, and the interior has the dimension of the symmetric half.</p>
+<p><strong>Corollary.</strong> The rank-one stratum is the boundary of the cone, and it is a smooth manifold away from the origin.</p>
+<p><strong>Proof.</strong> A rank-one matrix is on the boundary because it is singular, and the rank-one set is the cone over the circle of directions.</p>
+<p><strong>Corollary.</strong> The rank function is upper semicontinuous, and its jumps define the strata.</p>
+<p><strong>Proof.</strong> The rank can only drop in a limit, and the strata are the level sets of the rank.</p>
+<p><strong>Corollary.</strong> The closure of the interior is the whole cone, and the closure of the rank-one stratum is the rank-one stratum with the origin added.</p>
+<p><strong>Proof.</strong> Every semidefinite matrix is a limit of positive definite matrices, and every rank-one matrix is a limit of rank-one matrices.</p>
+<h2 id="the-determinant-barrier">The Determinant Barrier</h2>
+<p><strong>Proposition.</strong> The function $F(X)=-\log\det X$ is smooth, convex and strictly convex on the interior of the cone, and it tends to infinity at the boundary.</p>
+<p><strong>Proof.</strong> The determinant is positive on the interior, its logarithm is concave there by the matrix analogue of the logarithmic inequality, and the divergence at the boundary follows from the vanishing of an eigenvalue.</p>
+<p><strong>Corollary.</strong> The function is a self-concordant barrier with parameter two, and its minimiser over a bounded section is the analytic centre.</p>
+<p><strong>Proof.</strong> The barrier parameter of minus the logarithm of the determinant on the cone of positive definite matrices of order two is two, the order of the matrices.</p>
+<p><strong>Corollary.</strong> The gradient of the barrier at a matrix is minus the inverse, and the Hessian is the quadratic form of the inverse on both sides.</p>
+<p><strong>Proof.</strong> The derivative of the logarithm of the determinant is the trace of the inverse times the increment, and the second derivative follows by differentiating again.</p>
+<h2 id="semidefinite-programming">Semidefinite Programming</h2>
+<p><strong>Proposition.</strong> A semidefinite programme of order two minimises a linear function over an affine slice of the cone, and its dual is another such programme over the dual slice.</p>
+<p><strong>Proof.</strong> The primal problem is the minimisation of a linear functional over the intersection of the cone with an affine subspace, and the Lagrangian dual is obtained by pairing with a dual matrix.</p>
+<p><strong>Corollary.</strong> Strong duality holds when the two programmes have strictly feasible points, and the optimal values then agree.</p>
+<p><strong>Proof.</strong> Slater's condition for a convex programme with a nonempty interior gives strong duality.</p>
+<p><strong>Corollary.</strong> The optimal set, when it is nonempty, is a face of the feasible slice, and the complementary slackness conditions couple the primal and the dual matrices.</p>
+<p><strong>Proof.</strong> The optimum of a linear function over a convex set is attained on a face, and the slackness conditions are the equality case of the duality inequality.</p>
+<h2 id="summary">Summary</h2>
+<p>In dimension two the positive semidefinite cone is defined by the nonnegativity of the two diagonal entries and of the determinant, and it is exactly the set of squares of symmetric matrices and of products of a matrix with its transpose. It is a spectrahedron cut out by one linear matrix inequality of order two, self-dual for the trace form.</p>
+<p>Its strata are the origin, the rank-one boundary and the positive definite interior, and the negative logarithm of the determinant is a self-concordant barrier of parameter two whose gradient is minus the inverse. Semidefinite programmes of order two obey strong duality under Slater's condition.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{Sym}_2^{+}$</td>
+<td>the positive semidefinite cone</td>
+</tr>
+<tr>
+<td>$B^{2}$, $CC^{\mathsf T}$</td>
+<td>the descriptions as squares and products</td>
+</tr>
+<tr>
+<td>$-\log\det X$</td>
+<td>the determinant barrier</td>
+</tr>
+<tr>
+<td>$\nu=2$</td>
+<td>the barrier parameter</td>
+</tr>
+<tr>
+<td>$\langle C,X\rangle$</td>
+<td>the objective of the semidefinite programme</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Stephen Boyd and Lieven Vandenberghe, <em>Convex Optimization</em> (Cambridge University Press, 2004), for semidefinite programmes and barriers.</li>
+<li>Yurii Nesterov and Arkadii Nemirovski, <em>Interior-Point Polynomial Algorithms in Convex Programming</em> (SIAM, 1994), for self-concordant barriers.</li>
+<li><a href="the-positive-cone-in-herm-2-and-its-boundary.html">The Positive Cone in $\mathrm{Herm}_2$ and Its Boundary</a>, for the complex analogue of the cone.</li>
+<li><a href="the-jordan-algebra-sym-2.html">The Jordan Algebra $\operatorname{Sym}_2$</a>, for the algebra in which the cone is the cone of squares.</li>
+<li><a href="the-elementary-symmetric-functions-trace-and-determinant-in-dimension-two.html">The Elementary Symmetric Functions: $\operatorname{tr}$ and $\det$ in Dimension Two</a>, for the two invariants defining the cone.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

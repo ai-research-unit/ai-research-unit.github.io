@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Analysis on $M_2(\mathbb{C})$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-analysis-on-math0"><strong>The Analysis on $M_2(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The matrix algebra is a Euclidean space of dimension eight, so it carries Lebesgue measure, a Gaussian measure of total mass $\pi^{4}$, and a calculus that treats the four complex entries as eight real variables; the determinant and the trace are polynomial functions, and the Haar measure of the unitary group is computed by the Weyl formula.</strong></p>
+<p>The article sets the measure, integrates the Gaussian density and the fundamental invariant, treats the algebra of polynomial functions and the derivative of the determinant, computes the Jacobian of the exponential at the origin, and records the Haar measure of the unitary group. It assumes <em>The Topology of $M_2(\mathbb{C})$</em>, <em>The Exponential of a $2\times2$ Matrix and Its Image</em> and <em>The Cartan Decomposition of $\mathrm{GL}_2(\mathbb{C})$</em>.</p>
+<p>It follows the biquaternion article <em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em> for the same densities in the eight real coordinates.</p>
+<h2 id="measure-and-integration">Measure and Integration</h2>
+<p><strong>Lebesgue measure on the eight real coordinates is the reference measure, and it is invariant under translations and under unitary conjugation.</strong></p>
+<p><strong>Proposition.</strong> The identification with $\mathbb{R}^{8}$ gives a Lebesgue measure $dZ$ that is invariant under all translations and under the orthogonal group of the Hilbert–Schmidt form.</p>
+<p><strong>Proof.</strong> A translation is a translation of the eight coordinates, and unitary conjugation is an orthogonal transformation for the Hilbert–Schmidt form, whose determinant has modulus one.</p>
+<p><strong>Corollary.</strong> The integral of an integrable function against $dZ$ is the eightfold real integral over the entries and their conjugates.</p>
+<p><strong>Proof.</strong> The real and imaginary parts of the four entries are the eight coordinates.</p>
+<p><strong>Corollary.</strong> The measure is $\sigma$-finite, complete and regular, and the compact sets have finite measure.</p>
+<p><strong>Proof.</strong> These are the properties of Lebesgue measure in a finite-dimensional Euclidean space.</p>
+<h2 id="the-gaussian-measure">The Gaussian Measure</h2>
+<p><strong>Theorem.</strong> The integral of the density $e^{-\operatorname{tr}(Z^{*}Z)}$ over the whole matrix algebra is $\pi^{4}$.</p>
+<p><strong>Proof.</strong> The trace of $Z^{*}Z$ is the sum of the squares of the eight real coordinates, so the integral is the eighth power of the one-dimensional Gaussian integral, which is $\sqrt\pi$; the eighth power is $\pi^{4}$.</p>
+<p><strong>Corollary.</strong> The normalised Gaussian probability measure $d\mu=\pi^{-4}e^{-\operatorname{tr}(Z^{*}Z)}dZ$ has total mass one, and the eight coordinates are independent centred Gaussians of variance one half.</p>
+<p><strong>Proof.</strong> The density factorises as a product of eight Gaussian densities of variance one half.</p>
+<p><strong>Corollary.</strong> Under the Gaussian measure the expected squared Hilbert–Schmidt length of the matrix is four, the dimension of the complex space.</p>
+<p><strong>Proof.</strong> Each of the eight coordinates contributes one half, and eight halves make four.</p>
+<h2 id="invariant-integrals">Invariant Integrals</h2>
+<p><strong>Proposition.</strong> An integral of a unitarily invariant function is computed on the diagonal matrices by the Weyl formula, with the squared Vandermonde factor $|e^{i\theta_{1}}-e^{i\theta_{2}}|^{2}$.</p>
+<p><strong>Proof.</strong> Diagonalising a unitary matrix by unitary conjugation, the Jacobian of the diagonalisation carries the squared Vandermonde determinant of the eigenvalues, which is the squared modulus of the difference of the two unit complex numbers.</p>
+<p><strong>Corollary.</strong> The volume of the unitary group is the area of the circle times the volume of the three-sphere, which is $4\pi^{3}$.</p>
+<p><strong>Proof.</strong> The unitary group is the quotient of the product of the circle with the three-sphere by a group of order two, and the volumes are $2\pi$ and $2\pi^{2}$.</p>
+<p><strong>Corollary.</strong> The integral over the unitary group of the absolute value squared of a matrix element is one half.</p>
+<p><strong>Proof.</strong> The sum of the four squared moduli of the entries of a unitary matrix is one, and symmetry distributes it equally among the four entries.</p>
+<h2 id="polynomial-functions">Polynomial Functions</h2>
+<p><strong>Proposition.</strong> The trace and the determinant generate the algebra of invariant polynomial functions on the matrix algebra, and they are algebraically independent.</p>
+<p><strong>Proof.</strong> The elementary symmetric functions of the eigenvalues are the trace and the determinant, and the eigenvalues are the only unitary invariants of a matrix.</p>
+<p><strong>Corollary.</strong> Every invariant polynomial is a polynomial in the trace and the determinant, and the two are homogeneous of degrees one and two.</p>
+<p><strong>Proof.</strong> The invariants of the unitary group are generated by the coefficients of the characteristic polynomial.</p>
+<p><strong>Corollary.</strong> The derivative of the determinant at a matrix $Z$ is the cofactor form $W\mapsto\operatorname{tr}(\operatorname{adj}(Z)W)$, which vanishes identically exactly at the matrices of rank at most one.</p>
+<p><strong>Proof.</strong> The determinant is multilinear in the two columns, so its derivative is the sum of the two cofactor pairings; all cofactors vanish exactly when the rank is at most one.</p>
+<h2 id="the-exponential-and-its-jacobian">The Exponential and Its Jacobian</h2>
+<p><strong>Proposition.</strong> The exponential map is a local diffeomorphism at the origin with the identity as derivative, and it is a global diffeomorphism from the Hermitian half onto the positive definite cone.</p>
+<p><strong>Proof.</strong> The derivative of the exponential at the origin is the identity because the linear term of the series is the argument itself, and the exponential of a Hermitian matrix is positive definite with the eigenvalues exponentiated.</p>
+<p><strong>Corollary.</strong> The Jacobian of the exponential at the origin is one, so the map preserves the reference measure to first order.</p>
+<p><strong>Proof.</strong> The derivative is the identity, whose determinant is one.</p>
+<p><strong>Corollary.</strong> The Jacobian of the exponential at a matrix $Z$ with simple spectrum is $e^{\operatorname{tr}Z}$ times the squared product of $\dfrac{e^{\lambda_{i}}-e^{\lambda_{j}}}{\lambda_{i}-\lambda_{j}}$ over the pairs $i<j$.</p>
+<p><strong>Proof.</strong> The derivative of the exponential in the eigenbasis carries one such factor for each ordered pair of eigenvalues, and the two orders give the square; the factor $e^{\operatorname{tr}Z}$ collects the two diagonal contributions.</p>
+<p><strong>Corollary.</strong> The exponential is a local diffeomorphism exactly where the two eigenvalues of the argument do not differ by a nonzero multiple of $2\pi i$.</p>
+<p><strong>Proof.</strong> The Jacobian vanishes exactly when some difference $\lambda_{i}-\lambda_{j}$ is a nonzero multiple of $2\pi i$, and the inverse function theorem applies elsewhere.</p>
+<h2 id="the-haar-measure-on-the-unitary-group">The Haar Measure on the Unitary Group</h2>
+<p><strong>Proposition.</strong> The unitary group carries a unique bi-invariant probability measure, and it is the push-forward of the normalised Lebesgue measure of the three-sphere and the circle.</p>
+<p><strong>Proof.</strong> A compact group has a unique Haar probability measure, and the parametrisation by the special unitary group and the circle gives an explicit description.</p>
+<p><strong>Corollary.</strong> The average of a matrix over the unitary group is zero, the average of $U^{*}U$ is the identity, and the average of the squared modulus of an entry is one half.</p>
+<p><strong>Proof.</strong> The first moment vanishes by symmetry, the second is computed from the invariance and the normalisation of the trace, and the entries share the unit trace equally among four places.</p>
+<p><strong>Corollary.</strong> The average of the fourth power of the trace of a unitary matrix is two.</p>
+<p><strong>Proof.</strong> Writing the trace as the sum of the two eigenvalues on the unit circle, the average of the fourth power reduces to the number of permutations of four objects into two slots, which is two.</p>
+<h2 id="summary">Summary</h2>
+<p>The matrix algebra is a Euclidean space of dimension eight with Lebesgue measure, and the Gaussian density $e^{-\operatorname{tr}(Z^{*}Z)}$ has total integral $\pi^{4}$. The unitarily invariant integrals are computed on the diagonal by the Weyl formula with the squared Vandermonde factor, and the volume of the unitary group is $4\pi^{3}$.</p>
+<p>The invariant polynomials are generated by the trace and the determinant, the derivative of the determinant is the cofactor form, and the exponential has the identity as derivative at the origin. The unitary group carries the Haar probability measure obtained from the circle and the three-sphere.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$dZ$</td>
+<td>Lebesgue measure on the eight real coordinates</td>
+</tr>
+<tr>
+<td>$e^{-\operatorname{tr}(Z^{*}Z)}$</td>
+<td>the Gaussian density</td>
+</tr>
+<tr>
+<td>$\pi^{4}$</td>
+<td>the total Gaussian mass</td>
+</tr>
+<tr>
+<td>$\operatorname{adj}(Z)$</td>
+<td>the cofactor matrix in the derivative of the determinant</td>
+</tr>
+<tr>
+<td>$4\pi^{3}$</td>
+<td>the volume of the unitary group</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Gerald B. Folland, <em>A Course in Abstract Harmonic Analysis</em> (CRC Press, 2015), for Haar measure on compact groups.</li>
+<li>Harish-Chandra, <em>Spherical Functions on a Semisimple Lie Group</em> (American Journal of Mathematics, 1958), for the Weyl integration formula.</li>
+<li><a href="the-topology-of-m2c.html">The Topology of $M_2(\mathbb{C})$</a>, for the space on which the measure lives.</li>
+<li><a href="the-exponential-of-a-2x2-matrix-and-its-image.html">The Exponential of a $2\times2$ Matrix and Its Image</a>, for the exponential used here.</li>
+<li><a href="the-cartan-decomposition-of-gl2c.html">The Cartan Decomposition of $\mathrm{GL}_2(\mathbb{C})$</a>, for the group decomposition that the measure respects.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

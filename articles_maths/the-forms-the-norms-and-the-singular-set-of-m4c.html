@@ -99,6 +99,34 @@ $$</p>
 \det(\lambda A)=\lambda^4\det A.
 $$</p>
 <p>Its modulus is the product of the singular values, and it vanishes exactly on the singular set.</p>
+<h3 id="the-axis-free-diagonalisation-of-the-trace-pairing">The Axis-Free Diagonalisation of the Trace Pairing</h3>
+<p><strong>A second basis, and what it is for.</strong> The sixteen matrices $T_{\mu\nu}=L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$, with $\mu,\nu\in\{t,x,y,z\}$, are the matrices of the two-sided operators $X\mapsto e_\mu Xe_\nu$ in the coefficient basis $\mathcal{E}=(e_t,\vec e_x,\vec e_y,\vec e_z)$ of the biquaternion algebra $\mathbb{B}$, where $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$. Each is a signed permutation matrix of determinant one, and the sixteen are a basis of $M_4(\mathbb{C})$. The construction is <em>The Two-Sided Operators Method to Build $M_4(\mathbb{C})$</em>, and the sixteen are displayed in <em>$M_4(\mathbb{C})$ Axis-Free Representation: Operators</em>.</p>
+<p><strong>The pairing is diagonal in this basis.</strong> In the matrix-unit basis the pairing reads $\beta(E_{ij},E_{kl})=\delta_{il}\delta_{jk}$, a permutation matrix: non-degenerate, and silent about signature. In the axis-free basis it is diagonal,</p>
+<p>$$
+\operatorname{tr}(T_{\mu\nu}T_{\rho\sigma})=\pm4\,\delta_{\mu\rho}\delta_{\nu\sigma},
+$$</p>
+<p>with the sign carried by the pair alone. Ten elements give $+4$ and six give $-4$.</p>
+<p><strong>The ten and the six are the two halves.</strong> The ten positive elements are exactly the symmetric ones,</p>
+<p>$$
+T_{tt},\quad T_{xx},\quad T_{yy},\quad T_{zz},\quad T_{xy},\quad T_{xz},\quad T_{yx},\quad T_{yz},\quad T_{zx},\quad T_{zy},
+$$</p>
+<p>and the six negative ones are exactly the antisymmetric ones,</p>
+<p>$$
+T_{tx},\quad T_{ty},\quad T_{tz},\quad T_{xt},\quad T_{yt},\quad T_{zt}.
+$$</p>
+<p>No element of the basis is neither, and no symmetric element is negative. The two sets are the two halves of <em>The Matrix Algebra $M_4(\mathbb{C})$</em>, read as a coordinate split.</p>
+<p><strong>The signature.</strong> Hence</p>
+<p>$$
+\operatorname{sign}\beta=(10,6),\qquad
+10=\frac{4\cdot5}{2}=\dim\operatorname{Sym}_4,\qquad
+6=\frac{4\cdot3}{2}=\dim\operatorname{Skew}_4 .
+$$</p>
+<p>The symmetric and the antisymmetric subspaces are the positive and the negative eigenspaces of $\beta$, and the axis-free basis exhibits them with no diagonalisation performed. One split is read twice: the two halves of the algebra and the two signs of the form are the same split.</p>
+<p><strong>The definite form in the same basis.</strong> The positive definite form is a different form, and the same basis diagonalises it with every sign positive,</p>
+<p>$$
+\operatorname{tr}(T_{\mu\nu}^{\dagger}T_{\rho\sigma})=4\,\delta_{\mu\rho}\delta_{\nu\sigma},
+$$</p>
+<p>because each $T_{\mu\nu}$ is a signed permutation and $T_{\mu\nu}^{\dagger}T_{\mu\nu}=\mathrm I_4$. The sixteen coordinates of $A$ are therefore sixteen traces, $c_{\mu\nu}=\tfrac14\operatorname{tr}(T_{\mu\nu}^{\dagger}A)$, and the trace is one of them, $\operatorname{tr}A=4c_{tt}$, because $T_{tt}=\mathrm I_4$ is the only basis element with a nonzero trace. The coordinates and the sign of the pairing at the element size are <em>The Element, the Coordinates and the Trace of $M_4(\mathbb{C})$</em>, §<em>The Axis-Free Coordinates and the Sign of the Trace Pairing</em>.</p>
 <h2 id="the-three-norms">The Three Norms</h2>
 <p><strong>The singular values.</strong> For $A\in M_4(\mathbb{C})$, let</p>
 <p>$$
@@ -376,6 +404,9 @@ $$</p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li><a href="the-numerical-range-and-the-field-of-values-of-m4c.html">The Numerical Range and the Field of Values of $M_4(\mathbb{C})$</a>, for the numerical radius against the operator norm.</li>
+<li><a href="the-two-sided-operators-method-to-build-m4c.html">The Two-Sided Operators Method to Build $M_4(\mathbb{C})$</a>, for the sixteen $T_{\mu\nu}$, their orthogonality and their coefficient formula.</li>
+<li><a href="m4c-axis-free-representation.html">$M_4(\mathbb{C})$ Axis-Free Representation</a>, for the coefficient basis and the four left matrices.</li>
+<li><a href="m4c-axis-free-representation-operators.html">$M_4(\mathbb{C})$ Axis-Free Representation: Operators</a>, for the sixteen products, the coefficient matrix and the length.</li>
 <li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for the singular values, the unitarily invariant norms, the determinant and the rank stratification.</li>
 <li>Rajendra Bhatia, <em>Matrix Analysis</em> (Springer, 1997), for the Schatten norms, the duality of the operator and nuclear norms and the spectral radius.</li>
 <li>Joe Harris, <em>Algebraic Geometry: A First Course</em> (Springer, 1992), for determinantal varieties and their dimensions.</li>
