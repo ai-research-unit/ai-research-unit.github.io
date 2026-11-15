@@ -136,7 +136,7 @@ $$
 
 so the single angle is the argument of $\lambda$, and the two signs of the rotor are the two square roots of $\lambda$. The computation confirms the identity, and it exhibits the whole conjugacy class of the planar rotation as the circle of the phases of $\lambda$, which is the segment of the angles read modulo the identification of the endpoints.
 
-**The contrast with $n=3$ is one extra eigenvalue.** At $n=3$ the rotation has the eigenvalues $1,e^{\pm i\theta}$, so the angle is read from the trace by the formula $\cos\theta=(\operatorname{tr}Q-1)/2$; at $n=2$ the trace is $2\cos\theta$ and the eigenvalue one is absent. The computation confirms both formulas, and it shows that the axis at $n=3$ is the direction that the planar case does not have, which is why the two cases share the count one but differ in the shape of the class space: a segment against a segment of angles with an axis attached.
+**The contrast with $n=3$ is one extra eigenvalue.** At $n=3$ the rotation has the eigenvalues $1,e^{\pm i\theta}$, so the angle is read from the trace by the formula $\cos\theta=(\operatorname{tr}Q-1)/2$; at $n=2$ the trace is $2\cos\theta$ and the eigenvalue one is absent. The computation confirms both formulas, and it shows that the axis at $n=3$ is the direction that the planar case does not have.
 
 ## Summary
 
