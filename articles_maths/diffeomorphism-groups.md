@@ -197,7 +197,6 @@ The subgroups defined by structure are the orientation-preserving, the volume-pr
 | Bounded generation | Bound on the number of factors, uniform over the group |
 
 
-
 ## Further Reading
 
 - John Milnor, *Remarks on infinite dimensional Lie groups*, in Relativity, Groups and Topology II (North-Holland, 1984), for the Fréchet Lie group structure and the regularity of the diffeomorphism groups.

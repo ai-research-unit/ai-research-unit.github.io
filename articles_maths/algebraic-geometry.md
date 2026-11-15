@@ -232,9 +232,6 @@ Morphisms of affine varieties are the polynomial maps, and they are contravarian
 | dimension | Krull dimension of $k[X]$ = transcendence degree of $k(X)$ = chain length |
 
 
-
-
-
 ## Further Reading
 
 - Robin Hartshorne, *Algebraic Geometry* (Springer, 1977), for the variety-to-scheme passage and the cohomological theory built on the present article.

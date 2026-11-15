@@ -232,9 +232,6 @@ The universal coefficient theorems express the (co)homology of a complex of free
 | $R$ | commutative ring with $1\neq0$; a principal ideal domain where stated |
 
 
-
-
-
 ## Further Reading
 
 - Henri Cartan and Samuel Eilenberg, *Homological Algebra* (Princeton University Press, 1956), for Ext, Tor, the balance of the two computations and the universal coefficient theorems.

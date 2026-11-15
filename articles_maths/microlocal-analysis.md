@@ -211,7 +211,6 @@ Pseudodifferential operators do not create singularities, $WF(Pu)\subseteq WF(u)
 | $\delta_0$ | delta distribution at the origin |
 
 
-
 ## Further Reading
 
 - Lars Hörmander, "Fourier integral operators I", *Acta Mathematica* 127 (1971), 79–183, for the calculus of Fourier integral operators and the transformation of wavefront sets.

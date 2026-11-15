@@ -332,5 +332,5 @@ The Hermitian form is the one that carries probability: $\langle e_t,e_t\rangle_
 - [Conventions in the Biquaternion Universe](algebra-and-element-conventions.html), for the algebra, the basis, the element glyphs and the conjugations these conventions assume.
 - [Conventions of the Norms and the Pairings](norm-and-pairing-conventions.html), for the norms read on the diagonal of these forms and for the unitary convention.
 - [Operator and Calculus Conventions](operator-and-calculus-conventions.html), for the same products read on the gradient.
-- [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), companion article, for the proofs, the signature convention and the pairwise sign rule.
+- [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), companion article, for the proofs, the signature convention and the pairwise sign rule.
 - [Conventions in Mathematics](../articles_maths/algebra-and-element-conventions.html), for the same forms on the lower layers.

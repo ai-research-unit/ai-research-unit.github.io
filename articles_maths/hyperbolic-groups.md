@@ -225,11 +225,6 @@ A finitely generated group is hyperbolic when its Cayley graph is. Hyperbolic gr
 | Cannon's conjecture | Hyperbolic group with boundary $S^2$ acts on $\mathbf{H}^3$ (open) |
 
 
-
-
-
-
-
 ## Further Reading
 
 - Mikhael Gromov, *Hyperbolic groups*, in Essays in Group Theory (Springer, 1987), 75–263, for the definition, the first properties and the Rips complex.

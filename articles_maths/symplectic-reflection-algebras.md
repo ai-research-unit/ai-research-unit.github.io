@@ -184,7 +184,6 @@ with $t$ a scalar and $c$ an invariant function on the set $S$ of symplectic ref
 | KZ functor | Functor from $\mathcal{O}$ to the Hecke algebra representations |
 
 
-
 ## Further Reading
 
 - Pavel Etingof and Victor Ginzburg, "Symplectic Reflection Algebras, Calogero–Moser Space, and Deformed Harish-Chandra Homomorphism", *Inventiones Mathematicae* 147 (2002), 243–348, for the definition, the PBW theorem, the centre and the representation theory.

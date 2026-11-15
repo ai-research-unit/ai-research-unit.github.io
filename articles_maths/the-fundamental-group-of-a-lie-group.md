@@ -209,9 +209,6 @@ The Malcev–Iwasawa theorem reduces the homotopy of a connected Lie group to th
 | $P/Q$ | Weights modulo roots; dual to $\pi_1$ of the adjoint group |
 
 
-
-
-
 ## Further Reading
 
 - Armand Borel, *Topology of Lie Groups and Characteristic Classes* (Bulletin of the American Mathematical Society 61, 1955), for the fundamental group and the coroot lattice.

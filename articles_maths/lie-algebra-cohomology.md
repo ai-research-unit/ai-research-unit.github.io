@@ -220,9 +220,6 @@ Let $\mathrm{G}$ be a Lie algebra over a field $k$ and $M$ a $\mathrm{G}$-module
 | $\omega(x,y,z) = \langle[x,y],z\rangle$ | Killing form three-cocycle |
 
 
-
-
-
 ## Further Reading
 
 - Claude Chevalley and Samuel Eilenberg, "Cohomology theory of Lie groups and Lie algebras", *Transactions of the American Mathematical Society* **63** (1948), 85–124, for the complex, the differential and the identification with the extension groups.

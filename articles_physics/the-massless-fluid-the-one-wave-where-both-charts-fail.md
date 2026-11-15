@@ -22,7 +22,7 @@ $$
 N(\tilde K_\Phi)=-k_t'^{2}+\lvert\vec k_\Phi\rvert^{2}\in\mathbb{R},
 $$
 
-the mass shell being $N(\tilde K_\Phi)=-k_m^{2}$, that is $k_t'^{2}=\lvert\vec k_\Phi\rvert^{2}+k_m^{2}$ [The Material Sector](the-material-sector-four-vectors-interval-and-lorentz-action.html). **$k_m$ is the mass in wave-number units**, the block's $mc/\hbar$. The **label cone** is $N(\tilde K_\Phi)=0$, that is $k_t'=\lvert\vec k_\Phi\rvert$.
+the mass shell being $N(\tilde K_\Phi)=-k_m^{2}$, that is $k_t'^{2}=\lvert\vec k_\Phi\rvert^{2}+k_m^{2}$ [Four-Vectors and the Interval](four-vectors-and-the-interval.html). **$k_m$ is the mass in wave-number units**, the block's $mc/\hbar$. The **label cone** is $N(\tilde K_\Phi)=0$, that is $k_t'=\lvert\vec k_\Phi\rvert$.
 
 **The two symbols.** The scalar rung's operator $\Box_\Phi-k_m^{2}$ has the scalar symbol
 
@@ -442,9 +442,9 @@ using $e_t\vec u=\vec u$, $\vec u e_t=\vec u$ and $i^{2}\vec u^{2}=(-1)(-e_t)=e_
 
 ## Further Reading
 
-**The two integrals.** [The Two Integrals: the Action and the Transform Confronted Rung by Rung](../articles_internal/the-two-integrals-the-action-and-the-transform-confronted-rung-by-rung.html) states the two cones and the mass between them, and this article proves the containment its last paragraph asserts. [The Massless Limit as a Boundary Value of the Polar Word](the-massless-limit-as-a-boundary-value-of-the-polar-word.html) takes the limit at infinite rapidity; [The Domain of the Fluid Reading](the-domain-of-the-fluid-reading.html) states the chart's domain and its codimension.
+**The two integrals.** [The Two Integrals: the Action and the Transform Confronted Rung by Rung](../articles_internal/the-two-integrals-the-action-and-the-transform-confronted-rung-by-rung.html) states the two cones and the mass between them, and this article proves the containment its last paragraph asserts. [The Massless Regime](the-massless-regime.html) takes the limit at infinite rapidity; [The Domain of the Fluid Reading](the-domain-of-the-fluid-reading.html) states the chart's domain and its codimension.
 
-**The cone.** [The Zero-Divisor Cone and the Massless Spectrum](the-zero-divisor-cone-and-the-massless-spectrum.html) and [The N-Degenerate, Spectrally Regular Sector](the-n-degenerate-spectrally-regular-sector-the-massless-regime.html) describe what lives on it; [The Meaning of N-Regularity and Degeneracy](the-meaning-of-n-regularity-and-degeneracy.html) proves multiplicativity; [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) is the algebraic statement of the rank drop.
+**The cone.** [The Unit Group, the Cone and the Orders](the-unit-group-the-cone-and-the-orders.html) and [The Massless Regime](the-massless-regime.html) describe what lives on it; [The Partition: Two Invariants and Four Regimes](the-partition-two-invariants-and-four-regimes.html) proves multiplicativity; [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) is the algebraic statement of the rank drop.
 
 **The two numbers.** [The Two Scales of the Field](../articles_physics/the-two-scales-of-the-field-the-proper-density-and-the-euclidean-size.html) proves that the pair is continuous at the corner and that the size is the current's time component.
 

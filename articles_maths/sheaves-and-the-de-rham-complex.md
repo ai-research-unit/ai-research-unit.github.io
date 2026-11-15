@@ -198,7 +198,6 @@ The de Rham complex is moreover a sheaf of commutative differential graded algeb
 | $Z^k$ | sheaf of closed $k$-forms; $0\to Z^k\to\Omega^k\to Z^{k+1}\to 0$ |
 
 
-
 ## Further Reading
 
 - Georges de Rham, *Differentiable Manifolds: Forms, Currents, Harmonic Forms* (Springer, 1984), for the original sheaf-theoretic proof of the theorem and the currents.

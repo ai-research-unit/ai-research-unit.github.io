@@ -181,9 +181,6 @@ Every presheaf has a sheafification, left adjoint to the inclusion of sheaves an
 | $\mathcal{H}om_{\mathcal{O}_X}$, $\otimes_{\mathcal{O}_X}$ | sheaf hom and tensor product of modules |
 
 
-
-
-
 ## Further Reading
 
 - Roger Godement, *Topologie algébrique et théorie des faisceaux* (Hermann, 1958), for the foundational treatment of sheaves, stalks and flasque sheaves.

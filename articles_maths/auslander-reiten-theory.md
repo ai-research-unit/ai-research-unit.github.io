@@ -164,9 +164,6 @@ The Auslander–Reiten quiver assembles this data into a translation quiver with
 | $S_i$, $P_i$, $I_i$ | simple, indecomposable projective, injective |
 
 
-
-
-
 ## Further Reading
 
 - Maurice Auslander, "Representation theory of Artin algebras II", *Communications in Algebra* 1 (1974), 269–310, for the almost split sequences and the translation.

@@ -250,7 +250,6 @@ is a nonzero left ideal of \(M_n(R)\) strictly contained in \(M_n(R)E_{jj}\), si
 ## Worked Verification
 
 
-
 - **Corners.** Every corner product \(E_{ii}AE_{jj}\) is the line \(\mathbb{C}E_{ij}\), and \(AE_{jj}\) is the direct sum of its \(n\) corners.
 - **Square-zero.** Every element of every off-diagonal corner satisfies \(x^2 = 0\), for \(n = 2,3,4,5\).
 - **Minimality.** For every nonzero \(x \in L_j\), and \(i_0\) chosen with \(x_{i_0j} \neq 0\), one has \(E_{ii_0}x = x_{i_0j}E_{ij}\), so that \(Ax = L_j\); the column has no nonzero proper left submodule.

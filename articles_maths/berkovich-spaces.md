@@ -248,9 +248,6 @@ The theory is geometry over a valued field and uses only the norm and the valuat
 | $\Gamma(A)$ | Shilov boundary of $A$ |
 
 
-
-
-
 ## Further Reading
 
 - Vladimir G. Berkovich, *Spectral Theory and Analytic Geometry over Non-Archimedean Fields* (American Mathematical Society, 1990), for the spectrum of seminorms, the classification of points and the foundation of the theory.

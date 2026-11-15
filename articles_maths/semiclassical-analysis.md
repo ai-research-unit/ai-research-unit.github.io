@@ -251,7 +251,6 @@ Semiclassical analysis is the calculus of pseudodifferential operators with a sm
 | $T^*M$ | phase space |
 
 
-
 ## Further Reading
 
 - Lars Hörmander, *The Analysis of Linear Partial Differential Operators IV* (Springer, 1985), for the semiclassical calculus, the Weyl law and the trace formula.

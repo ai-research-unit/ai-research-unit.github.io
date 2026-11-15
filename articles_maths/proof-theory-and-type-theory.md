@@ -292,7 +292,6 @@ The Curry–Howard correspondence identifies propositions with types, derivation
 | $\varepsilon_0$ | Proof-theoretic ordinal of arithmetic |
 
 
-
 ## Further Reading
 
 - Gerhard Gentzen, "Untersuchungen über das logische Schließen I, II", *Mathematische Zeitschrift* **39** (1935), 176–210 and 405–431, for natural deduction, the sequent calculus and cut elimination.

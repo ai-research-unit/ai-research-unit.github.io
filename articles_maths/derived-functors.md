@@ -213,9 +213,6 @@ The two basic module functors give the named families $\operatorname{Ext}_R^n(M,
 | $H^n(G,M)$ | group cohomology, an instance over $\mathbb{Z}[G]$ |
 
 
-
-
-
 ## Further Reading
 
 - Henri Cartan and Samuel Eilenberg, *Homological Algebra* (Princeton University Press, 1956), for the construction of derived functors from resolutions.

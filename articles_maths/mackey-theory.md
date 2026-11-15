@@ -220,7 +220,6 @@ For a semidirect product $G = N\rtimes H$ with $N$ abelian the irreducibles are 
 | $\mathbb{T}$ | The circle group as coefficients, identified with $S^1$ |
 
 
-
 ## Further Reading
 
 - George W. Mackey, *The Theory of Unitary Group Representations* (University of Chicago Press, 1976), for systems of imprimitivity, the imprimitivity theorem and the analysis of group extensions.

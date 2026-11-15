@@ -333,9 +333,6 @@ Higher derivatives are bounded symmetric multilinear maps $D^kf(x) \in \mathcal 
 | $h^j=(h,\dots,h)$ | repeated argument of a multilinear map |
 
 
-
-
-
 ## Further Reading
 
 - Henri Cartan, *Differential Calculus* (Hermann, 1971; Kershaw, 1983), for the Fréchet derivative and the structural theorems on Banach spaces.

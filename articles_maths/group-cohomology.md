@@ -265,7 +265,6 @@ For finite groups, Tate cohomology $H_{\mathrm{Tate}}^n$ is defined for all $n \
 | $\mathbb{Z}/m\mathbb{Z}$ | cyclic coefficient group |
 
 
-
 ## Further Reading
 
 - Kenneth S. Brown, *Cohomology of Groups* (Springer, 1982), for the standard resolution, the low-dimensional interpretations, Shapiro's lemma and the cohomology of finite groups.

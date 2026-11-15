@@ -262,9 +262,6 @@ The deficiency indices $n_\pm=\dim\ker(A^*\mp i)$ decide the extension problem: 
 | $\vartheta_{\mathrm{bcp}}$ | boundary parameter of the half-line Laplacian |
 
 
-
-
-
 ## Further Reading
 
 - John von Neumann, "Allgemeine Eigenwerttheorie Hermitescher Funktionaloperatoren", *Mathematische Annalen* 102 (1930), 49–131, for the spectral theorem and the theory of deficiency indices.

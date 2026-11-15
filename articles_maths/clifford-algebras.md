@@ -294,9 +294,6 @@ The construction is **functorial**: an isometry $f : (V, \mathfrak{Q}) \to (W, q
 | $\mathbb{R}, \mathbb{C}$ | Real and complex numbers |
 
 
-
-
-
 ## Further Reading
 
 - I. R. Porteous, *Clifford Algebras and the Classical Groups* (Cambridge University Press, 1995), for the universal property, functoriality and the graded tensor product.

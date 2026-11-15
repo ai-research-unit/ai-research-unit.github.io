@@ -222,9 +222,6 @@ Hall's theorem gives the existence, conjugacy and containment of Hall $\pi$-subg
 | $[G:H]$ | Index of a subgroup |
 
 
-
-
-
 ## Further Reading
 
 - Derek J. S. Robinson, *A Course in the Theory of Groups*, 2nd ed. (Springer, 1996), for the derived and central series, Hall subgroups, and the Fitting and Frattini subgroups.

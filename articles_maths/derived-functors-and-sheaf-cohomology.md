@@ -171,7 +171,6 @@ The **Grothendieck spectral sequence** $E_2^{n,m} = R^pG(R^qF(A)) \Rightarrow R^
 | Verdier duality | the adjunction $\mathbb{R}f_!\dashv f^!$; for $f$ to a point, $H^k(M)\cong H_{n-k}(M)^{\vee}$ |
 
 
-
 ## Further Reading
 
 - Alexander Grothendieck, *Sur quelques points d'algèbre homologique* (Tohoku Mathematical Journal 9, 1957), for effaceable $\delta$-functors, universality and the spectral sequence of a composite of functors.

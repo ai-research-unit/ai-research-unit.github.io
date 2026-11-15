@@ -281,9 +281,6 @@ Over an algebraically closed field primary decomposition is dual to the decompos
 | $\overline{k}$ | Algebraic closure of $k$ |
 
 
-
-
-
 ## Further Reading
 
 - Emanuel Lasker, "Zur Theorie der Moduln und Ideale", *Mathematische Annalen* 60 (1905), 20–116, for the original decomposition theorem for polynomial rings.

@@ -221,7 +221,6 @@ A sheaf is acyclic when its higher cohomology vanishes; flabby sheaves — those
 | $E_2^{n,m} = H^p(Y,R^qf_*\mathcal{F})$ | Leray spectral sequence, converging to $H^{p+q}(X,\mathcal{F})$ |
 
 
-
 ## Further Reading
 
 - Roger Godement, *Topologie algébrique et théorie des faisceaux* (Hermann, 1958), for the flabby resolution, the sheaf-theoretic foundations and the comparison with singular cohomology.

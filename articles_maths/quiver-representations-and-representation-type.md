@@ -143,9 +143,6 @@ The representation type is governed by the underlying graph. Gabriel's theorem s
 | $\delta$ | imaginary root of an affine diagram |
 
 
-
-
-
 ## Further Reading
 
 - Ibrahim Assem, Daniel Simson and Andrzej Skowroński, *Elements of the Representation Theory of Associative Algebras*, Vol. 1 (Cambridge University Press, 2006), for the path algebras, the standard resolution and the representation type.

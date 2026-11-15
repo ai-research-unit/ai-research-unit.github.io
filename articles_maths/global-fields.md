@@ -176,7 +176,6 @@ The product formula is the invariant that binds the places together: in its alge
 | $\mathbb{A}_K$ | Adele ring, named only, a Part II object |
 
 
-
 ## Further Reading
 
 - Emil Artin and John Tate, *Class Field Theory* (Benjamin, 1967), for the axiomatic treatment of global fields by the product formula and for the reciprocity law in the global setting.

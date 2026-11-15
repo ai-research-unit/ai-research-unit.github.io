@@ -301,7 +301,6 @@ Over $\mathbb{C}$, the character $\chi_V(g)=\operatorname{Tr}\rho(g)$ is a class
 | $\mathbb{H}$ | quaternions, as an endomorphism division ring over $\mathbb{R}$ |
 
 
-
 ## Further Reading
 
 - Charles W. Curtis and Irving Reiner, *Representation Theory of Finite Groups and Associative Algebras* (Wiley, 1962), for the group algebra, complete reducibility and characters.

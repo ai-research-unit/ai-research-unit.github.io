@@ -281,7 +281,6 @@ When $A$ has a complete set of orthogonal central idempotents the integral **spl
 | $\Pi_{1,2} = \tfrac12(1\pm j)$, $\zeta_\pm = x_t \pm x_1$ | Idempotents and characteristic coordinates of $\mathbb{C}_{\mathrm{spl}}$ |
 
 
-
 ## Further Reading
 
 - F. Brackx, R. Delanghe and F. Sommen, *Clifford Analysis* (Pitman, 1982), for the Cauchy–Goursat theorem and the Cauchy integral formula over Clifford algebras.

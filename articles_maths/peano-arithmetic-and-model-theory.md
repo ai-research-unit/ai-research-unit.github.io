@@ -188,7 +188,6 @@ Gödel's first incompleteness theorem produces, for any consistent recursively a
 | $B_a$ | $\mathbb{Z}$-block of a nonstandard element $a$ |
 
 
-
 ## Further Reading
 
 - Kurt Gödel, "Über formal unentscheidbare Sätze der Principia Mathematica und verwandter Systeme I", *Monatshefte für Mathematik und Physik* 38 (1931), for the incompleteness theorems and the arithmetisation of syntax.

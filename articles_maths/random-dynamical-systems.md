@@ -221,9 +221,6 @@ A **pullback attractor** is a random compact set attracting every bounded set in
 | $\mathrm{J}_t$ | Wiener shift |
 
 
-
-
-
 ## Further Reading
 
 - Valery I. Oseledets, "A multiplicative ergodic theorem. Lyapunov characteristic numbers for dynamical systems", *Transactions of the Moscow Mathematical Society* 19 (1968), 197–231, for the multiplicative ergodic theorem, the exponents and the equivariant splitting.

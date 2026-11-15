@@ -769,4 +769,4 @@ The four forms remain four distinct conventions and the norms two, because each 
 - [Conventions of the Products and the Forms](product-and-form-conventions.html), for the four products read on the gradient.
 - [Conventions of the Norms and the Pairings](norm-and-pairing-conventions.html), for the norms of those products.
 - [Index and Notation Conventions](index-and-notation-conventions.html), for the Fock superscript and the subscript rules.
-- [The Element and Operator Representations](element-and-operator-representations-the-three-actions.html), companion article, for the three actions and their matrices.
+- [The Operators of the Algebra](the-operators-of-the-algebra.html), companion article, for the three actions and their matrices.

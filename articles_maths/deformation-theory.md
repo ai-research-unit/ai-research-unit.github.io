@@ -170,7 +170,6 @@ For a module $M$ over $A$ the same picture holds with $\operatorname{Ext}$ in pl
 | $M_R$, $M_\varepsilon$ | deformation of a module over $R$ and over the dual numbers |
 
 
-
 ## Further Reading
 
 - Murray Gerstenhaber, "On the deformation of rings and algebras", *Annals of Mathematics* 79 (1964), 59–103, for the deformation functor, the cup product and the obstruction calculus.

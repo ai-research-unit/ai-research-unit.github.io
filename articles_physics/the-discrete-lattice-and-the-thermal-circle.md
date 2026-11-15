@@ -134,7 +134,7 @@ named as a gap and not proposed as a formula.
 
 - [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html), for the parity-matched lattice and its two cosets.
 - [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html), for the kernel of the exponential and the eigenvalue formula.
-- [The Exponential, the Logarithm and the Generator](the-exponential-the-logarithm-and-the-generator.html), for the kernel as a gauge of the logarithm and for the boundary that keeps it apart from the thermal circle.
+- [The Exponential and Its Three Pairings](the-exponential-and-its-three-pairings.html), for the kernel as a gauge of the logarithm and for the boundary that keeps it apart from the thermal circle.
 - [Quaternion Orders and Finite Groups of Units](../articles_maths/quaternion-orders-and-finite-groups-of-units.html), for the orders, the finite unit groups and the infinite unit group of the complex order.
 - [The Matsubara Thermal Formalism in Biquaternionic Form](the-matsubara-thermal-formalism-in-biquaternionic-form.html), for the thermal circle, the Matsubara frequencies and the
   partition function.
@@ -142,5 +142,5 @@ named as a gap and not proposed as a formula.
   Biquaternion Framework*, for the KMS periodicity and the modular flow.
 - [Conventions in the Biquaternion Universe](algebra-and-element-conventions.html), for the central phase that
   the thermal circle realises.
-- [The Physical Interpretation of the 12 Products](the-physical-interpretation-of-the-12-products.html), for the discrete charge from the compact
+- [The Four Products: Composition, Probability, Causality and Gauge](the-four-products-composition-probability-causality-and-gauge.html), for the discrete charge from the compact
   group.

@@ -243,9 +243,6 @@ The adjoint map $x \mapsto \operatorname{ad}_x$ is a representation with kernel 
 | $\mathrm{GL}(n), \mathrm{SL}(n), \mathrm{SO}(n)$ | General linear, special linear, orthogonal Lie algebras |
 
 
-
-
-
 ## Further Reading
 
 - James E. Humphreys, *Introduction to Lie Algebras and Representation Theory* (Springer, 1972), for the structure theory, Killing form, and Cartan's criteria.

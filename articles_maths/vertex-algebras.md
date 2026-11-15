@@ -254,9 +254,6 @@ A **vertex algebra** over a field $k$ of characteristic zero is a vector space $
 | $\mathrm{wt}(a)$ | conformal weight of a homogeneous vector |
 
 
-
-
-
 ## Further Reading
 
 - Richard E. Borcherds, "Vertex algebras, Kac–Moody algebras, and the Monster", *Proceedings of the National Academy of Sciences of the USA* **83** (1986), 3068–3071, for the axioms in the $\lambda$-bracket form and the construction of the lattice vertex algebras.

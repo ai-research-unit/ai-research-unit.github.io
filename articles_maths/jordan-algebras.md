@@ -231,11 +231,6 @@ A **Jordan algebra** is a commutative $R$-algebra $(J, \bullet)$ satisfying the 
 | Formally real | $\sum x_i^2 = 0 \Rightarrow x_i = 0$ |
 
 
-
-
-
-
-
 ## Further Reading
 
 - Pascual Jordan, John von Neumann and Eugene Wigner, "On an algebraic generalization of the quantum mechanical formalism", *Annals of Mathematics* 35 (1934), 29–64, for the classification of formally real Jordan algebras.

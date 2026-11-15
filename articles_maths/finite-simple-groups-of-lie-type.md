@@ -235,7 +235,6 @@ The twisted groups arise from graph-field automorphisms: the Steinberg groups $^
 | $q$ | prime power, $|\mathbb{F}_q| = q$ |
 
 
-
 ## Further Reading
 
 - Roger W. Carter, *Simple Groups of Lie Type* (Wiley, 1972), for the Chevalley construction, the Steinberg presentation and the orders of the groups.

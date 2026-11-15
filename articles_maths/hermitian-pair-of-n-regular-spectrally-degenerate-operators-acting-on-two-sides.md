@@ -195,7 +195,6 @@ $$
 and the two-sided operator is the composition of the positive operator $\mathrm{Sd}_{\tilde H}$ and the $*$-unitary operator $\mathrm{Sd}_{\tilde V}$. The example shows the general structure: the product is unipotent, the factors are not, and the fixed coordinate is the remnant of the $1\times1$ block.
 
 
-
 ## Summary
 
 ### Main Results

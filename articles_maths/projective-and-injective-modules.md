@@ -254,9 +254,6 @@ The two classes measure the failure of exactness of $\operatorname{Hom}$ in its 
 | $\mathbb{Z}[1/p]$ | localisation of $\mathbb{Z}$ at the prime $p$ |
 
 
-
-
-
 ## Further Reading
 
 - M. F. Atiyah and I. G. Macdonald, *Introduction to Commutative Algebra* (Addison-Wesley, 1969), for projective modules over local rings and the theory of flatness.

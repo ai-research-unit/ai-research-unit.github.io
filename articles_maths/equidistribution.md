@@ -249,11 +249,6 @@ The discrepancy measures the rate, and the Erdős–Turán inequality bounds it 
 | $b\mathbb{R}$ | Bohr compactification of the discrete group $\mathbb{R}$ |
 
 
-
-
-
-
-
 ## Further Reading
 
 - Hermann Weyl, "Über die Gleichverteilung von Zahlen mod. Eins", *Mathematische Annalen* 77 (1916), 313–352, for the criterion and the polynomial equidistribution theorem.

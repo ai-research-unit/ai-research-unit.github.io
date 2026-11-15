@@ -207,11 +207,6 @@ The regular polygons exist for every number of sides, the regular polyhedra in t
 | Curvature zero | The Euclidean space is the flat simply connected complete model |
 
 
-
-
-
-
-
 ## Further Reading
 
 - David Hilbert, *Foundations of Geometry* (Open Court, 1902; reprinted by Dover), for the axiomatic treatment of the incidence, order, congruence and continuity axioms and the parallel postulate.

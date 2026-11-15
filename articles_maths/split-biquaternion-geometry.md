@@ -319,7 +319,6 @@ The imaginary span $V = \operatorname{Im}\mathbb{H}\oplus j\operatorname{Im}\mat
 | $\exp(\theta j) = \cosh\theta + j\sinh\theta$ | Split complex unit, hyperbolic one-parameter group |
 
 
-
 ## Further Reading
 
 - Sigurdur Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces* (Academic Press, 1978), for symmetric spaces, their compact duals and the maximal compact subgroups of the orthogonal groups.

@@ -210,11 +210,6 @@ Over $\mathbb{R}$ the spinor module is a module over $\mathbb{R}$, $\mathbb{C}$ 
 | $\mathrm{Spin}(3)\cong Sp(1)$, $\mathrm{Spin}(4)\cong Sp(1)\times Sp(1)$ | Low-dimensional spin groups |
 
 
-
-
-
-
-
 ## Further Reading
 
 - Claude Chevalley, *The Algebraic Theory of Spinors and Clifford Algebras*, Collected Works vol. 2 (Springer, 1997), for the construction of the spinor module from a maximal isotropic subspace.

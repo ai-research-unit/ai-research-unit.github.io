@@ -307,7 +307,6 @@ The Smith normal form is the algorithmic content: elementary row and column oper
 | $\mathbb{Q}/\mathbb{Z}$ | the torsion divisible abelian group |
 
 
-
 ## Further Reading
 
 - M. F. Atiyah and I. G. Macdonald, *Introduction to Commutative Algebra* (Addison-Wesley, 1969), for the structure theorem and its consequences in commutative algebra.

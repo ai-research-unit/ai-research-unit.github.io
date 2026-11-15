@@ -314,9 +314,6 @@ The exponential has radius $\lvert p \rvert^{1/(p-1)}$ over a field of residue c
 | $s_p(n)$ | Sum of the base-$p$ digits of $n$ |
 
 
-
-
-
 ## Further Reading
 
 - Jean-Pierre Serre, *Local Fields* (Springer, 1979), for the exponential, the logarithm and the principal units over a local field.

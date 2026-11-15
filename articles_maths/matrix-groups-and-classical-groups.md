@@ -315,9 +315,6 @@ The representations of the quaternion algebra make the lowest cases explicit. Th
 | Dieudonné determinant | Determinant of a matrix over a division ring, valued in $\mathbb{H}^\times/[\mathbb{H}^\times, \mathbb{H}^\times]$ |
 
 
-
-
-
 ## Further Reading
 
 - John Stillwell, *Naive Lie Theory* (Springer, 2008), for the matrix groups and the double covers developed from the quaternions.

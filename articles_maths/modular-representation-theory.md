@@ -135,11 +135,6 @@ Let $G$ be a finite group, $p$ a prime dividing $\lvert G\rvert$ and $k$ an alge
 | $k[C_p]\cong k[x]/((x-1)^p)$ | local group algebra of the cyclic group of order $p$ |
 
 
-
-
-
-
-
 ## Further Reading
 
 - Richard Brauer, "Investigations on group theory I", *Transactions of the American Mathematical Society* **42** (1937), 361–401, and "On modular and $p$-adic representations of algebras", *Proceedings of the National Academy of Sciences of the USA* **25** (1939), 252–258, for the Brauer characters, the decomposition numbers and the modular theory.

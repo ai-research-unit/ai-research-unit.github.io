@@ -265,4 +265,4 @@ The framework thus reproduces the replica method exactly in finite dimension, wi
 - Companion article [Relative Entropy and the Biquaternion Framework](relative-entropy-and-the-biquaternion-framework.html), for the entropy closed form of a biquaternion state.
 - Companion article [The Modular Hamiltonian and the First Law of Entanglement in Biquaternionic Form](the-modular-hamiltonian-and-the-first-law-of-entanglement-in-biquaternionic-form.html), for the modular Hamiltonian of a reduced state.
 - Companion article [The Area Law of Entanglement Entropy in Biquaternionic Form](the-area-law-of-entanglement-entropy-in-biquaternionic-form.html), for what the replica moments give in the field.
-- Companion article [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the state space and the plain form.
+- Companion article [States, Observables and the Born Weight](states-observables-and-the-born-weight.html), for the state space and the plain form.

@@ -167,7 +167,6 @@ A **conformal structure** on a manifold is the class of metrics $g' = \Omega^2 g
 | $\mathbb{CP}^3$ | Twistor space of the conformal four-sphere |
 
 
-
 ## Further Reading
 
 - Manfredo P. do Carmo, *Riemannian Geometry* (Birkhäuser, 1992), for the Weyl tensor, the conformal change of the curvature and the conformal flatness theorem.

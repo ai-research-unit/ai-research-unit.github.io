@@ -216,7 +216,6 @@ Noncommutative harmonic analysis replaces the dual group of the abelian theory b
 | $\lvert\lambda\rvert\,d\lambda$ | Heisenberg Plancherel density (normalisation-dependent) |
 
 
-
 ## Further Reading
 
 - Gerald B. Folland, *A Course in Abstract Harmonic Analysis* (CRC Press, 2nd ed. 2015), for the operator-valued transform, the coefficient algebra and the group $\mathrm{C}^*$-algebras.

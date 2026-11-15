@@ -113,7 +113,6 @@ Sheaves on a stack are descent data along an atlas, their cohomology is the coho
 | $\mathcal{M}_g$, $\overline{\mathcal{M}}_g$, $\mathcal{M}(r,d)$ | moduli stacks of curves, stable curves, semistable bundles |
 
 
-
 ## Further Reading
 
 - Gérard Laumon and Laurent Moret-Bailly, *Champs algébriques* (Springer, 2000), for the foundations of algebraic stacks, atlases and the diagonal.

@@ -241,9 +241,6 @@ The determinant is the unique invariant of a linear operator in the following se
 | $R^{\times}$ | unit group of a commutative ring $R$ |
 
 
-
-
-
 ## Further Reading
 
 - Emil Artin, *Geometric Algebra* (Interscience, 1957), for the determinant as a volume and the exterior-algebra viewpoint.

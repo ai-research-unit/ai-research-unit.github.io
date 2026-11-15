@@ -216,9 +216,6 @@ The **Koszul duality theorem** states that for Koszul $A$ the bounded derived ca
 | $k_q[x,y]$ | quantum plane, $yx = qxy$ |
 
 
-
-
-
 ## Further Reading
 
 - Alexander Beilinson, Victor Ginzburg and Wolfgang Soergel, "Koszul duality patterns in representation theory", *Journal of the American Mathematical Society* **9** (1996), 473–527, for the Koszulity criterion, the derived equivalence and the BGG correspondence.

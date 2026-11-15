@@ -415,9 +415,6 @@ The **Bezoutian form** of a pair of polynomials, with $g$ monic and square-free 
 | $\mathbb{H}$ | Quaternions |
 
 
-
-
-
 ## Further Reading
 
 - Michael Artin, *Algebra* (Prentice Hall, 1991), for polarisation and the correspondence between quadratic and bilinear forms.

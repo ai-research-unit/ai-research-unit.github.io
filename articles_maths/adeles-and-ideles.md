@@ -260,7 +260,6 @@ The ring of adeles, its topology, its locally compactness and the discreteness a
 | $N_{L/K}$, $\operatorname{Tr}_{L/K}$ | Norm and trace, assembled adelicwise |
 
 
-
 ## Further Reading
 
 - André Weil, *Basic Number Theory* (Springer, 3rd ed. 1974), for the adeles, ideles and the topology of the restricted product.

@@ -286,7 +286,6 @@ The Itô integral is defined for simple predictable integrands by the left-endpo
 | Bessel drift | $(d-1)/(2R_t)$ in the radial SDE |
 
 
-
 ## Further Reading
 
 - Ioannis Karatzas and Steven E. Shreve, *Brownian Motion and Stochastic Calculus* (Springer, 2nd edition, 1998), for the construction, the Itô calculus, the stochastic differential equations and the Girsanov theorem.

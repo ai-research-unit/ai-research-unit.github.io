@@ -217,9 +217,6 @@ The Čech-to-derived spectral sequence $E_2^{n,m} = \check H^n(\mathcal{U},\unde
 | $K^{n,m} = \check C^n(\mathcal{U},\Omega^m)$ | Čech–de Rham double complex; $\delta d = d\delta$ |
 
 
-
-
-
 ## Further Reading
 
 - Jean Leray, *Sur la forme des espaces topologiques et sur les points fixes des représentations* (Journal de Mathématiques Pures et Appliquées 24, 1945), for the original Čech construction and the theorem on acyclic covers.

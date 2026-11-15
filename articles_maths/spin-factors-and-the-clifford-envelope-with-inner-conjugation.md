@@ -306,9 +306,6 @@ which is an injective Jordan homomorphism precisely because of the Clifford rela
 | $H_2(D)$ | Hermitian $2\times2$ matrices, $\cong JSpin_{1+\dim_{\mathbb{R}}D}$ |
 
 
-
-
-
 ## Further Reading
 
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed. 2001), for the construction and the spin group.

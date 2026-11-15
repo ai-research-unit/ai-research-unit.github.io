@@ -296,9 +296,6 @@ The Boolean system supports an algebra and no analysis. Its free algebras are fi
 | $M_3$, $N_5$ | The forbidden sublattices of a non-distributive lattice |
 
 
-
-
-
 ## Further Reading
 
 - Garrett Birkhoff, *Lattice Theory* (American Mathematical Society Colloquium Publications, 3rd ed. 1967), for the lattice laws, distributivity, modularity and the forbidden-sublattice criterion.

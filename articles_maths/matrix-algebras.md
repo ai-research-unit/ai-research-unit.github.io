@@ -261,7 +261,6 @@ The matrix algebra $M_n(R)$ over a commutative ring $R$ has $R$-basis the matrix
 | $\otimes_k$ | Tensor product of algebras |
 
 
-
 ## Further Reading
 
 - Frank W. Anderson and Kent R. Fuller, *Rings and Categories of Modules* (Springer, 2nd ed. 1992), for simplicity, the regular module and the Wedderburn decomposition.

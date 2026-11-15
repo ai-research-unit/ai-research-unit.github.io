@@ -209,9 +209,6 @@ The complete Heyting algebras are the frames, and pointfree topology is the stud
 | $M_3$, $N_5$ | The forbidden sublattices, as in *Order Theory and Lattices* |
 
 
-
-
-
 ## Further Reading
 
 - Arend Heyting, *Die formalen Regeln der intuitionistischen Logik* (Sitzungsberichte der Preussischen Akademie der Wissenschaften, 1930), for the original formulation of the calculus and its algebraic reading.

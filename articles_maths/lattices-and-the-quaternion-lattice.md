@@ -147,7 +147,6 @@ The Lipschitz lattice $\mathbb{H}(\mathbb{Z})=\mathbb{Z} \oplus \mathbb{Z}\vec e
 | $R$ | base ring for extension of scalars |
 
 
-
 ## Further Reading
 
 - John H. Conway and Neil J. A. Sloane, *Sphere Packings, Lattices and Groups* (Springer, 3rd ed. 1999), for lattices, covolumes and the quaternionic examples.

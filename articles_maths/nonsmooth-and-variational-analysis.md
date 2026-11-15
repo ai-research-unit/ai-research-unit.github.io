@@ -174,7 +174,6 @@ A locally Lipschitz function on $\mathbb{R}^n$ is differentiable almost everywhe
 | $X$, $d$ | Complete metric space and its distance |
 
 
-
 ## Further Reading
 
 - Frank H. Clarke, *Optimization and Nonsmooth Analysis* (Wiley, 1983), for the generalised gradient, the mean value theorem, the chain rule and the Lipschitz programming conditions.

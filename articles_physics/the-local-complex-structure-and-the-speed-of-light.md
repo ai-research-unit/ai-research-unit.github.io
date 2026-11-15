@@ -209,8 +209,8 @@ The interpretation closes no empirical gap and claims no global structure. Its c
 
 - [Introduction to the Biquaternion Universe](introduction-to-the-biquaternion-universe.html), for the two sectors, the local complex structure, and the statement that $c=1/\sqrt{\epsilon\mu}$ is the local conversion of the temporal unit.
 - [Why Complexify Spacetime?](why-complexify-spacetime.html), for the $i r'_t$ convention, the $SO(4,\mathbb C)$ rotation picture, and the limitations of the global convention.
-- [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html), for the biquaternion norm of signature $(3,1)$, the basis $\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$, and the zero-divisor light cone.
-- [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the complementary sector and the exchange $i\mathbb{B}_{\Phi}=\mathbb{B}_{\Psi}$ by multiplication by $i$.
+- [Four-Vectors and the Interval](four-vectors-and-the-interval.html), for the biquaternion norm of signature $(3,1)$, the basis $\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$, and the zero-divisor light cone.
+- [States, Observables and the Born Weight](states-observables-and-the-born-weight.html), for the complementary sector and the exchange $i\mathbb{B}_{\Phi}=\mathbb{B}_{\Psi}$ by multiplication by $i$.
 - [A Brief History of Biquaternions in Physics](a-brief-history-of-biquaternions-in-physics.html), for the displacement of the $i r'_t$ convention and its relation to the abandonment of the complex formalism.
 - [Electromagnetism in Media — The Local Complex Structure at Work](electromagnetism-in-media-the-local-complex-structure-at-work.html), the parent article, for the medium conventions, the local and spectral conversion $c(\omega)$, and the boundaries of the structure near absorption.
 - [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html), for the biquaternionic gradient, the d'Alembertian, and the medium form of Maxwell's equations.

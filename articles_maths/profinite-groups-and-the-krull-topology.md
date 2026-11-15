@@ -230,7 +230,6 @@ The Krull topology on a Galois group is the inverse-limit topology over the fini
 | $D \mapsto D^\vee$ | Pontryagin dual of a discrete torsion group, a profinite abelian group; used for the abelian profinite case |
 
 
-
 ## Further Reading
 
 - John S. Wilson, *Profinite Groups* (Oxford University Press, 1998), for the systematic theory, Sylow theory and pro-$p$ groups.

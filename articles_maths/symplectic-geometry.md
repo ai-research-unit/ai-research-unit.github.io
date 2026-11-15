@@ -282,9 +282,6 @@ Lagrangian submanifolds are the isotropic submanifolds of half the dimension, an
 | $M/\!/G = \mu^{-1}(0)/G$ | Symplectic quotient; $\dim M - 2\dim G$ |
 
 
-
-
-
 ## Further Reading
 
 - Vladimir I. Arnold and Alexander B. Givental, *Symplectic Geometry*, in *Dynamical Systems IV* (Springer, 2001), for the geometry of symplectic manifolds, Hamiltonian fields and the Darboux theorem.

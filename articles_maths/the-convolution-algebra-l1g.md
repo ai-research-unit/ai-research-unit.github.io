@@ -271,9 +271,6 @@ For a locally compact group $G$ with left Haar measure $dx$ and modular function
 | $\tau(a) = \langle a\delta_e,\delta_e\rangle$ | Trace on $L(G)$, $G$ discrete |
 
 
-
-
-
 ## Further Reading
 
 - Gerald B. Folland, *A Course in Abstract Harmonic Analysis* (CRC Press, 2nd ed. 2015), for the convolution algebra, approximate identities, Reiter's condition and the group $\mathrm{C}^*$-algebras.

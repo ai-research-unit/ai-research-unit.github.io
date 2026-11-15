@@ -266,7 +266,6 @@ A Jordan algebra is **special** if it embeds in the symmetrisation $A^+$ of an a
 | $\mathrm{G}(H_3(\mathbb{O})) \cong \mathrm{E}_7$ | Tits–Kantor–Koecher algebra of $H_3(\mathbb{O})$ |
 
 
-
 ## Further Reading
 
 - Abraham Adrian Albert, "A structure theory for Jordan algebras", *Annals of Mathematics* 48 (1947), 446–467, for the structure theory and the exceptional algebra.

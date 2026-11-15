@@ -224,7 +224,6 @@ Cap product with the fundamental class is an isomorphism $H^k(M;G) \to H_{n-k}(M
 | $L(f) = \sum_k(-1)^k\operatorname{tr}(f_*)$ | Lefschetz number; $L(\mathrm{id}) = \chi(M)$ |
 
 
-
 ## Further Reading
 
 - Allen Hatcher, *Algebraic Topology* (Cambridge University Press, 2002), for the local homology proof of Poincaré duality and Lefschetz duality.

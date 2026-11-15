@@ -378,4 +378,4 @@ $$
 
 **In this category.** The next entry, *Idempotents, Ideals and Observables*, reads the roots of $+e_t$ and $-e_t$ and the Peirce corners that this entry only names. *The Modules: What the Algebra Acts On* reads the carrier that the copy index belongs to. *The Four Forms and the Four Norms* reads the quarter-traces that this entry quotes as norms.
 
-**In the archive, until they are rewritten.** The two longer treatments of the same material are [The Pauli Correspondence and the Matrix Image](../articles_physics/the-pauli-correspondence-and-the-matrix-image.html), which carries the observables, the states, the phase fibre and the double cover in full, and [Element and Operator Representations: The Three Actions](../articles_physics/element-and-operator-representations-the-three-actions.html), which carries the five pictures, the three actions and the mass coupling at operator level.
+**The sources of this entry.** [The Operators of the Algebra](the-operators-of-the-algebra.html) carries the five pictures, the three actions and the mass coupling at operator level, which the two pictures here abbreviate.

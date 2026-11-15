@@ -520,7 +520,7 @@ The massless limit is an exact reduction and not an approximation. At $k_m=0$ th
 ## Further Reading
 
 - [The Carrier of the Proca Field](the-carrier-of-the-proca-field.html), for the material sector as the carrier of the potential, the residual identity that closes it, and the charge that it cannot carry.
-- [The Massless Limit as a Boundary Value of the Polar Word](the-massless-limit-as-a-boundary-value-of-the-polar-word.html), for the massless shell as the zero-divisor cone and the limit as a boundary value of the polar word rather than an interior limit.
+- [The Massless Regime](the-massless-regime.html), for the massless shell as the zero-divisor cone and the limit as a boundary value of the polar word rather than an interior limit.
 - [Conformal Invariance and the Massless Limit in Biquaternionic Form](conformal-invariance-and-the-massless-limit-in-biquaternionic-form.html), for the mass as the single scale in $\Box-k_m^{2}$, the five conformal symmetries that it breaks, and the rank drop of left multiplication by the on-shell symbol.
 - [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html), for the massless equation that the limit recovers and for the gauge transformation used in the reduction.
 - Alexandre Proca, "Sur la théorie ondulatoire des électrons positifs et négatifs", *Journal de Physique et le Radium* 7 (1936) 347–353, for the original massive vector field equation.

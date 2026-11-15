@@ -219,7 +219,6 @@ With a Gröbner basis in h, membership and equality of ideals are decided, the e
 | $g(x_n)$, $g_i(x_n)$ | Univariate polynomials of the shape lemma |
 
 
-
 ## Further Reading
 
 - Bruno Buchberger, "Ein Algorithmus zum Auffinden der Basiselemente des Restklassenringes nach einem nulldimensionalen Polynomideal" (Dissertation, Innsbruck, 1965), and "Gröbner bases: an algorithmic method in polynomial ideal theory", in *Multidimensional Systems Theory* (Reidel, 1985), for the algorithm and the criterion.

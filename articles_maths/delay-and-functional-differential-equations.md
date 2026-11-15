@@ -274,7 +274,6 @@ A functional differential equation $y'(t) = f(t,y_t)$ has the same existence and
 | Razumikhin condition | A decrease condition imposed when $V$ is at its historical maximum |
 
 
-
 ## Further Reading
 
 - Richard Bellman and Kenneth L. Cooke, *Differential-Difference Equations* (Academic Press, 1963), for the classical theory and the method of steps.

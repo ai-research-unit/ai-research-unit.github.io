@@ -393,7 +393,6 @@ The finite-rank ideals of $B(H)$ are the **trace class** $L^1(H)$ and the **Hilb
 | $\rho$, $\Omega = \rho^{1/2}$ | Density matrix and standard vector in the finite-dimensional case |
 
 
-
 ## Further Reading
 
 - Richard V. Kadison and John R. Ringrose, *Fundamentals of the Theory of Operator Algebras* (Academic Press, 1983), for the general theory of $\mathrm{C}^*$- and von Neumann algebras.

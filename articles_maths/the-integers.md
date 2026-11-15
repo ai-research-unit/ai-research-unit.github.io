@@ -206,9 +206,6 @@ $\mathbb{Z}$ is an integral domain of characteristic zero with units $\pm 1$, in
 | $\aleph_0$ | Cardinality of $\mathbb{Z}$ |
 
 
-
-
-
 ## Further Reading
 
 - Edmund Landau, *Foundations of Analysis* (Chelsea, 1951), for the construction of $\mathbb{Z}$ from $\mathbb{N}$ and of $\mathbb{Q}$ from $\mathbb{Z}$.

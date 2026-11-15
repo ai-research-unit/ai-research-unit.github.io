@@ -493,9 +493,6 @@ The non-degenerate factor is a Clifford algebra of rank $\dim(M/\mathrm{rad}(Q))
 The classification of the rank-one cases, and the structure of the Clifford algebras over specific rings, is not covered here.
 
 
-
-
-
 ---
 
 # Part VII: The Square Root of a Multivector in the Euclidean Algebra \(Cl_{3,0}\)

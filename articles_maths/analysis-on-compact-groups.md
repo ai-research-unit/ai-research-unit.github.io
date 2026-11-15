@@ -299,9 +299,6 @@ On a compact group $K$ the normalised Haar measure $dk$, $\int_K dk = 1$, is bi-
 | $L(K) = \lambda(K)''$ | Group von Neumann algebra of $K$ |
 
 
-
-
-
 ## Further Reading
 
 - Gerald B. Folland, *A Course in Abstract Harmonic Analysis* (CRC Press, 2nd ed. 2015), for the transform, orthogonality, inversion and Plancherel theorems on compact groups.

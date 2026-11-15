@@ -219,7 +219,6 @@ Property (T) passes to quotients, to lattices and finite-covolume subgroups, and
 | Cayley graph | Graph of a finitely generated group with respect to a finite generating set, defined in *Graph Theory*, above this article in the menu |
 
 
-
 ## Further Reading
 
 - David A. Kazhdan, *On the connection between the dual space of a group and the structure of its closed subgroups*, Functional Analysis and its Applications 1 (1967), 63–65, for the original definition and the higher-rank theorem.

@@ -213,9 +213,6 @@ The cyclic homology of this article is the algebraic invariant of a discrete alg
 | $[A,A]$ | commutator submodule, so $A/[A,A]$ is the trace space |
 
 
-
-
-
 ## Further Reading
 
 - Alain Connes, "Noncommutative differential geometry", *Publications Mathématiques de l'IHÉS* 62 (1985), 257–360, for the cyclic complex, the operator $B$ and the $SBI$ sequence.

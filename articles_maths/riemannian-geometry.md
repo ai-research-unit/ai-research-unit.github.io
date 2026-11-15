@@ -337,7 +337,6 @@ The isometry group of a connected Riemannian manifold is a Lie group by the Myer
 | $n_j(TM)$ | Pontryagin classes from traces of the curvature |
 
 
-
 ## Further Reading
 
 - Manfredo P. do Carmo, *Riemannian Geometry* (Birkhäuser, 1992), for the full course: connection, curvature, Jacobi fields and comparison theorems.

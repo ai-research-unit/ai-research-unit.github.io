@@ -202,11 +202,6 @@ Topological transitivity — $T^n(Ζ)\cap V\neq\varnothing$ for all nonempty ope
 | $\mathbb{T}^n$ | torus |
 
 
-
-
-
-
-
 ## Further Reading
 
 - George D. Birkhoff, "Dynamical systems with two degrees of freedom", *Transactions of the American Mathematical Society* 18 (1917), 199–300, for the recurrence and minimal-set theorems in the topological setting.

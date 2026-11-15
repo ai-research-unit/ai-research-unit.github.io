@@ -373,12 +373,12 @@ verified to $5.6\times10^{-17}$, with the same hyperboloid translated to centre 
 
 ## Further Reading
 
-- [Derivatives, Fields and Transforms](../articles_physics/derivatives-fields-and-transforms.html), for the kernel, the root, the transform pair, the symbol and the vanishing-norm obstruction used in the section on the switch.
+- [The Derivative, the Field and the Transform](../articles_physics/the-derivative-the-field-and-the-transform.html), for the kernel, the root, the transform pair, the symbol and the vanishing-norm obstruction used in the section on the switch.
 - [The Three Wavenumbers of a Particle](../articles_physics/the-three-wavenumbers-of-a-particle.html), for the division of the four-momentum by $\hbar$ that gives the label of the transform.
 - [The Schrödinger Equation in Biquaternionic Form](../articles_physics/the-schrodinger-equation-in-biquaternionic-form.html), for the element arm in its own right.
 - [The Free Particle and Wave Packets in Biquaternionic Form](../articles_physics/the-free-particle-and-wave-packets-in-biquaternionic-form.html), for both arms on one packet, the case the third check of this article samples.
 - [The Biquaternion d'Alembertian and Its Green's Functions](../articles_physics/the-biquaternion-dalembertian-and-its-greens-functions.html), for the gradient arm and its inverse.
-- [Unitarity from Centrality: The Biquaternion Norm-Preservation Theorem](../articles_physics/unitarity-from-centrality-the-biquaternion-norm-preservation-theorem.html), for the global form of the element arm and the centrality of the unit.
+- [The Unit Group, the Cone and the Orders](../articles_physics/the-unit-group-the-cone-and-the-orders.html), for the global form of the element arm and the centrality of the unit.
 - [Noether's Theorem in Biquaternionic Form](../articles_physics/noethers-theorem-in-biquaternionic-form.html), for the current whose divergence is the conservation law.
 - [The Non-Quantum Limit of the Biquaternion Model](../articles_physics/the-non-quantum-limit-of-the-biquaternion-model.html), for the withdrawal of the wave arm and the exact survival of the continuity equation.
 - [The Quantum–Classical Divide in the Biquaternion Framework](../articles_physics/the-quantum-classical-divide-in-the-biquaternion-framework.html), for the count that separates the two words and why wave phenomena are not it.

@@ -258,11 +258,6 @@ Peano arithmetic is the recursively axiomatised theory of the natural numbers. I
 | c.e. | Computably enumerable |
 
 
-
-
-
-
-
 ## Further Reading
 
 - Kurt Gödel, "Über formal unentscheidbare Sätze der Principia Mathematica und verwandter Systeme I", *Monatshefte für Mathematik und Physik* **38** (1931), 173–198, for the incompleteness theorems and the arithmetisation of syntax.

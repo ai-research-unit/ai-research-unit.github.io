@@ -218,7 +218,6 @@ $$
 $$
 and $\omega_{\natural*}$ is the corresponding object of the quaternionic family. The distinction is the one between a product and a form: the pure-vector value is the antisymmetrised product, whose Jacobi identity is a separate question, while the scalar part is a symplectic form, with isometry group $Sp(8,\mathbb{R})$ and Lagrangian planes.
 
-
 ## The Four Algebraic Norms
 
 **The diagonal.** The restriction of an algebraic norm to a subspace $U$ is the ambient norm read on the elements of $U$, and it is the diagonal of the restricted form, $\langle\tilde Q\rangle=\varphi(\tilde Q,\tilde Q)$. On the four real-type subspaces the form is real and the norm recovers it by polarisation; on the two complex subspaces the norm is complex and the polarisation recovers the bilinear forms but gives only the real part of the sesquilinear ones. The signatures below are the signatures over $\mathbb{R}$ of the real quadratic form obtained by realifying $U$; on the two complex subspaces they are the signatures of the real parts of the complex norms.
@@ -332,7 +331,6 @@ $$
 
 The two bilinear norms coincide and are the complex square; the two sesquilinear norms coincide and are the modulus square. Their signatures over $\mathbb{R}$ are $(1,1)$ and $(2,0)$ respectively, the same as the real parts of the forms. The norm $\langle\cdot\rangle_{*}$ is definite and $\langle\cdot\rangle$ is indefinite; the null set of the first is the origin, and the real null cone of the second is the pair of lines $\mathbb{R}(e_t\pm ie_t)$, which is not the complex null set, the origin.
 
-
 ## The Vector Subspace
 
 **The vector subspace is a Lie algebra but not a Jordan algebra.** Under the two bilinear brackets it is $(\mathbb{B}_{V},[\cdot,\cdot])\cong\mathfrak{sl}(2,\mathbb{C})$, the general quaternionic bilinear bracket being the negative of the commutator, and it is **no Jordan algebra** for any of the four symmetrisations.
@@ -441,7 +439,6 @@ $$
 $$
 
 so that $\langle\cdot\rangle=-\langle\cdot\rangle_{\natural}$ and $\langle\cdot\rangle_{*}=-\langle\cdot\rangle_{\natural*}$. The signatures are $(3,3)$, $(6,0)$, $(3,3)$ and $(0,6)$ for $\langle\cdot\rangle$, $\langle\cdot\rangle_{*}$, $\langle\cdot\rangle_{\natural}$ and $\langle\cdot\rangle_{\natural*}$ in that order. The two bilinear norms are complex-valued and indefinite; the Hermitian norm is positive definite and the Krein norm negative definite. The vector subspace is thus the subspace on which the two sesquilinear norms are definite and the two bilinear ones are not, the exact reverse of the centre.
-
 
 ## The Quaternion Subspace
 
@@ -583,7 +580,6 @@ $$
 $$
 
 with signatures $(3,1)$, $(4,0)$, $(0,4)$ and $(1,3)$ in that order. The bilinear norms are the negatives of those on the quaternion subspace, $\langle\cdot\rangle=-\langle\cdot\rangle_{\natural*}$ and $\langle\cdot\rangle_{\natural}=-\langle\cdot\rangle_{*}$, while the sesquilinear ones are unchanged; the translation by $i$ changes the sign of the two bilinear norms and leaves the two sesquilinear ones. The Hermitian norm is positive definite, the quaternionic norm negative definite, and the other two indefinite.
-
 
 ## The Hermitian Subspace
 
@@ -736,7 +732,6 @@ $$
 
 with signatures $(0,4)$, $(4,0)$, $(3,1)$ and $(1,3)$ in that order. The two bilinear norms are the negatives of those on the Hermitian subspace and the two sesquilinear ones agree with it: $\langle\cdot\rangle=-\langle\cdot\rangle_{*}$, $\langle\cdot\rangle_{\natural}=-\langle\cdot\rangle_{\natural*}$, while $\langle\cdot\rangle_{*}$ and $\langle\cdot\rangle_{\natural*}$ are unchanged. The Hermitian norm is positive definite, the plain norm negative definite, and the other two indefinite. The four values are the four norms of the material sector: the interval $\langle\cdot\rangle_{\natural}$, the Euclidean square $\langle\cdot\rangle_{*}$, and their negatives $\langle\cdot\rangle_{\natural*}$ and $\langle\cdot\rangle$.
 
-
 ## The Null Sets
 
 The null set of each form on each subspace is this.
@@ -828,7 +823,6 @@ The interpretation is an interpretation and not a theorem; it is the one the cor
 
 So the corpus's four forms are, on the two complex subspaces, **four intervals and two symplectic forms**, and on the four real-type subspaces four intervals alone. The second half of that sentence is what the diagonal, the algebraic norm, records; the first half is what the two-argument form adds.
 
-
 ## Summary
 
 **One chain.** The four general products, their scalar-part forms and their algebraic norms are read on the six remarkable subspaces. The four products have the same value set on each subspace, because ${}^{\natural}$ and ${}^{*}$ preserve every subspace of the list; they differ in the structure they leave on the value. The product keeps a subspace inside itself for exactly the centre and the quaternion subspace, for all four products. The symmetrisation keeps it for exactly the centre, the quaternion subspace and the Hermitian subspace; the bracket for exactly the centre (all four products), the quaternion subspace (the general plain bilinear and general quaternionic sesquilinear products), the vector subspace (the two bilinear products) and the anti-Hermitian subspace (the general plain bilinear and general plain sesquilinear products). The resulting algebras are: the centre, the field $\mathbb{C}$ for the two bilinear products and a Lie algebra for all four; the vector subspace, $\mathfrak{sl}(2,\mathbb{C})$ for the two bilinear products and no Jordan algebra; the quaternion subspace, a Jordan algebra for the general plain bilinear product and the Lie algebra $\mathbb{R}e_t\oplus\mathfrak{su}(2)$ for the general plain bilinear and general quaternionic sesquilinear products; the anti-quaternion subspace, no algebra at all; $\mathbb{B}_{\Psi}$, the Jordan algebra $H_2(\mathbb{C})$ for the two plain products and no Lie algebra; and $\mathbb{B}_{\Phi}$, the Lie algebra $\mathfrak{u}(2)$ for the two plain products and no Jordan algebra.
@@ -862,6 +856,6 @@ So the corpus's four forms are, on the two complex subspaces, **four intervals a
 - [Subspaces and Decompositions](subspaces-and-decompositions-of-the-biquaternion-algebra.html), for the coordinate blocks, the pairwise intersections, the sums and the three decompositions.
 - [The Sesquilinear Symmetrised Product](the-sesquilinear-symmetrised-product.html) and [The Sesquilinear Commutator](the-sesquilinear-commutator.html), for the plain reading's own halves.
 - [Conventions in the Biquaternion Universe](../articles_physics/algebra-and-element-conventions.html), for the convention of the four pairings, the four names and the pairs, and for the interpretations of the four on the algebra and on the material sector.
-- [The Four General Products: Composition, Probability, Causality, Gauge](../articles_physics/the-four-general-products-composition-probability-causality-gauge.html), for the physical interpretations of the four forms and their signature table on the remarkable subspaces.
+- [The Four Products: Composition, Probability, Causality and Gauge](../articles_physics/the-four-products-composition-probability-causality-and-gauge.html), for the physical interpretations of the four forms and their signature table on the remarkable subspaces.
 - [The Norm Defined by a Form](the-norm-defined-by-a-form.html) and [Hermitian Forms over Algebras and Norms](hermitian-forms-over-algebras-and-norms.html), for the passage from a form to its algebraic norm, and for the real part, the imaginary part and the alternating companion of a Hermitian form.
 

@@ -137,7 +137,6 @@ The two two-dimensional rings fixed by the conventions appear in their proper pl
 | $\omega_n$ | Primitive $n$-th root of unity |
 
 
-
 ## Further Reading
 
 - Serge Lang, *Algebra* (Springer, revised 3rd ed. 2002), for the catalogue of rings and their standard properties.

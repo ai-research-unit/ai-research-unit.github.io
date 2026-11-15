@@ -310,7 +310,7 @@ The article adds a compact statement, one derivation of the two currents, and a 
 - [Noether's Theorem in Biquaternionic Form](noethers-theorem-in-biquaternionic-form.html), for the general statement of the construction used twice here.
 - [Lagrangian and Hamiltonian Mechanics in Biquaternionic Form](lagrangian-and-hamiltonian-mechanics-in-biquaternionic-form.html), for the action and the Legendre transform in the non-quantum setting.
 - [The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case](the-hydrogen-atom-in-biquaternionic-form-the-non-relativistic-case.html), for the operator setting.
-- [Unitarity from Centrality: The Biquaternion Norm-Preservation Theorem](unitarity-from-centrality-the-biquaternion-norm-preservation-theorem.html), for the anti-Hermiticity that the flow's unitarity is.
+- [The Unit Group, the Cone and the Orders](the-unit-group-the-cone-and-the-orders.html), for the anti-Hermiticity that the flow's unitarity is.
 - [Mirror Biquaternions and the Phy–Psy Switch](mirror-biquaternions-and-the-phy-psy-switch.html), for the pair $\tilde H_\Psi$, $\tilde H_\Phi$.
 - P. A. M. Dirac, *The Principles of Quantum Mechanics* (Oxford, 1930), for the standard action and the standard variation.
 - J. J. Sakurai and Jim Napolitano, *Modern Quantum Mechanics* (Pearson, 2017), for the first-order Schrödinger action and its antisymmetrisation.

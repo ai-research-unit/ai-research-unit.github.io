@@ -280,8 +280,8 @@ The main result is therefore negative, and meant to be: the framework currently 
 
 - [Introduction to the Biquaternion Universe](introduction-to-the-biquaternion-universe.html), for the framework hypothesis and its list of open questions.
 - [Why Complexify Spacetime?](why-complexify-spacetime.html), for the motivation of the complex structure and its explicit disclaimer of empirical predictions.
-- [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html), for the identification of the four-vector sector and its signature.
-- [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the informational hypothesis, the disclaimer that the imaginary directions are not extra space, and the admission that it makes no distinguishing prediction.
+- [Four-Vectors and the Interval](four-vectors-and-the-interval.html), for the identification of the four-vector sector and its signature.
+- [States, Observables and the Born Weight](states-observables-and-the-born-weight.html), for the informational hypothesis, the disclaimer that the imaginary directions are not extra space, and the admission that it makes no distinguishing prediction.
 - [Quantum Physics in Biquaternionic Form](quantum-physics-in-biquaternionic-form.html), for the exact reproduction of the single-qubit formalism.
 - [Relativistic Mechanics in Biquaternionic Form](relativistic-mechanics-in-biquaternionic-form.html), for the transcription of the ten mechanical formulas.
 - [The Electron in Biquaternionic Form](the-electron-in-biquaternionic-form.html), for the tree-level $g=2$ and the absence of the anomaly.

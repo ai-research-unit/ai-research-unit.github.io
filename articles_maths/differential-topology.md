@@ -279,7 +279,6 @@ Every smooth manifold embeds in a Euclidean space, by Whitney's embedding theore
 | $\Omega_n^{SO}$, $\mathrm{N}_n$ | Oriented and unoriented cobordism groups of closed $n$-manifolds |
 
 
-
 ## Further Reading
 
 - John W. Milnor, *Topology from the Differentiable Viewpoint* (University Press of Virginia, 1965), for Sard's theorem, degree theory and the Brouwer fixed point theorem.

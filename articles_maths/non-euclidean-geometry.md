@@ -203,9 +203,6 @@ The circumference and area of a circle grow as the circular, linear and hyperbol
 | Hilbert's theorem | No complete isometric embedding of $\mathbb{H}^2$ in $\mathbb{R}^3$ |
 
 
-
-
-
 ## Further Reading
 
 - David Hilbert, *Foundations of Geometry* (Open Court, 1902; reprinted by Dover), for the axiomatic framework and the independence of the parallel postulate.

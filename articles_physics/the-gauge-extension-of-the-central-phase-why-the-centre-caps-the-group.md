@@ -154,6 +154,6 @@ does not contain.
   Cartan decomposition and the enlargements that pass it.
 - [Conventions in the Biquaternion Universe](algebra-and-element-conventions.html), for the central phase as
   one generator on remarkable subspaces.
-- [The Physical Interpretation of the 12 Products](the-physical-interpretation-of-the-12-products.html), for the compact slice and the discrete
+- [The Four Products: Composition, Probability, Causality and Gauge](the-four-products-composition-probability-causality-and-gauge.html), for the compact slice and the discrete
   charge.
 - [Grand Unification and the Biquaternion Algebra Ceiling](grand-unification-and-the-biquaternion-algebra-ceiling.html), for the constructive interpretation of the obstruction.

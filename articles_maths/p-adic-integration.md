@@ -185,9 +185,6 @@ The continuous dual of the space of continuous functions is the space of $p$-adi
 | $(1-p^{-s})^{-1}$ | Local zeta integral, the local Euler factor |
 
 
-
-
-
 ## Further Reading
 
 - Neal Koblitz, *$p$-adic Numbers, $p$-adic Analysis, and Zeta-Functions*, 2nd ed. (Springer, 1984), for the Haar measure, the Volkenborn integral and the Bernoulli numbers.

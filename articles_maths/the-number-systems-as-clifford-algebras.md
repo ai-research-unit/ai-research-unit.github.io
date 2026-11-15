@@ -226,11 +226,6 @@ The composition property of the norm â€” the multiplicativity $N(xy)=N(x)N(y)$ â
 | $\mathbb{O}$ | Octonions, a composition algebra but not associative, hence not a Clifford algebra |
 
 
-
-
-
-
-
 ## Further Reading
 
 - [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.

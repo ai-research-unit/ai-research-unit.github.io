@@ -367,7 +367,6 @@ The three closures are not a decomposition. The carriers are one algebra read th
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the polar form of the norm and the signatures.
 - [Representations of Groups](../articles_maths/representations-of-groups.html), for complete reducibility and the highest-weight string.
 - [The Rotations, the Boosts and the Groups](the-rotations-the-boosts-and-the-groups.html), for the actions whose carriers these are.
-- [Spin and the Three Elementary Carriers](spin-and-the-three-elementary-carriers.html), for the archived reading of the three carriers against the observed spins.
 - [The Carrier of the Klein–Gordon Field](the-carrier-of-the-klein-gordon-field.html), for the central operator and the restriction to the centre.
 - [The Carrier of the Dirac Field](the-carrier-of-the-dirac-field.html), for the left multiplier and the two ideals.
 - [The Carrier of the Proca Field](the-carrier-of-the-proca-field.html), for the sector as the space of a four-vector.

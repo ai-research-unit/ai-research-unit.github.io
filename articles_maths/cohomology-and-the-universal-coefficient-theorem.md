@@ -246,9 +246,6 @@ The universal coefficient theorem expresses cohomology in terms of homology: the
 | $S^n$, $\mathbb{RP}^n$ | Sphere and real projective space, as computational examples |
 
 
-
-
-
 ## Further Reading
 
 - Allen Hatcher, *Algebraic Topology* (Cambridge University Press, 2002), for singular cohomology, the universal coefficient theorem and the Bockstein homomorphism.

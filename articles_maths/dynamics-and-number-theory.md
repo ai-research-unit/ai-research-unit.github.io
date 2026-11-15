@@ -205,7 +205,6 @@ The **modular surface** $\mathbb{H}/SL(2,\mathbb{Z})$ and its geodesic flow plac
 | $C$ | Collatz map |
 
 
-
 ## Further Reading
 
 - Carl F. Gauss, *Werke*, vol. 10, part 1 (Teubner, 1917), for the original computation of the invariant measure of the continued fraction map.

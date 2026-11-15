@@ -270,9 +270,6 @@ Krull dimension is the supremum of the lengths of chains of prime ideals; height
 | algebraic integer | Element of $\overline{\mathbb{Q}}$ integral over $\mathbb{Z}$ |
 
 
-
-
-
 ## Further Reading
 
 - Wolfgang Krull, "Dimensionstheorie in Stellenringen", *Journal für die reine und angewandte Mathematik* 179 (1938), 204–226, for the dimension theory of Noetherian rings and the principal ideal theorem.

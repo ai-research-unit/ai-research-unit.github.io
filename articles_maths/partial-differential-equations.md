@@ -276,7 +276,6 @@ Hadamard's notion of a well-posed problem — existence, uniqueness and continuo
 | $\lambda_k$, $\varphi_k$ | Dirichlet eigenvalues and eigenfunctions of $-\Delta$ |
 
 
-
 ## Further Reading
 
 - Lawrence C. Evans, *Partial Differential Equations* (American Mathematical Society, 2nd ed. 2010), for the classification, the three model equations and the representation formulas.

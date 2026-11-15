@@ -348,9 +348,6 @@ A relation on $X$ is a subset of $X \times X$; an equivalence relation is reflex
 | $X \cong Y$ | Equipotence: a bijection $X \to Y$ exists |
 
 
-
-
-
 ## Further Reading
 
 - Paul R. Halmos, *Naive Set Theory* (Van Nostrand, 1960; reprinted Springer, 1974), for the elementary development of sets, relations, functions and the power set used here.

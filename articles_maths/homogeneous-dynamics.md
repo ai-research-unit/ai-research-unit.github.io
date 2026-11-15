@@ -193,11 +193,6 @@ In higher rank the diagonal subgroup is a chamber $\mathbb{R}^r$, the Weyl chamb
 | Green–Parry–Auslander | orbit closures on a nilmanifold are finite unions of orbits of larger subgroups |
 
 
-
-
-
-
-
 ## Further Reading
 
 - Morris W. Hirsch, *Differential Topology* (Springer, 1976), and Sigurdur Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces* (AMS, 2001), for the geometry of homogeneous spaces and symmetric spaces.

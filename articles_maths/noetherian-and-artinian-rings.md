@@ -291,11 +291,6 @@ The intermediate notion is finite length: a ring has a composition series exactl
 | $\operatorname{Spec}(R)$ | The set of prime ideals of $R$ |
 
 
-
-
-
-
-
 ## Further Reading
 
 - Emmy Noether, "Idealtheorie in Ringbereichen", *Mathematische Annalen* 83 (1921), 24–66, for the ascending chain condition and its role in ideal theory.

@@ -270,11 +270,6 @@ The standard cases are the Fourier transform of $\mathbb{R}^n$, the Fourier seri
 | $\mathbb{Q}_p$, $\mathbb{Z}_p$ | $p$-adic line, self-dual, and its unit ball |
 
 
-
-
-
-
-
 ## Further Reading
 
 - Walter Rudin, *Fourier Analysis on Groups* (Interscience, 1962; reprinted Wiley, 1990), for the transform on locally compact abelian groups, its algebra and its applications.

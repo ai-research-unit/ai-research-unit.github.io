@@ -235,9 +235,6 @@ The first Borel–Cantelli lemma states that summable probabilities imply finite
 | martingale | $\mathbb{E}[X_{n+1}\mid\mathcal{F}_n]=X_n$ a.s. |
 
 
-
-
-
 ## Further Reading
 
 - Patrick Billingsley, *Probability and Measure* (Wiley, 3rd edition, 1995), for independence, the Borel–Cantelli lemmas and the product measure construction.

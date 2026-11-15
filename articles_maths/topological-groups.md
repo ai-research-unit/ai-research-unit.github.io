@@ -286,7 +286,6 @@ A profinite group is a compact Hausdorff totally disconnected group, equivalentl
 | $\mu_n$, $\mu_{p^\infty}$ | Group of $n$-th roots of unity, Prüfer group |
 
 
-
 ## Further Reading
 
 - Lev S. Pontryagin, *Topological Groups* (Gordon and Breach, 2nd ed. 1966), for the classical development of the theory and of duality.

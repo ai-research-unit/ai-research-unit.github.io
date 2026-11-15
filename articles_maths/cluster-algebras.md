@@ -133,7 +133,6 @@ The cluster complex records compatibility, the denominator vectors organise the 
 | $\mathbf{g}(x)$ | $\mathbf{g}$-vector of a cluster variable |
 
 
-
 ## Further Reading
 
 - Aslak Bakke Buan, Robert J. Marsh, Markus Reineke, Idun Reiten and Gordana Todorov, "Tilting theory and cluster combinatorics", *Advances in Mathematics* 204 (2006), 572–618, for the cluster category and the bijection between clusters and cluster-tilting objects.

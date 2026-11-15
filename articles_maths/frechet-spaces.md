@@ -132,7 +132,6 @@ The operator theory on these spaces, the Fourier transform and the theory of dis
 | $\Gamma(T) \subseteq E \times F$ | Graph of a linear map |
 
 
-
 ## Further Reading
 
 - Stefan Banach, *Theory of Linear Operations* (North-Holland, 1987; original 1932), for the origins of the open mapping and closed graph theorems for complete metrisable spaces.

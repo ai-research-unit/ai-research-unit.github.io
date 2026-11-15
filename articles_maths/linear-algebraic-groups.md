@@ -380,7 +380,6 @@ A linear algebraic group over $k$ is a closed subgroup of $GL_n$ defined by poly
 | $\Gamma_k$ | Absolute Galois group of $k$ |
 
 
-
 ## Further Reading
 
 - Armand Borel, *Linear Algebraic Groups* (2nd edition, Springer, 1991), for the Zariski topology, the structure theory, Borel and parabolic subgroups and the classification.

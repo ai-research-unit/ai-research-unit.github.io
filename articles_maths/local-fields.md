@@ -283,11 +283,6 @@ The multiplicative group decomposes topologically as $F^\times \cong \mathbb{Z} 
 | $\overline{\phi_1}$, $\overline{\phi_2}$ | First and second residue forms over $k$ |
 
 
-
-
-
-
-
 ## Further Reading
 
 - Jean-Pierre Serre, *Local Fields* (Springer, 1979), for the classification, ramification, the different and the Galois theory of local fields.

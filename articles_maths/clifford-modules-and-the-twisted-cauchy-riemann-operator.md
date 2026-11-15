@@ -209,7 +209,6 @@ On a compact Riemann surface this reduces to the degree of the twisting line bun
 | $\sigma(M)$ | Signature of a closed oriented $4$-manifold |
 
 
-
 ## Further Reading
 
 - H. Blaine Lawson and Marie-Louise Michelsohn, *Spin Geometry* (Princeton University Press, 1989), for Clifford modules, the spinor bundle, the twisted operator and the Weitzenböck formula.

@@ -183,13 +183,6 @@ The Riemann zeta function $\zeta(s) = \sum n^{-s}$ converges for $\Re s>1$, has 
 | $\lvert X(\mathbb{F}_{p^n})\rvert$ | Number of points of the reduction over the finite field |
 
 
-
-
-
-
-
-
-
 ## Further Reading
 
 - Bernhard Riemann, *Über die Anzahl der Primzahlen unter einer gegebenen Größe* (Monatsberichte der Berliner Akademie, 1859), for the original statement of the functional equation and the hypothesis.

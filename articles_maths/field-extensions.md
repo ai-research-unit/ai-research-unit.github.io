@@ -285,7 +285,6 @@ The tower law $[K:F] = [K:E][E:F]$ makes degree multiplicative over intermediate
 | $\operatorname{Frac}(R)$ | Fraction field of a domain $R$ |
 
 
-
 ## Further Reading
 
 - Michael Artin, *Algebra* (Prentice Hall, 1991), for the degree, the evaluation map and simple extensions.

@@ -225,9 +225,6 @@ A Frobenius algebra is at once an algebra and a coalgebra, with comultiplication
 | $k[x_1,\dots,x_n]/(f_1,\dots,f_n)$ | complete intersection, Frobenius for a regular sequence |
 
 
-
-
-
 ## Further Reading
 
 - Charles W. Curtis and Irving Reiner, *Representation Theory of Finite Groups and Associative Algebras* (Interscience, 1962), for Frobenius algebras, the Nakayama automorphism and quasi-Frobenius algebras.

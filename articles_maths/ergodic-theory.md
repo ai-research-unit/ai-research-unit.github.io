@@ -240,7 +240,6 @@ The quantitiative refinement of the theory is entropy. The Kolmogorov–Sinai en
 | ergodic decomposition | $\mu=\int\mu_x\,d\mu(x)$, $\mu_x$ ergodic |
 
 
-
 ## Further Reading
 
 - Peter Walters, *An Introduction to Ergodic Theory* (Springer, 1982), for the ergodic theorems, mixing, the ergodic decomposition and entropy.

@@ -74,7 +74,7 @@ $$
 \tilde u_{\mathrm r}=\cos\frac{\theta_{\mathrm{axr}}}{2}e_t+\sin\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r},
 $$
 
-with $r>0$, $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$, $\theta_{\mathrm{rpd}}\ge0$ and $\theta_{\mathrm{axr}}\in[0,2\pi]$. The derivation is in [The Polar Decomposition and Its Three Pairings](the-polar-decomposition-and-its-three-pairings.html) and [The Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html); this article takes the word as given and reads it.
+with $r>0$, $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$, $\theta_{\mathrm{rpd}}\ge0$ and $\theta_{\mathrm{axr}}\in[0,2\pi]$. The derivation is in [The Exponential and Its Three Pairings](the-exponential-and-its-three-pairings.html) and [The Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html); this article takes the word as given and reads it.
 
 ### The four variables
 
@@ -232,4 +232,4 @@ word leaves open, the sign $\varepsilon$, the locking on the degenerate sector a
 - Peter R. Holland, *The Quantum Theory of Motion* (Cambridge University Press, 1993), for the hydrodynamical formulation and its relativistic extension.
 - Erwin Madelung, "Quantentheorie in hydrodynamischer Form," *Zeitschrift für Physik* **40** (1926) 322–326, for the non-relativistic pair that the scalar case reduces to.
 - Luca Fabbri, *Dirac Theory in Hydrodynamic Form* (2023), for the non-uniqueness of the spin-fluid system.
-- The companion articles: [The Klein–Gordon Fluid](the-klein-gordon-fluid.html), [The Dirac Fluid and the Takabayasi Correspondence](the-dirac-fluid-and-the-takabayasi-correspondence.html), [The Polar Decomposition and Its Three Pairings](the-polar-decomposition-and-its-three-pairings.html), [The Meaning of N-Regularity and Degeneracy](the-meaning-of-n-regularity-and-degeneracy.html).
+- The companion articles: [The Klein–Gordon Fluid](the-klein-gordon-fluid.html), [The Dirac Fluid and the Takabayasi Correspondence](the-dirac-fluid-and-the-takabayasi-correspondence.html), [The Exponential and Its Three Pairings](the-exponential-and-its-three-pairings.html), [The Partition: Two Invariants and Four Regimes](the-partition-two-invariants-and-four-regimes.html).

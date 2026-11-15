@@ -273,9 +273,6 @@ A covering space is a map that is locally a disjoint union of homeomorphisms ont
 | $\omega(s) = \exp(2\pi i s)$ | Standard generator of $\pi_1(S^1,1)$ |
 
 
-
-
-
 ## Further Reading
 
 - Allen Hatcher, *Algebraic Topology* (Cambridge University Press, 2002), for homotopy, covering spaces, van Kampen's theorem and the classification of coverings.

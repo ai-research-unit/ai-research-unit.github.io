@@ -169,7 +169,6 @@ A **projective space** $\mathbb{P}(V)$ of dimension $n$ over a field $K$ is the 
 | $\binom{n}{k}_q$ | Gaussian binomial; number of $k$-subspaces of $\mathbb{F}_q^n$ |
 
 
-
 ## Further Reading
 
 - Reinhold Baer, *Linear Algebra and Projective Geometry* (Academic Press, 1952), for the fundamental theorem of projective geometry and the correlations.

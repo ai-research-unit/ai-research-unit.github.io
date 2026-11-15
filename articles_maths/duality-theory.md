@@ -208,7 +208,6 @@ For a locally convex space $E$ the **weak topology** is $\sigma(E,E')$ and the *
 | Montel, Mackey, semi-reflexive, reflexive | Properties of locally convex spaces |
 
 
-
 ## Further Reading
 
 - Nicolas Bourbaki, *Topological Vector Spaces* (Springer, 1987), Chapters IV–V, for dual pairs, polar topologies, the bipolar theorem and the Mackey–Arens theorem.

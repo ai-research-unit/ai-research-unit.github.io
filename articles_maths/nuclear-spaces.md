@@ -197,7 +197,6 @@ Nuclear spaces are stable under the formation of subspaces, Hausdorff quotients,
 | Montel, nuclear | Properties of locally convex spaces |
 
 
-
 ## Further Reading
 
 - Alexandre Grothendieck, *Produits tensoriels topologiques et espaces nucléaires* (Memoirs of the American Mathematical Society, 1955), for the original definition of nuclear spaces, the tensor-product theorem and the kernel theorem.

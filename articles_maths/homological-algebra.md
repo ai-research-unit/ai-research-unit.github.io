@@ -269,13 +269,6 @@ Every result is algebraic. The applications to sheaf cohomology and to algebraic
 | $R$ | commutative ring with identity $1\neq0$ unless stated |
 
 
-
-
-
-
-
-
-
 ## Further Reading
 
 - Henri Cartan and Samuel Eilenberg, *Homological Algebra* (Princeton University Press, 1956), for chain complexes, resolutions and the comparison theorem.

@@ -183,7 +183,6 @@ The gap theorem at a point $P$ produces $g$ integers $w_i \leq 2g-1$ with $\sum 
 | $\operatorname{Aut}(C)$ | Automorphism group of $C$ |
 
 
-
 ## Further Reading
 
 - Bernhard Riemann, "Theorie der Abel'schen Functionen", *Journal für die reine und angewandte Mathematik* 54 (1857), 115–155, for the inequality and the existence argument.

@@ -251,9 +251,6 @@ Associativity is not needed for any of this. It is needed only to multiply ideal
 | $\mathbb{H}$ | Quaternions as a quotient of the free algebra |
 
 
-
-
-
 ## Further Reading
 
 - Nathan Jacobson, *Basic Algebra I* (Dover, 2nd ed. 2009), for ideals, quotients and the isomorphism theorems in the general algebra setting.

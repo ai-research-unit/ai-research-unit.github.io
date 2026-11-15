@@ -263,7 +263,6 @@ The Schur function $s_\lambda$ is the generating function of semistandard Young 
 | $\operatorname{ch}$, $\chi^\lambda$ | Frobenius characteristic, irreducible character of $S_n$ |
 
 
-
 ## Further Reading
 
 - Ian G. Macdonald, *Symmetric Functions and Hall Polynomials* (Oxford University Press, 2nd ed. 1995), for the standard development of all the bases, the Cauchy identity and the specialisations.

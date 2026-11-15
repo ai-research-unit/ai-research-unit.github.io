@@ -282,5 +282,5 @@ The trace is the trace of the $2\times2$ image, $\operatorname{Tr}\tilde Q=2Q_t$
 - [Conventions in the Biquaternion Universe](algebra-and-element-conventions.html), for the algebra and the element glyphs.
 - [Conventions of the Products and the Forms](product-and-form-conventions.html), for the four forms whose diagonals are these norms.
 - [Conventions of the Matrix Models](matrix-representations-conventions.html), for the $2\times2$ image whose trace is used here.
-- [The Polar Decomposition and Its Three Pairings](the-polar-decomposition-and-its-three-pairings.html), for the domains and the proofs.
+- [The Exponential and Its Three Pairings](the-exponential-and-its-three-pairings.html), for the domains and the proofs.
 - [The Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html), for the existence and uniqueness of the word.

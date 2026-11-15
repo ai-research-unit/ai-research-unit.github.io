@@ -228,9 +228,6 @@ The **Leray–Schauder degree** $\deg(I-T,\Omega,p)$ is the integer defined for 
 | $C[0,1]$ | space of continuous functions |
 
 
-
-
-
 ## Further Reading
 
 - Stefan Banach, "Sur les opérations dans les ensembles abstraits et leur application aux équations intégrales", *Fundamenta Mathematicae* 3 (1922), 133–181, for the contraction principle and its applications.

@@ -225,7 +225,6 @@ The distribution theory extends from $\omega$ to the local limit theorems, to th
 | $\mathcal{N}_{\mathbb{C}}$ | standard complex Gaussian |
 
 
-
 ## Further Reading
 
 - P. D. T. A. Elliott, *Probabilistic Number Theory I, II* (Springer, 1979, 1980), for the systematic theory of additive functions and the Erdős–Wintner criterion.

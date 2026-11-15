@@ -315,8 +315,8 @@ along $\vec a\times\vec v$, and the non-relativistic limit $\vec\omega_T\approx\
 ## Further Reading
 
 - [Introduction to the Biquaternion Universe](introduction-to-the-biquaternion-universe.html), for the algebra and the two sectors.
-- [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html), for the four-vectors and the rotor conjugation on $\mathbb{B}_{\Phi}$.
-- [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the boost biquaternion as an element of $\mathbb{B}_{\Psi}$.
+- [Four-Vectors and the Interval](four-vectors-and-the-interval.html), for the four-vectors and the rotor conjugation on $\mathbb{B}_{\Phi}$.
+- [States, Observables and the Born Weight](states-observables-and-the-born-weight.html), for the boost biquaternion as an element of $\mathbb{B}_{\Psi}$.
 - [Relativistic Mechanics in Biquaternionic Form](relativistic-mechanics-in-biquaternionic-form.html), for the four-velocity, four-momentum, and four-force.
 - [The Lorentz Transformation as a Biquaternionic Rotation](the-lorentz-transformation-as-a-biquaternionic-rotation.html), for the boost rotor, the square-root relation, and the polar decomposition.
 - [The Lorentz Group in Biquaternionic Form — Structure and Representations](the-lorentz-group-in-biquaternionic-form-structure-and-representations.html), for the Wigner angle, its axis, and its leading approximation.

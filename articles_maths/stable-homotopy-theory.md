@@ -199,9 +199,6 @@ Brown representability identifies reduced cohomology theories with spectra, so o
 | $S/p$ | Moore spectrum, cofibre of $p : \mathbb{S}\to\mathbb{S}$ |
 
 
-
-
-
 ## Further Reading
 
 - Douglas C. Ravenel, *Complex Cobordism and Stable Homotopy Groups of Spheres* (Academic Press, 2nd ed. 2003), for the Adams–Novikov spectral sequence and the chromatic picture.

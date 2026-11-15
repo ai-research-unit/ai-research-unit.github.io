@@ -213,9 +213,6 @@ Every statement is algebraic. The spectral sequences attached to spaces, fibrati
 | $R$ | commutative ring with $1\neq0$; $\varphi:R\to S$ a change of rings |
 
 
-
-
-
 ## Further Reading
 
 - Henri Cartan and Samuel Eilenberg, *Homological Algebra* (Princeton University Press, 1956), for the spectral sequence of a filtered complex and of a double complex.

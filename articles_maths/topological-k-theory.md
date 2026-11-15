@@ -257,11 +257,6 @@ The **suspension** $SX$ and the **clutching** description of bundles over it by 
 | $C(X)$, $K_0$, $K_1$ | Continuous functions; algebraic and operator-algebraic $K$-groups |
 
 
-
-
-
-
-
 ## Further Reading
 
 - Michael F. Atiyah, *K-Theory* (Benjamin, 1967), for the Grothendieck group of bundles, the ring structure, the exact sequences and the computations for projective spaces.

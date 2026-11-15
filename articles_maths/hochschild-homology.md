@@ -225,11 +225,6 @@ Cyclic homology, treated of this category, is built from the same cyclic object 
 | $\mu:A\otimes_kA\to A$ | multiplication |
 
 
-
-
-
-
-
 ## Further Reading
 
 - Murray Gerstenhaber, "The cohomology structure of an associative ring", *Annals of Mathematics* 78 (1963), 267–288, for the bracket and the graded Lie algebra structure.

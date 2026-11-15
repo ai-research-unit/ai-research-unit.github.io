@@ -180,9 +180,6 @@ $(\mathbb{N}, +, \cdot, 0, 1)$ is a commutative semiring with identity, and it i
 | $\mathcal{P}(\mathbb{N})$ | Power set, of strictly larger cardinality |
 
 
-
-
-
 ## Further Reading
 
 - Richard Dedekind, *Was sind und was sollen die Zahlen?* (Vieweg, 1888), for the Peano system, the recursion theorem and the categoricity of the second-order axioms.

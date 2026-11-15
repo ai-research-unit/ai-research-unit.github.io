@@ -268,9 +268,6 @@ The standard kernels are the delta of the diagonal for the identity, the derivat
 | $G(x,y)$ | Green's function |
 
 
-
-
-
 ## Further Reading
 
 - Laurent Schwartz, "Théorie des noyaux", *Proceedings of the International Congress of Mathematicians* (1950), vol. 1, 220–230, for the original statement and proof.

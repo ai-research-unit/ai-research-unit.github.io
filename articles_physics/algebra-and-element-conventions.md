@@ -443,7 +443,7 @@ The angle is real and is one letter: $\theta$, with a subscript naming it, the $
 - [Operator and Calculus Conventions](operator-and-calculus-conventions.html), for the operators and for the derivative marks, the gradient and the d'Alembertian.
 - [Physics Units and Common Elements Conventions](physics-units-and-common-elements-conventions.html), for the SI units, the two writings of the temporal slot and the catalogue of the tilde glyphs.
 - [Index and Notation Conventions](index-and-notation-conventions.html), for the two superscript tokens and the rules of the subscripts.
-- [The Biquaternion Space, the Group of Involutions and the Six Subspaces](the-biquaternion-space-the-group-of-involutions-and-the-six-subspaces.html), companion article, for the relations among the subspaces defined here — their coordinate blocks, intersections, spans, gradings and biquaternion norms.
+- [The Element, the Six Subspaces and the Two Ledgers](the-element-the-six-subspaces-and-the-two-ledgers.html), companion article, for the relations among the subspaces defined here — their coordinate blocks, intersections, spans, gradings and biquaternion norms.
 - W. R. Hamilton, *Lectures on Quaternions* (Hodges and Smith, 1853), for the original quaternion algebra and its units.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for idempotents, minimal left ideals and the conjugations of a Clifford algebra.
 - F. Reese Harvey, *Spinors and Calibrations* (Academic Press, 1990), for real structures and real forms on Clifford algebras.

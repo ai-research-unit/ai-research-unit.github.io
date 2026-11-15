@@ -336,9 +336,6 @@ The Fourier transform is an isomorphism of the Schwartz space and, by transposit
 | $\rho_\varepsilon$ | mollifier |
 
 
-
-
-
 ## Further Reading
 
 - Laurent Schwartz, *Théorie des distributions* (Hermann, 1950–51; revised 1966), for the original development and the LF topology of the test functions.

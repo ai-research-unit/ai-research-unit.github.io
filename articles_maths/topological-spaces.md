@@ -353,7 +353,6 @@ Nets and filters give equivalent accounts of convergence; a space is Hausdorff e
 | $X^+ = X \cup \{\infty\}$ | One-point compactification |
 
 
-
 ## Further Reading
 
 - James R. Munkres, *Topology* (Prentice Hall, 2nd ed. 2000), for the standard first course, including nets, filters and Tychonoff's theorem.

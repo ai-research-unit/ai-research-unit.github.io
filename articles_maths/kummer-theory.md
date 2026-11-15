@@ -252,7 +252,6 @@ Kummer theory is the engine of the theorem that a polynomial over a field of cha
 | $f \in K[x]$, $G_f$ | Polynomial and its Galois group |
 
 
-
 ## Further Reading
 
 - Ernst Eduard Kummer, "Über die Zerlegung der aus Wurzeln der Einheit gebildeten complexen Zahlen in ihre Primfactoren", *Journal für die reine und angewandte Mathematik* 35 (1847), 327–367, for the origin of the theory in the arithmetic of cyclotomic integers.

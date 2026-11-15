@@ -239,7 +239,6 @@ A local ring is Henselian when a coprime factorisation modulo the maximal ideal 
 | $\overline{R}$ | Integral closure of $R$ in its fraction field |
 
 
-
 ## Further Reading
 
 - Wolfgang Krull, "Allgemeine Bewertungstheorie", *Journal für die reine und angewandte Mathematik* 167 (1932), 160–196, for general valuations with arbitrary value groups, valuation rings and the correspondence with primes.

@@ -117,7 +117,6 @@ In this way descent theory unifies the gluing of the sheaves with the reconstruc
 | $H^p(G,M)$ | group cohomology of the descent |
 
 
-
 ## Further Reading
 
 - Michael Artin, Alexander Grothendieck and Jean-Louis Verdier, *Théorie des topos et cohomologie étale des schémas (SGA 4)* (Springer Lecture Notes in Mathematics 269, 270, 305, 1972–1973), for the descent theory of sites and the stacks.

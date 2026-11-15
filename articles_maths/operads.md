@@ -165,7 +165,6 @@ The free operad on a symmetric sequence is the free monoid under substitution, a
 | $\mathrm{G}$ | a Lie algebra, an algebra for $\mathcal{L}ie$ |
 
 
-
 ## Further Reading
 
 - J. Michael Boardman and Rainer M. Vogt, *Homotopy Invariant Algebraic Structures on Topological Spaces* (Springer Lecture Notes in Mathematics 347, 1973), for the origin of the operadic axioms and the composition of operations.

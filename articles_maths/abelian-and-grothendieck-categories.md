@@ -241,13 +241,6 @@ The abstraction abstracts the additive part of module theory only. The tensor pr
 | $R\text{-}\mathbf{Mod}$ | the category of left $R$-modules |
 
 
-
-
-
-
-
-
-
 ## Further Reading
 
 - Michael Barr, *Exact Categories and Categories of Sheaves* (Springer Lecture Notes in Mathematics 236, 1971), for abelian categories and their exact completions.

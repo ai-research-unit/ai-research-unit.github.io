@@ -222,7 +222,6 @@ A **Poisson algebra** is a commutative associative algebra with a Lie bracket th
 | $[a_\lambda b]$ | $\lambda$-bracket of a Poisson vertex algebra |
 
 
-
 ## Further Reading
 
 - André Lichnerowicz, "Les variétés de Poisson et leurs algèbres de Lie associées", *Journal of Differential Geometry* **12** (1977), 253–300, for the Poisson cohomology and the Schouten–Nijenhuis complex.

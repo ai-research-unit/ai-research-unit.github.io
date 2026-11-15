@@ -353,9 +353,6 @@ In characteristic $2$ the associated bilinear form $\mathfrak{b}(v, w) = \mathfr
 | $\mathbb{R}$, $\mathbb{C}$ | Real and complex numbers |
 
 
-
-
-
 ## Further Reading
 
 - Winfried Scharlau, *Quadratic and Hermitian Forms*, Grundlehren der mathematischen Wissenschaften 270 (Springer, 1985), for Witt's theorems over fields and rings, hyperbolic planes and the index.

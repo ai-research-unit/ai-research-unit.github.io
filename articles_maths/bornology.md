@@ -135,7 +135,6 @@ A **bornology** on a set $X$ is a family of subsets, the **bounded** sets, that 
 | $\operatorname{diam}_d(B)$ | Diameter of $B$ in the metric $d$ |
 
 
-
 ## Further Reading
 
 - Henri Hogbe-Nlend, *Bornologies and Functional Analysis* (North-Holland Mathematics Studies 26, North-Holland, 1977), for the general theory of bornologies and the bornological vector spaces.

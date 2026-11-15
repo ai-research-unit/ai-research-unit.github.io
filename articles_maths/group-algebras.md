@@ -200,7 +200,6 @@ The group algebra $k[G]$ has $k$-basis $G$, multiplication extending the group l
 | $k[x,x^{-1}]$ | Laurent polynomial algebra $\cong k[\mathbb{Z}]$ |
 
 
-
 ## Further Reading
 
 - Charles W. Curtis and Irving Reiner, *Representation Theory of Finite Groups and Associative Algebras* (Wiley, 1962), for the group algebra and its decomposition.

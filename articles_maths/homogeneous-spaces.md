@@ -258,13 +258,6 @@ The isometry group of a Riemannian manifold is a Lie group, so a connected homog
 | $\mathrm{Gr}_k(\mathbb{R}^n) = O(n)/(O(k)\times O(n-k))$ | Grassmannian as a homogeneous space |
 
 
-
-
-
-
-
-
-
 ## Further Reading
 
 - Sigurdur Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces* (Academic Press, 1978), for the quotient manifold theorem, invariant metrics and the curvature of homogeneous spaces.

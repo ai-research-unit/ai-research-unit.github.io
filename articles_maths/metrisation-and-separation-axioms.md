@@ -218,9 +218,6 @@ Urysohn's lemma produces a continuous function separating two disjoint closed se
 | $\overline{A}$, $A^\circ$ | Closure and interior, as in *Topological Spaces* |
 
 
-
-
-
 ## Further Reading
 
 - James R. Munkres, *Topology* (Prentice Hall, 2nd ed. 2000), for the separation axioms, Urysohn's lemma, the Tietze theorem and Urysohn's metrisation theorem.

@@ -307,11 +307,6 @@ On $L^2$ the operators of order $0$ are bounded, by Calderón–Vaillancourt, an
 | $M_{x_k}$ | operator of multiplication by $x_k$ |
 
 
-
-
-
-
-
 ## Further Reading
 
 - Lars Hörmander, *The Analysis of Linear Partial Differential Operators III* (Springer, 1985), for the calculus of pseudodifferential operators, composition, parametrices and Gårding's inequality.

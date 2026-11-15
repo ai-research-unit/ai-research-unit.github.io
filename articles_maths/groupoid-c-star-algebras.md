@@ -223,7 +223,6 @@ For a topologically principal étale groupoid, $C_0(G^{(0)})$ is a **Cartan suba
 | $K(\ell^2(X))$ | Compact operators on a countable set $X$ |
 
 
-
 ## Further Reading
 
 - Jean Renault, *A Groupoid Approach to $\mathrm{C}^*$-Algebras* (Springer Lecture Notes in Mathematics 793, 1980), for the construction of groupoid $\mathrm{C}^*$-algebras, Haar systems and the amenability theory.

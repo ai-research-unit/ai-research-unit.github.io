@@ -203,7 +203,6 @@ The local zeta integrals $Z_v(s,\chi_v,\Phi_v) = \int \Phi_v\chi_v\lvert x\rvert
 | $\Lambda(s) = \pi^{-s/2}\Gamma(s/2)\zeta(s)$ | Completed Riemann zeta function |
 
 
-
 ## Further Reading
 
 - John Tate, *Fourier Analysis in Number Fields and Hecke's Zeta-Functions* (doctoral thesis, Princeton, 1950; reprinted in Cassels–Fröhlich, *Algebraic Number Theory*), for the whole method of this article.

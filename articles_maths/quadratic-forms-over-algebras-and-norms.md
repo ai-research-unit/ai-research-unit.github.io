@@ -329,7 +329,6 @@ The doubling with a general parameter $\mu$ has $(a,b)(c,d) = (ac + \mu d^{\natu
 | Segre embedding | The map $\mathbb{P}^1 \times \mathbb{P}^1 \to \mathbb{P}^3$ |
 
 
-
 ## Further Reading
 
 - T. Y. Lam, *Introduction to Quadratic Forms over Fields*, Graduate Studies in Mathematics 67 (American Mathematical Society, 2005), for norms, composition laws and the theorem of Hurwitz.

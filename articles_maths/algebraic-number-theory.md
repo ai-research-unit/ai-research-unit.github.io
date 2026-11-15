@@ -275,7 +275,6 @@ Nonzero ideals of $\mathcal{O}_K$ factor uniquely into prime ideals, the class g
 | $\varrho$ | Used for $\sqrt[3]{2}$ in the pure cubic example |
 
 
-
 ## Further Reading
 
 - Richard Dedekind, "Über die Theorie der ganzen algebraischen Zahlen", *Supplement XI* to Dirichlet's *Vorlesungen über Zahlentheorie* (Vieweg, 1871), for the ring of integers, ideals and unique factorisation.

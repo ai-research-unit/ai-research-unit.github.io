@@ -302,9 +302,6 @@ The group algebra $k[G]$ with $\Delta(g) = g\otimes g$, $\varepsilon(g)=1$, $S(g
 | $k_q[x,y]$ | quantum plane, $yx = q\,xy$ |
 
 
-
-
-
 ## Further Reading
 
 - Moss E. Sweedler, *Hopf Algebras* (Benjamin, 1969), for the foundational theory, integrals and the fundamental theorem of Hopf modules.

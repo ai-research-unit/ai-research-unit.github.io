@@ -198,9 +198,6 @@ A quantale is a complete lattice with an associative multiplication distributing
 | $\mathcal{P}(X\times X)$ | Quantale of relations on $X$ under composition |
 
 
-
-
-
 ## Further Reading
 
 - Peter T. Johnstone, *Stone Spaces* (Cambridge University Press, 1982), for frames, locales, nuclei, spatiality and the adjunction with topological spaces.

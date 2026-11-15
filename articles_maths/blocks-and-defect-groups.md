@@ -111,7 +111,6 @@ Let $G$ be a finite group, $p$ a prime dividing $\lvert G\rvert$ and $k$ an alge
 | $M_{\chi(1)}(k)$, defect zero | structure of a block of defect zero |
 
 
-
 ## Further Reading
 
 - Richard Brauer, "On the structure of groups of finite order", *Proceedings of the International Congress of Mathematicians, Amsterdam* **1** (1954), 209–217, and "Zur Darstellungstheorie der Gruppen endlicher Ordnung", *Mathematische Zeitschrift* **63** (1956), 406–444, for the blocks, the defect groups and the main theorems.

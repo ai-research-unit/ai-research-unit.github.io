@@ -201,9 +201,6 @@ and the computed cases are $K[x^n]$ for the cyclic group of order $n$ with Molie
 | $L^G$ | Fixed field of the action |
 
 
-
-
-
 ## Further Reading
 
 - David Hilbert, "Über die Theorie der algebraischen Formen", *Mathematische Annalen* 36 (1890), 473–534, for the finiteness theorem and the origin of the ascending chain condition.

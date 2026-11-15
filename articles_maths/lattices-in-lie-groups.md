@@ -174,9 +174,6 @@ The rigidity theory is the structural heart of the subject. Mostow–Prasad rigi
 | $S$-arithmetic lattice | Lattice of the form $\mathbf{G}(\mathcal{O}_k[S^{-1}])$ in a product of local groups |
 
 
-
-
-
 ## Further Reading
 
 - Armand Borel, *Introduction aux groupes arithmétiques* (Hermann, 1969), for the Borel–Harish-Chandra theorem and reduction theory.

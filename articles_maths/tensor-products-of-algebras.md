@@ -290,7 +290,6 @@ The principal computations are $\mathbb{B} = \mathbb{C} \otimes_\mathbb{R} \math
 | $S_n$ | Symmetric group acting by permutations of factors |
 
 
-
 ## Further Reading
 
 - Serge Lang, *Algebra* (Springer, 3rd ed. 2002), for tensor products of modules and algebras, base change and the universal property.

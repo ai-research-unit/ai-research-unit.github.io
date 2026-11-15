@@ -346,7 +346,6 @@ Regular functions form a real vector space, are closed under right multiplicatio
 | $\Pi_{1,2} = \tfrac12(1\pm j)$, $\zeta_\pm = x_t\pm x_1$ | Idempotents and characteristic coordinates of $\mathbb{C}_{\mathrm{spl}}$ |
 
 
-
 ## Further Reading
 
 - F. Brackx, R. Delanghe and F. Sommen, *Clifford Analysis* (Pitman, 1982), for the classical theory of monogenic functions and the Cauchy integral formula.

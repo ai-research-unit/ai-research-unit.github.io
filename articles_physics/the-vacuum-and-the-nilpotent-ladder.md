@@ -886,8 +886,6 @@ $$
 - [The Rest Frame and the Exceptional Point](the-rest-frame-and-the-exceptional-point.html), for the stratum on which the modulus exists and the eigenbasis does not.
 - [Mass in Motion: The Region of Both Invariants](the-region-of-mass-in-motion.html), for the open stratum and the two-mode picture.
 - [The Partition: Two Invariants and Four Regimes](the-partition-two-invariants-and-four-regimes.html), for the arrangement of the four strata and the statement that the two conditions are independent.
-- [The Three Elementary Carriers and the Four Sectors of Regularity and Degeneracy](the-three-elementary-carriers-and-the-four-sectors-of-regularity-and-degeneracy.html), for the reach of each carrier on each stratum.
-- [The Zero-Divisor Cone and the Massless Spectrum](the-zero-divisor-cone-and-the-massless-spectrum.html), for the cone whose apex is this stratum's material share.
-- [The Square-Zero Element: Nilpotency as Mode, Differential and Supercharge](the-square-zero-element-nilpotency-as-mode-differential-and-supercharge.html), for the archive's reading of nilpotency.
-- [The N-Degenerate, Spectrally Degenerate Sector: The Vacuum and the Nilpotent Ladder](the-n-degenerate-spectrally-degenerate-sector-the-vacuum-and-the-nilpotent-ladder.html), for the archive article this entry supersedes.
+- [The Carriers, the Spin and the Closure](the-carriers-the-spin-and-the-closure.html), for the reach of each carrier on each stratum.
+- [The Unit Group, the Cone and the Orders](the-unit-group-the-cone-and-the-orders.html), for the cone whose apex is this stratum's material share.
 - [Norm and Pairing Conventions](norm-and-pairing-conventions.html), for the letters, the signatures and the two norms used throughout.

@@ -203,9 +203,6 @@ On a general state space the chain is built from a Markov kernel by the Ionescu 
 | martingale problem | $f(X_t)-f(X_0)-\int_0^tLf(X_s)ds$ is a martingale |
 
 
-
-
-
 ## Further Reading
 
 - J. R. Norris, *Markov Chains* (Cambridge University Press, 1997), for the discrete and continuous-time chains, recurrence, stationarity and the convergence theorems.

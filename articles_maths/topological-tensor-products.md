@@ -211,7 +211,6 @@ The classical identifications are: $\mathbb{K}^m\otimes\mathbb{K}^n = M_{m,n}$ w
 | $A\otimes_{\min}B$, $A\otimes_{\max}B$ | Spatial (minimal) and maximal $C^*$-tensor products |
 
 
-
 ## Further Reading
 
 - Alexandre Grothendieck, *Produits tensoriels topologiques et espaces nucléaires* (Memoirs of the American Mathematical Society, 1955), for the projective and injective topologies, the metric theory and the problem of topologies.

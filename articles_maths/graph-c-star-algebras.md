@@ -223,9 +223,6 @@ The **gauge action** $\gamma_z(p_v) = p_v$, $\gamma_z(s_e) = zs_e$ is a circle a
 | $L_K(E)$ | Leavitt path algebra over a field $K$ |
 
 
-
-
-
 ## Further Reading
 
 - Alex Kumjian and David Pask, "$\mathrm{C}^*$-algebras of directed graphs", *Proceedings of the American Mathematical Society* **125** (1997), 3461–3469, for the Cuntz–Krieger relations, the gauge action, the uniqueness theorems and simplicity.

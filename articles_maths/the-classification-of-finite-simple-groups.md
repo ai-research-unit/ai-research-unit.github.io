@@ -192,11 +192,6 @@ The Feit–Thompson odd order theorem — every finite group of odd order is sol
 | $M(S) = H_2(S,\mathbb{Z})$ | Schur multiplier |
 
 
-
-
-
-
-
 ## Further Reading
 
 - Daniel Gorenstein, *Finite Simple Groups: An Introduction to Their Classification* (Plenum, 1982), for the statement of the classification and the structure of the proof.

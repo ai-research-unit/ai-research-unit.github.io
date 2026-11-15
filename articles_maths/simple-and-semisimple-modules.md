@@ -289,7 +289,6 @@ The obstruction to semisimplicity is the Jacobson radical $J(A)$, the intersecti
 | $\operatorname{char} F$ | characteristic of the field $F$ |
 
 
-
 ## Further Reading
 
 - Frank W. Anderson and Kent R. Fuller, *Rings and Categories of Modules* (Springer, 2nd ed. 1992), for semisimple modules, the socle, and the Wedderburn–Artin theorem with the Jordan–Hölder theory.

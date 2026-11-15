@@ -308,7 +308,6 @@ Brouwer's fixed point theorem, that every continuous self-map of $D^{n+1}$ has a
 | $H_{\mathrm{red},i}(S^n\setminus K)$ | Alexander duality: $\cong H_{\mathrm{red}}^{n-i-1}(K)$ |
 
 
-
 ## Further Reading
 
 - L. E. J. Brouwer, *Über Abbildung von Mannigfaltigkeiten* (Mathematische Annalen 71, 1911), for the original fixed point theorem and the degree.

@@ -191,7 +191,6 @@ The Tits alternative states that a finitely generated subgroup of $\mathrm{GL}_n
 | $M_p$ | Tarski monster, every proper subgroup cyclic of order $p$ |
 
 
-
 ## Further Reading
 
 - Derek J. S. Robinson, *A Course in the Theory of Groups*, 2nd ed. (Springer, 1996), for finiteness conditions, the maximal condition and the structure of infinite groups.

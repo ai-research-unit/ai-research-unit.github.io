@@ -261,9 +261,6 @@ The constructions above are geometric: they use the valuation only through the n
 | $\mathrm{X}$, $\mathrm{X}_K$ | A formal $R$-model and its generic fibre (Raynaud) |
 
 
-
-
-
 ## Further Reading
 
 - John Tate, "Rigid analytic spaces", *Inventiones Mathematicae* **12** (1971), 257–289, for the original construction, the Tate algebra and the acyclicity theorem.

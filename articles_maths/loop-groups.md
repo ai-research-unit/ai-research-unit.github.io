@@ -194,9 +194,6 @@ The Iwahori subgroup $I$ of $\Lambda G$ gives the affine Bruhat decomposition $\
 | $H^s(S^1,\mathrm{G})$ | Sobolev completion (Part III) |
 
 
-
-
-
 ## Further Reading
 
 - Andrew Pressley and Graeme Segal, *Loop Groups* (Oxford University Press, 1986), for the systematic theory of the loop groups, the central extensions and the decompositions.

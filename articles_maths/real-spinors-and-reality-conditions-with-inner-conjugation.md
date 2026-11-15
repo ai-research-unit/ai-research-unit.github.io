@@ -144,7 +144,6 @@ Majorana spinors exist exactly when the type is real, Weyl spinors exactly when 
 | $\mathrm{Cl}_{4,0}\cong\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$ | Quaternionic four-dimensional cases |
 
 
-
 ## Further Reading
 
 - H. Blaine Lawson and Marie-Louise Michelsohn, *Spin Geometry* (Princeton University Press, 1989), for real spinors, reality structures and the relation between the signature and the type.

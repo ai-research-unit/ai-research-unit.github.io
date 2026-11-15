@@ -290,9 +290,6 @@ Pontryagin duality, stated here, asserts that evaluation $G \to G^{\vee\vee}$ is
 | $\mu$, $dx$ | Haar measure and its notation; the measure is constructed in *Locally Compact Groups and Haar Measure*, in Part III |
 
 
-
-
-
 ## Further Reading
 
 - Lev S. Pontryagin, *Topological Groups* (Gordon and Breach, 2nd ed. 1966), for the classical development of characters and the structure of locally compact abelian groups.

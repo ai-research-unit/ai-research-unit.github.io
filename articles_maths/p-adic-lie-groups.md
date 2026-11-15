@@ -181,9 +181,6 @@ Every compact $p$-adic Lie group embeds in some $GL_n(\mathbb{Z}_p)$ and contain
 | Iwasawa algebra $\mathbb{Z}_p[[G]]$ | Completed group algebra (Part III) |
 
 
-
-
-
 ## Further Reading
 
 - Michel Lazard, *Sur les groupes nilpotents et les anneaux de Lie*, Annales Scientifiques de l'École Normale Supérieure 71 (1954), 101–190, for the Hausdorff series and the correspondence between pro-$p$ groups and Lie algebras.

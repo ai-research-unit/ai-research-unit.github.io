@@ -199,9 +199,6 @@ Annihilators convert the closed subgroups of $G$ into the closed subgroups of $G
 | $b\mathbb{Q}$, $b\mathbb{R}$ | Bohr compactifications of the discrete groups $\mathbb{Q}$ and $\mathbb{R}$ |
 
 
-
-
-
 ## Further Reading
 
 - Lev S. Pontryagin, *Topological Groups* (Gordon and Breach, 2nd ed. 1966), for the original development of the duality theorem.

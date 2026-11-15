@@ -239,9 +239,6 @@ For a second countable unimodular group $G$ of type I the Plancherel theorem sta
 | $F_2$ | Free group on two generators; non-type-I failure |
 
 
-
-
-
 ## Further Reading
 
 - Jacques Dixmier, *$\mathrm{C}^*$-Algebras* (North-Holland, 1977), for the abstract Plancherel theorem and the decomposition of a representation of a type I algebra.

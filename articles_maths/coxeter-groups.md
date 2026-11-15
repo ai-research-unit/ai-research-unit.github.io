@@ -205,7 +205,6 @@ The finite irreducible Coxeter groups are classified by their diagrams: the fami
 | $D_\infty$ | Infinite dihedral group, type $A_{1}^{(1)}$ |
 
 
-
 ## Further Reading
 
 - James E. Humphreys, *Reflection Groups and Coxeter Groups* (Cambridge University Press, 1990), for the combinatorial theory, the classification and the reflection representation.

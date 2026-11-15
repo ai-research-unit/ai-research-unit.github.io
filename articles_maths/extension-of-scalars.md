@@ -162,7 +162,6 @@ The rank behaviour is the field case first: $S \otimes_R R^n \cong S^n$, so over
 | $\kappa$ | conjugate-linear involution of $V_{\mathbb{C}}$ |
 
 
-
 ## Further Reading
 
 - Nicolas Bourbaki, *Algebra I: Chapters 1–3* (Springer, 1998), for change of rings and the adjunction with restriction of scalars.

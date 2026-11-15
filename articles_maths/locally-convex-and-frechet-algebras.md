@@ -272,7 +272,6 @@ A **Fréchet algebra** is a complete metrisable locally convex algebra, with top
 | $K[[X_1,\dots,X_d]]$ | Formal power series with the adic topology |
 
 
-
 ## Further Reading
 
 - Richard Arens, "The space $L^\omega$ and convex topological rings", *Bulletin of the American Mathematical Society* **52** (1946), 931–935, for the algebra $L^\omega[0,1]$ and the first example of a locally convex algebra that is not locally m-convex.

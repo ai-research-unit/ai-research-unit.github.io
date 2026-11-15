@@ -261,7 +261,6 @@ The classical spaces are members of the scale: $F^{s}_{n,2}=H^{s}_{n}$ is the Be
 | $\psi_{j,\nu}$ | wavelet basis |
 
 
-
 ## Further Reading
 
 - Sergei M. Nikolskii, *Approximation of Functions of Several Variables and Imbedding Theorems* (Springer, 1975), for the difference definition of the Besov spaces and the embedding theory.

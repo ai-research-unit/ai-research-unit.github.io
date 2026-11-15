@@ -162,11 +162,6 @@ A harmonic function on an open set is a $C^2$ function annihilated by the Laplac
 | $Y_{k,j}$, $\Delta_{S^{n-1}}$ | Spherical harmonics and the Laplace–Beltrami operator |
 
 
-
-
-
-
-
 ## Further Reading
 
 - Naum S. Landkof, *Foundations of Modern Potential Theory* (Springer, 1972), for the classical theory of potentials, energies, capacity and the Wiener criterion.

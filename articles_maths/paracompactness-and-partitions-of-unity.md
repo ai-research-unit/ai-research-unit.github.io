@@ -254,9 +254,6 @@ A **partition of unity** subordinate to an open cover is a locally finite family
 | $d_s$, $\Omega_s$ | Local metrics and metrisable open sets in Smirnov's theorem |
 
 
-
-
-
 ## Further Reading
 
 - Jean Dieudonné, "Une généralisation des espaces compacts", *Journal de Mathématiques Pures et Appliquées* 23 (1944), 65–76, for the introduction of paracompactness and its relation to normality.

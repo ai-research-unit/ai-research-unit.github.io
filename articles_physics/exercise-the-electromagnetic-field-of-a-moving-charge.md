@@ -400,8 +400,8 @@ The exercise confirms the parent's field formulas on accelerated worldlines and 
 The further reading of this exercise is the parent and companion articles of this series, all present in `articles_physics/`; the standard textbook references for the Liénard–Wiechert field are listed in the Further Reading section of the parent article.
 
 - [Introduction to the Biquaternion Universe](introduction-to-the-biquaternion-universe.html) — the algebra, the two sectors, and the local complex structure.
-- [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) — the four-vectors, the biquaternion norm, and the zero-divisor cone on which the null retarded separation sits.
-- [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html) — the Hermitian subspace, the conjugation action, and the trace formula.
+- [Four-Vectors and the Interval](four-vectors-and-the-interval.html) — the four-vectors, the biquaternion norm, and the zero-divisor cone on which the null retarded separation sits.
+- [States, Observables and the Born Weight](states-observables-and-the-born-weight.html) — the Hermitian subspace, the conjugation action, and the trace formula.
 - [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html) — the gradient, the field strength, the potential and source, and the retarded solution.
 - [The Field-Strength Biquaternion and Its Invariants](the-field-strength-biquaternion-and-its-invariants.html) — the biquaternion norm, the invariants $I_1,I_2$, and the null/zero-divisor characterization of radiation.
 - [Radiation from Accelerated Charges in Biquaternionic Form](radiation-from-accelerated-charges-in-biquaternionic-form.html) — the direct parent: the Liénard–Wiechert potential, the field split, and the radiated power evaluated here.

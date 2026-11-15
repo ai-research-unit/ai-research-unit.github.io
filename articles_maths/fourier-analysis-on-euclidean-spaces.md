@@ -212,13 +212,6 @@ The Fourier transform $(\mathcal F f)(\zeta) = \int_{\mathbb{R}^n}f(x)\exp(-2\pi
 | $p$, $q$ | Conjugate exponents $1/n + 1/m=1$ |
 
 
-
-
-
-
-
-
-
 ## Further Reading
 
 - Norbert Wiener, *The Fourier Integral and Certain of its Applications* (Cambridge University Press, 1933), for the classical transform and the tauberian theory built on it.

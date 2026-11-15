@@ -210,7 +210,6 @@ The Peter–Weyl theorem states that for a compact group $K$ the representative-
 | $p_t(x) = \sum_\pi \exp(-\lambda_\pi t)d_\pi\chi_\pi(x)$ | Heat kernel on a compact Lie group |
 
 
-
 ## Further Reading
 
 - Gerald B. Folland, *A Course in Abstract Harmonic Analysis* (CRC Press, 2nd ed. 2015), for the Peter–Weyl theorem, its proof through compact operators, and the compact-group transform.

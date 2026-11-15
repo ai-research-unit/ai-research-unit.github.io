@@ -250,9 +250,6 @@ The **Toeplitz algebra** $\mathcal{T} = \mathrm{C}^*(S)$ consists of the operato
 | $\operatorname{wind}(p)$ | Winding number (degree) of a nowhere-vanishing symbol |
 
 
-
-
-
 ## Further Reading
 
 - Ronald G. Douglas, *Banach Algebra Techniques in Operator Theory* (Springer, second edition 1998), for Toeplitz operators, the Brown–Halmos theorem and the Toeplitz index theorem.

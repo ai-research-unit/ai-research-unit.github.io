@@ -364,9 +364,6 @@ The **orthogonal direct sum** $B_1 \perp B_2$ on $M_1 \oplus \mathsf{M}_2$ is no
 | $\Delta(B)$ | Discriminant $\det G \in F^\times/(F^\times)^2$ |
 
 
-
-
-
 ## Further Reading
 
 - Michael Artin, *Algebra* (Prentice Hall, 1991), for the elementary theory of bilinear forms and their matrices.

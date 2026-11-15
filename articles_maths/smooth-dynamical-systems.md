@@ -196,9 +196,6 @@ Structural stability in the **Whitney $C^1$ topology** means conjugacy with all 
 | $C^r$ topology | Whitney topology on fields and diffeomorphisms |
 
 
-
-
-
 ## Further Reading
 
 - Philip Hartman, "A lemma in the theory of structural stability of differential equations", *Proceedings of the American Mathematical Society* 11 (1960), 610–620, and David M. Grobman, "Homeomorphism of systems of differential equations", *Doklady Akademii Nauk SSSR* 128 (1959), 880–881, for the linearisation theorem at a hyperbolic equilibrium.

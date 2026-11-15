@@ -190,7 +190,6 @@ The Robba ring, the union over $r>0$ of the rings of Laurent series converging o
 | $M_n(S)$ | $n \times n$ matrices over $S$ |
 
 
-
 ## Further Reading
 
 - Bernard Dwork, *On the rationality of the zeta function of an algebraic variety* (American Journal of Mathematics 82, 1960), for Dwork's lemma and the analytic proof of rationality.

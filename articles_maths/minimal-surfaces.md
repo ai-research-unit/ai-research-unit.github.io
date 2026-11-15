@@ -214,7 +214,6 @@ Plateau's problem asks for a minimal disc spanning a Jordan curve and is solved 
 | Simons cone | The stable non-flat minimal cone in $\mathbb{R}^8$ |
 
 
-
 ## Further Reading
 
 - Jesse Douglas, "Solution of the Problem of Plateau", *Transactions of the American Mathematical Society* 33 (1931), for the existence theorem.

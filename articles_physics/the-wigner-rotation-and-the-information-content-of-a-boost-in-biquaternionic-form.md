@@ -114,7 +114,6 @@ $$
 
 a real scalar part that grows with $\tilde{Ξ}$ and a real bivector part. The scalar part is not one, so the factor is not a phase of unit modulus; calling it $\Rho e^{\vec U\Theta}$ with $\Rho=e_t$ names the scale of the axis and hides the growth in the scalar coordinate, which is $\cosh(\tilde{Ξ}/2)$.
 
-
 **The defect.** The product of two boosts is not the exponential of the sum of their exponents, and the first correction is a compact rotation. With $\tilde{H}_{\Psi,\eta}=\frac{\tilde{Ξ}_{k}}{2}i\vec u_\Phi$,
 
 $$
@@ -328,8 +327,8 @@ Because the boost parameter space is curved, a closed path of boosts that return
 ## Further Reading
 
 - E. P. Wigner, "On unitary representations of the inhomogeneous Lorentz group," *Annals of Mathematics* **40** (1939) 149–204, for the little group and the original Wigner rotation.
-- [The Exponential Word and Its Boundary](the-exponential-word-and-its-boundary.html), for the Hamilton angle, the two regimes and the BCH defect.
-- [The Polar Decomposition and Its Three Pairings](the-polar-decomposition-and-its-three-pairings.html), for the Cartan amplitude and the word.
+- [The Exponential and Its Three Pairings](the-exponential-and-its-three-pairings.html), for the Hamilton angle, the two regimes and the BCH defect.
+- [The Exponential and Its Three Pairings](the-exponential-and-its-three-pairings.html), for the Cartan amplitude and the word.
 - *The Root Pairing of the Polar Decomposition of Biquaternions*, for the Hamilton angle with a complex axis.
 - L. H. Thomas, "The motion of the spinning electron," *Nature* **117** (1926) 514, for the precession of the spin of an accelerated electron.
 - L. H. Thomas, "The kinematics of an electron with an axis," *Philosophical Magazine* **3** (1927) 1–22, for the detailed kinematical derivation.

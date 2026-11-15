@@ -223,11 +223,6 @@ The classical modular forms are the weight-and-level components of this picture,
 | $\pi \times \pi'$ | Rankin–Selberg convolution |
 
 
-
-
-
-
-
 ## Further Reading
 
 - Goro Shimura, *Introduction to the Arithmetic Theory of Automorphic Functions* (Princeton University Press, 1971), for the classical theory of modular forms and Hecke operators.

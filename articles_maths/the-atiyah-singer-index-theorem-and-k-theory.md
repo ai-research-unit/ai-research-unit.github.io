@@ -249,7 +249,6 @@ For a closed spin manifold with a twisted Clifford module bundle the index reduc
 | $\chi(X,E)=\int_X\operatorname{ch}(E)\operatorname{td}(TX)$ | Hirzebruch–Riemann–Roch |
 
 
-
 ## Further Reading
 
 - Michael F. Atiyah, *K-Theory* (Benjamin, 1967), for the Grothendieck group of vector bundles, Bott periodicity and the Chern character.

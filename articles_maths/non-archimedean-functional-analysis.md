@@ -185,7 +185,6 @@ Duality is governed by spherical completeness. The Hahn–Banach theorem holds f
 | $\mathbb{Q}_p$, $\mathbb{C}_p$ | Spherically complete; complete but not spherically complete |
 
 
-
 ## Further Reading
 
 - A. C. M. van Rooij, *Non-Archimedean Functional Analysis* (Marcel Dekker, 1978), for the systematic theory of normed spaces, orthogonal bases and spherical completeness.

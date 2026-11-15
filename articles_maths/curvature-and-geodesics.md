@@ -344,7 +344,6 @@ The complete simply connected manifolds of constant curvature are the round sphe
 | $\operatorname{Pf}(\mathcal{R}/2\pi)$ | Pfaffian form; its integral is the Euler characteristic |
 
 
-
 ## Further Reading
 
 - Manfredo P. do Carmo, *Riemannian Geometry* (Birkhäuser, 1992), for the Levi-Civita connection, geodesics, curvature and the Gauss–Bonnet theorem.

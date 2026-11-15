@@ -286,8 +286,8 @@ The similitude is exact on the coadjoint orbit for the linear Hamiltonians, and 
 ## Further Reading
 
 - [Introduction to the Biquaternion Universe](introduction-to-the-biquaternion-universe.html), for the algebra, the two sectors, and the rotor group $SL(2,\mathbb{C})$.
-- [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html), for the four-vectors, the biquaternion norm, and the rotor conjugation on $\mathbb{B}_{\Phi}$.
-- [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the Hermitian subspace and the conjugation action of its elements.
+- [Four-Vectors and the Interval](four-vectors-and-the-interval.html), for the four-vectors, the biquaternion norm, and the rotor conjugation on $\mathbb{B}_{\Phi}$.
+- [States, Observables and the Born Weight](states-observables-and-the-born-weight.html), for the Hermitian subspace and the conjugation action of its elements.
 - [Relativistic Mechanics in Biquaternionic Form](relativistic-mechanics-in-biquaternionic-form.html), for the four-velocity, four-momentum, and the action principle behind the free-particle Hamiltonian.
 - [The Lorentz Transformation as a Biquaternionic Rotation](the-lorentz-transformation-as-a-biquaternionic-rotation.html), for the boost rotor, the unit-norm condition, and the relation $\langle R\rangle_{\natural} = e_t$.
 - [The Poincaré Group and the Biquaternion Frame](the-poincare-group-and-the-biquaternion-frame.html), for the statement that translations are not rotations and that their generators are derivations, not inner derivations, of $\mathbb{B}$.

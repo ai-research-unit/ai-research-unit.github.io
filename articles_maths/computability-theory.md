@@ -236,9 +236,6 @@ A set is decidable if its characteristic function is computable and recursively 
 | $\mathbf{0}$ | Degree of the decidable sets |
 
 
-
-
-
 ## Further Reading
 
 - Alan M. Turing, "On computable numbers, with an application to the Entscheidungsproblem", *Proceedings of the London Mathematical Society* 42 (1936), for the machine model and the undecidability of the halting problem.

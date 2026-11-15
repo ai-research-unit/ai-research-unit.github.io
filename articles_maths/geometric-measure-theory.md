@@ -182,9 +182,6 @@ The Hausdorff $s$-measure of a set is the infimum over coverings by sets of diam
 | $(\chi_t)_\#$ | Push-forward of a current by a flow |
 
 
-
-
-
 ## Further Reading
 
 - Herbert Federer, *Geometric Measure Theory* (Springer, 1969), for the definitive account of Hausdorff measure, the area and coarea formulae, rectifiability, currents and the structure theory.

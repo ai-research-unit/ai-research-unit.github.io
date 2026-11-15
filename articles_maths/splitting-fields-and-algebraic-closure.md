@@ -304,9 +304,6 @@ An algebraic closure of $F$ is an algebraically closed algebraic extension; it e
 | $\varphi : F \to F'$ | Isomorphism of fields, extended to splitting fields and closures |
 
 
-
-
-
 ## Further Reading
 
 - Emil Artin, *Galois Theory* (Dover, 2nd ed. 1998), for normal extensions, the normal closure and the counting of embeddings.

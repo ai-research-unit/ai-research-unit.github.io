@@ -951,13 +951,9 @@ The normalised state of a momentum is the four-velocity over $c$, up to the fact
 
 ## Further Reading
 
-**The sector and its objects.** [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html) is the earlier reading of the same material, with the sector's blocks, the idempotents and the action on the material sector.
+**The geometry.** [The Fubini–Study Geometry and the Biquaternion Norm](the-fubini-study-geometry-and-the-biquaternion-norm.html) treats the metric, the Kähler form and the distances; the ball, the purity, the entropy and the fidelity are stated here.
 
-**The weight.** [The Born Rule from the Hermitian Form](the-born-rule-from-the-hermitian-form-derivation-and-comparison.html) derives the weight from the pairing and compares it with the Hilbert-space statement, and its §*General Measurements* is the source of the effect interval and the trine example.
-
-**The geometry.** [The Bloch Ball as the Normalised Slice of the Future Light Cone](the-bloch-ball-as-the-normalised-slice-of-the-future-light-cone.html) treats the ball, the purity, the entropy and the fidelity, and [The Fubini–Study Geometry and the Biquaternion Norm](the-fubini-study-geometry-and-the-biquaternion-norm.html) treats the metric, the Kähler form and the distances.
-
-**The flow.** [Unitarity from Centrality: The Biquaternion Norm-Preservation Theorem](unitarity-from-centrality-the-biquaternion-norm-preservation-theorem.html) proves the two normalisation theorems and the centrality of the unit.
+**The flow.** [The Unit Group, the Cone and the Orders](the-unit-group-the-cone-and-the-orders.html) proves the two normalisation theorems and the centrality of the unit.
 
 **The previous entry of the section.** [Four-Vectors and the Interval](four-vectors-and-the-interval.html) is the material sector read as spacetime, and its §*The Lorentz Action* is the action that the last section of this entry reads on the ball.
 

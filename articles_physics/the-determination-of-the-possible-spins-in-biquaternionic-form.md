@@ -241,7 +241,7 @@ The physical interpretation is the scalar, the spinor and the vector, and the ob
 ## Further Reading
 
 - [The Carriers, the Representation, the Spin and the Closure](../articles_maths/the-carriers-the-representation-the-spin-and-the-closure.html), for the definition, the completeness of the list, the two structures, the closure theorem and the four uses of the word spin.
-- [Spin and the Three Elementary Carriers](spin-and-the-three-elementary-carriers.html), for the carrier table, the particle assignments and the Hilbert-orthogonality of the two Peirce planes.
+- [The Carriers, the Spin and the Closure](the-carriers-the-spin-and-the-closure.html), for the carrier table, the particle assignments and the Hilbert-orthogonality of the two Peirce planes.
 - [Angular Momentum and Spin in Biquaternionic Form](angular-momentum-and-spin-in-biquaternionic-form.html), for the angular-momentum algebra, the spin operators and the Casimir.
 - [Integer Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form](integer-spin-quantization-and-the-adjoint-action-on-the-material-sector-in-biquaternionic-form.html), for the spin-one multiplet, its weight basis and the internal and orbital parts.
 - [The Relativistic Qubit in Biquaternionic Form](the-relativistic-qubit-in-biquaternionic-form.html), for the defining module, the Lorentz action and the celestial sphere.
@@ -251,4 +251,4 @@ The physical interpretation is the scalar, the spinor and the vector, and the ob
 - [The Spinor Module in Biquaternionic Form and Its Lorentz Action](the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html), for the module, the symplectic form and the Lorentz action.
 - [The Photon in Biquaternionic Form](the-photon-in-biquaternionic-form.html), for the helicity operator, the self-dual split and the gauge reduction to two polarizations.
 - [The Null Four-Momentum: What the Cone Derives and What It Does Not](the-null-four-momentum-what-the-cone-derives-and-what-it-does-not.html), for the mass shell as a norm level set, the $N=0$ cone, and the verdict that masslessness is an input.
-- [The Zero-Divisor Cone and the Massless Spectrum](the-zero-divisor-cone-and-the-massless-spectrum.html), for the massless spectrum carried by the cone.
+- [The Unit Group, the Cone and the Orders](the-unit-group-the-cone-and-the-orders.html), for the massless spectrum carried by the cone.

@@ -246,7 +246,6 @@ For an abelian $G$ the **dual action** $\hat\alpha$ of $\hat G$ fixes $i_A(A)$ a
 | $X\rtimes G$ | Transformation groupoid of an action on a space $X$ |
 
 
-
 ## Further Reading
 
 - Gert K. Pedersen, *$\mathrm{C}^*$-Algebras and Their Automorphism Groups* (Academic Press, 1979), for the construction of crossed products and their basic structure.

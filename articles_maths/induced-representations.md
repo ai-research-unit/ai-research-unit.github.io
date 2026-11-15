@@ -198,9 +198,6 @@ which for the trivial character gives the permutation character of $k[G/H]$. The
 | $\mathbf{1}_H$ | trivial module of $H$ |
 
 
-
-
-
 ## Further Reading
 
 - Georg Frobenius, "Über Relationen zwischen den Charakteren einer Gruppe und denen ihrer Untergruppen", *Sitzungsberichte der Königlich Preußischen Akademie der Wissenschaften zu Berlin* (1898), 501–515, for the reciprocity and the induced characters.

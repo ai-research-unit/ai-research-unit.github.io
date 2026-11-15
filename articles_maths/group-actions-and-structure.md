@@ -314,7 +314,6 @@ The Sylow theorems assert that a subgroup of order $p^k$ exists when $|G| = p^k 
 | $V_4$ | Klein four group $C_2 \times C_2$ |
 
 
-
 ## Further Reading
 
 - Joseph J. Rotman, *An Introduction to the Theory of Groups* (Springer, 4th ed. 1995), for group actions, the class equation and a detailed account of the Sylow theorems.

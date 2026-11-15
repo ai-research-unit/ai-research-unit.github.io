@@ -705,9 +705,6 @@ Clifford analysis is the function theory of the Cauchy–Riemann operator $D=\pa
 | $\dim_a\Gamma$ | Approximate dimension; the jump problem is solvable for $\alpha>\dim_a\Gamma/(m+1)$ |
 
 
-
-
-
 ## Further Reading
 
 - F. Brackx, R. Delanghe and F. Sommen, *Clifford Analysis* (Pitman, 1982), for the classical theory of monogenic functions and the Cauchy kernel.

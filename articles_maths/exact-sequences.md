@@ -284,9 +284,6 @@ A short exact sequence splits exactly when it has a section, equivalently a retr
 | $\mathbb{Z}/n\mathbb{Z}$ | integers modulo $n$ |
 
 
-
-
-
 ## Further Reading
 
 - M. F. Atiyah and I. G. Macdonald, *Introduction to Commutative Algebra* (Addison-Wesley, 1969), for exact sequences and the tensor–hom comparison in commutative algebra.

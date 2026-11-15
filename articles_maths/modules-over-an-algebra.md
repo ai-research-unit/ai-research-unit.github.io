@@ -290,9 +290,6 @@ The endomorphism ring $\operatorname{End}_A(M)$ is an $R$-algebra but not in gen
 | $M \cong N$ | isomorphism of modules |
 
 
-
-
-
 ## Further Reading
 
 - Frank W. Anderson and Kent R. Fuller, *Rings and Categories of Modules* (Springer, 2nd ed. 1992), for modules over a general ring, the regular module, the isomorphism theorems, and Morita equivalence.

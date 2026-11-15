@@ -247,11 +247,6 @@ Convergence of random variables has four modes — almost surely, in probability
 | independent | joint law is the product of the marginals |
 
 
-
-
-
-
-
 ## Further Reading
 
 - Patrick Billingsley, *Probability and Measure* (Wiley, 3rd edition, 1995), for the measure-theoretic foundations of probability from first principles.

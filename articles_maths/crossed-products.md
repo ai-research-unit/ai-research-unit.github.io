@@ -281,9 +281,6 @@ so the relative Brauer group is the second cohomology of the Galois group. The c
 | $\operatorname{N}_{L/F}$ | norm of a field extension |
 
 
-
-
-
 ## Further Reading
 
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for crossed products, factor sets and the Noether–Deuring theorem.

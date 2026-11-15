@@ -403,6 +403,6 @@ This article has treated the localised finite-energy solutions of the biquaterni
 - [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html) — the central $\mathrm{U}(1)$ and the local gauge structure.
 - [The Klein–Gordon Equation in Biquaternionic Form](the-klein-gordon-equation-in-biquaternionic-form.html) — the free scalar field that supplies no potential.
 - [Exercise: The Electromagnetic Energy–Momentum Tensor](exercise-the-electromagnetic-energy-momentum-tensor.html) — the rank-two limitation of a single biquaternion.
-- [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) — the sector in which the $\mathrm{SU}(2)$ factor and the Lorentzian star live.
-- [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html) — the complementary sector.
+- [Four-Vectors and the Interval](four-vectors-and-the-interval.html) — the sector in which the $\mathrm{SU}(2)$ factor and the Lorentzian star live.
+- [States, Observables and the Born Weight](states-observables-and-the-born-weight.html) — the complementary sector.
 - [Curved Spacetime and the Biquaternion Framework](curved-spacetime-and-the-biquaternion-framework.html) — the gravitational background that the topological charge is independent of.

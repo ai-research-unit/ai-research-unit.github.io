@@ -109,9 +109,6 @@ Let $G$ be a finite group and $R$ an integral domain with fraction field $K$. An
 | $G_0(R[G])$ | Grothendieck group of the lattices |
 
 
-
-
-
 ## Further Reading
 
 - Ralph H. Latimer and Cyrus C. MacDuffee, "A correspondence between classes of ideals and classes of matrices", *Annals of Mathematics* **34** (1933), 313–316, for the correspondence for the cyclic groups.

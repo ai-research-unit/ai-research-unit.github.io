@@ -192,7 +192,6 @@ The polynomial algebra $k[x]$ has $k$-basis the monomials $x^m$, is a commutativ
 | $\operatorname{Aut}_k(k[x])$ | Affine group of the line |
 
 
-
 ## Further Reading
 
 - Thomas W. Hungerford, *Algebra* (Springer, 1974), for the universal property, divisibility and the ideal theory of $k[x]$.

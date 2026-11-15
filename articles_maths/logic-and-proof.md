@@ -295,9 +295,6 @@ Proof is derivation by rules of inference: modus ponens and modus tollens, intro
 | $u(0)=a$, $u(n+1)=F(n,u(n))$ | Recursive definition of a function $u : \mathbb{N} \to A$ |
 
 
-
-
-
 ## Further Reading
 
 - Stephen Cole Kleene, *Introduction to Metamathematics* (Van Nostrand, 1952), for the classical presentation of propositional and predicate logic, truth tables and the rules of inference.

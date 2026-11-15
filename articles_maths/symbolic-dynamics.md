@@ -174,9 +174,6 @@ A **sliding block code** is a shift-commuting map given by a finite block rule, 
 | $\beta$ | parameter of the $\beta$-shift |
 
 
-
-
-
 ## Further Reading
 
 - Rufus Bowen and Oscar E. Lanford III, "Zeta functions of restrictions of the shift transformation", in *Global Analysis* (American Mathematical Society, 1970), 43–49, for the rationality of the zeta function of a shift of finite type.

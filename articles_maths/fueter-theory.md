@@ -253,9 +253,6 @@ The Fueter operator $\bar\partial=\partial/\partial Q_t+\vec e_x\partial/\partia
 | $\mathcal{C}$ | Cauchy transform |
 
 
-
-
-
 ## Further Reading
 
 - R. Fueter, "Die Funktionentheorie der Differentialgleichungen $\Delta u=0$ und $\Delta\Delta u=0$ mit vier reellen Variablen", *Commentarii Mathematici Helvetici* 7 (1935), 307–330, for the original definition of regularity and the construction from holomorphic functions.

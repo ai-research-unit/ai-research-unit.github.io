@@ -492,5 +492,5 @@ The three statements to carry away are these. The formulas $\tilde Q_H=(\tilde Q
 - [The Unitary Group of the Biquaternion Algebra](the-unitary-group-of-the-biquaternion-algebra.html), for the $*$-unitary factor off the cone.
 - *Exponential Polar Decomposition of Biquaternions*, for the boundary limits of the four-factor word at the cone.
 - [The Polar Decomposition of an Operator of the Form](the-polar-decomposition-of-an-operator-of-the-form.html), for the operator polar decomposition that this article is not.
-- [The Zero-Divisor Cone and the Massless Spectrum](../articles_physics/the-zero-divisor-cone-and-the-massless-spectrum.html) and [Roots, Idempotents and Observables](../articles_physics/roots-idempotents-and-observables.html), for the physical reading of the cone as the massless boundary, which the rank-one case of this article supplies.
+- [The Unit Group, the Cone and the Orders](../articles_physics/the-unit-group-the-cone-and-the-orders.html) and [Idempotents, Ideals and Observables](../articles_physics/idempotents-ideals-and-observables.html), for the physical reading of the cone as the massless boundary, which the rank-one case of this article supplies.
 - [Conventions in Mathematics](algebra-and-element-conventions.html), for the notation of the corpus.

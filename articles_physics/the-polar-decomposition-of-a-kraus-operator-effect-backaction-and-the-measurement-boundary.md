@@ -419,7 +419,7 @@ The channel-level statement is the correction that the polar programme makes to 
 
 - [The Polar Decomposition of a Biquaternion](../articles_maths/the-polar-decomposition-of-a-biquaternion.html), for the theorem, its uniqueness with the initial and final projections, and the rank-one case.
 - *The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions*, for the pairing off the null cone and the $*$-unitary factor.
-- [The Polar Decomposition and Its Three Pairings](the-polar-decomposition-and-its-three-pairings.html), for the four-factor word and the action of each factor on the two sectors.
+- [The Exponential and Its Three Pairings](the-exponential-and-its-three-pairings.html), for the four-factor word and the action of each factor on the two sectors.
 - [Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint](../articles_maths/positivity-and-the-hermitian-cone-of-the-biquaternion-algebra-with-hermitian-adjoint.html), for the positive cone and the Hermitian square root.
 - [Idempotents](../articles_maths/idempotents.html), for the rank-one idempotents and the Bloch sphere.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the null cone and its singular locus.
@@ -428,8 +428,8 @@ The channel-level statement is the correction that the polar programme makes to 
 - [The Measurement Problem in Algebraic Form](the-measurement-problem-in-algebraic-form.html), for the selection problem and the $*$-unitary-versus-idempotent acting element.
 - [Decoherence as Idempotent Projection](decoherence-as-idempotent-projection.html), for the dephasing channel and the pointer basis.
 - [Quantum Physics in Biquaternionic Form](quantum-physics-in-biquaternionic-form.html), for the state space and the measurement update.
-- [The Born Rule from the Hermitian Form — Derivation and Comparison](the-born-rule-from-the-hermitian-form-derivation-and-comparison.html), for the trace reading of the Born weight.
+- [States, Observables and the Born Weight](states-observables-and-the-born-weight.html), for the trace reading of the Born weight.
 - K. Kraus, *States, Effects, and Operations* (Springer, 1983), for the original formulation of completely positive maps and instruments.
-- [The General Polar Decomposition, the Amplitude and the Operator-to-State Map](the-general-polar-decomposition-the-amplitude-and-the-operator-to-state-map.html), for the input-free operator-to-state map and the purity table that the three outcome strata follow.
+- [The Exponential and Its Three Pairings](the-exponential-and-its-three-pairings.html), for the input-free operator-to-state map and the purity table that the three outcome strata follow.
 - M.-D. Choi, "Completely positive linear maps on complex matrices," *Linear Algebra and its Applications* **10** (1975) 285–290, for the Choi matrix and the minimal Kraus rank.
 - Michael A. Nielsen and Isaac L. Chuang, *Quantum Computation and Quantum Information* (Cambridge, 2000), for the Kraus representation, the polar decomposition of operators, and generalized measurements.

@@ -189,9 +189,6 @@ Over a finite field the zeta function of a curve is a rational function $P(T)/((
 | $H_q$ | Hermitian curve $y^q+y = x^{q+1}$ over $\mathbb{F}_{q^2}$ |
 
 
-
-
-
 ## Further Reading
 
 - William Fulton, *Algebraic Curves: An Introduction to Algebraic Geometry* (Benjamin, 1969), for the elementary treatment of plane curves, Bézout's theorem, divisors and Riemann–Roch.

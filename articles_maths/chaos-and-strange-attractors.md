@@ -168,7 +168,6 @@ The **Hausdorff dimension** $\dim_HA$ is the critical exponent of the Hausdorff 
 | $C$ | middle-third Cantor set |
 
 
-
 ## Further Reading
 
 - John Banks, Jeffrey Brooks, Grant Cairns, Gary Davis and Peter Stacey, "On Devaney's definition of chaos", *American Mathematical Monthly* 99 (1992), 332–334, for the theorem that transitivity and dense periodic points imply sensitivity.

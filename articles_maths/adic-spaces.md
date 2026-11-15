@@ -177,9 +177,6 @@ The **structure sheaf** assigns to a rational subset the completion of the local
 | $A \widehat{\otimes}_B C$ | Completed tensor product of Huber rings |
 
 
-
-
-
 ## Further Reading
 
 - Roland Huber, *Étale Cohomology of Rigid Analytic Varieties and Adic Spaces* (Vieweg, 1996), for the definition of adic spaces, the two topologies and the structure sheaf.

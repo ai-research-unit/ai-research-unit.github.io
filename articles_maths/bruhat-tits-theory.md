@@ -203,9 +203,6 @@ The stabilisers of the facets are the parahoric subgroups and those of the alcov
 | $\mathrm{CAT}(0)$ | Curvature condition of the Bruhat–Tits metric, a theorem of Bruhat and Tits |
 
 
-
-
-
 ## Further Reading
 
 - François Bruhat and Jacques Tits, *Groupes réductifs sur un corps local I*, Publications Mathématiques de l'IHÉS 41 (1972), 5–251, for the building, the apartments and the affine root data.

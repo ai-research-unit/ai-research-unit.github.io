@@ -183,6 +183,6 @@ An exceptional point is not a measurement. The eigenprojections disappear at the
 - [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html), for the exponential and the logarithm in the nilpotent regime.
 - *Exponential Polar Decomposition of Biquaternions*, for the boundary of the word and the two strata of the cone.
 - [Nilpotents](../articles_maths/nilpotents.html), for the nilpotents and their square-zero property.
-- [The Zero-Divisor Cone and the Massless Spectrum](the-zero-divisor-cone-and-the-massless-spectrum.html), for the nilpotent stratum read physically and its distinction from the photon.
+- [The Unit Group, the Cone and the Orders](the-unit-group-the-cone-and-the-orders.html), for the nilpotent stratum read physically and its distinction from the photon.
 - [Biorthogonal Quantum Mechanics and the Biquaternion Spectrum](biorthogonal-quantum-mechanics-and-the-biquaternion-spectrum.html), for the probability calculus of a non-normal element.
 - [The Unstable State and the Complex Energy Pole in Biquaternionic Form](the-unstable-state-and-the-complex-energy-pole-in-biquaternionic-form.html), for the resonance pole, which is not an exceptional point.

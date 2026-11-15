@@ -176,11 +176,6 @@ The nonvanishing $L(1,\chi)\neq0$ for nonprincipal $\chi$ is the analytic input 
 | $\omega_L = \prod_\rho L(s,\rho,L/K)^{\dim\rho}$ | Factorisation of the Dedekind zeta function |
 
 
-
-
-
-
-
 ## Further Reading
 
 - Harold Davenport, *Multiplicative Number Theory* (3rd ed., Springer, 2000), for the Dirichlet $L$-functions, the functional equation and Dirichlet's theorem.

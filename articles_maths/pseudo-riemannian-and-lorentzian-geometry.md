@@ -204,7 +204,6 @@ The sectional curvature is defined only on nondegenerate two-planes, so it no lo
 | Nash embedding | Every pseudo-Riemannian manifold embeds isometrically in a flat one |
 
 
-
 ## Further Reading
 
 - Barrett O'Neill, *Semi-Riemannian Geometry with Applications to Relativity* (Academic Press, 1983), for the complete theory of indefinite metrics, causal structure included.

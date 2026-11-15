@@ -328,9 +328,6 @@ The compact and split forms of the symplectic family meet in the unitary group: 
 | $\mathbb{C}, \mathbb{R}$ | Complex and real numbers |
 
 
-
-
-
 ## Further Reading
 
 - Jean Dieudonné, *La géométrie des groupes classiques* (Springer, 1971), for the classical groups over general rings, their isometry-theoretic definition, the transvections and the generation of the symplectic group.

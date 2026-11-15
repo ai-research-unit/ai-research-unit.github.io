@@ -283,7 +283,6 @@ Centrality is forced by the balanced relation. The left action of $A$ on $M\otim
 | $S=\mathbb{C}^2$ | defining module of $\mathbb{B}$ |
 
 
-
 ## Further Reading
 
 - Frank W. Anderson and Kent R. Fuller, *Rings and Categories of Modules* (Springer, 2nd ed. 1992), for the balanced product, the tensor–hom adjunction and the Eilenberg–Watts theorem.

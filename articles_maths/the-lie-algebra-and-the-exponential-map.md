@@ -312,9 +312,6 @@ The exponential map $\exp : \mathrm{G} \to G$ sends $v$ to the time-one value of
 | $\operatorname{Im}\mathbb{H}$ | Lie algebra of $S^3$, bracket $[u,v] = 2(u\times v)$ |
 
 
-
-
-
 ## Further Reading
 
 - John M. Lee, *Introduction to Smooth Manifolds* (Springer, 2nd ed. 2013), for flows, left-invariant vector fields, and the differential of the exponential.

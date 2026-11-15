@@ -50,7 +50,7 @@ $$
 \mathbb{B}=\mathbb{B}_{\Phi}\oplus\mathbb{B}_{\Psi},
 $$
 
-and the two parts are the material sector and the informational sector ([The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html), [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html)). The division is exhaustive and unique: an element has one of each, and nothing is left over.
+and the two parts are the material sector and the informational sector ([Four-Vectors and the Interval](four-vectors-and-the-interval.html), [States, Observables and the Born Weight](states-observables-and-the-born-weight.html)). The division is exhaustive and unique: an element has one of each, and nothing is left over.
 
 The sectors do the two jobs that physics needs done. The material sector carries the spacetime directions, the gradient, the four-velocity and the electric part of a field strength. The informational sector carries the observables, the magnetic part of the field strength, and the states, which are its positive elements of trace one and form the Bloch ball ([Coarse-Graining and the Biquaternion Entropy Functional](coarse-graining-and-the-biquaternion-entropy-functional.html)). An equation of motion is then one sector acting on the field by left multiplication, and the reading of the result is the other sector's business. That is the mechanism behind the two writings of the Schrödinger equation below.
 

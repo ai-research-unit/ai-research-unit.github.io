@@ -253,9 +253,6 @@ $U_q(\mathrm{G})$ is **quasitriangular**: the universal $\mathcal{R}$-matrix $\m
 | $H^2(A,A)$ | Hochschild cohomology classifying first-order deformations |
 
 
-
-
-
 ## Further Reading
 
 - Vladimir G. Drinfeld, "Quantum groups", *Proceedings of the International Congress of Mathematicians* (Berkeley, 1986), 798–820, for the definition, the $\mathcal{R}$-matrix and the Yang–Baxter equation.

@@ -308,11 +308,6 @@ The Mautner phenomenon propagates ergodicity along the relation $a^n u a^{-n} \t
 | $\eta_t$, $a_s$ | Horocycle and diagonal (geodesic) one-parameter subgroups of $SL_2(\mathbb{R})$ |
 
 
-
-
-
-
-
 ## Further Reading
 
 - Paul R. Halmos, *Lectures on Ergodic Theory* (Chelsea, 1956; reprinted AMS, 2006), for the classical von Neumann and Birkhoff theorems and the ergodicity of translations.

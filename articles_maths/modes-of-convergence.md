@@ -344,13 +344,6 @@ Finally, each mode is the hypothesis of an interchange theorem: the monotone, Fa
 | $L^{n}(\mu)$ | Lebesgue space |
 
 
-
-
-
-
-
-
-
 ## Further Reading
 
 - Walter Rudin, *Principles of Mathematical Analysis*, 3rd ed. (McGraw-Hill, 1976), for uniform convergence, Dini's theorem and the interchange of limit and derivative.

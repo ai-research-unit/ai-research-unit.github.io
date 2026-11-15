@@ -250,7 +250,6 @@ The ring of integers of $\mathbb{Q}(\omega_n)$ is $\mathbb{Z}[\omega_n]$, which 
 | $\omega_n + \omega_n^{-1}$ | Generator of the maximal real subfield |
 
 
-
 ## Further Reading
 
 - Carl Friedrich Gauss, *Disquisitiones Arithmeticae* (Fleischer, 1801), for the cyclotomic polynomial, the constructible polygons and the first proof of quadratic reciprocity through roots of unity.

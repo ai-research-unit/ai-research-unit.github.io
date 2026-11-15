@@ -170,7 +170,6 @@ A **distance space** is a set with a distance, its morphisms are the **isometrie
 | entropy bounds | Uniform bounds on the covering numbers; Gromov precompactness |
 
 
-
 ## Further Reading
 
 - Leonard M. Blumenthal, *Theory and Applications of Distance Geometry* (Clarendon Press, 1953), for the betweenness, the Cayley–Menger determinants and the embedding theorems of Menger.

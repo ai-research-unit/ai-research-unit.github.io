@@ -27,7 +27,7 @@
 | The basis operators as a basis, the coefficient matrix and the length | [$M_4(\mathbb{C})$ Axis-Free Representation : Operators](../articles_maths/m4c-axis-free-representation-operators.html) |
 | The chiral pair of the Dirac equation and its two-sided variant | [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html) |
 | The mass as a breaking: a right multiplication by an element that anticommutes with $u$, not a left multiplication | [What the Biquaternion Algebra Cannot Do](what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.html) |
-| The two statements kept apart: the mass shell belongs to the gradient equation, the chirality to the right multiplication | [The Roots of a General Element, Mass Frames and the Mass Shell](the-roots-of-a-general-element-mass-frames-and-the-mass-shell.html) |
+| The two statements kept apart: the mass shell belongs to the gradient equation, the chirality to the right multiplication | [The Spectrum and the Two Modes](the-spectrum-and-the-two-modes.html) |
 | The two forms of the equation on the algebra, and the statement that the pair needs no carrier beyond the algebra | [The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism](the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html) |
 
 ## Operator Chirality in One Page

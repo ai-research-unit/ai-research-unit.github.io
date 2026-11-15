@@ -252,9 +252,6 @@ A unital associative algebra $A$ is a **division algebra** exactly when every no
 | $M_n(k)$ | Matrix algebra, centre $k I_n$ |
 
 
-
-
-
 ## Further Reading
 
 - Nathan Jacobson, *Basic Algebra I* (Dover, 2nd ed. 2009), for the centre, units and zero divisors in associative algebras.

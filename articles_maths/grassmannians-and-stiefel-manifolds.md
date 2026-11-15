@@ -288,7 +288,6 @@ The Grassmannian embeds in the projective space of the $k$-th exterior power by 
 | $\mathrm{Gr}_k(\mathbb{K}^n)$ | Complex ($\mathbb{K}=\mathbb{C}$) and quaternionic ($\mathbb{K}=\mathbb{H}$) Grassmannians |
 
 
-
 ## Further Reading
 
 - John W. Milnor and James D. Stasheff, *Characteristic Classes* (Princeton University Press, 1974), for the Grassmannian as a classifying space and the universal bundles.

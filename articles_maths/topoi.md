@@ -123,11 +123,6 @@ The examples used here are the algebraic ones: the topos of sets, the presheaf t
 | $p^*\dashv p_*$ | the point $p:\mathbf{Set}\to\mathcal{E}$ |
 
 
-
-
-
-
-
 ## Further Reading
 
 - Michael Artin, Alexander Grothendieck and Jean-Louis Verdier, *Théorie des topos et cohomologie étale des schémas (SGA 4)* (Springer Lecture Notes in Mathematics 269, 270, 305, 1972–1973), for the original theory of sites and toposes.

@@ -360,7 +360,6 @@ A Riemannian metric is a smooth positive definite inner product on each tangent 
 | Partition of unity $\{\rho_\alpha\}$ | Smooth functions with locally finite supports summing to $1$ |
 
 
-
 ## Further Reading
 
 - John M. Lee, *Introduction to Smooth Manifolds*, 2nd ed. (Springer, 2013), for charts, tangent spaces, vector fields, submanifolds and partitions of unity in full.

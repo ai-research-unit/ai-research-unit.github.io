@@ -520,7 +520,7 @@ of signature $(1,3)$, with a real spectrum $\lambda\pm\lvert\vec v\rvert$ instea
 - [Biquaternion Rotations and Lorentz Transformations](../articles_maths/biquaternion-rotations-and-lorentz-transformations.html), for the rotor and the two-to-one cover.
 - [The Spin-Zero Carrier: The Centre](the-spin-zero-carrier-the-centre.html), for the first of the three carriers.
 - [The Spin-Half Carrier: The Bispinors](the-spin-half-carrier-the-bispinors.html), for the second of the three carriers.
-- [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html), for the sector as a representation space.
+- [Four-Vectors and the Interval](four-vectors-and-the-interval.html), for the sector as a representation space.
 - [Integer Spin Quantization and the Adjoint Action on the Material Sector](integer-spin-quantization-and-the-adjoint-action-on-the-material-sector-in-biquaternionic-form.html), for the weights as polarizations.
 - [The Carrier of the Proca Field](the-carrier-of-the-proca-field.html), for the two namings and the constraint.
 - [The Proca Equation: Massive Spin 1 in Biquaternionic Form](the-proca-equation-massive-spin-1-in-biquaternionic-form.html), for the field equation that uses the sector.
@@ -531,4 +531,4 @@ of signature $(1,3)$, with a real spectrum $\lambda\pm\lvert\vec v\rvert$ instea
 - [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the connection that takes values in the carrier.
 - [The Gauge Group Ceiling](the-gauge-group-ceiling-why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html), for the limit of that reading.
 - [The Region of Mass in Motion](the-region-of-mass-in-motion.html), for the region the carrier occupies.
-- [The Three Elementary Carriers and the Four Sectors of Regularity and Degeneracy](the-three-elementary-carriers-and-the-four-sectors-of-regularity-and-degeneracy.html), for the sector named as the third carrier.
+- [The Carriers, the Spin and the Closure](the-carriers-the-spin-and-the-closure.html), for the sector named as the third carrier.

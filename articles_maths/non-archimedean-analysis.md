@@ -254,9 +254,6 @@ The classical theorems that fail are the intermediate value theorem, whose hypot
 | $\sum_n a_n$ | Series, convergent iff $a_n \to 0$ |
 
 
-
-
-
 ## Further Reading
 
 - Wim H. Schikhof, *Ultrametric Calculus* (Cambridge University Press, 1984), for the calculus of continuous and differentiable functions over a non-Archimedean field and for the examples of this article.

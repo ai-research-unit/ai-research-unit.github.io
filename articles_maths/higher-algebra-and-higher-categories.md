@@ -178,9 +178,6 @@ The homotopy category of an $\infty$-category has homotopy classes of morphisms 
 | $\Delta$, $\Delta_n$ | Simplex category; standard $n$-simplex |
 
 
-
-
-
 ## Further Reading
 
 - Jacob Lurie, *Higher Topos Theory* (Princeton University Press, 2009), for quasi-categories, mapping spaces and limits and colimits.

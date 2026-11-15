@@ -242,9 +242,6 @@ A projective scheme is built from a graded ring by the same construction with ho
 | $\Omega^\bullet_{X/k}$ | algebraic de Rham complex; hypercohomology for smooth $X$ over a field |
 
 
-
-
-
 ## Further Reading
 
 - Robin Hartshorne, *Algebraic Geometry* (Springer, 1977), for the structure sheaf of a scheme, quasi-coherent and coherent sheaves, the cohomology of the twisting sheaves, and Serre duality.

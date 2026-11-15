@@ -282,9 +282,6 @@ A linear system $Ax=b$ is consistent exactly when $\operatorname{rk}A=\operatorn
 | $\mathbb{Z}/n\mathbb{Z}$ | integers modulo $n$ |
 
 
-
-
-
 ## Further Reading
 
 - Sheldon Axler, *Linear Algebra Done Right* (Springer, 3rd ed. 2015), for the determinant-free linear-map treatment and rank–nullity.

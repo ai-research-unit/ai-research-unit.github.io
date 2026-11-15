@@ -362,7 +362,6 @@ Throughout, no distance, norm or form enters. Every statement is a universal pro
 | $\bigoplus$, $\bigotimes$ | direct sum, tensor product of a family |
 
 
-
 ## Further Reading
 
 - Nicolas Bourbaki, *Algebra I: Chapters 1–3* (Springer, 1998), for multilinear maps, tensor products and the symmetric and exterior algebras.

@@ -148,9 +148,6 @@ The classical varieties of *Algebraic Geometry* are the reduced separated scheme
 | $\Omega^1_{X/k}$, $\mathrm{M}_x/\mathrm{M}_x^2$ | cotangent sheaf; cotangent space, dual to the tangent space |
 
 
-
-
-
 ## Further Reading
 
 - Alexander Grothendieck and Jean Dieudonné, *Éléments de géométrie algébrique I–IV* (Publications Mathématiques de l'IHÉS, 1960–1967), for the foundations of schemes, the glueing lemma, fibre products and the properties of morphisms.

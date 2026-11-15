@@ -289,9 +289,6 @@ Hilbert's theorem 90, in the multiplicative form $H^1(L/K,L^\times) = 0$ and the
 | $\widehat{\mathbb{Z}}$ | Inverse limit of the groups $\mathbb{Z}/n\mathbb{Z}$, the Galois group of a finite field |
 
 
-
-
-
 ## Further Reading
 
 - David Hilbert, "Die Theorie der algebraischen Zahlkörper", *Jahresbericht der Deutschen Mathematiker-Vereinigung* 4 (1897), 175–546, for the theorem now numbered 90 and its use in the arithmetic of cyclic extensions.

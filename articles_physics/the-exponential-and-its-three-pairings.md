@@ -615,14 +615,11 @@ The second row is the truncation, and it is the reason the degenerate sector has
 - [The Cartan Hermitian Pairing of the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion](../articles_maths/the-cartan-hermitian-pairing-of-the-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html), the scale-with-boost bracketing and its total domain.
 - [The One-Sided Operator Exponential of an N-Regular, Spectrally Regular Biquaternion](../articles_maths/the-one-sided-operator-exponential-of-an-n-regular-spectrally-regular-biquaternion.html), the representation identity and the half-angle.
 - [The Two-Sided Exponential of an N-Regular, Spectrally Regular Biquaternion](../articles_maths/the-two-sided-exponential-of-an-n-regular-spectrally-regular-biquaternion.html), the four products and the doubling rule.
-- [The Polar Decomposition and Its Three Pairings](the-polar-decomposition-and-its-three-pairings.html), the companion entry, for the physical dictionary of the three bracketings.
-- [The Hamilton Pairing: Mass as Modulus and the Complex Angle](the-hamilton-pairing-mass-as-modulus-and-the-complex-angle.html), the reading of the central modulus.
+- [The N Norm: Mass, Angle and the Cone](the-n-norm-mass-angle-and-the-cone.html), the reading of the central modulus.
 - [The N Norm: Mass, Angle and the Cone](the-n-norm-mass-angle-and-the-cone.html), the norm's own dictionary.
 - [The H Norm: Amplitude and Frame](the-h-norm-amplitude-and-frame.html), the amplitude as the measure that survives the largest group of motions.
-- [The General Polar Decomposition, the Amplitude and the Operator-to-State Map](the-general-polar-decomposition-the-amplitude-and-the-operator-to-state-map.html), the amplitude read as a state.
-- [The Exponential, the Logarithm and the Generator](the-exponential-the-logarithm-and-the-generator.html), which processes have a generator.
 - [Spin-Velocity Locking on the Degenerate Sector](spin-velocity-locking-on-the-degenerate-sector.html), the lock read for a fluid.
-- [The N-Regular, Spectrally Degenerate Sector: The Rest Frame and the Exceptional Point](the-n-regular-spectrally-degenerate-sector-the-rest-frame-and-the-exceptional-point.html), the two strata as two physical situations.
+- [The Rest Frame and the Exceptional Point](the-rest-frame-and-the-exceptional-point.html), the two strata as two physical situations.
 - [The Eigenspinor: The Lorentz Rotor as a Function of Proper Time](the-eigenspinor-the-lorentz-rotor-as-a-function-of-proper-time.html), the half-angle attached to a worldline.
 - [Similitudes Between Biquaternion Rotors and Hamiltonian Flow](similitudes-between-biquaternion-rotors-and-hamiltonian-flow.html), the rotor's conjugation read as a flow.
 - [The Coupled Dirac Equation in Biquaternionic Polar Variables](the-coupled-dirac-equation-in-biquaternionic-polar-variables.html), the two modes read as two polar variables.

@@ -1111,7 +1111,7 @@ Its eight unit matrices are real signed permutations, its stitch is $R_{\mathrm{
 - [Conventions of the Products and the Forms](product-and-form-conventions.html), for the products the matrix product mirrors.
 - [Operator and Calculus Conventions](operator-and-calculus-conventions.html), for the left and right multiplications these matrices represent.
 - [Frame and Metric Conventions](frame-and-metric-conventions.html), for the two coordinate frames, their metrics and their table.
-- [Element and Operator Representations: The Three Actions](element-and-operator-representations-the-three-actions.html), companion article, for the coefficient space and the three actions.
+- [The Operators of the Algebra](the-operators-of-the-algebra.html), companion article, for the coefficient space and the three actions.
 - [$M_4(\mathbb{C})$ Axis-Free Representation](../articles_maths/m4c-axis-free-representation.html) and [its Operators companion](../articles_maths/m4c-axis-free-representation-operators.html), for the matrices, the product, the trace, the determinant and the sixteen basis operators in the coefficient basis.
 - [$M_4(\mathbb{C})$ Pauli Representation](../articles_maths/m4c-pauli-representation.html) and [its Operators companion](../articles_maths/m4c-pauli-representation-operators.html), for the Peirce frame, the switch and the same objects in it.
 - [Operators Acting on Two Sides](../articles_maths/operators-acting-on-two-sides.html), for the sixteen basis operators, the frames of the normal form and the proof of the basis operator table.

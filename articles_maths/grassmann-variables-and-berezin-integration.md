@@ -276,7 +276,6 @@ The Gaussian integral over odd variables gives the Pfaffian, $\int \exp(\frac12\
 | $\Lambda^k(V) \times \Lambda^{n-k}(V) \to R$, $(f,g)\mapsto \int fg\,d\varkappa$ | Perfect top-degree pairing |
 
 
-
 ## Further Reading
 
 - F. A. Berezin, *The Method of Second Quantization* (Academic Press, 1966), for the original development of the Grassmann calculus and its integral.

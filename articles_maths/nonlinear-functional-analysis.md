@@ -291,11 +291,6 @@ For a functional that is not convex the global theory is variational. The direct
 | $\eta$ | deformation homeomorphism |
 
 
-
-
-
-
-
 ## Further Reading
 
 - Stefan Banach, "Sur les opérations dans les ensembles abstraits et leur application aux équations intégrales", *Fundamenta Mathematicae* 3 (1922), 133–181, for the contraction principle and the beginnings of nonlinear analysis in Banach spaces.

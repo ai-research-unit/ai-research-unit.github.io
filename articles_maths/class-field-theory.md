@@ -333,7 +333,6 @@ The case $\mathrm{M} = (1)$ gives the Hilbert class field $H_K$, the maximal abe
 | $\alpha_{L/K}$ | Fundamental class in $H^2(\operatorname{gal}(L/K),L^\times)$ |
 
 
-
 ## Further Reading
 
 - David Hilbert, "Über die Theorie der algebraischen Zahlkörper", *Jahresbericht der Deutschen Mathematiker-Vereinigung* 4 (1897), 175–546, for the reciprocity programme in the form of the Hilbert class field and the conjectures on which the subject was built.

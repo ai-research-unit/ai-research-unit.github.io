@@ -217,9 +217,6 @@ Consequences include Raghunathan's conjecture, the Oppenheim conjecture of Margu
 | $SO(Q)$ | Orthogonal group of a quadratic form; its orbit carries the Oppenheim argument |
 
 
-
-
-
 ## Further Reading
 
 - Marina Ratner, "On Raghunathan's measure conjecture", *Annals of Mathematics* 134 (1991), 545–607, for the measure classification theorem.

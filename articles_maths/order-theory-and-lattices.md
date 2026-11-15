@@ -313,9 +313,6 @@ A Galois connection between posets is a pair of monotone adjoint maps $f \dashv 
 | DCPO | Poset in which every directed subset has a supremum |
 
 
-
-
-
 ## Further Reading
 
 - Garrett Birkhoff, *Lattice Theory*, 3rd ed. (American Mathematical Society, 1967), for the classical development of lattices, modularity, distributivity and representation theorems.

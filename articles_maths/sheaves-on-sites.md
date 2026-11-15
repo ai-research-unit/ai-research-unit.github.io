@@ -137,7 +137,6 @@ The examples identify the theory with classical algebraic invariants in special 
 | $\Omega$ | subobject classifier |
 
 
-
 ## Further Reading
 
 - Michael Artin, Alexander Grothendieck and Jean-Louis Verdier, *Théorie des topos et cohomologie étale des schémas (SGA 4)* (Springer Lecture Notes in Mathematics 269, 270, 305, 1972–1973), for the cohomology of sites and the Čech-to-derived comparison.

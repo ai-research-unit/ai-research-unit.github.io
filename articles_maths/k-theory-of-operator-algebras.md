@@ -204,11 +204,6 @@ The computations are: $K_0(\mathbb{C}) = \mathbb{Z}$, $K_1(\mathbb{C}) = 0$; $K_
 | $K(H)$ | Compact operators, $K_0(K(H))\cong\mathbb{Z}$ |
 
 
-
-
-
-
-
 ## Further Reading
 
 - Bruce Blackadar, *K-Theory for Operator Algebras* (Springer, second edition, 1998), for the systematic theory of the $K$-groups of $\mathrm{C}^*$-algebras, the six-term sequence and the stable rank theory.

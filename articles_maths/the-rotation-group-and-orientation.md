@@ -302,9 +302,6 @@ Orientation has a coordinate-free form: an orientation is a choice of one of the
 | $\mathbb{R}, \mathbb{C}$ | Real and complex numbers |
 
 
-
-
-
 ## Further Reading
 
 - Jean Dieudonné, *La géométrie des groupes classiques* (Springer, 1971), for the orthogonal groups, their components and the reflection parity.

@@ -329,9 +329,6 @@ A graph is a set with a symmetric irreflexive relation, and a morphism is a map 
 | $\operatorname{Cay}(G,S)$ | Cayley graph of a group $G$; constructed in *Topology on Groups*, below |
 
 
-
-
-
 ## Further Reading
 
 - Béla Bollobás, *Modern Graph Theory* (Springer, 1998), for connectivity, trees, matchings, colourings and the growth of graphs.

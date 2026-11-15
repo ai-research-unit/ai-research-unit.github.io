@@ -321,9 +321,6 @@ In low dimensions the groups are completely explicit. On a line $\operatorname{O
 | $\mathbb{Z}/n\mathbb{Z}$ | Integers modulo $n$ |
 
 
-
-
-
 ## Further Reading
 
 - Jean Dieudonné, *La géométrie des groupes classiques* (Springer, 1971), for the Cartan–Dieudonné theorem and its degenerate and Hermitian analogues.

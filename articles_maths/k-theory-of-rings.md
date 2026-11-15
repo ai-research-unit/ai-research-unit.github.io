@@ -219,7 +219,6 @@ This article has treated the K-theory of a **discrete ring**, through finitely g
 | $M_n(R)$ | ring of $n\times n$ matrices over $R$ |
 
 
-
 ## Further Reading
 
 - Hyman Bass, *Algebraic K-Theory* (W. A. Benjamin, 1968), for $K_0$ and $K_1$, the Whitehead lemma and the localisation sequences.

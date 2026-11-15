@@ -223,13 +223,6 @@ Quasi-isometric rigidity holds for $\mathbb{Z}^n$, for the free groups of rank a
 | asymptotic cone | Blow-down limit of a metric space; constructed with Part III limits |
 
 
-
-
-
-
-
-
-
 ## Further Reading
 
 - John Milnor, *A note on curvature and the fundamental group*, Journal of Differential Geometry 2 (1968), 1–7, for the Švarc–Milnor lemma and the growth of groups.

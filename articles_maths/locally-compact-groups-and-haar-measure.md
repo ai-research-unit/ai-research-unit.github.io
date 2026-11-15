@@ -225,7 +225,6 @@ For a closed subgroup $H$ the homogeneous space $G/H$ carries a quasi-invariant 
 | $\Delta_G|_H = \Delta_H$ | Criterion for an invariant measure on $G/H$ |
 
 
-
 ## Further Reading
 
 - Leopoldo Nachbin, *The Haar Integral* (Van Nostrand, 1965; reprinted Krieger, 1976), for a direct construction of the Haar integral.

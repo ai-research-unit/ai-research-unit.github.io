@@ -226,11 +226,6 @@ A finitely generated group has infinitely many ends exactly when it splits nontr
 | Terminal splitting (Dunwoody) | Canonical decomposition over finite subgroups |
 
 
-
-
-
-
-
 ## Further Reading
 
 - Jean-Pierre Serre, *Trees* (Springer, 1980), for the original account of the theory of groups acting on trees.

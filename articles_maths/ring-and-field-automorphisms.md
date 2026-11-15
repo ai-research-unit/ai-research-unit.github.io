@@ -229,7 +229,6 @@ Anti-automorphisms reverse multiplication; complex conjugation is the standard i
 | $Z(A)$, $A^\times$ | Centre and unit group of an algebra $A$ |
 
 
-
 ## Further Reading
 
 - Paul M. Cohn, *Skew Fields: Theory of General Division Rings* (Cambridge University Press, 1995), for automorphisms and anti-automorphisms of division rings.

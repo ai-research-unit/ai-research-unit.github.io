@@ -165,13 +165,6 @@ Homotopy colimits and limits are the derived functors of colimit and limit; they
 | $R$ | Commutative ring with identity $1 \neq 0$ |
 
 
-
-
-
-
-
-
-
 ## Further Reading
 
 - Daniel G. Quillen, *Homotopical Algebra* (Springer Lecture Notes in Mathematics 43, 1967), for the original axioms and the homotopy category.

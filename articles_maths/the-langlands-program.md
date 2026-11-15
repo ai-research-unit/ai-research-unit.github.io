@@ -224,7 +224,6 @@ The functorial layer is the principle that an $L$-homomorphism ${}^L H \to {}^L 
 | geometric Langlands | equivalence of sheaf categories on the moduli of bundles |
 
 
-
 ## Further Reading
 
 - Robert P. Langlands, "Problems in the theory of automorphic forms", in *Lectures in Modern Analysis and Applications III* (Springer Lecture Notes 170, 1970), for the foundational conjectures including functoriality and reciprocity.

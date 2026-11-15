@@ -533,7 +533,7 @@ The two ideals are the two spinor chiralities: they are the eigenspaces of $-iR_
 - [The Spinor Module in Biquaternionic Form and Its Lorentz Action](the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html), for the module, the double cover and the one-sided action.
 - [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html), for the chiral pair in which the mass relates the two components.
 - [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html), for the value decomposition, the mass selection rule and the correction that chirality is not the sector split.
-- [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the state slice, the Bloch ball and the Born weight.
+- [States, Observables and the Born Weight](states-observables-and-the-born-weight.html), for the state slice, the Bloch ball and the Born weight.
 - [Chirality and the Weyl Spinors](exercise-chirality-and-the-weyl-spinors.html), for the two-component equations of the massless limit.
 - [The Celestial Sphere of the Null Cone — Null Directions, Chirality and the Phase](the-celestial-sphere-of-the-null-cone-null-directions-chirality-and-the-phase.html), for a massless element as a direction together with a phase.
 - [Two Spin-Half Particles in Biquaternionic Form](two-spin-half-particles-in-biquaternionic-form.html), for the composite system and the exchange operator.

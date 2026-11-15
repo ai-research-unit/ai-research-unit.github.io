@@ -245,11 +245,6 @@ Two rings are Morita equivalent when their module categories are equivalent; mat
 | $M_n(R)$ | ring of $n\times n$ matrices over $R$ |
 
 
-
-
-
-
-
 ## Further Reading
 
 - Michael Artin, *Algebra*, 2nd ed. (Pearson, 2011), for categories of modules and the language of universal properties.

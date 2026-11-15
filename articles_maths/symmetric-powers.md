@@ -309,7 +309,6 @@ It is unique up to a unique isomorphism, with $\operatorname{sym}^0 M = R$ and $
 | $\operatorname{sym}(M)$ | Symmetric algebra, $\bigoplus_{n\geq 0}\operatorname{sym}^n M$ |
 
 
-
 ## Further Reading
 
 - Nicolas Bourbaki, *Algebra I: Chapters 1–3* (Springer, 1989), for symmetric and alternating powers of modules.

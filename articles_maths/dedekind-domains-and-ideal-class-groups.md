@@ -278,9 +278,6 @@ The class group is the quotient of the group of nonzero fractional ideals by the
 | $d_K$, $M_K$ | Discriminant of $K$, Minkowski bound |
 
 
-
-
-
 ## Further Reading
 
 - Richard Dedekind, "Über die Theorie der ganzen algebraischen Zahlen", *Supplement XI to Vorlesungen über Zahlentheorie* (Vieweg, 1871), for the original theory of ideals and their unique factorisation in rings of integers.

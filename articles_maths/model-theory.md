@@ -270,7 +270,6 @@ Quantifier elimination reduces every formula to a quantifier-free one and makes 
 | $[f]$ | Equivalence class of $f$ modulo $U$ |
 
 
-
 ## Further Reading
 
 - Wilfrid Hodges, *Model Theory* (Cambridge University Press, 1993), for the systematic development of structures, elementary equivalence, quantifier elimination and ultraproducts.

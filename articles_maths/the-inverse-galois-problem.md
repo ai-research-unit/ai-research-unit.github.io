@@ -135,9 +135,6 @@ Over $\mathbb{C}(t)$ and over $\overline{\mathbb{Q}}(t)$ every finite group occu
 | PAC | Pseudo-algebraically-closed field |
 
 
-
-
-
 ## Further Reading
 
 - David Hilbert, "Über die Irreduzibilität ganzer rationaler Functionen mit ganzzahligen Coefficienten", *Journal für die reine und angewandte Mathematik* 110 (1892), 104–129, for the irreducibility theorem.

@@ -262,7 +262,6 @@ The structure of group algebras is the principal specialisation: over a field wh
 | $S=\mathbb{C}^2$ | irreducible representation of $\mathbb{B}\cong M_2(\mathbb{C})$ |
 
 
-
 ## Further Reading
 
 - Ibrahim Assem, Daniel Simson and Andrzej Skowroński, *Elements of the Representation Theory of Associative Algebras, Vol. 1* (Cambridge, 2006), for quivers, path algebras, admissible ideals, Gabriel's theorem and representation type.

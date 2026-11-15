@@ -286,5 +286,5 @@ The framework-specific feature is the boundary. The logarithm is an element of $
 - M. Takesaki, *Theory of Operator Algebras II* (Springer, 2003), for the Connes cocycle and the relative modular condition.
 - Companion article [The Hermitian GNS Construction in the Biquaternion Framework](the-hermitian-gns-construction-in-the-biquaternion-framework.html), for the states of $\mathbb{B}$, the Bloch ball, and the modular Hamiltonian.
 - Companion article [The Hermitian Tomita–Takesaki Theory under the Biquaternion Framework](the-hermitian-tomita-takesaki-theory-under-the-biquaternion-framework.html), for the modular operator $\mathcal{M}_{\mathrm{mod}}$ and the modular flow.
-- Companion article [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the state space, the trace formula, and the pure-state idempotents.
-- Companion article [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html), for the material sector and its zero-divisor cone.
+- Companion article [States, Observables and the Born Weight](states-observables-and-the-born-weight.html), for the state space, the trace formula, and the pure-state idempotents.
+- Companion article [Four-Vectors and the Interval](four-vectors-and-the-interval.html), for the material sector and its zero-divisor cone.

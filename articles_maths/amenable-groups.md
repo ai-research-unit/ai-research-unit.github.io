@@ -258,9 +258,6 @@ Amenability is a quasi-isometry invariant of finitely generated groups; an amena
 | $\mu(A)$, Haar measure | Used in the locally compact Følner condition (see *Locally Compact Groups and Haar Measure*) |
 
 
-
-
-
 ## Further Reading
 
 - John von Neumann, *Zur allgemeinen Theorie des Masses*, Fundamenta Mathematicae 13 (1929), 73–116, for the invariant mean and the non-amenability of the free group.

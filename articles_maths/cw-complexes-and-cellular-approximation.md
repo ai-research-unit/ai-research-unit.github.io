@@ -205,9 +205,6 @@ The cellular chain complex is free on the cells in each degree, with boundary gi
 | $\operatorname{rk}$ | Rank of a finitely generated abelian group |
 
 
-
-
-
 ## Further Reading
 
 - Allen Hatcher, *Algebraic Topology* (Cambridge University Press, 2002), for CW complexes, the homotopy extension property, cellular approximation and cellular homology.

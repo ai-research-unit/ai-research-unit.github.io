@@ -177,7 +177,6 @@ A convex subset of $\mathbb{R}^n$ has a convex hull every point of which is a co
 | $\langle\cdot,\cdot\rangle$, $\lvert\cdot\rvert$ | Euclidean inner product and norm on $\mathbb{R}^n$ |
 
 
-
 ## Further Reading
 
 - R. Tyrrell Rockafellar, *Convex Analysis* (Princeton University Press, 1970), for the standard source of the whole article: hulls, separation, continuity, subdifferentials, conjugates and duality.

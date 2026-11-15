@@ -220,7 +220,6 @@ The rate is governed by the zeros. The zero-free region of de la Vallée Poussin
 | $c$, $c'$ | Positive constants, not necessarily the same at each occurrence |
 
 
-
 ## Further Reading
 
 - Jacques Hadamard, *Sur la distribution des zéros de la fonction $\zeta(s)$ et ses conséquences arithmétiques* (Bulletin de la Société Mathématique de France 24, 1896), for the first proof of the prime number theorem.

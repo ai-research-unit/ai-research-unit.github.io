@@ -282,9 +282,6 @@ The cumulative hierarchy $V_\alpha$ is built by iterated power sets and unions; 
 | ZF, ZFC | Zermelo–Fraenkel axioms; with the axiom of choice |
 
 
-
-
-
 ## Further Reading
 
 - Kenneth Kunen, *Set Theory: An Introduction to Independence Proofs* (North-Holland, 1980), for the axioms, the ordinals, the cumulative hierarchy and forcing.

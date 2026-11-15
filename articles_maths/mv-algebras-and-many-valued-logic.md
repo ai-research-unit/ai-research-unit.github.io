@@ -290,9 +290,6 @@ Mundici's theorem identifies this variety with the category of lattice-ordered a
 | $\mathbf{2}$ | Two-element Boolean algebra, $\mathrm{L}_1$ |
 
 
-
-
-
 ## Further Reading
 
 - C. C. Chang, "A new proof of the completeness of the Łukasiewicz axioms", *Transactions of the American Mathematical Society* 93 (1959), for the completeness theorem and the algebraic axioms.

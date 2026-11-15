@@ -218,7 +218,6 @@ An **Azumaya algebra** is a central separable algebra over a commutative ring; o
 | $\mathbb{Z}[i] = \mathbb{Z}[x]/(x^2+1)$ | étale over $\mathbb{Z}[\tfrac12]$, not over $\mathbb{Z}$ |
 
 
-
 ## Further Reading
 
 - Frank DeMeyer and Edward Ingraham, *Separable Algebras over Commutative Rings* (Springer, 1971), for the Hattori–Villamayor theorem and separable algebras over a ring.

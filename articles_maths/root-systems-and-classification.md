@@ -294,7 +294,6 @@ Choosing a positive system gives the simple roots, a basis of $\mathrm{H}^*$ wit
 | $\mathrm{SL}(n+1), \mathrm{SO}(2n+1), \mathrm{Sp}(2n), \mathrm{SO}(2n)$ | Classical algebras of types $A_n, B_n, C_n, D_n$ |
 
 
-
 ## Further Reading
 
 - James E. Humphreys, *Introduction to Lie Algebras and Representation Theory* (Springer, 1972), for Cartan subalgebras, root systems, and the classification theorem.

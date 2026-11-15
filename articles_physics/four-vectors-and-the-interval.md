@@ -650,10 +650,6 @@ and the interpolation of the two imaginary eigenvalues returns $\frac12(e_t\mp i
 
 ## Further Reading
 
-**The dictionary and the interval.** [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) is the earlier reading of the sector, with the seven four-vectors and the mass shell.
-
-**The spectral reading.** [The Spectral Reading of a Four-Vector](the-spectral-reading-of-a-four-vector.html) treats the eigenpair and the two-term writing.
-
 **The indefinite form.** [The K Norm and the Indefinite Structure](the-k-norm-and-the-indefinite-structure.html) is the previous entry of the series, and its §*The Six Restrictions* is where the coincidence of the two null sets is proved.
 
 **The partition.** [The Partition: Two Invariants and Four Regimes](the-partition-two-invariants-and-four-regimes.html) places the momentum among the four sectors of the norm and the spectrum.

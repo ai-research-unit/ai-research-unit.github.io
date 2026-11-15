@@ -157,11 +157,6 @@ Applying the machinery, the moduli of curves of genus $g\geq2$ has a coarse modu
 | Artin's criteria | limit-preserving, locally of finite presentation, finite-dimensional deformations $\Rightarrow$ algebraic space |
 
 
-
-
-
-
-
 ## Further Reading
 
 - David Mumford, John Fogarty and Frances Kirwan, *Geometric Invariant Theory* (Springer, third edition, 1994), for the quotient theorems, the Hilbert–Mumford criterion and the construction of moduli spaces.

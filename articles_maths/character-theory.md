@@ -159,9 +159,6 @@ Let $G$ be a finite group and $k$ a field of characteristic zero containing the 
 | $\mathbf{1},\varepsilon,\sigma$ | trivial, sign and two-dimensional characters of $S_3$ |
 
 
-
-
-
 ## Further Reading
 
 - Georg Frobenius, "Über Gruppencharaktere", *Sitzungsberichte der Königlich Preußischen Akademie der Wissenschaften zu Berlin* (1896), 985–1021, for the origin of the characters and the orthogonality relations.

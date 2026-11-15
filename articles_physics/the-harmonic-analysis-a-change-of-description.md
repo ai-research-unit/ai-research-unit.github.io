@@ -462,15 +462,15 @@ so the conjugation is the identity on $C(R)$ and a rotation through the angle $4
 - [The Tomita Operator and the J-Modular Pair for the Biquaternion Algebra](../articles_maths/the-tomita-operator-and-the-j-modular-pair-for-the-biquaternion-algebra.html), the modular pair and its obstruction.
 - [Wave–Particle Duality and the Fourier Transform](wave-particle-duality-and-the-fourier-transform.html), the companion entry, for the transform as the switch between the two descriptions.
 - [The Derivative, the Field and the Transform](the-derivative-the-field-and-the-transform.html), the preceding entry, for the operator whose symbol this entry diagonalises.
-- [Derivatives, Fields and Transforms](derivatives-fields-and-transforms.html), the archived dictionary of the symbol and the wave-number transcription.
+- [The Derivative, the Field and the Transform](the-derivative-the-field-and-the-transform.html), the archived dictionary of the symbol and the wave-number transcription.
 - [Each Sector Is the Other's Clock: the Sector Exchange as Relational Time](each-sector-is-the-others-clock-the-sector-exchange-as-relational-time.html), the archived reading of the clock that the algebra supplies and the arrow it does not.
 - [The Three Wavenumbers of a Particle](the-three-wavenumbers-of-a-particle.html), the archived reading of the three rates.
-- [The Zero-Divisor Cone and the Massless Spectrum](the-zero-divisor-cone-and-the-massless-spectrum.html), the archived reading of the massless pole set.
-- [The Massless Limit as a Boundary Value of the Polar Word](the-massless-limit-as-a-boundary-value-of-the-polar-word.html), the archived reading of the pole at the vertex.
+- [The Unit Group, the Cone and the Orders](the-unit-group-the-cone-and-the-orders.html), the archived reading of the massless pole set.
+- [The Massless Regime](the-massless-regime.html), the archived reading of the pole at the vertex.
 - [The Rest Frame and the Exceptional Point](the-rest-frame-and-the-exceptional-point.html), the archived reading of the meeting of two poles.
-- [Unitarity from Centrality: The Biquaternion Norm-Preservation Theorem](unitarity-from-centrality-the-biquaternion-norm-preservation-theorem.html), the archived positive half of the isometry condition.
-- [The Born Rule from the Hermitian Form — Derivation and Comparison](the-born-rule-from-the-hermitian-form-derivation-and-comparison.html), the archived reading of the probability as a pairing and not a norm.
-- [The Probability Band: No Clock, Three Species and the Geometric Phase](the-probability-band-no-clock-three-species-and-the-geometric-phase.html), the archived reading of the three species of the probability product.
+- [The Unit Group, the Cone and the Orders](the-unit-group-the-cone-and-the-orders.html), the archived positive half of the isometry condition.
+- [States, Observables and the Born Weight](states-observables-and-the-born-weight.html), the archived reading of the probability as a pairing and not a norm.
+- [The Partition: Two Invariants and Four Regimes](the-partition-two-invariants-and-four-regimes.html), the archived reading of the three species of the probability product.
 - [Curved-Spacetime KMS and Modular Flow](curved-spacetime-kms-and-modular-flow.html), the archived thermal reading, which needs a state other than the unit's.
 - [The Bisognano–Wichmann Theorem under the Biquaternion Framework](the-bisognano-wichmann-theorem-under-the-biquaternion-framework.html), the archived identification of a modular flow with a boost.
 - [The Unruh Effect in Biquaternionic Form](the-unruh-effect-in-biquaternionic-form.html), the archived reading of that flow by an accelerated observer.

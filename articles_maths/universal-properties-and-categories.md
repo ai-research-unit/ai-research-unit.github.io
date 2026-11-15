@@ -286,9 +286,6 @@ A monad is a functor with a unit and a multiplication satisfying associativity a
 | $\otimes_R$ | Tensor product over $R$ (universal property stated here) |
 
 
-
-
-
 ## Further Reading
 
 - Saunders Mac Lane, *Categories for the Working Mathematician*, 2nd ed. (Springer, 1998), for the canonical treatment of categories, functors, limits, adjoints and monads.

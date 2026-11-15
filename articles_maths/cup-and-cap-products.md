@@ -247,9 +247,6 @@ The Eilenberg–Zilber chain equivalence relates the chains of a product to the 
 | $T^n = (S^1)^n$ | The $n$-torus |
 
 
-
-
-
 ## Further Reading
 
 - Allen Hatcher, *Algebraic Topology* (Cambridge University Press, 2002), for the cup and cap products, the Künneth formula and the cohomology rings of the classical examples.

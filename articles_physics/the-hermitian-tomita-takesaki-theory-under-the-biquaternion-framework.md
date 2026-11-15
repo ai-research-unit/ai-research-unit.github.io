@@ -326,11 +326,11 @@ Two honest limitations. The framework supplies $S$ and a family of faithful stat
 ## Further Reading
 
 - Companion article [The KMS Condition and the Biquaternion Framework](the-kms-condition-and-the-biquaternion-framework.html), for the KMS condition, the imaginary-time strip, and the modular Hamiltonian $H_{\mathrm{modular}}=-\log\rho$.
-- Companion article [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the Hermitian subspace, the trace formula, and states as elements of $\mathbb{B}_{\Psi}$.
+- Companion article [States, Observables and the Born Weight](states-observables-and-the-born-weight.html), for the Hermitian subspace, the trace formula, and states as elements of $\mathbb{B}_{\Psi}$.
 - Companion article [The Partition Function in Biquaternionic Form](the-partition-function-in-biquaternionic-form.html), for the Gibbs state and $H_{\mathrm{modular}}=\beta H+\log Z\,e_t$.
 - Companion article [Fock Space and Creation/Annihilation Operators in Biquaternionic Form](fock-space-and-creation-annihilation-operators-in-biquaternionic-form.html), for the single fermionic mode, $\tilde\Pi_-$, and the parity $(-1)^F$.
 - Companion article [Introduction to the Biquaternion Universe](introduction-to-the-biquaternion-universe.html), for the algebra and its two sectors.
-- Companion article [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html), for the material sector and the four-vectors.
+- Companion article [Four-Vectors and the Interval](four-vectors-and-the-interval.html), for the material sector and the four-vectors.
 - Companion article [Interpretation of the Wick Rotation in the Biquaternion Universe](interpretation-of-the-wick-rotation-in-the-biquaternion-universe.html), for the $i$-exchange between the sectors.
 - Companion article [Quantum Physics in Biquaternionic Form](quantum-physics-in-biquaternionic-form.html), for the operator algebra of the informational sector.
 - M. Takesaki, *Tomita's Theory of Modular Hilbert Algebras and Its Applications* (Springer, 1970), for the original development of the modular theory.

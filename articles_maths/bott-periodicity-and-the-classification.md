@@ -240,9 +240,6 @@ The even subalgebra satisfies $\mathrm{Cl}^0_{n,m}\cong\mathrm{Cl}_{n,m-1}\cong\
 | $\mathrm{Cl}_{8,0}\cong\mathrm{Cl}_{0,8}\cong M_{16}(F)$ | Bott periodicity algebra |
 
 
-
-
-
 ## Further Reading
 
 - Michael F. Atiyah, Raoul Bott and Arnold Shapiro, "Clifford modules," *Topology* **3** (1964), supplement 1, 3–38, for the original periodicity theorem and the eightfold classification of Clifford modules.

@@ -191,7 +191,6 @@ The table at the head of the article records the data for each algebra.
 | $\pi$ | Augmentation map $k[G] \to k$ |
 
 
-
 ## Further Reading
 
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the classification of finite-dimensional algebras and the examples.

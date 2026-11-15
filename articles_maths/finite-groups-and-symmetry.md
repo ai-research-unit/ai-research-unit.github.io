@@ -203,7 +203,6 @@ The groups of order $n \leq 16$ are counted by $1, 1, 1, 2, 1, 2, 1, 5, 2, 2, 1,
 | $\vec e_k$ | Generators of $Q_8$; $\vec e_k^2 = -e_t$, $\vec e_x \vec e_y = \vec e_z$ |
 
 
-
 ## Further Reading
 
 - Harold S. M. Coxeter and William O. J. Moser, *Generators and Relations for Discrete Groups* (Springer, 4th ed. 1980), for presentations of the cyclic and dihedral groups.

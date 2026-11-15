@@ -284,7 +284,6 @@ Commutative rings are the natural setting for:
 4. **The theory of modules.** Modules over commutative rings generalize vector spaces, and their classification is a central problem in commutative algebra.
 
 
-
 ---
 
 ## Summary

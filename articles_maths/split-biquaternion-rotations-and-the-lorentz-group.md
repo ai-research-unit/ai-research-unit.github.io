@@ -408,7 +408,6 @@ In $(\mathbb{B}_{\Phi},g)$ the level set $g = -1$ is a hyperboloid of two sheets
 | $\mathbb{H}\tilde\Pi_1$, $\mathbb{H}\tilde\Pi_2$ | The two ideals, the set of zero divisors |
 
 
-
 ## Further Reading
 
 - Robert Gilmore, *Lie Groups, Lie Algebras, and Some of Their Applications* (Wiley, 1974), for the isometry groups of quadratic forms and the classification of one-parameter subgroups of the Lorentz group.

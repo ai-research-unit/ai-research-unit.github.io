@@ -432,9 +432,6 @@ An Eilenberg–MacLane space $K(\pi,n)$ has homotopy concentrated in degree $n$;
 | $|x|$ | Degree of a homogeneous cohomology class |
 
 
-
-
-
 ## Further Reading
 
 - Norman Steenrod and David B. A. Epstein, *Cohomology Operations* (Princeton University Press, 1962), for the construction, the axioms and the Adem relations of the squares and powers.

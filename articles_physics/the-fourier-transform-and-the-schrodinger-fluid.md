@@ -10,7 +10,7 @@
 
 **Position in the block.** This is the Fourier companion of [The Schrödinger Fluid](the-schrodinger-fluid.html) and of [The Lagrangian of the Schrödinger Fluid](the-lagrangian-of-the-schrodinger-fluid.html). Its charged companion is [The Fourier Transform and the Charged Schrödinger Fluid](the-fourier-transform-and-the-charged-schrodinger-fluid.html). The four Fourier articles of the scalar rung are followed by the four of the spinor and vector rungs, and §*What the Transform Leaves, Rung by Rung* states what the four share.
 
-**What the article does not do.** It adds no solution and no equation. The transform is the one of [Derivatives, Fields and Transforms](derivatives-fields-and-transforms.html), the word and the pair are the polar parent's, and the only new object is the reading of $Q$ as a cross term.
+**What the article does not do.** It adds no solution and no equation. The transform is the one of [The Derivative, the Field and the Transform](the-derivative-the-field-and-the-transform.html), the word and the pair are the polar parent's, and the only new object is the reading of $Q$ as a cross term.
 
 ## Conventions
 
@@ -21,7 +21,7 @@ Q=-\frac{\hbar^{2}}{2m}\frac{\Delta r}{r}
 =-\frac{\hbar^{2}}{4m}\Bigl(\Delta\ln\rho_{\mathrm{num}}+\tfrac12\lvert\nabla\ln\rho_{\mathrm{num}}\rvert^{2}\Bigr).
 $$
 
-The transform is the transform of [Derivatives, Fields and Transforms](derivatives-fields-and-transforms.html), with the symbol rule of [The Fourier Transform and the Dirac Equation in Biquaternionic Polar Variables](the-fourier-transform-and-the-dirac-equation-in-biquaternionic-polar-variables.html):
+The transform is the transform of [The Derivative, the Field and the Transform](the-derivative-the-field-and-the-transform.html), with the symbol rule of [The Fourier Transform and the Dirac Equation in Biquaternionic Polar Variables](the-fourier-transform-and-the-dirac-equation-in-biquaternionic-polar-variables.html):
 
 $$
 \nabla\longmapsto i\vec k,

@@ -219,7 +219,6 @@ A stopping time is a stopping rule that uses only the information available at t
 | Galton–Watson | branching process martingale $Z_n/m^n$ |
 
 
-
 ## Further Reading
 
 - Joseph L. Doob, *Stochastic Processes* (Wiley, 1953), for the original systematic development of the martingale theory, the maximal inequalities and the convergence theorems.

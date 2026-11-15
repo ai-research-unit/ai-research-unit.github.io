@@ -296,7 +296,6 @@ The generator $r$ of the radical satisfies $r^2 = 0$, so the exterior algebra is
 | $\mathbb{R}$ | Real numbers |
 
 
-
 ## Further Reading
 
 - Max-Albert Knus, *Quadratic and Hermitian Forms over Rings*, Grundlehren der mathematischen Wissenschaften 294 (Springer, 1991), for the radical of a form and the Clifford algebra over a ring.

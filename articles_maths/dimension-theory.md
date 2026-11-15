@@ -176,9 +176,6 @@ The **Lebesgue covering lemma** gives a Lebesgue number to every open cover of a
 | $M$ | Topological $n$-manifold, with $\dim M = n$ |
 
 
-
-
-
 ## Further Reading
 
 - Ryszard Engelking, *Theory of Dimensions, Finite and Infinite* (Heldermann, 1995), for the covering and inductive dimensions, the sum and product theorems, and the infinite-dimensional theory.

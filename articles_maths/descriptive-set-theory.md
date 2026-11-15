@@ -151,7 +151,6 @@ A Polish space is a separable space whose topology comes from a complete metric;
 | PD | Projective determinacy |
 
 
-
 ## Further Reading
 
 - Mikhail Suslin, *Sur une définition des ensembles mesurables B sans nombres transfinis* (Comptes Rendus de l'Académie des Sciences 164, 1917), for the analytic sets and the theorem that Borel $=$ analytic $\cap$ coanalytic.

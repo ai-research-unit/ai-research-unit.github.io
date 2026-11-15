@@ -251,8 +251,8 @@ The speculations are labelled as such. One sector sourcing the other at cosmolog
 ## Further Reading
 
 - [Introduction to the Biquaternion Universe](introduction-to-the-biquaternion-universe.html) — the algebra, the two sectors, the local complex structure, and the sector-coupling open question this agenda inherits.
-- [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) — the material sector, the four-vectors, the bilinear form, and the interval.
-- [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html) — the informational sector, the trace formula, the no-dynamics and no-coupling statements, and the entropy open question.
+- [Four-Vectors and the Interval](four-vectors-and-the-interval.html) — the material sector, the four-vectors, the bilinear form, and the interval.
+- [States, Observables and the Born Weight](states-observables-and-the-born-weight.html) — the informational sector, the trace formula, the no-dynamics and no-coupling statements, and the entropy open question.
 - [Curved Spacetime and the Biquaternion Framework](curved-spacetime-and-the-biquaternion-framework.html) — the frame route, the local-scale route and its metric class, the two-sided covariant derivative, and the informational trace's missing measure; the parent of this agenda.
 - [The Einstein Field Equations under the Biquaternion Framework — A Research Agenda](the-einstein-field-equations-under-the-biquaternion-framework-a-research-agenda.html) — the dynamics, the central non-linear question, and the settling object; the Friedmann equations belong to this agenda's central item and are not duplicated here.
 - [The Partition Function in Biquaternionic Form](the-partition-function-in-biquaternionic-form.html) — the framework's thermodynamics, the qubit partition function, and the boundary this agenda finds the cosmological case against.

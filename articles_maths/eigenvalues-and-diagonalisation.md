@@ -258,7 +258,6 @@ When diagonalisation fails one uses invariant subspaces: a generalised eigenspac
 | $\mathbb{R}$, $\mathbb{C}$ | real and complex numbers; splitting fields for real matrices |
 
 
-
 ## Further Reading
 
 - Sheldon Axler, *Linear Algebra Done Right* (Springer, 3rd ed. 2015), for the determinant-free treatment of eigenvalues and diagonalisation.

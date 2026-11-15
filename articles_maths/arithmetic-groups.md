@@ -203,11 +203,6 @@ The converse direction is the theorem of Margulis: a lattice in a connected semi
 | superrigidity | Homomorphisms of a higher-rank lattice extend to the ambient group |
 
 
-
-
-
-
-
 ## Further Reading
 
 - Armand Borel, *Introduction aux groupes arithmétiques* (Hermann, 1969), for the general theory of arithmetic groups and reduction theory.

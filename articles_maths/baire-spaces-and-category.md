@@ -212,7 +212,6 @@ Baireness is local: a space is Baire exactly when it is covered by open Baire su
 | $\{0,1\}^{I}$ | Compact Hausdorff non-metrisable Baire space |
 
 
-
 ## Further Reading
 
 - John C. Oxtoby, *Measure and Category* (Springer, 2nd ed. 1980), for the calculus of meagre sets, the Baire category theorem and the Banach–Mazur game. The measure-theoretic chapters are the subject of Part III.

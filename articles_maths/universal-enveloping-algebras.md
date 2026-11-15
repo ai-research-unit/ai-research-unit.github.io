@@ -221,9 +221,6 @@ Let $\mathrm{G}$ be a Lie algebra over a commutative ring $R$. The **universal e
 | $\mathrm{ad}_x(y) = [x,y]$ | adjoint map |
 
 
-
-
-
 ## Further Reading
 
 - Nicolas Bourbaki, *Lie Groups and Lie Algebras, Chapters 1–3* (Springer, 1989), for the enveloping algebra, the universal property and the Poincaré–Birkhoff–Witt theorem.

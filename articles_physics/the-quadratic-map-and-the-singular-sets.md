@@ -372,7 +372,7 @@ The biquaternion quadratic map is a discrete rule on the algebra and not a flow:
 - [The Hausdorff Dimension of the Biquaternion Julia Sets](../articles_maths/the-hausdorff-dimension-of-the-biquaternion-julia-sets.html), for the dimensions and the bound $4+2\alpha$.
 - [The Matrix Element Representation and the Biquaternion Dynamics](../articles_maths/the-matrix-element-representation-and-the-biquaternion-dynamics.html), for the entries of the square.
 - [The Light Cone as the Biquaternion Zero-Divisor Cone](../articles_physics/the-light-cone-as-the-biquaternion-zero-divisor-cone.html), for the identification of the cone with the light cone.
-- [The Bloch Ball as the Normalised Slice of the Future Light Cone](../articles_physics/the-bloch-ball-as-the-normalised-slice-of-the-future-light-cone.html), for the state space as a slice of the cone.
+- [States, Observables and the Born Weight](../articles_physics/states-observables-and-the-born-weight.html), for the state space as a slice of the cone.
 - [Decoherence as Idempotent Projection](../articles_physics/decoherence-as-idempotent-projection.html), for the identification of the pure states with the idempotents.
 - [Exceptional Points and the Nilpotent Regime in the Biquaternion Spectrum](../articles_physics/exceptional-points-and-the-nilpotent-regime-in-the-biquaternion-spectrum.html), for the exceptional degeneracy of the nilpotents.
 - [Each Sector Is the Other's Clock: the Sector Exchange as Relational Time](../articles_physics/each-sector-is-the-others-clock-the-sector-exchange-as-relational-time.html), for the quarter turn of the central imaginary, which is a different clock.

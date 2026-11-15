@@ -245,7 +245,6 @@ The alternating forms of degree $n$ are the linear functionals on $\Lambda^n M$,
 | $\operatorname{Pf}(\Omega)$ | Pfaffian of an alternating matrix of even size; $\det(\Omega) = \operatorname{Pf}(\Omega)^2$ |
 
 
-
 ## Further Reading
 
 - Nicolas Bourbaki, *Algebra I: Chapters 1–3* (Springer, 1998), for the determinant as the action on the top exterior power and the Cauchy–Binet formula.

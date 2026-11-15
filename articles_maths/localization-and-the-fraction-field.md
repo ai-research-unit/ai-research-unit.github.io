@@ -331,7 +331,6 @@ The ideals of $S^{-1}R$ are in bijection with the saturated ideals of $R$, those
 | $\bar{S}$ | Saturation of $S$ |
 
 
-
 ## Further Reading
 
 - Michael Atiyah and Ian Macdonald, *Introduction to Commutative Algebra* (Addison-Wesley, 1969), for localization, the ideal correspondence and local rings in the standard form.

@@ -331,7 +331,6 @@ The homogeneous polynomials organise under ellipticity through the **Fischer lem
 | $\pi_{1,2} = \tfrac12(1 \pm j)$, $\zeta_\pm = x_t \pm x_1$ | Idempotents and characteristic coordinates of $\mathbb{C}_{\mathrm{spl}}$ |
 
 
-
 ## Further Reading
 
 - F. Brackx, R. Delanghe and F. Sommen, *Clifford Analysis* (Pitman, 1982), for the elliptic theory of the Cauchy–Riemann operator.

@@ -241,7 +241,6 @@ The hypothesis is equivalent to the error term $O(x^{1/2}\log^2x)$ in $\psi(x)-x
 | $L(s)$, $Q$, $\kappa_j$, $\epsilon$ | General $L$-function, conductor, spectral parameters, root number |
 
 
-
 ## Further Reading
 
 - Bernhard Riemann, *Über die Anzahl der Primzahlen unter einer gegebenen Größe* (Monatsberichte der Berliner Akademie, 1859), for the original statement, the product for $Ζ$ and the explicit formula.

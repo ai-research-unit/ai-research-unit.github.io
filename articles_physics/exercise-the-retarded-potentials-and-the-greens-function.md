@@ -341,8 +341,8 @@ with all sources at the retarded time $r'_t - R$; the retarded solution is autom
 The further reading of this exercise is the parent and companion articles of this series, all present in `articles_physics/`; the standard textbook references for Green's functions, the retarded potentials, and the boundary conditions are listed in the Further Reading sections of those articles.
 
 - [Introduction to the Biquaternion Universe](introduction-to-the-biquaternion-universe.html) — the algebra, the two sectors, and the local complex structure.
-- [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) — the four-vectors, including the four-potential and four-current, and the light cone as the zero-divisor cone.
-- [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html) — the Hermitian subspace and the trace formula.
+- [Four-Vectors and the Interval](four-vectors-and-the-interval.html) — the four-vectors, including the four-potential and four-current, and the light cone as the zero-divisor cone.
+- [States, Observables and the Born Weight](states-observables-and-the-born-weight.html) — the Hermitian subspace and the trace formula.
 - [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html) — the direct parent: the potential equation and the normalisation of the four-current.
 - [The Field-Strength Biquaternion and Its Invariants](the-field-strength-biquaternion-and-its-invariants.html) — the field strength built from the potential by differentiation, and its biquaternion norm.
 - [The Lorentz Transformation as a Biquaternionic Rotation](the-lorentz-transformation-as-a-biquaternionic-rotation.html) — the covariance of the four-potential, inherited here unchanged.

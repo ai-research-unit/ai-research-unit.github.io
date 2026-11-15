@@ -228,11 +228,6 @@ The flag manifold embeds in a product of Grassmannians by the sequence of subspa
 | Incidence relations | $V_i \subset V_{i+1}$; cut out the image in the product of Grassmannians |
 
 
-
-
-
-
-
 ## Further Reading
 
 - Michel Demazure, "Désingularisation des variétés de Schubert généralisées", *Annales scientifiques de l'École Normale Supérieure* 7 (1974), 53–88, for the Schubert varieties and the Demazure resolution.

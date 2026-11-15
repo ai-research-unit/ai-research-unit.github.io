@@ -284,9 +284,9 @@ The polarizer is the boundary case. It is a rank-one element, hence a zero divis
 ## Further Reading
 
 - [Pancharatnam's Phase and the Polarization Sphere in Biquaternionic Form](pancharatnams-phase-and-the-polarization-sphere-in-biquaternionic-form.html), for the Jones vector, the Stokes parameters and the coherency biquaternion.
-- [The Polar Decomposition and Its Three Pairings](the-polar-decomposition-and-its-three-pairings.html), for the Cartan pairing in the corpus's notation and its comparison with the quaternion and Hamilton pairings.
-- [The General Polar Decomposition, the Amplitude and the Operator-to-State Map](the-general-polar-decomposition-the-amplitude-and-the-operator-to-state-map.html), for the state that an operator defines and its purity stratigraphy.
-- [The Pauli Correspondence and the Matrix Image](the-pauli-correspondence-and-the-matrix-image.html), for the singular values of the amplitude and the determinant as a volume.
+- [The Exponential and Its Three Pairings](the-exponential-and-its-three-pairings.html), for the Cartan pairing in the corpus's notation and its comparison with the quaternion and Hamilton pairings.
+- [The Exponential and Its Three Pairings](the-exponential-and-its-three-pairings.html), for the state that an operator defines and its purity stratigraphy.
+- [The Matrix Images: One Element, Two Pictures](the-matrix-images-one-element-two-pictures.html), for the singular values of the amplitude and the determinant as a volume.
 - *The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions*, for the theorem and its uniqueness.
 - [The Polar Decomposition of an N-Degenerate Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-degenerate-biquaternion.html), for the extension to the cone and the polarizer.
 - [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html), for the spectral decomposition of the factors.

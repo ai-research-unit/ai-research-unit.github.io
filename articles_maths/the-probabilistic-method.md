@@ -214,9 +214,6 @@ The method is completed by the concentration inequalities — Chernoff, Hoeffdin
 | Paley graph | graph on $\mathbb{F}_q$ joining square differences |
 
 
-
-
-
 ## Further Reading
 
 - Paul Erdős and Joel Spencer, *Probabilistic Methods in Combinatorics* (Academic Press, 1974), for the original systematic account of the method.

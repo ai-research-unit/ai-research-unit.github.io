@@ -200,7 +200,6 @@ A $\mathbb{Z}/2$-graded **Hilbert $B$-module** $E = E^0\oplus E^1$ with grading 
 | $SA$, $\Sigma A$, $K$ | Suspension; graded suspension; compact operators |
 
 
-
 ## Further Reading
 
 - Gennadi Kasparov, "The operator $K$-functor and extensions of $\mathrm{C}^*$-algebras", *Mathematics of the USSR-Izvestiya* **16** (1981), 513–572, for the definition of $KK$, the Kasparov product and Bott periodicity.

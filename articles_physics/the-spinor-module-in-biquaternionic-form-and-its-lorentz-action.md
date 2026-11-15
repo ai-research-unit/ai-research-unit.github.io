@@ -4,7 +4,7 @@
 
 The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is simple, and it has one simple module. The Lorentz group acts on that module by multiplication on one side. Those two facts are the subject of this article.
 
-Two actions are compared throughout. The article [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) reads the four-vector as an element of the anti-Hermitian sector $\mathbb{B}_{\Phi}$ and the Lorentz group as acting on it by the **Hermitian pair**,
+Two actions are compared throughout. The article [Four-Vectors and the Interval](four-vectors-and-the-interval.html) reads the four-vector as an element of the anti-Hermitian sector $\mathbb{B}_{\Phi}$ and the Lorentz group as acting on it by the **Hermitian pair**,
 
 $$
 \tilde Q\;\longmapsto\;\tilde U_{\mathrm{lor}}\,\tilde Q\,\tilde U_{\mathrm{lor}}{}^{*}.
@@ -294,7 +294,7 @@ The one-sided action is not a device of this article. It is the multiplication o
 
 ## Open Questions
 
-1. **The informational sector.** The companion article [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html) identifies $\mathbb{B}_{\Psi}$ with the Hermitian observables of a two-state system. The module constructed here is the carrier on which those observables act, but the identification of a **state** with an element of the module is not made in this article. A pure state is an element of the form $\tilde X\tilde X^{*}$ up to a positive factor, and the field $\tilde X$ is a square root of it, defined up to a phase. Whether the phase is physical, and whether the informational sector requires the double cover or only its image in $SO^{+}(1,3)$, is left open.
+1. **The informational sector.** The companion article [States, Observables and the Born Weight](states-observables-and-the-born-weight.html) identifies $\mathbb{B}_{\Psi}$ with the Hermitian observables of a two-state system. The module constructed here is the carrier on which those observables act, but the identification of a **state** with an element of the module is not made in this article. A pure state is an element of the form $\tilde X\tilde X^{*}$ up to a positive factor, and the field $\tilde X$ is a square root of it, defined up to a phase. Whether the phase is physical, and whether the informational sector requires the double cover or only its image in $SO^{+}(1,3)$, is left open.
 
 2. **The covariance of the biquaternion Dirac equation.** The companion article [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html) carries two equations, and they are not the same operator. The corpus's own equation is the **one-sided chiral pair**
 
@@ -406,8 +406,8 @@ What the article does **not** supply is a dynamics. It supplies the carrier, the
 
 **Companion articles.**
 
-- [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) — the two-sided action on $\mathbb{B}_{\Phi}$ and the identification of the four-vector.
-- [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html) — the Hermitian observables and the two-state system.
+- [Four-Vectors and the Interval](four-vectors-and-the-interval.html) — the two-sided action on $\mathbb{B}_{\Phi}$ and the identification of the four-vector.
+- [States, Observables and the Born Weight](states-observables-and-the-born-weight.html) — the Hermitian observables and the two-state system.
 - [The Lorentz Group in Biquaternionic Form — Structure and Representations](the-lorentz-group-in-biquaternionic-form-structure-and-representations.html) — the classification $(\tfrac12,0)$ and $(0,\tfrac12)$ used here.
 - [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html) — the one-sided chiral pair and its two-sided Kravchenko form.
 - [The Unpolarized Module of the Biquaternion Algebra](../articles_maths/the-unpolarized-module-of-the-biquaternion-algebra.html) — the central sign of the complexification and the two halves.

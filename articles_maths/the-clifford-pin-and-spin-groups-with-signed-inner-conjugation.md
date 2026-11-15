@@ -197,7 +197,6 @@ exhibit the double covers over $\mathbb{R}$, and over any field satisfying the t
 | $\mathrm{rad}(m)$ | Radical of $m$ |
 
 
-
 ## Further Reading
 
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed. 2001), for the Clifford group, the Pin and Spin groups and the low-dimensional identifications.

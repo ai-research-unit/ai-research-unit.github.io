@@ -235,7 +235,6 @@ That is the action a gauge transformation performs on a spinor. The spinor is th
 
 The count is the one of the indefinite theory. Seven of sixteen there, seven of sixteen here, and in both cases the algebra's elements are the smaller part of the group that preserves the form.
 
-
 ## The Rotation: An Automorphism
 
 ### The Rotor and the Half Angle
@@ -546,7 +545,6 @@ Through the adjoint on the Lorentzian space of the envelope, the even elements r
 
 So the algebra's elements supply more of the orthogonal group than the two-sided operator does, and the surplus is exactly the anti-orthochronous half. A statement about "what the algebra can do" is therefore ambiguous until the action is named: the same element does one thing through the inverse and another through the dagger, and the two things differ by a component of the orthogonal group.
 
-
 ## The Unitary Group: The Gauge and Its Double Cover
 
 ### The Compact Slice
@@ -807,9 +805,6 @@ Three readings follow from the table and nothing else.
 
 The table also explains the naming of the entry. The rotations are the intersection of the first two columns; the boosts are the difference between the second and the first; the gauge is the first column; and the indefinite limit is the fourth.
 
-
-
-
 ## The Interpretations
 
 **A rotation is a symmetry of the algebra and a boost is a motion of the space.** The adjoint preserves the product and the congruence preserves the form; the two coincide exactly on the $*$-unitary slice. A rotation lies in that slice, so there is a single map of the algebra that is both an automorphism and an isometry, and the phrase "a rotation is a symmetry" needs no qualification. A boost does not lie in the slice, so each action shows one half of it: the congruence shows the motion and hides the algebra, the adjoint shows the algebra and hides the motion. Interpreted physically, a change of velocity is not a relabelling of the algebra's operations; it is a change of the element. The boundary: this is a statement about the action on the algebra, not about a field, and a field transforms through a representation chosen separately.
@@ -899,9 +894,8 @@ The isometry group of the fourth form is $\mathrm{U}(1,3)$ of dimension sixteen,
 - [The Biquaternion Unit Group as a Topological Group](../articles_maths/the-biquaternion-unit-group-as-a-topological-group.html), for the topology of the unit group.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the unit group and the norm-one slice.
 - [The Four Forms and the Four Algebraic Norms](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the four forms and their isometry groups.
-- [Frames, Rotations and the Lorentz Group](frames-rotations-and-the-lorentz-group.html), for the physical reading of the frames and the boosts.
-- [The Unitary Group: Gauge, Phase and the Double Cover](the-unitary-group-gauge-phase-and-the-double-cover.html), for the compact slice read as a gauge group.
-- [The Krein Form and the Indefinite Structure](the-krein-form-and-the-indefinite-structure.html), for the physical reading of the fourth form.
+- [The Unit Group, the Cone and the Orders](the-unit-group-the-cone-and-the-orders.html), for the compact slice read as a gauge group.
+- [The K Norm and the Indefinite Structure](the-k-norm-and-the-indefinite-structure.html), for the physical reading of the fourth form.
 - [Kramers Degeneracy and Antiunitary Symmetry in Biquaternionic Form](kramers-degeneracy-and-antiunitary-symmetry-in-biquaternionic-form.html), for the antiunitary coset.
 - [The CPT Theorem in Biquaternionic Form](the-cpt-theorem-in-biquaternionic-form.html), for the discrete symmetries and their components.
 - [Integer Spin Quantization and the Adjoint Action on the Material Sector](integer-spin-quantization-and-the-adjoint-action-on-the-material-sector-in-biquaternionic-form.html), for the adjoint acting on the material sector.

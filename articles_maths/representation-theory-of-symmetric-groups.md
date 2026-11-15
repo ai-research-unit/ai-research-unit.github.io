@@ -195,9 +195,6 @@ The Frobenius characteristic identifies the character ring of $S_n$ with the sym
 | $\operatorname{ch}$, $z_\lambda$ | Frobenius characteristic, power-sum normalisation |
 
 
-
-
-
 ## Further Reading
 
 - Alfred Young, "On quantitative substitutional analysis", *Proceedings of the London Mathematical Society* 33 (1901), 97–146, and later parts, for the tableau calculus and the standard basis.

@@ -190,9 +190,6 @@ The two formulas that organise the subject are Perron's formula, which recovers 
 | $\mathrm{S}(n)$ | Singular series of the circle method |
 
 
-
-
-
 ## Further Reading
 
 - Harold Davenport, *Multiplicative Number Theory* (3rd ed., Springer, 2000), for the explicit formula, the zero-free region and the classical proofs.

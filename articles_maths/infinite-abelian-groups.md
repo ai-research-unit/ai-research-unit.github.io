@@ -237,7 +237,6 @@ For countable primary groups the structure theory is complete: a countable $p$-g
 | $D^{(I)}$ | Direct sum of $|I|$ copies of $D$ |
 
 
-
 ## Further Reading
 
 - László Fuchs, *Infinite Abelian Groups*, vols. 1 and 2 (Academic Press, 1970 and 1973), for the full structure theory, the divisible-group classification and Ulm's theorem.

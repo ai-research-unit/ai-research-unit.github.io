@@ -65,7 +65,6 @@ Every other subspace distinguished by the involutions is $0$, $\mathbb{H}$, or o
 **Proof.** The only non-trivial involution of $\mathbb{H}$ available on elements is ${}^{\natural}$, whose $\pm1$ eigenspaces are the two; the inner involutions are automorphisms that permute the vector lines and do not define new fixed spaces beyond the axis plane $\mathbb{C}_\nu=\mathbb{R}e_t\oplus\mathbb{R}\nu$ and its orthogonal complement $\nu^\perp$, which depend on the chosen axis and are not invariant objects of the algebra.
 
 
-
 The additive decomposition carried by the two subspaces, and the polar decomposition the norm adds to it, are *Decompositions Along the Remarkable Subspaces of the Quaternions*, below this article in this category.
 
 ## Summary

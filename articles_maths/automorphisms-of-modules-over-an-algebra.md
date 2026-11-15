@@ -309,9 +309,6 @@ Schur's lemma makes $\operatorname{End}_A(S)$ a division ring for simple $S$, wi
 | $\operatorname{Mod}(A)$ | category of left $A$-modules |
 
 
-
-
-
 ## Further Reading
 
 - Frank W. Anderson and Kent R. Fuller, *Rings and Categories of Modules* (Springer, 2nd ed. 1992), for endomorphism rings, the density theorem, and the structure of the regular module.

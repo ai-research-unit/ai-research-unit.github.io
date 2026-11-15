@@ -176,9 +176,6 @@ Beyond codimension one, the **Takens–Bogdanov** unfolding $dx/dt=y$, $dy/dt=\m
 | $\rho,\lambda_1,\lambda_2$ | saddle eigenvalues of Shilnikov's theorem |
 
 
-
-
-
 ## Further Reading
 
 - Henri Poincaré, "Sur les propriétés des fonctions définies par les équations aux différences partielles", *Journal de l'École Polytechnique* 50 (1879), 1–60, and *Les méthodes nouvelles de la mécanique céleste* (Gauthier-Villars, 1892–1899), for the normal-form and resonance theory.

@@ -319,9 +319,6 @@ with product induced by concatenation of symmetric tensors. It is associative, c
 | $\operatorname{sym} \dashv U$ | Free-forgetful adjunction with $\mathsf{Mod}_R$ |
 
 
-
-
-
 ## Further Reading
 
 - Nicolas Bourbaki, *Algebra I: Chapters 1–3* (Springer, 1989), for the symmetric algebra and its universal property.

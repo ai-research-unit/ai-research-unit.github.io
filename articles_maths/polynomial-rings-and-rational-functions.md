@@ -156,7 +156,6 @@ The fraction field $K(x)$ is the rational function field, and the degree differe
 | $K^S$ | Functions from $S$ to $K$ |
 
 
-
 ## Further Reading
 
 - Serge Lang, *Algebra* (Springer, revised 3rd ed. 2002), for the universal property, Gauss's lemma and the arithmetic of polynomial rings.

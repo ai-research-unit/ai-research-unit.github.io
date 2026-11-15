@@ -173,7 +173,6 @@ The vocabulary fixed here — seminorm, gauge, bounded set, normable, metrisable
 | Fréchet space | Complete metrisable locally convex space |
 
 
-
 ## Further Reading
 
 - Nicolas Bourbaki, *Topological Vector Spaces* (Springer, 1987), Chapters I–III, for the foundational theory of locally convex spaces, the gauge and the metrisability theorems.

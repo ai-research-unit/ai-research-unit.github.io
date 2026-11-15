@@ -300,11 +300,6 @@ Finitely generated modules are the quotients of some $R^k$. Nakayama's lemma con
 | $L_1 \to L_0 \to M \to 0$ | free resolution of a module |
 
 
-
-
-
-
-
 ## Further Reading
 
 - M. F. Atiyah and I. G. Macdonald, *Introduction to Commutative Algebra* (Addison-Wesley, 1969), for Nakayama's lemma, Noetherian rings and the local theory.

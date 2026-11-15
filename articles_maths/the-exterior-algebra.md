@@ -264,7 +264,6 @@ In characteristic $2$ graded-commutativity becomes ordinary commutativity, but $
 | $\Lambda^m M$ | Top exterior power, the determinant line |
 
 
-
 ## Further Reading
 
 - Nicolas Bourbaki, *Algebra I: Chapters 1–3* (Springer, 1998), for the exterior algebra as a quotient of the tensor algebra and its graded-commutativity.

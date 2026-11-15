@@ -251,7 +251,6 @@ The edge homomorphisms of the spectral sequence are the maps induced by the incl
 | $R$ | Commutative ring with identity $1 \neq 0$ |
 
 
-
 ## Further Reading
 
 - Jean-Pierre Serre, *Homologie singulière des espaces fibrés* (Annals of Mathematics 54, 1951), for the original construction of the spectral sequence of a fibration.

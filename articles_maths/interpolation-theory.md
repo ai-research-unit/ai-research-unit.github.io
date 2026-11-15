@@ -302,7 +302,6 @@ On the classical families the dictionary reads $[L^{n_0},L^{n_1}]_{\mathrm{itp},
 | $q'$ | conjugate exponent $1/q+1/q'=1$ |
 
 
-
 ## Further Reading
 
 - Colin Bennett and Robert Sharpley, *Interpolation of Operators* (Academic Press, 1988), for the real and complex methods and the Lorentz spaces in detail.

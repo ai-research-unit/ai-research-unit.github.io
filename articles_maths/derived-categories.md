@@ -230,9 +230,6 @@ For a ring of finite global dimension the derived category of bounded complexes 
 | $R$ | commutative ring with $1\neq0$ unless stated |
 
 
-
-
-
 ## Further Reading
 
 - Alexander Beilinson, Joseph Bernstein and Pierre Deligne, "Faisceaux pervers", *Astérisque* 100 (1982), for the triangulated formalism and the t-structures of derived categories.

@@ -164,7 +164,6 @@ A continuum $X$ is **unicoherent** if the intersection of any two subcontinua wh
 | inverse limit | Subspace of the product of the terms of an inverse system |
 
 
-
 ## Further Reading
 
 - K. Kuratowski, *Topology*, Volume II (Academic Press, 1968), for the classical theory of the continua and the separation theorems of the plane.

@@ -292,7 +292,6 @@ Uniform convergence is convergence in the sup metric; it preserves continuity an
 | Baire space | Countable intersection of dense open sets is dense |
 
 
-
 ## Further Reading
 
 - Walter Rudin, *Principles of Mathematical Analysis* (McGraw-Hill, 3rd ed. 1976), for metric spaces and uniform convergence at the level used here.

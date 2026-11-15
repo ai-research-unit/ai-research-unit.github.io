@@ -239,9 +239,6 @@ Singular homology is functorial in the strongest sense: a continuous map induces
 | Acyclic | $H_{\mathrm{red},n} = 0$ for all $n$ |
 
 
-
-
-
 ## Further Reading
 
 - Allen Hatcher, *Algebraic Topology* (Cambridge University Press, 2002), for singular homology, excision, Mayer–Vietoris, and simplicial approximation.

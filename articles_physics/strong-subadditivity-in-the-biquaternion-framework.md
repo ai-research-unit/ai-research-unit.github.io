@@ -332,4 +332,4 @@ The tensor power is not a subalgebra of $\mathbb{B}$, whose complex dimension is
 - Companion article [The Hermitian GNS Construction in the Biquaternion Framework](the-hermitian-gns-construction-in-the-biquaternion-framework.html), for the states of $\mathbb{B}$, the Bloch ball, and the trace state.
 - Companion article [Fock Space and Creation/Annihilation Operators in Biquaternionic Form](fock-space-and-creation-annihilation-operators-in-biquaternionic-form.html), for the capacity statement: one fermionic mode and no more.
 - Companion article [The Biquaternion Vacuum as a Minimal Idempotent](the-biquaternion-vacuum-as-a-minimal-idempotent.html), for the minimal idempotents and the pure boundary.
-- Companion article [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the Hermitian subspace and the plain form.
+- Companion article [States, Observables and the Born Weight](states-observables-and-the-born-weight.html), for the Hermitian subspace and the plain form.

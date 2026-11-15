@@ -233,13 +233,6 @@ In the abelian case induction corresponds to passing to a coset of $H^\perp$ in 
 | $L^2(G/H)$, $L^1(G)$ | Part III objects: completions and convolution |
 
 
-
-
-
-
-
-
-
 ## Further Reading
 
 - George W. Mackey, *The Theory of Unitary Group Representations* (University of Chicago Press, 1976), for induced representations and the imprimitivity theorem.

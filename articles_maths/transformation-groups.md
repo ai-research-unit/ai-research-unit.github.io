@@ -210,11 +210,6 @@ Cayley's theorem, that $G$ embeds in $\operatorname{sym}(G)$ by the left regular
 | $G \hookrightarrow \operatorname{sym}(G)$ | Cayley embedding by the left regular action |
 
 
-
-
-
-
-
 ## Further Reading
 
 - Michael Artin, *Algebra* (Prentice Hall, 1991), for transformation groups treated concretely.

@@ -338,9 +338,6 @@ The orientation-preserving isometry group is $PSL(2, \mathbb{R})$ in dimension t
 | $\cosh\frac{d}{R} = \frac{\langle x,y\rangle_{1,n}}{R^2}$ | The same distance on the hyperboloid |
 
 
-
-
-
 ## Further Reading
 
 - John G. Ratcliffe, *Foundations of Hyperbolic Manifolds*, 2nd ed. (Springer, 2006), for the models, the isometry groups and the space forms.

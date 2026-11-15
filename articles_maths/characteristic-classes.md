@@ -170,7 +170,6 @@ of the classifying spaces. The four families are the **Stiefel–Whitney** class
 | characteristic number | Evaluation $\langle\kappa(TM),[M]\rangle$ |
 
 
-
 ## Further Reading
 
 - John W. Milnor and James D. Stasheff, *Characteristic Classes* (Princeton University Press, 1974), for the axioms, the classifying spaces, the Wu formula and the cobordism invariants.

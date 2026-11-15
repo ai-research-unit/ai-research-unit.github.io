@@ -216,7 +216,6 @@ An **$L_\infty$-algebra** is a graded $k$-module $V$ with graded antisymmetric o
 | $b_h$ | circle operation with the homotopy $h$ in the transfer theorem |
 
 
-
 ## Further Reading
 
 - James D. Stasheff, "Homotopy associativity of $H$-spaces I, II", *Transactions of the American Mathematical Society* **108** (1963), 275–312, for the original definition and the higher associativity identities.

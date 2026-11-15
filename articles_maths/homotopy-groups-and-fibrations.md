@@ -199,9 +199,6 @@ A fibration is a map with the homotopy lifting property; coverings and bundles o
 | $\mathbb{CP}^\infty$, $S^\infty$ | Colimits of projective spaces and spheres |
 
 
-
-
-
 ## Further Reading
 
 - Allen Hatcher, *Algebraic Topology* (Cambridge University Press, 2002), for homotopy groups, the Hurewicz and Whitehead theorems, fibrations and the long exact sequence.

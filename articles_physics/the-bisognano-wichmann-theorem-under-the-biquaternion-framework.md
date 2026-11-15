@@ -291,8 +291,8 @@ The framework does **not** make the geometric boost an inner automorphism of the
 - Companion article [The Unruh Effect in Biquaternionic Form](the-unruh-effect-in-biquaternionic-form.html), for the Rindler wedge, the boost rotor, the two-point function, and the Unruh temperature.
 - Companion article [The CPT Theorem in Biquaternionic Form](the-cpt-theorem-in-biquaternionic-form.html), for the PCT operator and the anti-unitarity that conjugates the scalar imaginary.
 - Companion article [The Lorentz Transformation as a Biquaternionic Rotation](the-lorentz-transformation-as-a-biquaternionic-rotation.html), for the boost rotor and its action on $\mathbb{B}_{\Phi}$.
-- Companion article [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html), for the material sector, the four-vectors, and the zero-divisor cone.
-- Companion article [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the Hermitian sector, the trace formula, and the modular Hamiltonian's home.
+- Companion article [Four-Vectors and the Interval](four-vectors-and-the-interval.html), for the material sector, the four-vectors, and the zero-divisor cone.
+- Companion article [States, Observables and the Born Weight](states-observables-and-the-born-weight.html), for the Hermitian sector, the trace formula, and the modular Hamiltonian's home.
 - Companion article [The Partition Function in Biquaternionic Form](the-partition-function-in-biquaternionic-form.html), for the Gibbs state and $H_{\mathrm{modular}}=\beta H+(\log Z)e_t$.
 - Companion article [Fock Space and Creation/Annihilation Operators in Biquaternionic Form](fock-space-and-creation-annihilation-operators-in-biquaternionic-form.html), for the field-algebra setting the wedge requires.
 - Companion article [Curved Spacetime and the Biquaternion Framework](curved-spacetime-and-the-biquaternion-framework.html), for the Killing-horizon analogue and the Hawking case.

@@ -201,7 +201,6 @@ Homotopy of DG module morphisms is defined by $f-g = d_Nh + hd_M$; the **homotop
 | $T_{\mathrm{poly}}(A)$ | multivectors of a commutative algebra, with the wedge product |
 
 
-
 ## Further Reading
 
 - Hans Cartan and Samuel Eilenberg, *Homological Algebra* (Princeton University Press, 1956), for the differential graded framework and the resolutions that compute derived functors.

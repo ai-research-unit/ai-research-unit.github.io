@@ -193,9 +193,6 @@ The ergodic theory of the hyperbolic systems is governed by the **Lyapunov expon
 | $\varphi_t$ | flow; Anosov flow when hyperbolic on $M$ |
 
 
-
-
-
 ## Further Reading
 
 - Dmitri V. Anosov, "Geodesic flows on closed Riemannian manifolds of negative curvature", *Trudy Matematicheskogo Instituta imeni V. A. Steklova* 90 (1967), 3–210, for the Anosov systems and their structural stability.

@@ -341,7 +341,6 @@ An algebra automorphism preserves the product and nothing more; a length or an a
 | $\mathbb{B}_{H}$ | Real quaternion subspace of $\mathbb{B}$ |
 
 
-
 ## Further Reading
 
 - Nathan Jacobson, *Lie Algebras* (Dover, 1979), for derivations and their Lie algebra structure.

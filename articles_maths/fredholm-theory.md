@@ -245,9 +245,6 @@ The structural theorem is **Atkinson's**: $T$ is Fredholm if and only if it has 
 | $R$ | smoothing remainder of a parametrix |
 
 
-
-
-
 ## Further Reading
 
 - Ivar Fredholm, "Sur une classe d'équations fonctionnelles", *Acta Mathematica* 27 (1903), 365–390, for the original integral-equation theory and the alternative.

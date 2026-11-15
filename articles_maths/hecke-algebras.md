@@ -198,9 +198,6 @@ The algebra is commutative exactly when the Coxeter graph is disconnected; it is
 | $\preceq_L$, left/right/two-sided cells | cell structure from the $C'$-basis |
 
 
-
-
-
 ## Further Reading
 
 - James E. Humphreys, *Reflection Groups and Coxeter Groups* (Cambridge University Press, 1990), for Coxeter systems, lengths and the Coxeter classification.

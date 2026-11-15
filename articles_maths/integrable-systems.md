@@ -360,7 +360,6 @@ The classical prototype of this linearisation is the Riccati equation $y'+y^2=-v
 | $\vec f$, $\zeta$, $\Psi$ | Riccati-PDE field, the particular solution $\operatorname{grad}\zeta$, the transport function |
 
 
-
 ## Further Reading
 
 - Peter D. Lax, "Integrals of Nonlinear Equations of Evolution and Solitary Waves", *Communications on Pure and Applied Mathematics* 21 (1968), for the Lax pair and isospectral deformation.

@@ -205,7 +205,6 @@ Mean curvature flow moves a hypersurface in the direction of its normal with spe
 | Brakke flow | Varifold weak solution of the flow |
 
 
-
 ## Further Reading
 
 - Gerhard Huisken, "Flow by Mean Curvature of Convex Surfaces into Spheres", *Journal of Differential Geometry* 20 (1984), for the curvature evolution and the pinching theorem.

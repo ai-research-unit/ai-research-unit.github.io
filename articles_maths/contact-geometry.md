@@ -195,9 +195,6 @@ Legendrian submanifolds are the isotropic submanifolds of dimension $n$, and a n
 | Sasakian structure | Contact structure compatible with a metric, odd-dimensional analogue of Kähler |
 
 
-
-
-
 ## Further Reading
 
 - Hansjörg Geiges, *An Introduction to Contact Topology* (Cambridge University Press, 2008), for contact forms, the Darboux theorem, Gray's stability and the symplectisation.

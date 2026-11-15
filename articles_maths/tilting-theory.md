@@ -128,9 +128,6 @@ Tilting theory is the bridge between the representation theory of *Quiver Repres
 | $\tau$ | Auslander–Reiten translation |
 
 
-
-
-
 ## Further Reading
 
 - Michel Auslander, María Inés Platzeck and Idun Reiten, "Coxeter functors without diagrams", *Transactions of the American Mathematical Society* 250 (1979), 1–46, for the APR tilting modules and the reflection functors.

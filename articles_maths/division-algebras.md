@@ -191,7 +191,6 @@ A **biquaternion algebra** over a field is the tensor product of two quaternion 
 | $R_2(E)$ | Ramification sequences, the image of $\partial$ |
 
 
-
 ## Further Reading
 
 - Ferdinand G. Frobenius, "Über lineare Substitutionen und bilineare Formen", *Journal für die reine und angewandte Mathematik* **84** (1878), 1–63, for the classification of the finite-dimensional real division algebras.

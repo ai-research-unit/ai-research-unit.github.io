@@ -238,7 +238,6 @@ The unit three-sphere is the group of unit quaternions, identified with $SU(2)$ 
 | Spherical space form | Complete constant-curvature $+1$ manifold $S^n/\Gamma$, $\Gamma$ finite acting freely |
 
 
-
 ## Further Reading
 
 - John G. Ratcliffe, *Foundations of Hyperbolic Manifolds*, 2nd ed. (Springer, 2006), for spherical and hyperbolic geometry developed uniformly from the models.

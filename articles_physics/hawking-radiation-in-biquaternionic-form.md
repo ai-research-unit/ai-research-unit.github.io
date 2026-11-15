@@ -575,7 +575,7 @@ The biquaternion framework supplies the algebraic home for the effect — the ma
 - [The Unruh Effect in Biquaternionic Form](the-unruh-effect-in-biquaternionic-form.html), the sibling article: the Rindler wedge, the boost, the KMS strip, and the temperature from the surface gravity.
 - [The KMS Condition and the Biquaternion Framework](the-kms-condition-and-the-biquaternion-framework.html), the parent: the KMS condition, its imaginary-time strip, and the modular Hamiltonian in $\mathbb{B}_{\Psi}$.
 - [Curved Spacetime and the Biquaternion Framework](curved-spacetime-and-the-biquaternion-framework.html), for the frame-field route to the metric and the obstruction to black-hole exteriors in the local-scale class.
-- [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) and [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the sectors and their imaginary-time interpretation.
+- [Four-Vectors and the Interval](four-vectors-and-the-interval.html) and [States, Observables and the Born Weight](states-observables-and-the-born-weight.html), for the sectors and their imaginary-time interpretation.
 - [Introduction to the Biquaternion Universe](introduction-to-the-biquaternion-universe.html), for the algebra and the notation.
 - [The Klein–Gordon Equation in Biquaternionic Form](the-klein-gordon-equation-in-biquaternionic-form.html), for the material-sector wave equation whose modes are mixed.
 - [Fock Space and Creation/Annihilation Operators in Biquaternionic Form](fock-space-and-creation-annihilation-operators-in-biquaternionic-form.html), for the single-mode occupation and its parity grading.

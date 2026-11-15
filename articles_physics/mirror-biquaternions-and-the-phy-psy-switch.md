@@ -95,8 +95,6 @@ $$
 \tilde X_{\mathrm{mir}}=(1+i)\tilde X_\Phi=\bigl(i x'_t-x'_t\bigr)e_t+(1+i)\bigl(x_x\vec e_x+x_y\vec e_y+x_z\vec e_z\bigr),
 $$
 
-
-
 **The name.** This article calls the multiplication by $i$ the **Phy–Psy switch**. The name follows the corpus's own mnemonic for the two sector letters: $\Phi$ opens the word *physics* and marks the material side, and $\Psi$ is the letter a quantum state is written with and marks the informational side. The name takes its *Phy* from the first and its *Psy* from the second. The switch runs in both directions, since $i$ is invertible with inverse $-i$. Both the name and the two readings are fixed as conventions in *Algebra and Element Conventions*, §*The Hermitian and Anti-Hermitian Subspaces*, and this article uses them as fixed.
 
 **The vocabulary, in one place.** Seven names are used throughout, and they are not synonyms.
@@ -850,9 +848,9 @@ The Wick rotation is the neighbouring map and it is not this one. It multiplies 
 **The sources of the series, kept in the archive, and the mathematics.**
 
 - [Introduction to the Biquaternion Universe](introduction-to-the-biquaternion-universe.html), §*Two Sectors: Material and Informational*, for the split into the two parts, which this article inherits and never redefines.
-- [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html), for the interval, the Lorentz action and the observable representative $i\tilde Q$.
-- [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the positive cone, the real spectrum and the Born pairing.
-- [The Bloch Ball as the Normalised Slice of the Future Light Cone](the-bloch-ball-as-the-normalised-slice-of-the-future-light-cone.html), for the positive cone as the image of the causal cone and the two faces of one quadratic space.
+- [Four-Vectors and the Interval](four-vectors-and-the-interval.html), for the interval, the Lorentz action and the observable representative $i\tilde Q$.
+- [States, Observables and the Born Weight](states-observables-and-the-born-weight.html), for the positive cone, the real spectrum and the Born pairing.
+- [States, Observables and the Born Weight](states-observables-and-the-born-weight.html), for the positive cone as the image of the causal cone and the two faces of one quadratic space.
 - [Energy and Information: Four Conservation Laws from One Identity](energy-and-information-four-conservation-laws-from-one-identity.html), for the trace and the norm read in the two sectors, and for the pair of discriminants.
 - [The Schrödinger Equation in Biquaternionic Form](the-schrodinger-equation-in-biquaternionic-form.html), for the two writings, the uniqueness of the scalar imaginary and the missing transformation law.
 - [The Schrödinger Equation in Biquaternionic Polar Variables](the-schrodinger-equation-in-biquaternionic-polar-variables.html), for the state in the minimal left ideal and the density as the Hermitian norm.

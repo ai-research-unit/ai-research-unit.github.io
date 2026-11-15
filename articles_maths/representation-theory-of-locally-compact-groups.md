@@ -213,9 +213,6 @@ The unitary dual $\operatorname{Irr}(G)$ is the set of equivalence classes of ir
 | $dg$ | Haar measure of $G$, from *Locally Compact Groups and Haar Measure* |
 
 
-
-
-
 ## Further Reading
 
 - Gerald B. Folland, *A Course in Abstract Harmonic Analysis* (CRC Press, 2nd ed. 2015), for unitary representations, Schur's lemma and the compact theory.

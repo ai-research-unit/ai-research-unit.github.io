@@ -283,9 +283,6 @@ The axiom of choice asserts the existence of choice functions on arbitrary famil
 | $\mathcal{U}$, $\mathcal{F}$ | Ultrafilter; filter on a set |
 
 
-
-
-
 ## Further Reading
 
 - Thomas Jech, *Set Theory*, 3rd millennium ed. (Springer, 2003), for cardinal arithmetic, the axiom of choice and its equivalents, and the independence of the continuum hypothesis.

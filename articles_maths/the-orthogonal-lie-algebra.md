@@ -308,7 +308,6 @@ and $\kappa$ is negative definite because $\operatorname{tr}(X^2) = -\sum_{ij}X_
 | $\mathbb{R}, \mathbb{C}$ | Real and complex numbers |
 
 
-
 ## Further Reading
 
 - Jean Dieudonné, *La géométrie des groupes classiques* (Springer, 1971), for the orthogonal Lie algebra over general rings.

@@ -301,7 +301,6 @@ Exterior powers are functorial, so each linear $f$ induces $\Lambda^n f$; they c
 | $\binom{m}{n}$ | Rank of $\Lambda^n M$ for $M$ free of rank $m$ |
 
 
-
 ## Further Reading
 
 - Nicolas Bourbaki, *Algebra I: Chapters 1–3* (Springer, 1998), for the exterior powers over a commutative ring and their universal property.

@@ -254,9 +254,6 @@ The central limit theorem asserts that the standardised sums of independent iden
 | Cramér–Wold | vector convergence tested against all linear functionals |
 
 
-
-
-
 ## Further Reading
 
 - Patrick Billingsley, *Probability and Measure* (Wiley, 3rd edition, 1995), and *Convergence of Probability Measures* (Wiley, 2nd edition, 1999), for the continuity theorem, the laws of large numbers and the invariance principle.

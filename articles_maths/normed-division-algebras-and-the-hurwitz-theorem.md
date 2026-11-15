@@ -203,9 +203,6 @@ with the multiplicativity of the norm holding through the octonions and failing 
 | $\sum_i a_i^2$ | the norm in coordinates; sums-of-squares identities |
 
 
-
-
-
 ## Further Reading
 
 - Adolf Hurwitz, "Über die Composition der quadratischen Formen von beliebig vielen Variablen", *Nachrichten von der Königlichen Gesellschaft der Wissenschaften zu Göttingen* (1898), 309–316, for the theorem and the sums-of-squares formulation.

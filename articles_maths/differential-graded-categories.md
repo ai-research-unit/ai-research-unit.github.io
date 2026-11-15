@@ -159,9 +159,6 @@ A DG category is **pretriangulated** when it is closed under shifts and cones, e
 | $m_n$ | higher compositions of an $A_\infty$-category, degree $2-n$ |
 
 
-
-
-
 ## Further Reading
 
 - Bernhard Keller, "Deriving DG categories", *Annales scientifiques de l'École Normale Supérieure* **27** (1994), 63–102, for the derived category of a DG category and the quasi-equivalence formalism.

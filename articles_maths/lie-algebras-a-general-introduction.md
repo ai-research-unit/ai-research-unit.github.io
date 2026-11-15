@@ -361,7 +361,6 @@ This is the reason Lie algebras were introduced in the first place. Sophus Lie, 
 The classification of these Lie algebras is organized by ring.
 
 
-
 ---
 
 ## Further Reading

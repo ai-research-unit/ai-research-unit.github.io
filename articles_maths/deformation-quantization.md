@@ -251,9 +251,6 @@ A **Poisson algebra** is a commutative associative algebra with a Lie bracket th
 | $U_h(\mathrm{G})$ | Hopf-algebraic deformation of $\mathrm{U}(\mathrm{G})$ |
 
 
-
-
-
 ## Further Reading
 
 - Murray Gerstenhaber, "On the deformation of rings and algebras", *Annals of Mathematics* **79** (1964), 59–103, for the Hochschild classification of deformations and the graded Lie bracket.

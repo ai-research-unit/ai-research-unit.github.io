@@ -194,11 +194,6 @@ The exponential converges on the disc of radius $\lvert p \rvert^{1/(p-1)}$, the
 | $\lVert f \rVert_\infty$ | Supremum norm on $C(\mathbb{Z}_p,\mathbb{Q}_p)$ |
 
 
-
-
-
-
-
 ## Further Reading
 
 - Neal Koblitz, *$p$-adic Numbers, $p$-adic Analysis, and Zeta-Functions*, 2nd ed. (Springer, 1984), for Mahler's theorem, the Newton polygon and the structure of $\mathbb{Q}_p^\times$.

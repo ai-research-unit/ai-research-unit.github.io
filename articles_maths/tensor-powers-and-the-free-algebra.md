@@ -249,11 +249,6 @@ The **free algebra** $R\langle X\rangle$ is the tensor algebra of the free modul
 | $\mathbb{H} = \mathbb{R}\langle x,y\rangle/(x^2+1, y^2+1, xy+yx)$ | Quaternion algebra as a quotient |
 
 
-
-
-
-
-
 ## Further Reading
 
 - Serge Lang, *Algebra* (Springer, 3rd ed. 2002), for tensor powers, the tensor algebra and the free algebra.

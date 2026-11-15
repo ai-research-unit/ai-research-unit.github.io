@@ -172,13 +172,6 @@ Tits's classification states that every thick irreducible spherical building of 
 | building at infinity | Spherical building of a symmetric space, chambers = Weyl chambers |
 
 
-
-
-
-
-
-
-
 ## Further Reading
 
 - Jacques Tits, *Buildings of Spherical Type and Finite $BN$-Pairs* (Springer Lecture Notes 386, 1974), for the definition, the Tits systems and the classification.

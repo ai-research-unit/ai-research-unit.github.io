@@ -266,9 +266,6 @@ For an ideal $I$ of a ring $R$ the $I$-adic topology has the powers $I^n$ as a f
 | $\mathbb{R}$ | Metric completion of $\mathbb{Q}$ |
 
 
-
-
-
 ## Further Reading
 
 - Nicolas Bourbaki, *General Topology, Chapters 1–4* and *Commutative Algebra, Chapters 1–7* (Springer, 1995, 1998), for topological groups, topological rings and linear topologies.

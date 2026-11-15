@@ -153,7 +153,6 @@ The cohomology of a quasi-coherent sheaf is the derived functor of global sectio
 | $\mathcal{I}$, $\mathcal{N}_{Z/X}$ | ideal sheaf; normal sheaf of a subscheme |
 
 
-
 ## Further Reading
 
 - Alexander Grothendieck and Jean Dieudonné, *Éléments de géométrie algébrique III, IV* (Publications Mathématiques de l'IHÉS, 1961–1967), for the finiteness, base-change and semicontinuity theorems.
