@@ -513,6 +513,8 @@ $$
 $$
 so the compact group is a bundle over the two-sphere with a two-torus as fibre.
 
+**A point of the flag variety is a measurement basis.** A complete flag of $\mathbb{C}^{2}$ is a line inside a plane; the plane is the whole space, so the flag is one line, and the line together with its orthogonal complement is a pair of orthogonal pure states. The two-torus is the pair of their phases, so the quotient is the pair itself, and the sphere carries two readings: the pure states of *Idempotents, Ideals and Observables*, where they are the Hermitian idempotents $\tfrac12(e_t+i\vec u)$ over the real unit vectors, and the bases in which a complete measurement is stated. The two coincide because a pure state is a line and a pair of outcomes is a pair of lines, and the space of each is $P^{1}$ in two dimensions.
+
 ### The Two Retractions
 
 The dagger supplies a polar decomposition on the unit group. Every unit is
@@ -640,6 +642,17 @@ $$
 the complex hyperbolic space of §*The Level Sets*. The group decomposes as the compact part times the exponential of the hyperbolic part, which is the polar decomposition of the indefinite theory.
 
 The two involutions are the two ways to make the group act on a space: the Krein one keeps the indefinite form and does not compactify; the Cartan one keeps a definite form and produces the symmetric space. The compact group has only the second, and that is why the indefinite group needs two.
+
+**The Krein involution also acts on the operator algebra, and there it splits the whole of $\mathfrak{gl}_4(\mathbb{C})$, not $\mathfrak{u}(1,3)$.** Its derivative at the identity is $\theta(X)=-X^{\dagger}$, conjugate-linear because the dagger conjugates the scalars, with $\theta^{2}=\mathrm{id}$. The two eigenspaces are real subspaces of a complex algebra of real dimension $32$:
+$$
+\mathfrak{gl}_4(\mathbb{C})=\mathfrak{u}(1,3)\oplus J\cdot\mathrm{Herm}_4,
+\qquad
+\dim_{\mathbb{R}}\mathfrak{u}(1,3)=16,\quad
+\dim_{\mathbb{R}}J\cdot\mathrm{Herm}_4=16 ,
+$$
+the $+1$ eigenspace $\{X:X^{\dagger}=-X\}$ being the Lie algebra of the group and the $-1$ eigenspace $\{X:X^{\dagger}=X\}$ being $J$ times the Hermitian matrices, since $(JX)^{\dagger}=JX$ for Hermitian $X$. Verified on a random complex $X$: the parts $P=\tfrac12(X+\theta(X))$ and $Q=\tfrac12(X-\theta(X))$ satisfy $P^{\dagger}+P=0$ and $Q^{\dagger}-Q=0$ to the last bit of double precision.
+
+**The two splits are of different algebras, and that is the whole distinction.** The Cartan split is $10+6$ inside $\mathfrak{u}(1,3)$ and compacts the group; the Krein split is $16+16$ across the whole operator algebra and does not, because its fixed group is the non-compact group itself. So the involutions are not two conventions for one decomposition: one compacts a group and yields a symmetric space, the other decomposes the ambient algebra and yields none.
 
 ### The Contractions
 
