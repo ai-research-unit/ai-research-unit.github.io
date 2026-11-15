@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Square Map of the Split-Complex Space — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-square-map-of-the-split-complex-space"><strong>The Square Map of the Split-Complex Space</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The square map $\sigma(Q)=Q^2$ is the simplest non-linear map of the split-complex space, and its image, its critical set and its fibres carry the geometry of the ring. This article computes the three: the image is the forward cone $q\ge\lvert q'\rvert$, the critical set is the pair of null lines, and the fibres have four, two, one and no points according to where the value lies.</p>
+<p>The square map is not onto, and this is the first difference from the complex field, where the square is onto. The second difference is its critical set: over $\mathbb{C}$ the only critical point is the origin, and here a whole pair of lines is critical. Both differences have one source, the sign $j^2=+1$, which makes the differential $2Q$ singular exactly when $Q$ is a zero divisor.</p>
+<p>The product is <em>The Two Products of the Split-Complex Space</em>; the roots are <em>Square Roots of a General Element in the Split-Complex Algebra</em>, whose four branches this article identifies with the four local inverses; the cone is <em>The Hermitian Form, the Double Cone and the Reversed Cauchy-Schwarz Inequality</em>.</p>
+<h2 id="the-map-and-its-coordinates">The Map and Its Coordinates</h2>
+<h3 id="the-definition">The Definition</h3>
+<p><strong>Definition.</strong> The <strong>square map</strong> is $\sigma:\mathbb{C}_{\mathrm{spl}}\to\mathbb{C}_{\mathrm{spl}}$, $\sigma(Q)=Q^2$.</p>
+<p>On the coordinates $Q=q+jq'$ the map is</p>
+<p>$$
+\sigma(q,q')=\bigl(q^2+q'^2,\ 2qq'\bigr) ,
+$$</p>
+<p>a polynomial map of $\mathbb{R}^2$ into itself, of degree two in each coordinate.</p>
+<h3 id="the-idempotent-coordinates">The Idempotent Coordinates</h3>
+<p>In the idempotent coordinates the map is a squaring in each coordinate separately:</p>
+<p>$$
+\sigma(Q)_+=Q_+^2, \qquad \sigma(Q)_-=Q_-^2 ,
+$$</p>
+<p>since $Q^2=(Q_+\Pi_++Q_-\Pi_-)^2=Q_+^2\Pi_++Q_-^2\Pi_-$. The whole geometry of the map is therefore the geometry of the map $t\mapsto t^2$ on the real line, read twice and transported back through the coordinates $Q_\pm=q\pm q'$.</p>
+<h2 id="the-image">The Image</h2>
+<h3 id="the-forward-cone">The Forward Cone</h3>
+<p><strong>Theorem.</strong> The image of the square map is the forward cone</p>
+<p>$$
+\mathcal{C}_+=\{q+jq' : q\ge\lvert q'\rvert\}=\{Q : Q_+\ge0\ \text{and}\ Q_-\ge0\} .
+$$</p>
+<p><strong>Proof.</strong> A square has non-negative coordinates, $Q_\pm^2\ge0$, so the image lies in the set where both coordinates are non-negative, and that set is the forward cone, since $Q_+\ge0$ and $Q_-\ge0$ read $q\ge\lvert q'\rvert$. Conversely, if both coordinates are non-negative, the element $\Xi=\sqrt{Q_+}\,\Pi_++\sqrt{Q_-}\,\Pi_-$ is real, and $\Xi^2=Q$.</p>
+<p>The image is closed under multiplication and under addition, it is convex, and it is pointed: it is a cone in the strict sense. Its two boundary rays are $\mathbb{R}_{\ge0}\Pi_+$ and $\mathbb{R}_{\ge0}\Pi_-$, and its apex is the origin.</p>
+<h3 id="the-image-is-the-cone-and-not-the-plane">The Image Is the Cone and Not the Plane</h3>
+<p>The square map is not onto. The element $-1$ has no square root, since a square has $q\ge\lvert q'\rvert$ and $-1$ has $q=-1$; more generally no element outside the forward cone is a square, and the cone is a proper subset of the plane with non-empty interior. Over $\mathbb{C}$ the same map is onto, and the difference is exactly the difference between a field and a ring with two idempotents: the squaring of each coordinate is onto over $\mathbb{C}$ because every complex number has a square root, and it is onto $\mathbb{R}_{\ge0}$ over $\mathbb{R}$.</p>
+<h3 id="the-counts-of-the-fibres">The Counts of the Fibres</h3>
+<p>The fibres are read off the idempotent coordinates at once, since $\Xi_\pm^2=Q_\pm$ has two solutions $\pm\sqrt{Q_\pm}$ when $Q_\pm>0$, the single solution $0$ when $Q_\pm=0$, and none when $Q_\pm<0$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>The value $Q$</th>
+<th>The fibre $\sigma^{-1}(Q)$</th>
+<th>The count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>interior of the cone, $Q_+>0$ and $Q_->0$</td>
+<td>the four sign choices $(\pm\sqrt{Q_+},\pm\sqrt{Q_-})$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>boundary minus the origin, one coordinate zero</td>
+<td>the two sign choices on the other coordinate</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>the origin</td>
+<td>the origin</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>outside the cone, one coordinate negative</td>
+<td>empty</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The table is the count of the roots of <em>Square Roots of a General Element in the Split-Complex Algebra</em>, and it is the table of the cardinalities $4,2,1,0$ of the corpus. Over $\mathbb{C}$ the corresponding table has two entries, two for a non-zero value and one for zero, and the two tables differ at both ends: four where the complex case has two, and nothing where the complex case always has something.</p>
+<h2 id="the-derivative">The Derivative</h2>
+<h3 id="the-multiplication-by-math49">The Multiplication by $2Q$</h3>
+<p><strong>Proposition.</strong> The map is differentiable, and its differential at $Q$ is the multiplication by $2Q$:</p>
+<p>$$
+D\sigma(Q)(X)=QX+XQ=2QX .
+$$</p>
+<p><strong>Proof.</strong> $(Q+X)^2=Q^2+QX+XQ+X^2$ and the last term is of second order in $X$; the ring is commutative, so the two linear terms coincide.</p>
+<p>The differential is therefore not an arbitrary linear map but a multiplication, and the linear map $X\mapsto 2QX$ has the matrix</p>
+<p>$$
+\begin{pmatrix}2q&2q'\\2q'&2q\end{pmatrix}
+$$</p>
+<p>in the basis $1,j$: a multiplication in the split-complex algebra, with equal diagonal entries and equal off-diagonal entries.</p>
+<h3 id="the-jacobian">The Jacobian</h3>
+<p><strong>Proposition.</strong> The Jacobian determinant is</p>
+<p>$$
+J_\sigma(Q)=\det\bigl(2Q\cdot\bigr)=4(q^2-q'^2)=4N(Q) .
+$$</p>
+<p><strong>Proof.</strong> The determinant of the displayed matrix is $4q^2-4q'^2$. It is also the product of the two eigenvalues $2Q_+$ and $2Q_-$ of the multiplication, that is $4Q_+Q_-=4N(Q)$.</p>
+<p>The Jacobian is the split norm up to the factor four, so it is positive inside the double cone, negative outside it, and zero exactly on the pair of null lines.</p>
+<h3 id="the-critical-set">The Critical Set</h3>
+<p><strong>Theorem.</strong> The critical set of the square map is the union of the two null lines,</p>
+<p>$$
+\{Q : J_\sigma(Q)=0\}=\mathbb{R}\Pi_+\cup\mathbb{R}\Pi_- ,
+$$</p>
+<p>and the map is a local diffeomorphism at every other point.</p>
+<p><strong>Proof.</strong> $J_\sigma(Q)=4Q_+Q_-$ vanishes exactly when one idempotent coordinate vanishes, which is $Q\in\mathbb{R}\Pi_+\cup\mathbb{R}\Pi_-$. Off that set the differential is invertible and the inverse function theorem applies.</p>
+<p>The critical set is the set of zero divisors with the origin adjoined, which is <em>Zero Divisors of the Split-Complex Algebra</em>; a multiplication is singular exactly at the elements that annihilate something, and the square map inherits its singular set from the multiplication.</p>
+<h2 id="the-local-structure">The Local Structure</h2>
+<h3 id="the-two-sheets-over-the-interior">The Two Sheets over the Interior</h3>
+<p>Over the interior of the forward cone the map is four-to-one, and the four preimages fall into two pairs under the sign change $\Xi\mapsto-\Xi$. The two pairs are the two <strong>sheets</strong>, and each is a region of the source:</p>
+<p>$$
+\{\Xi : N(\Xi)>0\}\ \text{and}\ \{\Xi : N(\Xi)<0\} ,
+$$</p>
+<p>the timelike and the spacelike region of the plane of the preimages.</p>
+<p><strong>Proof.</strong> The first pair of roots has $N(\Xi)=\Xi_+\Xi_-=\sqrt{Q_+Q_-}>0$ and the second has the opposite sign, so the two pairs lie in the two regions, and the sign change keeps each pair in its region. Both regions are mapped onto the interior of the cone, since $N(\Xi^2)=N(\Xi)^2>0$ and every interior value has the two roots.</p>
+<p>So the square map folds the two regions of the source onto one region of the target, two-to-one on each, and the folding is the identification of $\Xi$ with $-\Xi$.</p>
+<h3 id="the-boundary">The Boundary</h3>
+<p>Over the boundary of the cone minus the origin the map is two-to-one, the two preimages lying on the null lines of the source and being opposite to each other. The boundary is the image of the null lines, and on it the differential has rank one: the boundary is the fold set.</p>
+<h3 id="the-branch-locus">The Branch Locus</h3>
+<p><strong>Theorem.</strong> The image of the critical set is the pair of null rays, that is the boundary of the image cone.</p>
+<p><strong>Proof.</strong> A null element is $\Xi=t\Pi_+$ or $\Xi=t\Pi_-$ with real $t$, and its square is $t^2\Pi_+$ or $t^2\Pi_-$, on the boundary. Conversely every boundary point $s\Pi_+$ with $s\ge0$ is the square of $\pm\sqrt{s}\,\Pi_+$.</p>
+<p>The <strong>branch locus</strong> of the map is therefore the boundary of the cone, and it is where the two sheets meet: the four branches collapse pairwise as the value crosses the boundary, from four to two, and to one at the apex. This is the geometric content of the table of fibres.</p>
+<h2 id="the-four-inverse-branches">The Four Inverse Branches</h2>
+<h3 id="the-branches">The Branches</h3>
+<p>On the interior of the cone the map has four single-valued inverses, one for each sign choice:</p>
+<p>$$
+\Xi_{\epsilon_+\epsilon_-}=\epsilon_+\sqrt{Q_+}\,\Pi_++\epsilon_-\sqrt{Q_-}\,\Pi_- , \qquad \epsilon_\pm\in\{+1,-1\} .
+$$</p>
+<p>Each is a smooth function of $Q$ on the interior, and the four exhaust the fibre. The interior of the cone is convex, hence simply connected, so the four-valued inverse has no monodromy: the branches are global, and there is no need of a cut plane as there is for the complex square root.</p>
+<h3 id="the-identification-with-the-roots">The Identification with the Roots</h3>
+<p>The four branches are the four roots of <em>Square Roots of a General Element in the Split-Complex Algebra</em>, in the order of the two signs. The article there counts them; this article identifies them with the local inverses of a differentiable map, and the identification is the statement that the algebraic count and the differential count agree: four on the interior, two on the boundary minus the origin, one at the origin, none outside.</p>
+<h2 id="the-comparison-with-the-complex-case">The Comparison with the Complex Case</h2>
+<h3 id="the-square-is-not-onto">The Square Is Not Onto</h3>
+<p>Over $\mathbb{C}$ the map $z\mapsto z^2$ is onto, and the equation $z^2=w$ has two solutions for every $w\neq0$ and one for $w=0$. Here the map is onto the forward cone and no further, and its fibres have four, two, one and no points. The obstruction is the ring and not the map: the squaring of the idempotent coordinates is the squaring of $\mathbb{R}$, which is onto $\mathbb{R}_{\ge0}$, and the transport back gives a cone where the complex case gives the plane.</p>
+<h3 id="one-critical-point-there">One Critical Point There</h3>
+<p>Over $\mathbb{C}$ the differential of $z\mapsto z^2$ is the multiplication by $2z$, invertible for every $z\neq0$, so the critical set is the origin alone. Here the critical set is the pair of null lines: the multiplication by $2Q$ is singular exactly when $2Q$ is a zero divisor. The two critical sets are the two faces of one fact, that the multiplication by a non-zero element of $\mathbb{C}$ is always injective and the multiplication by a zero divisor of $\mathbb{C}_{\mathrm{spl}}$ never is.</p>
+<h3 id="the-counts-compared">The Counts Compared</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>The value</th>
+<th>Over $\mathbb{C}$</th>
+<th>Over $\mathbb{C}_{\mathrm{spl}}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>interior of the image</td>
+<td>$2$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>boundary of the image, off the apex</td>
+<td>$2$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>the apex</td>
+<td>$1$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>outside the image</td>
+<td>—</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The complex image is the whole plane, so it has no outside; the split image is a cone, so it has one. The count of two at every non-zero complex value becomes the count of four on the interior and of zero outside, and the change of count is the change of the image.</p>
+<h2 id="summary">Summary</h2>
+<p>The square map of the split-complex space has the image the forward cone $q\ge\lvert q'\rvert$, and it is not onto: $-1$ is not a square, and no element outside the cone is. Its differential at $Q$ is the multiplication by $2Q$, of Jacobian determinant $4(q^2-q'^2)=4N(Q)$, so the critical set is the pair of null lines and the map is a local diffeomorphism everywhere else.</p>
+<p>The fibres have four points on the interior of the cone, two on its boundary minus the origin, one at the origin and none outside; the four preimages of an interior value fall into the two sheets $N(\Xi)>0$ and $N(\Xi)<0$, each mapped two-to-one onto the interior, and the two sheets meet on the null lines, which are the branch locus. The four branches are the four roots, global on the interior because that region is simply connected.</p>
+<p>Over $\mathbb{C}$ the square is onto and its only critical point is the origin; over $\mathbb{C}_{\mathrm{spl}}$ the image is a cone whose boundary is the image of the critical set. Both differences come from one fact: the multiplication by a non-zero element of the split ring need not be injective, and it fails exactly on the null lines.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\sigma(Q)=Q^2$</td>
+<td>The square map</td>
+</tr>
+<tr>
+<td>$\sigma(q,q')=(q^2+q'^2,2qq')$</td>
+<td>The square map on the coordinates</td>
+</tr>
+<tr>
+<td>$\sigma(Q)_\pm=Q_\pm^2$</td>
+<td>The square map in idempotent coordinates</td>
+</tr>
+<tr>
+<td>$\mathcal{C}_+=\{q\ge\lvert q'\rvert\}$</td>
+<td>The forward cone, the image</td>
+</tr>
+<tr>
+<td>$D\sigma(Q)=2Q\cdot$</td>
+<td>The differential, the multiplication by $2Q$</td>
+</tr>
+<tr>
+<td>$J_\sigma(Q)=4(q^2-q'^2)=4N(Q)$</td>
+<td>The Jacobian determinant</td>
+</tr>
+<tr>
+<td>$\mathbb{R}\Pi_+\cup\mathbb{R}\Pi_-$</td>
+<td>The critical set and the branch locus of the image</td>
+</tr>
+<tr>
+<td>$\Xi_{\epsilon_+\epsilon_-}$</td>
+<td>The four inverse branches</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>John W. Milnor, <em>Topology from the Differentiable Viewpoint</em> (Princeton University Press, 2nd ed. 1997), for regular values, the inverse function theorem and the count of preimages.</li>
+<li>Morris W. Hirsch, <em>Differential Topology</em> (Springer, Graduate Texts in Mathematics 33, 1976), for the rank of a differentiable map and the structure of its critical set.</li>
+<li>Isaak Yaglom, <em>Complex Numbers in Geometry</em> (Academic Press, 1968), for the squaring map of the split plane and its cone.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge University Press, 2nd ed. 2001), for the square map of a Clifford algebra and its degenerate fibres.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, Graduate Texts in Mathematics 88, 1982), for the reduction of a squaring to the idempotent coordinates.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

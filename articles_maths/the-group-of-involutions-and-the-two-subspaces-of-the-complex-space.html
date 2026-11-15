@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Group of Involutions and the Two Subspaces of the Complex Space — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-group-of-involutions-and-the-two-subspaces-of-the-complex-space"><strong>The Group of Involutions and the Two Subspaces of the Complex Space</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The complex algebra carries one distinguished map beside its product: the conjugation. Read as an operation of the algebra, that map is an involution, and the family of all such involutions is a group. This article computes the group, gives the sign table of its members, lists the four fixed and anti-fixed spaces, names the one decomposition of the space that carries content, counts the intersections, and shows that every count is forced by the field property.</p>
+<p>The answer is short. The group is $V_2$, the two-element group, which is here the Galois group of $\mathbb{C}/\mathbb{R}$. The four spaces are the whole space and the origin for the identity, the real line and the imaginary line for the conjugation. One decomposition carries content, and one intersection is non-zero. The biquaternion algebra, by contrast, has a Klein four-group of involutions, three content-bearing decompositions and fifteen pairwise intersections of its six spaces. The whole difference comes from one fact: $\mathbb{C}$ is commutative, so an anti-automorphism is an automorphism, and there is no room for a second proper involution.</p>
+<p>The multiplication of the field is <em>Complex Algebra</em>; the class catalogue that records the fixed field is <em>The Classes of Element of the Complex Algebra</em>; the field property that forces the count is <em>The Specificities of the Complex Algebra</em>; the Galois reading of the same two-element group is <em>Galois Theory of ℂ/ℝ</em>. The two products the space carries are <em>The Two Products of the Complex Space</em>, and the two forms are <em>The Two Forms and the Two Algebraic Norms of the Complex Space</em>.</p>
+<p><strong>Interpretation.</strong> The element is $Q=q+iq'$ with the real coordinates $q$ and $q'$, and a second element is $Q_2=q_2+iq'_2$. The base involution is the bar, $\bar Q=q-iq'$, and the Hermitian conjugation is the same map, ${}^{*}=\bar{\cdot}$. The quaternionic conjugation ${}^{\natural}$ of the biquaternion corpus is the identity map on $\mathbb{C}$, because it acts on a vector part and this algebra has none.</p>
+<h2 id="the-group-of-involutions">The Group of Involutions</h2>
+<p><strong>Definition.</strong> An <strong>involution of the algebra</strong> is a real-linear map $\mathrm{J}$ of $\mathbb{C}$ into itself with $\mathrm{J}^{2}=\mathrm{id}$ that is either an automorphism or an anti-automorphism of the ring, that is, $\mathrm{J}(Q_1Q_2)=\mathrm{J}(Q_1)\mathrm{J}(Q_2)$ or $\mathrm{J}(Q_1Q_2)=\mathrm{J}(Q_2)\mathrm{J}(Q_1)$ for all $Q_1,Q_2$.</p>
+<p><strong>Theorem.</strong> The involutions of $\mathbb{C}$ are exactly the identity and the conjugation, and they form the group $V_2$.</p>
+<p><em>Proof.</em> A real-linear $\mathrm{J}$ is determined by the two values $\mathrm{J}(1)$ and $\mathrm{J}(i)$, and the ring property forces $\mathrm{J}(1)=1$. The relation $i^{2}=-1$ is preserved or reversed, and in either case it gives $\mathrm{J}(i)^{2}=-1$, so $\mathrm{J}(i)$ is one of the two roots of $-1$, namely $i$ or $-i$. Both choices occur: $\mathrm{J}(i)=i$ gives the identity and $\mathrm{J}(i)=-i$ gives the conjugation, which is additive, real-linear, of order two, and multiplicative. Hence there are exactly two involutions, and a group of two elements is $V_2$.</p>
+<p><strong>Remark (why the anti-automorphisms add nothing).</strong> In a commutative ring an anti-automorphism is an automorphism, since the two product rules coincide. The definition above therefore names one class twice, and the count of two is a count of maps, not of kinds.</p>
+<p><strong>Remark (the collapse of the Klein group).</strong> On the biquaternion algebra the four maps $\{\mathrm{id},{}^{\natural},{}^{*},{}^{\natural*}\}$ are distinct involutions and form the Klein four-group $V_4$. Here ${}^{\natural}$ is the identity and ${}^{*}$ is the bar, so the four settings of the general theory collapse two-and-two, and the group falls from $V_4$ to $V_2$. The collapse is not an accident of notation: ${}^{\natural}$ negates the vector part of an element, and a complex element has no vector part. The table records the four and their images.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the biquaternion involution</th>
+<th>its image on $\mathbb{C}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{id}$</td>
+<td>$\mathrm{id}$</td>
+</tr>
+<tr>
+<td>${}^{\natural}$</td>
+<td>$\mathrm{id}$</td>
+</tr>
+<tr>
+<td>${}^{*}$</td>
+<td>$\bar{\cdot}$</td>
+</tr>
+<tr>
+<td>${}^{\natural*}$</td>
+<td>$\bar{\cdot}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-sign-table-of-the-two-involutions">The Sign Table of the Two Involutions</h2>
+<p>Both involutions fix the unit and act on the imaginary unit by a sign. The table is the whole content of the section.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>involution</th>
+<th>$1$</th>
+<th>$i$</th>
+<th>fixed space</th>
+<th>anti-fixed space</th>
+<th>sign on $\mathbb{R}$</th>
+<th>sign on $i\mathbb{R}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{id}$</td>
+<td>$1$</td>
+<td>$i$</td>
+<td>$\mathbb{C}$</td>
+<td>$\{0\}$</td>
+<td>$+$</td>
+<td>$+$</td>
+</tr>
+<tr>
+<td>$\bar{\cdot}$</td>
+<td>$1$</td>
+<td>$-i$</td>
+<td>$\mathbb{R}$</td>
+<td>$i\mathbb{R}$</td>
+<td>$+$</td>
+<td>$-$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The two rows differ in one entry, the sign on the imaginary line. Every statement of the article is read from that entry: the fixed space of the conjugation is the real line because the sign is $+$ there, and its anti-fixed space is the imaginary line because the sign is $-$ there.</p>
+<h2 id="the-four-spaces">The Four Spaces</h2>
+<p><strong>Definition.</strong> For an involution $\mathrm{J}$ the <strong>fixed space</strong> is $F_{\mathrm{J}}=\{Q:\mathrm{J}(Q)=Q\}$ and the <strong>anti-fixed space</strong> is $A_{\mathrm{J}}=\{Q:\mathrm{J}(Q)=-Q\}$. Both are real subspaces.</p>
+<h3 id="the-two-trivial-spaces-of-the-identity">The Two Trivial Spaces of the Identity</h3>
+<p>The identity fixes every element and anti-fixes none: $F_{\mathrm{id}}=\mathbb{C}$ and $A_{\mathrm{id}}=\{0\}$. The two spaces are the whole and the origin, and neither carries information. A decomposition built on them is the trivial one, $\mathbb{C}=\mathbb{C}\oplus\{0\}$.</p>
+<h3 id="the-real-line">The Real Line</h3>
+<p><strong>Proposition.</strong> $F_{\bar{\cdot}}=\mathbb{R}$.</p>
+<p><em>Proof.</em> Write $Q=q+iq'$. The condition $\bar Q=Q$ reads $q-iq'=q+iq'$, hence $q'=0$, hence $Q\in\mathbb{R}$; and every real $q$ satisfies it.</p>
+<p>The real line is a subfield, of real dimension one. It is the fixed field of the group $V_2$ in the sense of Galois theory, which is the content of <em>Galois Theory of ℂ/ℝ</em>.</p>
+<h3 id="the-imaginary-line">The Imaginary Line</h3>
+<p><strong>Proposition.</strong> $A_{\bar{\cdot}}=i\mathbb{R}$.</p>
+<p><em>Proof.</em> The condition $\bar Q=-Q$ reads $q-iq'=-q-iq'$, hence $q=0$, hence $Q=iq'$ with $q'$ real; and every such element satisfies it.</p>
+<p>The imaginary line is a real subspace of dimension one, and it is not a subalgebra: the product of $i$ with $i$ is $-1$, which is real. It is exactly the set on which the conjugation is the negative of the identity.</p>
+<p><strong>Theorem.</strong> $\mathbb{C}=F_{\bar{\cdot}}\oplus A_{\bar{\cdot}}=\mathbb{R}\oplus i\mathbb{R}$ as real vector spaces, and the decomposition is direct.</p>
+<p><em>Proof.</em> Every $Q=q+iq'$ is the sum of $q$ in the real line and $iq'$ in the imaginary line, and the two lines meet only at the origin.</p>
+<h2 id="the-one-content-bearing-decomposition">The One Content-Bearing Decomposition</h2>
+<p><strong>Definition.</strong> The decomposition attached to $\mathrm{J}$ is <strong>content-bearing</strong> when both summands are non-zero.</p>
+<p><strong>Theorem.</strong> Exactly one of the two decompositions is content-bearing, namely $\mathbb{C}=\mathbb{R}\oplus i\mathbb{R}$.</p>
+<p><em>Proof.</em> The decomposition of the identity is $\mathbb{C}\oplus\{0\}$, and its second summand is zero, so it carries no content. The decomposition of the conjugation has the two lines of dimension one, so both summands are non-zero.</p>
+<p><strong>Remark (the count against the biquaternion algebra).</strong> The biquaternion algebra carries three such decompositions, into centre and vector part, into quaternion and antiquaternion subspaces, and into Hermitian and anti-Hermitian subspaces, one to each of the three proper involutions of $V_4$. Here there is one, because there is one proper involution. The count of decompositions equals the count of non-identity elements of the group, and the group has one non-identity element.</p>
+<h2 id="the-one-non-zero-intersection">The One Non-Zero Intersection</h2>
+<p>The four spaces are $\mathbb{C}$, $\mathbb{R}$, $\{0\}$ and $i\mathbb{R}$. The table gives the six pairwise intersections with their real dimensions.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the pair</th>
+<th>the intersection</th>
+<th>real dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$F_{\mathrm{id}}\cap F_{\bar{\cdot}}$</td>
+<td>$\mathbb{R}$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$F_{\mathrm{id}}\cap A_{\bar{\cdot}}$</td>
+<td>$i\mathbb{R}$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$F_{\mathrm{id}}\cap A_{\mathrm{id}}$</td>
+<td>$\{0\}$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$F_{\bar{\cdot}}\cap A_{\mathrm{id}}$</td>
+<td>$\{0\}$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$F_{\bar{\cdot}}\cap A_{\bar{\cdot}}$</td>
+<td>$\{0\}$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$A_{\bar{\cdot}}\cap A_{\mathrm{id}}$</td>
+<td>$\{0\}$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="the-two-non-zero-entries">The Two Non-Zero Entries</h3>
+<p><strong>Proposition.</strong> Of the six pairs, two meet non-trivially, and both have the whole algebra as a member: $\mathbb{C}\cap\mathbb{R}=\mathbb{R}$ and $\mathbb{C}\cap i\mathbb{R}=i\mathbb{R}$.</p>
+<p><em>Proof.</em> The table gives the six intersections, and the only non-zero entries are the first two.</p>
+<p><strong>Proposition.</strong> The real line and the imaginary line meet only at the origin.</p>
+<p><em>Proof.</em> An element of both is $q=iq'$ with $q$ and $q'$ real, hence $q=q'=0$.</p>
+<p><strong>Theorem.</strong> Among the spaces of one kind, exactly one pair meets non-trivially, and the intersection is the real line: the two fixed spaces meet in $\mathbb{R}$, while the two anti-fixed spaces meet in $\{0\}$.</p>
+<p><em>Proof.</em> The fixed spaces are $\mathbb{C}$ and $\mathbb{R}$, whose intersection is $\mathbb{R}$; the anti-fixed spaces are $\{0\}$ and $i\mathbb{R}$, whose intersection is $\{0\}$.</p>
+<p><strong>Remark (why the count is one and not two).</strong> Read over all six pairs the number of non-zero intersections is two, and the second one adds nothing: $\mathbb{C}\cap i\mathbb{R}$ is the anti-fixed space read once more, not a new space. The count that carries information is the count of the same-kind comparisons, and that count is one. The real line is therefore the one non-zero intersection: it is at once the fixed space of the conjugation, the fixed field of the group, and the meet of the whole algebra with the proper fixed space.</p>
+<p><strong>Remark (the count against the biquaternion algebra).</strong> On $\mathbb{B}$ the same construction gives six spaces and fifteen pairs, and the fifteen intersections have dimensions $0$, $1$ and $3$. Here four spaces give six pairs, and one same-kind pair meets non-trivially. The number falls with the number of spaces, and it falls for the reason the whole article gives: the group has two elements, so it produces four spaces and not six.</p>
+<h2 id="why-the-count-is-forced">Why the Count Is Forced</h2>
+<p>Four statements were proved and each reduces to a count of elements of $V_2$. Two involutions give one proper involution, hence one content-bearing decomposition and one proper fixed space; the proper fixed space can meet the whole algebra in one non-trivial way, and it meets the anti-fixed space trivially.</p>
+<p>The strongest objection is that the classification of the real-linear involutions of the plane is larger than the classification of the algebra involutions. There are, for instance, the reflections, and any real-linear map with square one and eigenvalues $+1$ and $-1$ is an involution of the space. The answer is that those maps are not involutions of the algebra: the definition requires the product to be preserved or reversed, and a reflection does not preserve it. If the wider class were admitted, the group would be infinite, the fixed spaces would be arbitrary lines, and no count would be forced at all. The algebra structure is what makes the count finite and what makes it two.</p>
+<p>The second objection is that a four-element group might be expected, on the pattern of $\mathbb{B}$. The answer is again the field property: a second proper involution would have to send $i$ to a root of $-1$ different from $\pm i$, and there is none. The Klein group of the biquaternion algebra exists because that algebra is four-dimensional over $\mathbb{C}$ and carries a vector part to negate; the complex algebra is one-dimensional and carries none.</p>
+<h2 id="summary">Summary</h2>
+<p>The involutions of the complex algebra are the identity and the conjugation, and they form $V_2$, not the Klein four-group of $\mathbb{B}$: the quaternionic conjugation is the identity here, and in a commutative ring an anti-automorphism is an automorphism. The sign table has one non-trivial entry, the sign on the imaginary line. The four spaces are $\mathbb{C}$ and $\{0\}$ for the identity, $\mathbb{R}$ and $i\mathbb{R}$ for the conjugation; the real line is a subfield and the imaginary line is a subspace that is not a subalgebra. One decomposition, $\mathbb{C}=\mathbb{R}\oplus i\mathbb{R}$, carries content, against the three of $\mathbb{B}$, and one intersection of two spaces of one kind, the real line, is non-zero, against the fifteen pairs of $\mathbb{B}$. Every count follows from the field property: one proper involution, one proper fixed space, and no second root of $-1$ to build a second one.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$Q=q+iq'$</td>
+<td>a complex element, with the real coordinates $q$ and $q'$</td>
+</tr>
+<tr>
+<td>$\bar Q=q-iq'$</td>
+<td>the conjugation; ${}^{*}=\bar{\cdot}$; ${}^{\natural}=\mathrm{id}$</td>
+</tr>
+<tr>
+<td>$\mathrm{J}$</td>
+<td>an involution of the algebra, real-linear, of order two</td>
+</tr>
+<tr>
+<td>$F_{\mathrm{J}}$, $A_{\mathrm{J}}$</td>
+<td>the fixed space and the anti-fixed space of $\mathrm{J}$</td>
+</tr>
+<tr>
+<td>$V_2$</td>
+<td>the two-element group of the involutions, here the Galois group of $\mathbb{C}/\mathbb{R}$</td>
+</tr>
+<tr>
+<td>$V_4$</td>
+<td>the Klein four-group of the four involutions of $\mathbb{B}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, Colloquium Publications 44 (American Mathematical Society, 1998), for algebras with involution, the group they generate and the decomposition attached to each.</li>
+<li>Serge Lang, <em>Algebra</em>, Graduate Texts in Mathematics 211 (Springer, third edition, 2002), for automorphisms of a field extension, the Galois group of a quadratic extension and its fixed field.</li>
+<li>Emil Artin, <em>Galois Theory</em>, Notre Dame Mathematical Lectures 2 (Dover, 1998), for the correspondence between the subgroups of the Galois group and the intermediate fields in the quadratic case.</li>
+<li>Nathan Jacobson, <em>Basic Algebra I</em> (Dover, second edition, 2009), for the field axioms and the two roots of $-1$ in the complex field.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

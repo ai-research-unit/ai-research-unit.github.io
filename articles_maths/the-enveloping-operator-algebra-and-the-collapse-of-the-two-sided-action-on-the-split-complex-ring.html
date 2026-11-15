@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Enveloping Operator Algebra and the Collapse of the Two-Sided Action on the Split-Complex Ring — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-enveloping-operator-algebra-and-the-collapse-of-the-two-sided-action-on-the-split-complex-ring"><strong>The Enveloping Operator Algebra and the Collapse of the Two-Sided Action on the Split-Complex Ring</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The enveloping algebra of the split-complex ring over $\mathbb{R}$ is $\mathbb{R}^4$, and it acts on the ring by $\sum B_i\otimes C_i:X\mapsto\sum B_iXC_i$. The action collapses: every such operator is the multiplication by a single element, and the map from $\mathbb{R}^4$ to the operators has a kernel of dimension two. This article computes the enveloping algebra, the four idempotents that generate it, the image and the kernel of the action, and the sense in which the two-sided operators add nothing to the one-sided ones.</p>
+<p>The claim is that the collapse is exactly commutativity. In a commutative ring the left and the right multiplication by an element agree, so a product $BXC$ depends on $B$ and $C$ only through $BC$; the two-sided family is therefore not a family of two parameters but the image of the multiplication map, and the multiplication map of $\mathbb{R}^4$ onto $\mathbb{R}^2$ loses half the enveloping algebra. Over the biquaternions, where the left and right multiplications differ, no such collapse happens, and that comparison is the sharpest way to see what the split ring is missing.</p>
+<p>The ring is <em>Split-Complex Algebra</em>, its idempotents are <em>Ideals and Peirce Decomposition of the Split-Complex Algebra</em>, the multiplication operators are <em>Split-Complex Linear Representations</em>, and the modules on which the algebra acts are <em>Modules over the Split-Complex Ring</em>.</p>
+<h2 id="the-enveloping-algebra">The Enveloping Algebra</h2>
+<h3 id="the-definition">The Definition</h3>
+<p><strong>Definition.</strong> The <strong>enveloping algebra</strong> of $\mathbb{C}_{\mathrm{spl}}$ over $\mathbb{R}$ is $E=\mathbb{C}_{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{C}_{\mathrm{spl}}$, with the multiplication $(B\otimes C)(B'\otimes C')=BB'\otimes CC'$.</p>
+<p>It is a real algebra of dimension four, and it is the algebra whose modules are the bimodules of the ring.</p>
+<h3 id="the-tensor-square-is-math14">The Tensor Square Is $\mathbb{R}^4$</h3>
+<p><strong>Theorem.</strong> $E\cong\mathbb{R}^4$ as a real algebra.</p>
+<p><strong>Proof.</strong> The ring is $\mathbb{R}^2$ as a real algebra, and the tensor product distributes over the direct sum: $\mathbb{R}^2\otimes\mathbb{R}^2\cong\mathbb{R}^4$, the four summands being $\Pi_i\otimes\Pi_j$ for $i,j\in\{+,-\}$, with the componentwise product.</p>
+<p>The four summands are the four lines $\mathbb{R}(\Pi_i\otimes\Pi_j)$, and each is an ideal of $E$ isomorphic to $\mathbb{R}$.</p>
+<h3 id="the-four-idempotents">The Four Idempotents</h3>
+<p><strong>Proposition.</strong> The elements</p>
+<p>$$
+\Pi_+\otimes\Pi_+, \quad \Pi_+\otimes\Pi_-, \quad \Pi_-\otimes\Pi_+, \quad \Pi_-\otimes\Pi_-
+$$</p>
+<p>are orthogonal idempotents summing to $1\otimes1$, and they are $\tfrac14(1\pm j)\otimes(1\pm j)$.</p>
+<p><strong>Proof.</strong> $(\Pi_i\otimes\Pi_j)^2=\Pi_i^2\otimes\Pi_j^2=\Pi_i\otimes\Pi_j$, and the products of distinct pairs vanish componentwise; the sum of the four is $(\Pi_++\Pi_-)\otimes(\Pi_++\Pi_-)=1\otimes1$. The displayed form is the expansion of $\tfrac14(1\pm j)(1\pm j)$.</p>
+<p>So $E$ is the product of four copies of $\mathbb{R}$, and its identity is $1\otimes1$, not $1$. The distinction matters for the action: the idempotent $1\otimes1$ acts as the identity operator, while each of the four small idempotents acts as a multiplication by an idempotent of the ring.</p>
+<h2 id="the-two-sided-action">The Two-Sided Action</h2>
+<h3 id="the-definition_1">The Definition</h3>
+<p><strong>Definition.</strong> The <strong>two-sided action</strong> of $E$ on $\mathbb{C}_{\mathrm{spl}}$ is</p>
+<p>$$
+\Bigl(\sum_i B_i\otimes C_i\Bigr)\cdot X=\sum_i B_iXC_i .
+$$</p>
+<p>It is a representation of $E$ on the real vector space of dimension two, and it is the action of the enveloping algebra by which the ring is a bimodule over itself.</p>
+<h3 id="the-collapse">The Collapse</h3>
+<p><strong>Theorem.</strong> For every $e=\sum_i B_i\otimes C_i$ and every $X$,</p>
+<p>$$
+e\cdot X=X\,\sum_i B_iC_i .
+$$</p>
+<p><strong>Proof.</strong> $BX$ and $XC$ are products in a commutative ring, so $BXC=XBC$, and the sum gives $X\sum_iB_iC_i$.</p>
+<p>Every two-sided operator is therefore a one-sided one: it is the multiplication by the element $m(e)=\sum_iB_iC_i$, on the left and on the right indifferently. The operator depends on $e$ only through $m(e)$, and the two-sided operators are exactly the multiplication operators.</p>
+<h3 id="the-image-and-the-kernel">The Image and the Kernel</h3>
+<p><strong>Theorem.</strong> The map $e\mapsto(e\cdot)$ from $E$ to $\operatorname{End}_{\mathbb{R}}(\mathbb{C}_{\mathrm{spl}})$ has image of real dimension two and kernel of real dimension two.</p>
+<p><strong>Proof.</strong> The map factors as $E\to\mathbb{C}_{\mathrm{spl}}\to\operatorname{End}_{\mathbb{R}}(\mathbb{C}_{\mathrm{spl}})$, the first arrow the multiplication $m$ and the second the multiplication operator $L_Q$. The second is injective and its image has dimension two; the first is onto and its kernel has dimension $4-2=2$.</p>
+<p>In the four idempotents the kernel is spanned by the two off-diagonal ones, $\Pi_+\otimes\Pi_-$ and $\Pi_-\otimes\Pi_+$: their products $B_+C_-$ and $B_-C_+$ vanish, so they act by zero. The action sees the two diagonal coefficients of the tensor and ignores the two off-diagonal ones; the algebra $E$ is four-dimensional, the operator algebra it generates is two-dimensional, and the loss is exactly the two idempotents that mix the components.</p>
+<h3 id="the-non-faithfulness">The Non-Faithfulness</h3>
+<p><strong>Corollary.</strong> The action is not faithful, and the ring is not a faithful module over its enveloping algebra.</p>
+<p><strong>Proof.</strong> The kernel is two-dimensional, so two distinct elements of $E$ act by the same operator; and a faithful action has trivial kernel.</p>
+<p>The failure is measured by the two off-diagonal idempotents, and it is the module-level statement of the Peirce decomposition: an operator of the enveloping algebra that mixes the two components acts by zero, because the two components of the ring multiply to zero and the two components of $X$ cannot see the mixing.</p>
+<h2 id="the-one-sided-operators">The One-Sided Operators</h2>
+<h3 id="the-multiplication-operators">The Multiplication Operators</h3>
+<p>The one-sided operators are the maps $X\mapsto AX$ with $A\in\mathbb{C}_{\mathrm{spl}}$, and they form a real vector space of dimension two, isomorphic to the ring itself. In the basis $1,j$ the operator is the matrix</p>
+<p>$$
+\begin{pmatrix}a&b\\ b&a\end{pmatrix} ,
+$$</p>
+<p>the matrix of the multiplication by $A=a+bj$, and the space of these matrices is the space of the symmetric $2\times2$ matrices with equal diagonal entries.</p>
+<h3 id="the-two-sided-operators-add-nothing">The Two-Sided Operators Add Nothing</h3>
+<p><strong>Theorem.</strong> The set of two-sided operators $\{X\mapsto\sum_iB_iXC_i\}$ is the set of one-sided operators, and the left and right multiplications coincide.</p>
+<p><strong>Proof.</strong> The collapse gives $\sum_iB_iXC_i=XM$ with $M=\sum_iB_iC_i$, which is a left multiplication by $M$, and $XM=MX$ in a commutative ring, so it is also a right multiplication by $M$. Conversely every left multiplication is a two-sided operator with a single term, $1\otimes M$.</p>
+<p>So the two-sided family is not larger than the one-sided one: it is the same two-dimensional space, reached twice. A bimodule over the split ring is a module, and the bimodule structure carries no information that the module structure does not.</p>
+<h3 id="the-composition">The Composition</h3>
+<p>The composition of two-sided operators is again two-sided, and on the parameters it is the multiplication: the operator of $e$ composed with the operator of $f$ is the operator of $m(e)m(f)$, which is the operator of $m(ef)$. The image is therefore a subalgebra of $\operatorname{End}_{\mathbb{R}}(\mathbb{C}_{\mathrm{spl}})$, isomorphic to the ring, and the action is a surjection of $E$ onto that subalgebra with kernel of dimension two.</p>
+<h2 id="the-comparison">The Comparison</h2>
+<h3 id="the-complex-case">The Complex Case</h3>
+<p>Over $\mathbb{C}$ the ring is commutative, so the collapse holds there too: $\sum B_iXC_i=X\sum B_iC_i$. The enveloping algebra over $\mathbb{R}$ is $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$, of real dimension four, and the action again sees only the product, so again two real parameters survive out of four. The complex case and the split case coincide in this respect, and the coincidence is commutativity and nothing else.</p>
+<p>What differs is the arithmetic of the surviving parameters: over $\mathbb{C}$ the multiplication operator $L_Q$ is the multiplication by a complex number and its matrix is a rotation-dilation, invertible for every $Q\neq0$; here the matrix is the one displayed above and it is singular on the two null lines. The collapse of the action is the same, and the invertibility of the collapse is not.</p>
+<h3 id="the-biquaternion-case">The Biquaternion Case</h3>
+<p>Over $\mathbb{B}$ the ring is not commutative, and $BXC$ is not $XBC$. The left multiplication by $B$ and the right multiplication by $C$ are different operators, the map $B\otimes C\mapsto(B\mapsto BXC)$ has no kernel, and the two-sided operators are strictly more than the one-sided ones. The biquaternion enveloping algebra is therefore a genuine operator algebra, and the split ring's is not: the whole difference is the commutativity that the split ring has and $\mathbb{B}$ has not.</p>
+<h3 id="why-the-collapse-happens">Why the Collapse Happens</h3>
+<p>The collapse has one cause and one measure. <strong>The cause</strong> is the identity $BXC=XBC$, which is commutativity. <strong>The measure</strong> is the kernel of the multiplication $m:E\to\mathbb{C}_{\mathrm{spl}}$, of dimension two, spanned by the two idempotents that mix the components. Where the ring is a product of two copies of a field, the enveloping algebra is a product of four, and the action of the product is the action of its diagonal: the two off-diagonal factors act by zero.</p>
+<h2 id="summary">Summary</h2>
+<p>The enveloping algebra of the split ring over $\mathbb{R}$ is $\mathbb{R}^4$, with the four orthogonal idempotents $\Pi_i\otimes\Pi_j$ summing to $1\otimes1$. Its action on the ring by $\sum B_i\otimes C_i:X\mapsto\sum B_iXC_i$ collapses to $X\mapsto X\sum_iB_iC_i$, so every two-sided operator is the multiplication by a single element.</p>
+<p>The image of the action has real dimension two and its kernel has real dimension two, spanned by the two off-diagonal idempotents $\Pi_+\otimes\Pi_-$ and $\Pi_-\otimes\Pi_+$; the action is not faithful, and the two-sided operators add nothing to the one-sided ones. The composition of the operators is the multiplication of the parameters, and the image is a copy of the ring inside the endomorphism algebra.</p>
+<p>The collapse is commutativity. Over $\mathbb{C}$ it happens as well, the enveloping algebra over $\mathbb{R}$ being $\mathbb{C}\oplus\mathbb{C}$ with two of its four real parameters surviving; over $\mathbb{B}$ it does not happen, because the left and right multiplications differ and the two-sided operators form a strictly larger family.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$E=\mathbb{C}_{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{C}_{\mathrm{spl}}$</td>
+<td>The enveloping algebra, isomorphic to $\mathbb{R}^4$</td>
+</tr>
+<tr>
+<td>$\Pi_i\otimes\Pi_j$, $i,j\in\{+,-\}$</td>
+<td>The four orthogonal idempotents</td>
+</tr>
+<tr>
+<td>$e\cdot X=\sum_iB_iXC_i$</td>
+<td>The two-sided action</td>
+</tr>
+<tr>
+<td>$m(e)=\sum_iB_iC_i$</td>
+<td>The multiplication, the collapse</td>
+</tr>
+<tr>
+<td>$e\cdot X=Xm(e)$</td>
+<td>The collapsed operator, a multiplication</td>
+</tr>
+<tr>
+<td>$\dim\ker m=2$</td>
+<td>The two off-diagonal idempotents</td>
+</tr>
+<tr>
+<td>$L_Q$</td>
+<td>The multiplication operator by $Q$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$</td>
+<td>The complex enveloping algebra over $\mathbb{R}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Frank W. Anderson and Kent R. Fuller, <em>Rings and Categories of Modules</em> (Springer, Graduate Texts in Mathematics 13, 2nd ed. 1992), for bimodules, the enveloping algebra and the two-sided action.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, Graduate Texts in Mathematics 88, 1982), for the tensor product of algebras, the idempotents of a product and the Peirce decomposition.</li>
+<li>N. Bourbaki, <em>Algebra I</em>, Chapters 1-3 (Springer, 1989), for the tensor product over a field and its identification with a product of copies of the field.</li>
+<li>Paul M. Cohn, <em>Basic Algebra: Groups, Rings and Fields</em> (Springer, 2003), for the left and right regular representations and the module structure of a ring over itself.</li>
+<li>Israel Gelfand and Mark Naimark, <em>Normed Rings</em> (Noordhoff, 1964), for the operator algebras generated by multiplications and their faithfulness.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

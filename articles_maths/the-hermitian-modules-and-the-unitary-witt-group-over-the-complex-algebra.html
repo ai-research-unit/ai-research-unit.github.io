@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Hermitian Modules and the Unitary Witt Group over the Complex Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-hermitian-modules-and-the-unitary-witt-group-over-the-complex-algebra"><strong>The Hermitian Modules and the Unitary Witt Group over the Complex Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A Hermitian module over the complex algebra is a complex vector space with a Hermitian form. Every module over a field is free, so the module is classified by its rank; the forms of the positive cone are then classified by the rank alone, since every definite form of rank $n$ is congruent to the identity matrix. Beyond the positive cone the invariant is the inertia, and the classes modulo the hyperbolic forms form the unitary Witt group, which is $\mathbb{Z}$.</p>
+<p>The article proves the freedom, exhibits the canonical form and the unitary group, classifies the forms by inertia, computes the Witt group by the signature, and separates the isotropic forms of the plain product from the Hermitian ones, which have no isotropic vector in the positive cone. The comparison with the split case closes the account.</p>
+<p>The field property that makes every module free is <em>The Specificities of the Complex Algebra</em>; the two forms are <em>The Two Forms and the Two Algebraic Norms of the Complex Space</em>; the cone is <em>The Positivity and the Ray of Squares of the Complex Space</em>; the general theory of the two-sided operators on a Hermitian module is <em>Bilinear Operators on a Hermitian Module with Hermitian Adjoint</em>, and the general Witt theory is <em>Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint</em>. The biquaternion instance is <em>Hermitian Forms over the Biquaternion Algebra and the Unitary Witt Group with Hermitian Adjoint</em>, where the module of rank one is already two-dimensional.</p>
+<p><strong>Interpretation.</strong> The algebra is $\mathbb{C}$ with the bar, and ${}^{*}=\bar{\cdot}$ is the conjugation. The free module of rank $n$ is $\mathbb{C}^{n}$ with the coordinatewise action, and its elements are $x=(x_1,\dots,x_n)$, $y=(y_1,\dots,y_n)$. A Hermitian form is written $h(x,y)=\sum_{k}x_ky_k^{*}$, and a general one is $h_{G}(x,y)=\sum_{k,l}x_kG_{kl}y_l^{*}$ with $G$ a Hermitian matrix. The inertia of $h$ is the triple $(n,m,r)$ of positive, negative and zero directions, and the signature is $\sigma=n-m$.</p>
+<h2 id="the-hermitian-modules">The Hermitian Modules</h2>
+<p><strong>Definition.</strong> A <strong>Hermitian module</strong> over the algebra is a module $M$ together with a map $h:M\times M\to\mathbb{C}$ that is additive in each argument, $\mathbb{C}$-linear in the first and conjugate-linear in the second, $h(x\lambda,y)=\lambda h(x,y)$ and $h(x,y\mu)=h(x,y)\bar\mu$, and Hermitian, $h(y,x)=\overline{h(x,y)}$.</p>
+<p><strong>Proposition.</strong> Every module over the algebra is free, so a Hermitian module is a complex vector space with a Hermitian form, and its underlying module is classified by its rank.</p>
+<p><em>Proof.</em> A module over a field is a vector space, and a vector space has a basis; the rank is the cardinal of a basis and classifies the space up to isomorphism.</p>
+<p><strong>Proposition.</strong> The Hermitian forms on the free module of rank $n$ are the Hermitian matrices: every form is $h_{G}$ for one Hermitian $G$, and the map $G\mapsto h_{G}$ is a bijection.</p>
+<p><em>Proof.</em> Given $h$, put $G_{kl}=h(e_k,e_l)$; the Hermitian symmetry of $h$ is the Hermitian symmetry of $G$, and sesquilinearity gives $h(x,y)=\sum_{k,l}x_kG_{kl}y_l^{*}$. Conversely each such expression is a Hermitian form.</p>
+<h2 id="the-canonical-form">The Canonical Form</h2>
+<p><strong>Definition.</strong> The <strong>canonical form</strong> on $\mathbb{C}^{n}$ is $h_{0}(x,y)=\sum_{k}x_ky_k^{*}$, of Gram matrix $I_n$.</p>
+<p><strong>Proposition.</strong> The canonical form is positive definite, and its norm is the squared Euclidean norm: $h_{0}(x,x)=\sum_{k}|x_k|^{2}$.</p>
+<p><em>Proof.</em> Each term $x_kx_k^{*}$ is a non-negative real, and the sum vanishes only when every coordinate does.</p>
+<p><strong>Theorem.</strong> Every positive definite Hermitian form of rank $n$ is congruent to the canonical form: there is an invertible $S$ with $S^{*}GS=I_n$.</p>
+<p><em>Proof.</em> A positive definite Hermitian $G$ has a positive definite square root $P$, and $G=P^{2}=P^{*}I_nP$, so $S=P$ works.</p>
+<p><strong>Corollary.</strong> The Hermitian modules of the positive cone are classified by their rank alone.</p>
+<p><em>Proof.</em> The module is classified by the rank, and the form of a fixed rank by the theorem.</p>
+<h2 id="the-unitary-group">The Unitary Group</h2>
+<p><strong>Definition.</strong> The <strong>unitary group</strong> is $\mathrm{U}(n)=\{U:U^{*}U=I_n\}$.</p>
+<p><strong>Proposition.</strong> $\mathrm{U}(n)$ is the automorphism group of the canonical form, it is a compact group of real dimension $n^{2}$, and it acts transitively on the level sets of $h_{0}$.</p>
+<p><em>Proof.</em> $h_{0}(Ux,Uy)=h_{0}(x,y)$ exactly when $U^{*}U=I_n$; the group is closed and bounded in the space of matrices; a unit vector is sent to any other by a unitary matrix.</p>
+<p><strong>Remark (the strongest objection).</strong> It may be objected that the unitary group is transitive on the forms of a fixed rank, and it is not. The orbit of the canonical form under congruence by unitary matrices is the canonical form itself, since $U^{*}I_nU=I_n$, so the transitivity fails at the first test. Two correct statements replace it. The group transitive on the positive definite forms of rank $n$ is the full linear group, by the theorem of the preceding section. The unitary group does diagonalise every Hermitian form, $G=U\Lambda U^{*}$ with $\Lambda$ real diagonal, so its orbits on the forms are the eigenvalue multisets; and the congruence classes, which forget the eigenvalues and keep only their signs, are the inertias. The unitary group is therefore the group of the canonical form's symmetries and the group that brings every form to diagonal shape, and it is not the group that moves one form to another.</p>
+<h2 id="the-classification-by-inertia">The Classification by Inertia</h2>
+<p><strong>Definition.</strong> The <strong>inertia</strong> of a Hermitian form is the triple $(n,m,r)$ of the numbers of positive, negative and zero eigenvalues of its Gram matrix; the <strong>rank</strong> is $n+m$ and the <strong>signature</strong> is $\sigma=n-m$.</p>
+<p><strong>Theorem (Sylvester's law).</strong> Two Hermitian forms over the algebra are congruent exactly when they have the same inertia. Every form is congruent to $\mathrm{diag}(1_{n},-1_{m},0_{r})$.</p>
+<p><em>Proof.</em> Diagonalise $G$ by a unitary change of coordinates and scale the non-zero diagonal entries by the positive square roots of their moduli; the congruences preserve the signs by the inertia theorem for Hermitian matrices, and the normal form is attained.</p>
+<p><strong>Proposition (the realification).</strong> The real form $\operatorname{Re}h$ on $\mathbb{R}^{2n}$ has signature $(2n,2m)$ and rank $2(n+m)$.</p>
+<p><em>Proof.</em> A complex line on which $h$ is positive is a real plane on which $\operatorname{Re}h$ is positive definite, since $h(x,x)=|x|^{2}h(u,u)$ for a unit $u$ on the line; a line on which $h$ is negative contributes a negative plane; and a null line contributes a null plane.</p>
+<p><strong>Remark (the doubling).</strong> The complex inertia is read on the realification as an even signature in each entry. That is the sense in which the classification of the Hermitian forms over the algebra is the classification of the real symmetric forms of even signature, and it is why the complex case has no phenomenon the real case lacks: the invariants are the same two, and one of them is doubled.</p>
+<h2 id="the-unitary-witt-group">The Unitary Witt Group</h2>
+<p><strong>Definition.</strong> Two non-degenerate Hermitian forms are <strong>Witt equivalent</strong> when they become congruent after the addition of hyperbolic planes $H=\mathrm{diag}(1,-1)$ to each. The classes form the <strong>unitary Witt group</strong> $W(\mathbb{C},{}^{*})$ under the orthogonal sum, the inverse of a class being the class of the negated form.</p>
+<p><strong>Theorem.</strong> $W(\mathbb{C},{}^{*})\cong\mathbb{Z}$, generated by the canonical form and computed by the signature.</p>
+<p><em>Proof.</em> The signature is additive under the orthogonal sum, vanishes on $H$, and changes sign under the negation of the form, so it descends to a homomorphism $W\to\mathbb{Z}$. It is injective: a form of signature zero has $n=m$, hence is congruent to $\mathrm{diag}(1_{n},-1_{n},0_{r})$, hence is the sum of $n$ hyperbolic planes and $r$ zero entries, hence is the zero class. It is surjective: the canonical form of rank $n$ has signature $n$, and its negative has signature $-n$.</p>
+<p><strong>Remark (why $\mathbb{Z}$ and not $\mathbb{Z}/2$).</strong> The group is the integers because the fixed field of the involution is $\mathbb{R}$, where negative directions exist and the forms $\mathrm{diag}(1_{n},-1_{m})$ are pairwise non-congruent. A theory in which the only admissible forms were the definite ones would have no negative direction, the hyperbolic plane would be excluded, and the signature would be a positive integer with no group behind it. The whole of the Witt theory is the bookkeeping of the signs.</p>
+<h2 id="the-isotropic-forms-of-the-plain-product">The Isotropic Forms of the Plain Product</h2>
+<p><strong>Definition.</strong> The <strong>plain form</strong> on $\mathbb{C}^{n}$ is $P(x,y)=\sum_{k}x_ky_k$, of Gram matrix $I_n$ and without conjugation.</p>
+<p><strong>Proposition.</strong> For $n\ge2$ the plain form is isotropic: $P(x,x)=0$ for the non-zero vector $x=(1,i,0,\dots,0)$.</p>
+<p><em>Proof.</em> $P(x,x)=1^{2}+i^{2}=0$.</p>
+<p><strong>Proposition.</strong> On $\mathbb{C}^{2}$ the isotropic vectors of the plain form are the two complex lines spanned by $(1,i)$ and by $(1,-i)$.</p>
+<p><em>Proof.</em> $x_1^{2}+x_2^{2}=(x_1+ix_2)(x_1-ix_2)$, and the algebra has no zero divisor, so one of the two factors vanishes.</p>
+<p><strong>Remark (the plain form on the realification).</strong> As a complex symmetric form the plain form is non-degenerate of rank $n$, and over $\mathbb{C}$ all non-degenerate symmetric forms of a fixed rank are isometric, so it is indistinguishable from the canonical form in its own class. Its realification is another matter: $\operatorname{Re}P$ has signature $(n,n)$, so the plain form is indefinite on the real space and its isotropy is real isotropy.</p>
+<p><strong>Remark (the absence of a Hermitian counterpart in the positive cone).</strong> No Hermitian form of the positive cone is isotropic, because $h(x,x)=0$ forces $x=0$ there. Indefinite Hermitian forms do exist and are isotropic: $\mathrm{diag}(1,-1)$ has the isotropic vector $(1,1)$. Such a form lies outside the positive cone, in the same way the plain form lies outside the Hermitian class. The isotropy is therefore confined twice over: to the forms of mixed inertia, and, on the plain side, to every form of rank at least two.</p>
+<h2 id="the-comparison-with-the-split-case">The Comparison with the Split Case</h2>
+<p>In the split-complex algebra the form of the cone is $\sum_{k}x_k\bar y_k$ with the bar the swap of the two components, and that form is indefinite from the start: its value at $x$ is $\sum_{k}(a_k^{2}-b_k^{2})$, which vanishes on the non-zero elements with $a_k=\pm b_k$ for every $k$. The positive theory of this article has no split analogue for the same reason: the cone of the split algebra is not a cone of definite forms, so the words <em>positive definite</em> and <em>isotropic</em> do not divide the forms the way they divide them here. On the complex side the division is clean: definite and free of isotropy on one side, indefinite and isotropic on the other.</p>
+<h2 id="summary">Summary</h2>
+<p>A Hermitian module over the complex algebra is a complex vector space with a Hermitian form. Every module is free, so the module is classified by its rank; the forms of the positive cone are classified by the rank too, by congruence to the identity matrix, and the canonical form has the unitary group $\mathrm{U}(n)$ for its automorphism group, of real dimension $n^{2}$ and transitive on the level sets and not on the forms. Beyond the cone the invariant is the inertia $(n,m,r)$, read on the realification as the even signature $(2n,2m)$, and the non-degenerate forms modulo the hyperbolic planes form the unitary Witt group $\mathbb{Z}$, generated by the canonical form and computed by the signature. The plain form is isotropic for every rank at least two, on the two lines spanned by $(1,i)$ and $(1,-i)$ in rank two, and no form of the positive cone is isotropic; in the split case the form of the cone is indefinite and the isotropic vectors exist.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$h(x,y)=\sum_{k}x_ky_k^{*}$</td>
+<td>the canonical Hermitian form on $\mathbb{C}^{n}$</td>
+</tr>
+<tr>
+<td>$h_{G}(x,y)=\sum_{k,l}x_kG_{kl}y_l^{*}$</td>
+<td>the Hermitian form of the Hermitian matrix $G$</td>
+</tr>
+<tr>
+<td>$(n,m,r)$, $\sigma=n-m$</td>
+<td>the inertia and the signature of a Hermitian form</td>
+</tr>
+<tr>
+<td>$\mathrm{U}(n)$</td>
+<td>the unitary group, the automorphism group of the canonical form</td>
+</tr>
+<tr>
+<td>$H=\mathrm{diag}(1,-1)$</td>
+<td>the hyperbolic plane, of signature zero and of Witt class zero</td>
+</tr>
+<tr>
+<td>$W(\mathbb{C},{}^{*})\cong\mathbb{Z}$</td>
+<td>the unitary Witt group, computed by the signature</td>
+</tr>
+<tr>
+<td>$P(x,y)=\sum_{k}x_ky_k$</td>
+<td>the plain form, symmetric, isotropic in rank two and above</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, Colloquium Publications 44 (American Mathematical Society, 1998), for Hermitian forms over an algebra with involution, their congruence classification and the unitary Witt group.</li>
+<li>Tsit-Yuen Lam, <em>Introduction to Quadratic Forms over Fields</em>, Graduate Studies in Mathematics 67 (American Mathematical Society, 2005), for Sylvester's law, inertia, hyperbolic planes and the Witt group of a field.</li>
+<li>Igor R. Shafarevich and Alexei O. Remizov, <em>Linear Algebra and Geometry</em> (Springer, 2013), for the classification of Hermitian forms, the unitary group and its transitivity properties.</li>
+<li>Winfried Scharlau, <em>Quadratic and Hermitian Forms</em>, Grundlehren der mathematischen Wissenschaften 270 (Springer, 1985), for the Witt group of Hermitian forms, its functoriality and its computation for the classical fields.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

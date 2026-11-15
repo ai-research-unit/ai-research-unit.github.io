@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Spectrum and the Two-Point Structure of $\mathbb{C}^{\mathrm{spl}}$ over $\mathbb{R}$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-spectrum-and-the-two-point-structure-of-math0-over-math1"><strong>The Spectrum and the Two-Point Structure of $\mathbb{C}^{\mathrm{spl}}$ over $\mathbb{R}$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The split-complex ring is the product of two copies of its base, and its spectrum is therefore a set of two points. This article reads the algebra through that set: the two characters, which are the two idempotent coordinates; the spectrum with its topology; the étale structure of rank two that makes the algebra a product and not a field; the exchange of the two points, which is the only automorphism; and the form the Galois correspondence takes when the base is not extended but split.</p>
+<p>The algebra is $\mathbb{C}_{\mathrm{spl}}=\mathbb{R}[j]$, $j^2=1$, with $\Pi_\pm=\tfrac12(1\pm j)$ and the idempotent coordinates $Q_\pm=q\pm q'$. The algebra and the idempotents are <em>Split-Complex Algebra</em> and <em>Square Roots of One and the Idempotents of the Split-Complex Algebra</em>; the involution is <em>The Involutions, the Subspaces and the Idempotent Lines of the Split-Complex Space</em>; the ideals are <em>Ideals and Peirce Decomposition of the Split-Complex Algebra</em>. The comparison throughout is with <em>Galois Theory of $\mathbb{C}/\mathbb{R}$</em>, of which this article is the split counterpart.</p>
+<h2 id="the-characters">The Characters</h2>
+<p><strong>Definition.</strong> A <strong>character</strong> of $\mathbb{C}_{\mathrm{spl}}$ is a non-zero $\mathbb{R}$-algebra homomorphism into $\mathbb{R}$.</p>
+<p><strong>Theorem (the two characters).</strong> The characters are the two coordinate maps</p>
+<p>$$
+\varphi_+ : Q=q+jq'\mapsto q+q' , \qquad \varphi_- : Q=q+jq'\mapsto q-q' ,
+$$</p>
+<p>with kernels $\ker\varphi_\pm=\mathbb{R}\Pi_\mp$.</p>
+<p><strong>Proof.</strong> A character fixes $\mathbb{R}$ and sends $j$ to an element $\xi$ with $\xi^2=1$, hence to $\xi=\pm1$. For $\xi=1$ the value on $Q$ is $q+q'$ and for $\xi=-1$ it is $q-q'$; each is additive, multiplicative and unital, since $(q+q')(c+c')$ and $(q-q')(c-c')$ are the two coordinates of the product. The kernel of $\varphi_+$ is the set $q'=-q$, that is $\mathbb{R}\Pi_-$, and the kernel of $\varphi_-$ is $\mathbb{R}\Pi_+$.</p>
+<p>The characters are the two idempotent coordinates, so the algebra is recovered from its characters: the map $Q\mapsto(\varphi_+(Q),\varphi_-(Q))$ is the isomorphism $\mathbb{C}_{\mathrm{spl}}\cong\mathbb{R}\times\mathbb{R}$. Two characters, two coordinates, one isomorphism.</p>
+<h3 id="the-values-on-the-idempotents">The Values on the Idempotents</h3>
+<p>The characters read the idempotents as the two coordinate projectors,</p>
+<p>$$
+\varphi_+(\Pi_+)=1,\quad \varphi_+(\Pi_-)=0, \qquad \varphi_-(\Pi_+)=0,\quad \varphi_-(\Pi_-)=1 ,
+$$</p>
+<p>so each character is the evaluation of the Peirce coordinate it names and vanishes on the other idempotent. The two values on an element are its two Peirce coordinates, which is the reason the idempotent coordinates are also called the spectral coordinates (<em>Eigenvalue Decomposition and Eigenbasis of a Split-Complex Number</em>).</p>
+<h3 id="why-there-are-exactly-two">Why There Are Exactly Two</h3>
+<p>The count is forced twice over. An $\mathbb{R}$-algebra map is determined by the image of $j$, and that image must satisfy $\xi^2=1$; over any field of characteristic other than two the equation has the two solutions $\pm1$, so there are two characters into any field extension of the base, and no more. The same computation over an ordered field gives the same answer, because $1$ has exactly the two square roots $\pm1$ there.</p>
+<h2 id="the-spectrum">The Spectrum</h2>
+<h3 id="the-spectrum-as-a-set">The Spectrum as a Set</h3>
+<p>The prime ideals are the kernels of the characters, $\mathbb{R}\Pi_+$ and $\mathbb{R}\Pi_-$, and there is no other: the two-sided ideals are $\{0\}$, the two lines and the ring (<em>Ideals and Peirce Decomposition of the Split-Complex Algebra</em>), the zero ideal is not prime because $\Pi_+\Pi_-=0$ with both factors non-zero, and the ring is excluded. So</p>
+<p>$$
+\operatorname{Spec}\mathbb{C}_{\mathrm{spl}}=\{\mathfrak p_+,\mathfrak p_-\}, \qquad \mathfrak p_+=\mathbb{R}\Pi_+,\quad \mathfrak p_-=\mathbb{R}\Pi_- ,
+$$</p>
+<p>a set of two points.</p>
+<h3 id="the-zariski-topology">The Zariski Topology</h3>
+<p>Both primes are maximal, so both points are closed, and a finite space in which every point is closed is discrete: every subset is closed, and also open. The spectrum is the discrete two-point space, and its topology carries no information beyond the count.</p>
+<h3 id="the-residue-fields">The Residue Fields</h3>
+<p>Each quotient is the base, $\mathbb{C}_{\mathrm{spl}}/\mathfrak p_\pm\cong\mathbb{R}$, and the two isomorphisms are the characters. The residue field of each point is therefore $\mathbb{R}$ itself, of degree one over the base.</p>
+<h3 id="the-algebra-as-the-functions-on-the-spectrum">The Algebra as the Functions on the Spectrum</h3>
+<p>A function on two points with real values is a pair of reals, and the pair is an element. The global sections of the structure sheaf are the algebra,</p>
+<p>$$
+\Gamma(\operatorname{Spec}\mathbb{C}_{\mathrm{spl}},\mathcal{O})=\mathbb{C}_{\mathrm{spl}} ,
+$$</p>
+<p>so the algebra is exactly the ring of all real-valued functions on its spectrum, and the two characters are the two evaluations.</p>
+<h2 id="the-etale-structure">The Étale Structure</h2>
+<h3 id="rank-two-and-split">Rank Two and Split</h3>
+<p>The base map $\mathbb{R}\to\mathbb{C}_{\mathrm{spl}}$ is finite and flat, the algebra being free of rank two on $\{1,j\}$, and it is unramified: the defining polynomial $X^2-1$ is separable over $\mathbb{R}$, its derivative $2X$ being invertible at both roots. A finite flat unramified map is étale, so the extension is finite étale of rank two. It is also split: the algebra is a product of two copies of the base, and the two copies are the two points.</p>
+<h3 id="the-two-point-cover">The Two-Point Cover</h3>
+<p>The geometric picture is a cover of one point by two points. Over the base the fibre of the spectrum is the two-point set, the cover is the trivial one, and the two sheets are the two idempotent lines. A cover of rank two over a one-point base is either trivial or connected, and the split algebra is the trivial case by construction.</p>
+<h3 id="against-the-degree-two-extension">Against the Degree-Two Extension</h3>
+<p>Over $\mathbb{R}$ there are exactly two finite étale algebras of rank two up to isomorphism: the split one, $\mathbb{R}\times\mathbb{R}$, and the field $\mathbb{C}$. The two are the two classes of the rank-two cover. The field is connected, its spectrum is one point with residue field $\mathbb{C}$, and its two characters into $\mathbb{C}$ are the identity and the conjugation, exchanged by the Galois action. The split algebra is disconnected, its spectrum is two points with residue field $\mathbb{R}$, and its two characters are already defined over the base. The count of characters is two in both cases; what changes is whether the two points are one point with a degree-two residue field or two points with residue field the base.</p>
+<h2 id="the-exchange-and-the-only-automorphism">The Exchange and the Only Automorphism</h2>
+<h3 id="the-exchange-acts-by-transposition">The Exchange Acts by Transposition</h3>
+<p>The conjugation $\bar\cdot$, $j\mapsto-j$, sends $\varphi_+$ to $\varphi_-$ and $\varphi_-$ to $\varphi_+$, since $\varphi_\pm(\bar Q)=\varphi_\mp(Q)$. On the spectrum it acts as the transposition of the two points, freely and transitively: one orbit of size two.</p>
+<h3 id="why-it-is-the-only-one">Why It Is the Only One</h3>
+<p>The automorphisms of the algebra are the identity and the conjugation (<em>The Involutions, the Subspaces and the Idempotent Lines of the Split-Complex Space</em>), so the automorphism group is $\mathbb{Z}/2\mathbb{Z}$ and its action on the two points is the full symmetric group of the set. The group is the same as the Galois group of $\mathbb{C}/\mathbb{R}$ and its action is not: there the single point is fixed and the residue field is moved, here the two points are moved and each residue field is fixed.</p>
+<h2 id="the-galois-correspondence-here">The Galois Correspondence Here</h2>
+<h3 id="the-two-intermediate-subalgebras">The Two Intermediate Subalgebras</h3>
+<p>A subalgebra of $\mathbb{C}_{\mathrm{spl}}$ containing $\mathbb{R}$ is either $\mathbb{R}$ or the whole algebra: it contains $1$, and an element $q+jq'$ with $q'\neq0$ together with $1$ spans the plane. So the intermediate subalgebras are two, and they correspond to the two subgroups of $\mathbb{Z}/2\mathbb{Z}$: the whole group to the base, the trivial subgroup to the algebra. The reversal is exact.</p>
+<h3 id="the-invariant-partitions">The Invariant Partitions</h3>
+<p>The correspondence has a second reading, and it is the one that shows what "split" means. A subalgebra of the functions on two points is the set of functions constant on each block of a partition of the two-point set. There are two partitions, one block and two blocks, and the exchange leaves both invariant. So the subalgebras correspond to the invariant partitions, hence to the subgroups, and the correspondence is a bijection of two-element sets.</p>
+<h3 id="the-fixed-ring">The Fixed Ring</h3>
+<p>The fixed ring of the exchange is the set of functions with equal values at the two points, that is the real line. The invariants of the action are the base, exactly as for $\mathbb{C}/\mathbb{R}$, where the invariants of the conjugation are the real field. The two extensions agree on the invariant and differ on everything else.</p>
+<h3 id="the-opposite-conclusion">The Opposite Conclusion</h3>
+<p>The fundamental theorem of Galois theory asks for a normal separable extension and reads the intermediate fields off the subgroups of the group. Here the group is the same $\mathbb{Z}/2\mathbb{Z}$, the rank is the same two, and the invariants are the same base, but the extension is not a field: the algebra splits, the two points are rational, and the correspondence is the trivial one between two two-element sets. This is the split counterpart of <em>Galois Theory of $\mathbb{C}/\mathbb{R}$</em>, and it reaches the opposite conclusion at the one place that matters: there the degree-two extension is a field and the Galois action is transitive on the two embeddings of its residue field, while here the extension is a product and the action is a transposition of two points of the base.</p>
+<h2 id="summary">Summary</h2>
+<p>The characters of $\mathbb{C}_{\mathrm{spl}}$ are the two idempotent coordinates $\varphi_\pm(Q)=q\pm q'$, with kernels the two idempotent lines, and an $\mathbb{R}$-algebra map is fixed by the image of $j$, which satisfies $\xi^2=1$, so there are exactly two. The spectrum is the discrete two-point space $\{\mathbb{R}\Pi_+,\mathbb{R}\Pi_-\}$, each point has residue field $\mathbb{R}$, and the algebra is the ring of all real-valued functions on the two points.</p>
+<p>The base map is finite étale of rank two and split, so the algebra is a product of two copies of the base and not a field. Up to isomorphism there are two such algebras over $\mathbb{R}$, this one and the field $\mathbb{C}$: the field has one point with a degree-two residue field, the split algebra two points with residue field the base. The conjugation acts on the two points as the transposition, and it is the only automorphism.</p>
+<p>The Galois correspondence holds with two intermediate subalgebras against two subgroups, and it also reads as the correspondence between subalgebras and invariant partitions of the two-point set. The invariants are the base in both the split and the field case; the difference is that the split extension is a product, so the action moves the points instead of the residue field, which is the opposite conclusion to the one drawn for $\mathbb{C}/\mathbb{R}$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\varphi_\pm(Q)=q\pm q'$</td>
+<td>The two characters, the two idempotent coordinates</td>
+</tr>
+<tr>
+<td>$\ker\varphi_\pm=\mathbb{R}\Pi_\mp$</td>
+<td>The kernel of each character, a minimal ideal</td>
+</tr>
+<tr>
+<td>$\operatorname{Spec}\mathbb{C}_{\mathrm{spl}}=\{\mathfrak p_+,\mathfrak p_-\}$</td>
+<td>The spectrum, two points</td>
+</tr>
+<tr>
+<td>$\mathbb{C}_{\mathrm{spl}}\cong\mathbb{R}\times\mathbb{R}$</td>
+<td>The algebra as the functions on the two points</td>
+</tr>
+<tr>
+<td>$\bar\cdot$</td>
+<td>The exchange of the two points, the only automorphism</td>
+</tr>
+<tr>
+<td>$V_2=\{\mathrm{id},\bar\cdot\}$</td>
+<td>The automorphism group, $\mathbb{Z}/2\mathbb{Z}$</td>
+</tr>
+<tr>
+<td>$\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}=\mathbb{C}_{\mathrm{spl}}^{\bar\cdot}$</td>
+<td>The fixed ring, the base</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Robin Hartshorne, <em>Algebraic Geometry</em> (Springer, Graduate Texts in Mathematics 52, 1977), for the spectrum, the residue field at a point and the sections of the structure sheaf.</li>
+<li>Michel Raynaud, <em>Anneaux locaux henséliens</em> (Springer, Lecture Notes in Mathematics 169, 1970), for finite étale algebras of a field as products of separable extensions.</li>
+<li>Pierre Antoine Grillet, <em>Abstract Algebra</em> (Springer, 2nd ed. 2007), for the product of rings, its prime ideals and the Chinese remainder theorem.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, Graduate Texts in Mathematics 88, 1982), for the correspondence between central idempotents and product decompositions.</li>
+<li>Nathan Jacobson, <em>Lectures in Abstract Algebra III</em> (Van Nostrand, 1964), for the Galois theory of a finite commutative algebra over a field.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

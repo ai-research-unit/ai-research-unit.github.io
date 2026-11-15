@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Lie Structure of the Antisymmetric Plain Product of the Quaternions — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-lie-structure-of-the-antisymmetric-plain-product-of-the-quaternions"><strong>The Lie Structure of the Antisymmetric Plain Product of the Quaternions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The antisymmetrisation of the plain product is
+$$
+\tilde q_1\wedge\tilde q_2=\tfrac12\bigl(\tilde q_1\tilde q_2-\tilde q_2\tilde q_1\bigr)=\vec q_1\times\vec q_2 .
+$$
+It forgets everything but the vector parts and the cross product, and what remains is a Lie algebra: alternating, with the Jacobi identity, of dimension three on the derived part and one on the centre, isomorphic to $\mathfrak{so}(3)\oplus\mathbb{R}$. The Killing form is negative semidefinite of signature $(0,3)$, and its radical is the centre.</p>
+<p>The article is the real mirror of <a href="the-lie-structure-of-the-antisymmetric-plain-product.html">The Lie Structure of the Antisymmetric Plain Product</a>. The biquaternion bracket of the same slot pairing is a Lie algebra over $\mathbb{C}$, of complex dimension three on the same cross product; the real bracket is the same object with the scalar line added as a centre, and the difference between the two is a difference of the ground field and of the scalar part, not of the bracket.</p>
+<p>The parent is <a href="the-general-plain-bilinear-product-of-the-quaternions.html">The General Plain Bilinear Product of the Quaternions</a>; the bracket as a multiplication is <a href="introduction-to-the-antisymmetric-plain-algebra-of-the-quaternions.html">Introduction to the Antisymmetric Plain Algebra of the Quaternions</a>, and the Killing form is <a href="the-killing-form-of-the-antisymmetric-plain-algebra-of-the-quaternions.html">The Killing Form of a Bilinear Product and the Scalar Product It Induces</a>, both cited and not restated. The other half of the same parent is <a href="the-jordan-structure-of-the-symmetric-plain-product-of-the-quaternions.html">The Jordan Structure of the Symmetric Plain Product of the Quaternions</a>.</p>
+<h2 id="the-bracket">The Bracket</h2>
+<p><strong>Definition.</strong> The <strong>antisymmetric plain product</strong> is
+$$
+\tilde q_1\wedge\tilde q_2=\tfrac12\bigl(\tilde q_1\tilde q_2-\tilde q_2\tilde q_1\bigr).
+$$</p>
+<p><strong>Theorem (the bracket is the cross product).</strong> For all $\tilde q_1,\tilde q_2$,
+$$
+\boxed{\;\tilde q_1\wedge\tilde q_2=\vec q_1\times\vec q_2\;}
+$$
+a pure quaternion, with no scalar part and no dependence on $q_{1t}$ or $q_{2t}$.</p>
+<p><em>Proof.</em> In the plain product the scalar row and the mixed terms are symmetric and the cross term is antisymmetric; the half-difference keeps the cross term alone. The scalar parts contribute nothing because $q_{1t}q_{2t}$ and the mixed terms cancel between the two orders. Verified exactly on the sixteen pairs of the basis and on general elements.</p>
+<p><strong>Corollary (the bracket is the commutator).</strong> $\tilde q_1\wedge\tilde q_2=\tfrac12[\tilde q_1,\tilde q_2]$, the commutator of the associative parent.</p>
+<p><em>Proof.</em> The commutator of $\tilde q_1\tilde q_2$ and $\tilde q_2\tilde q_1$ cancels the symmetric part. This is the reason the Jacobi identity will hold: the commutator bracket of an associative algebra always does.</p>
+<p><strong>Remark (what the bracket forgets).</strong> The bracket is blind to the real line: every scalar multiple of $e_t$ brackets to zero with everything. It is also blind to the inner product: it records only the oriented area of the parallelogram of the two vector parts. Two elements with the same vector part have the same brackets with everything, so the bracket is a structure of the vector subspace alone, and the scalar line is carried along as a spectator.</p>
+<h2 id="alternation">Alternation</h2>
+<p><strong>Proposition (alternation).</strong> For every $\tilde q$ and all $\tilde q_1,\tilde q_2,\tilde q_3$,
+$$
+\tilde q\wedge\tilde q=0,\qquad
+\tilde q_1\wedge\tilde q_2+\tilde q_2\wedge\tilde q_1=0,\qquad
+\tilde q_1\wedge\tilde q_2=\tilde q_1\wedge(\tilde q_2+\lambda\tilde q_1)\ \ \text{for every }\lambda .
+$$</p>
+<p><em>Proof.</em> The cross product of a vector with itself is zero, and the exchange of the two factors reverses the orientation. The third identity is the first two combined. Verified exactly on the basis.</p>
+<p><strong>Remark (alternation and the pure image).</strong> Alternation and the pure image are two different statements, and the second is the stronger here: the bracket is not only alternating, it takes its values in a three-dimensional subspace. A Lie bracket with a proper image is never the bracket of a reductive algebra of full rank, and this one is the bracket of $\mathfrak{so}(3)$ attached to a line.</p>
+<h2 id="the-jacobi-identity">The Jacobi Identity</h2>
+<p><strong>Theorem (the Jacobi identity).</strong> For all $\tilde q_1,\tilde q_2,\tilde q_3$,
+$$
+\boxed{\;\tilde q_1\wedge\bigl(\tilde q_2\wedge\tilde q_3\bigr)+\tilde q_2\wedge\bigl(\tilde q_3\wedge\tilde q_1\bigr)+\tilde q_3\wedge\bigl(\tilde q_1\wedge\tilde q_2\bigr)=0\;}
+$$</p>
+<p><em>Proof.</em> By the corollary above, $\wedge$ is half the commutator of the associative parent. Write $\Phi(\tilde q_1,\tilde q_2,\tilde q_3)$ for the left side, multiplied by $8$; expanding in the parent gives a sum of twelve words, each a permutation of $\tilde q_1\tilde q_2\tilde q_3$ with a sign, and the twelve cancel in pairs: the word with the order $(1,2,3)$ appears twice with the signs $+$ and $-$. Associativity is what allows the twelve words to be collected into a single order. Verified exactly on all $64$ triples of the basis, where the identity is a check of the cross product, and on general triples with a residual of zero.</p>
+<p><strong>Corollary (the algebra is a Lie algebra).</strong> With the bracket $\wedge$, the space $\mathbb{H}$ is a Lie algebra over $\mathbb{R}$, and its derived algebra is the vector subspace.</p>
+<p><em>Proof.</em> Bilinearity, alternation and the Jacobi identity are the three axioms, and the first two are the propositions above. The image is the vector subspace, which is closed under the bracket, so the derived algebra is exactly $V$. Verified by computing the span of the brackets of the basis.</p>
+<p><strong>Remark (the identity is inherited, not imposed).</strong> The Jacobi identity here is a theorem about the associativity of the parent and not an independent axiom to be verified. <strong>Every associator identity of an associative algebra is inherited by its commutator bracket, and this is the structural reason the plain column is the Lie column.</strong> The twisted bracket of the quaternionic product has no such inheritance, and its failure is read in <a href="the-lie-structure-of-the-antisymmetric-quaternionic-product-of-the-quaternions.html">The Lie Structure of the Antisymmetric Quaternionic Product of the Quaternions</a>.</p>
+<h2 id="the-bracket-table">The Bracket Table</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\wedge$</th>
+<th>$e_t$</th>
+<th>$\vec e_x$</th>
+<th>$\vec e_y$</th>
+<th>$\vec e_z$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e_t$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\vec e_x$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$\vec e_z$</td>
+<td>$-\vec e_y$</td>
+</tr>
+<tr>
+<td>$\vec e_y$</td>
+<td>$0$</td>
+<td>$-\vec e_z$</td>
+<td>$0$</td>
+<td>$\vec e_x$</td>
+</tr>
+<tr>
+<td>$\vec e_z$</td>
+<td>$0$</td>
+<td>$\vec e_y$</td>
+<td>$-\vec e_x$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proposition (the structure constants).</strong> The bracket of the vector units is
+$$
+\vec e_x\wedge\vec e_y=\vec e_z,\qquad \vec e_y\wedge\vec e_z=\vec e_x,\qquad \vec e_z\wedge\vec e_x=\vec e_y ,
+$$
+the cyclic rule with the structure constants $\varepsilon_{abc}$, and $\vec e_a\wedge\vec e_b=-\vec e_b\wedge\vec e_a$ fills the rest.</p>
+<p><em>Proof.</em> The multiplication table of the parent, $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_x=-\vec e_z$, halved. Verified on the basis.</p>
+<p><strong>Remark (the table read as $\mathfrak{so}(3)$).</strong> The three relations are the relations of the rotation algebra in the basis of the three coordinate rotations, with the sign convention that makes $\vec e_x$ the rotation about the first axis. The table is the multiplication table of $\mathfrak{su}(2)$ read over $\mathbb{R}$, and it is the reason the exponential below is a rotation and not a general linear map.</p>
+<h2 id="the-identification-with-math66">The Identification with $\mathfrak{so}(3)$</h2>
+<p><strong>Theorem (the isomorphism).</strong> The map
+$$
+\vec w\longmapsto \mathrm{ad}_{\vec w}=\bigl[\vec w,\cdot\bigr]\colon\mathbb{H}\to\mathrm{End}(\mathbb{H})
+$$
+sends $V$ isomorphically onto the algebra of the skew maps of $V$, and
+$$
+\mathrm{ad}_{\vec w}\mathrm{ad}_{\vec v}-\mathrm{ad}_{\vec v}\mathrm{ad}_{\vec w}=\mathrm{ad}_{\vec w\times\vec v}.
+$$</p>
+<p><em>Proof.</em> $\mathrm{ad}_{\vec w}$ kills $e_t$ and acts on $V$ by $\vec u\mapsto\vec w\times\vec u$, which is skew, since $\langle\vec w\times\vec u,\vec u\rangle=0$, and has matrix
+$$
+[\vec w]_{\times}=\begin{pmatrix}0&-w_3&w_2\\ w_3&0&-w_1\\ -w_2&w_1&0\end{pmatrix}.
+$$
+The dimension is three on both sides and the map is injective, since $\vec w\times\vec u=0$ for all $\vec u$ forces $\vec w=0$. The commutation relation is the Jacobi identity read as the derivation property, and it is verified by the expansion $\vec w\times(\vec v\times\vec u)-\vec v\times(\vec w\times\vec u)=(\vec w\times\vec v)\times\vec u$. Computed exactly.</p>
+<p><strong>Corollary (the decomposition).</strong> As a Lie algebra,
+$$
+\mathbb{H}=\mathbb{R}e_t\oplus V\cong\mathbb{R}\oplus\mathfrak{so}(3),
+$$
+a direct sum, with $\mathbb{R}e_t$ central and $V$ simple.</p>
+<p><em>Proof.</em> The first summand is the kernel of the bracket with everything, computed below, and the second is the derived algebra. A three-dimensional Lie algebra with a non-degenerate invariant form is simple, and the form is computed in the next section.</p>
+<p><strong>Remark (what the identification does not give).</strong> The isomorphism is an isomorphism of Lie algebras and not of algebras: the associative structure of $\mathbb{H}$ is not recovered from the bracket, and the cross product does not determine the quaternion product. Two associative algebras with the same commutator bracket differ by a commutative product, and the quaternion product is exactly the datum that the bracket loses.</p>
+<h2 id="the-centre-the-ideals-the-radical">The Centre, the Ideals, the Radical</h2>
+<p><strong>Theorem (the centre).</strong> The centre of the Lie algebra is $\mathbb{R}e_t$, and it is the radical.</p>
+<p><em>Proof.</em> $\tilde q$ is central if and only if $\vec q\times\vec u=0$ for all $\vec u$, that is $\vec q=0$. The centre is therefore the real line. It is an abelian ideal, and the quotient is $\mathfrak{so}(3)$, which is simple; an abelian ideal whose quotient is simple is the radical, and it is the solvable radical of a reductive algebra.</p>
+<p><strong>Proposition (the ideals).</strong> The ideals are $0$, $\mathbb{R}e_t$ and $\mathbb{H}$.</p>
+<p><em>Proof.</em> The ideals of a direct sum of a one-dimensional algebra and a simple algebra are the sums of the ideals of the factors. Verified by solving the invariance conditions on the subspaces of the coefficient basis.</p>
+<p><strong>Remark (semisimplicity and its exact failure).</strong> The algebra is not semisimple, and the failure is one-dimensional and central: $\mathbb{H}/\,\mathbb{R}e_t\cong\mathfrak{so}(3)$ is semisimple, and the centre is the whole of the radical. <strong>The bracket of the plain product is semisimple exactly on the vector subspace, and the scalar line is the entire obstruction.</strong> This is the structural reason the Killing form is degenerate, and the reason the exponential below acts as the identity on the line.</p>
+<h2 id="the-killing-form">The Killing Form</h2>
+<p><strong>Theorem (the Killing form).</strong> With $\kappa(\tilde q_1,\tilde q_2)=\mathrm{tr}(\mathrm{ad}_{\tilde q_1}\mathrm{ad}_{\tilde q_2})$,
+$$
+\kappa(\tilde q_1,\tilde q_2)=-2(\vec q_1,\vec q_2),
+$$
+so that the matrix of $\kappa$ in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ is $\mathrm{diag}(0,-2,-2,-2)$, of signature $(0,3)$ and rank three.</p>
+<p><em>Proof.</em> $\mathrm{ad}_{e_t}=0$, so the first row and column vanish. On the vector subspace, $\mathrm{ad}_{\vec e_x}$ has the matrix with the single entries $+1$ at the place $(\vec e_z,\vec e_y)$ and $-1$ at $(\vec e_y,\vec e_z)$, and $\mathrm{ad}_{\vec e_x}^2$ has the eigenvalues $0,0,-1,-1$; the trace is $-2$. For orthogonal vector units the product of the two adjoint matrices has trace zero, computed entry by entry. Verified in the coefficient basis.</p>
+<p><strong>Corollary (the radical is the centre).</strong> The radical of $\kappa$ is $\mathbb{R}e_t$, and on the derived algebra the form is negative definite.</p>
+<p><em>Proof.</em> The radical of the displayed form is the orthogonal complement of $V$, which is the real line, and the restriction to $V$ is $-2$ times a positive definite form.</p>
+<p><strong>Remark (the trace form is not the Killing form).</strong> The trace form of the bracket product is $\mathrm{Sc}(\tilde q_1\wedge\tilde q_2)=\mathrm{Sc}(\vec q_1\times\vec q_2)=0$: the bracket is pure, so the trace form vanishes identically and carries no information. The form that matters is the Killing form, which is not the trace form of the product but the trace of the product of the adjoint maps. The two coincide only for the symmetrisations, where the product has a non-zero diagonal. This is the reason the plain column of the comparison table has two forms and the antisymmetric column has one.</p>
+<h2 id="the-group-and-the-rotor">The Group and the Rotor</h2>
+<p><strong>Definition.</strong> The <strong>adjoint group</strong> is the group generated by the exponentials $\exp(t\,\mathrm{ad}_{\vec w})=\exp(t\,\vec w\wedge\cdot)$, and the <strong>exponential</strong> of an element is $\exp(\tilde q)=\sum_n\tilde q^{\wedge n}/n!$ in the algebra.</p>
+<p><strong>Theorem (the exponential is a rotation).</strong> For a unit vector $\vec u$ and a real $t$,
+$$
+\exp\bigl(t\,\mathrm{ad}_{\vec u}\bigr)\vec v=\vec v\cos t+(\vec u\times\vec v)\sin t+\vec u\,(\vec u,\vec v)(1-\cos t),
+$$
+the rotation of $V$ by the angle $t$ about $\vec u$; and the exponential in the algebra is
+$$
+\exp(t\vec u)=\cos t+\vec u\sin t ,
+$$
+a versor.</p>
+<p><em>Proof.</em> The powers of $\mathrm{ad}_{\vec u}$ on $V$ satisfy $\mathrm{ad}_{\vec u}^3=-\mathrm{ad}_{\vec u}$, because $\vec u\times(\vec u\times(\vec u\times\vec v))=-\vec u\times\vec v$ for a unit $\vec u$; summing the series by the parity of the powers gives the display. In the algebra the powers of $t\vec u$ satisfy $(t\vec u)^2=-t^2e_t$ and the same parity argument gives $\cos t+\vec u\sin t$. Verified numerically against the series.</p>
+<p><strong>Proposition (the rotor).</strong> For every versor $\tilde r=\cos\theta+\vec u\sin\theta$ with $\vec u$ a unit vector, the conjugation
+$$
+\tilde q\longmapsto\tilde r\tilde q\tilde r^{-1}
+$$
+is an automorphism of the Lie algebra, fixes $e_t$, and rotates $V$ by the angle $2\theta$ about $\vec u$.</p>
+<p><em>Proof.</em> The conjugation by a versor is an automorphism of the parent, hence of the bracket, and it fixes $e_t$ because $\tilde r$ and $e_t$ commute. On $V$ it is the rotation of the versor representation, whose angle is twice the angle of the versor: $\tilde r\vec v\tilde r^{-1}=\vec v\cos2\theta+(\vec u\times\vec v)\sin2\theta+\vec u(\vec u,\vec v)(1-\cos2\theta)$. Verified numerically on random versors and vectors, with a residual at the level of the arithmetic.</p>
+<p><strong>Remark (the double cover).</strong> The map $\tilde r\mapsto\mathrm{Ad}_{\tilde r}$ is a surjection of $S^3$ onto $SO(3)$ with kernel $\pm e_t$, so the group of the algebra is $S^3$ and the adjoint group is $SO(3)$. The exponential $\vec w\mapsto\exp(\vec w)=\cos\lvert\vec w\rvert+\vec w\sin\lvert\vec w\rvert/\lvert\vec w\rvert$ is a diffeomorphism of the open ball of radius $\pi$ onto $S^3$ minus the point $-e_t$, and it maps the ball of radius $\pi/2$ onto the versors of positive scalar part; the two-to-one character of the cover is the antipodal identification $\tilde r\sim-\tilde r$ of the sphere, not of the ball. The cover is read in <a href="the-pin-and-spin-groups-of-the-general-quaternionic-algebra-of-the-quaternions.html">The Pin and Spin Groups of the General Quaternionic Algebra of the Quaternions</a> and in <a href="quaternion-exponential-and-lie-group-structure.html">The Exponential of a Quaternion and the Polar Decomposition</a>.</p>
+<h2 id="the-place-among-the-two">The Place among the Two</h2>
+<p><strong>Remark (the bracket that is a Lie algebra and the one that is not).</strong> Of the two antisymmetrisations, this is the one that is a Lie algebra, with defect zero, centre the real line, radical one-dimensional, and a Killing form of signature $(0,3)$ that is negative definite on the derived algebra. The other is not a Lie algebra at all, and its failure is a three-dimensional defect carried by the scalar parts. The comparison is the subject of the table of <a href="the-lie-structure-of-the-antisymmetric-quaternionic-product-of-the-quaternions.html">The Lie Structure of the Antisymmetric Quaternionic Product of the Quaternions</a>.</p>
+<p><strong>Remark (the verdict in one line).</strong> <strong>The plain bracket is the commutator of an associative algebra restricted to a subspace, and everything it has — the alternation, the Jacobi identity, the identification with $\mathfrak{so}(3)$, the negative definite Killing form — is inherited from that associativity.</strong> The bracket of the quaternionic product has no such parent and inherits nothing.</p>
+<h2 id="summary">Summary</h2>
+<p>The antisymmetric plain product is
+$$
+\tilde q_1\wedge\tilde q_2=\tfrac12\bigl(\tilde q_1\tilde q_2-\tilde q_2\tilde q_1\bigr)=\vec q_1\times\vec q_2 ,
+$$
+alternating, purely vector valued, and half the commutator of the associative parent.</p>
+<p>The Jacobi identity holds with defect zero, proved from associativity by the cancellation of the twelve words; the derived algebra is the vector subspace, and $\mathbb{H}=\mathbb{R}e_t\oplus V\cong\mathbb{R}\oplus\mathfrak{so}(3)$ as Lie algebras.</p>
+<p>The centre and the radical are the real line, the ideals are $0$, the line and the algebra, and the bracket is semisimple exactly on the vector subspace.</p>
+<p>The Killing form is $-2$ times the vector inner product, of matrix $\mathrm{diag}(0,-2,-2,-2)$ and signature $(0,3)$, degenerate exactly on the centre. The trace form of the product vanishes, and the two forms must not be confused.</p>
+<p>The exponential of $t\vec u$ is the versor $\cos t+\vec u\sin t$, the adjoint action is the rotation, the conjugation by a versor is the automorphism, and the group is $S^3$ over $SO(3)$ with the two-to-one cover.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>the quaternion algebra</td>
+</tr>
+<tr>
+<td>$\tilde q=q_te_t+\vec q$</td>
+<td>the element, its scalar part and its vector part</td>
+</tr>
+<tr>
+<td>$\tilde q_1\wedge\tilde q_2$</td>
+<td>the antisymmetric plain product</td>
+</tr>
+<tr>
+<td>$\mathrm{ad}_{\tilde q}$</td>
+<td>the bracket with $\tilde q$</td>
+</tr>
+<tr>
+<td>$\kappa$</td>
+<td>the Killing form</td>
+</tr>
+<tr>
+<td>$[\vec w]_{\times}$</td>
+<td>the skew matrix of the cross product</td>
+</tr>
+<tr>
+<td>$S^3$</td>
+<td>the group of the versors</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="introduction-to-the-antisymmetric-plain-algebra-of-the-quaternions.html">Introduction to the Antisymmetric Plain Algebra of the Quaternions</a>, for the bracket as a multiplication.</li>
+<li><a href="the-killing-form-of-the-antisymmetric-plain-algebra-of-the-quaternions.html">The Killing Form of a Bilinear Product and the Scalar Product It Induces</a>, for the form and its computation.</li>
+<li><a href="the-general-plain-bilinear-product-of-the-quaternions.html">The General Plain Bilinear Product of the Quaternions</a>, for the parent product.</li>
+<li><a href="the-lie-structure-of-the-antisymmetric-plain-product.html">The Lie Structure of the Antisymmetric Plain Product</a>, for the biquaternion counterpart.</li>
+<li><a href="the-lie-structure-of-the-antisymmetric-quaternionic-product-of-the-quaternions.html">The Lie Structure of the Antisymmetric Quaternionic Product of the Quaternions</a>, for the bracket that fails.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

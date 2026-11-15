@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Two Products of the Complex Space — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-two-products-of-the-complex-space"><strong>The Two Products of the Complex Space</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The complex space carries two products and not twelve. The general theory builds four general products by choosing, on each slot, between the identity and a conjugation, and then splits each of the four into a symmetric and an antisymmetric part. On the complex field the quaternionic conjugation is the identity, the four settings collapse two-and-two, and each of the two survivors is fixed by its own exchange, so no split occurs. The result is the field product $Q_1Q_2$ and the sesquilinear product $Q_1\bar Q_2$, and nothing else.</p>
+<p>The article states the collapse, proves the two exchange identities, separates the two products by their slots, proves the laws that one keeps and the other loses, exhibits the two pairings and their two adjoints, and shows that the collapse is the degenerate case of the general theorem on the conjugate-symmetric and skew-conjugate-symmetric parts of a sesquilinear product.</p>
+<p>The multiplication of the field and the definition of $\mathbb{C}$ are <em>Complex Algebra</em>. The classes of element read in the two products are <em>The Classes of Element of the Complex Algebra</em>, and the field property that forces the collapse is <em>The Specificities of the Complex Algebra</em>. The forms and norms carried by the two products are <em>The Two Forms and the Two Algebraic Norms of the Complex Space</em>; the ternary product forced by the failure of associativity is <em>The Ternary Product and the Associator of the Complex Space</em>; the two-sided operators are <em>The Enveloping Operator Algebra and the Collapse of the Two-Sided Action on the Complex Algebra</em>.</p>
+<p><strong>Interpretation.</strong> The element is $Q_1=q_1+iq'_1$ with real coordinates $q_1$ and $q'_1$, and a second element is $Q_2=q_2+iq'_2$. The base involution is the bar, $\bar Q_1=q_1-iq'_1$, and the Hermitian conjugation is the same map, ${}^{*}=\bar{\cdot}$; the quaternionic conjugation ${}^{\natural}$ is the identity, the algebra having no vector part. The four general products are written with the slots of <em>Product and Form Conventions</em>: the first slot read as it stands or through ${}^{\natural}$, the second as it stands or through ${}^{*}$.</p>
+<h2 id="the-four-products-of-the-general-theory">The Four Products of the General Theory</h2>
+<p>The general theory reads a product by the conjugation each slot carries. The table lists the four settings and their images on $\mathbb{C}$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the general product</th>
+<th>the slots</th>
+<th>its image on $\mathbb{C}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the general plain bilinear product</td>
+<td>$(\mathrm{id},\mathrm{id})$</td>
+<td>$Q_1Q_2$</td>
+</tr>
+<tr>
+<td>the general quaternionic bilinear product</td>
+<td>$({}^{\natural},\mathrm{id})$</td>
+<td>$Q_1Q_2$</td>
+</tr>
+<tr>
+<td>the general plain sesquilinear product</td>
+<td>$(\mathrm{id},{}^{*})$</td>
+<td>$Q_1\bar Q_2$</td>
+</tr>
+<tr>
+<td>the general quaternionic sesquilinear product</td>
+<td>$({}^{\natural},{}^{*})$</td>
+<td>$Q_1\bar Q_2$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proposition.</strong> The four general products fall two-and-two onto two products.</p>
+<p><em>Proof.</em> The conjugation ${}^{\natural}$ is the identity map on $\mathbb{C}$, so the two settings of the first slot coincide, and the four settings give two distinct maps.</p>
+<p><strong>Proposition.</strong> The four symmetric parts coincide with their parents, and the four antisymmetric parts vanish identically.</p>
+<p><em>Proof.</em> The symmetric part is the half-sum of a product and of its image under the exchange that preserves the class of that product; a product fixed by its own exchange equals its own symmetric part. The next section proves that each of the two products is fixed by its own exchange, so each of the four symmetric parts is its parent. The antisymmetric part is the half-difference, and a difference of two equal terms is zero.</p>
+<p><strong>Remark.</strong> The four antisymmetric products have no object. The operator $\wedge$ of <em>Product and Form Conventions</em>, which names the antisymmetrised product $Q_1\wedge Q_2=\tfrac12(Q_1Q_2-Q_2Q_1)$ and its three siblings, names the zero map four times. The twelve names of the general theory therefore name two maps here, and four of the twelve names name the zero map.</p>
+<h2 id="the-two-products">The Two Products</h2>
+<p><strong>Definition.</strong> The <strong>plain product</strong> is the multiplication of the field,</p>
+<p>$$
+Q_1Q_2=(q_1q_2-q'_1q'_2)+i(q_1q'_2+q'_1q_2),
+$$</p>
+<p>and the <strong>sesquilinear product</strong> is the same multiplication with the second factor conjugated,</p>
+<p>$$
+Q_1\bar Q_2=(q_1q_2+q'_1q'_2)+i(q'_1q_2-q_1q'_2).
+$$</p>
+<p>The two read the same pair and differ in the sign of the term $q'_1q'_2$ in the real part and in the order of the factors in the imaginary part. They agree exactly when $q'_1q'_2=0$ and $q_1q'_2=q'_1q_2$, that is, when $Q_2$ is real or $Q_1$ is zero.</p>
+<h2 id="the-two-exchanges">The Two Exchanges</h2>
+<h3 id="the-interchange-and-the-plain-product">The Interchange and the Plain Product</h3>
+<p><strong>Proposition.</strong> The plain product is fixed by the interchange of its two arguments: $Q_1Q_2=Q_2Q_1$.</p>
+<p><em>Proof.</em> The multiplication of $\mathbb{C}$ is commutative, being the multiplication of a field. In coordinates the two displays of the preceding section are symmetric in the indices $1$ and $2$.</p>
+<p>The interchange is the exchange that preserves the class of a bilinear product, and the proposition says that the plain product is fixed by it. Hence its symmetric part is the product and its antisymmetric part is zero.</p>
+<h3 id="the-adapted-exchange-and-the-sesquilinear-product">The Adapted Exchange and the Sesquilinear Product</h3>
+<p><strong>Proposition.</strong> The sesquilinear product is fixed by the interchange composed with the conjugation of the value: $Q_1\bar Q_2=\overline{Q_2\bar Q_1}$.</p>
+<p><em>Proof.</em> $\overline{Q_2\bar Q_1}=\bar Q_2Q_1$, and the multiplication of the field is commutative, so $\bar Q_2Q_1=Q_1\bar Q_2$.</p>
+<p><strong>Remark (the interchange alone does not fix it).</strong> The plain interchange sends $Q_1\bar Q_2$ to $Q_2\bar Q_1$, and the two differ whenever the imaginary part of $Q_1\bar Q_2$ is non-zero. The sesquilinear product is therefore fixed by the adapted exchange and not by the plain one. This is the whole content of the section: the product does not split, but the exchange that shows it is not the naive one.</p>
+<h2 id="the-collapse-as-a-degenerate-case">The Collapse as a Degenerate Case</h2>
+<p><em>The Conjugate-Symmetric and Skew-Conjugate-Symmetric Parts of a Sesquilinear Product</em> proves the general theorem. A sesquilinear product $\star$ over a ring with a compatible involution $c$ is not fixed by the interchange of its arguments: the transposed product has the opposite parity and leaves the class. The exchange is therefore adapted, the arguments are exchanged and the value is conjugated, and with that exchange every sesquilinear product splits uniquely into the <strong>conjugate-symmetric</strong> half $\tfrac12(Q_1\star Q_2+\overline{Q_2\star Q_1})$ and the <strong>skew-conjugate-symmetric</strong> half $\tfrac12(Q_1\star Q_2-\overline{Q_2\star Q_1})$.</p>
+<p><strong>Theorem.</strong> The sesquilinear product of $\mathbb{C}$ is conjugate-symmetric, its skew-conjugate-symmetric half is zero, and its conjugate-symmetric half is the product itself.</p>
+<p><em>Proof.</em> Substitute the exchange identity of the preceding section in the two halves: the first becomes $\tfrac12(Q_1\bar Q_2+Q_1\bar Q_2)=Q_1\bar Q_2$ and the second becomes $\tfrac12(Q_1\bar Q_2-Q_1\bar Q_2)=0$.</p>
+<p><strong>Remark (why the degeneration is forced).</strong> In the general theorem the two halves are distinct objects because the value of the product and its conjugate under the exchange are distinct. Here they coincide, and the reason is the commutativity of the algebra: the exchange of the arguments of the multiplication is invisible, so the only thing the adapted exchange has to undo is the conjugation of the value, which it does exactly. The collapse is not a special feature of dimension two; it is the general feature of a sesquilinear product over a commutative algebra with the exchange of the factors.</p>
+<p><strong>Remark (the difference that is not a part).</strong> The quantity $Q_1\bar Q_2-Q_2\bar Q_1$ is non-zero in general, and it is not an antisymmetric part of the sesquilinear product. It equals $2i\operatorname{Im}(Q_1\bar Q_2)$, a purely imaginary value, so it is not a product of the class; and it is real-linear in the first slot without being $\mathbb{C}$-linear or conjugate-linear there, since at $(Q_1,Q_2)=(1,1)$ it vanishes and at $(i,1)$ it equals $2i$, whereas a $\mathbb{C}$-linear map would give $i\cdot0$ and a conjugate-linear one $\bar i\cdot0$. An antisymmetric part is by definition the difference of a product and its image under the exchange that preserves the class, and that difference is zero here. The quantity $Q_1\bar Q_2-Q_2\bar Q_1$ is the imaginary part of the Hermitian form, and it is studied as such in <em>The Two Forms and the Two Algebraic Norms of the Complex Space</em>, where it appears as $2i$ times the imaginary part of $H$.</p>
+<h2 id="the-two-classes">The Two Classes</h2>
+<p><strong>Proposition.</strong> Both products are $\mathbb{C}$-linear in the first slot; in the second slot the plain product is $\mathbb{C}$-linear and the sesquilinear product is conjugate-linear.</p>
+<p><em>Proof.</em> For the first slot, $(\lambda Q_1)\bar Q_2=\lambda(Q_1\bar Q_2)$ and $(\lambda Q_1)Q_2=\lambda(Q_1Q_2)$ for every complex $\lambda$. For the second, $Q_1(\lambda Q_2)=\lambda(Q_1Q_2)$, whereas $Q_1\overline{\lambda Q_2}=\bar\lambda(Q_1\bar Q_2)$.</p>
+<p>The table records the four slot rules.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>product</th>
+<th>first slot</th>
+<th>second slot</th>
+<th>class over $\mathbb{C}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$Q_1Q_2$</td>
+<td>$\mathbb{C}$-linear</td>
+<td>$\mathbb{C}$-linear</td>
+<td>bilinear</td>
+</tr>
+<tr>
+<td>$Q_1\bar Q_2$</td>
+<td>$\mathbb{C}$-linear</td>
+<td>conjugate-linear</td>
+<td>sesquilinear</td>
+</tr>
+</tbody>
+</table></div>
+<p>The two products belong to two different classes. That is why the general theory keeps them apart and why the antisymmetric parts of one class have no meaning in the other: the exchange that preserves a bilinear product and the exchange that preserves a sesquilinear one are different maps.</p>
+<h2 id="the-laws">The Laws</h2>
+<p><strong>Proposition.</strong> The plain product is associative, commutative, and has the unit $1$ on both sides.</p>
+<p><em>Proof.</em> These are the field laws, proved in <em>Complex Algebra</em>; the two-sided unit is the multiplicative identity.</p>
+<p><strong>Proposition.</strong> The sesquilinear product is not associative, has the unit $1$ on the right and no unit on the left, and is commutative in the twisted sense $\overline{Q_2\bar Q_1}=Q_1\bar Q_2$.</p>
+<p><em>Proof.</em> The right unit is read at $Q_2=1$: $Q_1\bar 1=Q_1$. On the left, $1\bar Q_1=\bar Q_1$, which equals $Q_1$ only for real $Q_1$, so no left unit exists. The twisted commutativity is the exchange identity. The failure of associativity is computed in <em>The Ternary Product and the Associator of the Complex Space</em>; its value is $Q_1\bar Q_2(\bar Q_3-Q_3)$, which is not identically zero.</p>
+<p>The two products differ on exactly the laws the slot analysis predicts: the conjugation in the second slot is what destroys associativity and what removes the left unit. The plain product, whose second slot is linear, keeps both.</p>
+<h2 id="the-two-pairings-and-the-two-adjoints">The Two Pairings and the Two Adjoints</h2>
+<h3 id="the-plain-pairing-and-its-adjoint">The Plain Pairing and Its Adjoint</h3>
+<p><strong>Definition.</strong> The <strong>plain pairing</strong> is $P(Q_1,Q_2)=Q_1Q_2$.</p>
+<p><strong>Proposition.</strong> The plain pairing is symmetric, and the left multiplication $L_{Q_1}(Q_3)=Q_1Q_3$ is self-adjoint for it: $P(L_{Q_1}Q_3,Q_2)=P(Q_3,L_{Q_1}Q_2)$.</p>
+<p><em>Proof.</em> The two sides are $Q_1Q_3Q_2$ and $Q_3Q_1Q_2$, and the multiplication is commutative.</p>
+<h3 id="the-hermitian-pairing-and-its-adjoint">The Hermitian Pairing and Its Adjoint</h3>
+<p><strong>Definition.</strong> The <strong>Hermitian pairing</strong> is $H(Q_1,Q_2)=Q_1\bar Q_2$.</p>
+<p><strong>Proposition.</strong> The Hermitian pairing is conjugate-symmetric, and the adjoint of the left multiplication is the left multiplication by the conjugate: $L_{Q_1}^{\dagger}=L_{\bar Q_1}$.</p>
+<p><em>Proof.</em> $H(L_{Q_1}Q_3,Q_2)=Q_1Q_3\bar Q_2$ and $H(Q_3,L_{\bar Q_1}Q_2)=Q_3\overline{\bar Q_1Q_2}=Q_3Q_1\bar Q_2$, and the two agree. The same computation with the roles of the slots exchanged gives $R_{Q_1}^{\dagger}=R_{\bar Q_1}$.</p>
+<p><strong>Remark.</strong> The two adjoints differ by the conjugation of the parameter. The plain pairing keeps the parameter and the Hermitian pairing conjugates it, and the reason is again the slot: an adjoint is read against a form, a form is the scalar part of a product, and the second slot of the Hermitian pairing carries the conjugation. In the matrix model $M_2(\mathbb{R})$ of <em>$M_2(\mathbb{R})$ Cayley Representation : Operators</em> the same difference appears as the identity of the transpose with the conjugate matrix.</p>
+<h2 id="the-two-structures">The Two Structures</h2>
+<p>The two products define two structures on one space. The plain product makes $\mathbb{C}$ the field it is: associative, commutative, with a two-sided unit, and with every non-zero element invertible. The sesquilinear product makes $\mathbb{C}$ the general plain sesqualgebra over $(\mathbb{C},\bar{\cdot})$: an abelian group with an operation that is additive, $\mathbb{C}$-linear in the first slot, conjugate-linear in the second, with a right unit alone.</p>
+<p><strong>Remark (the second is derived from the first).</strong> The sesquilinear product is the plain product with the conjugation inserted in the second slot, and the insertion is the whole difference. Nothing in the passage uses more than the commutativity of the multiplication and the fact that the bar is an involution. Hence every statement about the sesquilinear structure that is not about the conjugation is a statement about the field, which is why the sesquilinear article of the corpus is short and why the field article carries the weight.</p>
+<h2 id="summary">Summary</h2>
+<p>The complex space carries two products, $Q_1Q_2$ and $Q_1\bar Q_2$, because the quaternionic conjugation is the identity and the four settings of the general product collapse two-and-two. Each product is fixed by its own exchange, the plain one by the interchange and the sesquilinear one by the interchange composed with the conjugation of the value, so neither splits: the four symmetric parts coincide with their parents and the four antisymmetric parts vanish identically. Both products are $\mathbb{C}$-linear in the first slot and differ in the second, linear against conjugate-linear. The plain product is associative with a two-sided unit; the sesquilinear one is not associative, has the right unit alone, and is commutative only in the twisted sense. The plain pairing is symmetric with a self-adjoint multiplication, the Hermitian pairing is conjugate-symmetric with the adjoint $L_{Q_1}^{\dagger}=L_{\bar Q_1}$, and the collapse of the general split is exactly the degenerate case of <em>The Conjugate-Symmetric and Skew-Conjugate-Symmetric Parts of a Sesquilinear Product</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$Q_1=q_1+iq'_1$, $Q_2=q_2+iq'_2$</td>
+<td>two complex elements, with real coordinates</td>
+</tr>
+<tr>
+<td>$Q_1Q_2$</td>
+<td>the plain product, the multiplication of the field</td>
+</tr>
+<tr>
+<td>$Q_1\bar Q_2$</td>
+<td>the sesquilinear product, the second factor conjugated</td>
+</tr>
+<tr>
+<td>${}^{\natural}$, ${}^{*}$</td>
+<td>the quaternionic conjugation, the identity here, and the Hermitian conjugation, the bar</td>
+</tr>
+<tr>
+<td>$P(Q_1,Q_2)=Q_1Q_2$</td>
+<td>the plain pairing</td>
+</tr>
+<tr>
+<td>$H(Q_1,Q_2)=Q_1\bar Q_2$</td>
+<td>the Hermitian pairing</td>
+</tr>
+<tr>
+<td>$L_{Q_1}$, $R_{Q_1}$</td>
+<td>the left and right multiplications; they coincide</td>
+</tr>
+<tr>
+<td>$L_{Q_1}^{\dagger}=L_{\bar Q_1}$</td>
+<td>the adjoint of the left multiplication for $H$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, Colloquium Publications 44 (American Mathematical Society, 1998), for the slot conventions of a product with an involution and the class-preserving exchanges.</li>
+<li>Nicolas Bourbaki, <em>Algebra I: Chapters 1–3</em> (Springer, 1998), for bilinear and sesquilinear maps, their adjoints and the non-degenerate pairings.</li>
+<li>Serge Lang, <em>Algebra</em>, Graduate Texts in Mathematics 211 (Springer, third edition, 2002), for the field product, its laws and the construction of a sesquilinear form from a linear one.</li>
+<li>Paul M. Cohn, <em>Basic Algebra: Groups, Rings and Fields</em> (Springer, 2003), for the comparison of a bilinear and a sesquilinear multiplication over a commutative ring with an involution.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

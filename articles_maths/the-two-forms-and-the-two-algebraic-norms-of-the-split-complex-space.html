@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Two Forms and the Two Algebraic Norms of the Split-Complex Space — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-two-forms-and-the-two-algebraic-norms-of-the-split-complex-space"><strong>The Two Forms and the Two Algebraic Norms of the Split-Complex Space</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The split-complex space carries two forms and two algebraic norms, and they are the collapse of the four and the four of the biquaternion layer. This article writes the two forms on the coordinates, gives their Gram matrices, computes their realified signatures, and reads the two algebraic norms as the diagonals of the forms. It closes on the reversal: over the complex field the definite form is the sesquilinear one and its isotropic set is a point, and here the definite form is the plain one and the isotropic set is a pair of lines.</p>
+<p>The claim is a claim about which form is definite. <strong>The plain form is definite and the Hermitian form is indefinite</strong>, the opposite of the complex field. One sign, $j^2=+1$, does it: the reflection $J$ preserves the plain form and reverses the Hermitian one, so the realification rules exchange places.</p>
+<p>The two forms are built in <em>The Two Products of the Split-Complex Space</em>, which owns the products and their laws; the cone the Hermitian form defines is <em>The Hermitian Form, the Double Cone and the Reversed Cauchy-Schwarz Inequality</em>; the criterion of invertibility the norm gives is <em>Norm and Invertibility in the General Split-Complex Algebra</em>; the realified signatures are read against <em>Hermitian Forms over Algebras and Norms</em>.</p>
+<h2 id="the-four-forms-and-their-collapse">The Four Forms and Their Collapse</h2>
+<h3 id="the-four-letters">The Four Letters</h3>
+<p>The corpus writes the four forms with two arguments and the four algebraic norms with one, and the four letters are $P$, $N$, $H$ and $\mathrm{Kr}$: plain, quaternionic, Hermitian and Krein (<em>Product and Form Conventions</em>, and <em>Algebra and Element Conventions</em> for the letters). On $\mathbb{B}$ the four forms are four, because the quaternionic mark reverses the vector part.</p>
+<h3 id="the-collapse">The Collapse</h3>
+<p><strong>Proposition.</strong> On $\mathbb{C}_{\mathrm{spl}}$ the quaternionic mark is the identity, so</p>
+<p>$$
+P=N, \qquad H=\mathrm{Kr},
+$$</p>
+<p>and the four forms are two.</p>
+<p><strong>Proof.</strong> The quaternionic form is $N(A,C)=A^{\natural}C$ and the Krein form is $\mathrm{Kr}(A,C)=A^{\natural}\bar C$. An element of $\mathbb{C}_{\mathrm{spl}}$ has no vector part, so $A^{\natural}=A$ for every element, and the two reduce to $P$ and $H$.</p>
+<p>The collapse is the same collapse as that of the four products (<em>The Two Products of the Split-Complex Space</em>), seen at the level of the forms: four letters, two maps.</p>
+<h3 id="the-two-forms">The Two Forms</h3>
+<p>$$
+P(A,C)=AC, \qquad H(A,C)=A\bar C ,
+$$</p>
+<p>with the coordinates</p>
+<p>$$
+P(A,C)=(ac+bd)+(ad+bc)j, \qquad H(A,C)=(ac-bd)+(bc-ad)j .
+$$</p>
+<p>Both are $\mathbb{C}_{\mathrm{spl}}$-valued forms on the free module of rank one, and they are separated by symmetry and by sign.</p>
+<h2 id="the-plain-form">The Plain Form</h2>
+<h3 id="symmetry-and-bilinearity">Symmetry and Bilinearity</h3>
+<p><strong>Proposition.</strong> $P$ is symmetric and $\mathbb{C}_{\mathrm{spl}}$-bilinear, $P(A,C)=P(C,A)$, and linear in each slot over $\mathbb{C}_{\mathrm{spl}}$.</p>
+<p><strong>Proof.</strong> $P$ is the multiplication of a commutative ring, so it is symmetric, and a multiplication is linear in each slot over the ring.</p>
+<h3 id="the-gram-matrix">The Gram Matrix</h3>
+<p>Over the free module of rank one with the basis $1$, the Gram matrix of $P$ is the $1\times1$ matrix $[P(1,1)]=[1]$. Its realification has the Gram matrix on the basis $1,j$</p>
+<p>$$
+\bigl[\operatorname{Re}P\bigr]=\begin{pmatrix}1&0\\0&1\end{pmatrix} ,
+$$</p>
+<p>since $\operatorname{Re}P(1,1)=1$, $\operatorname{Re}P(1,j)=0$ and $\operatorname{Re}P(j,j)=1$.</p>
+<h3 id="definiteness-and-the-signature">Definiteness and the Signature</h3>
+<p><strong>Theorem.</strong> $\operatorname{Re}P$ is positive definite of signature $(2,0)$: $\operatorname{Re}P(A,A)=a^2+b^2$, which vanishes only at $A=0$.</p>
+<p><strong>Proof.</strong> $\operatorname{Re}P(A,A)$ is the real part of $A^2=(a^2+b^2)+2ab\,j$, that is $a^2+b^2$, a sum of two squares. The Gram matrix is the identity, so the signature is $(2,0)$.</p>
+<h3 id="the-cone-of-squares-is-the-whole-plane">The Cone of Squares Is the Whole Plane</h3>
+<p>A definite form has no isotropic vector, so the set of $A$ with $\operatorname{Re}P(A,A)\ge0$ is the whole plane, the boundary of the set being empty. That is what "the plane as the cone of squares" means: the positivity of $P$ excludes nothing.</p>
+<p>The image of the diagonal of $P$ is a smaller set. The values $P(A,A)=A^2$ fill the forward cone $a^2\ge b^2$ and not the plane, because the squaring is not onto (<em>The Square Map of the Split-Complex Space</em>). The two statements are not in conflict: the <strong>positive set</strong> of a definite form is the plane, and the <strong>image of its diagonal map</strong> is the cone. The first is a property of the form, the second of the square.</p>
+<h2 id="the-hermitian-form">The Hermitian Form</h2>
+<h3 id="conjugate-symmetry-and-sesquilinearity">Conjugate-Symmetry and Sesquilinearity</h3>
+<p><strong>Proposition.</strong> $H$ is conjugate-symmetric and sesquilinear: $H(A,C)=\overline{H(C,A)}$, linear in the first slot and conjugate-linear in the second.</p>
+<p><strong>Proof.</strong> $H(C,A)=C\bar A=\overline{\bar C A}=\overline{A\bar C}$ by commutativity, and $H(A,\lambda C)=A\bar\lambda\bar C=\bar\lambda H(A,C)$.</p>
+<h3 id="the-gram-matrix_1">The Gram Matrix</h3>
+<p>The Gram matrix of $H$ over the free module of rank one is again $[H(1,1)]=[1]$, and the two forms therefore have the same single entry. The realification on the basis $1,j$ is</p>
+<p>$$
+\left[\operatorname{Re}H\right]=\begin{pmatrix}1&0\\0&-1\end{pmatrix} ,
+$$</p>
+<p>since $\operatorname{Re}H(1,1)=1$, $\operatorname{Re}H(1,j)=0$ and $\operatorname{Re}H(j,j)=-1$.</p>
+<h3 id="the-signature">The Signature</h3>
+<p><strong>Theorem.</strong> $\operatorname{Re}H$ is indefinite of signature $(1,1)$: $\operatorname{Re}H(A,A)=a^2-b^2$, positive on the real line, negative on the split imaginary line and zero on the pair of null lines.</p>
+<p><strong>Proof.</strong> $\operatorname{Re}H(A,A)$ is the real part of $A\bar A=a^2-b^2$, which is already real. The Gram matrix has the eigenvalues $1$ and $-1$, so the signature is $(1,1)$; the form changes sign, so it is indefinite.</p>
+<h3 id="the-isotropic-set">The Isotropic Set</h3>
+<p><strong>Theorem.</strong> The isotropic set of $H$ is the pair of null lines,</p>
+<p>$$
+\{A : H(A,A)=0\}=\mathbb{R}\Pi_+\cup\mathbb{R}\Pi_- .
+$$</p>
+<p><strong>Proof.</strong> $H(A,A)=a^2-b^2$ vanishes exactly when $a^2=b^2$, that is $a=\pm b$, which is the union of the two lines spanned by $1+j$ and $1-j$.</p>
+<p>The isotropic set is a pair of lines and not a point, it is closed under multiplication, and it consists of the zero divisors with the origin adjoined (<em>Zero Divisors of the Split-Complex Algebra</em>). The form is not definite: it is positive on the real line, negative on the split imaginary line, and zero on the two idempotent lines.</p>
+<h2 id="the-two-algebraic-norms">The Two Algebraic Norms</h2>
+<h3 id="the-plain-norm">The Plain Norm</h3>
+<p>The <strong>plain algebraic norm</strong> is $P$ read at one argument,</p>
+<p>$$
+P(A)=A^2=(a^2+b^2)+2ab\,j ,
+$$</p>
+<p>$\mathbb{C}_{\mathrm{spl}}$-valued, multiplicative, anisotropic: $P(A)=0$ forces $a=b=0$, since $A^2=0$ reads $A_+^2=A_-^2=0$.</p>
+<p>It is not a real-valued object and it carries no order and no modulus. It is multiplicative in the strong sense, $P(AC)=P(A)P(C)$, because $(AC)^2=A^2C^2$ in a commutative ring.</p>
+<h3 id="the-hermitian-norm">The Hermitian Norm</h3>
+<p>The <strong>Hermitian algebraic norm</strong> is $H$ read at one argument,</p>
+<p>$$
+H(A)=A\bar A=a^2-b^2=N(A) ,
+$$</p>
+<p>real, multiplicative, indefinite. Its value is the real part of the form and the whole of the form, since $H(A,A)$ is real.</p>
+<p><strong>Theorem.</strong> $N(AC)=N(A)N(C)$ and $N(A)\neq0$ is the criterion of invertibility of $A$; the units are the elements off the null lines.</p>
+<p><strong>Proof.</strong> $N(AC)=(AC)\overline{(AC)}=A\bar A\,C\bar C$ by commutativity, and $A^{-1}=\bar A/N(A)$ when $N(A)\neq0$; the criterion is <em>Norm and Invertibility in the General Split-Complex Algebra</em>.</p>
+<h3 id="polarisation">Polarisation</h3>
+<p>The two norms polarise to the two forms:</p>
+<p>$$
+P(A+C)-P(A)-P(C)=2P(A,C), \qquad N(A+C)-N(A)-N(C)=2\operatorname{Re}H(A,C) .
+$$</p>
+<p>The second is the split bilinear form $g(A,C)=ac-bd$ of signature $(1,1)$, the polar form of the indefinite norm. The first polarises into a $\mathbb{C}_{\mathrm{spl}}$-valued form, which is the plain form again.</p>
+<h2 id="the-reversal-of-the-complex-case">The Reversal of the Complex Case</h2>
+<h3 id="the-definite-form-is-the-sesquilinear-one-there">The Definite Form Is the Sesquilinear One There</h3>
+<p>Over $\mathbb{C}$ the sesquilinear form $A\bar C$ is positive definite, its diagonal $A\bar A=\lvert A\rvert^2$ is the square of the modulus, and the plain form $AC$ realifies with signature $(1,1)$: the form $\operatorname{Re}(AC)$ is $ac-bd$ on the real and imaginary coordinates. So over $\mathbb{C}$ the definite form is the sesquilinear one, and here the definite form is the plain one. The two forms exchange their realified signatures.</p>
+<p><strong>The reason.</strong> The reflection $J$, the multiplication by the generator, preserves one form and reverses the other, and the sign of the square of the generator decides which is which:</p>
+<p>$$
+P(JA,JC)=+P(A,C), \qquad H(JA,JC)=-H(A,C) \quad\text{here},
+$$</p>
+<p>and the two signs are exchanged over $\mathbb{C}$, where $i^2=-1$. The realification rules attach the signature $(n,n)$ to the preserved form and the doubling to the reversed one, so the exchange of the signs is the exchange of the signatures.</p>
+<h3 id="the-isotropic-set-is-a-point-there">The Isotropic Set Is a Point There</h3>
+<p>Over $\mathbb{C}$ the isotropic set of the Hermitian form is the origin, since $A\bar A=0$ forces $A=0$; over $\mathbb{C}_{\mathrm{spl}}$ it is a pair of lines. The isotropic set of the plain form is the origin in both cases, the plain form being anisotropic in both. So the reversal is exact and total:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>over $\mathbb{C}$</th>
+<th>over $\mathbb{C}_{\mathrm{spl}}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the plain form $P$</td>
+<td>$(1,1)$, indefinite</td>
+<td>$(2,0)$, definite</td>
+</tr>
+<tr>
+<td>the Hermitian form $H$</td>
+<td>$(2,0)$, definite</td>
+<td>$(1,1)$, indefinite</td>
+</tr>
+<tr>
+<td>the isotropic set of $H$</td>
+<td>the origin</td>
+<td>two lines</td>
+</tr>
+<tr>
+<td>the isotropic set of $P$</td>
+<td>the origin</td>
+<td>the origin</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="the-two-norms-compared">The Two Norms Compared</h3>
+<p>Over $\mathbb{C}$ the norm $A\bar A$ is definite and gives the modulus, and the plain norm $A^2$ is complex-valued and fixes no order; here $N(A)=a^2-b^2$ is real and indefinite, and $P(A)=A^2$ is $\mathbb{C}_{\mathrm{spl}}$-valued. The arities agree and the characters are exchanged: over $\mathbb{C}$ the real norm is the definite one and it gives the modulus, while here the real norm is $N$ and it is indefinite, and no multiple of it is definite. That impossibility is <em>The Hermitian Form, the Double Cone and the Reversed Cauchy-Schwarz Inequality</em>, and it is the reason the ring has no modulus.</p>
+<h2 id="summary">Summary</h2>
+<p>The space carries two forms, the plain $P(A,C)=AC$ and the Hermitian $H(A,C)=A\bar C$, the four forms of the biquaternion layer collapsing to them because the quaternionic mark is the identity: $P=N$ and $H=\mathrm{Kr}$. Both have the Gram matrix $[1]$ over the free module of rank one and are separated by symmetry, $P$ being symmetric and $H$ conjugate-symmetric.</p>
+<p>$P$ realifies with signature $(2,0)$ and is positive definite, so its positive set is the whole plane; the image of its diagonal is the forward cone, because the square map is not onto. $H$ realifies with signature $(1,1)$ and is indefinite, with isotropic set the pair of null lines $\mathbb{R}\Pi_+\cup\mathbb{R}\Pi_-$, which is the set of zero divisors with the origin adjoined.</p>
+<p>The two algebraic norms are $P(A)=A^2$, $\mathbb{C}_{\mathrm{spl}}$-valued and anisotropic, and $N(A)=A\bar A=a^2-b^2$, real and indefinite, and both are multiplicative. Over the complex field the two forms exchange their signatures and $H$ has the origin alone for its isotropic set; the reversal is caused by the sign of the square of the generator, which makes $J$ preserve $P$ and reverse $H$ here and the other way round over $\mathbb{C}$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$P(A,C)=AC$</td>
+<td>The plain form, symmetric, definite of signature $(2,0)$</td>
+</tr>
+<tr>
+<td>$H(A,C)=A\bar C$</td>
+<td>The Hermitian form, conjugate-symmetric, indefinite of signature $(1,1)$</td>
+</tr>
+<tr>
+<td>$N=\mathrm{Kr}$</td>
+<td>The quaternionic forms, equal to $P$ and $H$ here</td>
+</tr>
+<tr>
+<td>$P(A)=A^2$</td>
+<td>The plain algebraic norm, $\mathbb{C}_{\mathrm{spl}}$-valued, anisotropic</td>
+</tr>
+<tr>
+<td>$N(A)=A\bar A=a^2-b^2$</td>
+<td>The Hermitian algebraic norm, real, indefinite</td>
+</tr>
+<tr>
+<td>$\operatorname{Re}P$, $\operatorname{Re}H$</td>
+<td>The realifications, with Gram matrices $\mathrm{diag}(1,1)$ and $\mathrm{diag}(1,-1)$</td>
+</tr>
+<tr>
+<td>$g(A,C)=ac-bd$</td>
+<td>The polar form of $N$, of signature $(1,1)$</td>
+</tr>
+<tr>
+<td>$\mathbb{R}\Pi_+\cup\mathbb{R}\Pi_-$</td>
+<td>The isotropic set of $H$</td>
+</tr>
+<tr>
+<td>$J$</td>
+<td>The multiplication by $j$, preserving $P$ and reversing $H$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>T. Y. Lam, <em>Introduction to Quadratic Forms over Fields</em> (American Mathematical Society, 2005), for symmetric bilinear forms, signature and inertia in dimension two.</li>
+<li>János Bognár, <em>Indefinite Inner Product Spaces</em> (Springer, Ergebnisse der Mathematik 78, 1974), for indefinite forms, isotropic subspaces and the Krein form.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society, Colloquium Publications 44, 1998), for forms over an algebra with an involution and the realification rules.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, Graduate Texts in Mathematics 88, 1982), for the trace and norm forms of an associative algebra and their polarization.</li>
+<li>Isaak Yaglom, <em>Complex Numbers in Geometry</em> (Academic Press, 1968), for the two forms of the split plane and the two isotropic lines.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

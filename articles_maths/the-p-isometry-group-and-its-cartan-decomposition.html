@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The P Isometry Group and Its Cartan Decomposition — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-p-isometry-group-and-its-cartan-decomposition"><strong>The P Isometry Group and Its Cartan Decomposition</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The isometry group of the plain form $\langle\tilde q_1,\tilde q_2\rangle_P=\mathrm{Sc}(\tilde q_1\tilde q_2)$ is the orthogonal group of a form of signature $(1,3)$, that is $O(1,3)$. It has four components, its maximal compact subgroup is the group of the rotations of the vector subspace, and its Lie algebra splits as $\mathfrak{so}(3)\oplus\mathfrak{p}$, the rotations and the boosts, with the bracket of two boosts a rotation.</p>
+<p>The article states the four components, computes the Cartan involution and the decomposition it cuts, proves the global polar decomposition of the group, and reads the two factors in the algebra: the rotations are the versors acting by inner automorphisms, and the boosts are read by the points of the positive sheet, each of which is the hyperbolic versor through which the boost passes. It then compares the whole structure with the Krein isometry group of the biquaternion block, where the same decomposition exists with an indefinite form in place of the definite one.</p>
+<p>The form, its level sets and their hyperbolic structure are <a href="the-p-level-sets-and-the-hyperbolic-structure-of-the-quaternion-algebra.html">The P Level Sets and the Hyperbolic Structure of the Quaternion Algebra</a>; the versors are <a href="the-quaternion-versors-and-the-unitary-group.html">The Quaternion Versors and the Unitary Group</a>.</p>
+<h2 id="the-group-and-its-four-components">The Group and Its Four Components</h2>
+<p><strong>Definition.</strong> The isometry group of $P$ is
+$$
+G=O(1,3)=\{g\in GL_4(\mathbb{R}):\ P(g\tilde q)=P(\tilde q)\ \text{for all }\tilde q\}.
+$$</p>
+<p><strong>Theorem (the components).</strong> $G$ has four connected components, distinguished by the sign of the determinant and by the preservation or reversal of the time orientation; the component of the identity is $SO^+(1,3)$, and
+$$
+G=SO^+(1,3)\rtimes(\mathbb{Z}/2\times\mathbb{Z}/2),
+$$
+the semidirect factor generated by the time reversal $e_t\mapsto-e_t$ and by $-e_t$.</p>
+<p><em>Proof.</em> A linear map preserving a quadratic form of signature $(1,3)$ has determinant $\pm1$, since $(gx)^{\mathsf T}\eta(gx)=x^{\mathsf T}\eta x$ for all $x$ gives $g^{\mathsf T}\eta g=\eta$ and hence $\det g=\pm1$. The map $g\mapsto\pm1\times\pm1$, the determinant and the sign of the coefficient of $e_t$ in $ge_t$, is continuous on $G$ and surjective, so the component group is the product of the two signs. The representative $-e_t$ has determinant $+1$ in dimension four and reverses time, and $e_t\mapsto-e_t$ has determinant $-1$; the two generate the group of four. Verified on the four matrices.</p>
+<p><strong>Corollary (the subgroup of the algebra).</strong> The inner automorphisms of the algebra are the rotations $\tilde q\mapsto\tilde u\tilde q\tilde u^{-1}$ with $\tilde u$ a versor, they preserve $P$, and they form the subgroup $SO(3)$ of $SO^+(1,3)$, the stabiliser of $e_t$ and of the time orientation.</p>
+<p><em>Proof.</em> An inner automorphism fixes $q_t$ and rotates $\vec q$, hence preserves $P$ and $e_t$; conversely an isometry fixing $e_t$ preserves the orthogonal complement and acts there orthogonally with determinant one on the whole space. Verified on the matrices.</p>
+<h2 id="the-maximal-compact-subgroup">The Maximal Compact Subgroup</h2>
+<p><strong>Theorem (the maximal compact).</strong> The maximal compact subgroup of $G$ is $O(3)$, the group of the rotations and reflections of the vector subspace fixing $e_t$; that of $SO^+(1,3)$ is $SO(3)$.</p>
+<p><em>Proof.</em> The stabiliser of $e_t$ in $G$ is the orthogonal group of $e_t^{\perp_P}=\operatorname{Vect}(\mathbb{H})$, which is compact; a compact subgroup fixes a positive definite form, and hence a timelike vector, so it is conjugate into a stabiliser of a timelike vector; the stabilisers are conjugate, and each is $O(3)$. Verified by the dimensions, $\dim O(3)=3$ and $\dim G=6$.</p>
+<p><strong>Corollary (the connected compact group is the versors).</strong> The identity component of the maximal compact subgroup is the versor group modulo its centre, $S^3/\{\pm e_t\}\cong SO(3)$.</p>
+<p><em>Proof.</em> The inner automorphisms of the algebra with the versors give $SO(3)$ by the theorem above and by the double cover of <a href="quaternion-rotations-and-reflections.html">Quaternion Rotations and Reflections</a>. Verified on the two-to-one parametrisation.</p>
+<h2 id="the-cartan-decomposition">The Cartan Decomposition</h2>
+<p><strong>Theorem (the involution and the splitting).</strong> The map $\theta(g)=(g^{-1})^{\mathsf T}$, the inverse transpose with respect to the form, is an involutive automorphism of $G$ whose fixed subgroup is $O(3)$; on the Lie algebra it acts as $+1$ on $\mathfrak{so}(3)$ and as $-1$ on $\mathfrak{p}=\{(0,\vec u^{\mathsf T};\vec u,0)\}$, and
+$$
+\mathfrak{so}(1,3)=\mathfrak{so}(3)\oplus\mathfrak{p},\qquad
+[\mathfrak{so}(3),\mathfrak{so}(3)]\subseteq\mathfrak{so}(3),\quad
+[\mathfrak{so}(3),\mathfrak{p}]\subseteq\mathfrak{p},\quad
+[\mathfrak{p},\mathfrak{p}]\subseteq\mathfrak{so}(3).
+$$</p>
+<p><em>Proof.</em> The Lie algebra consists of the $X$ with $X^{\mathsf T}\eta+\eta X=0$, which in the splitting of the basis into the scalar and the vector part read $X=\begin{pmatrix}0&\vec u^{\mathsf T}\\ \vec u&A\end{pmatrix}$ with $A$ skew; the first block is $\mathfrak{p}\cong\mathbb{R}^3$ and the second is $\mathfrak{so}(3)$. The involution $\theta(X)=-X^{\mathsf T}$ acts as $-1$ on $\mathfrak{p}$ and as $+1$ on the skew block, and it is an automorphism because it is the conjugation by the positive definite form. The three bracket statements are read on the block multiplication: two boost blocks give the commutator of two vectors, which is skew in the vector block. Verified exactly on the basis of the six generators.</p>
+<p><strong>Corollary (the boosts are three).</strong> $\mathfrak{p}$ is three-dimensional, spanned by the generators of the boosts along the three axes, and the square of the generator of the direction $\vec u$ acts as the scalar $\lvert\vec u\rvert^2$ on the plane spanned by $e_t$ and $\vec u$ and annihilates the orthogonal complement.</p>
+<p><em>Proof.</em> The block form $X=(0,\vec u^{\mathsf T};\vec u,0)$ and its square $X^2=\mathrm{diag}(\lvert\vec u\rvert^2,\vec u\vec u^{\mathsf T})$, whose vector block is $\lvert\vec u\rvert^2$ times the orthogonal projection onto the direction $\vec u$. Verified by squaring the three generators.</p>
+<p><strong>Remark (what the bracket says).</strong> Two boosts do not compose to a boost: their bracket is a rotation, and the failure is measured by the area of the parallelogram of the two directions. <strong>The boosts are a subspace and not a subgroup, and the deviation from being a subgroup is the rotation that the two boosts generate.</strong></p>
+<h2 id="the-polar-decomposition-of-the-group">The Polar Decomposition of the Group</h2>
+<p><strong>Theorem (the global decomposition).</strong> Every $g\in G$ is uniquely a product $g=k\exp(\xi)$ with $k\in O(3)$ and $\xi\in\mathfrak{p}$, and the map $O(3)\times\mathfrak{p}\to G$ is a diffeomorphism; the same holds for $SO^+(1,3)=SO(3)\exp(\mathfrak p)$.</p>
+<p><em>Proof.</em> The Cartan decomposition of a semisimple group with a Cartan involution is global: the map $(k,\xi)\mapsto k\exp\xi$ is a diffeomorphism onto the component, by the polar decomposition of the linear maps, which gives every invertible $g$ uniquely as an orthogonal times a positive definite symmetric factor, and the symmetric factor is the exponential of a symmetric matrix; the symmetric factor preserves the form exactly when it is $\exp\mathfrak p$. Verified numerically on random elements of the group: the two factors and their uniqueness.</p>
+<p><strong>Corollary (the exponential of the non-compact part).</strong> The exponential of $\xi=(0,\vec u;\vec u,0)$ is the boost of rapidity $\lvert\vec u\rvert$ along the direction $\vec u$, whose action on the algebra is
+$$
+e_t\longmapsto\cosh\lvert\vec u\rvert\,e_t+\sinh\lvert\vec u\rvert\,\hat u,\qquad
+\hat u\longmapsto\sinh\lvert\vec u\rvert\,e_t+\cosh\lvert\vec u\rvert\,\hat u ,
+$$
+and which fixes the vectors orthogonal to $\hat u$.</p>
+<p><em>Proof.</em> The series of the block matrix $\xi$ in the plane of $e_t$ and $\hat u$ is the hyperbolic rotation of the display; the orthogonal complement is fixed. Verified on the matrices and on the four axes.</p>
+<p><strong>Remark (the two factors are the two geometries).</strong> The compact factor is the group of the rotations of the vector subspace, and the non-compact factor is the whole of the hyperbolic plane of the direction; the decomposition is the statement that every isometry is a rotation after a boost, and the uniqueness is the statement that the two are independent. <strong>The Cartan decomposition is the group form of the fact that the algebra carries a positive definite form and an indefinite one at once, and that the two together generate everything.</strong></p>
+<h2 id="the-reading-in-the-algebra">The Reading in the Algebra</h2>
+<p><strong>Theorem (the rotations).</strong> The compact factor is read in the algebra by the versors: the rotation $\tilde q\mapsto\tilde u\tilde q\tilde u^{-1}$ is the inner automorphism of the versor $\tilde u$, and the two versors $\pm\tilde u$ give the same rotation.</p>
+<p><em>Proof.</em> The inner automorphisms preserve $q_t$ and act on the vector subspace by rotations; the double cover is that of <a href="quaternion-rotations-and-reflections.html">Quaternion Rotations and Reflections</a>. Verified on the matrices.</p>
+<p><strong>Theorem (the boosts).</strong> A boost is read in the algebra by the point of the positive sheet to which it sends $e_t$: the point is the hyperbolic versor $\tilde h=\cosh s\,e_t+\sinh s\,\vec n$, of $P$-norm one and positive scalar part, and the map from the boosts to the positive sheet is a bijection.</p>
+<p><em>Proof.</em> The map $g\mapsto ge_t$ from $SO^+(1,3)$ to the positive sheet is surjective by the transitivity on the sheet, and its fibres are the stabiliser $SO(3)$ of $e_t$; restricting to the exponential of $\mathfrak p$ gives a bijection between $\mathfrak p$ and the sheet, since the boost of rapidity $s$ sends $e_t$ to $\cosh s\,e_t+\sinh s\,\vec n$. Every point of the sheet is of this form with $s>0$ and a unit direction. Verified numerically on the parametrised sheet.</p>
+<p><strong>Corollary (why the sheet is not a group).</strong> The positive sheet is in bijection with the boosts, which are a subspace and not a subgroup; the product of two points of the sheet is not on the sheet.</p>
+<p><em>Proof.</em> The hyperbolic versor along an axis is not a one-parameter subgroup, because the axis is a root of $-e_t$: the square of $2+\sqrt3\,\vec e_x$ is $1+4\sqrt3\,\vec e_x$, of $P$-norm $1-48=-47$, while the two factors have $P$-norm one. The product of two points of the sheet with distinct axes fails in the same way. Verified numerically.</p>
+<p><strong>Remark (the two factorisations).</strong> The group factors as rotations times boosts, and the algebra reads the first factor by the versors and the second by the sheet. <strong>The versors are a group and the sheet is a symmetric space, and the Cartan decomposition is exactly the statement that the group is the versors times the symmetric space.</strong></p>
+<h2 id="the-action-on-the-level-sets">The Action on the Level Sets</h2>
+<p><strong>Theorem (transitivity).</strong> $G$ acts transitively on each connected component of each level set of $P$; on the positive sheet the stabiliser of a point is $O(3)$, so the sheet is $G/O(3)$; on the level $P=-1$ the stabiliser is $O(2,1)$.</p>
+<p><em>Proof.</em> The transitivity is the Witt extension theorem, as in <a href="the-p-level-sets-and-the-hyperbolic-structure-of-the-quaternion-algebra.html">The P Level Sets and the Hyperbolic Structure of the Quaternion Algebra</a>; the stabilisers are the orthogonal groups of the orthogonal complements, of dimension three with the induced signatures. Verified on the orbits.</p>
+<p><strong>Remark (the boosts move the sheet).</strong> The rotations fix the point $e_t$ of the sheet and rotate the geodesics through it; the boosts translate along the geodesics. The whole group is generated by the stabiliser and the translations, and this is the content of the polar decomposition read on the sheet.</p>
+<p><strong>Remark (the dimension count).</strong> $\dim G=6$, and the Cartan decomposition splits it as $\dim O(3)+\dim\mathfrak p=3+3$; the same count gives the sheet, of dimension three, and the level $P=-1$, also of dimension three with a stabiliser of dimension three. <strong>The two factors of the group and the two level sets have the same dimension, and the coincidence is the rank of the symmetric space: one.</strong></p>
+<p><strong>Corollary (the geodesics and the boosts).</strong> The geodesics of the positive sheet through $e_t$ are the orbits of the one-parameter groups of the boosts, and every geodesic is carried to one of them by the compact factor.</p>
+<p><em>Proof.</em> The exponential of a line in $\mathfrak p$ is a one-parameter group of boosts, and its orbit of $e_t$ is a geodesic by the theorem on the geodesics of <a href="the-p-level-sets-and-the-hyperbolic-structure-of-the-quaternion-algebra.html">The P Level Sets and the Hyperbolic Structure of the Quaternion Algebra</a>; the transitivity of the compact factor on the directions at a point carries any geodesic to one of these. Verified on the parametrised geodesics.</p>
+<h2 id="a-worked-check">A Worked Check</h2>
+<p><strong>Example (the bracket of two boosts).</strong> In the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ the generator of the boost along the first axis is the matrix with ones in the two entries $(e_t,\vec e_x)$ and $(\vec e_x,e_t)$, and the generator of the boost along the third axis has its ones in the entries $(e_t,\vec e_z)$ and $(\vec e_z,e_t)$. Their commutator acts by $\vec e_x\mapsto-\vec e_z$ and $\vec e_z\mapsto\vec e_x$, and it vanishes on $e_t$ and on $\vec e_y$: it is the generator of the rotation in the plane of the two axes, of angle $\pi/2$ up to the sign, and it is skew for the form. This is the inclusion $[\mathfrak p,\mathfrak p]\subseteq\mathfrak{so}(3)$ on one pair. Verified on the matrices.</p>
+<p><strong>Example (a boost and its polar factors).</strong> The boost of rapidity $s$ along $\vec e_x$ is the exponential of $s$ times the first generator; its compact factor is the identity, and it sends $e_t$ to $\cosh s\,e_t+\sinh s\,\vec e_x$, which is the point $\cosh s+\sinh s\,\vec e_x$ of the positive sheet, of $P$-norm one. Its inverse is the boost of rapidity $-s$, its determinant is one and it preserves the time orientation, so it lies in the identity component. Verified on the parametrised family.</p>
+<p><strong>Example (the other components).</strong> The map $e_t\mapsto-e_t$, $\vec q\mapsto\vec q$ is an isometry of determinant $-1$ which reverses the time orientation; $-e_t$ is an isometry of determinant $+1$ which reverses it; their product reverses the vectors and preserves the time orientation. The four matrices represent the four components, and the example shows that the Cartan decomposition describes the identity component alone. Verified on the four matrices.</p>
+<h2 id="the-comparison-with-the-krein-isometry-group">The Comparison with the Krein Isometry Group</h2>
+<p><strong>Remark (the complex case).</strong> In the biquaternion block the corresponding group is the isometry group of a Krein form, an indefinite form on a complex space; it has the same kind of Cartan decomposition, with a maximal compact subgroup that is a unitary group of the definite part and a non-compact part of the indefinite directions, and its polar decomposition is the same theorem. The difference is the presence of the isotropic directions: over $\mathbb{C}$ the group preserves a form with a null cone of zero divisors, and the orbits of the group on the null cone are the zero-divisor classes, where over $\mathbb{R}$ the null cone is a cone of units and the orbits are the rulings.</p>
+<p><strong>Remark (what the comparison isolates).</strong> The Cartan decomposition is a theorem about the form and not about the division property: it holds over both fields. What changes is the geometry of the orbits on the null set, and this is the reason the two groups are compared rather than identified. The complex group and its decomposition are <a href="the-krein-isometry-group-and-its-cartan-decomposition.html">The Krein Isometry Group and Its Cartan Decomposition</a>, and the general theory of the involutions that cut such decompositions is <a href="the-cartan-decomposition-and-the-cartan-involution.html">The Cartan Decomposition and the Cartan Involution</a>.</p>
+<h2 id="summary">Summary</h2>
+<p>The isometry group of the plain form is $O(1,3)$, with four components distinguished by the determinant and the time orientation, and the identity component is $SO^+(1,3)$.</p>
+<p>Its maximal compact subgroup is $O(3)$, the rotations of the vector subspace, read in the algebra by the versors modulo the centre; the non-compact part is the three-dimensional space of the boosts.</p>
+<p>The Cartan involution $\theta(g)=(g^{-1})^{\mathsf T}$ cuts the Lie algebra as $\mathfrak{so}(3)\oplus\mathfrak{p}$ with $[\mathfrak{p},\mathfrak{p}]\subseteq\mathfrak{so}(3)$, so that two boosts generate a rotation and the boosts are not a subgroup.</p>
+<p>Every element of the group is uniquely a rotation times the exponential of a boost, and the map is a diffeomorphism onto the component.</p>
+<p>In the algebra the rotations are the inner automorphisms of the versors, the boosts are read by the points of the positive sheet through the hyperbolic versors, and the sheet is a symmetric space in bijection with the boosts and not a group.</p>
+<p>The group is transitive on each component of each level set, with stabilisers $O(3)$ on the positive sheet and $O(2,1)$ on $P=-1$; the complex counterpart is the Krein isometry group with the same decomposition and a different geometry on the null set.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$P$, $\langle\cdot,\cdot\rangle_P$</td>
+<td>the plain norm and its polar form</td>
+</tr>
+<tr>
+<td>$G=O(1,3)$</td>
+<td>the isometry group of $P$</td>
+</tr>
+<tr>
+<td>$SO^+(1,3)$</td>
+<td>its identity component</td>
+</tr>
+<tr>
+<td>$\theta$</td>
+<td>the Cartan involution $g\mapsto(g^{-1})^{\mathsf T}$</td>
+</tr>
+<tr>
+<td>$\mathfrak{so}(3)$, $\mathfrak p$</td>
+<td>the rotations and the boosts</td>
+</tr>
+<tr>
+<td>$\tilde h=\cosh s+\sinh s\vec n$</td>
+<td>the hyperbolic versor, a point of the sheet</td>
+</tr>
+<tr>
+<td>$dS_3$</td>
+<td>the level $P=-1$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-p-level-sets-and-the-hyperbolic-structure-of-the-quaternion-algebra.html">The P Level Sets and the Hyperbolic Structure of the Quaternion Algebra</a> for the level sets the group acts on.</li>
+<li><a href="the-quaternion-versors-and-the-unitary-group.html">The Quaternion Versors and the Unitary Group</a> for the compact factor read in the algebra.</li>
+<li><a href="the-axis-pairing-of-the-polar-decomposition-of-a-quaternion.html">The Axis Pairing of the Polar Decomposition of a Quaternion</a> for the hyperbolic versors of the axes.</li>
+<li><a href="the-cartan-decomposition-and-the-cartan-involution.html">The Cartan Decomposition and the Cartan Involution</a> for the general theory of the involution.</li>
+<li><a href="the-krein-isometry-group-and-its-cartan-decomposition.html">The Krein Isometry Group and Its Cartan Decomposition</a> for the comparison.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

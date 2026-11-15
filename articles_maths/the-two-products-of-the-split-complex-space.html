@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Two Products of the Split-Complex Space — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-two-products-of-the-split-complex-space"><strong>The Two Products of the Split-Complex Space</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The split-complex space carries two products: the plain one, $AC$, and the sesquilinear one, $A\bar C$. The biquaternion layer carries four, the plain, the quaternionic, the conjugated and the quaternionic-conjugated, and here they collapse pairwise to two. This article counts the two, writes them on the coordinates and on the idempotent coordinates, states what fixes each of them, computes their laws and their pairings, and isolates the point that separates the split case from the complex one.</p>
+<p>The separation is not the count. Over the complex field the same two products exist and the same four collapse to two; exactly two products are built from a commutative ring and one involution, in either case. The separation is the <strong>values</strong>: over $\mathbb{C}$ the sesquilinear product is positive definite and its diagonal is a modulus, while over $\mathbb{C}_{\mathrm{spl}}$ it is indefinite, vanishes on two lines, and reads as a componentwise multiplication in the idempotent coordinates.</p>
+<p>The algebra is <em>Split-Complex Algebra</em>, the idempotents <em>Square Roots of One and the Idempotents of the Split-Complex Algebra</em>, the law of the second product <em>The Specificities of the Split-Complex Algebra</em>. The two products continue in <em>The Ternary Product and the Associator of the Split-Complex Space</em> and in <em>The Two Forms and the Two Algebraic Norms of the Split-Complex Space</em>.</p>
+<h2 id="the-four-general-products-and-their-collapse">The Four General Products and Their Collapse</h2>
+<h3 id="the-four-general-products">The Four General Products</h3>
+<p>On a space with one involution and two slots, four products are available: the plain product $AC$, the product with the second slot read through the involution $A\bar C$, and the two with the first slot read through the quaternionic mark, $A^{\natural}C$ and $A^{\natural}\bar C$. On $\mathbb{B}$ the mark ${}^{\natural}$ reverses the vector part, and the four are four different products.</p>
+<h3 id="the-collapse-to-two">The Collapse to Two</h3>
+<p><strong>Proposition.</strong> On $\mathbb{C}_{\mathrm{spl}}$ the quaternionic mark is the identity, so $A^{\natural}C=AC$ and $A^{\natural}\bar C=A\bar C$, and the four general products are two.</p>
+<p><strong>Proof.</strong> The mark ${}^{\natural}$ reverses the sign of the vector part of an element and fixes its scalar part. An element of $\mathbb{C}_{\mathrm{spl}}$ has no vector part, so the mark fixes every element.</p>
+<p>The collapse is a collapse of the alphabet and not of the algebra: the two surviving products are the plain one and the sesquilinear one, and they are distinct because they differ on the split imaginary line.</p>
+<h3 id="the-two-products">The Two Products</h3>
+<p>$$
+\boxed{\; AC=(ac+bd)+(ad+bc)j, \qquad A\bar C=(ac-bd)+(bc-ad)j \;}
+$$</p>
+<p>for $A=a+bj$ and $C=c+dj$. The first is the multiplication of the ring; the second is the ring multiplication composed with the conjugation in the second slot.</p>
+<h2 id="the-two-products-on-the-coordinates">The Two Products on the Coordinates</h2>
+<h3 id="the-plain-product">The Plain Product</h3>
+<p>The plain product has the coordinates</p>
+<p>$$
+AC=(ac+bd)+(ad+bc)j ,
+$$</p>
+<p>and it is the product of the ring: commutative, associative, with the two-sided unit $1$. Its real part is $ac+bd$ and its split imaginary part is $ad+bc$, the two entries of a multiplication of the form $\begin{pmatrix}a&b\\b&a\end{pmatrix}\begin{pmatrix}c&d\\d&c\end{pmatrix}$.</p>
+<h3 id="the-sesquilinear-product">The Sesquilinear Product</h3>
+<p>The sesquilinear product has the coordinates</p>
+<p>$$
+A\bar C=(ac-bd)+(bc-ad)j ,
+$$</p>
+<p>because $(a+bj)(c-dj)=ac-ad\,j+bc\,j-bd\,j^2$ and $j^2=1$. The real part is the Minkowski pairing $ac-bd$ and the split imaginary part is the area $bc-ad$; the second product is the first read in the metric of signature $(1,1)$.</p>
+<p><strong>The two scalar rules.</strong> $A\bar C$ is $\mathbb{C}_{\mathrm{spl}}$-linear in the first slot and $\bar\cdot$-semilinear in the second: for $\lambda\in\mathbb{C}_{\mathrm{spl}}$,</p>
+<p>$$
+(\lambda A)\bar C=\lambda(A\bar C), \qquad A\overline{\lambda C}=\bar\lambda\,(A\bar C) .
+$$</p>
+<p>The second rule is the conjugation of the scalar and it is the reason the product is called sesquilinear. In the plain product both slots are linear.</p>
+<h3 id="the-idempotent-coordinates-the-second-product-componentwise">The Idempotent Coordinates: the Second Product Componentwise</h3>
+<p>In the idempotent coordinates $Q_\pm=q\pm q'$ the two products are diagonal, and the second one exchanges the index:</p>
+<p>$$
+(AC)_\pm=A_\pm C_\pm, \qquad (A\bar C)_\pm=A_\pm C_\mp .
+$$</p>
+<p><strong>Proof.</strong> $A=A_+\Pi_++A_-\Pi_-$ and $\bar C=C_-\Pi_++C_+\Pi_-$, since $\overline{\Pi_\pm}=\Pi_\mp$, and the idempotents are orthogonal and absorb: multiplying componentwise gives the two formulas.</p>
+<p>This is the structural fact of the split case. The plain product is the pair of the two real multiplications, and the sesquilinear product is the same pair with the components crossed. Both are diagonal in the idempotent basis, and no real basis diagonalises the multiplication of $\mathbb{C}$.</p>
+<h2 id="the-two-exchanges-and-the-absence-of-an-antisymmetric-part">The Two Exchanges and the Absence of an Antisymmetric Part</h2>
+<h3 id="each-product-is-fixed-by-its-own-exchange">Each Product Is Fixed by Its Own Exchange</h3>
+<p><strong>Theorem.</strong> The plain product is fixed by the interchange of its slots and the sesquilinear product is fixed by the adapted exchange:</p>
+<p>$$
+\tfrac12\bigl(AC+CA\bigr)=AC, \qquad \tfrac12\bigl(A\bar C+\overline{C\bar A}\bigr)=A\bar C .
+$$</p>
+<p><strong>Proof.</strong> The ring is commutative, so $AC=CA$ and the first sum is $2AC$. For the second, $\overline{C\bar A}=\overline{C}\,A=A\bar C$ again by commutativity, so the sum is $2A\bar C$.</p>
+<p>The two identities say that each product is symmetric for the exchange proper to it, and they are the whole of the symmetry theory of the pair. The adapted exchange of the second identity carries the conjugation on the outer slot, which is the exchange the sesquilinear product respects.</p>
+<h3 id="the-antisymmetric-part-is-zero">The Antisymmetric Part Is Zero</h3>
+<p>The antisymmetric part of a product is the difference of the product and its exchanged copy, halved. Both halves vanish:</p>
+<p>$$
+\tfrac12\bigl(AC-CA\bigr)=0, \qquad \tfrac12\bigl(A\bar C-\overline{C\bar A}\bigr)=0 .
+$$</p>
+<p><strong>There is no antisymmetric part.</strong> This is the degenerate case of <em>The Conjugate-Symmetric and Skew-Conjugate-Symmetric Parts of a Sesquilinear Product</em>: that article splits a general sesquilinear product into a conjugate-symmetric and a skew-conjugate-symmetric part, and here the second part is zero and the first is the product.</p>
+<h3 id="the-four-antisymmetric-products-have-no-object">The Four Antisymmetric Products Have No Object</h3>
+<p>On $\mathbb{B}$ the four general products give four antisymmetric parts, and they are the object of a theory of their own. Here all four vanish identically, because the mark ${}^{\natural}$ is the identity and each of the four products coincides with the product whose exchange fixes it. There is nothing to skew-symmetrise, and a theory of the antisymmetric products of $\mathbb{C}_{\mathrm{spl}}$ would have one object, zero.</p>
+<h3 id="what-math49-is-and-what-it-is-not">What $A\bar C-C\bar A$ Is, and What It Is Not</h3>
+<p>The difference of the sesquilinear product and its transpose is not an antisymmetric part, and it is worth naming what it is:</p>
+<p>$$
+A\bar C-C\bar A=2(bc-ad)j .
+$$</p>
+<p>Three reasons keep it out of the symmetry theory. It is not $\mathbb{C}_{\mathrm{spl}}$-linear in the first slot: replacing $A$ by $\lambda A$ multiplies the first term by $\lambda$ and the second by $\bar\lambda$, so the difference is multiplied by neither. It is not the difference of a product and its exchanged copy, the exchange of the sesquilinear product being $\overline{C\bar A}$ and not $C\bar A$. And it takes its values on the split imaginary line, while an antisymmetric part of a product over a commutative ring would take its values in the ring. It is the <strong>area form</strong> of the plane, the determinant $bc-ad$ read as a vector, and it belongs to the section on the sesquilinear product, not to the section on the involution.</p>
+<h2 id="the-laws">The Laws</h2>
+<h3 id="associativity-and-the-two-sided-unit-for-the-plain-product">Associativity and the Two-Sided Unit for the Plain Product</h3>
+<p>The plain product is associative and unital on both sides, because it is the multiplication of an associative ring: $(AC)D=A(CD)$ and $1A=A1=A$. In idempotent coordinates both laws are the associativity and the unit of $\mathbb{R}$ read twice.</p>
+<h3 id="the-right-unit-alone-for-the-sesquilinear-product">The Right Unit Alone for the Sesquilinear Product</h3>
+<p>The sesquilinear product has a right unit and no left one:</p>
+<p>$$
+A\bar 1=A, \qquad 1\bar A=\bar A\neq A \ \text{for} \ A\notin\mathbb{R} .
+$$</p>
+<p>So the element $1$ is a right unit, and the left unit fails on every element off the real line. In idempotent coordinates the failure is the crossing of the index: the right unit has both coordinates $1$, and the left multiplication by $1$ exchanges them.</p>
+<h3 id="the-associativity-defect">The Associativity Defect</h3>
+<p>The sesquilinear product is not associative, and the defect is computed in <em>The Ternary Product and the Associator of the Split-Complex Space</em>:</p>
+<p>$$
+(A\bar C)\bar D-A(\overline{C\bar D})=A\bar C\,(\bar D-D) ,
+$$</p>
+<p>which vanishes exactly when $D$ is real. The defect is confined to the third slot, and it is a defect of the second product alone; the plain product has none.</p>
+<h2 id="the-two-pairings">The Two Pairings</h2>
+<p>Each product is also a pairing of two elements with a value in the ring, and the two pairings carry the names $B$ and $H$:</p>
+<p>$$
+P(A,C)=AC, \qquad H(A,C)=A\bar C .
+$$</p>
+<p>$P$ is symmetric and $H$ is conjugate-symmetric, by the two exchanges above. The four letters of the biquaternion layer collapse here to these two, $P=N$ and $H=\mathrm{Kr}$, because the quaternionic mark is the identity. The two pairings are the object of <em>The Two Forms and the Two Algebraic Norms of the Split-Complex Space</em>, where their realified signatures are computed, and of <em>The Hermitian Form, the Double Cone and the Reversed Cauchy-Schwarz Inequality</em>, where the cone of $H$ is read.</p>
+<h2 id="the-point-that-separates-the-split-case-from-the-complex-one">The Point That Separates the Split Case from the Complex One</h2>
+<h3 id="the-count-is-the-same">The Count Is the Same</h3>
+<p>On $\mathbb{C}$ the space also carries two products, $AC$ and $A\bar C$, and the four general products also collapse to two, for the same reason: a commutative ring with one involution offers four slot-and-involution combinations and only two distinct maps. The count of two is the count of the complex case, so it does not separate anything.</p>
+<h3 id="the-values-differ">The Values Differ</h3>
+<p>What separates the two cases is the value of the second product on the diagonal,</p>
+<p>$$
+A\bar A=a^2-b^2 \ \text{here}, \qquad A\bar A=\lvert A\rvert^2\ \text{on}\ \mathbb{C},
+$$</p>
+<p>and the value of the first,</p>
+<p>$$
+A^2=(a^2+b^2)+2ab\,j\ \text{here}, \qquad A^2=(a^2-b^2)+2ab\,i\ \text{on}\ \mathbb{C} .
+$$</p>
+<p>Over $\mathbb{C}$ the sesquilinear square is positive definite and vanishes only at the origin; here it is indefinite and vanishes on two lines. Over $\mathbb{C}$ the plain square takes every complex value; here it takes the values of the forward cone $a^2\ge b^2$ and no others, which is <em>The Square Map of the Split-Complex Space</em>. The two products are the same two maps in both cases, and their values are exchanged in the sense that the definite one and the indefinite one swap places.</p>
+<h3 id="the-second-product-is-componentwise">The Second Product Is Componentwise</h3>
+<p>The reason the values differ is the idempotent coordinates. Over $\mathbb{C}$ the multiplication by an element is not diagonal in any real basis, so no coordinate reads a product componentwise. Here the idempotent basis diagonalises both products, the plain one with the index and the sesquilinear one against it, and every computation of the category is a computation with two real numbers. That is the whole of the difference, and it is why the split algebra is read as $\mathbb{R}\times\mathbb{R}$ and the complex field is not.</p>
+<h2 id="summary">Summary</h2>
+<p>The split-complex space carries two products, the plain $AC=(ac+bd)+(ad+bc)j$ and the sesquilinear $A\bar C=(ac-bd)+(bc-ad)j$. The four general products of the biquaternion layer collapse to these two because the quaternionic mark is the identity on an element with no vector part; the count of two is the count the complex field also has.</p>
+<p>Each product is fixed by its own exchange, the interchange for the plain product and the adapted exchange $A\star C\mapsto\overline{C\star A}$ for the sesquilinear one, so both antisymmetric parts vanish identically. There is no antisymmetric part on the split-complex space, and the four antisymmetric products of $\mathbb{B}$ have no object here. The difference $A\bar C-C\bar A=2(bc-ad)j$ is not an antisymmetric part: it is the area form, it is not linear in the first slot, and it belongs to the section on the sesquilinear product.</p>
+<p>The plain product is associative and two-sidedly unital; the sesquilinear one has a right unit and no left unit, and its associativity defect is $A\bar C(\bar D-D)$. The two forms $P(A,C)=AC$ and $H(A,C)=A\bar C$ are symmetric and conjugate-symmetric, and the four forms of the biquaternion layer collapse to them, $P=N$ and $H=\mathrm{Kr}$. The point that separates the split case from the complex one is the value and not the count: $A\bar A=a^2-b^2$ is indefinite here and definite there, and the idempotent coordinates make the second product componentwise, which is why the split algebra is $\mathbb{R}\times\mathbb{R}$ read twice.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$AC=(ac+bd)+(ad+bc)j$</td>
+<td>The plain product, the multiplication of the ring</td>
+</tr>
+<tr>
+<td>$A\bar C=(ac-bd)+(bc-ad)j$</td>
+<td>The sesquilinear product, the second slot conjugated</td>
+</tr>
+<tr>
+<td>${}^{\natural}$</td>
+<td>The quaternionic mark, the identity on $\mathbb{C}_{\mathrm{spl}}$</td>
+</tr>
+<tr>
+<td>$(AC)_\pm=A_\pm C_\pm$</td>
+<td>The plain product in idempotent coordinates</td>
+</tr>
+<tr>
+<td>$(A\bar C)_\pm=A_\pm C_\mp$</td>
+<td>The sesquilinear product in idempotent coordinates</td>
+</tr>
+<tr>
+<td>$A\bar C-C\bar A=2(bc-ad)j$</td>
+<td>The area form, not an antisymmetric part</td>
+</tr>
+<tr>
+<td>$P(A,C)=AC$, $H(A,C)=A\bar C$</td>
+<td>The two forms, with $P=N$ and $H=\mathrm{Kr}$</td>
+</tr>
+<tr>
+<td>$A\bar C(\bar D-D)$</td>
+<td>The associativity defect of the sesquilinear product</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, Graduate Texts in Mathematics 88, 1982), for a product with an involution in the second slot, the sesquilinear laws and the unit.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society, Colloquium Publications 44, 1998), for the four products attached to an algebra with an involution and the collapse in the split case.</li>
+<li>Tonny A. Springer and Ferdinand D. Veldkamp, <em>Octonions, Jordan Algebras and Exceptional Groups</em> (Springer, 2000), for the sesquilinear products of composition algebras and their isotopy.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge University Press, 2nd ed. 2001), for the split-complex algebra as a Clifford algebra and the two products as the two Clifford products of its even part.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
