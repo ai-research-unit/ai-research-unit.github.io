@@ -138,6 +138,8 @@ M_4\cong\mathbb{C}^4\otimes(\mathbb{C}^4)^*,\qquad
 E_{ij}=e_i\otimes e_j^{\vee}.
 $$
 
+**The two bases.** The matrix units $E_{ij}=e_i\otimes e_j^{\vee}$ are the basis of the bimodule structure. The same sixteen-dimensional algebra is read on the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ in the coefficient basis $e_t,\vec e_x,\vec e_y,\vec e_z$, whose four left matrices and sixteen two-sided products $T_{\mu\nu}=L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$ are *$M_4(\mathbb{C})$ Axis-Free Representation* and *$M_4(\mathbb{C})$ Axis-Free Representation: Operators*.
+
 The left action is on the first factor, the right action on the second:
 
 $$
@@ -318,6 +320,8 @@ $$
 
 ## Further Reading
 
+- [$M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the coefficient basis, the four left matrices and the transpose as the quaternion conjugation.
+- [$M_4(\mathbb{C})$ Axis-Free Representation: Operators](m4c-axis-free-representation-operators.html), for the sixteen two-sided operators in the coefficient frame, their signs and their composition.
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the regular module, minimal ideals and the Peirce decomposition.
 - Tsit-Yuen Lam, *A First Course in Noncommutative Rings* (Springer, 2001), for semisimple rings, simple modules and the Artin–Wedderburn theorem.
 - [The Matrix Algebra $M_4(\mathbb{C})$](the-matrix-algebra-m4c.html), for the algebra and the matrix units.

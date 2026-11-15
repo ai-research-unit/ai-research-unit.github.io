@@ -4,6 +4,8 @@
 
 **The Peirce decomposition is acted on by four families of linear operators: left multiplication $L_a$, right multiplication $R_a$, the two-sided operator $L_{a}R_{b}$, and the derivation $\operatorname{ad}_a$.** On the matrix units, $L_a$ moves the row index, $R_a$ moves the column index, $L_{a}R_{b}$ moves both, and $\operatorname{ad}_a$ is the difference of the two. The derivations of $M_4$ are exactly the inner derivations, $\operatorname{Der}(M_4)\cong\mathfrak{sl}_4$, of dimension $15$; the automorphisms are exactly the inner automorphisms, $\operatorname{Aut}(M_4)\cong PGL_4$, of dimension $15$.
 
+**The two bases.** The description on the matrix units is made in the basis $E_{ij}$, and the four families are the moves of its two indices. The same four families act on the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ in the coefficient basis $e_t,\vec e_x,\vec e_y,\vec e_z$: the one-sided operators are the signed permutation matrices $L_{\mathrm{axf},e_\mu}$ and $R_{\mathrm{axf},e_\nu}$, the two-sided operator is their product $T_{\mu\nu}=L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$, and $\operatorname{ad}$ is the commutator of those matrices. The four left matrices are *$M_4(\mathbb{C})$ Axis-Free Representation*; the sixteen products are *$M_4(\mathbb{C})$ Axis-Free Representation: Operators*.
+
 The article defines the four operators, computes their matrices and their action on the Peirce corners, proves the derivation and automorphism theorems, and explains the two-sided operator as a map of corners. The Peirce decomposition is *The Peirce Decomposition of $M_4(\mathbb{C})$*; the adjoint action is *The Adjoint Action, the Orbits and the Flag Variety of $M_4(\mathbb{C})$*; the frame and the gauge are *The Frame, the Simple Nilpotents and the Gauge of $M_4(\mathbb{C})$*.
 
 ## The Four Operators
@@ -312,6 +314,8 @@ $$
 
 ## Further Reading
 
+- [$M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the coefficient basis, the four left matrices and the transpose as the quaternion conjugation.
+- [$M_4(\mathbb{C})$ Axis-Free Representation: Operators](m4c-axis-free-representation-operators.html), for the sixteen two-sided operators in the coefficient frame, their signs and their composition.
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for derivations, automorphisms and the Skolem–Noether theorem.
 - Tsit-Yuen Lam, *A First Course in Noncommutative Rings* (Springer, 2001), for central simple algebras and their automorphisms.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the Kronecker product and the vectorisation of matrix equations.

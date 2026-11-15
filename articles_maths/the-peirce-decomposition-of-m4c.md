@@ -125,6 +125,8 @@ A complete family of $4$ nonzero idempotents in $M_4(\mathbb{C})$ has rank one a
 
 ## Further Reading
 
+- [$M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the coefficient basis, the four left matrices and the transpose as the quaternion conjugation.
+- [The Two-Sided Operators Method to Build $M_4(\mathbb{C})$](the-two-sided-operators-method-to-build-m4c.html), for the matrix units, the sixteen two-sided operators and the caveat on the two bases.
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the Peirce decomposition and its rule.
 - [The Matrix Algebra $M_4(\mathbb{C})$](the-matrix-algebra-m4c.html), for the algebra and its matrix units.
 - [Roots of Unity and the Lagrange Idempotents of $M_4(\mathbb{C})$](roots-of-unity-and-the-lagrange-idempotents-of-m4c.html), for the projectors of the root.

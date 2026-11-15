@@ -97,6 +97,19 @@ It follows the biquaternion account of *The Four Forms and the Four Algebraic No
 **Corollary.** At order two the count of angles is one for the rotations of the plane and one for the phase, and the two circles commute.
 
 **Proof.** The scalar phases commute with the rotations, so the two circles generate a torus inside the unitary group.
+## The Angle and Its Half
+
+**Proposition.** The exponential $e^{tJ}$ is periodic with period $2\pi$, and the map $t\mapsto e^{tJ}$ from an interval of length $2\pi$ onto the circle is injective on the open interval and identifies its two endpoints.
+
+**Proof.** By Euler's formula the exponential is $\cos t\,I+\sin t\,J$, which depends on $t$ through the pair of trigonometric functions, and that pair repeats exactly after $2\pi$.
+
+**Corollary.** The rotation by the angle $t$ and the rotation by minus $t$ are inverse to each other.
+
+**Proof.** The cosine is even and the sine is odd, so the inverse of the exponential at $t$ is the exponential at minus $t$.
+
+**Corollary.** The half angle appears only when a square root of a rotation is taken, because the root halves the parameter.
+
+**Proof.** If $e^{2sJ}=e^{tJ}$, then $2s$ equals $t$ modulo $2\pi$, so the parameter of the root is half of the parameter of the rotation, up to the lattice.
 
 ## Summary
 

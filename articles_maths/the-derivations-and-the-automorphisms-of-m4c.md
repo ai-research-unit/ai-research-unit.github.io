@@ -54,6 +54,8 @@ $$
 
 **The inner derivations.** The map $\operatorname{ad}$ is an isomorphism $\mathfrak{sl}_4\to\operatorname{Der}(M_4)$, and the derivation $\operatorname{ad}_X$ depends only on the traceless part of $X$. The fifteen-dimensional space of derivations is therefore a copy of $\mathfrak{sl}_4$, and the scalar matrices act trivially.
 
+**The two bases.** The argument reconstructs $X$ in the matrix units $E_{ij}$, the basis of the statement. The derivations are read as well on the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ in the coefficient basis $e_t,\vec e_x,\vec e_y,\vec e_z$: the algebra of the operators is $\mathcal{E}=\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}_{\mathrm{opp}}$ of dimension $16$, the four left matrices are *$M_4(\mathbb{C})$ Axis-Free Representation* and the sixteen products $T_{\mu\nu}=L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$ are *$M_4(\mathbb{C})$ Axis-Free Representation: Operators*, and $\operatorname{ad}$ there is the commutator with those matrices.
+
 **The grading.** The derivations act on the Peirce blocks of an idempotent by the rule of *The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$*: $\operatorname{ad}_X$ carries $A_{rs}$ to $A_{rs}$ for the diagonal blocks and mixes the off-diagonal blocks according to the entries of $X$. The derivation is determined by its values on the four blocks.
 
 ## Automorphisms
@@ -185,6 +187,8 @@ Every derivation of $M_4(\mathbb{C})$ is inner, $\operatorname{Der}(M_4)=\operat
 
 ## Further Reading
 
+- [$M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the coefficient basis, the four left matrices and the transpose as the quaternion conjugation.
+- [$M_4(\mathbb{C})$ Axis-Free Representation: Operators](m4c-axis-free-representation-operators.html), for the sixteen two-sided operators in the coefficient frame, their signs and their composition.
 - [The Lie Algebra $\mathfrak{gl}_4(\mathbb{C})$ and $\mathfrak{sl}_4(\mathbb{C})$ of $M_4(\mathbb{C})$](the-lie-algebra-gl4c-and-sl4c-of-m4c.html), for $\mathfrak{sl}_4$ and its root decomposition.
 - [The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$](the-operators-of-the-peirce-decomposition-of-m4c.html), for the derivations on the Peirce blocks.
 - [The Adjoint Action, the Orbits and the Flag Variety of $M_4(\mathbb{C})$](the-adjoint-action-the-orbits-and-the-flag-variety-of-m4c.html), for the action of $PGL_4$.

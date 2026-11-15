@@ -668,6 +668,26 @@ $$
 
 for every real unit $\vec n$, checked to machine zero. So the material idempotents are a two-sphere inside the complex quadric, and the two-sphere is the celestial sphere of the momentum.
 
+**The momentum is one spinor times its conjugate.** In the matrix model the null momentum is rank one and anti-Hermitian, so $-i\tilde P_\Phi$ is a positive rank-one element and factors through a column:
+
+$$
+\tilde P_\Phi=i\,\zeta\zeta^{\dagger},\qquad
+\zeta\in\mathbb{C}^{2},\qquad
+\zeta^{\dagger}\zeta=\frac{2E}{c},
+$$
+
+checked to $3\times10^{-15}$ on null momenta of three energies. Here $\zeta$ is a two-component column, not the root of $+1$ written $\vec\zeta$ above. The cone sees $\zeta$ only through the projector $\zeta\zeta^{\dagger}$: the rotation $\zeta\mapsto e^{i\phi}\zeta$ leaves $\tilde P_\Phi$ unchanged, so the cone holds the ray of the spinor and not its phase.
+
+**The second eigenvalue is the mass.** Off the cone the matrix has the eigenvalues $Q_t\pm iB$, whose moduli are $\frac{E}{c}\pm\lvert\vec p\rvert$ on the material slice, and their ratio is
+
+$$
+\frac{E/c-\lvert\vec p\rvert}{E/c+\lvert\vec p\rvert}=e^{-2\theta_{\mathrm{rpd}}}.
+$$
+
+So the surviving eigenvalue is the energy and the vanishing one is the mass: at $\vec p=0$ the ratio is one and the two eigenvalues coincide, at $\lvert\vec p\rvert=E/c$ it is zero and one of them is gone. The rank drop is the limit of a ratio that the boost sets, not a separate condition.
+
+**This is why the cone derives no spin.** A helicity is the weight of a phase under the little group, and the phase is exactly what $\tilde P_\Phi$ does not see. So the cone supplies the ray and cannot supply the weight, which is the division of labour of I.10.an read as a computation rather than as a claim.
+
 **The name for the material element is the light ray.** It has a direction, an energy and a phase; it has no rest frame, no inverse and no generator. Those six statements are the six computations of this entry read on the material slice, and none of them is an extra assumption. A light ray in this sense is not a trajectory and not a world line: it is one null element, with its projector, its spectrum and its two annihilators.
 
 ### The Two Frequencies, One of Them Zero

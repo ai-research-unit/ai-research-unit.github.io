@@ -49,6 +49,50 @@ $$
 
 Its modulus is the product of the singular values, and it vanishes exactly on the singular set.
 
+### The Axis-Free Diagonalisation of the Trace Pairing
+
+**A second basis, and what it is for.** The sixteen matrices $T_{\mu\nu}=L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$, with $\mu,\nu\in\{t,x,y,z\}$, are the matrices of the two-sided operators $X\mapsto e_\mu Xe_\nu$ in the coefficient basis $\mathcal{E}=(e_t,\vec e_x,\vec e_y,\vec e_z)$ of the biquaternion algebra $\mathbb{B}$, where $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$. Each is a signed permutation matrix of determinant one, and the sixteen are a basis of $M_4(\mathbb{C})$. The construction is *The Two-Sided Operators Method to Build $M_4(\mathbb{C})$*, and the sixteen are displayed in *$M_4(\mathbb{C})$ Axis-Free Representation: Operators*.
+
+**The pairing is diagonal in this basis.** In the matrix-unit basis the pairing reads $\beta(E_{ij},E_{kl})=\delta_{il}\delta_{jk}$, a permutation matrix: non-degenerate, and silent about signature. In the axis-free basis it is diagonal,
+
+$$
+\operatorname{tr}(T_{\mu\nu}T_{\rho\sigma})=\pm4\,\delta_{\mu\rho}\delta_{\nu\sigma},
+$$
+
+with the sign carried by the pair alone. Ten elements give $+4$ and six give $-4$.
+
+**The ten and the six are the two halves.** The ten positive elements are exactly the symmetric ones,
+
+$$
+T_{tt},\quad T_{xx},\quad T_{yy},\quad T_{zz},\quad T_{xy},\quad T_{xz},\quad T_{yx},\quad T_{yz},\quad T_{zx},\quad T_{zy},
+$$
+
+and the six negative ones are exactly the antisymmetric ones,
+
+$$
+T_{tx},\quad T_{ty},\quad T_{tz},\quad T_{xt},\quad T_{yt},\quad T_{zt}.
+$$
+
+No element of the basis is neither, and no symmetric element is negative. The two sets are the two halves of *The Matrix Algebra $M_4(\mathbb{C})$*, read as a coordinate split.
+
+**The signature.** Hence
+
+$$
+\operatorname{sign}\beta=(10,6),\qquad
+10=\frac{4\cdot5}{2}=\dim\operatorname{Sym}_4,\qquad
+6=\frac{4\cdot3}{2}=\dim\operatorname{Skew}_4 .
+$$
+
+The symmetric and the antisymmetric subspaces are the positive and the negative eigenspaces of $\beta$, and the axis-free basis exhibits them with no diagonalisation performed. One split is read twice: the two halves of the algebra and the two signs of the form are the same split.
+
+**The definite form in the same basis.** The positive definite form is a different form, and the same basis diagonalises it with every sign positive,
+
+$$
+\operatorname{tr}(T_{\mu\nu}^{\dagger}T_{\rho\sigma})=4\,\delta_{\mu\rho}\delta_{\nu\sigma},
+$$
+
+because each $T_{\mu\nu}$ is a signed permutation and $T_{\mu\nu}^{\dagger}T_{\mu\nu}=\mathrm I_4$. The sixteen coordinates of $A$ are therefore sixteen traces, $c_{\mu\nu}=\tfrac14\operatorname{tr}(T_{\mu\nu}^{\dagger}A)$, and the trace is one of them, $\operatorname{tr}A=4c_{tt}$, because $T_{tt}=\mathrm I_4$ is the only basis element with a nonzero trace. The coordinates and the sign of the pairing at the element size are *The Element, the Coordinates and the Trace of $M_4(\mathbb{C})$*, §*The Axis-Free Coordinates and the Sign of the Trace Pairing*.
+
 ## The Three Norms
 
 **The singular values.** For $A\in M_4(\mathbb{C})$, let
@@ -297,6 +341,9 @@ $$
 ## Further Reading
 
 - [The Numerical Range and the Field of Values of $M_4(\mathbb{C})$](the-numerical-range-and-the-field-of-values-of-m4c.html), for the numerical radius against the operator norm.
+- [The Two-Sided Operators Method to Build $M_4(\mathbb{C})$](the-two-sided-operators-method-to-build-m4c.html), for the sixteen $T_{\mu\nu}$, their orthogonality and their coefficient formula.
+- [$M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the coefficient basis and the four left matrices.
+- [$M_4(\mathbb{C})$ Axis-Free Representation: Operators](m4c-axis-free-representation-operators.html), for the sixteen products, the coefficient matrix and the length.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the singular values, the unitarily invariant norms, the determinant and the rank stratification.
 - Rajendra Bhatia, *Matrix Analysis* (Springer, 1997), for the Schatten norms, the duality of the operator and nuclear norms and the spectral radius.
 - Joe Harris, *Algebraic Geometry: A First Course* (Springer, 1992), for determinantal varieties and their dimensions.

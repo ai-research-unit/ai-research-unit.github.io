@@ -16,6 +16,8 @@ $$
 E_{ij}=v_iv_j^{\vee}.
 $$
 
+**The other basis.** The matrix units belong to the fixed frame $(v_1,v_2,v_3,v_4)$. The same frame is read on the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ in the coefficient basis $e_t,\vec e_x,\vec e_y,\vec e_z$, where the four left and the four right multiplications are the signed permutation matrices of *$M_4(\mathbb{C})$ Axis-Free Representation*, and the sixteen products $L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$ are *$M_4(\mathbb{C})$ Axis-Free Representation: Operators*.
+
 The **gauge group** is the torus
 
 $$
@@ -354,6 +356,8 @@ $$
 
 ## Further Reading
 
+- [$M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the coefficient basis, the four left matrices and the transpose as the quaternion conjugation.
+- [$M_4(\mathbb{C})$ Axis-Free Representation: Operators](m4c-axis-free-representation-operators.html), for the sixteen two-sided operators in the coefficient frame, their signs and their composition.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the polar decomposition, the singular value decomposition and the $*$-unitary group.
 - Brian C. Hall, *Lie Groups, Lie Algebras, and Representations* (Springer, 2015), for $U(4)$, $U(2)\times U(2)$ and the exponential.
 - [The Frame, the Simple Nilpotents and the Gauge of $M_4(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m4c.html), for the torus and the cocycle.

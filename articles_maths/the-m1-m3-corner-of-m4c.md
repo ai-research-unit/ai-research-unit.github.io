@@ -175,6 +175,8 @@ A rank-one idempotent splits $M_4(\mathbb{C})$ into the four Peirce blocks of di
 
 ## Further Reading
 
+- [$M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the coefficient basis, the four left matrices and the transpose as the quaternion conjugation.
+- [The Two-Sided Operators Method to Build $M_4(\mathbb{C})$](the-two-sided-operators-method-to-build-m4c.html), for the matrix units, the sixteen two-sided operators and the caveat on the two bases.
 - [The Rank-Two Split of $M_4(\mathbb{C})$](the-rank-two-split-of-m4c.html), for the split $M_2\oplus M_2$ and the corners $4+4+4+4$.
 - [The $M_2$ Corner of $M_3(\mathbb{C})$](the-m2-corner-of-m3c.html), for the general compression and its proofs.
 - [The Peirce Decomposition of $M_4(\mathbb{C})$](the-peirce-decomposition-of-m4c.html), for the fine Peirce decomposition by four idempotents.

@@ -303,6 +303,8 @@ $$
 
 ## Further Reading
 
+- [$M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the coefficient basis, the four left matrices and the transpose as the quaternion conjugation.
+- [The Two-Sided Operators Method to Build $M_4(\mathbb{C})$](the-two-sided-operators-method-to-build-m4c.html), for the matrix units, the sixteen two-sided operators and the caveat on the two bases.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the singular value decomposition, the polar decomposition and the determinant.
 - Rajendra Bhatia, *Matrix Analysis* (Springer, 1997), for the variational characterization of singular values and the operator norms.
 - [The Rank-Two Split of $M_4(\mathbb{C})$](the-rank-two-split-of-m4c.html), for the corners and the mass block.

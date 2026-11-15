@@ -311,7 +311,7 @@ G_5G_k+G_kG_5=L_{\mathrm{axf},\vec e_k}R_{\mathrm{axf},\vec e_x}-L_{\mathrm{axf}
 $$
 The product identity is the basis operator computation
 $$
-G_0G_1G_2G_3=L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x}L_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y}L_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y}L_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y}=-L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}=-iG_5 . \qquad\square
+G_0G_1G_2G_3=L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x}L_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y}L_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y}L_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y}=-L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}=-iG_5 .
 $$
 
 **The even part.** The even products of this dictionary generate the **complexified** even Clifford algebra
@@ -429,6 +429,8 @@ with $G_5=iG_0G_1G_2G_3$, and the complexified even algebra $M_2\oplus M_2$. The
 
 ## Further Reading
 
+- [$M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the coefficient basis and the four left matrices that the conjugate-linear operators act on.
+- [$M_4(\mathbb{C})$ Axis-Free Representation: Operators](m4c-axis-free-representation-operators.html), for the sixteen two-sided operators in the coefficient frame.
 - [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - [The Involution and the Hermitian Structure of $M_4(\mathbb{C})$](the-involution-and-the-hermitian-structure-of-m4c.html), for the conjugate transpose, the Hermitian subspaces and the trace form.
 - [The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$](the-gamma-frame-and-the-complexified-dirac-algebra-of-m4c.html), for the five gammas, the Clifford basis and the frame.

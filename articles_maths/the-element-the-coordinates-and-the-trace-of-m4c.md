@@ -180,6 +180,42 @@ $$
 
 for $S$ symmetric and $K$ antisymmetric, because $\operatorname{tr}(SK)=\operatorname{tr}((SK)^{\mathsf T})=\operatorname{tr}(K^{\mathsf T}S^{\mathsf T})=-\operatorname{tr}(KS)=-\operatorname{tr}(SK)$.
 
+## The Axis-Free Coordinates and the Sign of the Trace Pairing
+
+**A second basis, built from the algebra and not from the format.** The sixteen matrices $T_{\mu\nu}=L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$, with $\mu,\nu\in\{t,x,y,z\}$, are the matrices of the two-sided operators $X\mapsto e_\mu Xe_\nu$ in the coefficient basis of $\mathbb{B}$. Each is a signed permutation matrix of determinant one, and the sixteen are a basis of $M_4(\mathbb{C})$: sixteen independent matrices in a space of complex dimension sixteen. The construction, the multiplication tables and the length are *The Two-Sided Operators Method to Build $M_4(\mathbb{C})$*.
+
+**Orthogonality.** For the positive definite form,
+
+$$
+\operatorname{tr}\bigl(T_{\mu\nu}^{\dagger}T_{\rho\sigma}\bigr)=4\,\delta_{\mu\rho}\delta_{\nu\sigma},
+$$
+
+so the sixteen coordinates of $A$ in this basis are sixteen traces, and no linear system is solved:
+
+$$
+A=\sum_{\mu,\nu}c_{\mu\nu}T_{\mu\nu},\qquad
+c_{\mu\nu}=\tfrac14\operatorname{tr}\bigl(T_{\mu\nu}^{\dagger}A\bigr).
+$$
+
+The trace is one of those coordinates, $\operatorname{tr}A=4c_{tt}$, because $T_{tt}=\mathrm I_4$ is the only basis element with a nonzero trace.
+
+**The trace pairing is diagonal here, and its signs are the two halves.** In the matrix-unit basis the trace pairing is a permutation matrix: non-degenerate, but silent about signature. In the axis-free basis it is diagonal,
+
+$$
+\operatorname{tr}\bigl(T_{\mu\nu}T_{\rho\sigma}\bigr)=\pm4\,\delta_{\mu\rho}\delta_{\nu\sigma},
+$$
+
+with $+4$ on ten elements and $-4$ on six. The ten positive elements are exactly the symmetric ones, $T_{tt}$ together with the nine whose two indices lie in $\{x,y,z\}$. The six negative ones are exactly the antisymmetric ones, those with one index $t$ and one in $\{x,y,z\}$. Hence
+
+$$
+10=\frac{4\cdot5}{2}=\dim\operatorname{Sym}_4,\qquad
+6=\frac{4\cdot3}{2}=\dim\operatorname{Skew}_4,
+$$
+
+and the signature of the trace pairing on $M_4(\mathbb{C})$ is $(10,6)$. The two halves of *The Matrix Algebra $M_4(\mathbb{C})$* are the positive and the negative eigenspaces of the pairing, and the axis-free basis exhibits them as a coordinate split, with no diagonalisation performed.
+
+**What each basis is for.** The matrix units are the definition of the product and the basis in which the theorems are stated. The axis-free basis is the basis in which the operators of the corpus are short, and in which the trace pairing is read off. Every $E_{ij}$ is a sum of four of the sixteen, so a table written in matrix units overstates the number of products by a factor of four.
+
 ## The Element as a Linear Map
 
 **The map.** An element $A\in M_4(\mathbb{C})$ is a linear map
@@ -368,3 +404,5 @@ $$
 - [The Involution and the Hermitian Structure of $M_4(\mathbb{C})$](the-involution-and-the-hermitian-structure-of-m4c.html), for the positive definite trace form and the Hermitian decomposition.
 - [Spectral Theory and the Spectral Projectors of $M_4(\mathbb{C})$](spectral-theory-and-the-spectral-projectors-of-m4c.html), for the spectral projectors and the Dunford calculus.
 - [The Peirce Decomposition of $M_4(\mathbb{C})$](the-peirce-decomposition-of-m4c.html), for the idempotent decomposition, which is not the Jordan decomposition.
+- [The Two-Sided Operators Method to Build $M_4(\mathbb{C})$](the-two-sided-operators-method-to-build-m4c.html), for the sixteen matrices $L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$, the coefficient formula and the length.
+- [The $M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the coefficient basis of $\mathbb{B}$, the left family and its transpose.

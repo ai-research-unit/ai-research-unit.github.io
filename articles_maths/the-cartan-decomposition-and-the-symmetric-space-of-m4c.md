@@ -127,6 +127,8 @@ $$
 
 **The polar decomposition.** The group-level Cartan decomposition is the polar decomposition $g=UP$, and the symmetric space is the space of the positive factors. The uniqueness of the polar decomposition is the uniqueness of the decomposition; the freedom on the kernel for singular elements is the boundary of the cone.
 
+**The basis of $\mathbb{B}$.** Where the biquaternion algebra is read as an algebra rather than as the abstract $M_2(\mathbb{C})$, the basis is the coefficient basis $\mathcal{E}=(e_t,\vec e_x,\vec e_y,\vec e_z)$ with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$, displayed with its four left matrices in *$M_4(\mathbb{C})$ Axis-Free Representation*. The comparison below uses only the size and the Hermitian structure, so no basis enters it.
+
 **The biquaternion comparison.** For the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ the same construction gives $GL_2(\mathbb{C})/U(2)$, of real dimension $4$, and the cone of positive definite Hermitian $2\times2$ matrices. The passage from $2$ to $4$ doubles the rank of the cone and quadruples its dimension; the Cartan involution is the same formula in both cases.
 
 ## Summary
@@ -158,6 +160,7 @@ The Cartan involution $\mathrm{J}(g)=(g^{*})^{-1}$ has fixed subgroup $U(4)$ and
 
 ## Further Reading
 
+- [$M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the coefficient basis of the biquaternion algebra and its four left matrices.
 - [The Polar Decomposition of $M_4(\mathbb{C})$](the-polar-decomposition-of-m4c.html), for the decomposition of a single element.
 - [The Involution and the Hermitian Structure of $M_4(\mathbb{C})$](the-involution-and-the-hermitian-structure-of-m4c.html), for the conjugate transpose and the unitary group.
 - [The Lie Algebra $\mathfrak{gl}_4(\mathbb{C})$ and $\mathfrak{sl}_4(\mathbb{C})$ of $M_4(\mathbb{C})$](the-lie-algebra-gl4c-and-sl4c-of-m4c.html), for the real forms and their signatures.

@@ -44,6 +44,8 @@ $$
 
 **Proof.** The first three relations are proved by the weight computation on the matrix units. The last three follow by taking real and imaginary parts of $J_\pm=J_1\pm iJ_2$.
 
+**The two bases.** The weight computation is made in the matrix units $E_{ij}$, the basis of the frame of this article. The same algebra is read on the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ in the coefficient basis $e_t,\vec e_x,\vec e_y,\vec e_z$, where the four left matrices and the sixteen two-sided products $T_{\mu\nu}=L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$ are *$M_4(\mathbb{C})$ Axis-Free Representation* and *$M_4(\mathbb{C})$ Axis-Free Representation: Operators*.
+
 **The representation is irreducible.** The carrier $\mathbb{C}^4$ is the highest-weight-$\tfrac32$ module: the weights of $J_3$ are $\tfrac32,\tfrac12,-\tfrac12,-\tfrac32$, each once, and the ladder coefficients are $\sqrt3,2,\sqrt3$. A nonzero invariant subspace contains a highest weight vector, which is a multiple of $e_1$, and the lowering chain reaches $e_2,e_3,e_4$; hence the only invariant subspaces are $0$ and $\mathbb{C}^4$.
 
 **The action on the chirality.** The chirality involution is
@@ -340,6 +342,8 @@ $$
 
 ## Further Reading
 
+- [$M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the coefficient basis, the four left matrices and the transpose as the quaternion conjugation.
+- [$M_4(\mathbb{C})$ Axis-Free Representation: Operators](m4c-axis-free-representation-operators.html), for the sixteen two-sided operators in the coefficient frame, their signs and their composition.
 - Brian C. Hall, *Lie Groups, Lie Algebras, and Representations* (Springer, 2015), for $\mathfrak{su}_2$, its representations and Schur's lemma.
 - William Fulton and Joe Harris, *Representation Theory: A First Course* (Springer, 1991), for the branching rules and the symmetric powers.
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the double commutant theorem and the envelope of a matrix algebra.

@@ -27,6 +27,16 @@ $$
 
 **Proof.** The product is bilinear, so $X\mapsto AX$ and $X\mapsto XB$ are linear, and so is their difference.
 
+**The axis-free form.** With $A=\sum_\mu a_\mu e_\mu$ and $B=\sum_\nu b_\nu e_\nu$ in the coefficient basis $e_t,\vec e_x,\vec e_y,\vec e_z$ of the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, the two one-sided operators are the combinations
+
+$$
+L_A=\sum_\mu a_\mu L_{\mathrm{axf},e_\mu},\qquad
+R_B=\sum_\nu b_\nu R_{\mathrm{axf},e_\nu},\qquad
+\mathcal S_{A,B}=\sum_\mu a_\mu L_{\mathrm{axf},e_\mu}-\sum_\nu b_\nu R_{\mathrm{axf},e_\nu}
+$$
+
+of signed permutation matrices, so each row of the matrix of the Sylvester operator has at most eight nonzero entries. The four left and four right matrices are *$M_4(\mathbb{C})$ Axis-Free Representation*; the composition table that gives the products $L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$ is *$M_4(\mathbb{C})$ Axis-Free Representation: Operators*.
+
 **The matrix in the matrix units.** Write $\operatorname{vec}X$ for the column of length sixteen obtained by stacking the columns of $X$. Then
 
 $$
@@ -286,6 +296,8 @@ The Sylvester operator $\mathcal S_{A,B}(X)=AX-XB$ is a linear operator on the s
 
 ## Further Reading
 
+- [$M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the coefficient basis, the four left matrices and the transpose as the quaternion conjugation.
+- [$M_4(\mathbb{C})$ Axis-Free Representation: Operators](m4c-axis-free-representation-operators.html), for the sixteen two-sided operators in the coefficient frame, their signs and their composition.
 - [Spectral Theory and the Spectral Projectors of $M_4(\mathbb{C})$](spectral-theory-and-the-spectral-projectors-of-m4c.html), for the spectrum, the resolvent and the spectral projectors.
 - [The Kronecker Factorisation $M_4(\mathbb{C})\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})$](the-kronecker-factorisation-of-m4c-into-m2c-tensor-m2c.html), for the Kronecker product and the two factors.
 - [The Centraliser](the-centraliser.html), for the commutant and its dimension.

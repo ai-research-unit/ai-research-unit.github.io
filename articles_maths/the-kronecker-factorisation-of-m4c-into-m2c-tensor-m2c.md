@@ -46,6 +46,8 @@ $$
 E_{ij}\otimes E_{kl}=E_{2(i-1)+k,\,2(j-1)+l}.
 $$
 
+**The other basis.** The sixteen $E_{ij}$ are the matrix units of the abstract algebra and the basis of the statement above. The tensor split is the split of the two-sided operators on the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$: the left multiplications $L_{\mathrm{axf},e_\mu}$ form one factor and the right multiplications $R_{\mathrm{axf},e_\nu}$ the other, and the sixteen products $T_{\mu\nu}=L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$ are the same basis in the coefficient basis $e_t,\vec e_x,\vec e_y,\vec e_z$, each a signed permutation matrix. The basis and the four left matrices are *$M_4(\mathbb{C})$ Axis-Free Representation*; the sixteen products are *$M_4(\mathbb{C})$ Axis-Free Representation: Operators*.
+
 The sixteen Kronecker products are the sixteen matrix units, reindexed by pairs.
 
 ## The Two Factors
@@ -178,6 +180,8 @@ $M_4(\mathbb{C})$ is $M_2(\mathbb{C})\otimes M_2(\mathbb{C})$ by the Kronecker p
 
 ## Further Reading
 
+- [$M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the coefficient basis, the four left matrices and the transpose as the quaternion conjugation.
+- [$M_4(\mathbb{C})$ Axis-Free Representation: Operators](m4c-axis-free-representation-operators.html), for the sixteen two-sided operators in the coefficient frame, their signs and their composition.
 - [The Sylvester Operator and the Kronecker Sum of $M_4(\mathbb{C})$](the-sylvester-operator-and-the-kronecker-sum-of-m4c.html), for the operators $L_A$ and $R_B$ and the difference $L_A-R_B$.
 - [The Numerical Range and the Field of Values of $M_4(\mathbb{C})$](the-numerical-range-and-the-field-of-values-of-m4c.html), for the rule $W(A\otimes I)=W(I\otimes A)=W(A)$.
 - [The Matrix Algebra $M_4(\mathbb{C})$](the-matrix-algebra-m4c.html), for the full algebra and the regular model.

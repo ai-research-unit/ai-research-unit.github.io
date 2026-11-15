@@ -10,6 +10,8 @@ This article fixes the stabilisers, proves the exact sequence, computes the Lie 
 
 ## The Action on Frames
 
+**The basis.** The operators are read in the coefficient basis $\mathcal{E}=(e_t,\vec e_x,\vec e_y,\vec e_z)$ of the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, where $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$. The four are a $\mathbb{C}$-basis, the product is the multiplication table and nothing else, and the two-sided operator $L_{e_\mu}R_{e_\nu}$ is $X\mapsto e_\mu Xe_\nu$. The basis and the multiplication table are *$M_4(\mathbb{C})$ Axis-Free Representation*; the sixteen matrices of the operators are *$M_4(\mathbb{C})$ Axis-Free Representation: Operators*.
+
 **The action.** Let $iR_{\vec e_x},iL_{\vec e_x}R_{\vec e_y},iL_{\vec e_y}R_{\vec e_y},iL_{\vec e_z}R_{\vec e_y}$ be a frame in $M_4(\mathbb{C})$, satisfying $\{iL_{e_\mu}R_{\vec e_{\nu(\mu)}},iL_{e_\nu}R_{\vec e_{\nu(\nu)}}\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ with $\varepsilon=(1,-1,-1,-1)$ and $\nu(t)=x$, $\nu(k)=y$. The five basis operators written as two-sided operators stand in the Gamma section.
 For $U\in GL_4(\mathbb{C})$, put
 $$
@@ -88,9 +90,9 @@ $$
 $$
 of dimension $1+6=7$.
 
-**The proof.** The bivectors $\sigma_{\mu\nu}=\tfrac12[iL_{e_\mu}R_{\vec e_{\nu(\mu)}},iL_{e_\nu}R_{\vec e_{\nu(\nu)}}]$ satisfy
+**The proof.** Write $\mathsf{B}_{\mu\nu}=\tfrac12[iL_{e_\mu}R_{\vec e_{\nu(\mu)}},iL_{e_\nu}R_{\vec e_{\nu(\nu)}}]$ for the half-commutator of two frame operators. Then
 $$
-[\sigma_{\mu\nu},iL_{e_\rho}R_{\vec e_{\nu(\rho)}}]
+[\mathsf{B}_{\mu\nu},iL_{e_\rho}R_{\vec e_{\nu(\rho)}}]
 =2\bigl(g_{\nu\rho}\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}-g_{\mu\rho}\,iL_{e_\nu}R_{\vec e_{\nu(\nu)}}\bigr)\in V,
 $$
 so $\Lambda^{2}V$ is in the Lie algebra. The scalars commute with everything. Conversely, write $X=X_0+X_1+X_2+X_3+X_4$ in the Clifford basis. The grade-4 part of $[X,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}]$ comes from $X_3$, so $X_3=0$; the grade-3 part comes from $X_4$, so $X_4=0$. With $X=X_0+X_1+X_2$, the grade-0 part of $[X,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}]$ is $2g(X_1,iL_{e_\mu}R_{\vec e_{\nu(\mu)}})$, which vanishes for all $\mu$ only if $X_1=0$. The remaining terms are the scalar $X_0$ and the bivector $X_2$, both of which give grade-1 commutators.
@@ -266,7 +268,7 @@ has dimension seven, and has Lie algebra $\mathbb{C}I\oplus\Lambda^{2}V$. Its ev
 | Symbol | Meaning |
 |---|---|
 | $iR_{\vec e_x},\dots,iL_{\vec e_z}R_{\vec e_y}$ | the four frame operators, $\{iL_{e_\mu}R_{\vec e_{\nu(\mu)}},iL_{e_\nu}R_{\vec e_{\nu(\nu)}}\}=2\varepsilon_\mu\delta_{\mu\nu}I$ |
-| $\sigma_{\mu\nu}$ | the bivector products $\tfrac12[iL_{e_\mu}R_{\vec e_{\nu(\mu)}},iL_{e_\nu}R_{\vec e_{\nu(\nu)}}]$ |
+| $\mathsf{B}_{\mu\nu}=\tfrac12[iL_{e_\mu}R_{\vec e_{\nu(\mu)}},iL_{e_\nu}R_{\vec e_{\nu(\nu)}}]$ | the bivector products, half the commutator of two frame operators |
 | $V$ | the span of the four frame operators, $\Lambda^{2}V\cong\mathfrak{so}(4,\mathbb{C})$ |
 | $\Gamma$ | the Clifford group of the frame |
 | $\Gamma^{+}$ | its even part |
@@ -280,6 +282,9 @@ has dimension seven, and has Lie algebra $\mathbb{C}I\oplus\Lambda^{2}V$. Its ev
 ## Further Reading
 
 - [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
+- [The Two-Sided Operators Method to Build $M_4(\mathbb{C})$](the-two-sided-operators-method-to-build-m4c.html), for the sixteen two-sided operators, the bivectors among them and the group of order $32$.
+- [$M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the coefficient basis and the four left matrices.
+- [$M_4(\mathbb{C})$ Axis-Free Representation: Operators](m4c-axis-free-representation-operators.html), for the sixteen matrices of the operators in the coefficient frame.
 - [The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$](the-gamma-frame-and-the-complexified-dirac-algebra-of-m4c.html), for the frame, the anticommutation relations and the action of $GL_4$.
 - [The Extraspecial Group of the Two-Sided Matrices of $M_4(\mathbb{C})$](the-extraspecial-group-of-the-two-sided-matrices-of-m4c.html), for $G\cong Q_8\circ Q_8$ and its representations.
 - [The Pin Group of the Gamma Frame](the-pin-group-of-the-gamma-frame.html), for the real Pin group and the finite frame group.

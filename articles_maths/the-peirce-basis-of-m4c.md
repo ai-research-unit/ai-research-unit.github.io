@@ -119,6 +119,8 @@ A Peirce basis of $M_4(\mathbb{C})$ is a choice $E_{kl}\in A_{kl}$ with $E_{kl}E
 
 ## Further Reading
 
+- [$M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the coefficient basis, the four left matrices and the transpose as the quaternion conjugation.
+- [The Two-Sided Operators Method to Build $M_4(\mathbb{C})$](the-two-sided-operators-method-to-build-m4c.html), for the matrix units, the sixteen two-sided operators and the caveat on the two bases.
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the Peirce units and the gauge.
 - [The Peirce Decomposition of $M_4(\mathbb{C})$](the-peirce-decomposition-of-m4c.html), for the lines and the rule.
 - [Spinors as Coordinates in $M_4(\mathbb{C})$](spinors-as-coordinates-in-m4c.html), for the columns of the array.

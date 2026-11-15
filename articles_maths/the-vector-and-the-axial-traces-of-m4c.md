@@ -22,6 +22,8 @@ identifies the two coordinates of the two-sided basis that carry them, and state
 
 ## The Real-Linear Embedding
 
+**The basis.** The four units are those of the coefficient basis $\mathcal{E}=(e_t,\vec e_x,\vec e_y,\vec e_z)$ of $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$. The multiplication table, the four left matrices and the trace are *$M_4(\mathbb{C})$ Axis-Free Representation*; the sixteen matrices of the two-sided operators are *$M_4(\mathbb{C})$ Axis-Free Representation: Operators*.
+
 **The element.** Write the biquaternion as
 $$
 b=a+i a',\qquad a=a_0e_t+a_1\vec e_x+a_2\vec e_y+a_3\vec e_z,\quad a_\mu\in\mathbb{R},
@@ -238,6 +240,8 @@ Their sum is the regular trace $4b_0$. The chiral traces are $2b_0$ and $2\bar b
 
 ## Further Reading
 
+- [$M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the coefficient basis, the four left matrices and the trace $4c_{tt}$.
+- [The Element, the Coordinates and the Trace of $M_4(\mathbb{C})$](the-element-the-coordinates-and-the-trace-of-m4c.html), for the coefficients read by traces and the sign of the trace pairing.
 - [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - [The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$](the-gamma-frame-and-the-complexified-dirac-algebra-of-m4c.html), for the five frame operators and the Clifford basis.
 - [The Two-Sided Operators Method to Build $M_4(\mathbb{C})$](the-two-sided-operators-method-to-build-m4c.html), for the sixteen $L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu}$ and their product table.

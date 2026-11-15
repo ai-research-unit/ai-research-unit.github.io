@@ -289,6 +289,8 @@ $$
 
 There is no nonzero isotropic vector and no null cone. The zero divisors of $M_4$ are the singular matrices $\{\det A=0\}$; they are not the isotropic set of the form. The singular set is a complex hypersurface of real codimension $2$, and it contains many nonzero matrices, but every nonzero matrix has positive Frobenius norm.
 
+**The basis of $\mathbb{B}$.** The contrast is read in the coefficient basis $\mathcal{E}=(e_t,\vec e_x,\vec e_y,\vec e_z)$ of $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$, and with $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ and $B^2=Q_x^2+Q_y^2+Q_z^2$. The basis, the four left matrices and the trace of the regular model are *$M_4(\mathbb{C})$ Axis-Free Representation* and *The Element, the Coordinates and the Trace of $M_4(\mathbb{C})$*.
+
 **The contrast with $\mathbb{B}$.** The biquaternion algebra $\mathbb{B}=M_2(\mathbb{C})$ carries the quaternionic norm
 
 $$
@@ -336,6 +338,8 @@ $$
 
 ## Further Reading
 
+- [$M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the coefficient basis, the four left matrices and the transpose as the quaternion conjugation.
+- [$M_4(\mathbb{C})$ Axis-Free Representation: Operators](m4c-axis-free-representation-operators.html), for the sixteen two-sided operators in the coefficient frame and their length.
 - [The Numerical Range and the Field of Values of $M_4(\mathbb{C})$](the-numerical-range-and-the-field-of-values-of-m4c.html), for the real intervals of the Hermitian elements.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the conjugate transpose, the spectral theorem, the Frobenius norm and the $*$-unitary group.
 - Rajendra Bhatia, *Matrix Analysis* (Springer, 1997), for the positive definite cone, the trace form and the operator norms.

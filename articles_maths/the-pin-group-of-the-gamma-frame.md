@@ -52,6 +52,8 @@ as operations on $\mathbb{B}$, where $\mathbb{B}^{\times}_{\pm1}=\{b\in\mathbb{B
 
 ## The Unit Vectors of the Frame
 
+**The basis.** The frame is written in the coefficient basis $\mathcal{E}=(e_t,\vec e_x,\vec e_y,\vec e_z)$ of the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$. The four are a $\mathbb{C}$-basis of $\mathbb{B}$, the bar is the coefficient conjugation and $L_b$ is the left multiplication $L_b\tilde X=b\tilde X$. The basis and the four left matrices are *$M_4(\mathbb{C})$ Axis-Free Representation*; the sixteen matrices $L_{e_\mu}R_{e_\nu}$ are *$M_4(\mathbb{C})$ Axis-Free Representation: Operators*.
+
 **The squares.** The five frame elements, $A_0=\bar{\cdot}$, $A_k=\bar{\cdot}\circ L_{-i\vec e_k}$ for $k=1,2,3$, and $A_5=R_{-i\vec e_z}$, are unit vectors up to sign:
 $$
 (A_0)^2=+I,\qquad
@@ -246,6 +248,9 @@ with $U$ the sixteen signed biquaternion units; its even part of order $16$ is a
 ## Further Reading
 
 - [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
+- [The Two-Sided Operators Method to Build $M_4(\mathbb{C})$](the-two-sided-operators-method-to-build-m4c.html), for the sixteen two-sided operators and the group of order $32$.
+- [$M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the coefficient basis and the four left matrices.
+- [$M_4(\mathbb{C})$ Axis-Free Representation: Operators](m4c-axis-free-representation-operators.html), for the sixteen matrices of the operators in the coefficient frame.
 - [Biquaternion Versors and the Orthogonal Group](biquaternion-versors-and-the-orthogonal-group.html), for the versor group, the double cover and the theorem $\mathrm{Pin}\not\subseteq\mathbb{B}$.
 - [The Clifford, Pin and Spin Groups with Signed Inner Conjugation](the-clifford-pin-and-spin-groups-with-signed-inner-conjugation.html), for the general definitions and the reflection formula.
 - [The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$](the-gamma-frame-and-the-complexified-dirac-algebra-of-m4c.html), for the five frame elements and the anticommutation relations.

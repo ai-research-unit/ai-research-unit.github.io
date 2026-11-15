@@ -20,7 +20,7 @@ This article states the group, the two quaternion subgroups, the centre and the 
 
 ## The Group
 
-**Definition.** Let $L_{e_\mu}$ and $R_{e_\nu}$ be the left and right multiplication operators on $\mathbb{B}\cong M_2(\mathbb{C})$ by the four biquaternion units, with $L_{e_t}=R_{e_t}=I$. The **group of the two-sided matrices** is
+**Definition.** Let $L_{e_\mu}$ and $R_{e_\nu}$ be the left and right multiplication operators on $\mathbb{B}\cong M_2(\mathbb{C})$ by the four biquaternion units $e_t,\vec e_x,\vec e_y,\vec e_z$ of the coefficient basis, with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$, and with $L_{e_t}=R_{e_t}=I$. The **group of the two-sided matrices** is
 
 $$
 G=\{\pm L_{e_\mu} R_{e_\nu}:\mu,\nu\in\{t,x,y,z\}\}.
@@ -196,6 +196,8 @@ The thirty-two matrices $\pm L_{e_\mu} R_{e_\nu}$ form a group $G$ of order $32$
 ## Further Reading
 
 - [The Two-Sided Operators Method to Build $M_4(\mathbb{C})$](the-two-sided-operators-method-to-build-m4c.html), for the sixteen operators and their product rule.
+- [$M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the coefficient basis, the multiplication table and the four left matrices.
+- [$M_4(\mathbb{C})$ Axis-Free Representation: Operators](m4c-axis-free-representation-operators.html), for the sixteen signed permutation matrices and their group of order $32$.
 - [The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$](the-operators-of-the-peirce-decomposition-of-m4c.html), for the left, right and two-sided operators.
 - [The Coefficient Matrix of a Two-Sided Operator: A Worked Computation](the-coefficient-matrix-of-a-two-sided-operator-a-worked-computation.html), for the explicit matrices.
 - [The Kronecker Factorisation $M_4(\mathbb{C})\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})$](the-kronecker-factorisation-of-m4c-into-m2c-tensor-m2c.html), for the two commuting factors.

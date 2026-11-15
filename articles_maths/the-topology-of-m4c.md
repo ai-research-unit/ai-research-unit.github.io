@@ -362,6 +362,8 @@ The rank-one idempotents form an affine bundle of rank $1$ over $\mathbb{P}^1$, 
 
 **The determinant bundle.** The determinant line bundle over $U(2)$ has first Chern class $1$; over $\mathbb{P}^1$ the tautological bundle $\mathcal{O}(-1)$ has $c_1=-1$ and the dual $\mathcal{O}(1)$ has $c_1=1$. The pattern is the $n=2$ case of the $n=4$ formulas.
 
+**The basis of $\mathbb{B}$.** Where the biquaternion algebra is read in its own coordinates, the basis is the coefficient basis $\mathcal{E}=(e_t,\vec e_x,\vec e_y,\vec e_z)$ with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$, displayed with its four left matrices in *$M_4(\mathbb{C})$ Axis-Free Representation*. Nothing in this article depends on the choice: the topology is that of $\mathbb{C}^2$ and of $U(2)$.
+
 **The comparison with the regular model.** The full algebra $M_4(\mathbb{C})$ has the singular set $\{\det=0\}$, a contractible cone; the biquaternion algebra has the null cone of its quaternionic norm, also a contractible cone. The complements have the homotopy type of $U(4)$ and $U(2)$ respectively; the determinant bundles have first Chern class $1$ in both cases. The regular model $M_4(\mathbb{C})_{\mathbb{B}_L}$ is a four-dimensional complex subspace with the null cone as its singular set; the full algebra's singular set is the determinantal hypersurface.
 
 ## Summary
@@ -403,6 +405,7 @@ $$
 
 ## Further Reading
 
+- [$M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the coefficient basis of the biquaternion algebra and its four left matrices.
 - Allen Hatcher, *Algebraic Topology* (Cambridge, 2002), for homotopy groups, fibrations and the cohomology of homogeneous spaces.
 - Raoul Bott and Loring Tu, *Differential Forms in Algebraic Topology* (Springer, 1982), for characteristic classes and the first Chern class.
 - Phillip Griffiths and Joseph Harris, *Principles of Algebraic Geometry* (Wiley, 1978), for the cohomology of Grassmannians and flag varieties and the Schubert calculus.

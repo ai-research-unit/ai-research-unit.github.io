@@ -104,6 +104,8 @@ is the orbit–stabiliser count. The gauge is the fibre over the root, not a quo
 
 **The three parameters.** The torus $T$ has three parameters, one per simple nilpotent $E_{12},E_{23},E_{34}$, as in *The Frame, the Simple Nilpotents and the Gauge of $M_4(\mathbb{C})$*. The fourth ratio is the inverse of the product, and there is no fourth independent scalar. The gauge acts on the root orbit by moving the frame; it acts on the matrix units by $E_{ij}\mapsto(t_i/t_j)E_{ij}$.
 
+**The two bases.** The count is made in the matrix units $E_{ij}$, the basis of the statement. The same algebra is read on the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ in the coefficient basis $e_t,\vec e_x,\vec e_y,\vec e_z$, where the four left matrices and the sixteen two-sided products $T_{\mu\nu}=L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$ are *$M_4(\mathbb{C})$ Axis-Free Representation* and *$M_4(\mathbb{C})$ Axis-Free Representation: Operators*.
+
 **The spectral flag.** The root $H$ has four distinct eigenvalues, hence four spectral lines. The **spectral flag** is
 
 $$
@@ -318,6 +320,8 @@ $$
 
 ## Further Reading
 
+- [$M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the coefficient basis, the four left matrices and the transpose as the quaternion conjugation.
+- [$M_4(\mathbb{C})$ Axis-Free Representation: Operators](m4c-axis-free-representation-operators.html), for the sixteen two-sided operators in the coefficient frame, their signs and their composition.
 - James E. Humphreys, *Linear Algebraic Groups* (Springer, 1975), for Borel subgroups, parabolic subgroups and flag varieties.
 - William Fulton and Joe Harris, *Representation Theory: A First Course* (Springer, 1991), for the flag variety, the Grassmannians and the Weyl group.
 - David Collingwood and William McGovern, *Nilpotent Orbits in Semisimple Lie Algebras* (Van Nostrand Reinhold, 1993), for the partition classification and the closure order.

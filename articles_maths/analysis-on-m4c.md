@@ -29,6 +29,12 @@ $$
 \langle E_{ij},E_{kl}\rangle=\delta_{ik}\delta_{jl}.
 $$
 
+**The axis-free basis.** The biquaternion reading of the same space is diagonal too: $\operatorname{tr}(T_{\mu\nu}^{\dagger}T_{\rho\sigma})=4\delta_{\mu\rho}\delta_{\nu\sigma}$, so the sixteen $T_{\mu\nu}/2$ are a second orthonormal basis, and the coordinates $c_{\mu\nu}=\tfrac14\operatorname{tr}(T_{\mu\nu}^{\dagger}A)$ of *The Element, the Coordinates and the Trace of $M_4(\mathbb{C})$* give
+$$
+\|A\|^2=4\sum_{\mu,\nu}|c_{\mu\nu}|^2 .
+$$
+The four left matrices are *$M_4(\mathbb{C})$ Axis-Free Representation*; the sixteen products are *$M_4(\mathbb{C})$ Axis-Free Representation: Operators*.
+
 **The identification with $\mathbb{C}^{16}$.** The map $A\mapsto(A_{11},A_{12},\dots,A_{44})$ is a $*$-unitary isomorphism
 
 $$
@@ -459,6 +465,8 @@ $$
 
 ## Further Reading
 
+- [$M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the coefficient basis, the four left matrices and the transpose as the quaternion conjugation.
+- [$M_4(\mathbb{C})$ Axis-Free Representation: Operators](m4c-axis-free-representation-operators.html), for the sixteen two-sided operators in the coefficient frame, their signs and their composition.
 - [The Sylvester Operator and the Kronecker Sum of $M_4(\mathbb{C})$](the-sylvester-operator-and-the-kronecker-sum-of-m4c.html), for the contour integral for the Sylvester equation.
 - Walter Rudin, *Function Theory in the Unit Ball of $\mathbb{C}^n$* (Springer, 1980), for holomorphic functions, the Cauchy–Riemann equations, harmonic functions and the Poisson integral in several variables.
 - Lars Hörmander, *An Introduction to Complex Analysis in Several Variables* (North-Holland, 1990), for the several-variable Cauchy–Riemann theory.

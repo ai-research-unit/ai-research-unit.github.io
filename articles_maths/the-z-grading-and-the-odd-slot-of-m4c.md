@@ -97,6 +97,8 @@ for $b_1,b_2,c_1,c_2\in\mathbb{B}$. The twist $\mathrm{J}$ is the reflection of 
 
 ## The Sixteen Two-Sided Operators
 
+**The basis.** The operators are read in the coefficient basis $\mathcal{E}=(e_t,\vec e_x,\vec e_y,\vec e_z)$ of the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$. The four are a $\mathbb{C}$-basis of $\mathbb{B}$, and $L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu}$ is the matrix of $X\mapsto e_\mu Xe_\nu$ in the Peirce frame, the frame in which the sixteen are matrix units. The coefficient basis and its multiplication table are *$M_4(\mathbb{C})$ Axis-Free Representation*; the sixteen matrices in the two frames are *$M_4(\mathbb{C})$ Axis-Free Representation: Operators* and *$M_4(\mathbb{C})$ Pauli Representation: Operators*.
+
 **The theorem.** Each $L_{\mathrm{pau},e_\mu} R_{\mathrm{pau},e_\nu}$ is exactly one Clifford basis element up to a scalar $\pm1$ or $\pm i$. The table gives the element and its grade; the element is written in the frame $v_\mu$.
 
 | $L_{\mathrm{pau},e_\mu} R_{\mathrm{pau},e_\nu}$ | $e_t$ | $\vec e_x$ | $\vec e_y$ | $\vec e_z$ |
@@ -244,6 +246,8 @@ and the five basis operators of the frame are $iL_{\mathrm{pau},e_t}R_{\mathrm{p
 
 ## Further Reading
 
+- [$M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the coefficient basis and the multiplication table that fix the signs of the sixteen operators.
+- [$M_4(\mathbb{C})$ Axis-Free Representation: Operators](m4c-axis-free-representation-operators.html), for the sixteen matrices in the coefficient frame, next to the Peirce frame of this article.
 - [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - [The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$](the-gamma-frame-and-the-complexified-dirac-algebra-of-m4c.html), for the five gammas, the Clifford basis and the set.
 - [The Two-Sided Operators Method to Build $M_4(\mathbb{C})$](the-two-sided-operators-method-to-build-m4c.html), for the sixteen $L_{\mathrm{pau},e_\mu} R_{\mathrm{pau},e_\nu}$ and their multiplication table.

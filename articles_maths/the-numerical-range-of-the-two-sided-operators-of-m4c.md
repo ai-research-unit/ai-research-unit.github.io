@@ -41,6 +41,12 @@ The operator $L_{a}R_{b}$ is invertible exactly when $a$ and $b$ are, and then $
 
 **Proof.** The composition is $X\mapsto a(cXd)b=(ac)X(db)$. For the adjoint, $\langle Y,aXb\rangle=\operatorname{tr}(Y^*aXb)=\operatorname{tr}\bigl((a^*Yb^*)^*X\bigr)=\langle a^*Yb^*,X\rangle$. The inverse is the product law with $L_{a}R_{b}L_{a^{-1}}R_{b^{-1}}=L_{I}R_{I}$.
 
+**The axis-free form.** With $a=\sum_\mu a_\mu e_\mu$ and $b=\sum_\nu b_\nu e_\nu$ in the coefficient basis $e_t,\vec e_x,\vec e_y,\vec e_z$ of the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, the operator is a combination of sixteen signed permutation matrices,
+$$
+L_{\mathrm{axf},a}R_{\mathrm{axf},b}=\sum_{\mu,\nu}a_\mu b_\nu\,T_{\mu\nu},\qquad T_{\mu\nu}=L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu},
+$$
+and the Hilbert–Schmidt form is diagonal in that basis: $\operatorname{tr}(T_{\mu\nu}^{\dagger}T_{\rho\sigma})=4\delta_{\mu\rho}\delta_{\nu\sigma}$. The four left matrices are *$M_4(\mathbb{C})$ Axis-Free Representation*; the sixteen products and their composition are *$M_4(\mathbb{C})$ Axis-Free Representation: Operators*.
+
 **The matrix.** In the row-stacking basis,
 
 $$
@@ -338,6 +344,8 @@ The field of values contains the convex hull of the product set $W(a)W(b)$, and 
 
 ## Further Reading
 
+- [$M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the coefficient basis, the four left matrices and the transpose as the quaternion conjugation.
+- [$M_4(\mathbb{C})$ Axis-Free Representation: Operators](m4c-axis-free-representation-operators.html), for the sixteen two-sided operators in the coefficient frame, their signs and their composition.
 - [Hermitian Operators and the Numerical Range](hermitian-operators-and-the-numerical-range.html), for the general theory, the support function and the Toeplitz–Hausdorff theorem.
 - [The Numerical Range and the Field of Values of $M_4(\mathbb{C})$](the-numerical-range-and-the-field-of-values-of-m4c.html), for the elliptical range theorem, the block rule, the rank-one case and the nilpotent chain.
 - [The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$](the-operators-of-the-peirce-decomposition-of-m4c.html), for $L_a$, $R_a$, $L_{a}R_{b}$, their matrices and their spectrum.

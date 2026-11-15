@@ -36,6 +36,8 @@ $$
 
 which holds in every associative algebra. A matrix $X$ is central exactly when $XA=AX$ for all $A$, which forces $X$ to be scalar. The trace of a commutator vanishes, so the derived algebra lies in $\mathfrak{sl}_4$; the converse holds because $E_{ij}=[E_{ii},E_{ij}]$ for $i\ne j$ and $E_{ii}-E_{jj}=[E_{ij},E_{ji}]$, and these elements span the traceless matrices.
 
+**The basis.** The matrix units $E_{ij}$ are the basis of the statements below, and the off-diagonal units are the root vectors. The same sixteen-dimensional algebra is read on the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ in the coefficient basis $e_t,\vec e_x,\vec e_y,\vec e_z$, where the commutator $[L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu},L_{\mathrm{axf},e_\rho}R_{\mathrm{axf},e_\sigma}]$ is a commutator of signed permutation matrices: the four left matrices are *$M_4(\mathbb{C})$ Axis-Free Representation* and the sixteen products *$M_4(\mathbb{C})$ Axis-Free Representation: Operators*.
+
 **The direct sum.** Every matrix splits as
 
 $$
@@ -239,6 +241,8 @@ $\mathfrak{gl}_4(\mathbb{C})$ is the sixteen-dimensional Lie algebra of $4\times
 
 ## Further Reading
 
+- [$M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the coefficient basis, the four left matrices and the transpose as the quaternion conjugation.
+- [$M_4(\mathbb{C})$ Axis-Free Representation: Operators](m4c-axis-free-representation-operators.html), for the sixteen two-sided operators in the coefficient frame, their signs and their composition.
 - [The Sylvester Operator and the Kronecker Sum of $M_4(\mathbb{C})$](the-sylvester-operator-and-the-kronecker-sum-of-m4c.html), for the adjoint operator $\operatorname{ad}_A$ and the root values.
 - [The Matrix Algebra $M_4(\mathbb{C})$](the-matrix-algebra-m4c.html), for the algebra, the trace and the centre.
 - [The Exponential and the Lie Group of $M_4(\mathbb{C})$](the-exponential-and-the-lie-group-of-m4c.html), for the group and the exponential.

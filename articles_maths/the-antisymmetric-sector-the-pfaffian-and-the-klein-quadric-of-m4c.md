@@ -20,6 +20,8 @@ This article states the identification, the Pfaffian and its invariance, the ran
 
 **Proof.** An antisymmetric matrix is determined by its entries above the diagonal, of which there are $\binom{4}{2}=6$; the matrices $e_{i}\wedge e_{j}=E_{ij}-E_{ji}$ are linearly independent and span the space.
 
+**The axis-free form.** In the coefficient basis $e_t,\vec e_x,\vec e_y,\vec e_z$ of the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ the antisymmetric sector is spanned by the six axis-free operators $T_{tx},T_{ty},T_{tz},T_{xt},T_{yt},T_{zt}$, and the symmetric sector by the other ten, $T_{tt},T_{xx},T_{yy},T_{zz},T_{xy},T_{xz},T_{yx},T_{yz},T_{zx},T_{zy}$, each of which is a symmetric signed permutation matrix. The six are exactly the mixed time-space pairs, so the split of $M_4(\mathbb{C})$ into symmetric and antisymmetric matrices is a coordinate split in that basis, with no diagonalisation. The sixteen matrices are *$M_4(\mathbb{C})$ Axis-Free Representation: Operators*; the trace pairing that separates the two halves is *The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$*.
+
 **The Lie algebra.** The commutator of two antisymmetric matrices is antisymmetric:
 
 $$
@@ -195,6 +197,8 @@ The antisymmetric sector $\Lambda^{2}\mathbb{C}^{4}$ is six-dimensional, is the 
 
 ## Further Reading
 
+- [$M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the coefficient basis, the four left matrices and the transpose as the quaternion conjugation.
+- [$M_4(\mathbb{C})$ Axis-Free Representation: Operators](m4c-axis-free-representation-operators.html), for the sixteen two-sided operators in the coefficient frame, their signs and their composition.
 - [The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$](the-forms-the-norms-and-the-singular-set-of-m4c.html), for the determinant and the singular set of the full algebra.
 - [The Peirce $\mathfrak{su}_2$ and the Chiral $\mathfrak{su}_2\times\mathfrak{su}_2$ of $M_4(\mathbb{C})$](the-peirce-su2-and-the-chiral-su2-su2-of-m4c.html), for the other pair of chiral subalgebras.
 - [The Geometry of the Idempotents of $M_4(\mathbb{C})$](the-geometry-of-the-idempotents-of-m4c.html), for the Grassmannians and the flag variety.

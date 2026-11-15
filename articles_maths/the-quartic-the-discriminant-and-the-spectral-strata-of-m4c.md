@@ -227,6 +227,8 @@ The characteristic quartic $t^{4}-c_1t^{3}+c_2t^{2}-c_3t+c_4$ is computed from t
 
 ## Further Reading
 
+- [$M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the coefficient basis, the four left matrices and the transpose as the quaternion conjugation.
+- [The Two-Sided Operators Method to Build $M_4(\mathbb{C})$](the-two-sided-operators-method-to-build-m4c.html), for the matrix units, the sixteen two-sided operators and the caveat on the two bases.
 - [Spectral Theory and the Spectral Projectors of $M_4(\mathbb{C})$](spectral-theory-and-the-spectral-projectors-of-m4c.html), for the Jordan form, the resolvent and the Dunford calculus.
 - [The Cubic, the Discriminant and the Spectral Strata of $M_3(\mathbb{C})$](the-cubic-the-discriminant-and-the-spectral-strata-of-m3c.html), for the degree-three analogue.
 - [The Quintic and the Spectral Strata of $M_5(\mathbb{C})$](the-quintic-and-the-spectral-strata-of-m5c.html), for the degree-five analogue and the strata of $M_5$.

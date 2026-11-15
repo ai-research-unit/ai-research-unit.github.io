@@ -122,6 +122,8 @@ has real dimensions $4$, $16$ and $32$; the last inclusion is the complexificati
 
 ## The Place of the Biquaternion Algebra
 
+**The basis.** $\mathbb{B}$ is read in the coefficient basis $\mathcal{E}=(e_t,\vec e_x,\vec e_y,\vec e_z)$ of $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$, and with $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. The basis, the multiplication table and the four left matrices are *$M_4(\mathbb{C})$ Axis-Free Representation*; the sixteen matrices of the operators on it are *$M_4(\mathbb{C})$ Axis-Free Representation: Operators*.
+
 **The biquaternion algebra.** $\mathbb{B}\cong M_2(\mathbb{C})$ is a complex algebra of complex dimension $4$ and real dimension $8$. It is **not** a real form of $M_4(\mathbb{C})$: its complexification is
 
 $$
@@ -184,6 +186,8 @@ The two real forms of $M_4(\mathbb{C})$ are $M_4(\mathbb{R})$ and $M_2(\mathbb{H
 
 ## Further Reading
 
+- [$M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the coefficient basis and the multiplication table.
+- [$M_4(\mathbb{C})$ Axis-Free Representation: Operators](m4c-axis-free-representation-operators.html), for the sixteen two-sided operators in the coefficient frame.
 - [The Matrix Algebra $M_4(\mathbb{C})$](the-matrix-algebra-m4c.html), for the algebra and its subalgebras.
 - [The Involution and the Hermitian Structure of $M_4(\mathbb{C})$](the-involution-and-the-hermitian-structure-of-m4c.html), for the $*$-structures.
 - [The Lie Algebra $\mathfrak{gl}_4(\mathbb{C})$ and $\mathfrak{sl}_4(\mathbb{C})$ of $M_4(\mathbb{C})$](the-lie-algebra-gl4c-and-sl4c-of-m4c.html), for $\mathfrak{su}^{*}(4)\cong\mathfrak{so}(5,1)$ and $\mathfrak{sp}(2)$.
