@@ -165,4 +165,5 @@ A complete family of $n$ idempotents in $M_{n}(\mathbb{C})$ has rank one at each
 - [Roots of Unity and the Lagrange Idempotents of $M_n(\mathbb{C})$](roots-of-unity-and-the-lagrange-idempotents-of-mnc.html), for the projectors used in §*The Family from a Root of $1$*.
 - [The Peirce Decomposition and the Corner Recursion of $M_n(\mathbb{C})$](the-peirce-decomposition-and-the-corner-recursion-of-mnc.html), for the coarse splits and the corner recursion.
 - [The Peirce Basis in $n$ Dimensions](the-peirce-basis-in-n-dimensions.html), for the choice of one element per line.
+- [Peirce Decompositions of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the case $n=2$, where the four corners are the biquaternion Peirce lines.
 - [Spinors as Peirce Coordinates in $n$ Dimensions](spinors-as-peirce-coordinates-in-n-dimensions.html), for the rows of the coordinate array.

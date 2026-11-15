@@ -112,6 +112,8 @@ The standard pair of nilpotents is $\vec{\Upsilon}_1$ and $\vec{\Upsilon}_2$, th
 
 **The word, on an operator.** Operator chirality is the side on which an operator multiplies: the left slot for a pure left multiplier, $c\,L_{\tilde Q}$; the right slot for a pure right multiplier, $c\,R_{\tilde P}_{\Phi}$; both slots for a basis operator whose two multipliers are both occupied. The label is read from the basis operator and from nothing else: no root, no idempotent, no ideal, no spinor and no Clifford relation enters it. The vocabulary is *Operator Family Conventions*, §*The Slot Label, Which Is the Chirality*, and the properties of the two one-sided families and of the label are *Operator Chirality on the Biquaternion Algebra*, both in the mathematical corpus.
 
+**The word, on a spinor.** Spinor chirality is the value: which eigenspace of the chirality operator an element occupies, left-handed or right-handed. It is a property of a field and not of an operator, and it is the reading a physicist gives the bare word. The two words are not rivals. A field's spinor chirality is read with the operator chirality of the operator that splits it: the operator's side says how it acts, the field's value says which half it lives in. A value needs an axis, because the eigenspaces are the ideals of a declared $\vec u$; a side needs none.
+
 **One basis operator that realises the split.** The side is the convention, and one operator shows it. For any traceless $u$ with $u^2=-e_t$ the operator
 $$
 -iR_u:\quad \tilde Q\mapsto-i\tilde Qu

@@ -20,7 +20,7 @@ $$
 
 Verified exactly. A state is a projector precisely when its norm vanishes, so the plane consists of pure states and the vanishing norm is not a defect of the carrier but its definition. The spin-zero carrier was null-free because a complex number is not a state; the spin-half carrier is null because a pure state is a projector.
 
-**The sixth claim is that the two ideals are the two chiralities.** Right multiplication by $-i\vec e_z$ acts as $-1$ on $S_+(\vec e_z)$ and as $+1$ on $S_-(\vec e_z)$, verified to $0$, so the two ideals are the two eigenspaces of the chirality operator when the axis is the frame's third direction. The coefficient conjugation, which sends $i$ to $-i$ and leaves the units alone, is an algebra automorphism and exchanges the two ideals. And because each ideal is null on its own, a field of one chirality has no invariant length: a mass term has to pair the two.
+**The sixth claim is that the two ideals are the two spinor chiralities.** Right multiplication by $-i\vec e_z$ acts as $-1$ on $S_+(\vec e_z)$ and as $+1$ on $S_-(\vec e_z)$, verified to $0$, so the two ideals are the two eigenspaces of the chirality operator when the axis is the frame's third direction. The coefficient conjugation, which sends $i$ to $-i$ and leaves the units alone, is an algebra automorphism and exchanges the two ideals. And because each ideal is null on its own, a field of one chirality has no invariant length: a mass term has to pair the two.
 
 **The first objection is that a null carrier cannot be a carrier of anything physical.** It can, and the nullity is the point. The plane is null because a pure state is a projector, and a projector has zero norm in this algebra for the same reason that $\tfrac12(1+\sigma_z)$ has determinant zero in the Pauli algebra. The norm of the algebra is not a Hilbert norm; it is the determinant, and the determinant of a rank-one projector is zero. What the entry keeps apart is the algebraic norm $N$, which vanishes on the carrier, and the Hermitian form $\langle X,X\rangle_{*}=\sum_\mu\lvert X_\mu\rvert^{2}$, which is positive on the whole algebra and which normalises a state.
 
@@ -73,7 +73,7 @@ Verified exactly. A state is a projector precisely when its norm vanishes, so th
 
 **The pairing.** $N(X_++X_-)=2B(X_+,X_-)$, and the restriction of $B$ to $S_+\times S_-$ is nondegenerate: the invariant length of a bispinor is the duality pairing of its two halves.
 
-**The two chiralities.** Under the coefficient conjugation the two ideals are exchanged, $\bar\Pi_+=\Pi_-$, and the bar is an automorphism; under right multiplication by $-i\vec e_z$ they are the two eigenspaces, $-1$ and $+1$.
+**The two spinor chiralities.** Under the coefficient conjugation the two ideals are exchanged, $\bar\Pi_+=\Pi_-$, and the bar is an automorphism; under right multiplication by $-i\vec e_z$ they are the two eigenspaces, $-1$ and $+1$.
 
 **The mixedness.** $N\bigl(\tfrac12(e_t+i\vec r)\bigr)=\tfrac14(1-\lvert\vec r\rvert^{2})$ and $S^{2}=S-N(S)e_t$: the norm is the failure of a state to be pure, and it vanishes exactly on the idempotents.
 
@@ -380,6 +380,14 @@ $$
 
 and the mass coefficient $k_m=mc/\hbar$ is the constant that relates the two components. The entry's statement and the equation's statement are the same statement in two notations: the operator acts inside one ideal, since it is an element and an element is a left multiplier, and the mass is the only term that ties the two ideals together. At $k_m=0$ the pair decouples into two independent equations, one for each chirality, and each is consistent on its own because the operator preserves the ideal. That is why a massless fermion can be described by a two-component field and a massive one cannot.
 
+**The mass number is diagonal in the value.** The mass enters as the central scalar $k_m$, and a central scalar holds both slots, so it cannot move a value. In the projectors of the chirality operator,
+
+$$
+P_+(k_m\mathrm I)P_-=0\quad\text{for every }k_m .
+$$
+
+The norm says that a mass pairs the two closures; this says that the pairing does not move the value.
+
 **The interpretation: gauge invariance of a mass.** A mass term that pairs the two ideals ties their two charges together, and the archive's selection rule is the statement of that tie: a bare Dirac mass is gauge invariant if and only if the two chiral charges are equal, and a chiral fermion is massless in the unbroken phase. The pairing is the algebraic reason the tie exists, and the entry reports the rule as the archive's and claims only the pairing for itself.
 
 **The interpretation: why the pairing is symmetric.** The polar form $B$ is symmetric, so $B(X_+,X_-)=B(X_-,X_+)$ and the exchange of the two names changes nothing. There is no sign to track, and no antisymmetric structure enters the mass. The fermionic minus sign belongs to the action of a full turn and to the exchange of two particles, not to this pairing; the entry states that separation because the two are easy to conflate.
@@ -443,9 +451,9 @@ which is the standard formula for a spin-$\tfrac12$ measurement along $\vec u$ o
 
 3. **The half angle is the fermion sign.** The rotor acts as $e^{-i\theta/2}$ and a full turn as $-\mathrm{id}$. Nothing about this is a convention of sign: the factor of two is the map from the group of rotations to the phases on the carrier, and the minus sign at $2\pi$ is its kernel. Every statement about the double cover of the Lorentz group in the corpus is this one line read on a different carrier.
 
-4. **The two ideals are the two chiralities.** The eigenspaces of $-iR_{\vec u}$ are the two minimal left ideals of the axis, verified to $10^{-15}$ at three axes. A field valued in one ideal is a Weyl field; the projection $\psi\mapsto\psi\tilde\Pi_\pm$ is the chiral projection; and the fact that the operator is a right multiplication while the action is a left multiplication is why chirality and the action commute.
+4. **The two ideals are the two spinor chiralities.** The eigenspaces of $-iR_{\vec u}$ are the two minimal left ideals of the axis, verified to $10^{-15}$ at three axes. A field valued in one ideal is a Weyl field; the projection $\psi\mapsto\psi\tilde\Pi_\pm$ is the chiral projection; and the fact that the operator is a right multiplication while the action is a left multiplication is why chirality and the action commute.
 
-5. **Mass is the pairing of the two chiralities.** The norm on the bispinor is $2B(X_+,X_-)$ and on a single ideal it is zero. So a mass term has to pair the two, and the archive's Dirac pair with the coefficient $k_m$ between the two components is that pairing written as an equation. A massless field can be one ideal; a massive field cannot.
+5. **Mass is the pairing of the two spinor chiralities.** The norm on the bispinor is $2B(X_+,X_-)$ and on a single ideal it is zero. So a mass term has to pair the two, and the archive's Dirac pair with the coefficient $k_m$ between the two components is that pairing written as an equation. A massless field can be one ideal; a massive field cannot.
 
 6. **A mass term ties two charges.** A pairing of the two ideals ties their two charges together, which is the archive's selection rule: a bare Dirac mass needs equal charges and a chiral fermion is massless in the unbroken phase. The entry reads the rule as the shape of the pairing and not as a separate postulate.
 
@@ -487,7 +495,7 @@ The norm vanishes on the plane and on each ideal; on the state slice it is $\tfr
 
 Inside one ideal every element is null, $\operatorname{spec}(Y)=\{0,2Q_t(Y)\}$, and the degenerate elements are the square-zero ones: they form the real plane $\mathbb{C}(\vec u_2-i\vec u_3)$, the exceptional locus of the closure and the spinor of a null direction.
 
-The two ideals are the two chiralities: they are the eigenspaces of $-iR_{\vec u}$, and the coefficient conjugation exchanges them and is an automorphism. On the bispinor space the norm becomes the pairing, $N(X_++X_-)=2B(X_+,X_-)$, nondegenerate: the invariant length of a spinor of one chirality is zero, and the mass is the pairing of the two. The carrier is one pure state and its amplitude; the family over all axes is the Bloch sphere; the Peirce pair is a complete exclusive two-outcome analyser; and the weight $\tfrac12(1\pm\vec u\cdot\vec r)$ is the pairing of the state with the analyser's own basis.
+The two ideals are the two spinor chiralities: they are the eigenspaces of $-iR_{\vec u}$, and the coefficient conjugation exchanges them and is an automorphism. On the bispinor space the norm becomes the pairing, $N(X_++X_-)=2B(X_+,X_-)$, nondegenerate: the invariant length of a spinor of one chirality is zero, and the mass is the pairing of the two. The carrier is one pure state and its amplitude; the family over all axes is the Bloch sphere; the Peirce pair is a complete exclusive two-outcome analyser; and the weight $\tfrac12(1\pm\vec u\cdot\vec r)$ is the pairing of the state with the analyser's own basis.
 
 ## Summary of Notation
 

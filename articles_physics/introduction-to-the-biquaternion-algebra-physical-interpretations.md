@@ -371,11 +371,11 @@
 
 ## The Archive
 
-**The forty-one articles that the category carried before this derivation are kept, in a subsection named ARCHIVE.** Nothing is deleted. Each one is the source of the readings that the derived entries carry, and each is reachable from the menu, at the end of the category, under that heading.
+**The forty articles that the category carried before this derivation and that are not kept whole are kept, in a subsection named ARCHIVE.** Nothing is deleted. Each one is the source of the readings that the derived entries carry, and each is reachable from the menu, at the end of the category, under that heading.
 
 **The archive is not a second reading of the subject.** The derived entries above are the category. The archived articles are kept for two reasons: their readings are being carried over one at a time, and a reader who wants the older and longer treatment of one point can still find it. An archived article is retired once its readings have been carried into an entry and that entry has been checked against it.
 
-**Three articles are not archived, because they survive.** *The Two Sectors: Split and the Four Bridges* is taken unchanged as the first entry of I.12. *The Unit Group, the Cone and the Orders* is taken unchanged as II.1. This introduction is rewritten in place, because its subject is unchanged and its content is the new structure.
+**Four articles are not archived, because they survive.** *The Two Sectors: Split and the Four Bridges* is taken unchanged as the first entry of I.12. *The Unit Group, the Cone and the Orders* is taken unchanged as II.1. *Mirror Biquaternions and the Phy–Psy Switch* is taken whole as a companion of I.1, after that entry, because its subject is one construction — the switch, the class and the Wick comparison — and a construction is not a section that one entry can absorb. This introduction is rewritten in place, because its subject is unchanged and its content is the new structure.
 
 ## The Limits of the Category
 
@@ -411,7 +411,7 @@
 - The rule is one entry to one section, with two named exceptions: the spectral strata and the remarkable subspaces.
 - Every entry links its mathematics, states the result in brief, gives labelled interpretations, and states the limits of each.
 - The spin is the last part of the geometry, after the rotations and the groups, because a spin is a weight of a representation of the rotation.
-- The forty-one superseded articles are kept in the archive as sources, and are retired one at a time as their readings are carried.
+- The forty superseded articles are kept in the archive as sources, and are retired one at a time as their readings are carried. Four articles are kept whole instead: this introduction, the two sectors, the unit group, and the mirror.
 - Twenty-seven derived entries are titled and not yet written; none exists on disk as a stub.
 
 ## Further Reading

@@ -4,7 +4,7 @@
 
 The Peirce decomposition of $M_{n}(\mathbb{C})$ relative to a complete family of $n$ idempotents gives $n^{2}$ lines and no element inside the mixed ones. A **Peirce basis** is a choice of one nonzero element in each line, normalised so that the chosen elements multiply by the matrix-unit rule. The basis is not part of the decomposition: the decomposition is canonical given the family, while the basis is a choice, and the freedom of the choice is the **Peirce gauge**.
 
-The article proves that a Peirce basis exists, that it is unique up to the gauge, and that the gauge is a torus of dimension $n-1$. It gives the coordinates of an element in the basis, the dimension count of the families and of the frames, and the projective reading of the construction. It assumes *The Peirce Decomposition in $n$ Dimensions*.
+The article proves that a Peirce basis exists, that it is unique up to the gauge, and that the gauge is a torus of dimension $n-1$. It identifies the basis with a system of matrix units, proves that two such systems are conjugate by a unit unique up to the centre, gives the coordinates of an element in the basis, the dimension count of the families and of the frames, and the projective reading of the construction. It assumes *The Peirce Decomposition in $n$ Dimensions*.
 
 ## The Definition
 
@@ -91,6 +91,30 @@ because $X'_{kl}E'_{kl}=X_{kl}E_{kl}$ and $E'_{kl}=t_{k}t_{l}^{-1}E_{kl}$.
 
 **The Hermitian case.** If the family is Hermitian, $P_{k}^{*}=P_{k}$, a Hermitian Peirce basis has $E_{lk}=E_{kl}^{*}$. In the form $E_{kl}=v_{k}v_{l}^{*}$, with $v_{k}$ a unit vector, this is automatic, and the gauge is restricted to $|t_{k}|=1$. The gauge group is then $(S^{1})^{n-1}$.
 
+## The Corners
+
+**A Peirce corner is a line $A_{kl}$, and the basis takes one element from each of the $n^{2}$ corners.** The word is the one used in the biquaternion articles, where the four lines $\mathbb{B}_{++},\mathbb{B}_{+-},\mathbb{B}_{-+},\mathbb{B}_{--}$ are called the four corners. In $M_{n}(\mathbb{C})$ there are $n^{2}$ of them.
+
+**The diagonal corners and the off-diagonal corners behave differently.** The diagonal corner $A_{kk}=\mathbb{C}P_{k}$ contains exactly two idempotents, $0$ and $P_{k}$, and the basis takes the nonzero one: $E_{kk}=P_{k}$, canonical once the family is fixed. An off-diagonal corner $A_{kl}$, $k\ne l$, contains no idempotent, since $A_{kl}^{2}=0$; the basis takes a nilpotent $E_{kl}$, and the choice is free up to the gauge. So the basis is fixed on the $n$ diagonal corners and chosen on the $n^{2}-n$ off-diagonal ones.
+
+**The product of two basis elements names a third corner.** The rule $E_{kl}E_{pq}=\delta_{lp}E_{kq}$ says that the product of the element of the corner $(k,l)$ with the element of the corner $(p,q)$ is the element of the corner $(k,q)$ when $l=p$, and is zero otherwise. In the corner language of *The Peirce Decomposition and the Corner Recursion of $M_n(\mathbb{C})$*, the corners are the summands $A_{kl}=\operatorname{Hom}(V_{l},V_{k})$ and the composites are the products of maps.
+
+## Systems of Matrix Units
+
+**Definition.** A **system of $n\times n$ matrix units** in $M_{n}(\mathbb{C})$ is a family $E_{kl}$, one element for each pair $(k,l)$, with
+
+$$
+E_{kl}E_{pq}=\delta_{lp}E_{kq},\qquad E_{kk}=P_{k}.
+$$
+
+A Peirce basis is exactly such a system: the definition of §*The Definition* and this one are the same list of conditions. The coordinate map of §*Coordinates* sends the system to the $n^{2}$ elementary matrices, so a system of matrix units is the same data as an isomorphism $M_{n}(\mathbb{C})\to M_{n}(\mathbb{C})$ carrying the family to the standard diagonal family.
+
+**Uniqueness up to conjugation.** Every two systems of $n\times n$ matrix units of $M_{n}(\mathbb{C})$ are conjugate by a unit, and the conjugating unit is unique up to the centre.
+
+*Proof.* By the Skolem–Noether theorem every automorphism of $M_{n}(\mathbb{C})$ is inner, so it is enough to compare each system with the standard one. The data $(v_{k})$, $(\ell_{k})$ of §*Existence* give $E_{kl}=v_{k}\ell_{l}$; two bases $v$ and $v'$ of $\mathbb{C}^{n}$ differ by an invertible $U$ with $Uv_{k}=v'_{k}$, and then $UE_{kl}U^{-1}=v'_{k}\ell'_{l}=E'_{kl}$. If $U$ and $U'$ both carry the system to the same one, then $U^{-1}U'$ commutes with every $E_{kl}$, hence with the whole algebra, since the units span it, so it is a scalar. The conjugating unit is therefore unique up to the centre.
+
+**The biquaternion instance.** At $n=2$ the four elements $\tilde\Pi_{+},\vec\Upsilon_{+-},\vec\Upsilon_{-+},\tilde\Pi_{-}$ are a system of $2\times2$ matrix units, and the theorem above is the one proved in *The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra*, §*Systems of Matrix Units*. There the two proofs differ in style only: the biquaternion article conjugates into $M_{2}(\mathbb{C})$ and uses that every automorphism of $M_{2}(\mathbb{C})$ is inner, which is the same Skolem–Noether step.
+
 ## Dimensions and the Projective Count
 
 **The three spaces.** Three sets are attached to the construction:
@@ -133,7 +157,7 @@ The basis exists only when the components are lines. A coarse family, with a com
 
 ## Summary
 
-A Peirce basis is a choice of one nonzero element in each Peirce line, with $E_{kl}E_{pq}=\delta_{lp}E_{kq}$ and $E_{kk}=P_{k}$. It exists for every complete family of $n$ idempotents of $M_{n}(\mathbb{C})$, and it is unique up to the gauge $E_{kl}\mapsto t_{k}t_{l}^{-1}E_{kl}$, a torus of dimension $n-1$. In the basis the coordinates multiply by the matrix product, and the coordinates change by $X_{kl}\mapsto t_{k}^{-1}t_{l}X_{kl}$. The family space has dimension $n^{2}-n$, the gauge $n-1$, and the frame space $n^{2}-1$, which is the orbit–stabiliser count of $PGL_{n}$; for $n=3$ it is $8=6+2$.
+A Peirce basis is a choice of one nonzero element in each Peirce line, with $E_{kl}E_{pq}=\delta_{lp}E_{kq}$ and $E_{kk}=P_{k}$. It exists for every complete family of $n$ idempotents of $M_{n}(\mathbb{C})$, and it is unique up to the gauge $E_{kl}\mapsto t_{k}t_{l}^{-1}E_{kl}$, a torus of dimension $n-1$. A basis is the same data as a system of matrix units, and two systems are conjugate by a unit unique up to the centre. In the basis the coordinates multiply by the matrix product, and the coordinates change by $X_{kl}\mapsto t_{k}^{-1}t_{l}X_{kl}$. The family space has dimension $n^{2}-n$, the gauge $n-1$, and the frame space $n^{2}-1$, which is the orbit–stabiliser count of $PGL_{n}$; for $n=3$ it is $8=6+2$.
 
 ## Summary of Notation
 
@@ -152,6 +176,8 @@ A Peirce basis is a choice of one nonzero element in each Peirce line, with $E_{
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for Peirce decompositions and the units of a fine decomposition.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for matrix units and the matrix product of coordinates.
 - [The Peirce Decomposition in $n$ Dimensions](the-peirce-decomposition-in-n-dimensions.html), for the lines and their multiplication.
+- [The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra](the-peirce-basis-of-the-biquaternion-algebra.html), for the case $n=2$ of §*Systems of Matrix Units*.
+- [The Companion Nilpotents of the Biquaternion Algebra](the-companion-nilpotents-of-the-biquaternion-algebra.html), for the normalised pair $\vec\Upsilon_{+-},\vec\Upsilon_{-+}$.
 - [Spinors as Peirce Coordinates in $n$ Dimensions](spinors-as-peirce-coordinates-in-n-dimensions.html), for the rows of the coordinate array.
 - [The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-mnc.html), for the frame and the nilpotents.
 - [The Adjoint Action, the Orbits and the Flag Variety of $M_3(\mathbb{C})$](the-adjoint-action-the-orbits-and-the-flag-variety-of-m3c.html), for the orbit–stabiliser count at $n=3$.

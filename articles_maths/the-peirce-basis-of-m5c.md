@@ -74,7 +74,7 @@ $$
 
 In the Hermitian case the gauge is restricted to $|t_k|=1$, of real dimension $4$.
 
-**The second root is not extra data.** In the biquaternion case $n=2$ a second root is sometimes used to name the mixed units. It is one way to fix the gauge, not a parameter beyond the basis: a different second root changes $E_{kl}$ by the allowed rescaling.
+**The biquaternion case adds no parameter beyond the gauge.** At $n=2$ the biquaternion article names the mixed units by choosing one nonzero element of a mixed line, the partner being fixed by the normalisation; the freedom is the reciprocal rescaling. An involution anticommuting with the root names the same normalised pair in one symbol, so it is a way to write the gauge point, not a datum beyond the basis.
 
 ## The Count
 

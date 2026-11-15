@@ -413,7 +413,7 @@ Three cases exhaust the word. If $A^{*}=A$ the two slots carry the same exponent
 
 **The sign of a full turn is visible only in the linear one.** A rotation through $2\pi$ gives $-\tilde Q_0$ on the spinor and $+\mathrm{id}$ on the four-vector, because the congruence by $-\tilde Q_0$ is the congruence by $\tilde Q_0$. The spinor therefore has a double cover and the vector does not, and the algebraic origin of the double cover is the half-angle in the exponent.
 
-**The two Peirce copies are not the two Lorentz chiralities.** The two-column decomposition of the matrix model gives two copies of the same Weyl representation; the two chiralities are the two tensor slots, left and right. Confusing the two is the commonest error of the reading, and the section separates them by naming the slots: the Peirce columns are the two ideals, and the slots are the two factors of the tensor product.
+**The two Peirce copies are not the two spinor chiralities.** The two-column decomposition of the matrix model gives two copies of the same Weyl representation, and a spinor chirality is a value of the chirality operator and not a column of that display. The two slots are the two sides of an action, and a side is not a value. Confusing the two is the commonest error of the reading, and the section separates them by naming the slots: the Peirce columns are the two ideals, and the slots are the two factors of the tensor product.
 
 ## The Logarithm and the Fibre
 

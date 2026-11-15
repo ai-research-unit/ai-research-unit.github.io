@@ -4,7 +4,7 @@
 
 **The root fixes the flag, and a frame fixes one vector in each line of the flag; the freedom in that choice is a torus with one parameter per simple nilpotent.** The root therefore gives the idempotents and the lines, and the gauge gives the vectors and the units. The two together are the frame.
 
-The article constructs the frame from a basis adapted to the spectral flag, states the matrix-unit rule, isolates the three simple nilpotents $E_{12},E_{23},E_{34}$, computes the gauge action and its cocycle, and counts the parameters: $12$ complex from the root and $3$ complex from the gauge, $15$ in all. The idempotents are gauge invariant. The gauge is not a second root: at $n=2$ the old "second root" is exactly a point of the gauge, and for $n=4$ there is no second root at all, only the three parameters.
+The article constructs the frame from a basis adapted to the spectral flag, states the matrix-unit rule, isolates the three simple nilpotents $E_{12},E_{23},E_{34}$, computes the gauge action and its cocycle, and counts the parameters: $12$ complex from the root and $3$ complex from the gauge, $15$ in all. The idempotents are gauge invariant. The gauge is not a second primitive: at $n=2$ an involution anticommuting with $H$ is exactly a point of the gauge, and for $n=4$ there is no single such element, only the three parameters.
 
 The idempotents are from *Roots of Unity and the Lagrange Idempotents of $M_4(\mathbb{C})$*; the corners are *The Peirce Decomposition of $M_4(\mathbb{C})$*; the principal $\mathfrak{sl}_2$ uses the nilpotents as ladder steps; the count of the root set is *The Adjoint Action, the Orbits and the Flag Variety of $M_4(\mathbb{C})$*. The general construction is *The Frame, the Simple Nilpotents and the Gauge of $M_4(\mathbb{C})$* for $M_n(\mathbb{C})$.
 
@@ -303,9 +303,9 @@ $$
 
 all complex. In real dimensions the frame modulo scale has $6$, the root has $4$ and the gauge has $2$: the four real parameters of the biquaternion root and the two real parameters of the complex number $\lambda$. This is the six-dimensional basis of the biquaternion frame.
 
-## The "Second Root" Is a Gauge Choice
+## An Anticommuting Involution Is a Gauge Point
 
-**At $n=2$ the element that the older biquaternion frame called a second root is exactly a point of the gauge.** In the frame $(v_1,v_2)$ with $H=\operatorname{diag}(1,-1)$, let $R$ satisfy
+**At $n=2$ an involution of the frame that anticommutes with $H$ is exactly a point of the gauge.** In the frame $(v_1,v_2)$ with $H=\operatorname{diag}(1,-1)$, let $R$ satisfy
 
 $$
 R^2=I,\qquad RH=-HR.
@@ -325,13 +325,13 @@ $$
 
 which is the same family with $a$ replaced by $a\lambda$. The gauge orbit of $R$ is the whole family, and the parameter $a$ is gauge, not root.
 
-**What the second root did and did not do.** It supplied a vector in each mixed Peirce line: $R$ has nonzero entries exactly in $\mathcal{A}_{12}$ and $\mathcal{A}_{21}$, and it normalised them relative to each other. It did not supply the idempotents: those are $P_\pm=(I\pm H)/2$, produced by $H$ alone. The presentation of the frame as a root together with a second root therefore overstated the role of $R$. The correct primitive data is the root; the correct additional data is the gauge point, and at $n=2$ the gauge point is a complex number.
+**What $R$ carries and what it does not.** It names one nonzero element in each mixed Peirce line, $R$ having nonzero entries exactly in $\mathcal{A}_{12}$ and $\mathcal{A}_{21}$, and it normalises the two reciprocally, so it is a shorthand for a normalised pair. It supplies no idempotent: those are $P_\pm=(I\pm H)/2$, produced by $H$ alone. The biquaternion articles state the same data as the choice of one nonzero element of a mixed line, with the partner fixed by the normalisation; the primitive is the root, and the choice is the basis.
 
-**For $n=4$ there is no single second root.** Elements anticommuting with $H$ do exist: they occupy the two mixed blocks $\mathcal{A}_{13},\mathcal{A}_{31},\mathcal{A}_{24},\mathcal{A}_{42}$, and a general such element is a sum of two independent off-diagonal pairs. Under the gauge it sees only the two combinations $\lambda_1\lambda_2$ and $\lambda_2\lambda_3$, so its orbit has dimension two and it does not carry the third parameter. No single element therefore plays the role that $R$ plays at $n=2$; the gauge is a torus, and there is no second primitive.
+**For $n=4$ there is no single such element.** Elements anticommuting with $H$ do exist: they occupy the two mixed blocks $\mathcal{A}_{13},\mathcal{A}_{31},\mathcal{A}_{24},\mathcal{A}_{42}$, and a general such element is a sum of two independent off-diagonal pairs. Under the gauge it sees only the two combinations $\lambda_1\lambda_2$ and $\lambda_2\lambda_3$, so its orbit has dimension two and it does not carry the third parameter. No single element therefore plays the role that $R$ plays at $n=2$; the gauge is a torus, and there is no second primitive.
 
 ## Summary
 
-An adapted frame $(v_1,v_2,v_3,v_4)$ gives the matrix units $E_{kl}=v_k\ell_l$, with $E_{kl}E_{mn}=\delta_{lm}E_{kn}$, $E_{kk}=P_k$ and $H=\sum_k\omega_kE_{kk}$. The simple nilpotents $N_1=E_{12}$, $N_2=E_{23}$, $N_3=E_{34}$ square to zero, generate the algebra together with the subdiagonal units (their conjugate transposes in an orthonormal frame), and every composite is their consecutive product. The gauge $v_k\mapsto t_kv_k$ acts by $E_{kl}\mapsto(t_k/t_l)E_{kl}$, an effective torus $(\mathbb{C}^{\times})^3$ with one parameter $\lambda_k=t_k/t_{k+1}$ per simple nilpotent, subject to the cocycle that fixes the composites and to the relation $\lambda_1\lambda_2\lambda_3\lambda_4=1$. The frame modulo scale has $15$ complex dimensions, split as $12$ for the root and $3$ for the gauge; at $n=2$ this is $3=2+1$ complex, the $6=4+2$ real count of the biquaternion frame. The older "second root" of the biquaternion frame is a point of this gauge, not a second primitive.
+An adapted frame $(v_1,v_2,v_3,v_4)$ gives the matrix units $E_{kl}=v_k\ell_l$, with $E_{kl}E_{mn}=\delta_{lm}E_{kn}$, $E_{kk}=P_k$ and $H=\sum_k\omega_kE_{kk}$. The simple nilpotents $N_1=E_{12}$, $N_2=E_{23}$, $N_3=E_{34}$ square to zero, generate the algebra together with the subdiagonal units (their conjugate transposes in an orthonormal frame), and every composite is their consecutive product. The gauge $v_k\mapsto t_kv_k$ acts by $E_{kl}\mapsto(t_k/t_l)E_{kl}$, an effective torus $(\mathbb{C}^{\times})^3$ with one parameter $\lambda_k=t_k/t_{k+1}$ per simple nilpotent, subject to the cocycle that fixes the composites and to the relation $\lambda_1\lambda_2\lambda_3\lambda_4=1$. The frame modulo scale has $15$ complex dimensions, split as $12$ for the root and $3$ for the gauge; at $n=2$ this is $3=2+1$ complex, the $6=4+2$ real count of the biquaternion frame. An involution of the frame anticommuting with $H$ is a point of this gauge, not a second primitive.
 
 $$
 \boxed{\ 15=12+3,\qquad N_k\longmapsto\lambda_kN_k,\qquad E_{kl}\longmapsto\lambda_k\cdots\lambda_{l-1}E_{kl},\qquad \lambda_1\lambda_2\lambda_3\lambda_4=1.\ }

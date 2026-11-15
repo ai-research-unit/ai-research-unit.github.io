@@ -7710,21 +7710,83 @@ Rows: I.1 the ambient algebra, II.1 the two regular families, IV.1 the two-sided
 
 ## The Matrix Algebras $M_n(\mathbb{C})$
 
-<!-- the five articles of the first subsection state the Peirce construction once, for arbitrary $n$: one root of unity with simple spectrum produces all the idempotents; the idempotents produce the Peirce decomposition; the Peirce corners give the recursion $M_n\supset M_p\oplus M_{n-p}$; the simple nilpotents carry the gauge $(\mathbb{C}^{\times})^{n-1}$; the chain of nilpotents is the ladder of an $\mathfrak{sl}_2$ and the carrier is the spin-$(n-1)/2$ module. The five articles of the second subsection state the operator construction once: the two one-sided copies, the cone of two-sided products, the coefficient array with the length, and the adjoints with the two-sided operator and the difference family. These articles own the general statements; the four categories that follow instantiate them and do not repeat the proofs. -->
+<!-- the general-$n$ theory: the algebra and its two base fields, the involutions and the halves they cut, the triangular decomposition and its contrast with the symmetric one, the two products the split forces, the forms, the Peirce construction at arbitrary $n$, the spectrum, the exponential with the rotor, the operators and the topological and geometric readings. The entries marked NEW are planned and not yet written; each becomes an anchor line with its own comment when the article exists. -->
 
-### The Construction
+### Algebra
+
+#### The Algebra
 
 <a href="articles_maths/the-matrix-algebra-mnc.html">The Matrix Algebra $M_n(\mathbb{C})$</a>
 <!-- the algebra $M_n(\mathbb{C})$, the matrix units and the product rule, the trace, the determinant and the rank; the centre and the simplicity; the real dimension $2n^{2}$; the involution and the positive definite trace form, with no null cone; the unit group and the projective group; the singular set $\{\det=0\}$ of real codimension two; the case $n=2$ as the biquaternion algebra, where the N-norm is a second and indefinite form. -->
 
-<a href="articles_maths/roots-of-unity-and-the-lagrange-idempotents-of-mnc.html">Roots of Unity and the Lagrange Idempotents of $M_n(\mathbb{C})$</a>
+**NEW** — The Two Base Fields: $M_n(\mathbb{R})$ inside $M_n(\mathbb{C})$
+
+**NEW** — The Element: Rank, Trace, Determinant, Characteristic Polynomial
+
+**NEW** — The Elementary Symmetric Functions and $\det(\mathrm{I}+tA)$
+
+**NEW** — The Minimal Polynomial and the Jordan Form
+
+**NEW** — The Ideals, the Centre and the Simplicity of $M_n(\mathbb{C})$
+
+#### Involutions, Flags, and the Decompositions
+
+**NEW** — The Involutions over $\mathbb{R}$ and over $\mathbb{C}$
+
+**NEW** — The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric
+
+**NEW** — The Two Halves over $\mathbb{C}$: Hermitian and Skew-Hermitian
+
+**NEW** — The Fine Decomposition against the Diagonal
+
+**NEW** — The Two Halves as Orthogonal Complements
+
+**NEW** — The Triangular Decomposition $h\oplus n_+\oplus n_-$
+
+**NEW** — $UT_n$ as the Complement of the Antisymmetric Part (Transpose Case)
+
+**NEW** — Symmetric Pairs and Cartan Pairs: the Reductivity Criterion
+
+#### The Product on the Two Halves
+
+**NEW** — The Symmetric and Antisymmetric Parts of a Product
+
+**NEW** — The Four Multiplication Tables: $SS$, $SK$, $KS$, $KK$
+
+**NEW** — The Jordan Algebra $\operatorname{Sym}_n$
+
+**NEW** — The Lie Algebra $\operatorname{Skew}_n\cong\mathfrak{so}(n)$
+
+**NEW** — The Derivation $X\mapsto[A,X]$ and Its Skewness for the Trace Form
+
+**NEW** — The Antisymmetric Part inside $UT_n$: the Radical as the Commutator
+
+**NEW** — $UT_n$ as a Linear Model of $\operatorname{Sym}_n$: Same Space, Wrong Product
+
+#### The Forms
+
+**NEW** — The Trace Form and Its Signature on the Two Halves
+
+**NEW** — The Killing Form, Its Radical and the Triangular Case
+
+**NEW** — The Hilbert–Schmidt Form
+
+**NEW** — The Four Forms and Their Algebraic Norms
+
+#### The Idempotents and the Peirce Decomposition
+
+<a href="articles_maths/roots-of-unity-and-the-lagrange-idempotents-of-mnc.html">Lagrange Idempotents of a Matrix with Simple Spectrum</a>
 <!-- one root $H$ with $H^{n}=I$ and simple spectrum; the Lagrange projectors $P_k=\prod_{l\ne k}(H-\zeta_l)/(\zeta_k-\zeta_l)$, idempotent, orthogonal and complete, and polynomial in $H$; $H=\sum_k\zeta_kP_k$; the $\mathbb{Z}/n$ grading $M^{(r)}$ with $M^{(r)}M^{(s)}\subseteq M^{(r+s)}$; the root set $PGL_n/T$ of complex dimension $n(n-1)$; the root of $+1$ as the case $n=2$; the cyclic shift as the explicit example, with Fourier projectors; no root pair. -->
 
 <a href="articles_maths/the-peirce-decomposition-in-n-dimensions.html">The Peirce Decomposition in $n$ Dimensions</a>
 <!-- the complete family of $n$ idempotents of $M_n(\mathbb{C})$ and the rank-one lemma; the lines $A_{kl}=P_kM_nP_l$, one-dimensional and summing directly; the rule $A_{kl}A_{pq}\subseteq\delta_{lp}A_{kq}$ and the square-zero mixed lines; the Peirce table and the canonical diagonal; the family from a root $H^n=I$ with simple spectrum, the Lagrange projectors and $A_{kl}=\mathbb{C}v_k\ell_l$; the spectral lines of $H$ set against the Peirce lines of the algebra; the family without a root. -->
 
-<a href="articles_maths/the-peirce-basis-in-n-dimensions.html">The Peirce Basis in $n$ Dimensions</a>
+<a href="articles_maths/the-peirce-basis-in-n-dimensions.html">The Peirce Basis and the Corners</a>
 <!-- one nonzero element per line with $E_{kl}E_{pq}=\delta_{lp}E_{kq}$ and $E_{kk}=P_k$; existence from a pair of dual bases, $E_{kl}=v_k\ell_l$; the coordinates and the matrix product; uniqueness up to the gauge $E_{kl}\mapsto t_kt_l^{-1}E_{kl}$; the gauge $(\mathbb{C}^{\times})^{n-1}$ and the Hermitian $(S^1)^{n-1}$; the dimensions $n^2-n$, $n-1$, $n^2-1$ and the orbit-stabiliser count $8=6+2$ at $n=3$; at $n=2$ the count $6=4+2$ in real dimensions, the second root being a point of the gauge. -->
+
+**NEW** — The Peirce Decomposition of $\operatorname{Sym}_n$ as a Jordan Algebra
+
+**NEW** — The Peirce Decomposition and the Two Halves
 
 <a href="articles_maths/spinors-as-peirce-coordinates-in-n-dimensions.html">Spinors as Peirce Coordinates in $n$ Dimensions</a>
 <!-- the coordinates $X_{kl}$ and the row $\psi=(X_{k1},\dots,X_{kn})$; the gauge $\psi_l\mapsto t_l\psi_l$ up to the overall factor, of effective dimension $n-1$; the projective reading, the orbit fixed by the zero pattern and the invariant cycles; the Hermitian norm; chirality as an extra sign function, balanced only for even $n$; the half-angle as a lift of a path of families, not a Peirce object. -->
@@ -7735,27 +7797,88 @@ Rows: I.1 the ambient algebra, II.1 the two regular families, IV.1 the two-sided
 <a href="articles_maths/the-frame-the-simple-nilpotents-and-the-gauge-of-mnc.html">The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$</a>
 <!-- the adapted frame $v_k\in V_k$ and the units $E_{kl}=v_k\ell_l$; the rule $E_{kl}E_{mn}=\delta_{lm}E_{kn}$; the simple nilpotents $N_k=E_{k,k+1}$, $n-1$ of them, and the composites as their products; the gauge $E_{kl}\mapsto(t_k/t_l)E_{kl}$ and the effective torus $(\mathbb{C}^{\times})^{n-1}$, one parameter per simple nilpotent; the cocycle that forbids an extra scale on a composite; the count $n^{2}-1=n(n-1)+(n-1)$; at $n=2$ the six real dimensions $4+2$; the older "second root" identified with a point of the gauge, not a second primitive. -->
 
-### The Operators
+#### The Spectrum
 
-<a href="articles_maths/the-regular-representation-in-dimension-n.html">The Regular Representation in Dimension $n$</a>
+**NEW** — The Spectrum of a Matrix
+
+**NEW** — Normal Matrices and the Common Spectral Theorem
+
+**NEW** — The Spectral Theorem: the Hermitian Case
+
+**NEW** — The Spectral Theorem: the Skew-Hermitian Case and the Reality of the Spectrum
+
+#### The Exponential, the Rotor and the Polar Decomposition
+
+**NEW** — The Exponential of a Matrix and Its Image
+
+**NEW** — The Exponential of the Antisymmetric Part: One-Parameter Rotations
+
+**NEW** — The Rotor as a Square Root of a Rotation: the Two Signs and the Double Cover
+
+**NEW** — Rotors Acting on the Bivector Space: the Adjoint Action
+
+**NEW** — Simple and Non-Simple Rotations: One Angle at $n\le3$, Two Angles at $n\ge4$
+
+**NEW** — Where the Rotor Leaves $M_n$: the Even Subalgebra and $Cl(n)$
+
+**NEW** — The Exponential of the Symmetric Part: Stretches and the Positive Cone
+
+**NEW** — The Polar Decomposition from the Two Halves
+
+**NEW** — The Cartan Decomposition of $\mathrm{GL}_n(\mathbb{C})$
+
+#### The Operators on the Matrix Space
+
+<a href="articles_maths/the-regular-representation-in-dimension-n.html">$\operatorname{End}(M_n(\mathbb{C}))$ as an Algebra: the Regular Representation</a>
 <!-- an algebra of dimension $N$ acting on itself; the left multiplication $L_A(X)=AX$ as a faithful copy of the algebra and the right multiplication $R_B(X)=XB$ as a copy of the opposite algebra; the two copies commuting, each the centraliser of the other, with intersection the scalars; the product $T_{A,B}=L_AR_B$, bilinear in the pair and constant on the scaling orbits; the ladder of dimensions $1,N,2N-1,N^2$ and its values $1,n^{2},2n^{2}-1,n^{4}$ at $A=M_n$; the isomorphism $A\otimes A^{\mathrm{opp}}\to\operatorname{End}(A)$, exact for the central simple algebras and collapsing to the one-sided family for a commutative or split algebra; the cases $\mathbb{C}$, the dual numbers, $\mathbb{C}\times\mathbb{C}$, $\mathbb{H}$, $\mathbb{B}$ and $M_n(\mathbb{C})$. -->
 
-<a href="articles_maths/the-one-sided-operators-of-mnc.html">The One-Sided Operators of $M_n(\mathbb{C})$</a>
+<a href="articles_maths/the-one-sided-operators-of-mnc.html">The One-Sided Operators</a>
 <!-- the left matrix $\mathrm I_n\otimes A$ and the right matrix $B^{\mathsf T}\otimes\mathrm I_n$ in the column-stacking basis; the invariants $n\operatorname{rank}A$, $n\operatorname{tr}A$ and $(\det A)^{n}$; the spectrum repeated $n$ times and the fact that the regular matrix is never nonderogatory; the kernel and the image as a right annihilator and a left ideal; the two copies, their intersection, the double centraliser and the commutant $C(A)\otimes M_n$ of a single element, of dimension $n^{2}\dim C(A)$; the flip $\mathsf F$ that exchanges the copies; the compression at $n=2$ to one matrix per side. -->
 
-<a href="articles_maths/the-two-sided-operators-and-the-segre-cone-of-mnc.html">The Two-Sided Operators and the Segre Cone of $M_n(\mathbb{C})$</a>
+<a href="articles_maths/the-two-sided-operators-and-the-segre-cone-of-mnc.html">The Two-Sided Operators and the Segre Cone</a>
 <!-- the operator $X\mapsto AXB$ with matrix $B^{\mathsf T}\otimes A$; the scaling orbit $(\lambda A,\lambda^{-1}B)$ as the generic fibre and the zero set as the union of the two one-sided subspaces; the image as a closed cone of complex dimension $2n^{2}-1$, the set of pure tensors of $M_n\otimes M_n^{\mathrm{opp}}$ and the cone over the Segre variety $\mathbb{P}^{n^{2}-1}\times\mathbb{P}^{n^{2}-1}$, smooth except at the vertex; the rank $\operatorname{rank}A\operatorname{rank}B$, with the attained values $rs$ and the gaps; the trace $\operatorname{tr}A\operatorname{tr}B$ and the determinant $(\det A\det B)^{n}$; the composition $T_{A,B}T_{C,D}=T_{AC,DB}$, the monoid with zero and the group of units $(\mathrm{GL}_n\times\mathrm{GL}_n)/\mathbb{C}^{\times}$; the two rulings, the two-sided operator and the diagonal subcones; the case $n=2$ with the values $0,1,2,4$ and the missing rank three. -->
 
-<a href="articles_maths/the-length-and-the-two-ranks-on-mnc.html">The Length and the Two Ranks on $M_n(\mathbb{C})$</a>
+<a href="articles_maths/the-length-and-the-two-ranks-on-mnc.html">The Length and the Two Ranks</a>
 <!-- the $n^{4}$ basis products $T_{\mu\nu}=L_{E_\mu}R_{E_\nu}$ orthonormal for the Hilbert–Schmidt form; the coefficient array $c(M)$ and the identity $c(T_{A,B})=[A][B]^{\mathsf T}$; the length as the least number of products and the theorem $\ell(M)=\operatorname{rank}c(M)$; the values $0,\dots,n^{2}$ and the strata $\mathcal{C}_r$ of dimension $2rn^{2}-r^{2}$; the criterion of a single product as the vanishing of the $2\times2$ minors; the independence of the ordinary rank and the length, with a matrix of rank one and length $n^{2}$ against a product of full rank and length one; the failure of the theorem for a commutative or split algebra, where the array is not unique and the length collapses to $\{0,1\}$; the reading as the tensor rank in $M_n\otimes M_n^{\mathrm{opp}}$. -->
 
-<a href="articles_maths/the-two-sided-operator-the-difference-family-and-the-adjoints-of-mnc.html">The Two-Sided Operator, the Difference Family and the Adjoints of $M_n(\mathbb{C})$</a>
+<a href="articles_maths/the-two-sided-operator-the-difference-family-and-the-adjoints-of-mnc.html">The Adjoints and the Polar Decomposition of an Operator</a>
 <!-- the transpose $T_{A^{\mathsf T},B^{\mathsf T}}$ and its coincidence with the adjoint for the trace bilinear form; the Hilbert–Schmidt adjoint $T_{A^{*},B^{*}}$; the two adjoints conjugating the parameters and exchanging no slot, against the slot exchange of the quaternionic plain form at $n=2$; the self-adjoint and skew-adjoint classes and the isometry groups $\mathrm{O}(n,\mathbb{C})^{2}$ and $\mathrm{U}(n)^{2}$ modulo the scalars, of complex dimension $n^{2}-n$ and real dimension $2n^{2}-1$; the two-sided operator $\Theta_A=T_{A,A^{*}}$ as a monoid $\Theta_A\Theta_B=\Theta_{AB}$, self-adjoint only on its Hermitian part and positive semidefinite only there, of rank $r^{2}$, trace $|\operatorname{tr}A|^{2}$, determinant $|\det A|^{2n}$ and kernel $n^{2}-r^{2}$, with the eigenstructure $\lambda_i\bar\lambda_j$; the Sylvester operator $L_A-R_B$, its intertwiner kernel, its invertibility for disjoint spectra and its span of dimension $2n^{2}-1$; the polarisation $2T_{A,B}=(L_A+R_B)^{2}-L_{A^{2}}-R_{B^{2}}$. -->
+
+**NEW** — The Symmetric and Antisymmetric Parts of the Operator Space
+
+### Topology
+
+**NEW** — The Topology of $M_n(\mathbb{C})$
+
+**NEW** — The Two Halves and Their Topology
+
+**NEW** — The Space of Idempotents and the Flag Varieties
+
+**NEW** — The Homotopy of $\mathrm{GL}_n(\mathbb{C})$ and of the Two Halves
+
+### Analysis
+
+**NEW** — The Analysis on $M_n(\mathbb{C})$
+
+**NEW** — The Exponential and the Lie Group Structure
+
+**NEW** — The Positive Cone and Its Boundary
+
+**NEW** — The Two Halves and the Analysis: Smooth Structures and the Exponential
+
+### Geometry
+
+**NEW** — The Geometry of the Two Halves, and the Return of the Two-Sided Operators
+
+**NEW** — The Symmetric Space $\mathrm{GL}_n/O(n)$ and Its Complex Twin
+
+**NEW** — The Cone of Positive Semidefinite Matrices
+
+**NEW** — Coda: $n=2$ and the Biquaternion Algebra
 
 ### The Four Categories
 
-<!-- the four categories that follow instantiate the construction at $n=3,4,5,6$. Each repeats the spine of eighteen articles with the data of its $n$, and adds five articles on the phenomenon specific to that $n$. The general statements and their proofs are in the ten articles above and are cited, not repeated. -->
-
+<!-- the four categories that follow instantiate the construction at $n=3,4,5,6$. Each repeats the spine with the data of its $n$, and adds the arithmetic of that dimension: the corner recursion, the singular set, the spectral strata. -->
 ## $M_3(\mathbb{C})$
 
 ### Algebra

@@ -403,7 +403,7 @@ idempotent, orthogonal, complete, and $E=P_+-P_-$. This is the frame of the biqu
 
 For $n=6$ the same reduction is available for the involution $\Gamma=H^3$: its two projectors are $\Pi_\pm=(I\pm\Gamma)/2$, of ranks three. They are the coarse idempotents of §*The Chirality Involution*, not primitive idempotents, and the primitive ones remain the six $P_k$. The order-two case is thus a **quotient** of the order-six case, obtained by grouping the six lines into the even and the odd three.
 
-**Remark (why one root suffices).** In the biquaternion articles a frame is built from a root of $+1$ together with a second root anticommuting with it, because $M_2$ has only two eigenvalues and the two mixed units need a relative scale. In $M_6$ the root has six eigenvalues; the six lines are already distinct and the mixed units between them are indexed by pairs. The relative scales are the gauge, not a second root. **The root is the only primitive object; the gauge is a choice of frame inside it.**
+**Remark (why one root suffices).** The biquaternion articles build their frame from a root of $+1$ and one nonzero element of a mixed Peirce line, the partner being fixed by the normalisation and the freedom being one reciprocal rescaling. In $M_6$ the root has six eigenvalues; the six lines are already distinct and the mixed units between them are indexed by pairs, so the relative scales form the $(6-1)$-parameter gauge. **The root is the only primitive object; the gauge is a choice of frame inside it.**
 
 ## Summary
 

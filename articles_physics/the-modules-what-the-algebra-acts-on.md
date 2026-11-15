@@ -301,6 +301,8 @@ $$
 
 of rank one, with the nilpotent direction as its radical. So the form cannot separate the two basis spinors and cannot produce a norm on the carrier.
 
+The two forms therefore close the carrier in two different ways. The module complement is $\mathbb{B}(e_t-\tilde\Pi)$ and the Hilbert complement is $\mathbb{B}(e_t-\tilde\Pi^{*})$, and they coincide exactly when the vacuum idempotent is Hermitian.
+
 **The Hermitian form does the job, and it is a second structure.** With $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\operatorname{Sc}(\tilde Q_1\tilde Q_2^{*})$ the Gram matrix on the adapted basis is $\tfrac12 I_2$: the two basis spinors are orthogonal and of equal norm, and the carrier is a two-dimensional Hilbert space with the standard metric.
 
 **The physical reading is that composition and probability are two data and not one.** The module structure gives what the algebra does — the action, the closure, the representation. The Hermitian structure gives what can be compared and counted — orthogonality, norm, probability. An indefinite form can do the first and cannot do the second; positivity is not a property of the plain product at all.

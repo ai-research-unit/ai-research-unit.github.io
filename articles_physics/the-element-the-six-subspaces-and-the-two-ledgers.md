@@ -291,6 +291,8 @@ The two definite slices are the two coefficient halves; the two indefinite slice
 
 **The switch is one real-linear operation on one real subspace.** It is not a symmetry of the algebra, because the class is not a subalgebra. It is a coordinate change between the two readings, and the reason it exists at all is that $J$ is central: the factor $i$ that the switch inserts commutes with every coefficient.
 
+**The full treatment is a companion entry.** [Mirror Biquaternions and the Phy–Psy Switch](mirror-biquaternions-and-the-phy-psy-switch.html) is kept whole in this section and owns the construction: the mirror of a sector element, the mirror biquaternion $(1+i)\tilde X_\Phi$, the fixed factors of the two invariants, the list of what the class is not, the Wick comparison and the instances. The reading above is the short form of it, and the two agree.
+
 **The boundary.** The class carries no dynamics. It is a set of elements on which two readings coincide up to a known factor, and the factor is fixed by the algebra. An interpretation that reads the switch as a physical process converting one sector into the other is adding a dynamics that the algebra does not supply.
 
 ### I.1.i — The Square Is the Clock and the Norm Is the Interval

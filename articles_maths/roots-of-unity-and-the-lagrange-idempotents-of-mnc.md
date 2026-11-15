@@ -77,7 +77,7 @@ $$
 Hence
 
 $$
-M^{(r)}=\bigoplus_{\mathrm{mod},k-l\equiv r\ (\ n)}P_kM_nP_l.
+M^{(r)}=\bigoplus_{k-l\equiv r\ (\mathrm{mod}\ n)}P_kM_nP_l.
 $$
 
 In particular $M^{(0)}$ is the centraliser of $H$, of dimension $n$: it consists of the matrices that preserve every eigenspace, and it is the algebra of polynomials in $H$. The grading is coarser than the Peirce decomposition; the latter has $n^{2}$ lines, the former $n$ pieces.
@@ -126,9 +126,9 @@ $$
 
 These are exactly the idempotents $\tilde\Pi_\pm=(e_t\pm\tilde{Ζ})/2$ of the biquaternion article, with $H=\tilde{Ζ}$ and $I=e_t$. The root of $+1$ is therefore not a separate principle: it is the order-two case of one root of order $n$.
 
-**The older "second root" is the gauge, not a second primitive.** The biquaternion frame was sometimes presented as a root of $+1$ together with a second root anticommuting with it. That presentation is correct as a description of a normalised frame but wrong as a description of the primitive data. The second element does not produce new idempotents: the two idempotents are already produced by the first root. What the second element supplies is a vector in each mixed Peirce line, that is, a normalisation of the nilpotents, and that data is the gauge parameter $\lambda$ of *The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$*. The construction is root-first: one root, then the gauge. There is no primitive root pair.
+**The biquaternion article reads the same construction in the same order.** It takes the root of $+1$, obtains the pair $\tilde\Pi_\pm=\tfrac12(e_t\pm\tilde{Ζ})$ by the halving map, and then chooses a nonzero element $u$ of a mixed Peirce line, the partner $v$ being determined by the normalisation $uv=\tilde\Pi_+$. The choice is the basis, its reciprocal rescaling is the gauge parameter $\lambda$ of *The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$*, and the idempotents do not depend on it. One root, then one gauge point: the primitive data is the root at every $n$, and the biquaternion case $n=2$ needs nothing that the case $n\ge3$ does not.
 
-**What changes for $n>2$.** For $n\ge3$ there is no second root at all. One root of order $n$ produces $n$ idempotents and $n$ Peirce lines directly. The analogue of the missing normalisation is the $(n-1)$-parameter gauge, not a pair of roots.
+**What changes for $n>2$.** The gauge grows from one parameter to $n-1$, one per simple nilpotent, and the mixed elements are indexed by pairs. The root still produces all $n$ idempotents, and it produces the $n$ eigenlines at once.
 
 ## An Explicit Example: the Cyclic Shift
 
@@ -164,7 +164,7 @@ For $n=2$ this is $C=\begin{pmatrix}0&1\\1&0\end{pmatrix}$, $P_\pm=\tfrac12(I\pm
 
 ## Summary
 
-A root $H$ of order $n$ with simple spectrum is diagonalisable with the $n$ roots of unity as eigenvalues, and the Lagrange polynomials in $H$ produce $n$ primitive orthogonal idempotents $P_k$, complete and summing to $I$, with $H=\sum_k\omega_kP_k$. The root grades the algebra by $\mathbb{Z}/n$, with $M^{(r)}=\bigoplus_{k-l\equiv r}P_kM_nP_l$ and $M^{(r)}M^{(s)}\subseteq M^{(r+s)}$. The root set is $PGL_n(\mathbb{C})/T$ of complex dimension $n(n-1)$; the remaining $n-1$ complex dimensions of a frame are the gauge. At $n=2$ the root is the biquaternion root of $+1$, and the older "second root" is the gauge, not a second primitive.
+A root $H$ of order $n$ with simple spectrum is diagonalisable with the $n$ roots of unity as eigenvalues, and the Lagrange polynomials in $H$ produce $n$ primitive orthogonal idempotents $P_k$, complete and summing to $I$, with $H=\sum_k\omega_kP_k$. The root grades the algebra by $\mathbb{Z}/n$, with $M^{(r)}=\bigoplus_{k-l\equiv r}P_kM_nP_l$ and $M^{(r)}M^{(s)}\subseteq M^{(r+s)}$. The root set is $PGL_n(\mathbb{C})/T$ of complex dimension $n(n-1)$; the remaining $n-1$ complex dimensions of a frame are the gauge. At $n=2$ the root is the biquaternion root of $+1$, and the one-parameter gauge is the normalisation of the two companion nilpotents.
 
 ## Summary of Notation
 

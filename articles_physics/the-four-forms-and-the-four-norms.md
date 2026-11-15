@@ -104,7 +104,7 @@ H(\tilde Q_1,\tilde Q_2)=P(\tilde Q_1,\tilde Q_2^{*}),\qquad
 \mathrm{Kr}(\tilde Q_1,\tilde Q_2)=P(\tilde Q_1^{\natural},\tilde Q_2^{*}).
 $$
 
-**So the four measures are one pairing read against the mirror of an element.** The two real ones are exactly those in which the *second* slot is an adjoint, and the reality of the value is the reality of that adjoint.
+**So the four measures are one pairing with a conjugation inserted in one or both slots.** The two real ones are exactly those in which the *second* slot is an adjoint, and the reality of the value is the reality of that adjoint.
 
 ### The Four Norms
 
@@ -372,7 +372,7 @@ $$
 
 **The physical reading is that a signed content fixes a constraint and not a state.** A gauge calibration distinguishes two kinds of direction and leaves the normalisation to a choice; it does not prepare a state, and its form is the form of that freedom. The signature is the difference: a definite form counts states, an indefinite one counts a constraint.
 
-**The fundamental symmetry makes the reading consistent.** The quaternion conjugation is an isometry of $\mathrm{Kr}$ with $\mathrm{Kr}(\tilde Q^{\natural},\tilde Q^{\natural})=\mathrm{Kr}(\tilde Q,\tilde Q)$, and its eigenspaces are the centre and the vector subspace, of complex dimensions one and three, on which the sign is opposite. So $\mathrm{Kr}(\tilde Q_1,\tilde Q_2)=H(\tilde Q_1^{\natural},\tilde Q_2)$: the signed measure is the weight with the mirror inserted in the first slot, and this is the exact sense in which an indefinite geometry is a definite one with a chosen mirror.
+**The fundamental symmetry makes the reading consistent.** The quaternion conjugation is an isometry of $\mathrm{Kr}$ with $\mathrm{Kr}(\tilde Q^{\natural},\tilde Q^{\natural})=\mathrm{Kr}(\tilde Q,\tilde Q)$, and its eigenspaces are the centre and the vector subspace, of complex dimensions one and three, on which the sign is opposite. So $\mathrm{Kr}(\tilde Q_1,\tilde Q_2)=H(\tilde Q_1^{\natural},\tilde Q_2)$: the signed measure is the weight with the quaternion conjugate inserted in the first slot, and this is the exact sense in which an indefinite geometry is a definite one with a chosen conjugation. The map is ${}^{\natural}$ and not the mirror of §*I.1*, which is multiplication by the central $i$ and has order four.
 
 **The boundary.** The form is a form. It derives no gauge group, no coupling and no field content; the indefinite structure at large belongs to the geometry block, and the cone $\mathcal K$ is not the zero-divisor cone.
 
@@ -458,17 +458,17 @@ The statement is a restriction statement: it is the group of the interval on the
 
 **Read:** the quaternion conjugation is the matrix $\mathrm E$ in the coordinate basis, and it preserves each of the four forms.
 
-**No measure distinguishes an element from its mirror.** Since $\mathrm E$ is an isometry of all four, every one of the four norms takes the same value on $\tilde Q$ and on $\tilde Q^{\natural}$:
+**No measure distinguishes an element from its quaternion conjugate.** Since $\mathrm E$ is an isometry of all four, every one of the four norms takes the same value on $\tilde Q$ and on $\tilde Q^{\natural}$:
 
 $$
 P(\tilde Q^{\natural})=P(\tilde Q),\qquad N(\tilde Q^{\natural})=N(\tilde Q),\qquad H(\tilde Q^{\natural})=H(\tilde Q),\qquad \mathrm{Kr}(\tilde Q^{\natural})=\mathrm{Kr}(\tilde Q).
 $$
 
-**The physical reading is that the discrete operation is invisible to every measure and visible in the pairing.** A norm is unchanged by the mirror; the *sign* of the vector part is what the mirror reverses, and a norm squares it away. So a discrete symmetry of this kind cannot be detected by a mass or a weight, and it shows up only in a quantity that is odd in the vector part — a bracket, or the orientation of the frame.
+**The physical reading is that the discrete operation is invisible to every measure and visible in the pairing.** A norm is unchanged by ${}^{\natural}$; the *sign* of the vector part is what ${}^{\natural}$ reverses, and a norm squares it away. So a discrete symmetry of this kind cannot be detected by a mass or a weight, and it shows up only in a quantity that is odd in the vector part — a bracket, or the orientation of the frame.
 
-**The same operator is what makes the indefinite form usable.** $\mathrm E$ is the fundamental symmetry of $\mathrm{Kr}$, the operator that turns it into the definite form $H$; so the mirror is at once the symmetry of the four measures and the tool that converts the signed one into the positive one.
+**The same operator is what makes the indefinite form usable.** $\mathrm E$ is the fundamental symmetry of $\mathrm{Kr}$, the operator that turns it into the definite form $H$; so ${}^{\natural}$ is at once the symmetry of the four measures and the tool that converts the signed one into the positive one.
 
-**The boundary.** That a measure is blind to the mirror does not make the mirror a physical symmetry. It states that the four measures cannot witness it, and it locates the witness elsewhere.
+**The boundary.** That a measure is blind to ${}^{\natural}$ does not make ${}^{\natural}$ a physical symmetry. It states that the four measures cannot witness it, and it locates the witness elsewhere.
 
 ### I.7.k — Four Cones, and Only One Is the Wall
 

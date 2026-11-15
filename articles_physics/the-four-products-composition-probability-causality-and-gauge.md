@@ -420,6 +420,32 @@ $$
 
 **The boundary.** The twelve are the operations of the complex space. A real form carries ten of them, and every statement of the source articles is a statement about the complex space unless it says otherwise.
 
+### I.6.m — In the Gauge Band an Idempotent Is a Unit
+
+**Read:** the equation $\tilde\Pi\star\tilde\Pi=\tilde\Pi$ is relative to the product, so the word *idempotent* names a different set in each band; and in one of them the elements of that set are invertible.
+
+**The family is displaced, and the displacement is the reason.** For the quaternionic sesquilinear product the idempotents beyond the trivial pair are not the Hermitian ones at all. They are
+
+$$
+\tilde\Pi_d=-\tfrac12e_t+\tfrac{\sqrt3}{2}\vec u,\qquad(\vec u,\vec u)=1,
+$$
+
+which is $\tilde\Pi_d^{\natural}\tilde\Pi_d^{*}=\tilde\Pi_d$: its two conjugates coincide, $\tilde\Pi_d^{\natural}=\tilde\Pi_d^{*}=-\tfrac12e_t-\tfrac{\sqrt3}{2}\vec u$, and the square of that element is $\tilde\Pi_d$ itself. The family is written about the point $-\tfrac12e_t$ and not about $\tfrac12e_t$, and it lies in the real quaternion layer $\mathbb{B}_{H}$.
+
+**Its elements are units of the algebra.** The plain square is the conjugate, not the element itself,
+
+$$
+\tilde\Pi_d^{2}=-\tfrac12e_t-\tfrac{\sqrt3}{2}\vec u=\tilde\Pi_d^{\natural},
+\qquad
+\tilde\Pi_d\tilde\Pi_d^{\natural}=e_t,
+$$
+
+so $\tilde\Pi_d$ has inverse $\tilde\Pi_d^{\natural}$ and is not a zero divisor. The physical reading is the one this entry is built to give: an idempotent is an outcome only in the plain band, and the implication *idempotent, therefore irreversible* is a statement about that band and not about the algebra. In the gauge band the projection is reversible, and a reader who carries the vocabulary across the bands carries a falsehood with it.
+
+**The pair reading fails in the same band.** The complement $e_t-\tilde\Pi_d=\tfrac32e_t-\tfrac{\sqrt3}{2}\vec u$ is not an idempotent of that product, so there is no complete orthogonal pair and no resolution of the unit into two outcomes. Only the plain band and the general plain sesquilinear band carry a complementation that preserves their family, which is why the two-outcome reading is made in I.6.b and I.6.d and nowhere else.
+
+**The boundary.** The statement is a statement about solution sets, and it is why the twelve rows of the root table cannot be read by one vocabulary. It derives no gauge theory and says nothing about whether a physical projection may be reversible; it says that in this band the algebra does not force the question.
+
 ## The Limits
 
 **The naming is a reading and not a theorem.** The algebra proves the four settings, the property table, the two slots, the central square, the positive square and the twelve operations. It does not prove that a physical theory needs exactly four products, that the four jobs are these four, or that no other assignment is possible.
@@ -431,6 +457,8 @@ $$
 **The counts are basis-dependent.** $252$, $144$ and $72$ are counts on the eight-element basis, given as the shape of each failure; they are not invariants of the bracket, and they change with the basis.
 
 **No product is derived from its job, and no job from its product.** The products are the algebra's; the jobs are the readings. The entry derives no dynamics, no state space, no mass spectrum, no gauge group and no measurement postulate.
+
+**The grid is a grid of products on $\mathbb{B}$, and that is why entanglement is not a row.** Each of the twelve operations is a map $\mathbb{B}\times\mathbb{B}\to\mathbb{B}$: a pair of elements in, one element out. A correlation between two systems is not of that type. It is a property of one element of the tensor square $\mathbb{B}\otimes\mathbb{B}$, and the operation that extracts it, the partial trace, is a map $\mathbb{B}\otimes\mathbb{B}\to\mathbb{B}$ with one factor already traced against the trace pairing. So entanglement was never a candidate for a fifth row: a fifth row would need a fifth setting of the two dials, and there is none, while a shared state needs a second factor, and the grid has one factor by construction. The argument is the reason I.6.a can say there is no fifth product and mean it.
 
 **The collapse on the real part is a loss of information, not a simplification.** A real computation is not a cheaper route to the same answer about the twelve; it is a computation about ten operations, two of which stand for two each.
 
@@ -446,6 +474,8 @@ $$
 - The two central symmetrisations have no vector part, which is why the parent and its antisymmetric half share a vector part in those two families; the twelve vector parts fall into nine classes.
 - Exactly two of the twelve satisfy a classical identity, the Jordan product and the Lie bracket of the plain product, and they exist because the plain product is the only associative parent.
 - The Jacobi failures count $252$, $144$ and $72$ triples; the Jordan failures count $7$, $6$ and $4$ elements; the sparsest Jacobi failure needs a complex witness.
+- An idempotent belongs to a band: the gauge band's idempotents are $- \tfrac12e_t+\tfrac{\sqrt3}{2}\vec u$, they are units of the algebra, and their complement is not one of them, so the pair reading does not reach that band.
+- The grid is a grid of products on $\mathbb{B}$, so entanglement is not a fifth row: a shared state is an element of $\mathbb{B}\otimes\mathbb{B}$ and the partial trace is a map on the tensor square.
 - The four forms have signatures $(0,4)$ or $(4,0)$, $(3,1)$ or $(1,3)$, $(4,0)$, $(1,3)$ on the two sectors, which is the algebraic content of the four names.
 - Probability is the only definite form, and its product has no clock: the central element squares to $+e_t$, there is no nilpotent of index two, and the cone appears at the third power.
 - Causality is the only multiplicative norm, and the causal type composes while the causal operation does not associate.

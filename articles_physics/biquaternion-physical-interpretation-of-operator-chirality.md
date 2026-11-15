@@ -6,6 +6,8 @@
 
 **The answer in one line.** Chirality is a side. A pure left multiplier carries the left slot, a pure right multiplier the right slot, a scalar both slots at once, and the remaining operators no single side. Physics uses one basis operator, $-iR_u$ for a traceless $u$ with $u^2=-e_t$, and that basis operator is a pure right multiplier: it is an example of the right slot, never the definition of it. The Dirac operator is a pure left multiplier, left multiplication by the gradient, so the two sit on opposite sides and therefore commute, and the derivative carries the basis operator's value unchanged. What carries a field from one value to the other is not the mass of the pair but a right multiplication by an element that anticommutes with $u$.
 
+**Two words, and this article uses one.** *Operator* chirality is the side on which an operator multiplies, and it is this article's subject. *Spinor* chirality is the value an element takes under the chirality operator, that is, the left-handed and right-handed halves a physicist names by the bare word; it belongs to *The Spin-Half Carrier: The Bispinors*. A value needs a declared axis and a side does not, and no statement below is about a value.
+
 **What this article does.** It restates the mathematics in the form a physicist reads, and it states what the algebra does not supply. The proofs are in *Operator Chirality on the Biquaternion Algebra*, one click away, and nothing here is proved twice.
 
 **What it does not do.** It does not derive a gauge group, a matter content or a mass value. It does not claim that the two sides are two different kinds of field: they are not, and §*What the Algebra Does Not Supply* states that limit in full.

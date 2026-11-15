@@ -454,13 +454,13 @@ $$
 
 ### I.13.d — The Side Is Not a Grading
 
-**The object.** The operator space splits into the left family, the right family, their scalars and the rest. The temptation is to call the first two the two chiralities, with a sign for each, and to look for a multiplicative function that assigns the sign.
+**The object.** The operator space splits into the left family, the right family, their scalars and the rest. The temptation is to call the first two the two sides and to look for a multiplicative function that assigns each a sign.
 
 **The warrant.** No such function exists. At the unit the two families coincide, so a sign that separates them would take opposite values at the same operator, and a multiplicative function takes the value one at the identity. The rigorous statement is that the operator algebra is the full matrix algebra, which is simple, so its only multiplicative function is the trivial one.
 
-**The reading.** The word *chirality* is used in this corpus for the side of an action and never for a grading of the operator algebra. That is not a verbal convenience. If chirality were a grading, the two chiralities would be independent and a state could carry both; because it is a side, a state is chiral by the side its projector multiplies on, and the two chiralities are two ideals and not two signs. Physics can use the side, because an ideal is a space and a space can hold a state. Physics cannot use a sign on operators, because no such sign exists.
+**The reading.** The word *chirality* is used in this corpus for the side of an action and never for a grading of the operator algebra. That is not a verbal convenience. If chirality were a grading, the two values would be independent and a state could carry both; because it is a side, a state reaches its value through the side its projector multiplies on, and the two values are two ideals and not two signs. Physics can use the side, because an ideal is a space and a space can hold a state. Physics cannot use a sign on operators, because no such sign exists.
 
-### I.13.e — The Two Chiralities Are the Two Ideals
+### I.13.e — The Two Values Are the Two Ideals
 
 **The object.** For the two idempotents $\tilde\Pi_\pm(\vec u)=\tfrac12(e_t\pm i\vec u)$ on a real unit axis, the images of the one-sided operators are the two minimal left ideals
 
@@ -472,7 +472,7 @@ $$
 
 **The warrant.** The image of a left multiplication is the left ideal of the element, and the ideal of a minimal idempotent is minimal. Each has complex dimension two and the two are complementary, since $\tilde\Pi_++\tilde\Pi_-=e_t$ and $\tilde\Pi_+\tilde\Pi_-=0$.
 
-**The reading.** A chirality is a space that a projector selects, and the selection is the one-sided operator of that projector. A state of a given chirality is an element of that ideal. The axis is a parameter of the family and not a datum of the algebra, so the two chiralities of this construction are exchanged by a rotation and carry no invariant label. What physics calls left and right must therefore be supplied by an interaction and not by the algebra, which is the standard position and is a theorem here.
+**The reading.** A value is a space that a projector selects, and the selection is the one-sided operator of that projector; the words are *spinor chirality* for the value and *operator chirality* for the side of the operator that cuts it. A state of a given value is an element of that ideal. The axis is a parameter of the family and not a datum of the algebra, so the two values of this construction are exchanged by a rotation and carry no invariant label. What physics calls left and right must therefore be supplied by an interaction and not by the algebra, which is the standard position and is a theorem here.
 
 ### I.13.f — The Four Adjoints Are Four Reality Conditions
 
@@ -565,7 +565,7 @@ The table is the reason the operator theory is worth having. A single constructi
 
 **A two-sided operator never has rank three.** In the two-dimensional model its rank is a product of two ranks from $\{0,1,2\}$.
 
-**The side is not a grading.** The swap of the two slots is an involution of the operator space, antimultiplicative, not inner, and equal to the adjoint of the plain bilinear form. No multiplicative sign separates the two families, so chirality is a side and the two chiralities are the two minimal left ideals.
+**The side is not a grading.** The swap of the two slots is an involution of the operator space, antimultiplicative, not inner, and equal to the adjoint of the plain bilinear form. No multiplicative sign separates the two families, so operator chirality is the side and the two spinor chiralities are the two minimal left ideals.
 
 **Each of the four forms carries its own adjoint.** Four adjoints, five families, and only the Hermitian pair keeps both sectors for every parameter.
 

@@ -309,7 +309,7 @@ $$
 
 They are idempotent, orthogonal and complete, $H=P_{+}-P_{-}$, and each has rank one. The algebra $M_{2}(\mathbb{C})$ is the biquaternion algebra $\mathbb{B}$, and this is its frame of two idempotents; the construction is the order-two case of the formula of §*The Lagrange Projectors*, with the two roots of $x^{2}-1$.
 
-**The contrast with $n=3$.** For $n=3$ the single root $H$ produces three idempotents, because the polynomial $x^{3}-1$ has three roots. No second root is needed, and none is introduced here. The biquaternion frame of *Peirce Decompositions of the Biquaternion Algebra* uses a second root only to fix the relative scale of its two mixed units; that is a feature of the two-dimensional carrier, not a primitive datum of the $n=3$ construction. In $M_{3}(\mathbb{C})$ the three idempotents are already complete, and the only remaining freedom is the gauge of the off-diagonal units, treated in *The Frame, the Simple Nilpotents and the Gauge of $M_3(\mathbb{C})$*.
+**The contrast with $n=3$.** For $n=3$ the single root $H$ produces three idempotents, because the polynomial $x^{3}-1$ has three roots. No second root is needed, and none is introduced here. The biquaternion frame of *Peirce Decompositions of the Biquaternion Algebra* fixes the relative scale of its two mixed units by one gauge parameter, the reciprocal rescaling of the companion pair; that is a feature of the two-dimensional carrier, not a primitive datum of the $n=3$ construction. In $M_{3}(\mathbb{C})$ the three idempotents are already complete, and the only remaining freedom is the gauge of the off-diagonal units, treated in *The Frame, the Simple Nilpotents and the Gauge of $M_3(\mathbb{C})$*.
 
 ## Summary
 

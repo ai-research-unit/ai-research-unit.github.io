@@ -134,6 +134,10 @@ sector exchange. The trace is $\operatorname{Tr}\tilde Q=2\,\mathrm{Sc}\,\tilde 
 The quaternion subspace is $\mathbb{B}_{H}=\operatorname{span}_{\mathbb{R}}\{e_t,\vec e_x,\vec e_y,\vec e_z\}$, the corpus's quaternion layer, the set
 fixed by the coefficient conjugation $\overline{\cdot}$ and the real form of $\mathbb{B}$. The two forms are the quaternionic norm $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ and the Hermitian form $\langle\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde Q\tilde Q^{*})$. The interval is written in the length unit $c=1$: with $c$ restored the temporal coordinate is $cr'_{t}$ and the four-momentum is $i(E/c)e_t+\vec p$, as in the corpus's own writing.
 
+**Where this article sits in the category.** The category is now derived from the Mathematical menu, and this article is kept whole as one of its entries because its subject is one construction and not a survey of a section. The mirror is read twice. [The Element, the Six Subspaces and the Two Ledgers](the-element-the-six-subspaces-and-the-two-ledgers.html), §*I.1.h*, states the result and one reading: the class is the set of elements whose two ledgers differ by a quarter turn, it is a real four-dimensional subspace, and the informational projection is $i$ times the material one; §*I.1.g* states the switch as one of the four names of the central $i$. This article is the full treatment of the same object — the construction, the invariants with their fixed factors, the class and what it is not, the Wick comparison and the instances — and it is the reference for anything that needs more than the two readings. The readings agree and the notation is shared: $\mathbb{B}_{\Phi}$ is anti-Hermitian and material, $\mathbb{B}_{\Psi}$ is Hermitian and informational, the class is $\tilde Q^{*}=i\tilde Q$, and the mirror biquaternion is $(1+i)\tilde X_\Phi$.
+
+**The word, and the map it is not.** In this article, in the mathematics article it rests on, and in §*I.1* of the category, **the mirror is multiplication by the central $i$**: it has order four, it exchanges the two sectors, and it is not an involution. The quaternion conjugation ${}^{\natural}$ is a different map, and the corpus also needs its name. Where a text of the corpus says *the mirror* of an element and means ${}^{\natural}$ — as the entry on the four forms does, where the measures are read against $\tilde Q^{\natural}$ — the word is doing a second job. The two are not the same map and the difference is easy to state: ${}^{\natural}$ is an involution, it fixes the centre and negates the vector part, and it stays inside each sector; the switch has order four and carries one sector onto the other. A reader who meets the word in the corpus should take the switch as the meaning unless the symbol ${}^{\natural}$ is present.
+
 ## The Mirror Biquaternions, Built
 
 The section is placed here because the objects come first: each of the rows below is built by the one formula of the Introduction, and the sections that follow derive, for a general element, what this one does for the five the series uses.
@@ -834,8 +838,18 @@ The Wick rotation is the neighbouring map and it is not this one. It multiplies 
 
 ## Further Reading
 
-- [Introduction to the Biquaternion Universe](introduction-to-the-biquaternion-universe.html), §*Two Sectors: Material and Informational*, for the split into the two parts, which this article inherits and never redefines.
+**The category's own entries, which carry the short form of these readings.**
+
+- [The Element, the Six Subspaces and the Two Ledgers](the-element-the-six-subspaces-and-the-two-ledgers.html), §*I.1.b* for the two parts of one element, §*I.1.g* for the switch as one of the four names of the central $i$, and §*I.1.h* for the class read as the second ledger.
 - [The Two Sectors: Split and the Four Bridges](the-two-sectors-split-and-the-four-bridges.html), for the split, the four conjugations, the central $i$ as a bijection and a relational clock, and the boundary that no congruence crosses.
+- [Four-Vectors and the Interval](four-vectors-and-the-interval.html), for the material four-vector, the interval and the Lorentz action that this article reads through the switch.
+- [States, Observables and the Born Weight](states-observables-and-the-born-weight.html), for the positive cone, the real spectrum and the preparation dictionary $\tilde H_{\Psi}=-\tfrac{i}{2}\tilde R_\Phi$, which is this mirror of the reversed four-vector with the $\tfrac12$ that normalises the trace.
+- [The Four Forms and the Four Norms](the-four-forms-and-the-four-norms.html), for the four scalars whose factors under the switch are the invariant table of this article.
+- [The K Norm and the Indefinite Structure](the-k-norm-and-the-indefinite-structure.html), for the indefinite geometry at large, of which the sign change of the Krein form under the switch is one instance.
+
+**The sources of the series, kept in the archive, and the mathematics.**
+
+- [Introduction to the Biquaternion Universe](introduction-to-the-biquaternion-universe.html), §*Two Sectors: Material and Informational*, for the split into the two parts, which this article inherits and never redefines.
 - [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html), for the interval, the Lorentz action and the observable representative $i\tilde Q$.
 - [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the positive cone, the real spectrum and the Born pairing.
 - [The Bloch Ball as the Normalised Slice of the Future Light Cone](the-bloch-ball-as-the-normalised-slice-of-the-future-light-cone.html), for the positive cone as the image of the causal cone and the two faces of one quadratic space.
