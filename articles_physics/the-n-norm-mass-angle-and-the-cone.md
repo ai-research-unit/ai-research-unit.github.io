@@ -522,7 +522,7 @@ $$
 
 **The element has a limit and its factors do not.** The scale collapses and the rapidity diverges, and the product stays finite because the divergence is exponential in both directions. The Hermitian norm converges to a finite value, so the amplitude of the previous entry converges too; only the word fails, and it fails at the limit and not before it.
 
-**The physical interpretation is that the massless limit is a limit of a product and not of a parameter.** A massless particle is not a particle with a small mass: the limit is taken along a family in which the mass and the boost move together, and no member of the family is massless. The statement that a massless particle has no rest frame is the statement that the rapidity is unbounded, read at the limit.
+**The physical interpretation is that the massless limit is a limit of a product and not of a parameter.** A massless particle is not a particle with a small mass: the limit is taken along a family in which the mass and the boost move together, and no member of the family is massless. The statement that a massless particle has no rest frame is the statement that the rapidity is unbounded, read at the limit. For the material momentum the data are $K=2E/c$, $\omega=i$, $\vec u_{\mathrm b}=-\vec p/\lvert\vec p\rvert$, $\tilde u_{\mathrm r}=e_t$ and $\theta=2\theta_{\mathrm{rpd}}$, and the limit is $\tilde P_\Phi$ itself to a relative defect $e^{-2\theta_{\mathrm{rpd}}}$.
 
 **The boundary.** The family is one path to the cone, and the limiting element depends on the path through the direction and the rotor. The statement is about limits of a family and not about a canonical degeneration.
 

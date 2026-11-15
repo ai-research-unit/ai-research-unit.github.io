@@ -324,3 +324,4 @@ $$
 - [The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$](the-forms-the-norms-and-the-singular-set-of-m4c.html), for the singular values and the norms.
 - [The Exponential Polar Decomposition of $M_4(\mathbb{C})$](the-exponential-polar-decomposition-of-m4c.html), for the other ordering $e^He^{iK}$.
 - [The Mass Block and the Chiral Polar Decomposition of $M_4(\mathbb{C})$](the-mass-block-and-the-chiral-polar-decomposition-of-m4c.html), for the chiral version.
+- [$M_4(\mathbb{C})$ Axis-Free Representation: Operators](m4c-axis-free-representation-operators.html), for the sixteen two-sided operators, which are signed permutation matrices and therefore orthogonal, so each is its own polar factor.

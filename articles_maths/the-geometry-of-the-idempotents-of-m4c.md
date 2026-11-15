@@ -422,3 +422,4 @@ $$
 - [The Rank-Two Split of $M_4(\mathbb{C})$](the-rank-two-split-of-m4c.html), for the rank-two Peirce table.
 - [The Adjoint Action, the Orbits and the Flag Variety of $M_4(\mathbb{C})$](the-adjoint-action-the-orbits-and-the-flag-variety-of-m4c.html), for the orbits and the flag variety.
 - [The Topology of $M_4(\mathbb{C})$](the-topology-of-m4c.html), for the homotopy equivalence $\mathcal{I}_p\simeq\operatorname{Gr}(p,4)$.
+- [The Two-Sided Operators Method to Build $M_4(\mathbb{C})$](the-two-sided-operators-method-to-build-m4c.html), for the second basis of the algebra, in which the split into symmetric and antisymmetric matrices is a coordinate split.

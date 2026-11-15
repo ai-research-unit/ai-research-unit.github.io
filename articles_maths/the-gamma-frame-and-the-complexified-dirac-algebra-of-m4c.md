@@ -83,19 +83,19 @@ of complex dimension $8$, the even part of $M_4(\mathbb{C})$ under the Clifford 
 **Definition.** Put $L_aR_b$ for the two-sided basis operators of the biquaternion algebra, with $a,b$ in the units $e_t,\vec e_x,\vec e_y,\vec e_z$. The frame operators are the five elements
 
 $$
-iR_{\vec e_x}=iL_{e_t}R_{\vec e_x},\qquad iL_{\vec e_x}R_{\vec e_y}=iL_{\vec e_x}R_{\vec e_y},\qquad iL_{\vec e_y}R_{\vec e_y}=iL_{\vec e_y}R_{\vec e_y},\qquad iL_{\vec e_z}R_{\vec e_y}=iL_{\vec e_z}R_{\vec e_y},\qquad -iR_{\vec e_z}=-iL_{e_t}R_{\vec e_z}
+iR_{\vec e_x}=iL_{e_t}R_{\vec e_x},\qquad iL_{\vec e_x}R_{\vec e_y},\qquad iL_{\vec e_y}R_{\vec e_y},\qquad iL_{\vec e_z}R_{\vec e_y},\qquad -iR_{\vec e_z}=-iL_{e_t}R_{\vec e_z}
 $$
 
-of $M_4(\mathbb{C})$. The four frame operators $iR_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$ carry the operator relation of $\varepsilon=(1,-1,-1,-1)$; see the Gamma section.
+of $M_4(\mathbb{C})$. The four generators $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ obey the anticommutation relation with the signs $\varepsilon=(1,-1,-1,-1)$, that is $\varepsilon_t=1$ and $\varepsilon_k=-1$; see the Gamma section.
 
 **The four units.** The four basis elements are $e_t,\vec e_x,\vec e_y,\vec e_z$, the coefficient basis $\mathcal{E}$ of the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$. The frame is a frame of $\mathbb{B}$: the left factor of a generator is a unit, the right factor a spatial unit, written $\vec e_{\nu(\mu)}$ with $\nu(t)=x$ and $\nu(k)=y$, so the $\mu$-th generator is $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$. The basis, the multiplication table and the four left matrices are *$M_4(\mathbb{C})$ Axis-Free Representation*; the sixteen matrices of the operators are *$M_4(\mathbb{C})$ Axis-Free Representation: Operators*.
 
 **The existence.** The frame operators exist: the product rule $L_aR_bL_{ac}R_{db}$ makes each generator an explicit element of the two-sided basis, the anticommutation relations hold, and the four frame operators generate $M_4(\mathbb{C})$. Some $S\in GL_4(\mathbb{C})$ carries the frame to the block matrices of the chiral representation, whose blocks are $2\times2$: the first with $I_2$ in its off-diagonal blocks and the other three with the three Pauli blocks there. Both frames satisfy the same relations, and this is the non-canonicity of §*The Non-Canonicity of the Frame* in its simplest form.
 
-**The chirality.** Put
+**The chirality.** The fifth frame operator is
 
 $$
--iL_{e_t}R_{\vec e_z}=-iL_{e_t}R_{\vec e_z}.
+-iR_{\vec e_z}=-iL_{e_t}R_{\vec e_z}.
 $$
 
 Then
@@ -118,9 +118,9 @@ $$
 \operatorname{tr}(L_{e_\mu} R_{e_\nu} L_{e_\rho}R_{e_\sigma})=4\,\eta_{\mu\nu,\rho\sigma},
 $$
 
-where $\eta_{\mu\nu,\rho\sigma}=g_{\mu\mu}g_{\nu\nu}\delta_{\mu\rho}\delta_{\nu\sigma}$ is diagonal with entries $\pm1$ determined by the signature. The sixteen basis operators are therefore linearly independent, and they form a basis of $M_4(\mathbb{C})$.
+where $\eta_{\mu\nu,\rho\sigma}=\varepsilon_\mu\varepsilon_\nu\delta_{\mu\rho}\delta_{\nu\sigma}$ is diagonal with entries $\pm1$ determined by the signature, $\varepsilon_t=1$ and $\varepsilon_k=-1$. The sixteen basis operators are therefore linearly independent, and they form a basis of $M_4(\mathbb{C})$.
 
-**The expansion.** With the dual basis $\check L_{e_\mu} R_{e_\nu}=g_{\mu\mu}g_{\nu\nu}L_{e_\mu} R_{e_\nu}$ defined by $\operatorname{tr}(\check L_{e_\mu} R_{e_\nu} L_{e_\rho}R_{e_\sigma})=4\delta_{\mu\rho}\delta_{\nu\sigma}$, every matrix expands as
+**The expansion.** With the dual basis $\check L_{e_\mu} R_{e_\nu}=\varepsilon_\mu\varepsilon_\nu L_{e_\mu} R_{e_\nu}$ defined by $\operatorname{tr}(\check L_{e_\mu} R_{e_\nu} L_{e_\rho}R_{e_\sigma})=4\delta_{\mu\rho}\delta_{\nu\sigma}$, every matrix expands as
 
 $$
 A=\frac14\sum_{\mu,\nu}\operatorname{tr}(\check L_{e_\mu} R_{e_\nu} A)\,L_{e_\mu} R_{e_\nu}.
@@ -234,7 +234,7 @@ $$
 The contraction sums follow from the squares. With one index raised, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$, so that $\sum_\mu\gamma^\mu\gamma_\mu=-4I_4$, $\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\mu=2\gamma_\alpha$, $\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\beta\gamma_\mu=-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\gamma^\mu\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_\mu=-2\gamma_\gamma\gamma_\beta\gamma_\alpha$.
 ## Summary
 
-The Dirac algebra is $\mathrm{Cl}(1,3)$, of real dimension $16$, isomorphic to $M_2(\mathbb{H})$, with even part $\mathrm{Cl}^{+}(1,3)\cong M_2(\mathbb{C})=\mathbb{B}$. Its complexification is $\mathrm{Cl}(4,\mathbb{C})\cong M_4(\mathbb{C})$. The five frame operators satisfy $iR_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$ carry the operator relation of $g$, the fifth $-iL_{e_t}R_{\vec e_z}$ squares to $I$ and anticommutes with the four, and the sixteen graded products form a basis of $M_4(\mathbb{C})$, with the trace orthogonality and the expansion formula. The five basis operators are five elements of the sixteen two-sided operators in a chosen coefficient frame, not a canonical subset. The frames form a homogeneous space under $GL_4$; the Clifford group is the stabiliser of the span of the generators, and its even part is the scalars times the spin group. The biquaternion algebra is the even slot over $\mathbb{R}$ and the left factor over $\mathbb{C}$; the ambient algebra is the endomorphism algebra of $\mathbb{B}$, not $\mathbb{B}$.
+The Dirac algebra is $\mathrm{Cl}(1,3)$, of real dimension $16$, isomorphic to $M_2(\mathbb{H})$, with even part $\mathrm{Cl}^{+}(1,3)\cong M_2(\mathbb{C})=\mathbb{B}$. Its complexification is $\mathrm{Cl}(4,\mathbb{C})\cong M_4(\mathbb{C})$. The five frame operators are the four generators $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ and the product $-iL_{e_t}R_{\vec e_z}$; the four obey the anticommutation relation with the signs $\varepsilon=(1,-1,-1,-1)$, the fifth squares to $I$ and anticommutes with the four, and the sixteen graded products form a basis of $M_4(\mathbb{C})$, with the trace orthogonality and the expansion formula. The five basis operators are five elements of the sixteen two-sided operators in a chosen coefficient frame, not a canonical subset. The frames form a homogeneous space under $GL_4$; the Clifford group is the stabiliser of the span of the generators, and its even part is the scalars times the spin group. The biquaternion algebra is the even slot over $\mathbb{R}$ and the left factor over $\mathbb{C}$; the ambient algebra is the endomorphism algebra of $\mathbb{B}$, not $\mathbb{B}$.
 
 | Quantity | Value |
 |---|---|
@@ -255,12 +255,12 @@ The Dirac algebra is $\mathrm{Cl}(1,3)$, of real dimension $16$, isomorphic to $
 | $\mathrm{Cl}(V,q)$ | the Clifford algebra of the quadratic form $q$ |
 | $\mathrm{Cl}(1,3)$ | the Dirac algebra of the Minkowski form |
 | $\mathrm{Cl}^{+}(1,3)$ | its even part, isomorphic to $M_2(\mathbb{C})$ |
-| $iR_{\vec e_x},\dots,iL_{\vec e_z}R_{\vec e_y},-iR_{\vec e_z}$ | the five frame operators, $iR_{\vec e_x}=iL_{e_t}R_{\vec e_x}$, $iL_{\vec e_x}R_{\vec e_y}=iL_{\vec e_x}R_{\vec e_y}$, $iL_{\vec e_y}R_{\vec e_y}=iL_{\vec e_y}R_{\vec e_y}$, $iL_{\vec e_z}R_{\vec e_y}=iL_{\vec e_z}R_{\vec e_y}$, $-iR_{\vec e_z}=-iL_{e_t}R_{\vec e_z}=i\,iR_{\vec e_x}\,iL_{\vec e_x}R_{\vec e_y}\,iL_{\vec e_y}R_{\vec e_y}\,iL_{\vec e_z}R_{\vec e_y}$; $iR_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$ carry the operator relation of $g$ |
+| $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$, $-iL_{e_t}R_{\vec e_z}$ | the five frame operators, $iR_{\vec e_x}=iL_{e_t}R_{\vec e_x}$ and $-iR_{\vec e_z}=-iL_{e_t}R_{\vec e_z}$ being the two shorthands; $-iL_{e_t}R_{\vec e_z}=i\,iL_{e_t}R_{\vec e_x}\,iL_{\vec e_x}R_{\vec e_y}\,iL_{\vec e_y}R_{\vec e_y}\,iL_{\vec e_z}R_{\vec e_y}$ is the product of the four; the four obey the anticommutation relation with the signs $\varepsilon=(1,-1,-1,-1)$ |
 | $\tfrac12[iL_{e_\mu}R_{\vec e_{\nu(\mu)}},iL_{e_\nu}R_{\vec e_{\nu(\nu)}}]$ | the six bivector products |
 | $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\,iL_{e_\nu}R_{\vec e_{\nu(\nu)}}\,iL_{e_\rho}R_{\vec e_{\nu(\rho)}}$ | the four trivector products |
 | $P_{\pm}$ | the chiral projectors $\tfrac12(I\pm -iR_{\vec e_z})=\tfrac12(I\mp iL_{e_t}R_{\vec e_z})$ |
 | $\Gamma$ | the Clifford group |
-| $L_{e_\mu} R_{e_\nu}$ | the two-sided basis operators $L_{e_\mu} R_{e_\nu}$, the sixteen graded products |
+| $L_{e_\mu} R_{e_\nu}$ | the sixteen two-sided basis operators, whose products up to scalars are the sixteen graded products |
 
 ## Further Reading
 
