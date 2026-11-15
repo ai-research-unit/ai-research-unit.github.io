@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple and Non-Simple Rotations at $n=4$: the Two Angles and the Isoclinic Families — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="simple-and-non-simple-rotations-at-math0-the-two-angles-and-the-isoclinic-families"><strong>Simple and Non-Simple Rotations at $n=4$: the Two Angles and the Isoclinic Families</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>At order four a rotation has two invariant planes and two angles, the normal form $\operatorname{diag}(R_{\theta_1},R_{\theta_2})$, and the generic rotation is not simple; the isoclinic cases $\theta_1=\pm\theta_2$ are the two families, each a three-sphere of rotations, and the circle of one family is the Hopf action of $S^{1}$ on $S^{3}$.</strong></p>
+<p>The article defines simplicity, proves that a simple rotation of four-space fixes a plane and has one angle, classifies the rotations into the three cases of distinct angles, equal angles and opposite angles, gives the count $\lfloor n/2\rfloor$, identifies the two angles with the two summands of $\mathfrak{so}(4)$, and relates the isoclinic families to the Hopf fibration.</p>
+<p>It assumes <em>The Spectral Theorem: the Skew-Hermitian Case and the Reality of the Spectrum at $n=4$</em>, <em>The Lie Algebra $\operatorname{Skew}_4\cong\mathfrak{so}(4)$</em> and <em>The Rotor as a Square Root of a Rotation: the Two Signs and the Double Cover at $n=4$</em>. The general order is <em>Simple and Non-Simple Rotations: One Angle at $n\le3$, Two Angles at $n\ge4$</em>.</p>
+<h2 id="simple-rotations-and-the-fixed-subspace">Simple Rotations and the Fixed Subspace</h2>
+<p><strong>Definition.</strong> A rotation is <strong>simple</strong> when it turns a single plane and fixes its orthogonal complement pointwise.</p>
+<p><strong>Proposition.</strong> A simple rotation of four-space has the eigenvalue $1$ with multiplicity at least two, and its fixed subspace is a plane.</p>
+<p><strong>Proof.</strong> The fixed complement of the rotating plane is two-dimensional and consists of eigenvectors with eigenvalue one; the rotating plane contributes the eigenvalues $e^{\pm i\theta}$.</p>
+<p><strong>Corollary.</strong> A simple rotation is $\operatorname{diag}(R_\theta,\mathrm I_2)$ in a suitable orthonormal frame, and the rank of $Q-\mathrm I_4$ is two.</p>
+<p><strong>Proof.</strong> The normal form of the two blocks, and the kernel of $Q-\mathrm I_4$ is the fixed plane.</p>
+<p><strong>Proposition.</strong> A rotation of four-space is simple exactly when the eigenvalue one has multiplicity at least two, that is when the geometric multiplicity of one exceeds one.</p>
+<p><strong>Proof.</strong> The multiplicity of the eigenvalue one is the dimension of the fixed space, which for a simple rotation is two; conversely two independent fixed vectors span a fixed plane whose complement is turned by a single angle.</p>
+<p><strong>Corollary.</strong> The simple rotations form a family of dimension five, of codimension one in the six-dimensional group: the choice of the plane costs four parameters and the angle one.</p>
+<p><strong>Proof.</strong> The normal form and the dimension count: a plane in four-space is a point of the Grassmannian of dimension four, and the angle adds one.</p>
+<p><strong>The axis at order three.</strong> At order three a rotation always has a fixed line, so every rotation is simple; at order four the fixed space can be a line or a point, and the generic rotation fixes only the origin.</p>
+<p><strong>Proof.</strong> An odd-dimensional real operator has a real eigenvalue, which for an orthogonal one is $\pm1$ and hence a fixed line after possibly reversing the sign.</p>
+<h2 id="the-two-angles-at-order-four">The Two Angles at Order Four</h2>
+<p><strong>Theorem.</strong> Every rotation of four-space is orthogonally conjugate to $\operatorname{diag}(R_{\theta_1},R_{\theta_2})$ with $\theta_1\ge\theta_2\ge0$, up to signs and ordering.</p>
+<p><strong>Proof.</strong> The real normal form of the skew generator, exponentiated: the pair of invariant planes of the skew part is invariant under the rotation it generates.</p>
+<p><strong>Corollary.</strong> The spectrum is $\{e^{i\theta_1},e^{-i\theta_1},e^{i\theta_2},e^{-i\theta_2}\}$, and the two angles are read from it up to sign.</p>
+<p><strong>Proof.</strong> The eigenvalues of the two blocks.</p>
+<p><strong>Corollary.</strong> $\operatorname{tr}Q=2\cos\theta_1+2\cos\theta_2$ and $\det Q=1$, so the trace is the sum of the two cosines and the determinant carries no information.</p>
+<p><strong>Proof.</strong> Sum and product of the eigenvalues.</p>
+<p><strong>The angle formula.</strong> For a simple rotation $\operatorname{tr}Q=2+2\cos\theta$, which recovers the angle from the trace; at order four the single trace determines the sum of the two cosines and not the two angles separately.</p>
+<p><strong>Proof.</strong> The two formulas.</p>
+<p><strong>Corollary.</strong> The map from the rotation to its trace is not injective at order four, and it cannot be, since the group has dimension six and the trace takes values in a two-dimensional real set.</p>
+<p><strong>Proof.</strong> The trace is a continuous function of two parameters into a bounded interval on a six-dimensional group.</p>
+<h2 id="the-three-cases">The Three Cases</h2>
+<p><strong>Theorem.</strong> A rotation of four-space falls in exactly one of four cases:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>case</th>
+<th>condition</th>
+<th>fixed space</th>
+<th>simple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>simple</td>
+<td>$\theta_1\neq0$, $\theta_2=0$</td>
+<td>a plane</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>isoclinic, left</td>
+<td>$\theta_1=\theta_2\neq0$</td>
+<td>a point</td>
+<td>no</td>
+</tr>
+<tr>
+<td>isoclinic, right</td>
+<td>$\theta_1=-\theta_2\neq0$</td>
+<td>a point</td>
+<td>no</td>
+</tr>
+<tr>
+<td>general</td>
+<td>$|\theta_1|\neq|\theta_2|$, both nonzero</td>
+<td>a point</td>
+<td>no</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proof.</strong> A block $R_\theta$ of a nonzero angle contributes no fixed vector, so the fixed space is spanned by the blocks with $\theta=0$: it is a plane when exactly one angle vanishes and the origin otherwise. A rotation is simple exactly when it is a single block together with an untouched plane.</p>
+<p><strong>Corollary.</strong> The isoclinic rotations split into two families, $\theta_1=\theta_2$ and $\theta_1=-\theta_2$, and the two families are the left and the right one-sided quaternion actions; both families fix only the origin.</p>
+<p><strong>Proof.</strong> The left action turns both planes in the same sense and the right action in opposite senses; in either case both planes move.</p>
+<p><strong>Corollary.</strong> A non-isoclinic rotation has no fixed vector and no invariant vector at all, since an invariant vector would be an eigenvector with a real eigenvalue.</p>
+<p><strong>Proof.</strong> The eigenvalues are not real for a nonzero angle.</p>
+<p><strong>The generic case.</strong> The generic rotation is non-isoclinic with two distinct nonzero angles, so the generic rotation is not simple.</p>
+<p><strong>Proof.</strong> The conditions $\theta_1=\pm\theta_2$ and $\theta_k=0$ are of codimension one or more in the two parameters.</p>
+<h2 id="the-count-and-the-normal-form">The Count and the Normal Form</h2>
+<p><strong>Proposition.</strong> The number of independent angles is $\lfloor n/2\rfloor$, which is $1$ at $n=2,3$ and $2$ at $n=4,5$.</p>
+<p><strong>Proof.</strong> The maximal torus of $SO(n)$ has dimension $\lfloor n/2\rfloor$, one circle per invariant plane.</p>
+<p><strong>Corollary.</strong> At order four the rotation group has dimension six and rank two, and the two angles are the coordinates on a maximal torus.</p>
+<p><strong>Proof.</strong> $\dim SO(4)=6$, the rank is two, and the remaining four dimensions are the choice of the two planes.</p>
+<p><strong>Corollary.</strong> The normal form is $\operatorname{diag}(R_{\theta_1},R_{\theta_2})$, and the two planes of the normal form are the eigenplanes of the skew generator.</p>
+<p><strong>Proof.</strong> The normal form of the skew matrix, exponentiated.</p>
+<p><strong>The order five.</strong> At order five a third angle exists but the extra dimension is a fixed line, so the count is still two; the first order with three angles is six.</p>
+<p><strong>Proof.</strong> $\lfloor5/2\rfloor=2$ and $\lfloor6/2\rfloor=3$.</p>
+<h2 id="the-two-angles-as-the-two-parameters">The Two Angles as the Two Parameters</h2>
+<p><strong>Proposition.</strong> The two angles are the parameters of the two summands of $\mathfrak{so}(4)=\mathfrak{sl}_2\oplus\mathfrak{sl}_2$: the self-dual part has size $\theta_1$ and the anti-self-dual part size $\theta_2$.</p>
+<p><strong>Proof.</strong> $\tfrac12(A+\ast A)=\theta_1J_1$ and $\tfrac12(A-\ast A)=\theta_2J_2$ in the normal form, and the two summands are the two eigenspaces of the star.</p>
+<p><strong>Corollary.</strong> The simple rotations are those with one summand vanishing, and the isoclinic rotations are those whose two summands have equal size.</p>
+<p><strong>Proof.</strong> A vanishing self-dual part means $\theta_1=0$, which is a rotation in one plane only, and equal sizes means $|\theta_1|=|\theta_2|$.</p>
+<p><strong>Corollary.</strong> The two angles are independent coordinates, and the rotation group is the product of the two circle groups of the summands modulo the diagonal sign.</p>
+<p><strong>Proof.</strong> Each summand contributes one circle, and the pair of signs $(-1,-1)$ acts trivially.</p>
+<p><strong>The biquaternion form.</strong> A rotation is $L_pR_q$ with $p,q$ unit quaternions, and the two angles are the arguments of $p$ and of $q$.</p>
+<p><strong>Proof.</strong> $p=e^{\theta_1 i}$ turns both planes by $\theta_1$ and $q=e^{\theta_2 i}$ turns them by $\theta_2$ with opposite senses, so the product has the two angles.</p>
+<h2 id="the-isoclinic-rotations-and-the-hopf-fibrations">The Isoclinic Rotations and the Hopf Fibrations</h2>
+<p><strong>Theorem.</strong> The left-isoclinic rotations form a copy of $S^{3}$ inside $SO(4)$, and so do the right-isoclinic ones; their intersection is $\pm\mathrm I_4$.</p>
+<p><strong>Proof.</strong> The left unit quaternions form a three-sphere of rotations, the right ones another, and a rotation that is both is $\pm\mathrm I_4$ because its two angles satisfy $\theta_1=\theta_2$ and $\theta_1=-\theta_2$.</p>
+<p><strong>Corollary.</strong> The two three-spheres generate $SO(4)$ and intersect in two points, which is the double cover $\mathrm{Spin}(4)\to SO(4)$ read on the two factors.</p>
+<p><strong>Proof.</strong> Every rotation is a product of one from each, and the intersection is the kernel.</p>
+<p><strong>The Hopf reading.</strong> The circle $\{e^{i\theta}\}\subset S^{3}$ of left-isoclinic rotations through a plane acts on the unit sphere $S^{3}\subset\mathbb{C}^{2}$ as the Hopf action, whose orbits are the fibres of $S^{3}\to S^{2}$.</p>
+<p><strong>Proof.</strong> Writing $\mathbb{R}^{4}=\mathbb{C}^{2}$, the left multiplication by $e^{i\theta}$ is the scalar multiplication by the phase, and the orbit map of the unit sphere is the Hopf fibration.</p>
+<p><strong>Corollary.</strong> The isoclinic circle is the structure group of the Hopf bundle at order four, and the full three-sphere of left-isoclinic rotations is the total space of the same fibration.</p>
+<p><strong>Proof.</strong> The action of $S^{3}$ on its own unit sphere by left multiplication is free and transitive, and the circle inside it gives the fibres.</p>
+<p><strong>The next level.</strong> The same construction with $\mathbb{H}^{2}$ in place of $\mathbb{C}^{2}$, that is at order eight, gives the quaternionic Hopf fibration $S^{7}\to S^{4}$, whose structure group is the three-sphere of unit quaternions.</p>
+<p><strong>Proof.</strong> Left multiplication by unit quaternions on $\mathbb{H}^{2}=\mathbb{R}^{8}$ preserves the norm and acts freely on the unit sphere, with quotient the quaternionic projective line $S^{4}$.</p>
+<p><strong>Corollary.</strong> The isoclinic phenomenon is the geometric content of the Hopf fibrations, and at order four it is the complex one.</p>
+<p><strong>Proof.</strong> The two statements above.</p>
+<h2 id="summary">Summary</h2>
+<p>A rotation of four-space has two invariant planes and two angles, with the normal form $\operatorname{diag}(R_{\theta_1},R_{\theta_2})$; it is simple exactly when one angle is zero or the two are opposite, so the fixed space is a plane in those cases and a point otherwise. The generic rotation is non-isoclinic and not simple.</p>
+<p>The number of angles is $\lfloor n/2\rfloor$, one at orders two and three and two from order four on. The two angles are the parameters of the two summands of $\mathfrak{so}(4)$, and the isoclinic families are the rotations with one summand vanishing.</p>
+<p>The left-isoclinic and right-isoclinic rotations are two three-spheres meeting in two points, and their product is the whole group; the circle inside one of them is the Hopf action of $S^{1}$ on $S^{3}$, and the same construction at order eight gives the quaternionic Hopf fibration.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R_\theta$</td>
+<td>the rotation block of angle $\theta$</td>
+</tr>
+<tr>
+<td>$\theta_1,\theta_2$</td>
+<td>the two angles</td>
+</tr>
+<tr>
+<td>$\lfloor n/2\rfloor$</td>
+<td>the number of angles</td>
+</tr>
+<tr>
+<td>isoclinic</td>
+<td>$\theta_1=\pm\theta_2$</td>
+</tr>
+<tr>
+<td>$S^{3}\to S^{2}$</td>
+<td>the Hopf fibration of the isoclinic circle</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Morton L. Curtis, <em>Matrix Groups</em> (Springer, 1984), for the normal form of a rotation and the two angles.</li>
+<li><a href="simple-and-non-simple-rotations-one-angle-at-n-le-3-two-angles-at-n-ge-4.html">Simple and Non-Simple Rotations: One Angle at $n\le3$, Two Angles at $n\ge4$</a>, for the statement at general order.</li>
+<li><a href="the-spectral-theorem-the-skew-hermitian-case-at-n-4.html">The Spectral Theorem: the Skew-Hermitian Case and the Reality of the Spectrum at $n=4$</a>, for the eigenvalues and the Pfaffian.</li>
+<li><a href="the-lie-algebra-skew-4-and-so-4.html">The Lie Algebra $\operatorname{Skew}_4\cong\mathfrak{so}(4)$</a>, for the two summands.</li>
+<li><a href="simple-rotations-at-n-2-why-there-is-only-one-angle.html">Simple Rotations at $n=2$: Why There Is Only One Angle</a>, for the case at order two.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

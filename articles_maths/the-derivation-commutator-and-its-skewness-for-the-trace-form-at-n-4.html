@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Derivation $X\mapsto[A,X]$ and Its Skewness for the Trace Form — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-derivation-math0-and-its-skewness-for-the-trace-form"><strong>The Derivation $X\mapsto[A,X]$ and Its Skewness for the Trace Form</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>Every commutator map $\operatorname{ad}_A(X)=[A,X]$ is a derivation of $M_4(\mathbb{C})$, every derivation is of this form because the algebra is central simple, and the space of them is $\mathfrak{sl}_4$ of dimension $15$; the map is skew for the trace form for every $A$ and skew for the Hilbert–Schmidt form only when $A$ is skew-Hermitian, and the difference between the two statements is the involution, not the derivation.</strong></p>
+<p>The article proves the Leibniz rule and the representation property, records the inner-derivation theorem with its dimension count, computes the two skewness conditions and their adjoints, determines the spectrum of $\operatorname{ad}_A$, and explains why the trace form cannot distinguish the symmetric from the antisymmetric directions while the Hilbert–Schmidt form can.</p>
+<p>It assumes <em>The Trace Form and Its Signature on the Two Halves of $M_4(\mathbb{C})$</em> and <em>The Derivations and the Automorphisms of $M_4(\mathbb{C})$</em>, where the inner-derivation theorem is proved in full. The case $n=2$ is <em>The Derivation Commutator and Its Skewness for the Trace Form</em>; the operator form is <em>The Adjoints and the Polar Decomposition of an Operator at $n=4$</em>.</p>
+<h2 id="the-commutator-is-a-derivation">The Commutator Is a Derivation</h2>
+<p><strong>Proposition.</strong> For every $A$, the map $\operatorname{ad}_A(X)=AX-XA$ satisfies the Leibniz rule $\operatorname{ad}_A(XY)=\operatorname{ad}_A(X)Y+X\operatorname{ad}_A(Y)$.</p>
+<p><strong>Proof.</strong> $A(XY)-(XY)A=(AX-XA)Y+X(AY-YA)$, by expanding both sides.</p>
+<p><strong>Corollary.</strong> $\operatorname{ad}_A$ is a derivation of $M_4$ for every $A$, and $\operatorname{ad}$ is linear in $A$.</p>
+<p><strong>Proof.</strong> The Leibniz rule is the definition of a derivation, and the map $A\mapsto\operatorname{ad}_A$ is linear by the bilinearity of the commutator.</p>
+<p><strong>Proposition.</strong> $\operatorname{ad}_{[A,B]}=[\operatorname{ad}_A,\operatorname{ad}_B]$, so $\operatorname{ad}$ is a homomorphism of Lie algebras from $\mathfrak{gl}_4$ into $\operatorname{Der}(M_4)$.</p>
+<p><strong>Proof.</strong> The Jacobi identity: $[[A,B],X]=[A,[B,X]]-[B,[A,X]]$, which is the commutator of the two maps applied to $X$.</p>
+<p><strong>Corollary.</strong> The image of $\operatorname{ad}$ is a Lie subalgebra of the derivations, isomorphic to $\mathfrak{gl}_4$ modulo its kernel.</p>
+<p><strong>Proof.</strong> The first isomorphism theorem for Lie algebras.</p>
+<p><strong>The spectrum.</strong> If $A$ is diagonalisable with eigenvalues $\lambda_1,\dots,\lambda_4$, the eigenvalues of $\operatorname{ad}_A$ on $M_4$ are the sixteen differences $\lambda_i-\lambda_j$.</p>
+<p><strong>Proof.</strong> In the eigenbasis of $A$, $\operatorname{ad}_A(E_{ij})=(\lambda_i-\lambda_j)E_{ij}$, and the sixteen units form a basis.</p>
+<p><strong>Corollary.</strong> $\operatorname{ad}_A$ is nilpotent exactly when $A$ has a single eigenvalue, and it is zero exactly when $A$ is a scalar.</p>
+<p><strong>Proof.</strong> All differences vanish exactly when all eigenvalues are equal, which over $\mathbb{C}$ means $A=\lambda\mathrm I+N$ with $N$ nilpotent; then $\operatorname{ad}_A=\operatorname{ad}_N$ is nilpotent.</p>
+<h2 id="every-derivation-is-inner">Every Derivation Is Inner</h2>
+<p><strong>Theorem.</strong> Every derivation of $M_4(\mathbb{C})$ is inner: $\operatorname{Der}(M_4)=\operatorname{ad}(M_4)$, and the kernel of $\operatorname{ad}$ is the centre $\mathbb{C}\mathrm I_4$.</p>
+<p><strong>Proof.</strong> The kernel is the set of $A$ commuting with every matrix, which is the centre. Surjectivity is the theorem of the inner derivation, proved from the matrix units: a derivation is determined by its values on the sixteen units, and the element $a=\sum_{i,j}D(E_{ij})E_{ji}$ reproduces those values, the verification being the identity $D(E_{ij})=[a,E_{ij}]$ read off from $E_{ik}E_{kj}=E_{ij}$ summed over $k$.</p>
+<p><strong>Corollary.</strong> $\operatorname{Der}(M_4)\cong\mathfrak{gl}_4/\mathbb{C}\mathrm I_4\cong\mathfrak{sl}_4$, of dimension $15$.</p>
+<p><strong>Proof.</strong> The kernel has dimension $1$ and the source has dimension $16$.</p>
+<p><strong>Corollary.</strong> There are no outer derivations, and the Lie algebra of derivations is simple.</p>
+<p><strong>Proof.</strong> The quotient of $\mathfrak{gl}_4$ by the scalars is $\mathfrak{sl}_4$, which is simple.</p>
+<p><strong>Why the theorem needs the algebra to be simple.</strong> For a direct sum $A\oplus B$ the map sending a pair to the derivation $(a,b)\mapsto(0,\delta(b))$ with $\delta$ a derivation of $B$ is not inner in general; simplicity removes the summands, and centrality removes the scalar ambiguity.</p>
+<p><strong>Proof.</strong> A derivation of a direct sum acts on each summand and can be inner in one and outer in the other; the centre supplies the only ambiguity for a simple algebra.</p>
+<h2 id="skewness-for-the-trace-form">Skewness for the Trace Form</h2>
+<p><strong>Theorem.</strong> For every $A$ and all $X,Y$,</p>
+<p>$$
+\beta(\operatorname{ad}_A X,Y)+\beta(X,\operatorname{ad}_A Y)=0,\qquad \beta(X,Y)=\operatorname{tr}(XY).
+$$</p>
+<p><strong>Proof.</strong> Expand: $\operatorname{tr}((AX-XA)Y)+\operatorname{tr}(X(AY-YA))=\operatorname{tr}(AXY)-\operatorname{tr}(XAY)+\operatorname{tr}(XAY)-\operatorname{tr}(XYA)$, and the two middle terms cancel, leaving $\operatorname{tr}(AXY)-\operatorname{tr}(XYA)=0$ by the cyclic invariance of the trace.</p>
+<p><strong>Corollary.</strong> Every inner derivation lies in the orthogonal Lie algebra of $\beta$, which is $\mathfrak{so}(10,6)$ of dimension $120$; the fifteen inner derivations form a subalgebra of it.</p>
+<p><strong>Proof.</strong> Skewness for a bilinear form is the defining equation of its orthogonal Lie algebra, and $\mathfrak{so}(p,q)$ with $p+q=16$ has dimension $16\cdot15/2=120$.</p>
+<p><strong>The trace form cannot detect the condition.</strong> No hypothesis on $A$ is needed: the skewness is produced by the cyclic invariance of the trace alone, which holds for every triple of factors. The form is invariant under the whole of $\mathrm{GL}_4$, since $\operatorname{tr}(PXP^{-1}\cdot PYP^{-1})=\operatorname{tr}(XY)$, and the invariance is what produces the skewness.</p>
+<p><strong>Proof.</strong> Conjugation invariance of the trace, applied to the invariance identity $\beta(gXg^{-1},gYg^{-1})=\beta(X,Y)$ differentiated at the identity.</p>
+<h2 id="skewness-for-the-hilbertschmidt-form">Skewness for the Hilbert–Schmidt Form</h2>
+<p><strong>Definition.</strong> $\langle X,Y\rangle=\operatorname{tr}(X^{\ast}Y)$, positive definite.</p>
+<p><strong>Proposition.</strong> $\operatorname{ad}_A^{\ast}=\operatorname{ad}_{A^{\ast}}$ for the Hilbert–Schmidt form.</p>
+<p><strong>Proof.</strong> $\langle\operatorname{ad}_A X,Y\rangle=\operatorname{tr}((AX-XA)^{\ast}Y)=\operatorname{tr}(X^{\ast}A^{\ast}Y)-\operatorname{tr}(A^{\ast}X^{\ast}Y)=\langle X,A^{\ast}Y\rangle-\langle X,YA^{\ast}\rangle=\langle X,\operatorname{ad}_{A^{\ast}}Y\rangle$ after moving $A^{\ast}$ to the right by cyclicity.</p>
+<p><strong>Corollary.</strong> $\operatorname{ad}_A$ is skew for the Hilbert–Schmidt form exactly when $A$ differs from a skew-Hermitian matrix by a real scalar.</p>
+<p><strong>Proof.</strong> Skewness is $\operatorname{ad}_{A^{\ast}}=-\operatorname{ad}_A$, that is $A^{\ast}+A\in\mathbb{C}\mathrm I_4$; writing $A^{\ast}+A=\mu\mathrm I$ and taking adjoints gives $\bar\mu=\mu$, so $\mu$ is real and $A-\tfrac{\mu}{2}\mathrm I_4$ is skew-Hermitian, with the same adjoint map since the scalar part is central.</p>
+<p><strong>Corollary.</strong> The derivations that are skew for the Hilbert–Schmidt form are exactly those of $\operatorname{ad}\mathfrak{u}(4)$, of dimension $15$.</p>
+<p><strong>Proof.</strong> The skew-Hermitian matrices form $\mathfrak{u}(4)$ of real dimension $16$, and the scalars in it are the single imaginary line, so the image has dimension $15$.</p>
+<p><strong>The adjoint is a different operator.</strong> For the trace form the adjoint of $\operatorname{ad}_A$ is $-\operatorname{ad}_A$; for the Hilbert–Schmidt form it is $\operatorname{ad}_{A^{\ast}}$, which is a different derivation unless $A$ is skew-Hermitian.</p>
+<p><strong>Proof.</strong> Compare the two displayed formulas.</p>
+<h2 id="the-difference-is-the-involution">The Difference Is the Involution</h2>
+<p><strong>Proposition.</strong> The condition for skewness for $\beta$ involves no involution; the condition for skewness for $\langle\cdot,\cdot\rangle$ involves the adjoint ${}^{\ast}$.</p>
+<p><strong>Proof.</strong> The first condition is an identity in $A$, the second is the equation $A^{\ast}+A\in\mathbb{C}\mathrm I$.</p>
+<p><strong>Corollary.</strong> The trace form sees the whole of $\mathfrak{gl}_4$ inside $\mathfrak{so}(10,6)$, while the Hilbert–Schmidt form sees only $\mathfrak{u}(4)$ inside $\mathfrak{so}(16)$.</p>
+<p><strong>Proof.</strong> The two invariance groups are $\mathrm{GL}_4$ and $U(4)$, and the Lie algebras of skew endomorphisms contain the respective images of $\operatorname{ad}$.</p>
+<p><strong>The moral.</strong> Every derivation is skew for the trace form because that form is invariant under the largest possible group; a derivation is skew for the Hilbert–Schmidt form only when its generator lies in the Lie algebra of the smaller group. The involution ${}^{\ast}$ chooses the smaller group, and the derivation is the same object in both statements.</p>
+<p><strong>The two halves of the statement.</strong> For $A$ symmetric, $\operatorname{ad}_A$ is skew for $\beta$ and self-adjoint for $\langle\cdot,\cdot\rangle$; for $A$ antisymmetric, it is skew for both.</p>
+<p><strong>Proof.</strong> For symmetric $A$, $A^{\ast}=A$, so $\operatorname{ad}_A^{\ast}=\operatorname{ad}_A$; for antisymmetric $A$, $A^{\ast}=-A$, so the adjoint is $-\operatorname{ad}_A$.</p>
+<p><strong>Corollary.</strong> The space of inner derivations has dimension $15$, the dimension of $\mathfrak{sl}_4$, since the scalars act by zero and every traceless matrix gives a nonzero derivation.</p>
+<p><strong>Proof.</strong> The kernel of $A\mapsto\operatorname{ad}_A$ is the centre, which is the scalars.</p>
+<h2 id="summary">Summary</h2>
+<p>The commutator map is a derivation for every element, the representation property holds by the Jacobi identity, and every derivation of the algebra is inner, so the derivations form $\mathfrak{sl}_4$ of dimension $15$.</p>
+<p>The map is skew for the trace pairing for every $A$, with no condition, because the trace is cyclically invariant; it is skew for the Hilbert–Schmidt form exactly when $A$ is skew-Hermitian up to a real scalar, that is when the derivation lies in $\operatorname{ad}\mathfrak{u}(4)$.</p>
+<p>The difference between the two statements is the involution and not the derivation: the trace form is invariant under all of $\mathrm{GL}_4$, the Hilbert–Schmidt form only under $U(4)$, and the adjoint needed for the second statement is built from the conjugate transpose. The spectrum of $\operatorname{ad}_A$ is the sixteen differences of eigenvalues, and the kernel is the centraliser, of dimension at least four.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{ad}_A(X)=[A,X]$</td>
+<td>the inner derivation</td>
+</tr>
+<tr>
+<td>$\operatorname{Der}(M_4)$</td>
+<td>the derivations, isomorphic to $\mathfrak{sl}_4$</td>
+</tr>
+<tr>
+<td>$\beta(X,Y)=\operatorname{tr}(XY)$</td>
+<td>the trace pairing</td>
+</tr>
+<tr>
+<td>$\langle X,Y\rangle=\operatorname{tr}(X^{\ast}Y)$</td>
+<td>the Hilbert–Schmidt form</td>
+</tr>
+<tr>
+<td>$\mathfrak{so}(10,6)$</td>
+<td>the orthogonal Lie algebra of $\beta$</td>
+</tr>
+<tr>
+<td>$\operatorname{ad}\mathfrak{u}(4)$</td>
+<td>the derivations skew for the Hilbert–Schmidt form</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nathan Jacobson, <em>Lie Algebras</em> (Dover, 1979), for the theorem that every derivation of a central simple algebra is inner.</li>
+<li><a href="the-derivations-and-the-automorphisms-of-m4c.html">The Derivations and the Automorphisms of $M_4(\mathbb{C})$</a>, for the full proof of the inner-derivation theorem.</li>
+<li><a href="the-trace-form-and-its-signature-on-the-two-halves-of-m4c.html">The Trace Form and Its Signature on the Two Halves of $M_4(\mathbb{C})$</a>, for the form whose invariance produces the skewness.</li>
+<li><a href="the-hilbert-schmidt-form-at-n-4.html">The Hilbert–Schmidt Form at $n=4$</a>, for the positive definite form of the second statement.</li>
+<li><a href="the-derivation-commutator-and-its-skewness-for-the-trace-form.html">The Derivation Commutator and Its Skewness for the Trace Form</a>, for the same two statements at order two.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

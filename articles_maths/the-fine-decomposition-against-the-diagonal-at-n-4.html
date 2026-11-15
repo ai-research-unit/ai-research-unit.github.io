@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Fine Decomposition against the Diagonal at $n=4$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-fine-decomposition-against-the-diagonal-at-math0"><strong>The Fine Decomposition against the Diagonal at $n=4$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The diagonal matrices form a subspace of dimension $4$, the strictly upper triangular ones a subspace of dimension $6$, and the strictly lower triangular ones another of dimension $6$; the three sum directly to the algebra, and the two halves sit against this split in opposite ways: the symmetric half contains the whole diagonal, the antisymmetric half contains none of it.</strong></p>
+<p>The article defines the three pieces, proves the direct sum and the count $6+4+6=16$, identifies the diagonal as a Cartan subalgebra with its twelve weights, and makes precise the sense in which this decomposition is called "fine": it is the split by the position of the indices, not the split by root spaces, and the two sixes that occur in it are different subspaces.</p>
+<p>It assumes <em>The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=4$</em> for the halves and <em>The Matrix Algebra $M_4(\mathbb{C})$</em> for the units. The root-space reading is <em>The Triangular Decomposition $h\oplus n_+\oplus n_-$ of $M_4(\mathbb{C})$</em>; the case $n=2$ is <em>The Fine Decomposition against the Diagonal at $n=2$</em>; the abstract notion is <em>Cartan Subalgebras and the Root Decomposition</em>.</p>
+<h2 id="the-three-pieces">The Three Pieces</h2>
+<p><strong>Definition.</strong> Let</p>
+<p>$$
+\mathfrak{h}=\operatorname{span}\{E_{ii}:1\le i\le4\},\qquad
+\mathfrak{n}_+=\operatorname{span}\{E_{ij}:i<j\},\qquad
+\mathfrak{n}_-=\operatorname{span}\{E_{ij}:i>j\}.
+$$</p>
+<p><strong>Proposition.</strong> $\dim\mathfrak{h}=4$, $\dim\mathfrak{n}_+=6$, $\dim\mathfrak{n}_-=6$, and</p>
+<p>$$
+M_4(\mathbb{C})=\mathfrak{n}_-\oplus\mathfrak{h}\oplus\mathfrak{n}_+ .
+$$</p>
+<p><strong>Proof.</strong> Each matrix unit belongs to exactly one of the three sets, according to whether its row index exceeds, equals or is less than its column index; the $16$ units are therefore split into groups of $6$, $4$ and $6$, and the sum is direct because the three sets of units are disjoint.</p>
+<p><strong>The count.</strong> $6+4+6=16$, and the two sixes are $\binom{4}{2}$ each, the number of unordered pairs of distinct indices.</p>
+<p><strong>Proposition.</strong> $\mathfrak{h}$ is closed under multiplication and every element of it is diagonalisable; $\mathfrak{n}_+$ and $\mathfrak{n}_-$ are nilpotent subalgebras, with $\mathfrak{n}_+^{4}=0$ and $\mathfrak{n}_-^{4}=0$.</p>
+<p><strong>Proof.</strong> Diagonal matrices multiply diagonally. A strictly upper triangular matrix raises the column index at every multiplication, so the fourth power vanishes; the same argument with the row index for the strictly lower ones.</p>
+<p><strong>Corollary.</strong> $\mathfrak{h}$ is a Cartan subalgebra of $\mathfrak{gl}_4$: abelian, consisting of semisimple elements, and equal to its own centraliser.</p>
+<p><strong>Proof.</strong> Two diagonal matrices commute, each is diagonalisable, and a matrix commuting with every $E_{ii}$ is diagonal.</p>
+<p><strong>The projection onto the diagonal.</strong> Assembling the three pieces gives the map $\delta(A)_{ii}=A_{ii}$ and $\delta(A)_{ij}=0$ off the diagonal. It is linear, idempotent, kills $\mathfrak{n}_+\oplus\mathfrak{n}_-$, and is neither the trace nor the symmetric part: three different maps from the algebra onto $\mathfrak{h}$, distinguished by what they do to the off-diagonal entries.</p>
+<h2 id="the-weights-of-the-diagonal">The Weights of the Diagonal</h2>
+<p><strong>Definition.</strong> For $H=\operatorname{diag}(h_1,h_2,h_3,h_4)$ let $\varepsilon_i(H)=h_i$. The <strong>weights</strong> of the diagonal action are the linear functionals $\varepsilon_i-\varepsilon_j$.</p>
+<p><strong>Proposition.</strong> $[H,E_{ij}]=(\varepsilon_i-\varepsilon_j)(H)\,E_{ij}$.</p>
+<p><strong>Proof.</strong> The product $HE_{ij}$ has the entry $h_i$ in the position $(i,j)$ and $E_{ij}H$ has $h_j$ there; the difference is $(h_i-h_j)E_{ij}$.</p>
+<p><strong>Corollary.</strong> The algebra is the direct sum of the common eigenspaces of $\mathfrak{h}$,</p>
+<p>$$
+M_4=\mathfrak{h}\oplus\bigoplus_{i\neq j}\mathbb{C}E_{ij},
+$$</p>
+<p>with $12$ one-dimensional weight spaces and the four-dimensional zero weight space $\mathfrak{h}$ itself.</p>
+<p><strong>Proof.</strong> Each $E_{ij}$ with $i\neq j$ is an eigenvector with the nonzero weight $\varepsilon_i-\varepsilon_j$, and the elements of $\mathfrak{h}$ have weight zero.</p>
+<p><strong>The distinction that the word "fine" carries.</strong> The decomposition into $\mathfrak{n}_-$, $\mathfrak{h}$, $\mathfrak{n}_+$ is finer than the two halves but coarser than the weight decomposition: it groups the twelve weight spaces into two sixes by the sign of $i-j$, and it keeps the diagonal as one piece of dimension four. It is the split by <strong>position</strong>, not the split by <strong>root spaces</strong>, and the article uses the name in that sense only.</p>
+<h2 id="the-two-halves-against-the-diagonal">The Two Halves against the Diagonal</h2>
+<p><strong>Proposition.</strong> $\operatorname{Sym}_4$ contains the whole diagonal, and $\operatorname{Skew}_4$ meets it only at $0$.</p>
+<p><strong>Proof.</strong> A diagonal matrix is symmetric, so $\mathfrak{h}\subset\operatorname{Sym}_4$. A diagonal antisymmetric matrix has $k_{ii}=-k_{ii}$, hence all diagonal entries zero.</p>
+<p><strong>Corollary.</strong> $\operatorname{Sym}_4=\mathfrak{h}\oplus\operatorname{span}\{E_{ij}+E_{ji}:i<j\}$, of dimension $4+6=10$, and $\operatorname{Skew}_4=\operatorname{span}\{E_{ij}-E_{ji}:i<j\}$, of dimension $6$.</p>
+<p><strong>Proof.</strong> A symmetric matrix is determined by its diagonal and its entries above it; an antisymmetric one by its entries above it.</p>
+<p><strong>Proposition.</strong> $\operatorname{Skew}_4\cap\mathfrak{h}=0$ and $\mathfrak{h}+\operatorname{Skew}_4$ has dimension $10$, with quotient the six-dimensional space of symmetric off-diagonal pairs.</p>
+<p><strong>Proof.</strong> The intersection is zero by the previous proposition and the dimensions add as $4+6=10$.</p>
+<p><strong>The two different sixes.</strong> $\mathfrak{n}_+$ and $\operatorname{Skew}_4$ both have dimension $6$ and they are different subspaces: $\mathfrak{n}_+$ consists of upper triangular matrices, while $\operatorname{Skew}_4$ has entries both above and below the diagonal.</p>
+<p><strong>Proposition.</strong> $\mathfrak{n}_+\cap\operatorname{Skew}_4=0$, and $\mathfrak{n}_++\operatorname{Skew}_4$ is the whole off-diagonal part, of dimension $12$.</p>
+<p><strong>Proof.</strong> An upper triangular antisymmetric matrix has $k_{ii}=0$ on the diagonal and $k_{ij}=0$ for $i<j$, hence is zero. The sum of the dimensions is then $6+6=12$, and both summands lie in the off-diagonal part, which has dimension $12$ because the diagonal has dimension $4$ and the total is $16$.</p>
+<h2 id="the-splits-side-by-side">The Splits Side by Side</h2>
+<p><strong>Three decompositions of the same space of dimension $16$.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Split</th>
+<th>Pieces</th>
+<th>Dimensions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>by the transpose</td>
+<td>$\operatorname{Sym}_4\oplus\operatorname{Skew}_4$</td>
+<td>$10+6$</td>
+</tr>
+<tr>
+<td>by position</td>
+<td>$\mathfrak{n}_-\oplus\mathfrak{h}\oplus\mathfrak{n}_+$</td>
+<td>$6+4+6$</td>
+</tr>
+<tr>
+<td>by triangularity</td>
+<td>$\operatorname{Skew}_4\oplus UT_4$</td>
+<td>$6+10$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proposition.</strong> The three splits are pairwise transverse: no piece of one is contained in a piece of another, except the diagonal, which lies in $\operatorname{Sym}_4$ and in $UT_4$.</p>
+<p><strong>Proof.</strong> $\operatorname{Sym}_4$ contains the diagonal and off-diagonal symmetric pairs, so it meets $\mathfrak{n}_+$ in the zero matrix only; $\operatorname{Skew}_4$ meets $\mathfrak{h}$ in zero; $UT_4$ contains $\mathfrak{h}$ and $\mathfrak{n}_+$. The stated inclusions are the only ones.</p>
+<p><strong>What the fine split sees.</strong> The diagonal is the fixed set of the torus action, and its dimension $4$ is the rank of the algebra; the two nilpotent pieces are the halves of the off-diagonal, and their dimensions $6$ and $6$ are the number of positive and negative roots. The symmetric half cuts across this split: it takes the whole diagonal and one combination from each pair of opposite off-diagonal slots, never a whole nilpotent piece, and never a piece of dimension $6$.</p>
+<p><strong>The reading in the axis-free basis.</strong> There the split is invisible: the sixteen elements $T_{\mu\nu}$ are signed permutations, and no subset of them is the set of diagonal matrices. The matrix units are the basis in which the diagonal and the triangular pieces are coordinate subspaces, and the axis-free basis is the one in which the halves and the trace pairing are coordinate subspaces. Each question has its own basis, and the fine decomposition belongs to the first.</p>
+<p><strong>Corollary.</strong> The diagonal is the only part of the space common to the two halves in the index language: a symmetric matrix has arbitrary diagonal and symmetric off-diagonal entries, a skew matrix has zero diagonal, and the diagonal coordinates belong to the symmetric side alone.</p>
+<p><strong>Proof.</strong> The two index patterns: the diagonal indices $i=i$ are symmetric, and no skew matrix has a nonzero diagonal entry.</p>
+<p><strong>Corollary.</strong> The count $4+6+6=16$ is read as the dimension of the flat part plus twice the dimension of the positive roots, which is the shape of the triangular decomposition of the next article.</p>
+<p><strong>Proof.</strong> The two counts of off-diagonal indices.</p>
+<h2 id="summary">Summary</h2>
+<p>The algebra splits by the position of the indices into the strictly lower part of dimension $6$, the diagonal of dimension $4$ and the strictly upper part of dimension $6$, and the three are direct. The diagonal is a Cartan subalgebra: abelian, semisimple, self-centralising, with twelve one-dimensional weight spaces attached to it.</p>
+<p>The symmetric half contains the diagonal and the six symmetric off-diagonal pairs, of dimension $10$; the antisymmetric half is off-diagonal only, of dimension $6$, and meets the diagonal at zero. The two sixes of the fine split and the six of the antisymmetric half are different subspaces even though they share a dimension.</p>
+<p>"Fine" names the split by position, not the root-space split: it groups the twelve weight spaces into two sixes and keeps the diagonal together. Against this split the symmetric half is transverse and the antisymmetric half is contained in the off-diagonal part, and the three decompositions of the sixteen-dimensional space — by the transpose, by position, by triangularity — are pairwise transverse.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathfrak{h}$</td>
+<td>the diagonal matrices, dimension $4$</td>
+</tr>
+<tr>
+<td>$\mathfrak{n}_+$, $\mathfrak{n}_-$</td>
+<td>strictly upper and strictly lower, dimension $6$ each</td>
+</tr>
+<tr>
+<td>$UT_4$</td>
+<td>upper triangular including the diagonal, dimension $10$</td>
+</tr>
+<tr>
+<td>$\varepsilon_i$</td>
+<td>the coordinate functionals on $\mathfrak{h}$</td>
+</tr>
+<tr>
+<td>$\varepsilon_i-\varepsilon_j$</td>
+<td>the twelve weights</td>
+</tr>
+<tr>
+<td>$\operatorname{Sym}_4$, $\operatorname{Skew}_4$</td>
+<td>the two halves, dimensions $10$ and $6$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>James E. Humphreys, <em>Introduction to Lie Algebras and Representation Theory</em> (Springer, 1972), for Cartan subalgebras, roots and the triangular decomposition.</li>
+<li><a href="the-triangular-decomposition-h-n-plus-n-minus-of-m4c.html">The Triangular Decomposition $h\oplus n_+\oplus n_-$ of $M_4(\mathbb{C})$</a>, for the root-space reading of the same three pieces.</li>
+<li><a href="ut4-as-the-complement-of-the-antisymmetric-part.html">$UT_4$ as the Complement of the Antisymmetric Part</a>, for the third split in the table.</li>
+<li><a href="the-two-halves-over-r-symmetric-and-antisymmetric-at-n-4.html">The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=4$</a>, for the defining properties of the halves.</li>
+<li><a href="the-fine-decomposition-against-the-diagonal-at-n-2.html">The Fine Decomposition against the Diagonal at $n=2$</a>, for the same split at order two.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

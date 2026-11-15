@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Spectral Theorem: the Skew-Hermitian Case and the Reality of the Spectrum at $n=4$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-spectral-theorem-the-skew-hermitian-case-and-the-reality-of-the-spectrum-at-math0"><strong>The Spectral Theorem: the Skew-Hermitian Case and the Reality of the Spectrum at $n=4$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>A skew-Hermitian matrix is $i$ times a Hermitian one, so its spectrum is purely imaginary and its exponential is unitary; for a real skew matrix of order four the spectrum is $\{i\theta_1,-i\theta_1,i\theta_2,-i\theta_2\}$, the two angles exist and are independent, the Pfaffian is their product, and the two summands of $\mathfrak{so}(4)=\mathfrak{sl}_2\oplus\mathfrak{sl}_2$ carry the two parameters.</strong></p>
+<p>The article proves the purely imaginary spectrum, identifies the exponential with the map onto the unitary group, derives the real normal form with two rotation blocks, relates the two angles to the two ideals and to the isoclinic families, computes the Pfaffian, and reads the whole picture in the biquaternion algebra as a two-sided rotation $L_{e^{\theta_1 i}}R_{e^{\theta_2 i}}$.</p>
+<p>It assumes <em>Normal Matrices and the Common Spectral Theorem at $n=4$</em>, <em>The Lie Algebra $\operatorname{Skew}_4\cong\mathfrak{so}(4)$</em> and <em>Simple and Non-Simple Rotations: One Angle at $n\le3$, Two Angles at $n\ge4$</em>. The model at order two is <em>The Spectral Theorem: the Skew-Hermitian Case and the Two Imaginary Eigenvalues</em>.</p>
+<h2 id="the-skew-hermitian-case">The Skew-Hermitian Case</h2>
+<p><strong>Definition.</strong> $A$ is <strong>skew-Hermitian</strong> when $A^{\ast}=-A$.</p>
+<p><strong>Proposition.</strong> $A$ is skew-Hermitian exactly when $A=iH$ with $H$ Hermitian, and then the spectrum of $A$ is $i$ times the spectrum of $H$, hence purely imaginary.</p>
+<p><strong>Proof.</strong> $H=-iA$ satisfies $H^{\ast}=iA^{\ast}=-iA=H$; the eigenvalues of $iH$ are $i\lambda$ with $\lambda$ an eigenvalue of $H$, by the spectral resolution.</p>
+<p><strong>Corollary.</strong> $A=i\sum_k\theta_kP_k$ with $\theta_k$ real and $P_k$ the spectral projectors, so a skew-Hermitian matrix is a real linear combination of commuting orthogonal projections after multiplication by $i$.</p>
+<p><strong>Proof.</strong> Insert the Hermitian resolution of $H$.</p>
+<p><strong>Corollary.</strong> The eigenvalues come in conjugate pairs when the matrix is real, since a real matrix has a real characteristic polynomial.</p>
+<p><strong>Proof.</strong> The conjugate of an eigenvalue is an eigenvalue of the conjugate matrix, which is the matrix itself.</p>
+<p><strong>The real dimension.</strong> $\mathfrak{u}(4)$ has real dimension $16$, and its skew-Hermitian part is the whole of it, since a skew-Hermitian matrix has $16$ real parameters.</p>
+<p><strong>Proof.</strong> A Hermitian matrix has $16$ real parameters, and multiplication by $i$ is a real-linear isomorphism onto the skew-Hermitian matrices.</p>
+<h2 id="the-exponential-onto-the-unitary-group">The Exponential onto the Unitary Group</h2>
+<p><strong>Theorem.</strong> If $A$ is skew-Hermitian then $e^{A}$ is unitary, and every unitary matrix is of this form.</p>
+<p><strong>Proof.</strong> $(e^{A})^{\ast}=e^{A^{\ast}}=e^{-A}=(e^{A})^{-1}$ for skew-Hermitian $A$. Conversely a unitary $U$ has a spectral resolution $U=V\operatorname{diag}(e^{i\theta_1},\dots,e^{i\theta_4})V^{\ast}$ with real $\theta_k$, so $U=e^{iH}$ with $H=V\operatorname{diag}(\theta_1,\dots,\theta_4)V^{\ast}$ Hermitian, that is $U=e^{A}$ with $A=iH$ skew-Hermitian.</p>
+<p><strong>Corollary.</strong> The exponential maps $\mathfrak{u}(4)$ onto $U(4)$, and it is a local diffeomorphism at every point whose eigenvalues avoid the differences $2\pi i\mathbb{Z}$.</p>
+<p><strong>Proof.</strong> Surjectivity is the theorem; the derivative of the exponential is invertible exactly when no two eigenvalues of the argument differ by a nonzero multiple of $2\pi i$.</p>
+<p><strong>Corollary.</strong> $U(4)$ is connected, and it is the image of a real vector space of dimension $16$; the map is not injective.</p>
+<p><strong>Proof.</strong> The image of a connected space is connected; and $e^{A}=e^{A+2\pi i\,\mathrm I}$.</p>
+<p><strong>The eigenvalues on the circle.</strong> The spectrum of $e^{A}$ lies on the unit circle, at the points $e^{i\theta_k}$, and the angles are the eigenvalues of $-iA$.</p>
+<p><strong>Proof.</strong> The spectral mapping theorem for the exponential.</p>
+<h2 id="real-skew-matrices-and-the-two-angles">Real Skew Matrices and the Two Angles</h2>
+<p><strong>Theorem.</strong> A real skew matrix of order four has a real orthogonal $Q$ and real numbers $\theta_1,\theta_2$ with
+$$
+A=Q\begin{pmatrix}R_{\theta_1}&0\\0&R_{\theta_2}\end{pmatrix}Q^{\mathsf T},\qquad R_\theta=\begin{pmatrix}0&-\theta\\ \theta&0\end{pmatrix}.
+$$</p>
+<p><strong>Proof.</strong> The real eigenvalues of a real skew matrix are zero, since a real eigenvalue $\lambda$ satisfies $\lambda=-\lambda$; the complex ones come in conjugate pairs, and a conjugate pair $\pm i\theta$ spans a real two-dimensional invariant plane on which the matrix is $\theta$ times a rotation by a quarter turn. Two such planes exhaust the four dimensions.</p>
+<p><strong>Corollary.</strong> The spectrum is $\{i\theta_1,-i\theta_1,i\theta_2,-i\theta_2\}$, and the eigenvalues are purely imaginary and come in pairs of opposite sign.</p>
+<p><strong>Proof.</strong> The eigenvalues of $R_\theta$ are $\pm i\theta$.</p>
+<p><strong>Corollary.</strong> $\det A=\theta_1^{2}\theta_2^{2}\ge0$, so a real skew matrix of order four has a nonnegative determinant, and it is singular exactly when one angle vanishes.</p>
+<p><strong>Proof.</strong> The determinant is the product of the four eigenvalues.</p>
+<p><strong>The count of the angles.</strong> The number of independent angles is $\lfloor4/2\rfloor=2$: the first order at which there are two, and the first at which the generic rotation is not simple.</p>
+<p><strong>Proof.</strong> One angle per invariant plane, and the four dimensions give two planes.</p>
+<h2 id="the-two-summands-and-the-two-parameters">The Two Summands and the Two Parameters</h2>
+<p><strong>Theorem.</strong> $\mathfrak{so}(4)=\mathfrak{sl}_2\oplus\mathfrak{sl}_2$ as the self-dual and the anti-self-dual parts, and in the normal form the two parts are
+$$
+\tfrac12(A+\ast A)=\theta_1J_1,\qquad \tfrac12(A-\ast A)=\theta_2J_2,
+$$
+with $J_1=e_1\wedge e_2+e_3\wedge e_4$ self-dual and $J_2=e_1\wedge e_2-e_3\wedge e_4$ anti-self-dual, so each summand carries exactly one of the two angles.</p>
+<p><strong>Proof.</strong> In the normal form $A=\theta_1J_1+\theta_2J_2$ because $R_{\theta_1}\oplus R_{\theta_2}=\theta_1J_1+\theta_2J_2$; the Hodge star fixes $J_1$ and reverses $J_2$, since $*e_1\wedge e_2=e_3\wedge e_4$.</p>
+<p><strong>Corollary.</strong> A rotation is isoclinic exactly when $|\theta_1|=|\theta_2|$, that is when the two components have equal size, and the two isoclinic families are $\theta_1=\theta_2$ and $\theta_1=-\theta_2$.</p>
+<p><strong>Proof.</strong> Isocliny is the equality of the two angles up to sign, which is the equality of the sizes of the two components.</p>
+<p><strong>Corollary.</strong> Each summand is a copy of $\mathfrak{sl}_2$ with its single angle, and the covering group of the rotation group is $SU(2)\times SU(2)$ modulo the pair $(-1,-1)$.</p>
+<p><strong>Proof.</strong> Each summand exponentiates onto a copy of $SU(2)$, the two copies act independently, and the pair $(-1,-1)$ acts trivially.</p>
+<p><strong>The Killing form.</strong> $K=8\operatorname{tr}(XY)$ on $\mathfrak{so}(4)$ is negative definite, and the two summands are orthogonal.</p>
+<p><strong>Proof.</strong> Every element is traceless, and the product of a self-dual and an anti-self-dual matrix has zero trace.</p>
+<h2 id="the-pfaffian">The Pfaffian</h2>
+<p><strong>Definition.</strong> For a real skew matrix of order four, $\operatorname{Pf}(A)=a_{12}a_{34}-a_{13}a_{24}+a_{14}a_{23}$.</p>
+<p><strong>Theorem.</strong> $\operatorname{Pf}(A)^{2}=\det A$, and in the normal form $\operatorname{Pf}(A)=\pm\theta_1\theta_2$ with the sign of $Q$.</p>
+<p><strong>Proof.</strong> Both sides are polynomials of degree four in the entries and agree on the normal form up to the square of the orthogonal change, whose determinant is $\pm1$; the square removes the sign.</p>
+<p><strong>Corollary.</strong> An invertible real skew matrix of order four has $\operatorname{Pf}\neq0$, and the sign of the Pfaffian separates the invertible ones into two components.</p>
+<p><strong>Proof.</strong> $\operatorname{Pf}^{2}=\det$, and the Pfaffian is continuous.</p>
+<p><strong>Corollary.</strong> $\operatorname{Pf}(QAQ^{\mathsf T})=\det(Q)\operatorname{Pf}(A)$, so the Pfaffian is the invariant of the antisymmetric half that changes sign under the orientation-reversing changes of frame.</p>
+<p><strong>Proof.</strong> The transformation rule of the Pfaffian under congruence by an orthogonal matrix.</p>
+<p><strong>The two angles from the Pfaffian.</strong> $|\operatorname{Pf}A|=|\theta_1\theta_2|$ is the product of the two angles, and the sum of their squares is $\tfrac12\lVert A\rVert_F^{2}$.</p>
+<p><strong>Proof.</strong> The eigenvalues are $\pm i\theta_1,\pm i\theta_2$, so the sum of the squared moduli is $2(\theta_1^{2}+\theta_2^{2})=\lVert A\rVert_F^{2}$.</p>
+<h2 id="the-biquaternion-reading">The Biquaternion Reading</h2>
+<p><strong>Theorem.</strong> Every real skew matrix of order four is $A=L_u+R_v$ with $u,v$ imaginary biquaternions, and $e^{A}=L_{e^{u}}R_{e^{v}}$ is a two-sided rotation with the two one-sided unit quaternions.</p>
+<p><strong>Proof.</strong> The three left multiplications by $i,j,k$ and the three right multiplications span a six-dimensional space of real skew matrices, which is all of $\mathfrak{so}(4)$; the left and right families commute, so the exponential of the sum is the product of the exponentials.</p>
+<p><strong>Corollary.</strong> The two angles are the rotation angles of the two one-sided unit quaternions, and the isoclinic rotations are those with one of the two factors equal to a real scalar.</p>
+<p><strong>Proof.</strong> $e^{u}$ with $u=\theta i$ is $\cos\theta+i\sin\theta$, whose left multiplication rotates both planes by $\theta$; a real factor rotates nothing.</p>
+<p><strong>Corollary.</strong> The two summands of $\mathfrak{so}(4)$ are the imaginary left multiplications and the imaginary right multiplications, so the split of the Lie algebra is the split of the two one-sided families.</p>
+<p><strong>Proof.</strong> The left multiplications form a three-dimensional Lie algebra isomorphic to $\mathfrak{sl}_2$, the right ones another, and they commute.</p>
+<p><strong>The reality of the spectrum in the biquaternion language.</strong> The left multiplication by a unit biquaternion of the form $e^{u}$ with $u$ imaginary has eigenvalues $e^{\pm i\theta}$, each twice, which is the statement that the two planes rotate by the same angle.</p>
+<p><strong>Proof.</strong> The eigenvalues of the left matrix are those of the multiplication operator, computed from the $2\times2$ image.</p>
+<h2 id="summary">Summary</h2>
+<p>A skew-Hermitian matrix is $i$ times a Hermitian one, so its spectrum is purely imaginary and its exponential is unitary; every unitary matrix is the exponential of a skew-Hermitian one, and the exponential is onto but not injective.</p>
+<p>A real skew matrix of order four has the normal form with two rotation blocks and the spectrum $\{i\theta_1,-i\theta_1,i\theta_2,-i\theta_2\}$, with $\det A=\theta_1^{2}\theta_2^{2}$, so it is singular exactly when an angle vanishes. The Pfaffian is $\pm\theta_1\theta_2$ and its square is the determinant, so the sign of the Pfaffian separates the two components of the invertible skew matrices.</p>
+<p>The two summands of $\mathfrak{so}(4)=\mathfrak{sl}_2\oplus\mathfrak{sl}_2$ carry the parameters $\theta_\pm=(\theta_1\pm\theta_2)/2$, and the isoclinic rotations are those with one parameter zero. In the biquaternion algebra the real skew matrices are the sums $L_u+R_v$, and the rotation is the two-sided action of two one-sided unit quaternions.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A^{\ast}=-A$</td>
+<td>skew-Hermitian</td>
+</tr>
+<tr>
+<td>$A=iH$</td>
+<td>the Hermitian form of a skew-Hermitian matrix</td>
+</tr>
+<tr>
+<td>$R_\theta$</td>
+<td>the real rotation block</td>
+</tr>
+<tr>
+<td>$\theta_1,\theta_2$</td>
+<td>the two angles</td>
+</tr>
+<tr>
+<td>$\theta_\pm$</td>
+<td>the two parameters of the two ideals</td>
+</tr>
+<tr>
+<td>$\operatorname{Pf}A$</td>
+<td>the Pfaffian, with $\operatorname{Pf}^{2}=\det$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for the real normal form of a skew matrix and the Pfaffian.</li>
+<li><a href="the-lie-algebra-skew-4-and-so-4.html">The Lie Algebra $\operatorname{Skew}_4\cong\mathfrak{so}(4)$</a>, for the two ideals and the brackets.</li>
+<li><a href="simple-and-non-simple-rotations-one-angle-at-n-le-3-two-angles-at-n-ge-4.html">Simple and Non-Simple Rotations: One Angle at $n\le3$, Two Angles at $n\ge4$</a>, for the geometry of the two angles.</li>
+<li><a href="the-rotor-as-a-square-root-of-a-rotation-the-two-signs-and-the-double-cover-at-n-4.html">The Rotor as a Square Root of a Rotation: the Two Signs and the Double Cover at $n=4$</a>, for the two-sided rotor.</li>
+<li><a href="the-spectral-theorem-the-skew-hermitian-case-and-the-two-imaginary-eigenvalues.html">The Spectral Theorem: the Skew-Hermitian Case and the Two Imaginary Eigenvalues</a>, for the case at order two.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Symmetric Space $\mathrm{GL}_4/O(4)$ and Its Complex Twin — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-symmetric-space-math0-and-its-complex-twin"><strong>The Symmetric Space $\mathrm{GL}_4/O(4)$ and Its Complex Twin</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The pair $(\mathfrak{gl}_4,\mathfrak{so}(4))$ with the Cartan involution $\theta(X)=-X^{\mathsf T}$ gives the decomposition $\mathfrak{gl}_4=\mathfrak{so}(4)\oplus\operatorname{Sym}_4$ with $\mathfrak{p}=\operatorname{Sym}_4$ of dimension $10$ over $\mathbb{R}$ and of complex dimension $10$ over $\mathbb{C}$; the corresponding symmetric spaces are $\mathrm{GL}_4(\mathbb{R})/O(4)$ and $\mathrm{GL}_4(\mathbb{C})/O(4,\mathbb{C})$, both diffeomorphic to a cone hence contractible, with compact dual $U(4)/O(4)$ of dimension $10$.</strong></p>
+<p>The article establishes the Cartan decomposition, computes the dimensions over both fields, identifies the quotients with the cones of positive definite symmetric matrices, describes the geodesics and the curvature, identifies the compact dual, and reads the ten symmetric directions in the axis-free basis, where the trace form takes the value $+4$ on exactly ten elements.</p>
+<p>It assumes <em>Symmetric Pairs and Cartan Pairs: the Reductivity Criterion at $n=4$</em>, <em>The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric</em> and <em>The Trace Form and Its Signature on the Two Halves of $M_4(\mathbb{C})$</em>. The model at order two is <em>The Symmetric Space $\mathrm{GL}_2/O(2)$ and Its Complex Twin</em>.</p>
+<h2 id="the-pair-and-the-cartan-involution">The Pair and the Cartan Involution</h2>
+<p><strong>Definition.</strong> $\theta(X)=-X^{\mathsf T}$ on $\mathfrak{gl}_4$, extended to $\mathfrak{gl}_4(\mathbb{C})$ by complex linearity.</p>
+<p><strong>Proposition.</strong> $\theta$ is an involutive automorphism of the Lie algebra, its fixed set is $\mathfrak{so}(4)=\{X:X^{\mathsf T}=-X\}$, and its $(-1)$-eigenspace is $\operatorname{Sym}_4=\{X:X^{\mathsf T}=X\}$.</p>
+<p><strong>Proof.</strong> $\theta([X,Y])=-[X^{\mathsf T},Y^{\mathsf T}]=[\theta X,\theta Y]$ because transposition reverses the order twice; the eigenspaces are the two classical halves and add to the whole.</p>
+<p><strong>Corollary.</strong> The decomposition $\mathfrak{gl}_4=\mathfrak{so}(4)\oplus\operatorname{Sym}_4$ is a Cartan decomposition: $[\mathfrak{k},\mathfrak{k}]\subset\mathfrak{k}$, $[\mathfrak{k},\mathfrak{p}]\subset\mathfrak{p}$ and $[\mathfrak{p},\mathfrak{p}]\subset\mathfrak{k}$.</p>
+<p><strong>Proof.</strong> The bracket of a skew and a symmetric matrix is symmetric; the bracket of two symmetric matrices is skew.</p>
+<p><strong>Corollary.</strong> The form $\langle X,Y\rangle=-\operatorname{tr}(XY)$ is positive definite on $\mathfrak{so}(4)$ and negative definite on $\operatorname{Sym}_4$, so $\theta$ is the involution associated with this form.</p>
+<p><strong>Proof.</strong> On a real skew matrix $\operatorname{tr}(X^{2})$ is negative, and on a symmetric one positive.</p>
+<p><strong>Corollary.</strong> $\mathfrak{so}(4)$ is a maximal compact subalgebra, and the pair is a symmetric pair of the noncompact type.</p>
+<p><strong>Proof.</strong> The fixed set of a Cartan involution is a maximal compact subalgebra.</p>
+<h2 id="the-dimensions">The Dimensions</h2>
+<p><strong>Proposition.</strong> Over $\mathbb{R}$: $\dim\mathfrak{gl}_4=16$, $\dim\mathfrak{so}(4)=6$, $\dim\operatorname{Sym}_4=10$, and $16=6+10$.</p>
+<p><strong>Proof.</strong> The dimension of the general linear algebra is $n^{2}=16$; the skew matrices of order four are $\binom{4}{2}=6$; the symmetric ones are $\binom{5}{2}=10$.</p>
+<p><strong>Corollary.</strong> Over $\mathbb{C}$ the same numbers hold with complex dimensions, and the real dimensions are doubled: $32=12+20$.</p>
+<p><strong>Proof.</strong> Complexification doubles every real dimension.</p>
+<p><strong>Corollary.</strong> The quotient $\mathrm{GL}_4(\mathbb{R})/O(4)$ has dimension $10$ and its complex twin $\mathrm{GL}_4(\mathbb{C})/O(4,\mathbb{C})$ has complex dimension $10$, real dimension $20$.</p>
+<p><strong>Proof.</strong> The dimension of a quotient by a closed subgroup is the difference.</p>
+<p><strong>The rank.</strong> The maximal flat subspace of $\operatorname{Sym}_4$ is the space of diagonal matrices, of dimension $4$, so the symmetric space has rank $4$; the Weyl group is the group of permutations and sign changes of the four entries, of order $2^{4}\cdot4!=384$.</p>
+<p><strong>Proof.</strong> The diagonal matrices commute and are maximal among the commutative subalgebras of the symmetric part; the normaliser in $O(4)$ permutes the coordinates and changes their signs.</p>
+<p><strong>Corollary.</strong> The rank four is the same four as the order of the matrix, and the Weyl group of order $384$ is the hyperoctahedral group.</p>
+<p><strong>Proof.</strong> The two computations.</p>
+<h2 id="the-quotient-and-its-identification">The Quotient and Its Identification</h2>
+<p><strong>Theorem.</strong> Every invertible real matrix is uniquely $A=HU$ with $H$ positive definite symmetric and $U$ orthogonal, so $\mathrm{GL}_4(\mathbb{R})/O(4)$ is diffeomorphic to the open cone $\operatorname{Sym}_4^{++}$.</p>
+<p><strong>Proof.</strong> The real polar decomposition, and the uniqueness of the positive definite square root.</p>
+<p><strong>Corollary.</strong> The quotient is contractible, and all its homotopy groups vanish.</p>
+<p><strong>Proof.</strong> The cone is convex.</p>
+<p><strong>Corollary.</strong> The complex twin is $\mathrm{GL}_4(\mathbb{C})/O(4,\mathbb{C})$, the space of nondegenerate complex symmetric forms, of complex dimension $10$; it is not contractible, since it contains a circle of scalars modulo the sign.</p>
+<p><strong>Proof.</strong> The quotient is the space of nondegenerate complex symmetric matrices, and in the long exact sequence of $O(4,\mathbb{C})\to\mathrm{GL}_4(\mathbb{C})\to\mathrm{GL}_4/O(4,\mathbb{C})$ the finite group $\pi_1(O(4,\mathbb{C}))$ maps trivially into $\pi_1(\mathrm{GL}_4(\mathbb{C}))=\mathbb{Z}$, so the quotient has infinite fundamental group.</p>
+<p><strong>Corollary.</strong> The real and the complex quotients differ in topology although they agree in dimension over their fields.</p>
+<p><strong>Proof.</strong> The real cone is convex over $\mathbb{R}$; over $\mathbb{C}$ the positivity disappears and with it the convexity.</p>
+<h2 id="geodesics-and-curvature">Geodesics and Curvature</h2>
+<p><strong>Proposition.</strong> The geodesics of $\mathrm{GL}_4(\mathbb{R})/O(4)$ through the identity coset are $t\mapsto e^{tX}$ with $X\in\operatorname{Sym}_4$, and in the cone model they are $t\mapsto A^{1/2}e^{tX}A^{1/2}$ for $A$ positive definite.</p>
+<p><strong>Proof.</strong> The exponential map of a symmetric space and the identification of the quotient with the cone.</p>
+<p><strong>Corollary.</strong> The sectional curvature is nonpositive, and it vanishes exactly on the planes spanned by two commuting diagonal directions.</p>
+<p><strong>Proof.</strong> The curvature of a symmetric space of noncompact type computed from the bracket $[\mathfrak{p},\mathfrak{p}]\subset\mathfrak{k}$, which vanishes on a flat.</p>
+<p><strong>Corollary.</strong> The exponential map of the cone is a diffeomorphism, so the space is complete and simply connected with nonpositive curvature.</p>
+<p><strong>Proof.</strong> Cartan–Hadamard.</p>
+<p><strong>The distance.</strong> The invariant distance from the identity coset to the coset of $e^{X}$ is $\lVert X\rVert$ for the trace form, and in the cone model the distance from the identity to $A$ is $\lVert\log A\rVert$.</p>
+<p><strong>Proof.</strong> The Riemannian distance in a symmetric space of noncompact type.</p>
+<h2 id="the-compact-dual">The Compact Dual</h2>
+<p><strong>Theorem.</strong> The compact dual of $\mathrm{GL}_4(\mathbb{R})/O(4)$ is $U(4)/O(4)$, of dimension $10$, and the compact dual of the complex twin is $U(4)/O(4)$ as well.</p>
+<p><strong>Proof.</strong> The compact real form $U(4)$ with the same involution has fixed set $O(4)$ and $(-1)$-eigenspace $i\operatorname{Sym}_4$, of real dimension $10$.</p>
+<p><strong>Corollary.</strong> $U(4)/O(4)$ is the space of real structures on $\mathbb{C}^{4}$ compatible with the Hermitian form, and it is the set of conjugations of the complex structure.</p>
+<p><strong>Proof.</strong> A symmetric unitary matrix of square one is a conjugation, and the quotient by the orthogonal group identifies the conjugate-linear structures up to unitary change of basis.</p>
+<p><strong>Corollary.</strong> The compact dual has nonnegative curvature and closed geodesics, in contrast with the noncompact space.</p>
+<p><strong>Proof.</strong> Compactness and the sign of the curvature.</p>
+<p><strong>The duality.</strong> The two spaces have the same complexification, and the noncompact one is obtained by multiplying the tangent space by $i$.</p>
+<p><strong>Proof.</strong> The duality between the two real forms of the same complex group.</p>
+<h2 id="the-axis-free-reading">The Axis-Free Reading</h2>
+<p><strong>Proposition.</strong> In the axis-free basis of the operator space the trace form takes the value $+4$ on exactly ten elements and $-4$ on six, and the ten are exactly the operators whose index pattern is symmetric.</p>
+<p><strong>Proof.</strong> The verified computation $\operatorname{tr}(T_{\mu\nu}T_{\rho\sigma})=\pm4\delta$ with the set equality between the plus signs and the symmetric patterns.</p>
+<p><strong>Corollary.</strong> The dimension ten of $\mathfrak{p}$ is read off as the number of plus signs, so the Cartan decomposition and the signature of the trace form are the same split read twice.</p>
+<p><strong>Proof.</strong> The ten plus signs and the six minus signs.</p>
+<p><strong>Corollary.</strong> The compact dual replaces the ten symmetric directions by their imaginary multiples, which is the multiplication of $\mathfrak{p}$ by $i$.</p>
+<p><strong>Proof.</strong> The $(-1)$-eigenspace of the compact form is $i\operatorname{Sym}_4$.</p>
+<p><strong>The split of the ten.</strong> The ten symmetric directions split as four with equal indices and six with distinct ones, so the diagonal directions of dimension four are the flat part and the six mixed ones are transverse to it.</p>
+<p><strong>Proof.</strong> The count of symmetric index patterns: four with equal indices and six with distinct ones.</p>
+<h2 id="the-comparison">The Comparison</h2>
+<p><strong>Proposition.</strong> $\mathrm{GL}_4(\mathbb{C})/U(4)$ has real dimension $16$ and is contractible; $\mathrm{GL}_4(\mathbb{R})/O(4)$ has real dimension $10$ and is contractible; $\mathrm{GL}_4(\mathbb{C})/O(4,\mathbb{C})$ has real dimension $20$ and is not contractible.</p>
+<p><strong>Proof.</strong> The three dimension counts and the three quotient identifications.</p>
+<p><strong>Corollary.</strong> The choice of the compact form decides both the dimension of the quotient and its topology; the unitary quotient is the largest and the simplest.</p>
+<p><strong>Proof.</strong> The three cases.</p>
+<p><strong>Corollary.</strong> The symmetric space of the pair $(\mathfrak{gl}_4,\mathfrak{so}(4))$ is the smallest of the three and the one attached to the transpose, that is to the biquaternion conjugation in the axis-free frame.</p>
+<p><strong>Proof.</strong> The involution $\theta(X)=-X^{\mathsf T}$ and the identification of the transpose with the biquaternion conjugation.</p>
+<p><strong>The meaning.</strong> The pair $(\mathfrak{gl}_4,\mathfrak{so}(4))$ is the pair of the transpose, and the transpose is the conjugation of the biquaternion algebra in the axis-free frame; so the symmetric space $GL_4/O(4)$ is the geometric face of that conjugation.</p>
+<p><strong>Proof.</strong> The two identifications.</p>
+<h2 id="summary">Summary</h2>
+<p>The transpose gives a Cartan involution of $\mathfrak{gl}_4$ with fixed set $\mathfrak{so}(4)$ and $(-1)$-eigenspace $\operatorname{Sym}_4$, of dimensions $6$ and $10$ over $\mathbb{R}$, and $6$ and $10$ again over $\mathbb{C}$ in complex dimensions. The quotient by the orthogonal group is the open cone of positive definite symmetric matrices, of rank four, with Weyl group of order $384$, nonpositive curvature and contractible topology.</p>
+<p>The complex twin is the space of nondegenerate complex symmetric forms, of complex dimension ten, not contractible because the positivity is gone. The compact dual is $U(4)/O(4)$, of dimension ten, with nonnegative curvature and closed geodesics.</p>
+<p>In the axis-free basis the ten symmetric directions are exactly the ten elements on which the trace form is positive, so the Cartan decomposition is the signature of the trace form read twice.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\theta(X)=-X^{\mathsf T}$</td>
+<td>the Cartan involution</td>
+</tr>
+<tr>
+<td>$\mathfrak{k}=\mathfrak{so}(4)$, $\mathfrak{p}=\operatorname{Sym}_4$</td>
+<td>the two eigenspaces, dims $6$ and $10$</td>
+</tr>
+<tr>
+<td>$\mathrm{GL}_4(\mathbb{R})/O(4)\cong\operatorname{Sym}_4^{++}$</td>
+<td>the noncompact space</td>
+</tr>
+<tr>
+<td>$U(4)/O(4)$</td>
+<td>the compact dual</td>
+</tr>
+<tr>
+<td>rank $4$, Weyl group $384$</td>
+<td>the flat and its symmetry group</td>
+</tr>
+<tr>
+<td>ten plus signs</td>
+<td>$\mathfrak{p}$ in the axis-free basis</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Sigurdur Helgason, <em>Differential Geometry, Lie Groups and Symmetric Spaces</em> (AMS, 2001), for Cartan decompositions, duality and curvature.</li>
+<li><a href="symmetric-pairs-and-cartan-pairs-the-reductivity-criterion-at-n-4.html">Symmetric Pairs and Cartan Pairs: the Reductivity Criterion at $n=4$</a>, for the three bracket conditions.</li>
+<li><a href="the-trace-form-and-its-signature-on-the-two-halves-of-m4c.html">The Trace Form and Its Signature on the Two Halves of $M_4(\mathbb{C})$</a>, for the $(10,6)$ signature.</li>
+<li><a href="the-symmetric-space-gl2-o2-and-its-complex-twin.html">The Symmetric Space $\mathrm{GL}_2/O(2)$ and Its Complex Twin</a>, for the case at order two.</li>
+<li><a href="the-geometry-of-the-two-halves-at-n-4-and-the-return-of-the-two-sided-operators.html">The Geometry of the Two Halves at $n=4$, and the Return of the Two-Sided Operators</a>, for the geometric picture as a whole.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

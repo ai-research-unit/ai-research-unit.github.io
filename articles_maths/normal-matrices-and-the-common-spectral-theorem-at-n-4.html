@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Normal Matrices and the Common Spectral Theorem at $n=4$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="normal-matrices-and-the-common-spectral-theorem-at-math0"><strong>Normal Matrices and the Common Spectral Theorem at $n=4$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>A matrix is normal when $A^{\ast}A=AA^{\ast}$, and exactly then is it unitarily diagonalisable; for a normal $A=U\Lambda U^{\ast}$ one has $A^{\ast}=U\bar\Lambda U^{\ast}$, $A^{\mathsf T}=\bar U\Lambda\bar U^{\ast}$ and $\bar A=\bar U\bar\Lambda\bar U^{\ast}$, so the pair of conjugate unitaries diagonalises all four matrices at once, and a single unitary suffices when $A$ is real or symmetric.</strong></p>
+<p>The article proves the equivalence of normality with unitary diagonalisability, writes the four diagonal forms, identifies the four spectral families and their constraints on the eigenvalues, exhibits a Jordan block of size four as the failure, and reads the result in the axis-free frame, where the left matrix of a real element is a scalar multiple of an orthogonal matrix.</p>
+<p>It assumes <em>The Spectral Theorem: the Hermitian Case at $n=4$</em> and <em>The Spectral Theorem: the Skew-Hermitian Case at $n=4$</em>. The model at order two is <em>Normal $2\times2$ Matrices and the Common Spectral Theorem</em>; the fine structure of the spectrum is in <em>The Minimal Polynomial and the Jordan Form of a $4\times4$ Matrix</em>.</p>
+<h2 id="normal-matrices">Normal Matrices</h2>
+<p><strong>Definition.</strong> $A$ is <strong>normal</strong> when $A^{\ast}A=AA^{\ast}$.</p>
+<p><strong>Proposition.</strong> Hermitian, skew-Hermitian and unitary matrices are normal; a scalar multiple of a unitary matrix is normal; sums and products of normal matrices need not be normal.</p>
+<p><strong>Proof.</strong> For $A^{\ast}=\pm A$ the two products $A^{\ast}A$ and $AA^{\ast}$ are equal because $A$ commutes with itself; for $A^{\ast}=A^{-1}$ both products are the identity. For the failure of additivity, the diagonal $D=\operatorname{diag}(1,i,1,i)$ and the symmetric $S=E_{12}+E_{21}$ are both normal, while $D+S$ has the upper-left block $\begin{pmatrix}1&1\\1&i\end{pmatrix}$, for which $X^{\ast}X$ and $XX^{\ast}$ differ in the off-diagonal entries.</p>
+<p><strong>Corollary.</strong> Normality is not a linear condition, since the normal matrices do not form a subspace; it is a quadratic condition on the entries.</p>
+<p><strong>Proof.</strong> The display of the failure.</p>
+<p><strong>Proposition.</strong> $A$ is normal exactly when $\operatorname{tr}(A^{\ast}A)=\sum_k|\lambda_k|^{2}$ and the Frobenius norm of $A$ is the Euclidean norm of the spectrum.</p>
+<p><strong>Proof.</strong> The Schur triangular form gives $\operatorname{tr}(A^{\ast}A)=\sum_k|\lambda_k|^{2}+\sum_{i<j}|t_{ij}|^{2}$, so equality holds exactly when the strictly upper part vanishes.</p>
+<p><strong>Corollary.</strong> Normality is the statement that the triangular form is diagonal, hence that the eigenbasis is orthonormal.</p>
+<p><strong>Proof.</strong> The Schur form is triangular in an orthonormal basis, and it is diagonal exactly when the basis consists of eigenvectors.</p>
+<h2 id="the-common-spectral-theorem">The Common Spectral Theorem</h2>
+<p><strong>Theorem.</strong> $A$ is normal if and only if there is a unitary $U$ and a diagonal $\Lambda$ with $A=U\Lambda U^{\ast}$.</p>
+<p><strong>Proof.</strong> If $A=U\Lambda U^{\ast}$ then $A^{\ast}=U\bar\Lambda U^{\ast}$ and the two products are $U|\Lambda|^{2}U^{\ast}$. Conversely, the Schur form is triangular with the eigenvalues on the diagonal, and the hypothesis of normality forces the strictly upper part to vanish.</p>
+<p><strong>Corollary.</strong> For such $A$,
+$$
+A^{\ast}=U\bar\Lambda U^{\ast},\qquad A^{\mathsf T}=\bar U\Lambda\bar U^{\ast},\qquad \bar A=\bar U\bar\Lambda\bar U^{\ast},
+$$
+so the unitary $U$ diagonalises $A$ and $A^{\ast}$, and the conjugate unitary $\bar U$ diagonalises $A^{\mathsf T}$ and $\bar A$.</p>
+<p><strong>Proof.</strong> Transpose $U\Lambda U^{\ast}$ and use $\overline{U^{\ast}}=\bar U^{\mathsf T}=(\bar U)^{\ast}$; conjugate the same identity.</p>
+<p><strong>Corollary.</strong> A single unitary diagonalises all four exactly when $\bar U=U$ up to relabelling, which holds when $A$ is real and symmetric, and more generally when the eigenbasis can be chosen closed under conjugation.</p>
+<p><strong>Proof.</strong> $A^{\mathsf T}=A$ forces $\bar U\Lambda\bar U^{\ast}=U\Lambda U^{\ast}$; for a real symmetric $A$ the eigenvectors can be taken real.</p>
+<p><strong>The spectral projectors.</strong> $A=\sum_k\lambda_kP_k$ with $P_k$ the orthogonal projections onto the eigenspaces, $P_jP_k=\delta_{jk}P_k$, $\sum_kP_k=\mathrm I_4$, and each $P_k$ a polynomial in $A$.</p>
+<p><strong>Proof.</strong> The projections are $U\operatorname{diag}(0,\dots,1,\dots,0)U^{\ast}$, and the Lagrange interpolation polynomials in $A$ produce them.</p>
+<p><strong>Corollary.</strong> $A^{\ast}=\sum_k\bar\lambda_kP_k$ and $A$ is determined by its spectrum together with its spectral projectors, so normality makes the matrix a function of the spectrum and the basis.</p>
+<p><strong>Proof.</strong> The spectral resolution and the orthogonality of the projectors.</p>
+<h2 id="the-four-families-and-their-constraints">The Four Families and Their Constraints</h2>
+<p><strong>Theorem.</strong> Each of the following is normal with a constraint on the spectrum, and conversely:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>family</th>
+<th>condition</th>
+<th>spectral constraint</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hermitian</td>
+<td>$A^{\ast}=A$</td>
+<td>$\lambda_k\in\mathbb{R}$</td>
+</tr>
+<tr>
+<td>skew-Hermitian</td>
+<td>$A^{\ast}=-A$</td>
+<td>$\lambda_k\in i\mathbb{R}$</td>
+</tr>
+<tr>
+<td>unitary</td>
+<td>$A^{\ast}=A^{-1}$</td>
+<td>$|\lambda_k|=1$</td>
+</tr>
+<tr>
+<td>positive definite</td>
+<td>$A^{\ast}=A$, $\langle v,Av\rangle>0$</td>
+<td>$\lambda_k>0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proof.</strong> From $A=U\Lambda U^{\ast}$ each condition becomes the corresponding condition on the diagonal entries, and conversely.</p>
+<p><strong>Corollary.</strong> The Hermitian and skew-Hermitian families are the fixed sets of the involutions $A\mapsto A^{\ast}$ and $A\mapsto-A^{\ast}$, the unitary family is the fixed set of $A\mapsto(A^{\ast})^{-1}$ on the invertible matrices, and each of the four is a real algebraic subset of the normal set.</p>
+<p><strong>Proof.</strong> The table, read as equations in the spectral data.</p>
+<p><strong>Corollary.</strong> The intersection of the Hermitian and unitary families is the set of involutions $A^{2}=\mathrm I$, of which the Hermitian idempotents are the positive members.</p>
+<p><strong>Proof.</strong> Real spectrum with unit modulus gives $\lambda\in\{\pm1\}$.</p>
+<p><strong>The four eigenvalues.</strong> At order four the spectrum is a multiset of four complex numbers, and the constraint sets are the real line, the imaginary line, the unit circle and the positive half-line, each counted with multiplicity.</p>
+<p><strong>Proof.</strong> The diagonal form and the table.</p>
+<h2 id="the-failure-for-non-normal-matrices">The Failure for Non-Normal Matrices</h2>
+<p><strong>Theorem.</strong> A matrix with a Jordan block of size two or more is not normal.</p>
+<p><strong>Proof.</strong> Let $A=\lambda\mathrm I+N$ with $N^{2}=0$, $N\neq0$. Then $A^{\ast}A-AA^{\ast}=N^{\ast}N-NN^{\ast}$, and for $N=E_{12}$ this is $E_{22}-E_{11}\neq0$.</p>
+<p><strong>Corollary.</strong> The nilpotent $J_4=E_{12}+E_{23}+E_{34}$, with $J_4^{4}=0$ and $J_4^{3}=E_{14}\neq0$, is not normal, and no unitary diagonalises it although its only eigenvalue is zero.</p>
+<p><strong>Proof.</strong> $J_4^{\ast}J_4=E_{22}+E_{33}+E_{44}$ and $J_4J_4^{\ast}=E_{11}+E_{22}+E_{33}$, so the defect is $E_{44}-E_{11}$; and a diagonal form would force $J_4=0$, since its only eigenvalue is zero.</p>
+<p><strong>Corollary.</strong> The size-four Jordan block is the extreme failure: its invariant flag has length four, the longest possible at order four.</p>
+<p><strong>Proof.</strong> The flag of $J_4$ is $0\subset\ker J_4\subset\ker J_4^{2}\subset\ker J_4^{3}\subset\mathbb{C}^{4}$, of length four.</p>
+<p><strong>The deficit.</strong> The defect $J_4^{\ast}J_4-J_4J_4^{\ast}=E_{44}-E_{11}$ has operator norm one, and that nonzero value is the measure of the failure: a normal matrix has zero defect, whatever its spectrum.</p>
+<p><strong>Proof.</strong> The two products computed above, and $\lVert E_{44}-E_{11}\rVert=1$ acting on $e_4$.</p>
+<h2 id="the-axis-free-reading">The Axis-Free Reading</h2>
+<p><strong>Proposition.</strong> In the axis-free frame the left matrix of a real element is a real signed permutation combination and satisfies $L^{\mathsf T}L=N\mathrm I_4$ with $N=Q_t^{2}+B^{2}$, so $L$ is a scalar multiple of an orthogonal matrix and is normal.</p>
+<p><strong>Proof.</strong> $L(\tilde Q)^{\mathsf T}=L(\tilde Q^{\natural})$ and $\tilde Q^{\natural}\tilde Q=\tilde Q\tilde Q^{\natural}=Ne_t$, so both products of $L$ with its transpose are $N\mathrm I_4$.</p>
+<p><strong>Corollary.</strong> The left matrices of the real algebra are normal with spectrum on the circle of radius $\sqrt N$, so the whole real algebra sits inside the normal matrices.</p>
+<p><strong>Proof.</strong> An orthogonal matrix has eigenvalues of modulus one, and multiplying by the scalar $\sqrt N$ scales the moduli.</p>
+<p><strong>The complex case.</strong> For a general complex element the left matrix need not be normal, and it is normal exactly when $\tilde Q^{\natural\ast}\tilde Q=\tilde Q\tilde Q^{\natural\ast}$, that is when the element commutes with its conjugate transpose in the biquaternion algebra.</p>
+<p><strong>Proof.</strong> $L(\tilde Q)^{\ast}=L(\tilde Q^{\natural\ast})$, so $L^{\ast}L=L(\tilde Q^{\natural\ast}\tilde Q)$ and $LL^{\ast}=L(\tilde Q\tilde Q^{\natural\ast})$; the representation is faithful, so the two are equal exactly when the elements are.</p>
+<p><strong>Corollary.</strong> Normality in the algebra is the normality of the left matrix, and the axis-free frame turns the abstract condition into a condition on the four coefficients.</p>
+<p><strong>Proof.</strong> The faithfulness of $L$ and the identity above.</p>
+<p><strong>The warning.</strong> The phrase "the left matrices are normal because they are orthogonal up to a scalar" is true for the real algebra and false for the complex one: over $\mathbb{C}$ a signed permutation with complex coefficients is not a scalar multiple of a unitary matrix.</p>
+<p><strong>Proof.</strong> A complex combination of orthogonal matrices is unitary only if its singular values coincide, which a general combination does not satisfy.</p>
+<h2 id="summary">Summary</h2>
+<p>Normality $A^{\ast}A=AA^{\ast}$ is equivalent to unitary diagonalisability, which is equivalent to the vanishing of the strictly upper part of the Schur form. For a normal $A=U\Lambda U^{\ast}$ the four matrices $A$, $A^{\ast}$, $A^{\mathsf T}$ and $\bar A$ are diagonalised by the pair $U$, $\bar U$, with $A^{\mathsf T}=\bar U\Lambda\bar U^{\ast}$ and $\bar A=\bar U\bar\Lambda\bar U^{\ast}$; one unitary suffices when the eigenbasis is closed under conjugation, as for a real symmetric matrix.</p>
+<p>The four spectral families — Hermitian, skew-Hermitian, unitary, positive definite — are the normal matrices whose spectrum lies on the real line, the imaginary line, the unit circle and the positive half-line. The Jordan block of size four is the extreme failure, with a flag of length four.</p>
+<p>In the axis-free frame the left matrix of a real element satisfies $L^{\mathsf T}L=N\mathrm I_4$ and is normal; for a complex element normality holds exactly when the element commutes with its conjugate transpose.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A^{\ast}A=AA^{\ast}$</td>
+<td>normality</td>
+</tr>
+<tr>
+<td>$A=U\Lambda U^{\ast}$</td>
+<td>the unitary diagonal form</td>
+</tr>
+<tr>
+<td>$\bar U\Lambda\bar U^{\ast}$</td>
+<td>the diagonal form of the transpose</td>
+</tr>
+<tr>
+<td>$J_4$</td>
+<td>the nilpotent Jordan block of size four</td>
+</tr>
+<tr>
+<td>$N=Q_t^{2}+B^{2}$</td>
+<td>the scalar of orthogonality in the axis-free frame</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for normality, the Schur form and the spectral theorem.</li>
+<li><a href="the-spectral-theorem-the-hermitian-case-at-n-4.html">The Spectral Theorem: the Hermitian Case at $n=4$</a>, for the real spectrum and the projectors.</li>
+<li><a href="the-spectral-theorem-the-skew-hermitian-case-at-n-4.html">The Spectral Theorem: the Skew-Hermitian Case at $n=4$</a>, for the imaginary spectrum.</li>
+<li><a href="the-minimal-polynomial-and-the-jordan-form-of-a-4x4-matrix.html">The Minimal Polynomial and the Jordan Form of a $4\times4$ Matrix</a>, for the Jordan block that fails normality.</li>
+<li><a href="normal-2x2-matrices-and-the-common-spectral-theorem.html">Normal $2\times2$ Matrices and the Common Spectral Theorem</a>, for the case at order two.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

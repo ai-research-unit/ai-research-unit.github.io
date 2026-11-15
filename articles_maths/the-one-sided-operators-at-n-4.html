@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The One-Sided Operators at $n=4$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-one-sided-operators-at-math0"><strong>The One-Sided Operators at $n=4$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The left multiplications $L_a$ and the right multiplications $R_a$ of the biquaternion algebra act on the four-dimensional coefficient space, each family is four-dimensional, the two commute, meet in the scalars and span dimension seven, the four matrices of each family are signed permutations of determinant one forming a quaternion group with their negatives, and the two families are stitched by $R^{\mathrm{axf}}=D(L^{\mathrm{axf}})^{\mathsf T}D$ with $D=\operatorname{diag}(1,-1,-1,-1)$.</strong></p>
+<p>The article writes the two families as explicit $4\times4$ matrices, proves the two multiplication laws with their opposite orders, proves faithfulness, proves the stitch in which the transpose is the quaternion conjugation, identifies the eight signed permutations as $Q_8\subset SO(4)$, and reads the two families as the two Kronecker factors of the ambient endomorphism algebra.</p>
+<p>It assumes <em>The Axis-Free Representation of $M_4(\mathbb{C})$</em> and <em>$M_4(\mathbb{C})$ Axis-Free Representation: Operators</em>. The model at order two is <em>The One-Sided Operators at $n=2$</em>; the two-sided construction is <em>The Two-Sided Operators and the Segre Cone at $n=4$</em>.</p>
+<h2 id="the-two-families">The Two Families</h2>
+<p><strong>Definition.</strong> For $a\in\mathbb{B}$ let $L_a$ be the operator $X\mapsto aX$ and $R_a$ the operator $X\mapsto Xa$ on $\mathbb{B}$, and write $\mathbb{B}_L=\{L_a\}$, $\mathbb{B}_R=\{R_a\}$.</p>
+<p><strong>Proposition.</strong> Each family is a complex vector space of dimension $4$, the maps $a\mapsto L_a$ and $a\mapsto R_a$ are linear and injective, and
+$$
+L_{ab}=L_aL_b,\qquad R_{ab}=R_bR_a.
+$$</p>
+<p><strong>Proof.</strong> Linearity in $a$; injectivity because $L_a(e_t)=a$; and composing gives $L_aL_b(X)=abX=L_{ab}(X)$, while $R_aR_b(X)=Xba=R_{ba}(X)$.</p>
+<p><strong>Corollary.</strong> $\mathbb{B}_L$ is a subalgebra isomorphic to $\mathbb{B}$, and $\mathbb{B}_R$ is a subalgebra isomorphic to the opposite algebra $\mathbb{B}^{\mathrm{opp}}$.</p>
+<p><strong>Proof.</strong> The two multiplication laws, one direct and one reversed.</p>
+<p><strong>Corollary.</strong> $L_aR_b=R_bL_a$ for all $a,b$, so the two families commute.</p>
+<p><strong>Proof.</strong> $aXb=Xba$ as a product of three factors.</p>
+<p><strong>The intersection and the sum.</strong> $\mathbb{B}_L\cap\mathbb{B}_R=\mathbb{C}\mathrm I_4$ and $\dim(\mathbb{B}_L+\mathbb{B}_R)=7$.</p>
+<p><strong>Proof.</strong> $L_a=R_b$ forces $a=b$ by evaluation at $e_t$, and then $aX=Xa$ for all $X$, which forces $a$ to be a scalar; the dimension follows from $4+4-1$.</p>
+<h2 id="the-matrices-in-the-axis-free-frame">The Matrices in the Axis-Free Frame</h2>
+<p><strong>Theorem.</strong> In the coefficient basis $\mathcal{E}=(e_t,\vec e_x,\vec e_y,\vec e_z)$ each $L_a$ and each $R_a$ for a unit $a$ is a signed permutation matrix of determinant one, hence an orthogonal matrix in $SO(4)$.</p>
+<p><strong>Proof.</strong> Multiplication by a unit permutes the four basis elements up to signs, since the units form a group with $\vec e_k^{2}=-e_t$; a signed permutation has determinant $\pm1$, and the computation gives $+1$ for the four generators.</p>
+<p><strong>Corollary.</strong> The four left matrices and the four right matrices are eight of the sixteen two-sided matrices $T_{\mu\nu}$, and each is a signed permutation.</p>
+<p><strong>Proof.</strong> $T_{\mu t}=L_\mu$ and $T_{t\nu}=R_\nu$.</p>
+<p><strong>Corollary.</strong> The left matrices act on the coefficient vector by a signed permutation of the four coordinates, and the right matrices likewise, so both families lie in the group of signed permutations of the basis.</p>
+<p><strong>Proof.</strong> The matrix of the operator in the basis it permutes.</p>
+<p><strong>The transposes.</strong> The transpose of $L_a$ is $L_{a^{\natural}}$ and the transpose of $R_a$ is $R_{a^{\natural}}$, where $^{\natural}$ is the quaternion conjugation.</p>
+<p><strong>Proof.</strong> The transpose is the adjoint for the coefficient pairing $\sum q_\mu^2$, and conjugation reverses the order of a product; the explicit matrices confirm it entry by entry.</p>
+<h2 id="the-stitch">The Stitch</h2>
+<p><strong>Theorem.</strong> With $D=\operatorname{diag}(1,-1,-1,-1)$ in the coefficient basis,
+$$
+R^{\mathrm{axf}}=D\,(L^{\mathrm{axf}})^{\mathsf T}D .
+$$</p>
+<p><strong>Proof.</strong> Both sides are signed permutations and the identity is checked on the four generators: the matrix of $L_a$ and the matrix of $R_a$ differ by the change of sign of the three spatial coordinates, which is the conjugation of the algebra.</p>
+<p><strong>Corollary.</strong> The two families are the same family read through $D$, so the left and the right structure are the two conjugates of one another under the coefficient form.</p>
+<p><strong>Proof.</strong> The stitch, read as $D L^{\mathsf T}D=R$.</p>
+<p><strong>Corollary.</strong> The transpose in the axis-free frame is the quaternion conjugation, so the plain adjoint of the algebra is the transpose of the matrix, as stated in the axis-free representation.</p>
+<p><strong>Proof.</strong> The transpose of $L_a$ is $L_{a^{\natural}}$, and $^{\natural}$ is the conjugation.</p>
+<p><strong>The consequence for the two halves.</strong> A two-sided operator is symmetric as a matrix exactly when the index pattern is symmetric, and this is why the trace pairing has the signature $(10,6)$.</p>
+<p><strong>Proof.</strong> The sixteen $T_{\mu\nu}$ satisfy $T_{\mu\nu}^{\mathsf T}=\pm T_{\mu\nu}$ according to the symmetry of the pair, and the trace of the square is $+4$ or $-4$.</p>
+<h2 id="the-group-of-the-four">The Group of the Four</h2>
+<p><strong>Theorem.</strong> The eight matrices $\pm L_\mu$ and the eight $\pm R_\mu$ each form a group isomorphic to $Q_8$, of order $8$, contained in $SO(4)$.</p>
+<p><strong>Proof.</strong> The four units $e_t,\vec e_x,\vec e_y,\vec e_z$ and their negatives form the quaternion group, since $\vec e_k^{2}=-e_t$ and $\vec e_x\vec e_y=\vec e_z$; the left multiplication is an injective homomorphism, so the image is a copy of $Q_8$; each matrix has determinant one, and negation of a $4\times4$ matrix preserves the determinant.</p>
+<p><strong>Corollary.</strong> The two copies of $Q_8$ commute, meet in $\pm\mathrm I_4$, and their product is the group of order $32$ of the signed permutations.</p>
+<p><strong>Proof.</strong> The two families commute, the intersection of the two copies is $\pm\mathrm I_4$ since the only common elements are the scalars, and the product has $8\cdot8/2=32$ elements.</p>
+<p><strong>Corollary.</strong> The group of order $32$ is the central product $Q_8\circ Q_8$, and it is the finite shadow of $\mathrm{Spin}(4)=SU(2)\times SU(2)$.</p>
+<p><strong>Proof.</strong> The identification of the two factors and the covering of the rotor article.</p>
+<p><strong>The orbit structure.</strong> $Q_8$ acts on the coefficient space with the origin as the only fixed point and with orbits of eight elements off the origin, since $\pm L_\mu$ are distinct for distinct pairs.</p>
+<p><strong>Proof.</strong> A nonzero vector $v$ satisfies $av=v$ only for $a=e_t$; otherwise $av$ is another basis direction or its negative.</p>
+<h2 id="the-multiplicative-laws-and-faithfulness">The Multiplicative Laws and Faithfulness</h2>
+<p><strong>Proposition.</strong> The map $a\mapsto L_a$ is an injective algebra homomorphism and $a\mapsto R_a$ is an injective anti-homomorphism; the images have dimension four and are closed under multiplication up to the reversed order.</p>
+<p><strong>Proof.</strong> The laws $L_{ab}=L_aL_b$ and $R_{ab}=R_bR_a$, and injectivity by evaluation at $e_t$.</p>
+<p><strong>Corollary.</strong> $L$ and $R$ are faithful representations of the algebra and of its opposite, and the kernel of each is zero.</p>
+<p><strong>Proof.</strong> Injectivity is faithfulness.</p>
+<p><strong>Corollary.</strong> The commutant of $\mathbb{B}_L$ inside $\operatorname{End}(\mathbb{B})$ is $\mathbb{B}_R$, and conversely.</p>
+<p><strong>Proof.</strong> A map commuting with all left multiplications is a right multiplication.</p>
+<p><strong>The two-sided reading.</strong> The product $L_aR_b$ is the operator $X\mapsto aXb$, which is the two-sided operator $T_{a,b}$; the sixteen $T_{\mu\nu}$ on the units are a basis of $M_4(\mathbb{C})$.</p>
+<p><strong>Proof.</strong> The definition and the basis theorem of the two-sided article.</p>
+<h2 id="the-two-kronecker-factors">The Two Kronecker Factors</h2>
+<p><strong>Theorem.</strong> In the Kronecker reading $M_4(\mathbb{C})\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})$ the family $\mathbb{B}_L$ is the first factor $M_2\otimes\mathrm I_2$ and the family $\mathbb{B}_R$ is the second factor $\mathrm I_2\otimes M_2$.</p>
+<p><strong>Proof.</strong> With $\mathbb{B}\cong M_2(\mathbb{C})$ acting on its two-dimensional module, the left multiplication is the first factor acting on the module index and the right multiplication the second, which is the content of the two displays $L(\tilde Q)=\mathrm I_2\otimes\mathsf M_2(\tilde Q)$ and $R(\tilde Q)=\mathsf M_2(\tilde Q)^{\mathsf T}\otimes\mathrm I_2$.</p>
+<p><strong>Corollary.</strong> The two families are subalgebras and not ideals, and their span has dimension seven while the algebra has dimension sixteen.</p>
+<p><strong>Proof.</strong> The two factors meet in the scalars, and a proper subalgebra of a simple algebra is not an ideal.</p>
+<p><strong>Corollary.</strong> The transposition in the second display is the reason the two families are stitched by $D$ and not by the identity: the right factor is the transpose of the matrix of the element.</p>
+<p><strong>Proof.</strong> The second display carries the transpose, and the transpose of the matrix of $a$ is the conjugation in the axis-free frame.</p>
+<p><strong>The real slice.</strong> Over $\mathbb{R}$ the same two families are real, the four matrices are real signed permutations, and the coefficients of an element are the four real coordinates.</p>
+<p><strong>Proof.</strong> The multiplication table has real structure constants and the coefficient basis is real.</p>
+<h2 id="summary">Summary</h2>
+<p>The left multiplications and the right multiplications of the biquaternion algebra give two four-dimensional families of operators on the coefficient space; they commute, meet in the scalars and span dimension seven. The left family is a copy of the algebra and the right family a copy of the opposite algebra, with the two multiplication laws in the two orders.</p>
+<p>In the axis-free frame each family consists of signed permutations of determinant one, so both lie in $SO(4)$; the four units give a copy of $Q_8$, and the two copies commute and generate the group of order $32$. The two families are stitched by $D(L^{\mathrm{axf}})^{\mathsf T}D$, which is the statement that the transpose is the quaternion conjugation.</p>
+<p>The two families are the two Kronecker factors of the ambient matrix algebra, subalgebras meeting in the scalars. The one-sided operators are the raw material; the two-sided operators are their products.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_a(X)=aX$</td>
+<td>the left multiplication</td>
+</tr>
+<tr>
+<td>$R_a(X)=Xa$</td>
+<td>the right multiplication</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_L,\mathbb{B}_R$</td>
+<td>the two families, dimension $4$ each</td>
+</tr>
+<tr>
+<td>$D=\operatorname{diag}(1,-1,-1,-1)$</td>
+<td>the stitch matrix</td>
+</tr>
+<tr>
+<td>$Q_8$</td>
+<td>the quaternion group of the eight signed permutations</td>
+</tr>
+<tr>
+<td>$L(\tilde Q)=\mathrm I_2\otimes\mathsf M_2(\tilde Q)$</td>
+<td>the left factor in the Kronecker reading</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="m4c-axis-free-representation.html">The Axis-Free Representation of $M_4(\mathbb{C})$</a>, for the coefficient basis and the two families.</li>
+<li><a href="m4c-axis-free-representation-operators.html">$M_4(\mathbb{C})$ Axis-Free Representation: Operators</a>, for the sixteen two-sided matrices and the trace pairing.</li>
+<li><a href="the-two-sided-operators-and-the-segre-cone-at-n-4.html">The Two-Sided Operators and the Segre Cone at $n=4$</a>, for the products of the two families.</li>
+<li><a href="end-m4c-as-an-algebra-the-regular-representation.html">$\operatorname{End}(M_4(\mathbb{C}))$ as an Algebra: the Regular Representation</a>, for the double centraliser.</li>
+<li><a href="the-one-sided-operators-at-n-2.html">The One-Sided Operators at $n=2$</a>, for the case at order two.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -154,7 +154,7 @@ $$</p>
 <p><strong>Proposition.</strong> $\exp$ maps $\mathfrak{so}(n)$ into $\mathrm{SO}(n)$, and it is onto.</p>
 <p><strong>Proof of the first part.</strong> Put $A(t)=\exp(tX)$ with $X^{\mathsf T}=-X$. Then $A(t)^{\mathsf T}=\exp(tX^{\mathsf T})=\exp(-tX)=A(t)^{-1}$, so $A(t)$ is orthogonal; and $\det A(t)=\exp(t\operatorname{tr}X)=1$ because a skew matrix is traceless. The same computation gives the stronger statement that $t\mapsto A(t)$ is a one-parameter subgroup.</p>
 <p><strong>Proof of the second part.</strong> Every real matrix has a real Jordan form, and for an orthogonal matrix every block is a rotation block $R(\theta)$ or a block of signs $\pm1$; the signs come in pairs when $n$ is even, because $\det=1$. Each rotation block is $\exp(\theta J)$ with $J$ the two-dimensional generator, and each pair of $-1$ signs is $\exp(\pi J)$ in the plane of the pair. Summing the logarithms of the blocks in an orthonormal basis gives a skew matrix whose exponential is $A$. The verification below carries this construction out on one hundred random elements at $n=2,\dots,6$ and closes the error at $10^{-15}$.</p>
-<p>The exponential is not injective. At $n=2$ the kernel of the exponential is $2\pi\mathbb{Z}J$; in general two skew matrices with the same exponential differ by a sum of commuting integral multiples of $2\pi J$ on the rotation planes. Surjectivity is therefore a statement about images of lines, not about injectivity.</p>
+<p>The exponential is not injective. At $n=2$ the kernel of the exponential is $2\pi\mathbb{Z}J$; in general two skew matrices with the same exponential differ by a sum of integral multiples of $2\pi J$, taken inside one maximal torus when the rotation angles are distinct, and the degenerate cases escape every single torus — a rotation by $\pi$ in several planes has logarithms whose planes need not be the planes of the rotation. Surjectivity is therefore a statement about images of lines, not about injectivity.</p>
 <h2 id="the-dimension-ladder">The Dimension Ladder</h2>
 <p>The count $n(n-1)/2$ at the first rungs, with the general formula beside it:</p>
 <div class="table-scroll"><table>
@@ -211,7 +211,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<h2 id="math164-the-trivial-group">$\mathrm{SO}(1)$: The Trivial Group</h2>
+<h2 id="math165-the-trivial-group">$\mathrm{SO}(1)$: The Trivial Group</h2>
 <p>At $n=1$ the equation $A^{\mathsf T}A=1$ on a real scalar reads $a^{2}=1$, so $\mathrm O(1)=\{1,-1\}$ and the determinant condition selects the identity:</p>
 <p>$$
 \mathrm{SO}(1)=\bigl\{(1)\bigr\}.
@@ -223,7 +223,7 @@ $$</p>
 <p><strong>Topology.</strong> One point. It is connected, simply connected, compact, and its only homotopy groups vanish. $\pi_0=1$, $\pi_1=0$.</p>
 <p><strong>What is absent.</strong> No rotation, no reflection, no axis, no angle. The empty product of reflections is the identity, which is the base case of the Cartan–Dieudonné count. The exponential is the constant map $0\mapsto1$ on the zero algebra, hence a bijection onto the group: the only rung where the exponential is injective.</p>
 <p><strong>Why the rung is worth recording.</strong> Three later statements are true at $n=1$ and false for some larger $n$, so the ladder has to start here to show that they are not vacuous. Every element is central; every element is a square; the exponential is a bijection. At $n=2$ the first and third survive, the second survives, and at $n\ge3$ the exponential fails to be injective.</p>
-<h2 id="math179-the-circle">$\mathrm{SO}(2)$: The Circle</h2>
+<h2 id="math180-the-circle">$\mathrm{SO}(2)$: The Circle</h2>
 <h3 id="the-matrices">The Matrices</h3>
 <p>At $n=2$ orthogonality is two conditions on four entries, so the group is one-dimensional. Write $A=\begin{pmatrix}a&b\\c&d\end{pmatrix}$. The columns are orthonormal: $a^{2}+c^{2}=1$, $b^{2}+d^{2}=1$, $ab+cd=0$. The last two normalised columns are therefore related by a rotation of the pair, and with $\det A=1$ the solution is</p>
 <p>$$
@@ -280,7 +280,7 @@ $$</p>
 <p><strong>The centre is the whole group.</strong> There is no shortage of central elements; there are no others.</p>
 <p><strong>Every element is its own conjugacy class.</strong> Conjugation inside an abelian group is trivial, so the number of classes equals the number of elements and the class space is the circle itself. This is the exact opposite of dimension three, where the class space is the interval $[0,\pi]$.</p>
 <p><strong>No element has an axis in the sense of dimension three.</strong> The fixed set of $R(\theta)$ for $0<\theta<\pi$ is the origin alone, and there is no invariant line. The axis appears only from $n=3$ on.</p>
-<h3 id="the-two-readings-math225-and-math226">The Two Readings: $\mathrm U(1)$ and $\mathbb{C}^{\times}$</h3>
+<h3 id="the-two-readings-math226-and-math227">The Two Readings: $\mathrm U(1)$ and $\mathbb{C}^{\times}$</h3>
 <p>The circle is the unit group of the complex field, and the identification is exact:</p>
 <p>$$
 \mathbb{C}\supset U(1)=\{z:|z|=1\}\longrightarrow \mathrm{SO}(2),
@@ -294,8 +294,8 @@ $$</p>
 <p><strong>No conjugation classes as an interval.</strong> Because the group is abelian, the trace does not classify: $\operatorname{tr}R(\theta)=2\cos\theta$ is two-to-one on the circle and does not separate $R(\theta)$ from $R(-\theta)$, which are different elements.</p>
 <p><strong>No covering of low degree other than the universal one.</strong> The exponential is a covering of degree countable, $\mathbb{R}\to S^{1}$; there is no finite double cover distinct from the identity, because a double cover of a circle is again a circle.</p>
 <p><strong>No nonabelian simplicity.</strong> The algebra is a line, and a line is abelian.</p>
-<h2 id="math240-the-rotation-group-of-space">$\mathrm{SO}(3)$: The Rotation Group of Space</h2>
-<h3 id="the-lie-algebra-is-math241-with-the-cross-product">The Lie Algebra Is $\mathbb{R}^{3}$ with the Cross Product</h3>
+<h2 id="math241-the-rotation-group-of-space">$\mathrm{SO}(3)$: The Rotation Group of Space</h2>
+<h3 id="the-lie-algebra-is-math242-with-the-cross-product">The Lie Algebra Is $\mathbb{R}^{3}$ with the Cross Product</h3>
 <p>Write a skew matrix as the hat of a vector:</p>
 <p>$$
 \hat u=\begin{pmatrix}0&-u_3&u_2\\u_3&0&-u_1\\-u_2&u_1&0\end{pmatrix},
@@ -359,7 +359,7 @@ $$</p>
 <p><strong>Theorem.</strong> Two elements of $\mathrm{SO}(3)$ are conjugate if and only if they have the same trace, that is, the same angle.</p>
 <p><strong>Proof.</strong> The angle is conjugation-invariant, so equal angles give conjugate elements by rotating one axis onto the other. Conversely, if the traces agree then $\cos\theta=\cos\theta'$, and since both angles lie in $[0,\pi]$ they are equal.</p>
 <p>The class space is therefore the closed interval $[0,\pi]$: the identity at $\theta=0$, the generic class at each interior angle, and the half-turns at $\theta=\pi$ forming a single class, the class of the reflections-through-a-line of the plane, which in space are half-turns about a line. The class of a half-turn is the real projective plane, a single class with a nontrivial topology; the generic class is a sphere.</p>
-<h3 id="the-double-cover-by-math302">The Double Cover by $\mathrm{SU}(2)$</h3>
+<h3 id="the-double-cover-by-math303">The Double Cover by $\mathrm{SU}(2)$</h3>
 <p>The group $\mathrm{SU}(2)$ of <em>Quaternion Rotations and Reflections</em> is the unit sphere $S^{3}$, being $\{(a,b):|a|^{2}+|b|^{2}=1\}$, and it covers $\mathrm{SO}(3)$ twice. The covering is the adjoint action, and its explicit form is the quaternion formula of the next subsection. Three statements summarise the cover.</p>
 <p><strong>The kernel is $\{\pm\mathrm I_2\}$.</strong> Both signs give the same rotation, because the action is by conjugation and the two signs cancel.</p>
 <p><strong>The cover is onto.</strong> The image of $\mathrm{SU}(2)$ is a compact connected subgroup of $\mathrm{SO}(3)$ of dimension three, hence all of it; equivalently, the derivative is an isomorphism of Lie algebras and the exponential of $\mathrm{SU}(2)$ reaches every rotation.</p>
@@ -403,8 +403,8 @@ $$</p>
 <p><strong>No two independent rotations.</strong> Every element fixes a line, so there is no element that rotates two planes by different angles. In dimension four such elements exist and are the generic case.</p>
 <p><strong>No split of the algebra.</strong> $\mathfrak{so}(3)$ is simple, so nothing splits. The first split is at $n=4$.</p>
 <p><strong>No nontrivial centre.</strong> The only central element is the identity, because $-I$ has determinant $-1$ in odd dimension and therefore is not in the group at all.</p>
-<h2 id="math341-the-exceptional-dimension">$\mathrm{SO}(4)$: The Exceptional Dimension</h2>
-<h3 id="the-hodge-star-and-the-split-of-math342">The Hodge Star and the Split of $\Lambda^{2}$</h3>
+<h2 id="math342-the-exceptional-dimension">$\mathrm{SO}(4)$: The Exceptional Dimension</h2>
+<h3 id="the-hodge-star-and-the-split-of-math343">The Hodge Star and the Split of $\Lambda^{2}$</h3>
 <p>The exterior square of $\mathbb{R}^{4}$ has dimension six, and it is identified with the algebra itself by the map</p>
 <p>$$
 \Lambda^{2}\mathbb{R}^{4}\longrightarrow\mathfrak{so}(4),
@@ -469,7 +469,7 @@ R(\theta)\oplus R(\varphi)
 =\exp\Bigl(\tfrac{\theta+\varphi}{2}X^{1}_{+}+\tfrac{\theta-\varphi}{2}X^{1}_{-}\Bigr),
 $$</p>
 <p>which shows that the two isoclinic "angles" are $(\theta+\varphi)/2$ and $(\theta-\varphi)/2$ and that the planes of the two factors are tied to the decomposition of the two-form.</p>
-<h3 id="the-four-dimensional-matrices-of-math415">The Four-Dimensional Matrices of $\mathrm{Spin}(4)$</h3>
+<h3 id="the-four-dimensional-matrices-of-math416">The Four-Dimensional Matrices of $\mathrm{Spin}(4)$</h3>
 <p>The universal cover is</p>
 <p>$$
 \mathrm{Spin}(4)=S^{3}\times S^{3}=\mathrm{SU}(2)\times\mathrm{SU}(2),
@@ -518,7 +518,7 @@ $$</p>
 <p><strong>No single angle.</strong> The trace is one number and the class needs two.</p>
 <p><strong>No "every class meets the diagonal form uniquely".</strong> The exchange of the two angles gives the same class twice, which is the Weyl group acting.</p>
 <p><strong>No rigidity of the class space.</strong> The class space is the closed triangle $\{(\theta_1,\theta_2):\pi\ge\theta_1\ge\theta_2\ge0\}$ modulo the exchange on the diagonal, a two-dimensional orbifold, in contrast with the interval at $n=3$.</p>
-<h2 id="math461-the-general-rung">$\mathrm{SO}(n)$: The General Rung</h2>
+<h2 id="math462-the-general-rung">$\mathrm{SO}(n)$: The General Rung</h2>
 <h3 id="rank-torus-and-normal-form">Rank, Torus and Normal Form</h3>
 <p>The <strong>rank</strong> is the dimension of a maximal torus, and it is the number of independent blocks in the block-diagonal normal form:</p>
 <p>$$
@@ -770,7 +770,7 @@ $$</p>
 </tbody>
 </table></div>
 <h2 id="the-correspondences">The Correspondences</h2>
-<h3 id="the-chains-math802">The Chains $1\to2\to3\to4\to n$</h3>
+<h3 id="the-chains-math803">The Chains $1\to2\to3\to4\to n$</h3>
 <p>Five chains run through the ladder, and each chain is a single phenomenon seen at five sizes.</p>
 <p><strong>The chain of the axis.</strong> At $n=1$ there is nothing to rotate. At $n=2$ the rotation has no invariant line, and the angle alone is the element. At $n=3$ the odd degree of the characteristic polynomial forces an axis, and the element becomes a pair (axis, angle). At $n=4$ the axis can disappear: the element $\operatorname{diag}(R(\theta),R(\pi))$ fixes only the origin. At general $n$ the fixed space has dimension $0$, $1$ or more, with the parity of $n$, and the axis theorem is the special case $n$ odd together with the absence of eigenvalue $-1$.</p>
 <p><strong>The chain of the centre.</strong> At $n=1$ the group is trivial. At $n=2$ everything is central. At $n=3$ the centre collapses to the identity because $-\mathrm I$ has the wrong determinant. At $n=4$ the centre regains $-\mathrm I$ and nothing else. For general $n$ the centre is determined by the parity of $n$ through $\det(-\mathrm I)=(-1)^{n}$.</p>

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Lie Correspondence for the Special Unitary Groups: $\mathfrak{su}(n)\leftrightarrow\mathrm{SU}(n)$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-lie-correspondence-for-the-special-unitary-groups-math0"><strong>The Lie Correspondence for the Special Unitary Groups: $\mathfrak{su}(n)\leftrightarrow\mathrm{SU}(n)$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The correspondence is the pair of objects</p>
+<p>$$
+\mathfrak{su}(n)=\{A\in M_n(\mathbb C):A^{\dagger}=-A,\ \operatorname{tr}A=0\},
+\qquad
+\mathrm{SU}(n)=\{U\in M_n(\mathbb C):U^{\dagger}U=\mathrm I,\ \det U=1\},
+$$</p>
+<p>joined by the same series $\exp(A)=\sum_kA^{k}/k!$ and the same five statements as in the orthogonal case. The difference from that case is not in the statements but in three places: the algebra is a real subspace of a complex space and not a complex subspace, the dimension is $n^{2}-1$ and not $n(n-1)/2$, and the group is simply connected, so the correspondence here is global and needs no covering. Two features are shared and are the reason the article is short where it can be: the proof of T1 is the same three identities, and the proof of T4 is again a spectral theorem, this time for normal matrices.</p>
+<p><strong>The five statements.</strong></p>
+<ul>
+<li><strong>T1.</strong> For every $A\in\mathfrak{su}(n)$ the exponential $\exp A$ is unitary with determinant one.</li>
+<li><strong>T2.</strong> $T_{\mathrm I}\mathrm{SU}(n)=\mathfrak{su}(n)$, and the real dimension is $n^{2}-1$.</li>
+<li><strong>T3.</strong> $d\exp_0=\mathrm{id}$, so $\exp$ is a diffeomorphism of a neighbourhood of $0$ onto a neighbourhood of $\mathrm I$; and $d\exp_A$ is singular exactly when $\operatorname{ad}_A$ has an eigenvalue in $2\pi i\mathbb Z\smallsetminus\{0\}$.</li>
+<li><strong>T4.</strong> For $n\ge1$ every element of $\mathrm{SU}(n)$ is an exponential.</li>
+<li><strong>T5.</strong> The bracket is the second-order term of the group law, so the algebra determines the group locally, and here also globally, because $\mathrm{SU}(n)$ is simply connected.</li>
+</ul>
+<p><strong>Where the work sits.</strong> T1 and T2 are transcriptions of the real case with the transpose replaced by the conjugate transpose; they are proved in full but briefly. T3 has one new feature: the eigenvalues of $\operatorname{ad}_A$ on $\mathfrak{su}(n)$ are differences of purely imaginary numbers, so they can reach $2\pi i$, and the singular set is larger than in the orthogonal case, at the points where the exponential is $-\mathrm I$ as well as $\mathrm I$. T4 is the spectral theorem for normal matrices plus one step with no counterpart in the real case: the sum of the chosen phases is a multiple of $2\pi$, and one phase must be shifted by that multiple so that the logarithm is traceless. The shift is exact, and the integrality is the whole content of the step.</p>
+<p><strong>What is taken as known.</strong> The special unitary groups, their normal forms and their topology are <em>The Special Unitary Groups: $\mathrm{SU}(1)$, $\mathrm{SU}(2)$, $\mathrm{SU}(3)$, $\mathrm{SU}(4)$, $\mathrm{SU}(n)$</em>. The general theory of the exponential and of its differential is <em>The Lie Algebra and the Exponential Map</em>. The Campbell–Baker–Hausdorff series is quoted there and used here only through its first two terms, which are proved directly.</p>
+<p><strong>Conventions.</strong> The conjugate transpose is written $A^{\dagger}=\overline{A}^{\mathsf T}$, the trace $\operatorname{tr}$, the identity $\mathrm I$, the operator norm $\lVert A\rVert$ subordinate to the Hermitian norm on $\mathbb C^{n}$. The Pauli matrices are $\sigma_1,\sigma_2,\sigma_3$, and the basis of $\mathfrak{su}(2)$ used throughout is $T_a=i\sigma_a$, in which each $T_a$ has eigenvalues $\pm i$. A matrix is <strong>anti-Hermitian</strong> when $A^{\dagger}=-A$; it is <strong>Hermitian</strong> when $A^{\dagger}=A$. No physics is invoked, and the Pauli matrices appear only as a basis of a real three-dimensional Lie algebra.</p>
+<h2 id="the-two-objects">The Two Objects</h2>
+<h3 id="the-algebra">The Algebra</h3>
+<p>The set $\mathfrak{su}(n)$ is a real vector space, and it is not a complex one: if $A$ is anti-Hermitian then $(iA)^{\dagger}=-iA^{\dagger}=iA$, so $iA$ is Hermitian, and $iA$ is anti-Hermitian only when $A=0$. This is the first structural difference from $\mathfrak{so}(n)$, and it is why the dimension is counted in real numbers.</p>
+<p><strong>Lemma.</strong> $\mathfrak{su}(n)$ is closed under the bracket.</p>
+<p><strong>Proof.</strong> $(AB-BA)^{\dagger}=B^{\dagger}A^{\dagger}-A^{\dagger}B^{\dagger}=(-B)(-A)-(-A)(-B)=BA-AB$; and the trace of a commutator is zero.</p>
+<p><strong>The real dimension.</strong> An anti-Hermitian matrix has purely imaginary diagonal, giving $n$ real parameters, and its entries above the diagonal are free complex numbers, giving $2\cdot n(n-1)/2=n(n-1)$ real parameters; the entries below the diagonal are then determined. So anti-Hermiticity imposes $n^{2}$ real conditions on the $2n^{2}$ real parameters of a complex matrix, leaving $n^{2}$, and the trace condition removes one more, leaving</p>
+<p>$$
+\dim_{\mathbb R}\mathfrak{su}(n)=n^{2}-1.
+$$</p>
+<p>The count was checked numerically at $n=1,\dots,8$ by enumerating the basis: $0,3,8,15,24,35,48,63$.</p>
+<p><strong>The basis.</strong> For $1\le i<j\le n$ put $X_{ij}=E_{ij}-E_{ji}$ and $Y_{ij}=i(E_{ij}+E_{ji})$; both are anti-Hermitian. Add the $n-1$ diagonal matrices $i(E_{ii}-E_{nn})$ for $i<n$. The count is $n(n-1)+(n-1)=n^{2}-1$, and the matrices are independent, so they form a basis. The first family is real and skew, the second and third are purely imaginary and symmetric, and the two together are the three real directions that the single complex entry of a Hermitian matrix carries.</p>
+<p><strong>The Killing form.</strong> For $n\ge2$ the Killing form of $\mathfrak{su}(n)$ is $\kappa(A,B)=2n\operatorname{tr}(AB)$. Since $\operatorname{tr}(AB)=-\operatorname{tr}(A^{\dagger}B)$ is minus the Hilbert–Schmidt product of $A$ and $B$, and that product is positive definite, $\kappa$ is negative definite. A Lie algebra with negative definite Killing form is compact and reductive, and $\mathfrak{su}(n)$ is simple for $n\ge2$; both statements are quoted from <em>The Special Unitary Groups</em>, §<em>The Killing Form and Simplicity</em>, and the identity for $\kappa$ was checked numerically at $n=2,3,4$ against the adjoint representation, to $5\times10^{-15}$.</p>
+<p><strong>Abelian only at $n=1$.</strong> At $n=1$ the algebra is $\{0\}$. At $n\ge2$ the two elements $T_1,T_2$ placed in the top left $2\times2$ block satisfy $[T_1,T_2]=-2T_3\ne0$, so the algebra is not abelian. This is the sharpest contrast with $\mathfrak{so}(2)$, which is a line, and it is the algebraic content of the difference between the circle and the sphere.</p>
+<p><strong>The complexification, and a trap.</strong> The complexification $\mathfrak{su}(n)\otimes_{\mathbb R}\mathbb C$ is $\mathfrak{sl}(n,\mathbb C)$, of complex dimension $n^{2}-1$. The naive span of the subspace $\mathfrak{su}(n)$ inside $M_n(\mathbb C)$ is larger: it is all of $M_n(\mathbb C)$, of complex dimension $n^{2}$. The reason is that the map $A\otimes z\mapsto zA$ has a kernel, since $A\otimes1+(iA)\otimes i$ maps to $A-A=0$. So the complex span of a real form is not its complexification, and the dimension count distinguishes the two.</p>
+<h3 id="the-group">The Group</h3>
+<p>The unitary group is $\mathrm U(n)=\{U:U^{\dagger}U=\mathrm I\}$ and the special unitary group is the kernel of the determinant on it.</p>
+<p><strong>Proposition.</strong> $\lvert\det U\rvert=1$ for $U\in\mathrm U(n)$, the determinant is a surjective homomorphism $\mathrm U(n)\to\mathrm U(1)$, and $\mathrm{SU}(n)$ is a closed normal subgroup of real codimension one.</p>
+<p><strong>Proof.</strong> $\lvert\det U\rvert^{2}=\det(U^{\dagger}U)=1$. Surjectivity is the diagonal matrix $\operatorname{diag}(z,1,\dots,1)$ with $\lvert z\rvert=1$. The kernel is closed and normal, and the section $z\mapsto\operatorname{diag}(z,1,\dots,1)$ splits the extension, so $\mathrm U(n)$ is a semidirect product of $\mathrm{SU}(n)$ with $\mathrm U(1)$ under conjugation by the section; the action is nontrivial, since conjugating a unitary matrix by $\operatorname{diag}(z,1,\dots,1)$ multiplies the first row and column by phases.</p>
+<p><strong>Compactness.</strong> The columns of a unitary matrix have norm one, so $\mathrm U(n)$ is bounded; it is closed, being the preimage of a point. So $\mathrm{SU}(n)$ is compact. Compactness is used once, in T4, exactly as in the orthogonal case.</p>
+<p><strong>Simply connectedness.</strong> $\mathrm{SU}(n)$ is simply connected for every $n\ge1$: at $n=1$ it is a point, at $n=2$ it is the sphere $S^{3}$, and in general it is a fibre bundle over $S^{2n-1}$ with fibre $\mathrm{SU}(n-1)$, so induction on $n$ through the long exact sequence gives the statement. This is quoted from <em>The Special Unitary Groups</em>, §<em>The Topology</em>. Its consequence is that the correspondence here has no covering in it.</p>
+<h3 id="the-exponential-and-the-three-identities">The Exponential and the Three Identities</h3>
+<p>The series is the same and converges for the same reason, the operator norm being submultiplicative and the domination by $e^{\lVert A\rVert}$ unchanged.</p>
+<p><strong>The three identities.</strong> For all $A$: $\exp(A)^{\dagger}=\exp(A^{\dagger})$; $\exp A\exp(-A)=\mathrm I$; $\det\exp A=e^{\operatorname{tr}A}$.</p>
+<p><strong>Proof.</strong> The first is the continuity of the conjugate transpose, as in the orthogonal case. The second is commutativity of $A$ with $-A$. The third is Jacobi's formula at $t=0$ applied to $t\mapsto\det\exp(tA)$ together with the homomorphism property, as in the orthogonal case.</p>
+<h2 id="t1-the-exponential-lands-in-the-group">T1: The Exponential Lands in the Group</h2>
+<p><strong>Theorem T1.</strong> If $A^{\dagger}=-A$ and $\operatorname{tr}A=0$ then $\exp A\in\mathrm{SU}(n)$.</p>
+<p><strong>Proof.</strong> By the first identity, $\exp(A)^{\dagger}=\exp(A^{\dagger})=\exp(-A)$. By the second, $\exp(A)\exp(-A)=\mathrm I$. So $\exp(A)^{\dagger}=\exp(A)^{-1}$, which is unitarity. By the third, $\det\exp A=e^{\operatorname{tr}A}=1$, since the trace vanishes.</p>
+<p><strong>The reading of the two conditions.</strong> Unitarity is preservation of the Hermitian norm, that is, of the probability amplitude of a state; the determinant condition is preservation of the complex volume, that is, of the phase of the top exterior power. The first comes from the anti-Hermitian part of the hypothesis, the second from the traceless part, and the two parts are independent: an anti-Hermitian matrix of nonzero trace gives a unitary matrix of determinant different from one.</p>
+<p><strong>A check of the independence.</strong> Take $A=i\lambda\mathrm I$ with $\lambda$ real and nonzero. It is anti-Hermitian and its exponential is $e^{i\lambda}\mathrm I$, which is unitary with determinant $e^{in\lambda}\ne1$ in general. So the trace condition is not a consequence of the anti-Hermitian one, and both are needed.</p>
+<h2 id="t2-the-tangent-space-is-the-algebra">T2: The Tangent Space Is the Algebra</h2>
+<p><strong>Theorem T2.</strong> $T_{\mathrm I}\mathrm{SU}(n)=\mathfrak{su}(n)$.</p>
+<p><strong>Proof of the first inclusion.</strong> Let $\gamma$ be a smooth path in $\mathrm{SU}(n)$ with $\gamma(0)=\mathrm I$ and $\dot\gamma(0)=A$. Differentiating $\gamma^{\dagger}\gamma=\mathrm I$ gives $A^{\dagger}+A=0$. Differentiating $\det\gamma=1$, or equivalently $\operatorname{tr}\log\gamma=0$ near the identity, gives $\operatorname{tr}A=0$. So $A\in\mathfrak{su}(n)$.</p>
+<p><strong>Proof of the second inclusion.</strong> For $A\in\mathfrak{su}(n)$ the path $t\mapsto\exp(tA)$ lies in $\mathrm{SU}(n)$ by T1 and starts at $\mathrm I$, so $A$ is a tangent vector.</p>
+<p><strong>The dimension, by regular values.</strong> The map $F(U)=U^{\dagger}U$ has derivative $dF_{\mathrm I}(H)=H^{\dagger}+H$ at the identity, whose image is the space of Hermitian matrices, since $H=S/2$ gives $S$ for Hermitian $S$. So $\mathrm I$ is a regular value and $\mathrm U(n)$ is a submanifold of $M_n(\mathbb C)\cong\mathbb R^{2n^{2}}$ of dimension $2n^{2}-n^{2}=n^{2}$. The determinant restricted to $\mathrm U(n)$ has derivative $d(\det)_U(H)=\det(U)\operatorname{tr}(U^{-1}H)$ at $U$, which is nonzero for $H=U$, so $1$ is a regular value and $\mathrm{SU}(n)$ is a submanifold of dimension $n^{2}-1$. The two counts agree with the basis count of §<em>The Algebra</em>.</p>
+<p><strong>What T2 does not give.</strong> It gives equality of dimensions and the linearisation at one point. It does not give the map, and it does not say that every element of the group is reached; that is T4, and it is the only statement that uses the spectral theorem.</p>
+<h2 id="t3-the-differential-at-the-identity">T3: The Differential at the Identity</h2>
+<p><strong>Theorem T3.</strong> $d\exp_0=\mathrm{id}$ on $\mathfrak{su}(n)$, and $\exp$ is a diffeomorphism of a neighbourhood of $0$ onto a neighbourhood of $\mathrm I$.</p>
+<p><strong>Proof.</strong> $\exp(tA)=\mathrm I+tA+O(t^{2})$, so the derivative in the direction $A$ is $A$; the inverse function theorem then applies to the smooth map $\exp$ on the real vector space $M_n(\mathbb C)\cong\mathbb R^{2n^{2}}$, restricted to the subspace $\mathfrak{su}(n)$, whose image lies in $\mathrm{SU}(n)$ by T1.</p>
+<p><strong>The explicit neighbourhood.</strong> The estimates are those of the orthogonal case and are repeated for completeness. For $\lVert A\rVert<\log2$ the series $\log\exp A$ converges, because $\lVert e^{A}-\mathrm I\rVert\le e^{\lVert A\rVert}-1<1$, and equals $A$. So the ball of radius $\log2$ is a domain on which $\exp$ is injective with inverse $\log$.</p>
+<p><strong>The singular set.</strong> With $\varphi(z)=(1-e^{-z})/z$ and $d\exp_A=e^{A}\varphi(\operatorname{ad}_A)$ as in the orthogonal case, the differential is singular exactly when $\operatorname{ad}_A$ has an eigenvalue in $2\pi i\mathbb Z\smallsetminus\{0\}$. On $\mathfrak{su}(2)$ the eigenvalues of $\operatorname{ad}_A$ for $A=i\theta\sigma_3$ are $0,\pm2i\theta$, since the eigenvalues of $A$ are $\pm i\theta$ and the roots are their differences. So the singular points are $\theta\in\pi\mathbb Z$, that is, the points where $\exp A=\pm\mathrm I$.</p>
+<p><strong>The contrast with the rotations.</strong> In $\mathfrak{so}(3)$ with $A=\theta J_{23}$ the eigenvalues of $\operatorname{ad}_A$ are $0,\pm i\theta$, and the singular set is $\theta\in2\pi\mathbb Z$, only the points where $\exp A=\mathrm I$. The difference of a factor two is the difference between the sphere and the projective space: the exponential of $\mathfrak{su}(2)$ meets $-\mathrm I$ at radius $\pi$, and there it is singular, while $\mathrm{SO}(3)$ has no $-\mathrm I$ and no singularity at $\pi$. The rank was computed numerically: $3$ at $\theta=0.4$, $1$ at $\theta=\pi$, $1$ at $\theta=2\pi$.</p>
+<h2 id="t4-surjectivity">T4: Surjectivity</h2>
+<p><strong>Theorem T4.</strong> For $n\ge1$ the map $\exp:\mathfrak{su}(n)\to\mathrm{SU}(n)$ is onto.</p>
+<p><strong>Proof.</strong> Let $U\in\mathrm{SU}(n)$. It is normal, since $UU^{\dagger}=\mathrm I=U^{\dagger}U$, so by the spectral theorem there is a unitary $V$ and real phases $\theta_1,\dots,\theta_n$ with</p>
+<p>$$
+U=V\operatorname{diag}\bigl(e^{i\theta_1},\dots,e^{i\theta_n}\bigr)V^{\dagger}.
+$$</p>
+<p>Choose each $\theta_j$ in $(-\pi,\pi]$. Then $A_0=V\operatorname{diag}(i\theta_1,\dots,i\theta_n)V^{\dagger}$ is anti-Hermitian, because a diagonal matrix with purely imaginary entries is anti-Hermitian and the conjugate by $V$ preserves that, and $\exp A_0=U$.</p>
+<p><strong>The trace step.</strong> The determinant of $U$ is $\prod_j e^{i\theta_j}=e^{i\sum_j\theta_j}$, and it equals one, so $\sum_j\theta_j=2\pi k$ for some integer $k$. Replace $\theta_n$ by $\theta_n-2\pi k$. The exponential is unchanged, since $e^{i(\theta_n-2\pi k)}=e^{i\theta_n}$, and the new sum is zero. Let $A$ be the matrix built from the adjusted phases. Then $A$ is anti-Hermitian, $\operatorname{tr}A=i\sum_j\theta_j=0$, and $\exp A=U$.</p>
+<p><strong>Why the shift is exact and not approximate.</strong> The exponential depends on the phase modulo $2\pi$, and the trace depends on the phase itself. The only way to satisfy both is to move one phase by an exact multiple of $2\pi$, and the existence of that multiple is the integrality of $\sum_j\theta_j$, which is the determinant condition. Numerically the phase sums of one hundred random elements of $\mathrm{SU}(3)$ were multiples of $2\pi$ to $10^{-9}$, and the adjusted logarithms were anti-Hermitian to $3\times10^{-14}$ with real trace zero to $9\times10^{-16}$.</p>
+<p><strong>What the proof does not use.</strong> No compactness of the group as a manifold, no special structure of $\mathrm{SU}(n)$ beyond normality. What it uses is that the eigenvalues have modulus one, which is unitarity, and that their arguments are determined up to $2\pi$. The same proof runs over $\mathbb C$ for any group whose elements are diagonalisable with eigenvalues in $\mathbb C^{\times}$; that is the route taken for the complex orthogonal group in <em>The Lie Correspondence over the Complexes</em>, where diagonalisability has to be supplied by hand because normality is unavailable.</p>
+<h2 id="the-bracket-from-the-group">The Bracket from the Group</h2>
+<p><strong>The algebra is closed under the bracket, and the bracket is complex bilinear only in appearance.</strong> For $A,B$ anti-Hermitian the bracket is anti-Hermitian and traceless, so it is again in $\mathfrak{su}(n)$; but the product $AB$ is not anti-Hermitian, and the bracket is the antisymmetric combination that survives.</p>
+<p><strong>The second-order theorem.</strong> For $A,B\in\mathfrak{su}(n)$,</p>
+<p>$$
+e^{tA}e^{sB}e^{-tA}e^{-sB}=\mathrm I+ts\,[A,B]+O\bigl((\lvert t\rvert+\lvert s\rvert)^{3}\bigr).
+$$</p>
+<p><strong>Proof.</strong> The expansion of the four factors to second order is the expansion of the orthogonal case, term by term, and the degree-one terms cancel while the degree-two terms sum to $ts(AB-BA)$. Nothing in the computation uses the transpose, the realness or the dimension.</p>
+<p>The numerical check gave residuals $2.2\times10^{-4}$ and $2.8\times10^{-5}$ for the vanishing of $\log(e^{tA}e^{tB})-t(A+B)-\tfrac12t^{2}[A,B]$ at $t=10^{-1}$ and $5\times10^{-2}$, a ratio of $8$ as the third power requires.</p>
+<p><strong>The adjoint action.</strong> For $U\in\mathrm{SU}(n)$ put $\operatorname{Ad}_U(A)=UAU^{\dagger}$. Then $\operatorname{Ad}$ is a homomorphism into $\operatorname{Aut}\mathfrak{su}(n)$, and $\operatorname{Ad}_{\exp A}=e^{\operatorname{ad}_A}$, with $\operatorname{ad}_A(B)=[A,B]$. The proofs are those of the orthogonal case, with the transpose replaced by the conjugate transpose.</p>
+<p><strong>The Campbell–Baker–Hausdorff series.</strong> For small $A,B$ there is $C\in\mathfrak{su}(n)$ with $e^{A}e^{B}=e^{C}$ and</p>
+<p>$$
+C=A+B+\tfrac12[A,B]+\tfrac1{12}\bigl[A,[A,B]\bigr]-\tfrac1{12}\bigl[B,[A,B]\bigr]+\cdots,
+$$</p>
+<p>quoted from <em>The Lie Algebra and the Exponential Map</em>. All terms are iterated brackets, so the group law in exponential coordinates is a Lie series, and the algebra determines the group in a neighbourhood of the identity.</p>
+<h2 id="the-kernel-and-the-global-structure">The Kernel and the Global Structure</h2>
+<h3 id="the-kernel-is-not-discrete">The Kernel Is Not Discrete</h3>
+<p><strong>Proposition.</strong> For $A\in\mathfrak{su}(n)$, $\exp A=\mathrm I$ if and only if every eigenvalue of $A$ lies in $2\pi i\mathbb Z$.</p>
+<p><strong>Proof.</strong> An anti-Hermitian matrix is normal, hence unitarily diagonalisable, with purely imaginary eigenvalues. In a diagonalising basis the exponential is diagonal with entries $e^{\lambda}$, and it equals $\mathrm I$ exactly when every $e^{\lambda}=1$.</p>
+<p><strong>The case of $\mathrm{SU}(2)$, in full.</strong> Write $A=i\,a\cdot\sigma$ with $a\in\mathbb R^{3}$. Its eigenvalues are $\pm i\lvert a\rvert$, so for $\lvert a\rvert\ne0$ the closed form</p>
+<p>$$
+\exp(i\,a\cdot\sigma)=\cos\lvert a\rvert\,\mathrm I+i\sin\lvert a\rvert\,\frac{a\cdot\sigma}{\lvert a\rvert}
+$$</p>
+<p>holds, checked numerically to $10^{-15}$. Hence $\exp A=\mathrm I$ exactly when $\lvert a\rvert\in2\pi\mathbb Z$, and $\exp A=-\mathrm I$ exactly when $\lvert a\rvert\in\pi+2\pi\mathbb Z$. The kernel is the origin together with the spheres of radius $2\pi,4\pi,\dots$, a union of spheres and not a lattice; it was checked directly on one hundred random directions at $\lvert a\rvert=2\pi$, with defect $2.6\times10^{-14}$, and at $\lvert a\rvert=\pi$, where the value is $-\mathrm I$ to $1.4\times10^{-15}$.</p>
+<p><strong>Consequences.</strong> $\exp$ is not injective, and it is not a covering map, because $d\exp_A$ is singular at $A=i\pi\sigma_3$, which is a point of the preimage of $-\mathrm I$. The fibre over a point of $\mathrm{SU}(2)$ is infinite: the logarithms of $U$ with phases $\theta_j$ are the matrices obtained from any one logarithm by adding $2\pi i$ to the phases, and the set of those is a translate of the lattice of integral diagonal matrices.</p>
+<h3 id="the-kernel-on-a-maximal-torus">The Kernel on a Maximal Torus</h3>
+<p><strong>Definition.</strong> The standard maximal torus of $\mathfrak{su}(n)$ is the set of diagonal matrices $i\operatorname{diag}(\phi_1,\dots,\phi_n)$ with real $\phi_j$ summing to zero. It is abelian of dimension $n-1$, and its image under $\exp$ is the diagonal torus of $\mathrm{SU}(n)$.</p>
+<p><strong>Proposition.</strong> $\ker\exp\cap\mathfrak t=\{2\pi i\operatorname{diag}(k_1,\dots,k_n):k_j\in\mathbb Z,\ \sum_jk_j=0\}$, a lattice of rank $n-1$.</p>
+<p><strong>Proof.</strong> A diagonal matrix with entries $e^{i\phi_j}$ is the identity exactly when every $\phi_j\in2\pi\mathbb Z$, and the traceless condition is $\sum_j\phi_j=0$, which becomes $\sum_jk_j=0$. The set of integer vectors with zero sum is the root lattice of $A_{n-1}$, of rank $n-1$.</p>
+<p>So on each torus the kernel is a lattice, exactly as in the orthogonal case, and in the algebra as a whole it is a union of the conjugates of that lattice, which is not discrete.</p>
+<h3 id="why-the-correspondence-is-global-here">Why the Correspondence Is Global Here</h3>
+<p>For $\mathrm{SO}(n)$ the global object was the spin group, because $\mathrm{SO}(n)$ is not simply connected from $n=3$ on. For $\mathrm{SU}(n)$ there is no such correction.</p>
+<p><strong>Theorem.</strong> $\mathrm{SU}(n)$ is simply connected for every $n\ge1$, so it is its own universal cover, and the correspondence $\mathfrak{su}(n)\leftrightarrow\mathrm{SU}(n)$ is the global one given by Lie's third theorem.</p>
+<p><strong>Proof.</strong> The statement is quoted from <em>The Special Unitary Groups</em>, §<em>The Topology</em>, where it is proved by induction with the fibration $\mathrm{SU}(n-1)\to\mathrm{SU}(n)\to S^{2n-1}$ and the long exact sequence. Its role here is the following. Every connected Lie group with algebra $\mathfrak{su}(n)$ is a quotient of the simply connected group by a discrete central subgroup, so the only freedom left is the centre. Since that centre is $\{\zeta\mathrm I:\zeta^{n}=1\}$, cyclic of order $n$, the groups with this algebra are the quotients of $\mathrm{SU}(n)$ by the subgroups of a cyclic group of order $n$, and there are as many of them as $n$ has divisors.</p>
+<p><strong>The centre.</strong> The centre of $\mathrm{SU}(n)$ is $\{\zeta\mathrm I:\zeta^{n}=1\}$, cyclic of order $n$; it is the kernel of the adjoint representation, and the quotient is the adjoint group $\mathrm{SU}(n)/Z\cong\mathrm{PSU}(n)$. At $n=2$ the centre is $\{\pm\mathrm I\}$ and the quotient is $\mathrm{SO}(3)$; that is the subject of the next section.</p>
+<p><strong>One consequence worth stating.</strong> At $n=1$ the group is trivial, the algebra is $\{0\}$, and all five statements hold trivially. The ladder really starts at $n=2$.</p>
+<h2 id="the-isomorphism-math347-and-the-non-isomorphism-of-the-groups">The Isomorphism $\mathfrak{su}(2)\cong\mathfrak{so}(3)$ and the Non-Isomorphism of the Groups</h2>
+<p><strong>The algebra isomorphism.</strong> With $T_a=i\sigma_a$ the brackets are $[T_a,T_b]=-2\varepsilon_{abc}T_c$, checked numerically with defect zero. The adjoint maps $\operatorname{ad}_{T_a}$ are therefore three real $3\times3$ matrices, and they are skew-symmetric, since $\operatorname{ad}$ of an anti-Hermitian element is skew for the Hilbert–Schmidt product. In the basis $T_1,T_2,T_3$ they are</p>
+<p>$$
+\operatorname{ad}_{T_1}=-2\begin{pmatrix}0&0&0\\0&0&-1\\0&1&0\end{pmatrix},
+\qquad
+\operatorname{ad}_{T_2}=-2\begin{pmatrix}0&0&-1\\0&0&0\\1&0&0\end{pmatrix},
+\qquad
+\operatorname{ad}_{T_3}=-2\begin{pmatrix}0&1&0\\-1&0&0\\0&0&0\end{pmatrix},
+$$</p>
+<p>that is, $-2$ times the three generators of $\mathfrak{so}(3)$ in the same numbering. The bracket relation $[\operatorname{ad}_{T_a},\operatorname{ad}_{T_b}]=-2\varepsilon_{abc}\operatorname{ad}_{T_c}$ holds with defect zero, so $A\mapsto\operatorname{ad}_A$ is an isomorphism of Lie algebras $\mathfrak{su}(2)\to\mathfrak{so}(3)$.</p>
+<p><strong>The groups are not isomorphic.</strong> $\mathrm{SU}(2)$ is the sphere $S^{3}$, simply connected, with centre $\{\pm\mathrm I\}$, and $\mathrm{SO}(3)$ has fundamental group $\mathbb Z/2$ and trivial centre. The map $\mathrm{SU}(2)\to\mathrm{SO}(3)$ given by $U\mapsto\operatorname{Ad}_U$ is the double cover. So the same algebra carries two groups, and the correspondence with the algebra holds for both: it is onto for both, it is a diffeomorphism near the identity for both, and only the global statements differ. This is the cleanest illustration in the corpus of the sentence "the algebra determines the group locally, and the simply connected group globally".</p>
+<h2 id="the-ladder">The Ladder</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$n$</th>
+<th>$\dim_{\mathbb R}\mathfrak{su}(n)$</th>
+<th>rank</th>
+<th>$\ker\exp\cap\mathfrak t$</th>
+<th>$\pi_1\mathrm{SU}(n)$</th>
+<th>T4 onto</th>
+<th>centre</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$\{0\}$</td>
+<td>$0$</td>
+<td>yes</td>
+<td>trivial</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>$3$</td>
+<td>$1$</td>
+<td>$2\pi i\,\mathbb Z$</td>
+<td>$0$</td>
+<td>yes</td>
+<td>$\mathbb Z/2$</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$8$</td>
+<td>$2$</td>
+<td>$2\pi i\,A_2$</td>
+<td>$0$</td>
+<td>yes</td>
+<td>$\mathbb Z/3$</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$15$</td>
+<td>$3$</td>
+<td>$2\pi i\,A_3$</td>
+<td>$0$</td>
+<td>yes</td>
+<td>$\mathbb Z/4$</td>
+</tr>
+<tr>
+<td>$5$</td>
+<td>$24$</td>
+<td>$4$</td>
+<td>$2\pi i\,A_4$</td>
+<td>$0$</td>
+<td>yes</td>
+<td>$\mathbb Z/5$</td>
+</tr>
+<tr>
+<td>$6$</td>
+<td>$35$</td>
+<td>$5$</td>
+<td>$2\pi i\,A_5$</td>
+<td>$0$</td>
+<td>yes</td>
+<td>$\mathbb Z/6$</td>
+</tr>
+<tr>
+<td>$n$</td>
+<td>$n^{2}-1$</td>
+<td>$n-1$</td>
+<td>$2\pi i\,A_{n-1}$</td>
+<td>$0$</td>
+<td>yes</td>
+<td>$\mathbb Z/n$</td>
+</tr>
+</tbody>
+</table></div>
+<p>In the fourth column $A_{n-1}$ denotes the root lattice of integer vectors with zero sum, of rank $n-1$. The dimension grows quadratically as in the orthogonal case; the fundamental group is constant, which is the difference; and the centre grows linearly, which is the new column and the reason the quotients $\mathrm{PSU}(n)$ exist.</p>
+<h2 id="what-the-correspondence-does-not-say">What the Correspondence Does Not Say</h2>
+<p><strong>It does not say that $\exp$ is a homomorphism.</strong> It is not; the failure is the bracket, and the second-order theorem above is the measure of it.</p>
+<p><strong>It does not preserve the trace.</strong> The trace of $A$ is zero and the trace of $\exp A$ is not one in general, only its determinant is. The two conditions in the definition of $\mathfrak{su}(n)$ go to the two conditions in the definition of $\mathrm{SU}(n)$, but they go to different ones: the anti-Hermitian condition becomes unitarity, and the traceless condition becomes the determinant.</p>
+<p><strong>It does not determine the group.</strong> $\mathfrak{su}(2)$ is the algebra of $\mathrm{SU}(2)$ and of $\mathrm{SO}(3)$; the second is the quotient by the centre.</p>
+<p><strong>It does not make the bracket the group commutator.</strong> $UVU^{\dagger}V^{\dagger}$ is an element of the group and $[A,B]$ an element of the algebra; the relation is second order.</p>
+<p><strong>It does not give a global chart.</strong> The kernel is not discrete, and $d\exp$ is singular at $i\pi\sigma_3$ and its conjugates, so no single logarithm is continuous on the whole group.</p>
+<h2 id="summary">Summary</h2>
+<p>The algebra is the anti-Hermitian traceless matrices of real dimension $n^{2}-1$, the group is the unitary matrices of determinant one, and the exponential joins them. T1 is again the three identities: the conjugate transpose passes into the series, the commuting signs cancel, the determinant is the exponential of the trace. T2 is a differentiation in both directions and a pair of regular-value counts, one for unitarity and one for the determinant. T3 is the identity derivative, the inverse function theorem, and the singular set read off from $\operatorname{ad}$, which for this algebra sits at every multiple of $\pi$ because the roots are differences of purely imaginary numbers. T4 is the spectral theorem for normal matrices plus the exact shift of one phase by a multiple of $2\pi$ that makes the logarithm traceless. T5 is the bracket as the second-order term. The kernel is a lattice on each maximal torus and a union of spheres in the algebra; the group is simply connected, so the correspondence is global without a cover, and the only remaining ambiguity is the finite centre.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathfrak{su}(n)$</td>
+<td>anti-Hermitian traceless matrices, with $[A,B]=AB-BA$</td>
+</tr>
+<tr>
+<td>$\mathrm{SU}(n)$</td>
+<td>unitary matrices of determinant one</td>
+</tr>
+<tr>
+<td>$\mathrm U(n)$</td>
+<td>unitary matrices</td>
+</tr>
+<tr>
+<td>$A^{\dagger}$</td>
+<td>conjugate transpose $\overline{A}^{\mathsf T}$</td>
+</tr>
+<tr>
+<td>$\operatorname{ad}_A$</td>
+<td>$B\mapsto[A,B]$</td>
+</tr>
+<tr>
+<td>$\operatorname{Ad}_U$</td>
+<td>$A\mapsto UAU^{\dagger}$</td>
+</tr>
+<tr>
+<td>$T_a$</td>
+<td>$i\sigma_a$, a basis of $\mathfrak{su}(2)$, eigenvalues $\pm i$</td>
+</tr>
+<tr>
+<td>$\sigma_a$</td>
+<td>the Pauli matrices</td>
+</tr>
+<tr>
+<td>$\mathfrak t$</td>
+<td>the diagonal traceless subalgebra, rank $n-1$</td>
+</tr>
+<tr>
+<td>$A_{n-1}$</td>
+<td>the root lattice of integer vectors with zero sum</td>
+</tr>
+<tr>
+<td>$\varphi$</td>
+<td>$(1-e^{-z})/z$, the scalar factor of $d\exp$</td>
+</tr>
+<tr>
+<td>$\kappa$</td>
+<td>the Killing form, $2n\operatorname{tr}(AB)$</td>
+</tr>
+<tr>
+<td>$\lVert A\rVert$</td>
+<td>the operator norm for the Hermitian norm</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Special Unitary Groups: $\mathrm{SU}(1)$, $\mathrm{SU}(2)$, $\mathrm{SU}(3)$, $\mathrm{SU}(4)$, $\mathrm{SU}(n)$</em>, for the ladder, the normal forms and the topology.</li>
+<li><em>The Lie Correspondence for the Rotations</em>, for the same five statements over $\mathbb R$ with the orthogonal condition.</li>
+<li><em>The Lie Correspondence over the Complexes</em>, for the complex orthogonal case, where T4 needs a Jordan argument.</li>
+<li><em>The Lie Algebra and the Exponential Map</em>, for the general theory and the differential formula.</li>
+<li><em>The Exponential and the Lie Group Structure of $\mathrm{GL}_n(\mathbb{R})$</em>, for the exponential of a general matrix.</li>
+<li><em>Quaternion Rotations and Reflections</em>, for the dictionary between $\mathrm{SU}(2)$ and the unit quaternions.</li>
+<li><em>The Fundamental Group of a Lie Group</em>, for the fibrations used in the simply-connectedness statement.</li>
+</ul>
+<h2 id="verification">Verification</h2>
+<p>Six scratch scripts under <code>/tmp/vlie/</code> (not part of the corpus) recompute the claims on samples of one hundred elements. Every number below is a printed residual or a rank.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>claim</th>
+<th>computation</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>T1: $\exp\mathfrak{su}(n)\subseteq\mathrm{SU}(n)$</td>
+<td>$100$ random elements, $n=1,\dots,8$</td>
+<td>$\lVert U^{\dagger}U-\mathrm I\rVert\le1.2\times10^{-12}$, $\lvert\det U-1\rvert\le1.5\times10^{-12}$</td>
+</tr>
+<tr>
+<td>T4: every element has a traceless anti-Hermitian logarithm</td>
+<td>$100$ elements, $n=2,\dots,6$, with the phase shift</td>
+<td>$\lVert A+A^{\dagger}\rVert\le3.4\times10^{-14}$, $\lvert\operatorname{Re}\operatorname{tr}A\rvert\le9.2\times10^{-16}$, $\lVert e^{A}-U\rVert\le8.6\times10^{-14}$</td>
+</tr>
+<tr>
+<td>the determinant forces $\sum_j\theta_j\in2\pi\mathbb Z$</td>
+<td>$100$ random elements of $\mathrm{SU}(3)$</td>
+<td>$100/100$ to $10^{-9}$</td>
+</tr>
+<tr>
+<td>the closed form of $\exp$ on $\mathfrak{su}(2)$</td>
+<td>$100$ random $a$, compared with $\cos\lvert a\rvert\,\mathrm I+i\sin\lvert a\rvert\,(a\cdot\sigma)/\lvert a\rvert$</td>
+<td>$1.1\times10^{-15}$</td>
+</tr>
+<tr>
+<td>the kernel of $\exp$ on $\mathfrak{su}(2)$</td>
+<td>$100$ directions at $\lvert a\rvert=2\pi$, and at $\lvert a\rvert=\pi$</td>
+<td>$2.6\times10^{-14}$; the value at $\pi$ is $-\mathrm I$ to $1.4\times10^{-15}$</td>
+</tr>
+<tr>
+<td>$d\exp$ is singular exactly at $\theta\in\pi\mathbb Z$</td>
+<td>finite-difference rank on a basis of $\mathfrak{su}(2)$</td>
+<td>rank $3$ at $\theta=0.4$, rank $1$ at $\pi$ and at $2\pi$</td>
+</tr>
+<tr>
+<td>the singular set is where $\operatorname{ad}$ has eigenvalue $2\pi ik$</td>
+<td>eigenvalues of $\operatorname{ad}_A$, $A=i\theta\sigma_3$</td>
+<td>$\pm0.8i$, $\pm2\pi i$, $\pm4\pi i$ at $\theta=0.4,\pi,2\pi$</td>
+</tr>
+<tr>
+<td>$[T_a,T_b]=-2\varepsilon_{abc}T_c$</td>
+<td>all nine brackets against the basis</td>
+<td>defect $0$</td>
+</tr>
+<tr>
+<td>$\operatorname{ad}_{T_a}=-2J_a$ and the bracket relation</td>
+<td>the three adjoint matrices</td>
+<td>antisymmetry $0$; bracket defect $0$</td>
+</tr>
+<tr>
+<td>$\kappa(A,B)=2n\operatorname{tr}(AB)$</td>
+<td>adjoint representation at $n=2,3,4$</td>
+<td>$4.6\times10^{-15}$, $5.1\times10^{-15}$, $1.3\times10^{-14}$</td>
+</tr>
+<tr>
+<td>the real dimension</td>
+<td>size of the basis $X_{ij},Y_{ij},i(E_{ii}-E_{nn})$</td>
+<td>$0,3,8,15,24,35,48,63$ at $n=1,\dots,8$</td>
+</tr>
+<tr>
+<td>the second-order commutator</td>
+<td>$\lVert e^{tA}e^{tB}e^{-tA}e^{-tB}-\mathrm I-t^{2}[A,B]\rVert$</td>
+<td>$8.8\times10^{-5},8.8\times10^{-8},8.8\times10^{-11}$ at $t=10^{-1},10^{-2},10^{-3}$</td>
+</tr>
+<tr>
+<td>the Campbell–Baker–Hausdorff second term</td>
+<td>$\lVert\log(e^{tA}e^{tB})-t(A+B)-\tfrac12t^{2}[A,B]\rVert$</td>
+<td>$2.2\times10^{-4}$ and $2.8\times10^{-5}$; ratio $8$ on halving $t$</td>
+</tr>
+<tr>
+<td>the centre and the fundamental group</td>
+<td>quoted; no numerical content</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

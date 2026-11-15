@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Jordan Algebra $\operatorname{Sym}_4$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-jordan-algebra-math0"><strong>The Jordan Algebra $\operatorname{Sym}_4$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The symmetric matrices with the product $A\circ B=\tfrac12(AB+BA)$ form a Jordan algebra of degree $4$ and rank $4$, special inside $M_4(\mathbb{C})$, with the ordinary trace as its Jordan trace and the ordinary determinant as its Jordan determinant, and over the reals it is formally real with a cone of squares.</strong></p>
+<p>The article proves that the symmetrised product is commutative and satisfies the Jordan identity, that the powers are well defined and agree with the associative ones, that the rank is the maximal number of orthogonal idempotents, that the trace form $\operatorname{tr}(AB)$ is associative for $\circ$, and that the cone of squares is the cone of positive semidefinite matrices; it closes with speciality and with the failure of formal reality over $\mathbb{C}$.</p>
+<p>It assumes <em>The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=4$</em> and <em>The Symmetric and Antisymmetric Parts of a Product at $n=4$</em>. The general theory is <em>Jordan Algebras and the Jordan Identity</em>; the case $n=2$ is <em>The Jordan Algebra $\operatorname{Sym}_2$</em>; the Peirce decomposition is <em>The Peirce Decomposition of $\operatorname{Sym}_4$ as a Jordan Algebra</em>.</p>
+<h2 id="the-product-and-the-identity">The Product and the Identity</h2>
+<p><strong>Definition.</strong> For $A,B\in\operatorname{Sym}_4$ put $A\circ B=\tfrac12(AB+BA)$.</p>
+<p><strong>Proposition.</strong> The product is well defined on $\operatorname{Sym}_4$, commutative, bilinear, and has the unit $\mathrm I_4$.</p>
+<p><strong>Proof.</strong> For symmetric $A,B$ the anticommutator is symmetric by the parity rule, so $A\circ B$ lies in the half. Commutativity and bilinearity are read from the formula, and $\mathrm I_4\circ A=A$.</p>
+<p><strong>Theorem (the Jordan identity).</strong> $(A\circ B)\circ A^{2}=A\circ(B\circ A^{2})$ for all $A,B$, where $A^{2}=A\circ A$.</p>
+<p><strong>Proof.</strong> In the associative algebra, using $A^{2}=A\circ A$ and associativity,</p>
+<p>$$
+4\bigl((A\circ B)\circ A^{2}\bigr)=(AB+BA)A^{2}+A^{2}(AB+BA)=ABA^{2}+BA^{3}+A^{3}B+A^{2}BA,
+$$</p>
+<p>$$
+4\bigl(A\circ(B\circ A^{2})\bigr)=A(BA^{2}+A^{2}B)+(BA^{2}+A^{2}B)A=ABA^{2}+A^{3}B+BA^{3}+A^{2}BA,
+$$</p>
+<p>and the two right-hand sides are the same four terms.</p>
+<p><strong>Corollary.</strong> $\operatorname{Sym}_4$ with $\circ$ is a Jordan algebra: commutative, with the identity above, and power associative.</p>
+<p><strong>Proof.</strong> Power associativity follows from the identity by the standard argument: the subalgebra generated by one element is associative, since the Jordan identity linearised gives $A^{m}\circ A^{n}=A^{m+n}$.</p>
+<p><strong>The powers are the associative ones.</strong> $A^{\circ k}=A^{k}$ for every $k\ge1$.</p>
+<p><strong>Proof.</strong> Induction, using that a power of a symmetric matrix is symmetric and that $A$ commutes with its own powers.</p>
+<h2 id="degree-and-rank">Degree and Rank</h2>
+<p><strong>Definition.</strong> An <strong>idempotent</strong> is $E\neq0$ with $E\circ E=E$; two idempotents are <strong>orthogonal</strong> when $E\circ F=0$.</p>
+<p><strong>Proposition.</strong> The symmetric idempotents are the orthogonal projections, and two are orthogonal exactly when their images are orthogonal subspaces.</p>
+<p><strong>Proof.</strong> $E^{2}=E$ and $E^{\mathsf T}=E$ is the definition of an orthogonal projection; $E\circ F=0$ with both idempotent forces $EF=FE=0$, so each kills the other's image.</p>
+<p><strong>Theorem.</strong> The rank of $\operatorname{Sym}_4$ is $4$: the unit is a sum of four pairwise orthogonal idempotents, and no more.</p>
+<p><strong>Proof.</strong> $\mathrm I_4=E_{11}+E_{22}+E_{33}+E_{44}$, and the four summands are pairwise orthogonal idempotents. Five nonzero pairwise orthogonal idempotents would give five mutually orthogonal nonzero subspaces of $\mathbb{C}^{4}$, whose dimensions sum to at least five.</p>
+<p><strong>Corollary.</strong> The idempotents of rank $k$ are the orthogonal projections onto $k$-dimensional subspaces, and they form the Grassmannian $\mathrm{Gr}_k(\mathbb{C}^{4})$.</p>
+<p><strong>Proof.</strong> An idempotent of trace $k$ is a projection of rank $k$, and the projections of rank $k$ correspond to their images.</p>
+<p><strong>The degree.</strong> The Jordan determinant has degree $4$ in the entries, and the generic minimal polynomial of an element has degree $4$; both numbers equal the size of the matrices.</p>
+<p><strong>Proof.</strong> The determinant of a $4\times4$ matrix is homogeneous of degree $4$, and the generic element of $\operatorname{Sym}_4$ has four distinct eigenvalues, so its minimal polynomial in the Jordan sense has degree $4$.</p>
+<h2 id="the-trace-form-and-the-determinant">The Trace Form and the Determinant</h2>
+<p><strong>Proposition.</strong> The bilinear form $\tau(A,B)=\operatorname{tr}(A\circ B)=\operatorname{tr}(AB)$ is symmetric, and it is <strong>associative</strong> for $\circ$:</p>
+<p>$$
+\tau(A\circ B,C)=\tau(A,B\circ C).
+$$</p>
+<p><strong>Proof.</strong> $\operatorname{tr}((A\circ B)C)=\tfrac12\operatorname{tr}(ABC+BAC)=\tfrac12\operatorname{tr}(ABC+ACB)$ by cyclicity, and $\operatorname{tr}(A(B\circ C))=\tfrac12\operatorname{tr}(ABC+ACB)$.</p>
+<p><strong>Corollary.</strong> $\tau$ is a trace form in the sense of Jordan algebras, and it is the restriction of the trace pairing of the associative algebra.</p>
+<p><strong>Proof.</strong> Associativity is the displayed identity, and the identification with $\beta$ is immediate.</p>
+<p><strong>Proposition.</strong> On $\operatorname{Sym}_4(\mathbb{R})$ the form $\tau$ is positive definite, with $\tau(S,S)=\sum_{ij}s_{ij}^{2}$.</p>
+<p><strong>Proof.</strong> The diagonal of $S^{2}$ is $\sum_{j}s_{ij}^{2}$ summed over $i$, which is the sum of the squares of all entries.</p>
+<p><strong>The determinant.</strong> The Jordan determinant of $\operatorname{Sym}_4$ is the ordinary determinant, and the Jordan trace is the ordinary trace; both are multiplicative and linear in the appropriate sense.</p>
+<p><strong>Proof.</strong> For a diagonalisable element the two are the product and the sum of the eigenvalues, which are the values of the determinant and the trace; both sides extend by polynomiality.</p>
+<p><strong>Corollary.</strong> $\det(A\circ A)=\det(A)^{2}$, so the determinant of a square is a square.</p>
+<p><strong>Proof.</strong> $A\circ A=A^{2}$ and $\det(A^{2})=\det(A)^{2}$.</p>
+<h2 id="the-cone-of-squares">The Cone of Squares</h2>
+<p><strong>Definition.</strong> $\Sigma=\{A\circ A:A\in\operatorname{Sym}_4(\mathbb{R})\}$ is the set of squares.</p>
+<p><strong>Theorem.</strong> $\Sigma$ is the cone of positive semidefinite symmetric matrices.</p>
+<p><strong>Proof.</strong> A square $A^{2}$ with $A$ symmetric has $\langle A^{2}v,v\rangle=\lVert Av\rVert^{2}\ge0$, so it is positive semidefinite. Conversely a positive semidefinite $S$ has a positive semidefinite square root $A$ with $A^{2}=S$.</p>
+<p><strong>Corollary.</strong> $\Sigma$ is a closed convex cone, pointed, with nonempty interior the positive definite matrices; its closure is itself and its interior is the set of squares of invertible elements.</p>
+<p><strong>Proof.</strong> The cone of positive semidefinite matrices has these properties, and the squares fill it; an invertible $A$ gives a positive definite square, and a positive definite matrix has a positive definite root.</p>
+<p><strong>Corollary.</strong> The cone is homogeneous: for every invertible $A$ the map $S\mapsto A^{\mathsf T}SA$ preserves it, and it acts transitively on the interior.</p>
+<p><strong>Proof.</strong> $\langle A^{\mathsf T}SAv,v\rangle=\langle SAv,Av\rangle\ge0$; transitivity follows from diagonalisation by congruence.</p>
+<p><strong>The boundary.</strong> The boundary consists of the squares of singular elements, stratified by rank: rank $k$ for $k=0,1,2,3$.</p>
+<p><strong>Proof.</strong> A positive semidefinite matrix is on the boundary exactly when it is not invertible, that is when its rank is at most three; the rank is constant on a stratum and the strata are the orbits of the congruence action.</p>
+<p><strong>What the cone is not.</strong> The set $\{A^{2}:A\in\operatorname{Sym}_4(\mathbb{C})\}$ over $\mathbb{C}$ is not a cone in any real sense: it contains every complex symmetric matrix, since every complex symmetric matrix has a symmetric square root.</p>
+<p><strong>Proof.</strong> A complex symmetric matrix is orthogonally diagonalisable by a complex orthogonal matrix, and each eigenvalue has a square root.</p>
+<h2 id="speciality-and-formal-reality">Speciality and Formal Reality</h2>
+<p><strong>Definition.</strong> A Jordan algebra is <strong>special</strong> when it is a subalgebra of $A^{+}$ for an associative algebra $A$, where $A^{+}$ carries the symmetrised product.</p>
+<p><strong>Proposition.</strong> $\operatorname{Sym}_4$ is special, being a subalgebra of $M_4(\mathbb{C})^{+}$.</p>
+<p><strong>Proof.</strong> The symmetrised product of two symmetric matrices is symmetric, so the inclusion is a homomorphism of Jordan algebras.</p>
+<p><strong>Corollary.</strong> Every identity of Jordan algebras that holds in all $A^{+}$ holds in $\operatorname{Sym}_4$; the Albert algebra of dimension $27$ is the exceptional one and does not embed this way.</p>
+<p><strong>Proof.</strong> Speciality means the identities of the free special Jordan algebra hold; the Albert algebra is the standard example where one fails.</p>
+<p><strong>Proposition.</strong> Over $\mathbb{R}$, $\operatorname{Sym}_4(\mathbb{R})$ is formally real: a sum of squares vanishes only when every summand vanishes.</p>
+<p><strong>Proof.</strong> $\tau(\sum A_i^{2},\sum A_i^{2})=\sum\tau(A_i^{2},A_i^{2})=\sum_{i}\sum_{jk}(A_i)_{jk}^{2}$, a sum of real squares; it vanishes only if every $A_i$ is zero.</p>
+<p><strong>Corollary.</strong> Over $\mathbb{R}$ the cone of squares is pointed, and the algebra carries a positive definite trace form; over $\mathbb{C}$ neither holds, since $A=\operatorname{diag}(1,i,0,0)$ is symmetric with $A^{2}=\operatorname{diag}(1,-1,0,0)$ of trace zero.</p>
+<p><strong>Proof.</strong> Formal reality is the displayed sum of squares; the complex example has $\tau(A^{2},A^{2})=1+1=2$ but $\operatorname{tr}(A^{2})=0$, showing that the trace pairing is indefinite.</p>
+<p><strong>The dimension count.</strong> $\operatorname{Sym}_4$ has dimension $10$, the same as $UT_4$ and the same as the positive part of the trace form; the three agreements are three different statements, and only the second and the third concern the same pairing.</p>
+<p><strong>Proof.</strong> The first is the count of the symmetric entries, the second the count of the positive signs of $\beta$, and the third the dimension of the complement of $\mathfrak{so}(4)$ in $\mathfrak{gl}_4$.</p>
+<h2 id="summary">Summary</h2>
+<p>The symmetrised product makes $\operatorname{Sym}_4$ a Jordan algebra: commutative, with unit, power associative, and satisfying the Jordan identity by the associativity of the ambient algebra. Its rank is $4$ and its degree is $4$, its idempotents are the orthogonal projections and its rank-$k$ idempotents form the Grassmannian.</p>
+<p>The trace form is the restriction of the trace pairing and is associative for $\circ$, positive definite on the real half. The determinant and the trace of the associative algebra serve as the Jordan determinant and the Jordan trace, and the square of an element has determinant the square of the determinant.</p>
+<p>The cone of squares over $\mathbb{R}$ is the cone of positive semidefinite matrices, closed, convex, pointed, homogeneous under congruence, with the boundary stratified by rank. The algebra is special, and it is formally real over $\mathbb{R}$; over $\mathbb{C}$ both properties fail, the cone becomes everything and the trace form becomes indefinite.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A\circ B=\tfrac12(AB+BA)$</td>
+<td>the Jordan product</td>
+</tr>
+<tr>
+<td>$A^{\circ k}$</td>
+<td>the $k$-th Jordan power, equal to $A^{k}$</td>
+</tr>
+<tr>
+<td>$\tau(A,B)=\operatorname{tr}(AB)$</td>
+<td>the associative trace form</td>
+</tr>
+<tr>
+<td>$\Sigma$</td>
+<td>the cone of squares, positive semidefinite over $\mathbb{R}$</td>
+</tr>
+<tr>
+<td>$E$</td>
+<td>an idempotent, an orthogonal projection</td>
+</tr>
+<tr>
+<td>$\det$, $\operatorname{tr}$</td>
+<td>the Jordan determinant and trace</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Kevin McCrimmon, <em>A Taste of Jordan Algebras</em> (Springer, 2004), for the Jordan identity, speciality and formal reality.</li>
+<li>Pascual Jordan, John von Neumann and Eugene Wigner, <em>On an Algebraic Generalization of the Quantum Mechanical Formalism</em> (Annals of Mathematics, 1934), for the original appearance of the algebra of observables.</li>
+<li><a href="the-peirce-decomposition-of-sym-4-as-a-jordan-algebra.html">The Peirce Decomposition of $\operatorname{Sym}_4$ as a Jordan Algebra</a>, for the decomposition against an idempotent.</li>
+<li><a href="the-two-halves-over-r-symmetric-and-antisymmetric-at-n-4.html">The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=4$</a>, for the half that carries this product.</li>
+<li><a href="the-jordan-algebra-sym-2.html">The Jordan Algebra $\operatorname{Sym}_2$</a>, for the same structure at order two.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

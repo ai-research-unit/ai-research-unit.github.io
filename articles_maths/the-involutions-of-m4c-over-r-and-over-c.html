@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Involutions of $M_4(\mathbb{C})$ over $\mathbb{R}$ and over $\mathbb{C}$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-involutions-of-math0-over-math1-and-over-math2"><strong>The Involutions of $M_4(\mathbb{C})$ over $\mathbb{R}$ and over $\mathbb{C}$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>Four involutions generate the whole picture — the transpose, the entrywise conjugation, the conjugate transpose and the negative transpose — and they split into the $\mathbb{C}$-linear ones, whose fixed sets are $\operatorname{Sym}_4$ and $\operatorname{Skew}_4$, and the semilinear ones, whose fixed sets are $M_4(\mathbb{R})$, $\operatorname{Herm}_4$ and $\mathfrak{u}(4)$.</strong></p>
+<p>The article classifies the involutions of $M_4(\mathbb{C})$ into the two kinds, computes the fixed and anti-fixed spaces of the four basic maps, describes the inner twists $A\mapsto SA^{\mathsf T}S^{-1}$ and their two similarity classes, and shows that the quaternion conjugation $\natural$ is the transpose in the axis-free frame but not in the Peirce frame, where a correction matrix is needed.</p>
+<p>It assumes <em>The Matrix Algebra $M_4(\mathbb{C})$</em> and <em>$M_4(\mathbb{C})$ Pauli Representation</em> for the two frames. The general theory is <em>The Involutions of a Matrix Algebra</em>; the case $n=2$ is <em>The Involutions of $M_2(\mathbb{C})$ over $\mathbb{R}$ and over $\mathbb{C}$</em>. The two halves and their signatures are <em>The Trace Form and Its Signature on the Two Halves of $M_4(\mathbb{C})$</em>.</p>
+<h2 id="the-four-basic-maps">The Four Basic Maps</h2>
+<p><strong>Definition.</strong> On $M_4(\mathbb{C})$ consider</p>
+<p>$$
+\mathsf T(A)=A^{\mathsf T},\qquad \mathsf C(A)=\bar A,\qquad \ast(A)=A^{\ast}=\bar A^{\mathsf T},\qquad -\mathsf T(A)=-A^{\mathsf T}.
+$$</p>
+<p><strong>Proposition.</strong> Each of the four is an involution, that is a bijection of order two. The maps $\mathsf T$ and $-\mathsf T$ are $\mathbb{C}$-linear antiautomorphisms; $\mathsf C$ is a semilinear automorphism; $\ast$ is a semilinear antiautomorphism.</p>
+<p><strong>Proof.</strong> Transposition reverses products, $(AB)^{\mathsf T}=B^{\mathsf T}A^{\mathsf T}$, and conjugating the entries also reverses them, $\overline{AB}=\bar A\bar B$; the two commute, so $\ast=\mathsf T\circ\mathsf C=\mathsf C\circ\mathsf T$. Each map is its own inverse, and linearity is read from the formulas.</p>
+<p><strong>Terminology.</strong> An involution of the <strong>first kind</strong> is $\mathbb{C}$-linear; one of the <strong>second kind</strong> is semilinear. So $\mathsf T$ and $-\mathsf T$ are of the first kind, $\mathsf C$ and $\ast$ of the second.</p>
+<p><strong>The two identities that organize the rest.</strong> First, $\mathsf T$ and $\mathsf C$ commute, so $\ast$ is their composite in either order. Second, a first-kind involution is an antiautomorphism, so its fixed set is closed under the anticommutator and under the commutator but not under the product; this is why $\operatorname{Sym}_4$ is a Jordan algebra and $\operatorname{Skew}_4$ a Lie algebra rather than associative algebras.</p>
+<h2 id="the-fixed-sets-of-the-four-maps">The Fixed Sets of the Four Maps</h2>
+<p><strong>Theorem.</strong> The fixed and anti-fixed spaces are as follows.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Map</th>
+<th>Kind</th>
+<th>Fixed space</th>
+<th>$\dim_{\mathbb{R}}$</th>
+<th>Anti-fixed</th>
+<th>$\dim_{\mathbb{R}}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathsf T$</td>
+<td>first, anti</td>
+<td>$\operatorname{Sym}_4$</td>
+<td>$10$</td>
+<td>$\operatorname{Skew}_4$</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>$-\mathsf T$</td>
+<td>first, anti</td>
+<td>$\operatorname{Skew}_4$</td>
+<td>$6$</td>
+<td>$\operatorname{Sym}_4$</td>
+<td>$10$</td>
+</tr>
+<tr>
+<td>$\mathsf C$</td>
+<td>second, auto</td>
+<td>$M_4(\mathbb{R})$</td>
+<td>$16$</td>
+<td>$iM_4(\mathbb{R})$</td>
+<td>$16$</td>
+</tr>
+<tr>
+<td>$\ast$</td>
+<td>second, anti</td>
+<td>$\operatorname{Herm}_4$</td>
+<td>$16$</td>
+<td>$\mathfrak{u}(4)$</td>
+<td>$16$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proof.</strong> $A=A^{\mathsf T}$ is the definition of symmetry, with $\binom{4+1}{2}=10$ free entries, and $A=-A^{\mathsf T}$ leaves $\binom{4}{2}=6$. The fixed set of $\mathsf C$ is the real matrices, of real dimension $16$, and the anti-fixed set is $i$ times it. For the dagger, $A=\bar A^{\mathsf T}$ means $A_{ij}=\bar A_{ji}$, which is $16$ real conditions on $32$ real parameters, leaving $16$; the anti-fixed set $A=-\bar A^{\mathsf T}$ is the same count.</p>
+<p><strong>Corollary.</strong> In every row the two dimensions sum to $32$.</p>
+<p><strong>Proof.</strong> An involution of a complex vector space diagonalises with eigenvalues $\pm1$, and both eigenspaces are real subspaces.</p>
+<p><strong>The two splitting statements.</strong> The first kind splits the algebra into two complex subspaces of complex dimensions $10$ and $6$; the second kind splits it into two real subspaces of real dimension $16$ each. The complex decomposition $M_4=\operatorname{Herm}_4\oplus\mathfrak{u}(4)$ is the one that makes $\mathrm{GL}_4\simeq U(4)$, and the complex decomposition $M_4=\operatorname{Sym}_4\oplus\operatorname{Skew}_4$ is the one that makes the trace form diagonal.</p>
+<h2 id="the-first-kind-and-the-inner-twists">The First Kind and the Inner Twists</h2>
+<p><strong>Definition.</strong> For invertible $S$ the <strong>inner twist</strong> of the transpose is $\varphi_S(A)=SA^{\mathsf T}S^{-1}$.</p>
+<p><strong>Proposition.</strong> $\varphi_S$ is an involution exactly when $S^{\mathsf T}=\varepsilon S$ with $\varepsilon=\pm1$.</p>
+<p><strong>Proof.</strong> Compute $\varphi_S^{2}(A)=SS^{-{\mathsf T}}AS^{\mathsf T}S^{-1}$; this equals $A$ for all $A$ exactly when $S^{\mathsf T}$ is a scalar multiple of $S$, and rescaling forces the scalar to be $\pm1$.</p>
+<p><strong>Proposition.</strong> For $S$ symmetric the fixed space is $S^{-1}\operatorname{Sym}_4$, of dimension $10$; for $S$ skew the fixed space is $S^{-1}\operatorname{Skew}_4$, of dimension $6$.</p>
+<p><strong>Proof.</strong> $\varphi_S(A)=A$ reads $SA^{\mathsf T}=(SA)^{\mathsf T}$, that is $SA$ symmetric when $S$ is symmetric, and skew when $S$ is skew; multiplication by $S^{-1}$ is a linear isomorphism.</p>
+<p><strong>Corollary (two similarity classes).</strong> Over $\mathbb{C}$ every $\mathbb{C}$-linear involution is a twist of $\mathsf T$ by some $S$, and up to conjugation by an invertible matrix there are exactly two: the orthogonal type, with fixed algebra of dimension $6$ isomorphic to $\mathfrak{so}(4)$, and the symplectic type, with fixed algebra of dimension $10$.</p>
+<p><strong>Proof.</strong> Conjugating $\varphi_S$ by $P$ gives $\varphi_{PSP^{\mathsf T}}$, so the class of the involution is the congruence class of $S$; over $\mathbb{C}$ all nondegenerate symmetric forms are congruent, and all nondegenerate alternating forms are congruent.</p>
+<p><strong>The reading through the halves.</strong> The two classes are the two halves read as fixed algebras: the orthogonal type returns $\operatorname{Skew}_4$, the symplectic type returns a conjugate of $\operatorname{Sym}_4$. The decomposition of the algebra into the two halves is therefore the same fact as the existence of two similarity classes of first-kind involutions.</p>
+<h2 id="the-second-kind-and-the-real-forms">The Second Kind and the Real Forms</h2>
+<p><strong>Definition.</strong> For invertible $S$ the <strong>twist of the dagger</strong> is $\psi_S(A)=SA^{\ast}S^{-1}$; it is an involution exactly when $S^{\ast}=\varepsilon S$.</p>
+<p><strong>Proof.</strong> $\psi_S^{2}(A)=SS^{-{\ast}}AS^{\ast}S^{-1}$, which is $A$ for all $A$ exactly when $S^{\ast}$ is a scalar multiple of $S$; rescaling gives $\pm1$.</p>
+<p><strong>Proposition.</strong> With $S=\mathrm I_4$ the involution $\ast$ fixes $\operatorname{Herm}_4$ and anti-fixes $\mathfrak{u}(4)$, both of real dimension $16$.</p>
+<p><strong>Proof.</strong> This is the fourth row of the table.</p>
+<p><strong>Proposition.</strong> The automorphism $\mathsf C$ fixes $M_4(\mathbb{R})$, a real form: a real subalgebra of real dimension $16$ whose complexification is the algebra.</p>
+<p><strong>Proof.</strong> The real matrices are closed under products, and $\mathbb{C}\otimes_{\mathbb{R}}M_4(\mathbb{R})\cong M_4(\mathbb{C})$ by the real and imaginary parts of the entries.</p>
+<p><strong>The two real forms.</strong> A semilinear automorphism of order two fixes a real form, and the complex algebra has two of them: $M_4(\mathbb{R})$ and the quaternionic form $M_2(\mathbb{H})$, of real dimension $16$. The first is the fixed set of the entrywise conjugation, the second of a conjugation composed with a suitable twist. The classification is <em>The Quaternionic Structure and the Real Forms of $M_4(\mathbb{C})$</em>.</p>
+<p><strong>Faithfulness of the picture.</strong> The first kind gives complex subspaces and the second kind real subspaces. Reading a dimension without its kind is the commonest error at this order: $\operatorname{Herm}_4$ has complex dimension $16$ only if one forgets that it is not a complex subspace at all.</p>
+<h2 id="the-transpose-in-the-two-frames">The Transpose in the Two Frames</h2>
+<p><strong>In the axis-free frame the transpose is the conjugation.</strong> With $L^{\mathrm{axf}}$ the left family of the coefficient basis,</p>
+<p>$$
+L^{\mathrm{axf}}(\tilde Q)^{\mathsf T}=L^{\mathrm{axf}}(\tilde Q^{\natural}),\qquad \tilde Q^{\natural}=Q_te_t-Q_x\vec e_x-Q_y\vec e_y-Q_z\vec e_z .
+$$</p>
+<p><strong>Proof.</strong> Both sides are signed permutations of the same four columns; the identity is checked on the four units, where transposition fixes $L^{\mathrm{axf}}_{e_t}=\mathrm I_4$ and exchanges the entries of the three vector matrices, which is exactly the sign change of $\natural$.</p>
+<p><strong>In the Peirce frame it is not.</strong> There the transpose needs a correction matrix on each side,</p>
+<p>$$
+L(\tilde Q)^{\mathsf T}=C_LL(\tilde Q^{\natural})C_L,\qquad C_L=\mathrm I_2\otimes\sigma_2,
+$$</p>
+<p>and the same formula holds on the right with $C_R=\sigma_2\otimes\mathrm I_2$.</p>
+<p><strong>Proof.</strong> The Peirce frame is a conjugate of the axis-free one, $L=C_\Pi^{-1}L^{\mathrm{axf}}C_\Pi$, and transposition turns a conjugation into a congruence: $(C_\Pi^{-1}MC_\Pi)^{\mathsf T}=C_\Pi^{\mathsf T}M^{\mathsf T}C_\Pi^{-{\mathsf T}}$. The matrix $C_\Pi^{\mathsf T}C_\Pi^{-{\mathsf T}}$ reduces to the two copies of $\sigma_2$ displayed.</p>
+<p><strong>What this means.</strong> The identity "the transpose is the quaternion conjugation" is a property of the frame and not of the algebra: it holds in the axis-free basis, where the frame vectors are the four units, and fails in the Peirce basis, where they are built from a root. The adjoint, by contrast, is the conjugate transpose in both frames, because the frames are orthogonal with equal norms and the adjoint is frame-independent up to that common scale.</p>
+<p><strong>The moral for the halves.</strong> $\operatorname{Sym}_4$ and $\operatorname{Skew}_4$ are defined by the transpose and hence by the frame. In the axis-free basis they are the two index patterns, the ten symmetric slots and the six antisymmetric ones; in the Peirce basis the same two spaces are described by the two correction matrices. The spaces are frame-independent; only their description is not.</p>
+<h2 id="summary">Summary</h2>
+<p>The four maps $\mathsf T$, $\mathsf C$, $\ast$ and $-\mathsf T$ are involutions, and the first two commute so that $\ast$ is their composite. The first kind, $\mathbb{C}$-linear, fixes $\operatorname{Sym}_4$ of dimension $10$ or $\operatorname{Skew}_4$ of dimension $6$; the second kind, semilinear, fixes $M_4(\mathbb{R})$, $\operatorname{Herm}_4$ or $\mathfrak{u}(4)$, each of real dimension $16$.</p>
+<p>The inner twists $SA^{\mathsf T}S^{-1}$ are involutions exactly when $S$ is symmetric or skew, and up to conjugation there are only the two classes, the orthogonal and the symplectic, which are the two halves. The twists of the dagger behave the same way with $S^{\ast}=\pm S$, and the semilinear automorphisms fix the two real forms.</p>
+<p>The quaternion conjugation $\natural$ is the transpose in the axis-free frame, exactly and with no correction, and is the transpose composed with two copies of $\sigma_2$ in the Peirce frame. The difference is a change of frame, not of the algebra.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathsf T$, $\mathsf C$, $\ast$</td>
+<td>transpose, entrywise conjugation, conjugate transpose</td>
+</tr>
+<tr>
+<td>$\natural$</td>
+<td>the quaternion conjugation of $\mathbb{B}$</td>
+</tr>
+<tr>
+<td>$\operatorname{Sym}_4$, $\operatorname{Skew}_4$</td>
+<td>the fixed and anti-fixed spaces of $\mathsf T$</td>
+</tr>
+<tr>
+<td>$\operatorname{Herm}_4$, $\mathfrak{u}(4)$</td>
+<td>the fixed and anti-fixed spaces of $\ast$</td>
+</tr>
+<tr>
+<td>$\varphi_S$, $\psi_S$</td>
+<td>the inner twists of $\mathsf T$ and of $\ast$</td>
+</tr>
+<tr>
+<td>$C_L$, $C_R$</td>
+<td>$\mathrm I_2\otimes\sigma_2$ and $\sigma_2\otimes\mathrm I_2$, the Peirce dictionaries</td>
+</tr>
+<tr>
+<td>$L^{\mathrm{axf}}$, $L$</td>
+<td>the left families of the coefficient and Peirce frames</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (AMS, 1998), for the classification of involutions of the first and second kind.</li>
+<li><a href="involutions-of-a-central-simple-algebra.html">Involutions of a Central Simple Algebra</a>, for the general classification this article instantiates.</li>
+<li><a href="the-involution-and-the-hermitian-structure-of-m4c.html">The Involution and the Hermitian Structure of $M_4(\mathbb{C})$</a>, for the dagger, the Hermitian form and the unitary group.</li>
+<li><a href="the-quaternionic-structure-and-the-real-forms-of-m4c.html">The Quaternionic Structure and the Real Forms of $M_4(\mathbb{C})$</a>, for the two real forms and their conjugations.</li>
+<li><a href="m4c-pauli-representation.html">$M_4(\mathbb{C})$ Pauli Representation</a>, for the Peirce frame and the matrices $C_L$ and $C_R$.</li>
+<li><a href="the-involutions-of-m2c-over-r-and-over-c.html">The Involutions of $M_2(\mathbb{C})$ over $\mathbb{R}$ and over $\mathbb{C}$</a>, for the same four maps at order two.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Symmetric Pairs and Cartan Pairs: the Reductivity Criterion at $n=4$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="symmetric-pairs-and-cartan-pairs-the-reductivity-criterion-at-math0"><strong>Symmetric Pairs and Cartan Pairs: the Reductivity Criterion at $n=4$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The pair $(\mathfrak{gl}_4,\mathfrak{so}(4))$ with complement $\operatorname{Sym}_4$ satisfies the three bracket conditions, and it is symmetric because $\mathfrak{so}(4)$ is the fixed set of the involution $\theta(X)=-X^{\mathsf T}$; the pair $(\mathfrak{b},\mathfrak{h})$ satisfies the same three conditions and is not symmetric, which is exactly where the criterion needs reductivity.</strong></p>
+<p>The article states the three conditions, verifies them for the two pairs $(\mathfrak{gl}_4,\mathfrak{so}(4))$ and $(\mathfrak{sl}_4,\mathfrak{so}(4))$, produces the Cartan involution and its two eigenspaces, proves the criterion that a reductive pair with the three conditions comes from an involution, shows the Borel pair as the counterexample that fails without reductivity, and records the symmetric spaces and their dimensions.</p>
+<p>It assumes <em>The Two Halves as Orthogonal Complements at $n=4$</em> and <em>The Lie Algebra $\mathfrak{gl}_4(\mathbb{C})$ and $\mathfrak{sl}_4(\mathbb{C})$ of $M_4(\mathbb{C})$</em>. The case $n=2$ is <em>Symmetric Pairs and Cartan Pairs: the Reductivity Criterion at $n=2$</em>. The global picture is <em>The Symmetric Space $\mathrm{GL}_4/O(4)$ and Its Complex Twin</em>.</p>
+<h2 id="the-three-bracket-conditions">The Three Bracket Conditions</h2>
+<p><strong>Definition.</strong> A <strong>symmetric pair</strong> is a Lie algebra $\mathfrak{g}$ with a decomposition $\mathfrak{g}=\mathfrak{k}\oplus\mathfrak{p}$ into subspaces such that</p>
+<p>$$
+[\mathfrak{k},\mathfrak{k}]\subset\mathfrak{k},\qquad [\mathfrak{k},\mathfrak{p}]\subset\mathfrak{p},\qquad [\mathfrak{p},\mathfrak{p}]\subset\mathfrak{k}.
+$$</p>
+<p><strong>Proposition.</strong> For $\mathfrak{k}=\operatorname{Skew}_4$ and $\mathfrak{p}=\operatorname{Sym}_4$ all three inclusions hold.</p>
+<p><strong>Proof.</strong> Let $K,K'$ be antisymmetric and $S,S'$ symmetric. Then $(KK'-K'K)^{\mathsf T}=K'^{\mathsf T}K^{\mathsf T}-K^{\mathsf T}K'^{\mathsf T}=K'K-KK'$, so the commutator of two skew matrices is skew. Next, $(KS-SK)^{\mathsf T}=S^{\mathsf T}K^{\mathsf T}-K^{\mathsf T}S^{\mathsf T}=-SK+KS$, so the commutator of a skew and a symmetric matrix is symmetric. Finally $(SS'-S'S)^{\mathsf T}=S'S-SS'$, so the commutator of two symmetric matrices is skew.</p>
+<p><strong>Corollary.</strong> $\mathfrak{so}(4)=\operatorname{Skew}_4$ is a Lie subalgebra of dimension $6$, $\operatorname{Sym}_4$ is a $\mathfrak{so}(4)$-module of dimension $10$, and the bracket of two symmetric matrices lands in $\mathfrak{so}(4)$.</p>
+<p><strong>Proof.</strong> The three inclusions with the dimensions $6$ and $10$.</p>
+<p><strong>The same for the traceless algebra.</strong> With $\mathfrak{sl}_4$ in place of $\mathfrak{gl}_4$ the decomposition is $\mathfrak{so}(4)\oplus\operatorname{Sym}_4^{0}$, of dimensions $6+9=15$, since a skew matrix is automatically traceless.</p>
+<p><strong>Proof.</strong> The trace of a commutator is zero, so both bracketed pieces stay traceless; the symmetric part is cut down by the traceless condition, from $10$ to $9$.</p>
+<p><strong>The failure of the naive complement.</strong> $\operatorname{Sym}_4$ itself is not a subalgebra, so the pair is not a direct sum of Lie algebras; and $\mathfrak{gl}_4$ is not the product $\mathfrak{so}(4)\times\operatorname{Sym}_4$ even as a vector space with brackets, because $[\mathfrak{p},\mathfrak{p}]\neq0$.</p>
+<h2 id="the-cartan-involution">The Cartan Involution</h2>
+<p><strong>Theorem.</strong> The map $\theta(X)=-X^{\mathsf T}$ is an involutive automorphism of the Lie algebra $\mathfrak{gl}_4(\mathbb{C})$, with fixed set $\mathfrak{so}(4)$ and $(-1)$-eigenspace $\operatorname{Sym}_4$.</p>
+<p><strong>Proof.</strong> $\theta^{2}=\mathrm{id}$ is clear, and</p>
+<p>$$
+\theta[X,Y]=-(XY-YX)^{\mathsf T}=-(Y^{\mathsf T}X^{\mathsf T}-X^{\mathsf T}Y^{\mathsf T})=(-X^{\mathsf T})(-Y^{\mathsf T})-(-Y^{\mathsf T})(-X^{\mathsf T})=[\theta X,\theta Y].
+$$</p>
+<p>The fixed equation $-X^{\mathsf T}=X$ is antisymmetry, and $-X^{\mathsf T}=-X$ is symmetry.</p>
+<p><strong>Corollary.</strong> An involution of $\mathfrak{g}$ always produces a symmetric pair by its two eigenspaces.</p>
+<p><strong>Proof.</strong> For an automorphism $\theta$ with $\theta^{2}=\mathrm{id}$, the eigenspaces satisfy $[\mathfrak{g}_\varepsilon,\mathfrak{g}_\delta]\subset\mathfrak{g}_{\varepsilon\delta}$; with $\varepsilon,\delta=\pm1$ this is the table of the three conditions.</p>
+<p><strong>The form and the involution agree.</strong> For the trace pairing, $\beta(\mathfrak{k},\mathfrak{p})=0$, and $\beta(\theta X,Y)=-\beta(X,\theta Y)$; the Cartan involution is symmetric for $\beta$.</p>
+<p><strong>Proof.</strong> $\beta(KS)=\operatorname{tr}(KS)=0$ was proved in the orthogonal-complement article, and $\beta(\theta X,Y)=\operatorname{tr}(-X^{\mathsf T}Y)=-\operatorname{tr}(X^{\mathsf T}Y)=-\beta(X,\theta Y)$ since $\operatorname{tr}(X^{\mathsf T}Y^{\mathsf T})=\operatorname{tr}(XY)$ after transposing.</p>
+<p><strong>The signs of the pairing on the two pieces.</strong> On $\mathfrak{so}(4)$ the trace form is negative definite, since $\operatorname{tr}(K^{2})=-2\sum_{i<j}k_{ij}^{2}$; on $\operatorname{Sym}_4$ it is positive semidefinite in the full algebra, with radical $\mathbb{C}\mathrm I_4$, and positive definite on the traceless part.</p>
+<p><strong>Proof.</strong> The first display was computed on the antisymmetric half. For symmetric $S$, $\operatorname{tr}(S^{2})=\sum_{ij}s_{ij}^{2}\ge0$, with equality exactly when $S=0$; the form $\beta$ pairs $\mathrm I_4$ with every symmetric matrix through $\operatorname{tr}S$, so the radical on $\operatorname{Sym}_4$ is the line of scalars.</p>
+<h2 id="the-criterion">The Criterion</h2>
+<p><strong>Definition.</strong> A pair $(\mathfrak{g},\mathfrak{k})$ is <strong>reductive</strong> when $\mathfrak{k}$ has an $\operatorname{ad}_{\mathfrak{k}}$-invariant complement, equivalently when $\mathfrak{g}$ is reductive and $\mathfrak{k}$ is reductive in it.</p>
+<p><strong>Theorem (the reductivity criterion).</strong> Let $\mathfrak{g}$ be reductive and $\mathfrak{g}=\mathfrak{k}\oplus\mathfrak{p}$ with the three bracket conditions. Then the linear map $\theta=+\mathrm{id}$ on $\mathfrak{k}$ and $-\mathrm{id}$ on $\mathfrak{p}$ is an automorphism of $\mathfrak{g}$.</p>
+<p><strong>Proof.</strong> Bilinearity reduces the check $\theta[X,Y]=[\theta X,\theta Y]$ to the three inclusions, using the sign table: $[+k,+k]=+[k,k]$, $[+k,-p]=-[k,p]$, $[-p,-p]=+[p,p]$. Each bracket lands in the piece required by the conditions, with the sign required by the eigenvalues.</p>
+<p><strong>Corollary.</strong> For a reductive algebra the three conditions are equivalent to being the pair of eigenspaces of an involution, so the symmetric pairs of a reductive algebra are exactly its involutions.</p>
+<p><strong>Proof.</strong> One direction is the corollary above; the other is the theorem.</p>
+<p><strong>Where the proof uses reductivity.</strong> Nothing in the sign table uses it; what reductivity supplies is the existence of the complement $\mathfrak{p}$ as an $\operatorname{ad}_{\mathfrak{k}}$-module and the nondegeneracy that makes such complements behave. Without it the three conditions can hold while no involution exists, which is the next section.</p>
+<h2 id="the-cartan-pair-that-is-not-symmetric">The Cartan Pair That Is Not Symmetric</h2>
+<p><strong>Definition.</strong> A <strong>Cartan pair</strong> is a pair $(\mathfrak{g},\mathfrak{h})$ with $\mathfrak{h}$ a Cartan subalgebra of $\mathfrak{g}$; for $\mathfrak{g}=\mathfrak{b}$ the diagonal $\mathfrak{h}$ is such a subalgebra.</p>
+<p><strong>Proposition.</strong> With $\mathfrak{b}=\mathfrak{h}\oplus\mathfrak{n}_+$ the three bracket conditions hold: $[\mathfrak{h},\mathfrak{h}]\subset\mathfrak{h}$, $[\mathfrak{h},\mathfrak{n}_+]\subset\mathfrak{n}_+$ and $[\mathfrak{n}_+,\mathfrak{n}_+]\subset\mathfrak{n}_+$.</p>
+<p><strong>Proof.</strong> The diagonal is abelian; the bracket of a diagonal with an upper unit is a multiple of that unit; and the product of two strictly upper triangular matrices is strictly upper triangular.</p>
+<p><strong>Proposition.</strong> The pair $(\mathfrak{b},\mathfrak{h})$ with complement $\mathfrak{n}_+$ is not symmetric: there is no involutive automorphism of $\mathfrak{b}$ with fixed set $\mathfrak{h}$ and $(-1)$-eigenspace $\mathfrak{n}_+$.</p>
+<p><strong>Proof.</strong> The candidate is $\theta=+\mathrm{id}$ on $\mathfrak{h}$ and $-\mathrm{id}$ on $\mathfrak{n}_+$. It is not an automorphism, because for $N,N'\in\mathfrak{n}_+$ it would require $[\theta N,\theta N']=[N,N']$ to equal $\theta[N,N']=-[N,N']$, forcing $[\mathfrak{n}_+,\mathfrak{n}_+]=0$, which is false at order four since $[E_{12},E_{23}]=E_{13}$.</p>
+<p><strong>Corollary.</strong> The reductivity hypothesis in the criterion cannot be dropped, and the third condition $[\mathfrak{p},\mathfrak{p}]\subset\mathfrak{k}$ fails here: $[\mathfrak{n}_+,\mathfrak{n}_+]\subset\mathfrak{n}_+=\mathfrak{p}$.</p>
+<p><strong>Proof.</strong> The computation of the bracket of two units above shows the failure of the third inclusion, and a symmetric pair would need it.</p>
+<p><strong>What the example teaches.</strong> A Cartan pair is a statement about a maximal torus and a root decomposition; a symmetric pair is a statement about an involution. At order four the first is realised by the Borel with the diagonal, the second by the whole algebra with the antisymmetric part, and the two notions coincide only under reductivity.</p>
+<h2 id="the-symmetric-spaces">The Symmetric Spaces</h2>
+<p><strong>The real pairs.</strong> $\mathrm{GL}_4(\mathbb{R})/O(4)$ has dimension $16-6=10$ and $\mathrm{SL}_4(\mathbb{R})/SO(4)$ has dimension $15-6=9$, with tangent spaces $\operatorname{Sym}_4(\mathbb{R})$ and $\operatorname{Sym}_4^{0}(\mathbb{R})$.</p>
+<p><strong>Proof.</strong> The dimension of a homogeneous space is the difference of the dimensions, and the tangent space at the identity coset is the complement $\mathfrak{p}$.</p>
+<p><strong>The complex pair.</strong> $\mathrm{GL}_4(\mathbb{C})/O(4,\mathbb{C})$ has complex dimension $10$ and real dimension $20$; the involution $\theta$ is $\mathbb{C}$-linear, so the complex theory runs in parallel.</p>
+<p><strong>Proof.</strong> The complex dimensions are $16-6=10$, and the real dimension is twice that.</p>
+<p><strong>The compact dual.</strong> $U(4)/O(4)$ is the compact form of the same pair, with the same tangent space $\operatorname{Sym}_4$ but the opposite sign of the curvature; it is the fixed set of the conjugation composed with $\theta$.</p>
+<p><strong>Proof.</strong> The Cartan decomposition of $\mathfrak{u}(4)$ with respect to the same $\theta$ gives $\mathfrak{so}(4)\oplus i\operatorname{Sym}_4$, and $i\operatorname{Sym}_4$ is the tangent space of $U(4)/O(4)$ at the identity.</p>
+<h2 id="summary">Summary</h2>
+<p>The three bracket conditions $[\mathfrak{k},\mathfrak{k}]\subset\mathfrak{k}$, $[\mathfrak{k},\mathfrak{p}]\subset\mathfrak{p}$ and $[\mathfrak{p},\mathfrak{p}]\subset\mathfrak{k}$ hold for $\mathfrak{k}=\mathfrak{so}(4)$ and $\mathfrak{p}=\operatorname{Sym}_4$, in the full algebra and in the traceless one, of dimensions $6+10=16$ and $6+9=15$.</p>
+<p>They hold because $\mathfrak{so}(4)$ is the fixed set of the involution $\theta(X)=-X^{\mathsf T}$, whose other eigenspace is $\operatorname{Sym}_4$; for a reductive algebra the three conditions are equivalent to coming from such an involution. The trace pairing is symmetric for $\theta$, negative definite on $\mathfrak{so}(4)$, and positive definite on the traceless symmetric part.</p>
+<p>The Borel pair $(\mathfrak{b},\mathfrak{h})$ satisfies the same three conditions only in part and is not symmetric, since $[\mathfrak{n}_+,\mathfrak{n}_+]\subset\mathfrak{n}_+$ breaks the third. The symmetric spaces are $\mathrm{GL}_4/O(4)$ and $\mathrm{SL}_4/SO(4)$, of dimensions $10$ and $9$, with the compact dual $U(4)/O(4)$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathfrak{k}$, $\mathfrak{p}$</td>
+<td>the two pieces of a symmetric pair</td>
+</tr>
+<tr>
+<td>$\theta(X)=-X^{\mathsf T}$</td>
+<td>the Cartan involution</td>
+</tr>
+<tr>
+<td>$\operatorname{Sym}_4^{0}$</td>
+<td>the traceless symmetric matrices, dimension $9$</td>
+</tr>
+<tr>
+<td>$\mathfrak{b}=\mathfrak{h}\oplus\mathfrak{n}_+$</td>
+<td>the Borel, a Cartan pair but not symmetric</td>
+</tr>
+<tr>
+<td>$\beta(X,Y)=\operatorname{tr}(XY)$</td>
+<td>the trace pairing</td>
+</tr>
+<tr>
+<td>$\mathrm{GL}_4/O(4)$</td>
+<td>the symmetric space of dimension $10$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Sigurdur Helgason, <em>Differential Geometry, Lie Groups, and Symmetric Spaces</em> (AMS, 2001), for symmetric pairs, Cartan involutions and the reductivity criterion.</li>
+<li>Anthony Knapp, <em>Lie Groups Beyond an Introduction</em> (Birkhäuser, 2002), for the classification of real reductive pairs and the compact dual.</li>
+<li><a href="the-two-halves-as-orthogonal-complements-at-n-4.html">The Two Halves as Orthogonal Complements at $n=4$</a>, for the orthogonality of $\mathfrak{k}$ and $\mathfrak{p}$.</li>
+<li><a href="the-symmetric-space-gl4-o4-and-its-complex-twin.html">The Symmetric Space $\mathrm{GL}_4/O(4)$ and Its Complex Twin</a>, for the global object attached to this pair.</li>
+<li><a href="symmetric-pairs-and-cartan-pairs-the-reductivity-criterion-at-n-2.html">Symmetric Pairs and Cartan Pairs: the Reductivity Criterion at $n=2$</a>, for the same criterion at order two.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

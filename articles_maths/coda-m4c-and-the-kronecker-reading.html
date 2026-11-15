@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coda: $M_4(\mathbb{C})$ and the Kronecker Reading — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="coda-math0-and-the-kronecker-reading"><strong>Coda: $M_4(\mathbb{C})$ and the Kronecker Reading</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The category established one algebra, $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_2(\mathbb{C})$, one operator algebra $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong\operatorname{End}(\mathbb{B})$, and one matrix model $M_4(\mathbb{C})$, and the thread through every block is the Kronecker reading $M_4(\mathbb{C})\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})$; at $n=3$ that reading fails, the biquaternion model has no analogue, $\mathfrak{so}(4)=\mathfrak{sl}_2\oplus\mathfrak{sl}_2$ has no counterpart, the trace form has signature $(6,3)$, and the two angles exist for every $n\ge4$, so order four is the first order with two angles and not the only one.</strong></p>
+<p>The article recalls what each block established, states the Kronecker reading and identifies its two factors with the two one-sided algebras, collects the thread, and then examines the passage to $M_3(\mathbb{C})$, where each of the special features of order four disappears except one: the number of rotation angles grows with the order and is two from order four onwards.</p>
+<h2 id="what-the-category-established">What the Category Established</h2>
+<p><strong>The algebra.</strong> The two base fields: $M_4(\mathbb{R})$ inside $M_4(\mathbb{C})$ as the fixed algebra of the conjugation, of real dimension $16$ inside $32$. The elementary symmetric functions: the four coefficients of $\det(\mathrm I+tA)$ and the strata they cut. The minimal polynomial and the Jordan form: the five partitions of four and the two regimes. The ideals: the centre $\mathbb{C}\mathrm I$ and the central simplicity of degree four.</p>
+<p><strong>The involutions and the decompositions.</strong> The involutions of first and second kind and their fixed algebras; the two halves $\operatorname{Sym}_4$ and $\operatorname{Skew}_4$ of dimensions $10$ and $6$; the orthogonality of the two halves; the fine decomposition against the diagonal with the count $4+6+6$; the triangular decomposition with the Borel of dimension $10$; $UT_4$ as another complement of the skew half; the symmetric and Cartan pairs with the reductivity criterion.</p>
+<p><strong>The product on the halves.</strong> The symmetric and antisymmetric parts of a product; the four multiplication tables and their ranks; the Jordan algebra $\operatorname{Sym}_4$ of degree four; the Lie algebra $\operatorname{Skew}_4\cong\mathfrak{so}(4)=\mathfrak{sl}_2\oplus\mathfrak{sl}_2$; the derivation $[A,X]$ and its two skewness statements; the radical of the Borel as its commutator; and $UT_4$ as a linear model of $\operatorname{Sym}_4$ with the wrong product.</p>
+<p><strong>The forms.</strong> The trace form with signature $(10,6)$, the keystone of the category; the Killing form $8\operatorname{tr}(XY)-2\operatorname{tr}X\operatorname{tr}Y$ with radical $\mathbb{C}\mathrm I$; the Hilbert–Schmidt form with the two orthonormal bases; the four forms and their algebraic norms, with $P=Q_t^{2}-B^{2}$, $N=Q_t^{2}+B^{2}$ and $\det=\langle\tilde Q\rangle_\natural^{2}$.</p>
+<p><strong>The idempotents and the spectrum.</strong> The Peirce decompositions of the Jordan algebra and of the algebra, with the dimensions $k^{2}$, $(4-k)^{2}$ and $2k(4-k)$ and the corner recursion; the common spectral theorem for normal matrices; the Hermitian and the skew-Hermitian spectral theorems.</p>
+<p><strong>The exponential and the rotor.</strong> The rotor as a square root of a rotation with two signs and the double cover; the adjoint action on the six-dimensional bivector space; simple and non-simple rotations with two angles; where the rotor leaves the matrix algebra, in $Cl^{+}(4)\cong M_2\oplus M_2$; the exponential of the symmetric part stretching onto the cone.</p>
+<p><strong>The operators.</strong> $\operatorname{End}(M_4)$ of dimension $256$ and the regular representation; the one-sided operators and the stitch $R^{\mathrm{axf}}=D(L^{\mathrm{axf}})^{\mathsf T}D$; the two-sided operators and the Segre cone of dimension seven; the length and the two ranks; the two adjoints and the polar decomposition of an operator; the four eigenspaces of the two commuting involutions.</p>
+<p><strong>Topology, analysis, geometry.</strong> The contraction $\mathrm{GL}_4\simeq U(4)$ and the components of the halves; the idempotents as Grassmannians and the Klein quadric; the homotopy groups; the exponential and the Lie group structure; the positive cone and its boundary; the smooth structures; the geometry of the halves and the return of the operators; the symmetric space $\mathrm{GL}_4/O(4)$ and its complex twin; the semidefinite cone.</p>
+<h2 id="the-kronecker-reading">The Kronecker Reading</h2>
+<p><strong>Theorem.</strong> $M_4(\mathbb{C})\cong M_2(\mathbb{C})\otimes_{\mathbb{C}}M_2(\mathbb{C})$ as algebras, by the Kronecker product $A\otimes B\mapsto$ the block matrix with blocks $a_{ij}B$.</p>
+<p><strong>Proof.</strong> The Kronecker product of matrix units satisfies $(E_{ij}\otimes E_{kl})(E_{i'j'}\otimes E_{k'l'})=\delta_{ji'}\delta_{lk'}E_{ij'}\otimes E_{kl'}$, which is the multiplication rule of matrix units; the sixteen products are therefore the matrix units of the algebra of order four, the map is an injective algebra homomorphism, and both sides have dimension sixteen.</p>
+<p><strong>Corollary.</strong> The two factors are subalgebras and not ideals: $M_2\otimes\mathrm I$ and $\mathrm I\otimes M_2$ are each isomorphic to $M_2(\mathbb{C})$ and neither is a two-sided ideal of the product.</p>
+<p><strong>Proof.</strong> An ideal of a product of simple algebras would contain a factor; the two subalgebras commute with each other and their product generates everything.</p>
+<p><strong>Corollary.</strong> The Kronecker reading is the statement $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong\operatorname{End}(\mathbb{B})$ once the factors are named: the first factor is the left multiplications, the second the right multiplications.</p>
+<p><strong>Proof.</strong> $L_aR_b=L_a\otimes R_b^{\mathrm{opp}}$, and the sixteen products are independent.</p>
+<p><strong>Corollary.</strong> The sixteen two-sided products are the matrix units of the reading, and the trace pairing on them is the permutation form, which shows no signature in that basis.</p>
+<p><strong>Proof.</strong> The trace of a product of two matrix units is a Kronecker delta.</p>
+<h2 id="the-thread">The Thread</h2>
+<p><strong>Proposition.</strong> Every special feature of order four is a feature of the factorisation $4=2\cdot2$: the trace-form signature $(10,6)$, the split $\mathfrak{so}(4)=\mathfrak{sl}_2\oplus\mathfrak{sl}_2$, the two angles of a rotation, the two orthogonal complex structures, the even Clifford algebra $M_2\oplus M_2$, and the Segre cone $\mathbb{P}^{3}\times\mathbb{P}^{3}$.</p>
+<p><strong>Proof.</strong> Each object is built from the pair of factors $M_2$ and $M_2$: the ten and the six are the symmetric and skew parts of the tensor product, the two $\mathfrak{sl}_2$ are the two factors of the skew part, and the two angles are the two parameters of the two factors.</p>
+<p><strong>Corollary.</strong> The two-sided operators are the place where the factorisation is visible as operators: the basis $T_{\mu\nu}=L_{e_\mu}R_{e_\nu}$ is the tensor product of the two four-dimensional one-sided bases.</p>
+<p><strong>Proof.</strong> The product formula and the independence of the sixteen elements.</p>
+<p><strong>Corollary.</strong> The group of order $32$ generated by the signed basis elements is the finite skeleton of the factorisation: it is the central product of two copies of the quaternion group, one from each factor.</p>
+<p><strong>Proof.</strong> Each factor $M_2$ contains a copy of $Q_8$ among its signed permutation units, and the sixteen products generate the central product.</p>
+<h2 id="the-passage-to-math64">The Passage to $n=3$</h2>
+<p><strong>Proposition.</strong> $M_3(\mathbb{C})$ is not a nontrivial tensor product of matrix algebras, since $3$ is prime and the only factorisation is $1\cdot3$.</p>
+<p><strong>Proof.</strong> The dimension of a tensor product is the product of the dimensions, and the only factorisations of nine into two squares greater than one would need $3=ab$ with $a,b>1$.</p>
+<p><strong>Corollary.</strong> The Kronecker reading fails at order three, and with it the two-sided operator description of the algebra as a tensor square.</p>
+<p><strong>Proof.</strong> The previous proposition.</p>
+<p><strong>Corollary.</strong> The biquaternion model has no analogue at order three: a three-dimensional algebra whose tensor square is $M_3(\mathbb{C})$ would have to be simple, and a simple algebra over $\mathbb{C}$ of dimension three would be $M_k(\mathbb{C})$ with $k^{2}=3$, which is impossible.</p>
+<p><strong>Proof.</strong> The tensor square of a three-dimensional algebra has dimension nine, and the simple algebras over $\mathbb{C}$ have square dimensions.</p>
+<p><strong>Corollary.</strong> $\mathfrak{so}(3)$ is simple of dimension three, equal to $\mathfrak{sl}_2$, and there is no decomposition into two ideals as at order four.</p>
+<p><strong>Proof.</strong> $\mathfrak{so}(3)\cong\mathfrak{su}(2)$ is simple.</p>
+<p><strong>Corollary.</strong> The trace form on $M_3(\mathbb{C})$ has signature $(6,3)$, since $\dim\operatorname{Sym}_3=6$ and $\dim\operatorname{Skew}_3=3$, and the fine count is $3+3+3=9$.</p>
+<p><strong>Proof.</strong> $\operatorname{tr}(S^{2})>0$ on real symmetric matrices of order three and $\operatorname{tr}(K^{2})<0$ on real skew matrices, with the same dimension count as at order four.</p>
+<p><strong>Corollary.</strong> The signature is the pair of triangular numbers $\tfrac{3\cdot4}{2}=6$ and $\tfrac{3\cdot2}{2}=3$, the same pattern as the ten and the six at order four, so the pattern survives the loss of the factorisation.</p>
+<p><strong>Proof.</strong> The two counts.</p>
+<h2 id="the-two-angles-beyond-math87">The Two Angles beyond $n=4$</h2>
+<p><strong>Proposition.</strong> A rotation of $\mathbb{R}^{n}$ has $\lfloor n/2\rfloor$ angles in its normal form, so there are two angles from order four onwards and not only at order four.</p>
+<p><strong>Proof.</strong> The real normal form of an orthogonal matrix is a block diagonal of rotations by single angles plus a possible $\pm1$ in odd order.</p>
+<p><strong>Corollary.</strong> Order four is the first order at which two angles appear, and it is not the only one; the special features of order four are the factorisation $4=2\cdot2$, not the number of angles.</p>
+<p><strong>Proof.</strong> $\lfloor3/2\rfloor=1$ and $\lfloor4/2\rfloor=2$, and the count grows with the order.</p>
+<p><strong>Corollary.</strong> The two angles at order four are the two parameters of the two $\mathfrak{sl}_2$ summands; at order five there are two angles and no such splitting, so the two angles and the split are independent phenomena.</p>
+<p><strong>Proof.</strong> The dimension of the maximal torus of $\mathfrak{so}(n)$ is $\lfloor n/2\rfloor$, while the split into two ideals happens only at order four.</p>
+<p><strong>The isoclinic case.</strong> The isoclinic rotations, with the two angles equal in modulus, exist for every even order; at order four they form the two families $\theta_1=\pm\theta_2$.</p>
+<p><strong>Proof.</strong> The isoclinic condition is the proportionality of the two angles, available for every even order.</p>
+<p><strong>Corollary.</strong> Nothing in the two-angle story is special to order four except the exact coincidence with the two $\mathfrak{sl}_2$ factors.</p>
+<p><strong>Proof.</strong> The two statements above.</p>
+<h2 id="summary">Summary</h2>
+<p>The category established one algebra of dimension four, one operator algebra of dimension sixteen and one matrix model of dimension sixteen, and kept them apart throughout. The trace form on the model has signature $(10,6)$, the two halves are its positive and negative eigenspaces, and the symmetric decomposition and the form are one split read twice.</p>
+<p>The thread is the Kronecker reading $M_4(\mathbb{C})\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})$, which is $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong\operatorname{End}(\mathbb{B})$ once the two factors are named as the left and the right multiplications. Every special feature of order four comes from the factorisation $4=2\cdot2$.</p>
+<p>At order three the reading fails, the biquaternion model disappears, $\mathfrak{so}(3)$ is simple, and the trace form has signature $(6,3)$. The two angles of a rotation exist for every order at least four, so order four is the first with two angles but not the only one; what is unique to order four is the coincidence of the two angles with the two simple ideals.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M_4\cong M_2\otimes M_2$</td>
+<td>the Kronecker reading</td>
+</tr>
+<tr>
+<td>$M_2\otimes\mathrm I$, $\mathrm I\otimes M_2$</td>
+<td>the two factors, subalgebras not ideals</td>
+</tr>
+<tr>
+<td>$(10,6)$</td>
+<td>the signature at order four</td>
+</tr>
+<tr>
+<td>$(6,3)$</td>
+<td>the signature at order three</td>
+</tr>
+<tr>
+<td>$\lfloor n/2\rfloor$</td>
+<td>the number of angles</td>
+</tr>
+<tr>
+<td>central product $Q_8\circ Q_8$</td>
+<td>the finite skeleton, order $32$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-trace-form-and-its-signature-on-the-two-halves-of-m4c.html">The Trace Form and Its Signature on the Two Halves of $M_4(\mathbb{C})$</a>, for the keystone of the category.</li>
+<li><a href="the-two-sided-operators-and-the-segre-cone-at-n-4.html">The Two-Sided Operators and the Segre Cone at $n=4$</a>, for the operator face of the factorisation.</li>
+<li><a href="the-lie-algebra-skew-4-and-so-4.html">The Lie Algebra $\operatorname{Skew}_4\cong\mathfrak{so}(4)$</a>, for the split into two simple ideals.</li>
+<li><a href="simple-and-non-simple-rotations-one-angle-at-n-le-3-two-angles-at-n-ge-4.html">Simple and Non-Simple Rotations: One Angle at $n\le3$, Two Angles at $n\ge4$</a>, for the count of angles.</li>
+<li><a href="the-ideals-the-centre-and-the-simplicity-of-m4c.html">The Ideals, the Centre and the Simplicity of $M_4(\mathbb{C})$</a>, for the simplicity that makes the factors subalgebras.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

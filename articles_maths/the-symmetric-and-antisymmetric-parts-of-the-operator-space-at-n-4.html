@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Symmetric and Antisymmetric Parts of the Operator Space at $n=4$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-symmetric-and-antisymmetric-parts-of-the-operator-space-at-math0"><strong>The Symmetric and Antisymmetric Parts of the Operator Space at $n=4$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The operator space $\operatorname{End}(M_4(\mathbb{C}))$ has complex dimension $256$ and carries two commuting involutions, the plain transpose and the Hilbert–Schmidt adjoint; the four simultaneous eigenspaces have real dimensions $136$, $136$, $120$ and $120$, the model operator $X\mapsto AXB$ has adjoint $Y\mapsto A^{\ast}YB^{\ast}$, and the commutator $T\mapsto[A,T]$ is always skew for the trace pairing.</strong></p>
+<p>The article sets up the two involutions, proves that they commute, computes the four eigenspaces and their real dimensions, treats the model operator and its adjoint as an example that mixes the two structures, proves the skewness of the commutator, and separates the two scales: the symmetric and antisymmetric parts of the operator space are about operators of dimension $256$, while the two halves of the algebra are about elements of dimension $16$.</p>
+<p>It assumes <em>The Adjoints and the Polar Decomposition of an Operator at $n=4$</em>, <em>$\operatorname{End}(M_4(\mathbb{C}))$ as an Algebra: the Regular Representation</em> and <em>The Derivation $X\mapsto[A,X]$ and Its Skewness for the Trace Form at $n=4$</em>. The model at order two is <em>The Symmetric and Antisymmetric Parts of the Operator Space at $n=2$</em>.</p>
+<h2 id="the-operator-space-and-the-two-involutions">The Operator Space and the Two Involutions</h2>
+<p><strong>Proposition.</strong> $\operatorname{End}(M_4(\mathbb{C}))$ has complex dimension $256$ and real dimension $512$, and every operator has a representing $16\times16$ matrix in a chosen basis of the matrix space.</p>
+<p><strong>Proof.</strong> A linear map of a complex space of dimension sixteen is a $16\times16$ complex matrix.</p>
+<p><strong>Definition.</strong> The <strong>plain transpose</strong> $\sigma$ sends an operator to its adjoint for $\beta(X,Y)=\operatorname{tr}(XY)$; the <strong>Hilbert–Schmidt adjoint</strong> $\tau$ sends it to its adjoint for $\langle X,Y\rangle=\operatorname{tr}(X^{\ast}Y)$.</p>
+<p><strong>Proposition.</strong> $\sigma$ is complex-linear with $\sigma^{2}=\mathrm{id}$, $\tau$ is antilinear with $\tau^{2}=\mathrm{id}$, and $\sigma\tau=\tau\sigma$.</p>
+<p><strong>Proof.</strong> In a real basis of the matrix space, $\sigma$ is the transpose of the $16\times16$ matrix and $\tau$ is the conjugate transpose, so $\tau=\kappa\sigma$ with $\kappa$ the entrywise conjugation; conjugation commutes with transposition, hence the two commute, and each squares to the identity.</p>
+<p><strong>Corollary.</strong> The four simultaneous eigenspaces are the intersections of the $\pm1$ eigenspaces of the two involutions, and they span the whole space.</p>
+<p><strong>Proof.</strong> Commuting involutions are simultaneously diagonalisable over the reals.</p>
+<p><strong>The sign pattern.</strong> The composition $\sigma\tau=\kappa$ is the coefficient conjugation, so an operator with $\sigma$-eigenvalue $s$ and $\tau$-eigenvalue $t$ has conjugate equal to $st$ times itself.</p>
+<p><strong>Proof.</strong> $\kappa=\sigma\tau$ acts on the simultaneous eigenspace as $st$.</p>
+<h2 id="the-four-eigenspaces">The Four Eigenspaces</h2>
+<p><strong>Theorem.</strong> The four eigenspaces have real dimensions
+$$
+\dim\{\sigma=1,\tau=1\}=136,\quad \dim\{\sigma=1,\tau=-1\}=136,\quad \dim\{\sigma=-1,\tau=1\}=120,\quad \dim\{\sigma=-1,\tau=-1\}=120,
+$$
+and they sum to $512$.</p>
+<p><strong>Proof.</strong> The $\sigma=1$ eigenspace is the symmetric $16\times16$ matrices, of complex dimension $136$; inside it the condition $\tau=1$ is the reality of the entries, which halves nothing but fixes the real dimension at $136$, and $\tau=-1$ is the purely imaginary part, also of real dimension $136$. The $\sigma=-1$ eigenspace is the skew matrices, of complex dimension $120$, and again the two reality conditions give real dimensions $120$ and $120$.</p>
+<p><strong>Corollary.</strong> The two complex-linear halves are of complex dimensions $136$ and $120$, and the four real halves are the symmetric-real, symmetric-imaginary, skew-imaginary and skew-real operators.</p>
+<p><strong>Proof.</strong> The classification by the pair of signs.</p>
+<p><strong>Corollary.</strong> $136=\tfrac{16\cdot17}{2}$ and $120=\tfrac{16\cdot15}{2}$, so the two linear halves are the symmetric and antisymmetric parts of the operator space in the ordinary sense.</p>
+<p><strong>Proof.</strong> The dimension of the symmetric and of the skew square matrices of order sixteen.</p>
+<p><strong>The analogy with the algebra.</strong> The element space has dimensions $10$ and $6$, the operator space $136$ and $120$, and the ratio is the passage from $n=4$ to $n=16$.</p>
+<p><strong>Proof.</strong> $\tfrac{4\cdot5}{2}=10$ and $\tfrac{4\cdot3}{2}=6$; $\tfrac{16\cdot17}{2}=136$ and $\tfrac{16\cdot15}{2}=120$.</p>
+<h2 id="the-model-operator">The Model Operator</h2>
+<p><strong>Definition.</strong> For a pair $A,B$ let $\Phi_{A,B}$ be the operator $X\mapsto AXB$.</p>
+<p><strong>Proposition.</strong> $\Phi_{A,B}^{\mathrm{plain}}=\Phi_{B,A}$ and $\Phi_{A,B}^{\ast}=\Phi_{A^{\ast},B^{\ast}}$.</p>
+<p><strong>Proof.</strong> Both are the two-sided adjoint computations of the previous article, read as statements about the single operator $\Phi_{A,B}$.</p>
+<p><strong>Corollary.</strong> $\Phi_{A,B}$ is self-adjoint for the plain pairing exactly when $A=B$, and self-adjoint for the Hilbert–Schmidt pairing exactly when $B=A^{\ast}$.</p>
+<p><strong>Proof.</strong> The two formulas and the independence of the indices.</p>
+<p><strong>Corollary.</strong> The four eigenspaces meet the family $\{\Phi_{A,B}\}$ in four subfamilies, each parametrised by the single element $A$: the conditions are $B=A$, $B=-A$, $B=A^{\ast}$ and $B=-A^{\ast}$.</p>
+<p><strong>Proof.</strong> The two involutions act on the pair of indices by $B\mapsto A$ for the plain transpose and $B\mapsto A^{\ast}$ for the Hilbert–Schmidt adjoint.</p>
+<p><strong>The commutator as a model.</strong> The operator $T\mapsto[A,T]$ is $\Phi_{A,\mathrm I}-\Phi_{\mathrm I,A}$, so it is the difference of two model operators.</p>
+<p><strong>Proof.</strong> $AT-\mathrm I\,T = AT - TA$.</p>
+<p><strong>Corollary.</strong> Its plain adjoint is $\Phi_{\mathrm I,A}-\Phi_{A,\mathrm I}=-T\mapsto[A,T]$, so the commutator operator is plain skew-adjoint.</p>
+<p><strong>Proof.</strong> The adjoint of a difference is the difference of the adjoints.</p>
+<p><strong>Corollary.</strong> Its Hilbert–Schmidt adjoint is $T\mapsto[A^{\ast},T]$, so the commutator operator is skew-Hermitian exactly when $A$ is skew-Hermitian up to a scalar.</p>
+<p><strong>Proof.</strong> $\Phi_{A,I}^{\ast}-\Phi_{I,A}^{\ast}=\Phi_{A^{\ast},I}-\Phi_{I,A^{\ast}}$, and $\operatorname{ad}_{A^{\ast}}=-\operatorname{ad}_A$ forces $A^{\ast}+A$ to be a scalar.</p>
+<h2 id="the-commutator">The Commutator</h2>
+<p><strong>Theorem.</strong> For every $A$ the operator $\operatorname{ad}_A:T\mapsto[A,T]$ is a derivation of the algebra, and it is skew for the trace pairing:
+$$
+\beta(\operatorname{ad}_A T,U)+\beta(T,\operatorname{ad}_A U)=0 .
+$$</p>
+<p><strong>Proof.</strong> The derivation property is the Jacobi identity for the associator; for the skewness, $\operatorname{tr}([A,T]U)+\operatorname{tr}(T[A,U])=\operatorname{tr}(ATU-TAU+TAU-TUA)=\operatorname{tr}(ATU)-\operatorname{tr}(TUA)=0$ by cyclicity.</p>
+<p><strong>Corollary.</strong> The derivation is skew for the Hilbert–Schmidt pairing exactly when $A$ is skew-Hermitian, since $\langle[A,T],U\rangle+\langle T,[A,U]\rangle=\operatorname{tr}(T^{\ast}[A^{\ast},U])$ up to a commutator.</p>
+<p><strong>Proof.</strong> The second computation with $A^{\ast}$ in place of $A$, and the vanishing of the mixed term exactly when $A^{\ast}=-A$.</p>
+<p><strong>Corollary.</strong> The two skewness statements differ by the involution, not by the derivation, so the same operator is skew for one pairing and not for the other.</p>
+<p><strong>Proof.</strong> The two computations.</p>
+<p><strong>The image of the commutator.</strong> The inner derivations are $\operatorname{ad}_{\mathfrak{sl}_4}$ and every derivation of $M_4$ is inner, so the commutator map is onto the derivations of the algebra.</p>
+<p><strong>Proof.</strong> Central simplicity and the derivation theorem.</p>
+<p><strong>The operator of the commutator.</strong> The map $T\mapsto[A,T]$ is an operator on the sixteen-dimensional space $M_4$; for a generic $A$ with distinct eigenvalues its kernel is the four-dimensional algebra generated by $A$, so its rank is $12$.</p>
+<p><strong>Proof.</strong> The kernel is the centraliser of $A$, which for a matrix with distinct eigenvalues is the algebra of polynomials in $A$, of dimension four; the rank is the difference.</p>
+<h2 id="the-two-scales">The Two Scales</h2>
+<p><strong>Proposition.</strong> The symmetric and antisymmetric parts of the operator space are about the space $\operatorname{End}(M_4)$ of dimension $256$, while the two halves $\operatorname{Sym}_4$ and $\operatorname{Skew}_4$ are about the space $M_4$ of dimension $16$; the second pair is not a restriction of the first.</p>
+<p><strong>Proof.</strong> The dimensions differ and the objects live in different spaces.</p>
+<p><strong>Corollary.</strong> An element of $M_4$ that is symmetric as a matrix is not an operator, and an operator that is self-adjoint for the plain pairing is not an element; the words "symmetric" and "antisymmetric" apply to both only by analogy.</p>
+<p><strong>Proof.</strong> The two spaces are different, and the involutions are different.</p>
+<p><strong>Corollary.</strong> The bridge between the two scales is the regular representation: $A\mapsto L_A$ carries the element algebra into the operator space as the four-dimensional subalgebra $\mathbb{B}_L$.</p>
+<p><strong>Proof.</strong> The left multiplications form a subalgebra of dimension four, isomorphic to $M_2(\mathbb{C})$.</p>
+<p><strong>The mixed statement.</strong> The operator $L_A$ is self-adjoint for the plain pairing exactly when $A$ is a scalar, since $L_A^{\mathrm{plain}}=R_A$ and $R_A=L_A$ only then.</p>
+<p><strong>Proof.</strong> The plain adjoint of $L_A$ is $R_A$, and the two families meet in the scalars.</p>
+<p><strong>Corollary.</strong> The symmetric half of the algebra does not map to the self-adjoint part of the operator space under the left regular representation; the self-adjoint part of $\mathbb{B}_L$ is only the scalars.</p>
+<p><strong>Proof.</strong> The previous proposition.</p>
+<h2 id="summary">Summary</h2>
+<p>The operator space has complex dimension $256$ and carries two commuting involutions, the plain transpose and the Hilbert–Schmidt adjoint. The four simultaneous eigenspaces have real dimensions $136$, $136$, $120$ and $120$, and they sum to the real dimension $512$; the two complex-linear halves have dimensions $136$ and $120$, the symmetric and antisymmetric parts of a $16\times16$ matrix space.</p>
+<p>The model operator $X\mapsto AXB$ has plain adjoint $X\mapsto BXA$ and Hilbert–Schmidt adjoint $X\mapsto A^{\ast}XB^{\ast}$, and the commutator $T\mapsto[A,T]$ is a difference of two model operators. The commutator is always skew for the trace pairing and is skew for the Hilbert–Schmidt pairing exactly when $A$ is skew-Hermitian.</p>
+<p>The two scales must be kept apart: the halves of the algebra are a ten and a six inside a sixteen, the halves of the operator space a $136$ and a $120$ inside a $256$, and the left regular representation does not carry one to the other in the naive way.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\sigma$</td>
+<td>the plain transpose involution, complex-linear</td>
+</tr>
+<tr>
+<td>$\tau$</td>
+<td>the Hilbert–Schmidt adjoint, antilinear</td>
+</tr>
+<tr>
+<td>$136$, $120$</td>
+<td>the complex dimensions of the two linear halves</td>
+</tr>
+<tr>
+<td>$\Phi_{A,B}(X)=AXB$</td>
+<td>the model operator</td>
+</tr>
+<tr>
+<td>$\operatorname{ad}_A(T)=[A,T]$</td>
+<td>the commutator operator</td>
+</tr>
+<tr>
+<td>$\kappa=\sigma\tau$</td>
+<td>the coefficient conjugation</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-adjoints-and-the-polar-decomposition-of-an-operator-at-n-4.html">The Adjoints and the Polar Decomposition of an Operator at $n=4$</a>, for the two adjoints of a single operator.</li>
+<li><a href="end-m4c-as-an-algebra-the-regular-representation.html">$\operatorname{End}(M_4(\mathbb{C}))$ as an Algebra: the Regular Representation</a>, for the operator algebra and the two images.</li>
+<li><a href="the-derivation-commutator-and-its-skewness-for-the-trace-form-at-n-4.html">The Derivation $X\mapsto[A,X]$ and Its Skewness for the Trace Form at $n=4$</a>, for the derivation and the two skewness statements.</li>
+<li><a href="the-two-halves-over-r-symmetric-and-antisymmetric-at-n-4.html">The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric</a>, for the halves of the element space.</li>
+<li><a href="the-symmetric-and-antisymmetric-parts-of-the-operator-space-at-n-2.html">The Symmetric and Antisymmetric Parts of the Operator Space at $n=2$</a>, for the case at order two.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

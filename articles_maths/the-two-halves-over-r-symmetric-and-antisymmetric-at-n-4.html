@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-two-halves-over-math0-symmetric-and-antisymmetric"><strong>The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The symmetric and the antisymmetric matrices are the two eigenspaces of the transpose, of complex dimensions $10$ and $6$, and over the real numbers they are the positive and the negative halves of the trace form: on a real symmetric matrix $\operatorname{tr}(S^{2})$ is a sum of squares, and on a real antisymmetric matrix it is minus a sum of squares.</strong></p>
+<p>The article defines the two halves, proves the projections and the uniqueness of the split, shows that neither half is closed under the product while each is closed under the appropriate symmetrised product, and reads the split in the axis-free basis, where symmetry becomes an index pattern on the sixteen coordinates and the trace pairing has the sign of that pattern with no transpose taken.</p>
+<p>It assumes <em>The Involutions of $M_4(\mathbb{C})$ over $\mathbb{R}$ and over $\mathbb{C}$</em> for the transpose and its two eigenspaces, and <em>$M_4(\mathbb{C})$ Axis-Free Representation</em> for the basis. The case $n=2$ is <em>The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$</em>. The signature of the trace form on the two halves is <em>The Trace Form and Its Signature on the Two Halves of $M_4(\mathbb{C})$</em>.</p>
+<h2 id="the-two-halves-and-the-projections">The Two Halves and the Projections</h2>
+<p><strong>Definition.</strong> $\operatorname{Sym}_4=\{A:A^{\mathsf T}=A\}$ and $\operatorname{Skew}_4=\{A:A^{\mathsf T}=-A\}$.</p>
+<p><strong>Proposition.</strong> $\operatorname{Sym}_4$ has complex dimension $10$ and $\operatorname{Skew}_4$ complex dimension $6$, and</p>
+<p>$$
+M_4(\mathbb{C})=\operatorname{Sym}_4\oplus\operatorname{Skew}_4,\qquad A=\tfrac12(A+A^{\mathsf T})+\tfrac12(A-A^{\mathsf T}).
+$$</p>
+<p><strong>Proof.</strong> A symmetric matrix is determined by the ten entries on and above the diagonal, an antisymmetric one by the six entries above it, and the two formulas are the projections onto the eigenspaces of an involution; their sum is $A$ and their difference of transposes is zero.</p>
+<p><strong>Corollary.</strong> The two maps $A\mapsto\tfrac12(A\pm A^{\mathsf T})$ are linear, idempotent, and their images meet only at $0$.</p>
+<p><strong>Proof.</strong> They are the spectral projections of $\mathsf T$ for the eigenvalues $+1$ and $-1$.</p>
+<p><strong>The real reading.</strong> On the real slice the same formulas give $\operatorname{Sym}_4(\mathbb{R})$ of real dimension $10$ and $\operatorname{Skew}_4(\mathbb{R})$ of real dimension $6$, and $M_4(\mathbb{R})=\operatorname{Sym}_4(\mathbb{R})\oplus\operatorname{Skew}_4(\mathbb{R})$.</p>
+<p><strong>Proof.</strong> The projections have real coefficients, so they preserve the real matrices, and the dimensions are the numbers of free real entries.</p>
+<h2 id="neither-half-is-an-algebra">Neither Half Is an Algebra</h2>
+<p><strong>Proposition.</strong> $\operatorname{Sym}_4$ is not closed under the product, and neither is $\operatorname{Skew}_4$.</p>
+<p><strong>Proof.</strong> Take $S=E_{11}+E_{22}$ and $S'=E_{11}$, both symmetric; their product is $E_{11}+E_{22}$, symmetric. Now take $S=E_{12}+E_{21}$ and $S'=E_{11}$, both symmetric; their product is $E_{21}$, antisymmetric. For the second half, $K=E_{12}-E_{21}$ and $K'=E_{34}-E_{43}$ are antisymmetric and their product has the entries $\pm1$ at $(1,4)$ and $(2,3)$, which is symmetric.</p>
+<p><strong>Proposition (the truth about the four products).</strong> For $A,B$ of the <strong>same</strong> parity the anticommutator is symmetric and the commutator is skew; for $A,B$ of <strong>opposite</strong> parity the anticommutator is skew and the commutator is symmetric. Hence</p>
+<p>$$
+AB=\tfrac12\{A,B\}+\tfrac12[A,B]
+$$</p>
+<p>is the symmetric-plus-antisymmetric split of $AB$ when the parities agree, and the reverse split when they do not.</p>
+<p><strong>Proof.</strong> Take $A,B$ symmetric: $\{A,B\}^{\mathsf T}=B^{\mathsf T}A^{\mathsf T}+A^{\mathsf T}B^{\mathsf T}=BA+AB$, so the anticommutator is symmetric, and $[A,B]^{\mathsf T}=B^{\mathsf T}A^{\mathsf T}-A^{\mathsf T}B^{\mathsf T}=-[A,B]$. Take $A,B$ antisymmetric: $\{A,B\}^{\mathsf T}=(-B)(-A)+(-A)(-B)$, again symmetric, and $[A,B]^{\mathsf T}=(-B)(-A)-(-A)(-B)=-K'K+KK'=-[A,B]$. Take $S$ symmetric and $K$ antisymmetric: $\{S,K\}^{\mathsf T}=-KS-SK=-\{S,K\}$ and $[S,K]^{\mathsf T}=-KS+SK=[S,K]$.</p>
+<p><strong>The product of two antisymmetric matrices is not symmetric.</strong> At order four the example is decisive: with $K=E_{12}-E_{21}$ and $K'=E_{23}-E_{32}$ one has $KK'=E_{13}$, which is neither symmetric nor antisymmetric.</p>
+<p><strong>Proof.</strong> Expand: $K$ sends $e_1\mapsto e_2$ and $e_2\mapsto-e_1$, $K'$ sends $e_2\mapsto e_3$ and $e_3\mapsto-e_2$, so $KK'$ sends $e_3\mapsto-e_1$ and kills the other two basis vectors; that map is $E_{13}$. Its transpose is $E_{31}\neq\pm E_{13}$.</p>
+<p><strong>Why order two is different.</strong> At $n=2$ the antisymmetric matrices form a one-dimensional space, so they all commute and $KK'$ is symmetric there. At $n=4$ the antisymmetric half is $\mathfrak{so}(4)$, of dimension $6$ and not abelian, and the commutator $[K,K']$ is a nonzero skew matrix; the symmetric product of order two is the accident, and the general statement carries both parts.</p>
+<p><strong>Corollary (what each half does support).</strong> $\operatorname{Sym}_4$ is closed under the anticommutator and not under the product; $\operatorname{Skew}_4$ is closed under the commutator and not under the product.</p>
+<p><strong>Proof.</strong> The anticommutator of two symmetric matrices is symmetric and $\{S,E_{12}+E_{21}\}$ with $S=E_{11}+E_{22}$ stays symmetric, while the product $SE_{12}$ is not; the commutator of two antisymmetric matrices is antisymmetric by the proposition, while the product $KK'=E_{13}$ is not.</p>
+<p><strong>The graded picture.</strong> The two halves are the even and odd parts of a $\mathbb{Z}_2$-grading by the transpose, and the multiplication is graded-commutative up to the twist: the symmetric half is the even part and the antisymmetric half the odd part, and the parity of a product is the product of the parities. Reading the four products as a graded table is <em>The Four Multiplication Tables: $SS$, $SK$, $KS$, $KK$ at $n=4$</em>.</p>
+<h2 id="the-trace-and-the-two-halves">The Trace and the Two Halves</h2>
+<p><strong>Proposition.</strong> $\operatorname{tr}S$ is real for a real symmetric matrix, $\operatorname{tr}K=0$ for every antisymmetric matrix, and $\operatorname{tr}(SK)=0$ for $S$ symmetric and $K$ antisymmetric.</p>
+<p><strong>Proof.</strong> The diagonal of an antisymmetric matrix vanishes. For the third, $\operatorname{tr}(SK)=\operatorname{tr}((SK)^{\mathsf T})=\operatorname{tr}(K^{\mathsf T}S^{\mathsf T})=\operatorname{tr}(-KS)=-\operatorname{tr}(SK)$, hence zero.</p>
+<p><strong>Corollary.</strong> The trace functional vanishes on $\operatorname{Skew}_4$, and the traceless part of $\operatorname{Sym}_4$ has dimension $9$.</p>
+<p><strong>Proof.</strong> The trace of a skew matrix is zero; on the symmetric half the trace is a nonzero linear functional, so its kernel has dimension $10-1=9$.</p>
+<p><strong>The definiteness over $\mathbb{R}$.</strong> For real $S$ and real $K$,</p>
+<p>$$
+\operatorname{tr}(S^{2})=\sum_{i}s_{ii}^{2}+2\sum_{i<j}s_{ij}^{2}>0,\qquad
+\operatorname{tr}(K^{2})=-2\sum_{i<j}k_{ij}^{2}<0 .
+$$</p>
+<p><strong>Proof.</strong> Expand $S^{2}$ and $K^{2}$ entry by entry: the diagonal of $S^{2}$ is $\sum_j s_{ij}^{2}$ and the diagonal of $K^{2}$ is $-\sum_j k_{ij}^{2}$, and each off-diagonal pair occurs twice.</p>
+<p><strong>Corollary.</strong> On the real halves the trace form $\beta(X,Y)=\operatorname{tr}(XY)$ is positive definite on $\operatorname{Sym}_4(\mathbb{R})$ and negative definite on $\operatorname{Skew}_4(\mathbb{R})$.</p>
+<p><strong>Proof.</strong> A symmetric bilinear form with $\beta(X,X)>0$ for every $X\neq0$ is positive definite; the polarisation of $\operatorname{tr}(X^{2})$ is $\operatorname{tr}(XY)$.</p>
+<p><strong>Corollary.</strong> The signature of $\beta$ on $M_4(\mathbb{R})$ is $(10,6)$.</p>
+<p><strong>Proof.</strong> The two halves are orthogonal for $\beta$ and carry $10$ positive and $6$ negative directions.</p>
+<h2 id="the-axis-free-reading">The Axis-Free Reading</h2>
+<p><strong>Symmetry is an index pattern.</strong> In the basis $T_{\mu\nu}=L^{\mathrm{axf}}_{e_\mu}R^{\mathrm{axf}}_{e_\nu}$ the pairing is diagonal,</p>
+<p>$$
+\operatorname{tr}(T_{\mu\nu}T_{\rho\sigma})=\pm4\,\delta_{\mu\rho}\delta_{\nu\sigma},
+$$</p>
+<p>and the sign is determined by the two indices alone: it is $+4$ when both are equal or both are vector indices, and $-4$ when exactly one of them is the scalar index $t$.</p>
+<p><strong>The ten and the six, named.</strong> The positive set is</p>
+<p>$$
+T_{tt},\ T_{xx},\ T_{yy},\ T_{zz},\ T_{xy},\ T_{xz},\ T_{yx},\ T_{yz},\ T_{zx},\ T_{zy},
+$$</p>
+<p>and the negative set is $T_{tx},T_{ty},T_{tz},T_{xt},T_{yt},T_{zt}$.</p>
+<p><strong>Proposition.</strong> The positive set is exactly the set of symmetric matrices among the sixteen, and the negative set is exactly the set of antisymmetric ones; no element is neither and none is both.</p>
+<p><strong>Proof.</strong> Each $T_{\mu\nu}$ is a signed permutation matrix, so its transpose is again a signed permutation matrix, and it is among the sixteen by the closure of the set. Comparing each of the sixteen with its transpose sorts them into the two displayed sets, of sizes ten and six.</p>
+<p><strong>Corollary.</strong> In this basis the trace pairing has the sign of the symmetry, and the symmetric decomposition is read without taking a single transpose.</p>
+<p><strong>Proof.</strong> The sign is $+4$ exactly on the symmetric elements, which is the statement that the positive eigenspace of the form and the symmetric half coincide.</p>
+<p><strong>The coordinates.</strong> Write $A=\sum c_{\mu\nu}T_{\mu\nu}$. The symmetric half is the set of matrices whose negative-slot coefficients vanish,</p>
+<p>$$
+A\in\operatorname{Sym}_4\iff c_{tx}=c_{ty}=c_{tz}=c_{xt}=c_{yt}=c_{zt}=0,
+$$</p>
+<p>and the antisymmetric half is the set whose remaining ten coefficients vanish.</p>
+<p><strong>Proof.</strong> The sixteen form a basis and the two displayed sets are complementary, so each half is the coordinate subspace spanned by its own six or ten elements.</p>
+<h2 id="summary">Summary</h2>
+<p>The transpose is an involution of $M_4(\mathbb{C})$, so the algebra is the direct sum of its $+1$ and $-1$ eigenspaces, of complex dimensions $10$ and $6$ and real dimensions $10$ and $6$ on the real slice. The projections are $\tfrac12(A\pm A^{\mathsf T})$ and they are unique.</p>
+<p>Neither half is closed under the product. For two matrices of the same parity the anticommutator is symmetric and the commutator skew, for opposite parities the reverse, and every product splits accordingly; in particular a product of two antisymmetric matrices is not symmetric at order four. The trace vanishes on the antisymmetric half and on every mixed pairing.</p>
+<p>Over the reals the trace of a symmetric square is a sum of squares and the trace of an antisymmetric square is minus a sum of squares, so the two halves are the positive and negative parts of the form, of signature $(10,6)$. In the axis-free basis this is an index pattern with no transpose in sight: ten symmetric slots, six antisymmetric ones, and a sign of $4$ attached to each.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{Sym}_4$</td>
+<td>the symmetric matrices, complex dimension $10$</td>
+</tr>
+<tr>
+<td>$\operatorname{Skew}_4$</td>
+<td>the antisymmetric matrices, complex dimension $6$</td>
+</tr>
+<tr>
+<td>$\tfrac12(A\pm A^{\mathsf T})$</td>
+<td>the two projections</td>
+</tr>
+<tr>
+<td>$\{S,K\}$, $[S,K]$</td>
+<td>anticommutator and commutator of two halves</td>
+</tr>
+<tr>
+<td>$\beta(X,Y)=\operatorname{tr}(XY)$</td>
+<td>the trace pairing</td>
+</tr>
+<tr>
+<td>$T_{\mu\nu}$</td>
+<td>the sixteen axis-free basis matrices</td>
+</tr>
+<tr>
+<td>$c_{\mu\nu}$</td>
+<td>the axis-free coordinates</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge University Press, 2013), for symmetric and skew-symmetric matrices and their eigenvalue structure.</li>
+<li><a href="the-involution-and-the-hermitian-structure-of-m4c.html">The Involution and the Hermitian Structure of $M_4(\mathbb{C})$</a>, for the dagger and the Hermitian half.</li>
+<li><a href="m4c-axis-free-representation.html">$M_4(\mathbb{C})$ Axis-Free Representation</a>, for the sixteen matrices and the coefficient basis.</li>
+<li><a href="the-trace-form-and-its-signature-on-the-two-halves-of-m4c.html">The Trace Form and Its Signature on the Two Halves of $M_4(\mathbb{C})$</a>, for the signature computed in full.</li>
+<li><a href="the-two-halves-over-r-symmetric-and-antisymmetric-at-n-2.html">The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$</a>, for the same split at order two.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Geometry of the Two Halves at $n=4$, and the Return of the Two-Sided Operators — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-geometry-of-the-two-halves-at-math0-and-the-return-of-the-two-sided-operators"><strong>The Geometry of the Two Halves at $n=4$, and the Return of the Two-Sided Operators</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>Every geometric object attached to the two halves — the cone in $\operatorname{Herm}_4$, the unitary group as the exponential of $\mathfrak{u}(4)$, the Grassmannians as the idempotents, the contractible symmetric space $\mathrm{GL}_4/U(4)$ with its trace metric — becomes an operator statement once a frame is chosen: the two-sided operators $T_{a,b}$, the sixteen axis-free basis elements, the Segre cone of dimension seven, the length, and the group of order $32$ as the finite skeleton.</strong></p>
+<p>The article assembles the geometric picture, then turns it around. The turn is the point of the block: the geometry of the halves is the geometry of the operators in the frame, and each object on the list reappears as a statement about $\operatorname{End}(M_4)$.</p>
+<p>It assumes <em>The Positive Cone and Its Boundary at $n=4$</em>, <em>The Space of Idempotents and the Flag Varieties at $n=4$</em>, <em>The Homotopy of $\mathrm{GL}_4(\mathbb{C})$ and of the Two Halves</em> and the four operator articles <em>$\operatorname{End}(M_4(\mathbb{C}))$ as an Algebra</em>, <em>The One-Sided Operators at $n=4$</em>, <em>The Two-Sided Operators and the Segre Cone at $n=4$</em> and <em>The Length and the Two Ranks at $n=4$</em>. The model at order two is <em>The Geometry of the Two Halves at $n=2$ and the Return of the Two-Sided Operators</em>.</p>
+<h2 id="the-hermitian-half-and-its-cone">The Hermitian Half and Its Cone</h2>
+<p><strong>Proposition.</strong> $\operatorname{Herm}_4$ is a real vector space of dimension $16$ with a positive definite inner product $\langle A,B\rangle=\operatorname{tr}(AB)$, and the positive definite cone $\operatorname{Herm}_4^{++}$ is an open convex cone in it, homogeneous under congruence by $\mathrm{GL}_4(\mathbb{C})$, self-dual for the inner product.</p>
+<p><strong>Proof.</strong> The trace of the product of two Hermitian matrices is real and positive definite; the cone properties are established in the article on the cone.</p>
+<p><strong>Corollary.</strong> The cone carries a Riemannian metric by restriction, and its group of isometries contains the unitary group acting by congruence.</p>
+<p><strong>Proof.</strong> The inner product restricts to a Riemannian metric on the open submanifold, and unitary congruence preserves the trace of the product.</p>
+<p><strong>Corollary.</strong> The cone is the set of squares, and the exponential maps the Hermitian half onto it diffeomorphically.</p>
+<p><strong>Proof.</strong> The spectral theorem.</p>
+<p><strong>The boundary.</strong> The boundary is stratified by rank with dimensions $15$, $12$, $7$ and $0$, and the faces are indexed by subspaces.</p>
+<p><strong>Proof.</strong> The rank-stratum dimension $r(8-r)$ and the face description.</p>
+<h2 id="the-skew-half-and-the-lie-algebra">The Skew Half and the Lie Algebra</h2>
+<p><strong>Proposition.</strong> $\mathfrak{u}(4)$ is a real Lie algebra of dimension $16$ under the commutator, it is the Lie algebra of $U(4)$, and the exponential maps it onto $U(4)$.</p>
+<p><strong>Proof.</strong> Closedness under the bracket for skew-Hermitian matrices, the identification of the tangent space at the identity, and the spectral theorem for unitaries.</p>
+<p><strong>Corollary.</strong> The group $U(4)$ is the compact real form of $\mathrm{GL}_4(\mathbb{C})$ inside the complex group, and its Lie algebra is the fixed set of the conjugation $X\mapsto-X^{\ast}$.</p>
+<p><strong>Proof.</strong> The unitary condition and its derivative.</p>
+<p><strong>Corollary.</strong> The two halves are the tangent space and its image at the identity: $\mathfrak{u}(4)=T_{\mathrm I}U(4)$ and $\operatorname{Herm}_4=T_{\mathrm I}\operatorname{Herm}_4^{++}$.</p>
+<p><strong>Proof.</strong> Both are linear spaces through the identity.</p>
+<h2 id="the-idempotents-and-the-flags">The Idempotents and the Flags</h2>
+<p><strong>Proposition.</strong> The Hermitian idempotents of rank $k$ form the Grassmannian $\mathrm{Gr}_k(\mathbb{C}^{4})=U(4)/(U(k)\times U(4-k))$ of real dimension $2k(4-k)$, inside $\operatorname{Herm}_4$.</p>
+<p><strong>Proof.</strong> Orthogonal projections are determined by their images.</p>
+<p><strong>Corollary.</strong> The Grassmannians of ranks one, two, three have real dimensions $6$, $8$, $6$, and the two extreme ranks give points; the full flag has real dimension $12$.</p>
+<p><strong>Proof.</strong> $2k(4-k)$ and twice the complex dimension $6$ of the full flag.</p>
+<p><strong>Corollary.</strong> The idempotents are the critical points of the distance function to a point of the cone, so the stratification of the cone and the flag varieties are the same geometry read twice.</p>
+<p><strong>Proof.</strong> The critical points of the distance to a fixed positive definite matrix are the projections onto its invariant subspaces.</p>
+<h2 id="the-symmetric-space-math44">The Symmetric Space $\mathrm{GL}_4/U(4)$</h2>
+<p><strong>Theorem.</strong> $\mathrm{GL}_4(\mathbb{C})/U(4)$ is a symmetric space of noncompact type, diffeomorphic to $\operatorname{Herm}_4^{++}$, hence contractible, of real dimension $16$.</p>
+<p><strong>Proof.</strong> The polar decomposition identifies the quotient with the cone; the cone is convex; the Cartan involution $\theta(X)=-X^{\ast}$ has fixed set $\mathfrak{u}(4)$ and $(-1)$-eigenspace $\operatorname{Herm}_4$, which is the model of the tangent space of the quotient.</p>
+<p><strong>Corollary.</strong> The trace metric $\langle X,Y\rangle=\operatorname{tr}(XY)$ on the tangent space is invariant under the group, and the geodesics are $t\mapsto A^{1/2}e^{tX}A^{1/2}$ for $A$ in the cone and $X$ Hermitian traceless in the appropriate normalisation.</p>
+<p><strong>Proof.</strong> The invariant metric on a symmetric space and the exponential map of the cone.</p>
+<p><strong>Corollary.</strong> The curvature is nonpositive, and the space is a manifold of noncompact type with no closed geodesics.</p>
+<p><strong>Proof.</strong> The sectional curvature of a symmetric space of noncompact type is nonpositive, and a nonpositively curved complete simply connected manifold has no closed geodesics.</p>
+<p><strong>The compact dual.</strong> The compact dual of $\mathrm{GL}_4(\mathbb{C})/U(4)$ is the group manifold $U(4)$ read as the symmetric space $(U(4)\times U(4))/\Delta U(4)$.</p>
+<p><strong>Proof.</strong> The Cartan decomposition of the group case, with the involution $\theta(g)=g^{-\ast}$ whose fixed set is the unitary group; the dual replaces $\operatorname{Herm}_4$ by $i\operatorname{Herm}_4$ and the noncompact group by the compact one.</p>
+<p><strong>Corollary.</strong> The geometry of the halves has two faces: a contractible noncompact one and a compact one obtained by replacing the Hermitian cone by its compact section.</p>
+<p><strong>Proof.</strong> The duality.</p>
+<h2 id="the-return-to-the-operators">The Return to the Operators</h2>
+<p><strong>Proposition.</strong> A choice of frame carries each of these geometric objects to a statement about the two-sided operators. The element algebra $\mathbb{B}$ of dimension $4$ sits inside $\operatorname{End}(\mathbb{B})$ of dimension $16$ as the two families $\mathbb{B}_L$ and $\mathbb{B}_R$, and the two-sided products $T_{a,b}=L_aR_b$ are the sixteen-dimensional coordinate system of the operator space.</p>
+<p><strong>Proof.</strong> The product of a left and a right multiplication and the independence of the sixteen products.</p>
+<p><strong>Corollary.</strong> The cone and the idempotents become statements about the coefficient matrix: positivity becomes the constraint that the coefficient vector lies in the Hermitian direction, and the flags become the rank conditions on the mixed blocks.</p>
+<p><strong>Proof.</strong> The reading of an element in the axis-free coordinates and the Peirce blocks.</p>
+<p><strong>Corollary.</strong> The sixteen axis-free basis elements are signed permutations of determinant one, they are orthonormal up to the factor four for the Hilbert–Schmidt form, and their trace pairing takes the values $\pm4$ with ten plus signs and six minus signs.</p>
+<p><strong>Proof.</strong> The verified computation of the pairing on the axis-free basis.</p>
+<p><strong>Corollary.</strong> The ten and the six are the trace-form signature, and they coincide with the symmetric and antisymmetric directions, so the geometry of the halves is the signature of a single quadratic form on the operator basis.</p>
+<p><strong>Proof.</strong> The set equality between the $+4$ elements and the symmetric ones.</p>
+<p><strong>The operators in order.</strong> The operator algebra of dimension $256$ contains the algebra of dimension $16$ as the two families of one-sided operators; the two-sided products give the Segre cone of dimension seven; the length of an operator is the rank of its coefficient matrix; and the group of order $32$ generated by the signed basis elements is the finite skeleton of the whole picture.</p>
+<p><strong>Proof.</strong> The four operator articles of the block.</p>
+<p><strong>Corollary.</strong> The geometry of the halves is not a different subject: it is the geometry of the operator algebra restricted to the rank-one part, read in the axis-free frame.</p>
+<p><strong>Proof.</strong> The identifications above.</p>
+<h2 id="summary">Summary</h2>
+<p>The Hermitian half is a real space of dimension sixteen carrying the open convex self-dual cone; the skew half is the Lie algebra of the unitary group; the Hermitian idempotents of rank $k$ are the Grassmannians inside the Hermitian half, of real dimension $2k(4-k)$, and the cone is stratified by the same flags.</p>
+<p>$\mathrm{GL}_4/U(4)$ is a symmetric space of noncompact type of dimension sixteen, contractible, with nonpositive curvature and the invariant trace metric; its compact dual replaces the cone by the compact section.</p>
+<p>The return is the point: with a frame chosen, each object becomes an operator statement. The two-sided products give the sixteen coordinates, the signed permutations give the finite skeleton of order $32$, the trace pairing gives the signature $(10,6)$, the Segre cone gives the rank-one part, and the length measures the coefficient matrix. The geometry of the halves is the geometry of the operator algebra read on the rank-one cone.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{Herm}_4^{++}$</td>
+<td>the self-dual cone of dimension $16$</td>
+</tr>
+<tr>
+<td>$\mathfrak{u}(4)$</td>
+<td>the Lie algebra of $U(4)$</td>
+</tr>
+<tr>
+<td>$\mathrm{Gr}_k=U(4)/(U(k)\times U(4-k))$</td>
+<td>the Hermitian idempotents</td>
+</tr>
+<tr>
+<td>$\mathrm{GL}_4/U(4)$</td>
+<td>the contractible symmetric space</td>
+</tr>
+<tr>
+<td>$T_{a,b}=L_aR_b$</td>
+<td>the two-sided operator</td>
+</tr>
+<tr>
+<td>$(10,6)$</td>
+<td>the signature of the trace form</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Sigurdur Helgason, <em>Differential Geometry, Lie Groups and Symmetric Spaces</em> (AMS, 2001), for symmetric spaces of noncompact type and their compact duals.</li>
+<li><a href="the-positive-cone-and-its-boundary-at-n-4.html">The Positive Cone and Its Boundary at $n=4$</a>, for the cone and its faces.</li>
+<li><a href="the-space-of-idempotents-and-the-flag-varieties-at-n-4.html">The Space of Idempotents and the Flag Varieties at $n=4$</a>, for the Grassmannians.</li>
+<li><a href="the-two-sided-operators-and-the-segre-cone-at-n-4.html">The Two-Sided Operators and the Segre Cone at $n=4$</a>, for the operator side of the return.</li>
+<li><a href="the-length-and-the-two-ranks-at-n-4.html">The Length and the Two Ranks at $n=4$</a>, for the coefficient matrix and its rank.</li>
+<li><a href="the-geometry-of-the-two-halves-at-n-2-and-the-return-of-the-two-sided-operators.html">The Geometry of the Two Halves at $n=2$ and the Return of the Two-Sided Operators</a>, for the case at order two.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

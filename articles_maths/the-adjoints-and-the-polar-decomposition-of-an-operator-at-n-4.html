@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Adjoints and the Polar Decomposition of an Operator at $n=4$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-adjoints-and-the-polar-decomposition-of-an-operator-at-math0"><strong>The Adjoints and the Polar Decomposition of an Operator at $n=4$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>An operator on the sixteen-dimensional matrix space has two different adjoints: the plain adjoint for the trace pairing $\beta(X,Y)=\operatorname{tr}(XY)$, which sends $T_{a,b}$ to $T_{b,a}$, and the Hilbert–Schmidt adjoint, which sends $T_{a,b}$ to $T_{a^{\ast},b^{\ast}}$; they agree exactly on the operators with $b=a^{\ast}$, the self-adjoint families are four-dimensional, the isometries are the operators with both factors unitary, and every invertible operator has a polar decomposition inside the $256$-dimensional algebra.</strong></p>
+<p>The article computes the two adjoints, exhibits the operators on which they differ, computes the two self-adjoint families, characterises the isometries by a multiplicative criterion, proves the polar decomposition in the operator algebra, identifies the singular values, and contrasts the decomposition of an operator with the polar decomposition of an element.</p>
+<p>It assumes <em>The Two-Sided Operators and the Segre Cone at $n=4$</em>, <em>The Hilbert–Schmidt Form at $n=4$</em> and <em>The Length and the Two Ranks at $n=4$</em>. The model at order two is <em>The Adjoints and the Polar Decomposition of an Operator at $n=2$</em>; the element version is <em>The Exponential of the Symmetric Part: Stretches and the Positive Cone at $n=4$</em>.</p>
+<h2 id="the-plain-adjoint">The Plain Adjoint</h2>
+<p><strong>Definition.</strong> The <strong>plain adjoint</strong> of an operator $T$ is the operator $T^{\mathrm{plain}}$ satisfying $\operatorname{tr}(T(X)Y)=\operatorname{tr}(X\,T^{\mathrm{plain}}(Y))$ for all $X,Y$.</p>
+<p><strong>Proposition.</strong> $\beta(X,Y)=\operatorname{tr}(XY)$ is a nondegenerate symmetric bilinear form on the matrix space, so the plain adjoint exists and is unique.</p>
+<p><strong>Proof.</strong> Nondegeneracy of the trace pairing on a full matrix algebra, and the standard duality argument for the existence of an adjoint.</p>
+<p><strong>Theorem.</strong> $\bigl(T_{a,b}\bigr)^{\mathrm{plain}}=T_{b,a}$.</p>
+<p><strong>Proof.</strong> $\operatorname{tr}\bigl(T_{a,b}(X)Y\bigr)=\operatorname{tr}(aXbY)=\operatorname{tr}(X\,bYa)=\operatorname{tr}\bigl(X\,T_{b,a}(Y)\bigr)$ by the cyclicity of the trace.</p>
+<p><strong>Corollary.</strong> The plain adjoint is an involution of the operator algebra: it is linear, reverses the order of a product, and is the identity on the operators $T_{a,a}$.</p>
+<p><strong>Proof.</strong> The formula in the two indices, and the product rule $T_{a,b}T_{c,d}=T_{ac,db}$ reversed.</p>
+<p><strong>Corollary.</strong> The plain adjoint of a single product is again a single product, so the Segre cone is invariant and the length is preserved.</p>
+<p><strong>Proof.</strong> $T_{b,a}$ is a single product, and the coefficient matrix transposes.</p>
+<h2 id="the-hilbertschmidt-adjoint">The Hilbert–Schmidt Adjoint</h2>
+<p><strong>Definition.</strong> The <strong>Hilbert–Schmidt adjoint</strong> $T^{\ast}$ is the adjoint for $\langle X,Y\rangle=\operatorname{tr}(X^{\ast}Y)$.</p>
+<p><strong>Proposition.</strong> $\langle X,Y\rangle$ is a positive definite Hermitian form, so the Hilbert–Schmidt adjoint exists, is unique, and satisfies $T^{\ast\ast}=T$.</p>
+<p><strong>Proof.</strong> $\operatorname{tr}(X^{\ast}X)$ is the sum of the squared moduli of the entries, hence positive for nonzero $X$.</p>
+<p><strong>Theorem.</strong> $\bigl(T_{a,b}\bigr)^{\ast}=T_{a^{\ast},b^{\ast}}$, where $^{\ast}$ on the right is the conjugate transpose of the matrix of the element.</p>
+<p><strong>Proof.</strong> $\operatorname{tr}\bigl((aXb)^{\ast}Y\bigr)=\operatorname{tr}(b^{\ast}X^{\ast}a^{\ast}Y)=\operatorname{tr}\bigl(X^{\ast}a^{\ast}Yb^{\ast}\bigr)=\operatorname{tr}\bigl(X^{\ast}T_{a^{\ast},b^{\ast}}(Y)\bigr)$.</p>
+<p><strong>Corollary.</strong> The two adjoints coincide exactly when $b=a^{\ast}$, that is on the operators $T_{a,a^{\ast}}$.</p>
+<p><strong>Proof.</strong> Compare the two formulas: $T_{b,a}=T_{a^{\ast},b^{\ast}}$ forces $b=a^{\ast}$ and $a=b^{\ast}$, which are the same condition.</p>
+<p><strong>Corollary.</strong> The two adjoints differ on the generic operator, and the difference is the involution of the algebra used in the pairing, not a different structure of the operator.</p>
+<p><strong>Proof.</strong> The plain adjoint uses the transpose, the Hilbert–Schmidt adjoint the conjugate transpose, and the two differ by the complex conjugation.</p>
+<p><strong>The two involutions.</strong> Both are antilinear involutions of the operator algebra, and their composition is the conjugation of the coefficients, an involution with two eigenspaces.</p>
+<p><strong>Proof.</strong> Each is an antilinear involution, and the composition of two antilinear involutions is linear.</p>
+<h2 id="the-self-adjoint-family">The Self-Adjoint Family</h2>
+<p><strong>Proposition.</strong> The operators self-adjoint for the plain pairing are exactly the $T_{a,a}$, a family of complex dimension $4$; those self-adjoint for the Hilbert–Schmidt pairing are the $T_{a,a^{\ast}}$, also of complex dimension $4$.</p>
+<p><strong>Proof.</strong> $T_{a,b}^{\mathrm{plain}}=T_{a,b}$ forces $b=a$, and $T_{a,b}^{\ast}=T_{a,b}$ forces $b=a^{\ast}$; in each case the free parameter is the element $a$, of four complex dimensions.</p>
+<p><strong>Corollary.</strong> Each family is a real subspace of dimension $8$, and their intersection is the set of $T_{a,a}$ with $a$ self-adjoint as a matrix, of real dimension $4$.</p>
+<p><strong>Proof.</strong> The complex dimension four is a real dimension eight for the first family; the second is the image of an antilinear map and has the same real dimension; the intersection is fixed by the condition $a=a^{\ast}$, and the self-adjoint elements of the biquaternion algebra form a real space of dimension four.</p>
+<p><strong>Corollary.</strong> The operator $T_{\mu\nu}$ is plain self-adjoint exactly when $\mu=\nu$, and then it is a signed permutation with square the identity.</p>
+<p><strong>Proof.</strong> The plain adjoint swaps the two indices.</p>
+<p><strong>The degenerate case.</strong> The plain self-adjoint operators of the basis are $T_{tt},T_{xx},T_{yy},T_{zz}$ and none of the off-diagonal ones, so the four coordinates of the diagonal are the self-adjoint directions.</p>
+<p><strong>Proof.</strong> The index condition $\mu=\nu$.</p>
+<h2 id="the-isometries">The Isometries</h2>
+<p><strong>Theorem.</strong> An operator $T_{a,b}$ is an isometry for the Hilbert–Schmidt form exactly when $a$ and $b$ are unitary matrices.</p>
+<p><strong>Proof.</strong> $T_{a,b}^{\ast}T_{a,b}=T_{a^{\ast},b^{\ast}}T_{a,b}=T_{a^{\ast}a,\,bb^{\ast}}$, which is the identity exactly when $a^{\ast}a=\mathrm I_4$ and $bb^{\ast}=\mathrm I_4$.</p>
+<p><strong>Corollary.</strong> The isometries form a subgroup of the operator algebra, isomorphic to $U(4)\times U(4)$, of real dimension $32$.</p>
+<p><strong>Proof.</strong> The product of two isometries is an isometry and the inverse of an isometry is one; the parameter space is the product of the two unitary groups.</p>
+<p><strong>Corollary.</strong> The isometry condition is multiplicative: it is the conjunction of one condition on each factor, and it does not mix them.</p>
+<p><strong>Proof.</strong> The two conditions are independent.</p>
+<p><strong>The plain analogue.</strong> An operator is an isometry for the plain pairing exactly when $b=a^{-1}$, which is a different condition and is defined only for invertible $a$.</p>
+<p><strong>Proof.</strong> $T_{b,a}T_{a,b}=T_{ba,ab}$ equals the identity only when $ba=ab=\mathrm I_4$.</p>
+<p><strong>Corollary.</strong> The two isometry groups are different subgroups of the same dimension $32$, and they meet in the operators with $a$ unitary and $b=a^{-1}$.</p>
+<p><strong>Proof.</strong> The two conditions and their conjunction.</p>
+<h2 id="the-polar-decomposition-of-the-operator-algebra">The Polar Decomposition of the Operator Algebra</h2>
+<p><strong>Theorem.</strong> Every invertible operator $T$ in $\operatorname{End}(M_4)$ is uniquely $T=HU$ with $H$ positive definite self-adjoint for the Hilbert–Schmidt form and $U$ an isometry.</p>
+<p><strong>Proof.</strong> Put $H=(TT^{\ast})^{1/2}$, which is positive definite self-adjoint, and $U=H^{-1}T$; then $U^{\ast}U=T^{\ast}H^{-2}T=\mathrm I$; uniqueness follows because $TT^{\ast}=H^{2}$ determines $H$ as the positive square root.</p>
+<p><strong>Corollary.</strong> The polar decomposition is a diffeomorphism $\operatorname{End}^{\times}\to\mathcal{P}\times U(4)\times U(4)$, where $\mathcal{P}$ is the open cone of positive definite self-adjoint operators.</p>
+<p><strong>Proof.</strong> The bijection and the smoothness of $T\mapsto((TT^{\ast})^{1/2},(TT^{\ast})^{-1/2}T)$.</p>
+<p><strong>Corollary.</strong> The polar decomposition of a single product is the product of the polar decompositions of its two factors, because the two factors commute.</p>
+<p><strong>Proof.</strong> $T_{a,b}=L_aR_b$ with $L_a=|L_a|U_a$ and $R_b=|R_b|U_b$ commuting, so $T_{a,b}=(|L_a||R_b|)(U_aU_b)$ with the first factor positive and the second an isometry.</p>
+<p><strong>The operator against the element.</strong> The polar decomposition of an element of $M_4$ is the decomposition of a $4\times4$ matrix into a stretch and a rotation; the polar decomposition of an operator is the same statement in the $256$-dimensional algebra, and the second is not the first applied entrywise.</p>
+<p><strong>Proof.</strong> The two decompositions live in algebras of different dimensions and use different inner products.</p>
+<h2 id="the-singular-values">The Singular Values</h2>
+<p><strong>Definition.</strong> The <strong>singular values</strong> of an operator $T$ are the eigenvalues of $|T|=(T^{\ast}T)^{1/2}$, counted with multiplicity: sixteen of them.</p>
+<p><strong>Proposition.</strong> The singular values are the square roots of the eigenvalues of $T^{\ast}T$, and the operator is an isometry exactly when all sixteen equal one.</p>
+<p><strong>Proof.</strong> The spectral theorem for the positive self-adjoint operator $T^{\ast}T$.</p>
+<p><strong>Corollary.</strong> For a single product with both factors invertible the singular values are the pairwise products of the singular values of the two matrices.</p>
+<p><strong>Proof.</strong> $T_{a,b}^{\ast}T_{a,b}=T_{a^{\ast}a,bb^{\ast}}$, whose eigenvalues are the products of the eigenvalues of the two positive matrices.</p>
+<p><strong>Corollary.</strong> The product of the sixteen singular values is $|\det T|$, and the largest is the operator norm of $T$ for the Hilbert–Schmidt structure.</p>
+<p><strong>Proof.</strong> The determinant is the product of the eigenvalues, and the largest eigenvalue of $|T|$ is the norm.</p>
+<p><strong>The rank of the operator.</strong> The number of nonzero singular values is the rank of $T$ as a $256\times256$ matrix, which is not the length of $T$ and not the matrix rank of the element.</p>
+<p><strong>Proof.</strong> The three ranks are computed in three different spaces.</p>
+<h2 id="summary">Summary</h2>
+<p>An operator has two adjoints: the plain adjoint for $\operatorname{tr}(XY)$, which sends $T_{a,b}$ to $T_{b,a}$, and the Hilbert–Schmidt adjoint, which sends it to $T_{a^{\ast},b^{\ast}}$. They agree exactly on the operators $T_{a,a^{\ast}}$, and each self-adjoint family has dimension four over $\mathbb{C}$.</p>
+<p>The Hilbert–Schmidt isometries are the operators with both factors unitary, a group isomorphic to $U(4)\times U(4)$ of real dimension $32$; the plain isometries are the operators with $b=a^{-1}$, a different group of the same dimension. Every invertible operator has a unique polar decomposition into a positive self-adjoint part and an isometry, and the decomposition of a single product is the product of the decompositions of its factors.</p>
+<p>The singular values of an operator are sixteen in number, their product is the modulus of the determinant, and the number of nonzero ones is the rank of the operator as a $256\times256$ matrix, distinct from the length and from the matrix rank of the element.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$T^{\mathrm{plain}}=T_{b,a}$</td>
+<td>the plain adjoint for $\operatorname{tr}(XY)$</td>
+</tr>
+<tr>
+<td>$T^{\ast}=T_{a^{\ast},b^{\ast}}$</td>
+<td>the Hilbert–Schmidt adjoint</td>
+</tr>
+<tr>
+<td>$T_{a,a}$, $\dim4$</td>
+<td>the plain self-adjoint family</td>
+</tr>
+<tr>
+<td>$U(4)\times U(4)$</td>
+<td>the group of Hilbert–Schmidt isometries</td>
+</tr>
+<tr>
+<td>$T=HU$</td>
+<td>the polar decomposition in the operator algebra</td>
+</tr>
+<tr>
+<td>sixteen singular values</td>
+<td>the spectrum of $|T|$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Rajendra Bhatia, <em>Matrix Analysis</em> (Springer, 1997), for the polar decomposition and singular values in a general setting.</li>
+<li><a href="the-hilbert-schmidt-form-at-n-4.html">The Hilbert–Schmidt Form at $n=4$</a>, for the inner product used by the second adjoint.</li>
+<li><a href="the-two-sided-operators-and-the-segre-cone-at-n-4.html">The Two-Sided Operators and the Segre Cone at $n=4$</a>, for the operators and their products.</li>
+<li><a href="the-length-and-the-two-ranks-at-n-4.html">The Length and the Two Ranks at $n=4$</a>, for the invariants that the singular values do not compute.</li>
+<li><a href="the-adjoints-and-the-polar-decomposition-of-an-operator-at-n-2.html">The Adjoints and the Polar Decomposition of an Operator at $n=2$</a>, for the case at order two.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$UT_4$ as the Complement of the Antisymmetric Part — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="math0-as-the-complement-of-the-antisymmetric-part"><strong>$UT_4$ as the Complement of the Antisymmetric Part</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The upper triangular matrices form a subspace of dimension $10$, the antisymmetric matrices one of dimension $6$, and the two are direct complements: every matrix is a skew matrix plus an upper triangular one, in exactly one way.</strong></p>
+<p>The article proves the direct sum, writes the projection down entry by entry, contrasts this complement of $\operatorname{Skew}_4$ with the symmetric one, and states what each complement buys: the triangular one carries a flag and a solvable algebra, the symmetric one carries a Jordan product and a cone.</p>
+<p>It assumes <em>The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=4$</em> for the antisymmetric half and <em>The Triangular Decomposition $h\oplus n_+\oplus n_-$ of $M_4(\mathbb{C})$</em> for the Borel. The case $n=2$ is <em>$UT_2$ as the Complement of the Antisymmetric Part</em>. The product question on the same space is <em>$UT_4$ as a Linear Model of $\operatorname{Sym}_4$: Same Space, Wrong Product</em>.</p>
+<h2 id="which-math12">Which $UT_4$</h2>
+<p><strong>Definition.</strong> In this category $UT_4$ is the space of <strong>upper triangular</strong> matrices including the diagonal, that is the span of the ten units $E_{ij}$ with $i\le j$. It is the Lie algebra of the group $B_4$ of invertible upper triangular matrices, and it is not the group and not the set of strictly upper triangular matrices.</p>
+<p><strong>Proposition.</strong> $\dim UT_4=10$, with the basis $E_{ii}$ for $1\le i\le4$ and $E_{ij}$ for $i<j$.</p>
+<p><strong>Proof.</strong> The pairs with $i\le j$ number $4+6=10$.</p>
+<p><strong>The convention is fixed.</strong> A strictly upper triangular space has dimension $6$ and is written $\mathfrak{n}_+$; the unipotent group is $\mathrm I+\mathfrak{n}_+$; $UT_4$ always means the ten-dimensional space. Mixing the three is the commonest source of wrong dimension counts in this block, so the article keeps to the definition above throughout.</p>
+<h2 id="the-direct-sum">The Direct Sum</h2>
+<p><strong>Theorem.</strong> $M_4(\mathbb{C})=\operatorname{Skew}_4\oplus UT_4$.</p>
+<p><strong>Proof.</strong> Suppose $A$ is both antisymmetric and upper triangular. Then $a_{ii}=-a_{ii}$, so the diagonal vanishes, and $a_{ij}=0$ for $i<j$ by triangularity; hence $A=0$, and the intersection is zero. The dimensions add to $6+10=16$, so the sum is everything.</p>
+<p><strong>The projection, entry by entry.</strong> For $A$ arbitrary, the decomposition $A=K+U$ is</p>
+<p>$$
+U_{ii}=a_{ii},\qquad U_{ij}=a_{ij}+a_{ji}\ (i<j),\qquad U_{ij}=0\ (i>j),
+$$</p>
+<p>and $K=A-U$, with $K_{ij}=a_{ij}$ for $i>j$ and $K_{ji}=-a_{ij}$.</p>
+<p><strong>Proof.</strong> The proposed $U$ is upper triangular, and $K=A-U$ has $K_{ii}=0$, $K_{ij}=a_{ij}$ for $i>j$ and $K_{ji}=a_{ji}-(a_{ij}+a_{ji})=-a_{ij}$ for $i<j$, which is antisymmetry. Uniqueness is the theorem.</p>
+<p><strong>Corollary.</strong> The map $A\mapsto U$ is linear and idempotent with image $UT_4$ and kernel $\operatorname{Skew}_4$.</p>
+<p><strong>Proof.</strong> It is the projection along a direct summand, and the formulas are linear.</p>
+<p><strong>The projection is not orthogonal.</strong> For the trace pairing, $\operatorname{tr}(KU)$ need not vanish: with $K=E_{12}-E_{21}$ and $U=E_{12}$ one has $KU=-E_{22}$, of trace $-1$.</p>
+<p><strong>Proof.</strong> Compute $KU=(E_{12}-E_{21})E_{12}=E_{12}E_{12}-E_{21}E_{12}=0-E_{22}$.</p>
+<p><strong>What that means.</strong> There are two natural complements of $\operatorname{Skew}_4$, the symmetric half and the triangular space, and only the first is orthogonal for the trace pairing. The triangular one is the complement defined by the flag, not by the form.</p>
+<h2 id="the-two-complements-compared">The Two Complements Compared</h2>
+<p><strong>Proposition.</strong> $\operatorname{Sym}_4\cap UT_4=\mathfrak{h}$, of dimension $4$, and $\operatorname{Sym}_4\neq UT_4$.</p>
+<p><strong>Proof.</strong> A symmetric upper triangular matrix is diagonal; a diagonal matrix is both. Both spaces have dimension $10$, so equality would force the intersection to have dimension $10$, which it does not.</p>
+<p><strong>The table of what each buys.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Question</th>
+<th>$\operatorname{Sym}_4$</th>
+<th>$UT_4$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>closed under the product</td>
+<td>no</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>a Lie algebra</td>
+<td>no</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>a Jordan algebra</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>contains the diagonal</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>a Borel</td>
+<td>no</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>stabilises a flag</td>
+<td>no</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>carries a cone of squares</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>orthogonal to $\operatorname{Skew}_4$ for $\beta$</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proof of the rows.</strong> The symmetric half is closed under $\circ$ and not under the product; the triangular space is closed under the product and the commutator, and the Jordan product of two upper triangular matrices is again upper triangular but the Jordan identity fails, as the companion article shows. The symmetry row is the first proposition of this section and the orthogonality row was computed above.</p>
+<p><strong>Why both complements matter.</strong> The symmetric complement turns $\operatorname{Skew}_4$ into an orthogonal summand and produces the Cartan decomposition $\mathfrak{gl}_4=\mathfrak{so}(4)\oplus\operatorname{Sym}_4$. The triangular complement produces the quotient $M_4/\mathfrak{n}_-\cong\mathfrak{b}$ and the flag variety. One complement is adapted to a form, the other to a filtration, and no single complement is adapted to both.</p>
+<h2 id="the-flag-and-the-triangular-complement">The Flag and the Triangular Complement</h2>
+<p><strong>Proposition.</strong> $UT_4=\mathfrak{h}\oplus\mathfrak{n}_+$ and $\mathfrak{n}_-$ is a complement of $UT_4$ as well.</p>
+<p><strong>Proof.</strong> The position split gives the first identity; the second is the same dimension count with the disjoint index sets $i>j$ and $i\le j$.</p>
+<p><strong>Corollary.</strong> The algebra has at least three pairwise different complements of $\operatorname{Skew}_4$: the symmetric half, the triangular space, and the space $\mathfrak{h}\oplus\mathfrak{n}_-$ obtained by reflecting the flag.</p>
+<p><strong>Proof.</strong> Each has dimension $10$ and meets $\operatorname{Skew}_4$ only at zero, as the same argument with the transposed inequalities shows; they are pairwise different because their diagonal parts and their triangular parts differ.</p>
+<p><strong>The reading of the projection onto $UT_4$.</strong> The formula $U_{ij}=a_{ij}+a_{ji}$ for $i<j$ shows that the triangular complement keeps the diagonal, keeps the upper entries as they are plus the transposed lower entry, and discards the lower entry alone. The symmetric complement instead keeps $a_{ij}+a_{ji}$ on both sides. The two projections agree on the diagonal and differ by a factor of two on the off-diagonal pairs.</p>
+<h2 id="a-worked-matrix">A Worked Matrix</h2>
+<p><strong>The example.</strong> Take $A$ with entries $a_{ij}=4(i-1)+j$, the matrix</p>
+<p>$$
+A=egin{pmatrix}1&2&3&4\ 5&6&7&8\ 9&10&11&12\ 13&14&15&16\end{pmatrix}.
+$$</p>
+<p>Then $U$ has the diagonal $1,6,11,16$, the strict upper entries $2+5=7$, $3+9=12$, $4+13=17$, $7+10=17$, $8+14=22$, $12+15=27$, and zeros below, and $K=A-U$ has the strict lower entries $5,9,13,10,14,15$ with the negatives in the transposed positions.</p>
+<p><strong>The check.</strong> $K$ is antisymmetric by construction, $U$ is upper triangular, and $K+U=A$; the six upper entries of $K$ are $-5,-9,-13,-10,-14,-15$, which are the negatives of the six strict lower entries of $A$ that $U$ discarded.</p>
+<p><strong>The count of the discarded information.</strong> In both cases six numbers are lost: the lower entries $a_{ij}$ with $i>j$ in the triangular reading, the differences $a_{ij}-a_{ji}$ in the symmetric reading. The information lost is the same size and a different content.</p>
+<p><strong>Corollary.</strong> The projection onto $UT_4$ along the skew half is the map that keeps the upper triangle and replaces the strict lower part by zero, so the two coordinates of an element are its upper triangle and its strictly lower triangle read as a skew matrix.</p>
+<p><strong>Proof.</strong> Decompose an arbitrary matrix into its upper triangular part and the negative of its strictly lower triangular part.</p>
+<h2 id="summary">Summary</h2>
+<p>The upper triangular matrices including the diagonal have dimension $10$, the antisymmetric matrices $6$, and their intersection is zero, so the two are direct complements of one another in the sixteen-dimensional algebra. The projection is written entry by entry: keep the diagonal, replace the strict upper entry by the sum of the two opposite entries, and set the strict lower entry to zero.</p>
+<p>This complement differs from the symmetric complement of the same antisymmetric half, and only the symmetric one is orthogonal for the trace pairing. The symmetric complement is closed under the Jordan product and carries the cone of squares; the triangular complement is closed under the associative product, is a Borel, and stabilises the standard flag.</p>
+<p>Three different ten-dimensional complements exist, one for the form, one for the flag and one for the reflected flag, and each discards six numbers of a different kind. The choice of complement is a choice of which structure on the algebra is to be visible.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$UT_4$</td>
+<td>upper triangular including the diagonal, dimension $10$</td>
+</tr>
+<tr>
+<td>$\mathfrak{n}_+$</td>
+<td>strictly upper triangular, dimension $6$</td>
+</tr>
+<tr>
+<td>$\operatorname{Skew}_4$</td>
+<td>the antisymmetric half, dimension $6$</td>
+</tr>
+<tr>
+<td>$U_{ij}=a_{ij}+a_{ji}$</td>
+<td>the entry formula of the projection, for $i<j$</td>
+</tr>
+<tr>
+<td>$\mathfrak{h}$</td>
+<td>the diagonal, the common part of the two complements</td>
+</tr>
+<tr>
+<td>$\beta$</td>
+<td>the trace pairing</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge University Press, 2013), for triangular matrices and the $LU$ decomposition behind the projection.</li>
+<li><a href="the-triangular-decomposition-h-n-plus-n-minus-of-m4c.html">The Triangular Decomposition $h\oplus n_+\oplus n_-$ of $M_4(\mathbb{C})$</a>, for the Borel and its flag.</li>
+<li><a href="ut4-as-a-linear-model-of-sym-4-same-space-wrong-product.html">$UT_4$ as a Linear Model of $\operatorname{Sym}_4$: Same Space, Wrong Product</a>, for the identical space under the wrong product.</li>
+<li><a href="the-two-halves-as-orthogonal-complements-at-n-4.html">The Two Halves as Orthogonal Complements at $n=4$</a>, for the orthogonal complement of the antisymmetric half.</li>
+<li><a href="ut2-as-the-complement-of-the-antisymmetric-part.html">$UT_2$ as the Complement of the Antisymmetric Part</a>, for the same split at order two.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

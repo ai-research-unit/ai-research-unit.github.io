@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Rotor as a Square Root of a Rotation: the Two Signs and the Double Cover at $n=4$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-rotor-as-a-square-root-of-a-rotation-the-two-signs-and-the-double-cover-at-math0"><strong>The Rotor as a Square Root of a Rotation: the Two Signs and the Double Cover at $n=4$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>Every rotation of four-space is the two-sided action $X\mapsto\rho X\rho^{-1}$ of a rotor, the rotors $\rho$ and $-\rho$ give the same rotation, and the map from the rotors to the rotations is a covering of degree two from $\mathrm{Spin}(4)=SU(2)\times SU(2)$ onto $SO(4)$, whose finite shadow is the group of order $32$ of the signed permutations acting on a group of order $64$.</strong></p>
+<p>The article defines the rotor in the biquaternion algebra, proves that the two-sided action is a rotation and that the two signs give the same one, computes the covering and its kernel, exhibits the extraspecial group of order $32$ as the finite shadow of the cover, separates the two components of $O(4)$ from the connected $SO(4)$, and identifies the generator of $\pi_1(SO(4))=\mathbb{Z}_2$ with the belt.</p>
+<p>It assumes <em>Rotors Acting on the Bivector Space: the Adjoint Action at $n=4$</em> and <em>The Lie Algebra $\operatorname{Skew}_4\cong\mathfrak{so}(4)$</em>. The model at order two is <em>The Rotor as a Square Root of a Rotation: the Two Signs and the Double Cover</em>; the frame that generates the even words is <em>Where the Rotor Leaves $M_4(\mathbb{C})$: the Even Subalgebra and $Cl(4)$</em>.</p>
+<h2 id="the-rotor-and-the-two-signs">The Rotor and the Two Signs</h2>
+<p><strong>Definition.</strong> A <strong>rotor</strong> is an even product $\rho=v_1v_2\cdots v_{2m}$ of unit vectors of the algebra, and a <strong>unit rotor</strong> is one with $\rho\rho^{\natural}=e_t$.</p>
+<p><strong>Proposition.</strong> For a unit rotor the map $\Phi_\rho(X)=\rho X\rho^{\natural}$ preserves the algebra, is real-linear, and preserves the norm $X X^{\natural}$.</p>
+<p><strong>Proof.</strong> $\Phi_\rho(X)\Phi_\rho(X)^{\natural}=\rho X\rho^{\natural}\rho X^{\natural}\rho^{\natural}=\rho X X^{\natural}\rho^{\natural}$, which equals $XX^{\natural}$ when $\rho\rho^{\natural}=e_t$ and the scalar part is central.</p>
+<p><strong>Corollary.</strong> $\Phi_\rho$ is an orthogonal transformation of the four-dimensional real space, and $\Phi_{\rho}\Phi_{\sigma}=\Phi_{\rho\sigma}$.</p>
+<p><strong>Proof.</strong> Preservation of the norm on a real space of dimension four gives orthogonality, and the composition law is associativity.</p>
+<p><strong>Theorem.</strong> $\Phi_\rho=\Phi_{-\rho}$, so the two signs of a rotor give the same rotation.</p>
+<p><strong>Proof.</strong> $(-\rho)X(-\rho)^{\natural}=\rho X\rho^{\natural}$, since the two signs cancel.</p>
+<p><strong>Corollary.</strong> The map from rotors to rotations is at least two to one, and no rotor is its own negative.</p>
+<p><strong>Proof.</strong> The kernel contains $\pm e_t$, which are distinct.</p>
+<p><strong>The square root.</strong> If $\rho^{2}=\sigma$ then $\Phi_\rho^{2}=\Phi_\sigma$, so a rotor is a square root of the rotation it induces only when the induced rotation is the square of another; the useful statement is the other way round, that every rotation has a rotor and the rotor is unique up to sign.</p>
+<p><strong>Proof.</strong> The composition law and the theorem.</p>
+<h2 id="the-two-sided-action">The Two-Sided Action</h2>
+<p><strong>Theorem.</strong> Every element of $SO(4)$ is $\Phi_\rho$ for some unit rotor $\rho$, and the rotors form the group $\mathrm{Spin}(4)$.</p>
+<p><strong>Proof.</strong> In the axis-free frame the four left multiplications and the four right multiplications generate a group of signed permutations containing $SO(4)$ in the sense of Lie algebras; at the level of the Lie algebra every skew matrix is $L_u+R_v$ with $u,v$ imaginary, and exponentiating gives $\Phi_{e^{u}e^{v}}$ with the two one-sided unit quaternions. The rotors form a group because the product of two rotors is a rotor.</p>
+<p><strong>Corollary.</strong> $\mathrm{Spin}(4)\cong SU(2)\times SU(2)$, of real dimension $6$, equal to the dimension of $SO(4)$.</p>
+<p><strong>Proof.</strong> The left unit quaternions form a copy of $SU(2)$ and the right ones another, they commute, and the pair $(-1,-1)$ acts as the identity on the algebra.</p>
+<p><strong>Corollary.</strong> The two-sided action is the general rotor action at order four, while at order three the one-sided action suffices; the second quaternion is the new ingredient of the dimension.</p>
+<p><strong>Proof.</strong> $\mathfrak{so}(3)$ has dimension $3$ and is covered by one copy of $SU(2)$; $\mathfrak{so}(4)$ has dimension $6$ and needs two.</p>
+<p><strong>The two factors as the two isoclinic families.</strong> A rotor which is a single left quaternion gives a left-isoclinic rotation, a single right quaternion gives a right-isoclinic one, and a general rotor is the product of the two.</p>
+<p><strong>Proof.</strong> The left action rotates both planes by the same angle, the right action by opposite angles, and the product adds the two contributions.</p>
+<h2 id="the-double-cover">The Double Cover</h2>
+<p><strong>Theorem.</strong> The map $\pi:\mathrm{Spin}(4)\to SO(4)$, $\rho\mapsto\Phi_\rho$, is a surjective Lie group homomorphism with kernel $\{\pm e_t\}$, hence a covering of degree two.</p>
+<p><strong>Proof.</strong> Surjectivity is the theorem of the previous section; the kernel is the set of rotors acting trivially, which is $\pm e_t$ because the action is faithful up to sign and the representation is faithful; a homomorphism of Lie groups with discrete kernel of two elements is a covering.</p>
+<p><strong>Corollary.</strong> $\pi_1(SO(4))=\mathbb{Z}_2$, and $\mathrm{Spin}(4)$ is simply connected.</p>
+<p><strong>Proof.</strong> The total space of a covering of a connected manifold with simply connected total space computes the fundamental group of the base as the fibre; $SU(2)\times SU(2)$ is simply connected, and the fibre has two points.</p>
+<p><strong>Corollary.</strong> Every rotation has exactly two rotors, and a continuous path of rotations lifts to a path of rotors only if the path is trivial in $\pi_1$; the full turn is not.</p>
+<p><strong>Proof.</strong> The two preimages and the lifting criterion for coverings.</p>
+<p><strong>The two signs are not a convention.</strong> The sign of a rotor is a genuine ambiguity of the square root: there is no continuous choice of a rotor for a continuous family of rotations going once around the nontrivial loop.</p>
+<p><strong>Proof.</strong> A continuous choice would be a section of the covering, which would split the nontrivial double cover.</p>
+<h2 id="the-finite-shadow">The Finite Shadow</h2>
+<p><strong>Theorem.</strong> The sixteen matrices $T_{\mu\nu}=L_{\mu}R_{\nu}$ and their negatives form a group of order $32$, isomorphic to $(Q_8\times Q_8)/\{\pm(1,1)\}$, the central product $Q_8\circ Q_8$.</p>
+<p><strong>Proof.</strong> Each $T_{\mu\nu}$ is a signed permutation of determinant one; the products follow $T_{\mu\nu}T_{\rho\sigma}=\pm T_{\mu\rho,\sigma\nu}$, and the sign bookkeeping is that of the two copies of $Q_8$.</p>
+<p><strong>Corollary.</strong> The group of order $32$ is the image under the double cover of the group $Q_8\times Q_8$ of order $64$, and the kernel is again the pair $\pm(1,1)$.</p>
+<p><strong>Proof.</strong> Each $T_{\mu\nu}$ is the image of the pair $(L_\mu,R_\nu)$ of signed permutation quaternions, and the pair $(-1,-1)$ maps to the identity.</p>
+<p><strong>Corollary.</strong> The finite shadow of the double cover is $64\to32$, the same ratio as $SU(2)\times SU(2)\to SO(4)$, and the group of order $32$ lies inside $SO(4)$.</p>
+<p><strong>Proof.</strong> All the $T_{\mu\nu}$ have determinant one, so they are rotations, and the ratio of the orders is two.</p>
+<p><strong>The extraspecial structure.</strong> The group of order $32$ has centre of order two and is extraspecial, so its finite representation theory shadows the covering exactly.</p>
+<p><strong>Proof.</strong> The centre is $\{\pm\mathrm I_4\}$, and the quotient by it is elementary abelian of order $16$.</p>
+<h2 id="the-two-components">The Two Components</h2>
+<p><strong>Theorem.</strong> $O(4)$ has two connected components, distinguished by the sign of the determinant; $SO(4)$ is the identity component and is connected.</p>
+<p><strong>Proof.</strong> The determinant is continuous on $O(4)$ and takes the values $\pm1$; the group $SO(4)$ is the image of the connected group $\mathrm{Spin}(4)$ under a continuous map.</p>
+<p><strong>Corollary.</strong> A reflection is not a rotor action, and every element of $O(4)$ is a rotor action composed with a fixed reflection.</p>
+<p><strong>Proof.</strong> A rotor action has determinant one, so a reflection has determinant minus one and is not of that form; the quotient of the two components is of order two.</p>
+<p><strong>Corollary.</strong> The two components are the two cosets of $SO(4)$ in $O(4)$, and each is a copy of $SO(4)$ as a manifold.</p>
+<p><strong>Proof.</strong> The cosets of the identity component in a Lie group are the components, and the action by a reflection is a diffeomorphism.</p>
+<p><strong>The dimension count.</strong> $\dim SO(4)=6$, $\dim O(4)=6$, and the two components are each of dimension six.</p>
+<p><strong>Proof.</strong> The dimension of a Lie group is that of its Lie algebra, and the two components are diffeomorphic.</p>
+<h2 id="the-loop-and-the-belt">The Loop and the Belt</h2>
+<p><strong>Theorem.</strong> The loop $t\mapsto e^{tJ}$ for $t\in[0,2\pi]$, with $J$ a complex structure, is the nontrivial element of $\pi_1(SO(4))$, and its double is contractible.</p>
+<p><strong>Proof.</strong> The loop lifts to $t\mapsto e^{tJ/2}$ in $\mathrm{Spin}(4)$, which returns to $-e_t$ at $t=2\pi$; the lift of the double loop returns to $e_t$, and $SU(2)\times SU(2)$ is simply connected, so the double loop is null-homotopic.</p>
+<p><strong>Corollary.</strong> A full turn of a rigid body does not return its rotor, and two full turns do; the belt is the physical picture of the same statement.</p>
+<p><strong>Proof.</strong> The lift computation and the connectedness of the path space.</p>
+<p><strong>Corollary.</strong> The two signs of the rotor are the two lifts of the same rotation, and only a closed loop that is twice a generator returns to the starting sign.</p>
+<p><strong>Proof.</strong> The kernel of the covering and the computation above.</p>
+<p><strong>The higher groups.</strong> At order four the same argument applies with $\mathrm{Spin}(4)$ replaced by $\mathrm{Spin}(4)$ itself, and the conclusion $\pi_1(SO(4))=\mathbb{Z}_2$ is the same for every order at least three.</p>
+<p><strong>Proof.</strong> The covering $\mathrm{Spin}(n)\to SO(n)$ has kernel of order two and $\mathrm{Spin}(n)$ is simply connected for $n\ge3$.</p>
+<h2 id="summary">Summary</h2>
+<p>A unit rotor $\rho$ acts by $X\mapsto\rho X\rho^{-1}$, the rotors $\rho$ and $-\rho$ give the same rotation, and every rotation of four-space arises this way: the action is onto with kernel $\{\pm e_t\}$, so $\mathrm{Spin}(4)=SU(2)\times SU(2)$ covers $SO(4)$ with degree two.</p>
+<p>At order four the rotor needs two one-sided unit quaternions, one for each factor of $\mathfrak{so}(4)=\mathfrak{sl}_2\oplus\mathfrak{sl}_2$, and the isoclinic rotations are those with one factor real. The finite shadow is the group of order $32$ of the signed permutations, the image of $Q_8\times Q_8$ of order $64$.</p>
+<p>$SO(4)$ is connected and $O(4)$ has two components, separated by the sign of the determinant. The generator of $\pi_1(SO(4))=\mathbb{Z}_2$ is the full turn, whose lift changes the sign of the rotor and whose double returns: the belt trick.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\rho$</td>
+<td>a unit rotor in the biquaternion algebra</td>
+</tr>
+<tr>
+<td>$\Phi_\rho(X)=\rho X\rho^{\natural}$</td>
+<td>the rotation induced by the rotor</td>
+</tr>
+<tr>
+<td>$\mathrm{Spin}(4)=SU(2)\times SU(2)$</td>
+<td>the group of rotors</td>
+</tr>
+<tr>
+<td>$T_{\mu\nu}$</td>
+<td>the sixteen signed permutations and their negatives</td>
+</tr>
+<tr>
+<td>$Q_8\circ Q_8$</td>
+<td>the central product of order $32$</td>
+</tr>
+<tr>
+<td>$\pi_1(SO(4))=\mathbb{Z}_2$</td>
+<td>the fundamental group of the rotations</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), for rotors, the two signs and the double cover.</li>
+<li><a href="rotors-acting-on-the-bivector-space-at-n-4-the-adjoint-action.html">Rotors Acting on the Bivector Space: the Adjoint Action at $n=4$</a>, for the action on the six-dimensional bivector space.</li>
+<li><a href="where-the-rotor-leaves-m4c-the-even-subalgebra-and-cl-4.html">Where the Rotor Leaves $M_4(\mathbb{C})$: the Even Subalgebra and $Cl(4)$</a>, for the even subalgebra and the frame.</li>
+<li><a href="simple-and-non-simple-rotations-one-angle-at-n-le-3-two-angles-at-n-ge-4.html">Simple and Non-Simple Rotations: One Angle at $n\le3$, Two Angles at $n\ge4$</a>, for the two angles and the isoclinic families.</li>
+<li><a href="the-rotor-as-a-square-root-of-a-rotation-the-two-signs-and-the-double-cover.html">The Rotor as a Square Root of a Rotation: the Two Signs and the Double Cover</a>, for the case at order two.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

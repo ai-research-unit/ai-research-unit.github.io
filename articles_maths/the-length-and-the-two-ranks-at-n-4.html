@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Length and the Two Ranks at $n=4$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-length-and-the-two-ranks-at-math0"><strong>The Length and the Two Ranks at $n=4$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The length of an operator on the matrix space is the rank of its coefficient matrix, it takes the five values $0,1,2,3,4$, four products always suffice, and the generic matrix has length four; the matrix rank of a single product takes only $0,1,2,4$ and never $3$, while the matrix rank of a sum of products takes all five values, and length and matrix rank are independent.</strong></p>
+<p>Three facts are kept apart in this article, and the keeping apart is the point. The rank of a single product is restricted by the zero divisors of the biquaternion algebra. The rank of a general sum is not restricted, and an explicit operator of rank three is exhibited. And the length of an operator has no relation to its matrix rank: $E_{11}$ has length four and rank one, the identity has length one and rank four, and $\operatorname{diag}(1,2,3,4)$ has length three and rank four.</p>
+<p>It assumes <em>The Two-Sided Operators and the Segre Cone at $n=4$</em> and <em>The One-Sided Operators at $n=4$</em>. The model at order two is <em>The Length and the Two Ranks at $n=2$</em>; the operator algebra is <em>$\operatorname{End}(M_4(\mathbb{C}))$ as an Algebra: the Regular Representation</em>.</p>
+<h2 id="the-length">The Length</h2>
+<p><strong>Definition.</strong> For $M\in M_4(\mathbb{C})$ the <strong>length</strong> $\ell(M)$ is the smallest number of two-sided products $T_{a,b}$ whose sum is $M$.</p>
+<p><strong>Proposition.</strong> $\ell(M)=\operatorname{rank}c(M)$, where $c(M)$ is the $4\times4$ coefficient matrix of $M$ in the basis $T_{\mu\nu}$, and $\ell$ takes the values $0,1,2,3,4$.</p>
+<p><strong>Proof.</strong> A sum of $k$ products has coefficient matrix a sum of $k$ rank-one matrices, of rank at most $k$; conversely a coefficient matrix of rank $r$ is a sum of $r$ rank-one matrices and each rank-one matrix is $c(T_{a,b})$ for suitable $a,b$. The rank of a $4\times4$ matrix is at most four.</p>
+<p><strong>Corollary.</strong> $\ell(M)=0$ exactly for $M=0$, and $\ell(M)=1$ exactly for the points of the Segre cone.</p>
+<p><strong>Proof.</strong> Rank zero is the zero matrix and rank one is the cone.</p>
+<p><strong>Corollary.</strong> $\ell(M)\le4$ for every operator, and the operators of length one are exactly those whose coefficient matrix is an outer product.</p>
+<p><strong>Proof.</strong> The rank bound and the criterion of the rank-one coefficient matrix.</p>
+<h2 id="four-products-suffice">Four Products Suffice</h2>
+<p><strong>Theorem.</strong> Every operator on the sixteen-dimensional matrix space is a sum of at most four two-sided products.</p>
+<p><strong>Proof.</strong> The coefficient matrix has rank at most four, and rank $r$ means a sum of $r$ rank-one matrices, each of which is a single product.</p>
+<p><strong>Corollary.</strong> The Segre cone generates the whole algebra in at most four steps, and the fourth step is necessary.</p>
+<p><strong>Proof.</strong> The length four is attained, for instance by $E_{11}$, as the next section shows.</p>
+<p><strong>Corollary.</strong> The algebra satisfies no polynomial identity of the form "every element is a sum of at most three products", in contrast with the products of three elements.</p>
+<p><strong>Proof.</strong> The counterexample of length four.</p>
+<p><strong>The dimension count.</strong> The set of operators of length at most $k$ is the image of the sum map from $k$ copies of the cone, of dimension at most $7k$; for $k=2$ this is $14<16$, so the operators of length two do not fill the space.</p>
+<p><strong>Proof.</strong> The cone has dimension seven, and the image of a map from a $14$-dimensional variety has dimension at most $14$.</p>
+<p><strong>Corollary.</strong> The operators of length three form a set of dimension at most $21$, which is the whole space, so the bound is not improved by the dimension count.</p>
+<p><strong>Proof.</strong> $21\ge16$.</p>
+<h2 id="the-generic-length">The Generic Length</h2>
+<p><strong>Proposition.</strong> The operators of length less than four form a proper algebraic subset, so the generic operator has length four.</p>
+<p><strong>Proof.</strong> Length less than four is the vanishing of all the $4\times4$ minors of the coefficient matrix, which is a proper algebraic condition, since $\mathrm I_4$ has length one and $E_{11}$ has length four.</p>
+<p><strong>Corollary.</strong> A random operator has length four with probability one, and the length drops exactly on the determinantal varieties of the coefficient matrix.</p>
+<p><strong>Proof.</strong> The minors vanish on a set of measure zero.</p>
+<p><strong>The strata.</strong> The operators of length at most $k$ form the determinantal variety of the $4\times4$ coefficient matrices of rank at most $k$, of dimension $16-(4-k)^{2}$.</p>
+<p><strong>Proof.</strong> The classical formula for the dimension of the determinantal variety, in the sixteen-dimensional coefficient space.</p>
+<p><strong>Corollary.</strong> The strata have dimensions $7$, $12$ and $15$ for $k=1,2,3$: the set of length one is the Segre cone of dimension seven, and the set of length at most three is a hypersurface in the sixteen-dimensional space.</p>
+<p><strong>Proof.</strong> The formula at $k=1,2,3$ gives $16-9=7$, $16-4=12$ and $16-1=15$.</p>
+<h2 id="the-rank-of-a-single-product">The Rank of a Single Product</h2>
+<p><strong>Theorem.</strong> For a single product $T_{a,b}$ the matrix rank is $\operatorname{rank}(a)\operatorname{rank}(b)$, where the rank of an element is its rank as a $2\times2$ matrix; hence the rank of a single product lies in $\{0,1,2,4\}$ and is never $3$.</p>
+<p><strong>Proof.</strong> $T_{a,b}$ is the linear map $X\mapsto aXb$; in the identification $\mathbb{B}\cong M_2(\mathbb{C})$ this is $X\mapsto aXb$, whose rank is $\operatorname{rank}(a)\operatorname{rank}(b)$ because the image is $a\,\mathbb{B}\,b$ and the two factors contribute independently. Each rank is $0,1$ or $2$, so the product is $0,1,2$ or $4$.</p>
+<p><strong>Corollary.</strong> A single product is invertible exactly when both factors are invertible, and then its rank is four.</p>
+<p><strong>Proof.</strong> The product of the ranks is four exactly when both are two.</p>
+<p><strong>Corollary.</strong> A single product of rank two exists: take $a$ a zero divisor of matrix rank one and $b$ invertible.</p>
+<p><strong>Proof.</strong> The rank formula, with $\operatorname{rank}(a)=1$ and $\operatorname{rank}(b)=2$.</p>
+<p><strong>Corollary.</strong> The value three is excluded for a single product but not for a sum, which is the content of the next section.</p>
+<p><strong>Proof.</strong> The rank formula and the example below.</p>
+<h2 id="the-rank-of-a-sum">The Rank of a Sum</h2>
+<p><strong>Theorem.</strong> The matrix rank of a sum of two-sided products takes all five values $0,1,2,3,4$.</p>
+<p><strong>Proof.</strong> The values $0,1,2,4$ occur for single products; the value three occurs for the explicit sum
+$$
+-T_{tt}-T_{tx}-T_{xt}-T_{yy}
+=\begin{pmatrix}0&2&0&0\\-2&-2&0&0\\0&0&0&0\\0&0&0&-2\end{pmatrix},
+$$
+whose rows are $(0,2,0,0)$, $(-2,-2,0,0)$, $(0,0,0,0)$ and $(0,0,0,-2)$; the third row is zero and the other three are independent, so the rank is three.</p>
+<p><strong>Corollary.</strong> The rank three is not an obstruction of the algebra but a phenomenon of the sum: the four terms are single products of rank four, and their sum loses exactly one dimension.</p>
+<p><strong>Proof.</strong> Each $T_{\mu\nu}$ is a signed permutation of rank four; the sum has the displayed form.</p>
+<p><strong>Corollary.</strong> The operator of the theorem has length three, since its coefficient matrix is the displayed pattern of four nonzero entries of rank three.</p>
+<p><strong>Proof.</strong> The coefficient matrix of the sum is $-E_{11}-E_{12}-E_{21}-E_{33}$, whose rank is three.</p>
+<p><strong>The warning.</strong> A statement that a general sum of products has rank different from three is false. The restriction to the set $\{0,1,2,4\}$ is a statement about single products and about products of two zero divisors, not about sums.</p>
+<p><strong>Proof.</strong> The counterexample.</p>
+<p><strong>The two zero divisors.</strong> A product of two zero divisors of matrix rank one has matrix rank one, and the rank formula shows that no product of rank three can arise however the factors are chosen.</p>
+<p><strong>Proof.</strong> The product of the ranks.</p>
+<h2 id="the-two-invariants-are-independent">The Two Invariants Are Independent</h2>
+<p><strong>Proposition.</strong> The length and the matrix rank are independent: all four combinations occur among the following three operators and their transposes.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>operator</th>
+<th>matrix rank</th>
+<th>length</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$E_{11}$</td>
+<td>$1$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$\mathrm I_4$</td>
+<td>$4$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$\operatorname{diag}(1,2,3,4)$</td>
+<td>$4$</td>
+<td>$3$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proof.</strong> $E_{11}$ has nonzero coefficients on all four values of the second index, so its coefficient matrix has rank four; the identity is $T_{tt}$, of length one; $\operatorname{diag}(1,2,3,4)$ has coefficient matrix of rank three, computed directly in the axis-free basis.</p>
+<p><strong>Corollary.</strong> No inequality relates the two invariants in either direction, and each is a complete invariant of a different structure: the matrix rank of the operator as an element, the length of the operator as a sum of products.</p>
+<p><strong>Proof.</strong> The table gives a counterexample to every monotone relation.</p>
+<p><strong>Corollary.</strong> $\ell(M)=1$ with matrix rank four for the identity, so the shortest operator is the one of largest rank; the length measures the complexity of the coefficient matrix, not the size of the image.</p>
+<p><strong>Proof.</strong> The table.</p>
+<p><strong>The meaning.</strong> The matrix rank is the dimension of the image of the operator acting on the matrix space; the length is the rank of its coefficient matrix in the two-sided basis. The first is a property of the map, the second a property of the coordinates.</p>
+<p><strong>Proof.</strong> The two definitions.</p>
+<h2 id="summary">Summary</h2>
+<p>The length of an operator is the rank of its coefficient matrix in the basis of two-sided products; it lies between zero and four, four products always suffice, and the generic operator has length four. The operators of length at most $k$ form the determinantal variety of the coefficient matrices of rank at most $k$.</p>
+<p>The matrix rank of a single product is the product of the ranks of its two factors, so it lies in $\{0,1,2,4\}$ and is never three. The matrix rank of a sum is unrestricted, with the explicit sum $-T_{tt}-T_{tx}-T_{xt}-T_{yy}$ of rank three and length three.</p>
+<p>The two invariants are independent: $E_{11}$ has rank one and length four, the identity has rank four and length one, and $\operatorname{diag}(1,2,3,4)$ has rank four and length three.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\ell(M)=\operatorname{rank}c(M)$</td>
+<td>the length</td>
+</tr>
+<tr>
+<td>$c(M)$</td>
+<td>the coefficient matrix in the basis $T_{\mu\nu}$</td>
+</tr>
+<tr>
+<td>$\operatorname{rank}(a)$</td>
+<td>the rank of $a$ as a $2\times2$ matrix</td>
+</tr>
+<tr>
+<td>$\{0,1,2,4\}$</td>
+<td>the ranks of a single product</td>
+</tr>
+<tr>
+<td>$-T_{tt}-T_{tx}-T_{xt}-T_{yy}$</td>
+<td>the operator of rank three</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-two-sided-operators-and-the-segre-cone-at-n-4.html">The Two-Sided Operators and the Segre Cone at $n=4$</a>, for the coefficient matrix and the cone.</li>
+<li><a href="the-one-sided-operators-at-n-4.html">The One-Sided Operators at $n=4$</a>, for the two families and their products.</li>
+<li><a href="the-adjoints-and-the-polar-decomposition-of-an-operator-at-n-4.html">The Adjoints and the Polar Decomposition of an Operator at $n=4$</a>, for the operator viewpoint.</li>
+<li><a href="the-length-and-the-two-ranks-at-n-2.html">The Length and the Two Ranks at $n=2$</a>, for the case at order two.</li>
+<li><a href="the-two-sided-operators-and-the-segre-cone-at-n-2.html">The Two-Sided Operators and the Segre Cone at $n=2$</a>, for the cone at order two.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Cone of Positive Semidefinite Matrices at $n=4$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-cone-of-positive-semidefinite-matrices-at-math0"><strong>The Cone of Positive Semidefinite Matrices at $n=4$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The set $\operatorname{Herm}_4^{+}$ of positive semidefinite matrices is the set of products $A^{\ast}A$, it is a closed convex pointed cone with nonempty interior in the real space of dimension $16$, it is self-dual for the Hilbert–Schmidt form, its faces correspond one-to-one to the subspaces and hence to the Hermitian idempotents and the Grassmannians, its boundary stratifies by rank, its trace sections are compact, and it is attached to the Hermitian involution rather than to the plain transpose.</strong></p>
+<p>The article proves the description as a set of products, the four convex-geometric properties, the self-duality, the correspondence between faces, subspaces, idempotents and Grassmannians, the rank stratification, the compactness of the trace sections, and the reason the cone uses the Hermitian involution: the plain transpose gives the indefinite biquaternion norm, which has no cone.</p>
+<p>It assumes <em>The Positive Cone and Its Boundary at $n=4$</em> for the open cone, <em>The Space of Idempotents and the Flag Varieties at $n=4$</em> for the Grassmannians and <em>The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric</em> for the real comparison. The model at order two is <em>The Cone of Positive Semidefinite $2\times2$ Matrices</em>.</p>
+<h2 id="the-cone-as-the-set-of-products">The Cone as the Set of Products</h2>
+<p><strong>Definition.</strong> $\operatorname{Herm}_4^{+}=\{A:A^{\ast}=A,\ \langle Ax,x\rangle\ge0\text{ for all }x\}$.</p>
+<p><strong>Theorem.</strong> $\operatorname{Herm}_4^{+}=\{B^{\ast}B:B\in M_4(\mathbb{C})\}$, and the interior is $\{B^{\ast}B:B\text{ invertible}\}$.</p>
+<p><strong>Proof.</strong> $B^{\ast}B$ is Hermitian and $\langle B^{\ast}Bx,x\rangle=\lVert Bx\rVert^{2}\ge0$; conversely a positive semidefinite $A$ is $A^{1/2}A^{1/2}$ by the spectral theorem, and it is positive definite exactly when $A^{1/2}$ is invertible.</p>
+<p><strong>Corollary.</strong> The cone is the image of the polynomial map $B\mapsto B^{\ast}B$, which is surjective and has the unitary orbits as fibres.</p>
+<p><strong>Proof.</strong> $B^{\ast}B=(UB)^{\ast}(UB)$ for unitary $U$, and the map is constant on those orbits; conversely $B^{\ast}B=C^{\ast}C$ forces $C=UB$ for a unitary $U$ on the image.</p>
+<p><strong>Corollary.</strong> The cone is invariant under congruence $A\mapsto g^{\ast}Ag$, and the action of $\mathrm{GL}_4$ is transitive on the interior.</p>
+<p><strong>Proof.</strong> $g^{\ast}(B^{\ast}B)g=(Bg)^{\ast}(Bg)$.</p>
+<p><strong>The extreme case.</strong> The rank-one elements of the cone are the $vv^{\ast}$ with $v\neq0$, and they generate the cone as a convex hull.</p>
+<p><strong>Proof.</strong> The spectral decomposition of a positive semidefinite matrix as a sum of rank-one terms.</p>
+<h2 id="closed-convex-pointed-full">Closed, Convex, Pointed, Full</h2>
+<p><strong>Proposition.</strong> $\operatorname{Herm}_4^{+}$ is closed, convex, pointed and has nonempty interior in $\operatorname{Herm}_4$.</p>
+<p><strong>Proof.</strong> Closed: the limit of positive semidefinite matrices is positive semidefinite. Convex: a convex combination of two positive semidefinite forms is positive semidefinite. Pointed: $A$ and $-A$ in the cone force $A=0$. Interior: the positive definite matrices are open and nonempty in the sixteen-dimensional space.</p>
+<p><strong>Corollary.</strong> The cone defines a partial order by $A\ge B$ iff $A-B\ge0$, compatible with addition and with congruence.</p>
+<p><strong>Proof.</strong> The four properties.</p>
+<p><strong>Corollary.</strong> The order is antisymmetric: $A\ge B$ and $B\ge A$ together force $A=B$.</p>
+<p><strong>Proof.</strong> Pointedness of the cone.</p>
+<p><strong>The section.</strong> The intersection of the cone with the affine hyperplane $\{\operatorname{tr}A=1\}$ is a compact convex set of real dimension $15$, and every nonzero element of the cone is a positive multiple of an element of the section.</p>
+<p><strong>Proof.</strong> The eigenvalues are bounded by the trace, so the section is closed and bounded in a finite-dimensional space; scaling gives the second statement.</p>
+<h2 id="self-duality">Self-Duality</h2>
+<p><strong>Theorem.</strong> The cone is self-dual: $A\in\operatorname{Herm}_4^{+}$ if and only if $\langle A,B\rangle=\operatorname{tr}(AB)\ge0$ for every $B\in\operatorname{Herm}_4^{+}$.</p>
+<p><strong>Proof.</strong> If $A$ is positive semidefinite then so is every summand in the spectral decomposition of $B$, and each pairing with a rank-one $vv^{\ast}$ is $\langle Av,v\rangle\ge0$. Conversely if the pairing is nonnegative against every $vv^{\ast}$, then $\langle Av,v\rangle\ge0$ for all $v$, so $A$ is positive semidefinite.</p>
+<p><strong>Corollary.</strong> The dual cone is the cone itself, so the cone is the set of linear functionals nonnegative on it, read through the inner product.</p>
+<p><strong>Proof.</strong> The definition of the dual and the theorem.</p>
+<p><strong>Corollary.</strong> The trace functional is interior to the dual cone, and it is the sum of the four coordinate functionals in any orthonormal eigenbasis.</p>
+<p><strong>Proof.</strong> The trace is positive on every nonzero element of the cone.</p>
+<p><strong>The automorphism group.</strong> The linear automorphisms of the cone form the congruence action of $\mathrm{GL}_4$ modulo the scalars of modulus one, of real dimension $32$.</p>
+<p><strong>Proof.</strong> The automorphism group of a self-dual homogeneous cone.</p>
+<h2 id="the-faces-the-idempotents-and-the-grassmannians">The Faces, the Idempotents and the Grassmannians</h2>
+<p><strong>Theorem.</strong> The faces of the cone are the sets $F_W=\{A\ge0:AW=0\}$ for subspaces $W\subset\mathbb{C}^{4}$, and the map $W\mapsto F_W$ is a bijection onto the faces reversing inclusions.</p>
+<p><strong>Proof.</strong> If $A+B$ vanishes on $W$ then both do, since each is positive semidefinite and their sum vanishes on a vector only if each vanishes there; conversely each $F_W$ is a face.</p>
+<p><strong>Corollary.</strong> Writing $E$ for the orthogonal projection onto $W^{\perp}$, the face is $F_W=\{A\ge0:A=EAE\}$, so the faces correspond one-to-one to the Hermitian idempotents.</p>
+<p><strong>Proof.</strong> $AW=0$ means the image of $A$ is orthogonal to $W$, hence inside $W^{\perp}$, hence $A=EA$.</p>
+<p><strong>Corollary.</strong> The faces of dimension one are the extremal rays, and they are parametrised by $\mathbb{P}^{3}$; the faces of dimension $(4-\dim W)^{2}$ correspond to the Grassmannians, so the face lattice is the lattice of subspaces.</p>
+<p><strong>Proof.</strong> Rank-one positive semidefinite matrices up to positive scaling, and the dimension of the cone on a space of dimension $4-\dim W$.</p>
+<p><strong>Corollary.</strong> The relative interior of the face $F_W$ is the set of matrices of rank $4-\dim W$ with image exactly $W^{\perp}$, and the cone is the disjoint union of these relative interiors.</p>
+<p><strong>Proof.</strong> The rank and the image determine the stratum.</p>
+<h2 id="the-boundary-strata">The Boundary Strata</h2>
+<p><strong>Proposition.</strong> The set of positive semidefinite matrices of rank $r$ has real dimension $r(8-r)$, giving $16$, $15$, $12$, $7$ and $0$; the boundary is the union of the strata with $r\le3$.</p>
+<p><strong>Proof.</strong> The dimension count from the factorisation $B^{\ast}B$ with $B$ of size $4\times r$ of rank $r$.</p>
+<p><strong>Corollary.</strong> The boundary is a hypersurface whose smooth part is the rank-three stratum, and it is singular along the stratum of rank two, of dimension $12$.</p>
+<p><strong>Proof.</strong> The comparison of the dimensions with the ambient sixteen.</p>
+<p><strong>Corollary.</strong> Each stratum is a homogeneous space of $\mathrm{GL}_4$, and the strata are the orbits of the congruence action on the cone.</p>
+<p><strong>Proof.</strong> Transitivity on each rank.</p>
+<p><strong>The faces against the strata.</strong> A face is a union of strata, and its relative interior is one stratum, so the two decompositions are coarser and finer readings of the same cone.</p>
+<p><strong>Proof.</strong> The face $F_W$ is the union of the strata of rank at most $4-\dim W$ with image inside $W^{\perp}$.</p>
+<h2 id="trace-sections">Trace Sections</h2>
+<p><strong>Proposition.</strong> The section $\{\operatorname{tr}A=1\}$ is a compact convex set whose extreme points are the rank-one elements $vv^{\ast}$ with $\lVert v\rVert=1$.</p>
+<p><strong>Proof.</strong> Compactness from the bound on the eigenvalues; an extreme point of the section must be of rank one, since a sum of two positive semidefinite matrices of rank at least one can be split.</p>
+<p><strong>Corollary.</strong> The cone is the cone over the section, so it is the convex hull of its extremal rays, of which there are as many as points of $\mathbb{P}^{3}$.</p>
+<p><strong>Proof.</strong> Every element is a positive multiple of an element of the section, and each element of the section is a convex combination of extreme points.</p>
+<p><strong>Corollary.</strong> The section is a spectrahedron, cut out by infinitely many linear inequalities, namely one per unit vector.</p>
+<p><strong>Proof.</strong> Positive semidefiniteness is $\langle Av,v\rangle\ge0$ for every $v$, and $v$ and $-v$ give the same inequality, so one per point of $\mathbb{P}^{3}$.</p>
+<h2 id="the-biquaternion-comparison">The Biquaternion Comparison</h2>
+<p><strong>Proposition.</strong> The cone uses the Hermitian involution: the form $A\mapsto\operatorname{tr}(A^{\ast}A)$ is positive definite, whereas the plain form $A\mapsto\operatorname{tr}(A^{\mathsf T}A)$ is indefinite and equal to $4(Q_t^{2}+B^{2})$, a complex number.</p>
+<p><strong>Proof.</strong> $\operatorname{tr}(A^{\ast}A)$ is the sum of the squared moduli of the entries; and $\operatorname{tr}(A^{\mathsf T}A)$ is the biquaternion norm, whose value on the element with coordinates $Q_t$ and vector part of length $B$ is $4(Q_t^{2}+B^{2})$.</p>
+<p><strong>Corollary.</strong> Over $\mathbb{C}$ the plain form has no cone, since it takes both signs and complex values; a cone requires a real form of the algebra and a definite quadratic form on it.</p>
+<p><strong>Proof.</strong> $Q_t^{2}+B^{2}$ vanishes on the light cone $B=\pm iQ_t$ and changes sign across it.</p>
+<p><strong>Corollary.</strong> The Hermitian involution is the one compatible with the real structure of the matrix space, which is the reason the cone is defined with it and not with the transpose.</p>
+<p><strong>Proof.</strong> The positive definiteness of the Hilbert–Schmidt form and the indefiniteness of the trace form.</p>
+<p><strong>The real symmetric cone.</strong> The fixed part of the conjugation inside the cone is the cone of positive semidefinite real symmetric matrices, of real dimension $10$, cut out inside $\operatorname{Herm}_4$ by the reality of the entries.</p>
+<p><strong>Proof.</strong> The real symmetric matrices are the Hermitian matrices with real entries.</p>
+<p><strong>Corollary.</strong> The Hermitian cone is not the complexification of the real symmetric cone, since complexification would destroy the positivity.</p>
+<p><strong>Proof.</strong> A complexification contains $iA$ for $A$ in the cone, and $iA$ is not in the cone.</p>
+<h2 id="summary">Summary</h2>
+<p>The positive semidefinite cone is the image of $B\mapsto B^{\ast}B$, closed, convex, pointed, of full dimension sixteen, and self-dual for the Hilbert–Schmidt form. Its faces correspond to the subspaces, hence to the Hermitian idempotents and the Grassmannians, with the extremal rays parametrised by $\mathbb{P}^{3}$; its boundary stratifies by rank with dimensions $15$, $12$, $7$ and $0$.</p>
+<p>The trace sections are compact convex spectrahedra with the rank-one elements as extreme points, and the cone is the cone over the section.</p>
+<p>The cone exists because the Hilbert–Schmidt form is positive definite; the plain form is the indefinite biquaternion norm $4(Q_t^{2}+B^{2})$, which has no cone over $\mathbb{C}$. The real symmetric cone of dimension ten is the fixed part of the conjugation.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{Herm}_4^{+}=\{B^{\ast}B\}$</td>
+<td>the cone</td>
+</tr>
+<tr>
+<td>$F_W=\{A\ge0:AW=0\}$</td>
+<td>a face</td>
+</tr>
+<tr>
+<td>$r(8-r)$</td>
+<td>the dimension of the rank-$r$ stratum</td>
+</tr>
+<tr>
+<td>$\{\operatorname{tr}A=1\}$</td>
+<td>the compact section</td>
+</tr>
+<tr>
+<td>$4(Q_t^{2}+B^{2})$</td>
+<td>the indefinite plain form</td>
+</tr>
+<tr>
+<td>real dimension $10$</td>
+<td>the real symmetric cone</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Stephen Boyd, Lieven Vandenberghe, <em>Convex Optimization</em> (Cambridge, 2004), for spectrahedra and semidefinite cones.</li>
+<li><a href="the-positive-cone-and-its-boundary-at-n-4.html">The Positive Cone and Its Boundary at $n=4$</a>, for the open cone, the boundary and the automorphisms.</li>
+<li><a href="the-space-of-idempotents-and-the-flag-varieties-at-n-4.html">The Space of Idempotents and the Flag Varieties at $n=4$</a>, for the Grassmannians attached to the faces.</li>
+<li><a href="the-four-forms-and-their-algebraic-norms-at-n-4.html">The Four Forms and Their Algebraic Norms at $n=4$</a>, for the indefinite forms that have no cone.</li>
+<li><a href="the-cone-of-positive-semidefinite-2x2-matrices.html">The Cone of Positive Semidefinite $2\times2$ Matrices</a>, for the case at order two.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

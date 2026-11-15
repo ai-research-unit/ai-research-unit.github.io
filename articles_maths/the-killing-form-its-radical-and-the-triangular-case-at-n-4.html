@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Killing Form, Its Radical and the Triangular Case at $n=4$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-killing-form-its-radical-and-the-triangular-case-at-math0"><strong>The Killing Form, Its Radical and the Triangular Case at $n=4$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The Killing form of $\mathfrak{gl}_4(\mathbb{C})$ is $K(X,Y)=8\operatorname{tr}(XY)-2\operatorname{tr}X\operatorname{tr}Y$, its radical is the line of scalars, so the algebra is reductive and not semisimple; on $\mathfrak{sl}_4$ the formula collapses to $8\operatorname{tr}(XY)$ and is non-degenerate; on the Borel it is $4\operatorname{tr}(XY)-\operatorname{tr}X\operatorname{tr}Y$, with radical the scalars together with $\mathfrak{n}_+$, of dimension $7$, and rank $3$.</strong></p>
+<p>The article computes the formula and the constant $2n=8$, identifies the radical on the full algebra, proves non-degeneracy on the traceless algebra by Cartan's criterion, computes the Borel case where the form vanishes on the derived algebra, and shows the two $\mathfrak{sl}_2$ ideals of $\mathfrak{so}(4)$ orthogonal for $K$.</p>
+<p>It assumes <em>The Trace Form and Its Signature on the Two Halves of $M_4(\mathbb{C})$</em> for the trace pairing and <em>The Lie Algebra $\operatorname{Skew}_4\cong\mathfrak{so}(4)$</em> for the split. The general case at every order is <em>The Killing Form, Its Radical and the Triangular Case</em>; the trace form on the Borel is <em>The Antisymmetric Part inside $UT_4$: the Radical as the Commutator</em>.</p>
+<h2 id="the-formula-on-the-full-algebra">The Formula on the Full Algebra</h2>
+<p><strong>Definition.</strong> $K(X,Y)=\operatorname{tr}(\operatorname{ad}_X\operatorname{ad}_Y)$, where $\operatorname{ad}_X(Z)=[X,Z]$.</p>
+<p><strong>Theorem.</strong> $K(X,Y)=8\operatorname{tr}(XY)-2\operatorname{tr}X\operatorname{tr}Y$ on $\mathfrak{gl}_4(\mathbb{C})$.</p>
+<p><strong>Proof.</strong> In the matrix-unit basis, $\operatorname{ad}_X(E_{ij})=XE_{ij}-E_{ij}X=\sum_k x_{ki}E_{kj}-\sum_l x_{jl}E_{il}$. The coefficient of $E_{ij}$ in its own image is $x_{ii}-x_{jj}$; the other coefficients are $x_{ki}$ in the slot $(kj)\leftarrow(ij)$ and $-x_{jl}$ in the slot $(il)\leftarrow(ij)$. In $\operatorname{tr}(\operatorname{ad}_X\operatorname{ad}_Y)$ the two off-diagonal families pair against one another and cancel, leaving the diagonal sum</p>
+<p>$$
+\sum_{i,j}(x_{ii}-x_{jj})(y_{ii}-y_{jj})=2n\sum_i x_{ii}y_{ii}-2\Bigl(\sum_i x_{ii}\Bigr)\Bigl(\sum_j y_{jj}\Bigr),
+$$</p>
+<p>since each diagonal entry is counted once for every index it is subtracted from. With $n=4$ this is $8\operatorname{tr}(XY)-2\operatorname{tr}X\operatorname{tr}Y$.</p>
+<p><strong>Corollary.</strong> $K$ is symmetric, bilinear and invariant: $K([X,Y],Z)=K(X,[Y,Z])$.</p>
+<p><strong>Proof.</strong> The trace of a product is symmetric in the factors, and the invariance is the cyclic invariance read through $\operatorname{tr}([\operatorname{ad}_X,\operatorname{ad}_Y]\operatorname{ad}_Z)$.</p>
+<p><strong>The check on the scalar.</strong> $K(\mathrm I_4,Y)=8\operatorname{tr}Y-2\cdot4\operatorname{tr}Y=0$ for every $Y$.</p>
+<p><strong>Proof.</strong> Substitute $X=\mathrm I_4$ and $\operatorname{tr}\mathrm I_4=4$.</p>
+<h2 id="the-constant-math38">The Constant $2n$</h2>
+<p><strong>Proposition.</strong> For $\mathfrak{gl}_n$ the constant is $2n$, so it is $8$ at order four, and it counts the two orders of each pair of distinct indices.</p>
+<p><strong>Proof.</strong> The expansion of the diagonal sum above produces the factor $n$ because each diagonal entry $x_{ii}y_{ii}$ occurs once for every index $j$, and the two cross sums subtract the same total twice.</p>
+<p><strong>Corollary.</strong> In the traceless algebra the trace terms vanish and the formula is $8\operatorname{tr}(XY)$.</p>
+<p><strong>Proof.</strong> $\operatorname{tr}X=\operatorname{tr}Y=0$ on $\mathfrak{sl}_4$.</p>
+<p><strong>The dependence on the order.</strong> The constant grows with $n$, so the Killing form of $\mathfrak{gl}_4$ is not the restriction of the Killing form of a larger algebra: the normalisation is intrinsic and must be computed, not guessed.</p>
+<p><strong>Proof.</strong> The constant $2n$ depends on the dimension of the algebra on which $\operatorname{ad}$ acts.</p>
+<h2 id="the-radical-and-reductivity">The Radical and Reductivity</h2>
+<p><strong>Theorem.</strong> The radical of $K$ on $\mathfrak{gl}_4$ is $\mathbb{C}\mathrm I_4$, of dimension $1$.</p>
+<p><strong>Proof.</strong> $K(\mathrm I_4,Y)=0$ gives one inclusion. Conversely, if $K(X,Y)=0$ for all $Y$, take $Y=E_{ij}$: then $8x_{ji}-2\operatorname{tr}X\,\delta_{ij}=0$. For $i\neq j$ this gives $x_{ji}=0$, so $X$ is diagonal; for $i=j$ it gives $8x_{ii}=2\operatorname{tr}X$, so all diagonal entries are equal and $X$ is a scalar.</p>
+<p><strong>Corollary.</strong> $\mathfrak{gl}_4$ is reductive and not semisimple, and $K$ is degenerate with a one-dimensional radical.</p>
+<p><strong>Proof.</strong> A semisimple algebra has non-degenerate Killing form, and the radical found above is the centre.</p>
+<p><strong>Corollary.</strong> The form descends to $\mathfrak{gl}_4/\mathbb{C}\mathrm I_4\cong\mathfrak{sl}_4$, where it is non-degenerate.</p>
+<p><strong>Proof.</strong> The descended form is defined on the quotient by the radical, and it is the restriction of $K$ to any complement.</p>
+<p><strong>The complement.</strong> On the traceless part the form is $8\operatorname{tr}(XY)$, and it is non-degenerate there.</p>
+<p><strong>Proof.</strong> If $\operatorname{tr}(XY)=0$ for every traceless $Y$ then $X$ is a scalar, and a traceless scalar is zero.</p>
+<h2 id="the-traceless-algebra">The Traceless Algebra</h2>
+<p><strong>Theorem (Cartan's criterion).</strong> The Killing form of $\mathfrak{sl}_4$ is non-degenerate, equivalently $\mathfrak{sl}_4$ is semisimple.</p>
+<p><strong>Proof.</strong> The form is $8\operatorname{tr}(XY)$ and the non-degeneracy is the computation above; the criterion states that a Lie algebra is semisimple exactly when its Killing form is non-degenerate.</p>
+<p><strong>Corollary.</strong> $\mathfrak{sl}_4$ is a direct sum of simple ideals, and here there is one, of dimension $15$.</p>
+<p><strong>Proof.</strong> Semisimplicity gives a sum of simples, and $\mathfrak{sl}_4$ is simple.</p>
+<p><strong>Corollary.</strong> The invariant symmetric forms on $\mathfrak{sl}_4$ are the multiples of $K$, and every derivation of it is inner.</p>
+<p><strong>Proof.</strong> For a simple algebra the invariant forms are proportional; inner-ness of derivations is the standard consequence of semisimplicity.</p>
+<p><strong>The signature.</strong> On the real traceless algebra the form $8\operatorname{tr}(XY)$ is positive definite on the traceless symmetric part of dimension $9$ and negative definite on the antisymmetric part of dimension $6$.</p>
+<p><strong>Proof.</strong> The signs are those of the trace pairing, computed in the article on the two halves, and $9+6=15$.</p>
+<h2 id="the-borel-and-cartans-criterion">The Borel and Cartan's Criterion</h2>
+<p><strong>Theorem.</strong> On $\mathfrak{b}=\mathfrak{h}\oplus\mathfrak{n}_+$ the Killing form is $K_{\mathfrak{b}}(X,Y)=4\operatorname{tr}(XY)-\operatorname{tr}X\operatorname{tr}Y$; its radical is $\mathbb{C}\mathrm I_4\oplus\mathfrak{n}_+$, of dimension $7$; its rank is $3$.</p>
+<p><strong>Proof.</strong> In an upper triangular basis $\operatorname{ad}_X$ is upper triangular, with eigenvalue $x_{ii}-x_{jj}$ on the root space $\mathbb{C}E_{ij}$ and eigenvalue $0$ on $\mathfrak{h}$. Hence</p>
+<p>$$
+K_{\mathfrak{b}}(X,Y)=\sum_{i<j}(x_{ii}-x_{jj})(y_{ii}-y_{jj})=\tfrac12\Bigl(8\operatorname{tr}(D_XD_Y)-2\operatorname{tr}X\operatorname{tr}Y\Bigr)=4\operatorname{tr}(D_XD_Y)-\operatorname{tr}X\operatorname{tr}Y,
+$$</p>
+<p>where only the diagonal parts enter. The radical is the set of $X$ with $4\operatorname{tr}(D_XD_Y)=\operatorname{tr}X\operatorname{tr}Y$ for all $Y\in\mathfrak{b}$; taking $Y=E_{ii}$ forces $4x_{ii}=\operatorname{tr}X$ for every $i$, so $D_X$ is a scalar matrix and the strictly upper part is free. That space is $\mathbb{C}\mathrm I_4\oplus\mathfrak{n}_+$ of dimension $7$, and the rank is $10-7=3$.</p>
+<p><strong>Corollary.</strong> $K_{\mathfrak{b}}(\mathfrak{b},[\mathfrak{b},\mathfrak{b}])=0$, since $[\mathfrak{b},\mathfrak{b}]=\mathfrak{n}_+$ lies in the radical; this is Cartan's criterion for solvability read on the form.</p>
+<p><strong>Proof.</strong> The derived algebra is contained in the radical, and the radical pairs to zero with everything.</p>
+<p><strong>Corollary.</strong> $\mathfrak{b}$ is solvable and not reductive, and its rank $3$ is the rank of $\mathfrak{sl}_4$, the dimension of the traceless diagonal.</p>
+<p><strong>Proof.</strong> The rank computation, and $\mathfrak{h}_0$ has dimension $3$.</p>
+<p><strong>The comparison with the trace form.</strong> The trace form on $\mathfrak{b}$ has radical exactly $\mathfrak{n}_+$, of dimension $6$, and rank $4$; the Killing form has radical the scalars together with $\mathfrak{n}_+$, of dimension $7$, and rank $3$. The difference is the scalar line, which the trace form pairs non-degenerately and the Killing form kills.</p>
+<p><strong>Proof.</strong> $K(\mathrm I_4,Y)=0$ for every $Y$, while $\beta(\mathrm I_4,E_{ii})=1$.</p>
+<h2 id="the-two-ideals-of-math125">The Two Ideals of $\mathfrak{so}(4)$</h2>
+<p><strong>Theorem.</strong> On $\mathfrak{so}(4)$ the Killing form is $8\operatorname{tr}(XY)$, negative definite, and the two $\mathfrak{sl}_2$ ideals are orthogonal.</p>
+<p><strong>Proof.</strong> Every element of $\mathfrak{so}(4)$ is traceless, so the formula reduces to $8\operatorname{tr}(XY)$, negative definite there. For a self-dual $\omega$ and an anti-self-dual $\tau$ the product $\omega\tau$ has zero trace, so $K(\omega,\tau)=0$.</p>
+<p><strong>Corollary.</strong> $\mathfrak{so}(4)=\mathfrak{sl}_2\oplus\mathfrak{sl}_2$ is a direct sum of orthogonal ideals, and $K$ is non-degenerate on each summand.</p>
+<p><strong>Proof.</strong> Orthogonality together with non-degeneracy on the sum gives non-degeneracy on each summand.</p>
+<p><strong>Corollary.</strong> Each summand carries one Casimir, and the two scales are independent.</p>
+<p><strong>Proof.</strong> On a simple algebra the invariant symmetric forms are proportional to $K$, and a direct sum gives one scale per summand.</p>
+<p><strong>The three signs.</strong> The form is negative definite on $\mathfrak{so}(4)$, positive definite on the traceless symmetric part, and zero on the scalars; the three statements together are the signature of the trace pairing, read on $K$.</p>
+<p><strong>Proof.</strong> $K$ has the sign of $8\operatorname{tr}(XY)$ on traceless elements, and it vanishes on the scalars.</p>
+<h2 id="summary">Summary</h2>
+<p>The Killing form of $\mathfrak{gl}_4$ is $8\operatorname{tr}(XY)-2\operatorname{tr}X\operatorname{tr}Y$, with radical the scalars: the algebra is reductive and not semisimple. On $\mathfrak{sl}_4$ it is $8\operatorname{tr}(XY)$ and non-degenerate, so the traceless algebra is semisimple, which is Cartan's criterion.</p>
+<p>On the Borel the form is $4\operatorname{tr}(XY)-\operatorname{tr}X\operatorname{tr}Y$, with radical the scalars together with $\mathfrak{n}_+$, of dimension $7$, and rank $3$. It vanishes on the derived algebra, so the Borel is solvable and not reductive, and the rank $3$ is the rank of $\mathfrak{sl}_4$. The trace form differs from it by exactly the scalar line.</p>
+<p>On $\mathfrak{so}(4)$ the form is negative definite and the two $\mathfrak{sl}_2$ ideals are orthogonal, each with its own Casimir.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$K(X,Y)=\operatorname{tr}(\operatorname{ad}_X\operatorname{ad}_Y)$</td>
+<td>the Killing form</td>
+</tr>
+<tr>
+<td>$8\operatorname{tr}(XY)-2\operatorname{tr}X\operatorname{tr}Y$</td>
+<td>its value on $\mathfrak{gl}_4$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}\mathrm I_4$</td>
+<td>the radical on the full algebra</td>
+</tr>
+<tr>
+<td>$\mathbb{C}\mathrm I_4\oplus\mathfrak{n}_+$</td>
+<td>the radical on the Borel, dimension $7$</td>
+</tr>
+<tr>
+<td>$4\operatorname{tr}(XY)-\operatorname{tr}X\operatorname{tr}Y$</td>
+<td>its value on the Borel</td>
+</tr>
+<tr>
+<td>$\mathfrak{sl}_2\oplus\mathfrak{sl}_2$</td>
+<td>the two orthogonal ideals of $\mathfrak{so}(4)$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nathan Jacobson, <em>Lie Algebras</em> (Dover, 1979), for the computation of the Killing form of $\mathfrak{gl}_n$ and Cartan's criteria.</li>
+<li>James E. Humphreys, <em>Introduction to Lie Algebras and Representation Theory</em> (Springer, 1972), for the radical, semisimplicity and solvability criteria.</li>
+<li><a href="the-killing-form-its-radical-and-the-triangular-case.html">The Killing Form, Its Radical and the Triangular Case</a>, for the same computation at general order.</li>
+<li><a href="the-lie-algebra-skew-4-and-so-4.html">The Lie Algebra $\operatorname{Skew}_4\cong\mathfrak{so}(4)$</a>, for the two ideals and their brackets.</li>
+<li><a href="the-trace-form-and-its-signature-on-the-two-halves-of-m4c.html">The Trace Form and Its Signature on the Two Halves of $M_4(\mathbb{C})$</a>, for the form that differs from $K$ by the scalar line.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

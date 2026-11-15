@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Two Halves and Their Topology at $n=4$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-two-halves-and-their-topology-at-math0"><strong>The Two Halves and Their Topology at $n=4$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The complex matrix space splits as $\operatorname{Herm}_4\oplus\mathfrak{u}(4)$ into two real sixteen-dimensional halves, and the polar decomposition contracts the first onto the second, so $\mathrm{GL}_4(\mathbb{C})\simeq U(4)$; over the reals the symmetric half has dimension ten and the antisymmetric half six, the singular set of each is a hypersurface, the invertible symmetric matrices have five components indexed by inertia, and the invertible skew matrices have two indexed by the sign of the Pfaffian.</strong></p>
+<p>The article proves the two decompositions, computes the dimensions, identifies the singular sets as the zero sets of the determinant and of the Pfaffian, counts the components of the invertible halves, identifies the halves with homogeneous spaces of the general linear group, and writes the contraction that reduces the topology of $\mathrm{GL}_4(\mathbb{C})$ to that of $U(4)$.</p>
+<p>It assumes <em>The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric</em>, <em>The Two Halves as Orthogonal Complements</em> and <em>The Hilbert–Schmidt Form at $n=4$</em>. The model at order two is <em>The Two Halves and Their Topology at $n=2$</em>; the homotopy groups are <em>The Homotopy of $\mathrm{GL}_4(\mathbb{C})$ and of the Two Halves</em>.</p>
+<h2 id="the-two-decompositions-of-the-complex-space">The Two Decompositions of the Complex Space</h2>
+<p><strong>Definition.</strong> $\operatorname{Herm}_4=\{A:A^{\ast}=A\}$ and $\mathfrak{u}(4)=\{A:A^{\ast}=-A\}$.</p>
+<p><strong>Proposition.</strong> $\operatorname{Herm}_4$ and $\mathfrak{u}(4)$ are real vector spaces of real dimension $16$ each, and
+$$
+M_4(\mathbb{C})=\operatorname{Herm}_4\oplus\mathfrak{u}(4)
+$$
+as real vector spaces, with the projections $\tfrac12(A+A^{\ast})$ and $\tfrac12(A-A^{\ast})$.</p>
+<p><strong>Proof.</strong> A Hermitian matrix has four real diagonal entries and six complex off-diagonal ones, so $4+12=16$ real parameters; the same count for the skew-Hermitian ones with the diagonal purely imaginary; the two projections are idempotent, have the two spaces as images and add to the identity.</p>
+<p><strong>Corollary.</strong> The real dimension of $M_4(\mathbb{C})$ is $32$, twice the dimension of each half.</p>
+<p><strong>Proof.</strong> $16+16=32$.</p>
+<p><strong>Corollary.</strong> The two halves are orthogonal for the Hilbert–Schmidt form but not for the trace form.</p>
+<p><strong>Proof.</strong> $\operatorname{tr}(H^{\ast}K)=\operatorname{tr}(HK)$ vanishes for $H$ Hermitian and $K$ skew-Hermitian because the product is skew-Hermitian with real trace; the trace pairing restricted to the two halves is indefinite.</p>
+<p><strong>Corollary.</strong> The decomposition is the eigenspace decomposition of the involution $A\mapsto A^{\ast}$, with eigenvalues $+1$ and $-1$.</p>
+<p><strong>Proof.</strong> The two fixed and anti-fixed spaces of an involution.</p>
+<h2 id="the-singular-sets">The Singular Sets</h2>
+<p><strong>Definition.</strong> The <strong>singular set</strong> of a half is the set of its elements that are not invertible.</p>
+<p><strong>Proposition.</strong> In $\operatorname{Herm}_4$ the singular set is $\{\det A=0\}$, a real hypersurface, and in $\mathfrak{u}(4)$ it is $\{\det A=0\}$, also a real hypersurface.</p>
+<p><strong>Proof.</strong> The determinant is a polynomial function of the real coordinates on each half, nonzero as a polynomial, so its zero set is a hypersurface; and the two halves are real vector spaces of dimension sixteen, so a hypersurface has dimension fifteen.</p>
+<p><strong>Corollary.</strong> The invertible elements of each half form the complement of a hypersurface, hence are dense and open.</p>
+<p><strong>Proof.</strong> A hypersurface has empty interior and is closed.</p>
+<p><strong>Corollary.</strong> The singular set of $\operatorname{Herm}_4$ is the cone over the set of singular Hermitian matrices of norm one, and it is the boundary of the positive cone together with the boundary of its negative.</p>
+<p><strong>Proof.</strong> Scale invariance of the determinant and the spectral description of the boundary.</p>
+<p><strong>The real halves.</strong> In the real Symmetric half of dimension $10$ the singular set is $\{\det=0\}$, a hypersurface of dimension nine; in the real antisymmetric half of dimension $6$ it is $\{\operatorname{Pf}=0\}$ or equivalently $\{\det=0\}$, a hypersurface of dimension five.</p>
+<p><strong>Proof.</strong> The Pfaffian squares to the determinant, and both are nonconstant polynomials.</p>
+<p><strong>Corollary.</strong> A real skew matrix of order four is singular exactly when one of its two angles vanishes, since $\det=\theta_1^{2}\theta_2^{2}$.</p>
+<p><strong>Proof.</strong> The normal form of the real skew matrix.</p>
+<h2 id="the-components-of-the-invertible-halves">The Components of the Invertible Halves</h2>
+<p><strong>Theorem.</strong> The invertible real symmetric matrices of order four form five connected components, indexed by the inertia $(p,q)$ with $p+q=4$.</p>
+<p><strong>Proof.</strong> The inertia is locally constant and invariant under congruence, so it is constant on each component; conversely, two symmetric matrices with the same inertia are related by a congruence with an invertible matrix, and $\mathrm{GL}_4(\mathbb{R})$ has two components which act transitively on each inertia class once joined with the orthogonal group, so each class is connected.</p>
+<p><strong>Corollary.</strong> The sign of the determinant groups the five components into three with $\det>0$, namely $(4,0)$, $(2,2)$ and $(0,4)$, and two with $\det<0$, namely $(3,1)$ and $(1,3)$; the sign of the determinant alone does not separate the components.</p>
+<p><strong>Proof.</strong> $\det$ has the sign $(-1)^{q}$.</p>
+<p><strong>Theorem.</strong> The invertible real antisymmetric matrices of order four form exactly two components, distinguished by the sign of the Pfaffian.</p>
+<p><strong>Proof.</strong> $\operatorname{Pf}^{2}=\det$ is nonzero, so the Pfaffian is a continuous function into $\mathbb{R}\setminus\{0\}$, which forces at least two components; and a skew matrix with a given sign of the Pfaffian is carried to the standard form by a congruence with positive determinant, so each sign class is connected.</p>
+<p><strong>Corollary.</strong> The two components of the invertible skew half are the two orientations of the pair of rotations, and the Pfaffian is the obstruction to connecting them.</p>
+<p><strong>Proof.</strong> The sign of the Pfaffian changes under an orientation-reversing congruence and does not change under an orientation-preserving one.</p>
+<p><strong>The symmetric contrast.</strong> The symmetric half has more components because the inertia has more freedom; the skew half has only two because the spectrum of a real skew matrix is forced into conjugate pairs.</p>
+<p><strong>Proof.</strong> The two theorems.</p>
+<h2 id="the-homogeneous-spaces">The Homogeneous Spaces</h2>
+<p><strong>Proposition.</strong> Each inertia class of invertible real symmetric matrices is the homogeneous space $\mathrm{GL}_4(\mathbb{R})/O(p,q)$ of dimension $10$, and the invertible skew matrices form $\mathrm{GL}_4(\mathbb{R})/\mathrm{Sp}_4(\mathbb{R})$ up to the two components, of dimension $6$.</p>
+<p><strong>Proof.</strong> The stabiliser of a fixed symmetric form of inertia $(p,q)$ is the corresponding orthogonal group, of dimension $6$; the stabiliser of a nondegenerate skew form is the symplectic group, of dimension $10$; the orbit-stabiliser theorem with $\dim\mathrm{GL}_4(\mathbb{R})=16$ gives $16-6=10$ and $16-10=6$.</p>
+<p><strong>Corollary.</strong> $\dim O(p,q)=6$, $\dim\mathrm{Sp}_4(\mathbb{R})=10$ and $\dim\mathrm{GL}_4(\mathbb{R})=16$, so the symmetric orbit has dimension ten and the skew orbit six.</p>
+<p><strong>Proof.</strong> The dimensions of the classical groups of order four.</p>
+<p><strong>The complex analogue.</strong> Over $\mathbb{C}$ the invertible symmetric matrices form the single orbit $\mathrm{GL}_4(\mathbb{C})/O(4,\mathbb{C})$ of complex dimension $10$, and the invertible skew matrices the single orbit $\mathrm{GL}_4(\mathbb{C})/\mathrm{Sp}_4(\mathbb{C})$ of complex dimension $6$.</p>
+<p><strong>Proof.</strong> Over $\mathbb{C}$ every nondegenerate symmetric form is congruent to the standard one, so there is one orbit; the same orbit-stabiliser count gives the dimensions, with $\dim\mathrm{GL}_4(\mathbb{C})=16$.</p>
+<p><strong>Corollary.</strong> Over $\mathbb{C}$ each half is connected, and the multiplicity of components in the real case is the multiplicity of the real inertia; over $\mathbb{C}$ the inertia disappears.</p>
+<p><strong>Proof.</strong> One orbit each, and the real classification by inertia.</p>
+<h2 id="the-contraction">The Contraction</h2>
+<p><strong>Theorem.</strong> The polar decomposition gives a diffeomorphism $\operatorname{Herm}_4^{++}\times U(4)\to\mathrm{GL}_4(\mathbb{C})$, and $\operatorname{Herm}_4^{++}$ is convex, hence contractible.</p>
+<p><strong>Proof.</strong> The polar decomposition of an element and the convexity of the open cone of positive definite Hermitian matrices.</p>
+<p><strong>Corollary.</strong> $\mathrm{GL}_4(\mathbb{C})$ is homotopy equivalent to $U(4)$, and $\dim_{\mathbb{R}}\mathrm{GL}_4(\mathbb{C})=32=\dim_{\mathbb{R}}\operatorname{Herm}_4^{++}+\dim_{\mathbb{R}}U(4)=16+16$.</p>
+<p><strong>Proof.</strong> A product with a contractible factor is homotopy equivalent to the other factor.</p>
+<p><strong>Corollary.</strong> Over the reals, $\mathrm{GL}_4(\mathbb{R})\simeq O(4)$, with $\dim_{\mathbb{R}}\mathrm{GL}_4(\mathbb{R})=16=\dim\operatorname{Sym}_4^{++}+\dim O(4)=10+6$.</p>
+<p><strong>Proof.</strong> The real polar decomposition $A=HU$ with $H$ positive definite symmetric and $U$ orthogonal.</p>
+<p><strong>The inconsistent count.</strong> The product $\operatorname{Sym}_4^{++}\times U(4)$ does not give $\mathrm{GL}_4(\mathbb{C})$: its dimension would be $10+16=26$, not $32$. The correct contraction pairs $\operatorname{Herm}_4^{++}$ with $U(4)$, and the real symmetric cone pairs with the real orthogonal group.</p>
+<p><strong>Proof.</strong> The dimension count of the two products.</p>
+<p><strong>Corollary.</strong> The two halves of the complex space are of real dimension sixteen, equal to the dimension of $U(4)$, so the contraction is dimensionally balanced; the real symmetric half of dimension ten pairs with $O(4)$ of dimension six.</p>
+<p><strong>Proof.</strong> The two dimension counts.</p>
+<p><strong>The two-sided return.</strong> The contraction is not an accident of coordinates: the polar decomposition is the statement that every element is a stretch times a rotation, and the stretch is the exponential of the Hermitian half.</p>
+<p><strong>Proof.</strong> The exponential of the Hermitian half is a diffeomorphism onto the open cone.</p>
+<h2 id="summary">Summary</h2>
+<p>The complex matrix space splits into the Hermitian and the skew-Hermitian halves, each of real dimension sixteen, and the split is the eigenspace decomposition of the adjoint involution. The singular set of each half is a hypersurface, the zero set of the determinant.</p>
+<p>The invertible real symmetric matrices have five components indexed by inertia, grouped by the sign of the determinant into three and two, so the sign of the determinant alone does not separate them; the invertible real skew matrices have two components indexed by the sign of the Pfaffian. Each class is a homogeneous space of the general linear group.</p>
+<p>The polar decomposition contracts the positive definite cone onto a point and leaves the unitary group, so $\mathrm{GL}_4(\mathbb{C})\simeq U(4)$, and over the reals $\mathrm{GL}_4(\mathbb{R})\simeq O(4)$. The dimension count must pair the Hermitian cone of dimension sixteen with $U(4)$, not the real symmetric cone of dimension ten.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{Herm}_4$, $\mathfrak{u}(4)$</td>
+<td>the two halves, real dimension $16$ each</td>
+</tr>
+<tr>
+<td>$\{\det=0\}$</td>
+<td>the singular set, a hypersurface</td>
+</tr>
+<tr>
+<td>$(p,q)$, $p+q=4$</td>
+<td>the inertia of a real symmetric matrix</td>
+</tr>
+<tr>
+<td>$\operatorname{Pf}$</td>
+<td>the Pfaffian of a real skew matrix</td>
+</tr>
+<tr>
+<td>$\mathrm{GL}_4/O(p,q)$</td>
+<td>the homogeneous space of an inertia class</td>
+</tr>
+<tr>
+<td>$\operatorname{Herm}_4^{++}\times U(4)\cong\mathrm{GL}_4$</td>
+<td>the contraction</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>James R. Munkres, <em>Topology</em> (Pearson, 2000), for components and hypersurfaces.</li>
+<li><a href="the-two-halves-over-r-symmetric-and-antisymmetric-at-n-4.html">The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric</a>, for the two real halves and the projections.</li>
+<li><a href="the-homotopy-of-gl4c-and-of-the-two-halves.html">The Homotopy of $\mathrm{GL}_4(\mathbb{C})$ and of the Two Halves</a>, for the homotopy groups computed from this contraction.</li>
+<li><a href="the-exponential-of-sym-4-stretches-and-the-positive-cone.html">The Exponential of the Symmetric Part: Stretches and the Positive Cone at $n=4$</a>, for the exponential and the polar decomposition.</li>
+<li><a href="the-two-halves-and-their-topology-at-n-2.html">The Two Halves and Their Topology at $n=2$</a>, for the case at order two.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

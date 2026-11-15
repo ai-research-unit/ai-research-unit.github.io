@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Where the Rotor Leaves $M_4(\mathbb{C})$: the Even Subalgebra and $Cl(4)$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="where-the-rotor-leaves-math0-the-even-subalgebra-and-math1"><strong>Where the Rotor Leaves $M_4(\mathbb{C})$: the Even Subalgebra and $Cl(4)$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>A rotor is an even product of vectors, so it lies in the even Clifford algebra $\mathrm{Cl}^{+}(4,\mathbb{C})\cong M_2(\mathbb{C})\oplus M_2(\mathbb{C})\cong\mathbb{B}\oplus\mathbb{B}$ of complex dimension $8$, which is semisimple with two simple ideals and a two-dimensional centre; it is a subalgebra of the simple $M_4(\mathbb{C})$, the commutant of the chirality, but never an ideal, and the two one-sided biquaternion images inside it span only seven dimensions.</strong></p>
+<p>The article proves that the rotor is even, identifies the even Clifford algebra and its two ideals, places the even part inside the matrix algebra as a subalgebra and shows that it is not an ideal, computes the dimension of the span of the two one-sided images, identifies the rotors with the norm-one part of the even Clifford group, and compares the picture with the gamma frame, where the five frame operators generate the whole algebra and the rotors are the even words among the sixteen graded products.</p>
+<p>It assumes <em>The Rotor as a Square Root of a Rotation: the Two Signs and the Double Cover at $n=4$</em>, <em>The Clifford Group and the Frame Stabiliser</em> and <em>The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$</em>. The versor theory is <em>Biquaternion Versors and the Orthogonal Group</em>.</p>
+<h2 id="the-rotor-is-even">The Rotor Is Even</h2>
+<p><strong>Definition.</strong> A <strong>rotor</strong> is a product $\rho=v_1v_2\cdots v_{2m}$ of an even number of vectors of the four-dimensional space, and a <strong>vector</strong> is an element of the image of $V$ in $\mathrm{Cl}(4,\mathbb{C})$.</p>
+<p><strong>Proposition.</strong> $\rho$ is a sum of even-grade elements, and $-\rho$ is the rotor with all the vectors negated.</p>
+<p><strong>Proof.</strong> A product of an even number of vectors is a sum of products of an even number of them, which is the definition of the even part; and $(-v_1)(-v_2)=v_1v_2$, so an even number of sign changes cancels.</p>
+<p><strong>Corollary.</strong> The rotors lie in $\mathrm{Cl}^{+}(4,\mathbb{C})$, and the odd products $v_1\cdots v_{2m+1}$ lie in the odd part, which is $\rho V$.</p>
+<p><strong>Proof.</strong> The parity of the number of factors, and the fact that multiplying by one more vector switches parity.</p>
+<p><strong>Corollary.</strong> A rotor acts on vectors by $\Phi_\rho(x)=\rho x\rho^{-1}$, and the action preserves the parity of the words it produces.</p>
+<p><strong>Proof.</strong> $\rho x\rho^{-1}$ is the product of an even, an odd and an even number of vectors, hence odd, hence a vector again when $\rho$ is invertible.</p>
+<h2 id="the-even-clifford-algebra">The Even Clifford Algebra</h2>
+<p><strong>Theorem.</strong> $\mathrm{Cl}(4,\mathbb{C})\cong M_4(\mathbb{C})$ and $\mathrm{Cl}^{+}(4,\mathbb{C})\cong\mathrm{Cl}(3,\mathbb{C})\cong M_2(\mathbb{C})\oplus M_2(\mathbb{C})$, of complex dimensions $16$ and $8$.</p>
+<p><strong>Proof.</strong> The complex Clifford algebra of an even-dimensional space with nondegenerate form is the full matrix algebra; the even part of $\mathrm{Cl}(n,\mathbb{C})$ is $\mathrm{Cl}(n-1,\mathbb{C})$, and $\mathrm{Cl}(3,\mathbb{C})$ is the sum of two copies of $M_2$, since the real $\mathrm{Cl}(3)$ is the sum of two copies of the quaternions.</p>
+<p><strong>Corollary.</strong> The even part is semisimple with exactly two simple ideals, each of complex dimension $4$, and its centre is two-dimensional.</p>
+<p><strong>Proof.</strong> A direct sum of two matrix algebras has two simple ideals and a centre spanned by the two identities.</p>
+<p><strong>Corollary.</strong> The even part is not simple, and it has exactly four two-sided ideals: zero, the two summands and the whole.</p>
+<p><strong>Proof.</strong> The ideals of a direct sum of simples are the sums of ideals of the summands.</p>
+<p><strong>The biquaternion form.</strong> $\mathrm{Cl}^{+}(4,\mathbb{C})\cong\mathbb{B}\oplus\mathbb{B}$, each summand a copy of the biquaternion algebra of complex dimension $4$.</p>
+<p><strong>Proof.</strong> $M_2(\mathbb{C})\cong\mathbb{B}$.</p>
+<h2 id="the-even-part-inside-the-matrix-algebra">The Even Part inside the Matrix Algebra</h2>
+<p><strong>Theorem.</strong> $\mathrm{Cl}^{+}(4,\mathbb{C})$ sits inside $M_4(\mathbb{C})$ as the commutant of the chirality: if $\omega$ is the product of the four frame operators, with $\omega^{2}=\mathrm I_4$, then a matrix is even exactly when it commutes with $\omega$.</p>
+<p><strong>Proof.</strong> The odd elements anticommute with $\omega$ and the even ones commute with it; $\omega$ has two eigenvalues, each of multiplicity two, so its commutant has dimension $2^{2}+2^{2}=8$, which is the dimension of the even part.</p>
+<p><strong>Corollary.</strong> In a basis where $\omega=\operatorname{diag}(1,1,-1,-1)$ the even part is the block-diagonal subalgebra $M_2\oplus M_2$, and the odd part is the two off-diagonal blocks.</p>
+<p><strong>Proof.</strong> A matrix commuting with a diagonal matrix with two eigenvalues is block diagonal with respect to the two eigenspaces.</p>
+<p><strong>Corollary.</strong> The even part is a subalgebra of $M_4(\mathbb{C})$ and not an ideal: $M_4$ is simple and has no proper two-sided ideal.</p>
+<p><strong>Proof.</strong> $M_4$ is central simple, so its only ideals are zero and itself, and the even part is neither.</p>
+<p><strong>The correction.</strong> A semisimple algebra can perfectly well be a subalgebra of a matrix algebra — the block-diagonal $M_2\oplus M_2$ is one — so the even part does sit inside $M_4$. What fails is not the inclusion but the ideal property and the equality with the whole algebra: the even part has dimension $8$ and the algebra has dimension $16$, and the odd part is its complement as a vector space and not as an ideal.</p>
+<p><strong>Proof.</strong> The two statements above and the dimension count.</p>
+<h2 id="the-two-one-sided-images-and-the-mixed-products">The Two One-Sided Images and the Mixed Products</h2>
+<p><strong>Proposition.</strong> The two copies of $\mathbb{B}$ in the Kronecker reading are the left image $M_2\otimes\mathrm I$ and the right image $\mathrm I\otimes M_2$; each has dimension $4$, they meet in the scalars, and their sum has dimension $7$.</p>
+<p><strong>Proof.</strong> $\dim(B_L+B_R)=\dim B_L+\dim B_R-\dim(B_L\cap B_R)=4+4-1$; the intersection is the scalars because $L(a)=R(b)$ forces $a=b=\lambda e_t$.</p>
+<p><strong>Corollary.</strong> The two one-sided families do not span the even part: they supply seven of its eight dimensions, and one more direction is needed.</p>
+<p><strong>Proof.</strong> The even part has dimension $8$ and the sum of the images has dimension $7$.</p>
+<p><strong>Proposition.</strong> The linear map $(a,b)\mapsto L_a+R_b$ from $\mathbb{B}\oplus\mathbb{B}$ to $M_4$ has kernel the pairs $(\lambda,-\lambda)$ and is not multiplicative: the product of two images picks up the two-sided terms $L_aR_d+R_bL_c$.</p>
+<p><strong>Proof.</strong> Compute $(L_a+R_b)(L_c+R_d)=L_{ac}+L_aR_d+R_bL_c+R_{bd}$, and the two middle terms vanish only when one of $a,b,c,d$ is a scalar.</p>
+<p><strong>Corollary.</strong> The rotors act two-sidedly precisely because the two-sided products are the mixed terms: a rotor with $a$ and $b$ both non-scalar produces a two-sided operator, which is not the sum of a left and a right action.</p>
+<p><strong>Proof.</strong> The product of two two-sided rotations is a two-sided rotation with both factors non-scalar, and the expansion above exhibits the mixing.</p>
+<p><strong>The rank-one operators.</strong> The mixed terms $L_aR_b$ are the two-sided operators of the earlier articles, and their matrices are the sixteen $T_{\mu\nu}$ on the units.</p>
+<p><strong>Proof.</strong> The definition $T_{a,b}(X)=aXb$ and the product rule $T_{a,b}T_{c,d}=T_{ac,db}$.</p>
+<h2 id="the-rotors-and-the-spin-group">The Rotors and the Spin Group</h2>
+<p><strong>Theorem.</strong> The group of invertible even elements is $\mathbb{C}^{\times}\cdot\mathrm{Spin}(4,\mathbb{C})$, and $\mathrm{Spin}(4,\mathbb{C})\cong SL_2(\mathbb{C})\times SL_2(\mathbb{C})$, of complex dimension $6$.</p>
+<p><strong>Proof.</strong> The even Clifford group is the scalars times the spin group; the spin group is the product of the norm-one parts of the two copies of $\mathbb{B}^{\times}$, that is $SL_2\times SL_2$.</p>
+<p><strong>Corollary.</strong> Each simple ideal of the even part contributes one factor, so the two ideals of $\mathrm{Cl}^{+}$ are the two factors of the spin group.</p>
+<p><strong>Proof.</strong> The unit group of a direct sum of two matrix algebras is the product of the two general linear groups.</p>
+<p><strong>Corollary.</strong> The rotor group double covers $SO(4,\mathbb{C})$ with kernel $\{\pm1\}$, and the kernel is the simultaneous sign in the two factors.</p>
+<p><strong>Proof.</strong> The covering of the earlier article and the identification of the factors.</p>
+<p><strong>The real case.</strong> Over $\mathbb{R}$ with the definite form the same computation gives $\mathrm{Cl}^{+}(4)\cong\mathbb{H}\oplus\mathbb{H}$ and $\mathrm{Spin}(4)\cong SU(2)\times SU(2)$, and the rotors of the previous article are exactly the norm-one even elements.</p>
+<p><strong>Proof.</strong> The real form of the classification and the identifications of the two factors with the unit quaternions.</p>
+<h2 id="the-comparison-with-the-gamma-frame">The Comparison with the Gamma Frame</h2>
+<p><strong>Proposition.</strong> In the gamma frame the five operators generate the whole of $M_4(\mathbb{C})$, and their sixteen antisymmetrised products are a basis; the even words among them span the eight-dimensional even part.</p>
+<p><strong>Proof.</strong> The generation is the statement of the frame article; the graded products are distributed as $1+4+6+4+1$ over the five grades, and the even grades contribute $1+6+1=8$.</p>
+<p><strong>Corollary.</strong> The rotors are the even words of the frame, the odd words carry the spinor maps, and the frame itself uses the whole algebra and not one factor.</p>
+<p><strong>Proof.</strong> Parity of the words and the dimension count of the grades.</p>
+<p><strong>The bivector generators.</strong> The six bivectors of the frame span $\Lambda^{2}\mathbb{C}^{4}\cong\mathfrak{so}(4,\mathbb{C})$, and the rotor is the exponential of a bivector.</p>
+<p><strong>Proof.</strong> The bivectors are the half-commutators of the frame operators, and their span is the Lie algebra of the spin group.</p>
+<p><strong>Corollary.</strong> The rotor does not leave $M_4(\mathbb{C})$: it leaves the odd part, the one-sided factor and the commutant of the chirality, and it stays in the even part, which is a subalgebra of dimension eight.</p>
+<p><strong>Proof.</strong> The three exclusions and the inclusion of the theorem above.</p>
+<p><strong>The precise sense of the title.</strong> "Where the rotor leaves $M_4$" means: the rotor is not in the odd part, is not in a single one-sided family, and is not an ideal-generating element; it is an even element of the matrix algebra, and the even algebra it generates is semisimple with two ideals, in contrast with the simple ambient algebra.</p>
+<p><strong>Proof.</strong> The three statements of the preceding corollary.</p>
+<h2 id="summary">Summary</h2>
+<p>A rotor is an even product of vectors, so it lies in the even Clifford algebra, of complex dimension eight. That algebra is $\mathrm{Cl}(3,\mathbb{C})\cong M_2\oplus M_2\cong\mathbb{B}\oplus\mathbb{B}$, semisimple with two simple ideals of dimension four and a two-dimensional centre.</p>
+<p>Inside $M_4(\mathbb{C})$ the even part is the commutant of the chirality, hence block diagonal of type $M_2\oplus M_2$; it is a subalgebra and not an ideal, since the ambient algebra is simple. The two one-sided biquaternion images are the two simple ideals in the Kronecker reading; they are four-dimensional each, meet in the scalars and span only seven dimensions, so the two-sided products are exactly what the eighth direction and the rotor action require.</p>
+<p>The invertible even elements are the scalars times $\mathrm{Spin}(4,\mathbb{C})\cong SL_2\times SL_2$, and over the reals the spin group is $SU(2)\times SU(2)$. In the gamma frame the rotors are the even words among the sixteen graded products, and the odd words carry the spinor maps.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{Cl}^{+}(4,\mathbb{C})$</td>
+<td>the even Clifford algebra, dimension $8$</td>
+</tr>
+<tr>
+<td>$M_2\oplus M_2$</td>
+<td>its two simple ideals</td>
+</tr>
+<tr>
+<td>$\omega$</td>
+<td>the chirality, with $\omega^{2}=\mathrm I_4$</td>
+</tr>
+<tr>
+<td>$B_L$, $B_R$</td>
+<td>the two one-sided images, of dimension $4$ each</td>
+</tr>
+<tr>
+<td>$\mathbb{C}^{\times}\cdot\mathrm{Spin}(4,\mathbb{C})$</td>
+<td>the group of invertible even elements</td>
+</tr>
+<tr>
+<td>$1+4+6+4+1$</td>
+<td>the graded count of the frame basis</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), for the even part and the rotor group.</li>
+<li><a href="the-clifford-group-and-the-frame-stabiliser.html">The Clifford Group and the Frame Stabiliser</a>, for the even Clifford group and its two biquaternion factors.</li>
+<li><a href="the-gamma-frame-and-the-complexified-dirac-algebra-of-m4c.html">The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$</a>, for the five frame operators and the graded basis.</li>
+<li><a href="the-rotor-as-a-square-root-of-a-rotation-the-two-signs-and-the-double-cover-at-n-4.html">The Rotor as a Square Root of a Rotation: the Two Signs and the Double Cover at $n=4$</a>, for the rotors and the covering.</li>
+<li><a href="biquaternion-versors-and-the-orthogonal-group.html">Biquaternion Versors and the Orthogonal Group</a>, for the versor map in the biquaternion algebra.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

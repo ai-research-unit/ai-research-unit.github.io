@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Minimal Polynomial and the Jordan Form of a $4\times4$ Matrix — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-minimal-polynomial-and-the-jordan-form-of-a-math0-matrix"><strong>The Minimal Polynomial and the Jordan Form of a $4\times4$ Matrix</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The minimal polynomial divides the characteristic polynomial, has the same roots, and equals it exactly when the matrix has a cyclic vector; at order four there are five Jordan shapes, and only two of them occur among the one-sided matrices of the biquaternion algebra.</strong></p>
+<p>The article proves $\mu_A\mid\chi_A$ and the equality with the cyclic condition, lists the five partitions of $4$ with the shapes $4$, $3+1$, $2+2$, $2+1+1$ and $1+1+1+1$, builds the companion matrix whose minimal polynomial has degree four, splits any matrix as $S+N$ with commuting semisimple and nilpotent parts, and computes the axis-free spectrum: the two eigenvalues $Q_t\pm iB$, each twice, so the minimal polynomial has degree at most two.</p>
+<p>It assumes <em>The Matrix Algebra $M_4(\mathbb{C})$</em> and <em>The Elementary Symmetric Functions and $\det(\mathrm{I}+tA)$ at $n=4$</em> for the characteristic polynomial. The case $n=2$ is <em>The Minimal Polynomial and the Two Jordan Regimes of $M_2(\mathbb{C})$</em>. The spectral consequences are <em>Normal Matrices and the Common Spectral Theorem at $n=4$</em>.</p>
+<h2 id="the-minimal-polynomial">The Minimal Polynomial</h2>
+<p><strong>Definition.</strong> The <strong>minimal polynomial</strong> $\mu_A$ is the monic polynomial of least degree with $\mu_A(A)=0$.</p>
+<p><strong>Proposition.</strong> $\mu_A$ exists, is unique, divides every polynomial that annihilates $A$, and its roots are exactly the eigenvalues of $A$.</p>
+<p><strong>Proof.</strong> The powers $\mathrm I,A,\dots,A^{4}$ span a space of dimension at most $16$, so some nontrivial combination vanishes and a monic polynomial of least degree exists; division with remainder makes it divide every annihilator. If $\mu_A(\lambda)\neq0$ at an eigenvalue $\lambda$ with eigenvector $v$, then $0=\mu_A(A)v=\mu_A(\lambda)v$, a contradiction; conversely each eigenvalue is a root of $\chi_A$ and $\mu_A\mid\chi_A$, so the roots agree.</p>
+<p><strong>Corollary.</strong> $\deg\mu_A\le4$ and $\mu_A$ is the product $\prod_\lambda(X-\lambda)^{m(\lambda)}$, where $m(\lambda)$ is the size of the largest Jordan block with eigenvalue $\lambda$.</p>
+<p><strong>Proof.</strong> On a Jordan block of size $m$ the polynomial $(X-\lambda)^{m}$ kills the nilpotent part $(J-\lambda\mathrm I)^{m}=0$, and no smaller power does; the least common multiple over the blocks is the display.</p>
+<p><strong>Proposition (the degrees and the shapes).</strong> The degree of $\mu_A$ is the largest total size of the blocks sharing one eigenvalue, so $\deg\mu_A=4$ exactly when the sum of the block sizes for some one eigenvalue is $4$.</p>
+<p><strong>Proof.</strong> Read the previous corollary: the exponent for $\lambda$ is the largest block size at $\lambda$, and the degree is the sum of the exponents over the distinct eigenvalues.</p>
+<h2 id="the-five-shapes-at-order-four">The Five Shapes at Order Four</h2>
+<p><strong>Definition.</strong> The <strong>Jordan type</strong> of $A$ is the partition of $4$ given by the sizes of its Jordan blocks, with the eigenvalues attached.</p>
+<p><strong>The five partitions.</strong> For a matrix with a single eigenvalue there are exactly five types:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Blocks</th>
+<th>$\deg\mu_A$</th>
+<th>$\dim$ centraliser</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$4$</td>
+<td>one block of size $4$</td>
+<td>$4$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$3+1$</td>
+<td>blocks $3$ and $1$</td>
+<td>$3$</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>$2+2$</td>
+<td>two blocks of size $2$</td>
+<td>$2$</td>
+<td>$8$</td>
+</tr>
+<tr>
+<td>$2+1+1$</td>
+<td>blocks $2,1,1$</td>
+<td>$2$</td>
+<td>$7$</td>
+</tr>
+<tr>
+<td>$1+1+1+1$</td>
+<td>scalars</td>
+<td>$1$</td>
+<td>$16$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proposition.</strong> These five exhaust the partitions of $4$, and the centraliser of a nilpotent with blocks $b_1\ge\cdots\ge b_k$ has dimension $\sum_{i,j}\min(b_i,b_j)$.</p>
+<p><strong>Proof.</strong> The partitions of $4$ are $4$, $3+1$, $2+2$, $2+1+1$, $1+1+1+1$. A block matrix commuting with the nilpotent has, in the block from $j$ to $i$, a matrix that is constant on the diagonals and vanishes above the shorter block, so it contributes $\min(b_i,b_j)$ parameters; summing over the pairs gives the formula. The five values are $4$, $3+1+1+1=6$, $2+2+2+2=8$, $2+1+1+1+1+1=7$, and $16$.</p>
+<p><strong>The count of types with distinct eigenvalues.</strong> When the four eigenvalues are distinct only the type $1+1+1+1$ occurs. When there are two eigenvalues of multiplicities $2$ and $2$, the shapes are $2+2$, $2+1+1$ and $1+1+1+1$ within each group, and similarly for the other splits.</p>
+<h2 id="the-companion-matrix-and-the-cyclic-vector">The Companion Matrix and the Cyclic Vector</h2>
+<p><strong>Definition.</strong> A vector $v$ is <strong>cyclic</strong> for $A$ when $v,Av,A^{2}v,A^{3}v$ are a basis.</p>
+<p><strong>Theorem.</strong> The following are equivalent: $A$ has a cyclic vector; $\deg\mu_A=4$; $\mu_A=\chi_A$; the centraliser of $A$ is the algebra $\mathbb{C}[A]$, of dimension $4$.</p>
+<p><strong>Proof.</strong> If $v$ is cyclic, the four vectors $v,\dots,A^{3}v$ are independent, so no polynomial of degree at most $3$ kills $A$, hence $\deg\mu_A=4$ and $\mu_A=\chi_A$ by the bound on the degree. Conversely if $\deg\mu_A=4$, the vector $v$ with $\mu_A(A)v=0$ of least degree has an annihilator of degree $4$, so it is cyclic. A matrix commuting with $A$ is determined by its value on a cyclic vector, which lies in $\mathbb{C}[A]$.</p>
+<p><strong>Definition.</strong> The <strong>companion matrix</strong> of $p(X)=X^{4}-c_1X^{3}-c_2X^{2}-c_3X-c_4$ is</p>
+<p>$$
+C_p=\begin{pmatrix}0&0&0&c_4\\ 1&0&0&c_3\\ 0&1&0&c_2\\ 0&0&1&c_1\end{pmatrix}.
+$$</p>
+<p><strong>Proposition.</strong> $\chi_{C_p}=p=\mu_{C_p}$, and the first standard basis vector is cyclic.</p>
+<p><strong>Proof.</strong> Expand $\det(X\mathrm I-C_p)$ along the last column, or note that $C_pe_1=e_2$, $C_pe_2=e_3$, $C_pe_3=e_4$, so that the four vectors $e_1,\dots,e_4$ are the Krylov chain of $e_1$; the relation $C_p^{4}=c_1C_p^{3}+c_2C_p^{2}+c_3C_p+c_4\mathrm I$ is read off the last column, and no shorter relation holds because the chain is a basis.</p>
+<p><strong>Corollary.</strong> Every matrix of order four is similar to a companion matrix or to a direct sum of companion matrices of smaller degree, the rational canonical form.</p>
+<p><strong>Proof.</strong> Decompose the space into the cyclic subspaces generated by a vector of maximal annihilator and iterate on a complement; each summand is companion.</p>
+<h2 id="the-decomposition-math120">The Decomposition $S+N$</h2>
+<p><strong>Theorem (Jordan–Chevalley).</strong> Every $A$ is uniquely $S+N$ with $S$ semisimple, $N$ nilpotent, $SN=NS$, and both $S$ and $N$ polynomials in $A$ with zero constant term.</p>
+<p><strong>Proof.</strong> Put $A$ in Jordan form, take $S$ the diagonal part and $N$ the strictly upper part; they commute and $N^{4}=0$. Uniqueness follows because a polynomial relation between two commuting semisimple and nilpotent parts forces each to vanish, and existence as polynomials in $A$ follows by the Chinese remainder theorem applied to the coprime factors $(X-\lambda)^{m(\lambda)}$ of $\mu_A$.</p>
+<p><strong>Corollary.</strong> $A$ is diagonalisable exactly when $N=0$, that is when $\mu_A$ has only simple roots.</p>
+<p><strong>Proof.</strong> A diagonalisable matrix is its own semisimple part; conversely $S$ is diagonalisable and $N=0$ leaves $A=S$.</p>
+<p><strong>Corollary.</strong> For every $A$ of order four, $N^{4}=0$, and the exponent of $N$ is the largest block size minus one.</p>
+<p><strong>Proof.</strong> The nilpotent part has blocks of size at most $4$, so its fourth power vanishes, and a block of size $m$ needs the exponent $m-1$.</p>
+<h2 id="the-axis-free-spectrum">The Axis-Free Spectrum</h2>
+<p><strong>The two eigenvalues.</strong> Write $\tilde Q=Q_te_t+\vec v$ with $\vec v=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ and put $B^{2}=-\vec v^{\,2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$. The spectrum of the left matrix is</p>
+<p>$$
+\operatorname{spec}L_{\mathrm{axf}}(\tilde Q)=\{Q_t+iB,\;Q_t+iB,\;Q_t-iB,\;Q_t-iB\}.
+$$</p>
+<p><strong>Proposition.</strong> The minimal polynomial of $L_{\mathrm{axf}}(\tilde Q)$ has degree at most two, namely $\mu=(X-Q_t)^{2}-(iB)^{2}=(X-Q_t)^{2}+B^{2}$ when $B\neq0$ and $\mu=X-Q_t$ when $\tilde Q=Q_te_t$.</p>
+<p><strong>Proof.</strong> The algebra $\mathbb{B}$ is $M_2(\mathbb{C})$, so every element satisfies its characteristic polynomial of degree two, and the left regular representation is a homomorphism; the two eigenvalues are then the roots of that quadratic. When $B\neq0$ the roots are distinct and $\mu$ has degree two; when $\vec v=0$ the element is scalar.</p>
+<p><strong>Corollary (only two shapes occur).</strong> A one-sided matrix is diagonalisable when $B\neq0$, with the type $1+1+1+1$; it has the type $2+2$ with the single eigenvalue $Q_t$ when $B=0$ and $\tilde Q\neq Q_te_t$; and it is a scalar when $\tilde Q=Q_te_t$.</p>
+<p><strong>Proof.</strong> Distinct roots give simple blocks. In the isotropic case $B=0$ with $\vec v\neq0$ one has $\vec v^{\,2}=0$, so $L_{\mathrm{axf}}(\tilde Q)=Q_t\mathrm I+L_{\mathrm{axf}}(\vec v)$ with $L_{\mathrm{axf}}(\vec v)^{2}=0$ and rank $2$; a nilpotent of rank two and square zero on a space of dimension four has two blocks of size two.</p>
+<p><strong>The comparison.</strong> A general matrix of $M_4(\mathbb{C})$ can realise all five types, and the type $3+1$ and the type $4$ are the ones a one-sided matrix never has. This is the structural reason the length of an operator, not the rank of a matrix, is the invariant that separates the two-sided world from the one-sided one; the count is <em>The Length and the Two Ranks at $n=4$</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>The minimal polynomial divides the characteristic polynomial and shares its roots; it equals it exactly when the matrix is nonderogatory, equivalently when a cyclic vector exists, equivalently when the centraliser is $\mathbb{C}[A]$ of dimension four. At order four the five partitions give the five shapes, with degrees $4,3,2,2,1$ and centraliser dimensions $4,6,8,7,16$.</p>
+<p>Every matrix splits as $S+N$ with commuting semisimple and nilpotent parts, both polynomial in $A$, with $N^{4}=0$; the matrix is diagonalisable exactly when $N=0$. The companion matrix of a quartic is nonderogatory, and the rational canonical form reassembles any matrix from companion blocks.</p>
+<p>In the axis-free frame the spectrum is $Q_t\pm iB$ each twice, so the minimal polynomial has degree at most two and the one-sided matrices realise only the shapes $1+1+1+1$ and $2+2$: the types $3+1$ and $4$ are two-sided phenomena.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\chi_A$</td>
+<td>the characteristic polynomial, of degree $4$</td>
+</tr>
+<tr>
+<td>$\mu_A$</td>
+<td>the minimal polynomial, dividing $\chi_A$</td>
+</tr>
+<tr>
+<td>$m(\lambda)$</td>
+<td>the largest Jordan block size at $\lambda$</td>
+</tr>
+<tr>
+<td>$S$, $N$</td>
+<td>the semisimple and nilpotent parts of $A$</td>
+</tr>
+<tr>
+<td>$C_p$</td>
+<td>the companion matrix of the quartic $p$</td>
+</tr>
+<tr>
+<td>$Q_t$, $B$</td>
+<td>the scalar coordinate and $\sqrt{Q_x^{2}+Q_y^{2}+Q_z^{2}}$</td>
+</tr>
+<tr>
+<td>$L_{\mathrm{axf}}$</td>
+<td>the left regular representation of $\mathbb{B}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge University Press, 2013), for the Jordan and rational canonical forms and the centraliser count.</li>
+<li><a href="the-matrix-algebra-m4c.html">The Matrix Algebra $M_4(\mathbb{C})$</a>, for the algebra in which the Jordan form is computed.</li>
+<li><a href="the-elementary-symmetric-functions-and-det-i-plus-ta-at-n-4.html">The Elementary Symmetric Functions and $\det(\mathrm{I}+tA)$ at $n=4$</a>, for the coefficients of the characteristic polynomial.</li>
+<li><a href="the-quartic-the-discriminant-and-the-spectral-strata-of-m4c.html">The Quartic, the Discriminant and the Spectral Strata of $M_4(\mathbb{C})$</a>, for the discriminant that separates the shapes.</li>
+<li><a href="the-minimal-polynomial-and-the-two-jordan-regimes-of-m2c.html">The Minimal Polynomial and the Two Jordan Regimes of $M_2(\mathbb{C})$</a>, for the same dichotomy at order two.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

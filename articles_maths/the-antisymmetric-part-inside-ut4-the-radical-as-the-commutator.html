@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Antisymmetric Part inside $UT_4$: the Radical as the Commutator — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-antisymmetric-part-inside-math0-the-radical-as-the-commutator"><strong>The Antisymmetric Part inside $UT_4$: the Radical as the Commutator</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>Inside the Borel $\mathfrak{b}=\mathfrak{h}\oplus\mathfrak{n}_+$ the radical of the trace form is $\mathfrak{n}_+$, of dimension $6$, and it is also the derived algebra $[\mathfrak{b},\mathfrak{b}]$; but the antisymmetric matrices inside $\mathfrak{b}$ are only the zero matrix, so the identification is between the radical and the commutator, not between the radical and $\operatorname{Skew}_4$.</strong></p>
+<p>The article computes the restricted form, proves that a skew upper triangular matrix is zero, proves $[\mathfrak{b},\mathfrak{b}]=\mathfrak{n}_+$ and that the radical is $\mathfrak{n}_+$, and then states exactly what the coincidence means: $\mathfrak{n}_+$ is the totally isotropic part of the Borel, the place where the form is alternating, and it is a six-dimensional subspace that is not the antisymmetric half.</p>
+<p>It assumes <em>The Triangular Decomposition $h\oplus n_+\oplus n_-$ of $M_4(\mathbb{C})$</em> and <em>$UT_4$ as the Complement of the Antisymmetric Part</em>. The case $n=2$ is <em>The Antisymmetric Part inside $UT_2$: the Radical as the Commutator</em>; the form itself is <em>The Trace Form and Its Signature on the Two Halves of $M_4(\mathbb{C})$</em>; the Killing form of the same algebra is <em>The Killing Form, Its Radical and the Triangular Case</em>.</p>
+<h2 id="the-restricted-form">The Restricted Form</h2>
+<p><strong>Definition.</strong> $\beta(X,Y)=\operatorname{tr}(XY)$ restricted to $\mathfrak{b}$, the upper triangular matrices including the diagonal of dimension $10$.</p>
+<p><strong>Proposition.</strong> $\beta(E_{ij},X)=X_{ji}$ for every unit $E_{ij}$ and every $X$.</p>
+<p><strong>Proof.</strong> $\operatorname{tr}(E_{ij}X)=\sum_p(E_{ij}X)_{pp}$, and $(E_{ij}X)_{pp}=\delta_{pj}X_{ip}$, so the sum is $X_{ji}$.</p>
+<p><strong>Corollary.</strong> For $X\in\mathfrak{b}$ and $i<j$, $\beta(E_{ij},X)=X_{ji}=0$; and $\beta(E_{ii},X)=X_{ii}$.</p>
+<p><strong>Proof.</strong> The entry $X_{ji}$ with $j>i$ is below the diagonal and vanishes; the diagonal entry is read directly.</p>
+<p><strong>Theorem.</strong> The radical of $\beta$ restricted to $\mathfrak{b}$ is $\mathfrak{n}_+$, of dimension $6$.</p>
+<p><strong>Proof.</strong> By the corollary every strictly upper unit pairs to zero with every element of $\mathfrak{b}$, so $\mathfrak{n}_+\subset\operatorname{rad}$. Conversely if $X\in\mathfrak{b}$ pairs to zero with every $E_{ii}$, then $X_{ii}=0$ for all $i$, so $X\in\mathfrak{n}_+$. Hence the radical is exactly $\mathfrak{n}_+$.</p>
+<p><strong>Corollary.</strong> On $\mathfrak{b}$ the form has rank $4$, and on the diagonal it is the standard positive definite form $\sum h_ih_i'$.</p>
+<p><strong>Proof.</strong> The rank is the dimension minus the radical, $10-6=4$, and the diagonal part is $\sum_i h_ih_i'$ since $\operatorname{tr}(E_{ii}E_{jj})=\delta_{ij}$.</p>
+<p><strong>The totally isotropic part.</strong> $\mathfrak{n}_+$ is totally isotropic: $\beta(N,N')=0$ for all $N,N'\in\mathfrak{n}_+$.</p>
+<p><strong>Proof.</strong> The product of two strictly upper triangular matrices is strictly upper triangular, hence has zero diagonal, hence zero trace.</p>
+<h2 id="the-antisymmetric-matrices-inside-the-borel">The Antisymmetric Matrices inside the Borel</h2>
+<p><strong>Proposition.</strong> $\operatorname{Skew}_4\cap\mathfrak{b}=0$.</p>
+<p><strong>Proof.</strong> Let $K\in\mathfrak{b}$ be antisymmetric. Its diagonal entries satisfy $k_{ii}=-k_{ii}$, so they vanish. Its entries above the diagonal vanish by triangularity, and its entries below vanish by antisymmetry. Hence $K=0$.</p>
+<p><strong>Corollary.</strong> The antisymmetric part inside $UT_4$ is the zero subspace, and every nonzero antisymmetric matrix has a nonzero entry strictly below the diagonal.</p>
+<p><strong>Proof.</strong> The first is the proposition; the second is its contrapositive, read entry by entry.</p>
+<p><strong>Corollary.</strong> $\operatorname{Skew}_4\oplus\mathfrak{b}=M_4$, and the map sending a skew matrix to its $\mathfrak{b}$-component along $\mathfrak{n}_-$ is injective, its image being the six-dimensional space of strict upper parts.</p>
+<p><strong>Proof.</strong> The dimensions are $6+10=16$ with zero intersection. A skew matrix has zero diagonal, so its $\mathfrak{b}$-component is its strict upper part, and a skew matrix whose strict upper part vanishes is its own negative transpose with zeros above the diagonal, hence zero.</p>
+<p><strong>What this rules out.</strong> The claim "the antisymmetric part inside the Borel is its nilradical" is false as a statement about matrices: the nilradical $\mathfrak{n}_+$ consists of strictly <strong>upper</strong> triangular matrices, none of which is antisymmetric except zero. The two spaces are disjoint, and they even have zero intersection.</p>
+<p><strong>Proof.</strong> A strictly upper triangular matrix has a nonzero entry above the diagonal and its transpose is not its negative; if it were antisymmetric it would be zero by the proposition.</p>
+<h2 id="the-radical-is-the-commutator">The Radical Is the Commutator</h2>
+<p><strong>Theorem.</strong> $[\mathfrak{b},\mathfrak{b}]=\mathfrak{n}_+$.</p>
+<p><strong>Proof.</strong> The quotient $\mathfrak{b}/\mathfrak{n}_+\cong\mathfrak{h}$ is abelian, so the derived algebra lies in $\mathfrak{n}_+$. Conversely $[E_{ii},E_{ij}]=E_{ij}$ for $i\neq j$, since $E_{ij}E_{ii}=0$, so every strictly upper unit is a commutator; the six units span $\mathfrak{n}_+$.</p>
+<p><strong>Corollary.</strong> $\mathfrak{n}_+$ is a nilpotent ideal of dimension $6$, and $\mathfrak{b}$ is solvable of derived length two.</p>
+<p><strong>Proof.</strong> $\mathfrak{n}_+^{4}=0$ by the strictly upper triangular argument, and the second derived algebra is $[\mathfrak{n}_+,\mathfrak{n}_+]\subset\mathfrak{n}_+$; since $\mathfrak{b}/\mathfrak{n}_+$ is abelian and $\mathfrak{n}_+$ is nilpotent, $\mathfrak{b}$ is solvable, and it is not abelian, so the derived length is exactly two.</p>
+<p><strong>Corollary.</strong> The radical of $\beta$ on $\mathfrak{b}$ equals the derived algebra, and both are $\mathfrak{n}_+$.</p>
+<p><strong>Proof.</strong> The two theorems identify the same subspace.</p>
+<p><strong>The invariance reading.</strong> $\beta([X,Y],Z)=\beta(X,[Y,Z])$ for all $X,Y,Z\in\mathfrak{b}$, so the radical is an ideal and the derived algebra lies in it.</p>
+<p><strong>Proof.</strong> The invariance identity of the trace form, $\operatorname{tr}([X,Y]Z)=\operatorname{tr}(X[Y,Z])$, and the radical of an invariant form is an ideal.</p>
+<p><strong>Corollary.</strong> The form descends to the quotient $\mathfrak{b}/\mathfrak{n}_+\cong\mathfrak{h}$, where it is positive definite.</p>
+<p><strong>Proof.</strong> The radical is exactly the kernel of the descended form, and on the diagonal the form is $\sum h_ih_i'$.</p>
+<h2 id="two-sixes-one-subspace">Two Sixes, One Subspace</h2>
+<p><strong>Proposition.</strong> $\dim\mathfrak{n}_+=6=\dim\operatorname{Skew}_4$, and $\mathfrak{n}_+\cap\operatorname{Skew}_4=0$.</p>
+<p><strong>Proof.</strong> The first is the count of pairs $i<j$; the second is the proposition of the previous section.</p>
+<p><strong>Corollary.</strong> The two six-dimensional spaces are complementary inside the twelve-dimensional off-diagonal part, and each is totally isotropic or totally non-isotropic in a different sense: $\mathfrak{n}_+$ is isotropic for $\beta$, while $\operatorname{Skew}_4$ is negative definite for it.</p>
+<p><strong>Proof.</strong> $\mathfrak{n}_+$ is isotropic by the trace argument; on $\operatorname{Skew}_4$ the form is $-2\sum_{i<j}k_{ij}^{2}$, negative definite; the sum has dimension $12$ and both lie in the off-diagonal part.</p>
+<p><strong>The measurement that separates them.</strong> $\beta(N,N)=0$ for $N\in\mathfrak{n}_+$ and $\beta(K,K)<0$ for $K\in\operatorname{Skew}_4$ nonzero; the two spaces are therefore distinguished by the sign of the form and not by the dimension.</p>
+<p><strong>Proof.</strong> The two displayed computations.</p>
+<p><strong>Why the coincidence of the dimensions is not an accident of counting.</strong> The number $\binom{4}{2}=6$ counts the pairs $i<j$, and it counts them twice: once as the units of $\mathfrak{n}_+$ and once as the units $E_{ij}-E_{ji}$ of $\operatorname{Skew}_4$. The two uses of the same count are the two ways of attaching a number to an unordered pair, as an ordered upper entry or as a difference of two entries.</p>
+<p><strong>Proof.</strong> Both spaces have one basis element per unordered pair, indexed by the same set.</p>
+<h2 id="what-the-titles-claim-means">What the Title's Claim Means</h2>
+<p><strong>The true statement.</strong> The antisymmetric part inside the Borel, in the sense of the antisymmetric matrices it contains, is zero. The radical of the trace form on the Borel is $\mathfrak{n}_+$, and it coincides with the derived algebra. The two statements are different and both are proved above.</p>
+<p><strong>Proof.</strong> The first is $\operatorname{Skew}_4\cap\mathfrak{b}=0$, the second is the computation of the radical and of the commutator.</p>
+<p><strong>Why the two are easily confused.</strong> In the whole algebra the antisymmetric half is the negative definite part of the form, so "the part where the form is negative" and "the antisymmetric part" name the same subspace. Inside the Borel the form degenerates, its radical is six-dimensional, and the radical is isotropic — the opposite sign — so the identification breaks down at exactly the place where the form stops being nondegenerate.</p>
+<p><strong>Proof.</strong> On $\operatorname{Skew}_4$ the form is negative definite; on the radical it is identically zero; the two properties cannot hold on the same nonzero subspace.</p>
+<p><strong>What survives of the analogy.</strong> The radical is still the "alternating" part in the sense that the form restricts to zero on it, and it is still a Lie ideal, and it is still the piece that the quotient kills. Those three properties are the ones the antisymmetric half has in the whole algebra, and they are the ones that carry over.</p>
+<p><strong>Proof.</strong> The radical of an invariant form is an ideal, the restriction to it vanishes, and the quotient is the nondegenerate part.</p>
+<h2 id="summary">Summary</h2>
+<p>Inside the Borel of dimension $10$ the trace form has radical $\mathfrak{n}_+$ of dimension $6$ and rank $4$, positive definite on the diagonal quotient. The derived algebra is also $\mathfrak{n}_+$, so the radical and the commutator are one subspace, and both are read from the same six units.</p>
+<p>The antisymmetric matrices inside the Borel are only zero, so the antisymmetric half is not the radical and the two spaces are disjoint; they share the dimension $6$ because both are indexed by the unordered pairs of indices.</p>
+<p>The title's identification holds for the radical and the commutator and fails for the antisymmetric matrices. The reason is the degeneration of the form: on the whole algebra the negative definite part and the antisymmetric part coincide, and inside the Borel the form's radical is isotropic, which is the opposite sign. What carries over is that the radical is an ideal, that the form vanishes on it, and that the quotient is the nondegenerate part.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathfrak{b}=\mathfrak{h}\oplus\mathfrak{n}_+$</td>
+<td>the Borel, dimension $10$</td>
+</tr>
+<tr>
+<td>$\mathfrak{n}_+$</td>
+<td>strictly upper triangular, dimension $6$, the radical</td>
+</tr>
+<tr>
+<td>$[\mathfrak{b},\mathfrak{b}]$</td>
+<td>the derived algebra, equal to $\mathfrak{n}_+$</td>
+</tr>
+<tr>
+<td>$\operatorname{Skew}_4$</td>
+<td>the antisymmetric half, with $\operatorname{Skew}_4\cap\mathfrak{b}=0$</td>
+</tr>
+<tr>
+<td>$\beta(X,Y)=\operatorname{tr}(XY)$</td>
+<td>the restricted trace form</td>
+</tr>
+<tr>
+<td>$\mathfrak{h}$</td>
+<td>the diagonal, the nondegenerate quotient</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>James E. Humphreys, <em>Introduction to Lie Algebras and Representation Theory</em> (Springer, 1972), for solvable algebras, radicals and derived series.</li>
+<li><a href="the-triangular-decomposition-h-n-plus-n-minus-of-m4c.html">The Triangular Decomposition $h\oplus n_+\oplus n_-$ of $M_4(\mathbb{C})$</a>, for the Borel and its derived algebra.</li>
+<li><a href="the-killing-form-its-radical-and-the-triangular-case.html">The Killing Form, Its Radical and the Triangular Case</a>, for the same radical computed for the Killing form.</li>
+<li><a href="ut4-as-the-complement-of-the-antisymmetric-part.html">$UT_4$ as the Complement of the Antisymmetric Part</a>, for the disjointness of the two six-dimensional spaces.</li>
+<li><a href="the-antisymmetric-part-inside-ut2-the-radical-as-the-commutator.html">The Antisymmetric Part inside $UT_2$: the Radical as the Commutator</a>, for the case at order two.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
